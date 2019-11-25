@@ -16,7 +16,7 @@ trait IHSV extends js.Object {
 object IHSV {
   @scala.inline
   def apply(h: Double, s: Double, v: Double): IHSV = {
-    val __obj = js.Dynamic.literal(h = h, s = s, v = v)
+    val __obj = js.Dynamic.literal(h = h.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IHSV]
   }

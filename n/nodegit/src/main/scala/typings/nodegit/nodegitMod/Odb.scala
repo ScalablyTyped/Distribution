@@ -14,6 +14,5 @@ class Odb ()
 @js.native
 object Odb extends js.Object {
   def open(objectsDir: String): js.Promise[typings.nodegit.odbMod.Odb] = js.native
-  type STREAM = typings.nodegit.odbMod.Odb.STREAM
 }
 

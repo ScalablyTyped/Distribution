@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait SchedulingBehavior extends js.Object
 
+object SchedulingBehavior {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def cooperative: typings.fridaDashGum.fridaDashGumStrings.cooperative = this.cast("cooperative")
+  @scala.inline
+  def exclusive: typings.fridaDashGum.fridaDashGumStrings.exclusive = this.cast("exclusive")
+}
+

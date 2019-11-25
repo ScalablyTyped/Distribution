@@ -21,7 +21,7 @@ object CPUStats {
     system_cpu_usage: Double,
     throttling_data: Anon_Periods
   ): CPUStats = {
-    val __obj = js.Dynamic.literal(cpu_usage = cpu_usage, online_cpus = online_cpus, system_cpu_usage = system_cpu_usage, throttling_data = throttling_data)
+    val __obj = js.Dynamic.literal(cpu_usage = cpu_usage.asInstanceOf[js.Any], online_cpus = online_cpus.asInstanceOf[js.Any], system_cpu_usage = system_cpu_usage.asInstanceOf[js.Any], throttling_data = throttling_data.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CPUStats]
   }

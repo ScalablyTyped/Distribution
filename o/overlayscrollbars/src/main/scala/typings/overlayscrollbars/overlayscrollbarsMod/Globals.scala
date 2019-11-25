@@ -42,8 +42,8 @@ object Globals {
     supportTransition: Boolean,
     cssCalc: String = null
   ): Globals = {
-    val __obj = js.Dynamic.literal(autoUpdateLoop = autoUpdateLoop, autoUpdateRecommended = autoUpdateRecommended, nativeScrollbarIsOverlaid = nativeScrollbarIsOverlaid, nativeScrollbarSize = nativeScrollbarSize, nativeScrollbarStyling = nativeScrollbarStyling, overlayScrollbarDummySize = overlayScrollbarDummySize, restrictedMeasuring = restrictedMeasuring, rtlScrollBehavior = rtlScrollBehavior, supportMutationObserver = supportMutationObserver, supportPassiveEvents = supportPassiveEvents, supportResizeObserver = supportResizeObserver, supportTransform = supportTransform, supportTransition = supportTransition)
-    if (cssCalc != null) __obj.updateDynamic("cssCalc")(cssCalc)
+    val __obj = js.Dynamic.literal(autoUpdateLoop = autoUpdateLoop.asInstanceOf[js.Any], autoUpdateRecommended = autoUpdateRecommended.asInstanceOf[js.Any], nativeScrollbarIsOverlaid = nativeScrollbarIsOverlaid.asInstanceOf[js.Any], nativeScrollbarSize = nativeScrollbarSize.asInstanceOf[js.Any], nativeScrollbarStyling = nativeScrollbarStyling.asInstanceOf[js.Any], overlayScrollbarDummySize = overlayScrollbarDummySize.asInstanceOf[js.Any], restrictedMeasuring = restrictedMeasuring.asInstanceOf[js.Any], rtlScrollBehavior = rtlScrollBehavior.asInstanceOf[js.Any], supportMutationObserver = supportMutationObserver.asInstanceOf[js.Any], supportPassiveEvents = supportPassiveEvents.asInstanceOf[js.Any], supportResizeObserver = supportResizeObserver.asInstanceOf[js.Any], supportTransform = supportTransform.asInstanceOf[js.Any], supportTransition = supportTransition.asInstanceOf[js.Any])
+    if (cssCalc != null) __obj.updateDynamic("cssCalc")(cssCalc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Globals]
   }
 }

@@ -19,8 +19,8 @@ object ResourcesMoveInfo {
   @scala.inline
   def apply(resources: js.Array[String] = null, targetResourceGroup: String = null): ResourcesMoveInfo = {
     val __obj = js.Dynamic.literal()
-    if (resources != null) __obj.updateDynamic("resources")(resources)
-    if (targetResourceGroup != null) __obj.updateDynamic("targetResourceGroup")(targetResourceGroup)
+    if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
+    if (targetResourceGroup != null) __obj.updateDynamic("targetResourceGroup")(targetResourceGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourcesMoveInfo]
   }
 }

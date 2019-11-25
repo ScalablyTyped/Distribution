@@ -14,8 +14,8 @@ trait SerializedNumberFilter extends SerializedFilter {
 object SerializedNumberFilter {
   @scala.inline
   def apply(filter: Double, filterTo: Double, filterType: String, `type`: String): SerializedNumberFilter = {
-    val __obj = js.Dynamic.literal(filter = filter, filterTo = filterTo, filterType = filterType)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any], filterTo = filterTo.asInstanceOf[js.Any], filterType = filterType.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SerializedNumberFilter]
   }
 }

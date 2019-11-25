@@ -27,13 +27,13 @@ object SchemaProperties {
     rules: js.Array[Anon_MatchArray with Rules] = null
   ): SchemaProperties = {
     val __obj = js.Dynamic.literal()
-    if (annotations != null) __obj.updateDynamic("annotations")(annotations)
-    if (blocks != null) __obj.updateDynamic("blocks")(blocks)
-    if (decorations != null) __obj.updateDynamic("decorations")(decorations)
-    if (document != null) __obj.updateDynamic("document")(document)
-    if (inlines != null) __obj.updateDynamic("inlines")(inlines)
-    if (marks != null) __obj.updateDynamic("marks")(marks)
-    if (rules != null) __obj.updateDynamic("rules")(rules)
+    if (annotations != null) __obj.updateDynamic("annotations")(annotations.asInstanceOf[js.Any])
+    if (blocks != null) __obj.updateDynamic("blocks")(blocks.asInstanceOf[js.Any])
+    if (decorations != null) __obj.updateDynamic("decorations")(decorations.asInstanceOf[js.Any])
+    if (document != null) __obj.updateDynamic("document")(document.asInstanceOf[js.Any])
+    if (inlines != null) __obj.updateDynamic("inlines")(inlines.asInstanceOf[js.Any])
+    if (marks != null) __obj.updateDynamic("marks")(marks.asInstanceOf[js.Any])
+    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaProperties]
   }
 }

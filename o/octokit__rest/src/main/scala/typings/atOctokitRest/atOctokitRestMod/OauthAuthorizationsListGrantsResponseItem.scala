@@ -23,7 +23,7 @@ object OauthAuthorizationsListGrantsResponseItem {
     updated_at: String,
     url: String
   ): OauthAuthorizationsListGrantsResponseItem = {
-    val __obj = js.Dynamic.literal(app = app, created_at = created_at, id = id, scopes = scopes, updated_at = updated_at, url = url)
+    val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], scopes = scopes.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OauthAuthorizationsListGrantsResponseItem]
   }

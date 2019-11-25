@@ -31,9 +31,9 @@ object TraceOptions {
   ): TraceOptions = {
     val __obj = js.Dynamic.literal()
     if (analytics != null) __obj.updateDynamic("analytics")(analytics.asInstanceOf[js.Any])
-    if (resource != null) __obj.updateDynamic("resource")(resource)
-    if (service != null) __obj.updateDynamic("service")(service)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
+    if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TraceOptions]
   }
 }

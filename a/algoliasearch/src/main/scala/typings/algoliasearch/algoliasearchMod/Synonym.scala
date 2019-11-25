@@ -27,7 +27,7 @@ trait Synonym extends js.Object {
 object Synonym {
   @scala.inline
   def apply(objectID: String, synonyms: js.Array[String], `type`: synonym | oneWaySynonym): Synonym = {
-    val __obj = js.Dynamic.literal(objectID = objectID, synonyms = synonyms)
+    val __obj = js.Dynamic.literal(objectID = objectID.asInstanceOf[js.Any], synonyms = synonyms.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Synonym]
   }

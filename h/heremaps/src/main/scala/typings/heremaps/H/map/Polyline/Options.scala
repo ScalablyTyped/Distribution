@@ -44,12 +44,12 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (arrows != null) __obj.updateDynamic("arrows")(arrows.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (provider != null) __obj.updateDynamic("provider")(provider)
+    if (provider != null) __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(visibility)) __obj.updateDynamic("visibility")(visibility)
+    if (!js.isUndefined(visibility)) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

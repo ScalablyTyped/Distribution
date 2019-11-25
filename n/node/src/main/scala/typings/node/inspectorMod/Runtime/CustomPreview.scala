@@ -24,8 +24,8 @@ object CustomPreview {
     header: java.lang.String,
     configObjectId: RemoteObjectId = null
   ): CustomPreview = {
-    val __obj = js.Dynamic.literal(bindRemoteObjectFunctionId = bindRemoteObjectFunctionId, formatterObjectId = formatterObjectId, hasBody = hasBody, header = header)
-    if (configObjectId != null) __obj.updateDynamic("configObjectId")(configObjectId)
+    val __obj = js.Dynamic.literal(bindRemoteObjectFunctionId = bindRemoteObjectFunctionId.asInstanceOf[js.Any], formatterObjectId = formatterObjectId.asInstanceOf[js.Any], hasBody = hasBody.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any])
+    if (configObjectId != null) __obj.updateDynamic("configObjectId")(configObjectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomPreview]
   }
 }

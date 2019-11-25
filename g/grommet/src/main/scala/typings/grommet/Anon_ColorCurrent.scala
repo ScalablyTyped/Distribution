@@ -17,9 +17,9 @@ object Anon_ColorCurrent {
   def apply(color: ColorType = null, current: js.Any = null, next: js.Any = null, previous: js.Any = null): Anon_ColorCurrent = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (current != null) __obj.updateDynamic("current")(current)
-    if (next != null) __obj.updateDynamic("next")(next)
-    if (previous != null) __obj.updateDynamic("previous")(previous)
+    if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
+    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
+    if (previous != null) __obj.updateDynamic("previous")(previous.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ColorCurrent]
   }
 }

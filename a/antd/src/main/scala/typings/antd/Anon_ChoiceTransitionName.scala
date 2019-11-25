@@ -21,7 +21,7 @@ object Anon_ChoiceTransitionName {
     showSearch: Boolean,
     transitionName: String
   ): Anon_ChoiceTransitionName = {
-    val __obj = js.Dynamic.literal(choiceTransitionName = choiceTransitionName, filterOption = filterOption, optionLabelProp = optionLabelProp, showSearch = showSearch, transitionName = transitionName)
+    val __obj = js.Dynamic.literal(choiceTransitionName = choiceTransitionName.asInstanceOf[js.Any], filterOption = filterOption.asInstanceOf[js.Any], optionLabelProp = optionLabelProp.asInstanceOf[js.Any], showSearch = showSearch.asInstanceOf[js.Any], transitionName = transitionName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ChoiceTransitionName]
   }

@@ -22,8 +22,8 @@ trait CreateKeyOutput extends OutputTypesUnion {
 object CreateKeyOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, KeyMetadata: _UnmarshalledKeyMetadata = null): CreateKeyOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (KeyMetadata != null) __obj.updateDynamic("KeyMetadata")(KeyMetadata)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (KeyMetadata != null) __obj.updateDynamic("KeyMetadata")(KeyMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateKeyOutput]
   }
 }

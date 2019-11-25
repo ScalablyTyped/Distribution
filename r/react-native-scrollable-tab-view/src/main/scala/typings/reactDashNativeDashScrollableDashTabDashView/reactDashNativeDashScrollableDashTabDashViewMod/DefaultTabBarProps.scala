@@ -32,14 +32,14 @@ object DefaultTabBarProps {
     underlineStyle: ViewStyle = null
   ): DefaultTabBarProps = {
     val __obj = js.Dynamic.literal()
-    if (activeTextColor != null) __obj.updateDynamic("activeTextColor")(activeTextColor)
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
-    if (inactiveTextColor != null) __obj.updateDynamic("inactiveTextColor")(inactiveTextColor)
+    if (activeTextColor != null) __obj.updateDynamic("activeTextColor")(activeTextColor.asInstanceOf[js.Any])
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (inactiveTextColor != null) __obj.updateDynamic("inactiveTextColor")(inactiveTextColor.asInstanceOf[js.Any])
     if (renderTab != null) __obj.updateDynamic("renderTab")(js.Any.fromFunction5(renderTab))
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (tabStyle != null) __obj.updateDynamic("tabStyle")(tabStyle)
-    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle)
-    if (underlineStyle != null) __obj.updateDynamic("underlineStyle")(underlineStyle)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (tabStyle != null) __obj.updateDynamic("tabStyle")(tabStyle.asInstanceOf[js.Any])
+    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
+    if (underlineStyle != null) __obj.updateDynamic("underlineStyle")(underlineStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultTabBarProps]
   }
 }

@@ -15,8 +15,8 @@ object ApprovalUrlInfo {
   @scala.inline
   def apply(approvalUrl: String = null, kind: String = null): ApprovalUrlInfo = {
     val __obj = js.Dynamic.literal()
-    if (approvalUrl != null) __obj.updateDynamic("approvalUrl")(approvalUrl)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (approvalUrl != null) __obj.updateDynamic("approvalUrl")(approvalUrl.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApprovalUrlInfo]
   }
 }

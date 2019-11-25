@@ -40,7 +40,7 @@ object Typeofidle {
     queryState: (integer, js.Function1[/* newState */ IdleState, Unit]) => Unit,
     setDetectionInterval: integer => Unit
   ): Typeofidle = {
-    val __obj = js.Dynamic.literal(onStateChanged = onStateChanged, queryState = js.Any.fromFunction2(queryState), setDetectionInterval = js.Any.fromFunction1(setDetectionInterval))
+    val __obj = js.Dynamic.literal(onStateChanged = onStateChanged.asInstanceOf[js.Any], queryState = js.Any.fromFunction2(queryState), setDetectionInterval = js.Any.fromFunction1(setDetectionInterval))
   
     __obj.asInstanceOf[Typeofidle]
   }

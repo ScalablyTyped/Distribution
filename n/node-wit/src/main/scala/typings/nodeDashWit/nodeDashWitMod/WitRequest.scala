@@ -20,10 +20,10 @@ object WitRequest {
     text: String = null
   ): WitRequest = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (entities != null) __obj.updateDynamic("entities")(entities)
-    if (sessionId != null) __obj.updateDynamic("sessionId")(sessionId)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (entities != null) __obj.updateDynamic("entities")(entities.asInstanceOf[js.Any])
+    if (sessionId != null) __obj.updateDynamic("sessionId")(sessionId.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[WitRequest]
   }
 }

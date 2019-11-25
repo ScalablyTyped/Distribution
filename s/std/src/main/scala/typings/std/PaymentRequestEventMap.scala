@@ -12,7 +12,7 @@ trait PaymentRequestEventMap extends js.Object {
 object PaymentRequestEventMap {
   @scala.inline
   def apply(shippingaddresschange: Event, shippingoptionchange: Event): PaymentRequestEventMap = {
-    val __obj = js.Dynamic.literal(shippingaddresschange = shippingaddresschange, shippingoptionchange = shippingoptionchange)
+    val __obj = js.Dynamic.literal(shippingaddresschange = shippingaddresschange.asInstanceOf[js.Any], shippingoptionchange = shippingoptionchange.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PaymentRequestEventMap]
   }

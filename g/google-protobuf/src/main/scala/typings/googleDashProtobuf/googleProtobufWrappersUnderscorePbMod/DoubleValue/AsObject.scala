@@ -11,7 +11,7 @@ trait AsObject extends js.Object {
 object AsObject {
   @scala.inline
   def apply(value: Double): AsObject = {
-    val __obj = js.Dynamic.literal(value = value)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AsObject]
   }

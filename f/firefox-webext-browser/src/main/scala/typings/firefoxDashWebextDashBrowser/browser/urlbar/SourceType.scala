@@ -19,3 +19,20 @@ import scala.scalajs.js.annotation._
 */
 trait SourceType extends js.Object
 
+object SourceType {
+  @scala.inline
+  def bookmarks: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.bookmarks = this.cast("bookmarks")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def history: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.history = this.cast("history")
+  @scala.inline
+  def local: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.local = this.cast("local")
+  @scala.inline
+  def network: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.network = this.cast("network")
+  @scala.inline
+  def search: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.search = this.cast("search")
+  @scala.inline
+  def tabs: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.tabs = this.cast("tabs")
+}
+

@@ -56,13 +56,13 @@ object FormOptions {
     uploadDir: String = null
   ): FormOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoFields)) __obj.updateDynamic("autoFields")(autoFields)
-    if (!js.isUndefined(autoFiles)) __obj.updateDynamic("autoFiles")(autoFiles)
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (!js.isUndefined(autoFields)) __obj.updateDynamic("autoFields")(autoFields.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoFiles)) __obj.updateDynamic("autoFiles")(autoFiles.asInstanceOf[js.Any])
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (maxFields != null) __obj.updateDynamic("maxFields")(maxFields.asInstanceOf[js.Any])
     if (maxFieldsSize != null) __obj.updateDynamic("maxFieldsSize")(maxFieldsSize.asInstanceOf[js.Any])
     if (maxFilesSize != null) __obj.updateDynamic("maxFilesSize")(maxFilesSize.asInstanceOf[js.Any])
-    if (uploadDir != null) __obj.updateDynamic("uploadDir")(uploadDir)
+    if (uploadDir != null) __obj.updateDynamic("uploadDir")(uploadDir.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormOptions]
   }
 }

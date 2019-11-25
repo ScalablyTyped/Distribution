@@ -22,10 +22,10 @@ object AngleLineOptions {
     lineWidth: Int | Double = null
   ): AngleLineOptions = {
     val __obj = js.Dynamic.literal()
-    if (borderDash != null) __obj.updateDynamic("borderDash")(borderDash)
+    if (borderDash != null) __obj.updateDynamic("borderDash")(borderDash.asInstanceOf[js.Any])
     if (borderDashOffset != null) __obj.updateDynamic("borderDashOffset")(borderDashOffset.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(display)) __obj.updateDynamic("display")(display)
+    if (!js.isUndefined(display)) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
     if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[AngleLineOptions]
   }

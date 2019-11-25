@@ -14,8 +14,8 @@ trait Anon_Dep extends js.Object {
 object Anon_Dep {
   @scala.inline
   def apply(deps: StringDictionary[Boolean], `package`: js.Any, source: String): Anon_Dep = {
-    val __obj = js.Dynamic.literal(deps = deps, source = source)
-    __obj.updateDynamic("package")(`package`)
+    val __obj = js.Dynamic.literal(deps = deps.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
+    __obj.updateDynamic("package")(`package`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Dep]
   }
 }

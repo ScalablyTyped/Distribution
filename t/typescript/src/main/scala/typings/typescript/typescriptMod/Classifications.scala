@@ -12,7 +12,7 @@ trait Classifications extends js.Object {
 object Classifications {
   @scala.inline
   def apply(endOfLineState: EndOfLineState, spans: js.Array[Double]): Classifications = {
-    val __obj = js.Dynamic.literal(endOfLineState = endOfLineState, spans = spans)
+    val __obj = js.Dynamic.literal(endOfLineState = endOfLineState.asInstanceOf[js.Any], spans = spans.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Classifications]
   }

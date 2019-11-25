@@ -13,7 +13,7 @@ object IP24PaymentMethodDetails {
   @scala.inline
   def apply(`type`: p24): IP24PaymentMethodDetails = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IP24PaymentMethodDetails]
   }
 }

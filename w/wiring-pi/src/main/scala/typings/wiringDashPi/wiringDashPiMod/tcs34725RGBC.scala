@@ -14,7 +14,7 @@ trait tcs34725RGBC extends js.Object {
 object tcs34725RGBC {
   @scala.inline
   def apply(b: Double, c: Double, g: Double, r: Double): tcs34725RGBC = {
-    val __obj = js.Dynamic.literal(b = b, c = c, g = g, r = r)
+    val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], c = c.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[tcs34725RGBC]
   }

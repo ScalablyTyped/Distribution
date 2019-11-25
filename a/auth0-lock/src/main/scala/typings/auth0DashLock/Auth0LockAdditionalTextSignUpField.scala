@@ -28,11 +28,11 @@ object Auth0LockAdditionalTextSignUpField {
     `type`: text = null,
     validator: /* input */ String => Anon_Hint = null
   ): Auth0LockAdditionalTextSignUpField = {
-    val __obj = js.Dynamic.literal(name = name, placeholder = placeholder)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (prefill != null) __obj.updateDynamic("prefill")(prefill.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (validator != null) __obj.updateDynamic("validator")(js.Any.fromFunction1(validator))
     __obj.asInstanceOf[Auth0LockAdditionalTextSignUpField]
   }

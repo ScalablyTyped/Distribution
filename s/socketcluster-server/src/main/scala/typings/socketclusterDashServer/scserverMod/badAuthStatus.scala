@@ -13,7 +13,7 @@ trait badAuthStatus extends js.Object {
 object badAuthStatus {
   @scala.inline
   def apply(authError: Error, signedAuthToken: String): badAuthStatus = {
-    val __obj = js.Dynamic.literal(authError = authError, signedAuthToken = signedAuthToken)
+    val __obj = js.Dynamic.literal(authError = authError.asInstanceOf[js.Any], signedAuthToken = signedAuthToken.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[badAuthStatus]
   }

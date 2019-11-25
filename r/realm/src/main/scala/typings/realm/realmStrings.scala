@@ -91,7 +91,7 @@ object realmStrings {
   sealed trait debug extends LogLevel
   
   @js.native
-  sealed trait delete extends RealmListenerEventName
+  sealed trait delete_ extends RealmListenerEventName
   
   @js.native
   sealed trait detail extends LogLevel
@@ -243,7 +243,7 @@ object realmStrings {
   @scala.inline
   def debug: debug = "debug".asInstanceOf[debug]
   @scala.inline
-  def delete: delete = "delete".asInstanceOf[delete]
+  def delete_ : delete_ = "delete".asInstanceOf[delete_]
   @scala.inline
   def detail: detail = "detail".asInstanceOf[detail]
   @scala.inline

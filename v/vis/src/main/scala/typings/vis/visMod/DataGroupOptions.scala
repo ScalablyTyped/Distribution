@@ -26,11 +26,11 @@ object DataGroupOptions {
   ): DataGroupOptions = {
     val __obj = js.Dynamic.literal()
     if (drawPoints != null) __obj.updateDynamic("drawPoints")(drawPoints.asInstanceOf[js.Any])
-    if (!js.isUndefined(excludeFromLegend)) __obj.updateDynamic("excludeFromLegend")(excludeFromLegend)
+    if (!js.isUndefined(excludeFromLegend)) __obj.updateDynamic("excludeFromLegend")(excludeFromLegend.asInstanceOf[js.Any])
     if (interpolation != null) __obj.updateDynamic("interpolation")(interpolation.asInstanceOf[js.Any])
-    if (shaded != null) __obj.updateDynamic("shaded")(shaded)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (yAxisOrientation != null) __obj.updateDynamic("yAxisOrientation")(yAxisOrientation)
+    if (shaded != null) __obj.updateDynamic("shaded")(shaded.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (yAxisOrientation != null) __obj.updateDynamic("yAxisOrientation")(yAxisOrientation.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataGroupOptions]
   }
 }

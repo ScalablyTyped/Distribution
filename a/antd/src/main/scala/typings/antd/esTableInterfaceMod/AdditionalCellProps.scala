@@ -21,7 +21,7 @@ object AdditionalCellProps {
     onClick: MouseEvent[HTMLElement, NativeMouseEvent] => Unit = null
   ): AdditionalCellProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     __obj.asInstanceOf[AdditionalCellProps]
   }

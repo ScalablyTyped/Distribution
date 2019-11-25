@@ -31,8 +31,8 @@ trait InfoReceived extends VoxImplantCallEvent {
 object InfoReceived {
   @scala.inline
   def apply(body: String, call: Call, mimeType: String, headers: js.Object = null): InfoReceived = {
-    val __obj = js.Dynamic.literal(body = body, call = call, mimeType = mimeType)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], call = call.asInstanceOf[js.Any], mimeType = mimeType.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     __obj.asInstanceOf[InfoReceived]
   }
 }

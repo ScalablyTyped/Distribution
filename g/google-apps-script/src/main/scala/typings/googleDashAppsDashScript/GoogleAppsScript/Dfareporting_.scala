@@ -69,7 +69,6 @@ import typings.googleDashAppsDashScript.GoogleAppsScript.Dfareporting.Schema.Adv
 import typings.googleDashAppsDashScript.GoogleAppsScript.Dfareporting.Schema.AdvertiserGroup
 import typings.googleDashAppsDashScript.GoogleAppsScript.Dfareporting.Schema.AudienceSegment
 import typings.googleDashAppsDashScript.GoogleAppsScript.Dfareporting.Schema.AudienceSegmentGroup
-import typings.googleDashAppsDashScript.GoogleAppsScript.Dfareporting.Schema.Browser
 import typings.googleDashAppsDashScript.GoogleAppsScript.Dfareporting.Schema.Campaign
 import typings.googleDashAppsDashScript.GoogleAppsScript.Dfareporting.Schema.CampaignCreativeAssociation
 import typings.googleDashAppsDashScript.GoogleAppsScript.Dfareporting.Schema.City
@@ -280,7 +279,7 @@ trait Dfareporting_ extends js.Object {
   // Create a new instance of AudienceSegmentGroup
   def newAudienceSegmentGroup(): AudienceSegmentGroup
   // Create a new instance of Browser
-  def newBrowser(): Browser
+  def newBrowser(): typings.googleDashAppsDashScript.GoogleAppsScript.Dfareporting.Schema.Browser
   // Create a new instance of Campaign
   def newCampaign(): Campaign
   // Create a new instance of CampaignCreativeAssociation
@@ -547,7 +546,7 @@ object Dfareporting_ {
     newAdvertiserGroup: () => AdvertiserGroup,
     newAudienceSegment: () => AudienceSegment,
     newAudienceSegmentGroup: () => AudienceSegmentGroup,
-    newBrowser: () => Browser,
+    newBrowser: () => typings.googleDashAppsDashScript.GoogleAppsScript.Dfareporting.Schema.Browser,
     newCampaign: () => Campaign,
     newCampaignCreativeAssociation: () => CampaignCreativeAssociation,
     newCity: () => City,
@@ -736,66 +735,66 @@ object Dfareporting_ {
     VideoFormats: VideoFormatsCollection = null
   ): Dfareporting_ = {
     val __obj = js.Dynamic.literal(newAccount = js.Any.fromFunction0(newAccount), newAccountUserProfile = js.Any.fromFunction0(newAccountUserProfile), newActivities = js.Any.fromFunction0(newActivities), newAd = js.Any.fromFunction0(newAd), newAdBlockingConfiguration = js.Any.fromFunction0(newAdBlockingConfiguration), newAdvertiser = js.Any.fromFunction0(newAdvertiser), newAdvertiserGroup = js.Any.fromFunction0(newAdvertiserGroup), newAudienceSegment = js.Any.fromFunction0(newAudienceSegment), newAudienceSegmentGroup = js.Any.fromFunction0(newAudienceSegmentGroup), newBrowser = js.Any.fromFunction0(newBrowser), newCampaign = js.Any.fromFunction0(newCampaign), newCampaignCreativeAssociation = js.Any.fromFunction0(newCampaignCreativeAssociation), newCity = js.Any.fromFunction0(newCity), newClickTag = js.Any.fromFunction0(newClickTag), newClickThroughUrl = js.Any.fromFunction0(newClickThroughUrl), newClickThroughUrlSuffixProperties = js.Any.fromFunction0(newClickThroughUrlSuffixProperties), newCompanionClickThroughOverride = js.Any.fromFunction0(newCompanionClickThroughOverride), newCompanionSetting = js.Any.fromFunction0(newCompanionSetting), newConnectionType = js.Any.fromFunction0(newConnectionType), newContentCategory = js.Any.fromFunction0(newContentCategory), newConversion = js.Any.fromFunction0(newConversion), newConversionsBatchInsertRequest = js.Any.fromFunction0(newConversionsBatchInsertRequest), newConversionsBatchUpdateRequest = js.Any.fromFunction0(newConversionsBatchUpdateRequest), newCountry = js.Any.fromFunction0(newCountry), newCreative = js.Any.fromFunction0(newCreative), newCreativeAsset = js.Any.fromFunction0(newCreativeAsset), newCreativeAssetId = js.Any.fromFunction0(newCreativeAssetId), newCreativeAssetMetadata = js.Any.fromFunction0(newCreativeAssetMetadata), newCreativeAssetSelection = js.Any.fromFunction0(newCreativeAssetSelection), newCreativeAssignment = js.Any.fromFunction0(newCreativeAssignment), newCreativeClickThroughUrl = js.Any.fromFunction0(newCreativeClickThroughUrl), newCreativeCustomEvent = js.Any.fromFunction0(newCreativeCustomEvent), newCreativeField = js.Any.fromFunction0(newCreativeField), newCreativeFieldAssignment = js.Any.fromFunction0(newCreativeFieldAssignment), newCreativeFieldValue = js.Any.fromFunction0(newCreativeFieldValue), newCreativeGroup = js.Any.fromFunction0(newCreativeGroup), newCreativeGroupAssignment = js.Any.fromFunction0(newCreativeGroupAssignment), newCreativeOptimizationConfiguration = js.Any.fromFunction0(newCreativeOptimizationConfiguration), newCreativeRotation = js.Any.fromFunction0(newCreativeRotation), newCustomFloodlightVariable = js.Any.fromFunction0(newCustomFloodlightVariable), newCustomRichMediaEvents = js.Any.fromFunction0(newCustomRichMediaEvents), newCustomViewabilityMetric = js.Any.fromFunction0(newCustomViewabilityMetric), newCustomViewabilityMetricConfiguration = js.Any.fromFunction0(newCustomViewabilityMetricConfiguration), newDateRange = js.Any.fromFunction0(newDateRange), newDayPartTargeting = js.Any.fromFunction0(newDayPartTargeting), newDeepLink = js.Any.fromFunction0(newDeepLink), newDefaultClickThroughEventTagProperties = js.Any.fromFunction0(newDefaultClickThroughEventTagProperties), newDeliverySchedule = js.Any.fromFunction0(newDeliverySchedule), newDfpSettings = js.Any.fromFunction0(newDfpSettings), newDimensionFilter = js.Any.fromFunction0(newDimensionFilter), newDimensionValue = js.Any.fromFunction0(newDimensionValue), newDimensionValueRequest = js.Any.fromFunction0(newDimensionValueRequest), newDirectorySite = js.Any.fromFunction0(newDirectorySite), newDirectorySiteSettings = js.Any.fromFunction0(newDirectorySiteSettings), newDynamicTargetingKey = js.Any.fromFunction0(newDynamicTargetingKey), newEncryptionInfo = js.Any.fromFunction0(newEncryptionInfo), newEventTag = js.Any.fromFunction0(newEventTag), newEventTagOverride = js.Any.fromFunction0(newEventTagOverride), newFloodlightActivity = js.Any.fromFunction0(newFloodlightActivity), newFloodlightActivityDynamicTag = js.Any.fromFunction0(newFloodlightActivityDynamicTag), newFloodlightActivityGroup = js.Any.fromFunction0(newFloodlightActivityGroup), newFloodlightActivityPublisherDynamicTag = js.Any.fromFunction0(newFloodlightActivityPublisherDynamicTag), newFloodlightConfiguration = js.Any.fromFunction0(newFloodlightConfiguration), newFrequencyCap = js.Any.fromFunction0(newFrequencyCap), newFsCommand = js.Any.fromFunction0(newFsCommand), newGeoTargeting = js.Any.fromFunction0(newGeoTargeting), newKeyValueTargetingExpression = js.Any.fromFunction0(newKeyValueTargetingExpression), newLandingPage = js.Any.fromFunction0(newLandingPage), newLanguage = js.Any.fromFunction0(newLanguage), newLanguageTargeting = js.Any.fromFunction0(newLanguageTargeting), newLastModifiedInfo = js.Any.fromFunction0(newLastModifiedInfo), newListPopulationClause = js.Any.fromFunction0(newListPopulationClause), newListPopulationRule = js.Any.fromFunction0(newListPopulationRule), newListPopulationTerm = js.Any.fromFunction0(newListPopulationTerm), newListTargetingExpression = js.Any.fromFunction0(newListTargetingExpression), newLookbackConfiguration = js.Any.fromFunction0(newLookbackConfiguration), newMetro = js.Any.fromFunction0(newMetro), newMobileApp = js.Any.fromFunction0(newMobileApp), newMobileCarrier = js.Any.fromFunction0(newMobileCarrier), newObjectFilter = js.Any.fromFunction0(newObjectFilter), newOffsetPosition = js.Any.fromFunction0(newOffsetPosition), newOmnitureSettings = js.Any.fromFunction0(newOmnitureSettings), newOperatingSystem = js.Any.fromFunction0(newOperatingSystem), newOperatingSystemVersion = js.Any.fromFunction0(newOperatingSystemVersion), newOptimizationActivity = js.Any.fromFunction0(newOptimizationActivity), newPlacement = js.Any.fromFunction0(newPlacement), newPlacementAssignment = js.Any.fromFunction0(newPlacementAssignment), newPlacementGroup = js.Any.fromFunction0(newPlacementGroup), newPlacementStrategy = js.Any.fromFunction0(newPlacementStrategy), newPlatformType = js.Any.fromFunction0(newPlatformType), newPopupWindowProperties = js.Any.fromFunction0(newPopupWindowProperties), newPostalCode = js.Any.fromFunction0(newPostalCode), newPricingSchedule = js.Any.fromFunction0(newPricingSchedule), newPricingSchedulePricingPeriod = js.Any.fromFunction0(newPricingSchedulePricingPeriod), newRecipient = js.Any.fromFunction0(newRecipient), newRegion = js.Any.fromFunction0(newRegion), newRemarketingList = js.Any.fromFunction0(newRemarketingList), newRemarketingListShare = js.Any.fromFunction0(newRemarketingListShare), newReport = js.Any.fromFunction0(newReport), newReportCriteria = js.Any.fromFunction0(newReportCriteria), newReportCrossDimensionReachCriteria = js.Any.fromFunction0(newReportCrossDimensionReachCriteria), newReportDelivery = js.Any.fromFunction0(newReportDelivery), newReportFloodlightCriteria = js.Any.fromFunction0(newReportFloodlightCriteria), newReportFloodlightCriteriaReportProperties = js.Any.fromFunction0(newReportFloodlightCriteriaReportProperties), newReportPathToConversionCriteria = js.Any.fromFunction0(newReportPathToConversionCriteria), newReportPathToConversionCriteriaReportProperties = js.Any.fromFunction0(newReportPathToConversionCriteriaReportProperties), newReportReachCriteria = js.Any.fromFunction0(newReportReachCriteria), newReportSchedule = js.Any.fromFunction0(newReportSchedule), newReportsConfiguration = js.Any.fromFunction0(newReportsConfiguration), newRichMediaExitOverride = js.Any.fromFunction0(newRichMediaExitOverride), newRule = js.Any.fromFunction0(newRule), newSite = js.Any.fromFunction0(newSite), newSiteCompanionSetting = js.Any.fromFunction0(newSiteCompanionSetting), newSiteContact = js.Any.fromFunction0(newSiteContact), newSiteSettings = js.Any.fromFunction0(newSiteSettings), newSiteSkippableSetting = js.Any.fromFunction0(newSiteSkippableSetting), newSiteTranscodeSetting = js.Any.fromFunction0(newSiteTranscodeSetting), newSiteVideoSettings = js.Any.fromFunction0(newSiteVideoSettings), newSize = js.Any.fromFunction0(newSize), newSkippableSetting = js.Any.fromFunction0(newSkippableSetting), newSortedDimension = js.Any.fromFunction0(newSortedDimension), newSubaccount = js.Any.fromFunction0(newSubaccount), newTagSetting = js.Any.fromFunction0(newTagSetting), newTagSettings = js.Any.fromFunction0(newTagSettings), newTargetWindow = js.Any.fromFunction0(newTargetWindow), newTargetingTemplate = js.Any.fromFunction0(newTargetingTemplate), newTechnologyTargeting = js.Any.fromFunction0(newTechnologyTargeting), newThirdPartyAuthenticationToken = js.Any.fromFunction0(newThirdPartyAuthenticationToken), newThirdPartyTrackingUrl = js.Any.fromFunction0(newThirdPartyTrackingUrl), newTranscodeSetting = js.Any.fromFunction0(newTranscodeSetting), newUniversalAdId = js.Any.fromFunction0(newUniversalAdId), newUserDefinedVariableConfiguration = js.Any.fromFunction0(newUserDefinedVariableConfiguration), newUserRole = js.Any.fromFunction0(newUserRole), newUserRolePermission = js.Any.fromFunction0(newUserRolePermission), newVideoOffset = js.Any.fromFunction0(newVideoOffset), newVideoSettings = js.Any.fromFunction0(newVideoSettings))
-    if (AccountActiveAdSummaries != null) __obj.updateDynamic("AccountActiveAdSummaries")(AccountActiveAdSummaries)
-    if (AccountPermissionGroups != null) __obj.updateDynamic("AccountPermissionGroups")(AccountPermissionGroups)
-    if (AccountPermissions != null) __obj.updateDynamic("AccountPermissions")(AccountPermissions)
-    if (AccountUserProfiles != null) __obj.updateDynamic("AccountUserProfiles")(AccountUserProfiles)
-    if (Accounts != null) __obj.updateDynamic("Accounts")(Accounts)
-    if (Ads != null) __obj.updateDynamic("Ads")(Ads)
-    if (AdvertiserGroups != null) __obj.updateDynamic("AdvertiserGroups")(AdvertiserGroups)
-    if (AdvertiserLandingPages != null) __obj.updateDynamic("AdvertiserLandingPages")(AdvertiserLandingPages)
-    if (Advertisers != null) __obj.updateDynamic("Advertisers")(Advertisers)
-    if (Browsers != null) __obj.updateDynamic("Browsers")(Browsers)
-    if (CampaignCreativeAssociations != null) __obj.updateDynamic("CampaignCreativeAssociations")(CampaignCreativeAssociations)
-    if (Campaigns != null) __obj.updateDynamic("Campaigns")(Campaigns)
-    if (ChangeLogs != null) __obj.updateDynamic("ChangeLogs")(ChangeLogs)
-    if (Cities != null) __obj.updateDynamic("Cities")(Cities)
-    if (ConnectionTypes != null) __obj.updateDynamic("ConnectionTypes")(ConnectionTypes)
-    if (ContentCategories != null) __obj.updateDynamic("ContentCategories")(ContentCategories)
-    if (Conversions != null) __obj.updateDynamic("Conversions")(Conversions)
-    if (Countries != null) __obj.updateDynamic("Countries")(Countries)
-    if (CreativeAssets != null) __obj.updateDynamic("CreativeAssets")(CreativeAssets)
-    if (CreativeFieldValues != null) __obj.updateDynamic("CreativeFieldValues")(CreativeFieldValues)
-    if (CreativeFields != null) __obj.updateDynamic("CreativeFields")(CreativeFields)
-    if (CreativeGroups != null) __obj.updateDynamic("CreativeGroups")(CreativeGroups)
-    if (Creatives != null) __obj.updateDynamic("Creatives")(Creatives)
-    if (DimensionValues != null) __obj.updateDynamic("DimensionValues")(DimensionValues)
-    if (DirectorySites != null) __obj.updateDynamic("DirectorySites")(DirectorySites)
-    if (DynamicTargetingKeys != null) __obj.updateDynamic("DynamicTargetingKeys")(DynamicTargetingKeys)
-    if (EventTags != null) __obj.updateDynamic("EventTags")(EventTags)
-    if (Files != null) __obj.updateDynamic("Files")(Files)
-    if (FloodlightActivities != null) __obj.updateDynamic("FloodlightActivities")(FloodlightActivities)
-    if (FloodlightActivityGroups != null) __obj.updateDynamic("FloodlightActivityGroups")(FloodlightActivityGroups)
-    if (FloodlightConfigurations != null) __obj.updateDynamic("FloodlightConfigurations")(FloodlightConfigurations)
-    if (InventoryItems != null) __obj.updateDynamic("InventoryItems")(InventoryItems)
-    if (Languages != null) __obj.updateDynamic("Languages")(Languages)
-    if (Metros != null) __obj.updateDynamic("Metros")(Metros)
-    if (MobileApps != null) __obj.updateDynamic("MobileApps")(MobileApps)
-    if (MobileCarriers != null) __obj.updateDynamic("MobileCarriers")(MobileCarriers)
-    if (OperatingSystemVersions != null) __obj.updateDynamic("OperatingSystemVersions")(OperatingSystemVersions)
-    if (OperatingSystems != null) __obj.updateDynamic("OperatingSystems")(OperatingSystems)
-    if (OrderDocuments != null) __obj.updateDynamic("OrderDocuments")(OrderDocuments)
-    if (Orders != null) __obj.updateDynamic("Orders")(Orders)
-    if (PlacementGroups != null) __obj.updateDynamic("PlacementGroups")(PlacementGroups)
-    if (PlacementStrategies != null) __obj.updateDynamic("PlacementStrategies")(PlacementStrategies)
-    if (Placements != null) __obj.updateDynamic("Placements")(Placements)
-    if (PlatformTypes != null) __obj.updateDynamic("PlatformTypes")(PlatformTypes)
-    if (PostalCodes != null) __obj.updateDynamic("PostalCodes")(PostalCodes)
-    if (Projects != null) __obj.updateDynamic("Projects")(Projects)
-    if (Regions != null) __obj.updateDynamic("Regions")(Regions)
-    if (RemarketingListShares != null) __obj.updateDynamic("RemarketingListShares")(RemarketingListShares)
-    if (RemarketingLists != null) __obj.updateDynamic("RemarketingLists")(RemarketingLists)
-    if (Reports != null) __obj.updateDynamic("Reports")(Reports)
-    if (Sites != null) __obj.updateDynamic("Sites")(Sites)
-    if (Sizes != null) __obj.updateDynamic("Sizes")(Sizes)
-    if (Subaccounts != null) __obj.updateDynamic("Subaccounts")(Subaccounts)
-    if (TargetableRemarketingLists != null) __obj.updateDynamic("TargetableRemarketingLists")(TargetableRemarketingLists)
-    if (TargetingTemplates != null) __obj.updateDynamic("TargetingTemplates")(TargetingTemplates)
-    if (UserProfiles != null) __obj.updateDynamic("UserProfiles")(UserProfiles)
-    if (UserRolePermissionGroups != null) __obj.updateDynamic("UserRolePermissionGroups")(UserRolePermissionGroups)
-    if (UserRolePermissions != null) __obj.updateDynamic("UserRolePermissions")(UserRolePermissions)
-    if (UserRoles != null) __obj.updateDynamic("UserRoles")(UserRoles)
-    if (VideoFormats != null) __obj.updateDynamic("VideoFormats")(VideoFormats)
+    if (AccountActiveAdSummaries != null) __obj.updateDynamic("AccountActiveAdSummaries")(AccountActiveAdSummaries.asInstanceOf[js.Any])
+    if (AccountPermissionGroups != null) __obj.updateDynamic("AccountPermissionGroups")(AccountPermissionGroups.asInstanceOf[js.Any])
+    if (AccountPermissions != null) __obj.updateDynamic("AccountPermissions")(AccountPermissions.asInstanceOf[js.Any])
+    if (AccountUserProfiles != null) __obj.updateDynamic("AccountUserProfiles")(AccountUserProfiles.asInstanceOf[js.Any])
+    if (Accounts != null) __obj.updateDynamic("Accounts")(Accounts.asInstanceOf[js.Any])
+    if (Ads != null) __obj.updateDynamic("Ads")(Ads.asInstanceOf[js.Any])
+    if (AdvertiserGroups != null) __obj.updateDynamic("AdvertiserGroups")(AdvertiserGroups.asInstanceOf[js.Any])
+    if (AdvertiserLandingPages != null) __obj.updateDynamic("AdvertiserLandingPages")(AdvertiserLandingPages.asInstanceOf[js.Any])
+    if (Advertisers != null) __obj.updateDynamic("Advertisers")(Advertisers.asInstanceOf[js.Any])
+    if (Browsers != null) __obj.updateDynamic("Browsers")(Browsers.asInstanceOf[js.Any])
+    if (CampaignCreativeAssociations != null) __obj.updateDynamic("CampaignCreativeAssociations")(CampaignCreativeAssociations.asInstanceOf[js.Any])
+    if (Campaigns != null) __obj.updateDynamic("Campaigns")(Campaigns.asInstanceOf[js.Any])
+    if (ChangeLogs != null) __obj.updateDynamic("ChangeLogs")(ChangeLogs.asInstanceOf[js.Any])
+    if (Cities != null) __obj.updateDynamic("Cities")(Cities.asInstanceOf[js.Any])
+    if (ConnectionTypes != null) __obj.updateDynamic("ConnectionTypes")(ConnectionTypes.asInstanceOf[js.Any])
+    if (ContentCategories != null) __obj.updateDynamic("ContentCategories")(ContentCategories.asInstanceOf[js.Any])
+    if (Conversions != null) __obj.updateDynamic("Conversions")(Conversions.asInstanceOf[js.Any])
+    if (Countries != null) __obj.updateDynamic("Countries")(Countries.asInstanceOf[js.Any])
+    if (CreativeAssets != null) __obj.updateDynamic("CreativeAssets")(CreativeAssets.asInstanceOf[js.Any])
+    if (CreativeFieldValues != null) __obj.updateDynamic("CreativeFieldValues")(CreativeFieldValues.asInstanceOf[js.Any])
+    if (CreativeFields != null) __obj.updateDynamic("CreativeFields")(CreativeFields.asInstanceOf[js.Any])
+    if (CreativeGroups != null) __obj.updateDynamic("CreativeGroups")(CreativeGroups.asInstanceOf[js.Any])
+    if (Creatives != null) __obj.updateDynamic("Creatives")(Creatives.asInstanceOf[js.Any])
+    if (DimensionValues != null) __obj.updateDynamic("DimensionValues")(DimensionValues.asInstanceOf[js.Any])
+    if (DirectorySites != null) __obj.updateDynamic("DirectorySites")(DirectorySites.asInstanceOf[js.Any])
+    if (DynamicTargetingKeys != null) __obj.updateDynamic("DynamicTargetingKeys")(DynamicTargetingKeys.asInstanceOf[js.Any])
+    if (EventTags != null) __obj.updateDynamic("EventTags")(EventTags.asInstanceOf[js.Any])
+    if (Files != null) __obj.updateDynamic("Files")(Files.asInstanceOf[js.Any])
+    if (FloodlightActivities != null) __obj.updateDynamic("FloodlightActivities")(FloodlightActivities.asInstanceOf[js.Any])
+    if (FloodlightActivityGroups != null) __obj.updateDynamic("FloodlightActivityGroups")(FloodlightActivityGroups.asInstanceOf[js.Any])
+    if (FloodlightConfigurations != null) __obj.updateDynamic("FloodlightConfigurations")(FloodlightConfigurations.asInstanceOf[js.Any])
+    if (InventoryItems != null) __obj.updateDynamic("InventoryItems")(InventoryItems.asInstanceOf[js.Any])
+    if (Languages != null) __obj.updateDynamic("Languages")(Languages.asInstanceOf[js.Any])
+    if (Metros != null) __obj.updateDynamic("Metros")(Metros.asInstanceOf[js.Any])
+    if (MobileApps != null) __obj.updateDynamic("MobileApps")(MobileApps.asInstanceOf[js.Any])
+    if (MobileCarriers != null) __obj.updateDynamic("MobileCarriers")(MobileCarriers.asInstanceOf[js.Any])
+    if (OperatingSystemVersions != null) __obj.updateDynamic("OperatingSystemVersions")(OperatingSystemVersions.asInstanceOf[js.Any])
+    if (OperatingSystems != null) __obj.updateDynamic("OperatingSystems")(OperatingSystems.asInstanceOf[js.Any])
+    if (OrderDocuments != null) __obj.updateDynamic("OrderDocuments")(OrderDocuments.asInstanceOf[js.Any])
+    if (Orders != null) __obj.updateDynamic("Orders")(Orders.asInstanceOf[js.Any])
+    if (PlacementGroups != null) __obj.updateDynamic("PlacementGroups")(PlacementGroups.asInstanceOf[js.Any])
+    if (PlacementStrategies != null) __obj.updateDynamic("PlacementStrategies")(PlacementStrategies.asInstanceOf[js.Any])
+    if (Placements != null) __obj.updateDynamic("Placements")(Placements.asInstanceOf[js.Any])
+    if (PlatformTypes != null) __obj.updateDynamic("PlatformTypes")(PlatformTypes.asInstanceOf[js.Any])
+    if (PostalCodes != null) __obj.updateDynamic("PostalCodes")(PostalCodes.asInstanceOf[js.Any])
+    if (Projects != null) __obj.updateDynamic("Projects")(Projects.asInstanceOf[js.Any])
+    if (Regions != null) __obj.updateDynamic("Regions")(Regions.asInstanceOf[js.Any])
+    if (RemarketingListShares != null) __obj.updateDynamic("RemarketingListShares")(RemarketingListShares.asInstanceOf[js.Any])
+    if (RemarketingLists != null) __obj.updateDynamic("RemarketingLists")(RemarketingLists.asInstanceOf[js.Any])
+    if (Reports != null) __obj.updateDynamic("Reports")(Reports.asInstanceOf[js.Any])
+    if (Sites != null) __obj.updateDynamic("Sites")(Sites.asInstanceOf[js.Any])
+    if (Sizes != null) __obj.updateDynamic("Sizes")(Sizes.asInstanceOf[js.Any])
+    if (Subaccounts != null) __obj.updateDynamic("Subaccounts")(Subaccounts.asInstanceOf[js.Any])
+    if (TargetableRemarketingLists != null) __obj.updateDynamic("TargetableRemarketingLists")(TargetableRemarketingLists.asInstanceOf[js.Any])
+    if (TargetingTemplates != null) __obj.updateDynamic("TargetingTemplates")(TargetingTemplates.asInstanceOf[js.Any])
+    if (UserProfiles != null) __obj.updateDynamic("UserProfiles")(UserProfiles.asInstanceOf[js.Any])
+    if (UserRolePermissionGroups != null) __obj.updateDynamic("UserRolePermissionGroups")(UserRolePermissionGroups.asInstanceOf[js.Any])
+    if (UserRolePermissions != null) __obj.updateDynamic("UserRolePermissions")(UserRolePermissions.asInstanceOf[js.Any])
+    if (UserRoles != null) __obj.updateDynamic("UserRoles")(UserRoles.asInstanceOf[js.Any])
+    if (VideoFormats != null) __obj.updateDynamic("VideoFormats")(VideoFormats.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dfareporting_]
   }
 }

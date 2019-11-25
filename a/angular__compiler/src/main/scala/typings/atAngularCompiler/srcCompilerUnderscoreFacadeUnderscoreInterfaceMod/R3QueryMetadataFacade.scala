@@ -23,8 +23,8 @@ object R3QueryMetadataFacade {
     static: Boolean,
     read: js.Any = null
   ): R3QueryMetadataFacade = {
-    val __obj = js.Dynamic.literal(descendants = descendants, first = first, predicate = predicate.asInstanceOf[js.Any], propertyName = propertyName, static = static)
-    if (read != null) __obj.updateDynamic("read")(read)
+    val __obj = js.Dynamic.literal(descendants = descendants.asInstanceOf[js.Any], first = first.asInstanceOf[js.Any], predicate = predicate.asInstanceOf[js.Any], propertyName = propertyName.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any])
+    if (read != null) __obj.updateDynamic("read")(read.asInstanceOf[js.Any])
     __obj.asInstanceOf[R3QueryMetadataFacade]
   }
 }

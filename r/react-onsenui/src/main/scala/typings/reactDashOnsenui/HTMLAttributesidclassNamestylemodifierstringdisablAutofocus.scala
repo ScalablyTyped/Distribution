@@ -41,19 +41,19 @@ object HTMLAttributesidclassNamestylemodifierstringdisablAutofocus {
     value: String = null
   ): HTMLAttributesidclassNamestylemodifierstringdisablAutofocus = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autofocus)) __obj.updateDynamic("autofocus")(autofocus)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (form != null) __obj.updateDynamic("form")(form)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (modifier != null) __obj.updateDynamic("modifier")(modifier)
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(autofocus)) __obj.updateDynamic("autofocus")(autofocus.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (form != null) __obj.updateDynamic("form")(form.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (modifier != null) __obj.updateDynamic("modifier")(modifier.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[HTMLAttributesidclassNamestylemodifierstringdisablAutofocus]
   }
 }

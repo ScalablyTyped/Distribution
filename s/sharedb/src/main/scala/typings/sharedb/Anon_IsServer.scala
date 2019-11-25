@@ -16,7 +16,7 @@ object Anon_IsServer {
   @scala.inline
   def apply(isServer: js.UndefOr[Boolean] = js.undefined): Anon_IsServer = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isServer)) __obj.updateDynamic("isServer")(isServer)
+    if (!js.isUndefined(isServer)) __obj.updateDynamic("isServer")(isServer.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IsServer]
   }
 }

@@ -22,8 +22,8 @@ object Anon_HeadersOptions {
     headers: Headers = null,
     options: Options = null
   ): Anon_HeadersOptions = {
-    val __obj = js.Dynamic.literal(resourceType = resourceType, searchParams = searchParams)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    val __obj = js.Dynamic.literal(resourceType = resourceType.asInstanceOf[js.Any], searchParams = searchParams.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_HeadersOptions]
   }

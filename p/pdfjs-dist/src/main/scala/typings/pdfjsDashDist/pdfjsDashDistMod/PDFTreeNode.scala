@@ -24,7 +24,7 @@ object PDFTreeNode {
     items: js.Array[PDFTreeNode],
     title: String
   ): PDFTreeNode = {
-    val __obj = js.Dynamic.literal(bold = bold, color = color, dest = dest, italic = italic, items = items, title = title)
+    val __obj = js.Dynamic.literal(bold = bold.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], dest = dest.asInstanceOf[js.Any], italic = italic.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PDFTreeNode]
   }

@@ -12,7 +12,7 @@ object ActivityContentDetailsChannelItem {
   @scala.inline
   def apply(resourceId: ResourceId = null): ActivityContentDetailsChannelItem = {
     val __obj = js.Dynamic.literal()
-    if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId)
+    if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivityContentDetailsChannelItem]
   }
 }

@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "eonasdan-bootstrap-datetimepicker"
-version := "v4.17.37-dt-20191115Z-543933"
+version := "v4.17.37-dt-20191115Z-fea878"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190815Z-17006e",
-  "org.scalablytyped" %%% "moment" % "2.24.0-122f60",
-  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-a5fece",
-  "org.scalablytyped" %%% "std" % "3.7-1c17cf")
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190815Z-72186b",
+  "org.scalablytyped" %%% "moment" % "2.24.0-534f7e",
+  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-2d253b",
+  "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -21,10 +21,10 @@ object GridPager {
     sizes: js.Array[Double] = null
   ): GridPager = {
     val __obj = js.Dynamic.literal()
-    if (leftControls != null) __obj.updateDynamic("leftControls")(leftControls)
+    if (leftControls != null) __obj.updateDynamic("leftControls")(leftControls.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (rightControls != null) __obj.updateDynamic("rightControls")(rightControls)
-    if (sizes != null) __obj.updateDynamic("sizes")(sizes)
+    if (rightControls != null) __obj.updateDynamic("rightControls")(rightControls.asInstanceOf[js.Any])
+    if (sizes != null) __obj.updateDynamic("sizes")(sizes.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridPager]
   }
 }

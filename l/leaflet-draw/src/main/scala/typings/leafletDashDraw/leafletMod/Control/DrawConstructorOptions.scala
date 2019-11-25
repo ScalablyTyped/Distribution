@@ -34,9 +34,9 @@ object DrawConstructorOptions {
     position: ControlPosition = null
   ): DrawConstructorOptions = {
     val __obj = js.Dynamic.literal()
-    if (draw != null) __obj.updateDynamic("draw")(draw)
-    if (edit != null) __obj.updateDynamic("edit")(edit)
-    if (position != null) __obj.updateDynamic("position")(position)
+    if (draw != null) __obj.updateDynamic("draw")(draw.asInstanceOf[js.Any])
+    if (edit != null) __obj.updateDynamic("edit")(edit.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawConstructorOptions]
   }
 }

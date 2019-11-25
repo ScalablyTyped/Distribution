@@ -42,12 +42,12 @@ object ReposUpdateHookParams {
     events: js.Array[String] = null,
     remove_events: js.Array[String] = null
   ): ReposUpdateHookParams = {
-    val __obj = js.Dynamic.literal(hook_id = hook_id, owner = owner, repo = repo)
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
-    if (add_events != null) __obj.updateDynamic("add_events")(add_events)
-    if (config != null) __obj.updateDynamic("config")(config)
-    if (events != null) __obj.updateDynamic("events")(events)
-    if (remove_events != null) __obj.updateDynamic("remove_events")(remove_events)
+    val __obj = js.Dynamic.literal(hook_id = hook_id.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (add_events != null) __obj.updateDynamic("add_events")(add_events.asInstanceOf[js.Any])
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
+    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
+    if (remove_events != null) __obj.updateDynamic("remove_events")(remove_events.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposUpdateHookParams]
   }
 }

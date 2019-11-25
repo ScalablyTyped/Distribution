@@ -12,7 +12,7 @@ trait EggAppConfig extends js.Object {
 object EggAppConfig {
   @scala.inline
   def apply(view: Anon_Cache): EggAppConfig = {
-    val __obj = js.Dynamic.literal(view = view)
+    val __obj = js.Dynamic.literal(view = view.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EggAppConfig]
   }

@@ -16,7 +16,7 @@ object CertificationExamStatus {
   def apply(numberUsersPass: Int | Double = null, `type`: String = null): CertificationExamStatus = {
     val __obj = js.Dynamic.literal()
     if (numberUsersPass != null) __obj.updateDynamic("numberUsersPass")(numberUsersPass.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertificationExamStatus]
   }
 }

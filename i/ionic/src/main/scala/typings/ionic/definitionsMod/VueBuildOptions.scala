@@ -24,15 +24,15 @@ object VueBuildOptions {
     sourcemaps: js.UndefOr[Boolean] = js.undefined,
     verbose: js.UndefOr[Boolean] = js.undefined
   ): VueBuildOptions = {
-    val __obj = js.Dynamic.literal(engine = engine)
-    __obj.updateDynamic("--")(`--`)
-    __obj.updateDynamic("type")(`type`)
-    if (configuration != null) __obj.updateDynamic("configuration")(configuration)
-    if (!js.isUndefined(cordovaAssets)) __obj.updateDynamic("cordovaAssets")(cordovaAssets)
-    if (platform != null) __obj.updateDynamic("platform")(platform)
-    if (project != null) __obj.updateDynamic("project")(project)
-    if (!js.isUndefined(sourcemaps)) __obj.updateDynamic("sourcemaps")(sourcemaps)
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
+    val __obj = js.Dynamic.literal(engine = engine.asInstanceOf[js.Any])
+    __obj.updateDynamic("--")(`--`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (configuration != null) __obj.updateDynamic("configuration")(configuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(cordovaAssets)) __obj.updateDynamic("cordovaAssets")(cordovaAssets.asInstanceOf[js.Any])
+    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
+    if (project != null) __obj.updateDynamic("project")(project.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourcemaps)) __obj.updateDynamic("sourcemaps")(sourcemaps.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
     __obj.asInstanceOf[VueBuildOptions]
   }
 }

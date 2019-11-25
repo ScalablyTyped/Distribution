@@ -27,7 +27,7 @@ object RSAKeyPairOptions {
     publicKeyEncoding: Anon_Format[PubF],
     publicExponent: Int | Double = null
   ): RSAKeyPairOptions[PubF, PrivF] = {
-    val __obj = js.Dynamic.literal(modulusLength = modulusLength, privateKeyEncoding = privateKeyEncoding, publicKeyEncoding = publicKeyEncoding)
+    val __obj = js.Dynamic.literal(modulusLength = modulusLength.asInstanceOf[js.Any], privateKeyEncoding = privateKeyEncoding.asInstanceOf[js.Any], publicKeyEncoding = publicKeyEncoding.asInstanceOf[js.Any])
     if (publicExponent != null) __obj.updateDynamic("publicExponent")(publicExponent.asInstanceOf[js.Any])
     __obj.asInstanceOf[RSAKeyPairOptions[PubF, PrivF]]
   }

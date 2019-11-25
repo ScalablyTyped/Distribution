@@ -11,7 +11,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(LOGGER_INSTANCE_NAME: String): Options = {
-    val __obj = js.Dynamic.literal(LOGGER_INSTANCE_NAME = LOGGER_INSTANCE_NAME)
+    val __obj = js.Dynamic.literal(LOGGER_INSTANCE_NAME = LOGGER_INSTANCE_NAME.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Options]
   }

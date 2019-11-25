@@ -21,8 +21,8 @@ object DecryptRequest {
   @scala.inline
   def apply(additionalAuthenticatedData: String = null, ciphertext: String = null): DecryptRequest = {
     val __obj = js.Dynamic.literal()
-    if (additionalAuthenticatedData != null) __obj.updateDynamic("additionalAuthenticatedData")(additionalAuthenticatedData)
-    if (ciphertext != null) __obj.updateDynamic("ciphertext")(ciphertext)
+    if (additionalAuthenticatedData != null) __obj.updateDynamic("additionalAuthenticatedData")(additionalAuthenticatedData.asInstanceOf[js.Any])
+    if (ciphertext != null) __obj.updateDynamic("ciphertext")(ciphertext.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecryptRequest]
   }
 }

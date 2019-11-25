@@ -12,7 +12,7 @@ trait Anon_ConnectionId extends js.Object {
 object Anon_ConnectionId {
   @scala.inline
   def apply(connectionId: integer): Anon_ConnectionId = {
-    val __obj = js.Dynamic.literal(connectionId = connectionId)
+    val __obj = js.Dynamic.literal(connectionId = connectionId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ConnectionId]
   }

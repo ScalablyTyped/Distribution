@@ -41,7 +41,7 @@ object Anon_Add {
     or: js.Array[String],
     sub: js.Array[String]
   ): Anon_Add = {
-    val __obj = js.Dynamic.literal(add = add, and = and, div = div, eq = eq, ge = ge, gt = gt, le = le, lt = lt, mod = mod, mul = mul, ne = ne, not = not, or = or, sub = sub)
+    val __obj = js.Dynamic.literal(add = add.asInstanceOf[js.Any], and = and.asInstanceOf[js.Any], div = div.asInstanceOf[js.Any], eq = eq.asInstanceOf[js.Any], ge = ge.asInstanceOf[js.Any], gt = gt.asInstanceOf[js.Any], le = le.asInstanceOf[js.Any], lt = lt.asInstanceOf[js.Any], mod = mod.asInstanceOf[js.Any], mul = mul.asInstanceOf[js.Any], ne = ne.asInstanceOf[js.Any], not = not.asInstanceOf[js.Any], or = or.asInstanceOf[js.Any], sub = sub.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Add]
   }

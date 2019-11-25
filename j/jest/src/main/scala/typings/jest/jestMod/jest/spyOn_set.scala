@@ -12,7 +12,7 @@ object spyOn_set extends js.Object {
   def apply[T /* <: js.Object */, M /* <: NonFunctionPropertyNames[Required[T]] */](`object`: T, method: M, accessType: set): SpyInstance[
     Unit, 
     js.Array[
-      /* import warning: ImportType.apply Failed type conversion: std.Required<T>[M] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: std.Required<T>[M] */ js.Any
     ]
   ] = js.native
 }

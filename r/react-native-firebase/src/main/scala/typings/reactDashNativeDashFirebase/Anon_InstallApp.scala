@@ -13,9 +13,9 @@ trait Anon_InstallApp extends js.Object {
 object Anon_InstallApp {
   @scala.inline
   def apply(packageName: String, installApp: js.UndefOr[Boolean] = js.undefined, minimumVersion: String = null): Anon_InstallApp = {
-    val __obj = js.Dynamic.literal(packageName = packageName)
-    if (!js.isUndefined(installApp)) __obj.updateDynamic("installApp")(installApp)
-    if (minimumVersion != null) __obj.updateDynamic("minimumVersion")(minimumVersion)
+    val __obj = js.Dynamic.literal(packageName = packageName.asInstanceOf[js.Any])
+    if (!js.isUndefined(installApp)) __obj.updateDynamic("installApp")(installApp.asInstanceOf[js.Any])
+    if (minimumVersion != null) __obj.updateDynamic("minimumVersion")(minimumVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_InstallApp]
   }
 }

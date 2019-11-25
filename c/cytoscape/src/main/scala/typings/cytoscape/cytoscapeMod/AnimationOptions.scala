@@ -34,13 +34,13 @@ object AnimationOptions {
     zoom: ZoomOptions = null
   ): AnimationOptions = {
     val __obj = js.Dynamic.literal()
-    if (center != null) __obj.updateDynamic("center")(center)
+    if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(easing)
-    if (fit != null) __obj.updateDynamic("fit")(fit)
-    if (pan != null) __obj.updateDynamic("pan")(pan)
-    if (panBy != null) __obj.updateDynamic("panBy")(panBy)
-    if (zoom != null) __obj.updateDynamic("zoom")(zoom)
+    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
+    if (fit != null) __obj.updateDynamic("fit")(fit.asInstanceOf[js.Any])
+    if (pan != null) __obj.updateDynamic("pan")(pan.asInstanceOf[js.Any])
+    if (panBy != null) __obj.updateDynamic("panBy")(panBy.asInstanceOf[js.Any])
+    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationOptions]
   }
 }

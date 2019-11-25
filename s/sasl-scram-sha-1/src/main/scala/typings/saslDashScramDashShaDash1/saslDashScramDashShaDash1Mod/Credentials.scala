@@ -26,13 +26,13 @@ object Credentials {
     username: String = null
   ): Credentials = {
     val __obj = js.Dynamic.literal()
-    if (authzid != null) __obj.updateDynamic("authzid")(authzid)
-    if (clientKey != null) __obj.updateDynamic("clientKey")(clientKey)
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (salt != null) __obj.updateDynamic("salt")(salt)
-    if (saltedPassword != null) __obj.updateDynamic("saltedPassword")(saltedPassword)
-    if (serverKey != null) __obj.updateDynamic("serverKey")(serverKey)
-    if (username != null) __obj.updateDynamic("username")(username)
+    if (authzid != null) __obj.updateDynamic("authzid")(authzid.asInstanceOf[js.Any])
+    if (clientKey != null) __obj.updateDynamic("clientKey")(clientKey.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (salt != null) __obj.updateDynamic("salt")(salt.asInstanceOf[js.Any])
+    if (saltedPassword != null) __obj.updateDynamic("saltedPassword")(saltedPassword.asInstanceOf[js.Any])
+    if (serverKey != null) __obj.updateDynamic("serverKey")(serverKey.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[Credentials]
   }
 }

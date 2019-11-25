@@ -86,14 +86,14 @@ object RegisterOptions {
     skip: Boolean | SkipFunction = null
   ): RegisterOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(addToViewContext)) __obj.updateDynamic("addToViewContext")(addToViewContext)
-    if (!js.isUndefined(autoGenerate)) __obj.updateDynamic("autoGenerate")(autoGenerate)
-    if (cookieOptions != null) __obj.updateDynamic("cookieOptions")(cookieOptions)
-    if (!js.isUndefined(enforce)) __obj.updateDynamic("enforce")(enforce)
-    if (headerName != null) __obj.updateDynamic("headerName")(headerName)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (!js.isUndefined(logUnauthorized)) __obj.updateDynamic("logUnauthorized")(logUnauthorized)
-    if (!js.isUndefined(restful)) __obj.updateDynamic("restful")(restful)
+    if (!js.isUndefined(addToViewContext)) __obj.updateDynamic("addToViewContext")(addToViewContext.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoGenerate)) __obj.updateDynamic("autoGenerate")(autoGenerate.asInstanceOf[js.Any])
+    if (cookieOptions != null) __obj.updateDynamic("cookieOptions")(cookieOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(enforce)) __obj.updateDynamic("enforce")(enforce.asInstanceOf[js.Any])
+    if (headerName != null) __obj.updateDynamic("headerName")(headerName.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (!js.isUndefined(logUnauthorized)) __obj.updateDynamic("logUnauthorized")(logUnauthorized.asInstanceOf[js.Any])
+    if (!js.isUndefined(restful)) __obj.updateDynamic("restful")(restful.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterOptions]

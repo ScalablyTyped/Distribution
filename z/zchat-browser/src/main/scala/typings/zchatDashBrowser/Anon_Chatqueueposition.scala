@@ -15,8 +15,8 @@ trait Anon_Chatqueueposition extends _EventData {
 object Anon_Chatqueueposition {
   @scala.inline
   def apply(nick: String, queue_position: Double, `type`: chatDOTqueue_position): Anon_Chatqueueposition = {
-    val __obj = js.Dynamic.literal(nick = nick, queue_position = queue_position)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(nick = nick.asInstanceOf[js.Any], queue_position = queue_position.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Chatqueueposition]
   }
 }

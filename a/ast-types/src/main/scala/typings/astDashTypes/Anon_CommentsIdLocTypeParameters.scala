@@ -25,9 +25,9 @@ object Anon_CommentsIdLocTypeParameters {
     typeParameters: TypeParameterInstantiationKind = null
   ): Anon_CommentsIdLocTypeParameters = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CommentsIdLocTypeParameters]
   }
 }

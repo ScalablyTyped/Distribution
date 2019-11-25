@@ -15,8 +15,8 @@ object OrdersGetByMerchantOrderIdResponse {
   @scala.inline
   def apply(kind: String = null, order: Order = null): OrdersGetByMerchantOrderIdResponse = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (order != null) __obj.updateDynamic("order")(order)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrdersGetByMerchantOrderIdResponse]
   }
 }

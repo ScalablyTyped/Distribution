@@ -15,7 +15,7 @@ object IKnowledgeAnswers {
   @scala.inline
   def apply(answers: js.Array[IAnswer] = null): IKnowledgeAnswers = {
     val __obj = js.Dynamic.literal()
-    if (answers != null) __obj.updateDynamic("answers")(answers)
+    if (answers != null) __obj.updateDynamic("answers")(answers.asInstanceOf[js.Any])
     __obj.asInstanceOf[IKnowledgeAnswers]
   }
 }

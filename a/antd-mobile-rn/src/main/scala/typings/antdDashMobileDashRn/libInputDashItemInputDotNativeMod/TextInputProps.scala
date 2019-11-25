@@ -13,7 +13,7 @@ object TextInputProps {
   @scala.inline
   def apply(focused: js.UndefOr[Boolean] = js.undefined): TextInputProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(focused)) __obj.updateDynamic("focused")(focused)
+    if (!js.isUndefined(focused)) __obj.updateDynamic("focused")(focused.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextInputProps]
   }
 }

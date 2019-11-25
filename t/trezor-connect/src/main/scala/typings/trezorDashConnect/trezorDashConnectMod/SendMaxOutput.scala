@@ -13,8 +13,8 @@ trait SendMaxOutput extends Output {
 object SendMaxOutput {
   @scala.inline
   def apply(address: String, `type`: `send-max`): SendMaxOutput = {
-    val __obj = js.Dynamic.literal(address = address)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendMaxOutput]
   }
 }

@@ -20,7 +20,7 @@ trait AbortController extends js.Object {
 object AbortController {
   @scala.inline
   def apply(abort: () => Unit, signal: AbortSignal): AbortController = {
-    val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), signal = signal)
+    val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), signal = signal.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AbortController]
   }

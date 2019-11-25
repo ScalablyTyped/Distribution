@@ -51,8 +51,8 @@ object Anon_Block {
     utils: Anon_ArrayReplaceAt,
     validateLink: js.Any
   ): Anon_Block = {
-    val __obj = js.Dynamic.literal(block = block, configure = configure, core = core, disable = disable, enable = enable, helpers = helpers, linkify = linkify, normalizeLink = normalizeLink, normalizeLinkText = normalizeLinkText, options = options, parse = parse, parseInline = parseInline, render = render, renderInline = renderInline, renderer = renderer, set = set, use = use, utils = utils, validateLink = validateLink)
-    __obj.updateDynamic("inline")(`inline`)
+    val __obj = js.Dynamic.literal(block = block.asInstanceOf[js.Any], configure = configure.asInstanceOf[js.Any], core = core.asInstanceOf[js.Any], disable = disable.asInstanceOf[js.Any], enable = enable.asInstanceOf[js.Any], helpers = helpers.asInstanceOf[js.Any], linkify = linkify.asInstanceOf[js.Any], normalizeLink = normalizeLink.asInstanceOf[js.Any], normalizeLinkText = normalizeLinkText.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], parse = parse.asInstanceOf[js.Any], parseInline = parseInline.asInstanceOf[js.Any], render = render.asInstanceOf[js.Any], renderInline = renderInline.asInstanceOf[js.Any], renderer = renderer.asInstanceOf[js.Any], set = set.asInstanceOf[js.Any], use = use.asInstanceOf[js.Any], utils = utils.asInstanceOf[js.Any], validateLink = validateLink.asInstanceOf[js.Any])
+    __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Block]
   }
 }

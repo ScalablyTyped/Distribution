@@ -18,9 +18,9 @@ object Anon_FilterSourceLayer {
     validate: js.UndefOr[Boolean] = js.undefined
   ): Anon_FilterSourceLayer = {
     val __obj = js.Dynamic.literal()
-    if (filter != null) __obj.updateDynamic("filter")(filter)
-    if (sourceLayer != null) __obj.updateDynamic("sourceLayer")(sourceLayer)
-    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate)
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (sourceLayer != null) __obj.updateDynamic("sourceLayer")(sourceLayer.asInstanceOf[js.Any])
+    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FilterSourceLayer]
   }
 }

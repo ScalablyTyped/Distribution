@@ -49,11 +49,11 @@ object IOptions {
     renderer: IRenderer = null
   ): IOptions = {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
-    if (cancelLabel != null) __obj.updateDynamic("cancelLabel")(cancelLabel)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (okLabel != null) __obj.updateDynamic("okLabel")(okLabel)
-    if (renderer != null) __obj.updateDynamic("renderer")(renderer)
+    if (cancelLabel != null) __obj.updateDynamic("cancelLabel")(cancelLabel.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (okLabel != null) __obj.updateDynamic("okLabel")(okLabel.asInstanceOf[js.Any])
+    if (renderer != null) __obj.updateDynamic("renderer")(renderer.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

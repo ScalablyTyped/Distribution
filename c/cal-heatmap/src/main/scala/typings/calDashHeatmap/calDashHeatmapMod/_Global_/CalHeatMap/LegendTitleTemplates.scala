@@ -17,9 +17,9 @@ object LegendTitleTemplates {
   @scala.inline
   def apply(inner: String = null, lower: String = null, upper: String = null): LegendTitleTemplates = {
     val __obj = js.Dynamic.literal()
-    if (inner != null) __obj.updateDynamic("inner")(inner)
-    if (lower != null) __obj.updateDynamic("lower")(lower)
-    if (upper != null) __obj.updateDynamic("upper")(upper)
+    if (inner != null) __obj.updateDynamic("inner")(inner.asInstanceOf[js.Any])
+    if (lower != null) __obj.updateDynamic("lower")(lower.asInstanceOf[js.Any])
+    if (upper != null) __obj.updateDynamic("upper")(upper.asInstanceOf[js.Any])
     __obj.asInstanceOf[LegendTitleTemplates]
   }
 }

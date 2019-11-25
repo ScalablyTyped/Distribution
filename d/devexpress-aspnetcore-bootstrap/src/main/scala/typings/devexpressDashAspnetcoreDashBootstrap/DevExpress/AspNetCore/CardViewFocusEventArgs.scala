@@ -11,7 +11,7 @@ trait CardViewFocusEventArgs extends ProcessingModeEventArgs {
 object CardViewFocusEventArgs {
   @scala.inline
   def apply(isChangedOnServer: Boolean, processOnServer: Boolean, sender: Control): CardViewFocusEventArgs = {
-    val __obj = js.Dynamic.literal(isChangedOnServer = isChangedOnServer, processOnServer = processOnServer, sender = sender)
+    val __obj = js.Dynamic.literal(isChangedOnServer = isChangedOnServer.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CardViewFocusEventArgs]
   }

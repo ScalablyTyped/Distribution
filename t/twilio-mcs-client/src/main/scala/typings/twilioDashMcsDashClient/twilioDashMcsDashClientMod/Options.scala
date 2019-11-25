@@ -16,8 +16,8 @@ object Options {
   def apply(logLevel: LogLevel = null, region: String = null, transport: Transport = null): Options = {
     val __obj = js.Dynamic.literal()
     if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region)
-    if (transport != null) __obj.updateDynamic("transport")(transport)
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    if (transport != null) __obj.updateDynamic("transport")(transport.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

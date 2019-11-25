@@ -24,12 +24,12 @@ object Anon_CallbackDeletable {
     movable: js.UndefOr[Boolean] = js.undefined
   ): Anon_CallbackDeletable = {
     val __obj = js.Dynamic.literal()
-    if (callback != null) __obj.updateDynamic("callback")(callback)
-    if (!js.isUndefined(deletable)) __obj.updateDynamic("deletable")(deletable)
-    if (deleteLabel != null) __obj.updateDynamic("deleteLabel")(deleteLabel)
-    if (doneLabel != null) __obj.updateDynamic("doneLabel")(doneLabel)
-    if (editLabel != null) __obj.updateDynamic("editLabel")(editLabel)
-    if (!js.isUndefined(movable)) __obj.updateDynamic("movable")(movable)
+    if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
+    if (!js.isUndefined(deletable)) __obj.updateDynamic("deletable")(deletable.asInstanceOf[js.Any])
+    if (deleteLabel != null) __obj.updateDynamic("deleteLabel")(deleteLabel.asInstanceOf[js.Any])
+    if (doneLabel != null) __obj.updateDynamic("doneLabel")(doneLabel.asInstanceOf[js.Any])
+    if (editLabel != null) __obj.updateDynamic("editLabel")(editLabel.asInstanceOf[js.Any])
+    if (!js.isUndefined(movable)) __obj.updateDynamic("movable")(movable.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CallbackDeletable]
   }
 }

@@ -15,8 +15,8 @@ object Anon_CustomHeadersExpandHeaderName {
   @scala.inline
   def apply(customHeaders: StringDictionary[String] = null, expand: String = null, top: Int | Double = null): Anon_CustomHeadersExpandHeaderName = {
     val __obj = js.Dynamic.literal()
-    if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders)
-    if (expand != null) __obj.updateDynamic("expand")(expand)
+    if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders.asInstanceOf[js.Any])
+    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CustomHeadersExpandHeaderName]
   }

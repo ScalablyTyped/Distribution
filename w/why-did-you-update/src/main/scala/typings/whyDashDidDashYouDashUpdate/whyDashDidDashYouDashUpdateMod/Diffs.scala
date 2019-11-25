@@ -14,8 +14,8 @@ trait Diffs extends js.Object {
 object Diffs {
   @scala.inline
   def apply(name: String, next: js.Any, prev: js.Any, `type`: js.Any): Diffs = {
-    val __obj = js.Dynamic.literal(name = name, next = next, prev = prev)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], next = next.asInstanceOf[js.Any], prev = prev.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Diffs]
   }
 }

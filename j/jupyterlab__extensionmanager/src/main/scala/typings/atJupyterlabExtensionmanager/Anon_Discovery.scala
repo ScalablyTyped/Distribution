@@ -12,7 +12,7 @@ object Anon_Discovery {
   @scala.inline
   def apply(discovery: Anon_Kernel = null): Anon_Discovery = {
     val __obj = js.Dynamic.literal()
-    if (discovery != null) __obj.updateDynamic("discovery")(discovery)
+    if (discovery != null) __obj.updateDynamic("discovery")(discovery.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Discovery]
   }
 }

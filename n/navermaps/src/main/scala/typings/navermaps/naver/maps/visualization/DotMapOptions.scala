@@ -34,13 +34,13 @@ object DotMapOptions {
     strokeLineJoin: strokeLineJoinType = null,
     strokeWeight: Int | Double = null
   ): DotMapOptions = {
-    val __obj = js.Dynamic.literal(data = data, map = map)
-    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any])
+    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
-    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor)
-    if (strokeLineCap != null) __obj.updateDynamic("strokeLineCap")(strokeLineCap)
-    if (strokeLineJoin != null) __obj.updateDynamic("strokeLineJoin")(strokeLineJoin)
+    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor.asInstanceOf[js.Any])
+    if (strokeLineCap != null) __obj.updateDynamic("strokeLineCap")(strokeLineCap.asInstanceOf[js.Any])
+    if (strokeLineJoin != null) __obj.updateDynamic("strokeLineJoin")(strokeLineJoin.asInstanceOf[js.Any])
     if (strokeWeight != null) __obj.updateDynamic("strokeWeight")(strokeWeight.asInstanceOf[js.Any])
     __obj.asInstanceOf[DotMapOptions]
   }

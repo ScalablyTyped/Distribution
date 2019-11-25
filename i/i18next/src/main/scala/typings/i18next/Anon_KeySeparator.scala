@@ -12,7 +12,7 @@ object Anon_KeySeparator {
   @scala.inline
   def apply(keySeparator: String = null): Anon_KeySeparator = {
     val __obj = js.Dynamic.literal()
-    if (keySeparator != null) __obj.updateDynamic("keySeparator")(keySeparator)
+    if (keySeparator != null) __obj.updateDynamic("keySeparator")(keySeparator.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_KeySeparator]
   }
 }

@@ -27,7 +27,7 @@ object Anon_BackgroundColorBorderColorBorderRadiusBorderStyle {
     overflow: String,
     width: Double
   ): Anon_BackgroundColorBorderColorBorderRadiusBorderStyle = {
-    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, borderColor = borderColor, borderRadius = borderRadius, borderStyle = borderStyle, borderWidth = borderWidth, height = height, overflow = overflow, width = width)
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], borderColor = borderColor.asInstanceOf[js.Any], borderRadius = borderRadius.asInstanceOf[js.Any], borderStyle = borderStyle.asInstanceOf[js.Any], borderWidth = borderWidth.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], overflow = overflow.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BackgroundColorBorderColorBorderRadiusBorderStyle]
   }

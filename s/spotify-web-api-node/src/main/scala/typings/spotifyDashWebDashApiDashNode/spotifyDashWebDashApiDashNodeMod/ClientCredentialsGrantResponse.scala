@@ -17,7 +17,7 @@ trait ClientCredentialsGrantResponse extends js.Object {
 object ClientCredentialsGrantResponse {
   @scala.inline
   def apply(access_token: String, expires_in: Double, token_type: String): ClientCredentialsGrantResponse = {
-    val __obj = js.Dynamic.literal(access_token = access_token, expires_in = expires_in, token_type = token_type)
+    val __obj = js.Dynamic.literal(access_token = access_token.asInstanceOf[js.Any], expires_in = expires_in.asInstanceOf[js.Any], token_type = token_type.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ClientCredentialsGrantResponse]
   }

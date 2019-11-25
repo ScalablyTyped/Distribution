@@ -131,17 +131,17 @@ object MosaicRuleProperties {
     where: String = null
   ): MosaicRuleProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ascending)) __obj.updateDynamic("ascending")(ascending)
-    if (itemRenderingRule != null) __obj.updateDynamic("itemRenderingRule")(itemRenderingRule)
-    if (lockRasterIds != null) __obj.updateDynamic("lockRasterIds")(lockRasterIds)
+    if (!js.isUndefined(ascending)) __obj.updateDynamic("ascending")(ascending.asInstanceOf[js.Any])
+    if (itemRenderingRule != null) __obj.updateDynamic("itemRenderingRule")(itemRenderingRule.asInstanceOf[js.Any])
+    if (lockRasterIds != null) __obj.updateDynamic("lockRasterIds")(lockRasterIds.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (multidimensionalDefinition != null) __obj.updateDynamic("multidimensionalDefinition")(multidimensionalDefinition)
-    if (objectIds != null) __obj.updateDynamic("objectIds")(objectIds)
+    if (multidimensionalDefinition != null) __obj.updateDynamic("multidimensionalDefinition")(multidimensionalDefinition.asInstanceOf[js.Any])
+    if (objectIds != null) __obj.updateDynamic("objectIds")(objectIds.asInstanceOf[js.Any])
     if (operation != null) __obj.updateDynamic("operation")(operation.asInstanceOf[js.Any])
-    if (sortField != null) __obj.updateDynamic("sortField")(sortField)
-    if (sortValue != null) __obj.updateDynamic("sortValue")(sortValue)
-    if (viewpoint != null) __obj.updateDynamic("viewpoint")(viewpoint)
-    if (where != null) __obj.updateDynamic("where")(where)
+    if (sortField != null) __obj.updateDynamic("sortField")(sortField.asInstanceOf[js.Any])
+    if (sortValue != null) __obj.updateDynamic("sortValue")(sortValue.asInstanceOf[js.Any])
+    if (viewpoint != null) __obj.updateDynamic("viewpoint")(viewpoint.asInstanceOf[js.Any])
+    if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])
     __obj.asInstanceOf[MosaicRuleProperties]
   }
 }

@@ -23,7 +23,7 @@ trait Anon_CharacteristicId extends js.Object {
 object Anon_CharacteristicId {
   @scala.inline
   def apply(characteristicId: String, serviceId: String, value: ArrayBuffer): Anon_CharacteristicId = {
-    val __obj = js.Dynamic.literal(characteristicId = characteristicId, serviceId = serviceId, value = value)
+    val __obj = js.Dynamic.literal(characteristicId = characteristicId.asInstanceOf[js.Any], serviceId = serviceId.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CharacteristicId]
   }

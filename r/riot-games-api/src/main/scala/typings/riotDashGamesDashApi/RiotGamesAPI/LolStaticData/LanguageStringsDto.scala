@@ -14,8 +14,8 @@ trait LanguageStringsDto extends js.Object {
 object LanguageStringsDto {
   @scala.inline
   def apply(data: js.Array[StringDictionary[String]], `type`: String, version: String): LanguageStringsDto = {
-    val __obj = js.Dynamic.literal(data = data, version = version)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LanguageStringsDto]
   }
 }

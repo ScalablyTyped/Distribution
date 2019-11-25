@@ -53,10 +53,10 @@ object PlusStreamLaunchWebviewStyles {
     visible: js.UndefOr[Boolean] = js.undefined
   ): PlusStreamLaunchWebviewStyles = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(blockNetworkImage)) __obj.updateDynamic("blockNetworkImage")(blockNetworkImage)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (launch_path != null) __obj.updateDynamic("launch_path")(launch_path)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (!js.isUndefined(blockNetworkImage)) __obj.updateDynamic("blockNetworkImage")(blockNetworkImage.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (launch_path != null) __obj.updateDynamic("launch_path")(launch_path.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusStreamLaunchWebviewStyles]
   }
 }

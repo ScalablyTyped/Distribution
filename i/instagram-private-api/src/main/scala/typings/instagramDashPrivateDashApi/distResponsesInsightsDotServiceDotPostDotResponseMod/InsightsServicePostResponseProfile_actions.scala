@@ -11,7 +11,7 @@ trait InsightsServicePostResponseProfile_actions extends js.Object {
 object InsightsServicePostResponseProfile_actions {
   @scala.inline
   def apply(actions: InsightsServicePostResponseActions): InsightsServicePostResponseProfile_actions = {
-    val __obj = js.Dynamic.literal(actions = actions)
+    val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InsightsServicePostResponseProfile_actions]
   }

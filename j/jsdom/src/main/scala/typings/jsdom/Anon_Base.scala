@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Base
-  extends Instantiable2[/* url */ String, (/* base */ String) | (/* base */ URL), URL]
-     with Instantiable1[/* url */ String, URL] {
+  extends Instantiable1[/* url */ String, URL]
+     with Instantiable2[/* url */ String, (/* base */ String) | (/* base */ URL), URL] {
   def createObjectURL(`object`: js.Any): String = js.native
   def revokeObjectURL(url: String): Unit = js.native
 }

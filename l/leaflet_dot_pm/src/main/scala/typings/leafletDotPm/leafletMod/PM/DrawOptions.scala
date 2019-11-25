@@ -19,9 +19,9 @@ object DrawOptions {
     templineStyle: PathOptions = null
   ): DrawOptions = {
     val __obj = js.Dynamic.literal()
-    if (hintlineStyle != null) __obj.updateDynamic("hintlineStyle")(hintlineStyle)
-    if (pathOptions != null) __obj.updateDynamic("pathOptions")(pathOptions)
-    if (templineStyle != null) __obj.updateDynamic("templineStyle")(templineStyle)
+    if (hintlineStyle != null) __obj.updateDynamic("hintlineStyle")(hintlineStyle.asInstanceOf[js.Any])
+    if (pathOptions != null) __obj.updateDynamic("pathOptions")(pathOptions.asInstanceOf[js.Any])
+    if (templineStyle != null) __obj.updateDynamic("templineStyle")(templineStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawOptions]
   }
 }

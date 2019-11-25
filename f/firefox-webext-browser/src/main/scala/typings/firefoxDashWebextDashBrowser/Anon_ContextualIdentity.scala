@@ -13,7 +13,7 @@ trait Anon_ContextualIdentity extends js.Object {
 object Anon_ContextualIdentity {
   @scala.inline
   def apply(contextualIdentity: ContextualIdentity): Anon_ContextualIdentity = {
-    val __obj = js.Dynamic.literal(contextualIdentity = contextualIdentity)
+    val __obj = js.Dynamic.literal(contextualIdentity = contextualIdentity.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ContextualIdentity]
   }

@@ -204,29 +204,29 @@ object Options {
     timeout: Int | Double = null,
     title: String = null
   ): Options = {
-    val __obj = js.Dynamic.literal(url = url)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
     if (bailout != null) __obj.updateDynamic("bailout")(bailout.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (connectionRate != null) __obj.updateDynamic("connectionRate")(connectionRate.asInstanceOf[js.Any])
     if (connections != null) __obj.updateDynamic("connections")(connections.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (!js.isUndefined(excludeErrorStats)) __obj.updateDynamic("excludeErrorStats")(excludeErrorStats)
-    if (!js.isUndefined(forever)) __obj.updateDynamic("forever")(forever)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (!js.isUndefined(idReplacement)) __obj.updateDynamic("idReplacement")(idReplacement)
+    if (!js.isUndefined(excludeErrorStats)) __obj.updateDynamic("excludeErrorStats")(excludeErrorStats.asInstanceOf[js.Any])
+    if (!js.isUndefined(forever)) __obj.updateDynamic("forever")(forever.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (!js.isUndefined(idReplacement)) __obj.updateDynamic("idReplacement")(idReplacement.asInstanceOf[js.Any])
     if (maxConnectionRequests != null) __obj.updateDynamic("maxConnectionRequests")(maxConnectionRequests.asInstanceOf[js.Any])
     if (maxOverallRequests != null) __obj.updateDynamic("maxOverallRequests")(maxOverallRequests.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (overallRate != null) __obj.updateDynamic("overallRate")(overallRate.asInstanceOf[js.Any])
     if (pipelining != null) __obj.updateDynamic("pipelining")(pipelining.asInstanceOf[js.Any])
     if (reconnectRate != null) __obj.updateDynamic("reconnectRate")(reconnectRate.asInstanceOf[js.Any])
-    if (requests != null) __obj.updateDynamic("requests")(requests)
-    if (servername != null) __obj.updateDynamic("servername")(servername)
+    if (requests != null) __obj.updateDynamic("requests")(requests.asInstanceOf[js.Any])
+    if (servername != null) __obj.updateDynamic("servername")(servername.asInstanceOf[js.Any])
     if (setupClient != null) __obj.updateDynamic("setupClient")(js.Any.fromFunction1(setupClient))
-    if (socketPath != null) __obj.updateDynamic("socketPath")(socketPath)
+    if (socketPath != null) __obj.updateDynamic("socketPath")(socketPath.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

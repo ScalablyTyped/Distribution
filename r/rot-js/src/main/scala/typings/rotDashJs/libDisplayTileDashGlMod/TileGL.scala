@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.rotDashJs.libDisplayBackendMod.Backend
 import typings.rotDashJs.libDisplayTypesMod.DisplayData
 import typings.rotDashJs.libDisplayTypesMod.DisplayOptions
-import typings.std.HTMLCanvasElement
+import typings.std.HTMLElement
 import typings.std.HTMLImageElement
 import typings.std.WebGLProgram
 import typings.std.WebGLRenderingContext
@@ -40,11 +40,11 @@ object TileGL {
     computeSize: (Double, Double) => js.Tuple2[Double, Double],
     draw: (DisplayData, Boolean) => Unit,
     eventToPosition: (Double, Double) => js.Tuple2[Double, Double],
-    getContainer: () => HTMLCanvasElement,
+    getContainer: () => HTMLElement | Null,
     schedule: js.Function0[Unit] => Unit,
     setOptions: DisplayOptions => Unit
   ): TileGL = {
-    val __obj = js.Dynamic.literal(_gl = _gl, _initWebGL = js.Any.fromFunction0(_initWebGL), _normalizedEventToPosition = js.Any.fromFunction2(_normalizedEventToPosition), _options = _options, _program = _program, _uniforms = _uniforms, _updateSize = js.Any.fromFunction0(_updateSize), _updateTexture = js.Any.fromFunction1(_updateTexture), clear = js.Any.fromFunction0(clear), computeFontSize = js.Any.fromFunction0(computeFontSize), computeSize = js.Any.fromFunction2(computeSize), draw = js.Any.fromFunction2(draw), eventToPosition = js.Any.fromFunction2(eventToPosition), getContainer = js.Any.fromFunction0(getContainer), schedule = js.Any.fromFunction1(schedule), setOptions = js.Any.fromFunction1(setOptions))
+    val __obj = js.Dynamic.literal(_gl = _gl.asInstanceOf[js.Any], _initWebGL = js.Any.fromFunction0(_initWebGL), _normalizedEventToPosition = js.Any.fromFunction2(_normalizedEventToPosition), _options = _options.asInstanceOf[js.Any], _program = _program.asInstanceOf[js.Any], _uniforms = _uniforms.asInstanceOf[js.Any], _updateSize = js.Any.fromFunction0(_updateSize), _updateTexture = js.Any.fromFunction1(_updateTexture), clear = js.Any.fromFunction0(clear), computeFontSize = js.Any.fromFunction0(computeFontSize), computeSize = js.Any.fromFunction2(computeSize), draw = js.Any.fromFunction2(draw), eventToPosition = js.Any.fromFunction2(eventToPosition), getContainer = js.Any.fromFunction0(getContainer), schedule = js.Any.fromFunction1(schedule), setOptions = js.Any.fromFunction1(setOptions))
   
     __obj.asInstanceOf[TileGL]
   }

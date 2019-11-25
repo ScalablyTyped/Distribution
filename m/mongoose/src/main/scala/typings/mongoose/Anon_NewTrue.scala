@@ -13,8 +13,8 @@ trait Anon_NewTrue extends js.Object {
 object Anon_NewTrue {
   @scala.inline
   def apply(`new`: `true`, upsert: `true`): Anon_NewTrue = {
-    val __obj = js.Dynamic.literal(upsert = upsert)
-    __obj.updateDynamic("new")(`new`)
+    val __obj = js.Dynamic.literal(upsert = upsert.asInstanceOf[js.Any])
+    __obj.updateDynamic("new")(`new`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_NewTrue]
   }
 }

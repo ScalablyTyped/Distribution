@@ -24,12 +24,12 @@ object AccountPermission {
     permissionGroupId: String = null
   ): AccountPermission = {
     val __obj = js.Dynamic.literal()
-    if (accountProfiles != null) __obj.updateDynamic("accountProfiles")(accountProfiles)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (level != null) __obj.updateDynamic("level")(level)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (permissionGroupId != null) __obj.updateDynamic("permissionGroupId")(permissionGroupId)
+    if (accountProfiles != null) __obj.updateDynamic("accountProfiles")(accountProfiles.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (permissionGroupId != null) __obj.updateDynamic("permissionGroupId")(permissionGroupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountPermission]
   }
 }

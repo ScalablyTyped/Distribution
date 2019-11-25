@@ -14,8 +14,8 @@ trait ScenarioResult extends js.Object {
 object ScenarioResult {
   @scala.inline
   def apply(duration: Double, status: Status, exception: Error = null): ScenarioResult = {
-    val __obj = js.Dynamic.literal(duration = duration, status = status)
-    if (exception != null) __obj.updateDynamic("exception")(exception)
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    if (exception != null) __obj.updateDynamic("exception")(exception.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScenarioResult]
   }
 }

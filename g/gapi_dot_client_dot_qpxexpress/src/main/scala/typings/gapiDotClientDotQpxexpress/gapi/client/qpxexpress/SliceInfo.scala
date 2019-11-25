@@ -21,8 +21,8 @@ object SliceInfo {
   def apply(duration: Int | Double = null, kind: String = null, segment: js.Array[SegmentInfo] = null): SliceInfo = {
     val __obj = js.Dynamic.literal()
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (segment != null) __obj.updateDynamic("segment")(segment)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (segment != null) __obj.updateDynamic("segment")(segment.asInstanceOf[js.Any])
     __obj.asInstanceOf[SliceInfo]
   }
 }

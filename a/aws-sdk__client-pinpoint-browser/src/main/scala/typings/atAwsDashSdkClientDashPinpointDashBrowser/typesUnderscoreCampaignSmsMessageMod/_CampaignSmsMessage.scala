@@ -29,9 +29,9 @@ object _CampaignSmsMessage {
     SenderId: String = null
   ): _CampaignSmsMessage = {
     val __obj = js.Dynamic.literal()
-    if (Body != null) __obj.updateDynamic("Body")(Body)
+    if (Body != null) __obj.updateDynamic("Body")(Body.asInstanceOf[js.Any])
     if (MessageType != null) __obj.updateDynamic("MessageType")(MessageType.asInstanceOf[js.Any])
-    if (SenderId != null) __obj.updateDynamic("SenderId")(SenderId)
+    if (SenderId != null) __obj.updateDynamic("SenderId")(SenderId.asInstanceOf[js.Any])
     __obj.asInstanceOf[_CampaignSmsMessage]
   }
 }

@@ -22,8 +22,8 @@ object Anon_Administrative {
     postcode: js.Array[highlightResultValueInterface],
     county: highlightResultValueInterface = null
   ): Anon_Administrative = {
-    val __obj = js.Dynamic.literal(administrative = administrative, country = country, locale_names = locale_names, postcode = postcode)
-    if (county != null) __obj.updateDynamic("county")(county)
+    val __obj = js.Dynamic.literal(administrative = administrative.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], locale_names = locale_names.asInstanceOf[js.Any], postcode = postcode.asInstanceOf[js.Any])
+    if (county != null) __obj.updateDynamic("county")(county.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Administrative]
   }
 }

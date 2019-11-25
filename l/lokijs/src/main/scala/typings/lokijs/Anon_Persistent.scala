@@ -16,8 +16,8 @@ object Anon_Persistent {
     suppressRebuildEvent: js.UndefOr[Boolean] = js.undefined
   ): Anon_Persistent = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(persistent)) __obj.updateDynamic("persistent")(persistent)
-    if (!js.isUndefined(suppressRebuildEvent)) __obj.updateDynamic("suppressRebuildEvent")(suppressRebuildEvent)
+    if (!js.isUndefined(persistent)) __obj.updateDynamic("persistent")(persistent.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressRebuildEvent)) __obj.updateDynamic("suppressRebuildEvent")(suppressRebuildEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Persistent]
   }
 }

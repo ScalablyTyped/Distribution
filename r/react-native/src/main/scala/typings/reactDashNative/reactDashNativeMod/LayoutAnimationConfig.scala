@@ -19,10 +19,10 @@ object LayoutAnimationConfig {
     delete: LayoutAnimationAnim = null,
     update: LayoutAnimationAnim = null
   ): LayoutAnimationConfig = {
-    val __obj = js.Dynamic.literal(duration = duration)
-    if (create != null) __obj.updateDynamic("create")(create)
-    if (delete != null) __obj.updateDynamic("delete")(delete)
-    if (update != null) __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any])
+    if (create != null) __obj.updateDynamic("create")(create.asInstanceOf[js.Any])
+    if (delete != null) __obj.updateDynamic("delete")(delete.asInstanceOf[js.Any])
+    if (update != null) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayoutAnimationConfig]
   }
 }

@@ -30,12 +30,12 @@ object BlogPerUserInfo {
     userId: String = null
   ): BlogPerUserInfo = {
     val __obj = js.Dynamic.literal()
-    if (blogId != null) __obj.updateDynamic("blogId")(blogId)
-    if (!js.isUndefined(hasAdminAccess)) __obj.updateDynamic("hasAdminAccess")(hasAdminAccess)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (photosAlbumKey != null) __obj.updateDynamic("photosAlbumKey")(photosAlbumKey)
-    if (role != null) __obj.updateDynamic("role")(role)
-    if (userId != null) __obj.updateDynamic("userId")(userId)
+    if (blogId != null) __obj.updateDynamic("blogId")(blogId.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasAdminAccess)) __obj.updateDynamic("hasAdminAccess")(hasAdminAccess.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (photosAlbumKey != null) __obj.updateDynamic("photosAlbumKey")(photosAlbumKey.asInstanceOf[js.Any])
+    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
+    if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlogPerUserInfo]
   }
 }

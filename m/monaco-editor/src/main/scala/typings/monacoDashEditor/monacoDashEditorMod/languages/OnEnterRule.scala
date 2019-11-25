@@ -27,9 +27,9 @@ trait OnEnterRule extends js.Object {
 object OnEnterRule {
   @scala.inline
   def apply(action: EnterAction, beforeText: RegExp, afterText: RegExp = null, oneLineAboveText: RegExp = null): OnEnterRule = {
-    val __obj = js.Dynamic.literal(action = action, beforeText = beforeText)
-    if (afterText != null) __obj.updateDynamic("afterText")(afterText)
-    if (oneLineAboveText != null) __obj.updateDynamic("oneLineAboveText")(oneLineAboveText)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], beforeText = beforeText.asInstanceOf[js.Any])
+    if (afterText != null) __obj.updateDynamic("afterText")(afterText.asInstanceOf[js.Any])
+    if (oneLineAboveText != null) __obj.updateDynamic("oneLineAboveText")(oneLineAboveText.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnEnterRule]
   }
 }

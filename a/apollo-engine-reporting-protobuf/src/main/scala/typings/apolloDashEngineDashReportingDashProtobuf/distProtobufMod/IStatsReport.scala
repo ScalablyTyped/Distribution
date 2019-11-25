@@ -41,15 +41,15 @@ object IStatsReport {
     `type`: js.Array[IType] = null
   ): IStatsReport = {
     val __obj = js.Dynamic.literal()
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
-    if (header != null) __obj.updateDynamic("header")(header)
-    if (legacyPerQueryImplicitOperationName != null) __obj.updateDynamic("legacyPerQueryImplicitOperationName")(legacyPerQueryImplicitOperationName)
-    if (memStats != null) __obj.updateDynamic("memStats")(memStats)
-    if (perQuery != null) __obj.updateDynamic("perQuery")(perQuery)
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (legacyPerQueryImplicitOperationName != null) __obj.updateDynamic("legacyPerQueryImplicitOperationName")(legacyPerQueryImplicitOperationName.asInstanceOf[js.Any])
+    if (memStats != null) __obj.updateDynamic("memStats")(memStats.asInstanceOf[js.Any])
+    if (perQuery != null) __obj.updateDynamic("perQuery")(perQuery.asInstanceOf[js.Any])
     if (realtimeDuration != null) __obj.updateDynamic("realtimeDuration")(realtimeDuration.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
-    if (timeStats != null) __obj.updateDynamic("timeStats")(timeStats)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
+    if (timeStats != null) __obj.updateDynamic("timeStats")(timeStats.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStatsReport]
   }
 }

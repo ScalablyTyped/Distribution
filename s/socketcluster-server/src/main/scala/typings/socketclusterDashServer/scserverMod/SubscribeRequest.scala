@@ -22,11 +22,11 @@ object SubscribeRequest {
     data: js.Any = null,
     waitForAuth: js.UndefOr[Boolean] = js.undefined
   ): SubscribeRequest = {
-    val __obj = js.Dynamic.literal(socket = socket)
-    if (authTokenExpiredError != null) __obj.updateDynamic("authTokenExpiredError")(authTokenExpiredError)
-    if (channel != null) __obj.updateDynamic("channel")(channel)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (!js.isUndefined(waitForAuth)) __obj.updateDynamic("waitForAuth")(waitForAuth)
+    val __obj = js.Dynamic.literal(socket = socket.asInstanceOf[js.Any])
+    if (authTokenExpiredError != null) __obj.updateDynamic("authTokenExpiredError")(authTokenExpiredError.asInstanceOf[js.Any])
+    if (channel != null) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (!js.isUndefined(waitForAuth)) __obj.updateDynamic("waitForAuth")(waitForAuth.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscribeRequest]
   }
 }

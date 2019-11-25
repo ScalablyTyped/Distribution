@@ -74,7 +74,7 @@ object videoDotJsStrings {
   sealed trait blob extends js.Object
   
   @js.native
-  sealed trait button extends js.Object
+  sealed trait button_ extends js.Object
   
   @js.native
   sealed trait canvas extends js.Object
@@ -88,13 +88,13 @@ object videoDotJsStrings {
     extends typings.videoDotJs.videoDotJsMod.videojs.TextTrack.Kind
   
   @js.native
-  sealed trait clickablecomponent extends js.Object
+  sealed trait clickablecomponent_ extends js.Object
   
   @js.native
   sealed trait commentary extends Kind
   
   @js.native
-  sealed trait component extends js.Object
+  sealed trait component_ extends js.Object
   
   @js.native
   sealed trait descriptions
@@ -135,29 +135,29 @@ object videoDotJsStrings {
   sealed trait maybe extends js.Object
   
   @js.native
-  sealed trait menu extends js.Object
+  sealed trait menu_ extends js.Object
   
   @js.native
-  sealed trait menubutton extends js.Object
+  sealed trait menubutton_ extends js.Object
   
   @js.native
-  sealed trait menuitem extends js.Object
+  sealed trait menuitem_ extends js.Object
   
   @js.native
   sealed trait metadata
     extends typings.videoDotJs.videoDotJsMod.videojs.TextTrack.Kind
   
   @js.native
-  sealed trait modaldialog extends js.Object
+  sealed trait modaldialog_ extends js.Object
   
   @js.native
-  sealed trait mouseTimeDisplay extends js.Object
+  sealed trait mouseTimeDisplay_ extends js.Object
   
   @js.native
   sealed trait option extends js.Object
   
   @js.native
-  sealed trait player extends js.Object
+  sealed trait player_ extends js.Object
   
   @js.native
   sealed trait probably extends js.Object
@@ -175,7 +175,7 @@ object videoDotJsStrings {
   sealed trait showing extends Mode
   
   @js.native
-  sealed trait spacer extends js.Object
+  sealed trait spacer_ extends js.Object
   
   @js.native
   sealed trait subtitles
@@ -188,7 +188,7 @@ object videoDotJsStrings {
   sealed trait textarea extends js.Object
   
   @js.native
-  sealed trait timeTooltip extends js.Object
+  sealed trait timeTooltip_ extends js.Object
   
   @js.native
   sealed trait translation extends Kind
@@ -241,7 +241,7 @@ object videoDotJsStrings {
   @scala.inline
   def blob: blob = "blob".asInstanceOf[blob]
   @scala.inline
-  def button: button = "button".asInstanceOf[button]
+  def button_ : button_ = "button".asInstanceOf[button_]
   @scala.inline
   def canvas: canvas = "canvas".asInstanceOf[canvas]
   @scala.inline
@@ -249,11 +249,11 @@ object videoDotJsStrings {
   @scala.inline
   def chapters: chapters = "chapters".asInstanceOf[chapters]
   @scala.inline
-  def clickablecomponent: clickablecomponent = "clickablecomponent".asInstanceOf[clickablecomponent]
+  def clickablecomponent_ : clickablecomponent_ = "clickablecomponent".asInstanceOf[clickablecomponent_]
   @scala.inline
   def commentary: commentary = "commentary".asInstanceOf[commentary]
   @scala.inline
-  def component: component = "component".asInstanceOf[component]
+  def component_ : component_ = "component".asInstanceOf[component_]
   @scala.inline
   def descriptions: descriptions = "descriptions".asInstanceOf[descriptions]
   @scala.inline
@@ -279,21 +279,21 @@ object videoDotJsStrings {
   @scala.inline
   def maybe: maybe = "maybe".asInstanceOf[maybe]
   @scala.inline
-  def menu: menu = "menu".asInstanceOf[menu]
+  def menu_ : menu_ = "menu".asInstanceOf[menu_]
   @scala.inline
-  def menubutton: menubutton = "menubutton".asInstanceOf[menubutton]
+  def menubutton_ : menubutton_ = "menubutton".asInstanceOf[menubutton_]
   @scala.inline
-  def menuitem: menuitem = "menuitem".asInstanceOf[menuitem]
+  def menuitem_ : menuitem_ = "menuitem".asInstanceOf[menuitem_]
   @scala.inline
   def metadata: metadata = "metadata".asInstanceOf[metadata]
   @scala.inline
-  def modaldialog: modaldialog = "modaldialog".asInstanceOf[modaldialog]
+  def modaldialog_ : modaldialog_ = "modaldialog".asInstanceOf[modaldialog_]
   @scala.inline
-  def mouseTimeDisplay: mouseTimeDisplay = "mouseTimeDisplay".asInstanceOf[mouseTimeDisplay]
+  def mouseTimeDisplay_ : mouseTimeDisplay_ = "mouseTimeDisplay".asInstanceOf[mouseTimeDisplay_]
   @scala.inline
   def option: option = "option".asInstanceOf[option]
   @scala.inline
-  def player: player = "player".asInstanceOf[player]
+  def player_ : player_ = "player".asInstanceOf[player_]
   @scala.inline
   def probably: probably = "probably".asInstanceOf[probably]
   @scala.inline
@@ -305,7 +305,7 @@ object videoDotJsStrings {
   @scala.inline
   def showing: showing = "showing".asInstanceOf[showing]
   @scala.inline
-  def spacer: spacer = "spacer".asInstanceOf[spacer]
+  def spacer_ : spacer_ = "spacer".asInstanceOf[spacer_]
   @scala.inline
   def subtitles: subtitles = "subtitles".asInstanceOf[subtitles]
   @scala.inline
@@ -313,7 +313,7 @@ object videoDotJsStrings {
   @scala.inline
   def textarea: textarea = "textarea".asInstanceOf[textarea]
   @scala.inline
-  def timeTooltip: timeTooltip = "timeTooltip".asInstanceOf[timeTooltip]
+  def timeTooltip_ : timeTooltip_ = "timeTooltip".asInstanceOf[timeTooltip_]
   @scala.inline
   def translation: translation = "translation".asInstanceOf[translation]
   @scala.inline

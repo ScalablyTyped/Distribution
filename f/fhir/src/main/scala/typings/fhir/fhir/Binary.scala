@@ -50,19 +50,19 @@ object Binary {
     resourceType: code = null,
     securityContext: Reference = null
   ): Binary = {
-    val __obj = js.Dynamic.literal(content = content, contentType = contentType)
-    if (_content != null) __obj.updateDynamic("_content")(_content)
-    if (_contentType != null) __obj.updateDynamic("_contentType")(_contentType)
-    if (_id != null) __obj.updateDynamic("_id")(_id)
-    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)
-    if (_language != null) __obj.updateDynamic("_language")(_language)
-    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (meta != null) __obj.updateDynamic("meta")(meta)
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType)
-    if (securityContext != null) __obj.updateDynamic("securityContext")(securityContext)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any])
+    if (_content != null) __obj.updateDynamic("_content")(_content.asInstanceOf[js.Any])
+    if (_contentType != null) __obj.updateDynamic("_contentType")(_contentType.asInstanceOf[js.Any])
+    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
+    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules.asInstanceOf[js.Any])
+    if (_language != null) __obj.updateDynamic("_language")(_language.asInstanceOf[js.Any])
+    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
+    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
+    if (securityContext != null) __obj.updateDynamic("securityContext")(securityContext.asInstanceOf[js.Any])
     __obj.asInstanceOf[Binary]
   }
 }

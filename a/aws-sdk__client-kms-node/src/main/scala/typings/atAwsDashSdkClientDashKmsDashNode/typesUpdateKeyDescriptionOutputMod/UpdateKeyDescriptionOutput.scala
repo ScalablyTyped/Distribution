@@ -17,7 +17,7 @@ trait UpdateKeyDescriptionOutput extends OutputTypesUnion {
 object UpdateKeyDescriptionOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata): UpdateKeyDescriptionOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UpdateKeyDescriptionOutput]
   }

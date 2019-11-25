@@ -16,8 +16,8 @@ trait MockjsValidRsItem extends js.Object {
 object MockjsValidRsItem {
   @scala.inline
   def apply(action: S, actual: S, expected: S, message: S, path: js.Array[S], `type`: S): MockjsValidRsItem = {
-    val __obj = js.Dynamic.literal(action = action, actual = actual, expected = expected, message = message, path = path)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], actual = actual.asInstanceOf[js.Any], expected = expected.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MockjsValidRsItem]
   }
 }

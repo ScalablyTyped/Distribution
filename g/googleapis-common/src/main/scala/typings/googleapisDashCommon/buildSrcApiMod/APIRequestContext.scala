@@ -12,8 +12,8 @@ trait APIRequestContext extends js.Object {
 object APIRequestContext {
   @scala.inline
   def apply(_options: GlobalOptions, google: GoogleConfigurable = null): APIRequestContext = {
-    val __obj = js.Dynamic.literal(_options = _options)
-    if (google != null) __obj.updateDynamic("google")(google)
+    val __obj = js.Dynamic.literal(_options = _options.asInstanceOf[js.Any])
+    if (google != null) __obj.updateDynamic("google")(google.asInstanceOf[js.Any])
     __obj.asInstanceOf[APIRequestContext]
   }
 }

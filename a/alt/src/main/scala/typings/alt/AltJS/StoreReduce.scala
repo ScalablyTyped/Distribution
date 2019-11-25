@@ -12,7 +12,7 @@ trait StoreReduce extends js.Object {
 object StoreReduce {
   @scala.inline
   def apply(action: js.Any, data: js.Any): StoreReduce = {
-    val __obj = js.Dynamic.literal(action = action, data = data)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StoreReduce]
   }

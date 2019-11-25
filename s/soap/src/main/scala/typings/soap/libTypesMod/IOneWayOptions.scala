@@ -13,7 +13,7 @@ object IOneWayOptions {
   @scala.inline
   def apply(emptyBody: js.UndefOr[Boolean] = js.undefined, responseCode: Int | Double = null): IOneWayOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(emptyBody)) __obj.updateDynamic("emptyBody")(emptyBody)
+    if (!js.isUndefined(emptyBody)) __obj.updateDynamic("emptyBody")(emptyBody.asInstanceOf[js.Any])
     if (responseCode != null) __obj.updateDynamic("responseCode")(responseCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOneWayOptions]
   }

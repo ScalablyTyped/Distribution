@@ -20,10 +20,10 @@ object JavascriptSetDetails {
     scope: ScopeEnum = null,
     secondaryPattern: String = null
   ): JavascriptSetDetails = {
-    val __obj = js.Dynamic.literal(primaryPattern = primaryPattern, setting = setting.asInstanceOf[js.Any])
-    if (resourceIdentifier != null) __obj.updateDynamic("resourceIdentifier")(resourceIdentifier)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
-    if (secondaryPattern != null) __obj.updateDynamic("secondaryPattern")(secondaryPattern)
+    val __obj = js.Dynamic.literal(primaryPattern = primaryPattern.asInstanceOf[js.Any], setting = setting.asInstanceOf[js.Any])
+    if (resourceIdentifier != null) __obj.updateDynamic("resourceIdentifier")(resourceIdentifier.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (secondaryPattern != null) __obj.updateDynamic("secondaryPattern")(secondaryPattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[JavascriptSetDetails]
   }
 }

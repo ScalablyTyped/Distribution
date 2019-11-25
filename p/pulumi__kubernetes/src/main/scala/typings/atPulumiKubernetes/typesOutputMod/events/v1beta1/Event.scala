@@ -111,8 +111,8 @@ object Event {
     series: EventSeries,
     `type`: String
   ): Event = {
-    val __obj = js.Dynamic.literal(action = action, apiVersion = apiVersion, deprecatedCount = deprecatedCount, deprecatedFirstTimestamp = deprecatedFirstTimestamp, deprecatedLastTimestamp = deprecatedLastTimestamp, deprecatedSource = deprecatedSource, eventTime = eventTime, kind = kind, metadata = metadata, note = note, reason = reason, regarding = regarding, related = related, reportingController = reportingController, reportingInstance = reportingInstance, series = series)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], apiVersion = apiVersion.asInstanceOf[js.Any], deprecatedCount = deprecatedCount.asInstanceOf[js.Any], deprecatedFirstTimestamp = deprecatedFirstTimestamp.asInstanceOf[js.Any], deprecatedLastTimestamp = deprecatedLastTimestamp.asInstanceOf[js.Any], deprecatedSource = deprecatedSource.asInstanceOf[js.Any], eventTime = eventTime.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], note = note.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], regarding = regarding.asInstanceOf[js.Any], related = related.asInstanceOf[js.Any], reportingController = reportingController.asInstanceOf[js.Any], reportingInstance = reportingInstance.asInstanceOf[js.Any], series = series.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Event]
   }
 }

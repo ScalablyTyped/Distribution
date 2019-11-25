@@ -18,7 +18,7 @@ trait Typeof_TimePicker extends js.Object {
 object Typeof_TimePicker {
   @scala.inline
   def apply(__Constraints: Instantiable0[__Constraints]): Typeof_TimePicker = {
-    val __obj = js.Dynamic.literal(__Constraints = __Constraints)
+    val __obj = js.Dynamic.literal(__Constraints = __Constraints.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Typeof_TimePicker]
   }

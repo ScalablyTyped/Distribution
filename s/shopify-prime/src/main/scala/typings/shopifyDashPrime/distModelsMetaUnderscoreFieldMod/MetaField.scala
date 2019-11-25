@@ -61,12 +61,12 @@ object MetaField {
     owner_id: Int | Double = null,
     updated_at: String = null
   ): MetaField = {
-    val __obj = js.Dynamic.literal(description = description, key = key, namespace = namespace, owner_resource = owner_resource, value = value.asInstanceOf[js.Any], value_type = value_type.asInstanceOf[js.Any])
-    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
-    if (created_at != null) __obj.updateDynamic("created_at")(created_at)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], owner_resource = owner_resource.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], value_type = value_type.asInstanceOf[js.Any])
+    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id.asInstanceOf[js.Any])
+    if (created_at != null) __obj.updateDynamic("created_at")(created_at.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (owner_id != null) __obj.updateDynamic("owner_id")(owner_id.asInstanceOf[js.Any])
-    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at)
+    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetaField]
   }
 }

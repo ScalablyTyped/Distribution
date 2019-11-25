@@ -27,7 +27,7 @@ object VueEditorProps {
     useMarkdownShortcuts: Boolean,
     value: String
   ): VueEditorProps = {
-    val __obj = js.Dynamic.literal(disabled = disabled, editorOptions = editorOptions, editorToolbar = editorToolbar, id = id, placeholder = placeholder, useCustomImageHandler = useCustomImageHandler, useMarkdownShortcuts = useMarkdownShortcuts, value = value)
+    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], editorOptions = editorOptions.asInstanceOf[js.Any], editorToolbar = editorToolbar.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any], useCustomImageHandler = useCustomImageHandler.asInstanceOf[js.Any], useMarkdownShortcuts = useMarkdownShortcuts.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[VueEditorProps]
   }

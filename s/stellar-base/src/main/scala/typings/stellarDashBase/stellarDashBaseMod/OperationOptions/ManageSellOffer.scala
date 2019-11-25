@@ -19,9 +19,9 @@ object ManageSellOffer {
     offerId: Double | String = null,
     source: String = null
   ): ManageSellOffer = {
-    val __obj = js.Dynamic.literal(amount = amount, buying = buying, price = price.asInstanceOf[js.Any], selling = selling)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], buying = buying.asInstanceOf[js.Any], price = price.asInstanceOf[js.Any], selling = selling.asInstanceOf[js.Any])
     if (offerId != null) __obj.updateDynamic("offerId")(offerId.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManageSellOffer]
   }
 }

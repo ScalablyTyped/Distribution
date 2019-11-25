@@ -12,7 +12,7 @@ trait Animations extends js.Object {
 object Animations {
   @scala.inline
   def apply(animationIn: String, animationOut: String): Animations = {
-    val __obj = js.Dynamic.literal(animationIn = animationIn, animationOut = animationOut)
+    val __obj = js.Dynamic.literal(animationIn = animationIn.asInstanceOf[js.Any], animationOut = animationOut.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Animations]
   }

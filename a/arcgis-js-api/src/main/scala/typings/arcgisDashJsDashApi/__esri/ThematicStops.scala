@@ -51,11 +51,11 @@ object ThematicStops {
     normalizationField: String = null,
     valueExpression: String = null
   ): ThematicStops = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), stops = stops)
-    __obj.updateDynamic("type")(`type`)
-    if (field != null) __obj.updateDynamic("field")(field)
-    if (normalizationField != null) __obj.updateDynamic("normalizationField")(normalizationField)
-    if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), stops = stops.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    if (normalizationField != null) __obj.updateDynamic("normalizationField")(normalizationField.asInstanceOf[js.Any])
+    if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThematicStops]
   }
 }

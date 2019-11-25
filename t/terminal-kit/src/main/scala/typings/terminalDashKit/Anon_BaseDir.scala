@@ -11,7 +11,7 @@ trait Anon_BaseDir extends js.Object {
 object Anon_BaseDir {
   @scala.inline
   def apply(baseDir: String): Anon_BaseDir = {
-    val __obj = js.Dynamic.literal(baseDir = baseDir)
+    val __obj = js.Dynamic.literal(baseDir = baseDir.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BaseDir]
   }

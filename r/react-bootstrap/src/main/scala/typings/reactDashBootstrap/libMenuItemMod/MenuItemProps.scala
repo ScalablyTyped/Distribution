@@ -31,28 +31,22 @@ object MenuItemProps {
     ClassAttributes: ClassAttributes[MenuItem] = null,
     active: js.UndefOr[Boolean] = js.undefined,
     bsClass: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
     divider: js.UndefOr[Boolean] = js.undefined,
     eventKey: js.Any = null,
     header: js.UndefOr[Boolean] = js.undefined,
     onClick: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
-    onSelect: SelectCallback = null,
-    target: String = null,
-    title: String = null
+    onSelect: SelectCallback = null
   ): MenuItemProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
-    if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (!js.isUndefined(divider)) __obj.updateDynamic("divider")(divider)
-    if (eventKey != null) __obj.updateDynamic("eventKey")(eventKey)
-    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass.asInstanceOf[js.Any])
+    if (!js.isUndefined(divider)) __obj.updateDynamic("divider")(divider.asInstanceOf[js.Any])
+    if (eventKey != null) __obj.updateDynamic("eventKey")(eventKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuItemProps]
   }
 }

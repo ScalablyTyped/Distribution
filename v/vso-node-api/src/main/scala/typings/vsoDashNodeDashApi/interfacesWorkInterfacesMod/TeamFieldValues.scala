@@ -28,7 +28,7 @@ object TeamFieldValues {
     url: String,
     values: js.Array[TeamFieldValue]
   ): TeamFieldValues = {
-    val __obj = js.Dynamic.literal(_links = _links, defaultValue = defaultValue, field = field, url = url, values = values)
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], defaultValue = defaultValue.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TeamFieldValues]
   }

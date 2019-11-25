@@ -17,7 +17,7 @@ object S3FailedUploadTextDisplayOptions {
   @scala.inline
   def apply(mode: String = null): S3FailedUploadTextDisplayOptions = {
     val __obj = js.Dynamic.literal()
-    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3FailedUploadTextDisplayOptions]
   }
 }

@@ -27,10 +27,10 @@ object LegendProps {
     horizontal: js.UndefOr[Boolean] = js.undefined,
     styles: StringDictionary[CSSProperties] = null
   ): LegendProps = {
-    val __obj = js.Dynamic.literal(data = data, dataId = dataId)
-    if (config != null) __obj.updateDynamic("config")(config)
-    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal)
-    if (styles != null) __obj.updateDynamic("styles")(styles)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], dataId = dataId.asInstanceOf[js.Any])
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[LegendProps]
   }
 }

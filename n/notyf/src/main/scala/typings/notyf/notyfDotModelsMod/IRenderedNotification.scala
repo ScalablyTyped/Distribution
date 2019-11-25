@@ -13,7 +13,7 @@ trait IRenderedNotification extends js.Object {
 object IRenderedNotification {
   @scala.inline
   def apply(node: HTMLElement, notification: NotyfNotification): IRenderedNotification = {
-    val __obj = js.Dynamic.literal(node = node, notification = notification)
+    val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], notification = notification.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IRenderedNotification]
   }

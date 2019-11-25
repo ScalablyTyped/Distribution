@@ -12,7 +12,7 @@ trait InsightsServiceAccountResponseDaysHourlyFollowersGraphsItem extends js.Obj
 object InsightsServiceAccountResponseDaysHourlyFollowersGraphsItem {
   @scala.inline
   def apply(data_points: js.Array[InsightsServiceAccountResponseDataPointsItem], name: String): InsightsServiceAccountResponseDaysHourlyFollowersGraphsItem = {
-    val __obj = js.Dynamic.literal(data_points = data_points, name = name)
+    val __obj = js.Dynamic.literal(data_points = data_points.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InsightsServiceAccountResponseDaysHourlyFollowersGraphsItem]
   }

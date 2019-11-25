@@ -17,9 +17,9 @@ object Anon_Bookmarks {
   @scala.inline
   def apply(bookmarks: ExtensionURL = null, history: ExtensionURL = null, newtab: ExtensionURL = null): Anon_Bookmarks = {
     val __obj = js.Dynamic.literal()
-    if (bookmarks != null) __obj.updateDynamic("bookmarks")(bookmarks)
-    if (history != null) __obj.updateDynamic("history")(history)
-    if (newtab != null) __obj.updateDynamic("newtab")(newtab)
+    if (bookmarks != null) __obj.updateDynamic("bookmarks")(bookmarks.asInstanceOf[js.Any])
+    if (history != null) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
+    if (newtab != null) __obj.updateDynamic("newtab")(newtab.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Bookmarks]
   }
 }

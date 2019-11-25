@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 object MockConfigInstance {
   @scala.inline
   def apply(basePath: String): MockConfigInstance = {
-    val __obj = js.Dynamic.literal(basePath = basePath)
+    val __obj = js.Dynamic.literal(basePath = basePath.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MockConfigInstance]
   }

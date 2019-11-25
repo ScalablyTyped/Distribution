@@ -20,10 +20,10 @@ object Options {
     escape: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (after != null) __obj.updateDynamic("after")(after)
-    if (before != null) __obj.updateDynamic("before")(before)
-    if (!js.isUndefined(clean)) __obj.updateDynamic("clean")(clean)
-    if (escape != null) __obj.updateDynamic("escape")(escape)
+    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
+    if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
+    if (!js.isUndefined(clean)) __obj.updateDynamic("clean")(clean.asInstanceOf[js.Any])
+    if (escape != null) __obj.updateDynamic("escape")(escape.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

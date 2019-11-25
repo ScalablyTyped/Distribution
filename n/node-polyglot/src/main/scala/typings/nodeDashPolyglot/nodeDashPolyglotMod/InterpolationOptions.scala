@@ -20,8 +20,8 @@ object InterpolationOptions {
     smart_count: Double | Anon_Length = null
   ): InterpolationOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (`_` != null) __obj.updateDynamic("_")(`_`)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (`_` != null) __obj.updateDynamic("_")(`_`.asInstanceOf[js.Any])
     if (smart_count != null) __obj.updateDynamic("smart_count")(smart_count.asInstanceOf[js.Any])
     __obj.asInstanceOf[InterpolationOptions]
   }

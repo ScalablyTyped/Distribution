@@ -13,7 +13,7 @@ trait Anon_Floats extends js.Object {
 object Anon_Floats {
   @scala.inline
   def apply(floats: js.Array[Double], integers: js.Array[Double], strings: js.Array[String]): Anon_Floats = {
-    val __obj = js.Dynamic.literal(floats = floats, integers = integers, strings = strings)
+    val __obj = js.Dynamic.literal(floats = floats.asInstanceOf[js.Any], integers = integers.asInstanceOf[js.Any], strings = strings.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Floats]
   }

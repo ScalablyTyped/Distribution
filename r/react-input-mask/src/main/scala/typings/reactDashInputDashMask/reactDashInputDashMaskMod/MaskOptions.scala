@@ -22,7 +22,7 @@ object MaskOptions {
     maskChar: String,
     permanents: js.Array[Double]
   ): MaskOptions = {
-    val __obj = js.Dynamic.literal(alwaysShowMask = alwaysShowMask, formatChars = formatChars, mask = mask, maskChar = maskChar, permanents = permanents)
+    val __obj = js.Dynamic.literal(alwaysShowMask = alwaysShowMask.asInstanceOf[js.Any], formatChars = formatChars.asInstanceOf[js.Any], mask = mask.asInstanceOf[js.Any], maskChar = maskChar.asInstanceOf[js.Any], permanents = permanents.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MaskOptions]
   }

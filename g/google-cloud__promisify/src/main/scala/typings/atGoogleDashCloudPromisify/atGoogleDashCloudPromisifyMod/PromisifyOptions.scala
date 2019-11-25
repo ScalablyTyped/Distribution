@@ -15,7 +15,7 @@ object PromisifyOptions {
   @scala.inline
   def apply(singular: js.UndefOr[Boolean] = js.undefined): PromisifyOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(singular)) __obj.updateDynamic("singular")(singular)
+    if (!js.isUndefined(singular)) __obj.updateDynamic("singular")(singular.asInstanceOf[js.Any])
     __obj.asInstanceOf[PromisifyOptions]
   }
 }

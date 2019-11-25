@@ -30,12 +30,12 @@ object SoftwareInfo {
     securityPatchLevel: String = null
   ): SoftwareInfo = {
     val __obj = js.Dynamic.literal()
-    if (androidBuildNumber != null) __obj.updateDynamic("androidBuildNumber")(androidBuildNumber)
-    if (androidBuildTime != null) __obj.updateDynamic("androidBuildTime")(androidBuildTime)
-    if (androidVersion != null) __obj.updateDynamic("androidVersion")(androidVersion)
-    if (bootloaderVersion != null) __obj.updateDynamic("bootloaderVersion")(bootloaderVersion)
-    if (deviceKernelVersion != null) __obj.updateDynamic("deviceKernelVersion")(deviceKernelVersion)
-    if (securityPatchLevel != null) __obj.updateDynamic("securityPatchLevel")(securityPatchLevel)
+    if (androidBuildNumber != null) __obj.updateDynamic("androidBuildNumber")(androidBuildNumber.asInstanceOf[js.Any])
+    if (androidBuildTime != null) __obj.updateDynamic("androidBuildTime")(androidBuildTime.asInstanceOf[js.Any])
+    if (androidVersion != null) __obj.updateDynamic("androidVersion")(androidVersion.asInstanceOf[js.Any])
+    if (bootloaderVersion != null) __obj.updateDynamic("bootloaderVersion")(bootloaderVersion.asInstanceOf[js.Any])
+    if (deviceKernelVersion != null) __obj.updateDynamic("deviceKernelVersion")(deviceKernelVersion.asInstanceOf[js.Any])
+    if (securityPatchLevel != null) __obj.updateDynamic("securityPatchLevel")(securityPatchLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[SoftwareInfo]
   }
 }

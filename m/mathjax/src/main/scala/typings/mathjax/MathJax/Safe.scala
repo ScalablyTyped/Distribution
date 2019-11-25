@@ -51,10 +51,10 @@ object Safe {
     sizeMin: Int | Double = null
   ): Safe = {
     val __obj = js.Dynamic.literal()
-    if (allow != null) __obj.updateDynamic("allow")(allow)
-    if (safeProtocols != null) __obj.updateDynamic("safeProtocols")(safeProtocols)
-    if (safeRequire != null) __obj.updateDynamic("safeRequire")(safeRequire)
-    if (safeStyles != null) __obj.updateDynamic("safeStyles")(safeStyles)
+    if (allow != null) __obj.updateDynamic("allow")(allow.asInstanceOf[js.Any])
+    if (safeProtocols != null) __obj.updateDynamic("safeProtocols")(safeProtocols.asInstanceOf[js.Any])
+    if (safeRequire != null) __obj.updateDynamic("safeRequire")(safeRequire.asInstanceOf[js.Any])
+    if (safeStyles != null) __obj.updateDynamic("safeStyles")(safeStyles.asInstanceOf[js.Any])
     if (sizeMax != null) __obj.updateDynamic("sizeMax")(sizeMax.asInstanceOf[js.Any])
     if (sizeMin != null) __obj.updateDynamic("sizeMin")(sizeMin.asInstanceOf[js.Any])
     __obj.asInstanceOf[Safe]

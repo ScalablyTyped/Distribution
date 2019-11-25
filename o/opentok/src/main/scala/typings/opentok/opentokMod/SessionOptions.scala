@@ -14,9 +14,9 @@ object SessionOptions {
   @scala.inline
   def apply(archiveMode: ArchiveMode = null, location: String = null, mediaMode: MediaMode = null): SessionOptions = {
     val __obj = js.Dynamic.literal()
-    if (archiveMode != null) __obj.updateDynamic("archiveMode")(archiveMode)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (mediaMode != null) __obj.updateDynamic("mediaMode")(mediaMode)
+    if (archiveMode != null) __obj.updateDynamic("archiveMode")(archiveMode.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (mediaMode != null) __obj.updateDynamic("mediaMode")(mediaMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionOptions]
   }
 }

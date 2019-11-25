@@ -12,7 +12,7 @@ object IThrottledReactEventOptions {
   @scala.inline
   def apply(preventDefault: js.UndefOr[Boolean] = js.undefined): IThrottledReactEventOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(preventDefault)) __obj.updateDynamic("preventDefault")(preventDefault)
+    if (!js.isUndefined(preventDefault)) __obj.updateDynamic("preventDefault")(preventDefault.asInstanceOf[js.Any])
     __obj.asInstanceOf[IThrottledReactEventOptions]
   }
 }

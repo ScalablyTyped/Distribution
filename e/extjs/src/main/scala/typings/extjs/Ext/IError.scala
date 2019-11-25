@@ -25,8 +25,8 @@ object IError {
     toString: () => java.lang.String = null
   ): IError = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ignore)) __obj.updateDynamic("ignore")(ignore)
-    if (!js.isUndefined(notify)) __obj.updateDynamic("notify")(notify)
+    if (!js.isUndefined(ignore)) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
+    if (!js.isUndefined(notify)) __obj.updateDynamic("notify")(notify.asInstanceOf[js.Any])
     if (toString != null) __obj.updateDynamic("toString")(js.Any.fromFunction0(toString))
     __obj.asInstanceOf[IError]
   }

@@ -28,7 +28,7 @@ object _SubscribeToShardEvent {
     MillisBehindLatest: Double,
     Records: js.Array[_Record] | Iterable[_Record]
   ): _SubscribeToShardEvent = {
-    val __obj = js.Dynamic.literal(ContinuationSequenceNumber = ContinuationSequenceNumber, MillisBehindLatest = MillisBehindLatest, Records = Records.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(ContinuationSequenceNumber = ContinuationSequenceNumber.asInstanceOf[js.Any], MillisBehindLatest = MillisBehindLatest.asInstanceOf[js.Any], Records = Records.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_SubscribeToShardEvent]
   }

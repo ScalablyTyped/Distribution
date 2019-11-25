@@ -15,7 +15,7 @@ trait OnErrorOccurredFilter extends js.Object {
 object OnErrorOccurredFilter {
   @scala.inline
   def apply(urls: js.Array[String]): OnErrorOccurredFilter = {
-    val __obj = js.Dynamic.literal(urls = urls)
+    val __obj = js.Dynamic.literal(urls = urls.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OnErrorOccurredFilter]
   }

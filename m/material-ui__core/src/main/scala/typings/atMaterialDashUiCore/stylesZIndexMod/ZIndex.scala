@@ -23,7 +23,7 @@ object ZIndex {
     snackbar: Double,
     tooltip: Double
   ): ZIndex = {
-    val __obj = js.Dynamic.literal(appBar = appBar, drawer = drawer, mobileStepper = mobileStepper, modal = modal, snackbar = snackbar, tooltip = tooltip)
+    val __obj = js.Dynamic.literal(appBar = appBar.asInstanceOf[js.Any], drawer = drawer.asInstanceOf[js.Any], mobileStepper = mobileStepper.asInstanceOf[js.Any], modal = modal.asInstanceOf[js.Any], snackbar = snackbar.asInstanceOf[js.Any], tooltip = tooltip.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ZIndex]
   }

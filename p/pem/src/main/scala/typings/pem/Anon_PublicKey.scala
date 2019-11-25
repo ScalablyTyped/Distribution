@@ -11,7 +11,7 @@ trait Anon_PublicKey extends js.Object {
 object Anon_PublicKey {
   @scala.inline
   def apply(publicKey: String): Anon_PublicKey = {
-    val __obj = js.Dynamic.literal(publicKey = publicKey)
+    val __obj = js.Dynamic.literal(publicKey = publicKey.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_PublicKey]
   }

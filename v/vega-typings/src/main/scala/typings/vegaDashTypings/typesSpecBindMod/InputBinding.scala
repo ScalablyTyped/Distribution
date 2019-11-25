@@ -24,13 +24,13 @@ object InputBinding {
     `type`: String = null
   ): InputBinding = {
     val __obj = js.Dynamic.literal()
-    if (autocomplete != null) __obj.updateDynamic("autocomplete")(autocomplete)
+    if (autocomplete != null) __obj.updateDynamic("autocomplete")(autocomplete.asInstanceOf[js.Any])
     if (debounce != null) __obj.updateDynamic("debounce")(debounce.asInstanceOf[js.Any])
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (input != null) __obj.updateDynamic("input")(input)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputBinding]
   }
 }

@@ -12,7 +12,7 @@ trait PanGestureHandlerStateChangeEvent extends GestureHandlerStateChangeEvent {
 object PanGestureHandlerStateChangeEvent {
   @scala.inline
   def apply(nativeEvent: GestureHandlerStateChangeNativeEvent with PanGestureHandlerEventExtra): PanGestureHandlerStateChangeEvent = {
-    val __obj = js.Dynamic.literal(nativeEvent = nativeEvent)
+    val __obj = js.Dynamic.literal(nativeEvent = nativeEvent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PanGestureHandlerStateChangeEvent]
   }

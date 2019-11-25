@@ -33,11 +33,11 @@ object Bundle {
     subscribeData: Anon_Id = null,
     targetUrl: String = null
   ): Bundle[InputData] = {
-    val __obj = js.Dynamic.literal(authData = authData, inputData = inputData.asInstanceOf[js.Any], inputDataRaw = inputDataRaw, meta = meta)
+    val __obj = js.Dynamic.literal(authData = authData.asInstanceOf[js.Any], inputData = inputData.asInstanceOf[js.Any], inputDataRaw = inputDataRaw.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any])
     if (cleanedRequest != null) __obj.updateDynamic("cleanedRequest")(cleanedRequest.asInstanceOf[js.Any])
-    if (rawRequest != null) __obj.updateDynamic("rawRequest")(rawRequest)
-    if (subscribeData != null) __obj.updateDynamic("subscribeData")(subscribeData)
-    if (targetUrl != null) __obj.updateDynamic("targetUrl")(targetUrl)
+    if (rawRequest != null) __obj.updateDynamic("rawRequest")(rawRequest.asInstanceOf[js.Any])
+    if (subscribeData != null) __obj.updateDynamic("subscribeData")(subscribeData.asInstanceOf[js.Any])
+    if (targetUrl != null) __obj.updateDynamic("targetUrl")(targetUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Bundle[InputData]]
   }
 }

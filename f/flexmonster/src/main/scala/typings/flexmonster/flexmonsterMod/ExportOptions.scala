@@ -38,19 +38,19 @@ object ExportOptions {
     useOlapFormattingInExcel: js.UndefOr[Boolean] = js.undefined
   ): ExportOptions = {
     val __obj = js.Dynamic.literal()
-    if (destinationType != null) __obj.updateDynamic("destinationType")(destinationType)
-    if (!js.isUndefined(excelExportAll)) __obj.updateDynamic("excelExportAll")(excelExportAll)
-    if (excelSheetName != null) __obj.updateDynamic("excelSheetName")(excelSheetName)
-    if (filename != null) __obj.updateDynamic("filename")(filename)
-    if (fontUrl != null) __obj.updateDynamic("fontUrl")(fontUrl)
-    if (footer != null) __obj.updateDynamic("footer")(footer)
-    if (header != null) __obj.updateDynamic("header")(header)
-    if (pageOrientation != null) __obj.updateDynamic("pageOrientation")(pageOrientation)
-    if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders)
-    if (!js.isUndefined(showFilters)) __obj.updateDynamic("showFilters")(showFilters)
-    if (url != null) __obj.updateDynamic("url")(url)
-    if (!js.isUndefined(useCustomizeCellForData)) __obj.updateDynamic("useCustomizeCellForData")(useCustomizeCellForData)
-    if (!js.isUndefined(useOlapFormattingInExcel)) __obj.updateDynamic("useOlapFormattingInExcel")(useOlapFormattingInExcel)
+    if (destinationType != null) __obj.updateDynamic("destinationType")(destinationType.asInstanceOf[js.Any])
+    if (!js.isUndefined(excelExportAll)) __obj.updateDynamic("excelExportAll")(excelExportAll.asInstanceOf[js.Any])
+    if (excelSheetName != null) __obj.updateDynamic("excelSheetName")(excelSheetName.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
+    if (fontUrl != null) __obj.updateDynamic("fontUrl")(fontUrl.asInstanceOf[js.Any])
+    if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (pageOrientation != null) __obj.updateDynamic("pageOrientation")(pageOrientation.asInstanceOf[js.Any])
+    if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders.asInstanceOf[js.Any])
+    if (!js.isUndefined(showFilters)) __obj.updateDynamic("showFilters")(showFilters.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (!js.isUndefined(useCustomizeCellForData)) __obj.updateDynamic("useCustomizeCellForData")(useCustomizeCellForData.asInstanceOf[js.Any])
+    if (!js.isUndefined(useOlapFormattingInExcel)) __obj.updateDynamic("useOlapFormattingInExcel")(useOlapFormattingInExcel.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportOptions]
   }
 }

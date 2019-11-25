@@ -19,8 +19,8 @@ object EncryptRequest {
   @scala.inline
   def apply(additionalAuthenticatedData: String = null, plaintext: String = null): EncryptRequest = {
     val __obj = js.Dynamic.literal()
-    if (additionalAuthenticatedData != null) __obj.updateDynamic("additionalAuthenticatedData")(additionalAuthenticatedData)
-    if (plaintext != null) __obj.updateDynamic("plaintext")(plaintext)
+    if (additionalAuthenticatedData != null) __obj.updateDynamic("additionalAuthenticatedData")(additionalAuthenticatedData.asInstanceOf[js.Any])
+    if (plaintext != null) __obj.updateDynamic("plaintext")(plaintext.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncryptRequest]
   }
 }

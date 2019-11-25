@@ -13,7 +13,7 @@ object PolicyDelta {
   @scala.inline
   def apply(bindingDeltas: js.Array[BindingDelta] = null): PolicyDelta = {
     val __obj = js.Dynamic.literal()
-    if (bindingDeltas != null) __obj.updateDynamic("bindingDeltas")(bindingDeltas)
+    if (bindingDeltas != null) __obj.updateDynamic("bindingDeltas")(bindingDeltas.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolicyDelta]
   }
 }

@@ -13,8 +13,8 @@ object ChartToggleHighlightOptions {
   @scala.inline
   def apply(category: String = null, series: String = null): ChartToggleHighlightOptions = {
     val __obj = js.Dynamic.literal()
-    if (category != null) __obj.updateDynamic("category")(category)
-    if (series != null) __obj.updateDynamic("series")(series)
+    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
+    if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartToggleHighlightOptions]
   }
 }

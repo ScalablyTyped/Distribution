@@ -12,7 +12,7 @@ trait TreeSourcePosition extends js.Object {
 object TreeSourcePosition {
   @scala.inline
   def apply(index: Double, parentId: ItemId): TreeSourcePosition = {
-    val __obj = js.Dynamic.literal(index = index, parentId = parentId)
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], parentId = parentId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TreeSourcePosition]
   }

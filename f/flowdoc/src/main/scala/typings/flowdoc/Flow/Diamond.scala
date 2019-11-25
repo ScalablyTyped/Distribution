@@ -21,9 +21,9 @@ object Diamond {
     `type`: DIAMOND,
     connections: js.Array[Connection] = null
   ): Diamond = {
-    val __obj = js.Dynamic.literal(id = id, name = name, position = position, size = size)
-    __obj.updateDynamic("type")(`type`)
-    if (connections != null) __obj.updateDynamic("connections")(connections)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (connections != null) __obj.updateDynamic("connections")(connections.asInstanceOf[js.Any])
     __obj.asInstanceOf[Diamond]
   }
 }

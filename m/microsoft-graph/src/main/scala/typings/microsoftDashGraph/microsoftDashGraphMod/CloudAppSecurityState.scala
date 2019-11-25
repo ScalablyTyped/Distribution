@@ -24,9 +24,9 @@ object CloudAppSecurityState {
     riskScore: String = null
   ): CloudAppSecurityState = {
     val __obj = js.Dynamic.literal()
-    if (destinationServiceIp != null) __obj.updateDynamic("destinationServiceIp")(destinationServiceIp)
-    if (destinationServiceName != null) __obj.updateDynamic("destinationServiceName")(destinationServiceName)
-    if (riskScore != null) __obj.updateDynamic("riskScore")(riskScore)
+    if (destinationServiceIp != null) __obj.updateDynamic("destinationServiceIp")(destinationServiceIp.asInstanceOf[js.Any])
+    if (destinationServiceName != null) __obj.updateDynamic("destinationServiceName")(destinationServiceName.asInstanceOf[js.Any])
+    if (riskScore != null) __obj.updateDynamic("riskScore")(riskScore.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloudAppSecurityState]
   }
 }

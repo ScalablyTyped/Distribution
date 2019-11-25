@@ -13,3 +13,18 @@ import scala.scalajs.js.annotation._
 */
 trait IconPrefix extends js.Object
 
+object IconPrefix {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def fab: typings.atFortawesomeFontawesomeDashCommonDashTypes.atFortawesomeFontawesomeDashCommonDashTypesStrings.fab = this.cast("fab")
+  @scala.inline
+  def fad: typings.atFortawesomeFontawesomeDashCommonDashTypes.atFortawesomeFontawesomeDashCommonDashTypesStrings.fad = this.cast("fad")
+  @scala.inline
+  def fal: typings.atFortawesomeFontawesomeDashCommonDashTypes.atFortawesomeFontawesomeDashCommonDashTypesStrings.fal = this.cast("fal")
+  @scala.inline
+  def far: typings.atFortawesomeFontawesomeDashCommonDashTypes.atFortawesomeFontawesomeDashCommonDashTypesStrings.far = this.cast("far")
+  @scala.inline
+  def fas: typings.atFortawesomeFontawesomeDashCommonDashTypes.atFortawesomeFontawesomeDashCommonDashTypesStrings.fas = this.cast("fas")
+}
+

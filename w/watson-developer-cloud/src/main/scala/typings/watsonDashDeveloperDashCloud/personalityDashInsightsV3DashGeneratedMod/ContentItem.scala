@@ -39,14 +39,14 @@ object ContentItem {
     reply: js.UndefOr[Boolean] = js.undefined,
     updated: Int | Double = null
   ): ContentItem = {
-    val __obj = js.Dynamic.literal(content = content)
-    if (contenttype != null) __obj.updateDynamic("contenttype")(contenttype)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
+    if (contenttype != null) __obj.updateDynamic("contenttype")(contenttype.asInstanceOf[js.Any])
     if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
-    if (!js.isUndefined(forward)) __obj.updateDynamic("forward")(forward)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (parentid != null) __obj.updateDynamic("parentid")(parentid)
-    if (!js.isUndefined(reply)) __obj.updateDynamic("reply")(reply)
+    if (!js.isUndefined(forward)) __obj.updateDynamic("forward")(forward.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (parentid != null) __obj.updateDynamic("parentid")(parentid.asInstanceOf[js.Any])
+    if (!js.isUndefined(reply)) __obj.updateDynamic("reply")(reply.asInstanceOf[js.Any])
     if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentItem]
   }

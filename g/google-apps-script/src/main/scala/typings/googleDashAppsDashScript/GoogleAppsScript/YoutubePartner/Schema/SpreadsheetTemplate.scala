@@ -22,11 +22,11 @@ object SpreadsheetTemplate {
     templateType: String = null
   ): SpreadsheetTemplate = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (templateContent != null) __obj.updateDynamic("templateContent")(templateContent)
-    if (templateName != null) __obj.updateDynamic("templateName")(templateName)
-    if (templateType != null) __obj.updateDynamic("templateType")(templateType)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (templateContent != null) __obj.updateDynamic("templateContent")(templateContent.asInstanceOf[js.Any])
+    if (templateName != null) __obj.updateDynamic("templateName")(templateName.asInstanceOf[js.Any])
+    if (templateType != null) __obj.updateDynamic("templateType")(templateType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpreadsheetTemplate]
   }
 }

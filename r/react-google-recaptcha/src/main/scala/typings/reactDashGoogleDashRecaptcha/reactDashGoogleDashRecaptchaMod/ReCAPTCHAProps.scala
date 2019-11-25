@@ -81,18 +81,18 @@ object ReCAPTCHAProps {
     theme: Theme = null,
     `type`: Type = null
   ): ReCAPTCHAProps = {
-    val __obj = js.Dynamic.literal(sitekey = sitekey)
-    if (badge != null) __obj.updateDynamic("badge")(badge)
-    if (grecaptcha != null) __obj.updateDynamic("grecaptcha")(grecaptcha)
-    if (hl != null) __obj.updateDynamic("hl")(hl)
+    val __obj = js.Dynamic.literal(sitekey = sitekey.asInstanceOf[js.Any])
+    if (badge != null) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
+    if (grecaptcha != null) __obj.updateDynamic("grecaptcha")(grecaptcha.asInstanceOf[js.Any])
+    if (hl != null) __obj.updateDynamic("hl")(hl.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onErrored != null) __obj.updateDynamic("onErrored")(js.Any.fromFunction0(onErrored))
     if (onExpired != null) __obj.updateDynamic("onExpired")(js.Any.fromFunction0(onExpired))
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (stoken != null) __obj.updateDynamic("stoken")(stoken)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (stoken != null) __obj.updateDynamic("stoken")(stoken.asInstanceOf[js.Any])
     if (tabindex != null) __obj.updateDynamic("tabindex")(tabindex.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReCAPTCHAProps]
   }
 }

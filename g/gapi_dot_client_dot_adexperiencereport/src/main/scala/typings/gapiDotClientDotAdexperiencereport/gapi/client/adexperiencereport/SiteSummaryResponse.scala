@@ -21,9 +21,9 @@ object SiteSummaryResponse {
     reviewedSite: String = null
   ): SiteSummaryResponse = {
     val __obj = js.Dynamic.literal()
-    if (desktopSummary != null) __obj.updateDynamic("desktopSummary")(desktopSummary)
-    if (mobileSummary != null) __obj.updateDynamic("mobileSummary")(mobileSummary)
-    if (reviewedSite != null) __obj.updateDynamic("reviewedSite")(reviewedSite)
+    if (desktopSummary != null) __obj.updateDynamic("desktopSummary")(desktopSummary.asInstanceOf[js.Any])
+    if (mobileSummary != null) __obj.updateDynamic("mobileSummary")(mobileSummary.asInstanceOf[js.Any])
+    if (reviewedSite != null) __obj.updateDynamic("reviewedSite")(reviewedSite.asInstanceOf[js.Any])
     __obj.asInstanceOf[SiteSummaryResponse]
   }
 }

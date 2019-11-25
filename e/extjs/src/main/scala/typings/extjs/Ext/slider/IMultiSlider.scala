@@ -85,25 +85,17 @@ object IMultiSlider {
     IBase: typings.extjs.Ext.form.field.IBase = null,
     addThumb: /* value */ js.UndefOr[Double] => _ = null,
     animate: js.UndefOr[Boolean] = js.undefined,
-    beforeDestroy: () => Unit = null,
     clickToChange: js.UndefOr[Boolean] = js.undefined,
-    componentLayout: js.Any = null,
     constrainThumbs: js.UndefOr[Boolean] = js.undefined,
     decimalPrecision: js.Any = null,
     dragging: js.UndefOr[Boolean] = js.undefined,
-    getSubTplData: () => _ = null,
-    getSubmitValue: () => _ = null,
     getValue: /* index */ js.UndefOr[Double] => _ = null,
     getValues: () => _ = null,
     increment: Int | Double = null,
-    initComponent: () => Unit = null,
     initValue: () => Unit = null,
     keyIncrement: Int | Double = null,
     maxValue: Int | Double = null,
     minValue: Int | Double = null,
-    onDisable: () => Unit = null,
-    onEnable: () => Unit = null,
-    onRender: () => Unit = null,
     reset: () => Unit = null,
     setMaxValue: /* val */ js.UndefOr[Double] => Unit = null,
     setMinValue: /* val */ js.UndefOr[Double] => Unit = null,
@@ -118,40 +110,32 @@ object IMultiSlider {
     zeroBasedSnapping: js.UndefOr[Boolean] = js.undefined
   ): IMultiSlider = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IBase)
+    if (IBase != null) js.Dynamic.global.Object.assign(__obj, IBase)
     if (addThumb != null) __obj.updateDynamic("addThumb")(js.Any.fromFunction1(addThumb))
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
-    if (beforeDestroy != null) __obj.updateDynamic("beforeDestroy")(js.Any.fromFunction0(beforeDestroy))
-    if (!js.isUndefined(clickToChange)) __obj.updateDynamic("clickToChange")(clickToChange)
-    if (componentLayout != null) __obj.updateDynamic("componentLayout")(componentLayout)
-    if (!js.isUndefined(constrainThumbs)) __obj.updateDynamic("constrainThumbs")(constrainThumbs)
-    if (decimalPrecision != null) __obj.updateDynamic("decimalPrecision")(decimalPrecision)
-    if (!js.isUndefined(dragging)) __obj.updateDynamic("dragging")(dragging)
-    if (getSubTplData != null) __obj.updateDynamic("getSubTplData")(js.Any.fromFunction0(getSubTplData))
-    if (getSubmitValue != null) __obj.updateDynamic("getSubmitValue")(js.Any.fromFunction0(getSubmitValue))
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
+    if (!js.isUndefined(clickToChange)) __obj.updateDynamic("clickToChange")(clickToChange.asInstanceOf[js.Any])
+    if (!js.isUndefined(constrainThumbs)) __obj.updateDynamic("constrainThumbs")(constrainThumbs.asInstanceOf[js.Any])
+    if (decimalPrecision != null) __obj.updateDynamic("decimalPrecision")(decimalPrecision.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragging)) __obj.updateDynamic("dragging")(dragging.asInstanceOf[js.Any])
     if (getValue != null) __obj.updateDynamic("getValue")(js.Any.fromFunction1(getValue))
     if (getValues != null) __obj.updateDynamic("getValues")(js.Any.fromFunction0(getValues))
     if (increment != null) __obj.updateDynamic("increment")(increment.asInstanceOf[js.Any])
-    if (initComponent != null) __obj.updateDynamic("initComponent")(js.Any.fromFunction0(initComponent))
     if (initValue != null) __obj.updateDynamic("initValue")(js.Any.fromFunction0(initValue))
     if (keyIncrement != null) __obj.updateDynamic("keyIncrement")(keyIncrement.asInstanceOf[js.Any])
     if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
     if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
-    if (onDisable != null) __obj.updateDynamic("onDisable")(js.Any.fromFunction0(onDisable))
-    if (onEnable != null) __obj.updateDynamic("onEnable")(js.Any.fromFunction0(onEnable))
-    if (onRender != null) __obj.updateDynamic("onRender")(js.Any.fromFunction0(onRender))
     if (reset != null) __obj.updateDynamic("reset")(js.Any.fromFunction0(reset))
     if (setMaxValue != null) __obj.updateDynamic("setMaxValue")(js.Any.fromFunction1(setMaxValue))
     if (setMinValue != null) __obj.updateDynamic("setMinValue")(js.Any.fromFunction1(setMinValue))
     if (setReadOnly != null) __obj.updateDynamic("setReadOnly")(js.Any.fromFunction1(setReadOnly))
     if (syncThumbs != null) __obj.updateDynamic("syncThumbs")(js.Any.fromFunction0(syncThumbs))
-    if (thumbs != null) __obj.updateDynamic("thumbs")(thumbs)
-    if (tipText != null) __obj.updateDynamic("tipText")(tipText)
-    if (useTips != null) __obj.updateDynamic("useTips")(useTips)
+    if (thumbs != null) __obj.updateDynamic("thumbs")(thumbs.asInstanceOf[js.Any])
+    if (tipText != null) __obj.updateDynamic("tipText")(tipText.asInstanceOf[js.Any])
+    if (useTips != null) __obj.updateDynamic("useTips")(useTips.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values)
-    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical)
-    if (!js.isUndefined(zeroBasedSnapping)) __obj.updateDynamic("zeroBasedSnapping")(zeroBasedSnapping)
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
+    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
+    if (!js.isUndefined(zeroBasedSnapping)) __obj.updateDynamic("zeroBasedSnapping")(zeroBasedSnapping.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMultiSlider]
   }
 }

@@ -12,7 +12,7 @@ trait FSTreeOptions extends js.Object {
 object FSTreeOptions {
   @scala.inline
   def apply(entries: js.Array[Entry], sortAndExpand: Boolean): FSTreeOptions = {
-    val __obj = js.Dynamic.literal(entries = entries, sortAndExpand = sortAndExpand)
+    val __obj = js.Dynamic.literal(entries = entries.asInstanceOf[js.Any], sortAndExpand = sortAndExpand.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FSTreeOptions]
   }

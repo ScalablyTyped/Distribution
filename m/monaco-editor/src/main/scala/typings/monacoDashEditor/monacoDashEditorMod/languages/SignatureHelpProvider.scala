@@ -24,8 +24,8 @@ object SignatureHelpProvider {
     signatureHelpTriggerCharacters: js.Array[String] = null
   ): SignatureHelpProvider = {
     val __obj = js.Dynamic.literal(provideSignatureHelp = js.Any.fromFunction4(provideSignatureHelp))
-    if (signatureHelpRetriggerCharacters != null) __obj.updateDynamic("signatureHelpRetriggerCharacters")(signatureHelpRetriggerCharacters)
-    if (signatureHelpTriggerCharacters != null) __obj.updateDynamic("signatureHelpTriggerCharacters")(signatureHelpTriggerCharacters)
+    if (signatureHelpRetriggerCharacters != null) __obj.updateDynamic("signatureHelpRetriggerCharacters")(signatureHelpRetriggerCharacters.asInstanceOf[js.Any])
+    if (signatureHelpTriggerCharacters != null) __obj.updateDynamic("signatureHelpTriggerCharacters")(signatureHelpTriggerCharacters.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignatureHelpProvider]
   }
 }

@@ -54,15 +54,15 @@ trait DataFactory extends js.Object {
     * @see Quad
     */
   def quad[Q /* <: BaseQuad */](
-    subject: /* import warning: ImportType.apply Failed type conversion: Q['subject'] */ js.Any,
-    predicate: /* import warning: ImportType.apply Failed type conversion: Q['predicate'] */ js.Any,
-    `object`: /* import warning: ImportType.apply Failed type conversion: Q['object'] */ js.Any
+    subject: /* import warning: importer.ImportType#apply Failed type conversion: Q['subject'] */ js.Any,
+    predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q['predicate'] */ js.Any,
+    `object`: /* import warning: importer.ImportType#apply Failed type conversion: Q['object'] */ js.Any
   ): Q = js.native
   def quad[Q /* <: BaseQuad */](
-    subject: /* import warning: ImportType.apply Failed type conversion: Q['subject'] */ js.Any,
-    predicate: /* import warning: ImportType.apply Failed type conversion: Q['predicate'] */ js.Any,
-    `object`: /* import warning: ImportType.apply Failed type conversion: Q['object'] */ js.Any,
-    graph: /* import warning: ImportType.apply Failed type conversion: Q['graph'] */ js.Any
+    subject: /* import warning: importer.ImportType#apply Failed type conversion: Q['subject'] */ js.Any,
+    predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q['predicate'] */ js.Any,
+    `object`: /* import warning: importer.ImportType#apply Failed type conversion: Q['object'] */ js.Any,
+    graph: /* import warning: importer.ImportType#apply Failed type conversion: Q['graph'] */ js.Any
   ): Q = js.native
   /**
     * @param subject   The triple subject term.
@@ -74,9 +74,9 @@ trait DataFactory extends js.Object {
     * @see DefaultGraph
     */
   def triple[Q /* <: BaseQuad */](
-    subject: /* import warning: ImportType.apply Failed type conversion: Q['subject'] */ js.Any,
-    predicate: /* import warning: ImportType.apply Failed type conversion: Q['predicate'] */ js.Any,
-    `object`: /* import warning: ImportType.apply Failed type conversion: Q['object'] */ js.Any
+    subject: /* import warning: importer.ImportType#apply Failed type conversion: Q['subject'] */ js.Any,
+    predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q['predicate'] */ js.Any,
+    `object`: /* import warning: importer.ImportType#apply Failed type conversion: Q['object'] */ js.Any
   ): Q = js.native
 }
 

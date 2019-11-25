@@ -24,7 +24,7 @@ object AggregatedResultsAnalysis {
     resultsDifference: AggregatedResultsDifference,
     totalTests: Double
   ): AggregatedResultsAnalysis = {
-    val __obj = js.Dynamic.literal(duration = duration, notReportedResultsByOutcome = notReportedResultsByOutcome, previousContext = previousContext, resultsByOutcome = resultsByOutcome, resultsDifference = resultsDifference, totalTests = totalTests)
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], notReportedResultsByOutcome = notReportedResultsByOutcome.asInstanceOf[js.Any], previousContext = previousContext.asInstanceOf[js.Any], resultsByOutcome = resultsByOutcome.asInstanceOf[js.Any], resultsDifference = resultsDifference.asInstanceOf[js.Any], totalTests = totalTests.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AggregatedResultsAnalysis]
   }

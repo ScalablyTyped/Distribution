@@ -40,19 +40,19 @@ object Options {
     transitionDuration: js.Any = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth)
-    if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle)
-    if (!js.isUndefined(fitWidth)) __obj.updateDynamic("fitWidth")(fitWidth)
-    if (gutter != null) __obj.updateDynamic("gutter")(gutter)
-    if (!js.isUndefined(horizontalOrder)) __obj.updateDynamic("horizontalOrder")(horizontalOrder)
-    if (!js.isUndefined(initLayout)) __obj.updateDynamic("initLayout")(initLayout)
-    if (itemSelector != null) __obj.updateDynamic("itemSelector")(itemSelector)
-    if (!js.isUndefined(originLeft)) __obj.updateDynamic("originLeft")(originLeft)
-    if (!js.isUndefined(originTop)) __obj.updateDynamic("originTop")(originTop)
-    if (!js.isUndefined(percentPosition)) __obj.updateDynamic("percentPosition")(percentPosition)
-    if (!js.isUndefined(resize)) __obj.updateDynamic("resize")(resize)
-    if (stamp != null) __obj.updateDynamic("stamp")(stamp)
-    if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration)
+    if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
+    if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(fitWidth)) __obj.updateDynamic("fitWidth")(fitWidth.asInstanceOf[js.Any])
+    if (gutter != null) __obj.updateDynamic("gutter")(gutter.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontalOrder)) __obj.updateDynamic("horizontalOrder")(horizontalOrder.asInstanceOf[js.Any])
+    if (!js.isUndefined(initLayout)) __obj.updateDynamic("initLayout")(initLayout.asInstanceOf[js.Any])
+    if (itemSelector != null) __obj.updateDynamic("itemSelector")(itemSelector.asInstanceOf[js.Any])
+    if (!js.isUndefined(originLeft)) __obj.updateDynamic("originLeft")(originLeft.asInstanceOf[js.Any])
+    if (!js.isUndefined(originTop)) __obj.updateDynamic("originTop")(originTop.asInstanceOf[js.Any])
+    if (!js.isUndefined(percentPosition)) __obj.updateDynamic("percentPosition")(percentPosition.asInstanceOf[js.Any])
+    if (!js.isUndefined(resize)) __obj.updateDynamic("resize")(resize.asInstanceOf[js.Any])
+    if (stamp != null) __obj.updateDynamic("stamp")(stamp.asInstanceOf[js.Any])
+    if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

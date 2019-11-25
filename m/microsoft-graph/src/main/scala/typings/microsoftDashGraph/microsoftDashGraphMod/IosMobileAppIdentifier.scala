@@ -13,7 +13,7 @@ object IosMobileAppIdentifier {
   @scala.inline
   def apply(bundleId: String = null): IosMobileAppIdentifier = {
     val __obj = js.Dynamic.literal()
-    if (bundleId != null) __obj.updateDynamic("bundleId")(bundleId)
+    if (bundleId != null) __obj.updateDynamic("bundleId")(bundleId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IosMobileAppIdentifier]
   }
 }

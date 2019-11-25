@@ -12,8 +12,8 @@ trait LaunchOptions extends js.Object {
 object LaunchOptions {
   @scala.inline
   def apply(browser: String, version: String = null): LaunchOptions = {
-    val __obj = js.Dynamic.literal(browser = browser)
-    if (version != null) __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(browser = browser.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchOptions]
   }
 }

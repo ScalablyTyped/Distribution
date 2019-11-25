@@ -11,7 +11,7 @@ trait ListSchema extends js.Object {
 object ListSchema {
   @scala.inline
   def apply(Field: js.Array[FieldSchema]): ListSchema = {
-    val __obj = js.Dynamic.literal(Field = Field)
+    val __obj = js.Dynamic.literal(Field = Field.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ListSchema]
   }

@@ -28,14 +28,9 @@ trait LQuery[T] extends js.Object {
 
 object LQuery {
   @scala.inline
-  def apply[T](
-    clone: () => LQuery[T],
-    queryList: QueryList[T],
-    setDirty: () => Unit,
-    matches: js.Array[T | Null] = null
-  ): LQuery[T] = {
-    val __obj = js.Dynamic.literal(clone = js.Any.fromFunction0(clone), queryList = queryList, setDirty = js.Any.fromFunction0(setDirty))
-    if (matches != null) __obj.updateDynamic("matches")(matches)
+  def apply[T](queryList: QueryList[T], setDirty: () => Unit, matches: js.Array[T | Null] = null): LQuery[T] = {
+    val __obj = js.Dynamic.literal(queryList = queryList.asInstanceOf[js.Any], setDirty = js.Any.fromFunction0(setDirty))
+    if (matches != null) __obj.updateDynamic("matches")(matches.asInstanceOf[js.Any])
     __obj.asInstanceOf[LQuery[T]]
   }
 }

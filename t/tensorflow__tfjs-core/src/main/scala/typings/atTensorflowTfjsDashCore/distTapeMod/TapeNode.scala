@@ -26,9 +26,9 @@ object TapeNode {
     gradient: /* dys */ js.Array[Tensor[Rank]] => NamedGradientMap = null,
     saved: js.Array[Tensor[Rank]] = null
   ): TapeNode = {
-    val __obj = js.Dynamic.literal(id = id, inputs = inputs, name = name, outputs = outputs)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any])
     if (gradient != null) __obj.updateDynamic("gradient")(js.Any.fromFunction1(gradient))
-    if (saved != null) __obj.updateDynamic("saved")(saved)
+    if (saved != null) __obj.updateDynamic("saved")(saved.asInstanceOf[js.Any])
     __obj.asInstanceOf[TapeNode]
   }
 }

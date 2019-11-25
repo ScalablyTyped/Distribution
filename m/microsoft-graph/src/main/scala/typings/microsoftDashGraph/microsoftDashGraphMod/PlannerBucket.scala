@@ -25,11 +25,11 @@ object PlannerBucket {
     tasks: js.Array[PlannerTask] = null
   ): PlannerBucket = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (orderHint != null) __obj.updateDynamic("orderHint")(orderHint)
-    if (planId != null) __obj.updateDynamic("planId")(planId)
-    if (tasks != null) __obj.updateDynamic("tasks")(tasks)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (orderHint != null) __obj.updateDynamic("orderHint")(orderHint.asInstanceOf[js.Any])
+    if (planId != null) __obj.updateDynamic("planId")(planId.asInstanceOf[js.Any])
+    if (tasks != null) __obj.updateDynamic("tasks")(tasks.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlannerBucket]
   }
 }

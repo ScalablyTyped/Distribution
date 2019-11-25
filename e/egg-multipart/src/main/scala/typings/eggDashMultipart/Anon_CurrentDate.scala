@@ -25,9 +25,9 @@ object Anon_CurrentDate {
     val __obj = js.Dynamic.literal()
     if (currentDate != null) __obj.updateDynamic("currentDate")(currentDate.asInstanceOf[js.Any])
     if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(iterator)) __obj.updateDynamic("iterator")(iterator)
-    if (tz != null) __obj.updateDynamic("tz")(tz)
-    if (!js.isUndefined(utc)) __obj.updateDynamic("utc")(utc)
+    if (!js.isUndefined(iterator)) __obj.updateDynamic("iterator")(iterator.asInstanceOf[js.Any])
+    if (tz != null) __obj.updateDynamic("tz")(tz.asInstanceOf[js.Any])
+    if (!js.isUndefined(utc)) __obj.updateDynamic("utc")(utc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CurrentDate]
   }
 }

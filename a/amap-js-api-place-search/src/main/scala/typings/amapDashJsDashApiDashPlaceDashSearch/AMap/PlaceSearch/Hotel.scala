@@ -71,7 +71,7 @@ object Hotel {
     star: String,
     traffic: String
   ): Hotel = {
-    val __obj = js.Dynamic.literal(addition = addition, deep_src = deep_src, environment_rating = environment_rating, faci_rating = faci_rating, health_rating = health_rating, intro = intro, lowest_price = lowest_price, photos = photos, rating = rating, service_rating = service_rating, star = star, traffic = traffic)
+    val __obj = js.Dynamic.literal(addition = addition.asInstanceOf[js.Any], deep_src = deep_src.asInstanceOf[js.Any], environment_rating = environment_rating.asInstanceOf[js.Any], faci_rating = faci_rating.asInstanceOf[js.Any], health_rating = health_rating.asInstanceOf[js.Any], intro = intro.asInstanceOf[js.Any], lowest_price = lowest_price.asInstanceOf[js.Any], photos = photos.asInstanceOf[js.Any], rating = rating.asInstanceOf[js.Any], service_rating = service_rating.asInstanceOf[js.Any], star = star.asInstanceOf[js.Any], traffic = traffic.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Hotel]
   }

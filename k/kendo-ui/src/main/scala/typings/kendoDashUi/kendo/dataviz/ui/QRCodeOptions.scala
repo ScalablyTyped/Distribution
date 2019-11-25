@@ -32,14 +32,14 @@ object QRCodeOptions {
     value: Double | String = null
   ): QRCodeOptions = {
     val __obj = js.Dynamic.literal()
-    if (background != null) __obj.updateDynamic("background")(background)
-    if (border != null) __obj.updateDynamic("border")(border)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
-    if (errorCorrection != null) __obj.updateDynamic("errorCorrection")(errorCorrection)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    if (errorCorrection != null) __obj.updateDynamic("errorCorrection")(errorCorrection.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (renderAs != null) __obj.updateDynamic("renderAs")(renderAs)
+    if (renderAs != null) __obj.updateDynamic("renderAs")(renderAs.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[QRCodeOptions]

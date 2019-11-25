@@ -33,10 +33,10 @@ object NavigatorYAxisPlotBandsEventsOptions {
     mouseover: EventCallbackFunction[PlotLineOrBand] = null
   ): NavigatorYAxisPlotBandsEventsOptions = {
     val __obj = js.Dynamic.literal()
-    if (click != null) __obj.updateDynamic("click")(click)
-    if (mousemove != null) __obj.updateDynamic("mousemove")(mousemove)
-    if (mouseout != null) __obj.updateDynamic("mouseout")(mouseout)
-    if (mouseover != null) __obj.updateDynamic("mouseover")(mouseover)
+    if (click != null) __obj.updateDynamic("click")(click.asInstanceOf[js.Any])
+    if (mousemove != null) __obj.updateDynamic("mousemove")(mousemove.asInstanceOf[js.Any])
+    if (mouseout != null) __obj.updateDynamic("mouseout")(mouseout.asInstanceOf[js.Any])
+    if (mouseover != null) __obj.updateDynamic("mouseover")(mouseover.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigatorYAxisPlotBandsEventsOptions]
   }
 }

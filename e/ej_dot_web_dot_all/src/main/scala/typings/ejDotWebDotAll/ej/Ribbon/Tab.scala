@@ -23,9 +23,9 @@ object Tab {
   @scala.inline
   def apply(groups: js.Array[TabsGroup] = null, id: String = null, text: String = null): Tab = {
     val __obj = js.Dynamic.literal()
-    if (groups != null) __obj.updateDynamic("groups")(groups)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tab]
   }
 }

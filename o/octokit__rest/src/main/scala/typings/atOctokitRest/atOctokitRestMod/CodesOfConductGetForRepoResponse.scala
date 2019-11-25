@@ -14,7 +14,7 @@ trait CodesOfConductGetForRepoResponse extends js.Object {
 object CodesOfConductGetForRepoResponse {
   @scala.inline
   def apply(body: String, key: String, name: String, url: String): CodesOfConductGetForRepoResponse = {
-    val __obj = js.Dynamic.literal(body = body, key = key, name = name, url = url)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CodesOfConductGetForRepoResponse]
   }

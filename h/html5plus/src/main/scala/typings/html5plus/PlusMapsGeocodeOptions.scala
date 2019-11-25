@@ -40,7 +40,7 @@ object PlusMapsGeocodeOptions {
   @scala.inline
   def apply(city: String = null, coordType: wgs84 | gcj02 | bd09 | bd09ll = null): PlusMapsGeocodeOptions = {
     val __obj = js.Dynamic.literal()
-    if (city != null) __obj.updateDynamic("city")(city)
+    if (city != null) __obj.updateDynamic("city")(city.asInstanceOf[js.Any])
     if (coordType != null) __obj.updateDynamic("coordType")(coordType.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusMapsGeocodeOptions]
   }

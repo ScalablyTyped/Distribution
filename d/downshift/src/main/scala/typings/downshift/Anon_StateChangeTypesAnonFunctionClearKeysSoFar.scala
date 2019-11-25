@@ -11,7 +11,7 @@ trait Anon_StateChangeTypesAnonFunctionClearKeysSoFar extends js.Object {
 object Anon_StateChangeTypesAnonFunctionClearKeysSoFar {
   @scala.inline
   def apply(stateChangeTypes: Anon_FunctionClearKeysSoFar): Anon_StateChangeTypesAnonFunctionClearKeysSoFar = {
-    val __obj = js.Dynamic.literal(stateChangeTypes = stateChangeTypes)
+    val __obj = js.Dynamic.literal(stateChangeTypes = stateChangeTypes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_StateChangeTypesAnonFunctionClearKeysSoFar]
   }

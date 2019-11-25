@@ -42,10 +42,10 @@ object Props {
     volume: Int | Double = null
   ): Props = {
     val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (!js.isUndefined(html5)) __obj.updateDynamic("html5")(html5)
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
-    if (!js.isUndefined(mute)) __obj.updateDynamic("mute")(mute)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (!js.isUndefined(html5)) __obj.updateDynamic("html5")(html5.asInstanceOf[js.Any])
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
+    if (!js.isUndefined(mute)) __obj.updateDynamic("mute")(mute.asInstanceOf[js.Any])
     if (onEnd != null) __obj.updateDynamic("onEnd")(js.Any.fromFunction0(onEnd))
     if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction0(onLoad))
     if (onLoadError != null) __obj.updateDynamic("onLoadError")(js.Any.fromFunction1(onLoadError))
@@ -53,8 +53,8 @@ object Props {
     if (onPlay != null) __obj.updateDynamic("onPlay")(js.Any.fromFunction1(onPlay))
     if (onStop != null) __obj.updateDynamic("onStop")(js.Any.fromFunction1(onStop))
     if (onVolume != null) __obj.updateDynamic("onVolume")(js.Any.fromFunction1(onVolume))
-    if (!js.isUndefined(playing)) __obj.updateDynamic("playing")(playing)
-    if (!js.isUndefined(preload)) __obj.updateDynamic("preload")(preload)
+    if (!js.isUndefined(playing)) __obj.updateDynamic("playing")(playing.asInstanceOf[js.Any])
+    if (!js.isUndefined(preload)) __obj.updateDynamic("preload")(preload.asInstanceOf[js.Any])
     if (volume != null) __obj.updateDynamic("volume")(volume.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }

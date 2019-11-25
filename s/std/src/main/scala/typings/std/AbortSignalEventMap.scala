@@ -11,7 +11,7 @@ trait AbortSignalEventMap extends js.Object {
 object AbortSignalEventMap {
   @scala.inline
   def apply(abort: Event): AbortSignalEventMap = {
-    val __obj = js.Dynamic.literal(abort = abort)
+    val __obj = js.Dynamic.literal(abort = abort.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AbortSignalEventMap]
   }

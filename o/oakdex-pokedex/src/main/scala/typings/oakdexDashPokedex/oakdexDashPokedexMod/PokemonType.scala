@@ -14,7 +14,7 @@ trait PokemonType extends js.Object {
 object PokemonType {
   @scala.inline
   def apply(color: String, effectivness: Anon_Bug, names: Translations): PokemonType = {
-    val __obj = js.Dynamic.literal(color = color, effectivness = effectivness, names = names)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], effectivness = effectivness.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PokemonType]
   }

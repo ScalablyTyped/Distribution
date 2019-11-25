@@ -19,8 +19,8 @@ object LoggedInOptions {
   @scala.inline
   def apply(redirectTo: String = null, setRedirectTo: js.UndefOr[Boolean] = js.undefined): LoggedInOptions = {
     val __obj = js.Dynamic.literal()
-    if (redirectTo != null) __obj.updateDynamic("redirectTo")(redirectTo)
-    if (!js.isUndefined(setRedirectTo)) __obj.updateDynamic("setRedirectTo")(setRedirectTo)
+    if (redirectTo != null) __obj.updateDynamic("redirectTo")(redirectTo.asInstanceOf[js.Any])
+    if (!js.isUndefined(setRedirectTo)) __obj.updateDynamic("setRedirectTo")(setRedirectTo.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoggedInOptions]
   }
 }

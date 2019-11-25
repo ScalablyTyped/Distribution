@@ -20,10 +20,10 @@ object DirectThreadBroadcastVideoOptions {
     transcodeDelay: Int | Double = null,
     uploadId: String = null
   ): DirectThreadBroadcastVideoOptions = {
-    val __obj = js.Dynamic.literal(video = video)
-    if (!js.isUndefined(sampled)) __obj.updateDynamic("sampled")(sampled)
+    val __obj = js.Dynamic.literal(video = video.asInstanceOf[js.Any])
+    if (!js.isUndefined(sampled)) __obj.updateDynamic("sampled")(sampled.asInstanceOf[js.Any])
     if (transcodeDelay != null) __obj.updateDynamic("transcodeDelay")(transcodeDelay.asInstanceOf[js.Any])
-    if (uploadId != null) __obj.updateDynamic("uploadId")(uploadId)
+    if (uploadId != null) __obj.updateDynamic("uploadId")(uploadId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectThreadBroadcastVideoOptions]
   }
 }

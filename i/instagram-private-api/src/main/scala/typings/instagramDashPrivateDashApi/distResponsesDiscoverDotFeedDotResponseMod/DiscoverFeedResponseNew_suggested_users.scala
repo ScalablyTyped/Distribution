@@ -11,7 +11,7 @@ trait DiscoverFeedResponseNew_suggested_users extends js.Object {
 object DiscoverFeedResponseNew_suggested_users {
   @scala.inline
   def apply(suggestions: js.Array[_]): DiscoverFeedResponseNew_suggested_users = {
-    val __obj = js.Dynamic.literal(suggestions = suggestions)
+    val __obj = js.Dynamic.literal(suggestions = suggestions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DiscoverFeedResponseNew_suggested_users]
   }

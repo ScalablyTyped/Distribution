@@ -12,7 +12,7 @@ trait SharedConfigFiles extends js.Object {
 object SharedConfigFiles {
   @scala.inline
   def apply(configFile: ParsedIniData, credentialsFile: ParsedIniData): SharedConfigFiles = {
-    val __obj = js.Dynamic.literal(configFile = configFile, credentialsFile = credentialsFile)
+    val __obj = js.Dynamic.literal(configFile = configFile.asInstanceOf[js.Any], credentialsFile = credentialsFile.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SharedConfigFiles]
   }

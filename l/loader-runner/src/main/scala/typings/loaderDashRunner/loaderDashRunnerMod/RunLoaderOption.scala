@@ -24,7 +24,7 @@ object RunLoaderOption {
     readResource: (String, js.Function2[/* err */ ErrnoException | Null, /* data */ Buffer | Null, Unit]) => Unit,
     resource: String
   ): RunLoaderOption = {
-    val __obj = js.Dynamic.literal(context = context, loaders = loaders, readResource = js.Any.fromFunction2(readResource), resource = resource)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], loaders = loaders.asInstanceOf[js.Any], readResource = js.Any.fromFunction2(readResource), resource = resource.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RunLoaderOption]
   }

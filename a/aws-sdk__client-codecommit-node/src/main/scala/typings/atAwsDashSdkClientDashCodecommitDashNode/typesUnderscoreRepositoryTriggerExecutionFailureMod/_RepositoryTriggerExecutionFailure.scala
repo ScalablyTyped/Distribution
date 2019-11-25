@@ -19,8 +19,8 @@ object _RepositoryTriggerExecutionFailure {
   @scala.inline
   def apply(failureMessage: String = null, trigger: String = null): _RepositoryTriggerExecutionFailure = {
     val __obj = js.Dynamic.literal()
-    if (failureMessage != null) __obj.updateDynamic("failureMessage")(failureMessage)
-    if (trigger != null) __obj.updateDynamic("trigger")(trigger)
+    if (failureMessage != null) __obj.updateDynamic("failureMessage")(failureMessage.asInstanceOf[js.Any])
+    if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
     __obj.asInstanceOf[_RepositoryTriggerExecutionFailure]
   }
 }

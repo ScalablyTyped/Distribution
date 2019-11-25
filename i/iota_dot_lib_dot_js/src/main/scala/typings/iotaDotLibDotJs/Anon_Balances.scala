@@ -14,7 +14,7 @@ trait Anon_Balances extends js.Object {
 object Anon_Balances {
   @scala.inline
   def apply(balances: js.Array[Double], duration: Double, milestone: String, milestoneIndex: Double): Anon_Balances = {
-    val __obj = js.Dynamic.literal(balances = balances, duration = duration, milestone = milestone, milestoneIndex = milestoneIndex)
+    val __obj = js.Dynamic.literal(balances = balances.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], milestone = milestone.asInstanceOf[js.Any], milestoneIndex = milestoneIndex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Balances]
   }

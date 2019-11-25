@@ -13,3 +13,18 @@ import scala.scalajs.js.annotation._
 */
 trait Metadata extends js.Object
 
+object Metadata {
+  @scala.inline
+  def all: typings.imageminDashWebp.imageminDashWebpStrings.all = this.cast("all")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def exif: typings.imageminDashWebp.imageminDashWebpStrings.exif = this.cast("exif")
+  @scala.inline
+  def icc: typings.imageminDashWebp.imageminDashWebpStrings.icc = this.cast("icc")
+  @scala.inline
+  def none: typings.imageminDashWebp.imageminDashWebpStrings.none = this.cast("none")
+  @scala.inline
+  def xmp: typings.imageminDashWebp.imageminDashWebpStrings.xmp = this.cast("xmp")
+}
+

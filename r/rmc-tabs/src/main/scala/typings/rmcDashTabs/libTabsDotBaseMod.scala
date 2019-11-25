@@ -43,7 +43,7 @@ object libTabsDotBaseMod extends js.Object {
     def getOffsetIndex_distanceToChangeTab(
       current: Double,
       width: Double,
-      threshold: /* import warning: ImportType.apply Failed type conversion: P['distanceToChangeTab'] */ js.Any
+      threshold: /* import warning: importer.ImportType#apply Failed type conversion: P['distanceToChangeTab'] */ js.Any
     ): Double = js.native
     def getSubElement(
       tab: TabData,

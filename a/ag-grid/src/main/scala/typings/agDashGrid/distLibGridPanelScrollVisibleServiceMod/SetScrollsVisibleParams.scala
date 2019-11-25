@@ -17,7 +17,7 @@ object SetScrollsVisibleParams {
     leftVerticalScrollShowing: Boolean,
     rightVerticalScrollShowing: Boolean
   ): SetScrollsVisibleParams = {
-    val __obj = js.Dynamic.literal(bodyHorizontalScrollShowing = bodyHorizontalScrollShowing, leftVerticalScrollShowing = leftVerticalScrollShowing, rightVerticalScrollShowing = rightVerticalScrollShowing)
+    val __obj = js.Dynamic.literal(bodyHorizontalScrollShowing = bodyHorizontalScrollShowing.asInstanceOf[js.Any], leftVerticalScrollShowing = leftVerticalScrollShowing.asInstanceOf[js.Any], rightVerticalScrollShowing = rightVerticalScrollShowing.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SetScrollsVisibleParams]
   }

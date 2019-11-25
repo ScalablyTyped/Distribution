@@ -31,10 +31,10 @@ object Anon_ {
     loc: SourceLocationKind = null,
     prefix: js.UndefOr[Boolean] = js.undefined
   ): Anon_ = {
-    val __obj = js.Dynamic.literal(argument = argument, operator = operator.asInstanceOf[js.Any])
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (!js.isUndefined(prefix)) __obj.updateDynamic("prefix")(prefix)
+    val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (!js.isUndefined(prefix)) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_]
   }
 }

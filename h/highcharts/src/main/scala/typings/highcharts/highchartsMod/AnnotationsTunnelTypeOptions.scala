@@ -49,9 +49,9 @@ object AnnotationsTunnelTypeOptions {
     val __obj = js.Dynamic.literal()
     if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (heightControlPoint != null) __obj.updateDynamic("heightControlPoint")(heightControlPoint)
-    if (line != null) __obj.updateDynamic("line")(line)
-    if (points != null) __obj.updateDynamic("points")(points)
+    if (heightControlPoint != null) __obj.updateDynamic("heightControlPoint")(heightControlPoint.asInstanceOf[js.Any])
+    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
+    if (points != null) __obj.updateDynamic("points")(points.asInstanceOf[js.Any])
     if (xAxis != null) __obj.updateDynamic("xAxis")(xAxis.asInstanceOf[js.Any])
     if (yAxis != null) __obj.updateDynamic("yAxis")(yAxis.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotationsTunnelTypeOptions]

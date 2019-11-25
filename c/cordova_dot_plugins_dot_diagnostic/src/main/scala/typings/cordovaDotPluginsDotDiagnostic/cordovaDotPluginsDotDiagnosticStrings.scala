@@ -129,7 +129,7 @@ object cordovaDotPluginsDotDiagnosticStrings {
   sealed trait battery_saving extends js.Object
   
   @js.native
-  sealed trait denied_always extends js.Object
+  sealed trait denied_always_ extends js.Object
   
   @js.native
   sealed trait device_only extends js.Object
@@ -147,7 +147,7 @@ object cordovaDotPluginsDotDiagnosticStrings {
   sealed trait not_determined extends js.Object
   
   @js.native
-  sealed trait not_requested extends js.Object
+  sealed trait not_requested_ extends js.Object
   
   @js.native
   sealed trait powered_off extends js.Object
@@ -265,7 +265,7 @@ object cordovaDotPluginsDotDiagnosticStrings {
   @scala.inline
   def battery_saving: battery_saving = "battery_saving".asInstanceOf[battery_saving]
   @scala.inline
-  def denied_always: denied_always = "denied_always".asInstanceOf[denied_always]
+  def denied_always_ : denied_always_ = "denied_always".asInstanceOf[denied_always_]
   @scala.inline
   def device_only: device_only = "device_only".asInstanceOf[device_only]
   @scala.inline
@@ -277,7 +277,7 @@ object cordovaDotPluginsDotDiagnosticStrings {
   @scala.inline
   def not_determined: not_determined = "not_determined".asInstanceOf[not_determined]
   @scala.inline
-  def not_requested: not_requested = "not_requested".asInstanceOf[not_requested]
+  def not_requested_ : not_requested_ = "not_requested".asInstanceOf[not_requested_]
   @scala.inline
   def powered_off: powered_off = "powered_off".asInstanceOf[powered_off]
   @scala.inline

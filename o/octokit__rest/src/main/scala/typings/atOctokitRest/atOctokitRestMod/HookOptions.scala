@@ -28,8 +28,8 @@ object HookOptions {
     url: String,
     StringDictionary: /* index */ StringDictionary[js.Any] = null
   ): HookOptions = {
-    val __obj = js.Dynamic.literal(baseUrl = baseUrl, data = data, headers = headers, method = method, request = request, url = url)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(baseUrl = baseUrl.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[HookOptions]
   }
 }

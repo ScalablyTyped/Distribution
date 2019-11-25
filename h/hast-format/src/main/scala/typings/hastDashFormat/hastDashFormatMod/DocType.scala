@@ -35,12 +35,12 @@ object DocType {
     public: String = null,
     system: String = null
   ): DocType = {
-    val __obj = js.Dynamic.literal(name = name)
-    __obj.updateDynamic("type")(`type`)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (public != null) __obj.updateDynamic("public")(public)
-    if (system != null) __obj.updateDynamic("system")(system)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (public != null) __obj.updateDynamic("public")(public.asInstanceOf[js.Any])
+    if (system != null) __obj.updateDynamic("system")(system.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocType]
   }
 }

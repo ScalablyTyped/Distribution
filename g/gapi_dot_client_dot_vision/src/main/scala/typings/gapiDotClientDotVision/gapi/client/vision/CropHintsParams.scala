@@ -20,7 +20,7 @@ object CropHintsParams {
   @scala.inline
   def apply(aspectRatios: js.Array[Double] = null): CropHintsParams = {
     val __obj = js.Dynamic.literal()
-    if (aspectRatios != null) __obj.updateDynamic("aspectRatios")(aspectRatios)
+    if (aspectRatios != null) __obj.updateDynamic("aspectRatios")(aspectRatios.asInstanceOf[js.Any])
     __obj.asInstanceOf[CropHintsParams]
   }
 }

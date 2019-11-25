@@ -13,8 +13,8 @@ object LanguageAriaLegacy {
   @scala.inline
   def apply(sSortAscending: String = null, sSortDescending: String = null): LanguageAriaLegacy = {
     val __obj = js.Dynamic.literal()
-    if (sSortAscending != null) __obj.updateDynamic("sSortAscending")(sSortAscending)
-    if (sSortDescending != null) __obj.updateDynamic("sSortDescending")(sSortDescending)
+    if (sSortAscending != null) __obj.updateDynamic("sSortAscending")(sSortAscending.asInstanceOf[js.Any])
+    if (sSortDescending != null) __obj.updateDynamic("sSortDescending")(sSortDescending.asInstanceOf[js.Any])
     __obj.asInstanceOf[LanguageAriaLegacy]
   }
 }

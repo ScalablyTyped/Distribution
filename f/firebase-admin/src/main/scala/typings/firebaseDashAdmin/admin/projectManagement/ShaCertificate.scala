@@ -1,7 +1,7 @@
 package typings.firebaseDashAdmin.admin.projectManagement
 
-import typings.firebaseDashAdmin.firebaseDashAdminStrings.sha1
-import typings.firebaseDashAdmin.firebaseDashAdminStrings.sha256
+import typings.firebaseDashAdmin.firebaseDashAdminStrings.sha1_
+import typings.firebaseDashAdmin.firebaseDashAdminStrings.sha256_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,7 @@ trait ShaCertificate extends js.Object {
     * var certType = shaCertificate.certType;
     * ```
     */
-  var certType: sha1 | sha256
+  var certType: sha1_ | sha256_
   /**
     * The fully-qualified resource name that identifies this sha-key.
     *
@@ -46,9 +46,9 @@ trait ShaCertificate extends js.Object {
 
 object ShaCertificate {
   @scala.inline
-  def apply(certType: sha1 | sha256, shaHash: String, resourceName: String = null): ShaCertificate = {
-    val __obj = js.Dynamic.literal(certType = certType.asInstanceOf[js.Any], shaHash = shaHash)
-    if (resourceName != null) __obj.updateDynamic("resourceName")(resourceName)
+  def apply(certType: sha1_ | sha256_, shaHash: String, resourceName: String = null): ShaCertificate = {
+    val __obj = js.Dynamic.literal(certType = certType.asInstanceOf[js.Any], shaHash = shaHash.asInstanceOf[js.Any])
+    if (resourceName != null) __obj.updateDynamic("resourceName")(resourceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShaCertificate]
   }
 }

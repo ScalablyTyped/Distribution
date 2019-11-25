@@ -12,7 +12,7 @@ trait ISyntaxList extends ISyntaxElement {
 object ISyntaxList {
   @scala.inline
   def apply(
-    childAt: Double => ISyntaxNodeOrToken,
+    childAt: Double => ISyntaxElement,
     childCount: () => Double,
     collectTextElements: js.Array[String] => Unit,
     firstToken: () => ISyntaxToken,

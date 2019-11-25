@@ -16,7 +16,7 @@ object Calculation {
   @scala.inline
   def apply(field: String = null, value: Int | Double = null): Calculation = {
     val __obj = js.Dynamic.literal()
-    if (field != null) __obj.updateDynamic("field")(field)
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Calculation]
   }

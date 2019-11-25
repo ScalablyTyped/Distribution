@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__client-dynamodb-node"
-version := "0.1.0-preview.2-492a7a"
+version := "0.1.0-preview.2-03a9b1"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "aws-sdk__middleware-stack" % "0.1.0-preview.2-bdc40e",
-  "org.scalablytyped" %%% "aws-sdk__types" % "0.1.0-preview.1-977f5a",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191123Z-304e79",
-  "org.scalablytyped" %%% "std" % "3.7-1c17cf")
+  "org.scalablytyped" %%% "aws-sdk__middleware-stack" % "0.1.0-preview.2-d4093a",
+  "org.scalablytyped" %%% "aws-sdk__types" % "0.1.0-preview.1-ff785b",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191123Z-382692",
+  "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

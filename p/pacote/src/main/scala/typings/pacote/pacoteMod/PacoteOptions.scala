@@ -81,16 +81,16 @@ object PacoteOptions {
   ): PacoteOptions = {
     val __obj = js.Dynamic.literal()
     if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
-    if (defaultTag != null) __obj.updateDynamic("defaultTag")(defaultTag)
+    if (defaultTag != null) __obj.updateDynamic("defaultTag")(defaultTag.asInstanceOf[js.Any])
     if (dirPacker != null) __obj.updateDynamic("dirPacker")(js.Any.fromFunction1(dirPacker))
     if (`enjoy-by` != null) __obj.updateDynamic("enjoy-by")(`enjoy-by`.asInstanceOf[js.Any])
     if (enjoyBy != null) __obj.updateDynamic("enjoyBy")(enjoyBy.asInstanceOf[js.Any])
-    if (!js.isUndefined(`full-metadata`)) __obj.updateDynamic("full-metadata")(`full-metadata`)
-    if (!js.isUndefined(`include-deprecated`)) __obj.updateDynamic("include-deprecated")(`include-deprecated`)
-    if (!js.isUndefined(includeDeprecated)) __obj.updateDynamic("includeDeprecated")(includeDeprecated)
-    if (resolved != null) __obj.updateDynamic("resolved")(resolved)
-    if (tag != null) __obj.updateDynamic("tag")(tag)
-    if (where != null) __obj.updateDynamic("where")(where)
+    if (!js.isUndefined(`full-metadata`)) __obj.updateDynamic("full-metadata")(`full-metadata`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`include-deprecated`)) __obj.updateDynamic("include-deprecated")(`include-deprecated`.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeDeprecated)) __obj.updateDynamic("includeDeprecated")(includeDeprecated.asInstanceOf[js.Any])
+    if (resolved != null) __obj.updateDynamic("resolved")(resolved.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
+    if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])
     __obj.asInstanceOf[PacoteOptions]
   }
 }

@@ -14,7 +14,7 @@ trait State extends js.Object {
 object State {
   @scala.inline
   def apply(layout: Layout, tabWidths: StringDictionary[Double]): State = {
-    val __obj = js.Dynamic.literal(layout = layout, tabWidths = tabWidths)
+    val __obj = js.Dynamic.literal(layout = layout.asInstanceOf[js.Any], tabWidths = tabWidths.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[State]
   }

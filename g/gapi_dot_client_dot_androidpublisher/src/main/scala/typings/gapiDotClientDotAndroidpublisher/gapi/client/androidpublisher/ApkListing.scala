@@ -15,8 +15,8 @@ object ApkListing {
   @scala.inline
   def apply(language: String = null, recentChanges: String = null): ApkListing = {
     val __obj = js.Dynamic.literal()
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (recentChanges != null) __obj.updateDynamic("recentChanges")(recentChanges)
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (recentChanges != null) __obj.updateDynamic("recentChanges")(recentChanges.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApkListing]
   }
 }

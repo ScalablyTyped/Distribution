@@ -23,9 +23,9 @@ object ResponsiveModeChangedEventUIParam {
   @scala.inline
   def apply(mode: String = null, owner: js.Any = null, previousMode: String = null): ResponsiveModeChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (mode != null) __obj.updateDynamic("mode")(mode)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (previousMode != null) __obj.updateDynamic("previousMode")(previousMode)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (previousMode != null) __obj.updateDynamic("previousMode")(previousMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponsiveModeChangedEventUIParam]
   }
 }

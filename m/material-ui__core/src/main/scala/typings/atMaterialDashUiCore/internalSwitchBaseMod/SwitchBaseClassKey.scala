@@ -1,8 +1,5 @@
 package typings.atMaterialDashUiCore.internalSwitchBaseMod
 
-import typings.atMaterialDashUiCore.checkboxCheckboxMod.CheckboxClassKey
-import typings.atMaterialDashUiCore.radioRadioMod.RadioClassKey
-import typings.atMaterialDashUiCore.switchSwitchMod.SwitchClassKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,8 +10,18 @@ import scala.scalajs.js.annotation._
   - typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.disabled
   - typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.input
 */
-trait SwitchBaseClassKey
-  extends CheckboxClassKey
-     with RadioClassKey
-     with SwitchClassKey
+trait SwitchBaseClassKey extends js.Object
+
+object SwitchBaseClassKey {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def checked: typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.checked = this.cast("checked")
+  @scala.inline
+  def disabled: typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.disabled = this.cast("disabled")
+  @scala.inline
+  def input: typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.input = this.cast("input")
+  @scala.inline
+  def root: typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.root = this.cast("root")
+}
 

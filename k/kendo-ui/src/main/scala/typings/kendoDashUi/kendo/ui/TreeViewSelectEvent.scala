@@ -17,8 +17,8 @@ object TreeViewSelectEvent {
     sender: TreeView,
     node: Element = null
   ): TreeViewSelectEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (node != null) __obj.updateDynamic("node")(node)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeViewSelectEvent]
   }
 }

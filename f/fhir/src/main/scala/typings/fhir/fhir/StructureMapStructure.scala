@@ -60,19 +60,19 @@ object StructureMapStructure {
     id: String = null,
     modifierExtension: js.Array[Extension] = null
   ): StructureMapStructure = {
-    val __obj = js.Dynamic.literal(mode = mode, url = url)
-    if (_alias != null) __obj.updateDynamic("_alias")(_alias)
-    if (_documentation != null) __obj.updateDynamic("_documentation")(_documentation)
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
-    if (_id != null) __obj.updateDynamic("_id")(_id)
-    if (_mode != null) __obj.updateDynamic("_mode")(_mode)
-    if (_url != null) __obj.updateDynamic("_url")(_url)
-    if (alias != null) __obj.updateDynamic("alias")(alias)
-    if (documentation != null) __obj.updateDynamic("documentation")(documentation)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (_alias != null) __obj.updateDynamic("_alias")(_alias.asInstanceOf[js.Any])
+    if (_documentation != null) __obj.updateDynamic("_documentation")(_documentation.asInstanceOf[js.Any])
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
+    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
+    if (_mode != null) __obj.updateDynamic("_mode")(_mode.asInstanceOf[js.Any])
+    if (_url != null) __obj.updateDynamic("_url")(_url.asInstanceOf[js.Any])
+    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
+    if (documentation != null) __obj.updateDynamic("documentation")(documentation.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
     __obj.asInstanceOf[StructureMapStructure]
   }
 }

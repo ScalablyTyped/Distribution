@@ -20,10 +20,10 @@ object CreateParagraphBulletsRequest {
     textRange: Range = null
   ): CreateParagraphBulletsRequest = {
     val __obj = js.Dynamic.literal()
-    if (bulletPreset != null) __obj.updateDynamic("bulletPreset")(bulletPreset)
-    if (cellLocation != null) __obj.updateDynamic("cellLocation")(cellLocation)
-    if (objectId != null) __obj.updateDynamic("objectId")(objectId)
-    if (textRange != null) __obj.updateDynamic("textRange")(textRange)
+    if (bulletPreset != null) __obj.updateDynamic("bulletPreset")(bulletPreset.asInstanceOf[js.Any])
+    if (cellLocation != null) __obj.updateDynamic("cellLocation")(cellLocation.asInstanceOf[js.Any])
+    if (objectId != null) __obj.updateDynamic("objectId")(objectId.asInstanceOf[js.Any])
+    if (textRange != null) __obj.updateDynamic("textRange")(textRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateParagraphBulletsRequest]
   }
 }

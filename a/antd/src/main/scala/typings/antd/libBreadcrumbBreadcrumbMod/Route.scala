@@ -14,8 +14,8 @@ trait Route extends js.Object {
 object Route {
   @scala.inline
   def apply(breadcrumbName: String, path: String, children: js.Array[OmitRoutechildren] = null): Route = {
-    val __obj = js.Dynamic.literal(breadcrumbName = breadcrumbName, path = path)
-    if (children != null) __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(breadcrumbName = breadcrumbName.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[Route]
   }
 }

@@ -12,7 +12,7 @@ trait ComponentHost extends js.Object {
 object ComponentHost {
   @scala.inline
   def apply(application: Application): ComponentHost = {
-    val __obj = js.Dynamic.literal(application = application)
+    val __obj = js.Dynamic.literal(application = application.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ComponentHost]
   }

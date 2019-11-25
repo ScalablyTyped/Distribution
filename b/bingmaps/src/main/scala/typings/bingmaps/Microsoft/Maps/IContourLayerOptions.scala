@@ -28,8 +28,8 @@ object IContourLayerOptions {
   ): IContourLayerOptions = {
     val __obj = js.Dynamic.literal()
     if (colorCallback != null) __obj.updateDynamic("colorCallback")(js.Any.fromFunction1(colorCallback))
-    if (polygonOptions != null) __obj.updateDynamic("polygonOptions")(polygonOptions)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (polygonOptions != null) __obj.updateDynamic("polygonOptions")(polygonOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[IContourLayerOptions]
   }

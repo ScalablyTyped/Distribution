@@ -26,7 +26,7 @@ object RowInfo {
     level: Int | Double = null
   ): RowInfo = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
     if (hpt != null) __obj.updateDynamic("hpt")(hpt.asInstanceOf[js.Any])
     if (hpx != null) __obj.updateDynamic("hpx")(hpx.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])

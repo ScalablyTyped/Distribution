@@ -13,8 +13,8 @@ object ExecuteConfig {
   @scala.inline
   def apply(portal: String = null, rows: String = null): ExecuteConfig = {
     val __obj = js.Dynamic.literal()
-    if (portal != null) __obj.updateDynamic("portal")(portal)
-    if (rows != null) __obj.updateDynamic("rows")(rows)
+    if (portal != null) __obj.updateDynamic("portal")(portal.asInstanceOf[js.Any])
+    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecuteConfig]
   }
 }

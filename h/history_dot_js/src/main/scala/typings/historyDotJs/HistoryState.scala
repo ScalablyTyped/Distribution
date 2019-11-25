@@ -21,11 +21,11 @@ object HistoryState {
     hashedUrl: String = null,
     title: String = null
   ): HistoryState = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (cleanUrl != null) __obj.updateDynamic("cleanUrl")(cleanUrl)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (hashedUrl != null) __obj.updateDynamic("hashedUrl")(hashedUrl)
-    if (title != null) __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (cleanUrl != null) __obj.updateDynamic("cleanUrl")(cleanUrl.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (hashedUrl != null) __obj.updateDynamic("hashedUrl")(hashedUrl.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistoryState]
   }
 }

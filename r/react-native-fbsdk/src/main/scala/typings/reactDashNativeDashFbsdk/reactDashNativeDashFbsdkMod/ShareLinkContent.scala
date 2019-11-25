@@ -56,12 +56,12 @@ object ShareLinkContent {
     imageUrl: String = null,
     quote: String = null
   ): ShareLinkContent = {
-    val __obj = js.Dynamic.literal(contentType = contentType, contentUrl = contentUrl)
-    if (commonParameters != null) __obj.updateDynamic("commonParameters")(commonParameters)
-    if (contentDescription != null) __obj.updateDynamic("contentDescription")(contentDescription)
-    if (contentTitle != null) __obj.updateDynamic("contentTitle")(contentTitle)
-    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
-    if (quote != null) __obj.updateDynamic("quote")(quote)
+    val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], contentUrl = contentUrl.asInstanceOf[js.Any])
+    if (commonParameters != null) __obj.updateDynamic("commonParameters")(commonParameters.asInstanceOf[js.Any])
+    if (contentDescription != null) __obj.updateDynamic("contentDescription")(contentDescription.asInstanceOf[js.Any])
+    if (contentTitle != null) __obj.updateDynamic("contentTitle")(contentTitle.asInstanceOf[js.Any])
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
+    if (quote != null) __obj.updateDynamic("quote")(quote.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShareLinkContent]
   }
 }

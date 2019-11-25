@@ -30,7 +30,7 @@ object SchemaFunction {
     returnType: String,
     signature: js.Array[String]
   ): SchemaFunction = {
-    val __obj = js.Dynamic.literal(argumentNames = argumentNames, argumentTypes = argumentTypes, body = body, calledOnNullInput = calledOnNullInput, keyspaceName = keyspaceName, language = language, name = name, returnType = returnType, signature = signature)
+    val __obj = js.Dynamic.literal(argumentNames = argumentNames.asInstanceOf[js.Any], argumentTypes = argumentTypes.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], calledOnNullInput = calledOnNullInput.asInstanceOf[js.Any], keyspaceName = keyspaceName.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SchemaFunction]
   }

@@ -19,8 +19,8 @@ object OpenCardData {
   @scala.inline
   def apply(cardId: String = null, code: String = null): OpenCardData = {
     val __obj = js.Dynamic.literal()
-    if (cardId != null) __obj.updateDynamic("cardId")(cardId)
-    if (code != null) __obj.updateDynamic("code")(code)
+    if (cardId != null) __obj.updateDynamic("cardId")(cardId.asInstanceOf[js.Any])
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenCardData]
   }
 }

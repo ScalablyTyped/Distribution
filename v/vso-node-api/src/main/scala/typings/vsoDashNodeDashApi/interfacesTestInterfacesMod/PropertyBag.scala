@@ -15,7 +15,7 @@ trait PropertyBag extends js.Object {
 object PropertyBag {
   @scala.inline
   def apply(bag: StringDictionary[String]): PropertyBag = {
-    val __obj = js.Dynamic.literal(bag = bag)
+    val __obj = js.Dynamic.literal(bag = bag.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PropertyBag]
   }

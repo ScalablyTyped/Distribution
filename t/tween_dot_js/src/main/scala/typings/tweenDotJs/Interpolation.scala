@@ -19,7 +19,7 @@ object Interpolation {
     Linear: (js.Array[Double], Double) => Double,
     Utils: Anon_Bernstein
   ): Interpolation = {
-    val __obj = js.Dynamic.literal(Bezier = js.Any.fromFunction2(Bezier), CatmullRom = js.Any.fromFunction2(CatmullRom), Linear = js.Any.fromFunction2(Linear), Utils = Utils)
+    val __obj = js.Dynamic.literal(Bezier = js.Any.fromFunction2(Bezier), CatmullRom = js.Any.fromFunction2(CatmullRom), Linear = js.Any.fromFunction2(Linear), Utils = Utils.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Interpolation]
   }

@@ -23,10 +23,10 @@ object ToRelativeCalendarOptions {
     unit: ToRelativeUnit = null
   ): ToRelativeCalendarOptions = {
     val __obj = js.Dynamic.literal()
-    if (base != null) __obj.updateDynamic("base")(base)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (numberingSystem != null) __obj.updateDynamic("numberingSystem")(numberingSystem)
-    if (unit != null) __obj.updateDynamic("unit")(unit)
+    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
+    if (numberingSystem != null) __obj.updateDynamic("numberingSystem")(numberingSystem.asInstanceOf[js.Any])
+    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToRelativeCalendarOptions]
   }
 }

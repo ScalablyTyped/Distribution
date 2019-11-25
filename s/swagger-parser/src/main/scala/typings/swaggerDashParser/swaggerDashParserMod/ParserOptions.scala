@@ -36,7 +36,7 @@ object ParserOptions {
     order: Int | Double = null
   ): ParserOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowEmpty)) __obj.updateDynamic("allowEmpty")(allowEmpty)
+    if (!js.isUndefined(allowEmpty)) __obj.updateDynamic("allowEmpty")(allowEmpty.asInstanceOf[js.Any])
     if (canParse != null) __obj.updateDynamic("canParse")(canParse.asInstanceOf[js.Any])
     if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParserOptions]

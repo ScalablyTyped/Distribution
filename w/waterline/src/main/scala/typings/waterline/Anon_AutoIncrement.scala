@@ -14,8 +14,8 @@ object Anon_AutoIncrement {
   @scala.inline
   def apply(`type`: integer, autoIncrement: js.UndefOr[Boolean] = js.undefined): Anon_AutoIncrement = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(autoIncrement)) __obj.updateDynamic("autoIncrement")(autoIncrement)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoIncrement)) __obj.updateDynamic("autoIncrement")(autoIncrement.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AutoIncrement]
   }
 }

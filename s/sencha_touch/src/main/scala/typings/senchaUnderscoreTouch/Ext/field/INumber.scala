@@ -41,41 +41,27 @@ object INumber {
   @scala.inline
   def apply(
     IText: IText = null,
-    component: js.Any = null,
-    getComponent: () => _ = null,
     getMaxValue: () => Double = null,
     getMinValue: () => Double = null,
     getStepValue: () => Double = null,
-    getUi: () => java.lang.String = null,
-    getValue: () => _ = null,
     maxValue: Int | Double = null,
     minValue: Int | Double = null,
-    setComponent: /* component */ js.UndefOr[js.Any] => Unit = null,
     setMaxValue: /* maxValue */ js.UndefOr[Double] => Unit = null,
     setMinValue: /* minValue */ js.UndefOr[Double] => Unit = null,
     setStepValue: /* stepValue */ js.UndefOr[Double] => Unit = null,
-    setUi: /* ui */ js.UndefOr[java.lang.String] => Unit = null,
-    stepValue: Int | Double = null,
-    ui: java.lang.String = null
+    stepValue: Int | Double = null
   ): INumber = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IText)
-    if (component != null) __obj.updateDynamic("component")(component)
-    if (getComponent != null) __obj.updateDynamic("getComponent")(js.Any.fromFunction0(getComponent))
+    if (IText != null) js.Dynamic.global.Object.assign(__obj, IText)
     if (getMaxValue != null) __obj.updateDynamic("getMaxValue")(js.Any.fromFunction0(getMaxValue))
     if (getMinValue != null) __obj.updateDynamic("getMinValue")(js.Any.fromFunction0(getMinValue))
     if (getStepValue != null) __obj.updateDynamic("getStepValue")(js.Any.fromFunction0(getStepValue))
-    if (getUi != null) __obj.updateDynamic("getUi")(js.Any.fromFunction0(getUi))
-    if (getValue != null) __obj.updateDynamic("getValue")(js.Any.fromFunction0(getValue))
     if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
     if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
-    if (setComponent != null) __obj.updateDynamic("setComponent")(js.Any.fromFunction1(setComponent))
     if (setMaxValue != null) __obj.updateDynamic("setMaxValue")(js.Any.fromFunction1(setMaxValue))
     if (setMinValue != null) __obj.updateDynamic("setMinValue")(js.Any.fromFunction1(setMinValue))
     if (setStepValue != null) __obj.updateDynamic("setStepValue")(js.Any.fromFunction1(setStepValue))
-    if (setUi != null) __obj.updateDynamic("setUi")(js.Any.fromFunction1(setUi))
     if (stepValue != null) __obj.updateDynamic("stepValue")(stepValue.asInstanceOf[js.Any])
-    if (ui != null) __obj.updateDynamic("ui")(ui)
     __obj.asInstanceOf[INumber]
   }
 }

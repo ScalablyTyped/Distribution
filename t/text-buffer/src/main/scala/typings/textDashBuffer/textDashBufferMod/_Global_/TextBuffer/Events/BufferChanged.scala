@@ -19,7 +19,7 @@ trait BufferChanged extends js.Object {
 object BufferChanged {
   @scala.inline
   def apply(newRange: Range, newText: String, oldRange: Range, oldText: String): BufferChanged = {
-    val __obj = js.Dynamic.literal(newRange = newRange, newText = newText, oldRange = oldRange, oldText = oldText)
+    val __obj = js.Dynamic.literal(newRange = newRange.asInstanceOf[js.Any], newText = newText.asInstanceOf[js.Any], oldRange = oldRange.asInstanceOf[js.Any], oldText = oldText.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BufferChanged]
   }

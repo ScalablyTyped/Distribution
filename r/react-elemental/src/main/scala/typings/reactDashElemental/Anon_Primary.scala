@@ -13,8 +13,8 @@ object Anon_Primary {
   @scala.inline
   def apply(primary: Anon_Bold = null, secondary: Anon_Bold = null): Anon_Primary = {
     val __obj = js.Dynamic.literal()
-    if (primary != null) __obj.updateDynamic("primary")(primary)
-    if (secondary != null) __obj.updateDynamic("secondary")(secondary)
+    if (primary != null) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
+    if (secondary != null) __obj.updateDynamic("secondary")(secondary.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Primary]
   }
 }

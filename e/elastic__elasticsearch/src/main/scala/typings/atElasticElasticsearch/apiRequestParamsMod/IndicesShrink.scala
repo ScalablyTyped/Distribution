@@ -32,19 +32,19 @@ object IndicesShrink {
     timeout: String = null,
     wait_for_active_shards: String = null
   ): IndicesShrink[T] = {
-    val __obj = js.Dynamic.literal(index = index, target = target)
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (!js.isUndefined(copy_settings)) __obj.updateDynamic("copy_settings")(copy_settings)
-    if (!js.isUndefined(error_trace)) __obj.updateDynamic("error_trace")(error_trace)
+    if (!js.isUndefined(copy_settings)) __obj.updateDynamic("copy_settings")(copy_settings.asInstanceOf[js.Any])
+    if (!js.isUndefined(error_trace)) __obj.updateDynamic("error_trace")(error_trace.asInstanceOf[js.Any])
     if (filter_path != null) __obj.updateDynamic("filter_path")(filter_path.asInstanceOf[js.Any])
-    if (!js.isUndefined(human)) __obj.updateDynamic("human")(human)
+    if (!js.isUndefined(human)) __obj.updateDynamic("human")(human.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (master_timeout != null) __obj.updateDynamic("master_timeout")(master_timeout)
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout)
-    if (wait_for_active_shards != null) __obj.updateDynamic("wait_for_active_shards")(wait_for_active_shards)
+    if (master_timeout != null) __obj.updateDynamic("master_timeout")(master_timeout.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (wait_for_active_shards != null) __obj.updateDynamic("wait_for_active_shards")(wait_for_active_shards.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndicesShrink[T]]
   }
 }

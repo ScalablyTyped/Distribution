@@ -36,17 +36,17 @@ object HydrateDiagnostic {
     lines: js.Array[Anon_ErrorCharStart] = null,
     relFilePath: String = null
   ): HydrateDiagnostic = {
-    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], messageText = messageText)
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], messageText = messageText.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (absFilePath != null) __obj.updateDynamic("absFilePath")(absFilePath)
-    if (code != null) __obj.updateDynamic("code")(code)
+    if (absFilePath != null) __obj.updateDynamic("absFilePath")(absFilePath.asInstanceOf[js.Any])
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
     if (columnNumber != null) __obj.updateDynamic("columnNumber")(columnNumber.asInstanceOf[js.Any])
-    if (debugText != null) __obj.updateDynamic("debugText")(debugText)
-    if (header != null) __obj.updateDynamic("header")(header)
-    if (language != null) __obj.updateDynamic("language")(language)
+    if (debugText != null) __obj.updateDynamic("debugText")(debugText.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (lineNumber != null) __obj.updateDynamic("lineNumber")(lineNumber.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines)
-    if (relFilePath != null) __obj.updateDynamic("relFilePath")(relFilePath)
+    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
+    if (relFilePath != null) __obj.updateDynamic("relFilePath")(relFilePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[HydrateDiagnostic]
   }
 }

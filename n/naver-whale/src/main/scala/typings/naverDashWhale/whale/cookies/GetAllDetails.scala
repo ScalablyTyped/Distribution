@@ -33,13 +33,13 @@ object GetAllDetails {
     url: String = null
   ): GetAllDetails = {
     val __obj = js.Dynamic.literal()
-    if (domain != null) __obj.updateDynamic("domain")(domain)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure)
-    if (!js.isUndefined(session)) __obj.updateDynamic("session")(session)
-    if (storeId != null) __obj.updateDynamic("storeId")(storeId)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
+    if (!js.isUndefined(session)) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
+    if (storeId != null) __obj.updateDynamic("storeId")(storeId.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAllDetails]
   }
 }

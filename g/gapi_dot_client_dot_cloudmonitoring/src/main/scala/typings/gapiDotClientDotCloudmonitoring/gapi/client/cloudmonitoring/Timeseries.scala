@@ -15,8 +15,8 @@ object Timeseries {
   @scala.inline
   def apply(points: js.Array[Point] = null, timeseriesDesc: TimeseriesDescriptor = null): Timeseries = {
     val __obj = js.Dynamic.literal()
-    if (points != null) __obj.updateDynamic("points")(points)
-    if (timeseriesDesc != null) __obj.updateDynamic("timeseriesDesc")(timeseriesDesc)
+    if (points != null) __obj.updateDynamic("points")(points.asInstanceOf[js.Any])
+    if (timeseriesDesc != null) __obj.updateDynamic("timeseriesDesc")(timeseriesDesc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Timeseries]
   }
 }

@@ -45,12 +45,12 @@ object Options {
     writeStreamAtomic: js.Any = null
   ): Options[T] = {
     val __obj = js.Dynamic.literal()
-    if (Promise != null) __obj.updateDynamic("Promise")(Promise)
-    if (fs != null) __obj.updateDynamic("fs")(fs)
-    if (getuid != null) __obj.updateDynamic("getuid")(getuid)
-    if (!js.isUndefined(isWindows)) __obj.updateDynamic("isWindows")(isWindows)
+    if (Promise != null) __obj.updateDynamic("Promise")(Promise.asInstanceOf[js.Any])
+    if (fs != null) __obj.updateDynamic("fs")(fs.asInstanceOf[js.Any])
+    if (getuid != null) __obj.updateDynamic("getuid")(getuid.asInstanceOf[js.Any])
+    if (!js.isUndefined(isWindows)) __obj.updateDynamic("isWindows")(isWindows.asInstanceOf[js.Any])
     if (maxConcurrency != null) __obj.updateDynamic("maxConcurrency")(maxConcurrency.asInstanceOf[js.Any])
-    if (writeStreamAtomic != null) __obj.updateDynamic("writeStreamAtomic")(writeStreamAtomic)
+    if (writeStreamAtomic != null) __obj.updateDynamic("writeStreamAtomic")(writeStreamAtomic.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options[T]]
   }
 }

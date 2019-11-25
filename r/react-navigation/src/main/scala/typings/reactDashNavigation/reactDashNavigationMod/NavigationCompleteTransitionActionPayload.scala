@@ -13,8 +13,8 @@ object NavigationCompleteTransitionActionPayload {
   @scala.inline
   def apply(key: String = null, toChildKey: String = null): NavigationCompleteTransitionActionPayload = {
     val __obj = js.Dynamic.literal()
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (toChildKey != null) __obj.updateDynamic("toChildKey")(toChildKey)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (toChildKey != null) __obj.updateDynamic("toChildKey")(toChildKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationCompleteTransitionActionPayload]
   }
 }

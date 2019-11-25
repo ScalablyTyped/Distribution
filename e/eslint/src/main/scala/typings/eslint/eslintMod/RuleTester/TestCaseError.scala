@@ -30,13 +30,13 @@ object TestCaseError {
   ): TestCaseError = {
     val __obj = js.Dynamic.literal()
     if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (endColumn != null) __obj.updateDynamic("endColumn")(endColumn.asInstanceOf[js.Any])
     if (endLine != null) __obj.updateDynamic("endLine")(endLine.asInstanceOf[js.Any])
     if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (messageId != null) __obj.updateDynamic("messageId")(messageId)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestCaseError]
   }
 }

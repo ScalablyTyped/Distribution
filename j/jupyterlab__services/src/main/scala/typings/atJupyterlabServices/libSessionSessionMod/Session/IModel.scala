@@ -31,8 +31,8 @@ object IModel {
     path: String,
     `type`: String
   ): IModel = {
-    val __obj = js.Dynamic.literal(id = id, kernel = kernel, name = name, path = path)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], kernel = kernel.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IModel]
   }
 }

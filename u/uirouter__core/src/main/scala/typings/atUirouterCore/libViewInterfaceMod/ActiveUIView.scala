@@ -33,7 +33,7 @@ object ActiveUIView {
     id: Double,
     name: String
   ): ActiveUIView = {
-    val __obj = js.Dynamic.literal($type = $type, config = config, configUpdated = js.Any.fromFunction1(configUpdated), creationContext = creationContext, fqn = fqn, id = id, name = name)
+    val __obj = js.Dynamic.literal($type = $type.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], configUpdated = js.Any.fromFunction1(configUpdated), creationContext = creationContext.asInstanceOf[js.Any], fqn = fqn.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ActiveUIView]
   }

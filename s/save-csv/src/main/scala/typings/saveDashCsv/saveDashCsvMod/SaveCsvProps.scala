@@ -26,13 +26,13 @@ object SaveCsvProps {
     quote: String = null,
     sep: String = null
   ): SaveCsvProps = {
-    val __obj = js.Dynamic.literal(filename = filename)
-    if (!js.isUndefined(bom)) __obj.updateDynamic("bom")(bom)
-    if (eol != null) __obj.updateDynamic("eol")(eol)
+    val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any])
+    if (!js.isUndefined(bom)) __obj.updateDynamic("bom")(bom.asInstanceOf[js.Any])
+    if (eol != null) __obj.updateDynamic("eol")(eol.asInstanceOf[js.Any])
     if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction1(formatter))
-    if (mime != null) __obj.updateDynamic("mime")(mime)
-    if (quote != null) __obj.updateDynamic("quote")(quote)
-    if (sep != null) __obj.updateDynamic("sep")(sep)
+    if (mime != null) __obj.updateDynamic("mime")(mime.asInstanceOf[js.Any])
+    if (quote != null) __obj.updateDynamic("quote")(quote.asInstanceOf[js.Any])
+    if (sep != null) __obj.updateDynamic("sep")(sep.asInstanceOf[js.Any])
     __obj.asInstanceOf[SaveCsvProps]
   }
 }

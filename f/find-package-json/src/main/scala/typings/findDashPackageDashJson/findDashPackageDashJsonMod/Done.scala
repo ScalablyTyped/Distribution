@@ -18,9 +18,9 @@ object Done {
     filename: js.UndefOr[scala.Nothing] = js.undefined,
     value: js.UndefOr[scala.Nothing] = js.undefined
   ): Done = {
-    val __obj = js.Dynamic.literal(done = done)
-    if (!js.isUndefined(filename)) __obj.updateDynamic("filename")(filename)
-    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any])
+    if (!js.isUndefined(filename)) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Done]
   }
 }

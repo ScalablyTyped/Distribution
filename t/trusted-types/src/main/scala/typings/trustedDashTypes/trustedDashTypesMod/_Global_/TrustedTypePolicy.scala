@@ -21,7 +21,7 @@ object TrustedTypePolicy {
     createURL: String => TrustedURL,
     name: String
   ): TrustedTypePolicy = {
-    val __obj = js.Dynamic.literal(createHTML = js.Any.fromFunction1(createHTML), createScript = js.Any.fromFunction1(createScript), createScriptURL = js.Any.fromFunction1(createScriptURL), createURL = js.Any.fromFunction1(createURL), name = name)
+    val __obj = js.Dynamic.literal(createHTML = js.Any.fromFunction1(createHTML), createScript = js.Any.fromFunction1(createScript), createScriptURL = js.Any.fromFunction1(createScriptURL), createURL = js.Any.fromFunction1(createURL), name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TrustedTypePolicy]
   }

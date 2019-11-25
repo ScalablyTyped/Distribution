@@ -15,7 +15,7 @@ object CreateConfigItemOptions {
   @scala.inline
   def apply(dirname: String = null, `type`: preset | plugin = null): CreateConfigItemOptions = {
     val __obj = js.Dynamic.literal()
-    if (dirname != null) __obj.updateDynamic("dirname")(dirname)
+    if (dirname != null) __obj.updateDynamic("dirname")(dirname.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateConfigItemOptions]
   }

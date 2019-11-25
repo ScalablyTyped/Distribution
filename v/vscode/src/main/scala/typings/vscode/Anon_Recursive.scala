@@ -11,7 +11,7 @@ trait Anon_Recursive extends js.Object {
 object Anon_Recursive {
   @scala.inline
   def apply(recursive: Boolean): Anon_Recursive = {
-    val __obj = js.Dynamic.literal(recursive = recursive)
+    val __obj = js.Dynamic.literal(recursive = recursive.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Recursive]
   }

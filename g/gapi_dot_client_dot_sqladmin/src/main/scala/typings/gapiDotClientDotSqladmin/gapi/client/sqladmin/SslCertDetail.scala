@@ -15,8 +15,8 @@ object SslCertDetail {
   @scala.inline
   def apply(certInfo: SslCert = null, certPrivateKey: String = null): SslCertDetail = {
     val __obj = js.Dynamic.literal()
-    if (certInfo != null) __obj.updateDynamic("certInfo")(certInfo)
-    if (certPrivateKey != null) __obj.updateDynamic("certPrivateKey")(certPrivateKey)
+    if (certInfo != null) __obj.updateDynamic("certInfo")(certInfo.asInstanceOf[js.Any])
+    if (certPrivateKey != null) __obj.updateDynamic("certPrivateKey")(certPrivateKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[SslCertDetail]
   }
 }

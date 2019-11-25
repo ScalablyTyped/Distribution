@@ -11,9 +11,3 @@ class StaveConnector protected ()
   def this(top_stave: typings.vexflow.Vex.Flow.Stave, bottom_stave: typings.vexflow.Vex.Flow.Stave) = this()
 }
 
-@JSImport("vexflow", "Flow.StaveConnector")
-@js.native
-object StaveConnector extends js.Object {
-  type `type` = typings.vexflow.Vex.Flow.StaveConnector.`type`
-}
-

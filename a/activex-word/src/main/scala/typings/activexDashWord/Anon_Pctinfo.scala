@@ -11,7 +11,7 @@ trait Anon_Pctinfo extends js.Object {
 object Anon_Pctinfo {
   @scala.inline
   def apply(pctinfo: Double): Anon_Pctinfo = {
-    val __obj = js.Dynamic.literal(pctinfo = pctinfo)
+    val __obj = js.Dynamic.literal(pctinfo = pctinfo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Pctinfo]
   }

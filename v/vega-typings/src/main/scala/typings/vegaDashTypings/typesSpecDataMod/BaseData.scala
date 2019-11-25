@@ -22,10 +22,10 @@ object BaseData {
     on: js.Array[OnTrigger] = null,
     transform: js.Array[Transforms] = null
   ): BaseData = {
-    val __obj = js.Dynamic.literal(name = name)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (on != null) __obj.updateDynamic("on")(on)
-    if (transform != null) __obj.updateDynamic("transform")(transform)
+    if (on != null) __obj.updateDynamic("on")(on.asInstanceOf[js.Any])
+    if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseData]
   }
 }

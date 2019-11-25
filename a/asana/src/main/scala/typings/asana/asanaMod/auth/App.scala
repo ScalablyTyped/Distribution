@@ -1,7 +1,6 @@
 package typings.asana.asanaMod.auth
 
 import org.scalablytyped.runtime.TopLevel
-import typings.bluebird.bluebirdMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,8 +21,8 @@ trait App extends js.Object {
     * @param options
     * @return
     */
-  def accessTokenFromCode(code: String): ^[Credentials] = js.native
-  def accessTokenFromCode(code: String, options: AsanaAuthorizeUrlOptions): ^[Credentials] = js.native
+  def accessTokenFromCode(code: String): typings.bluebird.bluebirdMod.^[Credentials] = js.native
+  def accessTokenFromCode(code: String, options: AsanaAuthorizeUrlOptions): typings.bluebird.bluebirdMod.^[Credentials] = js.native
   /**
     * @param {String} refreshToken A refresh token obtained via Oauth.
     * @param {Object} options Overrides to the app's defaults
@@ -35,7 +34,7 @@ trait App extends js.Object {
     * @param options
     * @return
     */
-  def accessTokenFromRefreshToken(refreshToken: String, options: AsanaAuthorizeUrlOptions): ^[Credentials] = js.native
+  def accessTokenFromRefreshToken(refreshToken: String, options: AsanaAuthorizeUrlOptions): typings.bluebird.bluebirdMod.^[Credentials] = js.native
   /**
     * @param {Object} options  Overrides to the app's defaults
     * @option {String} asanaBaseUrl

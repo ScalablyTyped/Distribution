@@ -19,9 +19,9 @@ object Anon_Body {
     public: js.UndefOr[Boolean] = js.undefined,
     scoped_body: js.Any = null
   ): Anon_Body = {
-    val __obj = js.Dynamic.literal(body = body, html_body = html_body)
-    if (!js.isUndefined(public)) __obj.updateDynamic("public")(public)
-    if (scoped_body != null) __obj.updateDynamic("scoped_body")(scoped_body)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], html_body = html_body.asInstanceOf[js.Any])
+    if (!js.isUndefined(public)) __obj.updateDynamic("public")(public.asInstanceOf[js.Any])
+    if (scoped_body != null) __obj.updateDynamic("scoped_body")(scoped_body.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Body]
   }
 }

@@ -26,11 +26,11 @@ object Response {
     stack: String = null,
     `type`: js.Any = null
   ): Response = {
-    val __obj = js.Dynamic.literal(message = message, status = status)
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Response]
   }
 }

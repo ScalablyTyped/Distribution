@@ -23,8 +23,8 @@ object LoggerTransactionConfig {
     variables: Variables,
     uploadables: UploadableMap = null
   ): LoggerTransactionConfig = {
-    val __obj = js.Dynamic.literal(cacheConfig = cacheConfig, request = request, variables = variables)
-    if (uploadables != null) __obj.updateDynamic("uploadables")(uploadables)
+    val __obj = js.Dynamic.literal(cacheConfig = cacheConfig.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
+    if (uploadables != null) __obj.updateDynamic("uploadables")(uploadables.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoggerTransactionConfig]
   }
 }

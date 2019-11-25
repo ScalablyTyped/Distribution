@@ -16,7 +16,7 @@ trait IStandardDataFormatsStatics extends js.Object {
 object IStandardDataFormatsStatics {
   @scala.inline
   def apply(bitmap: String, html: String, rtf: String, storageItems: String, text: String, uri: String): IStandardDataFormatsStatics = {
-    val __obj = js.Dynamic.literal(bitmap = bitmap, html = html, rtf = rtf, storageItems = storageItems, text = text, uri = uri)
+    val __obj = js.Dynamic.literal(bitmap = bitmap.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], rtf = rtf.asInstanceOf[js.Any], storageItems = storageItems.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IStandardDataFormatsStatics]
   }

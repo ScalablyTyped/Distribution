@@ -37,9 +37,9 @@ object FTInitUpload {
     size: Int | Double = null,
     status: Int | Double = null
   ): FTInitUpload = {
-    val __obj = js.Dynamic.literal(clientftfid = clientftfid)
-    if (ftkey != null) __obj.updateDynamic("ftkey")(ftkey)
-    if (msg != null) __obj.updateDynamic("msg")(msg)
+    val __obj = js.Dynamic.literal(clientftfid = clientftfid.asInstanceOf[js.Any])
+    if (ftkey != null) __obj.updateDynamic("ftkey")(ftkey.asInstanceOf[js.Any])
+    if (msg != null) __obj.updateDynamic("msg")(msg.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (proto != null) __obj.updateDynamic("proto")(proto.asInstanceOf[js.Any])
     if (seekpos != null) __obj.updateDynamic("seekpos")(seekpos.asInstanceOf[js.Any])

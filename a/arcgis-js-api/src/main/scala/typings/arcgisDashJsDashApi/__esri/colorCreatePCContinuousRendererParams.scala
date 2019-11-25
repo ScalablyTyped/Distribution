@@ -71,12 +71,12 @@ object colorCreatePCContinuousRendererParams {
     size: String = null,
     statistics: SummaryStatisticsResult = null
   ): colorCreatePCContinuousRendererParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, field = field, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
-    if (colorScheme != null) __obj.updateDynamic("colorScheme")(colorScheme)
+    if (colorScheme != null) __obj.updateDynamic("colorScheme")(colorScheme.asInstanceOf[js.Any])
     if (density != null) __obj.updateDynamic("density")(density.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (statistics != null) __obj.updateDynamic("statistics")(statistics)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (statistics != null) __obj.updateDynamic("statistics")(statistics.asInstanceOf[js.Any])
     __obj.asInstanceOf[colorCreatePCContinuousRendererParams]
   }
 }

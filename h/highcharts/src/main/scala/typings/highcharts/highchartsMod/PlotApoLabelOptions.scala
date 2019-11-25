@@ -66,14 +66,14 @@ object PlotApoLabelOptions {
     style: CSSObject = null
   ): PlotApoLabelOptions = {
     val __obj = js.Dynamic.literal()
-    if (boxesToAvoid != null) __obj.updateDynamic("boxesToAvoid")(boxesToAvoid)
-    if (!js.isUndefined(connectorAllowed)) __obj.updateDynamic("connectorAllowed")(connectorAllowed)
+    if (boxesToAvoid != null) __obj.updateDynamic("boxesToAvoid")(boxesToAvoid.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectorAllowed)) __obj.updateDynamic("connectorAllowed")(connectorAllowed.asInstanceOf[js.Any])
     if (connectorNeighbourDistance != null) __obj.updateDynamic("connectorNeighbourDistance")(connectorNeighbourDistance.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     if (maxFontSize != null) __obj.updateDynamic("maxFontSize")(maxFontSize.asInstanceOf[js.Any])
     if (minFontSize != null) __obj.updateDynamic("minFontSize")(minFontSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(onArea)) __obj.updateDynamic("onArea")(onArea)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (!js.isUndefined(onArea)) __obj.updateDynamic("onArea")(onArea.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotApoLabelOptions]
   }
 }

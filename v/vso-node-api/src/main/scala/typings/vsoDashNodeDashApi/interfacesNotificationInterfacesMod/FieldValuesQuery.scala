@@ -20,7 +20,7 @@ object FieldValuesQuery {
     resource: js.Any,
     scope: String
   ): FieldValuesQuery = {
-    val __obj = js.Dynamic.literal(currentValues = currentValues, inputValues = inputValues, resource = resource, scope = scope)
+    val __obj = js.Dynamic.literal(currentValues = currentValues.asInstanceOf[js.Any], inputValues = inputValues.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FieldValuesQuery]
   }

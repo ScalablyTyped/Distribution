@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait BadgeModifiers extends js.Object
 
+object BadgeModifiers {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def filled: typings.fundamentalDashReact.fundamentalDashReactStrings.filled = this.cast("filled")
+  @scala.inline
+  def pill: typings.fundamentalDashReact.fundamentalDashReactStrings.pill = this.cast("pill")
+}
+

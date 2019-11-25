@@ -12,7 +12,7 @@ trait Anon_ScaleString extends _EventListener {
 object Anon_ScaleString {
   @scala.inline
   def apply(scale: String): Anon_ScaleString = {
-    val __obj = js.Dynamic.literal(scale = scale)
+    val __obj = js.Dynamic.literal(scale = scale.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ScaleString]
   }

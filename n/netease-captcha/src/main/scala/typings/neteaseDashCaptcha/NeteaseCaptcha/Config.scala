@@ -53,7 +53,7 @@ object Config {
     protocol: http | https = null,
     width: Double | String = null
   ): Config = {
-    val __obj = js.Dynamic.literal(captchaId = captchaId, element = element.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(captchaId = captchaId.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any])
     if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (onReady != null) __obj.updateDynamic("onReady")(js.Any.fromFunction1(onReady))

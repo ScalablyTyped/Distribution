@@ -24,12 +24,12 @@ object DimensionValue {
     value: String = null
   ): DimensionValue = {
     val __obj = js.Dynamic.literal()
-    if (dimensionName != null) __obj.updateDynamic("dimensionName")(dimensionName)
-    if (etag != null) __obj.updateDynamic("etag")(etag)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (matchType != null) __obj.updateDynamic("matchType")(matchType)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (dimensionName != null) __obj.updateDynamic("dimensionName")(dimensionName.asInstanceOf[js.Any])
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (matchType != null) __obj.updateDynamic("matchType")(matchType.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[DimensionValue]
   }
 }

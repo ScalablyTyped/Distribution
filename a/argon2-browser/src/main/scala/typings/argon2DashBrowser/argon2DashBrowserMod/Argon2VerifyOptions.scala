@@ -14,8 +14,8 @@ trait Argon2VerifyOptions extends js.Object {
 object Argon2VerifyOptions {
   @scala.inline
   def apply(encoded: String | Uint8Array, pass: String, `type`: ArgonType = null): Argon2VerifyOptions = {
-    val __obj = js.Dynamic.literal(encoded = encoded.asInstanceOf[js.Any], pass = pass)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(encoded = encoded.asInstanceOf[js.Any], pass = pass.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Argon2VerifyOptions]
   }
 }

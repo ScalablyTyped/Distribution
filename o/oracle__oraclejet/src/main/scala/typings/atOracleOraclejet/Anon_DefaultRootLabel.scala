@@ -14,9 +14,9 @@ object Anon_DefaultRootLabel {
   @scala.inline
   def apply(defaultRootLabel: String = null, hierMenuBtnLabel: String = null, previousIcon: String = null): Anon_DefaultRootLabel = {
     val __obj = js.Dynamic.literal()
-    if (defaultRootLabel != null) __obj.updateDynamic("defaultRootLabel")(defaultRootLabel)
-    if (hierMenuBtnLabel != null) __obj.updateDynamic("hierMenuBtnLabel")(hierMenuBtnLabel)
-    if (previousIcon != null) __obj.updateDynamic("previousIcon")(previousIcon)
+    if (defaultRootLabel != null) __obj.updateDynamic("defaultRootLabel")(defaultRootLabel.asInstanceOf[js.Any])
+    if (hierMenuBtnLabel != null) __obj.updateDynamic("hierMenuBtnLabel")(hierMenuBtnLabel.asInstanceOf[js.Any])
+    if (previousIcon != null) __obj.updateDynamic("previousIcon")(previousIcon.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DefaultRootLabel]
   }
 }

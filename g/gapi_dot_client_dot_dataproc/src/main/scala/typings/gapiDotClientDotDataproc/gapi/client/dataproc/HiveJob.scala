@@ -37,12 +37,12 @@ object HiveJob {
     scriptVariables: Record[String, String] = null
   ): HiveJob = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(continueOnFailure)) __obj.updateDynamic("continueOnFailure")(continueOnFailure)
-    if (jarFileUris != null) __obj.updateDynamic("jarFileUris")(jarFileUris)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (queryFileUri != null) __obj.updateDynamic("queryFileUri")(queryFileUri)
-    if (queryList != null) __obj.updateDynamic("queryList")(queryList)
-    if (scriptVariables != null) __obj.updateDynamic("scriptVariables")(scriptVariables)
+    if (!js.isUndefined(continueOnFailure)) __obj.updateDynamic("continueOnFailure")(continueOnFailure.asInstanceOf[js.Any])
+    if (jarFileUris != null) __obj.updateDynamic("jarFileUris")(jarFileUris.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (queryFileUri != null) __obj.updateDynamic("queryFileUri")(queryFileUri.asInstanceOf[js.Any])
+    if (queryList != null) __obj.updateDynamic("queryList")(queryList.asInstanceOf[js.Any])
+    if (scriptVariables != null) __obj.updateDynamic("scriptVariables")(scriptVariables.asInstanceOf[js.Any])
     __obj.asInstanceOf[HiveJob]
   }
 }

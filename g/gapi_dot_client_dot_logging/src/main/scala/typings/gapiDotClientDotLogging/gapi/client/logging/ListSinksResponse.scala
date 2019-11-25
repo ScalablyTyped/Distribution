@@ -18,8 +18,8 @@ object ListSinksResponse {
   @scala.inline
   def apply(nextPageToken: String = null, sinks: js.Array[LogSink] = null): ListSinksResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (sinks != null) __obj.updateDynamic("sinks")(sinks)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (sinks != null) __obj.updateDynamic("sinks")(sinks.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListSinksResponse]
   }
 }

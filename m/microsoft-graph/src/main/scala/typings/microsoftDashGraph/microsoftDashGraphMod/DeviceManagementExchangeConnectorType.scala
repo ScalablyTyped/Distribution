@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait DeviceManagementExchangeConnectorType extends js.Object
 
+object DeviceManagementExchangeConnectorType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def dedicated: typings.microsoftDashGraph.microsoftDashGraphStrings.dedicated = this.cast("dedicated")
+  @scala.inline
+  def hosted: typings.microsoftDashGraph.microsoftDashGraphStrings.hosted = this.cast("hosted")
+  @scala.inline
+  def onPremises: typings.microsoftDashGraph.microsoftDashGraphStrings.onPremises = this.cast("onPremises")
+  @scala.inline
+  def serviceToService: typings.microsoftDashGraph.microsoftDashGraphStrings.serviceToService = this.cast("serviceToService")
+}
+

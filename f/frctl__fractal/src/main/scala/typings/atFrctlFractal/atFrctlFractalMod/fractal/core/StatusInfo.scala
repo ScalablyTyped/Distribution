@@ -13,9 +13,9 @@ trait StatusInfo extends js.Object {
 object StatusInfo {
   @scala.inline
   def apply(label: String, color: String = null, description: String = null): StatusInfo = {
-    val __obj = js.Dynamic.literal(label = label)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (description != null) __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatusInfo]
   }
 }

@@ -12,7 +12,7 @@ trait AdagradOptimizerConfig extends js.Object {
 object AdagradOptimizerConfig {
   @scala.inline
   def apply(learning_rate: Double, initial_accumulator_value: Int | Double = null): AdagradOptimizerConfig = {
-    val __obj = js.Dynamic.literal(learning_rate = learning_rate)
+    val __obj = js.Dynamic.literal(learning_rate = learning_rate.asInstanceOf[js.Any])
     if (initial_accumulator_value != null) __obj.updateDynamic("initial_accumulator_value")(initial_accumulator_value.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdagradOptimizerConfig]
   }

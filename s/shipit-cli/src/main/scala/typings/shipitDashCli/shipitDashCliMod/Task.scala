@@ -15,7 +15,7 @@ trait Task extends js.Object {
 object Task {
   @scala.inline
   def apply(blocking: Boolean, dep: js.Array[String], fn: () => Unit, name: String): Task = {
-    val __obj = js.Dynamic.literal(blocking = blocking, dep = dep, fn = js.Any.fromFunction0(fn), name = name)
+    val __obj = js.Dynamic.literal(blocking = blocking.asInstanceOf[js.Any], dep = dep.asInstanceOf[js.Any], fn = js.Any.fromFunction0(fn), name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Task]
   }

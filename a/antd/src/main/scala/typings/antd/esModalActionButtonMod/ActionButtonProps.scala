@@ -23,11 +23,11 @@ object ActionButtonProps {
     buttonProps: NativeButtonProps = null,
     `type`: ButtonType = null
   ): ActionButtonProps = {
-    val __obj = js.Dynamic.literal(closeModal = closeModal)
+    val __obj = js.Dynamic.literal(closeModal = closeModal.asInstanceOf[js.Any])
     if (actionFn != null) __obj.updateDynamic("actionFn")(js.Any.fromFunction1(actionFn))
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
-    if (buttonProps != null) __obj.updateDynamic("buttonProps")(buttonProps)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
+    if (buttonProps != null) __obj.updateDynamic("buttonProps")(buttonProps.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionButtonProps]
   }
 }

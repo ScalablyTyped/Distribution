@@ -13,8 +13,8 @@ object LinearGradientOptions {
   @scala.inline
   def apply(name: String = null, stops: js.Any = null): LinearGradientOptions = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (stops != null) __obj.updateDynamic("stops")(stops)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (stops != null) __obj.updateDynamic("stops")(stops.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinearGradientOptions]
   }
 }

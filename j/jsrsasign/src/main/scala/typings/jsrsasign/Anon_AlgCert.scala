@@ -12,7 +12,7 @@ trait Anon_AlgCert extends js.Object {
 object Anon_AlgCert {
   @scala.inline
   def apply(alg: String, cert: String): Anon_AlgCert = {
-    val __obj = js.Dynamic.literal(alg = alg, cert = cert)
+    val __obj = js.Dynamic.literal(alg = alg.asInstanceOf[js.Any], cert = cert.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AlgCert]
   }

@@ -14,8 +14,8 @@ object Options {
   @scala.inline
   def apply(headers: Headers = null, protocols: js.Array[String] = null, reconnnect: Int | Double = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (protocols != null) __obj.updateDynamic("protocols")(protocols)
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (protocols != null) __obj.updateDynamic("protocols")(protocols.asInstanceOf[js.Any])
     if (reconnnect != null) __obj.updateDynamic("reconnnect")(reconnnect.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

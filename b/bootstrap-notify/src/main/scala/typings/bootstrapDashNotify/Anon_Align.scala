@@ -13,8 +13,8 @@ object Anon_Align {
   @scala.inline
   def apply(align: String = null, from: String = null): Anon_Align = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align)
-    if (from != null) __obj.updateDynamic("from")(from)
+    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Align]
   }
 }

@@ -12,7 +12,7 @@ object Anon_ChildrenKeyName {
   @scala.inline
   def apply(childrenKeyName: String = null): Anon_ChildrenKeyName = {
     val __obj = js.Dynamic.literal()
-    if (childrenKeyName != null) __obj.updateDynamic("childrenKeyName")(childrenKeyName)
+    if (childrenKeyName != null) __obj.updateDynamic("childrenKeyName")(childrenKeyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ChildrenKeyName]
   }
 }

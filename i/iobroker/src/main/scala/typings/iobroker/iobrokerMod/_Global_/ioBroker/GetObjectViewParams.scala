@@ -15,7 +15,7 @@ trait GetObjectViewParams extends js.Object {
 object GetObjectViewParams {
   @scala.inline
   def apply(endkey: String, startkey: String): GetObjectViewParams = {
-    val __obj = js.Dynamic.literal(endkey = endkey, startkey = startkey)
+    val __obj = js.Dynamic.literal(endkey = endkey.asInstanceOf[js.Any], startkey = startkey.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetObjectViewParams]
   }

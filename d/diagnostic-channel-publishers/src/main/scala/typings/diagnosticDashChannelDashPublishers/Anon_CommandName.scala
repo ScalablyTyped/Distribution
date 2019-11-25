@@ -20,10 +20,10 @@ object Anon_CommandName {
     reply: js.Any = null
   ): Anon_CommandName = {
     val __obj = js.Dynamic.literal()
-    if (commandName != null) __obj.updateDynamic("commandName")(commandName)
+    if (commandName != null) __obj.updateDynamic("commandName")(commandName.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (failure != null) __obj.updateDynamic("failure")(failure)
-    if (reply != null) __obj.updateDynamic("reply")(reply)
+    if (failure != null) __obj.updateDynamic("failure")(failure.asInstanceOf[js.Any])
+    if (reply != null) __obj.updateDynamic("reply")(reply.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CommandName]
   }
 }

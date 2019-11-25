@@ -40,7 +40,7 @@ object LightingProperties {
   ): LightingProperties = {
     val __obj = js.Dynamic.literal()
     if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (!js.isUndefined(directShadowsEnabled)) __obj.updateDynamic("directShadowsEnabled")(directShadowsEnabled)
+    if (!js.isUndefined(directShadowsEnabled)) __obj.updateDynamic("directShadowsEnabled")(directShadowsEnabled.asInstanceOf[js.Any])
     if (displayUTCOffset != null) __obj.updateDynamic("displayUTCOffset")(displayUTCOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[LightingProperties]
   }

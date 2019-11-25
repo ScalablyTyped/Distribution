@@ -26,7 +26,7 @@ object Response {
     text: () => js.Promise[String],
     statusCode: Int | Double = null
   ): Response = {
-    val __obj = js.Dynamic.literal(body = body, coreRes = coreRes, headers = headers, json = js.Any.fromFunction0(json), text = js.Any.fromFunction0(text))
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], coreRes = coreRes.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], json = js.Any.fromFunction0(json), text = js.Any.fromFunction0(text))
     if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Response]
   }

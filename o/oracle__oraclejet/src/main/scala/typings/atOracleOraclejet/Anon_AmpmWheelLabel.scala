@@ -34,17 +34,17 @@ object Anon_AmpmWheelLabel {
     tooltipTimeDisabled: String = null
   ): Anon_AmpmWheelLabel = {
     val __obj = js.Dynamic.literal()
-    if (ampmWheelLabel != null) __obj.updateDynamic("ampmWheelLabel")(ampmWheelLabel)
-    if (cancelText != null) __obj.updateDynamic("cancelText")(cancelText)
-    if (currentTimeText != null) __obj.updateDynamic("currentTimeText")(currentTimeText)
-    if (dateTimeRange != null) __obj.updateDynamic("dateTimeRange")(dateTimeRange)
-    if (hourWheelLabel != null) __obj.updateDynamic("hourWheelLabel")(hourWheelLabel)
-    if (minuteWheelLabel != null) __obj.updateDynamic("minuteWheelLabel")(minuteWheelLabel)
-    if (okText != null) __obj.updateDynamic("okText")(okText)
-    if (regexp != null) __obj.updateDynamic("regexp")(regexp)
-    if (required != null) __obj.updateDynamic("required")(required)
-    if (tooltipTime != null) __obj.updateDynamic("tooltipTime")(tooltipTime)
-    if (tooltipTimeDisabled != null) __obj.updateDynamic("tooltipTimeDisabled")(tooltipTimeDisabled)
+    if (ampmWheelLabel != null) __obj.updateDynamic("ampmWheelLabel")(ampmWheelLabel.asInstanceOf[js.Any])
+    if (cancelText != null) __obj.updateDynamic("cancelText")(cancelText.asInstanceOf[js.Any])
+    if (currentTimeText != null) __obj.updateDynamic("currentTimeText")(currentTimeText.asInstanceOf[js.Any])
+    if (dateTimeRange != null) __obj.updateDynamic("dateTimeRange")(dateTimeRange.asInstanceOf[js.Any])
+    if (hourWheelLabel != null) __obj.updateDynamic("hourWheelLabel")(hourWheelLabel.asInstanceOf[js.Any])
+    if (minuteWheelLabel != null) __obj.updateDynamic("minuteWheelLabel")(minuteWheelLabel.asInstanceOf[js.Any])
+    if (okText != null) __obj.updateDynamic("okText")(okText.asInstanceOf[js.Any])
+    if (regexp != null) __obj.updateDynamic("regexp")(regexp.asInstanceOf[js.Any])
+    if (required != null) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
+    if (tooltipTime != null) __obj.updateDynamic("tooltipTime")(tooltipTime.asInstanceOf[js.Any])
+    if (tooltipTimeDisabled != null) __obj.updateDynamic("tooltipTimeDisabled")(tooltipTimeDisabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AmpmWheelLabel]
   }
 }

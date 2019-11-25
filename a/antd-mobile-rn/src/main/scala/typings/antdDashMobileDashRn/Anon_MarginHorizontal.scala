@@ -12,7 +12,7 @@ trait Anon_MarginHorizontal extends js.Object {
 object Anon_MarginHorizontal {
   @scala.inline
   def apply(marginHorizontal: Double, marginVertical: Double): Anon_MarginHorizontal = {
-    val __obj = js.Dynamic.literal(marginHorizontal = marginHorizontal, marginVertical = marginVertical)
+    val __obj = js.Dynamic.literal(marginHorizontal = marginHorizontal.asInstanceOf[js.Any], marginVertical = marginVertical.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_MarginHorizontal]
   }

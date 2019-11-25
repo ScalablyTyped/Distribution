@@ -22,11 +22,11 @@ object Options {
     processingMode: DOMString = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (base != null) __obj.updateDynamic("base")(base)
-    if (!js.isUndefined(compactArrays)) __obj.updateDynamic("compactArrays")(compactArrays)
-    if (documentLoader != null) __obj.updateDynamic("documentLoader")(documentLoader)
+    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
+    if (!js.isUndefined(compactArrays)) __obj.updateDynamic("compactArrays")(compactArrays.asInstanceOf[js.Any])
+    if (documentLoader != null) __obj.updateDynamic("documentLoader")(documentLoader.asInstanceOf[js.Any])
     if (expandContext != null) __obj.updateDynamic("expandContext")(expandContext.asInstanceOf[js.Any])
-    if (processingMode != null) __obj.updateDynamic("processingMode")(processingMode)
+    if (processingMode != null) __obj.updateDynamic("processingMode")(processingMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

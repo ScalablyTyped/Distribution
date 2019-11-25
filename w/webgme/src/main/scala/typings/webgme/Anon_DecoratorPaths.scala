@@ -61,7 +61,7 @@ object Anon_DecoratorPaths {
     visualizerDescriptors: js.Array[String],
     decoratorToPreload: Int | Double = null
   ): Anon_DecoratorPaths = {
-    val __obj = js.Dynamic.literal(decoratorPaths = decoratorPaths, extraCss = extraCss, layout = layout, panelPaths = panelPaths, svgDirs = svgDirs, visualizerDescriptors = visualizerDescriptors)
+    val __obj = js.Dynamic.literal(decoratorPaths = decoratorPaths.asInstanceOf[js.Any], extraCss = extraCss.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], panelPaths = panelPaths.asInstanceOf[js.Any], svgDirs = svgDirs.asInstanceOf[js.Any], visualizerDescriptors = visualizerDescriptors.asInstanceOf[js.Any])
     if (decoratorToPreload != null) __obj.updateDynamic("decoratorToPreload")(decoratorToPreload.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DecoratorPaths]
   }

@@ -17,7 +17,7 @@ object IDeleteOptions {
   @scala.inline
   def apply(etag: String = null): IDeleteOptions = {
     val __obj = js.Dynamic.literal()
-    if (etag != null) __obj.updateDynamic("etag")(etag)
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDeleteOptions]
   }
 }

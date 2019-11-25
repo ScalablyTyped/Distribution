@@ -18,9 +18,9 @@ object SceneParameters {
     rateLimit: js.UndefOr[Boolean] = js.undefined
   ): SceneParameters = {
     val __obj = js.Dynamic.literal()
-    if (ammo != null) __obj.updateDynamic("ammo")(ammo)
+    if (ammo != null) __obj.updateDynamic("ammo")(ammo.asInstanceOf[js.Any])
     if (fixedTimeStep != null) __obj.updateDynamic("fixedTimeStep")(fixedTimeStep.asInstanceOf[js.Any])
-    if (!js.isUndefined(rateLimit)) __obj.updateDynamic("rateLimit")(rateLimit)
+    if (!js.isUndefined(rateLimit)) __obj.updateDynamic("rateLimit")(rateLimit.asInstanceOf[js.Any])
     __obj.asInstanceOf[SceneParameters]
   }
 }

@@ -20,9 +20,9 @@ object Anon_CodeData {
   @scala.inline
   def apply(code: String = null, data: js.Array[Anon_Key] = null, message: String = null): Anon_CodeData = {
     val __obj = js.Dynamic.literal()
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (message != null) __obj.updateDynamic("message")(message)
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CodeData]
   }
 }

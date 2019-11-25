@@ -15,8 +15,8 @@ object FetchMoreQueryOptions {
   @scala.inline
   def apply[TVariables, K /* <: String */](query: DocumentNode = null, variables: Pick[TVariables, K] = null): FetchMoreQueryOptions[TVariables, K] = {
     val __obj = js.Dynamic.literal()
-    if (query != null) __obj.updateDynamic("query")(query)
-    if (variables != null) __obj.updateDynamic("variables")(variables)
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[FetchMoreQueryOptions[TVariables, K]]
   }
 }

@@ -15,7 +15,7 @@ object IUnfoundState {
     options: typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IStateOptions,
     to: String
   ): IUnfoundState = {
-    val __obj = js.Dynamic.literal(options = options, to = to)
+    val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IUnfoundState]
   }

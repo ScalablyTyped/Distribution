@@ -22,11 +22,11 @@ object Anon_Heading {
     small: Anon_DaySize = null
   ): Anon_Heading = {
     val __obj = js.Dynamic.literal()
-    if (heading != null) __obj.updateDynamic("heading")(heading)
-    if (icons != null) __obj.updateDynamic("icons")(icons)
-    if (large != null) __obj.updateDynamic("large")(large)
-    if (medium != null) __obj.updateDynamic("medium")(medium)
-    if (small != null) __obj.updateDynamic("small")(small)
+    if (heading != null) __obj.updateDynamic("heading")(heading.asInstanceOf[js.Any])
+    if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
+    if (large != null) __obj.updateDynamic("large")(large.asInstanceOf[js.Any])
+    if (medium != null) __obj.updateDynamic("medium")(medium.asInstanceOf[js.Any])
+    if (small != null) __obj.updateDynamic("small")(small.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Heading]
   }
 }

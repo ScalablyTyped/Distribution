@@ -39,9 +39,9 @@ object IgTileManagerSplitterOptionsEvents {
     expanded: js.Any = null
   ): IgTileManagerSplitterOptionsEvents = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (collapsed != null) __obj.updateDynamic("collapsed")(collapsed)
-    if (expanded != null) __obj.updateDynamic("expanded")(expanded)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (collapsed != null) __obj.updateDynamic("collapsed")(collapsed.asInstanceOf[js.Any])
+    if (expanded != null) __obj.updateDynamic("expanded")(expanded.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgTileManagerSplitterOptionsEvents]
   }
 }

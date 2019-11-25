@@ -22,8 +22,8 @@ object Anon_Key {
   def apply(key: Buffer | String = null, keyId: String = null, teamId: String = null): Anon_Key = {
     val __obj = js.Dynamic.literal()
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (keyId != null) __obj.updateDynamic("keyId")(keyId)
-    if (teamId != null) __obj.updateDynamic("teamId")(teamId)
+    if (keyId != null) __obj.updateDynamic("keyId")(keyId.asInstanceOf[js.Any])
+    if (teamId != null) __obj.updateDynamic("teamId")(teamId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Key]
   }
 }

@@ -31,7 +31,7 @@ object Snapshot {
     ],
     notifications: js.Array[Notification]
   ): Snapshot = {
-    val __obj = js.Dynamic.literal(caches = caches, clients = clients, notifications = notifications)
+    val __obj = js.Dynamic.literal(caches = caches.asInstanceOf[js.Any], clients = clients.asInstanceOf[js.Any], notifications = notifications.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Snapshot]
   }

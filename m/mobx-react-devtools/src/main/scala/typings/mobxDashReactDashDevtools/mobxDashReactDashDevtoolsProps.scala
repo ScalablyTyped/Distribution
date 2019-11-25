@@ -10,7 +10,7 @@ trait mobxDashReactDashDevtoolsProps {
   def MobxDashReactDashDevtoolsProps: IDevToolProps.type = typings.mobxDashReactDashDevtools.mobxDashReactDashDevtoolsMod.IDevToolProps
   type MobxDashReactDashDevtoolsProps = IDevToolProps
   @scala.inline
-  def UpdatesControlProps: typings.mobxDashReactDashDevtools.Anon_HighlightTimeout.type = typings.mobxDashReactDashDevtools.Anon_HighlightTimeout
+  def UpdatesControlProps: Anon_HighlightTimeout.type = typings.mobxDashReactDashDevtools.Anon_HighlightTimeout
   type UpdatesControlProps = Anon_HighlightTimeout
 }
 

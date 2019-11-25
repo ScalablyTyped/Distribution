@@ -35,20 +35,16 @@ object ICartesianChart {
     flipXY: js.UndefOr[Boolean] = js.undefined,
     getFlipXY: () => Boolean = null,
     getInnerRegion: () => Array = null,
-    onPlaceWatermark: () => Unit = null,
     performLayout: () => Unit = null,
-    redraw: () => Unit = null,
     setFlipXY: /* flipXY */ js.UndefOr[Boolean] => Unit = null,
     setInnerRegion: /* innerRegion */ js.UndefOr[Array] => Unit = null
   ): ICartesianChart = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IAbstractChart)
-    if (!js.isUndefined(flipXY)) __obj.updateDynamic("flipXY")(flipXY)
+    if (IAbstractChart != null) js.Dynamic.global.Object.assign(__obj, IAbstractChart)
+    if (!js.isUndefined(flipXY)) __obj.updateDynamic("flipXY")(flipXY.asInstanceOf[js.Any])
     if (getFlipXY != null) __obj.updateDynamic("getFlipXY")(js.Any.fromFunction0(getFlipXY))
     if (getInnerRegion != null) __obj.updateDynamic("getInnerRegion")(js.Any.fromFunction0(getInnerRegion))
-    if (onPlaceWatermark != null) __obj.updateDynamic("onPlaceWatermark")(js.Any.fromFunction0(onPlaceWatermark))
     if (performLayout != null) __obj.updateDynamic("performLayout")(js.Any.fromFunction0(performLayout))
-    if (redraw != null) __obj.updateDynamic("redraw")(js.Any.fromFunction0(redraw))
     if (setFlipXY != null) __obj.updateDynamic("setFlipXY")(js.Any.fromFunction1(setFlipXY))
     if (setInnerRegion != null) __obj.updateDynamic("setInnerRegion")(js.Any.fromFunction1(setInnerRegion))
     __obj.asInstanceOf[ICartesianChart]

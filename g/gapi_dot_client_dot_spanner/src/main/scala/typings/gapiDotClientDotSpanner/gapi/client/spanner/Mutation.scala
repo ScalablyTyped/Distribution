@@ -45,11 +45,11 @@ object Mutation {
     update: Write = null
   ): Mutation = {
     val __obj = js.Dynamic.literal()
-    if (delete != null) __obj.updateDynamic("delete")(delete)
-    if (insert != null) __obj.updateDynamic("insert")(insert)
-    if (insertOrUpdate != null) __obj.updateDynamic("insertOrUpdate")(insertOrUpdate)
-    if (replace != null) __obj.updateDynamic("replace")(replace)
-    if (update != null) __obj.updateDynamic("update")(update)
+    if (delete != null) __obj.updateDynamic("delete")(delete.asInstanceOf[js.Any])
+    if (insert != null) __obj.updateDynamic("insert")(insert.asInstanceOf[js.Any])
+    if (insertOrUpdate != null) __obj.updateDynamic("insertOrUpdate")(insertOrUpdate.asInstanceOf[js.Any])
+    if (replace != null) __obj.updateDynamic("replace")(replace.asInstanceOf[js.Any])
+    if (update != null) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mutation]
   }
 }

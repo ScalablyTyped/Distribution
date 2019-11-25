@@ -26,7 +26,7 @@ trait UserMetadata extends js.Object {
 object UserMetadata {
   @scala.inline
   def apply(creationTime: String, lastSignInTime: String, toJSON: () => js.Object): UserMetadata = {
-    val __obj = js.Dynamic.literal(creationTime = creationTime, lastSignInTime = lastSignInTime, toJSON = js.Any.fromFunction0(toJSON))
+    val __obj = js.Dynamic.literal(creationTime = creationTime.asInstanceOf[js.Any], lastSignInTime = lastSignInTime.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[UserMetadata]
   }

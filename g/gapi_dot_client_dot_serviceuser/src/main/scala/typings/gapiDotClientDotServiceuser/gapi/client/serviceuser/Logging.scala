@@ -28,8 +28,8 @@ object Logging {
     producerDestinations: js.Array[LoggingDestination] = null
   ): Logging = {
     val __obj = js.Dynamic.literal()
-    if (consumerDestinations != null) __obj.updateDynamic("consumerDestinations")(consumerDestinations)
-    if (producerDestinations != null) __obj.updateDynamic("producerDestinations")(producerDestinations)
+    if (consumerDestinations != null) __obj.updateDynamic("consumerDestinations")(consumerDestinations.asInstanceOf[js.Any])
+    if (producerDestinations != null) __obj.updateDynamic("producerDestinations")(producerDestinations.asInstanceOf[js.Any])
     __obj.asInstanceOf[Logging]
   }
 }

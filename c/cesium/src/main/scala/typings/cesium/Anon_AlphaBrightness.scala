@@ -44,9 +44,9 @@ object Anon_AlphaBrightness {
     if (maximumAnisotropy != null) __obj.updateDynamic("maximumAnisotropy")(maximumAnisotropy.asInstanceOf[js.Any])
     if (maximumTerrainLevel != null) __obj.updateDynamic("maximumTerrainLevel")(maximumTerrainLevel.asInstanceOf[js.Any])
     if (minimumTerrainLevel != null) __obj.updateDynamic("minimumTerrainLevel")(minimumTerrainLevel.asInstanceOf[js.Any])
-    if (rectangle != null) __obj.updateDynamic("rectangle")(rectangle)
+    if (rectangle != null) __obj.updateDynamic("rectangle")(rectangle.asInstanceOf[js.Any])
     if (saturation != null) __obj.updateDynamic("saturation")(saturation.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AlphaBrightness]
   }
 }

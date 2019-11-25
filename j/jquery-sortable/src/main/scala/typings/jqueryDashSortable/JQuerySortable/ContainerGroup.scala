@@ -54,7 +54,7 @@ object ContainerGroup {
     sameResultBox: Anon_Bottom,
     scrollProxy: js.Any
   ): ContainerGroup = {
-    val __obj = js.Dynamic.literal($document = $document, containerDimensions = containerDimensions, containers = containers, delayMet = delayMet, dragInitDone = dragInitDone, dragProxy = dragProxy, dragging = dragging, dropProxy = dropProxy, item = item, itemContainer = itemContainer, lastAppendedItem = lastAppendedItem, lastPointer = lastPointer, lastRelativePointer = lastRelativePointer, offsetParent = offsetParent, options = options, placeholder = placeholder, pointer = pointer, relativePointer = relativePointer, sameResultBox = sameResultBox, scrollProxy = scrollProxy)
+    val __obj = js.Dynamic.literal($document = $document.asInstanceOf[js.Any], containerDimensions = containerDimensions.asInstanceOf[js.Any], containers = containers.asInstanceOf[js.Any], delayMet = delayMet.asInstanceOf[js.Any], dragInitDone = dragInitDone.asInstanceOf[js.Any], dragProxy = dragProxy.asInstanceOf[js.Any], dragging = dragging.asInstanceOf[js.Any], dropProxy = dropProxy.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], itemContainer = itemContainer.asInstanceOf[js.Any], lastAppendedItem = lastAppendedItem.asInstanceOf[js.Any], lastPointer = lastPointer.asInstanceOf[js.Any], lastRelativePointer = lastRelativePointer.asInstanceOf[js.Any], offsetParent = offsetParent.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any], pointer = pointer.asInstanceOf[js.Any], relativePointer = relativePointer.asInstanceOf[js.Any], sameResultBox = sameResultBox.asInstanceOf[js.Any], scrollProxy = scrollProxy.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ContainerGroup]
   }

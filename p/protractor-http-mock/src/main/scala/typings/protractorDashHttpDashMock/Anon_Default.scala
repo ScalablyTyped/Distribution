@@ -21,8 +21,8 @@ object Anon_Default {
   @scala.inline
   def apply(default: js.Array[String] = null, dir: String = null): Anon_Default = {
     val __obj = js.Dynamic.literal()
-    if (default != null) __obj.updateDynamic("default")(default)
-    if (dir != null) __obj.updateDynamic("dir")(dir)
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Default]
   }
 }

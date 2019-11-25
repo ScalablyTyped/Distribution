@@ -24,8 +24,8 @@ object Anon_LogErroredRequests {
     slowThreshold: Int | Double = null
   ): Anon_LogErroredRequests = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(logErroredRequests)) __obj.updateDynamic("logErroredRequests")(logErroredRequests)
-    if (!js.isUndefined(logNormalRequests)) __obj.updateDynamic("logNormalRequests")(logNormalRequests)
+    if (!js.isUndefined(logErroredRequests)) __obj.updateDynamic("logErroredRequests")(logErroredRequests.asInstanceOf[js.Any])
+    if (!js.isUndefined(logNormalRequests)) __obj.updateDynamic("logNormalRequests")(logNormalRequests.asInstanceOf[js.Any])
     if (messageMaxErrorStackTraceLength != null) __obj.updateDynamic("messageMaxErrorStackTraceLength")(messageMaxErrorStackTraceLength.asInstanceOf[js.Any])
     if (messageMaxParameterValueLength != null) __obj.updateDynamic("messageMaxParameterValueLength")(messageMaxParameterValueLength.asInstanceOf[js.Any])
     if (messageMaxQueryLength != null) __obj.updateDynamic("messageMaxQueryLength")(messageMaxQueryLength.asInstanceOf[js.Any])

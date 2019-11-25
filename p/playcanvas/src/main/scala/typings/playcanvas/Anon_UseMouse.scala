@@ -13,8 +13,8 @@ object Anon_UseMouse {
   @scala.inline
   def apply(useMouse: js.Any = null, useTouch: js.Any = null): Anon_UseMouse = {
     val __obj = js.Dynamic.literal()
-    if (useMouse != null) __obj.updateDynamic("useMouse")(useMouse)
-    if (useTouch != null) __obj.updateDynamic("useTouch")(useTouch)
+    if (useMouse != null) __obj.updateDynamic("useMouse")(useMouse.asInstanceOf[js.Any])
+    if (useTouch != null) __obj.updateDynamic("useTouch")(useTouch.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_UseMouse]
   }
 }

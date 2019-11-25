@@ -50,18 +50,18 @@ object Page {
     url: String = null
   ): Page = {
     val __obj = js.Dynamic.literal()
-    if (author != null) __obj.updateDynamic("author")(author)
-    if (blog != null) __obj.updateDynamic("blog")(blog)
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (etag != null) __obj.updateDynamic("etag")(etag)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (published != null) __obj.updateDynamic("published")(published)
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (updated != null) __obj.updateDynamic("updated")(updated)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
+    if (blog != null) __obj.updateDynamic("blog")(blog.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (published != null) __obj.updateDynamic("published")(published.asInstanceOf[js.Any])
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Page]
   }
 }

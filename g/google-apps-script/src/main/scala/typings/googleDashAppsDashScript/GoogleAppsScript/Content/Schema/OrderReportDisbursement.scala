@@ -22,11 +22,11 @@ object OrderReportDisbursement {
     merchantId: String = null
   ): OrderReportDisbursement = {
     val __obj = js.Dynamic.literal()
-    if (disbursementAmount != null) __obj.updateDynamic("disbursementAmount")(disbursementAmount)
-    if (disbursementCreationDate != null) __obj.updateDynamic("disbursementCreationDate")(disbursementCreationDate)
-    if (disbursementDate != null) __obj.updateDynamic("disbursementDate")(disbursementDate)
-    if (disbursementId != null) __obj.updateDynamic("disbursementId")(disbursementId)
-    if (merchantId != null) __obj.updateDynamic("merchantId")(merchantId)
+    if (disbursementAmount != null) __obj.updateDynamic("disbursementAmount")(disbursementAmount.asInstanceOf[js.Any])
+    if (disbursementCreationDate != null) __obj.updateDynamic("disbursementCreationDate")(disbursementCreationDate.asInstanceOf[js.Any])
+    if (disbursementDate != null) __obj.updateDynamic("disbursementDate")(disbursementDate.asInstanceOf[js.Any])
+    if (disbursementId != null) __obj.updateDynamic("disbursementId")(disbursementId.asInstanceOf[js.Any])
+    if (merchantId != null) __obj.updateDynamic("merchantId")(merchantId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderReportDisbursement]
   }
 }

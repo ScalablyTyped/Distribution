@@ -36,8 +36,8 @@ object NetworkQualityStats {
   @scala.inline
   def apply(downlinkNetworkQuality: String = null, uplinkNetworkQuality: String = null): NetworkQualityStats = {
     val __obj = js.Dynamic.literal()
-    if (downlinkNetworkQuality != null) __obj.updateDynamic("downlinkNetworkQuality")(downlinkNetworkQuality)
-    if (uplinkNetworkQuality != null) __obj.updateDynamic("uplinkNetworkQuality")(uplinkNetworkQuality)
+    if (downlinkNetworkQuality != null) __obj.updateDynamic("downlinkNetworkQuality")(downlinkNetworkQuality.asInstanceOf[js.Any])
+    if (uplinkNetworkQuality != null) __obj.updateDynamic("uplinkNetworkQuality")(uplinkNetworkQuality.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkQualityStats]
   }
 }

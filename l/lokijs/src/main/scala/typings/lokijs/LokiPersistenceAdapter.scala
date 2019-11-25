@@ -53,7 +53,7 @@ object LokiPersistenceAdapter {
     val __obj = js.Dynamic.literal(loadDatabase = js.Any.fromFunction2(loadDatabase))
     if (deleteDatabase != null) __obj.updateDynamic("deleteDatabase")(js.Any.fromFunction2(deleteDatabase))
     if (exportDatabase != null) __obj.updateDynamic("exportDatabase")(js.Any.fromFunction3(exportDatabase))
-    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (saveDatabase != null) __obj.updateDynamic("saveDatabase")(js.Any.fromFunction3(saveDatabase))
     __obj.asInstanceOf[LokiPersistenceAdapter]
   }

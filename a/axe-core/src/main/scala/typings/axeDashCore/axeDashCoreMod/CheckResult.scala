@@ -21,8 +21,8 @@ object CheckResult {
     message: String,
     relatedNodes: js.Array[RelatedNode] = null
   ): CheckResult = {
-    val __obj = js.Dynamic.literal(data = data, id = id, impact = impact, message = message)
-    if (relatedNodes != null) __obj.updateDynamic("relatedNodes")(relatedNodes)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], impact = impact.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
+    if (relatedNodes != null) __obj.updateDynamic("relatedNodes")(relatedNodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckResult]
   }
 }

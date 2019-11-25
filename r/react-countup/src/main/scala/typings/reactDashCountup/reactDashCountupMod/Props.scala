@@ -66,8 +66,8 @@ object Props {
   ): Props = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (decimal != null) __obj.updateDynamic("decimal")(decimal)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (decimal != null) __obj.updateDynamic("decimal")(decimal.asInstanceOf[js.Any])
     if (decimals != null) __obj.updateDynamic("decimals")(decimals.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
@@ -80,13 +80,13 @@ object Props {
     if (onReset != null) __obj.updateDynamic("onReset")(js.Any.fromFunction0(onReset))
     if (onStart != null) __obj.updateDynamic("onStart")(js.Any.fromFunction1(onStart))
     if (onUpdate != null) __obj.updateDynamic("onUpdate")(js.Any.fromFunction1(onUpdate))
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
-    if (!js.isUndefined(redraw)) __obj.updateDynamic("redraw")(redraw)
-    if (separator != null) __obj.updateDynamic("separator")(separator)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    if (!js.isUndefined(redraw)) __obj.updateDynamic("redraw")(redraw.asInstanceOf[js.Any])
+    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (suffix != null) __obj.updateDynamic("suffix")(suffix)
-    if (!js.isUndefined(useEasing)) __obj.updateDynamic("useEasing")(useEasing)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
+    if (!js.isUndefined(useEasing)) __obj.updateDynamic("useEasing")(useEasing.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }
 }

@@ -23,7 +23,7 @@ object CharactersOption {
   @scala.inline
   def apply(characters: String = null): CharactersOption = {
     val __obj = js.Dynamic.literal()
-    if (characters != null) __obj.updateDynamic("characters")(characters)
+    if (characters != null) __obj.updateDynamic("characters")(characters.asInstanceOf[js.Any])
     __obj.asInstanceOf[CharactersOption]
   }
 }

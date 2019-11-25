@@ -44,10 +44,10 @@ object RegexReplaceExtension {
     replace: js.Any = null
   ): RegexReplaceExtension = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (listeners != null) __obj.updateDynamic("listeners")(listeners)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     if (regex != null) __obj.updateDynamic("regex")(regex.asInstanceOf[js.Any])
-    if (replace != null) __obj.updateDynamic("replace")(replace)
+    if (replace != null) __obj.updateDynamic("replace")(replace.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegexReplaceExtension]
   }
 }

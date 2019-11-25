@@ -13,8 +13,8 @@ trait Anon_Cosign extends js.Object {
 object Anon_Cosign {
   @scala.inline
   def apply(cosign: Boolean, pyong: Boolean, vote: js.Any = null): Anon_Cosign = {
-    val __obj = js.Dynamic.literal(cosign = cosign, pyong = pyong)
-    if (vote != null) __obj.updateDynamic("vote")(vote)
+    val __obj = js.Dynamic.literal(cosign = cosign.asInstanceOf[js.Any], pyong = pyong.asInstanceOf[js.Any])
+    if (vote != null) __obj.updateDynamic("vote")(vote.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Cosign]
   }
 }

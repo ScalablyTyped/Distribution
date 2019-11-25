@@ -20,7 +20,7 @@ trait Mapping[Source, Target] extends js.Object {
 object Mapping {
   @scala.inline
   def apply[Source, Target](map: js.Array[Source] => Unit, results: js.Array[Target]): Mapping[Source, Target] = {
-    val __obj = js.Dynamic.literal(map = js.Any.fromFunction1(map), results = results)
+    val __obj = js.Dynamic.literal(map = js.Any.fromFunction1(map), results = results.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Mapping[Source, Target]]
   }

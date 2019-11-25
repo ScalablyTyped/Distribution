@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait RequestCredentials extends js.Object
 
+object RequestCredentials {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def include: typings.nodeDashFetch.nodeDashFetchStrings.include = this.cast("include")
+  @scala.inline
+  def omit: typings.nodeDashFetch.nodeDashFetchStrings.omit = this.cast("omit")
+  @scala.inline
+  def `same-origin`: typings.nodeDashFetch.nodeDashFetchStrings.`same-origin` = this.cast("same-origin")
+}
+

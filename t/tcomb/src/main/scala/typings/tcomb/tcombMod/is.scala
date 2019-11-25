@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("tcomb", "is")
 @js.native
 object is extends js.Object {
-  def apply[T](x: js.Any, `type`: Constructor[T]): Boolean = js.native
+  def apply[T](x: js.Any, `type`: Constructor[T]): scala.Boolean = js.native
 }
 

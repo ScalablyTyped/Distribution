@@ -13,8 +13,8 @@ trait TableCellDataGetterParams extends js.Object {
 object TableCellDataGetterParams {
   @scala.inline
   def apply(dataKey: String, rowData: js.Any, columnData: js.Any = null): TableCellDataGetterParams = {
-    val __obj = js.Dynamic.literal(dataKey = dataKey, rowData = rowData)
-    if (columnData != null) __obj.updateDynamic("columnData")(columnData)
+    val __obj = js.Dynamic.literal(dataKey = dataKey.asInstanceOf[js.Any], rowData = rowData.asInstanceOf[js.Any])
+    if (columnData != null) __obj.updateDynamic("columnData")(columnData.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableCellDataGetterParams]
   }
 }

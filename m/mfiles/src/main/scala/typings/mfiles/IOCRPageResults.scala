@@ -12,7 +12,7 @@ trait IOCRPageResults extends js.Object {
 object IOCRPageResults {
   @scala.inline
   def apply(Count: Double, Item: Double => IOCRPageResult): IOCRPageResults = {
-    val __obj = js.Dynamic.literal(Count = Count, Item = js.Any.fromFunction1(Item))
+    val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item))
   
     __obj.asInstanceOf[IOCRPageResults]
   }

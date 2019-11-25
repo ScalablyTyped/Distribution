@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait CodeSigningPolicy extends js.Object
 
+object CodeSigningPolicy {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def optional: typings.fridaDashGum.fridaDashGumStrings.optional = this.cast("optional")
+  @scala.inline
+  def required: typings.fridaDashGum.fridaDashGumStrings.required = this.cast("required")
+}
+

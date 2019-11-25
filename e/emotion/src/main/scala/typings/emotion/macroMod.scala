@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("emotion/macro", JSImport.Namespace)
 @js.native
 object macroMod extends js.Object {
-  val cache: /* import warning: ImportType.apply Failed type conversion: create-emotion.create-emotion.Emotion['cache'] */ js.Any = js.native
+  val cache: /* import warning: importer.ImportType#apply Failed type conversion: create-emotion.create-emotion.Emotion['cache'] */ js.Any = js.native
   val css: js.Function1[/* repeated */ Interpolation, String] = js.native
   val cx: js.Function1[/* repeated */ ClassNameArg, String] = js.native
   val flush: js.Function0[Unit] = js.native

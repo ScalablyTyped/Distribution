@@ -12,7 +12,6 @@ import typings.typescriptDashServices.TypeScript.ISyntaxTriviaList
 import typings.typescriptDashServices.TypeScript.ITokenInfo
 import typings.typescriptDashServices.TypeScript.IUnaryExpressionSyntax
 import typings.typescriptDashServices.TypeScript.Syntax.IFactory
-import typings.typescriptDashServices.TypeScript.SyntaxKind
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,25 +26,38 @@ object Syntax extends js.Object {
   @js.native
   class FixedWidthTokenWithLeadingAndTrailingTrivia protected ()
     extends typings.typescriptDashServices.TypeScript.Syntax.FixedWidthTokenWithLeadingAndTrailingTrivia {
-    def this(fullText: String, kind: SyntaxKind, leadingTriviaInfo: Double, trailingTriviaInfo: Double) = this()
+    def this(
+      fullText: String,
+      kind: typings.typescriptDashServices.TypeScript.SyntaxKind,
+      leadingTriviaInfo: Double,
+      trailingTriviaInfo: Double
+    ) = this()
   }
   
   @js.native
   class FixedWidthTokenWithLeadingTrivia protected ()
     extends typings.typescriptDashServices.TypeScript.Syntax.FixedWidthTokenWithLeadingTrivia {
-    def this(fullText: String, kind: SyntaxKind, leadingTriviaInfo: Double) = this()
+    def this(
+      fullText: String,
+      kind: typings.typescriptDashServices.TypeScript.SyntaxKind,
+      leadingTriviaInfo: Double
+    ) = this()
   }
   
   @js.native
   class FixedWidthTokenWithNoTrivia protected ()
     extends typings.typescriptDashServices.TypeScript.Syntax.FixedWidthTokenWithNoTrivia {
-    def this(kind: SyntaxKind) = this()
+    def this(kind: typings.typescriptDashServices.TypeScript.SyntaxKind) = this()
   }
   
   @js.native
   class FixedWidthTokenWithTrailingTrivia protected ()
     extends typings.typescriptDashServices.TypeScript.Syntax.FixedWidthTokenWithTrailingTrivia {
-    def this(fullText: String, kind: SyntaxKind, trailingTriviaInfo: Double) = this()
+    def this(
+      fullText: String,
+      kind: typings.typescriptDashServices.TypeScript.SyntaxKind,
+      trailingTriviaInfo: Double
+    ) = this()
   }
   
   @js.native
@@ -59,25 +71,38 @@ object Syntax extends js.Object {
   @js.native
   class VariableWidthTokenWithLeadingAndTrailingTrivia protected ()
     extends typings.typescriptDashServices.TypeScript.Syntax.VariableWidthTokenWithLeadingAndTrailingTrivia {
-    def this(fullText: String, kind: SyntaxKind, leadingTriviaInfo: Double, trailingTriviaInfo: Double) = this()
+    def this(
+      fullText: String,
+      kind: typings.typescriptDashServices.TypeScript.SyntaxKind,
+      leadingTriviaInfo: Double,
+      trailingTriviaInfo: Double
+    ) = this()
   }
   
   @js.native
   class VariableWidthTokenWithLeadingTrivia protected ()
     extends typings.typescriptDashServices.TypeScript.Syntax.VariableWidthTokenWithLeadingTrivia {
-    def this(fullText: String, kind: SyntaxKind, leadingTriviaInfo: Double) = this()
+    def this(
+      fullText: String,
+      kind: typings.typescriptDashServices.TypeScript.SyntaxKind,
+      leadingTriviaInfo: Double
+    ) = this()
   }
   
   @js.native
   class VariableWidthTokenWithNoTrivia protected ()
     extends typings.typescriptDashServices.TypeScript.Syntax.VariableWidthTokenWithNoTrivia {
-    def this(fullText: String, kind: SyntaxKind) = this()
+    def this(fullText: String, kind: typings.typescriptDashServices.TypeScript.SyntaxKind) = this()
   }
   
   @js.native
   class VariableWidthTokenWithTrailingTrivia protected ()
     extends typings.typescriptDashServices.TypeScript.Syntax.VariableWidthTokenWithTrailingTrivia {
-    def this(fullText: String, kind: SyntaxKind, trailingTriviaInfo: Double) = this()
+    def this(
+      fullText: String,
+      kind: typings.typescriptDashServices.TypeScript.SyntaxKind,
+      trailingTriviaInfo: Double
+    ) = this()
   }
   
   var carriageReturnLineFeedTrivia: ISyntaxTrivia = js.native
@@ -95,18 +120,29 @@ object Syntax extends js.Object {
   def childOffset(parent: ISyntaxElement, child: ISyntaxElement): Double = js.native
   def childOffsetAt(parent: ISyntaxElement, index: Double): Double = js.native
   def convertToIdentifierName(token: ISyntaxToken): ISyntaxToken = js.native
-  def deferredTrivia(kind: SyntaxKind, text: ISimpleText, fullStart: Double, fullWidth: Double): ISyntaxTrivia = js.native
+  def deferredTrivia(
+    kind: typings.typescriptDashServices.TypeScript.SyntaxKind,
+    text: ISimpleText,
+    fullStart: Double,
+    fullWidth: Double
+  ): ISyntaxTrivia = js.native
   def elementStructuralEquals(element1: ISyntaxElement, element2: ISyntaxElement): Boolean = js.native
   def emptySourceUnit(): typings.typescriptDashServices.TypeScript.SourceUnitSyntax = js.native
-  def emptyToken(kind: SyntaxKind): ISyntaxToken = js.native
+  def emptyToken(kind: typings.typescriptDashServices.TypeScript.SyntaxKind): ISyntaxToken = js.native
   def falseExpression(): IUnaryExpressionSyntax = js.native
   def findSkippedTokenInLeadingTriviaList(positionedToken: typings.typescriptDashServices.TypeScript.PositionedToken, position: Double): typings.typescriptDashServices.TypeScript.PositionedSkippedToken = js.native
   def findSkippedTokenInPositionedToken(positionedToken: typings.typescriptDashServices.TypeScript.PositionedToken, position: Double): typings.typescriptDashServices.TypeScript.PositionedSkippedToken = js.native
   def findSkippedTokenInTrailingTriviaList(positionedToken: typings.typescriptDashServices.TypeScript.PositionedToken, position: Double): typings.typescriptDashServices.TypeScript.PositionedSkippedToken = js.native
   def findSkippedTokenOnLeft(positionedToken: typings.typescriptDashServices.TypeScript.PositionedToken, position: Double): typings.typescriptDashServices.TypeScript.PositionedSkippedToken = js.native
-  def getAncestorOfKind(positionedToken: typings.typescriptDashServices.TypeScript.PositionedElement, kind: SyntaxKind): typings.typescriptDashServices.TypeScript.PositionedElement = js.native
+  def getAncestorOfKind(
+    positionedToken: typings.typescriptDashServices.TypeScript.PositionedElement,
+    kind: typings.typescriptDashServices.TypeScript.SyntaxKind
+  ): typings.typescriptDashServices.TypeScript.PositionedElement = js.native
   def getStandaloneExpression(positionedToken: typings.typescriptDashServices.TypeScript.PositionedToken): typings.typescriptDashServices.TypeScript.PositionedNodeOrToken = js.native
-  def hasAncestorOfKind(positionedToken: typings.typescriptDashServices.TypeScript.PositionedElement, kind: SyntaxKind): Boolean = js.native
+  def hasAncestorOfKind(
+    positionedToken: typings.typescriptDashServices.TypeScript.PositionedElement,
+    kind: typings.typescriptDashServices.TypeScript.SyntaxKind
+  ): Boolean = js.native
   def identifier(text: String): ISyntaxToken = js.native
   def identifier(text: String, info: ITokenInfo): ISyntaxToken = js.native
   def identifierName(text: String): ISyntaxToken = js.native
@@ -143,11 +179,11 @@ object Syntax extends js.Object {
   def spaces(count: Double): ISyntaxTrivia = js.native
   def splitMultiLineCommentTriviaIntoMultipleLines(trivia: ISyntaxTrivia): js.Array[String] = js.native
   def stringLiteralExpression(text: String): IUnaryExpressionSyntax = js.native
-  def token(kind: SyntaxKind): ISyntaxToken = js.native
-  def token(kind: SyntaxKind, info: ITokenInfo): ISyntaxToken = js.native
+  def token(kind: typings.typescriptDashServices.TypeScript.SyntaxKind): ISyntaxToken = js.native
+  def token(kind: typings.typescriptDashServices.TypeScript.SyntaxKind, info: ITokenInfo): ISyntaxToken = js.native
   def tokenStructuralEquals(token1: ISyntaxToken, token2: ISyntaxToken): Boolean = js.native
   def tokenToJSON(token: ISyntaxToken): js.Any = js.native
-  def trivia(kind: SyntaxKind, text: String): ISyntaxTrivia = js.native
+  def trivia(kind: typings.typescriptDashServices.TypeScript.SyntaxKind, text: String): ISyntaxTrivia = js.native
   def triviaList(trivia: js.Array[ISyntaxTrivia]): ISyntaxTriviaList = js.native
   def triviaListStructuralEquals(triviaList1: ISyntaxTriviaList, triviaList2: ISyntaxTriviaList): Boolean = js.native
   def triviaStructuralEquals(trivia1: ISyntaxTrivia, trivia2: ISyntaxTrivia): Boolean = js.native

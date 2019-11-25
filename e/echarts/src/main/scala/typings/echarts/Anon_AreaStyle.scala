@@ -32,10 +32,10 @@ object Anon_AreaStyle {
     lineStyle: Anon_ColorOpacityShadowBlur = null
   ): Anon_AreaStyle = {
     val __obj = js.Dynamic.literal()
-    if (areaStyle != null) __obj.updateDynamic("areaStyle")(areaStyle)
-    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle)
+    if (areaStyle != null) __obj.updateDynamic("areaStyle")(areaStyle.asInstanceOf[js.Any])
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AreaStyle]
   }
 }

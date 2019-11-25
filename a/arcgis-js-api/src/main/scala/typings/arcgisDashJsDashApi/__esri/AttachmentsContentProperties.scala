@@ -25,7 +25,7 @@ object AttachmentsContentProperties {
   @scala.inline
   def apply(attachmentInfos: AttachmentInfoProperties = null, displayType: preview | list = null): AttachmentsContentProperties = {
     val __obj = js.Dynamic.literal()
-    if (attachmentInfos != null) __obj.updateDynamic("attachmentInfos")(attachmentInfos)
+    if (attachmentInfos != null) __obj.updateDynamic("attachmentInfos")(attachmentInfos.asInstanceOf[js.Any])
     if (displayType != null) __obj.updateDynamic("displayType")(displayType.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachmentsContentProperties]
   }

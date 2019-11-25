@@ -18,9 +18,9 @@ object AccountBusinessInformation {
     phoneNumber: String = null
   ): AccountBusinessInformation = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address)
-    if (customerService != null) __obj.updateDynamic("customerService")(customerService)
-    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber)
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    if (customerService != null) __obj.updateDynamic("customerService")(customerService.asInstanceOf[js.Any])
+    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountBusinessInformation]
   }
 }

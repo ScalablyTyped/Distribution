@@ -1,7 +1,7 @@
 package typings.typedoc.distLibUtilsOptionsDeclarationMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.typedoc.typedocStrings.`object`
+import typings.typedoc.typedocStrings.object_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ class OptionDeclaration protected () extends js.Object {
   var defaultValue: js.Any = js.native
   var help: String = js.native
   var hint: js.UndefOr[ParameterHint] = js.native
-  var map: js.UndefOr[StringDictionary[js.Any] | `object`] = js.native
+  var map: js.UndefOr[StringDictionary[js.Any] | object_] = js.native
   var mapError: js.UndefOr[String] = js.native
   var name: String = js.native
   var scope: ParameterScope = js.native

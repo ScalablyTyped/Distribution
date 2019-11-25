@@ -19,8 +19,8 @@ object ConfigurationItem {
   @scala.inline
   def apply(scopeUri: String = null, section: String = null): ConfigurationItem = {
     val __obj = js.Dynamic.literal()
-    if (scopeUri != null) __obj.updateDynamic("scopeUri")(scopeUri)
-    if (section != null) __obj.updateDynamic("section")(section)
+    if (scopeUri != null) __obj.updateDynamic("scopeUri")(scopeUri.asInstanceOf[js.Any])
+    if (section != null) __obj.updateDynamic("section")(section.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigurationItem]
   }
 }

@@ -17,9 +17,9 @@ object UserDefined {
   @scala.inline
   def apply(key: String = null, metadata: FieldMetadata = null, value: String = null): UserDefined = {
     val __obj = js.Dynamic.literal()
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserDefined]
   }
 }

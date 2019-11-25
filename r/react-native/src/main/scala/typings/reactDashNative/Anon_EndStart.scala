@@ -12,7 +12,7 @@ trait Anon_EndStart extends js.Object {
 object Anon_EndStart {
   @scala.inline
   def apply(start: Double, end: Int | Double = null): Anon_EndStart = {
-    val __obj = js.Dynamic.literal(start = start)
+    val __obj = js.Dynamic.literal(start = start.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_EndStart]
   }

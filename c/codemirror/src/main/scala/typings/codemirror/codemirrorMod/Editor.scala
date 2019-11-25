@@ -340,7 +340,7 @@ trait Editor extends Doc {
     eventName: K,
     handler: js.Function2[
       /* instance */ this.type, 
-      /* import warning: ImportType.apply Failed type conversion: std.GlobalEventHandlersEventMap[K] */ /* event */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: std.GlobalEventHandlersEventMap[K] */ /* event */ js.Any, 
       Unit
     ]
   ): Unit = js.native
@@ -443,7 +443,7 @@ trait Editor extends Doc {
     eventName: K,
     handler: js.Function2[
       /* instance */ this.type, 
-      /* import warning: ImportType.apply Failed type conversion: std.GlobalEventHandlersEventMap[K] */ /* event */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: std.GlobalEventHandlersEventMap[K] */ /* event */ js.Any, 
       Unit
     ]
   ): Unit = js.native

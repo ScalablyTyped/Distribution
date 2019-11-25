@@ -12,7 +12,7 @@ trait Anon_BackgroundColorBorderWidth extends js.Object {
 object Anon_BackgroundColorBorderWidth {
   @scala.inline
   def apply(backgroundColor: String, borderWidth: Double): Anon_BackgroundColorBorderWidth = {
-    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, borderWidth = borderWidth)
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], borderWidth = borderWidth.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BackgroundColorBorderWidth]
   }

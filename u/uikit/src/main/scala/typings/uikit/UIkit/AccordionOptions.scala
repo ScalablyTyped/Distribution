@@ -76,14 +76,14 @@ object AccordionOptions {
     toggle: String = null
   ): AccordionOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
-    if (clsactive != null) __obj.updateDynamic("clsactive")(clsactive)
-    if (!js.isUndefined(collapse)) __obj.updateDynamic("collapse")(collapse)
-    if (containers != null) __obj.updateDynamic("containers")(containers)
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
+    if (clsactive != null) __obj.updateDynamic("clsactive")(clsactive.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapse)) __obj.updateDynamic("collapse")(collapse.asInstanceOf[js.Any])
+    if (containers != null) __obj.updateDynamic("containers")(containers.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(easing)
-    if (!js.isUndefined(showfirst)) __obj.updateDynamic("showfirst")(showfirst)
-    if (toggle != null) __obj.updateDynamic("toggle")(toggle)
+    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
+    if (!js.isUndefined(showfirst)) __obj.updateDynamic("showfirst")(showfirst.asInstanceOf[js.Any])
+    if (toggle != null) __obj.updateDynamic("toggle")(toggle.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccordionOptions]
   }
 }

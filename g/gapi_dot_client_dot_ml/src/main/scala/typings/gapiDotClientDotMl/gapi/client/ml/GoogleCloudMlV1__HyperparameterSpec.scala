@@ -54,11 +54,11 @@ object GoogleCloudMlV1__HyperparameterSpec {
     params: js.Array[GoogleCloudMlV1__ParameterSpec] = null
   ): GoogleCloudMlV1__HyperparameterSpec = {
     val __obj = js.Dynamic.literal()
-    if (goal != null) __obj.updateDynamic("goal")(goal)
-    if (hyperparameterMetricTag != null) __obj.updateDynamic("hyperparameterMetricTag")(hyperparameterMetricTag)
+    if (goal != null) __obj.updateDynamic("goal")(goal.asInstanceOf[js.Any])
+    if (hyperparameterMetricTag != null) __obj.updateDynamic("hyperparameterMetricTag")(hyperparameterMetricTag.asInstanceOf[js.Any])
     if (maxParallelTrials != null) __obj.updateDynamic("maxParallelTrials")(maxParallelTrials.asInstanceOf[js.Any])
     if (maxTrials != null) __obj.updateDynamic("maxTrials")(maxTrials.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params)
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudMlV1__HyperparameterSpec]
   }
 }

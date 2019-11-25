@@ -1,18 +1,14 @@
 package typings.vscodeDashLanguageclient.libClientMod
 
-import typings.vscode.vscodeMod.CancellationToken
 import typings.vscode.vscodeMod.DiagnosticCollection
 import typings.vscode.vscodeMod.OutputChannel
 import typings.vscodeDashJsonrpc.Thenable
-import typings.vscodeDashJsonrpc.libEventsMod.Disposable
-import typings.vscodeDashJsonrpc.libMessagesMod.MessageType
 import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.GenericNotificationHandler
 import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.GenericRequestHandler
 import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.NotificationHandler
 import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.NotificationHandler0
 import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.RequestHandler
 import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.RequestHandler0
-import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.Trace
 import typings.vscodeDashLanguageclient.libCodeConverterMod.Converter
 import typings.vscodeDashLanguageserverDashProtocol.libProtocolMod.InitializeResult
 import scala.scalajs.js
@@ -83,7 +79,7 @@ abstract class BaseLanguageClient protected () extends js.Object {
   var resolveConnection: js.Any = js.native
   var setDiagnostics: js.Any = js.native
   var state: js.Any = js.native
-  var trace: Trace = js.native
+  var trace: typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.Trace = js.native
   def createDefaultErrorHandler(): ErrorHandler = js.native
   /* protected */ def createMessageTransports(encoding: String): Thenable[MessageTransports] = js.native
   def error(message: String): Unit = js.native
@@ -91,16 +87,16 @@ abstract class BaseLanguageClient protected () extends js.Object {
   /* protected */ def handleConnectionClosed(): Unit = js.native
   def info(message: String): Unit = js.native
   def info(message: String, data: js.Any): Unit = js.native
-  def logFailedRequest(`type`: MessageType, error: js.Any): Unit = js.native
+  def logFailedRequest(`type`: typings.vscodeDashJsonrpc.libMessagesMod.MessageType, error: js.Any): Unit = js.native
   def needsStart(): Boolean = js.native
   def needsStop(): Boolean = js.native
-  def onDidChangeState(listener: js.Function1[/* e */ StateChangeEvent, _]): Disposable = js.native
-  def onDidChangeState(listener: js.Function1[/* e */ StateChangeEvent, _], thisArgs: js.Any): Disposable = js.native
+  def onDidChangeState(listener: js.Function1[/* e */ StateChangeEvent, _]): typings.vscodeDashJsonrpc.libEventsMod.Disposable = js.native
+  def onDidChangeState(listener: js.Function1[/* e */ StateChangeEvent, _], thisArgs: js.Any): typings.vscodeDashJsonrpc.libEventsMod.Disposable = js.native
   def onDidChangeState(
     listener: js.Function1[/* e */ StateChangeEvent, _],
     thisArgs: js.Any,
-    disposables: js.Array[Disposable]
-  ): Disposable = js.native
+    disposables: js.Array[typings.vscodeDashJsonrpc.libEventsMod.Disposable]
+  ): typings.vscodeDashJsonrpc.libEventsMod.Disposable = js.native
   def onNotification(method: String, handler: GenericNotificationHandler): Unit = js.native
   def onNotification[RO](
     `type`: typings.vscodeDashLanguageserverDashProtocol.vscodeDashLanguageserverDashProtocolMod.NotificationType0[RO],
@@ -120,9 +116,13 @@ abstract class BaseLanguageClient protected () extends js.Object {
     `type`: typings.vscodeDashLanguageserverDashProtocol.vscodeDashLanguageserverDashProtocolMod.RequestType[P, R, E, RO],
     handler: RequestHandler[P, R, E]
   ): Unit = js.native
-  def onTelemetry(listener: js.Function1[/* e */ js.Any, _]): Disposable = js.native
-  def onTelemetry(listener: js.Function1[/* e */ js.Any, _], thisArgs: js.Any): Disposable = js.native
-  def onTelemetry(listener: js.Function1[/* e */ js.Any, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onTelemetry(listener: js.Function1[/* e */ js.Any, _]): typings.vscodeDashJsonrpc.libEventsMod.Disposable = js.native
+  def onTelemetry(listener: js.Function1[/* e */ js.Any, _], thisArgs: js.Any): typings.vscodeDashJsonrpc.libEventsMod.Disposable = js.native
+  def onTelemetry(
+    listener: js.Function1[/* e */ js.Any, _],
+    thisArgs: js.Any,
+    disposables: js.Array[typings.vscodeDashJsonrpc.libEventsMod.Disposable]
+  ): typings.vscodeDashJsonrpc.libEventsMod.Disposable = js.native
   /* protected */ def registerBuiltinFeatures(): Unit = js.native
   def registerFeature(feature: DynamicFeature[_]): Unit = js.native
   def registerFeature(feature: StaticFeature): Unit = js.native
@@ -141,14 +141,14 @@ abstract class BaseLanguageClient protected () extends js.Object {
   ): Unit = js.native
   def sendRequest[R](method: String): Thenable[R] = js.native
   def sendRequest[R](method: String, param: js.Any): Thenable[R] = js.native
-  def sendRequest[R](method: String, param: js.Any, token: CancellationToken): Thenable[R] = js.native
-  def sendRequest[R](method: String, token: CancellationToken): Thenable[R] = js.native
+  def sendRequest[R](method: String, param: js.Any, token: typings.vscode.vscodeMod.CancellationToken): Thenable[R] = js.native
+  def sendRequest[R](method: String, token: typings.vscode.vscodeMod.CancellationToken): Thenable[R] = js.native
   def sendRequest[R, E, RO](
     `type`: typings.vscodeDashLanguageserverDashProtocol.vscodeDashLanguageserverDashProtocolMod.RequestType0[R, E, RO]
   ): Thenable[R] = js.native
   def sendRequest[R, E, RO](
     `type`: typings.vscodeDashLanguageserverDashProtocol.vscodeDashLanguageserverDashProtocolMod.RequestType0[R, E, RO],
-    token: CancellationToken
+    token: typings.vscode.vscodeMod.CancellationToken
   ): Thenable[R] = js.native
   def sendRequest[P, R, E, RO](
     `type`: typings.vscodeDashLanguageserverDashProtocol.vscodeDashLanguageserverDashProtocolMod.RequestType[P, R, E, RO],
@@ -157,7 +157,7 @@ abstract class BaseLanguageClient protected () extends js.Object {
   def sendRequest[P, R, E, RO](
     `type`: typings.vscodeDashLanguageserverDashProtocol.vscodeDashLanguageserverDashProtocolMod.RequestType[P, R, E, RO],
     params: P,
-    token: CancellationToken
+    token: typings.vscode.vscodeMod.CancellationToken
   ): Thenable[R] = js.native
   def start(): typings.vscode.vscodeMod.Disposable = js.native
   def stop(): Thenable[Unit] = js.native

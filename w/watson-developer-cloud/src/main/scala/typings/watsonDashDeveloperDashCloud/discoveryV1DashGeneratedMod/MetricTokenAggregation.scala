@@ -16,8 +16,8 @@ object MetricTokenAggregation {
   @scala.inline
   def apply(event_type: String = null, results: js.Array[MetricTokenAggregationResult] = null): MetricTokenAggregation = {
     val __obj = js.Dynamic.literal()
-    if (event_type != null) __obj.updateDynamic("event_type")(event_type)
-    if (results != null) __obj.updateDynamic("results")(results)
+    if (event_type != null) __obj.updateDynamic("event_type")(event_type.asInstanceOf[js.Any])
+    if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricTokenAggregation]
   }
 }

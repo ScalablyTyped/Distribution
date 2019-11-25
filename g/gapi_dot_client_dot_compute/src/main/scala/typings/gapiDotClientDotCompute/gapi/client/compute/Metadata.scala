@@ -22,9 +22,9 @@ object Metadata {
   @scala.inline
   def apply(fingerprint: String = null, items: js.Array[Anon_Key] = null, kind: String = null): Metadata = {
     val __obj = js.Dynamic.literal()
-    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint)
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[Metadata]
   }
 }

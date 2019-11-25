@@ -19,10 +19,10 @@ object IDAStarFinderOptions {
     weight: Int | Double = null
   ): IDAStarFinderOptions = {
     val __obj = js.Dynamic.literal()
-    if (diagonalMovement != null) __obj.updateDynamic("diagonalMovement")(diagonalMovement)
+    if (diagonalMovement != null) __obj.updateDynamic("diagonalMovement")(diagonalMovement.asInstanceOf[js.Any])
     if (heuristic != null) __obj.updateDynamic("heuristic")(js.Any.fromFunction2(heuristic))
     if (timeLimit != null) __obj.updateDynamic("timeLimit")(timeLimit.asInstanceOf[js.Any])
-    if (!js.isUndefined(trackRecursion)) __obj.updateDynamic("trackRecursion")(trackRecursion)
+    if (!js.isUndefined(trackRecursion)) __obj.updateDynamic("trackRecursion")(trackRecursion.asInstanceOf[js.Any])
     if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDAStarFinderOptions]
   }

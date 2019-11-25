@@ -17,7 +17,7 @@ object UploadRef {
   @scala.inline
   def apply(uploadUrl: String = null): UploadRef = {
     val __obj = js.Dynamic.literal()
-    if (uploadUrl != null) __obj.updateDynamic("uploadUrl")(uploadUrl)
+    if (uploadUrl != null) __obj.updateDynamic("uploadUrl")(uploadUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadRef]
   }
 }

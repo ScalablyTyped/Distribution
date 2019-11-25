@@ -27,12 +27,12 @@ object ScreenshotsConfig {
   ): ScreenshotsConfig = {
     val __obj = js.Dynamic.literal()
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (!js.isUndefined(fastSeek)) __obj.updateDynamic("fastSeek")(fastSeek)
-    if (filename != null) __obj.updateDynamic("filename")(filename)
-    if (folder != null) __obj.updateDynamic("folder")(folder)
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (timemarks != null) __obj.updateDynamic("timemarks")(timemarks)
-    if (timestamps != null) __obj.updateDynamic("timestamps")(timestamps)
+    if (!js.isUndefined(fastSeek)) __obj.updateDynamic("fastSeek")(fastSeek.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
+    if (folder != null) __obj.updateDynamic("folder")(folder.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (timemarks != null) __obj.updateDynamic("timemarks")(timemarks.asInstanceOf[js.Any])
+    if (timestamps != null) __obj.updateDynamic("timestamps")(timestamps.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScreenshotsConfig]
   }
 }

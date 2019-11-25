@@ -32,10 +32,10 @@ object CreateInstanceMetadata {
     startTime: String = null
   ): CreateInstanceMetadata = {
     val __obj = js.Dynamic.literal()
-    if (cancelTime != null) __obj.updateDynamic("cancelTime")(cancelTime)
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
-    if (instance != null) __obj.updateDynamic("instance")(instance)
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
+    if (cancelTime != null) __obj.updateDynamic("cancelTime")(cancelTime.asInstanceOf[js.Any])
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
+    if (instance != null) __obj.updateDynamic("instance")(instance.asInstanceOf[js.Any])
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateInstanceMetadata]
   }
 }

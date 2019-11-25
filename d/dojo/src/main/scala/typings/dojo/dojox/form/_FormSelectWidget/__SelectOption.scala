@@ -36,7 +36,7 @@ trait __SelectOption extends js.Object {
 object __SelectOption {
   @scala.inline
   def apply(disabled: Boolean, label: String, selected: Boolean, value: String): __SelectOption = {
-    val __obj = js.Dynamic.literal(disabled = disabled, label = label, selected = selected, value = value)
+    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[__SelectOption]
   }

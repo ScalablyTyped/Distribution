@@ -12,8 +12,8 @@ trait AddressPair extends js.Object {
 object AddressPair {
   @scala.inline
   def apply(`3GAddress`: String, wifiAddress: String): AddressPair = {
-    val __obj = js.Dynamic.literal(wifiAddress = wifiAddress)
-    __obj.updateDynamic("3GAddress")(`3GAddress`)
+    val __obj = js.Dynamic.literal(wifiAddress = wifiAddress.asInstanceOf[js.Any])
+    __obj.updateDynamic("3GAddress")(`3GAddress`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddressPair]
   }
 }

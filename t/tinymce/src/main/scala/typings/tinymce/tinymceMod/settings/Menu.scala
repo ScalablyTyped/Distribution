@@ -26,13 +26,13 @@ object Menu {
     view: MenuItem = null
   ): Menu = {
     val __obj = js.Dynamic.literal()
-    if (edit != null) __obj.updateDynamic("edit")(edit)
-    if (file != null) __obj.updateDynamic("file")(file)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (insert != null) __obj.updateDynamic("insert")(insert)
-    if (table != null) __obj.updateDynamic("table")(table)
-    if (tools != null) __obj.updateDynamic("tools")(tools)
-    if (view != null) __obj.updateDynamic("view")(view)
+    if (edit != null) __obj.updateDynamic("edit")(edit.asInstanceOf[js.Any])
+    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (insert != null) __obj.updateDynamic("insert")(insert.asInstanceOf[js.Any])
+    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
+    if (tools != null) __obj.updateDynamic("tools")(tools.asInstanceOf[js.Any])
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[Menu]
   }
 }

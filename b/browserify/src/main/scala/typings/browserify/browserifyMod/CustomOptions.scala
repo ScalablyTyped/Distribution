@@ -29,8 +29,8 @@ object CustomOptions {
     basedir: String = null
   ): CustomOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (basedir != null) __obj.updateDynamic("basedir")(basedir)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (basedir != null) __obj.updateDynamic("basedir")(basedir.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomOptions]
   }
 }

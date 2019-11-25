@@ -28,12 +28,12 @@ object ImageReference {
     label: String = null,
     position: Position = null
   ): ImageReference = {
-    val __obj = js.Dynamic.literal(identifier = identifier, referenceType = referenceType)
-    __obj.updateDynamic("type")(`type`)
-    if (alt != null) __obj.updateDynamic("alt")(alt)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (position != null) __obj.updateDynamic("position")(position)
+    val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any], referenceType = referenceType.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageReference]
   }
 }

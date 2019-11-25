@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait LegendDirection extends js.Object
 
+object LegendDirection {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def column: typings.atNivoLegends.atNivoLegendsStrings.column = this.cast("column")
+  @scala.inline
+  def row: typings.atNivoLegends.atNivoLegendsStrings.row = this.cast("row")
+}
+

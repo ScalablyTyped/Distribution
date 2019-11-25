@@ -14,7 +14,7 @@ trait Relation extends IBaseObject {
 object Relation {
   @scala.inline
   def apply(added: () => js.Array[Object[_]], removed: js.Array[Object[_]], toJSON: () => js.Any): Relation = {
-    val __obj = js.Dynamic.literal(added = js.Any.fromFunction0(added), removed = removed, toJSON = js.Any.fromFunction0(toJSON))
+    val __obj = js.Dynamic.literal(added = js.Any.fromFunction0(added), removed = removed.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[Relation]
   }

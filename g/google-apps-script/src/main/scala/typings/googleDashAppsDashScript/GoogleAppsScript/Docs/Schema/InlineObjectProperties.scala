@@ -12,7 +12,7 @@ object InlineObjectProperties {
   @scala.inline
   def apply(embeddedObject: EmbeddedObject = null): InlineObjectProperties = {
     val __obj = js.Dynamic.literal()
-    if (embeddedObject != null) __obj.updateDynamic("embeddedObject")(embeddedObject)
+    if (embeddedObject != null) __obj.updateDynamic("embeddedObject")(embeddedObject.asInstanceOf[js.Any])
     __obj.asInstanceOf[InlineObjectProperties]
   }
 }

@@ -31,6 +31,5 @@ object Blame extends js.Object {
     * @param version - Version of struct; pass GIT_BLAME_OPTIONS_VERSION
     */
   def initOptions(opts: typings.nodegit.blameDashOptionsMod.BlameOptions, version: Double): Double = js.native
-  type FLAG = typings.nodegit.blameMod.Blame.FLAG
 }
 

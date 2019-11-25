@@ -18,8 +18,8 @@ object BatchUpdatePresentationResponse {
   @scala.inline
   def apply(presentationId: String = null, replies: js.Array[Response] = null): BatchUpdatePresentationResponse = {
     val __obj = js.Dynamic.literal()
-    if (presentationId != null) __obj.updateDynamic("presentationId")(presentationId)
-    if (replies != null) __obj.updateDynamic("replies")(replies)
+    if (presentationId != null) __obj.updateDynamic("presentationId")(presentationId.asInstanceOf[js.Any])
+    if (replies != null) __obj.updateDynamic("replies")(replies.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchUpdatePresentationResponse]
   }
 }

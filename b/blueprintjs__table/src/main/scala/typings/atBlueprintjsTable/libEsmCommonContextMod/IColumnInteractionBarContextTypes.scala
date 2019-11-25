@@ -11,7 +11,7 @@ trait IColumnInteractionBarContextTypes extends js.Object {
 object IColumnInteractionBarContextTypes {
   @scala.inline
   def apply(enableColumnInteractionBar: Boolean): IColumnInteractionBarContextTypes = {
-    val __obj = js.Dynamic.literal(enableColumnInteractionBar = enableColumnInteractionBar)
+    val __obj = js.Dynamic.literal(enableColumnInteractionBar = enableColumnInteractionBar.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IColumnInteractionBarContextTypes]
   }

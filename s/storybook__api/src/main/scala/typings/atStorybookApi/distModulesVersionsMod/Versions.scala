@@ -14,9 +14,9 @@ object Versions {
   @scala.inline
   def apply(current: Version = null, latest: Version = null, next: Version = null): Versions = {
     val __obj = js.Dynamic.literal()
-    if (current != null) __obj.updateDynamic("current")(current)
-    if (latest != null) __obj.updateDynamic("latest")(latest)
-    if (next != null) __obj.updateDynamic("next")(next)
+    if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
+    if (latest != null) __obj.updateDynamic("latest")(latest.asInstanceOf[js.Any])
+    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
     __obj.asInstanceOf[Versions]
   }
 }

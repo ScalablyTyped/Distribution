@@ -28,10 +28,10 @@ object OktaVueOptions {
     scope: String = null,
     storage: localStorage | sessionStorage | cookie = null
   ): OktaVueOptions = {
-    val __obj = js.Dynamic.literal(client_id = client_id, issuer = issuer, redirect_uri = redirect_uri)
-    if (!js.isUndefined(auto_renew)) __obj.updateDynamic("auto_renew")(auto_renew)
-    if (response_type != null) __obj.updateDynamic("response_type")(response_type)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
+    val __obj = js.Dynamic.literal(client_id = client_id.asInstanceOf[js.Any], issuer = issuer.asInstanceOf[js.Any], redirect_uri = redirect_uri.asInstanceOf[js.Any])
+    if (!js.isUndefined(auto_renew)) __obj.updateDynamic("auto_renew")(auto_renew.asInstanceOf[js.Any])
+    if (response_type != null) __obj.updateDynamic("response_type")(response_type.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     if (storage != null) __obj.updateDynamic("storage")(storage.asInstanceOf[js.Any])
     __obj.asInstanceOf[OktaVueOptions]
   }

@@ -30,11 +30,11 @@ object TableDataList {
     totalRows: String = null
   ): TableDataList = {
     val __obj = js.Dynamic.literal()
-    if (etag != null) __obj.updateDynamic("etag")(etag)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
-    if (rows != null) __obj.updateDynamic("rows")(rows)
-    if (totalRows != null) __obj.updateDynamic("totalRows")(totalRows)
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
+    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (totalRows != null) __obj.updateDynamic("totalRows")(totalRows.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableDataList]
   }
 }

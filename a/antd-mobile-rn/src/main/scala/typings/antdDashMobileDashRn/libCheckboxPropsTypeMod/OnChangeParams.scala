@@ -12,7 +12,7 @@ trait OnChangeParams extends js.Object {
 object OnChangeParams {
   @scala.inline
   def apply(target: Anon_Checked): OnChangeParams = {
-    val __obj = js.Dynamic.literal(target = target)
+    val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OnChangeParams]
   }

@@ -12,7 +12,7 @@ trait Anon_Propagation extends js.Object {
 object Anon_Propagation {
   @scala.inline
   def apply(Propagation: MountPropagation): Anon_Propagation = {
-    val __obj = js.Dynamic.literal(Propagation = Propagation)
+    val __obj = js.Dynamic.literal(Propagation = Propagation.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Propagation]
   }

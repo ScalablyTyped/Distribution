@@ -48,13 +48,13 @@ object VersionControlDetails {
     revisionId: String = null,
     revisionTag: String = null
   ): VersionControlDetails = {
-    val __obj = js.Dynamic.literal(repositoryUri = repositoryUri)
-    if (asOfTimeUtc != null) __obj.updateDynamic("asOfTimeUtc")(asOfTimeUtc)
-    if (branch != null) __obj.updateDynamic("branch")(branch)
-    if (mappedTo != null) __obj.updateDynamic("mappedTo")(mappedTo)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (revisionId != null) __obj.updateDynamic("revisionId")(revisionId)
-    if (revisionTag != null) __obj.updateDynamic("revisionTag")(revisionTag)
+    val __obj = js.Dynamic.literal(repositoryUri = repositoryUri.asInstanceOf[js.Any])
+    if (asOfTimeUtc != null) __obj.updateDynamic("asOfTimeUtc")(asOfTimeUtc.asInstanceOf[js.Any])
+    if (branch != null) __obj.updateDynamic("branch")(branch.asInstanceOf[js.Any])
+    if (mappedTo != null) __obj.updateDynamic("mappedTo")(mappedTo.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (revisionId != null) __obj.updateDynamic("revisionId")(revisionId.asInstanceOf[js.Any])
+    if (revisionTag != null) __obj.updateDynamic("revisionTag")(revisionTag.asInstanceOf[js.Any])
     __obj.asInstanceOf[VersionControlDetails]
   }
 }

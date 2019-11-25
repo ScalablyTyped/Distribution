@@ -18,8 +18,8 @@ object IIconRecords {
     __remapped: StringDictionary[String],
     StringDictionary: /* key */ StringDictionary[IIconRecord | js.Object] = null
   ): IIconRecords = {
-    val __obj = js.Dynamic.literal(__options = __options, __remapped = __remapped)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(__options = __options.asInstanceOf[js.Any], __remapped = __remapped.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[IIconRecords]
   }
 }

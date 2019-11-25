@@ -18,8 +18,8 @@ object SetDataValidationRequest {
   @scala.inline
   def apply(range: GridRange = null, rule: DataValidationRule = null): SetDataValidationRequest = {
     val __obj = js.Dynamic.literal()
-    if (range != null) __obj.updateDynamic("range")(range)
-    if (rule != null) __obj.updateDynamic("rule")(rule)
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (rule != null) __obj.updateDynamic("rule")(rule.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetDataValidationRequest]
   }
 }

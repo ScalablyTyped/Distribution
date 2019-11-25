@@ -11,7 +11,7 @@ trait AppInitialProps extends js.Object {
 object AppInitialProps {
   @scala.inline
   def apply(pageProps: js.Any): AppInitialProps = {
-    val __obj = js.Dynamic.literal(pageProps = pageProps)
+    val __obj = js.Dynamic.literal(pageProps = pageProps.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AppInitialProps]
   }

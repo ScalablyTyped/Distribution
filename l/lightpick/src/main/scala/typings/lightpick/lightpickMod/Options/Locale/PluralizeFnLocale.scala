@@ -12,7 +12,7 @@ trait PluralizeFnLocale extends js.Object {
 object PluralizeFnLocale {
   @scala.inline
   def apply(one: String, other: String): PluralizeFnLocale = {
-    val __obj = js.Dynamic.literal(one = one, other = other)
+    val __obj = js.Dynamic.literal(one = one.asInstanceOf[js.Any], other = other.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PluralizeFnLocale]
   }

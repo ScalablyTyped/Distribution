@@ -37,11 +37,11 @@ object PricingInfo {
     summary: String = null
   ): PricingInfo = {
     val __obj = js.Dynamic.literal()
-    if (aggregationInfo != null) __obj.updateDynamic("aggregationInfo")(aggregationInfo)
+    if (aggregationInfo != null) __obj.updateDynamic("aggregationInfo")(aggregationInfo.asInstanceOf[js.Any])
     if (currencyConversionRate != null) __obj.updateDynamic("currencyConversionRate")(currencyConversionRate.asInstanceOf[js.Any])
-    if (effectiveTime != null) __obj.updateDynamic("effectiveTime")(effectiveTime)
-    if (pricingExpression != null) __obj.updateDynamic("pricingExpression")(pricingExpression)
-    if (summary != null) __obj.updateDynamic("summary")(summary)
+    if (effectiveTime != null) __obj.updateDynamic("effectiveTime")(effectiveTime.asInstanceOf[js.Any])
+    if (pricingExpression != null) __obj.updateDynamic("pricingExpression")(pricingExpression.asInstanceOf[js.Any])
+    if (summary != null) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
     __obj.asInstanceOf[PricingInfo]
   }
 }

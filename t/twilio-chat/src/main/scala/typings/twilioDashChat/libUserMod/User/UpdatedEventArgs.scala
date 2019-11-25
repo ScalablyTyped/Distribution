@@ -12,7 +12,7 @@ trait UpdatedEventArgs extends js.Object {
 object UpdatedEventArgs {
   @scala.inline
   def apply(updateReasons: js.Array[UpdateReason], user: typings.twilioDashChat.libUserMod.User): UpdatedEventArgs = {
-    val __obj = js.Dynamic.literal(updateReasons = updateReasons, user = user)
+    val __obj = js.Dynamic.literal(updateReasons = updateReasons.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UpdatedEventArgs]
   }

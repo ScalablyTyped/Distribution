@@ -54,13 +54,13 @@ object PlanNode {
     shortRepresentation: ShortRepresentation = null
   ): PlanNode = {
     val __obj = js.Dynamic.literal()
-    if (childLinks != null) __obj.updateDynamic("childLinks")(childLinks)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (executionStats != null) __obj.updateDynamic("executionStats")(executionStats)
+    if (childLinks != null) __obj.updateDynamic("childLinks")(childLinks.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (executionStats != null) __obj.updateDynamic("executionStats")(executionStats.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (shortRepresentation != null) __obj.updateDynamic("shortRepresentation")(shortRepresentation)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (shortRepresentation != null) __obj.updateDynamic("shortRepresentation")(shortRepresentation.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlanNode]
   }
 }

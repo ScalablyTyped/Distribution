@@ -1,13 +1,13 @@
 package typings.rxjs.rxjsMod
 
-import typings.rxjs.internalUtilArgumentOutOfRangeErrorMod.ArgumentOutOfRangeError
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("rxjs", "ArgumentOutOfRangeError")
 @js.native
-class ArgumentOutOfRangeErrorCls () extends ArgumentOutOfRangeError {
+class ArgumentOutOfRangeErrorCls () extends Error {
   /* CompleteClass */
   override var message: String = js.native
   /* CompleteClass */

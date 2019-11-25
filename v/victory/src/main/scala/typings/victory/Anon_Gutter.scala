@@ -25,8 +25,8 @@ object Anon_Gutter {
     val __obj = js.Dynamic.literal()
     if (gutter != null) __obj.updateDynamic("gutter")(gutter.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (titleOrientation != null) __obj.updateDynamic("titleOrientation")(titleOrientation)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (titleOrientation != null) __obj.updateDynamic("titleOrientation")(titleOrientation.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Gutter]
   }
 }

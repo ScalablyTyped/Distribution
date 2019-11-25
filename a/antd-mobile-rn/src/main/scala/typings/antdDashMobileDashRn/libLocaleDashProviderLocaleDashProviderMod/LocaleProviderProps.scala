@@ -14,8 +14,8 @@ trait LocaleProviderProps extends js.Object {
 object LocaleProviderProps {
   @scala.inline
   def apply(locale: Anon_DatePicker, children: ReactElement = null): LocaleProviderProps = {
-    val __obj = js.Dynamic.literal(locale = locale)
-    if (children != null) __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocaleProviderProps]
   }
 }

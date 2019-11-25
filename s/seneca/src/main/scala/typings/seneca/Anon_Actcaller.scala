@@ -30,12 +30,12 @@ object Anon_Actcaller {
     undead: js.UndefOr[Boolean] = js.undefined
   ): Anon_Actcaller = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(act_caller)) __obj.updateDynamic("act_caller")(act_caller)
-    if (!js.isUndefined(callpoint)) __obj.updateDynamic("callpoint")(callpoint)
-    if (!js.isUndefined(fragile)) __obj.updateDynamic("fragile")(fragile)
-    if (print != null) __obj.updateDynamic("print")(print)
-    if (!js.isUndefined(short_logs)) __obj.updateDynamic("short_logs")(short_logs)
-    if (!js.isUndefined(undead)) __obj.updateDynamic("undead")(undead)
+    if (!js.isUndefined(act_caller)) __obj.updateDynamic("act_caller")(act_caller.asInstanceOf[js.Any])
+    if (!js.isUndefined(callpoint)) __obj.updateDynamic("callpoint")(callpoint.asInstanceOf[js.Any])
+    if (!js.isUndefined(fragile)) __obj.updateDynamic("fragile")(fragile.asInstanceOf[js.Any])
+    if (print != null) __obj.updateDynamic("print")(print.asInstanceOf[js.Any])
+    if (!js.isUndefined(short_logs)) __obj.updateDynamic("short_logs")(short_logs.asInstanceOf[js.Any])
+    if (!js.isUndefined(undead)) __obj.updateDynamic("undead")(undead.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Actcaller]
   }
 }

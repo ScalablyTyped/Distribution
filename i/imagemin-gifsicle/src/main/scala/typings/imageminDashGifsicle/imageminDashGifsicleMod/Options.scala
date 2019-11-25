@@ -19,7 +19,7 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (!js.isUndefined(interlaced)) __obj.updateDynamic("interlaced")(interlaced)
+    if (!js.isUndefined(interlaced)) __obj.updateDynamic("interlaced")(interlaced.asInstanceOf[js.Any])
     if (optimizationLevel != null) __obj.updateDynamic("optimizationLevel")(optimizationLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

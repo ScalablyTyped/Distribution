@@ -22,8 +22,8 @@ object GoogleActionsV2OrdersOrderUpdateAction {
     `type`: GoogleActionsV2OrdersOrderUpdateActionType = null
   ): GoogleActionsV2OrdersOrderUpdateAction = {
     val __obj = js.Dynamic.literal()
-    if (button != null) __obj.updateDynamic("button")(button)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2OrdersOrderUpdateAction]
   }
 }

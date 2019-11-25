@@ -55,10 +55,10 @@ object ResolvableLiteral {
     deps: js.Array[_] = null,
     policy: ResolvePolicy = null
   ): ResolvableLiteral = {
-    val __obj = js.Dynamic.literal(resolveFn = resolveFn, token = token)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (deps != null) __obj.updateDynamic("deps")(deps)
-    if (policy != null) __obj.updateDynamic("policy")(policy)
+    val __obj = js.Dynamic.literal(resolveFn = resolveFn.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (deps != null) __obj.updateDynamic("deps")(deps.asInstanceOf[js.Any])
+    if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolvableLiteral]
   }
 }

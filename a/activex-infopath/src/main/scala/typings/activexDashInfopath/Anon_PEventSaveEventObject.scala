@@ -12,7 +12,7 @@ trait Anon_PEventSaveEventObject extends js.Object {
 object Anon_PEventSaveEventObject {
   @scala.inline
   def apply(pEvent: SaveEventObject): Anon_PEventSaveEventObject = {
-    val __obj = js.Dynamic.literal(pEvent = pEvent)
+    val __obj = js.Dynamic.literal(pEvent = pEvent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_PEventSaveEventObject]
   }

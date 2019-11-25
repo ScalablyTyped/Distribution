@@ -30,12 +30,12 @@ object TaxInfo {
     salePrice: String = null
   ): TaxInfo = {
     val __obj = js.Dynamic.literal()
-    if (chargeType != null) __obj.updateDynamic("chargeType")(chargeType)
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (country != null) __obj.updateDynamic("country")(country)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (salePrice != null) __obj.updateDynamic("salePrice")(salePrice)
+    if (chargeType != null) __obj.updateDynamic("chargeType")(chargeType.asInstanceOf[js.Any])
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (salePrice != null) __obj.updateDynamic("salePrice")(salePrice.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaxInfo]
   }
 }

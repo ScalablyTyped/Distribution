@@ -53,11 +53,11 @@ object ChannelEdit {
     cid: Int | Double = null
   ): ChannelEdit = {
     val __obj = js.Dynamic.literal()
-    if (channel_codec != null) __obj.updateDynamic("channel_codec")(channel_codec)
+    if (channel_codec != null) __obj.updateDynamic("channel_codec")(channel_codec.asInstanceOf[js.Any])
     if (channel_codec_is_unencrypted != null) __obj.updateDynamic("channel_codec_is_unencrypted")(channel_codec_is_unencrypted.asInstanceOf[js.Any])
     if (channel_codec_quality != null) __obj.updateDynamic("channel_codec_quality")(channel_codec_quality.asInstanceOf[js.Any])
     if (channel_cpid != null) __obj.updateDynamic("channel_cpid")(channel_cpid.asInstanceOf[js.Any])
-    if (channel_description != null) __obj.updateDynamic("channel_description")(channel_description)
+    if (channel_description != null) __obj.updateDynamic("channel_description")(channel_description.asInstanceOf[js.Any])
     if (channel_flag_default != null) __obj.updateDynamic("channel_flag_default")(channel_flag_default.asInstanceOf[js.Any])
     if (channel_flag_maxclients_unlimited != null) __obj.updateDynamic("channel_flag_maxclients_unlimited")(channel_flag_maxclients_unlimited.asInstanceOf[js.Any])
     if (channel_flag_maxfamilyclients_inherited != null) __obj.updateDynamic("channel_flag_maxfamilyclients_inherited")(channel_flag_maxfamilyclients_inherited.asInstanceOf[js.Any])
@@ -66,12 +66,12 @@ object ChannelEdit {
     if (channel_flag_temporary != null) __obj.updateDynamic("channel_flag_temporary")(channel_flag_temporary.asInstanceOf[js.Any])
     if (channel_maxclients != null) __obj.updateDynamic("channel_maxclients")(channel_maxclients.asInstanceOf[js.Any])
     if (channel_maxfamilyclients != null) __obj.updateDynamic("channel_maxfamilyclients")(channel_maxfamilyclients.asInstanceOf[js.Any])
-    if (channel_name != null) __obj.updateDynamic("channel_name")(channel_name)
-    if (channel_name_phonetic != null) __obj.updateDynamic("channel_name_phonetic")(channel_name_phonetic)
+    if (channel_name != null) __obj.updateDynamic("channel_name")(channel_name.asInstanceOf[js.Any])
+    if (channel_name_phonetic != null) __obj.updateDynamic("channel_name_phonetic")(channel_name_phonetic.asInstanceOf[js.Any])
     if (channel_needed_talk_power != null) __obj.updateDynamic("channel_needed_talk_power")(channel_needed_talk_power.asInstanceOf[js.Any])
     if (channel_order != null) __obj.updateDynamic("channel_order")(channel_order.asInstanceOf[js.Any])
-    if (channel_password != null) __obj.updateDynamic("channel_password")(channel_password)
-    if (channel_topic != null) __obj.updateDynamic("channel_topic")(channel_topic)
+    if (channel_password != null) __obj.updateDynamic("channel_password")(channel_password.asInstanceOf[js.Any])
+    if (channel_topic != null) __obj.updateDynamic("channel_topic")(channel_topic.asInstanceOf[js.Any])
     if (cid != null) __obj.updateDynamic("cid")(cid.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelEdit]
   }

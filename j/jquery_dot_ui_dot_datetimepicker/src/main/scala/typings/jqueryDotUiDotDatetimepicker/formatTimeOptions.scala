@@ -13,8 +13,8 @@ trait formatTimeOptions extends js.Object {
 object formatTimeOptions {
   @scala.inline
   def apply(format: String, time: Time, options: DateTimePickerOptions = null): formatTimeOptions = {
-    val __obj = js.Dynamic.literal(format = format, time = time)
-    if (options != null) __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[formatTimeOptions]
   }
 }

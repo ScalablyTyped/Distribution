@@ -76,16 +76,16 @@ object IColorPickerStrings {
     svAriaValueFormat: String = null
   ): IColorPickerStrings = {
     val __obj = js.Dynamic.literal()
-    if (alpha != null) __obj.updateDynamic("alpha")(alpha)
-    if (blue != null) __obj.updateDynamic("blue")(blue)
-    if (green != null) __obj.updateDynamic("green")(green)
-    if (hex != null) __obj.updateDynamic("hex")(hex)
-    if (hue != null) __obj.updateDynamic("hue")(hue)
-    if (red != null) __obj.updateDynamic("red")(red)
-    if (rootAriaLabelFormat != null) __obj.updateDynamic("rootAriaLabelFormat")(rootAriaLabelFormat)
-    if (svAriaDescription != null) __obj.updateDynamic("svAriaDescription")(svAriaDescription)
-    if (svAriaLabel != null) __obj.updateDynamic("svAriaLabel")(svAriaLabel)
-    if (svAriaValueFormat != null) __obj.updateDynamic("svAriaValueFormat")(svAriaValueFormat)
+    if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
+    if (blue != null) __obj.updateDynamic("blue")(blue.asInstanceOf[js.Any])
+    if (green != null) __obj.updateDynamic("green")(green.asInstanceOf[js.Any])
+    if (hex != null) __obj.updateDynamic("hex")(hex.asInstanceOf[js.Any])
+    if (hue != null) __obj.updateDynamic("hue")(hue.asInstanceOf[js.Any])
+    if (red != null) __obj.updateDynamic("red")(red.asInstanceOf[js.Any])
+    if (rootAriaLabelFormat != null) __obj.updateDynamic("rootAriaLabelFormat")(rootAriaLabelFormat.asInstanceOf[js.Any])
+    if (svAriaDescription != null) __obj.updateDynamic("svAriaDescription")(svAriaDescription.asInstanceOf[js.Any])
+    if (svAriaLabel != null) __obj.updateDynamic("svAriaLabel")(svAriaLabel.asInstanceOf[js.Any])
+    if (svAriaValueFormat != null) __obj.updateDynamic("svAriaValueFormat")(svAriaValueFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[IColorPickerStrings]
   }
 }

@@ -12,7 +12,7 @@ trait ReposUpdateFileResponse extends js.Object {
 object ReposUpdateFileResponse {
   @scala.inline
   def apply(commit: ReposUpdateFileResponseCommit, content: ReposUpdateFileResponseContent): ReposUpdateFileResponse = {
-    val __obj = js.Dynamic.literal(commit = commit, content = content)
+    val __obj = js.Dynamic.literal(commit = commit.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReposUpdateFileResponse]
   }

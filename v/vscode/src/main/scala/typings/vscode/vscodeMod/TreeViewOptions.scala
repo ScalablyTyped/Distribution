@@ -28,9 +28,9 @@ object TreeViewOptions {
     canSelectMany: js.UndefOr[Boolean] = js.undefined,
     showCollapseAll: js.UndefOr[Boolean] = js.undefined
   ): TreeViewOptions[T] = {
-    val __obj = js.Dynamic.literal(treeDataProvider = treeDataProvider)
-    if (!js.isUndefined(canSelectMany)) __obj.updateDynamic("canSelectMany")(canSelectMany)
-    if (!js.isUndefined(showCollapseAll)) __obj.updateDynamic("showCollapseAll")(showCollapseAll)
+    val __obj = js.Dynamic.literal(treeDataProvider = treeDataProvider.asInstanceOf[js.Any])
+    if (!js.isUndefined(canSelectMany)) __obj.updateDynamic("canSelectMany")(canSelectMany.asInstanceOf[js.Any])
+    if (!js.isUndefined(showCollapseAll)) __obj.updateDynamic("showCollapseAll")(showCollapseAll.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeViewOptions[T]]
   }
 }

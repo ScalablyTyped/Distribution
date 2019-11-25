@@ -15,7 +15,7 @@ trait Printing3DBufferDescription extends js.Object {
 object Printing3DBufferDescription {
   @scala.inline
   def apply(format: Printing3DBufferFormat, stride: Double): Printing3DBufferDescription = {
-    val __obj = js.Dynamic.literal(format = format, stride = stride)
+    val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], stride = stride.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Printing3DBufferDescription]
   }

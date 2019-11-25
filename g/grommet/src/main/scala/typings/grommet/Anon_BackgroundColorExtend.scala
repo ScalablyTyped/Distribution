@@ -30,9 +30,9 @@ object Anon_BackgroundColorExtend {
     if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (knob != null) __obj.updateDynamic("knob")(knob)
-    if (radius != null) __obj.updateDynamic("radius")(radius)
-    if (size != null) __obj.updateDynamic("size")(size)
+    if (knob != null) __obj.updateDynamic("knob")(knob.asInstanceOf[js.Any])
+    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BackgroundColorExtend]
   }
 }

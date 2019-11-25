@@ -18,8 +18,8 @@ object ListenRequest {
   @scala.inline
   def apply(addTarget: Target = null, labels: Record[String, String] = null, removeTarget: Int | Double = null): ListenRequest = {
     val __obj = js.Dynamic.literal()
-    if (addTarget != null) __obj.updateDynamic("addTarget")(addTarget)
-    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (addTarget != null) __obj.updateDynamic("addTarget")(addTarget.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     if (removeTarget != null) __obj.updateDynamic("removeTarget")(removeTarget.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListenRequest]
   }

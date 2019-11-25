@@ -13,7 +13,7 @@ trait IWallabyCompilerResult extends js.Object {
 object IWallabyCompilerResult {
   @scala.inline
   def apply(code: String, map: String, ranges: js.Any): IWallabyCompilerResult = {
-    val __obj = js.Dynamic.literal(code = code, map = map, ranges = ranges)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], ranges = ranges.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IWallabyCompilerResult]
   }

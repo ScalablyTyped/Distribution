@@ -89,19 +89,19 @@ object Anon_AltDisplaySlate {
     userIp: String = null,
     walltime: String = null
   ): Anon_AltDisplaySlate = {
-    val __obj = js.Dynamic.literal(id = id, part = part)
-    if (alt != null) __obj.updateDynamic("alt")(alt)
-    if (!js.isUndefined(displaySlate)) __obj.updateDynamic("displaySlate")(displaySlate)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
-    if (offsetTimeMs != null) __obj.updateDynamic("offsetTimeMs")(offsetTimeMs)
-    if (onBehalfOfContentOwner != null) __obj.updateDynamic("onBehalfOfContentOwner")(onBehalfOfContentOwner)
-    if (onBehalfOfContentOwnerChannel != null) __obj.updateDynamic("onBehalfOfContentOwnerChannel")(onBehalfOfContentOwnerChannel)
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
-    if (walltime != null) __obj.updateDynamic("walltime")(walltime)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], part = part.asInstanceOf[js.Any])
+    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
+    if (!js.isUndefined(displaySlate)) __obj.updateDynamic("displaySlate")(displaySlate.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
+    if (offsetTimeMs != null) __obj.updateDynamic("offsetTimeMs")(offsetTimeMs.asInstanceOf[js.Any])
+    if (onBehalfOfContentOwner != null) __obj.updateDynamic("onBehalfOfContentOwner")(onBehalfOfContentOwner.asInstanceOf[js.Any])
+    if (onBehalfOfContentOwnerChannel != null) __obj.updateDynamic("onBehalfOfContentOwnerChannel")(onBehalfOfContentOwnerChannel.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
+    if (walltime != null) __obj.updateDynamic("walltime")(walltime.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AltDisplaySlate]
   }
 }

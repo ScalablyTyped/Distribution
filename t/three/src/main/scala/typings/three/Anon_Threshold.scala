@@ -11,7 +11,7 @@ trait Anon_Threshold extends js.Object {
 object Anon_Threshold {
   @scala.inline
   def apply(threshold: Double): Anon_Threshold = {
-    val __obj = js.Dynamic.literal(threshold = threshold)
+    val __obj = js.Dynamic.literal(threshold = threshold.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Threshold]
   }

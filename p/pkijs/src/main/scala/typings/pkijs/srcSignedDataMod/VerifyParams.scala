@@ -28,13 +28,13 @@ object VerifyParams {
     trustedCerts: js.Array[typings.pkijs.srcCertificateMod.default] = null
   ): VerifyParams = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(checkChain)) __obj.updateDynamic("checkChain")(checkChain)
-    if (checkDate != null) __obj.updateDynamic("checkDate")(checkDate)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (!js.isUndefined(extendedMode)) __obj.updateDynamic("extendedMode")(extendedMode)
-    if (!js.isUndefined(includeSignerCertificate)) __obj.updateDynamic("includeSignerCertificate")(includeSignerCertificate)
+    if (!js.isUndefined(checkChain)) __obj.updateDynamic("checkChain")(checkChain.asInstanceOf[js.Any])
+    if (checkDate != null) __obj.updateDynamic("checkDate")(checkDate.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (!js.isUndefined(extendedMode)) __obj.updateDynamic("extendedMode")(extendedMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeSignerCertificate)) __obj.updateDynamic("includeSignerCertificate")(includeSignerCertificate.asInstanceOf[js.Any])
     if (signer != null) __obj.updateDynamic("signer")(signer.asInstanceOf[js.Any])
-    if (trustedCerts != null) __obj.updateDynamic("trustedCerts")(trustedCerts)
+    if (trustedCerts != null) __obj.updateDynamic("trustedCerts")(trustedCerts.asInstanceOf[js.Any])
     __obj.asInstanceOf[VerifyParams]
   }
 }

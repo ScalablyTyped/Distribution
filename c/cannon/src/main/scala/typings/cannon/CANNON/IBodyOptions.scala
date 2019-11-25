@@ -44,22 +44,22 @@ object IBodyOptions {
     velocity: Vec3 = null
   ): IBodyOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowSleep)) __obj.updateDynamic("allowSleep")(allowSleep)
+    if (!js.isUndefined(allowSleep)) __obj.updateDynamic("allowSleep")(allowSleep.asInstanceOf[js.Any])
     if (angularDamping != null) __obj.updateDynamic("angularDamping")(angularDamping.asInstanceOf[js.Any])
-    if (angularVelocity != null) __obj.updateDynamic("angularVelocity")(angularVelocity)
+    if (angularVelocity != null) __obj.updateDynamic("angularVelocity")(angularVelocity.asInstanceOf[js.Any])
     if (collisionFilterGroup != null) __obj.updateDynamic("collisionFilterGroup")(collisionFilterGroup.asInstanceOf[js.Any])
     if (collisionFilterMask != null) __obj.updateDynamic("collisionFilterMask")(collisionFilterMask.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixedRotation)) __obj.updateDynamic("fixedRotation")(fixedRotation)
+    if (!js.isUndefined(fixedRotation)) __obj.updateDynamic("fixedRotation")(fixedRotation.asInstanceOf[js.Any])
     if (linearDamping != null) __obj.updateDynamic("linearDamping")(linearDamping.asInstanceOf[js.Any])
     if (mass != null) __obj.updateDynamic("mass")(mass.asInstanceOf[js.Any])
-    if (material != null) __obj.updateDynamic("material")(material)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (quaternion != null) __obj.updateDynamic("quaternion")(quaternion)
-    if (shape != null) __obj.updateDynamic("shape")(shape)
+    if (material != null) __obj.updateDynamic("material")(material.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (quaternion != null) __obj.updateDynamic("quaternion")(quaternion.asInstanceOf[js.Any])
+    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
     if (sleepSpeedLimit != null) __obj.updateDynamic("sleepSpeedLimit")(sleepSpeedLimit.asInstanceOf[js.Any])
     if (sleepTimeLimit != null) __obj.updateDynamic("sleepTimeLimit")(sleepTimeLimit.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (velocity != null) __obj.updateDynamic("velocity")(velocity)
+    if (velocity != null) __obj.updateDynamic("velocity")(velocity.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBodyOptions]
   }
 }

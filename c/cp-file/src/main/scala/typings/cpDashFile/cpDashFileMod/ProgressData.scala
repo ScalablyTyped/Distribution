@@ -30,7 +30,7 @@ trait ProgressData extends js.Object {
 object ProgressData {
   @scala.inline
   def apply(dest: String, percent: Double, size: Double, src: String, written: Double): ProgressData = {
-    val __obj = js.Dynamic.literal(dest = dest, percent = percent, size = size, src = src, written = written)
+    val __obj = js.Dynamic.literal(dest = dest.asInstanceOf[js.Any], percent = percent.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], written = written.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ProgressData]
   }

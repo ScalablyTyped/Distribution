@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait Transform extends js.Object
 
+object Transform {
+  @scala.inline
+  def android: typings.theo.theoStrings.android = this.cast("android")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def ios: typings.theo.theoStrings.ios = this.cast("ios")
+  @scala.inline
+  def raw: typings.theo.theoStrings.raw = this.cast("raw")
+  @scala.inline
+  def web: typings.theo.theoStrings.web = this.cast("web")
+}
+

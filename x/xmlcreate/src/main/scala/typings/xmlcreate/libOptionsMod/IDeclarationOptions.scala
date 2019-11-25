@@ -27,9 +27,9 @@ object IDeclarationOptions {
   @scala.inline
   def apply(encoding: String = null, standalone: String = null, version: String = null): IDeclarationOptions = {
     val __obj = js.Dynamic.literal()
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
-    if (standalone != null) __obj.updateDynamic("standalone")(standalone)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    if (standalone != null) __obj.updateDynamic("standalone")(standalone.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDeclarationOptions]
   }
 }

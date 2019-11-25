@@ -21,8 +21,8 @@ object BaseProps {
   @scala.inline
   def apply(defaultValue: js.Any = null, value: js.Any = null): BaseProps = {
     val __obj = js.Dynamic.literal()
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseProps]
   }
 }

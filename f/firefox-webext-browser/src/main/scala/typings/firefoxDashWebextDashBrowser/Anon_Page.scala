@@ -14,8 +14,8 @@ trait Anon_Page extends js.Object {
 object Anon_Page {
   @scala.inline
   def apply(page: ExtensionURL, persistent: js.UndefOr[Boolean] = js.undefined): Anon_Page = {
-    val __obj = js.Dynamic.literal(page = page)
-    if (!js.isUndefined(persistent)) __obj.updateDynamic("persistent")(persistent)
+    val __obj = js.Dynamic.literal(page = page.asInstanceOf[js.Any])
+    if (!js.isUndefined(persistent)) __obj.updateDynamic("persistent")(persistent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Page]
   }
 }

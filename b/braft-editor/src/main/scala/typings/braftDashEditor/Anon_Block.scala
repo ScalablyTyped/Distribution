@@ -21,7 +21,7 @@ object Anon_Block {
     val __obj = js.Dynamic.literal()
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Block]
   }
 }

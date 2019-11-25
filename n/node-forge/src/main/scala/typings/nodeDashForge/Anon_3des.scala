@@ -33,11 +33,11 @@ object Anon_3des {
     val __obj = js.Dynamic.literal()
     if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (friendlyName != null) __obj.updateDynamic("friendlyName")(friendlyName)
-    if (!js.isUndefined(generateLocalKeyId)) __obj.updateDynamic("generateLocalKeyId")(generateLocalKeyId)
-    if (localKeyId != null) __obj.updateDynamic("localKeyId")(localKeyId)
+    if (friendlyName != null) __obj.updateDynamic("friendlyName")(friendlyName.asInstanceOf[js.Any])
+    if (!js.isUndefined(generateLocalKeyId)) __obj.updateDynamic("generateLocalKeyId")(generateLocalKeyId.asInstanceOf[js.Any])
+    if (localKeyId != null) __obj.updateDynamic("localKeyId")(localKeyId.asInstanceOf[js.Any])
     if (saltSize != null) __obj.updateDynamic("saltSize")(saltSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(useMac)) __obj.updateDynamic("useMac")(useMac)
+    if (!js.isUndefined(useMac)) __obj.updateDynamic("useMac")(useMac.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_3des]
   }
 }

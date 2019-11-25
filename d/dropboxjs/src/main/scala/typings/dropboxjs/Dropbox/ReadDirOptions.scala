@@ -24,12 +24,12 @@ object ReadDirOptions {
     versionTag: String = null
   ): ReadDirOptions = {
     val __obj = js.Dynamic.literal()
-    if (contentHash != null) __obj.updateDynamic("contentHash")(contentHash)
-    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted)
-    if (!js.isUndefined(httpCache)) __obj.updateDynamic("httpCache")(httpCache)
-    if (limit != null) __obj.updateDynamic("limit")(limit)
-    if (!js.isUndefined(removed)) __obj.updateDynamic("removed")(removed)
-    if (versionTag != null) __obj.updateDynamic("versionTag")(versionTag)
+    if (contentHash != null) __obj.updateDynamic("contentHash")(contentHash.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.asInstanceOf[js.Any])
+    if (!js.isUndefined(httpCache)) __obj.updateDynamic("httpCache")(httpCache.asInstanceOf[js.Any])
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(removed)) __obj.updateDynamic("removed")(removed.asInstanceOf[js.Any])
+    if (versionTag != null) __obj.updateDynamic("versionTag")(versionTag.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadDirOptions]
   }
 }

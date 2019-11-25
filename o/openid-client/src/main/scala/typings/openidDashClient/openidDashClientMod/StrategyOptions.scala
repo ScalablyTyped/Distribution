@@ -37,9 +37,9 @@ object StrategyOptions {
     usePKCE: Boolean | String = null
   ): StrategyOptions[TClient] = {
     val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (!js.isUndefined(passReqToCallback)) __obj.updateDynamic("passReqToCallback")(passReqToCallback)
-    if (sessionKey != null) __obj.updateDynamic("sessionKey")(sessionKey)
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (!js.isUndefined(passReqToCallback)) __obj.updateDynamic("passReqToCallback")(passReqToCallback.asInstanceOf[js.Any])
+    if (sessionKey != null) __obj.updateDynamic("sessionKey")(sessionKey.asInstanceOf[js.Any])
     if (usePKCE != null) __obj.updateDynamic("usePKCE")(usePKCE.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrategyOptions[TClient]]
   }

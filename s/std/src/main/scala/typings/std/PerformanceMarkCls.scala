@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("PerformanceMark")
 @js.native
-class PerformanceMarkCls () extends PerformanceMark {
+class PerformanceMarkCls () extends PerformanceEntry {
   /* CompleteClass */
   override val duration: Double = js.native
   /* CompleteClass */

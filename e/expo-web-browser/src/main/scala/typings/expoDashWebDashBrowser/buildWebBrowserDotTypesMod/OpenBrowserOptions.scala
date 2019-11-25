@@ -30,14 +30,14 @@ object OpenBrowserOptions {
     windowName: String = null
   ): OpenBrowserOptions = {
     val __obj = js.Dynamic.literal()
-    if (browserPackage != null) __obj.updateDynamic("browserPackage")(browserPackage)
-    if (controlsColor != null) __obj.updateDynamic("controlsColor")(controlsColor)
-    if (!js.isUndefined(enableBarCollapsing)) __obj.updateDynamic("enableBarCollapsing")(enableBarCollapsing)
-    if (!js.isUndefined(showInRecents)) __obj.updateDynamic("showInRecents")(showInRecents)
-    if (!js.isUndefined(showTitle)) __obj.updateDynamic("showTitle")(showTitle)
-    if (toolbarColor != null) __obj.updateDynamic("toolbarColor")(toolbarColor)
-    if (windowFeatures != null) __obj.updateDynamic("windowFeatures")(windowFeatures)
-    if (windowName != null) __obj.updateDynamic("windowName")(windowName)
+    if (browserPackage != null) __obj.updateDynamic("browserPackage")(browserPackage.asInstanceOf[js.Any])
+    if (controlsColor != null) __obj.updateDynamic("controlsColor")(controlsColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableBarCollapsing)) __obj.updateDynamic("enableBarCollapsing")(enableBarCollapsing.asInstanceOf[js.Any])
+    if (!js.isUndefined(showInRecents)) __obj.updateDynamic("showInRecents")(showInRecents.asInstanceOf[js.Any])
+    if (!js.isUndefined(showTitle)) __obj.updateDynamic("showTitle")(showTitle.asInstanceOf[js.Any])
+    if (toolbarColor != null) __obj.updateDynamic("toolbarColor")(toolbarColor.asInstanceOf[js.Any])
+    if (windowFeatures != null) __obj.updateDynamic("windowFeatures")(windowFeatures.asInstanceOf[js.Any])
+    if (windowName != null) __obj.updateDynamic("windowName")(windowName.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenBrowserOptions]
   }
 }

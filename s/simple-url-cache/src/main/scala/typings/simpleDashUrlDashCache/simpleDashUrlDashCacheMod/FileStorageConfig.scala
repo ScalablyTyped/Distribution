@@ -12,8 +12,8 @@ trait FileStorageConfig extends StorageConfig {
 object FileStorageConfig {
   @scala.inline
   def apply(dir: String, `type`: String): FileStorageConfig = {
-    val __obj = js.Dynamic.literal(dir = dir)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(dir = dir.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileStorageConfig]
   }
 }

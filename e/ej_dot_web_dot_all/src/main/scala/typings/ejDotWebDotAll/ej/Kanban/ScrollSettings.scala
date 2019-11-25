@@ -27,7 +27,7 @@ object ScrollSettings {
     width: String | Double = null
   ): ScrollSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowFreezeSwimlane)) __obj.updateDynamic("allowFreezeSwimlane")(allowFreezeSwimlane)
+    if (!js.isUndefined(allowFreezeSwimlane)) __obj.updateDynamic("allowFreezeSwimlane")(allowFreezeSwimlane.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollSettings]

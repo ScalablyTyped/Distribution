@@ -35,12 +35,12 @@ object IExpandingCardStyleProps {
     expandedCardHeight: Int | Double = null,
     needsScroll: js.UndefOr[Boolean] = js.undefined
   ): IExpandingCardStyleProps = {
-    val __obj = js.Dynamic.literal(theme = theme)
-    if (className != null) __obj.updateDynamic("className")(className)
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (compactCardHeight != null) __obj.updateDynamic("compactCardHeight")(compactCardHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(expandedCardFirstFrameRendered)) __obj.updateDynamic("expandedCardFirstFrameRendered")(expandedCardFirstFrameRendered)
+    if (!js.isUndefined(expandedCardFirstFrameRendered)) __obj.updateDynamic("expandedCardFirstFrameRendered")(expandedCardFirstFrameRendered.asInstanceOf[js.Any])
     if (expandedCardHeight != null) __obj.updateDynamic("expandedCardHeight")(expandedCardHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(needsScroll)) __obj.updateDynamic("needsScroll")(needsScroll)
+    if (!js.isUndefined(needsScroll)) __obj.updateDynamic("needsScroll")(needsScroll.asInstanceOf[js.Any])
     __obj.asInstanceOf[IExpandingCardStyleProps]
   }
 }

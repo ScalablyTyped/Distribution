@@ -24,10 +24,10 @@ object UpdatePrivateAuctionProposalRequest {
     updateAction: String = null
   ): UpdatePrivateAuctionProposalRequest = {
     val __obj = js.Dynamic.literal()
-    if (externalDealId != null) __obj.updateDynamic("externalDealId")(externalDealId)
-    if (note != null) __obj.updateDynamic("note")(note)
-    if (proposalRevisionNumber != null) __obj.updateDynamic("proposalRevisionNumber")(proposalRevisionNumber)
-    if (updateAction != null) __obj.updateDynamic("updateAction")(updateAction)
+    if (externalDealId != null) __obj.updateDynamic("externalDealId")(externalDealId.asInstanceOf[js.Any])
+    if (note != null) __obj.updateDynamic("note")(note.asInstanceOf[js.Any])
+    if (proposalRevisionNumber != null) __obj.updateDynamic("proposalRevisionNumber")(proposalRevisionNumber.asInstanceOf[js.Any])
+    if (updateAction != null) __obj.updateDynamic("updateAction")(updateAction.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdatePrivateAuctionProposalRequest]
   }
 }

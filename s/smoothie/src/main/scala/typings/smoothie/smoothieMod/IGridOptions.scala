@@ -33,12 +33,12 @@ object IGridOptions {
     verticalSections: Int | Double = null
   ): IGridOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(borderVisible)) __obj.updateDynamic("borderVisible")(borderVisible)
-    if (fillStyle != null) __obj.updateDynamic("fillStyle")(fillStyle)
+    if (!js.isUndefined(borderVisible)) __obj.updateDynamic("borderVisible")(borderVisible.asInstanceOf[js.Any])
+    if (fillStyle != null) __obj.updateDynamic("fillStyle")(fillStyle.asInstanceOf[js.Any])
     if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
     if (millisPerLine != null) __obj.updateDynamic("millisPerLine")(millisPerLine.asInstanceOf[js.Any])
-    if (!js.isUndefined(sharpLines)) __obj.updateDynamic("sharpLines")(sharpLines)
-    if (strokeStyle != null) __obj.updateDynamic("strokeStyle")(strokeStyle)
+    if (!js.isUndefined(sharpLines)) __obj.updateDynamic("sharpLines")(sharpLines.asInstanceOf[js.Any])
+    if (strokeStyle != null) __obj.updateDynamic("strokeStyle")(strokeStyle.asInstanceOf[js.Any])
     if (verticalSections != null) __obj.updateDynamic("verticalSections")(verticalSections.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGridOptions]
   }

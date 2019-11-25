@@ -30,7 +30,7 @@ object PortalFeaturedGroups {
     propertyIsEnumerable: PropertyKey => Boolean,
     title: String
   ): PortalFeaturedGroups = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), owner = owner, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), title = title)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), owner = owner.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), title = title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PortalFeaturedGroups]
   }

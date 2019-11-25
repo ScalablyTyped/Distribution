@@ -23,8 +23,8 @@ object cssClasses {
     REVERSED_CLASS: `mdc-linear-progress--reversed`,
     StringDictionary: StringDictionary[String] = null
   ): cssClasses = {
-    val __obj = js.Dynamic.literal(CLOSED_CLASS = CLOSED_CLASS, INDETERMINATE_CLASS = INDETERMINATE_CLASS, REVERSED_CLASS = REVERSED_CLASS)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(CLOSED_CLASS = CLOSED_CLASS.asInstanceOf[js.Any], INDETERMINATE_CLASS = INDETERMINATE_CLASS.asInstanceOf[js.Any], REVERSED_CLASS = REVERSED_CLASS.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[cssClasses]
   }
 }

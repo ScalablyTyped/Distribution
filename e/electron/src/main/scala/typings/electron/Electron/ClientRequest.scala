@@ -11,7 +11,6 @@ import typings.electron.electronStrings.method
 import typings.electron.electronStrings.partition
 import typings.electron.electronStrings.path
 import typings.electron.electronStrings.port
-import typings.electron.electronStrings.protocol
 import typings.electron.electronStrings.redirect
 import typings.electron.electronStrings.response
 import typings.electron.electronStrings.url
@@ -24,7 +23,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Electron.ClientRequest")
 @js.native
 class ClientRequest protected () extends EventEmitter {
-  def this(options: method | url | typings.electron.electronStrings.session | partition | protocol | host | hostname | port | path | redirect) = this()
+  def this(options: method | url | typings.electron.electronStrings.session | partition | typings.electron.electronStrings.protocol | host | hostname | port | path | redirect) = this()
   var chunkedEncoding: Boolean = js.native
   /**
     * Cancels an ongoing HTTP transaction. If the request has already emitted the

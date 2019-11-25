@@ -13,8 +13,8 @@ object TemplateOptions {
   @scala.inline
   def apply(paramName: String = null, useWithBlock: js.UndefOr[Boolean] = js.undefined): TemplateOptions = {
     val __obj = js.Dynamic.literal()
-    if (paramName != null) __obj.updateDynamic("paramName")(paramName)
-    if (!js.isUndefined(useWithBlock)) __obj.updateDynamic("useWithBlock")(useWithBlock)
+    if (paramName != null) __obj.updateDynamic("paramName")(paramName.asInstanceOf[js.Any])
+    if (!js.isUndefined(useWithBlock)) __obj.updateDynamic("useWithBlock")(useWithBlock.asInstanceOf[js.Any])
     __obj.asInstanceOf[TemplateOptions]
   }
 }

@@ -13,7 +13,7 @@ trait PushChannelParameters extends js.Object {
 object PushChannelParameters {
   @scala.inline
   def apply(channels: js.Array[String], device: String, pushGateway: String): PushChannelParameters = {
-    val __obj = js.Dynamic.literal(channels = channels, device = device, pushGateway = pushGateway)
+    val __obj = js.Dynamic.literal(channels = channels.asInstanceOf[js.Any], device = device.asInstanceOf[js.Any], pushGateway = pushGateway.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PushChannelParameters]
   }

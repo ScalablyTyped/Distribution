@@ -14,8 +14,8 @@ object IDateTimePickerState {
   @scala.inline
   def apply(dateValue: Date = null, timeValue: Date = null): IDateTimePickerState = {
     val __obj = js.Dynamic.literal()
-    if (dateValue != null) __obj.updateDynamic("dateValue")(dateValue)
-    if (timeValue != null) __obj.updateDynamic("timeValue")(timeValue)
+    if (dateValue != null) __obj.updateDynamic("dateValue")(dateValue.asInstanceOf[js.Any])
+    if (timeValue != null) __obj.updateDynamic("timeValue")(timeValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDateTimePickerState]
   }
 }

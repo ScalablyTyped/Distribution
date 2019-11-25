@@ -12,7 +12,7 @@ trait Resolution extends js.Object {
 object Resolution {
   @scala.inline
   def apply(item: String, percent: String): Resolution = {
-    val __obj = js.Dynamic.literal(item = item, percent = percent)
+    val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], percent = percent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Resolution]
   }

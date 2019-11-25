@@ -25,7 +25,7 @@ object OpenAPISecurityHandlerArgs {
     securityDefinitions: SecurityDefinitionsObject,
     securityHandlers: SecurityHandlers
   ): OpenAPISecurityHandlerArgs = {
-    val __obj = js.Dynamic.literal(loggingKey = loggingKey, operationSecurity = operationSecurity, securityDefinitions = securityDefinitions, securityHandlers = securityHandlers)
+    val __obj = js.Dynamic.literal(loggingKey = loggingKey.asInstanceOf[js.Any], operationSecurity = operationSecurity.asInstanceOf[js.Any], securityDefinitions = securityDefinitions.asInstanceOf[js.Any], securityHandlers = securityHandlers.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OpenAPISecurityHandlerArgs]
   }

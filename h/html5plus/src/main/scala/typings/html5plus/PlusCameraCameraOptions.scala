@@ -92,11 +92,11 @@ object PlusCameraCameraOptions {
   ): PlusCameraCameraOptions = {
     val __obj = js.Dynamic.literal()
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(optimize)) __obj.updateDynamic("optimize")(optimize)
-    if (popover != null) __obj.updateDynamic("popover")(popover)
-    if (resolution != null) __obj.updateDynamic("resolution")(resolution)
+    if (!js.isUndefined(optimize)) __obj.updateDynamic("optimize")(optimize.asInstanceOf[js.Any])
+    if (popover != null) __obj.updateDynamic("popover")(popover.asInstanceOf[js.Any])
+    if (resolution != null) __obj.updateDynamic("resolution")(resolution.asInstanceOf[js.Any])
     if (videoMaximumDuration != null) __obj.updateDynamic("videoMaximumDuration")(videoMaximumDuration.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusCameraCameraOptions]
   }

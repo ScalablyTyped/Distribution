@@ -11,7 +11,7 @@ trait Anon_ShouldFadeIn extends js.Object {
 object Anon_ShouldFadeIn {
   @scala.inline
   def apply(shouldFadeIn: Boolean): Anon_ShouldFadeIn = {
-    val __obj = js.Dynamic.literal(shouldFadeIn = shouldFadeIn)
+    val __obj = js.Dynamic.literal(shouldFadeIn = shouldFadeIn.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ShouldFadeIn]
   }

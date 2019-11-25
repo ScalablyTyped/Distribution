@@ -31,9 +31,9 @@ object MeshCreateFromGLTFParams {
     geographic: js.UndefOr[Boolean] = js.undefined,
     signal: AbortSignal = null
   ): MeshCreateFromGLTFParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (!js.isUndefined(geographic)) __obj.updateDynamic("geographic")(geographic)
-    if (signal != null) __obj.updateDynamic("signal")(signal)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (!js.isUndefined(geographic)) __obj.updateDynamic("geographic")(geographic.asInstanceOf[js.Any])
+    if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
     __obj.asInstanceOf[MeshCreateFromGLTFParams]
   }
 }

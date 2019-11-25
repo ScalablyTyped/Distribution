@@ -42,11 +42,11 @@ object Mutation {
     upsert: Entity = null
   ): Mutation = {
     val __obj = js.Dynamic.literal()
-    if (baseVersion != null) __obj.updateDynamic("baseVersion")(baseVersion)
-    if (delete != null) __obj.updateDynamic("delete")(delete)
-    if (insert != null) __obj.updateDynamic("insert")(insert)
-    if (update != null) __obj.updateDynamic("update")(update)
-    if (upsert != null) __obj.updateDynamic("upsert")(upsert)
+    if (baseVersion != null) __obj.updateDynamic("baseVersion")(baseVersion.asInstanceOf[js.Any])
+    if (delete != null) __obj.updateDynamic("delete")(delete.asInstanceOf[js.Any])
+    if (insert != null) __obj.updateDynamic("insert")(insert.asInstanceOf[js.Any])
+    if (update != null) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
+    if (upsert != null) __obj.updateDynamic("upsert")(upsert.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mutation]
   }
 }

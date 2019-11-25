@@ -12,7 +12,7 @@ object AccountsCustomBatchRequest {
   @scala.inline
   def apply(entries: js.Array[AccountsCustomBatchRequestEntry] = null): AccountsCustomBatchRequest = {
     val __obj = js.Dynamic.literal()
-    if (entries != null) __obj.updateDynamic("entries")(entries)
+    if (entries != null) __obj.updateDynamic("entries")(entries.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountsCustomBatchRequest]
   }
 }

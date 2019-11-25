@@ -41,8 +41,8 @@ trait IItemOptions extends js.Object {
 object IItemOptions {
   @scala.inline
   def apply(category: String, command: String, args: ReadonlyJSONObject = null, rank: Int | Double = null): IItemOptions = {
-    val __obj = js.Dynamic.literal(category = category, command = command)
-    if (args != null) __obj.updateDynamic("args")(args)
+    val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any])
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
     if (rank != null) __obj.updateDynamic("rank")(rank.asInstanceOf[js.Any])
     __obj.asInstanceOf[IItemOptions]
   }

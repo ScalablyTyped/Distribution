@@ -28,11 +28,11 @@ object CreateIntentParams {
     headers: js.Object = null,
     return_response: js.UndefOr[Boolean] = js.undefined
   ): CreateIntentParams = {
-    val __obj = js.Dynamic.literal(intent = intent, workspace_id = workspace_id)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (examples != null) __obj.updateDynamic("examples")(examples)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response)
+    val __obj = js.Dynamic.literal(intent = intent.asInstanceOf[js.Any], workspace_id = workspace_id.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (examples != null) __obj.updateDynamic("examples")(examples.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateIntentParams]
   }
 }

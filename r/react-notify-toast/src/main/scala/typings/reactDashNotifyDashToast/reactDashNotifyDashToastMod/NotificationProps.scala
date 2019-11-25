@@ -12,7 +12,7 @@ object NotificationProps {
   @scala.inline
   def apply(options: Options = null): NotificationProps = {
     val __obj = js.Dynamic.literal()
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationProps]
   }
 }

@@ -13,7 +13,7 @@ trait CellLikeData extends js.Object {
 object CellLikeData {
   @scala.inline
   def apply(meta: Anon_Col, value: String): CellLikeData = {
-    val __obj = js.Dynamic.literal(meta = meta, value = value)
+    val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CellLikeData]
   }

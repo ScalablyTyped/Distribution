@@ -13,7 +13,7 @@ trait ShapeEvent extends js.Object {
 object ShapeEvent {
   @scala.inline
   def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Shape): ShapeEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ShapeEvent]
   }

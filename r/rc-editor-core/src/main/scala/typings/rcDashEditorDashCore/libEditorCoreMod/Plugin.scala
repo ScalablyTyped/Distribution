@@ -29,12 +29,12 @@ object Plugin {
     customStyleFn: js.Function = null,
     decorators: js.Array[_] = null
   ): Plugin = {
-    val __obj = js.Dynamic.literal(callbacks = callbacks, name = name, onChange = js.Any.fromFunction1(onChange))
-    if (blockRendererFn != null) __obj.updateDynamic("blockRendererFn")(blockRendererFn)
-    if (component != null) __obj.updateDynamic("component")(component)
-    if (config != null) __obj.updateDynamic("config")(config)
-    if (customStyleFn != null) __obj.updateDynamic("customStyleFn")(customStyleFn)
-    if (decorators != null) __obj.updateDynamic("decorators")(decorators)
+    val __obj = js.Dynamic.literal(callbacks = callbacks.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange))
+    if (blockRendererFn != null) __obj.updateDynamic("blockRendererFn")(blockRendererFn.asInstanceOf[js.Any])
+    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
+    if (customStyleFn != null) __obj.updateDynamic("customStyleFn")(customStyleFn.asInstanceOf[js.Any])
+    if (decorators != null) __obj.updateDynamic("decorators")(decorators.asInstanceOf[js.Any])
     __obj.asInstanceOf[Plugin]
   }
 }

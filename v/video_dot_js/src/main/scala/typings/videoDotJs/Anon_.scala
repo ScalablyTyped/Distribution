@@ -88,6 +88,6 @@ Instantiable0[Tech]
     *        The tech to add source handler functions to.
     *
     */
-  def withSourceHandlers(tech: /* import warning: ImportType.apply Failed type conversion: typeof Tech */ js.Any): Unit = js.native
+  def withSourceHandlers(tech: /* import warning: importer.ImportType#apply Failed type conversion: typeof Tech */ js.Any): Unit = js.native
 }
 

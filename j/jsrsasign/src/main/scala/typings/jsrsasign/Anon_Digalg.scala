@@ -26,7 +26,7 @@ object Anon_Digalg {
     sigval: String,
     version: String
   ): Anon_Digalg = {
-    val __obj = js.Dynamic.literal(digalg = digalg, obj = obj, sattrs = sattrs, si = si, sigalg = sigalg, sigval = sigval, version = version)
+    val __obj = js.Dynamic.literal(digalg = digalg.asInstanceOf[js.Any], obj = obj.asInstanceOf[js.Any], sattrs = sattrs.asInstanceOf[js.Any], si = si.asInstanceOf[js.Any], sigalg = sigalg.asInstanceOf[js.Any], sigval = sigval.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Digalg]
   }

@@ -16,7 +16,7 @@ object Anon_CellMinWidth {
   @scala.inline
   def apply[S /* <: Schema[_, _] */](View: NodeView[S] = null, cellMinWidth: Int | Double = null, handleWidth: Int | Double = null): Anon_CellMinWidth[S] = {
     val __obj = js.Dynamic.literal()
-    if (View != null) __obj.updateDynamic("View")(View)
+    if (View != null) __obj.updateDynamic("View")(View.asInstanceOf[js.Any])
     if (cellMinWidth != null) __obj.updateDynamic("cellMinWidth")(cellMinWidth.asInstanceOf[js.Any])
     if (handleWidth != null) __obj.updateDynamic("handleWidth")(handleWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CellMinWidth[S]]

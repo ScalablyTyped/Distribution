@@ -11,7 +11,7 @@ trait Anon_FontFamilyString extends js.Object {
 object Anon_FontFamilyString {
   @scala.inline
   def apply(fontFamily: String): Anon_FontFamilyString = {
-    val __obj = js.Dynamic.literal(fontFamily = fontFamily)
+    val __obj = js.Dynamic.literal(fontFamily = fontFamily.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FontFamilyString]
   }

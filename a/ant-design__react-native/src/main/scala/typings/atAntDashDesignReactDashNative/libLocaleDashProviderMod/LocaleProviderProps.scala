@@ -15,8 +15,8 @@ object LocaleProviderProps {
   @scala.inline
   def apply(children: ReactElement = null, locale: PartialLocale = null): LocaleProviderProps = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocaleProviderProps]
   }
 }

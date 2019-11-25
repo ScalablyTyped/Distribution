@@ -29,8 +29,8 @@ object UploadResponse {
     tileset: String,
     error: js.Any = null
   ): UploadResponse = {
-    val __obj = js.Dynamic.literal(complete = complete, created = created, id = id, modified = modified, name = name, owner = owner, progress = progress, tileset = tileset)
-    if (error != null) __obj.updateDynamic("error")(error)
+    val __obj = js.Dynamic.literal(complete = complete.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], modified = modified.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], tileset = tileset.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadResponse]
   }
 }

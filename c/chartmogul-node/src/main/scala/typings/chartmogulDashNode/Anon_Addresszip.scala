@@ -15,10 +15,10 @@ object Anon_Addresszip {
   @scala.inline
   def apply(address_zip: String = null, city: String = null, country: String = null, state: String = null): Anon_Addresszip = {
     val __obj = js.Dynamic.literal()
-    if (address_zip != null) __obj.updateDynamic("address_zip")(address_zip)
-    if (city != null) __obj.updateDynamic("city")(city)
-    if (country != null) __obj.updateDynamic("country")(country)
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (address_zip != null) __obj.updateDynamic("address_zip")(address_zip.asInstanceOf[js.Any])
+    if (city != null) __obj.updateDynamic("city")(city.asInstanceOf[js.Any])
+    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Addresszip]
   }
 }

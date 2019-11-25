@@ -15,8 +15,8 @@ object LookupRequest {
   @scala.inline
   def apply(keys: js.Array[Key] = null, readOptions: ReadOptions = null): LookupRequest = {
     val __obj = js.Dynamic.literal()
-    if (keys != null) __obj.updateDynamic("keys")(keys)
-    if (readOptions != null) __obj.updateDynamic("readOptions")(readOptions)
+    if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
+    if (readOptions != null) __obj.updateDynamic("readOptions")(readOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[LookupRequest]
   }
 }

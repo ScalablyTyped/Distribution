@@ -19,7 +19,7 @@ object Watermarks {
     lines: js.Array[Double],
     statements: js.Array[Double]
   ): Watermarks = {
-    val __obj = js.Dynamic.literal(branches = branches, functions = functions, lines = lines, statements = statements)
+    val __obj = js.Dynamic.literal(branches = branches.asInstanceOf[js.Any], functions = functions.asInstanceOf[js.Any], lines = lines.asInstanceOf[js.Any], statements = statements.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Watermarks]
   }

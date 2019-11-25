@@ -1,7 +1,6 @@
 package typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeMod
 
 import typings.atTensorflowTfjsDashCore.distTypesMod.DataType
-import typings.atTensorflowTfjsDashCore.distTypesMod.Rank
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,11 +20,11 @@ object zeros extends js.Object {
     *     be 'float32', 'int32' or 'bool'. Defaults to 'float'.
     */
   /** @doc {heading: 'Tensors', subheading: 'Creation'} */
-  def apply[R /* <: Rank */](
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
+  def apply[R /* <: typings.atTensorflowTfjsDashCore.distTypesMod.Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
   ): typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R] = js.native
-  def apply[R /* <: Rank */](
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+  def apply[R /* <: typings.atTensorflowTfjsDashCore.distTypesMod.Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     dtype: DataType
   ): typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R] = js.native
 }

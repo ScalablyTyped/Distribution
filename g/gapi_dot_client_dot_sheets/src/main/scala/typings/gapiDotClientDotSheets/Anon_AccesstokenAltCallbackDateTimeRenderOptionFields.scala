@@ -76,21 +76,21 @@ object Anon_AccesstokenAltCallbackDateTimeRenderOptionFields {
     upload_protocol: String = null,
     valueRenderOption: String = null
   ): Anon_AccesstokenAltCallbackDateTimeRenderOptionFields = {
-    val __obj = js.Dynamic.literal(range = range, spreadsheetId = spreadsheetId)
-    if (`$.xgafv` != null) __obj.updateDynamic("$.xgafv")(`$.xgafv`)
-    if (access_token != null) __obj.updateDynamic("access_token")(access_token)
-    if (alt != null) __obj.updateDynamic("alt")(alt)
-    if (callback != null) __obj.updateDynamic("callback")(callback)
-    if (dateTimeRenderOption != null) __obj.updateDynamic("dateTimeRenderOption")(dateTimeRenderOption)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (majorDimension != null) __obj.updateDynamic("majorDimension")(majorDimension)
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
-    if (uploadType != null) __obj.updateDynamic("uploadType")(uploadType)
-    if (upload_protocol != null) __obj.updateDynamic("upload_protocol")(upload_protocol)
-    if (valueRenderOption != null) __obj.updateDynamic("valueRenderOption")(valueRenderOption)
+    val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any], spreadsheetId = spreadsheetId.asInstanceOf[js.Any])
+    if (`$.xgafv` != null) __obj.updateDynamic("$.xgafv")(`$.xgafv`.asInstanceOf[js.Any])
+    if (access_token != null) __obj.updateDynamic("access_token")(access_token.asInstanceOf[js.Any])
+    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
+    if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
+    if (dateTimeRenderOption != null) __obj.updateDynamic("dateTimeRenderOption")(dateTimeRenderOption.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (majorDimension != null) __obj.updateDynamic("majorDimension")(majorDimension.asInstanceOf[js.Any])
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
+    if (uploadType != null) __obj.updateDynamic("uploadType")(uploadType.asInstanceOf[js.Any])
+    if (upload_protocol != null) __obj.updateDynamic("upload_protocol")(upload_protocol.asInstanceOf[js.Any])
+    if (valueRenderOption != null) __obj.updateDynamic("valueRenderOption")(valueRenderOption.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AccesstokenAltCallbackDateTimeRenderOptionFields]
   }
 }

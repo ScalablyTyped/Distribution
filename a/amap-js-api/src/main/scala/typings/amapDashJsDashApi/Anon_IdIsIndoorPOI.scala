@@ -28,7 +28,7 @@ trait Anon_IdIsIndoorPOI extends js.Object {
 object Anon_IdIsIndoorPOI {
   @scala.inline
   def apply(id: String, isIndoorPOI: Boolean, lnglat: LngLat, name: String): Anon_IdIsIndoorPOI = {
-    val __obj = js.Dynamic.literal(id = id, isIndoorPOI = isIndoorPOI, lnglat = lnglat, name = name)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], isIndoorPOI = isIndoorPOI.asInstanceOf[js.Any], lnglat = lnglat.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IdIsIndoorPOI]
   }

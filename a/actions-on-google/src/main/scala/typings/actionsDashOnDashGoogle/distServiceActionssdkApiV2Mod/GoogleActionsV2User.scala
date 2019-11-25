@@ -74,16 +74,16 @@ object GoogleActionsV2User {
     userVerificationStatus: GoogleActionsV2UserUserVerificationStatus = null
   ): GoogleActionsV2User = {
     val __obj = js.Dynamic.literal()
-    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken)
-    if (idToken != null) __obj.updateDynamic("idToken")(idToken)
-    if (lastSeen != null) __obj.updateDynamic("lastSeen")(lastSeen)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (packageEntitlements != null) __obj.updateDynamic("packageEntitlements")(packageEntitlements)
-    if (permissions != null) __obj.updateDynamic("permissions")(permissions)
-    if (profile != null) __obj.updateDynamic("profile")(profile)
-    if (userId != null) __obj.updateDynamic("userId")(userId)
-    if (userStorage != null) __obj.updateDynamic("userStorage")(userStorage)
-    if (userVerificationStatus != null) __obj.updateDynamic("userVerificationStatus")(userVerificationStatus)
+    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken.asInstanceOf[js.Any])
+    if (idToken != null) __obj.updateDynamic("idToken")(idToken.asInstanceOf[js.Any])
+    if (lastSeen != null) __obj.updateDynamic("lastSeen")(lastSeen.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
+    if (packageEntitlements != null) __obj.updateDynamic("packageEntitlements")(packageEntitlements.asInstanceOf[js.Any])
+    if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
+    if (profile != null) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
+    if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
+    if (userStorage != null) __obj.updateDynamic("userStorage")(userStorage.asInstanceOf[js.Any])
+    if (userVerificationStatus != null) __obj.updateDynamic("userVerificationStatus")(userVerificationStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2User]
   }
 }

@@ -23,7 +23,7 @@ object ServiceCustomizationDefinition {
     client: js.Array[CustomizationDefinition],
     commands: StringDictionary[js.Array[CustomizationDefinition]]
   ): ServiceCustomizationDefinition = {
-    val __obj = js.Dynamic.literal(client = client, commands = commands)
+    val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], commands = commands.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ServiceCustomizationDefinition]
   }

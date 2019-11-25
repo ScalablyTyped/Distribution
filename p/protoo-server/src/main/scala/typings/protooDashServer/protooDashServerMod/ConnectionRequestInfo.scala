@@ -15,7 +15,7 @@ trait ConnectionRequestInfo extends js.Object {
 object ConnectionRequestInfo {
   @scala.inline
   def apply(origin: String, request: IncomingMessage, socket: Socket): ConnectionRequestInfo = {
-    val __obj = js.Dynamic.literal(origin = origin, request = request, socket = socket)
+    val __obj = js.Dynamic.literal(origin = origin.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], socket = socket.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ConnectionRequestInfo]
   }

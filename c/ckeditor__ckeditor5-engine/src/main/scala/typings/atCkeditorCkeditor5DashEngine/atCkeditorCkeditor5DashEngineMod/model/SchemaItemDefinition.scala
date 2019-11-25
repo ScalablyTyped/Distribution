@@ -31,7 +31,7 @@ object SchemaItemDefinition {
     isLimit: Boolean,
     isObject: Boolean
   ): SchemaItemDefinition = {
-    val __obj = js.Dynamic.literal(allowAttributes = allowAttributes.asInstanceOf[js.Any], allowAttributesOf = allowAttributesOf.asInstanceOf[js.Any], allowContentOf = allowContentOf.asInstanceOf[js.Any], allowIn = allowIn.asInstanceOf[js.Any], allowWhere = allowWhere.asInstanceOf[js.Any], inheritAllFrom = inheritAllFrom.asInstanceOf[js.Any], inheritTypesFrom = inheritTypesFrom.asInstanceOf[js.Any], isBlock = isBlock, isLimit = isLimit, isObject = isObject)
+    val __obj = js.Dynamic.literal(allowAttributes = allowAttributes.asInstanceOf[js.Any], allowAttributesOf = allowAttributesOf.asInstanceOf[js.Any], allowContentOf = allowContentOf.asInstanceOf[js.Any], allowIn = allowIn.asInstanceOf[js.Any], allowWhere = allowWhere.asInstanceOf[js.Any], inheritAllFrom = inheritAllFrom.asInstanceOf[js.Any], inheritTypesFrom = inheritTypesFrom.asInstanceOf[js.Any], isBlock = isBlock.asInstanceOf[js.Any], isLimit = isLimit.asInstanceOf[js.Any], isObject = isObject.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SchemaItemDefinition]
   }

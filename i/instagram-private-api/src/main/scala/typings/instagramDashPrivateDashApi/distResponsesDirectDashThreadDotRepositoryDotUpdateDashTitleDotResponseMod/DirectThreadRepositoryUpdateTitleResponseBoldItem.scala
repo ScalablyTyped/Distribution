@@ -12,7 +12,7 @@ trait DirectThreadRepositoryUpdateTitleResponseBoldItem extends js.Object {
 object DirectThreadRepositoryUpdateTitleResponseBoldItem {
   @scala.inline
   def apply(end: Double, start: Double): DirectThreadRepositoryUpdateTitleResponseBoldItem = {
-    val __obj = js.Dynamic.literal(end = end, start = start)
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DirectThreadRepositoryUpdateTitleResponseBoldItem]
   }

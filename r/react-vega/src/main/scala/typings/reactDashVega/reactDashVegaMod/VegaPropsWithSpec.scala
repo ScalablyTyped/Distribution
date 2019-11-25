@@ -34,18 +34,18 @@ object VegaPropsWithSpec {
     tooltip: (/* handler */ js.Any, /* event */ MouseEvent, /* item */ Item[js.Any], /* value */ js.Any) => Unit = null,
     width: Int | Double = null
   ): VegaPropsWithSpec = {
-    val __obj = js.Dynamic.literal(spec = spec)
-    if (background != null) __obj.updateDynamic("background")(background)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (!js.isUndefined(enableHover)) __obj.updateDynamic("enableHover")(enableHover)
+    val __obj = js.Dynamic.literal(spec = spec.asInstanceOf[js.Any])
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableHover)) __obj.updateDynamic("enableHover")(enableHover.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
     if (onNewView != null) __obj.updateDynamic("onNewView")(js.Any.fromFunction1(onNewView))
     if (onParseError != null) __obj.updateDynamic("onParseError")(js.Any.fromFunction1(onParseError))
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (renderer != null) __obj.updateDynamic("renderer")(renderer)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (renderer != null) __obj.updateDynamic("renderer")(renderer.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(js.Any.fromFunction4(tooltip))
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[VegaPropsWithSpec]

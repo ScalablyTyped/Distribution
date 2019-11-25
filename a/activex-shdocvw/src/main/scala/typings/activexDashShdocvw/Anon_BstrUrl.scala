@@ -15,7 +15,7 @@ trait Anon_BstrUrl extends js.Object {
 object Anon_BstrUrl {
   @scala.inline
   def apply(Cancel: Boolean, bstrUrl: String, bstrUrlContext: String, dwFlags: Double, ppDisp: js.Any): Anon_BstrUrl = {
-    val __obj = js.Dynamic.literal(Cancel = Cancel, bstrUrl = bstrUrl, bstrUrlContext = bstrUrlContext, dwFlags = dwFlags, ppDisp = ppDisp)
+    val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], bstrUrl = bstrUrl.asInstanceOf[js.Any], bstrUrlContext = bstrUrlContext.asInstanceOf[js.Any], dwFlags = dwFlags.asInstanceOf[js.Any], ppDisp = ppDisp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BstrUrl]
   }

@@ -22,11 +22,11 @@ object TableDataInsertAllRequest {
     templateSuffix: String = null
   ): TableDataInsertAllRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ignoreUnknownValues)) __obj.updateDynamic("ignoreUnknownValues")(ignoreUnknownValues)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (rows != null) __obj.updateDynamic("rows")(rows)
-    if (!js.isUndefined(skipInvalidRows)) __obj.updateDynamic("skipInvalidRows")(skipInvalidRows)
-    if (templateSuffix != null) __obj.updateDynamic("templateSuffix")(templateSuffix)
+    if (!js.isUndefined(ignoreUnknownValues)) __obj.updateDynamic("ignoreUnknownValues")(ignoreUnknownValues.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipInvalidRows)) __obj.updateDynamic("skipInvalidRows")(skipInvalidRows.asInstanceOf[js.Any])
+    if (templateSuffix != null) __obj.updateDynamic("templateSuffix")(templateSuffix.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableDataInsertAllRequest]
   }
 }

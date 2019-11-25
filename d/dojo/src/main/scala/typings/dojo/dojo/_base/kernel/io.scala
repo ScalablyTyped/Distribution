@@ -24,7 +24,7 @@ trait io extends js.Object {
 object io {
   @scala.inline
   def apply(iframe: js.Object, script: js.Object): io = {
-    val __obj = js.Dynamic.literal(iframe = iframe, script = script)
+    val __obj = js.Dynamic.literal(iframe = iframe.asInstanceOf[js.Any], script = script.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[io]
   }

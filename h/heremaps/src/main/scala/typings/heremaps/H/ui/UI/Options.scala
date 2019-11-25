@@ -48,7 +48,7 @@ object Options {
     if (mapsettings != null) __obj.updateDynamic("mapsettings")(mapsettings.asInstanceOf[js.Any])
     if (panorama != null) __obj.updateDynamic("panorama")(panorama.asInstanceOf[js.Any])
     if (scalebar != null) __obj.updateDynamic("scalebar")(scalebar.asInstanceOf[js.Any])
-    if (unitSystem != null) __obj.updateDynamic("unitSystem")(unitSystem)
+    if (unitSystem != null) __obj.updateDynamic("unitSystem")(unitSystem.asInstanceOf[js.Any])
     if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
     if (zoomrectangle != null) __obj.updateDynamic("zoomrectangle")(zoomrectangle.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

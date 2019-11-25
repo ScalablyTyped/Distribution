@@ -27,14 +27,14 @@ object InlineKeyboardButton {
     switch_inline_query_current_chat: String = null,
     url: String = null
   ): InlineKeyboardButton = {
-    val __obj = js.Dynamic.literal(text = text)
-    if (callback_data != null) __obj.updateDynamic("callback_data")(callback_data)
-    if (callback_game != null) __obj.updateDynamic("callback_game")(callback_game)
-    if (login_url != null) __obj.updateDynamic("login_url")(login_url)
-    if (!js.isUndefined(pay)) __obj.updateDynamic("pay")(pay)
-    if (switch_inline_query != null) __obj.updateDynamic("switch_inline_query")(switch_inline_query)
-    if (switch_inline_query_current_chat != null) __obj.updateDynamic("switch_inline_query_current_chat")(switch_inline_query_current_chat)
-    if (url != null) __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
+    if (callback_data != null) __obj.updateDynamic("callback_data")(callback_data.asInstanceOf[js.Any])
+    if (callback_game != null) __obj.updateDynamic("callback_game")(callback_game.asInstanceOf[js.Any])
+    if (login_url != null) __obj.updateDynamic("login_url")(login_url.asInstanceOf[js.Any])
+    if (!js.isUndefined(pay)) __obj.updateDynamic("pay")(pay.asInstanceOf[js.Any])
+    if (switch_inline_query != null) __obj.updateDynamic("switch_inline_query")(switch_inline_query.asInstanceOf[js.Any])
+    if (switch_inline_query_current_chat != null) __obj.updateDynamic("switch_inline_query_current_chat")(switch_inline_query_current_chat.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[InlineKeyboardButton]
   }
 }

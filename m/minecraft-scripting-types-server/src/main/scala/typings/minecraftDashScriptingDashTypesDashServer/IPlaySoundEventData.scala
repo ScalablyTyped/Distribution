@@ -33,7 +33,7 @@ trait IPlaySoundEventData extends js.Object {
 object IPlaySoundEventData {
   @scala.inline
   def apply(pitch: Double, position: VectorArray, sound: String, volume: Double): IPlaySoundEventData = {
-    val __obj = js.Dynamic.literal(pitch = pitch, position = position, sound = sound, volume = volume)
+    val __obj = js.Dynamic.literal(pitch = pitch.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], sound = sound.asInstanceOf[js.Any], volume = volume.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IPlaySoundEventData]
   }

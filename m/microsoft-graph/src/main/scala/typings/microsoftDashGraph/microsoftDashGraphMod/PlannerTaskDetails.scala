@@ -28,11 +28,11 @@ object PlannerTaskDetails {
     references: PlannerExternalReferences = null
   ): PlannerTaskDetails = {
     val __obj = js.Dynamic.literal()
-    if (checklist != null) __obj.updateDynamic("checklist")(checklist)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (previewType != null) __obj.updateDynamic("previewType")(previewType)
-    if (references != null) __obj.updateDynamic("references")(references)
+    if (checklist != null) __obj.updateDynamic("checklist")(checklist.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (previewType != null) __obj.updateDynamic("previewType")(previewType.asInstanceOf[js.Any])
+    if (references != null) __obj.updateDynamic("references")(references.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlannerTaskDetails]
   }
 }

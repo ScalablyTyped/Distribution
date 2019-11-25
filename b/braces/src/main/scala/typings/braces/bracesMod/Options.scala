@@ -100,13 +100,13 @@ object Options {
     unescape: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(expand)) __obj.updateDynamic("expand")(expand)
+    if (!js.isUndefined(expand)) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
     if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
-    if (!js.isUndefined(nodupes)) __obj.updateDynamic("nodupes")(nodupes)
-    if (!js.isUndefined(quantifiers)) __obj.updateDynamic("quantifiers")(quantifiers)
+    if (!js.isUndefined(nodupes)) __obj.updateDynamic("nodupes")(nodupes.asInstanceOf[js.Any])
+    if (!js.isUndefined(quantifiers)) __obj.updateDynamic("quantifiers")(quantifiers.asInstanceOf[js.Any])
     if (rangeLimit != null) __obj.updateDynamic("rangeLimit")(rangeLimit.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction1(transform))
-    if (!js.isUndefined(unescape)) __obj.updateDynamic("unescape")(unescape)
+    if (!js.isUndefined(unescape)) __obj.updateDynamic("unescape")(unescape.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

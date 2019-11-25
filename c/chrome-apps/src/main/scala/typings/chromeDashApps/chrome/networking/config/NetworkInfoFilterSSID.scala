@@ -16,7 +16,7 @@ object NetworkInfoFilterSSID {
   @scala.inline
   def apply(SSID: String = null): NetworkInfoFilterSSID = {
     val __obj = js.Dynamic.literal()
-    if (SSID != null) __obj.updateDynamic("SSID")(SSID)
+    if (SSID != null) __obj.updateDynamic("SSID")(SSID.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkInfoFilterSSID]
   }
 }

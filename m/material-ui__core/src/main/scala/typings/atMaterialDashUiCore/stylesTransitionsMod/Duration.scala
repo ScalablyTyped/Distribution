@@ -26,7 +26,7 @@ object Duration {
     shortest: Double,
     standard: Double
   ): Duration = {
-    val __obj = js.Dynamic.literal(complex = complex, enteringScreen = enteringScreen, leavingScreen = leavingScreen, short = short, shorter = shorter, shortest = shortest, standard = standard)
+    val __obj = js.Dynamic.literal(complex = complex.asInstanceOf[js.Any], enteringScreen = enteringScreen.asInstanceOf[js.Any], leavingScreen = leavingScreen.asInstanceOf[js.Any], short = short.asInstanceOf[js.Any], shorter = shorter.asInstanceOf[js.Any], shortest = shortest.asInstanceOf[js.Any], standard = standard.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Duration]
   }

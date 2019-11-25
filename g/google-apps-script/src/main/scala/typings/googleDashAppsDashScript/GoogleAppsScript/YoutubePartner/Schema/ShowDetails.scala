@@ -20,10 +20,10 @@ object ShowDetails {
     title: String = null
   ): ShowDetails = {
     val __obj = js.Dynamic.literal()
-    if (episodeNumber != null) __obj.updateDynamic("episodeNumber")(episodeNumber)
-    if (episodeTitle != null) __obj.updateDynamic("episodeTitle")(episodeTitle)
-    if (seasonNumber != null) __obj.updateDynamic("seasonNumber")(seasonNumber)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (episodeNumber != null) __obj.updateDynamic("episodeNumber")(episodeNumber.asInstanceOf[js.Any])
+    if (episodeTitle != null) __obj.updateDynamic("episodeTitle")(episodeTitle.asInstanceOf[js.Any])
+    if (seasonNumber != null) __obj.updateDynamic("seasonNumber")(seasonNumber.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShowDetails]
   }
 }

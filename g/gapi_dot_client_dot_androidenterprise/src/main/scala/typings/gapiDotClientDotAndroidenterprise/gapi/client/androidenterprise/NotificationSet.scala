@@ -20,9 +20,9 @@ object NotificationSet {
   @scala.inline
   def apply(kind: String = null, notification: js.Array[Notification] = null, notificationSetId: String = null): NotificationSet = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (notification != null) __obj.updateDynamic("notification")(notification)
-    if (notificationSetId != null) __obj.updateDynamic("notificationSetId")(notificationSetId)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (notification != null) __obj.updateDynamic("notification")(notification.asInstanceOf[js.Any])
+    if (notificationSetId != null) __obj.updateDynamic("notificationSetId")(notificationSetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationSet]
   }
 }

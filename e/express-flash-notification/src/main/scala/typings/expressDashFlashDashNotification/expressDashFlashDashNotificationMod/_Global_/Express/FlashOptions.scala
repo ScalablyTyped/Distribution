@@ -20,10 +20,10 @@ object FlashOptions {
     url: String = null
   ): FlashOptions = {
     val __obj = js.Dynamic.literal()
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (!js.isUndefined(redirect)) __obj.updateDynamic("redirect")(redirect)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (!js.isUndefined(redirect)) __obj.updateDynamic("redirect")(redirect.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlashOptions]
   }
 }

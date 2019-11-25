@@ -36,10 +36,10 @@ object PageProps {
     width: String = null
   ): PageProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (!js.isUndefined(fluid)) __obj.updateDynamic("fluid")(fluid)
-    if (tagName != null) __obj.updateDynamic("tagName")(tagName)
-    if (width != null) __obj.updateDynamic("width")(width)
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (!js.isUndefined(fluid)) __obj.updateDynamic("fluid")(fluid.asInstanceOf[js.Any])
+    if (tagName != null) __obj.updateDynamic("tagName")(tagName.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageProps]
   }
 }

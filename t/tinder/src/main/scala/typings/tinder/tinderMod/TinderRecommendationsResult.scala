@@ -18,8 +18,8 @@ trait TinderRecommendationsResult extends js.Object {
 object TinderRecommendationsResult {
   @scala.inline
   def apply(results: js.Array[TinderRecommendation], status: Number, message: String = null): TinderRecommendationsResult = {
-    val __obj = js.Dynamic.literal(results = results, status = status)
-    if (message != null) __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(results = results.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[TinderRecommendationsResult]
   }
 }

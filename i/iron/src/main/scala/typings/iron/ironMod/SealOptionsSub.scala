@@ -35,7 +35,7 @@ object SealOptionsSub {
     minPasswordlength: Double,
     saltBits: Double
   ): SealOptionsSub = {
-    val __obj = js.Dynamic.literal(algorithm = algorithm.asInstanceOf[js.Any], iterations = iterations, minPasswordlength = minPasswordlength, saltBits = saltBits)
+    val __obj = js.Dynamic.literal(algorithm = algorithm.asInstanceOf[js.Any], iterations = iterations.asInstanceOf[js.Any], minPasswordlength = minPasswordlength.asInstanceOf[js.Any], saltBits = saltBits.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SealOptionsSub]
   }

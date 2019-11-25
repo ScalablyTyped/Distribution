@@ -13,8 +13,8 @@ object JsGraphResponse {
   @scala.inline
   def apply(error: js.Any = null, result: js.Any = null): JsGraphResponse = {
     val __obj = js.Dynamic.literal()
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (result != null) __obj.updateDynamic("result")(result)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
     __obj.asInstanceOf[JsGraphResponse]
   }
 }

@@ -23,10 +23,10 @@ object QuickInfo {
     documentation: js.Array[SymbolDisplayPart] = null,
     tags: js.Array[JSDocTagInfo] = null
   ): QuickInfo = {
-    val __obj = js.Dynamic.literal(kind = kind, kindModifiers = kindModifiers, textSpan = textSpan)
-    if (displayParts != null) __obj.updateDynamic("displayParts")(displayParts)
-    if (documentation != null) __obj.updateDynamic("documentation")(documentation)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], kindModifiers = kindModifiers.asInstanceOf[js.Any], textSpan = textSpan.asInstanceOf[js.Any])
+    if (displayParts != null) __obj.updateDynamic("displayParts")(displayParts.asInstanceOf[js.Any])
+    if (documentation != null) __obj.updateDynamic("documentation")(documentation.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuickInfo]
   }
 }

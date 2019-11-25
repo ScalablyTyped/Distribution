@@ -14,9 +14,9 @@ trait GetMembershipsResponse extends js.Object {
 object GetMembershipsResponse {
   @scala.inline
   def apply(data: js.Array[ObjectData], status: Double, next: String = null, prev: String = null): GetMembershipsResponse = {
-    val __obj = js.Dynamic.literal(data = data, status = status)
-    if (next != null) __obj.updateDynamic("next")(next)
-    if (prev != null) __obj.updateDynamic("prev")(prev)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
+    if (prev != null) __obj.updateDynamic("prev")(prev.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMembershipsResponse]
   }
 }

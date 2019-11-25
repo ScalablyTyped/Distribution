@@ -33,14 +33,14 @@ object SecureContextOptions {
     pfx: js.Any = null
   ): SecureContextOptions = {
     val __obj = js.Dynamic.literal()
-    if (ca != null) __obj.updateDynamic("ca")(ca)
-    if (cert != null) __obj.updateDynamic("cert")(cert)
-    if (ciphers != null) __obj.updateDynamic("ciphers")(ciphers)
-    if (crl != null) __obj.updateDynamic("crl")(crl)
-    if (!js.isUndefined(honorCipherOrder)) __obj.updateDynamic("honorCipherOrder")(honorCipherOrder)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase)
-    if (pfx != null) __obj.updateDynamic("pfx")(pfx)
+    if (ca != null) __obj.updateDynamic("ca")(ca.asInstanceOf[js.Any])
+    if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
+    if (ciphers != null) __obj.updateDynamic("ciphers")(ciphers.asInstanceOf[js.Any])
+    if (crl != null) __obj.updateDynamic("crl")(crl.asInstanceOf[js.Any])
+    if (!js.isUndefined(honorCipherOrder)) __obj.updateDynamic("honorCipherOrder")(honorCipherOrder.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase.asInstanceOf[js.Any])
+    if (pfx != null) __obj.updateDynamic("pfx")(pfx.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecureContextOptions]
   }
 }

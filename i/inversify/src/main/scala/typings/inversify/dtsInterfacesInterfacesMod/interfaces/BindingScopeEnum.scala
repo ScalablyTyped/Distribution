@@ -13,7 +13,7 @@ trait BindingScopeEnum extends js.Object {
 object BindingScopeEnum {
   @scala.inline
   def apply(Request: BindingScope, Singleton: BindingScope, Transient: BindingScope): BindingScopeEnum = {
-    val __obj = js.Dynamic.literal(Request = Request, Singleton = Singleton, Transient = Transient)
+    val __obj = js.Dynamic.literal(Request = Request.asInstanceOf[js.Any], Singleton = Singleton.asInstanceOf[js.Any], Transient = Transient.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BindingScopeEnum]
   }

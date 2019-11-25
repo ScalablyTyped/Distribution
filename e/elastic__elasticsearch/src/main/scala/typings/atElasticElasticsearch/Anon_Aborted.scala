@@ -26,8 +26,8 @@ object Anon_Aborted {
     request: Anon_IdOptions,
     sniff: Anon_Hosts = null
   ): Anon_Aborted[C] = {
-    val __obj = js.Dynamic.literal(aborted = aborted, attempts = attempts, connection = connection, context = context.asInstanceOf[js.Any], name = name, request = request)
-    if (sniff != null) __obj.updateDynamic("sniff")(sniff)
+    val __obj = js.Dynamic.literal(aborted = aborted.asInstanceOf[js.Any], attempts = attempts.asInstanceOf[js.Any], connection = connection.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
+    if (sniff != null) __obj.updateDynamic("sniff")(sniff.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Aborted[C]]
   }
 }

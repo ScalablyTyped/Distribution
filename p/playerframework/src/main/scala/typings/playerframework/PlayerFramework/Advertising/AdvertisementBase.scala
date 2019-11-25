@@ -11,7 +11,7 @@ trait AdvertisementBase extends js.Object {
 object AdvertisementBase {
   @scala.inline
   def apply(source: js.Any): AdvertisementBase = {
-    val __obj = js.Dynamic.literal(source = source)
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AdvertisementBase]
   }

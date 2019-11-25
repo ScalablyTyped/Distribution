@@ -20,7 +20,7 @@ object _UnmarshalledSegmentGroupList {
   @scala.inline
   def apply(Groups: js.Array[_UnmarshalledSegmentGroup] = null, Include: ALL | ANY | NONE | String = null): _UnmarshalledSegmentGroupList = {
     val __obj = js.Dynamic.literal()
-    if (Groups != null) __obj.updateDynamic("Groups")(Groups)
+    if (Groups != null) __obj.updateDynamic("Groups")(Groups.asInstanceOf[js.Any])
     if (Include != null) __obj.updateDynamic("Include")(Include.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledSegmentGroupList]
   }

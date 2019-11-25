@@ -27,12 +27,12 @@ object Anon_AutoBorderColor {
     svgStyle: js.Object = null
   ): Anon_AutoBorderColor = {
     val __obj = js.Dynamic.literal()
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
-    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius)
-    if (color != null) __obj.updateDynamic("color")(color)
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
+    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (rendered != null) __obj.updateDynamic("rendered")(rendered.asInstanceOf[js.Any])
-    if (svgClassName != null) __obj.updateDynamic("svgClassName")(svgClassName)
-    if (svgStyle != null) __obj.updateDynamic("svgStyle")(svgStyle)
+    if (svgClassName != null) __obj.updateDynamic("svgClassName")(svgClassName.asInstanceOf[js.Any])
+    if (svgStyle != null) __obj.updateDynamic("svgStyle")(svgStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AutoBorderColor]
   }
 }

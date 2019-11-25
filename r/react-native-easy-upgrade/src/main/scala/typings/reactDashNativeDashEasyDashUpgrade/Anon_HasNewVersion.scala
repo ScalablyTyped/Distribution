@@ -21,7 +21,7 @@ object Anon_HasNewVersion {
     lookupInfo: Anon_Key,
     trackViewUrl: String
   ): Anon_HasNewVersion = {
-    val __obj = js.Dynamic.literal(hasNewVersion = hasNewVersion, latestVersion = latestVersion, localVersion = localVersion, lookupInfo = lookupInfo, trackViewUrl = trackViewUrl)
+    val __obj = js.Dynamic.literal(hasNewVersion = hasNewVersion.asInstanceOf[js.Any], latestVersion = latestVersion.asInstanceOf[js.Any], localVersion = localVersion.asInstanceOf[js.Any], lookupInfo = lookupInfo.asInstanceOf[js.Any], trackViewUrl = trackViewUrl.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_HasNewVersion]
   }

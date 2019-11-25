@@ -31,7 +31,7 @@ object SodaCollectionOptions {
   @scala.inline
   def apply(metaData: SodaMetadata = null, mode: Int | Double = null): SodaCollectionOptions = {
     val __obj = js.Dynamic.literal()
-    if (metaData != null) __obj.updateDynamic("metaData")(metaData)
+    if (metaData != null) __obj.updateDynamic("metaData")(metaData.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SodaCollectionOptions]
   }

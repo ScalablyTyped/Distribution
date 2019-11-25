@@ -22,10 +22,10 @@ object ReplacementSolution {
     priority: Int | Double = null,
     title: String = null
   ): ReplacementSolution = {
-    val __obj = js.Dynamic.literal(position = position, replaceWith = replaceWith)
-    if (currentText != null) __obj.updateDynamic("currentText")(currentText)
+    val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any], replaceWith = replaceWith.asInstanceOf[js.Any])
+    if (currentText != null) __obj.updateDynamic("currentText")(currentText.asInstanceOf[js.Any])
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplacementSolution]
   }
 }

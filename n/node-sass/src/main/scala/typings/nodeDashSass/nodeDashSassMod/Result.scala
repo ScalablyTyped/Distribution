@@ -15,7 +15,7 @@ trait Result extends js.Object {
 object Result {
   @scala.inline
   def apply(css: Buffer, map: Buffer, stats: Anon_Duration): Result = {
-    val __obj = js.Dynamic.literal(css = css, map = map, stats = stats)
+    val __obj = js.Dynamic.literal(css = css.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Result]
   }

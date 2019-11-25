@@ -24,8 +24,8 @@ package object dashPrivateTypesMod {
   type EmberClassArguments = StringDictionary[js.Any]
   type EmberClassConstructor[T] = (Instantiable1[js.UndefOr[/* properties */ js.Object], T]) with (Instantiable1[/* args (repeated) */ js.Any, T])
   type EmberInstanceArguments[T] = Partial[T] with StringDictionary[js.Any]
-  type ExtractPropertyNamesOfType[T, S] = /* import warning: ImportType.apply Failed type conversion: {[ K in keyof T ]: T[K] extends S? K : never}[keyof T] */ js.Any
-  type Fix[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type ExtractPropertyNamesOfType[T, S] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends S? K : never}[keyof T] */ js.Any
+  type Fix[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: T[K]}
     */ typings.atEmberObject.atEmberObjectStrings.Fix with T
   type MixinOrLiteral[T, Base] = (default[T, Base]) | T
@@ -39,11 +39,11 @@ package object dashPrivateTypesMod {
     Unit
   ])
   type UnwrapComputedPropertyGetter[T] = T
-  type UnwrapComputedPropertyGetters[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type UnwrapComputedPropertyGetters[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: @ember/object.@ember/object/-private/types.UnwrapComputedPropertyGetter<T[P]>}
     */ typings.atEmberObject.atEmberObjectStrings.UnwrapComputedPropertyGetters with T
   type UnwrapComputedPropertySetter[T] = T
-  type UnwrapComputedPropertySetters[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type UnwrapComputedPropertySetters[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: @ember/object.@ember/object/-private/types.UnwrapComputedPropertySetter<T[P]>}
     */ typings.atEmberObject.atEmberObjectStrings.UnwrapComputedPropertySetters with T
 }

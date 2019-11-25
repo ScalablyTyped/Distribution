@@ -27,7 +27,7 @@ object Validator {
   ): Validator = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[Validator]
   }
 }

@@ -48,15 +48,15 @@ object Item {
     `type`: String = null
   ): Item = {
     val __obj = js.Dynamic.literal()
-    if (badge != null) __obj.updateDynamic("badge")(badge)
-    if (click != null) __obj.updateDynamic("click")(click)
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (prependTo != null) __obj.updateDynamic("prependTo")(prependTo)
-    if (sliderSettings != null) __obj.updateDynamic("sliderSettings")(sliderSettings)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (badge != null) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
+    if (click != null) __obj.updateDynamic("click")(click.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (prependTo != null) __obj.updateDynamic("prependTo")(prependTo.asInstanceOf[js.Any])
+    if (sliderSettings != null) __obj.updateDynamic("sliderSettings")(sliderSettings.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Item]
   }
 }

@@ -16,9 +16,9 @@ object Anon_Code {
   @scala.inline
   def apply(code: String = null, color: String = null, face: String = null, size: Int | Double = null): Anon_Code = {
     val __obj = js.Dynamic.literal()
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (face != null) __obj.updateDynamic("face")(face)
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (face != null) __obj.updateDynamic("face")(face.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Code]
   }

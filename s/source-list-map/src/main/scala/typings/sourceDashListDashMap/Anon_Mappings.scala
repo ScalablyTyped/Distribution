@@ -19,7 +19,7 @@ object Anon_Mappings {
     sources: js.Array[String | SourceNode | CodeNode],
     sourcesContent: js.Array[String]
   ): Anon_Mappings = {
-    val __obj = js.Dynamic.literal(mappings = mappings, sources = sources, sourcesContent = sourcesContent)
+    val __obj = js.Dynamic.literal(mappings = mappings.asInstanceOf[js.Any], sources = sources.asInstanceOf[js.Any], sourcesContent = sourcesContent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Mappings]
   }

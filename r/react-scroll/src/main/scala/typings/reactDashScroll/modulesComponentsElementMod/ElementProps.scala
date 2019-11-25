@@ -19,13 +19,11 @@ object ElementProps {
   def apply(
     name: String,
     AllHTMLAttributes: AllHTMLAttributes[HTMLDivElement] = null,
-    ClassAttributes: ClassAttributes[HTMLDivElement] = null,
-    id: String = null
+    ClassAttributes: ClassAttributes[HTMLDivElement] = null
   ): ElementProps = {
-    val __obj = js.Dynamic.literal(name = name)
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (id != null) __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     __obj.asInstanceOf[ElementProps]
   }
 }

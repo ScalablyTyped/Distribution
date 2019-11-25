@@ -41,9 +41,9 @@ object Maneuver {
     `type`: ManeuverType,
     modifier: ManeuverModifier = null
   ): Maneuver = {
-    val __obj = js.Dynamic.literal(bearing_after = bearing_after, bearing_before = bearing_before, instruction = instruction, location = location)
-    __obj.updateDynamic("type")(`type`)
-    if (modifier != null) __obj.updateDynamic("modifier")(modifier)
+    val __obj = js.Dynamic.literal(bearing_after = bearing_after.asInstanceOf[js.Any], bearing_before = bearing_before.asInstanceOf[js.Any], instruction = instruction.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (modifier != null) __obj.updateDynamic("modifier")(modifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[Maneuver]
   }
 }

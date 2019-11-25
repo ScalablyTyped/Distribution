@@ -21,8 +21,8 @@ trait CreateVaultOutput extends _OutputTypesUnion {
 object CreateVaultOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, location: String = null): CreateVaultOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (location != null) __obj.updateDynamic("location")(location)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateVaultOutput]
   }
 }

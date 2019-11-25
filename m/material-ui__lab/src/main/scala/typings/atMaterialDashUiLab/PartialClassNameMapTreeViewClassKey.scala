@@ -13,7 +13,7 @@ object PartialClassNameMapTreeViewClassKey {
   @scala.inline
   def apply(root: String = null): PartialClassNameMapTreeViewClassKey = {
     val __obj = js.Dynamic.literal()
-    if (root != null) __obj.updateDynamic("root")(root)
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapTreeViewClassKey]
   }
 }

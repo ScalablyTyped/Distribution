@@ -33,7 +33,6 @@ object NavProps {
     ClassAttributes: ClassAttributes[HTMLUListElement] = null,
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
     card: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
     cssModule: CSSModule = null,
     fill: js.UndefOr[Boolean] = js.undefined,
     horizontal: String = null,
@@ -45,18 +44,17 @@ object NavProps {
     vertical: Boolean | String = null
   ): NavProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(card)) __obj.updateDynamic("card")(card)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule)
-    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill)
-    if (horizontal != null) __obj.updateDynamic("horizontal")(horizontal)
-    if (!js.isUndefined(justified)) __obj.updateDynamic("justified")(justified)
-    if (!js.isUndefined(navbar)) __obj.updateDynamic("navbar")(navbar)
-    if (!js.isUndefined(pills)) __obj.updateDynamic("pills")(pills)
-    if (!js.isUndefined(tabs)) __obj.updateDynamic("tabs")(tabs)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(card)) __obj.updateDynamic("card")(card.asInstanceOf[js.Any])
+    if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule.asInstanceOf[js.Any])
+    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    if (horizontal != null) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
+    if (!js.isUndefined(justified)) __obj.updateDynamic("justified")(justified.asInstanceOf[js.Any])
+    if (!js.isUndefined(navbar)) __obj.updateDynamic("navbar")(navbar.asInstanceOf[js.Any])
+    if (!js.isUndefined(pills)) __obj.updateDynamic("pills")(pills.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabs)) __obj.updateDynamic("tabs")(tabs.asInstanceOf[js.Any])
     if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     if (vertical != null) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavProps]

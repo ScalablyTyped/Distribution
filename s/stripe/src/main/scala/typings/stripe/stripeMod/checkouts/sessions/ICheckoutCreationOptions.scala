@@ -113,16 +113,16 @@ object ICheckoutCreationOptions {
     submit_type: auto | book | donate | pay = null,
     subscription_data: ICheckOutCreationSubscriptionData | ISubscriptionCustCreationOptions = null
   ): ICheckoutCreationOptions = {
-    val __obj = js.Dynamic.literal(cancel_url = cancel_url, payment_method_types = payment_method_types, success_url = success_url)
+    val __obj = js.Dynamic.literal(cancel_url = cancel_url.asInstanceOf[js.Any], payment_method_types = payment_method_types.asInstanceOf[js.Any], success_url = success_url.asInstanceOf[js.Any])
     if (billing_address_collection != null) __obj.updateDynamic("billing_address_collection")(billing_address_collection.asInstanceOf[js.Any])
-    if (client_reference_id != null) __obj.updateDynamic("client_reference_id")(client_reference_id)
-    if (customer != null) __obj.updateDynamic("customer")(customer)
-    if (customer_email != null) __obj.updateDynamic("customer_email")(customer_email)
-    if (line_items != null) __obj.updateDynamic("line_items")(line_items)
+    if (client_reference_id != null) __obj.updateDynamic("client_reference_id")(client_reference_id.asInstanceOf[js.Any])
+    if (customer != null) __obj.updateDynamic("customer")(customer.asInstanceOf[js.Any])
+    if (customer_email != null) __obj.updateDynamic("customer_email")(customer_email.asInstanceOf[js.Any])
+    if (line_items != null) __obj.updateDynamic("line_items")(line_items.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (payment_intent_data != null) __obj.updateDynamic("payment_intent_data")(payment_intent_data.asInstanceOf[js.Any])
-    if (setup_intent_data != null) __obj.updateDynamic("setup_intent_data")(setup_intent_data)
+    if (setup_intent_data != null) __obj.updateDynamic("setup_intent_data")(setup_intent_data.asInstanceOf[js.Any])
     if (submit_type != null) __obj.updateDynamic("submit_type")(submit_type.asInstanceOf[js.Any])
     if (subscription_data != null) __obj.updateDynamic("subscription_data")(subscription_data.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICheckoutCreationOptions]

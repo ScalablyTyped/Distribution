@@ -19,11 +19,11 @@ object MediaQueryListEventInit {
     media: java.lang.String = null
   ): MediaQueryListEventInit = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles)
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable)
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed)
-    if (!js.isUndefined(matches)) __obj.updateDynamic("matches")(matches)
-    if (media != null) __obj.updateDynamic("media")(media)
+    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
+    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.asInstanceOf[js.Any])
+    if (!js.isUndefined(matches)) __obj.updateDynamic("matches")(matches.asInstanceOf[js.Any])
+    if (media != null) __obj.updateDynamic("media")(media.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaQueryListEventInit]
   }
 }

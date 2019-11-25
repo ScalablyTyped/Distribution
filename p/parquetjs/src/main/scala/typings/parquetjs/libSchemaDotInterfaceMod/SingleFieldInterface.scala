@@ -20,10 +20,10 @@ object SingleFieldInterface {
     optional: js.UndefOr[Boolean] = js.undefined
   ): SingleFieldInterface = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (bitWidth != null) __obj.updateDynamic("bitWidth")(bitWidth.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
-    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
     __obj.asInstanceOf[SingleFieldInterface]
   }
 }

@@ -40,13 +40,13 @@ object SeriesRenderingEventArgs {
     `type`: String = null
   ): SeriesRenderingEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (maxX != null) __obj.updateDynamic("maxX")(maxX)
-    if (maxY != null) __obj.updateDynamic("maxY")(maxY)
-    if (minX != null) __obj.updateDynamic("minX")(minX)
-    if (minY != null) __obj.updateDynamic("minY")(minY)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (maxX != null) __obj.updateDynamic("maxX")(maxX.asInstanceOf[js.Any])
+    if (maxY != null) __obj.updateDynamic("maxY")(maxY.asInstanceOf[js.Any])
+    if (minX != null) __obj.updateDynamic("minX")(minX.asInstanceOf[js.Any])
+    if (minY != null) __obj.updateDynamic("minY")(minY.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesRenderingEventArgs]
   }
 }

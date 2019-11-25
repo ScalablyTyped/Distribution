@@ -20,10 +20,6 @@ import typings.atIonicCore.atIonicCoreStrings.mobileweb
 import typings.atIonicCore.atIonicCoreStrings.phablet
 import typings.atIonicCore.atIonicCoreStrings.pwa
 import typings.atIonicCore.atIonicCoreStrings.tablet
-import typings.atIonicCore.distTypesComponentsActionDashSheetActionDashSheetDashInterfaceMod.ActionSheetOptions
-import typings.atIonicCore.distTypesComponentsAlertAlertDashInterfaceMod.AlertOptions
-import typings.atIonicCore.distTypesComponentsLoadingLoadingDashInterfaceMod.LoadingOptions
-import typings.atIonicCore.distTypesComponentsMenuMenuDashInterfaceMod.MenuI
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonActionSheetElement
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonAlertElement
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonLoadingElement
@@ -32,13 +28,7 @@ import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonModalElement
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonPickerElement
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonPopoverElement
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonToastElement
-import typings.atIonicCore.distTypesComponentsModalModalDashInterfaceMod.ModalOptions
-import typings.atIonicCore.distTypesComponentsPickerPickerDashInterfaceMod.PickerOptions
-import typings.atIonicCore.distTypesComponentsPopoverPopoverDashInterfaceMod.PopoverOptions
-import typings.atIonicCore.distTypesComponentsToastToastDashInterfaceMod.ToastOptions
-import typings.atIonicCore.distTypesInterfaceMod.ComponentRef
 import typings.atIonicCore.distTypesUtilsAnimationAnimationDashInterfaceMod.Animation
-import typings.atIonicCore.distTypesUtilsAnimationOldDashAnimationAnimationDashInterfaceMod.AnimationBuilder
 import typings.atIonicCore.distTypesUtilsConfigMod.IonicConfig
 import typings.atIonicCore.distTypesUtilsGestureMod.Gesture
 import typings.atIonicCore.distTypesUtilsGestureMod.GestureConfig
@@ -65,7 +55,9 @@ object distTypesMod extends js.Object {
   def setupConfig(config: IonicConfig): js.Any = js.native
   @js.native
   object actionSheetController extends js.Object {
-    def create(options: ActionSheetOptions): js.Promise[HTMLIonActionSheetElement] = js.native
+    def create(
+      options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ActionSheetOptions */ js.Any
+    ): js.Promise[HTMLIonActionSheetElement] = js.native
     def dismiss(): js.Promise[Boolean] = js.native
     def dismiss(data: js.Any): js.Promise[Boolean] = js.native
     def dismiss(data: js.Any, role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
@@ -76,7 +68,9 @@ object distTypesMod extends js.Object {
   
   @js.native
   object alertController extends js.Object {
-    def create(options: AlertOptions): js.Promise[HTMLIonAlertElement] = js.native
+    def create(
+      options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AlertOptions */ js.Any
+    ): js.Promise[HTMLIonAlertElement] = js.native
     def dismiss(): js.Promise[Boolean] = js.native
     def dismiss(data: js.Any): js.Promise[Boolean] = js.native
     def dismiss(data: js.Any, role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
@@ -87,7 +81,9 @@ object distTypesMod extends js.Object {
   
   @js.native
   object loadingController extends js.Object {
-    def create(options: LoadingOptions): js.Promise[HTMLIonLoadingElement] = js.native
+    def create(
+      options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify LoadingOptions */ js.Any
+    ): js.Promise[HTMLIonLoadingElement] = js.native
     def dismiss(): js.Promise[Boolean] = js.native
     def dismiss(data: js.Any): js.Promise[Boolean] = js.native
     def dismiss(data: js.Any, role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
@@ -98,12 +94,19 @@ object distTypesMod extends js.Object {
   
   @js.native
   object menuController extends js.Object {
-    def _createAnimation(`type`: String, menuCmp: MenuI): js.Any = js.native
+    def _createAnimation(
+      `type`: String,
+      menuCmp: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MenuI */ js.Any
+    ): js.Any = js.native
     def _getOpenSync(): js.UndefOr[HTMLIonMenuElement] = js.native
-    def _register(menu: MenuI): Unit = js.native
-    def _setActiveMenu(menu: MenuI): Unit = js.native
-    def _setOpen(menu: MenuI, shouldOpen: Boolean, animated: Boolean): js.Promise[Boolean] = js.native
-    def _unregister(menu: MenuI): Unit = js.native
+    def _register(menu: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MenuI */ js.Any): Unit = js.native
+    def _setActiveMenu(menu: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MenuI */ js.Any): Unit = js.native
+    def _setOpen(
+      menu: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MenuI */ js.Any,
+      shouldOpen: Boolean,
+      animated: Boolean
+    ): js.Promise[Boolean] = js.native
+    def _unregister(menu: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MenuI */ js.Any): Unit = js.native
     def close(): js.Promise[Boolean] = js.native
     def close(menu: String): js.Promise[Boolean] = js.native
     def enable(shouldEnable: Boolean): js.Promise[js.UndefOr[HTMLIonMenuElement]] = js.native
@@ -119,8 +122,17 @@ object distTypesMod extends js.Object {
     def isOpen(menu: String): js.Promise[Boolean] = js.native
     def open(): js.Promise[Boolean] = js.native
     def open(menu: String): js.Promise[Boolean] = js.native
-    def registerAnimation(name: String, animation: js.Function1[/* menu */ MenuI, Animation]): Unit = js.native
-    def registerAnimation(name: String, animation: AnimationBuilder): Unit = js.native
+    def registerAnimation(
+      name: String,
+      animation: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
+    ): Unit = js.native
+    def registerAnimation(
+      name: String,
+      animation: js.Function1[
+          /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MenuI */ /* menu */ js.Any, 
+          /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IonicAnimation */ _
+        ]
+    ): Unit = js.native
     def swipeGesture(shouldEnable: Boolean): js.Promise[js.UndefOr[HTMLIonMenuElement]] = js.native
     def swipeGesture(shouldEnable: Boolean, menu: String): js.Promise[js.UndefOr[HTMLIonMenuElement]] = js.native
     def toggle(): js.Promise[Boolean] = js.native
@@ -129,7 +141,9 @@ object distTypesMod extends js.Object {
   
   @js.native
   object modalController extends js.Object {
-    def create(options: ModalOptions[ComponentRef]): js.Promise[HTMLIonModalElement] = js.native
+    def create(
+      options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ModalOptions<imported_interface.ComponentRef> */ js.Any
+    ): js.Promise[HTMLIonModalElement] = js.native
     def dismiss(): js.Promise[Boolean] = js.native
     def dismiss(data: js.Any): js.Promise[Boolean] = js.native
     def dismiss(data: js.Any, role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
@@ -140,7 +154,9 @@ object distTypesMod extends js.Object {
   
   @js.native
   object pickerController extends js.Object {
-    def create(options: PickerOptions): js.Promise[HTMLIonPickerElement] = js.native
+    def create(
+      options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PickerOptions */ js.Any
+    ): js.Promise[HTMLIonPickerElement] = js.native
     def dismiss(): js.Promise[Boolean] = js.native
     def dismiss(data: js.Any): js.Promise[Boolean] = js.native
     def dismiss(data: js.Any, role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
@@ -151,7 +167,9 @@ object distTypesMod extends js.Object {
   
   @js.native
   object popoverController extends js.Object {
-    def create(options: PopoverOptions[ComponentRef]): js.Promise[HTMLIonPopoverElement] = js.native
+    def create(
+      options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PopoverOptions<imported_interface.ComponentRef> */ js.Any
+    ): js.Promise[HTMLIonPopoverElement] = js.native
     def dismiss(): js.Promise[Boolean] = js.native
     def dismiss(data: js.Any): js.Promise[Boolean] = js.native
     def dismiss(data: js.Any, role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
@@ -162,7 +180,9 @@ object distTypesMod extends js.Object {
   
   @js.native
   object toastController extends js.Object {
-    def create(options: ToastOptions): js.Promise[HTMLIonToastElement] = js.native
+    def create(
+      options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ToastOptions */ js.Any
+    ): js.Promise[HTMLIonToastElement] = js.native
     def dismiss(): js.Promise[Boolean] = js.native
     def dismiss(data: js.Any): js.Promise[Boolean] = js.native
     def dismiss(data: js.Any, role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native

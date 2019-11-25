@@ -28,10 +28,10 @@ object ExportProgressChangedEventArgs {
     stage: String = null
   ): ExportProgressChangedEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (containerId != null) __obj.updateDynamic("containerId")(containerId)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (!js.isUndefined(handled)) __obj.updateDynamic("handled")(handled)
-    if (stage != null) __obj.updateDynamic("stage")(stage)
+    if (containerId != null) __obj.updateDynamic("containerId")(containerId.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (!js.isUndefined(handled)) __obj.updateDynamic("handled")(handled.asInstanceOf[js.Any])
+    if (stage != null) __obj.updateDynamic("stage")(stage.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportProgressChangedEventArgs]
   }
 }

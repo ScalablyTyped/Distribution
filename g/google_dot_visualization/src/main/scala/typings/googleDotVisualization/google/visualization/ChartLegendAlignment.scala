@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait ChartLegendAlignment extends js.Object
 
+object ChartLegendAlignment {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def center: typings.googleDotVisualization.googleDotVisualizationStrings.center = this.cast("center")
+  @scala.inline
+  def end: typings.googleDotVisualization.googleDotVisualizationStrings.end = this.cast("end")
+  @scala.inline
+  def start: typings.googleDotVisualization.googleDotVisualizationStrings.start = this.cast("start")
+}
+

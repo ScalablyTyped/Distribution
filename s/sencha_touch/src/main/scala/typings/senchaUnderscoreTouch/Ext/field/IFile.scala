@@ -43,30 +43,24 @@ object IFile {
     IField: IField = null,
     accept: java.lang.String = null,
     capture: java.lang.String = null,
-    component: js.Any = null,
     getAccept: () => java.lang.String = null,
     getCapture: () => java.lang.String = null,
-    getComponent: () => _ = null,
     getMultiple: () => Boolean = null,
     multiple: js.UndefOr[Boolean] = js.undefined,
     setAccept: /* accept */ js.UndefOr[java.lang.String] => Unit = null,
     setCapture: /* capture */ js.UndefOr[java.lang.String] => Unit = null,
-    setComponent: /* component */ js.UndefOr[js.Any] => Unit = null,
     setMultiple: /* multiple */ js.UndefOr[Boolean] => Unit = null
   ): IFile = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IField)
-    if (accept != null) __obj.updateDynamic("accept")(accept)
-    if (capture != null) __obj.updateDynamic("capture")(capture)
-    if (component != null) __obj.updateDynamic("component")(component)
+    if (IField != null) js.Dynamic.global.Object.assign(__obj, IField)
+    if (accept != null) __obj.updateDynamic("accept")(accept.asInstanceOf[js.Any])
+    if (capture != null) __obj.updateDynamic("capture")(capture.asInstanceOf[js.Any])
     if (getAccept != null) __obj.updateDynamic("getAccept")(js.Any.fromFunction0(getAccept))
     if (getCapture != null) __obj.updateDynamic("getCapture")(js.Any.fromFunction0(getCapture))
-    if (getComponent != null) __obj.updateDynamic("getComponent")(js.Any.fromFunction0(getComponent))
     if (getMultiple != null) __obj.updateDynamic("getMultiple")(js.Any.fromFunction0(getMultiple))
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
     if (setAccept != null) __obj.updateDynamic("setAccept")(js.Any.fromFunction1(setAccept))
     if (setCapture != null) __obj.updateDynamic("setCapture")(js.Any.fromFunction1(setCapture))
-    if (setComponent != null) __obj.updateDynamic("setComponent")(js.Any.fromFunction1(setComponent))
     if (setMultiple != null) __obj.updateDynamic("setMultiple")(js.Any.fromFunction1(setMultiple))
     __obj.asInstanceOf[IFile]
   }

@@ -13,8 +13,8 @@ trait DataLayerEvent
 object DataLayerEvent {
   @scala.inline
   def apply(event: String, StringDictionary: /* key */ StringDictionary[js.Any] = null): DataLayerEvent = {
-    val __obj = js.Dynamic.literal(event = event)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[DataLayerEvent]
   }
 }

@@ -23,8 +23,8 @@ object Anon_Bracketed {
     num_notes: Int | Double = null,
     y_offset: Int | Double = null
   ): Anon_Bracketed = {
-    val __obj = js.Dynamic.literal(ratioed = ratioed)
-    if (!js.isUndefined(bracketed)) __obj.updateDynamic("bracketed")(bracketed)
+    val __obj = js.Dynamic.literal(ratioed = ratioed.asInstanceOf[js.Any])
+    if (!js.isUndefined(bracketed)) __obj.updateDynamic("bracketed")(bracketed.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (notes_occupied != null) __obj.updateDynamic("notes_occupied")(notes_occupied.asInstanceOf[js.Any])
     if (num_notes != null) __obj.updateDynamic("num_notes")(num_notes.asInstanceOf[js.Any])

@@ -19,7 +19,7 @@ trait Anon_AuthMode extends js.Object {
 object Anon_AuthMode {
   @scala.inline
   def apply(authMode: String, errCode: Double, errMsg: String, resultJSON: String, resultJSONSignature: String): Anon_AuthMode = {
-    val __obj = js.Dynamic.literal(authMode = authMode, errCode = errCode, errMsg = errMsg, resultJSON = resultJSON, resultJSONSignature = resultJSONSignature)
+    val __obj = js.Dynamic.literal(authMode = authMode.asInstanceOf[js.Any], errCode = errCode.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any], resultJSON = resultJSON.asInstanceOf[js.Any], resultJSONSignature = resultJSONSignature.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AuthMode]
   }

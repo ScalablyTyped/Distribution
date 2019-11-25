@@ -15,8 +15,8 @@ object ConversionList {
   @scala.inline
   def apply(conversion: js.Array[Conversion] = null, kind: String = null): ConversionList = {
     val __obj = js.Dynamic.literal()
-    if (conversion != null) __obj.updateDynamic("conversion")(conversion)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (conversion != null) __obj.updateDynamic("conversion")(conversion.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConversionList]
   }
 }

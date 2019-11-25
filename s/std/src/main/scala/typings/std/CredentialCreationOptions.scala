@@ -13,8 +13,8 @@ object CredentialCreationOptions {
   @scala.inline
   def apply(publicKey: PublicKeyCredentialCreationOptions = null, signal: AbortSignal = null): CredentialCreationOptions = {
     val __obj = js.Dynamic.literal()
-    if (publicKey != null) __obj.updateDynamic("publicKey")(publicKey)
-    if (signal != null) __obj.updateDynamic("signal")(signal)
+    if (publicKey != null) __obj.updateDynamic("publicKey")(publicKey.asInstanceOf[js.Any])
+    if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
     __obj.asInstanceOf[CredentialCreationOptions]
   }
 }

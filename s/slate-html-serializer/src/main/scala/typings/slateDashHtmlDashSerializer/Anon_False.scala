@@ -13,7 +13,7 @@ object Anon_False {
   @scala.inline
   def apply(toJSON: `false` = null): Anon_False = {
     val __obj = js.Dynamic.literal()
-    if (toJSON != null) __obj.updateDynamic("toJSON")(toJSON)
+    if (toJSON != null) __obj.updateDynamic("toJSON")(toJSON.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_False]
   }
 }

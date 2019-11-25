@@ -12,7 +12,7 @@ trait Anon_EAGER extends js.Object {
 object Anon_EAGER {
   @scala.inline
   def apply(EAGER: String, LAZY: String): Anon_EAGER = {
-    val __obj = js.Dynamic.literal(EAGER = EAGER, LAZY = LAZY)
+    val __obj = js.Dynamic.literal(EAGER = EAGER.asInstanceOf[js.Any], LAZY = LAZY.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EAGER]
   }

@@ -30,15 +30,15 @@ object LocalBitStringValueBlockParams {
   ): LocalBitStringValueBlockParams = {
     val __obj = js.Dynamic.literal()
     if (blockLength != null) __obj.updateDynamic("blockLength")(blockLength.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (!js.isUndefined(isConstructed)) __obj.updateDynamic("isConstructed")(isConstructed)
-    if (!js.isUndefined(isHexOnly)) __obj.updateDynamic("isHexOnly")(isHexOnly)
-    if (!js.isUndefined(isIndefiniteForm)) __obj.updateDynamic("isIndefiniteForm")(isIndefiniteForm)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (!js.isUndefined(isConstructed)) __obj.updateDynamic("isConstructed")(isConstructed.asInstanceOf[js.Any])
+    if (!js.isUndefined(isHexOnly)) __obj.updateDynamic("isHexOnly")(isHexOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(isIndefiniteForm)) __obj.updateDynamic("isIndefiniteForm")(isIndefiniteForm.asInstanceOf[js.Any])
     if (unusedBits != null) __obj.updateDynamic("unusedBits")(unusedBits.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value)
-    if (valueBeforeDecode != null) __obj.updateDynamic("valueBeforeDecode")(valueBeforeDecode)
-    if (valueHex != null) __obj.updateDynamic("valueHex")(valueHex)
-    if (warnings != null) __obj.updateDynamic("warnings")(warnings)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (valueBeforeDecode != null) __obj.updateDynamic("valueBeforeDecode")(valueBeforeDecode.asInstanceOf[js.Any])
+    if (valueHex != null) __obj.updateDynamic("valueHex")(valueHex.asInstanceOf[js.Any])
+    if (warnings != null) __obj.updateDynamic("warnings")(warnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalBitStringValueBlockParams]
   }
 }

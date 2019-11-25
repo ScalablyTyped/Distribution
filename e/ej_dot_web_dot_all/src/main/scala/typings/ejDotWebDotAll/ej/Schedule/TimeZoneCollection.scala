@@ -26,10 +26,10 @@ object TimeZoneCollection {
   @scala.inline
   def apply(dataSource: js.Any = null, id: String = null, text: String = null, value: String = null): TimeZoneCollection = {
     val __obj = js.Dynamic.literal()
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeZoneCollection]
   }
 }

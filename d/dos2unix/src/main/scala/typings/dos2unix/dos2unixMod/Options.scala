@@ -14,7 +14,7 @@ object Options {
   @scala.inline
   def apply(glob: IOptions = null, maxConcurrency: Int | Double = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (glob != null) __obj.updateDynamic("glob")(glob)
+    if (glob != null) __obj.updateDynamic("glob")(glob.asInstanceOf[js.Any])
     if (maxConcurrency != null) __obj.updateDynamic("maxConcurrency")(maxConcurrency.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

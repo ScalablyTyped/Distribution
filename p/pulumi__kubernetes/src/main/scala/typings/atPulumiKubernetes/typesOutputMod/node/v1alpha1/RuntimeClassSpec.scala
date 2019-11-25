@@ -40,7 +40,7 @@ trait RuntimeClassSpec extends js.Object {
 object RuntimeClassSpec {
   @scala.inline
   def apply(overhead: Overhead, runtimeHandler: String, scheduling: Scheduling): RuntimeClassSpec = {
-    val __obj = js.Dynamic.literal(overhead = overhead, runtimeHandler = runtimeHandler, scheduling = scheduling)
+    val __obj = js.Dynamic.literal(overhead = overhead.asInstanceOf[js.Any], runtimeHandler = runtimeHandler.asInstanceOf[js.Any], scheduling = scheduling.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RuntimeClassSpec]
   }

@@ -109,7 +109,7 @@ object PlotGanttDragDropOptions {
     liveRedraw: js.UndefOr[Boolean] = js.undefined
   ): PlotGanttDragDropOptions = {
     val __obj = js.Dynamic.literal()
-    if (dragHandle != null) __obj.updateDynamic("dragHandle")(dragHandle)
+    if (dragHandle != null) __obj.updateDynamic("dragHandle")(dragHandle.asInstanceOf[js.Any])
     if (dragMaxX != null) __obj.updateDynamic("dragMaxX")(dragMaxX.asInstanceOf[js.Any])
     if (dragMaxY != null) __obj.updateDynamic("dragMaxY")(dragMaxY.asInstanceOf[js.Any])
     if (dragMinX != null) __obj.updateDynamic("dragMinX")(dragMinX.asInstanceOf[js.Any])
@@ -117,15 +117,15 @@ object PlotGanttDragDropOptions {
     if (dragPrecisionX != null) __obj.updateDynamic("dragPrecisionX")(dragPrecisionX.asInstanceOf[js.Any])
     if (dragPrecisionY != null) __obj.updateDynamic("dragPrecisionY")(dragPrecisionY.asInstanceOf[js.Any])
     if (dragSensitivity != null) __obj.updateDynamic("dragSensitivity")(dragSensitivity.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggableEnd)) __obj.updateDynamic("draggableEnd")(draggableEnd)
-    if (!js.isUndefined(draggableStart)) __obj.updateDynamic("draggableStart")(draggableStart)
-    if (!js.isUndefined(draggableX)) __obj.updateDynamic("draggableX")(draggableX)
-    if (!js.isUndefined(draggableX1)) __obj.updateDynamic("draggableX1")(draggableX1)
-    if (!js.isUndefined(draggableX2)) __obj.updateDynamic("draggableX2")(draggableX2)
-    if (!js.isUndefined(draggableY)) __obj.updateDynamic("draggableY")(draggableY)
-    if (groupBy != null) __obj.updateDynamic("groupBy")(groupBy)
+    if (!js.isUndefined(draggableEnd)) __obj.updateDynamic("draggableEnd")(draggableEnd.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggableStart)) __obj.updateDynamic("draggableStart")(draggableStart.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggableX)) __obj.updateDynamic("draggableX")(draggableX.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggableX1)) __obj.updateDynamic("draggableX1")(draggableX1.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggableX2)) __obj.updateDynamic("draggableX2")(draggableX2.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggableY)) __obj.updateDynamic("draggableY")(draggableY.asInstanceOf[js.Any])
+    if (groupBy != null) __obj.updateDynamic("groupBy")(groupBy.asInstanceOf[js.Any])
     if (guideBox != null) __obj.updateDynamic("guideBox")(guideBox.asInstanceOf[js.Any])
-    if (!js.isUndefined(liveRedraw)) __obj.updateDynamic("liveRedraw")(liveRedraw)
+    if (!js.isUndefined(liveRedraw)) __obj.updateDynamic("liveRedraw")(liveRedraw.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotGanttDragDropOptions]
   }
 }

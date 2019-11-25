@@ -12,8 +12,8 @@ trait Metadata extends /* PagesIndex */ NumberDictionary[PageInfo] {
 object Metadata {
   @scala.inline
   def apply(pages: Double, NumberDictionary: /* PagesIndex */ NumberDictionary[PageInfo] = null): Metadata = {
-    val __obj = js.Dynamic.literal(pages = pages)
-    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    val __obj = js.Dynamic.literal(pages = pages.asInstanceOf[js.Any])
+    if (NumberDictionary != null) js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[Metadata]
   }
 }

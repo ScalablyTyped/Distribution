@@ -27,9 +27,9 @@ object IOpenWebPageSettings {
     operation: GET | POST | HEAD | DELETE | PUT | String = null
   ): IOpenWebPageSettings = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (operation != null) __obj.updateDynamic("operation")(operation.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOpenWebPageSettings]
   }

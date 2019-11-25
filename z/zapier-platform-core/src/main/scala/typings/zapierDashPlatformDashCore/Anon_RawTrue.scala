@@ -13,7 +13,7 @@ trait Anon_RawTrue extends js.Object {
 object Anon_RawTrue {
   @scala.inline
   def apply(raw: `true`, url: String): Anon_RawTrue = {
-    val __obj = js.Dynamic.literal(raw = raw, url = url)
+    val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_RawTrue]
   }

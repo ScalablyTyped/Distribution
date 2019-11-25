@@ -30,7 +30,7 @@ object RandomColorOptionsMultiple {
     luminosity: bright | light | dark | random = null,
     seed: Double | String = null
   ): RandomColorOptionsMultiple = {
-    val __obj = js.Dynamic.literal(count = count)
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any])
     if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (hue != null) __obj.updateDynamic("hue")(hue.asInstanceOf[js.Any])

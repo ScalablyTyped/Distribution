@@ -13,8 +13,8 @@ trait Anon_Integrity extends js.Object {
 object Anon_Integrity {
   @scala.inline
   def apply(shasum: String, tarball: String, integrity: String = null): Anon_Integrity = {
-    val __obj = js.Dynamic.literal(shasum = shasum, tarball = tarball)
-    if (integrity != null) __obj.updateDynamic("integrity")(integrity)
+    val __obj = js.Dynamic.literal(shasum = shasum.asInstanceOf[js.Any], tarball = tarball.asInstanceOf[js.Any])
+    if (integrity != null) __obj.updateDynamic("integrity")(integrity.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Integrity]
   }
 }

@@ -14,7 +14,7 @@ trait ResourceHeaderProps extends js.Object {
 object ResourceHeaderProps {
   @scala.inline
   def apply(index: Double, resource: js.Object, label: ReactNode = null): ResourceHeaderProps = {
-    val __obj = js.Dynamic.literal(index = index, resource = resource)
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceHeaderProps]
   }

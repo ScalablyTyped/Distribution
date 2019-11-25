@@ -18,9 +18,9 @@ object ConnectionOptions {
     sync: js.UndefOr[Boolean] = js.undefined
   ): ConnectionOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(keepalive)) __obj.updateDynamic("keepalive")(keepalive)
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
-    if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync)
+    if (!js.isUndefined(keepalive)) __obj.updateDynamic("keepalive")(keepalive.asInstanceOf[js.Any])
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
+    if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionOptions]
   }
 }

@@ -22,11 +22,11 @@ object EmailRequest {
     subject: String = null
   ): EmailRequest = {
     val __obj = js.Dynamic.literal()
-    if (cc_emails != null) __obj.updateDynamic("cc_emails")(cc_emails)
-    if (note != null) __obj.updateDynamic("note")(note)
-    if (!js.isUndefined(send_to_merchant)) __obj.updateDynamic("send_to_merchant")(send_to_merchant)
-    if (!js.isUndefined(send_to_payer)) __obj.updateDynamic("send_to_payer")(send_to_payer)
-    if (subject != null) __obj.updateDynamic("subject")(subject)
+    if (cc_emails != null) __obj.updateDynamic("cc_emails")(cc_emails.asInstanceOf[js.Any])
+    if (note != null) __obj.updateDynamic("note")(note.asInstanceOf[js.Any])
+    if (!js.isUndefined(send_to_merchant)) __obj.updateDynamic("send_to_merchant")(send_to_merchant.asInstanceOf[js.Any])
+    if (!js.isUndefined(send_to_payer)) __obj.updateDynamic("send_to_payer")(send_to_payer.asInstanceOf[js.Any])
+    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmailRequest]
   }
 }

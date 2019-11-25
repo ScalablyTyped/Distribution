@@ -30,14 +30,14 @@ object AdminUIOptions {
     schemaName: String = null
   ): AdminUIOptions[ListNames, UserType] = {
     val __obj = js.Dynamic.literal()
-    if (adminPath != null) __obj.updateDynamic("adminPath")(adminPath)
-    if (apiPath != null) __obj.updateDynamic("apiPath")(apiPath)
-    if (authStrategy != null) __obj.updateDynamic("authStrategy")(authStrategy)
-    if (!js.isUndefined(enableDefaultRoute)) __obj.updateDynamic("enableDefaultRoute")(enableDefaultRoute)
-    if (graphiqlPath != null) __obj.updateDynamic("graphiqlPath")(graphiqlPath)
+    if (adminPath != null) __obj.updateDynamic("adminPath")(adminPath.asInstanceOf[js.Any])
+    if (apiPath != null) __obj.updateDynamic("apiPath")(apiPath.asInstanceOf[js.Any])
+    if (authStrategy != null) __obj.updateDynamic("authStrategy")(authStrategy.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableDefaultRoute)) __obj.updateDynamic("enableDefaultRoute")(enableDefaultRoute.asInstanceOf[js.Any])
+    if (graphiqlPath != null) __obj.updateDynamic("graphiqlPath")(graphiqlPath.asInstanceOf[js.Any])
     if (isAccessAllowed != null) __obj.updateDynamic("isAccessAllowed")(js.Any.fromFunction1(isAccessAllowed))
-    if (pages != null) __obj.updateDynamic("pages")(pages)
-    if (schemaName != null) __obj.updateDynamic("schemaName")(schemaName)
+    if (pages != null) __obj.updateDynamic("pages")(pages.asInstanceOf[js.Any])
+    if (schemaName != null) __obj.updateDynamic("schemaName")(schemaName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdminUIOptions[ListNames, UserType]]
   }
 }

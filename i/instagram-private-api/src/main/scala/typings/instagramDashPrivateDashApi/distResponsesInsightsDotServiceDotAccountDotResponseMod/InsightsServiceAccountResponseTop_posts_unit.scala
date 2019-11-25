@@ -17,7 +17,7 @@ object InsightsServiceAccountResponseTop_posts_unit {
     top_posts: InsightsServiceAccountResponseTop_posts,
     week_over_week_posts_delta: Double
   ): InsightsServiceAccountResponseTop_posts_unit = {
-    val __obj = js.Dynamic.literal(last_week_posts_count = last_week_posts_count, top_posts = top_posts, week_over_week_posts_delta = week_over_week_posts_delta)
+    val __obj = js.Dynamic.literal(last_week_posts_count = last_week_posts_count.asInstanceOf[js.Any], top_posts = top_posts.asInstanceOf[js.Any], week_over_week_posts_delta = week_over_week_posts_delta.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InsightsServiceAccountResponseTop_posts_unit]
   }

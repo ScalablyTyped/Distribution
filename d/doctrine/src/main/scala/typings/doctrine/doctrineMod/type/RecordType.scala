@@ -13,8 +13,8 @@ trait RecordType extends Type {
 object RecordType {
   @scala.inline
   def apply(fields: js.Array[Type], `type`: typings.doctrine.doctrineStrings.RecordType): RecordType = {
-    val __obj = js.Dynamic.literal(fields = fields)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecordType]
   }
 }

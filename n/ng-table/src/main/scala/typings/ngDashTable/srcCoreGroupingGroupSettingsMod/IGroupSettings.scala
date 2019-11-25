@@ -21,8 +21,8 @@ object IGroupSettings {
   @scala.inline
   def apply(defaultSort: SortDirection = null, isExpanded: js.UndefOr[Boolean] = js.undefined): IGroupSettings = {
     val __obj = js.Dynamic.literal()
-    if (defaultSort != null) __obj.updateDynamic("defaultSort")(defaultSort)
-    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded)
+    if (defaultSort != null) __obj.updateDynamic("defaultSort")(defaultSort.asInstanceOf[js.Any])
+    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGroupSettings]
   }
 }

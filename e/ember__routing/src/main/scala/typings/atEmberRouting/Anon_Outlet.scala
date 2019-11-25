@@ -13,8 +13,8 @@ object Anon_Outlet {
   @scala.inline
   def apply(outlet: String = null, parentView: String = null): Anon_Outlet = {
     val __obj = js.Dynamic.literal()
-    if (outlet != null) __obj.updateDynamic("outlet")(outlet)
-    if (parentView != null) __obj.updateDynamic("parentView")(parentView)
+    if (outlet != null) __obj.updateDynamic("outlet")(outlet.asInstanceOf[js.Any])
+    if (parentView != null) __obj.updateDynamic("parentView")(parentView.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Outlet]
   }
 }

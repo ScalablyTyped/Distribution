@@ -33,7 +33,7 @@ object NavigatorID {
     vendor: java.lang.String,
     vendorSub: java.lang.String
   ): NavigatorID = {
-    val __obj = js.Dynamic.literal(appCodeName = appCodeName, appName = appName, appVersion = appVersion, oscpu = oscpu, platform = platform, product = product, productSub = productSub, taintEnabled = js.Any.fromFunction0(taintEnabled), userAgent = userAgent, vendor = vendor, vendorSub = vendorSub)
+    val __obj = js.Dynamic.literal(appCodeName = appCodeName.asInstanceOf[js.Any], appName = appName.asInstanceOf[js.Any], appVersion = appVersion.asInstanceOf[js.Any], oscpu = oscpu.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], product = product.asInstanceOf[js.Any], productSub = productSub.asInstanceOf[js.Any], taintEnabled = js.Any.fromFunction0(taintEnabled), userAgent = userAgent.asInstanceOf[js.Any], vendor = vendor.asInstanceOf[js.Any], vendorSub = vendorSub.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NavigatorID]
   }

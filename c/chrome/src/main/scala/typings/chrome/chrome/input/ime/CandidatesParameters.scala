@@ -14,7 +14,7 @@ trait CandidatesParameters extends js.Object {
 object CandidatesParameters {
   @scala.inline
   def apply(candidates: js.Array[CandidateTemplate], contextID: Double): CandidatesParameters = {
-    val __obj = js.Dynamic.literal(candidates = candidates, contextID = contextID)
+    val __obj = js.Dynamic.literal(candidates = candidates.asInstanceOf[js.Any], contextID = contextID.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CandidatesParameters]
   }

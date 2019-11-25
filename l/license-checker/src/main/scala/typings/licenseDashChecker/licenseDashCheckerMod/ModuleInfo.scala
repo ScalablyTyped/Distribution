@@ -67,17 +67,17 @@ object ModuleInfo {
     version: String = null
   ): ModuleInfo = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (licenseFile != null) __obj.updateDynamic("licenseFile")(licenseFile)
-    if (licenseModified != null) __obj.updateDynamic("licenseModified")(licenseModified)
-    if (licenseText != null) __obj.updateDynamic("licenseText")(licenseText)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (licenseFile != null) __obj.updateDynamic("licenseFile")(licenseFile.asInstanceOf[js.Any])
+    if (licenseModified != null) __obj.updateDynamic("licenseModified")(licenseModified.asInstanceOf[js.Any])
+    if (licenseText != null) __obj.updateDynamic("licenseText")(licenseText.asInstanceOf[js.Any])
     if (licenses != null) __obj.updateDynamic("licenses")(licenses.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (publisher != null) __obj.updateDynamic("publisher")(publisher)
-    if (repository != null) __obj.updateDynamic("repository")(repository)
-    if (url != null) __obj.updateDynamic("url")(url)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (publisher != null) __obj.updateDynamic("publisher")(publisher.asInstanceOf[js.Any])
+    if (repository != null) __obj.updateDynamic("repository")(repository.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModuleInfo]
   }
 }

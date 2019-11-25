@@ -14,7 +14,7 @@ trait JSONRPCRequestPayload extends js.Object {
 object JSONRPCRequestPayload {
   @scala.inline
   def apply(id: Double, jsonrpc: String, method: String, params: js.Array[_]): JSONRPCRequestPayload = {
-    val __obj = js.Dynamic.literal(id = id, jsonrpc = jsonrpc, method = method, params = params)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], jsonrpc = jsonrpc.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[JSONRPCRequestPayload]
   }

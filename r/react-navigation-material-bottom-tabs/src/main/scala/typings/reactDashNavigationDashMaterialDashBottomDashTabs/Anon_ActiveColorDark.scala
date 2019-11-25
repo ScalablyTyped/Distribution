@@ -26,12 +26,12 @@ object Anon_ActiveColorDark {
     inactiveColorLight: String = null
   ): Anon_ActiveColorDark = {
     val __obj = js.Dynamic.literal()
-    if (activeColorDark != null) __obj.updateDynamic("activeColorDark")(activeColorDark)
-    if (activeColorLight != null) __obj.updateDynamic("activeColorLight")(activeColorLight)
+    if (activeColorDark != null) __obj.updateDynamic("activeColorDark")(activeColorDark.asInstanceOf[js.Any])
+    if (activeColorLight != null) __obj.updateDynamic("activeColorLight")(activeColorLight.asInstanceOf[js.Any])
     if (barStyleDark != null) __obj.updateDynamic("barStyleDark")(barStyleDark.asInstanceOf[js.Any])
     if (barStyleLight != null) __obj.updateDynamic("barStyleLight")(barStyleLight.asInstanceOf[js.Any])
-    if (inactiveColorDark != null) __obj.updateDynamic("inactiveColorDark")(inactiveColorDark)
-    if (inactiveColorLight != null) __obj.updateDynamic("inactiveColorLight")(inactiveColorLight)
+    if (inactiveColorDark != null) __obj.updateDynamic("inactiveColorDark")(inactiveColorDark.asInstanceOf[js.Any])
+    if (inactiveColorLight != null) __obj.updateDynamic("inactiveColorLight")(inactiveColorLight.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ActiveColorDark]
   }
 }

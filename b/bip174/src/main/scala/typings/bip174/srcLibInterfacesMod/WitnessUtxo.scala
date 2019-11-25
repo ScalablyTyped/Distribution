@@ -13,7 +13,7 @@ trait WitnessUtxo extends js.Object {
 object WitnessUtxo {
   @scala.inline
   def apply(script: Buffer, value: Double): WitnessUtxo = {
-    val __obj = js.Dynamic.literal(script = script, value = value)
+    val __obj = js.Dynamic.literal(script = script.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WitnessUtxo]
   }

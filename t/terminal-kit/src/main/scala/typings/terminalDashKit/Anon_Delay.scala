@@ -23,8 +23,8 @@ object Anon_Delay {
     val __obj = js.Dynamic.literal()
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (flashDelay != null) __obj.updateDynamic("flashDelay")(flashDelay.asInstanceOf[js.Any])
-    if (flashStyle != null) __obj.updateDynamic("flashStyle")(flashStyle)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (flashStyle != null) __obj.updateDynamic("flashStyle")(flashStyle.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Delay]
   }
 }

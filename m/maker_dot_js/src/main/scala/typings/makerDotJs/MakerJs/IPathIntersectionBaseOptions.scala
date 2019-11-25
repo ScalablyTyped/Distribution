@@ -25,8 +25,8 @@ object IPathIntersectionBaseOptions {
     out_AreOverlapped: js.UndefOr[Boolean] = js.undefined
   ): IPathIntersectionBaseOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(excludeTangents)) __obj.updateDynamic("excludeTangents")(excludeTangents)
-    if (!js.isUndefined(out_AreOverlapped)) __obj.updateDynamic("out_AreOverlapped")(out_AreOverlapped)
+    if (!js.isUndefined(excludeTangents)) __obj.updateDynamic("excludeTangents")(excludeTangents.asInstanceOf[js.Any])
+    if (!js.isUndefined(out_AreOverlapped)) __obj.updateDynamic("out_AreOverlapped")(out_AreOverlapped.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPathIntersectionBaseOptions]
   }
 }

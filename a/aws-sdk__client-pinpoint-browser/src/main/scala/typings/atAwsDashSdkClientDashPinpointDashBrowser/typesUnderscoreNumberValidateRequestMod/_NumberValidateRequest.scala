@@ -19,8 +19,8 @@ object _NumberValidateRequest {
   @scala.inline
   def apply(IsoCountryCode: String = null, PhoneNumber: String = null): _NumberValidateRequest = {
     val __obj = js.Dynamic.literal()
-    if (IsoCountryCode != null) __obj.updateDynamic("IsoCountryCode")(IsoCountryCode)
-    if (PhoneNumber != null) __obj.updateDynamic("PhoneNumber")(PhoneNumber)
+    if (IsoCountryCode != null) __obj.updateDynamic("IsoCountryCode")(IsoCountryCode.asInstanceOf[js.Any])
+    if (PhoneNumber != null) __obj.updateDynamic("PhoneNumber")(PhoneNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[_NumberValidateRequest]
   }
 }

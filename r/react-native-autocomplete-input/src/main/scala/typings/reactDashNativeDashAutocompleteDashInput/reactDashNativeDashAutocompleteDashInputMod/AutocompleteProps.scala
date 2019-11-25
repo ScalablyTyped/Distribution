@@ -68,7 +68,7 @@ import scala.scalajs.js.annotation._
     * renderSeparator will be called to render the list separators which will be displayed between the list elements in the result view below the text input.
     */
   var renderSeparator: js.UndefOr[
-    /* import warning: ImportType.apply Failed type conversion: / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ListViewProperties * / any['renderSeparator'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ListViewProperties * / any['renderSeparator'] */ js.Any
   ] = js.undefined
   /**
     * function
@@ -101,20 +101,20 @@ object AutocompleteProps {
     listStyle: StyleProp[ViewStyle] = null,
     onShowResult: /* showResults */ Boolean => Unit = null,
     onStartShouldSetResponderCapture: /* event */ GestureResponderEvent => Boolean = null,
-    renderSeparator: /* import warning: ImportType.apply Failed type conversion: / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ListViewProperties * / any['renderSeparator'] */ js.Any = null,
+    renderSeparator: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ListViewProperties * / any['renderSeparator'] */ js.Any = null,
     renderTextInput: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextInputProperties */ /* props */ js.Any => ReactNode = null
   ): AutocompleteProps[T] = {
-    val __obj = js.Dynamic.literal(data = data, renderItem = js.Any.fromFunction1(renderItem))
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], renderItem = js.Any.fromFunction1(renderItem))
     if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
-    if (flatListProps != null) __obj.updateDynamic("flatListProps")(flatListProps)
-    if (!js.isUndefined(hideResults)) __obj.updateDynamic("hideResults")(hideResults)
+    if (flatListProps != null) __obj.updateDynamic("flatListProps")(flatListProps.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideResults)) __obj.updateDynamic("hideResults")(hideResults.asInstanceOf[js.Any])
     if (inputContainerStyle != null) __obj.updateDynamic("inputContainerStyle")(inputContainerStyle.asInstanceOf[js.Any])
     if (keyExtractor != null) __obj.updateDynamic("keyExtractor")(js.Any.fromFunction2(keyExtractor))
     if (listContainerStyle != null) __obj.updateDynamic("listContainerStyle")(listContainerStyle.asInstanceOf[js.Any])
     if (listStyle != null) __obj.updateDynamic("listStyle")(listStyle.asInstanceOf[js.Any])
     if (onShowResult != null) __obj.updateDynamic("onShowResult")(js.Any.fromFunction1(onShowResult))
     if (onStartShouldSetResponderCapture != null) __obj.updateDynamic("onStartShouldSetResponderCapture")(js.Any.fromFunction1(onStartShouldSetResponderCapture))
-    if (renderSeparator != null) __obj.updateDynamic("renderSeparator")(renderSeparator)
+    if (renderSeparator != null) __obj.updateDynamic("renderSeparator")(renderSeparator.asInstanceOf[js.Any])
     if (renderTextInput != null) __obj.updateDynamic("renderTextInput")(js.Any.fromFunction1(renderTextInput))
     __obj.asInstanceOf[AutocompleteProps[T]]
   }

@@ -20,10 +20,10 @@ object ArgumentGroupOptions {
     title: String = null
   ): ArgumentGroupOptions = {
     val __obj = js.Dynamic.literal()
-    if (argumentDefault != null) __obj.updateDynamic("argumentDefault")(argumentDefault)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (prefixChars != null) __obj.updateDynamic("prefixChars")(prefixChars)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (argumentDefault != null) __obj.updateDynamic("argumentDefault")(argumentDefault.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (prefixChars != null) __obj.updateDynamic("prefixChars")(prefixChars.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArgumentGroupOptions]
   }
 }

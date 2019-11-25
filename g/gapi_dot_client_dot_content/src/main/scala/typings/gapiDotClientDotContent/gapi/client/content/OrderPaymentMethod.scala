@@ -41,12 +41,12 @@ object OrderPaymentMethod {
     `type`: String = null
   ): OrderPaymentMethod = {
     val __obj = js.Dynamic.literal()
-    if (billingAddress != null) __obj.updateDynamic("billingAddress")(billingAddress)
+    if (billingAddress != null) __obj.updateDynamic("billingAddress")(billingAddress.asInstanceOf[js.Any])
     if (expirationMonth != null) __obj.updateDynamic("expirationMonth")(expirationMonth.asInstanceOf[js.Any])
     if (expirationYear != null) __obj.updateDynamic("expirationYear")(expirationYear.asInstanceOf[js.Any])
-    if (lastFourDigits != null) __obj.updateDynamic("lastFourDigits")(lastFourDigits)
-    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (lastFourDigits != null) __obj.updateDynamic("lastFourDigits")(lastFourDigits.asInstanceOf[js.Any])
+    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderPaymentMethod]
   }
 }

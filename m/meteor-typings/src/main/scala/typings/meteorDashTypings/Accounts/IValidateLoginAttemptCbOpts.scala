@@ -28,8 +28,8 @@ object IValidateLoginAttemptCbOpts {
     `type`: String,
     user: User
   ): IValidateLoginAttemptCbOpts = {
-    val __obj = js.Dynamic.literal(allowed = allowed, connection = connection, error = error, methodArguments = methodArguments, methodName = methodName, user = user)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(allowed = allowed.asInstanceOf[js.Any], connection = connection.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], methodArguments = methodArguments.asInstanceOf[js.Any], methodName = methodName.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IValidateLoginAttemptCbOpts]
   }
 }

@@ -16,7 +16,7 @@ object Anon_Method {
   def apply(url: String | RegExp, method: String | js.Array[String] = null, methods: js.Array[String] = null): Anon_Method = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (methods != null) __obj.updateDynamic("methods")(methods)
+    if (methods != null) __obj.updateDynamic("methods")(methods.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Method]
   }
 }

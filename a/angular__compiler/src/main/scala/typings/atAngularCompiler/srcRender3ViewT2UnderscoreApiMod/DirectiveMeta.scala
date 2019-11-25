@@ -43,8 +43,8 @@ object DirectiveMeta {
     outputs: StringDictionary[String],
     exportAs: js.Array[String] = null
   ): DirectiveMeta = {
-    val __obj = js.Dynamic.literal(inputs = inputs, isComponent = isComponent, name = name, outputs = outputs)
-    if (exportAs != null) __obj.updateDynamic("exportAs")(exportAs)
+    val __obj = js.Dynamic.literal(inputs = inputs.asInstanceOf[js.Any], isComponent = isComponent.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any])
+    if (exportAs != null) __obj.updateDynamic("exportAs")(exportAs.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectiveMeta]
   }
 }

@@ -38,9 +38,7 @@ object libCommandMod extends js.Object {
     def validate(argv: CommandLineInputs): js.Promise[Unit] = js.native
   }
   
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - typings.std.Map because Already inherited
-  - typings.atIonicCliDashFramework.definitionsMod.ICommandMap because Already inherited */ @js.native
+  @js.native
   class BaseCommandMap[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] () extends AliasedMap[String, CommandMapGetter[C, N, M, I, O]]
   
   @js.native
@@ -48,9 +46,7 @@ object libCommandMod extends js.Object {
     def this(parent: N) = this()
   }
   
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - typings.std.Map because Already inherited
-  - typings.atIonicCliDashFramework.definitionsMod.INamespaceMap because Already inherited */ @js.native
+  @js.native
   class BaseNamespaceMap[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] () extends AliasedMap[String, NamespaceMapGetter[C, N, M, I, O]]
   
   @js.native
@@ -62,9 +58,7 @@ object libCommandMod extends js.Object {
           CommandMetadataOption
         ]
   
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - typings.std.Map because Already inherited
-  - typings.atIonicCliDashFramework.definitionsMod.ICommandMap because Already inherited */ @js.native
+  @js.native
   class CommandMap () extends AliasedMap[
           String, 
           CommandMapGetter[
@@ -85,9 +79,7 @@ object libCommandMod extends js.Object {
           CommandMetadataOption
         ]
   
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - typings.std.Map because Already inherited
-  - typings.atIonicCliDashFramework.definitionsMod.INamespaceMap because Already inherited */ @js.native
+  @js.native
   class NamespaceMap () extends AliasedMap[
           String, 
           NamespaceMapGetter[

@@ -19,7 +19,7 @@ trait UsersListFollowingForUserParams extends js.Object {
 object UsersListFollowingForUserParams {
   @scala.inline
   def apply(username: String, page: Int | Double = null, per_page: Int | Double = null): UsersListFollowingForUserParams = {
-    val __obj = js.Dynamic.literal(username = username)
+    val __obj = js.Dynamic.literal(username = username.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (per_page != null) __obj.updateDynamic("per_page")(per_page.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsersListFollowingForUserParams]

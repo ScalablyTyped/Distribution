@@ -22,11 +22,11 @@ object VideoAbuseReport {
     videoId: String = null
   ): VideoAbuseReport = {
     val __obj = js.Dynamic.literal()
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (reasonId != null) __obj.updateDynamic("reasonId")(reasonId)
-    if (secondaryReasonId != null) __obj.updateDynamic("secondaryReasonId")(secondaryReasonId)
-    if (videoId != null) __obj.updateDynamic("videoId")(videoId)
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (reasonId != null) __obj.updateDynamic("reasonId")(reasonId.asInstanceOf[js.Any])
+    if (secondaryReasonId != null) __obj.updateDynamic("secondaryReasonId")(secondaryReasonId.asInstanceOf[js.Any])
+    if (videoId != null) __obj.updateDynamic("videoId")(videoId.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoAbuseReport]
   }
 }

@@ -12,7 +12,7 @@ trait Anon_LookupId extends js.Object {
 object Anon_LookupId {
   @scala.inline
   def apply(LookupId: Double, LookupValue: String): Anon_LookupId = {
-    val __obj = js.Dynamic.literal(LookupId = LookupId, LookupValue = LookupValue)
+    val __obj = js.Dynamic.literal(LookupId = LookupId.asInstanceOf[js.Any], LookupValue = LookupValue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_LookupId]
   }

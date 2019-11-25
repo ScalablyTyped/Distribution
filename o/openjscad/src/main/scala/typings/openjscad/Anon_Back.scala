@@ -13,8 +13,8 @@ trait Anon_Back extends js.Object {
 object Anon_Back {
   @scala.inline
   def apply(back: js.Any, front: js.Any, `type`: js.Any): Anon_Back = {
-    val __obj = js.Dynamic.literal(back = back, front = front)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(back = back.asInstanceOf[js.Any], front = front.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Back]
   }
 }

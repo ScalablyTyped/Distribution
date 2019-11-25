@@ -24,8 +24,8 @@ object GoogleActionsV2UiElementsTableCardRow {
     dividerAfter: js.UndefOr[Boolean] = js.undefined
   ): GoogleActionsV2UiElementsTableCardRow = {
     val __obj = js.Dynamic.literal()
-    if (cells != null) __obj.updateDynamic("cells")(cells)
-    if (!js.isUndefined(dividerAfter)) __obj.updateDynamic("dividerAfter")(dividerAfter)
+    if (cells != null) __obj.updateDynamic("cells")(cells.asInstanceOf[js.Any])
+    if (!js.isUndefined(dividerAfter)) __obj.updateDynamic("dividerAfter")(dividerAfter.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2UiElementsTableCardRow]
   }
 }

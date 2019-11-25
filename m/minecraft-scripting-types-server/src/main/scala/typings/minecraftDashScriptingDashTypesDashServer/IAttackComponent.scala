@@ -17,7 +17,7 @@ trait IAttackComponent extends js.Object {
 object IAttackComponent {
   @scala.inline
   def apply(damage: Anon_Rangemax): IAttackComponent = {
-    val __obj = js.Dynamic.literal(damage = damage)
+    val __obj = js.Dynamic.literal(damage = damage.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IAttackComponent]
   }

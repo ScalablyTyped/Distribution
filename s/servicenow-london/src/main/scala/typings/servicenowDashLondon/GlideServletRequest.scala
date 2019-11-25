@@ -25,10 +25,9 @@ object GlideServletRequest {
     getParameter: String => String,
     getParameterNames: () => String,
     getQueryString: () => String,
-    toString: () => String,
     writeOutput: (String, String) => Unit
   ): GlideServletRequest = {
-    val __obj = js.Dynamic.literal(getContentType = js.Any.fromFunction0(getContentType), getHeader = js.Any.fromFunction1(getHeader), getHeaderNames = js.Any.fromFunction0(getHeaderNames), getHeaders = js.Any.fromFunction1(getHeaders), getParameter = js.Any.fromFunction1(getParameter), getParameterNames = js.Any.fromFunction0(getParameterNames), getQueryString = js.Any.fromFunction0(getQueryString), toString = js.Any.fromFunction0(toString), writeOutput = js.Any.fromFunction2(writeOutput))
+    val __obj = js.Dynamic.literal(getContentType = js.Any.fromFunction0(getContentType), getHeader = js.Any.fromFunction1(getHeader), getHeaderNames = js.Any.fromFunction0(getHeaderNames), getHeaders = js.Any.fromFunction1(getHeaders), getParameter = js.Any.fromFunction1(getParameter), getParameterNames = js.Any.fromFunction0(getParameterNames), getQueryString = js.Any.fromFunction0(getQueryString), writeOutput = js.Any.fromFunction2(writeOutput))
   
     __obj.asInstanceOf[GlideServletRequest]
   }

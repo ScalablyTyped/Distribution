@@ -19,8 +19,8 @@ object Flags {
   @scala.inline
   def apply(create: js.UndefOr[Boolean] = js.undefined, exclusive: js.UndefOr[Boolean] = js.undefined): Flags = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(create)) __obj.updateDynamic("create")(create)
-    if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive)
+    if (!js.isUndefined(create)) __obj.updateDynamic("create")(create.asInstanceOf[js.Any])
+    if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive.asInstanceOf[js.Any])
     __obj.asInstanceOf[Flags]
   }
 }

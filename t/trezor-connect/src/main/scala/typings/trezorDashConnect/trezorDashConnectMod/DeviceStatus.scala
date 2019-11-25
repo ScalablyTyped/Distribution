@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait DeviceStatus extends js.Object
 
+object DeviceStatus {
+  @scala.inline
+  def available: typings.trezorDashConnect.trezorDashConnectStrings.available = this.cast("available")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def occupied: typings.trezorDashConnect.trezorDashConnectStrings.occupied = this.cast("occupied")
+  @scala.inline
+  def used: typings.trezorDashConnect.trezorDashConnectStrings.used = this.cast("used")
+}
+

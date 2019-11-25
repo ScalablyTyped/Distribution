@@ -15,7 +15,7 @@ trait Anon_AppearTransition extends js.Object {
 object Anon_AppearTransition {
   @scala.inline
   def apply(appearTransition: Boolean, percent: Double, position: String, prefixCls: String, unfilled: Boolean): Anon_AppearTransition = {
-    val __obj = js.Dynamic.literal(appearTransition = appearTransition, percent = percent, position = position, prefixCls = prefixCls, unfilled = unfilled)
+    val __obj = js.Dynamic.literal(appearTransition = appearTransition.asInstanceOf[js.Any], percent = percent.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], unfilled = unfilled.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AppearTransition]
   }

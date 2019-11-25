@@ -72,13 +72,13 @@ object ScalesRange {
     startWidth: Int | Double = null
   ): ScalesRange = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
-    if (border != null) __obj.updateDynamic("border")(border)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
     if (distanceFromScale != null) __obj.updateDynamic("distanceFromScale")(distanceFromScale.asInstanceOf[js.Any])
     if (endValue != null) __obj.updateDynamic("endValue")(endValue.asInstanceOf[js.Any])
     if (endWidth != null) __obj.updateDynamic("endWidth")(endWidth.asInstanceOf[js.Any])
-    if (gradients != null) __obj.updateDynamic("gradients")(gradients)
-    if (legendText != null) __obj.updateDynamic("legendText")(legendText)
+    if (gradients != null) __obj.updateDynamic("gradients")(gradients.asInstanceOf[js.Any])
+    if (legendText != null) __obj.updateDynamic("legendText")(legendText.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])

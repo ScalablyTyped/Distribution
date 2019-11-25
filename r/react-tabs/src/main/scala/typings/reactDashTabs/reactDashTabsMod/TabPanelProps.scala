@@ -21,8 +21,8 @@ object TabPanelProps {
   ): TabPanelProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceRender)) __obj.updateDynamic("forceRender")(forceRender)
-    if (selectedClassName != null) __obj.updateDynamic("selectedClassName")(selectedClassName)
+    if (!js.isUndefined(forceRender)) __obj.updateDynamic("forceRender")(forceRender.asInstanceOf[js.Any])
+    if (selectedClassName != null) __obj.updateDynamic("selectedClassName")(selectedClassName.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabPanelProps]
   }
 }

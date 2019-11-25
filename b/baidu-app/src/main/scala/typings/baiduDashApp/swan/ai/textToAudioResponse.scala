@@ -11,7 +11,7 @@ trait textToAudioResponse extends js.Object {
 object textToAudioResponse {
   @scala.inline
   def apply(filePath: String): textToAudioResponse = {
-    val __obj = js.Dynamic.literal(filePath = filePath)
+    val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[textToAudioResponse]
   }

@@ -16,7 +16,7 @@ trait SelectionInfo extends js.Object {
 object SelectionInfo {
   @scala.inline
   def apply(h: Double, w: Double, x: Double, x2: Double, y: Double, y2: Double): SelectionInfo = {
-    val __obj = js.Dynamic.literal(h = h, w = w, x = x, x2 = x2, y = y, y2 = y2)
+    val __obj = js.Dynamic.literal(h = h.asInstanceOf[js.Any], w = w.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], x2 = x2.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], y2 = y2.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SelectionInfo]
   }

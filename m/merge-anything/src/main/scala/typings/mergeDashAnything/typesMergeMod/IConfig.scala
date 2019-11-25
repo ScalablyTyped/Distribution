@@ -11,7 +11,7 @@ trait IConfig extends js.Object {
 object IConfig {
   @scala.inline
   def apply(extensions: js.Array[Extension]): IConfig = {
-    val __obj = js.Dynamic.literal(extensions = extensions)
+    val __obj = js.Dynamic.literal(extensions = extensions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IConfig]
   }

@@ -126,8 +126,8 @@ object OptionsData {
     typeResolver: (_, _, /* info */ GraphQLResolveInfo, /* abstractType */ GraphQLAbstractType) => PromiseOrValue[Maybe[(GraphQLObjectType[_, _, StringDictionary[_]]) | String]] = null,
     validationRules: js.Array[js.Function1[/* ctx */ ValidationContext, ASTVisitor]] = null
   ): OptionsData = {
-    val __obj = js.Dynamic.literal(schema = schema)
-    if (context != null) __obj.updateDynamic("context")(context)
+    val __obj = js.Dynamic.literal(schema = schema.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (customExecuteFn != null) __obj.updateDynamic("customExecuteFn")(js.Any.fromFunction1(customExecuteFn))
     if (customFormatErrorFn != null) __obj.updateDynamic("customFormatErrorFn")(js.Any.fromFunction1(customFormatErrorFn))
     if (customParseFn != null) __obj.updateDynamic("customParseFn")(js.Any.fromFunction1(customParseFn))
@@ -135,11 +135,11 @@ object OptionsData {
     if (extensions != null) __obj.updateDynamic("extensions")(js.Any.fromFunction1(extensions))
     if (fieldResolver != null) __obj.updateDynamic("fieldResolver")(js.Any.fromFunction4(fieldResolver))
     if (formatError != null) __obj.updateDynamic("formatError")(js.Any.fromFunction1(formatError))
-    if (!js.isUndefined(graphiql)) __obj.updateDynamic("graphiql")(graphiql)
-    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty)
-    if (rootValue != null) __obj.updateDynamic("rootValue")(rootValue)
+    if (!js.isUndefined(graphiql)) __obj.updateDynamic("graphiql")(graphiql.asInstanceOf[js.Any])
+    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.asInstanceOf[js.Any])
+    if (rootValue != null) __obj.updateDynamic("rootValue")(rootValue.asInstanceOf[js.Any])
     if (typeResolver != null) __obj.updateDynamic("typeResolver")(js.Any.fromFunction4(typeResolver))
-    if (validationRules != null) __obj.updateDynamic("validationRules")(validationRules)
+    if (validationRules != null) __obj.updateDynamic("validationRules")(validationRules.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsData]
   }
 }

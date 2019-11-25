@@ -30,8 +30,8 @@ object StopsByInterval {
     propertyIsEnumerable: PropertyKey => Boolean,
     timeExtent: TimeExtent = null
   ): StopsByInterval = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), interval = interval, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (timeExtent != null) __obj.updateDynamic("timeExtent")(timeExtent)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), interval = interval.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (timeExtent != null) __obj.updateDynamic("timeExtent")(timeExtent.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopsByInterval]
   }
 }

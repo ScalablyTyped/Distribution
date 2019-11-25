@@ -13,8 +13,8 @@ object InsertRangeRequest {
   @scala.inline
   def apply(range: GridRange = null, shiftDimension: String = null): InsertRangeRequest = {
     val __obj = js.Dynamic.literal()
-    if (range != null) __obj.updateDynamic("range")(range)
-    if (shiftDimension != null) __obj.updateDynamic("shiftDimension")(shiftDimension)
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (shiftDimension != null) __obj.updateDynamic("shiftDimension")(shiftDimension.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsertRangeRequest]
   }
 }

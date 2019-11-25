@@ -11,7 +11,7 @@ trait TeamsGetParams extends js.Object {
 object TeamsGetParams {
   @scala.inline
   def apply(team_id: Double): TeamsGetParams = {
-    val __obj = js.Dynamic.literal(team_id = team_id)
+    val __obj = js.Dynamic.literal(team_id = team_id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TeamsGetParams]
   }

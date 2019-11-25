@@ -14,7 +14,7 @@ object Anon_Data {
   def apply[TData](data: TData = null, errors: js.Any = null): Anon_Data[TData] = {
     val __obj = js.Dynamic.literal()
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (errors != null) __obj.updateDynamic("errors")(errors)
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Data[TData]]
   }
 }

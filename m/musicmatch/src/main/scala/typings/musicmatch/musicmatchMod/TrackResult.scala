@@ -12,7 +12,7 @@ trait TrackResult extends js.Object {
 object TrackResult {
   @scala.inline
   def apply(track: Anon_Albumid): TrackResult = {
-    val __obj = js.Dynamic.literal(track = track)
+    val __obj = js.Dynamic.literal(track = track.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TrackResult]
   }

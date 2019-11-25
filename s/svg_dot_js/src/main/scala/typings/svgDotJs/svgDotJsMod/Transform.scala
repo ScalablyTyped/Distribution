@@ -56,7 +56,7 @@ object Transform {
     if (d != null) __obj.updateDynamic("d")(d.asInstanceOf[js.Any])
     if (e != null) __obj.updateDynamic("e")(e.asInstanceOf[js.Any])
     if (f != null) __obj.updateDynamic("f")(f.asInstanceOf[js.Any])
-    if (matrix != null) __obj.updateDynamic("matrix")(matrix)
+    if (matrix != null) __obj.updateDynamic("matrix")(matrix.asInstanceOf[js.Any])
     if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     if (scaleX != null) __obj.updateDynamic("scaleX")(scaleX.asInstanceOf[js.Any])

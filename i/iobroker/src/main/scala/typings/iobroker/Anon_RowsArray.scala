@@ -12,7 +12,7 @@ trait Anon_RowsArray extends js.Object {
 object Anon_RowsArray {
   @scala.inline
   def apply(rows: js.Array[GetObjectListItem]): Anon_RowsArray = {
-    val __obj = js.Dynamic.literal(rows = rows)
+    val __obj = js.Dynamic.literal(rows = rows.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_RowsArray]
   }

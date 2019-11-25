@@ -21,10 +21,10 @@ object BadgeProps {
     `type`: BadgeTypes = null
   ): BadgeProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (modifier != null) __obj.updateDynamic("modifier")(modifier)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (modifier != null) __obj.updateDynamic("modifier")(modifier.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BadgeProps]
   }
 }

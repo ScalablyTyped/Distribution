@@ -27,7 +27,7 @@ object BaseDirectionsStep {
     transit: TransitDetails,
     travel_mode: TravelMode
   ): BaseDirectionsStep = {
-    val __obj = js.Dynamic.literal(distance = distance, duration = duration, end_location = end_location, instructions = instructions, path = path, start_location = start_location, transit = transit, travel_mode = travel_mode)
+    val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], end_location = end_location.asInstanceOf[js.Any], instructions = instructions.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], start_location = start_location.asInstanceOf[js.Any], transit = transit.asInstanceOf[js.Any], travel_mode = travel_mode.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BaseDirectionsStep]
   }

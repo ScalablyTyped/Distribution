@@ -14,7 +14,7 @@ trait Anon_HeightHeightSegments extends js.Object {
 object Anon_HeightHeightSegments {
   @scala.inline
   def apply(height: Double, heightSegments: Double, width: Double, widthSegments: Double): Anon_HeightHeightSegments = {
-    val __obj = js.Dynamic.literal(height = height, heightSegments = heightSegments, width = width, widthSegments = widthSegments)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], heightSegments = heightSegments.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], widthSegments = widthSegments.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_HeightHeightSegments]
   }

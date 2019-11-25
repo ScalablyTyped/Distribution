@@ -14,8 +14,8 @@ trait Anon_CellContext[K, D]
 object Anon_CellContext {
   @scala.inline
   def apply[K, D](cellContext: CellContext[K, D], StringDictionary: /* propName */ StringDictionary[js.Any] = null): Anon_CellContext[K, D] = {
-    val __obj = js.Dynamic.literal(cellContext = cellContext)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(cellContext = cellContext.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_CellContext[K, D]]
   }
 }

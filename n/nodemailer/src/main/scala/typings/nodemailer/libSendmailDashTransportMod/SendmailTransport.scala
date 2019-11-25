@@ -28,15 +28,19 @@ object SendmailTransport {
     name: String,
     options: Options,
     path: String,
-    send: (typings.nodemailer.libMailerMailDashMessageMod.^, js.Function2[/* err */ Error | Null, /* info */ SentMessageInfo, Unit]) => Unit,
+    send: (typings.nodemailer.libMailerMailDashMessageMod.^, js.Function2[
+      /* err */ Error | Null, 
+      /* info */ typings.nodemailer.nodemailerMod.SentMessageInfo, 
+      Unit
+    ]) => Unit,
     version: String,
     winbreak: Boolean,
     close: () => Unit = null,
     verify: (js.Function1[/* callback */ js.Function2[/* err */ Error | Null, `true`, Unit], Unit]) with js.Function0[js.Promise[`true`]] = null
   ): SendmailTransport = {
-    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], logger = logger, mailer = mailer, name = name, options = options, path = path, send = js.Any.fromFunction2(send), version = version, winbreak = winbreak)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], logger = logger.asInstanceOf[js.Any], mailer = mailer.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], send = js.Any.fromFunction2(send), version = version.asInstanceOf[js.Any], winbreak = winbreak.asInstanceOf[js.Any])
     if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction0(close))
-    if (verify != null) __obj.updateDynamic("verify")(verify)
+    if (verify != null) __obj.updateDynamic("verify")(verify.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendmailTransport]
   }
 }

@@ -23,9 +23,9 @@ object Anon_BatchSize {
   ): Anon_BatchSize = {
     val __obj = js.Dynamic.literal()
     if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(nameOnly)) __obj.updateDynamic("nameOnly")(nameOnly)
-    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference)
-    if (session != null) __obj.updateDynamic("session")(session)
+    if (!js.isUndefined(nameOnly)) __obj.updateDynamic("nameOnly")(nameOnly.asInstanceOf[js.Any])
+    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])
+    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BatchSize]
   }
 }

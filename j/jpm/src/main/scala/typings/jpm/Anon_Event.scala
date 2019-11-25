@@ -26,8 +26,8 @@ object Anon_Event {
     onMessage: /* message */ FrameEvent => _ = null,
     onReady: /* event */ FrameEvent => _ = null
   ): Anon_Event = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (name != null) __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (onAttach != null) __obj.updateDynamic("onAttach")(js.Any.fromFunction1(onAttach))
     if (onDetach != null) __obj.updateDynamic("onDetach")(js.Any.fromFunction1(onDetach))
     if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction1(onLoad))

@@ -13,7 +13,7 @@ trait IHightfield extends js.Object {
 object IHightfield {
   @scala.inline
   def apply(elementSize: Double, maxValue: Int | Double = null, minValue: Int | Double = null): IHightfield = {
-    val __obj = js.Dynamic.literal(elementSize = elementSize)
+    val __obj = js.Dynamic.literal(elementSize = elementSize.asInstanceOf[js.Any])
     if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
     if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHightfield]

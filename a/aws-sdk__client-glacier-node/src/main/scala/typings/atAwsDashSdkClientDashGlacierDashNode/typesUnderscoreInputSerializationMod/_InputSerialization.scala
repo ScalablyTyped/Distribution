@@ -16,7 +16,7 @@ object _InputSerialization {
   @scala.inline
   def apply(csv: _CSVInput = null): _InputSerialization = {
     val __obj = js.Dynamic.literal()
-    if (csv != null) __obj.updateDynamic("csv")(csv)
+    if (csv != null) __obj.updateDynamic("csv")(csv.asInstanceOf[js.Any])
     __obj.asInstanceOf[_InputSerialization]
   }
 }

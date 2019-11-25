@@ -12,7 +12,7 @@ trait IToastConfig extends js.Object {
 object IToastConfig {
   @scala.inline
   def apply(duration: Double, mask: Boolean): IToastConfig = {
-    val __obj = js.Dynamic.literal(duration = duration, mask = mask)
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], mask = mask.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IToastConfig]
   }

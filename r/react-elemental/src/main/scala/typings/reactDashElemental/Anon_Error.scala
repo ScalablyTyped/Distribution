@@ -15,9 +15,9 @@ object Anon_Error {
   @scala.inline
   def apply(error: String = null, secondary: js.UndefOr[Boolean] = js.undefined, style: CSSProperties = null): Anon_Error = {
     val __obj = js.Dynamic.literal()
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (!js.isUndefined(secondary)) __obj.updateDynamic("secondary")(secondary)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (!js.isUndefined(secondary)) __obj.updateDynamic("secondary")(secondary.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Error]
   }
 }

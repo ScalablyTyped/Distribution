@@ -11,7 +11,7 @@ trait ConstantConfig extends js.Object {
 object ConstantConfig {
   @scala.inline
   def apply(value: Double): ConstantConfig = {
-    val __obj = js.Dynamic.literal(value = value)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ConstantConfig]
   }

@@ -40,20 +40,20 @@ object SliderProps {
     step: Int | Double = null,
     tooltip: js.UndefOr[Boolean] = js.undefined
   ): SliderProps = {
-    val __obj = js.Dynamic.literal(value = value)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(js.Any.fromFunction1(format))
-    if (handleLabel != null) __obj.updateDynamic("handleLabel")(handleLabel)
-    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (handleLabel != null) __obj.updateDynamic("handleLabel")(handleLabel.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onChangeComplete != null) __obj.updateDynamic("onChangeComplete")(js.Any.fromFunction1(onChangeComplete))
     if (onChangeStart != null) __obj.updateDynamic("onChangeStart")(js.Any.fromFunction1(onChangeStart))
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation)
-    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse)
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
-    if (!js.isUndefined(tooltip)) __obj.updateDynamic("tooltip")(tooltip)
+    if (!js.isUndefined(tooltip)) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[SliderProps]
   }
 }

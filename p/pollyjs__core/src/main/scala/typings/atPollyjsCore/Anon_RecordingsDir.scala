@@ -12,7 +12,7 @@ object Anon_RecordingsDir {
   @scala.inline
   def apply(recordingsDir: String = null): Anon_RecordingsDir = {
     val __obj = js.Dynamic.literal()
-    if (recordingsDir != null) __obj.updateDynamic("recordingsDir")(recordingsDir)
+    if (recordingsDir != null) __obj.updateDynamic("recordingsDir")(recordingsDir.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_RecordingsDir]
   }
 }

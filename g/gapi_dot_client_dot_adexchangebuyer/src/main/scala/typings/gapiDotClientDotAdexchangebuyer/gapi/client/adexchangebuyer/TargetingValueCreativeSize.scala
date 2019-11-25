@@ -27,11 +27,11 @@ object TargetingValueCreativeSize {
     skippableAdType: String = null
   ): TargetingValueCreativeSize = {
     val __obj = js.Dynamic.literal()
-    if (companionSizes != null) __obj.updateDynamic("companionSizes")(companionSizes)
-    if (creativeSizeType != null) __obj.updateDynamic("creativeSizeType")(creativeSizeType)
-    if (nativeTemplate != null) __obj.updateDynamic("nativeTemplate")(nativeTemplate)
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (skippableAdType != null) __obj.updateDynamic("skippableAdType")(skippableAdType)
+    if (companionSizes != null) __obj.updateDynamic("companionSizes")(companionSizes.asInstanceOf[js.Any])
+    if (creativeSizeType != null) __obj.updateDynamic("creativeSizeType")(creativeSizeType.asInstanceOf[js.Any])
+    if (nativeTemplate != null) __obj.updateDynamic("nativeTemplate")(nativeTemplate.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (skippableAdType != null) __obj.updateDynamic("skippableAdType")(skippableAdType.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetingValueCreativeSize]
   }
 }

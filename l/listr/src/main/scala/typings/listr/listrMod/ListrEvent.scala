@@ -13,7 +13,7 @@ object ListrEvent {
   @scala.inline
   def apply(`type`: String, data: String | Boolean = null): ListrEvent = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListrEvent]
   }

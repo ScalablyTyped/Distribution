@@ -32,10 +32,10 @@ object PluginObject {
     scene: js.Array[PluginObjectItem] = null
   ): PluginObject = {
     val __obj = js.Dynamic.literal()
-    if (default != null) __obj.updateDynamic("default")(default)
-    if (defaultMerge != null) __obj.updateDynamic("defaultMerge")(defaultMerge)
-    if (global != null) __obj.updateDynamic("global")(global)
-    if (scene != null) __obj.updateDynamic("scene")(scene)
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (defaultMerge != null) __obj.updateDynamic("defaultMerge")(defaultMerge.asInstanceOf[js.Any])
+    if (global != null) __obj.updateDynamic("global")(global.asInstanceOf[js.Any])
+    if (scene != null) __obj.updateDynamic("scene")(scene.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginObject]
   }
 }

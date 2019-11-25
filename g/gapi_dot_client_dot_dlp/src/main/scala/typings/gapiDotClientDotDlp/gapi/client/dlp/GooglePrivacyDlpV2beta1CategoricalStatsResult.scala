@@ -15,7 +15,7 @@ object GooglePrivacyDlpV2beta1CategoricalStatsResult {
     valueFrequencyHistogramBuckets: js.Array[GooglePrivacyDlpV2beta1CategoricalStatsHistogramBucket] = null
   ): GooglePrivacyDlpV2beta1CategoricalStatsResult = {
     val __obj = js.Dynamic.literal()
-    if (valueFrequencyHistogramBuckets != null) __obj.updateDynamic("valueFrequencyHistogramBuckets")(valueFrequencyHistogramBuckets)
+    if (valueFrequencyHistogramBuckets != null) __obj.updateDynamic("valueFrequencyHistogramBuckets")(valueFrequencyHistogramBuckets.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1CategoricalStatsResult]
   }
 }

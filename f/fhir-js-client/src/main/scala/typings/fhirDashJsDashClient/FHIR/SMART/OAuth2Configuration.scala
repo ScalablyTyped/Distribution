@@ -40,11 +40,11 @@ object OAuth2Configuration {
     server: String = null
   ): OAuth2Configuration = {
     val __obj = js.Dynamic.literal()
-    if (client != null) __obj.updateDynamic("client")(client)
-    if (fake_token_response != null) __obj.updateDynamic("fake_token_response")(fake_token_response)
-    if (provider != null) __obj.updateDynamic("provider")(provider)
-    if (response_type != null) __obj.updateDynamic("response_type")(response_type)
-    if (server != null) __obj.updateDynamic("server")(server)
+    if (client != null) __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
+    if (fake_token_response != null) __obj.updateDynamic("fake_token_response")(fake_token_response.asInstanceOf[js.Any])
+    if (provider != null) __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
+    if (response_type != null) __obj.updateDynamic("response_type")(response_type.asInstanceOf[js.Any])
+    if (server != null) __obj.updateDynamic("server")(server.asInstanceOf[js.Any])
     __obj.asInstanceOf[OAuth2Configuration]
   }
 }

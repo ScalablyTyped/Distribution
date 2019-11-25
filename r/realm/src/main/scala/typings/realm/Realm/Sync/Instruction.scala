@@ -43,15 +43,15 @@ object Instruction {
     property: js.Any = null,
     values: js.Any = null
   ): Instruction = {
-    val __obj = js.Dynamic.literal(identity = identity, object_type = object_type)
+    val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any], object_type = object_type.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (list_index != null) __obj.updateDynamic("list_index")(list_index)
-    if (new_identity != null) __obj.updateDynamic("new_identity")(new_identity)
-    if (object_identity != null) __obj.updateDynamic("object_identity")(object_identity)
-    if (primary_key != null) __obj.updateDynamic("primary_key")(primary_key)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (property != null) __obj.updateDynamic("property")(property)
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (list_index != null) __obj.updateDynamic("list_index")(list_index.asInstanceOf[js.Any])
+    if (new_identity != null) __obj.updateDynamic("new_identity")(new_identity.asInstanceOf[js.Any])
+    if (object_identity != null) __obj.updateDynamic("object_identity")(object_identity.asInstanceOf[js.Any])
+    if (primary_key != null) __obj.updateDynamic("primary_key")(primary_key.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[Instruction]
   }
 }

@@ -17,7 +17,7 @@ object RouteUpdateDelayedArgs {
     getResourcesForPathnameSync: js.Function,
     location: Location
   ): RouteUpdateDelayedArgs = {
-    val __obj = js.Dynamic.literal(getResourceURLsForPathname = getResourceURLsForPathname, getResourcesForPathname = getResourcesForPathname, getResourcesForPathnameSync = getResourcesForPathnameSync, location = location)
+    val __obj = js.Dynamic.literal(getResourceURLsForPathname = getResourceURLsForPathname.asInstanceOf[js.Any], getResourcesForPathname = getResourcesForPathname.asInstanceOf[js.Any], getResourcesForPathnameSync = getResourcesForPathnameSync.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RouteUpdateDelayedArgs]
   }

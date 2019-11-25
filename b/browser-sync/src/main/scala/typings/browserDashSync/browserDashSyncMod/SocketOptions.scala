@@ -25,11 +25,11 @@ object SocketOptions {
     port: Int | Double = null
   ): SocketOptions = {
     val __obj = js.Dynamic.literal()
-    if (clientPath != null) __obj.updateDynamic("clientPath")(clientPath)
-    if (clients != null) __obj.updateDynamic("clients")(clients)
-    if (domain != null) __obj.updateDynamic("domain")(domain)
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (clientPath != null) __obj.updateDynamic("clientPath")(clientPath.asInstanceOf[js.Any])
+    if (clients != null) __obj.updateDynamic("clients")(clients.asInstanceOf[js.Any])
+    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
+    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     __obj.asInstanceOf[SocketOptions]
   }

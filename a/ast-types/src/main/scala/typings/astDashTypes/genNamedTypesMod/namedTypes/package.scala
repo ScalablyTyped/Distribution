@@ -5,11 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object namedTypes {
-  type Declaration = Node
+  type Declaration = Statement
   type Expression = Node
   type Flow = Node
-  type FlowPredicate = Node
-  type FlowType = Node
+  type FlowPredicate = Flow
+  type FlowType = Flow
   type Pattern = Node
   type Specifier = Node
   type Statement = Node

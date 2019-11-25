@@ -20,7 +20,7 @@ object Anon_CellSize {
     val __obj = js.Dynamic.literal()
     if (cellSize != null) __obj.updateDynamic("cellSize")(cellSize.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (!js.isUndefined(scalable)) __obj.updateDynamic("scalable")(scalable)
+    if (!js.isUndefined(scalable)) __obj.updateDynamic("scalable")(scalable.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CellSize]
   }
 }

@@ -55,7 +55,6 @@ object IStatusProxy {
     dropAllowed: java.lang.String = null,
     dropNotAllowed: java.lang.String = null,
     getGhost: () => IElement = null,
-    renderTpl: js.Any = null,
     repair: (/* xy */ js.UndefOr[Array], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     reset: /* clearGhost */ js.UndefOr[Boolean] => Unit = null,
     setStatus: /* cssClass */ js.UndefOr[java.lang.String] => Unit = null,
@@ -64,11 +63,10 @@ object IStatusProxy {
     update: /* html */ js.UndefOr[js.Any] => Unit = null
   ): IStatusProxy = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IComponent)
-    if (dropAllowed != null) __obj.updateDynamic("dropAllowed")(dropAllowed)
-    if (dropNotAllowed != null) __obj.updateDynamic("dropNotAllowed")(dropNotAllowed)
+    if (IComponent != null) js.Dynamic.global.Object.assign(__obj, IComponent)
+    if (dropAllowed != null) __obj.updateDynamic("dropAllowed")(dropAllowed.asInstanceOf[js.Any])
+    if (dropNotAllowed != null) __obj.updateDynamic("dropNotAllowed")(dropNotAllowed.asInstanceOf[js.Any])
     if (getGhost != null) __obj.updateDynamic("getGhost")(js.Any.fromFunction0(getGhost))
-    if (renderTpl != null) __obj.updateDynamic("renderTpl")(renderTpl)
     if (repair != null) __obj.updateDynamic("repair")(js.Any.fromFunction3(repair))
     if (reset != null) __obj.updateDynamic("reset")(js.Any.fromFunction1(reset))
     if (setStatus != null) __obj.updateDynamic("setStatus")(js.Any.fromFunction1(setStatus))

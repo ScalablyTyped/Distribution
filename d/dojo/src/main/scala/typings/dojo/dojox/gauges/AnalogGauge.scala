@@ -1,8 +1,6 @@
 package typings.dojo.dojox.gauges
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValueOldValueProperty
-import typings.dojo.Fn_NewValueOldValuePropertyNumber
 import typings.dojo.dojoStrings.cx
 import typings.dojo.dojoStrings.cy
 import typings.dojo.dojoStrings.endAngle
@@ -99,16 +97,64 @@ class AnalogGauge () extends _Gauge {
   @JSName("set")
   def set_startAngle(property: startAngle, value: Double): Unit = js.native
   @JSName("watch")
-  def watch_cx(property: cx, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_cx(
+    property: cx,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_cy(property: cy, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_cy(
+    property: cy,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_endAngle(property: endAngle, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_endAngle(
+    property: endAngle,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_orientation(property: orientation, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_orientation(
+    property: orientation,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_radius(property: radius, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_radius(
+    property: radius,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_startAngle(property: startAngle, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_startAngle(
+    property: startAngle,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

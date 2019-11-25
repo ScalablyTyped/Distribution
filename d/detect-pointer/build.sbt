@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "detect-pointer"
-version := "1.0-dt-20180214Z-754055"
+version := "1.0-dt-20180214Z-61bd47"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

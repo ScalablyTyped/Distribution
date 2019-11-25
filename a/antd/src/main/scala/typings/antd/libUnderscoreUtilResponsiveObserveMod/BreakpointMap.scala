@@ -25,12 +25,12 @@ object BreakpointMap {
     xxl: String = null
   ): BreakpointMap = {
     val __obj = js.Dynamic.literal()
-    if (lg != null) __obj.updateDynamic("lg")(lg)
-    if (md != null) __obj.updateDynamic("md")(md)
-    if (sm != null) __obj.updateDynamic("sm")(sm)
-    if (xl != null) __obj.updateDynamic("xl")(xl)
-    if (xs != null) __obj.updateDynamic("xs")(xs)
-    if (xxl != null) __obj.updateDynamic("xxl")(xxl)
+    if (lg != null) __obj.updateDynamic("lg")(lg.asInstanceOf[js.Any])
+    if (md != null) __obj.updateDynamic("md")(md.asInstanceOf[js.Any])
+    if (sm != null) __obj.updateDynamic("sm")(sm.asInstanceOf[js.Any])
+    if (xl != null) __obj.updateDynamic("xl")(xl.asInstanceOf[js.Any])
+    if (xs != null) __obj.updateDynamic("xs")(xs.asInstanceOf[js.Any])
+    if (xxl != null) __obj.updateDynamic("xxl")(xxl.asInstanceOf[js.Any])
     __obj.asInstanceOf[BreakpointMap]
   }
 }

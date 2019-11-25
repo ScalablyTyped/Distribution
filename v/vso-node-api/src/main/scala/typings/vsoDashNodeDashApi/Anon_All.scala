@@ -33,7 +33,7 @@ object Anon_All {
     userCreated: Double,
     validateShelveset: Double
   ): Anon_All = {
-    val __obj = js.Dynamic.literal(all = all, batchedCI = batchedCI, checkInShelveset = checkInShelveset, individualCI = individualCI, manual = manual, none = none, pullRequest = pullRequest, schedule = schedule, triggered = triggered, userCreated = userCreated, validateShelveset = validateShelveset)
+    val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any], batchedCI = batchedCI.asInstanceOf[js.Any], checkInShelveset = checkInShelveset.asInstanceOf[js.Any], individualCI = individualCI.asInstanceOf[js.Any], manual = manual.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any], pullRequest = pullRequest.asInstanceOf[js.Any], schedule = schedule.asInstanceOf[js.Any], triggered = triggered.asInstanceOf[js.Any], userCreated = userCreated.asInstanceOf[js.Any], validateShelveset = validateShelveset.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_All]
   }

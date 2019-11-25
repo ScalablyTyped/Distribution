@@ -12,7 +12,7 @@ object Body {
   @scala.inline
   def apply(content: js.Array[StructuralElement] = null): Body = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     __obj.asInstanceOf[Body]
   }
 }

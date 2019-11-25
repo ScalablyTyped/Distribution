@@ -12,10 +12,14 @@ object ngDashTableStrings {
   sealed trait Empty extends GroupSort
   
   @js.native
-  sealed trait asc extends SortDirection
+  sealed trait asc
+    extends GroupSort
+       with SortDirection
   
   @js.native
-  sealed trait desc extends SortDirection
+  sealed trait desc
+    extends GroupSort
+       with SortDirection
   
   @js.native
   sealed trait horizontal extends FilterLayout

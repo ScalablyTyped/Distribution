@@ -11,7 +11,7 @@ trait IToastDismissedEventArgs extends js.Object {
 object IToastDismissedEventArgs {
   @scala.inline
   def apply(reason: ToastDismissalReason): IToastDismissedEventArgs = {
-    val __obj = js.Dynamic.literal(reason = reason)
+    val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IToastDismissedEventArgs]
   }

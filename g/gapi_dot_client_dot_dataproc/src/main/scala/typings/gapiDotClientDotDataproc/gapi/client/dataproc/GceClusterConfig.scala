@@ -79,14 +79,14 @@ object GceClusterConfig {
     zoneUri: String = null
   ): GceClusterConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(internalIpOnly)) __obj.updateDynamic("internalIpOnly")(internalIpOnly)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (networkUri != null) __obj.updateDynamic("networkUri")(networkUri)
-    if (serviceAccount != null) __obj.updateDynamic("serviceAccount")(serviceAccount)
-    if (serviceAccountScopes != null) __obj.updateDynamic("serviceAccountScopes")(serviceAccountScopes)
-    if (subnetworkUri != null) __obj.updateDynamic("subnetworkUri")(subnetworkUri)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
-    if (zoneUri != null) __obj.updateDynamic("zoneUri")(zoneUri)
+    if (!js.isUndefined(internalIpOnly)) __obj.updateDynamic("internalIpOnly")(internalIpOnly.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (networkUri != null) __obj.updateDynamic("networkUri")(networkUri.asInstanceOf[js.Any])
+    if (serviceAccount != null) __obj.updateDynamic("serviceAccount")(serviceAccount.asInstanceOf[js.Any])
+    if (serviceAccountScopes != null) __obj.updateDynamic("serviceAccountScopes")(serviceAccountScopes.asInstanceOf[js.Any])
+    if (subnetworkUri != null) __obj.updateDynamic("subnetworkUri")(subnetworkUri.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (zoneUri != null) __obj.updateDynamic("zoneUri")(zoneUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[GceClusterConfig]
   }
 }

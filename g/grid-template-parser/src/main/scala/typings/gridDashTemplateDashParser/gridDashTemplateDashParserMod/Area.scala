@@ -13,7 +13,7 @@ trait Area extends js.Object {
 object Area {
   @scala.inline
   def apply(column: Track, row: Track): Area = {
-    val __obj = js.Dynamic.literal(column = column, row = row)
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Area]
   }

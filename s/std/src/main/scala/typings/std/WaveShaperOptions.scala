@@ -20,10 +20,10 @@ object WaveShaperOptions {
   ): WaveShaperOptions = {
     val __obj = js.Dynamic.literal()
     if (channelCount != null) __obj.updateDynamic("channelCount")(channelCount.asInstanceOf[js.Any])
-    if (channelCountMode != null) __obj.updateDynamic("channelCountMode")(channelCountMode)
-    if (channelInterpretation != null) __obj.updateDynamic("channelInterpretation")(channelInterpretation)
+    if (channelCountMode != null) __obj.updateDynamic("channelCountMode")(channelCountMode.asInstanceOf[js.Any])
+    if (channelInterpretation != null) __obj.updateDynamic("channelInterpretation")(channelInterpretation.asInstanceOf[js.Any])
     if (curve != null) __obj.updateDynamic("curve")(curve.asInstanceOf[js.Any])
-    if (oversample != null) __obj.updateDynamic("oversample")(oversample)
+    if (oversample != null) __obj.updateDynamic("oversample")(oversample.asInstanceOf[js.Any])
     __obj.asInstanceOf[WaveShaperOptions]
   }
 }

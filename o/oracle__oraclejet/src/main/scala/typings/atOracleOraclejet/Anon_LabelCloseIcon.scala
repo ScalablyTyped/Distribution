@@ -12,7 +12,7 @@ object Anon_LabelCloseIcon {
   @scala.inline
   def apply(labelCloseIcon: String = null): Anon_LabelCloseIcon = {
     val __obj = js.Dynamic.literal()
-    if (labelCloseIcon != null) __obj.updateDynamic("labelCloseIcon")(labelCloseIcon)
+    if (labelCloseIcon != null) __obj.updateDynamic("labelCloseIcon")(labelCloseIcon.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_LabelCloseIcon]
   }
 }

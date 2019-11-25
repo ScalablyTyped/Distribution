@@ -12,7 +12,7 @@ trait Anon_Partition extends js.Object {
 object Anon_Partition {
   @scala.inline
   def apply(partition: Double, replicas: js.Array[Double]): Anon_Partition = {
-    val __obj = js.Dynamic.literal(partition = partition, replicas = replicas)
+    val __obj = js.Dynamic.literal(partition = partition.asInstanceOf[js.Any], replicas = replicas.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Partition]
   }

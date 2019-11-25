@@ -23,10 +23,10 @@ object Anon_HostKey {
     serverTags: StringDictionary[String] = null,
     serviceName: String = null
   ): Anon_HostKey = {
-    val __obj = js.Dynamic.literal(port = port, tracer = tracer)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (serverTags != null) __obj.updateDynamic("serverTags")(serverTags)
-    if (serviceName != null) __obj.updateDynamic("serviceName")(serviceName)
+    val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any], tracer = tracer.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (serverTags != null) __obj.updateDynamic("serverTags")(serverTags.asInstanceOf[js.Any])
+    if (serviceName != null) __obj.updateDynamic("serviceName")(serviceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_HostKey]
   }
 }

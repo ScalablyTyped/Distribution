@@ -14,7 +14,7 @@ object MoveOptions {
   def apply(limit: Int | Double = null, overwrite: js.UndefOr[Boolean] = js.undefined): MoveOptions = {
     val __obj = js.Dynamic.literal()
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite)
+    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite.asInstanceOf[js.Any])
     __obj.asInstanceOf[MoveOptions]
   }
 }

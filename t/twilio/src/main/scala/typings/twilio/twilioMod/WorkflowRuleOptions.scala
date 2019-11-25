@@ -22,10 +22,10 @@ object WorkflowRuleOptions {
     friendlyName: String = null,
     friendly_name: String = null
   ): WorkflowRuleOptions = {
-    val __obj = js.Dynamic.literal(expression = expression, targets = targets)
-    if (filter_friendly_name != null) __obj.updateDynamic("filter_friendly_name")(filter_friendly_name)
-    if (friendlyName != null) __obj.updateDynamic("friendlyName")(friendlyName)
-    if (friendly_name != null) __obj.updateDynamic("friendly_name")(friendly_name)
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], targets = targets.asInstanceOf[js.Any])
+    if (filter_friendly_name != null) __obj.updateDynamic("filter_friendly_name")(filter_friendly_name.asInstanceOf[js.Any])
+    if (friendlyName != null) __obj.updateDynamic("friendlyName")(friendlyName.asInstanceOf[js.Any])
+    if (friendly_name != null) __obj.updateDynamic("friendly_name")(friendly_name.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkflowRuleOptions]
   }
 }

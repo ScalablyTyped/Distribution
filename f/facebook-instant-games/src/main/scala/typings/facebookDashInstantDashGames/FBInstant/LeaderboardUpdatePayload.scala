@@ -25,8 +25,8 @@ trait LeaderboardUpdatePayload extends js.Object {
 object LeaderboardUpdatePayload {
   @scala.inline
   def apply(action: UpdateAction, name: String, text: String = null): LeaderboardUpdatePayload = {
-    val __obj = js.Dynamic.literal(action = action, name = name)
-    if (text != null) __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[LeaderboardUpdatePayload]
   }
 }

@@ -22,7 +22,7 @@ object ReadMoreProps {
     children: ReactNode = null,
     onReady: () => Unit = null
   ): ReadMoreProps = {
-    val __obj = js.Dynamic.literal(numberOfLines = numberOfLines, renderRevealedFooter = js.Any.fromFunction1(renderRevealedFooter), renderTruncatedFooter = js.Any.fromFunction1(renderTruncatedFooter))
+    val __obj = js.Dynamic.literal(numberOfLines = numberOfLines.asInstanceOf[js.Any], renderRevealedFooter = js.Any.fromFunction1(renderRevealedFooter), renderTruncatedFooter = js.Any.fromFunction1(renderTruncatedFooter))
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (onReady != null) __obj.updateDynamic("onReady")(js.Any.fromFunction0(onReady))
     __obj.asInstanceOf[ReadMoreProps]

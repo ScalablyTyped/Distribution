@@ -29,14 +29,14 @@ object SubparserOptions {
     title: String = null
   ): SubparserOptions = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (dest != null) __obj.updateDynamic("dest")(dest)
-    if (help != null) __obj.updateDynamic("help")(help)
-    if (metavar != null) __obj.updateDynamic("metavar")(metavar)
-    if (parserClass != null) __obj.updateDynamic("parserClass")(parserClass)
-    if (prog != null) __obj.updateDynamic("prog")(prog)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (dest != null) __obj.updateDynamic("dest")(dest.asInstanceOf[js.Any])
+    if (help != null) __obj.updateDynamic("help")(help.asInstanceOf[js.Any])
+    if (metavar != null) __obj.updateDynamic("metavar")(metavar.asInstanceOf[js.Any])
+    if (parserClass != null) __obj.updateDynamic("parserClass")(parserClass.asInstanceOf[js.Any])
+    if (prog != null) __obj.updateDynamic("prog")(prog.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubparserOptions]
   }
 }

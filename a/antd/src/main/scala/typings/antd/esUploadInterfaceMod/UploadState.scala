@@ -12,7 +12,7 @@ trait UploadState extends js.Object {
 object UploadState {
   @scala.inline
   def apply(dragState: String, fileList: js.Array[UploadFile[_]]): UploadState = {
-    val __obj = js.Dynamic.literal(dragState = dragState, fileList = fileList)
+    val __obj = js.Dynamic.literal(dragState = dragState.asInstanceOf[js.Any], fileList = fileList.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UploadState]
   }

@@ -34,15 +34,15 @@ object StockToolsGuiDefinitionsLinesOptions {
     verticalLine: StockToolsGuiDefinitionsLinesVerticalLineOptions = null
   ): StockToolsGuiDefinitionsLinesOptions = {
     val __obj = js.Dynamic.literal()
-    if (arrowLine != null) __obj.updateDynamic("arrowLine")(arrowLine)
-    if (arrowRay != null) __obj.updateDynamic("arrowRay")(arrowRay)
-    if (arrowSegment != null) __obj.updateDynamic("arrowSegment")(arrowSegment)
-    if (horizontalLine != null) __obj.updateDynamic("horizontalLine")(horizontalLine)
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (line != null) __obj.updateDynamic("line")(line)
-    if (ray != null) __obj.updateDynamic("ray")(ray)
-    if (segment != null) __obj.updateDynamic("segment")(segment)
-    if (verticalLine != null) __obj.updateDynamic("verticalLine")(verticalLine)
+    if (arrowLine != null) __obj.updateDynamic("arrowLine")(arrowLine.asInstanceOf[js.Any])
+    if (arrowRay != null) __obj.updateDynamic("arrowRay")(arrowRay.asInstanceOf[js.Any])
+    if (arrowSegment != null) __obj.updateDynamic("arrowSegment")(arrowSegment.asInstanceOf[js.Any])
+    if (horizontalLine != null) __obj.updateDynamic("horizontalLine")(horizontalLine.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
+    if (ray != null) __obj.updateDynamic("ray")(ray.asInstanceOf[js.Any])
+    if (segment != null) __obj.updateDynamic("segment")(segment.asInstanceOf[js.Any])
+    if (verticalLine != null) __obj.updateDynamic("verticalLine")(verticalLine.asInstanceOf[js.Any])
     __obj.asInstanceOf[StockToolsGuiDefinitionsLinesOptions]
   }
 }

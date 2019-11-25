@@ -12,8 +12,8 @@ trait Queue extends Topology {
 object Queue {
   @scala.inline
   def apply(messageSchema: js.Object, queue: String, options: js.Object = null): Queue = {
-    val __obj = js.Dynamic.literal(messageSchema = messageSchema, queue = queue)
-    if (options != null) __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(messageSchema = messageSchema.asInstanceOf[js.Any], queue = queue.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[Queue]
   }
 }

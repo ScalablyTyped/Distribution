@@ -13,7 +13,7 @@ trait SourceReferenceObject extends js.Object {
 object SourceReferenceObject {
   @scala.inline
   def apply(character: Double, fileName: String, line: Double): SourceReferenceObject = {
-    val __obj = js.Dynamic.literal(character = character, fileName = fileName, line = line)
+    val __obj = js.Dynamic.literal(character = character.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SourceReferenceObject]
   }

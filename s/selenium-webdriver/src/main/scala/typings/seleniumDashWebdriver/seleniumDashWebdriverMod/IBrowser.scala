@@ -35,7 +35,7 @@ object IBrowser {
     PHANTOM_JS: String,
     SAFARI: String
   ): IBrowser = {
-    val __obj = js.Dynamic.literal(ANDROID = ANDROID, CHROME = CHROME, EDGE = EDGE, FIREFOX = FIREFOX, HTMLUNIT = HTMLUNIT, IE = IE, INTERNET_EXPLORER = INTERNET_EXPLORER, IPAD = IPAD, IPHONE = IPHONE, OPERA = OPERA, PHANTOM_JS = PHANTOM_JS, SAFARI = SAFARI)
+    val __obj = js.Dynamic.literal(ANDROID = ANDROID.asInstanceOf[js.Any], CHROME = CHROME.asInstanceOf[js.Any], EDGE = EDGE.asInstanceOf[js.Any], FIREFOX = FIREFOX.asInstanceOf[js.Any], HTMLUNIT = HTMLUNIT.asInstanceOf[js.Any], IE = IE.asInstanceOf[js.Any], INTERNET_EXPLORER = INTERNET_EXPLORER.asInstanceOf[js.Any], IPAD = IPAD.asInstanceOf[js.Any], IPHONE = IPHONE.asInstanceOf[js.Any], OPERA = OPERA.asInstanceOf[js.Any], PHANTOM_JS = PHANTOM_JS.asInstanceOf[js.Any], SAFARI = SAFARI.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IBrowser]
   }

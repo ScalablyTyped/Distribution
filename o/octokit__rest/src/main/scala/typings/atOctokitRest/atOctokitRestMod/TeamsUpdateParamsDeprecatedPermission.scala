@@ -49,10 +49,10 @@ object TeamsUpdateParamsDeprecatedPermission {
     permission: String = null,
     privacy: secret | closed = null
   ): TeamsUpdateParamsDeprecatedPermission = {
-    val __obj = js.Dynamic.literal(name = name, team_id = team_id)
-    if (description != null) __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], team_id = team_id.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (parent_team_id != null) __obj.updateDynamic("parent_team_id")(parent_team_id.asInstanceOf[js.Any])
-    if (permission != null) __obj.updateDynamic("permission")(permission)
+    if (permission != null) __obj.updateDynamic("permission")(permission.asInstanceOf[js.Any])
     if (privacy != null) __obj.updateDynamic("privacy")(privacy.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamsUpdateParamsDeprecatedPermission]
   }

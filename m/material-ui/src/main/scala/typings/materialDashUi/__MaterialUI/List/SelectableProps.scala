@@ -22,8 +22,8 @@ object SelectableProps {
   ): SelectableProps = {
     val __obj = js.Dynamic.literal()
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
-    if (selectedItemStyle != null) __obj.updateDynamic("selectedItemStyle")(selectedItemStyle)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (selectedItemStyle != null) __obj.updateDynamic("selectedItemStyle")(selectedItemStyle.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectableProps]
   }
 }

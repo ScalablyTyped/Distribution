@@ -18,8 +18,8 @@ object Chunk {
     parents: js.Array[String],
     StringDictionary: /* propName */ StringDictionary[js.Any] = null
   ): Chunk = {
-    val __obj = js.Dynamic.literal(id = id, parents = parents)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], parents = parents.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Chunk]
   }
 }

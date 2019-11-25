@@ -50,8 +50,8 @@ object IInventoryComponent {
     `private`: Boolean,
     restrict_to_owner: Boolean
   ): IInventoryComponent = {
-    val __obj = js.Dynamic.literal(additional_slots_per_strength = additional_slots_per_strength, can_be_siphoned_from = can_be_siphoned_from, container_type = container_type, inventory_size = inventory_size, restrict_to_owner = restrict_to_owner)
-    __obj.updateDynamic("private")(`private`)
+    val __obj = js.Dynamic.literal(additional_slots_per_strength = additional_slots_per_strength.asInstanceOf[js.Any], can_be_siphoned_from = can_be_siphoned_from.asInstanceOf[js.Any], container_type = container_type.asInstanceOf[js.Any], inventory_size = inventory_size.asInstanceOf[js.Any], restrict_to_owner = restrict_to_owner.asInstanceOf[js.Any])
+    __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IInventoryComponent]
   }
 }

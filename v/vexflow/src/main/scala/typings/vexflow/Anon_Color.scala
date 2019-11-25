@@ -16,7 +16,7 @@ trait Anon_Color extends js.Object {
 object Anon_Color {
   @scala.inline
   def apply(color: String, fill: Boolean, offsetx: Double, offsety: Double, opacity: Double, width: Double): Anon_Color = {
-    val __obj = js.Dynamic.literal(color = color, fill = fill, offsetx = offsetx, offsety = offsety, opacity = opacity, width = width)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], fill = fill.asInstanceOf[js.Any], offsetx = offsetx.asInstanceOf[js.Any], offsety = offsety.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Color]
   }

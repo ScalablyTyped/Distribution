@@ -33,12 +33,12 @@ object Hooks {
     init: js.Array[InitHook[Options]] = null
   ): Hooks[Options, Body] = {
     val __obj = js.Dynamic.literal()
-    if (afterResponse != null) __obj.updateDynamic("afterResponse")(afterResponse)
-    if (beforeError != null) __obj.updateDynamic("beforeError")(beforeError)
-    if (beforeRedirect != null) __obj.updateDynamic("beforeRedirect")(beforeRedirect)
-    if (beforeRequest != null) __obj.updateDynamic("beforeRequest")(beforeRequest)
-    if (beforeRetry != null) __obj.updateDynamic("beforeRetry")(beforeRetry)
-    if (init != null) __obj.updateDynamic("init")(init)
+    if (afterResponse != null) __obj.updateDynamic("afterResponse")(afterResponse.asInstanceOf[js.Any])
+    if (beforeError != null) __obj.updateDynamic("beforeError")(beforeError.asInstanceOf[js.Any])
+    if (beforeRedirect != null) __obj.updateDynamic("beforeRedirect")(beforeRedirect.asInstanceOf[js.Any])
+    if (beforeRequest != null) __obj.updateDynamic("beforeRequest")(beforeRequest.asInstanceOf[js.Any])
+    if (beforeRetry != null) __obj.updateDynamic("beforeRetry")(beforeRetry.asInstanceOf[js.Any])
+    if (init != null) __obj.updateDynamic("init")(init.asInstanceOf[js.Any])
     __obj.asInstanceOf[Hooks[Options, Body]]
   }
 }

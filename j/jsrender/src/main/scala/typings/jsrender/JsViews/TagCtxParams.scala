@@ -14,7 +14,7 @@ trait TagCtxParams extends js.Object {
 object TagCtxParams {
   @scala.inline
   def apply(args: js.Array[String], ctx: Hash[String], props: Hash[String]): TagCtxParams = {
-    val __obj = js.Dynamic.literal(args = args, ctx = ctx, props = props)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], ctx = ctx.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TagCtxParams]
   }

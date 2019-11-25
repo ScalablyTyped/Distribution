@@ -11,7 +11,7 @@ trait PopupWindowCloseUpEventArgs extends PopupWindowEventArgs {
 object PopupWindowCloseUpEventArgs {
   @scala.inline
   def apply(closeReason: BootstrapPopupControlCloseReason, sender: Control, window: BootstrapPopupWindow): PopupWindowCloseUpEventArgs = {
-    val __obj = js.Dynamic.literal(closeReason = closeReason, sender = sender, window = window)
+    val __obj = js.Dynamic.literal(closeReason = closeReason.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PopupWindowCloseUpEventArgs]
   }

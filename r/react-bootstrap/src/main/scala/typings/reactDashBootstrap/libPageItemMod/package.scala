@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libPageItemMod {
-  import typings.react.reactMod.Component
+  import typings.reactDashBootstrap.libPagerItemMod.PagerItem
   import typings.reactDashBootstrap.libPagerItemMod.PagerItemProps
 
-  type PageItem = Component[PagerItemProps, js.Object, js.Any]
+  type PageItem = PagerItem
   type PageItemProps = PagerItemProps
 }

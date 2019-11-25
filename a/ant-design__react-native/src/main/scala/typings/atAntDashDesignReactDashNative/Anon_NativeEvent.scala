@@ -11,7 +11,7 @@ trait Anon_NativeEvent extends js.Object {
 object Anon_NativeEvent {
   @scala.inline
   def apply(nativeEvent: Anon_Text): Anon_NativeEvent = {
-    val __obj = js.Dynamic.literal(nativeEvent = nativeEvent)
+    val __obj = js.Dynamic.literal(nativeEvent = nativeEvent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_NativeEvent]
   }

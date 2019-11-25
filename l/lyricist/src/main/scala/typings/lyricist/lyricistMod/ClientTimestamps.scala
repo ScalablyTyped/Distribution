@@ -12,7 +12,7 @@ trait ClientTimestamps extends js.Object {
 object ClientTimestamps {
   @scala.inline
   def apply(lyrics_updated_at: Double, updated_by_human_at: Double): ClientTimestamps = {
-    val __obj = js.Dynamic.literal(lyrics_updated_at = lyrics_updated_at, updated_by_human_at = updated_by_human_at)
+    val __obj = js.Dynamic.literal(lyrics_updated_at = lyrics_updated_at.asInstanceOf[js.Any], updated_by_human_at = updated_by_human_at.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ClientTimestamps]
   }

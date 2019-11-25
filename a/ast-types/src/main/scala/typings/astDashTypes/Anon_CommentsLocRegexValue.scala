@@ -21,10 +21,10 @@ object Anon_CommentsLocRegexValue {
     loc: SourceLocationKind = null,
     regex: Anon_Flags = null
   ): Anon_CommentsLocRegexValue = {
-    val __obj = js.Dynamic.literal(value = value)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (regex != null) __obj.updateDynamic("regex")(regex)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (regex != null) __obj.updateDynamic("regex")(regex.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CommentsLocRegexValue]
   }
 }

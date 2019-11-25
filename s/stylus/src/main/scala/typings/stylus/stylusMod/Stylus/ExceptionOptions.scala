@@ -15,7 +15,7 @@ trait ExceptionOptions extends js.Object {
 object ExceptionOptions {
   @scala.inline
   def apply(column: Double, context: Double, filename: String, input: String, lineno: Double): ExceptionOptions = {
-    val __obj = js.Dynamic.literal(column = column, context = context, filename = filename, input = input, lineno = lineno)
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], lineno = lineno.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExceptionOptions]
   }

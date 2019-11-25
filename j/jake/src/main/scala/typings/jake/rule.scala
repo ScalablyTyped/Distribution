@@ -27,12 +27,17 @@ object rule extends js.Object {
     action: js.Function0[Unit],
     opts: TaskOptions
   ): Unit = js.native
-  def apply(pattern: RegExp, source: Fn_Name): Unit = js.native
-  def apply(pattern: RegExp, source: Fn_Name, prereqs: js.Array[String]): Unit = js.native
-  def apply(pattern: RegExp, source: Fn_Name, prereqs: js.Array[String], action: js.Function0[Unit]): Unit = js.native
+  def apply(pattern: RegExp, source: js.Function1[/* name */ String, String]): Unit = js.native
+  def apply(pattern: RegExp, source: js.Function1[/* name */ String, String], prereqs: js.Array[String]): Unit = js.native
   def apply(
     pattern: RegExp,
-    source: Fn_Name,
+    source: js.Function1[/* name */ String, String],
+    prereqs: js.Array[String],
+    action: js.Function0[Unit]
+  ): Unit = js.native
+  def apply(
+    pattern: RegExp,
+    source: js.Function1[/* name */ String, String],
     prereqs: js.Array[String],
     action: js.Function0[Unit],
     opts: TaskOptions

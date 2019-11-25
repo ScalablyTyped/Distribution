@@ -18,9 +18,9 @@ object Anon_Address {
     silent: js.UndefOr[Boolean] = js.undefined
   ): Anon_Address = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address)
-    if (!js.isUndefined(retry)) __obj.updateDynamic("retry")(retry)
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    if (!js.isUndefined(retry)) __obj.updateDynamic("retry")(retry.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Address]
   }
 }

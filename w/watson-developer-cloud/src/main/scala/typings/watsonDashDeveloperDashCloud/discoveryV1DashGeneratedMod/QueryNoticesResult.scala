@@ -48,17 +48,17 @@ object QueryNoticesResult {
     title: String = null
   ): QueryNoticesResult = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (collection_id != null) __obj.updateDynamic("collection_id")(collection_id)
-    if (file_type != null) __obj.updateDynamic("file_type")(file_type)
-    if (filename != null) __obj.updateDynamic("filename")(filename)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (notices != null) __obj.updateDynamic("notices")(notices)
-    if (result_metadata != null) __obj.updateDynamic("result_metadata")(result_metadata)
-    if (sha1 != null) __obj.updateDynamic("sha1")(sha1)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (collection_id != null) __obj.updateDynamic("collection_id")(collection_id.asInstanceOf[js.Any])
+    if (file_type != null) __obj.updateDynamic("file_type")(file_type.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (notices != null) __obj.updateDynamic("notices")(notices.asInstanceOf[js.Any])
+    if (result_metadata != null) __obj.updateDynamic("result_metadata")(result_metadata.asInstanceOf[js.Any])
+    if (sha1 != null) __obj.updateDynamic("sha1")(sha1.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryNoticesResult]
   }
 }

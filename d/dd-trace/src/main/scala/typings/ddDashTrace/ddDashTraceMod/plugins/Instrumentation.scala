@@ -19,8 +19,8 @@ object Instrumentation {
   ): Instrumentation = {
     val __obj = js.Dynamic.literal()
     if (analytics != null) __obj.updateDynamic("analytics")(analytics.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (service != null) __obj.updateDynamic("service")(service)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
     __obj.asInstanceOf[Instrumentation]
   }
 }

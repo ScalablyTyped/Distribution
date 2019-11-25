@@ -67,7 +67,7 @@ object GreatCircle {
     toLineString: (Point, Point, Double) => js.Any,
     toPointArray: (Point, Point, Double) => js.Array[_]
   ): GreatCircle = {
-    val __obj = js.Dynamic.literal(DEG2RAD = DEG2RAD, RAD2DEG = RAD2DEG, TOLERANCE = TOLERANCE, toGeometryFeature = js.Any.fromFunction3(toGeometryFeature), toLineString = js.Any.fromFunction3(toLineString), toPointArray = js.Any.fromFunction3(toPointArray))
+    val __obj = js.Dynamic.literal(DEG2RAD = DEG2RAD.asInstanceOf[js.Any], RAD2DEG = RAD2DEG.asInstanceOf[js.Any], TOLERANCE = TOLERANCE.asInstanceOf[js.Any], toGeometryFeature = js.Any.fromFunction3(toGeometryFeature), toLineString = js.Any.fromFunction3(toLineString), toPointArray = js.Any.fromFunction3(toPointArray))
   
     __obj.asInstanceOf[GreatCircle]
   }

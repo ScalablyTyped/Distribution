@@ -22,7 +22,7 @@ object Borders {
     right: Partial[Border],
     top: Partial[Border]
   ): Borders = {
-    val __obj = js.Dynamic.literal(bottom = bottom, diagonal = diagonal, left = left, right = right, top = top)
+    val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], diagonal = diagonal.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Borders]
   }

@@ -13,7 +13,7 @@ object GetEffectiveOrgPolicyRequest {
   @scala.inline
   def apply(constraint: String = null): GetEffectiveOrgPolicyRequest = {
     val __obj = js.Dynamic.literal()
-    if (constraint != null) __obj.updateDynamic("constraint")(constraint)
+    if (constraint != null) __obj.updateDynamic("constraint")(constraint.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetEffectiveOrgPolicyRequest]
   }
 }

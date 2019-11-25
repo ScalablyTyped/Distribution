@@ -11,7 +11,7 @@ trait KnockoutStatic extends js.Object {
 object KnockoutStatic {
   @scala.inline
   def apply(amdTemplateEngine: KnockoutAMDTemplate): KnockoutStatic = {
-    val __obj = js.Dynamic.literal(amdTemplateEngine = amdTemplateEngine)
+    val __obj = js.Dynamic.literal(amdTemplateEngine = amdTemplateEngine.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[KnockoutStatic]
   }

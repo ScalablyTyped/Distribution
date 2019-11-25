@@ -20,7 +20,7 @@ trait Anon_AmountDestination extends js.Object {
 object Anon_AmountDestination {
   @scala.inline
   def apply(destination: String, amount: Int | Double = null): Anon_AmountDestination = {
-    val __obj = js.Dynamic.literal(destination = destination)
+    val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any])
     if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AmountDestination]
   }

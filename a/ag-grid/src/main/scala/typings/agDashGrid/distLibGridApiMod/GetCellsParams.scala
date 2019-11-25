@@ -15,8 +15,8 @@ object GetCellsParams {
   @scala.inline
   def apply(columns: js.Array[String | Column] = null, rowNodes: js.Array[RowNode] = null): GetCellsParams = {
     val __obj = js.Dynamic.literal()
-    if (columns != null) __obj.updateDynamic("columns")(columns)
-    if (rowNodes != null) __obj.updateDynamic("rowNodes")(rowNodes)
+    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (rowNodes != null) __obj.updateDynamic("rowNodes")(rowNodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCellsParams]
   }
 }

@@ -17,7 +17,7 @@ object ColumnsCommand {
   @scala.inline
   def apply(buttonOptions: js.Any = null, `type`: UnboundType | String = null): ColumnsCommand = {
     val __obj = js.Dynamic.literal()
-    if (buttonOptions != null) __obj.updateDynamic("buttonOptions")(buttonOptions)
+    if (buttonOptions != null) __obj.updateDynamic("buttonOptions")(buttonOptions.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnsCommand]
   }

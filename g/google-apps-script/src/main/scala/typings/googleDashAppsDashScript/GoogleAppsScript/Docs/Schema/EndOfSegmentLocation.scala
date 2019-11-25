@@ -12,7 +12,7 @@ object EndOfSegmentLocation {
   @scala.inline
   def apply(segmentId: String = null): EndOfSegmentLocation = {
     val __obj = js.Dynamic.literal()
-    if (segmentId != null) __obj.updateDynamic("segmentId")(segmentId)
+    if (segmentId != null) __obj.updateDynamic("segmentId")(segmentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndOfSegmentLocation]
   }
 }

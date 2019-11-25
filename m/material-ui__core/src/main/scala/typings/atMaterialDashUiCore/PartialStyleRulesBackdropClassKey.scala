@@ -15,8 +15,8 @@ object PartialStyleRulesBackdropClassKey {
   @scala.inline
   def apply(invisible: CSSProperties = null, root: CSSProperties = null): PartialStyleRulesBackdropClassKey = {
     val __obj = js.Dynamic.literal()
-    if (invisible != null) __obj.updateDynamic("invisible")(invisible)
-    if (root != null) __obj.updateDynamic("root")(root)
+    if (invisible != null) __obj.updateDynamic("invisible")(invisible.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyleRulesBackdropClassKey]
   }
 }

@@ -14,8 +14,8 @@ object PhononOptions {
   @scala.inline
   def apply(i18n: PhononI18nOptions = null, navigator: PhononNavigatorOptions = null): PhononOptions = {
     val __obj = js.Dynamic.literal()
-    if (i18n != null) __obj.updateDynamic("i18n")(i18n)
-    if (navigator != null) __obj.updateDynamic("navigator")(navigator)
+    if (i18n != null) __obj.updateDynamic("i18n")(i18n.asInstanceOf[js.Any])
+    if (navigator != null) __obj.updateDynamic("navigator")(navigator.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhononOptions]
   }
 }

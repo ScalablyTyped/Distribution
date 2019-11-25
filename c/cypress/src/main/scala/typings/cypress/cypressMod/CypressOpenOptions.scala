@@ -52,7 +52,7 @@ object CypressOpenOptions {
     port: Double,
     project: String
   ): CypressOpenOptions = {
-    val __obj = js.Dynamic.literal(browser = browser, config = config, configFile = configFile.asInstanceOf[js.Any], detached = detached, env = env, global = global, port = port, project = project)
+    val __obj = js.Dynamic.literal(browser = browser.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], configFile = configFile.asInstanceOf[js.Any], detached = detached.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any], global = global.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CypressOpenOptions]
   }

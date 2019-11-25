@@ -12,7 +12,7 @@ trait DirectoryPathRequestedEventOptions extends RequestedEventOptions {
 object DirectoryPathRequestedEventOptions {
   @scala.inline
   def apply(directoryPath: String, fileSystemId: String, requestId: Double): DirectoryPathRequestedEventOptions = {
-    val __obj = js.Dynamic.literal(directoryPath = directoryPath, fileSystemId = fileSystemId, requestId = requestId)
+    val __obj = js.Dynamic.literal(directoryPath = directoryPath.asInstanceOf[js.Any], fileSystemId = fileSystemId.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DirectoryPathRequestedEventOptions]
   }

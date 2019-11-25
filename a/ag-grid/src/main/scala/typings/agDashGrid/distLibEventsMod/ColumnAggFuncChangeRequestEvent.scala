@@ -14,8 +14,8 @@ trait ColumnAggFuncChangeRequestEvent extends ColumnRequestEvent {
 object ColumnAggFuncChangeRequestEvent {
   @scala.inline
   def apply(aggFunc: js.Any, api: GridApi, columnApi: ColumnApi, columns: js.Array[Column], `type`: String): ColumnAggFuncChangeRequestEvent = {
-    val __obj = js.Dynamic.literal(aggFunc = aggFunc, api = api, columnApi = columnApi, columns = columns)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(aggFunc = aggFunc.asInstanceOf[js.Any], api = api.asInstanceOf[js.Any], columnApi = columnApi.asInstanceOf[js.Any], columns = columns.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnAggFuncChangeRequestEvent]
   }
 }

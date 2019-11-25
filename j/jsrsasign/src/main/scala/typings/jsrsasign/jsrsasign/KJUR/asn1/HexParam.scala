@@ -11,7 +11,7 @@ trait HexParam extends js.Object {
 object HexParam {
   @scala.inline
   def apply(hex: String): HexParam = {
-    val __obj = js.Dynamic.literal(hex = hex)
+    val __obj = js.Dynamic.literal(hex = hex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HexParam]
   }

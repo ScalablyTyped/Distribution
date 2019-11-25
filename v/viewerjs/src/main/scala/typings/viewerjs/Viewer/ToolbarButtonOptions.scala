@@ -14,9 +14,9 @@ object ToolbarButtonOptions {
   @scala.inline
   def apply(click: js.Function = null, show: Boolean | Visibility = null, size: ToolbarButtonSize = null): ToolbarButtonOptions = {
     val __obj = js.Dynamic.literal()
-    if (click != null) __obj.updateDynamic("click")(click)
+    if (click != null) __obj.updateDynamic("click")(click.asInstanceOf[js.Any])
     if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolbarButtonOptions]
   }
 }

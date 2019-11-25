@@ -26,14 +26,14 @@ object RTCIceCandidateAttributes {
     priority: Int | Double = null,
     transport: java.lang.String = null
   ): RTCIceCandidateAttributes = {
-    val __obj = js.Dynamic.literal(id = id, timestamp = timestamp)
-    __obj.updateDynamic("type")(`type`)
-    if (addressSourceUrl != null) __obj.updateDynamic("addressSourceUrl")(addressSourceUrl)
-    if (candidateType != null) __obj.updateDynamic("candidateType")(candidateType)
-    if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (addressSourceUrl != null) __obj.updateDynamic("addressSourceUrl")(addressSourceUrl.asInstanceOf[js.Any])
+    if (candidateType != null) __obj.updateDynamic("candidateType")(candidateType.asInstanceOf[js.Any])
+    if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress.asInstanceOf[js.Any])
     if (portNumber != null) __obj.updateDynamic("portNumber")(portNumber.asInstanceOf[js.Any])
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (transport != null) __obj.updateDynamic("transport")(transport)
+    if (transport != null) __obj.updateDynamic("transport")(transport.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCIceCandidateAttributes]
   }
 }

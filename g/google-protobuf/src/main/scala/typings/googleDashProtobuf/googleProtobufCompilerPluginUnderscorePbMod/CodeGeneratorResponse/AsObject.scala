@@ -19,8 +19,8 @@ object AsObject {
     ],
     error: String = null
   ): AsObject = {
-    val __obj = js.Dynamic.literal(fileList = fileList)
-    if (error != null) __obj.updateDynamic("error")(error)
+    val __obj = js.Dynamic.literal(fileList = fileList.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsObject]
   }
 }

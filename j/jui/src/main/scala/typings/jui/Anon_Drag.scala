@@ -40,12 +40,12 @@ object Anon_Drag {
     tpl: js.Any = null
   ): Anon_Drag = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(drag)) __obj.updateDynamic("drag")(drag)
-    if (event != null) __obj.updateDynamic("event")(event)
+    if (!js.isUndefined(drag)) __obj.updateDynamic("drag")(drag.asInstanceOf[js.Any])
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (nodes != null) __obj.updateDynamic("nodes")(nodes)
+    if (nodes != null) __obj.updateDynamic("nodes")(nodes.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (tpl != null) __obj.updateDynamic("tpl")(tpl)
+    if (tpl != null) __obj.updateDynamic("tpl")(tpl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Drag]
   }
 }

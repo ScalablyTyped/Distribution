@@ -13,8 +13,8 @@ object Uploader {
   @scala.inline
   def apply(kind: String = null, uploaderName: String = null): Uploader = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (uploaderName != null) __obj.updateDynamic("uploaderName")(uploaderName)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (uploaderName != null) __obj.updateDynamic("uploaderName")(uploaderName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Uploader]
   }
 }

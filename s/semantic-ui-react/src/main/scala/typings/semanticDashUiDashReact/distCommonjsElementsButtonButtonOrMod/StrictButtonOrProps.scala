@@ -17,8 +17,8 @@ object StrictButtonOrProps {
   @scala.inline
   def apply(as: js.Any = null, className: String = null, text: Double | String = null): StrictButtonOrProps = {
     val __obj = js.Dynamic.literal()
-    if (as != null) __obj.updateDynamic("as")(as)
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrictButtonOrProps]
   }

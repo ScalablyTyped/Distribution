@@ -22,9 +22,9 @@ object CherrypickOptions {
     version: Int | Double = null
   ): CherrypickOptions = {
     val __obj = js.Dynamic.literal()
-    if (checkoutOpts != null) __obj.updateDynamic("checkoutOpts")(checkoutOpts)
+    if (checkoutOpts != null) __obj.updateDynamic("checkoutOpts")(checkoutOpts.asInstanceOf[js.Any])
     if (mainline != null) __obj.updateDynamic("mainline")(mainline.asInstanceOf[js.Any])
-    if (mergeOpts != null) __obj.updateDynamic("mergeOpts")(mergeOpts)
+    if (mergeOpts != null) __obj.updateDynamic("mergeOpts")(mergeOpts.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[CherrypickOptions]
   }

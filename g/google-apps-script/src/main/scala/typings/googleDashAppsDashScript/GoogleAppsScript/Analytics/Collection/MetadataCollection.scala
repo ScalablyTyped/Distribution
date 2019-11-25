@@ -13,7 +13,7 @@ object MetadataCollection {
   @scala.inline
   def apply(Columns: ColumnsCollection = null): MetadataCollection = {
     val __obj = js.Dynamic.literal()
-    if (Columns != null) __obj.updateDynamic("Columns")(Columns)
+    if (Columns != null) __obj.updateDynamic("Columns")(Columns.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetadataCollection]
   }
 }

@@ -4,11 +4,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_BindingRewriteValidators extends js.Object {
-  var bindingRewriteValidators: js.Any = js.native
-  @JSName("parseObjectLiteral")
-  var parseObjectLiteral_Original: Fn_ObjectLiteralString = js.native
-  def parseObjectLiteral(objectLiteralString: String): js.Array[_] = js.native
+  var bindingRewriteValidators: js.Any
+  def parseObjectLiteral(objectLiteralString: String): js.Array[_]
+}
+
+object Anon_BindingRewriteValidators {
+  @scala.inline
+  def apply(bindingRewriteValidators: js.Any, parseObjectLiteral: String => js.Array[_]): Anon_BindingRewriteValidators = {
+    val __obj = js.Dynamic.literal(bindingRewriteValidators = bindingRewriteValidators.asInstanceOf[js.Any], parseObjectLiteral = js.Any.fromFunction1(parseObjectLiteral))
+  
+    __obj.asInstanceOf[Anon_BindingRewriteValidators]
+  }
 }
 

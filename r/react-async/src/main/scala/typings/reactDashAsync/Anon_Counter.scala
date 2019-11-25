@@ -13,8 +13,8 @@ trait Anon_Counter
 object Anon_Counter {
   @scala.inline
   def apply(counter: Double, StringDictionary: /* meta */ StringDictionary[js.Any] = null): Anon_Counter = {
-    val __obj = js.Dynamic.literal(counter = counter)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(counter = counter.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_Counter]
   }
 }

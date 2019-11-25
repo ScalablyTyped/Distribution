@@ -18,8 +18,8 @@ object Feed {
   @scala.inline
   def apply(courseRosterChangesInfo: CourseRosterChangesInfo = null, feedType: String = null): Feed = {
     val __obj = js.Dynamic.literal()
-    if (courseRosterChangesInfo != null) __obj.updateDynamic("courseRosterChangesInfo")(courseRosterChangesInfo)
-    if (feedType != null) __obj.updateDynamic("feedType")(feedType)
+    if (courseRosterChangesInfo != null) __obj.updateDynamic("courseRosterChangesInfo")(courseRosterChangesInfo.asInstanceOf[js.Any])
+    if (feedType != null) __obj.updateDynamic("feedType")(feedType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Feed]
   }
 }

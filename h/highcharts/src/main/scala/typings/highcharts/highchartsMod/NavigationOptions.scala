@@ -89,13 +89,13 @@ object NavigationOptions {
     val __obj = js.Dynamic.literal()
     if (annotationsOptions != null) __obj.updateDynamic("annotationsOptions")(annotationsOptions.asInstanceOf[js.Any])
     if (bindings != null) __obj.updateDynamic("bindings")(bindings.asInstanceOf[js.Any])
-    if (bindingsClassName != null) __obj.updateDynamic("bindingsClassName")(bindingsClassName)
-    if (buttonOptions != null) __obj.updateDynamic("buttonOptions")(buttonOptions)
-    if (events != null) __obj.updateDynamic("events")(events)
-    if (iconsURL != null) __obj.updateDynamic("iconsURL")(iconsURL)
-    if (menuItemHoverStyle != null) __obj.updateDynamic("menuItemHoverStyle")(menuItemHoverStyle)
-    if (menuItemStyle != null) __obj.updateDynamic("menuItemStyle")(menuItemStyle)
-    if (menuStyle != null) __obj.updateDynamic("menuStyle")(menuStyle)
+    if (bindingsClassName != null) __obj.updateDynamic("bindingsClassName")(bindingsClassName.asInstanceOf[js.Any])
+    if (buttonOptions != null) __obj.updateDynamic("buttonOptions")(buttonOptions.asInstanceOf[js.Any])
+    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
+    if (iconsURL != null) __obj.updateDynamic("iconsURL")(iconsURL.asInstanceOf[js.Any])
+    if (menuItemHoverStyle != null) __obj.updateDynamic("menuItemHoverStyle")(menuItemHoverStyle.asInstanceOf[js.Any])
+    if (menuItemStyle != null) __obj.updateDynamic("menuItemStyle")(menuItemStyle.asInstanceOf[js.Any])
+    if (menuStyle != null) __obj.updateDynamic("menuStyle")(menuStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationOptions]
   }
 }

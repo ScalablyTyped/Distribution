@@ -24,8 +24,8 @@ object TokenParams {
   ): TokenParams = {
     val __obj = js.Dynamic.literal()
     if (capability != null) __obj.updateDynamic("capability")(capability.asInstanceOf[js.Any])
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId)
-    if (nonce != null) __obj.updateDynamic("nonce")(nonce)
+    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
+    if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
     if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
     if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
     __obj.asInstanceOf[TokenParams]

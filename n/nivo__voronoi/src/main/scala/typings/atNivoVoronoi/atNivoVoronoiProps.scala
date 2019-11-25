@@ -9,7 +9,7 @@ trait atNivoVoronoiProps {
   def ResponsiveVoroinoiProps: typings.atNivoVoronoi.atNivoVoronoiMod.VoronoiProps.type = typings.atNivoVoronoi.atNivoVoronoiMod.VoronoiProps
   type ResponsiveVoroinoiProps = typings.atNivoVoronoi.atNivoVoronoiMod.VoronoiProps
   @scala.inline
-  def VoronoiProps: typings.atNivoVoronoi.VoronoiPropsDimensions.type = typings.atNivoVoronoi.VoronoiPropsDimensions
+  def VoronoiProps: VoronoiPropsDimensions.type = typings.atNivoVoronoi.VoronoiPropsDimensions
   type VoronoiProps = VoronoiPropsDimensions
 }
 

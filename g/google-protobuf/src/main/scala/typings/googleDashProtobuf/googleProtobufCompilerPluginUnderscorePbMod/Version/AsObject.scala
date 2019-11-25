@@ -23,7 +23,7 @@ object AsObject {
     if (major != null) __obj.updateDynamic("major")(major.asInstanceOf[js.Any])
     if (minor != null) __obj.updateDynamic("minor")(minor.asInstanceOf[js.Any])
     if (patch != null) __obj.updateDynamic("patch")(patch.asInstanceOf[js.Any])
-    if (suffix != null) __obj.updateDynamic("suffix")(suffix)
+    if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsObject]
   }
 }

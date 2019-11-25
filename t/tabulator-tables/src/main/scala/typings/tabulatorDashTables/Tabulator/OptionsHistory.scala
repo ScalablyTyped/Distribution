@@ -35,7 +35,7 @@ object OptionsHistory {
     historyUndo: (/* action */ HistoryAction, /* component */ CellComponent | RowComponent, /* data */ js.Any) => Unit = null
   ): OptionsHistory = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(history)) __obj.updateDynamic("history")(history)
+    if (!js.isUndefined(history)) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
     if (historyRedo != null) __obj.updateDynamic("historyRedo")(js.Any.fromFunction3(historyRedo))
     if (historyUndo != null) __obj.updateDynamic("historyUndo")(js.Any.fromFunction3(historyUndo))
     __obj.asInstanceOf[OptionsHistory]

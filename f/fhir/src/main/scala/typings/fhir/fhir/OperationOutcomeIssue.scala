@@ -75,22 +75,22 @@ object OperationOutcomeIssue {
     location: js.Array[String] = null,
     modifierExtension: js.Array[Extension] = null
   ): OperationOutcomeIssue = {
-    val __obj = js.Dynamic.literal(code = code, severity = severity)
-    if (_code != null) __obj.updateDynamic("_code")(_code)
-    if (_diagnostics != null) __obj.updateDynamic("_diagnostics")(_diagnostics)
-    if (_expression != null) __obj.updateDynamic("_expression")(_expression)
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
-    if (_id != null) __obj.updateDynamic("_id")(_id)
-    if (_location != null) __obj.updateDynamic("_location")(_location)
-    if (_severity != null) __obj.updateDynamic("_severity")(_severity)
-    if (details != null) __obj.updateDynamic("details")(details)
-    if (diagnostics != null) __obj.updateDynamic("diagnostics")(diagnostics)
-    if (expression != null) __obj.updateDynamic("expression")(expression)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], severity = severity.asInstanceOf[js.Any])
+    if (_code != null) __obj.updateDynamic("_code")(_code.asInstanceOf[js.Any])
+    if (_diagnostics != null) __obj.updateDynamic("_diagnostics")(_diagnostics.asInstanceOf[js.Any])
+    if (_expression != null) __obj.updateDynamic("_expression")(_expression.asInstanceOf[js.Any])
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
+    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
+    if (_location != null) __obj.updateDynamic("_location")(_location.asInstanceOf[js.Any])
+    if (_severity != null) __obj.updateDynamic("_severity")(_severity.asInstanceOf[js.Any])
+    if (details != null) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
+    if (diagnostics != null) __obj.updateDynamic("diagnostics")(diagnostics.asInstanceOf[js.Any])
+    if (expression != null) __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
     __obj.asInstanceOf[OperationOutcomeIssue]
   }
 }

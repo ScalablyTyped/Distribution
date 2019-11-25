@@ -35,14 +35,14 @@ object FullMetadata {
     customMetadata: StringDictionary[String] = null,
     md5Hash: String = null
   ): FullMetadata = {
-    val __obj = js.Dynamic.literal(bucket = bucket, fullPath = fullPath, generation = generation, metageneration = metageneration, name = name, size = size, timeCreated = timeCreated, updated = updated)
-    if (cacheControl != null) __obj.updateDynamic("cacheControl")(cacheControl)
-    if (contentDisposition != null) __obj.updateDynamic("contentDisposition")(contentDisposition)
-    if (contentEncoding != null) __obj.updateDynamic("contentEncoding")(contentEncoding)
-    if (contentLanguage != null) __obj.updateDynamic("contentLanguage")(contentLanguage)
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
-    if (customMetadata != null) __obj.updateDynamic("customMetadata")(customMetadata)
-    if (md5Hash != null) __obj.updateDynamic("md5Hash")(md5Hash)
+    val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any], fullPath = fullPath.asInstanceOf[js.Any], generation = generation.asInstanceOf[js.Any], metageneration = metageneration.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], timeCreated = timeCreated.asInstanceOf[js.Any], updated = updated.asInstanceOf[js.Any])
+    if (cacheControl != null) __obj.updateDynamic("cacheControl")(cacheControl.asInstanceOf[js.Any])
+    if (contentDisposition != null) __obj.updateDynamic("contentDisposition")(contentDisposition.asInstanceOf[js.Any])
+    if (contentEncoding != null) __obj.updateDynamic("contentEncoding")(contentEncoding.asInstanceOf[js.Any])
+    if (contentLanguage != null) __obj.updateDynamic("contentLanguage")(contentLanguage.asInstanceOf[js.Any])
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
+    if (customMetadata != null) __obj.updateDynamic("customMetadata")(customMetadata.asInstanceOf[js.Any])
+    if (md5Hash != null) __obj.updateDynamic("md5Hash")(md5Hash.asInstanceOf[js.Any])
     __obj.asInstanceOf[FullMetadata]
   }
 }

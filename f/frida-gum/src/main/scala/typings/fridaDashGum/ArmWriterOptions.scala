@@ -19,7 +19,7 @@ object ArmWriterOptions {
   @scala.inline
   def apply(pc: NativePointer = null): ArmWriterOptions = {
     val __obj = js.Dynamic.literal()
-    if (pc != null) __obj.updateDynamic("pc")(pc)
+    if (pc != null) __obj.updateDynamic("pc")(pc.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArmWriterOptions]
   }
 }

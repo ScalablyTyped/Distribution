@@ -13,8 +13,8 @@ trait FlashCellsEvent extends AgGridEvent {
 object FlashCellsEvent {
   @scala.inline
   def apply(api: GridApi, cells: js.Any, columnApi: ColumnApi, `type`: String): FlashCellsEvent = {
-    val __obj = js.Dynamic.literal(api = api, cells = cells, columnApi = columnApi)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], cells = cells.asInstanceOf[js.Any], columnApi = columnApi.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlashCellsEvent]
   }
 }

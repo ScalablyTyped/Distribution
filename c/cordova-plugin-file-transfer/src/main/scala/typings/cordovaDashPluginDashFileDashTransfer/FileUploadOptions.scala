@@ -34,13 +34,13 @@ object FileUploadOptions {
     params: js.Object = null
   ): FileUploadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(chunkedMode)) __obj.updateDynamic("chunkedMode")(chunkedMode)
-    if (fileKey != null) __obj.updateDynamic("fileKey")(fileKey)
-    if (fileName != null) __obj.updateDynamic("fileName")(fileName)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (httpMethod != null) __obj.updateDynamic("httpMethod")(httpMethod)
-    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType)
-    if (params != null) __obj.updateDynamic("params")(params)
+    if (!js.isUndefined(chunkedMode)) __obj.updateDynamic("chunkedMode")(chunkedMode.asInstanceOf[js.Any])
+    if (fileKey != null) __obj.updateDynamic("fileKey")(fileKey.asInstanceOf[js.Any])
+    if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (httpMethod != null) __obj.updateDynamic("httpMethod")(httpMethod.asInstanceOf[js.Any])
+    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileUploadOptions]
   }
 }

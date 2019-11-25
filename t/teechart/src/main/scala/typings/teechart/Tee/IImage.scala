@@ -13,7 +13,7 @@ trait IImage extends js.Object {
 object IImage {
   @scala.inline
   def apply(chart: IChart, url: String, visible: Boolean): IImage = {
-    val __obj = js.Dynamic.literal(chart = chart, url = url, visible = visible)
+    val __obj = js.Dynamic.literal(chart = chart.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IImage]
   }

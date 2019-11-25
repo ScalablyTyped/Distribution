@@ -15,9 +15,9 @@ object Anon_ColorOutlineColor {
   @scala.inline
   def apply(color: Property = null, outlineColor: Property = null, outlineWidth: Property = null): Anon_ColorOutlineColor = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (outlineColor != null) __obj.updateDynamic("outlineColor")(outlineColor)
-    if (outlineWidth != null) __obj.updateDynamic("outlineWidth")(outlineWidth)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (outlineColor != null) __obj.updateDynamic("outlineColor")(outlineColor.asInstanceOf[js.Any])
+    if (outlineWidth != null) __obj.updateDynamic("outlineWidth")(outlineWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ColorOutlineColor]
   }
 }

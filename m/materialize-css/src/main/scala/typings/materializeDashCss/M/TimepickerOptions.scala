@@ -95,7 +95,7 @@ object TimepickerOptions {
     twelveHour: Boolean,
     vibrate: Boolean
   ): TimepickerOptions = {
-    val __obj = js.Dynamic.literal(autoClose = autoClose, container = container, defaultTime = defaultTime, duration = duration, fromNow = fromNow, i18n = i18n, onCloseEnd = js.Any.fromFunction2(onCloseEnd), onCloseStart = js.Any.fromFunction2(onCloseStart), onOpenEnd = js.Any.fromFunction2(onOpenEnd), onOpenStart = js.Any.fromFunction2(onOpenStart), onSelect = js.Any.fromFunction3(onSelect), showClearBtn = showClearBtn, twelveHour = twelveHour, vibrate = vibrate)
+    val __obj = js.Dynamic.literal(autoClose = autoClose.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], defaultTime = defaultTime.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], fromNow = fromNow.asInstanceOf[js.Any], i18n = i18n.asInstanceOf[js.Any], onCloseEnd = js.Any.fromFunction2(onCloseEnd), onCloseStart = js.Any.fromFunction2(onCloseStart), onOpenEnd = js.Any.fromFunction2(onOpenEnd), onOpenStart = js.Any.fromFunction2(onOpenStart), onSelect = js.Any.fromFunction3(onSelect), showClearBtn = showClearBtn.asInstanceOf[js.Any], twelveHour = twelveHour.asInstanceOf[js.Any], vibrate = vibrate.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TimepickerOptions]
   }

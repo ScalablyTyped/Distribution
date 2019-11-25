@@ -20,7 +20,7 @@ trait _KeySchemaElement extends js.Object {
 object _KeySchemaElement {
   @scala.inline
   def apply(AttributeName: String, KeyType: HASH | RANGE | String): _KeySchemaElement = {
-    val __obj = js.Dynamic.literal(AttributeName = AttributeName, KeyType = KeyType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(AttributeName = AttributeName.asInstanceOf[js.Any], KeyType = KeyType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_KeySchemaElement]
   }

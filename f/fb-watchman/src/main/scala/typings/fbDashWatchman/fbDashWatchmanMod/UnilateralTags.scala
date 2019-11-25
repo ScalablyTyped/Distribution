@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait UnilateralTags extends js.Object
 
+object UnilateralTags {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def log: typings.fbDashWatchman.fbDashWatchmanStrings.log = this.cast("log")
+  @scala.inline
+  def unilateralTags: typings.fbDashWatchman.fbDashWatchmanStrings.unilateralTags = this.cast("unilateralTags")
+}
+

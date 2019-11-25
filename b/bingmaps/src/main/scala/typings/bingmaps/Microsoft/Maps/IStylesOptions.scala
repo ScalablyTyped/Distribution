@@ -21,9 +21,9 @@ object IStylesOptions {
     pushpinOptions: IPushpinOptions = null
   ): IStylesOptions = {
     val __obj = js.Dynamic.literal()
-    if (polygonOptions != null) __obj.updateDynamic("polygonOptions")(polygonOptions)
-    if (polylineOptions != null) __obj.updateDynamic("polylineOptions")(polylineOptions)
-    if (pushpinOptions != null) __obj.updateDynamic("pushpinOptions")(pushpinOptions)
+    if (polygonOptions != null) __obj.updateDynamic("polygonOptions")(polygonOptions.asInstanceOf[js.Any])
+    if (polylineOptions != null) __obj.updateDynamic("polylineOptions")(polylineOptions.asInstanceOf[js.Any])
+    if (pushpinOptions != null) __obj.updateDynamic("pushpinOptions")(pushpinOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStylesOptions]
   }
 }

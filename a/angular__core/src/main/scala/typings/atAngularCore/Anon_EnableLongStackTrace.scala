@@ -12,7 +12,7 @@ object Anon_EnableLongStackTrace {
   @scala.inline
   def apply(enableLongStackTrace: js.UndefOr[Boolean] = js.undefined): Anon_EnableLongStackTrace = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableLongStackTrace)) __obj.updateDynamic("enableLongStackTrace")(enableLongStackTrace)
+    if (!js.isUndefined(enableLongStackTrace)) __obj.updateDynamic("enableLongStackTrace")(enableLongStackTrace.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_EnableLongStackTrace]
   }
 }

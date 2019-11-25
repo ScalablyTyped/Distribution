@@ -22,10 +22,10 @@ object Column {
     property: String = null
   ): Column = {
     val __obj = js.Dynamic.literal()
-    if (cell != null) __obj.updateDynamic("cell")(cell)
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (header != null) __obj.updateDynamic("header")(header)
-    if (property != null) __obj.updateDynamic("property")(property)
+    if (cell != null) __obj.updateDynamic("cell")(cell.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
     __obj.asInstanceOf[Column]
   }
 }

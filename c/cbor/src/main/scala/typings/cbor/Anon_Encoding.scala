@@ -20,9 +20,9 @@ object Anon_Encoding {
     tags: NumberDictionary[js.Function1[/* val */ js.Array[_], _]] = null
   ): Anon_Encoding = {
     val __obj = js.Dynamic.literal()
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Encoding]
   }
 }

@@ -24,12 +24,12 @@ object StreamChannelsOptions {
     track: js.Object = null
   ): StreamChannelsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableChannelsEvents)) __obj.updateDynamic("enableChannelsEvents")(enableChannelsEvents)
-    if (!js.isUndefined(enableKeywordsEvents)) __obj.updateDynamic("enableKeywordsEvents")(enableKeywordsEvents)
-    if (!js.isUndefined(enableRootChannelsEvent)) __obj.updateDynamic("enableRootChannelsEvent")(enableRootChannelsEvent)
-    if (follow != null) __obj.updateDynamic("follow")(follow)
-    if (locations != null) __obj.updateDynamic("locations")(locations)
-    if (track != null) __obj.updateDynamic("track")(track)
+    if (!js.isUndefined(enableChannelsEvents)) __obj.updateDynamic("enableChannelsEvents")(enableChannelsEvents.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableKeywordsEvents)) __obj.updateDynamic("enableKeywordsEvents")(enableKeywordsEvents.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableRootChannelsEvent)) __obj.updateDynamic("enableRootChannelsEvent")(enableRootChannelsEvent.asInstanceOf[js.Any])
+    if (follow != null) __obj.updateDynamic("follow")(follow.asInstanceOf[js.Any])
+    if (locations != null) __obj.updateDynamic("locations")(locations.asInstanceOf[js.Any])
+    if (track != null) __obj.updateDynamic("track")(track.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamChannelsOptions]
   }
 }

@@ -33,8 +33,8 @@ object TabsGroupsContentDefaults {
   ): TabsGroupsContentDefaults = {
     val __obj = js.Dynamic.literal()
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(isBig)) __obj.updateDynamic("isBig")(isBig)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(isBig)) __obj.updateDynamic("isBig")(isBig.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabsGroupsContentDefaults]
   }

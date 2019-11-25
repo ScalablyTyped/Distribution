@@ -21,7 +21,7 @@ package object Ext {
   type IComponentMgr = IBase
   type IDate = IDateExtras
   type IDomQuery = IQuery
-  type IFeature = IBase
+  type IFeature = typings.senchaUnderscoreTouch.Ext.env.IFeature
   type IModelManager = IAbstractManager
   type IModelMgr = IAbstractManager
   type IMsg = IMessageBox

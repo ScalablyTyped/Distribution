@@ -30,12 +30,12 @@ object GraphQLDirectiveConfig {
     extensions: Maybe[Record[String, _]] = null,
     isRepeatable: js.UndefOr[Boolean] = js.undefined
   ): GraphQLDirectiveConfig = {
-    val __obj = js.Dynamic.literal(locations = locations, name = name)
+    val __obj = js.Dynamic.literal(locations = locations.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
     if (astNode != null) __obj.updateDynamic("astNode")(astNode.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRepeatable)) __obj.updateDynamic("isRepeatable")(isRepeatable)
+    if (!js.isUndefined(isRepeatable)) __obj.updateDynamic("isRepeatable")(isRepeatable.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLDirectiveConfig]
   }
 }

@@ -48,22 +48,22 @@ object Anon_CreditEllipsoidEnablePickFeatures {
     tilingScheme: TilingScheme = null,
     urlSchemeZeroPadding: js.Object = null
   ): Anon_CreditEllipsoidEnablePickFeatures = {
-    val __obj = js.Dynamic.literal(url = url)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     if (credit != null) __obj.updateDynamic("credit")(credit.asInstanceOf[js.Any])
-    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
-    if (!js.isUndefined(enablePickFeatures)) __obj.updateDynamic("enablePickFeatures")(enablePickFeatures)
-    if (getFeatureInfoFormats != null) __obj.updateDynamic("getFeatureInfoFormats")(getFeatureInfoFormats)
-    if (!js.isUndefined(hasAlphaChannel)) __obj.updateDynamic("hasAlphaChannel")(hasAlphaChannel)
+    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePickFeatures)) __obj.updateDynamic("enablePickFeatures")(enablePickFeatures.asInstanceOf[js.Any])
+    if (getFeatureInfoFormats != null) __obj.updateDynamic("getFeatureInfoFormats")(getFeatureInfoFormats.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasAlphaChannel)) __obj.updateDynamic("hasAlphaChannel")(hasAlphaChannel.asInstanceOf[js.Any])
     if (maximumLevel != null) __obj.updateDynamic("maximumLevel")(maximumLevel.asInstanceOf[js.Any])
     if (minimumLevel != null) __obj.updateDynamic("minimumLevel")(minimumLevel.asInstanceOf[js.Any])
-    if (pickFeaturesUrl != null) __obj.updateDynamic("pickFeaturesUrl")(pickFeaturesUrl)
-    if (proxy != null) __obj.updateDynamic("proxy")(proxy)
-    if (rectangle != null) __obj.updateDynamic("rectangle")(rectangle)
+    if (pickFeaturesUrl != null) __obj.updateDynamic("pickFeaturesUrl")(pickFeaturesUrl.asInstanceOf[js.Any])
+    if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
+    if (rectangle != null) __obj.updateDynamic("rectangle")(rectangle.asInstanceOf[js.Any])
     if (subdomains != null) __obj.updateDynamic("subdomains")(subdomains.asInstanceOf[js.Any])
     if (tileHeight != null) __obj.updateDynamic("tileHeight")(tileHeight.asInstanceOf[js.Any])
     if (tileWidth != null) __obj.updateDynamic("tileWidth")(tileWidth.asInstanceOf[js.Any])
-    if (tilingScheme != null) __obj.updateDynamic("tilingScheme")(tilingScheme)
-    if (urlSchemeZeroPadding != null) __obj.updateDynamic("urlSchemeZeroPadding")(urlSchemeZeroPadding)
+    if (tilingScheme != null) __obj.updateDynamic("tilingScheme")(tilingScheme.asInstanceOf[js.Any])
+    if (urlSchemeZeroPadding != null) __obj.updateDynamic("urlSchemeZeroPadding")(urlSchemeZeroPadding.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CreditEllipsoidEnablePickFeatures]
   }
 }

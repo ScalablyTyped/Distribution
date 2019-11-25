@@ -24,10 +24,10 @@ object IdentitytoolkitRelyingpartySendVerificationCodeRequest {
     recaptchaToken: String = null
   ): IdentitytoolkitRelyingpartySendVerificationCodeRequest = {
     val __obj = js.Dynamic.literal()
-    if (iosReceipt != null) __obj.updateDynamic("iosReceipt")(iosReceipt)
-    if (iosSecret != null) __obj.updateDynamic("iosSecret")(iosSecret)
-    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber)
-    if (recaptchaToken != null) __obj.updateDynamic("recaptchaToken")(recaptchaToken)
+    if (iosReceipt != null) __obj.updateDynamic("iosReceipt")(iosReceipt.asInstanceOf[js.Any])
+    if (iosSecret != null) __obj.updateDynamic("iosSecret")(iosSecret.asInstanceOf[js.Any])
+    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber.asInstanceOf[js.Any])
+    if (recaptchaToken != null) __obj.updateDynamic("recaptchaToken")(recaptchaToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentitytoolkitRelyingpartySendVerificationCodeRequest]
   }
 }

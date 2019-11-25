@@ -27,8 +27,8 @@ object SchemaParameter {
     required: Boolean,
     `type`: SchemaType
   ): SchemaParameter = {
-    val __obj = js.Dynamic.literal(default = default, description = description, enum = enum, enumDescription = enumDescription, format = format, location = location, required = required)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], enum = enum.asInstanceOf[js.Any], enumDescription = enumDescription.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaParameter]
   }
 }

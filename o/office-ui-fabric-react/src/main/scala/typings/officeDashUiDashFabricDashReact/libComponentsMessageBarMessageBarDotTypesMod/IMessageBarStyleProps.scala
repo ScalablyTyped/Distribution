@@ -52,14 +52,14 @@ object IMessageBarStyleProps {
     onDismiss: js.UndefOr[Boolean] = js.undefined,
     truncated: js.UndefOr[Boolean] = js.undefined
   ): IMessageBarStyleProps = {
-    val __obj = js.Dynamic.literal(theme = theme)
-    if (!js.isUndefined(actions)) __obj.updateDynamic("actions")(actions)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(expandSingleLine)) __obj.updateDynamic("expandSingleLine")(expandSingleLine)
-    if (!js.isUndefined(isMultiline)) __obj.updateDynamic("isMultiline")(isMultiline)
-    if (messageBarType != null) __obj.updateDynamic("messageBarType")(messageBarType)
-    if (!js.isUndefined(onDismiss)) __obj.updateDynamic("onDismiss")(onDismiss)
-    if (!js.isUndefined(truncated)) __obj.updateDynamic("truncated")(truncated)
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
+    if (!js.isUndefined(actions)) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandSingleLine)) __obj.updateDynamic("expandSingleLine")(expandSingleLine.asInstanceOf[js.Any])
+    if (!js.isUndefined(isMultiline)) __obj.updateDynamic("isMultiline")(isMultiline.asInstanceOf[js.Any])
+    if (messageBarType != null) __obj.updateDynamic("messageBarType")(messageBarType.asInstanceOf[js.Any])
+    if (!js.isUndefined(onDismiss)) __obj.updateDynamic("onDismiss")(onDismiss.asInstanceOf[js.Any])
+    if (!js.isUndefined(truncated)) __obj.updateDynamic("truncated")(truncated.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMessageBarStyleProps]
   }
 }

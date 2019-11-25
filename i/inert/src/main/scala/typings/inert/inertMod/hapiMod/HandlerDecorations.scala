@@ -43,9 +43,9 @@ object HandlerDecorations {
     files: Anon_RelativeTo = null
   ): HandlerDecorations = {
     val __obj = js.Dynamic.literal()
-    if (directory != null) __obj.updateDynamic("directory")(directory)
+    if (directory != null) __obj.updateDynamic("directory")(directory.asInstanceOf[js.Any])
     if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
-    if (files != null) __obj.updateDynamic("files")(files)
+    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
     __obj.asInstanceOf[HandlerDecorations]
   }
 }

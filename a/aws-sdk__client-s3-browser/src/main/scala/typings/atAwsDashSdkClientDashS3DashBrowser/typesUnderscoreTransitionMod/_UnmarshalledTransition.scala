@@ -24,7 +24,7 @@ object _UnmarshalledTransition {
     StorageClass: GLACIER | STANDARD_IA | ONEZONE_IA | String = null
   ): _UnmarshalledTransition = {
     val __obj = js.Dynamic.literal()
-    if (Date != null) __obj.updateDynamic("Date")(Date)
+    if (Date != null) __obj.updateDynamic("Date")(Date.asInstanceOf[js.Any])
     if (Days != null) __obj.updateDynamic("Days")(Days.asInstanceOf[js.Any])
     if (StorageClass != null) __obj.updateDynamic("StorageClass")(StorageClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledTransition]

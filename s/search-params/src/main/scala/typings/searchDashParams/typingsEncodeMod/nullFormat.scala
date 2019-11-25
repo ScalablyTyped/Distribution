@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait nullFormat extends js.Object
 
+object nullFormat {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def default: typings.searchDashParams.searchDashParamsStrings.default = this.cast("default")
+  @scala.inline
+  def hidden: typings.searchDashParams.searchDashParamsStrings.hidden = this.cast("hidden")
+  @scala.inline
+  def string: typings.searchDashParams.searchDashParamsStrings.string = this.cast("string")
+}
+

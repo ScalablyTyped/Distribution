@@ -14,8 +14,8 @@ object AppearanceConfig {
   @scala.inline
   def apply(panels: Anon_Tools = null, theme: ThemeColor = null): AppearanceConfig = {
     val __obj = js.Dynamic.literal()
-    if (panels != null) __obj.updateDynamic("panels")(panels)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (panels != null) __obj.updateDynamic("panels")(panels.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppearanceConfig]
   }
 }

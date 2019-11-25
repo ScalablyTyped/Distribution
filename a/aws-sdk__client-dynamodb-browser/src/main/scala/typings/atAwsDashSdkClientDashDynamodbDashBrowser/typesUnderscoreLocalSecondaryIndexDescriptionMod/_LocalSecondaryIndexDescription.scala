@@ -45,12 +45,12 @@ object _LocalSecondaryIndexDescription {
     Projection: _Projection = null
   ): _LocalSecondaryIndexDescription = {
     val __obj = js.Dynamic.literal()
-    if (IndexArn != null) __obj.updateDynamic("IndexArn")(IndexArn)
-    if (IndexName != null) __obj.updateDynamic("IndexName")(IndexName)
+    if (IndexArn != null) __obj.updateDynamic("IndexArn")(IndexArn.asInstanceOf[js.Any])
+    if (IndexName != null) __obj.updateDynamic("IndexName")(IndexName.asInstanceOf[js.Any])
     if (IndexSizeBytes != null) __obj.updateDynamic("IndexSizeBytes")(IndexSizeBytes.asInstanceOf[js.Any])
     if (ItemCount != null) __obj.updateDynamic("ItemCount")(ItemCount.asInstanceOf[js.Any])
     if (KeySchema != null) __obj.updateDynamic("KeySchema")(KeySchema.asInstanceOf[js.Any])
-    if (Projection != null) __obj.updateDynamic("Projection")(Projection)
+    if (Projection != null) __obj.updateDynamic("Projection")(Projection.asInstanceOf[js.Any])
     __obj.asInstanceOf[_LocalSecondaryIndexDescription]
   }
 }

@@ -13,7 +13,7 @@ object ViolatingSitesResponse {
   @scala.inline
   def apply(violatingSites: js.Array[SiteSummaryResponse] = null): ViolatingSitesResponse = {
     val __obj = js.Dynamic.literal()
-    if (violatingSites != null) __obj.updateDynamic("violatingSites")(violatingSites)
+    if (violatingSites != null) __obj.updateDynamic("violatingSites")(violatingSites.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViolatingSitesResponse]
   }
 }

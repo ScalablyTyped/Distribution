@@ -24,8 +24,8 @@ object WriteResult {
   @scala.inline
   def apply(transformResults: js.Array[Value] = null, updateTime: String = null): WriteResult = {
     val __obj = js.Dynamic.literal()
-    if (transformResults != null) __obj.updateDynamic("transformResults")(transformResults)
-    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime)
+    if (transformResults != null) __obj.updateDynamic("transformResults")(transformResults.asInstanceOf[js.Any])
+    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[WriteResult]
   }
 }

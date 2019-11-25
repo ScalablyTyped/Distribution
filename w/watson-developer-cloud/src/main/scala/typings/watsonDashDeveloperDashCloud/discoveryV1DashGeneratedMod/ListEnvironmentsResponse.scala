@@ -14,7 +14,7 @@ object ListEnvironmentsResponse {
   @scala.inline
   def apply(environments: js.Array[Environment] = null): ListEnvironmentsResponse = {
     val __obj = js.Dynamic.literal()
-    if (environments != null) __obj.updateDynamic("environments")(environments)
+    if (environments != null) __obj.updateDynamic("environments")(environments.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListEnvironmentsResponse]
   }
 }

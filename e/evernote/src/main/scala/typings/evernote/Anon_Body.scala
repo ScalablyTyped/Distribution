@@ -14,8 +14,8 @@ object Anon_Body {
   @scala.inline
   def apply(body: String = null, bodyHash: String = null, size: Int | Double = null): Anon_Body = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (bodyHash != null) __obj.updateDynamic("bodyHash")(bodyHash)
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (bodyHash != null) __obj.updateDynamic("bodyHash")(bodyHash.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Body]
   }

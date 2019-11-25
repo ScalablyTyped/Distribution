@@ -28,14 +28,14 @@ object ResourceVisualization {
     `type`: String = null
   ): ResourceVisualization = {
     val __obj = js.Dynamic.literal()
-    if (containerDisplayName != null) __obj.updateDynamic("containerDisplayName")(containerDisplayName)
-    if (containerType != null) __obj.updateDynamic("containerType")(containerType)
-    if (containerWebUrl != null) __obj.updateDynamic("containerWebUrl")(containerWebUrl)
-    if (mediaType != null) __obj.updateDynamic("mediaType")(mediaType)
-    if (previewImageUrl != null) __obj.updateDynamic("previewImageUrl")(previewImageUrl)
-    if (previewText != null) __obj.updateDynamic("previewText")(previewText)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (containerDisplayName != null) __obj.updateDynamic("containerDisplayName")(containerDisplayName.asInstanceOf[js.Any])
+    if (containerType != null) __obj.updateDynamic("containerType")(containerType.asInstanceOf[js.Any])
+    if (containerWebUrl != null) __obj.updateDynamic("containerWebUrl")(containerWebUrl.asInstanceOf[js.Any])
+    if (mediaType != null) __obj.updateDynamic("mediaType")(mediaType.asInstanceOf[js.Any])
+    if (previewImageUrl != null) __obj.updateDynamic("previewImageUrl")(previewImageUrl.asInstanceOf[js.Any])
+    if (previewText != null) __obj.updateDynamic("previewText")(previewText.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceVisualization]
   }
 }

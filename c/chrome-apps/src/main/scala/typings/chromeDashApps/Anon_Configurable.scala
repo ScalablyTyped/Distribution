@@ -34,10 +34,10 @@ object Anon_Configurable {
     watchable: js.UndefOr[Boolean] = js.undefined
   ): Anon_Configurable = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(configurable)) __obj.updateDynamic("configurable")(configurable)
-    if (!js.isUndefined(multiple_mounts)) __obj.updateDynamic("multiple_mounts")(multiple_mounts)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (!js.isUndefined(watchable)) __obj.updateDynamic("watchable")(watchable)
+    if (!js.isUndefined(configurable)) __obj.updateDynamic("configurable")(configurable.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiple_mounts)) __obj.updateDynamic("multiple_mounts")(multiple_mounts.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (!js.isUndefined(watchable)) __obj.updateDynamic("watchable")(watchable.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Configurable]
   }
 }

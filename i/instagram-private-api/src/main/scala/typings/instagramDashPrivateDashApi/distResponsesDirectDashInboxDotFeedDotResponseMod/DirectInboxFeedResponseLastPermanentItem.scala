@@ -31,13 +31,13 @@ object DirectInboxFeedResponseLastPermanentItem {
     reel_share: DirectInboxFeedResponseReelShare = null,
     text: String = null
   ): DirectInboxFeedResponseLastPermanentItem = {
-    val __obj = js.Dynamic.literal(item_id = item_id, item_type = item_type, timestamp = timestamp, user_id = user_id)
-    if (client_context != null) __obj.updateDynamic("client_context")(client_context)
-    if (link != null) __obj.updateDynamic("link")(link)
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
-    if (profile != null) __obj.updateDynamic("profile")(profile)
-    if (reel_share != null) __obj.updateDynamic("reel_share")(reel_share)
-    if (text != null) __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(item_id = item_id.asInstanceOf[js.Any], item_type = item_type.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], user_id = user_id.asInstanceOf[js.Any])
+    if (client_context != null) __obj.updateDynamic("client_context")(client_context.asInstanceOf[js.Any])
+    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
+    if (profile != null) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
+    if (reel_share != null) __obj.updateDynamic("reel_share")(reel_share.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectInboxFeedResponseLastPermanentItem]
   }
 }

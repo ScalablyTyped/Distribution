@@ -14,8 +14,8 @@ trait ojTrainSettableProperties extends baseComponentSettableProperties {
 object ojTrainSettableProperties {
   @scala.inline
   def apply(selectedStep: String, steps: js.Array[Step], translations: js.Object = null): ojTrainSettableProperties = {
-    val __obj = js.Dynamic.literal(selectedStep = selectedStep, steps = steps)
-    if (translations != null) __obj.updateDynamic("translations")(translations)
+    val __obj = js.Dynamic.literal(selectedStep = selectedStep.asInstanceOf[js.Any], steps = steps.asInstanceOf[js.Any])
+    if (translations != null) __obj.updateDynamic("translations")(translations.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojTrainSettableProperties]
   }
 }

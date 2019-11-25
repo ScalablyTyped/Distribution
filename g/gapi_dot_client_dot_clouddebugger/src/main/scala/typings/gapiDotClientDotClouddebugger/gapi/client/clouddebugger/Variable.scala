@@ -59,11 +59,11 @@ object Variable {
     varTableIndex: Int | Double = null
   ): Variable = {
     val __obj = js.Dynamic.literal()
-    if (members != null) __obj.updateDynamic("members")(members)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (members != null) __obj.updateDynamic("members")(members.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     if (varTableIndex != null) __obj.updateDynamic("varTableIndex")(varTableIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[Variable]
   }

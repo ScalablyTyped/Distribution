@@ -18,7 +18,7 @@ trait TimeoutConfig extends js.Object {
 object TimeoutConfig {
   @scala.inline
   def apply(timeoutMs: Double): TimeoutConfig = {
-    val __obj = js.Dynamic.literal(timeoutMs = timeoutMs)
+    val __obj = js.Dynamic.literal(timeoutMs = timeoutMs.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TimeoutConfig]
   }

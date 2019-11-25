@@ -59,10 +59,10 @@ object Pivot {
     startGroup: Int | Double = null
   ): Pivot = {
     val __obj = js.Dynamic.literal()
-    if (dimensionFilterClauses != null) __obj.updateDynamic("dimensionFilterClauses")(dimensionFilterClauses)
-    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions)
+    if (dimensionFilterClauses != null) __obj.updateDynamic("dimensionFilterClauses")(dimensionFilterClauses.asInstanceOf[js.Any])
+    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions.asInstanceOf[js.Any])
     if (maxGroupCount != null) __obj.updateDynamic("maxGroupCount")(maxGroupCount.asInstanceOf[js.Any])
-    if (metrics != null) __obj.updateDynamic("metrics")(metrics)
+    if (metrics != null) __obj.updateDynamic("metrics")(metrics.asInstanceOf[js.Any])
     if (startGroup != null) __obj.updateDynamic("startGroup")(startGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pivot]
   }

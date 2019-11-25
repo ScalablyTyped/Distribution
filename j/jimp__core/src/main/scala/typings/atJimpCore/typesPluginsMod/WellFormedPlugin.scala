@@ -33,12 +33,12 @@ object WellFormedPlugin {
     mime: StringDictionary[js.Array[String]] = null
   ): WellFormedPlugin[ImageType] = {
     val __obj = js.Dynamic.literal()
-    if (`class` != null) __obj.updateDynamic("class")(`class`)
-    if (constants != null) __obj.updateDynamic("constants")(constants)
-    if (decoders != null) __obj.updateDynamic("decoders")(decoders)
-    if (encoders != null) __obj.updateDynamic("encoders")(encoders)
-    if (hasAlpha != null) __obj.updateDynamic("hasAlpha")(hasAlpha)
-    if (mime != null) __obj.updateDynamic("mime")(mime)
+    if (`class` != null) __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
+    if (constants != null) __obj.updateDynamic("constants")(constants.asInstanceOf[js.Any])
+    if (decoders != null) __obj.updateDynamic("decoders")(decoders.asInstanceOf[js.Any])
+    if (encoders != null) __obj.updateDynamic("encoders")(encoders.asInstanceOf[js.Any])
+    if (hasAlpha != null) __obj.updateDynamic("hasAlpha")(hasAlpha.asInstanceOf[js.Any])
+    if (mime != null) __obj.updateDynamic("mime")(mime.asInstanceOf[js.Any])
     __obj.asInstanceOf[WellFormedPlugin[ImageType]]
   }
 }

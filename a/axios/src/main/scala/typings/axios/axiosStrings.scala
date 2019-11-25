@@ -35,31 +35,31 @@ object axiosStrings {
   sealed trait blob extends ResponseType
   
   @js.native
-  sealed trait delete extends Method
+  sealed trait delete_ extends Method
   
   @js.native
   sealed trait document extends ResponseType
   
   @js.native
-  sealed trait get extends Method
+  sealed trait get_ extends Method
   
   @js.native
-  sealed trait head extends Method
+  sealed trait head_ extends Method
   
   @js.native
   sealed trait json extends ResponseType
   
   @js.native
-  sealed trait options extends Method
+  sealed trait options_ extends Method
   
   @js.native
-  sealed trait patch extends Method
+  sealed trait patch_ extends Method
   
   @js.native
-  sealed trait post extends Method
+  sealed trait post_ extends Method
   
   @js.native
-  sealed trait put extends Method
+  sealed trait put_ extends Method
   
   @js.native
   sealed trait stream extends ResponseType
@@ -86,23 +86,23 @@ object axiosStrings {
   @scala.inline
   def blob: blob = "blob".asInstanceOf[blob]
   @scala.inline
-  def delete: delete = "delete".asInstanceOf[delete]
+  def delete_ : delete_ = "delete".asInstanceOf[delete_]
   @scala.inline
   def document: document = "document".asInstanceOf[document]
   @scala.inline
-  def get: get = "get".asInstanceOf[get]
+  def get_ : get_ = "get".asInstanceOf[get_]
   @scala.inline
-  def head: head = "head".asInstanceOf[head]
+  def head_ : head_ = "head".asInstanceOf[head_]
   @scala.inline
   def json: json = "json".asInstanceOf[json]
   @scala.inline
-  def options: options = "options".asInstanceOf[options]
+  def options_ : options_ = "options".asInstanceOf[options_]
   @scala.inline
-  def patch: patch = "patch".asInstanceOf[patch]
+  def patch_ : patch_ = "patch".asInstanceOf[patch_]
   @scala.inline
-  def post: post = "post".asInstanceOf[post]
+  def post_ : post_ = "post".asInstanceOf[post_]
   @scala.inline
-  def put: put = "put".asInstanceOf[put]
+  def put_ : put_ = "put".asInstanceOf[put_]
   @scala.inline
   def stream: stream = "stream".asInstanceOf[stream]
   @scala.inline

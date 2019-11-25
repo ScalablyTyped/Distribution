@@ -12,7 +12,7 @@ object ChromeOsDeviceDiskVolumeReports {
   @scala.inline
   def apply(volumeInfo: js.Array[ChromeOsDeviceDiskVolumeReportsVolumeInfo] = null): ChromeOsDeviceDiskVolumeReports = {
     val __obj = js.Dynamic.literal()
-    if (volumeInfo != null) __obj.updateDynamic("volumeInfo")(volumeInfo)
+    if (volumeInfo != null) __obj.updateDynamic("volumeInfo")(volumeInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChromeOsDeviceDiskVolumeReports]
   }
 }

@@ -17,7 +17,7 @@ object CancelAction {
     exec: (js.Any, js.Any, /* meta */ ActionMeta[js.Any, js.Any]) => js.Any | Unit = null
   ): CancelAction = {
     val __obj = js.Dynamic.literal(sendId = sendId.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (exec != null) __obj.updateDynamic("exec")(js.Any.fromFunction3(exec))
     __obj.asInstanceOf[CancelAction]
   }

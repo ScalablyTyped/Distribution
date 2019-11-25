@@ -28,7 +28,7 @@ object ScaleInProps {
     ref: LegacyRef[ScaleIn] = null
   ): ScaleInProps = {
     val __obj = js.Dynamic.literal()
-    if (childStyle != null) __obj.updateDynamic("childStyle")(childStyle)
+    if (childStyle != null) __obj.updateDynamic("childStyle")(childStyle.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (enterDelay != null) __obj.updateDynamic("enterDelay")(enterDelay.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])

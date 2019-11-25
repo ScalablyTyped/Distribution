@@ -41,12 +41,12 @@ object Anon_AbsolutePath {
     relativePath: String = null,
     search: String = null
   ): Anon_AbsolutePath = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (absolutePath != null) __obj.updateDynamic("absolutePath")(absolutePath)
-    if (hash != null) __obj.updateDynamic("hash")(hash)
-    if (pathname != null) __obj.updateDynamic("pathname")(pathname)
-    if (relativePath != null) __obj.updateDynamic("relativePath")(relativePath)
-    if (search != null) __obj.updateDynamic("search")(search)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (absolutePath != null) __obj.updateDynamic("absolutePath")(absolutePath.asInstanceOf[js.Any])
+    if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
+    if (pathname != null) __obj.updateDynamic("pathname")(pathname.asInstanceOf[js.Any])
+    if (relativePath != null) __obj.updateDynamic("relativePath")(relativePath.asInstanceOf[js.Any])
+    if (search != null) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AbsolutePath]
   }
 }

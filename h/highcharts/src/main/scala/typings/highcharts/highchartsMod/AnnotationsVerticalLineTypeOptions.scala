@@ -41,10 +41,10 @@ object AnnotationsVerticalLineTypeOptions {
     yAxis: Int | Double = null
   ): AnnotationsVerticalLineTypeOptions = {
     val __obj = js.Dynamic.literal()
-    if (connector != null) __obj.updateDynamic("connector")(connector)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (line != null) __obj.updateDynamic("line")(line)
-    if (points != null) __obj.updateDynamic("points")(points)
+    if (connector != null) __obj.updateDynamic("connector")(connector.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
+    if (points != null) __obj.updateDynamic("points")(points.asInstanceOf[js.Any])
     if (xAxis != null) __obj.updateDynamic("xAxis")(xAxis.asInstanceOf[js.Any])
     if (yAxis != null) __obj.updateDynamic("yAxis")(yAxis.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotationsVerticalLineTypeOptions]

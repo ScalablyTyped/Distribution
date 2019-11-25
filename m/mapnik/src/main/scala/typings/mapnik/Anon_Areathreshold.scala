@@ -26,10 +26,10 @@ object Anon_Areathreshold {
     val __obj = js.Dynamic.literal()
     if (area_threshold != null) __obj.updateDynamic("area_threshold")(area_threshold.asInstanceOf[js.Any])
     if (fill_type != null) __obj.updateDynamic("fill_type")(fill_type.asInstanceOf[js.Any])
-    if (!js.isUndefined(multi_polygon_union)) __obj.updateDynamic("multi_polygon_union")(multi_polygon_union)
-    if (!js.isUndefined(process_all_rings)) __obj.updateDynamic("process_all_rings")(process_all_rings)
+    if (!js.isUndefined(multi_polygon_union)) __obj.updateDynamic("multi_polygon_union")(multi_polygon_union.asInstanceOf[js.Any])
+    if (!js.isUndefined(process_all_rings)) __obj.updateDynamic("process_all_rings")(process_all_rings.asInstanceOf[js.Any])
     if (simplify_distance != null) __obj.updateDynamic("simplify_distance")(simplify_distance.asInstanceOf[js.Any])
-    if (!js.isUndefined(strictly_simple)) __obj.updateDynamic("strictly_simple")(strictly_simple)
+    if (!js.isUndefined(strictly_simple)) __obj.updateDynamic("strictly_simple")(strictly_simple.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Areathreshold]
   }
 }

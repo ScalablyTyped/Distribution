@@ -76,13 +76,13 @@ object QueryInterface {
     `type`: city | country | address | busStop | trainStation | townhall | airport = null
   ): QueryInterface = {
     val __obj = js.Dynamic.literal()
-    if (aroundLatLng != null) __obj.updateDynamic("aroundLatLng")(aroundLatLng)
-    if (aroundLatLngViaIP != null) __obj.updateDynamic("aroundLatLngViaIP")(aroundLatLngViaIP)
+    if (aroundLatLng != null) __obj.updateDynamic("aroundLatLng")(aroundLatLng.asInstanceOf[js.Any])
+    if (aroundLatLngViaIP != null) __obj.updateDynamic("aroundLatLngViaIP")(aroundLatLngViaIP.asInstanceOf[js.Any])
     if (aroundRadius != null) __obj.updateDynamic("aroundRadius")(aroundRadius.asInstanceOf[js.Any])
-    if (countries != null) __obj.updateDynamic("countries")(countries)
-    if (!js.isUndefined(getRankingInfo)) __obj.updateDynamic("getRankingInfo")(getRankingInfo)
+    if (countries != null) __obj.updateDynamic("countries")(countries.asInstanceOf[js.Any])
+    if (!js.isUndefined(getRankingInfo)) __obj.updateDynamic("getRankingInfo")(getRankingInfo.asInstanceOf[js.Any])
     if (hitsPerPage != null) __obj.updateDynamic("hitsPerPage")(hitsPerPage.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query)
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryInterface]
   }

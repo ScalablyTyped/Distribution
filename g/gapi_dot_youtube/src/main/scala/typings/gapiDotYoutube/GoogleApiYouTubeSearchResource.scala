@@ -31,7 +31,7 @@ object GoogleApiYouTubeSearchResource {
     kind: String,
     snippet: Anon_ChannelIdChannelTitleDescriptionPublishedAtThumbnails
   ): GoogleApiYouTubeSearchResource = {
-    val __obj = js.Dynamic.literal(etag = etag, id = id, kind = kind, snippet = snippet)
+    val __obj = js.Dynamic.literal(etag = etag.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], snippet = snippet.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GoogleApiYouTubeSearchResource]
   }

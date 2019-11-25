@@ -28,8 +28,8 @@ trait Anon_ChoicesDefault[T /* <: Answers */] extends js.Object {
 object Anon_ChoicesDefault {
   @scala.inline
   def apply[T /* <: Answers */](choices: ChoiceCollection[T], default: js.Any, message: String, `type`: String): Anon_ChoicesDefault[T] = {
-    val __obj = js.Dynamic.literal(choices = choices, default = default, message = message)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(choices = choices.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ChoicesDefault[T]]
   }
 }

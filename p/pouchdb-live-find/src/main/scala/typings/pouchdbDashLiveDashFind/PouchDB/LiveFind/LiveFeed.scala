@@ -4,7 +4,7 @@ import typings.pouchdbDashCore.EventEmitter
 import typings.pouchdbDashLiveDashFind.pouchdbDashLiveDashFindStrings.cancelled
 import typings.pouchdbDashLiveDashFind.pouchdbDashLiveDashFindStrings.error
 import typings.pouchdbDashLiveDashFind.pouchdbDashLiveDashFindStrings.ready
-import typings.pouchdbDashLiveDashFind.pouchdbDashLiveDashFindStrings.update
+import typings.pouchdbDashLiveDashFind.pouchdbDashLiveDashFindStrings.update_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,7 @@ trait LiveFeed[Content /* <: js.Object */] extends EventEmitter {
   @JSName("on")
   def on_ready(event: ready, listener: js.Function0[Unit]): this.type = js.native
   @JSName("on")
-  def on_update(event: update, listener: js.Function2[/* event */ UpdateEvent, /* list */ js.Any, Unit]): this.type = js.native
+  def on_update(event: update_, listener: js.Function2[/* event */ UpdateEvent, /* list */ js.Any, Unit]): this.type = js.native
   // updates the pagination and sorting of the aggregate list and immediately returns the updated list. Available options are sort, skip, and limit.
   def paginate(options: PaginateOptions[Content]): js.Array[js.Any] = js.native
   // a convenience function to sort any list in place by the sort order you provided. (This will mutate the Array.)

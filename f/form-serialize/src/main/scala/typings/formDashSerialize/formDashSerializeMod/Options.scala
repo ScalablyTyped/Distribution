@@ -27,9 +27,9 @@ object Options {
     serializer: (/* result */ Result, /* key */ String, /* value */ String) => Result = null
   ): Options[Result] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (!js.isUndefined(empty)) __obj.updateDynamic("empty")(empty)
-    if (!js.isUndefined(hash)) __obj.updateDynamic("hash")(hash)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(empty)) __obj.updateDynamic("empty")(empty.asInstanceOf[js.Any])
+    if (!js.isUndefined(hash)) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
     if (serializer != null) __obj.updateDynamic("serializer")(js.Any.fromFunction3(serializer))
     __obj.asInstanceOf[Options[Result]]
   }

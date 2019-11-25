@@ -40,10 +40,10 @@ object IPagerConfig {
     previousText: String = null
   ): IPagerConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(align)) __obj.updateDynamic("align")(align)
+    if (!js.isUndefined(align)) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (itemsPerPage != null) __obj.updateDynamic("itemsPerPage")(itemsPerPage.asInstanceOf[js.Any])
-    if (nextText != null) __obj.updateDynamic("nextText")(nextText)
-    if (previousText != null) __obj.updateDynamic("previousText")(previousText)
+    if (nextText != null) __obj.updateDynamic("nextText")(nextText.asInstanceOf[js.Any])
+    if (previousText != null) __obj.updateDynamic("previousText")(previousText.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPagerConfig]
   }
 }

@@ -34,16 +34,16 @@ object Survey {
     wantedResponseCount: Int | Double = null
   ): Survey = {
     val __obj = js.Dynamic.literal()
-    if (audience != null) __obj.updateDynamic("audience")(audience)
-    if (cost != null) __obj.updateDynamic("cost")(cost)
-    if (customerData != null) __obj.updateDynamic("customerData")(customerData)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (owners != null) __obj.updateDynamic("owners")(owners)
-    if (questions != null) __obj.updateDynamic("questions")(questions)
-    if (rejectionReason != null) __obj.updateDynamic("rejectionReason")(rejectionReason)
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (surveyUrlId != null) __obj.updateDynamic("surveyUrlId")(surveyUrlId)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (audience != null) __obj.updateDynamic("audience")(audience.asInstanceOf[js.Any])
+    if (cost != null) __obj.updateDynamic("cost")(cost.asInstanceOf[js.Any])
+    if (customerData != null) __obj.updateDynamic("customerData")(customerData.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (owners != null) __obj.updateDynamic("owners")(owners.asInstanceOf[js.Any])
+    if (questions != null) __obj.updateDynamic("questions")(questions.asInstanceOf[js.Any])
+    if (rejectionReason != null) __obj.updateDynamic("rejectionReason")(rejectionReason.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (surveyUrlId != null) __obj.updateDynamic("surveyUrlId")(surveyUrlId.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (wantedResponseCount != null) __obj.updateDynamic("wantedResponseCount")(wantedResponseCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[Survey]
   }

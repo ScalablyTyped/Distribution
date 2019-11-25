@@ -11,7 +11,7 @@ trait AlbumParams extends js.Object {
 object AlbumParams {
   @scala.inline
   def apply(album_id: Double): AlbumParams = {
-    val __obj = js.Dynamic.literal(album_id = album_id)
+    val __obj = js.Dynamic.literal(album_id = album_id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AlbumParams]
   }

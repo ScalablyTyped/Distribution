@@ -20,9 +20,9 @@ object GanttAddEvent {
     dependency: GanttDependency = null,
     task: GanttTask = null
   ): GanttAddEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (dependency != null) __obj.updateDynamic("dependency")(dependency)
-    if (task != null) __obj.updateDynamic("task")(task)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (dependency != null) __obj.updateDynamic("dependency")(dependency.asInstanceOf[js.Any])
+    if (task != null) __obj.updateDynamic("task")(task.asInstanceOf[js.Any])
     __obj.asInstanceOf[GanttAddEvent]
   }
 }

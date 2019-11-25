@@ -35,17 +35,17 @@ object PartialClassNameMapInputLabelClassKey {
     shrink: String = null
   ): PartialClassNameMapInputLabelClassKey = {
     val __obj = js.Dynamic.literal()
-    if (animated != null) __obj.updateDynamic("animated")(animated)
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (filled != null) __obj.updateDynamic("filled")(filled)
-    if (focused != null) __obj.updateDynamic("focused")(focused)
-    if (formControl != null) __obj.updateDynamic("formControl")(formControl)
-    if (marginDense != null) __obj.updateDynamic("marginDense")(marginDense)
-    if (outlined != null) __obj.updateDynamic("outlined")(outlined)
-    if (required != null) __obj.updateDynamic("required")(required)
-    if (root != null) __obj.updateDynamic("root")(root)
-    if (shrink != null) __obj.updateDynamic("shrink")(shrink)
+    if (animated != null) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
+    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (filled != null) __obj.updateDynamic("filled")(filled.asInstanceOf[js.Any])
+    if (focused != null) __obj.updateDynamic("focused")(focused.asInstanceOf[js.Any])
+    if (formControl != null) __obj.updateDynamic("formControl")(formControl.asInstanceOf[js.Any])
+    if (marginDense != null) __obj.updateDynamic("marginDense")(marginDense.asInstanceOf[js.Any])
+    if (outlined != null) __obj.updateDynamic("outlined")(outlined.asInstanceOf[js.Any])
+    if (required != null) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (shrink != null) __obj.updateDynamic("shrink")(shrink.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapInputLabelClassKey]
   }
 }

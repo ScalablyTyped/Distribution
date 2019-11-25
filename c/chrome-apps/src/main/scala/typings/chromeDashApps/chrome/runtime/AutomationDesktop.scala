@@ -13,8 +13,8 @@ trait AutomationDesktop extends _AutomationOptions {
 object AutomationDesktop {
   @scala.inline
   def apply(desktop: `true`, interact: `true` = null): AutomationDesktop = {
-    val __obj = js.Dynamic.literal(desktop = desktop)
-    if (interact != null) __obj.updateDynamic("interact")(interact)
+    val __obj = js.Dynamic.literal(desktop = desktop.asInstanceOf[js.Any])
+    if (interact != null) __obj.updateDynamic("interact")(interact.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutomationDesktop]
   }
 }

@@ -79,15 +79,15 @@ object DynamicDNSOptions {
     useHostIPAddressCache: js.UndefOr[Boolean] = js.undefined,
     userAgent: String = null
   ): DynamicDNSOptions = {
-    val __obj = js.Dynamic.literal(hostname = hostname, password = password, username = username)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (!js.isUndefined(failOnUnresolvedHostName)) __obj.updateDynamic("failOnUnresolvedHostName")(failOnUnresolvedHostName)
+    val __obj = js.Dynamic.literal(hostname = hostname.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (!js.isUndefined(failOnUnresolvedHostName)) __obj.updateDynamic("failOnUnresolvedHostName")(failOnUnresolvedHostName.asInstanceOf[js.Any])
     if (hostIPAddressCacheExpires != null) __obj.updateDynamic("hostIPAddressCacheExpires")(hostIPAddressCacheExpires.asInstanceOf[js.Any])
     if (maxUnresolvedHostNameFail != null) __obj.updateDynamic("maxUnresolvedHostNameFail")(maxUnresolvedHostNameFail.asInstanceOf[js.Any])
-    if (publicIpUrl != null) __obj.updateDynamic("publicIpUrl")(publicIpUrl)
-    if (updateIpUrl != null) __obj.updateDynamic("updateIpUrl")(updateIpUrl)
-    if (!js.isUndefined(useHostIPAddressCache)) __obj.updateDynamic("useHostIPAddressCache")(useHostIPAddressCache)
-    if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent)
+    if (publicIpUrl != null) __obj.updateDynamic("publicIpUrl")(publicIpUrl.asInstanceOf[js.Any])
+    if (updateIpUrl != null) __obj.updateDynamic("updateIpUrl")(updateIpUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(useHostIPAddressCache)) __obj.updateDynamic("useHostIPAddressCache")(useHostIPAddressCache.asInstanceOf[js.Any])
+    if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent.asInstanceOf[js.Any])
     __obj.asInstanceOf[DynamicDNSOptions]
   }
 }

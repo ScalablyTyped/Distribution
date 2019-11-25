@@ -16,9 +16,9 @@ object PartialStyleRulesButtonBaseClassKey {
   @scala.inline
   def apply(disabled: CSSProperties = null, focusVisible: CSSProperties = null, root: CSSProperties = null): PartialStyleRulesButtonBaseClassKey = {
     val __obj = js.Dynamic.literal()
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled)
-    if (focusVisible != null) __obj.updateDynamic("focusVisible")(focusVisible)
-    if (root != null) __obj.updateDynamic("root")(root)
+    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (focusVisible != null) __obj.updateDynamic("focusVisible")(focusVisible.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyleRulesButtonBaseClassKey]
   }
 }

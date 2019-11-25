@@ -1,7 +1,6 @@
 package typings.postcss.postcssMod
 
 import typings.postcss.Anon_Map
-import typings.postcss.postcssStrings.root
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +17,7 @@ trait Root
     * Inherited from Container. Should always be undefined for a Root node.
     */
   var parent: Unit = js.native
-  var `type`: root = js.native
+  var `type`: typings.postcss.postcssStrings.root = js.native
   /**
     * @returns A Result instance representing the root's CSS.
     */

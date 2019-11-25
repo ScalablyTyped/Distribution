@@ -50,7 +50,7 @@ object CephFSPersistentVolumeSource {
     secretRef: SecretReference,
     user: String
   ): CephFSPersistentVolumeSource = {
-    val __obj = js.Dynamic.literal(monitors = monitors, path = path, readOnly = readOnly, secretFile = secretFile, secretRef = secretRef, user = user)
+    val __obj = js.Dynamic.literal(monitors = monitors.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], readOnly = readOnly.asInstanceOf[js.Any], secretFile = secretFile.asInstanceOf[js.Any], secretRef = secretRef.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CephFSPersistentVolumeSource]
   }

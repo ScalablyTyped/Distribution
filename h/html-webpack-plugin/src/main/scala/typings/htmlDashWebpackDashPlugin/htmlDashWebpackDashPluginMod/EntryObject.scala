@@ -14,7 +14,7 @@ trait EntryObject extends js.Object {
 object EntryObject {
   @scala.inline
   def apply(entryName: String, path: String): EntryObject = {
-    val __obj = js.Dynamic.literal(entryName = entryName, path = path)
+    val __obj = js.Dynamic.literal(entryName = entryName.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EntryObject]
   }

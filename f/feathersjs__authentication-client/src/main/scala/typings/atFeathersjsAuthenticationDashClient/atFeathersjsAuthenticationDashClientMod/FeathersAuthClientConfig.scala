@@ -29,14 +29,14 @@ object FeathersAuthClientConfig {
     storageKey: String = null
   ): FeathersAuthClientConfig = {
     val __obj = js.Dynamic.literal()
-    if (cookie != null) __obj.updateDynamic("cookie")(cookie)
-    if (entity != null) __obj.updateDynamic("entity")(entity)
-    if (header != null) __obj.updateDynamic("header")(header)
-    if (jwtStrategy != null) __obj.updateDynamic("jwtStrategy")(jwtStrategy)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (service != null) __obj.updateDynamic("service")(service)
-    if (storage != null) __obj.updateDynamic("storage")(storage)
-    if (storageKey != null) __obj.updateDynamic("storageKey")(storageKey)
+    if (cookie != null) __obj.updateDynamic("cookie")(cookie.asInstanceOf[js.Any])
+    if (entity != null) __obj.updateDynamic("entity")(entity.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (jwtStrategy != null) __obj.updateDynamic("jwtStrategy")(jwtStrategy.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
+    if (storage != null) __obj.updateDynamic("storage")(storage.asInstanceOf[js.Any])
+    if (storageKey != null) __obj.updateDynamic("storageKey")(storageKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeathersAuthClientConfig]
   }
 }

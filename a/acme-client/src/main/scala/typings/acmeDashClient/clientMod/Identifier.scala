@@ -12,8 +12,8 @@ trait Identifier extends js.Object {
 object Identifier {
   @scala.inline
   def apply(`type`: String, value: String): Identifier = {
-    val __obj = js.Dynamic.literal(value = value)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Identifier]
   }
 }

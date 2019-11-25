@@ -14,8 +14,8 @@ trait EmitResult extends js.Object {
 object EmitResult {
   @scala.inline
   def apply(diagnostics: js.Array[Diagnostic], emitSkipped: Boolean, emittedFiles: js.Array[String] = null): EmitResult = {
-    val __obj = js.Dynamic.literal(diagnostics = diagnostics, emitSkipped = emitSkipped)
-    if (emittedFiles != null) __obj.updateDynamic("emittedFiles")(emittedFiles)
+    val __obj = js.Dynamic.literal(diagnostics = diagnostics.asInstanceOf[js.Any], emitSkipped = emitSkipped.asInstanceOf[js.Any])
+    if (emittedFiles != null) __obj.updateDynamic("emittedFiles")(emittedFiles.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmitResult]
   }
 }

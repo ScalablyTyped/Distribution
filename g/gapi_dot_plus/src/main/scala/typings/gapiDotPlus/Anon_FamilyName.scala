@@ -23,7 +23,7 @@ object Anon_FamilyName {
     honorificSuffix: String,
     middleName: String
   ): Anon_FamilyName = {
-    val __obj = js.Dynamic.literal(familyName = familyName, formatted = formatted, givenName = givenName, honorificPrefix = honorificPrefix, honorificSuffix = honorificSuffix, middleName = middleName)
+    val __obj = js.Dynamic.literal(familyName = familyName.asInstanceOf[js.Any], formatted = formatted.asInstanceOf[js.Any], givenName = givenName.asInstanceOf[js.Any], honorificPrefix = honorificPrefix.asInstanceOf[js.Any], honorificSuffix = honorificSuffix.asInstanceOf[js.Any], middleName = middleName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FamilyName]
   }

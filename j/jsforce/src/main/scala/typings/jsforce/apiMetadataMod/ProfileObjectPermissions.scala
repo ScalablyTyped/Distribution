@@ -26,13 +26,13 @@ object ProfileObjectPermissions {
     viewAllRecords: js.UndefOr[Boolean] = js.undefined
   ): ProfileObjectPermissions = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("object")(`object`)
-    if (!js.isUndefined(allowCreate)) __obj.updateDynamic("allowCreate")(allowCreate)
-    if (!js.isUndefined(allowDelete)) __obj.updateDynamic("allowDelete")(allowDelete)
-    if (!js.isUndefined(allowEdit)) __obj.updateDynamic("allowEdit")(allowEdit)
-    if (!js.isUndefined(allowRead)) __obj.updateDynamic("allowRead")(allowRead)
-    if (!js.isUndefined(modifyAllRecords)) __obj.updateDynamic("modifyAllRecords")(modifyAllRecords)
-    if (!js.isUndefined(viewAllRecords)) __obj.updateDynamic("viewAllRecords")(viewAllRecords)
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowCreate)) __obj.updateDynamic("allowCreate")(allowCreate.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowDelete)) __obj.updateDynamic("allowDelete")(allowDelete.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowEdit)) __obj.updateDynamic("allowEdit")(allowEdit.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowRead)) __obj.updateDynamic("allowRead")(allowRead.asInstanceOf[js.Any])
+    if (!js.isUndefined(modifyAllRecords)) __obj.updateDynamic("modifyAllRecords")(modifyAllRecords.asInstanceOf[js.Any])
+    if (!js.isUndefined(viewAllRecords)) __obj.updateDynamic("viewAllRecords")(viewAllRecords.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProfileObjectPermissions]
   }
 }

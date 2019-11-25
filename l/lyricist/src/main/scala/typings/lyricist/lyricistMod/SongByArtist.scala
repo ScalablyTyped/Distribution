@@ -45,7 +45,7 @@ object SongByArtist {
     title_with_featured: String,
     url: String
   ): SongByArtist = {
-    val __obj = js.Dynamic.literal(annotation_count = annotation_count, api_path = api_path, full_title = full_title, header_image_thumbnail_url = header_image_thumbnail_url, header_image_url = header_image_url, id = id, lyrics_owner_id = lyrics_owner_id, lyrics_state = lyrics_state, path = path, primary_artist = primary_artist, pyongs_count = pyongs_count, song_art_image_thumbnail_url = song_art_image_thumbnail_url, stats = stats, title = title, title_with_featured = title_with_featured, url = url)
+    val __obj = js.Dynamic.literal(annotation_count = annotation_count.asInstanceOf[js.Any], api_path = api_path.asInstanceOf[js.Any], full_title = full_title.asInstanceOf[js.Any], header_image_thumbnail_url = header_image_thumbnail_url.asInstanceOf[js.Any], header_image_url = header_image_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], lyrics_owner_id = lyrics_owner_id.asInstanceOf[js.Any], lyrics_state = lyrics_state.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], primary_artist = primary_artist.asInstanceOf[js.Any], pyongs_count = pyongs_count.asInstanceOf[js.Any], song_art_image_thumbnail_url = song_art_image_thumbnail_url.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], title_with_featured = title_with_featured.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SongByArtist]
   }

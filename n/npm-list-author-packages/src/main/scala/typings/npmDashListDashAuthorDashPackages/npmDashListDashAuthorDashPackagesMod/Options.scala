@@ -27,10 +27,10 @@ object Options {
     protocol: http | https = null,
     registry: String = null
   ): Options = {
-    val __obj = js.Dynamic.literal(username = username)
+    val __obj = js.Dynamic.literal(username = username.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    if (registry != null) __obj.updateDynamic("registry")(registry)
+    if (registry != null) __obj.updateDynamic("registry")(registry.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -26,10 +26,10 @@ object AsObject {
     assertionFailure: typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.AssertionFailure.AsObject = null,
     referenceError: typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.DynamicReferenceError.AsObject = null
   ): AsObject = {
-    val __obj = js.Dynamic.literal(runtimeStatus = runtimeStatus)
-    if (arithmeticError != null) __obj.updateDynamic("arithmeticError")(arithmeticError)
-    if (assertionFailure != null) __obj.updateDynamic("assertionFailure")(assertionFailure)
-    if (referenceError != null) __obj.updateDynamic("referenceError")(referenceError)
+    val __obj = js.Dynamic.literal(runtimeStatus = runtimeStatus.asInstanceOf[js.Any])
+    if (arithmeticError != null) __obj.updateDynamic("arithmeticError")(arithmeticError.asInstanceOf[js.Any])
+    if (assertionFailure != null) __obj.updateDynamic("assertionFailure")(assertionFailure.asInstanceOf[js.Any])
+    if (referenceError != null) __obj.updateDynamic("referenceError")(referenceError.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsObject]
   }
 }

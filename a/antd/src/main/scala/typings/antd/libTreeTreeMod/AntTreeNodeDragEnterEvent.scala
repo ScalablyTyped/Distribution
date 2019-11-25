@@ -18,7 +18,7 @@ object AntTreeNodeDragEnterEvent {
     expandedKeys: js.Array[String],
     node: AntTreeNode
   ): AntTreeNodeDragEnterEvent = {
-    val __obj = js.Dynamic.literal(event = event, expandedKeys = expandedKeys, node = node)
+    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], expandedKeys = expandedKeys.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AntTreeNodeDragEnterEvent]
   }

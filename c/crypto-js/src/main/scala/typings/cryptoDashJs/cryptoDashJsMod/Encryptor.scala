@@ -10,8 +10,8 @@ trait Encryptor extends js.Object {
 
 object Encryptor {
   @scala.inline
-  def apply(finalize: () => String, process: String => String): Encryptor = {
-    val __obj = js.Dynamic.literal(finalize = js.Any.fromFunction0(finalize), process = js.Any.fromFunction1(process))
+  def apply(process: String => String): Encryptor = {
+    val __obj = js.Dynamic.literal(process = js.Any.fromFunction1(process))
   
     __obj.asInstanceOf[Encryptor]
   }

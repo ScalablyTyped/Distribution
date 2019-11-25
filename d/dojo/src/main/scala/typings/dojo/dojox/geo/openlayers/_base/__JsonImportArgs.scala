@@ -31,7 +31,7 @@ trait __JsonImportArgs extends js.Object {
 object __JsonImportArgs {
   @scala.inline
   def apply(error: js.Function, nextFeature: js.Function, url: String): __JsonImportArgs = {
-    val __obj = js.Dynamic.literal(error = error, nextFeature = nextFeature, url = url)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], nextFeature = nextFeature.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[__JsonImportArgs]
   }

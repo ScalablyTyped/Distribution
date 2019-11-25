@@ -46,7 +46,7 @@ object ReplicaSetStatus {
     readyReplicas: Double,
     replicas: Double
   ): ReplicaSetStatus = {
-    val __obj = js.Dynamic.literal(availableReplicas = availableReplicas, conditions = conditions, fullyLabeledReplicas = fullyLabeledReplicas, observedGeneration = observedGeneration, readyReplicas = readyReplicas, replicas = replicas)
+    val __obj = js.Dynamic.literal(availableReplicas = availableReplicas.asInstanceOf[js.Any], conditions = conditions.asInstanceOf[js.Any], fullyLabeledReplicas = fullyLabeledReplicas.asInstanceOf[js.Any], observedGeneration = observedGeneration.asInstanceOf[js.Any], readyReplicas = readyReplicas.asInstanceOf[js.Any], replicas = replicas.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReplicaSetStatus]
   }

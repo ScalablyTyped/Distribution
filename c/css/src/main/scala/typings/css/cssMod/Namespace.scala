@@ -21,10 +21,10 @@ object Namespace {
     `type`: String = null
   ): Namespace = {
     val __obj = js.Dynamic.literal()
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Namespace]
   }
 }

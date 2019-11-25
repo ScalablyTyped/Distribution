@@ -21,8 +21,8 @@ object StackEvent {
     tabSwitch: Boolean,
     animation: NavDirection = null
   ): StackEvent = {
-    val __obj = js.Dynamic.literal(direction = direction, enteringView = enteringView, tabSwitch = tabSwitch)
-    if (animation != null) __obj.updateDynamic("animation")(animation)
+    val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], enteringView = enteringView.asInstanceOf[js.Any], tabSwitch = tabSwitch.asInstanceOf[js.Any])
+    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackEvent]
   }
 }

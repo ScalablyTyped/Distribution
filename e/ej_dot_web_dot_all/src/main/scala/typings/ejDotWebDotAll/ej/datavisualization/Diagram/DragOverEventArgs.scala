@@ -40,13 +40,13 @@ object DragOverEventArgs {
     target: js.Any = null
   ): DragOverEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowDrop)) __obj.updateDynamic("allowDrop")(allowDrop)
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId)
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (newValue != null) __obj.updateDynamic("newValue")(newValue)
-    if (oldValue != null) __obj.updateDynamic("oldValue")(oldValue)
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (!js.isUndefined(allowDrop)) __obj.updateDynamic("allowDrop")(allowDrop.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (newValue != null) __obj.updateDynamic("newValue")(newValue.asInstanceOf[js.Any])
+    if (oldValue != null) __obj.updateDynamic("oldValue")(oldValue.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[DragOverEventArgs]
   }
 }

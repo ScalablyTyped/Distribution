@@ -29,13 +29,13 @@ object ChatOptions {
   ): ChatOptions = {
     val __obj = js.Dynamic.literal()
     if (actionClick != null) __obj.updateDynamic("actionClick")(js.Any.fromFunction1(actionClick))
-    if (messages != null) __obj.updateDynamic("messages")(messages)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (post != null) __obj.updateDynamic("post")(js.Any.fromFunction1(post))
     if (sendMessage != null) __obj.updateDynamic("sendMessage")(js.Any.fromFunction1(sendMessage))
     if (typingEnd != null) __obj.updateDynamic("typingEnd")(js.Any.fromFunction1(typingEnd))
     if (typingStart != null) __obj.updateDynamic("typingStart")(js.Any.fromFunction1(typingStart))
-    if (user != null) __obj.updateDynamic("user")(user)
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChatOptions]
   }
 }

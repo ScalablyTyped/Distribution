@@ -18,7 +18,7 @@ object StoreSpec {
     initialize: (/* instance */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Object]) => Unit = null
   ): StoreSpec = {
     val __obj = js.Dynamic.literal()
-    if (actions != null) __obj.updateDynamic("actions")(actions)
+    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
     if (initialize != null) __obj.updateDynamic("initialize")(js.Any.fromFunction2(initialize))
     __obj.asInstanceOf[StoreSpec]
   }

@@ -36,13 +36,13 @@ object IDocument {
     rawContent: Uint8Array = null
   ): IDocument = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (contentUri != null) __obj.updateDynamic("contentUri")(contentUri)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (knowledgeTypes != null) __obj.updateDynamic("knowledgeTypes")(knowledgeTypes)
-    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (rawContent != null) __obj.updateDynamic("rawContent")(rawContent)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (contentUri != null) __obj.updateDynamic("contentUri")(contentUri.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (knowledgeTypes != null) __obj.updateDynamic("knowledgeTypes")(knowledgeTypes.asInstanceOf[js.Any])
+    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (rawContent != null) __obj.updateDynamic("rawContent")(rawContent.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDocument]
   }
 }

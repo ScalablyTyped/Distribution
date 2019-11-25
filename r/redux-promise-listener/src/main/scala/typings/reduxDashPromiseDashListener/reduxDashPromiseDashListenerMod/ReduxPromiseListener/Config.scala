@@ -24,7 +24,7 @@ object Config {
     getPayload: /* action */ AnyAction => _ = null,
     setPayload: (/* action */ AnyAction, /* payload */ js.Any) => AnyAction = null
   ): Config = {
-    val __obj = js.Dynamic.literal(reject = reject.asInstanceOf[js.Any], resolve = resolve.asInstanceOf[js.Any], start = start)
+    val __obj = js.Dynamic.literal(reject = reject.asInstanceOf[js.Any], resolve = resolve.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     if (getError != null) __obj.updateDynamic("getError")(js.Any.fromFunction1(getError))
     if (getPayload != null) __obj.updateDynamic("getPayload")(js.Any.fromFunction1(getPayload))
     if (setPayload != null) __obj.updateDynamic("setPayload")(js.Any.fromFunction2(setPayload))

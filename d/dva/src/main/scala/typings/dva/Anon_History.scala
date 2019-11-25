@@ -13,8 +13,8 @@ object Anon_History {
   @scala.inline
   def apply(history: js.Object = null, initialState: js.Object = null): Anon_History = {
     val __obj = js.Dynamic.literal()
-    if (history != null) __obj.updateDynamic("history")(history)
-    if (initialState != null) __obj.updateDynamic("initialState")(initialState)
+    if (history != null) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
+    if (initialState != null) __obj.updateDynamic("initialState")(initialState.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_History]
   }
 }

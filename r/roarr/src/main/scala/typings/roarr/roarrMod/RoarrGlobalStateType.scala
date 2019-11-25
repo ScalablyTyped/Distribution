@@ -12,7 +12,7 @@ trait RoarrGlobalStateType extends WriterType {
 object RoarrGlobalStateType {
   @scala.inline
   def apply(sequence: Double, versions: js.Array[String], write: String => Unit): RoarrGlobalStateType = {
-    val __obj = js.Dynamic.literal(sequence = sequence, versions = versions, write = js.Any.fromFunction1(write))
+    val __obj = js.Dynamic.literal(sequence = sequence.asInstanceOf[js.Any], versions = versions.asInstanceOf[js.Any], write = js.Any.fromFunction1(write))
   
     __obj.asInstanceOf[RoarrGlobalStateType]
   }

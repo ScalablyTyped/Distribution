@@ -13,7 +13,7 @@ trait ClusterMaster extends js.Object {
 object ClusterMaster {
   @scala.inline
   def apply(pid: Double, startTime: Double, setSize: Int | Double = null): ClusterMaster = {
-    val __obj = js.Dynamic.literal(pid = pid, startTime = startTime)
+    val __obj = js.Dynamic.literal(pid = pid.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
     if (setSize != null) __obj.updateDynamic("setSize")(setSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterMaster]
   }

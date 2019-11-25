@@ -38,11 +38,11 @@ object ProviderResourceType {
     resourceType: String = null
   ): ProviderResourceType = {
     val __obj = js.Dynamic.literal()
-    if (aliases != null) __obj.updateDynamic("aliases")(aliases)
-    if (apiVersions != null) __obj.updateDynamic("apiVersions")(apiVersions)
-    if (locations != null) __obj.updateDynamic("locations")(locations)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType)
+    if (aliases != null) __obj.updateDynamic("aliases")(aliases.asInstanceOf[js.Any])
+    if (apiVersions != null) __obj.updateDynamic("apiVersions")(apiVersions.asInstanceOf[js.Any])
+    if (locations != null) __obj.updateDynamic("locations")(locations.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProviderResourceType]
   }
 }

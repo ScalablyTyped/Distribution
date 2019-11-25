@@ -13,8 +13,8 @@ object AccountIdentifier {
   @scala.inline
   def apply(aggregatorId: String = null, merchantId: String = null): AccountIdentifier = {
     val __obj = js.Dynamic.literal()
-    if (aggregatorId != null) __obj.updateDynamic("aggregatorId")(aggregatorId)
-    if (merchantId != null) __obj.updateDynamic("merchantId")(merchantId)
+    if (aggregatorId != null) __obj.updateDynamic("aggregatorId")(aggregatorId.asInstanceOf[js.Any])
+    if (merchantId != null) __obj.updateDynamic("merchantId")(merchantId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountIdentifier]
   }
 }

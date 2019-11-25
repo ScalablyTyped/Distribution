@@ -14,8 +14,8 @@ object Config {
   @scala.inline
   def apply(params: StringDictionary[js.Any] = null, template: String = null): Config = {
     val __obj = js.Dynamic.literal()
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (template != null) __obj.updateDynamic("template")(template)
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

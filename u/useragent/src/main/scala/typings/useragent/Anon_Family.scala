@@ -14,10 +14,10 @@ trait Anon_Family extends js.Object {
 object Anon_Family {
   @scala.inline
   def apply(family: String, major: String = null, minor: String = null, patch: String = null): Anon_Family = {
-    val __obj = js.Dynamic.literal(family = family)
-    if (major != null) __obj.updateDynamic("major")(major)
-    if (minor != null) __obj.updateDynamic("minor")(minor)
-    if (patch != null) __obj.updateDynamic("patch")(patch)
+    val __obj = js.Dynamic.literal(family = family.asInstanceOf[js.Any])
+    if (major != null) __obj.updateDynamic("major")(major.asInstanceOf[js.Any])
+    if (minor != null) __obj.updateDynamic("minor")(minor.asInstanceOf[js.Any])
+    if (patch != null) __obj.updateDynamic("patch")(patch.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Family]
   }
 }

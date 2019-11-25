@@ -14,9 +14,9 @@ trait Anon_Config extends js.Object {
 object Anon_Config {
   @scala.inline
   def apply(uri: String, value: Double, config: String = null, direction: String = null): Anon_Config = {
-    val __obj = js.Dynamic.literal(uri = uri, value = value)
-    if (config != null) __obj.updateDynamic("config")(config)
-    if (direction != null) __obj.updateDynamic("direction")(direction)
+    val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Config]
   }
 }

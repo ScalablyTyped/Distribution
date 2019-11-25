@@ -86,7 +86,7 @@ object Anon_EpicDiscussions {
     GroupVariables: Instantiable1[js.UndefOr[/* options */ BaseServiceOptions], GroupVariables],
     Groups: Instantiable0[Groups]
   ): Anon_EpicDiscussions = {
-    val __obj = js.Dynamic.literal(EpicDiscussions = EpicDiscussions, EpicIssues = EpicIssues, EpicNotes = EpicNotes, Epics = Epics, GroupAccessRequests = GroupAccessRequests, GroupBadges = GroupBadges, GroupCustomAttributes = GroupCustomAttributes, GroupIssueBoards = GroupIssueBoards, GroupLabels = GroupLabels, GroupMembers = GroupMembers, GroupMilestones = GroupMilestones, GroupProjects = GroupProjects, GroupVariables = GroupVariables, Groups = Groups)
+    val __obj = js.Dynamic.literal(EpicDiscussions = EpicDiscussions.asInstanceOf[js.Any], EpicIssues = EpicIssues.asInstanceOf[js.Any], EpicNotes = EpicNotes.asInstanceOf[js.Any], Epics = Epics.asInstanceOf[js.Any], GroupAccessRequests = GroupAccessRequests.asInstanceOf[js.Any], GroupBadges = GroupBadges.asInstanceOf[js.Any], GroupCustomAttributes = GroupCustomAttributes.asInstanceOf[js.Any], GroupIssueBoards = GroupIssueBoards.asInstanceOf[js.Any], GroupLabels = GroupLabels.asInstanceOf[js.Any], GroupMembers = GroupMembers.asInstanceOf[js.Any], GroupMilestones = GroupMilestones.asInstanceOf[js.Any], GroupProjects = GroupProjects.asInstanceOf[js.Any], GroupVariables = GroupVariables.asInstanceOf[js.Any], Groups = Groups.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EpicDiscussions]
   }

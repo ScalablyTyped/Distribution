@@ -22,10 +22,10 @@ object GetWorkerQueryProps {
   @scala.inline
   def apply(filter: String = null, phones: String = null, states: String = null, teams: String = null): GetWorkerQueryProps = {
     val __obj = js.Dynamic.literal()
-    if (filter != null) __obj.updateDynamic("filter")(filter)
-    if (phones != null) __obj.updateDynamic("phones")(phones)
-    if (states != null) __obj.updateDynamic("states")(states)
-    if (teams != null) __obj.updateDynamic("teams")(teams)
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (phones != null) __obj.updateDynamic("phones")(phones.asInstanceOf[js.Any])
+    if (states != null) __obj.updateDynamic("states")(states.asInstanceOf[js.Any])
+    if (teams != null) __obj.updateDynamic("teams")(teams.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetWorkerQueryProps]
   }
 }

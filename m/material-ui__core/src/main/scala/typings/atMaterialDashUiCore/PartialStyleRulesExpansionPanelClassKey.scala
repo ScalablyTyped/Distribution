@@ -22,10 +22,10 @@ object PartialStyleRulesExpansionPanelClassKey {
     rounded: CSSProperties = null
   ): PartialStyleRulesExpansionPanelClassKey = {
     val __obj = js.Dynamic.literal()
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled)
-    if (expanded != null) __obj.updateDynamic("expanded")(expanded)
-    if (root != null) __obj.updateDynamic("root")(root)
-    if (rounded != null) __obj.updateDynamic("rounded")(rounded)
+    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (expanded != null) __obj.updateDynamic("expanded")(expanded.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (rounded != null) __obj.updateDynamic("rounded")(rounded.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyleRulesExpansionPanelClassKey]
   }
 }

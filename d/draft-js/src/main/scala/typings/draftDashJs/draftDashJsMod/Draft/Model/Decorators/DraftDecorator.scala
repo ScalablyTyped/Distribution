@@ -36,8 +36,8 @@ object DraftDecorator {
     strategy: (typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.ContentBlock, js.Function2[/* start */ Double, /* end */ Double, Unit], typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.ContentState) => Unit,
     props: js.Object = null
   ): DraftDecorator = {
-    val __obj = js.Dynamic.literal(component = component, strategy = js.Any.fromFunction3(strategy))
-    if (props != null) __obj.updateDynamic("props")(props)
+    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], strategy = js.Any.fromFunction3(strategy))
+    if (props != null) __obj.updateDynamic("props")(props.asInstanceOf[js.Any])
     __obj.asInstanceOf[DraftDecorator]
   }
 }

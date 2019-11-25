@@ -21,7 +21,7 @@ object ListItemActionProps {
   def apply(action: ReactNode = null, theme: ListItemActionTheme = null): ListItemActionProps = {
     val __obj = js.Dynamic.literal()
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListItemActionProps]
   }
 }

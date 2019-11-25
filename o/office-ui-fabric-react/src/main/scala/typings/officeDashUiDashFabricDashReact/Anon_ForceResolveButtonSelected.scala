@@ -18,8 +18,8 @@ object Anon_ForceResolveButtonSelected {
     searchForMoreButtonSelected: js.UndefOr[Boolean] = js.undefined
   ): Anon_ForceResolveButtonSelected = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(forceResolveButtonSelected)) __obj.updateDynamic("forceResolveButtonSelected")(forceResolveButtonSelected)
-    if (!js.isUndefined(searchForMoreButtonSelected)) __obj.updateDynamic("searchForMoreButtonSelected")(searchForMoreButtonSelected)
+    if (!js.isUndefined(forceResolveButtonSelected)) __obj.updateDynamic("forceResolveButtonSelected")(forceResolveButtonSelected.asInstanceOf[js.Any])
+    if (!js.isUndefined(searchForMoreButtonSelected)) __obj.updateDynamic("searchForMoreButtonSelected")(searchForMoreButtonSelected.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ForceResolveButtonSelected]
   }
 }

@@ -25,7 +25,7 @@ object PlusIoFileEvent {
   @scala.inline
   def apply(target: PlusIoDirectoryEntry = null): PlusIoFileEvent = {
     val __obj = js.Dynamic.literal()
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusIoFileEvent]
   }
 }

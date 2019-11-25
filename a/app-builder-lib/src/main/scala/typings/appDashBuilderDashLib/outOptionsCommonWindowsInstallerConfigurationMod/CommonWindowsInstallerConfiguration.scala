@@ -51,12 +51,12 @@ object CommonWindowsInstallerConfiguration {
   ): CommonWindowsInstallerConfiguration = {
     val __obj = js.Dynamic.literal()
     if (createDesktopShortcut != null) __obj.updateDynamic("createDesktopShortcut")(createDesktopShortcut.asInstanceOf[js.Any])
-    if (!js.isUndefined(createStartMenuShortcut)) __obj.updateDynamic("createStartMenuShortcut")(createStartMenuShortcut)
+    if (!js.isUndefined(createStartMenuShortcut)) __obj.updateDynamic("createStartMenuShortcut")(createStartMenuShortcut.asInstanceOf[js.Any])
     if (menuCategory != null) __obj.updateDynamic("menuCategory")(menuCategory.asInstanceOf[js.Any])
-    if (!js.isUndefined(oneClick)) __obj.updateDynamic("oneClick")(oneClick)
-    if (!js.isUndefined(perMachine)) __obj.updateDynamic("perMachine")(perMachine)
-    if (!js.isUndefined(runAfterFinish)) __obj.updateDynamic("runAfterFinish")(runAfterFinish)
-    if (shortcutName != null) __obj.updateDynamic("shortcutName")(shortcutName)
+    if (!js.isUndefined(oneClick)) __obj.updateDynamic("oneClick")(oneClick.asInstanceOf[js.Any])
+    if (!js.isUndefined(perMachine)) __obj.updateDynamic("perMachine")(perMachine.asInstanceOf[js.Any])
+    if (!js.isUndefined(runAfterFinish)) __obj.updateDynamic("runAfterFinish")(runAfterFinish.asInstanceOf[js.Any])
+    if (shortcutName != null) __obj.updateDynamic("shortcutName")(shortcutName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommonWindowsInstallerConfiguration]
   }
 }

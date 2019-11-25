@@ -13,7 +13,7 @@ trait NamespaceLocateResult[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespa
 object NamespaceLocateResult {
   @scala.inline
   def apply[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](args: js.Array[String], obj: C | N, path: js.Array[CommandPathItem[C, N, M, I, O]]): NamespaceLocateResult[C, N, M, I, O] = {
-    val __obj = js.Dynamic.literal(args = args, obj = obj.asInstanceOf[js.Any], path = path)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], obj = obj.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NamespaceLocateResult[C, N, M, I, O]]
   }

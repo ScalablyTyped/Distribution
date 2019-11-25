@@ -33,10 +33,10 @@ object ColorizeOptions {
     message: js.UndefOr[Boolean] = js.undefined
   ): ColorizeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(all)) __obj.updateDynamic("all")(all)
-    if (colors != null) __obj.updateDynamic("colors")(colors)
-    if (!js.isUndefined(level)) __obj.updateDynamic("level")(level)
-    if (!js.isUndefined(message)) __obj.updateDynamic("message")(message)
+    if (!js.isUndefined(all)) __obj.updateDynamic("all")(all.asInstanceOf[js.Any])
+    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
+    if (!js.isUndefined(level)) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    if (!js.isUndefined(message)) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColorizeOptions]
   }
 }

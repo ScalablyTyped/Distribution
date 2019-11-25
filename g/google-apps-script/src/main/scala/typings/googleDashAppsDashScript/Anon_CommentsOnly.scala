@@ -22,11 +22,11 @@ object Anon_CommentsOnly {
     validationsOnly: js.UndefOr[Boolean] = js.undefined
   ): Anon_CommentsOnly = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(commentsOnly)) __obj.updateDynamic("commentsOnly")(commentsOnly)
-    if (!js.isUndefined(contentsOnly)) __obj.updateDynamic("contentsOnly")(contentsOnly)
-    if (!js.isUndefined(formatOnly)) __obj.updateDynamic("formatOnly")(formatOnly)
-    if (!js.isUndefined(skipFilteredRows)) __obj.updateDynamic("skipFilteredRows")(skipFilteredRows)
-    if (!js.isUndefined(validationsOnly)) __obj.updateDynamic("validationsOnly")(validationsOnly)
+    if (!js.isUndefined(commentsOnly)) __obj.updateDynamic("commentsOnly")(commentsOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(contentsOnly)) __obj.updateDynamic("contentsOnly")(contentsOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(formatOnly)) __obj.updateDynamic("formatOnly")(formatOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipFilteredRows)) __obj.updateDynamic("skipFilteredRows")(skipFilteredRows.asInstanceOf[js.Any])
+    if (!js.isUndefined(validationsOnly)) __obj.updateDynamic("validationsOnly")(validationsOnly.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CommentsOnly]
   }
 }

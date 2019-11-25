@@ -15,7 +15,7 @@ trait Anon_NetworkAvailable extends js.Object {
 object Anon_NetworkAvailable {
   @scala.inline
   def apply(networkAvailable: Boolean, networkType: NetworkType): Anon_NetworkAvailable = {
-    val __obj = js.Dynamic.literal(networkAvailable = networkAvailable, networkType = networkType)
+    val __obj = js.Dynamic.literal(networkAvailable = networkAvailable.asInstanceOf[js.Any], networkType = networkType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_NetworkAvailable]
   }

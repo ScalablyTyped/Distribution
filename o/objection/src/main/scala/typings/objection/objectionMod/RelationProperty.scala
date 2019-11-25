@@ -14,7 +14,7 @@ trait RelationProperty extends js.Object {
 object RelationProperty {
   @scala.inline
   def apply(cols: js.Array[String], modelClass: ModelClass[_], props: js.Array[String], size: Double): RelationProperty = {
-    val __obj = js.Dynamic.literal(cols = cols, modelClass = modelClass, props = props, size = size)
+    val __obj = js.Dynamic.literal(cols = cols.asInstanceOf[js.Any], modelClass = modelClass.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RelationProperty]
   }

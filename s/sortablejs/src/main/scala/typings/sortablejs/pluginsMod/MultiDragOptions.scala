@@ -40,11 +40,11 @@ object MultiDragOptions {
     selectedClass: String = null
   ): MultiDragOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(multiDrag)) __obj.updateDynamic("multiDrag")(multiDrag)
-    if (multiDragKey != null) __obj.updateDynamic("multiDragKey")(multiDragKey)
+    if (!js.isUndefined(multiDrag)) __obj.updateDynamic("multiDrag")(multiDrag.asInstanceOf[js.Any])
+    if (multiDragKey != null) __obj.updateDynamic("multiDragKey")(multiDragKey.asInstanceOf[js.Any])
     if (onDeselect != null) __obj.updateDynamic("onDeselect")(js.Any.fromFunction1(onDeselect))
     if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
-    if (selectedClass != null) __obj.updateDynamic("selectedClass")(selectedClass)
+    if (selectedClass != null) __obj.updateDynamic("selectedClass")(selectedClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiDragOptions]
   }
 }

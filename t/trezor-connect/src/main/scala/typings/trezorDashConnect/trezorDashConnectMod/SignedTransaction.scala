@@ -13,8 +13,8 @@ trait SignedTransaction extends js.Object {
 object SignedTransaction {
   @scala.inline
   def apply(serializedTx: String, signatures: js.Array[String], txId: String = null): SignedTransaction = {
-    val __obj = js.Dynamic.literal(serializedTx = serializedTx, signatures = signatures)
-    if (txId != null) __obj.updateDynamic("txId")(txId)
+    val __obj = js.Dynamic.literal(serializedTx = serializedTx.asInstanceOf[js.Any], signatures = signatures.asInstanceOf[js.Any])
+    if (txId != null) __obj.updateDynamic("txId")(txId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignedTransaction]
   }
 }

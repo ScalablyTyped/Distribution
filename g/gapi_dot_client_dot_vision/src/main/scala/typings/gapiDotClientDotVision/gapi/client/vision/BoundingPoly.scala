@@ -13,7 +13,7 @@ object BoundingPoly {
   @scala.inline
   def apply(vertices: js.Array[Vertex] = null): BoundingPoly = {
     val __obj = js.Dynamic.literal()
-    if (vertices != null) __obj.updateDynamic("vertices")(vertices)
+    if (vertices != null) __obj.updateDynamic("vertices")(vertices.asInstanceOf[js.Any])
     __obj.asInstanceOf[BoundingPoly]
   }
 }

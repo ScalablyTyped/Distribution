@@ -17,7 +17,7 @@ object LogQueryResponse {
   def apply(matching_results: Int | Double = null, results: js.Array[LogQueryResponseResult] = null): LogQueryResponse = {
     val __obj = js.Dynamic.literal()
     if (matching_results != null) __obj.updateDynamic("matching_results")(matching_results.asInstanceOf[js.Any])
-    if (results != null) __obj.updateDynamic("results")(results)
+    if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogQueryResponse]
   }
 }

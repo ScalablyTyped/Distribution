@@ -38,11 +38,11 @@ object RegexFilter {
     style: CSSProperties = null
   ): RegexFilter = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegexFilter]
   }
 }

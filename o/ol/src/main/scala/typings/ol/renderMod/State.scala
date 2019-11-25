@@ -26,7 +26,7 @@ object State {
     resolution: Double,
     rotation: Double
   ): State = {
-    val __obj = js.Dynamic.literal(context = context, feature = feature, geometry = geometry, pixelRatio = pixelRatio, resolution = resolution, rotation = rotation)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], feature = feature.asInstanceOf[js.Any], geometry = geometry.asInstanceOf[js.Any], pixelRatio = pixelRatio.asInstanceOf[js.Any], resolution = resolution.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[State]
   }

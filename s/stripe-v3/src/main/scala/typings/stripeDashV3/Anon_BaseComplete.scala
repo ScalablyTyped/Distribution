@@ -24,11 +24,11 @@ object Anon_BaseComplete {
     paymentRequestButton: PaymentRequestButtonStyleOptions = null
   ): Anon_BaseComplete = {
     val __obj = js.Dynamic.literal()
-    if (base != null) __obj.updateDynamic("base")(base)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (empty != null) __obj.updateDynamic("empty")(empty)
-    if (invalid != null) __obj.updateDynamic("invalid")(invalid)
-    if (paymentRequestButton != null) __obj.updateDynamic("paymentRequestButton")(paymentRequestButton)
+    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
+    if (complete != null) __obj.updateDynamic("complete")(complete.asInstanceOf[js.Any])
+    if (empty != null) __obj.updateDynamic("empty")(empty.asInstanceOf[js.Any])
+    if (invalid != null) __obj.updateDynamic("invalid")(invalid.asInstanceOf[js.Any])
+    if (paymentRequestButton != null) __obj.updateDynamic("paymentRequestButton")(paymentRequestButton.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BaseComplete]
   }
 }

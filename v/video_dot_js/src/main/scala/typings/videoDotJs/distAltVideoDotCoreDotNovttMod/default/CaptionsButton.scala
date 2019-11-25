@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import typings.videoDotJs.videoDotJsMod.videojs.Component.ReadyCallback
-import typings.videoDotJs.videoDotJsMod.videojs.Player
 import typings.videoDotJs.videoDotJsMod.videojs.TrackButtonOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -25,14 +24,17 @@ object CaptionsButton
   * @param [ready]
   *        The function to call when this function is ready.
   */
-Instantiable1[/* player */ Player, typings.videoDotJs.videoDotJsMod.videojs.CaptionsButton]
+Instantiable1[
+      /* player */ typings.videoDotJs.videoDotJsMod.videojs.Player, 
+      typings.videoDotJs.videoDotJsMod.videojs.CaptionsButton
+    ]
      with Instantiable2[
-      /* player */ Player, 
+      /* player */ typings.videoDotJs.videoDotJsMod.videojs.Player, 
       /* options */ TrackButtonOptions, 
       typings.videoDotJs.videoDotJsMod.videojs.CaptionsButton
     ]
      with Instantiable3[
-      /* player */ Player, 
+      /* player */ typings.videoDotJs.videoDotJsMod.videojs.Player, 
       /* options */ TrackButtonOptions, 
       /* ready */ ReadyCallback, 
       typings.videoDotJs.videoDotJsMod.videojs.CaptionsButton

@@ -17,9 +17,9 @@ object ErrorHandler {
   @scala.inline
   def apply(errorCode: String = null, mimeType: String = null, staticFile: String = null): ErrorHandler = {
     val __obj = js.Dynamic.literal()
-    if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode)
-    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType)
-    if (staticFile != null) __obj.updateDynamic("staticFile")(staticFile)
+    if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode.asInstanceOf[js.Any])
+    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
+    if (staticFile != null) __obj.updateDynamic("staticFile")(staticFile.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorHandler]
   }
 }

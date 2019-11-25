@@ -19,7 +19,7 @@ trait IPluginLayout extends JSONObject {
 object IPluginLayout {
   @scala.inline
   def apply(plugin: String, sizes: js.Array[Double]): IPluginLayout = {
-    val __obj = js.Dynamic.literal(plugin = plugin, sizes = sizes)
+    val __obj = js.Dynamic.literal(plugin = plugin.asInstanceOf[js.Any], sizes = sizes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IPluginLayout]
   }

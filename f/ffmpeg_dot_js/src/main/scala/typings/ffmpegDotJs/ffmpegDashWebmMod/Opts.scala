@@ -11,7 +11,7 @@ trait Opts extends js.Object {
 object Opts {
   @scala.inline
   def apply(root: String): Opts = {
-    val __obj = js.Dynamic.literal(root = root)
+    val __obj = js.Dynamic.literal(root = root.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Opts]
   }

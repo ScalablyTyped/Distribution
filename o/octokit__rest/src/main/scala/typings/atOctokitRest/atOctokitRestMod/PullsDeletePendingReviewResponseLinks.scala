@@ -15,7 +15,7 @@ object PullsDeletePendingReviewResponseLinks {
     html: PullsDeletePendingReviewResponseLinksHtml,
     pull_request: PullsDeletePendingReviewResponseLinksPullRequest
   ): PullsDeletePendingReviewResponseLinks = {
-    val __obj = js.Dynamic.literal(html = html, pull_request = pull_request)
+    val __obj = js.Dynamic.literal(html = html.asInstanceOf[js.Any], pull_request = pull_request.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PullsDeletePendingReviewResponseLinks]
   }

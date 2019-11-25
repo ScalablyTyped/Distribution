@@ -56,7 +56,7 @@ object Anon_AmpmNames {
     monthNamesShort: js.Array[String],
     utc: Boolean
   ): Anon_AmpmNames = {
-    val __obj = js.Dynamic.literal(ampmNames = ampmNames, attribute = attribute, dayNames = dayNames, dayNamesShort = dayNamesShort, formatAttribute = formatAttribute, getSuffix = js.Any.fromFunction1(getSuffix), monthNames = monthNames, monthNamesShort = monthNamesShort, utc = utc)
+    val __obj = js.Dynamic.literal(ampmNames = ampmNames.asInstanceOf[js.Any], attribute = attribute.asInstanceOf[js.Any], dayNames = dayNames.asInstanceOf[js.Any], dayNamesShort = dayNamesShort.asInstanceOf[js.Any], formatAttribute = formatAttribute.asInstanceOf[js.Any], getSuffix = js.Any.fromFunction1(getSuffix), monthNames = monthNames.asInstanceOf[js.Any], monthNamesShort = monthNamesShort.asInstanceOf[js.Any], utc = utc.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AmpmNames]
   }

@@ -23,10 +23,10 @@ object DrawerHeaderAccountProps {
     style: Anon_AccountContainer = null
   ): DrawerHeaderAccountProps = {
     val __obj = js.Dynamic.literal()
-    if (accounts != null) __obj.updateDynamic("accounts")(accounts)
-    if (avatar != null) __obj.updateDynamic("avatar")(avatar)
-    if (footer != null) __obj.updateDynamic("footer")(footer)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (accounts != null) __obj.updateDynamic("accounts")(accounts.asInstanceOf[js.Any])
+    if (avatar != null) __obj.updateDynamic("avatar")(avatar.asInstanceOf[js.Any])
+    if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawerHeaderAccountProps]
   }
 }

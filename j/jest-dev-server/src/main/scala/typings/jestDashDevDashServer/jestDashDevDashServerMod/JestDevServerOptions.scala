@@ -130,14 +130,14 @@ object JestDevServerOptions {
     usedPortAction: ask | error | ignore | kill = null,
     waitOnScheme: Partial[WaitOnOptions] = null
   ): JestDevServerOptions = {
-    val __obj = js.Dynamic.literal(command = command)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (host != null) __obj.updateDynamic("host")(host)
+    val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (launchTimeout != null) __obj.updateDynamic("launchTimeout")(launchTimeout.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     if (usedPortAction != null) __obj.updateDynamic("usedPortAction")(usedPortAction.asInstanceOf[js.Any])
-    if (waitOnScheme != null) __obj.updateDynamic("waitOnScheme")(waitOnScheme)
+    if (waitOnScheme != null) __obj.updateDynamic("waitOnScheme")(waitOnScheme.asInstanceOf[js.Any])
     __obj.asInstanceOf[JestDevServerOptions]
   }
 }

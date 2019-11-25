@@ -47,13 +47,13 @@ object AppBarTheme {
     title: String = null
   ): AppBarTheme = {
     val __obj = js.Dynamic.literal()
-    if (appBar != null) __obj.updateDynamic("appBar")(appBar)
-    if (fixed != null) __obj.updateDynamic("fixed")(fixed)
-    if (flat != null) __obj.updateDynamic("flat")(flat)
-    if (leftIcon != null) __obj.updateDynamic("leftIcon")(leftIcon)
-    if (rightIcon != null) __obj.updateDynamic("rightIcon")(rightIcon)
-    if (scrollHide != null) __obj.updateDynamic("scrollHide")(scrollHide)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (appBar != null) __obj.updateDynamic("appBar")(appBar.asInstanceOf[js.Any])
+    if (fixed != null) __obj.updateDynamic("fixed")(fixed.asInstanceOf[js.Any])
+    if (flat != null) __obj.updateDynamic("flat")(flat.asInstanceOf[js.Any])
+    if (leftIcon != null) __obj.updateDynamic("leftIcon")(leftIcon.asInstanceOf[js.Any])
+    if (rightIcon != null) __obj.updateDynamic("rightIcon")(rightIcon.asInstanceOf[js.Any])
+    if (scrollHide != null) __obj.updateDynamic("scrollHide")(scrollHide.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppBarTheme]
   }
 }

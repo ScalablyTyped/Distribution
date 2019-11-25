@@ -12,7 +12,7 @@ object XAxisDateTimeLabelFormatsYearOptions {
   @scala.inline
   def apply(main: String = null): XAxisDateTimeLabelFormatsYearOptions = {
     val __obj = js.Dynamic.literal()
-    if (main != null) __obj.updateDynamic("main")(main)
+    if (main != null) __obj.updateDynamic("main")(main.asInstanceOf[js.Any])
     __obj.asInstanceOf[XAxisDateTimeLabelFormatsYearOptions]
   }
 }

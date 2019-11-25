@@ -21,8 +21,8 @@ object Requester {
     put: js.Function,
     stream: js.Function = null
   ): Requester = {
-    val __obj = js.Dynamic.literal(delete = delete, get = get, post = post, put = put)
-    if (stream != null) __obj.updateDynamic("stream")(stream)
+    val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], post = post.asInstanceOf[js.Any], put = put.asInstanceOf[js.Any])
+    if (stream != null) __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])
     __obj.asInstanceOf[Requester]
   }
 }

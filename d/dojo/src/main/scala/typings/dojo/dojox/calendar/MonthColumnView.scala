@@ -1,12 +1,6 @@
 package typings.dojo.dojox.calendar
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValue
-import typings.dojo.Fn_NewValueOldValueProperty
-import typings.dojo.Fn_NewValueOldValuePropertyDate
-import typings.dojo.Fn_NewValueOldValuePropertyFunction
-import typings.dojo.Fn_NewValueOldValuePropertyNumber
 import typings.dojo.dojoStrings.attachScope
 import typings.dojo.dojoStrings.columnCount
 import typings.dojo.dojoStrings.columnHeaderFormatLength
@@ -289,42 +283,194 @@ class MonthColumnView () extends ViewBase {
     */
   def styleGridCell(node: HTMLElement, date: Date, col: Double, row: Double, renderData: js.Object): Unit = js.native
   @JSName("watch")
-  def watch_attachScope(property: attachScope, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_attachScope(
+    property: attachScope,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_columnCount(property: columnCount, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_columnCount(
+    property: columnCount,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_columnHeaderFormatLength(property: columnHeaderFormatLength, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_columnHeaderFormatLength(
+    property: columnHeaderFormatLength,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_daySize(property: daySize, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_daySize(
+    property: daySize,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_gridCellDatePattern(property: gridCellDatePattern, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_gridCellDatePattern(
+    property: gridCellDatePattern,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_horizontalGap(property: horizontalGap, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_horizontalGap(
+    property: horizontalGap,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_percentOverlap(property: percentOverlap, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_percentOverlap(
+    property: percentOverlap,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_renderData(property: renderData, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_renderData(
+    property: renderData,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_roundToDay(property: roundToDay, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_roundToDay(
+    property: roundToDay,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_scrollBarRTLPosition(property: scrollBarRTLPosition, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_scrollBarRTLPosition(
+    property: scrollBarRTLPosition,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_scrollPosition(property: scrollPosition, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_scrollPosition(
+    property: scrollPosition,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_searchContainerNode(property: searchContainerNode, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_searchContainerNode(
+    property: searchContainerNode,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_showCellLabel(property: showCellLabel, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_showCellLabel(
+    property: showCellLabel,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_showHiddenItems(property: showHiddenItems, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_showHiddenItems(
+    property: showHiddenItems,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_startDate(property: startDate, callback: Fn_NewValueOldValuePropertyDate): Anon_Unwatch = js.native
+  def watch_startDate(
+    property: startDate,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Date], 
+      /* newValue */ js.UndefOr[Date], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_styleGridCellFunc(property: styleGridCellFunc, callback: Fn_NewValueOldValuePropertyFunction): Anon_Unwatch = js.native
+  def watch_styleGridCellFunc(
+    property: styleGridCellFunc,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Function], 
+      /* newValue */ js.UndefOr[js.Function], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_templatePath(property: templatePath, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_templatePath(
+    property: templatePath,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_templateString(property: templateString, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_templateString(
+    property: templateString,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_verticalRenderer(property: verticalRenderer, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_verticalRenderer(
+    property: verticalRenderer,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

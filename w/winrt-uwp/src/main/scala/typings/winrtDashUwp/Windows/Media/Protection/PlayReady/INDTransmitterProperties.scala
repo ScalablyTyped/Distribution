@@ -46,7 +46,7 @@ object INDTransmitterProperties {
     securityVersion: Double,
     supportedFeatures: NDCertificateFeature
   ): INDTransmitterProperties = {
-    val __obj = js.Dynamic.literal(certificateType = certificateType, clientID = clientID, expirationDate = expirationDate, modelDigest = modelDigest, modelManufacturerName = modelManufacturerName, modelName = modelName, modelNumber = modelNumber, platformIdentifier = platformIdentifier, securityLevel = securityLevel, securityVersion = securityVersion, supportedFeatures = supportedFeatures)
+    val __obj = js.Dynamic.literal(certificateType = certificateType.asInstanceOf[js.Any], clientID = clientID.asInstanceOf[js.Any], expirationDate = expirationDate.asInstanceOf[js.Any], modelDigest = modelDigest.asInstanceOf[js.Any], modelManufacturerName = modelManufacturerName.asInstanceOf[js.Any], modelName = modelName.asInstanceOf[js.Any], modelNumber = modelNumber.asInstanceOf[js.Any], platformIdentifier = platformIdentifier.asInstanceOf[js.Any], securityLevel = securityLevel.asInstanceOf[js.Any], securityVersion = securityVersion.asInstanceOf[js.Any], supportedFeatures = supportedFeatures.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[INDTransmitterProperties]
   }

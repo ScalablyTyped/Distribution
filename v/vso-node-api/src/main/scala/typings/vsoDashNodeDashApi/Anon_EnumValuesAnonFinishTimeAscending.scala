@@ -11,7 +11,7 @@ trait Anon_EnumValuesAnonFinishTimeAscending extends js.Object {
 object Anon_EnumValuesAnonFinishTimeAscending {
   @scala.inline
   def apply(enumValues: Anon_FinishTimeAscending): Anon_EnumValuesAnonFinishTimeAscending = {
-    val __obj = js.Dynamic.literal(enumValues = enumValues)
+    val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EnumValuesAnonFinishTimeAscending]
   }

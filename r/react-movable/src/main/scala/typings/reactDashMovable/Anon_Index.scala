@@ -24,7 +24,7 @@ object Anon_Index {
     value: Value,
     index: Int | Double = null
   ): Anon_Index[Value] = {
-    val __obj = js.Dynamic.literal(isDragged = isDragged, isOutOfBounds = isOutOfBounds, isSelected = isSelected, props = props, value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(isDragged = isDragged.asInstanceOf[js.Any], isOutOfBounds = isOutOfBounds.asInstanceOf[js.Any], isSelected = isSelected.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Index[Value]]
   }

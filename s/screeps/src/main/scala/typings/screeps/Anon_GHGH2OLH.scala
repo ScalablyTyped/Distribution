@@ -35,7 +35,7 @@ object Anon_GHGH2OLH {
     ZH: Anon_2Dismantle,
     ZH2O: Anon_3Dismantle
   ): Anon_GHGH2OLH = {
-    val __obj = js.Dynamic.literal(GH = GH, GH2O = GH2O, LH = LH, LH2O = LH2O, UHO2 = UHO2, UO = UO, XGH2O = XGH2O, XLH2O = XLH2O, XUHO2 = XUHO2, XZH2O = XZH2O, ZH = ZH, ZH2O = ZH2O)
+    val __obj = js.Dynamic.literal(GH = GH.asInstanceOf[js.Any], GH2O = GH2O.asInstanceOf[js.Any], LH = LH.asInstanceOf[js.Any], LH2O = LH2O.asInstanceOf[js.Any], UHO2 = UHO2.asInstanceOf[js.Any], UO = UO.asInstanceOf[js.Any], XGH2O = XGH2O.asInstanceOf[js.Any], XLH2O = XLH2O.asInstanceOf[js.Any], XUHO2 = XUHO2.asInstanceOf[js.Any], XZH2O = XZH2O.asInstanceOf[js.Any], ZH = ZH.asInstanceOf[js.Any], ZH2O = ZH2O.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_GHGH2OLH]
   }

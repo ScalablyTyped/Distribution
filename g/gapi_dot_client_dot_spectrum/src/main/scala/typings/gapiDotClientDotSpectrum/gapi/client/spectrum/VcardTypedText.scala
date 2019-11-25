@@ -13,7 +13,7 @@ object VcardTypedText {
   @scala.inline
   def apply(text: String = null): VcardTypedText = {
     val __obj = js.Dynamic.literal()
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[VcardTypedText]
   }
 }

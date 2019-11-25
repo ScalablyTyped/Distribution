@@ -25,8 +25,8 @@ object DiskMoveRequest {
   @scala.inline
   def apply(destinationZone: String = null, targetDisk: String = null): DiskMoveRequest = {
     val __obj = js.Dynamic.literal()
-    if (destinationZone != null) __obj.updateDynamic("destinationZone")(destinationZone)
-    if (targetDisk != null) __obj.updateDynamic("targetDisk")(targetDisk)
+    if (destinationZone != null) __obj.updateDynamic("destinationZone")(destinationZone.asInstanceOf[js.Any])
+    if (targetDisk != null) __obj.updateDynamic("targetDisk")(targetDisk.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiskMoveRequest]
   }
 }

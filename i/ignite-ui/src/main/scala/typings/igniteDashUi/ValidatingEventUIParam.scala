@@ -23,9 +23,9 @@ object ValidatingEventUIParam {
   @scala.inline
   def apply(fieldOptions: js.Any = null, owner: js.Any = null, value: js.Any = null): ValidatingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (fieldOptions != null) __obj.updateDynamic("fieldOptions")(fieldOptions)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (fieldOptions != null) __obj.updateDynamic("fieldOptions")(fieldOptions.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidatingEventUIParam]
   }
 }

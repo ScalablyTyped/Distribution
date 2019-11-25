@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait DropDirection extends js.Object
 
+object DropDirection {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def dropdown: typings.reactDashBootstrapDashTable.reactDashBootstrapDashTableStrings.dropdown = this.cast("dropdown")
+  @scala.inline
+  def dropup: typings.reactDashBootstrapDashTable.reactDashBootstrapDashTableStrings.dropup = this.cast("dropup")
+}
+

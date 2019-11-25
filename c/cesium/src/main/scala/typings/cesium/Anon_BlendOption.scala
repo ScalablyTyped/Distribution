@@ -23,10 +23,10 @@ object Anon_BlendOption {
     scene: Scene = null
   ): Anon_BlendOption = {
     val __obj = js.Dynamic.literal()
-    if (blendOption != null) __obj.updateDynamic("blendOption")(blendOption)
-    if (!js.isUndefined(debugShowBoundingVolume)) __obj.updateDynamic("debugShowBoundingVolume")(debugShowBoundingVolume)
-    if (modelMatrix != null) __obj.updateDynamic("modelMatrix")(modelMatrix)
-    if (scene != null) __obj.updateDynamic("scene")(scene)
+    if (blendOption != null) __obj.updateDynamic("blendOption")(blendOption.asInstanceOf[js.Any])
+    if (!js.isUndefined(debugShowBoundingVolume)) __obj.updateDynamic("debugShowBoundingVolume")(debugShowBoundingVolume.asInstanceOf[js.Any])
+    if (modelMatrix != null) __obj.updateDynamic("modelMatrix")(modelMatrix.asInstanceOf[js.Any])
+    if (scene != null) __obj.updateDynamic("scene")(scene.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BlendOption]
   }
 }

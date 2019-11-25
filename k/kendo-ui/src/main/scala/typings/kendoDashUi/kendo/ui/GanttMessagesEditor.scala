@@ -32,16 +32,16 @@ object GanttMessagesEditor {
     unitsHeader: String = null
   ): GanttMessagesEditor = {
     val __obj = js.Dynamic.literal()
-    if (assignButton != null) __obj.updateDynamic("assignButton")(assignButton)
-    if (editorTitle != null) __obj.updateDynamic("editorTitle")(editorTitle)
-    if (end != null) __obj.updateDynamic("end")(end)
-    if (percentComplete != null) __obj.updateDynamic("percentComplete")(percentComplete)
-    if (resources != null) __obj.updateDynamic("resources")(resources)
-    if (resourcesEditorTitle != null) __obj.updateDynamic("resourcesEditorTitle")(resourcesEditorTitle)
-    if (resourcesHeader != null) __obj.updateDynamic("resourcesHeader")(resourcesHeader)
-    if (start != null) __obj.updateDynamic("start")(start)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (unitsHeader != null) __obj.updateDynamic("unitsHeader")(unitsHeader)
+    if (assignButton != null) __obj.updateDynamic("assignButton")(assignButton.asInstanceOf[js.Any])
+    if (editorTitle != null) __obj.updateDynamic("editorTitle")(editorTitle.asInstanceOf[js.Any])
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (percentComplete != null) __obj.updateDynamic("percentComplete")(percentComplete.asInstanceOf[js.Any])
+    if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
+    if (resourcesEditorTitle != null) __obj.updateDynamic("resourcesEditorTitle")(resourcesEditorTitle.asInstanceOf[js.Any])
+    if (resourcesHeader != null) __obj.updateDynamic("resourcesHeader")(resourcesHeader.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (unitsHeader != null) __obj.updateDynamic("unitsHeader")(unitsHeader.asInstanceOf[js.Any])
     __obj.asInstanceOf[GanttMessagesEditor]
   }
 }

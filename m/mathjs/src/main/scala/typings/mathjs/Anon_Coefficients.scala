@@ -15,7 +15,7 @@ trait Anon_Coefficients extends js.Object {
 object Anon_Coefficients {
   @scala.inline
   def apply(coefficients: js.Array[MathType], expression: MathNode | String, variables: js.Array[String]): Anon_Coefficients = {
-    val __obj = js.Dynamic.literal(coefficients = coefficients, expression = expression.asInstanceOf[js.Any], variables = variables)
+    val __obj = js.Dynamic.literal(coefficients = coefficients.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Coefficients]
   }

@@ -34,7 +34,7 @@ object ojThematicMapAreaSettableProperties {
     svgClassName: String,
     svgStyle: js.Object
   ): ojThematicMapAreaSettableProperties = {
-    val __obj = js.Dynamic.literal(categories = categories, color = color, label = label, labelStyle = labelStyle, location = location, opacity = opacity, selectable = selectable.asInstanceOf[js.Any], shortDesc = shortDesc, svgClassName = svgClassName, svgStyle = svgStyle)
+    val __obj = js.Dynamic.literal(categories = categories.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], labelStyle = labelStyle.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], selectable = selectable.asInstanceOf[js.Any], shortDesc = shortDesc.asInstanceOf[js.Any], svgClassName = svgClassName.asInstanceOf[js.Any], svgStyle = svgStyle.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ojThematicMapAreaSettableProperties]
   }

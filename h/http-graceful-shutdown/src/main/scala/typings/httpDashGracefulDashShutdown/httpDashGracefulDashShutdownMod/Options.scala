@@ -22,10 +22,10 @@ object Options {
     timeout: Int | Double = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(development)) __obj.updateDynamic("development")(development)
+    if (!js.isUndefined(development)) __obj.updateDynamic("development")(development.asInstanceOf[js.Any])
     if (`finally` != null) __obj.updateDynamic("finally")(js.Any.fromFunction0(`finally`))
     if (onShutdown != null) __obj.updateDynamic("onShutdown")(js.Any.fromFunction1(onShutdown))
-    if (signals != null) __obj.updateDynamic("signals")(signals)
+    if (signals != null) __obj.updateDynamic("signals")(signals.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

@@ -14,3 +14,14 @@ trait Attachment
      with _BackgroundAttachmentProperty
      with _WebkitMaskAttachmentProperty
 
+object Attachment {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def fixed: typings.csstype.csstypeStrings.fixed = this.cast("fixed")
+  @scala.inline
+  def local: typings.csstype.csstypeStrings.local = this.cast("local")
+  @scala.inline
+  def scroll: typings.csstype.csstypeStrings.scroll = this.cast("scroll")
+}
+

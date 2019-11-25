@@ -13,3 +13,18 @@ import scala.scalajs.js.annotation._
 */
 trait SubscriptionStatus extends js.Object
 
+object SubscriptionStatus {
+  @scala.inline
+  def Active: typings.braintree.braintreeStrings.Active = this.cast("Active")
+  @scala.inline
+  def Canceled: typings.braintree.braintreeStrings.Canceled = this.cast("Canceled")
+  @scala.inline
+  def Expired: typings.braintree.braintreeStrings.Expired = this.cast("Expired")
+  @scala.inline
+  def PastDue: typings.braintree.braintreeStrings.PastDue = this.cast("PastDue")
+  @scala.inline
+  def Pending: typings.braintree.braintreeStrings.Pending = this.cast("Pending")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

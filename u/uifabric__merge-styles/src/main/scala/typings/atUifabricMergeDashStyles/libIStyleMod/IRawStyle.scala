@@ -28,10 +28,10 @@ object IRawStyle {
     selectors: StringDictionary[IStyle] = null
   ): IRawStyle = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IRawStyleBase)
-    js.Dynamic.global.Object.assign(__obj, _IStyleBase)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (selectors != null) __obj.updateDynamic("selectors")(selectors)
+    if (IRawStyleBase != null) js.Dynamic.global.Object.assign(__obj, IRawStyleBase)
+    if (_IStyleBase != null) js.Dynamic.global.Object.assign(__obj, _IStyleBase)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (selectors != null) __obj.updateDynamic("selectors")(selectors.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRawStyle]
   }
 }

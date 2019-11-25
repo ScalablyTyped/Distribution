@@ -40,7 +40,7 @@ object AppliedDiscount {
     value_type: percentage | fixed_amount,
     amount: Int | Double = null
   ): AppliedDiscount = {
-    val __obj = js.Dynamic.literal(description = description, title = title, value = value, value_type = value_type.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], value_type = value_type.asInstanceOf[js.Any])
     if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppliedDiscount]
   }

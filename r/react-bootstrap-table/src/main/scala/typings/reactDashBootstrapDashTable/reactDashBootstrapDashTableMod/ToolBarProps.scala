@@ -20,7 +20,7 @@ trait ToolBarProps extends js.Object {
 object ToolBarProps {
   @scala.inline
   def apply(components: ButtonGroupProps with Anon_BtnGroup, event: Anon_CloseInsertModal): ToolBarProps = {
-    val __obj = js.Dynamic.literal(components = components, event = event)
+    val __obj = js.Dynamic.literal(components = components.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ToolBarProps]
   }

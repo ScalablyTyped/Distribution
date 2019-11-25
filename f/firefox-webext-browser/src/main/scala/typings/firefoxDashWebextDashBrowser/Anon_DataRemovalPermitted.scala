@@ -23,7 +23,7 @@ trait Anon_DataRemovalPermitted extends js.Object {
 object Anon_DataRemovalPermitted {
   @scala.inline
   def apply(dataRemovalPermitted: DataTypeSet, dataToRemove: DataTypeSet, options: RemovalOptions): Anon_DataRemovalPermitted = {
-    val __obj = js.Dynamic.literal(dataRemovalPermitted = dataRemovalPermitted, dataToRemove = dataToRemove, options = options)
+    val __obj = js.Dynamic.literal(dataRemovalPermitted = dataRemovalPermitted.asInstanceOf[js.Any], dataToRemove = dataToRemove.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DataRemovalPermitted]
   }

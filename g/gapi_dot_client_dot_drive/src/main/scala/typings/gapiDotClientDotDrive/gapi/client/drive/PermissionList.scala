@@ -20,9 +20,9 @@ object PermissionList {
   @scala.inline
   def apply(kind: String = null, nextPageToken: String = null, permissions: js.Array[Permission] = null): PermissionList = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (permissions != null) __obj.updateDynamic("permissions")(permissions)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
     __obj.asInstanceOf[PermissionList]
   }
 }

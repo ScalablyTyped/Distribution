@@ -17,7 +17,7 @@ object DevicePermissionDescriptor {
   @scala.inline
   def apply(name: camera | microphone | speaker, deviceId: java.lang.String = null): DevicePermissionDescriptor = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId)
+    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DevicePermissionDescriptor]
   }
 }

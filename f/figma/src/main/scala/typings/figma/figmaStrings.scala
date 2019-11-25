@@ -310,7 +310,7 @@ object figmaStrings {
   sealed trait Y extends js.Object
   
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait auto_ extends js.Object
   
   @js.native
   sealed trait close extends js.Object
@@ -529,7 +529,7 @@ object figmaStrings {
   @scala.inline
   def Y: Y = "Y".asInstanceOf[Y]
   @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
+  def auto_ : auto_ = "auto".asInstanceOf[auto_]
   @scala.inline
   def close: close = "close".asInstanceOf[close]
   @scala.inline

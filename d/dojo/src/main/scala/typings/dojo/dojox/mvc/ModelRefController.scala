@@ -1,7 +1,6 @@
 package typings.dojo.dojox.mvc
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValueOldValue
 import typings.dojo.dojoStrings.model
 import typings.dojo.dojoStrings.ownProps
 import scala.scalajs.js
@@ -52,8 +51,24 @@ class ModelRefController () extends _Controller {
   @JSName("set")
   def set_ownProps(property: ownProps, value: js.Object): Unit = js.native
   @JSName("watch")
-  def watch_model(property: model, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_model(
+    property: model,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_ownProps(property: ownProps, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_ownProps(
+    property: ownProps,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

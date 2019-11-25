@@ -24,7 +24,7 @@ object Anon_Colon {
     layout: `inline` | horizontal | vertical,
     onSubmit: FormEvent[HTMLFormElement] => Unit
   ): Anon_Colon = {
-    val __obj = js.Dynamic.literal(colon = colon, hideRequiredMark = hideRequiredMark, layout = layout.asInstanceOf[js.Any], onSubmit = js.Any.fromFunction1(onSubmit))
+    val __obj = js.Dynamic.literal(colon = colon.asInstanceOf[js.Any], hideRequiredMark = hideRequiredMark.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], onSubmit = js.Any.fromFunction1(onSubmit))
   
     __obj.asInstanceOf[Anon_Colon]
   }

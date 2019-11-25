@@ -11,7 +11,7 @@ trait IInputGroupState extends js.Object {
 object IInputGroupState {
   @scala.inline
   def apply(rightElementWidth: Double): IInputGroupState = {
-    val __obj = js.Dynamic.literal(rightElementWidth = rightElementWidth)
+    val __obj = js.Dynamic.literal(rightElementWidth = rightElementWidth.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IInputGroupState]
   }

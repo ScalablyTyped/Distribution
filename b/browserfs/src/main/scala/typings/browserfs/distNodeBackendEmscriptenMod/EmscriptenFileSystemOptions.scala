@@ -11,7 +11,7 @@ trait EmscriptenFileSystemOptions extends js.Object {
 object EmscriptenFileSystemOptions {
   @scala.inline
   def apply(FS: js.Any): EmscriptenFileSystemOptions = {
-    val __obj = js.Dynamic.literal(FS = FS)
+    val __obj = js.Dynamic.literal(FS = FS.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EmscriptenFileSystemOptions]
   }

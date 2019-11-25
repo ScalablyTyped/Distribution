@@ -16,8 +16,8 @@ object ICalloutBeakPositionedInfo {
     targetEdge: RectangleEdge,
     alignmentEdge: RectangleEdge = null
   ): ICalloutBeakPositionedInfo = {
-    val __obj = js.Dynamic.literal(closestEdge = closestEdge, elementPosition = elementPosition, targetEdge = targetEdge)
-    if (alignmentEdge != null) __obj.updateDynamic("alignmentEdge")(alignmentEdge)
+    val __obj = js.Dynamic.literal(closestEdge = closestEdge.asInstanceOf[js.Any], elementPosition = elementPosition.asInstanceOf[js.Any], targetEdge = targetEdge.asInstanceOf[js.Any])
+    if (alignmentEdge != null) __obj.updateDynamic("alignmentEdge")(alignmentEdge.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICalloutBeakPositionedInfo]
   }
 }

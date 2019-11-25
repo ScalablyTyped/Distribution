@@ -22,11 +22,11 @@ object UserPermission {
     path: String = null
   ): UserPermission = {
     val __obj = js.Dynamic.literal()
-    if (accountAccess != null) __obj.updateDynamic("accountAccess")(accountAccess)
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId)
-    if (containerAccess != null) __obj.updateDynamic("containerAccess")(containerAccess)
-    if (emailAddress != null) __obj.updateDynamic("emailAddress")(emailAddress)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (accountAccess != null) __obj.updateDynamic("accountAccess")(accountAccess.asInstanceOf[js.Any])
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
+    if (containerAccess != null) __obj.updateDynamic("containerAccess")(containerAccess.asInstanceOf[js.Any])
+    if (emailAddress != null) __obj.updateDynamic("emailAddress")(emailAddress.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserPermission]
   }
 }

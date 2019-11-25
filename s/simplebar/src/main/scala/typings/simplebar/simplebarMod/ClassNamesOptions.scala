@@ -20,10 +20,10 @@ object ClassNamesOptions {
     track: String = null
   ): ClassNamesOptions = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (scrollContent != null) __obj.updateDynamic("scrollContent")(scrollContent)
-    if (scrollbar != null) __obj.updateDynamic("scrollbar")(scrollbar)
-    if (track != null) __obj.updateDynamic("track")(track)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (scrollContent != null) __obj.updateDynamic("scrollContent")(scrollContent.asInstanceOf[js.Any])
+    if (scrollbar != null) __obj.updateDynamic("scrollbar")(scrollbar.asInstanceOf[js.Any])
+    if (track != null) __obj.updateDynamic("track")(track.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassNamesOptions]
   }
 }

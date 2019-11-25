@@ -29,7 +29,7 @@ object ISmsBinaryMessage {
     messageClass: SmsMessageClass,
     setData: js.Array[Double] => Unit
   ): ISmsBinaryMessage = {
-    val __obj = js.Dynamic.literal(format = format, getData = js.Any.fromFunction0(getData), id = id, messageClass = messageClass, setData = js.Any.fromFunction1(setData))
+    val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], getData = js.Any.fromFunction0(getData), id = id.asInstanceOf[js.Any], messageClass = messageClass.asInstanceOf[js.Any], setData = js.Any.fromFunction1(setData))
   
     __obj.asInstanceOf[ISmsBinaryMessage]
   }

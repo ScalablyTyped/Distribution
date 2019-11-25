@@ -20,10 +20,10 @@ object PartialOAuth2Options {
     redirectUri: String = null
   ): PartialOAuth2Options = {
     val __obj = js.Dynamic.literal()
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId)
-    if (clientSecret != null) __obj.updateDynamic("clientSecret")(clientSecret)
-    if (loginUrl != null) __obj.updateDynamic("loginUrl")(loginUrl)
-    if (redirectUri != null) __obj.updateDynamic("redirectUri")(redirectUri)
+    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
+    if (clientSecret != null) __obj.updateDynamic("clientSecret")(clientSecret.asInstanceOf[js.Any])
+    if (loginUrl != null) __obj.updateDynamic("loginUrl")(loginUrl.asInstanceOf[js.Any])
+    if (redirectUri != null) __obj.updateDynamic("redirectUri")(redirectUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialOAuth2Options]
   }
 }

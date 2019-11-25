@@ -101,8 +101,8 @@ object UserAgentCoreConfiguration {
     viaHost: String,
     userAgentHeaderFieldValue: String = null
   ): UserAgentCoreConfiguration = {
-    val __obj = js.Dynamic.literal(aor = aor, authenticationFactory = js.Any.fromFunction0(authenticationFactory), contact = contact, displayName = displayName, hackViaTcp = hackViaTcp, loggerFactory = loggerFactory, routeSet = routeSet, sipjsId = sipjsId, supportedOptionTags = supportedOptionTags, supportedOptionTagsResponse = supportedOptionTagsResponse, transportAccessor = js.Any.fromFunction0(transportAccessor), viaForceRport = viaForceRport, viaHost = viaHost)
-    if (userAgentHeaderFieldValue != null) __obj.updateDynamic("userAgentHeaderFieldValue")(userAgentHeaderFieldValue)
+    val __obj = js.Dynamic.literal(aor = aor.asInstanceOf[js.Any], authenticationFactory = js.Any.fromFunction0(authenticationFactory), contact = contact.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], hackViaTcp = hackViaTcp.asInstanceOf[js.Any], loggerFactory = loggerFactory.asInstanceOf[js.Any], routeSet = routeSet.asInstanceOf[js.Any], sipjsId = sipjsId.asInstanceOf[js.Any], supportedOptionTags = supportedOptionTags.asInstanceOf[js.Any], supportedOptionTagsResponse = supportedOptionTagsResponse.asInstanceOf[js.Any], transportAccessor = js.Any.fromFunction0(transportAccessor), viaForceRport = viaForceRport.asInstanceOf[js.Any], viaHost = viaHost.asInstanceOf[js.Any])
+    if (userAgentHeaderFieldValue != null) __obj.updateDynamic("userAgentHeaderFieldValue")(userAgentHeaderFieldValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserAgentCoreConfiguration]
   }
 }

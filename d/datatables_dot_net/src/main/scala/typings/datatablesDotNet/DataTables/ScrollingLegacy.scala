@@ -25,7 +25,7 @@ object ScrollingLegacy {
     sX: String,
     sY: String
   ): ScrollingLegacy = {
-    val __obj = js.Dynamic.literal(bAutoCss = bAutoCss, bCollapse = bCollapse, bInfinite = bInfinite, iBarWidth = iBarWidth, iLoadGap = iLoadGap, sX = sX, sY = sY)
+    val __obj = js.Dynamic.literal(bAutoCss = bAutoCss.asInstanceOf[js.Any], bCollapse = bCollapse.asInstanceOf[js.Any], bInfinite = bInfinite.asInstanceOf[js.Any], iBarWidth = iBarWidth.asInstanceOf[js.Any], iLoadGap = iLoadGap.asInstanceOf[js.Any], sX = sX.asInstanceOf[js.Any], sY = sY.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ScrollingLegacy]
   }

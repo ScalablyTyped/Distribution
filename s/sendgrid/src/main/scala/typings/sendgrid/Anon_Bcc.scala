@@ -21,7 +21,7 @@ object Anon_Bcc {
     sandbox_mode: js.Any,
     spam_check: js.Any
   ): Anon_Bcc = {
-    val __obj = js.Dynamic.literal(bcc = bcc, bypass_list_management = bypass_list_management, footer = footer, sandbox_mode = sandbox_mode, spam_check = spam_check)
+    val __obj = js.Dynamic.literal(bcc = bcc.asInstanceOf[js.Any], bypass_list_management = bypass_list_management.asInstanceOf[js.Any], footer = footer.asInstanceOf[js.Any], sandbox_mode = sandbox_mode.asInstanceOf[js.Any], spam_check = spam_check.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Bcc]
   }

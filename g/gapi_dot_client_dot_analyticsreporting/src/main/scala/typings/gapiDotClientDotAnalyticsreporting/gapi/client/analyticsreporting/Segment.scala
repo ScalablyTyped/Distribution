@@ -15,8 +15,8 @@ object Segment {
   @scala.inline
   def apply(dynamicSegment: DynamicSegment = null, segmentId: String = null): Segment = {
     val __obj = js.Dynamic.literal()
-    if (dynamicSegment != null) __obj.updateDynamic("dynamicSegment")(dynamicSegment)
-    if (segmentId != null) __obj.updateDynamic("segmentId")(segmentId)
+    if (dynamicSegment != null) __obj.updateDynamic("dynamicSegment")(dynamicSegment.asInstanceOf[js.Any])
+    if (segmentId != null) __obj.updateDynamic("segmentId")(segmentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Segment]
   }
 }

@@ -21,7 +21,7 @@ object DirectThreadRepositoryApproveParticipantRequestResponseItemsItem {
     timestamp: String,
     user_id: Double
   ): DirectThreadRepositoryApproveParticipantRequestResponseItemsItem = {
-    val __obj = js.Dynamic.literal(item_id = item_id, item_type = item_type, story_share = story_share, timestamp = timestamp, user_id = user_id)
+    val __obj = js.Dynamic.literal(item_id = item_id.asInstanceOf[js.Any], item_type = item_type.asInstanceOf[js.Any], story_share = story_share.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], user_id = user_id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DirectThreadRepositoryApproveParticipantRequestResponseItemsItem]
   }

@@ -33,7 +33,7 @@ object IProperties {
     onPage: Double => Unit,
     performAction: (Action, IEntry) => Unit
   ): IProperties = {
-    val __obj = js.Dynamic.literal(entries = entries, numPages = numPages, onPage = js.Any.fromFunction1(onPage), performAction = js.Any.fromFunction2(performAction))
+    val __obj = js.Dynamic.literal(entries = entries.asInstanceOf[js.Any], numPages = numPages.asInstanceOf[js.Any], onPage = js.Any.fromFunction1(onPage), performAction = js.Any.fromFunction2(performAction))
   
     __obj.asInstanceOf[IProperties]
   }

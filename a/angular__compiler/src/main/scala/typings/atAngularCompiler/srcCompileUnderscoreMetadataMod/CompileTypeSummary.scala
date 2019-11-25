@@ -13,8 +13,8 @@ object CompileTypeSummary {
   @scala.inline
   def apply(`type`: CompileTypeMetadata, summaryKind: CompileSummaryKind = null): CompileTypeSummary = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (summaryKind != null) __obj.updateDynamic("summaryKind")(summaryKind)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (summaryKind != null) __obj.updateDynamic("summaryKind")(summaryKind.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompileTypeSummary]
   }
 }

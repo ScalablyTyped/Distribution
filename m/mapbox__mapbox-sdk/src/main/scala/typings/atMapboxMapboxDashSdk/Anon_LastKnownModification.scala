@@ -21,9 +21,9 @@ object Anon_LastKnownModification {
     lastKnownModification: String | Double | Date = null,
     ownerId: String = null
   ): Anon_LastKnownModification = {
-    val __obj = js.Dynamic.literal(style = style, styleId = styleId)
+    val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any], styleId = styleId.asInstanceOf[js.Any])
     if (lastKnownModification != null) __obj.updateDynamic("lastKnownModification")(lastKnownModification.asInstanceOf[js.Any])
-    if (ownerId != null) __obj.updateDynamic("ownerId")(ownerId)
+    if (ownerId != null) __obj.updateDynamic("ownerId")(ownerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_LastKnownModification]
   }
 }

@@ -16,7 +16,7 @@ trait Anon_Address extends js.Object {
 object Anon_Address {
   @scala.inline
   def apply(address: ASTNode, comments: js.Array[ASTNode], domain: ASTNode, local: ASTNode, name: ASTNode): Anon_Address = {
-    val __obj = js.Dynamic.literal(address = address, comments = comments, domain = domain, local = local, name = name)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], comments = comments.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Address]
   }

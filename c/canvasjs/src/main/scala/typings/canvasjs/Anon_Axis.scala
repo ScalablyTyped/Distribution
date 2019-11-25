@@ -15,7 +15,7 @@ trait Anon_Axis extends js.Object {
 object Anon_Axis {
   @scala.inline
   def apply(axis: ChartAxisYOptions, chart: Chart, stripline: Anon_Axis): Anon_Axis = {
-    val __obj = js.Dynamic.literal(axis = axis, chart = chart, stripline = stripline)
+    val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], chart = chart.asInstanceOf[js.Any], stripline = stripline.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Axis]
   }

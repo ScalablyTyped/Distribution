@@ -31,7 +31,7 @@ trait XML_ATTR extends js.Object {
 object XML_ATTR {
   @scala.inline
   def apply(begin: String, className: String, contains: js.Array[_], end: String): XML_ATTR = {
-    val __obj = js.Dynamic.literal(begin = begin, className = className, contains = contains, end = end)
+    val __obj = js.Dynamic.literal(begin = begin.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], contains = contains.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[XML_ATTR]
   }

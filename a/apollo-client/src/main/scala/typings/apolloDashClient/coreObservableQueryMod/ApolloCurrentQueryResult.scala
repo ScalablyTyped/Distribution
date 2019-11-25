@@ -28,12 +28,12 @@ object ApolloCurrentQueryResult {
     partial: js.UndefOr[Boolean] = js.undefined,
     stale: js.UndefOr[Boolean] = js.undefined
   ): ApolloCurrentQueryResult[T] = {
-    val __obj = js.Dynamic.literal(loading = loading, networkStatus = networkStatus)
+    val __obj = js.Dynamic.literal(loading = loading.asInstanceOf[js.Any], networkStatus = networkStatus.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (errors != null) __obj.updateDynamic("errors")(errors)
-    if (!js.isUndefined(partial)) __obj.updateDynamic("partial")(partial)
-    if (!js.isUndefined(stale)) __obj.updateDynamic("stale")(stale)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
+    if (!js.isUndefined(partial)) __obj.updateDynamic("partial")(partial.asInstanceOf[js.Any])
+    if (!js.isUndefined(stale)) __obj.updateDynamic("stale")(stale.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApolloCurrentQueryResult[T]]
   }
 }

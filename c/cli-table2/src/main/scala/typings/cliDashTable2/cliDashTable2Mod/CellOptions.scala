@@ -31,14 +31,14 @@ object CellOptions {
     vAlign: VerticalAlignment = null
   ): CellOptions = {
     val __obj = js.Dynamic.literal()
-    if (chars != null) __obj.updateDynamic("chars")(chars)
+    if (chars != null) __obj.updateDynamic("chars")(chars.asInstanceOf[js.Any])
     if (colSpan != null) __obj.updateDynamic("colSpan")(colSpan.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (hAlign != null) __obj.updateDynamic("hAlign")(hAlign)
+    if (hAlign != null) __obj.updateDynamic("hAlign")(hAlign.asInstanceOf[js.Any])
     if (rowSpan != null) __obj.updateDynamic("rowSpan")(rowSpan.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (truncate != null) __obj.updateDynamic("truncate")(truncate)
-    if (vAlign != null) __obj.updateDynamic("vAlign")(vAlign)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (truncate != null) __obj.updateDynamic("truncate")(truncate.asInstanceOf[js.Any])
+    if (vAlign != null) __obj.updateDynamic("vAlign")(vAlign.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellOptions]
   }
 }

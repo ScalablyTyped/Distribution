@@ -41,7 +41,7 @@ object Settings {
     onerror: /* error */ js.Any => Unit = null,
     port: Int | Double = null
   ): Settings = {
-    val __obj = js.Dynamic.literal(database = database, host = host, password = password, user = user)
+    val __obj = js.Dynamic.literal(database = database.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     if (onerror != null) __obj.updateDynamic("onerror")(js.Any.fromFunction1(onerror))
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     __obj.asInstanceOf[Settings]

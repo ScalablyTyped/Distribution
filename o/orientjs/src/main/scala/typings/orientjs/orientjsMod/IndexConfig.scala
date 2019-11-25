@@ -38,14 +38,14 @@ object IndexConfig {
     metadata: js.Any = null,
     properties: js.Array[String] = null
   ): IndexConfig = {
-    val __obj = js.Dynamic.literal(name = name)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (`class` != null) __obj.updateDynamic("class")(`class`)
+    if (`class` != null) __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
     if (engine != null) __obj.updateDynamic("engine")(engine.asInstanceOf[js.Any])
-    if (!js.isUndefined(ifnotexist)) __obj.updateDynamic("ifnotexist")(ifnotexist)
-    if (keyType != null) __obj.updateDynamic("keyType")(keyType)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (!js.isUndefined(ifnotexist)) __obj.updateDynamic("ifnotexist")(ifnotexist.asInstanceOf[js.Any])
+    if (keyType != null) __obj.updateDynamic("keyType")(keyType.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndexConfig]
   }
 }

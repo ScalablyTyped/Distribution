@@ -13,7 +13,7 @@ trait datapoints extends js.Object {
 object datapoints {
   @scala.inline
   def apply(format: js.Array[datapointFormat], points: js.Array[Double], pointsize: Double): datapoints = {
-    val __obj = js.Dynamic.literal(format = format, points = points, pointsize = pointsize)
+    val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], points = points.asInstanceOf[js.Any], pointsize = pointsize.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[datapoints]
   }

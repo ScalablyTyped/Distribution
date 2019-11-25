@@ -5,13 +5,8 @@ import typings.mocha.NodeJS.EventEmitter
 import typings.mocha.mochaStrings.`post-require`
 import typings.mocha.mochaStrings.`pre-require`
 import typings.mocha.mochaStrings.afterAll
-import typings.mocha.mochaStrings.afterEach
 import typings.mocha.mochaStrings.beforeAll
-import typings.mocha.mochaStrings.beforeEach
 import typings.mocha.mochaStrings.require
-import typings.mocha.mochaStrings.run
-import typings.mocha.mochaStrings.suite
-import typings.mocha.mochaStrings.test
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -79,11 +74,11 @@ class Suite protected () extends EventEmitter {
   @JSName("addListener")
   def addListener_afterAll(event: afterAll, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_afterEach(event: afterEach, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
+  def addListener_afterEach(event: typings.mocha.mochaStrings.afterEach, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_beforeAll(event: beforeAll, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_beforeEach(event: beforeEach, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
+  def addListener_beforeEach(event: typings.mocha.mochaStrings.beforeEach, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_postrequire(
     event: `post-require`,
@@ -100,11 +95,11 @@ class Suite protected () extends EventEmitter {
     listener: js.Function3[/* module */ js.Any, /* file */ String, /* mocha */ typings.mocha.Mocha, Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_run(event: run, listener: js.Function0[Unit]): this.type = js.native
+  def addListener_run(event: typings.mocha.mochaStrings.run, listener: js.Function0[Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_suite(event: suite, listener: js.Function1[/* suite */ this.type, Unit]): this.type = js.native
+  def addListener_suite(event: typings.mocha.mochaStrings.suite, listener: js.Function1[/* suite */ this.type, Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_test(event: test, listener: js.Function1[/* test */ Test, Unit]): this.type = js.native
+  def addListener_test(event: typings.mocha.mochaStrings.test, listener: js.Function1[/* test */ Test, Unit]): this.type = js.native
   /** @deprecated Use the overload that accepts `Mocha.ISuite` instead. */
   def addSuite(suite: ISuite): this.type = js.native
   /**
@@ -208,11 +203,11 @@ class Suite protected () extends EventEmitter {
   @JSName("emit")
   def emit_afterAll(name: afterAll, hook: Hook): Boolean = js.native
   @JSName("emit")
-  def emit_afterEach(name: afterEach, hook: Hook): Boolean = js.native
+  def emit_afterEach(name: typings.mocha.mochaStrings.afterEach, hook: Hook): Boolean = js.native
   @JSName("emit")
   def emit_beforeAll(name: beforeAll, hook: Hook): Boolean = js.native
   @JSName("emit")
-  def emit_beforeEach(name: beforeEach, hook: Hook): Boolean = js.native
+  def emit_beforeEach(name: typings.mocha.mochaStrings.beforeEach, hook: Hook): Boolean = js.native
   @JSName("emit")
   def emit_postrequire(name: `post-require`, context: MochaGlobals, file: String, mocha: typings.mocha.Mocha): Boolean = js.native
   @JSName("emit")
@@ -220,11 +215,11 @@ class Suite protected () extends EventEmitter {
   @JSName("emit")
   def emit_require(name: require, module: js.Any, file: String, mocha: typings.mocha.Mocha): Boolean = js.native
   @JSName("emit")
-  def emit_run(name: run): Boolean = js.native
+  def emit_run(name: typings.mocha.mochaStrings.run): Boolean = js.native
   @JSName("emit")
-  def emit_suite(name: suite, suite: Suite): Boolean = js.native
+  def emit_suite(name: typings.mocha.mochaStrings.suite, suite: Suite): Boolean = js.native
   @JSName("emit")
-  def emit_test(name: test, test: Test): Boolean = js.native
+  def emit_test(name: typings.mocha.mochaStrings.test, test: Test): Boolean = js.native
   /**
     * Get whether timeouts are enabled.
     *
@@ -254,11 +249,11 @@ class Suite protected () extends EventEmitter {
   @JSName("on")
   def on_afterAll(event: afterAll, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
   @JSName("on")
-  def on_afterEach(event: afterEach, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
+  def on_afterEach(event: typings.mocha.mochaStrings.afterEach, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
   @JSName("on")
   def on_beforeAll(event: beforeAll, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
   @JSName("on")
-  def on_beforeEach(event: beforeEach, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
+  def on_beforeEach(event: typings.mocha.mochaStrings.beforeEach, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
   @JSName("on")
   def on_postrequire(
     event: `post-require`,
@@ -275,20 +270,20 @@ class Suite protected () extends EventEmitter {
     listener: js.Function3[/* module */ js.Any, /* file */ String, /* mocha */ typings.mocha.Mocha, Unit]
   ): this.type = js.native
   @JSName("on")
-  def on_run(event: run, listener: js.Function0[Unit]): this.type = js.native
+  def on_run(event: typings.mocha.mochaStrings.run, listener: js.Function0[Unit]): this.type = js.native
   @JSName("on")
-  def on_suite(event: suite, listener: js.Function1[/* suite */ this.type, Unit]): this.type = js.native
+  def on_suite(event: typings.mocha.mochaStrings.suite, listener: js.Function1[/* suite */ this.type, Unit]): this.type = js.native
   @JSName("on")
-  def on_test(event: test, listener: js.Function1[/* test */ Test, Unit]): this.type = js.native
+  def on_test(event: typings.mocha.mochaStrings.test, listener: js.Function1[/* test */ Test, Unit]): this.type = js.native
   def once(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("once")
   def once_afterAll(event: afterAll, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
   @JSName("once")
-  def once_afterEach(event: afterEach, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
+  def once_afterEach(event: typings.mocha.mochaStrings.afterEach, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
   @JSName("once")
   def once_beforeAll(event: beforeAll, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
   @JSName("once")
-  def once_beforeEach(event: beforeEach, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
+  def once_beforeEach(event: typings.mocha.mochaStrings.beforeEach, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
   @JSName("once")
   def once_postrequire(
     event: `post-require`,
@@ -305,20 +300,20 @@ class Suite protected () extends EventEmitter {
     listener: js.Function3[/* module */ js.Any, /* file */ String, /* mocha */ typings.mocha.Mocha, Unit]
   ): this.type = js.native
   @JSName("once")
-  def once_run(event: run, listener: js.Function0[Unit]): this.type = js.native
+  def once_run(event: typings.mocha.mochaStrings.run, listener: js.Function0[Unit]): this.type = js.native
   @JSName("once")
-  def once_suite(event: suite, listener: js.Function1[/* suite */ this.type, Unit]): this.type = js.native
+  def once_suite(event: typings.mocha.mochaStrings.suite, listener: js.Function1[/* suite */ this.type, Unit]): this.type = js.native
   @JSName("once")
-  def once_test(event: test, listener: js.Function1[/* test */ Test, Unit]): this.type = js.native
+  def once_test(event: typings.mocha.mochaStrings.test, listener: js.Function1[/* test */ Test, Unit]): this.type = js.native
   def prependListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_afterAll(event: afterAll, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
   @JSName("prependListener")
-  def prependListener_afterEach(event: afterEach, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
+  def prependListener_afterEach(event: typings.mocha.mochaStrings.afterEach, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_beforeAll(event: beforeAll, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
   @JSName("prependListener")
-  def prependListener_beforeEach(event: beforeEach, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
+  def prependListener_beforeEach(event: typings.mocha.mochaStrings.beforeEach, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_postrequire(
     event: `post-require`,
@@ -335,20 +330,20 @@ class Suite protected () extends EventEmitter {
     listener: js.Function3[/* module */ js.Any, /* file */ String, /* mocha */ typings.mocha.Mocha, Unit]
   ): this.type = js.native
   @JSName("prependListener")
-  def prependListener_run(event: run, listener: js.Function0[Unit]): this.type = js.native
+  def prependListener_run(event: typings.mocha.mochaStrings.run, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependListener")
-  def prependListener_suite(event: suite, listener: js.Function1[/* suite */ this.type, Unit]): this.type = js.native
+  def prependListener_suite(event: typings.mocha.mochaStrings.suite, listener: js.Function1[/* suite */ this.type, Unit]): this.type = js.native
   @JSName("prependListener")
-  def prependListener_test(event: test, listener: js.Function1[/* test */ Test, Unit]): this.type = js.native
+  def prependListener_test(event: typings.mocha.mochaStrings.test, listener: js.Function1[/* test */ Test, Unit]): this.type = js.native
   def prependOnceListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_afterAll(event: afterAll, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_afterEach(event: afterEach, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
+  def prependOnceListener_afterEach(event: typings.mocha.mochaStrings.afterEach, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_beforeAll(event: beforeAll, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_beforeEach(event: beforeEach, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
+  def prependOnceListener_beforeEach(event: typings.mocha.mochaStrings.beforeEach, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_postrequire(
     event: `post-require`,
@@ -365,20 +360,20 @@ class Suite protected () extends EventEmitter {
     listener: js.Function3[/* module */ js.Any, /* file */ String, /* mocha */ typings.mocha.Mocha, Unit]
   ): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_run(event: run, listener: js.Function0[Unit]): this.type = js.native
+  def prependOnceListener_run(event: typings.mocha.mochaStrings.run, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_suite(event: suite, listener: js.Function1[/* suite */ this.type, Unit]): this.type = js.native
+  def prependOnceListener_suite(event: typings.mocha.mochaStrings.suite, listener: js.Function1[/* suite */ this.type, Unit]): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_test(event: test, listener: js.Function1[/* test */ Test, Unit]): this.type = js.native
+  def prependOnceListener_test(event: typings.mocha.mochaStrings.test, listener: js.Function1[/* test */ Test, Unit]): this.type = js.native
   def removeListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_afterAll(event: afterAll, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
   @JSName("removeListener")
-  def removeListener_afterEach(event: afterEach, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
+  def removeListener_afterEach(event: typings.mocha.mochaStrings.afterEach, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_beforeAll(event: beforeAll, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
   @JSName("removeListener")
-  def removeListener_beforeEach(event: beforeEach, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
+  def removeListener_beforeEach(event: typings.mocha.mochaStrings.beforeEach, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_postrequire(
     event: `post-require`,
@@ -395,11 +390,11 @@ class Suite protected () extends EventEmitter {
     listener: js.Function3[/* module */ js.Any, /* file */ String, /* mocha */ typings.mocha.Mocha, Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_run(event: run, listener: js.Function0[Unit]): this.type = js.native
+  def removeListener_run(event: typings.mocha.mochaStrings.run, listener: js.Function0[Unit]): this.type = js.native
   @JSName("removeListener")
-  def removeListener_suite(event: suite, listener: js.Function1[/* suite */ this.type, Unit]): this.type = js.native
+  def removeListener_suite(event: typings.mocha.mochaStrings.suite, listener: js.Function1[/* suite */ this.type, Unit]): this.type = js.native
   @JSName("removeListener")
-  def removeListener_test(event: test, listener: js.Function1[/* test */ Test, Unit]): this.type = js.native
+  def removeListener_test(event: typings.mocha.mochaStrings.test, listener: js.Function1[/* test */ Test, Unit]): this.type = js.native
   /**
     * Get number of times to retry a failed test.
     *

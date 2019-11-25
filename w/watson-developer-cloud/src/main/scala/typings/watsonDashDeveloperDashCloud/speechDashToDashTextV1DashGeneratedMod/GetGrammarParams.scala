@@ -22,9 +22,9 @@ object GetGrammarParams {
     headers: js.Object = null,
     return_response: js.UndefOr[Boolean] = js.undefined
   ): GetGrammarParams = {
-    val __obj = js.Dynamic.literal(customization_id = customization_id, grammar_name = grammar_name)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response)
+    val __obj = js.Dynamic.literal(customization_id = customization_id.asInstanceOf[js.Any], grammar_name = grammar_name.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetGrammarParams]
   }
 }

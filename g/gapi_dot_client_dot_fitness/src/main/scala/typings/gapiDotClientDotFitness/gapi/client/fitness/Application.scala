@@ -25,10 +25,10 @@ object Application {
   @scala.inline
   def apply(detailsUrl: String = null, name: String = null, packageName: String = null, version: String = null): Application = {
     val __obj = js.Dynamic.literal()
-    if (detailsUrl != null) __obj.updateDynamic("detailsUrl")(detailsUrl)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (packageName != null) __obj.updateDynamic("packageName")(packageName)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (detailsUrl != null) __obj.updateDynamic("detailsUrl")(detailsUrl.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (packageName != null) __obj.updateDynamic("packageName")(packageName.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Application]
   }
 }

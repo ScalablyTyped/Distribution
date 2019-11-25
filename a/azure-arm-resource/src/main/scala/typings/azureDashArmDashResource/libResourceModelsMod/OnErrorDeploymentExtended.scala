@@ -24,9 +24,9 @@ object OnErrorDeploymentExtended {
   @scala.inline
   def apply(deploymentName: String = null, provisioningState: String = null, `type`: String = null): OnErrorDeploymentExtended = {
     val __obj = js.Dynamic.literal()
-    if (deploymentName != null) __obj.updateDynamic("deploymentName")(deploymentName)
-    if (provisioningState != null) __obj.updateDynamic("provisioningState")(provisioningState)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (deploymentName != null) __obj.updateDynamic("deploymentName")(deploymentName.asInstanceOf[js.Any])
+    if (provisioningState != null) __obj.updateDynamic("provisioningState")(provisioningState.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnErrorDeploymentExtended]
   }
 }

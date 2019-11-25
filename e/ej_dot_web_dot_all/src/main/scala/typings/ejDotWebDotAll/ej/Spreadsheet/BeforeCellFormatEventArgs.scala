@@ -36,12 +36,12 @@ object BeforeCellFormatEventArgs {
     `type`: String = null
   ): BeforeCellFormatEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
     if (cells != null) __obj.updateDynamic("cells")(cells.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (model != null) __obj.updateDynamic("model")(model)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (sheetIdx != null) __obj.updateDynamic("sheetIdx")(sheetIdx.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BeforeCellFormatEventArgs]
   }
 }

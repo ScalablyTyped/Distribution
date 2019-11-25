@@ -24,10 +24,10 @@ object EggCoreOptions {
     `type`: EggType = null
   ): EggCoreOptions = {
     val __obj = js.Dynamic.literal()
-    if (baseDir != null) __obj.updateDynamic("baseDir")(baseDir)
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
-    if (serverScope != null) __obj.updateDynamic("serverScope")(serverScope)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (baseDir != null) __obj.updateDynamic("baseDir")(baseDir.asInstanceOf[js.Any])
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
+    if (serverScope != null) __obj.updateDynamic("serverScope")(serverScope.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EggCoreOptions]
   }
 }

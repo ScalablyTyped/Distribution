@@ -15,7 +15,7 @@ trait Anon_EncryptedDataIv extends js.Object {
 object Anon_EncryptedDataIv {
   @scala.inline
   def apply(encryptedData: String, iv: String, rawData: String, signature: String, userInfo: js.Object): Anon_EncryptedDataIv = {
-    val __obj = js.Dynamic.literal(encryptedData = encryptedData, iv = iv, rawData = rawData, signature = signature, userInfo = userInfo)
+    val __obj = js.Dynamic.literal(encryptedData = encryptedData.asInstanceOf[js.Any], iv = iv.asInstanceOf[js.Any], rawData = rawData.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any], userInfo = userInfo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EncryptedDataIv]
   }

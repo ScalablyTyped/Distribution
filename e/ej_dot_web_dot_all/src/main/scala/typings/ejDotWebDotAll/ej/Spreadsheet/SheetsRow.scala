@@ -23,7 +23,7 @@ object SheetsRow {
   @scala.inline
   def apply(cells: js.Array[SheetsRowsCell] = null, height: Int | Double = null, index: Int | Double = null): SheetsRow = {
     val __obj = js.Dynamic.literal()
-    if (cells != null) __obj.updateDynamic("cells")(cells)
+    if (cells != null) __obj.updateDynamic("cells")(cells.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     __obj.asInstanceOf[SheetsRow]

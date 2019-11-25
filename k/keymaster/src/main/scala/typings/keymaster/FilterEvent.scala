@@ -13,8 +13,8 @@ object FilterEvent {
   @scala.inline
   def apply(srcElement: Anon_TagName = null, target: Anon_TagName = null): FilterEvent = {
     val __obj = js.Dynamic.literal()
-    if (srcElement != null) __obj.updateDynamic("srcElement")(srcElement)
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (srcElement != null) __obj.updateDynamic("srcElement")(srcElement.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterEvent]
   }
 }

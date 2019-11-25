@@ -32,8 +32,8 @@ object Anon_GestureHandlerProps {
     swipeEnabled: Boolean,
     tabBarPosition: String
   ): Anon_GestureHandlerProps = {
-    val __obj = js.Dynamic.literal(keyboardDismissMode = keyboardDismissMode, lazyPreloadDistance = lazyPreloadDistance, removeClippedSubviews = removeClippedSubviews, renderLazyPlaceholder = js.Any.fromFunction0(renderLazyPlaceholder), renderPager = js.Any.fromFunction1(renderPager), renderTabBar = js.Any.fromFunction1(renderTabBar), swipeEnabled = swipeEnabled, tabBarPosition = tabBarPosition)
-    __obj.updateDynamic("lazy")(`lazy`)
+    val __obj = js.Dynamic.literal(keyboardDismissMode = keyboardDismissMode.asInstanceOf[js.Any], lazyPreloadDistance = lazyPreloadDistance.asInstanceOf[js.Any], removeClippedSubviews = removeClippedSubviews.asInstanceOf[js.Any], renderLazyPlaceholder = js.Any.fromFunction0(renderLazyPlaceholder), renderPager = js.Any.fromFunction1(renderPager), renderTabBar = js.Any.fromFunction1(renderTabBar), swipeEnabled = swipeEnabled.asInstanceOf[js.Any], tabBarPosition = tabBarPosition.asInstanceOf[js.Any])
+    __obj.updateDynamic("lazy")(`lazy`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_GestureHandlerProps]
   }
 }

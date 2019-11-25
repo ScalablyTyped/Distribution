@@ -52,14 +52,14 @@ object RemoteObjSpec {
     sort: js.UndefOr[Boolean] = js.undefined
   ): RemoteObjSpec = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cellEdit)) __obj.updateDynamic("cellEdit")(cellEdit)
-    if (!js.isUndefined(dropRow)) __obj.updateDynamic("dropRow")(dropRow)
-    if (!js.isUndefined(exportCSV)) __obj.updateDynamic("exportCSV")(exportCSV)
-    if (!js.isUndefined(filter)) __obj.updateDynamic("filter")(filter)
-    if (!js.isUndefined(insertRow)) __obj.updateDynamic("insertRow")(insertRow)
-    if (!js.isUndefined(pagination)) __obj.updateDynamic("pagination")(pagination)
-    if (!js.isUndefined(search)) __obj.updateDynamic("search")(search)
-    if (!js.isUndefined(sort)) __obj.updateDynamic("sort")(sort)
+    if (!js.isUndefined(cellEdit)) __obj.updateDynamic("cellEdit")(cellEdit.asInstanceOf[js.Any])
+    if (!js.isUndefined(dropRow)) __obj.updateDynamic("dropRow")(dropRow.asInstanceOf[js.Any])
+    if (!js.isUndefined(exportCSV)) __obj.updateDynamic("exportCSV")(exportCSV.asInstanceOf[js.Any])
+    if (!js.isUndefined(filter)) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (!js.isUndefined(insertRow)) __obj.updateDynamic("insertRow")(insertRow.asInstanceOf[js.Any])
+    if (!js.isUndefined(pagination)) __obj.updateDynamic("pagination")(pagination.asInstanceOf[js.Any])
+    if (!js.isUndefined(search)) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
+    if (!js.isUndefined(sort)) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteObjSpec]
   }
 }

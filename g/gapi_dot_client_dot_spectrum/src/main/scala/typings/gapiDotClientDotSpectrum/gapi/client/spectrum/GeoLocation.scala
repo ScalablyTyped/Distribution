@@ -30,8 +30,8 @@ object GeoLocation {
   ): GeoLocation = {
     val __obj = js.Dynamic.literal()
     if (confidence != null) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
-    if (point != null) __obj.updateDynamic("point")(point)
-    if (region != null) __obj.updateDynamic("region")(region)
+    if (point != null) __obj.updateDynamic("point")(point.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoLocation]
   }
 }

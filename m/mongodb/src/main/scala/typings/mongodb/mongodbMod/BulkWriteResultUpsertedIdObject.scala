@@ -12,7 +12,7 @@ trait BulkWriteResultUpsertedIdObject extends js.Object {
 object BulkWriteResultUpsertedIdObject {
   @scala.inline
   def apply(_id: typings.bson.bsonMod.ObjectId, index: scala.Double): BulkWriteResultUpsertedIdObject = {
-    val __obj = js.Dynamic.literal(_id = _id, index = index)
+    val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BulkWriteResultUpsertedIdObject]
   }

@@ -30,7 +30,7 @@ trait _Impl extends js.Object {
 object _Impl {
   @scala.inline
   def apply(active: String, empty: String, focus: String, loading: String, pressed: String): _Impl = {
-    val __obj = js.Dynamic.literal(active = active, empty = empty, focus = focus, loading = loading, pressed = pressed)
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], empty = empty.asInstanceOf[js.Any], focus = focus.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any], pressed = pressed.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_Impl]
   }

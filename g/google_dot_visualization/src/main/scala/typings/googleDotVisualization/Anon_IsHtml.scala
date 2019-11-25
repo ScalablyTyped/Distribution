@@ -11,7 +11,7 @@ trait Anon_IsHtml extends js.Object {
 object Anon_IsHtml {
   @scala.inline
   def apply(isHtml: Boolean): Anon_IsHtml = {
-    val __obj = js.Dynamic.literal(isHtml = isHtml)
+    val __obj = js.Dynamic.literal(isHtml = isHtml.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IsHtml]
   }

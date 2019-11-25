@@ -23,9 +23,9 @@ object MethodThisType {
     connection: Connection = null,
     userId: String = null
   ): MethodThisType = {
-    val __obj = js.Dynamic.literal(isSimulation = isSimulation, setUserId = js.Any.fromFunction1(setUserId), unblock = js.Any.fromFunction0(unblock))
-    if (connection != null) __obj.updateDynamic("connection")(connection)
-    if (userId != null) __obj.updateDynamic("userId")(userId)
+    val __obj = js.Dynamic.literal(isSimulation = isSimulation.asInstanceOf[js.Any], setUserId = js.Any.fromFunction1(setUserId), unblock = js.Any.fromFunction0(unblock))
+    if (connection != null) __obj.updateDynamic("connection")(connection.asInstanceOf[js.Any])
+    if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[MethodThisType]
   }
 }

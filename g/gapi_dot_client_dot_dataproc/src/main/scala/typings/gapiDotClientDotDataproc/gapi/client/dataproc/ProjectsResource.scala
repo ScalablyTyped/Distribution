@@ -11,7 +11,7 @@ trait ProjectsResource extends js.Object {
 object ProjectsResource {
   @scala.inline
   def apply(regions: RegionsResource): ProjectsResource = {
-    val __obj = js.Dynamic.literal(regions = regions)
+    val __obj = js.Dynamic.literal(regions = regions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ProjectsResource]
   }

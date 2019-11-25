@@ -15,7 +15,7 @@ trait CACertificateInfo extends js.Object {
 object CACertificateInfo {
   @scala.inline
   def apply(countryCode: String, locality: String, organization: String, state: String, validityDays: Double): CACertificateInfo = {
-    val __obj = js.Dynamic.literal(countryCode = countryCode, locality = locality, organization = organization, state = state, validityDays = validityDays)
+    val __obj = js.Dynamic.literal(countryCode = countryCode.asInstanceOf[js.Any], locality = locality.asInstanceOf[js.Any], organization = organization.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], validityDays = validityDays.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CACertificateInfo]
   }

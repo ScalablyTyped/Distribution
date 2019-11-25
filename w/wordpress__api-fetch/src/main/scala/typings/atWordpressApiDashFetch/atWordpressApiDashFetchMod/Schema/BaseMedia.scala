@@ -71,9 +71,9 @@ object BaseMedia {
     _embedded: Record[String, js.Array[_]] = null,
     post: Int | Double = null
   ): BaseMedia[T] = {
-    val __obj = js.Dynamic.literal(_links = _links, alt_text = alt_text, author = author, caption = caption.asInstanceOf[js.Any], comment_status = comment_status, date = date, date_gmt = date_gmt, description = description.asInstanceOf[js.Any], generated_slug = generated_slug, guid = guid.asInstanceOf[js.Any], id = id, link = link, media_details = media_details, media_type = media_type.asInstanceOf[js.Any], meta = meta, mime_type = mime_type, modified = modified, modified_gmt = modified_gmt, permalink_template = permalink_template, ping_status = ping_status, slug = slug, source_url = source_url, status = status.asInstanceOf[js.Any], template = template, title = title.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
-    if (_embedded != null) __obj.updateDynamic("_embedded")(_embedded)
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], alt_text = alt_text.asInstanceOf[js.Any], author = author.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], comment_status = comment_status.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], date_gmt = date_gmt.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], generated_slug = generated_slug.asInstanceOf[js.Any], guid = guid.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], media_details = media_details.asInstanceOf[js.Any], media_type = media_type.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], mime_type = mime_type.asInstanceOf[js.Any], modified = modified.asInstanceOf[js.Any], modified_gmt = modified_gmt.asInstanceOf[js.Any], permalink_template = permalink_template.asInstanceOf[js.Any], ping_status = ping_status.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any], source_url = source_url.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (_embedded != null) __obj.updateDynamic("_embedded")(_embedded.asInstanceOf[js.Any])
     if (post != null) __obj.updateDynamic("post")(post.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseMedia[T]]
   }

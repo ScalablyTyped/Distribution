@@ -15,8 +15,8 @@ object Anon_Logging {
   def apply(logging: Boolean | js.Function = null, schema: String = null, schemaDelimeter: String = null): Anon_Logging = {
     val __obj = js.Dynamic.literal()
     if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
-    if (schema != null) __obj.updateDynamic("schema")(schema)
-    if (schemaDelimeter != null) __obj.updateDynamic("schemaDelimeter")(schemaDelimeter)
+    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
+    if (schemaDelimeter != null) __obj.updateDynamic("schemaDelimeter")(schemaDelimeter.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Logging]
   }
 }

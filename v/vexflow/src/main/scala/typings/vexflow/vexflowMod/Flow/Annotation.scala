@@ -19,7 +19,5 @@ object Annotation extends js.Object {
   val CATEGORY: String = js.native
   var DEBUG: Boolean = js.native
   def format(annotations: js.Array[typings.vexflow.Vex.Flow.Annotation], state: Anon_Leftshift): Boolean = js.native
-  type Justify = typings.vexflow.Vex.Flow.Annotation.Justify
-  type VerticalJustify = typings.vexflow.Vex.Flow.Annotation.VerticalJustify
 }
 

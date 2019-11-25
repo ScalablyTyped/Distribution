@@ -13,7 +13,7 @@ object Anon_Container {
   @scala.inline
   def apply(container: HTMLElement = null): Anon_Container = {
     val __obj = js.Dynamic.literal()
-    if (container != null) __obj.updateDynamic("container")(container)
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Container]
   }
 }

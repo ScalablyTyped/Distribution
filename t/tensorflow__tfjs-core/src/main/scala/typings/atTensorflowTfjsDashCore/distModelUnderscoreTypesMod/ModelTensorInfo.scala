@@ -14,8 +14,8 @@ trait ModelTensorInfo extends js.Object {
 object ModelTensorInfo {
   @scala.inline
   def apply(dtype: DataType, name: String, shape: js.Array[Double] = null): ModelTensorInfo = {
-    val __obj = js.Dynamic.literal(dtype = dtype, name = name)
-    if (shape != null) __obj.updateDynamic("shape")(shape)
+    val __obj = js.Dynamic.literal(dtype = dtype.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelTensorInfo]
   }
 }

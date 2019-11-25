@@ -24,12 +24,12 @@ object ImClient {
     username: String = null
   ): ImClient = {
     val __obj = js.Dynamic.literal()
-    if (formattedProtocol != null) __obj.updateDynamic("formattedProtocol")(formattedProtocol)
-    if (formattedType != null) __obj.updateDynamic("formattedType")(formattedType)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (username != null) __obj.updateDynamic("username")(username)
+    if (formattedProtocol != null) __obj.updateDynamic("formattedProtocol")(formattedProtocol.asInstanceOf[js.Any])
+    if (formattedType != null) __obj.updateDynamic("formattedType")(formattedType.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImClient]
   }
 }

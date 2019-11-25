@@ -36,12 +36,12 @@ object AutomaticRepliesSetting {
     status: AutomaticRepliesStatus = null
   ): AutomaticRepliesSetting = {
     val __obj = js.Dynamic.literal()
-    if (externalAudience != null) __obj.updateDynamic("externalAudience")(externalAudience)
-    if (externalReplyMessage != null) __obj.updateDynamic("externalReplyMessage")(externalReplyMessage)
-    if (internalReplyMessage != null) __obj.updateDynamic("internalReplyMessage")(internalReplyMessage)
-    if (scheduledEndDateTime != null) __obj.updateDynamic("scheduledEndDateTime")(scheduledEndDateTime)
-    if (scheduledStartDateTime != null) __obj.updateDynamic("scheduledStartDateTime")(scheduledStartDateTime)
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (externalAudience != null) __obj.updateDynamic("externalAudience")(externalAudience.asInstanceOf[js.Any])
+    if (externalReplyMessage != null) __obj.updateDynamic("externalReplyMessage")(externalReplyMessage.asInstanceOf[js.Any])
+    if (internalReplyMessage != null) __obj.updateDynamic("internalReplyMessage")(internalReplyMessage.asInstanceOf[js.Any])
+    if (scheduledEndDateTime != null) __obj.updateDynamic("scheduledEndDateTime")(scheduledEndDateTime.asInstanceOf[js.Any])
+    if (scheduledStartDateTime != null) __obj.updateDynamic("scheduledStartDateTime")(scheduledStartDateTime.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutomaticRepliesSetting]
   }
 }

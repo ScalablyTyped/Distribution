@@ -13,7 +13,7 @@ trait Anon_Amount extends js.Object {
 object Anon_Amount {
   @scala.inline
   def apply(amount: String, price: String, price_r: Anon_D): Anon_Amount = {
-    val __obj = js.Dynamic.literal(amount = amount, price = price, price_r = price_r)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], price = price.asInstanceOf[js.Any], price_r = price_r.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Amount]
   }

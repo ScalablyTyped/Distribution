@@ -25,8 +25,8 @@ object ListFilteredBidRequestsResponse {
   @scala.inline
   def apply(calloutStatusRows: js.Array[CalloutStatusRow] = null, nextPageToken: String = null): ListFilteredBidRequestsResponse = {
     val __obj = js.Dynamic.literal()
-    if (calloutStatusRows != null) __obj.updateDynamic("calloutStatusRows")(calloutStatusRows)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (calloutStatusRows != null) __obj.updateDynamic("calloutStatusRows")(calloutStatusRows.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListFilteredBidRequestsResponse]
   }
 }

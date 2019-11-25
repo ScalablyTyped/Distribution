@@ -14,8 +14,8 @@ trait NormalizationRootArgument extends NormalizationArgumentDefinition {
 object NormalizationRootArgument {
   @scala.inline
   def apply(kind: String, name: String, `type`: String = null): NormalizationRootArgument = {
-    val __obj = js.Dynamic.literal(kind = kind, name = name)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NormalizationRootArgument]
   }
 }

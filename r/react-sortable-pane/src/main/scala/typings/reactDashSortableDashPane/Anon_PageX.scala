@@ -12,7 +12,7 @@ trait Anon_PageX extends js.Object {
 object Anon_PageX {
   @scala.inline
   def apply(pageX: Double, pageY: Double): Anon_PageX = {
-    val __obj = js.Dynamic.literal(pageX = pageX, pageY = pageY)
+    val __obj = js.Dynamic.literal(pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_PageX]
   }

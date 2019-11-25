@@ -48,17 +48,17 @@ object Layer {
     `source-layer`: String = null,
     `type`: fill | line | symbol | circle | `fill-extrusion` | raster | background | heatmap | hillshade = null
   ): Layer = {
-    val __obj = js.Dynamic.literal(id = id)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
-    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
     if (maxzoom != null) __obj.updateDynamic("maxzoom")(maxzoom.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (minzoom != null) __obj.updateDynamic("minzoom")(minzoom.asInstanceOf[js.Any])
     if (paint != null) __obj.updateDynamic("paint")(paint.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref)
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (`source-layer` != null) __obj.updateDynamic("source-layer")(`source-layer`)
+    if (`source-layer` != null) __obj.updateDynamic("source-layer")(`source-layer`.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Layer]
   }

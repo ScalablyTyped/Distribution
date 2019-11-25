@@ -12,7 +12,7 @@ trait ListbarCommand extends js.Object {
 object ListbarCommand {
   @scala.inline
   def apply(callback: () => Unit, key: String): ListbarCommand = {
-    val __obj = js.Dynamic.literal(callback = js.Any.fromFunction0(callback), key = key)
+    val __obj = js.Dynamic.literal(callback = js.Any.fromFunction0(callback), key = key.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ListbarCommand]
   }

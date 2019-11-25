@@ -20,8 +20,8 @@ object ChecksSetSuitesPreferencesParams {
     repo: String,
     auto_trigger_checks: js.Array[ChecksSetSuitesPreferencesParamsAutoTriggerChecks] = null
   ): ChecksSetSuitesPreferencesParams = {
-    val __obj = js.Dynamic.literal(owner = owner, repo = repo)
-    if (auto_trigger_checks != null) __obj.updateDynamic("auto_trigger_checks")(auto_trigger_checks)
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
+    if (auto_trigger_checks != null) __obj.updateDynamic("auto_trigger_checks")(auto_trigger_checks.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChecksSetSuitesPreferencesParams]
   }
 }

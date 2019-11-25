@@ -48,12 +48,12 @@ object Anon_CurrentVersion {
     provider: () => String = null
   ): Anon_CurrentVersion = {
     val __obj = js.Dynamic.literal()
-    if (currentVersion != null) __obj.updateDynamic("currentVersion")(currentVersion)
+    if (currentVersion != null) __obj.updateDynamic("currentVersion")(currentVersion.asInstanceOf[js.Any])
     if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
-    if (fetchOptions != null) __obj.updateDynamic("fetchOptions")(fetchOptions)
-    if (!js.isUndefined(forceUpdate)) __obj.updateDynamic("forceUpdate")(forceUpdate)
-    if (!js.isUndefined(ignoreErrors)) __obj.updateDynamic("ignoreErrors")(ignoreErrors)
-    if (latestVersion != null) __obj.updateDynamic("latestVersion")(latestVersion)
+    if (fetchOptions != null) __obj.updateDynamic("fetchOptions")(fetchOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceUpdate)) __obj.updateDynamic("forceUpdate")(forceUpdate.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreErrors)) __obj.updateDynamic("ignoreErrors")(ignoreErrors.asInstanceOf[js.Any])
+    if (latestVersion != null) __obj.updateDynamic("latestVersion")(latestVersion.asInstanceOf[js.Any])
     if (provider != null) __obj.updateDynamic("provider")(js.Any.fromFunction0(provider))
     __obj.asInstanceOf[Anon_CurrentVersion]
   }

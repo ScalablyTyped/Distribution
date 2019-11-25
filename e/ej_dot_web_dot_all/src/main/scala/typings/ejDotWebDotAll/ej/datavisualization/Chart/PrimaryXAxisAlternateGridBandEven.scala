@@ -19,7 +19,7 @@ object PrimaryXAxisAlternateGridBandEven {
   @scala.inline
   def apply(fill: String = null, opacity: Int | Double = null): PrimaryXAxisAlternateGridBandEven = {
     val __obj = js.Dynamic.literal()
-    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrimaryXAxisAlternateGridBandEven]
   }

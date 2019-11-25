@@ -25,7 +25,7 @@ trait IGenericVariableLayout extends IGenericBaseLayout {
 object IGenericVariableLayout {
   @scala.inline
   def apply(qInfo: INxInfo, qIsScriptCreated: Boolean, qMeta: INxMeta, qNum: Double, qText: String): IGenericVariableLayout = {
-    val __obj = js.Dynamic.literal(qInfo = qInfo, qIsScriptCreated = qIsScriptCreated, qMeta = qMeta, qNum = qNum, qText = qText)
+    val __obj = js.Dynamic.literal(qInfo = qInfo.asInstanceOf[js.Any], qIsScriptCreated = qIsScriptCreated.asInstanceOf[js.Any], qMeta = qMeta.asInstanceOf[js.Any], qNum = qNum.asInstanceOf[js.Any], qText = qText.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IGenericVariableLayout]
   }

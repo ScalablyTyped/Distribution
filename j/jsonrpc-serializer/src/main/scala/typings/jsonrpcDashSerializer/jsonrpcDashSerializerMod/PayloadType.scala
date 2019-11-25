@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait PayloadType extends js.Object
 
+object PayloadType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def error: typings.jsonrpcDashSerializer.jsonrpcDashSerializerStrings.error = this.cast("error")
+  @scala.inline
+  def notification: typings.jsonrpcDashSerializer.jsonrpcDashSerializerStrings.notification = this.cast("notification")
+  @scala.inline
+  def request: typings.jsonrpcDashSerializer.jsonrpcDashSerializerStrings.request = this.cast("request")
+  @scala.inline
+  def success: typings.jsonrpcDashSerializer.jsonrpcDashSerializerStrings.success = this.cast("success")
+}
+

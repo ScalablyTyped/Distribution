@@ -13,7 +13,7 @@ object Request {
   @scala.inline
   def apply(files: FileArray = null): Request = {
     val __obj = js.Dynamic.literal()
-    if (files != null) __obj.updateDynamic("files")(files)
+    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
     __obj.asInstanceOf[Request]
   }
 }

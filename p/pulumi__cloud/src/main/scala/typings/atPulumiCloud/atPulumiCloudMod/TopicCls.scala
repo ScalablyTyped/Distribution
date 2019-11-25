@@ -1,6 +1,5 @@
 package typings.atPulumiCloud.atPulumiCloudMod
 
-import typings.atPulumiCloud.topicMod.Topic
 import typings.atPulumiPulumi.resourceMod.ResourceOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@pulumi/cloud", "Topic")
 @js.native
-class TopicCls[T] protected () extends Topic[T] {
+class TopicCls[T] protected ()
+  extends typings.atPulumiCloud.topicMod.Topic[T] {
   /**
     * Allocate a new Topic with a given name.
     *

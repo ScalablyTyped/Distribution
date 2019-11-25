@@ -11,7 +11,7 @@ trait Anon_IncludeDeclaration extends js.Object {
 object Anon_IncludeDeclaration {
   @scala.inline
   def apply(includeDeclaration: Boolean): Anon_IncludeDeclaration = {
-    val __obj = js.Dynamic.literal(includeDeclaration = includeDeclaration)
+    val __obj = js.Dynamic.literal(includeDeclaration = includeDeclaration.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IncludeDeclaration]
   }

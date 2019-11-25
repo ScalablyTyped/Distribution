@@ -18,9 +18,9 @@ object Attribute {
   @scala.inline
   def apply(location: Location = null, text: String = null, `type`: String = null): Attribute = {
     val __obj = js.Dynamic.literal()
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attribute]
   }
 }

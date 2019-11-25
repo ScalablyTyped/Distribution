@@ -76,7 +76,7 @@ object ChangeListSearchCriteria {
     top: Double,
     user: String
   ): ChangeListSearchCriteria = {
-    val __obj = js.Dynamic.literal(compareVersion = compareVersion, excludeDeletes = excludeDeletes, followRenames = followRenames, fromDate = fromDate, fromVersion = fromVersion, itemPath = itemPath, itemPaths = itemPaths, itemVersion = itemVersion, skip = skip, toDate = toDate, toVersion = toVersion, top = top, user = user)
+    val __obj = js.Dynamic.literal(compareVersion = compareVersion.asInstanceOf[js.Any], excludeDeletes = excludeDeletes.asInstanceOf[js.Any], followRenames = followRenames.asInstanceOf[js.Any], fromDate = fromDate.asInstanceOf[js.Any], fromVersion = fromVersion.asInstanceOf[js.Any], itemPath = itemPath.asInstanceOf[js.Any], itemPaths = itemPaths.asInstanceOf[js.Any], itemVersion = itemVersion.asInstanceOf[js.Any], skip = skip.asInstanceOf[js.Any], toDate = toDate.asInstanceOf[js.Any], toVersion = toVersion.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChangeListSearchCriteria]
   }

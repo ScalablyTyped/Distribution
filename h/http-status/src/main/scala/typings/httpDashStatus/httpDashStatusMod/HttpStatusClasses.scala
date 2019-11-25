@@ -51,22 +51,22 @@ object HttpStatusClasses {
     SERVER_ERROR: String,
     SUCCESSFUL: String
   ): HttpStatusClasses = {
-    val __obj = js.Dynamic.literal(CLIENT_ERROR = CLIENT_ERROR, INFORMATIONAL = INFORMATIONAL, REDIRECTION = REDIRECTION, SERVER_ERROR = SERVER_ERROR, SUCCESSFUL = SUCCESSFUL)
-    __obj.updateDynamic("1xx")(`1xx`)
-    __obj.updateDynamic("1xx_MESSAGE")(`1xx_MESSAGE`)
-    __obj.updateDynamic("1xx_NAME")(`1xx_NAME`)
-    __obj.updateDynamic("2xx")(`2xx`)
-    __obj.updateDynamic("2xx_MESSAGE")(`2xx_MESSAGE`)
-    __obj.updateDynamic("2xx_NAME")(`2xx_NAME`)
-    __obj.updateDynamic("3xx")(`3xx`)
-    __obj.updateDynamic("3xx_MESSAGE")(`3xx_MESSAGE`)
-    __obj.updateDynamic("3xx_NAME")(`3xx_NAME`)
-    __obj.updateDynamic("4xx")(`4xx`)
-    __obj.updateDynamic("4xx_MESSAGE")(`4xx_MESSAGE`)
-    __obj.updateDynamic("4xx_NAME")(`4xx_NAME`)
-    __obj.updateDynamic("5xx")(`5xx`)
-    __obj.updateDynamic("5xx_MESSAGE")(`5xx_MESSAGE`)
-    __obj.updateDynamic("5xx_NAME")(`5xx_NAME`)
+    val __obj = js.Dynamic.literal(CLIENT_ERROR = CLIENT_ERROR.asInstanceOf[js.Any], INFORMATIONAL = INFORMATIONAL.asInstanceOf[js.Any], REDIRECTION = REDIRECTION.asInstanceOf[js.Any], SERVER_ERROR = SERVER_ERROR.asInstanceOf[js.Any], SUCCESSFUL = SUCCESSFUL.asInstanceOf[js.Any])
+    __obj.updateDynamic("1xx")(`1xx`.asInstanceOf[js.Any])
+    __obj.updateDynamic("1xx_MESSAGE")(`1xx_MESSAGE`.asInstanceOf[js.Any])
+    __obj.updateDynamic("1xx_NAME")(`1xx_NAME`.asInstanceOf[js.Any])
+    __obj.updateDynamic("2xx")(`2xx`.asInstanceOf[js.Any])
+    __obj.updateDynamic("2xx_MESSAGE")(`2xx_MESSAGE`.asInstanceOf[js.Any])
+    __obj.updateDynamic("2xx_NAME")(`2xx_NAME`.asInstanceOf[js.Any])
+    __obj.updateDynamic("3xx")(`3xx`.asInstanceOf[js.Any])
+    __obj.updateDynamic("3xx_MESSAGE")(`3xx_MESSAGE`.asInstanceOf[js.Any])
+    __obj.updateDynamic("3xx_NAME")(`3xx_NAME`.asInstanceOf[js.Any])
+    __obj.updateDynamic("4xx")(`4xx`.asInstanceOf[js.Any])
+    __obj.updateDynamic("4xx_MESSAGE")(`4xx_MESSAGE`.asInstanceOf[js.Any])
+    __obj.updateDynamic("4xx_NAME")(`4xx_NAME`.asInstanceOf[js.Any])
+    __obj.updateDynamic("5xx")(`5xx`.asInstanceOf[js.Any])
+    __obj.updateDynamic("5xx_MESSAGE")(`5xx_MESSAGE`.asInstanceOf[js.Any])
+    __obj.updateDynamic("5xx_NAME")(`5xx_NAME`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpStatusClasses]
   }
 }

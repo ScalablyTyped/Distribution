@@ -14,8 +14,8 @@ object RouterStatusResponse {
   @scala.inline
   def apply(kind: String = null, result: RouterStatus = null): RouterStatusResponse = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (result != null) __obj.updateDynamic("result")(result)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouterStatusResponse]
   }
 }

@@ -18,9 +18,9 @@ object Anon_AutoForward {
     sync: js.UndefOr[Boolean] = js.undefined
   ): Anon_AutoForward = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoForward)) __obj.updateDynamic("autoForward")(autoForward)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync)
+    if (!js.isUndefined(autoForward)) __obj.updateDynamic("autoForward")(autoForward.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AutoForward]
   }
 }

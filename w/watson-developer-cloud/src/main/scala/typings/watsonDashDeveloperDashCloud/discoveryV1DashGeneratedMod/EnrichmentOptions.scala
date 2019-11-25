@@ -17,9 +17,9 @@ object EnrichmentOptions {
   @scala.inline
   def apply(features: NluEnrichmentFeatures = null, language: String = null, model: String = null): EnrichmentOptions = {
     val __obj = js.Dynamic.literal()
-    if (features != null) __obj.updateDynamic("features")(features)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (model != null) __obj.updateDynamic("model")(model)
+    if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnrichmentOptions]
   }
 }

@@ -25,7 +25,7 @@ object IELangTestDelegates {
     rdoVariantHandler: js.Function,
     startStopHandler: js.Function
   ): IELangTestDelegates = {
-    val __obj = js.Dynamic.literal(rdoModeClickHandler = rdoModeClickHandler, rdoModeHandler = rdoModeHandler, rdoQuestionClickHandler = rdoQuestionClickHandler, rdoQuestionHandler = rdoQuestionHandler, rdoVariantClickHandler = rdoVariantClickHandler, rdoVariantHandler = rdoVariantHandler, startStopHandler = startStopHandler)
+    val __obj = js.Dynamic.literal(rdoModeClickHandler = rdoModeClickHandler.asInstanceOf[js.Any], rdoModeHandler = rdoModeHandler.asInstanceOf[js.Any], rdoQuestionClickHandler = rdoQuestionClickHandler.asInstanceOf[js.Any], rdoQuestionHandler = rdoQuestionHandler.asInstanceOf[js.Any], rdoVariantClickHandler = rdoVariantClickHandler.asInstanceOf[js.Any], rdoVariantHandler = rdoVariantHandler.asInstanceOf[js.Any], startStopHandler = startStopHandler.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IELangTestDelegates]
   }

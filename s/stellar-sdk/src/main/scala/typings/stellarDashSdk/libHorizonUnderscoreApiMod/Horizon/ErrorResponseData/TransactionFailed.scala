@@ -25,8 +25,8 @@ object TransactionFailed {
     title: `Transaction Failed`,
     `type`: String
   ): TransactionFailed = {
-    val __obj = js.Dynamic.literal(details = details, extras = extras, instance = instance, status = status, title = title)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(details = details.asInstanceOf[js.Any], extras = extras.asInstanceOf[js.Any], instance = instance.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransactionFailed]
   }
 }

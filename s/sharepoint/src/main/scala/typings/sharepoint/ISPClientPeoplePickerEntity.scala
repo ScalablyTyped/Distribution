@@ -35,17 +35,17 @@ object ISPClientPeoplePickerEntity {
     ProviderName: String = null,
     StringDictionary: /* key */ StringDictionary[js.Any] = null
   ): ISPClientPeoplePickerEntity = {
-    val __obj = js.Dynamic.literal(MultipleMatches = MultipleMatches)
-    if (Description != null) __obj.updateDynamic("Description")(Description)
-    if (DisplayText != null) __obj.updateDynamic("DisplayText")(DisplayText)
-    if (DomainText != null) __obj.updateDynamic("DomainText")(DomainText)
-    if (EntityData != null) __obj.updateDynamic("EntityData")(EntityData)
-    if (EntityType != null) __obj.updateDynamic("EntityType")(EntityType)
-    if (!js.isUndefined(IsResolved)) __obj.updateDynamic("IsResolved")(IsResolved)
-    if (Key != null) __obj.updateDynamic("Key")(Key)
-    if (ProviderDisplayName != null) __obj.updateDynamic("ProviderDisplayName")(ProviderDisplayName)
-    if (ProviderName != null) __obj.updateDynamic("ProviderName")(ProviderName)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(MultipleMatches = MultipleMatches.asInstanceOf[js.Any])
+    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
+    if (DisplayText != null) __obj.updateDynamic("DisplayText")(DisplayText.asInstanceOf[js.Any])
+    if (DomainText != null) __obj.updateDynamic("DomainText")(DomainText.asInstanceOf[js.Any])
+    if (EntityData != null) __obj.updateDynamic("EntityData")(EntityData.asInstanceOf[js.Any])
+    if (EntityType != null) __obj.updateDynamic("EntityType")(EntityType.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsResolved)) __obj.updateDynamic("IsResolved")(IsResolved.asInstanceOf[js.Any])
+    if (Key != null) __obj.updateDynamic("Key")(Key.asInstanceOf[js.Any])
+    if (ProviderDisplayName != null) __obj.updateDynamic("ProviderDisplayName")(ProviderDisplayName.asInstanceOf[js.Any])
+    if (ProviderName != null) __obj.updateDynamic("ProviderName")(ProviderName.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ISPClientPeoplePickerEntity]
   }
 }

@@ -16,8 +16,8 @@ object Category {
   @scala.inline
   def apply(label: String = null, provenance_ids: js.Array[String] = null): Category = {
     val __obj = js.Dynamic.literal()
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (provenance_ids != null) __obj.updateDynamic("provenance_ids")(provenance_ids)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (provenance_ids != null) __obj.updateDynamic("provenance_ids")(provenance_ids.asInstanceOf[js.Any])
     __obj.asInstanceOf[Category]
   }
 }

@@ -19,8 +19,8 @@ trait CreateResult extends js.Object {
 object CreateResult {
   @scala.inline
   def apply(id: ID, outs: js.Any = null): CreateResult = {
-    val __obj = js.Dynamic.literal(id = id)
-    if (outs != null) __obj.updateDynamic("outs")(outs)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    if (outs != null) __obj.updateDynamic("outs")(outs.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateResult]
   }
 }

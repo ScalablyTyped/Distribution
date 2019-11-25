@@ -14,7 +14,7 @@ trait Anon_City extends js.Object {
 object Anon_City {
   @scala.inline
   def apply(city: String, citycode: String, district: String, provice: String): Anon_City = {
-    val __obj = js.Dynamic.literal(city = city, citycode = citycode, district = district, provice = provice)
+    val __obj = js.Dynamic.literal(city = city.asInstanceOf[js.Any], citycode = citycode.asInstanceOf[js.Any], district = district.asInstanceOf[js.Any], provice = provice.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_City]
   }

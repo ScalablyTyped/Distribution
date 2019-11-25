@@ -14,8 +14,8 @@ object Options {
   @scala.inline
   def apply(handlebars: TypeofHandlebars = null, hbs: TypeofHandlebars = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (handlebars != null) __obj.updateDynamic("handlebars")(handlebars)
-    if (hbs != null) __obj.updateDynamic("hbs")(hbs)
+    if (handlebars != null) __obj.updateDynamic("handlebars")(handlebars.asInstanceOf[js.Any])
+    if (hbs != null) __obj.updateDynamic("hbs")(hbs.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

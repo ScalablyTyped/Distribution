@@ -14,7 +14,7 @@ trait Size extends js.Object {
 object Size {
   @scala.inline
   def apply(height: Double, width: Double): Size = {
-    val __obj = js.Dynamic.literal(height = height, width = width)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Size]
   }

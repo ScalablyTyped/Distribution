@@ -47,7 +47,7 @@ object CommunityConnector {
     newDebugError: () => DebugError,
     newUserError: () => UserError
   ): CommunityConnector = {
-    val __obj = js.Dynamic.literal(AggregationType = AggregationType, AuthType = AuthType, BigQueryParameterType = BigQueryParameterType, FieldType = FieldType, getConfig = js.Any.fromFunction0(getConfig), getFields = js.Any.fromFunction0(getFields), newAuthTypeResponse = js.Any.fromFunction0(newAuthTypeResponse), newBigQueryConfig = js.Any.fromFunction0(newBigQueryConfig), newDebugError = js.Any.fromFunction0(newDebugError), newUserError = js.Any.fromFunction0(newUserError))
+    val __obj = js.Dynamic.literal(AggregationType = AggregationType.asInstanceOf[js.Any], AuthType = AuthType.asInstanceOf[js.Any], BigQueryParameterType = BigQueryParameterType.asInstanceOf[js.Any], FieldType = FieldType.asInstanceOf[js.Any], getConfig = js.Any.fromFunction0(getConfig), getFields = js.Any.fromFunction0(getFields), newAuthTypeResponse = js.Any.fromFunction0(newAuthTypeResponse), newBigQueryConfig = js.Any.fromFunction0(newBigQueryConfig), newDebugError = js.Any.fromFunction0(newDebugError), newUserError = js.Any.fromFunction0(newUserError))
   
     __obj.asInstanceOf[CommunityConnector]
   }

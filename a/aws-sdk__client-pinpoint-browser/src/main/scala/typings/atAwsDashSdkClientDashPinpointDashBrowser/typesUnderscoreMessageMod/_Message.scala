@@ -83,17 +83,17 @@ object _Message {
   ): _Message = {
     val __obj = js.Dynamic.literal()
     if (Action != null) __obj.updateDynamic("Action")(Action.asInstanceOf[js.Any])
-    if (Body != null) __obj.updateDynamic("Body")(Body)
-    if (ImageIconUrl != null) __obj.updateDynamic("ImageIconUrl")(ImageIconUrl)
-    if (ImageSmallIconUrl != null) __obj.updateDynamic("ImageSmallIconUrl")(ImageSmallIconUrl)
-    if (ImageUrl != null) __obj.updateDynamic("ImageUrl")(ImageUrl)
-    if (JsonBody != null) __obj.updateDynamic("JsonBody")(JsonBody)
-    if (MediaUrl != null) __obj.updateDynamic("MediaUrl")(MediaUrl)
-    if (RawContent != null) __obj.updateDynamic("RawContent")(RawContent)
-    if (!js.isUndefined(SilentPush)) __obj.updateDynamic("SilentPush")(SilentPush)
+    if (Body != null) __obj.updateDynamic("Body")(Body.asInstanceOf[js.Any])
+    if (ImageIconUrl != null) __obj.updateDynamic("ImageIconUrl")(ImageIconUrl.asInstanceOf[js.Any])
+    if (ImageSmallIconUrl != null) __obj.updateDynamic("ImageSmallIconUrl")(ImageSmallIconUrl.asInstanceOf[js.Any])
+    if (ImageUrl != null) __obj.updateDynamic("ImageUrl")(ImageUrl.asInstanceOf[js.Any])
+    if (JsonBody != null) __obj.updateDynamic("JsonBody")(JsonBody.asInstanceOf[js.Any])
+    if (MediaUrl != null) __obj.updateDynamic("MediaUrl")(MediaUrl.asInstanceOf[js.Any])
+    if (RawContent != null) __obj.updateDynamic("RawContent")(RawContent.asInstanceOf[js.Any])
+    if (!js.isUndefined(SilentPush)) __obj.updateDynamic("SilentPush")(SilentPush.asInstanceOf[js.Any])
     if (TimeToLive != null) __obj.updateDynamic("TimeToLive")(TimeToLive.asInstanceOf[js.Any])
-    if (Title != null) __obj.updateDynamic("Title")(Title)
-    if (Url != null) __obj.updateDynamic("Url")(Url)
+    if (Title != null) __obj.updateDynamic("Title")(Title.asInstanceOf[js.Any])
+    if (Url != null) __obj.updateDynamic("Url")(Url.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Message]
   }
 }

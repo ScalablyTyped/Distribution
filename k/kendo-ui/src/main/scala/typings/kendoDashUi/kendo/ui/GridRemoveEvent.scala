@@ -20,9 +20,9 @@ object GridRemoveEvent {
     model: Model = null,
     row: JQuery = null
   ): GridRemoveEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (row != null) __obj.updateDynamic("row")(row)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridRemoveEvent]
   }
 }

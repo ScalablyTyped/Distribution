@@ -26,13 +26,13 @@ object IAbideOptions {
     validators: js.Any = null
   ): IAbideOptions = {
     val __obj = js.Dynamic.literal()
-    if (formErrorClass != null) __obj.updateDynamic("formErrorClass")(formErrorClass)
-    if (formErrorSelector != null) __obj.updateDynamic("formErrorSelector")(formErrorSelector)
-    if (inputErrorClass != null) __obj.updateDynamic("inputErrorClass")(inputErrorClass)
-    if (labelErrorClass != null) __obj.updateDynamic("labelErrorClass")(labelErrorClass)
-    if (!js.isUndefined(liveValidate)) __obj.updateDynamic("liveValidate")(liveValidate)
-    if (validateOn != null) __obj.updateDynamic("validateOn")(validateOn)
-    if (validators != null) __obj.updateDynamic("validators")(validators)
+    if (formErrorClass != null) __obj.updateDynamic("formErrorClass")(formErrorClass.asInstanceOf[js.Any])
+    if (formErrorSelector != null) __obj.updateDynamic("formErrorSelector")(formErrorSelector.asInstanceOf[js.Any])
+    if (inputErrorClass != null) __obj.updateDynamic("inputErrorClass")(inputErrorClass.asInstanceOf[js.Any])
+    if (labelErrorClass != null) __obj.updateDynamic("labelErrorClass")(labelErrorClass.asInstanceOf[js.Any])
+    if (!js.isUndefined(liveValidate)) __obj.updateDynamic("liveValidate")(liveValidate.asInstanceOf[js.Any])
+    if (validateOn != null) __obj.updateDynamic("validateOn")(validateOn.asInstanceOf[js.Any])
+    if (validators != null) __obj.updateDynamic("validators")(validators.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAbideOptions]
   }
 }

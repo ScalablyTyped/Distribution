@@ -71,49 +71,37 @@ object ICheckbox {
     IField: IField = null,
     check: () => ICheckbox = null,
     checked: js.UndefOr[Boolean] = js.undefined,
-    component: js.Any = null,
     doChecked: () => Unit = null,
     doUnChecked: () => Unit = null,
     getChecked: () => _ = null,
-    getComponent: () => _ = null,
     getGroupValues: () => Array = null,
     getSubmitValue: () => _ = null,
-    getUi: () => java.lang.String = null,
     getValue: () => java.lang.String = null,
     isChecked: () => Boolean = null,
     reset: () => IField = null,
     resetGroupValues: () => ICheckbox = null,
-    setComponent: /* component */ js.UndefOr[js.Any] => Unit = null,
     setGroupValues: /* values */ js.UndefOr[Array] => ICheckbox = null,
-    setUi: /* ui */ js.UndefOr[java.lang.String] => Unit = null,
     setValue: /* value */ js.UndefOr[java.lang.String] => Unit = null,
-    ui: java.lang.String = null,
     uncheck: () => ICheckbox = null,
     value: java.lang.String = null
   ): ICheckbox = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IField)
+    if (IField != null) js.Dynamic.global.Object.assign(__obj, IField)
     if (check != null) __obj.updateDynamic("check")(js.Any.fromFunction0(check))
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
-    if (component != null) __obj.updateDynamic("component")(component)
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
     if (doChecked != null) __obj.updateDynamic("doChecked")(js.Any.fromFunction0(doChecked))
     if (doUnChecked != null) __obj.updateDynamic("doUnChecked")(js.Any.fromFunction0(doUnChecked))
     if (getChecked != null) __obj.updateDynamic("getChecked")(js.Any.fromFunction0(getChecked))
-    if (getComponent != null) __obj.updateDynamic("getComponent")(js.Any.fromFunction0(getComponent))
     if (getGroupValues != null) __obj.updateDynamic("getGroupValues")(js.Any.fromFunction0(getGroupValues))
     if (getSubmitValue != null) __obj.updateDynamic("getSubmitValue")(js.Any.fromFunction0(getSubmitValue))
-    if (getUi != null) __obj.updateDynamic("getUi")(js.Any.fromFunction0(getUi))
     if (getValue != null) __obj.updateDynamic("getValue")(js.Any.fromFunction0(getValue))
     if (isChecked != null) __obj.updateDynamic("isChecked")(js.Any.fromFunction0(isChecked))
     if (reset != null) __obj.updateDynamic("reset")(js.Any.fromFunction0(reset))
     if (resetGroupValues != null) __obj.updateDynamic("resetGroupValues")(js.Any.fromFunction0(resetGroupValues))
-    if (setComponent != null) __obj.updateDynamic("setComponent")(js.Any.fromFunction1(setComponent))
     if (setGroupValues != null) __obj.updateDynamic("setGroupValues")(js.Any.fromFunction1(setGroupValues))
-    if (setUi != null) __obj.updateDynamic("setUi")(js.Any.fromFunction1(setUi))
     if (setValue != null) __obj.updateDynamic("setValue")(js.Any.fromFunction1(setValue))
-    if (ui != null) __obj.updateDynamic("ui")(ui)
     if (uncheck != null) __obj.updateDynamic("uncheck")(js.Any.fromFunction0(uncheck))
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICheckbox]
   }
 }

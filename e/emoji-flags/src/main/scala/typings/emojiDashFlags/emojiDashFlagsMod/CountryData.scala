@@ -15,7 +15,7 @@ trait CountryData extends js.Object {
 object CountryData {
   @scala.inline
   def apply(code: String, emoji: String, name: String, title: String, unicode: String): CountryData = {
-    val __obj = js.Dynamic.literal(code = code, emoji = emoji, name = name, title = title, unicode = unicode)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], emoji = emoji.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], unicode = unicode.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CountryData]
   }

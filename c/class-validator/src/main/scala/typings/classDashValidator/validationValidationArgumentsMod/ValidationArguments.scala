@@ -30,8 +30,8 @@ trait ValidationArguments extends js.Object {
 object ValidationArguments {
   @scala.inline
   def apply(constraints: js.Array[_], `object`: js.Object, property: String, targetName: String, value: js.Any): ValidationArguments = {
-    val __obj = js.Dynamic.literal(constraints = constraints, property = property, targetName = targetName, value = value)
-    __obj.updateDynamic("object")(`object`)
+    val __obj = js.Dynamic.literal(constraints = constraints.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any], targetName = targetName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidationArguments]
   }
 }

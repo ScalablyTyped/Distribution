@@ -15,7 +15,7 @@ trait ProjectionParameters extends js.Object {
 object ProjectionParameters {
   @scala.inline
   def apply(aspect: Double, far: Double, focalDistance: Double, fov: Double, near: Double): ProjectionParameters = {
-    val __obj = js.Dynamic.literal(aspect = aspect, far = far, focalDistance = focalDistance, fov = fov, near = near)
+    val __obj = js.Dynamic.literal(aspect = aspect.asInstanceOf[js.Any], far = far.asInstanceOf[js.Any], focalDistance = focalDistance.asInstanceOf[js.Any], fov = fov.asInstanceOf[js.Any], near = near.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ProjectionParameters]
   }

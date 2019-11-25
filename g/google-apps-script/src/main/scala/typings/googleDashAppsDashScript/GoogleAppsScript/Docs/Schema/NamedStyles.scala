@@ -12,7 +12,7 @@ object NamedStyles {
   @scala.inline
   def apply(styles: js.Array[NamedStyle] = null): NamedStyles = {
     val __obj = js.Dynamic.literal()
-    if (styles != null) __obj.updateDynamic("styles")(styles)
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[NamedStyles]
   }
 }

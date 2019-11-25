@@ -18,9 +18,9 @@ object Pageviews {
   @scala.inline
   def apply(blogId: String = null, counts: js.Array[Anon_Count] = null, kind: String = null): Pageviews = {
     val __obj = js.Dynamic.literal()
-    if (blogId != null) __obj.updateDynamic("blogId")(blogId)
-    if (counts != null) __obj.updateDynamic("counts")(counts)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (blogId != null) __obj.updateDynamic("blogId")(blogId.asInstanceOf[js.Any])
+    if (counts != null) __obj.updateDynamic("counts")(counts.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pageviews]
   }
 }

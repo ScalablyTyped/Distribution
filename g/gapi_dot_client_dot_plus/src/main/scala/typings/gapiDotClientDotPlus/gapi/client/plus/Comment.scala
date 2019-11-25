@@ -52,17 +52,17 @@ object Comment {
     verb: String = null
   ): Comment = {
     val __obj = js.Dynamic.literal()
-    if (actor != null) __obj.updateDynamic("actor")(actor)
-    if (etag != null) __obj.updateDynamic("etag")(etag)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (inReplyTo != null) __obj.updateDynamic("inReplyTo")(inReplyTo)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (`object` != null) __obj.updateDynamic("object")(`object`)
-    if (plusoners != null) __obj.updateDynamic("plusoners")(plusoners)
-    if (published != null) __obj.updateDynamic("published")(published)
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
-    if (updated != null) __obj.updateDynamic("updated")(updated)
-    if (verb != null) __obj.updateDynamic("verb")(verb)
+    if (actor != null) __obj.updateDynamic("actor")(actor.asInstanceOf[js.Any])
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (inReplyTo != null) __obj.updateDynamic("inReplyTo")(inReplyTo.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (`object` != null) __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    if (plusoners != null) __obj.updateDynamic("plusoners")(plusoners.asInstanceOf[js.Any])
+    if (published != null) __obj.updateDynamic("published")(published.asInstanceOf[js.Any])
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
+    if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
+    if (verb != null) __obj.updateDynamic("verb")(verb.asInstanceOf[js.Any])
     __obj.asInstanceOf[Comment]
   }
 }

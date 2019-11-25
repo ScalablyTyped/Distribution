@@ -56,19 +56,19 @@ object SpecimenCollection {
     quantity: Quantity = null
   ): SpecimenCollection = {
     val __obj = js.Dynamic.literal()
-    if (_collectedDateTime != null) __obj.updateDynamic("_collectedDateTime")(_collectedDateTime)
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
-    if (_id != null) __obj.updateDynamic("_id")(_id)
-    if (bodySite != null) __obj.updateDynamic("bodySite")(bodySite)
-    if (collectedDateTime != null) __obj.updateDynamic("collectedDateTime")(collectedDateTime)
-    if (collectedPeriod != null) __obj.updateDynamic("collectedPeriod")(collectedPeriod)
-    if (collector != null) __obj.updateDynamic("collector")(collector)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
-    if (quantity != null) __obj.updateDynamic("quantity")(quantity)
+    if (_collectedDateTime != null) __obj.updateDynamic("_collectedDateTime")(_collectedDateTime.asInstanceOf[js.Any])
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
+    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
+    if (bodySite != null) __obj.updateDynamic("bodySite")(bodySite.asInstanceOf[js.Any])
+    if (collectedDateTime != null) __obj.updateDynamic("collectedDateTime")(collectedDateTime.asInstanceOf[js.Any])
+    if (collectedPeriod != null) __obj.updateDynamic("collectedPeriod")(collectedPeriod.asInstanceOf[js.Any])
+    if (collector != null) __obj.updateDynamic("collector")(collector.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
+    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpecimenCollection]
   }
 }

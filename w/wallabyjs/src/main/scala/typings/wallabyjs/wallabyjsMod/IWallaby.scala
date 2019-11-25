@@ -20,10 +20,10 @@ object IWallaby {
     projectCacheDir: String = null
   ): IWallaby = {
     val __obj = js.Dynamic.literal()
-    if (compilers != null) __obj.updateDynamic("compilers")(compilers)
-    if (defaults != null) __obj.updateDynamic("defaults")(defaults)
-    if (localProjectDir != null) __obj.updateDynamic("localProjectDir")(localProjectDir)
-    if (projectCacheDir != null) __obj.updateDynamic("projectCacheDir")(projectCacheDir)
+    if (compilers != null) __obj.updateDynamic("compilers")(compilers.asInstanceOf[js.Any])
+    if (defaults != null) __obj.updateDynamic("defaults")(defaults.asInstanceOf[js.Any])
+    if (localProjectDir != null) __obj.updateDynamic("localProjectDir")(localProjectDir.asInstanceOf[js.Any])
+    if (projectCacheDir != null) __obj.updateDynamic("projectCacheDir")(projectCacheDir.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWallaby]
   }
 }

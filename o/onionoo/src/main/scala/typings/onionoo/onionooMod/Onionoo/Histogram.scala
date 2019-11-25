@@ -23,7 +23,7 @@ object Histogram {
     last: String,
     values: js.Array[Double]
   ): Histogram = {
-    val __obj = js.Dynamic.literal(count = count, factor = factor, first = first, interval = interval, last = last, values = values)
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], factor = factor.asInstanceOf[js.Any], first = first.asInstanceOf[js.Any], interval = interval.asInstanceOf[js.Any], last = last.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Histogram]
   }

@@ -7,7 +7,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.backbone.backboneMod.Events because Already inherited
 - typings.backboneDotMarionette.backboneDotMarionetteMod.RadioMixin because var conflicts: bindEvents, unbindEvents. Inlined getChannel, bindRequests, unbindRequests */ @JSImport("backbone.marionette", "Object")
 @js.native
 class Object ()

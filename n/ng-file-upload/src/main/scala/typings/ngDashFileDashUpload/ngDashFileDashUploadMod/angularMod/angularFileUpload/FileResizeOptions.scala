@@ -30,14 +30,14 @@ object FileResizeOptions {
     width: Int | Double = null
   ): FileResizeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(centerCrop)) __obj.updateDynamic("centerCrop")(centerCrop)
+    if (!js.isUndefined(centerCrop)) __obj.updateDynamic("centerCrop")(centerCrop.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern)
+    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
     if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
     if (ratio != null) __obj.updateDynamic("ratio")(ratio.asInstanceOf[js.Any])
     if (resizeIf != null) __obj.updateDynamic("resizeIf")(js.Any.fromFunction2(resizeIf))
-    if (!js.isUndefined(restoreExif)) __obj.updateDynamic("restoreExif")(restoreExif)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(restoreExif)) __obj.updateDynamic("restoreExif")(restoreExif.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileResizeOptions]
   }

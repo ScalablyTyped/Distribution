@@ -15,7 +15,7 @@ trait SelectPopoverOption extends js.Object {
 object SelectPopoverOption {
   @scala.inline
   def apply(checked: Boolean, disabled: Boolean, text: String, value: String, handler: () => Unit = null): SelectPopoverOption = {
-    val __obj = js.Dynamic.literal(checked = checked, disabled = disabled, text = text, value = value)
+    val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     if (handler != null) __obj.updateDynamic("handler")(js.Any.fromFunction0(handler))
     __obj.asInstanceOf[SelectPopoverOption]
   }

@@ -19,14 +19,8 @@ trait IEvent extends js.Object {
 
 object IEvent {
   @scala.inline
-  def apply(
-    bubbles: Boolean,
-    clone: () => IEvent,
-    currentTarget: js.Object,
-    signal: IPrioritySignal,
-    target: js.Object
-  ): IEvent = {
-    val __obj = js.Dynamic.literal(bubbles = bubbles, clone = js.Any.fromFunction0(clone), currentTarget = currentTarget, signal = signal, target = target)
+  def apply(bubbles: Boolean, currentTarget: js.Object, signal: IPrioritySignal, target: js.Object): IEvent = {
+    val __obj = js.Dynamic.literal(bubbles = bubbles.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], signal = signal.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IEvent]
   }

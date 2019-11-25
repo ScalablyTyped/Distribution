@@ -19,7 +19,7 @@ object ContainerConfiguration {
     onHandlerCreated: /* handler */ InvocationHandler[_, _, _] => InvocationHandler[_, _, _] = null
   ): ContainerConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (handlers != null) __obj.updateDynamic("handlers")(handlers)
+    if (handlers != null) __obj.updateDynamic("handlers")(handlers.asInstanceOf[js.Any])
     if (onHandlerCreated != null) __obj.updateDynamic("onHandlerCreated")(js.Any.fromFunction1(onHandlerCreated))
     __obj.asInstanceOf[ContainerConfiguration]
   }

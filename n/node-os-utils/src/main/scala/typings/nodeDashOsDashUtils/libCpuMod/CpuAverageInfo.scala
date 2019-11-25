@@ -14,7 +14,7 @@ trait CpuAverageInfo extends js.Object {
 object CpuAverageInfo {
   @scala.inline
   def apply(avgIdle: Double, avgTotal: Double, totalIdle: Double, totalTick: Double): CpuAverageInfo = {
-    val __obj = js.Dynamic.literal(avgIdle = avgIdle, avgTotal = avgTotal, totalIdle = totalIdle, totalTick = totalTick)
+    val __obj = js.Dynamic.literal(avgIdle = avgIdle.asInstanceOf[js.Any], avgTotal = avgTotal.asInstanceOf[js.Any], totalIdle = totalIdle.asInstanceOf[js.Any], totalTick = totalTick.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CpuAverageInfo]
   }

@@ -14,7 +14,7 @@ trait Anon_CardListAnonCardExtCardId extends js.Object {
 object Anon_CardListAnonCardExtCardId {
   @scala.inline
   def apply(cardList: js.Array[Anon_CardExtCardId]): Anon_CardListAnonCardExtCardId = {
-    val __obj = js.Dynamic.literal(cardList = cardList)
+    val __obj = js.Dynamic.literal(cardList = cardList.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CardListAnonCardExtCardId]
   }

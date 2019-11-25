@@ -14,8 +14,8 @@ object Options {
   @scala.inline
   def apply(deep: js.UndefOr[Boolean] = js.undefined, exclude: js.Array[String | RegExp] = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deep)) __obj.updateDynamic("deep")(deep)
-    if (exclude != null) __obj.updateDynamic("exclude")(exclude)
+    if (!js.isUndefined(deep)) __obj.updateDynamic("deep")(deep.asInstanceOf[js.Any])
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

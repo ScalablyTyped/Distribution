@@ -20,10 +20,10 @@ object CastOptions {
     receiverApplicationId: String = null,
     resumeSavedSession: js.UndefOr[Boolean] = js.undefined
   ): CastOptions = {
-    val __obj = js.Dynamic.literal(autoJoinPolicy = autoJoinPolicy)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (receiverApplicationId != null) __obj.updateDynamic("receiverApplicationId")(receiverApplicationId)
-    if (!js.isUndefined(resumeSavedSession)) __obj.updateDynamic("resumeSavedSession")(resumeSavedSession)
+    val __obj = js.Dynamic.literal(autoJoinPolicy = autoJoinPolicy.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (receiverApplicationId != null) __obj.updateDynamic("receiverApplicationId")(receiverApplicationId.asInstanceOf[js.Any])
+    if (!js.isUndefined(resumeSavedSession)) __obj.updateDynamic("resumeSavedSession")(resumeSavedSession.asInstanceOf[js.Any])
     __obj.asInstanceOf[CastOptions]
   }
 }

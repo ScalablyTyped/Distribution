@@ -33,13 +33,13 @@ object LivenessCheck {
     timeout: String = null
   ): LivenessCheck = {
     val __obj = js.Dynamic.literal()
-    if (checkInterval != null) __obj.updateDynamic("checkInterval")(checkInterval)
+    if (checkInterval != null) __obj.updateDynamic("checkInterval")(checkInterval.asInstanceOf[js.Any])
     if (failureThreshold != null) __obj.updateDynamic("failureThreshold")(failureThreshold.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (initialDelay != null) __obj.updateDynamic("initialDelay")(initialDelay)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (initialDelay != null) __obj.updateDynamic("initialDelay")(initialDelay.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (successThreshold != null) __obj.updateDynamic("successThreshold")(successThreshold.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[LivenessCheck]
   }
 }

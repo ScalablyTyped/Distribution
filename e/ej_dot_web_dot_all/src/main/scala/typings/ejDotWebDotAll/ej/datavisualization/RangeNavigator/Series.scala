@@ -42,12 +42,12 @@ object Series {
     yName: String = null
   ): Series = {
     val __obj = js.Dynamic.literal()
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
-    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation)
-    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation.asInstanceOf[js.Any])
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (xName != null) __obj.updateDynamic("xName")(xName)
-    if (yName != null) __obj.updateDynamic("yName")(yName)
+    if (xName != null) __obj.updateDynamic("xName")(xName.asInstanceOf[js.Any])
+    if (yName != null) __obj.updateDynamic("yName")(yName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Series]
   }
 }

@@ -37,16 +37,16 @@ object Payment {
     state: String = null,
     update_time: String = null
   ): Payment = {
-    val __obj = js.Dynamic.literal(intent = intent, payer = payer, transactions = transactions)
-    if (create_time != null) __obj.updateDynamic("create_time")(create_time)
-    if (experience_profile_id != null) __obj.updateDynamic("experience_profile_id")(experience_profile_id)
-    if (failure_reason != null) __obj.updateDynamic("failure_reason")(failure_reason)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (links != null) __obj.updateDynamic("links")(links)
-    if (note_to_payer != null) __obj.updateDynamic("note_to_payer")(note_to_payer)
-    if (redirect_urls != null) __obj.updateDynamic("redirect_urls")(redirect_urls)
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (update_time != null) __obj.updateDynamic("update_time")(update_time)
+    val __obj = js.Dynamic.literal(intent = intent.asInstanceOf[js.Any], payer = payer.asInstanceOf[js.Any], transactions = transactions.asInstanceOf[js.Any])
+    if (create_time != null) __obj.updateDynamic("create_time")(create_time.asInstanceOf[js.Any])
+    if (experience_profile_id != null) __obj.updateDynamic("experience_profile_id")(experience_profile_id.asInstanceOf[js.Any])
+    if (failure_reason != null) __obj.updateDynamic("failure_reason")(failure_reason.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (links != null) __obj.updateDynamic("links")(links.asInstanceOf[js.Any])
+    if (note_to_payer != null) __obj.updateDynamic("note_to_payer")(note_to_payer.asInstanceOf[js.Any])
+    if (redirect_urls != null) __obj.updateDynamic("redirect_urls")(redirect_urls.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (update_time != null) __obj.updateDynamic("update_time")(update_time.asInstanceOf[js.Any])
     __obj.asInstanceOf[Payment]
   }
 }

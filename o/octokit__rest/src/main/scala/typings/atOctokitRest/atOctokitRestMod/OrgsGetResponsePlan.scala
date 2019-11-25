@@ -21,7 +21,7 @@ object OrgsGetResponsePlan {
     filled_seats: Int | Double = null,
     seats: Int | Double = null
   ): OrgsGetResponsePlan = {
-    val __obj = js.Dynamic.literal(name = name, private_repos = private_repos, space = space)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], private_repos = private_repos.asInstanceOf[js.Any], space = space.asInstanceOf[js.Any])
     if (filled_seats != null) __obj.updateDynamic("filled_seats")(filled_seats.asInstanceOf[js.Any])
     if (seats != null) __obj.updateDynamic("seats")(seats.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrgsGetResponsePlan]

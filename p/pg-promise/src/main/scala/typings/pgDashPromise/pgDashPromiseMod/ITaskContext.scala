@@ -47,12 +47,12 @@ object ITaskContext {
     success: js.UndefOr[Boolean] = js.undefined,
     txLevel: Int | Double = null
   ): ITaskContext = {
-    val __obj = js.Dynamic.literal(connected = connected, context = context, dc = dc, inTransaction = inTransaction, isTX = isTX, level = level, start = start, tag = tag, useCount = useCount)
+    val __obj = js.Dynamic.literal(connected = connected.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], dc = dc.asInstanceOf[js.Any], inTransaction = inTransaction.asInstanceOf[js.Any], isTX = isTX.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], useCount = useCount.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (finish != null) __obj.updateDynamic("finish")(finish)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
-    if (result != null) __obj.updateDynamic("result")(result)
-    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success)
+    if (finish != null) __obj.updateDynamic("finish")(finish.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
+    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
     if (txLevel != null) __obj.updateDynamic("txLevel")(txLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITaskContext]
   }

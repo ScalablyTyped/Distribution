@@ -12,7 +12,7 @@ trait Anon_Closed extends js.Object {
 object Anon_Closed {
   @scala.inline
   def apply(closed: Boolean, value: Double): Anon_Closed = {
-    val __obj = js.Dynamic.literal(closed = closed, value = value)
+    val __obj = js.Dynamic.literal(closed = closed.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Closed]
   }

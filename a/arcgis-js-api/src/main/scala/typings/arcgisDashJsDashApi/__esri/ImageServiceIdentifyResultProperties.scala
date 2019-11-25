@@ -61,13 +61,13 @@ object ImageServiceIdentifyResultProperties {
     value: String = null
   ): ImageServiceIdentifyResultProperties = {
     val __obj = js.Dynamic.literal()
-    if (catalogItemVisibilities != null) __obj.updateDynamic("catalogItemVisibilities")(catalogItemVisibilities)
-    if (catalogItems != null) __obj.updateDynamic("catalogItems")(catalogItems)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (catalogItemVisibilities != null) __obj.updateDynamic("catalogItemVisibilities")(catalogItemVisibilities.asInstanceOf[js.Any])
+    if (catalogItems != null) __obj.updateDynamic("catalogItems")(catalogItems.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (objectId != null) __obj.updateDynamic("objectId")(objectId.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageServiceIdentifyResultProperties]
   }
 }

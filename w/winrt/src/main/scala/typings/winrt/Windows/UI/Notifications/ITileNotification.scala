@@ -15,7 +15,7 @@ trait ITileNotification extends js.Object {
 object ITileNotification {
   @scala.inline
   def apply(content: XmlDocument, expirationTime: Date, tag: String): ITileNotification = {
-    val __obj = js.Dynamic.literal(content = content, expirationTime = expirationTime, tag = tag)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], expirationTime = expirationTime.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ITileNotification]
   }

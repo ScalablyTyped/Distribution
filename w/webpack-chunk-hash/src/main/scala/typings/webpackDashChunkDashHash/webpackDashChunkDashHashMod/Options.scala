@@ -36,7 +36,7 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (additionalHashContent != null) __obj.updateDynamic("additionalHashContent")(js.Any.fromFunction1(additionalHashContent))
-    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm)
+    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
     if (digest != null) __obj.updateDynamic("digest")(digest.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

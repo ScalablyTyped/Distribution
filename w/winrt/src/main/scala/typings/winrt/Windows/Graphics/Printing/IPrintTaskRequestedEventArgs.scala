@@ -11,7 +11,7 @@ trait IPrintTaskRequestedEventArgs extends js.Object {
 object IPrintTaskRequestedEventArgs {
   @scala.inline
   def apply(request: PrintTaskRequest): IPrintTaskRequestedEventArgs = {
-    val __obj = js.Dynamic.literal(request = request)
+    val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IPrintTaskRequestedEventArgs]
   }

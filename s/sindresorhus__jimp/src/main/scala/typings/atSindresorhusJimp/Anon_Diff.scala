@@ -12,7 +12,7 @@ trait Anon_Diff extends js.Object {
 object Anon_Diff {
   @scala.inline
   def apply(diff: typings.atSindresorhusJimp.Jimp.Jimp, percent: Double): Anon_Diff = {
-    val __obj = js.Dynamic.literal(diff = diff, percent = percent)
+    val __obj = js.Dynamic.literal(diff = diff.asInstanceOf[js.Any], percent = percent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Diff]
   }

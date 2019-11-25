@@ -28,11 +28,11 @@ object Anon_Colors {
     granularity: Int | Double = null,
     width: Int | Double = null
   ): Anon_Colors = {
-    val __obj = js.Dynamic.literal(positions = positions)
-    if (colors != null) __obj.updateDynamic("colors")(colors)
-    if (!js.isUndefined(colorsPerVertex)) __obj.updateDynamic("colorsPerVertex")(colorsPerVertex)
-    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
-    if (!js.isUndefined(followSurface)) __obj.updateDynamic("followSurface")(followSurface)
+    val __obj = js.Dynamic.literal(positions = positions.asInstanceOf[js.Any])
+    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
+    if (!js.isUndefined(colorsPerVertex)) __obj.updateDynamic("colorsPerVertex")(colorsPerVertex.asInstanceOf[js.Any])
+    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid.asInstanceOf[js.Any])
+    if (!js.isUndefined(followSurface)) __obj.updateDynamic("followSurface")(followSurface.asInstanceOf[js.Any])
     if (granularity != null) __obj.updateDynamic("granularity")(granularity.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Colors]

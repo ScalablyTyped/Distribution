@@ -24,11 +24,11 @@ object ILightGroup {
     `class`: RoomType = null,
     lights: js.Array[String] = null
   ): ILightGroup = {
-    val __obj = js.Dynamic.literal(id = id, name = name)
-    __obj.updateDynamic("type")(`type`)
-    if (action != null) __obj.updateDynamic("action")(action)
-    if (`class` != null) __obj.updateDynamic("class")(`class`)
-    if (lights != null) __obj.updateDynamic("lights")(lights)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (`class` != null) __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
+    if (lights != null) __obj.updateDynamic("lights")(lights.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILightGroup]
   }
 }

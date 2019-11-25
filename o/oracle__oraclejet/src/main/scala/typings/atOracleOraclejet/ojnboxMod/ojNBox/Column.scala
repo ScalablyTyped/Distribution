@@ -14,9 +14,9 @@ trait Column extends js.Object {
 object Column {
   @scala.inline
   def apply(id: String, label: String = null, labelStyle: js.Object = null): Column = {
-    val __obj = js.Dynamic.literal(id = id)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[Column]
   }
 }

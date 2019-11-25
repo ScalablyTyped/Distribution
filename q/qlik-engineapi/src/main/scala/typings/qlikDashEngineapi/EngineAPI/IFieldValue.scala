@@ -30,9 +30,9 @@ object IFieldValue {
   @scala.inline
   def apply(qIsNumeric: js.UndefOr[Boolean] = js.undefined, qNumber: Int | Double = null, qText: String = null): IFieldValue = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(qIsNumeric)) __obj.updateDynamic("qIsNumeric")(qIsNumeric)
+    if (!js.isUndefined(qIsNumeric)) __obj.updateDynamic("qIsNumeric")(qIsNumeric.asInstanceOf[js.Any])
     if (qNumber != null) __obj.updateDynamic("qNumber")(qNumber.asInstanceOf[js.Any])
-    if (qText != null) __obj.updateDynamic("qText")(qText)
+    if (qText != null) __obj.updateDynamic("qText")(qText.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFieldValue]
   }
 }

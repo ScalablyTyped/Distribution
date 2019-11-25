@@ -39,7 +39,7 @@ object Anon_BrushType {
   @scala.inline
   def apply(brushType: String = null, period: Int | Double = null, scale: Int | Double = null): Anon_BrushType = {
     val __obj = js.Dynamic.literal()
-    if (brushType != null) __obj.updateDynamic("brushType")(brushType)
+    if (brushType != null) __obj.updateDynamic("brushType")(brushType.asInstanceOf[js.Any])
     if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BrushType]

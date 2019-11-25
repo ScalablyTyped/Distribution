@@ -12,7 +12,7 @@ trait Anon_Waypoints extends js.Object {
 object Anon_Waypoints {
   @scala.inline
   def apply(waypoints: js.Array[LngLat]): Anon_Waypoints = {
-    val __obj = js.Dynamic.literal(waypoints = waypoints)
+    val __obj = js.Dynamic.literal(waypoints = waypoints.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Waypoints]
   }

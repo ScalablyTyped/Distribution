@@ -16,7 +16,7 @@ object Place {
   @scala.inline
   def apply(placeId: String = null): Place = {
     val __obj = js.Dynamic.literal()
-    if (placeId != null) __obj.updateDynamic("placeId")(placeId)
+    if (placeId != null) __obj.updateDynamic("placeId")(placeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Place]
   }
 }

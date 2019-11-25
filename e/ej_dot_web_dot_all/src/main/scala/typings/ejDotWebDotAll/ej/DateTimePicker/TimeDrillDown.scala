@@ -28,10 +28,10 @@ object TimeDrillDown {
     showMeridian: js.UndefOr[Boolean] = js.undefined
   ): TimeDrillDown = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoClose)) __obj.updateDynamic("autoClose")(autoClose)
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (!js.isUndefined(autoClose)) __obj.updateDynamic("autoClose")(autoClose.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMeridian)) __obj.updateDynamic("showMeridian")(showMeridian)
+    if (!js.isUndefined(showMeridian)) __obj.updateDynamic("showMeridian")(showMeridian.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeDrillDown]
   }
 }

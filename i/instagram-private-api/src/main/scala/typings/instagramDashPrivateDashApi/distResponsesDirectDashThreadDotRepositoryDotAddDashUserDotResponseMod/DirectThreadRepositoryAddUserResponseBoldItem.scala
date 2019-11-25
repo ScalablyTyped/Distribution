@@ -12,7 +12,7 @@ trait DirectThreadRepositoryAddUserResponseBoldItem extends js.Object {
 object DirectThreadRepositoryAddUserResponseBoldItem {
   @scala.inline
   def apply(end: Double, start: Double): DirectThreadRepositoryAddUserResponseBoldItem = {
-    val __obj = js.Dynamic.literal(end = end, start = start)
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DirectThreadRepositoryAddUserResponseBoldItem]
   }

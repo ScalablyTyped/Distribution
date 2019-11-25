@@ -19,7 +19,7 @@ trait IModelDeltaDecoration extends js.Object {
 object IModelDeltaDecoration {
   @scala.inline
   def apply(options: IModelDecorationOptions, range: IRange): IModelDeltaDecoration = {
-    val __obj = js.Dynamic.literal(options = options, range = range)
+    val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IModelDeltaDecoration]
   }

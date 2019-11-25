@@ -32,15 +32,15 @@ object DurandalRouteConfiguration {
     viewUrl: String = null
   ): DurandalRouteConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hasChildRoutes)) __obj.updateDynamic("hasChildRoutes")(hasChildRoutes)
-    if (hash != null) __obj.updateDynamic("hash")(hash)
-    if (isActive != null) __obj.updateDynamic("isActive")(isActive)
-    if (moduleId != null) __obj.updateDynamic("moduleId")(moduleId)
-    if (nav != null) __obj.updateDynamic("nav")(nav)
+    if (!js.isUndefined(hasChildRoutes)) __obj.updateDynamic("hasChildRoutes")(hasChildRoutes.asInstanceOf[js.Any])
+    if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
+    if (isActive != null) __obj.updateDynamic("isActive")(isActive.asInstanceOf[js.Any])
+    if (moduleId != null) __obj.updateDynamic("moduleId")(moduleId.asInstanceOf[js.Any])
+    if (nav != null) __obj.updateDynamic("nav")(nav.asInstanceOf[js.Any])
     if (route != null) __obj.updateDynamic("route")(route.asInstanceOf[js.Any])
-    if (routePattern != null) __obj.updateDynamic("routePattern")(routePattern)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (viewUrl != null) __obj.updateDynamic("viewUrl")(viewUrl)
+    if (routePattern != null) __obj.updateDynamic("routePattern")(routePattern.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (viewUrl != null) __obj.updateDynamic("viewUrl")(viewUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[DurandalRouteConfiguration]
   }
 }

@@ -47,10 +47,10 @@ object GoogleAuthOptions {
   ): GoogleAuthOptions = {
     val __obj = js.Dynamic.literal()
     if (clientOptions != null) __obj.updateDynamic("clientOptions")(clientOptions.asInstanceOf[js.Any])
-    if (credentials != null) __obj.updateDynamic("credentials")(credentials)
-    if (keyFile != null) __obj.updateDynamic("keyFile")(keyFile)
-    if (keyFilename != null) __obj.updateDynamic("keyFilename")(keyFilename)
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
+    if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
+    if (keyFile != null) __obj.updateDynamic("keyFile")(keyFile.asInstanceOf[js.Any])
+    if (keyFilename != null) __obj.updateDynamic("keyFilename")(keyFilename.asInstanceOf[js.Any])
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
     if (scopes != null) __obj.updateDynamic("scopes")(scopes.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleAuthOptions]
   }

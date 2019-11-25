@@ -12,7 +12,7 @@ trait Anon_Data extends js.Object {
 object Anon_Data {
   @scala.inline
   def apply(maxDepth: Double, parse: js.Any => String): Anon_Data = {
-    val __obj = js.Dynamic.literal(maxDepth = maxDepth, parse = js.Any.fromFunction1(parse))
+    val __obj = js.Dynamic.literal(maxDepth = maxDepth.asInstanceOf[js.Any], parse = js.Any.fromFunction1(parse))
   
     __obj.asInstanceOf[Anon_Data]
   }

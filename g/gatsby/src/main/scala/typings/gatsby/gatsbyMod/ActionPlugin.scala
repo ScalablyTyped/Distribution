@@ -11,7 +11,7 @@ trait ActionPlugin extends js.Object {
 object ActionPlugin {
   @scala.inline
   def apply(name: String): ActionPlugin = {
-    val __obj = js.Dynamic.literal(name = name)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ActionPlugin]
   }

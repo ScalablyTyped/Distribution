@@ -12,7 +12,7 @@ trait Anon_Response extends js.Object {
 object Anon_Response {
   @scala.inline
   def apply(response: Response[Anon_Location]): Anon_Response = {
-    val __obj = js.Dynamic.literal(response = response)
+    val __obj = js.Dynamic.literal(response = response.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Response]
   }

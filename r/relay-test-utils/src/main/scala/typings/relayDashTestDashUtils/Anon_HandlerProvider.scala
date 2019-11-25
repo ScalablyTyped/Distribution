@@ -25,9 +25,9 @@ object Anon_HandlerProvider {
   ): Anon_HandlerProvider = {
     val __obj = js.Dynamic.literal()
     if (handlerProvider != null) __obj.updateDynamic("handlerProvider")(js.Any.fromFunction1(handlerProvider))
-    if (missingFieldHandlers != null) __obj.updateDynamic("missingFieldHandlers")(missingFieldHandlers)
-    if (operationLoader != null) __obj.updateDynamic("operationLoader")(operationLoader)
-    if (operationTracker != null) __obj.updateDynamic("operationTracker")(operationTracker)
+    if (missingFieldHandlers != null) __obj.updateDynamic("missingFieldHandlers")(missingFieldHandlers.asInstanceOf[js.Any])
+    if (operationLoader != null) __obj.updateDynamic("operationLoader")(operationLoader.asInstanceOf[js.Any])
+    if (operationTracker != null) __obj.updateDynamic("operationTracker")(operationTracker.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_HandlerProvider]
   }
 }

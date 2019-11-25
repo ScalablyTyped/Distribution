@@ -36,7 +36,7 @@ object FilterProps {
     filterMethod: (/* filter */ Filter, (/* row */ js.Any) | (/* rows */ js.Array[js.Any]), /* column */ js.Any) => js.Array[js.Any] | Boolean,
     hideFilter: Boolean
   ): FilterProps = {
-    val __obj = js.Dynamic.literal(Filter = js.Any.fromFunction1(Filter), filterAll = filterAll, filterMethod = js.Any.fromFunction3(filterMethod), hideFilter = hideFilter)
+    val __obj = js.Dynamic.literal(Filter = js.Any.fromFunction1(Filter), filterAll = filterAll.asInstanceOf[js.Any], filterMethod = js.Any.fromFunction3(filterMethod), hideFilter = hideFilter.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FilterProps]
   }

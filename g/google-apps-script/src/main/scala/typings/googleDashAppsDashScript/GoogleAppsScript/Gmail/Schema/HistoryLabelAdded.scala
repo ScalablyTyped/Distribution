@@ -13,8 +13,8 @@ object HistoryLabelAdded {
   @scala.inline
   def apply(labelIds: js.Array[String] = null, message: Message = null): HistoryLabelAdded = {
     val __obj = js.Dynamic.literal()
-    if (labelIds != null) __obj.updateDynamic("labelIds")(labelIds)
-    if (message != null) __obj.updateDynamic("message")(message)
+    if (labelIds != null) __obj.updateDynamic("labelIds")(labelIds.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistoryLabelAdded]
   }
 }

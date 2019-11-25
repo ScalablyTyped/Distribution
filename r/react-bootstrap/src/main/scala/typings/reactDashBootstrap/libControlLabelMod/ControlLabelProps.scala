@@ -19,15 +19,13 @@ object ControlLabelProps {
     AllHTMLAttributes: AllHTMLAttributes[ControlLabel] = null,
     ClassAttributes: ClassAttributes[ControlLabel] = null,
     bsClass: String = null,
-    htmlFor: String = null,
     srOnly: js.UndefOr[Boolean] = js.undefined
   ): ControlLabelProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass)
-    if (htmlFor != null) __obj.updateDynamic("htmlFor")(htmlFor)
-    if (!js.isUndefined(srOnly)) __obj.updateDynamic("srOnly")(srOnly)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass.asInstanceOf[js.Any])
+    if (!js.isUndefined(srOnly)) __obj.updateDynamic("srOnly")(srOnly.asInstanceOf[js.Any])
     __obj.asInstanceOf[ControlLabelProps]
   }
 }

@@ -21,10 +21,10 @@ object SubscribeParameters {
     withPresence: js.UndefOr[Boolean] = js.undefined
   ): SubscribeParameters = {
     val __obj = js.Dynamic.literal()
-    if (channelGroups != null) __obj.updateDynamic("channelGroups")(channelGroups)
-    if (channels != null) __obj.updateDynamic("channels")(channels)
+    if (channelGroups != null) __obj.updateDynamic("channelGroups")(channelGroups.asInstanceOf[js.Any])
+    if (channels != null) __obj.updateDynamic("channels")(channels.asInstanceOf[js.Any])
     if (timetoken != null) __obj.updateDynamic("timetoken")(timetoken.asInstanceOf[js.Any])
-    if (!js.isUndefined(withPresence)) __obj.updateDynamic("withPresence")(withPresence)
+    if (!js.isUndefined(withPresence)) __obj.updateDynamic("withPresence")(withPresence.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscribeParameters]
   }
 }

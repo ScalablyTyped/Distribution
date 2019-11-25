@@ -22,7 +22,7 @@ package object recomposeMod {
   type HandleCreators[TOutter, THandlers] = HandleCreatorsStructure[TOutter] with (HandleCreatorsHandlers[TOutter, THandlers])
   type HandleCreatorsFactory[TOutter, THandlers] = js.Function1[/* initialProps */ TOutter, HandleCreators[TOutter, THandlers]]
   // This type is required to infer THandlers
-  type HandleCreatorsHandlers[TOutter, THandlers] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type HandleCreatorsHandlers[TOutter, THandlers] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof THandlers ]: (props : TOutter): THandlers[P]}
     */ typings.recompose.recomposeStrings.HandleCreatorsHandlers with THandlers
   // This type is required to infer TOutter
@@ -40,7 +40,7 @@ package object recomposeMod {
   // withStateHandlers: https://github.com/acdlite/recompose/blob/master/docs/API.md#withstatehandlers
   type StateHandler[TState] = js.Function1[/* repeated */ js.Any, js.UndefOr[Partial[TState]]]
   type StateHandlerMap[TState] = StringDictionary[StateHandler[TState]]
-  type StateUpdaters[TOutter, TState, TUpdaters] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type StateUpdaters[TOutter, TState, TUpdaters] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ updaterName in keyof TUpdaters ]: (state : TState, props : TOutter): TUpdaters[updaterName]}
     */ typings.recompose.recomposeStrings.StateUpdaters with TUpdaters
   // createEagerFactory: https://github.com/acdlite/recompose/blob/master/docs/API.md#createEagerFactory

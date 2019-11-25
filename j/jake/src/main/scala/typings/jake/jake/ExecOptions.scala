@@ -35,10 +35,10 @@ object ExecOptions {
     windowsVerbatimArguments: js.UndefOr[Boolean] = js.undefined
   ): ExecOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(breakOnError)) __obj.updateDynamic("breakOnError")(breakOnError)
-    if (!js.isUndefined(printStderr)) __obj.updateDynamic("printStderr")(printStderr)
-    if (!js.isUndefined(printStdout)) __obj.updateDynamic("printStdout")(printStdout)
-    if (!js.isUndefined(windowsVerbatimArguments)) __obj.updateDynamic("windowsVerbatimArguments")(windowsVerbatimArguments)
+    if (!js.isUndefined(breakOnError)) __obj.updateDynamic("breakOnError")(breakOnError.asInstanceOf[js.Any])
+    if (!js.isUndefined(printStderr)) __obj.updateDynamic("printStderr")(printStderr.asInstanceOf[js.Any])
+    if (!js.isUndefined(printStdout)) __obj.updateDynamic("printStdout")(printStdout.asInstanceOf[js.Any])
+    if (!js.isUndefined(windowsVerbatimArguments)) __obj.updateDynamic("windowsVerbatimArguments")(windowsVerbatimArguments.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecOptions]
   }
 }

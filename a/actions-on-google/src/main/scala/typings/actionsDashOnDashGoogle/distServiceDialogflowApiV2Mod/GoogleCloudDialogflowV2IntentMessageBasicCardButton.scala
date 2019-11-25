@@ -16,8 +16,8 @@ object GoogleCloudDialogflowV2IntentMessageBasicCardButton {
     title: String = null
   ): GoogleCloudDialogflowV2IntentMessageBasicCardButton = {
     val __obj = js.Dynamic.literal()
-    if (openUriAction != null) __obj.updateDynamic("openUriAction")(openUriAction)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (openUriAction != null) __obj.updateDynamic("openUriAction")(openUriAction.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudDialogflowV2IntentMessageBasicCardButton]
   }
 }

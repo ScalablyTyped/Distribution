@@ -18,8 +18,8 @@ object KillWorkersOptions {
     killClusterMaster: js.UndefOr[Boolean] = js.undefined
   ): KillWorkersOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate)
-    if (!js.isUndefined(killClusterMaster)) __obj.updateDynamic("killClusterMaster")(killClusterMaster)
+    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate.asInstanceOf[js.Any])
+    if (!js.isUndefined(killClusterMaster)) __obj.updateDynamic("killClusterMaster")(killClusterMaster.asInstanceOf[js.Any])
     __obj.asInstanceOf[KillWorkersOptions]
   }
 }

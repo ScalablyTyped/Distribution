@@ -32,9 +32,9 @@ object CreateOfferDialogParams {
     app_id: String = null,
     redirect_uri: String = null
   ): CreateOfferDialogParams = {
-    val __obj = js.Dynamic.literal(account_id = account_id, display = display, method = method, objective = objective.asInstanceOf[js.Any], page_id = page_id)
-    if (app_id != null) __obj.updateDynamic("app_id")(app_id)
-    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri)
+    val __obj = js.Dynamic.literal(account_id = account_id.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], objective = objective.asInstanceOf[js.Any], page_id = page_id.asInstanceOf[js.Any])
+    if (app_id != null) __obj.updateDynamic("app_id")(app_id.asInstanceOf[js.Any])
+    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateOfferDialogParams]
   }
 }

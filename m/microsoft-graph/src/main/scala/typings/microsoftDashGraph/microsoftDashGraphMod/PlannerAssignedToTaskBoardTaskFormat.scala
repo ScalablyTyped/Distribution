@@ -26,9 +26,9 @@ object PlannerAssignedToTaskBoardTaskFormat {
     unassignedOrderHint: String = null
   ): PlannerAssignedToTaskBoardTaskFormat = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (orderHintsByAssignee != null) __obj.updateDynamic("orderHintsByAssignee")(orderHintsByAssignee)
-    if (unassignedOrderHint != null) __obj.updateDynamic("unassignedOrderHint")(unassignedOrderHint)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (orderHintsByAssignee != null) __obj.updateDynamic("orderHintsByAssignee")(orderHintsByAssignee.asInstanceOf[js.Any])
+    if (unassignedOrderHint != null) __obj.updateDynamic("unassignedOrderHint")(unassignedOrderHint.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlannerAssignedToTaskBoardTaskFormat]
   }
 }

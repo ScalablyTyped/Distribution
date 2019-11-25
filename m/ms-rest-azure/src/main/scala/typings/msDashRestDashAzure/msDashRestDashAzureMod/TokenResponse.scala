@@ -19,7 +19,7 @@ object TokenResponse {
   @scala.inline
   def apply(StringDictionary: /* x */ StringDictionary[js.Any] = null, notBefore: Int | Double = null): TokenResponse = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (notBefore != null) __obj.updateDynamic("notBefore")(notBefore.asInstanceOf[js.Any])
     __obj.asInstanceOf[TokenResponse]
   }

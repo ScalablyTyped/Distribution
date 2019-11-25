@@ -1,8 +1,5 @@
 package typings.consul.consulMod
 
-import typings.consul.Fn_CallbackDcOptsNodesOptions
-import typings.consul.Fn_CallbackDcOptsServicesOptions
-import typings.consul.Fn_CallbackOptsDatacentersOptions
 import typings.consul.consulMod.Catalog.DatacentersOptions
 import typings.consul.consulMod.Catalog.Node
 import typings.consul.consulMod.Catalog.NodesOptions
@@ -16,23 +13,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Catalog_ extends js.Object {
   var consul: Consul = js.native
-  /**
-    * Lists known datacenters
-    */
-  @JSName("datacenters")
-  var datacenters_Original: Fn_CallbackOptsDatacentersOptions = js.native
   var node: Node = js.native
-  /**
-    * Lists nodes in a given DC
-    */
-  @JSName("nodes")
-  var nodes_Original: Fn_CallbackDcOptsNodesOptions = js.native
   var service: Service = js.native
-  /**
-    * Lists services in a given DC
-    */
-  @JSName("services")
-  var services_Original: Fn_CallbackDcOptsServicesOptions = js.native
   /**
     * Lists known datacenters
     */

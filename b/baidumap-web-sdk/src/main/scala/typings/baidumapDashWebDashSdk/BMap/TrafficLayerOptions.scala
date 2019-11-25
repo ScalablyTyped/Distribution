@@ -12,7 +12,7 @@ object TrafficLayerOptions {
   @scala.inline
   def apply(predictDate: PredictDate = null): TrafficLayerOptions = {
     val __obj = js.Dynamic.literal()
-    if (predictDate != null) __obj.updateDynamic("predictDate")(predictDate)
+    if (predictDate != null) __obj.updateDynamic("predictDate")(predictDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrafficLayerOptions]
   }
 }

@@ -36,11 +36,11 @@ object BalancerOptions {
     workers: Int | Double = null
   ): BalancerOptions = {
     val __obj = js.Dynamic.literal()
-    if (args != null) __obj.updateDynamic("args")(args)
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
     if (backoff != null) __obj.updateDynamic("backoff")(backoff.asInstanceOf[js.Any])
-    if (log != null) __obj.updateDynamic("log")(log)
-    if (logger != null) __obj.updateDynamic("logger")(logger)
-    if (readyWhen != null) __obj.updateDynamic("readyWhen")(readyWhen)
+    if (log != null) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
+    if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
+    if (readyWhen != null) __obj.updateDynamic("readyWhen")(readyWhen.asInstanceOf[js.Any])
     if (respawn != null) __obj.updateDynamic("respawn")(respawn.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (workers != null) __obj.updateDynamic("workers")(workers.asInstanceOf[js.Any])

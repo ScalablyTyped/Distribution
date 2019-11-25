@@ -13,7 +13,7 @@ object DecryptResponse {
   @scala.inline
   def apply(plaintext: String = null): DecryptResponse = {
     val __obj = js.Dynamic.literal()
-    if (plaintext != null) __obj.updateDynamic("plaintext")(plaintext)
+    if (plaintext != null) __obj.updateDynamic("plaintext")(plaintext.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecryptResponse]
   }
 }

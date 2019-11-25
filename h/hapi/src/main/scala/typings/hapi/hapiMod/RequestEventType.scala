@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait RequestEventType extends js.Object
 
+object RequestEventType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def disconnect: typings.hapi.hapiStrings.disconnect = this.cast("disconnect")
+  @scala.inline
+  def finish: typings.hapi.hapiStrings.finish = this.cast("finish")
+  @scala.inline
+  def peek: typings.hapi.hapiStrings.peek = this.cast("peek")
+}
+

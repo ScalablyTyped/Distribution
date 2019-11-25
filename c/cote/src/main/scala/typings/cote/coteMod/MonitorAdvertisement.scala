@@ -14,9 +14,9 @@ trait MonitorAdvertisement extends Advertisement {
 object MonitorAdvertisement {
   @scala.inline
   def apply(name: String, key: String = null, namespace: String = null, port: Double | String = null): MonitorAdvertisement = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     __obj.asInstanceOf[MonitorAdvertisement]
   }

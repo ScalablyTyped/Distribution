@@ -28,7 +28,7 @@ object Anon_ClassName {
     spinning: Requireable[Boolean],
     wrapperClassName: Requireable[String]
   ): Anon_ClassName = {
-    val __obj = js.Dynamic.literal(className = className, indicator = indicator, prefixCls = prefixCls, size = size, spinning = spinning, wrapperClassName = wrapperClassName)
+    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], indicator = indicator.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], spinning = spinning.asInstanceOf[js.Any], wrapperClassName = wrapperClassName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ClassName]
   }

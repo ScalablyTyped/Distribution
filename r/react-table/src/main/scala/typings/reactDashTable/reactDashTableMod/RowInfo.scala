@@ -47,7 +47,7 @@ object RowInfo {
     subRows: js.Array[_],
     viewIndex: Double
   ): RowInfo = {
-    val __obj = js.Dynamic.literal(aggregated = aggregated, groupedByPivot = groupedByPivot, index = index, level = level, nestingPath = nestingPath, original = original, page = page, pageSize = pageSize, row = row, rowValues = rowValues, subRows = subRows, viewIndex = viewIndex)
+    val __obj = js.Dynamic.literal(aggregated = aggregated.asInstanceOf[js.Any], groupedByPivot = groupedByPivot.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], nestingPath = nestingPath.asInstanceOf[js.Any], original = original.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], pageSize = pageSize.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], rowValues = rowValues.asInstanceOf[js.Any], subRows = subRows.asInstanceOf[js.Any], viewIndex = viewIndex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RowInfo]
   }

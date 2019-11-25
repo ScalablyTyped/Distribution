@@ -14,8 +14,8 @@ trait Anon_ConfigId extends js.Object {
 object Anon_ConfigId {
   @scala.inline
   def apply(config: String, id: Double, suite: String, sessionConfig: String = null): Anon_ConfigId = {
-    val __obj = js.Dynamic.literal(config = config, id = id, suite = suite)
-    if (sessionConfig != null) __obj.updateDynamic("sessionConfig")(sessionConfig)
+    val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], suite = suite.asInstanceOf[js.Any])
+    if (sessionConfig != null) __obj.updateDynamic("sessionConfig")(sessionConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ConfigId]
   }
 }

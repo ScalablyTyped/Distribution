@@ -13,7 +13,7 @@ trait ɵɵBaseDef[T] extends js.Object {
     * @deprecated This is only here because `NgOnChanges` incorrectly uses declared name instead of
     * public or minified name.
     */
-  val declaredInputs: /* import warning: ImportType.apply c Unsupported type mapping: 
+  val declaredInputs: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: string}
     */ typings.atAngularCore.atAngularCoreStrings.ɵɵBaseDef with js.Any
   /**
@@ -25,7 +25,7 @@ trait ɵɵBaseDef[T] extends js.Object {
     * are their aliases if any, or their original unminified property names
     * (as in `@Input('alias') propertyName: any;`).
     */
-  val inputs: /* import warning: ImportType.apply c Unsupported type mapping: 
+  val inputs: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: string}
     */ typings.atAngularCore.atAngularCoreStrings.ɵɵBaseDef with js.Any
   /**
@@ -33,7 +33,7 @@ trait ɵɵBaseDef[T] extends js.Object {
     * are their aliases if any, or their original unminified property names
     * (as in `@Output('alias') propertyName: any;`).
     */
-  val outputs: /* import warning: ImportType.apply c Unsupported type mapping: 
+  val outputs: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: string}
     */ typings.atAngularCore.atAngularCoreStrings.ɵɵBaseDef with js.Any
   /**
@@ -47,20 +47,20 @@ trait ɵɵBaseDef[T] extends js.Object {
 object ɵɵBaseDef {
   @scala.inline
   def apply[T](
-    declaredInputs: /* import warning: ImportType.apply c Unsupported type mapping: 
+    declaredInputs: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: string}
     */ typings.atAngularCore.atAngularCoreStrings.ɵɵBaseDef with js.Any,
-    inputs: /* import warning: ImportType.apply c Unsupported type mapping: 
+    inputs: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: string}
     */ typings.atAngularCore.atAngularCoreStrings.ɵɵBaseDef with js.Any,
-    outputs: /* import warning: ImportType.apply c Unsupported type mapping: 
+    outputs: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: string}
     */ typings.atAngularCore.atAngularCoreStrings.ɵɵBaseDef with js.Any,
     contentQueries: (/* rf */ ɵRenderFlags, T, /* directiveIndex */ Double) => Unit = null,
     hostBindings: (/* rf */ ɵRenderFlags, T, /* elementIndex */ Double) => Unit = null,
     viewQuery: (/* rf */ ɵRenderFlags, T) => Unit = null
   ): ɵɵBaseDef[T] = {
-    val __obj = js.Dynamic.literal(declaredInputs = declaredInputs, inputs = inputs, outputs = outputs)
+    val __obj = js.Dynamic.literal(declaredInputs = declaredInputs.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any])
     if (contentQueries != null) __obj.updateDynamic("contentQueries")(js.Any.fromFunction3(contentQueries))
     if (hostBindings != null) __obj.updateDynamic("hostBindings")(js.Any.fromFunction3(hostBindings))
     if (viewQuery != null) __obj.updateDynamic("viewQuery")(js.Any.fromFunction2(viewQuery))

@@ -16,7 +16,7 @@ object HelperOptions {
   @scala.inline
   def apply[TIntent /* <: Intent */, TValueSpec](intent: TIntent, `type`: InputValueSpec, data: TValueSpec = null): HelperOptions[TIntent, TValueSpec] = {
     val __obj = js.Dynamic.literal(intent = intent.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     __obj.asInstanceOf[HelperOptions[TIntent, TValueSpec]]
   }

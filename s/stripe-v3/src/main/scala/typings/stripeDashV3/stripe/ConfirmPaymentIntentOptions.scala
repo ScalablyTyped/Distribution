@@ -45,11 +45,11 @@ object ConfirmPaymentIntentOptions {
     shipping: ShippingDetails = null
   ): ConfirmPaymentIntentOptions = {
     val __obj = js.Dynamic.literal()
-    if (payment_method_data != null) __obj.updateDynamic("payment_method_data")(payment_method_data)
-    if (receipt_email != null) __obj.updateDynamic("receipt_email")(receipt_email)
-    if (return_url != null) __obj.updateDynamic("return_url")(return_url)
-    if (!js.isUndefined(save_payment_method)) __obj.updateDynamic("save_payment_method")(save_payment_method)
-    if (shipping != null) __obj.updateDynamic("shipping")(shipping)
+    if (payment_method_data != null) __obj.updateDynamic("payment_method_data")(payment_method_data.asInstanceOf[js.Any])
+    if (receipt_email != null) __obj.updateDynamic("receipt_email")(receipt_email.asInstanceOf[js.Any])
+    if (return_url != null) __obj.updateDynamic("return_url")(return_url.asInstanceOf[js.Any])
+    if (!js.isUndefined(save_payment_method)) __obj.updateDynamic("save_payment_method")(save_payment_method.asInstanceOf[js.Any])
+    if (shipping != null) __obj.updateDynamic("shipping")(shipping.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfirmPaymentIntentOptions]
   }
 }

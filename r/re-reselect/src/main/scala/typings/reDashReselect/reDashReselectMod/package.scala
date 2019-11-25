@@ -11,7 +11,7 @@ package object reDashReselectMod {
   import typings.reDashReselect.Anon_InputSelectors
   import typings.reDashReselect.Anon_InputSelectorsKeySelector
 
-  type $Values[T] = /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any
+  type $Values[T] = /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
   type KeySelector[S] = js.Function2[/* state */ S, /* repeated */ js.Any, js.Any]
   type KeySelectorCreator[S, C, D] = js.Function1[/* selectorInputs */ Anon_InputSelectors[D, C, S], KeySelector[S]]
   type ObjectCacheKey = String | Double

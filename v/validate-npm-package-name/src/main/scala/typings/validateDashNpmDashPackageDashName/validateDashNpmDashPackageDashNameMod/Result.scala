@@ -19,9 +19,9 @@ object Result {
     errors: js.Array[String] = null,
     warnings: js.Array[String] = null
   ): Result = {
-    val __obj = js.Dynamic.literal(validForNewPackages = validForNewPackages, validForOldPackages = validForOldPackages)
-    if (errors != null) __obj.updateDynamic("errors")(errors)
-    if (warnings != null) __obj.updateDynamic("warnings")(warnings)
+    val __obj = js.Dynamic.literal(validForNewPackages = validForNewPackages.asInstanceOf[js.Any], validForOldPackages = validForOldPackages.asInstanceOf[js.Any])
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
+    if (warnings != null) __obj.updateDynamic("warnings")(warnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[Result]
   }
 }

@@ -24,7 +24,7 @@ object Anon_Exceptions {
     severityLevel: FieldType,
     ver: FieldType
   ): Anon_Exceptions = {
-    val __obj = js.Dynamic.literal(exceptions = exceptions, handledAt = handledAt, measurements = measurements, properties = properties, severityLevel = severityLevel, ver = ver)
+    val __obj = js.Dynamic.literal(exceptions = exceptions.asInstanceOf[js.Any], handledAt = handledAt.asInstanceOf[js.Any], measurements = measurements.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], severityLevel = severityLevel.asInstanceOf[js.Any], ver = ver.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Exceptions]
   }

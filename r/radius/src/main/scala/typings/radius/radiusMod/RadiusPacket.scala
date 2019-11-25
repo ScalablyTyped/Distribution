@@ -21,7 +21,7 @@ object RadiusPacket {
     length: Double,
     raw_attributes: js.Array[js.Array[_]]
   ): RadiusPacket = {
-    val __obj = js.Dynamic.literal(attributes = attributes, code = code, identifier = identifier, length = length, raw_attributes = raw_attributes)
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], identifier = identifier.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], raw_attributes = raw_attributes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RadiusPacket]
   }

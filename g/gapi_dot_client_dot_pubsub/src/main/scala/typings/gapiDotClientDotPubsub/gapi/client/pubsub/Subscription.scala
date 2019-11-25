@@ -62,9 +62,9 @@ object Subscription {
   ): Subscription = {
     val __obj = js.Dynamic.literal()
     if (ackDeadlineSeconds != null) __obj.updateDynamic("ackDeadlineSeconds")(ackDeadlineSeconds.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (pushConfig != null) __obj.updateDynamic("pushConfig")(pushConfig)
-    if (topic != null) __obj.updateDynamic("topic")(topic)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (pushConfig != null) __obj.updateDynamic("pushConfig")(pushConfig.asInstanceOf[js.Any])
+    if (topic != null) __obj.updateDynamic("topic")(topic.asInstanceOf[js.Any])
     __obj.asInstanceOf[Subscription]
   }
 }

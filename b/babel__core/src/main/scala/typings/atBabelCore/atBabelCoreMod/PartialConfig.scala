@@ -19,10 +19,10 @@ object PartialConfig {
     babelrc: String = null,
     config: String = null
   ): PartialConfig = {
-    val __obj = js.Dynamic.literal(options = options)
-    if (babelignore != null) __obj.updateDynamic("babelignore")(babelignore)
-    if (babelrc != null) __obj.updateDynamic("babelrc")(babelrc)
-    if (config != null) __obj.updateDynamic("config")(config)
+    val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
+    if (babelignore != null) __obj.updateDynamic("babelignore")(babelignore.asInstanceOf[js.Any])
+    if (babelrc != null) __obj.updateDynamic("babelrc")(babelrc.asInstanceOf[js.Any])
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialConfig]
   }
 }

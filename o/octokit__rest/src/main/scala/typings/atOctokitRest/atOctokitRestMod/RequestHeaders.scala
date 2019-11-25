@@ -30,10 +30,10 @@ object RequestHeaders {
     `user-agent`: String = null
   ): RequestHeaders = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (accept != null) __obj.updateDynamic("accept")(accept)
-    if (authorization != null) __obj.updateDynamic("authorization")(authorization)
-    if (`user-agent` != null) __obj.updateDynamic("user-agent")(`user-agent`)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (accept != null) __obj.updateDynamic("accept")(accept.asInstanceOf[js.Any])
+    if (authorization != null) __obj.updateDynamic("authorization")(authorization.asInstanceOf[js.Any])
+    if (`user-agent` != null) __obj.updateDynamic("user-agent")(`user-agent`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestHeaders]
   }
 }

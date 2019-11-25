@@ -31,9 +31,9 @@ trait ThroughOptions extends js.Object {
 object ThroughOptions {
   @scala.inline
   def apply(model: Model[_, _, _], scope: AssociationScope = null, unique: js.UndefOr[Boolean] = js.undefined): ThroughOptions = {
-    val __obj = js.Dynamic.literal(model = model)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
-    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique)
+    val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThroughOptions]
   }
 }

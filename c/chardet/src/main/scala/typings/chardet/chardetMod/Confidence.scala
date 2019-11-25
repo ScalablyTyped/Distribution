@@ -13,8 +13,8 @@ trait Confidence extends js.Object {
 object Confidence {
   @scala.inline
   def apply(confidence: Double, name: String, lang: String = null): Confidence = {
-    val __obj = js.Dynamic.literal(confidence = confidence, name = name)
-    if (lang != null) __obj.updateDynamic("lang")(lang)
+    val __obj = js.Dynamic.literal(confidence = confidence.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
     __obj.asInstanceOf[Confidence]
   }
 }

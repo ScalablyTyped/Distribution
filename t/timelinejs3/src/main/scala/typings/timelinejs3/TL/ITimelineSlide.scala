@@ -11,7 +11,7 @@ trait ITimelineSlide extends js.Object {
 object ITimelineSlide {
   @scala.inline
   def apply(data: ITimelineSlideData): ITimelineSlide = {
-    val __obj = js.Dynamic.literal(data = data)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ITimelineSlide]
   }

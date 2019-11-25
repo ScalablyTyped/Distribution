@@ -11,7 +11,7 @@ trait HandshakeSCRequest extends js.Object {
 object HandshakeSCRequest {
   @scala.inline
   def apply(socket: typings.socketclusterDashServer.scserversocketMod.^): HandshakeSCRequest = {
-    val __obj = js.Dynamic.literal(socket = socket)
+    val __obj = js.Dynamic.literal(socket = socket.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HandshakeSCRequest]
   }

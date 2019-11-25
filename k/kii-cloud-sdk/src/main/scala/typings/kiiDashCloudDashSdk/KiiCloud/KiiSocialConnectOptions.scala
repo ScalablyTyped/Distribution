@@ -4,26 +4,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait KiiSocialConnectOptions extends js.Object {
-  var access_token: js.UndefOr[String] = js.undefined
-  var oauth_token: js.UndefOr[String] = js.undefined
-  var oauth_token_secret: js.UndefOr[String] = js.undefined
-  var openID: js.UndefOr[String] = js.undefined
-}
+/* Rewritten from type alias, can be one of: 
+  - typings.kiiDashCloudDashSdk.Anon_Accesstoken
+  - typings.kiiDashCloudDashSdk.Anon_Oauthtoken
+*/
+trait KiiSocialConnectOptions extends js.Object
 
 object KiiSocialConnectOptions {
   @scala.inline
-  def apply(
-    access_token: String = null,
-    oauth_token: String = null,
-    oauth_token_secret: String = null,
-    openID: String = null
-  ): KiiSocialConnectOptions = {
-    val __obj = js.Dynamic.literal()
-    if (access_token != null) __obj.updateDynamic("access_token")(access_token)
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
-    if (oauth_token_secret != null) __obj.updateDynamic("oauth_token_secret")(oauth_token_secret)
-    if (openID != null) __obj.updateDynamic("openID")(openID)
+  def Anon_Accesstoken(access_token: String, openID: String = null): KiiSocialConnectOptions = {
+    val __obj = js.Dynamic.literal(access_token = access_token.asInstanceOf[js.Any])
+    if (openID != null) __obj.updateDynamic("openID")(openID.asInstanceOf[js.Any])
+    __obj.asInstanceOf[KiiSocialConnectOptions]
+  }
+  @scala.inline
+  def Anon_Oauthtoken(oauth_token: String, oauth_token_secret: String): KiiSocialConnectOptions = {
+    val __obj = js.Dynamic.literal(oauth_token = oauth_token.asInstanceOf[js.Any], oauth_token_secret = oauth_token_secret.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[KiiSocialConnectOptions]
   }
 }

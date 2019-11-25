@@ -12,7 +12,7 @@ trait MoveStatusCondition extends js.Object {
 object MoveStatusCondition {
   @scala.inline
   def apply(condition: String, probability: Double): MoveStatusCondition = {
-    val __obj = js.Dynamic.literal(condition = condition, probability = probability)
+    val __obj = js.Dynamic.literal(condition = condition.asInstanceOf[js.Any], probability = probability.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MoveStatusCondition]
   }

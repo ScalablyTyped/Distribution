@@ -13,8 +13,8 @@ object Testers {
   @scala.inline
   def apply(googleGroups: js.Array[String] = null, googlePlusCommunities: js.Array[String] = null): Testers = {
     val __obj = js.Dynamic.literal()
-    if (googleGroups != null) __obj.updateDynamic("googleGroups")(googleGroups)
-    if (googlePlusCommunities != null) __obj.updateDynamic("googlePlusCommunities")(googlePlusCommunities)
+    if (googleGroups != null) __obj.updateDynamic("googleGroups")(googleGroups.asInstanceOf[js.Any])
+    if (googlePlusCommunities != null) __obj.updateDynamic("googlePlusCommunities")(googlePlusCommunities.asInstanceOf[js.Any])
     __obj.asInstanceOf[Testers]
   }
 }

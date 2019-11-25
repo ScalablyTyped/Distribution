@@ -51,19 +51,19 @@ object RemarketingList {
     subaccountId: String = null
   ): RemarketingList = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId)
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
-    if (advertiserId != null) __obj.updateDynamic("advertiserId")(advertiserId)
-    if (advertiserIdDimensionValue != null) __obj.updateDynamic("advertiserIdDimensionValue")(advertiserIdDimensionValue)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (lifeSpan != null) __obj.updateDynamic("lifeSpan")(lifeSpan)
-    if (listPopulationRule != null) __obj.updateDynamic("listPopulationRule")(listPopulationRule)
-    if (listSize != null) __obj.updateDynamic("listSize")(listSize)
-    if (listSource != null) __obj.updateDynamic("listSource")(listSource)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (subaccountId != null) __obj.updateDynamic("subaccountId")(subaccountId)
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (advertiserId != null) __obj.updateDynamic("advertiserId")(advertiserId.asInstanceOf[js.Any])
+    if (advertiserIdDimensionValue != null) __obj.updateDynamic("advertiserIdDimensionValue")(advertiserIdDimensionValue.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (lifeSpan != null) __obj.updateDynamic("lifeSpan")(lifeSpan.asInstanceOf[js.Any])
+    if (listPopulationRule != null) __obj.updateDynamic("listPopulationRule")(listPopulationRule.asInstanceOf[js.Any])
+    if (listSize != null) __obj.updateDynamic("listSize")(listSize.asInstanceOf[js.Any])
+    if (listSource != null) __obj.updateDynamic("listSource")(listSource.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (subaccountId != null) __obj.updateDynamic("subaccountId")(subaccountId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemarketingList]
   }
 }

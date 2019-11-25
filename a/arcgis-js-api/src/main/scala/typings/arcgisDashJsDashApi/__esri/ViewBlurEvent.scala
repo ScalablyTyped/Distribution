@@ -12,7 +12,7 @@ trait ViewBlurEvent extends js.Object {
 object ViewBlurEvent {
   @scala.inline
   def apply(native: js.Any, target: View): ViewBlurEvent = {
-    val __obj = js.Dynamic.literal(native = native, target = target)
+    val __obj = js.Dynamic.literal(native = native.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ViewBlurEvent]
   }

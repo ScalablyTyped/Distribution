@@ -32,15 +32,15 @@ object IBoundingHex {
     `type`: String = null,
     units: String = null
   ): IBoundingHex = {
-    val __obj = js.Dynamic.literal(radius = radius)
-    if (exporterOptions != null) __obj.updateDynamic("exporterOptions")(exporterOptions)
-    if (layer != null) __obj.updateDynamic("layer")(layer)
-    if (models != null) __obj.updateDynamic("models")(models)
-    if (notes != null) __obj.updateDynamic("notes")(notes)
-    if (origin != null) __obj.updateDynamic("origin")(origin)
-    if (paths != null) __obj.updateDynamic("paths")(paths)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (units != null) __obj.updateDynamic("units")(units)
+    val __obj = js.Dynamic.literal(radius = radius.asInstanceOf[js.Any])
+    if (exporterOptions != null) __obj.updateDynamic("exporterOptions")(exporterOptions.asInstanceOf[js.Any])
+    if (layer != null) __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
+    if (models != null) __obj.updateDynamic("models")(models.asInstanceOf[js.Any])
+    if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
+    if (paths != null) __obj.updateDynamic("paths")(paths.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBoundingHex]
   }
 }

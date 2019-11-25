@@ -9,9 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.std.Map because Already inherited
-- typings.atIonicCliDashFramework.definitionsMod.ICommandMap because Already inherited */ @JSImport("@ionic/cli-framework/lib", "CommandMap")
+@JSImport("@ionic/cli-framework/lib", "CommandMap")
 @js.native
 class CommandMap ()
   extends AliasedMap[

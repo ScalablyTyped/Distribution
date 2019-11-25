@@ -31,14 +31,14 @@ object EnvConfiguration {
     specFilter: js.Function = null
   ): EnvConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(failFast)) __obj.updateDynamic("failFast")(failFast)
-    if (!js.isUndefined(failSpecWithNoExpectations)) __obj.updateDynamic("failSpecWithNoExpectations")(failSpecWithNoExpectations)
-    if (!js.isUndefined(hideDisabled)) __obj.updateDynamic("hideDisabled")(hideDisabled)
-    if (!js.isUndefined(oneFailurePerSpec)) __obj.updateDynamic("oneFailurePerSpec")(oneFailurePerSpec)
-    if (promise != null) __obj.updateDynamic("promise")(promise)
-    if (!js.isUndefined(random)) __obj.updateDynamic("random")(random)
+    if (!js.isUndefined(failFast)) __obj.updateDynamic("failFast")(failFast.asInstanceOf[js.Any])
+    if (!js.isUndefined(failSpecWithNoExpectations)) __obj.updateDynamic("failSpecWithNoExpectations")(failSpecWithNoExpectations.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideDisabled)) __obj.updateDynamic("hideDisabled")(hideDisabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(oneFailurePerSpec)) __obj.updateDynamic("oneFailurePerSpec")(oneFailurePerSpec.asInstanceOf[js.Any])
+    if (promise != null) __obj.updateDynamic("promise")(promise.asInstanceOf[js.Any])
+    if (!js.isUndefined(random)) __obj.updateDynamic("random")(random.asInstanceOf[js.Any])
     if (seed != null) __obj.updateDynamic("seed")(seed.asInstanceOf[js.Any])
-    if (specFilter != null) __obj.updateDynamic("specFilter")(specFilter)
+    if (specFilter != null) __obj.updateDynamic("specFilter")(specFilter.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnvConfiguration]
   }
 }

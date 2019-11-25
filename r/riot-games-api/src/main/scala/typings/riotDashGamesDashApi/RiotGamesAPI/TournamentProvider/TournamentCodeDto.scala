@@ -37,7 +37,7 @@ object TournamentCodeDto {
     teamSize: Double,
     tournamentId: Double
   ): TournamentCodeDto = {
-    val __obj = js.Dynamic.literal(code = code, id = id, lobbyName = lobbyName, map = map, metaData = metaData, participants = participants, password = password, pickType = pickType, providerId = providerId, region = region, spectators = spectators, teamSize = teamSize, tournamentId = tournamentId)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], lobbyName = lobbyName.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], metaData = metaData.asInstanceOf[js.Any], participants = participants.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], pickType = pickType.asInstanceOf[js.Any], providerId = providerId.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], spectators = spectators.asInstanceOf[js.Any], teamSize = teamSize.asInstanceOf[js.Any], tournamentId = tournamentId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TournamentCodeDto]
   }

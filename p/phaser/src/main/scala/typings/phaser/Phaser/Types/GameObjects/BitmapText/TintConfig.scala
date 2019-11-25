@@ -26,7 +26,7 @@ trait TintConfig extends js.Object {
 object TintConfig {
   @scala.inline
   def apply(bottomLeft: Double, bottomRight: Double, topLeft: Double, topRight: Double): TintConfig = {
-    val __obj = js.Dynamic.literal(bottomLeft = bottomLeft, bottomRight = bottomRight, topLeft = topLeft, topRight = topRight)
+    val __obj = js.Dynamic.literal(bottomLeft = bottomLeft.asInstanceOf[js.Any], bottomRight = bottomRight.asInstanceOf[js.Any], topLeft = topLeft.asInstanceOf[js.Any], topRight = topRight.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TintConfig]
   }

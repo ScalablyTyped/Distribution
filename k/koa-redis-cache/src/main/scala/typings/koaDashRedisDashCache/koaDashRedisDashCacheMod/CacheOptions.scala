@@ -58,14 +58,14 @@ object CacheOptions {
     routes: js.Array[RouteOptions | String] = null
   ): CacheOptions = {
     val __obj = js.Dynamic.literal()
-    if (exclude != null) __obj.updateDynamic("exclude")(exclude)
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
     if (expire != null) __obj.updateDynamic("expire")(expire.asInstanceOf[js.Any])
     if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
     if (onerror != null) __obj.updateDynamic("onerror")(js.Any.fromFunction1(onerror))
-    if (passParam != null) __obj.updateDynamic("passParam")(passParam)
+    if (passParam != null) __obj.updateDynamic("passParam")(passParam.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (redis != null) __obj.updateDynamic("redis")(redis)
-    if (routes != null) __obj.updateDynamic("routes")(routes)
+    if (redis != null) __obj.updateDynamic("redis")(redis.asInstanceOf[js.Any])
+    if (routes != null) __obj.updateDynamic("routes")(routes.asInstanceOf[js.Any])
     __obj.asInstanceOf[CacheOptions]
   }
 }

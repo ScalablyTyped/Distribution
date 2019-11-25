@@ -27,7 +27,7 @@ object Neighbor {
     numberOfRandomTransactionRequests: Double,
     numberOfSentTransactions: Double
   ): Neighbor = {
-    val __obj = js.Dynamic.literal(address = address, connectionType = connectionType.asInstanceOf[js.Any], numberOfAllTransactions = numberOfAllTransactions, numberOfInvalidTransactions = numberOfInvalidTransactions, numberOfNewTransactions = numberOfNewTransactions, numberOfRandomTransactionRequests = numberOfRandomTransactionRequests, numberOfSentTransactions = numberOfSentTransactions)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], connectionType = connectionType.asInstanceOf[js.Any], numberOfAllTransactions = numberOfAllTransactions.asInstanceOf[js.Any], numberOfInvalidTransactions = numberOfInvalidTransactions.asInstanceOf[js.Any], numberOfNewTransactions = numberOfNewTransactions.asInstanceOf[js.Any], numberOfRandomTransactionRequests = numberOfRandomTransactionRequests.asInstanceOf[js.Any], numberOfSentTransactions = numberOfSentTransactions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Neighbor]
   }

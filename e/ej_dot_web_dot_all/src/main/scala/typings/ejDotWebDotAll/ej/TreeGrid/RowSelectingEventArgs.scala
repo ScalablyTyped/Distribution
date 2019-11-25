@@ -40,13 +40,13 @@ object RowSelectingEventArgs {
     targetRow: js.Any = null
   ): RowSelectingEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (previousData != null) __obj.updateDynamic("previousData")(previousData)
-    if (previousIndex != null) __obj.updateDynamic("previousIndex")(previousIndex)
-    if (previousTreeGridRow != null) __obj.updateDynamic("previousTreeGridRow")(previousTreeGridRow)
-    if (recordIndex != null) __obj.updateDynamic("recordIndex")(recordIndex)
-    if (targetRow != null) __obj.updateDynamic("targetRow")(targetRow)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (previousData != null) __obj.updateDynamic("previousData")(previousData.asInstanceOf[js.Any])
+    if (previousIndex != null) __obj.updateDynamic("previousIndex")(previousIndex.asInstanceOf[js.Any])
+    if (previousTreeGridRow != null) __obj.updateDynamic("previousTreeGridRow")(previousTreeGridRow.asInstanceOf[js.Any])
+    if (recordIndex != null) __obj.updateDynamic("recordIndex")(recordIndex.asInstanceOf[js.Any])
+    if (targetRow != null) __obj.updateDynamic("targetRow")(targetRow.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowSelectingEventArgs]
   }
 }

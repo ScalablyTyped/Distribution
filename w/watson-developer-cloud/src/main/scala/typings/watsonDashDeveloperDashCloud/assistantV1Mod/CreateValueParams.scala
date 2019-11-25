@@ -38,12 +38,12 @@ object CreateValueParams {
     synonyms: js.Array[String] = null,
     value_type: ValueType | String = null
   ): CreateValueParams = {
-    val __obj = js.Dynamic.literal(entity = entity, value = value, workspace_id = workspace_id)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (patterns != null) __obj.updateDynamic("patterns")(patterns)
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response)
-    if (synonyms != null) __obj.updateDynamic("synonyms")(synonyms)
+    val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], workspace_id = workspace_id.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (patterns != null) __obj.updateDynamic("patterns")(patterns.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
+    if (synonyms != null) __obj.updateDynamic("synonyms")(synonyms.asInstanceOf[js.Any])
     if (value_type != null) __obj.updateDynamic("value_type")(value_type.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateValueParams]
   }

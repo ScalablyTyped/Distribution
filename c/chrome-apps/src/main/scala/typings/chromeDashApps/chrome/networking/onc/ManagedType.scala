@@ -45,11 +45,11 @@ object ManagedType {
   ): ManagedType[T] = {
     val __obj = js.Dynamic.literal()
     if (Active != null) __obj.updateDynamic("Active")(Active.asInstanceOf[js.Any])
-    if (!js.isUndefined(DeviceEditable)) __obj.updateDynamic("DeviceEditable")(DeviceEditable)
+    if (!js.isUndefined(DeviceEditable)) __obj.updateDynamic("DeviceEditable")(DeviceEditable.asInstanceOf[js.Any])
     if (DevicePolicy != null) __obj.updateDynamic("DevicePolicy")(DevicePolicy.asInstanceOf[js.Any])
-    if (Effective != null) __obj.updateDynamic("Effective")(Effective)
+    if (Effective != null) __obj.updateDynamic("Effective")(Effective.asInstanceOf[js.Any])
     if (SharedSetting != null) __obj.updateDynamic("SharedSetting")(SharedSetting.asInstanceOf[js.Any])
-    if (!js.isUndefined(UserEditable)) __obj.updateDynamic("UserEditable")(UserEditable)
+    if (!js.isUndefined(UserEditable)) __obj.updateDynamic("UserEditable")(UserEditable.asInstanceOf[js.Any])
     if (UserPolicy != null) __obj.updateDynamic("UserPolicy")(UserPolicy.asInstanceOf[js.Any])
     if (UserSetting != null) __obj.updateDynamic("UserSetting")(UserSetting.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagedType[T]]

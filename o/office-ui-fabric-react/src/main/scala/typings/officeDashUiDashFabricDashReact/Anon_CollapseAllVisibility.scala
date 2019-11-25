@@ -19,7 +19,7 @@ object Anon_CollapseAllVisibility {
     selectAllVisibility: SelectAllVisibility,
     useFastIcons: Boolean
   ): Anon_CollapseAllVisibility = {
-    val __obj = js.Dynamic.literal(collapseAllVisibility = collapseAllVisibility, selectAllVisibility = selectAllVisibility, useFastIcons = useFastIcons)
+    val __obj = js.Dynamic.literal(collapseAllVisibility = collapseAllVisibility.asInstanceOf[js.Any], selectAllVisibility = selectAllVisibility.asInstanceOf[js.Any], useFastIcons = useFastIcons.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CollapseAllVisibility]
   }

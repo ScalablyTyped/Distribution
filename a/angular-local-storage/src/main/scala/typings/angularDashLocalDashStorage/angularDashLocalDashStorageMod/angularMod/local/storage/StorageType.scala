@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait StorageType extends js.Object
 
+object StorageType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def localStorage: typings.angularDashLocalDashStorage.angularDashLocalDashStorageStrings.localStorage = this.cast("localStorage")
+  @scala.inline
+  def sessionStorage: typings.angularDashLocalDashStorage.angularDashLocalDashStorageStrings.sessionStorage = this.cast("sessionStorage")
+}
+

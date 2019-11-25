@@ -30,7 +30,7 @@ object NavigationButtonThemeOptions {
     val __obj = js.Dynamic.literal()
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationButtonThemeOptions]
   }
 }

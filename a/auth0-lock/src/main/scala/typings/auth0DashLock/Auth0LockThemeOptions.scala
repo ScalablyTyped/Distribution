@@ -22,11 +22,11 @@ object Auth0LockThemeOptions {
     primaryColor: String = null
   ): Auth0LockThemeOptions = {
     val __obj = js.Dynamic.literal()
-    if (authButtons != null) __obj.updateDynamic("authButtons")(authButtons)
-    if (!js.isUndefined(hideMainScreenTitle)) __obj.updateDynamic("hideMainScreenTitle")(hideMainScreenTitle)
-    if (!js.isUndefined(labeledSubmitButton)) __obj.updateDynamic("labeledSubmitButton")(labeledSubmitButton)
-    if (logo != null) __obj.updateDynamic("logo")(logo)
-    if (primaryColor != null) __obj.updateDynamic("primaryColor")(primaryColor)
+    if (authButtons != null) __obj.updateDynamic("authButtons")(authButtons.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideMainScreenTitle)) __obj.updateDynamic("hideMainScreenTitle")(hideMainScreenTitle.asInstanceOf[js.Any])
+    if (!js.isUndefined(labeledSubmitButton)) __obj.updateDynamic("labeledSubmitButton")(labeledSubmitButton.asInstanceOf[js.Any])
+    if (logo != null) __obj.updateDynamic("logo")(logo.asInstanceOf[js.Any])
+    if (primaryColor != null) __obj.updateDynamic("primaryColor")(primaryColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Auth0LockThemeOptions]
   }
 }

@@ -12,7 +12,7 @@ trait SmartHomeV1QueryRequest extends SmartHomeV1Request {
 object SmartHomeV1QueryRequest {
   @scala.inline
   def apply(inputs: js.Array[SmartHomeV1QueryRequestInputs], requestId: String): SmartHomeV1QueryRequest = {
-    val __obj = js.Dynamic.literal(inputs = inputs, requestId = requestId)
+    val __obj = js.Dynamic.literal(inputs = inputs.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SmartHomeV1QueryRequest]
   }

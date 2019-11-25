@@ -12,8 +12,8 @@ trait WrappedRecord extends js.Object {
 object WrappedRecord {
   @scala.inline
   def apply(columnValues: js.Object, `object`: js.Object): WrappedRecord = {
-    val __obj = js.Dynamic.literal(columnValues = columnValues)
-    __obj.updateDynamic("object")(`object`)
+    val __obj = js.Dynamic.literal(columnValues = columnValues.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WrappedRecord]
   }
 }

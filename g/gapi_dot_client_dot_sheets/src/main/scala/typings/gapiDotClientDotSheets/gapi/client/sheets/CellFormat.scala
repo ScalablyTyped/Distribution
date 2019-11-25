@@ -45,17 +45,17 @@ object CellFormat {
     wrapStrategy: String = null
   ): CellFormat = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
-    if (borders != null) __obj.updateDynamic("borders")(borders)
-    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment)
-    if (hyperlinkDisplayType != null) __obj.updateDynamic("hyperlinkDisplayType")(hyperlinkDisplayType)
-    if (numberFormat != null) __obj.updateDynamic("numberFormat")(numberFormat)
-    if (padding != null) __obj.updateDynamic("padding")(padding)
-    if (textDirection != null) __obj.updateDynamic("textDirection")(textDirection)
-    if (textFormat != null) __obj.updateDynamic("textFormat")(textFormat)
-    if (textRotation != null) __obj.updateDynamic("textRotation")(textRotation)
-    if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment)
-    if (wrapStrategy != null) __obj.updateDynamic("wrapStrategy")(wrapStrategy)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (borders != null) __obj.updateDynamic("borders")(borders.asInstanceOf[js.Any])
+    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
+    if (hyperlinkDisplayType != null) __obj.updateDynamic("hyperlinkDisplayType")(hyperlinkDisplayType.asInstanceOf[js.Any])
+    if (numberFormat != null) __obj.updateDynamic("numberFormat")(numberFormat.asInstanceOf[js.Any])
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (textDirection != null) __obj.updateDynamic("textDirection")(textDirection.asInstanceOf[js.Any])
+    if (textFormat != null) __obj.updateDynamic("textFormat")(textFormat.asInstanceOf[js.Any])
+    if (textRotation != null) __obj.updateDynamic("textRotation")(textRotation.asInstanceOf[js.Any])
+    if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
+    if (wrapStrategy != null) __obj.updateDynamic("wrapStrategy")(wrapStrategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellFormat]
   }
 }

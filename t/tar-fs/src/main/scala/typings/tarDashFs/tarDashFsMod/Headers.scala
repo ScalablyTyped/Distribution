@@ -30,7 +30,7 @@ object Headers {
     `type`: file | directory | link | symlink,
     uid: Double
   ): Headers = {
-    val __obj = js.Dynamic.literal(gid = gid, mode = mode, mtime = mtime, name = name, size = size, uid = uid)
+    val __obj = js.Dynamic.literal(gid = gid.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], mtime = mtime.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Headers]
   }

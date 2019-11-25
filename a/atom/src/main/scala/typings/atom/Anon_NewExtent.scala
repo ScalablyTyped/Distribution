@@ -19,7 +19,7 @@ trait Anon_NewExtent extends js.Object {
 object Anon_NewExtent {
   @scala.inline
   def apply(newExtent: Point, newText: String, oldExtent: Point, start: Point): Anon_NewExtent = {
-    val __obj = js.Dynamic.literal(newExtent = newExtent, newText = newText, oldExtent = oldExtent, start = start)
+    val __obj = js.Dynamic.literal(newExtent = newExtent.asInstanceOf[js.Any], newText = newText.asInstanceOf[js.Any], oldExtent = oldExtent.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_NewExtent]
   }

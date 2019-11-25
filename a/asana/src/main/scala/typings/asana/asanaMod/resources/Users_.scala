@@ -2,7 +2,6 @@ package typings.asana.asanaMod.resources
 
 import typings.asana.asanaMod.resources.Users.FindAllParams
 import typings.asana.asanaMod.resources.Users.Type
-import typings.bluebird.bluebirdMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,8 +31,8 @@ trait Users_ extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def findAll(params: FindAllParams): ^[SimpleResourceList] = js.native
-  def findAll(params: FindAllParams, dispatchOptions: js.Any): ^[SimpleResourceList] = js.native
+  def findAll(params: FindAllParams): typings.bluebird.bluebirdMod.^[SimpleResourceList] = js.native
+  def findAll(params: FindAllParams, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[SimpleResourceList] = js.native
   /**
     * * Returns the full user record for the single user with the provided ID.
     *   * @param {Number|String} user An identifier for the user. Can be one of an email address,
@@ -47,12 +46,12 @@ trait Users_ extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def findById(user: String): ^[Type] = js.native
-  def findById(user: String, params: Params): ^[Type] = js.native
-  def findById(user: String, params: Params, dispatchOptions: js.Any): ^[Type] = js.native
-  def findById(user: Double): ^[Type] = js.native
-  def findById(user: Double, params: Params): ^[Type] = js.native
-  def findById(user: Double, params: Params, dispatchOptions: js.Any): ^[Type] = js.native
+  def findById(user: String): typings.bluebird.bluebirdMod.^[Type] = js.native
+  def findById(user: String, params: Params): typings.bluebird.bluebirdMod.^[Type] = js.native
+  def findById(user: String, params: Params, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[Type] = js.native
+  def findById(user: Double): typings.bluebird.bluebirdMod.^[Type] = js.native
+  def findById(user: Double, params: Params): typings.bluebird.bluebirdMod.^[Type] = js.native
+  def findById(user: Double, params: Params, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[Type] = js.native
   /**
     * * Returns the user records for all users in the specified workspace or
     * * organization.
@@ -65,9 +64,9 @@ trait Users_ extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def findByWorkspace(workspace: Double): ^[ResourceList[Type]] = js.native
-  def findByWorkspace(workspace: Double, params: Params): ^[ResourceList[Type]] = js.native
-  def findByWorkspace(workspace: Double, params: Params, dispatchOptions: js.Any): ^[ResourceList[Type]] = js.native
+  def findByWorkspace(workspace: Double): typings.bluebird.bluebirdMod.^[ResourceList[Type]] = js.native
+  def findByWorkspace(workspace: Double, params: Params): typings.bluebird.bluebirdMod.^[ResourceList[Type]] = js.native
+  def findByWorkspace(workspace: Double, params: Params, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[ResourceList[Type]] = js.native
   /**
     * * Returns the full user record for the currently authenticated user.
     *   * @param {Object} [params] Parameters for the request
@@ -77,8 +76,8 @@ trait Users_ extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def me(): ^[Type] = js.native
-  def me(params: Params): ^[Type] = js.native
-  def me(params: Params, dispatchOptions: js.Any): ^[Type] = js.native
+  def me(): typings.bluebird.bluebirdMod.^[Type] = js.native
+  def me(params: Params): typings.bluebird.bluebirdMod.^[Type] = js.native
+  def me(params: Params, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[Type] = js.native
 }
 

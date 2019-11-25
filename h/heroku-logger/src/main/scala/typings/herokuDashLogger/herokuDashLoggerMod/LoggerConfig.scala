@@ -20,10 +20,10 @@ object LoggerConfig {
     readable: js.UndefOr[Boolean] = js.undefined
   ): LoggerConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color)
-    if (level != null) __obj.updateDynamic("level")(level)
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
-    if (!js.isUndefined(readable)) __obj.updateDynamic("readable")(readable)
+    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    if (!js.isUndefined(readable)) __obj.updateDynamic("readable")(readable.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoggerConfig]
   }
 }

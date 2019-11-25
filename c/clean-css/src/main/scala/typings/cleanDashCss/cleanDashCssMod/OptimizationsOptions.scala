@@ -18,8 +18,8 @@ object OptimizationsOptions {
   @scala.inline
   def apply(`1`: Anon_All = null, `2`: Anon_AllMergeAdjacentRules = null): OptimizationsOptions = {
     val __obj = js.Dynamic.literal()
-    if (`1` != null) __obj.updateDynamic("1")(`1`)
-    if (`2` != null) __obj.updateDynamic("2")(`2`)
+    if (`1` != null) __obj.updateDynamic("1")(`1`.asInstanceOf[js.Any])
+    if (`2` != null) __obj.updateDynamic("2")(`2`.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptimizationsOptions]
   }
 }

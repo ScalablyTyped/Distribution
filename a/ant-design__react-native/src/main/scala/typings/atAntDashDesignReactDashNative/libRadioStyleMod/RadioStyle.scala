@@ -26,7 +26,7 @@ object RadioStyle {
     radioItemRadio: ViewStyle,
     wrapper: ViewStyle
   ): RadioStyle = {
-    val __obj = js.Dynamic.literal(icon = icon, radioItem = radioItem, radioItemContent = radioItemContent, radioItemContentDisable = radioItemContentDisable, radioItemRadio = radioItemRadio, wrapper = wrapper)
+    val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], radioItem = radioItem.asInstanceOf[js.Any], radioItemContent = radioItemContent.asInstanceOf[js.Any], radioItemContentDisable = radioItemContentDisable.asInstanceOf[js.Any], radioItemRadio = radioItemRadio.asInstanceOf[js.Any], wrapper = wrapper.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RadioStyle]
   }

@@ -12,7 +12,7 @@ object GistsListResponseItemFiles {
   @scala.inline
   def apply(`hello_world.rb`: GistsListResponseItemFilesHelloWorldRb): GistsListResponseItemFiles = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hello_world.rb")(`hello_world.rb`)
+    __obj.updateDynamic("hello_world.rb")(`hello_world.rb`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GistsListResponseItemFiles]
   }
 }

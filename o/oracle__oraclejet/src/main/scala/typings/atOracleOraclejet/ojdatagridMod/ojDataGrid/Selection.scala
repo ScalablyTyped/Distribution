@@ -23,10 +23,10 @@ object Selection {
     startKey: Anon_ColumnRowKOptional[K] = null
   ): Selection[K] = {
     val __obj = js.Dynamic.literal()
-    if (endIndex != null) __obj.updateDynamic("endIndex")(endIndex)
-    if (endKey != null) __obj.updateDynamic("endKey")(endKey)
-    if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex)
-    if (startKey != null) __obj.updateDynamic("startKey")(startKey)
+    if (endIndex != null) __obj.updateDynamic("endIndex")(endIndex.asInstanceOf[js.Any])
+    if (endKey != null) __obj.updateDynamic("endKey")(endKey.asInstanceOf[js.Any])
+    if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
+    if (startKey != null) __obj.updateDynamic("startKey")(startKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[Selection[K]]
   }
 }

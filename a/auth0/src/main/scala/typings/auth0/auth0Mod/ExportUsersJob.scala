@@ -28,13 +28,13 @@ object ExportUsersJob {
     format: JobFormat = null,
     location: String = null
   ): ExportUsersJob = {
-    val __obj = js.Dynamic.literal(id = id, status = status)
-    __obj.updateDynamic("type")(`type`)
-    if (connection_id != null) __obj.updateDynamic("connection_id")(connection_id)
-    if (created_at != null) __obj.updateDynamic("created_at")(created_at)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (location != null) __obj.updateDynamic("location")(location)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (connection_id != null) __obj.updateDynamic("connection_id")(connection_id.asInstanceOf[js.Any])
+    if (created_at != null) __obj.updateDynamic("created_at")(created_at.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportUsersJob]
   }
 }

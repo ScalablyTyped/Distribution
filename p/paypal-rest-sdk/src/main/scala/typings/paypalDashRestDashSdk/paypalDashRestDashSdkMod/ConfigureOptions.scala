@@ -35,16 +35,16 @@ object ConfigureOptions {
     port: String = null,
     schema: String = null
   ): ConfigureOptions = {
-    val __obj = js.Dynamic.literal(client_id = client_id, client_secret = client_secret, mode = mode)
-    if (authorize_url != null) __obj.updateDynamic("authorize_url")(authorize_url)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (logout_url != null) __obj.updateDynamic("logout_url")(logout_url)
-    if (openid_connect_host != null) __obj.updateDynamic("openid_connect_host")(openid_connect_host)
-    if (openid_connect_port != null) __obj.updateDynamic("openid_connect_port")(openid_connect_port)
-    if (openid_connect_schema != null) __obj.updateDynamic("openid_connect_schema")(openid_connect_schema)
-    if (port != null) __obj.updateDynamic("port")(port)
-    if (schema != null) __obj.updateDynamic("schema")(schema)
+    val __obj = js.Dynamic.literal(client_id = client_id.asInstanceOf[js.Any], client_secret = client_secret.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any])
+    if (authorize_url != null) __obj.updateDynamic("authorize_url")(authorize_url.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (logout_url != null) __obj.updateDynamic("logout_url")(logout_url.asInstanceOf[js.Any])
+    if (openid_connect_host != null) __obj.updateDynamic("openid_connect_host")(openid_connect_host.asInstanceOf[js.Any])
+    if (openid_connect_port != null) __obj.updateDynamic("openid_connect_port")(openid_connect_port.asInstanceOf[js.Any])
+    if (openid_connect_schema != null) __obj.updateDynamic("openid_connect_schema")(openid_connect_schema.asInstanceOf[js.Any])
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigureOptions]
   }
 }

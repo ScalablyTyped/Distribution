@@ -12,7 +12,7 @@ object IntrinsicAttributes {
   @scala.inline
   def apply(key: js.Any = null): IntrinsicAttributes = {
     val __obj = js.Dynamic.literal()
-    if (key != null) __obj.updateDynamic("key")(key)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrinsicAttributes]
   }
 }

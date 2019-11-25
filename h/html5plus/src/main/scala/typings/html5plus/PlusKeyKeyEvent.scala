@@ -31,7 +31,7 @@ object PlusKeyKeyEvent {
   def apply(keyCode: Int | Double = null, keyType: PlusKeyKeyType = null): PlusKeyKeyEvent = {
     val __obj = js.Dynamic.literal()
     if (keyCode != null) __obj.updateDynamic("keyCode")(keyCode.asInstanceOf[js.Any])
-    if (keyType != null) __obj.updateDynamic("keyType")(keyType)
+    if (keyType != null) __obj.updateDynamic("keyType")(keyType.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusKeyKeyEvent]
   }
 }

@@ -28,12 +28,12 @@ object LDAPjsReqProps {
     strictDN: js.UndefOr[Boolean] = js.undefined,
     timeout: Int | Double = null
   ): LDAPjsReqProps = {
-    val __obj = js.Dynamic.literal(tlsOptions = tlsOptions, url = url)
+    val __obj = js.Dynamic.literal(tlsOptions = tlsOptions.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     if (connectionTimeout != null) __obj.updateDynamic("connectionTimeout")(connectionTimeout.asInstanceOf[js.Any])
     if (idleTimeout != null) __obj.updateDynamic("idleTimeout")(idleTimeout.asInstanceOf[js.Any])
-    if (log != null) __obj.updateDynamic("log")(log)
-    if (socketPath != null) __obj.updateDynamic("socketPath")(socketPath)
-    if (!js.isUndefined(strictDN)) __obj.updateDynamic("strictDN")(strictDN)
+    if (log != null) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
+    if (socketPath != null) __obj.updateDynamic("socketPath")(socketPath.asInstanceOf[js.Any])
+    if (!js.isUndefined(strictDN)) __obj.updateDynamic("strictDN")(strictDN.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[LDAPjsReqProps]
   }

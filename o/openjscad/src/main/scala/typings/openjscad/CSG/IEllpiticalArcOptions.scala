@@ -24,8 +24,8 @@ object IEllpiticalArcOptions {
     yradius: Int | Double = null
   ): IEllpiticalArcOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(clockwise)) __obj.updateDynamic("clockwise")(clockwise)
-    if (!js.isUndefined(large)) __obj.updateDynamic("large")(large)
+    if (!js.isUndefined(clockwise)) __obj.updateDynamic("clockwise")(clockwise.asInstanceOf[js.Any])
+    if (!js.isUndefined(large)) __obj.updateDynamic("large")(large.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
     if (resolution != null) __obj.updateDynamic("resolution")(resolution.asInstanceOf[js.Any])
     if (xaxisrotation != null) __obj.updateDynamic("xaxisrotation")(xaxisrotation.asInstanceOf[js.Any])

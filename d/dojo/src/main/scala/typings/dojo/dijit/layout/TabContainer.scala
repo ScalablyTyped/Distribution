@@ -1,8 +1,6 @@
 package typings.dojo.dijit.layout
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValue
 import typings.dojo.dojoStrings.controllerWidget
 import typings.dojo.dojoStrings.useMenu
 import typings.dojo.dojoStrings.useSlider
@@ -60,10 +58,34 @@ class TabContainer () extends _TabContainerBase {
   @JSName("set")
   def set_useSlider(property: useSlider, value: Boolean): Unit = js.native
   @JSName("watch")
-  def watch_controllerWidget(property: controllerWidget, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_controllerWidget(
+    property: controllerWidget,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_useMenu(property: useMenu, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_useMenu(
+    property: useMenu,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_useSlider(property: useSlider, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_useSlider(
+    property: useSlider,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

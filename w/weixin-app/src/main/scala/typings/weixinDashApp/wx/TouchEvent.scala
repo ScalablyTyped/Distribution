@@ -21,7 +21,7 @@ object TouchEvent {
     touches: js.Array[Touch],
     `type`: T
   ): TouchEvent[T] = {
-    val __obj = js.Dynamic.literal(changedTouches = changedTouches, currentTarget = currentTarget, detail = detail, target = target, timeStamp = timeStamp, touches = touches)
+    val __obj = js.Dynamic.literal(changedTouches = changedTouches.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], touches = touches.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TouchEvent[T]]
   }

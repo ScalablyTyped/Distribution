@@ -42,8 +42,8 @@ object Options {
     minCleanupIntervalMsec: Int | Double = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowMixedContent)) __obj.updateDynamic("allowMixedContent")(allowMixedContent)
-    if (!js.isUndefined(cloneBuffersOnGet)) __obj.updateDynamic("cloneBuffersOnGet")(cloneBuffersOnGet)
+    if (!js.isUndefined(allowMixedContent)) __obj.updateDynamic("allowMixedContent")(allowMixedContent.asInstanceOf[js.Any])
+    if (!js.isUndefined(cloneBuffersOnGet)) __obj.updateDynamic("cloneBuffersOnGet")(cloneBuffersOnGet.asInstanceOf[js.Any])
     if (maxByteSize != null) __obj.updateDynamic("maxByteSize")(maxByteSize.asInstanceOf[js.Any])
     if (minCleanupIntervalMsec != null) __obj.updateDynamic("minCleanupIntervalMsec")(minCleanupIntervalMsec.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

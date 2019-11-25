@@ -1,15 +1,14 @@
 package typings.videoDotJs.videoDotJsMod.default
 
-import typings.videoDotJs.videoDotJsMod.videojs.ErrorDisplay
 import typings.videoDotJs.videoDotJsMod.videojs.ModalDialogOptions
-import typings.videoDotJs.videoDotJsMod.videojs.Player
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("video.js", "ErrorDisplay")
 @js.native
-class ErrorDisplayCls protected () extends ErrorDisplay {
+class ErrorDisplayCls protected ()
+  extends typings.videoDotJs.videoDotJsMod.videojs.ErrorDisplay {
   /**
     * Creates an instance of this class.
     *
@@ -19,7 +18,7 @@ class ErrorDisplayCls protected () extends ErrorDisplay {
     * @param [options]
     *         The key/value store of player options.
     */
-  def this(player: Player) = this()
-  def this(player: Player, options: ModalDialogOptions) = this()
+  def this(player: typings.videoDotJs.videoDotJsMod.videojs.Player) = this()
+  def this(player: typings.videoDotJs.videoDotJsMod.videojs.Player, options: ModalDialogOptions) = this()
 }
 

@@ -24,7 +24,7 @@ object Mode {
     view: CssAndViewSpecificModeConfig | Boolean = null
   ): Mode = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
     if (defs != null) __obj.updateDynamic("defs")(defs.asInstanceOf[js.Any])
     if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])

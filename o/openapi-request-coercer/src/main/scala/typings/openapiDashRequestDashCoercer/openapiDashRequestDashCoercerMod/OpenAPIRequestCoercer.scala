@@ -23,7 +23,7 @@ object OpenAPIRequestCoercer {
     coerceQuery: js.Any,
     enableObjectCoercion: js.Any
   ): OpenAPIRequestCoercer = {
-    val __obj = js.Dynamic.literal(coerce = js.Any.fromFunction1(coerce), coerceFormData = coerceFormData, coerceHeaders = coerceHeaders, coerceParams = coerceParams, coerceQuery = coerceQuery, enableObjectCoercion = enableObjectCoercion)
+    val __obj = js.Dynamic.literal(coerce = js.Any.fromFunction1(coerce), coerceFormData = coerceFormData.asInstanceOf[js.Any], coerceHeaders = coerceHeaders.asInstanceOf[js.Any], coerceParams = coerceParams.asInstanceOf[js.Any], coerceQuery = coerceQuery.asInstanceOf[js.Any], enableObjectCoercion = enableObjectCoercion.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OpenAPIRequestCoercer]
   }

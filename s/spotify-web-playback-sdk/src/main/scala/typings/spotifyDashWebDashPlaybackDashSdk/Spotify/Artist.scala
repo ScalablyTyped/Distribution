@@ -12,7 +12,7 @@ trait Artist extends js.Object {
 object Artist {
   @scala.inline
   def apply(name: String, uri: String): Artist = {
-    val __obj = js.Dynamic.literal(name = name, uri = uri)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Artist]
   }

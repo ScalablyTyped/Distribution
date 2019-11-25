@@ -15,10 +15,10 @@ trait MessageEntity extends js.Object {
 object MessageEntity {
   @scala.inline
   def apply(length: Double, offset: Double, `type`: MessageEntityType, url: String = null, user: User = null): MessageEntity = {
-    val __obj = js.Dynamic.literal(length = length, offset = offset)
-    __obj.updateDynamic("type")(`type`)
-    if (url != null) __obj.updateDynamic("url")(url)
-    if (user != null) __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageEntity]
   }
 }

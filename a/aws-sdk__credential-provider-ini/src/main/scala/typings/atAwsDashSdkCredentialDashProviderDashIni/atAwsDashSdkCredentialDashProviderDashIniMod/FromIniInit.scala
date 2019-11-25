@@ -53,11 +53,11 @@ object FromIniInit {
     roleAssumer: (/* sourceCreds */ Credentials, /* params */ AssumeRoleParams) => js.Promise[Credentials] = null
   ): FromIniInit = {
     val __obj = js.Dynamic.literal()
-    if (configFilepath != null) __obj.updateDynamic("configFilepath")(configFilepath)
-    if (filepath != null) __obj.updateDynamic("filepath")(filepath)
-    if (loadedConfig != null) __obj.updateDynamic("loadedConfig")(loadedConfig)
+    if (configFilepath != null) __obj.updateDynamic("configFilepath")(configFilepath.asInstanceOf[js.Any])
+    if (filepath != null) __obj.updateDynamic("filepath")(filepath.asInstanceOf[js.Any])
+    if (loadedConfig != null) __obj.updateDynamic("loadedConfig")(loadedConfig.asInstanceOf[js.Any])
     if (mfaCodeProvider != null) __obj.updateDynamic("mfaCodeProvider")(js.Any.fromFunction1(mfaCodeProvider))
-    if (profile != null) __obj.updateDynamic("profile")(profile)
+    if (profile != null) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
     if (roleAssumer != null) __obj.updateDynamic("roleAssumer")(js.Any.fromFunction2(roleAssumer))
     __obj.asInstanceOf[FromIniInit]
   }

@@ -1,15 +1,14 @@
 package typings.videoDotJs.videoDotJsMod.default
 
 import typings.videoDotJs.videoDotJsMod.videojs.ComponentOptions
-import typings.videoDotJs.videoDotJsMod.videojs.Player
-import typings.videoDotJs.videoDotJsMod.videojs.TimeToolTip
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("video.js", "TimeToolTip")
 @js.native
-class TimeToolTipCls protected () extends TimeToolTip {
+class TimeToolTipCls protected ()
+  extends typings.videoDotJs.videoDotJsMod.videojs.TimeToolTip {
   /**
     * Creates an instance of this class.
     *
@@ -19,7 +18,7 @@ class TimeToolTipCls protected () extends TimeToolTip {
     * @param [options]
     *         The key/value store of player options.
     */
-  def this(player: Player) = this()
-  def this(player: Player, options: ComponentOptions) = this()
+  def this(player: typings.videoDotJs.videoDotJsMod.videojs.Player) = this()
+  def this(player: typings.videoDotJs.videoDotJsMod.videojs.Player, options: ComponentOptions) = this()
 }
 

@@ -24,8 +24,8 @@ object FederatedCredentialRequestOptions {
   @scala.inline
   def apply(protocols: js.Array[String] = null, providers: js.Array[String] = null): FederatedCredentialRequestOptions = {
     val __obj = js.Dynamic.literal()
-    if (protocols != null) __obj.updateDynamic("protocols")(protocols)
-    if (providers != null) __obj.updateDynamic("providers")(providers)
+    if (protocols != null) __obj.updateDynamic("protocols")(protocols.asInstanceOf[js.Any])
+    if (providers != null) __obj.updateDynamic("providers")(providers.asInstanceOf[js.Any])
     __obj.asInstanceOf[FederatedCredentialRequestOptions]
   }
 }

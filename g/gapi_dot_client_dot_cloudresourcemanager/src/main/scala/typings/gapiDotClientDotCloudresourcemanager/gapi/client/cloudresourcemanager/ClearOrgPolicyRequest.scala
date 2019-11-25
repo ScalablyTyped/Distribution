@@ -18,8 +18,8 @@ object ClearOrgPolicyRequest {
   @scala.inline
   def apply(constraint: String = null, etag: String = null): ClearOrgPolicyRequest = {
     val __obj = js.Dynamic.literal()
-    if (constraint != null) __obj.updateDynamic("constraint")(constraint)
-    if (etag != null) __obj.updateDynamic("etag")(etag)
+    if (constraint != null) __obj.updateDynamic("constraint")(constraint.asInstanceOf[js.Any])
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClearOrgPolicyRequest]
   }
 }

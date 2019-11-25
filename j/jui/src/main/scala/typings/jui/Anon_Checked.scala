@@ -20,10 +20,10 @@ object Anon_Checked {
     tpl: js.Any = null
   ): Anon_Checked = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
-    if (event != null) __obj.updateDynamic("event")(event)
-    if (toggleEvent != null) __obj.updateDynamic("toggleEvent")(toggleEvent)
-    if (tpl != null) __obj.updateDynamic("tpl")(tpl)
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
+    if (toggleEvent != null) __obj.updateDynamic("toggleEvent")(toggleEvent.asInstanceOf[js.Any])
+    if (tpl != null) __obj.updateDynamic("tpl")(tpl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Checked]
   }
 }

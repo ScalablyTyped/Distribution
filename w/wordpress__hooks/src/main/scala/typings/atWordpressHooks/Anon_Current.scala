@@ -11,7 +11,7 @@ trait Anon_Current[T /* <: js.Function1[/* repeated */ js.Any, _] */] extends js
 object Anon_Current {
   @scala.inline
   def apply[T /* <: js.Function1[/* repeated */ js.Any, _] */](__current: js.Array[T]): Anon_Current[T] = {
-    val __obj = js.Dynamic.literal(__current = __current)
+    val __obj = js.Dynamic.literal(__current = __current.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Current[T]]
   }

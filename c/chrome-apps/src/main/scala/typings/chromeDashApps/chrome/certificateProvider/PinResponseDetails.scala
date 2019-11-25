@@ -12,7 +12,7 @@ object PinResponseDetails {
   @scala.inline
   def apply(userInput: String = null): PinResponseDetails = {
     val __obj = js.Dynamic.literal()
-    if (userInput != null) __obj.updateDynamic("userInput")(userInput)
+    if (userInput != null) __obj.updateDynamic("userInput")(userInput.asInstanceOf[js.Any])
     __obj.asInstanceOf[PinResponseDetails]
   }
 }

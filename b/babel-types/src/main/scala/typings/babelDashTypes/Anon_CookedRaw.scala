@@ -13,8 +13,8 @@ object Anon_CookedRaw {
   @scala.inline
   def apply(cooked: String = null, raw: String = null): Anon_CookedRaw = {
     val __obj = js.Dynamic.literal()
-    if (cooked != null) __obj.updateDynamic("cooked")(cooked)
-    if (raw != null) __obj.updateDynamic("raw")(raw)
+    if (cooked != null) __obj.updateDynamic("cooked")(cooked.asInstanceOf[js.Any])
+    if (raw != null) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CookedRaw]
   }
 }

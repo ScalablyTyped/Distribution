@@ -14,7 +14,7 @@ object ManagedInstanceLastAttempt {
   @scala.inline
   def apply(errors: Anon_Errors = null): ManagedInstanceLastAttempt = {
     val __obj = js.Dynamic.literal()
-    if (errors != null) __obj.updateDynamic("errors")(errors)
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagedInstanceLastAttempt]
   }
 }

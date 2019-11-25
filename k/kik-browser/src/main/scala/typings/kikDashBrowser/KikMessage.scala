@@ -23,11 +23,11 @@ object KikMessage {
     noForward: js.UndefOr[Boolean] = js.undefined,
     pic: String = null
   ): KikMessage = {
-    val __obj = js.Dynamic.literal(text = text, title = title)
-    if (!js.isUndefined(big)) __obj.updateDynamic("big")(big)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (!js.isUndefined(noForward)) __obj.updateDynamic("noForward")(noForward)
-    if (pic != null) __obj.updateDynamic("pic")(pic)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    if (!js.isUndefined(big)) __obj.updateDynamic("big")(big.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (!js.isUndefined(noForward)) __obj.updateDynamic("noForward")(noForward.asInstanceOf[js.Any])
+    if (pic != null) __obj.updateDynamic("pic")(pic.asInstanceOf[js.Any])
     __obj.asInstanceOf[KikMessage]
   }
 }

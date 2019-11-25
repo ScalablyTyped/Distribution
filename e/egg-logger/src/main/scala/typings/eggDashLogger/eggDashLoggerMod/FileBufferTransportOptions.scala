@@ -22,14 +22,14 @@ object FileBufferTransportOptions {
     level: LoggerLevel = null,
     maxBufferLength: Int | Double = null
   ): FileBufferTransportOptions = {
-    val __obj = js.Dynamic.literal(file = file)
+    val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
     if (contextFormatter != null) __obj.updateDynamic("contextFormatter")(js.Any.fromFunction1(contextFormatter))
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
-    if (eol != null) __obj.updateDynamic("eol")(eol)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    if (eol != null) __obj.updateDynamic("eol")(eol.asInstanceOf[js.Any])
     if (flushInterval != null) __obj.updateDynamic("flushInterval")(flushInterval.asInstanceOf[js.Any])
     if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction1(formatter))
-    if (!js.isUndefined(json)) __obj.updateDynamic("json")(json)
-    if (level != null) __obj.updateDynamic("level")(level)
+    if (!js.isUndefined(json)) __obj.updateDynamic("json")(json.asInstanceOf[js.Any])
+    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (maxBufferLength != null) __obj.updateDynamic("maxBufferLength")(maxBufferLength.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileBufferTransportOptions]
   }

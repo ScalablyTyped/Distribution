@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait SafeAreaViewForceInsetValue extends js.Object
 
+object SafeAreaViewForceInsetValue {
+  @scala.inline
+  def always: typings.reactDashNavigation.reactDashNavigationStrings.always = this.cast("always")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def never: typings.reactDashNavigation.reactDashNavigationStrings.never = this.cast("never")
+}
+

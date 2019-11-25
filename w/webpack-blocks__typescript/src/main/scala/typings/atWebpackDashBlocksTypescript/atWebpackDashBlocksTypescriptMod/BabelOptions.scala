@@ -17,8 +17,8 @@ object BabelOptions {
     presets: js.Array[js.Array[Anon_Modules | String]] = null
   ): BabelOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(babelrc)) __obj.updateDynamic("babelrc")(babelrc)
-    if (presets != null) __obj.updateDynamic("presets")(presets)
+    if (!js.isUndefined(babelrc)) __obj.updateDynamic("babelrc")(babelrc.asInstanceOf[js.Any])
+    if (presets != null) __obj.updateDynamic("presets")(presets.asInstanceOf[js.Any])
     __obj.asInstanceOf[BabelOptions]
   }
 }

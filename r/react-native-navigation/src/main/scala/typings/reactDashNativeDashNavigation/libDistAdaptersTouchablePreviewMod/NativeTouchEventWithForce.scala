@@ -23,7 +23,7 @@ object NativeTouchEventWithForce {
     timestamp: Double,
     touches: js.Array[NativeTouchEvent]
   ): NativeTouchEventWithForce = {
-    val __obj = js.Dynamic.literal(changedTouches = changedTouches, force = force, identifier = identifier, locationX = locationX, locationY = locationY, pageX = pageX, pageY = pageY, target = target, timestamp = timestamp, touches = touches)
+    val __obj = js.Dynamic.literal(changedTouches = changedTouches.asInstanceOf[js.Any], force = force.asInstanceOf[js.Any], identifier = identifier.asInstanceOf[js.Any], locationX = locationX.asInstanceOf[js.Any], locationY = locationY.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], touches = touches.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NativeTouchEventWithForce]
   }

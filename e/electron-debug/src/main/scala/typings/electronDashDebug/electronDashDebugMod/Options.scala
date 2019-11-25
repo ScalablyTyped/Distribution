@@ -35,8 +35,8 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (devToolsMode != null) __obj.updateDynamic("devToolsMode")(devToolsMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(isEnabled)) __obj.updateDynamic("isEnabled")(isEnabled)
-    if (!js.isUndefined(showDevTools)) __obj.updateDynamic("showDevTools")(showDevTools)
+    if (!js.isUndefined(isEnabled)) __obj.updateDynamic("isEnabled")(isEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(showDevTools)) __obj.updateDynamic("showDevTools")(showDevTools.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

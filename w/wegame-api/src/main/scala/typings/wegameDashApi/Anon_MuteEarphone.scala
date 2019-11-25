@@ -22,8 +22,8 @@ object Anon_MuteEarphone {
     muteMicrophone: js.UndefOr[Boolean] = js.undefined
   ): Anon_MuteEarphone = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(muteEarphone)) __obj.updateDynamic("muteEarphone")(muteEarphone)
-    if (!js.isUndefined(muteMicrophone)) __obj.updateDynamic("muteMicrophone")(muteMicrophone)
+    if (!js.isUndefined(muteEarphone)) __obj.updateDynamic("muteEarphone")(muteEarphone.asInstanceOf[js.Any])
+    if (!js.isUndefined(muteMicrophone)) __obj.updateDynamic("muteMicrophone")(muteMicrophone.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_MuteEarphone]
   }
 }

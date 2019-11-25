@@ -15,8 +15,8 @@ object Anon_Duration {
   def apply(duration: Int | Double = null, hide: String = null, show: String = null): Anon_Duration = {
     val __obj = js.Dynamic.literal()
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (hide != null) __obj.updateDynamic("hide")(hide)
-    if (show != null) __obj.updateDynamic("show")(show)
+    if (hide != null) __obj.updateDynamic("hide")(hide.asInstanceOf[js.Any])
+    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Duration]
   }
 }

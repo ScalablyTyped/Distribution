@@ -17,7 +17,7 @@ object _UnmarshalledInputSerialization {
   @scala.inline
   def apply(csv: _UnmarshalledCSVInput = null): _UnmarshalledInputSerialization = {
     val __obj = js.Dynamic.literal()
-    if (csv != null) __obj.updateDynamic("csv")(csv)
+    if (csv != null) __obj.updateDynamic("csv")(csv.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledInputSerialization]
   }
 }

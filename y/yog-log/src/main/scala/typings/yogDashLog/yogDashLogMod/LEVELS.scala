@@ -27,13 +27,13 @@ object LEVELS {
   @scala.inline
   def apply(`0`: ACCESS, `1`: FATAL, `16`: DEBUG, `2`: WARNING, `3`: ACCESS_ERROR, `4`: NOTICE, `8`: TRACE): LEVELS = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("0")(`0`)
-    __obj.updateDynamic("1")(`1`)
-    __obj.updateDynamic("16")(`16`)
-    __obj.updateDynamic("2")(`2`)
-    __obj.updateDynamic("3")(`3`)
-    __obj.updateDynamic("4")(`4`)
-    __obj.updateDynamic("8")(`8`)
+    __obj.updateDynamic("0")(`0`.asInstanceOf[js.Any])
+    __obj.updateDynamic("1")(`1`.asInstanceOf[js.Any])
+    __obj.updateDynamic("16")(`16`.asInstanceOf[js.Any])
+    __obj.updateDynamic("2")(`2`.asInstanceOf[js.Any])
+    __obj.updateDynamic("3")(`3`.asInstanceOf[js.Any])
+    __obj.updateDynamic("4")(`4`.asInstanceOf[js.Any])
+    __obj.updateDynamic("8")(`8`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LEVELS]
   }
 }

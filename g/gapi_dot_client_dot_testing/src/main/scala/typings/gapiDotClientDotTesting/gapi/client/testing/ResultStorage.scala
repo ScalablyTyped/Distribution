@@ -29,9 +29,9 @@ object ResultStorage {
     toolResultsHistory: ToolResultsHistory = null
   ): ResultStorage = {
     val __obj = js.Dynamic.literal()
-    if (googleCloudStorage != null) __obj.updateDynamic("googleCloudStorage")(googleCloudStorage)
-    if (toolResultsExecution != null) __obj.updateDynamic("toolResultsExecution")(toolResultsExecution)
-    if (toolResultsHistory != null) __obj.updateDynamic("toolResultsHistory")(toolResultsHistory)
+    if (googleCloudStorage != null) __obj.updateDynamic("googleCloudStorage")(googleCloudStorage.asInstanceOf[js.Any])
+    if (toolResultsExecution != null) __obj.updateDynamic("toolResultsExecution")(toolResultsExecution.asInstanceOf[js.Any])
+    if (toolResultsHistory != null) __obj.updateDynamic("toolResultsHistory")(toolResultsHistory.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResultStorage]
   }
 }

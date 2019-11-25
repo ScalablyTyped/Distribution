@@ -142,17 +142,17 @@ object Options {
     strict: js.UndefOr[Boolean] = js.undefined,
     svgs: Boolean | Double = null
   ): Options = {
-    val __obj = js.Dynamic.literal(fileContent = fileContent)
+    val __obj = js.Dynamic.literal(fileContent = fileContent.asInstanceOf[js.Any])
     if (images != null) __obj.updateDynamic("images")(images.asInstanceOf[js.Any])
-    if (inlineAttribute != null) __obj.updateDynamic("inlineAttribute")(inlineAttribute)
+    if (inlineAttribute != null) __obj.updateDynamic("inlineAttribute")(inlineAttribute.asInstanceOf[js.Any])
     if (linkTransform != null) __obj.updateDynamic("linkTransform")(js.Any.fromFunction2(linkTransform))
     if (links != null) __obj.updateDynamic("links")(links.asInstanceOf[js.Any])
-    if (rebaseRelativeTo != null) __obj.updateDynamic("rebaseRelativeTo")(rebaseRelativeTo)
-    if (relativeTo != null) __obj.updateDynamic("relativeTo")(relativeTo)
+    if (rebaseRelativeTo != null) __obj.updateDynamic("rebaseRelativeTo")(rebaseRelativeTo.asInstanceOf[js.Any])
+    if (relativeTo != null) __obj.updateDynamic("relativeTo")(relativeTo.asInstanceOf[js.Any])
     if (requestTransform != null) __obj.updateDynamic("requestTransform")(js.Any.fromFunction1(requestTransform))
     if (scriptTransform != null) __obj.updateDynamic("scriptTransform")(js.Any.fromFunction2(scriptTransform))
     if (scripts != null) __obj.updateDynamic("scripts")(scripts.asInstanceOf[js.Any])
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
     if (svgs != null) __obj.updateDynamic("svgs")(svgs.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

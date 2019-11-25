@@ -29,11 +29,11 @@ object HistoryItem {
     url: String = null,
     visitCount: Int | Double = null
   ): HistoryItem = {
-    val __obj = js.Dynamic.literal(id = id)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     if (lastVisitTime != null) __obj.updateDynamic("lastVisitTime")(lastVisitTime.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (typedCount != null) __obj.updateDynamic("typedCount")(typedCount.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     if (visitCount != null) __obj.updateDynamic("visitCount")(visitCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistoryItem]
   }

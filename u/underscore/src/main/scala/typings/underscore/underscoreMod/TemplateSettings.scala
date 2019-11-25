@@ -38,10 +38,10 @@ object TemplateSettings {
     variable: String = null
   ): TemplateSettings = {
     val __obj = js.Dynamic.literal()
-    if (escape != null) __obj.updateDynamic("escape")(escape)
-    if (evaluate != null) __obj.updateDynamic("evaluate")(evaluate)
-    if (interpolate != null) __obj.updateDynamic("interpolate")(interpolate)
-    if (variable != null) __obj.updateDynamic("variable")(variable)
+    if (escape != null) __obj.updateDynamic("escape")(escape.asInstanceOf[js.Any])
+    if (evaluate != null) __obj.updateDynamic("evaluate")(evaluate.asInstanceOf[js.Any])
+    if (interpolate != null) __obj.updateDynamic("interpolate")(interpolate.asInstanceOf[js.Any])
+    if (variable != null) __obj.updateDynamic("variable")(variable.asInstanceOf[js.Any])
     __obj.asInstanceOf[TemplateSettings]
   }
 }

@@ -66,15 +66,15 @@ object IgTreeGridResizing {
     inherit: js.UndefOr[Boolean] = js.undefined
   ): IgTreeGridResizing = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(allowDoubleClickToResize)) __obj.updateDynamic("allowDoubleClickToResize")(allowDoubleClickToResize)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(allowDoubleClickToResize)) __obj.updateDynamic("allowDoubleClickToResize")(allowDoubleClickToResize.asInstanceOf[js.Any])
     if (columnResized != null) __obj.updateDynamic("columnResized")(js.Any.fromFunction2(columnResized))
     if (columnResizing != null) __obj.updateDynamic("columnResizing")(js.Any.fromFunction2(columnResizing))
     if (columnResizingRefused != null) __obj.updateDynamic("columnResizingRefused")(js.Any.fromFunction2(columnResizingRefused))
-    if (columnSettings != null) __obj.updateDynamic("columnSettings")(columnSettings)
-    if (!js.isUndefined(deferredResizing)) __obj.updateDynamic("deferredResizing")(deferredResizing)
+    if (columnSettings != null) __obj.updateDynamic("columnSettings")(columnSettings.asInstanceOf[js.Any])
+    if (!js.isUndefined(deferredResizing)) __obj.updateDynamic("deferredResizing")(deferredResizing.asInstanceOf[js.Any])
     if (handleThreshold != null) __obj.updateDynamic("handleThreshold")(handleThreshold.asInstanceOf[js.Any])
-    if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit)
+    if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgTreeGridResizing]
   }
 }

@@ -20,7 +20,7 @@ object _UnmarshalledEventsResponse {
   @scala.inline
   def apply(Results: StringDictionary[_UnmarshalledItemResponse] = null): _UnmarshalledEventsResponse = {
     val __obj = js.Dynamic.literal()
-    if (Results != null) __obj.updateDynamic("Results")(Results)
+    if (Results != null) __obj.updateDynamic("Results")(Results.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledEventsResponse]
   }
 }

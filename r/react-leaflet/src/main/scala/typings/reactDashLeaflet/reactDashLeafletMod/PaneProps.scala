@@ -26,11 +26,11 @@ object PaneProps {
   ): PaneProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (leaflet != null) __obj.updateDynamic("leaflet")(leaflet)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (pane != null) __obj.updateDynamic("pane")(pane)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (leaflet != null) __obj.updateDynamic("leaflet")(leaflet.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (pane != null) __obj.updateDynamic("pane")(pane.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaneProps]
   }
 }

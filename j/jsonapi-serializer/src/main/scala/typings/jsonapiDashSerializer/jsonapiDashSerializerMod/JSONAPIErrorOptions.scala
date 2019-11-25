@@ -30,14 +30,14 @@ object JSONAPIErrorOptions {
     title: String = null
   ): JSONAPIErrorOptions = {
     val __obj = js.Dynamic.literal()
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (detail != null) __obj.updateDynamic("detail")(detail)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (links != null) __obj.updateDynamic("links")(links)
-    if (meta != null) __obj.updateDynamic("meta")(meta)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (detail != null) __obj.updateDynamic("detail")(detail.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (links != null) __obj.updateDynamic("links")(links.asInstanceOf[js.Any])
+    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSONAPIErrorOptions]
   }
 }

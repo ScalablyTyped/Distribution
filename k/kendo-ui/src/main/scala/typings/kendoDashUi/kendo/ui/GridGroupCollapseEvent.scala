@@ -19,9 +19,9 @@ object GridGroupCollapseEvent {
     element: JQuery = null,
     group: js.Any = null
   ): GridGroupCollapseEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (group != null) __obj.updateDynamic("group")(group)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridGroupCollapseEvent]
   }
 }

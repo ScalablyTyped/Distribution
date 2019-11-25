@@ -57,7 +57,7 @@ object RemoteHttpOptions {
     errorStatus: Int | Double = null,
     status: Int | Double = null
   ): RemoteHttpOptions = {
-    val __obj = js.Dynamic.literal(path = path, verb = verb.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], verb = verb.asInstanceOf[js.Any])
     if (errorStatus != null) __obj.updateDynamic("errorStatus")(errorStatus.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteHttpOptions]

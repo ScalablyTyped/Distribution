@@ -61,15 +61,15 @@ object RemoteObject {
     value: js.Any = null
   ): RemoteObject = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (customPreview != null) __obj.updateDynamic("customPreview")(customPreview)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (objectId != null) __obj.updateDynamic("objectId")(objectId)
-    if (preview != null) __obj.updateDynamic("preview")(preview)
-    if (subtype != null) __obj.updateDynamic("subtype")(subtype)
-    if (unserializableValue != null) __obj.updateDynamic("unserializableValue")(unserializableValue)
-    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (customPreview != null) __obj.updateDynamic("customPreview")(customPreview.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (objectId != null) __obj.updateDynamic("objectId")(objectId.asInstanceOf[js.Any])
+    if (preview != null) __obj.updateDynamic("preview")(preview.asInstanceOf[js.Any])
+    if (subtype != null) __obj.updateDynamic("subtype")(subtype.asInstanceOf[js.Any])
+    if (unserializableValue != null) __obj.updateDynamic("unserializableValue")(unserializableValue.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteObject]
   }
 }

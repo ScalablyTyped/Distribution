@@ -36,15 +36,15 @@ object PositionOptions {
     val __obj = js.Dynamic.literal()
     if (bottomBuffer != null) __obj.updateDynamic("bottomBuffer")(bottomBuffer.asInstanceOf[js.Any])
     if (buffer != null) __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceHAlign)) __obj.updateDynamic("forceHAlign")(forceHAlign)
-    if (!js.isUndefined(forcePosition)) __obj.updateDynamic("forcePosition")(forcePosition)
-    if (!js.isUndefined(forceVAlign)) __obj.updateDynamic("forceVAlign")(forceVAlign)
-    if (hAlign != null) __obj.updateDynamic("hAlign")(hAlign)
+    if (!js.isUndefined(forceHAlign)) __obj.updateDynamic("forceHAlign")(forceHAlign.asInstanceOf[js.Any])
+    if (!js.isUndefined(forcePosition)) __obj.updateDynamic("forcePosition")(forcePosition.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceVAlign)) __obj.updateDynamic("forceVAlign")(forceVAlign.asInstanceOf[js.Any])
+    if (hAlign != null) __obj.updateDynamic("hAlign")(hAlign.asInstanceOf[js.Any])
     if (leftBuffer != null) __obj.updateDynamic("leftBuffer")(leftBuffer.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (rightBuffer != null) __obj.updateDynamic("rightBuffer")(rightBuffer.asInstanceOf[js.Any])
     if (topBuffer != null) __obj.updateDynamic("topBuffer")(topBuffer.asInstanceOf[js.Any])
-    if (vAlign != null) __obj.updateDynamic("vAlign")(vAlign)
+    if (vAlign != null) __obj.updateDynamic("vAlign")(vAlign.asInstanceOf[js.Any])
     __obj.asInstanceOf[PositionOptions]
   }
 }

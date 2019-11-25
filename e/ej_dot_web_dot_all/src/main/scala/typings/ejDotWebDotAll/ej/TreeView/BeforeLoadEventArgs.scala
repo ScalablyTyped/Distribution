@@ -28,10 +28,10 @@ object BeforeLoadEventArgs {
     `type`: String = null
   ): BeforeLoadEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (AjaxOptions != null) __obj.updateDynamic("AjaxOptions")(AjaxOptions)
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (AjaxOptions != null) __obj.updateDynamic("AjaxOptions")(AjaxOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BeforeLoadEventArgs]
   }
 }

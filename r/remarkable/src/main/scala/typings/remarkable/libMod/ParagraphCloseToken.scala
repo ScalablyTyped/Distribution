@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation._
 object ParagraphCloseToken {
   @scala.inline
   def apply(level: Double, tight: Boolean, `type`: paragraph_close, lines: js.Tuple2[Double, Double] = null): ParagraphCloseToken = {
-    val __obj = js.Dynamic.literal(level = level, tight = tight)
-    __obj.updateDynamic("type")(`type`)
-    if (lines != null) __obj.updateDynamic("lines")(lines)
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], tight = tight.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParagraphCloseToken]
   }
 }

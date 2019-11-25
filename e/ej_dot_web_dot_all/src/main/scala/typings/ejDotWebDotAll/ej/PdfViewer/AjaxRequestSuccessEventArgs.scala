@@ -28,10 +28,10 @@ object AjaxRequestSuccessEventArgs {
     `type`: String = null
   ): AjaxRequestSuccessEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (responseData != null) __obj.updateDynamic("responseData")(responseData)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (responseData != null) __obj.updateDynamic("responseData")(responseData.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AjaxRequestSuccessEventArgs]
   }
 }

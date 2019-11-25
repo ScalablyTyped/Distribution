@@ -16,7 +16,7 @@ trait EnableReturnType extends js.Object {
 object EnableReturnType {
   @scala.inline
   def apply(debuggerId: UniqueDebuggerId): EnableReturnType = {
-    val __obj = js.Dynamic.literal(debuggerId = debuggerId)
+    val __obj = js.Dynamic.literal(debuggerId = debuggerId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EnableReturnType]
   }

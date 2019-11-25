@@ -28,9 +28,9 @@ object ObjectStyleOptions {
     style: typings.heremaps.H.map.SpatialStyle.Options = null,
     zIndex: Int | Double = null
   ): ObjectStyleOptions = {
-    val __obj = js.Dynamic.literal(icon = icon)
-    if (arrows != null) __obj.updateDynamic("arrows")(arrows)
-    if (style != null) __obj.updateDynamic("style")(style)
+    val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any])
+    if (arrows != null) __obj.updateDynamic("arrows")(arrows.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectStyleOptions]
   }

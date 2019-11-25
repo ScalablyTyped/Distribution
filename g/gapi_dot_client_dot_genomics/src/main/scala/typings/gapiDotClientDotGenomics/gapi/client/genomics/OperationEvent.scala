@@ -20,9 +20,9 @@ object OperationEvent {
   @scala.inline
   def apply(description: String = null, endTime: String = null, startTime: String = null): OperationEvent = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[OperationEvent]
   }
 }

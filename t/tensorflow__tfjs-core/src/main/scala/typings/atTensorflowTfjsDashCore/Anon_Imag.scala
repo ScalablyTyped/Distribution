@@ -14,7 +14,7 @@ trait Anon_Imag extends js.Object {
 object Anon_Imag {
   @scala.inline
   def apply(imag: Tensor[Rank], real: Tensor[Rank]): Anon_Imag = {
-    val __obj = js.Dynamic.literal(imag = imag, real = real)
+    val __obj = js.Dynamic.literal(imag = imag.asInstanceOf[js.Any], real = real.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Imag]
   }

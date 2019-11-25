@@ -47,7 +47,7 @@ object TokenInfo {
     totalPublicMemory: Double,
     utcTime: String
   ): TokenInfo = {
-    val __obj = js.Dynamic.literal(firmwareVersion = firmwareVersion, flags = flags, freePrivateMemory = freePrivateMemory, freePublicMemory = freePublicMemory, hardwareVersion = hardwareVersion, label = label, manufacturerID = manufacturerID, maxPinLen = maxPinLen, maxRwSessionCount = maxRwSessionCount, maxSessionCount = maxSessionCount, minPinLen = minPinLen, model = model, rwSessionCount = rwSessionCount, serialNumber = serialNumber, sessionCount = sessionCount, totalPrivateMemory = totalPrivateMemory, totalPublicMemory = totalPublicMemory, utcTime = utcTime)
+    val __obj = js.Dynamic.literal(firmwareVersion = firmwareVersion.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], freePrivateMemory = freePrivateMemory.asInstanceOf[js.Any], freePublicMemory = freePublicMemory.asInstanceOf[js.Any], hardwareVersion = hardwareVersion.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], manufacturerID = manufacturerID.asInstanceOf[js.Any], maxPinLen = maxPinLen.asInstanceOf[js.Any], maxRwSessionCount = maxRwSessionCount.asInstanceOf[js.Any], maxSessionCount = maxSessionCount.asInstanceOf[js.Any], minPinLen = minPinLen.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any], rwSessionCount = rwSessionCount.asInstanceOf[js.Any], serialNumber = serialNumber.asInstanceOf[js.Any], sessionCount = sessionCount.asInstanceOf[js.Any], totalPrivateMemory = totalPrivateMemory.asInstanceOf[js.Any], totalPublicMemory = totalPublicMemory.asInstanceOf[js.Any], utcTime = utcTime.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TokenInfo]
   }

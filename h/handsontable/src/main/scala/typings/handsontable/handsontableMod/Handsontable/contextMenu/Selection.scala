@@ -13,7 +13,7 @@ trait Selection extends js.Object {
 object Selection {
   @scala.inline
   def apply(end: CellCoords, start: CellCoords): Selection = {
-    val __obj = js.Dynamic.literal(end = end, start = start)
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Selection]
   }

@@ -60,20 +60,20 @@ object Anon_Alt {
     userIp: String = null
   ): Anon_Alt = {
     val __obj = js.Dynamic.literal()
-    if (alt != null) __obj.updateDynamic("alt")(alt)
-    if (`drive.ancestorId` != null) __obj.updateDynamic("drive.ancestorId")(`drive.ancestorId`)
-    if (`drive.fileId` != null) __obj.updateDynamic("drive.fileId")(`drive.fileId`)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (groupingStrategy != null) __obj.updateDynamic("groupingStrategy")(groupingStrategy)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
+    if (`drive.ancestorId` != null) __obj.updateDynamic("drive.ancestorId")(`drive.ancestorId`.asInstanceOf[js.Any])
+    if (`drive.fileId` != null) __obj.updateDynamic("drive.fileId")(`drive.fileId`.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (groupingStrategy != null) __obj.updateDynamic("groupingStrategy")(groupingStrategy.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
     if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (userId != null) __obj.updateDynamic("userId")(userId)
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Alt]
   }
 }

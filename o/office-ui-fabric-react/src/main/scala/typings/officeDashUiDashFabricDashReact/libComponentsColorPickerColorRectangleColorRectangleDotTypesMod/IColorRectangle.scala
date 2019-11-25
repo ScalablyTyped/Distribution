@@ -13,7 +13,7 @@ trait IColorRectangle extends js.Object {
 object IColorRectangle {
   @scala.inline
   def apply(color: IColor): IColorRectangle = {
-    val __obj = js.Dynamic.literal(color = color)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IColorRectangle]
   }

@@ -14,9 +14,9 @@ object MobileAppsListResponse {
   @scala.inline
   def apply(kind: String = null, mobileApps: js.Array[MobileApp] = null, nextPageToken: String = null): MobileAppsListResponse = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (mobileApps != null) __obj.updateDynamic("mobileApps")(mobileApps)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (mobileApps != null) __obj.updateDynamic("mobileApps")(mobileApps.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[MobileAppsListResponse]
   }
 }

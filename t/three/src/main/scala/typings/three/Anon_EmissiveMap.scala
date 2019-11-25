@@ -12,7 +12,7 @@ trait Anon_EmissiveMap extends js.Object {
 object Anon_EmissiveMap {
   @scala.inline
   def apply(emissiveMap: IUniform): Anon_EmissiveMap = {
-    val __obj = js.Dynamic.literal(emissiveMap = emissiveMap)
+    val __obj = js.Dynamic.literal(emissiveMap = emissiveMap.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EmissiveMap]
   }

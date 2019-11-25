@@ -14,9 +14,9 @@ object Anon_1 {
   @scala.inline
   def apply(`1`: String, `2`: String = null, `3`: String = null): Anon_1 = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("1")(`1`)
-    if (`2` != null) __obj.updateDynamic("2")(`2`)
-    if (`3` != null) __obj.updateDynamic("3")(`3`)
+    __obj.updateDynamic("1")(`1`.asInstanceOf[js.Any])
+    if (`2` != null) __obj.updateDynamic("2")(`2`.asInstanceOf[js.Any])
+    if (`3` != null) __obj.updateDynamic("3")(`3`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_1]
   }
 }

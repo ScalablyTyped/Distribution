@@ -51,8 +51,8 @@ object Anon_Clear {
     `type`: String,
     updatePlaceholder: Boolean
   ): Anon_Clear = {
-    val __obj = js.Dynamic.literal(clear = clear, disabled = disabled, disabledKeys = disabledKeys, editable = editable, error = error, extra = extra, labelNumber = labelNumber, moneyKeyboardAlign = moneyKeyboardAlign, moneyKeyboardHeader = moneyKeyboardHeader, onBlur = js.Any.fromFunction0(onBlur), onChange = js.Any.fromFunction0(onChange), onErrorClick = js.Any.fromFunction0(onErrorClick), onExtraClick = js.Any.fromFunction0(onExtraClick), onFocus = js.Any.fromFunction0(onFocus), onVirtualKeyboardConfirm = js.Any.fromFunction0(onVirtualKeyboardConfirm), placeholder = placeholder, prefixCls = prefixCls, prefixListCls = prefixListCls, updatePlaceholder = updatePlaceholder)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(clear = clear.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], disabledKeys = disabledKeys.asInstanceOf[js.Any], editable = editable.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], extra = extra.asInstanceOf[js.Any], labelNumber = labelNumber.asInstanceOf[js.Any], moneyKeyboardAlign = moneyKeyboardAlign.asInstanceOf[js.Any], moneyKeyboardHeader = moneyKeyboardHeader.asInstanceOf[js.Any], onBlur = js.Any.fromFunction0(onBlur), onChange = js.Any.fromFunction0(onChange), onErrorClick = js.Any.fromFunction0(onErrorClick), onExtraClick = js.Any.fromFunction0(onExtraClick), onFocus = js.Any.fromFunction0(onFocus), onVirtualKeyboardConfirm = js.Any.fromFunction0(onVirtualKeyboardConfirm), placeholder = placeholder.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], prefixListCls = prefixListCls.asInstanceOf[js.Any], updatePlaceholder = updatePlaceholder.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Clear]
   }
 }

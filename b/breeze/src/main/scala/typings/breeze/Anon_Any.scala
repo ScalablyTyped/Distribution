@@ -14,7 +14,7 @@ object Anon_Any {
   @scala.inline
   def apply(mergeStrategy: MergeStrategySymbol = null, metadataVersionFn: /* any */ js.Any => Unit = null): Anon_Any = {
     val __obj = js.Dynamic.literal()
-    if (mergeStrategy != null) __obj.updateDynamic("mergeStrategy")(mergeStrategy)
+    if (mergeStrategy != null) __obj.updateDynamic("mergeStrategy")(mergeStrategy.asInstanceOf[js.Any])
     if (metadataVersionFn != null) __obj.updateDynamic("metadataVersionFn")(js.Any.fromFunction1(metadataVersionFn))
     __obj.asInstanceOf[Anon_Any]
   }

@@ -16,8 +16,8 @@ object SyntaxOptionsTokens {
   @scala.inline
   def apply(lemma: js.UndefOr[Boolean] = js.undefined, part_of_speech: js.UndefOr[Boolean] = js.undefined): SyntaxOptionsTokens = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(lemma)) __obj.updateDynamic("lemma")(lemma)
-    if (!js.isUndefined(part_of_speech)) __obj.updateDynamic("part_of_speech")(part_of_speech)
+    if (!js.isUndefined(lemma)) __obj.updateDynamic("lemma")(lemma.asInstanceOf[js.Any])
+    if (!js.isUndefined(part_of_speech)) __obj.updateDynamic("part_of_speech")(part_of_speech.asInstanceOf[js.Any])
     __obj.asInstanceOf[SyntaxOptionsTokens]
   }
 }

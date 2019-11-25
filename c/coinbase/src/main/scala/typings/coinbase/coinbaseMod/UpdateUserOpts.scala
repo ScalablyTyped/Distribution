@@ -23,9 +23,9 @@ object UpdateUserOpts {
   @scala.inline
   def apply(name: String = null, native_currency: String = null, time_zone: String = null): UpdateUserOpts = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (native_currency != null) __obj.updateDynamic("native_currency")(native_currency)
-    if (time_zone != null) __obj.updateDynamic("time_zone")(time_zone)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (native_currency != null) __obj.updateDynamic("native_currency")(native_currency.asInstanceOf[js.Any])
+    if (time_zone != null) __obj.updateDynamic("time_zone")(time_zone.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateUserOpts]
   }
 }

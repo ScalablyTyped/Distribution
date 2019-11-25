@@ -19,9 +19,9 @@ object IState {
     ncyBreadcrumbLink: String = null
   ): IState = {
     val __obj = js.Dynamic.literal()
-    if (ncyBreadcrumb != null) __obj.updateDynamic("ncyBreadcrumb")(ncyBreadcrumb)
-    if (ncyBreadcrumbLabel != null) __obj.updateDynamic("ncyBreadcrumbLabel")(ncyBreadcrumbLabel)
-    if (ncyBreadcrumbLink != null) __obj.updateDynamic("ncyBreadcrumbLink")(ncyBreadcrumbLink)
+    if (ncyBreadcrumb != null) __obj.updateDynamic("ncyBreadcrumb")(ncyBreadcrumb.asInstanceOf[js.Any])
+    if (ncyBreadcrumbLabel != null) __obj.updateDynamic("ncyBreadcrumbLabel")(ncyBreadcrumbLabel.asInstanceOf[js.Any])
+    if (ncyBreadcrumbLink != null) __obj.updateDynamic("ncyBreadcrumbLink")(ncyBreadcrumbLink.asInstanceOf[js.Any])
     __obj.asInstanceOf[IState]
   }
 }

@@ -13,7 +13,7 @@ object CropFalseOptions {
   @scala.inline
   def apply(crop: `false` = null): CropFalseOptions = {
     val __obj = js.Dynamic.literal()
-    if (crop != null) __obj.updateDynamic("crop")(crop)
+    if (crop != null) __obj.updateDynamic("crop")(crop.asInstanceOf[js.Any])
     __obj.asInstanceOf[CropFalseOptions]
   }
 }

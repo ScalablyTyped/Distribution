@@ -14,7 +14,7 @@ object Anon_E {
   @scala.inline
   def apply(__events: StringDictionary[js.UndefOr[js.Function1[/* e */ Event, _]]] = null): Anon_E = {
     val __obj = js.Dynamic.literal()
-    if (__events != null) __obj.updateDynamic("__events")(__events)
+    if (__events != null) __obj.updateDynamic("__events")(__events.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_E]
   }
 }

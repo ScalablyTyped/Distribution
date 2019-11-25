@@ -21,7 +21,7 @@ object Options {
   def apply(beforeParse: /* data */ String => String = null, reviver: Reviver = null): Options = {
     val __obj = js.Dynamic.literal()
     if (beforeParse != null) __obj.updateDynamic("beforeParse")(js.Any.fromFunction1(beforeParse))
-    if (reviver != null) __obj.updateDynamic("reviver")(reviver)
+    if (reviver != null) __obj.updateDynamic("reviver")(reviver.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

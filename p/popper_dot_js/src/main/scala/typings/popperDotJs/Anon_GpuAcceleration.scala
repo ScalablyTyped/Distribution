@@ -13,8 +13,8 @@ object Anon_GpuAcceleration {
   @scala.inline
   def apply(gpuAcceleration: js.UndefOr[Boolean] = js.undefined, onLoad: js.Function = null): Anon_GpuAcceleration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(gpuAcceleration)) __obj.updateDynamic("gpuAcceleration")(gpuAcceleration)
-    if (onLoad != null) __obj.updateDynamic("onLoad")(onLoad)
+    if (!js.isUndefined(gpuAcceleration)) __obj.updateDynamic("gpuAcceleration")(gpuAcceleration.asInstanceOf[js.Any])
+    if (onLoad != null) __obj.updateDynamic("onLoad")(onLoad.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_GpuAcceleration]
   }
 }

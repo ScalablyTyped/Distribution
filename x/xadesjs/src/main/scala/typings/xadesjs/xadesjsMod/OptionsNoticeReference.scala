@@ -12,7 +12,7 @@ trait OptionsNoticeReference extends js.Object {
 object OptionsNoticeReference {
   @scala.inline
   def apply(noticeNumbers: js.Array[Double], organization: String): OptionsNoticeReference = {
-    val __obj = js.Dynamic.literal(noticeNumbers = noticeNumbers, organization = organization)
+    val __obj = js.Dynamic.literal(noticeNumbers = noticeNumbers.asInstanceOf[js.Any], organization = organization.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OptionsNoticeReference]
   }

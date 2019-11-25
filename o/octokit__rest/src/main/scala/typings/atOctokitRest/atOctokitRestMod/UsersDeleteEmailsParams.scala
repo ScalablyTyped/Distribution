@@ -14,7 +14,7 @@ trait UsersDeleteEmailsParams extends js.Object {
 object UsersDeleteEmailsParams {
   @scala.inline
   def apply(emails: js.Array[String]): UsersDeleteEmailsParams = {
-    val __obj = js.Dynamic.literal(emails = emails)
+    val __obj = js.Dynamic.literal(emails = emails.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UsersDeleteEmailsParams]
   }

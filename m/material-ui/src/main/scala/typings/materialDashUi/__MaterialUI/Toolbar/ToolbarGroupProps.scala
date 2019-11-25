@@ -25,11 +25,11 @@ object ToolbarGroupProps {
     style: CSSProperties = null
   ): ToolbarGroupProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(firstChild)) __obj.updateDynamic("firstChild")(firstChild)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(firstChild)) __obj.updateDynamic("firstChild")(firstChild.asInstanceOf[js.Any])
     if (float != null) __obj.updateDynamic("float")(float.asInstanceOf[js.Any])
-    if (!js.isUndefined(lastChild)) __obj.updateDynamic("lastChild")(lastChild)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (!js.isUndefined(lastChild)) __obj.updateDynamic("lastChild")(lastChild.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolbarGroupProps]
   }
 }

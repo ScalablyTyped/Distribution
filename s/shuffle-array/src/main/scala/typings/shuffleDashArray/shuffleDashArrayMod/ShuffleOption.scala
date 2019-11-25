@@ -13,7 +13,7 @@ object ShuffleOption {
   @scala.inline
   def apply(copy: js.UndefOr[Boolean] = js.undefined, rng: () => Double = null): ShuffleOption = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(copy)) __obj.updateDynamic("copy")(copy)
+    if (!js.isUndefined(copy)) __obj.updateDynamic("copy")(copy.asInstanceOf[js.Any])
     if (rng != null) __obj.updateDynamic("rng")(js.Any.fromFunction0(rng))
     __obj.asInstanceOf[ShuffleOption]
   }

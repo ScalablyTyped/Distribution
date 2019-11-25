@@ -21,9 +21,9 @@ object LogConfig {
     dataAccess: LogConfigDataAccessOptions = null
   ): LogConfig = {
     val __obj = js.Dynamic.literal()
-    if (cloudAudit != null) __obj.updateDynamic("cloudAudit")(cloudAudit)
-    if (counter != null) __obj.updateDynamic("counter")(counter)
-    if (dataAccess != null) __obj.updateDynamic("dataAccess")(dataAccess)
+    if (cloudAudit != null) __obj.updateDynamic("cloudAudit")(cloudAudit.asInstanceOf[js.Any])
+    if (counter != null) __obj.updateDynamic("counter")(counter.asInstanceOf[js.Any])
+    if (dataAccess != null) __obj.updateDynamic("dataAccess")(dataAccess.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogConfig]
   }
 }

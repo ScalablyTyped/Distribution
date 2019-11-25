@@ -13,8 +13,8 @@ object Anon_KeySeparatorSilent {
   @scala.inline
   def apply(keySeparator: String = null, silent: js.UndefOr[Boolean] = js.undefined): Anon_KeySeparatorSilent = {
     val __obj = js.Dynamic.literal()
-    if (keySeparator != null) __obj.updateDynamic("keySeparator")(keySeparator)
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    if (keySeparator != null) __obj.updateDynamic("keySeparator")(keySeparator.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_KeySeparatorSilent]
   }
 }

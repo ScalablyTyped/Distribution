@@ -12,7 +12,7 @@ object Anon_Npapi {
   @scala.inline
   def apply(npapi: js.UndefOr[Boolean] = js.undefined): Anon_Npapi = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(npapi)) __obj.updateDynamic("npapi")(npapi)
+    if (!js.isUndefined(npapi)) __obj.updateDynamic("npapi")(npapi.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Npapi]
   }
 }

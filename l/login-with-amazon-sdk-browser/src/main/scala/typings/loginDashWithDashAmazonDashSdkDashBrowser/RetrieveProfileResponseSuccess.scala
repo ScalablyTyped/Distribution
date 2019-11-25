@@ -23,7 +23,7 @@ trait RetrieveProfileResponseSuccess extends RetrieveProfileResponse {
 object RetrieveProfileResponseSuccess {
   @scala.inline
   def apply(profile: UserProfile, success: `true`): RetrieveProfileResponseSuccess = {
-    val __obj = js.Dynamic.literal(profile = profile, success = success)
+    val __obj = js.Dynamic.literal(profile = profile.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RetrieveProfileResponseSuccess]
   }

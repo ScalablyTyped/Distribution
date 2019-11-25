@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait OnInputEnteredDisposition extends js.Object
 
+object OnInputEnteredDisposition {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def currentTab: typings.naverDashWhale.naverDashWhaleStrings.currentTab = this.cast("currentTab")
+  @scala.inline
+  def newBackgroundTab: typings.naverDashWhale.naverDashWhaleStrings.newBackgroundTab = this.cast("newBackgroundTab")
+  @scala.inline
+  def newForegroundTab: typings.naverDashWhale.naverDashWhaleStrings.newForegroundTab = this.cast("newForegroundTab")
+}
+

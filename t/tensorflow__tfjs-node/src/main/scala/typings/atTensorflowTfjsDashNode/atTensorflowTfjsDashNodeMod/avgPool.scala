@@ -3,9 +3,6 @@ package typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeMod
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor3D
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor4D
 import typings.atTensorflowTfjsDashCore.distTypesMod.TensorLike
-import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.ceil
-import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.floor
-import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.round
 import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.same
 import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.valid
 import scala.scalajs.js
@@ -26,7 +23,7 @@ object avgPool extends js.Object {
     filterSize: (js.Tuple2[Double, Double]) | Double,
     strides: (js.Tuple2[Double, Double]) | Double,
     pad: valid | same | Double,
-    dimRoundingMode: floor | round | ceil
+    dimRoundingMode: typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.floor | typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.round | typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.ceil
   ): T = js.native
 }
 

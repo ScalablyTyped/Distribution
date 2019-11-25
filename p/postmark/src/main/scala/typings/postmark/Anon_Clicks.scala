@@ -13,7 +13,7 @@ trait Anon_Clicks extends js.Object {
 object Anon_Clicks {
   @scala.inline
   def apply(Clicks: Double, Date: String, Unique: Double): Anon_Clicks = {
-    val __obj = js.Dynamic.literal(Clicks = Clicks, Date = Date, Unique = Unique)
+    val __obj = js.Dynamic.literal(Clicks = Clicks.asInstanceOf[js.Any], Date = Date.asInstanceOf[js.Any], Unique = Unique.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Clicks]
   }

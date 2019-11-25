@@ -19,8 +19,8 @@ object ResourceGroupExportResult {
   @scala.inline
   def apply(error: ResourceManagementErrorWithDetails = null, template: js.Any = null): ResourceGroupExportResult = {
     val __obj = js.Dynamic.literal()
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (template != null) __obj.updateDynamic("template")(template)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceGroupExportResult]
   }
 }

@@ -21,10 +21,9 @@ object ITextLine {
     extent: () => TextSpan,
     extentIncludingLineBreak: () => TextSpan,
     lineNumber: () => Double,
-    start: () => Double,
-    toString: () => String
+    start: () => Double
   ): ITextLine = {
-    val __obj = js.Dynamic.literal(end = js.Any.fromFunction0(end), endIncludingLineBreak = js.Any.fromFunction0(endIncludingLineBreak), extent = js.Any.fromFunction0(extent), extentIncludingLineBreak = js.Any.fromFunction0(extentIncludingLineBreak), lineNumber = js.Any.fromFunction0(lineNumber), start = js.Any.fromFunction0(start), toString = js.Any.fromFunction0(toString))
+    val __obj = js.Dynamic.literal(end = js.Any.fromFunction0(end), endIncludingLineBreak = js.Any.fromFunction0(endIncludingLineBreak), extent = js.Any.fromFunction0(extent), extentIncludingLineBreak = js.Any.fromFunction0(extentIncludingLineBreak), lineNumber = js.Any.fromFunction0(lineNumber), start = js.Any.fromFunction0(start))
   
     __obj.asInstanceOf[ITextLine]
   }

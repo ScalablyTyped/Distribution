@@ -76,7 +76,7 @@ object _Impl {
     statusMessage: String,
     timeout: String
   ): _Impl = {
-    val __obj = js.Dynamic.literal(JSONParse = JSONParse, beforeSend = beforeSend, error = error, exitConditions = exitConditions, legacyParameters = legacyParameters, missingAction = missingAction, missingSerialize = missingSerialize, missingURL = missingURL, noReturnedValue = noReturnedValue, parseError = parseError, requiredParameter = requiredParameter, statusMessage = statusMessage, timeout = timeout)
+    val __obj = js.Dynamic.literal(JSONParse = JSONParse.asInstanceOf[js.Any], beforeSend = beforeSend.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], exitConditions = exitConditions.asInstanceOf[js.Any], legacyParameters = legacyParameters.asInstanceOf[js.Any], missingAction = missingAction.asInstanceOf[js.Any], missingSerialize = missingSerialize.asInstanceOf[js.Any], missingURL = missingURL.asInstanceOf[js.Any], noReturnedValue = noReturnedValue.asInstanceOf[js.Any], parseError = parseError.asInstanceOf[js.Any], requiredParameter = requiredParameter.asInstanceOf[js.Any], statusMessage = statusMessage.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_Impl]
   }

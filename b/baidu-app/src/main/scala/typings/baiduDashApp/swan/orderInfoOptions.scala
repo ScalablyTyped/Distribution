@@ -66,7 +66,7 @@ object orderInfoOptions {
     fail: js.Any => Unit = null,
     success: js.Any => Unit = null
   ): orderInfoOptions = {
-    val __obj = js.Dynamic.literal(appKey = appKey, bizInfo = bizInfo, dealId = dealId, dealTitle = dealTitle, rsaSign = rsaSign, signFieldsRange = signFieldsRange, totalAmount = totalAmount, tpOrderId = tpOrderId)
+    val __obj = js.Dynamic.literal(appKey = appKey.asInstanceOf[js.Any], bizInfo = bizInfo.asInstanceOf[js.Any], dealId = dealId.asInstanceOf[js.Any], dealTitle = dealTitle.asInstanceOf[js.Any], rsaSign = rsaSign.asInstanceOf[js.Any], signFieldsRange = signFieldsRange.asInstanceOf[js.Any], totalAmount = totalAmount.asInstanceOf[js.Any], tpOrderId = tpOrderId.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))

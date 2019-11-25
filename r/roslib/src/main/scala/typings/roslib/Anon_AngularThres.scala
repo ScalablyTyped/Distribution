@@ -30,12 +30,12 @@ object Anon_AngularThres {
     transThres: Int | Double = null,
     updateDelay: Int | Double = null
   ): Anon_AngularThres = {
-    val __obj = js.Dynamic.literal(ros = ros)
+    val __obj = js.Dynamic.literal(ros = ros.asInstanceOf[js.Any])
     if (angularThres != null) __obj.updateDynamic("angularThres")(angularThres.asInstanceOf[js.Any])
-    if (fixedFrame != null) __obj.updateDynamic("fixedFrame")(fixedFrame)
+    if (fixedFrame != null) __obj.updateDynamic("fixedFrame")(fixedFrame.asInstanceOf[js.Any])
     if (rate != null) __obj.updateDynamic("rate")(rate.asInstanceOf[js.Any])
-    if (repubServiceName != null) __obj.updateDynamic("repubServiceName")(repubServiceName)
-    if (serverName != null) __obj.updateDynamic("serverName")(serverName)
+    if (repubServiceName != null) __obj.updateDynamic("repubServiceName")(repubServiceName.asInstanceOf[js.Any])
+    if (serverName != null) __obj.updateDynamic("serverName")(serverName.asInstanceOf[js.Any])
     if (topicTimeout != null) __obj.updateDynamic("topicTimeout")(topicTimeout.asInstanceOf[js.Any])
     if (transThres != null) __obj.updateDynamic("transThres")(transThres.asInstanceOf[js.Any])
     if (updateDelay != null) __obj.updateDynamic("updateDelay")(updateDelay.asInstanceOf[js.Any])

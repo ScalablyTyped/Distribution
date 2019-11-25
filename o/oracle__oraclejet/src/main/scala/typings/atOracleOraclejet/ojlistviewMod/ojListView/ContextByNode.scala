@@ -23,9 +23,9 @@ object ContextByNode {
     group: js.UndefOr[Boolean] = js.undefined,
     parent: Element = null
   ): ContextByNode[K] = {
-    val __obj = js.Dynamic.literal(index = index, key = key.asInstanceOf[js.Any], subId = subId)
-    if (!js.isUndefined(group)) __obj.updateDynamic("group")(group)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], subId = subId.asInstanceOf[js.Any])
+    if (!js.isUndefined(group)) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextByNode[K]]
   }
 }

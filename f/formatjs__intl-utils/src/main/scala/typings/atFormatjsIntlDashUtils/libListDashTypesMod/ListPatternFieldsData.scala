@@ -18,9 +18,9 @@ object ListPatternFieldsData {
     unit: ListPatternData = null
   ): ListPatternFieldsData = {
     val __obj = js.Dynamic.literal()
-    if (conjunction != null) __obj.updateDynamic("conjunction")(conjunction)
-    if (disjunction != null) __obj.updateDynamic("disjunction")(disjunction)
-    if (unit != null) __obj.updateDynamic("unit")(unit)
+    if (conjunction != null) __obj.updateDynamic("conjunction")(conjunction.asInstanceOf[js.Any])
+    if (disjunction != null) __obj.updateDynamic("disjunction")(disjunction.asInstanceOf[js.Any])
+    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPatternFieldsData]
   }
 }

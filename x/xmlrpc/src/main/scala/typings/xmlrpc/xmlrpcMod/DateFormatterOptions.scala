@@ -22,11 +22,11 @@ object DateFormatterOptions {
     offset: js.UndefOr[Boolean] = js.undefined
   ): DateFormatterOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(colons)) __obj.updateDynamic("colons")(colons)
-    if (!js.isUndefined(hyphens)) __obj.updateDynamic("hyphens")(hyphens)
-    if (!js.isUndefined(local)) __obj.updateDynamic("local")(local)
-    if (!js.isUndefined(ms)) __obj.updateDynamic("ms")(ms)
-    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset)
+    if (!js.isUndefined(colons)) __obj.updateDynamic("colons")(colons.asInstanceOf[js.Any])
+    if (!js.isUndefined(hyphens)) __obj.updateDynamic("hyphens")(hyphens.asInstanceOf[js.Any])
+    if (!js.isUndefined(local)) __obj.updateDynamic("local")(local.asInstanceOf[js.Any])
+    if (!js.isUndefined(ms)) __obj.updateDynamic("ms")(ms.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateFormatterOptions]
   }
 }

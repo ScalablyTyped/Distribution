@@ -51,7 +51,7 @@ object CardFieldSettings {
     showState: Boolean,
     showTags: Boolean
   ): CardFieldSettings = {
-    val __obj = js.Dynamic.literal(additionalFields = additionalFields, assignedToDisplayFormat = assignedToDisplayFormat, coreFields = coreFields, showAssignedTo = showAssignedTo, showEmptyFields = showEmptyFields, showId = showId, showState = showState, showTags = showTags)
+    val __obj = js.Dynamic.literal(additionalFields = additionalFields.asInstanceOf[js.Any], assignedToDisplayFormat = assignedToDisplayFormat.asInstanceOf[js.Any], coreFields = coreFields.asInstanceOf[js.Any], showAssignedTo = showAssignedTo.asInstanceOf[js.Any], showEmptyFields = showEmptyFields.asInstanceOf[js.Any], showId = showId.asInstanceOf[js.Any], showState = showState.asInstanceOf[js.Any], showTags = showTags.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CardFieldSettings]
   }

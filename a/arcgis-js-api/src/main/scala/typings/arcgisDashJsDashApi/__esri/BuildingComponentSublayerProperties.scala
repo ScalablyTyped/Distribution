@@ -73,15 +73,15 @@ object BuildingComponentSublayerProperties {
     visible: js.UndefOr[Boolean] = js.undefined
   ): BuildingComponentSublayerProperties = {
     val __obj = js.Dynamic.literal()
-    if (definitionExpression != null) __obj.updateDynamic("definitionExpression")(definitionExpression)
+    if (definitionExpression != null) __obj.updateDynamic("definitionExpression")(definitionExpression.asInstanceOf[js.Any])
     if (listMode != null) __obj.updateDynamic("listMode")(listMode.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (outFields != null) __obj.updateDynamic("outFields")(outFields)
-    if (!js.isUndefined(popupEnabled)) __obj.updateDynamic("popupEnabled")(popupEnabled)
-    if (popupTemplate != null) __obj.updateDynamic("popupTemplate")(popupTemplate)
-    if (renderer != null) __obj.updateDynamic("renderer")(renderer)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (outFields != null) __obj.updateDynamic("outFields")(outFields.asInstanceOf[js.Any])
+    if (!js.isUndefined(popupEnabled)) __obj.updateDynamic("popupEnabled")(popupEnabled.asInstanceOf[js.Any])
+    if (popupTemplate != null) __obj.updateDynamic("popupTemplate")(popupTemplate.asInstanceOf[js.Any])
+    if (renderer != null) __obj.updateDynamic("renderer")(renderer.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildingComponentSublayerProperties]
   }
 }

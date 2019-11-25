@@ -51,14 +51,14 @@ object DataStoreOptions {
   ): DataStoreOptions = {
     val __obj = js.Dynamic.literal()
     if (afterSerialization != null) __obj.updateDynamic("afterSerialization")(js.Any.fromFunction1(afterSerialization))
-    if (!js.isUndefined(autoload)) __obj.updateDynamic("autoload")(autoload)
+    if (!js.isUndefined(autoload)) __obj.updateDynamic("autoload")(autoload.asInstanceOf[js.Any])
     if (beforeDeserialization != null) __obj.updateDynamic("beforeDeserialization")(js.Any.fromFunction1(beforeDeserialization))
     if (corruptAlertThreshold != null) __obj.updateDynamic("corruptAlertThreshold")(corruptAlertThreshold.asInstanceOf[js.Any])
-    if (filename != null) __obj.updateDynamic("filename")(filename)
-    if (!js.isUndefined(inMemoryOnly)) __obj.updateDynamic("inMemoryOnly")(inMemoryOnly)
-    if (!js.isUndefined(nodeWebkitAppName)) __obj.updateDynamic("nodeWebkitAppName")(nodeWebkitAppName)
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
+    if (!js.isUndefined(inMemoryOnly)) __obj.updateDynamic("inMemoryOnly")(inMemoryOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(nodeWebkitAppName)) __obj.updateDynamic("nodeWebkitAppName")(nodeWebkitAppName.asInstanceOf[js.Any])
     if (onload != null) __obj.updateDynamic("onload")(js.Any.fromFunction1(onload))
-    if (!js.isUndefined(timestampData)) __obj.updateDynamic("timestampData")(timestampData)
+    if (!js.isUndefined(timestampData)) __obj.updateDynamic("timestampData")(timestampData.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataStoreOptions]
   }
 }

@@ -12,7 +12,7 @@ trait Anon_LineNum extends js.Object {
 object Anon_LineNum {
   @scala.inline
   def apply(lineNum: Double, txt: String): Anon_LineNum = {
-    val __obj = js.Dynamic.literal(lineNum = lineNum, txt = txt)
+    val __obj = js.Dynamic.literal(lineNum = lineNum.asInstanceOf[js.Any], txt = txt.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_LineNum]
   }

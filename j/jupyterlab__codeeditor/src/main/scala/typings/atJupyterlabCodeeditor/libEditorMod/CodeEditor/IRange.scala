@@ -30,7 +30,7 @@ trait IRange extends JSONObject {
 object IRange {
   @scala.inline
   def apply(end: IPosition, start: IPosition): IRange = {
-    val __obj = js.Dynamic.literal(end = end, start = start)
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IRange]
   }

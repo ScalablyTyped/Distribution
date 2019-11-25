@@ -15,7 +15,7 @@ object AnyWhereOptions {
   @scala.inline
   def apply(StringDictionary: /* field */ StringDictionary[js.Array[WhereOptions[_]] | js.Object] = null): AnyWhereOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[AnyWhereOptions]
   }
 }

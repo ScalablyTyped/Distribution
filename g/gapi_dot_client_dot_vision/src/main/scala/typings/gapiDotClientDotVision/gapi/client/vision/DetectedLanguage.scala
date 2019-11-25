@@ -20,7 +20,7 @@ object DetectedLanguage {
   def apply(confidence: Int | Double = null, languageCode: String = null): DetectedLanguage = {
     val __obj = js.Dynamic.literal()
     if (confidence != null) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
-    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode)
+    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectedLanguage]
   }
 }

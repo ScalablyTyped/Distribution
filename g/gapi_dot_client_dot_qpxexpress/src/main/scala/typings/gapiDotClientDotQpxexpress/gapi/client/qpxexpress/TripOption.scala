@@ -27,11 +27,11 @@ object TripOption {
     slice: js.Array[SliceInfo] = null
   ): TripOption = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (pricing != null) __obj.updateDynamic("pricing")(pricing)
-    if (saleTotal != null) __obj.updateDynamic("saleTotal")(saleTotal)
-    if (slice != null) __obj.updateDynamic("slice")(slice)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (pricing != null) __obj.updateDynamic("pricing")(pricing.asInstanceOf[js.Any])
+    if (saleTotal != null) __obj.updateDynamic("saleTotal")(saleTotal.asInstanceOf[js.Any])
+    if (slice != null) __obj.updateDynamic("slice")(slice.asInstanceOf[js.Any])
     __obj.asInstanceOf[TripOption]
   }
 }

@@ -71,13 +71,13 @@ object RemoteOptions {
     transform: /* response */ T => T = null,
     wildcard: String = null
   ): RemoteOptions[T] = {
-    val __obj = js.Dynamic.literal(url = url)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
     if (prepare != null) __obj.updateDynamic("prepare")(js.Any.fromFunction2(prepare))
     if (rateLimitWait != null) __obj.updateDynamic("rateLimitWait")(rateLimitWait.asInstanceOf[js.Any])
-    if (rateLimitby != null) __obj.updateDynamic("rateLimitby")(rateLimitby)
+    if (rateLimitby != null) __obj.updateDynamic("rateLimitby")(rateLimitby.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction1(transform))
-    if (wildcard != null) __obj.updateDynamic("wildcard")(wildcard)
+    if (wildcard != null) __obj.updateDynamic("wildcard")(wildcard.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteOptions[T]]
   }
 }

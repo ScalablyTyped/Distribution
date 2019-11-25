@@ -43,8 +43,8 @@ object RemoteConfig {
     parameters: Record[String, RemoteConfigParameter] = null
   ): RemoteConfig = {
     val __obj = js.Dynamic.literal()
-    if (conditions != null) __obj.updateDynamic("conditions")(conditions)
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
+    if (conditions != null) __obj.updateDynamic("conditions")(conditions.asInstanceOf[js.Any])
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteConfig]
   }
 }

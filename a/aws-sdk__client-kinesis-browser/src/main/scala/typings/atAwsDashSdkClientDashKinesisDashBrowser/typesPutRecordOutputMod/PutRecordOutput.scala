@@ -36,7 +36,7 @@ object PutRecordOutput {
     ShardId: String,
     EncryptionType: NONE | KMS | String = null
   ): PutRecordOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata, SequenceNumber = SequenceNumber, ShardId = ShardId)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], SequenceNumber = SequenceNumber.asInstanceOf[js.Any], ShardId = ShardId.asInstanceOf[js.Any])
     if (EncryptionType != null) __obj.updateDynamic("EncryptionType")(EncryptionType.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutRecordOutput]
   }

@@ -23,8 +23,8 @@ object UsageExportLocation {
   @scala.inline
   def apply(bucketName: String = null, reportNamePrefix: String = null): UsageExportLocation = {
     val __obj = js.Dynamic.literal()
-    if (bucketName != null) __obj.updateDynamic("bucketName")(bucketName)
-    if (reportNamePrefix != null) __obj.updateDynamic("reportNamePrefix")(reportNamePrefix)
+    if (bucketName != null) __obj.updateDynamic("bucketName")(bucketName.asInstanceOf[js.Any])
+    if (reportNamePrefix != null) __obj.updateDynamic("reportNamePrefix")(reportNamePrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsageExportLocation]
   }
 }

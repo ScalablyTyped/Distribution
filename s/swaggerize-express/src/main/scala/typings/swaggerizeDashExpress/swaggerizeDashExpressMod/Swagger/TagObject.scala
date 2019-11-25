@@ -13,9 +13,9 @@ trait TagObject extends js.Object {
 object TagObject {
   @scala.inline
   def apply(name: String, description: String = null, externalDocs: ExternalDocumentationObject = null): TagObject = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (externalDocs != null) __obj.updateDynamic("externalDocs")(externalDocs)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (externalDocs != null) __obj.updateDynamic("externalDocs")(externalDocs.asInstanceOf[js.Any])
     __obj.asInstanceOf[TagObject]
   }
 }

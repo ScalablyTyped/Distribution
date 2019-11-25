@@ -14,7 +14,7 @@ trait UrlEntity extends js.Object {
 object UrlEntity {
   @scala.inline
   def apply(display_url: String, expanded_url: String, indices: js.Tuple2[Double, Double], url: String): UrlEntity = {
-    val __obj = js.Dynamic.literal(display_url = display_url, expanded_url = expanded_url, indices = indices, url = url)
+    val __obj = js.Dynamic.literal(display_url = display_url.asInstanceOf[js.Any], expanded_url = expanded_url.asInstanceOf[js.Any], indices = indices.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UrlEntity]
   }

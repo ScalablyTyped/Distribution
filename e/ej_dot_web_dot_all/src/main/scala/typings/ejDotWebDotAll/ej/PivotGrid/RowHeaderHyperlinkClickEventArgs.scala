@@ -20,9 +20,9 @@ object RowHeaderHyperlinkClickEventArgs {
   @scala.inline
   def apply(args: js.Any = null, customObject: js.Any = null, element: js.Any = null): RowHeaderHyperlinkClickEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (args != null) __obj.updateDynamic("args")(args)
-    if (customObject != null) __obj.updateDynamic("customObject")(customObject)
-    if (element != null) __obj.updateDynamic("element")(element)
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (customObject != null) __obj.updateDynamic("customObject")(customObject.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowHeaderHyperlinkClickEventArgs]
   }
 }

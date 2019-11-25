@@ -19,7 +19,7 @@ object IInitializable {
   @scala.inline
   def apply[T /* <: js.Array[_] */](initialize: T => Unit, StringDictionary: /* key */ StringDictionary[js.Any] = null): IInitializable[T] = {
     val __obj = js.Dynamic.literal(initialize = js.Any.fromFunction1(initialize))
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[IInitializable[T]]
   }
 }

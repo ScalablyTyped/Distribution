@@ -25,10 +25,10 @@ object IDocumentCardTitleState {
     truncatedTitleFirstPiece: String = null,
     truncatedTitleSecondPiece: String = null
   ): IDocumentCardTitleState = {
-    val __obj = js.Dynamic.literal(needMeasurement = needMeasurement, previousTitle = previousTitle)
+    val __obj = js.Dynamic.literal(needMeasurement = needMeasurement.asInstanceOf[js.Any], previousTitle = previousTitle.asInstanceOf[js.Any])
     if (clientWidth != null) __obj.updateDynamic("clientWidth")(clientWidth.asInstanceOf[js.Any])
-    if (truncatedTitleFirstPiece != null) __obj.updateDynamic("truncatedTitleFirstPiece")(truncatedTitleFirstPiece)
-    if (truncatedTitleSecondPiece != null) __obj.updateDynamic("truncatedTitleSecondPiece")(truncatedTitleSecondPiece)
+    if (truncatedTitleFirstPiece != null) __obj.updateDynamic("truncatedTitleFirstPiece")(truncatedTitleFirstPiece.asInstanceOf[js.Any])
+    if (truncatedTitleSecondPiece != null) __obj.updateDynamic("truncatedTitleSecondPiece")(truncatedTitleSecondPiece.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDocumentCardTitleState]
   }
 }

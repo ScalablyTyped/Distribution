@@ -60,16 +60,16 @@ object Model {
     scope: String = null
   ): Model = {
     val __obj = js.Dynamic.literal()
-    if (cursorAt != null) __obj.updateDynamic("cursorAt")(cursorAt)
+    if (cursorAt != null) __obj.updateDynamic("cursorAt")(cursorAt.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
     if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
-    if (handle != null) __obj.updateDynamic("handle")(handle)
+    if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
     if (helper != null) __obj.updateDynamic("helper")(js.Any.fromFunction1(helper))
     if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
     if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
     if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
     if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]
   }
 }

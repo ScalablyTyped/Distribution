@@ -14,8 +14,8 @@ trait IColorPickerState extends js.Object {
 object IColorPickerState {
   @scala.inline
   def apply(color: IColor, editingColor: Anon_Component = null): IColorPickerState = {
-    val __obj = js.Dynamic.literal(color = color)
-    if (editingColor != null) __obj.updateDynamic("editingColor")(editingColor)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
+    if (editingColor != null) __obj.updateDynamic("editingColor")(editingColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[IColorPickerState]
   }
 }

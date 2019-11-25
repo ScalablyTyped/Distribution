@@ -13,7 +13,7 @@ trait Anon_FieldListKeyCode extends js.Object {
 object Anon_FieldListKeyCode {
   @scala.inline
   def apply(FieldList: Double, KeyCode: Double, Shift: Double): Anon_FieldListKeyCode = {
-    val __obj = js.Dynamic.literal(FieldList = FieldList, KeyCode = KeyCode, Shift = Shift)
+    val __obj = js.Dynamic.literal(FieldList = FieldList.asInstanceOf[js.Any], KeyCode = KeyCode.asInstanceOf[js.Any], Shift = Shift.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FieldListKeyCode]
   }

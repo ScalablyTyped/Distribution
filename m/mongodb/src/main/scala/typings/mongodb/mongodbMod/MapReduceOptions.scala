@@ -37,18 +37,18 @@ object MapReduceOptions {
     verbose: js.UndefOr[Boolean] = js.undefined
   ): MapReduceOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bypassDocumentValidation)) __obj.updateDynamic("bypassDocumentValidation")(bypassDocumentValidation)
+    if (!js.isUndefined(bypassDocumentValidation)) __obj.updateDynamic("bypassDocumentValidation")(bypassDocumentValidation.asInstanceOf[js.Any])
     if (finalize != null) __obj.updateDynamic("finalize")(finalize.asInstanceOf[js.Any])
-    if (!js.isUndefined(jsMode)) __obj.updateDynamic("jsMode")(jsMode)
-    if (!js.isUndefined(keeptemp)) __obj.updateDynamic("keeptemp")(keeptemp)
+    if (!js.isUndefined(jsMode)) __obj.updateDynamic("jsMode")(jsMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(keeptemp)) __obj.updateDynamic("keeptemp")(keeptemp.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (out != null) __obj.updateDynamic("out")(out)
-    if (query != null) __obj.updateDynamic("query")(query)
-    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
-    if (session != null) __obj.updateDynamic("session")(session)
-    if (sort != null) __obj.updateDynamic("sort")(sort)
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
+    if (out != null) __obj.updateDynamic("out")(out.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
+    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapReduceOptions]
   }
 }

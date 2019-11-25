@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait ParametrizationInterpolationType extends js.Object
 
+object ParametrizationInterpolationType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def centripetal: typings.vis.visStrings.centripetal = this.cast("centripetal")
+  @scala.inline
+  def chordal: typings.vis.visStrings.chordal = this.cast("chordal")
+  @scala.inline
+  def disabled: typings.vis.visStrings.disabled = this.cast("disabled")
+  @scala.inline
+  def uniform: typings.vis.visStrings.uniform = this.cast("uniform")
+}
+

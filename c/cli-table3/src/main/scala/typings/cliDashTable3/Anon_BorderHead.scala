@@ -20,8 +20,8 @@ object Anon_BorderHead {
     `padding-right`: Int | Double = null
   ): Anon_BorderHead = {
     val __obj = js.Dynamic.literal()
-    if (border != null) __obj.updateDynamic("border")(border)
-    if (head != null) __obj.updateDynamic("head")(head)
+    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
+    if (head != null) __obj.updateDynamic("head")(head.asInstanceOf[js.Any])
     if (`padding-left` != null) __obj.updateDynamic("padding-left")(`padding-left`.asInstanceOf[js.Any])
     if (`padding-right` != null) __obj.updateDynamic("padding-right")(`padding-right`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BorderHead]

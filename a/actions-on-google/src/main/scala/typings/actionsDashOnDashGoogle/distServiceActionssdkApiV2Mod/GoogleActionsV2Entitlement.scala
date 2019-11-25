@@ -26,9 +26,9 @@ object GoogleActionsV2Entitlement {
     skuType: GoogleActionsV2EntitlementSkuType = null
   ): GoogleActionsV2Entitlement = {
     val __obj = js.Dynamic.literal()
-    if (inAppDetails != null) __obj.updateDynamic("inAppDetails")(inAppDetails)
-    if (sku != null) __obj.updateDynamic("sku")(sku)
-    if (skuType != null) __obj.updateDynamic("skuType")(skuType)
+    if (inAppDetails != null) __obj.updateDynamic("inAppDetails")(inAppDetails.asInstanceOf[js.Any])
+    if (sku != null) __obj.updateDynamic("sku")(sku.asInstanceOf[js.Any])
+    if (skuType != null) __obj.updateDynamic("skuType")(skuType.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2Entitlement]
   }
 }

@@ -22,9 +22,9 @@ trait ObjectCommon extends js.Object {
 object ObjectCommon {
   @scala.inline
   def apply(name: String, icon: String = null, role: String = null): ObjectCommon = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (role != null) __obj.updateDynamic("role")(role)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectCommon]
   }
 }

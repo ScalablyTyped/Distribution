@@ -13,8 +13,8 @@ trait NotificationAction extends js.Object {
 object NotificationAction {
   @scala.inline
   def apply(action: java.lang.String, title: java.lang.String, icon: java.lang.String = null): NotificationAction = {
-    val __obj = js.Dynamic.literal(action = action, title = title)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationAction]
   }
 }

@@ -13,8 +13,8 @@ trait IpcSocketConnectOpts
 object IpcSocketConnectOpts {
   @scala.inline
   def apply(path: java.lang.String, onread: OnReadOpts = null): IpcSocketConnectOpts = {
-    val __obj = js.Dynamic.literal(path = path)
-    if (onread != null) __obj.updateDynamic("onread")(onread)
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
+    if (onread != null) __obj.updateDynamic("onread")(onread.asInstanceOf[js.Any])
     __obj.asInstanceOf[IpcSocketConnectOpts]
   }
 }

@@ -19,7 +19,7 @@ trait ProjectsListColumnsParams extends js.Object {
 object ProjectsListColumnsParams {
   @scala.inline
   def apply(project_id: Double, page: Int | Double = null, per_page: Int | Double = null): ProjectsListColumnsParams = {
-    val __obj = js.Dynamic.literal(project_id = project_id)
+    val __obj = js.Dynamic.literal(project_id = project_id.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (per_page != null) __obj.updateDynamic("per_page")(per_page.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectsListColumnsParams]

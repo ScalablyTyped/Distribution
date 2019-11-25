@@ -34,7 +34,7 @@ object EnterprisesResource {
     policies: PoliciesResource,
     webTokens: WebTokensResource
   ): EnterprisesResource = {
-    val __obj = js.Dynamic.literal(applications = applications, create = js.Any.fromFunction1(create), devices = devices, enrollmentTokens = enrollmentTokens, get = js.Any.fromFunction1(get), patch = js.Any.fromFunction1(patch), policies = policies, webTokens = webTokens)
+    val __obj = js.Dynamic.literal(applications = applications.asInstanceOf[js.Any], create = js.Any.fromFunction1(create), devices = devices.asInstanceOf[js.Any], enrollmentTokens = enrollmentTokens.asInstanceOf[js.Any], get = js.Any.fromFunction1(get), patch = js.Any.fromFunction1(patch), policies = policies.asInstanceOf[js.Any], webTokens = webTokens.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EnterprisesResource]
   }

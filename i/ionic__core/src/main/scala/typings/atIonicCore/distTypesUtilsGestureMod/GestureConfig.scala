@@ -42,10 +42,10 @@ object GestureConfig {
     passive: js.UndefOr[Boolean] = js.undefined,
     threshold: Int | Double = null
   ): GestureConfig = {
-    val __obj = js.Dynamic.literal(el = el, gestureName = gestureName)
+    val __obj = js.Dynamic.literal(el = el.asInstanceOf[js.Any], gestureName = gestureName.asInstanceOf[js.Any])
     if (canStart != null) __obj.updateDynamic("canStart")(js.Any.fromFunction1(canStart))
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableScroll)) __obj.updateDynamic("disableScroll")(disableScroll)
+    if (!js.isUndefined(disableScroll)) __obj.updateDynamic("disableScroll")(disableScroll.asInstanceOf[js.Any])
     if (gesturePriority != null) __obj.updateDynamic("gesturePriority")(gesturePriority.asInstanceOf[js.Any])
     if (maxAngle != null) __obj.updateDynamic("maxAngle")(maxAngle.asInstanceOf[js.Any])
     if (notCaptured != null) __obj.updateDynamic("notCaptured")(js.Any.fromFunction1(notCaptured))
@@ -53,7 +53,7 @@ object GestureConfig {
     if (onMove != null) __obj.updateDynamic("onMove")(js.Any.fromFunction1(onMove))
     if (onStart != null) __obj.updateDynamic("onStart")(js.Any.fromFunction1(onStart))
     if (onWillStart != null) __obj.updateDynamic("onWillStart")(js.Any.fromFunction1(onWillStart))
-    if (!js.isUndefined(passive)) __obj.updateDynamic("passive")(passive)
+    if (!js.isUndefined(passive)) __obj.updateDynamic("passive")(passive.asInstanceOf[js.Any])
     if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
     __obj.asInstanceOf[GestureConfig]
   }

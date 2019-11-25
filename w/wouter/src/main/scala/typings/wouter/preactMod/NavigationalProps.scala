@@ -4,17 +4,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait NavigationalProps extends js.Object {
-  var href: js.UndefOr[Path] = js.undefined
-  var to: js.UndefOr[Path] = js.undefined
-}
+/* Rewritten from type alias, can be one of: 
+  - typings.wouter.Anon_ToPath
+  - typings.wouter.Anon_HrefPath
+*/
+trait NavigationalProps extends js.Object
 
 object NavigationalProps {
   @scala.inline
-  def apply(href: Path = null, to: Path = null): NavigationalProps = {
-    val __obj = js.Dynamic.literal()
-    if (href != null) __obj.updateDynamic("href")(href)
-    if (to != null) __obj.updateDynamic("to")(to)
+  def Anon_ToPath(to: Path): NavigationalProps = {
+    val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[NavigationalProps]
+  }
+  @scala.inline
+  def Anon_HrefPath(href: Path): NavigationalProps = {
+    val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[NavigationalProps]
   }
 }

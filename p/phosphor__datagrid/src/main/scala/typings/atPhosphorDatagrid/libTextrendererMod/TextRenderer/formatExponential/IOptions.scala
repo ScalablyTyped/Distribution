@@ -27,7 +27,7 @@ object IOptions {
   def apply(digits: Int | Double = null, missing: String = null): IOptions = {
     val __obj = js.Dynamic.literal()
     if (digits != null) __obj.updateDynamic("digits")(digits.asInstanceOf[js.Any])
-    if (missing != null) __obj.updateDynamic("missing")(missing)
+    if (missing != null) __obj.updateDynamic("missing")(missing.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

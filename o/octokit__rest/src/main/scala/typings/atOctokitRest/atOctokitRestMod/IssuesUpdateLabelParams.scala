@@ -32,10 +32,10 @@ object IssuesUpdateLabelParams {
     description: String = null,
     name: String = null
   ): IssuesUpdateLabelParams = {
-    val __obj = js.Dynamic.literal(current_name = current_name, owner = owner, repo = repo)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (name != null) __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(current_name = current_name.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IssuesUpdateLabelParams]
   }
 }

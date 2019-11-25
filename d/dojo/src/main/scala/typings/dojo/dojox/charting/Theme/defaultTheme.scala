@@ -46,7 +46,7 @@ object defaultTheme {
     plotarea: js.Object,
     series: js.Object
   ): defaultTheme = {
-    val __obj = js.Dynamic.literal(axis = axis, chart = chart, indicator = indicator, marker = marker, plotarea = plotarea, series = series)
+    val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], chart = chart.asInstanceOf[js.Any], indicator = indicator.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any], plotarea = plotarea.asInstanceOf[js.Any], series = series.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[defaultTheme]
   }

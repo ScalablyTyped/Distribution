@@ -1,14 +1,14 @@
 package typings.globalize.distGlobalizeRelativeDashTimeMod
 
 import typings.cldrjs.cldrjsMod.CldrStatic
-import typings.globalize.distGlobalizeMod.Globalize
+import typings.globalize.distGlobalizeMod.Shared
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("globalize/dist/globalize/relative-time", JSImport.Namespace)
 @js.native
-class Class protected () extends Globalize {
+class Class protected () extends Shared {
   /**
   		 * Create a Globalize instance.
   		 * @param cldr Cldr instance of the instance.

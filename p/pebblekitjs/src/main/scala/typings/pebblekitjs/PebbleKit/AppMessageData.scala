@@ -11,7 +11,7 @@ trait AppMessageData extends js.Object {
 object AppMessageData {
   @scala.inline
   def apply(transactionId: String): AppMessageData = {
-    val __obj = js.Dynamic.literal(transactionId = transactionId)
+    val __obj = js.Dynamic.literal(transactionId = transactionId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AppMessageData]
   }

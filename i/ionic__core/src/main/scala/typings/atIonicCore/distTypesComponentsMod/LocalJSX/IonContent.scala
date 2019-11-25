@@ -1,8 +1,5 @@
 package typings.atIonicCore.distTypesComponentsMod.LocalJSX
 
-import typings.atIonicCore.distTypesComponentsContentContentDashInterfaceMod.ScrollBaseDetail
-import typings.atIonicCore.distTypesComponentsContentContentDashInterfaceMod.ScrollDetail
-import typings.atIonicCore.distTypesInterfaceMod.Color
 import typings.std.CustomEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +9,9 @@ trait IonContent extends js.Object {
   /**
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
-  var color: js.UndefOr[Color] = js.undefined
+  var color: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any
+  ] = js.undefined
   /**
     * If `true` and the content does not cause an overflow scroll, the scroll interaction will cause a bounce. If the content exceeds the bounds of ionContent, nothing will change. Note, the does not disable the system bounce on iOS. That is an OS level setting.
     */
@@ -24,15 +23,36 @@ trait IonContent extends js.Object {
   /**
     * Emitted while scrolling. This event is disabled by default. Look at the property: `scrollEvents`
     */
-  var onIonScroll: js.UndefOr[js.Function1[/* event */ CustomEvent[ScrollDetail], Unit]] = js.undefined
+  var onIonScroll: js.UndefOr[
+    js.Function1[
+      /* event */ CustomEvent[
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ScrollDetail */ _
+      ], 
+      Unit
+    ]
+  ] = js.undefined
   /**
     * Emitted when the scroll has ended.
     */
-  var onIonScrollEnd: js.UndefOr[js.Function1[/* event */ CustomEvent[ScrollBaseDetail], Unit]] = js.undefined
+  var onIonScrollEnd: js.UndefOr[
+    js.Function1[
+      /* event */ CustomEvent[
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ScrollBaseDetail */ _
+      ], 
+      Unit
+    ]
+  ] = js.undefined
   /**
     * Emitted when the scroll has started.
     */
-  var onIonScrollStart: js.UndefOr[js.Function1[/* event */ CustomEvent[ScrollBaseDetail], Unit]] = js.undefined
+  var onIonScrollStart: js.UndefOr[
+    js.Function1[
+      /* event */ CustomEvent[
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ScrollBaseDetail */ _
+      ], 
+      Unit
+    ]
+  ] = js.undefined
   /**
     * Because of performance reasons, ionScroll events are disabled by default, in order to enable them and start listening from (ionScroll), set this property to `true`.
     */
@@ -50,26 +70,32 @@ trait IonContent extends js.Object {
 object IonContent {
   @scala.inline
   def apply(
-    color: Color = null,
+    color: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any = null,
     forceOverscroll: js.UndefOr[Boolean] = js.undefined,
     fullscreen: js.UndefOr[Boolean] = js.undefined,
-    onIonScroll: /* event */ CustomEvent[ScrollDetail] => Unit = null,
-    onIonScrollEnd: /* event */ CustomEvent[ScrollBaseDetail] => Unit = null,
-    onIonScrollStart: /* event */ CustomEvent[ScrollBaseDetail] => Unit = null,
+    onIonScroll: /* event */ CustomEvent[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ScrollDetail */ _
+    ] => Unit = null,
+    onIonScrollEnd: /* event */ CustomEvent[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ScrollBaseDetail */ _
+    ] => Unit = null,
+    onIonScrollStart: /* event */ CustomEvent[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ScrollBaseDetail */ _
+    ] => Unit = null,
     scrollEvents: js.UndefOr[Boolean] = js.undefined,
     scrollX: js.UndefOr[Boolean] = js.undefined,
     scrollY: js.UndefOr[Boolean] = js.undefined
   ): IonContent = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceOverscroll)) __obj.updateDynamic("forceOverscroll")(forceOverscroll)
-    if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen)
+    if (!js.isUndefined(forceOverscroll)) __obj.updateDynamic("forceOverscroll")(forceOverscroll.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen.asInstanceOf[js.Any])
     if (onIonScroll != null) __obj.updateDynamic("onIonScroll")(js.Any.fromFunction1(onIonScroll))
     if (onIonScrollEnd != null) __obj.updateDynamic("onIonScrollEnd")(js.Any.fromFunction1(onIonScrollEnd))
     if (onIonScrollStart != null) __obj.updateDynamic("onIonScrollStart")(js.Any.fromFunction1(onIonScrollStart))
-    if (!js.isUndefined(scrollEvents)) __obj.updateDynamic("scrollEvents")(scrollEvents)
-    if (!js.isUndefined(scrollX)) __obj.updateDynamic("scrollX")(scrollX)
-    if (!js.isUndefined(scrollY)) __obj.updateDynamic("scrollY")(scrollY)
+    if (!js.isUndefined(scrollEvents)) __obj.updateDynamic("scrollEvents")(scrollEvents.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollX)) __obj.updateDynamic("scrollX")(scrollX.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollY)) __obj.updateDynamic("scrollY")(scrollY.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonContent]
   }
 }

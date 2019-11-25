@@ -13,7 +13,7 @@ trait Location extends js.Object {
 object Location {
   @scala.inline
   def apply(query: js.Any): Location = {
-    val __obj = js.Dynamic.literal(query = query)
+    val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Location]
   }

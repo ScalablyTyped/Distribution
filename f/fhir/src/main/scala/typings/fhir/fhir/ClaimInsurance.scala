@@ -70,20 +70,20 @@ object ClaimInsurance {
     modifierExtension: js.Array[Extension] = null,
     preAuthRef: js.Array[String] = null
   ): ClaimInsurance = {
-    val __obj = js.Dynamic.literal(coverage = coverage, focal = focal, sequence = sequence)
-    if (_businessArrangement != null) __obj.updateDynamic("_businessArrangement")(_businessArrangement)
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
-    if (_focal != null) __obj.updateDynamic("_focal")(_focal)
-    if (_id != null) __obj.updateDynamic("_id")(_id)
-    if (_preAuthRef != null) __obj.updateDynamic("_preAuthRef")(_preAuthRef)
-    if (_sequence != null) __obj.updateDynamic("_sequence")(_sequence)
-    if (businessArrangement != null) __obj.updateDynamic("businessArrangement")(businessArrangement)
-    if (claimResponse != null) __obj.updateDynamic("claimResponse")(claimResponse)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
-    if (preAuthRef != null) __obj.updateDynamic("preAuthRef")(preAuthRef)
+    val __obj = js.Dynamic.literal(coverage = coverage.asInstanceOf[js.Any], focal = focal.asInstanceOf[js.Any], sequence = sequence.asInstanceOf[js.Any])
+    if (_businessArrangement != null) __obj.updateDynamic("_businessArrangement")(_businessArrangement.asInstanceOf[js.Any])
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
+    if (_focal != null) __obj.updateDynamic("_focal")(_focal.asInstanceOf[js.Any])
+    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
+    if (_preAuthRef != null) __obj.updateDynamic("_preAuthRef")(_preAuthRef.asInstanceOf[js.Any])
+    if (_sequence != null) __obj.updateDynamic("_sequence")(_sequence.asInstanceOf[js.Any])
+    if (businessArrangement != null) __obj.updateDynamic("businessArrangement")(businessArrangement.asInstanceOf[js.Any])
+    if (claimResponse != null) __obj.updateDynamic("claimResponse")(claimResponse.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
+    if (preAuthRef != null) __obj.updateDynamic("preAuthRef")(preAuthRef.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClaimInsurance]
   }
 }

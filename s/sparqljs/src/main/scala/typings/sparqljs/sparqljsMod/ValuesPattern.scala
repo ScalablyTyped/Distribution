@@ -13,8 +13,8 @@ trait ValuesPattern extends Pattern {
 object ValuesPattern {
   @scala.inline
   def apply(`type`: values, values: js.Array[ValuePatternRow]): ValuesPattern = {
-    val __obj = js.Dynamic.literal(values = values)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValuesPattern]
   }
 }

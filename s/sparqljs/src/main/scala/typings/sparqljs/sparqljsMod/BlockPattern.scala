@@ -18,7 +18,7 @@ trait BlockPattern extends Pattern {
 object BlockPattern {
   @scala.inline
   def apply(patterns: js.Array[Pattern], `type`: optional | union | group | minus | graph | service): BlockPattern = {
-    val __obj = js.Dynamic.literal(patterns = patterns)
+    val __obj = js.Dynamic.literal(patterns = patterns.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlockPattern]
   }

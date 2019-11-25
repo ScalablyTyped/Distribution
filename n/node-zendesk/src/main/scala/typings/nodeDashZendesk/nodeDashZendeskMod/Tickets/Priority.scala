@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait Priority extends js.Object
 
+object Priority {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def high: typings.nodeDashZendesk.nodeDashZendeskStrings.high = this.cast("high")
+  @scala.inline
+  def low: typings.nodeDashZendesk.nodeDashZendeskStrings.low = this.cast("low")
+  @scala.inline
+  def normal: typings.nodeDashZendesk.nodeDashZendeskStrings.normal = this.cast("normal")
+  @scala.inline
+  def urgent: typings.nodeDashZendesk.nodeDashZendeskStrings.urgent = this.cast("urgent")
+}
+

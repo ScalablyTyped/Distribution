@@ -11,7 +11,7 @@ trait Window extends js.Object {
 object Window {
   @scala.inline
   def apply(QRScanner: QRScanner): Window = {
-    val __obj = js.Dynamic.literal(QRScanner = QRScanner)
+    val __obj = js.Dynamic.literal(QRScanner = QRScanner.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Window]
   }

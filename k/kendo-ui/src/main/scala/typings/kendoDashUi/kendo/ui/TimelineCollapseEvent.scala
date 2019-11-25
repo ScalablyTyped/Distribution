@@ -17,8 +17,8 @@ object TimelineCollapseEvent {
     sender: Timeline,
     dataItem: Model = null
   ): TimelineCollapseEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (dataItem != null) __obj.updateDynamic("dataItem")(dataItem)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (dataItem != null) __obj.updateDynamic("dataItem")(dataItem.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineCollapseEvent]
   }
 }

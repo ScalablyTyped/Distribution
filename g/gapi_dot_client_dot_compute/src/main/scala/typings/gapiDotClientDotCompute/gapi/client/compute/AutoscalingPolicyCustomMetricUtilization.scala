@@ -34,9 +34,9 @@ object AutoscalingPolicyCustomMetricUtilization {
     utilizationTargetType: String = null
   ): AutoscalingPolicyCustomMetricUtilization = {
     val __obj = js.Dynamic.literal()
-    if (metric != null) __obj.updateDynamic("metric")(metric)
+    if (metric != null) __obj.updateDynamic("metric")(metric.asInstanceOf[js.Any])
     if (utilizationTarget != null) __obj.updateDynamic("utilizationTarget")(utilizationTarget.asInstanceOf[js.Any])
-    if (utilizationTargetType != null) __obj.updateDynamic("utilizationTargetType")(utilizationTargetType)
+    if (utilizationTargetType != null) __obj.updateDynamic("utilizationTargetType")(utilizationTargetType.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoscalingPolicyCustomMetricUtilization]
   }
 }

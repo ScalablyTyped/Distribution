@@ -32,10 +32,10 @@ object Anon_EdgeLabel {
     lineStyle: Anon_ColorOpacityShadowBlur = null
   ): Anon_EdgeLabel = {
     val __obj = js.Dynamic.literal()
-    if (edgeLabel != null) __obj.updateDynamic("edgeLabel")(edgeLabel)
-    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle)
+    if (edgeLabel != null) __obj.updateDynamic("edgeLabel")(edgeLabel.asInstanceOf[js.Any])
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_EdgeLabel]
   }
 }

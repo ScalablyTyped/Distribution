@@ -21,9 +21,9 @@ object GoogleApi__HttpBody {
   @scala.inline
   def apply(contentType: String = null, data: String = null, extensions: js.Array[Record[String, _]] = null): GoogleApi__HttpBody = {
     val __obj = js.Dynamic.literal()
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleApi__HttpBody]
   }
 }

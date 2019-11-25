@@ -12,7 +12,7 @@ trait Anon_NeedsUpdate extends js.Object {
 object Anon_NeedsUpdate {
   @scala.inline
   def apply(needsUpdate: Boolean, value: js.Any): Anon_NeedsUpdate = {
-    val __obj = js.Dynamic.literal(needsUpdate = needsUpdate, value = value)
+    val __obj = js.Dynamic.literal(needsUpdate = needsUpdate.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_NeedsUpdate]
   }

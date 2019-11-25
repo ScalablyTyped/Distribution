@@ -41,14 +41,14 @@ object UpdateValueParams {
     new_value_type: ValueType | String = null,
     return_response: js.UndefOr[Boolean] = js.undefined
   ): UpdateValueParams = {
-    val __obj = js.Dynamic.literal(entity = entity, value = value, workspace_id = workspace_id)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (new_metadata != null) __obj.updateDynamic("new_metadata")(new_metadata)
-    if (new_patterns != null) __obj.updateDynamic("new_patterns")(new_patterns)
-    if (new_synonyms != null) __obj.updateDynamic("new_synonyms")(new_synonyms)
-    if (new_value != null) __obj.updateDynamic("new_value")(new_value)
+    val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], workspace_id = workspace_id.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (new_metadata != null) __obj.updateDynamic("new_metadata")(new_metadata.asInstanceOf[js.Any])
+    if (new_patterns != null) __obj.updateDynamic("new_patterns")(new_patterns.asInstanceOf[js.Any])
+    if (new_synonyms != null) __obj.updateDynamic("new_synonyms")(new_synonyms.asInstanceOf[js.Any])
+    if (new_value != null) __obj.updateDynamic("new_value")(new_value.asInstanceOf[js.Any])
     if (new_value_type != null) __obj.updateDynamic("new_value_type")(new_value_type.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response)
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateValueParams]
   }
 }

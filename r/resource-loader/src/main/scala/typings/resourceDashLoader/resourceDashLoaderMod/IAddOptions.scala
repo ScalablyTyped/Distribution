@@ -60,14 +60,14 @@ object IAddOptions {
     val __obj = js.Dynamic.literal()
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))
     if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (loadType != null) __obj.updateDynamic("loadType")(loadType)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (loadType != null) __obj.updateDynamic("loadType")(loadType.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (onComplete != null) __obj.updateDynamic("onComplete")(js.Any.fromFunction1(onComplete))
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url)
-    if (xhrType != null) __obj.updateDynamic("xhrType")(xhrType)
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (xhrType != null) __obj.updateDynamic("xhrType")(xhrType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAddOptions]
   }
 }

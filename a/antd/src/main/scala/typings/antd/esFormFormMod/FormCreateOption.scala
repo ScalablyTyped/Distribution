@@ -27,11 +27,11 @@ object FormCreateOption {
   ): FormCreateOption[T] = {
     val __obj = js.Dynamic.literal()
     if (mapPropsToFields != null) __obj.updateDynamic("mapPropsToFields")(js.Any.fromFunction1(mapPropsToFields))
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (onFieldsChange != null) __obj.updateDynamic("onFieldsChange")(js.Any.fromFunction3(onFieldsChange))
     if (onValuesChange != null) __obj.updateDynamic("onValuesChange")(js.Any.fromFunction3(onValuesChange))
-    if (validateMessages != null) __obj.updateDynamic("validateMessages")(validateMessages)
-    if (!js.isUndefined(withRef)) __obj.updateDynamic("withRef")(withRef)
+    if (validateMessages != null) __obj.updateDynamic("validateMessages")(validateMessages.asInstanceOf[js.Any])
+    if (!js.isUndefined(withRef)) __obj.updateDynamic("withRef")(withRef.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormCreateOption[T]]
   }
 }

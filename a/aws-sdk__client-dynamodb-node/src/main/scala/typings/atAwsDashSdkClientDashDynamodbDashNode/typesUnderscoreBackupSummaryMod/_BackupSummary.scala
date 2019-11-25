@@ -68,16 +68,16 @@ object _BackupSummary {
     TableName: String = null
   ): _BackupSummary = {
     val __obj = js.Dynamic.literal()
-    if (BackupArn != null) __obj.updateDynamic("BackupArn")(BackupArn)
+    if (BackupArn != null) __obj.updateDynamic("BackupArn")(BackupArn.asInstanceOf[js.Any])
     if (BackupCreationDateTime != null) __obj.updateDynamic("BackupCreationDateTime")(BackupCreationDateTime.asInstanceOf[js.Any])
     if (BackupExpiryDateTime != null) __obj.updateDynamic("BackupExpiryDateTime")(BackupExpiryDateTime.asInstanceOf[js.Any])
-    if (BackupName != null) __obj.updateDynamic("BackupName")(BackupName)
+    if (BackupName != null) __obj.updateDynamic("BackupName")(BackupName.asInstanceOf[js.Any])
     if (BackupSizeBytes != null) __obj.updateDynamic("BackupSizeBytes")(BackupSizeBytes.asInstanceOf[js.Any])
     if (BackupStatus != null) __obj.updateDynamic("BackupStatus")(BackupStatus.asInstanceOf[js.Any])
     if (BackupType != null) __obj.updateDynamic("BackupType")(BackupType.asInstanceOf[js.Any])
-    if (TableArn != null) __obj.updateDynamic("TableArn")(TableArn)
-    if (TableId != null) __obj.updateDynamic("TableId")(TableId)
-    if (TableName != null) __obj.updateDynamic("TableName")(TableName)
+    if (TableArn != null) __obj.updateDynamic("TableArn")(TableArn.asInstanceOf[js.Any])
+    if (TableId != null) __obj.updateDynamic("TableId")(TableId.asInstanceOf[js.Any])
+    if (TableName != null) __obj.updateDynamic("TableName")(TableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[_BackupSummary]
   }
 }

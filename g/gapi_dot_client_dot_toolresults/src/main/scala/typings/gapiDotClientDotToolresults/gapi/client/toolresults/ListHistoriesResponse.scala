@@ -22,8 +22,8 @@ object ListHistoriesResponse {
   @scala.inline
   def apply(histories: js.Array[History] = null, nextPageToken: String = null): ListHistoriesResponse = {
     val __obj = js.Dynamic.literal()
-    if (histories != null) __obj.updateDynamic("histories")(histories)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (histories != null) __obj.updateDynamic("histories")(histories.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListHistoriesResponse]
   }
 }

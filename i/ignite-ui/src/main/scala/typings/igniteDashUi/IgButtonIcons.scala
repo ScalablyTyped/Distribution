@@ -25,9 +25,9 @@ object IgButtonIcons {
     secondary: js.Any = null
   ): IgButtonIcons = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (primary != null) __obj.updateDynamic("primary")(primary)
-    if (secondary != null) __obj.updateDynamic("secondary")(secondary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (primary != null) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
+    if (secondary != null) __obj.updateDynamic("secondary")(secondary.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgButtonIcons]
   }
 }

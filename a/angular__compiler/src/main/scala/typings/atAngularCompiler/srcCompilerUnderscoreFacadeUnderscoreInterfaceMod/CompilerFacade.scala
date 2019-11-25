@@ -32,7 +32,7 @@ object CompilerFacade {
     compilePipe: (CoreEnvironment, String, R3PipeMetadataFacade) => js.Any,
     createParseSourceSpan: (String, String, String) => ParseSourceSpan
   ): CompilerFacade = {
-    val __obj = js.Dynamic.literal(R3ResolvedDependencyType = R3ResolvedDependencyType, ResourceLoader = ResourceLoader, compileBase = js.Any.fromFunction3(compileBase), compileComponent = js.Any.fromFunction3(compileComponent), compileDirective = js.Any.fromFunction3(compileDirective), compileInjectable = js.Any.fromFunction3(compileInjectable), compileInjector = js.Any.fromFunction3(compileInjector), compileNgModule = js.Any.fromFunction3(compileNgModule), compilePipe = js.Any.fromFunction3(compilePipe), createParseSourceSpan = js.Any.fromFunction3(createParseSourceSpan))
+    val __obj = js.Dynamic.literal(R3ResolvedDependencyType = R3ResolvedDependencyType.asInstanceOf[js.Any], ResourceLoader = ResourceLoader.asInstanceOf[js.Any], compileBase = js.Any.fromFunction3(compileBase), compileComponent = js.Any.fromFunction3(compileComponent), compileDirective = js.Any.fromFunction3(compileDirective), compileInjectable = js.Any.fromFunction3(compileInjectable), compileInjector = js.Any.fromFunction3(compileInjector), compileNgModule = js.Any.fromFunction3(compileNgModule), compilePipe = js.Any.fromFunction3(compilePipe), createParseSourceSpan = js.Any.fromFunction3(createParseSourceSpan))
   
     __obj.asInstanceOf[CompilerFacade]
   }

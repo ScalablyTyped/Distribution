@@ -25,12 +25,12 @@ object DataSourceSchemaModelFieldValidation {
     required: js.UndefOr[Boolean] = js.undefined
   ): DataSourceSchemaModelFieldValidation = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (max != null) __obj.updateDynamic("max")(max)
-    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength)
-    if (min != null) __obj.updateDynamic("min")(min)
-    if (minLength != null) __obj.updateDynamic("minLength")(minLength)
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceSchemaModelFieldValidation]
   }
 }

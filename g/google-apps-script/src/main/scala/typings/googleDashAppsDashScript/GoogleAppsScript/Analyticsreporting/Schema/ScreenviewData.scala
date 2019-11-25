@@ -20,10 +20,10 @@ object ScreenviewData {
     screenName: String = null
   ): ScreenviewData = {
     val __obj = js.Dynamic.literal()
-    if (appName != null) __obj.updateDynamic("appName")(appName)
-    if (mobileDeviceBranding != null) __obj.updateDynamic("mobileDeviceBranding")(mobileDeviceBranding)
-    if (mobileDeviceModel != null) __obj.updateDynamic("mobileDeviceModel")(mobileDeviceModel)
-    if (screenName != null) __obj.updateDynamic("screenName")(screenName)
+    if (appName != null) __obj.updateDynamic("appName")(appName.asInstanceOf[js.Any])
+    if (mobileDeviceBranding != null) __obj.updateDynamic("mobileDeviceBranding")(mobileDeviceBranding.asInstanceOf[js.Any])
+    if (mobileDeviceModel != null) __obj.updateDynamic("mobileDeviceModel")(mobileDeviceModel.asInstanceOf[js.Any])
+    if (screenName != null) __obj.updateDynamic("screenName")(screenName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScreenviewData]
   }
 }

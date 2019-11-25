@@ -21,9 +21,9 @@ object ComposeInputObjectTypeConfig {
     description: String = null,
     extensions: Extensions = null
   ): ComposeInputObjectTypeConfig = {
-    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], name = name)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComposeInputObjectTypeConfig]
   }
 }

@@ -27,7 +27,7 @@ trait IBlockDestructionStoppedEventData extends js.Object {
 object IBlockDestructionStoppedEventData {
   @scala.inline
   def apply(block_position: VectorXYZ, destruction_progress: Double, player: IEntity): IBlockDestructionStoppedEventData = {
-    val __obj = js.Dynamic.literal(block_position = block_position, destruction_progress = destruction_progress, player = player)
+    val __obj = js.Dynamic.literal(block_position = block_position.asInstanceOf[js.Any], destruction_progress = destruction_progress.asInstanceOf[js.Any], player = player.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IBlockDestructionStoppedEventData]
   }

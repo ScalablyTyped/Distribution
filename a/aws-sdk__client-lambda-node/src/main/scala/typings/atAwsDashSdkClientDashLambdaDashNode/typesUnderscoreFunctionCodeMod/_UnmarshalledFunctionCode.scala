@@ -22,10 +22,10 @@ object _UnmarshalledFunctionCode {
     ZipFile: Uint8Array = null
   ): _UnmarshalledFunctionCode = {
     val __obj = js.Dynamic.literal()
-    if (S3Bucket != null) __obj.updateDynamic("S3Bucket")(S3Bucket)
-    if (S3Key != null) __obj.updateDynamic("S3Key")(S3Key)
-    if (S3ObjectVersion != null) __obj.updateDynamic("S3ObjectVersion")(S3ObjectVersion)
-    if (ZipFile != null) __obj.updateDynamic("ZipFile")(ZipFile)
+    if (S3Bucket != null) __obj.updateDynamic("S3Bucket")(S3Bucket.asInstanceOf[js.Any])
+    if (S3Key != null) __obj.updateDynamic("S3Key")(S3Key.asInstanceOf[js.Any])
+    if (S3ObjectVersion != null) __obj.updateDynamic("S3ObjectVersion")(S3ObjectVersion.asInstanceOf[js.Any])
+    if (ZipFile != null) __obj.updateDynamic("ZipFile")(ZipFile.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledFunctionCode]
   }
 }

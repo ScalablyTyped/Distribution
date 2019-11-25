@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait QueryParamScopeTypes extends js.Object
 
+object QueryParamScopeTypes {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def controller: typings.atEmberController.atEmberControllerStrings.controller = this.cast("controller")
+  @scala.inline
+  def model: typings.atEmberController.atEmberControllerStrings.model = this.cast("model")
+}
+

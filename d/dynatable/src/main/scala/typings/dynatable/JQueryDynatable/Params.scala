@@ -62,16 +62,16 @@ object Params {
     totalRecordCount: String = null
   ): Params = {
     val __obj = js.Dynamic.literal()
-    if (dynatable != null) __obj.updateDynamic("dynatable")(dynatable)
-    if (offset != null) __obj.updateDynamic("offset")(offset)
-    if (page != null) __obj.updateDynamic("page")(page)
-    if (perPage != null) __obj.updateDynamic("perPage")(perPage)
-    if (queries != null) __obj.updateDynamic("queries")(queries)
-    if (queryRecordCount != null) __obj.updateDynamic("queryRecordCount")(queryRecordCount)
-    if (record != null) __obj.updateDynamic("record")(record)
-    if (records != null) __obj.updateDynamic("records")(records)
-    if (sorts != null) __obj.updateDynamic("sorts")(sorts)
-    if (totalRecordCount != null) __obj.updateDynamic("totalRecordCount")(totalRecordCount)
+    if (dynatable != null) __obj.updateDynamic("dynatable")(dynatable.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
+    if (perPage != null) __obj.updateDynamic("perPage")(perPage.asInstanceOf[js.Any])
+    if (queries != null) __obj.updateDynamic("queries")(queries.asInstanceOf[js.Any])
+    if (queryRecordCount != null) __obj.updateDynamic("queryRecordCount")(queryRecordCount.asInstanceOf[js.Any])
+    if (record != null) __obj.updateDynamic("record")(record.asInstanceOf[js.Any])
+    if (records != null) __obj.updateDynamic("records")(records.asInstanceOf[js.Any])
+    if (sorts != null) __obj.updateDynamic("sorts")(sorts.asInstanceOf[js.Any])
+    if (totalRecordCount != null) __obj.updateDynamic("totalRecordCount")(totalRecordCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[Params]
   }
 }

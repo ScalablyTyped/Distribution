@@ -23,7 +23,7 @@ trait FileInfo extends js.Object {
 object FileInfo {
   @scala.inline
   def apply(data: String | Buffer, extension: String, url: String): FileInfo = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], extension = extension, url = url)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], extension = extension.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FileInfo]
   }

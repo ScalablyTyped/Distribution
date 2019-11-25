@@ -23,8 +23,8 @@ object SharedConfigInit {
   @scala.inline
   def apply(configFilepath: String = null, filepath: String = null): SharedConfigInit = {
     val __obj = js.Dynamic.literal()
-    if (configFilepath != null) __obj.updateDynamic("configFilepath")(configFilepath)
-    if (filepath != null) __obj.updateDynamic("filepath")(filepath)
+    if (configFilepath != null) __obj.updateDynamic("configFilepath")(configFilepath.asInstanceOf[js.Any])
+    if (filepath != null) __obj.updateDynamic("filepath")(filepath.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharedConfigInit]
   }
 }

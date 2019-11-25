@@ -13,7 +13,7 @@ object HttpHandlerOptions {
   @scala.inline
   def apply(abortSignal: AbortSignal = null): HttpHandlerOptions = {
     val __obj = js.Dynamic.literal()
-    if (abortSignal != null) __obj.updateDynamic("abortSignal")(abortSignal)
+    if (abortSignal != null) __obj.updateDynamic("abortSignal")(abortSignal.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpHandlerOptions]
   }
 }

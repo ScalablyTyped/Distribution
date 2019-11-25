@@ -17,9 +17,9 @@ object IListBoxItemParameters {
   @scala.inline
   def apply(data: Anon_ContentString = null, options: Anon_Layout = null, state: Anon_Selected = null): IListBoxItemParameters = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[IListBoxItemParameters]
   }
 }

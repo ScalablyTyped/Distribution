@@ -13,7 +13,7 @@ object PlatformContext {
   @scala.inline
   def apply(platforms: js.Array[String] = null): PlatformContext = {
     val __obj = js.Dynamic.literal()
-    if (platforms != null) __obj.updateDynamic("platforms")(platforms)
+    if (platforms != null) __obj.updateDynamic("platforms")(platforms.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlatformContext]
   }
 }

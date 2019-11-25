@@ -28,12 +28,12 @@ object RequestOptions {
     url: String = null
   ): RequestOptions = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (mediaType != null) __obj.updateDynamic("mediaType")(mediaType)
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (request != null) __obj.updateDynamic("request")(request)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (mediaType != null) __obj.updateDynamic("mediaType")(mediaType.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestOptions]
   }
 }

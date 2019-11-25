@@ -13,7 +13,7 @@ trait Anon_ActionId extends js.Object {
 object Anon_ActionId {
   @scala.inline
   def apply(action: `marker-select`, id: String): Anon_ActionId = {
-    val __obj = js.Dynamic.literal(action = action, id = id)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ActionId]
   }

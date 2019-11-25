@@ -37,17 +37,17 @@ object WebGmeGlobal {
     userInfo: UserInfo = null,
     version: String = null
   ): WebGmeGlobal = {
-    val __obj = js.Dynamic.literal(getConfig = js.Any.fromFunction0(getConfig), gmeConfig = gmeConfig)
-    if (GitHubVersion != null) __obj.updateDynamic("GitHubVersion")(GitHubVersion)
-    if (KeyboardManager != null) __obj.updateDynamic("KeyboardManager")(KeyboardManager)
-    if (LayoutManager != null) __obj.updateDynamic("LayoutManager")(LayoutManager)
-    if (NpmVersion != null) __obj.updateDynamic("NpmVersion")(NpmVersion)
-    if (PanelManager != null) __obj.updateDynamic("PanelManager")(PanelManager)
-    if (State != null) __obj.updateDynamic("State")(State)
-    if (Toolbar != null) __obj.updateDynamic("Toolbar")(Toolbar)
-    if (history != null) __obj.updateDynamic("history")(history)
-    if (userInfo != null) __obj.updateDynamic("userInfo")(userInfo)
-    if (version != null) __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(getConfig = js.Any.fromFunction0(getConfig), gmeConfig = gmeConfig.asInstanceOf[js.Any])
+    if (GitHubVersion != null) __obj.updateDynamic("GitHubVersion")(GitHubVersion.asInstanceOf[js.Any])
+    if (KeyboardManager != null) __obj.updateDynamic("KeyboardManager")(KeyboardManager.asInstanceOf[js.Any])
+    if (LayoutManager != null) __obj.updateDynamic("LayoutManager")(LayoutManager.asInstanceOf[js.Any])
+    if (NpmVersion != null) __obj.updateDynamic("NpmVersion")(NpmVersion.asInstanceOf[js.Any])
+    if (PanelManager != null) __obj.updateDynamic("PanelManager")(PanelManager.asInstanceOf[js.Any])
+    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
+    if (Toolbar != null) __obj.updateDynamic("Toolbar")(Toolbar.asInstanceOf[js.Any])
+    if (history != null) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
+    if (userInfo != null) __obj.updateDynamic("userInfo")(userInfo.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebGmeGlobal]
   }
 }

@@ -15,8 +15,8 @@ object Draft {
   @scala.inline
   def apply(id: String = null, message: Message = null): Draft = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (message != null) __obj.updateDynamic("message")(message)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[Draft]
   }
 }

@@ -31,8 +31,8 @@ object OptionalArgs {
     if (afterAll != null) __obj.updateDynamic("afterAll")(js.Any.fromFunction1(afterAll))
     if (afterEach != null) __obj.updateDynamic("afterEach")(js.Any.fromFunction2(afterEach))
     if (beforeEach != null) __obj.updateDynamic("beforeEach")(js.Any.fromFunction1(beforeEach))
-    if (evalScripts != null) __obj.updateDynamic("evalScripts")(evalScripts)
-    if (!js.isUndefined(renumerateIRIElements)) __obj.updateDynamic("renumerateIRIElements")(renumerateIRIElements)
+    if (evalScripts != null) __obj.updateDynamic("evalScripts")(evalScripts.asInstanceOf[js.Any])
+    if (!js.isUndefined(renumerateIRIElements)) __obj.updateDynamic("renumerateIRIElements")(renumerateIRIElements.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionalArgs]
   }
 }

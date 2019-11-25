@@ -16,7 +16,7 @@ object GlobalOptions {
   @scala.inline
   def apply(VMLRadialGradientURL: String = null): GlobalOptions = {
     val __obj = js.Dynamic.literal()
-    if (VMLRadialGradientURL != null) __obj.updateDynamic("VMLRadialGradientURL")(VMLRadialGradientURL)
+    if (VMLRadialGradientURL != null) __obj.updateDynamic("VMLRadialGradientURL")(VMLRadialGradientURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalOptions]
   }
 }

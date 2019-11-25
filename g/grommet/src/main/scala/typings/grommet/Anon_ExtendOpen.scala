@@ -15,7 +15,7 @@ object Anon_ExtendOpen {
   def apply(extend: ExtendType = null, open: js.UndefOr[Boolean] = js.undefined): Anon_ExtendOpen = {
     val __obj = js.Dynamic.literal()
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
+    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ExtendOpen]
   }
 }

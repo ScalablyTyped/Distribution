@@ -26,9 +26,9 @@ object ParsedMailbox {
     `type`: String,
     node: ASTNode = null
   ): ParsedMailbox = {
-    val __obj = js.Dynamic.literal(address = address, domain = domain, local = local, name = name, parts = parts)
-    __obj.updateDynamic("type")(`type`)
-    if (node != null) __obj.updateDynamic("node")(node)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parts = parts.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParsedMailbox]
   }
 }

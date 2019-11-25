@@ -100,16 +100,16 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (handler != null) __obj.updateDynamic("handler")(js.Any.fromFunction3(handler))
-    if (!js.isUndefined(headers)) __obj.updateDynamic("headers")(headers)
+    if (!js.isUndefined(headers)) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (keyGenerator != null) __obj.updateDynamic("keyGenerator")(js.Any.fromFunction2(keyGenerator))
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (onLimitReached != null) __obj.updateDynamic("onLimitReached")(js.Any.fromFunction3(onLimitReached))
     if (skip != null) __obj.updateDynamic("skip")(js.Any.fromFunction2(skip))
-    if (!js.isUndefined(skipFailedRequests)) __obj.updateDynamic("skipFailedRequests")(skipFailedRequests)
-    if (!js.isUndefined(skipSuccessfulRequests)) __obj.updateDynamic("skipSuccessfulRequests")(skipSuccessfulRequests)
+    if (!js.isUndefined(skipFailedRequests)) __obj.updateDynamic("skipFailedRequests")(skipFailedRequests.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipSuccessfulRequests)) __obj.updateDynamic("skipSuccessfulRequests")(skipSuccessfulRequests.asInstanceOf[js.Any])
     if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
-    if (store != null) __obj.updateDynamic("store")(store)
+    if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
     if (windowMs != null) __obj.updateDynamic("windowMs")(windowMs.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

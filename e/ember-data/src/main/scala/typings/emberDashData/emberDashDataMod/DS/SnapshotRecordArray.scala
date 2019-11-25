@@ -18,7 +18,7 @@ class SnapshotRecordArray[K /* <: String */] () extends js.Object {
   /**
     * The type of the underlying records for the snapshots in the array, as a DS.Model
     */
-  var `type`: /* import warning: ImportType.apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any = js.native
+  var `type`: /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any = js.native
   /**
     * Get snapshots of the underlying record array
     */

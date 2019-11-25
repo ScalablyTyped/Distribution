@@ -48,12 +48,12 @@ object ScaleImageOptions {
     quality: Int | Double = null,
     `type`: String = null
   ): ScaleImageOptions = {
-    val __obj = js.Dynamic.literal(maxSize = maxSize)
+    val __obj = js.Dynamic.literal(maxSize = maxSize.asInstanceOf[js.Any])
     if (customResizer != null) __obj.updateDynamic("customResizer")(js.Any.fromFunction1(customResizer))
-    if (!js.isUndefined(includeExif)) __obj.updateDynamic("includeExif")(includeExif)
-    if (!js.isUndefined(orient)) __obj.updateDynamic("orient")(orient)
+    if (!js.isUndefined(includeExif)) __obj.updateDynamic("includeExif")(includeExif.asInstanceOf[js.Any])
+    if (!js.isUndefined(orient)) __obj.updateDynamic("orient")(orient.asInstanceOf[js.Any])
     if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScaleImageOptions]
   }
 }

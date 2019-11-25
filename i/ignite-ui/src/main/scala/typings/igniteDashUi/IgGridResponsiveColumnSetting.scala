@@ -45,11 +45,11 @@ object IgGridResponsiveColumnSetting {
     configuration: js.Any = null
   ): IgGridResponsiveColumnSetting = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (classes != null) __obj.updateDynamic("classes")(classes)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
     if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
-    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey)
-    if (configuration != null) __obj.updateDynamic("configuration")(configuration)
+    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey.asInstanceOf[js.Any])
+    if (configuration != null) __obj.updateDynamic("configuration")(configuration.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridResponsiveColumnSetting]
   }
 }

@@ -21,11 +21,11 @@ object UsedInsight {
     resourceVisualization: ResourceVisualization = null
   ): UsedInsight = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (lastUsed != null) __obj.updateDynamic("lastUsed")(lastUsed)
-    if (resource != null) __obj.updateDynamic("resource")(resource)
-    if (resourceReference != null) __obj.updateDynamic("resourceReference")(resourceReference)
-    if (resourceVisualization != null) __obj.updateDynamic("resourceVisualization")(resourceVisualization)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (lastUsed != null) __obj.updateDynamic("lastUsed")(lastUsed.asInstanceOf[js.Any])
+    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
+    if (resourceReference != null) __obj.updateDynamic("resourceReference")(resourceReference.asInstanceOf[js.Any])
+    if (resourceVisualization != null) __obj.updateDynamic("resourceVisualization")(resourceVisualization.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsedInsight]
   }
 }

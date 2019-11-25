@@ -98,15 +98,15 @@ object KatexOptions {
     throwOnError: js.UndefOr[Boolean] = js.undefined
   ): KatexOptions = {
     val __obj = js.Dynamic.literal()
-    if (allowedProtocols != null) __obj.updateDynamic("allowedProtocols")(allowedProtocols)
-    if (!js.isUndefined(colorIsTextColor)) __obj.updateDynamic("colorIsTextColor")(colorIsTextColor)
-    if (!js.isUndefined(displayMode)) __obj.updateDynamic("displayMode")(displayMode)
-    if (errorColor != null) __obj.updateDynamic("errorColor")(errorColor)
-    if (macros != null) __obj.updateDynamic("macros")(macros)
+    if (allowedProtocols != null) __obj.updateDynamic("allowedProtocols")(allowedProtocols.asInstanceOf[js.Any])
+    if (!js.isUndefined(colorIsTextColor)) __obj.updateDynamic("colorIsTextColor")(colorIsTextColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayMode)) __obj.updateDynamic("displayMode")(displayMode.asInstanceOf[js.Any])
+    if (errorColor != null) __obj.updateDynamic("errorColor")(errorColor.asInstanceOf[js.Any])
+    if (macros != null) __obj.updateDynamic("macros")(macros.asInstanceOf[js.Any])
     if (maxExpand != null) __obj.updateDynamic("maxExpand")(maxExpand.asInstanceOf[js.Any])
     if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
     if (strict != null) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
-    if (!js.isUndefined(throwOnError)) __obj.updateDynamic("throwOnError")(throwOnError)
+    if (!js.isUndefined(throwOnError)) __obj.updateDynamic("throwOnError")(throwOnError.asInstanceOf[js.Any])
     __obj.asInstanceOf[KatexOptions]
   }
 }

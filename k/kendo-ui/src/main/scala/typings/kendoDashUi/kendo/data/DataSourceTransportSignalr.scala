@@ -20,10 +20,10 @@ object DataSourceTransportSignalr {
     server: DataSourceTransportSignalrServer = null
   ): DataSourceTransportSignalr = {
     val __obj = js.Dynamic.literal()
-    if (client != null) __obj.updateDynamic("client")(client)
-    if (hub != null) __obj.updateDynamic("hub")(hub)
-    if (promise != null) __obj.updateDynamic("promise")(promise)
-    if (server != null) __obj.updateDynamic("server")(server)
+    if (client != null) __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
+    if (hub != null) __obj.updateDynamic("hub")(hub.asInstanceOf[js.Any])
+    if (promise != null) __obj.updateDynamic("promise")(promise.asInstanceOf[js.Any])
+    if (server != null) __obj.updateDynamic("server")(server.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceTransportSignalr]
   }
 }

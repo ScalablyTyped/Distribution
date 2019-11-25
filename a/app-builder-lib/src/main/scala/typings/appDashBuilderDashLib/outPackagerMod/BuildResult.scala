@@ -23,7 +23,7 @@ object BuildResult {
     outDir: String,
     platformToTargets: Map[Platform, Map[String, Target]]
   ): BuildResult = {
-    val __obj = js.Dynamic.literal(artifactPaths = artifactPaths, configuration = configuration, outDir = outDir, platformToTargets = platformToTargets)
+    val __obj = js.Dynamic.literal(artifactPaths = artifactPaths.asInstanceOf[js.Any], configuration = configuration.asInstanceOf[js.Any], outDir = outDir.asInstanceOf[js.Any], platformToTargets = platformToTargets.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BuildResult]
   }

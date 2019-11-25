@@ -13,7 +13,7 @@ object DownloadXLXS {
   @scala.inline
   def apply(sheetName: String = null): DownloadXLXS = {
     val __obj = js.Dynamic.literal()
-    if (sheetName != null) __obj.updateDynamic("sheetName")(sheetName)
+    if (sheetName != null) __obj.updateDynamic("sheetName")(sheetName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownloadXLXS]
   }
 }

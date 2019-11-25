@@ -42,20 +42,20 @@ object Chat {
     title: String = null,
     username: String = null
   ): Chat = {
-    val __obj = js.Dynamic.literal(id = id)
-    __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(all_members_are_administrators)) __obj.updateDynamic("all_members_are_administrators")(all_members_are_administrators)
-    if (!js.isUndefined(can_set_sticker_set)) __obj.updateDynamic("can_set_sticker_set")(can_set_sticker_set)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (first_name != null) __obj.updateDynamic("first_name")(first_name)
-    if (invite_link != null) __obj.updateDynamic("invite_link")(invite_link)
-    if (last_name != null) __obj.updateDynamic("last_name")(last_name)
-    if (permissions != null) __obj.updateDynamic("permissions")(permissions)
-    if (photo != null) __obj.updateDynamic("photo")(photo)
-    if (pinned_message != null) __obj.updateDynamic("pinned_message")(pinned_message)
-    if (sticker_set_name != null) __obj.updateDynamic("sticker_set_name")(sticker_set_name)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (username != null) __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(all_members_are_administrators)) __obj.updateDynamic("all_members_are_administrators")(all_members_are_administrators.asInstanceOf[js.Any])
+    if (!js.isUndefined(can_set_sticker_set)) __obj.updateDynamic("can_set_sticker_set")(can_set_sticker_set.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (first_name != null) __obj.updateDynamic("first_name")(first_name.asInstanceOf[js.Any])
+    if (invite_link != null) __obj.updateDynamic("invite_link")(invite_link.asInstanceOf[js.Any])
+    if (last_name != null) __obj.updateDynamic("last_name")(last_name.asInstanceOf[js.Any])
+    if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
+    if (photo != null) __obj.updateDynamic("photo")(photo.asInstanceOf[js.Any])
+    if (pinned_message != null) __obj.updateDynamic("pinned_message")(pinned_message.asInstanceOf[js.Any])
+    if (sticker_set_name != null) __obj.updateDynamic("sticker_set_name")(sticker_set_name.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[Chat]
   }
 }

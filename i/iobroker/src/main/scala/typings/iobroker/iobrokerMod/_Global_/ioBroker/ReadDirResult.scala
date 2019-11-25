@@ -31,7 +31,7 @@ object ReadDirResult {
     modifiedAt: Double,
     stats: Stats
   ): ReadDirResult = {
-    val __obj = js.Dynamic.literal(acl = acl, createdAt = createdAt, file = file, isDir = isDir, modifiedAt = modifiedAt, stats = stats)
+    val __obj = js.Dynamic.literal(acl = acl.asInstanceOf[js.Any], createdAt = createdAt.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], isDir = isDir.asInstanceOf[js.Any], modifiedAt = modifiedAt.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReadDirResult]
   }

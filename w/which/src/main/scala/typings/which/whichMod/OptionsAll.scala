@@ -14,9 +14,9 @@ trait OptionsAll extends AsyncOptions {
 object OptionsAll {
   @scala.inline
   def apply(all: `true`, path: String = null, pathExt: String = null): OptionsAll = {
-    val __obj = js.Dynamic.literal(all = all)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (pathExt != null) __obj.updateDynamic("pathExt")(pathExt)
+    val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (pathExt != null) __obj.updateDynamic("pathExt")(pathExt.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsAll]
   }
 }

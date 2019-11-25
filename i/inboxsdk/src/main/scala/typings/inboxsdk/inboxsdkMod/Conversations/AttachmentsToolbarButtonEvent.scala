@@ -11,7 +11,7 @@ trait AttachmentsToolbarButtonEvent extends js.Object {
 object AttachmentsToolbarButtonEvent {
   @scala.inline
   def apply(attachmentCardViews: js.Array[AttachmentCardView]): AttachmentsToolbarButtonEvent = {
-    val __obj = js.Dynamic.literal(attachmentCardViews = attachmentCardViews)
+    val __obj = js.Dynamic.literal(attachmentCardViews = attachmentCardViews.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AttachmentsToolbarButtonEvent]
   }

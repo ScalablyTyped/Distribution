@@ -12,8 +12,8 @@ trait InfoOptions extends js.Object {
 object InfoOptions {
   @scala.inline
   def apply(id: Double, language: String = null): InfoOptions = {
-    val __obj = js.Dynamic.literal(id = id)
-    if (language != null) __obj.updateDynamic("language")(language)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     __obj.asInstanceOf[InfoOptions]
   }
 }

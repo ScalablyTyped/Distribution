@@ -13,7 +13,7 @@ trait Anon_JobIdPromise extends js.Object {
 object Anon_JobIdPromise {
   @scala.inline
   def apply(jobId: Double, promise: js.Promise[UploadResult]): Anon_JobIdPromise = {
-    val __obj = js.Dynamic.literal(jobId = jobId, promise = promise)
+    val __obj = js.Dynamic.literal(jobId = jobId.asInstanceOf[js.Any], promise = promise.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_JobIdPromise]
   }

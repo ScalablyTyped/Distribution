@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "lodash_dot_ismap"
-version := "4.4-dt-20190214Z-ea2ae5"
+version := "4.4-dt-20190214Z-7ac519"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -13,7 +13,7 @@ object UserDeletionCollection {
   @scala.inline
   def apply(UserDeletionRequest: UserDeletionRequestCollection = null): UserDeletionCollection = {
     val __obj = js.Dynamic.literal()
-    if (UserDeletionRequest != null) __obj.updateDynamic("UserDeletionRequest")(UserDeletionRequest)
+    if (UserDeletionRequest != null) __obj.updateDynamic("UserDeletionRequest")(UserDeletionRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserDeletionCollection]
   }
 }

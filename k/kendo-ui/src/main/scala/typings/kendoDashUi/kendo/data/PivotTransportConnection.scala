@@ -13,8 +13,8 @@ object PivotTransportConnection {
   @scala.inline
   def apply(catalog: String = null, cube: String = null): PivotTransportConnection = {
     val __obj = js.Dynamic.literal()
-    if (catalog != null) __obj.updateDynamic("catalog")(catalog)
-    if (cube != null) __obj.updateDynamic("cube")(cube)
+    if (catalog != null) __obj.updateDynamic("catalog")(catalog.asInstanceOf[js.Any])
+    if (cube != null) __obj.updateDynamic("cube")(cube.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotTransportConnection]
   }
 }

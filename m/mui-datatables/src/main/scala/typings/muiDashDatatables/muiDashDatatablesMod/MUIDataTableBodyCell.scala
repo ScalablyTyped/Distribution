@@ -30,14 +30,14 @@ object MUIDataTableBodyCell {
     rowIndex: Int | Double = null
   ): MUIDataTableBodyCell = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (classes != null) __obj.updateDynamic("classes")(classes)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
     if (colIndex != null) __obj.updateDynamic("colIndex")(colIndex.asInstanceOf[js.Any])
-    if (columnHeader != null) __obj.updateDynamic("columnHeader")(columnHeader)
+    if (columnHeader != null) __obj.updateDynamic("columnHeader")(columnHeader.asInstanceOf[js.Any])
     if (dataIndex != null) __obj.updateDynamic("dataIndex")(dataIndex.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (otherProps != null) __obj.updateDynamic("otherProps")(otherProps)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (otherProps != null) __obj.updateDynamic("otherProps")(otherProps.asInstanceOf[js.Any])
     if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[MUIDataTableBodyCell]
   }

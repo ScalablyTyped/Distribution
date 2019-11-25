@@ -28,13 +28,13 @@ object Options {
     url: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (conn_options != null) __obj.updateDynamic("conn_options")(conn_options)
-    if (connection != null) __obj.updateDynamic("connection")(connection)
-    if (exchange != null) __obj.updateDynamic("exchange")(exchange)
-    if (exchangeInstance != null) __obj.updateDynamic("exchangeInstance")(exchangeInstance)
-    if (exchange_options != null) __obj.updateDynamic("exchange_options")(exchange_options)
-    if (ipml_options != null) __obj.updateDynamic("ipml_options")(ipml_options)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (conn_options != null) __obj.updateDynamic("conn_options")(conn_options.asInstanceOf[js.Any])
+    if (connection != null) __obj.updateDynamic("connection")(connection.asInstanceOf[js.Any])
+    if (exchange != null) __obj.updateDynamic("exchange")(exchange.asInstanceOf[js.Any])
+    if (exchangeInstance != null) __obj.updateDynamic("exchangeInstance")(exchangeInstance.asInstanceOf[js.Any])
+    if (exchange_options != null) __obj.updateDynamic("exchange_options")(exchange_options.asInstanceOf[js.Any])
+    if (ipml_options != null) __obj.updateDynamic("ipml_options")(ipml_options.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

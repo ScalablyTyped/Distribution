@@ -26,7 +26,7 @@ object ISearchMember {
     name: String,
     subtitle: String
   ): ISearchMember = {
-    val __obj = js.Dynamic.literal(editorPath = editorPath, id = id, menuUrl = menuUrl, metaData = metaData, name = name, subtitle = subtitle)
+    val __obj = js.Dynamic.literal(editorPath = editorPath.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], menuUrl = menuUrl.asInstanceOf[js.Any], metaData = metaData.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], subtitle = subtitle.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISearchMember]
   }

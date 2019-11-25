@@ -22,11 +22,11 @@ object SwaggerUiOptions {
     swaggerUiPrefix: String = null
   ): SwaggerUiOptions = {
     val __obj = js.Dynamic.literal()
-    if (apiDocs != null) __obj.updateDynamic("apiDocs")(apiDocs)
-    if (apiDocsPrefix != null) __obj.updateDynamic("apiDocsPrefix")(apiDocsPrefix)
-    if (swaggerUi != null) __obj.updateDynamic("swaggerUi")(swaggerUi)
-    if (swaggerUiDir != null) __obj.updateDynamic("swaggerUiDir")(swaggerUiDir)
-    if (swaggerUiPrefix != null) __obj.updateDynamic("swaggerUiPrefix")(swaggerUiPrefix)
+    if (apiDocs != null) __obj.updateDynamic("apiDocs")(apiDocs.asInstanceOf[js.Any])
+    if (apiDocsPrefix != null) __obj.updateDynamic("apiDocsPrefix")(apiDocsPrefix.asInstanceOf[js.Any])
+    if (swaggerUi != null) __obj.updateDynamic("swaggerUi")(swaggerUi.asInstanceOf[js.Any])
+    if (swaggerUiDir != null) __obj.updateDynamic("swaggerUiDir")(swaggerUiDir.asInstanceOf[js.Any])
+    if (swaggerUiPrefix != null) __obj.updateDynamic("swaggerUiPrefix")(swaggerUiPrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwaggerUiOptions]
   }
 }

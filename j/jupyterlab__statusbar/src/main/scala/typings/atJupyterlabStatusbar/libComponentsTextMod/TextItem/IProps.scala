@@ -22,7 +22,7 @@ object IProps {
   @scala.inline
   def apply(source: String | Double, title: String = null): IProps = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[IProps]
   }
 }

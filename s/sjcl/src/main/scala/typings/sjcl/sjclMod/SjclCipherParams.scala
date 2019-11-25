@@ -27,11 +27,11 @@ object SjclCipherParams {
     v: Int | Double = null
   ): SjclCipherParams = {
     val __obj = js.Dynamic.literal()
-    if (adata != null) __obj.updateDynamic("adata")(adata)
-    if (cipher != null) __obj.updateDynamic("cipher")(cipher)
+    if (adata != null) __obj.updateDynamic("adata")(adata.asInstanceOf[js.Any])
+    if (cipher != null) __obj.updateDynamic("cipher")(cipher.asInstanceOf[js.Any])
     if (iter != null) __obj.updateDynamic("iter")(iter.asInstanceOf[js.Any])
     if (ks != null) __obj.updateDynamic("ks")(ks.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (ts != null) __obj.updateDynamic("ts")(ts.asInstanceOf[js.Any])
     if (v != null) __obj.updateDynamic("v")(v.asInstanceOf[js.Any])
     __obj.asInstanceOf[SjclCipherParams]

@@ -13,7 +13,7 @@ object GooglePrivacyDlpV2beta1Projection {
   @scala.inline
   def apply(property: GooglePrivacyDlpV2beta1PropertyReference = null): GooglePrivacyDlpV2beta1Projection = {
     val __obj = js.Dynamic.literal()
-    if (property != null) __obj.updateDynamic("property")(property)
+    if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1Projection]
   }
 }

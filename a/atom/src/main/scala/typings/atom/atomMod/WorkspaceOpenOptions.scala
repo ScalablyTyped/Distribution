@@ -70,13 +70,13 @@ object WorkspaceOpenOptions {
     split: left | right | up | down = null
   ): WorkspaceOpenOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(activateItem)) __obj.updateDynamic("activateItem")(activateItem)
-    if (!js.isUndefined(activatePane)) __obj.updateDynamic("activatePane")(activatePane)
+    if (!js.isUndefined(activateItem)) __obj.updateDynamic("activateItem")(activateItem.asInstanceOf[js.Any])
+    if (!js.isUndefined(activatePane)) __obj.updateDynamic("activatePane")(activatePane.asInstanceOf[js.Any])
     if (initialColumn != null) __obj.updateDynamic("initialColumn")(initialColumn.asInstanceOf[js.Any])
     if (initialLine != null) __obj.updateDynamic("initialLine")(initialLine.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (!js.isUndefined(pending)) __obj.updateDynamic("pending")(pending)
-    if (!js.isUndefined(searchAllPanes)) __obj.updateDynamic("searchAllPanes")(searchAllPanes)
+    if (!js.isUndefined(pending)) __obj.updateDynamic("pending")(pending.asInstanceOf[js.Any])
+    if (!js.isUndefined(searchAllPanes)) __obj.updateDynamic("searchAllPanes")(searchAllPanes.asInstanceOf[js.Any])
     if (split != null) __obj.updateDynamic("split")(split.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkspaceOpenOptions]
   }

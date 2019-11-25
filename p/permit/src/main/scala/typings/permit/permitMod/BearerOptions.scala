@@ -21,12 +21,12 @@ object BearerOptions {
     scheme: String = null
   ): BearerOptions = {
     val __obj = js.Dynamic.literal()
-    if (basic != null) __obj.updateDynamic("basic")(basic)
-    if (header != null) __obj.updateDynamic("header")(header)
-    if (proxy != null) __obj.updateDynamic("proxy")(proxy)
-    if (query != null) __obj.updateDynamic("query")(query)
-    if (realm != null) __obj.updateDynamic("realm")(realm)
-    if (scheme != null) __obj.updateDynamic("scheme")(scheme)
+    if (basic != null) __obj.updateDynamic("basic")(basic.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    if (realm != null) __obj.updateDynamic("realm")(realm.asInstanceOf[js.Any])
+    if (scheme != null) __obj.updateDynamic("scheme")(scheme.asInstanceOf[js.Any])
     __obj.asInstanceOf[BearerOptions]
   }
 }

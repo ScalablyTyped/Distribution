@@ -17,7 +17,7 @@ trait QualityLevel extends js.Object {
 object QualityLevel {
   @scala.inline
   def apply(level: Level, mode: auto | manual, reason: auto | api | (`initial choice`)): QualityLevel = {
-    val __obj = js.Dynamic.literal(level = level, mode = mode.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[QualityLevel]
   }

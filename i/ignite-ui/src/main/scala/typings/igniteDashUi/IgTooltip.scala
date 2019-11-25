@@ -25,9 +25,9 @@ object IgTooltip {
     text: String = null
   ): IgTooltip = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (arrowLocation != null) __obj.updateDynamic("arrowLocation")(arrowLocation)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (arrowLocation != null) __obj.updateDynamic("arrowLocation")(arrowLocation.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgTooltip]
   }
 }

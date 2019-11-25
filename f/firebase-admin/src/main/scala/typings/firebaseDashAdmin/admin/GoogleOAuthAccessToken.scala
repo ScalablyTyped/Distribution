@@ -12,7 +12,7 @@ trait GoogleOAuthAccessToken extends js.Object {
 object GoogleOAuthAccessToken {
   @scala.inline
   def apply(access_token: String, expires_in: Double): GoogleOAuthAccessToken = {
-    val __obj = js.Dynamic.literal(access_token = access_token, expires_in = expires_in)
+    val __obj = js.Dynamic.literal(access_token = access_token.asInstanceOf[js.Any], expires_in = expires_in.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GoogleOAuthAccessToken]
   }

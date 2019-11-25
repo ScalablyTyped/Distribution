@@ -24,10 +24,10 @@ object AutomaticRepliesMailTips {
     scheduledStartTime: DateTimeTimeZone = null
   ): AutomaticRepliesMailTips = {
     val __obj = js.Dynamic.literal()
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (messageLanguage != null) __obj.updateDynamic("messageLanguage")(messageLanguage)
-    if (scheduledEndTime != null) __obj.updateDynamic("scheduledEndTime")(scheduledEndTime)
-    if (scheduledStartTime != null) __obj.updateDynamic("scheduledStartTime")(scheduledStartTime)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (messageLanguage != null) __obj.updateDynamic("messageLanguage")(messageLanguage.asInstanceOf[js.Any])
+    if (scheduledEndTime != null) __obj.updateDynamic("scheduledEndTime")(scheduledEndTime.asInstanceOf[js.Any])
+    if (scheduledStartTime != null) __obj.updateDynamic("scheduledStartTime")(scheduledStartTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutomaticRepliesMailTips]
   }
 }

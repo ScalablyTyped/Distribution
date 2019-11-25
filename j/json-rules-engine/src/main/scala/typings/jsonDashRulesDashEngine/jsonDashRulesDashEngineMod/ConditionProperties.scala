@@ -25,9 +25,9 @@ object ConditionProperties {
     path: String = null,
     priority: Int | Double = null
   ): ConditionProperties = {
-    val __obj = js.Dynamic.literal(fact = fact, operator = operator, value = value.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (path != null) __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(fact = fact.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionProperties]
   }

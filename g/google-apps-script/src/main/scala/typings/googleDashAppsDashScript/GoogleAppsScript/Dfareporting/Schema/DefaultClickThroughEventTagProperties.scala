@@ -16,8 +16,8 @@ object DefaultClickThroughEventTagProperties {
     overrideInheritedEventTag: js.UndefOr[Boolean] = js.undefined
   ): DefaultClickThroughEventTagProperties = {
     val __obj = js.Dynamic.literal()
-    if (defaultClickThroughEventTagId != null) __obj.updateDynamic("defaultClickThroughEventTagId")(defaultClickThroughEventTagId)
-    if (!js.isUndefined(overrideInheritedEventTag)) __obj.updateDynamic("overrideInheritedEventTag")(overrideInheritedEventTag)
+    if (defaultClickThroughEventTagId != null) __obj.updateDynamic("defaultClickThroughEventTagId")(defaultClickThroughEventTagId.asInstanceOf[js.Any])
+    if (!js.isUndefined(overrideInheritedEventTag)) __obj.updateDynamic("overrideInheritedEventTag")(overrideInheritedEventTag.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultClickThroughEventTagProperties]
   }
 }

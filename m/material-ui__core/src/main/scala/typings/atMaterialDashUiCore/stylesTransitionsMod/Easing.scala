@@ -15,7 +15,7 @@ trait Easing extends js.Object {
 object Easing {
   @scala.inline
   def apply(easeIn: String, easeInOut: String, easeOut: String, sharp: String): Easing = {
-    val __obj = js.Dynamic.literal(easeIn = easeIn, easeInOut = easeInOut, easeOut = easeOut, sharp = sharp)
+    val __obj = js.Dynamic.literal(easeIn = easeIn.asInstanceOf[js.Any], easeInOut = easeInOut.asInstanceOf[js.Any], easeOut = easeOut.asInstanceOf[js.Any], sharp = sharp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Easing]
   }

@@ -44,8 +44,8 @@ object ExtendedBase {
     UpdatedAt: DateString,
     `_`: Anon_Author
   ): ExtendedBase = {
-    val __obj = js.Dynamic.literal(AuthorizationRules = AuthorizationRules, AutoDeleteOnIdle = AutoDeleteOnIdle, CreatedAt = CreatedAt, DefaultMessageTimeToLive = DefaultMessageTimeToLive, DuplicateDetectionHistoryTimeWindow = DuplicateDetectionHistoryTimeWindow, EnableBatchedOperations = EnableBatchedOperations, EnableExpress = EnableExpress, EnablePartitioning = EnablePartitioning, EntityAvailabilityStatus = EntityAvailabilityStatus, IsAnonymousAccessible = IsAnonymousAccessible, MaxSizeInMegabytes = MaxSizeInMegabytes, RequiresDuplicateDetection = RequiresDuplicateDetection, SizeInBytes = SizeInBytes, Status = Status, UpdatedAt = UpdatedAt)
-    __obj.updateDynamic("_")(`_`)
+    val __obj = js.Dynamic.literal(AuthorizationRules = AuthorizationRules.asInstanceOf[js.Any], AutoDeleteOnIdle = AutoDeleteOnIdle.asInstanceOf[js.Any], CreatedAt = CreatedAt.asInstanceOf[js.Any], DefaultMessageTimeToLive = DefaultMessageTimeToLive.asInstanceOf[js.Any], DuplicateDetectionHistoryTimeWindow = DuplicateDetectionHistoryTimeWindow.asInstanceOf[js.Any], EnableBatchedOperations = EnableBatchedOperations.asInstanceOf[js.Any], EnableExpress = EnableExpress.asInstanceOf[js.Any], EnablePartitioning = EnablePartitioning.asInstanceOf[js.Any], EntityAvailabilityStatus = EntityAvailabilityStatus.asInstanceOf[js.Any], IsAnonymousAccessible = IsAnonymousAccessible.asInstanceOf[js.Any], MaxSizeInMegabytes = MaxSizeInMegabytes.asInstanceOf[js.Any], RequiresDuplicateDetection = RequiresDuplicateDetection.asInstanceOf[js.Any], SizeInBytes = SizeInBytes.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], UpdatedAt = UpdatedAt.asInstanceOf[js.Any])
+    __obj.updateDynamic("_")(`_`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtendedBase]
   }
 }

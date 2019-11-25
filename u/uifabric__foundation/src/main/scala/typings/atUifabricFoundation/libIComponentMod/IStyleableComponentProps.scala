@@ -22,9 +22,9 @@ object IStyleableComponentProps {
     tokens: ITokenFunctionOrObject[TViewProps, TTokens] = null
   ): IStyleableComponentProps[TViewProps, TTokens, TStyleSet] = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (tokens != null) __obj.updateDynamic("tokens")(tokens.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStyleableComponentProps[TViewProps, TTokens, TStyleSet]]
   }

@@ -24,10 +24,10 @@ object Table {
     rows: js.Array[Row] = null
   ): Table = {
     val __obj = js.Dynamic.literal()
-    if (columnHeaders != null) __obj.updateDynamic("columnHeaders")(columnHeaders)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (rowHeaders != null) __obj.updateDynamic("rowHeaders")(rowHeaders)
-    if (rows != null) __obj.updateDynamic("rows")(rows)
+    if (columnHeaders != null) __obj.updateDynamic("columnHeaders")(columnHeaders.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (rowHeaders != null) __obj.updateDynamic("rowHeaders")(rowHeaders.asInstanceOf[js.Any])
+    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     __obj.asInstanceOf[Table]
   }
 }

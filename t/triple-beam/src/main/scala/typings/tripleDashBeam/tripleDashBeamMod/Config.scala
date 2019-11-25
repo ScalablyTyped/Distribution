@@ -13,7 +13,7 @@ trait Config extends js.Object {
 object Config {
   @scala.inline
   def apply(colors: StringDictionary[String], levels: StringDictionary[Double]): Config = {
-    val __obj = js.Dynamic.literal(colors = colors, levels = levels)
+    val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any], levels = levels.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Config]
   }

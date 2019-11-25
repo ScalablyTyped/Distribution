@@ -33,12 +33,12 @@ object Options {
     tileType: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (categoryFilter != null) __obj.updateDynamic("categoryFilter")(categoryFilter)
+    if (categoryFilter != null) __obj.updateDynamic("categoryFilter")(categoryFilter.asInstanceOf[js.Any])
     if (pixelRatio != null) __obj.updateDynamic("pixelRatio")(pixelRatio.asInstanceOf[js.Any])
-    if (scheme != null) __obj.updateDynamic("scheme")(scheme)
+    if (scheme != null) __obj.updateDynamic("scheme")(scheme.asInstanceOf[js.Any])
     if (tileCacheSize != null) __obj.updateDynamic("tileCacheSize")(tileCacheSize.asInstanceOf[js.Any])
     if (tileSize != null) __obj.updateDynamic("tileSize")(tileSize.asInstanceOf[js.Any])
-    if (tileType != null) __obj.updateDynamic("tileType")(tileType)
+    if (tileType != null) __obj.updateDynamic("tileType")(tileType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

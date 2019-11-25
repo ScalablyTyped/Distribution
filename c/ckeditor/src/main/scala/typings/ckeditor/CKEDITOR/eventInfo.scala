@@ -28,7 +28,7 @@ object eventInfo {
     sender: StringDictionary[js.Any],
     stop: () => Unit
   ): eventInfo = {
-    val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), data = data, editor = editor, listenerData = listenerData, name = name, removeListener = js.Any.fromFunction0(removeListener), sender = sender, stop = js.Any.fromFunction0(stop))
+    val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), data = data.asInstanceOf[js.Any], editor = editor.asInstanceOf[js.Any], listenerData = listenerData.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], removeListener = js.Any.fromFunction0(removeListener), sender = sender.asInstanceOf[js.Any], stop = js.Any.fromFunction0(stop))
   
     __obj.asInstanceOf[eventInfo]
   }

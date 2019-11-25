@@ -14,7 +14,7 @@ object AppendDimensionRequest {
   @scala.inline
   def apply(dimension: String = null, length: Int | Double = null, sheetId: Int | Double = null): AppendDimensionRequest = {
     val __obj = js.Dynamic.literal()
-    if (dimension != null) __obj.updateDynamic("dimension")(dimension)
+    if (dimension != null) __obj.updateDynamic("dimension")(dimension.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     if (sheetId != null) __obj.updateDynamic("sheetId")(sheetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppendDimensionRequest]

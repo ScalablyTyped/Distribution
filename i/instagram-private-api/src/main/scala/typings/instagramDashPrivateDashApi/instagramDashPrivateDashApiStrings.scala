@@ -220,7 +220,7 @@ object instagramDashPrivateDashApiStrings {
   sealed trait pagination extends TimelineFeedReason
   
   @js.native
-  sealed trait photo extends js.Object
+  sealed trait photo_ extends js.Object
   
   @js.native
   sealed trait photo_view_profile extends _IgAppModule
@@ -289,7 +289,7 @@ object instagramDashPrivateDashApiStrings {
   sealed trait story_viewer_profile extends _IgAppModule
   
   @js.native
-  sealed trait text extends js.Object
+  sealed trait text_ extends js.Object
   
   @js.native
   sealed trait top extends js.Object
@@ -301,7 +301,7 @@ object instagramDashPrivateDashApiStrings {
   sealed trait users extends js.Object
   
   @js.native
-  sealed trait video extends js.Object
+  sealed trait video_ extends js.Object
   
   @js.native
   sealed trait video_view_profile extends _IgAppModule
@@ -450,7 +450,7 @@ object instagramDashPrivateDashApiStrings {
   @scala.inline
   def pagination: pagination = "pagination".asInstanceOf[pagination]
   @scala.inline
-  def photo: photo = "photo".asInstanceOf[photo]
+  def photo_ : photo_ = "photo".asInstanceOf[photo_]
   @scala.inline
   def photo_view_profile: photo_view_profile = "photo_view_profile".asInstanceOf[photo_view_profile]
   @scala.inline
@@ -496,7 +496,7 @@ object instagramDashPrivateDashApiStrings {
   @scala.inline
   def story_viewer_profile: story_viewer_profile = "story_viewer_profile".asInstanceOf[story_viewer_profile]
   @scala.inline
-  def text: text = "text".asInstanceOf[text]
+  def text_ : text_ = "text".asInstanceOf[text_]
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   @scala.inline
@@ -504,7 +504,7 @@ object instagramDashPrivateDashApiStrings {
   @scala.inline
   def users: users = "users".asInstanceOf[users]
   @scala.inline
-  def video: video = "video".asInstanceOf[video]
+  def video_ : video_ = "video".asInstanceOf[video_]
   @scala.inline
   def video_view_profile: video_view_profile = "video_view_profile".asInstanceOf[video_view_profile]
   @scala.inline

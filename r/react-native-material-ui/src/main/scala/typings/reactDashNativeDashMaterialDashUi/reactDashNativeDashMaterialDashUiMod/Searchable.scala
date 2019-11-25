@@ -35,14 +35,14 @@ object Searchable {
   ): Searchable = {
     val __obj = js.Dynamic.literal()
     if (autoCapitalize != null) __obj.updateDynamic("autoCapitalize")(autoCapitalize.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoCorrect)) __obj.updateDynamic("autoCorrect")(autoCorrect)
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
+    if (!js.isUndefined(autoCorrect)) __obj.updateDynamic("autoCorrect")(autoCorrect.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
     if (onChangeText != null) __obj.updateDynamic("onChangeText")(js.Any.fromFunction1(onChangeText))
     if (onSearchCloseRequested != null) __obj.updateDynamic("onSearchCloseRequested")(js.Any.fromFunction0(onSearchCloseRequested))
     if (onSearchClosed != null) __obj.updateDynamic("onSearchClosed")(js.Any.fromFunction0(onSearchClosed))
     if (onSearchPressed != null) __obj.updateDynamic("onSearchPressed")(js.Any.fromFunction0(onSearchPressed))
     if (onSubmitEditing != null) __obj.updateDynamic("onSubmitEditing")(js.Any.fromFunction0(onSubmitEditing))
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     __obj.asInstanceOf[Searchable]
   }
 }

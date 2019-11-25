@@ -21,7 +21,7 @@ object Anon_ExtensionASTNodesFields {
     fields: GraphQLFieldConfigMap[_, _, StringDictionary[_]],
     interfaces: js.Array[GraphQLInterfaceType]
   ): Anon_ExtensionASTNodesFields = {
-    val __obj = js.Dynamic.literal(extensionASTNodes = extensionASTNodes, fields = fields, interfaces = interfaces)
+    val __obj = js.Dynamic.literal(extensionASTNodes = extensionASTNodes.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], interfaces = interfaces.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ExtensionASTNodesFields]
   }

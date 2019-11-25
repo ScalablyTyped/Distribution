@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation._
 
 trait atNivoChordProps {
   @scala.inline
-  def ChordProps: typings.atNivoChord.ChordPropsDimensions.type = typings.atNivoChord.ChordPropsDimensions
+  def ChordProps: ChordPropsDimensions.type = typings.atNivoChord.ChordPropsDimensions
   type ChordProps = ChordPropsDimensions
   @scala.inline
-  def ChordCanvasProps: typings.atNivoChord.ChordCanvasPropsDimensions.type = typings.atNivoChord.ChordCanvasPropsDimensions
+  def ChordCanvasProps: ChordCanvasPropsDimensions.type = typings.atNivoChord.ChordCanvasPropsDimensions
   type ChordCanvasProps = ChordCanvasPropsDimensions
   @scala.inline
   def ResponsiveChordProps: typings.atNivoChord.atNivoChordMod.ChordProps.type = typings.atNivoChord.atNivoChordMod.ChordProps

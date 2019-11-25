@@ -13,8 +13,8 @@ object LocalizedString {
   @scala.inline
   def apply(language: String = null, value: String = null): LocalizedString = {
     val __obj = js.Dynamic.literal()
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalizedString]
   }
 }

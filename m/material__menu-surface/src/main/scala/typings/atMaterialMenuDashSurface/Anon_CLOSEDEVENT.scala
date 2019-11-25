@@ -13,7 +13,7 @@ trait Anon_CLOSEDEVENT extends js.Object {
 object Anon_CLOSEDEVENT {
   @scala.inline
   def apply(CLOSED_EVENT: String, FOCUSABLE_ELEMENTS: String, OPENED_EVENT: String): Anon_CLOSEDEVENT = {
-    val __obj = js.Dynamic.literal(CLOSED_EVENT = CLOSED_EVENT, FOCUSABLE_ELEMENTS = FOCUSABLE_ELEMENTS, OPENED_EVENT = OPENED_EVENT)
+    val __obj = js.Dynamic.literal(CLOSED_EVENT = CLOSED_EVENT.asInstanceOf[js.Any], FOCUSABLE_ELEMENTS = FOCUSABLE_ELEMENTS.asInstanceOf[js.Any], OPENED_EVENT = OPENED_EVENT.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CLOSEDEVENT]
   }

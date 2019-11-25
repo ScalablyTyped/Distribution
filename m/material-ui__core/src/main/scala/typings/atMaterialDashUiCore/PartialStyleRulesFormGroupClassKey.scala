@@ -15,8 +15,8 @@ object PartialStyleRulesFormGroupClassKey {
   @scala.inline
   def apply(root: CSSProperties = null, row: CSSProperties = null): PartialStyleRulesFormGroupClassKey = {
     val __obj = js.Dynamic.literal()
-    if (root != null) __obj.updateDynamic("root")(root)
-    if (row != null) __obj.updateDynamic("row")(row)
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyleRulesFormGroupClassKey]
   }
 }

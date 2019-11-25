@@ -15,7 +15,7 @@ trait SketchMSStyleReflection extends js.Object {
 object SketchMSStyleReflection {
   @scala.inline
   def apply(_class: styleReflection, distance: Double, isEnabled: Double, strength: Double): SketchMSStyleReflection = {
-    val __obj = js.Dynamic.literal(_class = _class, distance = distance, isEnabled = isEnabled, strength = strength)
+    val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], strength = strength.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SketchMSStyleReflection]
   }

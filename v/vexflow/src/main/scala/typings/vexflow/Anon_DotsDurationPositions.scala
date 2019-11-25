@@ -21,10 +21,10 @@ object Anon_DotsDurationPositions {
     stem_direction: Int | Double = null,
     `type`: String = null
   ): Anon_DotsDurationPositions = {
-    val __obj = js.Dynamic.literal(duration = duration, positions = positions)
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], positions = positions.asInstanceOf[js.Any])
     if (dots != null) __obj.updateDynamic("dots")(dots.asInstanceOf[js.Any])
     if (stem_direction != null) __obj.updateDynamic("stem_direction")(stem_direction.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DotsDurationPositions]
   }
 }

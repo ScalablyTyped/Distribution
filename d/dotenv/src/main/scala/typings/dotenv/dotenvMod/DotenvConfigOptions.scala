@@ -23,9 +23,9 @@ object DotenvConfigOptions {
   @scala.inline
   def apply(debug: js.UndefOr[Boolean] = js.undefined, encoding: String = null, path: String = null): DotenvConfigOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[DotenvConfigOptions]
   }
 }

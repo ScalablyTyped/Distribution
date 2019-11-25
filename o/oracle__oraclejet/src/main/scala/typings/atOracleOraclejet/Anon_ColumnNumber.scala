@@ -11,7 +11,7 @@ trait Anon_ColumnNumber extends js.Object {
 object Anon_ColumnNumber {
   @scala.inline
   def apply(column: Double): Anon_ColumnNumber = {
-    val __obj = js.Dynamic.literal(column = column)
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ColumnNumber]
   }

@@ -26,11 +26,11 @@ object StockToolsGuiDefinitionsFlagsOptions {
     items: js.Array[_] = null
   ): StockToolsGuiDefinitionsFlagsOptions = {
     val __obj = js.Dynamic.literal()
-    if (flagCirclepin != null) __obj.updateDynamic("flagCirclepin")(flagCirclepin)
-    if (flagDiamondpin != null) __obj.updateDynamic("flagDiamondpin")(flagDiamondpin)
-    if (flagSimplepin != null) __obj.updateDynamic("flagSimplepin")(flagSimplepin)
-    if (flagSquarepin != null) __obj.updateDynamic("flagSquarepin")(flagSquarepin)
-    if (items != null) __obj.updateDynamic("items")(items)
+    if (flagCirclepin != null) __obj.updateDynamic("flagCirclepin")(flagCirclepin.asInstanceOf[js.Any])
+    if (flagDiamondpin != null) __obj.updateDynamic("flagDiamondpin")(flagDiamondpin.asInstanceOf[js.Any])
+    if (flagSimplepin != null) __obj.updateDynamic("flagSimplepin")(flagSimplepin.asInstanceOf[js.Any])
+    if (flagSquarepin != null) __obj.updateDynamic("flagSquarepin")(flagSquarepin.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[StockToolsGuiDefinitionsFlagsOptions]
   }
 }

@@ -255,16 +255,16 @@ object IOptions {
     wrapHandlers: IWrapHandlers = null
   ): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (aliasString != null) __obj.updateDynamic("aliasString")(aliasString)
-    if (attributeString != null) __obj.updateDynamic("attributeString")(attributeString)
-    if (!js.isUndefined(cdataInvalidChars)) __obj.updateDynamic("cdataInvalidChars")(cdataInvalidChars)
-    if (cdataKeys != null) __obj.updateDynamic("cdataKeys")(cdataKeys)
-    if (declaration != null) __obj.updateDynamic("declaration")(declaration)
-    if (dtd != null) __obj.updateDynamic("dtd")(dtd)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (typeHandlers != null) __obj.updateDynamic("typeHandlers")(typeHandlers)
-    if (valueString != null) __obj.updateDynamic("valueString")(valueString)
-    if (wrapHandlers != null) __obj.updateDynamic("wrapHandlers")(wrapHandlers)
+    if (aliasString != null) __obj.updateDynamic("aliasString")(aliasString.asInstanceOf[js.Any])
+    if (attributeString != null) __obj.updateDynamic("attributeString")(attributeString.asInstanceOf[js.Any])
+    if (!js.isUndefined(cdataInvalidChars)) __obj.updateDynamic("cdataInvalidChars")(cdataInvalidChars.asInstanceOf[js.Any])
+    if (cdataKeys != null) __obj.updateDynamic("cdataKeys")(cdataKeys.asInstanceOf[js.Any])
+    if (declaration != null) __obj.updateDynamic("declaration")(declaration.asInstanceOf[js.Any])
+    if (dtd != null) __obj.updateDynamic("dtd")(dtd.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (typeHandlers != null) __obj.updateDynamic("typeHandlers")(typeHandlers.asInstanceOf[js.Any])
+    if (valueString != null) __obj.updateDynamic("valueString")(valueString.asInstanceOf[js.Any])
+    if (wrapHandlers != null) __obj.updateDynamic("wrapHandlers")(wrapHandlers.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

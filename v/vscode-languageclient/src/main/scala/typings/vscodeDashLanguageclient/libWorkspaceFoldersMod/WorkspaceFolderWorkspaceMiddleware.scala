@@ -23,7 +23,7 @@ object WorkspaceFolderWorkspaceMiddleware {
     workspaceFolders: (/* token */ CancellationToken, /* next */ HandlerSignature) => HandlerResult[js.Array[WorkspaceFolder] | Null, Unit] = null
   ): WorkspaceFolderWorkspaceMiddleware = {
     val __obj = js.Dynamic.literal()
-    if (didChangeWorkspaceFolders != null) __obj.updateDynamic("didChangeWorkspaceFolders")(didChangeWorkspaceFolders)
+    if (didChangeWorkspaceFolders != null) __obj.updateDynamic("didChangeWorkspaceFolders")(didChangeWorkspaceFolders.asInstanceOf[js.Any])
     if (workspaceFolders != null) __obj.updateDynamic("workspaceFolders")(js.Any.fromFunction2(workspaceFolders))
     __obj.asInstanceOf[WorkspaceFolderWorkspaceMiddleware]
   }

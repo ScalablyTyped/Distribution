@@ -15,7 +15,7 @@ trait HeaderMouseEventHandlerParams extends js.Object {
 object HeaderMouseEventHandlerParams {
   @scala.inline
   def apply(columnData: js.Any, dataKey: String, event: MouseEvent[_, NativeMouseEvent]): HeaderMouseEventHandlerParams = {
-    val __obj = js.Dynamic.literal(columnData = columnData, dataKey = dataKey, event = event)
+    val __obj = js.Dynamic.literal(columnData = columnData.asInstanceOf[js.Any], dataKey = dataKey.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HeaderMouseEventHandlerParams]
   }

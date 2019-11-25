@@ -13,8 +13,8 @@ trait GoogleAnalytics extends js.Object {
 object GoogleAnalytics {
   @scala.inline
   def apply(async: Boolean, src: String, `type`: String): GoogleAnalytics = {
-    val __obj = js.Dynamic.literal(async = async, src = src)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleAnalytics]
   }
 }

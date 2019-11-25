@@ -31,13 +31,13 @@ object Template {
     listItems: js.Array[ListItem] = null,
     title: String = null
   ): Template = {
-    val __obj = js.Dynamic.literal(token = token)
-    __obj.updateDynamic("type")(`type`)
-    if (backButton != null) __obj.updateDynamic("backButton")(backButton)
-    if (backgroundImage != null) __obj.updateDynamic("backgroundImage")(backgroundImage)
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (listItems != null) __obj.updateDynamic("listItems")(listItems)
-    if (title != null) __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (backButton != null) __obj.updateDynamic("backButton")(backButton.asInstanceOf[js.Any])
+    if (backgroundImage != null) __obj.updateDynamic("backgroundImage")(backgroundImage.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (listItems != null) __obj.updateDynamic("listItems")(listItems.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Template]
   }
 }

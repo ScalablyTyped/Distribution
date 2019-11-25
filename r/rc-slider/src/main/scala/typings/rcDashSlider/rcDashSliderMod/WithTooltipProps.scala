@@ -17,7 +17,7 @@ object WithTooltipProps {
   def apply(tipFormatter: /* value */ Double => ReactNode = null, tipProps: Partial[Props] = null): WithTooltipProps = {
     val __obj = js.Dynamic.literal()
     if (tipFormatter != null) __obj.updateDynamic("tipFormatter")(js.Any.fromFunction1(tipFormatter))
-    if (tipProps != null) __obj.updateDynamic("tipProps")(tipProps)
+    if (tipProps != null) __obj.updateDynamic("tipProps")(tipProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[WithTooltipProps]
   }
 }

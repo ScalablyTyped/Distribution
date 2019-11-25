@@ -26,9 +26,9 @@ object CPU {
   @scala.inline
   def apply(model: String = null, speed: Int | Double = null, times: CPUTimes = null): CPU = {
     val __obj = js.Dynamic.literal()
-    if (model != null) __obj.updateDynamic("model")(model)
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
-    if (times != null) __obj.updateDynamic("times")(times)
+    if (times != null) __obj.updateDynamic("times")(times.asInstanceOf[js.Any])
     __obj.asInstanceOf[CPU]
   }
 }

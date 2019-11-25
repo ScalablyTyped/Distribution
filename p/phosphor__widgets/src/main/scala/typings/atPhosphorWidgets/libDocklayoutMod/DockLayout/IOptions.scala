@@ -23,7 +23,7 @@ trait IOptions extends js.Object {
 object IOptions {
   @scala.inline
   def apply(renderer: IRenderer, spacing: Int | Double = null): IOptions = {
-    val __obj = js.Dynamic.literal(renderer = renderer)
+    val __obj = js.Dynamic.literal(renderer = renderer.asInstanceOf[js.Any])
     if (spacing != null) __obj.updateDynamic("spacing")(spacing.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }

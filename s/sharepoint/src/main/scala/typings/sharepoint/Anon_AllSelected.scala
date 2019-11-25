@@ -24,7 +24,7 @@ object Anon_AllSelected {
     partSelected: Header,
     partSelectedHover: Header
   ): Anon_AllSelected = {
-    val __obj = js.Dynamic.literal(allSelected = allSelected, allSelectedHover = allSelectedHover, normal = normal, normalHover = normalHover, partSelected = partSelected, partSelectedHover = partSelectedHover)
+    val __obj = js.Dynamic.literal(allSelected = allSelected.asInstanceOf[js.Any], allSelectedHover = allSelectedHover.asInstanceOf[js.Any], normal = normal.asInstanceOf[js.Any], normalHover = normalHover.asInstanceOf[js.Any], partSelected = partSelected.asInstanceOf[js.Any], partSelectedHover = partSelectedHover.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AllSelected]
   }

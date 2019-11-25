@@ -74,7 +74,7 @@ object FluxStore {
     getDispatcher: () => typings.flux.libDispatcherMod.^[TPayload],
     hasChanged: () => Boolean
   ): FluxStore[TPayload] = {
-    val __obj = js.Dynamic.literal(__changeEvent = __changeEvent, __changed = __changed, __className = __className, __dispatcher = __dispatcher, __emitChange = js.Any.fromFunction0(__emitChange), __emitter = __emitter, __invokeOnDispatch = js.Any.fromFunction1(__invokeOnDispatch), __onDispatch = js.Any.fromFunction1(__onDispatch), addListener = js.Any.fromFunction1(addListener), getDispatchToken = js.Any.fromFunction0(getDispatchToken), getDispatcher = js.Any.fromFunction0(getDispatcher), hasChanged = js.Any.fromFunction0(hasChanged))
+    val __obj = js.Dynamic.literal(__changeEvent = __changeEvent.asInstanceOf[js.Any], __changed = __changed.asInstanceOf[js.Any], __className = __className.asInstanceOf[js.Any], __dispatcher = __dispatcher.asInstanceOf[js.Any], __emitChange = js.Any.fromFunction0(__emitChange), __emitter = __emitter.asInstanceOf[js.Any], __invokeOnDispatch = js.Any.fromFunction1(__invokeOnDispatch), __onDispatch = js.Any.fromFunction1(__onDispatch), addListener = js.Any.fromFunction1(addListener), getDispatchToken = js.Any.fromFunction0(getDispatchToken), getDispatcher = js.Any.fromFunction0(getDispatcher), hasChanged = js.Any.fromFunction0(hasChanged))
   
     __obj.asInstanceOf[FluxStore[TPayload]]
   }

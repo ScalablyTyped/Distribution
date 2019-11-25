@@ -49,7 +49,7 @@ object Anon_BChrome {
     strFirefoxVersion: String,
     strIEVersion: String
   ): Anon_BChrome = {
-    val __obj = js.Dynamic.literal(WSSession = WSSession, WSVersion = WSVersion, bChrome = bChrome, bEdge = bEdge, bFileSystem = bFileSystem, bFirefox = bFirefox, bIE = bIE, bLinux = bLinux, bMac = bMac, bSafari = bSafari, bWin = bWin, bWin64 = bWin64, basePath = basePath, iPluginLength = iPluginLength, isX64 = isX64, pathType = pathType, strChromeVersion = strChromeVersion, strFirefoxVersion = strFirefoxVersion, strIEVersion = strIEVersion)
+    val __obj = js.Dynamic.literal(WSSession = WSSession.asInstanceOf[js.Any], WSVersion = WSVersion.asInstanceOf[js.Any], bChrome = bChrome.asInstanceOf[js.Any], bEdge = bEdge.asInstanceOf[js.Any], bFileSystem = bFileSystem.asInstanceOf[js.Any], bFirefox = bFirefox.asInstanceOf[js.Any], bIE = bIE.asInstanceOf[js.Any], bLinux = bLinux.asInstanceOf[js.Any], bMac = bMac.asInstanceOf[js.Any], bSafari = bSafari.asInstanceOf[js.Any], bWin = bWin.asInstanceOf[js.Any], bWin64 = bWin64.asInstanceOf[js.Any], basePath = basePath.asInstanceOf[js.Any], iPluginLength = iPluginLength.asInstanceOf[js.Any], isX64 = isX64.asInstanceOf[js.Any], pathType = pathType.asInstanceOf[js.Any], strChromeVersion = strChromeVersion.asInstanceOf[js.Any], strFirefoxVersion = strFirefoxVersion.asInstanceOf[js.Any], strIEVersion = strIEVersion.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BChrome]
   }

@@ -63,7 +63,7 @@ object DataSet {
     stockEvents: js.Array[typings.amcharts.stockEventMod.default],
     title: String
   ): DataSet = {
-    val __obj = js.Dynamic.literal(categoryField = categoryField, color = color, compared = compared, dataProvider = dataProvider, fieldMappings = fieldMappings, showInCompare = showInCompare, showInSelect = showInSelect, stockEvents = stockEvents, title = title)
+    val __obj = js.Dynamic.literal(categoryField = categoryField.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], compared = compared.asInstanceOf[js.Any], dataProvider = dataProvider.asInstanceOf[js.Any], fieldMappings = fieldMappings.asInstanceOf[js.Any], showInCompare = showInCompare.asInstanceOf[js.Any], showInSelect = showInSelect.asInstanceOf[js.Any], stockEvents = stockEvents.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DataSet]
   }

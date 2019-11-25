@@ -11,7 +11,7 @@ trait FormContext extends js.Object {
 object FormContext {
   @scala.inline
   def apply(formApi: FormApi): FormContext = {
-    val __obj = js.Dynamic.literal(formApi = formApi)
+    val __obj = js.Dynamic.literal(formApi = formApi.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FormContext]
   }

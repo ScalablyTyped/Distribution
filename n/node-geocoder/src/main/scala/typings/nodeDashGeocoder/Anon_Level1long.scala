@@ -20,10 +20,10 @@ object Anon_Level1long {
     level2short: String = null
   ): Anon_Level1long = {
     val __obj = js.Dynamic.literal()
-    if (level1long != null) __obj.updateDynamic("level1long")(level1long)
-    if (level1short != null) __obj.updateDynamic("level1short")(level1short)
-    if (level2long != null) __obj.updateDynamic("level2long")(level2long)
-    if (level2short != null) __obj.updateDynamic("level2short")(level2short)
+    if (level1long != null) __obj.updateDynamic("level1long")(level1long.asInstanceOf[js.Any])
+    if (level1short != null) __obj.updateDynamic("level1short")(level1short.asInstanceOf[js.Any])
+    if (level2long != null) __obj.updateDynamic("level2long")(level2long.asInstanceOf[js.Any])
+    if (level2short != null) __obj.updateDynamic("level2short")(level2short.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Level1long]
   }
 }

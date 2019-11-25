@@ -13,8 +13,8 @@ trait TaggedTemplateLiteralInvocationType[Result] extends js.Object {
 object TaggedTemplateLiteralInvocationType {
   @scala.inline
   def apply[Result](sql: String, `type`: js.Symbol, values: js.Array[ValueExpressionType]): TaggedTemplateLiteralInvocationType[Result] = {
-    val __obj = js.Dynamic.literal(sql = sql, values = values)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(sql = sql.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaggedTemplateLiteralInvocationType[Result]]
   }
 }

@@ -12,7 +12,7 @@ trait OauthAuthorizationsResetAuthorizationParams extends js.Object {
 object OauthAuthorizationsResetAuthorizationParams {
   @scala.inline
   def apply(access_token: String, client_id: String): OauthAuthorizationsResetAuthorizationParams = {
-    val __obj = js.Dynamic.literal(access_token = access_token, client_id = client_id)
+    val __obj = js.Dynamic.literal(access_token = access_token.asInstanceOf[js.Any], client_id = client_id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OauthAuthorizationsResetAuthorizationParams]
   }

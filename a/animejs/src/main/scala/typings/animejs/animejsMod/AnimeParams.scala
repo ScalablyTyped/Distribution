@@ -37,7 +37,7 @@ object AnimeParams {
     update: /* anim */ AnimeInstance => Unit = null
   ): AnimeParams = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay)
+    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay.asInstanceOf[js.Any])
     if (begin != null) __obj.updateDynamic("begin")(js.Any.fromFunction1(begin))
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (changeBegin != null) __obj.updateDynamic("changeBegin")(js.Any.fromFunction1(changeBegin))
@@ -49,7 +49,7 @@ object AnimeParams {
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
     if (elasticity != null) __obj.updateDynamic("elasticity")(elasticity.asInstanceOf[js.Any])
     if (endDelay != null) __obj.updateDynamic("endDelay")(endDelay.asInstanceOf[js.Any])
-    if (keyframes != null) __obj.updateDynamic("keyframes")(keyframes)
+    if (keyframes != null) __obj.updateDynamic("keyframes")(keyframes.asInstanceOf[js.Any])
     if (loop != null) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
     if (loopBegin != null) __obj.updateDynamic("loopBegin")(js.Any.fromFunction1(loopBegin))
     if (loopComplete != null) __obj.updateDynamic("loopComplete")(js.Any.fromFunction1(loopComplete))

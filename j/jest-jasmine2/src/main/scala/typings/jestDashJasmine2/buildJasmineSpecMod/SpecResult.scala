@@ -47,8 +47,8 @@ object SpecResult {
     __callsite: Anon_GetColumnNumber = null,
     duration: Int | Double = null
   ): SpecResult = {
-    val __obj = js.Dynamic.literal(description = description, failedExpectations = failedExpectations, fullName = fullName, id = id, passedExpectations = passedExpectations, pendingReason = pendingReason, status = status, testPath = testPath)
-    if (__callsite != null) __obj.updateDynamic("__callsite")(__callsite)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], failedExpectations = failedExpectations.asInstanceOf[js.Any], fullName = fullName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], passedExpectations = passedExpectations.asInstanceOf[js.Any], pendingReason = pendingReason.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], testPath = testPath.asInstanceOf[js.Any])
+    if (__callsite != null) __obj.updateDynamic("__callsite")(__callsite.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpecResult]
   }

@@ -22,10 +22,10 @@ object ReceivedActionMeta {
     navKey: Nullable[String] = null,
     query: Query = null
   ): ReceivedActionMeta = {
-    val __obj = js.Dynamic.literal(meta = meta, payload = payload)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (navKey != null) __obj.updateDynamic("navKey")(navKey.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query)
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReceivedActionMeta]
   }
 }

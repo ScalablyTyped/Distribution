@@ -16,8 +16,8 @@ object IContextualizedTypeStats {
   @scala.inline
   def apply(context: IStatsContext = null, perTypeStat: StringDictionary[ITypeStat] = null): IContextualizedTypeStats = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (perTypeStat != null) __obj.updateDynamic("perTypeStat")(perTypeStat)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (perTypeStat != null) __obj.updateDynamic("perTypeStat")(perTypeStat.asInstanceOf[js.Any])
     __obj.asInstanceOf[IContextualizedTypeStats]
   }
 }

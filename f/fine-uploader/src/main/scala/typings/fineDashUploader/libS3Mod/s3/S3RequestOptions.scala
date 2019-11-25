@@ -39,20 +39,20 @@ object S3RequestOptions {
     uuidName: String = null
   ): S3RequestOptions = {
     val __obj = js.Dynamic.literal()
-    if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey)
+    if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
     if (clockDrift != null) __obj.updateDynamic("clockDrift")(clockDrift.asInstanceOf[js.Any])
-    if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders)
-    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint)
-    if (filenameParam != null) __obj.updateDynamic("filenameParam")(filenameParam)
-    if (!js.isUndefined(forceMultipart)) __obj.updateDynamic("forceMultipart")(forceMultipart)
-    if (inputName != null) __obj.updateDynamic("inputName")(inputName)
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (!js.isUndefined(omitDefaultParams)) __obj.updateDynamic("omitDefaultParams")(omitDefaultParams)
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (!js.isUndefined(paramsInBody)) __obj.updateDynamic("paramsInBody")(paramsInBody)
-    if (!js.isUndefined(requireSuccessJson)) __obj.updateDynamic("requireSuccessJson")(requireSuccessJson)
-    if (totalFileSizeName != null) __obj.updateDynamic("totalFileSizeName")(totalFileSizeName)
-    if (uuidName != null) __obj.updateDynamic("uuidName")(uuidName)
+    if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders.asInstanceOf[js.Any])
+    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
+    if (filenameParam != null) __obj.updateDynamic("filenameParam")(filenameParam.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceMultipart)) __obj.updateDynamic("forceMultipart")(forceMultipart.asInstanceOf[js.Any])
+    if (inputName != null) __obj.updateDynamic("inputName")(inputName.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (!js.isUndefined(omitDefaultParams)) __obj.updateDynamic("omitDefaultParams")(omitDefaultParams.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (!js.isUndefined(paramsInBody)) __obj.updateDynamic("paramsInBody")(paramsInBody.asInstanceOf[js.Any])
+    if (!js.isUndefined(requireSuccessJson)) __obj.updateDynamic("requireSuccessJson")(requireSuccessJson.asInstanceOf[js.Any])
+    if (totalFileSizeName != null) __obj.updateDynamic("totalFileSizeName")(totalFileSizeName.asInstanceOf[js.Any])
+    if (uuidName != null) __obj.updateDynamic("uuidName")(uuidName.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3RequestOptions]
   }
 }

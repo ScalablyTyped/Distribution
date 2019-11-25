@@ -88,15 +88,15 @@ trait Typeofui extends js.Object {
   var Window: TypeofClassWindow = js.native
   val editor: Typeofeditor = js.native
   def plugin(
-    widget: /* import warning: ImportType.apply Failed type conversion: typeof kendo.ui.Widget */ js.Any
+    widget: /* import warning: importer.ImportType#apply Failed type conversion: typeof kendo.ui.Widget */ js.Any
   ): Unit = js.native
   def plugin(
-    widget: /* import warning: ImportType.apply Failed type conversion: typeof kendo.ui.Widget */ js.Any,
-    register: /* import warning: ImportType.apply Failed type conversion: typeof kendo.ui */ js.Any
+    widget: /* import warning: importer.ImportType#apply Failed type conversion: typeof kendo.ui.Widget */ js.Any,
+    register: /* import warning: importer.ImportType#apply Failed type conversion: typeof kendo.ui */ js.Any
   ): Unit = js.native
   def plugin(
-    widget: /* import warning: ImportType.apply Failed type conversion: typeof kendo.ui.Widget */ js.Any,
-    register: /* import warning: ImportType.apply Failed type conversion: typeof kendo.ui */ js.Any,
+    widget: /* import warning: importer.ImportType#apply Failed type conversion: typeof kendo.ui.Widget */ js.Any,
+    register: /* import warning: importer.ImportType#apply Failed type conversion: typeof kendo.ui */ js.Any,
     prefix: String
   ): Unit = js.native
   def progress(container: JQuery, toggle: Boolean): Unit = js.native

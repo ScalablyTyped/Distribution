@@ -13,8 +13,8 @@ trait ICustomMedia extends ICustomControl {
 object ICustomMedia {
   @scala.inline
   def apply(component: media, label: String, layoutRef: String, ref: String, `type`: String): ICustomMedia = {
-    val __obj = js.Dynamic.literal(component = component, label = label, layoutRef = layoutRef, ref = ref)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], layoutRef = layoutRef.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICustomMedia]
   }
 }

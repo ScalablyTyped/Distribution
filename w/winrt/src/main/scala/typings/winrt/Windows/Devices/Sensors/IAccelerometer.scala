@@ -21,7 +21,7 @@ object IAccelerometer {
     onshaken: js.Any,
     reportInterval: Double
   ): IAccelerometer = {
-    val __obj = js.Dynamic.literal(getCurrentReading = js.Any.fromFunction0(getCurrentReading), minimumReportInterval = minimumReportInterval, onreadingchanged = onreadingchanged, onshaken = onshaken, reportInterval = reportInterval)
+    val __obj = js.Dynamic.literal(getCurrentReading = js.Any.fromFunction0(getCurrentReading), minimumReportInterval = minimumReportInterval.asInstanceOf[js.Any], onreadingchanged = onreadingchanged.asInstanceOf[js.Any], onshaken = onshaken.asInstanceOf[js.Any], reportInterval = reportInterval.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IAccelerometer]
   }

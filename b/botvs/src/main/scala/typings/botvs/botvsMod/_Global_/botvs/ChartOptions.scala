@@ -13,7 +13,7 @@ object ChartOptions {
   @scala.inline
   def apply(__isStock: js.UndefOr[Boolean] = js.undefined): ChartOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(__isStock)) __obj.updateDynamic("__isStock")(__isStock)
+    if (!js.isUndefined(__isStock)) __obj.updateDynamic("__isStock")(__isStock.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartOptions]
   }
 }

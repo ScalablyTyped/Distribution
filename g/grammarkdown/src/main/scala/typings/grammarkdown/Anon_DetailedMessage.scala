@@ -16,8 +16,8 @@ object Anon_DetailedMessage {
     formatMessage: js.UndefOr[Boolean] = js.undefined
   ): Anon_DetailedMessage = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(detailedMessage)) __obj.updateDynamic("detailedMessage")(detailedMessage)
-    if (!js.isUndefined(formatMessage)) __obj.updateDynamic("formatMessage")(formatMessage)
+    if (!js.isUndefined(detailedMessage)) __obj.updateDynamic("detailedMessage")(detailedMessage.asInstanceOf[js.Any])
+    if (!js.isUndefined(formatMessage)) __obj.updateDynamic("formatMessage")(formatMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DetailedMessage]
   }
 }

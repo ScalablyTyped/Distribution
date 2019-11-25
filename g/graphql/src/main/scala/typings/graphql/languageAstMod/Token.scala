@@ -51,10 +51,10 @@ object Token {
     prev: Token = null,
     value: String = null
   ): Token = {
-    val __obj = js.Dynamic.literal(column = column, end = end, kind = kind, line = line, start = start)
-    if (next != null) __obj.updateDynamic("next")(next)
-    if (prev != null) __obj.updateDynamic("prev")(prev)
-    if (value != null) __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
+    if (prev != null) __obj.updateDynamic("prev")(prev.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
 }

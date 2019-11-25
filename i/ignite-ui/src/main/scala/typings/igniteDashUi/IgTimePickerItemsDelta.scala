@@ -25,7 +25,7 @@ object IgTimePickerItemsDelta {
     minutes: Int | Double = null
   ): IgTimePickerItemsDelta = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (hours != null) __obj.updateDynamic("hours")(hours.asInstanceOf[js.Any])
     if (minutes != null) __obj.updateDynamic("minutes")(minutes.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgTimePickerItemsDelta]

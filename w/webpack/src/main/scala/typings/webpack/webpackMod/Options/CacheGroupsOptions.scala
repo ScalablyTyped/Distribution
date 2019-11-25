@@ -51,7 +51,7 @@ object CacheGroupsOptions {
   ): CacheGroupsOptions = {
     val __obj = js.Dynamic.literal()
     if (chunks != null) __obj.updateDynamic("chunks")(chunks.asInstanceOf[js.Any])
-    if (!js.isUndefined(enforce)) __obj.updateDynamic("enforce")(enforce)
+    if (!js.isUndefined(enforce)) __obj.updateDynamic("enforce")(enforce.asInstanceOf[js.Any])
     if (maxAsyncRequests != null) __obj.updateDynamic("maxAsyncRequests")(maxAsyncRequests.asInstanceOf[js.Any])
     if (maxInitialRequests != null) __obj.updateDynamic("maxInitialRequests")(maxInitialRequests.asInstanceOf[js.Any])
     if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
@@ -59,7 +59,7 @@ object CacheGroupsOptions {
     if (minSize != null) __obj.updateDynamic("minSize")(minSize.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (!js.isUndefined(reuseExistingChunk)) __obj.updateDynamic("reuseExistingChunk")(reuseExistingChunk)
+    if (!js.isUndefined(reuseExistingChunk)) __obj.updateDynamic("reuseExistingChunk")(reuseExistingChunk.asInstanceOf[js.Any])
     if (test != null) __obj.updateDynamic("test")(test.asInstanceOf[js.Any])
     __obj.asInstanceOf[CacheGroupsOptions]
   }

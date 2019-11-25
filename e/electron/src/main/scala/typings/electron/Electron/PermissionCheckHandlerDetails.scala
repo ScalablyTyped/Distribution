@@ -1,7 +1,7 @@
 package typings.electron.Electron
 
 import typings.electron.electronStrings.audio
-import typings.electron.electronStrings.unknown
+import typings.electron.electronStrings.unknown_
 import typings.electron.electronStrings.video
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +15,7 @@ trait PermissionCheckHandlerDetails extends js.Object {
   /**
     * The type of media access being requested, can be video, audio or unknown
     */
-  var mediaType: video | audio | unknown
+  var mediaType: video | audio | unknown_
   /**
     * The last URL the requesting frame loaded
     */
@@ -30,11 +30,11 @@ object PermissionCheckHandlerDetails {
   @scala.inline
   def apply(
     isMainFrame: Boolean,
-    mediaType: video | audio | unknown,
+    mediaType: video | audio | unknown_,
     requestingUrl: String,
     securityOrigin: String
   ): PermissionCheckHandlerDetails = {
-    val __obj = js.Dynamic.literal(isMainFrame = isMainFrame, mediaType = mediaType.asInstanceOf[js.Any], requestingUrl = requestingUrl, securityOrigin = securityOrigin)
+    val __obj = js.Dynamic.literal(isMainFrame = isMainFrame.asInstanceOf[js.Any], mediaType = mediaType.asInstanceOf[js.Any], requestingUrl = requestingUrl.asInstanceOf[js.Any], securityOrigin = securityOrigin.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PermissionCheckHandlerDetails]
   }

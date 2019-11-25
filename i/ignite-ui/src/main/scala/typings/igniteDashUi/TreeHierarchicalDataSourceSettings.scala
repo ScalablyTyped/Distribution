@@ -26,8 +26,8 @@ object TreeHierarchicalDataSourceSettings {
     treeDS: TreeHierarchicalDataSourceSettingsTreeDS = null
   ): TreeHierarchicalDataSourceSettings = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (treeDS != null) __obj.updateDynamic("treeDS")(treeDS)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (treeDS != null) __obj.updateDynamic("treeDS")(treeDS.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeHierarchicalDataSourceSettings]
   }
 }

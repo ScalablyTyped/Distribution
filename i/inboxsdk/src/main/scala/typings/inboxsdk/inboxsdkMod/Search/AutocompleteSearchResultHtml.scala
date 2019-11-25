@@ -23,13 +23,13 @@ object AutocompleteSearchResultHtml {
     routeName: String = null,
     routeParams: js.Array[String] = null
   ): AutocompleteSearchResultHtml = {
-    val __obj = js.Dynamic.literal(descriptionHTML = descriptionHTML, nameHTML = nameHTML)
-    if (externalURL != null) __obj.updateDynamic("externalURL")(externalURL)
-    if (iconHTML != null) __obj.updateDynamic("iconHTML")(iconHTML)
-    if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl)
+    val __obj = js.Dynamic.literal(descriptionHTML = descriptionHTML.asInstanceOf[js.Any], nameHTML = nameHTML.asInstanceOf[js.Any])
+    if (externalURL != null) __obj.updateDynamic("externalURL")(externalURL.asInstanceOf[js.Any])
+    if (iconHTML != null) __obj.updateDynamic("iconHTML")(iconHTML.asInstanceOf[js.Any])
+    if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction0(onClick))
-    if (routeName != null) __obj.updateDynamic("routeName")(routeName)
-    if (routeParams != null) __obj.updateDynamic("routeParams")(routeParams)
+    if (routeName != null) __obj.updateDynamic("routeName")(routeName.asInstanceOf[js.Any])
+    if (routeParams != null) __obj.updateDynamic("routeParams")(routeParams.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutocompleteSearchResultHtml]
   }
 }

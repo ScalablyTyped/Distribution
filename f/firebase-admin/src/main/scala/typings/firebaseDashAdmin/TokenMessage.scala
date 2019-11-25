@@ -28,13 +28,13 @@ object TokenMessage {
     notification: Notification = null,
     webpush: WebpushConfig = null
   ): TokenMessage = {
-    val __obj = js.Dynamic.literal(token = token)
-    if (android != null) __obj.updateDynamic("android")(android)
-    if (apns != null) __obj.updateDynamic("apns")(apns)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (fcmOptions != null) __obj.updateDynamic("fcmOptions")(fcmOptions)
-    if (notification != null) __obj.updateDynamic("notification")(notification)
-    if (webpush != null) __obj.updateDynamic("webpush")(webpush)
+    val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any])
+    if (android != null) __obj.updateDynamic("android")(android.asInstanceOf[js.Any])
+    if (apns != null) __obj.updateDynamic("apns")(apns.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (fcmOptions != null) __obj.updateDynamic("fcmOptions")(fcmOptions.asInstanceOf[js.Any])
+    if (notification != null) __obj.updateDynamic("notification")(notification.asInstanceOf[js.Any])
+    if (webpush != null) __obj.updateDynamic("webpush")(webpush.asInstanceOf[js.Any])
     __obj.asInstanceOf[TokenMessage]
   }
 }

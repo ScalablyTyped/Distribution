@@ -48,10 +48,10 @@ object ExecutionRequest {
     sessionState: String = null
   ): ExecutionRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(devMode)) __obj.updateDynamic("devMode")(devMode)
-    if (function != null) __obj.updateDynamic("function")(function)
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
-    if (sessionState != null) __obj.updateDynamic("sessionState")(sessionState)
+    if (!js.isUndefined(devMode)) __obj.updateDynamic("devMode")(devMode.asInstanceOf[js.Any])
+    if (function != null) __obj.updateDynamic("function")(function.asInstanceOf[js.Any])
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
+    if (sessionState != null) __obj.updateDynamic("sessionState")(sessionState.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecutionRequest]
   }
 }

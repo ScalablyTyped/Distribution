@@ -29,7 +29,6 @@ object NavBarProps {
   def apply(
     AllHTMLAttributes: AllHTMLAttributes[HTMLDivElement] = null,
     ClassAttributes: ClassAttributes[HTMLDivElement] = null,
-    className: String = null,
     icon: ReactNode = null,
     leftContent: ReactNode = null,
     mode: dark | light = null,
@@ -38,14 +37,13 @@ object NavBarProps {
     rightContent: ReactNode = null
   ): NavBarProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (leftContent != null) __obj.updateDynamic("leftContent")(leftContent.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (onLeftClick != null) __obj.updateDynamic("onLeftClick")(js.Any.fromFunction1(onLeftClick))
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (rightContent != null) __obj.updateDynamic("rightContent")(rightContent.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavBarProps]
   }

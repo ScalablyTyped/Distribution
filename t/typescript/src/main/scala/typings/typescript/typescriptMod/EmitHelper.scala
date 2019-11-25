@@ -19,7 +19,7 @@ object EmitHelper {
     text: String | (js.Function1[/* node */ EmitHelperUniqueNameCallback, String]),
     priority: Int | Double = null
   ): EmitHelper = {
-    val __obj = js.Dynamic.literal(name = name, scoped = scoped, text = text.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], scoped = scoped.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmitHelper]
   }

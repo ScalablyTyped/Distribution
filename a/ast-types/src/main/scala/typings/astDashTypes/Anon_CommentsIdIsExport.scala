@@ -26,10 +26,10 @@ object Anon_CommentsIdIsExport {
     isExport: js.UndefOr[Boolean] = js.undefined,
     loc: SourceLocationKind = null
   ): Anon_CommentsIdIsExport = {
-    val __obj = js.Dynamic.literal(id = id, moduleReference = moduleReference.asInstanceOf[js.Any])
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (!js.isUndefined(isExport)) __obj.updateDynamic("isExport")(isExport)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], moduleReference = moduleReference.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (!js.isUndefined(isExport)) __obj.updateDynamic("isExport")(isExport.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CommentsIdIsExport]
   }
 }

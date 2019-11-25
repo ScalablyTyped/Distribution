@@ -17,8 +17,8 @@ object ISetAgentRequest {
   @scala.inline
   def apply(agent: IAgent = null, updateMask: IFieldMask = null): ISetAgentRequest = {
     val __obj = js.Dynamic.literal()
-    if (agent != null) __obj.updateDynamic("agent")(agent)
-    if (updateMask != null) __obj.updateDynamic("updateMask")(updateMask)
+    if (agent != null) __obj.updateDynamic("agent")(agent.asInstanceOf[js.Any])
+    if (updateMask != null) __obj.updateDynamic("updateMask")(updateMask.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISetAgentRequest]
   }
 }

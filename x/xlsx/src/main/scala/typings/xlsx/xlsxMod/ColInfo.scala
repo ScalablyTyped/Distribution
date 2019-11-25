@@ -30,7 +30,7 @@ object ColInfo {
   ): ColInfo = {
     val __obj = js.Dynamic.literal()
     if (MDW != null) __obj.updateDynamic("MDW")(MDW.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
     if (wch != null) __obj.updateDynamic("wch")(wch.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (wpx != null) __obj.updateDynamic("wpx")(wpx.asInstanceOf[js.Any])

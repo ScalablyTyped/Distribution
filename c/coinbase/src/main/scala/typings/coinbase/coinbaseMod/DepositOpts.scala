@@ -31,9 +31,9 @@ object DepositOpts {
     commit: js.UndefOr[Boolean] = js.undefined,
     payment_method: String = null
   ): DepositOpts = {
-    val __obj = js.Dynamic.literal(amount = amount, currency = currency)
-    if (!js.isUndefined(commit)) __obj.updateDynamic("commit")(commit)
-    if (payment_method != null) __obj.updateDynamic("payment_method")(payment_method)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any])
+    if (!js.isUndefined(commit)) __obj.updateDynamic("commit")(commit.asInstanceOf[js.Any])
+    if (payment_method != null) __obj.updateDynamic("payment_method")(payment_method.asInstanceOf[js.Any])
     __obj.asInstanceOf[DepositOpts]
   }
 }

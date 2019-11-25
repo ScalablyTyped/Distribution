@@ -45,7 +45,7 @@ import scala.scalajs.js.annotation._
   - typings.chromeDashApps.chromeDashAppsStrings.systemDOTstorage
   - typings.chromeDashApps.chromeDashAppsStrings.tts
   - typings.chromeDashApps.chromeDashAppsStrings.unlimitedStorage
-  - typings.chromeDashApps.chromeDashAppsStrings.usb
+  - typings.chromeDashApps.chromeDashAppsStrings.usb_
   - typings.chromeDashApps.chromeDashAppsStrings.usbDevices
   - typings.chromeDashApps.chromeDashAppsStrings.videoCapture
   - typings.chromeDashApps.chromeDashAppsStrings.webview

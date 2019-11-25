@@ -13,7 +13,7 @@ object TargetHttpsProxiesSetSslCertificatesRequest {
   @scala.inline
   def apply(sslCertificates: js.Array[String] = null): TargetHttpsProxiesSetSslCertificatesRequest = {
     val __obj = js.Dynamic.literal()
-    if (sslCertificates != null) __obj.updateDynamic("sslCertificates")(sslCertificates)
+    if (sslCertificates != null) __obj.updateDynamic("sslCertificates")(sslCertificates.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetHttpsProxiesSetSslCertificatesRequest]
   }
 }

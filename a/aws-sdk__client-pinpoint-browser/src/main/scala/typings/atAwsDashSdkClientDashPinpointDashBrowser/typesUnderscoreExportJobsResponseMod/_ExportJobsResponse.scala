@@ -22,7 +22,7 @@ object _ExportJobsResponse {
   def apply(Item: js.Array[_ExportJobResponse] | Iterable[_ExportJobResponse] = null, NextToken: String = null): _ExportJobsResponse = {
     val __obj = js.Dynamic.literal()
     if (Item != null) __obj.updateDynamic("Item")(Item.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[_ExportJobsResponse]
   }
 }

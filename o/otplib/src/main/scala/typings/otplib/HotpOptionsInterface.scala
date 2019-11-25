@@ -21,11 +21,11 @@ object HotpOptionsInterface {
     encoding: String = null
   ): HotpOptionsInterface = {
     val __obj = js.Dynamic.literal()
-    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm)
+    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
     if (createHmacSecret != null) __obj.updateDynamic("createHmacSecret")(js.Any.fromFunction2(createHmacSecret))
-    if (crypto != null) __obj.updateDynamic("crypto")(crypto)
+    if (crypto != null) __obj.updateDynamic("crypto")(crypto.asInstanceOf[js.Any])
     if (digits != null) __obj.updateDynamic("digits")(digits.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     __obj.asInstanceOf[HotpOptionsInterface]
   }
 }

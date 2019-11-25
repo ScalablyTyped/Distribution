@@ -12,7 +12,7 @@ trait MatcherConfig extends js.Object {
 object MatcherConfig {
   @scala.inline
   def apply(tagBuilder: AnchorTagBuilder): MatcherConfig = {
-    val __obj = js.Dynamic.literal(tagBuilder = tagBuilder)
+    val __obj = js.Dynamic.literal(tagBuilder = tagBuilder.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MatcherConfig]
   }

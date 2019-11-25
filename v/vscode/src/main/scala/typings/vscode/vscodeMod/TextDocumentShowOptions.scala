@@ -37,10 +37,10 @@ object TextDocumentShowOptions {
     viewColumn: ViewColumn = null
   ): TextDocumentShowOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(preserveFocus)) __obj.updateDynamic("preserveFocus")(preserveFocus)
-    if (!js.isUndefined(preview)) __obj.updateDynamic("preview")(preview)
-    if (selection != null) __obj.updateDynamic("selection")(selection)
-    if (viewColumn != null) __obj.updateDynamic("viewColumn")(viewColumn)
+    if (!js.isUndefined(preserveFocus)) __obj.updateDynamic("preserveFocus")(preserveFocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(preview)) __obj.updateDynamic("preview")(preview.asInstanceOf[js.Any])
+    if (selection != null) __obj.updateDynamic("selection")(selection.asInstanceOf[js.Any])
+    if (viewColumn != null) __obj.updateDynamic("viewColumn")(viewColumn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextDocumentShowOptions]
   }
 }

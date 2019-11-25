@@ -40,7 +40,7 @@ object IExportContentJob {
     UseIgnoreChangesBefore: Boolean,
     UseSearchConditions: Boolean
   ): IExportContentJob = {
-    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), ExportContent = ExportContent, ExportStructureItems = ExportStructureItems, Flags = Flags, IgnoreChangesBefore = IgnoreChangesBefore, Impersonation = Impersonation, IncludePrivateUISettingsWithStructure = IncludePrivateUISettingsWithStructure, IncludeValueListItemsWithStructure = IncludeValueListItemsWithStructure, SearchConditions = SearchConditions, SetExportAllStructureItems = js.Any.fromFunction1(SetExportAllStructureItems), StructureItems = StructureItems, TargetLocation = TargetLocation, UseIgnoreChangesBefore = UseIgnoreChangesBefore, UseSearchConditions = UseSearchConditions)
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), ExportContent = ExportContent.asInstanceOf[js.Any], ExportStructureItems = ExportStructureItems.asInstanceOf[js.Any], Flags = Flags.asInstanceOf[js.Any], IgnoreChangesBefore = IgnoreChangesBefore.asInstanceOf[js.Any], Impersonation = Impersonation.asInstanceOf[js.Any], IncludePrivateUISettingsWithStructure = IncludePrivateUISettingsWithStructure.asInstanceOf[js.Any], IncludeValueListItemsWithStructure = IncludeValueListItemsWithStructure.asInstanceOf[js.Any], SearchConditions = SearchConditions.asInstanceOf[js.Any], SetExportAllStructureItems = js.Any.fromFunction1(SetExportAllStructureItems), StructureItems = StructureItems.asInstanceOf[js.Any], TargetLocation = TargetLocation.asInstanceOf[js.Any], UseIgnoreChangesBefore = UseIgnoreChangesBefore.asInstanceOf[js.Any], UseSearchConditions = UseSearchConditions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IExportContentJob]
   }

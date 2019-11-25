@@ -43,7 +43,7 @@ object Anon_FieldNameSize {
     if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
     if (headerPairs != null) __obj.updateDynamic("headerPairs")(headerPairs.asInstanceOf[js.Any])
     if (parts != null) __obj.updateDynamic("parts")(parts.asInstanceOf[js.Any])
-    if (!js.isUndefined(preservePath)) __obj.updateDynamic("preservePath")(preservePath)
+    if (!js.isUndefined(preservePath)) __obj.updateDynamic("preservePath")(preservePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FieldNameSize]
   }
 }

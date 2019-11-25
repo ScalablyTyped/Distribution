@@ -28,8 +28,8 @@ object GenerateConfigReportRequest {
   @scala.inline
   def apply(newConfig: Record[String, _] = null, oldConfig: Record[String, _] = null): GenerateConfigReportRequest = {
     val __obj = js.Dynamic.literal()
-    if (newConfig != null) __obj.updateDynamic("newConfig")(newConfig)
-    if (oldConfig != null) __obj.updateDynamic("oldConfig")(oldConfig)
+    if (newConfig != null) __obj.updateDynamic("newConfig")(newConfig.asInstanceOf[js.Any])
+    if (oldConfig != null) __obj.updateDynamic("oldConfig")(oldConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenerateConfigReportRequest]
   }
 }

@@ -21,7 +21,7 @@ object GetShareInfoOptions {
     complete: /* res */ js.Any => Unit = null,
     fail: js.Any => Unit = null
   ): GetShareInfoOptions = {
-    val __obj = js.Dynamic.literal(shareTicket = shareTicket, success = js.Any.fromFunction1(success))
+    val __obj = js.Dynamic.literal(shareTicket = shareTicket.asInstanceOf[js.Any], success = js.Any.fromFunction1(success))
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     __obj.asInstanceOf[GetShareInfoOptions]

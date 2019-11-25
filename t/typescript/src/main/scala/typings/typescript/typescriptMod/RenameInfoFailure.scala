@@ -13,7 +13,7 @@ trait RenameInfoFailure extends RenameInfo {
 object RenameInfoFailure {
   @scala.inline
   def apply(canRename: `false`, localizedErrorMessage: String): RenameInfoFailure = {
-    val __obj = js.Dynamic.literal(canRename = canRename, localizedErrorMessage = localizedErrorMessage)
+    val __obj = js.Dynamic.literal(canRename = canRename.asInstanceOf[js.Any], localizedErrorMessage = localizedErrorMessage.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RenameInfoFailure]
   }

@@ -40,20 +40,20 @@ object FontAwesomeProps {
     stack: FontAwesomeStack = null,
     tag: String = null
   ): FontAwesomeProps = {
-    val __obj = js.Dynamic.literal(name = name)
-    js.Dynamic.global.Object.assign(__obj, Intermediate)
-    if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel)
-    if (!js.isUndefined(border)) __obj.updateDynamic("border")(border)
-    if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule)
-    if (!js.isUndefined(fixedWidth)) __obj.updateDynamic("fixedWidth")(fixedWidth)
-    if (flip != null) __obj.updateDynamic("flip")(flip)
-    if (!js.isUndefined(inverse)) __obj.updateDynamic("inverse")(inverse)
-    if (!js.isUndefined(pulse)) __obj.updateDynamic("pulse")(pulse)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (Intermediate != null) js.Dynamic.global.Object.assign(__obj, Intermediate)
+    if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel.asInstanceOf[js.Any])
+    if (!js.isUndefined(border)) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
+    if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixedWidth)) __obj.updateDynamic("fixedWidth")(fixedWidth.asInstanceOf[js.Any])
+    if (flip != null) __obj.updateDynamic("flip")(flip.asInstanceOf[js.Any])
+    if (!js.isUndefined(inverse)) __obj.updateDynamic("inverse")(inverse.asInstanceOf[js.Any])
+    if (!js.isUndefined(pulse)) __obj.updateDynamic("pulse")(pulse.asInstanceOf[js.Any])
     if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (!js.isUndefined(spin)) __obj.updateDynamic("spin")(spin)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
-    if (tag != null) __obj.updateDynamic("tag")(tag)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(spin)) __obj.updateDynamic("spin")(spin.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[FontAwesomeProps]
   }
 }

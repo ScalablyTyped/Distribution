@@ -33,8 +33,8 @@ object ChartResetZoomButtonOptions {
   ): ChartResetZoomButtonOptions = {
     val __obj = js.Dynamic.literal()
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (relativeTo != null) __obj.updateDynamic("relativeTo")(relativeTo)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (relativeTo != null) __obj.updateDynamic("relativeTo")(relativeTo.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartResetZoomButtonOptions]
   }
 }

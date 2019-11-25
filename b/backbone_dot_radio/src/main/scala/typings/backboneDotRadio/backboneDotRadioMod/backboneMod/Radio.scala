@@ -1,7 +1,8 @@
 package typings.backboneDotRadio.backboneDotRadioMod.backboneMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.backbone.backboneMod.EventsMixin
+import typings.backbone.backboneMod.EventHandler
+import typings.backbone.backboneMod.EventMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,21 +18,27 @@ trait Radio extends js.Object {
 @js.native
 object Radio extends js.Object {
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - typings.backbone.backboneMod.Events because Already inherited
-  - typings.backboneDotRadio.backboneDotRadioMod.backboneMod.Radio.Requests because Inheritance from two classes. Inlined request, reply, reply, reply, reply, replyOnce, replyOnce, replyOnce, replyOnce, stopReplying, stopReplying, stopReplying, stopReplying
-  - typings.backboneDotRadio.backboneDotRadioMod.backboneMod.Radio.Commands because Inheritance from two classes. Inlined command, comply, comply, comply, comply, complyOnce, complyOnce, complyOnce, complyOnce, stopComplying, stopComplying, stopComplying, stopComplying */ @js.native
-  class Channel () extends EventsMixin {
+  - typings.backbone.backboneMod.EventsMixin because Inheritance from two classes. Inlined bind, bind, bind, bind, listenTo, listenTo, listenToOnce, listenToOnce, off, off, off, off, on, on, on, on, once, once, once, once, stopListening, stopListening, stopListening, stopListening, trigger, unbind, unbind, unbind, unbind
+  - typings.backboneDotRadio.backboneDotRadioMod.backboneMod.Radio.Requests because Inheritance from two classes. Inlined request, reply, reply, reply, reply, replyOnce, replyOnce, replyOnce, replyOnce, stopReplying, stopReplying, stopReplying, stopReplying */ @js.native
+  class Channel ()
+    extends typings.backboneDotRadio.backboneDotRadioMod.backboneMod.Radio.Commands {
     var channelName: String = js.native
-    // Radio.Commands
-    def command(commandName: String, args: js.Any*): Unit = js.native
-    def comply(commandName: String, callback: js.Function1[/* repeated */ js.Any, Unit]): typings.backboneDotRadio.backboneDotRadioMod.backboneMod.Radio.Commands = js.native
-    def comply(commandName: String, callback: js.Function1[/* repeated */ js.Any, Unit], context: js.Any): typings.backboneDotRadio.backboneDotRadioMod.backboneMod.Radio.Commands = js.native
-    def comply(commands: StringDictionary[js.Function1[/* repeated */ js.Any, _]]): typings.backboneDotRadio.backboneDotRadioMod.backboneMod.Radio.Commands = js.native
-    def comply(commands: StringDictionary[js.Function1[/* repeated */ js.Any, _]], context: js.Any): typings.backboneDotRadio.backboneDotRadioMod.backboneMod.Radio.Commands = js.native
-    def complyOnce(commandName: String, callback: js.Function1[/* repeated */ js.Any, Unit]): typings.backboneDotRadio.backboneDotRadioMod.backboneMod.Radio.Commands = js.native
-    def complyOnce(commandName: String, callback: js.Function1[/* repeated */ js.Any, Unit], context: js.Any): typings.backboneDotRadio.backboneDotRadioMod.backboneMod.Radio.Commands = js.native
-    def complyOnce(commands: StringDictionary[js.Function1[/* repeated */ js.Any, _]]): typings.backboneDotRadio.backboneDotRadioMod.backboneMod.Radio.Commands = js.native
-    def complyOnce(commands: StringDictionary[js.Function1[/* repeated */ js.Any, _]], context: js.Any): typings.backboneDotRadio.backboneDotRadioMod.backboneMod.Radio.Commands = js.native
+    def bind(eventMap: EventMap): this.type = js.native
+    def bind(eventMap: EventMap, context: js.Any): this.type = js.native
+    def bind(eventName: String, callback: EventHandler): this.type = js.native
+    def bind(eventName: String, callback: EventHandler, context: js.Any): this.type = js.native
+    def listenTo(`object`: js.Any, eventMap: EventMap): this.type = js.native
+    def listenTo(`object`: js.Any, events: String, callback: EventHandler): this.type = js.native
+    def listenToOnce(`object`: js.Any, eventMap: EventMap): this.type = js.native
+    def listenToOnce(`object`: js.Any, events: String, callback: EventHandler): this.type = js.native
+    def off(): this.type = js.native
+    def off(eventName: String): this.type = js.native
+    def off(eventName: String, callback: EventHandler): this.type = js.native
+    def off(eventName: String, callback: EventHandler, context: js.Any): this.type = js.native
+    def on(eventMap: EventMap): this.type = js.native
+    def on(eventMap: EventMap, context: js.Any): this.type = js.native
+    def on(eventName: String, callback: EventHandler): this.type = js.native
+    def on(eventName: String, callback: EventHandler, context: js.Any): this.type = js.native
     /**
       * Faulty overgeneralization of Backbone.Events.on, for historical
       * reasons.
@@ -39,6 +46,10 @@ object Radio extends js.Object {
     def on(eventName: js.Any): js.Any = js.native
     def on(eventName: js.Any, callback: js.Any): js.Any = js.native
     def on(eventName: js.Any, callback: js.Any, context: js.Any): js.Any = js.native
+    def once(eventMap: EventMap): this.type = js.native
+    def once(eventMap: EventMap, context: js.Any): this.type = js.native
+    def once(events: String, callback: EventHandler): this.type = js.native
+    def once(events: String, callback: EventHandler, context: js.Any): this.type = js.native
     def reply(commands: StringDictionary[js.Function1[/* repeated */ js.Any, _]]): typings.backboneDotRadio.backboneDotRadioMod.backboneMod.Radio.Requests = js.native
     def reply(commands: StringDictionary[js.Function1[/* repeated */ js.Any, _]], context: js.Any): typings.backboneDotRadio.backboneDotRadioMod.backboneMod.Radio.Requests = js.native
     def reply(requestName: String, callback: js.Function1[/* repeated */ js.Any, _]): typings.backboneDotRadio.backboneDotRadioMod.backboneMod.Radio.Requests = js.native
@@ -50,14 +61,19 @@ object Radio extends js.Object {
     // Radio.Requests
     def request(requestName: String, args: js.Any*): js.Any = js.native
     def reset(): typings.backboneDotRadio.backboneDotRadioMod.backboneMod.Radio.Channel = js.native
-    def stopComplying(): typings.backboneDotRadio.backboneDotRadioMod.backboneMod.Radio.Commands = js.native
-    def stopComplying(commandName: String): typings.backboneDotRadio.backboneDotRadioMod.backboneMod.Radio.Commands = js.native
-    def stopComplying(commandName: String, callback: js.Function1[/* repeated */ js.Any, Unit]): typings.backboneDotRadio.backboneDotRadioMod.backboneMod.Radio.Commands = js.native
-    def stopComplying(commandName: String, callback: js.Function1[/* repeated */ js.Any, Unit], context: js.Any): typings.backboneDotRadio.backboneDotRadioMod.backboneMod.Radio.Commands = js.native
+    def stopListening(): this.type = js.native
+    def stopListening(`object`: js.Any): this.type = js.native
+    def stopListening(`object`: js.Any, events: String): this.type = js.native
+    def stopListening(`object`: js.Any, events: String, callback: EventHandler): this.type = js.native
     def stopReplying(): typings.backboneDotRadio.backboneDotRadioMod.backboneMod.Radio.Requests = js.native
     def stopReplying(commandName: String): typings.backboneDotRadio.backboneDotRadioMod.backboneMod.Radio.Requests = js.native
     def stopReplying(commandName: String, callback: js.Function1[/* repeated */ js.Any, _]): typings.backboneDotRadio.backboneDotRadioMod.backboneMod.Radio.Requests = js.native
     def stopReplying(commandName: String, callback: js.Function1[/* repeated */ js.Any, _], context: js.Any): typings.backboneDotRadio.backboneDotRadioMod.backboneMod.Radio.Requests = js.native
+    def trigger(eventName: String, args: js.Any*): this.type = js.native
+    def unbind(): this.type = js.native
+    def unbind(eventName: String): this.type = js.native
+    def unbind(eventName: String, callback: EventHandler): this.type = js.native
+    def unbind(eventName: String, callback: EventHandler, context: js.Any): this.type = js.native
   }
   
   @js.native

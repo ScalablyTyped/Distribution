@@ -33,7 +33,7 @@ trait TextTrackCue extends js.Object {
 object TextTrackCue {
   @scala.inline
   def apply(endTime: Double, id: String, pauseOnExit: Boolean, startTime: Double, text: String): TextTrackCue = {
-    val __obj = js.Dynamic.literal(endTime = endTime, id = id, pauseOnExit = pauseOnExit, startTime = startTime, text = text)
+    val __obj = js.Dynamic.literal(endTime = endTime.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], pauseOnExit = pauseOnExit.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TextTrackCue]
   }

@@ -50,11 +50,11 @@ object Annotation {
     source: js.Any = null,
     verified_by: js.Any = null
   ): Annotation = {
-    val __obj = js.Dynamic.literal(api_path = api_path, authors = authors, body = body, comment_count = comment_count, community = community, cosigned_by = cosigned_by, current_user_metadata = current_user_metadata, has_voters = has_voters, id = id, pinned = pinned, share_url = share_url, state = state, url = url, verified = verified, votes_total = votes_total)
-    if (custom_preview != null) __obj.updateDynamic("custom_preview")(custom_preview)
-    if (rejection_comment != null) __obj.updateDynamic("rejection_comment")(rejection_comment)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (verified_by != null) __obj.updateDynamic("verified_by")(verified_by)
+    val __obj = js.Dynamic.literal(api_path = api_path.asInstanceOf[js.Any], authors = authors.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], comment_count = comment_count.asInstanceOf[js.Any], community = community.asInstanceOf[js.Any], cosigned_by = cosigned_by.asInstanceOf[js.Any], current_user_metadata = current_user_metadata.asInstanceOf[js.Any], has_voters = has_voters.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], pinned = pinned.asInstanceOf[js.Any], share_url = share_url.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], verified = verified.asInstanceOf[js.Any], votes_total = votes_total.asInstanceOf[js.Any])
+    if (custom_preview != null) __obj.updateDynamic("custom_preview")(custom_preview.asInstanceOf[js.Any])
+    if (rejection_comment != null) __obj.updateDynamic("rejection_comment")(rejection_comment.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (verified_by != null) __obj.updateDynamic("verified_by")(verified_by.asInstanceOf[js.Any])
     __obj.asInstanceOf[Annotation]
   }
 }

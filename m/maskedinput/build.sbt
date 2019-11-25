@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "maskedinput"
-version := "0.0-unknown-dt-20190322Z-6cc9f8"
+version := "0.0-unknown-dt-20190322Z-9680b2"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

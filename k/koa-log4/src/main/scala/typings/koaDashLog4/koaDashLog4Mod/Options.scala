@@ -15,7 +15,7 @@ object Options {
   @scala.inline
   def apply(format: String = null, level: Level | auto = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

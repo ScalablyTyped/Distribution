@@ -36,10 +36,10 @@ object Experiment {
     sequencingCenter: String = null
   ): Experiment = {
     val __obj = js.Dynamic.literal()
-    if (instrumentModel != null) __obj.updateDynamic("instrumentModel")(instrumentModel)
-    if (libraryId != null) __obj.updateDynamic("libraryId")(libraryId)
-    if (platformUnit != null) __obj.updateDynamic("platformUnit")(platformUnit)
-    if (sequencingCenter != null) __obj.updateDynamic("sequencingCenter")(sequencingCenter)
+    if (instrumentModel != null) __obj.updateDynamic("instrumentModel")(instrumentModel.asInstanceOf[js.Any])
+    if (libraryId != null) __obj.updateDynamic("libraryId")(libraryId.asInstanceOf[js.Any])
+    if (platformUnit != null) __obj.updateDynamic("platformUnit")(platformUnit.asInstanceOf[js.Any])
+    if (sequencingCenter != null) __obj.updateDynamic("sequencingCenter")(sequencingCenter.asInstanceOf[js.Any])
     __obj.asInstanceOf[Experiment]
   }
 }

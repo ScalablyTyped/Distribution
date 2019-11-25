@@ -34,8 +34,8 @@ object Options {
     mask: String | RegExp = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header)
-    if (!js.isUndefined(markdown)) __obj.updateDynamic("markdown")(markdown)
+    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (!js.isUndefined(markdown)) __obj.updateDynamic("markdown")(markdown.asInstanceOf[js.Any])
     if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

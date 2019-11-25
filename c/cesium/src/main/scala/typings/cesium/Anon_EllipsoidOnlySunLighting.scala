@@ -21,10 +21,10 @@ object Anon_EllipsoidOnlySunLighting {
     textureUrl: String = null
   ): Anon_EllipsoidOnlySunLighting = {
     val __obj = js.Dynamic.literal()
-    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
-    if (!js.isUndefined(onlySunLighting)) __obj.updateDynamic("onlySunLighting")(onlySunLighting)
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
-    if (textureUrl != null) __obj.updateDynamic("textureUrl")(textureUrl)
+    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid.asInstanceOf[js.Any])
+    if (!js.isUndefined(onlySunLighting)) __obj.updateDynamic("onlySunLighting")(onlySunLighting.asInstanceOf[js.Any])
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
+    if (textureUrl != null) __obj.updateDynamic("textureUrl")(textureUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_EllipsoidOnlySunLighting]
   }
 }

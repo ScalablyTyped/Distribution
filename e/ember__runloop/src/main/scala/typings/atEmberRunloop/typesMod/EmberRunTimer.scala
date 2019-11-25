@@ -11,7 +11,7 @@ trait EmberRunTimer extends js.Object {
 object EmberRunTimer {
   @scala.inline
   def apply(__ember_run_timer_brand__ : Boolean): EmberRunTimer = {
-    val __obj = js.Dynamic.literal(__ember_run_timer_brand__ = __ember_run_timer_brand__)
+    val __obj = js.Dynamic.literal(__ember_run_timer_brand__ = __ember_run_timer_brand__.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EmberRunTimer]
   }

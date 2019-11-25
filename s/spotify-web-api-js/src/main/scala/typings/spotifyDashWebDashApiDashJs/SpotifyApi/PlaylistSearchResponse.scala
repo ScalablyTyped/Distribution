@@ -17,7 +17,7 @@ trait PlaylistSearchResponse extends js.Object {
 object PlaylistSearchResponse {
   @scala.inline
   def apply(playlists: PagingObject[PlaylistObjectSimplified]): PlaylistSearchResponse = {
-    val __obj = js.Dynamic.literal(playlists = playlists)
+    val __obj = js.Dynamic.literal(playlists = playlists.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PlaylistSearchResponse]
   }

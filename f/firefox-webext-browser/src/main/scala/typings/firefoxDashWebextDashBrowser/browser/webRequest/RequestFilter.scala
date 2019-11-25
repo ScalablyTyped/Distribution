@@ -25,10 +25,10 @@ object RequestFilter {
     types: js.Array[ResourceType] = null,
     windowId: Int | Double = null
   ): RequestFilter = {
-    val __obj = js.Dynamic.literal(urls = urls)
-    if (!js.isUndefined(incognito)) __obj.updateDynamic("incognito")(incognito)
+    val __obj = js.Dynamic.literal(urls = urls.asInstanceOf[js.Any])
+    if (!js.isUndefined(incognito)) __obj.updateDynamic("incognito")(incognito.asInstanceOf[js.Any])
     if (tabId != null) __obj.updateDynamic("tabId")(tabId.asInstanceOf[js.Any])
-    if (types != null) __obj.updateDynamic("types")(types)
+    if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
     if (windowId != null) __obj.updateDynamic("windowId")(windowId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestFilter]
   }

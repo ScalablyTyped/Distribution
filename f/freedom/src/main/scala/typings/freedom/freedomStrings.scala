@@ -42,7 +42,7 @@ object freedomStrings {
   sealed trait oniceconnectionstatechange extends js.Object
   
   @js.native
-  sealed trait onmessage extends js.Object
+  sealed trait onmessage_ extends js.Object
   
   @js.native
   sealed trait onnegotiationneeded extends js.Object
@@ -81,7 +81,7 @@ object freedomStrings {
   @scala.inline
   def oniceconnectionstatechange: oniceconnectionstatechange = "oniceconnectionstatechange".asInstanceOf[oniceconnectionstatechange]
   @scala.inline
-  def onmessage: onmessage = "onmessage".asInstanceOf[onmessage]
+  def onmessage_ : onmessage_ = "onmessage".asInstanceOf[onmessage_]
   @scala.inline
   def onnegotiationneeded: onnegotiationneeded = "onnegotiationneeded".asInstanceOf[onnegotiationneeded]
   @scala.inline

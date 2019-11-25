@@ -13,8 +13,8 @@ object Anon_ApiNamespace {
   @scala.inline
   def apply(apiNamespace: String = null, host: String = null): Anon_ApiNamespace = {
     val __obj = js.Dynamic.literal()
-    if (apiNamespace != null) __obj.updateDynamic("apiNamespace")(apiNamespace)
-    if (host != null) __obj.updateDynamic("host")(host)
+    if (apiNamespace != null) __obj.updateDynamic("apiNamespace")(apiNamespace.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ApiNamespace]
   }
 }

@@ -14,7 +14,7 @@ object AjaxSuccessEventArgs {
   @scala.inline
   def apply(data: js.Any = null): AjaxSuccessEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     __obj.asInstanceOf[AjaxSuccessEventArgs]
   }
 }

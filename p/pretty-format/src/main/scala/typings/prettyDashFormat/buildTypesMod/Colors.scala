@@ -16,7 +16,7 @@ trait Colors extends js.Object {
 object Colors {
   @scala.inline
   def apply(comment: Anon_Close, content: Anon_Close, prop: Anon_Close, tag: Anon_Close, value: Anon_Close): Colors = {
-    val __obj = js.Dynamic.literal(comment = comment, content = content, prop = prop, tag = tag, value = value)
+    val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], prop = prop.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Colors]
   }

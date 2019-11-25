@@ -15,8 +15,8 @@ object CreateContainerVersionRequestVersionOptions {
   @scala.inline
   def apply(name: String = null, notes: String = null): CreateContainerVersionRequestVersionOptions = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (notes != null) __obj.updateDynamic("notes")(notes)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateContainerVersionRequestVersionOptions]
   }
 }

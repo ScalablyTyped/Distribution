@@ -13,8 +13,8 @@ trait GraphQLConfigEnpointsSubscription extends js.Object {
 object GraphQLConfigEnpointsSubscription {
   @scala.inline
   def apply(url: String, connectionParams: StringDictionary[js.UndefOr[String]] = null): GraphQLConfigEnpointsSubscription = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (connectionParams != null) __obj.updateDynamic("connectionParams")(connectionParams)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (connectionParams != null) __obj.updateDynamic("connectionParams")(connectionParams.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLConfigEnpointsSubscription]
   }
 }

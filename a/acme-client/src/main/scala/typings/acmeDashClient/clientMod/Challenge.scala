@@ -16,10 +16,10 @@ trait Challenge extends HasStatus {
 object Challenge {
   @scala.inline
   def apply(status: String, `type`: String, url: String, error: js.Object = null, validated: String = null): Challenge = {
-    val __obj = js.Dynamic.literal(status = status, url = url)
-    __obj.updateDynamic("type")(`type`)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (validated != null) __obj.updateDynamic("validated")(validated)
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (validated != null) __obj.updateDynamic("validated")(validated.asInstanceOf[js.Any])
     __obj.asInstanceOf[Challenge]
   }
 }

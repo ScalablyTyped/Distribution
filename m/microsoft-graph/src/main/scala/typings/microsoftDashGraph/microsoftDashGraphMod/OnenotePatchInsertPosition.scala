@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait OnenotePatchInsertPosition extends js.Object
 
+object OnenotePatchInsertPosition {
+  @scala.inline
+  def After: typings.microsoftDashGraph.microsoftDashGraphStrings.After = this.cast("After")
+  @scala.inline
+  def Before: typings.microsoftDashGraph.microsoftDashGraphStrings.Before = this.cast("Before")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

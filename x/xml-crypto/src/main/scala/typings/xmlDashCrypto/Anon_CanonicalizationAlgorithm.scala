@@ -20,10 +20,10 @@ object Anon_CanonicalizationAlgorithm {
     signatureAlgorithm: String = null
   ): Anon_CanonicalizationAlgorithm = {
     val __obj = js.Dynamic.literal()
-    if (canonicalizationAlgorithm != null) __obj.updateDynamic("canonicalizationAlgorithm")(canonicalizationAlgorithm)
-    if (idAttribute != null) __obj.updateDynamic("idAttribute")(idAttribute)
-    if (implicitTransforms != null) __obj.updateDynamic("implicitTransforms")(implicitTransforms)
-    if (signatureAlgorithm != null) __obj.updateDynamic("signatureAlgorithm")(signatureAlgorithm)
+    if (canonicalizationAlgorithm != null) __obj.updateDynamic("canonicalizationAlgorithm")(canonicalizationAlgorithm.asInstanceOf[js.Any])
+    if (idAttribute != null) __obj.updateDynamic("idAttribute")(idAttribute.asInstanceOf[js.Any])
+    if (implicitTransforms != null) __obj.updateDynamic("implicitTransforms")(implicitTransforms.asInstanceOf[js.Any])
+    if (signatureAlgorithm != null) __obj.updateDynamic("signatureAlgorithm")(signatureAlgorithm.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CanonicalizationAlgorithm]
   }
 }

@@ -21,7 +21,7 @@ trait DarkMode extends js.Object {
 object DarkMode {
   @scala.inline
   def apply(isEnabled: Boolean, onChange: js.Function0[Unit] => js.Function0[Unit]): DarkMode = {
-    val __obj = js.Dynamic.literal(isEnabled = isEnabled, onChange = js.Any.fromFunction1(onChange))
+    val __obj = js.Dynamic.literal(isEnabled = isEnabled.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange))
   
     __obj.asInstanceOf[DarkMode]
   }

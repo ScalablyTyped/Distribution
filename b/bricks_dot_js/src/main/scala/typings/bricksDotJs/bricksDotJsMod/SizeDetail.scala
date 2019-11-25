@@ -13,8 +13,8 @@ trait SizeDetail extends js.Object {
 object SizeDetail {
   @scala.inline
   def apply(columns: Double, gutter: Double, mq: String = null): SizeDetail = {
-    val __obj = js.Dynamic.literal(columns = columns, gutter = gutter)
-    if (mq != null) __obj.updateDynamic("mq")(mq)
+    val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], gutter = gutter.asInstanceOf[js.Any])
+    if (mq != null) __obj.updateDynamic("mq")(mq.asInstanceOf[js.Any])
     __obj.asInstanceOf[SizeDetail]
   }
 }

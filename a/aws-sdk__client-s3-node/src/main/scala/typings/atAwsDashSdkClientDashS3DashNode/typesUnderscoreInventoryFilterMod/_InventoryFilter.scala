@@ -14,7 +14,7 @@ trait _InventoryFilter extends js.Object {
 object _InventoryFilter {
   @scala.inline
   def apply(Prefix: String): _InventoryFilter = {
-    val __obj = js.Dynamic.literal(Prefix = Prefix)
+    val __obj = js.Dynamic.literal(Prefix = Prefix.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_InventoryFilter]
   }

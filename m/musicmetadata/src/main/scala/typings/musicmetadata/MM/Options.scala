@@ -13,7 +13,7 @@ object Options {
   @scala.inline
   def apply(duration: js.UndefOr[Boolean] = js.undefined, fileSize: Int | Double = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration)
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (fileSize != null) __obj.updateDynamic("fileSize")(fileSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

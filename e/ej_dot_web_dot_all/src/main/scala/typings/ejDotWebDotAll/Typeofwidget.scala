@@ -26,7 +26,7 @@ object Typeofwidget {
     registeredInstances: js.Array[_],
     registeredWidgets: js.Array[_]
   ): Typeofwidget = {
-    val __obj = js.Dynamic.literal(autoInit = autoInit, destroyAll = js.Any.fromFunction1(destroyAll), init = js.Any.fromFunction1(init), register = js.Any.fromFunction3(register), registerInstance = js.Any.fromFunction4(registerInstance), registeredInstances = registeredInstances, registeredWidgets = registeredWidgets)
+    val __obj = js.Dynamic.literal(autoInit = autoInit.asInstanceOf[js.Any], destroyAll = js.Any.fromFunction1(destroyAll), init = js.Any.fromFunction1(init), register = js.Any.fromFunction3(register), registerInstance = js.Any.fromFunction4(registerInstance), registeredInstances = registeredInstances.asInstanceOf[js.Any], registeredWidgets = registeredWidgets.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Typeofwidget]
   }

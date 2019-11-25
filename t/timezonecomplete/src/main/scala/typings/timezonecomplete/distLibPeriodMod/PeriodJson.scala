@@ -22,7 +22,7 @@ trait PeriodJson extends js.Object {
 object PeriodJson {
   @scala.inline
   def apply(duration: String, periodDst: PeriodDstJson, reference: String): PeriodJson = {
-    val __obj = js.Dynamic.literal(duration = duration, periodDst = periodDst, reference = reference)
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], periodDst = periodDst.asInstanceOf[js.Any], reference = reference.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PeriodJson]
   }

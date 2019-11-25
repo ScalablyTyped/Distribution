@@ -22,11 +22,11 @@ object WalkerOptions {
     path: String = null
   ): WalkerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(follow)) __obj.updateDynamic("follow")(follow)
-    if (ignoreFiles != null) __obj.updateDynamic("ignoreFiles")(ignoreFiles)
-    if (!js.isUndefined(includeEmpty)) __obj.updateDynamic("includeEmpty")(includeEmpty)
+    if (!js.isUndefined(follow)) __obj.updateDynamic("follow")(follow.asInstanceOf[js.Any])
+    if (ignoreFiles != null) __obj.updateDynamic("ignoreFiles")(ignoreFiles.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeEmpty)) __obj.updateDynamic("includeEmpty")(includeEmpty.asInstanceOf[js.Any])
     if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[WalkerOptions]
   }
 }

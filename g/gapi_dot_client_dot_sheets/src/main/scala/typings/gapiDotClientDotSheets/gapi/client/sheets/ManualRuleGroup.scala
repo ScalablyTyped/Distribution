@@ -23,8 +23,8 @@ object ManualRuleGroup {
   @scala.inline
   def apply(groupName: ExtendedValue = null, items: js.Array[ExtendedValue] = null): ManualRuleGroup = {
     val __obj = js.Dynamic.literal()
-    if (groupName != null) __obj.updateDynamic("groupName")(groupName)
-    if (items != null) __obj.updateDynamic("items")(items)
+    if (groupName != null) __obj.updateDynamic("groupName")(groupName.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManualRuleGroup]
   }
 }

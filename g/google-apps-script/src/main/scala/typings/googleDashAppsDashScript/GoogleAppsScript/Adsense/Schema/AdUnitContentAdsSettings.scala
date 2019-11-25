@@ -18,9 +18,9 @@ object AdUnitContentAdsSettings {
     `type`: String = null
   ): AdUnitContentAdsSettings = {
     val __obj = js.Dynamic.literal()
-    if (backupOption != null) __obj.updateDynamic("backupOption")(backupOption)
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (backupOption != null) __obj.updateDynamic("backupOption")(backupOption.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdUnitContentAdsSettings]
   }
 }

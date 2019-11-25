@@ -51,13 +51,13 @@ object ITypeaheadOptions {
     watchOptions: js.UndefOr[Boolean] = js.undefined
   ): ITypeaheadOptions = {
     val __obj = js.Dynamic.literal()
-    if (animation != null) __obj.updateDynamic("animation")(animation)
-    if (!js.isUndefined(autoSelect)) __obj.updateDynamic("autoSelect")(autoSelect)
-    if (comparator != null) __obj.updateDynamic("comparator")(comparator)
+    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoSelect)) __obj.updateDynamic("autoSelect")(autoSelect.asInstanceOf[js.Any])
+    if (comparator != null) __obj.updateDynamic("comparator")(comparator.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
     if (onBeforeHide != null) __obj.updateDynamic("onBeforeHide")(js.Any.fromFunction1(onBeforeHide))
@@ -65,11 +65,11 @@ object ITypeaheadOptions {
     if (onHide != null) __obj.updateDynamic("onHide")(js.Any.fromFunction1(onHide))
     if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
     if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction1(onShow))
-    if (placement != null) __obj.updateDynamic("placement")(placement)
-    if (template != null) __obj.updateDynamic("template")(template)
-    if (trigger != null) __obj.updateDynamic("trigger")(trigger)
-    if (!js.isUndefined(trimValue)) __obj.updateDynamic("trimValue")(trimValue)
-    if (!js.isUndefined(watchOptions)) __obj.updateDynamic("watchOptions")(watchOptions)
+    if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
+    if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
+    if (!js.isUndefined(trimValue)) __obj.updateDynamic("trimValue")(trimValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(watchOptions)) __obj.updateDynamic("watchOptions")(watchOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITypeaheadOptions]
   }
 }

@@ -34,9 +34,9 @@ object launchOptions {
     url: String = null
   ): launchOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(launchOptionsLocationKey)) __obj.updateDynamic("launchOptionsLocationKey")(launchOptionsLocationKey)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (!js.isUndefined(launchOptionsLocationKey)) __obj.updateDynamic("launchOptionsLocationKey")(launchOptionsLocationKey.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[launchOptions]
   }
 }

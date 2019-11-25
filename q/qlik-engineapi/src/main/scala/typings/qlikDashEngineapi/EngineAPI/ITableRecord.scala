@@ -55,7 +55,7 @@ object ITableRecord {
     qNoOfRows: Double,
     qPos: IPoint
   ): ITableRecord = {
-    val __obj = js.Dynamic.literal(qComment = qComment, qFields = qFields, qIsDirectDiscovery = qIsDirectDiscovery, qIsSynthetic = qIsSynthetic, qLoose = qLoose, qName = qName, qNoOfRows = qNoOfRows, qPos = qPos)
+    val __obj = js.Dynamic.literal(qComment = qComment.asInstanceOf[js.Any], qFields = qFields.asInstanceOf[js.Any], qIsDirectDiscovery = qIsDirectDiscovery.asInstanceOf[js.Any], qIsSynthetic = qIsSynthetic.asInstanceOf[js.Any], qLoose = qLoose.asInstanceOf[js.Any], qName = qName.asInstanceOf[js.Any], qNoOfRows = qNoOfRows.asInstanceOf[js.Any], qPos = qPos.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ITableRecord]
   }

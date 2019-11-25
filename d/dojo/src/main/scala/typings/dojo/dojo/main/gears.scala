@@ -21,7 +21,7 @@ trait gears extends js.Object {
 object gears {
   @scala.inline
   def apply(available: js.Object): gears = {
-    val __obj = js.Dynamic.literal(available = available)
+    val __obj = js.Dynamic.literal(available = available.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[gears]
   }

@@ -21,9 +21,9 @@ object PipelineDescription {
     originalPipelineTransform: js.Array[TransformSummary] = null
   ): PipelineDescription = {
     val __obj = js.Dynamic.literal()
-    if (displayData != null) __obj.updateDynamic("displayData")(displayData)
-    if (executionPipelineStage != null) __obj.updateDynamic("executionPipelineStage")(executionPipelineStage)
-    if (originalPipelineTransform != null) __obj.updateDynamic("originalPipelineTransform")(originalPipelineTransform)
+    if (displayData != null) __obj.updateDynamic("displayData")(displayData.asInstanceOf[js.Any])
+    if (executionPipelineStage != null) __obj.updateDynamic("executionPipelineStage")(executionPipelineStage.asInstanceOf[js.Any])
+    if (originalPipelineTransform != null) __obj.updateDynamic("originalPipelineTransform")(originalPipelineTransform.asInstanceOf[js.Any])
     __obj.asInstanceOf[PipelineDescription]
   }
 }

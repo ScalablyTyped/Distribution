@@ -28,7 +28,7 @@ object Extension {
     onHandshake: (/* infoHash */ String, /* peerId */ String, /* extensions */ StringDictionary[Boolean]) => Unit = null,
     onMessage: /* buf */ Buffer => Unit = null
   ): Extension = {
-    val __obj = js.Dynamic.literal(name = name)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (onExtendedHandshake != null) __obj.updateDynamic("onExtendedHandshake")(js.Any.fromFunction1(onExtendedHandshake))
     if (onHandshake != null) __obj.updateDynamic("onHandshake")(js.Any.fromFunction3(onHandshake))
     if (onMessage != null) __obj.updateDynamic("onMessage")(js.Any.fromFunction1(onMessage))

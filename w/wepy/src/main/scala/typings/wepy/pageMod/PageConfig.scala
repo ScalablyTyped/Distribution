@@ -28,13 +28,13 @@ object PageConfig {
     onReachBottomDistance: Int | Double = null
   ): PageConfig = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
-    if (backgroundTextStyle != null) __obj.updateDynamic("backgroundTextStyle")(backgroundTextStyle)
-    if (!js.isUndefined(disableScroll)) __obj.updateDynamic("disableScroll")(disableScroll)
-    if (!js.isUndefined(enablePullDownRefresh)) __obj.updateDynamic("enablePullDownRefresh")(enablePullDownRefresh)
-    if (navigationBarBackgroundColor != null) __obj.updateDynamic("navigationBarBackgroundColor")(navigationBarBackgroundColor)
-    if (navigationBarTextStyle != null) __obj.updateDynamic("navigationBarTextStyle")(navigationBarTextStyle)
-    if (navigationBarTitleText != null) __obj.updateDynamic("navigationBarTitleText")(navigationBarTitleText)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (backgroundTextStyle != null) __obj.updateDynamic("backgroundTextStyle")(backgroundTextStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableScroll)) __obj.updateDynamic("disableScroll")(disableScroll.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePullDownRefresh)) __obj.updateDynamic("enablePullDownRefresh")(enablePullDownRefresh.asInstanceOf[js.Any])
+    if (navigationBarBackgroundColor != null) __obj.updateDynamic("navigationBarBackgroundColor")(navigationBarBackgroundColor.asInstanceOf[js.Any])
+    if (navigationBarTextStyle != null) __obj.updateDynamic("navigationBarTextStyle")(navigationBarTextStyle.asInstanceOf[js.Any])
+    if (navigationBarTitleText != null) __obj.updateDynamic("navigationBarTitleText")(navigationBarTitleText.asInstanceOf[js.Any])
     if (onReachBottomDistance != null) __obj.updateDynamic("onReachBottomDistance")(onReachBottomDistance.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageConfig]
   }

@@ -11,9 +11,9 @@ trait ShareOpenGraphDialogResponse extends DialogResponse {
 object ShareOpenGraphDialogResponse {
   @scala.inline
   def apply(post_id: String, error_code: Int | Double = null, error_message: String = null): ShareOpenGraphDialogResponse = {
-    val __obj = js.Dynamic.literal(post_id = post_id)
+    val __obj = js.Dynamic.literal(post_id = post_id.asInstanceOf[js.Any])
     if (error_code != null) __obj.updateDynamic("error_code")(error_code.asInstanceOf[js.Any])
-    if (error_message != null) __obj.updateDynamic("error_message")(error_message)
+    if (error_message != null) __obj.updateDynamic("error_message")(error_message.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShareOpenGraphDialogResponse]
   }
 }

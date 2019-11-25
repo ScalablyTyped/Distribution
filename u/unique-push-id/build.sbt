@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "unique-push-id"
-version := "1.0-dt-20190329Z-04b88e"
+version := "1.0-dt-20190329Z-e2f571"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

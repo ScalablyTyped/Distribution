@@ -14,7 +14,7 @@ trait Template extends js.Object {
 object Template {
   @scala.inline
   def apply(htmlToXlsx: Anon_HtmlEngine, recipe: `html-to-xlsx` | String): Template = {
-    val __obj = js.Dynamic.literal(htmlToXlsx = htmlToXlsx, recipe = recipe.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(htmlToXlsx = htmlToXlsx.asInstanceOf[js.Any], recipe = recipe.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Template]
   }

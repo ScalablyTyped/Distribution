@@ -22,7 +22,7 @@ trait IMonarchLanguageBracket extends js.Object {
 object IMonarchLanguageBracket {
   @scala.inline
   def apply(close: String, open: String, token: String): IMonarchLanguageBracket = {
-    val __obj = js.Dynamic.literal(close = close, open = open, token = token)
+    val __obj = js.Dynamic.literal(close = close.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IMonarchLanguageBracket]
   }

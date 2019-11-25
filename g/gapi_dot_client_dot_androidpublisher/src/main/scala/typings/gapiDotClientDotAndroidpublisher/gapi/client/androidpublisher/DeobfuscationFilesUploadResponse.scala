@@ -12,7 +12,7 @@ object DeobfuscationFilesUploadResponse {
   @scala.inline
   def apply(deobfuscationFile: DeobfuscationFile = null): DeobfuscationFilesUploadResponse = {
     val __obj = js.Dynamic.literal()
-    if (deobfuscationFile != null) __obj.updateDynamic("deobfuscationFile")(deobfuscationFile)
+    if (deobfuscationFile != null) __obj.updateDynamic("deobfuscationFile")(deobfuscationFile.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeobfuscationFilesUploadResponse]
   }
 }

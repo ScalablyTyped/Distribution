@@ -1,7 +1,6 @@
 package typings.asana.asanaMod.resources
 
 import typings.asana.asanaMod.resources.Sections.Type
-import typings.bluebird.bluebirdMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,12 +15,12 @@ trait Sections_ extends Resource {
     * @param {Object} [dispatchOptions] Options, if any, to pass the dispatcher for the request
     * @return {Promise} The requested resource
     */
-  def findById(section: String): ^[Type] = js.native
-  def findById(section: String, params: Params): ^[Type] = js.native
-  def findById(section: String, params: Params, dispatchOptions: js.Any): ^[Type] = js.native
-  def findById(section: Double): ^[Type] = js.native
-  def findById(section: Double, params: Params): ^[Type] = js.native
-  def findById(section: Double, params: Params, dispatchOptions: js.Any): ^[Type] = js.native
+  def findById(section: String): typings.bluebird.bluebirdMod.^[Type] = js.native
+  def findById(section: String, params: Params): typings.bluebird.bluebirdMod.^[Type] = js.native
+  def findById(section: String, params: Params, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[Type] = js.native
+  def findById(section: Double): typings.bluebird.bluebirdMod.^[Type] = js.native
+  def findById(section: Double, params: Params): typings.bluebird.bluebirdMod.^[Type] = js.native
+  def findById(section: Double, params: Params, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[Type] = js.native
   /**
     * Returns the compact records for all sections in the specified project.
     * @param {String} project The project to get sections from.
@@ -29,11 +28,11 @@ trait Sections_ extends Resource {
     * @param {Object} [dispatchOptions] Options, if any, to pass the dispatcher for the request
     * @return {Promise} The response from the API
     */
-  def findByProject(project: String): ^[js.Array[Type]] = js.native
-  def findByProject(project: String, params: Params): ^[js.Array[Type]] = js.native
-  def findByProject(project: String, params: Params, dispatchOptions: js.Any): ^[js.Array[Type]] = js.native
-  def findByProject(project: Double): ^[js.Array[Type]] = js.native
-  def findByProject(project: Double, params: Params): ^[js.Array[Type]] = js.native
-  def findByProject(project: Double, params: Params, dispatchOptions: js.Any): ^[js.Array[Type]] = js.native
+  def findByProject(project: String): typings.bluebird.bluebirdMod.^[js.Array[Type]] = js.native
+  def findByProject(project: String, params: Params): typings.bluebird.bluebirdMod.^[js.Array[Type]] = js.native
+  def findByProject(project: String, params: Params, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[js.Array[Type]] = js.native
+  def findByProject(project: Double): typings.bluebird.bluebirdMod.^[js.Array[Type]] = js.native
+  def findByProject(project: Double, params: Params): typings.bluebird.bluebirdMod.^[js.Array[Type]] = js.native
+  def findByProject(project: Double, params: Params, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[js.Array[Type]] = js.native
 }
 

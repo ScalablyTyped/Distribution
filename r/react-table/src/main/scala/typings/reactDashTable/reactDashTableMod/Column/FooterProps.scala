@@ -41,7 +41,7 @@ object FooterProps {
     getFooterProps: /* value */ js.UndefOr[js.Any] => Unit,
     Footer: TableCellRenderer = null
   ): FooterProps = {
-    val __obj = js.Dynamic.literal(footerClassName = footerClassName, footerStyle = footerStyle, getFooterProps = js.Any.fromFunction1(getFooterProps))
+    val __obj = js.Dynamic.literal(footerClassName = footerClassName.asInstanceOf[js.Any], footerStyle = footerStyle.asInstanceOf[js.Any], getFooterProps = js.Any.fromFunction1(getFooterProps))
     if (Footer != null) __obj.updateDynamic("Footer")(Footer.asInstanceOf[js.Any])
     __obj.asInstanceOf[FooterProps]
   }

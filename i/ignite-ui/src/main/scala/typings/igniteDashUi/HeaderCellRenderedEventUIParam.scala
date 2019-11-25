@@ -24,9 +24,9 @@ object HeaderCellRenderedEventUIParam {
   @scala.inline
   def apply(columnKey: String = null, owner: js.Any = null, th: Element = null): HeaderCellRenderedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (th != null) __obj.updateDynamic("th")(th)
+    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (th != null) __obj.updateDynamic("th")(th.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeaderCellRenderedEventUIParam]
   }
 }

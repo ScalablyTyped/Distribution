@@ -30,14 +30,14 @@ object RuntimeOptions {
     partials: StringDictionary[HandlebarsTemplateDelegate[_]] = null
   ): RuntimeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowCallsToHelperMissing)) __obj.updateDynamic("allowCallsToHelperMissing")(allowCallsToHelperMissing)
-    if (blockParams != null) __obj.updateDynamic("blockParams")(blockParams)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (decorators != null) __obj.updateDynamic("decorators")(decorators)
-    if (depths != null) __obj.updateDynamic("depths")(depths)
-    if (helpers != null) __obj.updateDynamic("helpers")(helpers)
-    if (!js.isUndefined(partial)) __obj.updateDynamic("partial")(partial)
-    if (partials != null) __obj.updateDynamic("partials")(partials)
+    if (!js.isUndefined(allowCallsToHelperMissing)) __obj.updateDynamic("allowCallsToHelperMissing")(allowCallsToHelperMissing.asInstanceOf[js.Any])
+    if (blockParams != null) __obj.updateDynamic("blockParams")(blockParams.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (decorators != null) __obj.updateDynamic("decorators")(decorators.asInstanceOf[js.Any])
+    if (depths != null) __obj.updateDynamic("depths")(depths.asInstanceOf[js.Any])
+    if (helpers != null) __obj.updateDynamic("helpers")(helpers.asInstanceOf[js.Any])
+    if (!js.isUndefined(partial)) __obj.updateDynamic("partial")(partial.asInstanceOf[js.Any])
+    if (partials != null) __obj.updateDynamic("partials")(partials.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuntimeOptions]
   }
 }

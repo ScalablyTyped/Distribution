@@ -2,7 +2,7 @@ package typings.envDashCi.envDashCiMod
 
 import typings.envDashCi.envDashCiNumbers.`true`
 import typings.envDashCi.envDashCiStrings.Jenkins
-import typings.envDashCi.envDashCiStrings.jenkins
+import typings.envDashCi.envDashCiStrings.jenkins_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ trait JenkinsEnv
   var pr: js.UndefOr[String] = js.undefined
   var prBranch: js.UndefOr[String] = js.undefined
   var root: String
-  var service: jenkins
+  var service: jenkins_
 }
 
 object JenkinsEnv {
@@ -33,13 +33,13 @@ object JenkinsEnv {
     isPr: Boolean,
     name: Jenkins,
     root: String,
-    service: jenkins,
+    service: jenkins_,
     pr: String = null,
     prBranch: String = null
   ): JenkinsEnv = {
-    val __obj = js.Dynamic.literal(branch = branch, build = build, buildUrl = buildUrl, commit = commit, isCi = isCi, isPr = isPr, name = name, root = root, service = service)
-    if (pr != null) __obj.updateDynamic("pr")(pr)
-    if (prBranch != null) __obj.updateDynamic("prBranch")(prBranch)
+    val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], buildUrl = buildUrl.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = isCi.asInstanceOf[js.Any], isPr = isPr.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any])
+    if (pr != null) __obj.updateDynamic("pr")(pr.asInstanceOf[js.Any])
+    if (prBranch != null) __obj.updateDynamic("prBranch")(prBranch.asInstanceOf[js.Any])
     __obj.asInstanceOf[JenkinsEnv]
   }
 }

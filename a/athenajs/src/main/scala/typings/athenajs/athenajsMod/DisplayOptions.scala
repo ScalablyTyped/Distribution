@@ -15,9 +15,9 @@ trait DisplayOptions extends js.Object {
 object DisplayOptions {
   @scala.inline
   def apply(height: Double, name: String, `type`: String, width: Double, layers: js.Array[Boolean] = null): DisplayOptions = {
-    val __obj = js.Dynamic.literal(height = height, name = name, width = width)
-    __obj.updateDynamic("type")(`type`)
-    if (layers != null) __obj.updateDynamic("layers")(layers)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisplayOptions]
   }
 }

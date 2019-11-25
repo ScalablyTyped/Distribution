@@ -14,8 +14,8 @@ object Anon_Dynamodb {
   @scala.inline
   def apply(dynamodb: DynamoDB = null, tableName: String = null): Anon_Dynamodb = {
     val __obj = js.Dynamic.literal()
-    if (dynamodb != null) __obj.updateDynamic("dynamodb")(dynamodb)
-    if (tableName != null) __obj.updateDynamic("tableName")(tableName)
+    if (dynamodb != null) __obj.updateDynamic("dynamodb")(dynamodb.asInstanceOf[js.Any])
+    if (tableName != null) __obj.updateDynamic("tableName")(tableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Dynamodb]
   }
 }

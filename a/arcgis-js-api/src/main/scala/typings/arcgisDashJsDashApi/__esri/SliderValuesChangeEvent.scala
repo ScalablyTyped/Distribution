@@ -14,8 +14,8 @@ trait SliderValuesChangeEvent extends js.Object {
 object SliderValuesChangeEvent {
   @scala.inline
   def apply(indices: js.Array[Double], oldValues: js.Array[Double], `type`: String, values: js.Array[Double]): SliderValuesChangeEvent = {
-    val __obj = js.Dynamic.literal(indices = indices, oldValues = oldValues, values = values)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(indices = indices.asInstanceOf[js.Any], oldValues = oldValues.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SliderValuesChangeEvent]
   }
 }

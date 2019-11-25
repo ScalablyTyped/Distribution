@@ -22,22 +22,18 @@ object PagerItemProps {
   def apply(
     AllHTMLAttributes: AllHTMLAttributes[PagerItem] = null,
     ClassAttributes: ClassAttributes[PagerItem] = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
     eventKey: js.Any = null,
     next: js.UndefOr[Boolean] = js.undefined,
     onSelect: SelectCallback = null,
-    previous: js.UndefOr[Boolean] = js.undefined,
-    target: String = null
+    previous: js.UndefOr[Boolean] = js.undefined
   ): PagerItemProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (eventKey != null) __obj.updateDynamic("eventKey")(eventKey)
-    if (!js.isUndefined(next)) __obj.updateDynamic("next")(next)
-    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
-    if (!js.isUndefined(previous)) __obj.updateDynamic("previous")(previous)
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (eventKey != null) __obj.updateDynamic("eventKey")(eventKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(next)) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
+    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect.asInstanceOf[js.Any])
+    if (!js.isUndefined(previous)) __obj.updateDynamic("previous")(previous.asInstanceOf[js.Any])
     __obj.asInstanceOf[PagerItemProps]
   }
 }

@@ -34,10 +34,10 @@ object Anon_DidSave {
     willSaveWaitUntil: js.UndefOr[Boolean] = js.undefined
   ): Anon_DidSave = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(didSave)) __obj.updateDynamic("didSave")(didSave)
-    if (!js.isUndefined(dynamicRegistration)) __obj.updateDynamic("dynamicRegistration")(dynamicRegistration)
-    if (!js.isUndefined(willSave)) __obj.updateDynamic("willSave")(willSave)
-    if (!js.isUndefined(willSaveWaitUntil)) __obj.updateDynamic("willSaveWaitUntil")(willSaveWaitUntil)
+    if (!js.isUndefined(didSave)) __obj.updateDynamic("didSave")(didSave.asInstanceOf[js.Any])
+    if (!js.isUndefined(dynamicRegistration)) __obj.updateDynamic("dynamicRegistration")(dynamicRegistration.asInstanceOf[js.Any])
+    if (!js.isUndefined(willSave)) __obj.updateDynamic("willSave")(willSave.asInstanceOf[js.Any])
+    if (!js.isUndefined(willSaveWaitUntil)) __obj.updateDynamic("willSaveWaitUntil")(willSaveWaitUntil.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DidSave]
   }
 }

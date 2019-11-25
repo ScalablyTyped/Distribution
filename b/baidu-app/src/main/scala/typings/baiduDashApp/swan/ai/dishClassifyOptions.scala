@@ -31,7 +31,7 @@ object dishClassifyOptions {
     success: /* res */ dishClassifyResponse => Unit = null,
     top_num: Int | Double = null
   ): dishClassifyOptions = {
-    val __obj = js.Dynamic.literal(image = image)
+    val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (filter_threshold != null) __obj.updateDynamic("filter_threshold")(filter_threshold.asInstanceOf[js.Any])

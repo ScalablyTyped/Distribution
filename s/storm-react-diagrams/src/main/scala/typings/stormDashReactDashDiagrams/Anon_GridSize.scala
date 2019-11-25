@@ -25,7 +25,7 @@ object Anon_GridSize {
     offsetY: Double,
     zoom: Double
   ): Anon_GridSize = {
-    val __obj = js.Dynamic.literal(gridSize = gridSize, id = id, links = links, nodes = nodes, offsetX = offsetX, offsetY = offsetY, zoom = zoom)
+    val __obj = js.Dynamic.literal(gridSize = gridSize.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_GridSize]
   }

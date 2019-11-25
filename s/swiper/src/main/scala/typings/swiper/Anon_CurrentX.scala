@@ -15,7 +15,7 @@ trait Anon_CurrentX extends js.Object {
 object Anon_CurrentX {
   @scala.inline
   def apply(currentX: Double, currentY: Double, diff: Double, startX: Double, startY: Double): Anon_CurrentX = {
-    val __obj = js.Dynamic.literal(currentX = currentX, currentY = currentY, diff = diff, startX = startX, startY = startY)
+    val __obj = js.Dynamic.literal(currentX = currentX.asInstanceOf[js.Any], currentY = currentY.asInstanceOf[js.Any], diff = diff.asInstanceOf[js.Any], startX = startX.asInstanceOf[js.Any], startY = startY.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CurrentX]
   }

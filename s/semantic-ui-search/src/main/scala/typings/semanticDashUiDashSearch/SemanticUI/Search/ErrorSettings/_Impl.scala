@@ -46,7 +46,7 @@ object _Impl {
     serverError: String,
     source: String
   ): _Impl = {
-    val __obj = js.Dynamic.literal(logging = logging, maxResults = maxResults, method = method, noResults = noResults, noTemplate = noTemplate, serverError = serverError, source = source)
+    val __obj = js.Dynamic.literal(logging = logging.asInstanceOf[js.Any], maxResults = maxResults.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], noResults = noResults.asInstanceOf[js.Any], noTemplate = noTemplate.asInstanceOf[js.Any], serverError = serverError.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_Impl]
   }

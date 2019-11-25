@@ -37,11 +37,11 @@ object CardMediaTheme {
     wide: String = null
   ): CardMediaTheme = {
     val __obj = js.Dynamic.literal()
-    if (cardMedia != null) __obj.updateDynamic("cardMedia")(cardMedia)
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (contentOverlay != null) __obj.updateDynamic("contentOverlay")(contentOverlay)
-    if (square != null) __obj.updateDynamic("square")(square)
-    if (wide != null) __obj.updateDynamic("wide")(wide)
+    if (cardMedia != null) __obj.updateDynamic("cardMedia")(cardMedia.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (contentOverlay != null) __obj.updateDynamic("contentOverlay")(contentOverlay.asInstanceOf[js.Any])
+    if (square != null) __obj.updateDynamic("square")(square.asInstanceOf[js.Any])
+    if (wide != null) __obj.updateDynamic("wide")(wide.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardMediaTheme]
   }
 }

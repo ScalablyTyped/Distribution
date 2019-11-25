@@ -21,8 +21,8 @@ object _OutputSerialization {
   @scala.inline
   def apply(CSV: _CSVOutput = null, JSON: _JSONOutput = null): _OutputSerialization = {
     val __obj = js.Dynamic.literal()
-    if (CSV != null) __obj.updateDynamic("CSV")(CSV)
-    if (JSON != null) __obj.updateDynamic("JSON")(JSON)
+    if (CSV != null) __obj.updateDynamic("CSV")(CSV.asInstanceOf[js.Any])
+    if (JSON != null) __obj.updateDynamic("JSON")(JSON.asInstanceOf[js.Any])
     __obj.asInstanceOf[_OutputSerialization]
   }
 }

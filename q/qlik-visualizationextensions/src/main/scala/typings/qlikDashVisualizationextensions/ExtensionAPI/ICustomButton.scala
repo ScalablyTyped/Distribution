@@ -13,8 +13,8 @@ trait ICustomButton extends ICustomControl {
 object ICustomButton {
   @scala.inline
   def apply(action: valueOrfunc[Unit], component: button, label: String, ref: String, `type`: String): ICustomButton = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], component = component, label = label, ref = ref)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], component = component.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICustomButton]
   }
 }

@@ -15,7 +15,7 @@ trait Alert_ extends js.Object {
 object Alert_ {
   @scala.inline
   def apply(description: Description, level: Level): Alert_ = {
-    val __obj = js.Dynamic.literal(description = description, level = level)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Alert_]
   }

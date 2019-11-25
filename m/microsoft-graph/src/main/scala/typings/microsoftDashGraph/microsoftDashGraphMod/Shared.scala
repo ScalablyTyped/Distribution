@@ -24,10 +24,10 @@ object Shared {
     sharedDateTime: String = null
   ): Shared = {
     val __obj = js.Dynamic.literal()
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
-    if (sharedBy != null) __obj.updateDynamic("sharedBy")(sharedBy)
-    if (sharedDateTime != null) __obj.updateDynamic("sharedDateTime")(sharedDateTime)
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (sharedBy != null) __obj.updateDynamic("sharedBy")(sharedBy.asInstanceOf[js.Any])
+    if (sharedDateTime != null) __obj.updateDynamic("sharedDateTime")(sharedDateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[Shared]
   }
 }

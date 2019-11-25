@@ -23,11 +23,11 @@ object CreateParams {
     public: js.UndefOr[Boolean] = js.undefined,
     team: Int | Double = null
   ): CreateParams = {
-    val __obj = js.Dynamic.literal(due_date = due_date)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (notes != null) __obj.updateDynamic("notes")(notes)
-    if (!js.isUndefined(public)) __obj.updateDynamic("public")(public)
+    val __obj = js.Dynamic.literal(due_date = due_date.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
+    if (!js.isUndefined(public)) __obj.updateDynamic("public")(public.asInstanceOf[js.Any])
     if (team != null) __obj.updateDynamic("team")(team.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateParams]
   }

@@ -34,8 +34,8 @@ object Anon_AddColorStop {
     y: Y,
     y2: Y2
   ): Anon_AddColorStop = {
-    val __obj = js.Dynamic.literal(addColorStop = js.Any.fromFunction2(addColorStop), colorStops = colorStops, globalCoord = globalCoord, x = x, x2 = x2, y = y, y2 = y2)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(addColorStop = js.Any.fromFunction2(addColorStop), colorStops = colorStops.asInstanceOf[js.Any], globalCoord = globalCoord.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], x2 = x2.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], y2 = y2.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AddColorStop]
   }
 }

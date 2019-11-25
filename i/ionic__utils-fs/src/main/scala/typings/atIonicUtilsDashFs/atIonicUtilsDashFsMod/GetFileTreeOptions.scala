@@ -41,7 +41,7 @@ object GetFileTreeOptions {
     if (onDirectoryNode != null) __obj.updateDynamic("onDirectoryNode")(js.Any.fromFunction1(onDirectoryNode))
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     if (onFileNode != null) __obj.updateDynamic("onFileNode")(js.Any.fromFunction1(onFileNode))
-    if (walkerOptions != null) __obj.updateDynamic("walkerOptions")(walkerOptions)
+    if (walkerOptions != null) __obj.updateDynamic("walkerOptions")(walkerOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFileTreeOptions[RE, DE]]
   }
 }

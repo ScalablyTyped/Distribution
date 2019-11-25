@@ -32,8 +32,8 @@ object ThumbDragMoveEventUIParam {
     stepY: Int | Double = null
   ): ThumbDragMoveEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     if (stepX != null) __obj.updateDynamic("stepX")(stepX.asInstanceOf[js.Any])
     if (stepY != null) __obj.updateDynamic("stepY")(stepY.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThumbDragMoveEventUIParam]

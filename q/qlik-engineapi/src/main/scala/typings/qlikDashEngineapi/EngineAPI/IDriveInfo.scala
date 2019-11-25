@@ -33,7 +33,7 @@ trait IDriveInfo extends js.Object {
 object IDriveInfo {
   @scala.inline
   def apply(qDrive: String, qName: String, qType: String, qTypeIdentifier: DriveType): IDriveInfo = {
-    val __obj = js.Dynamic.literal(qDrive = qDrive, qName = qName, qType = qType, qTypeIdentifier = qTypeIdentifier)
+    val __obj = js.Dynamic.literal(qDrive = qDrive.asInstanceOf[js.Any], qName = qName.asInstanceOf[js.Any], qType = qType.asInstanceOf[js.Any], qTypeIdentifier = qTypeIdentifier.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IDriveInfo]
   }

@@ -19,9 +19,9 @@ object SessionReferOptions {
     replaces: RTCSession = null
   ): SessionReferOptions = {
     val __obj = js.Dynamic.literal()
-    if (eventHandlers != null) __obj.updateDynamic("eventHandlers")(eventHandlers)
-    if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders)
-    if (replaces != null) __obj.updateDynamic("replaces")(replaces)
+    if (eventHandlers != null) __obj.updateDynamic("eventHandlers")(eventHandlers.asInstanceOf[js.Any])
+    if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders.asInstanceOf[js.Any])
+    if (replaces != null) __obj.updateDynamic("replaces")(replaces.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionReferOptions]
   }
 }

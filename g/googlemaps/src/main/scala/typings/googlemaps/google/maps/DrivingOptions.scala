@@ -13,8 +13,8 @@ trait DrivingOptions extends js.Object {
 object DrivingOptions {
   @scala.inline
   def apply(departureTime: Date, trafficModel: TrafficModel = null): DrivingOptions = {
-    val __obj = js.Dynamic.literal(departureTime = departureTime)
-    if (trafficModel != null) __obj.updateDynamic("trafficModel")(trafficModel)
+    val __obj = js.Dynamic.literal(departureTime = departureTime.asInstanceOf[js.Any])
+    if (trafficModel != null) __obj.updateDynamic("trafficModel")(trafficModel.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrivingOptions]
   }
 }

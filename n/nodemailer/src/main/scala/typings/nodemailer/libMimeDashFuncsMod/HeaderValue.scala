@@ -13,8 +13,8 @@ trait HeaderValue extends js.Object {
 object HeaderValue {
   @scala.inline
   def apply(value: String, params: StringDictionary[String] = null): HeaderValue = {
-    val __obj = js.Dynamic.literal(value = value)
-    if (params != null) __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeaderValue]
   }
 }

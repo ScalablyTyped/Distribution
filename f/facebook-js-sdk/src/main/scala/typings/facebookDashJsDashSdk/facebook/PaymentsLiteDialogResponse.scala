@@ -27,10 +27,10 @@ object PaymentsLiteDialogResponse {
     error_code: Int | Double = null,
     error_message: String = null
   ): PaymentsLiteDialogResponse = {
-    val __obj = js.Dynamic.literal(app_id = app_id, payment_id = payment_id, product_id = product_id, purchase_time = purchase_time, purchase_token = purchase_token, signed_request = signed_request)
-    if (developer_payload != null) __obj.updateDynamic("developer_payload")(developer_payload)
+    val __obj = js.Dynamic.literal(app_id = app_id.asInstanceOf[js.Any], payment_id = payment_id.asInstanceOf[js.Any], product_id = product_id.asInstanceOf[js.Any], purchase_time = purchase_time.asInstanceOf[js.Any], purchase_token = purchase_token.asInstanceOf[js.Any], signed_request = signed_request.asInstanceOf[js.Any])
+    if (developer_payload != null) __obj.updateDynamic("developer_payload")(developer_payload.asInstanceOf[js.Any])
     if (error_code != null) __obj.updateDynamic("error_code")(error_code.asInstanceOf[js.Any])
-    if (error_message != null) __obj.updateDynamic("error_message")(error_message)
+    if (error_message != null) __obj.updateDynamic("error_message")(error_message.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentsLiteDialogResponse]
   }
 }

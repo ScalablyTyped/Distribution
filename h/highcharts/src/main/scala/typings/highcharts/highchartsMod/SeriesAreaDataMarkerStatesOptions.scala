@@ -33,10 +33,10 @@ object SeriesAreaDataMarkerStatesOptions {
     select: SeriesAreaDataMarkerStatesSelectOptions = null
   ): SeriesAreaDataMarkerStatesOptions = {
     val __obj = js.Dynamic.literal()
-    if (hover != null) __obj.updateDynamic("hover")(hover)
-    if (inactive != null) __obj.updateDynamic("inactive")(inactive)
-    if (normal != null) __obj.updateDynamic("normal")(normal)
-    if (select != null) __obj.updateDynamic("select")(select)
+    if (hover != null) __obj.updateDynamic("hover")(hover.asInstanceOf[js.Any])
+    if (inactive != null) __obj.updateDynamic("inactive")(inactive.asInstanceOf[js.Any])
+    if (normal != null) __obj.updateDynamic("normal")(normal.asInstanceOf[js.Any])
+    if (select != null) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesAreaDataMarkerStatesOptions]
   }
 }

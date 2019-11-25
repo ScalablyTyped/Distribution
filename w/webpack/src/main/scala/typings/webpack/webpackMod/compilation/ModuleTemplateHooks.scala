@@ -23,8 +23,8 @@ object ModuleTemplateHooks {
     `package`: SyncWaterfallHook[_, _, _],
     render: SyncWaterfallHook[_, _, _]
   ): ModuleTemplateHooks = {
-    val __obj = js.Dynamic.literal(content = content, hash = hash, module = module, render = render)
-    __obj.updateDynamic("package")(`package`)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], module = module.asInstanceOf[js.Any], render = render.asInstanceOf[js.Any])
+    __obj.updateDynamic("package")(`package`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModuleTemplateHooks]
   }
 }

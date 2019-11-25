@@ -14,8 +14,8 @@ trait ListStart extends Token {
 object ListStart {
   @scala.inline
   def apply(ordered: Boolean, `type`: list_start): ListStart = {
-    val __obj = js.Dynamic.literal(ordered = ordered)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(ordered = ordered.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListStart]
   }
 }

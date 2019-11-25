@@ -37,11 +37,11 @@ object _InventoryRetrievalJobDescription {
     StartDate: String = null
   ): _InventoryRetrievalJobDescription = {
     val __obj = js.Dynamic.literal()
-    if (EndDate != null) __obj.updateDynamic("EndDate")(EndDate)
-    if (Format != null) __obj.updateDynamic("Format")(Format)
-    if (Limit != null) __obj.updateDynamic("Limit")(Limit)
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker)
-    if (StartDate != null) __obj.updateDynamic("StartDate")(StartDate)
+    if (EndDate != null) __obj.updateDynamic("EndDate")(EndDate.asInstanceOf[js.Any])
+    if (Format != null) __obj.updateDynamic("Format")(Format.asInstanceOf[js.Any])
+    if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
+    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
+    if (StartDate != null) __obj.updateDynamic("StartDate")(StartDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[_InventoryRetrievalJobDescription]
   }
 }

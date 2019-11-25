@@ -14,8 +14,8 @@ trait StandaloneFormatSpec extends js.Object {
 object StandaloneFormatSpec {
   @scala.inline
   def apply(format: js.Array[String], standalone: js.Array[String], isFormat: RegExp = null): StandaloneFormatSpec = {
-    val __obj = js.Dynamic.literal(format = format, standalone = standalone)
-    if (isFormat != null) __obj.updateDynamic("isFormat")(isFormat)
+    val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], standalone = standalone.asInstanceOf[js.Any])
+    if (isFormat != null) __obj.updateDynamic("isFormat")(isFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[StandaloneFormatSpec]
   }
 }

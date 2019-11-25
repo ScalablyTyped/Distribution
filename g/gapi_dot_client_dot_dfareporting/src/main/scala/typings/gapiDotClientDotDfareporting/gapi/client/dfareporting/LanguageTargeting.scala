@@ -16,7 +16,7 @@ object LanguageTargeting {
   @scala.inline
   def apply(languages: js.Array[Language] = null): LanguageTargeting = {
     val __obj = js.Dynamic.literal()
-    if (languages != null) __obj.updateDynamic("languages")(languages)
+    if (languages != null) __obj.updateDynamic("languages")(languages.asInstanceOf[js.Any])
     __obj.asInstanceOf[LanguageTargeting]
   }
 }

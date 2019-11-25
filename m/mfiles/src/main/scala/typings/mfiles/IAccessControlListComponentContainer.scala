@@ -19,7 +19,7 @@ object IAccessControlListComponentContainer {
     GetKeys: () => IAccessControlListComponentKeys,
     HasKey: IAccessControlListComponentKey => Boolean
   ): IAccessControlListComponentContainer = {
-    val __obj = js.Dynamic.literal(At = js.Any.fromFunction1(At), Count = Count, GetKeys = js.Any.fromFunction0(GetKeys), HasKey = js.Any.fromFunction1(HasKey))
+    val __obj = js.Dynamic.literal(At = js.Any.fromFunction1(At), Count = Count.asInstanceOf[js.Any], GetKeys = js.Any.fromFunction0(GetKeys), HasKey = js.Any.fromFunction1(HasKey))
   
     __obj.asInstanceOf[IAccessControlListComponentContainer]
   }

@@ -11,7 +11,7 @@ trait Anon_SubmitForSettlement extends js.Object {
 object Anon_SubmitForSettlement {
   @scala.inline
   def apply(submitForSettlement: Boolean): Anon_SubmitForSettlement = {
-    val __obj = js.Dynamic.literal(submitForSettlement = submitForSettlement)
+    val __obj = js.Dynamic.literal(submitForSettlement = submitForSettlement.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_SubmitForSettlement]
   }

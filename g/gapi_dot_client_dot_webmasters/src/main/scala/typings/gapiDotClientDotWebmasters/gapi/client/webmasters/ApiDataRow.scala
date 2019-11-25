@@ -25,7 +25,7 @@ object ApiDataRow {
     if (clicks != null) __obj.updateDynamic("clicks")(clicks.asInstanceOf[js.Any])
     if (ctr != null) __obj.updateDynamic("ctr")(ctr.asInstanceOf[js.Any])
     if (impressions != null) __obj.updateDynamic("impressions")(impressions.asInstanceOf[js.Any])
-    if (keys != null) __obj.updateDynamic("keys")(keys)
+    if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApiDataRow]
   }

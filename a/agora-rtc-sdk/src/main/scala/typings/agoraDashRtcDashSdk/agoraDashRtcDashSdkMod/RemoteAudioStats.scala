@@ -58,15 +58,15 @@ object RemoteAudioStats {
     TransportDelay: String = null
   ): RemoteAudioStats = {
     val __obj = js.Dynamic.literal()
-    if (CodecType != null) __obj.updateDynamic("CodecType")(CodecType)
-    if (End2EndDelay != null) __obj.updateDynamic("End2EndDelay")(End2EndDelay)
-    if (MuteState != null) __obj.updateDynamic("MuteState")(MuteState)
-    if (PacketLossRate != null) __obj.updateDynamic("PacketLossRate")(PacketLossRate)
-    if (RecvBitrate != null) __obj.updateDynamic("RecvBitrate")(RecvBitrate)
-    if (RecvLevel != null) __obj.updateDynamic("RecvLevel")(RecvLevel)
-    if (TotalFreezeTime != null) __obj.updateDynamic("TotalFreezeTime")(TotalFreezeTime)
-    if (TotalPlayDuration != null) __obj.updateDynamic("TotalPlayDuration")(TotalPlayDuration)
-    if (TransportDelay != null) __obj.updateDynamic("TransportDelay")(TransportDelay)
+    if (CodecType != null) __obj.updateDynamic("CodecType")(CodecType.asInstanceOf[js.Any])
+    if (End2EndDelay != null) __obj.updateDynamic("End2EndDelay")(End2EndDelay.asInstanceOf[js.Any])
+    if (MuteState != null) __obj.updateDynamic("MuteState")(MuteState.asInstanceOf[js.Any])
+    if (PacketLossRate != null) __obj.updateDynamic("PacketLossRate")(PacketLossRate.asInstanceOf[js.Any])
+    if (RecvBitrate != null) __obj.updateDynamic("RecvBitrate")(RecvBitrate.asInstanceOf[js.Any])
+    if (RecvLevel != null) __obj.updateDynamic("RecvLevel")(RecvLevel.asInstanceOf[js.Any])
+    if (TotalFreezeTime != null) __obj.updateDynamic("TotalFreezeTime")(TotalFreezeTime.asInstanceOf[js.Any])
+    if (TotalPlayDuration != null) __obj.updateDynamic("TotalPlayDuration")(TotalPlayDuration.asInstanceOf[js.Any])
+    if (TransportDelay != null) __obj.updateDynamic("TransportDelay")(TransportDelay.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteAudioStats]
   }
 }

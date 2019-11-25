@@ -32,16 +32,16 @@ object GridPageable {
     refresh: js.UndefOr[Boolean] = js.undefined
   ): GridPageable = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alwaysVisible)) __obj.updateDynamic("alwaysVisible")(alwaysVisible)
+    if (!js.isUndefined(alwaysVisible)) __obj.updateDynamic("alwaysVisible")(alwaysVisible.asInstanceOf[js.Any])
     if (buttonCount != null) __obj.updateDynamic("buttonCount")(buttonCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(info)) __obj.updateDynamic("info")(info)
-    if (!js.isUndefined(input)) __obj.updateDynamic("input")(input)
-    if (messages != null) __obj.updateDynamic("messages")(messages)
-    if (!js.isUndefined(numeric)) __obj.updateDynamic("numeric")(numeric)
+    if (!js.isUndefined(info)) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
+    if (!js.isUndefined(input)) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
+    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
+    if (!js.isUndefined(numeric)) __obj.updateDynamic("numeric")(numeric.asInstanceOf[js.Any])
     if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
     if (pageSizes != null) __obj.updateDynamic("pageSizes")(pageSizes.asInstanceOf[js.Any])
-    if (!js.isUndefined(previousNext)) __obj.updateDynamic("previousNext")(previousNext)
-    if (!js.isUndefined(refresh)) __obj.updateDynamic("refresh")(refresh)
+    if (!js.isUndefined(previousNext)) __obj.updateDynamic("previousNext")(previousNext.asInstanceOf[js.Any])
+    if (!js.isUndefined(refresh)) __obj.updateDynamic("refresh")(refresh.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridPageable]
   }
 }

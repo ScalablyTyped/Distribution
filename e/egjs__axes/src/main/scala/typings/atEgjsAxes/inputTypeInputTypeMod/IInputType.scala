@@ -32,10 +32,10 @@ object IInputType {
     hammer: js.Any = null,
     isEnable: () => Boolean = null
   ): IInputType = {
-    val __obj = js.Dynamic.literal(axes = axes, connect = js.Any.fromFunction1(connect), destroy = js.Any.fromFunction0(destroy), disconnect = js.Any.fromFunction0(disconnect), element = element, mapAxes = js.Any.fromFunction1(mapAxes))
+    val __obj = js.Dynamic.literal(axes = axes.asInstanceOf[js.Any], connect = js.Any.fromFunction1(connect), destroy = js.Any.fromFunction0(destroy), disconnect = js.Any.fromFunction0(disconnect), element = element.asInstanceOf[js.Any], mapAxes = js.Any.fromFunction1(mapAxes))
     if (disable != null) __obj.updateDynamic("disable")(js.Any.fromFunction0(disable))
     if (enable != null) __obj.updateDynamic("enable")(js.Any.fromFunction0(enable))
-    if (hammer != null) __obj.updateDynamic("hammer")(hammer)
+    if (hammer != null) __obj.updateDynamic("hammer")(hammer.asInstanceOf[js.Any])
     if (isEnable != null) __obj.updateDynamic("isEnable")(js.Any.fromFunction0(isEnable))
     __obj.asInstanceOf[IInputType]
   }

@@ -31,10 +31,10 @@ object RecentNotebook {
     sourceService: OnenoteSourceService = null
   ): RecentNotebook = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (lastAccessedTime != null) __obj.updateDynamic("lastAccessedTime")(lastAccessedTime)
-    if (links != null) __obj.updateDynamic("links")(links)
-    if (sourceService != null) __obj.updateDynamic("sourceService")(sourceService)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (lastAccessedTime != null) __obj.updateDynamic("lastAccessedTime")(lastAccessedTime.asInstanceOf[js.Any])
+    if (links != null) __obj.updateDynamic("links")(links.asInstanceOf[js.Any])
+    if (sourceService != null) __obj.updateDynamic("sourceService")(sourceService.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecentNotebook]
   }
 }

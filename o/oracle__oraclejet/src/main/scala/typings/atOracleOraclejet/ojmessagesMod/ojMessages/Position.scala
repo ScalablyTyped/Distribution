@@ -27,11 +27,11 @@ object Position {
     offset: PositionPoint = null
   ): Position = {
     val __obj = js.Dynamic.literal()
-    if (at != null) __obj.updateDynamic("at")(at)
+    if (at != null) __obj.updateDynamic("at")(at.asInstanceOf[js.Any])
     if (collision != null) __obj.updateDynamic("collision")(collision.asInstanceOf[js.Any])
-    if (my != null) __obj.updateDynamic("my")(my)
+    if (my != null) __obj.updateDynamic("my")(my.asInstanceOf[js.Any])
     if (of != null) __obj.updateDynamic("of")(of.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset)
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[Position]
   }
 }

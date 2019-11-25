@@ -23,9 +23,9 @@ object OptionsWithThunk {
     cwd: String = null,
     files: String | js.Array[String] = null
   ): OptionsWithThunk = {
-    val __obj = js.Dynamic.literal(name = name, thunk = thunk)
-    if (!js.isUndefined(create)) __obj.updateDynamic("create")(create)
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], thunk = thunk.asInstanceOf[js.Any])
+    if (!js.isUndefined(create)) __obj.updateDynamic("create")(create.asInstanceOf[js.Any])
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
     if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsWithThunk]
   }

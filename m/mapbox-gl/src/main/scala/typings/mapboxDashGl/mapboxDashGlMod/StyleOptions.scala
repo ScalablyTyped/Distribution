@@ -12,7 +12,7 @@ object StyleOptions {
   @scala.inline
   def apply(transition: js.UndefOr[Boolean] = js.undefined): StyleOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(transition)) __obj.updateDynamic("transition")(transition)
+    if (!js.isUndefined(transition)) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
     __obj.asInstanceOf[StyleOptions]
   }
 }

@@ -12,7 +12,7 @@ object HealthCheckReference {
   @scala.inline
   def apply(healthCheck: String = null): HealthCheckReference = {
     val __obj = js.Dynamic.literal()
-    if (healthCheck != null) __obj.updateDynamic("healthCheck")(healthCheck)
+    if (healthCheck != null) __obj.updateDynamic("healthCheck")(healthCheck.asInstanceOf[js.Any])
     __obj.asInstanceOf[HealthCheckReference]
   }
 }

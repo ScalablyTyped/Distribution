@@ -15,7 +15,7 @@ trait Transitions extends js.Object {
 object Transitions {
   @scala.inline
   def apply(FADE: fade, SCALE: scale): Transitions = {
-    val __obj = js.Dynamic.literal(FADE = FADE, SCALE = SCALE)
+    val __obj = js.Dynamic.literal(FADE = FADE.asInstanceOf[js.Any], SCALE = SCALE.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Transitions]
   }

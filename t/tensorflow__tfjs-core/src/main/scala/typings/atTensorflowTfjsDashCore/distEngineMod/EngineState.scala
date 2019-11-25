@@ -53,7 +53,7 @@ object EngineState {
     scopeStack: js.Array[ScopeState],
     tensorInfo: WeakMap[js.Object, Anon_Backend]
   ): EngineState = {
-    val __obj = js.Dynamic.literal(activeProfile = activeProfile, activeScope = activeScope, activeTape = activeTape, dispose = js.Any.fromFunction0(dispose), gradientDepth = gradientDepth, kernelDepth = kernelDepth, nextScopeId = nextScopeId, nextTapeNodeId = nextTapeNodeId, numBytes = numBytes, numDataBuffers = numDataBuffers, numDataMovesStack = numDataMovesStack, numStringTensors = numStringTensors, numTensors = numTensors, profiling = profiling, registeredVariables = registeredVariables, scopeStack = scopeStack, tensorInfo = tensorInfo)
+    val __obj = js.Dynamic.literal(activeProfile = activeProfile.asInstanceOf[js.Any], activeScope = activeScope.asInstanceOf[js.Any], activeTape = activeTape.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), gradientDepth = gradientDepth.asInstanceOf[js.Any], kernelDepth = kernelDepth.asInstanceOf[js.Any], nextScopeId = nextScopeId.asInstanceOf[js.Any], nextTapeNodeId = nextTapeNodeId.asInstanceOf[js.Any], numBytes = numBytes.asInstanceOf[js.Any], numDataBuffers = numDataBuffers.asInstanceOf[js.Any], numDataMovesStack = numDataMovesStack.asInstanceOf[js.Any], numStringTensors = numStringTensors.asInstanceOf[js.Any], numTensors = numTensors.asInstanceOf[js.Any], profiling = profiling.asInstanceOf[js.Any], registeredVariables = registeredVariables.asInstanceOf[js.Any], scopeStack = scopeStack.asInstanceOf[js.Any], tensorInfo = tensorInfo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EngineState]
   }

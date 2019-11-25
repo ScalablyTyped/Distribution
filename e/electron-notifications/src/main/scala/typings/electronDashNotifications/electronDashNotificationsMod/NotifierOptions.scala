@@ -17,9 +17,9 @@ object NotifierOptions {
   @scala.inline
   def apply(buttons: js.Array[String] = null, icon: String = null, message: String = null): NotifierOptions = {
     val __obj = js.Dynamic.literal()
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (message != null) __obj.updateDynamic("message")(message)
+    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotifierOptions]
   }
 }

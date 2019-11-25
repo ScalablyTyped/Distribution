@@ -14,9 +14,9 @@ object ContactGroupResponse {
   @scala.inline
   def apply(contactGroup: ContactGroup = null, requestedResourceName: String = null, status: Status = null): ContactGroupResponse = {
     val __obj = js.Dynamic.literal()
-    if (contactGroup != null) __obj.updateDynamic("contactGroup")(contactGroup)
-    if (requestedResourceName != null) __obj.updateDynamic("requestedResourceName")(requestedResourceName)
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (contactGroup != null) __obj.updateDynamic("contactGroup")(contactGroup.asInstanceOf[js.Any])
+    if (requestedResourceName != null) __obj.updateDynamic("requestedResourceName")(requestedResourceName.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContactGroupResponse]
   }
 }

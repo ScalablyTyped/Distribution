@@ -11,7 +11,7 @@ trait MediaRepositoryConfigureResponseFb_user_tags extends js.Object {
 object MediaRepositoryConfigureResponseFb_user_tags {
   @scala.inline
   def apply(in: js.Array[_]): MediaRepositoryConfigureResponseFb_user_tags = {
-    val __obj = js.Dynamic.literal(in = in)
+    val __obj = js.Dynamic.literal(in = in.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MediaRepositoryConfigureResponseFb_user_tags]
   }

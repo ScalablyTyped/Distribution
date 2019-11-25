@@ -13,8 +13,8 @@ object DialogflowV1Fulfillment {
   @scala.inline
   def apply(messages: js.Array[DialogflowV1Message] = null, speech: String = null): DialogflowV1Fulfillment = {
     val __obj = js.Dynamic.literal()
-    if (messages != null) __obj.updateDynamic("messages")(messages)
-    if (speech != null) __obj.updateDynamic("speech")(speech)
+    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
+    if (speech != null) __obj.updateDynamic("speech")(speech.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogflowV1Fulfillment]
   }
 }

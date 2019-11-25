@@ -13,8 +13,8 @@ trait Anon_NameTargetNull extends js.Object {
 object Anon_NameTargetNull {
   @scala.inline
   def apply(name: String, target: Window = null): Anon_NameTargetNull = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (target != null) __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_NameTargetNull]
   }
 }

@@ -13,8 +13,8 @@ object ListDataSourcesParams {
   @scala.inline
   def apply(name: String = null, system: String = null): ListDataSourcesParams = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (system != null) __obj.updateDynamic("system")(system)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (system != null) __obj.updateDynamic("system")(system.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDataSourcesParams]
   }
 }

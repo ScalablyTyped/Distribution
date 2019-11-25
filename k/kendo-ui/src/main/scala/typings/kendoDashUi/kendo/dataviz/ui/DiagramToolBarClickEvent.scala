@@ -23,11 +23,11 @@ object DiagramToolBarClickEvent {
     shapes: js.Any = null,
     target: JQuery = null
   ): DiagramToolBarClickEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (action != null) __obj.updateDynamic("action")(action)
-    if (connections != null) __obj.updateDynamic("connections")(connections)
-    if (shapes != null) __obj.updateDynamic("shapes")(shapes)
-    if (target != null) __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (connections != null) __obj.updateDynamic("connections")(connections.asInstanceOf[js.Any])
+    if (shapes != null) __obj.updateDynamic("shapes")(shapes.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagramToolBarClickEvent]
   }
 }

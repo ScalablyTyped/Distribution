@@ -51,14 +51,14 @@ object TokenSetParameters {
     token_type: String = null
   ): TokenSetParameters = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (access_token != null) __obj.updateDynamic("access_token")(access_token)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (access_token != null) __obj.updateDynamic("access_token")(access_token.asInstanceOf[js.Any])
     if (expires_at != null) __obj.updateDynamic("expires_at")(expires_at.asInstanceOf[js.Any])
-    if (id_token != null) __obj.updateDynamic("id_token")(id_token)
-    if (refresh_token != null) __obj.updateDynamic("refresh_token")(refresh_token)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
-    if (session_state != null) __obj.updateDynamic("session_state")(session_state)
-    if (token_type != null) __obj.updateDynamic("token_type")(token_type)
+    if (id_token != null) __obj.updateDynamic("id_token")(id_token.asInstanceOf[js.Any])
+    if (refresh_token != null) __obj.updateDynamic("refresh_token")(refresh_token.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (session_state != null) __obj.updateDynamic("session_state")(session_state.asInstanceOf[js.Any])
+    if (token_type != null) __obj.updateDynamic("token_type")(token_type.asInstanceOf[js.Any])
     __obj.asInstanceOf[TokenSetParameters]
   }
 }

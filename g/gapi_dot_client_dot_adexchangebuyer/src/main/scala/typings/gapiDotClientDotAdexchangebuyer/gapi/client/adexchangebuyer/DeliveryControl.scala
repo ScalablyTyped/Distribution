@@ -18,9 +18,9 @@ object DeliveryControl {
     frequencyCaps: js.Array[DeliveryControlFrequencyCap] = null
   ): DeliveryControl = {
     val __obj = js.Dynamic.literal()
-    if (creativeBlockingLevel != null) __obj.updateDynamic("creativeBlockingLevel")(creativeBlockingLevel)
-    if (deliveryRateType != null) __obj.updateDynamic("deliveryRateType")(deliveryRateType)
-    if (frequencyCaps != null) __obj.updateDynamic("frequencyCaps")(frequencyCaps)
+    if (creativeBlockingLevel != null) __obj.updateDynamic("creativeBlockingLevel")(creativeBlockingLevel.asInstanceOf[js.Any])
+    if (deliveryRateType != null) __obj.updateDynamic("deliveryRateType")(deliveryRateType.asInstanceOf[js.Any])
+    if (frequencyCaps != null) __obj.updateDynamic("frequencyCaps")(frequencyCaps.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeliveryControl]
   }
 }

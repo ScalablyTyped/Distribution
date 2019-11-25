@@ -14,7 +14,7 @@ trait IssuesRemoveLabelParams extends js.Object {
 object IssuesRemoveLabelParams {
   @scala.inline
   def apply(issue_number: Double, name: String, owner: String, repo: String): IssuesRemoveLabelParams = {
-    val __obj = js.Dynamic.literal(issue_number = issue_number, name = name, owner = owner, repo = repo)
+    val __obj = js.Dynamic.literal(issue_number = issue_number.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IssuesRemoveLabelParams]
   }

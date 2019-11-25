@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tabulator"
-version := "0.1-dt-20180214Z-977aac"
+version := "0.1-dt-20180214Z-b259aa"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

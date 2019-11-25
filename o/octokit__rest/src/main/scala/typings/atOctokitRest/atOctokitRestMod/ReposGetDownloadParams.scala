@@ -13,7 +13,7 @@ trait ReposGetDownloadParams extends js.Object {
 object ReposGetDownloadParams {
   @scala.inline
   def apply(download_id: Double, owner: String, repo: String): ReposGetDownloadParams = {
-    val __obj = js.Dynamic.literal(download_id = download_id, owner = owner, repo = repo)
+    val __obj = js.Dynamic.literal(download_id = download_id.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReposGetDownloadParams]
   }

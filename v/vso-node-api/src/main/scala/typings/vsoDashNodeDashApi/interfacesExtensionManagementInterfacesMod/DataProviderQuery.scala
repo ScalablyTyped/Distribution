@@ -18,7 +18,7 @@ trait DataProviderQuery extends js.Object {
 object DataProviderQuery {
   @scala.inline
   def apply(context: DataProviderContext, contributionIds: js.Array[String]): DataProviderQuery = {
-    val __obj = js.Dynamic.literal(context = context, contributionIds = contributionIds)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], contributionIds = contributionIds.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DataProviderQuery]
   }

@@ -25,7 +25,7 @@ object Container_Scroll_Parameter {
     RequestDx: Double,
     RequestDy: Double
   ): Container_Scroll_Parameter = {
-    val __obj = js.Dynamic.literal(ActionX = ActionX, ActionY = ActionY, ActualDx = ActualDx, ActualDy = ActualDy, RequestDx = RequestDx, RequestDy = RequestDy)
+    val __obj = js.Dynamic.literal(ActionX = ActionX.asInstanceOf[js.Any], ActionY = ActionY.asInstanceOf[js.Any], ActualDx = ActualDx.asInstanceOf[js.Any], ActualDy = ActualDy.asInstanceOf[js.Any], RequestDx = RequestDx.asInstanceOf[js.Any], RequestDy = RequestDy.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Container_Scroll_Parameter]
   }

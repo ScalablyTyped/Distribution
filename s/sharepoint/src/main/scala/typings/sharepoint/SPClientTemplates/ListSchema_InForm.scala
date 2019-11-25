@@ -12,7 +12,7 @@ trait ListSchema_InForm extends ListSchema {
 object ListSchema_InForm {
   @scala.inline
   def apply(Field: js.Array[FieldSchema_InForm]): ListSchema_InForm = {
-    val __obj = js.Dynamic.literal(Field = Field)
+    val __obj = js.Dynamic.literal(Field = Field.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ListSchema_InForm]
   }

@@ -18,7 +18,7 @@ object Token {
     scheme: String,
     token: String | js.Array[String] = null
   ): Token = {
-    val __obj = js.Dynamic.literal(params = params, scheme = scheme)
+    val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any], scheme = scheme.asInstanceOf[js.Any])
     if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }

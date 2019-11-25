@@ -31,8 +31,8 @@ object PlusStreamFreetrafficOptions {
   @scala.inline
   def apply(code: String = null, phone: String = null): PlusStreamFreetrafficOptions = {
     val __obj = js.Dynamic.literal()
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (phone != null) __obj.updateDynamic("phone")(phone)
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (phone != null) __obj.updateDynamic("phone")(phone.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusStreamFreetrafficOptions]
   }
 }

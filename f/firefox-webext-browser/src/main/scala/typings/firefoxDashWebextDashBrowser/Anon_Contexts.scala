@@ -39,16 +39,16 @@ object Anon_Contexts {
     targetElementId: Int | Double = null,
     viewType: ViewType = null
   ): Anon_Contexts = {
-    val __obj = js.Dynamic.literal(contexts = contexts, editable = editable, menuIds = menuIds.asInstanceOf[js.Any])
-    if (frameUrl != null) __obj.updateDynamic("frameUrl")(frameUrl)
-    if (linkText != null) __obj.updateDynamic("linkText")(linkText)
-    if (linkUrl != null) __obj.updateDynamic("linkUrl")(linkUrl)
-    if (mediaType != null) __obj.updateDynamic("mediaType")(mediaType)
-    if (pageUrl != null) __obj.updateDynamic("pageUrl")(pageUrl)
-    if (selectionText != null) __obj.updateDynamic("selectionText")(selectionText)
-    if (srcUrl != null) __obj.updateDynamic("srcUrl")(srcUrl)
+    val __obj = js.Dynamic.literal(contexts = contexts.asInstanceOf[js.Any], editable = editable.asInstanceOf[js.Any], menuIds = menuIds.asInstanceOf[js.Any])
+    if (frameUrl != null) __obj.updateDynamic("frameUrl")(frameUrl.asInstanceOf[js.Any])
+    if (linkText != null) __obj.updateDynamic("linkText")(linkText.asInstanceOf[js.Any])
+    if (linkUrl != null) __obj.updateDynamic("linkUrl")(linkUrl.asInstanceOf[js.Any])
+    if (mediaType != null) __obj.updateDynamic("mediaType")(mediaType.asInstanceOf[js.Any])
+    if (pageUrl != null) __obj.updateDynamic("pageUrl")(pageUrl.asInstanceOf[js.Any])
+    if (selectionText != null) __obj.updateDynamic("selectionText")(selectionText.asInstanceOf[js.Any])
+    if (srcUrl != null) __obj.updateDynamic("srcUrl")(srcUrl.asInstanceOf[js.Any])
     if (targetElementId != null) __obj.updateDynamic("targetElementId")(targetElementId.asInstanceOf[js.Any])
-    if (viewType != null) __obj.updateDynamic("viewType")(viewType)
+    if (viewType != null) __obj.updateDynamic("viewType")(viewType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Contexts]
   }
 }

@@ -37,13 +37,13 @@ object ChartLegendOptions {
   ): ChartLegendOptions = {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (!js.isUndefined(display)) __obj.updateDynamic("display")(display)
-    if (!js.isUndefined(fullWidth)) __obj.updateDynamic("fullWidth")(fullWidth)
-    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (!js.isUndefined(display)) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullWidth)) __obj.updateDynamic("fullWidth")(fullWidth.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
     if (onHover != null) __obj.updateDynamic("onHover")(js.Any.fromFunction2(onHover))
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartLegendOptions]
   }
 }

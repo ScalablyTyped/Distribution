@@ -22,7 +22,7 @@ object RibbonSettingsApplicationTab {
     `type`: ApplicationTabType | String = null
   ): RibbonSettingsApplicationTab = {
     val __obj = js.Dynamic.literal()
-    if (menuSettings != null) __obj.updateDynamic("menuSettings")(menuSettings)
+    if (menuSettings != null) __obj.updateDynamic("menuSettings")(menuSettings.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RibbonSettingsApplicationTab]
   }

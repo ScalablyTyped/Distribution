@@ -13,7 +13,7 @@ trait AvatarConfig extends js.Object {
 object AvatarConfig {
   @scala.inline
   def apply(bounding_box: Anon_Height, url: String): AvatarConfig = {
-    val __obj = js.Dynamic.literal(bounding_box = bounding_box, url = url)
+    val __obj = js.Dynamic.literal(bounding_box = bounding_box.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AvatarConfig]
   }

@@ -32,7 +32,7 @@ object SignOptions {
     noncefn: (/* message */ Buffer, /* privateKey */ Buffer, /* algo */ Buffer | Null, /* data */ Buffer | Null, /* attempt */ Double) => Buffer = null
   ): SignOptions = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (noncefn != null) __obj.updateDynamic("noncefn")(js.Any.fromFunction5(noncefn))
     __obj.asInstanceOf[SignOptions]
   }

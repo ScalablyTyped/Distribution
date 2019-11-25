@@ -31,8 +31,8 @@ object DeviceCredential {
   @scala.inline
   def apply(expirationTime: String = null, publicKey: PublicKeyCredential = null): DeviceCredential = {
     val __obj = js.Dynamic.literal()
-    if (expirationTime != null) __obj.updateDynamic("expirationTime")(expirationTime)
-    if (publicKey != null) __obj.updateDynamic("publicKey")(publicKey)
+    if (expirationTime != null) __obj.updateDynamic("expirationTime")(expirationTime.asInstanceOf[js.Any])
+    if (publicKey != null) __obj.updateDynamic("publicKey")(publicKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceCredential]
   }
 }

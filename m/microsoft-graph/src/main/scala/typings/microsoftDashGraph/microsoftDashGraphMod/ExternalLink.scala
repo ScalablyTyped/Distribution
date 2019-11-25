@@ -13,7 +13,7 @@ object ExternalLink {
   @scala.inline
   def apply(href: String = null): ExternalLink = {
     val __obj = js.Dynamic.literal()
-    if (href != null) __obj.updateDynamic("href")(href)
+    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExternalLink]
   }
 }

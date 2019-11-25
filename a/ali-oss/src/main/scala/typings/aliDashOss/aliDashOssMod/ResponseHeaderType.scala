@@ -18,9 +18,9 @@ object ResponseHeaderType {
     `content-type`: String = null
   ): ResponseHeaderType = {
     val __obj = js.Dynamic.literal()
-    if (`cache-control` != null) __obj.updateDynamic("cache-control")(`cache-control`)
-    if (`content-disposition` != null) __obj.updateDynamic("content-disposition")(`content-disposition`)
-    if (`content-type` != null) __obj.updateDynamic("content-type")(`content-type`)
+    if (`cache-control` != null) __obj.updateDynamic("cache-control")(`cache-control`.asInstanceOf[js.Any])
+    if (`content-disposition` != null) __obj.updateDynamic("content-disposition")(`content-disposition`.asInstanceOf[js.Any])
+    if (`content-type` != null) __obj.updateDynamic("content-type")(`content-type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseHeaderType]
   }
 }

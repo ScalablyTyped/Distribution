@@ -139,6 +139,8 @@ object semanticDashUiDashReactComponents extends semanticDashUiDashReactProps {
   @scala.inline
   def GridRow: ComponentType[GridRowProps] = typings.semanticDashUiDashReact.distCommonjsCollectionsGridGridRowMod.default.asInstanceOf[typings.react.reactMod.ComponentType[GridRowProps]]
   @scala.inline
+  def Group: ComponentType[GroupProps] = typings.semanticDashUiDashReact.distCommonjsElementsIconIconMod.default.Group.asInstanceOf[typings.react.reactMod.ComponentType[GroupProps]]
+  @scala.inline
   def Header: ComponentType[HeaderProps] = typings.semanticDashUiDashReact.distCommonjsElementsHeaderMod.default.asInstanceOf[typings.react.reactMod.ComponentType[HeaderProps]]
   @scala.inline
   def HeaderContent: ComponentType[HeaderContentProps] = typings.semanticDashUiDashReact.distCommonjsElementsHeaderHeaderContentMod.default.asInstanceOf[typings.react.reactMod.ComponentType[HeaderContentProps]]

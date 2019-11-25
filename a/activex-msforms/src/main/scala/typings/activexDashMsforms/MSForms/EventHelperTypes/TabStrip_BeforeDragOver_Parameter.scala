@@ -31,7 +31,7 @@ object TabStrip_BeforeDragOver_Parameter {
     X: Double,
     Y: Double
   ): TabStrip_BeforeDragOver_Parameter = {
-    val __obj = js.Dynamic.literal(Cancel = Cancel, Data = Data, DragState = DragState, Effect = Effect, Index = Index, Shift = Shift, X = X, Y = Y)
+    val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], Data = Data.asInstanceOf[js.Any], DragState = DragState.asInstanceOf[js.Any], Effect = Effect.asInstanceOf[js.Any], Index = Index.asInstanceOf[js.Any], Shift = Shift.asInstanceOf[js.Any], X = X.asInstanceOf[js.Any], Y = Y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TabStrip_BeforeDragOver_Parameter]
   }

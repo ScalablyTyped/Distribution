@@ -28,13 +28,13 @@ object PartialStyleRulesCheckboxClassKey {
     root: CSSProperties = null
   ): PartialStyleRulesCheckboxClassKey = {
     val __obj = js.Dynamic.literal()
-    if (checked != null) __obj.updateDynamic("checked")(checked)
-    if (colorPrimary != null) __obj.updateDynamic("colorPrimary")(colorPrimary)
-    if (colorSecondary != null) __obj.updateDynamic("colorSecondary")(colorSecondary)
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled)
-    if (indeterminate != null) __obj.updateDynamic("indeterminate")(indeterminate)
-    if (input != null) __obj.updateDynamic("input")(input)
-    if (root != null) __obj.updateDynamic("root")(root)
+    if (checked != null) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
+    if (colorPrimary != null) __obj.updateDynamic("colorPrimary")(colorPrimary.asInstanceOf[js.Any])
+    if (colorSecondary != null) __obj.updateDynamic("colorSecondary")(colorSecondary.asInstanceOf[js.Any])
+    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (indeterminate != null) __obj.updateDynamic("indeterminate")(indeterminate.asInstanceOf[js.Any])
+    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyleRulesCheckboxClassKey]
   }
 }

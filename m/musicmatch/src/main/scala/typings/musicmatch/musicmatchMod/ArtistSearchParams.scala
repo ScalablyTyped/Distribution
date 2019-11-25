@@ -24,7 +24,7 @@ object ArtistSearchParams {
     if (f_artist_mbid != null) __obj.updateDynamic("f_artist_mbid")(f_artist_mbid.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (page_size != null) __obj.updateDynamic("page_size")(page_size.asInstanceOf[js.Any])
-    if (q_artist != null) __obj.updateDynamic("q_artist")(q_artist)
+    if (q_artist != null) __obj.updateDynamic("q_artist")(q_artist.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArtistSearchParams]
   }
 }

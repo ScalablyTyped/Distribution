@@ -33,10 +33,10 @@ object SagaTesterOptions {
   ): SagaTesterOptions[StateType] = {
     val __obj = js.Dynamic.literal()
     if (combineReducers != null) __obj.updateDynamic("combineReducers")(js.Any.fromFunction1(combineReducers))
-    if (!js.isUndefined(ignoreReduxActions)) __obj.updateDynamic("ignoreReduxActions")(ignoreReduxActions)
+    if (!js.isUndefined(ignoreReduxActions)) __obj.updateDynamic("ignoreReduxActions")(ignoreReduxActions.asInstanceOf[js.Any])
     if (initialState != null) __obj.updateDynamic("initialState")(initialState.asInstanceOf[js.Any])
-    if (middlewares != null) __obj.updateDynamic("middlewares")(middlewares)
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (middlewares != null) __obj.updateDynamic("middlewares")(middlewares.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (reducers != null) __obj.updateDynamic("reducers")(reducers.asInstanceOf[js.Any])
     __obj.asInstanceOf[SagaTesterOptions[StateType]]
   }

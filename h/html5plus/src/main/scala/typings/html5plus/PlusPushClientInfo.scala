@@ -44,10 +44,10 @@ object PlusPushClientInfo {
   @scala.inline
   def apply(appid: String = null, appkey: String = null, clientid: String = null, token: String = null): PlusPushClientInfo = {
     val __obj = js.Dynamic.literal()
-    if (appid != null) __obj.updateDynamic("appid")(appid)
-    if (appkey != null) __obj.updateDynamic("appkey")(appkey)
-    if (clientid != null) __obj.updateDynamic("clientid")(clientid)
-    if (token != null) __obj.updateDynamic("token")(token)
+    if (appid != null) __obj.updateDynamic("appid")(appid.asInstanceOf[js.Any])
+    if (appkey != null) __obj.updateDynamic("appkey")(appkey.asInstanceOf[js.Any])
+    if (clientid != null) __obj.updateDynamic("clientid")(clientid.asInstanceOf[js.Any])
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusPushClientInfo]
   }
 }

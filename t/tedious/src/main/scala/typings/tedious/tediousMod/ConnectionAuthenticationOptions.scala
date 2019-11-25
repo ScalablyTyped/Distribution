@@ -27,10 +27,10 @@ object ConnectionAuthenticationOptions {
   @scala.inline
   def apply(domain: String = null, password: String = null, token: String = null, userName: String = null): ConnectionAuthenticationOptions = {
     val __obj = js.Dynamic.literal()
-    if (domain != null) __obj.updateDynamic("domain")(domain)
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (token != null) __obj.updateDynamic("token")(token)
-    if (userName != null) __obj.updateDynamic("userName")(userName)
+    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
+    if (userName != null) __obj.updateDynamic("userName")(userName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionAuthenticationOptions]
   }
 }

@@ -36,7 +36,7 @@ object Button {
     onClicked: WebExtEvent[js.Function0[Unit]],
     update: (/* iconPath */ js.UndefOr[String], /* tooltipText */ js.UndefOr[String], /* disabled */ js.UndefOr[Boolean]) => Unit = null
   ): Button = {
-    val __obj = js.Dynamic.literal(onClicked = onClicked)
+    val __obj = js.Dynamic.literal(onClicked = onClicked.asInstanceOf[js.Any])
     if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction3(update))
     __obj.asInstanceOf[Button]
   }

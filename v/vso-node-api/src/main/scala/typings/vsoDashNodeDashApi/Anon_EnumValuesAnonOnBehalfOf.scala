@@ -11,7 +11,7 @@ trait Anon_EnumValuesAnonOnBehalfOf extends js.Object {
 object Anon_EnumValuesAnonOnBehalfOf {
   @scala.inline
   def apply(enumValues: Anon_OnBehalfOf): Anon_EnumValuesAnonOnBehalfOf = {
-    val __obj = js.Dynamic.literal(enumValues = enumValues)
+    val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EnumValuesAnonOnBehalfOf]
   }

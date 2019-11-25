@@ -27,8 +27,8 @@ object CalendarNotification {
   @scala.inline
   def apply(method: String = null, `type`: String = null): CalendarNotification = {
     val __obj = js.Dynamic.literal()
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalendarNotification]
   }
 }

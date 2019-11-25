@@ -12,7 +12,7 @@ object ConferenceParameters {
   @scala.inline
   def apply(addOnParameters: ConferenceParametersAddOnParameters = null): ConferenceParameters = {
     val __obj = js.Dynamic.literal()
-    if (addOnParameters != null) __obj.updateDynamic("addOnParameters")(addOnParameters)
+    if (addOnParameters != null) __obj.updateDynamic("addOnParameters")(addOnParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConferenceParameters]
   }
 }

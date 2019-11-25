@@ -12,7 +12,7 @@ trait ICellCoordinates extends js.Object {
 object ICellCoordinates {
   @scala.inline
   def apply(col: Double, row: Double): ICellCoordinates = {
-    val __obj = js.Dynamic.literal(col = col, row = row)
+    val __obj = js.Dynamic.literal(col = col.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ICellCoordinates]
   }

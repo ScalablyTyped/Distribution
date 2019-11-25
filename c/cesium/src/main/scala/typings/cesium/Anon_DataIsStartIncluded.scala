@@ -19,10 +19,10 @@ object Anon_DataIsStartIncluded {
     isStartIncluded: js.UndefOr[Boolean] = js.undefined,
     isStopIncluded: js.UndefOr[Boolean] = js.undefined
   ): Anon_DataIsStartIncluded = {
-    val __obj = js.Dynamic.literal(iso8601 = iso8601)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (!js.isUndefined(isStartIncluded)) __obj.updateDynamic("isStartIncluded")(isStartIncluded)
-    if (!js.isUndefined(isStopIncluded)) __obj.updateDynamic("isStopIncluded")(isStopIncluded)
+    val __obj = js.Dynamic.literal(iso8601 = iso8601.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (!js.isUndefined(isStartIncluded)) __obj.updateDynamic("isStartIncluded")(isStartIncluded.asInstanceOf[js.Any])
+    if (!js.isUndefined(isStopIncluded)) __obj.updateDynamic("isStopIncluded")(isStopIncluded.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DataIsStartIncluded]
   }
 }

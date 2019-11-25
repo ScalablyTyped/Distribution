@@ -65,19 +65,19 @@ object Anon_AllowWebDefinitions {
     userIp: String = null,
     w: Int | Double = null
   ): Anon_AllowWebDefinitions = {
-    val __obj = js.Dynamic.literal(annotationDataId = annotationDataId, contentVersion = contentVersion, layerId = layerId, volumeId = volumeId)
-    if (!js.isUndefined(allowWebDefinitions)) __obj.updateDynamic("allowWebDefinitions")(allowWebDefinitions)
-    if (alt != null) __obj.updateDynamic("alt")(alt)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
+    val __obj = js.Dynamic.literal(annotationDataId = annotationDataId.asInstanceOf[js.Any], contentVersion = contentVersion.asInstanceOf[js.Any], layerId = layerId.asInstanceOf[js.Any], volumeId = volumeId.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowWebDefinitions)) __obj.updateDynamic("allowWebDefinitions")(allowWebDefinitions.asInstanceOf[js.Any])
+    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (h != null) __obj.updateDynamic("h")(h.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     if (w != null) __obj.updateDynamic("w")(w.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AllowWebDefinitions]
   }

@@ -20,7 +20,7 @@ object ErrorObserver {
     next: /* value */ T => Unit = null
   ): ErrorObserver[T] = {
     val __obj = js.Dynamic.literal(error = js.Any.fromFunction1(error))
-    if (!js.isUndefined(closed)) __obj.updateDynamic("closed")(closed)
+    if (!js.isUndefined(closed)) __obj.updateDynamic("closed")(closed.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (next != null) __obj.updateDynamic("next")(js.Any.fromFunction1(next))
     __obj.asInstanceOf[ErrorObserver[T]]

@@ -27,8 +27,8 @@ object NativeInvocationListenerCallbacks {
   @scala.inline
   def apply(onEnter: NativePointer = null, onLeave: NativePointer = null): NativeInvocationListenerCallbacks = {
     val __obj = js.Dynamic.literal()
-    if (onEnter != null) __obj.updateDynamic("onEnter")(onEnter)
-    if (onLeave != null) __obj.updateDynamic("onLeave")(onLeave)
+    if (onEnter != null) __obj.updateDynamic("onEnter")(onEnter.asInstanceOf[js.Any])
+    if (onLeave != null) __obj.updateDynamic("onLeave")(onLeave.asInstanceOf[js.Any])
     __obj.asInstanceOf[NativeInvocationListenerCallbacks]
   }
 }

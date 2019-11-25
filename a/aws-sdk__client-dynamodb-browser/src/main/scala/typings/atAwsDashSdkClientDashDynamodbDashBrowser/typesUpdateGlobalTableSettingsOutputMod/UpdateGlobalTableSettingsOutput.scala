@@ -30,9 +30,9 @@ object UpdateGlobalTableSettingsOutput {
     GlobalTableName: String = null,
     ReplicaSettings: js.Array[_UnmarshalledReplicaSettingsDescription] = null
   ): UpdateGlobalTableSettingsOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (GlobalTableName != null) __obj.updateDynamic("GlobalTableName")(GlobalTableName)
-    if (ReplicaSettings != null) __obj.updateDynamic("ReplicaSettings")(ReplicaSettings)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (GlobalTableName != null) __obj.updateDynamic("GlobalTableName")(GlobalTableName.asInstanceOf[js.Any])
+    if (ReplicaSettings != null) __obj.updateDynamic("ReplicaSettings")(ReplicaSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateGlobalTableSettingsOutput]
   }
 }

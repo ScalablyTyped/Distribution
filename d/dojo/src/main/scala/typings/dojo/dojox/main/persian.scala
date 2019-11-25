@@ -56,7 +56,7 @@ object persian {
     getDaysInMonth: Date => Unit,
     locale: js.Object
   ): persian = {
-    val __obj = js.Dynamic.literal(add = js.Any.fromFunction3(add), compare = js.Any.fromFunction3(compare), difference = js.Any.fromFunction3(difference), getDaysInMonth = js.Any.fromFunction1(getDaysInMonth), locale = locale)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction3(add), compare = js.Any.fromFunction3(compare), difference = js.Any.fromFunction3(difference), getDaysInMonth = js.Any.fromFunction1(getDaysInMonth), locale = locale.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[persian]
   }

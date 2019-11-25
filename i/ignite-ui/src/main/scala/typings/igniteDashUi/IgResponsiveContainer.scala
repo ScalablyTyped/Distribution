@@ -26,7 +26,7 @@ object IgResponsiveContainer {
     pollingInterval: Int | Double = null
   ): IgResponsiveContainer = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (pollingInterval != null) __obj.updateDynamic("pollingInterval")(pollingInterval.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgResponsiveContainer]
   }

@@ -29,11 +29,11 @@ object OperationDefinition {
     name: Name = null,
     variableDefinitions: js.Array[VariableDefinition] = null
   ): OperationDefinition = {
-    val __obj = js.Dynamic.literal(kind = kind, operation = operation, selectionSet = selectionSet)
-    if (directives != null) __obj.updateDynamic("directives")(directives)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (variableDefinitions != null) __obj.updateDynamic("variableDefinitions")(variableDefinitions)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any], selectionSet = selectionSet.asInstanceOf[js.Any])
+    if (directives != null) __obj.updateDynamic("directives")(directives.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (variableDefinitions != null) __obj.updateDynamic("variableDefinitions")(variableDefinitions.asInstanceOf[js.Any])
     __obj.asInstanceOf[OperationDefinition]
   }
 }

@@ -24,7 +24,7 @@ object Anon_Popup {
   @scala.inline
   def apply(popup: String = null, tabId: Int | Double = null, windowId: Int | Double = null): Anon_Popup = {
     val __obj = js.Dynamic.literal()
-    if (popup != null) __obj.updateDynamic("popup")(popup)
+    if (popup != null) __obj.updateDynamic("popup")(popup.asInstanceOf[js.Any])
     if (tabId != null) __obj.updateDynamic("tabId")(tabId.asInstanceOf[js.Any])
     if (windowId != null) __obj.updateDynamic("windowId")(windowId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Popup]

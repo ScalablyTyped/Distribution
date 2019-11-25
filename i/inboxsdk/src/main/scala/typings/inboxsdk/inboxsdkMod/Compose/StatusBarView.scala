@@ -17,11 +17,11 @@ object StatusBarView {
     destroy: () => Unit,
     destroyed: Boolean,
     el: HTMLElement,
-    on_destroy: (destroy, js.Function0[Unit]) => Unit,
+    on: (destroy, js.Function0[Unit]) => Unit,
     setHeight: Double => Unit
   ): StatusBarView = {
-    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), destroyed = destroyed, el = el, setHeight = js.Any.fromFunction1(setHeight))
-    __obj.updateDynamic("on")(js.Any.fromFunction2(on_destroy))
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), destroyed = destroyed.asInstanceOf[js.Any], el = el.asInstanceOf[js.Any], on = js.Any.fromFunction2(on), setHeight = js.Any.fromFunction1(setHeight))
+  
     __obj.asInstanceOf[StatusBarView]
   }
 }

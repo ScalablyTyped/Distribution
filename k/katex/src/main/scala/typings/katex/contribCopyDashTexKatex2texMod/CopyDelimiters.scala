@@ -21,8 +21,8 @@ object CopyDelimiters {
     display: js.Tuple2[DOLLARDOLLAR | `[`, DOLLARDOLLAR | `]`],
     `inline`: js.Tuple2[DOLLAR | `(`, DOLLAR | `)`]
   ): CopyDelimiters = {
-    val __obj = js.Dynamic.literal(display = display)
-    __obj.updateDynamic("inline")(`inline`)
+    val __obj = js.Dynamic.literal(display = display.asInstanceOf[js.Any])
+    __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CopyDelimiters]
   }
 }

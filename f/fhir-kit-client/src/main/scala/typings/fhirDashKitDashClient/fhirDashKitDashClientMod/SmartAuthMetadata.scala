@@ -20,10 +20,10 @@ object SmartAuthMetadata {
     tokenUrl: String = null
   ): SmartAuthMetadata = {
     val __obj = js.Dynamic.literal()
-    if (authorizeUrl != null) __obj.updateDynamic("authorizeUrl")(authorizeUrl)
-    if (manageUrl != null) __obj.updateDynamic("manageUrl")(manageUrl)
-    if (registerUrl != null) __obj.updateDynamic("registerUrl")(registerUrl)
-    if (tokenUrl != null) __obj.updateDynamic("tokenUrl")(tokenUrl)
+    if (authorizeUrl != null) __obj.updateDynamic("authorizeUrl")(authorizeUrl.asInstanceOf[js.Any])
+    if (manageUrl != null) __obj.updateDynamic("manageUrl")(manageUrl.asInstanceOf[js.Any])
+    if (registerUrl != null) __obj.updateDynamic("registerUrl")(registerUrl.asInstanceOf[js.Any])
+    if (tokenUrl != null) __obj.updateDynamic("tokenUrl")(tokenUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[SmartAuthMetadata]
   }
 }

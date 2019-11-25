@@ -26,7 +26,7 @@ object OpenDevToolsOptions {
   @scala.inline
   def apply(mode: right | bottom | undocked | detach, activate: js.UndefOr[Boolean] = js.undefined): OpenDevToolsOptions = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
-    if (!js.isUndefined(activate)) __obj.updateDynamic("activate")(activate)
+    if (!js.isUndefined(activate)) __obj.updateDynamic("activate")(activate.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenDevToolsOptions]
   }
 }

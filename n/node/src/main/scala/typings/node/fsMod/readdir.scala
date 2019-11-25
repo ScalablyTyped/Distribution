@@ -7,7 +7,7 @@ import typings.node.Anon_EncodingTrue
 import typings.node.Buffer
 import typings.node.BufferEncoding
 import typings.node.NodeJS.ErrnoException
-import typings.node.nodeStrings.buffer
+import typings.node.nodeStrings.buffer_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -94,7 +94,7 @@ object readdir extends js.Object {
   ): Unit = js.native
   def apply(
     path: PathLike,
-    options: buffer,
+    options: buffer_,
     callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[Buffer], Unit]
   ): Unit = js.native
   /**
@@ -120,6 +120,6 @@ object readdir extends js.Object {
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
   @JSName("__promisify__")
-  def __promisify___buffer(path: PathLike, options: buffer): js.Promise[js.Array[Buffer]] = js.native
+  def __promisify___buffer(path: PathLike, options: buffer_): js.Promise[js.Array[Buffer]] = js.native
 }
 

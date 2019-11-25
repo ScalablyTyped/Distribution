@@ -11,7 +11,7 @@ trait Anon_Breakpoint extends js.Object {
 object Anon_Breakpoint {
   @scala.inline
   def apply(breakpoint: Double): Anon_Breakpoint = {
-    val __obj = js.Dynamic.literal(breakpoint = breakpoint)
+    val __obj = js.Dynamic.literal(breakpoint = breakpoint.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Breakpoint]
   }

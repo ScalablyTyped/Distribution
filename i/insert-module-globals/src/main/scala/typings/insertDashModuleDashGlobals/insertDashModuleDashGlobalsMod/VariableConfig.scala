@@ -13,8 +13,8 @@ trait VariableConfig extends js.Object {
 object VariableConfig {
   @scala.inline
   def apply(id: String, source: String, suffix: String = null): VariableConfig = {
-    val __obj = js.Dynamic.literal(id = id, source = source)
-    if (suffix != null) __obj.updateDynamic("suffix")(suffix)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
+    if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
     __obj.asInstanceOf[VariableConfig]
   }
 }

@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 object TreeDraggingStyle {
   @scala.inline
   def apply(paddingLeft: Double, transition: none | String): TreeDraggingStyle = {
-    val __obj = js.Dynamic.literal(paddingLeft = paddingLeft, transition = transition.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(paddingLeft = paddingLeft.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TreeDraggingStyle]
   }

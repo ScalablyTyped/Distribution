@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "html5-history"
-version := "0.1-dt-20190304Z-8f6703"
+version := "0.1-dt-20190304Z-e6eb43"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

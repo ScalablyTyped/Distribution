@@ -17,9 +17,9 @@ object StripeApplePaySessionResult {
     shippingContact: StripeApplePayPaymentContact = null,
     shippingMethod: StripeApplePayShippingMethod = null
   ): StripeApplePaySessionResult = {
-    val __obj = js.Dynamic.literal(token = token)
-    if (shippingContact != null) __obj.updateDynamic("shippingContact")(shippingContact)
-    if (shippingMethod != null) __obj.updateDynamic("shippingMethod")(shippingMethod)
+    val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any])
+    if (shippingContact != null) __obj.updateDynamic("shippingContact")(shippingContact.asInstanceOf[js.Any])
+    if (shippingMethod != null) __obj.updateDynamic("shippingMethod")(shippingMethod.asInstanceOf[js.Any])
     __obj.asInstanceOf[StripeApplePaySessionResult]
   }
 }

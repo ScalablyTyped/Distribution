@@ -40,14 +40,14 @@ object TrainingStatus {
     total_examples: Int | Double = null
   ): TrainingStatus = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(available)) __obj.updateDynamic("available")(available)
-    if (data_updated != null) __obj.updateDynamic("data_updated")(data_updated)
-    if (!js.isUndefined(minimum_examples_added)) __obj.updateDynamic("minimum_examples_added")(minimum_examples_added)
-    if (!js.isUndefined(minimum_queries_added)) __obj.updateDynamic("minimum_queries_added")(minimum_queries_added)
+    if (!js.isUndefined(available)) __obj.updateDynamic("available")(available.asInstanceOf[js.Any])
+    if (data_updated != null) __obj.updateDynamic("data_updated")(data_updated.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimum_examples_added)) __obj.updateDynamic("minimum_examples_added")(minimum_examples_added.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimum_queries_added)) __obj.updateDynamic("minimum_queries_added")(minimum_queries_added.asInstanceOf[js.Any])
     if (notices != null) __obj.updateDynamic("notices")(notices.asInstanceOf[js.Any])
-    if (!js.isUndefined(processing)) __obj.updateDynamic("processing")(processing)
-    if (successfully_trained != null) __obj.updateDynamic("successfully_trained")(successfully_trained)
-    if (!js.isUndefined(sufficient_label_diversity)) __obj.updateDynamic("sufficient_label_diversity")(sufficient_label_diversity)
+    if (!js.isUndefined(processing)) __obj.updateDynamic("processing")(processing.asInstanceOf[js.Any])
+    if (successfully_trained != null) __obj.updateDynamic("successfully_trained")(successfully_trained.asInstanceOf[js.Any])
+    if (!js.isUndefined(sufficient_label_diversity)) __obj.updateDynamic("sufficient_label_diversity")(sufficient_label_diversity.asInstanceOf[js.Any])
     if (total_examples != null) __obj.updateDynamic("total_examples")(total_examples.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrainingStatus]
   }

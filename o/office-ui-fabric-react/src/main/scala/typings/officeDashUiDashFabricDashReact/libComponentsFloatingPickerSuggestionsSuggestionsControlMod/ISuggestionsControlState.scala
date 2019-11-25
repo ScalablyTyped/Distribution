@@ -18,7 +18,7 @@ object ISuggestionsControlState {
     selectedHeaderIndex: Double,
     suggestions: js.Array[ISuggestionModel[T]]
   ): ISuggestionsControlState[T] = {
-    val __obj = js.Dynamic.literal(selectedFooterIndex = selectedFooterIndex, selectedHeaderIndex = selectedHeaderIndex, suggestions = suggestions)
+    val __obj = js.Dynamic.literal(selectedFooterIndex = selectedFooterIndex.asInstanceOf[js.Any], selectedHeaderIndex = selectedHeaderIndex.asInstanceOf[js.Any], suggestions = suggestions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISuggestionsControlState[T]]
   }

@@ -38,12 +38,12 @@ object Anon_BackgroundContainer {
   ): Anon_BackgroundContainer = {
     val __obj = js.Dynamic.literal()
     if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container)
-    if (control != null) __obj.updateDynamic("control")(control)
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (control != null) __obj.updateDynamic("control")(control.asInstanceOf[js.Any])
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (icons != null) __obj.updateDynamic("icons")(icons)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (searchInput != null) __obj.updateDynamic("searchInput")(searchInput)
+    if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (searchInput != null) __obj.updateDynamic("searchInput")(searchInput.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BackgroundContainer]
   }

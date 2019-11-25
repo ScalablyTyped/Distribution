@@ -22,8 +22,8 @@ object Mail {
   @scala.inline
   def apply(envelope: js.Object = null, id: String = null): Mail = {
     val __obj = js.Dynamic.literal()
-    if (envelope != null) __obj.updateDynamic("envelope")(envelope)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (envelope != null) __obj.updateDynamic("envelope")(envelope.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mail]
   }
 }

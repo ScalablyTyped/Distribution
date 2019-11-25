@@ -12,7 +12,7 @@ trait GetUsersResponse extends js.Object {
 object GetUsersResponse {
   @scala.inline
   def apply(data: js.Array[UserData], status: Double): GetUsersResponse = {
-    val __obj = js.Dynamic.literal(data = data, status = status)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetUsersResponse]
   }

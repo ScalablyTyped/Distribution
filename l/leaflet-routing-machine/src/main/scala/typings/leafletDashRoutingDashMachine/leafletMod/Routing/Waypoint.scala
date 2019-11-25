@@ -14,9 +14,9 @@ trait Waypoint extends js.Object {
 object Waypoint {
   @scala.inline
   def apply(latLng: LatLng, name: String = null, options: WaypointOptions = null): Waypoint = {
-    val __obj = js.Dynamic.literal(latLng = latLng)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (options != null) __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(latLng = latLng.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[Waypoint]
   }
 }

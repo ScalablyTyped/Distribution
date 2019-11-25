@@ -13,8 +13,8 @@ object Anon_Field {
   @scala.inline
   def apply(field: js.UndefOr[Boolean] = js.undefined, list: js.UndefOr[Boolean] = js.undefined): Anon_Field = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(field)) __obj.updateDynamic("field")(field)
-    if (!js.isUndefined(list)) __obj.updateDynamic("list")(list)
+    if (!js.isUndefined(field)) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    if (!js.isUndefined(list)) __obj.updateDynamic("list")(list.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Field]
   }
 }

@@ -14,8 +14,8 @@ trait JsonpErrorResponse extends js.Object {
 object JsonpErrorResponse {
   @scala.inline
   def apply(originalEvent: Event, status: Double, `type`: String): JsonpErrorResponse = {
-    val __obj = js.Dynamic.literal(originalEvent = originalEvent, status = status)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[JsonpErrorResponse]
   }
 }

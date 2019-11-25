@@ -18,8 +18,8 @@ trait IResponse extends js.Object {
 object IResponse {
   @scala.inline
   def apply(isError: Boolean, requestId: integer, value: ArrayBuffer = null): IResponse = {
-    val __obj = js.Dynamic.literal(isError = isError, requestId = requestId)
-    if (value != null) __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(isError = isError.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IResponse]
   }
 }

@@ -22,7 +22,7 @@ object ChildSwapViewProperties {
   @scala.inline
   def apply(`lazy`: Boolean): ChildSwapViewProperties = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lazy")(`lazy`)
+    __obj.updateDynamic("lazy")(`lazy`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChildSwapViewProperties]
   }
 }

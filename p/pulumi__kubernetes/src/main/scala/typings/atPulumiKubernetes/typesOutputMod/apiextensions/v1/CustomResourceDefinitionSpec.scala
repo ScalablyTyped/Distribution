@@ -60,7 +60,7 @@ object CustomResourceDefinitionSpec {
     scope: String,
     versions: js.Array[CustomResourceDefinitionVersion]
   ): CustomResourceDefinitionSpec = {
-    val __obj = js.Dynamic.literal(conversion = conversion, group = group, names = names, preserveUnknownFields = preserveUnknownFields, scope = scope, versions = versions)
+    val __obj = js.Dynamic.literal(conversion = conversion.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any], preserveUnknownFields = preserveUnknownFields.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], versions = versions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CustomResourceDefinitionSpec]
   }

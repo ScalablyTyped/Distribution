@@ -13,7 +13,7 @@ trait Anon_AllHistory extends js.Object {
 object Anon_AllHistory {
   @scala.inline
   def apply(allHistory: Boolean, urls: js.Array[String]): Anon_AllHistory = {
-    val __obj = js.Dynamic.literal(allHistory = allHistory, urls = urls)
+    val __obj = js.Dynamic.literal(allHistory = allHistory.asInstanceOf[js.Any], urls = urls.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AllHistory]
   }

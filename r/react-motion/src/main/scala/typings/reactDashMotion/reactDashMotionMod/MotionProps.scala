@@ -38,9 +38,9 @@ object MotionProps {
     defaultStyle: PlainStyle = null,
     onRest: () => Unit = null
   ): MotionProps = {
-    val __obj = js.Dynamic.literal(style = style)
+    val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))
-    if (defaultStyle != null) __obj.updateDynamic("defaultStyle")(defaultStyle)
+    if (defaultStyle != null) __obj.updateDynamic("defaultStyle")(defaultStyle.asInstanceOf[js.Any])
     if (onRest != null) __obj.updateDynamic("onRest")(js.Any.fromFunction0(onRest))
     __obj.asInstanceOf[MotionProps]
   }

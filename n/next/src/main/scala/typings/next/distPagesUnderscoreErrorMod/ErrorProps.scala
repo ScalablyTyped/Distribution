@@ -12,8 +12,8 @@ trait ErrorProps extends js.Object {
 object ErrorProps {
   @scala.inline
   def apply(statusCode: Double, title: String = null): ErrorProps = {
-    val __obj = js.Dynamic.literal(statusCode = statusCode)
-    if (title != null) __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(statusCode = statusCode.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorProps]
   }
 }

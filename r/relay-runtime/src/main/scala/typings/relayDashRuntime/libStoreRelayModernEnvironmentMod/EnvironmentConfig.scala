@@ -37,14 +37,14 @@ object EnvironmentConfig {
     operationTracker: OperationTracker = null,
     scheduler: TaskScheduler = null
   ): EnvironmentConfig = {
-    val __obj = js.Dynamic.literal(network = network, store = store)
-    if (configName != null) __obj.updateDynamic("configName")(configName)
+    val __obj = js.Dynamic.literal(network = network.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any])
+    if (configName != null) __obj.updateDynamic("configName")(configName.asInstanceOf[js.Any])
     if (handlerProvider != null) __obj.updateDynamic("handlerProvider")(js.Any.fromFunction1(handlerProvider))
-    if (loggerProvider != null) __obj.updateDynamic("loggerProvider")(loggerProvider)
-    if (missingFieldHandlers != null) __obj.updateDynamic("missingFieldHandlers")(missingFieldHandlers)
-    if (operationLoader != null) __obj.updateDynamic("operationLoader")(operationLoader)
-    if (operationTracker != null) __obj.updateDynamic("operationTracker")(operationTracker)
-    if (scheduler != null) __obj.updateDynamic("scheduler")(scheduler)
+    if (loggerProvider != null) __obj.updateDynamic("loggerProvider")(loggerProvider.asInstanceOf[js.Any])
+    if (missingFieldHandlers != null) __obj.updateDynamic("missingFieldHandlers")(missingFieldHandlers.asInstanceOf[js.Any])
+    if (operationLoader != null) __obj.updateDynamic("operationLoader")(operationLoader.asInstanceOf[js.Any])
+    if (operationTracker != null) __obj.updateDynamic("operationTracker")(operationTracker.asInstanceOf[js.Any])
+    if (scheduler != null) __obj.updateDynamic("scheduler")(scheduler.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnvironmentConfig]
   }
 }

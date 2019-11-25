@@ -31,8 +31,8 @@ object GestureDelegate {
     start: () => Boolean,
     ctrl: js.Any = null
   ): GestureDelegate = {
-    val __obj = js.Dynamic.literal(canStart = js.Any.fromFunction0(canStart), capture = js.Any.fromFunction0(capture), destroy = js.Any.fromFunction0(destroy), disableScroll = disableScroll, id = id, name = name, priority = priority, release = js.Any.fromFunction0(release), start = js.Any.fromFunction0(start))
-    if (ctrl != null) __obj.updateDynamic("ctrl")(ctrl)
+    val __obj = js.Dynamic.literal(canStart = js.Any.fromFunction0(canStart), capture = js.Any.fromFunction0(capture), destroy = js.Any.fromFunction0(destroy), disableScroll = disableScroll.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], release = js.Any.fromFunction0(release), start = js.Any.fromFunction0(start))
+    if (ctrl != null) __obj.updateDynamic("ctrl")(ctrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[GestureDelegate]
   }
 }

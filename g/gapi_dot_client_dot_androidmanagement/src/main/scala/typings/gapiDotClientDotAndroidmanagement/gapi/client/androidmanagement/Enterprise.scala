@@ -47,13 +47,13 @@ object Enterprise {
     pubsubTopic: String = null
   ): Enterprise = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(appAutoApprovalEnabled)) __obj.updateDynamic("appAutoApprovalEnabled")(appAutoApprovalEnabled)
-    if (enabledNotificationTypes != null) __obj.updateDynamic("enabledNotificationTypes")(enabledNotificationTypes)
-    if (enterpriseDisplayName != null) __obj.updateDynamic("enterpriseDisplayName")(enterpriseDisplayName)
-    if (logo != null) __obj.updateDynamic("logo")(logo)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(appAutoApprovalEnabled)) __obj.updateDynamic("appAutoApprovalEnabled")(appAutoApprovalEnabled.asInstanceOf[js.Any])
+    if (enabledNotificationTypes != null) __obj.updateDynamic("enabledNotificationTypes")(enabledNotificationTypes.asInstanceOf[js.Any])
+    if (enterpriseDisplayName != null) __obj.updateDynamic("enterpriseDisplayName")(enterpriseDisplayName.asInstanceOf[js.Any])
+    if (logo != null) __obj.updateDynamic("logo")(logo.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (primaryColor != null) __obj.updateDynamic("primaryColor")(primaryColor.asInstanceOf[js.Any])
-    if (pubsubTopic != null) __obj.updateDynamic("pubsubTopic")(pubsubTopic)
+    if (pubsubTopic != null) __obj.updateDynamic("pubsubTopic")(pubsubTopic.asInstanceOf[js.Any])
     __obj.asInstanceOf[Enterprise]
   }
 }

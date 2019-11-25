@@ -43,9 +43,9 @@ object TSQuerySelectorNode {
       TSQuerySelectorNode | js.Array[TSQuerySelectorNode] | RegExp | Boolean | Double | String
     ] = null
   ): TSQuerySelectorNode = {
-    val __obj = js.Dynamic.literal(index = index, left = left, name = name, operator = operator.asInstanceOf[js.Any], right = right, selectors = selectors, subject = subject, value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], selectors = selectors.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[TSQuerySelectorNode]
   }
 }

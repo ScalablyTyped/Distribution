@@ -22,11 +22,11 @@ object NotyCallbackOptions {
     onShow: js.Function = null
   ): NotyCallbackOptions = {
     val __obj = js.Dynamic.literal()
-    if (afterClose != null) __obj.updateDynamic("afterClose")(afterClose)
-    if (afterShow != null) __obj.updateDynamic("afterShow")(afterShow)
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
-    if (onCloseClick != null) __obj.updateDynamic("onCloseClick")(onCloseClick)
-    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
+    if (afterClose != null) __obj.updateDynamic("afterClose")(afterClose.asInstanceOf[js.Any])
+    if (afterShow != null) __obj.updateDynamic("afterShow")(afterShow.asInstanceOf[js.Any])
+    if (onClose != null) __obj.updateDynamic("onClose")(onClose.asInstanceOf[js.Any])
+    if (onCloseClick != null) __obj.updateDynamic("onCloseClick")(onCloseClick.asInstanceOf[js.Any])
+    if (onShow != null) __obj.updateDynamic("onShow")(onShow.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotyCallbackOptions]
   }
 }

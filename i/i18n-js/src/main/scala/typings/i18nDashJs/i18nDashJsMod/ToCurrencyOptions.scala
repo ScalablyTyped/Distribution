@@ -22,13 +22,13 @@ object ToCurrencyOptions {
     unit: String = null
   ): ToCurrencyOptions = {
     val __obj = js.Dynamic.literal()
-    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
-    if (separator != null) __obj.updateDynamic("separator")(separator)
-    if (!js.isUndefined(sign_first)) __obj.updateDynamic("sign_first")(sign_first)
-    if (!js.isUndefined(strip_insignificant_zeros)) __obj.updateDynamic("strip_insignificant_zeros")(strip_insignificant_zeros)
-    if (unit != null) __obj.updateDynamic("unit")(unit)
+    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
+    if (!js.isUndefined(sign_first)) __obj.updateDynamic("sign_first")(sign_first.asInstanceOf[js.Any])
+    if (!js.isUndefined(strip_insignificant_zeros)) __obj.updateDynamic("strip_insignificant_zeros")(strip_insignificant_zeros.asInstanceOf[js.Any])
+    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToCurrencyOptions]
   }
 }

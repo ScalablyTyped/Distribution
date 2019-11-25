@@ -26,8 +26,8 @@ object UserNotificationSettings {
   @scala.inline
   def apply(categories: js.Array[UserNotificationCategory] = null, types: js.Array[Double] = null): UserNotificationSettings = {
     val __obj = js.Dynamic.literal()
-    if (categories != null) __obj.updateDynamic("categories")(categories)
-    if (types != null) __obj.updateDynamic("types")(types)
+    if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
+    if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserNotificationSettings]
   }
 }

@@ -18,8 +18,8 @@ object QueryGrantableRolesResponse {
   @scala.inline
   def apply(nextPageToken: String = null, roles: js.Array[Role] = null): QueryGrantableRolesResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (roles != null) __obj.updateDynamic("roles")(roles)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (roles != null) __obj.updateDynamic("roles")(roles.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryGrantableRolesResponse]
   }
 }

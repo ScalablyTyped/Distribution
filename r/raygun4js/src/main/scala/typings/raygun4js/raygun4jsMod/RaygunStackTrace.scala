@@ -15,7 +15,7 @@ trait RaygunStackTrace extends js.Object {
 object RaygunStackTrace {
   @scala.inline
   def apply(ClassName: String, ColumnNumber: Double, FileName: String, LineNumber: Double, MethodName: String): RaygunStackTrace = {
-    val __obj = js.Dynamic.literal(ClassName = ClassName, ColumnNumber = ColumnNumber, FileName = FileName, LineNumber = LineNumber, MethodName = MethodName)
+    val __obj = js.Dynamic.literal(ClassName = ClassName.asInstanceOf[js.Any], ColumnNumber = ColumnNumber.asInstanceOf[js.Any], FileName = FileName.asInstanceOf[js.Any], LineNumber = LineNumber.asInstanceOf[js.Any], MethodName = MethodName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RaygunStackTrace]
   }

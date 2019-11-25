@@ -12,7 +12,7 @@ trait OpaqueViewState extends js.Object {
 object OpaqueViewState {
   @scala.inline
   def apply(__brand__ : `Brand for OpaqueViewState that nothing will match`): OpaqueViewState = {
-    val __obj = js.Dynamic.literal(__brand__ = __brand__)
+    val __obj = js.Dynamic.literal(__brand__ = __brand__.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OpaqueViewState]
   }

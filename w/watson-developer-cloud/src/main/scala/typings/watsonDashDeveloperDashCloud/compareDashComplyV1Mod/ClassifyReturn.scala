@@ -46,17 +46,17 @@ object ClassifyReturn {
     termination_dates: js.Array[TerminationDates] = null
   ): ClassifyReturn = {
     val __obj = js.Dynamic.literal()
-    if (contract_amounts != null) __obj.updateDynamic("contract_amounts")(contract_amounts)
-    if (contract_type != null) __obj.updateDynamic("contract_type")(contract_type)
-    if (document != null) __obj.updateDynamic("document")(document)
-    if (document_structure != null) __obj.updateDynamic("document_structure")(document_structure)
-    if (effective_dates != null) __obj.updateDynamic("effective_dates")(effective_dates)
-    if (elements != null) __obj.updateDynamic("elements")(elements)
-    if (model_id != null) __obj.updateDynamic("model_id")(model_id)
-    if (model_version != null) __obj.updateDynamic("model_version")(model_version)
-    if (parties != null) __obj.updateDynamic("parties")(parties)
-    if (tables != null) __obj.updateDynamic("tables")(tables)
-    if (termination_dates != null) __obj.updateDynamic("termination_dates")(termination_dates)
+    if (contract_amounts != null) __obj.updateDynamic("contract_amounts")(contract_amounts.asInstanceOf[js.Any])
+    if (contract_type != null) __obj.updateDynamic("contract_type")(contract_type.asInstanceOf[js.Any])
+    if (document != null) __obj.updateDynamic("document")(document.asInstanceOf[js.Any])
+    if (document_structure != null) __obj.updateDynamic("document_structure")(document_structure.asInstanceOf[js.Any])
+    if (effective_dates != null) __obj.updateDynamic("effective_dates")(effective_dates.asInstanceOf[js.Any])
+    if (elements != null) __obj.updateDynamic("elements")(elements.asInstanceOf[js.Any])
+    if (model_id != null) __obj.updateDynamic("model_id")(model_id.asInstanceOf[js.Any])
+    if (model_version != null) __obj.updateDynamic("model_version")(model_version.asInstanceOf[js.Any])
+    if (parties != null) __obj.updateDynamic("parties")(parties.asInstanceOf[js.Any])
+    if (tables != null) __obj.updateDynamic("tables")(tables.asInstanceOf[js.Any])
+    if (termination_dates != null) __obj.updateDynamic("termination_dates")(termination_dates.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassifyReturn]
   }
 }

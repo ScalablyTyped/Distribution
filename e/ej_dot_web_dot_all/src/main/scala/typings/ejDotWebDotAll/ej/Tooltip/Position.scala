@@ -17,8 +17,8 @@ object Position {
   @scala.inline
   def apply(stem: PositionStem = null, target: PositionTarget = null): Position = {
     val __obj = js.Dynamic.literal()
-    if (stem != null) __obj.updateDynamic("stem")(stem)
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (stem != null) __obj.updateDynamic("stem")(stem.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[Position]
   }
 }

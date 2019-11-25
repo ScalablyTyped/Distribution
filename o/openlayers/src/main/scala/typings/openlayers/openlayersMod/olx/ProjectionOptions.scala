@@ -33,14 +33,14 @@ object ProjectionOptions {
     units: Units | String = null,
     worldExtent: Extent = null
   ): ProjectionOptions = {
-    val __obj = js.Dynamic.literal(code = code)
-    if (axisOrientation != null) __obj.updateDynamic("axisOrientation")(axisOrientation)
-    if (extent != null) __obj.updateDynamic("extent")(extent)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
+    if (axisOrientation != null) __obj.updateDynamic("axisOrientation")(axisOrientation.asInstanceOf[js.Any])
+    if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
     if (getPointResolution != null) __obj.updateDynamic("getPointResolution")(js.Any.fromFunction2(getPointResolution))
-    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global)
+    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global.asInstanceOf[js.Any])
     if (metersPerUnit != null) __obj.updateDynamic("metersPerUnit")(metersPerUnit.asInstanceOf[js.Any])
     if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
-    if (worldExtent != null) __obj.updateDynamic("worldExtent")(worldExtent)
+    if (worldExtent != null) __obj.updateDynamic("worldExtent")(worldExtent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectionOptions]
   }
 }

@@ -43,7 +43,7 @@ package object lodashMod {
   type Comparator2[T1, T2] = js.Function2[/* a */ T1, /* b */ T2, Boolean]
   type CondPair[T, R] = js.Tuple2[js.Function1[/* val */ T, Boolean], js.Function1[/* val */ T, R]]
   // conforms
-  type ConformsPredicateObject[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type ConformsPredicateObject[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? (val : T[P]): boolean}
     */ typings.lodash.lodashStrings.ConformsPredicateObject with T
   type Dictionary[T] = StringDictionary[T]
@@ -120,29 +120,29 @@ package object lodashMod {
   // NOTE: keys of objects at run time are always strings, even when a NumericDictionary is being iterated.
   type NumericDictionaryIterator[T, TResult] = js.Function3[/* value */ T, /* key */ String, /* collection */ NumericDictionary[T], TResult]
   type ObjectIteratee[TObject] = (ObjectIterator[TObject, NotVoid]) | (IterateeShorthand[
-    /* import warning: ImportType.apply Failed type conversion: TObject[keyof TObject] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: TObject[keyof TObject] */ js.Any
   ])
   type ObjectIterateeCustom[TObject, TResult] = (ObjectIterator[TObject, TResult]) | (IterateeShorthand[
-    /* import warning: ImportType.apply Failed type conversion: TObject[keyof TObject] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: TObject[keyof TObject] */ js.Any
   ])
   // Note: key should be string, not keyof T, because the actual object may contain extra properties that were not specified in the type.
   type ObjectIterator[TObject, TResult] = js.Function3[
-    /* import warning: ImportType.apply Failed type conversion: TObject[keyof TObject] */ /* value */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: TObject[keyof TObject] */ /* value */ js.Any, 
     /* key */ String, 
     /* collection */ TObject, 
     TResult
   ]
-  type ObjectIteratorTypeGuard[TObject, S /* <: /* import warning: ImportType.apply Failed type conversion: TObject[keyof TObject] */ js.Any */] = js.Function3[
-    /* import warning: ImportType.apply Failed type conversion: TObject[keyof TObject] */ /* value */ js.Any, 
+  type ObjectIteratorTypeGuard[TObject, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: TObject[keyof TObject] */ js.Any */] = js.Function3[
+    /* import warning: importer.ImportType#apply Failed type conversion: TObject[keyof TObject] */ /* value */ js.Any, 
     /* key */ String, 
     /* collection */ TObject, 
     /* is S */ Boolean
   ]
   type Omit[T, K /* <: String */] = Pick[
     T, 
-    /* import warning: ImportType.apply Failed type conversion: {[ P in keyof T ]: P} & {[ P in K ]: never} & {[x: string] : never}[keyof T] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: P} & {[ P in K ]: never} & {[x: string] : never}[keyof T] */ js.Any
   ]
-  type PartialDeep[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type PartialDeep[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias lodash.lodash.PartialDeep<T[P]> * / object}
     */ typings.lodash.lodashStrings.PartialDeep with js.Any
   type PartialObject[T] = GlobalPartial[T]

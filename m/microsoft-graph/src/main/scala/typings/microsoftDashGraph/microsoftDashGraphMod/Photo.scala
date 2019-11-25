@@ -36,14 +36,14 @@ object Photo {
     takenDateTime: String = null
   ): Photo = {
     val __obj = js.Dynamic.literal()
-    if (cameraMake != null) __obj.updateDynamic("cameraMake")(cameraMake)
-    if (cameraModel != null) __obj.updateDynamic("cameraModel")(cameraModel)
+    if (cameraMake != null) __obj.updateDynamic("cameraMake")(cameraMake.asInstanceOf[js.Any])
+    if (cameraModel != null) __obj.updateDynamic("cameraModel")(cameraModel.asInstanceOf[js.Any])
     if (exposureDenominator != null) __obj.updateDynamic("exposureDenominator")(exposureDenominator.asInstanceOf[js.Any])
     if (exposureNumerator != null) __obj.updateDynamic("exposureNumerator")(exposureNumerator.asInstanceOf[js.Any])
     if (fNumber != null) __obj.updateDynamic("fNumber")(fNumber.asInstanceOf[js.Any])
     if (focalLength != null) __obj.updateDynamic("focalLength")(focalLength.asInstanceOf[js.Any])
     if (iso != null) __obj.updateDynamic("iso")(iso.asInstanceOf[js.Any])
-    if (takenDateTime != null) __obj.updateDynamic("takenDateTime")(takenDateTime)
+    if (takenDateTime != null) __obj.updateDynamic("takenDateTime")(takenDateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[Photo]
   }
 }

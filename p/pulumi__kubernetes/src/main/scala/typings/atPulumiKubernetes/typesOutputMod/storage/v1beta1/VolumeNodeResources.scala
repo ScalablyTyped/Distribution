@@ -21,7 +21,7 @@ trait VolumeNodeResources extends js.Object {
 object VolumeNodeResources {
   @scala.inline
   def apply(count: Double): VolumeNodeResources = {
-    val __obj = js.Dynamic.literal(count = count)
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[VolumeNodeResources]
   }

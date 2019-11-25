@@ -18,6 +18,5 @@ object Libgit2 extends js.Object {
   def opts(option: Double): Double = js.native
   def shutdown(): Double = js.native
   def version(major: Double, minor: Double, rev: Double): Unit = js.native
-  type OPT = typings.nodegit.libDashGit2Mod.Libgit2.OPT
 }
 

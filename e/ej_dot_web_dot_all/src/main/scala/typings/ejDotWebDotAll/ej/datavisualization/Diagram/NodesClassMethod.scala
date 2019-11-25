@@ -15,7 +15,7 @@ object NodesClassMethod {
   @scala.inline
   def apply(scope: String = null): NodesClassMethod = {
     val __obj = js.Dynamic.literal()
-    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodesClassMethod]
   }
 }

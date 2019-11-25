@@ -20,9 +20,9 @@ object PushOptions {
     status: Int | Double = null
   ): PushOptions = {
     val __obj = js.Dynamic.literal()
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (request != null) __obj.updateDynamic("request")(request)
-    if (response != null) __obj.updateDynamic("response")(response)
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
+    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[PushOptions]
   }

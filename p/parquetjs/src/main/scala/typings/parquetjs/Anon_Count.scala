@@ -15,7 +15,7 @@ trait Anon_Count extends js.Object {
 object Anon_Count {
   @scala.inline
   def apply(count: Double, dlevels: js.Array[Double], rlevels: js.Array[Double], values: js.Array[Buffer]): Anon_Count = {
-    val __obj = js.Dynamic.literal(count = count, dlevels = dlevels, rlevels = rlevels, values = values)
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], dlevels = dlevels.asInstanceOf[js.Any], rlevels = rlevels.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Count]
   }

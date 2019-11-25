@@ -12,7 +12,7 @@ object Anon_OnError {
   @scala.inline
   def apply(onError: js.Function = null): Anon_OnError = {
     val __obj = js.Dynamic.literal()
-    if (onError != null) __obj.updateDynamic("onError")(onError)
+    if (onError != null) __obj.updateDynamic("onError")(onError.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_OnError]
   }
 }

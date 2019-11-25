@@ -11,7 +11,7 @@ trait SkewYTransform extends js.Object {
 object SkewYTransform {
   @scala.inline
   def apply(skewY: String): SkewYTransform = {
-    val __obj = js.Dynamic.literal(skewY = skewY)
+    val __obj = js.Dynamic.literal(skewY = skewY.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SkewYTransform]
   }

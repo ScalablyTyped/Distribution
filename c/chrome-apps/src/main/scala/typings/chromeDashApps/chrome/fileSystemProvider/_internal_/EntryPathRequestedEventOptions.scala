@@ -17,7 +17,7 @@ trait EntryPathRequestedEventOptions extends RequestedEventOptions {
 object EntryPathRequestedEventOptions {
   @scala.inline
   def apply(entryPath: String, fileSystemId: String, requestId: integer): EntryPathRequestedEventOptions = {
-    val __obj = js.Dynamic.literal(entryPath = entryPath, fileSystemId = fileSystemId, requestId = requestId)
+    val __obj = js.Dynamic.literal(entryPath = entryPath.asInstanceOf[js.Any], fileSystemId = fileSystemId.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EntryPathRequestedEventOptions]
   }

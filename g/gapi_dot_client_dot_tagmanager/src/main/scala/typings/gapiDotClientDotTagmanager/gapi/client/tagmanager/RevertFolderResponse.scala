@@ -16,7 +16,7 @@ object RevertFolderResponse {
   @scala.inline
   def apply(folder: Folder = null): RevertFolderResponse = {
     val __obj = js.Dynamic.literal()
-    if (folder != null) __obj.updateDynamic("folder")(folder)
+    if (folder != null) __obj.updateDynamic("folder")(folder.asInstanceOf[js.Any])
     __obj.asInstanceOf[RevertFolderResponse]
   }
 }

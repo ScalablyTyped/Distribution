@@ -21,9 +21,9 @@ object MarkerProps {
     value: Int | Double = null
   ): MarkerProps = {
     val __obj = js.Dynamic.literal()
-    if (markerStyle != null) __obj.updateDynamic("markerStyle")(markerStyle)
+    if (markerStyle != null) __obj.updateDynamic("markerStyle")(markerStyle.asInstanceOf[js.Any])
     if (pressed != null) __obj.updateDynamic("pressed")(pressed.asInstanceOf[js.Any])
-    if (pressedMarkerStyle != null) __obj.updateDynamic("pressedMarkerStyle")(pressedMarkerStyle)
+    if (pressedMarkerStyle != null) __obj.updateDynamic("pressedMarkerStyle")(pressedMarkerStyle.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkerProps]
   }

@@ -20,3 +20,14 @@ import scala.scalajs.js.annotation._
 */
 trait RepeatMode extends js.Object
 
+object RepeatMode {
+  @scala.inline
+  def `0`: typings.deezerDashSdk.deezerDashSdkNumbers.`0` = this.cast(0)
+  @scala.inline
+  def `1`: typings.deezerDashSdk.deezerDashSdkNumbers.`1` = this.cast(1)
+  @scala.inline
+  def `2`: typings.deezerDashSdk.deezerDashSdkNumbers.`2` = this.cast(2)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

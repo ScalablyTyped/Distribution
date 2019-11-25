@@ -40,7 +40,7 @@ object DeliveryViewData {
     startDate: Date,
     teams: js.Array[TimelineTeamData]
   ): DeliveryViewData = {
-    val __obj = js.Dynamic.literal(childIdToParentIdMap = childIdToParentIdMap, criteriaStatus = criteriaStatus, endDate = endDate, id = id, revision = revision, startDate = startDate, teams = teams)
+    val __obj = js.Dynamic.literal(childIdToParentIdMap = childIdToParentIdMap.asInstanceOf[js.Any], criteriaStatus = criteriaStatus.asInstanceOf[js.Any], endDate = endDate.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any], startDate = startDate.asInstanceOf[js.Any], teams = teams.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeliveryViewData]
   }

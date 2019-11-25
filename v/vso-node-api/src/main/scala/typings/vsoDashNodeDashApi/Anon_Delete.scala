@@ -14,7 +14,7 @@ trait Anon_Delete extends js.Object {
 object Anon_Delete {
   @scala.inline
   def apply(delete: Double, edit: Double, none: Double, view: Double): Anon_Delete = {
-    val __obj = js.Dynamic.literal(delete = delete, edit = edit, none = none, view = view)
+    val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], edit = edit.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Delete]
   }

@@ -25,8 +25,8 @@ object ListProvisionedCapacityOutput {
     $metadata: ResponseMetadata,
     ProvisionedCapacityList: js.Array[_UnmarshalledProvisionedCapacityDescription] = null
   ): ListProvisionedCapacityOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (ProvisionedCapacityList != null) __obj.updateDynamic("ProvisionedCapacityList")(ProvisionedCapacityList)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (ProvisionedCapacityList != null) __obj.updateDynamic("ProvisionedCapacityList")(ProvisionedCapacityList.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListProvisionedCapacityOutput]
   }
 }

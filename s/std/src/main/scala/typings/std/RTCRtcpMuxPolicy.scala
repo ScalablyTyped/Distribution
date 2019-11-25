@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait RTCRtcpMuxPolicy extends js.Object
 
+object RTCRtcpMuxPolicy {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def negotiate: typings.std.stdStrings.negotiate = this.cast("negotiate")
+  @scala.inline
+  def require: typings.std.stdStrings.require = this.cast("require")
+}
+

@@ -80,14 +80,14 @@ object Anon_ClearInvalid {
     path: String = null,
     ttl: Int | Double = null
   ): Anon_ClearInvalid = {
-    val __obj = js.Dynamic.literal(password = password)
-    if (!js.isUndefined(clearInvalid)) __obj.updateDynamic("clearInvalid")(clearInvalid)
+    val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearInvalid)) __obj.updateDynamic("clearInvalid")(clearInvalid.asInstanceOf[js.Any])
     if (customSessionIDGenerator != null) __obj.updateDynamic("customSessionIDGenerator")(js.Any.fromFunction1(customSessionIDGenerator))
-    if (!js.isUndefined(ignoreErrors)) __obj.updateDynamic("ignoreErrors")(ignoreErrors)
-    if (!js.isUndefined(isHttpOnly)) __obj.updateDynamic("isHttpOnly")(isHttpOnly)
+    if (!js.isUndefined(ignoreErrors)) __obj.updateDynamic("ignoreErrors")(ignoreErrors.asInstanceOf[js.Any])
+    if (!js.isUndefined(isHttpOnly)) __obj.updateDynamic("isHttpOnly")(isHttpOnly.asInstanceOf[js.Any])
     if (isSameSite != null) __obj.updateDynamic("isSameSite")(isSameSite.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSecure)) __obj.updateDynamic("isSecure")(isSecure)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (!js.isUndefined(isSecure)) __obj.updateDynamic("isSecure")(isSecure.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ClearInvalid]
   }

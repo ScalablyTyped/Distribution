@@ -11,7 +11,7 @@ trait PostsInsightsFeedResponseTray extends js.Object {
 object PostsInsightsFeedResponseTray {
   @scala.inline
   def apply(value: Double): PostsInsightsFeedResponseTray = {
-    val __obj = js.Dynamic.literal(value = value)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PostsInsightsFeedResponseTray]
   }

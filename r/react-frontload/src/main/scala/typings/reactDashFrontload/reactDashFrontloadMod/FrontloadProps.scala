@@ -12,7 +12,7 @@ object FrontloadProps {
   @scala.inline
   def apply(noServerRender: js.UndefOr[Boolean] = js.undefined): FrontloadProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(noServerRender)) __obj.updateDynamic("noServerRender")(noServerRender)
+    if (!js.isUndefined(noServerRender)) __obj.updateDynamic("noServerRender")(noServerRender.asInstanceOf[js.Any])
     __obj.asInstanceOf[FrontloadProps]
   }
 }

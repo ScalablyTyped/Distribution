@@ -17,7 +17,7 @@ object ActionMap {
     onEntry: js.Array[Action[TContext, TEvent]],
     onExit: js.Array[Action[TContext, TEvent]]
   ): ActionMap[TContext, TEvent] = {
-    val __obj = js.Dynamic.literal(actions = actions, onEntry = onEntry, onExit = onExit)
+    val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], onEntry = onEntry.asInstanceOf[js.Any], onExit = onExit.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ActionMap[TContext, TEvent]]
   }

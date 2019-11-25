@@ -30,7 +30,7 @@ object JQueryColorpickerStatic_ {
     swatches: StringDictionary[StringDictionary[RGB]],
     writers: StringDictionary[js.Function2[/* color */ js.Any, /* that */ js.Any, _]]
   ): JQueryColorpickerStatic_ = {
-    val __obj = js.Dynamic.literal(Color = Color, limits = limits, parsers = parsers, parts = parts, partslists = partslists, regional = regional, swatches = swatches, writers = writers)
+    val __obj = js.Dynamic.literal(Color = Color.asInstanceOf[js.Any], limits = limits.asInstanceOf[js.Any], parsers = parsers.asInstanceOf[js.Any], parts = parts.asInstanceOf[js.Any], partslists = partslists.asInstanceOf[js.Any], regional = regional.asInstanceOf[js.Any], swatches = swatches.asInstanceOf[js.Any], writers = writers.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[JQueryColorpickerStatic_]
   }

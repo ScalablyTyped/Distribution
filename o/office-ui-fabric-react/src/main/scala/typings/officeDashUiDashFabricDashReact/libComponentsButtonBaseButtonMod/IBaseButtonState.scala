@@ -11,7 +11,7 @@ trait IBaseButtonState extends js.Object {
 object IBaseButtonState {
   @scala.inline
   def apply(menuHidden: Boolean): IBaseButtonState = {
-    val __obj = js.Dynamic.literal(menuHidden = menuHidden)
+    val __obj = js.Dynamic.literal(menuHidden = menuHidden.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IBaseButtonState]
   }

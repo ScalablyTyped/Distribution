@@ -30,7 +30,7 @@ object Anon_C {
     margin_west: Double,
     position: NE | NC | NW | SE | SC | SW | C | CE | CW
   ): Anon_C = {
-    val __obj = js.Dynamic.literal(margin_east = margin_east, margin_nord = margin_nord, margin_sud = margin_sud, margin_west = margin_west, position = position.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(margin_east = margin_east.asInstanceOf[js.Any], margin_nord = margin_nord.asInstanceOf[js.Any], margin_sud = margin_sud.asInstanceOf[js.Any], margin_west = margin_west.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_C]
   }

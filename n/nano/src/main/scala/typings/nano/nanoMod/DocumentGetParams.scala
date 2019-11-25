@@ -51,18 +51,18 @@ object DocumentGetParams {
     revs_info: js.UndefOr[Boolean] = js.undefined
   ): DocumentGetParams = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(att_encoding_info)) __obj.updateDynamic("att_encoding_info")(att_encoding_info)
-    if (!js.isUndefined(attachments)) __obj.updateDynamic("attachments")(attachments)
-    if (atts_since != null) __obj.updateDynamic("atts_since")(atts_since)
-    if (!js.isUndefined(conflicts)) __obj.updateDynamic("conflicts")(conflicts)
-    if (!js.isUndefined(deleted_conflicts)) __obj.updateDynamic("deleted_conflicts")(deleted_conflicts)
-    if (!js.isUndefined(latest)) __obj.updateDynamic("latest")(latest)
-    if (!js.isUndefined(local_seq)) __obj.updateDynamic("local_seq")(local_seq)
-    if (!js.isUndefined(meta)) __obj.updateDynamic("meta")(meta)
-    if (open_revs != null) __obj.updateDynamic("open_revs")(open_revs)
-    if (rev != null) __obj.updateDynamic("rev")(rev)
-    if (!js.isUndefined(revs)) __obj.updateDynamic("revs")(revs)
-    if (!js.isUndefined(revs_info)) __obj.updateDynamic("revs_info")(revs_info)
+    if (!js.isUndefined(att_encoding_info)) __obj.updateDynamic("att_encoding_info")(att_encoding_info.asInstanceOf[js.Any])
+    if (!js.isUndefined(attachments)) __obj.updateDynamic("attachments")(attachments.asInstanceOf[js.Any])
+    if (atts_since != null) __obj.updateDynamic("atts_since")(atts_since.asInstanceOf[js.Any])
+    if (!js.isUndefined(conflicts)) __obj.updateDynamic("conflicts")(conflicts.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleted_conflicts)) __obj.updateDynamic("deleted_conflicts")(deleted_conflicts.asInstanceOf[js.Any])
+    if (!js.isUndefined(latest)) __obj.updateDynamic("latest")(latest.asInstanceOf[js.Any])
+    if (!js.isUndefined(local_seq)) __obj.updateDynamic("local_seq")(local_seq.asInstanceOf[js.Any])
+    if (!js.isUndefined(meta)) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
+    if (open_revs != null) __obj.updateDynamic("open_revs")(open_revs.asInstanceOf[js.Any])
+    if (rev != null) __obj.updateDynamic("rev")(rev.asInstanceOf[js.Any])
+    if (!js.isUndefined(revs)) __obj.updateDynamic("revs")(revs.asInstanceOf[js.Any])
+    if (!js.isUndefined(revs_info)) __obj.updateDynamic("revs_info")(revs_info.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentGetParams]
   }
 }

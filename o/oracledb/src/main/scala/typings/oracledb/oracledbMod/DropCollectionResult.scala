@@ -15,7 +15,7 @@ trait DropCollectionResult extends js.Object {
 object DropCollectionResult {
   @scala.inline
   def apply(dropped: Boolean): DropCollectionResult = {
-    val __obj = js.Dynamic.literal(dropped = dropped)
+    val __obj = js.Dynamic.literal(dropped = dropped.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DropCollectionResult]
   }

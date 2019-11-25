@@ -21,11 +21,11 @@ object ModelDestroyOptions {
   ): ModelDestroyOptions = {
     val __obj = js.Dynamic.literal()
     if (beforeSend != null) __obj.updateDynamic("beforeSend")(js.Any.fromFunction1(beforeSend))
-    if (data != null) __obj.updateDynamic("data")(data)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction3(error))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction3(success))
-    if (url != null) __obj.updateDynamic("url")(url)
-    if (!js.isUndefined(wait)) __obj.updateDynamic("wait")(wait)
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (!js.isUndefined(wait)) __obj.updateDynamic("wait")(wait.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelDestroyOptions]
   }
 }

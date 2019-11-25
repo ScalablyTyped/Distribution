@@ -51,14 +51,14 @@ object Anon_DefaultTimeoutInterval {
     showColors: js.UndefOr[Boolean] = js.undefined
   ): Anon_DefaultTimeoutInterval = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (defaultTimeoutInterval != null) __obj.updateDynamic("defaultTimeoutInterval")(defaultTimeoutInterval.asInstanceOf[js.Any])
-    if (grep != null) __obj.updateDynamic("grep")(grep)
-    if (!js.isUndefined(invertGrep)) __obj.updateDynamic("invertGrep")(invertGrep)
+    if (grep != null) __obj.updateDynamic("grep")(grep.asInstanceOf[js.Any])
+    if (!js.isUndefined(invertGrep)) __obj.updateDynamic("invertGrep")(invertGrep.asInstanceOf[js.Any])
     if (print != null) __obj.updateDynamic("print")(js.Any.fromFunction0(print))
-    if (!js.isUndefined(random)) __obj.updateDynamic("random")(random)
-    if (seed != null) __obj.updateDynamic("seed")(seed)
-    if (!js.isUndefined(showColors)) __obj.updateDynamic("showColors")(showColors)
+    if (!js.isUndefined(random)) __obj.updateDynamic("random")(random.asInstanceOf[js.Any])
+    if (seed != null) __obj.updateDynamic("seed")(seed.asInstanceOf[js.Any])
+    if (!js.isUndefined(showColors)) __obj.updateDynamic("showColors")(showColors.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DefaultTimeoutInterval]
   }
 }

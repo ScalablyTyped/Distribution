@@ -13,7 +13,7 @@ trait Scope extends js.Object {
 object Scope {
   @scala.inline
   def apply(description: String, id: String, public: Boolean): Scope = {
-    val __obj = js.Dynamic.literal(description = description, id = id, public = public)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], public = public.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Scope]
   }

@@ -17,7 +17,7 @@ trait IProps extends js.Object {
 object IProps {
   @scala.inline
   def apply(source: String): IProps = {
-    val __obj = js.Dynamic.literal(source = source)
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IProps]
   }

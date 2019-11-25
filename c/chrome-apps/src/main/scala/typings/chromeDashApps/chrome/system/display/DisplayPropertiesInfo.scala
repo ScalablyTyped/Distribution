@@ -101,14 +101,14 @@ object DisplayPropertiesInfo {
     overscan: Insets = null,
     rotation: `0` | `90` | `180` | `270` = null
   ): DisplayPropertiesInfo = {
-    val __obj = js.Dynamic.literal(boundsOriginY = boundsOriginY)
+    val __obj = js.Dynamic.literal(boundsOriginY = boundsOriginY.asInstanceOf[js.Any])
     if (boundsOriginX != null) __obj.updateDynamic("boundsOriginX")(boundsOriginX.asInstanceOf[js.Any])
-    if (displayMode != null) __obj.updateDynamic("displayMode")(displayMode)
+    if (displayMode != null) __obj.updateDynamic("displayMode")(displayMode.asInstanceOf[js.Any])
     if (displayZoomFactor != null) __obj.updateDynamic("displayZoomFactor")(displayZoomFactor.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPrimary)) __obj.updateDynamic("isPrimary")(isPrimary)
-    if (!js.isUndefined(isUnified)) __obj.updateDynamic("isUnified")(isUnified)
-    if (mirroringSourceId != null) __obj.updateDynamic("mirroringSourceId")(mirroringSourceId)
-    if (overscan != null) __obj.updateDynamic("overscan")(overscan)
+    if (!js.isUndefined(isPrimary)) __obj.updateDynamic("isPrimary")(isPrimary.asInstanceOf[js.Any])
+    if (!js.isUndefined(isUnified)) __obj.updateDynamic("isUnified")(isUnified.asInstanceOf[js.Any])
+    if (mirroringSourceId != null) __obj.updateDynamic("mirroringSourceId")(mirroringSourceId.asInstanceOf[js.Any])
+    if (overscan != null) __obj.updateDynamic("overscan")(overscan.asInstanceOf[js.Any])
     if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisplayPropertiesInfo]
   }

@@ -27,8 +27,8 @@ object GetWindowBoundsCenteredOptions {
   @scala.inline
   def apply(size: Size = null, window: BrowserWindow = null): GetWindowBoundsCenteredOptions = {
     val __obj = js.Dynamic.literal()
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (window != null) __obj.updateDynamic("window")(window)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (window != null) __obj.updateDynamic("window")(window.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetWindowBoundsCenteredOptions]
   }
 }

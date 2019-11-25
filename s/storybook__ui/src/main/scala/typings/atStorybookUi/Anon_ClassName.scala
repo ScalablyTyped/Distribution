@@ -12,8 +12,8 @@ trait Anon_ClassName extends js.Object {
 object Anon_ClassName {
   @scala.inline
   def apply(className: String, isSelected: js.UndefOr[Boolean] = js.undefined): Anon_ClassName = {
-    val __obj = js.Dynamic.literal(className = className)
-    if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected)
+    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ClassName]
   }
 }

@@ -20,9 +20,9 @@ object SettingsProps {
     style: CSSProperties = null
   ): SettingsProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (settingsComponents != null) __obj.updateDynamic("settingsComponents")(settingsComponents)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (settingsComponents != null) __obj.updateDynamic("settingsComponents")(settingsComponents.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[SettingsProps]
   }
 }

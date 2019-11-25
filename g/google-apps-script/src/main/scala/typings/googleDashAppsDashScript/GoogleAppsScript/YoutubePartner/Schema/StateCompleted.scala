@@ -13,8 +13,8 @@ object StateCompleted {
   @scala.inline
   def apply(state: String = null, timeCompleted: String = null): StateCompleted = {
     val __obj = js.Dynamic.literal()
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (timeCompleted != null) __obj.updateDynamic("timeCompleted")(timeCompleted)
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (timeCompleted != null) __obj.updateDynamic("timeCompleted")(timeCompleted.asInstanceOf[js.Any])
     __obj.asInstanceOf[StateCompleted]
   }
 }

@@ -23,10 +23,10 @@ object UploadOptions {
     size: js.Any = null,
     thumbnailImage: Buffer | Readable = null
   ): UploadOptions = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
     if (previewImage != null) __obj.updateDynamic("previewImage")(previewImage.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (thumbnailImage != null) __obj.updateDynamic("thumbnailImage")(thumbnailImage.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadOptions]
   }

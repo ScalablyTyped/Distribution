@@ -17,8 +17,8 @@ trait ClassResult extends js.Object {
 object ClassResult {
   @scala.inline
   def apply(class_name: String, score: Double, type_hierarchy: String = null): ClassResult = {
-    val __obj = js.Dynamic.literal(class_name = class_name, score = score)
-    if (type_hierarchy != null) __obj.updateDynamic("type_hierarchy")(type_hierarchy)
+    val __obj = js.Dynamic.literal(class_name = class_name.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any])
+    if (type_hierarchy != null) __obj.updateDynamic("type_hierarchy")(type_hierarchy.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassResult]
   }
 }

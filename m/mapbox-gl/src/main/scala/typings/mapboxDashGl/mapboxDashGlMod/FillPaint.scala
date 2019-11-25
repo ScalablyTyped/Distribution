@@ -40,16 +40,16 @@ object FillPaint {
     val __obj = js.Dynamic.literal()
     if (`fill-antialias` != null) __obj.updateDynamic("fill-antialias")(`fill-antialias`.asInstanceOf[js.Any])
     if (`fill-color` != null) __obj.updateDynamic("fill-color")(`fill-color`.asInstanceOf[js.Any])
-    if (`fill-color-transition` != null) __obj.updateDynamic("fill-color-transition")(`fill-color-transition`)
+    if (`fill-color-transition` != null) __obj.updateDynamic("fill-color-transition")(`fill-color-transition`.asInstanceOf[js.Any])
     if (`fill-opacity` != null) __obj.updateDynamic("fill-opacity")(`fill-opacity`.asInstanceOf[js.Any])
-    if (`fill-opacity-transition` != null) __obj.updateDynamic("fill-opacity-transition")(`fill-opacity-transition`)
+    if (`fill-opacity-transition` != null) __obj.updateDynamic("fill-opacity-transition")(`fill-opacity-transition`.asInstanceOf[js.Any])
     if (`fill-outline-color` != null) __obj.updateDynamic("fill-outline-color")(`fill-outline-color`.asInstanceOf[js.Any])
-    if (`fill-outline-color-transition` != null) __obj.updateDynamic("fill-outline-color-transition")(`fill-outline-color-transition`)
+    if (`fill-outline-color-transition` != null) __obj.updateDynamic("fill-outline-color-transition")(`fill-outline-color-transition`.asInstanceOf[js.Any])
     if (`fill-pattern` != null) __obj.updateDynamic("fill-pattern")(`fill-pattern`.asInstanceOf[js.Any])
-    if (`fill-pattern-transition` != null) __obj.updateDynamic("fill-pattern-transition")(`fill-pattern-transition`)
-    if (`fill-translate` != null) __obj.updateDynamic("fill-translate")(`fill-translate`)
+    if (`fill-pattern-transition` != null) __obj.updateDynamic("fill-pattern-transition")(`fill-pattern-transition`.asInstanceOf[js.Any])
+    if (`fill-translate` != null) __obj.updateDynamic("fill-translate")(`fill-translate`.asInstanceOf[js.Any])
     if (`fill-translate-anchor` != null) __obj.updateDynamic("fill-translate-anchor")(`fill-translate-anchor`.asInstanceOf[js.Any])
-    if (`fill-translate-transition` != null) __obj.updateDynamic("fill-translate-transition")(`fill-translate-transition`)
+    if (`fill-translate-transition` != null) __obj.updateDynamic("fill-translate-transition")(`fill-translate-transition`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FillPaint]
   }
 }

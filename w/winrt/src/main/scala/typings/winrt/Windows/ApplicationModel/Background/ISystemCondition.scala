@@ -11,7 +11,7 @@ trait ISystemCondition extends IBackgroundCondition {
 object ISystemCondition {
   @scala.inline
   def apply(conditionType: SystemConditionType): ISystemCondition = {
-    val __obj = js.Dynamic.literal(conditionType = conditionType)
+    val __obj = js.Dynamic.literal(conditionType = conditionType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISystemCondition]
   }

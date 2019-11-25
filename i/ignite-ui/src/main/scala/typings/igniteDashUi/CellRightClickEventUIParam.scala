@@ -48,13 +48,13 @@ object CellRightClickEventUIParam {
     rowKey: js.Any = null
   ): CellRightClickEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (cellElement != null) __obj.updateDynamic("cellElement")(cellElement)
+    if (cellElement != null) __obj.updateDynamic("cellElement")(cellElement.asInstanceOf[js.Any])
     if (colIndex != null) __obj.updateDynamic("colIndex")(colIndex.asInstanceOf[js.Any])
-    if (colKey != null) __obj.updateDynamic("colKey")(colKey)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (row != null) __obj.updateDynamic("row")(row)
+    if (colKey != null) __obj.updateDynamic("colKey")(colKey.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
     if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
-    if (rowKey != null) __obj.updateDynamic("rowKey")(rowKey)
+    if (rowKey != null) __obj.updateDynamic("rowKey")(rowKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellRightClickEventUIParam]
   }
 }

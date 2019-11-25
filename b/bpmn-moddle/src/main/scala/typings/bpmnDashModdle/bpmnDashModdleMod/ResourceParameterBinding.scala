@@ -12,7 +12,7 @@ trait ResourceParameterBinding extends TypeDerived {
 object ResourceParameterBinding {
   @scala.inline
   def apply($parent: TypeDerived, $type: ElementType, expression: Expression, parameterRef: ResourceParameter): ResourceParameterBinding = {
-    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, expression = expression, parameterRef = parameterRef)
+    val __obj = js.Dynamic.literal($parent = $parent.asInstanceOf[js.Any], $type = $type.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any], parameterRef = parameterRef.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ResourceParameterBinding]
   }

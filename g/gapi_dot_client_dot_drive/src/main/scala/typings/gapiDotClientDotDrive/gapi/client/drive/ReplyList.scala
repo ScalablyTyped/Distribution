@@ -20,9 +20,9 @@ object ReplyList {
   @scala.inline
   def apply(kind: String = null, nextPageToken: String = null, replies: js.Array[Reply] = null): ReplyList = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (replies != null) __obj.updateDynamic("replies")(replies)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (replies != null) __obj.updateDynamic("replies")(replies.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplyList]
   }
 }

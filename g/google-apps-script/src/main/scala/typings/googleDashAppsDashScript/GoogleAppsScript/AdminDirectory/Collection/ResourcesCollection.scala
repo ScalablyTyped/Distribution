@@ -21,9 +21,9 @@ object ResourcesCollection {
     Features: FeaturesCollection = null
   ): ResourcesCollection = {
     val __obj = js.Dynamic.literal()
-    if (Buildings != null) __obj.updateDynamic("Buildings")(Buildings)
-    if (Calendars != null) __obj.updateDynamic("Calendars")(Calendars)
-    if (Features != null) __obj.updateDynamic("Features")(Features)
+    if (Buildings != null) __obj.updateDynamic("Buildings")(Buildings.asInstanceOf[js.Any])
+    if (Calendars != null) __obj.updateDynamic("Calendars")(Calendars.asInstanceOf[js.Any])
+    if (Features != null) __obj.updateDynamic("Features")(Features.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourcesCollection]
   }
 }

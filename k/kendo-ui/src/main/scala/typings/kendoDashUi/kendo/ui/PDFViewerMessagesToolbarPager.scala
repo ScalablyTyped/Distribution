@@ -26,13 +26,13 @@ object PDFViewerMessagesToolbarPager {
     previous: String = null
   ): PDFViewerMessagesToolbarPager = {
     val __obj = js.Dynamic.literal()
-    if (first != null) __obj.updateDynamic("first")(first)
-    if (last != null) __obj.updateDynamic("last")(last)
-    if (next != null) __obj.updateDynamic("next")(next)
-    if (of != null) __obj.updateDynamic("of")(of)
-    if (page != null) __obj.updateDynamic("page")(page)
-    if (pages != null) __obj.updateDynamic("pages")(pages)
-    if (previous != null) __obj.updateDynamic("previous")(previous)
+    if (first != null) __obj.updateDynamic("first")(first.asInstanceOf[js.Any])
+    if (last != null) __obj.updateDynamic("last")(last.asInstanceOf[js.Any])
+    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
+    if (of != null) __obj.updateDynamic("of")(of.asInstanceOf[js.Any])
+    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
+    if (pages != null) __obj.updateDynamic("pages")(pages.asInstanceOf[js.Any])
+    if (previous != null) __obj.updateDynamic("previous")(previous.asInstanceOf[js.Any])
     __obj.asInstanceOf[PDFViewerMessagesToolbarPager]
   }
 }

@@ -20,8 +20,8 @@ object Options {
   @scala.inline
   def apply(args: js.Array[_] = null, context: Hexo = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (args != null) __obj.updateDynamic("args")(args)
-    if (context != null) __obj.updateDynamic("context")(context)
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

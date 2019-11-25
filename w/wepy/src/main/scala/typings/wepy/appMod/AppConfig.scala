@@ -19,9 +19,9 @@ object AppConfig {
     pageEvents: js.Array[String] = null
   ): AppConfig = {
     val __obj = js.Dynamic.literal()
-    if (appEvents != null) __obj.updateDynamic("appEvents")(appEvents)
+    if (appEvents != null) __obj.updateDynamic("appEvents")(appEvents.asInstanceOf[js.Any])
     if (noPromiseAPI != null) __obj.updateDynamic("noPromiseAPI")(noPromiseAPI.asInstanceOf[js.Any])
-    if (pageEvents != null) __obj.updateDynamic("pageEvents")(pageEvents)
+    if (pageEvents != null) __obj.updateDynamic("pageEvents")(pageEvents.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppConfig]
   }
 }

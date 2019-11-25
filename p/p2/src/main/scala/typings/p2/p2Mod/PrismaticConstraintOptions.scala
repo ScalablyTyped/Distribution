@@ -28,15 +28,15 @@ object PrismaticConstraintOptions {
     wakeUpBodies: js.UndefOr[Boolean] = js.undefined
   ): PrismaticConstraintOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(collideConnected)) __obj.updateDynamic("collideConnected")(collideConnected)
-    if (!js.isUndefined(disableRotationalLock)) __obj.updateDynamic("disableRotationalLock")(disableRotationalLock)
-    if (localAnchorA != null) __obj.updateDynamic("localAnchorA")(localAnchorA)
-    if (localAnchorB != null) __obj.updateDynamic("localAnchorB")(localAnchorB)
-    if (localAxisA != null) __obj.updateDynamic("localAxisA")(localAxisA)
+    if (!js.isUndefined(collideConnected)) __obj.updateDynamic("collideConnected")(collideConnected.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableRotationalLock)) __obj.updateDynamic("disableRotationalLock")(disableRotationalLock.asInstanceOf[js.Any])
+    if (localAnchorA != null) __obj.updateDynamic("localAnchorA")(localAnchorA.asInstanceOf[js.Any])
+    if (localAnchorB != null) __obj.updateDynamic("localAnchorB")(localAnchorB.asInstanceOf[js.Any])
+    if (localAxisA != null) __obj.updateDynamic("localAxisA")(localAxisA.asInstanceOf[js.Any])
     if (lowerLimit != null) __obj.updateDynamic("lowerLimit")(lowerLimit.asInstanceOf[js.Any])
     if (maxForce != null) __obj.updateDynamic("maxForce")(maxForce.asInstanceOf[js.Any])
     if (upperLimit != null) __obj.updateDynamic("upperLimit")(upperLimit.asInstanceOf[js.Any])
-    if (!js.isUndefined(wakeUpBodies)) __obj.updateDynamic("wakeUpBodies")(wakeUpBodies)
+    if (!js.isUndefined(wakeUpBodies)) __obj.updateDynamic("wakeUpBodies")(wakeUpBodies.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrismaticConstraintOptions]
   }
 }

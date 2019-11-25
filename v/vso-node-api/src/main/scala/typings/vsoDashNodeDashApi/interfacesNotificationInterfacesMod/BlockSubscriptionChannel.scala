@@ -12,7 +12,7 @@ object BlockSubscriptionChannel {
   @scala.inline
   def apply(`type`: String): BlockSubscriptionChannel = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlockSubscriptionChannel]
   }
 }

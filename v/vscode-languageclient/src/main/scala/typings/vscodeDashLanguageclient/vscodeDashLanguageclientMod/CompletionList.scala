@@ -1,6 +1,5 @@
 package typings.vscodeDashLanguageclient.vscodeDashLanguageclientMod
 
-import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.CompletionItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +14,16 @@ object CompletionList extends js.Object {
     * @param isIncomplete The list is not complete.
     */
   def create(): typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.CompletionList = js.native
-  def create(items: js.Array[CompletionItem]): typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.CompletionList = js.native
-  def create(items: js.Array[CompletionItem], isIncomplete: Boolean): typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.CompletionList = js.native
+  def create(
+    items: js.Array[
+      typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.CompletionItem
+    ]
+  ): typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.CompletionList = js.native
+  def create(
+    items: js.Array[
+      typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.CompletionItem
+    ],
+    isIncomplete: Boolean
+  ): typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.CompletionList = js.native
 }
 

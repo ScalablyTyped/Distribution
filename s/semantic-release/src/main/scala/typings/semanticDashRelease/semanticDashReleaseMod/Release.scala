@@ -57,10 +57,10 @@ object Release {
     name: String = null,
     url: String = null
   ): Release = {
-    val __obj = js.Dynamic.literal(gitHead = gitHead, gitTag = gitTag, notes = notes, pluginName = pluginName, version = version)
+    val __obj = js.Dynamic.literal(gitHead = gitHead.asInstanceOf[js.Any], gitTag = gitTag.asInstanceOf[js.Any], notes = notes.asInstanceOf[js.Any], pluginName = pluginName.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Release]
   }
 }

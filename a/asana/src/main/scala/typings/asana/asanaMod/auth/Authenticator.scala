@@ -1,6 +1,5 @@
 package typings.asana.asanaMod.auth
 
-import typings.bluebird.bluebirdMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +18,7 @@ trait Authenticator extends js.Object {
     *     completed and `authenticateRequest` calls can expect to succeed.
     * @return
     */
-  def establishCredentials(): ^[Unit]
+  def establishCredentials(): typings.bluebird.bluebirdMod.^[Unit]
   /**
     * Attempts to refresh credentials, if possible, given the current credentials.
     *
@@ -28,12 +27,15 @@ trait Authenticator extends js.Object {
     *     resolves to `false`.
     * @return
     */
-  def refreshCredentials(): ^[Boolean]
+  def refreshCredentials(): typings.bluebird.bluebirdMod.^[Boolean]
 }
 
 object Authenticator {
   @scala.inline
-  def apply(establishCredentials: () => ^[Unit], refreshCredentials: () => ^[Boolean]): Authenticator = {
+  def apply(
+    establishCredentials: () => typings.bluebird.bluebirdMod.^[Unit],
+    refreshCredentials: () => typings.bluebird.bluebirdMod.^[Boolean]
+  ): Authenticator = {
     val __obj = js.Dynamic.literal(establishCredentials = js.Any.fromFunction0(establishCredentials), refreshCredentials = js.Any.fromFunction0(refreshCredentials))
   
     __obj.asInstanceOf[Authenticator]

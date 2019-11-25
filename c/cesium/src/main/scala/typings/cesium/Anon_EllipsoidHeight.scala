@@ -54,17 +54,17 @@ object Anon_EllipsoidHeight {
     structureisBigEndian: js.UndefOr[Boolean] = js.undefined,
     structurestride: Int | Double = null
   ): Anon_EllipsoidHeight = {
-    val __obj = js.Dynamic.literal(height = height, heightmap = heightmap.asInstanceOf[js.Any], nativeRectangle = nativeRectangle, skirtHeight = skirtHeight, vertices = vertices.asInstanceOf[js.Any], width = width)
-    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
-    if (!js.isUndefined(isGeographic)) __obj.updateDynamic("isGeographic")(isGeographic)
-    if (rectangle != null) __obj.updateDynamic("rectangle")(rectangle)
-    if (relativetoCenter != null) __obj.updateDynamic("relativetoCenter")(relativetoCenter)
-    if (structure != null) __obj.updateDynamic("structure")(structure)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], heightmap = heightmap.asInstanceOf[js.Any], nativeRectangle = nativeRectangle.asInstanceOf[js.Any], skirtHeight = skirtHeight.asInstanceOf[js.Any], vertices = vertices.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid.asInstanceOf[js.Any])
+    if (!js.isUndefined(isGeographic)) __obj.updateDynamic("isGeographic")(isGeographic.asInstanceOf[js.Any])
+    if (rectangle != null) __obj.updateDynamic("rectangle")(rectangle.asInstanceOf[js.Any])
+    if (relativetoCenter != null) __obj.updateDynamic("relativetoCenter")(relativetoCenter.asInstanceOf[js.Any])
+    if (structure != null) __obj.updateDynamic("structure")(structure.asInstanceOf[js.Any])
     if (structureelementMultiplier != null) __obj.updateDynamic("structureelementMultiplier")(structureelementMultiplier.asInstanceOf[js.Any])
     if (structureelementsPerHeight != null) __obj.updateDynamic("structureelementsPerHeight")(structureelementsPerHeight.asInstanceOf[js.Any])
     if (structureheightOffset != null) __obj.updateDynamic("structureheightOffset")(structureheightOffset.asInstanceOf[js.Any])
     if (structureheightScale != null) __obj.updateDynamic("structureheightScale")(structureheightScale.asInstanceOf[js.Any])
-    if (!js.isUndefined(structureisBigEndian)) __obj.updateDynamic("structureisBigEndian")(structureisBigEndian)
+    if (!js.isUndefined(structureisBigEndian)) __obj.updateDynamic("structureisBigEndian")(structureisBigEndian.asInstanceOf[js.Any])
     if (structurestride != null) __obj.updateDynamic("structurestride")(structurestride.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_EllipsoidHeight]
   }

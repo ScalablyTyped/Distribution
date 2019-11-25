@@ -12,7 +12,7 @@ trait Anon_ConfigPayload extends js.Object {
 object Anon_ConfigPayload {
   @scala.inline
   def apply(config: String, payload: Double): Anon_ConfigPayload = {
-    val __obj = js.Dynamic.literal(config = config, payload = payload)
+    val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ConfigPayload]
   }

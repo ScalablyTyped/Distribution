@@ -12,7 +12,7 @@ trait ChartSize extends js.Object {
 object ChartSize {
   @scala.inline
   def apply(height: Double, width: Double): ChartSize = {
-    val __obj = js.Dynamic.literal(height = height, width = width)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChartSize]
   }

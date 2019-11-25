@@ -20,10 +20,10 @@ object SeederConfig {
     specific: String = null
   ): SeederConfig = {
     val __obj = js.Dynamic.literal()
-    if (directory != null) __obj.updateDynamic("directory")(directory)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (loadExtensions != null) __obj.updateDynamic("loadExtensions")(loadExtensions)
-    if (specific != null) __obj.updateDynamic("specific")(specific)
+    if (directory != null) __obj.updateDynamic("directory")(directory.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (loadExtensions != null) __obj.updateDynamic("loadExtensions")(loadExtensions.asInstanceOf[js.Any])
+    if (specific != null) __obj.updateDynamic("specific")(specific.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeederConfig]
   }
 }

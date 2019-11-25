@@ -35,10 +35,10 @@ object BindingDelta {
   @scala.inline
   def apply(action: String = null, condition: Expr = null, member: String = null, role: String = null): BindingDelta = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action)
-    if (condition != null) __obj.updateDynamic("condition")(condition)
-    if (member != null) __obj.updateDynamic("member")(member)
-    if (role != null) __obj.updateDynamic("role")(role)
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (condition != null) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
+    if (member != null) __obj.updateDynamic("member")(member.asInstanceOf[js.Any])
+    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     __obj.asInstanceOf[BindingDelta]
   }
 }

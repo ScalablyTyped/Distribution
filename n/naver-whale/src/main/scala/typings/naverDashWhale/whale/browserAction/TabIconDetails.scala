@@ -24,7 +24,7 @@ object TabIconDetails {
   ): TabIconDetails = {
     val __obj = js.Dynamic.literal()
     if (imageData != null) __obj.updateDynamic("imageData")(imageData.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (tabId != null) __obj.updateDynamic("tabId")(tabId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabIconDetails]
   }

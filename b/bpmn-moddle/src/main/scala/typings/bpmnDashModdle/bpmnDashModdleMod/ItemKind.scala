@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait ItemKind extends js.Object
 
+object ItemKind {
+  @scala.inline
+  def Information: typings.bpmnDashModdle.bpmnDashModdleStrings.Information = this.cast("Information")
+  @scala.inline
+  def Physical: typings.bpmnDashModdle.bpmnDashModdleStrings.Physical = this.cast("Physical")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

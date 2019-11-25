@@ -27,11 +27,11 @@ object CompletionEntryDetails {
     source: js.Array[SymbolDisplayPart] = null,
     tags: js.Array[JSDocTagInfo] = null
   ): CompletionEntryDetails = {
-    val __obj = js.Dynamic.literal(displayParts = displayParts, kind = kind, kindModifiers = kindModifiers, name = name)
-    if (codeActions != null) __obj.updateDynamic("codeActions")(codeActions)
-    if (documentation != null) __obj.updateDynamic("documentation")(documentation)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
+    val __obj = js.Dynamic.literal(displayParts = displayParts.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], kindModifiers = kindModifiers.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (codeActions != null) __obj.updateDynamic("codeActions")(codeActions.asInstanceOf[js.Any])
+    if (documentation != null) __obj.updateDynamic("documentation")(documentation.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompletionEntryDetails]
   }
 }

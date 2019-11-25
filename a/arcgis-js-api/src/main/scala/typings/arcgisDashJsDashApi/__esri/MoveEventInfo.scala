@@ -53,8 +53,8 @@ object MoveEventInfo {
     propertyIsEnumerable: PropertyKey => Boolean,
     `type`: String
   ): MoveEventInfo = {
-    val __obj = js.Dynamic.literal(constructor = constructor, dx = dx, dy = dy, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), mover = mover, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], dx = dx.asInstanceOf[js.Any], dy = dy.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), mover = mover.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MoveEventInfo]
   }
 }

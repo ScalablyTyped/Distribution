@@ -21,8 +21,8 @@ object Anon_CordovaCompatibilityVersions {
     version: String,
     cordovaCompatibilityVersions: js.Any = null
   ): Anon_CordovaCompatibilityVersions = {
-    val __obj = js.Dynamic.literal(PUBLIC_SETTINGS = PUBLIC_SETTINGS, format = format, manifest = manifest, version = version)
-    if (cordovaCompatibilityVersions != null) __obj.updateDynamic("cordovaCompatibilityVersions")(cordovaCompatibilityVersions)
+    val __obj = js.Dynamic.literal(PUBLIC_SETTINGS = PUBLIC_SETTINGS.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], manifest = manifest.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    if (cordovaCompatibilityVersions != null) __obj.updateDynamic("cordovaCompatibilityVersions")(cordovaCompatibilityVersions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CordovaCompatibilityVersions]
   }
 }

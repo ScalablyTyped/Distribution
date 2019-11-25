@@ -13,7 +13,7 @@ object Anon_DefaultOptions {
   @scala.inline
   def apply(defaultOptions: Options = null): Anon_DefaultOptions = {
     val __obj = js.Dynamic.literal()
-    if (defaultOptions != null) __obj.updateDynamic("defaultOptions")(defaultOptions)
+    if (defaultOptions != null) __obj.updateDynamic("defaultOptions")(defaultOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DefaultOptions]
   }
 }

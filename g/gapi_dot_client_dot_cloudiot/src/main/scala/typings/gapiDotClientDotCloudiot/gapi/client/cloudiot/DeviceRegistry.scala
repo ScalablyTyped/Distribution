@@ -60,13 +60,13 @@ object DeviceRegistry {
     stateNotificationConfig: StateNotificationConfig = null
   ): DeviceRegistry = {
     val __obj = js.Dynamic.literal()
-    if (credentials != null) __obj.updateDynamic("credentials")(credentials)
-    if (eventNotificationConfigs != null) __obj.updateDynamic("eventNotificationConfigs")(eventNotificationConfigs)
-    if (httpConfig != null) __obj.updateDynamic("httpConfig")(httpConfig)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (mqttConfig != null) __obj.updateDynamic("mqttConfig")(mqttConfig)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (stateNotificationConfig != null) __obj.updateDynamic("stateNotificationConfig")(stateNotificationConfig)
+    if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
+    if (eventNotificationConfigs != null) __obj.updateDynamic("eventNotificationConfigs")(eventNotificationConfigs.asInstanceOf[js.Any])
+    if (httpConfig != null) __obj.updateDynamic("httpConfig")(httpConfig.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (mqttConfig != null) __obj.updateDynamic("mqttConfig")(mqttConfig.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (stateNotificationConfig != null) __obj.updateDynamic("stateNotificationConfig")(stateNotificationConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceRegistry]
   }
 }

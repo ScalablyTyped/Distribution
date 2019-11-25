@@ -13,8 +13,8 @@ object TemplateOptions {
   @scala.inline
   def apply(buffer: js.UndefOr[Boolean] = js.undefined, writeToDisk: js.UndefOr[Boolean] = js.undefined): TemplateOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(buffer)) __obj.updateDynamic("buffer")(buffer)
-    if (!js.isUndefined(writeToDisk)) __obj.updateDynamic("writeToDisk")(writeToDisk)
+    if (!js.isUndefined(buffer)) __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
+    if (!js.isUndefined(writeToDisk)) __obj.updateDynamic("writeToDisk")(writeToDisk.asInstanceOf[js.Any])
     __obj.asInstanceOf[TemplateOptions]
   }
 }

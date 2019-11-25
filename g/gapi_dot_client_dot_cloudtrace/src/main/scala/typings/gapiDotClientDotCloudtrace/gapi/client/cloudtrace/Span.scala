@@ -89,19 +89,19 @@ object Span {
     timeEvents: TimeEvents = null
   ): Span = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
     if (childSpanCount != null) __obj.updateDynamic("childSpanCount")(childSpanCount.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
-    if (links != null) __obj.updateDynamic("links")(links)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (parentSpanId != null) __obj.updateDynamic("parentSpanId")(parentSpanId)
-    if (!js.isUndefined(sameProcessAsParentSpan)) __obj.updateDynamic("sameProcessAsParentSpan")(sameProcessAsParentSpan)
-    if (spanId != null) __obj.updateDynamic("spanId")(spanId)
-    if (stackTrace != null) __obj.updateDynamic("stackTrace")(stackTrace)
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (timeEvents != null) __obj.updateDynamic("timeEvents")(timeEvents)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
+    if (links != null) __obj.updateDynamic("links")(links.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (parentSpanId != null) __obj.updateDynamic("parentSpanId")(parentSpanId.asInstanceOf[js.Any])
+    if (!js.isUndefined(sameProcessAsParentSpan)) __obj.updateDynamic("sameProcessAsParentSpan")(sameProcessAsParentSpan.asInstanceOf[js.Any])
+    if (spanId != null) __obj.updateDynamic("spanId")(spanId.asInstanceOf[js.Any])
+    if (stackTrace != null) __obj.updateDynamic("stackTrace")(stackTrace.asInstanceOf[js.Any])
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (timeEvents != null) __obj.updateDynamic("timeEvents")(timeEvents.asInstanceOf[js.Any])
     __obj.asInstanceOf[Span]
   }
 }

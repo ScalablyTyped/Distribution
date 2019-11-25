@@ -53,10 +53,10 @@ object PlusRuntimeApplicationInf {
     pname: String = null
   ): PlusRuntimeApplicationInf = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action)
-    if (extra != null) __obj.updateDynamic("extra")(extra)
-    if (!js.isUndefined(newTask)) __obj.updateDynamic("newTask")(newTask)
-    if (pname != null) __obj.updateDynamic("pname")(pname)
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
+    if (!js.isUndefined(newTask)) __obj.updateDynamic("newTask")(newTask.asInstanceOf[js.Any])
+    if (pname != null) __obj.updateDynamic("pname")(pname.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusRuntimeApplicationInf]
   }
 }

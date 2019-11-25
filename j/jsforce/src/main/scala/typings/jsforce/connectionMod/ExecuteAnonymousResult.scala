@@ -25,7 +25,7 @@ object ExecuteAnonymousResult {
     line: Double,
     success: Boolean
   ): ExecuteAnonymousResult = {
-    val __obj = js.Dynamic.literal(column = column, compileProblem = compileProblem, compiled = compiled, exceptionMessage = exceptionMessage, exceptionStackTrace = exceptionStackTrace, line = line, success = success)
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], compileProblem = compileProblem.asInstanceOf[js.Any], compiled = compiled.asInstanceOf[js.Any], exceptionMessage = exceptionMessage.asInstanceOf[js.Any], exceptionStackTrace = exceptionStackTrace.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExecuteAnonymousResult]
   }

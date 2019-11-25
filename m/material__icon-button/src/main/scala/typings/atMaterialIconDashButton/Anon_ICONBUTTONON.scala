@@ -12,7 +12,7 @@ trait Anon_ICONBUTTONON extends js.Object {
 object Anon_ICONBUTTONON {
   @scala.inline
   def apply(ICON_BUTTON_ON: String, ROOT: String): Anon_ICONBUTTONON = {
-    val __obj = js.Dynamic.literal(ICON_BUTTON_ON = ICON_BUTTON_ON, ROOT = ROOT)
+    val __obj = js.Dynamic.literal(ICON_BUTTON_ON = ICON_BUTTON_ON.asInstanceOf[js.Any], ROOT = ROOT.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ICONBUTTONON]
   }

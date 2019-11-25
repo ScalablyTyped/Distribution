@@ -14,6 +14,5 @@ class Revwalk ()
 @js.native
 object Revwalk extends js.Object {
   def create(repo: typings.nodegit.repositoryMod.Repository): typings.nodegit.revDashWalkMod.Revwalk = js.native
-  type SORT = typings.nodegit.revDashWalkMod.Revwalk.SORT
 }
 

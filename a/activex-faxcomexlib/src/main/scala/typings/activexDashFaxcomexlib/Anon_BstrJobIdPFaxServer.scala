@@ -13,7 +13,7 @@ trait Anon_BstrJobIdPFaxServer extends js.Object {
 object Anon_BstrJobIdPFaxServer {
   @scala.inline
   def apply(bstrJobId: String, pFaxServer: FaxServer): Anon_BstrJobIdPFaxServer = {
-    val __obj = js.Dynamic.literal(bstrJobId = bstrJobId, pFaxServer = pFaxServer)
+    val __obj = js.Dynamic.literal(bstrJobId = bstrJobId.asInstanceOf[js.Any], pFaxServer = pFaxServer.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BstrJobIdPFaxServer]
   }

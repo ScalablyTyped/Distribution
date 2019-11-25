@@ -23,7 +23,7 @@ object InfiniteHitsProvided {
     refineNext: /* repeated */ js.Any => js.Any,
     refinePrevious: /* repeated */ js.Any => js.Any
   ): InfiniteHitsProvided[THit] = {
-    val __obj = js.Dynamic.literal(hasMore = hasMore, hasPrevious = hasPrevious, hits = hits, refineNext = js.Any.fromFunction1(refineNext), refinePrevious = js.Any.fromFunction1(refinePrevious))
+    val __obj = js.Dynamic.literal(hasMore = hasMore.asInstanceOf[js.Any], hasPrevious = hasPrevious.asInstanceOf[js.Any], hits = hits.asInstanceOf[js.Any], refineNext = js.Any.fromFunction1(refineNext), refinePrevious = js.Any.fromFunction1(refinePrevious))
   
     __obj.asInstanceOf[InfiniteHitsProvided[THit]]
   }

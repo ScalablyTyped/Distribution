@@ -11,7 +11,7 @@ trait IsEmptyOptions extends js.Object {
 object IsEmptyOptions {
   @scala.inline
   def apply(ignore_whitespace: Boolean): IsEmptyOptions = {
-    val __obj = js.Dynamic.literal(ignore_whitespace = ignore_whitespace)
+    val __obj = js.Dynamic.literal(ignore_whitespace = ignore_whitespace.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IsEmptyOptions]
   }

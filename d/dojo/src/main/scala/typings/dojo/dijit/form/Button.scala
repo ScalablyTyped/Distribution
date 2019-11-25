@@ -1,8 +1,6 @@
 package typings.dojo.dijit.form
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValueProperty
 import typings.dojo.dojoStrings.iconClass
 import typings.dojo.dojoStrings.label
 import typings.dojo.dojoStrings.showLabel
@@ -86,12 +84,34 @@ class Button () extends _FormWidget {
   @JSName("set")
   def set_value(property: value, value: String): Unit = js.native
   @JSName("watch")
-  def watch_iconClass(property: iconClass, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_iconClass(
+    property: iconClass,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_label(property: label, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_label(
+    property: label,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_showLabel(property: showLabel, callback: Fn_NewValue): Anon_Unwatch = js.native
-  @JSName("watch")
-  def watch_value(property: value, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_showLabel(
+    property: showLabel,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

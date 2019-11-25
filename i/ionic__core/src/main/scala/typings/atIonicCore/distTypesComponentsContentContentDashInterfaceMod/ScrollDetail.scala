@@ -1,41 +1,20 @@
 package typings.atIonicCore.distTypesComponentsContentContentDashInterfaceMod
 
-import typings.atIonicCore.distTypesUtilsGestureMod.GestureDetail
-import typings.std.UIEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ScrollDetail
-  extends GestureDetail
-     with ScrollBaseDetail {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GestureDetail * / any */ trait ScrollDetail extends ScrollBaseDetail {
   var scrollLeft: Double
   var scrollTop: Double
 }
 
 object ScrollDetail {
   @scala.inline
-  def apply(
-    currentX: Double,
-    currentY: Double,
-    deltaX: Double,
-    deltaY: Double,
-    event: UIEvent,
-    isScrolling: Boolean,
-    scrollLeft: Double,
-    scrollTop: Double,
-    startTimeStamp: Double,
-    startX: Double,
-    startY: Double,
-    timeStamp: Double,
-    `type`: String,
-    velocityX: Double,
-    velocityY: Double,
-    data: js.Any = null
-  ): ScrollDetail = {
-    val __obj = js.Dynamic.literal(currentX = currentX, currentY = currentY, deltaX = deltaX, deltaY = deltaY, event = event, isScrolling = isScrolling, scrollLeft = scrollLeft, scrollTop = scrollTop, startTimeStamp = startTimeStamp, startX = startX, startY = startY, timeStamp = timeStamp, velocityX = velocityX, velocityY = velocityY)
-    __obj.updateDynamic("type")(`type`)
-    if (data != null) __obj.updateDynamic("data")(data)
+  def apply(isScrolling: Boolean, scrollLeft: Double, scrollTop: Double): ScrollDetail = {
+    val __obj = js.Dynamic.literal(isScrolling = isScrolling.asInstanceOf[js.Any], scrollLeft = scrollLeft.asInstanceOf[js.Any], scrollTop = scrollTop.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[ScrollDetail]
   }
 }

@@ -35,7 +35,7 @@ object CurrentLoadCpuData {
     raw_load_system: Double,
     raw_load_user: Double
   ): CurrentLoadCpuData = {
-    val __obj = js.Dynamic.literal(load = load, load_idle = load_idle, load_irq = load_irq, load_nice = load_nice, load_system = load_system, load_user = load_user, raw_load = raw_load, raw_load_idle = raw_load_idle, raw_load_irq = raw_load_irq, raw_load_nice = raw_load_nice, raw_load_system = raw_load_system, raw_load_user = raw_load_user)
+    val __obj = js.Dynamic.literal(load = load.asInstanceOf[js.Any], load_idle = load_idle.asInstanceOf[js.Any], load_irq = load_irq.asInstanceOf[js.Any], load_nice = load_nice.asInstanceOf[js.Any], load_system = load_system.asInstanceOf[js.Any], load_user = load_user.asInstanceOf[js.Any], raw_load = raw_load.asInstanceOf[js.Any], raw_load_idle = raw_load_idle.asInstanceOf[js.Any], raw_load_irq = raw_load_irq.asInstanceOf[js.Any], raw_load_nice = raw_load_nice.asInstanceOf[js.Any], raw_load_system = raw_load_system.asInstanceOf[js.Any], raw_load_user = raw_load_user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CurrentLoadCpuData]
   }

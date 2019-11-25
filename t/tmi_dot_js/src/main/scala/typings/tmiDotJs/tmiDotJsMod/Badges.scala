@@ -30,15 +30,15 @@ object Badges {
     turbo: String = null
   ): Badges = {
     val __obj = js.Dynamic.literal()
-    if (admin != null) __obj.updateDynamic("admin")(admin)
-    if (bits != null) __obj.updateDynamic("bits")(bits)
-    if (broadcaster != null) __obj.updateDynamic("broadcaster")(broadcaster)
-    if (global_mod != null) __obj.updateDynamic("global_mod")(global_mod)
-    if (moderator != null) __obj.updateDynamic("moderator")(moderator)
-    if (premium != null) __obj.updateDynamic("premium")(premium)
-    if (staff != null) __obj.updateDynamic("staff")(staff)
-    if (subscriber != null) __obj.updateDynamic("subscriber")(subscriber)
-    if (turbo != null) __obj.updateDynamic("turbo")(turbo)
+    if (admin != null) __obj.updateDynamic("admin")(admin.asInstanceOf[js.Any])
+    if (bits != null) __obj.updateDynamic("bits")(bits.asInstanceOf[js.Any])
+    if (broadcaster != null) __obj.updateDynamic("broadcaster")(broadcaster.asInstanceOf[js.Any])
+    if (global_mod != null) __obj.updateDynamic("global_mod")(global_mod.asInstanceOf[js.Any])
+    if (moderator != null) __obj.updateDynamic("moderator")(moderator.asInstanceOf[js.Any])
+    if (premium != null) __obj.updateDynamic("premium")(premium.asInstanceOf[js.Any])
+    if (staff != null) __obj.updateDynamic("staff")(staff.asInstanceOf[js.Any])
+    if (subscriber != null) __obj.updateDynamic("subscriber")(subscriber.asInstanceOf[js.Any])
+    if (turbo != null) __obj.updateDynamic("turbo")(turbo.asInstanceOf[js.Any])
     __obj.asInstanceOf[Badges]
   }
 }

@@ -1,10 +1,6 @@
 package typings.dojo.dojox.fx
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValueProperty
-import typings.dojo.Fn_NewValueOldValuePropertyHTMLElement
-import typings.dojo.Fn_NewValueOldValuePropertyNumber
 import typings.dojo.dijit._Widget
 import typings.dojo.dojoStrings.animate
 import typings.dojo.dojoStrings.node
@@ -112,18 +108,64 @@ class Shadow () extends _Widget {
   @JSName("set")
   def set_style(property: typings.dojo.dojoStrings.style, value: String): Unit = js.native
   @JSName("watch")
-  def watch_animate(property: animate, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_animate(
+    property: animate,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_node(property: node, callback: Fn_NewValueOldValuePropertyHTMLElement): Anon_Unwatch = js.native
+  def watch_node(
+    property: node,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[HTMLElement], 
+      /* newValue */ js.UndefOr[HTMLElement], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_opacity(property: opacity, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_opacity(
+    property: opacity,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_shadowOffset(property: shadowOffset, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_shadowOffset(
+    property: shadowOffset,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_shadowPng(property: shadowPng, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_shadowPng(
+    property: shadowPng,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_shadowThickness(property: shadowThickness, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
-  @JSName("watch")
-  def watch_style(property: typings.dojo.dojoStrings.style, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_shadowThickness(
+    property: shadowThickness,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

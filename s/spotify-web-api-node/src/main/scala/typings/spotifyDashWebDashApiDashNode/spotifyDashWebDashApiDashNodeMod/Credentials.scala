@@ -22,11 +22,11 @@ object Credentials {
     refreshToken: String = null
   ): Credentials = {
     val __obj = js.Dynamic.literal()
-    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken)
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId)
-    if (clientSecret != null) __obj.updateDynamic("clientSecret")(clientSecret)
-    if (redirectUri != null) __obj.updateDynamic("redirectUri")(redirectUri)
-    if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken)
+    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken.asInstanceOf[js.Any])
+    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
+    if (clientSecret != null) __obj.updateDynamic("clientSecret")(clientSecret.asInstanceOf[js.Any])
+    if (redirectUri != null) __obj.updateDynamic("redirectUri")(redirectUri.asInstanceOf[js.Any])
+    if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[Credentials]
   }
 }

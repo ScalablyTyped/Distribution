@@ -236,13 +236,13 @@ object distNodejsUnderscoreKernelUnderscoreBackendMod extends js.Object {
     def scatterND[R /* <: Rank */](
       indices: Tensor[Rank],
       updates: Tensor[Rank],
-      shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
+      shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
     ): Tensor[R] = js.native
     def select(condition: Tensor[Rank], a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
     def sparseToDense[R /* <: Rank */](
       sparseIndices: Tensor[Rank],
       sparseValues: Tensor[Rank],
-      outputShape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+      outputShape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
       defaultValue: Tensor[R0]
     ): Tensor[R] = js.native
     def squaredDifference(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native

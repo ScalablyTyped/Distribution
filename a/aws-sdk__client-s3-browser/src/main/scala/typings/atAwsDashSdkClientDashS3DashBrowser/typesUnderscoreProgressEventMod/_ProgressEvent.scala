@@ -16,7 +16,7 @@ object _ProgressEvent {
   @scala.inline
   def apply(Details: _Progress = null): _ProgressEvent = {
     val __obj = js.Dynamic.literal()
-    if (Details != null) __obj.updateDynamic("Details")(Details)
+    if (Details != null) __obj.updateDynamic("Details")(Details.asInstanceOf[js.Any])
     __obj.asInstanceOf[_ProgressEvent]
   }
 }

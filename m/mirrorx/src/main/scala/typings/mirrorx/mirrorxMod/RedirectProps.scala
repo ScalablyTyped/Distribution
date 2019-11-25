@@ -26,11 +26,11 @@ object RedirectProps {
     strict: js.UndefOr[Boolean] = js.undefined
   ): RedirectProps = {
     val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
-    if (!js.isUndefined(exact)) __obj.updateDynamic("exact")(exact)
-    if (from != null) __obj.updateDynamic("from")(from)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (!js.isUndefined(push)) __obj.updateDynamic("push")(push)
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    if (!js.isUndefined(exact)) __obj.updateDynamic("exact")(exact.asInstanceOf[js.Any])
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (!js.isUndefined(push)) __obj.updateDynamic("push")(push.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedirectProps]
   }
 }

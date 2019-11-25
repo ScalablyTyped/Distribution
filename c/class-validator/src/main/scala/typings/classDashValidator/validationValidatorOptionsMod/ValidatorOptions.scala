@@ -51,13 +51,13 @@ object ValidatorOptions {
     whitelist: js.UndefOr[Boolean] = js.undefined
   ): ValidatorOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dismissDefaultMessages)) __obj.updateDynamic("dismissDefaultMessages")(dismissDefaultMessages)
-    if (!js.isUndefined(forbidNonWhitelisted)) __obj.updateDynamic("forbidNonWhitelisted")(forbidNonWhitelisted)
-    if (!js.isUndefined(forbidUnknownValues)) __obj.updateDynamic("forbidUnknownValues")(forbidUnknownValues)
-    if (groups != null) __obj.updateDynamic("groups")(groups)
-    if (!js.isUndefined(skipMissingProperties)) __obj.updateDynamic("skipMissingProperties")(skipMissingProperties)
-    if (validationError != null) __obj.updateDynamic("validationError")(validationError)
-    if (!js.isUndefined(whitelist)) __obj.updateDynamic("whitelist")(whitelist)
+    if (!js.isUndefined(dismissDefaultMessages)) __obj.updateDynamic("dismissDefaultMessages")(dismissDefaultMessages.asInstanceOf[js.Any])
+    if (!js.isUndefined(forbidNonWhitelisted)) __obj.updateDynamic("forbidNonWhitelisted")(forbidNonWhitelisted.asInstanceOf[js.Any])
+    if (!js.isUndefined(forbidUnknownValues)) __obj.updateDynamic("forbidUnknownValues")(forbidUnknownValues.asInstanceOf[js.Any])
+    if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipMissingProperties)) __obj.updateDynamic("skipMissingProperties")(skipMissingProperties.asInstanceOf[js.Any])
+    if (validationError != null) __obj.updateDynamic("validationError")(validationError.asInstanceOf[js.Any])
+    if (!js.isUndefined(whitelist)) __obj.updateDynamic("whitelist")(whitelist.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidatorOptions]
   }
 }

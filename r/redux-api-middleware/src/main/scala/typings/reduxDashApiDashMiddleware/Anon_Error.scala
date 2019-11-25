@@ -15,7 +15,7 @@ object Anon_Error {
   def apply(`type`: String | js.Symbol, error: `false` = null): Anon_Error = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Error]
   }
 }

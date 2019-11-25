@@ -19,8 +19,8 @@ object FilteringEventUIParam {
   @scala.inline
   def apply(expression: js.Any = null, owner: js.Any = null): FilteringEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (expression != null) __obj.updateDynamic("expression")(expression)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (expression != null) __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilteringEventUIParam]
   }
 }

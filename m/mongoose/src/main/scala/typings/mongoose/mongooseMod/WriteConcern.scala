@@ -19,7 +19,7 @@ object WriteConcern {
     wtimeout: Int | Double = null
   ): WriteConcern = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(j)) __obj.updateDynamic("j")(j)
+    if (!js.isUndefined(j)) __obj.updateDynamic("j")(j.asInstanceOf[js.Any])
     if (w != null) __obj.updateDynamic("w")(w.asInstanceOf[js.Any])
     if (wtimeout != null) __obj.updateDynamic("wtimeout")(wtimeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[WriteConcern]

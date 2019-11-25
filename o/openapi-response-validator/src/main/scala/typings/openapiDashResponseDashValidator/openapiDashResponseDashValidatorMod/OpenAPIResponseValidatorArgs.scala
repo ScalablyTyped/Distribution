@@ -38,8 +38,8 @@ object OpenAPIResponseValidatorArgs {
     components: ComponentsObject = null,
     errorTransformer: (/* openAPIResponseValidatorValidationError */ OpenAPIResponseValidatorError, /* ajvError */ ErrorObject) => _ = null
   ): OpenAPIResponseValidatorArgs = {
-    val __obj = js.Dynamic.literal(customFormats = customFormats, definitions = definitions, externalSchemas = externalSchemas, loggingKey = loggingKey, responses = responses)
-    if (components != null) __obj.updateDynamic("components")(components)
+    val __obj = js.Dynamic.literal(customFormats = customFormats.asInstanceOf[js.Any], definitions = definitions.asInstanceOf[js.Any], externalSchemas = externalSchemas.asInstanceOf[js.Any], loggingKey = loggingKey.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
+    if (components != null) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])
     if (errorTransformer != null) __obj.updateDynamic("errorTransformer")(js.Any.fromFunction2(errorTransformer))
     __obj.asInstanceOf[OpenAPIResponseValidatorArgs]
   }

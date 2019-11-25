@@ -51,13 +51,13 @@ object GoogleActionsV2OrdersCart {
     promotions: js.Array[GoogleActionsV2OrdersPromotion] = null
   ): GoogleActionsV2OrdersCart = {
     val __obj = js.Dynamic.literal()
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (lineItems != null) __obj.updateDynamic("lineItems")(lineItems)
-    if (merchant != null) __obj.updateDynamic("merchant")(merchant)
-    if (notes != null) __obj.updateDynamic("notes")(notes)
-    if (otherItems != null) __obj.updateDynamic("otherItems")(otherItems)
-    if (promotions != null) __obj.updateDynamic("promotions")(promotions)
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (lineItems != null) __obj.updateDynamic("lineItems")(lineItems.asInstanceOf[js.Any])
+    if (merchant != null) __obj.updateDynamic("merchant")(merchant.asInstanceOf[js.Any])
+    if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
+    if (otherItems != null) __obj.updateDynamic("otherItems")(otherItems.asInstanceOf[js.Any])
+    if (promotions != null) __obj.updateDynamic("promotions")(promotions.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2OrdersCart]
   }
 }

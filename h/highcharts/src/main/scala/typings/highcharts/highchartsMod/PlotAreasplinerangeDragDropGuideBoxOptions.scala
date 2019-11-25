@@ -15,7 +15,7 @@ object PlotAreasplinerangeDragDropGuideBoxOptions {
   @scala.inline
   def apply(default: PlotAreasplinerangeDragDropGuideBoxDefaultOptions = null): PlotAreasplinerangeDragDropGuideBoxOptions = {
     val __obj = js.Dynamic.literal()
-    if (default != null) __obj.updateDynamic("default")(default)
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotAreasplinerangeDragDropGuideBoxOptions]
   }
 }

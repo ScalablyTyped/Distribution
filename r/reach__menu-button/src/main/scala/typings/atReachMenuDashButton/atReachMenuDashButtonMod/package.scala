@@ -21,7 +21,7 @@ package object atReachMenuDashButtonMod {
   type MenuLinkProps[T /* <: SupportedMenuLinkComponent */] = ResolvedMenuLinkProps[T] with Anon_As[T]
   type MenuListProps = (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) with Anon_ChildrenReactNode
   type ResolvedMenuLinkComponent[T] = ComponentType[T] | T
-  type ResolvedMenuLinkProps[T] = T | (/* import warning: ImportType.apply Failed type conversion: react.react._Global_.JSX.IntrinsicElements[T] */ js.Any)
+  type ResolvedMenuLinkProps[T] = T | (/* import warning: importer.ImportType#apply Failed type conversion: react.react._Global_.JSX.IntrinsicElements[T] */ js.Any)
   /* Rewritten from type alias, can be one of: 
     - js.Object
     - typings.atReachMenuDashButton.atReachMenuDashButtonStrings.a

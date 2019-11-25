@@ -20,7 +20,7 @@ object GoogleSheetsOptions {
   @scala.inline
   def apply(skipLeadingRows: String = null): GoogleSheetsOptions = {
     val __obj = js.Dynamic.literal()
-    if (skipLeadingRows != null) __obj.updateDynamic("skipLeadingRows")(skipLeadingRows)
+    if (skipLeadingRows != null) __obj.updateDynamic("skipLeadingRows")(skipLeadingRows.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleSheetsOptions]
   }
 }

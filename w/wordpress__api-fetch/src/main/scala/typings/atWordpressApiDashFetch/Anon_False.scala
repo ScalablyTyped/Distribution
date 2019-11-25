@@ -12,7 +12,7 @@ trait Anon_False extends js.Object {
 object Anon_False {
   @scala.inline
   def apply(parse: `false`): Anon_False = {
-    val __obj = js.Dynamic.literal(parse = parse)
+    val __obj = js.Dynamic.literal(parse = parse.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_False]
   }

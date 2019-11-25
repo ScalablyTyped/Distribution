@@ -34,7 +34,7 @@ object TextProps {
     pageText: ReactNode = null,
     previousText: ReactNode = null
   ): TextProps = {
-    val __obj = js.Dynamic.literal(rowsText = rowsText)
+    val __obj = js.Dynamic.literal(rowsText = rowsText.asInstanceOf[js.Any])
     if (loadingText != null) __obj.updateDynamic("loadingText")(loadingText.asInstanceOf[js.Any])
     if (nextText != null) __obj.updateDynamic("nextText")(nextText.asInstanceOf[js.Any])
     if (noDataText != null) __obj.updateDynamic("noDataText")(noDataText.asInstanceOf[js.Any])

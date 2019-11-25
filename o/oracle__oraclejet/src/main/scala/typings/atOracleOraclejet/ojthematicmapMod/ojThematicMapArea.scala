@@ -110,7 +110,7 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.toggle
 import typings.atOracleOraclejet.atOracleOraclejetStrings.touchcancel
 import typings.atOracleOraclejet.atOracleOraclejetStrings.touchend
 import typings.atOracleOraclejet.atOracleOraclejetStrings.touchmove
-import typings.atOracleOraclejet.atOracleOraclejetStrings.touchstart
+import typings.atOracleOraclejet.atOracleOraclejetStrings.touchstart_
 import typings.atOracleOraclejet.atOracleOraclejetStrings.transitioncancel
 import typings.atOracleOraclejet.atOracleOraclejetStrings.transitionend
 import typings.atOracleOraclejet.atOracleOraclejetStrings.transitionrun
@@ -151,7 +151,7 @@ trait ojThematicMapArea extends JetElement[ojThematicMapAreaSettableProperties] 
   var onLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
   var onLabelStyleChanged: (js.Function1[
     /* event */ JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojthematicmap.ojThematicMapArea['labelStyle'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojthematicmap.ojThematicMapArea['labelStyle'] */ js.Any
     ], 
     _
   ]) | Null = js.native
@@ -162,7 +162,7 @@ trait ojThematicMapArea extends JetElement[ojThematicMapAreaSettableProperties] 
   var onSvgClassNameChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
   var onSvgStyleChanged: (js.Function1[
     /* event */ JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojthematicmap.ojThematicMapArea['svgStyle'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojthematicmap.ojThematicMapArea['svgStyle'] */ js.Any
     ], 
     _
   ]) | Null = js.native
@@ -176,7 +176,7 @@ trait ojThematicMapArea extends JetElement[ojThematicMapAreaSettableProperties] 
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojthematicmap.ojThematicMapArea['labelStyle'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojthematicmap.ojThematicMapArea['labelStyle'] */ js.Any
       ], 
       _
     ]
@@ -186,7 +186,7 @@ trait ojThematicMapArea extends JetElement[ojThematicMapAreaSettableProperties] 
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojthematicmap.ojThematicMapArea['labelStyle'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojthematicmap.ojThematicMapArea['labelStyle'] */ js.Any
       ], 
       _
     ],
@@ -206,7 +206,7 @@ trait ojThematicMapArea extends JetElement[ojThematicMapAreaSettableProperties] 
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojthematicmap.ojThematicMapArea['svgStyle'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojthematicmap.ojThematicMapArea['svgStyle'] */ js.Any
       ], 
       _
     ]
@@ -216,7 +216,7 @@ trait ojThematicMapArea extends JetElement[ojThematicMapAreaSettableProperties] 
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojthematicmap.ojThematicMapArea['svgStyle'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojthematicmap.ojThematicMapArea['svgStyle'] */ js.Any
       ], 
       _
     ],
@@ -1010,10 +1010,10 @@ trait ojThematicMapArea extends JetElement[ojThematicMapAreaSettableProperties] 
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_touchstart(`type`: touchstart, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, _]): Unit = js.native
+  def addEventListener_touchstart(`type`: touchstart_, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_touchstart(
-    `type`: touchstart,
+    `type`: touchstart_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, _],
     useCapture: Boolean
   ): Unit = js.native
@@ -1093,7 +1093,7 @@ trait ojThematicMapArea extends JetElement[ojThematicMapAreaSettableProperties] 
   @JSName("getProperty")
   def getProperty_label(property: label): String = js.native
   @JSName("getProperty")
-  def getProperty_labelStyle(property: labelStyle): /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojthematicmap.ojThematicMapArea['labelStyle'] */ js.Any = js.native
+  def getProperty_labelStyle(property: labelStyle): /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojthematicmap.ojThematicMapArea['labelStyle'] */ js.Any = js.native
   @JSName("getProperty")
   def getProperty_location(property: location): String = js.native
   @JSName("getProperty")
@@ -1105,7 +1105,7 @@ trait ojThematicMapArea extends JetElement[ojThematicMapAreaSettableProperties] 
   @JSName("getProperty")
   def getProperty_svgClassName(property: svgClassName): String = js.native
   @JSName("getProperty")
-  def getProperty_svgStyle(property: svgStyle): /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojthematicmap.ojThematicMapArea['svgStyle'] */ js.Any = js.native
+  def getProperty_svgStyle(property: svgStyle): /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojthematicmap.ojThematicMapArea['svgStyle'] */ js.Any = js.native
   def setProperties(properties: ojThematicMapAreaSettablePropertiesLenient): Unit = js.native
   def setProperty(property: selectable, value: auto): Unit = js.native
   def setProperty(property: selectable, value: off): Unit = js.native

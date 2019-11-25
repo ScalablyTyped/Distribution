@@ -13,7 +13,7 @@ trait ColorProps extends js.Object {
 object ColorProps {
   @scala.inline
   def apply(colors: js.Array[String], subtitle: String, title: String): ColorProps = {
-    val __obj = js.Dynamic.literal(colors = colors, subtitle = subtitle, title = title)
+    val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any], subtitle = subtitle.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ColorProps]
   }

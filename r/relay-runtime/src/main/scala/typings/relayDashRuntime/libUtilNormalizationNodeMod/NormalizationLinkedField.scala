@@ -28,10 +28,10 @@ object NormalizationLinkedField {
     concreteType: String = null,
     storageKey: String = null
   ): NormalizationLinkedField = {
-    val __obj = js.Dynamic.literal(args = args, kind = kind, name = name, plural = plural, selections = selections)
-    if (alias != null) __obj.updateDynamic("alias")(alias)
-    if (concreteType != null) __obj.updateDynamic("concreteType")(concreteType)
-    if (storageKey != null) __obj.updateDynamic("storageKey")(storageKey)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], plural = plural.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
+    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
+    if (concreteType != null) __obj.updateDynamic("concreteType")(concreteType.asInstanceOf[js.Any])
+    if (storageKey != null) __obj.updateDynamic("storageKey")(storageKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[NormalizationLinkedField]
   }
 }

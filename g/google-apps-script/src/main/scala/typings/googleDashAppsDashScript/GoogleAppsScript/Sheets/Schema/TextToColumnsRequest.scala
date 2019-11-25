@@ -14,9 +14,9 @@ object TextToColumnsRequest {
   @scala.inline
   def apply(delimiter: String = null, delimiterType: String = null, source: GridRange = null): TextToColumnsRequest = {
     val __obj = js.Dynamic.literal()
-    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
-    if (delimiterType != null) __obj.updateDynamic("delimiterType")(delimiterType)
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
+    if (delimiterType != null) __obj.updateDynamic("delimiterType")(delimiterType.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextToColumnsRequest]
   }
 }

@@ -26,13 +26,13 @@ object ContainerLogsOptions {
     timestamps: js.UndefOr[Boolean] = js.undefined
   ): ContainerLogsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(details)) __obj.updateDynamic("details")(details)
-    if (!js.isUndefined(follow)) __obj.updateDynamic("follow")(follow)
+    if (!js.isUndefined(details)) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
+    if (!js.isUndefined(follow)) __obj.updateDynamic("follow")(follow.asInstanceOf[js.Any])
     if (since != null) __obj.updateDynamic("since")(since.asInstanceOf[js.Any])
-    if (!js.isUndefined(stderr)) __obj.updateDynamic("stderr")(stderr)
-    if (!js.isUndefined(stdout)) __obj.updateDynamic("stdout")(stdout)
+    if (!js.isUndefined(stderr)) __obj.updateDynamic("stderr")(stderr.asInstanceOf[js.Any])
+    if (!js.isUndefined(stdout)) __obj.updateDynamic("stdout")(stdout.asInstanceOf[js.Any])
     if (tail != null) __obj.updateDynamic("tail")(tail.asInstanceOf[js.Any])
-    if (!js.isUndefined(timestamps)) __obj.updateDynamic("timestamps")(timestamps)
+    if (!js.isUndefined(timestamps)) __obj.updateDynamic("timestamps")(timestamps.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContainerLogsOptions]
   }
 }

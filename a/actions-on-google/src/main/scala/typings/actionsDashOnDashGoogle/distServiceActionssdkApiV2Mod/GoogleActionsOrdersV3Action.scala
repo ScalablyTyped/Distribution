@@ -33,10 +33,10 @@ object GoogleActionsOrdersV3Action {
     `type`: GoogleActionsOrdersV3ActionType = null
   ): GoogleActionsOrdersV3Action = {
     val __obj = js.Dynamic.literal()
-    if (actionMetadata != null) __obj.updateDynamic("actionMetadata")(actionMetadata)
-    if (openUrlAction != null) __obj.updateDynamic("openUrlAction")(openUrlAction)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (actionMetadata != null) __obj.updateDynamic("actionMetadata")(actionMetadata.asInstanceOf[js.Any])
+    if (openUrlAction != null) __obj.updateDynamic("openUrlAction")(openUrlAction.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsOrdersV3Action]
   }
 }

@@ -12,7 +12,7 @@ trait Anon_DtypeUint8clamped extends js.Object {
 object Anon_DtypeUint8clamped {
   @scala.inline
   def apply(dtype: uint8_clamped): Anon_DtypeUint8clamped = {
-    val __obj = js.Dynamic.literal(dtype = dtype)
+    val __obj = js.Dynamic.literal(dtype = dtype.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DtypeUint8clamped]
   }

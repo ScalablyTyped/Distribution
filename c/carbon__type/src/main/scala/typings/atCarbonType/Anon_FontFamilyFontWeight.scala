@@ -21,9 +21,9 @@ object Anon_FontFamilyFontWeight {
     fontWeight: Double,
     textRendering: String
   ): Anon_FontFamilyFontWeight = {
-    val __obj = js.Dynamic.literal(fontFamily = fontFamily, fontWeight = fontWeight, textRendering = textRendering)
-    __obj.updateDynamic("-moz-osx-font-smoothing")(`-moz-osx-font-smoothing`)
-    __obj.updateDynamic("-webkit-font-smoothing")(`-webkit-font-smoothing`)
+    val __obj = js.Dynamic.literal(fontFamily = fontFamily.asInstanceOf[js.Any], fontWeight = fontWeight.asInstanceOf[js.Any], textRendering = textRendering.asInstanceOf[js.Any])
+    __obj.updateDynamic("-moz-osx-font-smoothing")(`-moz-osx-font-smoothing`.asInstanceOf[js.Any])
+    __obj.updateDynamic("-webkit-font-smoothing")(`-webkit-font-smoothing`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FontFamilyFontWeight]
   }
 }

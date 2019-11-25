@@ -43,16 +43,16 @@ object IDirectionsRequestOptions {
     vehicleSpec: IVehicleSpec = null
   ): IDirectionsRequestOptions = {
     val __obj = js.Dynamic.literal()
-    if (distanceUnit != null) __obj.updateDynamic("distanceUnit")(distanceUnit)
+    if (distanceUnit != null) __obj.updateDynamic("distanceUnit")(distanceUnit.asInstanceOf[js.Any])
     if (maxRoutes != null) __obj.updateDynamic("maxRoutes")(maxRoutes.asInstanceOf[js.Any])
-    if (routeAvoidance != null) __obj.updateDynamic("routeAvoidance")(routeAvoidance)
-    if (!js.isUndefined(routeDraggable)) __obj.updateDynamic("routeDraggable")(routeDraggable)
+    if (routeAvoidance != null) __obj.updateDynamic("routeAvoidance")(routeAvoidance.asInstanceOf[js.Any])
+    if (!js.isUndefined(routeDraggable)) __obj.updateDynamic("routeDraggable")(routeDraggable.asInstanceOf[js.Any])
     if (routeIndex != null) __obj.updateDynamic("routeIndex")(routeIndex.asInstanceOf[js.Any])
-    if (routeMode != null) __obj.updateDynamic("routeMode")(routeMode)
-    if (routeOptimization != null) __obj.updateDynamic("routeOptimization")(routeOptimization)
-    if (time != null) __obj.updateDynamic("time")(time)
-    if (timeType != null) __obj.updateDynamic("timeType")(timeType)
-    if (vehicleSpec != null) __obj.updateDynamic("vehicleSpec")(vehicleSpec)
+    if (routeMode != null) __obj.updateDynamic("routeMode")(routeMode.asInstanceOf[js.Any])
+    if (routeOptimization != null) __obj.updateDynamic("routeOptimization")(routeOptimization.asInstanceOf[js.Any])
+    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
+    if (timeType != null) __obj.updateDynamic("timeType")(timeType.asInstanceOf[js.Any])
+    if (vehicleSpec != null) __obj.updateDynamic("vehicleSpec")(vehicleSpec.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDirectionsRequestOptions]
   }
 }

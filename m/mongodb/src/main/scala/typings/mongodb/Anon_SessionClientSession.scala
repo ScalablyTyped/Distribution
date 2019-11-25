@@ -12,7 +12,7 @@ trait Anon_SessionClientSession extends js.Object {
 object Anon_SessionClientSession {
   @scala.inline
   def apply(session: ClientSession): Anon_SessionClientSession = {
-    val __obj = js.Dynamic.literal(session = session)
+    val __obj = js.Dynamic.literal(session = session.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_SessionClientSession]
   }

@@ -26,11 +26,11 @@ object HintOptions {
     words: js.Array[String] = null
   ): HintOptions = {
     val __obj = js.Dynamic.literal(search = js.Any.fromFunction2(search))
-    __obj.updateDynamic("match")(`match`)
+    __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(js.Any.fromFunction1(content))
-    if (mentions != null) __obj.updateDynamic("mentions")(mentions)
+    if (mentions != null) __obj.updateDynamic("mentions")(mentions.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(js.Any.fromFunction1(template))
-    if (words != null) __obj.updateDynamic("words")(words)
+    if (words != null) __obj.updateDynamic("words")(words.asInstanceOf[js.Any])
     __obj.asInstanceOf[HintOptions]
   }
 }

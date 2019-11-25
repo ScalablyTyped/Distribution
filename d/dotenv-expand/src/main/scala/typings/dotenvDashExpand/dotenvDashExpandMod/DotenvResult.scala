@@ -15,8 +15,8 @@ object DotenvResult {
   @scala.inline
   def apply(error: Error = null, parsed: StringDictionary[String] = null): DotenvResult = {
     val __obj = js.Dynamic.literal()
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (parsed != null) __obj.updateDynamic("parsed")(parsed)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (parsed != null) __obj.updateDynamic("parsed")(parsed.asInstanceOf[js.Any])
     __obj.asInstanceOf[DotenvResult]
   }
 }

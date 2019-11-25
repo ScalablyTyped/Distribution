@@ -31,10 +31,10 @@ object ClientUser {
   @scala.inline
   def apply(clientAccountId: String = null, email: String = null, status: String = null, userId: String = null): ClientUser = {
     val __obj = js.Dynamic.literal()
-    if (clientAccountId != null) __obj.updateDynamic("clientAccountId")(clientAccountId)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (userId != null) __obj.updateDynamic("userId")(userId)
+    if (clientAccountId != null) __obj.updateDynamic("clientAccountId")(clientAccountId.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientUser]
   }
 }

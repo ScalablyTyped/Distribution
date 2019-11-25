@@ -29,12 +29,12 @@ object CustomPropertyTextArea {
     rows: Int | Double = null,
     show: Boolean | ShowFunction = null
   ): CustomPropertyTextArea = {
-    val __obj = js.Dynamic.literal(component = component)
-    __obj.updateDynamic("type")(`type`)
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
-    if (label != null) __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (maxlength != null) __obj.updateDynamic("maxlength")(maxlength.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref)
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomPropertyTextArea]

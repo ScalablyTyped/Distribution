@@ -16,8 +16,8 @@ trait Address extends js.Object {
 object Address {
   @scala.inline
   def apply($col$row: String, address: String, col: String, row: String, sheetName: String = null): Address = {
-    val __obj = js.Dynamic.literal($col$row = $col$row, address = address, col = col, row = row)
-    if (sheetName != null) __obj.updateDynamic("sheetName")(sheetName)
+    val __obj = js.Dynamic.literal($col$row = $col$row.asInstanceOf[js.Any], address = address.asInstanceOf[js.Any], col = col.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any])
+    if (sheetName != null) __obj.updateDynamic("sheetName")(sheetName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Address]
   }
 }

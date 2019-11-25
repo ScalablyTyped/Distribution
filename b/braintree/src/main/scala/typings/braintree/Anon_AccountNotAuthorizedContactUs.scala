@@ -25,7 +25,7 @@ object Anon_AccountNotAuthorizedContactUs {
     InsufficientFundsContactUs: String,
     UsBankMerchantAccount: String
   ): Anon_AccountNotAuthorizedContactUs = {
-    val __obj = js.Dynamic.literal(AccountNotAuthorizedContactUs = AccountNotAuthorizedContactUs, AnotherUsBankMerchantAccount = AnotherUsBankMerchantAccount, Approve = Approve, BankRejectedNone = BankRejectedNone, BankRejectedUpdateFundingInformation = BankRejectedUpdateFundingInformation, InsufficientFundsContactUs = InsufficientFundsContactUs, UsBankMerchantAccount = UsBankMerchantAccount)
+    val __obj = js.Dynamic.literal(AccountNotAuthorizedContactUs = AccountNotAuthorizedContactUs.asInstanceOf[js.Any], AnotherUsBankMerchantAccount = AnotherUsBankMerchantAccount.asInstanceOf[js.Any], Approve = Approve.asInstanceOf[js.Any], BankRejectedNone = BankRejectedNone.asInstanceOf[js.Any], BankRejectedUpdateFundingInformation = BankRejectedUpdateFundingInformation.asInstanceOf[js.Any], InsufficientFundsContactUs = InsufficientFundsContactUs.asInstanceOf[js.Any], UsBankMerchantAccount = UsBankMerchantAccount.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AccountNotAuthorizedContactUs]
   }

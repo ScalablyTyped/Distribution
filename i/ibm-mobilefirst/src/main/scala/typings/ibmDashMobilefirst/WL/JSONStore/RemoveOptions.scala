@@ -26,12 +26,12 @@ object RemoveOptions {
     push: js.UndefOr[Boolean] = js.undefined
   ): RemoveOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(exact)) __obj.updateDynamic("exact")(exact)
-    if (invocationContext != null) __obj.updateDynamic("invocationContext")(invocationContext)
-    if (!js.isUndefined(markDirty)) __obj.updateDynamic("markDirty")(markDirty)
+    if (!js.isUndefined(exact)) __obj.updateDynamic("exact")(exact.asInstanceOf[js.Any])
+    if (invocationContext != null) __obj.updateDynamic("invocationContext")(invocationContext.asInstanceOf[js.Any])
+    if (!js.isUndefined(markDirty)) __obj.updateDynamic("markDirty")(markDirty.asInstanceOf[js.Any])
     if (onFailure != null) __obj.updateDynamic("onFailure")(js.Any.fromFunction1(onFailure))
     if (onSuccess != null) __obj.updateDynamic("onSuccess")(js.Any.fromFunction1(onSuccess))
-    if (!js.isUndefined(push)) __obj.updateDynamic("push")(push)
+    if (!js.isUndefined(push)) __obj.updateDynamic("push")(push.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveOptions]
   }
 }

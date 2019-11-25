@@ -30,7 +30,7 @@ object UniqueValuesResultUniqueValueInfos {
     propertyIsEnumerable: PropertyKey => Boolean,
     value: String | Double
   ): UniqueValuesResultUniqueValueInfos = {
-    val __obj = js.Dynamic.literal(constructor = constructor, count = count, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UniqueValuesResultUniqueValueInfos]
   }

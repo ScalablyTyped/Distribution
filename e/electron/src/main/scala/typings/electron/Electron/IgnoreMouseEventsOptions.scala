@@ -17,7 +17,7 @@ object IgnoreMouseEventsOptions {
   @scala.inline
   def apply(forward: js.UndefOr[Boolean] = js.undefined): IgnoreMouseEventsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(forward)) __obj.updateDynamic("forward")(forward)
+    if (!js.isUndefined(forward)) __obj.updateDynamic("forward")(forward.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgnoreMouseEventsOptions]
   }
 }

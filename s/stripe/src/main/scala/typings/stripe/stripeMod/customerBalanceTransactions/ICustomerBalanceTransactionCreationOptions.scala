@@ -30,9 +30,9 @@ trait ICustomerBalanceTransactionCreationOptions extends js.Object {
 object ICustomerBalanceTransactionCreationOptions {
   @scala.inline
   def apply(amount: Double, currency: String, description: String = null, metadata: IMetadata = null): ICustomerBalanceTransactionCreationOptions = {
-    val __obj = js.Dynamic.literal(amount = amount, currency = currency)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICustomerBalanceTransactionCreationOptions]
   }
 }

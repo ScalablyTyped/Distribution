@@ -20,10 +20,10 @@ object UnitInvoice {
     unitPriceTaxes: js.Array[UnitInvoiceTaxLine] = null
   ): UnitInvoice = {
     val __obj = js.Dynamic.literal()
-    if (additionalCharges != null) __obj.updateDynamic("additionalCharges")(additionalCharges)
-    if (promotions != null) __obj.updateDynamic("promotions")(promotions)
-    if (unitPricePretax != null) __obj.updateDynamic("unitPricePretax")(unitPricePretax)
-    if (unitPriceTaxes != null) __obj.updateDynamic("unitPriceTaxes")(unitPriceTaxes)
+    if (additionalCharges != null) __obj.updateDynamic("additionalCharges")(additionalCharges.asInstanceOf[js.Any])
+    if (promotions != null) __obj.updateDynamic("promotions")(promotions.asInstanceOf[js.Any])
+    if (unitPricePretax != null) __obj.updateDynamic("unitPricePretax")(unitPricePretax.asInstanceOf[js.Any])
+    if (unitPriceTaxes != null) __obj.updateDynamic("unitPriceTaxes")(unitPriceTaxes.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnitInvoice]
   }
 }

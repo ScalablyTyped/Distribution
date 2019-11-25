@@ -19,8 +19,8 @@ object SortingEventUIParam {
   @scala.inline
   def apply(owner: js.Any = null, sortDirections: js.Array[_] = null): SortingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (sortDirections != null) __obj.updateDynamic("sortDirections")(sortDirections)
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (sortDirections != null) __obj.updateDynamic("sortDirections")(sortDirections.asInstanceOf[js.Any])
     __obj.asInstanceOf[SortingEventUIParam]
   }
 }

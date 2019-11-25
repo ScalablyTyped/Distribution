@@ -12,7 +12,7 @@ trait Anon_Xpriv extends js.Object {
 object Anon_Xpriv {
   @scala.inline
   def apply(xpriv: String, xpub: String): Anon_Xpriv = {
-    val __obj = js.Dynamic.literal(xpriv = xpriv, xpub = xpub)
+    val __obj = js.Dynamic.literal(xpriv = xpriv.asInstanceOf[js.Any], xpub = xpub.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Xpriv]
   }

@@ -24,12 +24,12 @@ object Property {
     visibility: String = null
   ): Property = {
     val __obj = js.Dynamic.literal()
-    if (etag != null) __obj.updateDynamic("etag")(etag)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
-    if (value != null) __obj.updateDynamic("value")(value)
-    if (visibility != null) __obj.updateDynamic("visibility")(visibility)
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[Property]
   }
 }

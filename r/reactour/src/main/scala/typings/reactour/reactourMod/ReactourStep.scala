@@ -48,10 +48,10 @@ object ReactourStep {
     val __obj = js.Dynamic.literal()
     if (action != null) __obj.updateDynamic("action")(js.Any.fromFunction1(action))
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (selector != null) __obj.updateDynamic("selector")(selector)
-    if (!js.isUndefined(stepInteraction)) __obj.updateDynamic("stepInteraction")(stepInteraction)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
+    if (!js.isUndefined(stepInteraction)) __obj.updateDynamic("stepInteraction")(stepInteraction.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactourStep]
   }
 }

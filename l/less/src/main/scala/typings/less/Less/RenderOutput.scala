@@ -13,7 +13,7 @@ trait RenderOutput extends js.Object {
 object RenderOutput {
   @scala.inline
   def apply(css: String, imports: js.Array[String], map: String): RenderOutput = {
-    val __obj = js.Dynamic.literal(css = css, imports = imports, map = map)
+    val __obj = js.Dynamic.literal(css = css.asInstanceOf[js.Any], imports = imports.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RenderOutput]
   }

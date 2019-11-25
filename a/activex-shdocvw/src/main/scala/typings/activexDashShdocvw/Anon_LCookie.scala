@@ -11,7 +11,7 @@ trait Anon_LCookie extends js.Object {
 object Anon_LCookie {
   @scala.inline
   def apply(lCookie: Double): Anon_LCookie = {
-    val __obj = js.Dynamic.literal(lCookie = lCookie)
+    val __obj = js.Dynamic.literal(lCookie = lCookie.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_LCookie]
   }

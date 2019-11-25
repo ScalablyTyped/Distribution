@@ -25,9 +25,9 @@ object Anon_CommentsEach {
     comments: js.Array[CommentKind] = null,
     loc: SourceLocationKind = null
   ): Anon_CommentsEach = {
-    val __obj = js.Dynamic.literal(each = each, left = left, right = right)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(each = each.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CommentsEach]
   }
 }

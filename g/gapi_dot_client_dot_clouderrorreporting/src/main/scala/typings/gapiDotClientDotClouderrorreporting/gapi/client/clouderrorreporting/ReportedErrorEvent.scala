@@ -47,10 +47,10 @@ object ReportedErrorEvent {
     serviceContext: ServiceContext = null
   ): ReportedErrorEvent = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (eventTime != null) __obj.updateDynamic("eventTime")(eventTime)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (serviceContext != null) __obj.updateDynamic("serviceContext")(serviceContext)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (eventTime != null) __obj.updateDynamic("eventTime")(eventTime.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (serviceContext != null) __obj.updateDynamic("serviceContext")(serviceContext.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportedErrorEvent]
   }
 }

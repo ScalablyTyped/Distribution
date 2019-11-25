@@ -25,12 +25,12 @@ object InitOptions {
     user: UserOptions = null
   ): InitOptions = {
     val __obj = js.Dynamic.literal()
-    if (cookie != null) __obj.updateDynamic("cookie")(cookie)
-    if (group != null) __obj.updateDynamic("group")(group)
-    if (integrations != null) __obj.updateDynamic("integrations")(integrations)
-    if (localStorage != null) __obj.updateDynamic("localStorage")(localStorage)
-    if (metrics != null) __obj.updateDynamic("metrics")(metrics)
-    if (user != null) __obj.updateDynamic("user")(user)
+    if (cookie != null) __obj.updateDynamic("cookie")(cookie.asInstanceOf[js.Any])
+    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
+    if (integrations != null) __obj.updateDynamic("integrations")(integrations.asInstanceOf[js.Any])
+    if (localStorage != null) __obj.updateDynamic("localStorage")(localStorage.asInstanceOf[js.Any])
+    if (metrics != null) __obj.updateDynamic("metrics")(metrics.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitOptions]
   }
 }

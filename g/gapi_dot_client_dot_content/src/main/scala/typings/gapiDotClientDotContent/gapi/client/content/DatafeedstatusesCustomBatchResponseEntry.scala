@@ -18,8 +18,8 @@ object DatafeedstatusesCustomBatchResponseEntry {
   def apply(batchId: Int | Double = null, datafeedStatus: DatafeedStatus = null, errors: Errors = null): DatafeedstatusesCustomBatchResponseEntry = {
     val __obj = js.Dynamic.literal()
     if (batchId != null) __obj.updateDynamic("batchId")(batchId.asInstanceOf[js.Any])
-    if (datafeedStatus != null) __obj.updateDynamic("datafeedStatus")(datafeedStatus)
-    if (errors != null) __obj.updateDynamic("errors")(errors)
+    if (datafeedStatus != null) __obj.updateDynamic("datafeedStatus")(datafeedStatus.asInstanceOf[js.Any])
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatafeedstatusesCustomBatchResponseEntry]
   }
 }

@@ -21,7 +21,7 @@ object IRevocationAndRenewalItem {
     reasons: RevocationAndRenewalReasons,
     renewalId: String
   ): IRevocationAndRenewalItem = {
-    val __obj = js.Dynamic.literal(headerHash = headerHash, name = name, publicKeyHash = publicKeyHash, reasons = reasons, renewalId = renewalId)
+    val __obj = js.Dynamic.literal(headerHash = headerHash.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], publicKeyHash = publicKeyHash.asInstanceOf[js.Any], reasons = reasons.asInstanceOf[js.Any], renewalId = renewalId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IRevocationAndRenewalItem]
   }

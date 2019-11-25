@@ -34,9 +34,9 @@ object Schedule {
   @scala.inline
   def apply(scheduleEndDate: Date = null, scheduleStartDate: Date = null, startTimeOfDay: TimeOfDay = null): Schedule = {
     val __obj = js.Dynamic.literal()
-    if (scheduleEndDate != null) __obj.updateDynamic("scheduleEndDate")(scheduleEndDate)
-    if (scheduleStartDate != null) __obj.updateDynamic("scheduleStartDate")(scheduleStartDate)
-    if (startTimeOfDay != null) __obj.updateDynamic("startTimeOfDay")(startTimeOfDay)
+    if (scheduleEndDate != null) __obj.updateDynamic("scheduleEndDate")(scheduleEndDate.asInstanceOf[js.Any])
+    if (scheduleStartDate != null) __obj.updateDynamic("scheduleStartDate")(scheduleStartDate.asInstanceOf[js.Any])
+    if (startTimeOfDay != null) __obj.updateDynamic("startTimeOfDay")(startTimeOfDay.asInstanceOf[js.Any])
     __obj.asInstanceOf[Schedule]
   }
 }

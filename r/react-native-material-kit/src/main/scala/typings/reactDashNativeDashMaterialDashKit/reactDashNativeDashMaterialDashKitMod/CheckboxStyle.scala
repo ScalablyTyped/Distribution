@@ -22,11 +22,11 @@ object CheckboxStyle {
     rippleColor: String = null
   ): CheckboxStyle = {
     val __obj = js.Dynamic.literal()
-    if (borderOffColor != null) __obj.updateDynamic("borderOffColor")(borderOffColor)
-    if (borderOnColor != null) __obj.updateDynamic("borderOnColor")(borderOnColor)
-    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor)
+    if (borderOffColor != null) __obj.updateDynamic("borderOffColor")(borderOffColor.asInstanceOf[js.Any])
+    if (borderOnColor != null) __obj.updateDynamic("borderOnColor")(borderOnColor.asInstanceOf[js.Any])
+    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
     if (inset != null) __obj.updateDynamic("inset")(inset.asInstanceOf[js.Any])
-    if (rippleColor != null) __obj.updateDynamic("rippleColor")(rippleColor)
+    if (rippleColor != null) __obj.updateDynamic("rippleColor")(rippleColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckboxStyle]
   }
 }

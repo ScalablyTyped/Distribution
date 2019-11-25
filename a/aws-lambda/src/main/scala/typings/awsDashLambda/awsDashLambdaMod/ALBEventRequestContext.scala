@@ -12,7 +12,7 @@ trait ALBEventRequestContext extends js.Object {
 object ALBEventRequestContext {
   @scala.inline
   def apply(elb: Anon_TargetGroupArn): ALBEventRequestContext = {
-    val __obj = js.Dynamic.literal(elb = elb)
+    val __obj = js.Dynamic.literal(elb = elb.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ALBEventRequestContext]
   }

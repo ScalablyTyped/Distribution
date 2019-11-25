@@ -86,16 +86,16 @@ object OptimizationRequest {
     source: any | first = null,
     steps: js.UndefOr[Boolean] = js.undefined
   ): OptimizationRequest = {
-    val __obj = js.Dynamic.literal(profile = profile, waypoints = waypoints)
+    val __obj = js.Dynamic.literal(profile = profile.asInstanceOf[js.Any], waypoints = waypoints.asInstanceOf[js.Any])
     if (annotations != null) __obj.updateDynamic("annotations")(annotations.asInstanceOf[js.Any])
     if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
-    if (distributions != null) __obj.updateDynamic("distributions")(distributions)
+    if (distributions != null) __obj.updateDynamic("distributions")(distributions.asInstanceOf[js.Any])
     if (geometries != null) __obj.updateDynamic("geometries")(geometries.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language)
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (overview != null) __obj.updateDynamic("overview")(overview.asInstanceOf[js.Any])
-    if (!js.isUndefined(roundtrip)) __obj.updateDynamic("roundtrip")(roundtrip)
+    if (!js.isUndefined(roundtrip)) __obj.updateDynamic("roundtrip")(roundtrip.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (!js.isUndefined(steps)) __obj.updateDynamic("steps")(steps)
+    if (!js.isUndefined(steps)) __obj.updateDynamic("steps")(steps.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptimizationRequest]
   }
 }

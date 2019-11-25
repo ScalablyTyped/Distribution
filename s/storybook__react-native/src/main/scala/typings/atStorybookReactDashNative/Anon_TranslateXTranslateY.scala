@@ -13,8 +13,8 @@ trait Anon_TranslateXTranslateY extends js.Object {
 object Anon_TranslateXTranslateY {
   @scala.inline
   def apply(translateX: AnimatedInterpolation, translateY: js.UndefOr[scala.Nothing] = js.undefined): Anon_TranslateXTranslateY = {
-    val __obj = js.Dynamic.literal(translateX = translateX)
-    if (!js.isUndefined(translateY)) __obj.updateDynamic("translateY")(translateY)
+    val __obj = js.Dynamic.literal(translateX = translateX.asInstanceOf[js.Any])
+    if (!js.isUndefined(translateY)) __obj.updateDynamic("translateY")(translateY.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_TranslateXTranslateY]
   }
 }

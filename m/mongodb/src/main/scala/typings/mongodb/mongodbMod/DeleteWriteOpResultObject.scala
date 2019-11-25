@@ -17,8 +17,8 @@ trait DeleteWriteOpResultObject extends js.Object {
 object DeleteWriteOpResultObject {
   @scala.inline
   def apply(result: Anon_N, connection: js.Any = null, deletedCount: Int | scala.Double = null): DeleteWriteOpResultObject = {
-    val __obj = js.Dynamic.literal(result = result)
-    if (connection != null) __obj.updateDynamic("connection")(connection)
+    val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
+    if (connection != null) __obj.updateDynamic("connection")(connection.asInstanceOf[js.Any])
     if (deletedCount != null) __obj.updateDynamic("deletedCount")(deletedCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteWriteOpResultObject]
   }

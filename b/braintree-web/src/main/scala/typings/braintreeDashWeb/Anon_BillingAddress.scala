@@ -18,9 +18,9 @@ object Anon_BillingAddress {
     vault: js.UndefOr[Boolean] = js.undefined
   ): Anon_BillingAddress = {
     val __obj = js.Dynamic.literal()
-    if (billingAddress != null) __obj.updateDynamic("billingAddress")(billingAddress)
-    if (cardholderName != null) __obj.updateDynamic("cardholderName")(cardholderName)
-    if (!js.isUndefined(vault)) __obj.updateDynamic("vault")(vault)
+    if (billingAddress != null) __obj.updateDynamic("billingAddress")(billingAddress.asInstanceOf[js.Any])
+    if (cardholderName != null) __obj.updateDynamic("cardholderName")(cardholderName.asInstanceOf[js.Any])
+    if (!js.isUndefined(vault)) __obj.updateDynamic("vault")(vault.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BillingAddress]
   }
 }

@@ -13,8 +13,8 @@ object GoogleCloudDialogflowV2IntentMessageImage {
   @scala.inline
   def apply(accessibilityText: String = null, imageUri: String = null): GoogleCloudDialogflowV2IntentMessageImage = {
     val __obj = js.Dynamic.literal()
-    if (accessibilityText != null) __obj.updateDynamic("accessibilityText")(accessibilityText)
-    if (imageUri != null) __obj.updateDynamic("imageUri")(imageUri)
+    if (accessibilityText != null) __obj.updateDynamic("accessibilityText")(accessibilityText.asInstanceOf[js.Any])
+    if (imageUri != null) __obj.updateDynamic("imageUri")(imageUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudDialogflowV2IntentMessageImage]
   }
 }

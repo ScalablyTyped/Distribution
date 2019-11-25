@@ -24,10 +24,10 @@ object ProcessOptions {
     money_source_token: String = null,
     request_token: js.UndefOr[Boolean] = js.undefined
   ): ProcessOptions = {
-    val __obj = js.Dynamic.literal(ext_auth_fail_uri = ext_auth_fail_uri, ext_auth_success_uri = ext_auth_success_uri, request_id = request_id)
-    if (csc != null) __obj.updateDynamic("csc")(csc)
-    if (money_source_token != null) __obj.updateDynamic("money_source_token")(money_source_token)
-    if (!js.isUndefined(request_token)) __obj.updateDynamic("request_token")(request_token)
+    val __obj = js.Dynamic.literal(ext_auth_fail_uri = ext_auth_fail_uri.asInstanceOf[js.Any], ext_auth_success_uri = ext_auth_success_uri.asInstanceOf[js.Any], request_id = request_id.asInstanceOf[js.Any])
+    if (csc != null) __obj.updateDynamic("csc")(csc.asInstanceOf[js.Any])
+    if (money_source_token != null) __obj.updateDynamic("money_source_token")(money_source_token.asInstanceOf[js.Any])
+    if (!js.isUndefined(request_token)) __obj.updateDynamic("request_token")(request_token.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProcessOptions]
   }
 }

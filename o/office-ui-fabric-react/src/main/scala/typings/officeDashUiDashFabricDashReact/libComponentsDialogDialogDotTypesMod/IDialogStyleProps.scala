@@ -54,13 +54,13 @@ object IDialogStyleProps {
     dialogDefaultMinWidth: String | ICSSRule | ICSSPixelUnitRule = null,
     hidden: js.UndefOr[Boolean] = js.undefined
   ): IDialogStyleProps = {
-    val __obj = js.Dynamic.literal(theme = theme)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (containerClassName != null) __obj.updateDynamic("containerClassName")(containerClassName)
-    if (contentClassName != null) __obj.updateDynamic("contentClassName")(contentClassName)
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (containerClassName != null) __obj.updateDynamic("containerClassName")(containerClassName.asInstanceOf[js.Any])
+    if (contentClassName != null) __obj.updateDynamic("contentClassName")(contentClassName.asInstanceOf[js.Any])
     if (dialogDefaultMaxWidth != null) __obj.updateDynamic("dialogDefaultMaxWidth")(dialogDefaultMaxWidth.asInstanceOf[js.Any])
     if (dialogDefaultMinWidth != null) __obj.updateDynamic("dialogDefaultMinWidth")(dialogDefaultMinWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDialogStyleProps]
   }
 }

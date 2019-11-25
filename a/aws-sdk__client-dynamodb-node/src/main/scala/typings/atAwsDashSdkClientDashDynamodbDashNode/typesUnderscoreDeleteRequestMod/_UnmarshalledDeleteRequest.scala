@@ -17,7 +17,7 @@ trait _UnmarshalledDeleteRequest extends _DeleteRequest {
 object _UnmarshalledDeleteRequest {
   @scala.inline
   def apply(Key: StringDictionary[_UnmarshalledAttributeValue]): _UnmarshalledDeleteRequest = {
-    val __obj = js.Dynamic.literal(Key = Key)
+    val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_UnmarshalledDeleteRequest]
   }

@@ -27,10 +27,10 @@ object StreamLocation {
     streamingStageLocation: StreamingStageLocation = null
   ): StreamLocation = {
     val __obj = js.Dynamic.literal()
-    if (customSourceLocation != null) __obj.updateDynamic("customSourceLocation")(customSourceLocation)
-    if (pubsubLocation != null) __obj.updateDynamic("pubsubLocation")(pubsubLocation)
-    if (sideInputLocation != null) __obj.updateDynamic("sideInputLocation")(sideInputLocation)
-    if (streamingStageLocation != null) __obj.updateDynamic("streamingStageLocation")(streamingStageLocation)
+    if (customSourceLocation != null) __obj.updateDynamic("customSourceLocation")(customSourceLocation.asInstanceOf[js.Any])
+    if (pubsubLocation != null) __obj.updateDynamic("pubsubLocation")(pubsubLocation.asInstanceOf[js.Any])
+    if (sideInputLocation != null) __obj.updateDynamic("sideInputLocation")(sideInputLocation.asInstanceOf[js.Any])
+    if (streamingStageLocation != null) __obj.updateDynamic("streamingStageLocation")(streamingStageLocation.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamLocation]
   }
 }

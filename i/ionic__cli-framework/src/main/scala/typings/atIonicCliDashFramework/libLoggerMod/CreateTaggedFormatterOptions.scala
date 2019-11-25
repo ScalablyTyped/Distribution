@@ -22,9 +22,9 @@ object CreateTaggedFormatterOptions {
     wrap: Boolean | WordWrapOptions = null
   ): CreateTaggedFormatterOptions = {
     val __obj = js.Dynamic.literal()
-    if (colors != null) __obj.updateDynamic("colors")(colors)
+    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(titleize)) __obj.updateDynamic("titleize")(titleize)
+    if (!js.isUndefined(titleize)) __obj.updateDynamic("titleize")(titleize.asInstanceOf[js.Any])
     if (wrap != null) __obj.updateDynamic("wrap")(wrap.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTaggedFormatterOptions]
   }

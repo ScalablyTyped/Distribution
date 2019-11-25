@@ -25,7 +25,7 @@ object BuildReference {
     repositoryId: String,
     uri: String
   ): BuildReference = {
-    val __obj = js.Dynamic.literal(branchName = branchName, buildSystem = buildSystem, definitionId = definitionId, id = id, number = number, repositoryId = repositoryId, uri = uri)
+    val __obj = js.Dynamic.literal(branchName = branchName.asInstanceOf[js.Any], buildSystem = buildSystem.asInstanceOf[js.Any], definitionId = definitionId.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], repositoryId = repositoryId.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BuildReference]
   }

@@ -11,7 +11,7 @@ package object libRelayDashExperimentalUseLegacyPaginationFragmentMod {
   type KeyReturnType[T /* <: KeyType */] = js.Function1[
     /* arg */ T, 
     NonNullable[
-      /* import warning: ImportType.apply Failed type conversion: T[' $data'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: T[' $data'] */ js.Any
     ]
   ]
 }

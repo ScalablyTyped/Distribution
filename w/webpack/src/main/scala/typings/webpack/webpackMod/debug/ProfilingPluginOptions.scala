@@ -13,7 +13,7 @@ object ProfilingPluginOptions {
   @scala.inline
   def apply(outputPath: String = null): ProfilingPluginOptions = {
     val __obj = js.Dynamic.literal()
-    if (outputPath != null) __obj.updateDynamic("outputPath")(outputPath)
+    if (outputPath != null) __obj.updateDynamic("outputPath")(outputPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProfilingPluginOptions]
   }
 }

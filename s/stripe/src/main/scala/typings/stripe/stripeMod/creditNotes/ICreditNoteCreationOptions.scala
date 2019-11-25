@@ -46,14 +46,14 @@ object ICreditNoteCreationOptions {
     refund: String = null,
     refund_amount: Int | Double = null
   ): ICreditNoteCreationOptions = {
-    val __obj = js.Dynamic.literal(amount = amount, invoice = invoice)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], invoice = invoice.asInstanceOf[js.Any])
     if (credit_amount != null) __obj.updateDynamic("credit_amount")(credit_amount.asInstanceOf[js.Any])
-    if (expand != null) __obj.updateDynamic("expand")(expand)
-    if (include != null) __obj.updateDynamic("include")(include)
-    if (memo != null) __obj.updateDynamic("memo")(memo)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (reason != null) __obj.updateDynamic("reason")(reason)
-    if (refund != null) __obj.updateDynamic("refund")(refund)
+    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    if (memo != null) __obj.updateDynamic("memo")(memo.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
+    if (refund != null) __obj.updateDynamic("refund")(refund.asInstanceOf[js.Any])
     if (refund_amount != null) __obj.updateDynamic("refund_amount")(refund_amount.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICreditNoteCreationOptions]
   }

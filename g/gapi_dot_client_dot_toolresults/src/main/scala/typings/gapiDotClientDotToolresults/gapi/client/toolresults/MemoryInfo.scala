@@ -15,8 +15,8 @@ object MemoryInfo {
   @scala.inline
   def apply(memoryCapInKibibyte: String = null, memoryTotalInKibibyte: String = null): MemoryInfo = {
     val __obj = js.Dynamic.literal()
-    if (memoryCapInKibibyte != null) __obj.updateDynamic("memoryCapInKibibyte")(memoryCapInKibibyte)
-    if (memoryTotalInKibibyte != null) __obj.updateDynamic("memoryTotalInKibibyte")(memoryTotalInKibibyte)
+    if (memoryCapInKibibyte != null) __obj.updateDynamic("memoryCapInKibibyte")(memoryCapInKibibyte.asInstanceOf[js.Any])
+    if (memoryTotalInKibibyte != null) __obj.updateDynamic("memoryTotalInKibibyte")(memoryTotalInKibibyte.asInstanceOf[js.Any])
     __obj.asInstanceOf[MemoryInfo]
   }
 }

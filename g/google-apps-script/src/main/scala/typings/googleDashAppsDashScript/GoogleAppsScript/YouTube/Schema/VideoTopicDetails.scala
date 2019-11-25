@@ -18,9 +18,9 @@ object VideoTopicDetails {
     topicIds: js.Array[String] = null
   ): VideoTopicDetails = {
     val __obj = js.Dynamic.literal()
-    if (relevantTopicIds != null) __obj.updateDynamic("relevantTopicIds")(relevantTopicIds)
-    if (topicCategories != null) __obj.updateDynamic("topicCategories")(topicCategories)
-    if (topicIds != null) __obj.updateDynamic("topicIds")(topicIds)
+    if (relevantTopicIds != null) __obj.updateDynamic("relevantTopicIds")(relevantTopicIds.asInstanceOf[js.Any])
+    if (topicCategories != null) __obj.updateDynamic("topicCategories")(topicCategories.asInstanceOf[js.Any])
+    if (topicIds != null) __obj.updateDynamic("topicIds")(topicIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoTopicDetails]
   }
 }

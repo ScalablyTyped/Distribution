@@ -27,10 +27,10 @@ object Settings {
   ): Settings = {
     val __obj = js.Dynamic.literal()
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction2(callback))
-    if (packageName != null) __obj.updateDynamic("packageName")(packageName)
-    if (packageVersion != null) __obj.updateDynamic("packageVersion")(packageVersion)
-    if (pkg != null) __obj.updateDynamic("pkg")(pkg)
-    if (!js.isUndefined(shouldNotifyInNpmScript)) __obj.updateDynamic("shouldNotifyInNpmScript")(shouldNotifyInNpmScript)
+    if (packageName != null) __obj.updateDynamic("packageName")(packageName.asInstanceOf[js.Any])
+    if (packageVersion != null) __obj.updateDynamic("packageVersion")(packageVersion.asInstanceOf[js.Any])
+    if (pkg != null) __obj.updateDynamic("pkg")(pkg.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldNotifyInNpmScript)) __obj.updateDynamic("shouldNotifyInNpmScript")(shouldNotifyInNpmScript.asInstanceOf[js.Any])
     if (updateCheckInterval != null) __obj.updateDynamic("updateCheckInterval")(updateCheckInterval.asInstanceOf[js.Any])
     __obj.asInstanceOf[Settings]
   }

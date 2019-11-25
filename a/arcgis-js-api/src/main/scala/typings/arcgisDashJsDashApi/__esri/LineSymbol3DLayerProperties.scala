@@ -67,7 +67,7 @@ object LineSymbol3DLayerProperties {
     val __obj = js.Dynamic.literal()
     if (cap != null) __obj.updateDynamic("cap")(cap.asInstanceOf[js.Any])
     if (join != null) __obj.updateDynamic("join")(join.asInstanceOf[js.Any])
-    if (material != null) __obj.updateDynamic("material")(material)
+    if (material != null) __obj.updateDynamic("material")(material.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineSymbol3DLayerProperties]
   }

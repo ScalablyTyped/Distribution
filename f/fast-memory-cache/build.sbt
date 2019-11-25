@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fast-memory-cache"
-version := "2.0-dt-20190924Z-d754ab"
+version := "2.0-dt-20190924Z-c0dec7"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

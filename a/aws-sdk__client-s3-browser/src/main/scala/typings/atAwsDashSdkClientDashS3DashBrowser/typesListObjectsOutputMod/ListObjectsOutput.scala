@@ -70,17 +70,17 @@ object ListObjectsOutput {
     NextMarker: String = null,
     Prefix: String = null
   ): ListObjectsOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (CommonPrefixes != null) __obj.updateDynamic("CommonPrefixes")(CommonPrefixes)
-    if (Contents != null) __obj.updateDynamic("Contents")(Contents)
-    if (Delimiter != null) __obj.updateDynamic("Delimiter")(Delimiter)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (CommonPrefixes != null) __obj.updateDynamic("CommonPrefixes")(CommonPrefixes.asInstanceOf[js.Any])
+    if (Contents != null) __obj.updateDynamic("Contents")(Contents.asInstanceOf[js.Any])
+    if (Delimiter != null) __obj.updateDynamic("Delimiter")(Delimiter.asInstanceOf[js.Any])
     if (EncodingType != null) __obj.updateDynamic("EncodingType")(EncodingType.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated)
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker)
+    if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated.asInstanceOf[js.Any])
+    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
     if (MaxKeys != null) __obj.updateDynamic("MaxKeys")(MaxKeys.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name)
-    if (NextMarker != null) __obj.updateDynamic("NextMarker")(NextMarker)
-    if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix)
+    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
+    if (NextMarker != null) __obj.updateDynamic("NextMarker")(NextMarker.asInstanceOf[js.Any])
+    if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListObjectsOutput]
   }
 }

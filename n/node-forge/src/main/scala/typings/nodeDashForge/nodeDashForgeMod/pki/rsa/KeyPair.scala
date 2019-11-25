@@ -15,7 +15,7 @@ object KeyPair {
     privateKey: typings.nodeDashForge.nodeDashForgeMod.pki.rsa.PrivateKey,
     publicKey: typings.nodeDashForge.nodeDashForgeMod.pki.rsa.PublicKey
   ): KeyPair = {
-    val __obj = js.Dynamic.literal(privateKey = privateKey, publicKey = publicKey)
+    val __obj = js.Dynamic.literal(privateKey = privateKey.asInstanceOf[js.Any], publicKey = publicKey.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[KeyPair]
   }

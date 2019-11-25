@@ -19,8 +19,8 @@ object Anon_DynamicRegistrationSymbolKind {
   @scala.inline
   def apply(dynamicRegistration: js.UndefOr[Boolean] = js.undefined, symbolKind: Anon_ValueSet = null): Anon_DynamicRegistrationSymbolKind = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dynamicRegistration)) __obj.updateDynamic("dynamicRegistration")(dynamicRegistration)
-    if (symbolKind != null) __obj.updateDynamic("symbolKind")(symbolKind)
+    if (!js.isUndefined(dynamicRegistration)) __obj.updateDynamic("dynamicRegistration")(dynamicRegistration.asInstanceOf[js.Any])
+    if (symbolKind != null) __obj.updateDynamic("symbolKind")(symbolKind.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DynamicRegistrationSymbolKind]
   }
 }

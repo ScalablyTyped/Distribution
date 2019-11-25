@@ -28,14 +28,14 @@ object JWTInput {
     `type`: String = null
   ): JWTInput = {
     val __obj = js.Dynamic.literal()
-    if (client_email != null) __obj.updateDynamic("client_email")(client_email)
-    if (client_id != null) __obj.updateDynamic("client_id")(client_id)
-    if (client_secret != null) __obj.updateDynamic("client_secret")(client_secret)
-    if (private_key != null) __obj.updateDynamic("private_key")(private_key)
-    if (private_key_id != null) __obj.updateDynamic("private_key_id")(private_key_id)
-    if (project_id != null) __obj.updateDynamic("project_id")(project_id)
-    if (refresh_token != null) __obj.updateDynamic("refresh_token")(refresh_token)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (client_email != null) __obj.updateDynamic("client_email")(client_email.asInstanceOf[js.Any])
+    if (client_id != null) __obj.updateDynamic("client_id")(client_id.asInstanceOf[js.Any])
+    if (client_secret != null) __obj.updateDynamic("client_secret")(client_secret.asInstanceOf[js.Any])
+    if (private_key != null) __obj.updateDynamic("private_key")(private_key.asInstanceOf[js.Any])
+    if (private_key_id != null) __obj.updateDynamic("private_key_id")(private_key_id.asInstanceOf[js.Any])
+    if (project_id != null) __obj.updateDynamic("project_id")(project_id.asInstanceOf[js.Any])
+    if (refresh_token != null) __obj.updateDynamic("refresh_token")(refresh_token.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[JWTInput]
   }
 }

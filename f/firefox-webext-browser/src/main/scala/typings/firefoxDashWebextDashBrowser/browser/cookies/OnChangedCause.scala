@@ -21,3 +21,18 @@ import scala.scalajs.js.annotation._
 */
 trait OnChangedCause extends js.Object
 
+object OnChangedCause {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def evicted: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.evicted = this.cast("evicted")
+  @scala.inline
+  def expired: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.expired = this.cast("expired")
+  @scala.inline
+  def expired_overwrite: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.expired_overwrite = this.cast("expired_overwrite")
+  @scala.inline
+  def explicit: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.explicit = this.cast("explicit")
+  @scala.inline
+  def overwrite: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.overwrite = this.cast("overwrite")
+}
+

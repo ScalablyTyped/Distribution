@@ -13,7 +13,7 @@ trait DeletedRecordsInfo extends js.Object {
 object DeletedRecordsInfo {
   @scala.inline
   def apply(deletedRecords: js.Array[DeletedRecord], earliestDateAvailable: String, latestDateCovered: String): DeletedRecordsInfo = {
-    val __obj = js.Dynamic.literal(deletedRecords = deletedRecords, earliestDateAvailable = earliestDateAvailable, latestDateCovered = latestDateCovered)
+    val __obj = js.Dynamic.literal(deletedRecords = deletedRecords.asInstanceOf[js.Any], earliestDateAvailable = earliestDateAvailable.asInstanceOf[js.Any], latestDateCovered = latestDateCovered.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeletedRecordsInfo]
   }

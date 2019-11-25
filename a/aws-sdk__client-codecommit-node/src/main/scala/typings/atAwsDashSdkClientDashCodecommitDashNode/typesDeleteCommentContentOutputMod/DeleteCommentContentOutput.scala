@@ -22,8 +22,8 @@ trait DeleteCommentContentOutput extends OutputTypesUnion {
 object DeleteCommentContentOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, comment: _UnmarshalledComment = null): DeleteCommentContentOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (comment != null) __obj.updateDynamic("comment")(comment)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteCommentContentOutput]
   }
 }

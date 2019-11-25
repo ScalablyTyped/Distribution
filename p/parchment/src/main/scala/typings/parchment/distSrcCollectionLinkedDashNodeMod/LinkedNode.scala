@@ -14,8 +14,8 @@ object LinkedNode {
   @scala.inline
   def apply(length: () => Double, next: LinkedNode = null, prev: LinkedNode = null): LinkedNode = {
     val __obj = js.Dynamic.literal(length = js.Any.fromFunction0(length))
-    if (next != null) __obj.updateDynamic("next")(next)
-    if (prev != null) __obj.updateDynamic("prev")(prev)
+    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
+    if (prev != null) __obj.updateDynamic("prev")(prev.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinkedNode]
   }
 }

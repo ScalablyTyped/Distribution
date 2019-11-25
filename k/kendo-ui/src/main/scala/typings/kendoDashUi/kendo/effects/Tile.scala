@@ -12,12 +12,12 @@ trait Tile extends Effect {
 object Tile {
   @scala.inline
   def apply(
-    add: Effect => Tile,
+    add: Effect => Effect,
     direction: String => Tile,
-    duration: Double => Tile,
+    duration: Double => Effect,
     play: () => JQueryPromise[_],
     reverse: () => JQueryPromise[_],
-    stop: () => Tile
+    stop: () => Effect
   ): Tile = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), direction = js.Any.fromFunction1(direction), duration = js.Any.fromFunction1(duration), play = js.Any.fromFunction0(play), reverse = js.Any.fromFunction0(reverse), stop = js.Any.fromFunction0(stop))
   

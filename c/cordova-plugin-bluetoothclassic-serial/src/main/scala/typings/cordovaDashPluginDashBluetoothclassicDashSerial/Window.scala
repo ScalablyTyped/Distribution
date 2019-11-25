@@ -11,7 +11,7 @@ trait Window extends js.Object {
 object Window {
   @scala.inline
   def apply(BluetoothClassicSerial: BluetoothClassicSerial): Window = {
-    val __obj = js.Dynamic.literal(BluetoothClassicSerial = BluetoothClassicSerial)
+    val __obj = js.Dynamic.literal(BluetoothClassicSerial = BluetoothClassicSerial.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Window]
   }

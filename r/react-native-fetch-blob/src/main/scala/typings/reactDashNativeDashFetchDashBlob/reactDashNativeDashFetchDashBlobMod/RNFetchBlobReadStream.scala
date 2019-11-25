@@ -29,7 +29,7 @@ object RNFetchBlobReadStream {
     tick: Double,
     bufferSize: Int | Double = null
   ): RNFetchBlobReadStream = {
-    val __obj = js.Dynamic.literal(closed = closed, encoding = encoding, onData = js.Any.fromFunction1(onData), onEnd = js.Any.fromFunction1(onEnd), onError = js.Any.fromFunction1(onError), open = js.Any.fromFunction0(open), path = path, tick = tick)
+    val __obj = js.Dynamic.literal(closed = closed.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any], onData = js.Any.fromFunction1(onData), onEnd = js.Any.fromFunction1(onEnd), onError = js.Any.fromFunction1(onError), open = js.Any.fromFunction0(open), path = path.asInstanceOf[js.Any], tick = tick.asInstanceOf[js.Any])
     if (bufferSize != null) __obj.updateDynamic("bufferSize")(bufferSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[RNFetchBlobReadStream]
   }

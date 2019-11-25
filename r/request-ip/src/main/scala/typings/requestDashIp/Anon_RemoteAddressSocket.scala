@@ -13,8 +13,8 @@ object Anon_RemoteAddressSocket {
   @scala.inline
   def apply(remoteAddress: String = null, socket: Anon_RemoteAddress = null): Anon_RemoteAddressSocket = {
     val __obj = js.Dynamic.literal()
-    if (remoteAddress != null) __obj.updateDynamic("remoteAddress")(remoteAddress)
-    if (socket != null) __obj.updateDynamic("socket")(socket)
+    if (remoteAddress != null) __obj.updateDynamic("remoteAddress")(remoteAddress.asInstanceOf[js.Any])
+    if (socket != null) __obj.updateDynamic("socket")(socket.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_RemoteAddressSocket]
   }
 }

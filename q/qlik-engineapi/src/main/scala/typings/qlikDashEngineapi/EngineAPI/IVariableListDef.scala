@@ -29,7 +29,7 @@ trait IVariableListDef extends js.Object {
 object IVariableListDef {
   @scala.inline
   def apply(qData: js.Any, qShowConfig: Boolean, qShowReserved: Boolean, qType: String): IVariableListDef = {
-    val __obj = js.Dynamic.literal(qData = qData, qShowConfig = qShowConfig, qShowReserved = qShowReserved, qType = qType)
+    val __obj = js.Dynamic.literal(qData = qData.asInstanceOf[js.Any], qShowConfig = qShowConfig.asInstanceOf[js.Any], qShowReserved = qShowReserved.asInstanceOf[js.Any], qType = qType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IVariableListDef]
   }

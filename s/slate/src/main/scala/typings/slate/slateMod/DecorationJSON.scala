@@ -24,11 +24,11 @@ object DecorationJSON {
     `type`: String = null
   ): DecorationJSON = {
     val __obj = js.Dynamic.literal()
-    if (anchor != null) __obj.updateDynamic("anchor")(anchor)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (focus != null) __obj.updateDynamic("focus")(focus)
-    if (`object` != null) __obj.updateDynamic("object")(`object`)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (focus != null) __obj.updateDynamic("focus")(focus.asInstanceOf[js.Any])
+    if (`object` != null) __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecorationJSON]
   }
 }

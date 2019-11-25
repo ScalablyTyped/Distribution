@@ -60,12 +60,12 @@ object PlotGaugeDialOptions {
   ): PlotGaugeDialOptions = {
     val __obj = js.Dynamic.literal()
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (baseLength != null) __obj.updateDynamic("baseLength")(baseLength)
+    if (baseLength != null) __obj.updateDynamic("baseLength")(baseLength.asInstanceOf[js.Any])
     if (baseWidth != null) __obj.updateDynamic("baseWidth")(baseWidth.asInstanceOf[js.Any])
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
-    if (radius != null) __obj.updateDynamic("radius")(radius)
-    if (rearLength != null) __obj.updateDynamic("rearLength")(rearLength)
+    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (rearLength != null) __obj.updateDynamic("rearLength")(rearLength.asInstanceOf[js.Any])
     if (topWidth != null) __obj.updateDynamic("topWidth")(topWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotGaugeDialOptions]
   }

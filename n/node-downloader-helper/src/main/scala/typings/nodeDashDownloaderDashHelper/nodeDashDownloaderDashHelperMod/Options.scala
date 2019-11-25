@@ -34,13 +34,13 @@ object Options {
     `override`: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (fileName != null) __obj.updateDynamic("fileName")(fileName)
-    if (!js.isUndefined(forceResume)) __obj.updateDynamic("forceResume")(forceResume)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (httpRequestOptions != null) __obj.updateDynamic("httpRequestOptions")(httpRequestOptions)
-    if (httpsRequestOptions != null) __obj.updateDynamic("httpsRequestOptions")(httpsRequestOptions)
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (!js.isUndefined(`override`)) __obj.updateDynamic("override")(`override`)
+    if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceResume)) __obj.updateDynamic("forceResume")(forceResume.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (httpRequestOptions != null) __obj.updateDynamic("httpRequestOptions")(httpRequestOptions.asInstanceOf[js.Any])
+    if (httpsRequestOptions != null) __obj.updateDynamic("httpsRequestOptions")(httpsRequestOptions.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (!js.isUndefined(`override`)) __obj.updateDynamic("override")(`override`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait DrawerPosition extends js.Object
 
+object DrawerPosition {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def left: typings.reactDashNativeDashGestureDashHandler.reactDashNativeDashGestureDashHandlerStrings.left = this.cast("left")
+  @scala.inline
+  def right: typings.reactDashNativeDashGestureDashHandler.reactDashNativeDashGestureDashHandlerStrings.right = this.cast("right")
+}
+

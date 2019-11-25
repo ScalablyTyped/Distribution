@@ -14,7 +14,7 @@ trait Anon_Email extends js.Object {
 object Anon_Email {
   @scala.inline
   def apply(email: js.Any, first_name: js.Any, password: js.Any, username: js.Any): Anon_Email = {
-    val __obj = js.Dynamic.literal(email = email, first_name = first_name, password = password, username = username)
+    val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], first_name = first_name.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Email]
   }

@@ -26,10 +26,10 @@ object Anon_DataHeight {
     val __obj = js.Dynamic.literal()
     if (dataHeight != null) __obj.updateDynamic("dataHeight")(dataHeight.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (hoverColor != null) __obj.updateDynamic("hoverColor")(hoverColor)
+    if (hoverColor != null) __obj.updateDynamic("hoverColor")(hoverColor.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (rightIconDesktopFill != null) __obj.updateDynamic("rightIconDesktopFill")(rightIconDesktopFill)
-    if (selectedTextColor != null) __obj.updateDynamic("selectedTextColor")(selectedTextColor)
+    if (rightIconDesktopFill != null) __obj.updateDynamic("rightIconDesktopFill")(rightIconDesktopFill.asInstanceOf[js.Any])
+    if (selectedTextColor != null) __obj.updateDynamic("selectedTextColor")(selectedTextColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DataHeight]
   }
 }

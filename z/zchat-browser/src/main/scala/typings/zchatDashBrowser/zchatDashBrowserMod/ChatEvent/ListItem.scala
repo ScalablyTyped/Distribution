@@ -14,8 +14,8 @@ trait ListItem extends js.Object {
 object ListItem {
   @scala.inline
   def apply(action: Action, heading: String, paragraph: String, image_url: String = null): ListItem = {
-    val __obj = js.Dynamic.literal(action = action, heading = heading, paragraph = paragraph)
-    if (image_url != null) __obj.updateDynamic("image_url")(image_url)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], heading = heading.asInstanceOf[js.Any], paragraph = paragraph.asInstanceOf[js.Any])
+    if (image_url != null) __obj.updateDynamic("image_url")(image_url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListItem]
   }
 }

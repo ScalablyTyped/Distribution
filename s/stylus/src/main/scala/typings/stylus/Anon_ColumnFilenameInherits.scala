@@ -26,8 +26,8 @@ object Anon_ColumnFilenameInherits {
     segments: js.Array[Node],
     `val`: String
   ): Anon_ColumnFilenameInherits = {
-    val __obj = js.Dynamic.literal(__type = __type, column = column, filename = filename, inherits = inherits, lineno = lineno, segments = segments)
-    __obj.updateDynamic("val")(`val`)
+    val __obj = js.Dynamic.literal(__type = __type.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], inherits = inherits.asInstanceOf[js.Any], lineno = lineno.asInstanceOf[js.Any], segments = segments.asInstanceOf[js.Any])
+    __obj.updateDynamic("val")(`val`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ColumnFilenameInherits]
   }
 }

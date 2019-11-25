@@ -29,10 +29,10 @@ trait Context extends js.Object {
 object Context {
   @scala.inline
   def apply(serviceUrl: String, auth: AuthContext = null, patientId: String = null, userId: String = null): Context = {
-    val __obj = js.Dynamic.literal(serviceUrl = serviceUrl)
-    if (auth != null) __obj.updateDynamic("auth")(auth)
-    if (patientId != null) __obj.updateDynamic("patientId")(patientId)
-    if (userId != null) __obj.updateDynamic("userId")(userId)
+    val __obj = js.Dynamic.literal(serviceUrl = serviceUrl.asInstanceOf[js.Any])
+    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
+    if (patientId != null) __obj.updateDynamic("patientId")(patientId.asInstanceOf[js.Any])
+    if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Context]
   }
 }

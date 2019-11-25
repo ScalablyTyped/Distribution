@@ -40,9 +40,9 @@ object Item {
     date: Date = null,
     pubdate: Date = null
   ): Item = {
-    val __obj = js.Dynamic.literal(author = author, categories = categories, comments = comments, description = description, enclosures = enclosures, guid = guid, image = image, link = link, meta = meta, origlink = origlink, summary = summary, title = title)
-    if (date != null) __obj.updateDynamic("date")(date)
-    if (pubdate != null) __obj.updateDynamic("pubdate")(pubdate)
+    val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], categories = categories.asInstanceOf[js.Any], comments = comments.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], enclosures = enclosures.asInstanceOf[js.Any], guid = guid.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], origlink = origlink.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (pubdate != null) __obj.updateDynamic("pubdate")(pubdate.asInstanceOf[js.Any])
     __obj.asInstanceOf[Item]
   }
 }

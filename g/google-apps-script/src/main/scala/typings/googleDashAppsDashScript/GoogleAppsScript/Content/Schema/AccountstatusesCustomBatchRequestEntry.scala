@@ -22,11 +22,11 @@ object AccountstatusesCustomBatchRequestEntry {
     method: String = null
   ): AccountstatusesCustomBatchRequestEntry = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId)
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
     if (batchId != null) __obj.updateDynamic("batchId")(batchId.asInstanceOf[js.Any])
-    if (destinations != null) __obj.updateDynamic("destinations")(destinations)
-    if (merchantId != null) __obj.updateDynamic("merchantId")(merchantId)
-    if (method != null) __obj.updateDynamic("method")(method)
+    if (destinations != null) __obj.updateDynamic("destinations")(destinations.asInstanceOf[js.Any])
+    if (merchantId != null) __obj.updateDynamic("merchantId")(merchantId.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountstatusesCustomBatchRequestEntry]
   }
 }

@@ -19,7 +19,7 @@ object RouteProps {
     children: (js.Function1[/* params */ Params[T], ComponentChildren]) | ComponentChildren = null,
     component: ComponentType[RouteComponentProps[T]] = null
   ): RouteProps[T] = {
-    val __obj = js.Dynamic.literal(path = path)
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteProps[T]]

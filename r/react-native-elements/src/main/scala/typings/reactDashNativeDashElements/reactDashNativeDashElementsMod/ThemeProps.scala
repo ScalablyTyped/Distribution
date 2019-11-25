@@ -17,7 +17,7 @@ object ThemeProps {
     theme: Theme[T],
     updateTheme: /* updates */ RecursivePartial[FullTheme] => Unit
   ): ThemeProps[T] = {
-    val __obj = js.Dynamic.literal(replaceTheme = js.Any.fromFunction1(replaceTheme), theme = theme, updateTheme = js.Any.fromFunction1(updateTheme))
+    val __obj = js.Dynamic.literal(replaceTheme = js.Any.fromFunction1(replaceTheme), theme = theme.asInstanceOf[js.Any], updateTheme = js.Any.fromFunction1(updateTheme))
   
     __obj.asInstanceOf[ThemeProps[T]]
   }

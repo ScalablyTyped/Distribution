@@ -22,11 +22,11 @@ object IActionOpts {
     responseError: js.Function = null
   ): IActionOpts = {
     val __obj = js.Dynamic.literal()
-    if (adapter != null) __obj.updateDynamic("adapter")(adapter)
-    if (pathname != null) __obj.updateDynamic("pathname")(pathname)
-    if (request != null) __obj.updateDynamic("request")(request)
-    if (response != null) __obj.updateDynamic("response")(response)
-    if (responseError != null) __obj.updateDynamic("responseError")(responseError)
+    if (adapter != null) __obj.updateDynamic("adapter")(adapter.asInstanceOf[js.Any])
+    if (pathname != null) __obj.updateDynamic("pathname")(pathname.asInstanceOf[js.Any])
+    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
+    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
+    if (responseError != null) __obj.updateDynamic("responseError")(responseError.asInstanceOf[js.Any])
     __obj.asInstanceOf[IActionOpts]
   }
 }

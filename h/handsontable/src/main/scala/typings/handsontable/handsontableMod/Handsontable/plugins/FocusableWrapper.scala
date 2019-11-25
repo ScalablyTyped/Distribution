@@ -30,7 +30,7 @@ object FocusableWrapper {
     setFocusableElement: HTMLElement => Unit,
     useSecondaryElement: () => Unit
   ): FocusableWrapper = {
-    val __obj = js.Dynamic.literal(eventManager = eventManager, focus = js.Any.fromFunction0(focus), getFocusableElement = js.Any.fromFunction0(getFocusableElement), listenersCount = listenersCount, mainElement = mainElement, rootDocument = rootDocument, setFocusableElement = js.Any.fromFunction1(setFocusableElement), useSecondaryElement = js.Any.fromFunction0(useSecondaryElement))
+    val __obj = js.Dynamic.literal(eventManager = eventManager.asInstanceOf[js.Any], focus = js.Any.fromFunction0(focus), getFocusableElement = js.Any.fromFunction0(getFocusableElement), listenersCount = listenersCount.asInstanceOf[js.Any], mainElement = mainElement.asInstanceOf[js.Any], rootDocument = rootDocument.asInstanceOf[js.Any], setFocusableElement = js.Any.fromFunction1(setFocusableElement), useSecondaryElement = js.Any.fromFunction0(useSecondaryElement))
   
     __obj.asInstanceOf[FocusableWrapper]
   }

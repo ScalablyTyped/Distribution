@@ -15,7 +15,7 @@ object CardActionsTheme {
   @scala.inline
   def apply(cardActions: String = null): CardActionsTheme = {
     val __obj = js.Dynamic.literal()
-    if (cardActions != null) __obj.updateDynamic("cardActions")(cardActions)
+    if (cardActions != null) __obj.updateDynamic("cardActions")(cardActions.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardActionsTheme]
   }
 }

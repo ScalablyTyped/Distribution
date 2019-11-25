@@ -12,7 +12,7 @@ object InappproductsBatchRequest {
   @scala.inline
   def apply(entrys: js.Array[InappproductsBatchRequestEntry] = null): InappproductsBatchRequest = {
     val __obj = js.Dynamic.literal()
-    if (entrys != null) __obj.updateDynamic("entrys")(entrys)
+    if (entrys != null) __obj.updateDynamic("entrys")(entrys.asInstanceOf[js.Any])
     __obj.asInstanceOf[InappproductsBatchRequest]
   }
 }

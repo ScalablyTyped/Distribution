@@ -37,7 +37,7 @@ object ExportSettings {
     wordFormat: WordFormats | String = null
   ): ExportSettings = {
     val __obj = js.Dynamic.literal()
-    if (customItems != null) __obj.updateDynamic("customItems")(customItems)
+    if (customItems != null) __obj.updateDynamic("customItems")(customItems.asInstanceOf[js.Any])
     if (excelFormat != null) __obj.updateDynamic("excelFormat")(excelFormat.asInstanceOf[js.Any])
     if (exportOptions != null) __obj.updateDynamic("exportOptions")(exportOptions.asInstanceOf[js.Any])
     if (pptFormat != null) __obj.updateDynamic("pptFormat")(pptFormat.asInstanceOf[js.Any])

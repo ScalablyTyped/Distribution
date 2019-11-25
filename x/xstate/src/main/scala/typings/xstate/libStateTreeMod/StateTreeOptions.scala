@@ -12,7 +12,7 @@ object StateTreeOptions {
   @scala.inline
   def apply(resolved: js.UndefOr[Boolean] = js.undefined): StateTreeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(resolved)) __obj.updateDynamic("resolved")(resolved)
+    if (!js.isUndefined(resolved)) __obj.updateDynamic("resolved")(resolved.asInstanceOf[js.Any])
     __obj.asInstanceOf[StateTreeOptions]
   }
 }

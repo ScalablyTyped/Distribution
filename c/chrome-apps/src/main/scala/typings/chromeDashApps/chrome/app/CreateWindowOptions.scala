@@ -6,7 +6,7 @@ import typings.chromeDashApps.chrome.integer
 import typings.chromeDashApps.chromeDashAppsStrings.fullscreen
 import typings.chromeDashApps.chromeDashAppsStrings.maximized
 import typings.chromeDashApps.chromeDashAppsStrings.minimized
-import typings.chromeDashApps.chromeDashAppsStrings.none
+import typings.chromeDashApps.chromeDashAppsStrings.none_
 import typings.chromeDashApps.chromeDashAppsStrings.normal
 import typings.chromeDashApps.chromeDashAppsStrings.shell
 import typings.std.Exclude
@@ -47,7 +47,7 @@ trait CreateWindowOptions extends ContentBounds {
     * @since Use of FrameOptions is new in M36.
     */
   var frame: js.UndefOr[
-    none | typings.chromeDashApps.chromeDashAppsStrings.chrome | FrameOptions | FrameOptionsChrome
+    none_ | typings.chromeDashApps.chromeDashAppsStrings.chrome | FrameOptions | FrameOptionsChrome
   ] = js.undefined
   /**
     * If true, the window will be created in a hidden state. Call show() on the window to show it once it has been created. Defaults to false.
@@ -160,7 +160,7 @@ object CreateWindowOptions {
     alwaysOnTop: js.UndefOr[Boolean] = js.undefined,
     bounds: ContentBounds = null,
     focused: js.UndefOr[Boolean] = js.undefined,
-    frame: none | typings.chromeDashApps.chromeDashAppsStrings.chrome | FrameOptions | FrameOptionsChrome = null,
+    frame: none_ | typings.chromeDashApps.chromeDashAppsStrings.chrome | FrameOptions | FrameOptionsChrome = null,
     height: Int | Double = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
     icon: String = null,
@@ -187,30 +187,30 @@ object CreateWindowOptions {
     width: Int | Double = null
   ): CreateWindowOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alphaEnabled)) __obj.updateDynamic("alphaEnabled")(alphaEnabled)
-    if (!js.isUndefined(alwaysOnTop)) __obj.updateDynamic("alwaysOnTop")(alwaysOnTop)
-    if (bounds != null) __obj.updateDynamic("bounds")(bounds)
-    if (!js.isUndefined(focused)) __obj.updateDynamic("focused")(focused)
+    if (!js.isUndefined(alphaEnabled)) __obj.updateDynamic("alphaEnabled")(alphaEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(alwaysOnTop)) __obj.updateDynamic("alwaysOnTop")(alwaysOnTop.asInstanceOf[js.Any])
+    if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
+    if (!js.isUndefined(focused)) __obj.updateDynamic("focused")(focused.asInstanceOf[js.Any])
     if (frame != null) __obj.updateDynamic("frame")(frame.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(ime)) __obj.updateDynamic("ime")(ime)
-    if (innerBounds != null) __obj.updateDynamic("innerBounds")(innerBounds)
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(ime)) __obj.updateDynamic("ime")(ime.asInstanceOf[js.Any])
+    if (innerBounds != null) __obj.updateDynamic("innerBounds")(innerBounds.asInstanceOf[js.Any])
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
     if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
     if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
     if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
     if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (outerBounds != null) __obj.updateDynamic("outerBounds")(outerBounds)
-    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable)
-    if (!js.isUndefined(showInShelf)) __obj.updateDynamic("showInShelf")(showInShelf)
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
+    if (outerBounds != null) __obj.updateDynamic("outerBounds")(outerBounds.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable.asInstanceOf[js.Any])
+    if (!js.isUndefined(showInShelf)) __obj.updateDynamic("showInShelf")(showInShelf.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(visibleOnAllWorkspaces)) __obj.updateDynamic("visibleOnAllWorkspaces")(visibleOnAllWorkspaces)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(visibleOnAllWorkspaces)) __obj.updateDynamic("visibleOnAllWorkspaces")(visibleOnAllWorkspaces.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateWindowOptions]
   }

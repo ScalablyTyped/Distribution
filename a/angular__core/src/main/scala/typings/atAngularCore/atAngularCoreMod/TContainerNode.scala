@@ -51,20 +51,20 @@ object TContainerNode {
     tViews: TView | js.Array[TView] = null,
     tagName: String = null
   ): TContainerNode = {
-    val __obj = js.Dynamic.literal(child = child, directiveEnd = directiveEnd, directiveStart = directiveStart, flags = flags, index = index, injectorIndex = injectorIndex, projection = projection, propertyMetadataEndIndex = propertyMetadataEndIndex, propertyMetadataStartIndex = propertyMetadataStartIndex, providerIndexes = providerIndexes)
-    __obj.updateDynamic("type")(`type`)
-    if (attrs != null) __obj.updateDynamic("attrs")(attrs)
+    val __obj = js.Dynamic.literal(child = child.asInstanceOf[js.Any], directiveEnd = directiveEnd.asInstanceOf[js.Any], directiveStart = directiveStart.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], injectorIndex = injectorIndex.asInstanceOf[js.Any], projection = projection.asInstanceOf[js.Any], propertyMetadataEndIndex = propertyMetadataEndIndex.asInstanceOf[js.Any], propertyMetadataStartIndex = propertyMetadataStartIndex.asInstanceOf[js.Any], providerIndexes = providerIndexes.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (attrs != null) __obj.updateDynamic("attrs")(attrs.asInstanceOf[js.Any])
     if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (initialInputs != null) __obj.updateDynamic("initialInputs")(initialInputs)
-    if (inputs != null) __obj.updateDynamic("inputs")(inputs)
-    if (localNames != null) __obj.updateDynamic("localNames")(localNames)
-    if (next != null) __obj.updateDynamic("next")(next)
-    if (outputs != null) __obj.updateDynamic("outputs")(outputs)
+    if (initialInputs != null) __obj.updateDynamic("initialInputs")(initialInputs.asInstanceOf[js.Any])
+    if (inputs != null) __obj.updateDynamic("inputs")(inputs.asInstanceOf[js.Any])
+    if (localNames != null) __obj.updateDynamic("localNames")(localNames.asInstanceOf[js.Any])
+    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
+    if (outputs != null) __obj.updateDynamic("outputs")(outputs.asInstanceOf[js.Any])
     if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (projectionNext != null) __obj.updateDynamic("projectionNext")(projectionNext)
+    if (projectionNext != null) __obj.updateDynamic("projectionNext")(projectionNext.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     if (tViews != null) __obj.updateDynamic("tViews")(tViews.asInstanceOf[js.Any])
-    if (tagName != null) __obj.updateDynamic("tagName")(tagName)
+    if (tagName != null) __obj.updateDynamic("tagName")(tagName.asInstanceOf[js.Any])
     __obj.asInstanceOf[TContainerNode]
   }
 }

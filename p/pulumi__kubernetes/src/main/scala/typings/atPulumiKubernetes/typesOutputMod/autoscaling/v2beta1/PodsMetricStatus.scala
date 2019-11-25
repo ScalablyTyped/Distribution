@@ -31,7 +31,7 @@ trait PodsMetricStatus extends js.Object {
 object PodsMetricStatus {
   @scala.inline
   def apply(currentAverageValue: String, metricName: String, selector: LabelSelector): PodsMetricStatus = {
-    val __obj = js.Dynamic.literal(currentAverageValue = currentAverageValue, metricName = metricName, selector = selector)
+    val __obj = js.Dynamic.literal(currentAverageValue = currentAverageValue.asInstanceOf[js.Any], metricName = metricName.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PodsMetricStatus]
   }

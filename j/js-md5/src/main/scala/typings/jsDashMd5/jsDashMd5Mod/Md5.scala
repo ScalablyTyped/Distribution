@@ -15,6 +15,23 @@ trait Md5 extends js.Object {
   def update(message: message): Md5
 }
 
+object Md5 {
+  @scala.inline
+  def apply(
+    array: () => js.Array[Double],
+    arrayBuffer: () => ArrayBuffer,
+    base64: () => String,
+    buffer: () => ArrayBuffer,
+    digest: () => js.Array[Double],
+    hex: () => String,
+    update: message => Md5
+  ): Md5 = {
+    val __obj = js.Dynamic.literal(array = js.Any.fromFunction0(array), arrayBuffer = js.Any.fromFunction0(arrayBuffer), base64 = js.Any.fromFunction0(base64), buffer = js.Any.fromFunction0(buffer), digest = js.Any.fromFunction0(digest), hex = js.Any.fromFunction0(hex), update = js.Any.fromFunction1(update))
+  
+    __obj.asInstanceOf[Md5]
+  }
+}
+
 @js.native
 trait md5 extends js.Object {
   def apply(message: message): String = js.native
@@ -26,23 +43,5 @@ trait md5 extends js.Object {
   def digest(message: message): js.Array[Double] = js.native
   def hex(message: message): String = js.native
   def update(message: message): Md5 = js.native
-}
-
-object Md5 {
-  @scala.inline
-  def apply(
-    array: () => js.Array[Double],
-    arrayBuffer: () => ArrayBuffer,
-    base64: () => String,
-    buffer: () => ArrayBuffer,
-    digest: () => js.Array[Double],
-    hex: () => String,
-    toString: () => String,
-    update: message => Md5
-  ): Md5 = {
-    val __obj = js.Dynamic.literal(array = js.Any.fromFunction0(array), arrayBuffer = js.Any.fromFunction0(arrayBuffer), base64 = js.Any.fromFunction0(base64), buffer = js.Any.fromFunction0(buffer), digest = js.Any.fromFunction0(digest), hex = js.Any.fromFunction0(hex), toString = js.Any.fromFunction0(toString), update = js.Any.fromFunction1(update))
-  
-    __obj.asInstanceOf[Md5]
-  }
 }
 

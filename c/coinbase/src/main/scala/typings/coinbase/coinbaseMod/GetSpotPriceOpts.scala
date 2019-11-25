@@ -18,8 +18,8 @@ trait GetSpotPriceOpts extends js.Object {
 object GetSpotPriceOpts {
   @scala.inline
   def apply(currencyPair: String, date: String = null): GetSpotPriceOpts = {
-    val __obj = js.Dynamic.literal(currencyPair = currencyPair)
-    if (date != null) __obj.updateDynamic("date")(date)
+    val __obj = js.Dynamic.literal(currencyPair = currencyPair.asInstanceOf[js.Any])
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSpotPriceOpts]
   }
 }

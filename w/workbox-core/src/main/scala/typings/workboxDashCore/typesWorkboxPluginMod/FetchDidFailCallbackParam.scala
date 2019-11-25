@@ -23,8 +23,8 @@ object FetchDidFailCallbackParam {
     request: Request,
     event: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ExtendableEvent */ js.Any = null
   ): FetchDidFailCallbackParam = {
-    val __obj = js.Dynamic.literal(error = error, originalRequest = originalRequest, request = request)
-    if (event != null) __obj.updateDynamic("event")(event)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], originalRequest = originalRequest.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
     __obj.asInstanceOf[FetchDidFailCallbackParam]
   }
 }

@@ -15,8 +15,8 @@ object Installment {
   @scala.inline
   def apply(amount: Price = null, months: String = null): Installment = {
     val __obj = js.Dynamic.literal()
-    if (amount != null) __obj.updateDynamic("amount")(amount)
-    if (months != null) __obj.updateDynamic("months")(months)
+    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
+    if (months != null) __obj.updateDynamic("months")(months.asInstanceOf[js.Any])
     __obj.asInstanceOf[Installment]
   }
 }

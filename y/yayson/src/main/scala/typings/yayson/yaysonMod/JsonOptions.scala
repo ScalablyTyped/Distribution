@@ -14,8 +14,8 @@ object JsonOptions {
   @scala.inline
   def apply(StringDictionary: /* key */ StringDictionary[js.Any] = null, meta: js.Object = null): JsonOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
     __obj.asInstanceOf[JsonOptions]
   }
 }

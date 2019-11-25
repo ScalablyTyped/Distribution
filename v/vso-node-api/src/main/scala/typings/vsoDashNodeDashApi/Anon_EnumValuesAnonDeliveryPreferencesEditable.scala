@@ -11,7 +11,7 @@ trait Anon_EnumValuesAnonDeliveryPreferencesEditable extends js.Object {
 object Anon_EnumValuesAnonDeliveryPreferencesEditable {
   @scala.inline
   def apply(enumValues: Anon_DeliveryPreferencesEditable): Anon_EnumValuesAnonDeliveryPreferencesEditable = {
-    val __obj = js.Dynamic.literal(enumValues = enumValues)
+    val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EnumValuesAnonDeliveryPreferencesEditable]
   }

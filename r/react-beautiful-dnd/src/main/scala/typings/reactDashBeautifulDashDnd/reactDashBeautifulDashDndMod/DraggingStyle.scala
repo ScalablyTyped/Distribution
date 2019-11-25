@@ -37,8 +37,8 @@ object DraggingStyle {
     transform: String = null,
     zIndex: ZIndex = null
   ): DraggingStyle = {
-    val __obj = js.Dynamic.literal(boxSizing = boxSizing, height = height, left = left, margin = margin, pointerEvents = pointerEvents, position = position, top = top, transition = transition, width = width)
-    if (transform != null) __obj.updateDynamic("transform")(transform)
+    val __obj = js.Dynamic.literal(boxSizing = boxSizing.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], margin = margin.asInstanceOf[js.Any], pointerEvents = pointerEvents.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[DraggingStyle]
   }

@@ -29,12 +29,12 @@ object MetadataSchemaInterface {
     `type`: Int | Double = null,
     type_length: Int | Double = null
   ): MetadataSchemaInterface = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (converted_type != null) __obj.updateDynamic("converted_type")(converted_type)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (converted_type != null) __obj.updateDynamic("converted_type")(converted_type.asInstanceOf[js.Any])
     if (field_id != null) __obj.updateDynamic("field_id")(field_id.asInstanceOf[js.Any])
     if (num_children != null) __obj.updateDynamic("num_children")(num_children.asInstanceOf[js.Any])
     if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
-    if (repetition_type != null) __obj.updateDynamic("repetition_type")(repetition_type)
+    if (repetition_type != null) __obj.updateDynamic("repetition_type")(repetition_type.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (type_length != null) __obj.updateDynamic("type_length")(type_length.asInstanceOf[js.Any])

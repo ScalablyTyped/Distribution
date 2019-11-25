@@ -16,10 +16,10 @@ object MigrationManagerConfig {
   @scala.inline
   def apply(className: String = null, db: ODB = null, dir: String = null, name: String = null): MigrationManagerConfig = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (db != null) __obj.updateDynamic("db")(db)
-    if (dir != null) __obj.updateDynamic("dir")(dir)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (db != null) __obj.updateDynamic("db")(db.asInstanceOf[js.Any])
+    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[MigrationManagerConfig]
   }
 }

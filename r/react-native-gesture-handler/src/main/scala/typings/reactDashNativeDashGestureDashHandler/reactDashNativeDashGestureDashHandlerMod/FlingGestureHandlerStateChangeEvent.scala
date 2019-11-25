@@ -12,7 +12,7 @@ trait FlingGestureHandlerStateChangeEvent extends GestureHandlerStateChangeEvent
 object FlingGestureHandlerStateChangeEvent {
   @scala.inline
   def apply(nativeEvent: GestureHandlerStateChangeNativeEvent with FlingGestureHandlerEventExtra): FlingGestureHandlerStateChangeEvent = {
-    val __obj = js.Dynamic.literal(nativeEvent = nativeEvent)
+    val __obj = js.Dynamic.literal(nativeEvent = nativeEvent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FlingGestureHandlerStateChangeEvent]
   }

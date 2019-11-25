@@ -26,13 +26,13 @@ object CardProps {
     title: String = null
   ): CardProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (footer != null) __obj.updateDynamic("footer")(footer)
-    if (header != null) __obj.updateDynamic("header")(header)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (subTitle != null) __obj.updateDynamic("subTitle")(subTitle)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (subTitle != null) __obj.updateDynamic("subTitle")(subTitle.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardProps]
   }
 }

@@ -33,7 +33,7 @@ object EncryptionOptions {
     val __obj = js.Dynamic.literal()
     if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (!js.isUndefined(legacy)) __obj.updateDynamic("legacy")(legacy)
+    if (!js.isUndefined(legacy)) __obj.updateDynamic("legacy")(legacy.asInstanceOf[js.Any])
     if (prfAlgorithm != null) __obj.updateDynamic("prfAlgorithm")(prfAlgorithm.asInstanceOf[js.Any])
     if (saltSize != null) __obj.updateDynamic("saltSize")(saltSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncryptionOptions]

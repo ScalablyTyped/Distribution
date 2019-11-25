@@ -20,10 +20,10 @@ object Anon_DataHeadersOverrideMimeTypeResponseType {
     responseType: String = null
   ): Anon_DataHeadersOverrideMimeTypeResponseType = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (overrideMimeType != null) __obj.updateDynamic("overrideMimeType")(overrideMimeType)
-    if (responseType != null) __obj.updateDynamic("responseType")(responseType)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (overrideMimeType != null) __obj.updateDynamic("overrideMimeType")(overrideMimeType.asInstanceOf[js.Any])
+    if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DataHeadersOverrideMimeTypeResponseType]
   }
 }

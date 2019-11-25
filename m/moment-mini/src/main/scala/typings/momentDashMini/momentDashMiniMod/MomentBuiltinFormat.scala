@@ -11,7 +11,7 @@ trait MomentBuiltinFormat extends js.Object {
 object MomentBuiltinFormat {
   @scala.inline
   def apply(__momentBuiltinFormatBrand: js.Any): MomentBuiltinFormat = {
-    val __obj = js.Dynamic.literal(__momentBuiltinFormatBrand = __momentBuiltinFormatBrand)
+    val __obj = js.Dynamic.literal(__momentBuiltinFormatBrand = __momentBuiltinFormatBrand.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MomentBuiltinFormat]
   }

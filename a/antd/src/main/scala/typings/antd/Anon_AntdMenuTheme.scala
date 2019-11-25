@@ -12,7 +12,7 @@ trait Anon_AntdMenuTheme extends js.Object {
 object Anon_AntdMenuTheme {
   @scala.inline
   def apply(antdMenuTheme: Requireable[String]): Anon_AntdMenuTheme = {
-    val __obj = js.Dynamic.literal(antdMenuTheme = antdMenuTheme)
+    val __obj = js.Dynamic.literal(antdMenuTheme = antdMenuTheme.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AntdMenuTheme]
   }

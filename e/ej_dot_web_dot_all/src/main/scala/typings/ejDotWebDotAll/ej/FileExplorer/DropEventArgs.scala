@@ -44,14 +44,14 @@ object DropEventArgs {
     `type`: String = null
   ): DropEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (dropAction != null) __obj.updateDynamic("dropAction")(dropAction)
-    if (fileInfo != null) __obj.updateDynamic("fileInfo")(fileInfo)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (targetFolder != null) __obj.updateDynamic("targetFolder")(targetFolder)
-    if (targetPath != null) __obj.updateDynamic("targetPath")(targetPath)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (dropAction != null) __obj.updateDynamic("dropAction")(dropAction.asInstanceOf[js.Any])
+    if (fileInfo != null) __obj.updateDynamic("fileInfo")(fileInfo.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (targetFolder != null) __obj.updateDynamic("targetFolder")(targetFolder.asInstanceOf[js.Any])
+    if (targetPath != null) __obj.updateDynamic("targetPath")(targetPath.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropEventArgs]
   }
 }

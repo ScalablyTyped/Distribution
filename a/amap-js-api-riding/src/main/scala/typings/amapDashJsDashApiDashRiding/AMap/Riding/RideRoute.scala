@@ -22,7 +22,7 @@ trait RideRoute extends js.Object {
 object RideRoute {
   @scala.inline
   def apply(distance: Double, rides: js.Array[RideStep], time: Double): RideRoute = {
-    val __obj = js.Dynamic.literal(distance = distance, rides = rides, time = time)
+    val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], rides = rides.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RideRoute]
   }

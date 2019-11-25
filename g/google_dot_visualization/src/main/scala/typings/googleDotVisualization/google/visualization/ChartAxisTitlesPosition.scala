@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait ChartAxisTitlesPosition extends js.Object
 
+object ChartAxisTitlesPosition {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def in: typings.googleDotVisualization.googleDotVisualizationStrings.in = this.cast("in")
+  @scala.inline
+  def none: typings.googleDotVisualization.googleDotVisualizationStrings.none = this.cast("none")
+  @scala.inline
+  def out: typings.googleDotVisualization.googleDotVisualizationStrings.out = this.cast("out")
+}
+

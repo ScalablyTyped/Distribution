@@ -15,7 +15,7 @@ trait LUPP extends js.Object {
 object LUPP {
   @scala.inline
   def apply(L: SparseMatrix, P: Vector, Pinv: Vector, U: SparseMatrix): LUPP = {
-    val __obj = js.Dynamic.literal(L = L, P = P, Pinv = Pinv, U = U)
+    val __obj = js.Dynamic.literal(L = L.asInstanceOf[js.Any], P = P.asInstanceOf[js.Any], Pinv = Pinv.asInstanceOf[js.Any], U = U.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LUPP]
   }

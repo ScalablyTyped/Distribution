@@ -178,7 +178,7 @@ object TextProps {
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (sx != null) __obj.updateDynamic("sx")(sx.asInstanceOf[js.Any])
     if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
-    if (tx != null) __obj.updateDynamic("tx")(tx)
+    if (tx != null) __obj.updateDynamic("tx")(tx.asInstanceOf[js.Any])
     if (variant != null) __obj.updateDynamic("variant")(variant.asInstanceOf[js.Any])
     if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])

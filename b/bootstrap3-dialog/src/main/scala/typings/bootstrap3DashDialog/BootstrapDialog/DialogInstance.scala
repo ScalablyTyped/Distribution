@@ -35,7 +35,7 @@ object DialogInstance {
     opened: Boolean,
     options: DialogOptions
   ): DialogInstance = {
-    val __obj = js.Dynamic.literal($modal = $modal, $modalBody = $modalBody, $modalContent = $modalContent, $modalDialog = $modalDialog, $modalFooter = $modalFooter, $modalHeader = $modalHeader, opened = opened, options = options)
+    val __obj = js.Dynamic.literal($modal = $modal.asInstanceOf[js.Any], $modalBody = $modalBody.asInstanceOf[js.Any], $modalContent = $modalContent.asInstanceOf[js.Any], $modalDialog = $modalDialog.asInstanceOf[js.Any], $modalFooter = $modalFooter.asInstanceOf[js.Any], $modalHeader = $modalHeader.asInstanceOf[js.Any], opened = opened.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DialogInstance]
   }

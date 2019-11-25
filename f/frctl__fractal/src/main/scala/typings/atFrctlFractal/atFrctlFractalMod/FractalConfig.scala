@@ -21,10 +21,10 @@ object FractalConfig {
     `project.version`: String = null
   ): FractalConfig = {
     val __obj = js.Dynamic.literal()
-    if (project != null) __obj.updateDynamic("project")(project)
-    if (`project.author` != null) __obj.updateDynamic("project.author")(`project.author`)
-    if (`project.title` != null) __obj.updateDynamic("project.title")(`project.title`)
-    if (`project.version` != null) __obj.updateDynamic("project.version")(`project.version`)
+    if (project != null) __obj.updateDynamic("project")(project.asInstanceOf[js.Any])
+    if (`project.author` != null) __obj.updateDynamic("project.author")(`project.author`.asInstanceOf[js.Any])
+    if (`project.title` != null) __obj.updateDynamic("project.title")(`project.title`.asInstanceOf[js.Any])
+    if (`project.version` != null) __obj.updateDynamic("project.version")(`project.version`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FractalConfig]
   }
 }

@@ -23,11 +23,11 @@ object VectorVertex {
     strokeCap: StrokeCap = null,
     strokeJoin: StrokeJoin = null
   ): VectorVertex = {
-    val __obj = js.Dynamic.literal(x = x, y = y)
+    val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     if (cornerRadius != null) __obj.updateDynamic("cornerRadius")(cornerRadius.asInstanceOf[js.Any])
-    if (handleMirroring != null) __obj.updateDynamic("handleMirroring")(handleMirroring)
-    if (strokeCap != null) __obj.updateDynamic("strokeCap")(strokeCap)
-    if (strokeJoin != null) __obj.updateDynamic("strokeJoin")(strokeJoin)
+    if (handleMirroring != null) __obj.updateDynamic("handleMirroring")(handleMirroring.asInstanceOf[js.Any])
+    if (strokeCap != null) __obj.updateDynamic("strokeCap")(strokeCap.asInstanceOf[js.Any])
+    if (strokeJoin != null) __obj.updateDynamic("strokeJoin")(strokeJoin.asInstanceOf[js.Any])
     __obj.asInstanceOf[VectorVertex]
   }
 }

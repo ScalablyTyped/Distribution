@@ -21,7 +21,7 @@ object SearchSearchCompleteEvent {
     results: js.Array[SearchSearchCompleteEventResults],
     searchTerm: String
   ): SearchSearchCompleteEvent = {
-    val __obj = js.Dynamic.literal(activeSourceIndex = activeSourceIndex, errors = errors, numResults = numResults, results = results, searchTerm = searchTerm)
+    val __obj = js.Dynamic.literal(activeSourceIndex = activeSourceIndex.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any], numResults = numResults.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any], searchTerm = searchTerm.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SearchSearchCompleteEvent]
   }

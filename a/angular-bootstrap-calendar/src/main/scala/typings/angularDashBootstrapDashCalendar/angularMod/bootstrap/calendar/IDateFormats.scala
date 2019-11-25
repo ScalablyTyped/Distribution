@@ -16,7 +16,7 @@ trait IDateFormats extends js.Object {
 object IDateFormats {
   @scala.inline
   def apply(datetime: String, day: String, hour: String, month: String, time: String, weekDay: String): IDateFormats = {
-    val __obj = js.Dynamic.literal(datetime = datetime, day = day, hour = hour, month = month, time = time, weekDay = weekDay)
+    val __obj = js.Dynamic.literal(datetime = datetime.asInstanceOf[js.Any], day = day.asInstanceOf[js.Any], hour = hour.asInstanceOf[js.Any], month = month.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], weekDay = weekDay.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IDateFormats]
   }

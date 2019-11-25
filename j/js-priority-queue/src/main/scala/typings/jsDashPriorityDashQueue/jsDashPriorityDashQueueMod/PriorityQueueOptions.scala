@@ -44,8 +44,8 @@ object PriorityQueueOptions {
   ): PriorityQueueOptions[T] = {
     val __obj = js.Dynamic.literal()
     if (comparator != null) __obj.updateDynamic("comparator")(js.Any.fromFunction2(comparator))
-    if (initialValues != null) __obj.updateDynamic("initialValues")(initialValues)
-    if (strategy != null) __obj.updateDynamic("strategy")(strategy)
+    if (initialValues != null) __obj.updateDynamic("initialValues")(initialValues.asInstanceOf[js.Any])
+    if (strategy != null) __obj.updateDynamic("strategy")(strategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[PriorityQueueOptions[T]]
   }
 }

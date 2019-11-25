@@ -17,7 +17,7 @@ object Anon_Default {
   @scala.inline
   def apply(options: js.Any = null, severity: RuleSeverity | warn | none | default = null): Anon_Default = {
     val __obj = js.Dynamic.literal()
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (severity != null) __obj.updateDynamic("severity")(severity.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Default]
   }

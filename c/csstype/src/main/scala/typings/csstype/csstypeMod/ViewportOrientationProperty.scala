@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait ViewportOrientationProperty extends js.Object
 
+object ViewportOrientationProperty {
+  @scala.inline
+  def auto: typings.csstype.csstypeStrings.auto = this.cast("auto")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def landscape: typings.csstype.csstypeStrings.landscape = this.cast("landscape")
+  @scala.inline
+  def portrait: typings.csstype.csstypeStrings.portrait = this.cast("portrait")
+}
+

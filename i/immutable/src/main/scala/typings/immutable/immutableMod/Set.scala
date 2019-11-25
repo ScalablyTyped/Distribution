@@ -152,7 +152,7 @@ object set extends js.Object {
   def apply[C, K /* <: String */](
     `object`: C,
     key: K,
-    value: /* import warning: ImportType.apply Failed type conversion: C[K] */ js.Any
+    value: /* import warning: importer.ImportType#apply Failed type conversion: C[K] */ js.Any
   ): C = js.native
   def apply[K, V, C /* <: Collection[K, V] */](collection: C, key: K, value: V): C = js.native
 }

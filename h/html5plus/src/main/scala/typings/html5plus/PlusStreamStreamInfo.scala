@@ -39,9 +39,9 @@ object PlusStreamStreamInfo {
   @scala.inline
   def apply(complete: js.UndefOr[Boolean] = js.undefined, icon: String = null, id: String = null): PlusStreamStreamInfo = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(complete)) __obj.updateDynamic("complete")(complete)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(complete)) __obj.updateDynamic("complete")(complete.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusStreamStreamInfo]
   }
 }

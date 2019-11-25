@@ -1,8 +1,6 @@
 package typings.dojo.dojox.mvc
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValue
 import typings.dojo.dojoStrings.getPlainValueOptions
 import typings.dojo.dojoStrings.getStatefulOptions
 import typings.dojo.dojoStrings.holdModelUntilCommit
@@ -92,14 +90,54 @@ class EditModelRefController () extends ModelRefController {
   @JSName("set")
   def set_sourceModel(property: sourceModel, value: js.Object): Unit = js.native
   @JSName("watch")
-  def watch_getPlainValueOptions(property: getPlainValueOptions, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_getPlainValueOptions(
+    property: getPlainValueOptions,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_getStatefulOptions(property: getStatefulOptions, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_getStatefulOptions(
+    property: getStatefulOptions,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_holdModelUntilCommit(property: holdModelUntilCommit, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_holdModelUntilCommit(
+    property: holdModelUntilCommit,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_originalModel(property: originalModel, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_originalModel(
+    property: originalModel,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_sourceModel(property: sourceModel, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_sourceModel(
+    property: sourceModel,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

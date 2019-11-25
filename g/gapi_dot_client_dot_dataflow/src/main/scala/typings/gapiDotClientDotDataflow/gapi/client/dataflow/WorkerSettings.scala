@@ -56,12 +56,12 @@ object WorkerSettings {
     workerId: String = null
   ): WorkerSettings = {
     val __obj = js.Dynamic.literal()
-    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
-    if (!js.isUndefined(reportingEnabled)) __obj.updateDynamic("reportingEnabled")(reportingEnabled)
-    if (servicePath != null) __obj.updateDynamic("servicePath")(servicePath)
-    if (shuffleServicePath != null) __obj.updateDynamic("shuffleServicePath")(shuffleServicePath)
-    if (tempStoragePrefix != null) __obj.updateDynamic("tempStoragePrefix")(tempStoragePrefix)
-    if (workerId != null) __obj.updateDynamic("workerId")(workerId)
+    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(reportingEnabled)) __obj.updateDynamic("reportingEnabled")(reportingEnabled.asInstanceOf[js.Any])
+    if (servicePath != null) __obj.updateDynamic("servicePath")(servicePath.asInstanceOf[js.Any])
+    if (shuffleServicePath != null) __obj.updateDynamic("shuffleServicePath")(shuffleServicePath.asInstanceOf[js.Any])
+    if (tempStoragePrefix != null) __obj.updateDynamic("tempStoragePrefix")(tempStoragePrefix.asInstanceOf[js.Any])
+    if (workerId != null) __obj.updateDynamic("workerId")(workerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkerSettings]
   }
 }

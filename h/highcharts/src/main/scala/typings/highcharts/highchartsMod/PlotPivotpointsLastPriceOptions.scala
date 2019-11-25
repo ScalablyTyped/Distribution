@@ -19,8 +19,8 @@ object PlotPivotpointsLastPriceOptions {
   @scala.inline
   def apply(color: String = null, enabled: js.UndefOr[Boolean] = js.undefined): PlotPivotpointsLastPriceOptions = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotPivotpointsLastPriceOptions]
   }
 }

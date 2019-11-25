@@ -42,7 +42,7 @@ object StationInfo {
     location: LngLat,
     name: String
   ): StationInfo = {
-    val __obj = js.Dynamic.literal(adcode = adcode, buslines = buslines, citycode = citycode, id = id, location = location, name = name)
+    val __obj = js.Dynamic.literal(adcode = adcode.asInstanceOf[js.Any], buslines = buslines.asInstanceOf[js.Any], citycode = citycode.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StationInfo]
   }

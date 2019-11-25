@@ -12,7 +12,7 @@ trait Substitution extends js.Object {
 object Substitution {
   @scala.inline
   def apply(key: String, value: String): Substitution = {
-    val __obj = js.Dynamic.literal(key = key, value = value)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Substitution]
   }

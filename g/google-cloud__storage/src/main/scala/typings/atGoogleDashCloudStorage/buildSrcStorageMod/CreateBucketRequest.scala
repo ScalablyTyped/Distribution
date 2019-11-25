@@ -32,16 +32,16 @@ object CreateBucketRequest {
     userProject: String = null
   ): CreateBucketRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(coldline)) __obj.updateDynamic("coldline")(coldline)
-    if (!js.isUndefined(dra)) __obj.updateDynamic("dra")(dra)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (!js.isUndefined(multiRegional)) __obj.updateDynamic("multiRegional")(multiRegional)
-    if (!js.isUndefined(nearline)) __obj.updateDynamic("nearline")(nearline)
-    if (!js.isUndefined(regional)) __obj.updateDynamic("regional")(regional)
-    if (!js.isUndefined(requesterPays)) __obj.updateDynamic("requesterPays")(requesterPays)
-    if (retentionPolicy != null) __obj.updateDynamic("retentionPolicy")(retentionPolicy)
-    if (!js.isUndefined(standard)) __obj.updateDynamic("standard")(standard)
-    if (userProject != null) __obj.updateDynamic("userProject")(userProject)
+    if (!js.isUndefined(coldline)) __obj.updateDynamic("coldline")(coldline.asInstanceOf[js.Any])
+    if (!js.isUndefined(dra)) __obj.updateDynamic("dra")(dra.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiRegional)) __obj.updateDynamic("multiRegional")(multiRegional.asInstanceOf[js.Any])
+    if (!js.isUndefined(nearline)) __obj.updateDynamic("nearline")(nearline.asInstanceOf[js.Any])
+    if (!js.isUndefined(regional)) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
+    if (!js.isUndefined(requesterPays)) __obj.updateDynamic("requesterPays")(requesterPays.asInstanceOf[js.Any])
+    if (retentionPolicy != null) __obj.updateDynamic("retentionPolicy")(retentionPolicy.asInstanceOf[js.Any])
+    if (!js.isUndefined(standard)) __obj.updateDynamic("standard")(standard.asInstanceOf[js.Any])
+    if (userProject != null) __obj.updateDynamic("userProject")(userProject.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateBucketRequest]
   }
 }

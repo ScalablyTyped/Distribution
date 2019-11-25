@@ -14,8 +14,8 @@ trait ICustomText extends js.Object {
 object ICustomText {
   @scala.inline
   def apply(component: text, label: String, `type`: text): ICustomText = {
-    val __obj = js.Dynamic.literal(component = component, label = label)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICustomText]
   }
 }

@@ -8,23 +8,6 @@ import typings.webgme.Core.GmePersisted
 import typings.webgme.Core.MixinViolation
 import typings.webgme.Core.Node
 import typings.webgme.Core.RelationRule
-import typings.webgme.Fn_CallbackFinished
-import typings.webgme.Fn_CallbackGuid
-import typings.webgme.Fn_CallbackLibraryInfo
-import typings.webgme.Fn_CallbackLibraryInfoLibraryRootHash
-import typings.webgme.Fn_CallbackMetadataHashDataObject
-import typings.webgme.Fn_CallbackNode
-import typings.webgme.Fn_CallbackNodeDataObject
-import typings.webgme.Fn_CallbackParent
-import typings.webgme.Fn_CallbackParentArray
-import typings.webgme.Fn_CallbackParentErrorOnlyCallback
-import typings.webgme.Fn_CallbackPatch
-import typings.webgme.Fn_CallbackPointerName
-import typings.webgme.Fn_CallbackPointerNameSource
-import typings.webgme.Fn_CallbackRelativePath
-import typings.webgme.Fn_CallbackRootHash
-import typings.webgme.Fn_CallbackSourceRoot
-import typings.webgme.Fn_MemberPath
 import typings.webgme.GmeCommon.DefObject
 import typings.webgme.GmeCommon.Dictionary
 import typings.webgme.GmeCommon.ErrorOnlyCallback
@@ -45,167 +28,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Core extends js.Object {
-  /**
-    * It adds a project as library to your project by copying it over. 
-    * The library will be a node with the given name directly 
-    * under your project's ROOT. 
-    * It becomes a read-only portion of your project. 
-    * You will only be able to manipulate it with library functions, 
-    * but cannot edit the individual nodes inside. 
-    * However you will be able to instantiate or copy 
-    * the nodes into other places of your project. 
-    * Every node that was part of the META in the 
-    * originating project becomes part of your project's meta.
-    * 
-    * @param node any regular node in your project.
-    * @param name the name of the library you wish to use as a namespace in your project.
-    * @param libraryRootHash the hash of your library's root (must exist in the project's collection at the time of call).
-    * @param libraryInfo information about your project.
-    */
-  @JSName("addLibrary")
-  var addLibrary_Original: Fn_CallbackLibraryInfo = js.native
-  /**
-    * Apply changes to the current project.
-    * @param root
-    * @param patch
-    * @return only reports errors.
-    */
-  @JSName("applyTreeDiff")
-  var applyTreeDiff_Original: Fn_CallbackPatch = js.native
-  /**
-    * Generates a differential tree among the two states 
-    * of the project that contains the necessary changes 
-    * that can modify the source to be identical to the target. 
-    * 
-    * @param sourceRoot the root node of the source state.
-    * @param targetRoot the root node of the target state.
-    * @return the result is in form of a json object.
-    */
-  @JSName("generateTreeDiff")
-  var generateTreeDiff_Original: Fn_CallbackSourceRoot = js.native
-  /**
-    * From the given starting node, it loads the path 
-    * given as a series of relative ids (separated by '/') and returns the node it finds at the ends of the path. 
-    * If there is no node, the function will return null.
-    * @param startNode the starting node of our search.
-    * @param relativePath the relative path - built by relative ids - of the node in question.
-    */
-  @JSName("loadByPath")
-  var loadByPath_Original: Fn_CallbackRelativePath = js.native
-  /**
-    * Loads the child of the given parent pointed by the relative id. 
-    * Behind the scenes, it means that it actually loads the 
-    * data pointed by a hash stored inside the parent under 
-    * the given id and wraps it in a node object which will 
-    * be connected to the parent as a child in the containment hierarchy. 
-    * If there is no such relative id reserved, the call will return with null.
-    * @param parent the container node in question.
-    * @param relativeId the relative id of the child in question.
-    */
-  @JSName("loadChild")
-  var loadChild_Original: Fn_CallbackParent = js.native
-  /**
-    * Loads all the children of the given parent. 
-    * As it first checks the already reserved relative ids of the parent, 
-    * it only loads the already existing children (so no on-demand empty node creation).
-    * @param parent the container node in question.
-    * @see https://github.com/webgme/webgme/wiki/GME-Core-API#containment-methods
-    */
-  @JSName("loadChildren")
-  var loadChildren_Original: Fn_CallbackParentArray = js.native
-  /**
-    * Loads all the source nodes that has such a pointer and its target is the given node.
-    * @param target the container node in question.
-    * @param pointerName 
-    * @return the relative id of the child in question.
-    */
-  @JSName("loadCollection")
-  var loadCollection_Original: Fn_CallbackPointerName = js.native
-  /**
-    * Loads all the instances of the given node.
-    * @param node the node in question.
-    */
-  @JSName("loadInstances")
-  var loadInstances_Original: Fn_CallbackNode = js.native
-  /**
-    * Loads all the children of the given parent that has some data and not just inherited. 
-    * As it first checks the already reserved relative ids of the parent, 
-    * it only loads the already existing children (so no on-demand empty node creation).
-    * @param parent the container node in question.
-    */
-  @JSName("loadOwnChildren")
-  var loadOwnChildren_Original: Fn_CallbackParentErrorOnlyCallback = js.native
-  /**
-    * Loads a complete sub-tree of the containment hierarchy starting from the given node, 
-    * but load only those children that has some additional data and not purely inherited.
-    * @param node the node in question.
-    */
-  @JSName("loadOwnSubTree")
-  var loadOwnSubTree_Original: Fn_CallbackNode = js.native
-  /**
-    * Loads the target of the given pointer of the given node. 
-    * In the callback the node can have three values: 
-    * if the node is valid, then it is the defined target of a valid pointer, 
-    * if the returned value is null, then it means that the pointer is defined, but has no real target, 
-    * finally if the returned value is undefined then there is no such pointer defined for the given node.
-    * @param source the source node in question.
-    * @param pointerName the relative id of the child in question.
-    */
-  @JSName("loadPointer")
-  var loadPointer_Original: Fn_CallbackPointerNameSource = js.native
-  /**
-    * Loads the data object with the given hash and makes it a root of a containment hierarchy.
-    * @param node the node in question.
-    * @return 
-    */
-  @JSName("loadRoot")
-  var loadRoot_Original: Fn_CallbackMetadataHashDataObject = js.native
-  /**
-    * TODO
-    * @param node the node in question.
-    * @return 
-    */
-  @JSName("loadSubTree")
-  var loadSubTree_Original: Fn_CallbackNodeDataObject = js.native
-  /**
-    * TODO
-    * @param node the node in question.
-    * @return 
-    */
-  @JSName("loadTree")
-  var loadTree_Original: Fn_CallbackRootHash = js.native
-  /**
-    * TODO
-    * @param node the node in question.
-    * @return 
-    */
-  @JSName("setGuid")
-  var setGuid_Original: Fn_CallbackGuid = js.native
-  /**
-    * TODO
-    * @param node the node in question.
-    * @return 
-    */
-  @JSName("setMemberAttribute")
-  var setMemberAttribute_Original: Fn_MemberPath = js.native
-  /**
-    * TODO
-    * the visitation function will be called for
-    * every node in the sub-tree, the second parameter of the function
-    * is a callback that should be called to
-    * note to the traversal function that the visitation for a given node is finished.
-    *  @param node the node in question.
-    * @return 
-    */
-  @JSName("traverse")
-  var traverse_Original: Fn_CallbackFinished = js.native
-  /**
-    * TODO
-    * @param node the node in question.
-    * @return 
-    */
-  @JSName("updateLibrary")
-  var updateLibrary_Original: Fn_CallbackLibraryInfoLibraryRootHash = js.native
   /**
     * It adds a project as library to your project by copying it over. 
     * The library will be a node with the given name directly 
@@ -1709,7 +1531,6 @@ trait Core extends js.Object {
     * @return 
     */
   def setRegistry(node: Node, name: Name, value: InAttr): js.UndefOr[Error] = js.native
-  // takes *no* callback & returns a promise
   /**
     * TODO
     * the visitation function will be called for
@@ -1724,7 +1545,6 @@ trait Core extends js.Object {
     options: TraversalOptions,
     visitFn: js.Function2[/* node */ Node, /* finished */ VoidFn, Unit]
   ): js.Promise[Unit] = js.native
-  // takes a callback & returning *no* promise
   /**
     * TODO
     * the visitation function will be called for

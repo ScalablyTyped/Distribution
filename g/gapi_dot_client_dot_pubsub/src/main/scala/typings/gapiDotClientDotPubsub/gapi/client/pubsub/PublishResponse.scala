@@ -17,7 +17,7 @@ object PublishResponse {
   @scala.inline
   def apply(messageIds: js.Array[String] = null): PublishResponse = {
     val __obj = js.Dynamic.literal()
-    if (messageIds != null) __obj.updateDynamic("messageIds")(messageIds)
+    if (messageIds != null) __obj.updateDynamic("messageIds")(messageIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublishResponse]
   }
 }

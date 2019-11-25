@@ -11,7 +11,7 @@ trait CollectionOptionsWithName extends js.Object {
 object CollectionOptionsWithName {
   @scala.inline
   def apply(collectionName: String): CollectionOptionsWithName = {
-    val __obj = js.Dynamic.literal(collectionName = collectionName)
+    val __obj = js.Dynamic.literal(collectionName = collectionName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CollectionOptionsWithName]
   }

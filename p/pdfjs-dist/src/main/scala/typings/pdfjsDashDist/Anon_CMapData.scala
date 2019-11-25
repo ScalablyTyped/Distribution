@@ -13,7 +13,7 @@ trait Anon_CMapData extends js.Object {
 object Anon_CMapData {
   @scala.inline
   def apply(cMapData: js.Any, compressionType: CMapCompressionType): Anon_CMapData = {
-    val __obj = js.Dynamic.literal(cMapData = cMapData, compressionType = compressionType)
+    val __obj = js.Dynamic.literal(cMapData = cMapData.asInstanceOf[js.Any], compressionType = compressionType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CMapData]
   }

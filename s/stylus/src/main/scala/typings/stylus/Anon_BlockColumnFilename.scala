@@ -27,7 +27,7 @@ object Anon_BlockColumnFilename {
     prefix: String,
     segments: js.Array[Node]
   ): Anon_BlockColumnFilename = {
-    val __obj = js.Dynamic.literal(__type = __type, block = block, column = column, filename = filename, lineno = lineno, prefix = prefix, segments = segments)
+    val __obj = js.Dynamic.literal(__type = __type.asInstanceOf[js.Any], block = block.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], lineno = lineno.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], segments = segments.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BlockColumnFilename]
   }

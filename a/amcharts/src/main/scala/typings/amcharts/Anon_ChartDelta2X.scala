@@ -48,8 +48,8 @@ object Anon_ChartDelta2X {
     y: Int | Double = null,
     zooming: js.UndefOr[Boolean] = js.undefined
   ): Anon_ChartDelta2X = {
-    val __obj = js.Dynamic.literal(chart = chart)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(chart = chart.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (delta2X != null) __obj.updateDynamic("delta2X")(delta2X.asInstanceOf[js.Any])
     if (delta2Y != null) __obj.updateDynamic("delta2Y")(delta2Y.asInstanceOf[js.Any])
     if (deltaX != null) __obj.updateDynamic("deltaX")(deltaX.asInstanceOf[js.Any])
@@ -60,12 +60,12 @@ object Anon_ChartDelta2X {
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (initialX != null) __obj.updateDynamic("initialX")(initialX.asInstanceOf[js.Any])
     if (initialY != null) __obj.updateDynamic("initialY")(initialY.asInstanceOf[js.Any])
-    if (mostCloseGraph != null) __obj.updateDynamic("mostCloseGraph")(mostCloseGraph)
+    if (mostCloseGraph != null) __obj.updateDynamic("mostCloseGraph")(mostCloseGraph.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
-    if (!js.isUndefined(zooming)) __obj.updateDynamic("zooming")(zooming)
+    if (!js.isUndefined(zooming)) __obj.updateDynamic("zooming")(zooming.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ChartDelta2X]
   }
 }

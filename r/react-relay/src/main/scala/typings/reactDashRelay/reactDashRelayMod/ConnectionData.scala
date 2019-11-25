@@ -15,8 +15,8 @@ object ConnectionData {
   @scala.inline
   def apply(edges: js.Array[_] = null, pageInfo: Partial[PageInfo] = null): ConnectionData = {
     val __obj = js.Dynamic.literal()
-    if (edges != null) __obj.updateDynamic("edges")(edges)
-    if (pageInfo != null) __obj.updateDynamic("pageInfo")(pageInfo)
+    if (edges != null) __obj.updateDynamic("edges")(edges.asInstanceOf[js.Any])
+    if (pageInfo != null) __obj.updateDynamic("pageInfo")(pageInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionData]
   }
 }

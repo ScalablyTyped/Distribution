@@ -12,7 +12,7 @@ trait UserInfo extends js.Object {
 object UserInfo {
   @scala.inline
   def apply(id: String, isAdmin: Boolean): UserInfo = {
-    val __obj = js.Dynamic.literal(id = id, isAdmin = isAdmin)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], isAdmin = isAdmin.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UserInfo]
   }

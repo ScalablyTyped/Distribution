@@ -21,7 +21,7 @@ trait ObjectOperationPermissions extends js.Object {
 object ObjectOperationPermissions {
   @scala.inline
   def apply(create: Boolean, delete: Boolean, list: Boolean, read: Boolean, write: Boolean): ObjectOperationPermissions = {
-    val __obj = js.Dynamic.literal(create = create, delete = delete, list = list, read = read, write = write)
+    val __obj = js.Dynamic.literal(create = create.asInstanceOf[js.Any], delete = delete.asInstanceOf[js.Any], list = list.asInstanceOf[js.Any], read = read.asInstanceOf[js.Any], write = write.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ObjectOperationPermissions]
   }

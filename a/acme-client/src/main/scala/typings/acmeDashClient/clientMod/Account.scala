@@ -22,11 +22,11 @@ object Account {
     termsOfServiceAgreed: js.UndefOr[Boolean] = js.undefined
   ): Account = {
     val __obj = js.Dynamic.literal()
-    if (contact != null) __obj.updateDynamic("contact")(contact)
-    if (externalAccountBinding != null) __obj.updateDynamic("externalAccountBinding")(externalAccountBinding)
-    if (orders != null) __obj.updateDynamic("orders")(orders)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (!js.isUndefined(termsOfServiceAgreed)) __obj.updateDynamic("termsOfServiceAgreed")(termsOfServiceAgreed)
+    if (contact != null) __obj.updateDynamic("contact")(contact.asInstanceOf[js.Any])
+    if (externalAccountBinding != null) __obj.updateDynamic("externalAccountBinding")(externalAccountBinding.asInstanceOf[js.Any])
+    if (orders != null) __obj.updateDynamic("orders")(orders.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(termsOfServiceAgreed)) __obj.updateDynamic("termsOfServiceAgreed")(termsOfServiceAgreed.asInstanceOf[js.Any])
     __obj.asInstanceOf[Account]
   }
 }

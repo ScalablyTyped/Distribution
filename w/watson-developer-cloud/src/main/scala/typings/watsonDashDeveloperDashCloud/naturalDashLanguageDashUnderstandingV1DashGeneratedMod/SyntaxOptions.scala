@@ -16,8 +16,8 @@ object SyntaxOptions {
   @scala.inline
   def apply(sentences: js.UndefOr[Boolean] = js.undefined, tokens: SyntaxOptionsTokens = null): SyntaxOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(sentences)) __obj.updateDynamic("sentences")(sentences)
-    if (tokens != null) __obj.updateDynamic("tokens")(tokens)
+    if (!js.isUndefined(sentences)) __obj.updateDynamic("sentences")(sentences.asInstanceOf[js.Any])
+    if (tokens != null) __obj.updateDynamic("tokens")(tokens.asInstanceOf[js.Any])
     __obj.asInstanceOf[SyntaxOptions]
   }
 }

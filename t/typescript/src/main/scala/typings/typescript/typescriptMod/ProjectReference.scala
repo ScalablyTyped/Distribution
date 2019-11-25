@@ -23,10 +23,10 @@ object ProjectReference {
     originalPath: String = null,
     prepend: js.UndefOr[Boolean] = js.undefined
   ): ProjectReference = {
-    val __obj = js.Dynamic.literal(path = path)
-    if (!js.isUndefined(circular)) __obj.updateDynamic("circular")(circular)
-    if (originalPath != null) __obj.updateDynamic("originalPath")(originalPath)
-    if (!js.isUndefined(prepend)) __obj.updateDynamic("prepend")(prepend)
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
+    if (!js.isUndefined(circular)) __obj.updateDynamic("circular")(circular.asInstanceOf[js.Any])
+    if (originalPath != null) __obj.updateDynamic("originalPath")(originalPath.asInstanceOf[js.Any])
+    if (!js.isUndefined(prepend)) __obj.updateDynamic("prepend")(prepend.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectReference]
   }
 }

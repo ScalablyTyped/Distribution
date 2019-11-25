@@ -18,9 +18,9 @@ object SCChannelOptions {
     waitForAuth: js.UndefOr[Boolean] = js.undefined
   ): SCChannelOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(batch)) __obj.updateDynamic("batch")(batch)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (!js.isUndefined(waitForAuth)) __obj.updateDynamic("waitForAuth")(waitForAuth)
+    if (!js.isUndefined(batch)) __obj.updateDynamic("batch")(batch.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (!js.isUndefined(waitForAuth)) __obj.updateDynamic("waitForAuth")(waitForAuth.asInstanceOf[js.Any])
     __obj.asInstanceOf[SCChannelOptions]
   }
 }

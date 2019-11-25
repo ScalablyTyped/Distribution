@@ -13,8 +13,8 @@ object Auth {
   @scala.inline
   def apply(password: String = null, token: String = null): Auth = {
     val __obj = js.Dynamic.literal()
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (token != null) __obj.updateDynamic("token")(token)
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     __obj.asInstanceOf[Auth]
   }
 }

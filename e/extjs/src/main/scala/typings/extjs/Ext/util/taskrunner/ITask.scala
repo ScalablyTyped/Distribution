@@ -32,7 +32,7 @@ object ITask {
   ): ITask = {
     val __obj = js.Dynamic.literal()
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (!js.isUndefined(fireOnStart)) __obj.updateDynamic("fireOnStart")(fireOnStart)
+    if (!js.isUndefined(fireOnStart)) __obj.updateDynamic("fireOnStart")(fireOnStart.asInstanceOf[js.Any])
     if (restart != null) __obj.updateDynamic("restart")(js.Any.fromFunction1(restart))
     if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction1(start))
     if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction0(stop))

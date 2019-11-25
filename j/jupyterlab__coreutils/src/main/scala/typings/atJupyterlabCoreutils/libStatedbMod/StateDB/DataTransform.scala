@@ -25,7 +25,7 @@ object DataTransform {
   def apply(`type`: cancel | clear | merge | overwrite, contents: ReadonlyJSONObject = null): DataTransform = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (contents != null) __obj.updateDynamic("contents")(contents)
+    if (contents != null) __obj.updateDynamic("contents")(contents.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataTransform]
   }
 }

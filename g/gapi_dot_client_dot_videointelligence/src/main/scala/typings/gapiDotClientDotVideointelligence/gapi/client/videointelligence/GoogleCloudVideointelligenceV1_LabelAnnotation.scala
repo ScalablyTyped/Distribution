@@ -21,9 +21,9 @@ object GoogleCloudVideointelligenceV1_LabelAnnotation {
     locations: js.Array[GoogleCloudVideointelligenceV1_LabelLocation] = null
   ): GoogleCloudVideointelligenceV1_LabelAnnotation = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode)
-    if (locations != null) __obj.updateDynamic("locations")(locations)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
+    if (locations != null) __obj.updateDynamic("locations")(locations.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1_LabelAnnotation]
   }
 }

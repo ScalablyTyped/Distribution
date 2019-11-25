@@ -37,9 +37,9 @@ object AuthoringInfoField1 {
     classBreakInfos: js.Array[AuthoringInfoField1ClassBreakInfos] = null,
     normalizationField: String = null
   ): AuthoringInfoField1 = {
-    val __obj = js.Dynamic.literal(constructor = constructor, field = field, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (classBreakInfos != null) __obj.updateDynamic("classBreakInfos")(classBreakInfos)
-    if (normalizationField != null) __obj.updateDynamic("normalizationField")(normalizationField)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (classBreakInfos != null) __obj.updateDynamic("classBreakInfos")(classBreakInfos.asInstanceOf[js.Any])
+    if (normalizationField != null) __obj.updateDynamic("normalizationField")(normalizationField.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthoringInfoField1]
   }
 }

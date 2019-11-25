@@ -19,8 +19,8 @@ object DropDownClosedEventUIParam {
   @scala.inline
   def apply(list: js.Any = null, owner: js.Any = null): DropDownClosedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (list != null) __obj.updateDynamic("list")(list)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (list != null) __obj.updateDynamic("list")(list.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropDownClosedEventUIParam]
   }
 }

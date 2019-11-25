@@ -25,10 +25,10 @@ object PartialitemTextColorstringitemBackgroundstringitem {
     symbolSize: Int | Double = null
   ): PartialitemTextColorstringitemBackgroundstringitem = {
     val __obj = js.Dynamic.literal()
-    if (itemBackground != null) __obj.updateDynamic("itemBackground")(itemBackground)
+    if (itemBackground != null) __obj.updateDynamic("itemBackground")(itemBackground.asInstanceOf[js.Any])
     if (itemOpacity != null) __obj.updateDynamic("itemOpacity")(itemOpacity.asInstanceOf[js.Any])
-    if (itemTextColor != null) __obj.updateDynamic("itemTextColor")(itemTextColor)
-    if (symbolBorderColor != null) __obj.updateDynamic("symbolBorderColor")(symbolBorderColor)
+    if (itemTextColor != null) __obj.updateDynamic("itemTextColor")(itemTextColor.asInstanceOf[js.Any])
+    if (symbolBorderColor != null) __obj.updateDynamic("symbolBorderColor")(symbolBorderColor.asInstanceOf[js.Any])
     if (symbolBorderWidth != null) __obj.updateDynamic("symbolBorderWidth")(symbolBorderWidth.asInstanceOf[js.Any])
     if (symbolSize != null) __obj.updateDynamic("symbolSize")(symbolSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialitemTextColorstringitemBackgroundstringitem]

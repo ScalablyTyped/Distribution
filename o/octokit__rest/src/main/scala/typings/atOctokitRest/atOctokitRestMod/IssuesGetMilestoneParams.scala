@@ -13,7 +13,7 @@ trait IssuesGetMilestoneParams extends js.Object {
 object IssuesGetMilestoneParams {
   @scala.inline
   def apply(milestone_number: Double, owner: String, repo: String): IssuesGetMilestoneParams = {
-    val __obj = js.Dynamic.literal(milestone_number = milestone_number, owner = owner, repo = repo)
+    val __obj = js.Dynamic.literal(milestone_number = milestone_number.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IssuesGetMilestoneParams]
   }

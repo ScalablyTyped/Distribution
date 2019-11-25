@@ -62,13 +62,13 @@ object PlotPieEventsOptions {
     show: SeriesShowCallbackFunction = null
   ): PlotPieEventsOptions = {
     val __obj = js.Dynamic.literal()
-    if (afterAnimate != null) __obj.updateDynamic("afterAnimate")(afterAnimate)
-    if (checkboxClick != null) __obj.updateDynamic("checkboxClick")(checkboxClick)
-    if (click != null) __obj.updateDynamic("click")(click)
-    if (hide != null) __obj.updateDynamic("hide")(hide)
-    if (mouseOut != null) __obj.updateDynamic("mouseOut")(mouseOut)
-    if (mouseOver != null) __obj.updateDynamic("mouseOver")(mouseOver)
-    if (show != null) __obj.updateDynamic("show")(show)
+    if (afterAnimate != null) __obj.updateDynamic("afterAnimate")(afterAnimate.asInstanceOf[js.Any])
+    if (checkboxClick != null) __obj.updateDynamic("checkboxClick")(checkboxClick.asInstanceOf[js.Any])
+    if (click != null) __obj.updateDynamic("click")(click.asInstanceOf[js.Any])
+    if (hide != null) __obj.updateDynamic("hide")(hide.asInstanceOf[js.Any])
+    if (mouseOut != null) __obj.updateDynamic("mouseOut")(mouseOut.asInstanceOf[js.Any])
+    if (mouseOver != null) __obj.updateDynamic("mouseOver")(mouseOver.asInstanceOf[js.Any])
+    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotPieEventsOptions]
   }
 }

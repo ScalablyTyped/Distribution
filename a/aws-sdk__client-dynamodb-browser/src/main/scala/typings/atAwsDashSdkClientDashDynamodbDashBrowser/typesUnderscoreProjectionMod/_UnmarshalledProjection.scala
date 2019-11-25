@@ -22,7 +22,7 @@ object _UnmarshalledProjection {
     ProjectionType: ALL | KEYS_ONLY | INCLUDE | String = null
   ): _UnmarshalledProjection = {
     val __obj = js.Dynamic.literal()
-    if (NonKeyAttributes != null) __obj.updateDynamic("NonKeyAttributes")(NonKeyAttributes)
+    if (NonKeyAttributes != null) __obj.updateDynamic("NonKeyAttributes")(NonKeyAttributes.asInstanceOf[js.Any])
     if (ProjectionType != null) __obj.updateDynamic("ProjectionType")(ProjectionType.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledProjection]
   }

@@ -25,7 +25,7 @@ object EncStatic {
     Utf16LE: ICoder,
     Utf8: ICoder
   ): EncStatic = {
-    val __obj = js.Dynamic.literal(Base64 = Base64, Hex = Hex, Latin1 = Latin1, Utf16 = Utf16, Utf16BE = Utf16BE, Utf16LE = Utf16LE, Utf8 = Utf8)
+    val __obj = js.Dynamic.literal(Base64 = Base64.asInstanceOf[js.Any], Hex = Hex.asInstanceOf[js.Any], Latin1 = Latin1.asInstanceOf[js.Any], Utf16 = Utf16.asInstanceOf[js.Any], Utf16BE = Utf16BE.asInstanceOf[js.Any], Utf16LE = Utf16LE.asInstanceOf[js.Any], Utf8 = Utf8.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EncStatic]
   }

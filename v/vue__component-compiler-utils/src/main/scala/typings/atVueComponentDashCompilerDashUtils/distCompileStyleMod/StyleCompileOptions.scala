@@ -31,14 +31,14 @@ object StyleCompileOptions {
     scoped: js.UndefOr[Boolean] = js.undefined,
     trim: js.UndefOr[Boolean] = js.undefined
   ): StyleCompileOptions = {
-    val __obj = js.Dynamic.literal(filename = filename, id = id, source = source)
-    if (map != null) __obj.updateDynamic("map")(map)
-    if (postcssOptions != null) __obj.updateDynamic("postcssOptions")(postcssOptions)
-    if (postcssPlugins != null) __obj.updateDynamic("postcssPlugins")(postcssPlugins)
-    if (preprocessLang != null) __obj.updateDynamic("preprocessLang")(preprocessLang)
-    if (preprocessOptions != null) __obj.updateDynamic("preprocessOptions")(preprocessOptions)
-    if (!js.isUndefined(scoped)) __obj.updateDynamic("scoped")(scoped)
-    if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim)
+    val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
+    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
+    if (postcssOptions != null) __obj.updateDynamic("postcssOptions")(postcssOptions.asInstanceOf[js.Any])
+    if (postcssPlugins != null) __obj.updateDynamic("postcssPlugins")(postcssPlugins.asInstanceOf[js.Any])
+    if (preprocessLang != null) __obj.updateDynamic("preprocessLang")(preprocessLang.asInstanceOf[js.Any])
+    if (preprocessOptions != null) __obj.updateDynamic("preprocessOptions")(preprocessOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(scoped)) __obj.updateDynamic("scoped")(scoped.asInstanceOf[js.Any])
+    if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim.asInstanceOf[js.Any])
     __obj.asInstanceOf[StyleCompileOptions]
   }
 }

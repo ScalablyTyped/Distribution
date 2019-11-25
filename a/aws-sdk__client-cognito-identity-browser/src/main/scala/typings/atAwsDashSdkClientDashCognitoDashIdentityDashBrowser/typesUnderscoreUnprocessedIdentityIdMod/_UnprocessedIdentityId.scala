@@ -22,7 +22,7 @@ object _UnprocessedIdentityId {
   def apply(ErrorCode: AccessDenied | InternalServerError | String = null, IdentityId: String = null): _UnprocessedIdentityId = {
     val __obj = js.Dynamic.literal()
     if (ErrorCode != null) __obj.updateDynamic("ErrorCode")(ErrorCode.asInstanceOf[js.Any])
-    if (IdentityId != null) __obj.updateDynamic("IdentityId")(IdentityId)
+    if (IdentityId != null) __obj.updateDynamic("IdentityId")(IdentityId.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnprocessedIdentityId]
   }
 }

@@ -31,8 +31,8 @@ object GraphQLSubscriptionConfig {
     onNext: /* response */ js.UndefOr[TSubscriptionPayload | Null] => Unit = null,
     updater: (/* store */ RecordSourceSelectorProxy[TSubscriptionPayload], TSubscriptionPayload) => Unit = null
   ): GraphQLSubscriptionConfig[TSubscriptionPayload] = {
-    val __obj = js.Dynamic.literal(subscription = subscription.asInstanceOf[js.Any], variables = variables)
-    if (configs != null) __obj.updateDynamic("configs")(configs)
+    val __obj = js.Dynamic.literal(subscription = subscription.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
+    if (configs != null) __obj.updateDynamic("configs")(configs.asInstanceOf[js.Any])
     if (onCompleted != null) __obj.updateDynamic("onCompleted")(js.Any.fromFunction0(onCompleted))
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     if (onNext != null) __obj.updateDynamic("onNext")(js.Any.fromFunction1(onNext))

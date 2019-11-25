@@ -37,16 +37,16 @@ object Anon_AccountEmailDomain {
     enableSupportTickets: js.UndefOr[Boolean] = js.undefined,
     enableTwitterSharing: js.UndefOr[Boolean] = js.undefined
   ): Anon_AccountEmailDomain = {
-    val __obj = js.Dynamic.literal(accountEmailDomain = accountEmailDomain, marketingUrl = marketingUrl, serviceHost = serviceHost, supportUrl = supportUrl)
-    if (!js.isUndefined(enableFacebookSharing)) __obj.updateDynamic("enableFacebookSharing")(enableFacebookSharing)
-    if (!js.isUndefined(enableGiftSubscriptions)) __obj.updateDynamic("enableGiftSubscriptions")(enableGiftSubscriptions)
-    if (!js.isUndefined(enableLinkedInSharing)) __obj.updateDynamic("enableLinkedInSharing")(enableLinkedInSharing)
-    if (!js.isUndefined(enablePublicNotebooks)) __obj.updateDynamic("enablePublicNotebooks")(enablePublicNotebooks)
-    if (!js.isUndefined(enableSharedNotebooks)) __obj.updateDynamic("enableSharedNotebooks")(enableSharedNotebooks)
-    if (!js.isUndefined(enableSingleNoteSharing)) __obj.updateDynamic("enableSingleNoteSharing")(enableSingleNoteSharing)
-    if (!js.isUndefined(enableSponsoredAccounts)) __obj.updateDynamic("enableSponsoredAccounts")(enableSponsoredAccounts)
-    if (!js.isUndefined(enableSupportTickets)) __obj.updateDynamic("enableSupportTickets")(enableSupportTickets)
-    if (!js.isUndefined(enableTwitterSharing)) __obj.updateDynamic("enableTwitterSharing")(enableTwitterSharing)
+    val __obj = js.Dynamic.literal(accountEmailDomain = accountEmailDomain.asInstanceOf[js.Any], marketingUrl = marketingUrl.asInstanceOf[js.Any], serviceHost = serviceHost.asInstanceOf[js.Any], supportUrl = supportUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableFacebookSharing)) __obj.updateDynamic("enableFacebookSharing")(enableFacebookSharing.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableGiftSubscriptions)) __obj.updateDynamic("enableGiftSubscriptions")(enableGiftSubscriptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableLinkedInSharing)) __obj.updateDynamic("enableLinkedInSharing")(enableLinkedInSharing.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePublicNotebooks)) __obj.updateDynamic("enablePublicNotebooks")(enablePublicNotebooks.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableSharedNotebooks)) __obj.updateDynamic("enableSharedNotebooks")(enableSharedNotebooks.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableSingleNoteSharing)) __obj.updateDynamic("enableSingleNoteSharing")(enableSingleNoteSharing.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableSponsoredAccounts)) __obj.updateDynamic("enableSponsoredAccounts")(enableSponsoredAccounts.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableSupportTickets)) __obj.updateDynamic("enableSupportTickets")(enableSupportTickets.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableTwitterSharing)) __obj.updateDynamic("enableTwitterSharing")(enableTwitterSharing.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AccountEmailDomain]
   }
 }

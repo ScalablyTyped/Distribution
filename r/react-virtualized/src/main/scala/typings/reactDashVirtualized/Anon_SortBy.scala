@@ -13,7 +13,7 @@ trait Anon_SortBy extends js.Object {
 object Anon_SortBy {
   @scala.inline
   def apply(sortBy: String, sortDirection: SortDirectionType): Anon_SortBy = {
-    val __obj = js.Dynamic.literal(sortBy = sortBy, sortDirection = sortDirection)
+    val __obj = js.Dynamic.literal(sortBy = sortBy.asInstanceOf[js.Any], sortDirection = sortDirection.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_SortBy]
   }

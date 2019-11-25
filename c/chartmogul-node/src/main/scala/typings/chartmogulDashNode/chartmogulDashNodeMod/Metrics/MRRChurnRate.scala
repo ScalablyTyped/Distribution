@@ -14,8 +14,8 @@ trait MRRChurnRate extends js.Object {
 object MRRChurnRate {
   @scala.inline
   def apply(date: String, `mrr-churn-rate`: Double): MRRChurnRate = {
-    val __obj = js.Dynamic.literal(date = date)
-    __obj.updateDynamic("mrr-churn-rate")(`mrr-churn-rate`)
+    val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any])
+    __obj.updateDynamic("mrr-churn-rate")(`mrr-churn-rate`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MRRChurnRate]
   }
 }

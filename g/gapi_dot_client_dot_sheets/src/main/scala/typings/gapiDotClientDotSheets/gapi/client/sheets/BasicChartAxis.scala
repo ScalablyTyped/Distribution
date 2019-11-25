@@ -33,11 +33,11 @@ object BasicChartAxis {
     viewWindowOptions: ChartAxisViewWindowOptions = null
   ): BasicChartAxis = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (titleTextPosition != null) __obj.updateDynamic("titleTextPosition")(titleTextPosition)
-    if (viewWindowOptions != null) __obj.updateDynamic("viewWindowOptions")(viewWindowOptions)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (titleTextPosition != null) __obj.updateDynamic("titleTextPosition")(titleTextPosition.asInstanceOf[js.Any])
+    if (viewWindowOptions != null) __obj.updateDynamic("viewWindowOptions")(viewWindowOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[BasicChartAxis]
   }
 }

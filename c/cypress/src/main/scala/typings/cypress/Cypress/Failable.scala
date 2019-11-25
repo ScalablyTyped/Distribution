@@ -28,7 +28,7 @@ trait Failable extends js.Object {
 object Failable {
   @scala.inline
   def apply(failOnStatusCode: Boolean, retryOnNetworkFailure: Boolean, retryOnStatusCodeFailure: Boolean): Failable = {
-    val __obj = js.Dynamic.literal(failOnStatusCode = failOnStatusCode, retryOnNetworkFailure = retryOnNetworkFailure, retryOnStatusCodeFailure = retryOnStatusCodeFailure)
+    val __obj = js.Dynamic.literal(failOnStatusCode = failOnStatusCode.asInstanceOf[js.Any], retryOnNetworkFailure = retryOnNetworkFailure.asInstanceOf[js.Any], retryOnStatusCodeFailure = retryOnStatusCodeFailure.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Failable]
   }

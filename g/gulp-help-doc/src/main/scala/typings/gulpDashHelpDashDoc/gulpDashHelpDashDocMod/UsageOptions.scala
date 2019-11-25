@@ -43,10 +43,10 @@ object UsageOptions {
     padding: Int | Double = null
   ): UsageOptions = {
     val __obj = js.Dynamic.literal()
-    if (gulpfile != null) __obj.updateDynamic("gulpfile")(gulpfile)
+    if (gulpfile != null) __obj.updateDynamic("gulpfile")(gulpfile.asInstanceOf[js.Any])
     if (keysColumnWidth != null) __obj.updateDynamic("keysColumnWidth")(keysColumnWidth.asInstanceOf[js.Any])
     if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
-    if (logger != null) __obj.updateDynamic("logger")(logger)
+    if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsageOptions]
   }

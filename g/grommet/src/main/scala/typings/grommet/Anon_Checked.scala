@@ -13,8 +13,8 @@ object Anon_Checked {
   @scala.inline
   def apply(checked: js.Any = null, indeterminate: js.Any = null): Anon_Checked = {
     val __obj = js.Dynamic.literal()
-    if (checked != null) __obj.updateDynamic("checked")(checked)
-    if (indeterminate != null) __obj.updateDynamic("indeterminate")(indeterminate)
+    if (checked != null) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
+    if (indeterminate != null) __obj.updateDynamic("indeterminate")(indeterminate.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Checked]
   }
 }

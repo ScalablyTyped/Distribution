@@ -23,7 +23,7 @@ object NavigationBarColorOptions {
     fail: /* res */ js.Any => Unit = null,
     success: /* res */ js.Any => Unit = null
   ): NavigationBarColorOptions = {
-    val __obj = js.Dynamic.literal(animation = animation, backgroundColor = backgroundColor, frontColor = frontColor)
+    val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], backgroundColor = backgroundColor.asInstanceOf[js.Any], frontColor = frontColor.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))

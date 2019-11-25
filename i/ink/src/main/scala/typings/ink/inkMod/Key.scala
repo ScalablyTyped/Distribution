@@ -29,8 +29,8 @@ object Key {
     shift: Boolean,
     upArrow: Boolean
   ): Key = {
-    val __obj = js.Dynamic.literal(ctrl = ctrl, downArrow = downArrow, escape = escape, leftArrow = leftArrow, meta = meta, rightArrow = rightArrow, shift = shift, upArrow = upArrow)
-    __obj.updateDynamic("return")(`return`)
+    val __obj = js.Dynamic.literal(ctrl = ctrl.asInstanceOf[js.Any], downArrow = downArrow.asInstanceOf[js.Any], escape = escape.asInstanceOf[js.Any], leftArrow = leftArrow.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], rightArrow = rightArrow.asInstanceOf[js.Any], shift = shift.asInstanceOf[js.Any], upArrow = upArrow.asInstanceOf[js.Any])
+    __obj.updateDynamic("return")(`return`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Key]
   }
 }

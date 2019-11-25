@@ -13,8 +13,8 @@ trait SessionData
 object SessionData {
   @scala.inline
   def apply(cookie: SessionCookieData, StringDictionary: /* key */ StringDictionary[js.Any] = null): SessionData = {
-    val __obj = js.Dynamic.literal(cookie = cookie)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(cookie = cookie.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[SessionData]
   }
 }

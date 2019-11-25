@@ -20,10 +20,10 @@ object Anon_FilterPlaceholder {
     settingsToggle: String = null
   ): Anon_FilterPlaceholder = {
     val __obj = js.Dynamic.literal()
-    if (filterPlaceholder != null) __obj.updateDynamic("filterPlaceholder")(filterPlaceholder)
-    if (next != null) __obj.updateDynamic("next")(next)
-    if (previous != null) __obj.updateDynamic("previous")(previous)
-    if (settingsToggle != null) __obj.updateDynamic("settingsToggle")(settingsToggle)
+    if (filterPlaceholder != null) __obj.updateDynamic("filterPlaceholder")(filterPlaceholder.asInstanceOf[js.Any])
+    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
+    if (previous != null) __obj.updateDynamic("previous")(previous.asInstanceOf[js.Any])
+    if (settingsToggle != null) __obj.updateDynamic("settingsToggle")(settingsToggle.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FilterPlaceholder]
   }
 }

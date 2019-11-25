@@ -27,10 +27,10 @@ object GooglePrivacyDlpV2beta1KAnonymityHistogramBucket {
     equivalenceClassSizeUpperBound: String = null
   ): GooglePrivacyDlpV2beta1KAnonymityHistogramBucket = {
     val __obj = js.Dynamic.literal()
-    if (bucketSize != null) __obj.updateDynamic("bucketSize")(bucketSize)
-    if (bucketValues != null) __obj.updateDynamic("bucketValues")(bucketValues)
-    if (equivalenceClassSizeLowerBound != null) __obj.updateDynamic("equivalenceClassSizeLowerBound")(equivalenceClassSizeLowerBound)
-    if (equivalenceClassSizeUpperBound != null) __obj.updateDynamic("equivalenceClassSizeUpperBound")(equivalenceClassSizeUpperBound)
+    if (bucketSize != null) __obj.updateDynamic("bucketSize")(bucketSize.asInstanceOf[js.Any])
+    if (bucketValues != null) __obj.updateDynamic("bucketValues")(bucketValues.asInstanceOf[js.Any])
+    if (equivalenceClassSizeLowerBound != null) __obj.updateDynamic("equivalenceClassSizeLowerBound")(equivalenceClassSizeLowerBound.asInstanceOf[js.Any])
+    if (equivalenceClassSizeUpperBound != null) __obj.updateDynamic("equivalenceClassSizeUpperBound")(equivalenceClassSizeUpperBound.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1KAnonymityHistogramBucket]
   }
 }

@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 object EdgeRecord {
   @scala.inline
   def apply(cursor: js.Any, node: Record[DataID, _]): EdgeRecord = {
-    val __obj = js.Dynamic.literal(cursor = cursor, node = node)
+    val __obj = js.Dynamic.literal(cursor = cursor.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EdgeRecord]
   }

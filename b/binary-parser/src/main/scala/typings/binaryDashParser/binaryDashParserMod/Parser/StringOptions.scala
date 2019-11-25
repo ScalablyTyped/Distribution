@@ -27,12 +27,12 @@ object StringOptions {
   ): StringOptions = {
     val __obj = js.Dynamic.literal()
     if (assert != null) __obj.updateDynamic("assert")(assert.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction1(formatter))
-    if (!js.isUndefined(greedy)) __obj.updateDynamic("greedy")(greedy)
+    if (!js.isUndefined(greedy)) __obj.updateDynamic("greedy")(greedy.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (!js.isUndefined(stripNull)) __obj.updateDynamic("stripNull")(stripNull)
-    if (!js.isUndefined(zeroTerminated)) __obj.updateDynamic("zeroTerminated")(zeroTerminated)
+    if (!js.isUndefined(stripNull)) __obj.updateDynamic("stripNull")(stripNull.asInstanceOf[js.Any])
+    if (!js.isUndefined(zeroTerminated)) __obj.updateDynamic("zeroTerminated")(zeroTerminated.asInstanceOf[js.Any])
     __obj.asInstanceOf[StringOptions]
   }
 }

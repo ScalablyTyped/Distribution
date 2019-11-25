@@ -78,13 +78,13 @@ object S3ObjectPropertyOptions {
     serverSideEncryption: js.UndefOr[Boolean] = js.undefined
   ): S3ObjectPropertyOptions = {
     val __obj = js.Dynamic.literal()
-    if (acl != null) __obj.updateDynamic("acl")(acl)
+    if (acl != null) __obj.updateDynamic("acl")(acl.asInstanceOf[js.Any])
     if (bucket != null) __obj.updateDynamic("bucket")(bucket.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(reducedRedundancy)) __obj.updateDynamic("reducedRedundancy")(reducedRedundancy)
-    if (region != null) __obj.updateDynamic("region")(region)
-    if (!js.isUndefined(serverSideEncryption)) __obj.updateDynamic("serverSideEncryption")(serverSideEncryption)
+    if (!js.isUndefined(reducedRedundancy)) __obj.updateDynamic("reducedRedundancy")(reducedRedundancy.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    if (!js.isUndefined(serverSideEncryption)) __obj.updateDynamic("serverSideEncryption")(serverSideEncryption.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3ObjectPropertyOptions]
   }
 }

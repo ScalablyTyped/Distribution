@@ -22,9 +22,9 @@ object Anon_BusinessIdBusinessName {
   ): Anon_BusinessIdBusinessName = {
     val __obj = js.Dynamic.literal()
     if (businessId != null) __obj.updateDynamic("businessId")(businessId.asInstanceOf[js.Any])
-    if (businessName != null) __obj.updateDynamic("businessName")(businessName)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (role != null) __obj.updateDynamic("role")(role)
+    if (businessName != null) __obj.updateDynamic("businessName")(businessName.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BusinessIdBusinessName]
   }
 }

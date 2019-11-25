@@ -1,6 +1,5 @@
 package typings.postcss.postcssMod
 
-import typings.postcss.postcssStrings.rule
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,7 +26,7 @@ trait Rule
     * Groups of selectors are split at commas.
     */
   var selectors: js.Array[String] = js.native
-  var `type`: rule = js.native
+  var `type`: typings.postcss.postcssStrings.rule = js.native
 }
 
 @JSImport("postcss", "rule")

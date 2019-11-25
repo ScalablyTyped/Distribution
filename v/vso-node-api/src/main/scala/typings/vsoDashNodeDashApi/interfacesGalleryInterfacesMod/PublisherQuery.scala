@@ -18,7 +18,7 @@ trait PublisherQuery extends js.Object {
 object PublisherQuery {
   @scala.inline
   def apply(filters: js.Array[QueryFilter], flags: PublisherQueryFlags): PublisherQuery = {
-    val __obj = js.Dynamic.literal(filters = filters, flags = flags)
+    val __obj = js.Dynamic.literal(filters = filters.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PublisherQuery]
   }

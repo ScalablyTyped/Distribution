@@ -20,8 +20,8 @@ object AchievementRevealResponse {
   @scala.inline
   def apply(currentState: String = null, kind: String = null): AchievementRevealResponse = {
     val __obj = js.Dynamic.literal()
-    if (currentState != null) __obj.updateDynamic("currentState")(currentState)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (currentState != null) __obj.updateDynamic("currentState")(currentState.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[AchievementRevealResponse]
   }
 }

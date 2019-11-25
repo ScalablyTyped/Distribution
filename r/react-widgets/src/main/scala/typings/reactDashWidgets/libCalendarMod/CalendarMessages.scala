@@ -21,8 +21,8 @@ object CalendarMessages {
   @scala.inline
   def apply(moveBack: String = null, moveForward: String = null): CalendarMessages = {
     val __obj = js.Dynamic.literal()
-    if (moveBack != null) __obj.updateDynamic("moveBack")(moveBack)
-    if (moveForward != null) __obj.updateDynamic("moveForward")(moveForward)
+    if (moveBack != null) __obj.updateDynamic("moveBack")(moveBack.asInstanceOf[js.Any])
+    if (moveForward != null) __obj.updateDynamic("moveForward")(moveForward.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalendarMessages]
   }
 }

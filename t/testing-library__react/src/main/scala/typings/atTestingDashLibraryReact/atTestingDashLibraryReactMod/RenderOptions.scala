@@ -25,9 +25,9 @@ object RenderOptions {
     wrapper: ComponentType[js.Object] = null
   ): RenderOptions[Q] = {
     val __obj = js.Dynamic.literal()
-    if (baseElement != null) __obj.updateDynamic("baseElement")(baseElement)
-    if (container != null) __obj.updateDynamic("container")(container)
-    if (!js.isUndefined(hydrate)) __obj.updateDynamic("hydrate")(hydrate)
+    if (baseElement != null) __obj.updateDynamic("baseElement")(baseElement.asInstanceOf[js.Any])
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (!js.isUndefined(hydrate)) __obj.updateDynamic("hydrate")(hydrate.asInstanceOf[js.Any])
     if (queries != null) __obj.updateDynamic("queries")(queries.asInstanceOf[js.Any])
     if (wrapper != null) __obj.updateDynamic("wrapper")(wrapper.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderOptions[Q]]

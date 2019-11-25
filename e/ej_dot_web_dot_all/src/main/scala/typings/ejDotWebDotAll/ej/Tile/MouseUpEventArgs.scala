@@ -32,11 +32,11 @@ object MouseUpEventArgs {
     `type`: js.UndefOr[Boolean] = js.undefined
   ): MouseUpEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(model)) __obj.updateDynamic("model")(model)
-    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text)
-    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(model)) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MouseUpEventArgs]
   }
 }

@@ -19,8 +19,8 @@ object TouchInputConfig {
   @scala.inline
   def apply(capture: js.UndefOr[Boolean] = js.undefined, target: js.Any = null): TouchInputConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(capture)) __obj.updateDynamic("capture")(capture)
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (!js.isUndefined(capture)) __obj.updateDynamic("capture")(capture.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[TouchInputConfig]
   }
 }

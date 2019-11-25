@@ -27,12 +27,12 @@ object Anon_BackwardBoundaries {
     shallow: js.UndefOr[Boolean] = js.undefined,
     singleCharacters: js.UndefOr[Boolean] = js.undefined
   ): Anon_BackwardBoundaries = {
-    val __obj = js.Dynamic.literal(startPosition = startPosition)
-    if (boundaries != null) __obj.updateDynamic("boundaries")(boundaries)
+    val __obj = js.Dynamic.literal(startPosition = startPosition.asInstanceOf[js.Any])
+    if (boundaries != null) __obj.updateDynamic("boundaries")(boundaries.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreElementEnd)) __obj.updateDynamic("ignoreElementEnd")(ignoreElementEnd)
-    if (!js.isUndefined(shallow)) __obj.updateDynamic("shallow")(shallow)
-    if (!js.isUndefined(singleCharacters)) __obj.updateDynamic("singleCharacters")(singleCharacters)
+    if (!js.isUndefined(ignoreElementEnd)) __obj.updateDynamic("ignoreElementEnd")(ignoreElementEnd.asInstanceOf[js.Any])
+    if (!js.isUndefined(shallow)) __obj.updateDynamic("shallow")(shallow.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleCharacters)) __obj.updateDynamic("singleCharacters")(singleCharacters.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BackwardBoundaries]
   }
 }

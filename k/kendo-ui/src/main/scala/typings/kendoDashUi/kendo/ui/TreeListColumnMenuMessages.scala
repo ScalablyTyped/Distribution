@@ -26,13 +26,13 @@ object TreeListColumnMenuMessages {
     unlock: String = null
   ): TreeListColumnMenuMessages = {
     val __obj = js.Dynamic.literal()
-    if (columns != null) __obj.updateDynamic("columns")(columns)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
-    if (lock != null) __obj.updateDynamic("lock")(lock)
-    if (settings != null) __obj.updateDynamic("settings")(settings)
-    if (sortAscending != null) __obj.updateDynamic("sortAscending")(sortAscending)
-    if (sortDescending != null) __obj.updateDynamic("sortDescending")(sortDescending)
-    if (unlock != null) __obj.updateDynamic("unlock")(unlock)
+    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (lock != null) __obj.updateDynamic("lock")(lock.asInstanceOf[js.Any])
+    if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
+    if (sortAscending != null) __obj.updateDynamic("sortAscending")(sortAscending.asInstanceOf[js.Any])
+    if (sortDescending != null) __obj.updateDynamic("sortDescending")(sortDescending.asInstanceOf[js.Any])
+    if (unlock != null) __obj.updateDynamic("unlock")(unlock.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeListColumnMenuMessages]
   }
 }

@@ -27,7 +27,7 @@ object ReelsTrayFeedResponsePoll_sticker {
     tallies: js.Array[ReelsTrayFeedResponseTalliesItem],
     viewer_can_vote: Boolean
   ): ReelsTrayFeedResponsePoll_sticker = {
-    val __obj = js.Dynamic.literal(finished = finished, id = id, is_shared_result = is_shared_result, poll_id = poll_id, promotion_tallies = promotion_tallies, question = question, tallies = tallies, viewer_can_vote = viewer_can_vote)
+    val __obj = js.Dynamic.literal(finished = finished.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], is_shared_result = is_shared_result.asInstanceOf[js.Any], poll_id = poll_id.asInstanceOf[js.Any], promotion_tallies = promotion_tallies.asInstanceOf[js.Any], question = question.asInstanceOf[js.Any], tallies = tallies.asInstanceOf[js.Any], viewer_can_vote = viewer_can_vote.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReelsTrayFeedResponsePoll_sticker]
   }

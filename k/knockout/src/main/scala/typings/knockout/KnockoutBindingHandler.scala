@@ -51,10 +51,10 @@ object KnockoutBindingHandler {
     update: (/* element */ E, /* valueAccessor */ js.Function0[V], /* allBindingsAccessor */ KnockoutAllBindingsAccessor, /* viewModel */ VM, /* bindingContext */ KnockoutBindingContext) => Unit = null
   ): KnockoutBindingHandler[E, V, VM] = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (after != null) __obj.updateDynamic("after")(after)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
     if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction5(init))
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (preprocess != null) __obj.updateDynamic("preprocess")(js.Any.fromFunction3(preprocess))
     if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction5(update))
     __obj.asInstanceOf[KnockoutBindingHandler[E, V, VM]]

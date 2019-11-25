@@ -14,7 +14,7 @@ trait HashtagMatcherConfig extends MatcherConfig {
 object HashtagMatcherConfig {
   @scala.inline
   def apply(serviceName: HashtagServices, tagBuilder: AnchorTagBuilder): HashtagMatcherConfig = {
-    val __obj = js.Dynamic.literal(serviceName = serviceName, tagBuilder = tagBuilder)
+    val __obj = js.Dynamic.literal(serviceName = serviceName.asInstanceOf[js.Any], tagBuilder = tagBuilder.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HashtagMatcherConfig]
   }

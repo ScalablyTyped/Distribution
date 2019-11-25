@@ -14,7 +14,7 @@ object ConfigOptions {
   @scala.inline
   def apply(coverageIstanbulReporter: CoverageIstanbulReporter = null): ConfigOptions = {
     val __obj = js.Dynamic.literal()
-    if (coverageIstanbulReporter != null) __obj.updateDynamic("coverageIstanbulReporter")(coverageIstanbulReporter)
+    if (coverageIstanbulReporter != null) __obj.updateDynamic("coverageIstanbulReporter")(coverageIstanbulReporter.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigOptions]
   }
 }

@@ -14,8 +14,8 @@ trait QueryResult[T] extends js.Object {
 object QueryResult {
   @scala.inline
   def apply[T](done: Boolean, records: js.Array[T], totalSize: Double, nextRecordsUrl: String = null): QueryResult[T] = {
-    val __obj = js.Dynamic.literal(done = done, records = records, totalSize = totalSize)
-    if (nextRecordsUrl != null) __obj.updateDynamic("nextRecordsUrl")(nextRecordsUrl)
+    val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], records = records.asInstanceOf[js.Any], totalSize = totalSize.asInstanceOf[js.Any])
+    if (nextRecordsUrl != null) __obj.updateDynamic("nextRecordsUrl")(nextRecordsUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryResult[T]]
   }
 }

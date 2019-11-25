@@ -13,8 +13,8 @@ trait SessionEndedEvent extends js.Object {
 object SessionEndedEvent {
   @scala.inline
   def apply(cause: String, originator: String, message: IncomingResponse = null): SessionEndedEvent = {
-    val __obj = js.Dynamic.literal(cause = cause, originator = originator)
-    if (message != null) __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(cause = cause.asInstanceOf[js.Any], originator = originator.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionEndedEvent]
   }
 }

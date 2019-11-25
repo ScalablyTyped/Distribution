@@ -19,7 +19,7 @@ object Anon_FieldKey {
     field: GraphQLField[_, _, StringDictionary[_]],
     objectType: (GraphQLObjectType[_, _, StringDictionary[_]]) | GraphQLInterfaceType
   ): Anon_FieldKey = {
-    val __obj = js.Dynamic.literal(field = field, objectType = objectType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], objectType = objectType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FieldKey]
   }

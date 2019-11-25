@@ -30,8 +30,8 @@ object ErrorOptions {
     ] = null
   ): ErrorOptions = {
     val __obj = js.Dynamic.literal()
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (errorClass != null) __obj.updateDynamic("errorClass")(errorClass)
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (errorClass != null) __obj.updateDynamic("errorClass")(errorClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorOptions]
   }
 }

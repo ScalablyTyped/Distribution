@@ -12,7 +12,7 @@ object ElementDefinitionOptions {
   @scala.inline
   def apply(`extends`: java.lang.String = null): ElementDefinitionOptions = {
     val __obj = js.Dynamic.literal()
-    if (`extends` != null) __obj.updateDynamic("extends")(`extends`)
+    if (`extends` != null) __obj.updateDynamic("extends")(`extends`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementDefinitionOptions]
   }
 }

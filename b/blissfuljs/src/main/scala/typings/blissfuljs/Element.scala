@@ -13,7 +13,7 @@ object Element {
   @scala.inline
   def apply(`_`: BlissBindedElement[Element]): Element = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_")(`_`)
+    __obj.updateDynamic("_")(`_`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Element]
   }
 }

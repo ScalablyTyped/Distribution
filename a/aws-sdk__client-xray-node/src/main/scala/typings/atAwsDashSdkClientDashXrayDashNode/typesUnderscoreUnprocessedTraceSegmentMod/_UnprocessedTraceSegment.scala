@@ -23,9 +23,9 @@ object _UnprocessedTraceSegment {
   @scala.inline
   def apply(ErrorCode: String = null, Id: String = null, Message: String = null): _UnprocessedTraceSegment = {
     val __obj = js.Dynamic.literal()
-    if (ErrorCode != null) __obj.updateDynamic("ErrorCode")(ErrorCode)
-    if (Id != null) __obj.updateDynamic("Id")(Id)
-    if (Message != null) __obj.updateDynamic("Message")(Message)
+    if (ErrorCode != null) __obj.updateDynamic("ErrorCode")(ErrorCode.asInstanceOf[js.Any])
+    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
+    if (Message != null) __obj.updateDynamic("Message")(Message.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnprocessedTraceSegment]
   }
 }

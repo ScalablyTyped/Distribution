@@ -12,7 +12,7 @@ trait Anon_Explorer extends js.Object {
 object Anon_Explorer {
   @scala.inline
   def apply(Explorer: Explorer): Anon_Explorer = {
-    val __obj = js.Dynamic.literal(Explorer = Explorer)
+    val __obj = js.Dynamic.literal(Explorer = Explorer.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Explorer]
   }

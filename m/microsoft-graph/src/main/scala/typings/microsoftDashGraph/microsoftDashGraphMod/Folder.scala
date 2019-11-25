@@ -16,7 +16,7 @@ object Folder {
   def apply(childCount: Int | Double = null, view: FolderView = null): Folder = {
     val __obj = js.Dynamic.literal()
     if (childCount != null) __obj.updateDynamic("childCount")(childCount.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view)
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[Folder]
   }
 }

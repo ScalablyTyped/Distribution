@@ -29,13 +29,13 @@ object IUserOptions {
     `type`: String = null
   ): IUserOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(button)) __obj.updateDynamic("button")(button)
+    if (!js.isUndefined(button)) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (!js.isUndefined(sticky)) __obj.updateDynamic("sticky")(sticky)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(sticky)) __obj.updateDynamic("sticky")(sticky.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IUserOptions]
   }
 }

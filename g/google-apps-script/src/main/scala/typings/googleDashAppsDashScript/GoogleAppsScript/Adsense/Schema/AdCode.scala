@@ -15,10 +15,10 @@ object AdCode {
   @scala.inline
   def apply(adCode: String = null, ampBody: String = null, ampHead: String = null, kind: String = null): AdCode = {
     val __obj = js.Dynamic.literal()
-    if (adCode != null) __obj.updateDynamic("adCode")(adCode)
-    if (ampBody != null) __obj.updateDynamic("ampBody")(ampBody)
-    if (ampHead != null) __obj.updateDynamic("ampHead")(ampHead)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (adCode != null) __obj.updateDynamic("adCode")(adCode.asInstanceOf[js.Any])
+    if (ampBody != null) __obj.updateDynamic("ampBody")(ampBody.asInstanceOf[js.Any])
+    if (ampHead != null) __obj.updateDynamic("ampHead")(ampHead.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdCode]
   }
 }

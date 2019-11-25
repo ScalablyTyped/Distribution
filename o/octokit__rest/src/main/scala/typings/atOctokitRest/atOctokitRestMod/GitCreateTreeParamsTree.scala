@@ -30,10 +30,10 @@ object GitCreateTreeParamsTree {
     `type`: blob | tree | commit = null
   ): GitCreateTreeParamsTree = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (sha != null) __obj.updateDynamic("sha")(sha)
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (sha != null) __obj.updateDynamic("sha")(sha.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitCreateTreeParamsTree]
   }

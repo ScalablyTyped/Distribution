@@ -34,17 +34,17 @@ object Anon_CascadesEnabled {
     size: Int | Double = null,
     softShadows: js.UndefOr[Boolean] = js.undefined
   ): Anon_CascadesEnabled = {
-    val __obj = js.Dynamic.literal(lightCamera = lightCamera)
-    if (!js.isUndefined(cascadesEnabled)) __obj.updateDynamic("cascadesEnabled")(cascadesEnabled)
+    val __obj = js.Dynamic.literal(lightCamera = lightCamera.asInstanceOf[js.Any])
+    if (!js.isUndefined(cascadesEnabled)) __obj.updateDynamic("cascadesEnabled")(cascadesEnabled.asInstanceOf[js.Any])
     if (darkness != null) __obj.updateDynamic("darkness")(darkness.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (!js.isUndefined(isPointLight)) __obj.updateDynamic("isPointLight")(isPointLight)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPointLight)) __obj.updateDynamic("isPointLight")(isPointLight.asInstanceOf[js.Any])
     if (maximumDistance != null) __obj.updateDynamic("maximumDistance")(maximumDistance.asInstanceOf[js.Any])
-    if (!js.isUndefined(normalOffset)) __obj.updateDynamic("normalOffset")(normalOffset)
+    if (!js.isUndefined(normalOffset)) __obj.updateDynamic("normalOffset")(normalOffset.asInstanceOf[js.Any])
     if (numberOfCascades != null) __obj.updateDynamic("numberOfCascades")(numberOfCascades.asInstanceOf[js.Any])
     if (pointLightRadius != null) __obj.updateDynamic("pointLightRadius")(pointLightRadius.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(softShadows)) __obj.updateDynamic("softShadows")(softShadows)
+    if (!js.isUndefined(softShadows)) __obj.updateDynamic("softShadows")(softShadows.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CascadesEnabled]
   }
 }

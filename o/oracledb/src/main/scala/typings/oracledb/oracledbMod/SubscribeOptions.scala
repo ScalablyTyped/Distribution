@@ -73,12 +73,12 @@ object SubscribeOptions {
     qos: Int | Double = null,
     timeout: Int | Double = null
   ): SubscribeOptions = {
-    val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback), sql = sql)
+    val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback), sql = sql.asInstanceOf[js.Any])
     if (binds != null) __obj.updateDynamic("binds")(binds.asInstanceOf[js.Any])
     if (groupingClass != null) __obj.updateDynamic("groupingClass")(groupingClass.asInstanceOf[js.Any])
     if (groupingType != null) __obj.updateDynamic("groupingType")(groupingType.asInstanceOf[js.Any])
     if (groupingValue != null) __obj.updateDynamic("groupingValue")(groupingValue.asInstanceOf[js.Any])
-    if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress)
+    if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress.asInstanceOf[js.Any])
     if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
     if (operations != null) __obj.updateDynamic("operations")(operations.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])

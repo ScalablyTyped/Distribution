@@ -41,10 +41,10 @@ object Anon_AdjacentSpace {
     ie7Hack: js.UndefOr[Boolean] = js.undefined,
     mergeablePseudoClasses: js.Array[String] = null
   ): Anon_AdjacentSpace = {
-    val __obj = js.Dynamic.literal(mergeLimit = mergeLimit, mergeablePseudoElements = mergeablePseudoElements, multiplePseudoMerging = multiplePseudoMerging)
-    if (!js.isUndefined(adjacentSpace)) __obj.updateDynamic("adjacentSpace")(adjacentSpace)
-    if (!js.isUndefined(ie7Hack)) __obj.updateDynamic("ie7Hack")(ie7Hack)
-    if (mergeablePseudoClasses != null) __obj.updateDynamic("mergeablePseudoClasses")(mergeablePseudoClasses)
+    val __obj = js.Dynamic.literal(mergeLimit = mergeLimit.asInstanceOf[js.Any], mergeablePseudoElements = mergeablePseudoElements.asInstanceOf[js.Any], multiplePseudoMerging = multiplePseudoMerging.asInstanceOf[js.Any])
+    if (!js.isUndefined(adjacentSpace)) __obj.updateDynamic("adjacentSpace")(adjacentSpace.asInstanceOf[js.Any])
+    if (!js.isUndefined(ie7Hack)) __obj.updateDynamic("ie7Hack")(ie7Hack.asInstanceOf[js.Any])
+    if (mergeablePseudoClasses != null) __obj.updateDynamic("mergeablePseudoClasses")(mergeablePseudoClasses.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AdjacentSpace]
   }
 }

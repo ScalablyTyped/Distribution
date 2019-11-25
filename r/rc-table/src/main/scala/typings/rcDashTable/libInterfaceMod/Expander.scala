@@ -31,7 +31,7 @@ object Expander {
     renderExpandIndentCell: (js.Array[js.Array[Cell]], FixedType) => Unit,
     renderRows: (js.Any, js.Array[ReactElement], ValueType, Double, Double, FixedType, Key, js.Array[Key]) => js.Array[ReactElement]
   ): Expander[ValueType] = {
-    val __obj = js.Dynamic.literal(handleExpandChange = handleExpandChange, needIndentSpaced = needIndentSpaced, props = props, renderExpandIndentCell = js.Any.fromFunction2(renderExpandIndentCell), renderRows = js.Any.fromFunction8(renderRows))
+    val __obj = js.Dynamic.literal(handleExpandChange = handleExpandChange.asInstanceOf[js.Any], needIndentSpaced = needIndentSpaced.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], renderExpandIndentCell = js.Any.fromFunction2(renderExpandIndentCell), renderRows = js.Any.fromFunction8(renderRows))
   
     __obj.asInstanceOf[Expander[ValueType]]
   }

@@ -26,7 +26,7 @@ object BoardColumn {
     name: String,
     stateMappings: StringDictionary[String]
   ): BoardColumn = {
-    val __obj = js.Dynamic.literal(columnType = columnType, description = description, id = id, isSplit = isSplit, itemLimit = itemLimit, name = name, stateMappings = stateMappings)
+    val __obj = js.Dynamic.literal(columnType = columnType.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isSplit = isSplit.asInstanceOf[js.Any], itemLimit = itemLimit.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], stateMappings = stateMappings.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BoardColumn]
   }

@@ -16,7 +16,7 @@ trait SankeyLinkProps extends js.Object {
 object SankeyLinkProps {
   @scala.inline
   def apply(color: String, source: Anon_Id, target: Anon_Id, thickness: Double, value: Double): SankeyLinkProps = {
-    val __obj = js.Dynamic.literal(color = color, source = source, target = target, thickness = thickness, value = value)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], thickness = thickness.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SankeyLinkProps]
   }

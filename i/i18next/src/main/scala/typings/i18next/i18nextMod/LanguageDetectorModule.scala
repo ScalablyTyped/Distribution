@@ -28,7 +28,7 @@ object LanguageDetectorModule {
     `type`: languageDetector
   ): LanguageDetectorModule = {
     val __obj = js.Dynamic.literal(cacheUserLanguage = js.Any.fromFunction1(cacheUserLanguage), detect = js.Any.fromFunction0(detect), init = js.Any.fromFunction3(init))
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LanguageDetectorModule]
   }
 }

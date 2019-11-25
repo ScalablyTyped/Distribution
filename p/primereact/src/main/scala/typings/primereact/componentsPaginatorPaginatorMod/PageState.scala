@@ -14,7 +14,7 @@ trait PageState extends js.Object {
 object PageState {
   @scala.inline
   def apply(first: Double, page: Double, pageCount: Double, rows: Double): PageState = {
-    val __obj = js.Dynamic.literal(first = first, page = page, pageCount = pageCount, rows = rows)
+    val __obj = js.Dynamic.literal(first = first.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], pageCount = pageCount.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PageState]
   }

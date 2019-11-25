@@ -14,9 +14,9 @@ object PermitOptions {
   @scala.inline
   def apply(proxy: String = null, realm: String = null, scheme: String = null): PermitOptions = {
     val __obj = js.Dynamic.literal()
-    if (proxy != null) __obj.updateDynamic("proxy")(proxy)
-    if (realm != null) __obj.updateDynamic("realm")(realm)
-    if (scheme != null) __obj.updateDynamic("scheme")(scheme)
+    if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
+    if (realm != null) __obj.updateDynamic("realm")(realm.asInstanceOf[js.Any])
+    if (scheme != null) __obj.updateDynamic("scheme")(scheme.asInstanceOf[js.Any])
     __obj.asInstanceOf[PermitOptions]
   }
 }

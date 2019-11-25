@@ -1,7 +1,6 @@
 package typings.dojo.dojox.layout
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
 import typings.dojo.dojoStrings.adjustPaths
 import typings.dojo.dojoStrings.cleanContent
 import typings.dojo.dojoStrings.executeScripts
@@ -95,14 +94,54 @@ class ContentPane ()
   @JSName("set")
   def set_scriptHasHooks(property: scriptHasHooks, value: Boolean): Unit = js.native
   @JSName("watch")
-  def watch_adjustPaths(property: adjustPaths, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_adjustPaths(
+    property: adjustPaths,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_cleanContent(property: cleanContent, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_cleanContent(
+    property: cleanContent,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_executeScripts(property: executeScripts, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_executeScripts(
+    property: executeScripts,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_renderStyles(property: renderStyles, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_renderStyles(
+    property: renderStyles,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_scriptHasHooks(property: scriptHasHooks, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_scriptHasHooks(
+    property: scriptHasHooks,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

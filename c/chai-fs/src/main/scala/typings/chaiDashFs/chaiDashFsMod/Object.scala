@@ -12,7 +12,7 @@ trait Object extends js.Object {
 object Object {
   @scala.inline
   def apply(should: Assertion): Object = {
-    val __obj = js.Dynamic.literal(should = should)
+    val __obj = js.Dynamic.literal(should = should.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Object]
   }

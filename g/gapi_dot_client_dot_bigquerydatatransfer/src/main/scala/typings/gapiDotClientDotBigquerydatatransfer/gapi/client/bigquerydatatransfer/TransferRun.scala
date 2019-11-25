@@ -76,19 +76,19 @@ object TransferRun {
     userId: String = null
   ): TransferRun = {
     val __obj = js.Dynamic.literal()
-    if (dataSourceId != null) __obj.updateDynamic("dataSourceId")(dataSourceId)
-    if (datasetRegion != null) __obj.updateDynamic("datasetRegion")(datasetRegion)
-    if (destinationDatasetId != null) __obj.updateDynamic("destinationDatasetId")(destinationDatasetId)
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (runTime != null) __obj.updateDynamic("runTime")(runTime)
-    if (schedule != null) __obj.updateDynamic("schedule")(schedule)
-    if (scheduleTime != null) __obj.updateDynamic("scheduleTime")(scheduleTime)
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime)
-    if (userId != null) __obj.updateDynamic("userId")(userId)
+    if (dataSourceId != null) __obj.updateDynamic("dataSourceId")(dataSourceId.asInstanceOf[js.Any])
+    if (datasetRegion != null) __obj.updateDynamic("datasetRegion")(datasetRegion.asInstanceOf[js.Any])
+    if (destinationDatasetId != null) __obj.updateDynamic("destinationDatasetId")(destinationDatasetId.asInstanceOf[js.Any])
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (runTime != null) __obj.updateDynamic("runTime")(runTime.asInstanceOf[js.Any])
+    if (schedule != null) __obj.updateDynamic("schedule")(schedule.asInstanceOf[js.Any])
+    if (scheduleTime != null) __obj.updateDynamic("scheduleTime")(scheduleTime.asInstanceOf[js.Any])
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])
+    if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransferRun]
   }
 }

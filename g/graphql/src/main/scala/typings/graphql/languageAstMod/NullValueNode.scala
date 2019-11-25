@@ -15,8 +15,8 @@ trait NullValueNode
 object NullValueNode {
   @scala.inline
   def apply(kind: NullValue, loc: Location = null): NullValueNode = {
-    val __obj = js.Dynamic.literal(kind = kind)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[NullValueNode]
   }
 }

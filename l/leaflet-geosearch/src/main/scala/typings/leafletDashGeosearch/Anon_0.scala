@@ -28,11 +28,11 @@ object Anon_0 {
     includeNeighborhood: `-1` | `0` | `1` = null,
     maxResults: Int | Double = null
   ): Anon_0 = {
-    val __obj = js.Dynamic.literal(key = key)
-    if (adminDistrict != null) __obj.updateDynamic("adminDistrict")(adminDistrict)
-    if (incl != null) __obj.updateDynamic("incl")(incl)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+    if (adminDistrict != null) __obj.updateDynamic("adminDistrict")(adminDistrict.asInstanceOf[js.Any])
+    if (incl != null) __obj.updateDynamic("incl")(incl.asInstanceOf[js.Any])
     if (inclnb != null) __obj.updateDynamic("inclnb")(inclnb.asInstanceOf[js.Any])
-    if (include != null) __obj.updateDynamic("include")(include)
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     if (includeNeighborhood != null) __obj.updateDynamic("includeNeighborhood")(includeNeighborhood.asInstanceOf[js.Any])
     if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_0]

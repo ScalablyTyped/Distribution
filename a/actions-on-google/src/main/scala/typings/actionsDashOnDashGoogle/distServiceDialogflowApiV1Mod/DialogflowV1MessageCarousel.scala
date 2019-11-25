@@ -19,9 +19,9 @@ object DialogflowV1MessageCarousel {
     items: js.Array[DialogflowV1MessageOptionItem] = null,
     `type`: carousel_card = null
   ): DialogflowV1MessageCarousel = {
-    val __obj = js.Dynamic.literal(platform = platform)
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(platform = platform.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogflowV1MessageCarousel]
   }
 }

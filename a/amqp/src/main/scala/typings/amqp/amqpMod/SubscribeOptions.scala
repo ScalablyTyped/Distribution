@@ -52,11 +52,11 @@ object SubscribeOptions {
     routingKeyInPayload: js.UndefOr[Boolean] = js.undefined
   ): SubscribeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ack)) __obj.updateDynamic("ack")(ack)
-    if (!js.isUndefined(deliveryKeyInPayload)) __obj.updateDynamic("deliveryKeyInPayload")(deliveryKeyInPayload)
-    if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive)
+    if (!js.isUndefined(ack)) __obj.updateDynamic("ack")(ack.asInstanceOf[js.Any])
+    if (!js.isUndefined(deliveryKeyInPayload)) __obj.updateDynamic("deliveryKeyInPayload")(deliveryKeyInPayload.asInstanceOf[js.Any])
+    if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive.asInstanceOf[js.Any])
     if (prefetchCount != null) __obj.updateDynamic("prefetchCount")(prefetchCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(routingKeyInPayload)) __obj.updateDynamic("routingKeyInPayload")(routingKeyInPayload)
+    if (!js.isUndefined(routingKeyInPayload)) __obj.updateDynamic("routingKeyInPayload")(routingKeyInPayload.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscribeOptions]
   }
 }

@@ -17,8 +17,8 @@ object NativeFieldPath {
   def apply(`type`: fieldpath | string, elements: js.Array[String] = null, string: String = null): NativeFieldPath = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (elements != null) __obj.updateDynamic("elements")(elements)
-    if (string != null) __obj.updateDynamic("string")(string)
+    if (elements != null) __obj.updateDynamic("elements")(elements.asInstanceOf[js.Any])
+    if (string != null) __obj.updateDynamic("string")(string.asInstanceOf[js.Any])
     __obj.asInstanceOf[NativeFieldPath]
   }
 }

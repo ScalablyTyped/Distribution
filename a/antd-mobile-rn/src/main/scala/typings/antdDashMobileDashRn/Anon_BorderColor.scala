@@ -11,7 +11,7 @@ trait Anon_BorderColor extends js.Object {
 object Anon_BorderColor {
   @scala.inline
   def apply(borderColor: String): Anon_BorderColor = {
-    val __obj = js.Dynamic.literal(borderColor = borderColor)
+    val __obj = js.Dynamic.literal(borderColor = borderColor.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BorderColor]
   }

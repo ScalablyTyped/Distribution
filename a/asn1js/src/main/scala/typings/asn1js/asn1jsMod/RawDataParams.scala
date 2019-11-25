@@ -13,7 +13,7 @@ object RawDataParams {
   @scala.inline
   def apply(data: ArrayBuffer = null): RawDataParams = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     __obj.asInstanceOf[RawDataParams]
   }
 }

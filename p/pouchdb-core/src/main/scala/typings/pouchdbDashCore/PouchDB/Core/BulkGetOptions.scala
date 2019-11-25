@@ -23,11 +23,11 @@ object BulkGetOptions {
     fetch: (/* url */ String | Request, /* opts */ js.UndefOr[RequestInit]) => js.Promise[typings.std.Response] = null,
     revs: js.UndefOr[Boolean] = js.undefined
   ): BulkGetOptions = {
-    val __obj = js.Dynamic.literal(docs = docs)
-    if (!js.isUndefined(attachments)) __obj.updateDynamic("attachments")(attachments)
-    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary)
+    val __obj = js.Dynamic.literal(docs = docs.asInstanceOf[js.Any])
+    if (!js.isUndefined(attachments)) __obj.updateDynamic("attachments")(attachments.asInstanceOf[js.Any])
+    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary.asInstanceOf[js.Any])
     if (fetch != null) __obj.updateDynamic("fetch")(js.Any.fromFunction2(fetch))
-    if (!js.isUndefined(revs)) __obj.updateDynamic("revs")(revs)
+    if (!js.isUndefined(revs)) __obj.updateDynamic("revs")(revs.asInstanceOf[js.Any])
     __obj.asInstanceOf[BulkGetOptions]
   }
 }

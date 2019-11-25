@@ -22,10 +22,10 @@ object definition {
     styles: StringDictionary[String] = null,
     `type`: String | Double = null
   ): definition = {
-    val __obj = js.Dynamic.literal(element = element)
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (styles != null) __obj.updateDynamic("styles")(styles)
+    val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any])
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[definition]
   }

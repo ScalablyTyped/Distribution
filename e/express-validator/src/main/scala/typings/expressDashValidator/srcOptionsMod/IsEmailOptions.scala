@@ -18,9 +18,9 @@ object IsEmailOptions {
     require_tld: js.UndefOr[Boolean] = js.undefined
   ): IsEmailOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allow_display_name)) __obj.updateDynamic("allow_display_name")(allow_display_name)
-    if (!js.isUndefined(allow_utf8_local_part)) __obj.updateDynamic("allow_utf8_local_part")(allow_utf8_local_part)
-    if (!js.isUndefined(require_tld)) __obj.updateDynamic("require_tld")(require_tld)
+    if (!js.isUndefined(allow_display_name)) __obj.updateDynamic("allow_display_name")(allow_display_name.asInstanceOf[js.Any])
+    if (!js.isUndefined(allow_utf8_local_part)) __obj.updateDynamic("allow_utf8_local_part")(allow_utf8_local_part.asInstanceOf[js.Any])
+    if (!js.isUndefined(require_tld)) __obj.updateDynamic("require_tld")(require_tld.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsEmailOptions]
   }
 }

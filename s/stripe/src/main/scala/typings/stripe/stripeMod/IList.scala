@@ -37,8 +37,8 @@ object IList {
     url: String,
     total_count: Int | Double = null
   ): IList[T] = {
-    val __obj = js.Dynamic.literal(data = data, has_more = has_more, url = url)
-    __obj.updateDynamic("object")(`object`)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], has_more = has_more.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     if (total_count != null) __obj.updateDynamic("total_count")(total_count.asInstanceOf[js.Any])
     __obj.asInstanceOf[IList[T]]
   }

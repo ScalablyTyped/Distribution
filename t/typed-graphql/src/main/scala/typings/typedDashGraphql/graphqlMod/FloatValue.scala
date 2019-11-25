@@ -15,8 +15,8 @@ trait FloatValue
 object FloatValue {
   @scala.inline
   def apply(kind: String, value: String, loc: Location = null): FloatValue = {
-    val __obj = js.Dynamic.literal(kind = kind, value = value)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[FloatValue]
   }
 }

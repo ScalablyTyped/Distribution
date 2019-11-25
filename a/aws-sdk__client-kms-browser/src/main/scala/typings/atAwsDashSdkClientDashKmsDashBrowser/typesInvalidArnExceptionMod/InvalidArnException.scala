@@ -25,6 +25,7 @@ import typings.atAwsDashSdkClientDashKmsDashBrowser.typesTagResourceExceptionsUn
 import typings.atAwsDashSdkClientDashKmsDashBrowser.typesUntagResourceExceptionsUnionMod.UntagResourceExceptionsUnion
 import typings.atAwsDashSdkClientDashKmsDashBrowser.typesUpdateKeyDescriptionExceptionsUnionMod.UpdateKeyDescriptionExceptionsUnion
 import typings.atAwsDashSdkTypes.buildExceptionMod.ServiceException
+import typings.atAwsDashSdkTypes.buildResponseMod.ResponseMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -62,13 +63,14 @@ trait InvalidArnException
 object InvalidArnException {
   @scala.inline
   def apply(
+    $metadata: ResponseMetadata,
     details: _InvalidArnExceptionDetails,
     message: String,
     name: typings.atAwsDashSdkClientDashKmsDashBrowser.atAwsDashSdkClientDashKmsDashBrowserStrings.InvalidArnException,
     stack: String = null
   ): InvalidArnException = {
-    val __obj = js.Dynamic.literal(details = details, message = message, name = name)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvalidArnException]
   }
 }

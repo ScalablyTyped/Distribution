@@ -52,8 +52,8 @@ object IReview {
     open: Boolean,
     reason: rule | manual | approved | refunded | refunded_as_fraud | disputed
   ): IReview = {
-    val __obj = js.Dynamic.literal(charge = charge.asInstanceOf[js.Any], created = created, id = id, livemode = livemode, open = open, reason = reason.asInstanceOf[js.Any])
-    __obj.updateDynamic("object")(`object`)
+    val __obj = js.Dynamic.literal(charge = charge.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IReview]
   }
 }

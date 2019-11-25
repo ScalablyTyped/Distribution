@@ -20,9 +20,9 @@ object Anon_BodyCommentsLocArrayCommentKind {
     comments: js.Array[CommentKind] = null,
     loc: SourceLocationKind = null
   ): Anon_BodyCommentsLocArrayCommentKind = {
-    val __obj = js.Dynamic.literal(body = body)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BodyCommentsLocArrayCommentKind]
   }
 }

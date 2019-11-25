@@ -15,8 +15,8 @@ object IContextualizedQueryLatencyStats {
   @scala.inline
   def apply(context: IStatsContext = null, queryLatencyStats: IQueryLatencyStats = null): IContextualizedQueryLatencyStats = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (queryLatencyStats != null) __obj.updateDynamic("queryLatencyStats")(queryLatencyStats)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (queryLatencyStats != null) __obj.updateDynamic("queryLatencyStats")(queryLatencyStats.asInstanceOf[js.Any])
     __obj.asInstanceOf[IContextualizedQueryLatencyStats]
   }
 }

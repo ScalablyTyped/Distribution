@@ -28,9 +28,9 @@ object ValidationError {
     postFormatter: (/* formattedError */ String, /* error */ ErrorObject) => String = null,
     stack: String = null
   ): ValidationError = {
-    val __obj = js.Dynamic.literal(baseDataPath = baseDataPath, errors = errors, headerName = headerName, message = message, name = name, schema = schema.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(baseDataPath = baseDataPath.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any], headerName = headerName.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
     if (postFormatter != null) __obj.updateDynamic("postFormatter")(js.Any.fromFunction2(postFormatter))
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidationError]
   }
 }

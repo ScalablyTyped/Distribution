@@ -42,9 +42,9 @@ object ResumeOptions {
     recordsExpireIn: Int | Double = null
   ): ResumeOptions = {
     val __obj = js.Dynamic.literal()
-    if (customKeys != null) __obj.updateDynamic("customKeys")(customKeys)
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (paramNames != null) __obj.updateDynamic("paramNames")(paramNames)
+    if (customKeys != null) __obj.updateDynamic("customKeys")(customKeys.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (paramNames != null) __obj.updateDynamic("paramNames")(paramNames.asInstanceOf[js.Any])
     if (recordsExpireIn != null) __obj.updateDynamic("recordsExpireIn")(recordsExpireIn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResumeOptions]
   }

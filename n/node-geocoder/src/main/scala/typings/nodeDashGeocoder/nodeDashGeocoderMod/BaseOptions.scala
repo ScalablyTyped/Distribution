@@ -24,9 +24,9 @@ object BaseOptions {
     httpAdapter: https | http | request = null,
     timeout: Int | Double = null
   ): BaseOptions = {
-    val __obj = js.Dynamic.literal(provider = provider)
-    if (formatter != null) __obj.updateDynamic("formatter")(formatter)
-    if (formatterPattern != null) __obj.updateDynamic("formatterPattern")(formatterPattern)
+    val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any])
+    if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
+    if (formatterPattern != null) __obj.updateDynamic("formatterPattern")(formatterPattern.asInstanceOf[js.Any])
     if (httpAdapter != null) __obj.updateDynamic("httpAdapter")(httpAdapter.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseOptions]

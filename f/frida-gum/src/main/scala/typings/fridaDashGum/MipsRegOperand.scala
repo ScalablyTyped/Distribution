@@ -13,8 +13,8 @@ trait MipsRegOperand extends MipsOperand {
 object MipsRegOperand {
   @scala.inline
   def apply(`type`: reg, value: MipsRegister): MipsRegOperand = {
-    val __obj = js.Dynamic.literal(value = value)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MipsRegOperand]
   }
 }

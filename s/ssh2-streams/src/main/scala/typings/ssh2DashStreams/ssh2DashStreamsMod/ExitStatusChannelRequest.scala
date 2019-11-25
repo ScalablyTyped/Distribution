@@ -14,7 +14,7 @@ trait ExitStatusChannelRequest extends ChannelRequest {
 object ExitStatusChannelRequest {
   @scala.inline
   def apply(code: Double, recipient: Double, request: `exit-status`): ExitStatusChannelRequest = {
-    val __obj = js.Dynamic.literal(code = code, recipient = recipient, request = request)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], recipient = recipient.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExitStatusChannelRequest]
   }

@@ -21,7 +21,7 @@ object GistsListCommitsResponseItem {
     user: GistsListCommitsResponseItemUser,
     version: String
   ): GistsListCommitsResponseItem = {
-    val __obj = js.Dynamic.literal(change_status = change_status, committed_at = committed_at, url = url, user = user, version = version)
+    val __obj = js.Dynamic.literal(change_status = change_status.asInstanceOf[js.Any], committed_at = committed_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GistsListCommitsResponseItem]
   }

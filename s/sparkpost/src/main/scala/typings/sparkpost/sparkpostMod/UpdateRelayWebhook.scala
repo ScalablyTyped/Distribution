@@ -18,10 +18,10 @@ trait UpdateRelayWebhook extends js.Object {
 object UpdateRelayWebhook {
   @scala.inline
   def apply(target: String, auth_token: String = null, `match`: Match = null, name: String = null): UpdateRelayWebhook = {
-    val __obj = js.Dynamic.literal(target = target)
-    if (auth_token != null) __obj.updateDynamic("auth_token")(auth_token)
-    if (`match` != null) __obj.updateDynamic("match")(`match`)
-    if (name != null) __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
+    if (auth_token != null) __obj.updateDynamic("auth_token")(auth_token.asInstanceOf[js.Any])
+    if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateRelayWebhook]
   }
 }

@@ -19,9 +19,9 @@ object PageInfo {
     endCursor: String = null,
     startCursor: String = null
   ): PageInfo = {
-    val __obj = js.Dynamic.literal(hasNextPage = hasNextPage, hasPreviousPage = hasPreviousPage)
-    if (endCursor != null) __obj.updateDynamic("endCursor")(endCursor)
-    if (startCursor != null) __obj.updateDynamic("startCursor")(startCursor)
+    val __obj = js.Dynamic.literal(hasNextPage = hasNextPage.asInstanceOf[js.Any], hasPreviousPage = hasPreviousPage.asInstanceOf[js.Any])
+    if (endCursor != null) __obj.updateDynamic("endCursor")(endCursor.asInstanceOf[js.Any])
+    if (startCursor != null) __obj.updateDynamic("startCursor")(startCursor.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageInfo]
   }
 }

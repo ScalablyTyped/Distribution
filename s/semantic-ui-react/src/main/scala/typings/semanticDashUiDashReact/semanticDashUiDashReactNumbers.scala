@@ -1,5 +1,6 @@
 package typings.semanticDashUiDashReact
 
+import typings.semanticDashUiDashReact.srcGenericMod.SemanticWIDTHS
 import typings.semanticDashUiDashReact.srcGenericMod.SemanticWIDTHSNUMBER
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,82 +9,114 @@ import scala.scalajs.js.annotation._
 object semanticDashUiDashReactNumbers {
   @js.native
   sealed trait `1`
-    extends SemanticWIDTHSNUMBER
+    extends SemanticWIDTHS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
+       with SemanticWIDTHSNUMBER
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSNUMBER
   
   @js.native
   sealed trait `10`
-    extends SemanticWIDTHSNUMBER
+    extends SemanticWIDTHS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
+       with SemanticWIDTHSNUMBER
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSNUMBER
   
   @js.native
   sealed trait `11`
-    extends SemanticWIDTHSNUMBER
+    extends SemanticWIDTHS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
+       with SemanticWIDTHSNUMBER
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSNUMBER
   
   @js.native
   sealed trait `12`
-    extends SemanticWIDTHSNUMBER
+    extends SemanticWIDTHS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
+       with SemanticWIDTHSNUMBER
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSNUMBER
   
   @js.native
   sealed trait `13`
-    extends SemanticWIDTHSNUMBER
+    extends SemanticWIDTHS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
+       with SemanticWIDTHSNUMBER
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSNUMBER
   
   @js.native
   sealed trait `14`
-    extends SemanticWIDTHSNUMBER
+    extends SemanticWIDTHS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
+       with SemanticWIDTHSNUMBER
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSNUMBER
   
   @js.native
   sealed trait `15`
-    extends SemanticWIDTHSNUMBER
+    extends SemanticWIDTHS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
+       with SemanticWIDTHSNUMBER
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSNUMBER
   
   @js.native
   sealed trait `16`
-    extends SemanticWIDTHSNUMBER
+    extends SemanticWIDTHS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
+       with SemanticWIDTHSNUMBER
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSNUMBER
   
   @js.native
   sealed trait `2`
-    extends SemanticWIDTHSNUMBER
+    extends SemanticWIDTHS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
+       with SemanticWIDTHSNUMBER
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSNUMBER
   
   @js.native
   sealed trait `3`
-    extends SemanticWIDTHSNUMBER
+    extends SemanticWIDTHS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
+       with SemanticWIDTHSNUMBER
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSNUMBER
   
   @js.native
   sealed trait `4`
-    extends SemanticWIDTHSNUMBER
+    extends SemanticWIDTHS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
+       with SemanticWIDTHSNUMBER
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSNUMBER
   
   @js.native
   sealed trait `5`
-    extends SemanticWIDTHSNUMBER
+    extends SemanticWIDTHS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
+       with SemanticWIDTHSNUMBER
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSNUMBER
   
   @js.native
   sealed trait `6`
-    extends SemanticWIDTHSNUMBER
+    extends SemanticWIDTHS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
+       with SemanticWIDTHSNUMBER
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSNUMBER
   
   @js.native
   sealed trait `7`
-    extends SemanticWIDTHSNUMBER
+    extends SemanticWIDTHS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
+       with SemanticWIDTHSNUMBER
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSNUMBER
   
   @js.native
   sealed trait `8`
-    extends SemanticWIDTHSNUMBER
+    extends SemanticWIDTHS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
+       with SemanticWIDTHSNUMBER
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSNUMBER
   
   @js.native
   sealed trait `9`
-    extends SemanticWIDTHSNUMBER
+    extends SemanticWIDTHS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
+       with SemanticWIDTHSNUMBER
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSNUMBER
   
   @js.native

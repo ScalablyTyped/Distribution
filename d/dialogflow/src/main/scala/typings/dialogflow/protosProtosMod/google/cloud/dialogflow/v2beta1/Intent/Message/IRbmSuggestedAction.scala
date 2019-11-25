@@ -31,11 +31,11 @@ object IRbmSuggestedAction {
     text: String = null
   ): IRbmSuggestedAction = {
     val __obj = js.Dynamic.literal()
-    if (dial != null) __obj.updateDynamic("dial")(dial)
-    if (openUrl != null) __obj.updateDynamic("openUrl")(openUrl)
-    if (postbackData != null) __obj.updateDynamic("postbackData")(postbackData)
-    if (shareLocation != null) __obj.updateDynamic("shareLocation")(shareLocation)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (dial != null) __obj.updateDynamic("dial")(dial.asInstanceOf[js.Any])
+    if (openUrl != null) __obj.updateDynamic("openUrl")(openUrl.asInstanceOf[js.Any])
+    if (postbackData != null) __obj.updateDynamic("postbackData")(postbackData.asInstanceOf[js.Any])
+    if (shareLocation != null) __obj.updateDynamic("shareLocation")(shareLocation.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRbmSuggestedAction]
   }
 }

@@ -39,18 +39,18 @@ object TabsOptions {
   ): TabsOptions = {
     val __obj = js.Dynamic.literal()
     if (activate != null) __obj.updateDynamic("activate")(js.Any.fromFunction2(activate))
-    if (active != null) __obj.updateDynamic("active")(active)
+    if (active != null) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
     if (beforeActivate != null) __obj.updateDynamic("beforeActivate")(js.Any.fromFunction2(beforeActivate))
     if (beforeLoad != null) __obj.updateDynamic("beforeLoad")(js.Any.fromFunction2(beforeLoad))
-    if (classes != null) __obj.updateDynamic("classes")(classes)
-    if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible)
+    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible.asInstanceOf[js.Any])
     if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2(create))
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled)
-    if (event != null) __obj.updateDynamic("event")(event)
-    if (heightStyle != null) __obj.updateDynamic("heightStyle")(heightStyle)
-    if (hide != null) __obj.updateDynamic("hide")(hide)
+    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
+    if (heightStyle != null) __obj.updateDynamic("heightStyle")(heightStyle.asInstanceOf[js.Any])
+    if (hide != null) __obj.updateDynamic("hide")(hide.asInstanceOf[js.Any])
     if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction2(load))
-    if (show != null) __obj.updateDynamic("show")(show)
+    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabsOptions]
   }
 }

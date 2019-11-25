@@ -13,8 +13,8 @@ object AboutQuotaBytesByService {
   @scala.inline
   def apply(bytesUsed: String = null, serviceName: String = null): AboutQuotaBytesByService = {
     val __obj = js.Dynamic.literal()
-    if (bytesUsed != null) __obj.updateDynamic("bytesUsed")(bytesUsed)
-    if (serviceName != null) __obj.updateDynamic("serviceName")(serviceName)
+    if (bytesUsed != null) __obj.updateDynamic("bytesUsed")(bytesUsed.asInstanceOf[js.Any])
+    if (serviceName != null) __obj.updateDynamic("serviceName")(serviceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AboutQuotaBytesByService]
   }
 }

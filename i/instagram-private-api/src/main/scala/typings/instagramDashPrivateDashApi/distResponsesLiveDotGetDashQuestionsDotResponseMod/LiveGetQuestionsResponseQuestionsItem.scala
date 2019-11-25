@@ -23,7 +23,7 @@ object LiveGetQuestionsResponseQuestionsItem {
     timestamp: Double,
     user: LiveGetQuestionsResponseUser
   ): LiveGetQuestionsResponseQuestionsItem = {
-    val __obj = js.Dynamic.literal(qid = qid, source = source, story_sticker_text = story_sticker_text, text = text, timestamp = timestamp, user = user)
+    val __obj = js.Dynamic.literal(qid = qid.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], story_sticker_text = story_sticker_text.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LiveGetQuestionsResponseQuestionsItem]
   }

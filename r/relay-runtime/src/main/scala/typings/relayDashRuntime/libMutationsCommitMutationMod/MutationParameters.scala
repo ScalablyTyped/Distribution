@@ -12,7 +12,7 @@ object MutationParameters {
   @scala.inline
   def apply(rawResponse: js.Object = null): MutationParameters = {
     val __obj = js.Dynamic.literal()
-    if (rawResponse != null) __obj.updateDynamic("rawResponse")(rawResponse)
+    if (rawResponse != null) __obj.updateDynamic("rawResponse")(rawResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[MutationParameters]
   }
 }

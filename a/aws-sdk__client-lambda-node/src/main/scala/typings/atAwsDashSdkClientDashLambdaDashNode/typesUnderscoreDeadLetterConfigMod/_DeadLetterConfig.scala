@@ -15,7 +15,7 @@ object _DeadLetterConfig {
   @scala.inline
   def apply(TargetArn: String = null): _DeadLetterConfig = {
     val __obj = js.Dynamic.literal()
-    if (TargetArn != null) __obj.updateDynamic("TargetArn")(TargetArn)
+    if (TargetArn != null) __obj.updateDynamic("TargetArn")(TargetArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[_DeadLetterConfig]
   }
 }

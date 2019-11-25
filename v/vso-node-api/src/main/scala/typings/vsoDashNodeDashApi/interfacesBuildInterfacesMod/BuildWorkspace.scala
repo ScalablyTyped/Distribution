@@ -11,7 +11,7 @@ trait BuildWorkspace extends js.Object {
 object BuildWorkspace {
   @scala.inline
   def apply(mappings: js.Array[MappingDetails]): BuildWorkspace = {
-    val __obj = js.Dynamic.literal(mappings = mappings)
+    val __obj = js.Dynamic.literal(mappings = mappings.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BuildWorkspace]
   }

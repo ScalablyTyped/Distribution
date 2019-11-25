@@ -18,7 +18,7 @@ trait ReportsResource extends js.Object {
 object ReportsResource {
   @scala.inline
   def apply(generate: Anon_AccountIdAltDimension => Request[Report], saved: SavedResource): ReportsResource = {
-    val __obj = js.Dynamic.literal(generate = js.Any.fromFunction1(generate), saved = saved)
+    val __obj = js.Dynamic.literal(generate = js.Any.fromFunction1(generate), saved = saved.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReportsResource]
   }

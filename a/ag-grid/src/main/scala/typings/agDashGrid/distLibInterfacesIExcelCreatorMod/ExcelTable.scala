@@ -12,7 +12,7 @@ trait ExcelTable extends js.Object {
 object ExcelTable {
   @scala.inline
   def apply(columns: js.Array[ExcelColumn], rows: js.Array[ExcelRow]): ExcelTable = {
-    val __obj = js.Dynamic.literal(columns = columns, rows = rows)
+    val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExcelTable]
   }

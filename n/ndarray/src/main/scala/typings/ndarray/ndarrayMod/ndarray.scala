@@ -47,7 +47,7 @@ object ndarray {
     stride: js.Array[Double],
     transpose: /* repeated */ Double => typings.ndarray.ndarrayMod.ndarray[T]
   ): ndarray[T] = {
-    val __obj = js.Dynamic.literal(T = T, data = data.asInstanceOf[js.Any], dimension = dimension, dtype = dtype, get = js.Any.fromFunction1(get), hi = js.Any.fromFunction1(hi), index = js.Any.fromFunction1(index), lo = js.Any.fromFunction1(lo), offset = offset, order = order, pick = js.Any.fromFunction1(pick), reshape = js.Any.fromFunction1(reshape), set = js.Any.fromFunction1(set), shape = shape, size = size, step = js.Any.fromFunction1(step), stride = stride, transpose = js.Any.fromFunction1(transpose))
+    val __obj = js.Dynamic.literal(T = T.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], dimension = dimension.asInstanceOf[js.Any], dtype = dtype.asInstanceOf[js.Any], get = js.Any.fromFunction1(get), hi = js.Any.fromFunction1(hi), index = js.Any.fromFunction1(index), lo = js.Any.fromFunction1(lo), offset = offset.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any], pick = js.Any.fromFunction1(pick), reshape = js.Any.fromFunction1(reshape), set = js.Any.fromFunction1(set), shape = shape.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], step = js.Any.fromFunction1(step), stride = stride.asInstanceOf[js.Any], transpose = js.Any.fromFunction1(transpose))
   
     __obj.asInstanceOf[ndarray[T]]
   }

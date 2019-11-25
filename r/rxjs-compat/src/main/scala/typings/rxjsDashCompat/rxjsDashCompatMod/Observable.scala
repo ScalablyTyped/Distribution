@@ -62,15 +62,7 @@ object Observable extends js.Object {
     * @deprecated In favor of iif creation function: import { iif } from 'rxjs';
     */
   def `if`[T, F](condition: js.Function0[Boolean]): typings.rxjs.internalObservableMod.Observable[T | F] = js.native
-  /**
-    * @nocollapse
-    * @deprecated In favor of iif creation function: import { iif } from 'rxjs';
-    */
   def `if`[T, F](condition: js.Function0[Boolean], trueResult: SubscribableOrPromise[T]): typings.rxjs.internalObservableMod.Observable[T | F] = js.native
-  /**
-    * @nocollapse
-    * @deprecated In favor of iif creation function: import { iif } from 'rxjs';
-    */
   def `if`[T, F](
     condition: js.Function0[Boolean],
     trueResult: SubscribableOrPromise[T],

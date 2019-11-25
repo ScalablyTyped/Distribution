@@ -12,7 +12,7 @@ object Anon_Contains {
   @scala.inline
   def apply(contains: js.Any = null): Anon_Contains = {
     val __obj = js.Dynamic.literal()
-    if (contains != null) __obj.updateDynamic("contains")(contains)
+    if (contains != null) __obj.updateDynamic("contains")(contains.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Contains]
   }
 }

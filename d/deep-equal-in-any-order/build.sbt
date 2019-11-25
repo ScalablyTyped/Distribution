@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "deep-equal-in-any-order"
-version := "1.0-dt-20190808Z-f0dd84"
+version := "1.0-dt-20190808Z-1b04b5"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

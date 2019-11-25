@@ -56,10 +56,10 @@ object Config {
     stdout: WriteStream = null
   ): Config = {
     val __obj = js.Dynamic.literal()
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
-    if (env != null) __obj.updateDynamic("env")(env)
-    if (stderr != null) __obj.updateDynamic("stderr")(stderr)
-    if (stdout != null) __obj.updateDynamic("stdout")(stdout)
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
+    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
+    if (stderr != null) __obj.updateDynamic("stderr")(stderr.asInstanceOf[js.Any])
+    if (stdout != null) __obj.updateDynamic("stdout")(stdout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

@@ -14,7 +14,7 @@ trait QueryLoginAdd extends js.Object {
 object QueryLoginAdd {
   @scala.inline
   def apply(cldbid: Double, client_login_name: String, client_login_password: String, sid: Double): QueryLoginAdd = {
-    val __obj = js.Dynamic.literal(cldbid = cldbid, client_login_name = client_login_name, client_login_password = client_login_password, sid = sid)
+    val __obj = js.Dynamic.literal(cldbid = cldbid.asInstanceOf[js.Any], client_login_name = client_login_name.asInstanceOf[js.Any], client_login_password = client_login_password.asInstanceOf[js.Any], sid = sid.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[QueryLoginAdd]
   }

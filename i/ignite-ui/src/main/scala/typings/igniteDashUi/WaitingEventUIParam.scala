@@ -25,7 +25,7 @@ object WaitingEventUIParam {
     val __obj = js.Dynamic.literal()
     if (currentTime != null) __obj.updateDynamic("currentTime")(currentTime.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[WaitingEventUIParam]
   }
 }

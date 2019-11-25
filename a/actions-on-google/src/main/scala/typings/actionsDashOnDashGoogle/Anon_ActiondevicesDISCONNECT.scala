@@ -12,7 +12,7 @@ trait Anon_ActiondevicesDISCONNECT extends js.Object {
 object Anon_ActiondevicesDISCONNECT {
   @scala.inline
   def apply(intent: actionDOTdevicesDOTDISCONNECT): Anon_ActiondevicesDISCONNECT = {
-    val __obj = js.Dynamic.literal(intent = intent)
+    val __obj = js.Dynamic.literal(intent = intent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ActiondevicesDISCONNECT]
   }

@@ -32,7 +32,7 @@ object Anon_Datehappened {
     url: String,
     related_event_id: Int | Double = null
   ): Anon_Datehappened = {
-    val __obj = js.Dynamic.literal(date_happened = date_happened, handle = handle, id = id, priority = priority.asInstanceOf[js.Any], tags = tags, text = text, title = title, url = url)
+    val __obj = js.Dynamic.literal(date_happened = date_happened.asInstanceOf[js.Any], handle = handle.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     if (related_event_id != null) __obj.updateDynamic("related_event_id")(related_event_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Datehappened]
   }

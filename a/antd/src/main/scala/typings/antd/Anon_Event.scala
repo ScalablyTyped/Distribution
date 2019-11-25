@@ -14,7 +14,7 @@ trait Anon_Event extends js.Object {
 object Anon_Event {
   @scala.inline
   def apply(event: load, node: AntTreeNode): Anon_Event = {
-    val __obj = js.Dynamic.literal(event = event, node = node)
+    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Event]
   }

@@ -25,10 +25,10 @@ object Anon_IdAttribute {
   ): Anon_IdAttribute[D] = {
     val __obj = js.Dynamic.literal()
     if (idAttribute != null) __obj.updateDynamic("idAttribute")(idAttribute.asInstanceOf[js.Any])
-    if (implicitSort != null) __obj.updateDynamic("implicitSort")(implicitSort)
+    if (implicitSort != null) __obj.updateDynamic("implicitSort")(implicitSort.asInstanceOf[js.Any])
     if (keyAttributes != null) __obj.updateDynamic("keyAttributes")(keyAttributes.asInstanceOf[js.Any])
     if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
-    if (sortComparators != null) __obj.updateDynamic("sortComparators")(sortComparators)
+    if (sortComparators != null) __obj.updateDynamic("sortComparators")(sortComparators.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IdAttribute[D]]
   }
 }

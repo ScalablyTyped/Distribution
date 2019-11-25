@@ -48,20 +48,20 @@ object IActionDescriptor {
     url: String = null,
     withCredentials: js.UndefOr[Boolean] = js.undefined
   ): IActionDescriptor = {
-    val __obj = js.Dynamic.literal(method = method)
+    val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancellable)) __obj.updateDynamic("cancellable")(cancellable)
-    if (!js.isUndefined(hasBody)) __obj.updateDynamic("hasBody")(hasBody)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (interceptor != null) __obj.updateDynamic("interceptor")(interceptor)
-    if (!js.isUndefined(isArray)) __obj.updateDynamic("isArray")(isArray)
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (responseType != null) __obj.updateDynamic("responseType")(responseType)
+    if (!js.isUndefined(cancellable)) __obj.updateDynamic("cancellable")(cancellable.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasBody)) __obj.updateDynamic("hasBody")(hasBody.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (interceptor != null) __obj.updateDynamic("interceptor")(interceptor.asInstanceOf[js.Any])
+    if (!js.isUndefined(isArray)) __obj.updateDynamic("isArray")(isArray.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (transformRequest != null) __obj.updateDynamic("transformRequest")(transformRequest.asInstanceOf[js.Any])
     if (transformResponse != null) __obj.updateDynamic("transformResponse")(transformResponse.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url)
-    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials)
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials.asInstanceOf[js.Any])
     __obj.asInstanceOf[IActionDescriptor]
   }
 }

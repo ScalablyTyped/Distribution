@@ -17,14 +17,8 @@ trait WebIDLParseError extends js.Object {
 
 object WebIDLParseError {
   @scala.inline
-  def apply(
-    input: String,
-    line: Double,
-    message: String,
-    toString: () => String,
-    tokens: js.Array[ValueDescription]
-  ): WebIDLParseError = {
-    val __obj = js.Dynamic.literal(input = input, line = line, message = message, toString = js.Any.fromFunction0(toString), tokens = tokens)
+  def apply(input: String, line: Double, message: String, tokens: js.Array[ValueDescription]): WebIDLParseError = {
+    val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], tokens = tokens.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WebIDLParseError]
   }

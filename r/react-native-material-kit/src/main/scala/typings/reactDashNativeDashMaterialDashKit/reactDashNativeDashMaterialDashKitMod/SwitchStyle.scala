@@ -22,11 +22,11 @@ object SwitchStyle {
     thumbOnColor: String = null
   ): SwitchStyle = {
     val __obj = js.Dynamic.literal()
-    if (offColor != null) __obj.updateDynamic("offColor")(offColor)
-    if (onColor != null) __obj.updateDynamic("onColor")(onColor)
-    if (rippleColor != null) __obj.updateDynamic("rippleColor")(rippleColor)
-    if (thumbOffColor != null) __obj.updateDynamic("thumbOffColor")(thumbOffColor)
-    if (thumbOnColor != null) __obj.updateDynamic("thumbOnColor")(thumbOnColor)
+    if (offColor != null) __obj.updateDynamic("offColor")(offColor.asInstanceOf[js.Any])
+    if (onColor != null) __obj.updateDynamic("onColor")(onColor.asInstanceOf[js.Any])
+    if (rippleColor != null) __obj.updateDynamic("rippleColor")(rippleColor.asInstanceOf[js.Any])
+    if (thumbOffColor != null) __obj.updateDynamic("thumbOffColor")(thumbOffColor.asInstanceOf[js.Any])
+    if (thumbOnColor != null) __obj.updateDynamic("thumbOnColor")(thumbOnColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwitchStyle]
   }
 }

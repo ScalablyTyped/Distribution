@@ -52,16 +52,16 @@ object AppointmentWindowOpenEventArgs {
     `type`: String = null
   ): AppointmentWindowOpenEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (appointment != null) __obj.updateDynamic("appointment")(appointment)
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (!js.isUndefined(edit)) __obj.updateDynamic("edit")(edit)
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (`object` != null) __obj.updateDynamic("object")(`object`)
-    if (originalEventType != null) __obj.updateDynamic("originalEventType")(originalEventType)
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (appointment != null) __obj.updateDynamic("appointment")(appointment.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(edit)) __obj.updateDynamic("edit")(edit.asInstanceOf[js.Any])
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (`object` != null) __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    if (originalEventType != null) __obj.updateDynamic("originalEventType")(originalEventType.asInstanceOf[js.Any])
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppointmentWindowOpenEventArgs]
   }
 }

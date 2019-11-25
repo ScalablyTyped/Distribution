@@ -1,7 +1,6 @@
 package typings.dojo.dijit.layout
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
 import typings.dojo.dojoStrings.gutters
 import typings.dojo.dojoStrings.liveSplitters
 import typings.dojo.dojoStrings.persist
@@ -74,10 +73,34 @@ class BorderContainer_ () extends LayoutContainer {
   @JSName("set")
   def set_persist(property: persist, value: Boolean): Unit = js.native
   @JSName("watch")
-  def watch_gutters(property: gutters, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_gutters(
+    property: gutters,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_liveSplitters(property: liveSplitters, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_liveSplitters(
+    property: liveSplitters,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_persist(property: persist, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_persist(
+    property: persist,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

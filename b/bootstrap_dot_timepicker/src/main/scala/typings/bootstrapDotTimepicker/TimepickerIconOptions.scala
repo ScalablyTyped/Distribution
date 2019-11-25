@@ -13,8 +13,8 @@ object TimepickerIconOptions {
   @scala.inline
   def apply(down: String = null, up: String = null): TimepickerIconOptions = {
     val __obj = js.Dynamic.literal()
-    if (down != null) __obj.updateDynamic("down")(down)
-    if (up != null) __obj.updateDynamic("up")(up)
+    if (down != null) __obj.updateDynamic("down")(down.asInstanceOf[js.Any])
+    if (up != null) __obj.updateDynamic("up")(up.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimepickerIconOptions]
   }
 }

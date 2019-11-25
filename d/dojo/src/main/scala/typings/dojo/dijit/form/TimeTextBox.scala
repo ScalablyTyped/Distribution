@@ -1,6 +1,5 @@
 package typings.dojo.dijit.form
 
-import typings.dojo.Fn_Void
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,11 +18,6 @@ import scala.scalajs.js.annotation._
 class TimeTextBox () extends _DateTimeTextBox {
   def this(params: js.Object) = this()
   def this(params: js.Object, srcNodeRef: HTMLElement) = this()
-  /**
-    * 
-    */
-  @JSName("popupClass")
-  var popupClass_Original: Fn_Void = js.native
   /**
     * 
     * @param isFocused             

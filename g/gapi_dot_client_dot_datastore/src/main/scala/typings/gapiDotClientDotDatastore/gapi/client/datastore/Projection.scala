@@ -13,7 +13,7 @@ object Projection {
   @scala.inline
   def apply(property: PropertyReference = null): Projection = {
     val __obj = js.Dynamic.literal()
-    if (property != null) __obj.updateDynamic("property")(property)
+    if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
     __obj.asInstanceOf[Projection]
   }
 }

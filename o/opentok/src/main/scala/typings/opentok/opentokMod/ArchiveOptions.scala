@@ -22,11 +22,11 @@ object ArchiveOptions {
     outputMode: OutputMode = null
   ): ArchiveOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hasAudio)) __obj.updateDynamic("hasAudio")(hasAudio)
-    if (!js.isUndefined(hasVideo)) __obj.updateDynamic("hasVideo")(hasVideo)
-    if (layout != null) __obj.updateDynamic("layout")(layout)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (outputMode != null) __obj.updateDynamic("outputMode")(outputMode)
+    if (!js.isUndefined(hasAudio)) __obj.updateDynamic("hasAudio")(hasAudio.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasVideo)) __obj.updateDynamic("hasVideo")(hasVideo.asInstanceOf[js.Any])
+    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (outputMode != null) __obj.updateDynamic("outputMode")(outputMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArchiveOptions]
   }
 }

@@ -43,10 +43,10 @@ object PullsCreateReviewParamsDeprecatedNumber {
     commit_id: String = null,
     event: APPROVE | REQUEST_CHANGES | COMMENT = null
   ): PullsCreateReviewParamsDeprecatedNumber = {
-    val __obj = js.Dynamic.literal(number = number, owner = owner, repo = repo)
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (commit_id != null) __obj.updateDynamic("commit_id")(commit_id)
+    val __obj = js.Dynamic.literal(number = number.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (commit_id != null) __obj.updateDynamic("commit_id")(commit_id.asInstanceOf[js.Any])
     if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
     __obj.asInstanceOf[PullsCreateReviewParamsDeprecatedNumber]
   }

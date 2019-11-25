@@ -19,7 +19,7 @@ object TagCount {
   @scala.inline
   def apply(`type`: String = null, value: Int | Double = null): TagCount = {
     val __obj = js.Dynamic.literal()
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TagCount]
   }

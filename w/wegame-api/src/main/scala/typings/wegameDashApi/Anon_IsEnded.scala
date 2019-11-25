@@ -11,7 +11,7 @@ trait Anon_IsEnded extends js.Object {
 object Anon_IsEnded {
   @scala.inline
   def apply(isEnded: Boolean): Anon_IsEnded = {
-    val __obj = js.Dynamic.literal(isEnded = isEnded)
+    val __obj = js.Dynamic.literal(isEnded = isEnded.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IsEnded]
   }

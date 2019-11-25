@@ -12,7 +12,7 @@ object Anon_Props {
   @scala.inline
   def apply(props: Anon_History = null): Anon_Props = {
     val __obj = js.Dynamic.literal()
-    if (props != null) __obj.updateDynamic("props")(props)
+    if (props != null) __obj.updateDynamic("props")(props.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Props]
   }
 }

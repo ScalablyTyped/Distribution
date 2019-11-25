@@ -18,8 +18,8 @@ trait SearchPoint extends js.Object {
 object SearchPoint {
   @scala.inline
   def apply(keyword: String, city: String = null): SearchPoint = {
-    val __obj = js.Dynamic.literal(keyword = keyword)
-    if (city != null) __obj.updateDynamic("city")(city)
+    val __obj = js.Dynamic.literal(keyword = keyword.asInstanceOf[js.Any])
+    if (city != null) __obj.updateDynamic("city")(city.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchPoint]
   }
 }

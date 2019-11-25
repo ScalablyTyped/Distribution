@@ -21,9 +21,9 @@ object ChannelStatus {
     privacyStatus: String = null
   ): ChannelStatus = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isLinked)) __obj.updateDynamic("isLinked")(isLinked)
-    if (longUploadsStatus != null) __obj.updateDynamic("longUploadsStatus")(longUploadsStatus)
-    if (privacyStatus != null) __obj.updateDynamic("privacyStatus")(privacyStatus)
+    if (!js.isUndefined(isLinked)) __obj.updateDynamic("isLinked")(isLinked.asInstanceOf[js.Any])
+    if (longUploadsStatus != null) __obj.updateDynamic("longUploadsStatus")(longUploadsStatus.asInstanceOf[js.Any])
+    if (privacyStatus != null) __obj.updateDynamic("privacyStatus")(privacyStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelStatus]
   }
 }

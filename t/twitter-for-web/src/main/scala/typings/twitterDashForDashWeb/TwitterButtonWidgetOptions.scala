@@ -50,15 +50,15 @@ object TwitterButtonWidgetOptions {
   ): TwitterButtonWidgetOptions = {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count)
-    if (counturl != null) __obj.updateDynamic("counturl")(counturl)
-    if (!js.isUndefined(dnt)) __obj.updateDynamic("dnt")(dnt)
-    if (hashtags != null) __obj.updateDynamic("hashtags")(hashtags)
-    if (lang != null) __obj.updateDynamic("lang")(lang)
-    if (related != null) __obj.updateDynamic("related")(related)
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (counturl != null) __obj.updateDynamic("counturl")(counturl.asInstanceOf[js.Any])
+    if (!js.isUndefined(dnt)) __obj.updateDynamic("dnt")(dnt.asInstanceOf[js.Any])
+    if (hashtags != null) __obj.updateDynamic("hashtags")(hashtags.asInstanceOf[js.Any])
+    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
+    if (related != null) __obj.updateDynamic("related")(related.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (via != null) __obj.updateDynamic("via")(via)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (via != null) __obj.updateDynamic("via")(via.asInstanceOf[js.Any])
     __obj.asInstanceOf[TwitterButtonWidgetOptions]
   }
 }

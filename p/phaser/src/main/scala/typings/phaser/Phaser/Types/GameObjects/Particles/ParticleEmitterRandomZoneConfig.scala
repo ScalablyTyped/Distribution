@@ -18,8 +18,8 @@ trait ParticleEmitterRandomZoneConfig extends js.Object {
 object ParticleEmitterRandomZoneConfig {
   @scala.inline
   def apply(source: RandomZoneSource, `type`: String = null): ParticleEmitterRandomZoneConfig = {
-    val __obj = js.Dynamic.literal(source = source)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParticleEmitterRandomZoneConfig]
   }
 }

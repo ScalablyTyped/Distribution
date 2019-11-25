@@ -15,8 +15,8 @@ trait SketchCreateEvent extends js.Object {
 object SketchCreateEvent {
   @scala.inline
   def apply(graphic: Graphic, state: String, tool: String, toolEventInfo: CreateToolEventInfo, `type`: String): SketchCreateEvent = {
-    val __obj = js.Dynamic.literal(graphic = graphic, state = state, tool = tool, toolEventInfo = toolEventInfo)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(graphic = graphic.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], tool = tool.asInstanceOf[js.Any], toolEventInfo = toolEventInfo.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchCreateEvent]
   }
 }

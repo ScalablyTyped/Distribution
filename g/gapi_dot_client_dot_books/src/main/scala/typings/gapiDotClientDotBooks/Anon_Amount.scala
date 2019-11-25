@@ -16,7 +16,7 @@ object Anon_Amount {
   def apply(amount: Int | Double = null, currencyCode: String = null): Anon_Amount = {
     val __obj = js.Dynamic.literal()
     if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
-    if (currencyCode != null) __obj.updateDynamic("currencyCode")(currencyCode)
+    if (currencyCode != null) __obj.updateDynamic("currencyCode")(currencyCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Amount]
   }
 }

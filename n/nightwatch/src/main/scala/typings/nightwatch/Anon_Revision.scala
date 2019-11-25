@@ -13,7 +13,7 @@ trait Anon_Revision extends js.Object {
 object Anon_Revision {
   @scala.inline
   def apply(revision: String, time: String, version: String): Anon_Revision = {
-    val __obj = js.Dynamic.literal(revision = revision, time = time, version = version)
+    val __obj = js.Dynamic.literal(revision = revision.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Revision]
   }

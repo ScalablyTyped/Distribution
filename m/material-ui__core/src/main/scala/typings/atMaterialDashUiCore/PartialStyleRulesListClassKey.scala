@@ -22,10 +22,10 @@ object PartialStyleRulesListClassKey {
     subheader: CSSProperties = null
   ): PartialStyleRulesListClassKey = {
     val __obj = js.Dynamic.literal()
-    if (dense != null) __obj.updateDynamic("dense")(dense)
-    if (padding != null) __obj.updateDynamic("padding")(padding)
-    if (root != null) __obj.updateDynamic("root")(root)
-    if (subheader != null) __obj.updateDynamic("subheader")(subheader)
+    if (dense != null) __obj.updateDynamic("dense")(dense.asInstanceOf[js.Any])
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (subheader != null) __obj.updateDynamic("subheader")(subheader.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyleRulesListClassKey]
   }
 }

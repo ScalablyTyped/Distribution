@@ -13,7 +13,7 @@ trait INotyfIcon extends js.Object {
 object INotyfIcon {
   @scala.inline
   def apply(className: String, tagName: String, text: String): INotyfIcon = {
-    val __obj = js.Dynamic.literal(className = className, tagName = tagName, text = text)
+    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[INotyfIcon]
   }

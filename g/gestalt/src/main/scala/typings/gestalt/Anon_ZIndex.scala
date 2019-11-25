@@ -11,7 +11,7 @@ trait Anon_ZIndex extends js.Object {
 object Anon_ZIndex {
   @scala.inline
   def apply(__zIndex: String): Anon_ZIndex = {
-    val __obj = js.Dynamic.literal(__zIndex = __zIndex)
+    val __obj = js.Dynamic.literal(__zIndex = __zIndex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ZIndex]
   }

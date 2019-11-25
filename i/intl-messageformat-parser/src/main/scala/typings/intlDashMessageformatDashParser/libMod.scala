@@ -60,6 +60,5 @@ object libMod extends js.Object {
   }
   
   type ParseOptions = Options with IParseOptions
-  type SKELETON_TYPE = typings.intlDashMessageformatDashParser.libTypesMod.SKELETON_TYPE
 }
 

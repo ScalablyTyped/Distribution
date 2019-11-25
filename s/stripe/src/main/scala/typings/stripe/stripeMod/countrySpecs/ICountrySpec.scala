@@ -43,8 +43,8 @@ object ICountrySpec {
     supported_payment_methods: js.Array[String],
     verification_fields: Anon_Company
   ): ICountrySpec = {
-    val __obj = js.Dynamic.literal(default_currency = default_currency, id = id, supported_payment_currencies = supported_payment_currencies, supported_payment_methods = supported_payment_methods, verification_fields = verification_fields)
-    __obj.updateDynamic("object")(`object`)
+    val __obj = js.Dynamic.literal(default_currency = default_currency.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], supported_payment_currencies = supported_payment_currencies.asInstanceOf[js.Any], supported_payment_methods = supported_payment_methods.asInstanceOf[js.Any], verification_fields = verification_fields.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICountrySpec]
   }
 }

@@ -36,7 +36,7 @@ object Wifi {
     retry: Anon_Discardedpackets,
     status: String
   ): Wifi = {
-    val __obj = js.Dynamic.literal(Interface = Interface, beacon = beacon, crypt = crypt, frag = frag, level = level, link = link, misc = misc, noise = noise, nwid = nwid, retry = retry, status = status)
+    val __obj = js.Dynamic.literal(Interface = Interface.asInstanceOf[js.Any], beacon = beacon.asInstanceOf[js.Any], crypt = crypt.asInstanceOf[js.Any], frag = frag.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], misc = misc.asInstanceOf[js.Any], noise = noise.asInstanceOf[js.Any], nwid = nwid.asInstanceOf[js.Any], retry = retry.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Wifi]
   }

@@ -21,7 +21,7 @@ object QueryProtocolInterface {
     send: String => Unit,
     sendKeepAlive: () => Unit
   ): QueryProtocolInterface = {
-    val __obj = js.Dynamic.literal(chunk = chunk, close = js.Any.fromFunction0(close), on = js.Any.fromFunction2(on), send = js.Any.fromFunction1(send), sendKeepAlive = js.Any.fromFunction0(sendKeepAlive))
+    val __obj = js.Dynamic.literal(chunk = chunk.asInstanceOf[js.Any], close = js.Any.fromFunction0(close), on = js.Any.fromFunction2(on), send = js.Any.fromFunction1(send), sendKeepAlive = js.Any.fromFunction0(sendKeepAlive))
   
     __obj.asInstanceOf[QueryProtocolInterface]
   }

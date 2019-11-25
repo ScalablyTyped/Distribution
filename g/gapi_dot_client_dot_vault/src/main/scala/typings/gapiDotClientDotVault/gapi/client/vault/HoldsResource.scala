@@ -39,7 +39,7 @@ object HoldsResource {
     list: Anon_AccesstokenAltBearertoken => Request[ListHoldsResponse],
     update: Anon_Accesstoken => Request[Hold]
   ): HoldsResource = {
-    val __obj = js.Dynamic.literal(accounts = accounts, create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), update = js.Any.fromFunction1(update))
+    val __obj = js.Dynamic.literal(accounts = accounts.asInstanceOf[js.Any], create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[HoldsResource]
   }

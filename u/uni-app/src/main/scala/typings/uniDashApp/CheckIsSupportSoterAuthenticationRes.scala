@@ -19,8 +19,8 @@ object CheckIsSupportSoterAuthenticationRes {
   @scala.inline
   def apply(errMsg: String = null, supportMode: js.Array[_] = null): CheckIsSupportSoterAuthenticationRes = {
     val __obj = js.Dynamic.literal()
-    if (errMsg != null) __obj.updateDynamic("errMsg")(errMsg)
-    if (supportMode != null) __obj.updateDynamic("supportMode")(supportMode)
+    if (errMsg != null) __obj.updateDynamic("errMsg")(errMsg.asInstanceOf[js.Any])
+    if (supportMode != null) __obj.updateDynamic("supportMode")(supportMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckIsSupportSoterAuthenticationRes]
   }
 }

@@ -11,7 +11,7 @@ trait IButtonState extends js.Object {
 object IButtonState {
   @scala.inline
   def apply(isActive: Boolean): IButtonState = {
-    val __obj = js.Dynamic.literal(isActive = isActive)
+    val __obj = js.Dynamic.literal(isActive = isActive.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IButtonState]
   }

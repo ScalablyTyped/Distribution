@@ -21,7 +21,7 @@ object BaseTooltipProps {
     position: (/* position1 */ DOMRect, /* position2 */ DOMRect) => DOMRect = null
   ): BaseTooltipProps = {
     val __obj = js.Dynamic.literal()
-    if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel)
+    if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(js.Any.fromFunction2(position))
     __obj.asInstanceOf[BaseTooltipProps]

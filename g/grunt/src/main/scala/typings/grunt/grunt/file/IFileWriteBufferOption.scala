@@ -24,8 +24,8 @@ object IFileWriteBufferOption {
     noProcess: js.Any = null,
     process: /* buffer */ Buffer => Boolean = null
   ): IFileWriteBufferOption = {
-    val __obj = js.Dynamic.literal(encoding = encoding)
-    if (noProcess != null) __obj.updateDynamic("noProcess")(noProcess)
+    val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
+    if (noProcess != null) __obj.updateDynamic("noProcess")(noProcess.asInstanceOf[js.Any])
     if (process != null) __obj.updateDynamic("process")(js.Any.fromFunction1(process))
     __obj.asInstanceOf[IFileWriteBufferOption]
   }

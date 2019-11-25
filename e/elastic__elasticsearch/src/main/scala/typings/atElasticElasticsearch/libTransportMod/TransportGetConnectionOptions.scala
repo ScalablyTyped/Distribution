@@ -11,7 +11,7 @@ trait TransportGetConnectionOptions extends js.Object {
 object TransportGetConnectionOptions {
   @scala.inline
   def apply(requestId: String): TransportGetConnectionOptions = {
-    val __obj = js.Dynamic.literal(requestId = requestId)
+    val __obj = js.Dynamic.literal(requestId = requestId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TransportGetConnectionOptions]
   }

@@ -19,7 +19,7 @@ object ListReelMediaViewerFeedResponseStoryFundraiserDonationInfosItem {
     donations: ListReelMediaViewerFeedResponseDonations,
     fundraiser_id: String
   ): ListReelMediaViewerFeedResponseStoryFundraiserDonationInfosItem = {
-    val __obj = js.Dynamic.literal(amount_raised = amount_raised, charity = charity, donations = donations, fundraiser_id = fundraiser_id)
+    val __obj = js.Dynamic.literal(amount_raised = amount_raised.asInstanceOf[js.Any], charity = charity.asInstanceOf[js.Any], donations = donations.asInstanceOf[js.Any], fundraiser_id = fundraiser_id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ListReelMediaViewerFeedResponseStoryFundraiserDonationInfosItem]
   }

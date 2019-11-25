@@ -66,7 +66,7 @@ object Label {
     x: Double | String,
     y: Double | String
   ): Label = {
-    val __obj = js.Dynamic.literal(align = align, alpha = alpha, bold = bold, color = color, id = id, rotation = rotation, size = size, text = text, url = url, x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], alpha = alpha.asInstanceOf[js.Any], bold = bold.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Label]
   }

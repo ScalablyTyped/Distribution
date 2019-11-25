@@ -13,7 +13,7 @@ object HeldDriveQuery {
   @scala.inline
   def apply(includeTeamDriveFiles: js.UndefOr[Boolean] = js.undefined): HeldDriveQuery = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeTeamDriveFiles)) __obj.updateDynamic("includeTeamDriveFiles")(includeTeamDriveFiles)
+    if (!js.isUndefined(includeTeamDriveFiles)) __obj.updateDynamic("includeTeamDriveFiles")(includeTeamDriveFiles.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeldDriveQuery]
   }
 }

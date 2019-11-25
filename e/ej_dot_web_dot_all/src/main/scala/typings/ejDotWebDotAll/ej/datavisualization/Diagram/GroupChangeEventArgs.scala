@@ -32,11 +32,11 @@ object GroupChangeEventArgs {
     oldParent: js.Any = null
   ): GroupChangeEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (cause != null) __obj.updateDynamic("cause")(cause)
-    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId)
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (newParent != null) __obj.updateDynamic("newParent")(newParent)
-    if (oldParent != null) __obj.updateDynamic("oldParent")(oldParent)
+    if (cause != null) __obj.updateDynamic("cause")(cause.asInstanceOf[js.Any])
+    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (newParent != null) __obj.updateDynamic("newParent")(newParent.asInstanceOf[js.Any])
+    if (oldParent != null) __obj.updateDynamic("oldParent")(oldParent.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupChangeEventArgs]
   }
 }

@@ -20,13 +20,17 @@ object hapiStrings {
   sealed trait `*` extends js.Object
   
   @js.native
-  sealed trait DELETE extends HTTP_METHODS_PARTIAL
+  sealed trait DELETE
+    extends HTTP_METHODS
+       with HTTP_METHODS_PARTIAL
   
   @js.native
   sealed trait Empty extends ReferrerPolicy
   
   @js.native
-  sealed trait GET extends HTTP_METHODS_PARTIAL
+  sealed trait GET
+    extends HTTP_METHODS
+       with HTTP_METHODS_PARTIAL
   
   @js.native
   sealed trait HEAD extends HTTP_METHODS
@@ -35,16 +39,24 @@ object hapiStrings {
   sealed trait Lax extends js.Object
   
   @js.native
-  sealed trait OPTIONS extends HTTP_METHODS_PARTIAL
+  sealed trait OPTIONS
+    extends HTTP_METHODS
+       with HTTP_METHODS_PARTIAL
   
   @js.native
-  sealed trait PATCH extends HTTP_METHODS_PARTIAL
+  sealed trait PATCH
+    extends HTTP_METHODS
+       with HTTP_METHODS_PARTIAL
   
   @js.native
-  sealed trait POST extends HTTP_METHODS_PARTIAL
+  sealed trait POST
+    extends HTTP_METHODS
+       with HTTP_METHODS_PARTIAL
   
   @js.native
-  sealed trait PUT extends HTTP_METHODS_PARTIAL
+  sealed trait PUT
+    extends HTTP_METHODS
+       with HTTP_METHODS_PARTIAL
   
   @js.native
   sealed trait RouteOptions extends js.Object
@@ -86,7 +98,10 @@ object hapiStrings {
   sealed trait default extends js.Object
   
   @js.native
-  sealed trait delete extends HTTP_METHODS_PARTIAL_LOWERCASE
+  sealed trait delete_
+    extends HTTP_METHODS
+       with HTTP_METHODS_PARTIAL
+       with HTTP_METHODS_PARTIAL_LOWERCASE
   
   @js.native
   sealed trait deny extends js.Object
@@ -107,7 +122,10 @@ object hapiStrings {
   sealed trait form extends js.Object
   
   @js.native
-  sealed trait get extends HTTP_METHODS_PARTIAL_LOWERCASE
+  sealed trait get_
+    extends HTTP_METHODS
+       with HTTP_METHODS_PARTIAL
+       with HTTP_METHODS_PARTIAL_LOWERCASE
   
   @js.native
   sealed trait gunzip extends js.Object
@@ -116,7 +134,7 @@ object hapiStrings {
   sealed trait handler extends js.Object
   
   @js.native
-  sealed trait head extends HTTP_METHODS
+  sealed trait head_ extends HTTP_METHODS
   
   @js.native
   sealed trait hex extends js.Object
@@ -152,13 +170,19 @@ object hapiStrings {
   sealed trait none extends js.Object
   
   @js.native
-  sealed trait onCredentials extends RouteRequestExtType
+  sealed trait onCredentials
+    extends RouteRequestExtType
+       with ServerRequestExtType
   
   @js.native
-  sealed trait onPostAuth extends RouteRequestExtType
+  sealed trait onPostAuth
+    extends RouteRequestExtType
+       with ServerRequestExtType
   
   @js.native
-  sealed trait onPostHandler extends RouteRequestExtType
+  sealed trait onPostHandler
+    extends RouteRequestExtType
+       with ServerRequestExtType
   
   @js.native
   sealed trait onPostStart extends ServerExtType
@@ -167,13 +191,19 @@ object hapiStrings {
   sealed trait onPostStop extends ServerExtType
   
   @js.native
-  sealed trait onPreAuth extends RouteRequestExtType
+  sealed trait onPreAuth
+    extends RouteRequestExtType
+       with ServerRequestExtType
   
   @js.native
-  sealed trait onPreHandler extends RouteRequestExtType
+  sealed trait onPreHandler
+    extends RouteRequestExtType
+       with ServerRequestExtType
   
   @js.native
-  sealed trait onPreResponse extends RouteRequestExtType
+  sealed trait onPreResponse
+    extends RouteRequestExtType
+       with ServerRequestExtType
   
   @js.native
   sealed trait onPreStart extends ServerExtType
@@ -188,7 +218,10 @@ object hapiStrings {
   sealed trait optional extends js.Object
   
   @js.native
-  sealed trait options extends HTTP_METHODS_PARTIAL_LOWERCASE
+  sealed trait options_
+    extends HTTP_METHODS
+       with HTTP_METHODS_PARTIAL
+       with HTTP_METHODS_PARTIAL_LOWERCASE
   
   @js.native
   sealed trait origin extends ReferrerPolicy
@@ -197,7 +230,10 @@ object hapiStrings {
   sealed trait `origin-when-cross-origin` extends ReferrerPolicy
   
   @js.native
-  sealed trait patch extends HTTP_METHODS_PARTIAL_LOWERCASE
+  sealed trait patch_
+    extends HTTP_METHODS
+       with HTTP_METHODS_PARTIAL
+       with HTTP_METHODS_PARTIAL_LOWERCASE
   
   @js.native
   sealed trait peek extends RequestEventType
@@ -209,7 +245,10 @@ object hapiStrings {
   sealed trait plugin extends js.Object
   
   @js.native
-  sealed trait post extends HTTP_METHODS_PARTIAL_LOWERCASE
+  sealed trait post_
+    extends HTTP_METHODS
+       with HTTP_METHODS_PARTIAL
+       with HTTP_METHODS_PARTIAL_LOWERCASE
   
   @js.native
   sealed trait `private` extends js.Object
@@ -218,7 +257,10 @@ object hapiStrings {
   sealed trait public extends js.Object
   
   @js.native
-  sealed trait put extends HTTP_METHODS_PARTIAL_LOWERCASE
+  sealed trait put_
+    extends HTTP_METHODS
+       with HTTP_METHODS_PARTIAL
+       with HTTP_METHODS_PARTIAL_LOWERCASE
   
   @js.native
   sealed trait request extends js.Object
@@ -330,7 +372,7 @@ object hapiStrings {
   @scala.inline
   def default: default = "default".asInstanceOf[default]
   @scala.inline
-  def delete: delete = "delete".asInstanceOf[delete]
+  def delete_ : delete_ = "delete".asInstanceOf[delete_]
   @scala.inline
   def deny: deny = "deny".asInstanceOf[deny]
   @scala.inline
@@ -344,13 +386,13 @@ object hapiStrings {
   @scala.inline
   def form: form = "form".asInstanceOf[form]
   @scala.inline
-  def get: get = "get".asInstanceOf[get]
+  def get_ : get_ = "get".asInstanceOf[get_]
   @scala.inline
   def gunzip: gunzip = "gunzip".asInstanceOf[gunzip]
   @scala.inline
   def handler: handler = "handler".asInstanceOf[handler]
   @scala.inline
-  def head: head = "head".asInstanceOf[head]
+  def head_ : head_ = "head".asInstanceOf[head_]
   @scala.inline
   def hex: hex = "hex".asInstanceOf[hex]
   @scala.inline
@@ -398,13 +440,13 @@ object hapiStrings {
   @scala.inline
   def optional: optional = "optional".asInstanceOf[optional]
   @scala.inline
-  def options: options = "options".asInstanceOf[options]
+  def options_ : options_ = "options".asInstanceOf[options_]
   @scala.inline
   def origin: origin = "origin".asInstanceOf[origin]
   @scala.inline
   def `origin-when-cross-origin`: `origin-when-cross-origin` = "origin-when-cross-origin".asInstanceOf[`origin-when-cross-origin`]
   @scala.inline
-  def patch: patch = "patch".asInstanceOf[patch]
+  def patch_ : patch_ = "patch".asInstanceOf[patch_]
   @scala.inline
   def peek: peek = "peek".asInstanceOf[peek]
   @scala.inline
@@ -412,13 +454,13 @@ object hapiStrings {
   @scala.inline
   def plugin: plugin = "plugin".asInstanceOf[plugin]
   @scala.inline
-  def post: post = "post".asInstanceOf[post]
+  def post_ : post_ = "post".asInstanceOf[post_]
   @scala.inline
   def `private`: `private` = "private".asInstanceOf[`private`]
   @scala.inline
   def public: public = "public".asInstanceOf[public]
   @scala.inline
-  def put: put = "put".asInstanceOf[put]
+  def put_ : put_ = "put".asInstanceOf[put_]
   @scala.inline
   def request: request = "request".asInstanceOf[request]
   @scala.inline

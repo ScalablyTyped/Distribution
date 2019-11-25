@@ -21,9 +21,9 @@ object EventPeriodUpdate {
     updates: js.Array[EventUpdateRequest] = null
   ): EventPeriodUpdate = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (timePeriod != null) __obj.updateDynamic("timePeriod")(timePeriod)
-    if (updates != null) __obj.updateDynamic("updates")(updates)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (timePeriod != null) __obj.updateDynamic("timePeriod")(timePeriod.asInstanceOf[js.Any])
+    if (updates != null) __obj.updateDynamic("updates")(updates.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventPeriodUpdate]
   }
 }

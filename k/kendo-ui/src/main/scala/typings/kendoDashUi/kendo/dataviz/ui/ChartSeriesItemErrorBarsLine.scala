@@ -13,7 +13,7 @@ object ChartSeriesItemErrorBarsLine {
   @scala.inline
   def apply(dashType: String = null, width: Int | Double = null): ChartSeriesItemErrorBarsLine = {
     val __obj = js.Dynamic.literal()
-    if (dashType != null) __obj.updateDynamic("dashType")(dashType)
+    if (dashType != null) __obj.updateDynamic("dashType")(dashType.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartSeriesItemErrorBarsLine]
   }

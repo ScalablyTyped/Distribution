@@ -29,7 +29,7 @@ object QueryTrace {
     requestType: String,
     startedAt: Double | Long
   ): QueryTrace = {
-    val __obj = js.Dynamic.literal(clientAddress = clientAddress, coordinator = coordinator, duration = duration, events = events, parameters = parameters, requestType = requestType, startedAt = startedAt.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(clientAddress = clientAddress.asInstanceOf[js.Any], coordinator = coordinator.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any], requestType = requestType.asInstanceOf[js.Any], startedAt = startedAt.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[QueryTrace]
   }

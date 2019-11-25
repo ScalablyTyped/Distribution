@@ -122,19 +122,19 @@ object ServiceConfig {
     stoptimeout: Int | Double = null,
     wait: Int | Double = null
   ): ServiceConfig = {
-    val __obj = js.Dynamic.literal(script = script)
-    if (!js.isUndefined(abortOnError)) __obj.updateDynamic("abortOnError")(abortOnError)
-    if (description != null) __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(script = script.asInstanceOf[js.Any])
+    if (!js.isUndefined(abortOnError)) __obj.updateDynamic("abortOnError")(abortOnError.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
-    if (execPath != null) __obj.updateDynamic("execPath")(execPath)
+    if (execPath != null) __obj.updateDynamic("execPath")(execPath.asInstanceOf[js.Any])
     if (grow != null) __obj.updateDynamic("grow")(grow.asInstanceOf[js.Any])
-    if (logmode != null) __obj.updateDynamic("logmode")(logmode)
-    if (logpath != null) __obj.updateDynamic("logpath")(logpath)
+    if (logmode != null) __obj.updateDynamic("logmode")(logmode.asInstanceOf[js.Any])
+    if (logpath != null) __obj.updateDynamic("logpath")(logpath.asInstanceOf[js.Any])
     if (maxRestarts != null) __obj.updateDynamic("maxRestarts")(maxRestarts.asInstanceOf[js.Any])
     if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (nodeOptions != null) __obj.updateDynamic("nodeOptions")(nodeOptions)
-    if (!js.isUndefined(stopparentfirst)) __obj.updateDynamic("stopparentfirst")(stopparentfirst)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (nodeOptions != null) __obj.updateDynamic("nodeOptions")(nodeOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopparentfirst)) __obj.updateDynamic("stopparentfirst")(stopparentfirst.asInstanceOf[js.Any])
     if (stoptimeout != null) __obj.updateDynamic("stoptimeout")(stoptimeout.asInstanceOf[js.Any])
     if (wait != null) __obj.updateDynamic("wait")(wait.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceConfig]

@@ -27,10 +27,10 @@ object TranslationTable {
   @scala.inline
   def apply(loadError: String = null, loading: String = null, moreData: String = null, noData: String = null): TranslationTable = {
     val __obj = js.Dynamic.literal()
-    if (loadError != null) __obj.updateDynamic("loadError")(loadError)
-    if (loading != null) __obj.updateDynamic("loading")(loading)
-    if (moreData != null) __obj.updateDynamic("moreData")(moreData)
-    if (noData != null) __obj.updateDynamic("noData")(noData)
+    if (loadError != null) __obj.updateDynamic("loadError")(loadError.asInstanceOf[js.Any])
+    if (loading != null) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
+    if (moreData != null) __obj.updateDynamic("moreData")(moreData.asInstanceOf[js.Any])
+    if (noData != null) __obj.updateDynamic("noData")(noData.asInstanceOf[js.Any])
     __obj.asInstanceOf[TranslationTable]
   }
 }

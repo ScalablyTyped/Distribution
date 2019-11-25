@@ -11,7 +11,7 @@ trait CordovaPlugins extends js.Object {
 object CordovaPlugins {
   @scala.inline
   def apply(diagnostic: Diagnostic): CordovaPlugins = {
-    val __obj = js.Dynamic.literal(diagnostic = diagnostic)
+    val __obj = js.Dynamic.literal(diagnostic = diagnostic.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CordovaPlugins]
   }

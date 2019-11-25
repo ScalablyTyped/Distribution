@@ -67,8 +67,8 @@ object IBridgeConfig {
     zigbeechannel: Double,
     replacesbridgeid: String = null
   ): IBridgeConfig = {
-    val __obj = js.Dynamic.literal(UTC = UTC, apiversion = apiversion, backup = backup, bridgeid = bridgeid, dhcp = dhcp, factorynew = factorynew, gateway = gateway, ipaddress = ipaddress, linkbutton = linkbutton, localtime = localtime, mac = mac, modelid = modelid, name = name, netmask = netmask, portalconnection = portalconnection, portalservices = portalservices, portalstate = portalstate, proxyaddress = proxyaddress, proxyport = proxyport, swupdate = swupdate, swversion = swversion, timezone = timezone, whitelist = whitelist, zigbeechannel = zigbeechannel)
-    if (replacesbridgeid != null) __obj.updateDynamic("replacesbridgeid")(replacesbridgeid)
+    val __obj = js.Dynamic.literal(UTC = UTC.asInstanceOf[js.Any], apiversion = apiversion.asInstanceOf[js.Any], backup = backup.asInstanceOf[js.Any], bridgeid = bridgeid.asInstanceOf[js.Any], dhcp = dhcp.asInstanceOf[js.Any], factorynew = factorynew.asInstanceOf[js.Any], gateway = gateway.asInstanceOf[js.Any], ipaddress = ipaddress.asInstanceOf[js.Any], linkbutton = linkbutton.asInstanceOf[js.Any], localtime = localtime.asInstanceOf[js.Any], mac = mac.asInstanceOf[js.Any], modelid = modelid.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], netmask = netmask.asInstanceOf[js.Any], portalconnection = portalconnection.asInstanceOf[js.Any], portalservices = portalservices.asInstanceOf[js.Any], portalstate = portalstate.asInstanceOf[js.Any], proxyaddress = proxyaddress.asInstanceOf[js.Any], proxyport = proxyport.asInstanceOf[js.Any], swupdate = swupdate.asInstanceOf[js.Any], swversion = swversion.asInstanceOf[js.Any], timezone = timezone.asInstanceOf[js.Any], whitelist = whitelist.asInstanceOf[js.Any], zigbeechannel = zigbeechannel.asInstanceOf[js.Any])
+    if (replacesbridgeid != null) __obj.updateDynamic("replacesbridgeid")(replacesbridgeid.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBridgeConfig]
   }
 }

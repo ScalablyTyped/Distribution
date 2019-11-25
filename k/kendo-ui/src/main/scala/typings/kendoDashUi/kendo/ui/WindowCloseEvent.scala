@@ -16,8 +16,8 @@ object WindowCloseEvent {
     sender: Window,
     userTriggered: js.UndefOr[Boolean] = js.undefined
   ): WindowCloseEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (!js.isUndefined(userTriggered)) __obj.updateDynamic("userTriggered")(userTriggered)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (!js.isUndefined(userTriggered)) __obj.updateDynamic("userTriggered")(userTriggered.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowCloseEvent]
   }
 }

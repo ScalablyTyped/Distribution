@@ -15,7 +15,7 @@ object StopBluetoothDevicesDiscoverySuccess {
   @scala.inline
   def apply(errMsg: String = null): StopBluetoothDevicesDiscoverySuccess = {
     val __obj = js.Dynamic.literal()
-    if (errMsg != null) __obj.updateDynamic("errMsg")(errMsg)
+    if (errMsg != null) __obj.updateDynamic("errMsg")(errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopBluetoothDevicesDiscoverySuccess]
   }
 }

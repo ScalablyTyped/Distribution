@@ -29,7 +29,7 @@ object Test extends js.Object {
       * promise to fail.
       */
     /* CompleteClass */
-    override def exception(error: String): js.Any = js.native
+    override def exception(error: java.lang.String): js.Any = js.native
   }
   
   @js.native
@@ -65,7 +65,7 @@ object Test extends js.Object {
       * promise to fail.
       */
     /* CompleteClass */
-    override def exception(error: String): js.Any = js.native
+    override def exception(error: java.lang.String): js.Any = js.native
   }
   
   /**
@@ -74,7 +74,7 @@ object Test extends js.Object {
     */
   val adapter: typings.atEmberTest.adapterMod.default = js.native
   val registerAsyncHelper: js.Function2[
-    /* name */ String, 
+    /* name */ java.lang.String, 
     /* helperMethod */ js.Function2[
       /* app */ typings.atEmberApplication.atEmberApplicationMod.default, 
       /* repeated */ js.Any, 
@@ -82,7 +82,7 @@ object Test extends js.Object {
     ], 
     Unit
   ] = js.native
-  val unregisterHelper: js.Function1[/* name */ String, Unit] = js.native
+  val unregisterHelper: js.Function1[/* name */ java.lang.String, Unit] = js.native
   /**
     * Iterates through each registered test waiter, and invokes
     * its callback. If any waiter returns false, this method will return
@@ -112,7 +112,7 @@ object Test extends js.Object {
       /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], Unit], 
       Unit
     ],
-    label: String
+    label: java.lang.String
   ): typings.ember.emberMod.Ember.Test.Promise[T] = js.native
   /**
     * Replacement for `Ember.RSVP.resolve`
@@ -121,13 +121,13 @@ object Test extends js.Object {
     */
   def resolve[T](): typings.ember.emberMod.Ember.Test.Promise[T] = js.native
   def resolve[T](value: T): typings.ember.emberMod.Ember.Test.Promise[T] = js.native
-  def resolve[T](value: T, label: String): typings.ember.emberMod.Ember.Test.Promise[T] = js.native
+  def resolve[T](value: T, label: java.lang.String): typings.ember.emberMod.Ember.Test.Promise[T] = js.native
   def resolve[T](value: js.Thenable[T]): typings.ember.emberMod.Ember.Test.Promise[T] = js.native
-  def resolve[T](value: js.Thenable[T], label: String): typings.ember.emberMod.Ember.Test.Promise[T] = js.native
+  def resolve[T](value: js.Thenable[T], label: java.lang.String): typings.ember.emberMod.Ember.Test.Promise[T] = js.native
   @js.native
   object registerHelper extends js.Object {
     def apply(
-      name: String,
+      name: java.lang.String,
       helperMethod: js.Function2[
           /* app */ typings.atEmberApplication.atEmberApplicationMod.default, 
           /* repeated */ js.Any, 
@@ -135,7 +135,7 @@ object Test extends js.Object {
         ]
     ): js.Any = js.native
     def apply(
-      name: String,
+      name: java.lang.String,
       helperMethod: js.Function2[
           /* app */ typings.atEmberApplication.atEmberApplicationMod.default, 
           /* repeated */ js.Any, 

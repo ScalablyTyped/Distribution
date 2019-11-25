@@ -33,9 +33,9 @@ object Anon_Forceturn {
     forceturn: js.UndefOr[Boolean] = js.undefined,
     tcpport: String = null
   ): Anon_Forceturn = {
-    val __obj = js.Dynamic.literal(password = password, turnServerURL = turnServerURL, udpport = udpport, username = username)
-    if (!js.isUndefined(forceturn)) __obj.updateDynamic("forceturn")(forceturn)
-    if (tcpport != null) __obj.updateDynamic("tcpport")(tcpport)
+    val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], turnServerURL = turnServerURL.asInstanceOf[js.Any], udpport = udpport.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceturn)) __obj.updateDynamic("forceturn")(forceturn.asInstanceOf[js.Any])
+    if (tcpport != null) __obj.updateDynamic("tcpport")(tcpport.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Forceturn]
   }
 }

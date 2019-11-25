@@ -17,8 +17,8 @@ object SortSettingsSortedColumn {
   @scala.inline
   def apply(direction: String = null, field: String = null): SortSettingsSortedColumn = {
     val __obj = js.Dynamic.literal()
-    if (direction != null) __obj.updateDynamic("direction")(direction)
-    if (field != null) __obj.updateDynamic("field")(field)
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     __obj.asInstanceOf[SortSettingsSortedColumn]
   }
 }

@@ -25,8 +25,8 @@ object Anon_Buy {
     request: Double,
     `try`: Double
   ): Anon_Buy = {
-    val __obj = js.Dynamic.literal(buy = buy, get = get, install = install, none = none, purchaseRequest = purchaseRequest, request = request)
-    __obj.updateDynamic("try")(`try`)
+    val __obj = js.Dynamic.literal(buy = buy.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], install = install.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any], purchaseRequest = purchaseRequest.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
+    __obj.updateDynamic("try")(`try`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Buy]
   }
 }

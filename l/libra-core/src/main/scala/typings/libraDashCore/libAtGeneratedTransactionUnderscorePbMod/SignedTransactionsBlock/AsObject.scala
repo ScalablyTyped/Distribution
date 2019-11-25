@@ -22,7 +22,7 @@ object AsObject {
     validatorPublicKey: Uint8Array | String,
     validatorSignature: Uint8Array | String
   ): AsObject = {
-    val __obj = js.Dynamic.literal(transactionsList = transactionsList, validatorPublicKey = validatorPublicKey.asInstanceOf[js.Any], validatorSignature = validatorSignature.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(transactionsList = transactionsList.asInstanceOf[js.Any], validatorPublicKey = validatorPublicKey.asInstanceOf[js.Any], validatorSignature = validatorSignature.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AsObject]
   }

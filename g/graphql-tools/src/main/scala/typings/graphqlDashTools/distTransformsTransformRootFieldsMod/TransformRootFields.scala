@@ -22,7 +22,7 @@ object TransformRootFields {
     transformRequest: /* originalRequest */ Request => Request = null,
     transformResult: /* result */ Result => Result = null
   ): TransformRootFields = {
-    val __obj = js.Dynamic.literal(transform = transform, transformSchema = js.Any.fromFunction1(transformSchema))
+    val __obj = js.Dynamic.literal(transform = transform.asInstanceOf[js.Any], transformSchema = js.Any.fromFunction1(transformSchema))
     if (transformRequest != null) __obj.updateDynamic("transformRequest")(js.Any.fromFunction1(transformRequest))
     if (transformResult != null) __obj.updateDynamic("transformResult")(js.Any.fromFunction1(transformResult))
     __obj.asInstanceOf[TransformRootFields]

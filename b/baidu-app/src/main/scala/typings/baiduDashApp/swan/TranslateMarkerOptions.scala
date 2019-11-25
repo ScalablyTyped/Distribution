@@ -33,7 +33,7 @@ object TranslateMarkerOptions {
     fail: js.Any => Unit = null,
     success: js.Any => Unit = null
   ): TranslateMarkerOptions = {
-    val __obj = js.Dynamic.literal(autoRotate = autoRotate, destination = destination, markerId = markerId, rotate = rotate)
+    val __obj = js.Dynamic.literal(autoRotate = autoRotate.asInstanceOf[js.Any], destination = destination.asInstanceOf[js.Any], markerId = markerId.asInstanceOf[js.Any], rotate = rotate.asInstanceOf[js.Any])
     if (animationEnd != null) __obj.updateDynamic("animationEnd")(js.Any.fromFunction0(animationEnd))
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])

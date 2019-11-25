@@ -13,7 +13,7 @@ object Anon_SelfLinkString {
   @scala.inline
   def apply(selfLink: String = null): Anon_SelfLinkString = {
     val __obj = js.Dynamic.literal()
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_SelfLinkString]
   }
 }

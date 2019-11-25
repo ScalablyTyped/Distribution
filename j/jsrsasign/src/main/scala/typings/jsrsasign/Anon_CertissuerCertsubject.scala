@@ -13,9 +13,9 @@ trait Anon_CertissuerCertsubject extends js.Object {
 object Anon_CertissuerCertsubject {
   @scala.inline
   def apply(ldapstr: String, certissuer: String = null, certsubject: String = null): Anon_CertissuerCertsubject = {
-    val __obj = js.Dynamic.literal(ldapstr = ldapstr)
-    if (certissuer != null) __obj.updateDynamic("certissuer")(certissuer)
-    if (certsubject != null) __obj.updateDynamic("certsubject")(certsubject)
+    val __obj = js.Dynamic.literal(ldapstr = ldapstr.asInstanceOf[js.Any])
+    if (certissuer != null) __obj.updateDynamic("certissuer")(certissuer.asInstanceOf[js.Any])
+    if (certsubject != null) __obj.updateDynamic("certsubject")(certsubject.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CertissuerCertsubject]
   }
 }

@@ -30,9 +30,9 @@ object GetRepositoryTriggersOutput {
     configurationId: String = null,
     triggers: js.Array[_UnmarshalledRepositoryTrigger] = null
   ): GetRepositoryTriggersOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (configurationId != null) __obj.updateDynamic("configurationId")(configurationId)
-    if (triggers != null) __obj.updateDynamic("triggers")(triggers)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (configurationId != null) __obj.updateDynamic("configurationId")(configurationId.asInstanceOf[js.Any])
+    if (triggers != null) __obj.updateDynamic("triggers")(triggers.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRepositoryTriggersOutput]
   }
 }

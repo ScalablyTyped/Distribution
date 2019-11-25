@@ -25,7 +25,7 @@ object Anon_TabIdText {
   def apply(tabId: Int | Double = null, text: String = null, windowId: Int | Double = null): Anon_TabIdText = {
     val __obj = js.Dynamic.literal()
     if (tabId != null) __obj.updateDynamic("tabId")(tabId.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (windowId != null) __obj.updateDynamic("windowId")(windowId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_TabIdText]
   }

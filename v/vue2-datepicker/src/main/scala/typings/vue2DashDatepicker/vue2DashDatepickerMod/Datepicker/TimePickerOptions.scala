@@ -13,7 +13,7 @@ trait TimePickerOptions extends js.Object {
 object TimePickerOptions {
   @scala.inline
   def apply(end: String, start: String, step: String): TimePickerOptions = {
-    val __obj = js.Dynamic.literal(end = end, start = start, step = step)
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TimePickerOptions]
   }

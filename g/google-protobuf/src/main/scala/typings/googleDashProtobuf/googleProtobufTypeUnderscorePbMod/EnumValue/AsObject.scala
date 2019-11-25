@@ -17,7 +17,7 @@ object AsObject {
     number: Double,
     optionsList: js.Array[typings.googleDashProtobuf.googleProtobufTypeUnderscorePbMod.Option.AsObject]
   ): AsObject = {
-    val __obj = js.Dynamic.literal(name = name, number = number, optionsList = optionsList)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], optionsList = optionsList.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AsObject]
   }

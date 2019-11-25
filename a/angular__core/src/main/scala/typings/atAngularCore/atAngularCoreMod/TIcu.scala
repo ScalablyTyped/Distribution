@@ -78,8 +78,8 @@ object TIcu {
     update: js.Array[I18nUpdateOpCodes],
     vars: js.Array[Double]
   ): TIcu = {
-    val __obj = js.Dynamic.literal(cases = cases, childIcus = childIcus, create = create, remove = remove, update = update, vars = vars)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(cases = cases.asInstanceOf[js.Any], childIcus = childIcus.asInstanceOf[js.Any], create = create.asInstanceOf[js.Any], remove = remove.asInstanceOf[js.Any], update = update.asInstanceOf[js.Any], vars = vars.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TIcu]
   }
 }

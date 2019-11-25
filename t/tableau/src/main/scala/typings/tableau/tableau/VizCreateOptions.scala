@@ -64,15 +64,15 @@ object VizCreateOptions {
     width: String = null
   ): VizCreateOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (device != null) __obj.updateDynamic("device")(device)
-    if (height != null) __obj.updateDynamic("height")(height)
-    if (!js.isUndefined(hideTabs)) __obj.updateDynamic("hideTabs")(hideTabs)
-    if (!js.isUndefined(hideToolbar)) __obj.updateDynamic("hideToolbar")(hideToolbar)
-    if (instanceIdToClone != null) __obj.updateDynamic("instanceIdToClone")(instanceIdToClone)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (device != null) __obj.updateDynamic("device")(device.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideTabs)) __obj.updateDynamic("hideTabs")(hideTabs.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideToolbar)) __obj.updateDynamic("hideToolbar")(hideToolbar.asInstanceOf[js.Any])
+    if (instanceIdToClone != null) __obj.updateDynamic("instanceIdToClone")(instanceIdToClone.asInstanceOf[js.Any])
     if (onFirstInteractive != null) __obj.updateDynamic("onFirstInteractive")(js.Any.fromFunction1(onFirstInteractive))
     if (onFirstVizSizeKnown != null) __obj.updateDynamic("onFirstVizSizeKnown")(js.Any.fromFunction1(onFirstVizSizeKnown))
-    if (width != null) __obj.updateDynamic("width")(width)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[VizCreateOptions]
   }
 }

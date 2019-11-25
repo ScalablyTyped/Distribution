@@ -13,7 +13,7 @@ object Anon_Active {
   @scala.inline
   def apply(active: js.UndefOr[Boolean] = js.undefined, size: Int | Double = null): Anon_Active = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Active]
   }

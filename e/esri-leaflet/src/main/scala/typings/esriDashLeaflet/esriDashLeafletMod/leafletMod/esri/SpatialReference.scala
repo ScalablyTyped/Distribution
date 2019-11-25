@@ -14,7 +14,7 @@ object SpatialReference {
   def apply(wkid: Int | Double = null, wkt: String = null): SpatialReference = {
     val __obj = js.Dynamic.literal()
     if (wkid != null) __obj.updateDynamic("wkid")(wkid.asInstanceOf[js.Any])
-    if (wkt != null) __obj.updateDynamic("wkt")(wkt)
+    if (wkt != null) __obj.updateDynamic("wkt")(wkt.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpatialReference]
   }
 }

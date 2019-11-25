@@ -10,26 +10,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AuthSessionResult extends js.Object {
-  var errorCode: js.UndefOr[String | Null] = js.undefined
-  var params: js.UndefOr[StringDictionary[String]] = js.undefined
-  var `type`: js.UndefOr[cancel | dismiss | error | locked | success] = js.undefined
-  var url: js.UndefOr[String] = js.undefined
-}
+/* Rewritten from type alias, can be one of: 
+  - typings.expo.Anon_Cancel
+  - typings.expo.Anon_Error
+*/
+trait AuthSessionResult extends js.Object
 
 object AuthSessionResult {
   @scala.inline
-  def apply(
-    errorCode: String = null,
-    params: StringDictionary[String] = null,
-    `type`: cancel | dismiss | locked = null,
-    url: String = null
-  ): AuthSessionResult = {
+  def Anon_Cancel(`type`: cancel | dismiss | locked): AuthSessionResult = {
     val __obj = js.Dynamic.literal()
-    if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode)
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AuthSessionResult]
+  }
+  @scala.inline
+  def Anon_Error(params: StringDictionary[String], `type`: error | success, url: String, errorCode: String = null): AuthSessionResult = {
+    val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthSessionResult]
   }
 }

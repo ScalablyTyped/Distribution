@@ -21,11 +21,11 @@ object RuleTesterSchema {
     reject: js.Array[RuleTesterTestRejected] = null,
     syntax: SyntaxType = null
   ): RuleTesterSchema = {
-    val __obj = js.Dynamic.literal(ruleName = ruleName)
-    if (accept != null) __obj.updateDynamic("accept")(accept)
-    if (config != null) __obj.updateDynamic("config")(config)
-    if (reject != null) __obj.updateDynamic("reject")(reject)
-    if (syntax != null) __obj.updateDynamic("syntax")(syntax)
+    val __obj = js.Dynamic.literal(ruleName = ruleName.asInstanceOf[js.Any])
+    if (accept != null) __obj.updateDynamic("accept")(accept.asInstanceOf[js.Any])
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
+    if (reject != null) __obj.updateDynamic("reject")(reject.asInstanceOf[js.Any])
+    if (syntax != null) __obj.updateDynamic("syntax")(syntax.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleTesterSchema]
   }
 }

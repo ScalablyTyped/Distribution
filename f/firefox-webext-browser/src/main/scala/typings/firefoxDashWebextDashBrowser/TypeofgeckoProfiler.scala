@@ -60,7 +60,7 @@ object TypeofgeckoProfiler {
     start: Anon_BufferSize => js.Promise[_],
     stop: () => js.Promise[_]
   ): TypeofgeckoProfiler = {
-    val __obj = js.Dynamic.literal(dumpProfileToFile = js.Any.fromFunction1(dumpProfileToFile), getProfile = js.Any.fromFunction0(getProfile), getProfileAsArrayBuffer = js.Any.fromFunction0(getProfileAsArrayBuffer), getProfileAsGzippedArrayBuffer = js.Any.fromFunction0(getProfileAsGzippedArrayBuffer), getSymbols = js.Any.fromFunction2(getSymbols), onRunning = onRunning, pause = js.Any.fromFunction0(pause), resume = js.Any.fromFunction0(resume), start = js.Any.fromFunction1(start), stop = js.Any.fromFunction0(stop))
+    val __obj = js.Dynamic.literal(dumpProfileToFile = js.Any.fromFunction1(dumpProfileToFile), getProfile = js.Any.fromFunction0(getProfile), getProfileAsArrayBuffer = js.Any.fromFunction0(getProfileAsArrayBuffer), getProfileAsGzippedArrayBuffer = js.Any.fromFunction0(getProfileAsGzippedArrayBuffer), getSymbols = js.Any.fromFunction2(getSymbols), onRunning = onRunning.asInstanceOf[js.Any], pause = js.Any.fromFunction0(pause), resume = js.Any.fromFunction0(resume), start = js.Any.fromFunction1(start), stop = js.Any.fromFunction0(stop))
   
     __obj.asInstanceOf[TypeofgeckoProfiler]
   }

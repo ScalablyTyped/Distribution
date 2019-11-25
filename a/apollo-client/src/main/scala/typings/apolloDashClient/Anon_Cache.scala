@@ -13,7 +13,7 @@ trait Anon_Cache[TCacheShape] extends js.Object {
 object Anon_Cache {
   @scala.inline
   def apply[TCacheShape](cache: ApolloCache[TCacheShape], getCacheKey: Anon_Id => js.Any): Anon_Cache[TCacheShape] = {
-    val __obj = js.Dynamic.literal(cache = cache, getCacheKey = js.Any.fromFunction1(getCacheKey))
+    val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any], getCacheKey = js.Any.fromFunction1(getCacheKey))
   
     __obj.asInstanceOf[Anon_Cache[TCacheShape]]
   }

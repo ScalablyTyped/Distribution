@@ -14,7 +14,7 @@ trait ASP extends js.Object {
 object ASP {
   @scala.inline
   def apply(asp: Double, date: String): ASP = {
-    val __obj = js.Dynamic.literal(asp = asp, date = date)
+    val __obj = js.Dynamic.literal(asp = asp.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ASP]
   }

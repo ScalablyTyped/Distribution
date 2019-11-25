@@ -32,8 +32,8 @@ object GooglePrivacyDlpV2beta1Key {
     path: js.Array[GooglePrivacyDlpV2beta1PathElement] = null
   ): GooglePrivacyDlpV2beta1Key = {
     val __obj = js.Dynamic.literal()
-    if (partitionId != null) __obj.updateDynamic("partitionId")(partitionId)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (partitionId != null) __obj.updateDynamic("partitionId")(partitionId.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1Key]
   }
 }

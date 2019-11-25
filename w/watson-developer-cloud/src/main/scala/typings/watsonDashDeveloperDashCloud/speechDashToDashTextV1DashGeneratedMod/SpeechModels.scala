@@ -13,7 +13,7 @@ trait SpeechModels extends js.Object {
 object SpeechModels {
   @scala.inline
   def apply(models: js.Array[SpeechModel]): SpeechModels = {
-    val __obj = js.Dynamic.literal(models = models)
+    val __obj = js.Dynamic.literal(models = models.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SpeechModels]
   }

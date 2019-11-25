@@ -13,7 +13,7 @@ object ImportSshPublicKeyResponse {
   @scala.inline
   def apply(loginProfile: LoginProfile = null): ImportSshPublicKeyResponse = {
     val __obj = js.Dynamic.literal()
-    if (loginProfile != null) __obj.updateDynamic("loginProfile")(loginProfile)
+    if (loginProfile != null) __obj.updateDynamic("loginProfile")(loginProfile.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportSshPublicKeyResponse]
   }
 }

@@ -22,11 +22,11 @@ object TreeListColumnCommandItem {
     text: String = null
   ): TreeListColumnCommandItem = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (click != null) __obj.updateDynamic("click")(click)
-    if (imageClass != null) __obj.updateDynamic("imageClass")(imageClass)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (click != null) __obj.updateDynamic("click")(click.asInstanceOf[js.Any])
+    if (imageClass != null) __obj.updateDynamic("imageClass")(imageClass.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeListColumnCommandItem]
   }
 }

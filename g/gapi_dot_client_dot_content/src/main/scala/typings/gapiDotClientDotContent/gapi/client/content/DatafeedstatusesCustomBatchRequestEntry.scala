@@ -36,11 +36,11 @@ object DatafeedstatusesCustomBatchRequestEntry {
   ): DatafeedstatusesCustomBatchRequestEntry = {
     val __obj = js.Dynamic.literal()
     if (batchId != null) __obj.updateDynamic("batchId")(batchId.asInstanceOf[js.Any])
-    if (country != null) __obj.updateDynamic("country")(country)
-    if (datafeedId != null) __obj.updateDynamic("datafeedId")(datafeedId)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (merchantId != null) __obj.updateDynamic("merchantId")(merchantId)
-    if (method != null) __obj.updateDynamic("method")(method)
+    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
+    if (datafeedId != null) __obj.updateDynamic("datafeedId")(datafeedId.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (merchantId != null) __obj.updateDynamic("merchantId")(merchantId.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatafeedstatusesCustomBatchRequestEntry]
   }
 }

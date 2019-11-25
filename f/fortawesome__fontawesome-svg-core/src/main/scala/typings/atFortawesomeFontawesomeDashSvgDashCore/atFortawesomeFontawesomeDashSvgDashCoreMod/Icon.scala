@@ -5,7 +5,6 @@ import typings.atFortawesomeFontawesomeDashCommonDashTypes.atFortawesomeFontawes
 import typings.atFortawesomeFontawesomeDashCommonDashTypes.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
 import typings.atFortawesomeFontawesomeDashCommonDashTypes.atFortawesomeFontawesomeDashCommonDashTypesMod.IconPathData
 import typings.atFortawesomeFontawesomeDashCommonDashTypes.atFortawesomeFontawesomeDashCommonDashTypesMod.IconPrefix
-import typings.atFortawesomeFontawesomeDashSvgDashCore.atFortawesomeFontawesomeDashSvgDashCoreStrings.icon
 import typings.std.HTMLCollection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +14,7 @@ trait Icon
   extends IconDefinition
      with FontawesomeObject
      with IconOrText {
-  val `type`: icon
+  val `type`: typings.atFortawesomeFontawesomeDashSvgDashCore.atFortawesomeFontawesomeDashSvgDashCoreStrings.icon
 }
 
 object Icon {
@@ -27,11 +26,11 @@ object Icon {
     iconName: IconName,
     node: HTMLCollection,
     prefix: IconPrefix,
-    `type`: icon
+    `type`: typings.atFortawesomeFontawesomeDashSvgDashCore.atFortawesomeFontawesomeDashSvgDashCoreStrings.icon
   ): Icon = {
-    val __obj = js.Dynamic.literal(html = html, icon = icon, iconName = iconName, node = node, prefix = prefix)
-    __obj.updateDynamic("abstract")(`abstract`)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(html = html.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], iconName = iconName.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
+    __obj.updateDynamic("abstract")(`abstract`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Icon]
   }
 }

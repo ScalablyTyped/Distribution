@@ -20,7 +20,7 @@ object MenuItemsConfig {
     fail: /* error */ js.UndefOr[js.Any] => Unit = null,
     success: /* res */ js.UndefOr[js.Any] => Unit = null
   ): MenuItemsConfig = {
-    val __obj = js.Dynamic.literal(menuList = menuList)
+    val __obj = js.Dynamic.literal(menuList = menuList.asInstanceOf[js.Any])
     if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction0(cancel))
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))

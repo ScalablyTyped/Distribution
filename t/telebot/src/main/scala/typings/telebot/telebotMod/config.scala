@@ -31,13 +31,13 @@ object config {
     usePlugins: js.Array[String] = null,
     webhook: Anon_Cert = null
   ): config = {
-    val __obj = js.Dynamic.literal(token = token)
-    if (allowedUpdates != null) __obj.updateDynamic("allowedUpdates")(allowedUpdates)
-    if (pluginConfig != null) __obj.updateDynamic("pluginConfig")(pluginConfig)
-    if (pluginFolder != null) __obj.updateDynamic("pluginFolder")(pluginFolder)
-    if (polling != null) __obj.updateDynamic("polling")(polling)
-    if (usePlugins != null) __obj.updateDynamic("usePlugins")(usePlugins)
-    if (webhook != null) __obj.updateDynamic("webhook")(webhook)
+    val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any])
+    if (allowedUpdates != null) __obj.updateDynamic("allowedUpdates")(allowedUpdates.asInstanceOf[js.Any])
+    if (pluginConfig != null) __obj.updateDynamic("pluginConfig")(pluginConfig.asInstanceOf[js.Any])
+    if (pluginFolder != null) __obj.updateDynamic("pluginFolder")(pluginFolder.asInstanceOf[js.Any])
+    if (polling != null) __obj.updateDynamic("polling")(polling.asInstanceOf[js.Any])
+    if (usePlugins != null) __obj.updateDynamic("usePlugins")(usePlugins.asInstanceOf[js.Any])
+    if (webhook != null) __obj.updateDynamic("webhook")(webhook.asInstanceOf[js.Any])
     __obj.asInstanceOf[config]
   }
 }

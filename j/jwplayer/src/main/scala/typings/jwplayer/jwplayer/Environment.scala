@@ -13,7 +13,7 @@ trait Environment extends js.Object {
 object Environment {
   @scala.inline
   def apply(Browser: Browser, Features: Features, OS: OS): Environment = {
-    val __obj = js.Dynamic.literal(Browser = Browser, Features = Features, OS = OS)
+    val __obj = js.Dynamic.literal(Browser = Browser.asInstanceOf[js.Any], Features = Features.asInstanceOf[js.Any], OS = OS.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Environment]
   }

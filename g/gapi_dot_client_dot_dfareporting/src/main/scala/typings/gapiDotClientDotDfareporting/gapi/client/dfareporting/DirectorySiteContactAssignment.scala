@@ -18,8 +18,8 @@ object DirectorySiteContactAssignment {
   @scala.inline
   def apply(contactId: String = null, visibility: String = null): DirectorySiteContactAssignment = {
     val __obj = js.Dynamic.literal()
-    if (contactId != null) __obj.updateDynamic("contactId")(contactId)
-    if (visibility != null) __obj.updateDynamic("visibility")(visibility)
+    if (contactId != null) __obj.updateDynamic("contactId")(contactId.asInstanceOf[js.Any])
+    if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectorySiteContactAssignment]
   }
 }

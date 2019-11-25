@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait AuthStates extends js.Object
 
+object AuthStates {
+  @scala.inline
+  def authenticated: typings.socketclusterDashClient.socketclusterDashClientStrings.authenticated = this.cast("authenticated")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def unauthenticated: typings.socketclusterDashClient.socketclusterDashClientStrings.unauthenticated = this.cast("unauthenticated")
+}
+

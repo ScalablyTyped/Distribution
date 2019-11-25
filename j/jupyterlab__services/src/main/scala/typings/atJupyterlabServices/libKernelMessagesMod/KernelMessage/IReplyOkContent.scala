@@ -15,7 +15,7 @@ trait IReplyOkContent extends js.Object {
 object IReplyOkContent {
   @scala.inline
   def apply(status: ok): IReplyOkContent = {
-    val __obj = js.Dynamic.literal(status = status)
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IReplyOkContent]
   }

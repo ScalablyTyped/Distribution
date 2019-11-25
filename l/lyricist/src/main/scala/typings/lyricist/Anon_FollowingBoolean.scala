@@ -11,7 +11,7 @@ trait Anon_FollowingBoolean extends js.Object {
 object Anon_FollowingBoolean {
   @scala.inline
   def apply(following: Boolean): Anon_FollowingBoolean = {
-    val __obj = js.Dynamic.literal(following = following)
+    val __obj = js.Dynamic.literal(following = following.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FollowingBoolean]
   }

@@ -21,8 +21,8 @@ object Options {
   @scala.inline
   def apply(appendPaths: js.Array[String] = null, prependPaths: js.Array[String] = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (appendPaths != null) __obj.updateDynamic("appendPaths")(appendPaths)
-    if (prependPaths != null) __obj.updateDynamic("prependPaths")(prependPaths)
+    if (appendPaths != null) __obj.updateDynamic("appendPaths")(appendPaths.asInstanceOf[js.Any])
+    if (prependPaths != null) __obj.updateDynamic("prependPaths")(prependPaths.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

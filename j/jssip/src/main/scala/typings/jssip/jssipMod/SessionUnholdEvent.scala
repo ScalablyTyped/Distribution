@@ -11,7 +11,7 @@ trait SessionUnholdEvent extends js.Object {
 object SessionUnholdEvent {
   @scala.inline
   def apply(originator: String): SessionUnholdEvent = {
-    val __obj = js.Dynamic.literal(originator = originator)
+    val __obj = js.Dynamic.literal(originator = originator.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SessionUnholdEvent]
   }

@@ -16,7 +16,7 @@ object GoogleCloudMlV1_HyperparameterOutput_HyperparameterMetric {
   def apply(objectiveValue: Int | Double = null, trainingStep: String = null): GoogleCloudMlV1_HyperparameterOutput_HyperparameterMetric = {
     val __obj = js.Dynamic.literal()
     if (objectiveValue != null) __obj.updateDynamic("objectiveValue")(objectiveValue.asInstanceOf[js.Any])
-    if (trainingStep != null) __obj.updateDynamic("trainingStep")(trainingStep)
+    if (trainingStep != null) __obj.updateDynamic("trainingStep")(trainingStep.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudMlV1_HyperparameterOutput_HyperparameterMetric]
   }
 }

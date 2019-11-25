@@ -17,7 +17,7 @@ trait Window extends js.Object {
 object Window {
   @scala.inline
   def apply(openDatabase: (String, String, String, Double) => Database, requestFileSystem: js.Any): Window = {
-    val __obj = js.Dynamic.literal(openDatabase = js.Any.fromFunction4(openDatabase), requestFileSystem = requestFileSystem)
+    val __obj = js.Dynamic.literal(openDatabase = js.Any.fromFunction4(openDatabase), requestFileSystem = requestFileSystem.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Window]
   }

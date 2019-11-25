@@ -68,21 +68,21 @@ object ResponseModel {
     `type`: TicketType = null,
     updated_at: String = null
   ): ResponseModel = {
-    val __obj = js.Dynamic.literal(collaborator_ids = collaborator_ids, created_at = created_at, description = description, email_cc_ids = email_cc_ids, id = id, is_public = is_public, requester_id = requester_id, status = status, subject = subject, url = url, via = via)
+    val __obj = js.Dynamic.literal(collaborator_ids = collaborator_ids.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], email_cc_ids = email_cc_ids.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], is_public = is_public.asInstanceOf[js.Any], requester_id = requester_id.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], via = via.asInstanceOf[js.Any])
     if (assignee_id != null) __obj.updateDynamic("assignee_id")(assignee_id.asInstanceOf[js.Any])
-    if (!js.isUndefined(can_be_solved_by_me)) __obj.updateDynamic("can_be_solved_by_me")(can_be_solved_by_me)
-    if (custom_fields != null) __obj.updateDynamic("custom_fields")(custom_fields)
-    if (due_at != null) __obj.updateDynamic("due_at")(due_at)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (followup_source_id != null) __obj.updateDynamic("followup_source_id")(followup_source_id)
+    if (!js.isUndefined(can_be_solved_by_me)) __obj.updateDynamic("can_be_solved_by_me")(can_be_solved_by_me.asInstanceOf[js.Any])
+    if (custom_fields != null) __obj.updateDynamic("custom_fields")(custom_fields.asInstanceOf[js.Any])
+    if (due_at != null) __obj.updateDynamic("due_at")(due_at.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (followup_source_id != null) __obj.updateDynamic("followup_source_id")(followup_source_id.asInstanceOf[js.Any])
     if (group_id != null) __obj.updateDynamic("group_id")(group_id.asInstanceOf[js.Any])
     if (organization_id != null) __obj.updateDynamic("organization_id")(organization_id.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority)
-    if (recipient != null) __obj.updateDynamic("recipient")(recipient)
-    if (!js.isUndefined(solved)) __obj.updateDynamic("solved")(solved)
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (recipient != null) __obj.updateDynamic("recipient")(recipient.asInstanceOf[js.Any])
+    if (!js.isUndefined(solved)) __obj.updateDynamic("solved")(solved.asInstanceOf[js.Any])
     if (ticket_form_id != null) __obj.updateDynamic("ticket_form_id")(ticket_form_id.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseModel]
   }
 }

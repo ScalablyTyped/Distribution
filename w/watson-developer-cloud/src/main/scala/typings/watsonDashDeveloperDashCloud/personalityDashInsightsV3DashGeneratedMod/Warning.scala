@@ -15,7 +15,7 @@ trait Warning extends js.Object {
 object Warning {
   @scala.inline
   def apply(message: String, warning_id: String): Warning = {
-    val __obj = js.Dynamic.literal(message = message, warning_id = warning_id)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], warning_id = warning_id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Warning]
   }

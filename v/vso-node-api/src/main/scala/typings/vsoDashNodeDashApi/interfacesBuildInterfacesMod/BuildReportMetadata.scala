@@ -22,8 +22,8 @@ trait BuildReportMetadata extends js.Object {
 object BuildReportMetadata {
   @scala.inline
   def apply(buildId: Double, content: String, `type`: String): BuildReportMetadata = {
-    val __obj = js.Dynamic.literal(buildId = buildId, content = content)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(buildId = buildId.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildReportMetadata]
   }
 }

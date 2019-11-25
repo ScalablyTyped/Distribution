@@ -11,7 +11,7 @@ trait SGDOptimizerConfig extends js.Object {
 object SGDOptimizerConfig {
   @scala.inline
   def apply(learning_rate: Double): SGDOptimizerConfig = {
-    val __obj = js.Dynamic.literal(learning_rate = learning_rate)
+    val __obj = js.Dynamic.literal(learning_rate = learning_rate.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SGDOptimizerConfig]
   }

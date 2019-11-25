@@ -16,7 +16,7 @@ trait Anon_Codomain[T] extends js.Object {
 object Anon_Codomain {
   @scala.inline
   def apply[T](codomain: T, domain: Constructor[String], identity: Boolean, kind: String, name: String): Anon_Codomain[T] = {
-    val __obj = js.Dynamic.literal(codomain = codomain.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], identity = identity, kind = kind, name = name)
+    val __obj = js.Dynamic.literal(codomain = codomain.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], identity = identity.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Codomain[T]]
   }

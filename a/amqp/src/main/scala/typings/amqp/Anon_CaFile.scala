@@ -21,11 +21,11 @@ object Anon_CaFile {
     keyFile: String = null,
     rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
   ): Anon_CaFile = {
-    val __obj = js.Dynamic.literal(enabled = enabled)
-    if (caFile != null) __obj.updateDynamic("caFile")(caFile)
-    if (certFile != null) __obj.updateDynamic("certFile")(certFile)
-    if (keyFile != null) __obj.updateDynamic("keyFile")(keyFile)
-    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized)
+    val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
+    if (caFile != null) __obj.updateDynamic("caFile")(caFile.asInstanceOf[js.Any])
+    if (certFile != null) __obj.updateDynamic("certFile")(certFile.asInstanceOf[js.Any])
+    if (keyFile != null) __obj.updateDynamic("keyFile")(keyFile.asInstanceOf[js.Any])
+    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CaFile]
   }
 }

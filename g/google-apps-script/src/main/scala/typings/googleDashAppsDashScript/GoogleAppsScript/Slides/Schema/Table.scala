@@ -27,11 +27,11 @@ object Table {
   ): Table = {
     val __obj = js.Dynamic.literal()
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (horizontalBorderRows != null) __obj.updateDynamic("horizontalBorderRows")(horizontalBorderRows)
+    if (horizontalBorderRows != null) __obj.updateDynamic("horizontalBorderRows")(horizontalBorderRows.asInstanceOf[js.Any])
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
-    if (tableColumns != null) __obj.updateDynamic("tableColumns")(tableColumns)
-    if (tableRows != null) __obj.updateDynamic("tableRows")(tableRows)
-    if (verticalBorderRows != null) __obj.updateDynamic("verticalBorderRows")(verticalBorderRows)
+    if (tableColumns != null) __obj.updateDynamic("tableColumns")(tableColumns.asInstanceOf[js.Any])
+    if (tableRows != null) __obj.updateDynamic("tableRows")(tableRows.asInstanceOf[js.Any])
+    if (verticalBorderRows != null) __obj.updateDynamic("verticalBorderRows")(verticalBorderRows.asInstanceOf[js.Any])
     __obj.asInstanceOf[Table]
   }
 }

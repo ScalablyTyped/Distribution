@@ -27,8 +27,8 @@ object IInstallInfo {
     managers: js.Array[String],
     overrides: StringDictionary[js.UndefOr[IInstallInfoEntry]] = null
   ): IInstallInfo = {
-    val __obj = js.Dynamic.literal(base = base, managers = managers)
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides)
+    val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], managers = managers.asInstanceOf[js.Any])
+    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
     __obj.asInstanceOf[IInstallInfo]
   }
 }

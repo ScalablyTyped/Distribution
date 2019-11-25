@@ -12,7 +12,7 @@ trait Anon_AddressInputs extends js.Object {
 object Anon_AddressInputs {
   @scala.inline
   def apply(address: String, inputs: js.Array[String]): Anon_AddressInputs = {
-    val __obj = js.Dynamic.literal(address = address, inputs = inputs)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AddressInputs]
   }

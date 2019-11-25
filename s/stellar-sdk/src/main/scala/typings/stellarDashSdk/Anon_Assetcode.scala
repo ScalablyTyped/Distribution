@@ -13,7 +13,7 @@ trait Anon_Assetcode extends js.Object {
 object Anon_Assetcode {
   @scala.inline
   def apply(asset_code: String, asset_issuer: String, asset_type: String): Anon_Assetcode = {
-    val __obj = js.Dynamic.literal(asset_code = asset_code, asset_issuer = asset_issuer, asset_type = asset_type)
+    val __obj = js.Dynamic.literal(asset_code = asset_code.asInstanceOf[js.Any], asset_issuer = asset_issuer.asInstanceOf[js.Any], asset_type = asset_type.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Assetcode]
   }

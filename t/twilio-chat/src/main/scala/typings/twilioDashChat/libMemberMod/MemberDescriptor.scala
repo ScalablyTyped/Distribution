@@ -30,10 +30,10 @@ object MemberDescriptor {
     roleSid: String = null,
     `type`: Type = null
   ): MemberDescriptor = {
-    val __obj = js.Dynamic.literal(dateCreated = dateCreated, dateUpdated = dateUpdated, identity = identity, lastConsumedMessageIndex = lastConsumedMessageIndex, lastConsumptionTimestamp = lastConsumptionTimestamp, userInfo = userInfo)
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
-    if (roleSid != null) __obj.updateDynamic("roleSid")(roleSid)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(dateCreated = dateCreated.asInstanceOf[js.Any], dateUpdated = dateUpdated.asInstanceOf[js.Any], identity = identity.asInstanceOf[js.Any], lastConsumedMessageIndex = lastConsumedMessageIndex.asInstanceOf[js.Any], lastConsumptionTimestamp = lastConsumptionTimestamp.asInstanceOf[js.Any], userInfo = userInfo.asInstanceOf[js.Any])
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (roleSid != null) __obj.updateDynamic("roleSid")(roleSid.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MemberDescriptor]
   }
 }

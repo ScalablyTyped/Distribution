@@ -13,8 +13,8 @@ trait LanguageAriaSettings extends js.Object {
 object LanguageAriaSettings {
   @scala.inline
   def apply(sortAscending: String, sortDescending: String, paginate: LanguagePaginateSettings = null): LanguageAriaSettings = {
-    val __obj = js.Dynamic.literal(sortAscending = sortAscending, sortDescending = sortDescending)
-    if (paginate != null) __obj.updateDynamic("paginate")(paginate)
+    val __obj = js.Dynamic.literal(sortAscending = sortAscending.asInstanceOf[js.Any], sortDescending = sortDescending.asInstanceOf[js.Any])
+    if (paginate != null) __obj.updateDynamic("paginate")(paginate.asInstanceOf[js.Any])
     __obj.asInstanceOf[LanguageAriaSettings]
   }
 }

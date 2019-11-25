@@ -15,7 +15,7 @@ trait Anon_ColumnColumnIndexRowDataRowIndex extends js.Object {
 object Anon_ColumnColumnIndexRowDataRowIndex {
   @scala.inline
   def apply(column: Column, columnIndex: Double, rowData: js.Any, rowIndex: Double): Anon_ColumnColumnIndexRowDataRowIndex = {
-    val __obj = js.Dynamic.literal(column = column, columnIndex = columnIndex, rowData = rowData, rowIndex = rowIndex)
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], columnIndex = columnIndex.asInstanceOf[js.Any], rowData = rowData.asInstanceOf[js.Any], rowIndex = rowIndex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ColumnColumnIndexRowDataRowIndex]
   }

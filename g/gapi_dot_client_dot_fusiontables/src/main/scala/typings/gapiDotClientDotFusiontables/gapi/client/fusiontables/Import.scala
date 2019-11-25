@@ -15,8 +15,8 @@ object Import {
   @scala.inline
   def apply(kind: String = null, numRowsReceived: String = null): Import = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (numRowsReceived != null) __obj.updateDynamic("numRowsReceived")(numRowsReceived)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (numRowsReceived != null) __obj.updateDynamic("numRowsReceived")(numRowsReceived.asInstanceOf[js.Any])
     __obj.asInstanceOf[Import]
   }
 }

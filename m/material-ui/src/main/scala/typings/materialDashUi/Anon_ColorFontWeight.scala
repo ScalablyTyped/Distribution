@@ -26,13 +26,13 @@ object Anon_ColorFontWeight {
     textColor: String = null
   ): Anon_ColorFontWeight = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
-    if (primaryColor != null) __obj.updateDynamic("primaryColor")(primaryColor)
-    if (primaryTextColor != null) __obj.updateDynamic("primaryTextColor")(primaryTextColor)
-    if (secondaryColor != null) __obj.updateDynamic("secondaryColor")(secondaryColor)
-    if (secondaryTextColor != null) __obj.updateDynamic("secondaryTextColor")(secondaryTextColor)
-    if (textColor != null) __obj.updateDynamic("textColor")(textColor)
+    if (primaryColor != null) __obj.updateDynamic("primaryColor")(primaryColor.asInstanceOf[js.Any])
+    if (primaryTextColor != null) __obj.updateDynamic("primaryTextColor")(primaryTextColor.asInstanceOf[js.Any])
+    if (secondaryColor != null) __obj.updateDynamic("secondaryColor")(secondaryColor.asInstanceOf[js.Any])
+    if (secondaryTextColor != null) __obj.updateDynamic("secondaryTextColor")(secondaryTextColor.asInstanceOf[js.Any])
+    if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ColorFontWeight]
   }
 }

@@ -14,7 +14,7 @@ trait ReleaseDefinitionDeployStep extends ReleaseDefinitionEnvironmentStep {
 object ReleaseDefinitionDeployStep {
   @scala.inline
   def apply(id: Double, tasks: js.Array[WorkflowTask]): ReleaseDefinitionDeployStep = {
-    val __obj = js.Dynamic.literal(id = id, tasks = tasks)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], tasks = tasks.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReleaseDefinitionDeployStep]
   }

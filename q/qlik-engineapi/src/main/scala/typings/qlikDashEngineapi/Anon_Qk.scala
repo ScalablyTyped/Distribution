@@ -14,7 +14,7 @@ trait Anon_Qk extends js.Object {
 object Anon_Qk {
   @scala.inline
   def apply(qk: js.Array[ISourceKeyRecord], qtr: js.Array[ITableRecord]): Anon_Qk = {
-    val __obj = js.Dynamic.literal(qk = qk, qtr = qtr)
+    val __obj = js.Dynamic.literal(qk = qk.asInstanceOf[js.Any], qtr = qtr.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Qk]
   }

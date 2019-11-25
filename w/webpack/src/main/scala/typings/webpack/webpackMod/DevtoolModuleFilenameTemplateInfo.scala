@@ -29,7 +29,7 @@ object DevtoolModuleFilenameTemplateInfo {
     resourcePath: String,
     shortIdentifier: String
   ): DevtoolModuleFilenameTemplateInfo = {
-    val __obj = js.Dynamic.literal(absoluteResourcePath = absoluteResourcePath, allLoaders = allLoaders, hash = hash, identifier = identifier, moduleId = moduleId, query = query, resource = resource, resourcePath = resourcePath, shortIdentifier = shortIdentifier)
+    val __obj = js.Dynamic.literal(absoluteResourcePath = absoluteResourcePath.asInstanceOf[js.Any], allLoaders = allLoaders.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], identifier = identifier.asInstanceOf[js.Any], moduleId = moduleId.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], resourcePath = resourcePath.asInstanceOf[js.Any], shortIdentifier = shortIdentifier.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DevtoolModuleFilenameTemplateInfo]
   }

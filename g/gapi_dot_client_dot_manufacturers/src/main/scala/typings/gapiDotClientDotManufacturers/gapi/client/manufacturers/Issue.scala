@@ -34,11 +34,11 @@ object Issue {
     `type`: String = null
   ): Issue = {
     val __obj = js.Dynamic.literal()
-    if (attribute != null) __obj.updateDynamic("attribute")(attribute)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (severity != null) __obj.updateDynamic("severity")(severity)
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (attribute != null) __obj.updateDynamic("attribute")(attribute.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (severity != null) __obj.updateDynamic("severity")(severity.asInstanceOf[js.Any])
+    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Issue]
   }
 }

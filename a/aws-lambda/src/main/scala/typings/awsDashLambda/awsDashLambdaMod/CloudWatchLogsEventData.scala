@@ -11,7 +11,7 @@ trait CloudWatchLogsEventData extends js.Object {
 object CloudWatchLogsEventData {
   @scala.inline
   def apply(data: String): CloudWatchLogsEventData = {
-    val __obj = js.Dynamic.literal(data = data)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CloudWatchLogsEventData]
   }

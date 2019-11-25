@@ -25,8 +25,8 @@ object MerchantAccountCreateRequest {
     tosAccepted: Boolean,
     business: MerchantBusiness = null
   ): MerchantAccountCreateRequest = {
-    val __obj = js.Dynamic.literal(funding = funding, id = id, individual = individual, masterMerchantAccountId = masterMerchantAccountId, status = status, tosAccepted = tosAccepted)
-    if (business != null) __obj.updateDynamic("business")(business)
+    val __obj = js.Dynamic.literal(funding = funding.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], individual = individual.asInstanceOf[js.Any], masterMerchantAccountId = masterMerchantAccountId.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], tosAccepted = tosAccepted.asInstanceOf[js.Any])
+    if (business != null) __obj.updateDynamic("business")(business.asInstanceOf[js.Any])
     __obj.asInstanceOf[MerchantAccountCreateRequest]
   }
 }

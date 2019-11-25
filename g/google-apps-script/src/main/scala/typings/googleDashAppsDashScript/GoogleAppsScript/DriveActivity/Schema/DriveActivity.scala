@@ -24,12 +24,12 @@ object DriveActivity {
     timestamp: String = null
   ): DriveActivity = {
     val __obj = js.Dynamic.literal()
-    if (actions != null) __obj.updateDynamic("actions")(actions)
-    if (actors != null) __obj.updateDynamic("actors")(actors)
-    if (primaryActionDetail != null) __obj.updateDynamic("primaryActionDetail")(primaryActionDetail)
-    if (targets != null) __obj.updateDynamic("targets")(targets)
-    if (timeRange != null) __obj.updateDynamic("timeRange")(timeRange)
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp)
+    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
+    if (actors != null) __obj.updateDynamic("actors")(actors.asInstanceOf[js.Any])
+    if (primaryActionDetail != null) __obj.updateDynamic("primaryActionDetail")(primaryActionDetail.asInstanceOf[js.Any])
+    if (targets != null) __obj.updateDynamic("targets")(targets.asInstanceOf[js.Any])
+    if (timeRange != null) __obj.updateDynamic("timeRange")(timeRange.asInstanceOf[js.Any])
+    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[DriveActivity]
   }
 }

@@ -61,30 +61,28 @@ object ICopyCellsMenuItemProps {
     tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any = null,
     target: String = null,
     text: ReactNode = null,
-    textClassName: String = null,
-    text_IMenuItemProps: ReactNode = null
+    textClassName: String = null
   ): ICopyCellsMenuItemProps = {
-    val __obj = js.Dynamic.literal(context = context, getCellData = js.Any.fromFunction2(getCellData))
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], getCellData = js.Any.fromFunction2(getCellData))
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (href != null) __obj.updateDynamic("href")(href)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (intent != null) __obj.updateDynamic("intent")(intent)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (labelClassName != null) __obj.updateDynamic("labelClassName")(labelClassName)
+    if (intent != null) __obj.updateDynamic("intent")(intent.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (labelClassName != null) __obj.updateDynamic("labelClassName")(labelClassName.asInstanceOf[js.Any])
     if (labelElement != null) __obj.updateDynamic("labelElement")(labelElement.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiline)) __obj.updateDynamic("multiline")(multiline)
+    if (!js.isUndefined(multiline)) __obj.updateDynamic("multiline")(multiline.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (onCopy != null) __obj.updateDynamic("onCopy")(js.Any.fromFunction1(onCopy))
-    if (popoverProps != null) __obj.updateDynamic("popoverProps")(popoverProps)
-    if (!js.isUndefined(shouldDismissPopover)) __obj.updateDynamic("shouldDismissPopover")(shouldDismissPopover)
-    if (tagName != null) __obj.updateDynamic("tagName")(tagName)
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (popoverProps != null) __obj.updateDynamic("popoverProps")(popoverProps.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldDismissPopover)) __obj.updateDynamic("shouldDismissPopover")(shouldDismissPopover.asInstanceOf[js.Any])
+    if (tagName != null) __obj.updateDynamic("tagName")(tagName.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (textClassName != null) __obj.updateDynamic("textClassName")(textClassName)
-    if (text_IMenuItemProps != null) __obj.updateDynamic("text")(text_IMenuItemProps.asInstanceOf[js.Any])
+    if (textClassName != null) __obj.updateDynamic("textClassName")(textClassName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICopyCellsMenuItemProps]
   }
 }

@@ -18,8 +18,8 @@ object GooglePrivacyDlpV2beta1DeidentificationSummary {
     transformedBytes: String = null
   ): GooglePrivacyDlpV2beta1DeidentificationSummary = {
     val __obj = js.Dynamic.literal()
-    if (transformationSummaries != null) __obj.updateDynamic("transformationSummaries")(transformationSummaries)
-    if (transformedBytes != null) __obj.updateDynamic("transformedBytes")(transformedBytes)
+    if (transformationSummaries != null) __obj.updateDynamic("transformationSummaries")(transformationSummaries.asInstanceOf[js.Any])
+    if (transformedBytes != null) __obj.updateDynamic("transformedBytes")(transformedBytes.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1DeidentificationSummary]
   }
 }

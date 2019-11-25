@@ -14,9 +14,9 @@ object OperationMessage {
   @scala.inline
   def apply(`type`: String, id: String = null, payload: OperationMessagePayload = null): OperationMessage = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (payload != null) __obj.updateDynamic("payload")(payload)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
     __obj.asInstanceOf[OperationMessage]
   }
 }

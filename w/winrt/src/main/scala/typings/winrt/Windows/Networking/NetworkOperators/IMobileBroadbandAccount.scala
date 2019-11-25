@@ -21,7 +21,7 @@ object IMobileBroadbandAccount {
     serviceProviderGuid: String,
     serviceProviderName: String
   ): IMobileBroadbandAccount = {
-    val __obj = js.Dynamic.literal(currentDeviceInformation = currentDeviceInformation, currentNetwork = currentNetwork, networkAccountId = networkAccountId, serviceProviderGuid = serviceProviderGuid, serviceProviderName = serviceProviderName)
+    val __obj = js.Dynamic.literal(currentDeviceInformation = currentDeviceInformation.asInstanceOf[js.Any], currentNetwork = currentNetwork.asInstanceOf[js.Any], networkAccountId = networkAccountId.asInstanceOf[js.Any], serviceProviderGuid = serviceProviderGuid.asInstanceOf[js.Any], serviceProviderName = serviceProviderName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IMobileBroadbandAccount]
   }

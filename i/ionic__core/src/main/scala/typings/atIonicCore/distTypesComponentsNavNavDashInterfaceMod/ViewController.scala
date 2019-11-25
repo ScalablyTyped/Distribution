@@ -1,6 +1,5 @@
 package typings.atIonicCore.distTypesComponentsNavNavDashInterfaceMod
 
-import typings.atIonicCore.distTypesInterfaceMod.ComponentProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,6 +9,9 @@ import scala.scalajs.js.annotation._
 class ViewController protected ()
   extends typings.atIonicCore.distTypesComponentsNavViewDashControllerMod.ViewController {
   def this(component: js.Any) = this()
-  def this(component: js.Any, params: ComponentProps[Null]) = this()
+  def this(
+    component: js.Any,
+    params: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentProps */ js.Any
+  ) = this()
 }
 

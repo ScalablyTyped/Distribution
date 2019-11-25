@@ -24,9 +24,9 @@ trait SourceControlResourceState extends js.Object {
 object SourceControlResourceState {
   @scala.inline
   def apply(resourceUri: Uri, command: Command = null, decorations: SourceControlResourceDecorations = null): SourceControlResourceState = {
-    val __obj = js.Dynamic.literal(resourceUri = resourceUri)
-    if (command != null) __obj.updateDynamic("command")(command)
-    if (decorations != null) __obj.updateDynamic("decorations")(decorations)
+    val __obj = js.Dynamic.literal(resourceUri = resourceUri.asInstanceOf[js.Any])
+    if (command != null) __obj.updateDynamic("command")(command.asInstanceOf[js.Any])
+    if (decorations != null) __obj.updateDynamic("decorations")(decorations.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceControlResourceState]
   }
 }

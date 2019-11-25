@@ -18,7 +18,7 @@ trait ItemContext extends js.Object {
 object ItemContext {
   @scala.inline
   def apply(borderColor: String, color: String, date: Date, high: Double, low: Double, value: Double): ItemContext = {
-    val __obj = js.Dynamic.literal(borderColor = borderColor, color = color, date = date, high = high, low = low, value = value)
+    val __obj = js.Dynamic.literal(borderColor = borderColor.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], high = high.asInstanceOf[js.Any], low = low.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ItemContext]
   }

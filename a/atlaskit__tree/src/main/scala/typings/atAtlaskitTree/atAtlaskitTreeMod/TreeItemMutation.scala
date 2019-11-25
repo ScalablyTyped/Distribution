@@ -24,12 +24,12 @@ object TreeItemMutation {
     isExpanded: js.UndefOr[Boolean] = js.undefined
   ): TreeItemMutation = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (!js.isUndefined(hasChildren)) __obj.updateDynamic("hasChildren")(hasChildren)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(isChildrenLoading)) __obj.updateDynamic("isChildrenLoading")(isChildrenLoading)
-    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasChildren)) __obj.updateDynamic("hasChildren")(hasChildren.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(isChildrenLoading)) __obj.updateDynamic("isChildrenLoading")(isChildrenLoading.asInstanceOf[js.Any])
+    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeItemMutation]
   }
 }

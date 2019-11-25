@@ -12,7 +12,7 @@ trait CustomGestureProps extends js.Object {
 object CustomGestureProps {
   @scala.inline
   def apply(config: js.Array[moves], onGesture: () => Unit): CustomGestureProps = {
-    val __obj = js.Dynamic.literal(config = config, onGesture = js.Any.fromFunction0(onGesture))
+    val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], onGesture = js.Any.fromFunction0(onGesture))
   
     __obj.asInstanceOf[CustomGestureProps]
   }

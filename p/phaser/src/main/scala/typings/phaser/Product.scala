@@ -42,12 +42,12 @@ object Product {
     title: String = null
   ): Product = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (imageURI != null) __obj.updateDynamic("imageURI")(imageURI)
-    if (price != null) __obj.updateDynamic("price")(price)
-    if (priceCurrencyCode != null) __obj.updateDynamic("priceCurrencyCode")(priceCurrencyCode)
-    if (productID != null) __obj.updateDynamic("productID")(productID)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (imageURI != null) __obj.updateDynamic("imageURI")(imageURI.asInstanceOf[js.Any])
+    if (price != null) __obj.updateDynamic("price")(price.asInstanceOf[js.Any])
+    if (priceCurrencyCode != null) __obj.updateDynamic("priceCurrencyCode")(priceCurrencyCode.asInstanceOf[js.Any])
+    if (productID != null) __obj.updateDynamic("productID")(productID.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Product]
   }
 }

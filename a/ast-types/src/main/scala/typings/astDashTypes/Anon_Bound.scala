@@ -27,10 +27,10 @@ object Anon_Bound {
     loc: SourceLocationKind = null,
     variance: VarianceKind | plus | minus = null
   ): Anon_Bound = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (bound != null) __obj.updateDynamic("bound")(bound)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (bound != null) __obj.updateDynamic("bound")(bound.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (variance != null) __obj.updateDynamic("variance")(variance.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Bound]
   }

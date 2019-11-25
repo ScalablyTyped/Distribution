@@ -34,14 +34,14 @@ object SubscribedSku {
     skuPartNumber: String = null
   ): SubscribedSku = {
     val __obj = js.Dynamic.literal()
-    if (appliesTo != null) __obj.updateDynamic("appliesTo")(appliesTo)
-    if (capabilityStatus != null) __obj.updateDynamic("capabilityStatus")(capabilityStatus)
+    if (appliesTo != null) __obj.updateDynamic("appliesTo")(appliesTo.asInstanceOf[js.Any])
+    if (capabilityStatus != null) __obj.updateDynamic("capabilityStatus")(capabilityStatus.asInstanceOf[js.Any])
     if (consumedUnits != null) __obj.updateDynamic("consumedUnits")(consumedUnits.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (prepaidUnits != null) __obj.updateDynamic("prepaidUnits")(prepaidUnits)
-    if (servicePlans != null) __obj.updateDynamic("servicePlans")(servicePlans)
-    if (skuId != null) __obj.updateDynamic("skuId")(skuId)
-    if (skuPartNumber != null) __obj.updateDynamic("skuPartNumber")(skuPartNumber)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (prepaidUnits != null) __obj.updateDynamic("prepaidUnits")(prepaidUnits.asInstanceOf[js.Any])
+    if (servicePlans != null) __obj.updateDynamic("servicePlans")(servicePlans.asInstanceOf[js.Any])
+    if (skuId != null) __obj.updateDynamic("skuId")(skuId.asInstanceOf[js.Any])
+    if (skuPartNumber != null) __obj.updateDynamic("skuPartNumber")(skuPartNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscribedSku]
   }
 }

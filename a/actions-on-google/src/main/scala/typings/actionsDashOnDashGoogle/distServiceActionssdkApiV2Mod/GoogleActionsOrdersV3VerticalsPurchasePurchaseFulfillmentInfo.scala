@@ -73,17 +73,17 @@ object GoogleActionsOrdersV3VerticalsPurchasePurchaseFulfillmentInfo {
     storeCode: String = null
   ): GoogleActionsOrdersV3VerticalsPurchasePurchaseFulfillmentInfo = {
     val __obj = js.Dynamic.literal()
-    if (expectedFulfillmentTime != null) __obj.updateDynamic("expectedFulfillmentTime")(expectedFulfillmentTime)
-    if (expectedPreparationTime != null) __obj.updateDynamic("expectedPreparationTime")(expectedPreparationTime)
-    if (expireTime != null) __obj.updateDynamic("expireTime")(expireTime)
-    if (fulfillmentContact != null) __obj.updateDynamic("fulfillmentContact")(fulfillmentContact)
-    if (fulfillmentType != null) __obj.updateDynamic("fulfillmentType")(fulfillmentType)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (pickupInfo != null) __obj.updateDynamic("pickupInfo")(pickupInfo)
-    if (price != null) __obj.updateDynamic("price")(price)
-    if (shippingMethodName != null) __obj.updateDynamic("shippingMethodName")(shippingMethodName)
-    if (storeCode != null) __obj.updateDynamic("storeCode")(storeCode)
+    if (expectedFulfillmentTime != null) __obj.updateDynamic("expectedFulfillmentTime")(expectedFulfillmentTime.asInstanceOf[js.Any])
+    if (expectedPreparationTime != null) __obj.updateDynamic("expectedPreparationTime")(expectedPreparationTime.asInstanceOf[js.Any])
+    if (expireTime != null) __obj.updateDynamic("expireTime")(expireTime.asInstanceOf[js.Any])
+    if (fulfillmentContact != null) __obj.updateDynamic("fulfillmentContact")(fulfillmentContact.asInstanceOf[js.Any])
+    if (fulfillmentType != null) __obj.updateDynamic("fulfillmentType")(fulfillmentType.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (pickupInfo != null) __obj.updateDynamic("pickupInfo")(pickupInfo.asInstanceOf[js.Any])
+    if (price != null) __obj.updateDynamic("price")(price.asInstanceOf[js.Any])
+    if (shippingMethodName != null) __obj.updateDynamic("shippingMethodName")(shippingMethodName.asInstanceOf[js.Any])
+    if (storeCode != null) __obj.updateDynamic("storeCode")(storeCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsOrdersV3VerticalsPurchasePurchaseFulfillmentInfo]
   }
 }

@@ -25,12 +25,12 @@ object Spec {
     rules: js.Array[Rule] = null
   ): Spec = {
     val __obj = js.Dynamic.literal()
-    if (axeVersion != null) __obj.updateDynamic("axeVersion")(axeVersion)
-    if (branding != null) __obj.updateDynamic("branding")(branding)
-    if (checks != null) __obj.updateDynamic("checks")(checks)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (reporter != null) __obj.updateDynamic("reporter")(reporter)
-    if (rules != null) __obj.updateDynamic("rules")(rules)
+    if (axeVersion != null) __obj.updateDynamic("axeVersion")(axeVersion.asInstanceOf[js.Any])
+    if (branding != null) __obj.updateDynamic("branding")(branding.asInstanceOf[js.Any])
+    if (checks != null) __obj.updateDynamic("checks")(checks.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
+    if (reporter != null) __obj.updateDynamic("reporter")(reporter.asInstanceOf[js.Any])
+    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[Spec]
   }
 }

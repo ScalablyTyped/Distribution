@@ -12,7 +12,7 @@ trait TransitStop extends js.Object {
 object TransitStop {
   @scala.inline
   def apply(location: LatLng, name: String): TransitStop = {
-    val __obj = js.Dynamic.literal(location = location, name = name)
+    val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TransitStop]
   }

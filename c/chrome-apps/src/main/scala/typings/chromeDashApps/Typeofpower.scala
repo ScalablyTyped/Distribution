@@ -23,11 +23,11 @@ trait Typeofpower extends js.Object {
     */
   def requestKeepAwake(
     level: ToStringLiteral[
-      /* import warning: ImportType.apply Failed type conversion: typeof Level */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: typeof Level */ js.Any, 
       String, 
       Exclude[
         String, 
-        /* import warning: ImportType.apply Failed type conversion: typeof Level[keyof typeof Level] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: typeof Level[keyof typeof Level] */ js.Any
       ]
     ]
   ): Unit
@@ -39,15 +39,15 @@ object Typeofpower {
     Level: Anon_DISPLAY,
     releaseKeepAwake: () => Unit,
     requestKeepAwake: ToStringLiteral[
-      /* import warning: ImportType.apply Failed type conversion: typeof Level */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: typeof Level */ js.Any, 
       String, 
       Exclude[
         String, 
-        /* import warning: ImportType.apply Failed type conversion: typeof Level[keyof typeof Level] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: typeof Level[keyof typeof Level] */ js.Any
       ]
     ] => Unit
   ): Typeofpower = {
-    val __obj = js.Dynamic.literal(Level = Level, releaseKeepAwake = js.Any.fromFunction0(releaseKeepAwake), requestKeepAwake = js.Any.fromFunction1(requestKeepAwake))
+    val __obj = js.Dynamic.literal(Level = Level.asInstanceOf[js.Any], releaseKeepAwake = js.Any.fromFunction0(releaseKeepAwake), requestKeepAwake = js.Any.fromFunction1(requestKeepAwake))
   
     __obj.asInstanceOf[Typeofpower]
   }

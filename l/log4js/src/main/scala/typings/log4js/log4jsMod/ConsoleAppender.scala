@@ -15,8 +15,8 @@ object ConsoleAppender {
   @scala.inline
   def apply(`type`: console, layout: Layout = null): ConsoleAppender = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (layout != null) __obj.updateDynamic("layout")(layout)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConsoleAppender]
   }
 }

@@ -17,9 +17,9 @@ object BreadcrumbItemProps {
   @scala.inline
   def apply(StringDictionary: /* x */ StringDictionary[js.Any] = null, name: String = null, url: String = null): BreadcrumbItemProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[BreadcrumbItemProps]
   }
 }

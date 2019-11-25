@@ -28,7 +28,7 @@ object Anon_Args {
     theme: Requireable[js.Object],
     themeClassName: Requireable[String]
   ): Anon_Args = {
-    val __obj = js.Dynamic.literal(data = data, json = json, onJSONPrettyError = onJSONPrettyError, replacer = replacer, silent = silent, space = space, theme = theme, themeClassName = themeClassName)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], json = json.asInstanceOf[js.Any], onJSONPrettyError = onJSONPrettyError.asInstanceOf[js.Any], replacer = replacer.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], space = space.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any], themeClassName = themeClassName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Args]
   }

@@ -15,9 +15,9 @@ trait Entity extends js.Object {
 object Entity {
   @scala.inline
   def apply(baseURL: String, kind: String, name: String, key: String = null, plural: String = null): Entity = {
-    val __obj = js.Dynamic.literal(baseURL = baseURL, kind = kind, name = name)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (plural != null) __obj.updateDynamic("plural")(plural)
+    val __obj = js.Dynamic.literal(baseURL = baseURL.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (plural != null) __obj.updateDynamic("plural")(plural.asInstanceOf[js.Any])
     __obj.asInstanceOf[Entity]
   }
 }

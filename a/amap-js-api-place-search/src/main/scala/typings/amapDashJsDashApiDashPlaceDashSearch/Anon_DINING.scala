@@ -17,7 +17,7 @@ trait Anon_DINING extends js.Object {
 object Anon_DINING {
   @scala.inline
   def apply(deep_type: DINING, dining: Dining): Anon_DINING = {
-    val __obj = js.Dynamic.literal(deep_type = deep_type, dining = dining)
+    val __obj = js.Dynamic.literal(deep_type = deep_type.asInstanceOf[js.Any], dining = dining.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DINING]
   }

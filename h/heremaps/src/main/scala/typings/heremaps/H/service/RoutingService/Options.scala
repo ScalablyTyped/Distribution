@@ -20,9 +20,9 @@ object Options {
   @scala.inline
   def apply(baseUrl: Url = null, path: String = null, subDomain: String = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (subDomain != null) __obj.updateDynamic("subDomain")(subDomain)
+    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (subDomain != null) __obj.updateDynamic("subDomain")(subDomain.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

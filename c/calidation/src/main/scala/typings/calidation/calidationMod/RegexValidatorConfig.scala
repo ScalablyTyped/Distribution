@@ -16,7 +16,7 @@ object RegexValidatorConfig {
     regex: RegExp,
     validateIf: (js.Function1[/* context */ ValidatorContext, Boolean]) | Boolean = null
   ): RegexValidatorConfig = {
-    val __obj = js.Dynamic.literal(message = message, regex = regex)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], regex = regex.asInstanceOf[js.Any])
     if (validateIf != null) __obj.updateDynamic("validateIf")(validateIf.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegexValidatorConfig]
   }

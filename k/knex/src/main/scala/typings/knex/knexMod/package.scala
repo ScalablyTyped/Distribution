@@ -58,16 +58,16 @@ package object knexMod {
     QueryBuilder[TRecord, TResult]
   ]
   type LogFn = js.Function1[/* message */ String, Unit]
-  type Lookup[TRegistry /* <: js.Object */, TKey /* <: String */, TDefault] = TDefault | (/* import warning: ImportType.apply Failed type conversion: TRegistry[TKey] */ js.Any)
+  type Lookup[TRegistry /* <: js.Object */, TKey /* <: String */, TDefault] = TDefault | (/* import warning: importer.ImportType#apply Failed type conversion: TRegistry[TKey] */ js.Any)
   // Retain the association of original keys with aliased keys at type level
   // to facilitates type-safe aliasing for object syntax
   type MappedAliasType[TBase, TAliasMapping] = js.Object with typings.knex.knexStrings.MappedAliasType with js.Any
   type MaybeArray[T] = T | js.Array[T]
-  type MySqlAlterTableBuilder = TableBuilder
+  type MySqlAlterTableBuilder = AlterTableBuilder
   // Boxing is necessary to prevent distribution of conditional types:
   // https://lorefnon.tech/2019/05/02/using-boxing-to-prevent-distribution-of-conditional-types/
   type PartialOrAny[TBase, TKeys] = (SafePick[TBase, TKeys with String]) | js.Object
-  type PostgreSqlAlterTableBuilder = TableBuilder
+  type PostgreSqlAlterTableBuilder = AlterTableBuilder
   //
   // QueryBuilder
   //
@@ -87,7 +87,7 @@ package object knexMod {
     /* src */ String, 
     Ref[
       String, 
-      /* import warning: ImportType.apply c Unsupported type mapping: 
+      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in string ]: string}
     */ typings.knex.knexStrings.RefBuilder with js.Any
     ]

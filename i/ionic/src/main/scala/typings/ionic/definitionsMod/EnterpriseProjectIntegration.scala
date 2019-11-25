@@ -24,13 +24,13 @@ object EnterpriseProjectIntegration {
     root: String = null
   ): EnterpriseProjectIntegration = {
     val __obj = js.Dynamic.literal()
-    if (appId != null) __obj.updateDynamic("appId")(appId)
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (appId != null) __obj.updateDynamic("appId")(appId.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     if (keyId != null) __obj.updateDynamic("keyId")(keyId.asInstanceOf[js.Any])
-    if (orgId != null) __obj.updateDynamic("orgId")(orgId)
-    if (productKey != null) __obj.updateDynamic("productKey")(productKey)
-    if (registries != null) __obj.updateDynamic("registries")(registries)
-    if (root != null) __obj.updateDynamic("root")(root)
+    if (orgId != null) __obj.updateDynamic("orgId")(orgId.asInstanceOf[js.Any])
+    if (productKey != null) __obj.updateDynamic("productKey")(productKey.asInstanceOf[js.Any])
+    if (registries != null) __obj.updateDynamic("registries")(registries.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnterpriseProjectIntegration]
   }
 }

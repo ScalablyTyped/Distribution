@@ -22,11 +22,11 @@ object Query {
     SORT: QuerySortDirections = null
   ): Query = {
     val __obj = js.Dynamic.literal()
-    if (FILTERS != null) __obj.updateDynamic("FILTERS")(FILTERS)
+    if (FILTERS != null) __obj.updateDynamic("FILTERS")(FILTERS.asInstanceOf[js.Any])
     if (PAGENUM != null) __obj.updateDynamic("PAGENUM")(PAGENUM.asInstanceOf[js.Any])
     if (PAGESIZE != null) __obj.updateDynamic("PAGESIZE")(PAGESIZE.asInstanceOf[js.Any])
-    if (SELECTCOLUMNS != null) __obj.updateDynamic("SELECTCOLUMNS")(SELECTCOLUMNS)
-    if (SORT != null) __obj.updateDynamic("SORT")(SORT)
+    if (SELECTCOLUMNS != null) __obj.updateDynamic("SELECTCOLUMNS")(SELECTCOLUMNS.asInstanceOf[js.Any])
+    if (SORT != null) __obj.updateDynamic("SORT")(SORT.asInstanceOf[js.Any])
     __obj.asInstanceOf[Query]
   }
 }

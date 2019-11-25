@@ -1,13 +1,14 @@
 package typings.atJupyterlabDocregistry.libDefaultMod
 
-import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.CodeModelFactory
+import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.ICodeModel
+import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.IModelFactory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("@jupyterlab/docregistry/lib/default", "TextModelFactory")
 @js.native
-class TextModelFactory () extends CodeModelFactory {
+class TextModelFactory () extends IModelFactory[ICodeModel] {
   var _isDisposed: js.Any = js.native
   /**
     * Test whether the object has been disposed.

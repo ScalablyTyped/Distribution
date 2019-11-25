@@ -20,7 +20,7 @@ object Anon_K {
     yes: ReactNode = null
   ): Anon_K = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (no != null) __obj.updateDynamic("no")(no.asInstanceOf[js.Any])
     if (yes != null) __obj.updateDynamic("yes")(yes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_K]

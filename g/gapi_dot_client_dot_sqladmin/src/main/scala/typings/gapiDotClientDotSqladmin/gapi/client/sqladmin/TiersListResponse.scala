@@ -15,8 +15,8 @@ object TiersListResponse {
   @scala.inline
   def apply(items: js.Array[Tier] = null, kind: String = null): TiersListResponse = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[TiersListResponse]
   }
 }

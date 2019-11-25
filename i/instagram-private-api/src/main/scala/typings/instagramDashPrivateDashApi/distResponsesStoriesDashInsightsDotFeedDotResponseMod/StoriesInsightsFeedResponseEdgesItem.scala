@@ -12,7 +12,7 @@ trait StoriesInsightsFeedResponseEdgesItem extends js.Object {
 object StoriesInsightsFeedResponseEdgesItem {
   @scala.inline
   def apply(cursor: Null, node: StoriesInsightsFeedResponseNode): StoriesInsightsFeedResponseEdgesItem = {
-    val __obj = js.Dynamic.literal(cursor = cursor, node = node)
+    val __obj = js.Dynamic.literal(cursor = cursor.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StoriesInsightsFeedResponseEdgesItem]
   }

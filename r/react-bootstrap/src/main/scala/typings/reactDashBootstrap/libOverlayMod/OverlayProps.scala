@@ -43,8 +43,8 @@ object OverlayProps {
     target: js.Function | ReactInstance = null
   ): OverlayProps = {
     val __obj = js.Dynamic.literal()
-    if (animation != null) __obj.updateDynamic("animation")(animation)
-    if (container != null) __obj.updateDynamic("container")(container)
+    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (containerPadding != null) __obj.updateDynamic("containerPadding")(containerPadding.asInstanceOf[js.Any])
     if (onEnter != null) __obj.updateDynamic("onEnter")(js.Any.fromFunction1(onEnter))
     if (onEntered != null) __obj.updateDynamic("onEntered")(js.Any.fromFunction1(onEntered))
@@ -52,11 +52,11 @@ object OverlayProps {
     if (onExit != null) __obj.updateDynamic("onExit")(js.Any.fromFunction1(onExit))
     if (onExited != null) __obj.updateDynamic("onExited")(js.Any.fromFunction1(onExited))
     if (onExiting != null) __obj.updateDynamic("onExiting")(js.Any.fromFunction1(onExiting))
-    if (onHide != null) __obj.updateDynamic("onHide")(onHide)
-    if (placement != null) __obj.updateDynamic("placement")(placement)
-    if (!js.isUndefined(rootClose)) __obj.updateDynamic("rootClose")(rootClose)
-    if (!js.isUndefined(shouldUpdatePosition)) __obj.updateDynamic("shouldUpdatePosition")(shouldUpdatePosition)
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
+    if (onHide != null) __obj.updateDynamic("onHide")(onHide.asInstanceOf[js.Any])
+    if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
+    if (!js.isUndefined(rootClose)) __obj.updateDynamic("rootClose")(rootClose.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldUpdatePosition)) __obj.updateDynamic("shouldUpdatePosition")(shouldUpdatePosition.asInstanceOf[js.Any])
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[OverlayProps]
   }

@@ -39,8 +39,8 @@ object ShowActionSheetOptions {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
-    if (itemColor != null) __obj.updateDynamic("itemColor")(itemColor)
-    if (itemList != null) __obj.updateDynamic("itemList")(itemList)
+    if (itemColor != null) __obj.updateDynamic("itemColor")(itemColor.asInstanceOf[js.Any])
+    if (itemList != null) __obj.updateDynamic("itemList")(itemList.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[ShowActionSheetOptions]
   }

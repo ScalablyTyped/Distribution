@@ -25,8 +25,8 @@ object SpeechRecognitionAlternative {
   def apply(confidence: Int | Double = null, transcript: String = null, words: js.Array[WordInfo] = null): SpeechRecognitionAlternative = {
     val __obj = js.Dynamic.literal()
     if (confidence != null) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
-    if (transcript != null) __obj.updateDynamic("transcript")(transcript)
-    if (words != null) __obj.updateDynamic("words")(words)
+    if (transcript != null) __obj.updateDynamic("transcript")(transcript.asInstanceOf[js.Any])
+    if (words != null) __obj.updateDynamic("words")(words.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpeechRecognitionAlternative]
   }
 }

@@ -15,8 +15,8 @@ trait Anon_Center extends js.Object {
 object Anon_Center {
   @scala.inline
   def apply(center: Vector3, extent: Anon_Length, `type`: Plane): Anon_Center = {
-    val __obj = js.Dynamic.literal(center = center, extent = extent)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], extent = extent.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Center]
   }
 }

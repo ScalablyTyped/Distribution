@@ -14,7 +14,7 @@ trait Anon_Parse extends js.Object {
 object Anon_Parse {
   @scala.inline
   def apply(State: js.Any, parse: js.Any, ruler: Anon_After, tokenize: js.Any): Anon_Parse = {
-    val __obj = js.Dynamic.literal(State = State, parse = parse, ruler = ruler, tokenize = tokenize)
+    val __obj = js.Dynamic.literal(State = State.asInstanceOf[js.Any], parse = parse.asInstanceOf[js.Any], ruler = ruler.asInstanceOf[js.Any], tokenize = tokenize.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Parse]
   }

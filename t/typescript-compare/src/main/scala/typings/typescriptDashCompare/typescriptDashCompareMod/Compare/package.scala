@@ -13,13 +13,13 @@ package object Compare {
     Extends[A, B], 
     If[
       Extends[B, A], 
-      /* import warning: ImportType.apply Failed type conversion: Options['equal'] */ js.Any, 
-      /* import warning: ImportType.apply Failed type conversion: Options['broaderRight'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Options['equal'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: Options['broaderRight'] */ js.Any
     ], 
     If[
       Extends[B, A], 
-      /* import warning: ImportType.apply Failed type conversion: Options['broaderLeft'] */ js.Any, 
-      /* import warning: ImportType.apply Failed type conversion: Options['mismatch'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Options['broaderLeft'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: Options['mismatch'] */ js.Any
     ]
   ]
 }

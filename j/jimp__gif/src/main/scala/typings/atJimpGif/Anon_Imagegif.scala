@@ -12,7 +12,7 @@ object Anon_Imagegif {
   @scala.inline
   def apply(`image/gif`: js.Array[String]): Anon_Imagegif = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("image/gif")(`image/gif`)
+    __obj.updateDynamic("image/gif")(`image/gif`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Imagegif]
   }
 }

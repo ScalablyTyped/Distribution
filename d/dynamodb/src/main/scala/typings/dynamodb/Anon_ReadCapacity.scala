@@ -12,7 +12,7 @@ trait Anon_ReadCapacity extends js.Object {
 object Anon_ReadCapacity {
   @scala.inline
   def apply(readCapacity: Double, writeCapacity: Double): Anon_ReadCapacity = {
-    val __obj = js.Dynamic.literal(readCapacity = readCapacity, writeCapacity = writeCapacity)
+    val __obj = js.Dynamic.literal(readCapacity = readCapacity.asInstanceOf[js.Any], writeCapacity = writeCapacity.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ReadCapacity]
   }

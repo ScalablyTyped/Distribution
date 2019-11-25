@@ -23,10 +23,10 @@ object CustomPropertyCheckbox {
     show: Boolean | ShowFunction = null
   ): CustomPropertyCheckbox = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(defaultValue)) __obj.updateDynamic("defaultValue")(defaultValue)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (ref != null) __obj.updateDynamic("ref")(ref)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultValue)) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomPropertyCheckbox]
   }

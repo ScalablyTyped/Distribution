@@ -25,9 +25,9 @@ object Webhook {
     HttpAuth: HttpAuth = null,
     HttpHeaders: js.Array[Header] = null
   ): Webhook = {
-    val __obj = js.Dynamic.literal(ID = ID, MessageStream = MessageStream, Triggers = Triggers, Url = Url)
-    if (HttpAuth != null) __obj.updateDynamic("HttpAuth")(HttpAuth)
-    if (HttpHeaders != null) __obj.updateDynamic("HttpHeaders")(HttpHeaders)
+    val __obj = js.Dynamic.literal(ID = ID.asInstanceOf[js.Any], MessageStream = MessageStream.asInstanceOf[js.Any], Triggers = Triggers.asInstanceOf[js.Any], Url = Url.asInstanceOf[js.Any])
+    if (HttpAuth != null) __obj.updateDynamic("HttpAuth")(HttpAuth.asInstanceOf[js.Any])
+    if (HttpHeaders != null) __obj.updateDynamic("HttpHeaders")(HttpHeaders.asInstanceOf[js.Any])
     __obj.asInstanceOf[Webhook]
   }
 }

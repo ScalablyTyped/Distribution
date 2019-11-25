@@ -24,7 +24,7 @@ object GetSavedFileInfoSuccess {
   def apply(createTime: Int | Double = null, errMsg: String = null, size: Int | Double = null): GetSavedFileInfoSuccess = {
     val __obj = js.Dynamic.literal()
     if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (errMsg != null) __obj.updateDynamic("errMsg")(errMsg)
+    if (errMsg != null) __obj.updateDynamic("errMsg")(errMsg.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSavedFileInfoSuccess]
   }

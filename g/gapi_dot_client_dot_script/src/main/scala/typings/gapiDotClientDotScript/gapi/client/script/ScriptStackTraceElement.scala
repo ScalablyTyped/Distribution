@@ -15,7 +15,7 @@ object ScriptStackTraceElement {
   @scala.inline
   def apply(function: String = null, lineNumber: Int | Double = null): ScriptStackTraceElement = {
     val __obj = js.Dynamic.literal()
-    if (function != null) __obj.updateDynamic("function")(function)
+    if (function != null) __obj.updateDynamic("function")(function.asInstanceOf[js.Any])
     if (lineNumber != null) __obj.updateDynamic("lineNumber")(lineNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScriptStackTraceElement]
   }

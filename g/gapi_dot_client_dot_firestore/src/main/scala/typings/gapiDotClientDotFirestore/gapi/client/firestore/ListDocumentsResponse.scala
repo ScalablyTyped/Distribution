@@ -15,8 +15,8 @@ object ListDocumentsResponse {
   @scala.inline
   def apply(documents: js.Array[Document] = null, nextPageToken: String = null): ListDocumentsResponse = {
     val __obj = js.Dynamic.literal()
-    if (documents != null) __obj.updateDynamic("documents")(documents)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (documents != null) __obj.updateDynamic("documents")(documents.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDocumentsResponse]
   }
 }

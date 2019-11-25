@@ -33,12 +33,12 @@ object CertifiedDevice {
     hardwareMute: js.UndefOr[Boolean] = js.undefined,
     noiseSuppression: js.UndefOr[Boolean] = js.undefined
   ): CertifiedDevice = {
-    val __obj = js.Dynamic.literal(model = model, related = related, uuid = uuid, vendor = vendor)
+    val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any], related = related.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any], vendor = vendor.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(automaticGainControl)) __obj.updateDynamic("automaticGainControl")(automaticGainControl)
-    if (!js.isUndefined(echoCancellation)) __obj.updateDynamic("echoCancellation")(echoCancellation)
-    if (!js.isUndefined(hardwareMute)) __obj.updateDynamic("hardwareMute")(hardwareMute)
-    if (!js.isUndefined(noiseSuppression)) __obj.updateDynamic("noiseSuppression")(noiseSuppression)
+    if (!js.isUndefined(automaticGainControl)) __obj.updateDynamic("automaticGainControl")(automaticGainControl.asInstanceOf[js.Any])
+    if (!js.isUndefined(echoCancellation)) __obj.updateDynamic("echoCancellation")(echoCancellation.asInstanceOf[js.Any])
+    if (!js.isUndefined(hardwareMute)) __obj.updateDynamic("hardwareMute")(hardwareMute.asInstanceOf[js.Any])
+    if (!js.isUndefined(noiseSuppression)) __obj.updateDynamic("noiseSuppression")(noiseSuppression.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertifiedDevice]
   }
 }

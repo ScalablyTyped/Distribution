@@ -31,9 +31,9 @@ object Options {
     tree: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
-    if (!js.isUndefined(ignoreCase)) __obj.updateDynamic("ignoreCase")(ignoreCase)
-    if (!js.isUndefined(tree)) __obj.updateDynamic("tree")(tree)
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreCase)) __obj.updateDynamic("ignoreCase")(ignoreCase.asInstanceOf[js.Any])
+    if (!js.isUndefined(tree)) __obj.updateDynamic("tree")(tree.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

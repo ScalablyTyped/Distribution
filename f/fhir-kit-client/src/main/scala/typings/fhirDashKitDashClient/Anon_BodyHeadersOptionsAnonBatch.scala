@@ -16,8 +16,8 @@ trait Anon_BodyHeadersOptionsAnonBatch extends js.Object {
 object Anon_BodyHeadersOptionsAnonBatch {
   @scala.inline
   def apply(body: Bundle with Anon_Batch, headers: Headers = null, options: Options = null): Anon_BodyHeadersOptionsAnonBatch = {
-    val __obj = js.Dynamic.literal(body = body)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BodyHeadersOptionsAnonBatch]
   }

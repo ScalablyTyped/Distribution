@@ -21,7 +21,7 @@ trait PutFunctionConcurrencyOutput extends OutputTypesUnion {
 object PutFunctionConcurrencyOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, ReservedConcurrentExecutions: Int | Double = null): PutFunctionConcurrencyOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     if (ReservedConcurrentExecutions != null) __obj.updateDynamic("ReservedConcurrentExecutions")(ReservedConcurrentExecutions.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutFunctionConcurrencyOutput]
   }

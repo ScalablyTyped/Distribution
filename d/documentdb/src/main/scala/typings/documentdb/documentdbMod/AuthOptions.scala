@@ -22,9 +22,9 @@ object AuthOptions {
     resourceTokens: StringDictionary[String] = null
   ): AuthOptions = {
     val __obj = js.Dynamic.literal()
-    if (masterKey != null) __obj.updateDynamic("masterKey")(masterKey)
-    if (permissionFeed != null) __obj.updateDynamic("permissionFeed")(permissionFeed)
-    if (resourceTokens != null) __obj.updateDynamic("resourceTokens")(resourceTokens)
+    if (masterKey != null) __obj.updateDynamic("masterKey")(masterKey.asInstanceOf[js.Any])
+    if (permissionFeed != null) __obj.updateDynamic("permissionFeed")(permissionFeed.asInstanceOf[js.Any])
+    if (resourceTokens != null) __obj.updateDynamic("resourceTokens")(resourceTokens.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthOptions]
   }
 }

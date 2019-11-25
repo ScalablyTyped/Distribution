@@ -13,3 +13,18 @@ import scala.scalajs.js.annotation._
 */
 trait ThreadState extends js.Object
 
+object ThreadState {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def halted: typings.fridaDashGum.fridaDashGumStrings.halted = this.cast("halted")
+  @scala.inline
+  def running: typings.fridaDashGum.fridaDashGumStrings.running = this.cast("running")
+  @scala.inline
+  def stopped: typings.fridaDashGum.fridaDashGumStrings.stopped = this.cast("stopped")
+  @scala.inline
+  def uninterruptible: typings.fridaDashGum.fridaDashGumStrings.uninterruptible = this.cast("uninterruptible")
+  @scala.inline
+  def waiting: typings.fridaDashGum.fridaDashGumStrings.waiting = this.cast("waiting")
+}
+

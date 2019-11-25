@@ -1,6 +1,5 @@
 package typings.atAngularCompiler.publicUnderscoreApiMod
 
-import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.StmtModifier
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,16 +10,20 @@ class ClassField protected ()
   extends typings.atAngularCompiler.srcCompilerMod.ClassField {
   def this(name: String) = this()
   def this(name: String, `type`: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Type) = this()
-  def this(name: String, `type`: Null, modifiers: js.Array[StmtModifier]) = this()
+  def this(
+    name: String,
+    `type`: Null,
+    modifiers: js.Array[typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.StmtModifier]
+  ) = this()
   def this(
     name: String,
     `type`: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Type,
-    modifiers: js.Array[StmtModifier]
+    modifiers: js.Array[typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.StmtModifier]
   ) = this()
   def this(
     name: String,
     `type`: Null,
-    modifiers: js.Array[StmtModifier],
+    modifiers: js.Array[typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.StmtModifier],
     initializer: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Expression
   ) = this()
   def this(
@@ -32,7 +35,7 @@ class ClassField protected ()
   def this(
     name: String,
     `type`: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Type,
-    modifiers: js.Array[StmtModifier],
+    modifiers: js.Array[typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.StmtModifier],
     initializer: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Expression
   ) = this()
   def this(

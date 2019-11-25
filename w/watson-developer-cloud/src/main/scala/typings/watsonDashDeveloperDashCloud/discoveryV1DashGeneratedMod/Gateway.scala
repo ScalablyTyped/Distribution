@@ -28,11 +28,11 @@ object Gateway {
     token_id: String = null
   ): Gateway = {
     val __obj = js.Dynamic.literal()
-    if (gateway_id != null) __obj.updateDynamic("gateway_id")(gateway_id)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (token != null) __obj.updateDynamic("token")(token)
-    if (token_id != null) __obj.updateDynamic("token_id")(token_id)
+    if (gateway_id != null) __obj.updateDynamic("gateway_id")(gateway_id.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
+    if (token_id != null) __obj.updateDynamic("token_id")(token_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Gateway]
   }
 }

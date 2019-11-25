@@ -1,9 +1,6 @@
 package typings.dojo.dojox.form
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValue
-import typings.dojo.Fn_NewValueOldValueProperty
 import typings.dojo.dijit.form.Button
 import typings.dojo.dojoStrings.busyLabel
 import typings.dojo.dojoStrings.isBusy
@@ -83,12 +80,44 @@ class BusyButton () extends Button {
   @JSName("set")
   def set_useIcon(property: useIcon, value: Boolean): Unit = js.native
   @JSName("watch")
-  def watch_busyLabel(property: busyLabel, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_busyLabel(
+    property: busyLabel,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_isBusy(property: isBusy, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_isBusy(
+    property: isBusy,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_timeout(property: timeout, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_timeout(
+    property: timeout,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_useIcon(property: useIcon, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_useIcon(
+    property: useIcon,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

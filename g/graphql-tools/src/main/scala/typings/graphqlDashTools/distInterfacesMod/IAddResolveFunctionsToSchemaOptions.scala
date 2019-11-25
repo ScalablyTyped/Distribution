@@ -20,9 +20,9 @@ object IAddResolveFunctionsToSchemaOptions {
     inheritResolversFromInterfaces: js.UndefOr[Boolean] = js.undefined,
     resolverValidationOptions: IResolverValidationOptions = null
   ): IAddResolveFunctionsToSchemaOptions = {
-    val __obj = js.Dynamic.literal(resolvers = resolvers, schema = schema)
-    if (!js.isUndefined(inheritResolversFromInterfaces)) __obj.updateDynamic("inheritResolversFromInterfaces")(inheritResolversFromInterfaces)
-    if (resolverValidationOptions != null) __obj.updateDynamic("resolverValidationOptions")(resolverValidationOptions)
+    val __obj = js.Dynamic.literal(resolvers = resolvers.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
+    if (!js.isUndefined(inheritResolversFromInterfaces)) __obj.updateDynamic("inheritResolversFromInterfaces")(inheritResolversFromInterfaces.asInstanceOf[js.Any])
+    if (resolverValidationOptions != null) __obj.updateDynamic("resolverValidationOptions")(resolverValidationOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAddResolveFunctionsToSchemaOptions]
   }
 }

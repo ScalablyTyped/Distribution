@@ -23,10 +23,10 @@ object OAuth2ImplicitSecurity {
     description: String = null,
     scopes: OAuthScope = null
   ): OAuth2ImplicitSecurity = {
-    val __obj = js.Dynamic.literal(authorizationUrl = authorizationUrl, flow = flow)
-    __obj.updateDynamic("type")(`type`)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (scopes != null) __obj.updateDynamic("scopes")(scopes)
+    val __obj = js.Dynamic.literal(authorizationUrl = authorizationUrl.asInstanceOf[js.Any], flow = flow.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (scopes != null) __obj.updateDynamic("scopes")(scopes.asInstanceOf[js.Any])
     __obj.asInstanceOf[OAuth2ImplicitSecurity]
   }
 }

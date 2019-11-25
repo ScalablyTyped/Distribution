@@ -88,7 +88,7 @@ object TestSession {
     title: String,
     url: String
   ): TestSession = {
-    val __obj = js.Dynamic.literal(area = area, comment = comment, endDate = endDate, id = id, lastUpdatedBy = lastUpdatedBy, lastUpdatedDate = lastUpdatedDate, owner = owner, project = project, propertyBag = propertyBag, revision = revision, source = source, startDate = startDate, state = state, title = title, url = url)
+    val __obj = js.Dynamic.literal(area = area.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], endDate = endDate.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], lastUpdatedBy = lastUpdatedBy.asInstanceOf[js.Any], lastUpdatedDate = lastUpdatedDate.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], propertyBag = propertyBag.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], startDate = startDate.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TestSession]
   }

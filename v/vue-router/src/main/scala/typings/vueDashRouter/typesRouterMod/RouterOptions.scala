@@ -37,13 +37,13 @@ object RouterOptions {
     stringifyQuery: /* query */ js.Object => String = null
   ): RouterOptions = {
     val __obj = js.Dynamic.literal()
-    if (base != null) __obj.updateDynamic("base")(base)
-    if (!js.isUndefined(fallback)) __obj.updateDynamic("fallback")(fallback)
-    if (linkActiveClass != null) __obj.updateDynamic("linkActiveClass")(linkActiveClass)
-    if (linkExactActiveClass != null) __obj.updateDynamic("linkExactActiveClass")(linkExactActiveClass)
-    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
+    if (!js.isUndefined(fallback)) __obj.updateDynamic("fallback")(fallback.asInstanceOf[js.Any])
+    if (linkActiveClass != null) __obj.updateDynamic("linkActiveClass")(linkActiveClass.asInstanceOf[js.Any])
+    if (linkExactActiveClass != null) __obj.updateDynamic("linkExactActiveClass")(linkExactActiveClass.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (parseQuery != null) __obj.updateDynamic("parseQuery")(js.Any.fromFunction1(parseQuery))
-    if (routes != null) __obj.updateDynamic("routes")(routes)
+    if (routes != null) __obj.updateDynamic("routes")(routes.asInstanceOf[js.Any])
     if (scrollBehavior != null) __obj.updateDynamic("scrollBehavior")(js.Any.fromFunction3(scrollBehavior))
     if (stringifyQuery != null) __obj.updateDynamic("stringifyQuery")(js.Any.fromFunction1(stringifyQuery))
     __obj.asInstanceOf[RouterOptions]

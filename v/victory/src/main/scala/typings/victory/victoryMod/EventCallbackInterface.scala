@@ -33,7 +33,7 @@ object EventCallbackInterface {
     target: TTarget = null
   ): EventCallbackInterface[TTarget, TEventKey] = {
     val __obj = js.Dynamic.literal(mutation = js.Any.fromFunction1(mutation))
-    if (childName != null) __obj.updateDynamic("childName")(childName)
+    if (childName != null) __obj.updateDynamic("childName")(childName.asInstanceOf[js.Any])
     if (eventKey != null) __obj.updateDynamic("eventKey")(eventKey.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventCallbackInterface[TTarget, TEventKey]]

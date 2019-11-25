@@ -125,17 +125,17 @@ object Tab {
     url: String = null,
     width: Int | Double = null
   ): Tab = {
-    val __obj = js.Dynamic.literal(active = active, autoDiscardable = autoDiscardable, discarded = discarded, highlighted = highlighted, incognito = incognito, index = index, pinned = pinned, selected = selected, windowId = windowId)
-    if (!js.isUndefined(audible)) __obj.updateDynamic("audible")(audible)
-    if (favIconUrl != null) __obj.updateDynamic("favIconUrl")(favIconUrl)
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], autoDiscardable = autoDiscardable.asInstanceOf[js.Any], discarded = discarded.asInstanceOf[js.Any], highlighted = highlighted.asInstanceOf[js.Any], incognito = incognito.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], pinned = pinned.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any], windowId = windowId.asInstanceOf[js.Any])
+    if (!js.isUndefined(audible)) __obj.updateDynamic("audible")(audible.asInstanceOf[js.Any])
+    if (favIconUrl != null) __obj.updateDynamic("favIconUrl")(favIconUrl.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (mutedInfo != null) __obj.updateDynamic("mutedInfo")(mutedInfo)
+    if (mutedInfo != null) __obj.updateDynamic("mutedInfo")(mutedInfo.asInstanceOf[js.Any])
     if (openerTabId != null) __obj.updateDynamic("openerTabId")(openerTabId.asInstanceOf[js.Any])
-    if (sessionId != null) __obj.updateDynamic("sessionId")(sessionId)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (sessionId != null) __obj.updateDynamic("sessionId")(sessionId.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tab]
   }

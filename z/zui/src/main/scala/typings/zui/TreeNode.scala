@@ -27,12 +27,12 @@ object TreeNode {
     url: String = null
   ): TreeNode = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (html != null) __obj.updateDynamic("html")(html)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeNode]
   }
 }

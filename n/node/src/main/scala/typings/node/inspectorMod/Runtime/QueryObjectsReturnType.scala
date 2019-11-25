@@ -14,7 +14,7 @@ trait QueryObjectsReturnType extends js.Object {
 object QueryObjectsReturnType {
   @scala.inline
   def apply(objects: RemoteObject): QueryObjectsReturnType = {
-    val __obj = js.Dynamic.literal(objects = objects)
+    val __obj = js.Dynamic.literal(objects = objects.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[QueryObjectsReturnType]
   }

@@ -58,15 +58,15 @@ object ResourcesResourceSettings {
     workWeek: String = null
   ): ResourcesResourceSettings = {
     val __obj = js.Dynamic.literal()
-    if (appointmentClass != null) __obj.updateDynamic("appointmentClass")(appointmentClass)
-    if (color != null) __obj.updateDynamic("color")(color)
+    if (appointmentClass != null) __obj.updateDynamic("appointmentClass")(appointmentClass.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end)
-    if (groupId != null) __obj.updateDynamic("groupId")(groupId)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (start != null) __obj.updateDynamic("start")(start)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (workWeek != null) __obj.updateDynamic("workWeek")(workWeek)
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (groupId != null) __obj.updateDynamic("groupId")(groupId.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (workWeek != null) __obj.updateDynamic("workWeek")(workWeek.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourcesResourceSettings]
   }
 }

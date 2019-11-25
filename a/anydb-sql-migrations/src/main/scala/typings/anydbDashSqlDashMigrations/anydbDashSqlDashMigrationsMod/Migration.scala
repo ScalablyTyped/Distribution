@@ -11,7 +11,7 @@ trait Migration extends js.Object {
 object Migration {
   @scala.inline
   def apply(version: String): Migration = {
-    val __obj = js.Dynamic.literal(version = version)
+    val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Migration]
   }

@@ -17,9 +17,9 @@ object LocalizedString {
   @scala.inline
   def apply(kind: String = null, locale: String = null, value: String = null): LocalizedString = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalizedString]
   }
 }

@@ -13,8 +13,8 @@ object GridColumnGroupable {
   @scala.inline
   def apply(compare: js.Function = null, dir: String = null): GridColumnGroupable = {
     val __obj = js.Dynamic.literal()
-    if (compare != null) __obj.updateDynamic("compare")(compare)
-    if (dir != null) __obj.updateDynamic("dir")(dir)
+    if (compare != null) __obj.updateDynamic("compare")(compare.asInstanceOf[js.Any])
+    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridColumnGroupable]
   }
 }

@@ -136,7 +136,7 @@ object Props {
     val __obj = js.Dynamic.literal()
     if (deadZone != null) __obj.updateDynamic("deadZone")(deadZone.asInstanceOf[js.Any])
     if (gamepadIndex != null) __obj.updateDynamic("gamepadIndex")(gamepadIndex.asInstanceOf[js.Any])
-    if (layout != null) __obj.updateDynamic("layout")(layout)
+    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
     if (onA != null) __obj.updateDynamic("onA")(js.Any.fromFunction0(onA))
     if (onAxisChange != null) __obj.updateDynamic("onAxisChange")(js.Any.fromFunction3(onAxisChange))
     if (onB != null) __obj.updateDynamic("onB")(js.Any.fromFunction0(onB))

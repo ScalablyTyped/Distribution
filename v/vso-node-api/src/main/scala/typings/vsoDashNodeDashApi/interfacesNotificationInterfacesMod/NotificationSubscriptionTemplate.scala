@@ -21,8 +21,8 @@ object NotificationSubscriptionTemplate {
     notificationEventInformation: NotificationEventType,
     `type`: SubscriptionTemplateType
   ): NotificationSubscriptionTemplate = {
-    val __obj = js.Dynamic.literal(description = description, filter = filter, id = id, notificationEventInformation = notificationEventInformation)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], notificationEventInformation = notificationEventInformation.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationSubscriptionTemplate]
   }
 }

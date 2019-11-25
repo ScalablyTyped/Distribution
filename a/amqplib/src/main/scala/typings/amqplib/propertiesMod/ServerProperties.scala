@@ -26,9 +26,9 @@ object ServerProperties {
     StringDictionary: /* key */ StringDictionary[js.UndefOr[String]] = null,
     copyright: String = null
   ): ServerProperties = {
-    val __obj = js.Dynamic.literal(host = host, information = information, platform = platform, product = product, version = version)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (copyright != null) __obj.updateDynamic("copyright")(copyright)
+    val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], information = information.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], product = product.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (copyright != null) __obj.updateDynamic("copyright")(copyright.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerProperties]
   }
 }

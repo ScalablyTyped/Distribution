@@ -35,9 +35,9 @@ object SplitterOptions {
     if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
     if (expand != null) __obj.updateDynamic("expand")(js.Any.fromFunction1(expand))
     if (layoutChange != null) __obj.updateDynamic("layoutChange")(js.Any.fromFunction1(layoutChange))
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation)
-    if (panes != null) __obj.updateDynamic("panes")(panes)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
+    if (panes != null) __obj.updateDynamic("panes")(panes.asInstanceOf[js.Any])
     if (resize != null) __obj.updateDynamic("resize")(js.Any.fromFunction1(resize))
     __obj.asInstanceOf[SplitterOptions]
   }

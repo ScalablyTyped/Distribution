@@ -15,7 +15,7 @@ trait Anon_FogColor extends js.Object {
 object Anon_FogColor {
   @scala.inline
   def apply(fogColor: IUniform, fogDensity: IUniform, fogFar: IUniform, fogNear: IUniform): Anon_FogColor = {
-    val __obj = js.Dynamic.literal(fogColor = fogColor, fogDensity = fogDensity, fogFar = fogFar, fogNear = fogNear)
+    val __obj = js.Dynamic.literal(fogColor = fogColor.asInstanceOf[js.Any], fogDensity = fogDensity.asInstanceOf[js.Any], fogFar = fogFar.asInstanceOf[js.Any], fogNear = fogNear.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FogColor]
   }

@@ -32,11 +32,11 @@ object ValueCellHyperlinkClickEventArgs {
     `type`: String = null
   ): ValueCellHyperlinkClickEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (args != null) __obj.updateDynamic("args")(args)
-    if (customerObject != null) __obj.updateDynamic("customerObject")(customerObject)
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (customerObject != null) __obj.updateDynamic("customerObject")(customerObject.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValueCellHyperlinkClickEventArgs]
   }
 }

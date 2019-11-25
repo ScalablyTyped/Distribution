@@ -16,7 +16,7 @@ object Anon_Closest {
     heuristic: (/* pos0 */ Anon_X, /* pos1 */ Anon_X) => Double = null
   ): Anon_Closest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(closest)) __obj.updateDynamic("closest")(closest)
+    if (!js.isUndefined(closest)) __obj.updateDynamic("closest")(closest.asInstanceOf[js.Any])
     if (heuristic != null) __obj.updateDynamic("heuristic")(js.Any.fromFunction2(heuristic))
     __obj.asInstanceOf[Anon_Closest]
   }

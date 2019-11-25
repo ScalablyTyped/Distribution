@@ -13,7 +13,7 @@ trait Anon_InUndoRedo extends js.Object {
 object Anon_InUndoRedo {
   @scala.inline
   def apply(InUndoRedo: Boolean, NewContentControl: ContentControl): Anon_InUndoRedo = {
-    val __obj = js.Dynamic.literal(InUndoRedo = InUndoRedo, NewContentControl = NewContentControl)
+    val __obj = js.Dynamic.literal(InUndoRedo = InUndoRedo.asInstanceOf[js.Any], NewContentControl = NewContentControl.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_InUndoRedo]
   }

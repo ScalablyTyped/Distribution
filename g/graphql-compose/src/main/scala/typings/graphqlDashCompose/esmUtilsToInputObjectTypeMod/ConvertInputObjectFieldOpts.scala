@@ -20,10 +20,10 @@ object ConvertInputObjectFieldOpts {
     prefix: String = null
   ): ConvertInputObjectFieldOpts = {
     val __obj = js.Dynamic.literal()
-    if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName)
-    if (outputTypeName != null) __obj.updateDynamic("outputTypeName")(outputTypeName)
-    if (postfix != null) __obj.updateDynamic("postfix")(postfix)
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName.asInstanceOf[js.Any])
+    if (outputTypeName != null) __obj.updateDynamic("outputTypeName")(outputTypeName.asInstanceOf[js.Any])
+    if (postfix != null) __obj.updateDynamic("postfix")(postfix.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConvertInputObjectFieldOpts]
   }
 }

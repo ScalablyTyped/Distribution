@@ -41,10 +41,10 @@ object PlusPaymentIAPProduct {
   @scala.inline
   def apply(description: String = null, price: String = null, productid: String = null, title: String = null): PlusPaymentIAPProduct = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (price != null) __obj.updateDynamic("price")(price)
-    if (productid != null) __obj.updateDynamic("productid")(productid)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (price != null) __obj.updateDynamic("price")(price.asInstanceOf[js.Any])
+    if (productid != null) __obj.updateDynamic("productid")(productid.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusPaymentIAPProduct]
   }
 }

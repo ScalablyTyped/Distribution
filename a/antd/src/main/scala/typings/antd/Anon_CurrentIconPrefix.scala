@@ -14,7 +14,7 @@ trait Anon_CurrentIconPrefix extends js.Object {
 object Anon_CurrentIconPrefix {
   @scala.inline
   def apply(current: Requireable[Double], iconPrefix: Requireable[String], prefixCls: Requireable[String]): Anon_CurrentIconPrefix = {
-    val __obj = js.Dynamic.literal(current = current, iconPrefix = iconPrefix, prefixCls = prefixCls)
+    val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], iconPrefix = iconPrefix.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CurrentIconPrefix]
   }

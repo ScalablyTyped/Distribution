@@ -12,7 +12,7 @@ trait ISmsMessageReceivedEventArgs extends js.Object {
 object ISmsMessageReceivedEventArgs {
   @scala.inline
   def apply(binaryMessage: SmsBinaryMessage, textMessage: SmsTextMessage): ISmsMessageReceivedEventArgs = {
-    val __obj = js.Dynamic.literal(binaryMessage = binaryMessage, textMessage = textMessage)
+    val __obj = js.Dynamic.literal(binaryMessage = binaryMessage.asInstanceOf[js.Any], textMessage = textMessage.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISmsMessageReceivedEventArgs]
   }

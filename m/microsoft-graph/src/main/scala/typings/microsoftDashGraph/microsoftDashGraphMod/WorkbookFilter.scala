@@ -13,8 +13,8 @@ object WorkbookFilter {
   @scala.inline
   def apply(criteria: WorkbookFilterCriteria = null, id: String = null): WorkbookFilter = {
     val __obj = js.Dynamic.literal()
-    if (criteria != null) __obj.updateDynamic("criteria")(criteria)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (criteria != null) __obj.updateDynamic("criteria")(criteria.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookFilter]
   }
 }

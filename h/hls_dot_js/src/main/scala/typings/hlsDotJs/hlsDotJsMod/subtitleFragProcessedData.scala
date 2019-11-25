@@ -12,7 +12,7 @@ trait subtitleFragProcessedData extends js.Object {
 object subtitleFragProcessedData {
   @scala.inline
   def apply(frag: Fragment, success: Boolean): subtitleFragProcessedData = {
-    val __obj = js.Dynamic.literal(frag = frag, success = success)
+    val __obj = js.Dynamic.literal(frag = frag.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[subtitleFragProcessedData]
   }

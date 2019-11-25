@@ -25,11 +25,11 @@ object ItemActivity {
     id: String = null
   ): ItemActivity = {
     val __obj = js.Dynamic.literal()
-    if (access != null) __obj.updateDynamic("access")(access)
-    if (activityDateTime != null) __obj.updateDynamic("activityDateTime")(activityDateTime)
-    if (actor != null) __obj.updateDynamic("actor")(actor)
-    if (driveItem != null) __obj.updateDynamic("driveItem")(driveItem)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
+    if (activityDateTime != null) __obj.updateDynamic("activityDateTime")(activityDateTime.asInstanceOf[js.Any])
+    if (actor != null) __obj.updateDynamic("actor")(actor.asInstanceOf[js.Any])
+    if (driveItem != null) __obj.updateDynamic("driveItem")(driveItem.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemActivity]
   }
 }

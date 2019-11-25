@@ -14,3 +14,20 @@ import scala.scalajs.js.annotation._
 */
 trait FilterComparator extends js.Object
 
+object FilterComparator {
+  @scala.inline
+  def `!=`: typings.reactDashBootstrapDashTable.reactDashBootstrapDashTableStrings.`!=` = this.cast("!=")
+  @scala.inline
+  def `<`: typings.reactDashBootstrapDashTable.reactDashBootstrapDashTableStrings.`<` = this.cast("<")
+  @scala.inline
+  def `<=`: typings.reactDashBootstrapDashTable.reactDashBootstrapDashTableStrings.`<=` = this.cast("<=")
+  @scala.inline
+  def `=`: typings.reactDashBootstrapDashTable.reactDashBootstrapDashTableStrings.`=` = this.cast("=")
+  @scala.inline
+  def `>`: typings.reactDashBootstrapDashTable.reactDashBootstrapDashTableStrings.`>` = this.cast(">")
+  @scala.inline
+  def `>=`: typings.reactDashBootstrapDashTable.reactDashBootstrapDashTableStrings.`>=` = this.cast(">=")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

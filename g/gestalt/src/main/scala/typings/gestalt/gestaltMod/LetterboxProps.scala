@@ -15,7 +15,7 @@ trait LetterboxProps extends js.Object {
 object LetterboxProps {
   @scala.inline
   def apply(contentAspectRatio: Double, height: Double, width: Double, children: ReactNode = null): LetterboxProps = {
-    val __obj = js.Dynamic.literal(contentAspectRatio = contentAspectRatio, height = height, width = width)
+    val __obj = js.Dynamic.literal(contentAspectRatio = contentAspectRatio.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[LetterboxProps]
   }

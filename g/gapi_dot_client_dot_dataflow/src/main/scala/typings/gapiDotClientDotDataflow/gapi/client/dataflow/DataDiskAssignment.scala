@@ -23,8 +23,8 @@ object DataDiskAssignment {
   @scala.inline
   def apply(dataDisks: js.Array[String] = null, vmInstance: String = null): DataDiskAssignment = {
     val __obj = js.Dynamic.literal()
-    if (dataDisks != null) __obj.updateDynamic("dataDisks")(dataDisks)
-    if (vmInstance != null) __obj.updateDynamic("vmInstance")(vmInstance)
+    if (dataDisks != null) __obj.updateDynamic("dataDisks")(dataDisks.asInstanceOf[js.Any])
+    if (vmInstance != null) __obj.updateDynamic("vmInstance")(vmInstance.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataDiskAssignment]
   }
 }

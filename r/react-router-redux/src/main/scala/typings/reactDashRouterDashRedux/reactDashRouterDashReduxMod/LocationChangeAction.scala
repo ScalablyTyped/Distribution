@@ -16,8 +16,8 @@ trait LocationChangeAction extends js.Object {
 object LocationChangeAction {
   @scala.inline
   def apply(payload: Location[LocationState] with Anon_Props, `type`: `@@router/LOCATION_CHANGE`): LocationChangeAction = {
-    val __obj = js.Dynamic.literal(payload = payload)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationChangeAction]
   }
 }

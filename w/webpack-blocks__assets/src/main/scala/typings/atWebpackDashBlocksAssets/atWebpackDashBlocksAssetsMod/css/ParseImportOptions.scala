@@ -12,7 +12,7 @@ trait ParseImportOptions extends js.Object {
 object ParseImportOptions {
   @scala.inline
   def apply(media: String, url: String): ParseImportOptions = {
-    val __obj = js.Dynamic.literal(media = media, url = url)
+    val __obj = js.Dynamic.literal(media = media.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ParseImportOptions]
   }

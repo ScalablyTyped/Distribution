@@ -15,7 +15,7 @@ trait Anon_Offset extends js.Object {
 object Anon_Offset {
   @scala.inline
   def apply(offset: IPoint, path: IPath | IModel): Anon_Offset = {
-    val __obj = js.Dynamic.literal(offset = offset, path = path.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Offset]
   }

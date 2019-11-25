@@ -28,10 +28,10 @@ object Anon_CoordRendering {
   ): Anon_CoordRendering = {
     val __obj = js.Dynamic.literal()
     if (coordRendering != null) __obj.updateDynamic("coordRendering")(coordRendering.asInstanceOf[js.Any])
-    if (!js.isUndefined(geodesic)) __obj.updateDynamic("geodesic")(geodesic)
+    if (!js.isUndefined(geodesic)) __obj.updateDynamic("geodesic")(geodesic.asInstanceOf[js.Any])
     if (pixelRendering != null) __obj.updateDynamic("pixelRendering")(pixelRendering.asInstanceOf[js.Any])
-    if (projection != null) __obj.updateDynamic("projection")(projection)
-    if (!js.isUndefined(simplification)) __obj.updateDynamic("simplification")(simplification)
+    if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
+    if (!js.isUndefined(simplification)) __obj.updateDynamic("simplification")(simplification.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CoordRendering]
   }
 }

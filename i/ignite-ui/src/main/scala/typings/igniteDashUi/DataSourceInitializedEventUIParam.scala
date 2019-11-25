@@ -32,10 +32,10 @@ object DataSourceInitializedEventUIParam {
     owner: js.Any = null
   ): DataSourceInitializedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (metadataTreeRoot != null) __obj.updateDynamic("metadataTreeRoot")(metadataTreeRoot)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (metadataTreeRoot != null) __obj.updateDynamic("metadataTreeRoot")(metadataTreeRoot.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceInitializedEventUIParam]
   }
 }

@@ -15,9 +15,9 @@ object DefStringObject {
   @scala.inline
   def apply(`type`: string, enum: js.Array[String] = null, regex: String = null): DefStringObject = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (enum != null) __obj.updateDynamic("enum")(enum)
-    if (regex != null) __obj.updateDynamic("regex")(regex)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (enum != null) __obj.updateDynamic("enum")(enum.asInstanceOf[js.Any])
+    if (regex != null) __obj.updateDynamic("regex")(regex.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefStringObject]
   }
 }

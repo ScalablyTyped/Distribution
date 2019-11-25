@@ -32,9 +32,9 @@ object GoogleMutantStyle {
     stylers: js.Array[GoogleMutantStyler] = null
   ): GoogleMutantStyle = {
     val __obj = js.Dynamic.literal()
-    if (elementType != null) __obj.updateDynamic("elementType")(elementType)
-    if (featureType != null) __obj.updateDynamic("featureType")(featureType)
-    if (stylers != null) __obj.updateDynamic("stylers")(stylers)
+    if (elementType != null) __obj.updateDynamic("elementType")(elementType.asInstanceOf[js.Any])
+    if (featureType != null) __obj.updateDynamic("featureType")(featureType.asInstanceOf[js.Any])
+    if (stylers != null) __obj.updateDynamic("stylers")(stylers.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleMutantStyle]
   }
 }

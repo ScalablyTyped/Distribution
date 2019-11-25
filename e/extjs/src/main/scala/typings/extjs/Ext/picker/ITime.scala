@@ -35,11 +35,9 @@ object ITime {
   @scala.inline
   def apply(
     IBoundList: typings.extjs.Ext.view.IBoundList = null,
-    componentCls: java.lang.String = null,
     focusNode: /* rec */ js.UndefOr[js.Any] => Unit = null,
     format: java.lang.String = null,
     increment: Int | Double = null,
-    initComponent: () => Unit = null,
     maxValue: js.Any = null,
     minValue: js.Any = null,
     setMaxValue: /* value */ js.UndefOr[js.Any] => Unit = null,
@@ -47,14 +45,12 @@ object ITime {
     updateList: () => Unit = null
   ): ITime = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IBoundList)
-    if (componentCls != null) __obj.updateDynamic("componentCls")(componentCls)
+    if (IBoundList != null) js.Dynamic.global.Object.assign(__obj, IBoundList)
     if (focusNode != null) __obj.updateDynamic("focusNode")(js.Any.fromFunction1(focusNode))
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (increment != null) __obj.updateDynamic("increment")(increment.asInstanceOf[js.Any])
-    if (initComponent != null) __obj.updateDynamic("initComponent")(js.Any.fromFunction0(initComponent))
-    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue)
-    if (minValue != null) __obj.updateDynamic("minValue")(minValue)
+    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
+    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
     if (setMaxValue != null) __obj.updateDynamic("setMaxValue")(js.Any.fromFunction1(setMaxValue))
     if (setMinValue != null) __obj.updateDynamic("setMinValue")(js.Any.fromFunction1(setMinValue))
     if (updateList != null) __obj.updateDynamic("updateList")(js.Any.fromFunction0(updateList))

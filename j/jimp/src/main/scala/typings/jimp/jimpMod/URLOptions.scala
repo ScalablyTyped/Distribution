@@ -14,8 +14,8 @@ trait URLOptions extends js.Object {
 object URLOptions {
   @scala.inline
   def apply(headers: StringDictionary[js.Any], url: String, compression: js.UndefOr[Boolean] = js.undefined): URLOptions = {
-    val __obj = js.Dynamic.literal(headers = headers, url = url)
-    if (!js.isUndefined(compression)) __obj.updateDynamic("compression")(compression)
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (!js.isUndefined(compression)) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
     __obj.asInstanceOf[URLOptions]
   }
 }

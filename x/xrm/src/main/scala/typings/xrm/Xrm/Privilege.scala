@@ -25,7 +25,7 @@ trait Privilege extends js.Object {
 object Privilege {
   @scala.inline
   def apply(canCreate: Boolean, canRead: Boolean, canUpdate: Boolean): Privilege = {
-    val __obj = js.Dynamic.literal(canCreate = canCreate, canRead = canRead, canUpdate = canUpdate)
+    val __obj = js.Dynamic.literal(canCreate = canCreate.asInstanceOf[js.Any], canRead = canRead.asInstanceOf[js.Any], canUpdate = canUpdate.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Privilege]
   }

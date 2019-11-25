@@ -23,11 +23,11 @@ object VNodeComponentOptions {
     propsData: js.Object = null,
     tag: String = null
   ): VNodeComponentOptions = {
-    val __obj = js.Dynamic.literal(Ctor = Ctor)
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (listeners != null) __obj.updateDynamic("listeners")(listeners)
-    if (propsData != null) __obj.updateDynamic("propsData")(propsData)
-    if (tag != null) __obj.updateDynamic("tag")(tag)
+    val __obj = js.Dynamic.literal(Ctor = Ctor.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
+    if (propsData != null) __obj.updateDynamic("propsData")(propsData.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[VNodeComponentOptions]
   }
 }

@@ -12,7 +12,7 @@ trait Anon_BoxSizing extends js.Object {
 object Anon_BoxSizing {
   @scala.inline
   def apply(boxSizing: String, padding: Double): Anon_BoxSizing = {
-    val __obj = js.Dynamic.literal(boxSizing = boxSizing, padding = padding)
+    val __obj = js.Dynamic.literal(boxSizing = boxSizing.asInstanceOf[js.Any], padding = padding.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BoxSizing]
   }

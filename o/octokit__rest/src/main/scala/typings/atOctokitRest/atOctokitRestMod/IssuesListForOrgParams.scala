@@ -69,13 +69,13 @@ object IssuesListForOrgParams {
     sort: created | updated | comments = null,
     state: open | closed | all = null
   ): IssuesListForOrgParams = {
-    val __obj = js.Dynamic.literal(org = org)
+    val __obj = js.Dynamic.literal(org = org.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (per_page != null) __obj.updateDynamic("per_page")(per_page.asInstanceOf[js.Any])
-    if (since != null) __obj.updateDynamic("since")(since)
+    if (since != null) __obj.updateDynamic("since")(since.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[IssuesListForOrgParams]

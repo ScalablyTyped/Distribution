@@ -29,13 +29,13 @@ object RadioButtonGroupProps {
     style: CSSProperties = null,
     valueSelected: js.Any = null
   ): RadioButtonGroupProps = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (defaultSelected != null) __obj.updateDynamic("defaultSelected")(defaultSelected)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (defaultSelected != null) __obj.updateDynamic("defaultSelected")(defaultSelected.asInstanceOf[js.Any])
     if (labelPosition != null) __obj.updateDynamic("labelPosition")(labelPosition.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (valueSelected != null) __obj.updateDynamic("valueSelected")(valueSelected)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (valueSelected != null) __obj.updateDynamic("valueSelected")(valueSelected.asInstanceOf[js.Any])
     __obj.asInstanceOf[RadioButtonGroupProps]
   }
 }

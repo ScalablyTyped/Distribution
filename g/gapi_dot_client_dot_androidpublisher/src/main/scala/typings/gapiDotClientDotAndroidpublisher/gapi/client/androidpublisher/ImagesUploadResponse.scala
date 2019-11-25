@@ -12,7 +12,7 @@ object ImagesUploadResponse {
   @scala.inline
   def apply(image: Image = null): ImagesUploadResponse = {
     val __obj = js.Dynamic.literal()
-    if (image != null) __obj.updateDynamic("image")(image)
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImagesUploadResponse]
   }
 }

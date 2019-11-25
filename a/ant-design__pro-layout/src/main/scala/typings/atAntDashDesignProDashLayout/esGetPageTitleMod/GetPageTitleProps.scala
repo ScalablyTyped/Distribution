@@ -28,12 +28,12 @@ object GetPageTitleProps {
     title: String = null
   ): GetPageTitleProps = {
     val __obj = js.Dynamic.literal()
-    if (breadcrumb != null) __obj.updateDynamic("breadcrumb")(breadcrumb)
+    if (breadcrumb != null) __obj.updateDynamic("breadcrumb")(breadcrumb.asInstanceOf[js.Any])
     if (formatMessage != null) __obj.updateDynamic("formatMessage")(js.Any.fromFunction1(formatMessage))
-    if (menu != null) __obj.updateDynamic("menu")(menu)
-    if (pageName != null) __obj.updateDynamic("pageName")(pageName)
-    if (pathname != null) __obj.updateDynamic("pathname")(pathname)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (menu != null) __obj.updateDynamic("menu")(menu.asInstanceOf[js.Any])
+    if (pageName != null) __obj.updateDynamic("pageName")(pageName.asInstanceOf[js.Any])
+    if (pathname != null) __obj.updateDynamic("pathname")(pathname.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPageTitleProps]
   }
 }

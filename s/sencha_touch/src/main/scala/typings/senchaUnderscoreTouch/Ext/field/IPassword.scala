@@ -8,23 +8,9 @@ trait IPassword extends IText
 
 object IPassword {
   @scala.inline
-  def apply(
-    IText: IText = null,
-    autoCapitalize: js.UndefOr[Boolean] = js.undefined,
-    component: js.Any = null,
-    getAutoCapitalize: () => Boolean = null,
-    getComponent: () => _ = null,
-    setAutoCapitalize: /* autoCapitalize */ js.UndefOr[Boolean] => Unit = null,
-    setComponent: /* component */ js.UndefOr[js.Any] => Unit = null
-  ): IPassword = {
+  def apply(IText: IText = null): IPassword = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IText)
-    if (!js.isUndefined(autoCapitalize)) __obj.updateDynamic("autoCapitalize")(autoCapitalize)
-    if (component != null) __obj.updateDynamic("component")(component)
-    if (getAutoCapitalize != null) __obj.updateDynamic("getAutoCapitalize")(js.Any.fromFunction0(getAutoCapitalize))
-    if (getComponent != null) __obj.updateDynamic("getComponent")(js.Any.fromFunction0(getComponent))
-    if (setAutoCapitalize != null) __obj.updateDynamic("setAutoCapitalize")(js.Any.fromFunction1(setAutoCapitalize))
-    if (setComponent != null) __obj.updateDynamic("setComponent")(js.Any.fromFunction1(setComponent))
+    if (IText != null) js.Dynamic.global.Object.assign(__obj, IText)
     __obj.asInstanceOf[IPassword]
   }
 }

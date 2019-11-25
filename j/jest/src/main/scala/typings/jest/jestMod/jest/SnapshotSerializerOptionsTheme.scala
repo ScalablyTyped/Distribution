@@ -22,11 +22,11 @@ object SnapshotSerializerOptionsTheme {
     value: String = null
   ): SnapshotSerializerOptionsTheme = {
     val __obj = js.Dynamic.literal()
-    if (comment != null) __obj.updateDynamic("comment")(comment)
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (prop != null) __obj.updateDynamic("prop")(prop)
-    if (tag != null) __obj.updateDynamic("tag")(tag)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (prop != null) __obj.updateDynamic("prop")(prop.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnapshotSerializerOptionsTheme]
   }
 }

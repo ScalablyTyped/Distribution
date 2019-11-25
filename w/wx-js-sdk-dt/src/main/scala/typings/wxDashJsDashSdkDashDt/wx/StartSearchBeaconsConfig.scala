@@ -25,7 +25,7 @@ object StartSearchBeaconsConfig {
     fail: /* error */ js.UndefOr[js.Any] => Unit = null,
     success: /* res */ js.UndefOr[js.Any] => Unit = null
   ): StartSearchBeaconsConfig = {
-    val __obj = js.Dynamic.literal(complete = js.Any.fromFunction1(complete), ticket = ticket)
+    val __obj = js.Dynamic.literal(complete = js.Any.fromFunction1(complete), ticket = ticket.asInstanceOf[js.Any])
     if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction0(cancel))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))

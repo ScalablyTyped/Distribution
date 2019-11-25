@@ -13,7 +13,7 @@ trait Anon_EPopup extends js.Object {
 object Anon_EPopup {
   @scala.inline
   def apply(ePopup: HTMLElement, eventSource: js.Any): Anon_EPopup = {
-    val __obj = js.Dynamic.literal(ePopup = ePopup, eventSource = eventSource)
+    val __obj = js.Dynamic.literal(ePopup = ePopup.asInstanceOf[js.Any], eventSource = eventSource.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EPopup]
   }

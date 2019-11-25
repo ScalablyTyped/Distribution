@@ -18,8 +18,8 @@ object Bitmap {
     width: Double,
     NumberDictionary: /* row */ NumberDictionary[js.Array[Double]] = null
   ): Bitmap = {
-    val __obj = js.Dynamic.literal(height = height, width = width)
-    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    if (NumberDictionary != null) js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[Bitmap]
   }
 }

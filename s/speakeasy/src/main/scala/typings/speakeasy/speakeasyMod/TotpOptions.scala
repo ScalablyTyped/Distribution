@@ -66,15 +66,15 @@ object TotpOptions {
     step: Int | Double = null,
     time: Int | Double = null
   ): TotpOptions = {
-    val __obj = js.Dynamic.literal(secret = secret)
-    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm)
+    val __obj = js.Dynamic.literal(secret = secret.asInstanceOf[js.Any])
+    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
     if (counter != null) __obj.updateDynamic("counter")(counter.asInstanceOf[js.Any])
-    if (digest != null) __obj.updateDynamic("digest")(digest)
+    if (digest != null) __obj.updateDynamic("digest")(digest.asInstanceOf[js.Any])
     if (digits != null) __obj.updateDynamic("digits")(digits.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (epoch != null) __obj.updateDynamic("epoch")(epoch.asInstanceOf[js.Any])
     if (initial_time != null) __obj.updateDynamic("initial_time")(initial_time.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])

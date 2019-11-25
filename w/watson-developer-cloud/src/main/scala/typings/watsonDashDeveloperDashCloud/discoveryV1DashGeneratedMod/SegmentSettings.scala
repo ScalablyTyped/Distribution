@@ -16,8 +16,8 @@ object SegmentSettings {
   @scala.inline
   def apply(enabled: js.UndefOr[Boolean] = js.undefined, selector_tags: js.Array[String] = null): SegmentSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (selector_tags != null) __obj.updateDynamic("selector_tags")(selector_tags)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (selector_tags != null) __obj.updateDynamic("selector_tags")(selector_tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[SegmentSettings]
   }
 }

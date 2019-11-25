@@ -35,14 +35,14 @@ object VNode {
     $tag$: String | Double | js.Function = null,
     $text$: String = null
   ): VNode = {
-    val __obj = js.Dynamic.literal($flags$ = $flags$)
-    if ($attrs$ != null) __obj.updateDynamic("$attrs$")($attrs$)
-    if ($children$ != null) __obj.updateDynamic("$children$")($children$)
-    if ($elm$ != null) __obj.updateDynamic("$elm$")($elm$)
+    val __obj = js.Dynamic.literal($flags$ = $flags$.asInstanceOf[js.Any])
+    if ($attrs$ != null) __obj.updateDynamic("$attrs$")($attrs$.asInstanceOf[js.Any])
+    if ($children$ != null) __obj.updateDynamic("$children$")($children$.asInstanceOf[js.Any])
+    if ($elm$ != null) __obj.updateDynamic("$elm$")($elm$.asInstanceOf[js.Any])
     if ($key$ != null) __obj.updateDynamic("$key$")($key$.asInstanceOf[js.Any])
-    if ($name$ != null) __obj.updateDynamic("$name$")($name$)
+    if ($name$ != null) __obj.updateDynamic("$name$")($name$.asInstanceOf[js.Any])
     if ($tag$ != null) __obj.updateDynamic("$tag$")($tag$.asInstanceOf[js.Any])
-    if ($text$ != null) __obj.updateDynamic("$text$")($text$)
+    if ($text$ != null) __obj.updateDynamic("$text$")($text$.asInstanceOf[js.Any])
     __obj.asInstanceOf[VNode]
   }
 }

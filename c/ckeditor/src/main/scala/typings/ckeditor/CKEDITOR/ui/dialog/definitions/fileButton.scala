@@ -13,7 +13,7 @@ object fileButton {
   @scala.inline
   def apply(`for`: String, validate: () => Boolean = null): fileButton = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("for")(`for`)
+    __obj.updateDynamic("for")(`for`.asInstanceOf[js.Any])
     if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction0(validate))
     __obj.asInstanceOf[fileButton]
   }

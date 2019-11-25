@@ -17,8 +17,8 @@ trait PullsUpdateBranchParams extends js.Object {
 object PullsUpdateBranchParams {
   @scala.inline
   def apply(owner: String, pull_number: Double, repo: String, expected_head_sha: String = null): PullsUpdateBranchParams = {
-    val __obj = js.Dynamic.literal(owner = owner, pull_number = pull_number, repo = repo)
-    if (expected_head_sha != null) __obj.updateDynamic("expected_head_sha")(expected_head_sha)
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], pull_number = pull_number.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
+    if (expected_head_sha != null) __obj.updateDynamic("expected_head_sha")(expected_head_sha.asInstanceOf[js.Any])
     __obj.asInstanceOf[PullsUpdateBranchParams]
   }
 }

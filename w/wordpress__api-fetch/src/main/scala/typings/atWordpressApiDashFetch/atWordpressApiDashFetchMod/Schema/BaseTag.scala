@@ -31,8 +31,8 @@ object BaseTag {
     taxonomy: TaxonomyKind,
     _embedded: Record[String, js.Array[_]] = null
   ): BaseTag = {
-    val __obj = js.Dynamic.literal(_links = _links, count = count, description = description, id = id, link = link, meta = meta, name = name, slug = slug, taxonomy = taxonomy)
-    if (_embedded != null) __obj.updateDynamic("_embedded")(_embedded)
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any], taxonomy = taxonomy.asInstanceOf[js.Any])
+    if (_embedded != null) __obj.updateDynamic("_embedded")(_embedded.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseTag]
   }
 }

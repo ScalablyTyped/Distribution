@@ -19,11 +19,11 @@ object InputParamMapper {
     end: Int | Double = null,
     notSupported: js.UndefOr[Boolean] = js.undefined
   ): InputParamMapper = {
-    val __obj = js.Dynamic.literal(name = name, start = start)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (!js.isUndefined(notSupported)) __obj.updateDynamic("notSupported")(notSupported)
+    if (!js.isUndefined(notSupported)) __obj.updateDynamic("notSupported")(notSupported.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputParamMapper]
   }
 }

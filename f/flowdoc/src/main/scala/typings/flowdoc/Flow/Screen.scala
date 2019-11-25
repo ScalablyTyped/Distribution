@@ -25,9 +25,9 @@ object Screen {
     `type`: SCREEN,
     connections: js.Array[Connection] = null
   ): Screen = {
-    val __obj = js.Dynamic.literal(children = children, id = id, name = name, position = position, size = size, source = source.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
-    if (connections != null) __obj.updateDynamic("connections")(connections)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (connections != null) __obj.updateDynamic("connections")(connections.asInstanceOf[js.Any])
     __obj.asInstanceOf[Screen]
   }
 }

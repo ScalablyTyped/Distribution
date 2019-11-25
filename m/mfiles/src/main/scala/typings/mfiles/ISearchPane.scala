@@ -14,7 +14,7 @@ trait ISearchPane extends js.Object {
 object ISearchPane {
   @scala.inline
   def apply(Available: Boolean, Events: ISearchPaneEvents, SetTheme: ITheme => Unit, Visible: Boolean): ISearchPane = {
-    val __obj = js.Dynamic.literal(Available = Available, Events = Events, SetTheme = js.Any.fromFunction1(SetTheme), Visible = Visible)
+    val __obj = js.Dynamic.literal(Available = Available.asInstanceOf[js.Any], Events = Events.asInstanceOf[js.Any], SetTheme = js.Any.fromFunction1(SetTheme), Visible = Visible.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISearchPane]
   }

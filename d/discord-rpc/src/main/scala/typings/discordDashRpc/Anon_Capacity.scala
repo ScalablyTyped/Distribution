@@ -14,8 +14,8 @@ trait Anon_Capacity extends js.Object {
 object Anon_Capacity {
   @scala.inline
   def apply(capacity: Double, metadata: js.Any, owner: Anon_Id | String, `type`: String): Anon_Capacity = {
-    val __obj = js.Dynamic.literal(capacity = capacity, metadata = metadata, owner = owner.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(capacity = capacity.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Capacity]
   }
 }

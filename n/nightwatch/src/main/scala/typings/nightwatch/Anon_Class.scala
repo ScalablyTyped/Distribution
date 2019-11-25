@@ -14,8 +14,8 @@ trait Anon_Class extends js.Object {
 object Anon_Class {
   @scala.inline
   def apply(`class`: String, message: String, screen: String, stackTrace: js.Array[Anon_ClassName]): Anon_Class = {
-    val __obj = js.Dynamic.literal(message = message, screen = screen, stackTrace = stackTrace)
-    __obj.updateDynamic("class")(`class`)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], screen = screen.asInstanceOf[js.Any], stackTrace = stackTrace.asInstanceOf[js.Any])
+    __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Class]
   }
 }

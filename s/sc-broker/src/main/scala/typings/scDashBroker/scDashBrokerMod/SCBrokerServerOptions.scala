@@ -39,18 +39,18 @@ object SCBrokerServerOptions {
     socketPath: String = null
   ): SCBrokerServerOptions = {
     val __obj = js.Dynamic.literal(downgradeToUser = downgradeToUser.asInstanceOf[js.Any])
-    if (brokerControllerPath != null) __obj.updateDynamic("brokerControllerPath")(brokerControllerPath)
-    if (brokerOptions != null) __obj.updateDynamic("brokerOptions")(brokerOptions)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (brokerControllerPath != null) __obj.updateDynamic("brokerControllerPath")(brokerControllerPath.asInstanceOf[js.Any])
+    if (brokerOptions != null) __obj.updateDynamic("brokerOptions")(brokerOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
     if (expiryAccuracy != null) __obj.updateDynamic("expiryAccuracy")(expiryAccuracy.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(inspect)) __obj.updateDynamic("inspect")(inspect)
-    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(inspect)) __obj.updateDynamic("inspect")(inspect.asInstanceOf[js.Any])
+    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId.asInstanceOf[js.Any])
     if (ipcAckTimeout != null) __obj.updateDynamic("ipcAckTimeout")(ipcAckTimeout.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (processTermTimeout != null) __obj.updateDynamic("processTermTimeout")(processTermTimeout.asInstanceOf[js.Any])
-    if (secretKey != null) __obj.updateDynamic("secretKey")(secretKey)
-    if (socketPath != null) __obj.updateDynamic("socketPath")(socketPath)
+    if (secretKey != null) __obj.updateDynamic("secretKey")(secretKey.asInstanceOf[js.Any])
+    if (socketPath != null) __obj.updateDynamic("socketPath")(socketPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[SCBrokerServerOptions]
   }
 }

@@ -33,10 +33,10 @@ object Transaction {
     to: String = null,
     transactionIndex: Int | Double = null
   ): Transaction = {
-    val __obj = js.Dynamic.literal(from = from, gas = gas, gasPrice = gasPrice, hash = hash, input = input, nonce = nonce, value = value)
-    if (blockHash != null) __obj.updateDynamic("blockHash")(blockHash)
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], gas = gas.asInstanceOf[js.Any], gasPrice = gasPrice.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (blockHash != null) __obj.updateDynamic("blockHash")(blockHash.asInstanceOf[js.Any])
     if (blockNumber != null) __obj.updateDynamic("blockNumber")(blockNumber.asInstanceOf[js.Any])
-    if (to != null) __obj.updateDynamic("to")(to)
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     if (transactionIndex != null) __obj.updateDynamic("transactionIndex")(transactionIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[Transaction]
   }

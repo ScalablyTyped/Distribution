@@ -45,17 +45,17 @@ object HostedFieldsField {
     select: Boolean | Anon_Options = null,
     `type`: String = null
   ): HostedFieldsField = {
-    val __obj = js.Dynamic.literal(selector = selector)
-    if (!js.isUndefined(formatInput)) __obj.updateDynamic("formatInput")(formatInput)
+    val __obj = js.Dynamic.literal(selector = selector.asInstanceOf[js.Any])
+    if (!js.isUndefined(formatInput)) __obj.updateDynamic("formatInput")(formatInput.asInstanceOf[js.Any])
     if (maskInput != null) __obj.updateDynamic("maskInput")(maskInput.asInstanceOf[js.Any])
     if (maxCardLength != null) __obj.updateDynamic("maxCardLength")(maxCardLength.asInstanceOf[js.Any])
     if (maxlength != null) __obj.updateDynamic("maxlength")(maxlength.asInstanceOf[js.Any])
     if (minlength != null) __obj.updateDynamic("minlength")(minlength.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
-    if (prefill != null) __obj.updateDynamic("prefill")(prefill)
-    if (!js.isUndefined(rejectUnsupportedCards)) __obj.updateDynamic("rejectUnsupportedCards")(rejectUnsupportedCards)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
+    if (prefill != null) __obj.updateDynamic("prefill")(prefill.asInstanceOf[js.Any])
+    if (!js.isUndefined(rejectUnsupportedCards)) __obj.updateDynamic("rejectUnsupportedCards")(rejectUnsupportedCards.asInstanceOf[js.Any])
     if (select != null) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HostedFieldsField]
   }
 }

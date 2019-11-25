@@ -12,7 +12,7 @@ trait SortableNode extends js.Object {
 object SortableNode {
   @scala.inline
   def apply(data: Anon_Weight): SortableNode = {
-    val __obj = js.Dynamic.literal(data = data)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SortableNode]
   }

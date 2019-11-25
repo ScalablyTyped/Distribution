@@ -29,14 +29,14 @@ object i18nOptions {
     translationsHeaders: OutgoingHttpHeaders = null
   ): i18nOptions = {
     val __obj = js.Dynamic.literal()
-    if (close != null) __obj.updateDynamic("close")(close)
-    if (defaultLocale != null) __obj.updateDynamic("defaultLocale")(defaultLocale)
-    if (!js.isUndefined(hideMissing)) __obj.updateDynamic("hideMissing")(hideMissing)
-    if (hostUrl != null) __obj.updateDynamic("hostUrl")(hostUrl)
-    if (open != null) __obj.updateDynamic("open")(open)
+    if (close != null) __obj.updateDynamic("close")(close.asInstanceOf[js.Any])
+    if (defaultLocale != null) __obj.updateDynamic("defaultLocale")(defaultLocale.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideMissing)) __obj.updateDynamic("hideMissing")(hideMissing.asInstanceOf[js.Any])
+    if (hostUrl != null) __obj.updateDynamic("hostUrl")(hostUrl.asInstanceOf[js.Any])
+    if (open != null) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
     if (purify != null) __obj.updateDynamic("purify")(js.Any.fromFunction0(purify))
-    if (!js.isUndefined(sameLocaleOnServerConnection)) __obj.updateDynamic("sameLocaleOnServerConnection")(sameLocaleOnServerConnection)
-    if (translationsHeaders != null) __obj.updateDynamic("translationsHeaders")(translationsHeaders)
+    if (!js.isUndefined(sameLocaleOnServerConnection)) __obj.updateDynamic("sameLocaleOnServerConnection")(sameLocaleOnServerConnection.asInstanceOf[js.Any])
+    if (translationsHeaders != null) __obj.updateDynamic("translationsHeaders")(translationsHeaders.asInstanceOf[js.Any])
     __obj.asInstanceOf[i18nOptions]
   }
 }

@@ -23,7 +23,7 @@ object IVaultsOnServer {
     GetVaultIndexByName: String => Double,
     Item: Double => IVaultOnServer
   ): IVaultsOnServer = {
-    val __obj = js.Dynamic.literal(Count = Count, GetVaultByGUID = js.Any.fromFunction1(GetVaultByGUID), GetVaultByName = js.Any.fromFunction1(GetVaultByName), GetVaultIndexByGUID = js.Any.fromFunction1(GetVaultIndexByGUID), GetVaultIndexByName = js.Any.fromFunction1(GetVaultIndexByName), Item = js.Any.fromFunction1(Item))
+    val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], GetVaultByGUID = js.Any.fromFunction1(GetVaultByGUID), GetVaultByName = js.Any.fromFunction1(GetVaultByName), GetVaultIndexByGUID = js.Any.fromFunction1(GetVaultIndexByGUID), GetVaultIndexByName = js.Any.fromFunction1(GetVaultIndexByName), Item = js.Any.fromFunction1(Item))
   
     __obj.asInstanceOf[IVaultsOnServer]
   }

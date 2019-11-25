@@ -72,9 +72,9 @@ object predominanceRendererResult {
     opacity: opacityVisualVariableResult = null,
     size: sizeVisualVariableResult = null
   ): predominanceRendererResult = {
-    val __obj = js.Dynamic.literal(basemapId = basemapId, basemapTheme = basemapTheme, constructor = constructor, excludedCategoryInfos = excludedCategoryInfos, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), predominanceScheme = predominanceScheme, predominantCategoryInfos = predominantCategoryInfos, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), renderer = renderer)
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity)
-    if (size != null) __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(basemapId = basemapId.asInstanceOf[js.Any], basemapTheme = basemapTheme.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], excludedCategoryInfos = excludedCategoryInfos.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), predominanceScheme = predominanceScheme.asInstanceOf[js.Any], predominantCategoryInfos = predominantCategoryInfos.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), renderer = renderer.asInstanceOf[js.Any])
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[predominanceRendererResult]
   }
 }

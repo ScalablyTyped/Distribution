@@ -25,8 +25,8 @@ object InstanceMoveRequest {
   @scala.inline
   def apply(destinationZone: String = null, targetInstance: String = null): InstanceMoveRequest = {
     val __obj = js.Dynamic.literal()
-    if (destinationZone != null) __obj.updateDynamic("destinationZone")(destinationZone)
-    if (targetInstance != null) __obj.updateDynamic("targetInstance")(targetInstance)
+    if (destinationZone != null) __obj.updateDynamic("destinationZone")(destinationZone.asInstanceOf[js.Any])
+    if (targetInstance != null) __obj.updateDynamic("targetInstance")(targetInstance.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceMoveRequest]
   }
 }

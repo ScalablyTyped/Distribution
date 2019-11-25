@@ -26,11 +26,11 @@ object Anon_Body {
     interpreter: InterpreterDirectiveKind = null,
     loc: SourceLocationKind = null
   ): Anon_Body = {
-    val __obj = js.Dynamic.literal(body = body)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (directives != null) __obj.updateDynamic("directives")(directives)
-    if (interpreter != null) __obj.updateDynamic("interpreter")(interpreter)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (directives != null) __obj.updateDynamic("directives")(directives.asInstanceOf[js.Any])
+    if (interpreter != null) __obj.updateDynamic("interpreter")(interpreter.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Body]
   }
 }

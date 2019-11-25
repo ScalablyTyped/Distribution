@@ -29,9 +29,9 @@ object DefaultSuggestResult {
     descriptionStyles: js.Array[Anon_Length] = null,
     descriptionStylesRaw: js.Array[Anon_Offset] = null
   ): DefaultSuggestResult = {
-    val __obj = js.Dynamic.literal(description = description)
-    if (descriptionStyles != null) __obj.updateDynamic("descriptionStyles")(descriptionStyles)
-    if (descriptionStylesRaw != null) __obj.updateDynamic("descriptionStylesRaw")(descriptionStylesRaw)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any])
+    if (descriptionStyles != null) __obj.updateDynamic("descriptionStyles")(descriptionStyles.asInstanceOf[js.Any])
+    if (descriptionStylesRaw != null) __obj.updateDynamic("descriptionStylesRaw")(descriptionStylesRaw.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultSuggestResult]
   }
 }

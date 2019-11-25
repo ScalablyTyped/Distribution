@@ -12,7 +12,7 @@ trait MergeCustomersParams extends js.Object {
 object MergeCustomersParams {
   @scala.inline
   def apply(from: MergeID, into: MergeID): MergeCustomersParams = {
-    val __obj = js.Dynamic.literal(from = from, into = into)
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], into = into.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MergeCustomersParams]
   }

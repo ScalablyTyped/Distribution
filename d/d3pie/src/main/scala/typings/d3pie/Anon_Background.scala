@@ -14,9 +14,9 @@ object Anon_Background {
   @scala.inline
   def apply(background: String = null, segmentStroke: String = null, segments: js.Array[String] = null): Anon_Background = {
     val __obj = js.Dynamic.literal()
-    if (background != null) __obj.updateDynamic("background")(background)
-    if (segmentStroke != null) __obj.updateDynamic("segmentStroke")(segmentStroke)
-    if (segments != null) __obj.updateDynamic("segments")(segments)
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    if (segmentStroke != null) __obj.updateDynamic("segmentStroke")(segmentStroke.asInstanceOf[js.Any])
+    if (segments != null) __obj.updateDynamic("segments")(segments.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Background]
   }
 }

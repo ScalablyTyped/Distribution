@@ -35,10 +35,10 @@ object ClusterCreationOptions {
     hiveMetastore: Anon_Database = null,
     oozieMetastore: Anon_Database = null
   ): ClusterCreationOptions = {
-    val __obj = js.Dynamic.literal(defaultStorageAccountKey = defaultStorageAccountKey, defaultStorageAccountName = defaultStorageAccountName, defaultStorageContainer = defaultStorageContainer, location = location, name = name, nodes = nodes, password = password, user = user)
-    if (additionalStorageAccounts != null) __obj.updateDynamic("additionalStorageAccounts")(additionalStorageAccounts)
-    if (hiveMetastore != null) __obj.updateDynamic("hiveMetastore")(hiveMetastore)
-    if (oozieMetastore != null) __obj.updateDynamic("oozieMetastore")(oozieMetastore)
+    val __obj = js.Dynamic.literal(defaultStorageAccountKey = defaultStorageAccountKey.asInstanceOf[js.Any], defaultStorageAccountName = defaultStorageAccountName.asInstanceOf[js.Any], defaultStorageContainer = defaultStorageContainer.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
+    if (additionalStorageAccounts != null) __obj.updateDynamic("additionalStorageAccounts")(additionalStorageAccounts.asInstanceOf[js.Any])
+    if (hiveMetastore != null) __obj.updateDynamic("hiveMetastore")(hiveMetastore.asInstanceOf[js.Any])
+    if (oozieMetastore != null) __obj.updateDynamic("oozieMetastore")(oozieMetastore.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterCreationOptions]
   }
 }

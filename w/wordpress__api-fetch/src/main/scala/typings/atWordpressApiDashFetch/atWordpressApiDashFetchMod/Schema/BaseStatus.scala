@@ -29,10 +29,10 @@ object BaseStatus {
     slug: String,
     _embedded: Record[String, js.Array[_]] = null
   ): BaseStatus = {
-    val __obj = js.Dynamic.literal(_links = _links, name = name, public = public, queryable = queryable, show_in_list = show_in_list, slug = slug)
-    __obj.updateDynamic("private")(`private`)
-    __obj.updateDynamic("protected")(`protected`)
-    if (_embedded != null) __obj.updateDynamic("_embedded")(_embedded)
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], public = public.asInstanceOf[js.Any], queryable = queryable.asInstanceOf[js.Any], show_in_list = show_in_list.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
+    __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
+    __obj.updateDynamic("protected")(`protected`.asInstanceOf[js.Any])
+    if (_embedded != null) __obj.updateDynamic("_embedded")(_embedded.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseStatus]
   }
 }

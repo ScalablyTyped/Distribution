@@ -19,11 +19,11 @@ object PaymentDetailsUpdate {
     total: PaymentItem = null
   ): PaymentDetailsUpdate = {
     val __obj = js.Dynamic.literal()
-    if (displayItems != null) __obj.updateDynamic("displayItems")(displayItems)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers)
-    if (shippingOptions != null) __obj.updateDynamic("shippingOptions")(shippingOptions)
-    if (total != null) __obj.updateDynamic("total")(total)
+    if (displayItems != null) __obj.updateDynamic("displayItems")(displayItems.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers.asInstanceOf[js.Any])
+    if (shippingOptions != null) __obj.updateDynamic("shippingOptions")(shippingOptions.asInstanceOf[js.Any])
+    if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentDetailsUpdate]
   }
 }

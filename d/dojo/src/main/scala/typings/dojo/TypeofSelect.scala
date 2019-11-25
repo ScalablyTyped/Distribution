@@ -28,7 +28,7 @@ object TypeofSelect {
   def apply(
     _Menu: Instantiable2[js.UndefOr[/* params */ js.Object], js.UndefOr[/* srcNodeRef */ HTMLElement], _Menu]
   ): TypeofSelect = {
-    val __obj = js.Dynamic.literal(_Menu = _Menu)
+    val __obj = js.Dynamic.literal(_Menu = _Menu.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeofSelect]
   }

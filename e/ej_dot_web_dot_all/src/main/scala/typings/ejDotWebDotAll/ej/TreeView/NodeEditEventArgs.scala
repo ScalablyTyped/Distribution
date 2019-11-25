@@ -48,15 +48,15 @@ object NodeEditEventArgs {
     `type`: String = null
   ): NodeEditEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (event != null) __obj.updateDynamic("event")(event)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (newText != null) __obj.updateDynamic("newText")(newText)
-    if (nodeDetails != null) __obj.updateDynamic("nodeDetails")(nodeDetails)
-    if (oldText != null) __obj.updateDynamic("oldText")(oldText)
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (newText != null) __obj.updateDynamic("newText")(newText.asInstanceOf[js.Any])
+    if (nodeDetails != null) __obj.updateDynamic("nodeDetails")(nodeDetails.asInstanceOf[js.Any])
+    if (oldText != null) __obj.updateDynamic("oldText")(oldText.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeEditEventArgs]
   }
 }

@@ -11,7 +11,7 @@ trait gradient extends js.Object {
 object gradient {
   @scala.inline
   def apply(colors: js.Array[_]): gradient = {
-    val __obj = js.Dynamic.literal(colors = colors)
+    val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[gradient]
   }

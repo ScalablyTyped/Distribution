@@ -14,9 +14,9 @@ trait Anon_BaseDisp extends js.Object {
 object Anon_BaseDisp {
   @scala.inline
   def apply(disp: Double, scale: Double, base: ArmRegister = null, index: ArmRegister = null): Anon_BaseDisp = {
-    val __obj = js.Dynamic.literal(disp = disp, scale = scale)
-    if (base != null) __obj.updateDynamic("base")(base)
-    if (index != null) __obj.updateDynamic("index")(index)
+    val __obj = js.Dynamic.literal(disp = disp.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any])
+    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BaseDisp]
   }
 }

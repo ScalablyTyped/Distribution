@@ -14,7 +14,7 @@ trait Schema extends js.Object {
 object Schema {
   @scala.inline
   def apply(merge: Boolean, name: String, schema: js.Array[Tag]): Schema = {
-    val __obj = js.Dynamic.literal(merge = merge, name = name, schema = schema)
+    val __obj = js.Dynamic.literal(merge = merge.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Schema]
   }

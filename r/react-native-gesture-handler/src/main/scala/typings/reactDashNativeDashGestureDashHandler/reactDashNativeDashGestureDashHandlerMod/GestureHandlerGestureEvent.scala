@@ -11,7 +11,7 @@ trait GestureHandlerGestureEvent extends js.Object {
 object GestureHandlerGestureEvent {
   @scala.inline
   def apply(nativeEvent: GestureHandlerGestureEventNativeEvent): GestureHandlerGestureEvent = {
-    val __obj = js.Dynamic.literal(nativeEvent = nativeEvent)
+    val __obj = js.Dynamic.literal(nativeEvent = nativeEvent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GestureHandlerGestureEvent]
   }

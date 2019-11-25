@@ -32,10 +32,10 @@ object ColumnSortingEventUIParam {
     owner: js.Any = null
   ): ColumnSortingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey)
-    if (direction != null) __obj.updateDynamic("direction")(direction)
-    if (newExpressions != null) __obj.updateDynamic("newExpressions")(newExpressions)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey.asInstanceOf[js.Any])
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    if (newExpressions != null) __obj.updateDynamic("newExpressions")(newExpressions.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnSortingEventUIParam]
   }
 }

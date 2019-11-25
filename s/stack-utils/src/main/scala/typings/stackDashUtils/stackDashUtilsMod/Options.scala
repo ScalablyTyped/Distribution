@@ -19,8 +19,8 @@ object Options {
     wrapCallSite: /* callSite */ CallSite => CallSite = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
-    if (internals != null) __obj.updateDynamic("internals")(internals)
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
+    if (internals != null) __obj.updateDynamic("internals")(internals.asInstanceOf[js.Any])
     if (wrapCallSite != null) __obj.updateDynamic("wrapCallSite")(js.Any.fromFunction1(wrapCallSite))
     __obj.asInstanceOf[Options]
   }

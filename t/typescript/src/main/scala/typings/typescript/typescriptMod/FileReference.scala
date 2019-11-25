@@ -11,7 +11,7 @@ trait FileReference extends TextRange {
 object FileReference {
   @scala.inline
   def apply(end: Double, fileName: String, pos: Double): FileReference = {
-    val __obj = js.Dynamic.literal(end = end, fileName = fileName, pos = pos)
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FileReference]
   }

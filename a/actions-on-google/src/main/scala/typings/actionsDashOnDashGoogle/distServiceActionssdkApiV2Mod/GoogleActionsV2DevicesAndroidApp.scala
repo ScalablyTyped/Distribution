@@ -23,8 +23,8 @@ object GoogleActionsV2DevicesAndroidApp {
     versions: js.Array[GoogleActionsV2DevicesAndroidAppVersionFilter] = null
   ): GoogleActionsV2DevicesAndroidApp = {
     val __obj = js.Dynamic.literal()
-    if (packageName != null) __obj.updateDynamic("packageName")(packageName)
-    if (versions != null) __obj.updateDynamic("versions")(versions)
+    if (packageName != null) __obj.updateDynamic("packageName")(packageName.asInstanceOf[js.Any])
+    if (versions != null) __obj.updateDynamic("versions")(versions.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2DevicesAndroidApp]
   }
 }

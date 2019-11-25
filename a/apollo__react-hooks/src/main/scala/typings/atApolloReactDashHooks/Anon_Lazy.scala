@@ -12,7 +12,7 @@ object Anon_Lazy {
   @scala.inline
   def apply(`lazy`: js.UndefOr[Boolean] = js.undefined): Anon_Lazy = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`)
+    if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Lazy]
   }
 }

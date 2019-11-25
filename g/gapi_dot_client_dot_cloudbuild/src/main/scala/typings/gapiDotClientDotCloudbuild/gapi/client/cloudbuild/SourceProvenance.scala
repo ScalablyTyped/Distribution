@@ -39,9 +39,9 @@ object SourceProvenance {
     resolvedStorageSource: StorageSource = null
   ): SourceProvenance = {
     val __obj = js.Dynamic.literal()
-    if (fileHashes != null) __obj.updateDynamic("fileHashes")(fileHashes)
-    if (resolvedRepoSource != null) __obj.updateDynamic("resolvedRepoSource")(resolvedRepoSource)
-    if (resolvedStorageSource != null) __obj.updateDynamic("resolvedStorageSource")(resolvedStorageSource)
+    if (fileHashes != null) __obj.updateDynamic("fileHashes")(fileHashes.asInstanceOf[js.Any])
+    if (resolvedRepoSource != null) __obj.updateDynamic("resolvedRepoSource")(resolvedRepoSource.asInstanceOf[js.Any])
+    if (resolvedStorageSource != null) __obj.updateDynamic("resolvedStorageSource")(resolvedStorageSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceProvenance]
   }
 }

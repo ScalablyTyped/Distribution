@@ -12,7 +12,7 @@ trait ContextConfigData extends js.Object {
 object ContextConfigData {
   @scala.inline
   def apply(options: Anon_Alpha): ContextConfigData = {
-    val __obj = js.Dynamic.literal(options = options)
+    val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ContextConfigData]
   }

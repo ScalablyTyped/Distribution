@@ -43,11 +43,11 @@ object CreateSceneFromObjectConfig {
   ): CreateSceneFromObjectConfig = {
     val __obj = js.Dynamic.literal()
     if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
-    if (extend != null) __obj.updateDynamic("extend")(extend)
-    if (`extend.data` != null) __obj.updateDynamic("extend.data")(`extend.data`)
+    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
+    if (`extend.data` != null) __obj.updateDynamic("extend.data")(`extend.data`.asInstanceOf[js.Any])
     if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction1(init))
     if (preload != null) __obj.updateDynamic("preload")(js.Any.fromFunction0(preload))
-    if (update != null) __obj.updateDynamic("update")(update)
+    if (update != null) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSceneFromObjectConfig]
   }
 }

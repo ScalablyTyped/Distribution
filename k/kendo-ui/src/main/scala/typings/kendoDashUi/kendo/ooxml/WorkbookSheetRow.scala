@@ -18,7 +18,7 @@ object WorkbookSheetRow {
     index: Int | Double = null
   ): WorkbookSheetRow = {
     val __obj = js.Dynamic.literal()
-    if (cells != null) __obj.updateDynamic("cells")(cells)
+    if (cells != null) __obj.updateDynamic("cells")(cells.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookSheetRow]

@@ -34,7 +34,7 @@ object Resource {
     getContent: () => js.Promise[js.Object] = null,
     setContent: (/* content */ String, /* commit */ Boolean) => js.Promise[StringDictionary[_]] = null
   ): Resource = {
-    val __obj = js.Dynamic.literal(url = url)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     if (getContent != null) __obj.updateDynamic("getContent")(js.Any.fromFunction0(getContent))
     if (setContent != null) __obj.updateDynamic("setContent")(js.Any.fromFunction2(setContent))
     __obj.asInstanceOf[Resource]

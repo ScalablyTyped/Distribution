@@ -15,8 +15,8 @@ object RenderProps {
   @scala.inline
   def apply(className: String = null, description: String = null, render: ReactNode = null): RenderProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (description != null) __obj.updateDynamic("description")(description)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (render != null) __obj.updateDynamic("render")(render.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderProps]
   }

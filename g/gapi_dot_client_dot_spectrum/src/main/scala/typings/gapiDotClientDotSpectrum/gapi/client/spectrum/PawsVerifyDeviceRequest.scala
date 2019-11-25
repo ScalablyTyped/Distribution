@@ -25,9 +25,9 @@ object PawsVerifyDeviceRequest {
   @scala.inline
   def apply(deviceDescs: js.Array[DeviceDescriptor] = null, `type`: String = null, version: String = null): PawsVerifyDeviceRequest = {
     val __obj = js.Dynamic.literal()
-    if (deviceDescs != null) __obj.updateDynamic("deviceDescs")(deviceDescs)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (deviceDescs != null) __obj.updateDynamic("deviceDescs")(deviceDescs.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[PawsVerifyDeviceRequest]
   }
 }

@@ -13,7 +13,7 @@ trait Anon_DestPos extends js.Object {
 object Anon_DestPos {
   @scala.inline
   def apply(destPos: Axis, duration: Double): Anon_DestPos = {
-    val __obj = js.Dynamic.literal(destPos = destPos, duration = duration)
+    val __obj = js.Dynamic.literal(destPos = destPos.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DestPos]
   }

@@ -18,9 +18,9 @@ object HelloJSOAuth2Def {
     response_type: HelloJSTokenResponseType = null
   ): HelloJSOAuth2Def = {
     val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
-    if (auth != null) __obj.updateDynamic("auth")(auth)
-    if (grant != null) __obj.updateDynamic("grant")(grant)
-    if (response_type != null) __obj.updateDynamic("response_type")(response_type)
+    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
+    if (grant != null) __obj.updateDynamic("grant")(grant.asInstanceOf[js.Any])
+    if (response_type != null) __obj.updateDynamic("response_type")(response_type.asInstanceOf[js.Any])
     __obj.asInstanceOf[HelloJSOAuth2Def]
   }
 }

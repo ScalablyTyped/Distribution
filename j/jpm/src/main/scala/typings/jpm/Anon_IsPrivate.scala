@@ -24,8 +24,8 @@ object Anon_IsPrivate {
     onDeactivate: /* window */ BrowserWindow => _ = null,
     onOpen: /* window */ BrowserWindow => _ = null
   ): Anon_IsPrivate = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (!js.isUndefined(isPrivate)) __obj.updateDynamic("isPrivate")(isPrivate)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPrivate)) __obj.updateDynamic("isPrivate")(isPrivate.asInstanceOf[js.Any])
     if (onActivate != null) __obj.updateDynamic("onActivate")(js.Any.fromFunction1(onActivate))
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
     if (onDeactivate != null) __obj.updateDynamic("onDeactivate")(js.Any.fromFunction1(onDeactivate))

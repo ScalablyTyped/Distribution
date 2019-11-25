@@ -14,3 +14,14 @@ import scala.scalajs.js.annotation._
 */
 trait LineCap extends js.Object
 
+object LineCap {
+  @scala.inline
+  def butt: typings.heremaps.heremapsStrings.butt = this.cast("butt")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def round: typings.heremaps.heremapsStrings.round = this.cast("round")
+  @scala.inline
+  def square: typings.heremaps.heremapsStrings.square = this.cast("square")
+}
+

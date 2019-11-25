@@ -13,7 +13,7 @@ trait Errors extends js.Object {
 object Errors {
   @scala.inline
   def apply(validation: StringDictionary[Anon_Required]): Errors = {
-    val __obj = js.Dynamic.literal(validation = validation)
+    val __obj = js.Dynamic.literal(validation = validation.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Errors]
   }

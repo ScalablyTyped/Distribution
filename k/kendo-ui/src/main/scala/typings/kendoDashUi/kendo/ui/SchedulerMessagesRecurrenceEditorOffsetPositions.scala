@@ -22,11 +22,11 @@ object SchedulerMessagesRecurrenceEditorOffsetPositions {
     third: String = null
   ): SchedulerMessagesRecurrenceEditorOffsetPositions = {
     val __obj = js.Dynamic.literal()
-    if (first != null) __obj.updateDynamic("first")(first)
-    if (fourth != null) __obj.updateDynamic("fourth")(fourth)
-    if (last != null) __obj.updateDynamic("last")(last)
-    if (second != null) __obj.updateDynamic("second")(second)
-    if (third != null) __obj.updateDynamic("third")(third)
+    if (first != null) __obj.updateDynamic("first")(first.asInstanceOf[js.Any])
+    if (fourth != null) __obj.updateDynamic("fourth")(fourth.asInstanceOf[js.Any])
+    if (last != null) __obj.updateDynamic("last")(last.asInstanceOf[js.Any])
+    if (second != null) __obj.updateDynamic("second")(second.asInstanceOf[js.Any])
+    if (third != null) __obj.updateDynamic("third")(third.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchedulerMessagesRecurrenceEditorOffsetPositions]
   }
 }

@@ -17,7 +17,7 @@ object WidthProviderProps {
   @scala.inline
   def apply(measureBeforeMount: js.UndefOr[Boolean] = js.undefined): WidthProviderProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(measureBeforeMount)) __obj.updateDynamic("measureBeforeMount")(measureBeforeMount)
+    if (!js.isUndefined(measureBeforeMount)) __obj.updateDynamic("measureBeforeMount")(measureBeforeMount.asInstanceOf[js.Any])
     __obj.asInstanceOf[WidthProviderProps]
   }
 }

@@ -23,10 +23,10 @@ object MutationResult {
     data: TData = null,
     error: ApolloError = null
   ): MutationResult[TData] = {
-    val __obj = js.Dynamic.literal(called = called, loading = loading)
-    if (client != null) __obj.updateDynamic("client")(client)
+    val __obj = js.Dynamic.literal(called = called.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any])
+    if (client != null) __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     __obj.asInstanceOf[MutationResult[TData]]
   }
 }

@@ -28,14 +28,14 @@ object ConfigOptions {
     valueKey: String = null
   ): ConfigOptions = {
     val __obj = js.Dynamic.literal()
-    if (attrKey != null) __obj.updateDynamic("attrKey")(attrKey)
-    if (attrPrefix != null) __obj.updateDynamic("attrPrefix")(attrPrefix)
-    if (!js.isUndefined(autoDate)) __obj.updateDynamic("autoDate")(autoDate)
-    if (!js.isUndefined(ignorePrefixedNodes)) __obj.updateDynamic("ignorePrefixedNodes")(ignorePrefixedNodes)
-    if (!js.isUndefined(lowerCaseTags)) __obj.updateDynamic("lowerCaseTags")(lowerCaseTags)
-    if (!js.isUndefined(parseValues)) __obj.updateDynamic("parseValues")(parseValues)
-    if (!js.isUndefined(trueIsEmpty)) __obj.updateDynamic("trueIsEmpty")(trueIsEmpty)
-    if (valueKey != null) __obj.updateDynamic("valueKey")(valueKey)
+    if (attrKey != null) __obj.updateDynamic("attrKey")(attrKey.asInstanceOf[js.Any])
+    if (attrPrefix != null) __obj.updateDynamic("attrPrefix")(attrPrefix.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoDate)) __obj.updateDynamic("autoDate")(autoDate.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignorePrefixedNodes)) __obj.updateDynamic("ignorePrefixedNodes")(ignorePrefixedNodes.asInstanceOf[js.Any])
+    if (!js.isUndefined(lowerCaseTags)) __obj.updateDynamic("lowerCaseTags")(lowerCaseTags.asInstanceOf[js.Any])
+    if (!js.isUndefined(parseValues)) __obj.updateDynamic("parseValues")(parseValues.asInstanceOf[js.Any])
+    if (!js.isUndefined(trueIsEmpty)) __obj.updateDynamic("trueIsEmpty")(trueIsEmpty.asInstanceOf[js.Any])
+    if (valueKey != null) __obj.updateDynamic("valueKey")(valueKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigOptions]
   }
 }

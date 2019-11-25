@@ -24,7 +24,7 @@ object Anon_1EmptyInfiniteNonEmptyAnonCODENAMEERRORInfinite {
       _
     ]
   ): Anon_1EmptyInfiniteNonEmptyAnonCODENAMEERRORInfinite[TupleSet] = {
-    val __obj = js.Dynamic.literal(empty = empty, infinite = infinite, nonEmpty = nonEmpty)
+    val __obj = js.Dynamic.literal(empty = empty.asInstanceOf[js.Any], infinite = infinite.asInstanceOf[js.Any], nonEmpty = nonEmpty.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_1EmptyInfiniteNonEmptyAnonCODENAMEERRORInfinite[TupleSet]]
   }

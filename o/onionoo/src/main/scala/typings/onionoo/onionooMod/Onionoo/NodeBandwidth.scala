@@ -55,9 +55,9 @@ object NodeBandwidth {
       Record[`3_days` | `1_week` | `1_month` | `6_months` | `1_year` | `5_years`, Histogram]
     ] = null
   ): NodeBandwidth = {
-    val __obj = js.Dynamic.literal(fingerprint = fingerprint)
-    if (read_history != null) __obj.updateDynamic("read_history")(read_history)
-    if (write_history != null) __obj.updateDynamic("write_history")(write_history)
+    val __obj = js.Dynamic.literal(fingerprint = fingerprint.asInstanceOf[js.Any])
+    if (read_history != null) __obj.updateDynamic("read_history")(read_history.asInstanceOf[js.Any])
+    if (write_history != null) __obj.updateDynamic("write_history")(write_history.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeBandwidth]
   }
 }

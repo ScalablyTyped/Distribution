@@ -17,7 +17,7 @@ trait Project extends js.Object {
 object Project {
   @scala.inline
   def apply(branches: StringDictionary[String], delete: Boolean, name: String, read: Boolean, write: Boolean): Project = {
-    val __obj = js.Dynamic.literal(branches = branches, delete = delete, name = name, read = read, write = write)
+    val __obj = js.Dynamic.literal(branches = branches.asInstanceOf[js.Any], delete = delete.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], read = read.asInstanceOf[js.Any], write = write.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Project]
   }

@@ -20,9 +20,9 @@ object UserDefinedVariableConfiguration {
   @scala.inline
   def apply(dataType: String = null, reportName: String = null, variableType: String = null): UserDefinedVariableConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (dataType != null) __obj.updateDynamic("dataType")(dataType)
-    if (reportName != null) __obj.updateDynamic("reportName")(reportName)
-    if (variableType != null) __obj.updateDynamic("variableType")(variableType)
+    if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
+    if (reportName != null) __obj.updateDynamic("reportName")(reportName.asInstanceOf[js.Any])
+    if (variableType != null) __obj.updateDynamic("variableType")(variableType.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserDefinedVariableConfiguration]
   }
 }

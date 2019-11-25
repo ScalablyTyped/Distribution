@@ -18,8 +18,8 @@ trait CaptureGroup extends js.Object {
 object CaptureGroup {
   @scala.inline
   def apply(group: String, location: js.Array[Double] = null): CaptureGroup = {
-    val __obj = js.Dynamic.literal(group = group)
-    if (location != null) __obj.updateDynamic("location")(location)
+    val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[CaptureGroup]
   }
 }

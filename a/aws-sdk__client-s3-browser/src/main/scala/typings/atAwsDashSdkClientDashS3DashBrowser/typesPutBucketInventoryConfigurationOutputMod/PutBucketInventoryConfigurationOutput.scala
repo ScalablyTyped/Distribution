@@ -14,7 +14,7 @@ trait PutBucketInventoryConfigurationOutput
 object PutBucketInventoryConfigurationOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata): PutBucketInventoryConfigurationOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PutBucketInventoryConfigurationOutput]
   }

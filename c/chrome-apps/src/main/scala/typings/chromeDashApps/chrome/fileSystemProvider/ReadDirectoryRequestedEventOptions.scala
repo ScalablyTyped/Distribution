@@ -53,7 +53,7 @@ object ReadDirectoryRequestedEventOptions {
     size: Boolean,
     thumbnail: Boolean
   ): ReadDirectoryRequestedEventOptions = {
-    val __obj = js.Dynamic.literal(directoryPath = directoryPath, fileSystemId = fileSystemId, isDirectory = isDirectory, mimeType = mimeType, modificationTime = modificationTime, name = name, requestId = requestId, size = size, thumbnail = thumbnail)
+    val __obj = js.Dynamic.literal(directoryPath = directoryPath.asInstanceOf[js.Any], fileSystemId = fileSystemId.asInstanceOf[js.Any], isDirectory = isDirectory.asInstanceOf[js.Any], mimeType = mimeType.asInstanceOf[js.Any], modificationTime = modificationTime.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], thumbnail = thumbnail.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReadDirectoryRequestedEventOptions]
   }

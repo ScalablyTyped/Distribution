@@ -12,7 +12,7 @@ trait Anon_DatasetIdFeatureId extends js.Object {
 object Anon_DatasetIdFeatureId {
   @scala.inline
   def apply(datasetId: String, featureId: String): Anon_DatasetIdFeatureId = {
-    val __obj = js.Dynamic.literal(datasetId = datasetId, featureId = featureId)
+    val __obj = js.Dynamic.literal(datasetId = datasetId.asInstanceOf[js.Any], featureId = featureId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DatasetIdFeatureId]
   }

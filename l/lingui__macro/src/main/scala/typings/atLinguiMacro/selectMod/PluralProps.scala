@@ -22,7 +22,7 @@ object PluralProps {
     two: String | MessageDescriptor = null,
     zero: String | MessageDescriptor = null
   ): PluralProps = {
-    val __obj = js.Dynamic.literal(other = other.asInstanceOf[js.Any], value = value)
+    val __obj = js.Dynamic.literal(other = other.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     if (few != null) __obj.updateDynamic("few")(few.asInstanceOf[js.Any])
     if (many != null) __obj.updateDynamic("many")(many.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])

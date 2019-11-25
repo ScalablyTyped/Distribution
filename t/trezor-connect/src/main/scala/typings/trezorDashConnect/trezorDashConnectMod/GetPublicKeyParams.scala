@@ -22,13 +22,13 @@ object GetPublicKeyParams {
     keepSession: js.UndefOr[Boolean] = js.undefined,
     useEmptyPassphrase: js.UndefOr[Boolean] = js.undefined
   ): GetPublicKeyParams = {
-    val __obj = js.Dynamic.literal(path = path)
-    if (!js.isUndefined(allowSeedlessDevice)) __obj.updateDynamic("allowSeedlessDevice")(allowSeedlessDevice)
-    if (coin != null) __obj.updateDynamic("coin")(coin)
-    if (!js.isUndefined(crossChain)) __obj.updateDynamic("crossChain")(crossChain)
-    if (device != null) __obj.updateDynamic("device")(device)
-    if (!js.isUndefined(keepSession)) __obj.updateDynamic("keepSession")(keepSession)
-    if (!js.isUndefined(useEmptyPassphrase)) __obj.updateDynamic("useEmptyPassphrase")(useEmptyPassphrase)
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowSeedlessDevice)) __obj.updateDynamic("allowSeedlessDevice")(allowSeedlessDevice.asInstanceOf[js.Any])
+    if (coin != null) __obj.updateDynamic("coin")(coin.asInstanceOf[js.Any])
+    if (!js.isUndefined(crossChain)) __obj.updateDynamic("crossChain")(crossChain.asInstanceOf[js.Any])
+    if (device != null) __obj.updateDynamic("device")(device.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepSession)) __obj.updateDynamic("keepSession")(keepSession.asInstanceOf[js.Any])
+    if (!js.isUndefined(useEmptyPassphrase)) __obj.updateDynamic("useEmptyPassphrase")(useEmptyPassphrase.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPublicKeyParams]
   }
 }

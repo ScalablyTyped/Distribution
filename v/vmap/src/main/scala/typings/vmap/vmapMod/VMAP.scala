@@ -25,7 +25,7 @@ trait VMAP extends js.Object {
 object VMAP {
   @scala.inline
   def apply(adBreaks: js.Array[VMAPAdBreak], extensions: js.Array[VMAPExtension], version: String): VMAP = {
-    val __obj = js.Dynamic.literal(adBreaks = adBreaks, extensions = extensions, version = version)
+    val __obj = js.Dynamic.literal(adBreaks = adBreaks.asInstanceOf[js.Any], extensions = extensions.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[VMAP]
   }

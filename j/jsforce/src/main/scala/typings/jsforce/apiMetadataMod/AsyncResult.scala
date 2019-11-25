@@ -15,9 +15,9 @@ trait AsyncResult extends js.Object {
 object AsyncResult {
   @scala.inline
   def apply(done: Boolean, id: String, state: String, message: String = null, statusCode: String = null): AsyncResult = {
-    val __obj = js.Dynamic.literal(done = done, id = id, state = state)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode)
+    val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsyncResult]
   }
 }

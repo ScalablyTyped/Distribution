@@ -17,7 +17,7 @@ trait Delete[TResponse] extends js.Object {
 object Delete {
   @scala.inline
   def apply[TResponse](request: Anon_DELETE, response: Anon_Data[TResponse]): Delete[TResponse] = {
-    val __obj = js.Dynamic.literal(request = request, response = response)
+    val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Delete[TResponse]]
   }

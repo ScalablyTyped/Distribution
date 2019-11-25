@@ -30,10 +30,10 @@ object FenceToken {
     block: `false` = null,
     lines: js.Tuple2[Double, Double] = null
   ): FenceToken = {
-    val __obj = js.Dynamic.literal(content = content, level = level, params = params)
-    __obj.updateDynamic("type")(`type`)
-    if (block != null) __obj.updateDynamic("block")(block)
-    if (lines != null) __obj.updateDynamic("lines")(lines)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (block != null) __obj.updateDynamic("block")(block.asInstanceOf[js.Any])
+    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
     __obj.asInstanceOf[FenceToken]
   }
 }

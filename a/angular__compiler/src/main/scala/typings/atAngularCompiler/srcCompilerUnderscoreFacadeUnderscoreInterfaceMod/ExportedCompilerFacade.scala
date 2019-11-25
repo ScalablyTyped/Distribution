@@ -11,7 +11,7 @@ trait ExportedCompilerFacade extends js.Object {
 object ExportedCompilerFacade {
   @scala.inline
   def apply(ɵcompilerFacade: CompilerFacade): ExportedCompilerFacade = {
-    val __obj = js.Dynamic.literal(ɵcompilerFacade = ɵcompilerFacade)
+    val __obj = js.Dynamic.literal(ɵcompilerFacade = ɵcompilerFacade.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExportedCompilerFacade]
   }

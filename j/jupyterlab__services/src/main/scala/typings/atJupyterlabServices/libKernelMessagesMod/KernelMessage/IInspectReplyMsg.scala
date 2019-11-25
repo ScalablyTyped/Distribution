@@ -36,8 +36,8 @@ object IInspectReplyMsg {
     parent_header: IHeader[inspect_request],
     buffers: js.Array[ArrayBuffer | ArrayBufferView] = null
   ): IInspectReplyMsg = {
-    val __obj = js.Dynamic.literal(channel = channel, content = content.asInstanceOf[js.Any], header = header, metadata = metadata, parent_header = parent_header)
-    if (buffers != null) __obj.updateDynamic("buffers")(buffers)
+    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
+    if (buffers != null) __obj.updateDynamic("buffers")(buffers.asInstanceOf[js.Any])
     __obj.asInstanceOf[IInspectReplyMsg]
   }
 }

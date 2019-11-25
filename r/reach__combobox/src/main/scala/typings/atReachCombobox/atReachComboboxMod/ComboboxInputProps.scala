@@ -21,18 +21,16 @@ object ComboboxInputProps {
   def apply(
     AllHTMLAttributes: AllHTMLAttributes[HTMLElement] = null,
     ClassAttributes: ClassAttributes[HTMLElement] = null,
-    as: String = null,
     autocomplete: js.UndefOr[Boolean] = js.undefined,
     selectOnClick: js.UndefOr[Boolean] = js.undefined,
     value: String = null
   ): ComboboxInputProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (as != null) __obj.updateDynamic("as")(as)
-    if (!js.isUndefined(autocomplete)) __obj.updateDynamic("autocomplete")(autocomplete)
-    if (!js.isUndefined(selectOnClick)) __obj.updateDynamic("selectOnClick")(selectOnClick)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (!js.isUndefined(autocomplete)) __obj.updateDynamic("autocomplete")(autocomplete.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectOnClick)) __obj.updateDynamic("selectOnClick")(selectOnClick.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComboboxInputProps]
   }
 }

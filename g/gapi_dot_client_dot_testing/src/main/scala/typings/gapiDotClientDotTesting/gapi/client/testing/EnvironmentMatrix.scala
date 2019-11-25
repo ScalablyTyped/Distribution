@@ -18,8 +18,8 @@ object EnvironmentMatrix {
   @scala.inline
   def apply(androidDeviceList: AndroidDeviceList = null, androidMatrix: AndroidMatrix = null): EnvironmentMatrix = {
     val __obj = js.Dynamic.literal()
-    if (androidDeviceList != null) __obj.updateDynamic("androidDeviceList")(androidDeviceList)
-    if (androidMatrix != null) __obj.updateDynamic("androidMatrix")(androidMatrix)
+    if (androidDeviceList != null) __obj.updateDynamic("androidDeviceList")(androidDeviceList.asInstanceOf[js.Any])
+    if (androidMatrix != null) __obj.updateDynamic("androidMatrix")(androidMatrix.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnvironmentMatrix]
   }
 }

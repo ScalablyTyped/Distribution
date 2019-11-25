@@ -24,8 +24,8 @@ object IContextualMenuClassNames {
     title: String,
     subComponentStyles: IContextualMenuSubComponentStyles = null
   ): IContextualMenuClassNames = {
-    val __obj = js.Dynamic.literal(container = container, header = header, list = list, root = root, title = title)
-    if (subComponentStyles != null) __obj.updateDynamic("subComponentStyles")(subComponentStyles)
+    val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], list = list.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    if (subComponentStyles != null) __obj.updateDynamic("subComponentStyles")(subComponentStyles.asInstanceOf[js.Any])
     __obj.asInstanceOf[IContextualMenuClassNames]
   }
 }

@@ -21,10 +21,10 @@ object Anon_BaseCompleteEmptyInvalid {
     invalid: StyleAttributes = null
   ): Anon_BaseCompleteEmptyInvalid = {
     val __obj = js.Dynamic.literal()
-    if (base != null) __obj.updateDynamic("base")(base)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (empty != null) __obj.updateDynamic("empty")(empty)
-    if (invalid != null) __obj.updateDynamic("invalid")(invalid)
+    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
+    if (complete != null) __obj.updateDynamic("complete")(complete.asInstanceOf[js.Any])
+    if (empty != null) __obj.updateDynamic("empty")(empty.asInstanceOf[js.Any])
+    if (invalid != null) __obj.updateDynamic("invalid")(invalid.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BaseCompleteEmptyInvalid]
   }
 }

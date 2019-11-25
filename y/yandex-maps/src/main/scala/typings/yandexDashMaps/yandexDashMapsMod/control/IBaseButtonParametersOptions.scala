@@ -32,13 +32,13 @@ object IBaseButtonParametersOptions {
     visible: js.UndefOr[Boolean] = js.undefined
   ): IBaseButtonParametersOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(adjustMapMargin)) __obj.updateDynamic("adjustMapMargin")(adjustMapMargin)
+    if (!js.isUndefined(adjustMapMargin)) __obj.updateDynamic("adjustMapMargin")(adjustMapMargin.asInstanceOf[js.Any])
     if (float != null) __obj.updateDynamic("float")(float.asInstanceOf[js.Any])
     if (floatIndex != null) __obj.updateDynamic("floatIndex")(floatIndex.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
     if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBaseButtonParametersOptions]
   }
 }

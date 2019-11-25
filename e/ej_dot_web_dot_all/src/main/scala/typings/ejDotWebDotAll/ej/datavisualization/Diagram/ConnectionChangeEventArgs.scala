@@ -32,11 +32,11 @@ object ConnectionChangeEventArgs {
     port: js.Any = null
   ): ConnectionChangeEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (connection != null) __obj.updateDynamic("connection")(connection)
-    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId)
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (port != null) __obj.updateDynamic("port")(port)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (connection != null) __obj.updateDynamic("connection")(connection.asInstanceOf[js.Any])
+    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionChangeEventArgs]
   }
 }

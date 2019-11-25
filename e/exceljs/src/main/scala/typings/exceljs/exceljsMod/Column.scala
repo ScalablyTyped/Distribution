@@ -52,7 +52,7 @@ object Column {
     values: js.Array[CellValue],
     width: Double
   ): Column = {
-    val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any], hidden = hidden, key = key, letter = letter, outlineLevel = outlineLevel, style = style, values = values, width = width)
+    val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any], hidden = hidden.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], letter = letter.asInstanceOf[js.Any], outlineLevel = outlineLevel.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Column]
   }

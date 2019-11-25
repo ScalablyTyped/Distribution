@@ -36,8 +36,8 @@ object IContentWidget {
     suppressMouseDown: js.UndefOr[Boolean] = js.undefined
   ): IContentWidget = {
     val __obj = js.Dynamic.literal(getDomNode = js.Any.fromFunction0(getDomNode), getId = js.Any.fromFunction0(getId), getPosition = js.Any.fromFunction0(getPosition))
-    if (!js.isUndefined(allowEditorOverflow)) __obj.updateDynamic("allowEditorOverflow")(allowEditorOverflow)
-    if (!js.isUndefined(suppressMouseDown)) __obj.updateDynamic("suppressMouseDown")(suppressMouseDown)
+    if (!js.isUndefined(allowEditorOverflow)) __obj.updateDynamic("allowEditorOverflow")(allowEditorOverflow.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressMouseDown)) __obj.updateDynamic("suppressMouseDown")(suppressMouseDown.asInstanceOf[js.Any])
     __obj.asInstanceOf[IContentWidget]
   }
 }

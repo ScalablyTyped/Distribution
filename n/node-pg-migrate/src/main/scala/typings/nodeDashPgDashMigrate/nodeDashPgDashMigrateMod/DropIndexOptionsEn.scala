@@ -13,8 +13,8 @@ object DropIndexOptionsEn {
   @scala.inline
   def apply(concurrently: js.UndefOr[Boolean] = js.undefined, name: String = null): DropIndexOptionsEn = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(concurrently)) __obj.updateDynamic("concurrently")(concurrently)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(concurrently)) __obj.updateDynamic("concurrently")(concurrently.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropIndexOptionsEn]
   }
 }

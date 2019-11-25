@@ -23,8 +23,8 @@ object Message {
     messages: js.Array[Message],
     name: String
   ): Message = {
-    val __obj = js.Dynamic.literal(enums = enums, extensions = extensions, fields = fields, messages = messages, name = name)
-    __obj.updateDynamic("extends")(`extends`)
+    val __obj = js.Dynamic.literal(enums = enums.asInstanceOf[js.Any], extensions = extensions.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("extends")(`extends`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Message]
   }
 }

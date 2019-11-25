@@ -12,7 +12,7 @@ trait Anon_Fill extends js.Object {
 object Anon_Fill {
   @scala.inline
   def apply(fill: Boolean, placeholder: String): Anon_Fill = {
-    val __obj = js.Dynamic.literal(fill = fill, placeholder = placeholder)
+    val __obj = js.Dynamic.literal(fill = fill.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Fill]
   }

@@ -31,7 +31,7 @@ object Connection {
     setParameter: (String, js.Any) => Unit,
     showOverlay: String => Unit
   ): Connection = {
-    val __obj = js.Dynamic.literal(endpoints = endpoints, getElement = js.Any.fromFunction0(getElement), getOverlay = js.Any.fromFunction1(getOverlay), hideOverlay = js.Any.fromFunction1(hideOverlay), id = id, repaint = js.Any.fromFunction0(repaint), setDetachable = js.Any.fromFunction1(setDetachable), setLabel = js.Any.fromFunction1(setLabel), setParameter = js.Any.fromFunction2(setParameter), showOverlay = js.Any.fromFunction1(showOverlay))
+    val __obj = js.Dynamic.literal(endpoints = endpoints.asInstanceOf[js.Any], getElement = js.Any.fromFunction0(getElement), getOverlay = js.Any.fromFunction1(getOverlay), hideOverlay = js.Any.fromFunction1(hideOverlay), id = id.asInstanceOf[js.Any], repaint = js.Any.fromFunction0(repaint), setDetachable = js.Any.fromFunction1(setDetachable), setLabel = js.Any.fromFunction1(setLabel), setParameter = js.Any.fromFunction2(setParameter), showOverlay = js.Any.fromFunction1(showOverlay))
   
     __obj.asInstanceOf[Connection]
   }

@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 object OpenUrlMenuItemOptions {
   @scala.inline
   def apply(url: String): OpenUrlMenuItemOptions = {
-    val __obj = js.Dynamic.literal(url = url)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OpenUrlMenuItemOptions]
   }

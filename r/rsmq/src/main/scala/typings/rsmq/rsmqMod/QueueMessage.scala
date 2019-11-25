@@ -45,7 +45,7 @@ trait QueueMessage extends js.Object {
 object QueueMessage {
   @scala.inline
   def apply(fr: Double, id: String, message: String, rc: Double, sent: Double): QueueMessage = {
-    val __obj = js.Dynamic.literal(fr = fr, id = id, message = message, rc = rc, sent = sent)
+    val __obj = js.Dynamic.literal(fr = fr.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], rc = rc.asInstanceOf[js.Any], sent = sent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[QueueMessage]
   }

@@ -30,11 +30,11 @@ object IMethod {
     responseStream: js.UndefOr[Boolean] = js.undefined,
     `type`: String = null
   ): IMethod = {
-    val __obj = js.Dynamic.literal(requestType = requestType, responseType = responseType)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (!js.isUndefined(requestStream)) __obj.updateDynamic("requestStream")(requestStream)
-    if (!js.isUndefined(responseStream)) __obj.updateDynamic("responseStream")(responseStream)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(requestType = requestType.asInstanceOf[js.Any], responseType = responseType.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestStream)) __obj.updateDynamic("requestStream")(requestStream.asInstanceOf[js.Any])
+    if (!js.isUndefined(responseStream)) __obj.updateDynamic("responseStream")(responseStream.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMethod]
   }
 }

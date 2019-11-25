@@ -20,7 +20,7 @@ object Options {
     layers: js.Array[typings.ol.layerLayerMod.default] | (js.Function1[/* p0 */ typings.ol.layerLayerMod.default, Boolean]) = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (features != null) __obj.updateDynamic("features")(features)
+    if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
     if (hitTolerance != null) __obj.updateDynamic("hitTolerance")(hitTolerance.asInstanceOf[js.Any])
     if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

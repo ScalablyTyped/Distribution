@@ -143,12 +143,12 @@ trait JQuery extends js.Object {
   @JSName("dimmer")
   def dimmer_setting(behavior: setting, value: DimmerSettings): JQuery = js.native
   @JSName("dimmer")
-  def dimmer_setting[K /* <: String */](behavior: setting, name: K): /* import warning: ImportType.apply Failed type conversion: semantic-ui-dimmer.SemanticUI.DimmerSettings._Impl[K] */ js.Any = js.native
+  def dimmer_setting[K /* <: String */](behavior: setting, name: K): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-dimmer.SemanticUI.DimmerSettings._Impl[K] */ js.Any = js.native
   @JSName("dimmer")
   def dimmer_setting[K /* <: String */](
     behavior: setting,
     name: K,
-    value: /* import warning: ImportType.apply Failed type conversion: semantic-ui-dimmer.SemanticUI.DimmerSettings._Impl[K] */ js.Any
+    value: /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-dimmer.SemanticUI.DimmerSettings._Impl[K] */ js.Any
   ): JQuery = js.native
   /**
     * Shows dimmer

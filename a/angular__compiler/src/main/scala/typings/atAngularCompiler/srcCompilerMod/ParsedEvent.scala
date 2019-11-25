@@ -1,5 +1,6 @@
 package typings.atAngularCompiler.srcCompilerMod
 
+import typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.ParsedEventType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +12,7 @@ class ParsedEvent protected ()
   def this(
     name: String,
     targetOrPhase: String,
-    `type`: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.ParsedEventType,
+    `type`: ParsedEventType,
     handler: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.AST,
     sourceSpan: typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseSourceSpan,
     handlerSpan: typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseSourceSpan

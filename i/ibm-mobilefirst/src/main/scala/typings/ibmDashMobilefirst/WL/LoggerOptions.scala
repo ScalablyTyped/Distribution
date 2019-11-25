@@ -44,19 +44,19 @@ object LoggerOptions {
     whitelist: js.Array[String] = null
   ): LoggerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoSendLogs)) __obj.updateDynamic("autoSendLogs")(autoSendLogs)
-    if (blacklist != null) __obj.updateDynamic("blacklist")(blacklist)
+    if (!js.isUndefined(autoSendLogs)) __obj.updateDynamic("autoSendLogs")(autoSendLogs.asInstanceOf[js.Any])
+    if (blacklist != null) __obj.updateDynamic("blacklist")(blacklist.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction3(callback))
-    if (!js.isUndefined(capture)) __obj.updateDynamic("capture")(capture)
-    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (!js.isUndefined(capture)) __obj.updateDynamic("capture")(capture.asInstanceOf[js.Any])
+    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (maxFileSize != null) __obj.updateDynamic("maxFileSize")(maxFileSize.asInstanceOf[js.Any])
-    if (pkg != null) __obj.updateDynamic("pkg")(pkg)
-    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty)
-    if (!js.isUndefined(stacktrace)) __obj.updateDynamic("stacktrace")(stacktrace)
-    if (!js.isUndefined(stringify)) __obj.updateDynamic("stringify")(stringify)
-    if (tag != null) __obj.updateDynamic("tag")(tag)
-    if (whitelist != null) __obj.updateDynamic("whitelist")(whitelist)
+    if (pkg != null) __obj.updateDynamic("pkg")(pkg.asInstanceOf[js.Any])
+    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.asInstanceOf[js.Any])
+    if (!js.isUndefined(stacktrace)) __obj.updateDynamic("stacktrace")(stacktrace.asInstanceOf[js.Any])
+    if (!js.isUndefined(stringify)) __obj.updateDynamic("stringify")(stringify.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
+    if (whitelist != null) __obj.updateDynamic("whitelist")(whitelist.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoggerOptions]
   }
 }

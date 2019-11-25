@@ -15,8 +15,8 @@ object Source {
   @scala.inline
   def apply(name: String = null, official: js.UndefOr[Boolean] = js.undefined): Source = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(official)) __obj.updateDynamic("official")(official)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(official)) __obj.updateDynamic("official")(official.asInstanceOf[js.Any])
     __obj.asInstanceOf[Source]
   }
 }

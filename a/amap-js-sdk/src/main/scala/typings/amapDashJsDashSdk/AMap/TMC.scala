@@ -13,7 +13,7 @@ trait TMC extends js.Object {
 object TMC {
   @scala.inline
   def apply(distance: Double, lcode: String, status: String): TMC = {
-    val __obj = js.Dynamic.literal(distance = distance, lcode = lcode, status = status)
+    val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], lcode = lcode.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TMC]
   }

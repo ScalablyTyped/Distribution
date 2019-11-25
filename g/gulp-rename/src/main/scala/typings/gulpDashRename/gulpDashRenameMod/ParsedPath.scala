@@ -14,9 +14,9 @@ object ParsedPath {
   @scala.inline
   def apply(basename: String = null, dirname: String = null, extname: String = null): ParsedPath = {
     val __obj = js.Dynamic.literal()
-    if (basename != null) __obj.updateDynamic("basename")(basename)
-    if (dirname != null) __obj.updateDynamic("dirname")(dirname)
-    if (extname != null) __obj.updateDynamic("extname")(extname)
+    if (basename != null) __obj.updateDynamic("basename")(basename.asInstanceOf[js.Any])
+    if (dirname != null) __obj.updateDynamic("dirname")(dirname.asInstanceOf[js.Any])
+    if (extname != null) __obj.updateDynamic("extname")(extname.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParsedPath]
   }
 }

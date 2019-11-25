@@ -23,11 +23,11 @@ object CreateProgramOptions {
     oldProgram: Program = null,
     projectReferences: js.Array[ProjectReference] = null
   ): CreateProgramOptions = {
-    val __obj = js.Dynamic.literal(options = options, rootNames = rootNames)
-    if (configFileParsingDiagnostics != null) __obj.updateDynamic("configFileParsingDiagnostics")(configFileParsingDiagnostics)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (oldProgram != null) __obj.updateDynamic("oldProgram")(oldProgram)
-    if (projectReferences != null) __obj.updateDynamic("projectReferences")(projectReferences)
+    val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], rootNames = rootNames.asInstanceOf[js.Any])
+    if (configFileParsingDiagnostics != null) __obj.updateDynamic("configFileParsingDiagnostics")(configFileParsingDiagnostics.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (oldProgram != null) __obj.updateDynamic("oldProgram")(oldProgram.asInstanceOf[js.Any])
+    if (projectReferences != null) __obj.updateDynamic("projectReferences")(projectReferences.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateProgramOptions]
   }
 }

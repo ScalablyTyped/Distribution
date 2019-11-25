@@ -42,7 +42,7 @@ object IFramePageOptions {
     if (heightCalculationMethod != null) __obj.updateDynamic("heightCalculationMethod")(heightCalculationMethod.asInstanceOf[js.Any])
     if (messageCallback != null) __obj.updateDynamic("messageCallback")(js.Any.fromFunction1(messageCallback))
     if (readyCallback != null) __obj.updateDynamic("readyCallback")(js.Any.fromFunction0(readyCallback))
-    if (targetOrigin != null) __obj.updateDynamic("targetOrigin")(targetOrigin)
+    if (targetOrigin != null) __obj.updateDynamic("targetOrigin")(targetOrigin.asInstanceOf[js.Any])
     if (widthCalculationMethod != null) __obj.updateDynamic("widthCalculationMethod")(widthCalculationMethod.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFramePageOptions]
   }

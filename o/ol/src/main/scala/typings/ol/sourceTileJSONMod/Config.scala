@@ -37,19 +37,19 @@ object Config {
     template: String = null,
     version: String = null
   ): Config = {
-    val __obj = js.Dynamic.literal(tiles = tiles)
-    if (attribution != null) __obj.updateDynamic("attribution")(attribution)
-    if (bounds != null) __obj.updateDynamic("bounds")(bounds)
-    if (center != null) __obj.updateDynamic("center")(center)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (grids != null) __obj.updateDynamic("grids")(grids)
-    if (legend != null) __obj.updateDynamic("legend")(legend)
+    val __obj = js.Dynamic.literal(tiles = tiles.asInstanceOf[js.Any])
+    if (attribution != null) __obj.updateDynamic("attribution")(attribution.asInstanceOf[js.Any])
+    if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
+    if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (grids != null) __obj.updateDynamic("grids")(grids.asInstanceOf[js.Any])
+    if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
     if (maxzoom != null) __obj.updateDynamic("maxzoom")(maxzoom.asInstanceOf[js.Any])
     if (minzoom != null) __obj.updateDynamic("minzoom")(minzoom.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (scheme != null) __obj.updateDynamic("scheme")(scheme)
-    if (template != null) __obj.updateDynamic("template")(template)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (scheme != null) __obj.updateDynamic("scheme")(scheme.asInstanceOf[js.Any])
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

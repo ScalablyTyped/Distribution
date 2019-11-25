@@ -21,10 +21,10 @@ object Options {
     withAncestor: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (changedSince != null) __obj.updateDynamic("changedSince")(changedSince)
-    if (includePaths != null) __obj.updateDynamic("includePaths")(includePaths)
-    if (!js.isUndefined(lastCommit)) __obj.updateDynamic("lastCommit")(lastCommit)
-    if (!js.isUndefined(withAncestor)) __obj.updateDynamic("withAncestor")(withAncestor)
+    if (changedSince != null) __obj.updateDynamic("changedSince")(changedSince.asInstanceOf[js.Any])
+    if (includePaths != null) __obj.updateDynamic("includePaths")(includePaths.asInstanceOf[js.Any])
+    if (!js.isUndefined(lastCommit)) __obj.updateDynamic("lastCommit")(lastCommit.asInstanceOf[js.Any])
+    if (!js.isUndefined(withAncestor)) __obj.updateDynamic("withAncestor")(withAncestor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

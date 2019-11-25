@@ -15,7 +15,7 @@ trait NxFieldSelectionInfo extends js.Object {
 object NxFieldSelectionInfo {
   @scala.inline
   def apply(qFieldSelectionmode: NORMAL | AND | NOT, qName: String): NxFieldSelectionInfo = {
-    val __obj = js.Dynamic.literal(qFieldSelectionmode = qFieldSelectionmode.asInstanceOf[js.Any], qName = qName)
+    val __obj = js.Dynamic.literal(qFieldSelectionmode = qFieldSelectionmode.asInstanceOf[js.Any], qName = qName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NxFieldSelectionInfo]
   }

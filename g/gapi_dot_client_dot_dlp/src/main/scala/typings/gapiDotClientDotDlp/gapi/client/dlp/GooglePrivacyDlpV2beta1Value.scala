@@ -26,13 +26,13 @@ object GooglePrivacyDlpV2beta1Value {
     timestampValue: String = null
   ): GooglePrivacyDlpV2beta1Value = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(booleanValue)) __obj.updateDynamic("booleanValue")(booleanValue)
-    if (dateValue != null) __obj.updateDynamic("dateValue")(dateValue)
+    if (!js.isUndefined(booleanValue)) __obj.updateDynamic("booleanValue")(booleanValue.asInstanceOf[js.Any])
+    if (dateValue != null) __obj.updateDynamic("dateValue")(dateValue.asInstanceOf[js.Any])
     if (floatValue != null) __obj.updateDynamic("floatValue")(floatValue.asInstanceOf[js.Any])
-    if (integerValue != null) __obj.updateDynamic("integerValue")(integerValue)
-    if (stringValue != null) __obj.updateDynamic("stringValue")(stringValue)
-    if (timeValue != null) __obj.updateDynamic("timeValue")(timeValue)
-    if (timestampValue != null) __obj.updateDynamic("timestampValue")(timestampValue)
+    if (integerValue != null) __obj.updateDynamic("integerValue")(integerValue.asInstanceOf[js.Any])
+    if (stringValue != null) __obj.updateDynamic("stringValue")(stringValue.asInstanceOf[js.Any])
+    if (timeValue != null) __obj.updateDynamic("timeValue")(timeValue.asInstanceOf[js.Any])
+    if (timestampValue != null) __obj.updateDynamic("timestampValue")(timestampValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1Value]
   }
 }

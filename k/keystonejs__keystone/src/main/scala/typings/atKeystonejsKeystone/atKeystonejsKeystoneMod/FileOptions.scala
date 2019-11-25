@@ -23,13 +23,13 @@ object FileOptions {
     route: String = null
   ): FileOptions = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
-    if (adapter != null) __obj.updateDynamic("adapter")(adapter)
-    if (hooks != null) __obj.updateDynamic("hooks")(hooks)
-    if (!js.isUndefined(isRequired)) __obj.updateDynamic("isRequired")(isRequired)
-    if (!js.isUndefined(isUnique)) __obj.updateDynamic("isUnique")(isUnique)
-    if (route != null) __obj.updateDynamic("route")(route)
+    if (adapter != null) __obj.updateDynamic("adapter")(adapter.asInstanceOf[js.Any])
+    if (hooks != null) __obj.updateDynamic("hooks")(hooks.asInstanceOf[js.Any])
+    if (!js.isUndefined(isRequired)) __obj.updateDynamic("isRequired")(isRequired.asInstanceOf[js.Any])
+    if (!js.isUndefined(isUnique)) __obj.updateDynamic("isUnique")(isUnique.asInstanceOf[js.Any])
+    if (route != null) __obj.updateDynamic("route")(route.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileOptions]
   }
 }

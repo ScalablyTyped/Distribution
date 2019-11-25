@@ -14,8 +14,8 @@ object ValueContainer {
   @scala.inline
   def apply(`_constructor-name_`: String, StringDictionary: /* keys */ StringDictionary[js.Any] = null): ValueContainer = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_constructor-name_")(`_constructor-name_`)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.updateDynamic("_constructor-name_")(`_constructor-name_`.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ValueContainer]
   }
 }

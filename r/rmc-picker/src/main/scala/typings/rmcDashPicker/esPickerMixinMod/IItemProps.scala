@@ -14,9 +14,9 @@ trait IItemProps extends js.Object {
 object IItemProps {
   @scala.inline
   def apply(value: js.Any, children: ReactNode = null, className: String = null): IItemProps = {
-    val __obj = js.Dynamic.literal(value = value)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     __obj.asInstanceOf[IItemProps]
   }
 }

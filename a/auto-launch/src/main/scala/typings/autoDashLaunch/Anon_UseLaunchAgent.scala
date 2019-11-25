@@ -15,7 +15,7 @@ object Anon_UseLaunchAgent {
   @scala.inline
   def apply(useLaunchAgent: js.UndefOr[Boolean] = js.undefined): Anon_UseLaunchAgent = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(useLaunchAgent)) __obj.updateDynamic("useLaunchAgent")(useLaunchAgent)
+    if (!js.isUndefined(useLaunchAgent)) __obj.updateDynamic("useLaunchAgent")(useLaunchAgent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_UseLaunchAgent]
   }
 }

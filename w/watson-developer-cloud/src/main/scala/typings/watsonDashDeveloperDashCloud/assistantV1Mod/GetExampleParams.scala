@@ -28,10 +28,10 @@ object GetExampleParams {
     include_audit: js.UndefOr[Boolean] = js.undefined,
     return_response: js.UndefOr[Boolean] = js.undefined
   ): GetExampleParams = {
-    val __obj = js.Dynamic.literal(intent = intent, text = text, workspace_id = workspace_id)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (!js.isUndefined(include_audit)) __obj.updateDynamic("include_audit")(include_audit)
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response)
+    val __obj = js.Dynamic.literal(intent = intent.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], workspace_id = workspace_id.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (!js.isUndefined(include_audit)) __obj.updateDynamic("include_audit")(include_audit.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetExampleParams]
   }
 }

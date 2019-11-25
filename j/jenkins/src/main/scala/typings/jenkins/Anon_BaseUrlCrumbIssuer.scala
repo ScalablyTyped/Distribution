@@ -20,10 +20,10 @@ object Anon_BaseUrlCrumbIssuer {
     crumbIssuer: js.UndefOr[Boolean] = js.undefined,
     headers: js.Any = null
   ): Anon_BaseUrlCrumbIssuer = {
-    val __obj = js.Dynamic.literal(promisify = promisify)
-    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
-    if (!js.isUndefined(crumbIssuer)) __obj.updateDynamic("crumbIssuer")(crumbIssuer)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    val __obj = js.Dynamic.literal(promisify = promisify.asInstanceOf[js.Any])
+    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(crumbIssuer)) __obj.updateDynamic("crumbIssuer")(crumbIssuer.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BaseUrlCrumbIssuer]
   }
 }

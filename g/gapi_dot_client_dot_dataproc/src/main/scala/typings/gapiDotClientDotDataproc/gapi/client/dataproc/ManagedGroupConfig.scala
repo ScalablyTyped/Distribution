@@ -15,8 +15,8 @@ object ManagedGroupConfig {
   @scala.inline
   def apply(instanceGroupManagerName: String = null, instanceTemplateName: String = null): ManagedGroupConfig = {
     val __obj = js.Dynamic.literal()
-    if (instanceGroupManagerName != null) __obj.updateDynamic("instanceGroupManagerName")(instanceGroupManagerName)
-    if (instanceTemplateName != null) __obj.updateDynamic("instanceTemplateName")(instanceTemplateName)
+    if (instanceGroupManagerName != null) __obj.updateDynamic("instanceGroupManagerName")(instanceGroupManagerName.asInstanceOf[js.Any])
+    if (instanceTemplateName != null) __obj.updateDynamic("instanceTemplateName")(instanceTemplateName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagedGroupConfig]
   }
 }

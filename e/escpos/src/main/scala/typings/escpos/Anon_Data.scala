@@ -12,7 +12,7 @@ trait Anon_Data extends js.Object {
 object Anon_Data {
   @scala.inline
   def apply(data: js.Any, density: Double): Anon_Data = {
-    val __obj = js.Dynamic.literal(data = data, density = density)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], density = density.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Data]
   }

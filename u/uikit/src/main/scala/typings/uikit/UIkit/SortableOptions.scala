@@ -52,11 +52,11 @@ object SortableOptions {
     threshold: String = null
   ): SortableOptions = {
     val __obj = js.Dynamic.literal()
-    if (animation != null) __obj.updateDynamic("animation")(animation)
-    if (dragCustomClass != null) __obj.updateDynamic("dragCustomClass")(dragCustomClass)
-    if (group != null) __obj.updateDynamic("group")(group)
-    if (handleClass != null) __obj.updateDynamic("handleClass")(handleClass)
-    if (threshold != null) __obj.updateDynamic("threshold")(threshold)
+    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (dragCustomClass != null) __obj.updateDynamic("dragCustomClass")(dragCustomClass.asInstanceOf[js.Any])
+    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
+    if (handleClass != null) __obj.updateDynamic("handleClass")(handleClass.asInstanceOf[js.Any])
+    if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
     __obj.asInstanceOf[SortableOptions]
   }
 }

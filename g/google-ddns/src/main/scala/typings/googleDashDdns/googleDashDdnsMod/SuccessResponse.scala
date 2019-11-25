@@ -29,7 +29,7 @@ trait SuccessResponse extends js.Object {
 object SuccessResponse {
   @scala.inline
   def apply(ip: String, message: String, response: good | nochg, status: success): SuccessResponse = {
-    val __obj = js.Dynamic.literal(ip = ip, message = message, response = response.asInstanceOf[js.Any], status = status)
+    val __obj = js.Dynamic.literal(ip = ip.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SuccessResponse]
   }

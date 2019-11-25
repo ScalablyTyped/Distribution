@@ -9,19 +9,9 @@ trait IColumn
 
 object IColumn {
   @scala.inline
-  def apply(
-    IColumn: typings.extjs.Ext.grid.column.IColumn = null,
-    draggable: js.UndefOr[Boolean] = js.undefined,
-    hideable: js.UndefOr[Boolean] = js.undefined,
-    lockable: js.UndefOr[Boolean] = js.undefined,
-    tdCls: java.lang.String = null
-  ): IColumn = {
+  def apply(IColumn: typings.extjs.Ext.grid.column.IColumn = null): IColumn = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IColumn)
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
-    if (!js.isUndefined(hideable)) __obj.updateDynamic("hideable")(hideable)
-    if (!js.isUndefined(lockable)) __obj.updateDynamic("lockable")(lockable)
-    if (tdCls != null) __obj.updateDynamic("tdCls")(tdCls)
+    if (IColumn != null) js.Dynamic.global.Object.assign(__obj, IColumn)
     __obj.asInstanceOf[IColumn]
   }
 }

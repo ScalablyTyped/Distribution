@@ -13,8 +13,8 @@ object PrintOptions {
   @scala.inline
   def apply(footer: String = null, header: String = null): PrintOptions = {
     val __obj = js.Dynamic.literal()
-    if (footer != null) __obj.updateDynamic("footer")(footer)
-    if (header != null) __obj.updateDynamic("header")(header)
+    if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrintOptions]
   }
 }

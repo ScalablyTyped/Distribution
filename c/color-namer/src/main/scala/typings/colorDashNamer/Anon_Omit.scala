@@ -12,7 +12,7 @@ trait Anon_Omit[T /* <: Palette */] extends js.Object {
 object Anon_Omit {
   @scala.inline
   def apply[T /* <: Palette */](omit: js.Array[T]): Anon_Omit[T] = {
-    val __obj = js.Dynamic.literal(omit = omit)
+    val __obj = js.Dynamic.literal(omit = omit.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Omit[T]]
   }

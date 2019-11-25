@@ -47,11 +47,11 @@ object CropboxOptions {
     zoom: Int | Double = null
   ): CropboxOptions = {
     val __obj = js.Dynamic.literal()
-    if (controls != null) __obj.updateDynamic("controls")(controls)
+    if (controls != null) __obj.updateDynamic("controls")(controls.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
-    if (result != null) __obj.updateDynamic("result")(result)
-    if (showControls != null) __obj.updateDynamic("showControls")(showControls)
+    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
+    if (showControls != null) __obj.updateDynamic("showControls")(showControls.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[CropboxOptions]

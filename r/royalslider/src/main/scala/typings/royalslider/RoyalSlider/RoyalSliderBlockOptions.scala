@@ -43,9 +43,9 @@ object RoyalSliderBlockOptions {
   ): RoyalSliderBlockOptions = {
     val __obj = js.Dynamic.literal()
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(easing)
-    if (!js.isUndefined(fadeEffect)) __obj.updateDynamic("fadeEffect")(fadeEffect)
-    if (moveEffect != null) __obj.updateDynamic("moveEffect")(moveEffect)
+    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
+    if (!js.isUndefined(fadeEffect)) __obj.updateDynamic("fadeEffect")(fadeEffect.asInstanceOf[js.Any])
+    if (moveEffect != null) __obj.updateDynamic("moveEffect")(moveEffect.asInstanceOf[js.Any])
     if (moveOffset != null) __obj.updateDynamic("moveOffset")(moveOffset.asInstanceOf[js.Any])
     if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoyalSliderBlockOptions]

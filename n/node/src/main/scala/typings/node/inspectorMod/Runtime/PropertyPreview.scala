@@ -39,11 +39,11 @@ object PropertyPreview {
     value: java.lang.String = null,
     valuePreview: ObjectPreview = null
   ): PropertyPreview = {
-    val __obj = js.Dynamic.literal(name = name)
-    __obj.updateDynamic("type")(`type`)
-    if (subtype != null) __obj.updateDynamic("subtype")(subtype)
-    if (value != null) __obj.updateDynamic("value")(value)
-    if (valuePreview != null) __obj.updateDynamic("valuePreview")(valuePreview)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (subtype != null) __obj.updateDynamic("subtype")(subtype.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (valuePreview != null) __obj.updateDynamic("valuePreview")(valuePreview.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropertyPreview]
   }
 }

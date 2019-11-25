@@ -24,7 +24,7 @@ object GetMainMenuItemsParams {
     context: js.Any,
     defaultItems: js.Array[String]
   ): GetMainMenuItemsParams = {
-    val __obj = js.Dynamic.literal(api = api, column = column, columnApi = columnApi, context = context, defaultItems = defaultItems)
+    val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], columnApi = columnApi.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], defaultItems = defaultItems.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetMainMenuItemsParams]
   }

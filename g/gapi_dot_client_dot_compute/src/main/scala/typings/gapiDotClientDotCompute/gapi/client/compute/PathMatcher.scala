@@ -30,10 +30,10 @@ object PathMatcher {
     pathRules: js.Array[PathRule] = null
   ): PathMatcher = {
     val __obj = js.Dynamic.literal()
-    if (defaultService != null) __obj.updateDynamic("defaultService")(defaultService)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (pathRules != null) __obj.updateDynamic("pathRules")(pathRules)
+    if (defaultService != null) __obj.updateDynamic("defaultService")(defaultService.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (pathRules != null) __obj.updateDynamic("pathRules")(pathRules.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathMatcher]
   }
 }

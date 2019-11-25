@@ -27,7 +27,7 @@ object SidebarProps {
     onClose: () => Unit = null,
     onOpen: () => Unit = null
   ): SidebarProps = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], collapsed = collapsed, id = id, position = position, selected = selected)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], collapsed = collapsed.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
     if (closeIcon != null) __obj.updateDynamic("closeIcon")(closeIcon.asInstanceOf[js.Any])
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction0(onClose))
     if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction0(onOpen))

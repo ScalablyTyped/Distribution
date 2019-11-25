@@ -49,13 +49,13 @@ object Profile {
     name: Anon_FamilyName = null,
     photos: js.Array[Anon_Value] = null
   ): Profile = {
-    val __obj = js.Dynamic.literal(avatar = avatar, discriminator = discriminator, displayName = displayName, fetchedAt = fetchedAt, flags = flags, id = id, locale = locale, mfa_enabled = mfa_enabled, provider = provider, username = username, verified = verified)
-    if (connections != null) __obj.updateDynamic("connections")(connections)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (emails != null) __obj.updateDynamic("emails")(emails)
-    if (guilds != null) __obj.updateDynamic("guilds")(guilds)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (photos != null) __obj.updateDynamic("photos")(photos)
+    val __obj = js.Dynamic.literal(avatar = avatar.asInstanceOf[js.Any], discriminator = discriminator.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], fetchedAt = fetchedAt.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], mfa_enabled = mfa_enabled.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any], verified = verified.asInstanceOf[js.Any])
+    if (connections != null) __obj.updateDynamic("connections")(connections.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (emails != null) __obj.updateDynamic("emails")(emails.asInstanceOf[js.Any])
+    if (guilds != null) __obj.updateDynamic("guilds")(guilds.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (photos != null) __obj.updateDynamic("photos")(photos.asInstanceOf[js.Any])
     __obj.asInstanceOf[Profile]
   }
 }

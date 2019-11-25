@@ -13,7 +13,7 @@ trait ReaderInlineDataFragmentSpread extends js.Object {
 object ReaderInlineDataFragmentSpread {
   @scala.inline
   def apply(kind: String, name: String, selections: js.Array[ReaderSelection]): ReaderInlineDataFragmentSpread = {
-    val __obj = js.Dynamic.literal(kind = kind, name = name, selections = selections)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReaderInlineDataFragmentSpread]
   }

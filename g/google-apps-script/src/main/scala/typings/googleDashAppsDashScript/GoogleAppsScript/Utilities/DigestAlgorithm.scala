@@ -14,22 +14,28 @@ sealed trait DigestAlgorithm extends js.Object
 @js.native
 object DigestAlgorithm extends js.Object {
   @js.native
-  sealed trait MD2 extends DigestAlgorithm
+  sealed trait MD2
+    extends typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.DigestAlgorithm
   
   @js.native
-  sealed trait MD5 extends DigestAlgorithm
+  sealed trait MD5
+    extends typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.DigestAlgorithm
   
   @js.native
-  sealed trait SHA_1 extends DigestAlgorithm
+  sealed trait SHA_1
+    extends typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.DigestAlgorithm
   
   @js.native
-  sealed trait SHA_256 extends DigestAlgorithm
+  sealed trait SHA_256
+    extends typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.DigestAlgorithm
   
   @js.native
-  sealed trait SHA_384 extends DigestAlgorithm
+  sealed trait SHA_384
+    extends typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.DigestAlgorithm
   
   @js.native
-  sealed trait SHA_512 extends DigestAlgorithm
+  sealed trait SHA_512
+    extends typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.DigestAlgorithm
   
   /* 0 */ val MD2: typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.DigestAlgorithm.MD2 with Double = js.native
   /* 1 */ val MD5: typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.DigestAlgorithm.MD5 with Double = js.native
@@ -38,6 +44,8 @@ object DigestAlgorithm extends js.Object {
   /* 4 */ val SHA_384: typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.DigestAlgorithm.SHA_384 with Double = js.native
   /* 5 */ val SHA_512: typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.DigestAlgorithm.SHA_512 with Double = js.native
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DigestAlgorithm with Double] = js.native
+  def apply(value: Double): js.UndefOr[
+    typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.DigestAlgorithm with Double
+  ] = js.native
 }
 

@@ -12,7 +12,7 @@ trait Constraints extends js.Object {
 object Constraints {
   @scala.inline
   def apply(horizontal: ConstraintType, vertical: ConstraintType): Constraints = {
-    val __obj = js.Dynamic.literal(horizontal = horizontal, vertical = vertical)
+    val __obj = js.Dynamic.literal(horizontal = horizontal.asInstanceOf[js.Any], vertical = vertical.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Constraints]
   }

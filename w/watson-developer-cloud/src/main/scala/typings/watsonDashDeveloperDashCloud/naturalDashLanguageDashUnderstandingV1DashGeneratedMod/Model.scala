@@ -37,14 +37,14 @@ object Model {
     workspace_id: String = null
   ): Model = {
     val __obj = js.Dynamic.literal()
-    if (created != null) __obj.updateDynamic("created")(created)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (model_id != null) __obj.updateDynamic("model_id")(model_id)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (version != null) __obj.updateDynamic("version")(version)
-    if (version_description != null) __obj.updateDynamic("version_description")(version_description)
-    if (workspace_id != null) __obj.updateDynamic("workspace_id")(workspace_id)
+    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (model_id != null) __obj.updateDynamic("model_id")(model_id.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (version_description != null) __obj.updateDynamic("version_description")(version_description.asInstanceOf[js.Any])
+    if (workspace_id != null) __obj.updateDynamic("workspace_id")(workspace_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]
   }
 }

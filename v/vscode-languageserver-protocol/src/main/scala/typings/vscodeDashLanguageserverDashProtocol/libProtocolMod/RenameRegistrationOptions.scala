@@ -12,8 +12,8 @@ object RenameRegistrationOptions {
   @scala.inline
   def apply(documentSelector: DocumentSelector = null, prepareProvider: js.UndefOr[Boolean] = js.undefined): RenameRegistrationOptions = {
     val __obj = js.Dynamic.literal()
-    if (documentSelector != null) __obj.updateDynamic("documentSelector")(documentSelector)
-    if (!js.isUndefined(prepareProvider)) __obj.updateDynamic("prepareProvider")(prepareProvider)
+    if (documentSelector != null) __obj.updateDynamic("documentSelector")(documentSelector.asInstanceOf[js.Any])
+    if (!js.isUndefined(prepareProvider)) __obj.updateDynamic("prepareProvider")(prepareProvider.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenameRegistrationOptions]
   }
 }

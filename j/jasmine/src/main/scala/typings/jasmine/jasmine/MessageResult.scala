@@ -12,8 +12,8 @@ trait MessageResult extends Result {
 object MessageResult {
   @scala.inline
   def apply(trace: Trace, `type`: String, values: js.Any): MessageResult = {
-    val __obj = js.Dynamic.literal(trace = trace, values = values)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(trace = trace.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageResult]
   }
 }

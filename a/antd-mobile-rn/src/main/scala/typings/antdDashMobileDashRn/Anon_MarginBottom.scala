@@ -13,7 +13,7 @@ trait Anon_MarginBottom extends js.Object {
 object Anon_MarginBottom {
   @scala.inline
   def apply(marginBottom: Double, marginRight: Double, overflow: String): Anon_MarginBottom = {
-    val __obj = js.Dynamic.literal(marginBottom = marginBottom, marginRight = marginRight, overflow = overflow)
+    val __obj = js.Dynamic.literal(marginBottom = marginBottom.asInstanceOf[js.Any], marginRight = marginRight.asInstanceOf[js.Any], overflow = overflow.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_MarginBottom]
   }

@@ -27,7 +27,7 @@ object GetOpenRevisions {
   ): GetOpenRevisions = {
     val __obj = js.Dynamic.literal(open_revs = open_revs.asInstanceOf[js.Any])
     if (fetch != null) __obj.updateDynamic("fetch")(js.Any.fromFunction2(fetch))
-    if (!js.isUndefined(revs)) __obj.updateDynamic("revs")(revs)
+    if (!js.isUndefined(revs)) __obj.updateDynamic("revs")(revs.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetOpenRevisions]
   }
 }

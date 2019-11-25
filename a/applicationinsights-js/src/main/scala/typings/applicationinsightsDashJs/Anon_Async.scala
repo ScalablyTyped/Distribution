@@ -46,7 +46,7 @@ object Anon_Async {
     value: FieldType,
     ver: FieldType
   ): Anon_Async = {
-    val __obj = js.Dynamic.literal(async = async, commandName = commandName, count = count, dependencyKind = dependencyKind, dependencySource = dependencySource, dependencyTypeName = dependencyTypeName, id = id, kind = kind, max = max, min = min, name = name, properties = properties, resultCode = resultCode, stdDev = stdDev, success = success, value = value, ver = ver)
+    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], commandName = commandName.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], dependencyKind = dependencyKind.asInstanceOf[js.Any], dependencySource = dependencySource.asInstanceOf[js.Any], dependencyTypeName = dependencyTypeName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], resultCode = resultCode.asInstanceOf[js.Any], stdDev = stdDev.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], ver = ver.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Async]
   }

@@ -16,9 +16,9 @@ object PartialStyleRulesStepContentClasskey {
   @scala.inline
   def apply(last: CSSProperties = null, root: CSSProperties = null, transition: CSSProperties = null): PartialStyleRulesStepContentClasskey = {
     val __obj = js.Dynamic.literal()
-    if (last != null) __obj.updateDynamic("last")(last)
-    if (root != null) __obj.updateDynamic("root")(root)
-    if (transition != null) __obj.updateDynamic("transition")(transition)
+    if (last != null) __obj.updateDynamic("last")(last.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyleRulesStepContentClasskey]
   }
 }

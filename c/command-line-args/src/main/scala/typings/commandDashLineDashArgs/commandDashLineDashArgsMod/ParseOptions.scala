@@ -33,10 +33,10 @@ object ParseOptions {
     stopAtFirstUnknown: js.UndefOr[Boolean] = js.undefined
   ): ParseOptions = {
     val __obj = js.Dynamic.literal()
-    if (argv != null) __obj.updateDynamic("argv")(argv)
-    if (!js.isUndefined(camelCase)) __obj.updateDynamic("camelCase")(camelCase)
-    if (!js.isUndefined(partial)) __obj.updateDynamic("partial")(partial)
-    if (!js.isUndefined(stopAtFirstUnknown)) __obj.updateDynamic("stopAtFirstUnknown")(stopAtFirstUnknown)
+    if (argv != null) __obj.updateDynamic("argv")(argv.asInstanceOf[js.Any])
+    if (!js.isUndefined(camelCase)) __obj.updateDynamic("camelCase")(camelCase.asInstanceOf[js.Any])
+    if (!js.isUndefined(partial)) __obj.updateDynamic("partial")(partial.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopAtFirstUnknown)) __obj.updateDynamic("stopAtFirstUnknown")(stopAtFirstUnknown.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParseOptions]
   }
 }

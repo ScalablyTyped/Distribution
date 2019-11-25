@@ -20,9 +20,9 @@ object ComponentSource {
   @scala.inline
   def apply(name: String = null, originalTransformOrCollection: String = null, userName: String = null): ComponentSource = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (originalTransformOrCollection != null) __obj.updateDynamic("originalTransformOrCollection")(originalTransformOrCollection)
-    if (userName != null) __obj.updateDynamic("userName")(userName)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (originalTransformOrCollection != null) __obj.updateDynamic("originalTransformOrCollection")(originalTransformOrCollection.asInstanceOf[js.Any])
+    if (userName != null) __obj.updateDynamic("userName")(userName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentSource]
   }
 }

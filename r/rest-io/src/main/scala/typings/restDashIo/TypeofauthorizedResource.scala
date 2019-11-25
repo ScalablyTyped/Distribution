@@ -12,7 +12,7 @@ trait TypeofauthorizedResource extends js.Object {
 object TypeofauthorizedResource {
   @scala.inline
   def apply(ROLES: Anon_ADMIN, default: TypeofClassdefault): TypeofauthorizedResource = {
-    val __obj = js.Dynamic.literal(ROLES = ROLES, default = default)
+    val __obj = js.Dynamic.literal(ROLES = ROLES.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeofauthorizedResource]
   }

@@ -29,11 +29,11 @@ object JsftpOpts {
   ): JsftpOpts = {
     val __obj = js.Dynamic.literal()
     if (createSocket != null) __obj.updateDynamic("createSocket")(js.Any.fromFunction2(createSocket))
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (pass != null) __obj.updateDynamic("pass")(pass)
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (pass != null) __obj.updateDynamic("pass")(pass.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (!js.isUndefined(useList)) __obj.updateDynamic("useList")(useList)
-    if (user != null) __obj.updateDynamic("user")(user)
+    if (!js.isUndefined(useList)) __obj.updateDynamic("useList")(useList.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[JsftpOpts]
   }
 }

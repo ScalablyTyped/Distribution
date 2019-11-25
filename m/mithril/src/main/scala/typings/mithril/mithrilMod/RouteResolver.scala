@@ -32,8 +32,8 @@ object RouteResolver {
     render: js.ThisFunction1[RouteResolver[Attrs, State], /* vnode */ Vnode[Attrs, State], Children] = null
   ): RouteResolver[Attrs, State] = {
     val __obj = js.Dynamic.literal()
-    if (onmatch != null) __obj.updateDynamic("onmatch")(onmatch)
-    if (render != null) __obj.updateDynamic("render")(render)
+    if (onmatch != null) __obj.updateDynamic("onmatch")(onmatch.asInstanceOf[js.Any])
+    if (render != null) __obj.updateDynamic("render")(render.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteResolver[Attrs, State]]
   }
 }

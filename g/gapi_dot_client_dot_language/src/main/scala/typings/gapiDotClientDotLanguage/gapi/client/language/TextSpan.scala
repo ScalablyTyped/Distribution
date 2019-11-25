@@ -19,7 +19,7 @@ object TextSpan {
   def apply(beginOffset: Int | Double = null, content: String = null): TextSpan = {
     val __obj = js.Dynamic.literal()
     if (beginOffset != null) __obj.updateDynamic("beginOffset")(beginOffset.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextSpan]
   }
 }

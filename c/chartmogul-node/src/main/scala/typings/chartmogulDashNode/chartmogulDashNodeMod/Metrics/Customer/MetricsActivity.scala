@@ -29,12 +29,12 @@ object MetricsActivity {
     id: Double,
     `type`: String
   ): MetricsActivity = {
-    val __obj = js.Dynamic.literal(currency = currency, date = date, description = description, id = id)
-    __obj.updateDynamic("activity-arr")(`activity-arr`)
-    __obj.updateDynamic("activity-mrr")(`activity-mrr`)
-    __obj.updateDynamic("activity-mrr-movement")(`activity-mrr-movement`)
-    __obj.updateDynamic("currency-sign")(`currency-sign`)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
+    __obj.updateDynamic("activity-arr")(`activity-arr`.asInstanceOf[js.Any])
+    __obj.updateDynamic("activity-mrr")(`activity-mrr`.asInstanceOf[js.Any])
+    __obj.updateDynamic("activity-mrr-movement")(`activity-mrr-movement`.asInstanceOf[js.Any])
+    __obj.updateDynamic("currency-sign")(`currency-sign`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricsActivity]
   }
 }

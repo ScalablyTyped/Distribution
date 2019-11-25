@@ -60,11 +60,11 @@ object YAxisEventsOptions {
     setExtremes: AxisSetExtremesEventCallbackFunction = null
   ): YAxisEventsOptions = {
     val __obj = js.Dynamic.literal()
-    if (afterBreaks != null) __obj.updateDynamic("afterBreaks")(afterBreaks)
-    if (afterSetExtremes != null) __obj.updateDynamic("afterSetExtremes")(afterSetExtremes)
-    if (pointBreak != null) __obj.updateDynamic("pointBreak")(pointBreak)
-    if (pointInBreak != null) __obj.updateDynamic("pointInBreak")(pointInBreak)
-    if (setExtremes != null) __obj.updateDynamic("setExtremes")(setExtremes)
+    if (afterBreaks != null) __obj.updateDynamic("afterBreaks")(afterBreaks.asInstanceOf[js.Any])
+    if (afterSetExtremes != null) __obj.updateDynamic("afterSetExtremes")(afterSetExtremes.asInstanceOf[js.Any])
+    if (pointBreak != null) __obj.updateDynamic("pointBreak")(pointBreak.asInstanceOf[js.Any])
+    if (pointInBreak != null) __obj.updateDynamic("pointInBreak")(pointInBreak.asInstanceOf[js.Any])
+    if (setExtremes != null) __obj.updateDynamic("setExtremes")(setExtremes.asInstanceOf[js.Any])
     __obj.asInstanceOf[YAxisEventsOptions]
   }
 }

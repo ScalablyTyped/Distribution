@@ -18,8 +18,8 @@ object AcceleratorConfig {
   @scala.inline
   def apply(acceleratorCount: String = null, acceleratorType: String = null): AcceleratorConfig = {
     val __obj = js.Dynamic.literal()
-    if (acceleratorCount != null) __obj.updateDynamic("acceleratorCount")(acceleratorCount)
-    if (acceleratorType != null) __obj.updateDynamic("acceleratorType")(acceleratorType)
+    if (acceleratorCount != null) __obj.updateDynamic("acceleratorCount")(acceleratorCount.asInstanceOf[js.Any])
+    if (acceleratorType != null) __obj.updateDynamic("acceleratorType")(acceleratorType.asInstanceOf[js.Any])
     __obj.asInstanceOf[AcceleratorConfig]
   }
 }

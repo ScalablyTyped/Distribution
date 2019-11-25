@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait Step extends js.Object
 
+object Step {
+  @scala.inline
+  def build: typings.atAwsDashSdkTypes.atAwsDashSdkTypesStrings.build = this.cast("build")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def initialize: typings.atAwsDashSdkTypes.atAwsDashSdkTypesStrings.initialize = this.cast("initialize")
+  @scala.inline
+  def serialize: typings.atAwsDashSdkTypes.atAwsDashSdkTypesStrings.serialize = this.cast("serialize")
+}
+

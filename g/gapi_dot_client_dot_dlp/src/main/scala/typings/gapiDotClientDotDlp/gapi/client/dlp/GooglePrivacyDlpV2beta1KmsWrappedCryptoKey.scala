@@ -15,8 +15,8 @@ object GooglePrivacyDlpV2beta1KmsWrappedCryptoKey {
   @scala.inline
   def apply(cryptoKeyName: String = null, wrappedKey: String = null): GooglePrivacyDlpV2beta1KmsWrappedCryptoKey = {
     val __obj = js.Dynamic.literal()
-    if (cryptoKeyName != null) __obj.updateDynamic("cryptoKeyName")(cryptoKeyName)
-    if (wrappedKey != null) __obj.updateDynamic("wrappedKey")(wrappedKey)
+    if (cryptoKeyName != null) __obj.updateDynamic("cryptoKeyName")(cryptoKeyName.asInstanceOf[js.Any])
+    if (wrappedKey != null) __obj.updateDynamic("wrappedKey")(wrappedKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1KmsWrappedCryptoKey]
   }
 }

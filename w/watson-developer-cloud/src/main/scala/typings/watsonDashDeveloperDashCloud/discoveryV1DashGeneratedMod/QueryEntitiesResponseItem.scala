@@ -18,9 +18,9 @@ object QueryEntitiesResponseItem {
   @scala.inline
   def apply(evidence: js.Array[QueryEvidence] = null, text: String = null, `type`: String = null): QueryEntitiesResponseItem = {
     val __obj = js.Dynamic.literal()
-    if (evidence != null) __obj.updateDynamic("evidence")(evidence)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (evidence != null) __obj.updateDynamic("evidence")(evidence.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryEntitiesResponseItem]
   }
 }

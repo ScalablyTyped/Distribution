@@ -44,7 +44,7 @@ object ActivityType {
     name: String,
     propertyIsEnumerable: PropertyKey => Boolean
   ): ActivityType = {
-    val __obj = js.Dynamic.literal(constructor = constructor, desription = desription, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), id = id, message = message, name = name, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], desription = desription.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), id = id.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
   
     __obj.asInstanceOf[ActivityType]
   }

@@ -31,14 +31,14 @@ object ThrottleOptions {
   ): ThrottleOptions = {
     val __obj = js.Dynamic.literal()
     if (burst != null) __obj.updateDynamic("burst")(burst.asInstanceOf[js.Any])
-    if (!js.isUndefined(ip)) __obj.updateDynamic("ip")(ip)
+    if (!js.isUndefined(ip)) __obj.updateDynamic("ip")(ip.asInstanceOf[js.Any])
     if (maxKeys != null) __obj.updateDynamic("maxKeys")(maxKeys.asInstanceOf[js.Any])
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides)
+    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
     if (rate != null) __obj.updateDynamic("rate")(rate.asInstanceOf[js.Any])
-    if (!js.isUndefined(setHeaders)) __obj.updateDynamic("setHeaders")(setHeaders)
-    if (tokensTable != null) __obj.updateDynamic("tokensTable")(tokensTable)
-    if (!js.isUndefined(username)) __obj.updateDynamic("username")(username)
-    if (!js.isUndefined(xff)) __obj.updateDynamic("xff")(xff)
+    if (!js.isUndefined(setHeaders)) __obj.updateDynamic("setHeaders")(setHeaders.asInstanceOf[js.Any])
+    if (tokensTable != null) __obj.updateDynamic("tokensTable")(tokensTable.asInstanceOf[js.Any])
+    if (!js.isUndefined(username)) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
+    if (!js.isUndefined(xff)) __obj.updateDynamic("xff")(xff.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThrottleOptions]
   }
 }

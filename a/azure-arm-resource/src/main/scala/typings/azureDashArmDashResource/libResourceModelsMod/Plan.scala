@@ -37,11 +37,11 @@ object Plan {
     version: String = null
   ): Plan = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (product != null) __obj.updateDynamic("product")(product)
-    if (promotionCode != null) __obj.updateDynamic("promotionCode")(promotionCode)
-    if (publisher != null) __obj.updateDynamic("publisher")(publisher)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (product != null) __obj.updateDynamic("product")(product.asInstanceOf[js.Any])
+    if (promotionCode != null) __obj.updateDynamic("promotionCode")(promotionCode.asInstanceOf[js.Any])
+    if (publisher != null) __obj.updateDynamic("publisher")(publisher.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Plan]
   }
 }

@@ -13,7 +13,7 @@ trait ItemPrice extends js.Object {
 object ItemPrice {
   @scala.inline
   def apply(buying: Double, games: js.Array[String], selling: Double): ItemPrice = {
-    val __obj = js.Dynamic.literal(buying = buying, games = games, selling = selling)
+    val __obj = js.Dynamic.literal(buying = buying.asInstanceOf[js.Any], games = games.asInstanceOf[js.Any], selling = selling.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ItemPrice]
   }

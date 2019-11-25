@@ -12,7 +12,7 @@ trait OSEmailSubscriptionState extends js.Object {
 object OSEmailSubscriptionState {
   @scala.inline
   def apply(emailAddress: String, emailUserId: String): OSEmailSubscriptionState = {
-    val __obj = js.Dynamic.literal(emailAddress = emailAddress, emailUserId = emailUserId)
+    val __obj = js.Dynamic.literal(emailAddress = emailAddress.asInstanceOf[js.Any], emailUserId = emailUserId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OSEmailSubscriptionState]
   }

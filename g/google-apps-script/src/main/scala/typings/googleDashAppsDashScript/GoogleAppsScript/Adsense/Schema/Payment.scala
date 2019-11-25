@@ -22,11 +22,11 @@ object Payment {
     paymentDate: String = null
   ): Payment = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (paymentAmount != null) __obj.updateDynamic("paymentAmount")(paymentAmount)
-    if (paymentAmountCurrencyCode != null) __obj.updateDynamic("paymentAmountCurrencyCode")(paymentAmountCurrencyCode)
-    if (paymentDate != null) __obj.updateDynamic("paymentDate")(paymentDate)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (paymentAmount != null) __obj.updateDynamic("paymentAmount")(paymentAmount.asInstanceOf[js.Any])
+    if (paymentAmountCurrencyCode != null) __obj.updateDynamic("paymentAmountCurrencyCode")(paymentAmountCurrencyCode.asInstanceOf[js.Any])
+    if (paymentDate != null) __obj.updateDynamic("paymentDate")(paymentDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[Payment]
   }
 }

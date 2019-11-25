@@ -17,7 +17,7 @@ trait DOMRequest[T] extends js.Object {
 object DOMRequest {
   @scala.inline
   def apply[T](error: DOMError, onerror: js.Function, onsuccess: js.Function, readyState: String, result: T): DOMRequest[T] = {
-    val __obj = js.Dynamic.literal(error = error, onerror = onerror, onsuccess = onsuccess, readyState = readyState, result = result.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], onerror = onerror.asInstanceOf[js.Any], onsuccess = onsuccess.asInstanceOf[js.Any], readyState = readyState.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DOMRequest[T]]
   }

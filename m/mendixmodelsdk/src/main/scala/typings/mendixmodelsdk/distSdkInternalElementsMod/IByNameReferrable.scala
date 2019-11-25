@@ -18,7 +18,7 @@ object IByNameReferrable {
   @scala.inline
   def apply(qualifiedName: String = null): IByNameReferrable = {
     val __obj = js.Dynamic.literal()
-    if (qualifiedName != null) __obj.updateDynamic("qualifiedName")(qualifiedName)
+    if (qualifiedName != null) __obj.updateDynamic("qualifiedName")(qualifiedName.asInstanceOf[js.Any])
     __obj.asInstanceOf[IByNameReferrable]
   }
 }

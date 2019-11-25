@@ -24,11 +24,11 @@ object BoardOption {
     timeout: Int | Double = null
   ): BoardOption = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (io != null) __obj.updateDynamic("io")(io)
+    if (io != null) __obj.updateDynamic("io")(io.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (!js.isUndefined(repl)) __obj.updateDynamic("repl")(repl)
+    if (!js.isUndefined(repl)) __obj.updateDynamic("repl")(repl.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[BoardOption]
   }

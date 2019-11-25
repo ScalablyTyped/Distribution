@@ -32,8 +32,8 @@ object SupportedTrigger {
     supportedCapabilities: StringDictionary[SupportLevel],
     `type`: DefinitionTriggerType
   ): SupportedTrigger = {
-    val __obj = js.Dynamic.literal(defaultPollingInterval = defaultPollingInterval, notificationType = notificationType, supportedCapabilities = supportedCapabilities)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(defaultPollingInterval = defaultPollingInterval.asInstanceOf[js.Any], notificationType = notificationType.asInstanceOf[js.Any], supportedCapabilities = supportedCapabilities.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SupportedTrigger]
   }
 }

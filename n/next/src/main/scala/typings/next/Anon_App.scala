@@ -29,8 +29,8 @@ object Anon_App {
     wrapApp: ComponentType[js.Object] => js.Any,
     err: Error = null
   ): Anon_App = {
-    val __obj = js.Dynamic.literal(App = App.asInstanceOf[js.Any], Component = Component.asInstanceOf[js.Any], initialProps = initialProps, pageLoader = pageLoader, subscription = js.Any.fromFunction2(subscription), wrapApp = js.Any.fromFunction1(wrapApp))
-    if (err != null) __obj.updateDynamic("err")(err)
+    val __obj = js.Dynamic.literal(App = App.asInstanceOf[js.Any], Component = Component.asInstanceOf[js.Any], initialProps = initialProps.asInstanceOf[js.Any], pageLoader = pageLoader.asInstanceOf[js.Any], subscription = js.Any.fromFunction2(subscription), wrapApp = js.Any.fromFunction1(wrapApp))
+    if (err != null) __obj.updateDynamic("err")(err.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_App]
   }
 }

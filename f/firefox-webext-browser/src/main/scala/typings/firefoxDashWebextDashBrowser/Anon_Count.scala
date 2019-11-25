@@ -17,9 +17,9 @@ object Anon_Count {
     rangeData: js.Array[Anon_EndOffset] = null,
     rectData: js.Array[Anon_RectsAndTexts] = null
   ): Anon_Count = {
-    val __obj = js.Dynamic.literal(count = count)
-    if (rangeData != null) __obj.updateDynamic("rangeData")(rangeData)
-    if (rectData != null) __obj.updateDynamic("rectData")(rectData)
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any])
+    if (rangeData != null) __obj.updateDynamic("rangeData")(rangeData.asInstanceOf[js.Any])
+    if (rectData != null) __obj.updateDynamic("rectData")(rectData.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Count]
   }
 }

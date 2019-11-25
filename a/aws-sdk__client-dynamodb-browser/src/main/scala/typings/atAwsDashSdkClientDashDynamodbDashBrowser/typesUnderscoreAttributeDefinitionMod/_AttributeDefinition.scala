@@ -21,7 +21,7 @@ trait _AttributeDefinition extends js.Object {
 object _AttributeDefinition {
   @scala.inline
   def apply(AttributeName: String, AttributeType: S | N | B | String): _AttributeDefinition = {
-    val __obj = js.Dynamic.literal(AttributeName = AttributeName, AttributeType = AttributeType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(AttributeName = AttributeName.asInstanceOf[js.Any], AttributeType = AttributeType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_AttributeDefinition]
   }

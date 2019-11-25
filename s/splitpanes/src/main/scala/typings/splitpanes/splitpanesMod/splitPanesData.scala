@@ -28,7 +28,7 @@ object splitPanesData {
     touch: touchTypes,
     vnodes: js.Array[_]
   ): splitPanesData = {
-    val __obj = js.Dynamic.literal(container = container, panes = panes, slotsCopy = slotsCopy, slotsCount = slotsCount, splitterTaps = splitterTaps, splitters = splitters, touch = touch, vnodes = vnodes)
+    val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], panes = panes.asInstanceOf[js.Any], slotsCopy = slotsCopy.asInstanceOf[js.Any], slotsCount = slotsCount.asInstanceOf[js.Any], splitterTaps = splitterTaps.asInstanceOf[js.Any], splitters = splitters.asInstanceOf[js.Any], touch = touch.asInstanceOf[js.Any], vnodes = vnodes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[splitPanesData]
   }

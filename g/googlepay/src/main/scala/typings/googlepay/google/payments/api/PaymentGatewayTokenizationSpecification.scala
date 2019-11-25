@@ -17,8 +17,8 @@ trait PaymentGatewayTokenizationSpecification
 object PaymentGatewayTokenizationSpecification {
   @scala.inline
   def apply(parameters: StringDictionary[String], `type`: PAYMENT_GATEWAY): PaymentGatewayTokenizationSpecification = {
-    val __obj = js.Dynamic.literal(parameters = parameters)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentGatewayTokenizationSpecification]
   }
 }

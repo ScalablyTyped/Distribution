@@ -25,11 +25,11 @@ object TorrentOptions {
     store: (/* chunkLength */ Double, /* storeOpts */ Anon_Files) => _ = null
   ): TorrentOptions = {
     val __obj = js.Dynamic.literal()
-    if (announce != null) __obj.updateDynamic("announce")(announce)
+    if (announce != null) __obj.updateDynamic("announce")(announce.asInstanceOf[js.Any])
     if (getAnnounceOpts != null) __obj.updateDynamic("getAnnounceOpts")(js.Any.fromFunction0(getAnnounceOpts))
     if (maxWebConns != null) __obj.updateDynamic("maxWebConns")(maxWebConns.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (store != null) __obj.updateDynamic("store")(js.Any.fromFunction2(store))
     __obj.asInstanceOf[TorrentOptions]
   }

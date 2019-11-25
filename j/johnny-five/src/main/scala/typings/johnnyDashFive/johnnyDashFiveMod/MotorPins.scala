@@ -14,7 +14,7 @@ trait MotorPins extends js.Object {
 object MotorPins {
   @scala.inline
   def apply(dir: Double, pwm: Double, brake: Int | Double = null, cdir: Int | Double = null): MotorPins = {
-    val __obj = js.Dynamic.literal(dir = dir, pwm = pwm)
+    val __obj = js.Dynamic.literal(dir = dir.asInstanceOf[js.Any], pwm = pwm.asInstanceOf[js.Any])
     if (brake != null) __obj.updateDynamic("brake")(brake.asInstanceOf[js.Any])
     if (cdir != null) __obj.updateDynamic("cdir")(cdir.asInstanceOf[js.Any])
     __obj.asInstanceOf[MotorPins]

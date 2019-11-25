@@ -98,14 +98,14 @@ object PlusBarcodeBarcodeStyles {
     width: String = null
   ): PlusBarcodeBarcodeStyles = {
     val __obj = js.Dynamic.literal()
-    if (background != null) __obj.updateDynamic("background")(background)
-    if (frameColor != null) __obj.updateDynamic("frameColor")(frameColor)
-    if (height != null) __obj.updateDynamic("height")(height)
-    if (left != null) __obj.updateDynamic("left")(left)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (scanbarColor != null) __obj.updateDynamic("scanbarColor")(scanbarColor)
-    if (top != null) __obj.updateDynamic("top")(top)
-    if (width != null) __obj.updateDynamic("width")(width)
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    if (frameColor != null) __obj.updateDynamic("frameColor")(frameColor.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (scanbarColor != null) __obj.updateDynamic("scanbarColor")(scanbarColor.asInstanceOf[js.Any])
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusBarcodeBarcodeStyles]
   }
 }

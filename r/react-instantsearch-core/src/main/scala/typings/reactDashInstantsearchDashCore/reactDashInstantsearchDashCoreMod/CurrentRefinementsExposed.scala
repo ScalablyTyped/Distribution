@@ -18,7 +18,7 @@ object CurrentRefinementsExposed {
   @scala.inline
   def apply(clearsQuery: js.UndefOr[Boolean] = js.undefined, transformItems: /* repeated */ js.Any => _ = null): CurrentRefinementsExposed = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(clearsQuery)) __obj.updateDynamic("clearsQuery")(clearsQuery)
+    if (!js.isUndefined(clearsQuery)) __obj.updateDynamic("clearsQuery")(clearsQuery.asInstanceOf[js.Any])
     if (transformItems != null) __obj.updateDynamic("transformItems")(js.Any.fromFunction1(transformItems))
     __obj.asInstanceOf[CurrentRefinementsExposed]
   }

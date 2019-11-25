@@ -12,7 +12,7 @@ trait Anon_ResolvedData[FieldNames /* <: String */] extends js.Object {
 object Anon_ResolvedData {
   @scala.inline
   def apply[FieldNames /* <: String */](resolvedData: KeyValues[FieldNames, _]): Anon_ResolvedData[FieldNames] = {
-    val __obj = js.Dynamic.literal(resolvedData = resolvedData)
+    val __obj = js.Dynamic.literal(resolvedData = resolvedData.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ResolvedData[FieldNames]]
   }

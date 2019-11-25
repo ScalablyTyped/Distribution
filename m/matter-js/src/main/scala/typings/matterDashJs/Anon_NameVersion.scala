@@ -13,7 +13,7 @@ trait Anon_NameVersion extends _Dependency {
 object Anon_NameVersion {
   @scala.inline
   def apply(name: String, version: String): Anon_NameVersion = {
-    val __obj = js.Dynamic.literal(name = name, version = version)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_NameVersion]
   }

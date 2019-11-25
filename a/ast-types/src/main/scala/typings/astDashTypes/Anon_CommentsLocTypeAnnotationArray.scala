@@ -22,8 +22,8 @@ object Anon_CommentsLocTypeAnnotationArray {
     loc: SourceLocationKind = null
   ): Anon_CommentsLocTypeAnnotationArray = {
     val __obj = js.Dynamic.literal(typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CommentsLocTypeAnnotationArray]
   }
 }

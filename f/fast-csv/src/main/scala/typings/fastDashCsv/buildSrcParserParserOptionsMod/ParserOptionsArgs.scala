@@ -40,20 +40,20 @@ object ParserOptionsArgs {
     trim: js.UndefOr[Boolean] = js.undefined
   ): ParserOptionsArgs = {
     val __obj = js.Dynamic.literal()
-    if (comment != null) __obj.updateDynamic("comment")(comment)
-    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
-    if (!js.isUndefined(discardUnmappedColumns)) __obj.updateDynamic("discardUnmappedColumns")(discardUnmappedColumns)
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
-    if (escape != null) __obj.updateDynamic("escape")(escape)
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
+    if (!js.isUndefined(discardUnmappedColumns)) __obj.updateDynamic("discardUnmappedColumns")(discardUnmappedColumns.asInstanceOf[js.Any])
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    if (escape != null) __obj.updateDynamic("escape")(escape.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreEmpty)) __obj.updateDynamic("ignoreEmpty")(ignoreEmpty)
-    if (!js.isUndefined(ltrim)) __obj.updateDynamic("ltrim")(ltrim)
-    if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode)
-    if (quote != null) __obj.updateDynamic("quote")(quote)
-    if (!js.isUndefined(renameHeaders)) __obj.updateDynamic("renameHeaders")(renameHeaders)
-    if (!js.isUndefined(rtrim)) __obj.updateDynamic("rtrim")(rtrim)
-    if (!js.isUndefined(strictColumnHandling)) __obj.updateDynamic("strictColumnHandling")(strictColumnHandling)
-    if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim)
+    if (!js.isUndefined(ignoreEmpty)) __obj.updateDynamic("ignoreEmpty")(ignoreEmpty.asInstanceOf[js.Any])
+    if (!js.isUndefined(ltrim)) __obj.updateDynamic("ltrim")(ltrim.asInstanceOf[js.Any])
+    if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode.asInstanceOf[js.Any])
+    if (quote != null) __obj.updateDynamic("quote")(quote.asInstanceOf[js.Any])
+    if (!js.isUndefined(renameHeaders)) __obj.updateDynamic("renameHeaders")(renameHeaders.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtrim)) __obj.updateDynamic("rtrim")(rtrim.asInstanceOf[js.Any])
+    if (!js.isUndefined(strictColumnHandling)) __obj.updateDynamic("strictColumnHandling")(strictColumnHandling.asInstanceOf[js.Any])
+    if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParserOptionsArgs]
   }
 }

@@ -13,7 +13,7 @@ trait INotyfOptions extends js.Object {
 object INotyfOptions {
   @scala.inline
   def apply(duration: Double, ripple: Boolean, types: js.Array[DeepPartial[INotyfNotificationOptions]]): INotyfOptions = {
-    val __obj = js.Dynamic.literal(duration = duration, ripple = ripple, types = types)
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], ripple = ripple.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[INotyfOptions]
   }

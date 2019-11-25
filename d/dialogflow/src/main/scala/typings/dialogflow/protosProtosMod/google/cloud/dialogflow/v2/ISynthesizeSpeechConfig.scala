@@ -28,10 +28,10 @@ object ISynthesizeSpeechConfig {
     volumeGainDb: Int | Double = null
   ): ISynthesizeSpeechConfig = {
     val __obj = js.Dynamic.literal()
-    if (effectsProfileId != null) __obj.updateDynamic("effectsProfileId")(effectsProfileId)
+    if (effectsProfileId != null) __obj.updateDynamic("effectsProfileId")(effectsProfileId.asInstanceOf[js.Any])
     if (pitch != null) __obj.updateDynamic("pitch")(pitch.asInstanceOf[js.Any])
     if (speakingRate != null) __obj.updateDynamic("speakingRate")(speakingRate.asInstanceOf[js.Any])
-    if (voice != null) __obj.updateDynamic("voice")(voice)
+    if (voice != null) __obj.updateDynamic("voice")(voice.asInstanceOf[js.Any])
     if (volumeGainDb != null) __obj.updateDynamic("volumeGainDb")(volumeGainDb.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISynthesizeSpeechConfig]
   }

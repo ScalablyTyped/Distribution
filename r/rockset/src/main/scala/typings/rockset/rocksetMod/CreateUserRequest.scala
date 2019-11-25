@@ -14,8 +14,8 @@ trait CreateUserRequest extends js.Object {
 object CreateUserRequest {
   @scala.inline
   def apply(email: String, roles: js.Array[String] = null): CreateUserRequest = {
-    val __obj = js.Dynamic.literal(email = email)
-    if (roles != null) __obj.updateDynamic("roles")(roles)
+    val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any])
+    if (roles != null) __obj.updateDynamic("roles")(roles.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateUserRequest]
   }
 }

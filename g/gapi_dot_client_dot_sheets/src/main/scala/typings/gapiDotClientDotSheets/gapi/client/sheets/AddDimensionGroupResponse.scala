@@ -13,7 +13,7 @@ object AddDimensionGroupResponse {
   @scala.inline
   def apply(dimensionGroups: js.Array[DimensionGroup] = null): AddDimensionGroupResponse = {
     val __obj = js.Dynamic.literal()
-    if (dimensionGroups != null) __obj.updateDynamic("dimensionGroups")(dimensionGroups)
+    if (dimensionGroups != null) __obj.updateDynamic("dimensionGroups")(dimensionGroups.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddDimensionGroupResponse]
   }
 }

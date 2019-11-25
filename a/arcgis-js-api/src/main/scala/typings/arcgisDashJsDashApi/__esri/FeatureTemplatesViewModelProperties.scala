@@ -46,7 +46,7 @@ object FeatureTemplatesViewModelProperties {
     val __obj = js.Dynamic.literal()
     if (filterFunction != null) __obj.updateDynamic("filterFunction")(js.Any.fromFunction1(filterFunction))
     if (groupBy != null) __obj.updateDynamic("groupBy")(groupBy.asInstanceOf[js.Any])
-    if (layers != null) __obj.updateDynamic("layers")(layers)
+    if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureTemplatesViewModelProperties]
   }
 }

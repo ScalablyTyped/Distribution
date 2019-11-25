@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait ParseMode extends js.Object
 
+object ParseMode {
+  @scala.inline
+  def HTML: typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiStrings.HTML = this.cast("HTML")
+  @scala.inline
+  def Markdown: typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiStrings.Markdown = this.cast("Markdown")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

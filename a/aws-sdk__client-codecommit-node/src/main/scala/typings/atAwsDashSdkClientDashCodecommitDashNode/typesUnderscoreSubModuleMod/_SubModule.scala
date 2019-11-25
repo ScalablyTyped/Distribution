@@ -23,9 +23,9 @@ object _SubModule {
   @scala.inline
   def apply(absolutePath: String = null, commitId: String = null, relativePath: String = null): _SubModule = {
     val __obj = js.Dynamic.literal()
-    if (absolutePath != null) __obj.updateDynamic("absolutePath")(absolutePath)
-    if (commitId != null) __obj.updateDynamic("commitId")(commitId)
-    if (relativePath != null) __obj.updateDynamic("relativePath")(relativePath)
+    if (absolutePath != null) __obj.updateDynamic("absolutePath")(absolutePath.asInstanceOf[js.Any])
+    if (commitId != null) __obj.updateDynamic("commitId")(commitId.asInstanceOf[js.Any])
+    if (relativePath != null) __obj.updateDynamic("relativePath")(relativePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[_SubModule]
   }
 }

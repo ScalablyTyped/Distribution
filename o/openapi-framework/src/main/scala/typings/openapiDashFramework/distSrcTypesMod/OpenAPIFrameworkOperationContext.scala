@@ -35,7 +35,7 @@ object OpenAPIFrameworkOperationContext {
     operationHandler: js.Any,
     path: String
   ): OpenAPIFrameworkOperationContext = {
-    val __obj = js.Dynamic.literal(additionalFeatures = additionalFeatures, allowsFeatures = allowsFeatures, apiDoc = apiDoc, basePaths = basePaths, consumes = consumes, features = features, methodName = methodName, methodParameters = methodParameters, operationDoc = operationDoc, operationHandler = operationHandler, path = path)
+    val __obj = js.Dynamic.literal(additionalFeatures = additionalFeatures.asInstanceOf[js.Any], allowsFeatures = allowsFeatures.asInstanceOf[js.Any], apiDoc = apiDoc.asInstanceOf[js.Any], basePaths = basePaths.asInstanceOf[js.Any], consumes = consumes.asInstanceOf[js.Any], features = features.asInstanceOf[js.Any], methodName = methodName.asInstanceOf[js.Any], methodParameters = methodParameters.asInstanceOf[js.Any], operationDoc = operationDoc.asInstanceOf[js.Any], operationHandler = operationHandler.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OpenAPIFrameworkOperationContext]
   }

@@ -22,7 +22,7 @@ trait LightboxOptions extends js.Object {
 object LightboxOptions {
   @scala.inline
   def apply(height: Double, resizable: Boolean, width: Double): LightboxOptions = {
-    val __obj = js.Dynamic.literal(height = height, resizable = resizable, width = width)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], resizable = resizable.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LightboxOptions]
   }

@@ -20,10 +20,10 @@ object NavigateOptions {
     toggleMode: js.UndefOr[Boolean] = js.undefined
   ): NavigateOptions = {
     val __obj = js.Dynamic.literal()
-    if (focusClass != null) __obj.updateDynamic("focusClass")(focusClass)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (!js.isUndefined(rowLooping)) __obj.updateDynamic("rowLooping")(rowLooping)
-    if (!js.isUndefined(toggleMode)) __obj.updateDynamic("toggleMode")(toggleMode)
+    if (focusClass != null) __obj.updateDynamic("focusClass")(focusClass.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowLooping)) __obj.updateDynamic("rowLooping")(rowLooping.asInstanceOf[js.Any])
+    if (!js.isUndefined(toggleMode)) __obj.updateDynamic("toggleMode")(toggleMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigateOptions]
   }
 }

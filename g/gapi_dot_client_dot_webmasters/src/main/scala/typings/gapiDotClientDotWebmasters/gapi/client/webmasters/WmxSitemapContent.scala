@@ -17,9 +17,9 @@ object WmxSitemapContent {
   @scala.inline
   def apply(indexed: String = null, submitted: String = null, `type`: String = null): WmxSitemapContent = {
     val __obj = js.Dynamic.literal()
-    if (indexed != null) __obj.updateDynamic("indexed")(indexed)
-    if (submitted != null) __obj.updateDynamic("submitted")(submitted)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (indexed != null) __obj.updateDynamic("indexed")(indexed.asInstanceOf[js.Any])
+    if (submitted != null) __obj.updateDynamic("submitted")(submitted.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WmxSitemapContent]
   }
 }

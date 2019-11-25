@@ -22,11 +22,11 @@ object OrderRefund {
     reasonText: String = null
   ): OrderRefund = {
     val __obj = js.Dynamic.literal()
-    if (actor != null) __obj.updateDynamic("actor")(actor)
-    if (amount != null) __obj.updateDynamic("amount")(amount)
-    if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate)
-    if (reason != null) __obj.updateDynamic("reason")(reason)
-    if (reasonText != null) __obj.updateDynamic("reasonText")(reasonText)
+    if (actor != null) __obj.updateDynamic("actor")(actor.asInstanceOf[js.Any])
+    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
+    if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate.asInstanceOf[js.Any])
+    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
+    if (reasonText != null) __obj.updateDynamic("reasonText")(reasonText.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderRefund]
   }
 }

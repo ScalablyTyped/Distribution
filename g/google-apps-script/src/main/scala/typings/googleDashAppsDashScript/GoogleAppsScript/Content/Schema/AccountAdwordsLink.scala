@@ -13,8 +13,8 @@ object AccountAdwordsLink {
   @scala.inline
   def apply(adwordsId: String = null, status: String = null): AccountAdwordsLink = {
     val __obj = js.Dynamic.literal()
-    if (adwordsId != null) __obj.updateDynamic("adwordsId")(adwordsId)
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (adwordsId != null) __obj.updateDynamic("adwordsId")(adwordsId.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountAdwordsLink]
   }
 }

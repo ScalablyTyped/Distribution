@@ -22,10 +22,10 @@ object Anon_LastRangeBackward {
     sameSelectionCharacters: js.UndefOr[Boolean] = js.undefined
   ): Anon_LastRangeBackward = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(lastRangeBackward)) __obj.updateDynamic("lastRangeBackward")(lastRangeBackward)
-    if (order != null) __obj.updateDynamic("order")(order)
+    if (!js.isUndefined(lastRangeBackward)) __obj.updateDynamic("lastRangeBackward")(lastRangeBackward.asInstanceOf[js.Any])
+    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     if (rootElement != null) __obj.updateDynamic("rootElement")(rootElement.asInstanceOf[js.Any])
-    if (!js.isUndefined(sameSelectionCharacters)) __obj.updateDynamic("sameSelectionCharacters")(sameSelectionCharacters)
+    if (!js.isUndefined(sameSelectionCharacters)) __obj.updateDynamic("sameSelectionCharacters")(sameSelectionCharacters.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_LastRangeBackward]
   }
 }

@@ -14,7 +14,7 @@ trait InflightRequestThrottleOptions extends js.Object {
 object InflightRequestThrottleOptions {
   @scala.inline
   def apply(err: js.Any, limit: Double, server: Server): InflightRequestThrottleOptions = {
-    val __obj = js.Dynamic.literal(err = err, limit = limit, server = server)
+    val __obj = js.Dynamic.literal(err = err.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], server = server.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InflightRequestThrottleOptions]
   }

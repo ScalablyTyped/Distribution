@@ -18,9 +18,9 @@ object Credentials {
   @scala.inline
   def apply(nonce: String = null, password: String = null, username: String = null): Credentials = {
     val __obj = js.Dynamic.literal()
-    if (nonce != null) __obj.updateDynamic("nonce")(nonce)
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (username != null) __obj.updateDynamic("username")(username)
+    if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[Credentials]
   }
 }

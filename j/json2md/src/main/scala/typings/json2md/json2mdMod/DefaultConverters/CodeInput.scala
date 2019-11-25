@@ -13,7 +13,7 @@ object CodeInput {
   @scala.inline
   def apply(content: String | js.Array[String], language: String = null): CodeInput = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language)
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeInput]
   }
 }

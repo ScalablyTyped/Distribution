@@ -56,7 +56,7 @@ object Dataset {
     owner: String,
     size: Double
   ): Dataset = {
-    val __obj = js.Dynamic.literal(bounds = bounds, created = created, description = description, features = features, id = id, modified = modified, name = name, owner = owner, size = size)
+    val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], features = features.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], modified = modified.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Dataset]
   }

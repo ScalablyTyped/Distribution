@@ -37,9 +37,9 @@ object WebpackRules {
     yaml: js.Function,
     StringDictionary: /* key */ StringDictionary[js.Function] = null
   ): WebpackRules = {
-    val __obj = js.Dynamic.literal(css = css, cssModules = cssModules, eslint = eslint, fonts = fonts, images = images, media = media, miscAssets = miscAssets, mjs = mjs, postcss = postcss, yaml = yaml)
-    __obj.updateDynamic("js")(js_)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(css = css.asInstanceOf[js.Any], cssModules = cssModules.asInstanceOf[js.Any], eslint = eslint.asInstanceOf[js.Any], fonts = fonts.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any], media = media.asInstanceOf[js.Any], miscAssets = miscAssets.asInstanceOf[js.Any], mjs = mjs.asInstanceOf[js.Any], postcss = postcss.asInstanceOf[js.Any], yaml = yaml.asInstanceOf[js.Any])
+    __obj.updateDynamic("js")(js_.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[WebpackRules]
   }
 }

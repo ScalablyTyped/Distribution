@@ -23,7 +23,7 @@ object Anon_AWS {
     provider: String,
     version: Double
   ): Anon_AWS = {
-    val __obj = js.Dynamic.literal(category = category, owner = owner.asInstanceOf[js.Any], provider = provider, version = version)
+    val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AWS]
   }

@@ -46,10 +46,10 @@ object Student {
     userId: String = null
   ): Student = {
     val __obj = js.Dynamic.literal()
-    if (courseId != null) __obj.updateDynamic("courseId")(courseId)
-    if (profile != null) __obj.updateDynamic("profile")(profile)
-    if (studentWorkFolder != null) __obj.updateDynamic("studentWorkFolder")(studentWorkFolder)
-    if (userId != null) __obj.updateDynamic("userId")(userId)
+    if (courseId != null) __obj.updateDynamic("courseId")(courseId.asInstanceOf[js.Any])
+    if (profile != null) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
+    if (studentWorkFolder != null) __obj.updateDynamic("studentWorkFolder")(studentWorkFolder.asInstanceOf[js.Any])
+    if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Student]
   }
 }

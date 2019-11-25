@@ -15,7 +15,7 @@ object PageProps {
   def apply(children: js.Array[ReactNode] | ReactNode = null, name: String = null): PageProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageProps]
   }
 }

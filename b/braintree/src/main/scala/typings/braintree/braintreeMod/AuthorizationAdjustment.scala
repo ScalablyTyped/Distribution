@@ -24,7 +24,7 @@ object AuthorizationAdjustment {
     success: Boolean,
     timestamp: Date
   ): AuthorizationAdjustment = {
-    val __obj = js.Dynamic.literal(amount = amount, processorResponseCode = processorResponseCode, processorResponseText = processorResponseText, processorResponseType = processorResponseType, success = success, timestamp = timestamp)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], processorResponseCode = processorResponseCode.asInstanceOf[js.Any], processorResponseText = processorResponseText.asInstanceOf[js.Any], processorResponseType = processorResponseType.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AuthorizationAdjustment]
   }

@@ -18,8 +18,8 @@ object Image {
   @scala.inline
   def apply(data: String = null, mimeType: String = null): Image = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Image]
   }
 }

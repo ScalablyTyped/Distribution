@@ -14,7 +14,7 @@ trait BemContext extends js.Object {
 object BemContext {
   @scala.inline
   def apply(mixes: js.Array[BemMix], mods: BemMods, name: String, states: BemStates): BemContext = {
-    val __obj = js.Dynamic.literal(mixes = mixes, mods = mods, name = name, states = states)
+    val __obj = js.Dynamic.literal(mixes = mixes.asInstanceOf[js.Any], mods = mods.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], states = states.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BemContext]
   }

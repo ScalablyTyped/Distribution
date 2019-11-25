@@ -167,12 +167,12 @@ trait TypeofClassModel extends Instantiable0[Model] {
   def tableMetadata(): TableMetadata = js.native
   def tableMetadata(opt: TableMetadataOptions): TableMetadata = js.native
   def traverse(
-    filterConstructor: /* import warning: ImportType.apply Failed type conversion: typeof Model */ js.Any,
+    filterConstructor: /* import warning: importer.ImportType#apply Failed type conversion: typeof Model */ js.Any,
     models: js.Array[Model],
     traverser: TraverserFunction
   ): Unit = js.native
   def traverse(
-    filterConstructor: /* import warning: ImportType.apply Failed type conversion: typeof Model */ js.Any,
+    filterConstructor: /* import warning: importer.ImportType#apply Failed type conversion: typeof Model */ js.Any,
     models: Model,
     traverser: TraverserFunction
   ): Unit = js.native

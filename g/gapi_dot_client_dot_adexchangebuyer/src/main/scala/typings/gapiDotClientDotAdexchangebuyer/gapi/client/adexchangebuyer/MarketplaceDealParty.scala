@@ -15,8 +15,8 @@ object MarketplaceDealParty {
   @scala.inline
   def apply(buyer: Buyer = null, seller: Seller = null): MarketplaceDealParty = {
     val __obj = js.Dynamic.literal()
-    if (buyer != null) __obj.updateDynamic("buyer")(buyer)
-    if (seller != null) __obj.updateDynamic("seller")(seller)
+    if (buyer != null) __obj.updateDynamic("buyer")(buyer.asInstanceOf[js.Any])
+    if (seller != null) __obj.updateDynamic("seller")(seller.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarketplaceDealParty]
   }
 }

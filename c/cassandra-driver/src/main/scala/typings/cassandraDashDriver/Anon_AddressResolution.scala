@@ -30,12 +30,12 @@ object Anon_AddressResolution {
     timestampGeneration: TimestampGenerator = null
   ): Anon_AddressResolution = {
     val __obj = js.Dynamic.literal()
-    if (addressResolution != null) __obj.updateDynamic("addressResolution")(addressResolution)
-    if (loadBalancing != null) __obj.updateDynamic("loadBalancing")(loadBalancing)
-    if (reconnection != null) __obj.updateDynamic("reconnection")(reconnection)
-    if (retry != null) __obj.updateDynamic("retry")(retry)
-    if (speculativeExecution != null) __obj.updateDynamic("speculativeExecution")(speculativeExecution)
-    if (timestampGeneration != null) __obj.updateDynamic("timestampGeneration")(timestampGeneration)
+    if (addressResolution != null) __obj.updateDynamic("addressResolution")(addressResolution.asInstanceOf[js.Any])
+    if (loadBalancing != null) __obj.updateDynamic("loadBalancing")(loadBalancing.asInstanceOf[js.Any])
+    if (reconnection != null) __obj.updateDynamic("reconnection")(reconnection.asInstanceOf[js.Any])
+    if (retry != null) __obj.updateDynamic("retry")(retry.asInstanceOf[js.Any])
+    if (speculativeExecution != null) __obj.updateDynamic("speculativeExecution")(speculativeExecution.asInstanceOf[js.Any])
+    if (timestampGeneration != null) __obj.updateDynamic("timestampGeneration")(timestampGeneration.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AddressResolution]
   }
 }

@@ -22,11 +22,11 @@ object ExecException {
     stack: java.lang.String = null
   ): ExecException = {
     val __obj = js.Dynamic.literal()
-    if (cmd != null) __obj.updateDynamic("cmd")(cmd)
+    if (cmd != null) __obj.updateDynamic("cmd")(cmd.asInstanceOf[js.Any])
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (!js.isUndefined(killed)) __obj.updateDynamic("killed")(killed)
-    if (signal != null) __obj.updateDynamic("signal")(signal)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    if (!js.isUndefined(killed)) __obj.updateDynamic("killed")(killed.asInstanceOf[js.Any])
+    if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecException]
   }
 }

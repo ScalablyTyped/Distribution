@@ -16,7 +16,7 @@ object libApiObjectDashApiMod extends js.Object {
   def entries[T](obj: T): js.Array[
     js.Tuple2[
       String, 
-      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
     ]
   ] = js.native
   def entries[T](set: ObservableSet[T]): js.Array[js.Tuple2[T, T]] = js.native
@@ -43,7 +43,9 @@ object libApiObjectDashApiMod extends js.Object {
   def set[T](obj: IObservableArray[T], index: Double, value: T): js.Any = js.native
   def set[K, V](obj: ObservableMap[K, V], key: K, value: V): js.Any = js.native
   def values[T](ar: IObservableArray[T]): js.Array[T] = js.native
-  def values[T](obj: T): js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
+  def values[T](obj: T): js.Array[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+  ] = js.native
   def values[T](set: ObservableSet[T]): js.Array[T] = js.native
   def values[K, T](map: ObservableMap[K, T]): js.Array[T] = js.native
 }

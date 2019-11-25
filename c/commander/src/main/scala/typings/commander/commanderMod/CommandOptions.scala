@@ -18,9 +18,9 @@ object CommandOptions {
     noHelp: js.UndefOr[Boolean] = js.undefined
   ): CommandOptions = {
     val __obj = js.Dynamic.literal()
-    if (executableFile != null) __obj.updateDynamic("executableFile")(executableFile)
-    if (!js.isUndefined(isDefault)) __obj.updateDynamic("isDefault")(isDefault)
-    if (!js.isUndefined(noHelp)) __obj.updateDynamic("noHelp")(noHelp)
+    if (executableFile != null) __obj.updateDynamic("executableFile")(executableFile.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDefault)) __obj.updateDynamic("isDefault")(isDefault.asInstanceOf[js.Any])
+    if (!js.isUndefined(noHelp)) __obj.updateDynamic("noHelp")(noHelp.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommandOptions]
   }
 }

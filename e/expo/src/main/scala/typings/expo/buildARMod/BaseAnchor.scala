@@ -13,8 +13,8 @@ trait BaseAnchor extends js.Object {
 object BaseAnchor {
   @scala.inline
   def apply(id: String, transform: Matrix, `type`: AnchorType): BaseAnchor = {
-    val __obj = js.Dynamic.literal(id = id, transform = transform)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], transform = transform.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseAnchor]
   }
 }

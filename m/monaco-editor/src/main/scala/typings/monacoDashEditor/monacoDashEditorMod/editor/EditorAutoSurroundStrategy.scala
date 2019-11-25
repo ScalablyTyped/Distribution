@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait EditorAutoSurroundStrategy extends js.Object
 
+object EditorAutoSurroundStrategy {
+  @scala.inline
+  def brackets: typings.monacoDashEditor.monacoDashEditorStrings.brackets = this.cast("brackets")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def languageDefined: typings.monacoDashEditor.monacoDashEditorStrings.languageDefined = this.cast("languageDefined")
+  @scala.inline
+  def never: typings.monacoDashEditor.monacoDashEditorStrings.never = this.cast("never")
+  @scala.inline
+  def quotes: typings.monacoDashEditor.monacoDashEditorStrings.quotes = this.cast("quotes")
+}
+

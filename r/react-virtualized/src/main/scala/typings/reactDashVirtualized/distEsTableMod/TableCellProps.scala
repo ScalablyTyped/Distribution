@@ -27,10 +27,10 @@ object TableCellProps {
     columnData: js.Any = null,
     parent: js.Any = null
   ): TableCellProps = {
-    val __obj = js.Dynamic.literal(columnIndex = columnIndex, dataKey = dataKey, isScrolling = isScrolling, rowData = rowData, rowIndex = rowIndex)
-    if (cellData != null) __obj.updateDynamic("cellData")(cellData)
-    if (columnData != null) __obj.updateDynamic("columnData")(columnData)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
+    val __obj = js.Dynamic.literal(columnIndex = columnIndex.asInstanceOf[js.Any], dataKey = dataKey.asInstanceOf[js.Any], isScrolling = isScrolling.asInstanceOf[js.Any], rowData = rowData.asInstanceOf[js.Any], rowIndex = rowIndex.asInstanceOf[js.Any])
+    if (cellData != null) __obj.updateDynamic("cellData")(cellData.asInstanceOf[js.Any])
+    if (columnData != null) __obj.updateDynamic("columnData")(columnData.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableCellProps]
   }
 }

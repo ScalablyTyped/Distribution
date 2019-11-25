@@ -77,10 +77,10 @@ object IOptions {
     if (baseColumnSize != null) __obj.updateDynamic("baseColumnSize")(baseColumnSize.asInstanceOf[js.Any])
     if (baseRowHeaderSize != null) __obj.updateDynamic("baseRowHeaderSize")(baseRowHeaderSize.asInstanceOf[js.Any])
     if (baseRowSize != null) __obj.updateDynamic("baseRowSize")(baseRowSize.asInstanceOf[js.Any])
-    if (cellRenderers != null) __obj.updateDynamic("cellRenderers")(cellRenderers)
-    if (defaultRenderer != null) __obj.updateDynamic("defaultRenderer")(defaultRenderer)
-    if (headerVisibility != null) __obj.updateDynamic("headerVisibility")(headerVisibility)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (cellRenderers != null) __obj.updateDynamic("cellRenderers")(cellRenderers.asInstanceOf[js.Any])
+    if (defaultRenderer != null) __obj.updateDynamic("defaultRenderer")(defaultRenderer.asInstanceOf[js.Any])
+    if (headerVisibility != null) __obj.updateDynamic("headerVisibility")(headerVisibility.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

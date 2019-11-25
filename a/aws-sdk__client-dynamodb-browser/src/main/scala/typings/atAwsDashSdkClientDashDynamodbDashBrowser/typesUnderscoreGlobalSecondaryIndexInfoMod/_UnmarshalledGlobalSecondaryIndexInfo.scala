@@ -34,10 +34,10 @@ object _UnmarshalledGlobalSecondaryIndexInfo {
     ProvisionedThroughput: _UnmarshalledProvisionedThroughput = null
   ): _UnmarshalledGlobalSecondaryIndexInfo = {
     val __obj = js.Dynamic.literal()
-    if (IndexName != null) __obj.updateDynamic("IndexName")(IndexName)
-    if (KeySchema != null) __obj.updateDynamic("KeySchema")(KeySchema)
-    if (Projection != null) __obj.updateDynamic("Projection")(Projection)
-    if (ProvisionedThroughput != null) __obj.updateDynamic("ProvisionedThroughput")(ProvisionedThroughput)
+    if (IndexName != null) __obj.updateDynamic("IndexName")(IndexName.asInstanceOf[js.Any])
+    if (KeySchema != null) __obj.updateDynamic("KeySchema")(KeySchema.asInstanceOf[js.Any])
+    if (Projection != null) __obj.updateDynamic("Projection")(Projection.asInstanceOf[js.Any])
+    if (ProvisionedThroughput != null) __obj.updateDynamic("ProvisionedThroughput")(ProvisionedThroughput.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledGlobalSecondaryIndexInfo]
   }
 }

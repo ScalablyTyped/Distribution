@@ -18,7 +18,7 @@ trait DraggableProps extends js.Object {
 object DraggableProps {
   @scala.inline
   def apply(children: /* argument */ DraggableCallbackArgument => Element, style: DraggableStyle): DraggableProps = {
-    val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), style = style)
+    val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), style = style.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DraggableProps]
   }

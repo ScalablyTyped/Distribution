@@ -28,14 +28,14 @@ object CssClassNames {
     tableRow: String = null
   ): CssClassNames = {
     val __obj = js.Dynamic.literal()
-    if (headerCell != null) __obj.updateDynamic("headerCell")(headerCell)
-    if (headerRow != null) __obj.updateDynamic("headerRow")(headerRow)
-    if (hoverTableRow != null) __obj.updateDynamic("hoverTableRow")(hoverTableRow)
-    if (oddTableRow != null) __obj.updateDynamic("oddTableRow")(oddTableRow)
-    if (rowNumberCell != null) __obj.updateDynamic("rowNumberCell")(rowNumberCell)
-    if (selectedTableRow != null) __obj.updateDynamic("selectedTableRow")(selectedTableRow)
-    if (tableCell != null) __obj.updateDynamic("tableCell")(tableCell)
-    if (tableRow != null) __obj.updateDynamic("tableRow")(tableRow)
+    if (headerCell != null) __obj.updateDynamic("headerCell")(headerCell.asInstanceOf[js.Any])
+    if (headerRow != null) __obj.updateDynamic("headerRow")(headerRow.asInstanceOf[js.Any])
+    if (hoverTableRow != null) __obj.updateDynamic("hoverTableRow")(hoverTableRow.asInstanceOf[js.Any])
+    if (oddTableRow != null) __obj.updateDynamic("oddTableRow")(oddTableRow.asInstanceOf[js.Any])
+    if (rowNumberCell != null) __obj.updateDynamic("rowNumberCell")(rowNumberCell.asInstanceOf[js.Any])
+    if (selectedTableRow != null) __obj.updateDynamic("selectedTableRow")(selectedTableRow.asInstanceOf[js.Any])
+    if (tableCell != null) __obj.updateDynamic("tableCell")(tableCell.asInstanceOf[js.Any])
+    if (tableRow != null) __obj.updateDynamic("tableRow")(tableRow.asInstanceOf[js.Any])
     __obj.asInstanceOf[CssClassNames]
   }
 }

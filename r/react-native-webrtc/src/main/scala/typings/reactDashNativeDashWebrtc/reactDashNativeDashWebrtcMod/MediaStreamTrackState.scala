@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait MediaStreamTrackState extends js.Object
 
+object MediaStreamTrackState {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def ended: typings.reactDashNativeDashWebrtc.reactDashNativeDashWebrtcStrings.ended = this.cast("ended")
+  @scala.inline
+  def live: typings.reactDashNativeDashWebrtc.reactDashNativeDashWebrtcStrings.live = this.cast("live")
+}
+

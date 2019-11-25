@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait KeyboardType extends _KeyboardTypeOptions
 
+object KeyboardType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def default: typings.reactDashNative.reactDashNativeStrings.default = this.cast("default")
+  @scala.inline
+  def `email-address`: typings.reactDashNative.reactDashNativeStrings.`email-address` = this.cast("email-address")
+  @scala.inline
+  def numeric: typings.reactDashNative.reactDashNativeStrings.numeric = this.cast("numeric")
+  @scala.inline
+  def `phone-pad`: typings.reactDashNative.reactDashNativeStrings.`phone-pad` = this.cast("phone-pad")
+}
+

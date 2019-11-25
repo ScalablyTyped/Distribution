@@ -18,7 +18,7 @@ trait IFilterTemplateDef extends js.Object {
 object IFilterTemplateDef {
   @scala.inline
   def apply(id: String, placeholder: String): IFilterTemplateDef = {
-    val __obj = js.Dynamic.literal(id = id, placeholder = placeholder)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IFilterTemplateDef]
   }

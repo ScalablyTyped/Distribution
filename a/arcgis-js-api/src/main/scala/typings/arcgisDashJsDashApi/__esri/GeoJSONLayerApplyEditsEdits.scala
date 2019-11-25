@@ -37,10 +37,10 @@ object GeoJSONLayerApplyEditsEdits {
     deleteFeatures: js.Array[_ | Graphic] = null,
     updateFeatures: js.Array[Graphic] = null
   ): GeoJSONLayerApplyEditsEdits = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (addFeatures != null) __obj.updateDynamic("addFeatures")(addFeatures)
-    if (deleteFeatures != null) __obj.updateDynamic("deleteFeatures")(deleteFeatures)
-    if (updateFeatures != null) __obj.updateDynamic("updateFeatures")(updateFeatures)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (addFeatures != null) __obj.updateDynamic("addFeatures")(addFeatures.asInstanceOf[js.Any])
+    if (deleteFeatures != null) __obj.updateDynamic("deleteFeatures")(deleteFeatures.asInstanceOf[js.Any])
+    if (updateFeatures != null) __obj.updateDynamic("updateFeatures")(updateFeatures.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoJSONLayerApplyEditsEdits]
   }
 }

@@ -107,22 +107,22 @@ object EdiTextProps {
     validationMessage: String = null,
     viewProps: js.Object = null
   ): EdiTextProps = {
-    val __obj = js.Dynamic.literal(onSave = js.Any.fromFunction1(onSave), value = value)
-    __obj.updateDynamic("type")(`type`)
-    if (cancelButtonClassName != null) __obj.updateDynamic("cancelButtonClassName")(cancelButtonClassName)
-    if (cancelButtonContent != null) __obj.updateDynamic("cancelButtonContent")(cancelButtonContent)
-    if (editButtonClassName != null) __obj.updateDynamic("editButtonClassName")(editButtonClassName)
-    if (editButtonContent != null) __obj.updateDynamic("editButtonContent")(editButtonContent)
-    if (!js.isUndefined(hideIcons)) __obj.updateDynamic("hideIcons")(hideIcons)
+    val __obj = js.Dynamic.literal(onSave = js.Any.fromFunction1(onSave), value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (cancelButtonClassName != null) __obj.updateDynamic("cancelButtonClassName")(cancelButtonClassName.asInstanceOf[js.Any])
+    if (cancelButtonContent != null) __obj.updateDynamic("cancelButtonContent")(cancelButtonContent.asInstanceOf[js.Any])
+    if (editButtonClassName != null) __obj.updateDynamic("editButtonClassName")(editButtonClassName.asInstanceOf[js.Any])
+    if (editButtonContent != null) __obj.updateDynamic("editButtonContent")(editButtonContent.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideIcons)) __obj.updateDynamic("hideIcons")(hideIcons.asInstanceOf[js.Any])
     if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
-    if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps)
+    if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps.asInstanceOf[js.Any])
     if (onCancel != null) __obj.updateDynamic("onCancel")(js.Any.fromFunction1(onCancel))
     if (onValidationFail != null) __obj.updateDynamic("onValidationFail")(js.Any.fromFunction1(onValidationFail))
-    if (saveButtonClassName != null) __obj.updateDynamic("saveButtonClassName")(saveButtonClassName)
-    if (saveButtonContent != null) __obj.updateDynamic("saveButtonContent")(saveButtonContent)
+    if (saveButtonClassName != null) __obj.updateDynamic("saveButtonClassName")(saveButtonClassName.asInstanceOf[js.Any])
+    if (saveButtonContent != null) __obj.updateDynamic("saveButtonContent")(saveButtonContent.asInstanceOf[js.Any])
     if (validation != null) __obj.updateDynamic("validation")(js.Any.fromFunction1(validation))
-    if (validationMessage != null) __obj.updateDynamic("validationMessage")(validationMessage)
-    if (viewProps != null) __obj.updateDynamic("viewProps")(viewProps)
+    if (validationMessage != null) __obj.updateDynamic("validationMessage")(validationMessage.asInstanceOf[js.Any])
+    if (viewProps != null) __obj.updateDynamic("viewProps")(viewProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[EdiTextProps]
   }
 }

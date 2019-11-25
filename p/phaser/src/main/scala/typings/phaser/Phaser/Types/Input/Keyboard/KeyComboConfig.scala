@@ -32,10 +32,10 @@ object KeyComboConfig {
     resetOnWrongKey: js.UndefOr[Boolean] = js.undefined
   ): KeyComboConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deleteOnMatch)) __obj.updateDynamic("deleteOnMatch")(deleteOnMatch)
+    if (!js.isUndefined(deleteOnMatch)) __obj.updateDynamic("deleteOnMatch")(deleteOnMatch.asInstanceOf[js.Any])
     if (maxKeyDelay != null) __obj.updateDynamic("maxKeyDelay")(maxKeyDelay.asInstanceOf[js.Any])
-    if (!js.isUndefined(resetOnMatch)) __obj.updateDynamic("resetOnMatch")(resetOnMatch)
-    if (!js.isUndefined(resetOnWrongKey)) __obj.updateDynamic("resetOnWrongKey")(resetOnWrongKey)
+    if (!js.isUndefined(resetOnMatch)) __obj.updateDynamic("resetOnMatch")(resetOnMatch.asInstanceOf[js.Any])
+    if (!js.isUndefined(resetOnWrongKey)) __obj.updateDynamic("resetOnWrongKey")(resetOnWrongKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyComboConfig]
   }
 }

@@ -45,7 +45,7 @@ object FlexPersistentVolumeSource {
     readOnly: Boolean,
     secretRef: SecretReference
   ): FlexPersistentVolumeSource = {
-    val __obj = js.Dynamic.literal(driver = driver, fsType = fsType, options = options, readOnly = readOnly, secretRef = secretRef)
+    val __obj = js.Dynamic.literal(driver = driver.asInstanceOf[js.Any], fsType = fsType.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], readOnly = readOnly.asInstanceOf[js.Any], secretRef = secretRef.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FlexPersistentVolumeSource]
   }

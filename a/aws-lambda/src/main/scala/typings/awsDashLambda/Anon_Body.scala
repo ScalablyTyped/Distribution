@@ -32,7 +32,7 @@ object Anon_Body {
     ],
     response: CloudFrontResponse
   ): Anon_Body = {
-    val __obj = js.Dynamic.literal(request = request, response = response)
+    val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Body]
   }

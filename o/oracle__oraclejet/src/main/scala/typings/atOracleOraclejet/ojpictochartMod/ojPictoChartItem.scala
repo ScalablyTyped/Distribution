@@ -133,7 +133,7 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.toggle
 import typings.atOracleOraclejet.atOracleOraclejetStrings.touchcancel
 import typings.atOracleOraclejet.atOracleOraclejetStrings.touchend
 import typings.atOracleOraclejet.atOracleOraclejetStrings.touchmove
-import typings.atOracleOraclejet.atOracleOraclejetStrings.touchstart
+import typings.atOracleOraclejet.atOracleOraclejetStrings.touchstart_
 import typings.atOracleOraclejet.atOracleOraclejetStrings.transitioncancel
 import typings.atOracleOraclejet.atOracleOraclejetStrings.transitionend
 import typings.atOracleOraclejet.atOracleOraclejetStrings.transitionrun
@@ -199,7 +199,7 @@ trait ojPictoChartItem extends JetElement[ojPictoChartItemSettableProperties] {
   var onSvgClassNameChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
   var onSvgStyleChanged: (js.Function1[
     /* event */ JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojpictochart.ojPictoChartItem['svgStyle'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojpictochart.ojPictoChartItem['svgStyle'] */ js.Any
     ], 
     _
   ]) | Null = js.native
@@ -253,7 +253,7 @@ trait ojPictoChartItem extends JetElement[ojPictoChartItemSettableProperties] {
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojpictochart.ojPictoChartItem['svgStyle'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojpictochart.ojPictoChartItem['svgStyle'] */ js.Any
       ], 
       _
     ]
@@ -263,7 +263,7 @@ trait ojPictoChartItem extends JetElement[ojPictoChartItemSettableProperties] {
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojpictochart.ojPictoChartItem['svgStyle'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojpictochart.ojPictoChartItem['svgStyle'] */ js.Any
       ], 
       _
     ],
@@ -1134,10 +1134,10 @@ trait ojPictoChartItem extends JetElement[ojPictoChartItemSettableProperties] {
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_touchstart(`type`: touchstart, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, _]): Unit = js.native
+  def addEventListener_touchstart(`type`: touchstart_, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_touchstart(
-    `type`: touchstart,
+    `type`: touchstart_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, _],
     useCapture: Boolean
   ): Unit = js.native
@@ -1245,7 +1245,7 @@ trait ojPictoChartItem extends JetElement[ojPictoChartItemSettableProperties] {
   @JSName("getProperty")
   def getProperty_svgClassName(property: svgClassName): String = js.native
   @JSName("getProperty")
-  def getProperty_svgStyle(property: svgStyle): /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojpictochart.ojPictoChartItem['svgStyle'] */ js.Any = js.native
+  def getProperty_svgStyle(property: svgStyle): /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojpictochart.ojPictoChartItem['svgStyle'] */ js.Any = js.native
   def setProperties(properties: ojPictoChartItemSettablePropertiesLenient): Unit = js.native
   def setProperty(property: drilling, value: inherit): Unit = js.native
   def setProperty(property: drilling, value: off): Unit = js.native

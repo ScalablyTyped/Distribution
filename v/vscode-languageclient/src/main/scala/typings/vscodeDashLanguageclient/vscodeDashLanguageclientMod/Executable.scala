@@ -13,9 +13,9 @@ trait Executable extends _ServerOptions {
 object Executable {
   @scala.inline
   def apply(command: String, args: js.Array[String] = null, options: ExecutableOptions = null): Executable = {
-    val __obj = js.Dynamic.literal(command = command)
-    if (args != null) __obj.updateDynamic("args")(args)
-    if (options != null) __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any])
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[Executable]
   }
 }

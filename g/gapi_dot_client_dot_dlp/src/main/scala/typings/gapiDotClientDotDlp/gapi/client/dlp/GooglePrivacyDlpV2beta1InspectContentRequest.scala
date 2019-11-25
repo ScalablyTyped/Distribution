@@ -22,8 +22,8 @@ object GooglePrivacyDlpV2beta1InspectContentRequest {
     items: js.Array[GooglePrivacyDlpV2beta1ContentItem] = null
   ): GooglePrivacyDlpV2beta1InspectContentRequest = {
     val __obj = js.Dynamic.literal()
-    if (inspectConfig != null) __obj.updateDynamic("inspectConfig")(inspectConfig)
-    if (items != null) __obj.updateDynamic("items")(items)
+    if (inspectConfig != null) __obj.updateDynamic("inspectConfig")(inspectConfig.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1InspectContentRequest]
   }
 }

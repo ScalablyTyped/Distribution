@@ -48,18 +48,18 @@ object ContainerVersionHeader {
     path: String = null
   ): ContainerVersionHeader = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId)
-    if (containerId != null) __obj.updateDynamic("containerId")(containerId)
-    if (containerVersionId != null) __obj.updateDynamic("containerVersionId")(containerVersionId)
-    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (numMacros != null) __obj.updateDynamic("numMacros")(numMacros)
-    if (numRules != null) __obj.updateDynamic("numRules")(numRules)
-    if (numTags != null) __obj.updateDynamic("numTags")(numTags)
-    if (numTriggers != null) __obj.updateDynamic("numTriggers")(numTriggers)
-    if (numVariables != null) __obj.updateDynamic("numVariables")(numVariables)
-    if (numZones != null) __obj.updateDynamic("numZones")(numZones)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
+    if (containerId != null) __obj.updateDynamic("containerId")(containerId.asInstanceOf[js.Any])
+    if (containerVersionId != null) __obj.updateDynamic("containerVersionId")(containerVersionId.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (numMacros != null) __obj.updateDynamic("numMacros")(numMacros.asInstanceOf[js.Any])
+    if (numRules != null) __obj.updateDynamic("numRules")(numRules.asInstanceOf[js.Any])
+    if (numTags != null) __obj.updateDynamic("numTags")(numTags.asInstanceOf[js.Any])
+    if (numTriggers != null) __obj.updateDynamic("numTriggers")(numTriggers.asInstanceOf[js.Any])
+    if (numVariables != null) __obj.updateDynamic("numVariables")(numVariables.asInstanceOf[js.Any])
+    if (numZones != null) __obj.updateDynamic("numZones")(numZones.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContainerVersionHeader]
   }
 }

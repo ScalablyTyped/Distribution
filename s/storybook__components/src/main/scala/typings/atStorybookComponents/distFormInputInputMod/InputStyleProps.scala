@@ -14,9 +14,9 @@ object InputStyleProps {
   @scala.inline
   def apply(align: Alignments = null, size: Sizes = null, valid: ValidationStates = null): InputStyleProps = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align)
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (valid != null) __obj.updateDynamic("valid")(valid)
+    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (valid != null) __obj.updateDynamic("valid")(valid.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputStyleProps]
   }
 }

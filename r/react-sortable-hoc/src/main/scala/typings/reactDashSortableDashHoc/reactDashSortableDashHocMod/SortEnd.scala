@@ -14,7 +14,7 @@ trait SortEnd extends js.Object {
 object SortEnd {
   @scala.inline
   def apply(collection: Offset, isKeySorting: Boolean, newIndex: Double, oldIndex: Double): SortEnd = {
-    val __obj = js.Dynamic.literal(collection = collection.asInstanceOf[js.Any], isKeySorting = isKeySorting, newIndex = newIndex, oldIndex = oldIndex)
+    val __obj = js.Dynamic.literal(collection = collection.asInstanceOf[js.Any], isKeySorting = isKeySorting.asInstanceOf[js.Any], newIndex = newIndex.asInstanceOf[js.Any], oldIndex = oldIndex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SortEnd]
   }

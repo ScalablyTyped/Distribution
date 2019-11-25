@@ -46,8 +46,8 @@ object NodesGradientRadialGradient {
     if (cy != null) __obj.updateDynamic("cy")(cy.asInstanceOf[js.Any])
     if (fx != null) __obj.updateDynamic("fx")(fx.asInstanceOf[js.Any])
     if (fy != null) __obj.updateDynamic("fy")(fy.asInstanceOf[js.Any])
-    if (stops != null) __obj.updateDynamic("stops")(stops)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (stops != null) __obj.updateDynamic("stops")(stops.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodesGradientRadialGradient]
   }
 }

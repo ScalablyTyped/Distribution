@@ -30,14 +30,14 @@ object PartialStyleRulesTableCellClassKey {
     root: CSSProperties = null
   ): PartialStyleRulesTableCellClassKey = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (footer != null) __obj.updateDynamic("footer")(footer)
-    if (head != null) __obj.updateDynamic("head")(head)
-    if (numeric != null) __obj.updateDynamic("numeric")(numeric)
-    if (paddingCheckbox != null) __obj.updateDynamic("paddingCheckbox")(paddingCheckbox)
-    if (paddingDense != null) __obj.updateDynamic("paddingDense")(paddingDense)
-    if (paddingNone != null) __obj.updateDynamic("paddingNone")(paddingNone)
-    if (root != null) __obj.updateDynamic("root")(root)
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
+    if (head != null) __obj.updateDynamic("head")(head.asInstanceOf[js.Any])
+    if (numeric != null) __obj.updateDynamic("numeric")(numeric.asInstanceOf[js.Any])
+    if (paddingCheckbox != null) __obj.updateDynamic("paddingCheckbox")(paddingCheckbox.asInstanceOf[js.Any])
+    if (paddingDense != null) __obj.updateDynamic("paddingDense")(paddingDense.asInstanceOf[js.Any])
+    if (paddingNone != null) __obj.updateDynamic("paddingNone")(paddingNone.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyleRulesTableCellClassKey]
   }
 }

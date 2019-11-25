@@ -14,8 +14,8 @@ trait Anon_MeasureTuple extends js.Object {
 object Anon_MeasureTuple {
   @scala.inline
   def apply(measure: MeasureObject, tuple: js.Array[String], `type`: String): Anon_MeasureTuple = {
-    val __obj = js.Dynamic.literal(measure = measure, tuple = tuple)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(measure = measure.asInstanceOf[js.Any], tuple = tuple.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_MeasureTuple]
   }
 }

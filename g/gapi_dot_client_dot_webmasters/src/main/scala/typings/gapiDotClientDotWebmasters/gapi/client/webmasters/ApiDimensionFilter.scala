@@ -14,9 +14,9 @@ object ApiDimensionFilter {
   @scala.inline
   def apply(dimension: String = null, expression: String = null, operator: String = null): ApiDimensionFilter = {
     val __obj = js.Dynamic.literal()
-    if (dimension != null) __obj.updateDynamic("dimension")(dimension)
-    if (expression != null) __obj.updateDynamic("expression")(expression)
-    if (operator != null) __obj.updateDynamic("operator")(operator)
+    if (dimension != null) __obj.updateDynamic("dimension")(dimension.asInstanceOf[js.Any])
+    if (expression != null) __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
+    if (operator != null) __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApiDimensionFilter]
   }
 }

@@ -15,7 +15,7 @@ object AutoscalingSettings {
   @scala.inline
   def apply(algorithm: String = null, maxNumWorkers: Int | Double = null): AutoscalingSettings = {
     val __obj = js.Dynamic.literal()
-    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm)
+    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
     if (maxNumWorkers != null) __obj.updateDynamic("maxNumWorkers")(maxNumWorkers.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoscalingSettings]
   }

@@ -30,11 +30,11 @@ object ServiceError {
     metadata: Metadata = null,
     stack: String = null
   ): ServiceError = {
-    val __obj = js.Dynamic.literal(message = message, name = name)
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (details != null) __obj.updateDynamic("details")(details)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (details != null) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceError]
   }
 }

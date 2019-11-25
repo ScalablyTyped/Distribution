@@ -58,8 +58,8 @@ object Props {
     style: CSSProperties = null
   ): Props = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowResize)) __obj.updateDynamic("allowResize")(allowResize)
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(allowResize)) __obj.updateDynamic("allowResize")(allowResize.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (defaultSize != null) __obj.updateDynamic("defaultSize")(defaultSize.asInstanceOf[js.Any])
     if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
     if (minSize != null) __obj.updateDynamic("minSize")(minSize.asInstanceOf[js.Any])
@@ -68,16 +68,16 @@ object Props {
     if (onDragStarted != null) __obj.updateDynamic("onDragStarted")(js.Any.fromFunction0(onDragStarted))
     if (onResizerClick != null) __obj.updateDynamic("onResizerClick")(js.Any.fromFunction1(onResizerClick))
     if (onResizerDoubleClick != null) __obj.updateDynamic("onResizerDoubleClick")(js.Any.fromFunction1(onResizerDoubleClick))
-    if (pane1Style != null) __obj.updateDynamic("pane1Style")(pane1Style)
-    if (pane2Style != null) __obj.updateDynamic("pane2Style")(pane2Style)
-    if (paneStyle != null) __obj.updateDynamic("paneStyle")(paneStyle)
+    if (pane1Style != null) __obj.updateDynamic("pane1Style")(pane1Style.asInstanceOf[js.Any])
+    if (pane2Style != null) __obj.updateDynamic("pane2Style")(pane2Style.asInstanceOf[js.Any])
+    if (paneStyle != null) __obj.updateDynamic("paneStyle")(paneStyle.asInstanceOf[js.Any])
     if (primary != null) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
-    if (resizerClassName != null) __obj.updateDynamic("resizerClassName")(resizerClassName)
-    if (resizerStyle != null) __obj.updateDynamic("resizerStyle")(resizerStyle)
+    if (resizerClassName != null) __obj.updateDynamic("resizerClassName")(resizerClassName.asInstanceOf[js.Any])
+    if (resizerStyle != null) __obj.updateDynamic("resizerStyle")(resizerStyle.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (split != null) __obj.updateDynamic("split")(split.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }
 }

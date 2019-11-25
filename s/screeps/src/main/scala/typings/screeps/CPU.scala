@@ -58,7 +58,7 @@ object CPU {
     tickLimit: Double,
     getHeapStatistics: () => HeapStatistics = null
   ): CPU = {
-    val __obj = js.Dynamic.literal(bucket = bucket, getUsed = js.Any.fromFunction0(getUsed), limit = limit, setShardLimits = js.Any.fromFunction1(setShardLimits), shardLimits = shardLimits, tickLimit = tickLimit)
+    val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any], getUsed = js.Any.fromFunction0(getUsed), limit = limit.asInstanceOf[js.Any], setShardLimits = js.Any.fromFunction1(setShardLimits), shardLimits = shardLimits.asInstanceOf[js.Any], tickLimit = tickLimit.asInstanceOf[js.Any])
     if (getHeapStatistics != null) __obj.updateDynamic("getHeapStatistics")(js.Any.fromFunction0(getHeapStatistics))
     __obj.asInstanceOf[CPU]
   }

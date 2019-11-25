@@ -16,7 +16,7 @@ trait Response extends js.Object {
 object Response {
   @scala.inline
   def apply(body: Reader, headers: Headers, node: js.Any, onclose: () => Unit, status: Double): Response = {
-    val __obj = js.Dynamic.literal(body = body, headers = headers, node = node, onclose = js.Any.fromFunction0(onclose), status = status)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], onclose = js.Any.fromFunction0(onclose), status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Response]
   }

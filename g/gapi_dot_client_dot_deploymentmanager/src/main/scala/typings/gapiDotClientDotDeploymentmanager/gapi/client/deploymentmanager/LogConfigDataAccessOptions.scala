@@ -13,7 +13,7 @@ object LogConfigDataAccessOptions {
   @scala.inline
   def apply(logMode: String = null): LogConfigDataAccessOptions = {
     val __obj = js.Dynamic.literal()
-    if (logMode != null) __obj.updateDynamic("logMode")(logMode)
+    if (logMode != null) __obj.updateDynamic("logMode")(logMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogConfigDataAccessOptions]
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SequenceTransform extends Transforms {
+trait SequenceTransform extends _Transforms {
   var as: js.UndefOr[String | SignalRef] = js.undefined
   var start: Double | SignalRef
   var step: js.UndefOr[Double | SignalRef] = js.undefined
@@ -24,7 +24,7 @@ object SequenceTransform {
     step: Double | SignalRef = null
   ): SequenceTransform = {
     val __obj = js.Dynamic.literal(start = start.asInstanceOf[js.Any], stop = stop.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     __obj.asInstanceOf[SequenceTransform]

@@ -14,8 +14,8 @@ trait Anon_Segmentlist extends js.Object {
 object Anon_Segmentlist {
   @scala.inline
   def apply(segments: js.Array[Segment], `type`: segmentDOTlist): Anon_Segmentlist = {
-    val __obj = js.Dynamic.literal(segments = segments)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(segments = segments.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Segmentlist]
   }
 }

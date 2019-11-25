@@ -13,7 +13,7 @@ trait Anon_Source extends js.Object {
 object Anon_Source {
   @scala.inline
   def apply(userIds: js.Array[Double | String], source: IgAppModule = null): Anon_Source = {
-    val __obj = js.Dynamic.literal(userIds = userIds)
+    val __obj = js.Dynamic.literal(userIds = userIds.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Source]
   }

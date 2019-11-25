@@ -26,7 +26,7 @@ object ServeDetails {
     port: Double,
     protocol: String
   ): ServeDetails = {
-    val __obj = js.Dynamic.literal(custom = custom, externalAddress = externalAddress, externalNetworkInterfaces = externalNetworkInterfaces, externallyAccessible = externallyAccessible, localAddress = localAddress, port = port, protocol = protocol)
+    val __obj = js.Dynamic.literal(custom = custom.asInstanceOf[js.Any], externalAddress = externalAddress.asInstanceOf[js.Any], externalNetworkInterfaces = externalNetworkInterfaces.asInstanceOf[js.Any], externallyAccessible = externallyAccessible.asInstanceOf[js.Any], localAddress = localAddress.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ServeDetails]
   }

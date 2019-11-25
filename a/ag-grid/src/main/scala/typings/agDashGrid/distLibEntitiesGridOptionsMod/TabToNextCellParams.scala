@@ -15,7 +15,7 @@ trait TabToNextCellParams extends js.Object {
 object TabToNextCellParams {
   @scala.inline
   def apply(backwards: Boolean, editing: Boolean, nextCellDef: GridCellDef, previousCellDef: GridCellDef): TabToNextCellParams = {
-    val __obj = js.Dynamic.literal(backwards = backwards, editing = editing, nextCellDef = nextCellDef, previousCellDef = previousCellDef)
+    val __obj = js.Dynamic.literal(backwards = backwards.asInstanceOf[js.Any], editing = editing.asInstanceOf[js.Any], nextCellDef = nextCellDef.asInstanceOf[js.Any], previousCellDef = previousCellDef.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TabToNextCellParams]
   }

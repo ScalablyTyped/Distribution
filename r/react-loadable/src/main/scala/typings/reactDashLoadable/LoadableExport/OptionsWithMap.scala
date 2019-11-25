@@ -12,7 +12,7 @@ trait OptionsWithMap[Props, Exports /* <: StringDictionary[js.Any] */] extends C
   /**
     * An object containing functions which return promises, which resolve to an object to be passed to `render` on success.
     */
-  var loader: /* import warning: ImportType.apply c Unsupported type mapping: 
+  var loader: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof Exports ]: (): std.Promise<Exports[P]>}
     */ typings.reactDashLoadable.reactDashLoadableStrings.OptionsWithMap with Exports
   /**
@@ -36,7 +36,7 @@ trait OptionsWithMap[Props, Exports /* <: StringDictionary[js.Any] */] extends C
 object OptionsWithMap {
   @scala.inline
   def apply[Props, Exports /* <: StringDictionary[js.Any] */](
-    loader: /* import warning: ImportType.apply c Unsupported type mapping: 
+    loader: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof Exports ]: (): std.Promise<Exports[P]>}
     */ typings.reactDashLoadable.reactDashLoadableStrings.OptionsWithMap with Exports,
     loading: ComponentType[LoadingComponentProps] | js.Function0[Null],
@@ -46,9 +46,9 @@ object OptionsWithMap {
     timeout: Double | `false` = null,
     webpack: () => js.Array[String | Double] = null
   ): OptionsWithMap[Props, Exports] = {
-    val __obj = js.Dynamic.literal(loader = loader, loading = loading.asInstanceOf[js.Any], render = js.Any.fromFunction2(render))
+    val __obj = js.Dynamic.literal(loader = loader.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any], render = js.Any.fromFunction2(render))
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (modules != null) __obj.updateDynamic("modules")(modules)
+    if (modules != null) __obj.updateDynamic("modules")(modules.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (webpack != null) __obj.updateDynamic("webpack")(js.Any.fromFunction0(webpack))
     __obj.asInstanceOf[OptionsWithMap[Props, Exports]]

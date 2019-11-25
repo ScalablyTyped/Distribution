@@ -66,7 +66,7 @@ object _Impl {
     top: String,
     visible: String
   ): _Impl = {
-    val __obj = js.Dynamic.literal(active = active, animating = animating, bottom = bottom, dimmed = dimmed, ios = ios, left = left, pushable = pushable, pushed = pushed, right = right, top = top, visible = visible)
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], animating = animating.asInstanceOf[js.Any], bottom = bottom.asInstanceOf[js.Any], dimmed = dimmed.asInstanceOf[js.Any], ios = ios.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], pushable = pushable.asInstanceOf[js.Any], pushed = pushed.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_Impl]
   }

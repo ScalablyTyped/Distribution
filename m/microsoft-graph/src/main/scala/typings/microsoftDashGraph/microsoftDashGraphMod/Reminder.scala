@@ -43,14 +43,14 @@ object Reminder {
     reminderFireTime: DateTimeTimeZone = null
   ): Reminder = {
     val __obj = js.Dynamic.literal()
-    if (changeKey != null) __obj.updateDynamic("changeKey")(changeKey)
-    if (eventEndTime != null) __obj.updateDynamic("eventEndTime")(eventEndTime)
-    if (eventId != null) __obj.updateDynamic("eventId")(eventId)
-    if (eventLocation != null) __obj.updateDynamic("eventLocation")(eventLocation)
-    if (eventStartTime != null) __obj.updateDynamic("eventStartTime")(eventStartTime)
-    if (eventSubject != null) __obj.updateDynamic("eventSubject")(eventSubject)
-    if (eventWebLink != null) __obj.updateDynamic("eventWebLink")(eventWebLink)
-    if (reminderFireTime != null) __obj.updateDynamic("reminderFireTime")(reminderFireTime)
+    if (changeKey != null) __obj.updateDynamic("changeKey")(changeKey.asInstanceOf[js.Any])
+    if (eventEndTime != null) __obj.updateDynamic("eventEndTime")(eventEndTime.asInstanceOf[js.Any])
+    if (eventId != null) __obj.updateDynamic("eventId")(eventId.asInstanceOf[js.Any])
+    if (eventLocation != null) __obj.updateDynamic("eventLocation")(eventLocation.asInstanceOf[js.Any])
+    if (eventStartTime != null) __obj.updateDynamic("eventStartTime")(eventStartTime.asInstanceOf[js.Any])
+    if (eventSubject != null) __obj.updateDynamic("eventSubject")(eventSubject.asInstanceOf[js.Any])
+    if (eventWebLink != null) __obj.updateDynamic("eventWebLink")(eventWebLink.asInstanceOf[js.Any])
+    if (reminderFireTime != null) __obj.updateDynamic("reminderFireTime")(reminderFireTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[Reminder]
   }
 }

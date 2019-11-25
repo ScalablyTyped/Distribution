@@ -12,7 +12,7 @@ trait Result extends js.Object {
 object Result {
   @scala.inline
   def apply(puzzle: Puzzle, status: State): Result = {
-    val __obj = js.Dynamic.literal(puzzle = puzzle, status = status)
+    val __obj = js.Dynamic.literal(puzzle = puzzle.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Result]
   }

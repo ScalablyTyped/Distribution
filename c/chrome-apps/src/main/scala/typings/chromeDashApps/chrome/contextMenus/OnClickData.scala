@@ -90,16 +90,16 @@ object OnClickData {
     srcUrl: String = null,
     wasChecked: js.UndefOr[Boolean] = js.undefined
   ): OnClickData = {
-    val __obj = js.Dynamic.literal(editable = editable, menuItemId = menuItemId.asInstanceOf[js.Any], pageUrl = pageUrl)
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
+    val __obj = js.Dynamic.literal(editable = editable.asInstanceOf[js.Any], menuItemId = menuItemId.asInstanceOf[js.Any], pageUrl = pageUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
     if (frameId != null) __obj.updateDynamic("frameId")(frameId.asInstanceOf[js.Any])
-    if (frameUrl != null) __obj.updateDynamic("frameUrl")(frameUrl)
-    if (linkUrl != null) __obj.updateDynamic("linkUrl")(linkUrl)
-    if (mediaType != null) __obj.updateDynamic("mediaType")(mediaType)
+    if (frameUrl != null) __obj.updateDynamic("frameUrl")(frameUrl.asInstanceOf[js.Any])
+    if (linkUrl != null) __obj.updateDynamic("linkUrl")(linkUrl.asInstanceOf[js.Any])
+    if (mediaType != null) __obj.updateDynamic("mediaType")(mediaType.asInstanceOf[js.Any])
     if (parentMenuItemId != null) __obj.updateDynamic("parentMenuItemId")(parentMenuItemId.asInstanceOf[js.Any])
-    if (selectionText != null) __obj.updateDynamic("selectionText")(selectionText)
-    if (srcUrl != null) __obj.updateDynamic("srcUrl")(srcUrl)
-    if (!js.isUndefined(wasChecked)) __obj.updateDynamic("wasChecked")(wasChecked)
+    if (selectionText != null) __obj.updateDynamic("selectionText")(selectionText.asInstanceOf[js.Any])
+    if (srcUrl != null) __obj.updateDynamic("srcUrl")(srcUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(wasChecked)) __obj.updateDynamic("wasChecked")(wasChecked.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnClickData]
   }
 }

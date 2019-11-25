@@ -15,7 +15,7 @@ object ConstructorSansProvider {
   @scala.inline
   def apply(deps: js.Array[_] = null): ConstructorSansProvider = {
     val __obj = js.Dynamic.literal()
-    if (deps != null) __obj.updateDynamic("deps")(deps)
+    if (deps != null) __obj.updateDynamic("deps")(deps.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConstructorSansProvider]
   }
 }

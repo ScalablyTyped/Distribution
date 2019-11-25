@@ -26,10 +26,10 @@ object GridProps {
     y: /* t */ T => Double = null
   ): GridProps[T] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(belowChart)) __obj.updateDynamic("belowChart")(belowChart)
-    if (direction != null) __obj.updateDynamic("direction")(direction)
-    if (svg != null) __obj.updateDynamic("svg")(svg)
-    if (ticks != null) __obj.updateDynamic("ticks")(ticks)
+    if (!js.isUndefined(belowChart)) __obj.updateDynamic("belowChart")(belowChart.asInstanceOf[js.Any])
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    if (svg != null) __obj.updateDynamic("svg")(svg.asInstanceOf[js.Any])
+    if (ticks != null) __obj.updateDynamic("ticks")(ticks.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(js.Any.fromFunction1(x))
     if (y != null) __obj.updateDynamic("y")(js.Any.fromFunction1(y))
     __obj.asInstanceOf[GridProps[T]]

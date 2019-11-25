@@ -60,7 +60,7 @@ object CellInfo {
     viewIndex: Double,
     width: Double
   ): CellInfo = {
-    val __obj = js.Dynamic.literal(aggregated = aggregated, classes = classes, column = column, columnProps = columnProps, expander = expander, groupedByPivot = groupedByPivot, index = index, isExpanded = isExpanded, level = level, maxWidth = maxWidth, nestingPath = nestingPath, original = original, page = page, pageSize = pageSize, pivoted = pivoted, row = row, rowValues = rowValues, show = show, styles = styles, subRows = subRows, tdProps = tdProps, value = value, viewIndex = viewIndex, width = width)
+    val __obj = js.Dynamic.literal(aggregated = aggregated.asInstanceOf[js.Any], classes = classes.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], columnProps = columnProps.asInstanceOf[js.Any], expander = expander.asInstanceOf[js.Any], groupedByPivot = groupedByPivot.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], isExpanded = isExpanded.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], maxWidth = maxWidth.asInstanceOf[js.Any], nestingPath = nestingPath.asInstanceOf[js.Any], original = original.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], pageSize = pageSize.asInstanceOf[js.Any], pivoted = pivoted.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], rowValues = rowValues.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any], subRows = subRows.asInstanceOf[js.Any], tdProps = tdProps.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], viewIndex = viewIndex.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CellInfo]
   }

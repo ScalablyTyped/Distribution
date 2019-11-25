@@ -63,7 +63,7 @@ object ICollectionObserverSplice {
     `type`: add | delete | update | clear,
     value: T
   ): ICollectionObserverSplice[T, K] = {
-    val __obj = js.Dynamic.literal(addedCount = addedCount, index = index, key = key.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any], removed = removed, value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(addedCount = addedCount.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any], removed = removed.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICollectionObserverSplice[T, K]]

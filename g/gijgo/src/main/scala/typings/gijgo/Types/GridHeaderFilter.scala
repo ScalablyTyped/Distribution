@@ -12,7 +12,7 @@ object GridHeaderFilter {
   @scala.inline
   def apply(`type`: String): GridHeaderFilter = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridHeaderFilter]
   }
 }

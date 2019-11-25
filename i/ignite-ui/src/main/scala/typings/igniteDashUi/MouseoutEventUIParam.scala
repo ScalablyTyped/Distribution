@@ -32,10 +32,10 @@ object MouseoutEventUIParam {
     owner: js.Any = null
   ): MouseoutEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (editorInput != null) __obj.updateDynamic("editorInput")(editorInput)
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (editorInput != null) __obj.updateDynamic("editorInput")(editorInput.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[MouseoutEventUIParam]
   }
 }

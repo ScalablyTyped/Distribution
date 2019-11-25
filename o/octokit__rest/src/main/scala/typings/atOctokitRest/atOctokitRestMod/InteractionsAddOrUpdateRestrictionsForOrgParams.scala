@@ -18,7 +18,7 @@ trait InteractionsAddOrUpdateRestrictionsForOrgParams extends js.Object {
 object InteractionsAddOrUpdateRestrictionsForOrgParams {
   @scala.inline
   def apply(limit: existing_users | contributors_only | collaborators_only, org: String): InteractionsAddOrUpdateRestrictionsForOrgParams = {
-    val __obj = js.Dynamic.literal(limit = limit.asInstanceOf[js.Any], org = org)
+    val __obj = js.Dynamic.literal(limit = limit.asInstanceOf[js.Any], org = org.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InteractionsAddOrUpdateRestrictionsForOrgParams]
   }

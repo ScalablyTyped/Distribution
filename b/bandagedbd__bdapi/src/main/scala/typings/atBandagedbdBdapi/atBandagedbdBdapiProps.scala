@@ -21,6 +21,8 @@ trait atBandagedbdBdapiProps {
   @scala.inline
   def BdApiModuleReactSuspenseProps: SuspenseProps.type = typings.react.reactMod.SuspenseProps
   type BdApiModuleReactSuspenseProps = SuspenseProps
+  @scala.inline
+  def BdApiModuleReactSuspenseListProps: SuspenseListProps.type = typings.react.experimentalMod.reactMod.SuspenseListProps
   type BdApiModuleReactSuspenseListProps = SuspenseListProps
 }
 

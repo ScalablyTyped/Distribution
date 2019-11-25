@@ -14,7 +14,7 @@ trait ContextStatus[K] extends js.Object {
 object ContextStatus {
   @scala.inline
   def apply[K](currentRow: CurrentRow[K], rowIndex: Double, rowKey: K): ContextStatus[K] = {
-    val __obj = js.Dynamic.literal(currentRow = currentRow, rowIndex = rowIndex, rowKey = rowKey.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(currentRow = currentRow.asInstanceOf[js.Any], rowIndex = rowIndex.asInstanceOf[js.Any], rowKey = rowKey.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ContextStatus[K]]
   }

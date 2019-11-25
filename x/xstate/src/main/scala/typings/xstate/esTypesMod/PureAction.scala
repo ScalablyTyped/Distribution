@@ -19,7 +19,7 @@ object PureAction {
     exec: (TContext, TEvent, /* meta */ ActionMeta[TContext, TEvent]) => js.Any | Unit = null
   ): PureAction[TContext, TEvent] = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get))
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (exec != null) __obj.updateDynamic("exec")(js.Any.fromFunction3(exec))
     __obj.asInstanceOf[PureAction[TContext, TEvent]]
   }

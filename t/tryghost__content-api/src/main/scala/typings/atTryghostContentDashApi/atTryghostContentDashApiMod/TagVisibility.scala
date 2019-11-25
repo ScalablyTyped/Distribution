@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait TagVisibility extends js.Object
 
+object TagVisibility {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def draft: typings.atTryghostContentDashApi.atTryghostContentDashApiStrings.draft = this.cast("draft")
+  @scala.inline
+  def public: typings.atTryghostContentDashApi.atTryghostContentDashApiStrings.public = this.cast("public")
+  @scala.inline
+  def scheduled: typings.atTryghostContentDashApi.atTryghostContentDashApiStrings.scheduled = this.cast("scheduled")
+}
+

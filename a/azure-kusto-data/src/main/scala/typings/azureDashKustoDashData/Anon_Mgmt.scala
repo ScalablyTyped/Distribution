@@ -12,7 +12,7 @@ trait Anon_Mgmt extends js.Object {
 object Anon_Mgmt {
   @scala.inline
   def apply(mgmt: String, query: String): Anon_Mgmt = {
-    val __obj = js.Dynamic.literal(mgmt = mgmt, query = query)
+    val __obj = js.Dynamic.literal(mgmt = mgmt.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Mgmt]
   }

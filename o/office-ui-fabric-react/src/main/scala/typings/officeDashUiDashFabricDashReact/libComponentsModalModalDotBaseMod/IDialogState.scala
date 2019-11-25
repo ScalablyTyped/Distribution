@@ -31,14 +31,14 @@ object IDialogState {
     isVisibleClose: js.UndefOr[Boolean] = js.undefined,
     modalRectangleTop: Int | Double = null
   ): IDialogState = {
-    val __obj = js.Dynamic.literal(x = x, y = y)
-    if (!js.isUndefined(hasBeenOpened)) __obj.updateDynamic("hasBeenOpened")(hasBeenOpened)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(isInKeyboardMoveMode)) __obj.updateDynamic("isInKeyboardMoveMode")(isInKeyboardMoveMode)
-    if (!js.isUndefined(isModalMenuOpen)) __obj.updateDynamic("isModalMenuOpen")(isModalMenuOpen)
-    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen)
-    if (!js.isUndefined(isVisible)) __obj.updateDynamic("isVisible")(isVisible)
-    if (!js.isUndefined(isVisibleClose)) __obj.updateDynamic("isVisibleClose")(isVisibleClose)
+    val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasBeenOpened)) __obj.updateDynamic("hasBeenOpened")(hasBeenOpened.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(isInKeyboardMoveMode)) __obj.updateDynamic("isInKeyboardMoveMode")(isInKeyboardMoveMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(isModalMenuOpen)) __obj.updateDynamic("isModalMenuOpen")(isModalMenuOpen.asInstanceOf[js.Any])
+    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen.asInstanceOf[js.Any])
+    if (!js.isUndefined(isVisible)) __obj.updateDynamic("isVisible")(isVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(isVisibleClose)) __obj.updateDynamic("isVisibleClose")(isVisibleClose.asInstanceOf[js.Any])
     if (modalRectangleTop != null) __obj.updateDynamic("modalRectangleTop")(modalRectangleTop.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDialogState]
   }

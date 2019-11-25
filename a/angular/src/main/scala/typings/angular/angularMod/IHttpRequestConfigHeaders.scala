@@ -25,12 +25,12 @@ object IHttpRequestConfigHeaders {
     put: js.Any = null
   ): IHttpRequestConfigHeaders = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (common != null) __obj.updateDynamic("common")(common)
-    if (get != null) __obj.updateDynamic("get")(get)
-    if (patch != null) __obj.updateDynamic("patch")(patch)
-    if (post != null) __obj.updateDynamic("post")(post)
-    if (put != null) __obj.updateDynamic("put")(put)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (common != null) __obj.updateDynamic("common")(common.asInstanceOf[js.Any])
+    if (get != null) __obj.updateDynamic("get")(get.asInstanceOf[js.Any])
+    if (patch != null) __obj.updateDynamic("patch")(patch.asInstanceOf[js.Any])
+    if (post != null) __obj.updateDynamic("post")(post.asInstanceOf[js.Any])
+    if (put != null) __obj.updateDynamic("put")(put.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHttpRequestConfigHeaders]
   }
 }

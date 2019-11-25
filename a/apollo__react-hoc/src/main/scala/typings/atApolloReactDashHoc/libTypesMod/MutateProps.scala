@@ -20,7 +20,7 @@ object MutateProps {
     mutate: /* options */ js.UndefOr[MutationFunctionOptions[TData, TGraphQLVariables]] => js.Promise[MutationFetchResult[TData, Record[String, js.Any], Record[String, js.Any]]],
     result: MutationResult[TData]
   ): MutateProps[TData, TGraphQLVariables] = {
-    val __obj = js.Dynamic.literal(mutate = js.Any.fromFunction1(mutate), result = result)
+    val __obj = js.Dynamic.literal(mutate = js.Any.fromFunction1(mutate), result = result.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MutateProps[TData, TGraphQLVariables]]
   }

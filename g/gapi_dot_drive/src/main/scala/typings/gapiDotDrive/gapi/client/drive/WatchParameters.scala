@@ -19,10 +19,10 @@ object WatchParameters {
     revisionId: String = null,
     supportsTeamDrives: js.UndefOr[Boolean] = js.undefined
   ): WatchParameters = {
-    val __obj = js.Dynamic.literal(fileId = fileId)
-    if (resource != null) __obj.updateDynamic("resource")(resource)
-    if (revisionId != null) __obj.updateDynamic("revisionId")(revisionId)
-    if (!js.isUndefined(supportsTeamDrives)) __obj.updateDynamic("supportsTeamDrives")(supportsTeamDrives)
+    val __obj = js.Dynamic.literal(fileId = fileId.asInstanceOf[js.Any])
+    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
+    if (revisionId != null) __obj.updateDynamic("revisionId")(revisionId.asInstanceOf[js.Any])
+    if (!js.isUndefined(supportsTeamDrives)) __obj.updateDynamic("supportsTeamDrives")(supportsTeamDrives.asInstanceOf[js.Any])
     __obj.asInstanceOf[WatchParameters]
   }
 }

@@ -15,8 +15,8 @@ object MemoryInfo {
   @scala.inline
   def apply(totalInternalStorage: String = null, totalRam: String = null): MemoryInfo = {
     val __obj = js.Dynamic.literal()
-    if (totalInternalStorage != null) __obj.updateDynamic("totalInternalStorage")(totalInternalStorage)
-    if (totalRam != null) __obj.updateDynamic("totalRam")(totalRam)
+    if (totalInternalStorage != null) __obj.updateDynamic("totalInternalStorage")(totalInternalStorage.asInstanceOf[js.Any])
+    if (totalRam != null) __obj.updateDynamic("totalRam")(totalRam.asInstanceOf[js.Any])
     __obj.asInstanceOf[MemoryInfo]
   }
 }

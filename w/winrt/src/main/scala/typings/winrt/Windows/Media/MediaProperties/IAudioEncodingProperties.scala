@@ -22,8 +22,8 @@ object IAudioEncodingProperties {
     subtype: String,
     `type`: String
   ): IAudioEncodingProperties = {
-    val __obj = js.Dynamic.literal(bitrate = bitrate, bitsPerSample = bitsPerSample, channelCount = channelCount, properties = properties, sampleRate = sampleRate, subtype = subtype)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(bitrate = bitrate.asInstanceOf[js.Any], bitsPerSample = bitsPerSample.asInstanceOf[js.Any], channelCount = channelCount.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], sampleRate = sampleRate.asInstanceOf[js.Any], subtype = subtype.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAudioEncodingProperties]
   }
 }

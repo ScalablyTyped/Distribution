@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_rowgrid"
-version := "1.0-dt-20190322Z-67f13f"
+version := "1.0-dt-20190322Z-03a658"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

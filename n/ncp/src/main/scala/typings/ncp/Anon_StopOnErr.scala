@@ -12,7 +12,7 @@ trait Anon_StopOnErr extends js.Object {
 object Anon_StopOnErr {
   @scala.inline
   def apply(stopOnErr: `true`): Anon_StopOnErr = {
-    val __obj = js.Dynamic.literal(stopOnErr = stopOnErr)
+    val __obj = js.Dynamic.literal(stopOnErr = stopOnErr.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_StopOnErr]
   }

@@ -27,7 +27,7 @@ trait OutgoingMessage extends js.Object {
 object OutgoingMessage {
   @scala.inline
   def apply(data: IGCMDataSend, destinationId: String, messageId: String, timeToLive: Int | Double = null): OutgoingMessage = {
-    val __obj = js.Dynamic.literal(data = data, destinationId = destinationId, messageId = messageId)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], destinationId = destinationId.asInstanceOf[js.Any], messageId = messageId.asInstanceOf[js.Any])
     if (timeToLive != null) __obj.updateDynamic("timeToLive")(timeToLive.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutgoingMessage]
   }

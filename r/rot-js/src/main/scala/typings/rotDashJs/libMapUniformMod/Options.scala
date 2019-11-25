@@ -19,7 +19,7 @@ object Options {
     roomWidth: js.Tuple2[Double, Double],
     timeLimit: Double
   ): Options = {
-    val __obj = js.Dynamic.literal(roomDugPercentage = roomDugPercentage, roomHeight = roomHeight, roomWidth = roomWidth, timeLimit = timeLimit)
+    val __obj = js.Dynamic.literal(roomDugPercentage = roomDugPercentage.asInstanceOf[js.Any], roomHeight = roomHeight.asInstanceOf[js.Any], roomWidth = roomWidth.asInstanceOf[js.Any], timeLimit = timeLimit.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Options]
   }

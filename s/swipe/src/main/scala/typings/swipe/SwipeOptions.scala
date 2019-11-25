@@ -31,11 +31,11 @@ object SwipeOptions {
     val __obj = js.Dynamic.literal()
     if (auto != null) __obj.updateDynamic("auto")(auto.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction2(callback))
-    if (!js.isUndefined(continuous)) __obj.updateDynamic("continuous")(continuous)
-    if (!js.isUndefined(disableScroll)) __obj.updateDynamic("disableScroll")(disableScroll)
+    if (!js.isUndefined(continuous)) __obj.updateDynamic("continuous")(continuous.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableScroll)) __obj.updateDynamic("disableScroll")(disableScroll.asInstanceOf[js.Any])
     if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
     if (startSlide != null) __obj.updateDynamic("startSlide")(startSlide.asInstanceOf[js.Any])
-    if (!js.isUndefined(stopPropagation)) __obj.updateDynamic("stopPropagation")(stopPropagation)
+    if (!js.isUndefined(stopPropagation)) __obj.updateDynamic("stopPropagation")(stopPropagation.asInstanceOf[js.Any])
     if (transitionEnd != null) __obj.updateDynamic("transitionEnd")(js.Any.fromFunction2(transitionEnd))
     __obj.asInstanceOf[SwipeOptions]
   }

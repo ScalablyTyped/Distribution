@@ -21,7 +21,7 @@ object UnixInvocationContext {
     returnAddress: NativePointer,
     threadId: ThreadId
   ): UnixInvocationContext = {
-    val __obj = js.Dynamic.literal(context = context, depth = depth, errno = errno, returnAddress = returnAddress, threadId = threadId)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any], errno = errno.asInstanceOf[js.Any], returnAddress = returnAddress.asInstanceOf[js.Any], threadId = threadId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UnixInvocationContext]
   }

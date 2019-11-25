@@ -72,18 +72,18 @@ object Item {
     value: String = null
   ): Item = {
     val __obj = js.Dynamic.literal()
-    if (characterSettings != null) __obj.updateDynamic("characterSettings")(characterSettings)
-    if (!js.isUndefined(enableCustomFont)) __obj.updateDynamic("enableCustomFont")(enableCustomFont)
-    if (font != null) __obj.updateDynamic("font")(font)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (segmentSettings != null) __obj.updateDynamic("segmentSettings")(segmentSettings)
+    if (characterSettings != null) __obj.updateDynamic("characterSettings")(characterSettings.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableCustomFont)) __obj.updateDynamic("enableCustomFont")(enableCustomFont.asInstanceOf[js.Any])
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (segmentSettings != null) __obj.updateDynamic("segmentSettings")(segmentSettings.asInstanceOf[js.Any])
     if (shadowBlur != null) __obj.updateDynamic("shadowBlur")(shadowBlur.asInstanceOf[js.Any])
-    if (shadowColor != null) __obj.updateDynamic("shadowColor")(shadowColor)
+    if (shadowColor != null) __obj.updateDynamic("shadowColor")(shadowColor.asInstanceOf[js.Any])
     if (shadowOffsetX != null) __obj.updateDynamic("shadowOffsetX")(shadowOffsetX.asInstanceOf[js.Any])
     if (shadowOffsetY != null) __obj.updateDynamic("shadowOffsetY")(shadowOffsetY.asInstanceOf[js.Any])
-    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign)
-    if (textColor != null) __obj.updateDynamic("textColor")(textColor)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
+    if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Item]
   }
 }

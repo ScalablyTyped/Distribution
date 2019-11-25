@@ -32,7 +32,7 @@ object SeasonRankingsRequestObject {
     if (limit_start != null) __obj.updateDynamic("limit_start")(limit_start.asInstanceOf[js.Any])
     if (program != null) __obj.updateDynamic("program")(program.asInstanceOf[js.Any])
     if (season != null) __obj.updateDynamic("season")(season.asInstanceOf[js.Any])
-    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single)
+    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single.asInstanceOf[js.Any])
     if (team != null) __obj.updateDynamic("team")(team.asInstanceOf[js.Any])
     if (vrating != null) __obj.updateDynamic("vrating")(vrating.asInstanceOf[js.Any])
     if (vrating_rank != null) __obj.updateDynamic("vrating_rank")(vrating_rank.asInstanceOf[js.Any])

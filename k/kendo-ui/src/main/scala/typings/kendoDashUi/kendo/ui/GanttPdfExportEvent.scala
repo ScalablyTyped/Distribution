@@ -17,8 +17,8 @@ object GanttPdfExportEvent {
     sender: Gantt,
     promise: JQueryPromise[_] = null
   ): GanttPdfExportEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (promise != null) __obj.updateDynamic("promise")(promise)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (promise != null) __obj.updateDynamic("promise")(promise.asInstanceOf[js.Any])
     __obj.asInstanceOf[GanttPdfExportEvent]
   }
 }

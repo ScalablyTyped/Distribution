@@ -15,7 +15,7 @@ trait PrecomputedValues extends js.Object {
 object PrecomputedValues {
   @scala.inline
   def apply(beta: js.Any, doubles: js.Any, naf: js.Any): PrecomputedValues = {
-    val __obj = js.Dynamic.literal(beta = beta, doubles = doubles, naf = naf)
+    val __obj = js.Dynamic.literal(beta = beta.asInstanceOf[js.Any], doubles = doubles.asInstanceOf[js.Any], naf = naf.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PrecomputedValues]
   }

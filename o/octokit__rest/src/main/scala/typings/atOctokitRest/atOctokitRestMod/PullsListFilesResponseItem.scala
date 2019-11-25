@@ -31,7 +31,7 @@ object PullsListFilesResponseItem {
     sha: String,
     status: String
   ): PullsListFilesResponseItem = {
-    val __obj = js.Dynamic.literal(additions = additions, blob_url = blob_url, changes = changes, contents_url = contents_url, deletions = deletions, filename = filename, patch = patch, raw_url = raw_url, sha = sha, status = status)
+    val __obj = js.Dynamic.literal(additions = additions.asInstanceOf[js.Any], blob_url = blob_url.asInstanceOf[js.Any], changes = changes.asInstanceOf[js.Any], contents_url = contents_url.asInstanceOf[js.Any], deletions = deletions.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], patch = patch.asInstanceOf[js.Any], raw_url = raw_url.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PullsListFilesResponseItem]
   }

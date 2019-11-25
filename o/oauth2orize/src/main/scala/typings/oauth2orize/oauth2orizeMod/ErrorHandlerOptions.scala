@@ -12,7 +12,7 @@ object ErrorHandlerOptions {
   @scala.inline
   def apply(mode: String = null): ErrorHandlerOptions = {
     val __obj = js.Dynamic.literal()
-    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorHandlerOptions]
   }
 }

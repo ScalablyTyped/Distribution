@@ -14,8 +14,8 @@ object PartialTypeBackground {
   @scala.inline
   def apply(default: String = null, paper: String = null): PartialTypeBackground = {
     val __obj = js.Dynamic.literal()
-    if (default != null) __obj.updateDynamic("default")(default)
-    if (paper != null) __obj.updateDynamic("paper")(paper)
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (paper != null) __obj.updateDynamic("paper")(paper.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialTypeBackground]
   }
 }

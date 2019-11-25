@@ -39,12 +39,12 @@ object Webhook {
     auth_token: String = null,
     auth_type: String = null
   ): Webhook = {
-    val __obj = js.Dynamic.literal(events = events, name = name, target = target)
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
-    if (auth_credentials != null) __obj.updateDynamic("auth_credentials")(auth_credentials)
-    if (auth_request_details != null) __obj.updateDynamic("auth_request_details")(auth_request_details)
-    if (auth_token != null) __obj.updateDynamic("auth_token")(auth_token)
-    if (auth_type != null) __obj.updateDynamic("auth_type")(auth_type)
+    val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (auth_credentials != null) __obj.updateDynamic("auth_credentials")(auth_credentials.asInstanceOf[js.Any])
+    if (auth_request_details != null) __obj.updateDynamic("auth_request_details")(auth_request_details.asInstanceOf[js.Any])
+    if (auth_token != null) __obj.updateDynamic("auth_token")(auth_token.asInstanceOf[js.Any])
+    if (auth_type != null) __obj.updateDynamic("auth_type")(auth_type.asInstanceOf[js.Any])
     __obj.asInstanceOf[Webhook]
   }
 }

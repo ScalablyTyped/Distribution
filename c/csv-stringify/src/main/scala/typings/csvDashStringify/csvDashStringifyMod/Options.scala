@@ -81,17 +81,17 @@ object Options {
     record_delimiter: RecordDelimiter = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (cast != null) __obj.updateDynamic("cast")(cast)
+    if (cast != null) __obj.updateDynamic("cast")(cast.asInstanceOf[js.Any])
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
     if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
-    if (!js.isUndefined(eof)) __obj.updateDynamic("eof")(eof)
+    if (!js.isUndefined(eof)) __obj.updateDynamic("eof")(eof.asInstanceOf[js.Any])
     if (escape != null) __obj.updateDynamic("escape")(escape.asInstanceOf[js.Any])
-    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header)
+    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     if (quote != null) __obj.updateDynamic("quote")(quote.asInstanceOf[js.Any])
-    if (!js.isUndefined(quoted)) __obj.updateDynamic("quoted")(quoted)
-    if (!js.isUndefined(quoted_empty)) __obj.updateDynamic("quoted_empty")(quoted_empty)
-    if (!js.isUndefined(quoted_match)) __obj.updateDynamic("quoted_match")(quoted_match)
-    if (!js.isUndefined(quoted_string)) __obj.updateDynamic("quoted_string")(quoted_string)
+    if (!js.isUndefined(quoted)) __obj.updateDynamic("quoted")(quoted.asInstanceOf[js.Any])
+    if (!js.isUndefined(quoted_empty)) __obj.updateDynamic("quoted_empty")(quoted_empty.asInstanceOf[js.Any])
+    if (!js.isUndefined(quoted_match)) __obj.updateDynamic("quoted_match")(quoted_match.asInstanceOf[js.Any])
+    if (!js.isUndefined(quoted_string)) __obj.updateDynamic("quoted_string")(quoted_string.asInstanceOf[js.Any])
     if (record_delimiter != null) __obj.updateDynamic("record_delimiter")(record_delimiter.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

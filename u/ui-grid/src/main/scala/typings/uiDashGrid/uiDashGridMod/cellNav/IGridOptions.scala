@@ -17,7 +17,7 @@ object IGridOptions {
   @scala.inline
   def apply(modifierKeysToMultiSelectCells: js.UndefOr[Boolean] = js.undefined): IGridOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(modifierKeysToMultiSelectCells)) __obj.updateDynamic("modifierKeysToMultiSelectCells")(modifierKeysToMultiSelectCells)
+    if (!js.isUndefined(modifierKeysToMultiSelectCells)) __obj.updateDynamic("modifierKeysToMultiSelectCells")(modifierKeysToMultiSelectCells.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGridOptions]
   }
 }

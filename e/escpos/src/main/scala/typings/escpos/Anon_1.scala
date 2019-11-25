@@ -36,14 +36,14 @@ object Anon_1 {
     `8`: BACKSLASHu0007
   ): Anon_1 = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("1")(`1`)
-    __obj.updateDynamic("2")(`2`)
-    __obj.updateDynamic("3")(`3`)
-    __obj.updateDynamic("4")(`4`)
-    __obj.updateDynamic("5")(`5`)
-    __obj.updateDynamic("6")(`6`)
-    __obj.updateDynamic("7")(`7`)
-    __obj.updateDynamic("8")(`8`)
+    __obj.updateDynamic("1")(`1`.asInstanceOf[js.Any])
+    __obj.updateDynamic("2")(`2`.asInstanceOf[js.Any])
+    __obj.updateDynamic("3")(`3`.asInstanceOf[js.Any])
+    __obj.updateDynamic("4")(`4`.asInstanceOf[js.Any])
+    __obj.updateDynamic("5")(`5`.asInstanceOf[js.Any])
+    __obj.updateDynamic("6")(`6`.asInstanceOf[js.Any])
+    __obj.updateDynamic("7")(`7`.asInstanceOf[js.Any])
+    __obj.updateDynamic("8")(`8`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_1]
   }
 }

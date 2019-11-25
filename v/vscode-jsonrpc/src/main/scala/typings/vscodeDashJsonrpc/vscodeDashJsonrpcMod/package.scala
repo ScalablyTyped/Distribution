@@ -6,7 +6,6 @@ import scala.scalajs.js.annotation._
 
 package object vscodeDashJsonrpcMod {
   import typings.vscodeDashJsonrpc.Thenable
-  import typings.vscodeDashJsonrpc.libCancellationMod.CancellationToken
   import typings.vscodeDashJsonrpc.libLinkedMapMod.LinkedMap
   import typings.vscodeDashJsonrpc.libMessagesMod.Message
 
@@ -55,15 +54,31 @@ package object vscodeDashJsonrpcMod {
     /* p9 */ P9, 
     Unit
   ]
-  type RequestHandler[P, R, E] = js.Function2[/* params */ P, /* token */ CancellationToken, HandlerResult[R, E]]
-  type RequestHandler0[R, E] = js.Function1[/* token */ CancellationToken, HandlerResult[R, E]]
-  type RequestHandler1[P1, R, E] = js.Function2[/* p1 */ P1, /* token */ CancellationToken, HandlerResult[R, E]]
-  type RequestHandler2[P1, P2, R, E] = js.Function3[/* p1 */ P1, /* p2 */ P2, /* token */ CancellationToken, HandlerResult[R, E]]
+  type RequestHandler[P, R, E] = js.Function2[
+    /* params */ P, 
+    /* token */ typings.vscodeDashJsonrpc.libCancellationMod.CancellationToken, 
+    HandlerResult[R, E]
+  ]
+  type RequestHandler0[R, E] = js.Function1[
+    /* token */ typings.vscodeDashJsonrpc.libCancellationMod.CancellationToken, 
+    HandlerResult[R, E]
+  ]
+  type RequestHandler1[P1, R, E] = js.Function2[
+    /* p1 */ P1, 
+    /* token */ typings.vscodeDashJsonrpc.libCancellationMod.CancellationToken, 
+    HandlerResult[R, E]
+  ]
+  type RequestHandler2[P1, P2, R, E] = js.Function3[
+    /* p1 */ P1, 
+    /* p2 */ P2, 
+    /* token */ typings.vscodeDashJsonrpc.libCancellationMod.CancellationToken, 
+    HandlerResult[R, E]
+  ]
   type RequestHandler3[P1, P2, P3, R, E] = js.Function4[
     /* p1 */ P1, 
     /* p2 */ P2, 
     /* p3 */ P3, 
-    /* token */ CancellationToken, 
+    /* token */ typings.vscodeDashJsonrpc.libCancellationMod.CancellationToken, 
     HandlerResult[R, E]
   ]
   type RequestHandler4[P1, P2, P3, P4, R, E] = js.Function5[
@@ -71,7 +86,7 @@ package object vscodeDashJsonrpcMod {
     /* p2 */ P2, 
     /* p3 */ P3, 
     /* p4 */ P4, 
-    /* token */ CancellationToken, 
+    /* token */ typings.vscodeDashJsonrpc.libCancellationMod.CancellationToken, 
     HandlerResult[R, E]
   ]
   type RequestHandler5[P1, P2, P3, P4, P5, R, E] = js.Function6[
@@ -80,7 +95,7 @@ package object vscodeDashJsonrpcMod {
     /* p3 */ P3, 
     /* p4 */ P4, 
     /* p5 */ P5, 
-    /* token */ CancellationToken, 
+    /* token */ typings.vscodeDashJsonrpc.libCancellationMod.CancellationToken, 
     HandlerResult[R, E]
   ]
   type RequestHandler6[P1, P2, P3, P4, P5, P6, R, E] = js.Function7[
@@ -90,7 +105,7 @@ package object vscodeDashJsonrpcMod {
     /* p4 */ P4, 
     /* p5 */ P5, 
     /* p6 */ P6, 
-    /* token */ CancellationToken, 
+    /* token */ typings.vscodeDashJsonrpc.libCancellationMod.CancellationToken, 
     HandlerResult[R, E]
   ]
   type RequestHandler7[P1, P2, P3, P4, P5, P6, P7, R, E] = js.Function8[
@@ -101,7 +116,7 @@ package object vscodeDashJsonrpcMod {
     /* p5 */ P5, 
     /* p6 */ P6, 
     /* p7 */ P7, 
-    /* token */ CancellationToken, 
+    /* token */ typings.vscodeDashJsonrpc.libCancellationMod.CancellationToken, 
     HandlerResult[R, E]
   ]
   type RequestHandler8[P1, P2, P3, P4, P5, P6, P7, P8, R, E] = js.Function9[
@@ -113,7 +128,7 @@ package object vscodeDashJsonrpcMod {
     /* p6 */ P6, 
     /* p7 */ P7, 
     /* p8 */ P8, 
-    /* token */ CancellationToken, 
+    /* token */ typings.vscodeDashJsonrpc.libCancellationMod.CancellationToken, 
     HandlerResult[R, E]
   ]
   type RequestHandler9[P1, P2, P3, P4, P5, P6, P7, P8, P9, R, E] = js.Function10[
@@ -126,7 +141,7 @@ package object vscodeDashJsonrpcMod {
     /* p7 */ P7, 
     /* p8 */ P8, 
     /* p9 */ P9, 
-    /* token */ CancellationToken, 
+    /* token */ typings.vscodeDashJsonrpc.libCancellationMod.CancellationToken, 
     HandlerResult[R, E]
   ]
   type StarNotificationHandler = js.Function2[/* method */ String, /* repeated */ js.Any, Unit]

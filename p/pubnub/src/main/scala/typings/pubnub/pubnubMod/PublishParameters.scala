@@ -24,10 +24,10 @@ object PublishParameters {
     storeInHistory: js.UndefOr[Boolean] = js.undefined,
     ttl: Int | Double = null
   ): PublishParameters = {
-    val __obj = js.Dynamic.literal(channel = channel, message = message)
-    if (meta != null) __obj.updateDynamic("meta")(meta)
-    if (!js.isUndefined(sendByPost)) __obj.updateDynamic("sendByPost")(sendByPost)
-    if (!js.isUndefined(storeInHistory)) __obj.updateDynamic("storeInHistory")(storeInHistory)
+    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
+    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
+    if (!js.isUndefined(sendByPost)) __obj.updateDynamic("sendByPost")(sendByPost.asInstanceOf[js.Any])
+    if (!js.isUndefined(storeInHistory)) __obj.updateDynamic("storeInHistory")(storeInHistory.asInstanceOf[js.Any])
     if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublishParameters]
   }

@@ -20,8 +20,8 @@ object IGroupedListState {
     lastWidth: Int | Double = null
   ): IGroupedListState = {
     val __obj = js.Dynamic.literal()
-    if (groups != null) __obj.updateDynamic("groups")(groups)
-    if (lastSelectionMode != null) __obj.updateDynamic("lastSelectionMode")(lastSelectionMode)
+    if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
+    if (lastSelectionMode != null) __obj.updateDynamic("lastSelectionMode")(lastSelectionMode.asInstanceOf[js.Any])
     if (lastWidth != null) __obj.updateDynamic("lastWidth")(lastWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGroupedListState]
   }

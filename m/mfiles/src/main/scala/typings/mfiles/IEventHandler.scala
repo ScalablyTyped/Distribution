@@ -26,7 +26,7 @@ object IEventHandler {
     GetID: () => Double,
     VBScript: String
   ): IEventHandler = {
-    val __obj = js.Dynamic.literal(Active = Active, Clone = js.Any.fromFunction0(Clone), Description = Description, EventType = EventType, GUID = GUID, GetID = js.Any.fromFunction0(GetID), VBScript = VBScript)
+    val __obj = js.Dynamic.literal(Active = Active.asInstanceOf[js.Any], Clone = js.Any.fromFunction0(Clone), Description = Description.asInstanceOf[js.Any], EventType = EventType.asInstanceOf[js.Any], GUID = GUID.asInstanceOf[js.Any], GetID = js.Any.fromFunction0(GetID), VBScript = VBScript.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IEventHandler]
   }

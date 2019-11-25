@@ -18,8 +18,8 @@ object RegionInstanceGroupsListInstancesRequest {
   @scala.inline
   def apply(instanceState: String = null, portName: String = null): RegionInstanceGroupsListInstancesRequest = {
     val __obj = js.Dynamic.literal()
-    if (instanceState != null) __obj.updateDynamic("instanceState")(instanceState)
-    if (portName != null) __obj.updateDynamic("portName")(portName)
+    if (instanceState != null) __obj.updateDynamic("instanceState")(instanceState.asInstanceOf[js.Any])
+    if (portName != null) __obj.updateDynamic("portName")(portName.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegionInstanceGroupsListInstancesRequest]
   }
 }

@@ -18,7 +18,7 @@ object Anon_Args {
     variables: TVariables = null
   ): Anon_Args[TVariables] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disableThrow)) __obj.updateDynamic("disableThrow")(disableThrow)
+    if (!js.isUndefined(disableThrow)) __obj.updateDynamic("disableThrow")(disableThrow.asInstanceOf[js.Any])
     if (merge != null) __obj.updateDynamic("merge")(js.Any.fromFunction1(merge))
     if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Args[TVariables]]

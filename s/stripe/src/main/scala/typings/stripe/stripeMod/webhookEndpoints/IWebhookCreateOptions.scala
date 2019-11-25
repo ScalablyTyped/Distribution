@@ -34,9 +34,9 @@ object IWebhookCreateOptions {
     api_version: String = null,
     connect: js.UndefOr[Boolean] = js.undefined
   ): IWebhookCreateOptions = {
-    val __obj = js.Dynamic.literal(enabled_events = enabled_events, url = url)
-    if (api_version != null) __obj.updateDynamic("api_version")(api_version)
-    if (!js.isUndefined(connect)) __obj.updateDynamic("connect")(connect)
+    val __obj = js.Dynamic.literal(enabled_events = enabled_events.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (api_version != null) __obj.updateDynamic("api_version")(api_version.asInstanceOf[js.Any])
+    if (!js.isUndefined(connect)) __obj.updateDynamic("connect")(connect.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWebhookCreateOptions]
   }
 }

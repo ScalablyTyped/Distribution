@@ -36,11 +36,11 @@ object Attachment {
     rectangles: js.Array[Rectangle] = null,
     regions: js.Array[Region] = null
   ): Attachment = {
-    val __obj = js.Dynamic.literal(artifactLocation = artifactLocation)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (rectangles != null) __obj.updateDynamic("rectangles")(rectangles)
-    if (regions != null) __obj.updateDynamic("regions")(regions)
+    val __obj = js.Dynamic.literal(artifactLocation = artifactLocation.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (rectangles != null) __obj.updateDynamic("rectangles")(rectangles.asInstanceOf[js.Any])
+    if (regions != null) __obj.updateDynamic("regions")(regions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attachment]
   }
 }

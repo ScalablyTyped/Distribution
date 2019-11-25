@@ -12,7 +12,7 @@ object GoogleCloudDialogflowV2IntentMessageSuggestions {
   @scala.inline
   def apply(suggestions: js.Array[GoogleCloudDialogflowV2IntentMessageSuggestion] = null): GoogleCloudDialogflowV2IntentMessageSuggestions = {
     val __obj = js.Dynamic.literal()
-    if (suggestions != null) __obj.updateDynamic("suggestions")(suggestions)
+    if (suggestions != null) __obj.updateDynamic("suggestions")(suggestions.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudDialogflowV2IntentMessageSuggestions]
   }
 }

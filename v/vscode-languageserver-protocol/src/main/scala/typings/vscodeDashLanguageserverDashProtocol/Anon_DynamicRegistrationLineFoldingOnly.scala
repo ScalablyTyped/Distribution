@@ -31,8 +31,8 @@ object Anon_DynamicRegistrationLineFoldingOnly {
     rangeLimit: Int | Double = null
   ): Anon_DynamicRegistrationLineFoldingOnly = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dynamicRegistration)) __obj.updateDynamic("dynamicRegistration")(dynamicRegistration)
-    if (!js.isUndefined(lineFoldingOnly)) __obj.updateDynamic("lineFoldingOnly")(lineFoldingOnly)
+    if (!js.isUndefined(dynamicRegistration)) __obj.updateDynamic("dynamicRegistration")(dynamicRegistration.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineFoldingOnly)) __obj.updateDynamic("lineFoldingOnly")(lineFoldingOnly.asInstanceOf[js.Any])
     if (rangeLimit != null) __obj.updateDynamic("rangeLimit")(rangeLimit.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DynamicRegistrationLineFoldingOnly]
   }

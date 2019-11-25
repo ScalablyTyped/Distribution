@@ -15,8 +15,8 @@ object PartialStyleRulesListItemAvatarClassKey {
   @scala.inline
   def apply(icon: CSSProperties = null, root: CSSProperties = null): PartialStyleRulesListItemAvatarClassKey = {
     val __obj = js.Dynamic.literal()
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (root != null) __obj.updateDynamic("root")(root)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyleRulesListItemAvatarClassKey]
   }
 }

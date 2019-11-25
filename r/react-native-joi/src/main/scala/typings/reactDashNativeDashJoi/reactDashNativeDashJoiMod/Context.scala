@@ -19,9 +19,9 @@ object Context {
     label: String = null
   ): Context = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (label != null) __obj.updateDynamic("label")(label)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[Context]
   }
 }

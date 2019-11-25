@@ -11,7 +11,7 @@ trait Anon_SupportMode extends js.Object {
 object Anon_SupportMode {
   @scala.inline
   def apply(supportMode: js.Array[String]): Anon_SupportMode = {
-    val __obj = js.Dynamic.literal(supportMode = supportMode)
+    val __obj = js.Dynamic.literal(supportMode = supportMode.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_SupportMode]
   }

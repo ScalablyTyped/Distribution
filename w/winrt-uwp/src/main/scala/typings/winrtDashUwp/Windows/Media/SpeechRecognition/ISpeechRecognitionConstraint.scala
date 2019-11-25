@@ -24,8 +24,8 @@ object ISpeechRecognitionConstraint {
     tag: String,
     `type`: SpeechRecognitionConstraintType
   ): ISpeechRecognitionConstraint = {
-    val __obj = js.Dynamic.literal(isEnabled = isEnabled, probability = probability, tag = tag)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(isEnabled = isEnabled.asInstanceOf[js.Any], probability = probability.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISpeechRecognitionConstraint]
   }
 }

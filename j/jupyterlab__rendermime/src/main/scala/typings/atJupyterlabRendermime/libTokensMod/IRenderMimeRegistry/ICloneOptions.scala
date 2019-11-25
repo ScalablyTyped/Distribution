@@ -40,10 +40,10 @@ object ICloneOptions {
     sanitizer: ISanitizer = null
   ): ICloneOptions = {
     val __obj = js.Dynamic.literal()
-    if (latexTypesetter != null) __obj.updateDynamic("latexTypesetter")(latexTypesetter)
-    if (linkHandler != null) __obj.updateDynamic("linkHandler")(linkHandler)
-    if (resolver != null) __obj.updateDynamic("resolver")(resolver)
-    if (sanitizer != null) __obj.updateDynamic("sanitizer")(sanitizer)
+    if (latexTypesetter != null) __obj.updateDynamic("latexTypesetter")(latexTypesetter.asInstanceOf[js.Any])
+    if (linkHandler != null) __obj.updateDynamic("linkHandler")(linkHandler.asInstanceOf[js.Any])
+    if (resolver != null) __obj.updateDynamic("resolver")(resolver.asInstanceOf[js.Any])
+    if (sanitizer != null) __obj.updateDynamic("sanitizer")(sanitizer.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICloneOptions]
   }
 }

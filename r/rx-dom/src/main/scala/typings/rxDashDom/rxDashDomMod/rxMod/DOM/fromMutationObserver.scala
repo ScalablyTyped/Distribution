@@ -1,6 +1,5 @@
 package typings.rxDashDom.rxDashDomMod.rxMod.DOM
 
-import typings.rxDashLiteDashAggregates.Rx.Observable
 import typings.std.MutationEvent
 import typings.std.MutationObserverInit
 import typings.std.Node
@@ -12,6 +11,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object fromMutationObserver extends js.Object {
   // Mutation Observers
-  def apply(target: Node, options: MutationObserverInit): Observable[MutationEvent] = js.native
+  def apply(target: Node, options: MutationObserverInit): typings.rxDashLiteDashAggregates.Rx.Observable[MutationEvent] = js.native
 }
 

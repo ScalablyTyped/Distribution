@@ -56,7 +56,7 @@ object Token {
     token: String,
     usage: String
   ): Token = {
-    val __obj = js.Dynamic.literal(client = client, created = created, default = default, id = id, modified = modified, note = note, scopes = scopes, token = token, usage = usage)
+    val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], modified = modified.asInstanceOf[js.Any], note = note.asInstanceOf[js.Any], scopes = scopes.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any], usage = usage.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Token]
   }

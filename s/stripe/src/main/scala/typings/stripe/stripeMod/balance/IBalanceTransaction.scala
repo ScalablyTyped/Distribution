@@ -76,12 +76,12 @@ object IBalanceTransaction {
     exchange_rate: Int | Double = null,
     source_transfers: IList[ITransfer] = null
   ): IBalanceTransaction = {
-    val __obj = js.Dynamic.literal(amount = amount, available_on = available_on, created = created, currency = currency, fee = fee, fee_details = fee_details, id = id, net = net, source = source.asInstanceOf[js.Any], status = status)
-    __obj.updateDynamic("object")(`object`)
-    __obj.updateDynamic("type")(`type`)
-    if (description != null) __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], available_on = available_on.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], fee = fee.asInstanceOf[js.Any], fee_details = fee_details.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], net = net.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (exchange_rate != null) __obj.updateDynamic("exchange_rate")(exchange_rate.asInstanceOf[js.Any])
-    if (source_transfers != null) __obj.updateDynamic("source_transfers")(source_transfers)
+    if (source_transfers != null) __obj.updateDynamic("source_transfers")(source_transfers.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBalanceTransaction]
   }
 }

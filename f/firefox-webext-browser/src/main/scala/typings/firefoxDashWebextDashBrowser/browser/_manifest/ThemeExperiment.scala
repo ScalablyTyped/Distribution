@@ -21,10 +21,10 @@ object ThemeExperiment {
     stylesheet: ExtensionURL = null
   ): ThemeExperiment = {
     val __obj = js.Dynamic.literal()
-    if (colors != null) __obj.updateDynamic("colors")(colors)
-    if (images != null) __obj.updateDynamic("images")(images)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (stylesheet != null) __obj.updateDynamic("stylesheet")(stylesheet)
+    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
+    if (images != null) __obj.updateDynamic("images")(images.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (stylesheet != null) __obj.updateDynamic("stylesheet")(stylesheet.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThemeExperiment]
   }
 }

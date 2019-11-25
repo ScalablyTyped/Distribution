@@ -61,19 +61,19 @@ object Commitment {
     statusMessage: String = null
   ): Commitment = {
     val __obj = js.Dynamic.literal()
-    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (endTimestamp != null) __obj.updateDynamic("endTimestamp")(endTimestamp)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (plan != null) __obj.updateDynamic("plan")(plan)
-    if (region != null) __obj.updateDynamic("region")(region)
-    if (resources != null) __obj.updateDynamic("resources")(resources)
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
-    if (startTimestamp != null) __obj.updateDynamic("startTimestamp")(startTimestamp)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (statusMessage != null) __obj.updateDynamic("statusMessage")(statusMessage)
+    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (endTimestamp != null) __obj.updateDynamic("endTimestamp")(endTimestamp.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (plan != null) __obj.updateDynamic("plan")(plan.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
+    if (startTimestamp != null) __obj.updateDynamic("startTimestamp")(startTimestamp.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (statusMessage != null) __obj.updateDynamic("statusMessage")(statusMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[Commitment]
   }
 }

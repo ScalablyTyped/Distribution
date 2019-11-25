@@ -13,8 +13,8 @@ trait IBreadcrumbStyleProps extends js.Object {
 object IBreadcrumbStyleProps {
   @scala.inline
   def apply(theme: ITheme, className: String = null): IBreadcrumbStyleProps = {
-    val __obj = js.Dynamic.literal(theme = theme)
-    if (className != null) __obj.updateDynamic("className")(className)
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBreadcrumbStyleProps]
   }
 }

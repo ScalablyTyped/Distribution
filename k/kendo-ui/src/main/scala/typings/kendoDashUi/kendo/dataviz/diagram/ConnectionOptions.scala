@@ -42,21 +42,21 @@ object ConnectionOptions {
     `type`: String = null
   ): ConnectionOptions = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (endCap != null) __obj.updateDynamic("endCap")(endCap.asInstanceOf[js.Any])
-    if (fromConnector != null) __obj.updateDynamic("fromConnector")(fromConnector)
+    if (fromConnector != null) __obj.updateDynamic("fromConnector")(fromConnector.asInstanceOf[js.Any])
     if (fromX != null) __obj.updateDynamic("fromX")(fromX.asInstanceOf[js.Any])
     if (fromY != null) __obj.updateDynamic("fromY")(fromY.asInstanceOf[js.Any])
-    if (hover != null) __obj.updateDynamic("hover")(hover)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (points != null) __obj.updateDynamic("points")(points)
-    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable)
+    if (hover != null) __obj.updateDynamic("hover")(hover.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (points != null) __obj.updateDynamic("points")(points.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
     if (startCap != null) __obj.updateDynamic("startCap")(startCap.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
-    if (toConnector != null) __obj.updateDynamic("toConnector")(toConnector)
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
+    if (toConnector != null) __obj.updateDynamic("toConnector")(toConnector.asInstanceOf[js.Any])
     if (toX != null) __obj.updateDynamic("toX")(toX.asInstanceOf[js.Any])
     if (toY != null) __obj.updateDynamic("toY")(toY.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionOptions]
   }
 }

@@ -95,11 +95,11 @@ object Anon_Adcode {
     exit_location: LngLat = null,
     groupbuys: js.Array[Groupbuy] = null
   ): Anon_Adcode = {
-    val __obj = js.Dynamic.literal(adcode = adcode, adname = adname, citycode = citycode, cityname = cityname, discount = discount, email = email, groupbuy = groupbuy, pcode = pcode, photos = photos, pname = pname, postcode = postcode, website = website)
-    if (discounts != null) __obj.updateDynamic("discounts")(discounts)
-    if (entr_location != null) __obj.updateDynamic("entr_location")(entr_location)
-    if (exit_location != null) __obj.updateDynamic("exit_location")(exit_location)
-    if (groupbuys != null) __obj.updateDynamic("groupbuys")(groupbuys)
+    val __obj = js.Dynamic.literal(adcode = adcode.asInstanceOf[js.Any], adname = adname.asInstanceOf[js.Any], citycode = citycode.asInstanceOf[js.Any], cityname = cityname.asInstanceOf[js.Any], discount = discount.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], groupbuy = groupbuy.asInstanceOf[js.Any], pcode = pcode.asInstanceOf[js.Any], photos = photos.asInstanceOf[js.Any], pname = pname.asInstanceOf[js.Any], postcode = postcode.asInstanceOf[js.Any], website = website.asInstanceOf[js.Any])
+    if (discounts != null) __obj.updateDynamic("discounts")(discounts.asInstanceOf[js.Any])
+    if (entr_location != null) __obj.updateDynamic("entr_location")(entr_location.asInstanceOf[js.Any])
+    if (exit_location != null) __obj.updateDynamic("exit_location")(exit_location.asInstanceOf[js.Any])
+    if (groupbuys != null) __obj.updateDynamic("groupbuys")(groupbuys.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Adcode]
   }
 }

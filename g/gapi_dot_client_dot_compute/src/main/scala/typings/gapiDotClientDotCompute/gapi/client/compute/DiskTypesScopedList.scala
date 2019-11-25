@@ -16,8 +16,8 @@ object DiskTypesScopedList {
   @scala.inline
   def apply(diskTypes: js.Array[DiskType] = null, warning: Anon_Code = null): DiskTypesScopedList = {
     val __obj = js.Dynamic.literal()
-    if (diskTypes != null) __obj.updateDynamic("diskTypes")(diskTypes)
-    if (warning != null) __obj.updateDynamic("warning")(warning)
+    if (diskTypes != null) __obj.updateDynamic("diskTypes")(diskTypes.asInstanceOf[js.Any])
+    if (warning != null) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiskTypesScopedList]
   }
 }

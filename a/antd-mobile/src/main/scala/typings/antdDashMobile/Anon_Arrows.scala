@@ -25,7 +25,7 @@ object Anon_Arrows {
     prefixCls: String,
     selectedIndex: Double
   ): Anon_Arrows = {
-    val __obj = js.Dynamic.literal(arrows = arrows, autoplay = autoplay, cellAlign = cellAlign, dots = dots, infinite = infinite, prefixCls = prefixCls, selectedIndex = selectedIndex)
+    val __obj = js.Dynamic.literal(arrows = arrows.asInstanceOf[js.Any], autoplay = autoplay.asInstanceOf[js.Any], cellAlign = cellAlign.asInstanceOf[js.Any], dots = dots.asInstanceOf[js.Any], infinite = infinite.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], selectedIndex = selectedIndex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Arrows]
   }

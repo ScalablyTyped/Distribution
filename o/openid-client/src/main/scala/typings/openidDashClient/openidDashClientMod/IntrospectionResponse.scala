@@ -39,18 +39,18 @@ object IntrospectionResponse {
     token_type: String = null,
     username: String = null
   ): IntrospectionResponse = {
-    val __obj = js.Dynamic.literal(active = active, scope = scope)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (aud != null) __obj.updateDynamic("aud")(aud.asInstanceOf[js.Any])
-    if (client_id != null) __obj.updateDynamic("client_id")(client_id)
-    if (cnf != null) __obj.updateDynamic("cnf")(cnf)
+    if (client_id != null) __obj.updateDynamic("client_id")(client_id.asInstanceOf[js.Any])
+    if (cnf != null) __obj.updateDynamic("cnf")(cnf.asInstanceOf[js.Any])
     if (exp != null) __obj.updateDynamic("exp")(exp.asInstanceOf[js.Any])
     if (iat != null) __obj.updateDynamic("iat")(iat.asInstanceOf[js.Any])
-    if (iss != null) __obj.updateDynamic("iss")(iss)
-    if (jti != null) __obj.updateDynamic("jti")(jti)
-    if (sid != null) __obj.updateDynamic("sid")(sid)
-    if (token_type != null) __obj.updateDynamic("token_type")(token_type)
-    if (username != null) __obj.updateDynamic("username")(username)
+    if (iss != null) __obj.updateDynamic("iss")(iss.asInstanceOf[js.Any])
+    if (jti != null) __obj.updateDynamic("jti")(jti.asInstanceOf[js.Any])
+    if (sid != null) __obj.updateDynamic("sid")(sid.asInstanceOf[js.Any])
+    if (token_type != null) __obj.updateDynamic("token_type")(token_type.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrospectionResponse]
   }
 }

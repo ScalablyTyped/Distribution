@@ -25,9 +25,9 @@ trait Service extends js.Object {
 object Service {
   @scala.inline
   def apply(isPrimary: Boolean, uuid: String, deviceAddress: String = null, instanceId: String = null): Service = {
-    val __obj = js.Dynamic.literal(isPrimary = isPrimary, uuid = uuid)
-    if (deviceAddress != null) __obj.updateDynamic("deviceAddress")(deviceAddress)
-    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId)
+    val __obj = js.Dynamic.literal(isPrimary = isPrimary.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
+    if (deviceAddress != null) __obj.updateDynamic("deviceAddress")(deviceAddress.asInstanceOf[js.Any])
+    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Service]
   }
 }

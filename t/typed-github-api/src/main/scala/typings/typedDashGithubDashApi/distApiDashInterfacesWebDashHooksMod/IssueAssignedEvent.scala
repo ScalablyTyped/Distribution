@@ -17,7 +17,7 @@ trait IssueAssignedEvent extends IssueEvent {
 object IssueAssignedEvent {
   @scala.inline
   def apply(action: assigned | unassigned, assignee: UserSummary, issue: Issue): IssueAssignedEvent = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], assignee = assignee, issue = issue)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], assignee = assignee.asInstanceOf[js.Any], issue = issue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IssueAssignedEvent]
   }

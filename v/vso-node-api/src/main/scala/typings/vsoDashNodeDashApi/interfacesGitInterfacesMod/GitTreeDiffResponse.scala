@@ -15,7 +15,7 @@ trait GitTreeDiffResponse extends js.Object {
 object GitTreeDiffResponse {
   @scala.inline
   def apply(continuationToken: js.Array[String], treeDiff: GitTreeDiff): GitTreeDiffResponse = {
-    val __obj = js.Dynamic.literal(continuationToken = continuationToken, treeDiff = treeDiff)
+    val __obj = js.Dynamic.literal(continuationToken = continuationToken.asInstanceOf[js.Any], treeDiff = treeDiff.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GitTreeDiffResponse]
   }

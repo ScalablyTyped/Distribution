@@ -43,10 +43,10 @@ object ReplaceAllShapesWithImageRequest {
     replaceMethod: String = null
   ): ReplaceAllShapesWithImageRequest = {
     val __obj = js.Dynamic.literal()
-    if (containsText != null) __obj.updateDynamic("containsText")(containsText)
-    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
-    if (pageObjectIds != null) __obj.updateDynamic("pageObjectIds")(pageObjectIds)
-    if (replaceMethod != null) __obj.updateDynamic("replaceMethod")(replaceMethod)
+    if (containsText != null) __obj.updateDynamic("containsText")(containsText.asInstanceOf[js.Any])
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
+    if (pageObjectIds != null) __obj.updateDynamic("pageObjectIds")(pageObjectIds.asInstanceOf[js.Any])
+    if (replaceMethod != null) __obj.updateDynamic("replaceMethod")(replaceMethod.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplaceAllShapesWithImageRequest]
   }
 }

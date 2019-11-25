@@ -25,8 +25,8 @@ trait IPositionedData extends js.Object {
 object IPositionedData {
   @scala.inline
   def apply(elementPosition: IPosition, targetEdge: RectangleEdge, alignmentEdge: RectangleEdge = null): IPositionedData = {
-    val __obj = js.Dynamic.literal(elementPosition = elementPosition, targetEdge = targetEdge)
-    if (alignmentEdge != null) __obj.updateDynamic("alignmentEdge")(alignmentEdge)
+    val __obj = js.Dynamic.literal(elementPosition = elementPosition.asInstanceOf[js.Any], targetEdge = targetEdge.asInstanceOf[js.Any])
+    if (alignmentEdge != null) __obj.updateDynamic("alignmentEdge")(alignmentEdge.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPositionedData]
   }
 }

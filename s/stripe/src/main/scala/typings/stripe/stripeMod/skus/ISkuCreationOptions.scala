@@ -57,15 +57,15 @@ object ISkuCreationOptions {
     metadata: IOptionsMetadata = null,
     package_dimensions: IPackageDimensions = null
   ): ISkuCreationOptions = {
-    val __obj = js.Dynamic.literal(currency = currency, inventory = inventory, price = price, product = product)
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
-    if (expand != null) __obj.updateDynamic("expand")(expand)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (include != null) __obj.updateDynamic("include")(include)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (package_dimensions != null) __obj.updateDynamic("package_dimensions")(package_dimensions)
+    val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any], inventory = inventory.asInstanceOf[js.Any], price = price.asInstanceOf[js.Any], product = product.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (package_dimensions != null) __obj.updateDynamic("package_dimensions")(package_dimensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISkuCreationOptions]
   }
 }

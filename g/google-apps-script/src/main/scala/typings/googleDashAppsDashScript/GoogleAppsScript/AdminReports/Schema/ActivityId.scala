@@ -20,10 +20,10 @@ object ActivityId {
     uniqueQualifier: String = null
   ): ActivityId = {
     val __obj = js.Dynamic.literal()
-    if (applicationName != null) __obj.updateDynamic("applicationName")(applicationName)
-    if (customerId != null) __obj.updateDynamic("customerId")(customerId)
-    if (time != null) __obj.updateDynamic("time")(time)
-    if (uniqueQualifier != null) __obj.updateDynamic("uniqueQualifier")(uniqueQualifier)
+    if (applicationName != null) __obj.updateDynamic("applicationName")(applicationName.asInstanceOf[js.Any])
+    if (customerId != null) __obj.updateDynamic("customerId")(customerId.asInstanceOf[js.Any])
+    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
+    if (uniqueQualifier != null) __obj.updateDynamic("uniqueQualifier")(uniqueQualifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivityId]
   }
 }

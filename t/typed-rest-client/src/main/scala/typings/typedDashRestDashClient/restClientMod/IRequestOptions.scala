@@ -21,10 +21,10 @@ object IRequestOptions {
     responseProcessor: js.Function = null
   ): IRequestOptions = {
     val __obj = js.Dynamic.literal()
-    if (acceptHeader != null) __obj.updateDynamic("acceptHeader")(acceptHeader)
-    if (additionalHeaders != null) __obj.updateDynamic("additionalHeaders")(additionalHeaders)
-    if (!js.isUndefined(deserializeDates)) __obj.updateDynamic("deserializeDates")(deserializeDates)
-    if (responseProcessor != null) __obj.updateDynamic("responseProcessor")(responseProcessor)
+    if (acceptHeader != null) __obj.updateDynamic("acceptHeader")(acceptHeader.asInstanceOf[js.Any])
+    if (additionalHeaders != null) __obj.updateDynamic("additionalHeaders")(additionalHeaders.asInstanceOf[js.Any])
+    if (!js.isUndefined(deserializeDates)) __obj.updateDynamic("deserializeDates")(deserializeDates.asInstanceOf[js.Any])
+    if (responseProcessor != null) __obj.updateDynamic("responseProcessor")(responseProcessor.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRequestOptions]
   }
 }

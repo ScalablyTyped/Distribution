@@ -29,15 +29,15 @@ object ProxyConfig {
     socksUsername: String = null,
     sslProxy: String = null
   ): ProxyConfig = {
-    val __obj = js.Dynamic.literal(proxyType = proxyType)
-    if (ftpProxy != null) __obj.updateDynamic("ftpProxy")(ftpProxy)
-    if (httpProxy != null) __obj.updateDynamic("httpProxy")(httpProxy)
-    if (noProxy != null) __obj.updateDynamic("noProxy")(noProxy)
-    if (proxyAutoconfigUrl != null) __obj.updateDynamic("proxyAutoconfigUrl")(proxyAutoconfigUrl)
-    if (socksPassword != null) __obj.updateDynamic("socksPassword")(socksPassword)
-    if (socksProxy != null) __obj.updateDynamic("socksProxy")(socksProxy)
-    if (socksUsername != null) __obj.updateDynamic("socksUsername")(socksUsername)
-    if (sslProxy != null) __obj.updateDynamic("sslProxy")(sslProxy)
+    val __obj = js.Dynamic.literal(proxyType = proxyType.asInstanceOf[js.Any])
+    if (ftpProxy != null) __obj.updateDynamic("ftpProxy")(ftpProxy.asInstanceOf[js.Any])
+    if (httpProxy != null) __obj.updateDynamic("httpProxy")(httpProxy.asInstanceOf[js.Any])
+    if (noProxy != null) __obj.updateDynamic("noProxy")(noProxy.asInstanceOf[js.Any])
+    if (proxyAutoconfigUrl != null) __obj.updateDynamic("proxyAutoconfigUrl")(proxyAutoconfigUrl.asInstanceOf[js.Any])
+    if (socksPassword != null) __obj.updateDynamic("socksPassword")(socksPassword.asInstanceOf[js.Any])
+    if (socksProxy != null) __obj.updateDynamic("socksProxy")(socksProxy.asInstanceOf[js.Any])
+    if (socksUsername != null) __obj.updateDynamic("socksUsername")(socksUsername.asInstanceOf[js.Any])
+    if (sslProxy != null) __obj.updateDynamic("sslProxy")(sslProxy.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProxyConfig]
   }
 }

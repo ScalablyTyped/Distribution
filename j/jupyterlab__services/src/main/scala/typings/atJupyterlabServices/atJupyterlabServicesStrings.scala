@@ -6,9 +6,9 @@ import typings.atJupyterlabServices.libKernelKernelMod.Kernel.Status
 import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessage.Channel
 import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessage.ControlMessageType
 import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessage.IOPubMessageType
+import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessage.MessageType
 import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessage.ShellMessageType
 import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessage.StdinMessageType
-import typings.atJupyterlabServices.libTerminalTerminalMod.TerminalSession.MessageType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,37 +30,50 @@ object atJupyterlabServicesStrings {
   sealed trait busy extends Status
   
   @js.native
-  sealed trait clear_output extends IOPubMessageType
+  sealed trait clear_output
+    extends IOPubMessageType
+       with MessageType
   
   @js.native
   sealed trait comm_close
     extends IOPubMessageType
+       with MessageType
        with ShellMessageType
   
   @js.native
-  sealed trait comm_info_reply extends ShellMessageType
+  sealed trait comm_info_reply
+    extends MessageType
+       with ShellMessageType
   
   @js.native
-  sealed trait comm_info_request extends ShellMessageType
+  sealed trait comm_info_request
+    extends MessageType
+       with ShellMessageType
   
   @js.native
   sealed trait comm_msg
     extends IOPubMessageType
+       with MessageType
        with ShellMessageType
   
   @js.native
   sealed trait comm_open
     extends IOPubMessageType
+       with MessageType
        with ShellMessageType
   
   @js.native
   sealed trait complete extends js.Object
   
   @js.native
-  sealed trait complete_reply extends ShellMessageType
+  sealed trait complete_reply
+    extends MessageType
+       with ShellMessageType
   
   @js.native
-  sealed trait complete_request extends ShellMessageType
+  sealed trait complete_request
+    extends MessageType
+       with ShellMessageType
   
   @js.native
   sealed trait connected extends Status
@@ -72,13 +85,19 @@ object atJupyterlabServicesStrings {
   sealed trait dead extends Status
   
   @js.native
-  sealed trait debug_event extends IOPubMessageType
+  sealed trait debug_event
+    extends IOPubMessageType
+       with MessageType
   
   @js.native
-  sealed trait debug_reply extends ControlMessageType
+  sealed trait debug_reply
+    extends ControlMessageType
+       with MessageType
   
   @js.native
-  sealed trait debug_request extends ControlMessageType
+  sealed trait debug_request
+    extends ControlMessageType
+       with MessageType
   
   @js.native
   sealed trait delete extends js.Object
@@ -87,37 +106,54 @@ object atJupyterlabServicesStrings {
   sealed trait directory extends ContentType
   
   @js.native
-  sealed trait disconnect extends MessageType
+  sealed trait disconnect
+    extends typings.atJupyterlabServices.libTerminalTerminalMod.TerminalSession.MessageType
   
   @js.native
-  sealed trait display_data extends IOPubMessageType
+  sealed trait display_data
+    extends IOPubMessageType
+       with MessageType
   
   @js.native
-  sealed trait error extends IOPubMessageType
+  sealed trait error
+    extends IOPubMessageType
+       with MessageType
   
   @js.native
   sealed trait event extends js.Object
   
   @js.native
-  sealed trait execute_input extends IOPubMessageType
+  sealed trait execute_input
+    extends IOPubMessageType
+       with MessageType
   
   @js.native
-  sealed trait execute_reply extends ShellMessageType
+  sealed trait execute_reply
+    extends MessageType
+       with ShellMessageType
   
   @js.native
-  sealed trait execute_request extends ShellMessageType
+  sealed trait execute_request
+    extends MessageType
+       with ShellMessageType
   
   @js.native
-  sealed trait execute_result extends IOPubMessageType
+  sealed trait execute_result
+    extends IOPubMessageType
+       with MessageType
   
   @js.native
   sealed trait file extends ContentType
   
   @js.native
-  sealed trait history_reply extends ShellMessageType
+  sealed trait history_reply
+    extends MessageType
+       with ShellMessageType
   
   @js.native
-  sealed trait history_request extends ShellMessageType
+  sealed trait history_request
+    extends MessageType
+       with ShellMessageType
   
   @js.native
   sealed trait idle extends Status
@@ -126,22 +162,34 @@ object atJupyterlabServicesStrings {
   sealed trait incomplete extends js.Object
   
   @js.native
-  sealed trait input_reply extends StdinMessageType
+  sealed trait input_reply
+    extends MessageType
+       with StdinMessageType
   
   @js.native
-  sealed trait input_request extends StdinMessageType
+  sealed trait input_request
+    extends MessageType
+       with StdinMessageType
   
   @js.native
-  sealed trait inspect_reply extends ShellMessageType
+  sealed trait inspect_reply
+    extends MessageType
+       with ShellMessageType
   
   @js.native
-  sealed trait inspect_request extends ShellMessageType
+  sealed trait inspect_request
+    extends MessageType
+       with ShellMessageType
   
   @js.native
-  sealed trait interrupt_reply extends ShellMessageType
+  sealed trait interrupt_reply
+    extends MessageType
+       with ShellMessageType
   
   @js.native
-  sealed trait interrupt_request extends ShellMessageType
+  sealed trait interrupt_request
+    extends MessageType
+       with ShellMessageType
   
   @js.native
   sealed trait invalid extends js.Object
@@ -150,19 +198,27 @@ object atJupyterlabServicesStrings {
   sealed trait iopub extends Channel
   
   @js.native
-  sealed trait is_complete_reply extends ShellMessageType
+  sealed trait is_complete_reply
+    extends MessageType
+       with ShellMessageType
   
   @js.native
-  sealed trait is_complete_request extends ShellMessageType
+  sealed trait is_complete_request
+    extends MessageType
+       with ShellMessageType
   
   @js.native
   sealed trait json extends FileFormat
   
   @js.native
-  sealed trait kernel_info_reply extends ShellMessageType
+  sealed trait kernel_info_reply
+    extends MessageType
+       with ShellMessageType
   
   @js.native
-  sealed trait kernel_info_request extends ShellMessageType
+  sealed trait kernel_info_request
+    extends MessageType
+       with ShellMessageType
   
   @js.native
   sealed trait name extends js.Object
@@ -213,16 +269,21 @@ object atJupyterlabServicesStrings {
   sealed trait send extends js.Object
   
   @js.native
-  sealed trait set_size extends MessageType
+  sealed trait set_size
+    extends typings.atJupyterlabServices.libTerminalTerminalMod.TerminalSession.MessageType
   
   @js.native
   sealed trait shell extends Channel
   
   @js.native
-  sealed trait shutdown_reply extends ShellMessageType
+  sealed trait shutdown_reply
+    extends MessageType
+       with ShellMessageType
   
   @js.native
-  sealed trait shutdown_request extends ShellMessageType
+  sealed trait shutdown_request
+    extends MessageType
+       with ShellMessageType
   
   @js.native
   sealed trait stable extends js.Object
@@ -231,7 +292,9 @@ object atJupyterlabServicesStrings {
   sealed trait starting extends Status
   
   @js.native
-  sealed trait status extends IOPubMessageType
+  sealed trait status
+    extends IOPubMessageType
+       with MessageType
   
   @js.native
   sealed trait stderr extends js.Object
@@ -239,13 +302,16 @@ object atJupyterlabServicesStrings {
   @js.native
   sealed trait stdin
     extends Channel
+       with typings.atJupyterlabServices.libTerminalTerminalMod.TerminalSession.MessageType
+  
+  @js.native
+  sealed trait stdout
+    extends typings.atJupyterlabServices.libTerminalTerminalMod.TerminalSession.MessageType
+  
+  @js.native
+  sealed trait stream
+    extends IOPubMessageType
        with MessageType
-  
-  @js.native
-  sealed trait stdout extends MessageType
-  
-  @js.native
-  sealed trait stream extends IOPubMessageType
   
   @js.native
   sealed trait tail extends js.Object
@@ -260,7 +326,9 @@ object atJupyterlabServicesStrings {
   sealed trait unknown extends Status
   
   @js.native
-  sealed trait update_display_data extends IOPubMessageType
+  sealed trait update_display_data
+    extends IOPubMessageType
+       with MessageType
   
   @scala.inline
   def abort: abort = "abort".asInstanceOf[abort]

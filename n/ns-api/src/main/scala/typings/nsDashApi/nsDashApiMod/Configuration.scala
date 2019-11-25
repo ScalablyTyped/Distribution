@@ -13,7 +13,7 @@ trait Configuration extends js.Object {
 object Configuration {
   @scala.inline
   def apply(password: String, username: String, timeout: Int | Double = null): Configuration = {
-    val __obj = js.Dynamic.literal(password = password, username = username)
+    val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Configuration]
   }

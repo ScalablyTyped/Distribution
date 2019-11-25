@@ -23,12 +23,12 @@ object Shadow {
     spread: String = null,
     v: String = null
   ): Shadow = {
-    val __obj = js.Dynamic.literal(color = color)
-    if (blur != null) __obj.updateDynamic("blur")(blur)
-    if (h != null) __obj.updateDynamic("h")(h)
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity)
-    if (spread != null) __obj.updateDynamic("spread")(spread)
-    if (v != null) __obj.updateDynamic("v")(v)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
+    if (blur != null) __obj.updateDynamic("blur")(blur.asInstanceOf[js.Any])
+    if (h != null) __obj.updateDynamic("h")(h.asInstanceOf[js.Any])
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (spread != null) __obj.updateDynamic("spread")(spread.asInstanceOf[js.Any])
+    if (v != null) __obj.updateDynamic("v")(v.asInstanceOf[js.Any])
     __obj.asInstanceOf[Shadow]
   }
 }

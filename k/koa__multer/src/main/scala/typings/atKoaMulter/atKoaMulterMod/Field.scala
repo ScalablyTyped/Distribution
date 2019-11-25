@@ -14,7 +14,7 @@ trait Field extends js.Object {
 object Field {
   @scala.inline
   def apply(name: String, maxCount: Int | Double = null): Field = {
-    val __obj = js.Dynamic.literal(name = name)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (maxCount != null) __obj.updateDynamic("maxCount")(maxCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[Field]
   }

@@ -40,9 +40,9 @@ object Cart {
     attrs: js.Any = null,
     onlineStoreUrl: String = null
   ): Cart = {
-    val __obj = js.Dynamic.literal(checkoutUrl = checkoutUrl, id = id.asInstanceOf[js.Any], lineItemCount = lineItemCount, lineItems = lineItems, subtotalPrice = subtotalPrice)
-    if (attrs != null) __obj.updateDynamic("attrs")(attrs)
-    if (onlineStoreUrl != null) __obj.updateDynamic("onlineStoreUrl")(onlineStoreUrl)
+    val __obj = js.Dynamic.literal(checkoutUrl = checkoutUrl.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], lineItemCount = lineItemCount.asInstanceOf[js.Any], lineItems = lineItems.asInstanceOf[js.Any], subtotalPrice = subtotalPrice.asInstanceOf[js.Any])
+    if (attrs != null) __obj.updateDynamic("attrs")(attrs.asInstanceOf[js.Any])
+    if (onlineStoreUrl != null) __obj.updateDynamic("onlineStoreUrl")(onlineStoreUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cart]
   }
 }

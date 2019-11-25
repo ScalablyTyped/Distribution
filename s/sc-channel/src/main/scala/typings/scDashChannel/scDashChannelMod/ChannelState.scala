@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait ChannelState extends js.Object
 
+object ChannelState {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def pending: typings.scDashChannel.scDashChannelStrings.pending = this.cast("pending")
+  @scala.inline
+  def subscribed: typings.scDashChannel.scDashChannelStrings.subscribed = this.cast("subscribed")
+  @scala.inline
+  def unsubscribed: typings.scDashChannel.scDashChannelStrings.unsubscribed = this.cast("unsubscribed")
+}
+

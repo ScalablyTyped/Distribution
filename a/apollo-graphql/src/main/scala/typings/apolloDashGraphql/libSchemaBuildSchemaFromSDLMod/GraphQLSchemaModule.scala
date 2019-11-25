@@ -14,8 +14,8 @@ trait GraphQLSchemaModule extends js.Object {
 object GraphQLSchemaModule {
   @scala.inline
   def apply(typeDefs: DocumentNode, resolvers: GraphQLResolverMap[_] = null): GraphQLSchemaModule = {
-    val __obj = js.Dynamic.literal(typeDefs = typeDefs)
-    if (resolvers != null) __obj.updateDynamic("resolvers")(resolvers)
+    val __obj = js.Dynamic.literal(typeDefs = typeDefs.asInstanceOf[js.Any])
+    if (resolvers != null) __obj.updateDynamic("resolvers")(resolvers.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLSchemaModule]
   }
 }

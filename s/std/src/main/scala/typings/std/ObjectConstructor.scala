@@ -107,7 +107,7 @@ trait ObjectConstructor
     * @param entries An iterable object that contains key-value entries for properties and methods.
     */
   @JSName("fromEntries")
-  def fromEntries_T_Intersection[T](entries: Iterable[js.Tuple2[PropertyKey, T]]): /* import warning: ImportType.apply c Unsupported type mapping: 
+  def fromEntries_T_Intersection[T](entries: Iterable[js.Tuple2[PropertyKey, T]]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in std.PropertyKey ]: T}
     */ typings.std.stdStrings.ObjectConstructor with js.Any = js.native
   /**

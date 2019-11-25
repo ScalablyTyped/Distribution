@@ -24,12 +24,12 @@ object ObjectPEM {
     headers: js.Array[_] = null,
     procType: js.Any = null
   ): ObjectPEM = {
-    val __obj = js.Dynamic.literal(body = body)
-    __obj.updateDynamic("type")(`type`)
-    if (contentDomain != null) __obj.updateDynamic("contentDomain")(contentDomain)
-    if (dekInfo != null) __obj.updateDynamic("dekInfo")(dekInfo)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (procType != null) __obj.updateDynamic("procType")(procType)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (contentDomain != null) __obj.updateDynamic("contentDomain")(contentDomain.asInstanceOf[js.Any])
+    if (dekInfo != null) __obj.updateDynamic("dekInfo")(dekInfo.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (procType != null) __obj.updateDynamic("procType")(procType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectPEM]
   }
 }

@@ -29,9 +29,9 @@ object Config {
     if (defaultSeverity != null) __obj.updateDynamic("defaultSeverity")(defaultSeverity.asInstanceOf[js.Any])
     if (`extends` != null) __obj.updateDynamic("extends")(`extends`.asInstanceOf[js.Any])
     if (ignoreFiles != null) __obj.updateDynamic("ignoreFiles")(ignoreFiles.asInstanceOf[js.Any])
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
-    if (processors != null) __obj.updateDynamic("processors")(processors)
-    if (rules != null) __obj.updateDynamic("rules")(rules)
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
+    if (processors != null) __obj.updateDynamic("processors")(processors.asInstanceOf[js.Any])
+    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

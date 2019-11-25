@@ -12,7 +12,7 @@ trait MenuItemParameters extends js.Object {
 object MenuItemParameters {
   @scala.inline
   def apply(engineId: String, items: js.Array[js.Object]): MenuItemParameters = {
-    val __obj = js.Dynamic.literal(engineId = engineId, items = items)
+    val __obj = js.Dynamic.literal(engineId = engineId.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MenuItemParameters]
   }

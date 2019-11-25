@@ -46,9 +46,9 @@ object ChartParallelAxesTitleOptions {
     textAlign: AlignValue = null
   ): ChartParallelAxesTitleOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(reserveSpace)) __obj.updateDynamic("reserveSpace")(reserveSpace)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign)
+    if (!js.isUndefined(reserveSpace)) __obj.updateDynamic("reserveSpace")(reserveSpace.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartParallelAxesTitleOptions]
   }
 }

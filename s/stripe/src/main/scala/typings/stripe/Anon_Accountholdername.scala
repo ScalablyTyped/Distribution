@@ -57,11 +57,11 @@ object Anon_Accountholdername {
     account_holder_type: individual | company = null,
     routing_number: String = null
   ): Anon_Accountholdername = {
-    val __obj = js.Dynamic.literal(account_number = account_number, country = country, currency = currency)
-    __obj.updateDynamic("object")(`object`)
-    if (account_holder_name != null) __obj.updateDynamic("account_holder_name")(account_holder_name)
+    val __obj = js.Dynamic.literal(account_number = account_number.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    if (account_holder_name != null) __obj.updateDynamic("account_holder_name")(account_holder_name.asInstanceOf[js.Any])
     if (account_holder_type != null) __obj.updateDynamic("account_holder_type")(account_holder_type.asInstanceOf[js.Any])
-    if (routing_number != null) __obj.updateDynamic("routing_number")(routing_number)
+    if (routing_number != null) __obj.updateDynamic("routing_number")(routing_number.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Accountholdername]
   }
 }

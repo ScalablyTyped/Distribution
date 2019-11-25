@@ -13,7 +13,7 @@ trait LU extends js.Object {
 object LU {
   @scala.inline
   def apply(L: Matrix, U: Matrix): LU = {
-    val __obj = js.Dynamic.literal(L = L, U = U)
+    val __obj = js.Dynamic.literal(L = L.asInstanceOf[js.Any], U = U.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LU]
   }

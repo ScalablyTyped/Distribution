@@ -13,7 +13,7 @@ trait Anon_EndNode extends js.Object {
 object Anon_EndNode {
   @scala.inline
   def apply(endNode: node, startNode: node): Anon_EndNode = {
-    val __obj = js.Dynamic.literal(endNode = endNode, startNode = startNode)
+    val __obj = js.Dynamic.literal(endNode = endNode.asInstanceOf[js.Any], startNode = startNode.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EndNode]
   }

@@ -87,7 +87,7 @@ object DeferredKeySelection extends js.Object {
   type ReplaceBase[TSelection, TBase] = TSelection | (ArrayIfAlready[TSelection, SetBase[js.Any | UnwrapArrayMember[TSelection], TBase]])
   type Resolve[TSelection] = UnknownToAny[TSelection] | (js.Array[
     (ResolveOne[
-      /* import warning: ImportType.apply Failed type conversion: TSelection[0] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: TSelection[0] */ js.Any
     ]) | UnknownToAny[js.Any]
   ]) | ResolveOne[TSelection]
   // Core resolution logic -- Refer to docs for DeferredKeySelection for specifics

@@ -26,13 +26,13 @@ object Anon_Compressedpagesread {
     `raw compression call succeeded`: Double
   ): Anon_Compressedpagesread = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("compressed pages read")(`compressed pages read`)
-    __obj.updateDynamic("compressed pages written")(`compressed pages written`)
-    __obj.updateDynamic("page written failed to compress")(`page written failed to compress`)
-    __obj.updateDynamic("page written was too small to compress")(`page written was too small to compress`)
-    __obj.updateDynamic("raw compression call failed, additional data available")(`raw compression call failed, additional data available`)
-    __obj.updateDynamic("raw compression call failed, no additional data available")(`raw compression call failed, no additional data available`)
-    __obj.updateDynamic("raw compression call succeeded")(`raw compression call succeeded`)
+    __obj.updateDynamic("compressed pages read")(`compressed pages read`.asInstanceOf[js.Any])
+    __obj.updateDynamic("compressed pages written")(`compressed pages written`.asInstanceOf[js.Any])
+    __obj.updateDynamic("page written failed to compress")(`page written failed to compress`.asInstanceOf[js.Any])
+    __obj.updateDynamic("page written was too small to compress")(`page written was too small to compress`.asInstanceOf[js.Any])
+    __obj.updateDynamic("raw compression call failed, additional data available")(`raw compression call failed, additional data available`.asInstanceOf[js.Any])
+    __obj.updateDynamic("raw compression call failed, no additional data available")(`raw compression call failed, no additional data available`.asInstanceOf[js.Any])
+    __obj.updateDynamic("raw compression call succeeded")(`raw compression call succeeded`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Compressedpagesread]
   }
 }

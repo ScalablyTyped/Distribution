@@ -29,7 +29,7 @@ object Anon_Complete {
     waiting: String,
     waiting_analyzed: String
   ): Anon_Complete = {
-    val __obj = js.Dynamic.literal(complete = complete, failed = failed, parsing = parsing, queued = queued, running = running, under_review = under_review, uploading = uploading, waiting = waiting, waiting_analyzed = waiting_analyzed)
+    val __obj = js.Dynamic.literal(complete = complete.asInstanceOf[js.Any], failed = failed.asInstanceOf[js.Any], parsing = parsing.asInstanceOf[js.Any], queued = queued.asInstanceOf[js.Any], running = running.asInstanceOf[js.Any], under_review = under_review.asInstanceOf[js.Any], uploading = uploading.asInstanceOf[js.Any], waiting = waiting.asInstanceOf[js.Any], waiting_analyzed = waiting_analyzed.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Complete]
   }

@@ -82,20 +82,20 @@ object TOptionsBase {
     returnObjects: js.UndefOr[Boolean] = js.undefined
   ): TOptionsBase = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (fallbackLng != null) __obj.updateDynamic("fallbackLng")(fallbackLng.asInstanceOf[js.Any])
-    if (interpolation != null) __obj.updateDynamic("interpolation")(interpolation)
-    if (joinArrays != null) __obj.updateDynamic("joinArrays")(joinArrays)
-    if (keySeparator != null) __obj.updateDynamic("keySeparator")(keySeparator)
-    if (lng != null) __obj.updateDynamic("lng")(lng)
-    if (lngs != null) __obj.updateDynamic("lngs")(lngs)
+    if (interpolation != null) __obj.updateDynamic("interpolation")(interpolation.asInstanceOf[js.Any])
+    if (joinArrays != null) __obj.updateDynamic("joinArrays")(joinArrays.asInstanceOf[js.Any])
+    if (keySeparator != null) __obj.updateDynamic("keySeparator")(keySeparator.asInstanceOf[js.Any])
+    if (lng != null) __obj.updateDynamic("lng")(lng.asInstanceOf[js.Any])
+    if (lngs != null) __obj.updateDynamic("lngs")(lngs.asInstanceOf[js.Any])
     if (ns != null) __obj.updateDynamic("ns")(ns.asInstanceOf[js.Any])
-    if (nsSeparator != null) __obj.updateDynamic("nsSeparator")(nsSeparator)
+    if (nsSeparator != null) __obj.updateDynamic("nsSeparator")(nsSeparator.asInstanceOf[js.Any])
     if (postProcess != null) __obj.updateDynamic("postProcess")(postProcess.asInstanceOf[js.Any])
-    if (replace != null) __obj.updateDynamic("replace")(replace)
-    if (!js.isUndefined(returnObjects)) __obj.updateDynamic("returnObjects")(returnObjects)
+    if (replace != null) __obj.updateDynamic("replace")(replace.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnObjects)) __obj.updateDynamic("returnObjects")(returnObjects.asInstanceOf[js.Any])
     __obj.asInstanceOf[TOptionsBase]
   }
 }

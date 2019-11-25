@@ -35,16 +35,16 @@ object NewCustomer {
     state: String = null,
     zip: String = null
   ): NewCustomer = {
-    val __obj = js.Dynamic.literal(data_source_uuid = data_source_uuid, external_id = external_id, name = name)
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
-    if (city != null) __obj.updateDynamic("city")(city)
-    if (company != null) __obj.updateDynamic("company")(company)
-    if (country != null) __obj.updateDynamic("country")(country)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (free_trial_started_at != null) __obj.updateDynamic("free_trial_started_at")(free_trial_started_at)
-    if (lead_created_at != null) __obj.updateDynamic("lead_created_at")(lead_created_at)
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (zip != null) __obj.updateDynamic("zip")(zip)
+    val __obj = js.Dynamic.literal(data_source_uuid = data_source_uuid.asInstanceOf[js.Any], external_id = external_id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (city != null) __obj.updateDynamic("city")(city.asInstanceOf[js.Any])
+    if (company != null) __obj.updateDynamic("company")(company.asInstanceOf[js.Any])
+    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (free_trial_started_at != null) __obj.updateDynamic("free_trial_started_at")(free_trial_started_at.asInstanceOf[js.Any])
+    if (lead_created_at != null) __obj.updateDynamic("lead_created_at")(lead_created_at.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (zip != null) __obj.updateDynamic("zip")(zip.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewCustomer]
   }
 }

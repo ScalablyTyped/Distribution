@@ -12,7 +12,7 @@ object SettingsChange {
   @scala.inline
   def apply(restrictionChanges: js.Array[RestrictionChange] = null): SettingsChange = {
     val __obj = js.Dynamic.literal()
-    if (restrictionChanges != null) __obj.updateDynamic("restrictionChanges")(restrictionChanges)
+    if (restrictionChanges != null) __obj.updateDynamic("restrictionChanges")(restrictionChanges.asInstanceOf[js.Any])
     __obj.asInstanceOf[SettingsChange]
   }
 }

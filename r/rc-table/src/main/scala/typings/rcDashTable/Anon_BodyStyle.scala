@@ -31,7 +31,7 @@ object Anon_BodyStyle {
     showHeader: Boolean,
     useFixedHeader: Boolean
   ): Anon_BodyStyle = {
-    val __obj = js.Dynamic.literal(data = data, emptyText = js.Any.fromFunction0(emptyText), onHeaderRow = js.Any.fromFunction0(onHeaderRow), onRow = js.Any.fromFunction0(onRow), prefixCls = prefixCls, rowClassName = js.Any.fromFunction0(rowClassName), rowKey = rowKey, rowRef = js.Any.fromFunction0(rowRef), showHeader = showHeader, useFixedHeader = useFixedHeader)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], emptyText = js.Any.fromFunction0(emptyText), onHeaderRow = js.Any.fromFunction0(onHeaderRow), onRow = js.Any.fromFunction0(onRow), prefixCls = prefixCls.asInstanceOf[js.Any], rowClassName = js.Any.fromFunction0(rowClassName), rowKey = rowKey.asInstanceOf[js.Any], rowRef = js.Any.fromFunction0(rowRef), showHeader = showHeader.asInstanceOf[js.Any], useFixedHeader = useFixedHeader.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BodyStyle]
   }

@@ -18,7 +18,7 @@ object SpeechRecognitionResult {
   @scala.inline
   def apply(alternatives: js.Array[SpeechRecognitionAlternative] = null): SpeechRecognitionResult = {
     val __obj = js.Dynamic.literal()
-    if (alternatives != null) __obj.updateDynamic("alternatives")(alternatives)
+    if (alternatives != null) __obj.updateDynamic("alternatives")(alternatives.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpeechRecognitionResult]
   }
 }

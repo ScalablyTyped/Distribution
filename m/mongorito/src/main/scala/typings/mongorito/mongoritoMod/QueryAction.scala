@@ -15,8 +15,8 @@ trait QueryAction extends Action {
 object QueryAction {
   @scala.inline
   def apply(method: String, query: js.Array[Anon_Args], `type`: QUERY): QueryAction = {
-    val __obj = js.Dynamic.literal(method = method, query = query)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryAction]
   }
 }

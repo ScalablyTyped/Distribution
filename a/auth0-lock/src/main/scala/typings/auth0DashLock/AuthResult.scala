@@ -29,10 +29,10 @@ object AuthResult {
     refreshToken: String = null,
     scope: String = null
   ): AuthResult = {
-    val __obj = js.Dynamic.literal(accessToken = accessToken, expiresIn = expiresIn, idToken = idToken, idTokenPayload = idTokenPayload, state = state, tokenType = tokenType)
-    if (appState != null) __obj.updateDynamic("appState")(appState)
-    if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
+    val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any], expiresIn = expiresIn.asInstanceOf[js.Any], idToken = idToken.asInstanceOf[js.Any], idTokenPayload = idTokenPayload.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], tokenType = tokenType.asInstanceOf[js.Any])
+    if (appState != null) __obj.updateDynamic("appState")(appState.asInstanceOf[js.Any])
+    if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthResult]
   }
 }

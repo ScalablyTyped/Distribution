@@ -24,12 +24,12 @@ object SparklinePlotAreaClickEvent {
     x: js.Any = null,
     y: js.Any = null
   ): SparklinePlotAreaClickEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (category != null) __obj.updateDynamic("category")(category)
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (value != null) __obj.updateDynamic("value")(value)
-    if (x != null) __obj.updateDynamic("x")(x)
-    if (y != null) __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[SparklinePlotAreaClickEvent]
   }
 }

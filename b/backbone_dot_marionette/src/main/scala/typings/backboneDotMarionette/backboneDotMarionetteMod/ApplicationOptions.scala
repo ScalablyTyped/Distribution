@@ -20,11 +20,11 @@ object ApplicationOptions {
     radioEvents: js.Any = null,
     radioRequests: js.Any = null
   ): ApplicationOptions = {
-    val __obj = js.Dynamic.literal(region = region)
-    if (channelName != null) __obj.updateDynamic("channelName")(channelName)
+    val __obj = js.Dynamic.literal(region = region.asInstanceOf[js.Any])
+    if (channelName != null) __obj.updateDynamic("channelName")(channelName.asInstanceOf[js.Any])
     if (initialize != null) __obj.updateDynamic("initialize")(js.Any.fromFunction1(initialize))
-    if (radioEvents != null) __obj.updateDynamic("radioEvents")(radioEvents)
-    if (radioRequests != null) __obj.updateDynamic("radioRequests")(radioRequests)
+    if (radioEvents != null) __obj.updateDynamic("radioEvents")(radioEvents.asInstanceOf[js.Any])
+    if (radioRequests != null) __obj.updateDynamic("radioRequests")(radioRequests.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationOptions]
   }
 }

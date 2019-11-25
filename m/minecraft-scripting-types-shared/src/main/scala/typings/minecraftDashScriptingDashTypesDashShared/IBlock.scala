@@ -27,7 +27,7 @@ trait IBlock extends _IMinecraftObject {
 object IBlock {
   @scala.inline
   def apply(__identifier__ : String, __type__ : block, block_position: VectorXYZ, ticking_area: ITickingArea): IBlock = {
-    val __obj = js.Dynamic.literal(__identifier__ = __identifier__, __type__ = __type__, block_position = block_position, ticking_area = ticking_area)
+    val __obj = js.Dynamic.literal(__identifier__ = __identifier__.asInstanceOf[js.Any], __type__ = __type__.asInstanceOf[js.Any], block_position = block_position.asInstanceOf[js.Any], ticking_area = ticking_area.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IBlock]
   }

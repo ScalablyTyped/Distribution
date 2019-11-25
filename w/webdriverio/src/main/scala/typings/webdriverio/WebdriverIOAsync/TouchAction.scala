@@ -13,7 +13,7 @@ object TouchAction {
   @scala.inline
   def apply(element: Element = null): TouchAction = {
     val __obj = js.Dynamic.literal()
-    if (element != null) __obj.updateDynamic("element")(element)
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
     __obj.asInstanceOf[TouchAction]
   }
 }

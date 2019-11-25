@@ -33,8 +33,8 @@ object MoreLikeThisOptions {
     minwl: Int | Double = null,
     qf: String | js.Object = null
   ): MoreLikeThisOptions = {
-    val __obj = js.Dynamic.literal(on = on)
-    if (!js.isUndefined(boost)) __obj.updateDynamic("boost")(boost)
+    val __obj = js.Dynamic.literal(on = on.asInstanceOf[js.Any])
+    if (!js.isUndefined(boost)) __obj.updateDynamic("boost")(boost.asInstanceOf[js.Any])
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (fl != null) __obj.updateDynamic("fl")(fl.asInstanceOf[js.Any])
     if (maxntp != null) __obj.updateDynamic("maxntp")(maxntp.asInstanceOf[js.Any])

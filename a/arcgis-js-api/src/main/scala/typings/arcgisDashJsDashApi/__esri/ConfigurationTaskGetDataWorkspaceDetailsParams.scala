@@ -30,7 +30,7 @@ object ConfigurationTaskGetDataWorkspaceDetailsParams {
     propertyIsEnumerable: PropertyKey => Boolean,
     user: String
   ): ConfigurationTaskGetDataWorkspaceDetailsParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, dataWorkspaceId = dataWorkspaceId, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), user = user)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], dataWorkspaceId = dataWorkspaceId.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), user = user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ConfigurationTaskGetDataWorkspaceDetailsParams]
   }

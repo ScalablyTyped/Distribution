@@ -25,7 +25,7 @@ object Anon_Context {
     snapshotFileName: String,
     story: IStorybookStory
   ): Anon_Context = {
-    val __obj = js.Dynamic.literal(context = context, renderShallowTree = js.Any.fromFunction3(renderShallowTree), renderTree = js.Any.fromFunction3(renderTree), snapshotFileName = snapshotFileName, story = story)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], renderShallowTree = js.Any.fromFunction3(renderShallowTree), renderTree = js.Any.fromFunction3(renderTree), snapshotFileName = snapshotFileName.asInstanceOf[js.Any], story = story.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Context]
   }

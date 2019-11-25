@@ -13,7 +13,7 @@ trait File extends js.Object {
 object File {
   @scala.inline
   def apply(exports: js.Any, objects: NumberDictionary[Line]): File = {
-    val __obj = js.Dynamic.literal(exports = exports, objects = objects)
+    val __obj = js.Dynamic.literal(exports = exports.asInstanceOf[js.Any], objects = objects.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[File]
   }

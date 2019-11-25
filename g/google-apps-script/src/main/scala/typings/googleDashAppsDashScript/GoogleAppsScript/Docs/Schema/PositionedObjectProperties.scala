@@ -13,8 +13,8 @@ object PositionedObjectProperties {
   @scala.inline
   def apply(embeddedObject: EmbeddedObject = null, positioning: PositionedObjectPositioning = null): PositionedObjectProperties = {
     val __obj = js.Dynamic.literal()
-    if (embeddedObject != null) __obj.updateDynamic("embeddedObject")(embeddedObject)
-    if (positioning != null) __obj.updateDynamic("positioning")(positioning)
+    if (embeddedObject != null) __obj.updateDynamic("embeddedObject")(embeddedObject.asInstanceOf[js.Any])
+    if (positioning != null) __obj.updateDynamic("positioning")(positioning.asInstanceOf[js.Any])
     __obj.asInstanceOf[PositionedObjectProperties]
   }
 }

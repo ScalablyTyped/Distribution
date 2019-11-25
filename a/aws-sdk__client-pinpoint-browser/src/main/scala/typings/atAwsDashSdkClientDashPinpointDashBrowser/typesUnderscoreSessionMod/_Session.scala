@@ -33,9 +33,9 @@ object _Session {
   ): _Session = {
     val __obj = js.Dynamic.literal()
     if (Duration != null) __obj.updateDynamic("Duration")(Duration.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id)
-    if (StartTimestamp != null) __obj.updateDynamic("StartTimestamp")(StartTimestamp)
-    if (StopTimestamp != null) __obj.updateDynamic("StopTimestamp")(StopTimestamp)
+    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
+    if (StartTimestamp != null) __obj.updateDynamic("StartTimestamp")(StartTimestamp.asInstanceOf[js.Any])
+    if (StopTimestamp != null) __obj.updateDynamic("StopTimestamp")(StopTimestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Session]
   }
 }

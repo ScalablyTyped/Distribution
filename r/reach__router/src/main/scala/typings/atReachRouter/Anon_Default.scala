@@ -24,11 +24,11 @@ object Anon_Default {
     uri: String = null
   ): Anon_Default = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (navigate != null) __obj.updateDynamic("navigate")(navigate)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (uri != null) __obj.updateDynamic("uri")(uri)
+    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (navigate != null) __obj.updateDynamic("navigate")(navigate.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Default]
   }
 }

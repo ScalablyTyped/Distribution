@@ -36,12 +36,12 @@ object OpenFailureEventArgs {
     `type`: String = null
   ): OpenFailureEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (failureType != null) __obj.updateDynamic("failureType")(failureType)
-    if (model != null) __obj.updateDynamic("model")(model)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (failureType != null) __obj.updateDynamic("failureType")(failureType.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (statusText != null) __obj.updateDynamic("statusText")(statusText)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (statusText != null) __obj.updateDynamic("statusText")(statusText.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenFailureEventArgs]
   }
 }

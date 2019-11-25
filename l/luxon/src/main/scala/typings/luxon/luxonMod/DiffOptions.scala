@@ -12,7 +12,7 @@ object DiffOptions {
   @scala.inline
   def apply(conversionAccuracy: ConversionAccuracy = null): DiffOptions = {
     val __obj = js.Dynamic.literal()
-    if (conversionAccuracy != null) __obj.updateDynamic("conversionAccuracy")(conversionAccuracy)
+    if (conversionAccuracy != null) __obj.updateDynamic("conversionAccuracy")(conversionAccuracy.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiffOptions]
   }
 }

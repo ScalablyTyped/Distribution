@@ -34,10 +34,10 @@ object SubscribeOptions {
     timeout: Int | Double = null
   ): SubscribeOptions = {
     val __obj = js.Dynamic.literal()
-    if (invocationContext != null) __obj.updateDynamic("invocationContext")(invocationContext)
+    if (invocationContext != null) __obj.updateDynamic("invocationContext")(invocationContext.asInstanceOf[js.Any])
     if (onFailure != null) __obj.updateDynamic("onFailure")(js.Any.fromFunction1(onFailure))
     if (onSuccess != null) __obj.updateDynamic("onSuccess")(js.Any.fromFunction1(onSuccess))
-    if (qos != null) __obj.updateDynamic("qos")(qos)
+    if (qos != null) __obj.updateDynamic("qos")(qos.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscribeOptions]
   }

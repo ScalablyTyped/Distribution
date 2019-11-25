@@ -20,10 +20,10 @@ object hbox {
     widths: js.Array[String] = null
   ): hbox = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align)
-    if (height != null) __obj.updateDynamic("height")(height)
-    if (padding != null) __obj.updateDynamic("padding")(padding)
-    if (widths != null) __obj.updateDynamic("widths")(widths)
+    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (widths != null) __obj.updateDynamic("widths")(widths.asInstanceOf[js.Any])
     __obj.asInstanceOf[hbox]
   }
 }

@@ -37,7 +37,7 @@ object AttributeParamValue {
     propertyIsEnumerable: PropertyKey => Boolean,
     value: String
   ): AttributeParamValue = {
-    val __obj = js.Dynamic.literal(attributeName = attributeName, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), parameterName = parameterName, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), value = value)
+    val __obj = js.Dynamic.literal(attributeName = attributeName.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), parameterName = parameterName.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AttributeParamValue]
   }

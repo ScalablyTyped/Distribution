@@ -12,7 +12,7 @@ trait Deadline extends js.Object {
 object Deadline {
   @scala.inline
   def apply(didTimeout: Boolean, timeRemaining: () => Double): Deadline = {
-    val __obj = js.Dynamic.literal(didTimeout = didTimeout, timeRemaining = js.Any.fromFunction0(timeRemaining))
+    val __obj = js.Dynamic.literal(didTimeout = didTimeout.asInstanceOf[js.Any], timeRemaining = js.Any.fromFunction0(timeRemaining))
   
     __obj.asInstanceOf[Deadline]
   }

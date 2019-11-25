@@ -20,9 +20,9 @@ object WorkboxUpdatableEvent {
     `type`: String,
     isUpdate: js.UndefOr[Boolean] = js.undefined
   ): WorkboxUpdatableEvent = {
-    val __obj = js.Dynamic.literal(originalEvent = originalEvent, sw = sw, target = target)
-    __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(isUpdate)) __obj.updateDynamic("isUpdate")(isUpdate)
+    val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], sw = sw.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(isUpdate)) __obj.updateDynamic("isUpdate")(isUpdate.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkboxUpdatableEvent]
   }
 }

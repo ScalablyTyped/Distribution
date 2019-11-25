@@ -16,7 +16,7 @@ object Anon_Conflict {
   @scala.inline
   def apply(`object`: js.Any, `type`: success | merge | conflict): Anon_Conflict = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("object")(`object`)
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Conflict]
   }

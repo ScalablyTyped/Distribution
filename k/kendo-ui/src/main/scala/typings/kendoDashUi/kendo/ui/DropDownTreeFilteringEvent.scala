@@ -16,8 +16,8 @@ object DropDownTreeFilteringEvent {
     sender: DropDownTree,
     filter: js.Any = null
   ): DropDownTreeFilteringEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropDownTreeFilteringEvent]
   }
 }

@@ -31,9 +31,9 @@ object WebTileLayerFetchTileOptions {
     signal: AbortSignal = null,
     timestamp: js.UndefOr[Boolean] = js.undefined
   ): WebTileLayerFetchTileOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (signal != null) __obj.updateDynamic("signal")(signal)
-    if (!js.isUndefined(timestamp)) __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
+    if (!js.isUndefined(timestamp)) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebTileLayerFetchTileOptions]
   }
 }

@@ -36,10 +36,10 @@ object ChooserOptions {
   ): ChooserOptions = {
     val __obj = js.Dynamic.literal(success = js.Any.fromFunction1(success))
     if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction0(cancel))
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
-    if (!js.isUndefined(folderselect)) __obj.updateDynamic("folderselect")(folderselect)
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
+    if (!js.isUndefined(folderselect)) __obj.updateDynamic("folderselect")(folderselect.asInstanceOf[js.Any])
     if (linkType != null) __obj.updateDynamic("linkType")(linkType.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiselect)) __obj.updateDynamic("multiselect")(multiselect)
+    if (!js.isUndefined(multiselect)) __obj.updateDynamic("multiselect")(multiselect.asInstanceOf[js.Any])
     if (sizeLimit != null) __obj.updateDynamic("sizeLimit")(sizeLimit.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChooserOptions]
   }

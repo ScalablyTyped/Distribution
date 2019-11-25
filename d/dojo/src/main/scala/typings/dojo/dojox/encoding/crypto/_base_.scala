@@ -44,7 +44,7 @@ object _base_ {
     cipherModes: js.Object,
     outputTypes: js.Object
   ): _base_ = {
-    val __obj = js.Dynamic.literal(Blowfish = Blowfish, RSAKey = js.Any.fromFunction0(RSAKey), SimpleAES = SimpleAES, cipherModes = cipherModes, outputTypes = outputTypes)
+    val __obj = js.Dynamic.literal(Blowfish = Blowfish.asInstanceOf[js.Any], RSAKey = js.Any.fromFunction0(RSAKey), SimpleAES = SimpleAES.asInstanceOf[js.Any], cipherModes = cipherModes.asInstanceOf[js.Any], outputTypes = outputTypes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_base_]
   }

@@ -47,18 +47,18 @@ object Collection {
     updated: String = null
   ): Collection = {
     val __obj = js.Dynamic.literal()
-    if (collection_id != null) __obj.updateDynamic("collection_id")(collection_id)
-    if (configuration_id != null) __obj.updateDynamic("configuration_id")(configuration_id)
-    if (created != null) __obj.updateDynamic("created")(created)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (disk_usage != null) __obj.updateDynamic("disk_usage")(disk_usage)
-    if (document_counts != null) __obj.updateDynamic("document_counts")(document_counts)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (source_crawl != null) __obj.updateDynamic("source_crawl")(source_crawl)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (training_status != null) __obj.updateDynamic("training_status")(training_status)
-    if (updated != null) __obj.updateDynamic("updated")(updated)
+    if (collection_id != null) __obj.updateDynamic("collection_id")(collection_id.asInstanceOf[js.Any])
+    if (configuration_id != null) __obj.updateDynamic("configuration_id")(configuration_id.asInstanceOf[js.Any])
+    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (disk_usage != null) __obj.updateDynamic("disk_usage")(disk_usage.asInstanceOf[js.Any])
+    if (document_counts != null) __obj.updateDynamic("document_counts")(document_counts.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (source_crawl != null) __obj.updateDynamic("source_crawl")(source_crawl.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (training_status != null) __obj.updateDynamic("training_status")(training_status.asInstanceOf[js.Any])
+    if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
     __obj.asInstanceOf[Collection]
   }
 }

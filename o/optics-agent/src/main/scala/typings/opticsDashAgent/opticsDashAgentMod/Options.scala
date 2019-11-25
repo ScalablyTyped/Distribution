@@ -67,15 +67,15 @@ object Options {
     shutdownGracefully: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (apiKey != null) __obj.updateDynamic("apiKey")(apiKey)
-    if (endpointUrl != null) __obj.updateDynamic("endpointUrl")(endpointUrl)
+    if (apiKey != null) __obj.updateDynamic("apiKey")(apiKey.asInstanceOf[js.Any])
+    if (endpointUrl != null) __obj.updateDynamic("endpointUrl")(endpointUrl.asInstanceOf[js.Any])
     if (normalizeQuery != null) __obj.updateDynamic("normalizeQuery")(js.Any.fromFunction1(normalizeQuery))
-    if (!js.isUndefined(printReports)) __obj.updateDynamic("printReports")(printReports)
-    if (proxyUrl != null) __obj.updateDynamic("proxyUrl")(proxyUrl)
+    if (!js.isUndefined(printReports)) __obj.updateDynamic("printReports")(printReports.asInstanceOf[js.Any])
+    if (proxyUrl != null) __obj.updateDynamic("proxyUrl")(proxyUrl.asInstanceOf[js.Any])
     if (reportIntervalMs != null) __obj.updateDynamic("reportIntervalMs")(reportIntervalMs.asInstanceOf[js.Any])
-    if (!js.isUndefined(reportTraces)) __obj.updateDynamic("reportTraces")(reportTraces)
-    if (!js.isUndefined(reportVariables)) __obj.updateDynamic("reportVariables")(reportVariables)
-    if (!js.isUndefined(shutdownGracefully)) __obj.updateDynamic("shutdownGracefully")(shutdownGracefully)
+    if (!js.isUndefined(reportTraces)) __obj.updateDynamic("reportTraces")(reportTraces.asInstanceOf[js.Any])
+    if (!js.isUndefined(reportVariables)) __obj.updateDynamic("reportVariables")(reportVariables.asInstanceOf[js.Any])
+    if (!js.isUndefined(shutdownGracefully)) __obj.updateDynamic("shutdownGracefully")(shutdownGracefully.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

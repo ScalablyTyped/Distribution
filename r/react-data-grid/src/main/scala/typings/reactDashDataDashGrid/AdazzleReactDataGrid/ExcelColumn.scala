@@ -23,7 +23,7 @@ object ExcelColumn {
     resizeable: Boolean,
     width: Double
   ): ExcelColumn = {
-    val __obj = js.Dynamic.literal(editable = editable, filterable = filterable, key = key, name = name, resizeable = resizeable, width = width)
+    val __obj = js.Dynamic.literal(editable = editable.asInstanceOf[js.Any], filterable = filterable.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], resizeable = resizeable.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExcelColumn]
   }

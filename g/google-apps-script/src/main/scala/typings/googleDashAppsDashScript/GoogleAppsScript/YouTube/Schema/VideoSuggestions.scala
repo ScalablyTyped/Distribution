@@ -22,11 +22,11 @@ object VideoSuggestions {
     tagSuggestions: js.Array[VideoSuggestionsTagSuggestion] = null
   ): VideoSuggestions = {
     val __obj = js.Dynamic.literal()
-    if (editorSuggestions != null) __obj.updateDynamic("editorSuggestions")(editorSuggestions)
-    if (processingErrors != null) __obj.updateDynamic("processingErrors")(processingErrors)
-    if (processingHints != null) __obj.updateDynamic("processingHints")(processingHints)
-    if (processingWarnings != null) __obj.updateDynamic("processingWarnings")(processingWarnings)
-    if (tagSuggestions != null) __obj.updateDynamic("tagSuggestions")(tagSuggestions)
+    if (editorSuggestions != null) __obj.updateDynamic("editorSuggestions")(editorSuggestions.asInstanceOf[js.Any])
+    if (processingErrors != null) __obj.updateDynamic("processingErrors")(processingErrors.asInstanceOf[js.Any])
+    if (processingHints != null) __obj.updateDynamic("processingHints")(processingHints.asInstanceOf[js.Any])
+    if (processingWarnings != null) __obj.updateDynamic("processingWarnings")(processingWarnings.asInstanceOf[js.Any])
+    if (tagSuggestions != null) __obj.updateDynamic("tagSuggestions")(tagSuggestions.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoSuggestions]
   }
 }

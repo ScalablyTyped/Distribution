@@ -30,12 +30,12 @@ object Change {
     status: String = null
   ): Change = {
     val __obj = js.Dynamic.literal()
-    if (additions != null) __obj.updateDynamic("additions")(additions)
-    if (deletions != null) __obj.updateDynamic("deletions")(deletions)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (additions != null) __obj.updateDynamic("additions")(additions.asInstanceOf[js.Any])
+    if (deletions != null) __obj.updateDynamic("deletions")(deletions.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[Change]
   }
 }

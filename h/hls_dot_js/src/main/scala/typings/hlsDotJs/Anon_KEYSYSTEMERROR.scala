@@ -41,7 +41,7 @@ object Anon_KEYSYSTEMERROR {
     NETWORK_ERROR: K_NETWORK_ERROR,
     OTHER_ERROR: K_OTHER_ERROR
   ): Anon_KEYSYSTEMERROR = {
-    val __obj = js.Dynamic.literal(KEY_SYSTEM_ERROR = KEY_SYSTEM_ERROR, MEDIA_ERROR = MEDIA_ERROR, MUX_ERROR = MUX_ERROR, NETWORK_ERROR = NETWORK_ERROR, OTHER_ERROR = OTHER_ERROR)
+    val __obj = js.Dynamic.literal(KEY_SYSTEM_ERROR = KEY_SYSTEM_ERROR.asInstanceOf[js.Any], MEDIA_ERROR = MEDIA_ERROR.asInstanceOf[js.Any], MUX_ERROR = MUX_ERROR.asInstanceOf[js.Any], NETWORK_ERROR = NETWORK_ERROR.asInstanceOf[js.Any], OTHER_ERROR = OTHER_ERROR.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_KEYSYSTEMERROR]
   }

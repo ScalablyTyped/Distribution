@@ -24,10 +24,10 @@ object PerDeviceStatusInBatch {
     status: String = null
   ): PerDeviceStatusInBatch = {
     val __obj = js.Dynamic.literal()
-    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId)
-    if (errorIdentifier != null) __obj.updateDynamic("errorIdentifier")(errorIdentifier)
-    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage)
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId.asInstanceOf[js.Any])
+    if (errorIdentifier != null) __obj.updateDynamic("errorIdentifier")(errorIdentifier.asInstanceOf[js.Any])
+    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[PerDeviceStatusInBatch]
   }
 }

@@ -12,7 +12,7 @@ trait Anon_Cooked extends js.Object {
 object Anon_Cooked {
   @scala.inline
   def apply(cooked: String, raw: String): Anon_Cooked = {
-    val __obj = js.Dynamic.literal(cooked = cooked, raw = raw)
+    val __obj = js.Dynamic.literal(cooked = cooked.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Cooked]
   }

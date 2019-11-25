@@ -19,8 +19,8 @@ object CustomError {
   @scala.inline
   def apply(rules: js.Array[CustomErrorRule] = null, types: js.Array[String] = null): CustomError = {
     val __obj = js.Dynamic.literal()
-    if (rules != null) __obj.updateDynamic("rules")(rules)
-    if (types != null) __obj.updateDynamic("types")(types)
+    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
+    if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomError]
   }
 }

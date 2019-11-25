@@ -29,11 +29,11 @@ object _UnmarshalledWriteTreatmentResource {
     TreatmentName: String = null
   ): _UnmarshalledWriteTreatmentResource = {
     val __obj = js.Dynamic.literal()
-    if (MessageConfiguration != null) __obj.updateDynamic("MessageConfiguration")(MessageConfiguration)
-    if (Schedule != null) __obj.updateDynamic("Schedule")(Schedule)
+    if (MessageConfiguration != null) __obj.updateDynamic("MessageConfiguration")(MessageConfiguration.asInstanceOf[js.Any])
+    if (Schedule != null) __obj.updateDynamic("Schedule")(Schedule.asInstanceOf[js.Any])
     if (SizePercent != null) __obj.updateDynamic("SizePercent")(SizePercent.asInstanceOf[js.Any])
-    if (TreatmentDescription != null) __obj.updateDynamic("TreatmentDescription")(TreatmentDescription)
-    if (TreatmentName != null) __obj.updateDynamic("TreatmentName")(TreatmentName)
+    if (TreatmentDescription != null) __obj.updateDynamic("TreatmentDescription")(TreatmentDescription.asInstanceOf[js.Any])
+    if (TreatmentName != null) __obj.updateDynamic("TreatmentName")(TreatmentName.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledWriteTreatmentResource]
   }
 }

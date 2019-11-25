@@ -23,7 +23,7 @@ object ESObserver {
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
     if (next != null) __obj.updateDynamic("next")(js.Any.fromFunction1(next))
-    if (start != null) __obj.updateDynamic("start")(start)
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[ESObserver[T, S]]
   }
 }

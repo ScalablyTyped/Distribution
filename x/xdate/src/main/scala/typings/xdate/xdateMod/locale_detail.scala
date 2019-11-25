@@ -24,12 +24,12 @@ object locale_detail {
     pmDesignator: String = null
   ): locale_detail = {
     val __obj = js.Dynamic.literal()
-    if (amDesignator != null) __obj.updateDynamic("amDesignator")(amDesignator)
-    if (dayNames != null) __obj.updateDynamic("dayNames")(dayNames)
-    if (dayNamesShort != null) __obj.updateDynamic("dayNamesShort")(dayNamesShort)
-    if (monthNames != null) __obj.updateDynamic("monthNames")(monthNames)
-    if (monthNamesShort != null) __obj.updateDynamic("monthNamesShort")(monthNamesShort)
-    if (pmDesignator != null) __obj.updateDynamic("pmDesignator")(pmDesignator)
+    if (amDesignator != null) __obj.updateDynamic("amDesignator")(amDesignator.asInstanceOf[js.Any])
+    if (dayNames != null) __obj.updateDynamic("dayNames")(dayNames.asInstanceOf[js.Any])
+    if (dayNamesShort != null) __obj.updateDynamic("dayNamesShort")(dayNamesShort.asInstanceOf[js.Any])
+    if (monthNames != null) __obj.updateDynamic("monthNames")(monthNames.asInstanceOf[js.Any])
+    if (monthNamesShort != null) __obj.updateDynamic("monthNamesShort")(monthNamesShort.asInstanceOf[js.Any])
+    if (pmDesignator != null) __obj.updateDynamic("pmDesignator")(pmDesignator.asInstanceOf[js.Any])
     __obj.asInstanceOf[locale_detail]
   }
 }

@@ -25,13 +25,13 @@ object DelegationOptions {
     scope: String = null,
     target: String = null
   ): DelegationOptions = {
-    val __obj = js.Dynamic.literal(grant_type = grant_type)
-    if (api_type != null) __obj.updateDynamic("api_type")(api_type)
-    if (client_id != null) __obj.updateDynamic("client_id")(client_id)
-    if (id_token != null) __obj.updateDynamic("id_token")(id_token)
-    if (refresh_token != null) __obj.updateDynamic("refresh_token")(refresh_token)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
-    if (target != null) __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(grant_type = grant_type.asInstanceOf[js.Any])
+    if (api_type != null) __obj.updateDynamic("api_type")(api_type.asInstanceOf[js.Any])
+    if (client_id != null) __obj.updateDynamic("client_id")(client_id.asInstanceOf[js.Any])
+    if (id_token != null) __obj.updateDynamic("id_token")(id_token.asInstanceOf[js.Any])
+    if (refresh_token != null) __obj.updateDynamic("refresh_token")(refresh_token.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[DelegationOptions]
   }
 }

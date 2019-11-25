@@ -13,7 +13,7 @@ trait Anon_FromToOSSubscriptionState extends js.Object {
 object Anon_FromToOSSubscriptionState {
   @scala.inline
   def apply(from: OSSubscriptionState, to: OSSubscriptionState): Anon_FromToOSSubscriptionState = {
-    val __obj = js.Dynamic.literal(from = from, to = to)
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FromToOSSubscriptionState]
   }

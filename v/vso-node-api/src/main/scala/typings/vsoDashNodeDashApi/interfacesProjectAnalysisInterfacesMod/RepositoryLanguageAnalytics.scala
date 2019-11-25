@@ -22,7 +22,7 @@ object RepositoryLanguageAnalytics {
     resultPhase: ResultPhase,
     updatedTime: Date
   ): RepositoryLanguageAnalytics = {
-    val __obj = js.Dynamic.literal(id = id, languageBreakdown = languageBreakdown, name = name, resultPhase = resultPhase, updatedTime = updatedTime)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], languageBreakdown = languageBreakdown.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], resultPhase = resultPhase.asInstanceOf[js.Any], updatedTime = updatedTime.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RepositoryLanguageAnalytics]
   }

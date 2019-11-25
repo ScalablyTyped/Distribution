@@ -13,7 +13,7 @@ trait Anon_CookiePairHeaderValue extends js.Object {
 object Anon_CookiePairHeaderValue {
   @scala.inline
   def apply(cookiePairHeaderValue: HttpCookiePairHeaderValue, returnValue: Boolean): Anon_CookiePairHeaderValue = {
-    val __obj = js.Dynamic.literal(cookiePairHeaderValue = cookiePairHeaderValue, returnValue = returnValue)
+    val __obj = js.Dynamic.literal(cookiePairHeaderValue = cookiePairHeaderValue.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CookiePairHeaderValue]
   }

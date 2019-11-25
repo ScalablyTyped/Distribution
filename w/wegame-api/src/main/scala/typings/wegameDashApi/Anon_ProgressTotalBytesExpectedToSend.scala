@@ -13,7 +13,7 @@ trait Anon_ProgressTotalBytesExpectedToSend extends js.Object {
 object Anon_ProgressTotalBytesExpectedToSend {
   @scala.inline
   def apply(progress: Double, totalBytesExpectedToSend: Double, totalBytesSent: Double): Anon_ProgressTotalBytesExpectedToSend = {
-    val __obj = js.Dynamic.literal(progress = progress, totalBytesExpectedToSend = totalBytesExpectedToSend, totalBytesSent = totalBytesSent)
+    val __obj = js.Dynamic.literal(progress = progress.asInstanceOf[js.Any], totalBytesExpectedToSend = totalBytesExpectedToSend.asInstanceOf[js.Any], totalBytesSent = totalBytesSent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ProgressTotalBytesExpectedToSend]
   }

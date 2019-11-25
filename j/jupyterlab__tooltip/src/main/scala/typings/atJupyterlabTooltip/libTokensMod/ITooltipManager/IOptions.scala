@@ -33,7 +33,7 @@ trait IOptions extends js.Object {
 object IOptions {
   @scala.inline
   def apply(anchor: Widget, editor: IEditor, kernel: IKernelConnection, rendermime: IRenderMimeRegistry): IOptions = {
-    val __obj = js.Dynamic.literal(anchor = anchor, editor = editor, kernel = kernel, rendermime = rendermime)
+    val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], editor = editor.asInstanceOf[js.Any], kernel = kernel.asInstanceOf[js.Any], rendermime = rendermime.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IOptions]
   }

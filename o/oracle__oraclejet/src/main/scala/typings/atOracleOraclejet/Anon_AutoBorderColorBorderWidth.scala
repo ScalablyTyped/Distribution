@@ -39,7 +39,7 @@ object Anon_AutoBorderColorBorderWidth {
     selectedOuterColor: String,
     showDisclosure: on | off
   ): Anon_AutoBorderColorBorderWidth = {
-    val __obj = js.Dynamic.literal(borderColor = borderColor, borderWidth = borderWidth, hoverColor = hoverColor, labelDisplay = labelDisplay.asInstanceOf[js.Any], labelHalign = labelHalign.asInstanceOf[js.Any], labelMinLength = labelMinLength, labelStyle = labelStyle, selectedInnerColor = selectedInnerColor, selectedOuterColor = selectedOuterColor, showDisclosure = showDisclosure.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(borderColor = borderColor.asInstanceOf[js.Any], borderWidth = borderWidth.asInstanceOf[js.Any], hoverColor = hoverColor.asInstanceOf[js.Any], labelDisplay = labelDisplay.asInstanceOf[js.Any], labelHalign = labelHalign.asInstanceOf[js.Any], labelMinLength = labelMinLength.asInstanceOf[js.Any], labelStyle = labelStyle.asInstanceOf[js.Any], selectedInnerColor = selectedInnerColor.asInstanceOf[js.Any], selectedOuterColor = selectedOuterColor.asInstanceOf[js.Any], showDisclosure = showDisclosure.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AutoBorderColorBorderWidth]
   }

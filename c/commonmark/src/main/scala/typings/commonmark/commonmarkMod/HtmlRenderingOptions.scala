@@ -31,11 +31,11 @@ object HtmlRenderingOptions {
     time: js.UndefOr[Boolean] = js.undefined
   ): HtmlRenderingOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(safe)) __obj.updateDynamic("safe")(safe)
-    if (!js.isUndefined(smart)) __obj.updateDynamic("smart")(smart)
-    if (softbreak != null) __obj.updateDynamic("softbreak")(softbreak)
-    if (!js.isUndefined(sourcepos)) __obj.updateDynamic("sourcepos")(sourcepos)
-    if (!js.isUndefined(time)) __obj.updateDynamic("time")(time)
+    if (!js.isUndefined(safe)) __obj.updateDynamic("safe")(safe.asInstanceOf[js.Any])
+    if (!js.isUndefined(smart)) __obj.updateDynamic("smart")(smart.asInstanceOf[js.Any])
+    if (softbreak != null) __obj.updateDynamic("softbreak")(softbreak.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourcepos)) __obj.updateDynamic("sourcepos")(sourcepos.asInstanceOf[js.Any])
+    if (!js.isUndefined(time)) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
     __obj.asInstanceOf[HtmlRenderingOptions]
   }
 }

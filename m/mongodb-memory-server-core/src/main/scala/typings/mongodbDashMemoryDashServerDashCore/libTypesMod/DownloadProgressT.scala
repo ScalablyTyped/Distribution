@@ -14,7 +14,7 @@ trait DownloadProgressT extends js.Object {
 object DownloadProgressT {
   @scala.inline
   def apply(current: Double, lastPrintedAt: Double, length: Double, totalMb: Double): DownloadProgressT = {
-    val __obj = js.Dynamic.literal(current = current, lastPrintedAt = lastPrintedAt, length = length, totalMb = totalMb)
+    val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], lastPrintedAt = lastPrintedAt.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], totalMb = totalMb.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DownloadProgressT]
   }

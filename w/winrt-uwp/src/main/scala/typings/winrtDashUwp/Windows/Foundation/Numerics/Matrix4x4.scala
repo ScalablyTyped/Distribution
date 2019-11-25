@@ -60,7 +60,7 @@ object Matrix4x4 {
     m43: Double,
     m44: Double
   ): Matrix4x4 = {
-    val __obj = js.Dynamic.literal(m11 = m11, m12 = m12, m13 = m13, m14 = m14, m21 = m21, m22 = m22, m23 = m23, m24 = m24, m31 = m31, m32 = m32, m33 = m33, m34 = m34, m41 = m41, m42 = m42, m43 = m43, m44 = m44)
+    val __obj = js.Dynamic.literal(m11 = m11.asInstanceOf[js.Any], m12 = m12.asInstanceOf[js.Any], m13 = m13.asInstanceOf[js.Any], m14 = m14.asInstanceOf[js.Any], m21 = m21.asInstanceOf[js.Any], m22 = m22.asInstanceOf[js.Any], m23 = m23.asInstanceOf[js.Any], m24 = m24.asInstanceOf[js.Any], m31 = m31.asInstanceOf[js.Any], m32 = m32.asInstanceOf[js.Any], m33 = m33.asInstanceOf[js.Any], m34 = m34.asInstanceOf[js.Any], m41 = m41.asInstanceOf[js.Any], m42 = m42.asInstanceOf[js.Any], m43 = m43.asInstanceOf[js.Any], m44 = m44.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Matrix4x4]
   }

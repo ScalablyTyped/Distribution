@@ -23,7 +23,7 @@ object Anon_ContentEncryptionAlgorithm {
     iterationCount: Double,
     password: String
   ): Anon_ContentEncryptionAlgorithm = {
-    val __obj = js.Dynamic.literal(contentEncryptionAlgorithm = contentEncryptionAlgorithm, contentToEncrypt = contentToEncrypt, hmacHashAlgorithm = hmacHashAlgorithm, iterationCount = iterationCount, password = password)
+    val __obj = js.Dynamic.literal(contentEncryptionAlgorithm = contentEncryptionAlgorithm.asInstanceOf[js.Any], contentToEncrypt = contentToEncrypt.asInstanceOf[js.Any], hmacHashAlgorithm = hmacHashAlgorithm.asInstanceOf[js.Any], iterationCount = iterationCount.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ContentEncryptionAlgorithm]
   }

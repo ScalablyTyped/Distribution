@@ -38,14 +38,14 @@ object PortableOptions {
     warningsAsErrors: js.UndefOr[Boolean] = js.undefined
   ): PortableOptions = {
     val __obj = js.Dynamic.literal()
-    if (artifactName != null) __obj.updateDynamic("artifactName")(artifactName)
-    if (guid != null) __obj.updateDynamic("guid")(guid)
+    if (artifactName != null) __obj.updateDynamic("artifactName")(artifactName.asInstanceOf[js.Any])
+    if (guid != null) __obj.updateDynamic("guid")(guid.asInstanceOf[js.Any])
     if (publish != null) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
     if (requestExecutionLevel != null) __obj.updateDynamic("requestExecutionLevel")(requestExecutionLevel.asInstanceOf[js.Any])
-    if (!js.isUndefined(unicode)) __obj.updateDynamic("unicode")(unicode)
-    if (unpackDirName != null) __obj.updateDynamic("unpackDirName")(unpackDirName)
-    if (!js.isUndefined(useZip)) __obj.updateDynamic("useZip")(useZip)
-    if (!js.isUndefined(warningsAsErrors)) __obj.updateDynamic("warningsAsErrors")(warningsAsErrors)
+    if (!js.isUndefined(unicode)) __obj.updateDynamic("unicode")(unicode.asInstanceOf[js.Any])
+    if (unpackDirName != null) __obj.updateDynamic("unpackDirName")(unpackDirName.asInstanceOf[js.Any])
+    if (!js.isUndefined(useZip)) __obj.updateDynamic("useZip")(useZip.asInstanceOf[js.Any])
+    if (!js.isUndefined(warningsAsErrors)) __obj.updateDynamic("warningsAsErrors")(warningsAsErrors.asInstanceOf[js.Any])
     __obj.asInstanceOf[PortableOptions]
   }
 }

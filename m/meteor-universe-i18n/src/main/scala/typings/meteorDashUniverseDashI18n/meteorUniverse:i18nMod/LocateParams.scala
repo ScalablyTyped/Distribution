@@ -20,10 +20,10 @@ object LocateParams {
     silent: js.UndefOr[Boolean] = js.undefined
   ): LocateParams = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
-    if (!js.isUndefined(fresh)) __obj.updateDynamic("fresh")(fresh)
-    if (!js.isUndefined(noDownload)) __obj.updateDynamic("noDownload")(noDownload)
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
+    if (!js.isUndefined(fresh)) __obj.updateDynamic("fresh")(fresh.asInstanceOf[js.Any])
+    if (!js.isUndefined(noDownload)) __obj.updateDynamic("noDownload")(noDownload.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocateParams]
   }
 }

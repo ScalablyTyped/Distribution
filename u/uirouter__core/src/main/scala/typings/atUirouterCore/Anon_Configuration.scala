@@ -17,7 +17,7 @@ trait Anon_Configuration extends js.Object {
 object Anon_Configuration {
   @scala.inline
   def apply(configuration: LocationConfig, dispose: UIRouter => Unit, name: String, service: LocationServices): Anon_Configuration = {
-    val __obj = js.Dynamic.literal(configuration = configuration, dispose = js.Any.fromFunction1(dispose), name = name, service = service)
+    val __obj = js.Dynamic.literal(configuration = configuration.asInstanceOf[js.Any], dispose = js.Any.fromFunction1(dispose), name = name.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Configuration]
   }

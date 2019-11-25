@@ -15,7 +15,7 @@ trait HereNowResponse extends js.Object {
 object HereNowResponse {
   @scala.inline
   def apply(channels: StringDictionary[Anon_Name], totalChannels: Double, totalOccupancy: Double): HereNowResponse = {
-    val __obj = js.Dynamic.literal(channels = channels, totalChannels = totalChannels, totalOccupancy = totalOccupancy)
+    val __obj = js.Dynamic.literal(channels = channels.asInstanceOf[js.Any], totalChannels = totalChannels.asInstanceOf[js.Any], totalOccupancy = totalOccupancy.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HereNowResponse]
   }

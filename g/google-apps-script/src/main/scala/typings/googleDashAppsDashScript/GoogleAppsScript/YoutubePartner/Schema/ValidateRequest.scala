@@ -15,10 +15,10 @@ object ValidateRequest {
   @scala.inline
   def apply(content: String = null, kind: String = null, locale: String = null, uploaderName: String = null): ValidateRequest = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (uploaderName != null) __obj.updateDynamic("uploaderName")(uploaderName)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
+    if (uploaderName != null) __obj.updateDynamic("uploaderName")(uploaderName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidateRequest]
   }
 }

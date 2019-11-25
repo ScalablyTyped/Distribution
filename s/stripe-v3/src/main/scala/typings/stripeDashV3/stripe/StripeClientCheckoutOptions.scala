@@ -25,11 +25,11 @@ object StripeClientCheckoutOptions {
     customerEmail: String = null,
     locale: String = null
   ): StripeClientCheckoutOptions = {
-    val __obj = js.Dynamic.literal(cancelUrl = cancelUrl, items = items, successUrl = successUrl)
-    if (billingAddressCollection != null) __obj.updateDynamic("billingAddressCollection")(billingAddressCollection)
-    if (clientReferenceId != null) __obj.updateDynamic("clientReferenceId")(clientReferenceId)
-    if (customerEmail != null) __obj.updateDynamic("customerEmail")(customerEmail)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
+    val __obj = js.Dynamic.literal(cancelUrl = cancelUrl.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], successUrl = successUrl.asInstanceOf[js.Any])
+    if (billingAddressCollection != null) __obj.updateDynamic("billingAddressCollection")(billingAddressCollection.asInstanceOf[js.Any])
+    if (clientReferenceId != null) __obj.updateDynamic("clientReferenceId")(clientReferenceId.asInstanceOf[js.Any])
+    if (customerEmail != null) __obj.updateDynamic("customerEmail")(customerEmail.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     __obj.asInstanceOf[StripeClientCheckoutOptions]
   }
 }

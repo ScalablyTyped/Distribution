@@ -17,9 +17,9 @@ object LabelDescriptor {
   @scala.inline
   def apply(description: String = null, key: String = null, valueType: String = null): LabelDescriptor = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (valueType != null) __obj.updateDynamic("valueType")(valueType)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (valueType != null) __obj.updateDynamic("valueType")(valueType.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelDescriptor]
   }
 }

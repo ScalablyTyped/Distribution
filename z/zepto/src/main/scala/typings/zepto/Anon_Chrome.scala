@@ -21,7 +21,7 @@ trait Anon_Chrome extends js.Object {
 object Anon_Chrome {
   @scala.inline
   def apply(chrome: Boolean, firefox: Boolean, playbook: Boolean, silk: Boolean, version: String): Anon_Chrome = {
-    val __obj = js.Dynamic.literal(chrome = chrome, firefox = firefox, playbook = playbook, silk = silk, version = version)
+    val __obj = js.Dynamic.literal(chrome = chrome.asInstanceOf[js.Any], firefox = firefox.asInstanceOf[js.Any], playbook = playbook.asInstanceOf[js.Any], silk = silk.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Chrome]
   }

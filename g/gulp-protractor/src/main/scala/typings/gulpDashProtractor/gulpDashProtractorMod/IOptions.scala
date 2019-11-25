@@ -18,9 +18,9 @@ object IOptions {
     debug: js.UndefOr[Boolean] = js.undefined
   ): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (args != null) __obj.updateDynamic("args")(args)
-    if (configFile != null) __obj.updateDynamic("configFile")(configFile)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (configFile != null) __obj.updateDynamic("configFile")(configFile.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

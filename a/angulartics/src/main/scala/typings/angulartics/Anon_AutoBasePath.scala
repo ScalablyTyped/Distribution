@@ -31,7 +31,7 @@ object Anon_AutoBasePath {
     trackRoutes: Boolean,
     trackStates: Boolean
   ): Anon_AutoBasePath = {
-    val __obj = js.Dynamic.literal(autoBasePath = autoBasePath, autoTrackingFirstPage = autoTrackingFirstPage, autoTrackingVirtualPages = autoTrackingVirtualPages, basePath = basePath, excludedRoutes = excludedRoutes, queryKeysBlacklisted = queryKeysBlacklisted, queryKeysWhitelisted = queryKeysWhitelisted, trackRelativePath = trackRelativePath, trackRoutes = trackRoutes, trackStates = trackStates)
+    val __obj = js.Dynamic.literal(autoBasePath = autoBasePath.asInstanceOf[js.Any], autoTrackingFirstPage = autoTrackingFirstPage.asInstanceOf[js.Any], autoTrackingVirtualPages = autoTrackingVirtualPages.asInstanceOf[js.Any], basePath = basePath.asInstanceOf[js.Any], excludedRoutes = excludedRoutes.asInstanceOf[js.Any], queryKeysBlacklisted = queryKeysBlacklisted.asInstanceOf[js.Any], queryKeysWhitelisted = queryKeysWhitelisted.asInstanceOf[js.Any], trackRelativePath = trackRelativePath.asInstanceOf[js.Any], trackRoutes = trackRoutes.asInstanceOf[js.Any], trackStates = trackStates.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AutoBasePath]
   }

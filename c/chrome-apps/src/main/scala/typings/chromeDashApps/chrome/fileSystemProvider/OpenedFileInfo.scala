@@ -29,7 +29,7 @@ object OpenedFileInfo {
     mode: ToStringLiteral[Anon_READ, String, Exclude[String, READ | WRITE]],
     openRequestId: integer
   ): OpenedFileInfo = {
-    val __obj = js.Dynamic.literal(filePath = filePath, mode = mode.asInstanceOf[js.Any], openRequestId = openRequestId)
+    val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], openRequestId = openRequestId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OpenedFileInfo]
   }

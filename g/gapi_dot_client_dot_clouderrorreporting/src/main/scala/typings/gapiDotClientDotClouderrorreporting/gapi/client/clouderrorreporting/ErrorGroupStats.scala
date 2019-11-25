@@ -83,15 +83,15 @@ object ErrorGroupStats {
     timedCounts: js.Array[TimedCount] = null
   ): ErrorGroupStats = {
     val __obj = js.Dynamic.literal()
-    if (affectedServices != null) __obj.updateDynamic("affectedServices")(affectedServices)
-    if (affectedUsersCount != null) __obj.updateDynamic("affectedUsersCount")(affectedUsersCount)
-    if (count != null) __obj.updateDynamic("count")(count)
-    if (firstSeenTime != null) __obj.updateDynamic("firstSeenTime")(firstSeenTime)
-    if (group != null) __obj.updateDynamic("group")(group)
-    if (lastSeenTime != null) __obj.updateDynamic("lastSeenTime")(lastSeenTime)
+    if (affectedServices != null) __obj.updateDynamic("affectedServices")(affectedServices.asInstanceOf[js.Any])
+    if (affectedUsersCount != null) __obj.updateDynamic("affectedUsersCount")(affectedUsersCount.asInstanceOf[js.Any])
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (firstSeenTime != null) __obj.updateDynamic("firstSeenTime")(firstSeenTime.asInstanceOf[js.Any])
+    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
+    if (lastSeenTime != null) __obj.updateDynamic("lastSeenTime")(lastSeenTime.asInstanceOf[js.Any])
     if (numAffectedServices != null) __obj.updateDynamic("numAffectedServices")(numAffectedServices.asInstanceOf[js.Any])
-    if (representative != null) __obj.updateDynamic("representative")(representative)
-    if (timedCounts != null) __obj.updateDynamic("timedCounts")(timedCounts)
+    if (representative != null) __obj.updateDynamic("representative")(representative.asInstanceOf[js.Any])
+    if (timedCounts != null) __obj.updateDynamic("timedCounts")(timedCounts.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorGroupStats]
   }
 }

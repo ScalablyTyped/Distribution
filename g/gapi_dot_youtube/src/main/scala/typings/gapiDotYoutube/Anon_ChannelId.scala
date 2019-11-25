@@ -56,15 +56,15 @@ object Anon_ChannelId {
     publishedBefore: String = null,
     regionCode: String = null
   ): Anon_ChannelId = {
-    val __obj = js.Dynamic.literal(part = part)
-    if (channelId != null) __obj.updateDynamic("channelId")(channelId)
-    if (!js.isUndefined(home)) __obj.updateDynamic("home")(home)
+    val __obj = js.Dynamic.literal(part = part.asInstanceOf[js.Any])
+    if (channelId != null) __obj.updateDynamic("channelId")(channelId.asInstanceOf[js.Any])
+    if (!js.isUndefined(home)) __obj.updateDynamic("home")(home.asInstanceOf[js.Any])
     if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
-    if (!js.isUndefined(mine)) __obj.updateDynamic("mine")(mine)
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
-    if (publishedAfter != null) __obj.updateDynamic("publishedAfter")(publishedAfter)
-    if (publishedBefore != null) __obj.updateDynamic("publishedBefore")(publishedBefore)
-    if (regionCode != null) __obj.updateDynamic("regionCode")(regionCode)
+    if (!js.isUndefined(mine)) __obj.updateDynamic("mine")(mine.asInstanceOf[js.Any])
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
+    if (publishedAfter != null) __obj.updateDynamic("publishedAfter")(publishedAfter.asInstanceOf[js.Any])
+    if (publishedBefore != null) __obj.updateDynamic("publishedBefore")(publishedBefore.asInstanceOf[js.Any])
+    if (regionCode != null) __obj.updateDynamic("regionCode")(regionCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ChannelId]
   }
 }

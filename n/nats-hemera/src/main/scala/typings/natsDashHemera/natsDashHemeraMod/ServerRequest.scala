@@ -13,7 +13,7 @@ trait ServerRequest extends js.Object {
 object ServerRequest {
   @scala.inline
   def apply(error: Error, payload: HemeraMessagePayload): ServerRequest = {
-    val __obj = js.Dynamic.literal(error = error, payload = payload)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ServerRequest]
   }

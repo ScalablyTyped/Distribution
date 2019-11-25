@@ -26,13 +26,13 @@ object ReferenceConflict {
     status: String = null
   ): ReferenceConflict = {
     val __obj = js.Dynamic.literal()
-    if (conflictingReferenceId != null) __obj.updateDynamic("conflictingReferenceId")(conflictingReferenceId)
-    if (expiryTime != null) __obj.updateDynamic("expiryTime")(expiryTime)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (matches != null) __obj.updateDynamic("matches")(matches)
-    if (originalReferenceId != null) __obj.updateDynamic("originalReferenceId")(originalReferenceId)
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (conflictingReferenceId != null) __obj.updateDynamic("conflictingReferenceId")(conflictingReferenceId.asInstanceOf[js.Any])
+    if (expiryTime != null) __obj.updateDynamic("expiryTime")(expiryTime.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (matches != null) __obj.updateDynamic("matches")(matches.asInstanceOf[js.Any])
+    if (originalReferenceId != null) __obj.updateDynamic("originalReferenceId")(originalReferenceId.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReferenceConflict]
   }
 }

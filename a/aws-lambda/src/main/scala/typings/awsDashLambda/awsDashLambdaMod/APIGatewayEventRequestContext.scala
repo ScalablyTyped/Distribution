@@ -54,18 +54,18 @@ object APIGatewayEventRequestContext {
     requestTime: String = null,
     routeKey: String = null
   ): APIGatewayEventRequestContext = {
-    val __obj = js.Dynamic.literal(accountId = accountId, apiId = apiId, httpMethod = httpMethod, identity = identity, path = path, requestId = requestId, requestTimeEpoch = requestTimeEpoch, resourceId = resourceId, resourcePath = resourcePath, stage = stage)
-    if (authorizer != null) __obj.updateDynamic("authorizer")(authorizer)
+    val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], apiId = apiId.asInstanceOf[js.Any], httpMethod = httpMethod.asInstanceOf[js.Any], identity = identity.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any], requestTimeEpoch = requestTimeEpoch.asInstanceOf[js.Any], resourceId = resourceId.asInstanceOf[js.Any], resourcePath = resourcePath.asInstanceOf[js.Any], stage = stage.asInstanceOf[js.Any])
+    if (authorizer != null) __obj.updateDynamic("authorizer")(authorizer.asInstanceOf[js.Any])
     if (connectedAt != null) __obj.updateDynamic("connectedAt")(connectedAt.asInstanceOf[js.Any])
-    if (connectionId != null) __obj.updateDynamic("connectionId")(connectionId)
-    if (domainName != null) __obj.updateDynamic("domainName")(domainName)
-    if (domainPrefix != null) __obj.updateDynamic("domainPrefix")(domainPrefix)
-    if (eventType != null) __obj.updateDynamic("eventType")(eventType)
-    if (extendedRequestId != null) __obj.updateDynamic("extendedRequestId")(extendedRequestId)
-    if (messageDirection != null) __obj.updateDynamic("messageDirection")(messageDirection)
-    if (messageId != null) __obj.updateDynamic("messageId")(messageId)
-    if (requestTime != null) __obj.updateDynamic("requestTime")(requestTime)
-    if (routeKey != null) __obj.updateDynamic("routeKey")(routeKey)
+    if (connectionId != null) __obj.updateDynamic("connectionId")(connectionId.asInstanceOf[js.Any])
+    if (domainName != null) __obj.updateDynamic("domainName")(domainName.asInstanceOf[js.Any])
+    if (domainPrefix != null) __obj.updateDynamic("domainPrefix")(domainPrefix.asInstanceOf[js.Any])
+    if (eventType != null) __obj.updateDynamic("eventType")(eventType.asInstanceOf[js.Any])
+    if (extendedRequestId != null) __obj.updateDynamic("extendedRequestId")(extendedRequestId.asInstanceOf[js.Any])
+    if (messageDirection != null) __obj.updateDynamic("messageDirection")(messageDirection.asInstanceOf[js.Any])
+    if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
+    if (requestTime != null) __obj.updateDynamic("requestTime")(requestTime.asInstanceOf[js.Any])
+    if (routeKey != null) __obj.updateDynamic("routeKey")(routeKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[APIGatewayEventRequestContext]
   }
 }

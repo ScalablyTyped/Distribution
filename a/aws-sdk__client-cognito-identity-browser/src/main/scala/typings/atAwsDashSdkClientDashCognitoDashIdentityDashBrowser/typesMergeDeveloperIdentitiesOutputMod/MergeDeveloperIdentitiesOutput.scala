@@ -21,8 +21,8 @@ trait MergeDeveloperIdentitiesOutput extends OutputTypesUnion {
 object MergeDeveloperIdentitiesOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, IdentityId: String = null): MergeDeveloperIdentitiesOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (IdentityId != null) __obj.updateDynamic("IdentityId")(IdentityId)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (IdentityId != null) __obj.updateDynamic("IdentityId")(IdentityId.asInstanceOf[js.Any])
     __obj.asInstanceOf[MergeDeveloperIdentitiesOutput]
   }
 }

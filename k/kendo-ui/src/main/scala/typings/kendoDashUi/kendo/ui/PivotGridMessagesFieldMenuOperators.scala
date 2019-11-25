@@ -25,12 +25,12 @@ object PivotGridMessagesFieldMenuOperators {
     startswith: String = null
   ): PivotGridMessagesFieldMenuOperators = {
     val __obj = js.Dynamic.literal()
-    if (contains != null) __obj.updateDynamic("contains")(contains)
-    if (doesnotcontain != null) __obj.updateDynamic("doesnotcontain")(doesnotcontain)
-    if (endswith != null) __obj.updateDynamic("endswith")(endswith)
-    if (eq != null) __obj.updateDynamic("eq")(eq)
-    if (neq != null) __obj.updateDynamic("neq")(neq)
-    if (startswith != null) __obj.updateDynamic("startswith")(startswith)
+    if (contains != null) __obj.updateDynamic("contains")(contains.asInstanceOf[js.Any])
+    if (doesnotcontain != null) __obj.updateDynamic("doesnotcontain")(doesnotcontain.asInstanceOf[js.Any])
+    if (endswith != null) __obj.updateDynamic("endswith")(endswith.asInstanceOf[js.Any])
+    if (eq != null) __obj.updateDynamic("eq")(eq.asInstanceOf[js.Any])
+    if (neq != null) __obj.updateDynamic("neq")(neq.asInstanceOf[js.Any])
+    if (startswith != null) __obj.updateDynamic("startswith")(startswith.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotGridMessagesFieldMenuOperators]
   }
 }

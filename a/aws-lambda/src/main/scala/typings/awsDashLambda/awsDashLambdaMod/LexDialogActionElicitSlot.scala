@@ -28,10 +28,10 @@ object LexDialogActionElicitSlot {
     message: Anon_Content = null,
     responseCard: Anon_Applicationvndamazonawscardgeneric = null
   ): LexDialogActionElicitSlot = {
-    val __obj = js.Dynamic.literal(intentName = intentName, slotToElicit = slotToElicit, slots = slots)
-    __obj.updateDynamic("type")(`type`)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (responseCard != null) __obj.updateDynamic("responseCard")(responseCard)
+    val __obj = js.Dynamic.literal(intentName = intentName.asInstanceOf[js.Any], slotToElicit = slotToElicit.asInstanceOf[js.Any], slots = slots.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (responseCard != null) __obj.updateDynamic("responseCard")(responseCard.asInstanceOf[js.Any])
     __obj.asInstanceOf[LexDialogActionElicitSlot]
   }
 }

@@ -12,7 +12,7 @@ trait PullVisibleSymbolsInfo extends js.Object {
 object PullVisibleSymbolsInfo {
   @scala.inline
   def apply(enclosingScopeSymbol: PullSymbol, symbols: js.Array[PullSymbol]): PullVisibleSymbolsInfo = {
-    val __obj = js.Dynamic.literal(enclosingScopeSymbol = enclosingScopeSymbol, symbols = symbols)
+    val __obj = js.Dynamic.literal(enclosingScopeSymbol = enclosingScopeSymbol.asInstanceOf[js.Any], symbols = symbols.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PullVisibleSymbolsInfo]
   }

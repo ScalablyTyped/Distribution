@@ -43,16 +43,16 @@ object Options {
     tokenKey: String = null
   ): Options = {
     val __obj = js.Dynamic.literal(secret = secret.asInstanceOf[js.Any])
-    if (algorithms != null) __obj.updateDynamic("algorithms")(algorithms)
+    if (algorithms != null) __obj.updateDynamic("algorithms")(algorithms.asInstanceOf[js.Any])
     if (audience != null) __obj.updateDynamic("audience")(audience.asInstanceOf[js.Any])
-    if (cookie != null) __obj.updateDynamic("cookie")(cookie)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (cookie != null) __obj.updateDynamic("cookie")(cookie.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
     if (getToken != null) __obj.updateDynamic("getToken")(js.Any.fromFunction2(getToken))
     if (isRevoked != null) __obj.updateDynamic("isRevoked")(js.Any.fromFunction3(isRevoked))
-    if (issuer != null) __obj.updateDynamic("issuer")(issuer)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (!js.isUndefined(passthrough)) __obj.updateDynamic("passthrough")(passthrough)
-    if (tokenKey != null) __obj.updateDynamic("tokenKey")(tokenKey)
+    if (issuer != null) __obj.updateDynamic("issuer")(issuer.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (!js.isUndefined(passthrough)) __obj.updateDynamic("passthrough")(passthrough.asInstanceOf[js.Any])
+    if (tokenKey != null) __obj.updateDynamic("tokenKey")(tokenKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

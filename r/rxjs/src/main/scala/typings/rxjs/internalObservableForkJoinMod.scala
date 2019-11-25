@@ -61,7 +61,7 @@ object internalObservableForkJoinMod extends js.Object {
   def forkJoin_T[T](sources: ObservableInput[T]*): Observable[js.Array[T]] = js.native
   @JSName("forkJoin")
   def forkJoin_TK_String[T, K /* <: String */](sourcesObject: T): Observable[
-    /* import warning: ImportType.apply c Unsupported type mapping: 
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: rxjs.rxjs/internal/types.ObservedValueOf<T[K]>}
     */ forkJoin with T
   ] = js.native

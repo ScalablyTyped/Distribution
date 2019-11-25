@@ -26,12 +26,12 @@ object ListItem {
     position: Position = null,
     spread: js.UndefOr[Boolean] = js.undefined
   ): ListItem = {
-    val __obj = js.Dynamic.literal(children = children)
-    __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (!js.isUndefined(spread)) __obj.updateDynamic("spread")(spread)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(spread)) __obj.updateDynamic("spread")(spread.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListItem]
   }
 }

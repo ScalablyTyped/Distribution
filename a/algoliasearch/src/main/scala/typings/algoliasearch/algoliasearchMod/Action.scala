@@ -31,7 +31,7 @@ object Action {
     action: addObject | updateObject | partialUpdateObject | partialUpdateObjectNoCreate | deleteObject | delete | clear,
     indexName: String
   ): Action = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], indexName = indexName)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], indexName = indexName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Action]
   }

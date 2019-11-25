@@ -23,10 +23,10 @@ object ErrorEventArgs {
   @scala.inline
   def apply(action: String = null, error: String = null, files: js.Any = null, `type`: String = null): ErrorEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (files != null) __obj.updateDynamic("files")(files)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorEventArgs]
   }
 }

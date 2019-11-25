@@ -14,7 +14,7 @@ trait ParseReturn extends js.Object {
 object ParseReturn {
   @scala.inline
   def apply(blocks: js.Any, name: String, parent: js.Any, tokens: js.Array[_]): ParseReturn = {
-    val __obj = js.Dynamic.literal(blocks = blocks, name = name, parent = parent, tokens = tokens)
+    val __obj = js.Dynamic.literal(blocks = blocks.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], tokens = tokens.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ParseReturn]
   }

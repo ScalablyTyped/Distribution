@@ -19,9 +19,9 @@ object DayModifiers {
     today: js.UndefOr[Boolean] = js.undefined
   ): DayModifiers = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(outside)) __obj.updateDynamic("outside")(outside)
-    if (!js.isUndefined(today)) __obj.updateDynamic("today")(today)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(outside)) __obj.updateDynamic("outside")(outside.asInstanceOf[js.Any])
+    if (!js.isUndefined(today)) __obj.updateDynamic("today")(today.asInstanceOf[js.Any])
     __obj.asInstanceOf[DayModifiers]
   }
 }

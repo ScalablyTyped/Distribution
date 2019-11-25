@@ -12,8 +12,8 @@ trait Command extends js.Object {
 object Command {
   @scala.inline
   def apply(args: js.Array[_], `type`: String): Command = {
-    val __obj = js.Dynamic.literal(args = args)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Command]
   }
 }

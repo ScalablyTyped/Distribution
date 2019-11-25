@@ -30,8 +30,8 @@ object User {
     username: String,
     password: String = null
   ): User = {
-    val __obj = js.Dynamic.literal(active = active, attributes = attributes, displayname = displayname, email = email, firstname = firstname, lastname = lastname, toCrowd = js.Any.fromFunction0(toCrowd), username = username)
-    if (password != null) __obj.updateDynamic("password")(password)
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], attributes = attributes.asInstanceOf[js.Any], displayname = displayname.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], firstname = firstname.asInstanceOf[js.Any], lastname = lastname.asInstanceOf[js.Any], toCrowd = js.Any.fromFunction0(toCrowd), username = username.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     __obj.asInstanceOf[User]
   }
 }

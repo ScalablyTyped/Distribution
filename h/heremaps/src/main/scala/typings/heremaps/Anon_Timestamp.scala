@@ -11,7 +11,7 @@ trait Anon_Timestamp extends js.Object {
 object Anon_Timestamp {
   @scala.inline
   def apply(Timestamp: String): Anon_Timestamp = {
-    val __obj = js.Dynamic.literal(Timestamp = Timestamp)
+    val __obj = js.Dynamic.literal(Timestamp = Timestamp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Timestamp]
   }

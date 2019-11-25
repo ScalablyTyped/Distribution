@@ -30,9 +30,9 @@ object Anon_ColumnExpr {
     expr: Expression = null,
     literal: Literal = null
   ): Anon_ColumnExpr = {
-    val __obj = js.Dynamic.literal(__type = __type, column = column, filename = filename, lineno = lineno, name = name, segments = segments)
-    if (expr != null) __obj.updateDynamic("expr")(expr)
-    if (literal != null) __obj.updateDynamic("literal")(literal)
+    val __obj = js.Dynamic.literal(__type = __type.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], lineno = lineno.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], segments = segments.asInstanceOf[js.Any])
+    if (expr != null) __obj.updateDynamic("expr")(expr.asInstanceOf[js.Any])
+    if (literal != null) __obj.updateDynamic("literal")(literal.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ColumnExpr]
   }
 }

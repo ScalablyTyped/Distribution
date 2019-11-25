@@ -17,7 +17,7 @@ object Context {
     Consumer: ComponentClass[ConsumerProps[T], ComponentState],
     Provider: ComponentClass[ProviderProps[T], ComponentState]
   ): Context[T] = {
-    val __obj = js.Dynamic.literal(Consumer = Consumer, Provider = Provider)
+    val __obj = js.Dynamic.literal(Consumer = Consumer.asInstanceOf[js.Any], Provider = Provider.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Context[T]]
   }

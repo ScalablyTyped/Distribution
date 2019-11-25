@@ -50,31 +50,31 @@ object hooksMod extends js.Object {
   def fetchQuery_variables[TQuery /* <: OperationType */](
     environment: Environment,
     query: GraphQLTaggedNode,
-    variables: /* import warning: ImportType.apply Failed type conversion: TQuery['variables'] */ js.Any
+    variables: /* import warning: importer.ImportType#apply Failed type conversion: TQuery['variables'] */ js.Any
   ): Observable[
-    /* import warning: ImportType.apply Failed type conversion: TQuery['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: TQuery['response'] */ js.Any
   ] = js.native
   @JSName("fetchQuery")
   def fetchQuery_variables[TQuery /* <: OperationType */](
     environment: Environment,
     query: GraphQLTaggedNode,
-    variables: /* import warning: ImportType.apply Failed type conversion: TQuery['variables'] */ js.Any,
+    variables: /* import warning: importer.ImportType#apply Failed type conversion: TQuery['variables'] */ js.Any,
     options: Anon_NetworkCacheConfig
   ): Observable[
-    /* import warning: ImportType.apply Failed type conversion: TQuery['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: TQuery['response'] */ js.Any
   ] = js.native
   def graphql(strings: js.Any): GraphQLTaggedNode = js.native
   @JSName("preloadQuery")
   def preloadQuery_variables[TQuery /* <: OperationType */, TEnvironmentProviderOptions](
     environment: Environment,
     preloadableRequest: PreloadableConcreteRequest[TQuery],
-    variables: /* import warning: ImportType.apply Failed type conversion: TQuery['variables'] */ js.Any
+    variables: /* import warning: importer.ImportType#apply Failed type conversion: TQuery['variables'] */ js.Any
   ): PreloadedQuery[TQuery, TEnvironmentProviderOptions] = js.native
   @JSName("preloadQuery")
   def preloadQuery_variables[TQuery /* <: OperationType */, TEnvironmentProviderOptions](
     environment: Environment,
     preloadableRequest: PreloadableConcreteRequest[TQuery],
-    variables: /* import warning: ImportType.apply Failed type conversion: TQuery['variables'] */ js.Any,
+    variables: /* import warning: importer.ImportType#apply Failed type conversion: TQuery['variables'] */ js.Any,
     options: Null,
     environmentProviderOptions: TEnvironmentProviderOptions
   ): PreloadedQuery[TQuery, TEnvironmentProviderOptions] = js.native
@@ -82,14 +82,14 @@ object hooksMod extends js.Object {
   def preloadQuery_variables[TQuery /* <: OperationType */, TEnvironmentProviderOptions](
     environment: Environment,
     preloadableRequest: PreloadableConcreteRequest[TQuery],
-    variables: /* import warning: ImportType.apply Failed type conversion: TQuery['variables'] */ js.Any,
+    variables: /* import warning: importer.ImportType#apply Failed type conversion: TQuery['variables'] */ js.Any,
     options: PreloadOptions
   ): PreloadedQuery[TQuery, TEnvironmentProviderOptions] = js.native
   @JSName("preloadQuery")
   def preloadQuery_variables[TQuery /* <: OperationType */, TEnvironmentProviderOptions](
     environment: Environment,
     preloadableRequest: PreloadableConcreteRequest[TQuery],
-    variables: /* import warning: ImportType.apply Failed type conversion: TQuery['variables'] */ js.Any,
+    variables: /* import warning: importer.ImportType#apply Failed type conversion: TQuery['variables'] */ js.Any,
     options: PreloadOptions,
     environmentProviderOptions: TEnvironmentProviderOptions
   ): PreloadedQuery[TQuery, TEnvironmentProviderOptions] = js.native
@@ -142,14 +142,14 @@ object hooksMod extends js.Object {
   @JSName("useLazyLoadQuery")
   def useLazyLoadQuery_variables[TQuery /* <: OperationType */](
     gqlQuery: GraphQLTaggedNode,
-    variables: /* import warning: ImportType.apply Failed type conversion: TQuery['variables'] */ js.Any
-  ): /* import warning: ImportType.apply Failed type conversion: TQuery['response'] */ js.Any = js.native
+    variables: /* import warning: importer.ImportType#apply Failed type conversion: TQuery['variables'] */ js.Any
+  ): /* import warning: importer.ImportType#apply Failed type conversion: TQuery['response'] */ js.Any = js.native
   @JSName("useLazyLoadQuery")
   def useLazyLoadQuery_variables[TQuery /* <: OperationType */](
     gqlQuery: GraphQLTaggedNode,
-    variables: /* import warning: ImportType.apply Failed type conversion: TQuery['variables'] */ js.Any,
+    variables: /* import warning: importer.ImportType#apply Failed type conversion: TQuery['variables'] */ js.Any,
     options: Anon_FetchKey
-  ): /* import warning: ImportType.apply Failed type conversion: TQuery['response'] */ js.Any = js.native
+  ): /* import warning: importer.ImportType#apply Failed type conversion: TQuery['response'] */ js.Any = js.native
   def usePaginationFragment[TQuery /* <: OperationType */, TKey /* <: typings.reactDashRelay.libRelayDashExperimentalUseLegacyPaginationFragmentMod.KeyType */](fragmentInput: GraphQLTaggedNode): // tslint:disable-next-line no-unnecessary-generics
   typings.reactDashRelay.libRelayDashExperimentalUseLegacyPaginationFragmentMod.ReturnType[
     TQuery, 
@@ -166,7 +166,7 @@ object hooksMod extends js.Object {
       typings.reactDashRelay.libRelayDashExperimentalUseLegacyPaginationFragmentMod.KeyReturnType[TKey]
     ]) | Null
   ] = js.native
-  def usePreloadedQuery[TQuery /* <: OperationType */](gqlQuery: GraphQLTaggedNode, preloadedQuery: PreloadedQuery[TQuery, EnvironmentProviderOptions]): /* import warning: ImportType.apply Failed type conversion: TQuery['response'] */ js.Any = js.native
+  def usePreloadedQuery[TQuery /* <: OperationType */](gqlQuery: GraphQLTaggedNode, preloadedQuery: PreloadedQuery[TQuery, EnvironmentProviderOptions]): /* import warning: importer.ImportType#apply Failed type conversion: TQuery['response'] */ js.Any = js.native
   def useRefetchableFragment[TQuery /* <: OperationType */, TKey /* <: Anon_Data */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): typings.reactDashRelay.libRelayDashExperimentalUseRefetchableFragmentMod.ReturnType[TQuery, TKey] = js.native
   def useRelayEnvironment(): typings.relayDashRuntime.relayDashRuntimeMod.Environment = js.native
 }

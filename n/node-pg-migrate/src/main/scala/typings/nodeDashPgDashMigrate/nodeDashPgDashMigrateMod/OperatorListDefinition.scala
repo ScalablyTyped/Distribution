@@ -16,9 +16,9 @@ trait OperatorListDefinition extends js.Object {
 object OperatorListDefinition {
   @scala.inline
   def apply(name: Name, number: Double, `type`: function | operator, params: js.Array[FunctionParam] = null): OperatorListDefinition = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], number = number)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params)
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[OperatorListDefinition]
   }
 }

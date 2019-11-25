@@ -26,11 +26,11 @@ object Anon_DisabledError {
     visited: js.UndefOr[Boolean] = js.undefined
   ): Anon_DisabledError = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (label != null) __obj.updateDynamic("label")(label)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (messageType != null) __obj.updateDynamic("messageType")(messageType.asInstanceOf[js.Any])
-    if (!js.isUndefined(visited)) __obj.updateDynamic("visited")(visited)
+    if (!js.isUndefined(visited)) __obj.updateDynamic("visited")(visited.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DisabledError]
   }
 }

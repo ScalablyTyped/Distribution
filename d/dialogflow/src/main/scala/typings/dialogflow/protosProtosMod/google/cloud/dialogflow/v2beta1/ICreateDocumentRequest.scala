@@ -16,8 +16,8 @@ object ICreateDocumentRequest {
   @scala.inline
   def apply(document: IDocument = null, parent: String = null): ICreateDocumentRequest = {
     val __obj = js.Dynamic.literal()
-    if (document != null) __obj.updateDynamic("document")(document)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (document != null) __obj.updateDynamic("document")(document.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICreateDocumentRequest]
   }
 }

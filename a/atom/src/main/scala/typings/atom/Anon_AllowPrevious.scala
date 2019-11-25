@@ -19,9 +19,9 @@ object Anon_AllowPrevious {
     wordRegex: RegExp = null
   ): Anon_AllowPrevious = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowPrevious)) __obj.updateDynamic("allowPrevious")(allowPrevious)
-    if (!js.isUndefined(includeNonWordCharacters)) __obj.updateDynamic("includeNonWordCharacters")(includeNonWordCharacters)
-    if (wordRegex != null) __obj.updateDynamic("wordRegex")(wordRegex)
+    if (!js.isUndefined(allowPrevious)) __obj.updateDynamic("allowPrevious")(allowPrevious.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeNonWordCharacters)) __obj.updateDynamic("includeNonWordCharacters")(includeNonWordCharacters.asInstanceOf[js.Any])
+    if (wordRegex != null) __obj.updateDynamic("wordRegex")(wordRegex.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AllowPrevious]
   }
 }

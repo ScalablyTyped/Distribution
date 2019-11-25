@@ -13,7 +13,7 @@ trait Anon_GHO2GO extends js.Object {
 object Anon_GHO2GO {
   @scala.inline
   def apply(GHO2: Anon_05, GO: Anon_07, XGHO2: Anon_03): Anon_GHO2GO = {
-    val __obj = js.Dynamic.literal(GHO2 = GHO2, GO = GO, XGHO2 = XGHO2)
+    val __obj = js.Dynamic.literal(GHO2 = GHO2.asInstanceOf[js.Any], GO = GO.asInstanceOf[js.Any], XGHO2 = XGHO2.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_GHO2GO]
   }

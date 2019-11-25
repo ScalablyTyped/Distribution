@@ -25,8 +25,8 @@ object Anon_Bubbles {
     lines: Anon_Dur,
     `lines-small`: Anon_Dur
   ): Anon_Bubbles = {
-    val __obj = js.Dynamic.literal(bubbles = bubbles, circles = circles, circular = circular, crescent = crescent, dots = dots, lines = lines)
-    __obj.updateDynamic("lines-small")(`lines-small`)
+    val __obj = js.Dynamic.literal(bubbles = bubbles.asInstanceOf[js.Any], circles = circles.asInstanceOf[js.Any], circular = circular.asInstanceOf[js.Any], crescent = crescent.asInstanceOf[js.Any], dots = dots.asInstanceOf[js.Any], lines = lines.asInstanceOf[js.Any])
+    __obj.updateDynamic("lines-small")(`lines-small`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Bubbles]
   }
 }

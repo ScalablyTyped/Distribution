@@ -11,7 +11,7 @@ trait Anon_Stickyclusterworkerindex extends js.Object {
 object Anon_Stickyclusterworkerindex {
   @scala.inline
   def apply(stickycluster_worker_index: Double): Anon_Stickyclusterworkerindex = {
-    val __obj = js.Dynamic.literal(stickycluster_worker_index = stickycluster_worker_index)
+    val __obj = js.Dynamic.literal(stickycluster_worker_index = stickycluster_worker_index.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Stickyclusterworkerindex]
   }

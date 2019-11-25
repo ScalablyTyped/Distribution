@@ -26,8 +26,8 @@ object IOptions {
     name: String,
     serverSettings: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any = null
   ): IOptions = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (serverSettings != null) __obj.updateDynamic("serverSettings")(serverSettings)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (serverSettings != null) __obj.updateDynamic("serverSettings")(serverSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

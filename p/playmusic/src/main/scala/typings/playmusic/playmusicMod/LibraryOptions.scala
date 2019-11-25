@@ -14,7 +14,7 @@ object LibraryOptions {
   def apply(limit: Int | Double = null, nextPageToken: String = null): LibraryOptions = {
     val __obj = js.Dynamic.literal()
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[LibraryOptions]
   }
 }

@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait Format extends js.Object
 
+object Format {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def deflate: typings.nodeDashZopfli.nodeDashZopfliStrings.deflate = this.cast("deflate")
+  @scala.inline
+  def gzip: typings.nodeDashZopfli.nodeDashZopfliStrings.gzip = this.cast("gzip")
+  @scala.inline
+  def zlib: typings.nodeDashZopfli.nodeDashZopfliStrings.zlib = this.cast("zlib")
+}
+

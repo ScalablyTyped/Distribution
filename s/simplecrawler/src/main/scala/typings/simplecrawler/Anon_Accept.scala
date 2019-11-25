@@ -30,14 +30,14 @@ object Anon_Accept {
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
     cookie: String = null
   ): Anon_Accept = {
-    val __obj = js.Dynamic.literal(Accept = Accept, Host = Host)
-    __obj.updateDynamic("User-Agent")(`User-Agent`)
-    if (`Accept-Encoding` != null) __obj.updateDynamic("Accept-Encoding")(`Accept-Encoding`)
-    if (Authorization != null) __obj.updateDynamic("Authorization")(Authorization)
-    if (`Proxy-Authorization` != null) __obj.updateDynamic("Proxy-Authorization")(`Proxy-Authorization`)
-    if (Referer != null) __obj.updateDynamic("Referer")(Referer)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (cookie != null) __obj.updateDynamic("cookie")(cookie)
+    val __obj = js.Dynamic.literal(Accept = Accept.asInstanceOf[js.Any], Host = Host.asInstanceOf[js.Any])
+    __obj.updateDynamic("User-Agent")(`User-Agent`.asInstanceOf[js.Any])
+    if (`Accept-Encoding` != null) __obj.updateDynamic("Accept-Encoding")(`Accept-Encoding`.asInstanceOf[js.Any])
+    if (Authorization != null) __obj.updateDynamic("Authorization")(Authorization.asInstanceOf[js.Any])
+    if (`Proxy-Authorization` != null) __obj.updateDynamic("Proxy-Authorization")(`Proxy-Authorization`.asInstanceOf[js.Any])
+    if (Referer != null) __obj.updateDynamic("Referer")(Referer.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (cookie != null) __obj.updateDynamic("cookie")(cookie.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Accept]
   }
 }

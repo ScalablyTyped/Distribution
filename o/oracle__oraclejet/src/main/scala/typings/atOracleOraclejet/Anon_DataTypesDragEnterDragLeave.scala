@@ -24,7 +24,7 @@ object Anon_DataTypesDragEnterDragLeave {
     drop: (Event, js.Object) => Unit,
     selector: String
   ): Anon_DataTypesDragEnterDragLeave = {
-    val __obj = js.Dynamic.literal(dataTypes = dataTypes.asInstanceOf[js.Any], dragEnter = js.Any.fromFunction2(dragEnter), dragLeave = js.Any.fromFunction2(dragLeave), dragOver = js.Any.fromFunction2(dragOver), drop = js.Any.fromFunction2(drop), selector = selector)
+    val __obj = js.Dynamic.literal(dataTypes = dataTypes.asInstanceOf[js.Any], dragEnter = js.Any.fromFunction2(dragEnter), dragLeave = js.Any.fromFunction2(dragLeave), dragOver = js.Any.fromFunction2(dragOver), drop = js.Any.fromFunction2(drop), selector = selector.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DataTypesDragEnterDragLeave]
   }

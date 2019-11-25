@@ -12,7 +12,7 @@ object Post {
   @scala.inline
   def apply(subtype: String = null): Post = {
     val __obj = js.Dynamic.literal()
-    if (subtype != null) __obj.updateDynamic("subtype")(subtype)
+    if (subtype != null) __obj.updateDynamic("subtype")(subtype.asInstanceOf[js.Any])
     __obj.asInstanceOf[Post]
   }
 }

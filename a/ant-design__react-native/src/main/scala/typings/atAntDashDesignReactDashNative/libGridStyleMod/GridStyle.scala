@@ -16,7 +16,7 @@ trait GridStyle extends js.Object {
 object GridStyle {
   @scala.inline
   def apply(grayBorderBox: ViewStyle, icon: ImageStyle, text: TextStyle): GridStyle = {
-    val __obj = js.Dynamic.literal(grayBorderBox = grayBorderBox, icon = icon, text = text)
+    val __obj = js.Dynamic.literal(grayBorderBox = grayBorderBox.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GridStyle]
   }

@@ -19,8 +19,8 @@ object MapContextGetRegionResult {
   @scala.inline
   def apply(northeast: LocationObject = null, southwest: LocationObject = null): MapContextGetRegionResult = {
     val __obj = js.Dynamic.literal()
-    if (northeast != null) __obj.updateDynamic("northeast")(northeast)
-    if (southwest != null) __obj.updateDynamic("southwest")(southwest)
+    if (northeast != null) __obj.updateDynamic("northeast")(northeast.asInstanceOf[js.Any])
+    if (southwest != null) __obj.updateDynamic("southwest")(southwest.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapContextGetRegionResult]
   }
 }

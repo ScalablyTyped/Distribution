@@ -31,8 +31,8 @@ object Anon_Accepttlschannelid {
     matches: js.Array[String],
     accept_tls_channel_id: js.UndefOr[Boolean] = js.undefined
   ): Anon_Accepttlschannelid = {
-    val __obj = js.Dynamic.literal(id = id, matches = matches)
-    if (!js.isUndefined(accept_tls_channel_id)) __obj.updateDynamic("accept_tls_channel_id")(accept_tls_channel_id)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], matches = matches.asInstanceOf[js.Any])
+    if (!js.isUndefined(accept_tls_channel_id)) __obj.updateDynamic("accept_tls_channel_id")(accept_tls_channel_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Accepttlschannelid]
   }
 }

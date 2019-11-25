@@ -40,19 +40,19 @@ object PartialIFontStyles {
     xxLargePlus: IRawStyle = null
   ): PartialIFontStyles = {
     val __obj = js.Dynamic.literal()
-    if (large != null) __obj.updateDynamic("large")(large)
-    if (medium != null) __obj.updateDynamic("medium")(medium)
-    if (mediumPlus != null) __obj.updateDynamic("mediumPlus")(mediumPlus)
-    if (mega != null) __obj.updateDynamic("mega")(mega)
-    if (small != null) __obj.updateDynamic("small")(small)
-    if (smallPlus != null) __obj.updateDynamic("smallPlus")(smallPlus)
-    if (superLarge != null) __obj.updateDynamic("superLarge")(superLarge)
-    if (tiny != null) __obj.updateDynamic("tiny")(tiny)
-    if (xLarge != null) __obj.updateDynamic("xLarge")(xLarge)
-    if (xLargePlus != null) __obj.updateDynamic("xLargePlus")(xLargePlus)
-    if (xSmall != null) __obj.updateDynamic("xSmall")(xSmall)
-    if (xxLarge != null) __obj.updateDynamic("xxLarge")(xxLarge)
-    if (xxLargePlus != null) __obj.updateDynamic("xxLargePlus")(xxLargePlus)
+    if (large != null) __obj.updateDynamic("large")(large.asInstanceOf[js.Any])
+    if (medium != null) __obj.updateDynamic("medium")(medium.asInstanceOf[js.Any])
+    if (mediumPlus != null) __obj.updateDynamic("mediumPlus")(mediumPlus.asInstanceOf[js.Any])
+    if (mega != null) __obj.updateDynamic("mega")(mega.asInstanceOf[js.Any])
+    if (small != null) __obj.updateDynamic("small")(small.asInstanceOf[js.Any])
+    if (smallPlus != null) __obj.updateDynamic("smallPlus")(smallPlus.asInstanceOf[js.Any])
+    if (superLarge != null) __obj.updateDynamic("superLarge")(superLarge.asInstanceOf[js.Any])
+    if (tiny != null) __obj.updateDynamic("tiny")(tiny.asInstanceOf[js.Any])
+    if (xLarge != null) __obj.updateDynamic("xLarge")(xLarge.asInstanceOf[js.Any])
+    if (xLargePlus != null) __obj.updateDynamic("xLargePlus")(xLargePlus.asInstanceOf[js.Any])
+    if (xSmall != null) __obj.updateDynamic("xSmall")(xSmall.asInstanceOf[js.Any])
+    if (xxLarge != null) __obj.updateDynamic("xxLarge")(xxLarge.asInstanceOf[js.Any])
+    if (xxLargePlus != null) __obj.updateDynamic("xxLargePlus")(xxLargePlus.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialIFontStyles]
   }
 }

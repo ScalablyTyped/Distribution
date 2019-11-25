@@ -35,7 +35,7 @@ object DistanceMatrixResponse {
     rows: js.Array[DistanceMatrixRow],
     status: DistanceMatrixResponseTopLevelStatus
   ): DistanceMatrixResponse = {
-    val __obj = js.Dynamic.literal(destination_addresses = destination_addresses, error_message = error_message, origin_addresses = origin_addresses, rows = rows, status = status)
+    val __obj = js.Dynamic.literal(destination_addresses = destination_addresses.asInstanceOf[js.Any], error_message = error_message.asInstanceOf[js.Any], origin_addresses = origin_addresses.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DistanceMatrixResponse]
   }

@@ -13,7 +13,7 @@ object ListDataSourcesResponse {
   @scala.inline
   def apply(dataSource: js.Array[DataSource] = null): ListDataSourcesResponse = {
     val __obj = js.Dynamic.literal()
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDataSourcesResponse]
   }
 }

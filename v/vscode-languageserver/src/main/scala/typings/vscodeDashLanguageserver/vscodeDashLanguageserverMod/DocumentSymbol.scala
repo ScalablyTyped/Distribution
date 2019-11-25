@@ -1,7 +1,5 @@
 package typings.vscodeDashLanguageserver.vscodeDashLanguageserverMod
 
-import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Range
-import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.SymbolKind
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,16 +15,16 @@ object DocumentSymbol extends js.Object {
   def create(
     name: String,
     detail: js.UndefOr[scala.Nothing],
-    kind: SymbolKind,
-    range: Range,
-    selectionRange: Range
+    kind: typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.SymbolKind,
+    range: typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Range,
+    selectionRange: typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Range
   ): typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.DocumentSymbol = js.native
   def create(
     name: String,
     detail: js.UndefOr[scala.Nothing],
-    kind: SymbolKind,
-    range: Range,
-    selectionRange: Range,
+    kind: typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.SymbolKind,
+    range: typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Range,
+    selectionRange: typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Range,
     children: js.Array[
       typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.DocumentSymbol
     ]
@@ -41,13 +39,19 @@ object DocumentSymbol extends js.Object {
     * @param selectionRange The selectionRange of the symbol.
     * @param children Children of the symbol.
     */
-  def create(name: String, detail: String, kind: SymbolKind, range: Range, selectionRange: Range): typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.DocumentSymbol = js.native
   def create(
     name: String,
     detail: String,
-    kind: SymbolKind,
-    range: Range,
-    selectionRange: Range,
+    kind: typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.SymbolKind,
+    range: typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Range,
+    selectionRange: typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Range
+  ): typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.DocumentSymbol = js.native
+  def create(
+    name: String,
+    detail: String,
+    kind: typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.SymbolKind,
+    range: typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Range,
+    selectionRange: typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Range,
     children: js.Array[
       typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.DocumentSymbol
     ]

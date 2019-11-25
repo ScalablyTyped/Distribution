@@ -24,8 +24,8 @@ object RedisOptions {
   @scala.inline
   def apply(host: String = null, options: ClientOpts = null, port: Int | Double = null): RedisOptions = {
     val __obj = js.Dynamic.literal()
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedisOptions]
   }

@@ -48,10 +48,10 @@ object Options {
     if (maxLineLengthHighlight != null) __obj.updateDynamic("maxLineLengthHighlight")(maxLineLengthHighlight.asInstanceOf[js.Any])
     if (maxLineSizeInBlockForComparison != null) __obj.updateDynamic("maxLineSizeInBlockForComparison")(maxLineSizeInBlockForComparison.asInstanceOf[js.Any])
     if (outputFormat != null) __obj.updateDynamic("outputFormat")(outputFormat.asInstanceOf[js.Any])
-    if (rawTemplates != null) __obj.updateDynamic("rawTemplates")(rawTemplates)
-    if (!js.isUndefined(renderNothingWhenEmpty)) __obj.updateDynamic("renderNothingWhenEmpty")(renderNothingWhenEmpty)
-    if (!js.isUndefined(showFiles)) __obj.updateDynamic("showFiles")(showFiles)
-    if (templates != null) __obj.updateDynamic("templates")(templates)
+    if (rawTemplates != null) __obj.updateDynamic("rawTemplates")(rawTemplates.asInstanceOf[js.Any])
+    if (!js.isUndefined(renderNothingWhenEmpty)) __obj.updateDynamic("renderNothingWhenEmpty")(renderNothingWhenEmpty.asInstanceOf[js.Any])
+    if (!js.isUndefined(showFiles)) __obj.updateDynamic("showFiles")(showFiles.asInstanceOf[js.Any])
+    if (templates != null) __obj.updateDynamic("templates")(templates.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

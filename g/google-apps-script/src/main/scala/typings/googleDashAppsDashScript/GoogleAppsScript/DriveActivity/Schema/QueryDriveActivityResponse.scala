@@ -22,8 +22,8 @@ object QueryDriveActivityResponse {
     nextPageToken: String = null
   ): QueryDriveActivityResponse = {
     val __obj = js.Dynamic.literal()
-    if (activities != null) __obj.updateDynamic("activities")(activities)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (activities != null) __obj.updateDynamic("activities")(activities.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryDriveActivityResponse]
   }
 }

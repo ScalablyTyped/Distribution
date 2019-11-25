@@ -57,15 +57,15 @@ object ModeConfiguration {
     tokens: js.UndefOr[Boolean] = js.undefined
   ): ModeConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(colors)) __obj.updateDynamic("colors")(colors)
-    if (!js.isUndefined(completionItems)) __obj.updateDynamic("completionItems")(completionItems)
-    if (!js.isUndefined(diagnostics)) __obj.updateDynamic("diagnostics")(diagnostics)
-    if (!js.isUndefined(documentFormattingEdits)) __obj.updateDynamic("documentFormattingEdits")(documentFormattingEdits)
-    if (!js.isUndefined(documentRangeFormattingEdits)) __obj.updateDynamic("documentRangeFormattingEdits")(documentRangeFormattingEdits)
-    if (!js.isUndefined(documentSymbols)) __obj.updateDynamic("documentSymbols")(documentSymbols)
-    if (!js.isUndefined(foldingRanges)) __obj.updateDynamic("foldingRanges")(foldingRanges)
-    if (!js.isUndefined(hovers)) __obj.updateDynamic("hovers")(hovers)
-    if (!js.isUndefined(tokens)) __obj.updateDynamic("tokens")(tokens)
+    if (!js.isUndefined(colors)) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
+    if (!js.isUndefined(completionItems)) __obj.updateDynamic("completionItems")(completionItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(diagnostics)) __obj.updateDynamic("diagnostics")(diagnostics.asInstanceOf[js.Any])
+    if (!js.isUndefined(documentFormattingEdits)) __obj.updateDynamic("documentFormattingEdits")(documentFormattingEdits.asInstanceOf[js.Any])
+    if (!js.isUndefined(documentRangeFormattingEdits)) __obj.updateDynamic("documentRangeFormattingEdits")(documentRangeFormattingEdits.asInstanceOf[js.Any])
+    if (!js.isUndefined(documentSymbols)) __obj.updateDynamic("documentSymbols")(documentSymbols.asInstanceOf[js.Any])
+    if (!js.isUndefined(foldingRanges)) __obj.updateDynamic("foldingRanges")(foldingRanges.asInstanceOf[js.Any])
+    if (!js.isUndefined(hovers)) __obj.updateDynamic("hovers")(hovers.asInstanceOf[js.Any])
+    if (!js.isUndefined(tokens)) __obj.updateDynamic("tokens")(tokens.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModeConfiguration]
   }
 }

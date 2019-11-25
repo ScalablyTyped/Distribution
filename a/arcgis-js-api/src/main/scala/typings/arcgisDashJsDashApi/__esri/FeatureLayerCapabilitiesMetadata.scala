@@ -23,7 +23,7 @@ object FeatureLayerCapabilitiesMetadata {
     propertyIsEnumerable: PropertyKey => Boolean,
     supportsAdvancedFieldProperties: Boolean
   ): FeatureLayerCapabilitiesMetadata = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), supportsAdvancedFieldProperties = supportsAdvancedFieldProperties)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), supportsAdvancedFieldProperties = supportsAdvancedFieldProperties.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FeatureLayerCapabilitiesMetadata]
   }

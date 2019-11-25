@@ -17,7 +17,7 @@ object _UnmarshalledStorageClassAnalysis {
   @scala.inline
   def apply(DataExport: _UnmarshalledStorageClassAnalysisDataExport = null): _UnmarshalledStorageClassAnalysis = {
     val __obj = js.Dynamic.literal()
-    if (DataExport != null) __obj.updateDynamic("DataExport")(DataExport)
+    if (DataExport != null) __obj.updateDynamic("DataExport")(DataExport.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledStorageClassAnalysis]
   }
 }

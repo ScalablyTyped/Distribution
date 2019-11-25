@@ -29,9 +29,9 @@ object ListTablesOutput {
     LastEvaluatedTableName: String = null,
     TableNames: js.Array[String] = null
   ): ListTablesOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (LastEvaluatedTableName != null) __obj.updateDynamic("LastEvaluatedTableName")(LastEvaluatedTableName)
-    if (TableNames != null) __obj.updateDynamic("TableNames")(TableNames)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (LastEvaluatedTableName != null) __obj.updateDynamic("LastEvaluatedTableName")(LastEvaluatedTableName.asInstanceOf[js.Any])
+    if (TableNames != null) __obj.updateDynamic("TableNames")(TableNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTablesOutput]
   }
 }

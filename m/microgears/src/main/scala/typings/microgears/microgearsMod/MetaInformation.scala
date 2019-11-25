@@ -22,8 +22,8 @@ object MetaInformation {
     serviceNameSpace: String,
     error: Error = null
   ): MetaInformation = {
-    val __obj = js.Dynamic.literal(extra = extra, methodName = methodName, serviceName = serviceName, serviceNameSpace = serviceNameSpace)
-    if (error != null) __obj.updateDynamic("error")(error)
+    val __obj = js.Dynamic.literal(extra = extra.asInstanceOf[js.Any], methodName = methodName.asInstanceOf[js.Any], serviceName = serviceName.asInstanceOf[js.Any], serviceNameSpace = serviceNameSpace.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetaInformation]
   }
 }

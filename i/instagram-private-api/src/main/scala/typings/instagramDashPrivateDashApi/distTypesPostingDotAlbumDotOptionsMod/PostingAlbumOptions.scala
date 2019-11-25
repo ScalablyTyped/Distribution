@@ -18,9 +18,9 @@ object PostingAlbumOptions {
     caption: String = null,
     location: PostingLocation = null
   ): PostingAlbumOptions = {
-    val __obj = js.Dynamic.literal(items = items)
-    if (caption != null) __obj.updateDynamic("caption")(caption)
-    if (location != null) __obj.updateDynamic("location")(location)
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
+    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostingAlbumOptions]
   }
 }

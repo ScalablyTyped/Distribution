@@ -20,7 +20,7 @@ trait StaticClassSansProvider extends InjectableProvider {
 object StaticClassSansProvider {
   @scala.inline
   def apply(deps: js.Array[_], useClass: Type[_]): StaticClassSansProvider = {
-    val __obj = js.Dynamic.literal(deps = deps, useClass = useClass)
+    val __obj = js.Dynamic.literal(deps = deps.asInstanceOf[js.Any], useClass = useClass.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StaticClassSansProvider]
   }

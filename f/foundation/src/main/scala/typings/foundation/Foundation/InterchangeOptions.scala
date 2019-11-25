@@ -15,9 +15,9 @@ object InterchangeOptions {
   @scala.inline
   def apply(directives: js.Object = null, load_attr: String = null, named_queries: js.Object = null): InterchangeOptions = {
     val __obj = js.Dynamic.literal()
-    if (directives != null) __obj.updateDynamic("directives")(directives)
-    if (load_attr != null) __obj.updateDynamic("load_attr")(load_attr)
-    if (named_queries != null) __obj.updateDynamic("named_queries")(named_queries)
+    if (directives != null) __obj.updateDynamic("directives")(directives.asInstanceOf[js.Any])
+    if (load_attr != null) __obj.updateDynamic("load_attr")(load_attr.asInstanceOf[js.Any])
+    if (named_queries != null) __obj.updateDynamic("named_queries")(named_queries.asInstanceOf[js.Any])
     __obj.asInstanceOf[InterchangeOptions]
   }
 }

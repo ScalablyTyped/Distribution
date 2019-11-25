@@ -18,11 +18,11 @@ object StoreSiteSpecificExceptionsInformation {
     siteName: java.lang.String = null
   ): StoreSiteSpecificExceptionsInformation = {
     val __obj = js.Dynamic.literal()
-    if (arrayOfDomainStrings != null) __obj.updateDynamic("arrayOfDomainStrings")(arrayOfDomainStrings)
-    if (detailURI != null) __obj.updateDynamic("detailURI")(detailURI)
-    if (domain != null) __obj.updateDynamic("domain")(domain)
-    if (explanationString != null) __obj.updateDynamic("explanationString")(explanationString)
-    if (siteName != null) __obj.updateDynamic("siteName")(siteName)
+    if (arrayOfDomainStrings != null) __obj.updateDynamic("arrayOfDomainStrings")(arrayOfDomainStrings.asInstanceOf[js.Any])
+    if (detailURI != null) __obj.updateDynamic("detailURI")(detailURI.asInstanceOf[js.Any])
+    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
+    if (explanationString != null) __obj.updateDynamic("explanationString")(explanationString.asInstanceOf[js.Any])
+    if (siteName != null) __obj.updateDynamic("siteName")(siteName.asInstanceOf[js.Any])
     __obj.asInstanceOf[StoreSiteSpecificExceptionsInformation]
   }
 }

@@ -21,9 +21,9 @@ object ZoneViewsListResourcesResponse {
     nextPageToken: String = null
   ): ZoneViewsListResourcesResponse = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (network != null) __obj.updateDynamic("network")(network)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZoneViewsListResourcesResponse]
   }
 }

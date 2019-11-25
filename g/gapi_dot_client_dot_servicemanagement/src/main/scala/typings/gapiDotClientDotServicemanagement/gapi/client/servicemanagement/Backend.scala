@@ -17,7 +17,7 @@ object Backend {
   @scala.inline
   def apply(rules: js.Array[BackendRule] = null): Backend = {
     val __obj = js.Dynamic.literal()
-    if (rules != null) __obj.updateDynamic("rules")(rules)
+    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[Backend]
   }
 }

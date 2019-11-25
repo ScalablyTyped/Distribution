@@ -125,17 +125,17 @@ object GoogleTypePostalAddress {
     sublocality: String = null
   ): GoogleTypePostalAddress = {
     val __obj = js.Dynamic.literal()
-    if (addressLines != null) __obj.updateDynamic("addressLines")(addressLines)
-    if (administrativeArea != null) __obj.updateDynamic("administrativeArea")(administrativeArea)
-    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode)
-    if (locality != null) __obj.updateDynamic("locality")(locality)
-    if (organization != null) __obj.updateDynamic("organization")(organization)
-    if (postalCode != null) __obj.updateDynamic("postalCode")(postalCode)
-    if (recipients != null) __obj.updateDynamic("recipients")(recipients)
-    if (regionCode != null) __obj.updateDynamic("regionCode")(regionCode)
+    if (addressLines != null) __obj.updateDynamic("addressLines")(addressLines.asInstanceOf[js.Any])
+    if (administrativeArea != null) __obj.updateDynamic("administrativeArea")(administrativeArea.asInstanceOf[js.Any])
+    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
+    if (locality != null) __obj.updateDynamic("locality")(locality.asInstanceOf[js.Any])
+    if (organization != null) __obj.updateDynamic("organization")(organization.asInstanceOf[js.Any])
+    if (postalCode != null) __obj.updateDynamic("postalCode")(postalCode.asInstanceOf[js.Any])
+    if (recipients != null) __obj.updateDynamic("recipients")(recipients.asInstanceOf[js.Any])
+    if (regionCode != null) __obj.updateDynamic("regionCode")(regionCode.asInstanceOf[js.Any])
     if (revision != null) __obj.updateDynamic("revision")(revision.asInstanceOf[js.Any])
-    if (sortingCode != null) __obj.updateDynamic("sortingCode")(sortingCode)
-    if (sublocality != null) __obj.updateDynamic("sublocality")(sublocality)
+    if (sortingCode != null) __obj.updateDynamic("sortingCode")(sortingCode.asInstanceOf[js.Any])
+    if (sublocality != null) __obj.updateDynamic("sublocality")(sublocality.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleTypePostalAddress]
   }
 }

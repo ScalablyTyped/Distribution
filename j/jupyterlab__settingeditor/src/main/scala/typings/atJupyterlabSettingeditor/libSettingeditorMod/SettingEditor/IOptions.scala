@@ -56,8 +56,8 @@ object IOptions {
     rendermime: IRenderMimeRegistry = null,
     when: js.Promise[_] | js.Array[js.Promise[_]] = null
   ): IOptions = {
-    val __obj = js.Dynamic.literal(commands = commands, editorFactory = js.Any.fromFunction1(editorFactory), key = key, registry = registry, state = state)
-    if (rendermime != null) __obj.updateDynamic("rendermime")(rendermime)
+    val __obj = js.Dynamic.literal(commands = commands.asInstanceOf[js.Any], editorFactory = js.Any.fromFunction1(editorFactory), key = key.asInstanceOf[js.Any], registry = registry.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+    if (rendermime != null) __obj.updateDynamic("rendermime")(rendermime.asInstanceOf[js.Any])
     if (when != null) __obj.updateDynamic("when")(when.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }

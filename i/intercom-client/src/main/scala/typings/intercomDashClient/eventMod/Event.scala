@@ -17,8 +17,8 @@ import scala.scalajs.js.annotation._
 object Event {
   @scala.inline
   def apply(created_at: Double, event_name: String, id: String, metadata: js.Any = null): Event = {
-    val __obj = js.Dynamic.literal(created_at = created_at, event_name = event_name, id = id)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    val __obj = js.Dynamic.literal(created_at = created_at.asInstanceOf[js.Any], event_name = event_name.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[Event]
   }
 }

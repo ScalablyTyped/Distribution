@@ -19,9 +19,9 @@ object Anon_Browser {
     main: String = null
   ): Anon_Browser = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (browser != null) __obj.updateDynamic("browser")(browser)
-    if (main != null) __obj.updateDynamic("main")(main)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (browser != null) __obj.updateDynamic("browser")(browser.asInstanceOf[js.Any])
+    if (main != null) __obj.updateDynamic("main")(main.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Browser]
   }
 }

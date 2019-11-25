@@ -24,8 +24,8 @@ object PasteOptions {
   @scala.inline
   def apply(defaultName: String = null, targetElement: HTMLElement = null): PasteOptions = {
     val __obj = js.Dynamic.literal()
-    if (defaultName != null) __obj.updateDynamic("defaultName")(defaultName)
-    if (targetElement != null) __obj.updateDynamic("targetElement")(targetElement)
+    if (defaultName != null) __obj.updateDynamic("defaultName")(defaultName.asInstanceOf[js.Any])
+    if (targetElement != null) __obj.updateDynamic("targetElement")(targetElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[PasteOptions]
   }
 }

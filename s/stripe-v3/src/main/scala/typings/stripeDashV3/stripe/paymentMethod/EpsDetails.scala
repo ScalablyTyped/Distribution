@@ -11,7 +11,7 @@ trait EpsDetails extends js.Object {
 object EpsDetails {
   @scala.inline
   def apply(verified_name: String): EpsDetails = {
-    val __obj = js.Dynamic.literal(verified_name = verified_name)
+    val __obj = js.Dynamic.literal(verified_name = verified_name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EpsDetails]
   }

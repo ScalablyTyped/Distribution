@@ -24,12 +24,12 @@ object DecoratorConfigOptions {
     setter: js.UndefOr[Boolean] = js.undefined
   ): DecoratorConfigOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bound)) __obj.updateDynamic("bound")(bound)
-    if (!js.isUndefined(getter)) __obj.updateDynamic("getter")(getter)
-    if (!js.isUndefined(method)) __obj.updateDynamic("method")(method)
-    if (!js.isUndefined(optionalParams)) __obj.updateDynamic("optionalParams")(optionalParams)
-    if (!js.isUndefined(property)) __obj.updateDynamic("property")(property)
-    if (!js.isUndefined(setter)) __obj.updateDynamic("setter")(setter)
+    if (!js.isUndefined(bound)) __obj.updateDynamic("bound")(bound.asInstanceOf[js.Any])
+    if (!js.isUndefined(getter)) __obj.updateDynamic("getter")(getter.asInstanceOf[js.Any])
+    if (!js.isUndefined(method)) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (!js.isUndefined(optionalParams)) __obj.updateDynamic("optionalParams")(optionalParams.asInstanceOf[js.Any])
+    if (!js.isUndefined(property)) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
+    if (!js.isUndefined(setter)) __obj.updateDynamic("setter")(setter.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecoratorConfigOptions]
   }
 }

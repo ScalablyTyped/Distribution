@@ -13,7 +13,7 @@ object IRightMouseButtonMagnifierOptions {
   @scala.inline
   def apply(actionCursor: String = null, duration: Int | Double = null): IRightMouseButtonMagnifierOptions = {
     val __obj = js.Dynamic.literal()
-    if (actionCursor != null) __obj.updateDynamic("actionCursor")(actionCursor)
+    if (actionCursor != null) __obj.updateDynamic("actionCursor")(actionCursor.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRightMouseButtonMagnifierOptions]
   }

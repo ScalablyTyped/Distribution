@@ -11,10 +11,10 @@ trait ByTrackingOptions extends TrackingOptions {
 object ByTrackingOptions {
   @scala.inline
   def apply(access: js.Any, createdAtField: String = null, ref: String = null, updatedAtField: String = null): ByTrackingOptions = {
-    val __obj = js.Dynamic.literal(access = access)
-    if (createdAtField != null) __obj.updateDynamic("createdAtField")(createdAtField)
-    if (ref != null) __obj.updateDynamic("ref")(ref)
-    if (updatedAtField != null) __obj.updateDynamic("updatedAtField")(updatedAtField)
+    val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any])
+    if (createdAtField != null) __obj.updateDynamic("createdAtField")(createdAtField.asInstanceOf[js.Any])
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (updatedAtField != null) __obj.updateDynamic("updatedAtField")(updatedAtField.asInstanceOf[js.Any])
     __obj.asInstanceOf[ByTrackingOptions]
   }
 }

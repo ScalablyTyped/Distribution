@@ -37,11 +37,11 @@ object ExecutionArgs {
     typeResolver: (_, _, /* info */ GraphQLResolveInfo, /* abstractType */ GraphQLAbstractType) => PromiseOrValue[Maybe[(GraphQLObjectType[_, _, StringDictionary[_]]) | String]] = null,
     variableValues: Maybe[StringDictionary[_]] = null
   ): ExecutionArgs = {
-    val __obj = js.Dynamic.literal(document = document, schema = schema)
-    if (contextValue != null) __obj.updateDynamic("contextValue")(contextValue)
+    val __obj = js.Dynamic.literal(document = document.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
+    if (contextValue != null) __obj.updateDynamic("contextValue")(contextValue.asInstanceOf[js.Any])
     if (fieldResolver != null) __obj.updateDynamic("fieldResolver")(js.Any.fromFunction4(fieldResolver))
     if (operationName != null) __obj.updateDynamic("operationName")(operationName.asInstanceOf[js.Any])
-    if (rootValue != null) __obj.updateDynamic("rootValue")(rootValue)
+    if (rootValue != null) __obj.updateDynamic("rootValue")(rootValue.asInstanceOf[js.Any])
     if (typeResolver != null) __obj.updateDynamic("typeResolver")(js.Any.fromFunction4(typeResolver))
     if (variableValues != null) __obj.updateDynamic("variableValues")(variableValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecutionArgs]

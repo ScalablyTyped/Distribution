@@ -13,7 +13,7 @@ trait ScandalResult extends js.Object {
 object ScandalResult {
   @scala.inline
   def apply(filePath: String, matches: js.Array[Anon_LeadingContextLines]): ScandalResult = {
-    val __obj = js.Dynamic.literal(filePath = filePath, matches = matches)
+    val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any], matches = matches.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ScandalResult]
   }

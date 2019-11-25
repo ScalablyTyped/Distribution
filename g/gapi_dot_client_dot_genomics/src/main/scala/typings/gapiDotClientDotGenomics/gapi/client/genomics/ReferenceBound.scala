@@ -18,8 +18,8 @@ object ReferenceBound {
   @scala.inline
   def apply(referenceName: String = null, upperBound: String = null): ReferenceBound = {
     val __obj = js.Dynamic.literal()
-    if (referenceName != null) __obj.updateDynamic("referenceName")(referenceName)
-    if (upperBound != null) __obj.updateDynamic("upperBound")(upperBound)
+    if (referenceName != null) __obj.updateDynamic("referenceName")(referenceName.asInstanceOf[js.Any])
+    if (upperBound != null) __obj.updateDynamic("upperBound")(upperBound.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReferenceBound]
   }
 }

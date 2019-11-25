@@ -23,10 +23,10 @@ object Options {
     transformFixtureDataFn: /* data */ js.Any => _ = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (log != null) __obj.updateDynamic("log")(js.Any.fromFunction1(log))
     if (modifyFixtureDataFn != null) __obj.updateDynamic("modifyFixtureDataFn")(js.Any.fromFunction1(modifyFixtureDataFn))
-    if (transaction != null) __obj.updateDynamic("transaction")(transaction)
+    if (transaction != null) __obj.updateDynamic("transaction")(transaction.asInstanceOf[js.Any])
     if (transformFixtureDataFn != null) __obj.updateDynamic("transformFixtureDataFn")(js.Any.fromFunction1(transformFixtureDataFn))
     __obj.asInstanceOf[Options]
   }

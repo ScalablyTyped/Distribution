@@ -66,15 +66,15 @@ object TestExecution {
     toolResultsStep: ToolResultsStep = null
   ): TestExecution = {
     val __obj = js.Dynamic.literal()
-    if (environment != null) __obj.updateDynamic("environment")(environment)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (matrixId != null) __obj.updateDynamic("matrixId")(matrixId)
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (testDetails != null) __obj.updateDynamic("testDetails")(testDetails)
-    if (testSpecification != null) __obj.updateDynamic("testSpecification")(testSpecification)
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp)
-    if (toolResultsStep != null) __obj.updateDynamic("toolResultsStep")(toolResultsStep)
+    if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (matrixId != null) __obj.updateDynamic("matrixId")(matrixId.asInstanceOf[js.Any])
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (testDetails != null) __obj.updateDynamic("testDetails")(testDetails.asInstanceOf[js.Any])
+    if (testSpecification != null) __obj.updateDynamic("testSpecification")(testSpecification.asInstanceOf[js.Any])
+    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
+    if (toolResultsStep != null) __obj.updateDynamic("toolResultsStep")(toolResultsStep.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestExecution]
   }
 }

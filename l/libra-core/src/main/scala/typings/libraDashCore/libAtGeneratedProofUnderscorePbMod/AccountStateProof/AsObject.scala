@@ -24,9 +24,9 @@ object AsObject {
     transactionInfoToAccountProof: typings.libraDashCore.libAtGeneratedProofUnderscorePbMod.SparseMerkleProof.AsObject = null
   ): AsObject = {
     val __obj = js.Dynamic.literal()
-    if (ledgerInfoToTransactionInfoProof != null) __obj.updateDynamic("ledgerInfoToTransactionInfoProof")(ledgerInfoToTransactionInfoProof)
-    if (transactionInfo != null) __obj.updateDynamic("transactionInfo")(transactionInfo)
-    if (transactionInfoToAccountProof != null) __obj.updateDynamic("transactionInfoToAccountProof")(transactionInfoToAccountProof)
+    if (ledgerInfoToTransactionInfoProof != null) __obj.updateDynamic("ledgerInfoToTransactionInfoProof")(ledgerInfoToTransactionInfoProof.asInstanceOf[js.Any])
+    if (transactionInfo != null) __obj.updateDynamic("transactionInfo")(transactionInfo.asInstanceOf[js.Any])
+    if (transactionInfoToAccountProof != null) __obj.updateDynamic("transactionInfoToAccountProof")(transactionInfoToAccountProof.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsObject]
   }
 }

@@ -14,9 +14,9 @@ object LangAccessibilityExportingOptions {
   @scala.inline
   def apply(chartMenuLabel: String = null, exportRegionLabel: String = null, menuButtonLabel: String = null): LangAccessibilityExportingOptions = {
     val __obj = js.Dynamic.literal()
-    if (chartMenuLabel != null) __obj.updateDynamic("chartMenuLabel")(chartMenuLabel)
-    if (exportRegionLabel != null) __obj.updateDynamic("exportRegionLabel")(exportRegionLabel)
-    if (menuButtonLabel != null) __obj.updateDynamic("menuButtonLabel")(menuButtonLabel)
+    if (chartMenuLabel != null) __obj.updateDynamic("chartMenuLabel")(chartMenuLabel.asInstanceOf[js.Any])
+    if (exportRegionLabel != null) __obj.updateDynamic("exportRegionLabel")(exportRegionLabel.asInstanceOf[js.Any])
+    if (menuButtonLabel != null) __obj.updateDynamic("menuButtonLabel")(menuButtonLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[LangAccessibilityExportingOptions]
   }
 }

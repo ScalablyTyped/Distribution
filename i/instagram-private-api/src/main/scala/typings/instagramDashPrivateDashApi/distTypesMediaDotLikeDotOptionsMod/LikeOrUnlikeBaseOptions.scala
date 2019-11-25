@@ -12,7 +12,7 @@ trait LikeOrUnlikeBaseOptions extends js.Object {
 object LikeOrUnlikeBaseOptions {
   @scala.inline
   def apply(mediaId: String, moduleInfo: LikeModuleInfoOption): LikeOrUnlikeBaseOptions = {
-    val __obj = js.Dynamic.literal(mediaId = mediaId, moduleInfo = moduleInfo)
+    val __obj = js.Dynamic.literal(mediaId = mediaId.asInstanceOf[js.Any], moduleInfo = moduleInfo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LikeOrUnlikeBaseOptions]
   }

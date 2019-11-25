@@ -50,12 +50,12 @@ object TechnologyTargeting {
     platformTypes: js.Array[PlatformType] = null
   ): TechnologyTargeting = {
     val __obj = js.Dynamic.literal()
-    if (browsers != null) __obj.updateDynamic("browsers")(browsers)
-    if (connectionTypes != null) __obj.updateDynamic("connectionTypes")(connectionTypes)
-    if (mobileCarriers != null) __obj.updateDynamic("mobileCarriers")(mobileCarriers)
-    if (operatingSystemVersions != null) __obj.updateDynamic("operatingSystemVersions")(operatingSystemVersions)
-    if (operatingSystems != null) __obj.updateDynamic("operatingSystems")(operatingSystems)
-    if (platformTypes != null) __obj.updateDynamic("platformTypes")(platformTypes)
+    if (browsers != null) __obj.updateDynamic("browsers")(browsers.asInstanceOf[js.Any])
+    if (connectionTypes != null) __obj.updateDynamic("connectionTypes")(connectionTypes.asInstanceOf[js.Any])
+    if (mobileCarriers != null) __obj.updateDynamic("mobileCarriers")(mobileCarriers.asInstanceOf[js.Any])
+    if (operatingSystemVersions != null) __obj.updateDynamic("operatingSystemVersions")(operatingSystemVersions.asInstanceOf[js.Any])
+    if (operatingSystems != null) __obj.updateDynamic("operatingSystems")(operatingSystems.asInstanceOf[js.Any])
+    if (platformTypes != null) __obj.updateDynamic("platformTypes")(platformTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[TechnologyTargeting]
   }
 }

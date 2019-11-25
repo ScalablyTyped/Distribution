@@ -12,8 +12,8 @@ trait ARIARoleRelationConceptAttribute extends js.Object {
 object ARIARoleRelationConceptAttribute {
   @scala.inline
   def apply(name: String, value: String = null): ARIARoleRelationConceptAttribute = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (value != null) __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ARIARoleRelationConceptAttribute]
   }
 }

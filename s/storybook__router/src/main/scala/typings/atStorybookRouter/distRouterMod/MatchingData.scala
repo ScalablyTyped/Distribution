@@ -13,7 +13,7 @@ object MatchingData {
   @scala.inline
   def apply(`match`: Anon_Path = null): MatchingData = {
     val __obj = js.Dynamic.literal()
-    if (`match` != null) __obj.updateDynamic("match")(`match`)
+    if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatchingData]
   }
 }

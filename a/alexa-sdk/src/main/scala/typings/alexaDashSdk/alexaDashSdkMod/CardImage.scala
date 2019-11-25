@@ -18,7 +18,7 @@ trait CardImage extends js.Object {
 object CardImage {
   @scala.inline
   def apply(largeImageUrl: String, smallImageUrl: String): CardImage = {
-    val __obj = js.Dynamic.literal(largeImageUrl = largeImageUrl, smallImageUrl = smallImageUrl)
+    val __obj = js.Dynamic.literal(largeImageUrl = largeImageUrl.asInstanceOf[js.Any], smallImageUrl = smallImageUrl.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CardImage]
   }

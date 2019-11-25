@@ -22,11 +22,11 @@ object AccountTaxTaxRule {
     useGlobalRate: js.UndefOr[Boolean] = js.undefined
   ): AccountTaxTaxRule = {
     val __obj = js.Dynamic.literal()
-    if (country != null) __obj.updateDynamic("country")(country)
-    if (locationId != null) __obj.updateDynamic("locationId")(locationId)
-    if (ratePercent != null) __obj.updateDynamic("ratePercent")(ratePercent)
-    if (!js.isUndefined(shippingTaxed)) __obj.updateDynamic("shippingTaxed")(shippingTaxed)
-    if (!js.isUndefined(useGlobalRate)) __obj.updateDynamic("useGlobalRate")(useGlobalRate)
+    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
+    if (locationId != null) __obj.updateDynamic("locationId")(locationId.asInstanceOf[js.Any])
+    if (ratePercent != null) __obj.updateDynamic("ratePercent")(ratePercent.asInstanceOf[js.Any])
+    if (!js.isUndefined(shippingTaxed)) __obj.updateDynamic("shippingTaxed")(shippingTaxed.asInstanceOf[js.Any])
+    if (!js.isUndefined(useGlobalRate)) __obj.updateDynamic("useGlobalRate")(useGlobalRate.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountTaxTaxRule]
   }
 }

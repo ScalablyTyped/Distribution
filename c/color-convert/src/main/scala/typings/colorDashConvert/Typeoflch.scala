@@ -17,7 +17,7 @@ trait Typeoflch extends js.Object {
 object Typeoflch {
   @scala.inline
   def apply(channels: `3`, lab: LCH => LAB, labels: lch): Typeoflch = {
-    val __obj = js.Dynamic.literal(channels = channels, lab = js.Any.fromFunction1(lab), labels = labels)
+    val __obj = js.Dynamic.literal(channels = channels.asInstanceOf[js.Any], lab = js.Any.fromFunction1(lab), labels = labels.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Typeoflch]
   }

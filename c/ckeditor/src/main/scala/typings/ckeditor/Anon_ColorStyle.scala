@@ -13,7 +13,7 @@ trait Anon_ColorStyle extends js.Object {
 object Anon_ColorStyle {
   @scala.inline
   def apply(color: String, style: String, width: String): Anon_ColorStyle = {
-    val __obj = js.Dynamic.literal(color = color, style = style, width = width)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ColorStyle]
   }

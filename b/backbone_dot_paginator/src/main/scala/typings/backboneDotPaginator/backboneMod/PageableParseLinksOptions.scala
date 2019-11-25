@@ -13,7 +13,7 @@ object PageableParseLinksOptions {
   @scala.inline
   def apply(xhr: JQueryXHR = null): PageableParseLinksOptions = {
     val __obj = js.Dynamic.literal()
-    if (xhr != null) __obj.updateDynamic("xhr")(xhr)
+    if (xhr != null) __obj.updateDynamic("xhr")(xhr.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageableParseLinksOptions]
   }
 }

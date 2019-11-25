@@ -21,12 +21,12 @@ object libRelayDashExperimentalUseRefetchableFragmentMod extends js.Object {
   type NonNullableReturnType[T /* <: Anon_DataUnknown */] = js.Function1[
     /* arg */ T, 
     NonNullable[
-      /* import warning: ImportType.apply Failed type conversion: T[' $data'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: T[' $data'] */ js.Any
     ]
   ]
   type NullableReturnType[T /* <: Anon_Data */] = js.Function1[
     /* arg */ T, 
-    (/* import warning: ImportType.apply Failed type conversion: T[' $data'] */ js.Any) | Null
+    (/* import warning: importer.ImportType#apply Failed type conversion: T[' $data'] */ js.Any) | Null
   ]
   type ReturnType[TQuery /* <: OperationType */, TKey /* <: Anon_Data */] = js.Tuple2[
     $Call[NonNullableReturnType[TKey] with NullableReturnType[TKey]], 

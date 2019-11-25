@@ -24,12 +24,12 @@ object Anon_CloseTooltip {
     stepNums: js.Array[String] = null
   ): Anon_CloseTooltip = {
     val __obj = js.Dynamic.literal()
-    if (closeTooltip != null) __obj.updateDynamic("closeTooltip")(closeTooltip)
-    if (doneBtn != null) __obj.updateDynamic("doneBtn")(doneBtn)
-    if (nextBtn != null) __obj.updateDynamic("nextBtn")(nextBtn)
-    if (prevBtn != null) __obj.updateDynamic("prevBtn")(prevBtn)
-    if (skipBtn != null) __obj.updateDynamic("skipBtn")(skipBtn)
-    if (stepNums != null) __obj.updateDynamic("stepNums")(stepNums)
+    if (closeTooltip != null) __obj.updateDynamic("closeTooltip")(closeTooltip.asInstanceOf[js.Any])
+    if (doneBtn != null) __obj.updateDynamic("doneBtn")(doneBtn.asInstanceOf[js.Any])
+    if (nextBtn != null) __obj.updateDynamic("nextBtn")(nextBtn.asInstanceOf[js.Any])
+    if (prevBtn != null) __obj.updateDynamic("prevBtn")(prevBtn.asInstanceOf[js.Any])
+    if (skipBtn != null) __obj.updateDynamic("skipBtn")(skipBtn.asInstanceOf[js.Any])
+    if (stepNums != null) __obj.updateDynamic("stepNums")(stepNums.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CloseTooltip]
   }
 }

@@ -24,8 +24,8 @@ object SignedAndUnsignedAttributes {
     toSchema: () => js.Any,
     `type`: String
   ): SignedAndUnsignedAttributes = {
-    val __obj = js.Dynamic.literal(attributes = attributes, encodedValue = encodedValue, fromSchema = js.Any.fromFunction1(fromSchema), toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], encodedValue = encodedValue.asInstanceOf[js.Any], fromSchema = js.Any.fromFunction1(fromSchema), toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignedAndUnsignedAttributes]
   }
 }

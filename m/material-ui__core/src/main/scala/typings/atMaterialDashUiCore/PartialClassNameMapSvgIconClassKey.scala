@@ -31,15 +31,15 @@ object PartialClassNameMapSvgIconClassKey {
     root: String = null
   ): PartialClassNameMapSvgIconClassKey = {
     val __obj = js.Dynamic.literal()
-    if (colorAction != null) __obj.updateDynamic("colorAction")(colorAction)
-    if (colorDisabled != null) __obj.updateDynamic("colorDisabled")(colorDisabled)
-    if (colorError != null) __obj.updateDynamic("colorError")(colorError)
-    if (colorPrimary != null) __obj.updateDynamic("colorPrimary")(colorPrimary)
-    if (colorSecondary != null) __obj.updateDynamic("colorSecondary")(colorSecondary)
-    if (fontSizeInherit != null) __obj.updateDynamic("fontSizeInherit")(fontSizeInherit)
-    if (fontSizeLarge != null) __obj.updateDynamic("fontSizeLarge")(fontSizeLarge)
-    if (fontSizeSmall != null) __obj.updateDynamic("fontSizeSmall")(fontSizeSmall)
-    if (root != null) __obj.updateDynamic("root")(root)
+    if (colorAction != null) __obj.updateDynamic("colorAction")(colorAction.asInstanceOf[js.Any])
+    if (colorDisabled != null) __obj.updateDynamic("colorDisabled")(colorDisabled.asInstanceOf[js.Any])
+    if (colorError != null) __obj.updateDynamic("colorError")(colorError.asInstanceOf[js.Any])
+    if (colorPrimary != null) __obj.updateDynamic("colorPrimary")(colorPrimary.asInstanceOf[js.Any])
+    if (colorSecondary != null) __obj.updateDynamic("colorSecondary")(colorSecondary.asInstanceOf[js.Any])
+    if (fontSizeInherit != null) __obj.updateDynamic("fontSizeInherit")(fontSizeInherit.asInstanceOf[js.Any])
+    if (fontSizeLarge != null) __obj.updateDynamic("fontSizeLarge")(fontSizeLarge.asInstanceOf[js.Any])
+    if (fontSizeSmall != null) __obj.updateDynamic("fontSizeSmall")(fontSizeSmall.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapSvgIconClassKey]
   }
 }

@@ -18,7 +18,7 @@ object ListDebuggeesResponse {
   @scala.inline
   def apply(debuggees: js.Array[Debuggee] = null): ListDebuggeesResponse = {
     val __obj = js.Dynamic.literal()
-    if (debuggees != null) __obj.updateDynamic("debuggees")(debuggees)
+    if (debuggees != null) __obj.updateDynamic("debuggees")(debuggees.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDebuggeesResponse]
   }
 }

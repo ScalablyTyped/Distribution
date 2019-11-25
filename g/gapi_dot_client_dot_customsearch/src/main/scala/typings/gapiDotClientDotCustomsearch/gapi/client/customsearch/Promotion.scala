@@ -26,12 +26,12 @@ object Promotion {
     title: String = null
   ): Promotion = {
     val __obj = js.Dynamic.literal()
-    if (bodyLines != null) __obj.updateDynamic("bodyLines")(bodyLines)
-    if (displayLink != null) __obj.updateDynamic("displayLink")(displayLink)
-    if (htmlTitle != null) __obj.updateDynamic("htmlTitle")(htmlTitle)
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (link != null) __obj.updateDynamic("link")(link)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (bodyLines != null) __obj.updateDynamic("bodyLines")(bodyLines.asInstanceOf[js.Any])
+    if (displayLink != null) __obj.updateDynamic("displayLink")(displayLink.asInstanceOf[js.Any])
+    if (htmlTitle != null) __obj.updateDynamic("htmlTitle")(htmlTitle.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Promotion]
   }
 }

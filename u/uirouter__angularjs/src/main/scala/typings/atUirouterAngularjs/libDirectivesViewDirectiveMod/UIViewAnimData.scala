@@ -17,7 +17,7 @@ trait UIViewAnimData extends js.Object {
 object UIViewAnimData {
   @scala.inline
   def apply($$animLeave: Anon_Resolve, $animEnter: js.Promise[_], $animLeave: js.Promise[_]): UIViewAnimData = {
-    val __obj = js.Dynamic.literal($$animLeave = $$animLeave, $animEnter = $animEnter, $animLeave = $animLeave)
+    val __obj = js.Dynamic.literal($$animLeave = $$animLeave.asInstanceOf[js.Any], $animEnter = $animEnter.asInstanceOf[js.Any], $animLeave = $animLeave.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UIViewAnimData]
   }

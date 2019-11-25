@@ -13,7 +13,7 @@ trait Anon_RTimestamp extends js.Object {
 object Anon_RTimestamp {
   @scala.inline
   def apply(rTimestamp: Double, tasks: js.Array[Job[_]]): Anon_RTimestamp = {
-    val __obj = js.Dynamic.literal(rTimestamp = rTimestamp, tasks = tasks)
+    val __obj = js.Dynamic.literal(rTimestamp = rTimestamp.asInstanceOf[js.Any], tasks = tasks.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_RTimestamp]
   }

@@ -35,8 +35,8 @@ object PersistenceSettings {
     synchronizeTabs: js.UndefOr[Boolean] = js.undefined
   ): PersistenceSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(experimentalTabSynchronization)) __obj.updateDynamic("experimentalTabSynchronization")(experimentalTabSynchronization)
-    if (!js.isUndefined(synchronizeTabs)) __obj.updateDynamic("synchronizeTabs")(synchronizeTabs)
+    if (!js.isUndefined(experimentalTabSynchronization)) __obj.updateDynamic("experimentalTabSynchronization")(experimentalTabSynchronization.asInstanceOf[js.Any])
+    if (!js.isUndefined(synchronizeTabs)) __obj.updateDynamic("synchronizeTabs")(synchronizeTabs.asInstanceOf[js.Any])
     __obj.asInstanceOf[PersistenceSettings]
   }
 }

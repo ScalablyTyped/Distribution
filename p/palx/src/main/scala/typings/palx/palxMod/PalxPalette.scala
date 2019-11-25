@@ -44,8 +44,8 @@ object PalxPalette {
     yellow: js.Array[String],
     StringDictionary: /* name */ StringDictionary[String | js.Array[String]] = null
   ): PalxPalette = {
-    val __obj = js.Dynamic.literal(base = base, black = black, blue = blue, cyan = cyan, fuschia = fuschia, gray = gray, green = green, indigo = indigo, lime = lime, orange = orange, pink = pink, red = red, teal = teal, violet = violet, yellow = yellow)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], black = black.asInstanceOf[js.Any], blue = blue.asInstanceOf[js.Any], cyan = cyan.asInstanceOf[js.Any], fuschia = fuschia.asInstanceOf[js.Any], gray = gray.asInstanceOf[js.Any], green = green.asInstanceOf[js.Any], indigo = indigo.asInstanceOf[js.Any], lime = lime.asInstanceOf[js.Any], orange = orange.asInstanceOf[js.Any], pink = pink.asInstanceOf[js.Any], red = red.asInstanceOf[js.Any], teal = teal.asInstanceOf[js.Any], violet = violet.asInstanceOf[js.Any], yellow = yellow.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[PalxPalette]
   }
 }

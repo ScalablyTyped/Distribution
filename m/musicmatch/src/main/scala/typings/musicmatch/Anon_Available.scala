@@ -13,7 +13,7 @@ trait Anon_Available extends js.Object {
 object Anon_Available {
   @scala.inline
   def apply(available: Double, execute_time: Double, status_code: Double): Anon_Available = {
-    val __obj = js.Dynamic.literal(available = available, execute_time = execute_time, status_code = status_code)
+    val __obj = js.Dynamic.literal(available = available.asInstanceOf[js.Any], execute_time = execute_time.asInstanceOf[js.Any], status_code = status_code.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Available]
   }

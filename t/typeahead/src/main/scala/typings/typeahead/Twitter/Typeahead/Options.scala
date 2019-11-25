@@ -35,9 +35,9 @@ object Options {
     minLength: Int | Double = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (classNames != null) __obj.updateDynamic("classNames")(classNames)
-    if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight)
-    if (!js.isUndefined(hint)) __obj.updateDynamic("hint")(hint)
+    if (classNames != null) __obj.updateDynamic("classNames")(classNames.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
+    if (!js.isUndefined(hint)) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
     if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

@@ -15,8 +15,8 @@ object AssignedLicense {
   @scala.inline
   def apply(disabledPlans: js.Array[String] = null, skuId: String = null): AssignedLicense = {
     val __obj = js.Dynamic.literal()
-    if (disabledPlans != null) __obj.updateDynamic("disabledPlans")(disabledPlans)
-    if (skuId != null) __obj.updateDynamic("skuId")(skuId)
+    if (disabledPlans != null) __obj.updateDynamic("disabledPlans")(disabledPlans.asInstanceOf[js.Any])
+    if (skuId != null) __obj.updateDynamic("skuId")(skuId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssignedLicense]
   }
 }

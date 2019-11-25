@@ -27,9 +27,9 @@ object AsObject {
     vmStatus: typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.VMStatus.AsObject = null
   ): AsObject = {
     val __obj = js.Dynamic.literal(validatorId = validatorId.asInstanceOf[js.Any])
-    if (acStatus != null) __obj.updateDynamic("acStatus")(acStatus)
-    if (mempoolStatus != null) __obj.updateDynamic("mempoolStatus")(mempoolStatus)
-    if (vmStatus != null) __obj.updateDynamic("vmStatus")(vmStatus)
+    if (acStatus != null) __obj.updateDynamic("acStatus")(acStatus.asInstanceOf[js.Any])
+    if (mempoolStatus != null) __obj.updateDynamic("mempoolStatus")(mempoolStatus.asInstanceOf[js.Any])
+    if (vmStatus != null) __obj.updateDynamic("vmStatus")(vmStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsObject]
   }
 }

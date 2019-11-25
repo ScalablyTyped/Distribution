@@ -24,12 +24,12 @@ object Swagger20Operation {
     summary: String = null,
     tags: js.Array[String] = null
   ): Swagger20Operation = {
-    val __obj = js.Dynamic.literal(responses = responses)
-    if (operationId != null) __obj.updateDynamic("operationId")(operationId)
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
-    if (security != null) __obj.updateDynamic("security")(security)
-    if (summary != null) __obj.updateDynamic("summary")(summary)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
+    val __obj = js.Dynamic.literal(responses = responses.asInstanceOf[js.Any])
+    if (operationId != null) __obj.updateDynamic("operationId")(operationId.asInstanceOf[js.Any])
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
+    if (security != null) __obj.updateDynamic("security")(security.asInstanceOf[js.Any])
+    if (summary != null) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[Swagger20Operation]
   }
 }

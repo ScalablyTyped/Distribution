@@ -11,7 +11,7 @@ trait WindowSessionStorage extends js.Object {
 object WindowSessionStorage {
   @scala.inline
   def apply(sessionStorage: Storage): WindowSessionStorage = {
-    val __obj = js.Dynamic.literal(sessionStorage = sessionStorage)
+    val __obj = js.Dynamic.literal(sessionStorage = sessionStorage.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WindowSessionStorage]
   }

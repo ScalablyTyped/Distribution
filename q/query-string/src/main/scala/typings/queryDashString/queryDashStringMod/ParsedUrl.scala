@@ -12,7 +12,7 @@ trait ParsedUrl extends js.Object {
 object ParsedUrl {
   @scala.inline
   def apply(query: ParsedQuery[String], url: String): ParsedUrl = {
-    val __obj = js.Dynamic.literal(query = query, url = url)
+    val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ParsedUrl]
   }

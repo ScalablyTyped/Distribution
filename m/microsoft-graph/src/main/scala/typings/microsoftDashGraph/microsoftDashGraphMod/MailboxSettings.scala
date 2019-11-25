@@ -33,13 +33,13 @@ object MailboxSettings {
     workingHours: WorkingHours = null
   ): MailboxSettings = {
     val __obj = js.Dynamic.literal()
-    if (archiveFolder != null) __obj.updateDynamic("archiveFolder")(archiveFolder)
-    if (automaticRepliesSetting != null) __obj.updateDynamic("automaticRepliesSetting")(automaticRepliesSetting)
-    if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (timeFormat != null) __obj.updateDynamic("timeFormat")(timeFormat)
-    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone)
-    if (workingHours != null) __obj.updateDynamic("workingHours")(workingHours)
+    if (archiveFolder != null) __obj.updateDynamic("archiveFolder")(archiveFolder.asInstanceOf[js.Any])
+    if (automaticRepliesSetting != null) __obj.updateDynamic("automaticRepliesSetting")(automaticRepliesSetting.asInstanceOf[js.Any])
+    if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (timeFormat != null) __obj.updateDynamic("timeFormat")(timeFormat.asInstanceOf[js.Any])
+    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone.asInstanceOf[js.Any])
+    if (workingHours != null) __obj.updateDynamic("workingHours")(workingHours.asInstanceOf[js.Any])
     __obj.asInstanceOf[MailboxSettings]
   }
 }

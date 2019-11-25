@@ -77,11 +77,11 @@ object PlusWebviewWebviewBounceStyle {
     slideoffset: js.Any = null
   ): PlusWebviewWebviewBounceStyle = {
     val __obj = js.Dynamic.literal()
-    if (changeoffset != null) __obj.updateDynamic("changeoffset")(changeoffset)
-    if (offset != null) __obj.updateDynamic("offset")(offset)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (!js.isUndefined(preventTouchEvent)) __obj.updateDynamic("preventTouchEvent")(preventTouchEvent)
-    if (slideoffset != null) __obj.updateDynamic("slideoffset")(slideoffset)
+    if (changeoffset != null) __obj.updateDynamic("changeoffset")(changeoffset.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventTouchEvent)) __obj.updateDynamic("preventTouchEvent")(preventTouchEvent.asInstanceOf[js.Any])
+    if (slideoffset != null) __obj.updateDynamic("slideoffset")(slideoffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusWebviewWebviewBounceStyle]
   }
 }

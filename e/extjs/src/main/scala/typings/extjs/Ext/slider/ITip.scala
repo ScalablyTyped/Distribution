@@ -26,17 +26,15 @@ object ITip {
     ITip: typings.extjs.Ext.tip.ITip = null,
     align: java.lang.String = null,
     getText: /* thumb */ js.UndefOr[IThumb] => java.lang.String = null,
-    minWidth: Int | Double = null,
     offsets: Array = null,
     position: java.lang.String = null
   ): ITip = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, ITip)
-    if (align != null) __obj.updateDynamic("align")(align)
+    if (ITip != null) js.Dynamic.global.Object.assign(__obj, ITip)
+    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (getText != null) __obj.updateDynamic("getText")(js.Any.fromFunction1(getText))
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (offsets != null) __obj.updateDynamic("offsets")(offsets)
-    if (position != null) __obj.updateDynamic("position")(position)
+    if (offsets != null) __obj.updateDynamic("offsets")(offsets.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITip]
   }
 }

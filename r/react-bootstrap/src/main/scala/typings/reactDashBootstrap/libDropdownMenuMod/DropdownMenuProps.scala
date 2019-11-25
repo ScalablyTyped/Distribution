@@ -25,17 +25,15 @@ object DropdownMenuProps {
     labelledBy: String | Double = null,
     onClose: js.Function = null,
     onSelect: SelectCallback = null,
-    open: js.UndefOr[Boolean] = js.undefined,
     pullRight: js.UndefOr[Boolean] = js.undefined
   ): DropdownMenuProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (labelledBy != null) __obj.updateDynamic("labelledBy")(labelledBy.asInstanceOf[js.Any])
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
-    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
-    if (!js.isUndefined(pullRight)) __obj.updateDynamic("pullRight")(pullRight)
+    if (onClose != null) __obj.updateDynamic("onClose")(onClose.asInstanceOf[js.Any])
+    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect.asInstanceOf[js.Any])
+    if (!js.isUndefined(pullRight)) __obj.updateDynamic("pullRight")(pullRight.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropdownMenuProps]
   }
 }

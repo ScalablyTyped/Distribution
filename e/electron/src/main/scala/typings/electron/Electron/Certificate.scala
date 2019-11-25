@@ -62,7 +62,7 @@ object Certificate {
     validExpiry: Double,
     validStart: Double
   ): Certificate = {
-    val __obj = js.Dynamic.literal(data = data, fingerprint = fingerprint, issuer = issuer, issuerCert = issuerCert, issuerName = issuerName, serialNumber = serialNumber, subject = subject, subjectName = subjectName, validExpiry = validExpiry, validStart = validStart)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], fingerprint = fingerprint.asInstanceOf[js.Any], issuer = issuer.asInstanceOf[js.Any], issuerCert = issuerCert.asInstanceOf[js.Any], issuerName = issuerName.asInstanceOf[js.Any], serialNumber = serialNumber.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any], subjectName = subjectName.asInstanceOf[js.Any], validExpiry = validExpiry.asInstanceOf[js.Any], validStart = validStart.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Certificate]
   }

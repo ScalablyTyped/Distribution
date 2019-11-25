@@ -18,8 +18,8 @@ object WheelConstraintOptions {
     sideFriction: Int | Double = null
   ): WheelConstraintOptions = {
     val __obj = js.Dynamic.literal()
-    if (localForwardVector != null) __obj.updateDynamic("localForwardVector")(localForwardVector)
-    if (localPosition != null) __obj.updateDynamic("localPosition")(localPosition)
+    if (localForwardVector != null) __obj.updateDynamic("localForwardVector")(localForwardVector.asInstanceOf[js.Any])
+    if (localPosition != null) __obj.updateDynamic("localPosition")(localPosition.asInstanceOf[js.Any])
     if (sideFriction != null) __obj.updateDynamic("sideFriction")(sideFriction.asInstanceOf[js.Any])
     __obj.asInstanceOf[WheelConstraintOptions]
   }

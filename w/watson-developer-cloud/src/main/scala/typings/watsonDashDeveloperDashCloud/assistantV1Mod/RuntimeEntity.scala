@@ -35,11 +35,11 @@ object RuntimeEntity {
     groups: js.Array[CaptureGroup] = null,
     metadata: js.Object = null
   ): RuntimeEntity = {
-    val __obj = js.Dynamic.literal(entity = entity, location = location, value = value)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (confidence != null) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
-    if (groups != null) __obj.updateDynamic("groups")(groups)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuntimeEntity]
   }
 }

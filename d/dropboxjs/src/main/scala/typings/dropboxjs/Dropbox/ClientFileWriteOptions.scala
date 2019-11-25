@@ -18,9 +18,9 @@ object ClientFileWriteOptions {
     parentRev: String = null
   ): ClientFileWriteOptions = {
     val __obj = js.Dynamic.literal()
-    if (lastVersionTag != null) __obj.updateDynamic("lastVersionTag")(lastVersionTag)
-    if (!js.isUndefined(noOverwrite)) __obj.updateDynamic("noOverwrite")(noOverwrite)
-    if (parentRev != null) __obj.updateDynamic("parentRev")(parentRev)
+    if (lastVersionTag != null) __obj.updateDynamic("lastVersionTag")(lastVersionTag.asInstanceOf[js.Any])
+    if (!js.isUndefined(noOverwrite)) __obj.updateDynamic("noOverwrite")(noOverwrite.asInstanceOf[js.Any])
+    if (parentRev != null) __obj.updateDynamic("parentRev")(parentRev.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientFileWriteOptions]
   }
 }

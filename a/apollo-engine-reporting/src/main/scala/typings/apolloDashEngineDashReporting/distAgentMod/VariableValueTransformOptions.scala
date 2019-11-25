@@ -13,8 +13,8 @@ trait VariableValueTransformOptions extends js.Object {
 object VariableValueTransformOptions {
   @scala.inline
   def apply(variables: Record[String, _], operationString: String = null): VariableValueTransformOptions = {
-    val __obj = js.Dynamic.literal(variables = variables)
-    if (operationString != null) __obj.updateDynamic("operationString")(operationString)
+    val __obj = js.Dynamic.literal(variables = variables.asInstanceOf[js.Any])
+    if (operationString != null) __obj.updateDynamic("operationString")(operationString.asInstanceOf[js.Any])
     __obj.asInstanceOf[VariableValueTransformOptions]
   }
 }

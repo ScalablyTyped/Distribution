@@ -12,7 +12,7 @@ object ThreadRowAttachmentIconDescriptorBase {
   @scala.inline
   def apply(tooltip: String = null): ThreadRowAttachmentIconDescriptorBase = {
     val __obj = js.Dynamic.literal()
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThreadRowAttachmentIconDescriptorBase]
   }
 }

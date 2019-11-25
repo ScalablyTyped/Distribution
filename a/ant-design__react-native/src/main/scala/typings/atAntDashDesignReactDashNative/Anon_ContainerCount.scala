@@ -24,7 +24,7 @@ object Anon_ContainerCount {
     icon: RegisteredStyle[ViewStyle],
     input: RegisteredStyle[TextStyle]
   ): Anon_ContainerCount = {
-    val __obj = js.Dynamic.literal(container = container, count = count, errorIcon = errorIcon, icon = icon, input = input)
+    val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], errorIcon = errorIcon.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ContainerCount]
   }

@@ -78,10 +78,10 @@ object _SamplingRule {
     RuleARN: String = null,
     RuleName: String = null
   ): _SamplingRule = {
-    val __obj = js.Dynamic.literal(FixedRate = FixedRate, HTTPMethod = HTTPMethod, Host = Host, Priority = Priority, ReservoirSize = ReservoirSize, ResourceARN = ResourceARN, ServiceName = ServiceName, ServiceType = ServiceType, URLPath = URLPath, Version = Version)
+    val __obj = js.Dynamic.literal(FixedRate = FixedRate.asInstanceOf[js.Any], HTTPMethod = HTTPMethod.asInstanceOf[js.Any], Host = Host.asInstanceOf[js.Any], Priority = Priority.asInstanceOf[js.Any], ReservoirSize = ReservoirSize.asInstanceOf[js.Any], ResourceARN = ResourceARN.asInstanceOf[js.Any], ServiceName = ServiceName.asInstanceOf[js.Any], ServiceType = ServiceType.asInstanceOf[js.Any], URLPath = URLPath.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any])
     if (Attributes != null) __obj.updateDynamic("Attributes")(Attributes.asInstanceOf[js.Any])
-    if (RuleARN != null) __obj.updateDynamic("RuleARN")(RuleARN)
-    if (RuleName != null) __obj.updateDynamic("RuleName")(RuleName)
+    if (RuleARN != null) __obj.updateDynamic("RuleARN")(RuleARN.asInstanceOf[js.Any])
+    if (RuleName != null) __obj.updateDynamic("RuleName")(RuleName.asInstanceOf[js.Any])
     __obj.asInstanceOf[_SamplingRule]
   }
 }

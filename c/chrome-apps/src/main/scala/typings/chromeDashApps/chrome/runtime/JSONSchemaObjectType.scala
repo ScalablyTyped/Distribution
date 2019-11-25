@@ -25,9 +25,9 @@ object JSONSchemaObjectType {
     properties: StringDictionary[JSONSchemaBasicType | JSONSchemaRefType] = null
   ): JSONSchemaObjectType = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (additionalProperties != null) __obj.updateDynamic("additionalProperties")(additionalProperties)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (additionalProperties != null) __obj.updateDynamic("additionalProperties")(additionalProperties.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSONSchemaObjectType]
   }
 }

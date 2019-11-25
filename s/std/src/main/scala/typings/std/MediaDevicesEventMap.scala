@@ -11,7 +11,7 @@ trait MediaDevicesEventMap extends js.Object {
 object MediaDevicesEventMap {
   @scala.inline
   def apply(devicechange: Event): MediaDevicesEventMap = {
-    val __obj = js.Dynamic.literal(devicechange = devicechange)
+    val __obj = js.Dynamic.literal(devicechange = devicechange.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MediaDevicesEventMap]
   }

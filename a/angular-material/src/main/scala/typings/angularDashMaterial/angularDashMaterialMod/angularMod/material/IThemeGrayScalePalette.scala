@@ -15,11 +15,11 @@ trait IThemeGrayScalePalette extends js.Object {
 object IThemeGrayScalePalette {
   @scala.inline
   def apply(`1`: String, `2`: String, `3`: String, `4`: String, name: String): IThemeGrayScalePalette = {
-    val __obj = js.Dynamic.literal(name = name)
-    __obj.updateDynamic("1")(`1`)
-    __obj.updateDynamic("2")(`2`)
-    __obj.updateDynamic("3")(`3`)
-    __obj.updateDynamic("4")(`4`)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("1")(`1`.asInstanceOf[js.Any])
+    __obj.updateDynamic("2")(`2`.asInstanceOf[js.Any])
+    __obj.updateDynamic("3")(`3`.asInstanceOf[js.Any])
+    __obj.updateDynamic("4")(`4`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IThemeGrayScalePalette]
   }
 }

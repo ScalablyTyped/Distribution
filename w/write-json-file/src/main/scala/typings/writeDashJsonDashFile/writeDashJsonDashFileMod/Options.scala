@@ -41,7 +41,7 @@ object Options {
     sortKeys: Boolean | SortKeys = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(detectIndent)) __obj.updateDynamic("detectIndent")(detectIndent)
+    if (!js.isUndefined(detectIndent)) __obj.updateDynamic("detectIndent")(detectIndent.asInstanceOf[js.Any])
     if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (replacer != null) __obj.updateDynamic("replacer")(replacer.asInstanceOf[js.Any])

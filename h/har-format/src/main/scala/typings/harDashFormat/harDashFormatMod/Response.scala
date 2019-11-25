@@ -59,9 +59,9 @@ object Response {
     _transferSize: Int | Double = null,
     comment: String = null
   ): Response = {
-    val __obj = js.Dynamic.literal(bodySize = bodySize, content = content, cookies = cookies, headers = headers, headersSize = headersSize, httpVersion = httpVersion, redirectURL = redirectURL, status = status, statusText = statusText)
+    val __obj = js.Dynamic.literal(bodySize = bodySize.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], cookies = cookies.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], headersSize = headersSize.asInstanceOf[js.Any], httpVersion = httpVersion.asInstanceOf[js.Any], redirectURL = redirectURL.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any])
     if (_transferSize != null) __obj.updateDynamic("_transferSize")(_transferSize.asInstanceOf[js.Any])
-    if (comment != null) __obj.updateDynamic("comment")(comment)
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
     __obj.asInstanceOf[Response]
   }
 }

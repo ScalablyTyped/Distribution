@@ -26,9 +26,9 @@ trait InstalledDetails extends js.Object {
 object InstalledDetails {
   @scala.inline
   def apply(reason: String, id: String = null, previousVersion: String = null): InstalledDetails = {
-    val __obj = js.Dynamic.literal(reason = reason)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (previousVersion != null) __obj.updateDynamic("previousVersion")(previousVersion)
+    val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (previousVersion != null) __obj.updateDynamic("previousVersion")(previousVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstalledDetails]
   }
 }

@@ -32,7 +32,7 @@ object ExtensionEvents {
     extensionName: String,
     publisherName: String
   ): ExtensionEvents = {
-    val __obj = js.Dynamic.literal(events = events, extensionId = extensionId, extensionName = extensionName, publisherName = publisherName)
+    val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], extensionId = extensionId.asInstanceOf[js.Any], extensionName = extensionName.asInstanceOf[js.Any], publisherName = publisherName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExtensionEvents]
   }

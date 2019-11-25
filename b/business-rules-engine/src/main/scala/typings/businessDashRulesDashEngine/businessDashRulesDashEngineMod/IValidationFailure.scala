@@ -18,8 +18,8 @@ object IValidationFailure {
     IsAsync: Boolean,
     TranslateArgs: IErrorTranslateArgs = null
   ): IValidationFailure = {
-    val __obj = js.Dynamic.literal(Error = Error, ErrorMessage = ErrorMessage, HasError = HasError, IsAsync = IsAsync)
-    if (TranslateArgs != null) __obj.updateDynamic("TranslateArgs")(TranslateArgs)
+    val __obj = js.Dynamic.literal(Error = Error.asInstanceOf[js.Any], ErrorMessage = ErrorMessage.asInstanceOf[js.Any], HasError = HasError.asInstanceOf[js.Any], IsAsync = IsAsync.asInstanceOf[js.Any])
+    if (TranslateArgs != null) __obj.updateDynamic("TranslateArgs")(TranslateArgs.asInstanceOf[js.Any])
     __obj.asInstanceOf[IValidationFailure]
   }
 }

@@ -36,9 +36,9 @@ object FormOptions {
     interceptSubmit: js.UndefOr[Boolean] = js.undefined
   ): FormOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoUpload)) __obj.updateDynamic("autoUpload")(autoUpload)
+    if (!js.isUndefined(autoUpload)) __obj.updateDynamic("autoUpload")(autoUpload.asInstanceOf[js.Any])
     if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
-    if (!js.isUndefined(interceptSubmit)) __obj.updateDynamic("interceptSubmit")(interceptSubmit)
+    if (!js.isUndefined(interceptSubmit)) __obj.updateDynamic("interceptSubmit")(interceptSubmit.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormOptions]
   }
 }

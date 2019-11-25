@@ -57,14 +57,14 @@ object GmailAdvancedOptions {
     replyTo: String = null
   ): GmailAdvancedOptions = {
     val __obj = js.Dynamic.literal()
-    if (attachments != null) __obj.updateDynamic("attachments")(attachments)
-    if (bcc != null) __obj.updateDynamic("bcc")(bcc)
-    if (cc != null) __obj.updateDynamic("cc")(cc)
-    if (from != null) __obj.updateDynamic("from")(from)
-    if (htmlBody != null) __obj.updateDynamic("htmlBody")(htmlBody)
-    if (inlineImages != null) __obj.updateDynamic("inlineImages")(inlineImages)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (replyTo != null) __obj.updateDynamic("replyTo")(replyTo)
+    if (attachments != null) __obj.updateDynamic("attachments")(attachments.asInstanceOf[js.Any])
+    if (bcc != null) __obj.updateDynamic("bcc")(bcc.asInstanceOf[js.Any])
+    if (cc != null) __obj.updateDynamic("cc")(cc.asInstanceOf[js.Any])
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (htmlBody != null) __obj.updateDynamic("htmlBody")(htmlBody.asInstanceOf[js.Any])
+    if (inlineImages != null) __obj.updateDynamic("inlineImages")(inlineImages.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (replyTo != null) __obj.updateDynamic("replyTo")(replyTo.asInstanceOf[js.Any])
     __obj.asInstanceOf[GmailAdvancedOptions]
   }
 }

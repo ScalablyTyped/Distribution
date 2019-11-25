@@ -11,7 +11,7 @@ trait UsersGetGpgKeyParams extends js.Object {
 object UsersGetGpgKeyParams {
   @scala.inline
   def apply(gpg_key_id: Double): UsersGetGpgKeyParams = {
-    val __obj = js.Dynamic.literal(gpg_key_id = gpg_key_id)
+    val __obj = js.Dynamic.literal(gpg_key_id = gpg_key_id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UsersGetGpgKeyParams]
   }

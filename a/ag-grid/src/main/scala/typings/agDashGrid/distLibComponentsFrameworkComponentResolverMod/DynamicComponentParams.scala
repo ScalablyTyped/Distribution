@@ -33,12 +33,12 @@ object DynamicComponentParams {
     node: RowNode = null,
     rowIndex: Int | Double = null
   ): DynamicComponentParams = {
-    val __obj = js.Dynamic.literal(api = api, columnApi = columnApi)
-    if ($scope != null) __obj.updateDynamic("$scope")($scope)
-    if (colDef != null) __obj.updateDynamic("colDef")(colDef)
-    if (column != null) __obj.updateDynamic("column")(column)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (node != null) __obj.updateDynamic("node")(node)
+    val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], columnApi = columnApi.asInstanceOf[js.Any])
+    if ($scope != null) __obj.updateDynamic("$scope")($scope.asInstanceOf[js.Any])
+    if (colDef != null) __obj.updateDynamic("colDef")(colDef.asInstanceOf[js.Any])
+    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
     if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[DynamicComponentParams]
   }

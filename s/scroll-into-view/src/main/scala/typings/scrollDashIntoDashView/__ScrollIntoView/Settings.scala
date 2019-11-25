@@ -21,7 +21,7 @@ object Settings {
     validTarget: (/* target */ HTMLElement, /* parentsScrolled */ Double) => Boolean = null
   ): Settings = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align)
+    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (ease != null) __obj.updateDynamic("ease")(js.Any.fromFunction1(ease))
     if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
     if (validTarget != null) __obj.updateDynamic("validTarget")(js.Any.fromFunction2(validTarget))

@@ -21,8 +21,8 @@ object AsObject {
     ],
     ledgerInfo: typings.libraDashCore.libAtGeneratedLedgerUnderscoreInfoUnderscorePbMod.LedgerInfo.AsObject = null
   ): AsObject = {
-    val __obj = js.Dynamic.literal(signaturesList = signaturesList)
-    if (ledgerInfo != null) __obj.updateDynamic("ledgerInfo")(ledgerInfo)
+    val __obj = js.Dynamic.literal(signaturesList = signaturesList.asInstanceOf[js.Any])
+    if (ledgerInfo != null) __obj.updateDynamic("ledgerInfo")(ledgerInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsObject]
   }
 }

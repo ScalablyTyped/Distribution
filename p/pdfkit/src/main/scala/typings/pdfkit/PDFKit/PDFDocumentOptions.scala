@@ -45,18 +45,18 @@ object PDFDocumentOptions {
     userPassword: String = null
   ): PDFDocumentOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoFirstPage)) __obj.updateDynamic("autoFirstPage")(autoFirstPage)
-    if (!js.isUndefined(bufferPages)) __obj.updateDynamic("bufferPages")(bufferPages)
-    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress)
-    if (info != null) __obj.updateDynamic("info")(info)
+    if (!js.isUndefined(autoFirstPage)) __obj.updateDynamic("autoFirstPage")(autoFirstPage.asInstanceOf[js.Any])
+    if (!js.isUndefined(bufferPages)) __obj.updateDynamic("bufferPages")(bufferPages.asInstanceOf[js.Any])
+    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress.asInstanceOf[js.Any])
+    if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (margins != null) __obj.updateDynamic("margins")(margins)
-    if (ownerPassword != null) __obj.updateDynamic("ownerPassword")(ownerPassword)
+    if (margins != null) __obj.updateDynamic("margins")(margins.asInstanceOf[js.Any])
+    if (ownerPassword != null) __obj.updateDynamic("ownerPassword")(ownerPassword.asInstanceOf[js.Any])
     if (pdfVersion != null) __obj.updateDynamic("pdfVersion")(pdfVersion.asInstanceOf[js.Any])
-    if (permissions != null) __obj.updateDynamic("permissions")(permissions)
+    if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (userPassword != null) __obj.updateDynamic("userPassword")(userPassword)
+    if (userPassword != null) __obj.updateDynamic("userPassword")(userPassword.asInstanceOf[js.Any])
     __obj.asInstanceOf[PDFDocumentOptions]
   }
 }

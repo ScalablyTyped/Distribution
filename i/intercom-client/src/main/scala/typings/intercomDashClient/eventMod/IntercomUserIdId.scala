@@ -11,7 +11,7 @@ trait IntercomUserIdId extends EventIdentifier {
 object IntercomUserIdId {
   @scala.inline
   def apply(intercom_user_id: String): IntercomUserIdId = {
-    val __obj = js.Dynamic.literal(intercom_user_id = intercom_user_id)
+    val __obj = js.Dynamic.literal(intercom_user_id = intercom_user_id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IntercomUserIdId]
   }

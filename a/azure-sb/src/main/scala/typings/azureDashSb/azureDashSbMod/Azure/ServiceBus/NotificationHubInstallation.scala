@@ -39,14 +39,14 @@ object NotificationHubInstallation {
     tags: js.Array[String] = null,
     templates: StringDictionary[Anon_Body] = null
   ): NotificationHubInstallation = {
-    val __obj = js.Dynamic.literal(installationId = installationId, platform = platform.asInstanceOf[js.Any], pushChannel = pushChannel)
-    if (expirationTime != null) __obj.updateDynamic("expirationTime")(expirationTime)
-    if (expiredPushChannel != null) __obj.updateDynamic("expiredPushChannel")(expiredPushChannel)
-    if (lastActiveOn != null) __obj.updateDynamic("lastActiveOn")(lastActiveOn)
-    if (lastUpdate != null) __obj.updateDynamic("lastUpdate")(lastUpdate)
-    if (secondaryTile != null) __obj.updateDynamic("secondaryTile")(secondaryTile)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
-    if (templates != null) __obj.updateDynamic("templates")(templates)
+    val __obj = js.Dynamic.literal(installationId = installationId.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], pushChannel = pushChannel.asInstanceOf[js.Any])
+    if (expirationTime != null) __obj.updateDynamic("expirationTime")(expirationTime.asInstanceOf[js.Any])
+    if (expiredPushChannel != null) __obj.updateDynamic("expiredPushChannel")(expiredPushChannel.asInstanceOf[js.Any])
+    if (lastActiveOn != null) __obj.updateDynamic("lastActiveOn")(lastActiveOn.asInstanceOf[js.Any])
+    if (lastUpdate != null) __obj.updateDynamic("lastUpdate")(lastUpdate.asInstanceOf[js.Any])
+    if (secondaryTile != null) __obj.updateDynamic("secondaryTile")(secondaryTile.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (templates != null) __obj.updateDynamic("templates")(templates.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationHubInstallation]
   }
 }

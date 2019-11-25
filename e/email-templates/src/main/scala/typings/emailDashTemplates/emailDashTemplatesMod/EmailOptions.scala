@@ -25,7 +25,7 @@ trait EmailOptions[T] extends js.Object {
 object EmailOptions {
   @scala.inline
   def apply[T](locals: T, message: Options, template: String): EmailOptions[T] = {
-    val __obj = js.Dynamic.literal(locals = locals.asInstanceOf[js.Any], message = message, template = template)
+    val __obj = js.Dynamic.literal(locals = locals.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EmailOptions[T]]
   }

@@ -24,9 +24,9 @@ object Ruleset {
   @scala.inline
   def apply(createTime: String = null, name: String = null, source: Source = null): Ruleset = {
     val __obj = js.Dynamic.literal()
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[Ruleset]
   }
 }

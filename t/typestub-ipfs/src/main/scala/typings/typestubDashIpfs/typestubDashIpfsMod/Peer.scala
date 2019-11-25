@@ -12,7 +12,7 @@ trait Peer extends js.Object {
 object Peer {
   @scala.inline
   def apply(addr: Multiaddr, peer: PeerInfo): Peer = {
-    val __obj = js.Dynamic.literal(addr = addr, peer = peer)
+    val __obj = js.Dynamic.literal(addr = addr.asInstanceOf[js.Any], peer = peer.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Peer]
   }

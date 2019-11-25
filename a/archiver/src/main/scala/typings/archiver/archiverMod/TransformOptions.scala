@@ -26,13 +26,13 @@ object TransformOptions {
     writeableObjectMode: js.UndefOr[Boolean] = js.undefined
   ): TransformOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowHalfOpen)) __obj.updateDynamic("allowHalfOpen")(allowHalfOpen)
-    if (!js.isUndefined(decodeStrings)) __obj.updateDynamic("decodeStrings")(decodeStrings)
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (!js.isUndefined(allowHalfOpen)) __obj.updateDynamic("allowHalfOpen")(allowHalfOpen.asInstanceOf[js.Any])
+    if (!js.isUndefined(decodeStrings)) __obj.updateDynamic("decodeStrings")(decodeStrings.asInstanceOf[js.Any])
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (highWaterMark != null) __obj.updateDynamic("highWaterMark")(highWaterMark.asInstanceOf[js.Any])
-    if (!js.isUndefined(objectmode)) __obj.updateDynamic("objectmode")(objectmode)
-    if (!js.isUndefined(readableObjectMode)) __obj.updateDynamic("readableObjectMode")(readableObjectMode)
-    if (!js.isUndefined(writeableObjectMode)) __obj.updateDynamic("writeableObjectMode")(writeableObjectMode)
+    if (!js.isUndefined(objectmode)) __obj.updateDynamic("objectmode")(objectmode.asInstanceOf[js.Any])
+    if (!js.isUndefined(readableObjectMode)) __obj.updateDynamic("readableObjectMode")(readableObjectMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(writeableObjectMode)) __obj.updateDynamic("writeableObjectMode")(writeableObjectMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransformOptions]
   }
 }

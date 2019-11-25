@@ -13,8 +13,8 @@ trait Anon_IconId extends js.Object {
 object Anon_IconId {
   @scala.inline
   def apply(iconId: String, styleId: String, ownerId: String = null): Anon_IconId = {
-    val __obj = js.Dynamic.literal(iconId = iconId, styleId = styleId)
-    if (ownerId != null) __obj.updateDynamic("ownerId")(ownerId)
+    val __obj = js.Dynamic.literal(iconId = iconId.asInstanceOf[js.Any], styleId = styleId.asInstanceOf[js.Any])
+    if (ownerId != null) __obj.updateDynamic("ownerId")(ownerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IconId]
   }
 }

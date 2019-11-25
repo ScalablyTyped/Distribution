@@ -42,10 +42,10 @@ object SubRowDetails {
     siblingIndex: Int | Double = null,
     treeDepth: Int | Double = null
   ): SubRowDetails[T] = {
-    val __obj = js.Dynamic.literal(expanded = expanded, field = field)
-    if (!js.isUndefined(canExpand)) __obj.updateDynamic("canExpand")(canExpand)
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (!js.isUndefined(group)) __obj.updateDynamic("group")(group)
+    val __obj = js.Dynamic.literal(expanded = expanded.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any])
+    if (!js.isUndefined(canExpand)) __obj.updateDynamic("canExpand")(canExpand.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (!js.isUndefined(group)) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
     if (numberSiblings != null) __obj.updateDynamic("numberSiblings")(numberSiblings.asInstanceOf[js.Any])
     if (siblingIndex != null) __obj.updateDynamic("siblingIndex")(siblingIndex.asInstanceOf[js.Any])
     if (treeDepth != null) __obj.updateDynamic("treeDepth")(treeDepth.asInstanceOf[js.Any])

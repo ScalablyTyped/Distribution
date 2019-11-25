@@ -21,10 +21,9 @@ object TransformationDescriptor {
     globalMatrix: Matrix,
     local: String,
     localMatrix: Matrix,
-    string: String,
-    toString: () => String
+    string: String
   ): TransformationDescriptor = {
-    val __obj = js.Dynamic.literal(diffMatrix = diffMatrix, global = global, globalMatrix = globalMatrix, local = local, localMatrix = localMatrix, string = string, toString = js.Any.fromFunction0(toString))
+    val __obj = js.Dynamic.literal(diffMatrix = diffMatrix.asInstanceOf[js.Any], global = global.asInstanceOf[js.Any], globalMatrix = globalMatrix.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any], localMatrix = localMatrix.asInstanceOf[js.Any], string = string.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TransformationDescriptor]
   }

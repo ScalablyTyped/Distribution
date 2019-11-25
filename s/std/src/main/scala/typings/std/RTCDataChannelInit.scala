@@ -29,10 +29,10 @@ object RTCDataChannelInit {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (maxPacketLifeTime != null) __obj.updateDynamic("maxPacketLifeTime")(maxPacketLifeTime.asInstanceOf[js.Any])
     if (maxRetransmits != null) __obj.updateDynamic("maxRetransmits")(maxRetransmits.asInstanceOf[js.Any])
-    if (!js.isUndefined(negotiated)) __obj.updateDynamic("negotiated")(negotiated)
-    if (!js.isUndefined(ordered)) __obj.updateDynamic("ordered")(ordered)
-    if (priority != null) __obj.updateDynamic("priority")(priority)
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
+    if (!js.isUndefined(negotiated)) __obj.updateDynamic("negotiated")(negotiated.asInstanceOf[js.Any])
+    if (!js.isUndefined(ordered)) __obj.updateDynamic("ordered")(ordered.asInstanceOf[js.Any])
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCDataChannelInit]
   }
 }

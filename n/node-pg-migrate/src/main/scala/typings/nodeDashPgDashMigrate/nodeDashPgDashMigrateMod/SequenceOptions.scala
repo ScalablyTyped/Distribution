@@ -30,7 +30,7 @@ object SequenceOptions {
   ): SequenceOptions = {
     val __obj = js.Dynamic.literal()
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
-    if (!js.isUndefined(cycle)) __obj.updateDynamic("cycle")(cycle)
+    if (!js.isUndefined(cycle)) __obj.updateDynamic("cycle")(cycle.asInstanceOf[js.Any])
     if (increment != null) __obj.updateDynamic("increment")(increment.asInstanceOf[js.Any])
     if (maxvalue != null) __obj.updateDynamic("maxvalue")(maxvalue.asInstanceOf[js.Any])
     if (minvalue != null) __obj.updateDynamic("minvalue")(minvalue.asInstanceOf[js.Any])

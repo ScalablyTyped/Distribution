@@ -28,11 +28,11 @@ object PushOptions {
     version: Int | Double = null
   ): PushOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (callbacks != null) __obj.updateDynamic("callbacks")(callbacks)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (callbacks != null) __obj.updateDynamic("callbacks")(callbacks.asInstanceOf[js.Any])
     if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders.asInstanceOf[js.Any])
     if (pbParallelism != null) __obj.updateDynamic("pbParallelism")(pbParallelism.asInstanceOf[js.Any])
-    if (proxyOpts != null) __obj.updateDynamic("proxyOpts")(proxyOpts)
+    if (proxyOpts != null) __obj.updateDynamic("proxyOpts")(proxyOpts.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[PushOptions]
   }

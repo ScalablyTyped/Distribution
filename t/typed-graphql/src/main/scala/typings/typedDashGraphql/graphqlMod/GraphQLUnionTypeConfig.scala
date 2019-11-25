@@ -24,8 +24,8 @@ object GraphQLUnionTypeConfig {
     description: String = null,
     resolveType: (/* value */ js.Any, /* context */ js.Any, /* info */ GraphQLResolveInfo) => GraphQLObjectType = null
   ): GraphQLUnionTypeConfig = {
-    val __obj = js.Dynamic.literal(name = name, types = types)
-    if (description != null) __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (resolveType != null) __obj.updateDynamic("resolveType")(js.Any.fromFunction3(resolveType))
     __obj.asInstanceOf[GraphQLUnionTypeConfig]
   }

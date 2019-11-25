@@ -38,14 +38,14 @@ object Message {
   ): Message = {
     val __obj = js.Dynamic.literal()
     if (autoTimeout != null) __obj.updateDynamic("autoTimeout")(autoTimeout.asInstanceOf[js.Any])
-    if (category != null) __obj.updateDynamic("category")(category)
+    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
     if (closeAffordance != null) __obj.updateDynamic("closeAffordance")(closeAffordance.asInstanceOf[js.Any])
-    if (detail != null) __obj.updateDynamic("detail")(detail)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (detail != null) __obj.updateDynamic("detail")(detail.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (severity != null) __obj.updateDynamic("severity")(severity.asInstanceOf[js.Any])
-    if (sound != null) __obj.updateDynamic("sound")(sound)
-    if (summary != null) __obj.updateDynamic("summary")(summary)
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp)
+    if (sound != null) __obj.updateDynamic("sound")(sound.asInstanceOf[js.Any])
+    if (summary != null) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
+    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[Message]
   }
 }

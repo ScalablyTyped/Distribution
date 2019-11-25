@@ -23,8 +23,8 @@ object SourceMap {
     version: Double,
     file: String = null
   ): SourceMap = {
-    val __obj = js.Dynamic.literal(mappings = mappings, sourceRoot = sourceRoot, sources = sources, sourcesContent = sourcesContent, version = version)
-    if (file != null) __obj.updateDynamic("file")(file)
+    val __obj = js.Dynamic.literal(mappings = mappings.asInstanceOf[js.Any], sourceRoot = sourceRoot.asInstanceOf[js.Any], sources = sources.asInstanceOf[js.Any], sourcesContent = sourcesContent.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceMap]
   }
 }

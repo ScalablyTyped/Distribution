@@ -25,8 +25,8 @@ object AudioTrack {
     levelCodec: String,
     initSegment: Uint8Array = null
   ): AudioTrack = {
-    val __obj = js.Dynamic.literal(buffer = buffer, codec = codec, container = container, id = id, levelCodec = levelCodec)
-    if (initSegment != null) __obj.updateDynamic("initSegment")(initSegment)
+    val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], codec = codec.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], levelCodec = levelCodec.asInstanceOf[js.Any])
+    if (initSegment != null) __obj.updateDynamic("initSegment")(initSegment.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioTrack]
   }
 }

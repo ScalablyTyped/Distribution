@@ -21,7 +21,7 @@ object libMod extends js.Object {
   type Concat[Left /* <: js.Array[_] */, Right /* <: js.Array[_] */] = typings.typescriptDashTuple.libUtilsMod.Concat[Left, Right]
   type ConcatMultiple[TupleSet /* <: js.Array[js.Array[_]] */] = typings.typescriptDashTuple.libUtilsMod.ConcatMultiple[TupleSet]
   type FillTuple[Tuple /* <: js.Array[_] */, Replacement] = typings.typescriptDashTuple.libUtilsMod.FillTuple[Tuple, Replacement, js.Array[js.Any]]
-  type First[Tuple /* <: js.Array[_] */] = /* import warning: ImportType.apply Failed type conversion: Tuple[0] */ js.Any
+  type First[Tuple /* <: js.Array[_] */] = /* import warning: importer.ImportType#apply Failed type conversion: Tuple[0] */ js.Any
   type FirstIndexEqual[Type, Tuple /* <: js.Array[_] */, NotFound] = typings.typescriptDashTuple.libUtilsMod.FirstIndexEqual[Type, Tuple, NotFound, js.Array[js.Any]]
   type FirstIndexSubset[Type, Tuple /* <: js.Array[_] */, NotFound] = typings.typescriptDashTuple.libUtilsMod.FirstIndexSubset[Type, Tuple, NotFound, js.Array[js.Any]]
   type FirstIndexSuperset[Type, Tuple /* <: js.Array[_] */, NotFound] = typings.typescriptDashTuple.libUtilsMod.FirstIndexSuperset[Type, Tuple, NotFound, js.Array[js.Any]]

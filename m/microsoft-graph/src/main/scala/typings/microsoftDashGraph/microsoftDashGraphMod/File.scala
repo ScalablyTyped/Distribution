@@ -23,9 +23,9 @@ object File {
     processingMetadata: js.UndefOr[Boolean] = js.undefined
   ): File = {
     val __obj = js.Dynamic.literal()
-    if (hashes != null) __obj.updateDynamic("hashes")(hashes)
-    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType)
-    if (!js.isUndefined(processingMetadata)) __obj.updateDynamic("processingMetadata")(processingMetadata)
+    if (hashes != null) __obj.updateDynamic("hashes")(hashes.asInstanceOf[js.Any])
+    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
+    if (!js.isUndefined(processingMetadata)) __obj.updateDynamic("processingMetadata")(processingMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[File]
   }
 }

@@ -19,7 +19,7 @@ object ItemMoveChange {
     change_by_max: Int | Double = null,
     change_by_percent: Int | Double = null
   ): ItemMoveChange = {
-    val __obj = js.Dynamic.literal(field = field)
+    val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
     if (change_by != null) __obj.updateDynamic("change_by")(change_by.asInstanceOf[js.Any])
     if (change_by_max != null) __obj.updateDynamic("change_by_max")(change_by_max.asInstanceOf[js.Any])
     if (change_by_percent != null) __obj.updateDynamic("change_by_percent")(change_by_percent.asInstanceOf[js.Any])

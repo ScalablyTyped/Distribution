@@ -11,7 +11,7 @@ trait Marker extends js.Object {
 object Marker {
   @scala.inline
   def apply(pm: typings.leafletDotPm.leafletMod.PM.Edit.Marker): Marker = {
-    val __obj = js.Dynamic.literal(pm = pm)
+    val __obj = js.Dynamic.literal(pm = pm.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Marker]
   }

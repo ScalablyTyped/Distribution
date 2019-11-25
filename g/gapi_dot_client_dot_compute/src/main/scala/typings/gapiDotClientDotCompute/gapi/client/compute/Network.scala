@@ -62,18 +62,18 @@ object Network {
     subnetworks: js.Array[String] = null
   ): Network = {
     val __obj = js.Dynamic.literal()
-    if (IPv4Range != null) __obj.updateDynamic("IPv4Range")(IPv4Range)
-    if (!js.isUndefined(autoCreateSubnetworks)) __obj.updateDynamic("autoCreateSubnetworks")(autoCreateSubnetworks)
-    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (gatewayIPv4 != null) __obj.updateDynamic("gatewayIPv4")(gatewayIPv4)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (peerings != null) __obj.updateDynamic("peerings")(peerings)
-    if (routingConfig != null) __obj.updateDynamic("routingConfig")(routingConfig)
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
-    if (subnetworks != null) __obj.updateDynamic("subnetworks")(subnetworks)
+    if (IPv4Range != null) __obj.updateDynamic("IPv4Range")(IPv4Range.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoCreateSubnetworks)) __obj.updateDynamic("autoCreateSubnetworks")(autoCreateSubnetworks.asInstanceOf[js.Any])
+    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (gatewayIPv4 != null) __obj.updateDynamic("gatewayIPv4")(gatewayIPv4.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (peerings != null) __obj.updateDynamic("peerings")(peerings.asInstanceOf[js.Any])
+    if (routingConfig != null) __obj.updateDynamic("routingConfig")(routingConfig.asInstanceOf[js.Any])
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
+    if (subnetworks != null) __obj.updateDynamic("subnetworks")(subnetworks.asInstanceOf[js.Any])
     __obj.asInstanceOf[Network]
   }
 }

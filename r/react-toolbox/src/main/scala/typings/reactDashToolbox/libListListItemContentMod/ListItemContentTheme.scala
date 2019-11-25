@@ -27,10 +27,10 @@ object ListItemContentTheme {
   @scala.inline
   def apply(auto: String = null, itemContentRoot: String = null, large: String = null, normal: String = null): ListItemContentTheme = {
     val __obj = js.Dynamic.literal()
-    if (auto != null) __obj.updateDynamic("auto")(auto)
-    if (itemContentRoot != null) __obj.updateDynamic("itemContentRoot")(itemContentRoot)
-    if (large != null) __obj.updateDynamic("large")(large)
-    if (normal != null) __obj.updateDynamic("normal")(normal)
+    if (auto != null) __obj.updateDynamic("auto")(auto.asInstanceOf[js.Any])
+    if (itemContentRoot != null) __obj.updateDynamic("itemContentRoot")(itemContentRoot.asInstanceOf[js.Any])
+    if (large != null) __obj.updateDynamic("large")(large.asInstanceOf[js.Any])
+    if (normal != null) __obj.updateDynamic("normal")(normal.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListItemContentTheme]
   }
 }

@@ -1,6 +1,5 @@
 package typings.falcorDashJsonDashGraph.falcorDashJsonDashGraphMod
 
-import typings.falcorDashJsonDashGraph.falcorDashJsonDashGraphStrings.atom
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,14 +10,18 @@ import scala.scalajs.js.annotation._
   **/
 trait Atom extends Sentinel {
   @JSName("$type")
-  var $type: atom
+  var $type: typings.falcorDashJsonDashGraph.falcorDashJsonDashGraphStrings.atom
   var value: js.Any
 }
 
 object Atom {
   @scala.inline
-  def apply($type: atom, value: js.Any, $expires: Int | Double = null): Atom = {
-    val __obj = js.Dynamic.literal($type = $type, value = value)
+  def apply(
+    $type: typings.falcorDashJsonDashGraph.falcorDashJsonDashGraphStrings.atom,
+    value: js.Any,
+    $expires: Int | Double = null
+  ): Atom = {
+    val __obj = js.Dynamic.literal($type = $type.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     if ($expires != null) __obj.updateDynamic("$expires")($expires.asInstanceOf[js.Any])
     __obj.asInstanceOf[Atom]
   }

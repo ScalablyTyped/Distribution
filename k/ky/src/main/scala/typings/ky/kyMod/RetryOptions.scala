@@ -42,11 +42,11 @@ object RetryOptions {
     statusCodes: js.Array[Double] = null
   ): RetryOptions = {
     val __obj = js.Dynamic.literal()
-    if (afterStatusCodes != null) __obj.updateDynamic("afterStatusCodes")(afterStatusCodes)
+    if (afterStatusCodes != null) __obj.updateDynamic("afterStatusCodes")(afterStatusCodes.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (maxRetryAfter != null) __obj.updateDynamic("maxRetryAfter")(maxRetryAfter.asInstanceOf[js.Any])
-    if (methods != null) __obj.updateDynamic("methods")(methods)
-    if (statusCodes != null) __obj.updateDynamic("statusCodes")(statusCodes)
+    if (methods != null) __obj.updateDynamic("methods")(methods.asInstanceOf[js.Any])
+    if (statusCodes != null) __obj.updateDynamic("statusCodes")(statusCodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[RetryOptions]
   }
 }

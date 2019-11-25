@@ -27,8 +27,8 @@ trait IHealableComponent extends js.Object {
 object IHealableComponent {
   @scala.inline
   def apply(force_use: Boolean, items: js.Array[Anon_Effects], filters: MinecraftFilter = null): IHealableComponent = {
-    val __obj = js.Dynamic.literal(force_use = force_use, items = items)
-    if (filters != null) __obj.updateDynamic("filters")(filters)
+    val __obj = js.Dynamic.literal(force_use = force_use.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
+    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHealableComponent]
   }
 }

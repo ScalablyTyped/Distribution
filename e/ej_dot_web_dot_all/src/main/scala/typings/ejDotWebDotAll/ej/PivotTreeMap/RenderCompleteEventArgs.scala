@@ -20,9 +20,9 @@ object RenderCompleteEventArgs {
   @scala.inline
   def apply(action: String = null, customObject: js.Any = null, element: js.Any = null): RenderCompleteEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action)
-    if (customObject != null) __obj.updateDynamic("customObject")(customObject)
-    if (element != null) __obj.updateDynamic("element")(element)
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (customObject != null) __obj.updateDynamic("customObject")(customObject.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderCompleteEventArgs]
   }
 }

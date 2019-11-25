@@ -38,9 +38,9 @@ object ICheckOutCreationSubscriptionData {
     trial_end: Int | Double = null,
     trial_period_days: Int | Double = null
   ): ICheckOutCreationSubscriptionData = {
-    val __obj = js.Dynamic.literal(items = items)
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
     if (application_fee_percent != null) __obj.updateDynamic("application_fee_percent")(application_fee_percent.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (trial_end != null) __obj.updateDynamic("trial_end")(trial_end.asInstanceOf[js.Any])
     if (trial_period_days != null) __obj.updateDynamic("trial_period_days")(trial_period_days.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICheckOutCreationSubscriptionData]

@@ -18,7 +18,7 @@ object CodeActionProviderMetadata {
   @scala.inline
   def apply(providedCodeActionKinds: js.Array[CodeActionKind] = null): CodeActionProviderMetadata = {
     val __obj = js.Dynamic.literal()
-    if (providedCodeActionKinds != null) __obj.updateDynamic("providedCodeActionKinds")(providedCodeActionKinds)
+    if (providedCodeActionKinds != null) __obj.updateDynamic("providedCodeActionKinds")(providedCodeActionKinds.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeActionProviderMetadata]
   }
 }

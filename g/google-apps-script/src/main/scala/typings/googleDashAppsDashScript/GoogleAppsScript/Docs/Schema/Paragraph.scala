@@ -26,13 +26,13 @@ object Paragraph {
     suggestedPositionedObjectIds: js.Object = null
   ): Paragraph = {
     val __obj = js.Dynamic.literal()
-    if (bullet != null) __obj.updateDynamic("bullet")(bullet)
-    if (elements != null) __obj.updateDynamic("elements")(elements)
-    if (paragraphStyle != null) __obj.updateDynamic("paragraphStyle")(paragraphStyle)
-    if (positionedObjectIds != null) __obj.updateDynamic("positionedObjectIds")(positionedObjectIds)
-    if (suggestedBulletChanges != null) __obj.updateDynamic("suggestedBulletChanges")(suggestedBulletChanges)
-    if (suggestedParagraphStyleChanges != null) __obj.updateDynamic("suggestedParagraphStyleChanges")(suggestedParagraphStyleChanges)
-    if (suggestedPositionedObjectIds != null) __obj.updateDynamic("suggestedPositionedObjectIds")(suggestedPositionedObjectIds)
+    if (bullet != null) __obj.updateDynamic("bullet")(bullet.asInstanceOf[js.Any])
+    if (elements != null) __obj.updateDynamic("elements")(elements.asInstanceOf[js.Any])
+    if (paragraphStyle != null) __obj.updateDynamic("paragraphStyle")(paragraphStyle.asInstanceOf[js.Any])
+    if (positionedObjectIds != null) __obj.updateDynamic("positionedObjectIds")(positionedObjectIds.asInstanceOf[js.Any])
+    if (suggestedBulletChanges != null) __obj.updateDynamic("suggestedBulletChanges")(suggestedBulletChanges.asInstanceOf[js.Any])
+    if (suggestedParagraphStyleChanges != null) __obj.updateDynamic("suggestedParagraphStyleChanges")(suggestedParagraphStyleChanges.asInstanceOf[js.Any])
+    if (suggestedPositionedObjectIds != null) __obj.updateDynamic("suggestedPositionedObjectIds")(suggestedPositionedObjectIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[Paragraph]
   }
 }

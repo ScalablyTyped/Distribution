@@ -28,7 +28,7 @@ object WrapQuery {
     wrapper: js.Any,
     transformSchema: /* schema */ GraphQLSchema => GraphQLSchema = null
   ): WrapQuery = {
-    val __obj = js.Dynamic.literal(extractor = extractor, path = path, transformRequest = js.Any.fromFunction1(transformRequest), transformResult = js.Any.fromFunction1(transformResult), wrapper = wrapper)
+    val __obj = js.Dynamic.literal(extractor = extractor.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], transformRequest = js.Any.fromFunction1(transformRequest), transformResult = js.Any.fromFunction1(transformResult), wrapper = wrapper.asInstanceOf[js.Any])
     if (transformSchema != null) __obj.updateDynamic("transformSchema")(js.Any.fromFunction1(transformSchema))
     __obj.asInstanceOf[WrapQuery]
   }

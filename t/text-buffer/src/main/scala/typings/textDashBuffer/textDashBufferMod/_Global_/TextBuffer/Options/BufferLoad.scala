@@ -18,7 +18,7 @@ object BufferLoad {
   @scala.inline
   def apply(encoding: String = null, shouldDestroyOnFileDelete: () => Boolean = null): BufferLoad = {
     val __obj = js.Dynamic.literal()
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (shouldDestroyOnFileDelete != null) __obj.updateDynamic("shouldDestroyOnFileDelete")(js.Any.fromFunction0(shouldDestroyOnFileDelete))
     __obj.asInstanceOf[BufferLoad]
   }

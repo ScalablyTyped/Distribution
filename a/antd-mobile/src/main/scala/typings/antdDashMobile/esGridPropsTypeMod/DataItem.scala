@@ -19,9 +19,9 @@ object DataItem {
     text: js.Any = null
   ): DataItem = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataItem]
   }
 }

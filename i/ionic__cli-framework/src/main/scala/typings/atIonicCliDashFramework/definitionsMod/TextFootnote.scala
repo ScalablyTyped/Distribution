@@ -12,7 +12,7 @@ trait TextFootnote extends Footnote {
 object TextFootnote {
   @scala.inline
   def apply(id: String | Double, text: String): TextFootnote = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], text = text)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TextFootnote]
   }

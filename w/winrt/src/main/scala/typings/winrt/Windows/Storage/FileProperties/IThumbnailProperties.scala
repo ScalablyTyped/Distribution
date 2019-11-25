@@ -19,8 +19,8 @@ object IThumbnailProperties {
     returnedSmallerCachedSize: Boolean,
     `type`: ThumbnailType
   ): IThumbnailProperties = {
-    val __obj = js.Dynamic.literal(originalHeight = originalHeight, originalWidth = originalWidth, returnedSmallerCachedSize = returnedSmallerCachedSize)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(originalHeight = originalHeight.asInstanceOf[js.Any], originalWidth = originalWidth.asInstanceOf[js.Any], returnedSmallerCachedSize = returnedSmallerCachedSize.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IThumbnailProperties]
   }
 }

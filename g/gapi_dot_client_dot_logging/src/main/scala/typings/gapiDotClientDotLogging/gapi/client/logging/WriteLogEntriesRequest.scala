@@ -58,11 +58,11 @@ object WriteLogEntriesRequest {
     resource: MonitoredResource = null
   ): WriteLogEntriesRequest = {
     val __obj = js.Dynamic.literal()
-    if (entries != null) __obj.updateDynamic("entries")(entries)
-    if (labels != null) __obj.updateDynamic("labels")(labels)
-    if (logName != null) __obj.updateDynamic("logName")(logName)
-    if (!js.isUndefined(partialSuccess)) __obj.updateDynamic("partialSuccess")(partialSuccess)
-    if (resource != null) __obj.updateDynamic("resource")(resource)
+    if (entries != null) __obj.updateDynamic("entries")(entries.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (logName != null) __obj.updateDynamic("logName")(logName.asInstanceOf[js.Any])
+    if (!js.isUndefined(partialSuccess)) __obj.updateDynamic("partialSuccess")(partialSuccess.asInstanceOf[js.Any])
+    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[WriteLogEntriesRequest]
   }
 }

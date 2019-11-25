@@ -65,20 +65,20 @@ object ContactPoint {
     value: String = null
   ): ContactPoint = {
     val __obj = js.Dynamic.literal()
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
-    if (_id != null) __obj.updateDynamic("_id")(_id)
-    if (_rank != null) __obj.updateDynamic("_rank")(_rank)
-    if (_system != null) __obj.updateDynamic("_system")(_system)
-    if (_use != null) __obj.updateDynamic("_use")(_use)
-    if (_value != null) __obj.updateDynamic("_value")(_value)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (period != null) __obj.updateDynamic("period")(period)
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
+    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
+    if (_rank != null) __obj.updateDynamic("_rank")(_rank.asInstanceOf[js.Any])
+    if (_system != null) __obj.updateDynamic("_system")(_system.asInstanceOf[js.Any])
+    if (_use != null) __obj.updateDynamic("_use")(_use.asInstanceOf[js.Any])
+    if (_value != null) __obj.updateDynamic("_value")(_value.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
     if (rank != null) __obj.updateDynamic("rank")(rank.asInstanceOf[js.Any])
-    if (system != null) __obj.updateDynamic("system")(system)
-    if (use != null) __obj.updateDynamic("use")(use)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (system != null) __obj.updateDynamic("system")(system.asInstanceOf[js.Any])
+    if (use != null) __obj.updateDynamic("use")(use.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContactPoint]
   }
 }

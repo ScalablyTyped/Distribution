@@ -12,7 +12,7 @@ trait Anon_Excludes extends js.Object {
 object Anon_Excludes {
   @scala.inline
   def apply(excludes: js.Array[String], recursive: Boolean): Anon_Excludes = {
-    val __obj = js.Dynamic.literal(excludes = excludes, recursive = recursive)
+    val __obj = js.Dynamic.literal(excludes = excludes.asInstanceOf[js.Any], recursive = recursive.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Excludes]
   }

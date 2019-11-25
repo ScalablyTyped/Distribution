@@ -46,7 +46,7 @@ object PresentationsCollection {
     Pages: PagesCollection = null
   ): PresentationsCollection = {
     val __obj = js.Dynamic.literal(batchUpdate = js.Any.fromFunction2(batchUpdate), create = js.Any.fromFunction1(create), get = js.Any.fromFunction1(get))
-    if (Pages != null) __obj.updateDynamic("Pages")(Pages)
+    if (Pages != null) __obj.updateDynamic("Pages")(Pages.asInstanceOf[js.Any])
     __obj.asInstanceOf[PresentationsCollection]
   }
 }

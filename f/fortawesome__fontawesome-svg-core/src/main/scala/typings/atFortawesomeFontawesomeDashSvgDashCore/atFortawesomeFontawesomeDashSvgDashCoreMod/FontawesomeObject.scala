@@ -14,8 +14,8 @@ trait FontawesomeObject extends js.Object {
 object FontawesomeObject {
   @scala.inline
   def apply(`abstract`: js.Array[AbstractElement], html: js.Array[String], node: HTMLCollection): FontawesomeObject = {
-    val __obj = js.Dynamic.literal(html = html, node = node)
-    __obj.updateDynamic("abstract")(`abstract`)
+    val __obj = js.Dynamic.literal(html = html.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
+    __obj.updateDynamic("abstract")(`abstract`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FontawesomeObject]
   }
 }

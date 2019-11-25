@@ -12,7 +12,7 @@ object Anon_TextColor {
   @scala.inline
   def apply(textColor: String = null): Anon_TextColor = {
     val __obj = js.Dynamic.literal()
-    if (textColor != null) __obj.updateDynamic("textColor")(textColor)
+    if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_TextColor]
   }
 }

@@ -24,11 +24,11 @@ object Plugin {
     printers: StringDictionary[Printer] = null
   ): Plugin = {
     val __obj = js.Dynamic.literal()
-    if (defaultOptions != null) __obj.updateDynamic("defaultOptions")(defaultOptions)
-    if (languages != null) __obj.updateDynamic("languages")(languages)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (parsers != null) __obj.updateDynamic("parsers")(parsers)
-    if (printers != null) __obj.updateDynamic("printers")(printers)
+    if (defaultOptions != null) __obj.updateDynamic("defaultOptions")(defaultOptions.asInstanceOf[js.Any])
+    if (languages != null) __obj.updateDynamic("languages")(languages.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (parsers != null) __obj.updateDynamic("parsers")(parsers.asInstanceOf[js.Any])
+    if (printers != null) __obj.updateDynamic("printers")(printers.asInstanceOf[js.Any])
     __obj.asInstanceOf[Plugin]
   }
 }

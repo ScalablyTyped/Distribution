@@ -15,8 +15,8 @@ object AnalyzeSentimentRequest {
   @scala.inline
   def apply(document: Document = null, encodingType: String = null): AnalyzeSentimentRequest = {
     val __obj = js.Dynamic.literal()
-    if (document != null) __obj.updateDynamic("document")(document)
-    if (encodingType != null) __obj.updateDynamic("encodingType")(encodingType)
+    if (document != null) __obj.updateDynamic("document")(document.asInstanceOf[js.Any])
+    if (encodingType != null) __obj.updateDynamic("encodingType")(encodingType.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyzeSentimentRequest]
   }
 }

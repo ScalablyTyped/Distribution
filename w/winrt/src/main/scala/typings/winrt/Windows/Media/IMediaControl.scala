@@ -46,7 +46,7 @@ object IMediaControl {
     soundLevel: SoundLevel,
     trackName: String
   ): IMediaControl = {
-    val __obj = js.Dynamic.literal(albumArt = albumArt, artistName = artistName, isPlaying = isPlaying, onchanneldownpressed = onchanneldownpressed, onchanneluppressed = onchanneluppressed, onfastforwardpressed = onfastforwardpressed, onnexttrackpressed = onnexttrackpressed, onpausepressed = onpausepressed, onplaypausetogglepressed = onplaypausetogglepressed, onplaypressed = onplaypressed, onprevioustrackpressed = onprevioustrackpressed, onrecordpressed = onrecordpressed, onrewindpressed = onrewindpressed, onsoundlevelchanged = onsoundlevelchanged, onstoppressed = onstoppressed, soundLevel = soundLevel, trackName = trackName)
+    val __obj = js.Dynamic.literal(albumArt = albumArt.asInstanceOf[js.Any], artistName = artistName.asInstanceOf[js.Any], isPlaying = isPlaying.asInstanceOf[js.Any], onchanneldownpressed = onchanneldownpressed.asInstanceOf[js.Any], onchanneluppressed = onchanneluppressed.asInstanceOf[js.Any], onfastforwardpressed = onfastforwardpressed.asInstanceOf[js.Any], onnexttrackpressed = onnexttrackpressed.asInstanceOf[js.Any], onpausepressed = onpausepressed.asInstanceOf[js.Any], onplaypausetogglepressed = onplaypausetogglepressed.asInstanceOf[js.Any], onplaypressed = onplaypressed.asInstanceOf[js.Any], onprevioustrackpressed = onprevioustrackpressed.asInstanceOf[js.Any], onrecordpressed = onrecordpressed.asInstanceOf[js.Any], onrewindpressed = onrewindpressed.asInstanceOf[js.Any], onsoundlevelchanged = onsoundlevelchanged.asInstanceOf[js.Any], onstoppressed = onstoppressed.asInstanceOf[js.Any], soundLevel = soundLevel.asInstanceOf[js.Any], trackName = trackName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IMediaControl]
   }

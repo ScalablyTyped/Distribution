@@ -26,11 +26,11 @@ object Anon_BadgeBadgeColorChecked {
   ): Anon_BadgeBadgeColorChecked = {
     val __obj = js.Dynamic.literal()
     if (badge != null) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
-    if (badgeColor != null) __obj.updateDynamic("badgeColor")(badgeColor)
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (badgeColor != null) __obj.updateDynamic("badgeColor")(badgeColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BadgeBadgeColorChecked]
   }
 }

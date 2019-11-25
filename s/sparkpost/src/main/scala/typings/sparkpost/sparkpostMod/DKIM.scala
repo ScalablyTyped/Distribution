@@ -26,10 +26,10 @@ object DKIM {
     `private`: String = null,
     signing_domain: String = null
   ): DKIM = {
-    val __obj = js.Dynamic.literal(public = public, selector = selector)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (`private` != null) __obj.updateDynamic("private")(`private`)
-    if (signing_domain != null) __obj.updateDynamic("signing_domain")(signing_domain)
+    val __obj = js.Dynamic.literal(public = public.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (`private` != null) __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
+    if (signing_domain != null) __obj.updateDynamic("signing_domain")(signing_domain.asInstanceOf[js.Any])
     __obj.asInstanceOf[DKIM]
   }
 }

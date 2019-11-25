@@ -14,7 +14,7 @@ trait IOCROptions extends js.Object {
 object IOCROptions {
   @scala.inline
   def apply(Clone: () => IOCROptions, PrimaryLanguage: MFOCRLanguage, SecondaryLanguage: MFOCRLanguage): IOCROptions = {
-    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), PrimaryLanguage = PrimaryLanguage, SecondaryLanguage = SecondaryLanguage)
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), PrimaryLanguage = PrimaryLanguage.asInstanceOf[js.Any], SecondaryLanguage = SecondaryLanguage.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IOCROptions]
   }

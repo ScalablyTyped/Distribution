@@ -32,7 +32,7 @@ object EphemeralIdRegistrationParams {
     val __obj = js.Dynamic.literal()
     if (maxRotationPeriodExponent != null) __obj.updateDynamic("maxRotationPeriodExponent")(maxRotationPeriodExponent.asInstanceOf[js.Any])
     if (minRotationPeriodExponent != null) __obj.updateDynamic("minRotationPeriodExponent")(minRotationPeriodExponent.asInstanceOf[js.Any])
-    if (serviceEcdhPublicKey != null) __obj.updateDynamic("serviceEcdhPublicKey")(serviceEcdhPublicKey)
+    if (serviceEcdhPublicKey != null) __obj.updateDynamic("serviceEcdhPublicKey")(serviceEcdhPublicKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[EphemeralIdRegistrationParams]
   }
 }

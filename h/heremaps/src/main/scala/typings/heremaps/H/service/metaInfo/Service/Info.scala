@@ -32,7 +32,7 @@ object Info {
     schemes: StringDictionary[js.Any],
     tiletypes: StringDictionary[js.Any]
   ): Info = {
-    val __obj = js.Dynamic.literal(formats = formats, languages = languages, maps = maps, resolutions = resolutions, schemes = schemes, tiletypes = tiletypes)
+    val __obj = js.Dynamic.literal(formats = formats.asInstanceOf[js.Any], languages = languages.asInstanceOf[js.Any], maps = maps.asInstanceOf[js.Any], resolutions = resolutions.asInstanceOf[js.Any], schemes = schemes.asInstanceOf[js.Any], tiletypes = tiletypes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Info]
   }

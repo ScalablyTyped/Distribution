@@ -23,7 +23,7 @@ object Editor {
     name: String,
     paths: js.Array[String]
   ): Editor = {
-    val __obj = js.Dynamic.literal(binary = binary, id = id, isTerminalEditor = isTerminalEditor, keywords = keywords, name = name, paths = paths)
+    val __obj = js.Dynamic.literal(binary = binary.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isTerminalEditor = isTerminalEditor.asInstanceOf[js.Any], keywords = keywords.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], paths = paths.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Editor]
   }

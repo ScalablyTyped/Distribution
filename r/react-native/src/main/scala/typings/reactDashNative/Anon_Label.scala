@@ -13,8 +13,8 @@ trait Anon_Label extends js.Object {
 object Anon_Label {
   @scala.inline
   def apply(name: AccessibilityActionName, label: String = null): Anon_Label = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (label != null) __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Label]
   }
 }

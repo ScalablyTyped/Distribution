@@ -23,10 +23,10 @@ object BeforePrintEventArgs {
   @scala.inline
   def apply(element: js.Any = null, model: js.Any = null, selectedRows: js.Any = null, `type`: String = null): BeforePrintEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (selectedRows != null) __obj.updateDynamic("selectedRows")(selectedRows)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (selectedRows != null) __obj.updateDynamic("selectedRows")(selectedRows.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BeforePrintEventArgs]
   }
 }

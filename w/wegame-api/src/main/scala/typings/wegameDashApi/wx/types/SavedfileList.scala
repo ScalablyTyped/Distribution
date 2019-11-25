@@ -12,7 +12,7 @@ trait SavedfileList extends js.Object {
 object SavedfileList {
   @scala.inline
   def apply(fileList: Anon_CreateTime): SavedfileList = {
-    val __obj = js.Dynamic.literal(fileList = fileList)
+    val __obj = js.Dynamic.literal(fileList = fileList.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SavedfileList]
   }

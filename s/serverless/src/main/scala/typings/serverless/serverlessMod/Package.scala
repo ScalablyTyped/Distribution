@@ -19,9 +19,9 @@ object Package {
     artifact: String = null,
     individually: js.UndefOr[Boolean] = js.undefined
   ): Package = {
-    val __obj = js.Dynamic.literal(exclude = exclude, include = include)
-    if (artifact != null) __obj.updateDynamic("artifact")(artifact)
-    if (!js.isUndefined(individually)) __obj.updateDynamic("individually")(individually)
+    val __obj = js.Dynamic.literal(exclude = exclude.asInstanceOf[js.Any], include = include.asInstanceOf[js.Any])
+    if (artifact != null) __obj.updateDynamic("artifact")(artifact.asInstanceOf[js.Any])
+    if (!js.isUndefined(individually)) __obj.updateDynamic("individually")(individually.asInstanceOf[js.Any])
     __obj.asInstanceOf[Package]
   }
 }

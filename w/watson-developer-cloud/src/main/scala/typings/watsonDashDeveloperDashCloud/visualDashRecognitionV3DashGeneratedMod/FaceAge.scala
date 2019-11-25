@@ -17,7 +17,7 @@ trait FaceAge extends js.Object {
 object FaceAge {
   @scala.inline
   def apply(score: Double, max: Int | Double = null, min: Int | Double = null): FaceAge = {
-    val __obj = js.Dynamic.literal(score = score)
+    val __obj = js.Dynamic.literal(score = score.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     __obj.asInstanceOf[FaceAge]

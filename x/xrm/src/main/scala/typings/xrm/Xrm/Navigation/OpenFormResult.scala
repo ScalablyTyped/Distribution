@@ -15,7 +15,7 @@ trait OpenFormResult extends js.Object {
 object OpenFormResult {
   @scala.inline
   def apply(savedEntityReference: js.Array[LookupValue]): OpenFormResult = {
-    val __obj = js.Dynamic.literal(savedEntityReference = savedEntityReference)
+    val __obj = js.Dynamic.literal(savedEntityReference = savedEntityReference.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OpenFormResult]
   }

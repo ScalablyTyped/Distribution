@@ -42,7 +42,7 @@ object Request {
     url: String,
     version: js.Array[String]
   ): Request = {
-    val __obj = js.Dynamic.literal(agent = agent, body = body, headers = headers, host = host, method = method, node = node, path = path, pathInfo = pathInfo, port = port, remoteHost = remoteHost, remotePort = remotePort, scheme = scheme, scriptName = scriptName, url = url, version = version)
+    val __obj = js.Dynamic.literal(agent = agent.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pathInfo = pathInfo.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], remoteHost = remoteHost.asInstanceOf[js.Any], remotePort = remotePort.asInstanceOf[js.Any], scheme = scheme.asInstanceOf[js.Any], scriptName = scriptName.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Request]
   }

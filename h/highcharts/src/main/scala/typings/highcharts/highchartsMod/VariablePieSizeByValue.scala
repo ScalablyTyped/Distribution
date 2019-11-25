@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait VariablePieSizeByValue extends js.Object
 
+object VariablePieSizeByValue {
+  @scala.inline
+  def area: typings.highcharts.highchartsStrings.area = this.cast("area")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def radius: typings.highcharts.highchartsStrings.radius = this.cast("radius")
+}
+

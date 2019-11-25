@@ -39,10 +39,10 @@ object CommonOptions {
     cellStyles: js.UndefOr[Boolean] = js.undefined
   ): CommonOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(WTF)) __obj.updateDynamic("WTF")(WTF)
-    if (!js.isUndefined(bookVBA)) __obj.updateDynamic("bookVBA")(bookVBA)
-    if (!js.isUndefined(cellDates)) __obj.updateDynamic("cellDates")(cellDates)
-    if (!js.isUndefined(cellStyles)) __obj.updateDynamic("cellStyles")(cellStyles)
+    if (!js.isUndefined(WTF)) __obj.updateDynamic("WTF")(WTF.asInstanceOf[js.Any])
+    if (!js.isUndefined(bookVBA)) __obj.updateDynamic("bookVBA")(bookVBA.asInstanceOf[js.Any])
+    if (!js.isUndefined(cellDates)) __obj.updateDynamic("cellDates")(cellDates.asInstanceOf[js.Any])
+    if (!js.isUndefined(cellStyles)) __obj.updateDynamic("cellStyles")(cellStyles.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommonOptions]
   }
 }

@@ -23,10 +23,10 @@ object ReplaceAllShapesWithSheetsChartRequest {
   ): ReplaceAllShapesWithSheetsChartRequest = {
     val __obj = js.Dynamic.literal()
     if (chartId != null) __obj.updateDynamic("chartId")(chartId.asInstanceOf[js.Any])
-    if (containsText != null) __obj.updateDynamic("containsText")(containsText)
-    if (linkingMode != null) __obj.updateDynamic("linkingMode")(linkingMode)
-    if (pageObjectIds != null) __obj.updateDynamic("pageObjectIds")(pageObjectIds)
-    if (spreadsheetId != null) __obj.updateDynamic("spreadsheetId")(spreadsheetId)
+    if (containsText != null) __obj.updateDynamic("containsText")(containsText.asInstanceOf[js.Any])
+    if (linkingMode != null) __obj.updateDynamic("linkingMode")(linkingMode.asInstanceOf[js.Any])
+    if (pageObjectIds != null) __obj.updateDynamic("pageObjectIds")(pageObjectIds.asInstanceOf[js.Any])
+    if (spreadsheetId != null) __obj.updateDynamic("spreadsheetId")(spreadsheetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplaceAllShapesWithSheetsChartRequest]
   }
 }

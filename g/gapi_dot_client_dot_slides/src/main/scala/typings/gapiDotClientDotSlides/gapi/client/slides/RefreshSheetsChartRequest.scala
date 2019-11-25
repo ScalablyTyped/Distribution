@@ -13,7 +13,7 @@ object RefreshSheetsChartRequest {
   @scala.inline
   def apply(objectId: String = null): RefreshSheetsChartRequest = {
     val __obj = js.Dynamic.literal()
-    if (objectId != null) __obj.updateDynamic("objectId")(objectId)
+    if (objectId != null) __obj.updateDynamic("objectId")(objectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RefreshSheetsChartRequest]
   }
 }

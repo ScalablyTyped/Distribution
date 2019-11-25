@@ -452,7 +452,7 @@ object stripeStrings {
   sealed trait discount extends js.Object
   
   @js.native
-  sealed trait discover extends CardBrand
+  sealed trait discover_ extends CardBrand
   
   @js.native
   sealed trait dispute extends js.Object
@@ -748,7 +748,7 @@ object stripeStrings {
   sealed trait ja extends js.Object
   
   @js.native
-  sealed trait jcb extends CardBrand
+  sealed trait jcb_ extends CardBrand
   
   @js.native
   sealed trait jpg extends js.Object
@@ -796,7 +796,7 @@ object stripeStrings {
   sealed trait manual_review extends js.Object
   
   @js.native
-  sealed trait mastercard extends CardBrand
+  sealed trait mastercard_ extends CardBrand
   
   @js.native
   sealed trait masterpass extends js.Object
@@ -1430,7 +1430,7 @@ object stripeStrings {
   sealed trait unionpay extends CardBrand
   
   @js.native
-  sealed trait unknown
+  sealed trait unknown_
     extends CardBrand
        with TaxIdType
   
@@ -1474,7 +1474,7 @@ object stripeStrings {
   sealed trait verified extends js.Object
   
   @js.native
-  sealed trait visa extends CardBrand
+  sealed trait visa_ extends CardBrand
   
   @js.native
   sealed trait visa_checkout extends js.Object
@@ -1792,7 +1792,7 @@ object stripeStrings {
   @scala.inline
   def discount: discount = "discount".asInstanceOf[discount]
   @scala.inline
-  def discover: discover = "discover".asInstanceOf[discover]
+  def discover_ : discover_ = "discover".asInstanceOf[discover_]
   @scala.inline
   def dispute: dispute = "dispute".asInstanceOf[dispute]
   @scala.inline
@@ -1986,7 +1986,7 @@ object stripeStrings {
   @scala.inline
   def ja: ja = "ja".asInstanceOf[ja]
   @scala.inline
-  def jcb: jcb = "jcb".asInstanceOf[jcb]
+  def jcb_ : jcb_ = "jcb".asInstanceOf[jcb_]
   @scala.inline
   def jpg: jpg = "jpg".asInstanceOf[jpg]
   @scala.inline
@@ -2018,7 +2018,7 @@ object stripeStrings {
   @scala.inline
   def manual_review: manual_review = "manual_review".asInstanceOf[manual_review]
   @scala.inline
-  def mastercard: mastercard = "mastercard".asInstanceOf[mastercard]
+  def mastercard_ : mastercard_ = "mastercard".asInstanceOf[mastercard_]
   @scala.inline
   def masterpass: masterpass = "masterpass".asInstanceOf[masterpass]
   @scala.inline
@@ -2434,7 +2434,7 @@ object stripeStrings {
   @scala.inline
   def unionpay: unionpay = "unionpay".asInstanceOf[unionpay]
   @scala.inline
-  def unknown: unknown = "unknown".asInstanceOf[unknown]
+  def unknown_ : unknown_ = "unknown".asInstanceOf[unknown_]
   @scala.inline
   def unpaid: unpaid = "unpaid".asInstanceOf[unpaid]
   @scala.inline
@@ -2462,7 +2462,7 @@ object stripeStrings {
   @scala.inline
   def verified: verified = "verified".asInstanceOf[verified]
   @scala.inline
-  def visa: visa = "visa".asInstanceOf[visa]
+  def visa_ : visa_ = "visa".asInstanceOf[visa_]
   @scala.inline
   def visa_checkout: visa_checkout = "visa_checkout".asInstanceOf[visa_checkout]
   @scala.inline

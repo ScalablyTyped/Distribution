@@ -1,11 +1,6 @@
 package typings.three.threeMod
 
 import typings.std.HTMLVideoElement
-import typings.three.srcConstantsMod.Mapping
-import typings.three.srcConstantsMod.PixelFormat
-import typings.three.srcConstantsMod.TextureDataType
-import typings.three.srcConstantsMod.TextureFilter
-import typings.three.srcConstantsMod.Wrapping
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,13 +11,13 @@ class VideoTexture protected ()
   extends typings.three.srcTexturesVideoTextureMod.VideoTexture {
   def this(
     video: HTMLVideoElement,
-    mapping: js.UndefOr[Mapping],
-    wrapS: js.UndefOr[Wrapping],
-    wrapT: js.UndefOr[Wrapping],
-    magFilter: js.UndefOr[TextureFilter],
-    minFilter: js.UndefOr[TextureFilter],
-    format: js.UndefOr[PixelFormat],
-    `type`: js.UndefOr[TextureDataType],
+    mapping: js.UndefOr[typings.three.srcConstantsMod.Mapping],
+    wrapS: js.UndefOr[typings.three.srcConstantsMod.Wrapping],
+    wrapT: js.UndefOr[typings.three.srcConstantsMod.Wrapping],
+    magFilter: js.UndefOr[typings.three.srcConstantsMod.TextureFilter],
+    minFilter: js.UndefOr[typings.three.srcConstantsMod.TextureFilter],
+    format: js.UndefOr[typings.three.srcConstantsMod.PixelFormat],
+    `type`: js.UndefOr[typings.three.srcConstantsMod.TextureDataType],
     anisotropy: js.UndefOr[Double]
   ) = this()
 }

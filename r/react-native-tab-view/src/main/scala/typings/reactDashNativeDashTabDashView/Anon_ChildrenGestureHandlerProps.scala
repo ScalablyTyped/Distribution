@@ -31,8 +31,8 @@ object Anon_ChildrenGestureHandlerProps {
     onIndexChange: Double => Unit,
     removeClippedSubviews: js.UndefOr[Boolean] = js.undefined
   ): Anon_ChildrenGestureHandlerProps[T] = {
-    val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), gestureHandlerProps = gestureHandlerProps.asInstanceOf[js.Any], layout = layout, navigationState = navigationState, onIndexChange = js.Any.fromFunction1(onIndexChange))
-    if (!js.isUndefined(removeClippedSubviews)) __obj.updateDynamic("removeClippedSubviews")(removeClippedSubviews)
+    val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), gestureHandlerProps = gestureHandlerProps.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], navigationState = navigationState.asInstanceOf[js.Any], onIndexChange = js.Any.fromFunction1(onIndexChange))
+    if (!js.isUndefined(removeClippedSubviews)) __obj.updateDynamic("removeClippedSubviews")(removeClippedSubviews.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ChildrenGestureHandlerProps[T]]
   }
 }

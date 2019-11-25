@@ -20,10 +20,10 @@ object Account {
     userData: js.Array[UserData] = null
   ): Account = {
     val __obj = js.Dynamic.literal()
-    if (authTokens != null) __obj.updateDynamic("authTokens")(authTokens)
-    if (features != null) __obj.updateDynamic("features")(features)
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (userData != null) __obj.updateDynamic("userData")(userData)
+    if (authTokens != null) __obj.updateDynamic("authTokens")(authTokens.asInstanceOf[js.Any])
+    if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (userData != null) __obj.updateDynamic("userData")(userData.asInstanceOf[js.Any])
     __obj.asInstanceOf[Account]
   }
 }

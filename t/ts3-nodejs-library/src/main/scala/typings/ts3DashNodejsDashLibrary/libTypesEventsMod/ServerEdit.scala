@@ -16,7 +16,7 @@ trait ServerEdit extends js.Object {
 object ServerEdit {
   @scala.inline
   def apply(invoker: TeamSpeakClient, modified: Partial[QueryResponseTypes], reasonid: Double): ServerEdit = {
-    val __obj = js.Dynamic.literal(invoker = invoker, modified = modified, reasonid = reasonid)
+    val __obj = js.Dynamic.literal(invoker = invoker.asInstanceOf[js.Any], modified = modified.asInstanceOf[js.Any], reasonid = reasonid.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ServerEdit]
   }

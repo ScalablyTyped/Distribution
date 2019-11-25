@@ -13,7 +13,7 @@ trait Anon_CanAddRow extends js.Object {
 object Anon_CanAddRow {
   @scala.inline
   def apply(canAddRow: Boolean, question: IQuestion): Anon_CanAddRow = {
-    val __obj = js.Dynamic.literal(canAddRow = canAddRow, question = question)
+    val __obj = js.Dynamic.literal(canAddRow = canAddRow.asInstanceOf[js.Any], question = question.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CanAddRow]
   }

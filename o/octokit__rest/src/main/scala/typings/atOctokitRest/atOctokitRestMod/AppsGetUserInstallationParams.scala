@@ -11,7 +11,7 @@ trait AppsGetUserInstallationParams extends js.Object {
 object AppsGetUserInstallationParams {
   @scala.inline
   def apply(username: String): AppsGetUserInstallationParams = {
-    val __obj = js.Dynamic.literal(username = username)
+    val __obj = js.Dynamic.literal(username = username.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AppsGetUserInstallationParams]
   }

@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait LegendType extends js.Object
 
+object LegendType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def gradient: typings.vegaDashTypings.vegaDashTypingsStrings.gradient = this.cast("gradient")
+  @scala.inline
+  def symbol: typings.vegaDashTypings.vegaDashTypingsStrings.symbol = this.cast("symbol")
+}
+

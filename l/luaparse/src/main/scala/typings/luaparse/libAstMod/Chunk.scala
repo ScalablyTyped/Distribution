@@ -20,10 +20,10 @@ object Chunk {
     comments: js.Array[String] = null,
     loc: Anon_End = null
   ): Chunk = {
-    val __obj = js.Dynamic.literal(body = body)
-    __obj.updateDynamic("type")(`type`)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Chunk]
   }
 }

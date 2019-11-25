@@ -369,8 +369,8 @@ object GatsbyNode {
     val __obj = js.Dynamic.literal()
     if (createPages != null) __obj.updateDynamic("createPages")(js.Any.fromFunction3(createPages))
     if (createPagesStatefully != null) __obj.updateDynamic("createPagesStatefully")(js.Any.fromFunction3(createPagesStatefully))
-    if (createResolvers != null) __obj.updateDynamic("createResolvers")(createResolvers)
-    if (createSchemaCustomization != null) __obj.updateDynamic("createSchemaCustomization")(createSchemaCustomization)
+    if (createResolvers != null) __obj.updateDynamic("createResolvers")(createResolvers.asInstanceOf[js.Any])
+    if (createSchemaCustomization != null) __obj.updateDynamic("createSchemaCustomization")(createSchemaCustomization.asInstanceOf[js.Any])
     if (onCreateBabelConfig != null) __obj.updateDynamic("onCreateBabelConfig")(js.Any.fromFunction3(onCreateBabelConfig))
     if (onCreateDevServer != null) __obj.updateDynamic("onCreateDevServer")(js.Any.fromFunction3(onCreateDevServer))
     if (onCreateNode != null) __obj.updateDynamic("onCreateNode")(js.Any.fromFunction3(onCreateNode))
@@ -384,8 +384,8 @@ object GatsbyNode {
     if (onPreInit != null) __obj.updateDynamic("onPreInit")(js.Any.fromFunction3(onPreInit))
     if (preprocessSource != null) __obj.updateDynamic("preprocessSource")(js.Any.fromFunction3(preprocessSource))
     if (resolvableExtensions != null) __obj.updateDynamic("resolvableExtensions")(js.Any.fromFunction3(resolvableExtensions))
-    if (setFieldsOnGraphQLNodeType != null) __obj.updateDynamic("setFieldsOnGraphQLNodeType")(setFieldsOnGraphQLNodeType)
-    if (sourceNodes != null) __obj.updateDynamic("sourceNodes")(sourceNodes)
+    if (setFieldsOnGraphQLNodeType != null) __obj.updateDynamic("setFieldsOnGraphQLNodeType")(setFieldsOnGraphQLNodeType.asInstanceOf[js.Any])
+    if (sourceNodes != null) __obj.updateDynamic("sourceNodes")(sourceNodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[GatsbyNode]
   }
 }

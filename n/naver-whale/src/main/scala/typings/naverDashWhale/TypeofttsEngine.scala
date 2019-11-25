@@ -21,7 +21,7 @@ object TypeofttsEngine {
     onSpeak: TtsEngineSpeakEvent,
     onStop: Event[js.Function0[Unit]]
   ): TypeofttsEngine = {
-    val __obj = js.Dynamic.literal(onPause = onPause, onResume = onResume, onSpeak = onSpeak, onStop = onStop)
+    val __obj = js.Dynamic.literal(onPause = onPause.asInstanceOf[js.Any], onResume = onResume.asInstanceOf[js.Any], onSpeak = onSpeak.asInstanceOf[js.Any], onStop = onStop.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeofttsEngine]
   }

@@ -20,9 +20,9 @@ object CustomValueSpecifierEventArgs {
   @scala.inline
   def apply(model: typings.ejDotWebDotAll.ej.ComboBox.Model = null, text: String = null, `type`: String = null): CustomValueSpecifierEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomValueSpecifierEventArgs]
   }
 }

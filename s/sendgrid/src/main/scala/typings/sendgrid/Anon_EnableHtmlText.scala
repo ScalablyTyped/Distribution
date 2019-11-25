@@ -13,7 +13,7 @@ trait Anon_EnableHtmlText extends js.Object {
 object Anon_EnableHtmlText {
   @scala.inline
   def apply(enable: Boolean, html: String, text: String): Anon_EnableHtmlText = {
-    val __obj = js.Dynamic.literal(enable = enable, html = html, text = text)
+    val __obj = js.Dynamic.literal(enable = enable.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EnableHtmlText]
   }

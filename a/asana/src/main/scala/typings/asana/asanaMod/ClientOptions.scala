@@ -2,7 +2,6 @@ package typings.asana.asanaMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.asana.asanaMod.auth.Authenticator
-import typings.bluebird.bluebirdMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,21 +23,21 @@ object ClientOptions {
     clientId: String | Double = null,
     clientSecret: String = null,
     defaultHeaders: StringDictionary[String] = null,
-    handleUnauthorized: () => Boolean | ^[Boolean] = null,
+    handleUnauthorized: () => Boolean | typings.bluebird.bluebirdMod.^[Boolean] = null,
     redirectUri: String = null,
     requestTimeout: String = null,
     retryOnRateLimit: js.UndefOr[Boolean] = js.undefined
   ): ClientOptions = {
     val __obj = js.Dynamic.literal()
-    if (asanaBaseUrl != null) __obj.updateDynamic("asanaBaseUrl")(asanaBaseUrl)
-    if (authenticator != null) __obj.updateDynamic("authenticator")(authenticator)
+    if (asanaBaseUrl != null) __obj.updateDynamic("asanaBaseUrl")(asanaBaseUrl.asInstanceOf[js.Any])
+    if (authenticator != null) __obj.updateDynamic("authenticator")(authenticator.asInstanceOf[js.Any])
     if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
-    if (clientSecret != null) __obj.updateDynamic("clientSecret")(clientSecret)
-    if (defaultHeaders != null) __obj.updateDynamic("defaultHeaders")(defaultHeaders)
+    if (clientSecret != null) __obj.updateDynamic("clientSecret")(clientSecret.asInstanceOf[js.Any])
+    if (defaultHeaders != null) __obj.updateDynamic("defaultHeaders")(defaultHeaders.asInstanceOf[js.Any])
     if (handleUnauthorized != null) __obj.updateDynamic("handleUnauthorized")(js.Any.fromFunction0(handleUnauthorized))
-    if (redirectUri != null) __obj.updateDynamic("redirectUri")(redirectUri)
-    if (requestTimeout != null) __obj.updateDynamic("requestTimeout")(requestTimeout)
-    if (!js.isUndefined(retryOnRateLimit)) __obj.updateDynamic("retryOnRateLimit")(retryOnRateLimit)
+    if (redirectUri != null) __obj.updateDynamic("redirectUri")(redirectUri.asInstanceOf[js.Any])
+    if (requestTimeout != null) __obj.updateDynamic("requestTimeout")(requestTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(retryOnRateLimit)) __obj.updateDynamic("retryOnRateLimit")(retryOnRateLimit.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientOptions]
   }
 }

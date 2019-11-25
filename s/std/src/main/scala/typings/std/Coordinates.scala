@@ -26,7 +26,7 @@ object Coordinates {
     heading: Int | Double = null,
     speed: Int | Double = null
   ): Coordinates = {
-    val __obj = js.Dynamic.literal(accuracy = accuracy, latitude = latitude, longitude = longitude)
+    val __obj = js.Dynamic.literal(accuracy = accuracy.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any])
     if (altitude != null) __obj.updateDynamic("altitude")(altitude.asInstanceOf[js.Any])
     if (altitudeAccuracy != null) __obj.updateDynamic("altitudeAccuracy")(altitudeAccuracy.asInstanceOf[js.Any])
     if (heading != null) __obj.updateDynamic("heading")(heading.asInstanceOf[js.Any])

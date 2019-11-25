@@ -19,9 +19,9 @@ object SCBrokerClusterClientOptions {
     pubSubBatchDuration: Int | Double = null,
     secretKey: String = null
   ): SCBrokerClusterClientOptions = {
-    val __obj = js.Dynamic.literal(brokers = brokers, connectRetryErrorThreshold = connectRetryErrorThreshold)
+    val __obj = js.Dynamic.literal(brokers = brokers.asInstanceOf[js.Any], connectRetryErrorThreshold = connectRetryErrorThreshold.asInstanceOf[js.Any])
     if (pubSubBatchDuration != null) __obj.updateDynamic("pubSubBatchDuration")(pubSubBatchDuration.asInstanceOf[js.Any])
-    if (secretKey != null) __obj.updateDynamic("secretKey")(secretKey)
+    if (secretKey != null) __obj.updateDynamic("secretKey")(secretKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[SCBrokerClusterClientOptions]
   }
 }

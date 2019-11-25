@@ -90,7 +90,7 @@ object IFileDataFormat {
     qTabSize: Double,
     qType: FileDataFormatType
   ): IFileDataFormat = {
-    val __obj = js.Dynamic.literal(qCodePage = qCodePage, qComment = qComment, qDelimiter = qDelimiter, qFixedWidthDelimiters = qFixedWidthDelimiters, qHeaderSize = qHeaderSize, qIgnoreEOF = qIgnoreEOF, qLabel = qLabel, qQuote = qQuote, qRecordSize = qRecordSize, qTabSize = qTabSize, qType = qType)
+    val __obj = js.Dynamic.literal(qCodePage = qCodePage.asInstanceOf[js.Any], qComment = qComment.asInstanceOf[js.Any], qDelimiter = qDelimiter.asInstanceOf[js.Any], qFixedWidthDelimiters = qFixedWidthDelimiters.asInstanceOf[js.Any], qHeaderSize = qHeaderSize.asInstanceOf[js.Any], qIgnoreEOF = qIgnoreEOF.asInstanceOf[js.Any], qLabel = qLabel.asInstanceOf[js.Any], qQuote = qQuote.asInstanceOf[js.Any], qRecordSize = qRecordSize.asInstanceOf[js.Any], qTabSize = qTabSize.asInstanceOf[js.Any], qType = qType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IFileDataFormat]
   }

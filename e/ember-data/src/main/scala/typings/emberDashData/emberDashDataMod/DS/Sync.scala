@@ -12,7 +12,7 @@ trait Sync extends js.Object {
 object Sync {
   @scala.inline
   def apply(async: `false`): Sync = {
-    val __obj = js.Dynamic.literal(async = async)
+    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Sync]
   }

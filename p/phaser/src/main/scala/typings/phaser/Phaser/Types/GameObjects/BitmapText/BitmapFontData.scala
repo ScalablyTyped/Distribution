@@ -40,7 +40,7 @@ object BitmapFontData {
     retroFont: Boolean,
     size: Double
   ): BitmapFontData = {
-    val __obj = js.Dynamic.literal(chars = chars, font = font, lineHeight = lineHeight, retroFont = retroFont, size = size)
+    val __obj = js.Dynamic.literal(chars = chars.asInstanceOf[js.Any], font = font.asInstanceOf[js.Any], lineHeight = lineHeight.asInstanceOf[js.Any], retroFont = retroFont.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BitmapFontData]
   }

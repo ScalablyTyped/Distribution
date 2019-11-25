@@ -36,17 +36,17 @@ object Options {
     wheelSpeed: Int | Double = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (handlers != null) __obj.updateDynamic("handlers")(handlers)
+    if (handlers != null) __obj.updateDynamic("handlers")(handlers.asInstanceOf[js.Any])
     if (maxScrollbarLength != null) __obj.updateDynamic("maxScrollbarLength")(maxScrollbarLength.asInstanceOf[js.Any])
     if (minScrollbarLength != null) __obj.updateDynamic("minScrollbarLength")(minScrollbarLength.asInstanceOf[js.Any])
     if (scrollXMarginOffset != null) __obj.updateDynamic("scrollXMarginOffset")(scrollXMarginOffset.asInstanceOf[js.Any])
     if (scrollYMarginOffset != null) __obj.updateDynamic("scrollYMarginOffset")(scrollYMarginOffset.asInstanceOf[js.Any])
     if (scrollingThreshold != null) __obj.updateDynamic("scrollingThreshold")(scrollingThreshold.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressScrollX)) __obj.updateDynamic("suppressScrollX")(suppressScrollX)
-    if (!js.isUndefined(suppressScrollY)) __obj.updateDynamic("suppressScrollY")(suppressScrollY)
-    if (!js.isUndefined(swipeEasing)) __obj.updateDynamic("swipeEasing")(swipeEasing)
-    if (!js.isUndefined(useBothWheelAxes)) __obj.updateDynamic("useBothWheelAxes")(useBothWheelAxes)
-    if (!js.isUndefined(wheelPropagation)) __obj.updateDynamic("wheelPropagation")(wheelPropagation)
+    if (!js.isUndefined(suppressScrollX)) __obj.updateDynamic("suppressScrollX")(suppressScrollX.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressScrollY)) __obj.updateDynamic("suppressScrollY")(suppressScrollY.asInstanceOf[js.Any])
+    if (!js.isUndefined(swipeEasing)) __obj.updateDynamic("swipeEasing")(swipeEasing.asInstanceOf[js.Any])
+    if (!js.isUndefined(useBothWheelAxes)) __obj.updateDynamic("useBothWheelAxes")(useBothWheelAxes.asInstanceOf[js.Any])
+    if (!js.isUndefined(wheelPropagation)) __obj.updateDynamic("wheelPropagation")(wheelPropagation.asInstanceOf[js.Any])
     if (wheelSpeed != null) __obj.updateDynamic("wheelSpeed")(wheelSpeed.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

@@ -87,7 +87,7 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.toggle
 import typings.atOracleOraclejet.atOracleOraclejetStrings.touchcancel
 import typings.atOracleOraclejet.atOracleOraclejetStrings.touchend
 import typings.atOracleOraclejet.atOracleOraclejetStrings.touchmove
-import typings.atOracleOraclejet.atOracleOraclejetStrings.touchstart
+import typings.atOracleOraclejet.atOracleOraclejetStrings.touchstart_
 import typings.atOracleOraclejet.atOracleOraclejetStrings.transitioncancel
 import typings.atOracleOraclejet.atOracleOraclejetStrings.transitionend
 import typings.atOracleOraclejet.atOracleOraclejetStrings.transitionrun
@@ -829,10 +829,10 @@ trait ojDefer extends JetElement[ojDeferSettableProperties] {
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_touchstart(`type`: touchstart, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, _]): Unit = js.native
+  def addEventListener_touchstart(`type`: touchstart_, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_touchstart(
-    `type`: touchstart,
+    `type`: touchstart_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, _],
     useCapture: Boolean
   ): Unit = js.native
@@ -905,11 +905,11 @@ trait ojDefer extends JetElement[ojDeferSettableProperties] {
     useCapture: Boolean
   ): Unit = js.native
   def getProperty(property: String): js.Any = js.native
-  def getProperty[T /* <: String */](property: T): /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojdefer.ojDefer[T] */ js.Any = js.native
+  def getProperty[T /* <: String */](property: T): /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojdefer.ojDefer[T] */ js.Any = js.native
   def setProperties(properties: ojDeferSettablePropertiesLenient): Unit = js.native
   def setProperty[T /* <: String */](
     property: T,
-    value: (/* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojdefer.ojDeferSettableProperties[T] */ js.Any) | (JetSetPropertyType[T, ojDeferSettableProperties])
+    value: (/* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojdefer.ojDeferSettableProperties[T] */ js.Any) | (JetSetPropertyType[T, ojDeferSettableProperties])
   ): Unit = js.native
 }
 

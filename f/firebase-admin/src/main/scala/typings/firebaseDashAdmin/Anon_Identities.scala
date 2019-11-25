@@ -32,9 +32,9 @@ object Anon_Identities {
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
     tenant: String = null
   ): Anon_Identities = {
-    val __obj = js.Dynamic.literal(identities = identities, sign_in_provider = sign_in_provider)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (tenant != null) __obj.updateDynamic("tenant")(tenant)
+    val __obj = js.Dynamic.literal(identities = identities.asInstanceOf[js.Any], sign_in_provider = sign_in_provider.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (tenant != null) __obj.updateDynamic("tenant")(tenant.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Identities]
   }
 }

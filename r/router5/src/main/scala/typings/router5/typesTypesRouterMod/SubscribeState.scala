@@ -13,7 +13,7 @@ trait SubscribeState extends js.Object {
 object SubscribeState {
   @scala.inline
   def apply(previousRoute: State, route: State): SubscribeState = {
-    val __obj = js.Dynamic.literal(previousRoute = previousRoute, route = route)
+    val __obj = js.Dynamic.literal(previousRoute = previousRoute.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SubscribeState]
   }

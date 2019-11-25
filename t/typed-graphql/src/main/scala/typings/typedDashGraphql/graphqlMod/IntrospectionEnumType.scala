@@ -15,8 +15,8 @@ trait IntrospectionEnumType extends IntrospectionType {
 object IntrospectionEnumType {
   @scala.inline
   def apply(enumValues: js.Array[IntrospectionEnumValue], kind: ENUM, name: String, description: String = null): IntrospectionEnumType = {
-    val __obj = js.Dynamic.literal(enumValues = enumValues, kind = kind, name = name)
-    if (description != null) __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrospectionEnumType]
   }
 }

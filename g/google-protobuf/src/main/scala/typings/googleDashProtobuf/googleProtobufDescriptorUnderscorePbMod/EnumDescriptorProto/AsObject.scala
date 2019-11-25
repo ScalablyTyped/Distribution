@@ -31,9 +31,9 @@ object AsObject {
     name: String = null,
     options: typings.googleDashProtobuf.googleProtobufDescriptorUnderscorePbMod.EnumOptions.AsObject = null
   ): AsObject = {
-    val __obj = js.Dynamic.literal(reservedNameList = reservedNameList, reservedRangeList = reservedRangeList, valueList = valueList)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (options != null) __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(reservedNameList = reservedNameList.asInstanceOf[js.Any], reservedRangeList = reservedRangeList.asInstanceOf[js.Any], valueList = valueList.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsObject]
   }
 }

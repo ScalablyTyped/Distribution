@@ -13,7 +13,7 @@ trait Anon_FormData extends js.Object {
 object Anon_FormData {
   @scala.inline
   def apply(formData: js.Any, xhr: XMLHttpRequest): Anon_FormData = {
-    val __obj = js.Dynamic.literal(formData = formData, xhr = xhr)
+    val __obj = js.Dynamic.literal(formData = formData.asInstanceOf[js.Any], xhr = xhr.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FormData]
   }

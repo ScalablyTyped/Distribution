@@ -16,7 +16,7 @@ object SignatureHelpOptions {
   @scala.inline
   def apply(triggerCharacters: js.Array[String] = null): SignatureHelpOptions = {
     val __obj = js.Dynamic.literal()
-    if (triggerCharacters != null) __obj.updateDynamic("triggerCharacters")(triggerCharacters)
+    if (triggerCharacters != null) __obj.updateDynamic("triggerCharacters")(triggerCharacters.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignatureHelpOptions]
   }
 }

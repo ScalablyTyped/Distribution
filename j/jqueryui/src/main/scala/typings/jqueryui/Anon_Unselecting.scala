@@ -12,7 +12,7 @@ trait Anon_Unselecting extends js.Object {
 object Anon_Unselecting {
   @scala.inline
   def apply(unselecting: Element): Anon_Unselecting = {
-    val __obj = js.Dynamic.literal(unselecting = unselecting)
+    val __obj = js.Dynamic.literal(unselecting = unselecting.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Unselecting]
   }

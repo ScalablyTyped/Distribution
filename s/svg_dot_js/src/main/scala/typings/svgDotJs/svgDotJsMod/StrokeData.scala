@@ -29,11 +29,11 @@ object StrokeData {
     width: Int | Double = null
   ): StrokeData = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (dasharray != null) __obj.updateDynamic("dasharray")(dasharray)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (dasharray != null) __obj.updateDynamic("dasharray")(dasharray.asInstanceOf[js.Any])
     if (dashoffset != null) __obj.updateDynamic("dashoffset")(dashoffset.asInstanceOf[js.Any])
-    if (linecap != null) __obj.updateDynamic("linecap")(linecap)
-    if (linejoin != null) __obj.updateDynamic("linejoin")(linejoin)
+    if (linecap != null) __obj.updateDynamic("linecap")(linecap.asInstanceOf[js.Any])
+    if (linejoin != null) __obj.updateDynamic("linejoin")(linejoin.asInstanceOf[js.Any])
     if (miterlimit != null) __obj.updateDynamic("miterlimit")(miterlimit.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])

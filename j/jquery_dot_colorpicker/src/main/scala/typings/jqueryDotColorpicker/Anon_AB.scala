@@ -39,7 +39,7 @@ object Anon_AB {
     v: Double,
     y: Double
   ): Anon_AB = {
-    val __obj = js.Dynamic.literal(A = A, B = B, L = L, a = a, b = b, c = c, g = g, h = h, k = k, m = m, r = r, s = s, v = v, y = y)
+    val __obj = js.Dynamic.literal(A = A.asInstanceOf[js.Any], B = B.asInstanceOf[js.Any], L = L.asInstanceOf[js.Any], a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], c = c.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], h = h.asInstanceOf[js.Any], k = k.asInstanceOf[js.Any], m = m.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AB]
   }

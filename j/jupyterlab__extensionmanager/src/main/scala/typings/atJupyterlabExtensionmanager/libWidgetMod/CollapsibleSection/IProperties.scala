@@ -40,10 +40,10 @@ object IProperties {
     isOpen: js.UndefOr[Boolean] = js.undefined,
     onCollapse: /* isOpen */ Boolean => Unit = null
   ): IProperties = {
-    val __obj = js.Dynamic.literal(header = header)
-    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage)
+    val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any])
+    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
     if (headerElements != null) __obj.updateDynamic("headerElements")(headerElements.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen)
+    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen.asInstanceOf[js.Any])
     if (onCollapse != null) __obj.updateDynamic("onCollapse")(js.Any.fromFunction1(onCollapse))
     __obj.asInstanceOf[IProperties]
   }

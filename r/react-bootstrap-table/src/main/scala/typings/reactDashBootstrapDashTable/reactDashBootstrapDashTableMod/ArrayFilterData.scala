@@ -13,8 +13,8 @@ trait ArrayFilterData extends FilterValue {
 object ArrayFilterData {
   @scala.inline
   def apply(`type`: ArrayFilter, value: js.Array[Double | String]): ArrayFilterData = {
-    val __obj = js.Dynamic.literal(value = value)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArrayFilterData]
   }
 }

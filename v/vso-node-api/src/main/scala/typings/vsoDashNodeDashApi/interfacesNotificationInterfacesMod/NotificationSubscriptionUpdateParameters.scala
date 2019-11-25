@@ -51,7 +51,7 @@ object NotificationSubscriptionUpdateParameters {
     statusMessage: String,
     userSettings: SubscriptionUserSettings
   ): NotificationSubscriptionUpdateParameters = {
-    val __obj = js.Dynamic.literal(adminSettings = adminSettings, channel = channel, description = description, filter = filter, scope = scope, status = status, statusMessage = statusMessage, userSettings = userSettings)
+    val __obj = js.Dynamic.literal(adminSettings = adminSettings.asInstanceOf[js.Any], channel = channel.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusMessage = statusMessage.asInstanceOf[js.Any], userSettings = userSettings.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NotificationSubscriptionUpdateParameters]
   }

@@ -30,7 +30,7 @@ object File {
     size: Double,
     uploadDate: Date
   ): File = {
-    val __obj = js.Dynamic.literal(bucketName = bucketName, chunkSize = chunkSize, contentType = contentType, filename = filename, id = id, md5 = md5, metadata = metadata, size = size, uploadDate = uploadDate)
+    val __obj = js.Dynamic.literal(bucketName = bucketName.asInstanceOf[js.Any], chunkSize = chunkSize.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], md5 = md5.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], uploadDate = uploadDate.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[File]
   }

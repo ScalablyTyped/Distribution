@@ -26,15 +26,15 @@ object PostCustomFieldWithDateParams {
     min: String = null,
     required: js.UndefOr[Boolean] = js.undefined
   ): PostCustomFieldWithDateParams = {
-    val __obj = js.Dynamic.literal(name = name, typeId = typeId)
-    if (applicableIssueTypes != null) __obj.updateDynamic("applicableIssueTypes")(applicableIssueTypes)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (initialDate != null) __obj.updateDynamic("initialDate")(initialDate)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], typeId = typeId.asInstanceOf[js.Any])
+    if (applicableIssueTypes != null) __obj.updateDynamic("applicableIssueTypes")(applicableIssueTypes.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (initialDate != null) __obj.updateDynamic("initialDate")(initialDate.asInstanceOf[js.Any])
     if (initialShift != null) __obj.updateDynamic("initialShift")(initialShift.asInstanceOf[js.Any])
     if (initialValueType != null) __obj.updateDynamic("initialValueType")(initialValueType.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max)
-    if (min != null) __obj.updateDynamic("min")(min)
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostCustomFieldWithDateParams]
   }
 }

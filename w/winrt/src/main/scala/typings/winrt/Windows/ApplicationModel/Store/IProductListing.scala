@@ -13,7 +13,7 @@ trait IProductListing extends js.Object {
 object IProductListing {
   @scala.inline
   def apply(formattedPrice: String, name: String, productId: String): IProductListing = {
-    val __obj = js.Dynamic.literal(formattedPrice = formattedPrice, name = name, productId = productId)
+    val __obj = js.Dynamic.literal(formattedPrice = formattedPrice.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], productId = productId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IProductListing]
   }

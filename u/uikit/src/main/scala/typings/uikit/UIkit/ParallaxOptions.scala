@@ -41,7 +41,7 @@ object ParallaxOptions {
   ): ParallaxOptions = {
     val __obj = js.Dynamic.literal()
     if (media != null) __obj.updateDynamic("media")(media.asInstanceOf[js.Any])
-    if (!js.isUndefined(target)) __obj.updateDynamic("target")(target)
+    if (!js.isUndefined(target)) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (velocity != null) __obj.updateDynamic("velocity")(velocity.asInstanceOf[js.Any])
     if (viewport != null) __obj.updateDynamic("viewport")(viewport.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParallaxOptions]

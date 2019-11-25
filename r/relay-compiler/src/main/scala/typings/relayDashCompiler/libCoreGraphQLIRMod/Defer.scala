@@ -28,8 +28,8 @@ object Defer {
     `if`: ArgumentValue = null,
     metadata: Metadata = null
   ): Defer = {
-    val __obj = js.Dynamic.literal(kind = kind, label = label, loc = loc, selections = selections)
-    if (`if` != null) __obj.updateDynamic("if")(`if`)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
+    if (`if` != null) __obj.updateDynamic("if")(`if`.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[Defer]
   }

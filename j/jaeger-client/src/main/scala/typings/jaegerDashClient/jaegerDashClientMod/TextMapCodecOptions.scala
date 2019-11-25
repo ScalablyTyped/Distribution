@@ -20,10 +20,10 @@ object TextMapCodecOptions {
     urlEncoding: js.UndefOr[Boolean] = js.undefined
   ): TextMapCodecOptions = {
     val __obj = js.Dynamic.literal()
-    if (baggagePrefix != null) __obj.updateDynamic("baggagePrefix")(baggagePrefix)
-    if (contextKey != null) __obj.updateDynamic("contextKey")(contextKey)
-    if (metrics != null) __obj.updateDynamic("metrics")(metrics)
-    if (!js.isUndefined(urlEncoding)) __obj.updateDynamic("urlEncoding")(urlEncoding)
+    if (baggagePrefix != null) __obj.updateDynamic("baggagePrefix")(baggagePrefix.asInstanceOf[js.Any])
+    if (contextKey != null) __obj.updateDynamic("contextKey")(contextKey.asInstanceOf[js.Any])
+    if (metrics != null) __obj.updateDynamic("metrics")(metrics.asInstanceOf[js.Any])
+    if (!js.isUndefined(urlEncoding)) __obj.updateDynamic("urlEncoding")(urlEncoding.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextMapCodecOptions]
   }
 }

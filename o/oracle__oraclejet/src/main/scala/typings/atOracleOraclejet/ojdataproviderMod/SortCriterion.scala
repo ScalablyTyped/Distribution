@@ -12,7 +12,7 @@ trait SortCriterion[D] extends js.Object {
 object SortCriterion {
   @scala.inline
   def apply[D](attribute: String, direction: String): SortCriterion[D] = {
-    val __obj = js.Dynamic.literal(attribute = attribute, direction = direction)
+    val __obj = js.Dynamic.literal(attribute = attribute.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SortCriterion[D]]
   }

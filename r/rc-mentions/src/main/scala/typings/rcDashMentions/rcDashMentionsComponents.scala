@@ -17,8 +17,6 @@ object rcDashMentionsComponents extends rcDashMentionsProps {
   @scala.inline
   def Mentions: ComponentType[MentionsProps] = js.constructorOf[typings.rcDashMentions.esMentionsMod.default].asInstanceOf[typings.react.reactMod.ComponentType[MentionsProps]]
   @scala.inline
-  def MentionsOption: ComponentType[MentionsOptionProps] = typings.rcDashMentions.esMentionsMod.default.Option.asInstanceOf[typings.react.reactMod.ComponentType[MentionsOptionProps]]
-  @scala.inline
   def Option: ComponentType[OptionProps] = typings.rcDashMentions.esOptionMod.default.asInstanceOf[typings.react.reactMod.ComponentType[OptionProps]]
 }
 

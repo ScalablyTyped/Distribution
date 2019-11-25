@@ -33,9 +33,9 @@ object StyleFunction {
     val __obj = js.Dynamic.literal()
     if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
     if (colorSpace != null) __obj.updateDynamic("colorSpace")(colorSpace.asInstanceOf[js.Any])
-    if (default != null) __obj.updateDynamic("default")(default)
-    if (property != null) __obj.updateDynamic("property")(property)
-    if (stops != null) __obj.updateDynamic("stops")(stops)
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
+    if (stops != null) __obj.updateDynamic("stops")(stops.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[StyleFunction]
   }

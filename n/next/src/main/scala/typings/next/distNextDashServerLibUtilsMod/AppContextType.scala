@@ -20,7 +20,7 @@ object AppContextType {
     ctx: NextPageContext,
     router: R
   ): AppContextType[R] = {
-    val __obj = js.Dynamic.literal(AppTree = AppTree.asInstanceOf[js.Any], Component = Component.asInstanceOf[js.Any], ctx = ctx, router = router.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(AppTree = AppTree.asInstanceOf[js.Any], Component = Component.asInstanceOf[js.Any], ctx = ctx.asInstanceOf[js.Any], router = router.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AppContextType[R]]
   }

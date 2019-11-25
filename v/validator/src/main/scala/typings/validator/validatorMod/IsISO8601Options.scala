@@ -18,7 +18,7 @@ object IsISO8601Options {
   @scala.inline
   def apply(strict: js.UndefOr[Boolean] = js.undefined): IsISO8601Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsISO8601Options]
   }
 }

@@ -15,7 +15,7 @@ object StockToolsGuiDefinitionsCrookedLinesCrooked5Options {
   @scala.inline
   def apply(symbol: String = null): StockToolsGuiDefinitionsCrookedLinesCrooked5Options = {
     val __obj = js.Dynamic.literal()
-    if (symbol != null) __obj.updateDynamic("symbol")(symbol)
+    if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
     __obj.asInstanceOf[StockToolsGuiDefinitionsCrookedLinesCrooked5Options]
   }
 }

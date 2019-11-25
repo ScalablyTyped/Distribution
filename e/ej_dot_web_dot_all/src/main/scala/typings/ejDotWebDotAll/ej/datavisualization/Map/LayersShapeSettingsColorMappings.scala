@@ -22,8 +22,8 @@ object LayersShapeSettingsColorMappings {
     rangeColorMapping: js.Array[LayersShapeSettingsColorMappingsRangeColorMapping] = null
   ): LayersShapeSettingsColorMappings = {
     val __obj = js.Dynamic.literal()
-    if (equalColorMapping != null) __obj.updateDynamic("equalColorMapping")(equalColorMapping)
-    if (rangeColorMapping != null) __obj.updateDynamic("rangeColorMapping")(rangeColorMapping)
+    if (equalColorMapping != null) __obj.updateDynamic("equalColorMapping")(equalColorMapping.asInstanceOf[js.Any])
+    if (rangeColorMapping != null) __obj.updateDynamic("rangeColorMapping")(rangeColorMapping.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayersShapeSettingsColorMappings]
   }
 }

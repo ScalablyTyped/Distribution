@@ -11,7 +11,7 @@ trait BuildDeletedEvent extends RealtimeBuildEvent {
 object BuildDeletedEvent {
   @scala.inline
   def apply(build: Build, buildId: Double): BuildDeletedEvent = {
-    val __obj = js.Dynamic.literal(build = build, buildId = buildId)
+    val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], buildId = buildId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BuildDeletedEvent]
   }

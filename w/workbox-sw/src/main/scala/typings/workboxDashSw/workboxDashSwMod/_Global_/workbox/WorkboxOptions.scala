@@ -18,9 +18,9 @@ object WorkboxOptions {
     modulePathPrefix: String = null
   ): WorkboxOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
     if (modulePathCb != null) __obj.updateDynamic("modulePathCb")(js.Any.fromFunction2(modulePathCb))
-    if (modulePathPrefix != null) __obj.updateDynamic("modulePathPrefix")(modulePathPrefix)
+    if (modulePathPrefix != null) __obj.updateDynamic("modulePathPrefix")(modulePathPrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkboxOptions]
   }
 }

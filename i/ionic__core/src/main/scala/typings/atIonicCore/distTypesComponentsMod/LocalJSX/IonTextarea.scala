@@ -5,8 +5,6 @@ import typings.atIonicCore.atIonicCoreStrings.ios
 import typings.atIonicCore.atIonicCoreStrings.md
 import typings.atIonicCore.atIonicCoreStrings.off
 import typings.atIonicCore.atIonicCoreStrings.soft
-import typings.atIonicCore.distTypesComponentsTextareaTextareaDashInterfaceMod.TextareaChangeEventDetail
-import typings.atIonicCore.distTypesInterfaceMod.Color
 import typings.std.CustomEvent
 import typings.std.KeyboardEvent
 import scala.scalajs.js
@@ -33,7 +31,9 @@ trait IonTextarea extends js.Object {
   /**
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
-  var color: js.UndefOr[Color] = js.undefined
+  var color: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any
+  ] = js.undefined
   /**
     * The visible width of the text control, in average character widths. If it is specified, it must be a positive integer.
     */
@@ -69,7 +69,14 @@ trait IonTextarea extends js.Object {
   /**
     * Emitted when the input value has changed.
     */
-  var onIonChange: js.UndefOr[js.Function1[/* event */ CustomEvent[TextareaChangeEventDetail], Unit]] = js.undefined
+  var onIonChange: js.UndefOr[
+    js.Function1[
+      /* event */ CustomEvent[
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextareaChangeEventDetail */ _
+      ], 
+      Unit
+    ]
+  ] = js.undefined
   /**
     * Emitted when the input has focus.
     */
@@ -115,7 +122,7 @@ object IonTextarea {
     autocapitalize: String = null,
     autofocus: js.UndefOr[Boolean] = js.undefined,
     clearOnEdit: js.UndefOr[Boolean] = js.undefined,
-    color: Color = null,
+    color: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any = null,
     cols: Int | Double = null,
     debounce: Int | Double = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
@@ -124,7 +131,9 @@ object IonTextarea {
     mode: ios | md = null,
     name: String = null,
     onIonBlur: /* event */ CustomEvent[Unit] => Unit = null,
-    onIonChange: /* event */ CustomEvent[TextareaChangeEventDetail] => Unit = null,
+    onIonChange: /* event */ CustomEvent[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextareaChangeEventDetail */ _
+    ] => Unit = null,
     onIonFocus: /* event */ CustomEvent[Unit] => Unit = null,
     onIonInput: /* event */ CustomEvent[KeyboardEvent] => Unit = null,
     placeholder: String = null,
@@ -136,28 +145,28 @@ object IonTextarea {
     wrap: hard | soft | off = null
   ): IonTextarea = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoGrow)) __obj.updateDynamic("autoGrow")(autoGrow)
-    if (autocapitalize != null) __obj.updateDynamic("autocapitalize")(autocapitalize)
-    if (!js.isUndefined(autofocus)) __obj.updateDynamic("autofocus")(autofocus)
-    if (!js.isUndefined(clearOnEdit)) __obj.updateDynamic("clearOnEdit")(clearOnEdit)
+    if (!js.isUndefined(autoGrow)) __obj.updateDynamic("autoGrow")(autoGrow.asInstanceOf[js.Any])
+    if (autocapitalize != null) __obj.updateDynamic("autocapitalize")(autocapitalize.asInstanceOf[js.Any])
+    if (!js.isUndefined(autofocus)) __obj.updateDynamic("autofocus")(autofocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearOnEdit)) __obj.updateDynamic("clearOnEdit")(clearOnEdit.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
     if (debounce != null) __obj.updateDynamic("debounce")(debounce.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (maxlength != null) __obj.updateDynamic("maxlength")(maxlength.asInstanceOf[js.Any])
     if (minlength != null) __obj.updateDynamic("minlength")(minlength.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (onIonBlur != null) __obj.updateDynamic("onIonBlur")(js.Any.fromFunction1(onIonBlur))
     if (onIonChange != null) __obj.updateDynamic("onIonChange")(js.Any.fromFunction1(onIonChange))
     if (onIonFocus != null) __obj.updateDynamic("onIonFocus")(js.Any.fromFunction1(onIonFocus))
     if (onIonInput != null) __obj.updateDynamic("onIonInput")(js.Any.fromFunction1(onIonInput))
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
-    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly)
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
+    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
-    if (!js.isUndefined(spellcheck)) __obj.updateDynamic("spellcheck")(spellcheck)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (!js.isUndefined(spellcheck)) __obj.updateDynamic("spellcheck")(spellcheck.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     if (wrap != null) __obj.updateDynamic("wrap")(wrap.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonTextarea]
   }

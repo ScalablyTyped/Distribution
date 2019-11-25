@@ -39,13 +39,13 @@ object DialogButton {
   ): DialogButton = {
     val __obj = js.Dynamic.literal()
     if (action != null) __obj.updateDynamic("action")(js.Any.fromFunction1(action))
-    if (!js.isUndefined(autospin)) __obj.updateDynamic("autospin")(autospin)
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
-    if (data != null) __obj.updateDynamic("data")(data)
+    if (!js.isUndefined(autospin)) __obj.updateDynamic("autospin")(autospin.asInstanceOf[js.Any])
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (hotkey != null) __obj.updateDynamic("hotkey")(hotkey.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (label != null) __obj.updateDynamic("label")(label)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogButton]
   }
 }

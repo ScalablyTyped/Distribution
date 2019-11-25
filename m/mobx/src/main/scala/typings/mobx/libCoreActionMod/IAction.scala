@@ -11,7 +11,7 @@ trait IAction extends js.Object {
 object IAction {
   @scala.inline
   def apply(isMobxAction: Boolean): IAction = {
-    val __obj = js.Dynamic.literal(isMobxAction = isMobxAction)
+    val __obj = js.Dynamic.literal(isMobxAction = isMobxAction.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IAction]
   }

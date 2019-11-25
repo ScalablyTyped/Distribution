@@ -13,8 +13,8 @@ object SequenceOptionsCreateEn {
   @scala.inline
   def apply(ifNotExists: js.UndefOr[Boolean] = js.undefined, temporary: js.UndefOr[Boolean] = js.undefined): SequenceOptionsCreateEn = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ifNotExists)) __obj.updateDynamic("ifNotExists")(ifNotExists)
-    if (!js.isUndefined(temporary)) __obj.updateDynamic("temporary")(temporary)
+    if (!js.isUndefined(ifNotExists)) __obj.updateDynamic("ifNotExists")(ifNotExists.asInstanceOf[js.Any])
+    if (!js.isUndefined(temporary)) __obj.updateDynamic("temporary")(temporary.asInstanceOf[js.Any])
     __obj.asInstanceOf[SequenceOptionsCreateEn]
   }
 }

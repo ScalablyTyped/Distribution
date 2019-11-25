@@ -53,10 +53,10 @@ object Anon_EmphasisLineStyle {
     value: Int | Double = null
   ): Anon_EmphasisLineStyle = {
     val __obj = js.Dynamic.literal()
-    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis)
-    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis.asInstanceOf[js.Any])
+    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_EmphasisLineStyle]
   }

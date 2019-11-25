@@ -12,7 +12,7 @@ trait PropsTableRowsProps extends PropsTableProps {
 object PropsTableRowsProps {
   @scala.inline
   def apply(rows: js.Array[PropDef]): PropsTableRowsProps = {
-    val __obj = js.Dynamic.literal(rows = rows)
+    val __obj = js.Dynamic.literal(rows = rows.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PropsTableRowsProps]
   }

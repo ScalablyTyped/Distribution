@@ -42,21 +42,21 @@ object EChartsConvertFinder {
     yAxisName: String = null
   ): EChartsConvertFinder = {
     val __obj = js.Dynamic.literal()
-    if (geoId != null) __obj.updateDynamic("geoId")(geoId)
+    if (geoId != null) __obj.updateDynamic("geoId")(geoId.asInstanceOf[js.Any])
     if (geoIndex != null) __obj.updateDynamic("geoIndex")(geoIndex.asInstanceOf[js.Any])
-    if (geoName != null) __obj.updateDynamic("geoName")(geoName)
-    if (gridId != null) __obj.updateDynamic("gridId")(gridId)
+    if (geoName != null) __obj.updateDynamic("geoName")(geoName.asInstanceOf[js.Any])
+    if (gridId != null) __obj.updateDynamic("gridId")(gridId.asInstanceOf[js.Any])
     if (gridIndex != null) __obj.updateDynamic("gridIndex")(gridIndex.asInstanceOf[js.Any])
-    if (gridName != null) __obj.updateDynamic("gridName")(gridName)
-    if (seriesId != null) __obj.updateDynamic("seriesId")(seriesId)
+    if (gridName != null) __obj.updateDynamic("gridName")(gridName.asInstanceOf[js.Any])
+    if (seriesId != null) __obj.updateDynamic("seriesId")(seriesId.asInstanceOf[js.Any])
     if (seriesIndex != null) __obj.updateDynamic("seriesIndex")(seriesIndex.asInstanceOf[js.Any])
-    if (seriesName != null) __obj.updateDynamic("seriesName")(seriesName)
-    if (xAxisId != null) __obj.updateDynamic("xAxisId")(xAxisId)
+    if (seriesName != null) __obj.updateDynamic("seriesName")(seriesName.asInstanceOf[js.Any])
+    if (xAxisId != null) __obj.updateDynamic("xAxisId")(xAxisId.asInstanceOf[js.Any])
     if (xAxisIndex != null) __obj.updateDynamic("xAxisIndex")(xAxisIndex.asInstanceOf[js.Any])
-    if (xAxisName != null) __obj.updateDynamic("xAxisName")(xAxisName)
-    if (yAxisId != null) __obj.updateDynamic("yAxisId")(yAxisId)
+    if (xAxisName != null) __obj.updateDynamic("xAxisName")(xAxisName.asInstanceOf[js.Any])
+    if (yAxisId != null) __obj.updateDynamic("yAxisId")(yAxisId.asInstanceOf[js.Any])
     if (yAxisIndex != null) __obj.updateDynamic("yAxisIndex")(yAxisIndex.asInstanceOf[js.Any])
-    if (yAxisName != null) __obj.updateDynamic("yAxisName")(yAxisName)
+    if (yAxisName != null) __obj.updateDynamic("yAxisName")(yAxisName.asInstanceOf[js.Any])
     __obj.asInstanceOf[EChartsConvertFinder]
   }
 }

@@ -31,7 +31,7 @@ object SubscriptionEvaluationResult {
     id: String,
     notifications: NotificationsEvaluationResult
   ): SubscriptionEvaluationResult = {
-    val __obj = js.Dynamic.literal(evaluationJobStatus = evaluationJobStatus, events = events, id = id, notifications = notifications)
+    val __obj = js.Dynamic.literal(evaluationJobStatus = evaluationJobStatus.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], notifications = notifications.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SubscriptionEvaluationResult]
   }

@@ -30,12 +30,12 @@ object SharepointIds {
     webId: String = null
   ): SharepointIds = {
     val __obj = js.Dynamic.literal()
-    if (listId != null) __obj.updateDynamic("listId")(listId)
-    if (listItemId != null) __obj.updateDynamic("listItemId")(listItemId)
-    if (listItemUniqueId != null) __obj.updateDynamic("listItemUniqueId")(listItemUniqueId)
-    if (siteId != null) __obj.updateDynamic("siteId")(siteId)
-    if (siteUrl != null) __obj.updateDynamic("siteUrl")(siteUrl)
-    if (webId != null) __obj.updateDynamic("webId")(webId)
+    if (listId != null) __obj.updateDynamic("listId")(listId.asInstanceOf[js.Any])
+    if (listItemId != null) __obj.updateDynamic("listItemId")(listItemId.asInstanceOf[js.Any])
+    if (listItemUniqueId != null) __obj.updateDynamic("listItemUniqueId")(listItemUniqueId.asInstanceOf[js.Any])
+    if (siteId != null) __obj.updateDynamic("siteId")(siteId.asInstanceOf[js.Any])
+    if (siteUrl != null) __obj.updateDynamic("siteUrl")(siteUrl.asInstanceOf[js.Any])
+    if (webId != null) __obj.updateDynamic("webId")(webId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharepointIds]
   }
 }

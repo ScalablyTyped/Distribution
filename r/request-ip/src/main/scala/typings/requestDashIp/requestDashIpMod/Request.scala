@@ -21,9 +21,9 @@ object Request {
     info: Anon_RemoteAddress = null,
     socket: Anon_RemoteAddress = null
   ): Request = {
-    val __obj = js.Dynamic.literal(connection = connection, headers = headers)
-    if (info != null) __obj.updateDynamic("info")(info)
-    if (socket != null) __obj.updateDynamic("socket")(socket)
+    val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any])
+    if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
+    if (socket != null) __obj.updateDynamic("socket")(socket.asInstanceOf[js.Any])
     __obj.asInstanceOf[Request]
   }
 }

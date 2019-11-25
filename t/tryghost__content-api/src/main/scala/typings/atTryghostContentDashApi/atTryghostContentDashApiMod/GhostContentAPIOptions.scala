@@ -25,9 +25,9 @@ trait GhostContentAPIOptions extends js.Object {
 object GhostContentAPIOptions {
   @scala.inline
   def apply(key: String, url: String, version: v2 | v3 | canary, ghostPath: String = null, host: String = null): GhostContentAPIOptions = {
-    val __obj = js.Dynamic.literal(key = key, url = url, version = version.asInstanceOf[js.Any])
-    if (ghostPath != null) __obj.updateDynamic("ghostPath")(ghostPath)
-    if (host != null) __obj.updateDynamic("host")(host)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    if (ghostPath != null) __obj.updateDynamic("ghostPath")(ghostPath.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     __obj.asInstanceOf[GhostContentAPIOptions]
   }
 }

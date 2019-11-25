@@ -28,7 +28,7 @@ object Instance {
     slashCommands: SlashCommands[_],
     web: Web[_]
   ): Instance = {
-    val __obj = js.Dynamic.literal(events = events, incomingWebhooks = incomingWebhooks, interactiveButtons = interactiveButtons, outgoingWebhooks = outgoingWebhooks, reset = js.Any.fromFunction0(reset), rtm = rtm, slashCommands = slashCommands, web = web)
+    val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], incomingWebhooks = incomingWebhooks.asInstanceOf[js.Any], interactiveButtons = interactiveButtons.asInstanceOf[js.Any], outgoingWebhooks = outgoingWebhooks.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset), rtm = rtm.asInstanceOf[js.Any], slashCommands = slashCommands.asInstanceOf[js.Any], web = web.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Instance]
   }

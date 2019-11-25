@@ -15,7 +15,7 @@ trait Anon_Attemptsremaining extends js.Object {
 object Anon_Attemptsremaining {
   @scala.inline
   def apply(attempts_remaining: Double, status: pending | succeeded | failed): Anon_Attemptsremaining = {
-    val __obj = js.Dynamic.literal(attempts_remaining = attempts_remaining, status = status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(attempts_remaining = attempts_remaining.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Attemptsremaining]
   }

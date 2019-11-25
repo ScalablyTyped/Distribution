@@ -28,7 +28,7 @@ object DayComponentProps {
     state: Empty | selected | disabled | today,
     theme: CalendarTheme
   ): DayComponentProps = {
-    val __obj = js.Dynamic.literal(date = date, marking = marking.asInstanceOf[js.Any], onLongPress = js.Any.fromFunction1(onLongPress), onPress = js.Any.fromFunction1(onPress), state = state.asInstanceOf[js.Any], theme = theme)
+    val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], marking = marking.asInstanceOf[js.Any], onLongPress = js.Any.fromFunction1(onLongPress), onPress = js.Any.fromFunction1(onPress), state = state.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DayComponentProps]
   }

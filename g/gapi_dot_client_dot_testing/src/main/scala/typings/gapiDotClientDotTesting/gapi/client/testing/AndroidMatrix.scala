@@ -40,10 +40,10 @@ object AndroidMatrix {
     orientations: js.Array[String] = null
   ): AndroidMatrix = {
     val __obj = js.Dynamic.literal()
-    if (androidModelIds != null) __obj.updateDynamic("androidModelIds")(androidModelIds)
-    if (androidVersionIds != null) __obj.updateDynamic("androidVersionIds")(androidVersionIds)
-    if (locales != null) __obj.updateDynamic("locales")(locales)
-    if (orientations != null) __obj.updateDynamic("orientations")(orientations)
+    if (androidModelIds != null) __obj.updateDynamic("androidModelIds")(androidModelIds.asInstanceOf[js.Any])
+    if (androidVersionIds != null) __obj.updateDynamic("androidVersionIds")(androidVersionIds.asInstanceOf[js.Any])
+    if (locales != null) __obj.updateDynamic("locales")(locales.asInstanceOf[js.Any])
+    if (orientations != null) __obj.updateDynamic("orientations")(orientations.asInstanceOf[js.Any])
     __obj.asInstanceOf[AndroidMatrix]
   }
 }

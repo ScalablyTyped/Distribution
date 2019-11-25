@@ -56,18 +56,18 @@ object Options {
     validTargets: js.Array[String] = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allEntries)) __obj.updateDynamic("allEntries")(allEntries)
-    if (!js.isUndefined(autoConfigure)) __obj.updateDynamic("autoConfigure")(autoConfigure)
-    if (!js.isUndefined(hmr)) __obj.updateDynamic("hmr")(hmr)
+    if (!js.isUndefined(allEntries)) __obj.updateDynamic("allEntries")(allEntries.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoConfigure)) __obj.updateDynamic("autoConfigure")(autoConfigure.asInstanceOf[js.Any])
+    if (!js.isUndefined(hmr)) __obj.updateDynamic("hmr")(hmr.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (!js.isUndefined(https)) __obj.updateDynamic("https")(https)
+    if (!js.isUndefined(https)) __obj.updateDynamic("https")(https.asInstanceOf[js.Any])
     if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
-    if (!js.isUndefined(logTime)) __obj.updateDynamic("logTime")(logTime)
+    if (!js.isUndefined(logTime)) __obj.updateDynamic("logTime")(logTime.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (!js.isUndefined(reload)) __obj.updateDynamic("reload")(reload)
-    if (server != null) __obj.updateDynamic("server")(server)
+    if (!js.isUndefined(reload)) __obj.updateDynamic("reload")(reload.asInstanceOf[js.Any])
+    if (server != null) __obj.updateDynamic("server")(server.asInstanceOf[js.Any])
     if (stats != null) __obj.updateDynamic("stats")(stats.asInstanceOf[js.Any])
-    if (validTargets != null) __obj.updateDynamic("validTargets")(validTargets)
+    if (validTargets != null) __obj.updateDynamic("validTargets")(validTargets.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

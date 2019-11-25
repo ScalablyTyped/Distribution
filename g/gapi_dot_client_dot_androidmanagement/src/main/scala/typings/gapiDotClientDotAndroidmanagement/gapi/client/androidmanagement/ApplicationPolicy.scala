@@ -41,12 +41,12 @@ object ApplicationPolicy {
     permissionGrants: js.Array[PermissionGrant] = null
   ): ApplicationPolicy = {
     val __obj = js.Dynamic.literal()
-    if (defaultPermissionPolicy != null) __obj.updateDynamic("defaultPermissionPolicy")(defaultPermissionPolicy)
-    if (installType != null) __obj.updateDynamic("installType")(installType)
-    if (!js.isUndefined(lockTaskAllowed)) __obj.updateDynamic("lockTaskAllowed")(lockTaskAllowed)
-    if (managedConfiguration != null) __obj.updateDynamic("managedConfiguration")(managedConfiguration)
-    if (packageName != null) __obj.updateDynamic("packageName")(packageName)
-    if (permissionGrants != null) __obj.updateDynamic("permissionGrants")(permissionGrants)
+    if (defaultPermissionPolicy != null) __obj.updateDynamic("defaultPermissionPolicy")(defaultPermissionPolicy.asInstanceOf[js.Any])
+    if (installType != null) __obj.updateDynamic("installType")(installType.asInstanceOf[js.Any])
+    if (!js.isUndefined(lockTaskAllowed)) __obj.updateDynamic("lockTaskAllowed")(lockTaskAllowed.asInstanceOf[js.Any])
+    if (managedConfiguration != null) __obj.updateDynamic("managedConfiguration")(managedConfiguration.asInstanceOf[js.Any])
+    if (packageName != null) __obj.updateDynamic("packageName")(packageName.asInstanceOf[js.Any])
+    if (permissionGrants != null) __obj.updateDynamic("permissionGrants")(permissionGrants.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationPolicy]
   }
 }

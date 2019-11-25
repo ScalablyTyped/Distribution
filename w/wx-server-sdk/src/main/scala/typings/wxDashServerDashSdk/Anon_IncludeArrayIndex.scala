@@ -17,9 +17,9 @@ object Anon_IncludeArrayIndex {
     includeArrayIndex: String = null,
     preserveNullAndEmptyArrays: js.UndefOr[Boolean] = js.undefined
   ): Anon_IncludeArrayIndex = {
-    val __obj = js.Dynamic.literal(path = path)
-    if (includeArrayIndex != null) __obj.updateDynamic("includeArrayIndex")(includeArrayIndex)
-    if (!js.isUndefined(preserveNullAndEmptyArrays)) __obj.updateDynamic("preserveNullAndEmptyArrays")(preserveNullAndEmptyArrays)
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
+    if (includeArrayIndex != null) __obj.updateDynamic("includeArrayIndex")(includeArrayIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveNullAndEmptyArrays)) __obj.updateDynamic("preserveNullAndEmptyArrays")(preserveNullAndEmptyArrays.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IncludeArrayIndex]
   }
 }

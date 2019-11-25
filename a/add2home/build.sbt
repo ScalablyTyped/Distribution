@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "add2home"
-version := "v2.0.5-dt-20190322Z-b7003f"
+version := "v2.0.5-dt-20190322Z-53b45c"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

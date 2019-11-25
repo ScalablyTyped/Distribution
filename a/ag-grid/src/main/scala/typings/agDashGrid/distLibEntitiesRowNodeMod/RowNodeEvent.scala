@@ -12,8 +12,8 @@ trait RowNodeEvent extends AgEvent {
 object RowNodeEvent {
   @scala.inline
   def apply(node: RowNode, `type`: String): RowNodeEvent = {
-    val __obj = js.Dynamic.literal(node = node)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowNodeEvent]
   }
 }

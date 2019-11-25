@@ -21,7 +21,7 @@ object UrlOptions {
     path: String,
     protocol: String
   ): UrlOptions = {
-    val __obj = js.Dynamic.literal(domain = domain, domain_prefix = domain_prefix, extensions = extensions, path = path, protocol = protocol)
+    val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], domain_prefix = domain_prefix.asInstanceOf[js.Any], extensions = extensions.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UrlOptions]
   }

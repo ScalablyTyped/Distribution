@@ -19,7 +19,7 @@ object Anon_LockVertically {
     transitionDuration: Double,
     voiceover: Anon_Canceled
   ): Anon_LockVertically = {
-    val __obj = js.Dynamic.literal(lockVertically = lockVertically, removableByMove = removableByMove, transitionDuration = transitionDuration, voiceover = voiceover)
+    val __obj = js.Dynamic.literal(lockVertically = lockVertically.asInstanceOf[js.Any], removableByMove = removableByMove.asInstanceOf[js.Any], transitionDuration = transitionDuration.asInstanceOf[js.Any], voiceover = voiceover.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_LockVertically]
   }

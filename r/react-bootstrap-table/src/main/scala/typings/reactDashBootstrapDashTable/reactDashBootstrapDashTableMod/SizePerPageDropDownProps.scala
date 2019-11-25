@@ -53,14 +53,14 @@ object SizePerPageDropDownProps {
     variation: DropDirection = null
   ): SizePerPageDropDownProps = {
     val __obj = js.Dynamic.literal()
-    if (btnContextual != null) __obj.updateDynamic("btnContextual")(btnContextual)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (currSizePerPage != null) __obj.updateDynamic("currSizePerPage")(currSizePerPage)
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
+    if (btnContextual != null) __obj.updateDynamic("btnContextual")(btnContextual.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (currSizePerPage != null) __obj.updateDynamic("currSizePerPage")(currSizePerPage.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (variation != null) __obj.updateDynamic("variation")(variation)
+    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (variation != null) __obj.updateDynamic("variation")(variation.asInstanceOf[js.Any])
     __obj.asInstanceOf[SizePerPageDropDownProps]
   }
 }

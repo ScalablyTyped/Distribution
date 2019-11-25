@@ -22,7 +22,7 @@ object MMLorHTMLConfiguration {
   @scala.inline
   def apply(prefer: BrowserPreference = null): MMLorHTMLConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (prefer != null) __obj.updateDynamic("prefer")(prefer)
+    if (prefer != null) __obj.updateDynamic("prefer")(prefer.asInstanceOf[js.Any])
     __obj.asInstanceOf[MMLorHTMLConfiguration]
   }
 }

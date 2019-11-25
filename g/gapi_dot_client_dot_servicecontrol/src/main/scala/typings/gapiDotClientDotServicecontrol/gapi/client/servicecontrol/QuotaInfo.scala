@@ -52,9 +52,9 @@ object QuotaInfo {
     quotaMetrics: js.Array[MetricValueSet] = null
   ): QuotaInfo = {
     val __obj = js.Dynamic.literal()
-    if (limitExceeded != null) __obj.updateDynamic("limitExceeded")(limitExceeded)
-    if (quotaConsumed != null) __obj.updateDynamic("quotaConsumed")(quotaConsumed)
-    if (quotaMetrics != null) __obj.updateDynamic("quotaMetrics")(quotaMetrics)
+    if (limitExceeded != null) __obj.updateDynamic("limitExceeded")(limitExceeded.asInstanceOf[js.Any])
+    if (quotaConsumed != null) __obj.updateDynamic("quotaConsumed")(quotaConsumed.asInstanceOf[js.Any])
+    if (quotaMetrics != null) __obj.updateDynamic("quotaMetrics")(quotaMetrics.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuotaInfo]
   }
 }

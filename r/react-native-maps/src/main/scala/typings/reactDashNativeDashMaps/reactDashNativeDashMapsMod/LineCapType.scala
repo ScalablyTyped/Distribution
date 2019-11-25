@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait LineCapType extends js.Object
 
+object LineCapType {
+  @scala.inline
+  def butt: typings.reactDashNativeDashMaps.reactDashNativeDashMapsStrings.butt = this.cast("butt")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def round: typings.reactDashNativeDashMaps.reactDashNativeDashMapsStrings.round = this.cast("round")
+  @scala.inline
+  def square: typings.reactDashNativeDashMaps.reactDashNativeDashMapsStrings.square = this.cast("square")
+}
+

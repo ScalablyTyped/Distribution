@@ -11,7 +11,7 @@ trait ErrorWithInvocationContext
 object ErrorWithInvocationContext {
   @scala.inline
   def apply(errorCode: Double, errorMessage: String, invocationContext: js.Any): ErrorWithInvocationContext = {
-    val __obj = js.Dynamic.literal(errorCode = errorCode, errorMessage = errorMessage, invocationContext = invocationContext)
+    val __obj = js.Dynamic.literal(errorCode = errorCode.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], invocationContext = invocationContext.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ErrorWithInvocationContext]
   }

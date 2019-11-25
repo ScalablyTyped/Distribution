@@ -19,8 +19,8 @@ object ModuleNameOptions {
   @scala.inline
   def apply(chunk: String = null, exports: js.Array[String] = null): ModuleNameOptions = {
     val __obj = js.Dynamic.literal()
-    if (chunk != null) __obj.updateDynamic("chunk")(chunk)
-    if (exports != null) __obj.updateDynamic("exports")(exports)
+    if (chunk != null) __obj.updateDynamic("chunk")(chunk.asInstanceOf[js.Any])
+    if (exports != null) __obj.updateDynamic("exports")(exports.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModuleNameOptions]
   }
 }

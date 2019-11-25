@@ -14,8 +14,8 @@ trait ImageResourceTransformResult extends js.Object {
 object ImageResourceTransformResult {
   @scala.inline
   def apply(resource: ImageResource, tmpDest: String, error: Error = null): ImageResourceTransformResult = {
-    val __obj = js.Dynamic.literal(resource = resource, tmpDest = tmpDest)
-    if (error != null) __obj.updateDynamic("error")(error)
+    val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any], tmpDest = tmpDest.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageResourceTransformResult]
   }
 }

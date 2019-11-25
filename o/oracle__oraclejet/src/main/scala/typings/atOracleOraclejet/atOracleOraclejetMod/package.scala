@@ -9,5 +9,5 @@ package object atOracleOraclejetMod {
   import typings.std.CustomEvent
 
   type JetElementCustomEvent[V] = CustomEvent[Anon_External[V]]
-  type JetSetPropertyType[K, U /* <: JetSettableProperties */] = /* import warning: ImportType.apply Failed type conversion: U[K] */ js.Any
+  type JetSetPropertyType[K, U /* <: JetSettableProperties */] = /* import warning: importer.ImportType#apply Failed type conversion: U[K] */ js.Any
 }

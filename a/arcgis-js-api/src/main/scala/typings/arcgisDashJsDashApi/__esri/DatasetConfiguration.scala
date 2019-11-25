@@ -58,7 +58,7 @@ object DatasetConfiguration {
     propertyIsEnumerable: PropertyKey => Boolean,
     whereConditions: js.Array[WhereCondition]
   ): DatasetConfiguration = {
-    val __obj = js.Dynamic.literal(changeCondition = changeCondition, changeFields = changeFields, constructor = constructor, dataWorkspaceId = dataWorkspaceId, dataset = dataset, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), whereConditions = whereConditions)
+    val __obj = js.Dynamic.literal(changeCondition = changeCondition.asInstanceOf[js.Any], changeFields = changeFields.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], dataWorkspaceId = dataWorkspaceId.asInstanceOf[js.Any], dataset = dataset.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), whereConditions = whereConditions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DatasetConfiguration]
   }

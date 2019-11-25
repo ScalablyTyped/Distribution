@@ -13,7 +13,7 @@ object DeobfuscationFile {
   @scala.inline
   def apply(symbolType: String = null): DeobfuscationFile = {
     val __obj = js.Dynamic.literal()
-    if (symbolType != null) __obj.updateDynamic("symbolType")(symbolType)
+    if (symbolType != null) __obj.updateDynamic("symbolType")(symbolType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeobfuscationFile]
   }
 }

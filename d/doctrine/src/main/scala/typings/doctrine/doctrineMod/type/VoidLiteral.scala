@@ -13,7 +13,7 @@ object VoidLiteral {
   @scala.inline
   def apply(`type`: typings.doctrine.doctrineStrings.VoidLiteral): VoidLiteral = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[VoidLiteral]
   }
 }

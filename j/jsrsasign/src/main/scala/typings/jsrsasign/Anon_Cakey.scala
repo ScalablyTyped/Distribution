@@ -33,8 +33,8 @@ object Anon_Cakey {
     subject: StringParam,
     ext: js.Array[Extension] = null
   ): Anon_Cakey = {
-    val __obj = js.Dynamic.literal(cakey = cakey, issue = issue, notafter = notafter, sbjpubkey = sbjpubkey, serial = serial, sigalg = sigalg, sighex = sighex, subject = subject)
-    if (ext != null) __obj.updateDynamic("ext")(ext)
+    val __obj = js.Dynamic.literal(cakey = cakey.asInstanceOf[js.Any], issue = issue.asInstanceOf[js.Any], notafter = notafter.asInstanceOf[js.Any], sbjpubkey = sbjpubkey.asInstanceOf[js.Any], serial = serial.asInstanceOf[js.Any], sigalg = sigalg.asInstanceOf[js.Any], sighex = sighex.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any])
+    if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Cakey]
   }
 }

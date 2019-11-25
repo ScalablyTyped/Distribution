@@ -21,7 +21,7 @@ object ProgressEvent {
     percent: Int | Double = null,
     total: Int | Double = null
   ): ProgressEvent = {
-    val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], loaded = loaded)
+    val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], loaded = loaded.asInstanceOf[js.Any])
     if (percent != null) __obj.updateDynamic("percent")(percent.asInstanceOf[js.Any])
     if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProgressEvent]

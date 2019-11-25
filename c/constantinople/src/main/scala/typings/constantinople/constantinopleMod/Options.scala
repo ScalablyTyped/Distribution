@@ -13,8 +13,8 @@ object Options {
   @scala.inline
   def apply(babylon: BabylonOptions = null, constants: js.Any = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (babylon != null) __obj.updateDynamic("babylon")(babylon)
-    if (constants != null) __obj.updateDynamic("constants")(constants)
+    if (babylon != null) __obj.updateDynamic("babylon")(babylon.asInstanceOf[js.Any])
+    if (constants != null) __obj.updateDynamic("constants")(constants.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -15,3 +15,22 @@ import scala.scalajs.js.annotation._
 */
 trait ArchiveStatus extends js.Object
 
+object ArchiveStatus {
+  @scala.inline
+  def available: typings.opentok.opentokStrings.available = this.cast("available")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def expired: typings.opentok.opentokStrings.expired = this.cast("expired")
+  @scala.inline
+  def failed: typings.opentok.opentokStrings.failed = this.cast("failed")
+  @scala.inline
+  def paused: typings.opentok.opentokStrings.paused = this.cast("paused")
+  @scala.inline
+  def started: typings.opentok.opentokStrings.started = this.cast("started")
+  @scala.inline
+  def stopped: typings.opentok.opentokStrings.stopped = this.cast("stopped")
+  @scala.inline
+  def uploaded: typings.opentok.opentokStrings.uploaded = this.cast("uploaded")
+}
+

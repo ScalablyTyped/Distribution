@@ -24,7 +24,7 @@ object CloudFormationCustomResourceCreateEvent {
     ServiceToken: String,
     StackId: String
   ): CloudFormationCustomResourceCreateEvent = {
-    val __obj = js.Dynamic.literal(LogicalResourceId = LogicalResourceId, RequestId = RequestId, RequestType = RequestType, ResourceProperties = ResourceProperties, ResourceType = ResourceType, ResponseURL = ResponseURL, ServiceToken = ServiceToken, StackId = StackId)
+    val __obj = js.Dynamic.literal(LogicalResourceId = LogicalResourceId.asInstanceOf[js.Any], RequestId = RequestId.asInstanceOf[js.Any], RequestType = RequestType.asInstanceOf[js.Any], ResourceProperties = ResourceProperties.asInstanceOf[js.Any], ResourceType = ResourceType.asInstanceOf[js.Any], ResponseURL = ResponseURL.asInstanceOf[js.Any], ServiceToken = ServiceToken.asInstanceOf[js.Any], StackId = StackId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CloudFormationCustomResourceCreateEvent]
   }

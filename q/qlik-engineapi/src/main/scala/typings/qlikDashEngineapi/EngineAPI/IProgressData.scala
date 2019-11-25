@@ -84,7 +84,7 @@ object IProgressData {
     qTransientProgressMessage: IProgressMessage,
     qUserInteractionWanted: Boolean
   ): IProgressData = {
-    val __obj = js.Dynamic.literal(qCompleted = qCompleted, qErrorData = qErrorData, qFinished = qFinished, qKB = qKB, qMillisecs = qMillisecs, qPersistentProgress = qPersistentProgress, qPersistentProgressMessages = qPersistentProgressMessages, qStarted = qStarted, qTotal = qTotal, qTransientProgress = qTransientProgress, qTransientProgressMessage = qTransientProgressMessage, qUserInteractionWanted = qUserInteractionWanted)
+    val __obj = js.Dynamic.literal(qCompleted = qCompleted.asInstanceOf[js.Any], qErrorData = qErrorData.asInstanceOf[js.Any], qFinished = qFinished.asInstanceOf[js.Any], qKB = qKB.asInstanceOf[js.Any], qMillisecs = qMillisecs.asInstanceOf[js.Any], qPersistentProgress = qPersistentProgress.asInstanceOf[js.Any], qPersistentProgressMessages = qPersistentProgressMessages.asInstanceOf[js.Any], qStarted = qStarted.asInstanceOf[js.Any], qTotal = qTotal.asInstanceOf[js.Any], qTransientProgress = qTransientProgress.asInstanceOf[js.Any], qTransientProgressMessage = qTransientProgressMessage.asInstanceOf[js.Any], qUserInteractionWanted = qUserInteractionWanted.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IProgressData]
   }

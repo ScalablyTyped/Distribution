@@ -25,8 +25,8 @@ object ModalButtonDescriptor {
     orderHint: Int | Double = null,
     `type`: PRIMARY_ACTION | SECONDARY_ACTION = null
   ): ModalButtonDescriptor = {
-    val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction0(onClick), text = text, title = title)
-    if (color != null) __obj.updateDynamic("color")(color)
+    val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction0(onClick), text = text.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (orderHint != null) __obj.updateDynamic("orderHint")(orderHint.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModalButtonDescriptor]

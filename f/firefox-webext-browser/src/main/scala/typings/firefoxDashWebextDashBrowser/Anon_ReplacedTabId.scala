@@ -16,7 +16,7 @@ trait Anon_ReplacedTabId extends js.Object {
 object Anon_ReplacedTabId {
   @scala.inline
   def apply(replacedTabId: Double, tabId: Double, timeStamp: Double): Anon_ReplacedTabId = {
-    val __obj = js.Dynamic.literal(replacedTabId = replacedTabId, tabId = tabId, timeStamp = timeStamp)
+    val __obj = js.Dynamic.literal(replacedTabId = replacedTabId.asInstanceOf[js.Any], tabId = tabId.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ReplacedTabId]
   }

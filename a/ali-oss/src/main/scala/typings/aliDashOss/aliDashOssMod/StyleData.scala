@@ -17,7 +17,7 @@ trait StyleData extends js.Object {
 object StyleData {
   @scala.inline
   def apply(Content: String, CreateTime: String, LastModifyTime: String, Name: String): StyleData = {
-    val __obj = js.Dynamic.literal(Content = Content, CreateTime = CreateTime, LastModifyTime = LastModifyTime, Name = Name)
+    val __obj = js.Dynamic.literal(Content = Content.asInstanceOf[js.Any], CreateTime = CreateTime.asInstanceOf[js.Any], LastModifyTime = LastModifyTime.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StyleData]
   }

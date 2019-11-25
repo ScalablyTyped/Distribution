@@ -37,8 +37,8 @@ object PredominantCategoriesResultPredominantCategoryInfos {
     value: String | Double,
     label: String = null
   ): PredominantCategoriesResultPredominantCategoryInfos = {
-    val __obj = js.Dynamic.literal(constructor = constructor, count = count, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), value = value.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), value = value.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[PredominantCategoriesResultPredominantCategoryInfos]
   }
 }

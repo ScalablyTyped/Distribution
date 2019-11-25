@@ -3,7 +3,6 @@ package typings.videoDotJs.videoDotJsMod.default
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import typings.videoDotJs.videoDotJsMod.videojs.MenuOptions
-import typings.videoDotJs.videoDotJsMod.videojs.Player
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,9 +20,12 @@ object Menu
   *        Object of option names and values
   *
   */
-Instantiable1[/* player */ Player, typings.videoDotJs.videoDotJsMod.videojs.Menu]
+Instantiable1[
+      /* player */ typings.videoDotJs.videoDotJsMod.videojs.Player, 
+      typings.videoDotJs.videoDotJsMod.videojs.Menu
+    ]
      with Instantiable2[
-      /* player */ Player, 
+      /* player */ typings.videoDotJs.videoDotJsMod.videojs.Player, 
       /* options */ MenuOptions, 
       typings.videoDotJs.videoDotJsMod.videojs.Menu
     ]

@@ -17,8 +17,8 @@ object LoadReportEventArgs {
   @scala.inline
   def apply(loadReportSetting: js.Any = null, targetControl: js.Any = null): LoadReportEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (loadReportSetting != null) __obj.updateDynamic("loadReportSetting")(loadReportSetting)
-    if (targetControl != null) __obj.updateDynamic("targetControl")(targetControl)
+    if (loadReportSetting != null) __obj.updateDynamic("loadReportSetting")(loadReportSetting.asInstanceOf[js.Any])
+    if (targetControl != null) __obj.updateDynamic("targetControl")(targetControl.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadReportEventArgs]
   }
 }

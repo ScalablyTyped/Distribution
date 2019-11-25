@@ -29,9 +29,9 @@ object MultiprocessAppender {
     loggerPort: Int | Double = null
   ): MultiprocessAppender = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
-    if (appender != null) __obj.updateDynamic("appender")(appender)
-    if (loggerHost != null) __obj.updateDynamic("loggerHost")(loggerHost)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (appender != null) __obj.updateDynamic("appender")(appender.asInstanceOf[js.Any])
+    if (loggerHost != null) __obj.updateDynamic("loggerHost")(loggerHost.asInstanceOf[js.Any])
     if (loggerPort != null) __obj.updateDynamic("loggerPort")(loggerPort.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiprocessAppender]
   }

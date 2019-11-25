@@ -27,7 +27,7 @@ object TinderUpdates {
     matchmaker: js.Array[_],
     squads: js.Array[_]
   ): TinderUpdates = {
-    val __obj = js.Dynamic.literal(blocks = blocks, deleted_lists = deleted_lists, last_activity_date = last_activity_date, liked_messages = liked_messages, lists = lists, matches = matches, matchmaker = matchmaker, squads = squads)
+    val __obj = js.Dynamic.literal(blocks = blocks.asInstanceOf[js.Any], deleted_lists = deleted_lists.asInstanceOf[js.Any], last_activity_date = last_activity_date.asInstanceOf[js.Any], liked_messages = liked_messages.asInstanceOf[js.Any], lists = lists.asInstanceOf[js.Any], matches = matches.asInstanceOf[js.Any], matchmaker = matchmaker.asInstanceOf[js.Any], squads = squads.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TinderUpdates]
   }

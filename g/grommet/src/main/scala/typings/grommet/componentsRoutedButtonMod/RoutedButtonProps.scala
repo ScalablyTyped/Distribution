@@ -14,7 +14,7 @@ trait RoutedButtonProps extends js.Object {
 object RoutedButtonProps {
   @scala.inline
   def apply(path: String, method: push | replace = null): RoutedButtonProps = {
-    val __obj = js.Dynamic.literal(path = path)
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoutedButtonProps]
   }

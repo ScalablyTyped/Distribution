@@ -32,13 +32,13 @@ object Anon_CurX {
     val __obj = js.Dynamic.literal()
     if (curX != null) __obj.updateDynamic("curX")(curX.asInstanceOf[js.Any])
     if (curY != null) __obj.updateDynamic("curY")(curY.asInstanceOf[js.Any])
-    if (!js.isUndefined(edgeHit)) __obj.updateDynamic("edgeHit")(edgeHit)
+    if (!js.isUndefined(edgeHit)) __obj.updateDynamic("edgeHit")(edgeHit.asInstanceOf[js.Any])
     if (fingerCount != null) __obj.updateDynamic("fingerCount")(fingerCount.asInstanceOf[js.Any])
     if (minSwipe != null) __obj.updateDynamic("minSwipe")(minSwipe.asInstanceOf[js.Any])
     if (startX != null) __obj.updateDynamic("startX")(startX.asInstanceOf[js.Any])
     if (startY != null) __obj.updateDynamic("startY")(startY.asInstanceOf[js.Any])
     if (swipeLength != null) __obj.updateDynamic("swipeLength")(swipeLength.asInstanceOf[js.Any])
-    if (!js.isUndefined(verticalSwiping)) __obj.updateDynamic("verticalSwiping")(verticalSwiping)
+    if (!js.isUndefined(verticalSwiping)) __obj.updateDynamic("verticalSwiping")(verticalSwiping.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CurX]
   }
 }

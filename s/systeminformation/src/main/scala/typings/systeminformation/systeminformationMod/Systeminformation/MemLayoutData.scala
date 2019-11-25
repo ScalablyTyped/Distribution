@@ -31,8 +31,8 @@ object MemLayoutData {
     voltageMax: Double,
     voltageMin: Double
   ): MemLayoutData = {
-    val __obj = js.Dynamic.literal(bank = bank, clockSpeed = clockSpeed, formFactor = formFactor, partNum = partNum, serialNum = serialNum, size = size, voltageConfigured = voltageConfigured, voltageMax = voltageMax, voltageMin = voltageMin)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(bank = bank.asInstanceOf[js.Any], clockSpeed = clockSpeed.asInstanceOf[js.Any], formFactor = formFactor.asInstanceOf[js.Any], partNum = partNum.asInstanceOf[js.Any], serialNum = serialNum.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], voltageConfigured = voltageConfigured.asInstanceOf[js.Any], voltageMax = voltageMax.asInstanceOf[js.Any], voltageMin = voltageMin.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MemLayoutData]
   }
 }

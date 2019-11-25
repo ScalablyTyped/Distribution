@@ -55,15 +55,15 @@ object DataSourceSettings {
     tableName: String = null
   ): DataSourceSettings = {
     val __obj = js.Dynamic.literal()
-    if (connectionDataSource != null) __obj.updateDynamic("connectionDataSource")(connectionDataSource)
-    if (crudAction != null) __obj.updateDynamic("crudAction")(crudAction)
-    if (customFields != null) __obj.updateDynamic("customFields")(customFields)
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
-    if (query != null) __obj.updateDynamic("query")(query)
-    if (root != null) __obj.updateDynamic("root")(root)
-    if (tableName != null) __obj.updateDynamic("tableName")(tableName)
+    if (connectionDataSource != null) __obj.updateDynamic("connectionDataSource")(connectionDataSource.asInstanceOf[js.Any])
+    if (crudAction != null) __obj.updateDynamic("crudAction")(crudAction.asInstanceOf[js.Any])
+    if (customFields != null) __obj.updateDynamic("customFields")(customFields.asInstanceOf[js.Any])
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (tableName != null) __obj.updateDynamic("tableName")(tableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceSettings]
   }
 }

@@ -42,15 +42,15 @@ object ParallelInstruction {
     write: WriteInstruction = null
   ): ParallelInstruction = {
     val __obj = js.Dynamic.literal()
-    if (flatten != null) __obj.updateDynamic("flatten")(flatten)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (originalName != null) __obj.updateDynamic("originalName")(originalName)
-    if (outputs != null) __obj.updateDynamic("outputs")(outputs)
-    if (parDo != null) __obj.updateDynamic("parDo")(parDo)
-    if (partialGroupByKey != null) __obj.updateDynamic("partialGroupByKey")(partialGroupByKey)
-    if (read != null) __obj.updateDynamic("read")(read)
-    if (systemName != null) __obj.updateDynamic("systemName")(systemName)
-    if (write != null) __obj.updateDynamic("write")(write)
+    if (flatten != null) __obj.updateDynamic("flatten")(flatten.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (originalName != null) __obj.updateDynamic("originalName")(originalName.asInstanceOf[js.Any])
+    if (outputs != null) __obj.updateDynamic("outputs")(outputs.asInstanceOf[js.Any])
+    if (parDo != null) __obj.updateDynamic("parDo")(parDo.asInstanceOf[js.Any])
+    if (partialGroupByKey != null) __obj.updateDynamic("partialGroupByKey")(partialGroupByKey.asInstanceOf[js.Any])
+    if (read != null) __obj.updateDynamic("read")(read.asInstanceOf[js.Any])
+    if (systemName != null) __obj.updateDynamic("systemName")(systemName.asInstanceOf[js.Any])
+    if (write != null) __obj.updateDynamic("write")(write.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParallelInstruction]
   }
 }

@@ -13,8 +13,8 @@ trait ColumnDef extends js.Object {
 object ColumnDef {
   @scala.inline
   def apply(constraints: String, foreignKey: js.Any = null): ColumnDef = {
-    val __obj = js.Dynamic.literal(constraints = constraints)
-    if (foreignKey != null) __obj.updateDynamic("foreignKey")(foreignKey)
+    val __obj = js.Dynamic.literal(constraints = constraints.asInstanceOf[js.Any])
+    if (foreignKey != null) __obj.updateDynamic("foreignKey")(foreignKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnDef]
   }
 }

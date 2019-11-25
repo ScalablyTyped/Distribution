@@ -23,8 +23,8 @@ object EffectStyle {
     remove: () => Unit,
     `type`: EFFECT
   ): EffectStyle = {
-    val __obj = js.Dynamic.literal(description = description, effects = effects, id = id, key = key, name = name, remote = remote, remove = js.Any.fromFunction0(remove))
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], effects = effects.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], remote = remote.asInstanceOf[js.Any], remove = js.Any.fromFunction0(remove))
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EffectStyle]
   }
 }

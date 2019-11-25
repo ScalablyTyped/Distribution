@@ -23,8 +23,8 @@ trait ListProviderConfigResults extends js.Object {
 object ListProviderConfigResults {
   @scala.inline
   def apply(providerConfigs: js.Array[AuthProviderConfig], pageToken: String = null): ListProviderConfigResults = {
-    val __obj = js.Dynamic.literal(providerConfigs = providerConfigs)
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
+    val __obj = js.Dynamic.literal(providerConfigs = providerConfigs.asInstanceOf[js.Any])
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListProviderConfigResults]
   }
 }

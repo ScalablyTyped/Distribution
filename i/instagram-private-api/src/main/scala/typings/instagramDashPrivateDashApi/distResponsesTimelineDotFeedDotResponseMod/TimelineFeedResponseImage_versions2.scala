@@ -11,7 +11,7 @@ trait TimelineFeedResponseImage_versions2 extends js.Object {
 object TimelineFeedResponseImage_versions2 {
   @scala.inline
   def apply(candidates: js.Array[TimelineFeedResponseCandidatesItem]): TimelineFeedResponseImage_versions2 = {
-    val __obj = js.Dynamic.literal(candidates = candidates)
+    val __obj = js.Dynamic.literal(candidates = candidates.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TimelineFeedResponseImage_versions2]
   }

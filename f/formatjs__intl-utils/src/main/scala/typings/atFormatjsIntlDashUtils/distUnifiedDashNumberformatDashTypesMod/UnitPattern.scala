@@ -13,8 +13,8 @@ object UnitPattern {
   @scala.inline
   def apply(one: String = null, other: String = null): UnitPattern = {
     val __obj = js.Dynamic.literal()
-    if (one != null) __obj.updateDynamic("one")(one)
-    if (other != null) __obj.updateDynamic("other")(other)
+    if (one != null) __obj.updateDynamic("one")(one.asInstanceOf[js.Any])
+    if (other != null) __obj.updateDynamic("other")(other.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnitPattern]
   }
 }

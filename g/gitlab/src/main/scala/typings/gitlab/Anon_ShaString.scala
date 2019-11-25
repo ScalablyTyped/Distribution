@@ -11,7 +11,7 @@ trait Anon_ShaString extends js.Object {
 object Anon_ShaString {
   @scala.inline
   def apply(sha: String): Anon_ShaString = {
-    val __obj = js.Dynamic.literal(sha = sha)
+    val __obj = js.Dynamic.literal(sha = sha.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ShaString]
   }

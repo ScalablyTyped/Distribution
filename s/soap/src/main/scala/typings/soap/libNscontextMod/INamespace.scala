@@ -13,7 +13,7 @@ trait INamespace extends js.Object {
 object INamespace {
   @scala.inline
   def apply(declared: Boolean, prefix: String, uri: String): INamespace = {
-    val __obj = js.Dynamic.literal(declared = declared, prefix = prefix, uri = uri)
+    val __obj = js.Dynamic.literal(declared = declared.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[INamespace]
   }

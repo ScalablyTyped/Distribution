@@ -12,7 +12,7 @@ trait ISettingsPaneCommandsRequest extends js.Object {
 object ISettingsPaneCommandsRequest {
   @scala.inline
   def apply(applicationCommands: IVector[SettingsCommand]): ISettingsPaneCommandsRequest = {
-    val __obj = js.Dynamic.literal(applicationCommands = applicationCommands)
+    val __obj = js.Dynamic.literal(applicationCommands = applicationCommands.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISettingsPaneCommandsRequest]
   }

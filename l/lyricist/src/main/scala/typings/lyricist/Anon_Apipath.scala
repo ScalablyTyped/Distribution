@@ -30,8 +30,8 @@ object Anon_Apipath {
     `type`: String,
     url: String
   ): Anon_Apipath = {
-    val __obj = js.Dynamic.literal(api_path = api_path, client_timestamps = client_timestamps, context = context, id = id, image_url = image_url, link_title = link_title, title = title, url = url)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(api_path = api_path.asInstanceOf[js.Any], client_timestamps = client_timestamps.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], image_url = image_url.asInstanceOf[js.Any], link_title = link_title.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Apipath]
   }
 }

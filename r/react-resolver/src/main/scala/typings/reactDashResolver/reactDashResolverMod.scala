@@ -24,7 +24,7 @@ object reactDashResolverMod extends js.Object {
   def client(loadingComponent: ComponentType[_]): js.Function1[/* component */ ComponentType[_], StatelessComponent[_]] = js.native
   def context[K /* <: String */](prop: K): js.Function1[/* component */ ComponentType[_], StatelessComponent[js.Any with (Record[K, _])]] = js.native
   def resolve[OwnProps, ResolvableProps, MoreProps](
-    resolversMap: /* import warning: ImportType.apply c Unsupported type mapping: 
+    resolversMap: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof ResolvableProps ]: react-resolver.react-resolver.ResolveFn<OwnProps & MoreProps, ResolvableProps[K]>}
     */ typings.reactDashResolver.reactDashResolverStrings.resolve with ResolvableProps
   ): js.Function1[

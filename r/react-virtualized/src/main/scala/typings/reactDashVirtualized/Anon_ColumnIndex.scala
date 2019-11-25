@@ -12,7 +12,7 @@ trait Anon_ColumnIndex extends js.Object {
 object Anon_ColumnIndex {
   @scala.inline
   def apply(columnIndex: Double, rowIndex: Double): Anon_ColumnIndex = {
-    val __obj = js.Dynamic.literal(columnIndex = columnIndex, rowIndex = rowIndex)
+    val __obj = js.Dynamic.literal(columnIndex = columnIndex.asInstanceOf[js.Any], rowIndex = rowIndex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ColumnIndex]
   }

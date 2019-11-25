@@ -31,15 +31,15 @@ object IChartistFixedScaleAxis {
     val __obj = js.Dynamic.literal()
     if (divisor != null) __obj.updateDynamic("divisor")(divisor.asInstanceOf[js.Any])
     if (high != null) __obj.updateDynamic("high")(high.asInstanceOf[js.Any])
-    if (labelInterpolationFnc != null) __obj.updateDynamic("labelInterpolationFnc")(labelInterpolationFnc)
-    if (labelOffset != null) __obj.updateDynamic("labelOffset")(labelOffset)
+    if (labelInterpolationFnc != null) __obj.updateDynamic("labelInterpolationFnc")(labelInterpolationFnc.asInstanceOf[js.Any])
+    if (labelOffset != null) __obj.updateDynamic("labelOffset")(labelOffset.asInstanceOf[js.Any])
     if (low != null) __obj.updateDynamic("low")(low.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (!js.isUndefined(showGrid)) __obj.updateDynamic("showGrid")(showGrid)
-    if (!js.isUndefined(showLabel)) __obj.updateDynamic("showLabel")(showLabel)
-    if (ticks != null) __obj.updateDynamic("ticks")(ticks)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(showGrid)) __obj.updateDynamic("showGrid")(showGrid.asInstanceOf[js.Any])
+    if (!js.isUndefined(showLabel)) __obj.updateDynamic("showLabel")(showLabel.asInstanceOf[js.Any])
+    if (ticks != null) __obj.updateDynamic("ticks")(ticks.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IChartistFixedScaleAxis]
   }
 }

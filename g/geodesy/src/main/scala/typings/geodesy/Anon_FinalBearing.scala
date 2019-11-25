@@ -14,7 +14,7 @@ trait Anon_FinalBearing extends js.Object {
 object Anon_FinalBearing {
   @scala.inline
   def apply(finalBearing: Double, iterations: Double, point: LatLonEllipsoidal_Vincenty): Anon_FinalBearing = {
-    val __obj = js.Dynamic.literal(finalBearing = finalBearing, iterations = iterations, point = point)
+    val __obj = js.Dynamic.literal(finalBearing = finalBearing.asInstanceOf[js.Any], iterations = iterations.asInstanceOf[js.Any], point = point.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FinalBearing]
   }

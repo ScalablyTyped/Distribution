@@ -25,8 +25,8 @@ trait IShimmerGapStyleProps extends js.Object {
 object IShimmerGapStyleProps {
   @scala.inline
   def apply(theme: ITheme, borderStyle: IRawStyle = null, height: Int | Double = null): IShimmerGapStyleProps = {
-    val __obj = js.Dynamic.literal(theme = theme)
-    if (borderStyle != null) __obj.updateDynamic("borderStyle")(borderStyle)
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
+    if (borderStyle != null) __obj.updateDynamic("borderStyle")(borderStyle.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     __obj.asInstanceOf[IShimmerGapStyleProps]
   }

@@ -23,8 +23,8 @@ object Anon_Param {
   @scala.inline
   def apply(param: String = null, pretty: js.UndefOr[Boolean] = js.undefined, spaces: Int | Double = null): Anon_Param = {
     val __obj = js.Dynamic.literal()
-    if (param != null) __obj.updateDynamic("param")(param)
-    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty)
+    if (param != null) __obj.updateDynamic("param")(param.asInstanceOf[js.Any])
+    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.asInstanceOf[js.Any])
     if (spaces != null) __obj.updateDynamic("spaces")(spaces.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Param]
   }

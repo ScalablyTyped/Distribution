@@ -28,14 +28,14 @@ object PivotGroup {
     valueMetadata: js.Array[PivotGroupValueMetadata] = null
   ): PivotGroup = {
     val __obj = js.Dynamic.literal()
-    if (groupRule != null) __obj.updateDynamic("groupRule")(groupRule)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (!js.isUndefined(repeatHeadings)) __obj.updateDynamic("repeatHeadings")(repeatHeadings)
-    if (!js.isUndefined(showTotals)) __obj.updateDynamic("showTotals")(showTotals)
-    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder)
+    if (groupRule != null) __obj.updateDynamic("groupRule")(groupRule.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (!js.isUndefined(repeatHeadings)) __obj.updateDynamic("repeatHeadings")(repeatHeadings.asInstanceOf[js.Any])
+    if (!js.isUndefined(showTotals)) __obj.updateDynamic("showTotals")(showTotals.asInstanceOf[js.Any])
+    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
     if (sourceColumnOffset != null) __obj.updateDynamic("sourceColumnOffset")(sourceColumnOffset.asInstanceOf[js.Any])
-    if (valueBucket != null) __obj.updateDynamic("valueBucket")(valueBucket)
-    if (valueMetadata != null) __obj.updateDynamic("valueMetadata")(valueMetadata)
+    if (valueBucket != null) __obj.updateDynamic("valueBucket")(valueBucket.asInstanceOf[js.Any])
+    if (valueMetadata != null) __obj.updateDynamic("valueMetadata")(valueMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotGroup]
   }
 }

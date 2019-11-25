@@ -14,7 +14,7 @@ trait SignatureObject extends js.Object {
 object SignatureObject {
   @scala.inline
   def apply(messageHash: String, r: String, s: String, v: String): SignatureObject = {
-    val __obj = js.Dynamic.literal(messageHash = messageHash, r = r, s = s, v = v)
+    val __obj = js.Dynamic.literal(messageHash = messageHash.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SignatureObject]
   }

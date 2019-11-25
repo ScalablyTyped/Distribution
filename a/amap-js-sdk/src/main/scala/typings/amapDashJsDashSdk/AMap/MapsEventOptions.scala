@@ -17,8 +17,8 @@ trait MapsEventOptions extends js.Object {
 object MapsEventOptions {
   @scala.inline
   def apply(lnglat: LngLat, pixel: Pixel, target: js.Any, `type`: String): MapsEventOptions = {
-    val __obj = js.Dynamic.literal(lnglat = lnglat, pixel = pixel, target = target)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(lnglat = lnglat.asInstanceOf[js.Any], pixel = pixel.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapsEventOptions]
   }
 }

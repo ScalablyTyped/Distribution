@@ -28,13 +28,13 @@ object WebsocketProviderOptions {
     timeout: Int | Double = null
   ): WebsocketProviderOptions = {
     val __obj = js.Dynamic.literal()
-    if (clientConfig != null) __obj.updateDynamic("clientConfig")(clientConfig)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (origin != null) __obj.updateDynamic("origin")(origin)
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
+    if (clientConfig != null) __obj.updateDynamic("clientConfig")(clientConfig.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     if (reconnectDelay != null) __obj.updateDynamic("reconnectDelay")(reconnectDelay.asInstanceOf[js.Any])
-    if (requestOptions != null) __obj.updateDynamic("requestOptions")(requestOptions)
+    if (requestOptions != null) __obj.updateDynamic("requestOptions")(requestOptions.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebsocketProviderOptions]
   }

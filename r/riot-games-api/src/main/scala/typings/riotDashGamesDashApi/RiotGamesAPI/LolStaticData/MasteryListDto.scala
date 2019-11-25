@@ -20,8 +20,8 @@ object MasteryListDto {
     `type`: String,
     version: String
   ): MasteryListDto = {
-    val __obj = js.Dynamic.literal(data = data, tree = tree, version = version)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], tree = tree.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MasteryListDto]
   }
 }

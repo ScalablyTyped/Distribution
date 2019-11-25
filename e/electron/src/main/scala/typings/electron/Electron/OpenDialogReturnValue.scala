@@ -25,9 +25,9 @@ trait OpenDialogReturnValue extends js.Object {
 object OpenDialogReturnValue {
   @scala.inline
   def apply(canceled: Boolean, bookmarks: js.Array[String] = null, filePaths: js.Array[String] = null): OpenDialogReturnValue = {
-    val __obj = js.Dynamic.literal(canceled = canceled)
-    if (bookmarks != null) __obj.updateDynamic("bookmarks")(bookmarks)
-    if (filePaths != null) __obj.updateDynamic("filePaths")(filePaths)
+    val __obj = js.Dynamic.literal(canceled = canceled.asInstanceOf[js.Any])
+    if (bookmarks != null) __obj.updateDynamic("bookmarks")(bookmarks.asInstanceOf[js.Any])
+    if (filePaths != null) __obj.updateDynamic("filePaths")(filePaths.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenDialogReturnValue]
   }
 }

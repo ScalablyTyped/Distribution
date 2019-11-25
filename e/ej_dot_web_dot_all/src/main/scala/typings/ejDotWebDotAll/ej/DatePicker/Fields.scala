@@ -23,10 +23,10 @@ object Fields {
   @scala.inline
   def apply(cssClass: String = null, date: String = null, iconClass: String = null, tooltip: String = null): Fields = {
     val __obj = js.Dynamic.literal()
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
-    if (date != null) __obj.updateDynamic("date")(date)
-    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass.asInstanceOf[js.Any])
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fields]
   }
 }

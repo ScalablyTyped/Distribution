@@ -33,8 +33,8 @@ object _UnmarshalledSegmentGroup {
     Type: ALL | ANY | NONE | String = null
   ): _UnmarshalledSegmentGroup = {
     val __obj = js.Dynamic.literal()
-    if (Dimensions != null) __obj.updateDynamic("Dimensions")(Dimensions)
-    if (SourceSegments != null) __obj.updateDynamic("SourceSegments")(SourceSegments)
+    if (Dimensions != null) __obj.updateDynamic("Dimensions")(Dimensions.asInstanceOf[js.Any])
+    if (SourceSegments != null) __obj.updateDynamic("SourceSegments")(SourceSegments.asInstanceOf[js.Any])
     if (SourceType != null) __obj.updateDynamic("SourceType")(SourceType.asInstanceOf[js.Any])
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledSegmentGroup]

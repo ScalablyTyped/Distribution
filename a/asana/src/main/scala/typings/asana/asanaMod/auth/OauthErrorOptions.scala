@@ -14,9 +14,9 @@ object OauthErrorOptions {
   @scala.inline
   def apply(error: String = null, error_description: String = null, error_uri: String = null): OauthErrorOptions = {
     val __obj = js.Dynamic.literal()
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (error_description != null) __obj.updateDynamic("error_description")(error_description)
-    if (error_uri != null) __obj.updateDynamic("error_uri")(error_uri)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (error_description != null) __obj.updateDynamic("error_description")(error_description.asInstanceOf[js.Any])
+    if (error_uri != null) __obj.updateDynamic("error_uri")(error_uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[OauthErrorOptions]
   }
 }

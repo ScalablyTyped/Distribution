@@ -14,7 +14,7 @@ trait LegendItemContext extends js.Object {
 object LegendItemContext {
   @scala.inline
   def apply(itemIndex: Double, sectionIndexPath: js.Array[_], subId: String): LegendItemContext = {
-    val __obj = js.Dynamic.literal(itemIndex = itemIndex, sectionIndexPath = sectionIndexPath, subId = subId)
+    val __obj = js.Dynamic.literal(itemIndex = itemIndex.asInstanceOf[js.Any], sectionIndexPath = sectionIndexPath.asInstanceOf[js.Any], subId = subId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LegendItemContext]
   }

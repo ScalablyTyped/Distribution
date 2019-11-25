@@ -105,7 +105,7 @@ object inboxsdkStrings {
   sealed trait closing extends js.Object
   
   @js.native
-  sealed trait collapsed extends js.Object
+  sealed trait collapsed_ extends js.Object
   
   @js.native
   sealed trait contactHover extends js.Object
@@ -123,7 +123,7 @@ object inboxsdkStrings {
   sealed trait escape extends js.Object
   
   @js.native
-  sealed trait expanded extends js.Object
+  sealed trait expanded_ extends js.Object
   
   @js.native
   sealed trait fromContactChanged extends js.Object
@@ -249,7 +249,7 @@ object inboxsdkStrings {
   @scala.inline
   def closing: closing = "closing".asInstanceOf[closing]
   @scala.inline
-  def collapsed: collapsed = "collapsed".asInstanceOf[collapsed]
+  def collapsed_ : collapsed_ = "collapsed".asInstanceOf[collapsed_]
   @scala.inline
   def contactHover: contactHover = "contactHover".asInstanceOf[contactHover]
   @scala.inline
@@ -261,7 +261,7 @@ object inboxsdkStrings {
   @scala.inline
   def escape: escape = "escape".asInstanceOf[escape]
   @scala.inline
-  def expanded: expanded = "expanded".asInstanceOf[expanded]
+  def expanded_ : expanded_ = "expanded".asInstanceOf[expanded_]
   @scala.inline
   def fromContactChanged: fromContactChanged = "fromContactChanged".asInstanceOf[fromContactChanged]
   @scala.inline

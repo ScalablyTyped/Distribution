@@ -17,9 +17,9 @@ object ProductDetail {
   @scala.inline
   def apply(attributeName: String = null, attributeValue: String = null, sectionName: String = null): ProductDetail = {
     val __obj = js.Dynamic.literal()
-    if (attributeName != null) __obj.updateDynamic("attributeName")(attributeName)
-    if (attributeValue != null) __obj.updateDynamic("attributeValue")(attributeValue)
-    if (sectionName != null) __obj.updateDynamic("sectionName")(sectionName)
+    if (attributeName != null) __obj.updateDynamic("attributeName")(attributeName.asInstanceOf[js.Any])
+    if (attributeValue != null) __obj.updateDynamic("attributeValue")(attributeValue.asInstanceOf[js.Any])
+    if (sectionName != null) __obj.updateDynamic("sectionName")(sectionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProductDetail]
   }
 }

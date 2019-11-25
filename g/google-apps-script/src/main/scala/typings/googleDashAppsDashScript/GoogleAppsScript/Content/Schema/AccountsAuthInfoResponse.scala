@@ -13,8 +13,8 @@ object AccountsAuthInfoResponse {
   @scala.inline
   def apply(accountIdentifiers: js.Array[AccountIdentifier] = null, kind: String = null): AccountsAuthInfoResponse = {
     val __obj = js.Dynamic.literal()
-    if (accountIdentifiers != null) __obj.updateDynamic("accountIdentifiers")(accountIdentifiers)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (accountIdentifiers != null) __obj.updateDynamic("accountIdentifiers")(accountIdentifiers.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountsAuthInfoResponse]
   }
 }

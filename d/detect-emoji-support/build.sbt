@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "detect-emoji-support"
-version := "0.1-dt-20190801Z-5d2284"
+version := "0.1-dt-20190801Z-1989d8"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

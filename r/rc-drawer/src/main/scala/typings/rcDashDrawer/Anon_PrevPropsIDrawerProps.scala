@@ -12,7 +12,7 @@ trait Anon_PrevPropsIDrawerProps extends js.Object {
 object Anon_PrevPropsIDrawerProps {
   @scala.inline
   def apply(prevProps: IDrawerProps): Anon_PrevPropsIDrawerProps = {
-    val __obj = js.Dynamic.literal(prevProps = prevProps)
+    val __obj = js.Dynamic.literal(prevProps = prevProps.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_PrevPropsIDrawerProps]
   }

@@ -11,7 +11,7 @@ trait Anon_Extra extends js.Object {
 object Anon_Extra {
   @scala.inline
   def apply(extra: Boolean): Anon_Extra = {
-    val __obj = js.Dynamic.literal(extra = extra)
+    val __obj = js.Dynamic.literal(extra = extra.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Extra]
   }

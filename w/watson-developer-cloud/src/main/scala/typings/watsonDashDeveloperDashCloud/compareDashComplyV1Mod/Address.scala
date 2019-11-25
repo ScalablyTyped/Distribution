@@ -19,8 +19,8 @@ object Address {
   @scala.inline
   def apply(location: Location = null, text: String = null): Address = {
     val __obj = js.Dynamic.literal()
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Address]
   }
 }

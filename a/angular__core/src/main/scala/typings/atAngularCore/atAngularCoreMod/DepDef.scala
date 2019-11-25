@@ -13,7 +13,7 @@ trait DepDef extends js.Object {
 object DepDef {
   @scala.inline
   def apply(flags: ɵDepFlags, token: js.Any, tokenKey: String): DepDef = {
-    val __obj = js.Dynamic.literal(flags = flags, token = token, tokenKey = tokenKey)
+    val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any], tokenKey = tokenKey.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DepDef]
   }

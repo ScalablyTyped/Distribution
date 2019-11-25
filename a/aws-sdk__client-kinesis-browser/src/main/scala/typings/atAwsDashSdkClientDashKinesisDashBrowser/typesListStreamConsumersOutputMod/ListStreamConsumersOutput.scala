@@ -30,9 +30,9 @@ object ListStreamConsumersOutput {
     Consumers: js.Array[_UnmarshalledConsumer] = null,
     NextToken: String = null
   ): ListStreamConsumersOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (Consumers != null) __obj.updateDynamic("Consumers")(Consumers)
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (Consumers != null) __obj.updateDynamic("Consumers")(Consumers.asInstanceOf[js.Any])
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListStreamConsumersOutput]
   }
 }

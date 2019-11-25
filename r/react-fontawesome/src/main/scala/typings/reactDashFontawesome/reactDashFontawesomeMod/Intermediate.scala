@@ -15,8 +15,8 @@ object Intermediate {
   @scala.inline
   def apply(AllHTMLAttributes: AllHTMLAttributes[HTMLElement] = null, size: js.Any = null): Intermediate = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (size != null) __obj.updateDynamic("size")(size)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[Intermediate]
   }
 }

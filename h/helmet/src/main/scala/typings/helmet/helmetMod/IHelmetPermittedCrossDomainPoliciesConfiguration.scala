@@ -12,7 +12,7 @@ object IHelmetPermittedCrossDomainPoliciesConfiguration {
   @scala.inline
   def apply(permittedPolicies: String = null): IHelmetPermittedCrossDomainPoliciesConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (permittedPolicies != null) __obj.updateDynamic("permittedPolicies")(permittedPolicies)
+    if (permittedPolicies != null) __obj.updateDynamic("permittedPolicies")(permittedPolicies.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHelmetPermittedCrossDomainPoliciesConfiguration]
   }
 }

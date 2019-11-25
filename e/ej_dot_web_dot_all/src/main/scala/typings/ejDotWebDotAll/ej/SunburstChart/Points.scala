@@ -27,9 +27,9 @@ object Points {
   @scala.inline
   def apply(fill: String = null, text: String = null, x: String = null, y: Int | Double = null): Points = {
     val __obj = js.Dynamic.literal()
-    if (fill != null) __obj.updateDynamic("fill")(fill)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (x != null) __obj.updateDynamic("x")(x)
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[Points]
   }

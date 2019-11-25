@@ -16,7 +16,7 @@ object StateNotificationConfig {
   @scala.inline
   def apply(pubsubTopicName: String = null): StateNotificationConfig = {
     val __obj = js.Dynamic.literal()
-    if (pubsubTopicName != null) __obj.updateDynamic("pubsubTopicName")(pubsubTopicName)
+    if (pubsubTopicName != null) __obj.updateDynamic("pubsubTopicName")(pubsubTopicName.asInstanceOf[js.Any])
     __obj.asInstanceOf[StateNotificationConfig]
   }
 }

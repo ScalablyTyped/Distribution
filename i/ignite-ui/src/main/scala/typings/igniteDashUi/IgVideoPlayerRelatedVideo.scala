@@ -63,13 +63,13 @@ object IgVideoPlayerRelatedVideo {
     width: Int | Double = null
   ): IgVideoPlayerRelatedVideo = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (css != null) __obj.updateDynamic("css")(css)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
-    if (link != null) __obj.updateDynamic("link")(link)
-    if (sources != null) __obj.updateDynamic("sources")(sources)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
+    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
+    if (sources != null) __obj.updateDynamic("sources")(sources.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgVideoPlayerRelatedVideo]
   }

@@ -12,7 +12,7 @@ trait Anon_Projection extends js.Object {
 object Anon_Projection {
   @scala.inline
   def apply(projection: Matrix): Anon_Projection = {
-    val __obj = js.Dynamic.literal(projection = projection)
+    val __obj = js.Dynamic.literal(projection = projection.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Projection]
   }

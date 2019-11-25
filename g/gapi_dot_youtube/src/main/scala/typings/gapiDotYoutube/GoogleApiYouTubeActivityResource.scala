@@ -36,7 +36,7 @@ object GoogleApiYouTubeActivityResource {
     kind: String,
     snippet: Anon_ChannelIdChannelTitle
   ): GoogleApiYouTubeActivityResource = {
-    val __obj = js.Dynamic.literal(contentDetails = contentDetails, etag = etag, id = id, kind = kind, snippet = snippet)
+    val __obj = js.Dynamic.literal(contentDetails = contentDetails.asInstanceOf[js.Any], etag = etag.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], snippet = snippet.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GoogleApiYouTubeActivityResource]
   }

@@ -14,7 +14,7 @@ object Anon_Productid {
   def apply(product_id: Int | Double = null, title: String = null): Anon_Productid = {
     val __obj = js.Dynamic.literal()
     if (product_id != null) __obj.updateDynamic("product_id")(product_id.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Productid]
   }
 }

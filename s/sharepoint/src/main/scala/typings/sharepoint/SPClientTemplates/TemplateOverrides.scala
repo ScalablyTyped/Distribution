@@ -36,7 +36,7 @@ object TemplateOverrides {
   ): TemplateOverrides = {
     val __obj = js.Dynamic.literal()
     if (Body != null) __obj.updateDynamic("Body")(Body.asInstanceOf[js.Any])
-    if (Fields != null) __obj.updateDynamic("Fields")(Fields)
+    if (Fields != null) __obj.updateDynamic("Fields")(Fields.asInstanceOf[js.Any])
     if (Footer != null) __obj.updateDynamic("Footer")(Footer.asInstanceOf[js.Any])
     if (Group != null) __obj.updateDynamic("Group")(Group.asInstanceOf[js.Any])
     if (Header != null) __obj.updateDynamic("Header")(Header.asInstanceOf[js.Any])

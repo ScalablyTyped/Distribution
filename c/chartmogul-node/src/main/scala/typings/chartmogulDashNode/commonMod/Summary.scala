@@ -13,8 +13,8 @@ trait Summary extends js.Object {
 object Summary {
   @scala.inline
   def apply(current: Double, `percentage-change`: Double, previous: Double): Summary = {
-    val __obj = js.Dynamic.literal(current = current, previous = previous)
-    __obj.updateDynamic("percentage-change")(`percentage-change`)
+    val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], previous = previous.asInstanceOf[js.Any])
+    __obj.updateDynamic("percentage-change")(`percentage-change`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Summary]
   }
 }

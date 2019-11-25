@@ -31,16 +31,16 @@ object Rule {
     selector: String = null,
     tags: js.Array[String] = null
   ): Rule = {
-    val __obj = js.Dynamic.literal(id = id)
-    if (all != null) __obj.updateDynamic("all")(all)
-    if (any != null) __obj.updateDynamic("any")(any)
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (!js.isUndefined(excludeHidden)) __obj.updateDynamic("excludeHidden")(excludeHidden)
-    if (matches != null) __obj.updateDynamic("matches")(matches)
-    if (none != null) __obj.updateDynamic("none")(none)
-    if (!js.isUndefined(pageLevel)) __obj.updateDynamic("pageLevel")(pageLevel)
-    if (selector != null) __obj.updateDynamic("selector")(selector)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    if (all != null) __obj.updateDynamic("all")(all.asInstanceOf[js.Any])
+    if (any != null) __obj.updateDynamic("any")(any.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(excludeHidden)) __obj.updateDynamic("excludeHidden")(excludeHidden.asInstanceOf[js.Any])
+    if (matches != null) __obj.updateDynamic("matches")(matches.asInstanceOf[js.Any])
+    if (none != null) __obj.updateDynamic("none")(none.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageLevel)) __obj.updateDynamic("pageLevel")(pageLevel.asInstanceOf[js.Any])
+    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[Rule]
   }
 }

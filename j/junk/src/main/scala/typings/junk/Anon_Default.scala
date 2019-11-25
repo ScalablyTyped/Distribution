@@ -37,7 +37,7 @@ trait Anon_Default extends js.Object {
 object Anon_Default {
   @scala.inline
   def apply(is: String => Boolean, not: String => Boolean, regex: RegExp): Anon_Default = {
-    val __obj = js.Dynamic.literal(is = js.Any.fromFunction1(is), not = js.Any.fromFunction1(not), regex = regex)
+    val __obj = js.Dynamic.literal(is = js.Any.fromFunction1(is), not = js.Any.fromFunction1(not), regex = regex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Default]
   }

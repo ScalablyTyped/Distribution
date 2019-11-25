@@ -16,8 +16,8 @@ object SiteVerificationWebResourceGettokenRequest {
   @scala.inline
   def apply(site: Anon_Identifier = null, verificationMethod: String = null): SiteVerificationWebResourceGettokenRequest = {
     val __obj = js.Dynamic.literal()
-    if (site != null) __obj.updateDynamic("site")(site)
-    if (verificationMethod != null) __obj.updateDynamic("verificationMethod")(verificationMethod)
+    if (site != null) __obj.updateDynamic("site")(site.asInstanceOf[js.Any])
+    if (verificationMethod != null) __obj.updateDynamic("verificationMethod")(verificationMethod.asInstanceOf[js.Any])
     __obj.asInstanceOf[SiteVerificationWebResourceGettokenRequest]
   }
 }

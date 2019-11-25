@@ -28,16 +28,16 @@ package object EventTarget {
   import typings.std.Partial
   import typings.std.Pick
 
-  type EventAttributes[TEventAttributes /* <: EventDefinition */] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type EventAttributes[TEventAttributes /* <: EventDefinition */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof TEventAttributes ]: event-target-shim.event-target-shim.EventTarget.FunctionListener<TEventAttributes[P]> | null}
     */ typings.eventDashTargetDashShim.eventDashTargetDashShimStrings.EventAttributes with TEventAttributes
   /* Rewritten from type alias, can be one of: 
     - typings.eventDashTargetDashShim.eventDashTargetDashShimMod.Event
     - typings.eventDashTargetDashShim.eventDashTargetDashShimMod.EventTarget.NonStandardEvent
     - (typings.std.Pick[
-  / * import warning: ImportType.apply Failed type conversion: TEvents[TEventType] * / js.Any, 
+  / * import warning: importer.ImportType#apply Failed type conversion: TEvents[TEventType] * / js.Any, 
   typings.std.Exclude[
-    / * import warning: ImportType.apply Failed type conversion: keyof TEvents[TEventType] * / js.Any, 
+    / * import warning: importer.ImportType#apply Failed type conversion: keyof TEvents[TEventType] * / js.Any, 
     typings.eventDashTargetDashShim.eventDashTargetDashShimMod.EventTarget.OmittableEventKeys
   ]]) with (typings.std.Partial[
   typings.std.Pick[
@@ -46,9 +46,9 @@ package object EventTarget {
   ]])
   */
   type EventData[TEvents /* <: EventDefinition */, TEventType /* <: String */, TMode /* <: Mode */] = (_EventData[TEvents, TEventType, TMode]) | ((Pick[
-    /* import warning: ImportType.apply Failed type conversion: TEvents[TEventType] */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: TEvents[TEventType] */ js.Any, 
     Exclude[
-      /* import warning: ImportType.apply Failed type conversion: keyof TEvents[TEventType] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: keyof TEvents[TEventType] */ js.Any, 
       OmittableEventKeys
     ]
   ]) with (Partial[Pick[Event, OmittableEventKeys]]))
@@ -60,5 +60,5 @@ package object EventTarget {
     `type` | target | currentTarget | srcElement | NONE | CAPTURING_PHASE | BUBBLING_PHASE | AT_TARGET | eventPhase | bubbles | cancelBubble | returnValue | cancelable | defaultPrevented | composed | isTrusted | timeStamp, 
     `type`
   ]
-  type PickEvent[TEvents /* <: EventDefinition */, TEventType /* <: String */] = Event | (/* import warning: ImportType.apply Failed type conversion: TEvents[TEventType] */ js.Any)
+  type PickEvent[TEvents /* <: EventDefinition */, TEventType /* <: String */] = Event | (/* import warning: importer.ImportType#apply Failed type conversion: TEvents[TEventType] */ js.Any)
 }

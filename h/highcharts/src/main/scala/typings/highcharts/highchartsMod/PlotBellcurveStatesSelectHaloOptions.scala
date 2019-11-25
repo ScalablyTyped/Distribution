@@ -29,7 +29,7 @@ object PlotBellcurveStatesSelectHaloOptions {
   @scala.inline
   def apply(attributes: SVGAttributes = null, opacity: Int | Double = null, size: Int | Double = null): PlotBellcurveStatesSelectHaloOptions = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotBellcurveStatesSelectHaloOptions]

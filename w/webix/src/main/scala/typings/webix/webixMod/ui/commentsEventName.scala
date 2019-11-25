@@ -22,3 +22,36 @@ import scala.scalajs.js.annotation._
 */
 trait commentsEventName extends js.Object
 
+object commentsEventName {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def onAfterAdd: typings.webix.webixStrings.onAfterAdd = this.cast("onAfterAdd")
+  @scala.inline
+  def onAfterDelete: typings.webix.webixStrings.onAfterDelete = this.cast("onAfterDelete")
+  @scala.inline
+  def onAfterEditStart: typings.webix.webixStrings.onAfterEditStart = this.cast("onAfterEditStart")
+  @scala.inline
+  def onAfterLoad: typings.webix.webixStrings.onAfterLoad = this.cast("onAfterLoad")
+  @scala.inline
+  def onBeforeAdd: typings.webix.webixStrings.onBeforeAdd = this.cast("onBeforeAdd")
+  @scala.inline
+  def onBeforeDelete: typings.webix.webixStrings.onBeforeDelete = this.cast("onBeforeDelete")
+  @scala.inline
+  def onBeforeEditStart: typings.webix.webixStrings.onBeforeEditStart = this.cast("onBeforeEditStart")
+  @scala.inline
+  def onBeforeLoad: typings.webix.webixStrings.onBeforeLoad = this.cast("onBeforeLoad")
+  @scala.inline
+  def onBeforeMenuAction: typings.webix.webixStrings.onBeforeMenuAction = this.cast("onBeforeMenuAction")
+  @scala.inline
+  def onBindRequest: typings.webix.webixStrings.onBindRequest = this.cast("onBindRequest")
+  @scala.inline
+  def onDestruct: typings.webix.webixStrings.onDestruct = this.cast("onDestruct")
+  @scala.inline
+  def onLoadError: typings.webix.webixStrings.onLoadError = this.cast("onLoadError")
+  @scala.inline
+  def onUserMentioned: typings.webix.webixStrings.onUserMentioned = this.cast("onUserMentioned")
+  @scala.inline
+  def onViewShow: typings.webix.webixStrings.onViewShow = this.cast("onViewShow")
+}
+

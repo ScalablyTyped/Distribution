@@ -44,7 +44,7 @@ object Anon_0110 {
     scrollToAlignment: auto,
     scrollToIndex: `-1`
   ): Anon_0110 = {
-    val __obj = js.Dynamic.literal(disableHeader = disableHeader, estimatedRowSize = estimatedRowSize, headerHeight = headerHeight, headerRowRenderer = js.Any.fromFunction1(headerRowRenderer), noRowsRenderer = js.Any.fromFunction0(noRowsRenderer), onRowsRendered = js.Any.fromFunction0(onRowsRendered), onScroll = js.Any.fromFunction0(onScroll), overscanRowCount = overscanRowCount, rowRenderer = js.Any.fromFunction1(rowRenderer), scrollToAlignment = scrollToAlignment, scrollToIndex = scrollToIndex)
+    val __obj = js.Dynamic.literal(disableHeader = disableHeader.asInstanceOf[js.Any], estimatedRowSize = estimatedRowSize.asInstanceOf[js.Any], headerHeight = headerHeight.asInstanceOf[js.Any], headerRowRenderer = js.Any.fromFunction1(headerRowRenderer), noRowsRenderer = js.Any.fromFunction0(noRowsRenderer), onRowsRendered = js.Any.fromFunction0(onRowsRendered), onScroll = js.Any.fromFunction0(onScroll), overscanRowCount = overscanRowCount.asInstanceOf[js.Any], rowRenderer = js.Any.fromFunction1(rowRenderer), scrollToAlignment = scrollToAlignment.asInstanceOf[js.Any], scrollToIndex = scrollToIndex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_0110]
   }

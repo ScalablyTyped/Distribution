@@ -32,11 +32,11 @@ object Node {
   ): Node = {
     val __obj = js.Dynamic.literal()
     if (Buffer != null) __obj.updateDynamic("Buffer")(Buffer.asInstanceOf[js.Any])
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (__dirname != null) __obj.updateDynamic("__dirname")(__dirname.asInstanceOf[js.Any])
     if (__filename != null) __obj.updateDynamic("__filename")(__filename.asInstanceOf[js.Any])
     if (console != null) __obj.updateDynamic("console")(console.asInstanceOf[js.Any])
-    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global)
+    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global.asInstanceOf[js.Any])
     if (process != null) __obj.updateDynamic("process")(process.asInstanceOf[js.Any])
     if (setImmediate != null) __obj.updateDynamic("setImmediate")(setImmediate.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]

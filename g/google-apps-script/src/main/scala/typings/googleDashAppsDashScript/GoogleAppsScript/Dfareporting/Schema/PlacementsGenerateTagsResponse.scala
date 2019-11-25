@@ -13,8 +13,8 @@ object PlacementsGenerateTagsResponse {
   @scala.inline
   def apply(kind: String = null, placementTags: js.Array[PlacementTag] = null): PlacementsGenerateTagsResponse = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (placementTags != null) __obj.updateDynamic("placementTags")(placementTags)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (placementTags != null) __obj.updateDynamic("placementTags")(placementTags.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlacementsGenerateTagsResponse]
   }
 }

@@ -19,7 +19,7 @@ trait HDSignerBase extends js.Object {
 object HDSignerBase {
   @scala.inline
   def apply(fingerprint: Buffer, publicKey: Buffer): HDSignerBase = {
-    val __obj = js.Dynamic.literal(fingerprint = fingerprint, publicKey = publicKey)
+    val __obj = js.Dynamic.literal(fingerprint = fingerprint.asInstanceOf[js.Any], publicKey = publicKey.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HDSignerBase]
   }

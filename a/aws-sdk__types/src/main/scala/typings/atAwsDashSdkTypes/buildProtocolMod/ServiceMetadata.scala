@@ -46,14 +46,14 @@ object ServiceMetadata {
     timestampFormat: java.lang.String = null,
     xmlNamespace: java.lang.String = null
   ): ServiceMetadata = {
-    val __obj = js.Dynamic.literal(apiVersion = apiVersion, endpointPrefix = endpointPrefix, protocol = protocol, serviceFullName = serviceFullName, signatureVersion = signatureVersion, uid = uid)
-    if (jsonVersion != null) __obj.updateDynamic("jsonVersion")(jsonVersion)
-    if (serviceAbbreviation != null) __obj.updateDynamic("serviceAbbreviation")(serviceAbbreviation)
-    if (serviceId != null) __obj.updateDynamic("serviceId")(serviceId)
-    if (signingName != null) __obj.updateDynamic("signingName")(signingName)
-    if (targetPrefix != null) __obj.updateDynamic("targetPrefix")(targetPrefix)
-    if (timestampFormat != null) __obj.updateDynamic("timestampFormat")(timestampFormat)
-    if (xmlNamespace != null) __obj.updateDynamic("xmlNamespace")(xmlNamespace)
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], endpointPrefix = endpointPrefix.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], serviceFullName = serviceFullName.asInstanceOf[js.Any], signatureVersion = signatureVersion.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any])
+    if (jsonVersion != null) __obj.updateDynamic("jsonVersion")(jsonVersion.asInstanceOf[js.Any])
+    if (serviceAbbreviation != null) __obj.updateDynamic("serviceAbbreviation")(serviceAbbreviation.asInstanceOf[js.Any])
+    if (serviceId != null) __obj.updateDynamic("serviceId")(serviceId.asInstanceOf[js.Any])
+    if (signingName != null) __obj.updateDynamic("signingName")(signingName.asInstanceOf[js.Any])
+    if (targetPrefix != null) __obj.updateDynamic("targetPrefix")(targetPrefix.asInstanceOf[js.Any])
+    if (timestampFormat != null) __obj.updateDynamic("timestampFormat")(timestampFormat.asInstanceOf[js.Any])
+    if (xmlNamespace != null) __obj.updateDynamic("xmlNamespace")(xmlNamespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceMetadata]
   }
 }

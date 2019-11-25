@@ -15,8 +15,8 @@ object ActiveXObjectNameMap {
   @scala.inline
   def apply(`FaxComEx.FaxDocument`: FaxDocument, `FaxComEx.FaxServer`: FaxServer): ActiveXObjectNameMap = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FaxComEx.FaxDocument")(`FaxComEx.FaxDocument`)
-    __obj.updateDynamic("FaxComEx.FaxServer")(`FaxComEx.FaxServer`)
+    __obj.updateDynamic("FaxComEx.FaxDocument")(`FaxComEx.FaxDocument`.asInstanceOf[js.Any])
+    __obj.updateDynamic("FaxComEx.FaxServer")(`FaxComEx.FaxServer`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
 }

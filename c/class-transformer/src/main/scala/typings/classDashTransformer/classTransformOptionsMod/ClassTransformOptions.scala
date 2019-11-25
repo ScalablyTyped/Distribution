@@ -68,14 +68,14 @@ object ClassTransformOptions {
     version: Int | Double = null
   ): ClassTransformOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableCircularCheck)) __obj.updateDynamic("enableCircularCheck")(enableCircularCheck)
-    if (!js.isUndefined(enableImplicitConversion)) __obj.updateDynamic("enableImplicitConversion")(enableImplicitConversion)
-    if (!js.isUndefined(excludeExtraneousValues)) __obj.updateDynamic("excludeExtraneousValues")(excludeExtraneousValues)
-    if (excludePrefixes != null) __obj.updateDynamic("excludePrefixes")(excludePrefixes)
-    if (groups != null) __obj.updateDynamic("groups")(groups)
-    if (!js.isUndefined(ignoreDecorators)) __obj.updateDynamic("ignoreDecorators")(ignoreDecorators)
+    if (!js.isUndefined(enableCircularCheck)) __obj.updateDynamic("enableCircularCheck")(enableCircularCheck.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableImplicitConversion)) __obj.updateDynamic("enableImplicitConversion")(enableImplicitConversion.asInstanceOf[js.Any])
+    if (!js.isUndefined(excludeExtraneousValues)) __obj.updateDynamic("excludeExtraneousValues")(excludeExtraneousValues.asInstanceOf[js.Any])
+    if (excludePrefixes != null) __obj.updateDynamic("excludePrefixes")(excludePrefixes.asInstanceOf[js.Any])
+    if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreDecorators)) __obj.updateDynamic("ignoreDecorators")(ignoreDecorators.asInstanceOf[js.Any])
     if (strategy != null) __obj.updateDynamic("strategy")(strategy.asInstanceOf[js.Any])
-    if (targetMaps != null) __obj.updateDynamic("targetMaps")(targetMaps)
+    if (targetMaps != null) __obj.updateDynamic("targetMaps")(targetMaps.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassTransformOptions]
   }

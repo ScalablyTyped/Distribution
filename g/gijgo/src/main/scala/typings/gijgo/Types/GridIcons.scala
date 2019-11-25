@@ -20,10 +20,10 @@ object GridIcons {
     expandRow: String = null
   ): GridIcons = {
     val __obj = js.Dynamic.literal()
-    if (collapseGroup != null) __obj.updateDynamic("collapseGroup")(collapseGroup)
-    if (collapseRow != null) __obj.updateDynamic("collapseRow")(collapseRow)
-    if (expandGroup != null) __obj.updateDynamic("expandGroup")(expandGroup)
-    if (expandRow != null) __obj.updateDynamic("expandRow")(expandRow)
+    if (collapseGroup != null) __obj.updateDynamic("collapseGroup")(collapseGroup.asInstanceOf[js.Any])
+    if (collapseRow != null) __obj.updateDynamic("collapseRow")(collapseRow.asInstanceOf[js.Any])
+    if (expandGroup != null) __obj.updateDynamic("expandGroup")(expandGroup.asInstanceOf[js.Any])
+    if (expandRow != null) __obj.updateDynamic("expandRow")(expandRow.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridIcons]
   }
 }

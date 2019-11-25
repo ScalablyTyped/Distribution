@@ -16,7 +16,7 @@ trait PickCardStylefooterContentfooterExtrafooterWrap extends js.Object {
 object PickCardStylefooterContentfooterExtrafooterWrap {
   @scala.inline
   def apply(footerContent: TextStyle, footerExtra: TextStyle, footerWrap: ViewStyle): PickCardStylefooterContentfooterExtrafooterWrap = {
-    val __obj = js.Dynamic.literal(footerContent = footerContent, footerExtra = footerExtra, footerWrap = footerWrap)
+    val __obj = js.Dynamic.literal(footerContent = footerContent.asInstanceOf[js.Any], footerExtra = footerExtra.asInstanceOf[js.Any], footerWrap = footerWrap.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PickCardStylefooterContentfooterExtrafooterWrap]
   }

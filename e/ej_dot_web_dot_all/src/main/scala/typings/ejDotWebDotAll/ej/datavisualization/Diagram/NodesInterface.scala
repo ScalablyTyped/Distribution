@@ -26,9 +26,9 @@ object NodesInterface {
     name: String = null
   ): NodesInterface = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
-    if (methods != null) __obj.updateDynamic("methods")(methods)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (methods != null) __obj.updateDynamic("methods")(methods.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodesInterface]
   }
 }

@@ -41,16 +41,16 @@ object legendOptions {
     sorted: js.Any = null
   ): legendOptions = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (backgroundOpacity != null) __obj.updateDynamic("backgroundOpacity")(backgroundOpacity.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container)
-    if (labelBoxBorderColor != null) __obj.updateDynamic("labelBoxBorderColor")(labelBoxBorderColor)
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (labelBoxBorderColor != null) __obj.updateDynamic("labelBoxBorderColor")(labelBoxBorderColor.asInstanceOf[js.Any])
     if (labelFormatter != null) __obj.updateDynamic("labelFormatter")(js.Any.fromFunction2(labelFormatter))
-    if (margin != null) __obj.updateDynamic("margin")(margin)
+    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (noColumns != null) __obj.updateDynamic("noColumns")(noColumns.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
-    if (sorted != null) __obj.updateDynamic("sorted")(sorted)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
+    if (sorted != null) __obj.updateDynamic("sorted")(sorted.asInstanceOf[js.Any])
     __obj.asInstanceOf[legendOptions]
   }
 }

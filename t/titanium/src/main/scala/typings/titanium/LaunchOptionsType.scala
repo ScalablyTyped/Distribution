@@ -23,8 +23,8 @@ object LaunchOptionsType {
   @scala.inline
   def apply(source: String = null, url: String = null): LaunchOptionsType = {
     val __obj = js.Dynamic.literal()
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchOptionsType]
   }
 }

@@ -27,13 +27,13 @@ object PartialClassNameMapSelectClassKey {
     selectMenu: String = null
   ): PartialClassNameMapSelectClassKey = {
     val __obj = js.Dynamic.literal()
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled)
-    if (filled != null) __obj.updateDynamic("filled")(filled)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (outlined != null) __obj.updateDynamic("outlined")(outlined)
-    if (root != null) __obj.updateDynamic("root")(root)
-    if (select != null) __obj.updateDynamic("select")(select)
-    if (selectMenu != null) __obj.updateDynamic("selectMenu")(selectMenu)
+    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (filled != null) __obj.updateDynamic("filled")(filled.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (outlined != null) __obj.updateDynamic("outlined")(outlined.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (select != null) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
+    if (selectMenu != null) __obj.updateDynamic("selectMenu")(selectMenu.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapSelectClassKey]
   }
 }

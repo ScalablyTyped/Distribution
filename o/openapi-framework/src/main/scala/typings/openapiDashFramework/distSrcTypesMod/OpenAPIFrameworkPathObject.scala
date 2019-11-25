@@ -13,8 +13,8 @@ object OpenAPIFrameworkPathObject {
   @scala.inline
   def apply(module: js.Any = null, path: String = null): OpenAPIFrameworkPathObject = {
     val __obj = js.Dynamic.literal()
-    if (module != null) __obj.updateDynamic("module")(module)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (module != null) __obj.updateDynamic("module")(module.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenAPIFrameworkPathObject]
   }
 }

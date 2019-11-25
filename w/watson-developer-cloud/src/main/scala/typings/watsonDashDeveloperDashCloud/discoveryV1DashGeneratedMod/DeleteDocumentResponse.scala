@@ -16,8 +16,8 @@ object DeleteDocumentResponse {
   @scala.inline
   def apply(document_id: String = null, status: String = null): DeleteDocumentResponse = {
     val __obj = js.Dynamic.literal()
-    if (document_id != null) __obj.updateDynamic("document_id")(document_id)
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (document_id != null) __obj.updateDynamic("document_id")(document_id.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDocumentResponse]
   }
 }

@@ -13,8 +13,8 @@ object UserRolePermissionsListResponse {
   @scala.inline
   def apply(kind: String = null, userRolePermissions: js.Array[UserRolePermission] = null): UserRolePermissionsListResponse = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (userRolePermissions != null) __obj.updateDynamic("userRolePermissions")(userRolePermissions)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (userRolePermissions != null) __obj.updateDynamic("userRolePermissions")(userRolePermissions.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserRolePermissionsListResponse]
   }
 }

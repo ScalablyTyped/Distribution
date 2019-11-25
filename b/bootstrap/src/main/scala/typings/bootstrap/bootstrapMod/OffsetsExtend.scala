@@ -15,8 +15,8 @@ object OffsetsExtend {
   @scala.inline
   def apply(popper: Partial[Offset] = null, reference: Partial[Offset] = null): OffsetsExtend = {
     val __obj = js.Dynamic.literal()
-    if (popper != null) __obj.updateDynamic("popper")(popper)
-    if (reference != null) __obj.updateDynamic("reference")(reference)
+    if (popper != null) __obj.updateDynamic("popper")(popper.asInstanceOf[js.Any])
+    if (reference != null) __obj.updateDynamic("reference")(reference.asInstanceOf[js.Any])
     __obj.asInstanceOf[OffsetsExtend]
   }
 }

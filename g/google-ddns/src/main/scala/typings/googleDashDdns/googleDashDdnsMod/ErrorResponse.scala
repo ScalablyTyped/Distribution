@@ -40,8 +40,8 @@ object ErrorResponse {
     status: error,
     ip: js.UndefOr[scala.Nothing] = js.undefined
   ): ErrorResponse = {
-    val __obj = js.Dynamic.literal(message = message, response = response.asInstanceOf[js.Any], status = status)
-    if (!js.isUndefined(ip)) __obj.updateDynamic("ip")(ip)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    if (!js.isUndefined(ip)) __obj.updateDynamic("ip")(ip.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorResponse]
   }
 }

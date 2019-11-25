@@ -41,9 +41,9 @@ object _RepositoryTrigger {
     branches: js.Array[String] | Iterable[String] = null,
     customData: String = null
   ): _RepositoryTrigger = {
-    val __obj = js.Dynamic.literal(destinationArn = destinationArn, events = events.asInstanceOf[js.Any], name = name)
+    val __obj = js.Dynamic.literal(destinationArn = destinationArn.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (branches != null) __obj.updateDynamic("branches")(branches.asInstanceOf[js.Any])
-    if (customData != null) __obj.updateDynamic("customData")(customData)
+    if (customData != null) __obj.updateDynamic("customData")(customData.asInstanceOf[js.Any])
     __obj.asInstanceOf[_RepositoryTrigger]
   }
 }

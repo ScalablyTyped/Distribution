@@ -24,8 +24,8 @@ object PluralIdentifyingRootFieldConfig {
     resolveSingleInput: (js.Any, js.Any, GraphQLResolveInfo) => js.Any,
     description: String = null
   ): PluralIdentifyingRootFieldConfig = {
-    val __obj = js.Dynamic.literal(argName = argName, inputType = inputType.asInstanceOf[js.Any], outputType = outputType.asInstanceOf[js.Any], resolveSingleInput = js.Any.fromFunction3(resolveSingleInput))
-    if (description != null) __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(argName = argName.asInstanceOf[js.Any], inputType = inputType.asInstanceOf[js.Any], outputType = outputType.asInstanceOf[js.Any], resolveSingleInput = js.Any.fromFunction3(resolveSingleInput))
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluralIdentifyingRootFieldConfig]
   }
 }

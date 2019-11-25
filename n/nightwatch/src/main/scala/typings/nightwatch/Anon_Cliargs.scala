@@ -14,7 +14,7 @@ trait Anon_Cliargs extends js.Object {
 object Anon_Cliargs {
   @scala.inline
   def apply(cli_args: js.Array[String], port: Double, server_path: String, start_process: Boolean): Anon_Cliargs = {
-    val __obj = js.Dynamic.literal(cli_args = cli_args, port = port, server_path = server_path, start_process = start_process)
+    val __obj = js.Dynamic.literal(cli_args = cli_args.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], server_path = server_path.asInstanceOf[js.Any], start_process = start_process.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Cliargs]
   }

@@ -15,9 +15,9 @@ class ContainerDebugAdapter ()
   /* CompleteClass */
   override var resolver: typings.atEmberEngine.dashPrivateResolverMod.default = js.native
   /* CompleteClass */
-  override def canCatalogEntriesByType(`type`: String): Boolean = js.native
+  override def canCatalogEntriesByType(`type`: java.lang.String): Boolean = js.native
   /* CompleteClass */
-  override def catalogEntriesByType(`type`: String): js.Array[String] = js.native
+  override def catalogEntriesByType(`type`: java.lang.String): js.Array[java.lang.String] = js.native
   /**
     * Determines whether an object has a property with the specified name.
     * @param v A property name.

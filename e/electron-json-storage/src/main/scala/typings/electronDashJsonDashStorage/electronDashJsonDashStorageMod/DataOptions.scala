@@ -11,7 +11,7 @@ trait DataOptions extends js.Object {
 object DataOptions {
   @scala.inline
   def apply(dataPath: String): DataOptions = {
-    val __obj = js.Dynamic.literal(dataPath = dataPath)
+    val __obj = js.Dynamic.literal(dataPath = dataPath.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DataOptions]
   }

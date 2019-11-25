@@ -39,13 +39,13 @@ object MeetingTimeSuggestion {
     suggestionReason: String = null
   ): MeetingTimeSuggestion = {
     val __obj = js.Dynamic.literal()
-    if (attendeeAvailability != null) __obj.updateDynamic("attendeeAvailability")(attendeeAvailability)
+    if (attendeeAvailability != null) __obj.updateDynamic("attendeeAvailability")(attendeeAvailability.asInstanceOf[js.Any])
     if (confidence != null) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
-    if (locations != null) __obj.updateDynamic("locations")(locations)
-    if (meetingTimeSlot != null) __obj.updateDynamic("meetingTimeSlot")(meetingTimeSlot)
+    if (locations != null) __obj.updateDynamic("locations")(locations.asInstanceOf[js.Any])
+    if (meetingTimeSlot != null) __obj.updateDynamic("meetingTimeSlot")(meetingTimeSlot.asInstanceOf[js.Any])
     if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
-    if (organizerAvailability != null) __obj.updateDynamic("organizerAvailability")(organizerAvailability)
-    if (suggestionReason != null) __obj.updateDynamic("suggestionReason")(suggestionReason)
+    if (organizerAvailability != null) __obj.updateDynamic("organizerAvailability")(organizerAvailability.asInstanceOf[js.Any])
+    if (suggestionReason != null) __obj.updateDynamic("suggestionReason")(suggestionReason.asInstanceOf[js.Any])
     __obj.asInstanceOf[MeetingTimeSuggestion]
   }
 }

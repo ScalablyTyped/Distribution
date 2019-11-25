@@ -12,7 +12,7 @@ trait Anon_Confident extends js.Object {
 object Anon_Confident {
   @scala.inline
   def apply(confident: Boolean, value: js.Any): Anon_Confident = {
-    val __obj = js.Dynamic.literal(confident = confident, value = value)
+    val __obj = js.Dynamic.literal(confident = confident.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Confident]
   }

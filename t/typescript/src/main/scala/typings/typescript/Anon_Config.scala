@@ -14,8 +14,8 @@ object Anon_Config {
   @scala.inline
   def apply(config: js.Any = null, error: Diagnostic = null): Anon_Config = {
     val __obj = js.Dynamic.literal()
-    if (config != null) __obj.updateDynamic("config")(config)
-    if (error != null) __obj.updateDynamic("error")(error)
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Config]
   }
 }

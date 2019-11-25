@@ -18,7 +18,7 @@ trait ChangedIdentitiesContext extends js.Object {
 object ChangedIdentitiesContext {
   @scala.inline
   def apply(groupSequenceId: Double, identitySequenceId: Double): ChangedIdentitiesContext = {
-    val __obj = js.Dynamic.literal(groupSequenceId = groupSequenceId, identitySequenceId = identitySequenceId)
+    val __obj = js.Dynamic.literal(groupSequenceId = groupSequenceId.asInstanceOf[js.Any], identitySequenceId = identitySequenceId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChangedIdentitiesContext]
   }

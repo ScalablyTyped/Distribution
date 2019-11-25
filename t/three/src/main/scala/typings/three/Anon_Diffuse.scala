@@ -24,7 +24,7 @@ object Anon_Diffuse {
     size: IUniform,
     uvTransform: IUniform
   ): Anon_Diffuse = {
-    val __obj = js.Dynamic.literal(diffuse = diffuse, map = map, opacity = opacity, scale = scale, size = size, uvTransform = uvTransform)
+    val __obj = js.Dynamic.literal(diffuse = diffuse.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], uvTransform = uvTransform.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Diffuse]
   }

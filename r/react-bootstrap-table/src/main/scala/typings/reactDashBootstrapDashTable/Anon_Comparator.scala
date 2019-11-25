@@ -19,7 +19,7 @@ trait Anon_Comparator extends js.Object {
 object Anon_Comparator {
   @scala.inline
   def apply(comparator: FilterComparator, number: Double): Anon_Comparator = {
-    val __obj = js.Dynamic.literal(comparator = comparator, number = number)
+    val __obj = js.Dynamic.literal(comparator = comparator.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Comparator]
   }

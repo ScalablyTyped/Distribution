@@ -18,8 +18,8 @@ object GeoSpectrumSchedule {
   @scala.inline
   def apply(location: GeoLocation = null, spectrumSchedules: js.Array[SpectrumSchedule] = null): GeoSpectrumSchedule = {
     val __obj = js.Dynamic.literal()
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (spectrumSchedules != null) __obj.updateDynamic("spectrumSchedules")(spectrumSchedules)
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (spectrumSchedules != null) __obj.updateDynamic("spectrumSchedules")(spectrumSchedules.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoSpectrumSchedule]
   }
 }

@@ -23,11 +23,11 @@ object InfoObject {
     license: LicenseObject = null,
     termsOfService: String = null
   ): InfoObject = {
-    val __obj = js.Dynamic.literal(title = title, version = version)
-    if (contact != null) __obj.updateDynamic("contact")(contact)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (license != null) __obj.updateDynamic("license")(license)
-    if (termsOfService != null) __obj.updateDynamic("termsOfService")(termsOfService)
+    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    if (contact != null) __obj.updateDynamic("contact")(contact.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (license != null) __obj.updateDynamic("license")(license.asInstanceOf[js.Any])
+    if (termsOfService != null) __obj.updateDynamic("termsOfService")(termsOfService.asInstanceOf[js.Any])
     __obj.asInstanceOf[InfoObject]
   }
 }

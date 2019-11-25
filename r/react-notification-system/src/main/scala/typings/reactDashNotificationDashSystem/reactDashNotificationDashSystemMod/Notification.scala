@@ -46,10 +46,10 @@ object Notification {
     uid: Double | String = null
   ): Notification = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action)
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
     if (autoDismiss != null) __obj.updateDynamic("autoDismiss")(autoDismiss.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(dismissible)) __obj.updateDynamic("dismissible")(dismissible)
+    if (!js.isUndefined(dismissible)) __obj.updateDynamic("dismissible")(dismissible.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (onAdd != null) __obj.updateDynamic("onAdd")(js.Any.fromFunction1(onAdd))

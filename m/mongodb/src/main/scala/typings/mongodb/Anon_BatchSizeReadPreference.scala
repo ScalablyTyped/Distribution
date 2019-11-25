@@ -21,8 +21,8 @@ object Anon_BatchSizeReadPreference {
   ): Anon_BatchSizeReadPreference = {
     val __obj = js.Dynamic.literal()
     if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
-    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference)
-    if (session != null) __obj.updateDynamic("session")(session)
+    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])
+    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BatchSizeReadPreference]
   }
 }

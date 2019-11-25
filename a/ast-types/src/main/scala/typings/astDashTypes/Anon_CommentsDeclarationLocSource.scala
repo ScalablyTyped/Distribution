@@ -27,11 +27,11 @@ object Anon_CommentsDeclarationLocSource {
     specifiers: js.Array[ExportSpecifierKind] = null
   ): Anon_CommentsDeclarationLocSource = {
     val __obj = js.Dynamic.literal()
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (declaration != null) __obj.updateDynamic("declaration")(declaration)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (specifiers != null) __obj.updateDynamic("specifiers")(specifiers)
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (declaration != null) __obj.updateDynamic("declaration")(declaration.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (specifiers != null) __obj.updateDynamic("specifiers")(specifiers.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CommentsDeclarationLocSource]
   }
 }

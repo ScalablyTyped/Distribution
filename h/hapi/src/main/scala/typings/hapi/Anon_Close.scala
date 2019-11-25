@@ -25,7 +25,7 @@ object Anon_Close {
     if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction1(close))
     if (marshal != null) __obj.updateDynamic("marshal")(js.Any.fromFunction1(marshal))
     if (prepare != null) __obj.updateDynamic("prepare")(js.Any.fromFunction1(prepare))
-    if (variety != null) __obj.updateDynamic("variety")(variety)
+    if (variety != null) __obj.updateDynamic("variety")(variety.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Close]
   }
 }

@@ -21,7 +21,7 @@ trait Anon_False extends js.Object {
 object Anon_False {
   @scala.inline
   def apply(msg: EMsg, proto: CMsgProtoBufHeader | `false` = null): Anon_False = {
-    val __obj = js.Dynamic.literal(msg = msg)
+    val __obj = js.Dynamic.literal(msg = msg.asInstanceOf[js.Any])
     if (proto != null) __obj.updateDynamic("proto")(proto.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_False]
   }

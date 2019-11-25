@@ -20,10 +20,10 @@ object AllowTrust {
     authorize: js.UndefOr[Boolean] = js.undefined,
     source: String = null
   ): AllowTrust = {
-    val __obj = js.Dynamic.literal(assetCode = assetCode, trustor = trustor)
-    __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(authorize)) __obj.updateDynamic("authorize")(authorize)
-    if (source != null) __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(assetCode = assetCode.asInstanceOf[js.Any], trustor = trustor.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(authorize)) __obj.updateDynamic("authorize")(authorize.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[AllowTrust]
   }
 }

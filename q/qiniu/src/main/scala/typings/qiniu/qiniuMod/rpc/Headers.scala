@@ -13,8 +13,8 @@ object Headers {
   @scala.inline
   def apply(Connection: String = null, `User-Agent`: String = null): Headers = {
     val __obj = js.Dynamic.literal()
-    if (Connection != null) __obj.updateDynamic("Connection")(Connection)
-    if (`User-Agent` != null) __obj.updateDynamic("User-Agent")(`User-Agent`)
+    if (Connection != null) __obj.updateDynamic("Connection")(Connection.asInstanceOf[js.Any])
+    if (`User-Agent` != null) __obj.updateDynamic("User-Agent")(`User-Agent`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Headers]
   }
 }

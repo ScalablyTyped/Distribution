@@ -19,9 +19,9 @@ object ValidatorValidateInputEvent {
     input: JQuery = null,
     valid: js.UndefOr[Boolean] = js.undefined
   ): ValidatorValidateInputEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (input != null) __obj.updateDynamic("input")(input)
-    if (!js.isUndefined(valid)) __obj.updateDynamic("valid")(valid)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
+    if (!js.isUndefined(valid)) __obj.updateDynamic("valid")(valid.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidatorValidateInputEvent]
   }
 }

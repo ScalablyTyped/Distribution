@@ -32,13 +32,13 @@ object ZoomableGroupProps {
     zoom: Int | Double = null
   ): ZoomableGroupProps = {
     val __obj = js.Dynamic.literal()
-    if (backdrop != null) __obj.updateDynamic("backdrop")(backdrop)
-    if (center != null) __obj.updateDynamic("center")(center)
-    if (!js.isUndefined(disablePanning)) __obj.updateDynamic("disablePanning")(disablePanning)
+    if (backdrop != null) __obj.updateDynamic("backdrop")(backdrop.asInstanceOf[js.Any])
+    if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
+    if (!js.isUndefined(disablePanning)) __obj.updateDynamic("disablePanning")(disablePanning.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (onMoveEnd != null) __obj.updateDynamic("onMoveEnd")(js.Any.fromFunction1(onMoveEnd))
     if (onMoveStart != null) __obj.updateDynamic("onMoveStart")(js.Any.fromFunction1(onMoveStart))
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZoomableGroupProps]

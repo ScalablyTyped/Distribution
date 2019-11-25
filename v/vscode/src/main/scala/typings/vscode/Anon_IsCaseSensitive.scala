@@ -16,8 +16,8 @@ object Anon_IsCaseSensitive {
     isReadonly: js.UndefOr[Boolean] = js.undefined
   ): Anon_IsCaseSensitive = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isCaseSensitive)) __obj.updateDynamic("isCaseSensitive")(isCaseSensitive)
-    if (!js.isUndefined(isReadonly)) __obj.updateDynamic("isReadonly")(isReadonly)
+    if (!js.isUndefined(isCaseSensitive)) __obj.updateDynamic("isCaseSensitive")(isCaseSensitive.asInstanceOf[js.Any])
+    if (!js.isUndefined(isReadonly)) __obj.updateDynamic("isReadonly")(isReadonly.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IsCaseSensitive]
   }
 }

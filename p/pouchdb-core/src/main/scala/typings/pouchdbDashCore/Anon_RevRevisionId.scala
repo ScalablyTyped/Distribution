@@ -13,7 +13,7 @@ object Anon_RevRevisionId {
   @scala.inline
   def apply(rev: RevisionId = null): Anon_RevRevisionId = {
     val __obj = js.Dynamic.literal()
-    if (rev != null) __obj.updateDynamic("rev")(rev)
+    if (rev != null) __obj.updateDynamic("rev")(rev.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_RevRevisionId]
   }
 }

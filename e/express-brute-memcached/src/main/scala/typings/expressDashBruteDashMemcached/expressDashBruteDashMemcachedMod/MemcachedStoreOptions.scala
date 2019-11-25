@@ -97,7 +97,7 @@ object MemcachedStoreOptions {
     retry: Double,
     timeout: Double
   ): MemcachedStoreOptions = {
-    val __obj = js.Dynamic.literal(algorithm = algorithm, failOverServers = failOverServers, failures = failures, idle = idle, keyCompression = keyCompression, maxExpiration = maxExpiration, maxKeySize = maxKeySize, maxValue = maxValue, poolSize = poolSize, prefix = prefix, reconnect = reconnect, remove = remove, retries = retries, retry = retry, timeout = timeout)
+    val __obj = js.Dynamic.literal(algorithm = algorithm.asInstanceOf[js.Any], failOverServers = failOverServers.asInstanceOf[js.Any], failures = failures.asInstanceOf[js.Any], idle = idle.asInstanceOf[js.Any], keyCompression = keyCompression.asInstanceOf[js.Any], maxExpiration = maxExpiration.asInstanceOf[js.Any], maxKeySize = maxKeySize.asInstanceOf[js.Any], maxValue = maxValue.asInstanceOf[js.Any], poolSize = poolSize.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], reconnect = reconnect.asInstanceOf[js.Any], remove = remove.asInstanceOf[js.Any], retries = retries.asInstanceOf[js.Any], retry = retry.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MemcachedStoreOptions]
   }

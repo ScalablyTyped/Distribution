@@ -20,9 +20,9 @@ object LDAPMessageJsonObject {
     StringDictionary: /* k */ StringDictionary[js.Any] = null,
     protocolOp: String = null
   ): LDAPMessageJsonObject = {
-    val __obj = js.Dynamic.literal(controls = controls, messageID = messageID)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (protocolOp != null) __obj.updateDynamic("protocolOp")(protocolOp)
+    val __obj = js.Dynamic.literal(controls = controls.asInstanceOf[js.Any], messageID = messageID.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (protocolOp != null) __obj.updateDynamic("protocolOp")(protocolOp.asInstanceOf[js.Any])
     __obj.asInstanceOf[LDAPMessageJsonObject]
   }
 }

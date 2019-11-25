@@ -17,9 +17,9 @@ object DroppableStateSnapshot {
     draggingFromThisWith: DraggableId = null,
     draggingOverWith: DraggableId = null
   ): DroppableStateSnapshot = {
-    val __obj = js.Dynamic.literal(isDraggingOver = isDraggingOver)
-    if (draggingFromThisWith != null) __obj.updateDynamic("draggingFromThisWith")(draggingFromThisWith)
-    if (draggingOverWith != null) __obj.updateDynamic("draggingOverWith")(draggingOverWith)
+    val __obj = js.Dynamic.literal(isDraggingOver = isDraggingOver.asInstanceOf[js.Any])
+    if (draggingFromThisWith != null) __obj.updateDynamic("draggingFromThisWith")(draggingFromThisWith.asInstanceOf[js.Any])
+    if (draggingOverWith != null) __obj.updateDynamic("draggingOverWith")(draggingOverWith.asInstanceOf[js.Any])
     __obj.asInstanceOf[DroppableStateSnapshot]
   }
 }

@@ -23,9 +23,9 @@ object Anon_CompRef {
     deps: js.UndefOr[scala.Nothing] = js.undefined,
     useFactory: js.UndefOr[scala.Nothing] = js.undefined
   ): Anon_CompRef = {
-    val __obj = js.Dynamic.literal(multi = multi, provide = provide, useExisting = useExisting)
-    if (!js.isUndefined(deps)) __obj.updateDynamic("deps")(deps)
-    if (!js.isUndefined(useFactory)) __obj.updateDynamic("useFactory")(useFactory)
+    val __obj = js.Dynamic.literal(multi = multi.asInstanceOf[js.Any], provide = provide.asInstanceOf[js.Any], useExisting = useExisting.asInstanceOf[js.Any])
+    if (!js.isUndefined(deps)) __obj.updateDynamic("deps")(deps.asInstanceOf[js.Any])
+    if (!js.isUndefined(useFactory)) __obj.updateDynamic("useFactory")(useFactory.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CompRef]
   }
 }

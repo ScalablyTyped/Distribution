@@ -15,7 +15,7 @@ trait Anon_Charge extends js.Object {
 object Anon_Charge {
   @scala.inline
   def apply(charge: String, payment_method_details: IPaymentMethodDetails): Anon_Charge = {
-    val __obj = js.Dynamic.literal(charge = charge, payment_method_details = payment_method_details)
+    val __obj = js.Dynamic.literal(charge = charge.asInstanceOf[js.Any], payment_method_details = payment_method_details.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Charge]
   }

@@ -11,7 +11,7 @@ trait Api extends js.Object {
 object Api {
   @scala.inline
   def apply(scroller: ScrollerMethodsModel): Api = {
-    val __obj = js.Dynamic.literal(scroller = scroller)
+    val __obj = js.Dynamic.literal(scroller = scroller.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Api]
   }

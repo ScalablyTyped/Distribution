@@ -15,7 +15,7 @@ trait CreateResponse extends js.Object {
 object CreateResponse {
   @scala.inline
   def apply(entityType: String, id: String): CreateResponse = {
-    val __obj = js.Dynamic.literal(entityType = entityType, id = id)
+    val __obj = js.Dynamic.literal(entityType = entityType.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CreateResponse]
   }

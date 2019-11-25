@@ -13,7 +13,7 @@ trait Anon_ extends js.Object {
 object Anon_ {
   @scala.inline
   def apply(circles: Double, dur: Double, fn: (Double, Double) => Anon_RStyleAnonAnimationdelayLeft): Anon_ = {
-    val __obj = js.Dynamic.literal(circles = circles, dur = dur, fn = js.Any.fromFunction2(fn))
+    val __obj = js.Dynamic.literal(circles = circles.asInstanceOf[js.Any], dur = dur.asInstanceOf[js.Any], fn = js.Any.fromFunction2(fn))
   
     __obj.asInstanceOf[Anon_]
   }

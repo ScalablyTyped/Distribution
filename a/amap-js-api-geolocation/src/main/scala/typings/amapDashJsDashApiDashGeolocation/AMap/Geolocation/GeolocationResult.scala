@@ -60,9 +60,9 @@ object GeolocationResult {
     accuracy: Int | Double = null,
     aois: js.Array[ReGeocodeAoi] = null
   ): GeolocationResult = {
-    val __obj = js.Dynamic.literal(addressComponent = addressComponent, crosses = crosses, formattedAddress = formattedAddress, info = info, isConverted = isConverted, location_type = location_type, message = message, pois = pois, position = position, roads = roads, status = status)
+    val __obj = js.Dynamic.literal(addressComponent = addressComponent.asInstanceOf[js.Any], crosses = crosses.asInstanceOf[js.Any], formattedAddress = formattedAddress.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], isConverted = isConverted.asInstanceOf[js.Any], location_type = location_type.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], pois = pois.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], roads = roads.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     if (accuracy != null) __obj.updateDynamic("accuracy")(accuracy.asInstanceOf[js.Any])
-    if (aois != null) __obj.updateDynamic("aois")(aois)
+    if (aois != null) __obj.updateDynamic("aois")(aois.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeolocationResult]
   }
 }

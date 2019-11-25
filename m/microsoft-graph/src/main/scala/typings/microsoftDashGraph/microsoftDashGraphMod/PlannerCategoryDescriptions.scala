@@ -30,12 +30,12 @@ object PlannerCategoryDescriptions {
     category6: String = null
   ): PlannerCategoryDescriptions = {
     val __obj = js.Dynamic.literal()
-    if (category1 != null) __obj.updateDynamic("category1")(category1)
-    if (category2 != null) __obj.updateDynamic("category2")(category2)
-    if (category3 != null) __obj.updateDynamic("category3")(category3)
-    if (category4 != null) __obj.updateDynamic("category4")(category4)
-    if (category5 != null) __obj.updateDynamic("category5")(category5)
-    if (category6 != null) __obj.updateDynamic("category6")(category6)
+    if (category1 != null) __obj.updateDynamic("category1")(category1.asInstanceOf[js.Any])
+    if (category2 != null) __obj.updateDynamic("category2")(category2.asInstanceOf[js.Any])
+    if (category3 != null) __obj.updateDynamic("category3")(category3.asInstanceOf[js.Any])
+    if (category4 != null) __obj.updateDynamic("category4")(category4.asInstanceOf[js.Any])
+    if (category5 != null) __obj.updateDynamic("category5")(category5.asInstanceOf[js.Any])
+    if (category6 != null) __obj.updateDynamic("category6")(category6.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlannerCategoryDescriptions]
   }
 }

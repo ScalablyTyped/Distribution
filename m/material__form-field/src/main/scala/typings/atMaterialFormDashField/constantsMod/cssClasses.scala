@@ -14,8 +14,8 @@ trait cssClasses extends MDCStrings {
 object cssClasses {
   @scala.inline
   def apply(ROOT: `mdc-form-field`, StringDictionary: StringDictionary[String] = null): cssClasses = {
-    val __obj = js.Dynamic.literal(ROOT = ROOT)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(ROOT = ROOT.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[cssClasses]
   }
 }

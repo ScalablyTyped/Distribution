@@ -15,8 +15,8 @@ trait Extra extends js.Object {
 object Extra {
   @scala.inline
   def apply(fname: String, params: js.Any, mimeType: js.Array[String] = null): Extra = {
-    val __obj = js.Dynamic.literal(fname = fname, params = params)
-    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType)
+    val __obj = js.Dynamic.literal(fname = fname.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
+    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Extra]
   }
 }

@@ -32,10 +32,10 @@ object TabsGroupsContentGroupsGalleryItem {
     toolTip: String = null
   ): TabsGroupsContentGroupsGalleryItem = {
     val __obj = js.Dynamic.literal()
-    if (buttonSettings != null) __obj.updateDynamic("buttonSettings")(buttonSettings)
-    if (customToolTip != null) __obj.updateDynamic("customToolTip")(customToolTip)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (toolTip != null) __obj.updateDynamic("toolTip")(toolTip)
+    if (buttonSettings != null) __obj.updateDynamic("buttonSettings")(buttonSettings.asInstanceOf[js.Any])
+    if (customToolTip != null) __obj.updateDynamic("customToolTip")(customToolTip.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (toolTip != null) __obj.updateDynamic("toolTip")(toolTip.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabsGroupsContentGroupsGalleryItem]
   }
 }

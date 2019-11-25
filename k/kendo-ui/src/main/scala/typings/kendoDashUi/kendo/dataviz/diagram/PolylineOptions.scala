@@ -24,9 +24,9 @@ object PolylineOptions {
     val __obj = js.Dynamic.literal()
     if (endCap != null) __obj.updateDynamic("endCap")(endCap.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (startCap != null) __obj.updateDynamic("startCap")(startCap.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolylineOptions]
   }
 }

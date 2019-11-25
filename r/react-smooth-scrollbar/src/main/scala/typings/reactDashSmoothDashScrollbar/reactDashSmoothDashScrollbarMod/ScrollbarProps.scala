@@ -37,10 +37,10 @@ object ScrollbarProps {
     style: CSSProperties = null
   ): ScrollbarProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alwaysShowTracks)) __obj.updateDynamic("alwaysShowTracks")(alwaysShowTracks)
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(alwaysShowTracks)) __obj.updateDynamic("alwaysShowTracks")(alwaysShowTracks.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction2(onScroll))
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollbarProps]
   }
 }

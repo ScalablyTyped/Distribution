@@ -12,7 +12,7 @@ trait Anon_PushToken extends js.Object {
 object Anon_PushToken {
   @scala.inline
   def apply(pushToken: String, userId: String): Anon_PushToken = {
-    val __obj = js.Dynamic.literal(pushToken = pushToken, userId = userId)
+    val __obj = js.Dynamic.literal(pushToken = pushToken.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_PushToken]
   }

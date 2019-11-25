@@ -12,7 +12,7 @@ object CreateProjectFromDirectoryOptions {
   @scala.inline
   def apply(logErrors: js.UndefOr[Boolean] = js.undefined): CreateProjectFromDirectoryOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(logErrors)) __obj.updateDynamic("logErrors")(logErrors)
+    if (!js.isUndefined(logErrors)) __obj.updateDynamic("logErrors")(logErrors.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateProjectFromDirectoryOptions]
   }
 }

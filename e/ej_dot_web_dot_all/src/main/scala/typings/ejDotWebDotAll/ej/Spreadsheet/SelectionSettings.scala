@@ -36,9 +36,9 @@ object SelectionSettings {
     selectionUnit: SelectionUnit | String = null
   ): SelectionSettings = {
     val __obj = js.Dynamic.literal()
-    if (activeCell != null) __obj.updateDynamic("activeCell")(activeCell)
+    if (activeCell != null) __obj.updateDynamic("activeCell")(activeCell.asInstanceOf[js.Any])
     if (animationTime != null) __obj.updateDynamic("animationTime")(animationTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation)
+    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation.asInstanceOf[js.Any])
     if (selectionType != null) __obj.updateDynamic("selectionType")(selectionType.asInstanceOf[js.Any])
     if (selectionUnit != null) __obj.updateDynamic("selectionUnit")(selectionUnit.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectionSettings]

@@ -13,8 +13,8 @@ object Anon_FlushOnChange {
   @scala.inline
   def apply(flushOnChange: js.UndefOr[Boolean] = js.undefined, flushOnEnd: js.UndefOr[Boolean] = js.undefined): Anon_FlushOnChange = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(flushOnChange)) __obj.updateDynamic("flushOnChange")(flushOnChange)
-    if (!js.isUndefined(flushOnEnd)) __obj.updateDynamic("flushOnEnd")(flushOnEnd)
+    if (!js.isUndefined(flushOnChange)) __obj.updateDynamic("flushOnChange")(flushOnChange.asInstanceOf[js.Any])
+    if (!js.isUndefined(flushOnEnd)) __obj.updateDynamic("flushOnEnd")(flushOnEnd.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FlushOnChange]
   }
 }

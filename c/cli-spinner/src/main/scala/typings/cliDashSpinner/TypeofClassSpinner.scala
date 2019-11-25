@@ -12,8 +12,8 @@ import scala.scalajs.js.annotation._
 trait TypeofClassSpinner
   extends Instantiable0[Spinner]
      with Instantiable1[(/* titleOrOptions */ Options) | (/* titleOrOptions */ String), Spinner] {
-  def setDefaultSpinnerDelay(spinnerDelay: Double): /* import warning: ImportType.apply Failed type conversion: typeof Spinner */ js.Any = js.native
-  def setDefaultSpinnerString(spinnerString: String): /* import warning: ImportType.apply Failed type conversion: typeof Spinner */ js.Any = js.native
-  def setDefaultSpinnerString(spinnerString: Double): /* import warning: ImportType.apply Failed type conversion: typeof Spinner */ js.Any = js.native
+  def setDefaultSpinnerDelay(spinnerDelay: Double): /* import warning: importer.ImportType#apply Failed type conversion: typeof Spinner */ js.Any = js.native
+  def setDefaultSpinnerString(spinnerString: String): /* import warning: importer.ImportType#apply Failed type conversion: typeof Spinner */ js.Any = js.native
+  def setDefaultSpinnerString(spinnerString: Double): /* import warning: importer.ImportType#apply Failed type conversion: typeof Spinner */ js.Any = js.native
 }
 

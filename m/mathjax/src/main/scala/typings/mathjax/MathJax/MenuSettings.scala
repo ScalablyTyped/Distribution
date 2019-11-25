@@ -61,17 +61,17 @@ object MenuSettings {
     zscale: String = null
   ): MenuSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ALT)) __obj.updateDynamic("ALT")(ALT)
-    if (!js.isUndefined(CMD)) __obj.updateDynamic("CMD")(CMD)
-    if (!js.isUndefined(CTRL)) __obj.updateDynamic("CTRL")(CTRL)
-    if (!js.isUndefined(Shift)) __obj.updateDynamic("Shift")(Shift)
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (!js.isUndefined(mpContext)) __obj.updateDynamic("mpContext")(mpContext)
-    if (!js.isUndefined(mpMouse)) __obj.updateDynamic("mpMouse")(mpMouse)
+    if (!js.isUndefined(ALT)) __obj.updateDynamic("ALT")(ALT.asInstanceOf[js.Any])
+    if (!js.isUndefined(CMD)) __obj.updateDynamic("CMD")(CMD.asInstanceOf[js.Any])
+    if (!js.isUndefined(CTRL)) __obj.updateDynamic("CTRL")(CTRL.asInstanceOf[js.Any])
+    if (!js.isUndefined(Shift)) __obj.updateDynamic("Shift")(Shift.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (!js.isUndefined(mpContext)) __obj.updateDynamic("mpContext")(mpContext.asInstanceOf[js.Any])
+    if (!js.isUndefined(mpMouse)) __obj.updateDynamic("mpMouse")(mpMouse.asInstanceOf[js.Any])
     if (renderer != null) __obj.updateDynamic("renderer")(renderer.asInstanceOf[js.Any])
-    if (!js.isUndefined(texHints)) __obj.updateDynamic("texHints")(texHints)
-    if (zoom != null) __obj.updateDynamic("zoom")(zoom)
-    if (zscale != null) __obj.updateDynamic("zscale")(zscale)
+    if (!js.isUndefined(texHints)) __obj.updateDynamic("texHints")(texHints.asInstanceOf[js.Any])
+    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    if (zscale != null) __obj.updateDynamic("zscale")(zscale.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuSettings]
   }
 }

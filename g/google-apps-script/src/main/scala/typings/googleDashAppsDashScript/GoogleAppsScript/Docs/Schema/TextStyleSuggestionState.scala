@@ -34,17 +34,17 @@ object TextStyleSuggestionState {
     weightedFontFamilySuggested: js.UndefOr[Boolean] = js.undefined
   ): TextStyleSuggestionState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(backgroundColorSuggested)) __obj.updateDynamic("backgroundColorSuggested")(backgroundColorSuggested)
-    if (!js.isUndefined(baselineOffsetSuggested)) __obj.updateDynamic("baselineOffsetSuggested")(baselineOffsetSuggested)
-    if (!js.isUndefined(boldSuggested)) __obj.updateDynamic("boldSuggested")(boldSuggested)
-    if (!js.isUndefined(fontSizeSuggested)) __obj.updateDynamic("fontSizeSuggested")(fontSizeSuggested)
-    if (!js.isUndefined(foregroundColorSuggested)) __obj.updateDynamic("foregroundColorSuggested")(foregroundColorSuggested)
-    if (!js.isUndefined(italicSuggested)) __obj.updateDynamic("italicSuggested")(italicSuggested)
-    if (!js.isUndefined(linkSuggested)) __obj.updateDynamic("linkSuggested")(linkSuggested)
-    if (!js.isUndefined(smallCapsSuggested)) __obj.updateDynamic("smallCapsSuggested")(smallCapsSuggested)
-    if (!js.isUndefined(strikethroughSuggested)) __obj.updateDynamic("strikethroughSuggested")(strikethroughSuggested)
-    if (!js.isUndefined(underlineSuggested)) __obj.updateDynamic("underlineSuggested")(underlineSuggested)
-    if (!js.isUndefined(weightedFontFamilySuggested)) __obj.updateDynamic("weightedFontFamilySuggested")(weightedFontFamilySuggested)
+    if (!js.isUndefined(backgroundColorSuggested)) __obj.updateDynamic("backgroundColorSuggested")(backgroundColorSuggested.asInstanceOf[js.Any])
+    if (!js.isUndefined(baselineOffsetSuggested)) __obj.updateDynamic("baselineOffsetSuggested")(baselineOffsetSuggested.asInstanceOf[js.Any])
+    if (!js.isUndefined(boldSuggested)) __obj.updateDynamic("boldSuggested")(boldSuggested.asInstanceOf[js.Any])
+    if (!js.isUndefined(fontSizeSuggested)) __obj.updateDynamic("fontSizeSuggested")(fontSizeSuggested.asInstanceOf[js.Any])
+    if (!js.isUndefined(foregroundColorSuggested)) __obj.updateDynamic("foregroundColorSuggested")(foregroundColorSuggested.asInstanceOf[js.Any])
+    if (!js.isUndefined(italicSuggested)) __obj.updateDynamic("italicSuggested")(italicSuggested.asInstanceOf[js.Any])
+    if (!js.isUndefined(linkSuggested)) __obj.updateDynamic("linkSuggested")(linkSuggested.asInstanceOf[js.Any])
+    if (!js.isUndefined(smallCapsSuggested)) __obj.updateDynamic("smallCapsSuggested")(smallCapsSuggested.asInstanceOf[js.Any])
+    if (!js.isUndefined(strikethroughSuggested)) __obj.updateDynamic("strikethroughSuggested")(strikethroughSuggested.asInstanceOf[js.Any])
+    if (!js.isUndefined(underlineSuggested)) __obj.updateDynamic("underlineSuggested")(underlineSuggested.asInstanceOf[js.Any])
+    if (!js.isUndefined(weightedFontFamilySuggested)) __obj.updateDynamic("weightedFontFamilySuggested")(weightedFontFamilySuggested.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextStyleSuggestionState]
   }
 }

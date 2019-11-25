@@ -20,10 +20,10 @@ trait ServerTempPasswordAdd extends js.Object {
 object ServerTempPasswordAdd {
   @scala.inline
   def apply(duration: Double, pw: String, desc: String = null, tcid: Int | Double = null, tcpw: String = null): ServerTempPasswordAdd = {
-    val __obj = js.Dynamic.literal(duration = duration, pw = pw)
-    if (desc != null) __obj.updateDynamic("desc")(desc)
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], pw = pw.asInstanceOf[js.Any])
+    if (desc != null) __obj.updateDynamic("desc")(desc.asInstanceOf[js.Any])
     if (tcid != null) __obj.updateDynamic("tcid")(tcid.asInstanceOf[js.Any])
-    if (tcpw != null) __obj.updateDynamic("tcpw")(tcpw)
+    if (tcpw != null) __obj.updateDynamic("tcpw")(tcpw.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerTempPasswordAdd]
   }
 }

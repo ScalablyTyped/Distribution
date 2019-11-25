@@ -21,8 +21,8 @@ object MemoryInfo {
     reasons: js.Array[String],
     unreliable: js.UndefOr[Boolean] = js.undefined
   ): MemoryInfo = {
-    val __obj = js.Dynamic.literal(numBytes = numBytes, numDataBuffers = numDataBuffers, numTensors = numTensors, reasons = reasons)
-    if (!js.isUndefined(unreliable)) __obj.updateDynamic("unreliable")(unreliable)
+    val __obj = js.Dynamic.literal(numBytes = numBytes.asInstanceOf[js.Any], numDataBuffers = numDataBuffers.asInstanceOf[js.Any], numTensors = numTensors.asInstanceOf[js.Any], reasons = reasons.asInstanceOf[js.Any])
+    if (!js.isUndefined(unreliable)) __obj.updateDynamic("unreliable")(unreliable.asInstanceOf[js.Any])
     __obj.asInstanceOf[MemoryInfo]
   }
 }

@@ -27,9 +27,9 @@ object Anon_ConfusionMatrix {
     modelinfo: Insert2 = null
   ): Anon_ConfusionMatrix = {
     val __obj = js.Dynamic.literal()
-    if (confusionMatrix != null) __obj.updateDynamic("confusionMatrix")(confusionMatrix)
-    if (confusionMatrixRowTotals != null) __obj.updateDynamic("confusionMatrixRowTotals")(confusionMatrixRowTotals)
-    if (modelinfo != null) __obj.updateDynamic("modelinfo")(modelinfo)
+    if (confusionMatrix != null) __obj.updateDynamic("confusionMatrix")(confusionMatrix.asInstanceOf[js.Any])
+    if (confusionMatrixRowTotals != null) __obj.updateDynamic("confusionMatrixRowTotals")(confusionMatrixRowTotals.asInstanceOf[js.Any])
+    if (modelinfo != null) __obj.updateDynamic("modelinfo")(modelinfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ConfusionMatrix]
   }
 }

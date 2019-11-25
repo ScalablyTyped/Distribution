@@ -11,7 +11,7 @@ trait Anon_Pipe extends js.Object {
 object Anon_Pipe {
   @scala.inline
   def apply(pipe: js.Function): Anon_Pipe = {
-    val __obj = js.Dynamic.literal(pipe = pipe)
+    val __obj = js.Dynamic.literal(pipe = pipe.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Pipe]
   }

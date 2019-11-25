@@ -15,7 +15,7 @@ trait Widths extends js.Object {
 object Widths {
   @scala.inline
   def apply(GROW: grow, SHRINK: shrink): Widths = {
-    val __obj = js.Dynamic.literal(GROW = GROW, SHRINK = SHRINK)
+    val __obj = js.Dynamic.literal(GROW = GROW.asInstanceOf[js.Any], SHRINK = SHRINK.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Widths]
   }

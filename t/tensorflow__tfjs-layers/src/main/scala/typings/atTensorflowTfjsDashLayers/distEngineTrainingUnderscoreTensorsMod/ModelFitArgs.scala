@@ -161,13 +161,13 @@ object ModelFitArgs {
     if (classWeight != null) __obj.updateDynamic("classWeight")(classWeight.asInstanceOf[js.Any])
     if (epochs != null) __obj.updateDynamic("epochs")(epochs.asInstanceOf[js.Any])
     if (initialEpoch != null) __obj.updateDynamic("initialEpoch")(initialEpoch.asInstanceOf[js.Any])
-    if (sampleWeight != null) __obj.updateDynamic("sampleWeight")(sampleWeight)
-    if (!js.isUndefined(shuffle)) __obj.updateDynamic("shuffle")(shuffle)
+    if (sampleWeight != null) __obj.updateDynamic("sampleWeight")(sampleWeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(shuffle)) __obj.updateDynamic("shuffle")(shuffle.asInstanceOf[js.Any])
     if (stepsPerEpoch != null) __obj.updateDynamic("stepsPerEpoch")(stepsPerEpoch.asInstanceOf[js.Any])
     if (validationData != null) __obj.updateDynamic("validationData")(validationData.asInstanceOf[js.Any])
     if (validationSplit != null) __obj.updateDynamic("validationSplit")(validationSplit.asInstanceOf[js.Any])
     if (validationSteps != null) __obj.updateDynamic("validationSteps")(validationSteps.asInstanceOf[js.Any])
-    if (verbose != null) __obj.updateDynamic("verbose")(verbose)
+    if (verbose != null) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
     if (yieldEvery != null) __obj.updateDynamic("yieldEvery")(yieldEvery.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelFitArgs]
   }

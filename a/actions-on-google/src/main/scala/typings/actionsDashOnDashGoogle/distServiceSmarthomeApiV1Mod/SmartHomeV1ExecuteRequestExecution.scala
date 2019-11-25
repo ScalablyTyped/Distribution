@@ -15,8 +15,8 @@ trait SmartHomeV1ExecuteRequestExecution extends js.Object {
 object SmartHomeV1ExecuteRequestExecution {
   @scala.inline
   def apply(command: String, params: ApiClientObjectMap[_], challenge: Anon_Ack = null): SmartHomeV1ExecuteRequestExecution = {
-    val __obj = js.Dynamic.literal(command = command, params = params)
-    if (challenge != null) __obj.updateDynamic("challenge")(challenge)
+    val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
+    if (challenge != null) __obj.updateDynamic("challenge")(challenge.asInstanceOf[js.Any])
     __obj.asInstanceOf[SmartHomeV1ExecuteRequestExecution]
   }
 }

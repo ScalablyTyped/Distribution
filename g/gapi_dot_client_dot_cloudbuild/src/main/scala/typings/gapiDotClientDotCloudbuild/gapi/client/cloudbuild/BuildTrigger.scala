@@ -54,14 +54,14 @@ object BuildTrigger {
     triggerTemplate: RepoSource = null
   ): BuildTrigger = {
     val __obj = js.Dynamic.literal()
-    if (build != null) __obj.updateDynamic("build")(build)
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (filename != null) __obj.updateDynamic("filename")(filename)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (substitutions != null) __obj.updateDynamic("substitutions")(substitutions)
-    if (triggerTemplate != null) __obj.updateDynamic("triggerTemplate")(triggerTemplate)
+    if (build != null) __obj.updateDynamic("build")(build.asInstanceOf[js.Any])
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (substitutions != null) __obj.updateDynamic("substitutions")(substitutions.asInstanceOf[js.Any])
+    if (triggerTemplate != null) __obj.updateDynamic("triggerTemplate")(triggerTemplate.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildTrigger]
   }
 }

@@ -29,12 +29,12 @@ object Options {
     userProperty: String = null
   ): Options = {
     val __obj = js.Dynamic.literal(secret = secret.asInstanceOf[js.Any])
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(credentialsRequired)) __obj.updateDynamic("credentialsRequired")(credentialsRequired)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(credentialsRequired)) __obj.updateDynamic("credentialsRequired")(credentialsRequired.asInstanceOf[js.Any])
     if (getToken != null) __obj.updateDynamic("getToken")(js.Any.fromFunction1(getToken))
     if (isRevoked != null) __obj.updateDynamic("isRevoked")(js.Any.fromFunction3(isRevoked))
-    if (requestProperty != null) __obj.updateDynamic("requestProperty")(requestProperty)
-    if (userProperty != null) __obj.updateDynamic("userProperty")(userProperty)
+    if (requestProperty != null) __obj.updateDynamic("requestProperty")(requestProperty.asInstanceOf[js.Any])
+    if (userProperty != null) __obj.updateDynamic("userProperty")(userProperty.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

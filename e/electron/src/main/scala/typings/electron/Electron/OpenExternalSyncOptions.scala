@@ -19,8 +19,8 @@ object OpenExternalSyncOptions {
   @scala.inline
   def apply(activate: js.UndefOr[Boolean] = js.undefined, workingDirectory: String = null): OpenExternalSyncOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(activate)) __obj.updateDynamic("activate")(activate)
-    if (workingDirectory != null) __obj.updateDynamic("workingDirectory")(workingDirectory)
+    if (!js.isUndefined(activate)) __obj.updateDynamic("activate")(activate.asInstanceOf[js.Any])
+    if (workingDirectory != null) __obj.updateDynamic("workingDirectory")(workingDirectory.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenExternalSyncOptions]
   }
 }

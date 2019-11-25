@@ -25,7 +25,7 @@ object Anon_Oss {
     uas: MobileDetectRules,
     utils: MobileDetectRules
   ): Anon_Oss = {
-    val __obj = js.Dynamic.literal(oss = oss, phones = phones, props = props, tablets = tablets, uas = uas, utils = utils)
+    val __obj = js.Dynamic.literal(oss = oss.asInstanceOf[js.Any], phones = phones.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], tablets = tablets.asInstanceOf[js.Any], uas = uas.asInstanceOf[js.Any], utils = utils.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Oss]
   }

@@ -1,5 +1,6 @@
 package typings.needle
 
+import typings.needle.needleMod.core.NeedleHttpVerbs
 import typings.needle.needleMod.core.NeedleReadWriteHttpVerbs
 import typings.needle.needleMod.core.NeedleReadonlyHttpVerbs
 import scala.scalajs.js
@@ -14,28 +15,40 @@ object needleStrings {
   sealed trait basic extends js.Object
   
   @js.native
-  sealed trait delete extends NeedleReadWriteHttpVerbs
+  sealed trait delete
+    extends NeedleHttpVerbs
+       with NeedleReadWriteHttpVerbs
   
   @js.native
   sealed trait digest extends js.Object
   
   @js.native
-  sealed trait get extends NeedleReadonlyHttpVerbs
+  sealed trait get
+    extends NeedleHttpVerbs
+       with NeedleReadonlyHttpVerbs
   
   @js.native
-  sealed trait head extends NeedleReadonlyHttpVerbs
+  sealed trait head
+    extends NeedleHttpVerbs
+       with NeedleReadonlyHttpVerbs
   
   @js.native
   sealed trait json extends js.Object
   
   @js.native
-  sealed trait patch extends NeedleReadWriteHttpVerbs
+  sealed trait patch
+    extends NeedleHttpVerbs
+       with NeedleReadWriteHttpVerbs
   
   @js.native
-  sealed trait post extends NeedleReadWriteHttpVerbs
+  sealed trait post
+    extends NeedleHttpVerbs
+       with NeedleReadWriteHttpVerbs
   
   @js.native
-  sealed trait put extends NeedleReadWriteHttpVerbs
+  sealed trait put
+    extends NeedleHttpVerbs
+       with NeedleReadWriteHttpVerbs
   
   @js.native
   sealed trait xml extends js.Object

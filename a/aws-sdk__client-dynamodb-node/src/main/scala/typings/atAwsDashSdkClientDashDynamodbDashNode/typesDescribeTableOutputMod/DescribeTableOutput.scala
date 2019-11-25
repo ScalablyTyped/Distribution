@@ -22,8 +22,8 @@ trait DescribeTableOutput extends OutputTypesUnion {
 object DescribeTableOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, Table: _UnmarshalledTableDescription = null): DescribeTableOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (Table != null) __obj.updateDynamic("Table")(Table)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (Table != null) __obj.updateDynamic("Table")(Table.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTableOutput]
   }
 }

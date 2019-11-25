@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TableDefinition[Name /* <: String */, Row] extends js.Object {
-  var columns: /* import warning: ImportType.apply c Unsupported type mapping: 
+  var columns: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ CName in keyof Row ]: node-sql-2.sql.ColumnDefinition<CName, Row[CName]>}
     */ typings.nodeDashSqlDash2.nodeDashSqlDash2Strings.TableDefinition with Row
   var dialect: js.UndefOr[SQLDialects] = js.undefined
@@ -19,7 +19,7 @@ trait TableDefinition[Name /* <: String */, Row] extends js.Object {
 object TableDefinition {
   @scala.inline
   def apply[Name /* <: String */, Row](
-    columns: /* import warning: ImportType.apply c Unsupported type mapping: 
+    columns: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ CName in keyof Row ]: node-sql-2.sql.ColumnDefinition<CName, Row[CName]>}
     */ typings.nodeDashSqlDash2.nodeDashSqlDash2Strings.TableDefinition with Row,
     name: Name,
@@ -28,10 +28,10 @@ object TableDefinition {
     foreignKeys: Anon_CascadeColumns[Row] = null,
     isTemporary: js.UndefOr[Boolean] = js.undefined
   ): TableDefinition[Name, Row] = {
-    val __obj = js.Dynamic.literal(columns = columns, name = name.asInstanceOf[js.Any], schema = schema)
-    if (dialect != null) __obj.updateDynamic("dialect")(dialect)
-    if (foreignKeys != null) __obj.updateDynamic("foreignKeys")(foreignKeys)
-    if (!js.isUndefined(isTemporary)) __obj.updateDynamic("isTemporary")(isTemporary)
+    val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
+    if (dialect != null) __obj.updateDynamic("dialect")(dialect.asInstanceOf[js.Any])
+    if (foreignKeys != null) __obj.updateDynamic("foreignKeys")(foreignKeys.asInstanceOf[js.Any])
+    if (!js.isUndefined(isTemporary)) __obj.updateDynamic("isTemporary")(isTemporary.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableDefinition[Name, Row]]
   }
 }

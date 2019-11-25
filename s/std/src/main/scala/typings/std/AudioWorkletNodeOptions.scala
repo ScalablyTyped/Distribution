@@ -26,13 +26,13 @@ object AudioWorkletNodeOptions {
   ): AudioWorkletNodeOptions = {
     val __obj = js.Dynamic.literal()
     if (channelCount != null) __obj.updateDynamic("channelCount")(channelCount.asInstanceOf[js.Any])
-    if (channelCountMode != null) __obj.updateDynamic("channelCountMode")(channelCountMode)
-    if (channelInterpretation != null) __obj.updateDynamic("channelInterpretation")(channelInterpretation)
+    if (channelCountMode != null) __obj.updateDynamic("channelCountMode")(channelCountMode.asInstanceOf[js.Any])
+    if (channelInterpretation != null) __obj.updateDynamic("channelInterpretation")(channelInterpretation.asInstanceOf[js.Any])
     if (numberOfInputs != null) __obj.updateDynamic("numberOfInputs")(numberOfInputs.asInstanceOf[js.Any])
     if (numberOfOutputs != null) __obj.updateDynamic("numberOfOutputs")(numberOfOutputs.asInstanceOf[js.Any])
-    if (outputChannelCount != null) __obj.updateDynamic("outputChannelCount")(outputChannelCount)
-    if (parameterData != null) __obj.updateDynamic("parameterData")(parameterData)
-    if (processorOptions != null) __obj.updateDynamic("processorOptions")(processorOptions)
+    if (outputChannelCount != null) __obj.updateDynamic("outputChannelCount")(outputChannelCount.asInstanceOf[js.Any])
+    if (parameterData != null) __obj.updateDynamic("parameterData")(parameterData.asInstanceOf[js.Any])
+    if (processorOptions != null) __obj.updateDynamic("processorOptions")(processorOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioWorkletNodeOptions]
   }
 }

@@ -15,7 +15,7 @@ trait Anon_CAROUSEL extends js.Object {
 object Anon_CAROUSEL {
   @scala.inline
   def apply(mediaId: String, mediaType: PHOTO | VIDEO | CAROUSEL = null): Anon_CAROUSEL = {
-    val __obj = js.Dynamic.literal(mediaId = mediaId)
+    val __obj = js.Dynamic.literal(mediaId = mediaId.asInstanceOf[js.Any])
     if (mediaType != null) __obj.updateDynamic("mediaType")(mediaType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CAROUSEL]
   }

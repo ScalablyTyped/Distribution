@@ -29,15 +29,15 @@ object CipherKeyValueParams {
     value: String = null
   ): CipherKeyValueParams = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowSeedlessDevice)) __obj.updateDynamic("allowSeedlessDevice")(allowSeedlessDevice)
-    if (!js.isUndefined(askOnDecrypt)) __obj.updateDynamic("askOnDecrypt")(askOnDecrypt)
-    if (!js.isUndefined(askOnEncrypt)) __obj.updateDynamic("askOnEncrypt")(askOnEncrypt)
-    if (device != null) __obj.updateDynamic("device")(device)
-    if (iv != null) __obj.updateDynamic("iv")(iv)
-    if (!js.isUndefined(keepSession)) __obj.updateDynamic("keepSession")(keepSession)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (!js.isUndefined(useEmptyPassphrase)) __obj.updateDynamic("useEmptyPassphrase")(useEmptyPassphrase)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (!js.isUndefined(allowSeedlessDevice)) __obj.updateDynamic("allowSeedlessDevice")(allowSeedlessDevice.asInstanceOf[js.Any])
+    if (!js.isUndefined(askOnDecrypt)) __obj.updateDynamic("askOnDecrypt")(askOnDecrypt.asInstanceOf[js.Any])
+    if (!js.isUndefined(askOnEncrypt)) __obj.updateDynamic("askOnEncrypt")(askOnEncrypt.asInstanceOf[js.Any])
+    if (device != null) __obj.updateDynamic("device")(device.asInstanceOf[js.Any])
+    if (iv != null) __obj.updateDynamic("iv")(iv.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepSession)) __obj.updateDynamic("keepSession")(keepSession.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (!js.isUndefined(useEmptyPassphrase)) __obj.updateDynamic("useEmptyPassphrase")(useEmptyPassphrase.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CipherKeyValueParams]
   }
 }

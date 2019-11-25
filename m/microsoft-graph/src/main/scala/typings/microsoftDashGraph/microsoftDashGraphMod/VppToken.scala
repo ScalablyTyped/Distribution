@@ -58,18 +58,18 @@ object VppToken {
     vppTokenAccountType: VppTokenAccountType = null
   ): VppToken = {
     val __obj = js.Dynamic.literal()
-    if (appleId != null) __obj.updateDynamic("appleId")(appleId)
-    if (!js.isUndefined(automaticallyUpdateApps)) __obj.updateDynamic("automaticallyUpdateApps")(automaticallyUpdateApps)
-    if (countryOrRegion != null) __obj.updateDynamic("countryOrRegion")(countryOrRegion)
-    if (expirationDateTime != null) __obj.updateDynamic("expirationDateTime")(expirationDateTime)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime)
-    if (lastSyncDateTime != null) __obj.updateDynamic("lastSyncDateTime")(lastSyncDateTime)
-    if (lastSyncStatus != null) __obj.updateDynamic("lastSyncStatus")(lastSyncStatus)
-    if (organizationName != null) __obj.updateDynamic("organizationName")(organizationName)
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (token != null) __obj.updateDynamic("token")(token)
-    if (vppTokenAccountType != null) __obj.updateDynamic("vppTokenAccountType")(vppTokenAccountType)
+    if (appleId != null) __obj.updateDynamic("appleId")(appleId.asInstanceOf[js.Any])
+    if (!js.isUndefined(automaticallyUpdateApps)) __obj.updateDynamic("automaticallyUpdateApps")(automaticallyUpdateApps.asInstanceOf[js.Any])
+    if (countryOrRegion != null) __obj.updateDynamic("countryOrRegion")(countryOrRegion.asInstanceOf[js.Any])
+    if (expirationDateTime != null) __obj.updateDynamic("expirationDateTime")(expirationDateTime.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
+    if (lastSyncDateTime != null) __obj.updateDynamic("lastSyncDateTime")(lastSyncDateTime.asInstanceOf[js.Any])
+    if (lastSyncStatus != null) __obj.updateDynamic("lastSyncStatus")(lastSyncStatus.asInstanceOf[js.Any])
+    if (organizationName != null) __obj.updateDynamic("organizationName")(organizationName.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
+    if (vppTokenAccountType != null) __obj.updateDynamic("vppTokenAccountType")(vppTokenAccountType.asInstanceOf[js.Any])
     __obj.asInstanceOf[VppToken]
   }
 }

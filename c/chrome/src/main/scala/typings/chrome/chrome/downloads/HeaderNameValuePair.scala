@@ -14,7 +14,7 @@ trait HeaderNameValuePair extends js.Object {
 object HeaderNameValuePair {
   @scala.inline
   def apply(name: String, value: String): HeaderNameValuePair = {
-    val __obj = js.Dynamic.literal(name = name, value = value)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HeaderNameValuePair]
   }

@@ -28,12 +28,12 @@ object GridParams {
     seedBeanInstances: StringDictionary[js.Any] = null
   ): GridParams = {
     val __obj = js.Dynamic.literal()
-    if ($compile != null) __obj.updateDynamic("$compile")($compile)
-    if ($scope != null) __obj.updateDynamic("$scope")($scope)
-    if (frameworkFactory != null) __obj.updateDynamic("frameworkFactory")(frameworkFactory)
-    if (globalEventListener != null) __obj.updateDynamic("globalEventListener")(globalEventListener)
-    if (quickFilterOnScope != null) __obj.updateDynamic("quickFilterOnScope")(quickFilterOnScope)
-    if (seedBeanInstances != null) __obj.updateDynamic("seedBeanInstances")(seedBeanInstances)
+    if ($compile != null) __obj.updateDynamic("$compile")($compile.asInstanceOf[js.Any])
+    if ($scope != null) __obj.updateDynamic("$scope")($scope.asInstanceOf[js.Any])
+    if (frameworkFactory != null) __obj.updateDynamic("frameworkFactory")(frameworkFactory.asInstanceOf[js.Any])
+    if (globalEventListener != null) __obj.updateDynamic("globalEventListener")(globalEventListener.asInstanceOf[js.Any])
+    if (quickFilterOnScope != null) __obj.updateDynamic("quickFilterOnScope")(quickFilterOnScope.asInstanceOf[js.Any])
+    if (seedBeanInstances != null) __obj.updateDynamic("seedBeanInstances")(seedBeanInstances.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridParams]
   }
 }

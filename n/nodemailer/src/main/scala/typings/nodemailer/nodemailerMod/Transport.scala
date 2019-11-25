@@ -31,10 +31,10 @@ object Transport {
     mailer: ^ = null,
     verify: (js.Function1[/* callback */ js.Function2[/* err */ Error | Null, `true`, Unit], Unit]) with js.Function0[js.Promise[`true`]] = null
   ): Transport = {
-    val __obj = js.Dynamic.literal(name = name, send = js.Any.fromFunction2(send), version = version)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], send = js.Any.fromFunction2(send), version = version.asInstanceOf[js.Any])
     if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction0(close))
-    if (mailer != null) __obj.updateDynamic("mailer")(mailer)
-    if (verify != null) __obj.updateDynamic("verify")(verify)
+    if (mailer != null) __obj.updateDynamic("mailer")(mailer.asInstanceOf[js.Any])
+    if (verify != null) __obj.updateDynamic("verify")(verify.asInstanceOf[js.Any])
     __obj.asInstanceOf[Transport]
   }
 }

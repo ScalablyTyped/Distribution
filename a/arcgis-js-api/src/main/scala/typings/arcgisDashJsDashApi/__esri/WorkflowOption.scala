@@ -30,7 +30,7 @@ object WorkflowOption {
     returnCode: Double,
     steps: js.Array[WorkflowStepInfo]
   ): WorkflowOption = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), returnCode = returnCode, steps = steps)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), returnCode = returnCode.asInstanceOf[js.Any], steps = steps.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WorkflowOption]
   }

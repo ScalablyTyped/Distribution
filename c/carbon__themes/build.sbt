@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "carbon__themes"
-version := "0.0-dt-20190206Z-821d4d"
+version := "0.0-dt-20190206Z-be11da"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -21,10 +21,10 @@ object PartialClassNameMapToggleButtonGroupClassKey {
     root: String = null
   ): PartialClassNameMapToggleButtonGroupClassKey = {
     val __obj = js.Dynamic.literal()
-    if (grouped != null) __obj.updateDynamic("grouped")(grouped)
-    if (groupedSizeLarge != null) __obj.updateDynamic("groupedSizeLarge")(groupedSizeLarge)
-    if (groupedSizeSmall != null) __obj.updateDynamic("groupedSizeSmall")(groupedSizeSmall)
-    if (root != null) __obj.updateDynamic("root")(root)
+    if (grouped != null) __obj.updateDynamic("grouped")(grouped.asInstanceOf[js.Any])
+    if (groupedSizeLarge != null) __obj.updateDynamic("groupedSizeLarge")(groupedSizeLarge.asInstanceOf[js.Any])
+    if (groupedSizeSmall != null) __obj.updateDynamic("groupedSizeSmall")(groupedSizeSmall.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapToggleButtonGroupClassKey]
   }
 }

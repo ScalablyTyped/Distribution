@@ -31,9 +31,9 @@ object BaseElevationLayerFetchTileOptions {
     noDataValue: Int | Double = null,
     signal: AbortSignal = null
   ): BaseElevationLayerFetchTileOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (noDataValue != null) __obj.updateDynamic("noDataValue")(noDataValue.asInstanceOf[js.Any])
-    if (signal != null) __obj.updateDynamic("signal")(signal)
+    if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseElevationLayerFetchTileOptions]
   }
 }

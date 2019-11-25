@@ -18,8 +18,8 @@ object DeleteDuplicatesRequest {
   @scala.inline
   def apply(comparisonColumns: js.Array[DimensionRange] = null, range: GridRange = null): DeleteDuplicatesRequest = {
     val __obj = js.Dynamic.literal()
-    if (comparisonColumns != null) __obj.updateDynamic("comparisonColumns")(comparisonColumns)
-    if (range != null) __obj.updateDynamic("range")(range)
+    if (comparisonColumns != null) __obj.updateDynamic("comparisonColumns")(comparisonColumns.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDuplicatesRequest]
   }
 }

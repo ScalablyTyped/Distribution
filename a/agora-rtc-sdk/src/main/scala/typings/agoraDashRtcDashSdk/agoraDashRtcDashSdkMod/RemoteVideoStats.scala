@@ -62,18 +62,18 @@ object RemoteVideoStats {
     TransportDelay: String = null
   ): RemoteVideoStats = {
     val __obj = js.Dynamic.literal()
-    if (End2EndDelay != null) __obj.updateDynamic("End2EndDelay")(End2EndDelay)
-    if (MuteState != null) __obj.updateDynamic("MuteState")(MuteState)
-    if (PacketLossRate != null) __obj.updateDynamic("PacketLossRate")(PacketLossRate)
-    if (RecvBitrate != null) __obj.updateDynamic("RecvBitrate")(RecvBitrate)
-    if (RecvResolutionHeight != null) __obj.updateDynamic("RecvResolutionHeight")(RecvResolutionHeight)
-    if (RecvResolutionWidth != null) __obj.updateDynamic("RecvResolutionWidth")(RecvResolutionWidth)
-    if (RenderFrameRate != null) __obj.updateDynamic("RenderFrameRate")(RenderFrameRate)
-    if (RenderResolutionHeight != null) __obj.updateDynamic("RenderResolutionHeight")(RenderResolutionHeight)
-    if (RenderResolutionWidth != null) __obj.updateDynamic("RenderResolutionWidth")(RenderResolutionWidth)
-    if (TotalFreezeTime != null) __obj.updateDynamic("TotalFreezeTime")(TotalFreezeTime)
-    if (TotalPlayDuration != null) __obj.updateDynamic("TotalPlayDuration")(TotalPlayDuration)
-    if (TransportDelay != null) __obj.updateDynamic("TransportDelay")(TransportDelay)
+    if (End2EndDelay != null) __obj.updateDynamic("End2EndDelay")(End2EndDelay.asInstanceOf[js.Any])
+    if (MuteState != null) __obj.updateDynamic("MuteState")(MuteState.asInstanceOf[js.Any])
+    if (PacketLossRate != null) __obj.updateDynamic("PacketLossRate")(PacketLossRate.asInstanceOf[js.Any])
+    if (RecvBitrate != null) __obj.updateDynamic("RecvBitrate")(RecvBitrate.asInstanceOf[js.Any])
+    if (RecvResolutionHeight != null) __obj.updateDynamic("RecvResolutionHeight")(RecvResolutionHeight.asInstanceOf[js.Any])
+    if (RecvResolutionWidth != null) __obj.updateDynamic("RecvResolutionWidth")(RecvResolutionWidth.asInstanceOf[js.Any])
+    if (RenderFrameRate != null) __obj.updateDynamic("RenderFrameRate")(RenderFrameRate.asInstanceOf[js.Any])
+    if (RenderResolutionHeight != null) __obj.updateDynamic("RenderResolutionHeight")(RenderResolutionHeight.asInstanceOf[js.Any])
+    if (RenderResolutionWidth != null) __obj.updateDynamic("RenderResolutionWidth")(RenderResolutionWidth.asInstanceOf[js.Any])
+    if (TotalFreezeTime != null) __obj.updateDynamic("TotalFreezeTime")(TotalFreezeTime.asInstanceOf[js.Any])
+    if (TotalPlayDuration != null) __obj.updateDynamic("TotalPlayDuration")(TotalPlayDuration.asInstanceOf[js.Any])
+    if (TransportDelay != null) __obj.updateDynamic("TransportDelay")(TransportDelay.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteVideoStats]
   }
 }

@@ -35,7 +35,7 @@ object IFillOptions {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     if (offsetX != null) __obj.updateDynamic("offsetX")(offsetX.asInstanceOf[js.Any])
     if (offsetY != null) __obj.updateDynamic("offsetY")(offsetY.asInstanceOf[js.Any])
-    if (repeat != null) __obj.updateDynamic("repeat")(repeat)
+    if (repeat != null) __obj.updateDynamic("repeat")(repeat.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFillOptions]
   }
 }

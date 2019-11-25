@@ -13,13 +13,8 @@ trait Anon_Quantity extends js.Object {
 
 object Anon_Quantity {
   @scala.inline
-  def apply(
-    quantity: Double,
-    sides: Double,
-    toString: () => String,
-    transformations: js.Array[RollTransformation]
-  ): Anon_Quantity = {
-    val __obj = js.Dynamic.literal(quantity = quantity, sides = sides, toString = js.Any.fromFunction0(toString), transformations = transformations)
+  def apply(quantity: Double, sides: Double, transformations: js.Array[RollTransformation]): Anon_Quantity = {
+    val __obj = js.Dynamic.literal(quantity = quantity.asInstanceOf[js.Any], sides = sides.asInstanceOf[js.Any], transformations = transformations.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Quantity]
   }

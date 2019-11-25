@@ -12,7 +12,7 @@ object OpenStreetMapProviderOptionsResultLanguage {
   @scala.inline
   def apply(`accept-language`: String = null): OpenStreetMapProviderOptionsResultLanguage = {
     val __obj = js.Dynamic.literal()
-    if (`accept-language` != null) __obj.updateDynamic("accept-language")(`accept-language`)
+    if (`accept-language` != null) __obj.updateDynamic("accept-language")(`accept-language`.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenStreetMapProviderOptionsResultLanguage]
   }
 }

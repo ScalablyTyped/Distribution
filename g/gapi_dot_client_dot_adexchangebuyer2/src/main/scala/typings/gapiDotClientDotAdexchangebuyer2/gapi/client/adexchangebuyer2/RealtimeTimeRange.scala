@@ -13,7 +13,7 @@ object RealtimeTimeRange {
   @scala.inline
   def apply(startTimestamp: String = null): RealtimeTimeRange = {
     val __obj = js.Dynamic.literal()
-    if (startTimestamp != null) __obj.updateDynamic("startTimestamp")(startTimestamp)
+    if (startTimestamp != null) __obj.updateDynamic("startTimestamp")(startTimestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[RealtimeTimeRange]
   }
 }

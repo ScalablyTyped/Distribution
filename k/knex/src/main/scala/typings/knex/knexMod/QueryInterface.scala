@@ -207,11 +207,11 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   def andWhere[T /* <: String */](
     columnName: T,
     operator: ComparisionOperator,
-    value: /* import warning: ImportType.apply Failed type conversion: TRecord[T] */ js.Any
+    value: /* import warning: importer.ImportType#apply Failed type conversion: TRecord[T] */ js.Any
   ): QueryBuilder[TRecord, TResult] = js.native
   def andWhere[T /* <: String */](
     columnName: T,
-    value: /* import warning: ImportType.apply Failed type conversion: TRecord[T] */ js.Any
+    value: /* import warning: importer.ImportType#apply Failed type conversion: TRecord[T] */ js.Any
   ): QueryBuilder[TRecord, TResult] = js.native
   def andWhere[TResult2](sql: String, bindings: RawBinding*): QueryBuilder[TRecord, TResult2] = js.native
   def andWhere[TResult2](sql: String, bindings: js.Array[RawBinding]): QueryBuilder[TRecord, TResult2] = js.native
@@ -223,8 +223,8 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   def andWhereBetween[K /* <: String */](
     columnName: K,
     range: js.Tuple2[
-      /* import warning: ImportType.apply Failed type conversion: TRecord[K] */ js.Any, 
-      /* import warning: ImportType.apply Failed type conversion: TRecord[K] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: TRecord[K] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: TRecord[K] */ js.Any
     ]
   ): QueryBuilder[TRecord, TResult] = js.native
   def andWhereNot(callback: QueryCallback[_, js.Array[_]]): QueryBuilder[TRecord, TResult] = js.native
@@ -243,11 +243,11 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   def andWhereNot[T /* <: String */](
     columnName: T,
     operator: ComparisionOperator,
-    value: /* import warning: ImportType.apply Failed type conversion: TRecord[T] */ js.Any
+    value: /* import warning: importer.ImportType#apply Failed type conversion: TRecord[T] */ js.Any
   ): QueryBuilder[TRecord, TResult] = js.native
   def andWhereNot[T /* <: String */](
     columnName: T,
-    value: /* import warning: ImportType.apply Failed type conversion: TRecord[T] */ js.Any
+    value: /* import warning: importer.ImportType#apply Failed type conversion: TRecord[T] */ js.Any
   ): QueryBuilder[TRecord, TResult] = js.native
   def andWhereNot[TResult2](sql: String, bindings: RawBinding*): QueryBuilder[TRecord, TResult2] = js.native
   def andWhereNot[TResult2](sql: String, bindings: js.Array[RawBinding]): QueryBuilder[TRecord, TResult2] = js.native
@@ -259,8 +259,8 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   def andWhereNotBetween[K /* <: String */](
     columnName: K,
     range: js.Tuple2[
-      /* import warning: ImportType.apply Failed type conversion: TRecord[K] */ js.Any, 
-      /* import warning: ImportType.apply Failed type conversion: TRecord[K] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: TRecord[K] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: TRecord[K] */ js.Any
     ]
   ): QueryBuilder[TRecord, TResult] = js.native
   @JSName("andWhereNot")
@@ -534,17 +534,23 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   def havingBetween(columnName: String, values: js.Array[Value]): QueryBuilder[TRecord, TResult] = js.native
   def havingBetween[K /* <: String */](
     columnName: K,
-    values: js.Array[/* import warning: ImportType.apply Failed type conversion: TRecord[K] */ js.Any]
+    values: js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: TRecord[K] */ js.Any
+    ]
   ): QueryBuilder[TRecord, TResult] = js.native
   def havingIn(columnName: String, values: js.Array[Value]): QueryBuilder[TRecord, TResult] = js.native
   def havingIn[K /* <: String */](
     columnName: K,
-    values: js.Array[/* import warning: ImportType.apply Failed type conversion: TRecord[K] */ js.Any]
+    values: js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: TRecord[K] */ js.Any
+    ]
   ): QueryBuilder[TRecord, TResult] = js.native
   def havingNotBetween(columnName: String, values: js.Array[Value]): QueryBuilder[TRecord, TResult] = js.native
   def havingNotBetween[K /* <: String */](
     columnName: K,
-    values: js.Array[/* import warning: ImportType.apply Failed type conversion: TRecord[K] */ js.Any]
+    values: js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: TRecord[K] */ js.Any
+    ]
   ): QueryBuilder[TRecord, TResult] = js.native
   def havingRaw[TResult2](raw: Raw[TResult2]): QueryBuilder[TRecord, TResult2] = js.native
   def havingRaw[TResult2](sql: String, bindings: RawBinding*): QueryBuilder[TRecord, TResult2] = js.native
@@ -697,12 +703,16 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   def orHavingBetween(columnName: String, values: js.Array[Value]): QueryBuilder[TRecord, TResult] = js.native
   def orHavingBetween[K /* <: String */](
     columnName: K,
-    values: js.Array[/* import warning: ImportType.apply Failed type conversion: TRecord[K] */ js.Any]
+    values: js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: TRecord[K] */ js.Any
+    ]
   ): QueryBuilder[TRecord, TResult] = js.native
   def orHavingNotBetween(columnName: String, values: js.Array[Value]): QueryBuilder[TRecord, TResult] = js.native
   def orHavingNotBetween[K /* <: String */](
     columnName: K,
-    values: js.Array[/* import warning: ImportType.apply Failed type conversion: TRecord[K] */ js.Any]
+    values: js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: TRecord[K] */ js.Any
+    ]
   ): QueryBuilder[TRecord, TResult] = js.native
   def orHavingRaw[TResult2](raw: Raw[TResult2]): QueryBuilder[TRecord, TResult2] = js.native
   def orHavingRaw[TResult2](sql: String, bindings: RawBinding*): QueryBuilder[TRecord, TResult2] = js.native
@@ -724,11 +734,11 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   def orWhere[T /* <: String */](
     columnName: T,
     operator: ComparisionOperator,
-    value: /* import warning: ImportType.apply Failed type conversion: TRecord[T] */ js.Any
+    value: /* import warning: importer.ImportType#apply Failed type conversion: TRecord[T] */ js.Any
   ): QueryBuilder[TRecord, TResult] = js.native
   def orWhere[T /* <: String */](
     columnName: T,
-    value: /* import warning: ImportType.apply Failed type conversion: TRecord[T] */ js.Any
+    value: /* import warning: importer.ImportType#apply Failed type conversion: TRecord[T] */ js.Any
   ): QueryBuilder[TRecord, TResult] = js.native
   def orWhere[TResult2](sql: String, bindings: RawBinding*): QueryBuilder[TRecord, TResult2] = js.native
   def orWhere[TResult2](sql: String, bindings: js.Array[RawBinding]): QueryBuilder[TRecord, TResult2] = js.native
@@ -740,8 +750,8 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   def orWhereBetween[K /* <: String */](
     columnName: K,
     range: js.Tuple2[
-      /* import warning: ImportType.apply Failed type conversion: TRecord[K] */ js.Any, 
-      /* import warning: ImportType.apply Failed type conversion: TRecord[K] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: TRecord[K] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: TRecord[K] */ js.Any
     ]
   ): QueryBuilder[TRecord, TResult] = js.native
   def orWhereExists(callback: QueryCallback[_, js.Array[_]]): QueryBuilder[TRecord, TResult] = js.native
@@ -752,7 +762,9 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   def orWhereIn(columnNames: js.Array[String], values: QueryCallback[_, js.Array[_]]): QueryBuilder[TRecord, TResult] = js.native
   def orWhereIn[K /* <: String */](
     columnName: K,
-    values: js.Array[/* import warning: ImportType.apply Failed type conversion: TRecord[K] */ js.Any]
+    values: js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: TRecord[K] */ js.Any
+    ]
   ): QueryBuilder[TRecord, TResult] = js.native
   def orWhereIn[K /* <: String */](columnName: K, values: QueryCallback[_, js.Array[_]]): QueryBuilder[TRecord, TResult] = js.native
   def orWhereIn[TRecordInner, TResultInner](columnName: String, values: QueryBuilder[TRecordInner, TResultInner]): QueryBuilder[TRecord, TResult] = js.native
@@ -761,14 +773,16 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
     columnName: K,
     values: QueryBuilder[
       TRecordInner, 
-      /* import warning: ImportType.apply Failed type conversion: TRecord[K] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: TRecord[K] */ js.Any
     ]
   ): QueryBuilder[TRecord, TResult] = js.native
   @JSName("orWhereIn")
   def orWhereIn_K_String[K /* <: String */](
     columnNames: js.Array[K],
     values: js.Array[
-      js.Array[/* import warning: ImportType.apply Failed type conversion: TRecord[K] */ js.Any]
+      js.Array[
+        /* import warning: importer.ImportType#apply Failed type conversion: TRecord[K] */ js.Any
+      ]
     ]
   ): QueryBuilder[TRecord, TResult] = js.native
   @JSName("orWhereIn")
@@ -778,7 +792,7 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
     columnNames: js.Array[K],
     values: QueryBuilder[
       TRecordInner, 
-      /* import warning: ImportType.apply Failed type conversion: TRecord[K] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: TRecord[K] */ js.Any
     ]
   ): QueryBuilder[TRecord, TResult] = js.native
   def orWhereNot(callback: QueryCallback[_, js.Array[_]]): QueryBuilder[TRecord, TResult] = js.native
@@ -797,11 +811,11 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   def orWhereNot[T /* <: String */](
     columnName: T,
     operator: ComparisionOperator,
-    value: /* import warning: ImportType.apply Failed type conversion: TRecord[T] */ js.Any
+    value: /* import warning: importer.ImportType#apply Failed type conversion: TRecord[T] */ js.Any
   ): QueryBuilder[TRecord, TResult] = js.native
   def orWhereNot[T /* <: String */](
     columnName: T,
-    value: /* import warning: ImportType.apply Failed type conversion: TRecord[T] */ js.Any
+    value: /* import warning: importer.ImportType#apply Failed type conversion: TRecord[T] */ js.Any
   ): QueryBuilder[TRecord, TResult] = js.native
   def orWhereNot[TResult2](sql: String, bindings: RawBinding*): QueryBuilder[TRecord, TResult2] = js.native
   def orWhereNot[TResult2](sql: String, bindings: js.Array[RawBinding]): QueryBuilder[TRecord, TResult2] = js.native
@@ -813,8 +827,8 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   def orWhereNotBetween[K /* <: String */](
     columnName: K,
     range: js.Tuple2[
-      /* import warning: ImportType.apply Failed type conversion: TRecord[K] */ js.Any, 
-      /* import warning: ImportType.apply Failed type conversion: TRecord[K] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: TRecord[K] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: TRecord[K] */ js.Any
     ]
   ): QueryBuilder[TRecord, TResult] = js.native
   def orWhereNotExists(callback: QueryCallback[_, js.Array[_]]): QueryBuilder[TRecord, TResult] = js.native
@@ -825,7 +839,9 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   def orWhereNotIn(columnNames: js.Array[String], values: QueryCallback[_, js.Array[_]]): QueryBuilder[TRecord, TResult] = js.native
   def orWhereNotIn[K /* <: String */](
     columnName: K,
-    values: js.Array[/* import warning: ImportType.apply Failed type conversion: TRecord[K] */ js.Any]
+    values: js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: TRecord[K] */ js.Any
+    ]
   ): QueryBuilder[TRecord, TResult] = js.native
   def orWhereNotIn[K /* <: String */](columnName: K, values: QueryCallback[_, js.Array[_]]): QueryBuilder[TRecord, TResult] = js.native
   def orWhereNotIn[TRecordInner, TResultInner](columnName: String, values: QueryBuilder[TRecordInner, TResultInner]): QueryBuilder[TRecord, TResult] = js.native
@@ -834,14 +850,16 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
     columnName: K,
     values: QueryBuilder[
       TRecordInner, 
-      /* import warning: ImportType.apply Failed type conversion: TRecord[K] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: TRecord[K] */ js.Any
     ]
   ): QueryBuilder[TRecord, TResult] = js.native
   @JSName("orWhereNotIn")
   def orWhereNotIn_K_String[K /* <: String */](
     columnNames: js.Array[K],
     values: js.Array[
-      js.Array[/* import warning: ImportType.apply Failed type conversion: TRecord[K] */ js.Any]
+      js.Array[
+        /* import warning: importer.ImportType#apply Failed type conversion: TRecord[K] */ js.Any
+      ]
     ]
   ): QueryBuilder[TRecord, TResult] = js.native
   @JSName("orWhereNotIn")
@@ -851,7 +869,7 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
     columnNames: js.Array[K],
     values: QueryBuilder[
       TRecordInner, 
-      /* import warning: ImportType.apply Failed type conversion: TRecord[K] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: TRecord[K] */ js.Any
     ]
   ): QueryBuilder[TRecord, TResult] = js.native
   def orWhereNotNull(columnName: String): QueryBuilder[TRecord, TResult] = js.native
@@ -902,7 +920,9 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   def outerJoin[TJoinTargetRecord /* <: js.Object */, TRecord2 /* <: js.Object */, TResult2](tableName: TableDescriptor, raw: Raw[_]): QueryBuilder[TRecord2, TResult2] = js.native
   def pluck[K /* <: String */](column: K): QueryBuilder[
     TRecord, 
-    js.Array[/* import warning: ImportType.apply Failed type conversion: TRecord[K] */ js.Any]
+    js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: TRecord[K] */ js.Any
+    ]
   ] = js.native
   def pluck[TResult2 /* <: js.Object */](column: String): QueryBuilder[TRecord, TResult2] = js.native
   def returning(column: typings.knex.knexStrings.`*`): QueryBuilder[
@@ -1023,7 +1043,7 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   ] = js.native
   def update[K /* <: String */](
     columnName: K,
-    value: /* import warning: ImportType.apply Failed type conversion: TRecord[K] */ js.Any
+    value: /* import warning: importer.ImportType#apply Failed type conversion: TRecord[K] */ js.Any
   ): QueryBuilder[TRecord, Double] = js.native
   def update[TResult2](columnName: String, value: Value): QueryBuilder[TRecord, TResult2] = js.native
   def update[TResult2](columnName: String, value: Value, returning: String): QueryBuilder[TRecord, TResult2] = js.native
@@ -1033,12 +1053,12 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   def update[TKey /* <: String */, TResult2 /* <: js.Array[js.Object] */](data: MaybeArray[SafePartial[TRecord]], returning: js.Array[TKey]): QueryBuilder[TRecord, TResult2] = js.native
   def update[K1 /* <: StrKey[TRecord] */, K2 /* <: StrKey[TRecord] */, TResult2](
     columnName: K1,
-    value: /* import warning: ImportType.apply Failed type conversion: TRecord[K1] */ js.Any,
+    value: /* import warning: importer.ImportType#apply Failed type conversion: TRecord[K1] */ js.Any,
     returning: K1
   ): QueryBuilder[TRecord, TResult2] = js.native
   def update[K1 /* <: StrKey[TRecord] */, K2 /* <: StrKey[TRecord] */, TResult2](
     columnName: K1,
-    value: /* import warning: ImportType.apply Failed type conversion: TRecord[K1] */ js.Any,
+    value: /* import warning: importer.ImportType#apply Failed type conversion: TRecord[K1] */ js.Any,
     returning: js.Array[K1]
   ): QueryBuilder[TRecord, TResult2] = js.native
   @JSName("update")
@@ -1070,12 +1090,12 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   def where[T /* <: String */](
     columnName: T,
     operator: ComparisionOperator,
-    value: /* import warning: ImportType.apply Failed type conversion: TRecord[T] */ js.Any
+    value: /* import warning: importer.ImportType#apply Failed type conversion: TRecord[T] */ js.Any
   ): QueryBuilder[TRecord, TResult] = js.native
   // Wheres
   def where[T /* <: String */](
     columnName: T,
-    value: /* import warning: ImportType.apply Failed type conversion: TRecord[T] */ js.Any
+    value: /* import warning: importer.ImportType#apply Failed type conversion: TRecord[T] */ js.Any
   ): QueryBuilder[TRecord, TResult] = js.native
   // Wheres
   def where[TResult2](sql: String, bindings: RawBinding*): QueryBuilder[TRecord, TResult2] = js.native
@@ -1092,8 +1112,8 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   def whereBetween[K /* <: String */](
     columnName: K,
     range: js.Tuple2[
-      /* import warning: ImportType.apply Failed type conversion: TRecord[K] */ js.Any, 
-      /* import warning: ImportType.apply Failed type conversion: TRecord[K] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: TRecord[K] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: TRecord[K] */ js.Any
     ]
   ): QueryBuilder[TRecord, TResult] = js.native
   def whereExists(callback: QueryCallback[_, js.Array[_]]): QueryBuilder[TRecord, TResult] = js.native
@@ -1104,7 +1124,9 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   def whereIn(columnNames: js.Array[String], values: QueryCallback[_, js.Array[_]]): QueryBuilder[TRecord, TResult] = js.native
   def whereIn[K /* <: String */](
     columnName: K,
-    values: js.Array[/* import warning: ImportType.apply Failed type conversion: TRecord[K] */ js.Any]
+    values: js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: TRecord[K] */ js.Any
+    ]
   ): QueryBuilder[TRecord, TResult] = js.native
   def whereIn[K /* <: String */](columnName: K, values: QueryCallback[_, js.Array[_]]): QueryBuilder[TRecord, TResult] = js.native
   def whereIn[TRecordInner, TResultInner](columnName: String, values: QueryBuilder[TRecordInner, TResultInner]): QueryBuilder[TRecord, TResult] = js.native
@@ -1113,14 +1135,16 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
     columnName: K,
     values: QueryBuilder[
       TRecordInner, 
-      /* import warning: ImportType.apply Failed type conversion: TRecord[K] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: TRecord[K] */ js.Any
     ]
   ): QueryBuilder[TRecord, TResult] = js.native
   @JSName("whereIn")
   def whereIn_K_String[K /* <: String */](
     columnNames: js.Array[K],
     values: js.Array[
-      js.Array[/* import warning: ImportType.apply Failed type conversion: TRecord[K] */ js.Any]
+      js.Array[
+        /* import warning: importer.ImportType#apply Failed type conversion: TRecord[K] */ js.Any
+      ]
     ]
   ): QueryBuilder[TRecord, TResult] = js.native
   @JSName("whereIn")
@@ -1130,7 +1154,7 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
     columnNames: js.Array[K],
     values: QueryBuilder[
       TRecordInner, 
-      /* import warning: ImportType.apply Failed type conversion: TRecord[K] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: TRecord[K] */ js.Any
     ]
   ): QueryBuilder[TRecord, TResult] = js.native
   def whereNot(callback: QueryCallback[_, js.Array[_]]): QueryBuilder[TRecord, TResult] = js.native
@@ -1149,11 +1173,11 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   def whereNot[T /* <: String */](
     columnName: T,
     operator: ComparisionOperator,
-    value: /* import warning: ImportType.apply Failed type conversion: TRecord[T] */ js.Any
+    value: /* import warning: importer.ImportType#apply Failed type conversion: TRecord[T] */ js.Any
   ): QueryBuilder[TRecord, TResult] = js.native
   def whereNot[T /* <: String */](
     columnName: T,
-    value: /* import warning: ImportType.apply Failed type conversion: TRecord[T] */ js.Any
+    value: /* import warning: importer.ImportType#apply Failed type conversion: TRecord[T] */ js.Any
   ): QueryBuilder[TRecord, TResult] = js.native
   def whereNot[TResult2](sql: String, bindings: RawBinding*): QueryBuilder[TRecord, TResult2] = js.native
   def whereNot[TResult2](sql: String, bindings: js.Array[RawBinding]): QueryBuilder[TRecord, TResult2] = js.native
@@ -1165,8 +1189,8 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   def whereNotBetween[K /* <: String */](
     columnName: K,
     range: js.Tuple2[
-      /* import warning: ImportType.apply Failed type conversion: TRecord[K] */ js.Any, 
-      /* import warning: ImportType.apply Failed type conversion: TRecord[K] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: TRecord[K] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: TRecord[K] */ js.Any
     ]
   ): QueryBuilder[TRecord, TResult] = js.native
   def whereNotExists(callback: QueryCallback[_, js.Array[_]]): QueryBuilder[TRecord, TResult] = js.native
@@ -1177,7 +1201,9 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   def whereNotIn(columnNames: js.Array[String], values: QueryCallback[_, js.Array[_]]): QueryBuilder[TRecord, TResult] = js.native
   def whereNotIn[K /* <: String */](
     columnName: K,
-    values: js.Array[/* import warning: ImportType.apply Failed type conversion: TRecord[K] */ js.Any]
+    values: js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: TRecord[K] */ js.Any
+    ]
   ): QueryBuilder[TRecord, TResult] = js.native
   def whereNotIn[K /* <: String */](columnName: K, values: QueryCallback[_, js.Array[_]]): QueryBuilder[TRecord, TResult] = js.native
   def whereNotIn[TRecordInner, TResultInner](columnName: String, values: QueryBuilder[TRecordInner, TResultInner]): QueryBuilder[TRecord, TResult] = js.native
@@ -1186,14 +1212,16 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
     columnName: K,
     values: QueryBuilder[
       TRecordInner, 
-      /* import warning: ImportType.apply Failed type conversion: TRecord[K] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: TRecord[K] */ js.Any
     ]
   ): QueryBuilder[TRecord, TResult] = js.native
   @JSName("whereNotIn")
   def whereNotIn_K_String[K /* <: String */](
     columnNames: js.Array[K],
     values: js.Array[
-      js.Array[/* import warning: ImportType.apply Failed type conversion: TRecord[K] */ js.Any]
+      js.Array[
+        /* import warning: importer.ImportType#apply Failed type conversion: TRecord[K] */ js.Any
+      ]
     ]
   ): QueryBuilder[TRecord, TResult] = js.native
   @JSName("whereNotIn")
@@ -1203,7 +1231,7 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
     columnNames: js.Array[K],
     values: QueryBuilder[
       TRecordInner, 
-      /* import warning: ImportType.apply Failed type conversion: TRecord[K] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: TRecord[K] */ js.Any
     ]
   ): QueryBuilder[TRecord, TResult] = js.native
   def whereNotNull(columnName: String): QueryBuilder[TRecord, TResult] = js.native

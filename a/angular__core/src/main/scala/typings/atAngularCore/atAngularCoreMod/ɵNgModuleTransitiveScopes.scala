@@ -14,8 +14,8 @@ trait ɵNgModuleTransitiveScopes extends js.Object {
 object ɵNgModuleTransitiveScopes {
   @scala.inline
   def apply(compilation: Anon_Directives, exported: Anon_Directives, schemas: js.Array[SchemaMetadata] = null): ɵNgModuleTransitiveScopes = {
-    val __obj = js.Dynamic.literal(compilation = compilation, exported = exported)
-    if (schemas != null) __obj.updateDynamic("schemas")(schemas)
+    val __obj = js.Dynamic.literal(compilation = compilation.asInstanceOf[js.Any], exported = exported.asInstanceOf[js.Any])
+    if (schemas != null) __obj.updateDynamic("schemas")(schemas.asInstanceOf[js.Any])
     __obj.asInstanceOf[ɵNgModuleTransitiveScopes]
   }
 }

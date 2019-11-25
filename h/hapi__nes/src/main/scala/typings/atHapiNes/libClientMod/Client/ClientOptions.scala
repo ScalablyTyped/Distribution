@@ -14,7 +14,7 @@ object ClientOptions {
   def apply(timeout: Double | Boolean = null, ws: js.Any = null): ClientOptions = {
     val __obj = js.Dynamic.literal()
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (ws != null) __obj.updateDynamic("ws")(ws)
+    if (ws != null) __obj.updateDynamic("ws")(ws.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientOptions]
   }
 }

@@ -15,7 +15,7 @@ object IRequestShortcutConfig {
   @scala.inline
   def apply(ignoreLoadingBar: js.UndefOr[Boolean] = js.undefined): IRequestShortcutConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ignoreLoadingBar)) __obj.updateDynamic("ignoreLoadingBar")(ignoreLoadingBar)
+    if (!js.isUndefined(ignoreLoadingBar)) __obj.updateDynamic("ignoreLoadingBar")(ignoreLoadingBar.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRequestShortcutConfig]
   }
 }

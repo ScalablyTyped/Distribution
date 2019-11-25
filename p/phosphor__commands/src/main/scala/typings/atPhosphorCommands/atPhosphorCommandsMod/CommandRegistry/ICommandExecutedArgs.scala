@@ -26,7 +26,7 @@ trait ICommandExecutedArgs extends js.Object {
 object ICommandExecutedArgs {
   @scala.inline
   def apply(args: ReadonlyJSONObject, id: String, result: js.Promise[_]): ICommandExecutedArgs = {
-    val __obj = js.Dynamic.literal(args = args, id = id, result = result)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ICommandExecutedArgs]
   }

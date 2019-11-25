@@ -36,12 +36,12 @@ trait Component extends js.Object {
   /**
   		 * selector  使用选择器选择组件实例节点，返回匹配到的全部组件实例对象组成的数组
   		 */
-  def selectAllComponents(selector: String): js.Array[Component] = js.native
+  def selectAllComponents(selector: String): js.Array[typings.aliDashApp.my.Component] = js.native
   /**
   		 * 使用选择器选择组件实例节点
   		 * 返回匹配到的第一个组件实例对象
   		 */
-  def selectComponent(selector: String): Component = js.native
+  def selectComponent(selector: String): typings.aliDashApp.my.Component = js.native
   /**
   		 * 将数据从逻辑层发送到视图层，同时改变对应的 this.data 的值
   		 * 1. 直接修改 this.data 而不调用 this.setData 是无法改变页面的状态的，还会造成数据不一致。

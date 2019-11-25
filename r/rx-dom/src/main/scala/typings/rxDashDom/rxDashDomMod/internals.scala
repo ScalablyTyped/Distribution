@@ -3,7 +3,6 @@ package typings.rxDashDom.rxDashDomMod
 import typings.rxDashCore.Rx.IDisposable
 import typings.rxDashLite.Anon_GetDisposable
 import typings.rxDashLite.Rx.IScheduler
-import typings.rxDashLite.Rx.Observable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,7 +35,7 @@ object internals extends js.Object {
     ) = this()
   }
   
-  def addRef[T](xs: Observable[T], r: Anon_GetDisposable): Observable[T] = js.native
+  def addRef[T](xs: typings.rxDashLite.Rx.Observable[T], r: Anon_GetDisposable): typings.rxDashLite.Rx.Observable[T] = js.native
   def isEqual(left: js.Any, right: js.Any): Boolean = js.native
   /* static members */
   @js.native

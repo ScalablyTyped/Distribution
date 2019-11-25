@@ -12,7 +12,7 @@ trait Anon_Duration extends js.Object {
 object Anon_Duration {
   @scala.inline
   def apply(duration: Double, redraw: Boolean): Anon_Duration = {
-    val __obj = js.Dynamic.literal(duration = duration, redraw = redraw)
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], redraw = redraw.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Duration]
   }

@@ -28,13 +28,13 @@ object Anon_Dimensions {
     show: Property = null
   ): Anon_Dimensions = {
     val __obj = js.Dynamic.literal()
-    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions)
-    if (fill != null) __obj.updateDynamic("fill")(fill)
-    if (material != null) __obj.updateDynamic("material")(material)
-    if (outline != null) __obj.updateDynamic("outline")(outline)
-    if (outlineColor != null) __obj.updateDynamic("outlineColor")(outlineColor)
-    if (outlineWidth != null) __obj.updateDynamic("outlineWidth")(outlineWidth)
-    if (show != null) __obj.updateDynamic("show")(show)
+    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions.asInstanceOf[js.Any])
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    if (material != null) __obj.updateDynamic("material")(material.asInstanceOf[js.Any])
+    if (outline != null) __obj.updateDynamic("outline")(outline.asInstanceOf[js.Any])
+    if (outlineColor != null) __obj.updateDynamic("outlineColor")(outlineColor.asInstanceOf[js.Any])
+    if (outlineWidth != null) __obj.updateDynamic("outlineWidth")(outlineWidth.asInstanceOf[js.Any])
+    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Dimensions]
   }
 }

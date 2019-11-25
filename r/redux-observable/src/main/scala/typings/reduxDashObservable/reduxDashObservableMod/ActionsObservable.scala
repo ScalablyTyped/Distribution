@@ -17,7 +17,7 @@ class ActionsObservable[T /* <: Action[_] */] protected () extends Observable[T]
   @JSName("lift")
   def lift_R_ActionWildcard_ActionsObservable[R /* <: Action[_] */](operator: Operator[T, R]): ActionsObservable[R] = js.native
   @JSName("ofType")
-  def ofType_type[R /* <: T */](key: (/* import warning: ImportType.apply Failed type conversion: R['type'] */ js.Any)*): ActionsObservable[R] = js.native
+  def ofType_type[R /* <: T */](key: (/* import warning: importer.ImportType#apply Failed type conversion: R['type'] */ js.Any)*): ActionsObservable[R] = js.native
 }
 
 /* static members */

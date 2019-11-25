@@ -26,12 +26,12 @@ object MacroOpts {
     template: Template = null
   ): MacroOpts = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
     if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
-    if (cssData != null) __obj.updateDynamic("cssData")(cssData)
-    if (cssId != null) __obj.updateDynamic("cssId")(cssId)
-    if (!js.isUndefined(noCssTransform)) __obj.updateDynamic("noCssTransform")(noCssTransform)
-    if (partials != null) __obj.updateDynamic("partials")(partials)
+    if (cssData != null) __obj.updateDynamic("cssData")(cssData.asInstanceOf[js.Any])
+    if (cssId != null) __obj.updateDynamic("cssId")(cssId.asInstanceOf[js.Any])
+    if (!js.isUndefined(noCssTransform)) __obj.updateDynamic("noCssTransform")(noCssTransform.asInstanceOf[js.Any])
+    if (partials != null) __obj.updateDynamic("partials")(partials.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     __obj.asInstanceOf[MacroOpts]
   }

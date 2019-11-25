@@ -13,8 +13,8 @@ object Anon_AriaFocusSkipLink {
   @scala.inline
   def apply(ariaFocusSkipLink: String = null, labelCancel: String = null): Anon_AriaFocusSkipLink = {
     val __obj = js.Dynamic.literal()
-    if (ariaFocusSkipLink != null) __obj.updateDynamic("ariaFocusSkipLink")(ariaFocusSkipLink)
-    if (labelCancel != null) __obj.updateDynamic("labelCancel")(labelCancel)
+    if (ariaFocusSkipLink != null) __obj.updateDynamic("ariaFocusSkipLink")(ariaFocusSkipLink.asInstanceOf[js.Any])
+    if (labelCancel != null) __obj.updateDynamic("labelCancel")(labelCancel.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AriaFocusSkipLink]
   }
 }

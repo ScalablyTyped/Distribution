@@ -18,7 +18,7 @@ trait Anon_Cancel extends js.Object {
 object Anon_Cancel {
   @scala.inline
   def apply(cancel: Boolean, confirm: Boolean): Anon_Cancel = {
-    val __obj = js.Dynamic.literal(cancel = cancel, confirm = confirm)
+    val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], confirm = confirm.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Cancel]
   }

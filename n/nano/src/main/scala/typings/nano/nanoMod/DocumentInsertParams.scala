@@ -22,9 +22,9 @@ object DocumentInsertParams {
   @scala.inline
   def apply(batch: ok = null, new_edits: js.UndefOr[Boolean] = js.undefined, rev: String = null): DocumentInsertParams = {
     val __obj = js.Dynamic.literal()
-    if (batch != null) __obj.updateDynamic("batch")(batch)
-    if (!js.isUndefined(new_edits)) __obj.updateDynamic("new_edits")(new_edits)
-    if (rev != null) __obj.updateDynamic("rev")(rev)
+    if (batch != null) __obj.updateDynamic("batch")(batch.asInstanceOf[js.Any])
+    if (!js.isUndefined(new_edits)) __obj.updateDynamic("new_edits")(new_edits.asInstanceOf[js.Any])
+    if (rev != null) __obj.updateDynamic("rev")(rev.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentInsertParams]
   }
 }

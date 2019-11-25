@@ -19,8 +19,8 @@ object _BranchInfo {
   @scala.inline
   def apply(branchName: String = null, commitId: String = null): _BranchInfo = {
     val __obj = js.Dynamic.literal()
-    if (branchName != null) __obj.updateDynamic("branchName")(branchName)
-    if (commitId != null) __obj.updateDynamic("commitId")(commitId)
+    if (branchName != null) __obj.updateDynamic("branchName")(branchName.asInstanceOf[js.Any])
+    if (commitId != null) __obj.updateDynamic("commitId")(commitId.asInstanceOf[js.Any])
     __obj.asInstanceOf[_BranchInfo]
   }
 }

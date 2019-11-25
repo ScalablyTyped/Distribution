@@ -19,9 +19,9 @@ object Anon_Arialive {
     message: String,
     clearOnUnmount: js.UndefOr[Boolean] = js.undefined
   ): Anon_Arialive = {
-    val __obj = js.Dynamic.literal(message = message)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.updateDynamic("aria-live")(`aria-live`.asInstanceOf[js.Any])
-    if (!js.isUndefined(clearOnUnmount)) __obj.updateDynamic("clearOnUnmount")(clearOnUnmount)
+    if (!js.isUndefined(clearOnUnmount)) __obj.updateDynamic("clearOnUnmount")(clearOnUnmount.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Arialive]
   }
 }

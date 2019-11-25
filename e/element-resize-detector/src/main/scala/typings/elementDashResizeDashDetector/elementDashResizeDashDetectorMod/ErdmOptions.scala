@@ -46,10 +46,10 @@ object ErdmOptions {
     strategy: scroll | `object` = null
   ): ErdmOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(callOnAdd)) __obj.updateDynamic("callOnAdd")(callOnAdd)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (idHandler != null) __obj.updateDynamic("idHandler")(idHandler)
-    if (reporter != null) __obj.updateDynamic("reporter")(reporter)
+    if (!js.isUndefined(callOnAdd)) __obj.updateDynamic("callOnAdd")(callOnAdd.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (idHandler != null) __obj.updateDynamic("idHandler")(idHandler.asInstanceOf[js.Any])
+    if (reporter != null) __obj.updateDynamic("reporter")(reporter.asInstanceOf[js.Any])
     if (strategy != null) __obj.updateDynamic("strategy")(strategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErdmOptions]
   }

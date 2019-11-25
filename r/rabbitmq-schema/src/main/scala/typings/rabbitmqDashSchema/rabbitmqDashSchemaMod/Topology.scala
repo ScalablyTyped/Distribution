@@ -12,7 +12,7 @@ object Topology {
   @scala.inline
   def apply(options: js.Object = null): Topology = {
     val __obj = js.Dynamic.literal()
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[Topology]
   }
 }

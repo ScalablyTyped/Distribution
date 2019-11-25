@@ -38,7 +38,7 @@ object TypeofcontextualTip {
     remove: () => Unit,
     set: ContextualTip => Unit
   ): TypeofcontextualTip = {
-    val __obj = js.Dynamic.literal(onButtonClicked = onButtonClicked, onLinkClicked = onLinkClicked, remove = js.Any.fromFunction0(remove), set = js.Any.fromFunction1(set))
+    val __obj = js.Dynamic.literal(onButtonClicked = onButtonClicked.asInstanceOf[js.Any], onLinkClicked = onLinkClicked.asInstanceOf[js.Any], remove = js.Any.fromFunction0(remove), set = js.Any.fromFunction1(set))
   
     __obj.asInstanceOf[TypeofcontextualTip]
   }

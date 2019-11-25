@@ -19,7 +19,7 @@ object INavOptions {
   @scala.inline
   def apply(hard: js.UndefOr[Boolean] = js.undefined): INavOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hard)) __obj.updateDynamic("hard")(hard)
+    if (!js.isUndefined(hard)) __obj.updateDynamic("hard")(hard.asInstanceOf[js.Any])
     __obj.asInstanceOf[INavOptions]
   }
 }

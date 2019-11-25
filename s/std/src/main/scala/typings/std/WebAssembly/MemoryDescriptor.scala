@@ -12,7 +12,7 @@ trait MemoryDescriptor extends js.Object {
 object MemoryDescriptor {
   @scala.inline
   def apply(initial: Double, maximum: Int | Double = null): MemoryDescriptor = {
-    val __obj = js.Dynamic.literal(initial = initial)
+    val __obj = js.Dynamic.literal(initial = initial.asInstanceOf[js.Any])
     if (maximum != null) __obj.updateDynamic("maximum")(maximum.asInstanceOf[js.Any])
     __obj.asInstanceOf[MemoryDescriptor]
   }

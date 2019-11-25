@@ -35,10 +35,10 @@ object IWebSocketConfigOptions {
     if (binaryType != null) __obj.updateDynamic("binaryType")(binaryType.asInstanceOf[js.Any])
     if (initialTimeout != null) __obj.updateDynamic("initialTimeout")(initialTimeout.asInstanceOf[js.Any])
     if (maxTimeout != null) __obj.updateDynamic("maxTimeout")(maxTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(reconnectIfNotNormalClose)) __obj.updateDynamic("reconnectIfNotNormalClose")(reconnectIfNotNormalClose)
-    if (!js.isUndefined(rootScopeFailOver)) __obj.updateDynamic("rootScopeFailOver")(rootScopeFailOver)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
-    if (!js.isUndefined(useApplyAsync)) __obj.updateDynamic("useApplyAsync")(useApplyAsync)
+    if (!js.isUndefined(reconnectIfNotNormalClose)) __obj.updateDynamic("reconnectIfNotNormalClose")(reconnectIfNotNormalClose.asInstanceOf[js.Any])
+    if (!js.isUndefined(rootScopeFailOver)) __obj.updateDynamic("rootScopeFailOver")(rootScopeFailOver.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (!js.isUndefined(useApplyAsync)) __obj.updateDynamic("useApplyAsync")(useApplyAsync.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWebSocketConfigOptions]
   }
 }

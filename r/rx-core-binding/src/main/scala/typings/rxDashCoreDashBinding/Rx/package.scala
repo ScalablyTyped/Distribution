@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object Rx {
-  type AsyncSubject[T] = ISubject[T]
-  type ReplaySubject[T] = ISubject[T]
+  type AsyncSubject[T] = Subject[T]
+  type ReplaySubject[T] = Subject[T]
   type Subject[T] = ISubject[T]
 }

@@ -12,8 +12,8 @@ trait PatchOptions extends js.Object {
 object PatchOptions {
   @scala.inline
   def apply(enabled: Boolean, version: String = null): PatchOptions = {
-    val __obj = js.Dynamic.literal(enabled = enabled)
-    if (version != null) __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[PatchOptions]
   }
 }

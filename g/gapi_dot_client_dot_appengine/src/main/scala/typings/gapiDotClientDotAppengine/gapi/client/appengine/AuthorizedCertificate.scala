@@ -47,14 +47,14 @@ object AuthorizedCertificate {
     visibleDomainMappings: js.Array[String] = null
   ): AuthorizedCertificate = {
     val __obj = js.Dynamic.literal()
-    if (certificateRawData != null) __obj.updateDynamic("certificateRawData")(certificateRawData)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (certificateRawData != null) __obj.updateDynamic("certificateRawData")(certificateRawData.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (domainMappingsCount != null) __obj.updateDynamic("domainMappingsCount")(domainMappingsCount.asInstanceOf[js.Any])
-    if (domainNames != null) __obj.updateDynamic("domainNames")(domainNames)
-    if (expireTime != null) __obj.updateDynamic("expireTime")(expireTime)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (visibleDomainMappings != null) __obj.updateDynamic("visibleDomainMappings")(visibleDomainMappings)
+    if (domainNames != null) __obj.updateDynamic("domainNames")(domainNames.asInstanceOf[js.Any])
+    if (expireTime != null) __obj.updateDynamic("expireTime")(expireTime.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (visibleDomainMappings != null) __obj.updateDynamic("visibleDomainMappings")(visibleDomainMappings.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthorizedCertificate]
   }
 }

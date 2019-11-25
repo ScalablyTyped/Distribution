@@ -13,7 +13,7 @@ trait Anon_Arity[Fn /* <: Handler */] extends js.Object {
 object Anon_Arity {
   @scala.inline
   def apply[Fn /* <: Handler */](arity: Double, fn: Fn): Anon_Arity[Fn] = {
-    val __obj = js.Dynamic.literal(arity = arity, fn = fn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(arity = arity.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Arity[Fn]]
   }

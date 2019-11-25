@@ -22,9 +22,9 @@ object Anon_DataExecutioncount {
     execution_count: Int | Double = null,
     transient: Anon_Displayid = null
   ): Anon_DataExecutioncount = {
-    val __obj = js.Dynamic.literal(data = data, metadata = metadata)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
     if (execution_count != null) __obj.updateDynamic("execution_count")(execution_count.asInstanceOf[js.Any])
-    if (transient != null) __obj.updateDynamic("transient")(transient)
+    if (transient != null) __obj.updateDynamic("transient")(transient.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DataExecutioncount]
   }
 }

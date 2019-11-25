@@ -22,8 +22,8 @@ trait GetBranchOutput extends OutputTypesUnion {
 object GetBranchOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, branch: _UnmarshalledBranchInfo = null): GetBranchOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (branch != null) __obj.updateDynamic("branch")(branch)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (branch != null) __obj.updateDynamic("branch")(branch.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBranchOutput]
   }
 }

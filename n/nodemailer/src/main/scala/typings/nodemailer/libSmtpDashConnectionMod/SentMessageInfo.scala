@@ -32,8 +32,8 @@ object SentMessageInfo {
     response: String,
     rejectedErrors: js.Array[SMTPError] = null
   ): SentMessageInfo = {
-    val __obj = js.Dynamic.literal(accepted = accepted, envelopeTime = envelopeTime, messageSize = messageSize, messageTime = messageTime, rejected = rejected, response = response)
-    if (rejectedErrors != null) __obj.updateDynamic("rejectedErrors")(rejectedErrors)
+    val __obj = js.Dynamic.literal(accepted = accepted.asInstanceOf[js.Any], envelopeTime = envelopeTime.asInstanceOf[js.Any], messageSize = messageSize.asInstanceOf[js.Any], messageTime = messageTime.asInstanceOf[js.Any], rejected = rejected.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
+    if (rejectedErrors != null) __obj.updateDynamic("rejectedErrors")(rejectedErrors.asInstanceOf[js.Any])
     __obj.asInstanceOf[SentMessageInfo]
   }
 }

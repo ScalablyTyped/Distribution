@@ -27,8 +27,8 @@ object MetricRule {
   @scala.inline
   def apply(metricCosts: Record[String, String] = null, selector: String = null): MetricRule = {
     val __obj = js.Dynamic.literal()
-    if (metricCosts != null) __obj.updateDynamic("metricCosts")(metricCosts)
-    if (selector != null) __obj.updateDynamic("selector")(selector)
+    if (metricCosts != null) __obj.updateDynamic("metricCosts")(metricCosts.asInstanceOf[js.Any])
+    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricRule]
   }
 }

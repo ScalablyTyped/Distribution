@@ -28,7 +28,7 @@ trait IonInfiniteScroll extends js.Object {
 object IonInfiniteScroll {
   @scala.inline
   def apply(complete: () => js.Promise[Unit], disabled: Boolean, position: top | bottom, threshold: String): IonInfiniteScroll = {
-    val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete), disabled = disabled, position = position.asInstanceOf[js.Any], threshold = threshold)
+    val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete), disabled = disabled.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], threshold = threshold.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IonInfiniteScroll]
   }

@@ -37,13 +37,13 @@ object CompileFunctionOptions {
     produceCachedData: js.UndefOr[Boolean] = js.undefined
   ): CompileFunctionOptions = {
     val __obj = js.Dynamic.literal()
-    if (cachedData != null) __obj.updateDynamic("cachedData")(cachedData)
+    if (cachedData != null) __obj.updateDynamic("cachedData")(cachedData.asInstanceOf[js.Any])
     if (columnOffset != null) __obj.updateDynamic("columnOffset")(columnOffset.asInstanceOf[js.Any])
-    if (contextExtensions != null) __obj.updateDynamic("contextExtensions")(contextExtensions)
-    if (filename != null) __obj.updateDynamic("filename")(filename)
+    if (contextExtensions != null) __obj.updateDynamic("contextExtensions")(contextExtensions.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
     if (lineOffset != null) __obj.updateDynamic("lineOffset")(lineOffset.asInstanceOf[js.Any])
-    if (parsingContext != null) __obj.updateDynamic("parsingContext")(parsingContext)
-    if (!js.isUndefined(produceCachedData)) __obj.updateDynamic("produceCachedData")(produceCachedData)
+    if (parsingContext != null) __obj.updateDynamic("parsingContext")(parsingContext.asInstanceOf[js.Any])
+    if (!js.isUndefined(produceCachedData)) __obj.updateDynamic("produceCachedData")(produceCachedData.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompileFunctionOptions]
   }
 }

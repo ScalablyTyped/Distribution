@@ -18,9 +18,9 @@ trait LogLevelFilterAppender extends Appender {
 object LogLevelFilterAppender {
   @scala.inline
   def apply(appender: String, level: String, `type`: logLevelFilter, maxLevel: String = null): LogLevelFilterAppender = {
-    val __obj = js.Dynamic.literal(appender = appender, level = level)
-    __obj.updateDynamic("type")(`type`)
-    if (maxLevel != null) __obj.updateDynamic("maxLevel")(maxLevel)
+    val __obj = js.Dynamic.literal(appender = appender.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (maxLevel != null) __obj.updateDynamic("maxLevel")(maxLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogLevelFilterAppender]
   }
 }

@@ -13,8 +13,8 @@ object FrequencyCap {
   @scala.inline
   def apply(duration: String = null, impressions: String = null): FrequencyCap = {
     val __obj = js.Dynamic.literal()
-    if (duration != null) __obj.updateDynamic("duration")(duration)
-    if (impressions != null) __obj.updateDynamic("impressions")(impressions)
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (impressions != null) __obj.updateDynamic("impressions")(impressions.asInstanceOf[js.Any])
     __obj.asInstanceOf[FrequencyCap]
   }
 }

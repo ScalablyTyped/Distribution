@@ -23,7 +23,7 @@ object Anon_Circle {
     width: Double | String = null
   ): Anon_Circle = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disableAnimate)) __obj.updateDynamic("disableAnimate")(disableAnimate)
+    if (!js.isUndefined(disableAnimate)) __obj.updateDynamic("disableAnimate")(disableAnimate.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (variant != null) __obj.updateDynamic("variant")(variant.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])

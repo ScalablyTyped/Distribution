@@ -40,9 +40,9 @@ object LayoutPlaceholderIdMapping {
     objectId: String = null
   ): LayoutPlaceholderIdMapping = {
     val __obj = js.Dynamic.literal()
-    if (layoutPlaceholder != null) __obj.updateDynamic("layoutPlaceholder")(layoutPlaceholder)
-    if (layoutPlaceholderObjectId != null) __obj.updateDynamic("layoutPlaceholderObjectId")(layoutPlaceholderObjectId)
-    if (objectId != null) __obj.updateDynamic("objectId")(objectId)
+    if (layoutPlaceholder != null) __obj.updateDynamic("layoutPlaceholder")(layoutPlaceholder.asInstanceOf[js.Any])
+    if (layoutPlaceholderObjectId != null) __obj.updateDynamic("layoutPlaceholderObjectId")(layoutPlaceholderObjectId.asInstanceOf[js.Any])
+    if (objectId != null) __obj.updateDynamic("objectId")(objectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayoutPlaceholderIdMapping]
   }
 }

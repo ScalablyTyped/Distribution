@@ -12,7 +12,7 @@ trait Anon_MergeInfo extends js.Object {
 object Anon_MergeInfo {
   @scala.inline
   def apply(mergeInfo: MergeInfo): Anon_MergeInfo = {
-    val __obj = js.Dynamic.literal(mergeInfo = mergeInfo)
+    val __obj = js.Dynamic.literal(mergeInfo = mergeInfo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_MergeInfo]
   }

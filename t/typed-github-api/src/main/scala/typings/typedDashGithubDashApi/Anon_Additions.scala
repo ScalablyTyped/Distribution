@@ -13,7 +13,7 @@ trait Anon_Additions extends js.Object {
 object Anon_Additions {
   @scala.inline
   def apply(additions: Double, deletions: Double, total: Double): Anon_Additions = {
-    val __obj = js.Dynamic.literal(additions = additions, deletions = deletions, total = total)
+    val __obj = js.Dynamic.literal(additions = additions.asInstanceOf[js.Any], deletions = deletions.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Additions]
   }

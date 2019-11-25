@@ -12,7 +12,7 @@ object Anon_Flags {
   @scala.inline
   def apply(flags: String = null): Anon_Flags = {
     val __obj = js.Dynamic.literal()
-    if (flags != null) __obj.updateDynamic("flags")(flags)
+    if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Flags]
   }
 }

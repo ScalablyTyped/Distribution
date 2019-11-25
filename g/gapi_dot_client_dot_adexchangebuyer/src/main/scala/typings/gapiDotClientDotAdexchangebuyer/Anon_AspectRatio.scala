@@ -17,9 +17,9 @@ object Anon_AspectRatio {
   @scala.inline
   def apply(aspectRatio: String = null, minHeight: String = null, minWidth: String = null): Anon_AspectRatio = {
     val __obj = js.Dynamic.literal()
-    if (aspectRatio != null) __obj.updateDynamic("aspectRatio")(aspectRatio)
-    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight)
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth)
+    if (aspectRatio != null) __obj.updateDynamic("aspectRatio")(aspectRatio.asInstanceOf[js.Any])
+    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
+    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AspectRatio]
   }
 }

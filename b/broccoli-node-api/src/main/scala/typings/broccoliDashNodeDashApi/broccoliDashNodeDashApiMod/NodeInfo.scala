@@ -1,5 +1,8 @@
 package typings.broccoliDashNodeDashApi.broccoliDashNodeDashApiMod
 
+import typings.broccoliDashNodeDashApi.Anon_CachePath
+import typings.broccoliDashNodeDashApi.broccoliDashNodeDashApiStrings.source
+import typings.broccoliDashNodeDashApi.broccoliDashNodeDashApiStrings.transform
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,4 +12,38 @@ import scala.scalajs.js.annotation._
   - typings.broccoliDashNodeDashApi.broccoliDashNodeDashApiMod.TransformNodeInfo
 */
 trait NodeInfo extends js.Object
+
+object NodeInfo {
+  @scala.inline
+  def SourceNodeInfo(
+    instantiationStack: String,
+    name: String,
+    nodeType: source,
+    sourceDirectory: String,
+    watched: Boolean,
+    annotation: String = null
+  ): NodeInfo = {
+    val __obj = js.Dynamic.literal(instantiationStack = instantiationStack.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], sourceDirectory = sourceDirectory.asInstanceOf[js.Any], watched = watched.asInstanceOf[js.Any])
+    if (annotation != null) __obj.updateDynamic("annotation")(annotation.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NodeInfo]
+  }
+  @scala.inline
+  def TransformNodeInfo(
+    getCallbackObject: () => CallbackObject,
+    inputNodes: js.Array[InputNode],
+    instantiationStack: String,
+    name: String,
+    needsCache: Boolean,
+    nodeType: transform,
+    persistentOutput: Boolean,
+    setup: (FeatureSet, Anon_CachePath) => Unit,
+    trackInputChanges: Boolean,
+    volatile: Boolean,
+    annotation: String = null
+  ): NodeInfo = {
+    val __obj = js.Dynamic.literal(getCallbackObject = js.Any.fromFunction0(getCallbackObject), inputNodes = inputNodes.asInstanceOf[js.Any], instantiationStack = instantiationStack.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], needsCache = needsCache.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], persistentOutput = persistentOutput.asInstanceOf[js.Any], setup = js.Any.fromFunction2(setup), trackInputChanges = trackInputChanges.asInstanceOf[js.Any], volatile = volatile.asInstanceOf[js.Any])
+    if (annotation != null) __obj.updateDynamic("annotation")(annotation.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NodeInfo]
+  }
+}
 

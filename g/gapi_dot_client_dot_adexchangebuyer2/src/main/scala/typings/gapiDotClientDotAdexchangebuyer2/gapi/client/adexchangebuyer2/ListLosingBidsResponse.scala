@@ -25,8 +25,8 @@ object ListLosingBidsResponse {
   @scala.inline
   def apply(creativeStatusRows: js.Array[CreativeStatusRow] = null, nextPageToken: String = null): ListLosingBidsResponse = {
     val __obj = js.Dynamic.literal()
-    if (creativeStatusRows != null) __obj.updateDynamic("creativeStatusRows")(creativeStatusRows)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (creativeStatusRows != null) __obj.updateDynamic("creativeStatusRows")(creativeStatusRows.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListLosingBidsResponse]
   }
 }

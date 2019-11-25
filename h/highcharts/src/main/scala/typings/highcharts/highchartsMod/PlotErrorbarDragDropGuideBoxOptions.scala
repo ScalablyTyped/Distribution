@@ -15,7 +15,7 @@ object PlotErrorbarDragDropGuideBoxOptions {
   @scala.inline
   def apply(default: PlotErrorbarDragDropGuideBoxDefaultOptions = null): PlotErrorbarDragDropGuideBoxOptions = {
     val __obj = js.Dynamic.literal()
-    if (default != null) __obj.updateDynamic("default")(default)
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotErrorbarDragDropGuideBoxOptions]
   }
 }

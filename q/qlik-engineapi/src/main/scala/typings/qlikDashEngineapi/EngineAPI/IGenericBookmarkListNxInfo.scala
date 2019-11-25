@@ -16,8 +16,8 @@ trait IGenericBookmarkListNxInfo extends INxInfo {
 object IGenericBookmarkListNxInfo {
   @scala.inline
   def apply(qType: BookmarkList, qId: String = null): IGenericBookmarkListNxInfo = {
-    val __obj = js.Dynamic.literal(qType = qType)
-    if (qId != null) __obj.updateDynamic("qId")(qId)
+    val __obj = js.Dynamic.literal(qType = qType.asInstanceOf[js.Any])
+    if (qId != null) __obj.updateDynamic("qId")(qId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGenericBookmarkListNxInfo]
   }
 }

@@ -25,8 +25,8 @@ object ListNonBillableWinningBidsResponse {
     nonBillableWinningBidStatusRows: js.Array[NonBillableWinningBidStatusRow] = null
   ): ListNonBillableWinningBidsResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (nonBillableWinningBidStatusRows != null) __obj.updateDynamic("nonBillableWinningBidStatusRows")(nonBillableWinningBidStatusRows)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (nonBillableWinningBidStatusRows != null) __obj.updateDynamic("nonBillableWinningBidStatusRows")(nonBillableWinningBidStatusRows.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListNonBillableWinningBidsResponse]
   }
 }

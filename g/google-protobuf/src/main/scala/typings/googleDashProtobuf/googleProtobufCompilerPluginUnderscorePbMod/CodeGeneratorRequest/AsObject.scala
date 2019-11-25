@@ -25,9 +25,9 @@ object AsObject {
     compilerVersion: typings.googleDashProtobuf.googleProtobufCompilerPluginUnderscorePbMod.Version.AsObject = null,
     parameter: String = null
   ): AsObject = {
-    val __obj = js.Dynamic.literal(fileToGenerateList = fileToGenerateList, protoFileList = protoFileList)
-    if (compilerVersion != null) __obj.updateDynamic("compilerVersion")(compilerVersion)
-    if (parameter != null) __obj.updateDynamic("parameter")(parameter)
+    val __obj = js.Dynamic.literal(fileToGenerateList = fileToGenerateList.asInstanceOf[js.Any], protoFileList = protoFileList.asInstanceOf[js.Any])
+    if (compilerVersion != null) __obj.updateDynamic("compilerVersion")(compilerVersion.asInstanceOf[js.Any])
+    if (parameter != null) __obj.updateDynamic("parameter")(parameter.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsObject]
   }
 }

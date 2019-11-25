@@ -11,7 +11,7 @@ trait UserDevicesResponse extends js.Object {
 object UserDevicesResponse {
   @scala.inline
   def apply(devices: js.Array[UserDevice]): UserDevicesResponse = {
-    val __obj = js.Dynamic.literal(devices = devices)
+    val __obj = js.Dynamic.literal(devices = devices.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UserDevicesResponse]
   }

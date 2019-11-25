@@ -19,7 +19,7 @@ trait CellEdit[TRow /* <: js.Object */] extends js.Object {
     js.Function4[
       /* row */ TRow, 
       /* cellName */ String, 
-      /* import warning: ImportType.apply Failed type conversion: TRow[keyof TRow] */ /* cellValue */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: TRow[keyof TRow] */ /* cellValue */ js.Any, 
       /* props */ Anon_ColIndex, 
       Unit
     ]
@@ -41,7 +41,7 @@ trait CellEdit[TRow /* <: js.Object */] extends js.Object {
     js.Function5[
       /* row */ TRow, 
       /* cellName */ String, 
-      /* import warning: ImportType.apply Failed type conversion: TRow[keyof TRow] */ /* cellValue */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: TRow[keyof TRow] */ /* cellValue */ js.Any, 
       /* done */ js.Function1[/* isValid */ Boolean, Unit], 
       /* props */ Anon_ColIndex, 
       Boolean | `1`
@@ -73,17 +73,17 @@ object CellEdit {
   @scala.inline
   def apply[TRow /* <: js.Object */](
     mode: CellEditClickMode,
-    afterSaveCell: (/* row */ TRow, /* cellName */ String, /* import warning: ImportType.apply Failed type conversion: TRow[keyof TRow] */ /* cellValue */ js.Any, /* props */ Anon_ColIndex) => Unit = null,
-    beforeSaveCell: (/* row */ TRow, /* cellName */ String, /* import warning: ImportType.apply Failed type conversion: TRow[keyof TRow] */ /* cellValue */ js.Any, /* done */ js.Function1[/* isValid */ Boolean, Unit], /* props */ Anon_ColIndex) => Boolean | `1` = null,
+    afterSaveCell: (/* row */ TRow, /* cellName */ String, /* import warning: importer.ImportType#apply Failed type conversion: TRow[keyof TRow] */ /* cellValue */ js.Any, /* props */ Anon_ColIndex) => Unit = null,
+    beforeSaveCell: (/* row */ TRow, /* cellName */ String, /* import warning: importer.ImportType#apply Failed type conversion: TRow[keyof TRow] */ /* cellValue */ js.Any, /* done */ js.Function1[/* isValid */ Boolean, Unit], /* props */ Anon_ColIndex) => Boolean | `1` = null,
     blurToEscape: js.UndefOr[Boolean] = js.undefined,
     blurToSave: js.UndefOr[Boolean] = js.undefined,
     nonEditableRows: () => js.Array[Double | String] = null
   ): CellEdit[TRow] = {
-    val __obj = js.Dynamic.literal(mode = mode)
+    val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
     if (afterSaveCell != null) __obj.updateDynamic("afterSaveCell")(js.Any.fromFunction4(afterSaveCell))
     if (beforeSaveCell != null) __obj.updateDynamic("beforeSaveCell")(js.Any.fromFunction5(beforeSaveCell))
-    if (!js.isUndefined(blurToEscape)) __obj.updateDynamic("blurToEscape")(blurToEscape)
-    if (!js.isUndefined(blurToSave)) __obj.updateDynamic("blurToSave")(blurToSave)
+    if (!js.isUndefined(blurToEscape)) __obj.updateDynamic("blurToEscape")(blurToEscape.asInstanceOf[js.Any])
+    if (!js.isUndefined(blurToSave)) __obj.updateDynamic("blurToSave")(blurToSave.asInstanceOf[js.Any])
     if (nonEditableRows != null) __obj.updateDynamic("nonEditableRows")(js.Any.fromFunction0(nonEditableRows))
     __obj.asInstanceOf[CellEdit[TRow]]
   }

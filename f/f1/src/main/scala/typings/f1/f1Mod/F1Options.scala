@@ -25,7 +25,7 @@ object F1Options {
     onState: /* repeated */ js.Any => Unit = null,
     onUpdate: /* repeated */ js.Any => Unit = null
   ): F1Options = {
-    val __obj = js.Dynamic.literal(name = name, parsers = parsers, states = states, targets = targets, transitions = transitions)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], parsers = parsers.asInstanceOf[js.Any], states = states.asInstanceOf[js.Any], targets = targets.asInstanceOf[js.Any], transitions = transitions.asInstanceOf[js.Any])
     if (onState != null) __obj.updateDynamic("onState")(js.Any.fromFunction1(onState))
     if (onUpdate != null) __obj.updateDynamic("onUpdate")(js.Any.fromFunction1(onUpdate))
     __obj.asInstanceOf[F1Options]

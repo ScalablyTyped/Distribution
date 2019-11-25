@@ -56,8 +56,8 @@ object _TopicConfigurationDeprecated {
     val __obj = js.Dynamic.literal()
     if (Event != null) __obj.updateDynamic("Event")(Event.asInstanceOf[js.Any])
     if (Events != null) __obj.updateDynamic("Events")(Events.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id)
-    if (Topic != null) __obj.updateDynamic("Topic")(Topic)
+    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
+    if (Topic != null) __obj.updateDynamic("Topic")(Topic.asInstanceOf[js.Any])
     __obj.asInstanceOf[_TopicConfigurationDeprecated]
   }
 }

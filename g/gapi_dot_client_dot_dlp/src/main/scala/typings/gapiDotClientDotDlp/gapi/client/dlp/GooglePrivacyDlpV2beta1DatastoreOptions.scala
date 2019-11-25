@@ -27,9 +27,9 @@ object GooglePrivacyDlpV2beta1DatastoreOptions {
     projection: js.Array[GooglePrivacyDlpV2beta1Projection] = null
   ): GooglePrivacyDlpV2beta1DatastoreOptions = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (partitionId != null) __obj.updateDynamic("partitionId")(partitionId)
-    if (projection != null) __obj.updateDynamic("projection")(projection)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (partitionId != null) __obj.updateDynamic("partitionId")(partitionId.asInstanceOf[js.Any])
+    if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1DatastoreOptions]
   }
 }

@@ -21,8 +21,8 @@ object ChartParallelAxesResizeControlledAxisOptions {
   @scala.inline
   def apply(next: js.Array[Double | String] = null, prev: js.Array[Double | String] = null): ChartParallelAxesResizeControlledAxisOptions = {
     val __obj = js.Dynamic.literal()
-    if (next != null) __obj.updateDynamic("next")(next)
-    if (prev != null) __obj.updateDynamic("prev")(prev)
+    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
+    if (prev != null) __obj.updateDynamic("prev")(prev.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartParallelAxesResizeControlledAxisOptions]
   }
 }

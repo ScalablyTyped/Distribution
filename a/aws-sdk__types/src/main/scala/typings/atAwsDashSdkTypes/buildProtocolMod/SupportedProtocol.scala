@@ -13,3 +13,18 @@ import scala.scalajs.js.annotation._
 */
 trait SupportedProtocol extends js.Object
 
+object SupportedProtocol {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def ec2: typings.atAwsDashSdkTypes.atAwsDashSdkTypesStrings.ec2 = this.cast("ec2")
+  @scala.inline
+  def json: typings.atAwsDashSdkTypes.atAwsDashSdkTypesStrings.json = this.cast("json")
+  @scala.inline
+  def query: typings.atAwsDashSdkTypes.atAwsDashSdkTypesStrings.query = this.cast("query")
+  @scala.inline
+  def `rest-json`: typings.atAwsDashSdkTypes.atAwsDashSdkTypesStrings.`rest-json` = this.cast("rest-json")
+  @scala.inline
+  def `rest-xml`: typings.atAwsDashSdkTypes.atAwsDashSdkTypesStrings.`rest-xml` = this.cast("rest-xml")
+}
+

@@ -21,13 +21,13 @@ object RenameLocation {
     prefixText: String = null,
     suffixText: String = null
   ): RenameLocation = {
-    val __obj = js.Dynamic.literal(fileName = fileName, textSpan = textSpan)
-    if (contextSpan != null) __obj.updateDynamic("contextSpan")(contextSpan)
-    if (originalContextSpan != null) __obj.updateDynamic("originalContextSpan")(originalContextSpan)
-    if (originalFileName != null) __obj.updateDynamic("originalFileName")(originalFileName)
-    if (originalTextSpan != null) __obj.updateDynamic("originalTextSpan")(originalTextSpan)
-    if (prefixText != null) __obj.updateDynamic("prefixText")(prefixText)
-    if (suffixText != null) __obj.updateDynamic("suffixText")(suffixText)
+    val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], textSpan = textSpan.asInstanceOf[js.Any])
+    if (contextSpan != null) __obj.updateDynamic("contextSpan")(contextSpan.asInstanceOf[js.Any])
+    if (originalContextSpan != null) __obj.updateDynamic("originalContextSpan")(originalContextSpan.asInstanceOf[js.Any])
+    if (originalFileName != null) __obj.updateDynamic("originalFileName")(originalFileName.asInstanceOf[js.Any])
+    if (originalTextSpan != null) __obj.updateDynamic("originalTextSpan")(originalTextSpan.asInstanceOf[js.Any])
+    if (prefixText != null) __obj.updateDynamic("prefixText")(prefixText.asInstanceOf[js.Any])
+    if (suffixText != null) __obj.updateDynamic("suffixText")(suffixText.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenameLocation]
   }
 }

@@ -17,7 +17,7 @@ object PullsListCommentsForRepoResponseItemLinks {
     pull_request: PullsListCommentsForRepoResponseItemLinksPullRequest,
     self: PullsListCommentsForRepoResponseItemLinksSelf
   ): PullsListCommentsForRepoResponseItemLinks = {
-    val __obj = js.Dynamic.literal(html = html, pull_request = pull_request, self = self)
+    val __obj = js.Dynamic.literal(html = html.asInstanceOf[js.Any], pull_request = pull_request.asInstanceOf[js.Any], self = self.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PullsListCommentsForRepoResponseItemLinks]
   }

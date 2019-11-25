@@ -21,9 +21,9 @@ object PointDistribution {
     underflowBucket: PointDistributionUnderflowBucket = null
   ): PointDistribution = {
     val __obj = js.Dynamic.literal()
-    if (buckets != null) __obj.updateDynamic("buckets")(buckets)
-    if (overflowBucket != null) __obj.updateDynamic("overflowBucket")(overflowBucket)
-    if (underflowBucket != null) __obj.updateDynamic("underflowBucket")(underflowBucket)
+    if (buckets != null) __obj.updateDynamic("buckets")(buckets.asInstanceOf[js.Any])
+    if (overflowBucket != null) __obj.updateDynamic("overflowBucket")(overflowBucket.asInstanceOf[js.Any])
+    if (underflowBucket != null) __obj.updateDynamic("underflowBucket")(underflowBucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointDistribution]
   }
 }

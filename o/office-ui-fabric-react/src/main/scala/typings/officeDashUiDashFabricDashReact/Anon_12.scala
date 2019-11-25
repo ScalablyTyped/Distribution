@@ -22,7 +22,7 @@ object Anon_12 {
     gapSpace: Double,
     setInitialFocus: Boolean
   ): Anon_12 = {
-    val __obj = js.Dynamic.literal(beakWidth = beakWidth, directionalHint = directionalHint, doNotLayer = doNotLayer, gapSpace = gapSpace, setInitialFocus = setInitialFocus)
+    val __obj = js.Dynamic.literal(beakWidth = beakWidth.asInstanceOf[js.Any], directionalHint = directionalHint.asInstanceOf[js.Any], doNotLayer = doNotLayer.asInstanceOf[js.Any], gapSpace = gapSpace.asInstanceOf[js.Any], setInitialFocus = setInitialFocus.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_12]
   }

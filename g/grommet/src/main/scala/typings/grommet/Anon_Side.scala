@@ -13,8 +13,8 @@ object Anon_Side {
   @scala.inline
   def apply(side: String = null, size: String = null): Anon_Side = {
     val __obj = js.Dynamic.literal()
-    if (side != null) __obj.updateDynamic("side")(side)
-    if (size != null) __obj.updateDynamic("size")(size)
+    if (side != null) __obj.updateDynamic("side")(side.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Side]
   }
 }

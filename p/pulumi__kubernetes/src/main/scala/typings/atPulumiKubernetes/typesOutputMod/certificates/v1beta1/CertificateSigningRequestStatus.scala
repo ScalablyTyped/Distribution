@@ -21,7 +21,7 @@ trait CertificateSigningRequestStatus extends js.Object {
 object CertificateSigningRequestStatus {
   @scala.inline
   def apply(certificate: String, conditions: js.Array[CertificateSigningRequestCondition]): CertificateSigningRequestStatus = {
-    val __obj = js.Dynamic.literal(certificate = certificate, conditions = conditions)
+    val __obj = js.Dynamic.literal(certificate = certificate.asInstanceOf[js.Any], conditions = conditions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CertificateSigningRequestStatus]
   }

@@ -49,18 +49,18 @@ object IClientNameStats {
     rootErrorStats: IPathErrorStats = null
   ): IClientNameStats = {
     val __obj = js.Dynamic.literal()
-    if (cacheHitsPerVersion != null) __obj.updateDynamic("cacheHitsPerVersion")(cacheHitsPerVersion)
-    if (cacheLatencyCount != null) __obj.updateDynamic("cacheLatencyCount")(cacheLatencyCount)
-    if (forbiddenOperationCountPerVersion != null) __obj.updateDynamic("forbiddenOperationCountPerVersion")(forbiddenOperationCountPerVersion)
-    if (latencyCount != null) __obj.updateDynamic("latencyCount")(latencyCount)
-    if (persistedQueryHitsPerVersion != null) __obj.updateDynamic("persistedQueryHitsPerVersion")(persistedQueryHitsPerVersion)
-    if (persistedQueryMissesPerVersion != null) __obj.updateDynamic("persistedQueryMissesPerVersion")(persistedQueryMissesPerVersion)
-    if (privateCacheTtlCount != null) __obj.updateDynamic("privateCacheTtlCount")(privateCacheTtlCount)
-    if (publicCacheTtlCount != null) __obj.updateDynamic("publicCacheTtlCount")(publicCacheTtlCount)
-    if (registeredOperationCountPerVersion != null) __obj.updateDynamic("registeredOperationCountPerVersion")(registeredOperationCountPerVersion)
-    if (requestsCountPerVersion != null) __obj.updateDynamic("requestsCountPerVersion")(requestsCountPerVersion)
+    if (cacheHitsPerVersion != null) __obj.updateDynamic("cacheHitsPerVersion")(cacheHitsPerVersion.asInstanceOf[js.Any])
+    if (cacheLatencyCount != null) __obj.updateDynamic("cacheLatencyCount")(cacheLatencyCount.asInstanceOf[js.Any])
+    if (forbiddenOperationCountPerVersion != null) __obj.updateDynamic("forbiddenOperationCountPerVersion")(forbiddenOperationCountPerVersion.asInstanceOf[js.Any])
+    if (latencyCount != null) __obj.updateDynamic("latencyCount")(latencyCount.asInstanceOf[js.Any])
+    if (persistedQueryHitsPerVersion != null) __obj.updateDynamic("persistedQueryHitsPerVersion")(persistedQueryHitsPerVersion.asInstanceOf[js.Any])
+    if (persistedQueryMissesPerVersion != null) __obj.updateDynamic("persistedQueryMissesPerVersion")(persistedQueryMissesPerVersion.asInstanceOf[js.Any])
+    if (privateCacheTtlCount != null) __obj.updateDynamic("privateCacheTtlCount")(privateCacheTtlCount.asInstanceOf[js.Any])
+    if (publicCacheTtlCount != null) __obj.updateDynamic("publicCacheTtlCount")(publicCacheTtlCount.asInstanceOf[js.Any])
+    if (registeredOperationCountPerVersion != null) __obj.updateDynamic("registeredOperationCountPerVersion")(registeredOperationCountPerVersion.asInstanceOf[js.Any])
+    if (requestsCountPerVersion != null) __obj.updateDynamic("requestsCountPerVersion")(requestsCountPerVersion.asInstanceOf[js.Any])
     if (requestsWithErrorsCount != null) __obj.updateDynamic("requestsWithErrorsCount")(requestsWithErrorsCount.asInstanceOf[js.Any])
-    if (rootErrorStats != null) __obj.updateDynamic("rootErrorStats")(rootErrorStats)
+    if (rootErrorStats != null) __obj.updateDynamic("rootErrorStats")(rootErrorStats.asInstanceOf[js.Any])
     __obj.asInstanceOf[IClientNameStats]
   }
 }

@@ -38,12 +38,12 @@ object RedisSMQ {
   def apply(
     changeMessageVisibility: (ChangeMessageVisibilityOptions, Callback[`0` | `1`]) => Unit,
     changeMessageVisibilityAsync: ChangeMessageVisibilityOptions => js.Promise[`0` | `1`],
+    createQueue: (CreateQueueOptions, Callback[`1`]) => Unit,
     createQueueAsync: CreateQueueOptions => js.Promise[`1`],
-    createQueue_1: (CreateQueueOptions, Callback[`1`]) => Unit,
     deleteMessage: (DeleteMessageOptions, Callback[`0` | `1`]) => Unit,
     deleteMessageAsync: DeleteMessageOptions => js.Promise[`0` | `1`],
+    deleteQueue: (DeleteQueueOptions, Callback[`1`]) => Unit,
     deleteQueueAsync: DeleteQueueOptions => js.Promise[`1`],
-    deleteQueue_1: (DeleteQueueOptions, Callback[`1`]) => Unit,
     getQueueAttributes: (GetQueueAttributesOptions, Callback[QueueAttributes]) => Unit,
     getQueueAttributesAsync: GetQueueAttributesOptions => js.Promise[QueueAttributes],
     listQueues: Callback[js.Array[String]] => Unit,
@@ -58,9 +58,8 @@ object RedisSMQ {
     setQueueAttributes: (SetQueueAttributesOptions, Callback[QueueAttributes]) => Unit,
     setQueueAttributesAsync: SetQueueAttributesOptions => js.Promise[QueueAttributes]
   ): RedisSMQ = {
-    val __obj = js.Dynamic.literal(changeMessageVisibility = js.Any.fromFunction2(changeMessageVisibility), changeMessageVisibilityAsync = js.Any.fromFunction1(changeMessageVisibilityAsync), createQueueAsync = js.Any.fromFunction1(createQueueAsync), deleteMessage = js.Any.fromFunction2(deleteMessage), deleteMessageAsync = js.Any.fromFunction1(deleteMessageAsync), deleteQueueAsync = js.Any.fromFunction1(deleteQueueAsync), getQueueAttributes = js.Any.fromFunction2(getQueueAttributes), getQueueAttributesAsync = js.Any.fromFunction1(getQueueAttributesAsync), listQueues = js.Any.fromFunction1(listQueues), listQueuesAsync = js.Any.fromFunction0(listQueuesAsync), popMessage = js.Any.fromFunction2(popMessage), popMessageAsync = js.Any.fromFunction1(popMessageAsync), quit = js.Any.fromFunction0(quit), receiveMessage = js.Any.fromFunction2(receiveMessage), receiveMessageAsync = js.Any.fromFunction1(receiveMessageAsync), sendMessage = js.Any.fromFunction2(sendMessage), sendMessageAsync = js.Any.fromFunction1(sendMessageAsync), setQueueAttributes = js.Any.fromFunction2(setQueueAttributes), setQueueAttributesAsync = js.Any.fromFunction1(setQueueAttributesAsync))
-    __obj.updateDynamic("createQueue")(js.Any.fromFunction2(createQueue_1))
-    __obj.updateDynamic("deleteQueue")(js.Any.fromFunction2(deleteQueue_1))
+    val __obj = js.Dynamic.literal(changeMessageVisibility = js.Any.fromFunction2(changeMessageVisibility), changeMessageVisibilityAsync = js.Any.fromFunction1(changeMessageVisibilityAsync), createQueue = js.Any.fromFunction2(createQueue), createQueueAsync = js.Any.fromFunction1(createQueueAsync), deleteMessage = js.Any.fromFunction2(deleteMessage), deleteMessageAsync = js.Any.fromFunction1(deleteMessageAsync), deleteQueue = js.Any.fromFunction2(deleteQueue), deleteQueueAsync = js.Any.fromFunction1(deleteQueueAsync), getQueueAttributes = js.Any.fromFunction2(getQueueAttributes), getQueueAttributesAsync = js.Any.fromFunction1(getQueueAttributesAsync), listQueues = js.Any.fromFunction1(listQueues), listQueuesAsync = js.Any.fromFunction0(listQueuesAsync), popMessage = js.Any.fromFunction2(popMessage), popMessageAsync = js.Any.fromFunction1(popMessageAsync), quit = js.Any.fromFunction0(quit), receiveMessage = js.Any.fromFunction2(receiveMessage), receiveMessageAsync = js.Any.fromFunction1(receiveMessageAsync), sendMessage = js.Any.fromFunction2(sendMessage), sendMessageAsync = js.Any.fromFunction1(sendMessageAsync), setQueueAttributes = js.Any.fromFunction2(setQueueAttributes), setQueueAttributesAsync = js.Any.fromFunction1(setQueueAttributesAsync))
+  
     __obj.asInstanceOf[RedisSMQ]
   }
 }

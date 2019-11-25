@@ -15,7 +15,7 @@ object Settings {
   @scala.inline
   def apply(autoInsertRow: js.UndefOr[Boolean] = js.undefined, direction: vertical | horizontal = null): Settings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoInsertRow)) __obj.updateDynamic("autoInsertRow")(autoInsertRow)
+    if (!js.isUndefined(autoInsertRow)) __obj.updateDynamic("autoInsertRow")(autoInsertRow.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     __obj.asInstanceOf[Settings]
   }

@@ -22,9 +22,9 @@ object AppEngineHttpRequest {
     appEngineRouting: AppEngineRouting = null,
     headers: StringDictionary[String] = null
   ): AppEngineHttpRequest = {
-    val __obj = js.Dynamic.literal(body = body, httpMethod = httpMethod, relativeUri = relativeUri)
-    if (appEngineRouting != null) __obj.updateDynamic("appEngineRouting")(appEngineRouting)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], httpMethod = httpMethod.asInstanceOf[js.Any], relativeUri = relativeUri.asInstanceOf[js.Any])
+    if (appEngineRouting != null) __obj.updateDynamic("appEngineRouting")(appEngineRouting.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppEngineHttpRequest]
   }
 }

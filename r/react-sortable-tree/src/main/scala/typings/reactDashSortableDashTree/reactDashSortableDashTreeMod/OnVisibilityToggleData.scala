@@ -13,7 +13,7 @@ trait OnVisibilityToggleData
 object OnVisibilityToggleData {
   @scala.inline
   def apply(expanded: Boolean, node: TreeItem, treeData: js.Array[TreeItem]): OnVisibilityToggleData = {
-    val __obj = js.Dynamic.literal(expanded = expanded, node = node, treeData = treeData)
+    val __obj = js.Dynamic.literal(expanded = expanded.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], treeData = treeData.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OnVisibilityToggleData]
   }

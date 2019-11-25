@@ -19,8 +19,8 @@ object ServerOptions {
     host: String = null,
     serverFactory: /* onConnect */ js.Function1[/* socket */ Socket, Unit] => Server = null
   ): ServerOptions = {
-    val __obj = js.Dynamic.literal(port = port)
-    if (host != null) __obj.updateDynamic("host")(host)
+    val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (serverFactory != null) __obj.updateDynamic("serverFactory")(js.Any.fromFunction1(serverFactory))
     __obj.asInstanceOf[ServerOptions]
   }

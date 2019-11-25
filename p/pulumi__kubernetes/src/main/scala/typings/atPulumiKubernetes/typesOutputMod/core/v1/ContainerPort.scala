@@ -37,7 +37,7 @@ trait ContainerPort extends js.Object {
 object ContainerPort {
   @scala.inline
   def apply(containerPort: Double, hostIP: String, hostPort: Double, name: String, protocol: String): ContainerPort = {
-    val __obj = js.Dynamic.literal(containerPort = containerPort, hostIP = hostIP, hostPort = hostPort, name = name, protocol = protocol)
+    val __obj = js.Dynamic.literal(containerPort = containerPort.asInstanceOf[js.Any], hostIP = hostIP.asInstanceOf[js.Any], hostPort = hostPort.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ContainerPort]
   }

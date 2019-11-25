@@ -72,8 +72,8 @@ object InvoiceItem {
     subscription: String | ISubscription,
     invoice: String | IInvoice = null
   ): InvoiceItem = {
-    val __obj = js.Dynamic.literal(amount = amount, currency = currency, customer = customer.asInstanceOf[js.Any], date = date, description = description, discountable = discountable, id = id, livemode = livemode, metadata = metadata, period = period, plan = plan, proration = proration, quantity = quantity, subscription = subscription.asInstanceOf[js.Any])
-    __obj.updateDynamic("object")(`object`)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], customer = customer.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], discountable = discountable.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], period = period.asInstanceOf[js.Any], plan = plan.asInstanceOf[js.Any], proration = proration.asInstanceOf[js.Any], quantity = quantity.asInstanceOf[js.Any], subscription = subscription.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     if (invoice != null) __obj.updateDynamic("invoice")(invoice.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvoiceItem]
   }

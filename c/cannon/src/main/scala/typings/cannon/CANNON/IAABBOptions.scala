@@ -13,8 +13,8 @@ object IAABBOptions {
   @scala.inline
   def apply(lowerBound: Vec3 = null, upperBound: Vec3 = null): IAABBOptions = {
     val __obj = js.Dynamic.literal()
-    if (lowerBound != null) __obj.updateDynamic("lowerBound")(lowerBound)
-    if (upperBound != null) __obj.updateDynamic("upperBound")(upperBound)
+    if (lowerBound != null) __obj.updateDynamic("lowerBound")(lowerBound.asInstanceOf[js.Any])
+    if (upperBound != null) __obj.updateDynamic("upperBound")(upperBound.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAABBOptions]
   }
 }

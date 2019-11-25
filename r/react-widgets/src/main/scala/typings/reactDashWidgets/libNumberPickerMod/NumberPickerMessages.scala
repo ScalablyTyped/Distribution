@@ -21,8 +21,8 @@ object NumberPickerMessages {
   @scala.inline
   def apply(decrement: String = null, increment: String = null): NumberPickerMessages = {
     val __obj = js.Dynamic.literal()
-    if (decrement != null) __obj.updateDynamic("decrement")(decrement)
-    if (increment != null) __obj.updateDynamic("increment")(increment)
+    if (decrement != null) __obj.updateDynamic("decrement")(decrement.asInstanceOf[js.Any])
+    if (increment != null) __obj.updateDynamic("increment")(increment.asInstanceOf[js.Any])
     __obj.asInstanceOf[NumberPickerMessages]
   }
 }

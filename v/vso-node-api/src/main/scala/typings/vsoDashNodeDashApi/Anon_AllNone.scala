@@ -15,7 +15,7 @@ trait Anon_AllNone extends js.Object {
 object Anon_AllNone {
   @scala.inline
   def apply(all: Double, none: Double, system: Double, testResult: Double, testRun: Double): Anon_AllNone = {
-    val __obj = js.Dynamic.literal(all = all, none = none, system = system, testResult = testResult, testRun = testRun)
+    val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any], system = system.asInstanceOf[js.Any], testResult = testResult.asInstanceOf[js.Any], testRun = testRun.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AllNone]
   }

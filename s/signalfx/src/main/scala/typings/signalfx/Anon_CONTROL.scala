@@ -14,7 +14,7 @@ trait Anon_CONTROL extends js.Object {
 object Anon_CONTROL {
   @scala.inline
   def apply(CONTROL: String, DATA: String, EVENT: String, METADATA: String): Anon_CONTROL = {
-    val __obj = js.Dynamic.literal(CONTROL = CONTROL, DATA = DATA, EVENT = EVENT, METADATA = METADATA)
+    val __obj = js.Dynamic.literal(CONTROL = CONTROL.asInstanceOf[js.Any], DATA = DATA.asInstanceOf[js.Any], EVENT = EVENT.asInstanceOf[js.Any], METADATA = METADATA.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CONTROL]
   }

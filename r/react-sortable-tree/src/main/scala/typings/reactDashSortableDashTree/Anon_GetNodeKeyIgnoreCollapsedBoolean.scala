@@ -19,7 +19,7 @@ object Anon_GetNodeKeyIgnoreCollapsedBoolean {
     ignoreCollapsed: js.UndefOr[Boolean] = js.undefined
   ): Anon_GetNodeKeyIgnoreCollapsedBoolean = {
     val __obj = js.Dynamic.literal(getNodeKey = js.Any.fromFunction1(getNodeKey))
-    if (!js.isUndefined(ignoreCollapsed)) __obj.updateDynamic("ignoreCollapsed")(ignoreCollapsed)
+    if (!js.isUndefined(ignoreCollapsed)) __obj.updateDynamic("ignoreCollapsed")(ignoreCollapsed.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_GetNodeKeyIgnoreCollapsedBoolean]
   }
 }

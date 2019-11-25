@@ -16,10 +16,10 @@ trait DialogflowV1MessageLinkOut
 object DialogflowV1MessageLinkOut {
   @scala.inline
   def apply(platform: google, destinationName: String = null, `type`: link_out_chip = null, url: String = null): DialogflowV1MessageLinkOut = {
-    val __obj = js.Dynamic.literal(platform = platform)
-    if (destinationName != null) __obj.updateDynamic("destinationName")(destinationName)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (url != null) __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(platform = platform.asInstanceOf[js.Any])
+    if (destinationName != null) __obj.updateDynamic("destinationName")(destinationName.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogflowV1MessageLinkOut]
   }
 }

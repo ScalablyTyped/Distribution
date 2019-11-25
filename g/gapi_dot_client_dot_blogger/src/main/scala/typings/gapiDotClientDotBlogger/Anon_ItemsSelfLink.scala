@@ -18,9 +18,9 @@ object Anon_ItemsSelfLink {
   @scala.inline
   def apply(items: js.Array[Comment] = null, selfLink: String = null, totalItems: String = null): Anon_ItemsSelfLink = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
-    if (totalItems != null) __obj.updateDynamic("totalItems")(totalItems)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
+    if (totalItems != null) __obj.updateDynamic("totalItems")(totalItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ItemsSelfLink]
   }
 }

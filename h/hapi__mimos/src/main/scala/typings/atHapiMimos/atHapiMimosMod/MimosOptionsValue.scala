@@ -23,12 +23,12 @@ object MimosOptionsValue {
     `type`: String = null
   ): MimosOptionsValue = {
     val __obj = js.Dynamic.literal()
-    if (charset != null) __obj.updateDynamic("charset")(charset)
-    if (!js.isUndefined(compressible)) __obj.updateDynamic("compressible")(compressible)
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
+    if (charset != null) __obj.updateDynamic("charset")(charset.asInstanceOf[js.Any])
+    if (!js.isUndefined(compressible)) __obj.updateDynamic("compressible")(compressible.asInstanceOf[js.Any])
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     if (predicate != null) __obj.updateDynamic("predicate")(js.Any.fromFunction1(predicate))
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MimosOptionsValue]
   }
 }

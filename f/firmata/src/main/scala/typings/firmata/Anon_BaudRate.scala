@@ -12,7 +12,7 @@ trait Anon_BaudRate extends js.Object {
 object Anon_BaudRate {
   @scala.inline
   def apply(baudRate: Double, bufferSize: Double): Anon_BaudRate = {
-    val __obj = js.Dynamic.literal(baudRate = baudRate, bufferSize = bufferSize)
+    val __obj = js.Dynamic.literal(baudRate = baudRate.asInstanceOf[js.Any], bufferSize = bufferSize.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BaudRate]
   }

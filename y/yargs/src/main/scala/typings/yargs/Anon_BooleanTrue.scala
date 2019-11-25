@@ -12,7 +12,7 @@ trait Anon_BooleanTrue extends js.Object {
 object Anon_BooleanTrue {
   @scala.inline
   def apply(boolean: `true`): Anon_BooleanTrue = {
-    val __obj = js.Dynamic.literal(boolean = boolean)
+    val __obj = js.Dynamic.literal(boolean = boolean.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BooleanTrue]
   }

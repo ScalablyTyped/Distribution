@@ -1,8 +1,6 @@
 package typings.dojo.dojox.calendar
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValue
 import typings.dojo.dojo.Stateful
 import typings.dojo.dojoStrings.edited
 import typings.dojo.dojoStrings.focused
@@ -129,24 +127,104 @@ class _RendererMixin () extends Stateful {
     */
   def updateRendering(w: Double, h: Double): Unit = js.native
   @JSName("watch")
-  def watch_edited(property: edited, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_edited(
+    property: edited,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_focused(property: focused, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_focused(
+    property: focused,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_hovered(property: hovered, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_hovered(
+    property: hovered,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_item(property: item, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_item(
+    property: item,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_moveEnabled(property: moveEnabled, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_moveEnabled(
+    property: moveEnabled,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_owner(property: owner, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_owner(
+    property: owner,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_resizeEnabled(property: resizeEnabled, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_resizeEnabled(
+    property: resizeEnabled,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_selected(property: selected, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_selected(
+    property: selected,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_storeState(property: storeState, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_storeState(
+    property: storeState,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_visibilityLimits(property: visibilityLimits, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_visibilityLimits(
+    property: visibilityLimits,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

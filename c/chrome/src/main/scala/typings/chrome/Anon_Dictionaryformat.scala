@@ -20,10 +20,10 @@ object Anon_Dictionaryformat {
     dictionary_path: String = null
   ): Anon_Dictionaryformat = {
     val __obj = js.Dynamic.literal()
-    if (dictionary_format != null) __obj.updateDynamic("dictionary_format")(dictionary_format)
-    if (dictionary_language != null) __obj.updateDynamic("dictionary_language")(dictionary_language)
-    if (dictionary_locale != null) __obj.updateDynamic("dictionary_locale")(dictionary_locale)
-    if (dictionary_path != null) __obj.updateDynamic("dictionary_path")(dictionary_path)
+    if (dictionary_format != null) __obj.updateDynamic("dictionary_format")(dictionary_format.asInstanceOf[js.Any])
+    if (dictionary_language != null) __obj.updateDynamic("dictionary_language")(dictionary_language.asInstanceOf[js.Any])
+    if (dictionary_locale != null) __obj.updateDynamic("dictionary_locale")(dictionary_locale.asInstanceOf[js.Any])
+    if (dictionary_path != null) __obj.updateDynamic("dictionary_path")(dictionary_path.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Dictionaryformat]
   }
 }

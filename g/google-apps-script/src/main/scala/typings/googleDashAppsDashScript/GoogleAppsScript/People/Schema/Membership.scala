@@ -18,9 +18,9 @@ object Membership {
     metadata: FieldMetadata = null
   ): Membership = {
     val __obj = js.Dynamic.literal()
-    if (contactGroupMembership != null) __obj.updateDynamic("contactGroupMembership")(contactGroupMembership)
-    if (domainMembership != null) __obj.updateDynamic("domainMembership")(domainMembership)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (contactGroupMembership != null) __obj.updateDynamic("contactGroupMembership")(contactGroupMembership.asInstanceOf[js.Any])
+    if (domainMembership != null) __obj.updateDynamic("domainMembership")(domainMembership.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[Membership]
   }
 }

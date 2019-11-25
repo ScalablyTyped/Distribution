@@ -28,12 +28,12 @@ object CallOptions {
     timeout: Int | Double = null
   ): CallOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoPaginate)) __obj.updateDynamic("autoPaginate")(autoPaginate)
-    if (!js.isUndefined(isBundling)) __obj.updateDynamic("isBundling")(isBundling)
-    if (longrunning != null) __obj.updateDynamic("longrunning")(longrunning)
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
-    if (promise != null) __obj.updateDynamic("promise")(promise)
-    if (retry != null) __obj.updateDynamic("retry")(retry)
+    if (!js.isUndefined(autoPaginate)) __obj.updateDynamic("autoPaginate")(autoPaginate.asInstanceOf[js.Any])
+    if (!js.isUndefined(isBundling)) __obj.updateDynamic("isBundling")(isBundling.asInstanceOf[js.Any])
+    if (longrunning != null) __obj.updateDynamic("longrunning")(longrunning.asInstanceOf[js.Any])
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
+    if (promise != null) __obj.updateDynamic("promise")(promise.asInstanceOf[js.Any])
+    if (retry != null) __obj.updateDynamic("retry")(retry.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallOptions]
   }

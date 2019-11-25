@@ -27,10 +27,10 @@ object Schema {
     `package`: String = null,
     service: js.Array[Service] = null
   ): Schema = {
-    val __obj = js.Dynamic.literal(enums = enums, imports = imports, messages = messages, options = options, syntax = syntax)
-    __obj.updateDynamic("extends")(`extends`)
-    if (`package` != null) __obj.updateDynamic("package")(`package`)
-    if (service != null) __obj.updateDynamic("service")(service)
+    val __obj = js.Dynamic.literal(enums = enums.asInstanceOf[js.Any], imports = imports.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], syntax = syntax.asInstanceOf[js.Any])
+    __obj.updateDynamic("extends")(`extends`.asInstanceOf[js.Any])
+    if (`package` != null) __obj.updateDynamic("package")(`package`.asInstanceOf[js.Any])
+    if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
     __obj.asInstanceOf[Schema]
   }
 }

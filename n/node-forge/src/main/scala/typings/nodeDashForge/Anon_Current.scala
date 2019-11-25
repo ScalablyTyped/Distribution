@@ -13,8 +13,8 @@ trait Anon_Current extends js.Object {
 object Anon_Current {
   @scala.inline
   def apply(current: ConnectionState, pending: ConnectionState = null): Anon_Current = {
-    val __obj = js.Dynamic.literal(current = current)
-    if (pending != null) __obj.updateDynamic("pending")(pending)
+    val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any])
+    if (pending != null) __obj.updateDynamic("pending")(pending.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Current]
   }
 }

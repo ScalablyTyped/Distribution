@@ -23,10 +23,10 @@ object VerifyOptions {
     parse: parse = null
   ): VerifyOptions[komplet, parse] = {
     val __obj = js.Dynamic.literal()
-    if (algorithms != null) __obj.updateDynamic("algorithms")(algorithms)
+    if (algorithms != null) __obj.updateDynamic("algorithms")(algorithms.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(complete.asInstanceOf[js.Any])
-    if (crit != null) __obj.updateDynamic("crit")(crit)
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (crit != null) __obj.updateDynamic("crit")(crit.asInstanceOf[js.Any])
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (parse != null) __obj.updateDynamic("parse")(parse.asInstanceOf[js.Any])
     __obj.asInstanceOf[VerifyOptions[komplet, parse]]
   }

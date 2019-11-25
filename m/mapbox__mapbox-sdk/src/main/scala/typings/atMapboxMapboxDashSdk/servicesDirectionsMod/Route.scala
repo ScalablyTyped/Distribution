@@ -51,8 +51,8 @@ object Route {
     weight_name: String,
     voiceLocale: String = null
   ): Route = {
-    val __obj = js.Dynamic.literal(distance = distance, duration = duration, geometry = geometry.asInstanceOf[js.Any], legs = legs, weight = weight, weight_name = weight_name)
-    if (voiceLocale != null) __obj.updateDynamic("voiceLocale")(voiceLocale)
+    val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], geometry = geometry.asInstanceOf[js.Any], legs = legs.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any], weight_name = weight_name.asInstanceOf[js.Any])
+    if (voiceLocale != null) __obj.updateDynamic("voiceLocale")(voiceLocale.asInstanceOf[js.Any])
     __obj.asInstanceOf[Route]
   }
 }

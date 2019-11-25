@@ -36,7 +36,7 @@ object DefaultArcObject {
     startAngle: Double,
     padAngle: Int | Double = null
   ): DefaultArcObject = {
-    val __obj = js.Dynamic.literal(endAngle = endAngle, innerRadius = innerRadius, outerRadius = outerRadius, startAngle = startAngle)
+    val __obj = js.Dynamic.literal(endAngle = endAngle.asInstanceOf[js.Any], innerRadius = innerRadius.asInstanceOf[js.Any], outerRadius = outerRadius.asInstanceOf[js.Any], startAngle = startAngle.asInstanceOf[js.Any])
     if (padAngle != null) __obj.updateDynamic("padAngle")(padAngle.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultArcObject]
   }

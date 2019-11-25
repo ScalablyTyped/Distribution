@@ -33,9 +33,9 @@ object Options {
     trustXForwardedHostHeader: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(trustAzureHeader)) __obj.updateDynamic("trustAzureHeader")(trustAzureHeader)
-    if (!js.isUndefined(trustProtoHeader)) __obj.updateDynamic("trustProtoHeader")(trustProtoHeader)
-    if (!js.isUndefined(trustXForwardedHostHeader)) __obj.updateDynamic("trustXForwardedHostHeader")(trustXForwardedHostHeader)
+    if (!js.isUndefined(trustAzureHeader)) __obj.updateDynamic("trustAzureHeader")(trustAzureHeader.asInstanceOf[js.Any])
+    if (!js.isUndefined(trustProtoHeader)) __obj.updateDynamic("trustProtoHeader")(trustProtoHeader.asInstanceOf[js.Any])
+    if (!js.isUndefined(trustXForwardedHostHeader)) __obj.updateDynamic("trustXForwardedHostHeader")(trustXForwardedHostHeader.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

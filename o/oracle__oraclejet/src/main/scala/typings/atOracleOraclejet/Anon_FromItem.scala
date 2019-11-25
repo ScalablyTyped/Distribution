@@ -23,8 +23,8 @@ object Anon_FromItem {
     toKey: js.Any,
     StringDictionary: /* propName */ StringDictionary[js.Any] = null
   ): Anon_FromItem = {
-    val __obj = js.Dynamic.literal(fromItem = fromItem, fromKey = fromKey, toItem = toItem, toKey = toKey)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(fromItem = fromItem.asInstanceOf[js.Any], fromKey = fromKey.asInstanceOf[js.Any], toItem = toItem.asInstanceOf[js.Any], toKey = toKey.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_FromItem]
   }
 }

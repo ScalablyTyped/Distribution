@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait BreadcrumbType extends js.Object
 
+object BreadcrumbType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def http: typings.ravenDashJs.ravenDashJsStrings.http = this.cast("http")
+  @scala.inline
+  def navigation: typings.ravenDashJs.ravenDashJsStrings.navigation = this.cast("navigation")
+}
+

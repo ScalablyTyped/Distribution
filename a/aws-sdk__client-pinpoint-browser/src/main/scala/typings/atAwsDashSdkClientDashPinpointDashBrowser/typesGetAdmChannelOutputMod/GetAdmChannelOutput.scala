@@ -22,7 +22,7 @@ trait GetAdmChannelOutput extends OutputTypesUnion {
 object GetAdmChannelOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, ADMChannelResponse: _UnmarshalledADMChannelResponse): GetAdmChannelOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata, ADMChannelResponse = ADMChannelResponse)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], ADMChannelResponse = ADMChannelResponse.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetAdmChannelOutput]
   }

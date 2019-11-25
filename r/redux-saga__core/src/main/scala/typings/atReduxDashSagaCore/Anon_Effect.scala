@@ -14,8 +14,8 @@ trait Anon_Effect extends js.Object {
 object Anon_Effect {
   @scala.inline
   def apply(effect: js.Any, effectId: Double, parentEffectId: Double, label: String = null): Anon_Effect = {
-    val __obj = js.Dynamic.literal(effect = effect, effectId = effectId, parentEffectId = parentEffectId)
-    if (label != null) __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(effect = effect.asInstanceOf[js.Any], effectId = effectId.asInstanceOf[js.Any], parentEffectId = parentEffectId.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Effect]
   }
 }

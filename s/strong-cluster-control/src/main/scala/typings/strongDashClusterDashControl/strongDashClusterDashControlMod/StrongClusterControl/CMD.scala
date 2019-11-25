@@ -12,7 +12,7 @@ trait CMD extends js.Object {
 object CMD {
   @scala.inline
   def apply(SHUTDOWN: CLUSTER_CONTROL_shutdown): CMD = {
-    val __obj = js.Dynamic.literal(SHUTDOWN = SHUTDOWN)
+    val __obj = js.Dynamic.literal(SHUTDOWN = SHUTDOWN.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CMD]
   }

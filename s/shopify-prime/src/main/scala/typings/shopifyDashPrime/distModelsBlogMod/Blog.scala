@@ -65,17 +65,17 @@ object Blog {
     updated_at: String = null
   ): Blog = {
     val __obj = js.Dynamic.literal()
-    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
+    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id.asInstanceOf[js.Any])
     if (commentable != null) __obj.updateDynamic("commentable")(commentable.asInstanceOf[js.Any])
-    if (created_at != null) __obj.updateDynamic("created_at")(created_at)
-    if (feedburner != null) __obj.updateDynamic("feedburner")(feedburner)
-    if (feedburner_url != null) __obj.updateDynamic("feedburner_url")(feedburner_url)
-    if (handle != null) __obj.updateDynamic("handle")(handle)
+    if (created_at != null) __obj.updateDynamic("created_at")(created_at.asInstanceOf[js.Any])
+    if (feedburner != null) __obj.updateDynamic("feedburner")(feedburner.asInstanceOf[js.Any])
+    if (feedburner_url != null) __obj.updateDynamic("feedburner_url")(feedburner_url.asInstanceOf[js.Any])
+    if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags)
-    if (template_suffix != null) __obj.updateDynamic("template_suffix")(template_suffix)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at)
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (template_suffix != null) __obj.updateDynamic("template_suffix")(template_suffix.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at.asInstanceOf[js.Any])
     __obj.asInstanceOf[Blog]
   }
 }

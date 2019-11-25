@@ -20,8 +20,8 @@ object Anon_Channel {
     storyStore: typings.atStorybookClientDashApi.distStoryUnderscoreStoreMod.default,
     channel: default = null
   ): Anon_Channel = {
-    val __obj = js.Dynamic.literal(clearDecorators = js.Any.fromFunction0(clearDecorators), clientApi = clientApi, storyStore = storyStore)
-    if (channel != null) __obj.updateDynamic("channel")(channel)
+    val __obj = js.Dynamic.literal(clearDecorators = js.Any.fromFunction0(clearDecorators), clientApi = clientApi.asInstanceOf[js.Any], storyStore = storyStore.asInstanceOf[js.Any])
+    if (channel != null) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Channel]
   }
 }

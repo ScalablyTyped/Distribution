@@ -12,7 +12,7 @@ object AccelerometerGeneralOption {
   @scala.inline
   def apply(controller: String = null): AccelerometerGeneralOption = {
     val __obj = js.Dynamic.literal()
-    if (controller != null) __obj.updateDynamic("controller")(controller)
+    if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccelerometerGeneralOption]
   }
 }

@@ -13,8 +13,8 @@ object ChromeOsDeviceAction {
   @scala.inline
   def apply(action: String = null, deprovisionReason: String = null): ChromeOsDeviceAction = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action)
-    if (deprovisionReason != null) __obj.updateDynamic("deprovisionReason")(deprovisionReason)
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (deprovisionReason != null) __obj.updateDynamic("deprovisionReason")(deprovisionReason.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChromeOsDeviceAction]
   }
 }

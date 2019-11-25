@@ -24,11 +24,11 @@ object AnchorLinkProps {
     target: String = null,
     title: ReactNode = null
   ): AnchorLinkProps = {
-    val __obj = js.Dynamic.literal(href = href)
+    val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnchorLinkProps]
   }

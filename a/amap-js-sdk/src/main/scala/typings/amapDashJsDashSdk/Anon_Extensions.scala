@@ -27,12 +27,12 @@ object Anon_Extensions {
     showTraffic: js.UndefOr[Boolean] = js.undefined
   ): Anon_Extensions = {
     val __obj = js.Dynamic.literal()
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
-    if (!js.isUndefined(hideMarkers)) __obj.updateDynamic("hideMarkers")(hideMarkers)
-    if (map != null) __obj.updateDynamic("map")(map)
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideMarkers)) __obj.updateDynamic("hideMarkers")(hideMarkers.asInstanceOf[js.Any])
+    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
     if (panel != null) __obj.updateDynamic("panel")(panel.asInstanceOf[js.Any])
-    if (policy != null) __obj.updateDynamic("policy")(policy)
-    if (!js.isUndefined(showTraffic)) __obj.updateDynamic("showTraffic")(showTraffic)
+    if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
+    if (!js.isUndefined(showTraffic)) __obj.updateDynamic("showTraffic")(showTraffic.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Extensions]
   }
 }

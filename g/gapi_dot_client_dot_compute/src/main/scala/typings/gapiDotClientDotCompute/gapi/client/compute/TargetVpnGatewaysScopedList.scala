@@ -16,8 +16,8 @@ object TargetVpnGatewaysScopedList {
   @scala.inline
   def apply(targetVpnGateways: js.Array[TargetVpnGateway] = null, warning: Anon_Code = null): TargetVpnGatewaysScopedList = {
     val __obj = js.Dynamic.literal()
-    if (targetVpnGateways != null) __obj.updateDynamic("targetVpnGateways")(targetVpnGateways)
-    if (warning != null) __obj.updateDynamic("warning")(warning)
+    if (targetVpnGateways != null) __obj.updateDynamic("targetVpnGateways")(targetVpnGateways.asInstanceOf[js.Any])
+    if (warning != null) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetVpnGatewaysScopedList]
   }
 }

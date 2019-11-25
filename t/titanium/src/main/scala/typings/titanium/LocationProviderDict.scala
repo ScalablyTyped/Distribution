@@ -27,7 +27,7 @@ object LocationProviderDict {
   def apply(accuracy: Int | Double = null, name: String = null, power: Int | Double = null): LocationProviderDict = {
     val __obj = js.Dynamic.literal()
     if (accuracy != null) __obj.updateDynamic("accuracy")(accuracy.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (power != null) __obj.updateDynamic("power")(power.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationProviderDict]
   }

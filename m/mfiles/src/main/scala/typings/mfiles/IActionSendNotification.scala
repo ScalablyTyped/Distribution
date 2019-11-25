@@ -19,7 +19,7 @@ object IActionSendNotification {
     RecipientsEx: IUserOrUserGroupIDExs,
     Subject: String
   ): IActionSendNotification = {
-    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), Message = Message, RecipientsEx = RecipientsEx, Subject = Subject)
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), Message = Message.asInstanceOf[js.Any], RecipientsEx = RecipientsEx.asInstanceOf[js.Any], Subject = Subject.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IActionSendNotification]
   }

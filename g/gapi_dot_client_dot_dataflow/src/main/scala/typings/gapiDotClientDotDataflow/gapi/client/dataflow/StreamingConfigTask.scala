@@ -33,10 +33,10 @@ object StreamingConfigTask {
     windmillServicePort: String = null
   ): StreamingConfigTask = {
     val __obj = js.Dynamic.literal()
-    if (streamingComputationConfigs != null) __obj.updateDynamic("streamingComputationConfigs")(streamingComputationConfigs)
-    if (userStepToStateFamilyNameMap != null) __obj.updateDynamic("userStepToStateFamilyNameMap")(userStepToStateFamilyNameMap)
-    if (windmillServiceEndpoint != null) __obj.updateDynamic("windmillServiceEndpoint")(windmillServiceEndpoint)
-    if (windmillServicePort != null) __obj.updateDynamic("windmillServicePort")(windmillServicePort)
+    if (streamingComputationConfigs != null) __obj.updateDynamic("streamingComputationConfigs")(streamingComputationConfigs.asInstanceOf[js.Any])
+    if (userStepToStateFamilyNameMap != null) __obj.updateDynamic("userStepToStateFamilyNameMap")(userStepToStateFamilyNameMap.asInstanceOf[js.Any])
+    if (windmillServiceEndpoint != null) __obj.updateDynamic("windmillServiceEndpoint")(windmillServiceEndpoint.asInstanceOf[js.Any])
+    if (windmillServicePort != null) __obj.updateDynamic("windmillServicePort")(windmillServicePort.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamingConfigTask]
   }
 }

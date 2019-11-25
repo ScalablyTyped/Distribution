@@ -20,8 +20,8 @@ object DebugInfo {
     timers: js.Array[QueueItem],
     autorun: Error = null
   ): DebugInfo = {
-    val __obj = js.Dynamic.literal(counters = counters, instanceStack = instanceStack, timers = timers)
-    if (autorun != null) __obj.updateDynamic("autorun")(autorun)
+    val __obj = js.Dynamic.literal(counters = counters.asInstanceOf[js.Any], instanceStack = instanceStack.asInstanceOf[js.Any], timers = timers.asInstanceOf[js.Any])
+    if (autorun != null) __obj.updateDynamic("autorun")(autorun.asInstanceOf[js.Any])
     __obj.asInstanceOf[DebugInfo]
   }
 }

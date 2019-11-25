@@ -18,8 +18,8 @@ object EntitlementsListResponse {
   @scala.inline
   def apply(entitlement: js.Array[Entitlement] = null, kind: String = null): EntitlementsListResponse = {
     val __obj = js.Dynamic.literal()
-    if (entitlement != null) __obj.updateDynamic("entitlement")(entitlement)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (entitlement != null) __obj.updateDynamic("entitlement")(entitlement.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntitlementsListResponse]
   }
 }

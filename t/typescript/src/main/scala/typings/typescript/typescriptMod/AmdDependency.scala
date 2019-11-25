@@ -12,8 +12,8 @@ trait AmdDependency extends js.Object {
 object AmdDependency {
   @scala.inline
   def apply(path: String, name: String = null): AmdDependency = {
-    val __obj = js.Dynamic.literal(path = path)
-    if (name != null) __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[AmdDependency]
   }
 }

@@ -13,8 +13,8 @@ object OrdersCreateTestReturnResponse {
   @scala.inline
   def apply(kind: String = null, returnId: String = null): OrdersCreateTestReturnResponse = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (returnId != null) __obj.updateDynamic("returnId")(returnId)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (returnId != null) __obj.updateDynamic("returnId")(returnId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrdersCreateTestReturnResponse]
   }
 }

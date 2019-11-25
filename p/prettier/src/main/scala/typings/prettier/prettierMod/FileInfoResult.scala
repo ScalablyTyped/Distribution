@@ -12,8 +12,8 @@ trait FileInfoResult extends js.Object {
 object FileInfoResult {
   @scala.inline
   def apply(ignored: Boolean, inferredParser: String = null): FileInfoResult = {
-    val __obj = js.Dynamic.literal(ignored = ignored)
-    if (inferredParser != null) __obj.updateDynamic("inferredParser")(inferredParser)
+    val __obj = js.Dynamic.literal(ignored = ignored.asInstanceOf[js.Any])
+    if (inferredParser != null) __obj.updateDynamic("inferredParser")(inferredParser.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileInfoResult]
   }
 }

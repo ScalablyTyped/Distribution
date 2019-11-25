@@ -19,10 +19,10 @@ object CreateItemIncluded {
     attributes: CreateStorageDataAttributes = null,
     relationships: CreateItemRelationships = null
   ): CreateItemIncluded = {
-    val __obj = js.Dynamic.literal(id = id)
-    __obj.updateDynamic("type")(`type`)
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
-    if (relationships != null) __obj.updateDynamic("relationships")(relationships)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (relationships != null) __obj.updateDynamic("relationships")(relationships.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateItemIncluded]
   }
 }

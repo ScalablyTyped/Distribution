@@ -12,7 +12,7 @@ object Options {
   @scala.inline
   def apply(padding: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding)
+    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

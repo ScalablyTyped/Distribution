@@ -14,7 +14,7 @@ object CellEditEventArgs {
   @scala.inline
   def apply(editCellsInfo: js.Array[_] = null): CellEditEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (editCellsInfo != null) __obj.updateDynamic("editCellsInfo")(editCellsInfo)
+    if (editCellsInfo != null) __obj.updateDynamic("editCellsInfo")(editCellsInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellEditEventArgs]
   }
 }

@@ -14,7 +14,7 @@ trait LTV extends js.Object {
 object LTV {
   @scala.inline
   def apply(date: String, ltv: Double): LTV = {
-    val __obj = js.Dynamic.literal(date = date, ltv = ltv)
+    val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], ltv = ltv.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LTV]
   }

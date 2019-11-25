@@ -33,12 +33,12 @@ object Analyze {
     selfLink: String = null
   ): Analyze = {
     val __obj = js.Dynamic.literal()
-    if (dataDescription != null) __obj.updateDynamic("dataDescription")(dataDescription)
-    if (errors != null) __obj.updateDynamic("errors")(errors)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (modelDescription != null) __obj.updateDynamic("modelDescription")(modelDescription)
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (dataDescription != null) __obj.updateDynamic("dataDescription")(dataDescription.asInstanceOf[js.Any])
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (modelDescription != null) __obj.updateDynamic("modelDescription")(modelDescription.asInstanceOf[js.Any])
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
     __obj.asInstanceOf[Analyze]
   }
 }

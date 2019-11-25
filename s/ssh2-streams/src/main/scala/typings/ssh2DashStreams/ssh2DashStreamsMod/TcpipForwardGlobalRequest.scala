@@ -18,7 +18,7 @@ trait TcpipForwardGlobalRequest extends _GlobalRequest {
 object TcpipForwardGlobalRequest {
   @scala.inline
   def apply(bindAddr: String, bindPort: Double): TcpipForwardGlobalRequest = {
-    val __obj = js.Dynamic.literal(bindAddr = bindAddr, bindPort = bindPort)
+    val __obj = js.Dynamic.literal(bindAddr = bindAddr.asInstanceOf[js.Any], bindPort = bindPort.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TcpipForwardGlobalRequest]
   }

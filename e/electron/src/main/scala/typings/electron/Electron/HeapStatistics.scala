@@ -29,7 +29,7 @@ object HeapStatistics {
     totalPhysicalSize: Double,
     usedHeapSize: Double
   ): HeapStatistics = {
-    val __obj = js.Dynamic.literal(doesZapGarbage = doesZapGarbage, heapSizeLimit = heapSizeLimit, mallocedMemory = mallocedMemory, peakMallocedMemory = peakMallocedMemory, totalAvailableSize = totalAvailableSize, totalHeapSize = totalHeapSize, totalHeapSizeExecutable = totalHeapSizeExecutable, totalPhysicalSize = totalPhysicalSize, usedHeapSize = usedHeapSize)
+    val __obj = js.Dynamic.literal(doesZapGarbage = doesZapGarbage.asInstanceOf[js.Any], heapSizeLimit = heapSizeLimit.asInstanceOf[js.Any], mallocedMemory = mallocedMemory.asInstanceOf[js.Any], peakMallocedMemory = peakMallocedMemory.asInstanceOf[js.Any], totalAvailableSize = totalAvailableSize.asInstanceOf[js.Any], totalHeapSize = totalHeapSize.asInstanceOf[js.Any], totalHeapSizeExecutable = totalHeapSizeExecutable.asInstanceOf[js.Any], totalPhysicalSize = totalPhysicalSize.asInstanceOf[js.Any], usedHeapSize = usedHeapSize.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HeapStatistics]
   }

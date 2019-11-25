@@ -63,15 +63,15 @@ object LayersBubbleSettings {
   ): LayersBubbleSettings = {
     val __obj = js.Dynamic.literal()
     if (bubbleOpacity != null) __obj.updateDynamic("bubbleOpacity")(bubbleOpacity.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (colorMappings != null) __obj.updateDynamic("colorMappings")(colorMappings)
-    if (colorValuePath != null) __obj.updateDynamic("colorValuePath")(colorValuePath)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (colorMappings != null) __obj.updateDynamic("colorMappings")(colorMappings.asInstanceOf[js.Any])
+    if (colorValuePath != null) __obj.updateDynamic("colorValuePath")(colorValuePath.asInstanceOf[js.Any])
     if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
     if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(showBubble)) __obj.updateDynamic("showBubble")(showBubble)
-    if (!js.isUndefined(showTooltip)) __obj.updateDynamic("showTooltip")(showTooltip)
-    if (tooltipTemplate != null) __obj.updateDynamic("tooltipTemplate")(tooltipTemplate)
-    if (valuePath != null) __obj.updateDynamic("valuePath")(valuePath)
+    if (!js.isUndefined(showBubble)) __obj.updateDynamic("showBubble")(showBubble.asInstanceOf[js.Any])
+    if (!js.isUndefined(showTooltip)) __obj.updateDynamic("showTooltip")(showTooltip.asInstanceOf[js.Any])
+    if (tooltipTemplate != null) __obj.updateDynamic("tooltipTemplate")(tooltipTemplate.asInstanceOf[js.Any])
+    if (valuePath != null) __obj.updateDynamic("valuePath")(valuePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayersBubbleSettings]
   }
 }

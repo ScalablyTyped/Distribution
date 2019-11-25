@@ -15,9 +15,9 @@ trait Hint extends js.Object {
 object Hint {
   @scala.inline
   def apply(hint: String, element: String | HTMLElement | Element = null, hintPosition: String = null): Hint = {
-    val __obj = js.Dynamic.literal(hint = hint)
+    val __obj = js.Dynamic.literal(hint = hint.asInstanceOf[js.Any])
     if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
-    if (hintPosition != null) __obj.updateDynamic("hintPosition")(hintPosition)
+    if (hintPosition != null) __obj.updateDynamic("hintPosition")(hintPosition.asInstanceOf[js.Any])
     __obj.asInstanceOf[Hint]
   }
 }

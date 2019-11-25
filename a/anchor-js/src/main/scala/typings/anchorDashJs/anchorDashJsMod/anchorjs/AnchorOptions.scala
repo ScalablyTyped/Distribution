@@ -24,12 +24,12 @@ object AnchorOptions {
     visible: AnchorVisibility = null
   ): AnchorOptions = {
     val __obj = js.Dynamic.literal()
-    if (arialabel != null) __obj.updateDynamic("arialabel")(arialabel)
-    if (`class` != null) __obj.updateDynamic("class")(`class`)
-    if (icons != null) __obj.updateDynamic("icons")(icons)
-    if (placement != null) __obj.updateDynamic("placement")(placement)
+    if (arialabel != null) __obj.updateDynamic("arialabel")(arialabel.asInstanceOf[js.Any])
+    if (`class` != null) __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
+    if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
+    if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
     if (truncate != null) __obj.updateDynamic("truncate")(truncate.asInstanceOf[js.Any])
-    if (visible != null) __obj.updateDynamic("visible")(visible)
+    if (visible != null) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnchorOptions]
   }
 }

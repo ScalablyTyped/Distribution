@@ -22,11 +22,11 @@ object AccountAddress {
     streetAddress: String = null
   ): AccountAddress = {
     val __obj = js.Dynamic.literal()
-    if (country != null) __obj.updateDynamic("country")(country)
-    if (locality != null) __obj.updateDynamic("locality")(locality)
-    if (postalCode != null) __obj.updateDynamic("postalCode")(postalCode)
-    if (region != null) __obj.updateDynamic("region")(region)
-    if (streetAddress != null) __obj.updateDynamic("streetAddress")(streetAddress)
+    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
+    if (locality != null) __obj.updateDynamic("locality")(locality.asInstanceOf[js.Any])
+    if (postalCode != null) __obj.updateDynamic("postalCode")(postalCode.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    if (streetAddress != null) __obj.updateDynamic("streetAddress")(streetAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountAddress]
   }
 }

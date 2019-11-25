@@ -23,9 +23,9 @@ object Anon_CndMode {
   ): Anon_CndMode[Ext] = {
     val __obj = js.Dynamic.literal()
     if (cnd != null) __obj.updateDynamic("cnd")(cnd.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (reusable != null) __obj.updateDynamic("reusable")(reusable.asInstanceOf[js.Any])
-    if (tag != null) __obj.updateDynamic("tag")(tag)
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CndMode[Ext]]
   }
 }

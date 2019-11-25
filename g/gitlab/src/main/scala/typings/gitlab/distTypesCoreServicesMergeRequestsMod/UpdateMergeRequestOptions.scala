@@ -36,18 +36,18 @@ object UpdateMergeRequestOptions {
     title: String = null
   ): UpdateMergeRequestOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allow_collaboration)) __obj.updateDynamic("allow_collaboration")(allow_collaboration)
-    if (!js.isUndefined(allow_maintainer_to_push)) __obj.updateDynamic("allow_maintainer_to_push")(allow_maintainer_to_push)
+    if (!js.isUndefined(allow_collaboration)) __obj.updateDynamic("allow_collaboration")(allow_collaboration.asInstanceOf[js.Any])
+    if (!js.isUndefined(allow_maintainer_to_push)) __obj.updateDynamic("allow_maintainer_to_push")(allow_maintainer_to_push.asInstanceOf[js.Any])
     if (assignee_id != null) __obj.updateDynamic("assignee_id")(assignee_id.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (!js.isUndefined(discussion_locked)) __obj.updateDynamic("discussion_locked")(discussion_locked)
-    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(discussion_locked)) __obj.updateDynamic("discussion_locked")(discussion_locked.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     if (milestone_id != null) __obj.updateDynamic("milestone_id")(milestone_id.asInstanceOf[js.Any])
-    if (!js.isUndefined(remove_source_branch)) __obj.updateDynamic("remove_source_branch")(remove_source_branch)
-    if (!js.isUndefined(squash)) __obj.updateDynamic("squash")(squash)
-    if (state_event != null) __obj.updateDynamic("state_event")(state_event)
+    if (!js.isUndefined(remove_source_branch)) __obj.updateDynamic("remove_source_branch")(remove_source_branch.asInstanceOf[js.Any])
+    if (!js.isUndefined(squash)) __obj.updateDynamic("squash")(squash.asInstanceOf[js.Any])
+    if (state_event != null) __obj.updateDynamic("state_event")(state_event.asInstanceOf[js.Any])
     if (target_branch != null) __obj.updateDynamic("target_branch")(target_branch.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateMergeRequestOptions]
   }
 }

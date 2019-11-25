@@ -11,7 +11,7 @@ trait UserAgentConnectedEvent extends js.Object {
 object UserAgentConnectedEvent {
   @scala.inline
   def apply(socket: Socket): UserAgentConnectedEvent = {
-    val __obj = js.Dynamic.literal(socket = socket)
+    val __obj = js.Dynamic.literal(socket = socket.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UserAgentConnectedEvent]
   }

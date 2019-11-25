@@ -14,9 +14,9 @@ object CreativeFieldsListResponse {
   @scala.inline
   def apply(creativeFields: js.Array[CreativeField] = null, kind: String = null, nextPageToken: String = null): CreativeFieldsListResponse = {
     val __obj = js.Dynamic.literal()
-    if (creativeFields != null) __obj.updateDynamic("creativeFields")(creativeFields)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (creativeFields != null) __obj.updateDynamic("creativeFields")(creativeFields.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreativeFieldsListResponse]
   }
 }

@@ -20,10 +20,10 @@ object Anon_AuthorizationCode {
     password: Anon_RefreshUrl = null
   ): Anon_AuthorizationCode = {
     val __obj = js.Dynamic.literal()
-    if (authorizationCode != null) __obj.updateDynamic("authorizationCode")(authorizationCode)
-    if (clientCredentials != null) __obj.updateDynamic("clientCredentials")(clientCredentials)
-    if (`implicit` != null) __obj.updateDynamic("implicit")(`implicit`)
-    if (password != null) __obj.updateDynamic("password")(password)
+    if (authorizationCode != null) __obj.updateDynamic("authorizationCode")(authorizationCode.asInstanceOf[js.Any])
+    if (clientCredentials != null) __obj.updateDynamic("clientCredentials")(clientCredentials.asInstanceOf[js.Any])
+    if (`implicit` != null) __obj.updateDynamic("implicit")(`implicit`.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AuthorizationCode]
   }
 }

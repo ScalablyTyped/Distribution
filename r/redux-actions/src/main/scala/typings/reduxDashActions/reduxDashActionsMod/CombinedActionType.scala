@@ -12,7 +12,7 @@ object CombinedActionType {
   @scala.inline
   def apply(_dummy: js.UndefOr[scala.Nothing] = js.undefined): CombinedActionType = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(_dummy)) __obj.updateDynamic("_dummy")(_dummy)
+    if (!js.isUndefined(_dummy)) __obj.updateDynamic("_dummy")(_dummy.asInstanceOf[js.Any])
     __obj.asInstanceOf[CombinedActionType]
   }
 }

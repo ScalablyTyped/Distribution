@@ -15,8 +15,8 @@ object ProductCustomGroup {
   @scala.inline
   def apply(attributes: js.Array[ProductCustomAttribute] = null, name: String = null): ProductCustomGroup = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProductCustomGroup]
   }
 }

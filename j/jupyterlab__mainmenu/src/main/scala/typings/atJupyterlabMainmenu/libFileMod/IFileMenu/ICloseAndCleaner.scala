@@ -35,7 +35,7 @@ object ICloseAndCleaner {
     tracker: IWidgetTracker[T],
     isEnabled: T => Boolean = null
   ): ICloseAndCleaner[T] = {
-    val __obj = js.Dynamic.literal(action = action, closeAndCleanup = js.Any.fromFunction1(closeAndCleanup), name = name, tracker = tracker)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], closeAndCleanup = js.Any.fromFunction1(closeAndCleanup), name = name.asInstanceOf[js.Any], tracker = tracker.asInstanceOf[js.Any])
     if (isEnabled != null) __obj.updateDynamic("isEnabled")(js.Any.fromFunction1(isEnabled))
     __obj.asInstanceOf[ICloseAndCleaner[T]]
   }

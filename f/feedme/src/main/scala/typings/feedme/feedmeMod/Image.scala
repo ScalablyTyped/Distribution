@@ -15,7 +15,7 @@ trait Image extends js.Object {
 object Image {
   @scala.inline
   def apply(height: String, link: String, title: String, url: String, width: String): Image = {
-    val __obj = js.Dynamic.literal(height = height, link = link, title = title, url = url, width = width)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Image]
   }

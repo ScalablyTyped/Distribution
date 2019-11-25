@@ -73,14 +73,14 @@ object Result {
     socketPath: String = null,
     title: String = null
   ): Result = {
-    val __obj = js.Dynamic.literal(connections = connections, duration = duration, errors = errors, finish = finish, latency = latency, non2xx = non2xx, pipelining = pipelining, requests = requests, start = start, throughput = throughput, timeouts = timeouts, url = url)
-    __obj.updateDynamic("1XX")(`1XX`)
-    __obj.updateDynamic("2XX")(`2XX`)
-    __obj.updateDynamic("3XX")(`3XX`)
-    __obj.updateDynamic("4XX")(`4XX`)
-    __obj.updateDynamic("5XX")(`5XX`)
-    if (socketPath != null) __obj.updateDynamic("socketPath")(socketPath)
-    if (title != null) __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(connections = connections.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any], finish = finish.asInstanceOf[js.Any], latency = latency.asInstanceOf[js.Any], non2xx = non2xx.asInstanceOf[js.Any], pipelining = pipelining.asInstanceOf[js.Any], requests = requests.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], throughput = throughput.asInstanceOf[js.Any], timeouts = timeouts.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("1XX")(`1XX`.asInstanceOf[js.Any])
+    __obj.updateDynamic("2XX")(`2XX`.asInstanceOf[js.Any])
+    __obj.updateDynamic("3XX")(`3XX`.asInstanceOf[js.Any])
+    __obj.updateDynamic("4XX")(`4XX`.asInstanceOf[js.Any])
+    __obj.updateDynamic("5XX")(`5XX`.asInstanceOf[js.Any])
+    if (socketPath != null) __obj.updateDynamic("socketPath")(socketPath.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Result]
   }
 }

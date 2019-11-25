@@ -18,10 +18,10 @@ object OmaSettingBoolean {
     value: js.UndefOr[Boolean] = js.undefined
   ): OmaSettingBoolean = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (omaUri != null) __obj.updateDynamic("omaUri")(omaUri)
-    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (omaUri != null) __obj.updateDynamic("omaUri")(omaUri.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[OmaSettingBoolean]
   }
 }

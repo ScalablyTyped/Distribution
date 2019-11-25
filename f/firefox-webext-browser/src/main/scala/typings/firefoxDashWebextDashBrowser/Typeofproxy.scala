@@ -50,7 +50,7 @@ object Typeofproxy {
     settings: Setting,
     unregister: () => js.Promise[Unit]
   ): Typeofproxy = {
-    val __obj = js.Dynamic.literal(onError = onError, onProxyError = onProxyError, onRequest = onRequest, register = js.Any.fromFunction1(register), registerProxyScript = js.Any.fromFunction1(registerProxyScript), settings = settings, unregister = js.Any.fromFunction0(unregister))
+    val __obj = js.Dynamic.literal(onError = onError.asInstanceOf[js.Any], onProxyError = onProxyError.asInstanceOf[js.Any], onRequest = onRequest.asInstanceOf[js.Any], register = js.Any.fromFunction1(register), registerProxyScript = js.Any.fromFunction1(registerProxyScript), settings = settings.asInstanceOf[js.Any], unregister = js.Any.fromFunction0(unregister))
   
     __obj.asInstanceOf[Typeofproxy]
   }

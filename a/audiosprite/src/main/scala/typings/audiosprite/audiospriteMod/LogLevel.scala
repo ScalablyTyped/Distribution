@@ -13,3 +13,18 @@ import scala.scalajs.js.annotation._
 */
 trait LogLevel extends js.Object
 
+object LogLevel {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def debug: typings.audiosprite.audiospriteStrings.debug = this.cast("debug")
+  @scala.inline
+  def error: typings.audiosprite.audiospriteStrings.error = this.cast("error")
+  @scala.inline
+  def info: typings.audiosprite.audiospriteStrings.info = this.cast("info")
+  @scala.inline
+  def notice: typings.audiosprite.audiospriteStrings.notice = this.cast("notice")
+  @scala.inline
+  def warning: typings.audiosprite.audiospriteStrings.warning = this.cast("warning")
+}
+

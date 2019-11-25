@@ -15,8 +15,8 @@ trait GetCacheObject extends js.Object {
 object GetCacheObject {
   @scala.inline
   def apply(data: Buffer, integrity: String, size: Double, metadata: js.Any = null): GetCacheObject = {
-    val __obj = js.Dynamic.literal(data = data, integrity = integrity, size = size)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], integrity = integrity.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCacheObject]
   }
 }

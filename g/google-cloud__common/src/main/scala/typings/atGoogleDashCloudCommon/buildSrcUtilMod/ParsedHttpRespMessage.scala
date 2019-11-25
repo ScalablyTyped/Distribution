@@ -13,8 +13,8 @@ trait ParsedHttpRespMessage extends js.Object {
 object ParsedHttpRespMessage {
   @scala.inline
   def apply(resp: Response[_], err: ApiError = null): ParsedHttpRespMessage = {
-    val __obj = js.Dynamic.literal(resp = resp)
-    if (err != null) __obj.updateDynamic("err")(err)
+    val __obj = js.Dynamic.literal(resp = resp.asInstanceOf[js.Any])
+    if (err != null) __obj.updateDynamic("err")(err.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParsedHttpRespMessage]
   }
 }

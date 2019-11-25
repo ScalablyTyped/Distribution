@@ -21,11 +21,11 @@ object Meta {
     query: Query = null,
     search: String = null
   ): Meta = {
-    val __obj = js.Dynamic.literal(location = location)
-    if (navigation != null) __obj.updateDynamic("navigation")(navigation)
-    if (notFoundPath != null) __obj.updateDynamic("notFoundPath")(notFoundPath)
-    if (query != null) __obj.updateDynamic("query")(query)
-    if (search != null) __obj.updateDynamic("search")(search)
+    val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any])
+    if (navigation != null) __obj.updateDynamic("navigation")(navigation.asInstanceOf[js.Any])
+    if (notFoundPath != null) __obj.updateDynamic("notFoundPath")(notFoundPath.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    if (search != null) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
     __obj.asInstanceOf[Meta]
   }
 }

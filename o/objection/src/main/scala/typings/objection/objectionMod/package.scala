@@ -21,9 +21,11 @@ package object objectionMod {
     js.Array[js.Any], 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ js.Any
   ])
-  type DeepPartialGraph[T] = T | DeepPartialGraphModel[T] | (DeepPartialGraphArray[/* import warning: ImportType.apply Failed type conversion: T[number] */ js.Any])
+  type DeepPartialGraph[T] = T | DeepPartialGraphModel[T] | (DeepPartialGraphArray[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[number] */ js.Any
+  ])
   type DeepPartialGraphModel[T] = (GraphModel[
-    /* import warning: ImportType.apply c Unsupported type mapping: 
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in objection.objection.NonFunctionPropertyNames<T> ]:? objection.objection.DeepPartialGraph<T[P]>}
     */ typings.objection.objectionStrings.DeepPartialGraphModel with T
   ]) | Partial[T]
@@ -91,8 +93,8 @@ package object objectionMod {
     ]
   ]
   type NodeStyleCallback = js.Function2[/* err */ js.Any, /* result */ js.UndefOr[js.Any], Unit]
-  type NonFunctionPropertyNames[T] = /* import warning: ImportType.apply Failed type conversion: {[ K in keyof T ]: T[K] extends std.Function? never : K}[keyof T] */ js.Any
-  type PartialUpdate[QM /* <: Model */] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type NonFunctionPropertyNames[T] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends std.Function? never : K}[keyof T] */ js.Any
+  type PartialUpdate[QM /* <: Model */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof QM ]:? QM[P] | objection.objection.Raw | objection.objection.Reference | objection.objection.QueryBuilder<any, std.Array<any>, / * import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV * / any>}
     */ typings.objection.objectionStrings.PartialUpdate with QM
   type Plugin = js.Function1[/* modelClass */ TypeofClassModel, TypeofClassModel]

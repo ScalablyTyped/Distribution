@@ -35,7 +35,7 @@ trait Typeofsockets extends js.Object {
 object Typeofsockets {
   @scala.inline
   def apply(tcp: Typeoftcp, tcpServer: TypeoftcpServer, udp: Typeofudp): Typeofsockets = {
-    val __obj = js.Dynamic.literal(tcp = tcp, tcpServer = tcpServer, udp = udp)
+    val __obj = js.Dynamic.literal(tcp = tcp.asInstanceOf[js.Any], tcpServer = tcpServer.asInstanceOf[js.Any], udp = udp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Typeofsockets]
   }

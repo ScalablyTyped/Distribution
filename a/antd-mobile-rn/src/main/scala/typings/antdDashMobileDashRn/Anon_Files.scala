@@ -23,7 +23,7 @@ object Anon_Files {
     selectable: Boolean,
     styles: StringDictionary[RegisteredStyle[_]]
   ): Anon_Files = {
-    val __obj = js.Dynamic.literal(files = files, onChange = js.Any.fromFunction0(onChange), onFail = js.Any.fromFunction0(onFail), selectable = selectable, styles = styles)
+    val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any], onChange = js.Any.fromFunction0(onChange), onFail = js.Any.fromFunction0(onFail), selectable = selectable.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Files]
   }

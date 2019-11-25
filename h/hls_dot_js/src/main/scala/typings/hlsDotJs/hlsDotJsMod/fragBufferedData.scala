@@ -13,7 +13,7 @@ trait fragBufferedData extends js.Object {
 object fragBufferedData {
   @scala.inline
   def apply(frag: Fragment, id: String, stats: Stats): fragBufferedData = {
-    val __obj = js.Dynamic.literal(frag = frag, id = id, stats = stats)
+    val __obj = js.Dynamic.literal(frag = frag.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[fragBufferedData]
   }

@@ -14,7 +14,7 @@ trait Anon_ExtraLeftPxExtraRightPx extends js.Object {
 object Anon_ExtraLeftPxExtraRightPx {
   @scala.inline
   def apply(extraLeftPx: Double, extraRightPx: Double, notePx: Double, width: Double): Anon_ExtraLeftPxExtraRightPx = {
-    val __obj = js.Dynamic.literal(extraLeftPx = extraLeftPx, extraRightPx = extraRightPx, notePx = notePx, width = width)
+    val __obj = js.Dynamic.literal(extraLeftPx = extraLeftPx.asInstanceOf[js.Any], extraRightPx = extraRightPx.asInstanceOf[js.Any], notePx = notePx.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ExtraLeftPxExtraRightPx]
   }

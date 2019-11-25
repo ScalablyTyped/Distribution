@@ -16,8 +16,8 @@ trait Suggest extends js.Object {
 object Suggest {
   @scala.inline
   def apply(label: String, location: Anon_Lat, placeId: String, gmaps: GeocoderResult = null): Suggest = {
-    val __obj = js.Dynamic.literal(label = label, location = location, placeId = placeId)
-    if (gmaps != null) __obj.updateDynamic("gmaps")(gmaps)
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], placeId = placeId.asInstanceOf[js.Any])
+    if (gmaps != null) __obj.updateDynamic("gmaps")(gmaps.asInstanceOf[js.Any])
     __obj.asInstanceOf[Suggest]
   }
 }

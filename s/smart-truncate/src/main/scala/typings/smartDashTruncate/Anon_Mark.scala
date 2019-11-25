@@ -13,7 +13,7 @@ object Anon_Mark {
   @scala.inline
   def apply(mark: String = null, position: Int | Double = null): Anon_Mark = {
     val __obj = js.Dynamic.literal()
-    if (mark != null) __obj.updateDynamic("mark")(mark)
+    if (mark != null) __obj.updateDynamic("mark")(mark.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Mark]
   }

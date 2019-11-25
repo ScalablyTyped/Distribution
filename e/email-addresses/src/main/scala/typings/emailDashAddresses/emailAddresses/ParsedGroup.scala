@@ -22,9 +22,9 @@ object ParsedGroup {
     `type`: String,
     node: ASTNode = null
   ): ParsedGroup = {
-    val __obj = js.Dynamic.literal(addresses = addresses, name = name, parts = parts)
-    __obj.updateDynamic("type")(`type`)
-    if (node != null) __obj.updateDynamic("node")(node)
+    val __obj = js.Dynamic.literal(addresses = addresses.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parts = parts.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParsedGroup]
   }
 }

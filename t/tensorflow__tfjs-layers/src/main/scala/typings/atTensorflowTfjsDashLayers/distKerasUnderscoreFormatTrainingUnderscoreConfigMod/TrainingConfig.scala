@@ -31,8 +31,8 @@ object TrainingConfig {
     val __obj = js.Dynamic.literal(loss = loss.asInstanceOf[js.Any], optimizer_config = optimizer_config.asInstanceOf[js.Any])
     if (loss_weights != null) __obj.updateDynamic("loss_weights")(loss_weights.asInstanceOf[js.Any])
     if (metrics != null) __obj.updateDynamic("metrics")(metrics.asInstanceOf[js.Any])
-    if (sample_weight_mode != null) __obj.updateDynamic("sample_weight_mode")(sample_weight_mode)
-    if (weighted_metrics != null) __obj.updateDynamic("weighted_metrics")(weighted_metrics)
+    if (sample_weight_mode != null) __obj.updateDynamic("sample_weight_mode")(sample_weight_mode.asInstanceOf[js.Any])
+    if (weighted_metrics != null) __obj.updateDynamic("weighted_metrics")(weighted_metrics.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrainingConfig]
   }
 }

@@ -11,7 +11,7 @@ trait Anon_GetPolyfill extends js.Object {
   /**
   	 * Gets the optimal `Array.from` implementation to use.
   	 */
-  def getPolyfill(): /* import warning: ImportType.apply Failed type conversion: typeof ArrayFrom */ js.Any = js.native
+  def getPolyfill(): /* import warning: importer.ImportType#apply Failed type conversion: typeof ArrayFrom */ js.Any = js.native
   /**
   	 * Creates an array from an array-like or iterable object.
   	 * @param iterable An iterable object to convert to an array.
@@ -54,6 +54,6 @@ trait Anon_GetPolyfill extends js.Object {
   	 * @param thisArg Value of `this` used to invoke the mapfn.
   	 */
   def implementation[T, U](iterable: Iterable[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U], thisArg: js.Any): js.Array[U] = js.native
-  def shim(): /* import warning: ImportType.apply Failed type conversion: typeof ArrayFrom */ js.Any = js.native
+  def shim(): /* import warning: importer.ImportType#apply Failed type conversion: typeof ArrayFrom */ js.Any = js.native
 }
 

@@ -18,7 +18,7 @@ object MountedDataDisk {
   @scala.inline
   def apply(dataDisk: String = null): MountedDataDisk = {
     val __obj = js.Dynamic.literal()
-    if (dataDisk != null) __obj.updateDynamic("dataDisk")(dataDisk)
+    if (dataDisk != null) __obj.updateDynamic("dataDisk")(dataDisk.asInstanceOf[js.Any])
     __obj.asInstanceOf[MountedDataDisk]
   }
 }

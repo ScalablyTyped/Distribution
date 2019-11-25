@@ -24,8 +24,8 @@ object Anon_IncognitoSpecific {
     value: js.Any,
     incognitoSpecific: js.UndefOr[Boolean] = js.undefined
   ): Anon_IncognitoSpecific = {
-    val __obj = js.Dynamic.literal(levelOfControl = levelOfControl, value = value)
-    if (!js.isUndefined(incognitoSpecific)) __obj.updateDynamic("incognitoSpecific")(incognitoSpecific)
+    val __obj = js.Dynamic.literal(levelOfControl = levelOfControl.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (!js.isUndefined(incognitoSpecific)) __obj.updateDynamic("incognitoSpecific")(incognitoSpecific.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IncognitoSpecific]
   }
 }

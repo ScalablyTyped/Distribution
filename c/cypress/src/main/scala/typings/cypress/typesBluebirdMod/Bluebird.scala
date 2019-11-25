@@ -1248,7 +1248,9 @@ trait Bluebird[R]
     * });
     * </code>
     */
-  def get[U /* <: String */](key: U): Bluebird[/* import warning: ImportType.apply Failed type conversion: R[U] */ js.Any] = js.native
+  def get[U /* <: String */](key: U): Bluebird[
+    /* import warning: importer.ImportType#apply Failed type conversion: R[U] */ js.Any
+  ] = js.native
   /**
     * See if this `promise` is resolved -> either fulfilled or rejected.
     */

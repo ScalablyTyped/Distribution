@@ -27,7 +27,7 @@ object DataObserver {
     resume: () => Unit,
     setObservedData: js.Any => Unit
   ): DataObserver = {
-    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), isPaused = js.Any.fromFunction0(isPaused), observedData = observedData, observer = observer, pause = js.Any.fromFunction0(pause), paused = paused, resume = js.Any.fromFunction0(resume), setObservedData = js.Any.fromFunction1(setObservedData))
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), isPaused = js.Any.fromFunction0(isPaused), observedData = observedData.asInstanceOf[js.Any], observer = observer.asInstanceOf[js.Any], pause = js.Any.fromFunction0(pause), paused = paused.asInstanceOf[js.Any], resume = js.Any.fromFunction0(resume), setObservedData = js.Any.fromFunction1(setObservedData))
   
     __obj.asInstanceOf[DataObserver]
   }

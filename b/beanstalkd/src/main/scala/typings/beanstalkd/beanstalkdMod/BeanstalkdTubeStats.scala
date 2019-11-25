@@ -53,19 +53,19 @@ object BeanstalkdTubeStats {
     `pause-time-left`: Double,
     `total-jobs`: Double
   ): BeanstalkdTubeStats = {
-    val __obj = js.Dynamic.literal(name = name, pause = pause)
-    __obj.updateDynamic("cmd-delete")(`cmd-delete`)
-    __obj.updateDynamic("cmd-pause-tube")(`cmd-pause-tube`)
-    __obj.updateDynamic("current-jobs-buried")(`current-jobs-buried`)
-    __obj.updateDynamic("current-jobs-delayed")(`current-jobs-delayed`)
-    __obj.updateDynamic("current-jobs-ready")(`current-jobs-ready`)
-    __obj.updateDynamic("current-jobs-reserved")(`current-jobs-reserved`)
-    __obj.updateDynamic("current-jobs-urgent")(`current-jobs-urgent`)
-    __obj.updateDynamic("current-using")(`current-using`)
-    __obj.updateDynamic("current-waiting")(`current-waiting`)
-    __obj.updateDynamic("current-watching")(`current-watching`)
-    __obj.updateDynamic("pause-time-left")(`pause-time-left`)
-    __obj.updateDynamic("total-jobs")(`total-jobs`)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], pause = pause.asInstanceOf[js.Any])
+    __obj.updateDynamic("cmd-delete")(`cmd-delete`.asInstanceOf[js.Any])
+    __obj.updateDynamic("cmd-pause-tube")(`cmd-pause-tube`.asInstanceOf[js.Any])
+    __obj.updateDynamic("current-jobs-buried")(`current-jobs-buried`.asInstanceOf[js.Any])
+    __obj.updateDynamic("current-jobs-delayed")(`current-jobs-delayed`.asInstanceOf[js.Any])
+    __obj.updateDynamic("current-jobs-ready")(`current-jobs-ready`.asInstanceOf[js.Any])
+    __obj.updateDynamic("current-jobs-reserved")(`current-jobs-reserved`.asInstanceOf[js.Any])
+    __obj.updateDynamic("current-jobs-urgent")(`current-jobs-urgent`.asInstanceOf[js.Any])
+    __obj.updateDynamic("current-using")(`current-using`.asInstanceOf[js.Any])
+    __obj.updateDynamic("current-waiting")(`current-waiting`.asInstanceOf[js.Any])
+    __obj.updateDynamic("current-watching")(`current-watching`.asInstanceOf[js.Any])
+    __obj.updateDynamic("pause-time-left")(`pause-time-left`.asInstanceOf[js.Any])
+    __obj.updateDynamic("total-jobs")(`total-jobs`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BeanstalkdTubeStats]
   }
 }

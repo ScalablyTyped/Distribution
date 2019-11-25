@@ -25,11 +25,11 @@ object Anon_Attachment {
     ccRecipients: js.Array[String] = null,
     recipients: js.Array[String] = null
   ): Anon_Attachment = {
-    val __obj = js.Dynamic.literal(body = body, isHTML = isHTML, subject = subject)
-    if (attachment != null) __obj.updateDynamic("attachment")(attachment)
-    if (bccRecipients != null) __obj.updateDynamic("bccRecipients")(bccRecipients)
-    if (ccRecipients != null) __obj.updateDynamic("ccRecipients")(ccRecipients)
-    if (recipients != null) __obj.updateDynamic("recipients")(recipients)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], isHTML = isHTML.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any])
+    if (attachment != null) __obj.updateDynamic("attachment")(attachment.asInstanceOf[js.Any])
+    if (bccRecipients != null) __obj.updateDynamic("bccRecipients")(bccRecipients.asInstanceOf[js.Any])
+    if (ccRecipients != null) __obj.updateDynamic("ccRecipients")(ccRecipients.asInstanceOf[js.Any])
+    if (recipients != null) __obj.updateDynamic("recipients")(recipients.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Attachment]
   }
 }

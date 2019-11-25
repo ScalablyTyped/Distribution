@@ -12,8 +12,8 @@ trait ClusterOptions extends js.Object {
 object ClusterOptions {
   @scala.inline
   def apply(clusters: js.Array[ClusterType], schedule: String = null): ClusterOptions = {
-    val __obj = js.Dynamic.literal(clusters = clusters)
-    if (schedule != null) __obj.updateDynamic("schedule")(schedule)
+    val __obj = js.Dynamic.literal(clusters = clusters.asInstanceOf[js.Any])
+    if (schedule != null) __obj.updateDynamic("schedule")(schedule.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterOptions]
   }
 }

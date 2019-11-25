@@ -19,8 +19,8 @@ object LogPagination {
   def apply(matched: Int | Double = null, next_cursor: String = null, next_url: String = null): LogPagination = {
     val __obj = js.Dynamic.literal()
     if (matched != null) __obj.updateDynamic("matched")(matched.asInstanceOf[js.Any])
-    if (next_cursor != null) __obj.updateDynamic("next_cursor")(next_cursor)
-    if (next_url != null) __obj.updateDynamic("next_url")(next_url)
+    if (next_cursor != null) __obj.updateDynamic("next_cursor")(next_cursor.asInstanceOf[js.Any])
+    if (next_url != null) __obj.updateDynamic("next_url")(next_url.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogPagination]
   }
 }

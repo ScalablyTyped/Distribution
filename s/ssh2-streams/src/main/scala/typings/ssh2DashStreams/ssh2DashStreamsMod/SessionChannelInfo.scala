@@ -15,8 +15,8 @@ trait SessionChannelInfo extends ChannelOpenInfo {
 object SessionChannelInfo {
   @scala.inline
   def apply(packetSize: Double, sender: Double, `type`: session, window: Double): SessionChannelInfo = {
-    val __obj = js.Dynamic.literal(packetSize = packetSize, sender = sender, window = window)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(packetSize = packetSize.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionChannelInfo]
   }
 }

@@ -25,7 +25,7 @@ object Anon_HeightSegments {
     thetaStart: Double,
     widthSegments: Double
   ): Anon_HeightSegments = {
-    val __obj = js.Dynamic.literal(heightSegments = heightSegments, phiLength = phiLength, phiStart = phiStart, radius = radius, thetaLength = thetaLength, thetaStart = thetaStart, widthSegments = widthSegments)
+    val __obj = js.Dynamic.literal(heightSegments = heightSegments.asInstanceOf[js.Any], phiLength = phiLength.asInstanceOf[js.Any], phiStart = phiStart.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], thetaLength = thetaLength.asInstanceOf[js.Any], thetaStart = thetaStart.asInstanceOf[js.Any], widthSegments = widthSegments.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_HeightSegments]
   }

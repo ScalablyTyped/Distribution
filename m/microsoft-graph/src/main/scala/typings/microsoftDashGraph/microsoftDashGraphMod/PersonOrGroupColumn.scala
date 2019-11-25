@@ -21,9 +21,9 @@ object PersonOrGroupColumn {
     displayAs: String = null
   ): PersonOrGroupColumn = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowMultipleSelection)) __obj.updateDynamic("allowMultipleSelection")(allowMultipleSelection)
-    if (chooseFromType != null) __obj.updateDynamic("chooseFromType")(chooseFromType)
-    if (displayAs != null) __obj.updateDynamic("displayAs")(displayAs)
+    if (!js.isUndefined(allowMultipleSelection)) __obj.updateDynamic("allowMultipleSelection")(allowMultipleSelection.asInstanceOf[js.Any])
+    if (chooseFromType != null) __obj.updateDynamic("chooseFromType")(chooseFromType.asInstanceOf[js.Any])
+    if (displayAs != null) __obj.updateDynamic("displayAs")(displayAs.asInstanceOf[js.Any])
     __obj.asInstanceOf[PersonOrGroupColumn]
   }
 }

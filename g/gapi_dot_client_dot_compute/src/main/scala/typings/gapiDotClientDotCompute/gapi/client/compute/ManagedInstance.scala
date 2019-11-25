@@ -40,11 +40,11 @@ object ManagedInstance {
     lastAttempt: ManagedInstanceLastAttempt = null
   ): ManagedInstance = {
     val __obj = js.Dynamic.literal()
-    if (currentAction != null) __obj.updateDynamic("currentAction")(currentAction)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (instance != null) __obj.updateDynamic("instance")(instance)
-    if (instanceStatus != null) __obj.updateDynamic("instanceStatus")(instanceStatus)
-    if (lastAttempt != null) __obj.updateDynamic("lastAttempt")(lastAttempt)
+    if (currentAction != null) __obj.updateDynamic("currentAction")(currentAction.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (instance != null) __obj.updateDynamic("instance")(instance.asInstanceOf[js.Any])
+    if (instanceStatus != null) __obj.updateDynamic("instanceStatus")(instanceStatus.asInstanceOf[js.Any])
+    if (lastAttempt != null) __obj.updateDynamic("lastAttempt")(lastAttempt.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagedInstance]
   }
 }

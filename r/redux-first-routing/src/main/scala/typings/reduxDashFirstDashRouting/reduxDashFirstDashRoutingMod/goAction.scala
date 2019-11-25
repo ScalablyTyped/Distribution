@@ -14,7 +14,7 @@ object goAction {
   @scala.inline
   def apply[T /* <: Double */](payload: T, `type`: `ROUTER/GO`): goAction[T] = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[goAction[T]]
   }
 }

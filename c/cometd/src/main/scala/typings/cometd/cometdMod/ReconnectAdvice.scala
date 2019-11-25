@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait ReconnectAdvice extends js.Object
 
+object ReconnectAdvice {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def handshake: typings.cometd.cometdStrings.handshake = this.cast("handshake")
+  @scala.inline
+  def none: typings.cometd.cometdStrings.none = this.cast("none")
+  @scala.inline
+  def retry: typings.cometd.cometdStrings.retry = this.cast("retry")
+}
+

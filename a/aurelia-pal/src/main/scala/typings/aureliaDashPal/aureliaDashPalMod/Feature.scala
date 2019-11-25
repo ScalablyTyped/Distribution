@@ -24,16 +24,16 @@ trait Feature extends js.Object {
   var shadowDOM: Boolean
 }
 
-@JSImport("aurelia-pal", "FEATURE")
-@js.native
-object FEATURE extends TopLevel[Feature]
-
 object Feature {
   @scala.inline
   def apply(htmlTemplateElement: Boolean, mutationObserver: Boolean, scopedCSS: Boolean, shadowDOM: Boolean): Feature = {
-    val __obj = js.Dynamic.literal(htmlTemplateElement = htmlTemplateElement, mutationObserver = mutationObserver, scopedCSS = scopedCSS, shadowDOM = shadowDOM)
+    val __obj = js.Dynamic.literal(htmlTemplateElement = htmlTemplateElement.asInstanceOf[js.Any], mutationObserver = mutationObserver.asInstanceOf[js.Any], scopedCSS = scopedCSS.asInstanceOf[js.Any], shadowDOM = shadowDOM.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Feature]
   }
 }
+
+@JSImport("aurelia-pal", "FEATURE")
+@js.native
+object FEATURE extends TopLevel[Feature]
 

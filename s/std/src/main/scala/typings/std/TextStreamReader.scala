@@ -57,7 +57,7 @@ object TextStreamReader {
     Skip: Double => Unit,
     SkipLine: () => Unit
   ): TextStreamReader = {
-    val __obj = js.Dynamic.literal(AtEndOfLine = AtEndOfLine, AtEndOfStream = AtEndOfStream, Close = js.Any.fromFunction0(Close), Column = Column, Line = Line, Read = js.Any.fromFunction1(Read), ReadAll = js.Any.fromFunction0(ReadAll), ReadLine = js.Any.fromFunction0(ReadLine), Skip = js.Any.fromFunction1(Skip), SkipLine = js.Any.fromFunction0(SkipLine))
+    val __obj = js.Dynamic.literal(AtEndOfLine = AtEndOfLine.asInstanceOf[js.Any], AtEndOfStream = AtEndOfStream.asInstanceOf[js.Any], Close = js.Any.fromFunction0(Close), Column = Column.asInstanceOf[js.Any], Line = Line.asInstanceOf[js.Any], Read = js.Any.fromFunction1(Read), ReadAll = js.Any.fromFunction0(ReadAll), ReadLine = js.Any.fromFunction0(ReadLine), Skip = js.Any.fromFunction1(Skip), SkipLine = js.Any.fromFunction0(SkipLine))
   
     __obj.asInstanceOf[TextStreamReader]
   }

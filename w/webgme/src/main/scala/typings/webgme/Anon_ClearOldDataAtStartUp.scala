@@ -50,8 +50,8 @@ object Anon_ClearOldDataAtStartUp {
     workerRefreshInterval: Double,
     nonce: String = null
   ): Anon_ClearOldDataAtStartUp = {
-    val __obj = js.Dynamic.literal(clearOldDataAtStartUp = clearOldDataAtStartUp, clearOutputTimeout = clearOutputTimeout, enable = enable, labelJobs = labelJobs, workerRefreshInterval = workerRefreshInterval)
-    if (nonce != null) __obj.updateDynamic("nonce")(nonce)
+    val __obj = js.Dynamic.literal(clearOldDataAtStartUp = clearOldDataAtStartUp.asInstanceOf[js.Any], clearOutputTimeout = clearOutputTimeout.asInstanceOf[js.Any], enable = enable.asInstanceOf[js.Any], labelJobs = labelJobs.asInstanceOf[js.Any], workerRefreshInterval = workerRefreshInterval.asInstanceOf[js.Any])
+    if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ClearOldDataAtStartUp]
   }
 }

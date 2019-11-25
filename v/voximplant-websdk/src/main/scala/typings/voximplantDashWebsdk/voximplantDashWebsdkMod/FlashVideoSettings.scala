@@ -59,8 +59,8 @@ object FlashVideoSettings {
     if (fps != null) __obj.updateDynamic("fps")(fps.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (keyframeInterval != null) __obj.updateDynamic("keyframeInterval")(keyframeInterval.asInstanceOf[js.Any])
-    if (level != null) __obj.updateDynamic("level")(level)
-    if (profile != null) __obj.updateDynamic("profile")(profile)
+    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    if (profile != null) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
     if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlashVideoSettings]

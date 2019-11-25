@@ -37,18 +37,18 @@ object UploadListProps {
     showPreviewIcon: js.UndefOr[Boolean] = js.undefined,
     showRemoveIcon: js.UndefOr[Boolean] = js.undefined
   ): UploadListProps = {
-    val __obj = js.Dynamic.literal(locale = locale)
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (listType != null) __obj.updateDynamic("listType")(listType)
+    val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (listType != null) __obj.updateDynamic("listType")(listType.asInstanceOf[js.Any])
     if (onDownload != null) __obj.updateDynamic("onDownload")(js.Any.fromFunction1(onDownload))
     if (onPreview != null) __obj.updateDynamic("onPreview")(js.Any.fromFunction1(onPreview))
     if (onRemove != null) __obj.updateDynamic("onRemove")(js.Any.fromFunction1(onRemove))
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (previewFile != null) __obj.updateDynamic("previewFile")(js.Any.fromFunction1(previewFile))
-    if (progressAttr != null) __obj.updateDynamic("progressAttr")(progressAttr)
-    if (!js.isUndefined(showDownloadIcon)) __obj.updateDynamic("showDownloadIcon")(showDownloadIcon)
-    if (!js.isUndefined(showPreviewIcon)) __obj.updateDynamic("showPreviewIcon")(showPreviewIcon)
-    if (!js.isUndefined(showRemoveIcon)) __obj.updateDynamic("showRemoveIcon")(showRemoveIcon)
+    if (progressAttr != null) __obj.updateDynamic("progressAttr")(progressAttr.asInstanceOf[js.Any])
+    if (!js.isUndefined(showDownloadIcon)) __obj.updateDynamic("showDownloadIcon")(showDownloadIcon.asInstanceOf[js.Any])
+    if (!js.isUndefined(showPreviewIcon)) __obj.updateDynamic("showPreviewIcon")(showPreviewIcon.asInstanceOf[js.Any])
+    if (!js.isUndefined(showRemoveIcon)) __obj.updateDynamic("showRemoveIcon")(showRemoveIcon.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadListProps]
   }
 }

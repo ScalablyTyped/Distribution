@@ -14,7 +14,7 @@ object FeedbackList {
   @scala.inline
   def apply(feedback: js.Array[GetFeedback] = null): FeedbackList = {
     val __obj = js.Dynamic.literal()
-    if (feedback != null) __obj.updateDynamic("feedback")(feedback)
+    if (feedback != null) __obj.updateDynamic("feedback")(feedback.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeedbackList]
   }
 }

@@ -20,8 +20,8 @@ trait ConsoleProfileStartedEventDataType extends js.Object {
 object ConsoleProfileStartedEventDataType {
   @scala.inline
   def apply(id: java.lang.String, location: Location, title: java.lang.String = null): ConsoleProfileStartedEventDataType = {
-    val __obj = js.Dynamic.literal(id = id, location = location)
-    if (title != null) __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConsoleProfileStartedEventDataType]
   }
 }

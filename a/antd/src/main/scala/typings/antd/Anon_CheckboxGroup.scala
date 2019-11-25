@@ -12,7 +12,7 @@ trait Anon_CheckboxGroup extends js.Object {
 object Anon_CheckboxGroup {
   @scala.inline
   def apply(checkboxGroup: Requireable[_]): Anon_CheckboxGroup = {
-    val __obj = js.Dynamic.literal(checkboxGroup = checkboxGroup)
+    val __obj = js.Dynamic.literal(checkboxGroup = checkboxGroup.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CheckboxGroup]
   }

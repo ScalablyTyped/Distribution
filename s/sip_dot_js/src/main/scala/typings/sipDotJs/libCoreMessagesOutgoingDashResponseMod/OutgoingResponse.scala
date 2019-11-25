@@ -12,7 +12,7 @@ trait OutgoingResponse extends js.Object {
 object OutgoingResponse {
   @scala.inline
   def apply(message: String): OutgoingResponse = {
-    val __obj = js.Dynamic.literal(message = message)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OutgoingResponse]
   }

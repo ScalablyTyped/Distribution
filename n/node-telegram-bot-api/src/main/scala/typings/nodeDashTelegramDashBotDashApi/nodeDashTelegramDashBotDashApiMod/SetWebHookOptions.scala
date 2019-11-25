@@ -21,10 +21,10 @@ object SetWebHookOptions {
     url: String = null
   ): SetWebHookOptions = {
     val __obj = js.Dynamic.literal()
-    if (allowed_updates != null) __obj.updateDynamic("allowed_updates")(allowed_updates)
+    if (allowed_updates != null) __obj.updateDynamic("allowed_updates")(allowed_updates.asInstanceOf[js.Any])
     if (certificate != null) __obj.updateDynamic("certificate")(certificate.asInstanceOf[js.Any])
     if (max_connections != null) __obj.updateDynamic("max_connections")(max_connections.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetWebHookOptions]
   }
 }

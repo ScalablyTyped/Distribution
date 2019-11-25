@@ -14,8 +14,8 @@ trait BinaryHeaderValue extends MessageHeaderValue {
 object BinaryHeaderValue {
   @scala.inline
   def apply(`type`: binary, value: Uint8Array): BinaryHeaderValue = {
-    val __obj = js.Dynamic.literal(value = value)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BinaryHeaderValue]
   }
 }

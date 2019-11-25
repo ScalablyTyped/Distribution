@@ -15,7 +15,7 @@ object IconDefinition {
     iconName: IconName,
     prefix: IconPrefix
   ): IconDefinition = {
-    val __obj = js.Dynamic.literal(icon = icon, iconName = iconName, prefix = prefix)
+    val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], iconName = iconName.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IconDefinition]
   }

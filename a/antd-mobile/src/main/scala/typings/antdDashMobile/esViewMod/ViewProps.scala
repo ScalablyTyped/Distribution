@@ -20,9 +20,9 @@ object ViewProps {
     Component: String = null
   ): ViewProps[T] = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (Component != null) __obj.updateDynamic("Component")(Component)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (Component != null) __obj.updateDynamic("Component")(Component.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewProps[T]]
   }
 }

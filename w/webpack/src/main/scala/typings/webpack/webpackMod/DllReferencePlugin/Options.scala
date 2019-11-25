@@ -54,11 +54,11 @@ object Options {
     scope: String = null,
     sourceType: String = null
   ): Options = {
-    val __obj = js.Dynamic.literal(context = context, manifest = manifest.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
-    if (sourceType != null) __obj.updateDynamic("sourceType")(sourceType)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], manifest = manifest.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (sourceType != null) __obj.updateDynamic("sourceType")(sourceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

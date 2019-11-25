@@ -15,7 +15,7 @@ trait WorkspaceCollection extends js.Object {
 object WorkspaceCollection {
   @scala.inline
   def apply(pagination: Pagination, workspaces: js.Array[Workspace]): WorkspaceCollection = {
-    val __obj = js.Dynamic.literal(pagination = pagination, workspaces = workspaces)
+    val __obj = js.Dynamic.literal(pagination = pagination.asInstanceOf[js.Any], workspaces = workspaces.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WorkspaceCollection]
   }

@@ -30,12 +30,12 @@ object WorkspaceProposal {
     status: String = null
   ): WorkspaceProposal = {
     val __obj = js.Dynamic.literal()
-    if (authors != null) __obj.updateDynamic("authors")(authors)
-    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint)
-    if (history != null) __obj.updateDynamic("history")(history)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (reviewers != null) __obj.updateDynamic("reviewers")(reviewers)
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (authors != null) __obj.updateDynamic("authors")(authors.asInstanceOf[js.Any])
+    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint.asInstanceOf[js.Any])
+    if (history != null) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (reviewers != null) __obj.updateDynamic("reviewers")(reviewers.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkspaceProposal]
   }
 }

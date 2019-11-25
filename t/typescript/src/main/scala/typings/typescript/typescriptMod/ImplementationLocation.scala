@@ -21,11 +21,11 @@ object ImplementationLocation {
     originalFileName: String = null,
     originalTextSpan: TextSpan = null
   ): ImplementationLocation = {
-    val __obj = js.Dynamic.literal(displayParts = displayParts, fileName = fileName, kind = kind, textSpan = textSpan)
-    if (contextSpan != null) __obj.updateDynamic("contextSpan")(contextSpan)
-    if (originalContextSpan != null) __obj.updateDynamic("originalContextSpan")(originalContextSpan)
-    if (originalFileName != null) __obj.updateDynamic("originalFileName")(originalFileName)
-    if (originalTextSpan != null) __obj.updateDynamic("originalTextSpan")(originalTextSpan)
+    val __obj = js.Dynamic.literal(displayParts = displayParts.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], textSpan = textSpan.asInstanceOf[js.Any])
+    if (contextSpan != null) __obj.updateDynamic("contextSpan")(contextSpan.asInstanceOf[js.Any])
+    if (originalContextSpan != null) __obj.updateDynamic("originalContextSpan")(originalContextSpan.asInstanceOf[js.Any])
+    if (originalFileName != null) __obj.updateDynamic("originalFileName")(originalFileName.asInstanceOf[js.Any])
+    if (originalTextSpan != null) __obj.updateDynamic("originalTextSpan")(originalTextSpan.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImplementationLocation]
   }
 }

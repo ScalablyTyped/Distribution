@@ -11,7 +11,7 @@ trait MediaRepositoryConfigureResponseImage_versions2 extends js.Object {
 object MediaRepositoryConfigureResponseImage_versions2 {
   @scala.inline
   def apply(candidates: js.Array[MediaRepositoryConfigureResponseCandidatesItem]): MediaRepositoryConfigureResponseImage_versions2 = {
-    val __obj = js.Dynamic.literal(candidates = candidates)
+    val __obj = js.Dynamic.literal(candidates = candidates.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MediaRepositoryConfigureResponseImage_versions2]
   }

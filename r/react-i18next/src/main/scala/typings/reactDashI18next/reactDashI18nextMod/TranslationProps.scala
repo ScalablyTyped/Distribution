@@ -18,7 +18,7 @@ object TranslationProps {
   @scala.inline
   def apply(children: (TFunction, Anon_I18nLng) => ReactNode, i18n: i18n = null, ns: Namespace = null): TranslationProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction2(children))
-    if (i18n != null) __obj.updateDynamic("i18n")(i18n)
+    if (i18n != null) __obj.updateDynamic("i18n")(i18n.asInstanceOf[js.Any])
     if (ns != null) __obj.updateDynamic("ns")(ns.asInstanceOf[js.Any])
     __obj.asInstanceOf[TranslationProps]
   }

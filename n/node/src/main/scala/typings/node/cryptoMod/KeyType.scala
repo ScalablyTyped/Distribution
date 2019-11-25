@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait KeyType extends js.Object
 
+object KeyType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def dsa: typings.node.nodeStrings.dsa = this.cast("dsa")
+  @scala.inline
+  def ec: typings.node.nodeStrings.ec = this.cast("ec")
+  @scala.inline
+  def rsa: typings.node.nodeStrings.rsa = this.cast("rsa")
+}
+

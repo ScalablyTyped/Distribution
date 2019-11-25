@@ -12,7 +12,7 @@ object LinkedContentReference {
   @scala.inline
   def apply(sheetsChartReference: SheetsChartReference = null): LinkedContentReference = {
     val __obj = js.Dynamic.literal()
-    if (sheetsChartReference != null) __obj.updateDynamic("sheetsChartReference")(sheetsChartReference)
+    if (sheetsChartReference != null) __obj.updateDynamic("sheetsChartReference")(sheetsChartReference.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinkedContentReference]
   }
 }

@@ -208,18 +208,14 @@ object ITextFieldProps {
     AllHTMLAttributes: AllHTMLAttributes[HTMLInputElement | HTMLTextAreaElement] = null,
     ariaLabel: String = null,
     autoAdjustHeight: js.UndefOr[Boolean] = js.undefined,
-    autoComplete: String = null,
     borderless: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
     componentRef: IRefObject[ITextField] = null,
     defaultValue: String = null,
     deferredValidationTime: Int | Double = null,
     description: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
     errorMessage: String | Element = null,
     iconProps: IIconProps = null,
     inputClassName: String = null,
-    label: String = null,
     mask: String = null,
     maskChar: String = null,
     maskFormat: StringDictionary[RegExp] = null,
@@ -231,8 +227,6 @@ object ITextFieldProps {
     onRenderLabel: (/* props */ js.UndefOr[ITextFieldProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[ITextFieldProps], Element | Null]]) => Element | Null = null,
     onRenderPrefix: (/* props */ js.UndefOr[ITextFieldProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[ITextFieldProps], Element | Null]]) => Element | Null = null,
     onRenderSuffix: (/* props */ js.UndefOr[ITextFieldProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[ITextFieldProps], Element | Null]]) => Element | Null = null,
-    prefix: String = null,
-    readOnly: js.UndefOr[Boolean] = js.undefined,
     resizable: js.UndefOr[Boolean] = js.undefined,
     styles: IStyleFunctionOrObject[ITextFieldStyleProps, ITextFieldStyles] = null,
     suffix: String = null,
@@ -244,25 +238,21 @@ object ITextFieldProps {
     value: String = null
   ): ITextFieldProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel)
-    if (!js.isUndefined(autoAdjustHeight)) __obj.updateDynamic("autoAdjustHeight")(autoAdjustHeight)
-    if (autoComplete != null) __obj.updateDynamic("autoComplete")(autoComplete)
-    if (!js.isUndefined(borderless)) __obj.updateDynamic("borderless")(borderless)
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoAdjustHeight)) __obj.updateDynamic("autoAdjustHeight")(autoAdjustHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderless)) __obj.updateDynamic("borderless")(borderless.asInstanceOf[js.Any])
     if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (deferredValidationTime != null) __obj.updateDynamic("deferredValidationTime")(deferredValidationTime.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
-    if (iconProps != null) __obj.updateDynamic("iconProps")(iconProps)
-    if (inputClassName != null) __obj.updateDynamic("inputClassName")(inputClassName)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (mask != null) __obj.updateDynamic("mask")(mask)
-    if (maskChar != null) __obj.updateDynamic("maskChar")(maskChar)
-    if (maskFormat != null) __obj.updateDynamic("maskFormat")(maskFormat)
-    if (!js.isUndefined(multiline)) __obj.updateDynamic("multiline")(multiline)
+    if (iconProps != null) __obj.updateDynamic("iconProps")(iconProps.asInstanceOf[js.Any])
+    if (inputClassName != null) __obj.updateDynamic("inputClassName")(inputClassName.asInstanceOf[js.Any])
+    if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
+    if (maskChar != null) __obj.updateDynamic("maskChar")(maskChar.asInstanceOf[js.Any])
+    if (maskFormat != null) __obj.updateDynamic("maskFormat")(maskFormat.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiline)) __obj.updateDynamic("multiline")(multiline.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
     if (onGetErrorMessage != null) __obj.updateDynamic("onGetErrorMessage")(js.Any.fromFunction1(onGetErrorMessage))
     if (onNotifyValidationResult != null) __obj.updateDynamic("onNotifyValidationResult")(js.Any.fromFunction2(onNotifyValidationResult))
@@ -270,17 +260,15 @@ object ITextFieldProps {
     if (onRenderLabel != null) __obj.updateDynamic("onRenderLabel")(js.Any.fromFunction2(onRenderLabel))
     if (onRenderPrefix != null) __obj.updateDynamic("onRenderPrefix")(js.Any.fromFunction2(onRenderPrefix))
     if (onRenderSuffix != null) __obj.updateDynamic("onRenderSuffix")(js.Any.fromFunction2(onRenderSuffix))
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
-    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable)
+    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (suffix != null) __obj.updateDynamic("suffix")(suffix)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
-    if (!js.isUndefined(underlined)) __obj.updateDynamic("underlined")(underlined)
-    if (!js.isUndefined(validateOnFocusIn)) __obj.updateDynamic("validateOnFocusIn")(validateOnFocusIn)
-    if (!js.isUndefined(validateOnFocusOut)) __obj.updateDynamic("validateOnFocusOut")(validateOnFocusOut)
-    if (!js.isUndefined(validateOnLoad)) __obj.updateDynamic("validateOnLoad")(validateOnLoad)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    if (!js.isUndefined(underlined)) __obj.updateDynamic("underlined")(underlined.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateOnFocusIn)) __obj.updateDynamic("validateOnFocusIn")(validateOnFocusIn.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateOnFocusOut)) __obj.updateDynamic("validateOnFocusOut")(validateOnFocusOut.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateOnLoad)) __obj.updateDynamic("validateOnLoad")(validateOnLoad.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITextFieldProps]
   }
 }

@@ -14,7 +14,7 @@ trait CheckpointResponse extends js.Object {
 object CheckpointResponse {
   @scala.inline
   def apply(challenge: CheckpointResponseChallenge, error_type: String, message: String, status: String): CheckpointResponse = {
-    val __obj = js.Dynamic.literal(challenge = challenge, error_type = error_type, message = message, status = status)
+    val __obj = js.Dynamic.literal(challenge = challenge.asInstanceOf[js.Any], error_type = error_type.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CheckpointResponse]
   }

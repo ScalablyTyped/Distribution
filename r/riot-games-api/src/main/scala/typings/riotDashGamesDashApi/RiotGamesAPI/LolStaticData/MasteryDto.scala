@@ -27,7 +27,7 @@ object MasteryDto {
     ranks: Double,
     sanitizedDescription: js.Array[String]
   ): MasteryDto = {
-    val __obj = js.Dynamic.literal(description = description, id = id, image = image, masteryTree = masteryTree, name = name, prereq = prereq, ranks = ranks, sanitizedDescription = sanitizedDescription)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], masteryTree = masteryTree.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], prereq = prereq.asInstanceOf[js.Any], ranks = ranks.asInstanceOf[js.Any], sanitizedDescription = sanitizedDescription.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MasteryDto]
   }

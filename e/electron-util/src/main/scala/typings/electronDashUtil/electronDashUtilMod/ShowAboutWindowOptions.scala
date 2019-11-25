@@ -43,11 +43,11 @@ object ShowAboutWindowOptions {
     website: String = null
   ): ShowAboutWindowOptions = {
     val __obj = js.Dynamic.literal()
-    if (copyright != null) __obj.updateDynamic("copyright")(copyright)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (website != null) __obj.updateDynamic("website")(website)
+    if (copyright != null) __obj.updateDynamic("copyright")(copyright.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (website != null) __obj.updateDynamic("website")(website.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShowAboutWindowOptions]
   }
 }

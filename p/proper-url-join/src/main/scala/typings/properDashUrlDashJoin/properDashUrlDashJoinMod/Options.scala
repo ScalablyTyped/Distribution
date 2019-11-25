@@ -46,11 +46,11 @@ object Options {
     trailingSlash: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(leadingSlash)) __obj.updateDynamic("leadingSlash")(leadingSlash)
-    if (!js.isUndefined(protocolRelative)) __obj.updateDynamic("protocolRelative")(protocolRelative)
-    if (query != null) __obj.updateDynamic("query")(query)
-    if (queryOptions != null) __obj.updateDynamic("queryOptions")(queryOptions)
-    if (!js.isUndefined(trailingSlash)) __obj.updateDynamic("trailingSlash")(trailingSlash)
+    if (!js.isUndefined(leadingSlash)) __obj.updateDynamic("leadingSlash")(leadingSlash.asInstanceOf[js.Any])
+    if (!js.isUndefined(protocolRelative)) __obj.updateDynamic("protocolRelative")(protocolRelative.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    if (queryOptions != null) __obj.updateDynamic("queryOptions")(queryOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(trailingSlash)) __obj.updateDynamic("trailingSlash")(trailingSlash.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

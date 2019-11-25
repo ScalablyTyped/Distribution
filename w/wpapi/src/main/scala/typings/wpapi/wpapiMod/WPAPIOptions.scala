@@ -31,12 +31,12 @@ object WPAPIOptions {
     transport: Transport = null,
     username: String = null
   ): WPAPIOptions = {
-    val __obj = js.Dynamic.literal(endpoint = endpoint)
-    if (nonce != null) __obj.updateDynamic("nonce")(nonce)
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (routes != null) __obj.updateDynamic("routes")(routes)
-    if (transport != null) __obj.updateDynamic("transport")(transport)
-    if (username != null) __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any])
+    if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (routes != null) __obj.updateDynamic("routes")(routes.asInstanceOf[js.Any])
+    if (transport != null) __obj.updateDynamic("transport")(transport.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[WPAPIOptions]
   }
 }

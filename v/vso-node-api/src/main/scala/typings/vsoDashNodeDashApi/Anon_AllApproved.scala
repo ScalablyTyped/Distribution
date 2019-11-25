@@ -51,7 +51,7 @@ object Anon_AllApproved {
     scheduled: Double,
     undefined: Double
   ): Anon_AllApproved = {
-    val __obj = js.Dynamic.literal(all = all, approved = approved, canceled = canceled, cancelling = cancelling, deferred = deferred, evaluatingGates = evaluatingGates, gateFailed = gateFailed, manualInterventionPending = manualInterventionPending, pending = pending, phaseCanceled = phaseCanceled, phaseFailed = phaseFailed, phaseInProgress = phaseInProgress, phasePartiallySucceeded = phasePartiallySucceeded, phaseSucceeded = phaseSucceeded, queued = queued, queuedForAgent = queuedForAgent, queuedForPipeline = queuedForPipeline, rejected = rejected, scheduled = scheduled, undefined = undefined)
+    val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any], approved = approved.asInstanceOf[js.Any], canceled = canceled.asInstanceOf[js.Any], cancelling = cancelling.asInstanceOf[js.Any], deferred = deferred.asInstanceOf[js.Any], evaluatingGates = evaluatingGates.asInstanceOf[js.Any], gateFailed = gateFailed.asInstanceOf[js.Any], manualInterventionPending = manualInterventionPending.asInstanceOf[js.Any], pending = pending.asInstanceOf[js.Any], phaseCanceled = phaseCanceled.asInstanceOf[js.Any], phaseFailed = phaseFailed.asInstanceOf[js.Any], phaseInProgress = phaseInProgress.asInstanceOf[js.Any], phasePartiallySucceeded = phasePartiallySucceeded.asInstanceOf[js.Any], phaseSucceeded = phaseSucceeded.asInstanceOf[js.Any], queued = queued.asInstanceOf[js.Any], queuedForAgent = queuedForAgent.asInstanceOf[js.Any], queuedForPipeline = queuedForPipeline.asInstanceOf[js.Any], rejected = rejected.asInstanceOf[js.Any], scheduled = scheduled.asInstanceOf[js.Any], undefined = undefined.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AllApproved]
   }

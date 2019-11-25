@@ -28,12 +28,12 @@ object CheckBoxProps {
     style: Anon_ContainerIcon = null,
     uncheckedIcon: String = null
   ): CheckBoxProps = {
-    val __obj = js.Dynamic.literal(label = label, onCheck = js.Any.fromFunction1(onCheck), value = value.asInstanceOf[js.Any])
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
-    if (checkedIcon != null) __obj.updateDynamic("checkedIcon")(checkedIcon)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (uncheckedIcon != null) __obj.updateDynamic("uncheckedIcon")(uncheckedIcon)
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], onCheck = js.Any.fromFunction1(onCheck), value = value.asInstanceOf[js.Any])
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
+    if (checkedIcon != null) __obj.updateDynamic("checkedIcon")(checkedIcon.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (uncheckedIcon != null) __obj.updateDynamic("uncheckedIcon")(uncheckedIcon.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckBoxProps]
   }
 }

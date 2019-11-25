@@ -17,8 +17,8 @@ trait AuthenticationTypeLogin extends AuthenticationType {
 object AuthenticationTypeLogin {
   @scala.inline
   def apply(credentials: Credentials, method: String | `false`, `type`: LOGIN, user: String): AuthenticationTypeLogin = {
-    val __obj = js.Dynamic.literal(credentials = credentials, method = method.asInstanceOf[js.Any], user = user)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(credentials = credentials.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthenticationTypeLogin]
   }
 }

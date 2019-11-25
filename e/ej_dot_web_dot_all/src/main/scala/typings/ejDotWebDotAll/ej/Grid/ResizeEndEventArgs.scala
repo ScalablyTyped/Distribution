@@ -44,14 +44,14 @@ object ResizeEndEventArgs {
     `type`: String = null
   ): ResizeEndEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (column != null) __obj.updateDynamic("column")(column)
+    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
     if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
     if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
-    if (model != null) __obj.updateDynamic("model")(model)
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (newWidth != null) __obj.updateDynamic("newWidth")(newWidth.asInstanceOf[js.Any])
     if (oldWidth != null) __obj.updateDynamic("oldWidth")(oldWidth.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResizeEndEventArgs]
   }
 }

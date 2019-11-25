@@ -10,18 +10,18 @@ package object atStyledDashSystemCssMod {
   import typings.std.Partial
 
   type CSSInterpolation = js.UndefOr[Double | String | CSSObject]
-  type CSSPropertiesWithMultiValues = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type CSSPropertiesWithMultiValues = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof @styled-system/css.@styled-system/css.CSSProperties ]: @styled-system/css.@styled-system/css.CSSProperties[K]}
     */ typings.atStyledDashSystemCss.atStyledDashSystemCssStrings.CSSPropertiesWithMultiValues with CSSProperties
-  type CSSPseudoSelectorProps = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type CSSPseudoSelectorProps = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in csstype.csstype.Pseudos ]:? @styled-system/css.@styled-system/css.SystemStyleObject}
     */ typings.atStyledDashSystemCss.atStyledDashSystemCssStrings.CSSPseudoSelectorProps with js.Any
-  type CSSPseudosForCSSObject = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type CSSPseudosForCSSObject = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in csstype.csstype.Pseudos ]:? @styled-system/css.@styled-system/css.CSSObject}
     */ typings.atStyledDashSystemCss.atStyledDashSystemCssStrings.CSSPseudosForCSSObject with js.Any
   type ResponsiveStyleValue[T] = T | (js.Array[T | Null])
   type StandardCSSProperties = PropertiesFallback[Double | String]
-  type SystemCssProperties = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type SystemCssProperties = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof @styled-system/css.@styled-system/css.AllSystemCSSProperties ]: @styled-system/css.@styled-system/css.ResponsiveStyleValue<@styled-system/css.@styled-system/css.AllSystemCSSProperties[K]> | (theme : any): @styled-system/css.@styled-system/css.ResponsiveStyleValue<@styled-system/css.@styled-system/css.AllSystemCSSProperties[K]> | @styled-system/css.@styled-system/css.SystemStyleObject}
     */ typings.atStyledDashSystemCss.atStyledDashSystemCssStrings.SystemCssProperties with js.Any
   /* Rewritten from type alias, can be one of: 
@@ -32,7 +32,7 @@ package object atStyledDashSystemCssMod {
     - typings.atStyledDashSystemCss.atStyledDashSystemCssMod.UseThemeFunction
   */
   type SystemStyleObject = _SystemStyleObject | SystemCssProperties | CSSPseudoSelectorProps
-  type Theme = (/* import warning: ImportType.apply c Unsupported type mapping: 
+  type Theme = (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof @styled-system/css.@styled-system/css.StandardCSSProperties ]: @styled-system/css.@styled-system/css.ThemeValue<@styled-system/css.@styled-system/css.StandardCSSProperties[K]>}
     */ typings.atStyledDashSystemCss.atStyledDashSystemCssStrings.Theme with StandardCSSProperties) | Partial[ScaleThemeProperties] | ThemeBreakPoints | (StringDictionary[
     /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias @styled-system/css.@styled-system/css.Theme */ js.Object

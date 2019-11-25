@@ -24,9 +24,9 @@ object CreateCollectdTimeSeriesRequest {
     resource: MonitoredResource = null
   ): CreateCollectdTimeSeriesRequest = {
     val __obj = js.Dynamic.literal()
-    if (collectdPayloads != null) __obj.updateDynamic("collectdPayloads")(collectdPayloads)
-    if (collectdVersion != null) __obj.updateDynamic("collectdVersion")(collectdVersion)
-    if (resource != null) __obj.updateDynamic("resource")(resource)
+    if (collectdPayloads != null) __obj.updateDynamic("collectdPayloads")(collectdPayloads.asInstanceOf[js.Any])
+    if (collectdVersion != null) __obj.updateDynamic("collectdVersion")(collectdVersion.asInstanceOf[js.Any])
+    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCollectdTimeSeriesRequest]
   }
 }

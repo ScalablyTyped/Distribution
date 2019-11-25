@@ -22,7 +22,7 @@ object GoogleProviderResultRaw {
     place_id: String,
     types: js.Array[String]
   ): GoogleProviderResultRaw = {
-    val __obj = js.Dynamic.literal(address_components = address_components, formatted_address = formatted_address, geometry = geometry, place_id = place_id, types = types)
+    val __obj = js.Dynamic.literal(address_components = address_components.asInstanceOf[js.Any], formatted_address = formatted_address.asInstanceOf[js.Any], geometry = geometry.asInstanceOf[js.Any], place_id = place_id.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GoogleProviderResultRaw]
   }

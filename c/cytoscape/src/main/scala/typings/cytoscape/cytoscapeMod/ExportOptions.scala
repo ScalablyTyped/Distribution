@@ -40,8 +40,8 @@ object ExportOptions {
     scale: Int | Double = null
   ): ExportOptions = {
     val __obj = js.Dynamic.literal()
-    if (bg != null) __obj.updateDynamic("bg")(bg)
-    if (!js.isUndefined(full)) __obj.updateDynamic("full")(full)
+    if (bg != null) __obj.updateDynamic("bg")(bg.asInstanceOf[js.Any])
+    if (!js.isUndefined(full)) __obj.updateDynamic("full")(full.asInstanceOf[js.Any])
     if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
     if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])

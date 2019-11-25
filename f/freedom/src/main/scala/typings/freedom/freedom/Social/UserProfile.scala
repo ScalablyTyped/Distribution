@@ -25,11 +25,11 @@ object UserProfile {
     timestamp: Int | Double = null,
     url: String = null
   ): UserProfile = {
-    val __obj = js.Dynamic.literal(name = name, userId = userId)
-    if (imageData != null) __obj.updateDynamic("imageData")(imageData)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
+    if (imageData != null) __obj.updateDynamic("imageData")(imageData.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserProfile]
   }
 }

@@ -48,24 +48,24 @@ object Props {
     transformDayElement: (/* rect */ js.Any, /* value */ js.Any, /* index */ Double) => _ = null,
     weekdayLabels: js.Array[String] = null
   ): Props = {
-    val __obj = js.Dynamic.literal(values = values)
+    val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
     if (classForValue != null) __obj.updateDynamic("classForValue")(js.Any.fromFunction1(classForValue))
     if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
     if (gutterSize != null) __obj.updateDynamic("gutterSize")(gutterSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal)
-    if (monthLabels != null) __obj.updateDynamic("monthLabels")(monthLabels)
+    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
+    if (monthLabels != null) __obj.updateDynamic("monthLabels")(monthLabels.asInstanceOf[js.Any])
     if (numDays != null) __obj.updateDynamic("numDays")(numDays.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction2(onMouseLeave))
     if (onMouseOver != null) __obj.updateDynamic("onMouseOver")(js.Any.fromFunction2(onMouseOver))
-    if (!js.isUndefined(showMonthLabels)) __obj.updateDynamic("showMonthLabels")(showMonthLabels)
-    if (!js.isUndefined(showOutOfRangeDays)) __obj.updateDynamic("showOutOfRangeDays")(showOutOfRangeDays)
-    if (!js.isUndefined(showWeekdayLabels)) __obj.updateDynamic("showWeekdayLabels")(showWeekdayLabels)
+    if (!js.isUndefined(showMonthLabels)) __obj.updateDynamic("showMonthLabels")(showMonthLabels.asInstanceOf[js.Any])
+    if (!js.isUndefined(showOutOfRangeDays)) __obj.updateDynamic("showOutOfRangeDays")(showOutOfRangeDays.asInstanceOf[js.Any])
+    if (!js.isUndefined(showWeekdayLabels)) __obj.updateDynamic("showWeekdayLabels")(showWeekdayLabels.asInstanceOf[js.Any])
     if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
     if (titleForValue != null) __obj.updateDynamic("titleForValue")(js.Any.fromFunction1(titleForValue))
-    if (tooltipDataAttrs != null) __obj.updateDynamic("tooltipDataAttrs")(tooltipDataAttrs)
+    if (tooltipDataAttrs != null) __obj.updateDynamic("tooltipDataAttrs")(tooltipDataAttrs.asInstanceOf[js.Any])
     if (transformDayElement != null) __obj.updateDynamic("transformDayElement")(js.Any.fromFunction3(transformDayElement))
-    if (weekdayLabels != null) __obj.updateDynamic("weekdayLabels")(weekdayLabels)
+    if (weekdayLabels != null) __obj.updateDynamic("weekdayLabels")(weekdayLabels.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }
 }

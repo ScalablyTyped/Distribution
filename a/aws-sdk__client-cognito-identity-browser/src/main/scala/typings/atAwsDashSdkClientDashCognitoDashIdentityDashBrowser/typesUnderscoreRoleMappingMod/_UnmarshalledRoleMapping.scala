@@ -26,7 +26,7 @@ object _UnmarshalledRoleMapping {
   ): _UnmarshalledRoleMapping = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
     if (AmbiguousRoleResolution != null) __obj.updateDynamic("AmbiguousRoleResolution")(AmbiguousRoleResolution.asInstanceOf[js.Any])
-    if (RulesConfiguration != null) __obj.updateDynamic("RulesConfiguration")(RulesConfiguration)
+    if (RulesConfiguration != null) __obj.updateDynamic("RulesConfiguration")(RulesConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledRoleMapping]
   }
 }

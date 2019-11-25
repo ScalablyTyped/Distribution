@@ -16,7 +16,7 @@ object Anon_False {
   @scala.inline
   def apply(returnPromise: `false` = null): Anon_False = {
     val __obj = js.Dynamic.literal()
-    if (returnPromise != null) __obj.updateDynamic("returnPromise")(returnPromise)
+    if (returnPromise != null) __obj.updateDynamic("returnPromise")(returnPromise.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_False]
   }
 }

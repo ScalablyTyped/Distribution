@@ -8,12 +8,16 @@ import scala.scalajs.js.annotation._
 
 object reactDashNativeDashTabDashViewComponents extends reactDashNativeDashTabDashViewProps {
   @scala.inline
-  def Pager[T /* <: Route */]: ComponentType[PagerProps[T]] = js.constructorOf[typings.reactDashNativeDashTabDashView.libTypescriptSrcPagerMod.default[T]].asInstanceOf[typings.react.reactMod.ComponentType[PagerProps[T]]]
+  def Pager: ComponentType[PagerProps[Route]] = js.constructorOf[typings.reactDashNativeDashTabDashView.libTypescriptSrcPagerMod.default[typings.reactDashNativeDashTabDashView.libTypescriptSrcTypesMod.Route]].asInstanceOf[typings.react.reactMod.ComponentType[
+  PagerProps[typings.reactDashNativeDashTabDashView.libTypescriptSrcTypesMod.Route]]]
   @scala.inline
-  def TabBar[T /* <: Route */]: ComponentType[TabBarProps[T]] = js.constructorOf[typings.reactDashNativeDashTabDashView.libTypescriptSrcTabBarMod.default[T]].asInstanceOf[typings.react.reactMod.ComponentType[TabBarProps[T]]]
+  def TabBar: ComponentType[TabBarProps[Route]] = js.constructorOf[typings.reactDashNativeDashTabDashView.libTypescriptSrcTabBarMod.default[typings.reactDashNativeDashTabDashView.libTypescriptSrcTypesMod.Route]].asInstanceOf[typings.react.reactMod.ComponentType[
+  TabBarProps[typings.reactDashNativeDashTabDashView.libTypescriptSrcTypesMod.Route]]]
   @scala.inline
-  def TabBarIndicator[T /* <: Route */]: ComponentType[TabBarIndicatorProps[T]] = js.constructorOf[typings.reactDashNativeDashTabDashView.libTypescriptSrcTabBarIndicatorMod.default[T]].asInstanceOf[typings.react.reactMod.ComponentType[TabBarIndicatorProps[T]]]
+  def TabBarIndicator: ComponentType[TabBarIndicatorProps[Route]] = js.constructorOf[typings.reactDashNativeDashTabDashView.libTypescriptSrcTabBarIndicatorMod.default[typings.reactDashNativeDashTabDashView.libTypescriptSrcTypesMod.Route]].asInstanceOf[typings.react.reactMod.ComponentType[
+  TabBarIndicatorProps[typings.reactDashNativeDashTabDashView.libTypescriptSrcTypesMod.Route]]]
   @scala.inline
-  def TabView[T /* <: Route */]: ComponentType[TabViewProps[T]] = js.constructorOf[typings.reactDashNativeDashTabDashView.libTypescriptSrcTabViewMod.default[T]].asInstanceOf[typings.react.reactMod.ComponentType[TabViewProps[T]]]
+  def TabView: ComponentType[TabViewProps[Route]] = js.constructorOf[typings.reactDashNativeDashTabDashView.libTypescriptSrcTabViewMod.default[typings.reactDashNativeDashTabDashView.libTypescriptSrcTypesMod.Route]].asInstanceOf[typings.react.reactMod.ComponentType[
+  TabViewProps[typings.reactDashNativeDashTabDashView.libTypescriptSrcTypesMod.Route]]]
 }
 

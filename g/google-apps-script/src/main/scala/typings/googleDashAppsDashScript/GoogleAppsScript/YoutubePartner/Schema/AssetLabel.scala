@@ -13,8 +13,8 @@ object AssetLabel {
   @scala.inline
   def apply(kind: String = null, labelName: String = null): AssetLabel = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (labelName != null) __obj.updateDynamic("labelName")(labelName)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (labelName != null) __obj.updateDynamic("labelName")(labelName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssetLabel]
   }
 }

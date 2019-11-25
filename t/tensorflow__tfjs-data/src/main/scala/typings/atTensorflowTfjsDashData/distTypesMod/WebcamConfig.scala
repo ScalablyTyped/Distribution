@@ -50,8 +50,8 @@ object WebcamConfig {
     resizeWidth: Int | Double = null
   ): WebcamConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(centerCrop)) __obj.updateDynamic("centerCrop")(centerCrop)
-    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId)
+    if (!js.isUndefined(centerCrop)) __obj.updateDynamic("centerCrop")(centerCrop.asInstanceOf[js.Any])
+    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId.asInstanceOf[js.Any])
     if (facingMode != null) __obj.updateDynamic("facingMode")(facingMode.asInstanceOf[js.Any])
     if (resizeHeight != null) __obj.updateDynamic("resizeHeight")(resizeHeight.asInstanceOf[js.Any])
     if (resizeWidth != null) __obj.updateDynamic("resizeWidth")(resizeWidth.asInstanceOf[js.Any])

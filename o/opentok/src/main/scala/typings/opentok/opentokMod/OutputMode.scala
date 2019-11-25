@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait OutputMode extends js.Object
 
+object OutputMode {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def composed: typings.opentok.opentokStrings.composed = this.cast("composed")
+  @scala.inline
+  def individual: typings.opentok.opentokStrings.individual = this.cast("individual")
+}
+

@@ -19,7 +19,7 @@ object BaseConfigOptions {
   @scala.inline
   def apply(pathPrefix: js.Array[String] = null): BaseConfigOptions = {
     val __obj = js.Dynamic.literal()
-    if (pathPrefix != null) __obj.updateDynamic("pathPrefix")(pathPrefix)
+    if (pathPrefix != null) __obj.updateDynamic("pathPrefix")(pathPrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseConfigOptions]
   }
 }

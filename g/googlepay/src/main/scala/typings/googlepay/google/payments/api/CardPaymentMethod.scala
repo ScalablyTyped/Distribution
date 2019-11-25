@@ -18,9 +18,9 @@ object CardPaymentMethod {
     `type`: CARD,
     tokenizationSpecification: PaymentMethodTokenizationSpecification = null
   ): CardPaymentMethod = {
-    val __obj = js.Dynamic.literal(parameters = parameters)
-    __obj.updateDynamic("type")(`type`)
-    if (tokenizationSpecification != null) __obj.updateDynamic("tokenizationSpecification")(tokenizationSpecification)
+    val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (tokenizationSpecification != null) __obj.updateDynamic("tokenizationSpecification")(tokenizationSpecification.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardPaymentMethod]
   }
 }

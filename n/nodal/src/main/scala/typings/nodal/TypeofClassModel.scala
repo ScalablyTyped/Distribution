@@ -106,7 +106,7 @@ trait TypeofClassModel
     *   "multiple": Whether the child exists in multiples for the parent (defaults to false)
     */
   def joinsTo(
-    modelClass: /* import warning: ImportType.apply Failed type conversion: typeof Model */ js.Any,
+    modelClass: /* import warning: importer.ImportType#apply Failed type conversion: typeof Model */ js.Any,
     options: Anon_As
   ): RelationshipEdge | Null = js.native
   /**

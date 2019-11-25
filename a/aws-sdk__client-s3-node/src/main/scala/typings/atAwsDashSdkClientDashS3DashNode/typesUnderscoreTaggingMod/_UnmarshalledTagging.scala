@@ -16,7 +16,7 @@ trait _UnmarshalledTagging extends _Tagging {
 object _UnmarshalledTagging {
   @scala.inline
   def apply(TagSet: js.Array[_UnmarshalledTag]): _UnmarshalledTagging = {
-    val __obj = js.Dynamic.literal(TagSet = TagSet)
+    val __obj = js.Dynamic.literal(TagSet = TagSet.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_UnmarshalledTagging]
   }

@@ -65,15 +65,15 @@ object NotificationConstructorOptions {
     sound: String = null,
     subtitle: String = null
   ): NotificationConstructorOptions = {
-    val __obj = js.Dynamic.literal(body = body, title = title)
-    if (actions != null) __obj.updateDynamic("actions")(actions)
-    if (closeButtonText != null) __obj.updateDynamic("closeButtonText")(closeButtonText)
-    if (!js.isUndefined(hasReply)) __obj.updateDynamic("hasReply")(hasReply)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
+    if (closeButtonText != null) __obj.updateDynamic("closeButtonText")(closeButtonText.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasReply)) __obj.updateDynamic("hasReply")(hasReply.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (replyPlaceholder != null) __obj.updateDynamic("replyPlaceholder")(replyPlaceholder)
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
-    if (sound != null) __obj.updateDynamic("sound")(sound)
-    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle)
+    if (replyPlaceholder != null) __obj.updateDynamic("replyPlaceholder")(replyPlaceholder.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
+    if (sound != null) __obj.updateDynamic("sound")(sound.asInstanceOf[js.Any])
+    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationConstructorOptions]
   }
 }

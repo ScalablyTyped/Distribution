@@ -13,8 +13,8 @@ trait HeatMapDatumWithColor extends /* key */ StringDictionary[String | Double] 
 object HeatMapDatumWithColor {
   @scala.inline
   def apply(color: String, StringDictionary: /* key */ StringDictionary[String | Double] = null): HeatMapDatumWithColor = {
-    val __obj = js.Dynamic.literal(color = color)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[HeatMapDatumWithColor]
   }
 }

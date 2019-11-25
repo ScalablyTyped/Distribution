@@ -26,12 +26,12 @@ object Anon_CommentsIdImported {
     local: IdentifierKind = null,
     name: IdentifierKind = null
   ): Anon_CommentsIdImported = {
-    val __obj = js.Dynamic.literal(imported = imported)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (local != null) __obj.updateDynamic("local")(local)
-    if (name != null) __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(imported = imported.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (local != null) __obj.updateDynamic("local")(local.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CommentsIdImported]
   }
 }

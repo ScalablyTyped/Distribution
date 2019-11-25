@@ -40,10 +40,10 @@ object ListQueuesInput {
     QueueNamePrefix: String = null
   ): ListQueuesInput = {
     val __obj = js.Dynamic.literal()
-    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal)
-    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions)
+    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal.asInstanceOf[js.Any])
+    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions.asInstanceOf[js.Any])
     if ($maxRetries != null) __obj.updateDynamic("$maxRetries")($maxRetries.asInstanceOf[js.Any])
-    if (QueueNamePrefix != null) __obj.updateDynamic("QueueNamePrefix")(QueueNamePrefix)
+    if (QueueNamePrefix != null) __obj.updateDynamic("QueueNamePrefix")(QueueNamePrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListQueuesInput]
   }
 }

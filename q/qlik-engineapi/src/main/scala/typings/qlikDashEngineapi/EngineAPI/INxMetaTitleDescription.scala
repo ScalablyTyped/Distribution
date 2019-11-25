@@ -21,8 +21,8 @@ trait INxMetaTitleDescription extends INxMeta {
 object INxMetaTitleDescription {
   @scala.inline
   def apply(description: String, title: String, qName: String = null): INxMetaTitleDescription = {
-    val __obj = js.Dynamic.literal(description = description, title = title)
-    if (qName != null) __obj.updateDynamic("qName")(qName)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    if (qName != null) __obj.updateDynamic("qName")(qName.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxMetaTitleDescription]
   }
 }

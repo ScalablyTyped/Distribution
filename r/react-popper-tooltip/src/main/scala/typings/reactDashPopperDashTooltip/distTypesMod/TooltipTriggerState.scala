@@ -13,7 +13,7 @@ trait TooltipTriggerState extends js.Object {
 object TooltipTriggerState {
   @scala.inline
   def apply(tooltipShown: Boolean, pageX: Int | Double = null, pageY: Int | Double = null): TooltipTriggerState = {
-    val __obj = js.Dynamic.literal(tooltipShown = tooltipShown)
+    val __obj = js.Dynamic.literal(tooltipShown = tooltipShown.asInstanceOf[js.Any])
     if (pageX != null) __obj.updateDynamic("pageX")(pageX.asInstanceOf[js.Any])
     if (pageY != null) __obj.updateDynamic("pageY")(pageY.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipTriggerState]

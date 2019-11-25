@@ -69,17 +69,17 @@ object EventDefinition {
     version: String = null
   ): EventDefinition = {
     val __obj = js.Dynamic.literal()
-    if (aggregate != null) __obj.updateDynamic("aggregate")(aggregate)
-    if (aggregateId != null) __obj.updateDynamic("aggregateId")(aggregateId)
-    if (commitStamp != null) __obj.updateDynamic("commitStamp")(commitStamp)
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (correlationId != null) __obj.updateDynamic("correlationId")(correlationId)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (meta != null) __obj.updateDynamic("meta")(meta)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (payload != null) __obj.updateDynamic("payload")(payload)
-    if (revision != null) __obj.updateDynamic("revision")(revision)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (aggregate != null) __obj.updateDynamic("aggregate")(aggregate.asInstanceOf[js.Any])
+    if (aggregateId != null) __obj.updateDynamic("aggregateId")(aggregateId.asInstanceOf[js.Any])
+    if (commitStamp != null) __obj.updateDynamic("commitStamp")(commitStamp.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (correlationId != null) __obj.updateDynamic("correlationId")(correlationId.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
+    if (revision != null) __obj.updateDynamic("revision")(revision.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventDefinition]
   }
 }

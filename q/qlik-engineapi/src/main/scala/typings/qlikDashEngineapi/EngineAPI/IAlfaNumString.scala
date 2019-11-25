@@ -21,7 +21,7 @@ trait IAlfaNumString extends js.Object {
 object IAlfaNumString {
   @scala.inline
   def apply(qIsNum: Boolean, qString: String): IAlfaNumString = {
-    val __obj = js.Dynamic.literal(qIsNum = qIsNum, qString = qString)
+    val __obj = js.Dynamic.literal(qIsNum = qIsNum.asInstanceOf[js.Any], qString = qString.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IAlfaNumString]
   }

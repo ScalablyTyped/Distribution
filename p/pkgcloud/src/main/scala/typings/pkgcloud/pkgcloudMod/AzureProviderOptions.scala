@@ -15,8 +15,8 @@ trait AzureProviderOptions extends js.Object {
 object AzureProviderOptions {
   @scala.inline
   def apply(provider: azure, storageAccessKey: String, storageAccount: String, location: String = null): AzureProviderOptions = {
-    val __obj = js.Dynamic.literal(provider = provider, storageAccessKey = storageAccessKey, storageAccount = storageAccount)
-    if (location != null) __obj.updateDynamic("location")(location)
+    val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any], storageAccessKey = storageAccessKey.asInstanceOf[js.Any], storageAccount = storageAccount.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[AzureProviderOptions]
   }
 }

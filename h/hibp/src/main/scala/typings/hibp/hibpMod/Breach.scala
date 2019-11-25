@@ -42,7 +42,7 @@ object Breach {
     PwnCount: Double,
     Title: String
   ): Breach = {
-    val __obj = js.Dynamic.literal(AddedDate = AddedDate, BreachDate = BreachDate, DataClasses = DataClasses, Description = Description, Domain = Domain, IsFabricated = IsFabricated, IsRetired = IsRetired, IsSensitive = IsSensitive, IsSpamList = IsSpamList, IsVerified = IsVerified, LogoPath = LogoPath, ModifiedDate = ModifiedDate, Name = Name, PwnCount = PwnCount, Title = Title)
+    val __obj = js.Dynamic.literal(AddedDate = AddedDate.asInstanceOf[js.Any], BreachDate = BreachDate.asInstanceOf[js.Any], DataClasses = DataClasses.asInstanceOf[js.Any], Description = Description.asInstanceOf[js.Any], Domain = Domain.asInstanceOf[js.Any], IsFabricated = IsFabricated.asInstanceOf[js.Any], IsRetired = IsRetired.asInstanceOf[js.Any], IsSensitive = IsSensitive.asInstanceOf[js.Any], IsSpamList = IsSpamList.asInstanceOf[js.Any], IsVerified = IsVerified.asInstanceOf[js.Any], LogoPath = LogoPath.asInstanceOf[js.Any], ModifiedDate = ModifiedDate.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], PwnCount = PwnCount.asInstanceOf[js.Any], Title = Title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Breach]
   }

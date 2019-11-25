@@ -24,12 +24,12 @@ object ContentRect {
     scroll: Rect = null
   ): ContentRect = {
     val __obj = js.Dynamic.literal()
-    if (bounds != null) __obj.updateDynamic("bounds")(bounds)
-    if (client != null) __obj.updateDynamic("client")(client)
-    if (entry != null) __obj.updateDynamic("entry")(entry)
-    if (margin != null) __obj.updateDynamic("margin")(margin)
-    if (offset != null) __obj.updateDynamic("offset")(offset)
-    if (scroll != null) __obj.updateDynamic("scroll")(scroll)
+    if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
+    if (client != null) __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
+    if (entry != null) __obj.updateDynamic("entry")(entry.asInstanceOf[js.Any])
+    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (scroll != null) __obj.updateDynamic("scroll")(scroll.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentRect]
   }
 }

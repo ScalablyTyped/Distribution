@@ -13,8 +13,8 @@ trait ArgumentPart extends MessageFormatPart {
 object ArgumentPart {
   @scala.inline
   def apply(`type`: `1`, value: js.Any): ArgumentPart = {
-    val __obj = js.Dynamic.literal(value = value)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArgumentPart]
   }
 }

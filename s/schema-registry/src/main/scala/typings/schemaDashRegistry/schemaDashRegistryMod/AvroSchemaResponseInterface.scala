@@ -14,7 +14,7 @@ trait AvroSchemaResponseInterface extends js.Object {
 object AvroSchemaResponseInterface {
   @scala.inline
   def apply(id: Double, schema: js.Any, subject: String, version: Double): AvroSchemaResponseInterface = {
-    val __obj = js.Dynamic.literal(id = id, schema = schema, subject = subject, version = version)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AvroSchemaResponseInterface]
   }

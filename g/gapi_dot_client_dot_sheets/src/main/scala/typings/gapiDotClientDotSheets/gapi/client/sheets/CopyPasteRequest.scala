@@ -30,10 +30,10 @@ object CopyPasteRequest {
     source: GridRange = null
   ): CopyPasteRequest = {
     val __obj = js.Dynamic.literal()
-    if (destination != null) __obj.updateDynamic("destination")(destination)
-    if (pasteOrientation != null) __obj.updateDynamic("pasteOrientation")(pasteOrientation)
-    if (pasteType != null) __obj.updateDynamic("pasteType")(pasteType)
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
+    if (pasteOrientation != null) __obj.updateDynamic("pasteOrientation")(pasteOrientation.asInstanceOf[js.Any])
+    if (pasteType != null) __obj.updateDynamic("pasteType")(pasteType.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[CopyPasteRequest]
   }
 }

@@ -18,8 +18,8 @@ object update extends js.Object {
     `object`: C,
     key: K,
     updater: js.Function1[
-      /* import warning: ImportType.apply Failed type conversion: C[K] */ /* value */ js.Any, 
-      /* import warning: ImportType.apply Failed type conversion: C[K] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: C[K] */ /* value */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: C[K] */ js.Any
     ]
   ): C = js.native
   def apply[C, K /* <: String */, NSV](
@@ -27,8 +27,8 @@ object update extends js.Object {
     key: K,
     notSetValue: NSV,
     updater: js.Function1[
-      /* value */ (/* import warning: ImportType.apply Failed type conversion: C[K] */ js.Any) | NSV, 
-      /* import warning: ImportType.apply Failed type conversion: C[K] */ js.Any
+      /* value */ (/* import warning: importer.ImportType#apply Failed type conversion: C[K] */ js.Any) | NSV, 
+      /* import warning: importer.ImportType#apply Failed type conversion: C[K] */ js.Any
     ]
   ): C = js.native
 }

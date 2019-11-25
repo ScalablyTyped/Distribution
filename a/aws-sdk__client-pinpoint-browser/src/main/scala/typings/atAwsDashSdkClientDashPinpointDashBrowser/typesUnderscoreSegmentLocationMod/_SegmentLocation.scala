@@ -21,8 +21,8 @@ object _SegmentLocation {
   @scala.inline
   def apply(Country: _SetDimension = null, GPSPoint: _GPSPointDimension = null): _SegmentLocation = {
     val __obj = js.Dynamic.literal()
-    if (Country != null) __obj.updateDynamic("Country")(Country)
-    if (GPSPoint != null) __obj.updateDynamic("GPSPoint")(GPSPoint)
+    if (Country != null) __obj.updateDynamic("Country")(Country.asInstanceOf[js.Any])
+    if (GPSPoint != null) __obj.updateDynamic("GPSPoint")(GPSPoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[_SegmentLocation]
   }
 }

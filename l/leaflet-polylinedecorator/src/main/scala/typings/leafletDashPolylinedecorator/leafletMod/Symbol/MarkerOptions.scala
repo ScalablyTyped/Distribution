@@ -16,8 +16,8 @@ object MarkerOptions {
     rotate: js.UndefOr[Boolean] = js.undefined
   ): MarkerOptions = {
     val __obj = js.Dynamic.literal()
-    if (markerOptions != null) __obj.updateDynamic("markerOptions")(markerOptions)
-    if (!js.isUndefined(rotate)) __obj.updateDynamic("rotate")(rotate)
+    if (markerOptions != null) __obj.updateDynamic("markerOptions")(markerOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotate)) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkerOptions]
   }
 }

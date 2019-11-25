@@ -77,7 +77,7 @@ object PatternOptionsObject {
     x: Int | Double = null,
     y: Int | Double = null
   ): PatternOptionsObject = {
-    val __obj = js.Dynamic.literal(aspectRatio = aspectRatio, backgroundColor = backgroundColor, color = color, height = height, id = id, image = image, opacity = opacity, path = path.asInstanceOf[js.Any], width = width)
+    val __obj = js.Dynamic.literal(aspectRatio = aspectRatio.asInstanceOf[js.Any], backgroundColor = backgroundColor.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[PatternOptionsObject]

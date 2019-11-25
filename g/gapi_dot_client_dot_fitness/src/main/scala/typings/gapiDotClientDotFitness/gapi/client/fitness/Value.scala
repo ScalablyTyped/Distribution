@@ -32,8 +32,8 @@ object Value {
     val __obj = js.Dynamic.literal()
     if (fpVal != null) __obj.updateDynamic("fpVal")(fpVal.asInstanceOf[js.Any])
     if (intVal != null) __obj.updateDynamic("intVal")(intVal.asInstanceOf[js.Any])
-    if (mapVal != null) __obj.updateDynamic("mapVal")(mapVal)
-    if (stringVal != null) __obj.updateDynamic("stringVal")(stringVal)
+    if (mapVal != null) __obj.updateDynamic("mapVal")(mapVal.asInstanceOf[js.Any])
+    if (stringVal != null) __obj.updateDynamic("stringVal")(stringVal.asInstanceOf[js.Any])
     __obj.asInstanceOf[Value]
   }
 }

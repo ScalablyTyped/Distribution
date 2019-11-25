@@ -13,7 +13,7 @@ trait Anon_LastSyncTime extends js.Object {
 object Anon_LastSyncTime {
   @scala.inline
   def apply(LastSyncTime: Date, Status: String): Anon_LastSyncTime = {
-    val __obj = js.Dynamic.literal(LastSyncTime = LastSyncTime, Status = Status)
+    val __obj = js.Dynamic.literal(LastSyncTime = LastSyncTime.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_LastSyncTime]
   }

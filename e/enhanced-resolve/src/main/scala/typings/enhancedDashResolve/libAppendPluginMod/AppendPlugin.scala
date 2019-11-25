@@ -20,7 +20,7 @@ object AppendPlugin {
     source: String,
     target: String
   ): AppendPlugin = {
-    val __obj = js.Dynamic.literal(appending = appending, apply = js.Any.fromFunction1(apply), source = source, target = target)
+    val __obj = js.Dynamic.literal(appending = appending.asInstanceOf[js.Any], apply = js.Any.fromFunction1(apply), source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AppendPlugin]
   }

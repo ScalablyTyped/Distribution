@@ -31,14 +31,14 @@ object DraggableOption {
   ): DraggableOption = {
     val __obj = js.Dynamic.literal()
     if (before != null) __obj.updateDynamic("before")(js.Any.fromFunction1(before))
-    if (container != null) __obj.updateDynamic("container")(container)
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (drag != null) __obj.updateDynamic("drag")(js.Any.fromFunction1(drag))
     if (finish != null) __obj.updateDynamic("finish")(js.Any.fromFunction1(finish))
-    if (handle != null) __obj.updateDynamic("handle")(handle)
-    if (mouseButton != null) __obj.updateDynamic("mouseButton")(mouseButton)
-    if (!js.isUndefined(move)) __obj.updateDynamic("move")(move)
-    if (selector != null) __obj.updateDynamic("selector")(selector)
-    if (!js.isUndefined(stopPropagation)) __obj.updateDynamic("stopPropagation")(stopPropagation)
+    if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
+    if (mouseButton != null) __obj.updateDynamic("mouseButton")(mouseButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(move)) __obj.updateDynamic("move")(move.asInstanceOf[js.Any])
+    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopPropagation)) __obj.updateDynamic("stopPropagation")(stopPropagation.asInstanceOf[js.Any])
     __obj.asInstanceOf[DraggableOption]
   }
 }

@@ -14,7 +14,7 @@ trait PromiseRejection[E]
 object PromiseRejection {
   @scala.inline
   def apply[E](reason: E, status: rejected): PromiseRejection[E] = {
-    val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], status = status)
+    val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PromiseRejection[E]]
   }

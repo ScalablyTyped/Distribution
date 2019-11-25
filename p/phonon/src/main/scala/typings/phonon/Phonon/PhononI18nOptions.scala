@@ -14,9 +14,9 @@ object PhononI18nOptions {
   @scala.inline
   def apply(directory: String = null, localeFallback: String = null, localePreferred: String = null): PhononI18nOptions = {
     val __obj = js.Dynamic.literal()
-    if (directory != null) __obj.updateDynamic("directory")(directory)
-    if (localeFallback != null) __obj.updateDynamic("localeFallback")(localeFallback)
-    if (localePreferred != null) __obj.updateDynamic("localePreferred")(localePreferred)
+    if (directory != null) __obj.updateDynamic("directory")(directory.asInstanceOf[js.Any])
+    if (localeFallback != null) __obj.updateDynamic("localeFallback")(localeFallback.asInstanceOf[js.Any])
+    if (localePreferred != null) __obj.updateDynamic("localePreferred")(localePreferred.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhononI18nOptions]
   }
 }

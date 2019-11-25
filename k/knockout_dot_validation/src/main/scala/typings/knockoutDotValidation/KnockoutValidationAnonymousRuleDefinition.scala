@@ -11,7 +11,7 @@ trait KnockoutValidationAnonymousRuleDefinition extends js.Object {
 object KnockoutValidationAnonymousRuleDefinition {
   @scala.inline
   def apply(validation: KnockoutValidationRuleDefinition): KnockoutValidationAnonymousRuleDefinition = {
-    val __obj = js.Dynamic.literal(validation = validation)
+    val __obj = js.Dynamic.literal(validation = validation.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[KnockoutValidationAnonymousRuleDefinition]
   }

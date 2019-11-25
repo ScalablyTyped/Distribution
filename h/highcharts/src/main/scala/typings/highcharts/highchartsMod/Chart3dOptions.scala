@@ -59,12 +59,12 @@ object Chart3dOptions {
   ): Chart3dOptions = {
     val __obj = js.Dynamic.literal()
     if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
-    if (axisLabelPosition != null) __obj.updateDynamic("axisLabelPosition")(axisLabelPosition)
+    if (axisLabelPosition != null) __obj.updateDynamic("axisLabelPosition")(axisLabelPosition.asInstanceOf[js.Any])
     if (beta != null) __obj.updateDynamic("beta")(beta.asInstanceOf[js.Any])
     if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (!js.isUndefined(fitToPlot)) __obj.updateDynamic("fitToPlot")(fitToPlot)
-    if (frame != null) __obj.updateDynamic("frame")(frame)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(fitToPlot)) __obj.updateDynamic("fitToPlot")(fitToPlot.asInstanceOf[js.Any])
+    if (frame != null) __obj.updateDynamic("frame")(frame.asInstanceOf[js.Any])
     if (viewDistance != null) __obj.updateDynamic("viewDistance")(viewDistance.asInstanceOf[js.Any])
     __obj.asInstanceOf[Chart3dOptions]
   }

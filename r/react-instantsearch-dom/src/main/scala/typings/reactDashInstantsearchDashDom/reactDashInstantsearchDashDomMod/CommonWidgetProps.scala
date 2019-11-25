@@ -20,7 +20,7 @@ object CommonWidgetProps {
   @scala.inline
   def apply(translations: StringDictionary[String | (js.Function1[/* repeated */ js.Any, _])] = null): CommonWidgetProps = {
     val __obj = js.Dynamic.literal()
-    if (translations != null) __obj.updateDynamic("translations")(translations)
+    if (translations != null) __obj.updateDynamic("translations")(translations.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommonWidgetProps]
   }
 }

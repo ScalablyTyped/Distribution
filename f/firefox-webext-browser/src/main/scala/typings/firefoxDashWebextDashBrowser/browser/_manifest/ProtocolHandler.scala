@@ -27,7 +27,7 @@ trait ProtocolHandler extends js.Object {
 object ProtocolHandler {
   @scala.inline
   def apply(name: String, protocol: String | _ProtocolHandlerProtocol, uriTemplate: ExtensionURL | HttpURL): ProtocolHandler = {
-    val __obj = js.Dynamic.literal(name = name, protocol = protocol.asInstanceOf[js.Any], uriTemplate = uriTemplate.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], uriTemplate = uriTemplate.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ProtocolHandler]
   }

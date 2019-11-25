@@ -71,9 +71,9 @@ object PluginSpec {
     val __obj = js.Dynamic.literal()
     if (appendTransaction != null) __obj.updateDynamic("appendTransaction")(js.Any.fromFunction3(appendTransaction))
     if (filterTransaction != null) __obj.updateDynamic("filterTransaction")(js.Any.fromFunction2(filterTransaction))
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (props != null) __obj.updateDynamic("props")(props)
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (props != null) __obj.updateDynamic("props")(props.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(js.Any.fromFunction1(view))
     __obj.asInstanceOf[PluginSpec[T, S]]
   }

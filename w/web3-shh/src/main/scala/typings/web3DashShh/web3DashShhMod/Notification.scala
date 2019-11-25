@@ -29,9 +29,9 @@ object Notification {
     recipientPublicKey: String = null,
     sig: String = null
   ): Notification = {
-    val __obj = js.Dynamic.literal(hash = hash, padding = padding, payload = payload, pow = pow, timestamp = timestamp, topic = topic, ttl = ttl)
-    if (recipientPublicKey != null) __obj.updateDynamic("recipientPublicKey")(recipientPublicKey)
-    if (sig != null) __obj.updateDynamic("sig")(sig)
+    val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], padding = padding.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], pow = pow.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any], ttl = ttl.asInstanceOf[js.Any])
+    if (recipientPublicKey != null) __obj.updateDynamic("recipientPublicKey")(recipientPublicKey.asInstanceOf[js.Any])
+    if (sig != null) __obj.updateDynamic("sig")(sig.asInstanceOf[js.Any])
     __obj.asInstanceOf[Notification]
   }
 }

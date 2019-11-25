@@ -16,8 +16,8 @@ object Anon_IsCoreModule {
     isInternalModule: js.UndefOr[Boolean] = js.undefined
   ): Anon_IsCoreModule = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isCoreModule)) __obj.updateDynamic("isCoreModule")(isCoreModule)
-    if (!js.isUndefined(isInternalModule)) __obj.updateDynamic("isInternalModule")(isInternalModule)
+    if (!js.isUndefined(isCoreModule)) __obj.updateDynamic("isCoreModule")(isCoreModule.asInstanceOf[js.Any])
+    if (!js.isUndefined(isInternalModule)) __obj.updateDynamic("isInternalModule")(isInternalModule.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IsCoreModule]
   }
 }

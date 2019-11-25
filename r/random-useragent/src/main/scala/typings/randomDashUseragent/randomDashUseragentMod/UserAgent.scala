@@ -51,7 +51,7 @@ object UserAgent {
     vendor: String,
     vendorSub: String
   ): UserAgent = {
-    val __obj = js.Dynamic.literal(appCodename = appCodename, appName = appName, appVersion = appVersion, browserMajor = browserMajor, browserName = browserName, browserVersion = browserVersion, cpuArchitecture = cpuArchitecture, description = description, deviceModel = deviceModel, deviceType = deviceType, deviceVendor = deviceVendor, engineName = engineName, engineVersion = engineVersion, folder = folder, osName = osName, osVersion = osVersion, platform = platform, userAgent = userAgent, vendor = vendor, vendorSub = vendorSub)
+    val __obj = js.Dynamic.literal(appCodename = appCodename.asInstanceOf[js.Any], appName = appName.asInstanceOf[js.Any], appVersion = appVersion.asInstanceOf[js.Any], browserMajor = browserMajor.asInstanceOf[js.Any], browserName = browserName.asInstanceOf[js.Any], browserVersion = browserVersion.asInstanceOf[js.Any], cpuArchitecture = cpuArchitecture.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], deviceModel = deviceModel.asInstanceOf[js.Any], deviceType = deviceType.asInstanceOf[js.Any], deviceVendor = deviceVendor.asInstanceOf[js.Any], engineName = engineName.asInstanceOf[js.Any], engineVersion = engineVersion.asInstanceOf[js.Any], folder = folder.asInstanceOf[js.Any], osName = osName.asInstanceOf[js.Any], osVersion = osVersion.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], userAgent = userAgent.asInstanceOf[js.Any], vendor = vendor.asInstanceOf[js.Any], vendorSub = vendorSub.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UserAgent]
   }

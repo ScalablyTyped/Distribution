@@ -22,11 +22,11 @@ object MapTypeOptions {
     tips: String = null
   ): MapTypeOptions = {
     val __obj = js.Dynamic.literal()
-    if (errorImageUrl != null) __obj.updateDynamic("errorImageUrl")(errorImageUrl)
+    if (errorImageUrl != null) __obj.updateDynamic("errorImageUrl")(errorImageUrl.asInstanceOf[js.Any])
     if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
     if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
     if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
-    if (tips != null) __obj.updateDynamic("tips")(tips)
+    if (tips != null) __obj.updateDynamic("tips")(tips.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapTypeOptions]
   }
 }

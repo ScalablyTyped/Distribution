@@ -14,7 +14,7 @@ trait DirectInboxFeedResponseLinkContext extends js.Object {
 object DirectInboxFeedResponseLinkContext {
   @scala.inline
   def apply(link_image_url: String, link_summary: String, link_title: String, link_url: String): DirectInboxFeedResponseLinkContext = {
-    val __obj = js.Dynamic.literal(link_image_url = link_image_url, link_summary = link_summary, link_title = link_title, link_url = link_url)
+    val __obj = js.Dynamic.literal(link_image_url = link_image_url.asInstanceOf[js.Any], link_summary = link_summary.asInstanceOf[js.Any], link_title = link_title.asInstanceOf[js.Any], link_url = link_url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DirectInboxFeedResponseLinkContext]
   }

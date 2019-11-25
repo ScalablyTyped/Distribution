@@ -19,8 +19,8 @@ object PanelTheme {
   @scala.inline
   def apply(bodyScroll: String = null, panel: String = null): PanelTheme = {
     val __obj = js.Dynamic.literal()
-    if (bodyScroll != null) __obj.updateDynamic("bodyScroll")(bodyScroll)
-    if (panel != null) __obj.updateDynamic("panel")(panel)
+    if (bodyScroll != null) __obj.updateDynamic("bodyScroll")(bodyScroll.asInstanceOf[js.Any])
+    if (panel != null) __obj.updateDynamic("panel")(panel.asInstanceOf[js.Any])
     __obj.asInstanceOf[PanelTheme]
   }
 }

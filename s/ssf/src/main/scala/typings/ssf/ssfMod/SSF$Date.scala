@@ -41,7 +41,7 @@ object SSF$Date {
     u: Double,
     y: Double
   ): SSF$Date = {
-    val __obj = js.Dynamic.literal(D = D, H = H, M = M, S = S, T = T, d = d, m = m, q = q, u = u, y = y)
+    val __obj = js.Dynamic.literal(D = D.asInstanceOf[js.Any], H = H.asInstanceOf[js.Any], M = M.asInstanceOf[js.Any], S = S.asInstanceOf[js.Any], T = T.asInstanceOf[js.Any], d = d.asInstanceOf[js.Any], m = m.asInstanceOf[js.Any], q = q.asInstanceOf[js.Any], u = u.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SSF$Date]
   }

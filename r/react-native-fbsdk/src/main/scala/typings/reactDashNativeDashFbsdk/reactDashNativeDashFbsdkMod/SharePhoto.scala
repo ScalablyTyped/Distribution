@@ -26,9 +26,9 @@ trait SharePhoto extends js.Object {
 object SharePhoto {
   @scala.inline
   def apply(imageUrl: String, caption: String = null, userGenerated: js.UndefOr[Boolean] = js.undefined): SharePhoto = {
-    val __obj = js.Dynamic.literal(imageUrl = imageUrl)
-    if (caption != null) __obj.updateDynamic("caption")(caption)
-    if (!js.isUndefined(userGenerated)) __obj.updateDynamic("userGenerated")(userGenerated)
+    val __obj = js.Dynamic.literal(imageUrl = imageUrl.asInstanceOf[js.Any])
+    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
+    if (!js.isUndefined(userGenerated)) __obj.updateDynamic("userGenerated")(userGenerated.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharePhoto]
   }
 }

@@ -13,7 +13,7 @@ trait AsObject extends js.Object {
 object AsObject {
   @scala.inline
   def apply(code: AdmissionControlStatusCode, message: String): AsObject = {
-    val __obj = js.Dynamic.literal(code = code, message = message)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AsObject]
   }

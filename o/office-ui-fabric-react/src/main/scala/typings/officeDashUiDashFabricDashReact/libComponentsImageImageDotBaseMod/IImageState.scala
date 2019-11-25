@@ -13,7 +13,7 @@ object IImageState {
   @scala.inline
   def apply(loadState: ImageLoadState = null): IImageState = {
     val __obj = js.Dynamic.literal()
-    if (loadState != null) __obj.updateDynamic("loadState")(loadState)
+    if (loadState != null) __obj.updateDynamic("loadState")(loadState.asInstanceOf[js.Any])
     __obj.asInstanceOf[IImageState]
   }
 }

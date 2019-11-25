@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait OmitAttrs extends js.Object
 
+object OmitAttrs {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def defaultValue: typings.antd.antdStrings.defaultValue = this.cast("defaultValue")
+  @scala.inline
+  def onChange: typings.antd.antdStrings.onChange = this.cast("onChange")
+  @scala.inline
+  def size: typings.antd.antdStrings.size = this.cast("size")
+}
+

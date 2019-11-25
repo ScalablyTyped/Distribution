@@ -26,7 +26,7 @@ object KeyData {
     sessionTime: String,
     sessionToken: String
   ): KeyData = {
-    val __obj = js.Dynamic.literal(accessKey = accessKey, alksAccount = alksAccount, alksRole = alksRole, expires = expires, secretKey = secretKey, sessionTime = sessionTime, sessionToken = sessionToken)
+    val __obj = js.Dynamic.literal(accessKey = accessKey.asInstanceOf[js.Any], alksAccount = alksAccount.asInstanceOf[js.Any], alksRole = alksRole.asInstanceOf[js.Any], expires = expires.asInstanceOf[js.Any], secretKey = secretKey.asInstanceOf[js.Any], sessionTime = sessionTime.asInstanceOf[js.Any], sessionToken = sessionToken.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[KeyData]
   }

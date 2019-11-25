@@ -11,7 +11,7 @@ trait NodeModuleInfo extends js.Object {
 object NodeModuleInfo {
   @scala.inline
   def apply(name: String): NodeModuleInfo = {
-    val __obj = js.Dynamic.literal(name = name)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NodeModuleInfo]
   }

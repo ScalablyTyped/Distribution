@@ -17,7 +17,7 @@ trait Anon_Kind extends js.Object {
 object Anon_Kind {
   @scala.inline
   def apply(kind: String, name: String, parameters: Parameters, storyFn: /* p */ js.UndefOr[StoryContext] => _): Anon_Kind = {
-    val __obj = js.Dynamic.literal(kind = kind, name = name, parameters = parameters, storyFn = js.Any.fromFunction1(storyFn))
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any], storyFn = js.Any.fromFunction1(storyFn))
   
     __obj.asInstanceOf[Anon_Kind]
   }

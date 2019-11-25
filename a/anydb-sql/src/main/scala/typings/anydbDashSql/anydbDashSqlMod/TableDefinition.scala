@@ -14,8 +14,8 @@ trait TableDefinition extends js.Object {
 object TableDefinition {
   @scala.inline
   def apply(columns: Dictionary[ColumnDefinition], name: String, has: Dictionary[Anon_From] = null): TableDefinition = {
-    val __obj = js.Dynamic.literal(columns = columns, name = name)
-    if (has != null) __obj.updateDynamic("has")(has)
+    val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (has != null) __obj.updateDynamic("has")(has.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableDefinition]
   }
 }

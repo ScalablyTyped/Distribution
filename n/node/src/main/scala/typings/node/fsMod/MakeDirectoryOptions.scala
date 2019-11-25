@@ -22,7 +22,7 @@ object MakeDirectoryOptions {
   def apply(mode: Int | Double = null, recursive: js.UndefOr[Boolean] = js.undefined): MakeDirectoryOptions = {
     val __obj = js.Dynamic.literal()
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive)
+    if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive.asInstanceOf[js.Any])
     __obj.asInstanceOf[MakeDirectoryOptions]
   }
 }

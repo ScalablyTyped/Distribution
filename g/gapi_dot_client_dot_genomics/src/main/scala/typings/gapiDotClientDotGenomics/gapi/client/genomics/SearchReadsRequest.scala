@@ -59,13 +59,13 @@ object SearchReadsRequest {
     start: String = null
   ): SearchReadsRequest = {
     val __obj = js.Dynamic.literal()
-    if (end != null) __obj.updateDynamic("end")(end)
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
-    if (readGroupIds != null) __obj.updateDynamic("readGroupIds")(readGroupIds)
-    if (readGroupSetIds != null) __obj.updateDynamic("readGroupSetIds")(readGroupSetIds)
-    if (referenceName != null) __obj.updateDynamic("referenceName")(referenceName)
-    if (start != null) __obj.updateDynamic("start")(start)
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
+    if (readGroupIds != null) __obj.updateDynamic("readGroupIds")(readGroupIds.asInstanceOf[js.Any])
+    if (readGroupSetIds != null) __obj.updateDynamic("readGroupSetIds")(readGroupSetIds.asInstanceOf[js.Any])
+    if (referenceName != null) __obj.updateDynamic("referenceName")(referenceName.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchReadsRequest]
   }
 }

@@ -25,8 +25,8 @@ object HashNavigationOptions {
   @scala.inline
   def apply(replaceState: js.UndefOr[Boolean] = js.undefined, watchState: js.UndefOr[Boolean] = js.undefined): HashNavigationOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(replaceState)) __obj.updateDynamic("replaceState")(replaceState)
-    if (!js.isUndefined(watchState)) __obj.updateDynamic("watchState")(watchState)
+    if (!js.isUndefined(replaceState)) __obj.updateDynamic("replaceState")(replaceState.asInstanceOf[js.Any])
+    if (!js.isUndefined(watchState)) __obj.updateDynamic("watchState")(watchState.asInstanceOf[js.Any])
     __obj.asInstanceOf[HashNavigationOptions]
   }
 }

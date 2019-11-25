@@ -21,7 +21,7 @@ trait OptionSetValue extends js.Object {
 object OptionSetValue {
   @scala.inline
   def apply(text: String, value: Double): OptionSetValue = {
-    val __obj = js.Dynamic.literal(text = text, value = value)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OptionSetValue]
   }

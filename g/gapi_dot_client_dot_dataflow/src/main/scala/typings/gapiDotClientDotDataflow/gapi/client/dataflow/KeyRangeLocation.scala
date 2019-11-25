@@ -38,11 +38,11 @@ object KeyRangeLocation {
     start: String = null
   ): KeyRangeLocation = {
     val __obj = js.Dynamic.literal()
-    if (dataDisk != null) __obj.updateDynamic("dataDisk")(dataDisk)
-    if (deliveryEndpoint != null) __obj.updateDynamic("deliveryEndpoint")(deliveryEndpoint)
-    if (deprecatedPersistentDirectory != null) __obj.updateDynamic("deprecatedPersistentDirectory")(deprecatedPersistentDirectory)
-    if (end != null) __obj.updateDynamic("end")(end)
-    if (start != null) __obj.updateDynamic("start")(start)
+    if (dataDisk != null) __obj.updateDynamic("dataDisk")(dataDisk.asInstanceOf[js.Any])
+    if (deliveryEndpoint != null) __obj.updateDynamic("deliveryEndpoint")(deliveryEndpoint.asInstanceOf[js.Any])
+    if (deprecatedPersistentDirectory != null) __obj.updateDynamic("deprecatedPersistentDirectory")(deprecatedPersistentDirectory.asInstanceOf[js.Any])
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyRangeLocation]
   }
 }

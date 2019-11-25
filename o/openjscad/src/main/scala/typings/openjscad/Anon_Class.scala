@@ -32,8 +32,8 @@ object Anon_Class {
     shared: js.Array[Shared],
     vertexData: Float64Array
   ): Anon_Class = {
-    val __obj = js.Dynamic.literal(numPolygons = numPolygons, numVerticesPerPolygon = numVerticesPerPolygon, planeData = planeData, polygonPlaneIndexes = polygonPlaneIndexes, polygonSharedIndexes = polygonSharedIndexes, polygonVertices = polygonVertices, shared = shared, vertexData = vertexData)
-    __obj.updateDynamic("class")(`class`)
+    val __obj = js.Dynamic.literal(numPolygons = numPolygons.asInstanceOf[js.Any], numVerticesPerPolygon = numVerticesPerPolygon.asInstanceOf[js.Any], planeData = planeData.asInstanceOf[js.Any], polygonPlaneIndexes = polygonPlaneIndexes.asInstanceOf[js.Any], polygonSharedIndexes = polygonSharedIndexes.asInstanceOf[js.Any], polygonVertices = polygonVertices.asInstanceOf[js.Any], shared = shared.asInstanceOf[js.Any], vertexData = vertexData.asInstanceOf[js.Any])
+    __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Class]
   }
 }

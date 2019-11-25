@@ -15,8 +15,8 @@ object IDefaults {
   @scala.inline
   def apply(params: IParamValues[_] = null, settings: ISettings[_] = null): IDefaults = {
     val __obj = js.Dynamic.literal()
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (settings != null) __obj.updateDynamic("settings")(settings)
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDefaults]
   }
 }

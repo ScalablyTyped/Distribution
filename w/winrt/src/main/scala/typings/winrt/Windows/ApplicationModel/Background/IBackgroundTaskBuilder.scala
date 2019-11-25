@@ -21,7 +21,7 @@ object IBackgroundTaskBuilder {
     setTrigger: IBackgroundTrigger => Unit,
     taskEntryPoint: String
   ): IBackgroundTaskBuilder = {
-    val __obj = js.Dynamic.literal(addCondition = js.Any.fromFunction1(addCondition), name = name, register = js.Any.fromFunction0(register), setTrigger = js.Any.fromFunction1(setTrigger), taskEntryPoint = taskEntryPoint)
+    val __obj = js.Dynamic.literal(addCondition = js.Any.fromFunction1(addCondition), name = name.asInstanceOf[js.Any], register = js.Any.fromFunction0(register), setTrigger = js.Any.fromFunction1(setTrigger), taskEntryPoint = taskEntryPoint.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IBackgroundTaskBuilder]
   }

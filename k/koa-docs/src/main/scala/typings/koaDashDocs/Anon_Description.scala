@@ -22,10 +22,10 @@ object Anon_Description {
     extendedDescription: String = null,
     prefix: String = null
   ): Anon_Description = {
-    val __obj = js.Dynamic.literal(groupName = groupName, routes = routes)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (extendedDescription != null) __obj.updateDynamic("extendedDescription")(extendedDescription)
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    val __obj = js.Dynamic.literal(groupName = groupName.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (extendedDescription != null) __obj.updateDynamic("extendedDescription")(extendedDescription.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Description]
   }
 }

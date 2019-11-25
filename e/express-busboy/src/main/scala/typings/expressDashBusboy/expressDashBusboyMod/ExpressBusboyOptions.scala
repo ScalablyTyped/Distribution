@@ -33,17 +33,17 @@ object ExpressBusboyOptions {
   ): ExpressBusboyOptions = {
     val __obj = js.Dynamic.literal()
     if (allowedPath != null) __obj.updateDynamic("allowedPath")(allowedPath.asInstanceOf[js.Any])
-    if (defCharset != null) __obj.updateDynamic("defCharset")(defCharset)
+    if (defCharset != null) __obj.updateDynamic("defCharset")(defCharset.asInstanceOf[js.Any])
     if (fileHwm != null) __obj.updateDynamic("fileHwm")(fileHwm.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (highWaterMark != null) __obj.updateDynamic("highWaterMark")(highWaterMark.asInstanceOf[js.Any])
-    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate)
-    if (limits != null) __obj.updateDynamic("limits")(limits)
+    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate.asInstanceOf[js.Any])
+    if (limits != null) __obj.updateDynamic("limits")(limits.asInstanceOf[js.Any])
     if (mimeTypeLimit != null) __obj.updateDynamic("mimeTypeLimit")(mimeTypeLimit.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (!js.isUndefined(preservePath)) __obj.updateDynamic("preservePath")(preservePath)
-    if (!js.isUndefined(restrictMultiple)) __obj.updateDynamic("restrictMultiple")(restrictMultiple)
-    if (!js.isUndefined(upload)) __obj.updateDynamic("upload")(upload)
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (!js.isUndefined(preservePath)) __obj.updateDynamic("preservePath")(preservePath.asInstanceOf[js.Any])
+    if (!js.isUndefined(restrictMultiple)) __obj.updateDynamic("restrictMultiple")(restrictMultiple.asInstanceOf[js.Any])
+    if (!js.isUndefined(upload)) __obj.updateDynamic("upload")(upload.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExpressBusboyOptions]
   }
 }

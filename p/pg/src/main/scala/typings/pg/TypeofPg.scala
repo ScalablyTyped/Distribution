@@ -35,7 +35,7 @@ trait TypeofPg extends js.Object {
     typings.pg.pgMod.Query[QueryResultRow, js.Array[js.Any]]
   ]
   val defaults: Defaults with ClientConfig
-  val native: (/* import warning: ImportType.apply Failed type conversion: typeof Pg */ js.Any) | Null
+  val native: (/* import warning: importer.ImportType#apply Failed type conversion: typeof Pg */ js.Any) | Null
 }
 
 object TypeofPg {
@@ -56,10 +56,10 @@ object TypeofPg {
       Query[QueryResultRow, js.Array[js.Any]]
     ],
     defaults: Defaults with ClientConfig,
-    native: /* import warning: ImportType.apply Failed type conversion: typeof Pg */ js.Any = null
+    native: /* import warning: importer.ImportType#apply Failed type conversion: typeof Pg */ js.Any = null
   ): TypeofPg = {
-    val __obj = js.Dynamic.literal(Client = Client, ClientBase = ClientBase, Connection = Connection, Events = Events, Pool = Pool, Query = Query, defaults = defaults)
-    if (native != null) __obj.updateDynamic("native")(native)
+    val __obj = js.Dynamic.literal(Client = Client.asInstanceOf[js.Any], ClientBase = ClientBase.asInstanceOf[js.Any], Connection = Connection.asInstanceOf[js.Any], Events = Events.asInstanceOf[js.Any], Pool = Pool.asInstanceOf[js.Any], Query = Query.asInstanceOf[js.Any], defaults = defaults.asInstanceOf[js.Any])
+    if (native != null) __obj.updateDynamic("native")(native.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofPg]
   }
 }

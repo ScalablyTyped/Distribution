@@ -67,3 +67,126 @@ import scala.scalajs.js.annotation._
 */
 trait key extends js.Object
 
+object key {
+  @scala.inline
+  def ar: typings.flatpickr.flatpickrStrings.ar = this.cast("ar")
+  @scala.inline
+  def at: typings.flatpickr.flatpickrStrings.at = this.cast("at")
+  @scala.inline
+  def az: typings.flatpickr.flatpickrStrings.az = this.cast("az")
+  @scala.inline
+  def be: typings.flatpickr.flatpickrStrings.be = this.cast("be")
+  @scala.inline
+  def bg: typings.flatpickr.flatpickrStrings.bg = this.cast("bg")
+  @scala.inline
+  def bn: typings.flatpickr.flatpickrStrings.bn = this.cast("bn")
+  @scala.inline
+  def bs: typings.flatpickr.flatpickrStrings.bs = this.cast("bs")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def cat: typings.flatpickr.flatpickrStrings.cat = this.cast("cat")
+  @scala.inline
+  def cs: typings.flatpickr.flatpickrStrings.cs = this.cast("cs")
+  @scala.inline
+  def cy: typings.flatpickr.flatpickrStrings.cy = this.cast("cy")
+  @scala.inline
+  def da: typings.flatpickr.flatpickrStrings.da = this.cast("da")
+  @scala.inline
+  def de: typings.flatpickr.flatpickrStrings.de = this.cast("de")
+  @scala.inline
+  def default: typings.flatpickr.flatpickrStrings.default = this.cast("default")
+  @scala.inline
+  def en: typings.flatpickr.flatpickrStrings.en = this.cast("en")
+  @scala.inline
+  def eo: typings.flatpickr.flatpickrStrings.eo = this.cast("eo")
+  @scala.inline
+  def es: typings.flatpickr.flatpickrStrings.es = this.cast("es")
+  @scala.inline
+  def et: typings.flatpickr.flatpickrStrings.et = this.cast("et")
+  @scala.inline
+  def fa: typings.flatpickr.flatpickrStrings.fa = this.cast("fa")
+  @scala.inline
+  def fi: typings.flatpickr.flatpickrStrings.fi = this.cast("fi")
+  @scala.inline
+  def fo: typings.flatpickr.flatpickrStrings.fo = this.cast("fo")
+  @scala.inline
+  def fr: typings.flatpickr.flatpickrStrings.fr = this.cast("fr")
+  @scala.inline
+  def gr: typings.flatpickr.flatpickrStrings.gr = this.cast("gr")
+  @scala.inline
+  def he: typings.flatpickr.flatpickrStrings.he = this.cast("he")
+  @scala.inline
+  def hi: typings.flatpickr.flatpickrStrings.hi = this.cast("hi")
+  @scala.inline
+  def hr: typings.flatpickr.flatpickrStrings.hr = this.cast("hr")
+  @scala.inline
+  def hu: typings.flatpickr.flatpickrStrings.hu = this.cast("hu")
+  @scala.inline
+  def id: typings.flatpickr.flatpickrStrings.id = this.cast("id")
+  @scala.inline
+  def is: typings.flatpickr.flatpickrStrings.is = this.cast("is")
+  @scala.inline
+  def it: typings.flatpickr.flatpickrStrings.it = this.cast("it")
+  @scala.inline
+  def ja: typings.flatpickr.flatpickrStrings.ja = this.cast("ja")
+  @scala.inline
+  def ka: typings.flatpickr.flatpickrStrings.ka = this.cast("ka")
+  @scala.inline
+  def km: typings.flatpickr.flatpickrStrings.km = this.cast("km")
+  @scala.inline
+  def ko: typings.flatpickr.flatpickrStrings.ko = this.cast("ko")
+  @scala.inline
+  def kz: typings.flatpickr.flatpickrStrings.kz = this.cast("kz")
+  @scala.inline
+  def lt: typings.flatpickr.flatpickrStrings.lt = this.cast("lt")
+  @scala.inline
+  def lv: typings.flatpickr.flatpickrStrings.lv = this.cast("lv")
+  @scala.inline
+  def mk: typings.flatpickr.flatpickrStrings.mk = this.cast("mk")
+  @scala.inline
+  def mn: typings.flatpickr.flatpickrStrings.mn = this.cast("mn")
+  @scala.inline
+  def ms: typings.flatpickr.flatpickrStrings.ms = this.cast("ms")
+  @scala.inline
+  def my: typings.flatpickr.flatpickrStrings.my = this.cast("my")
+  @scala.inline
+  def nl: typings.flatpickr.flatpickrStrings.nl = this.cast("nl")
+  @scala.inline
+  def no: typings.flatpickr.flatpickrStrings.no = this.cast("no")
+  @scala.inline
+  def pa: typings.flatpickr.flatpickrStrings.pa = this.cast("pa")
+  @scala.inline
+  def pl: typings.flatpickr.flatpickrStrings.pl = this.cast("pl")
+  @scala.inline
+  def pt: typings.flatpickr.flatpickrStrings.pt = this.cast("pt")
+  @scala.inline
+  def ro: typings.flatpickr.flatpickrStrings.ro = this.cast("ro")
+  @scala.inline
+  def ru: typings.flatpickr.flatpickrStrings.ru = this.cast("ru")
+  @scala.inline
+  def si: typings.flatpickr.flatpickrStrings.si = this.cast("si")
+  @scala.inline
+  def sk: typings.flatpickr.flatpickrStrings.sk = this.cast("sk")
+  @scala.inline
+  def sl: typings.flatpickr.flatpickrStrings.sl = this.cast("sl")
+  @scala.inline
+  def sq: typings.flatpickr.flatpickrStrings.sq = this.cast("sq")
+  @scala.inline
+  def sr: typings.flatpickr.flatpickrStrings.sr = this.cast("sr")
+  @scala.inline
+  def sv: typings.flatpickr.flatpickrStrings.sv = this.cast("sv")
+  @scala.inline
+  def th: typings.flatpickr.flatpickrStrings.th = this.cast("th")
+  @scala.inline
+  def tr: typings.flatpickr.flatpickrStrings.tr = this.cast("tr")
+  @scala.inline
+  def uk: typings.flatpickr.flatpickrStrings.uk = this.cast("uk")
+  @scala.inline
+  def vn: typings.flatpickr.flatpickrStrings.vn = this.cast("vn")
+  @scala.inline
+  def zh: typings.flatpickr.flatpickrStrings.zh = this.cast("zh")
+  @scala.inline
+  def zh_tw: typings.flatpickr.flatpickrStrings.zh_tw = this.cast("zh_tw")
+}
+

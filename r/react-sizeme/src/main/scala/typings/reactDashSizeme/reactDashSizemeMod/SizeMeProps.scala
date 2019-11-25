@@ -12,7 +12,7 @@ trait SizeMeProps extends js.Object {
 object SizeMeProps {
   @scala.inline
   def apply(size: Anon_Height): SizeMeProps = {
-    val __obj = js.Dynamic.literal(size = size)
+    val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SizeMeProps]
   }

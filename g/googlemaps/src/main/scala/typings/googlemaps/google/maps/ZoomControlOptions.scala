@@ -18,8 +18,8 @@ object ZoomControlOptions {
   @scala.inline
   def apply(position: ControlPosition = null, style: ZoomControlStyle = null): ZoomControlOptions = {
     val __obj = js.Dynamic.literal()
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZoomControlOptions]
   }
 }

@@ -12,8 +12,8 @@ trait IAbstractElementJson
 object IAbstractElementJson {
   @scala.inline
   def apply($ID: String, $Type: String, StringDictionary: /* key */ StringDictionary[js.Any] = null): IAbstractElementJson = {
-    val __obj = js.Dynamic.literal($ID = $ID, $Type = $Type)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal($ID = $ID.asInstanceOf[js.Any], $Type = $Type.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[IAbstractElementJson]
   }
 }

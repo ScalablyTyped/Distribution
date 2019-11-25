@@ -20,8 +20,8 @@ object Anon_DateFormat {
     weekOffset: Int | Double = null
   ): Anon_DateFormat = {
     val __obj = js.Dynamic.literal()
-    if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat)
-    if (!js.isUndefined(liveSearch)) __obj.updateDynamic("liveSearch")(liveSearch)
+    if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat.asInstanceOf[js.Any])
+    if (!js.isUndefined(liveSearch)) __obj.updateDynamic("liveSearch")(liveSearch.asInstanceOf[js.Any])
     if (timezoneOffset != null) __obj.updateDynamic("timezoneOffset")(timezoneOffset.asInstanceOf[js.Any])
     if (weekOffset != null) __obj.updateDynamic("weekOffset")(weekOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DateFormat]

@@ -14,7 +14,7 @@ trait PinData extends js.Object {
 object PinData {
   @scala.inline
   def apply(board: String, image_url: String, link: String, note: String): PinData = {
-    val __obj = js.Dynamic.literal(board = board, image_url = image_url, link = link, note = note)
+    val __obj = js.Dynamic.literal(board = board.asInstanceOf[js.Any], image_url = image_url.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], note = note.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PinData]
   }

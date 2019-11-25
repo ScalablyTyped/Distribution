@@ -27,7 +27,7 @@ object PaneState {
     noRoom: Boolean,
     size: Double
   ): PaneState = {
-    val __obj = js.Dynamic.literal(isClosed = isClosed, isHidden = isHidden, isResizing = isResizing, isSliding = isSliding, maxSize = maxSize, minSize = minSize, noRoom = noRoom, size = size)
+    val __obj = js.Dynamic.literal(isClosed = isClosed.asInstanceOf[js.Any], isHidden = isHidden.asInstanceOf[js.Any], isResizing = isResizing.asInstanceOf[js.Any], isSliding = isSliding.asInstanceOf[js.Any], maxSize = maxSize.asInstanceOf[js.Any], minSize = minSize.asInstanceOf[js.Any], noRoom = noRoom.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PaneState]
   }

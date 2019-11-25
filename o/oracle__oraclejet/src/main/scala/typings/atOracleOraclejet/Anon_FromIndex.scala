@@ -15,8 +15,8 @@ trait Anon_FromIndex
 object Anon_FromIndex {
   @scala.inline
   def apply(fromIndex: Double, tile: Element, StringDictionary: /* propName */ StringDictionary[js.Any] = null): Anon_FromIndex = {
-    val __obj = js.Dynamic.literal(fromIndex = fromIndex, tile = tile)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(fromIndex = fromIndex.asInstanceOf[js.Any], tile = tile.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_FromIndex]
   }
 }

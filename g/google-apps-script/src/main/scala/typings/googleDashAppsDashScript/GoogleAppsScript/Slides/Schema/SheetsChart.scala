@@ -21,9 +21,9 @@ object SheetsChart {
   ): SheetsChart = {
     val __obj = js.Dynamic.literal()
     if (chartId != null) __obj.updateDynamic("chartId")(chartId.asInstanceOf[js.Any])
-    if (contentUrl != null) __obj.updateDynamic("contentUrl")(contentUrl)
-    if (sheetsChartProperties != null) __obj.updateDynamic("sheetsChartProperties")(sheetsChartProperties)
-    if (spreadsheetId != null) __obj.updateDynamic("spreadsheetId")(spreadsheetId)
+    if (contentUrl != null) __obj.updateDynamic("contentUrl")(contentUrl.asInstanceOf[js.Any])
+    if (sheetsChartProperties != null) __obj.updateDynamic("sheetsChartProperties")(sheetsChartProperties.asInstanceOf[js.Any])
+    if (spreadsheetId != null) __obj.updateDynamic("spreadsheetId")(spreadsheetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SheetsChart]
   }
 }

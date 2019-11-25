@@ -19,8 +19,8 @@ object _FunctionCodeLocation {
   @scala.inline
   def apply(Location: String = null, RepositoryType: String = null): _FunctionCodeLocation = {
     val __obj = js.Dynamic.literal()
-    if (Location != null) __obj.updateDynamic("Location")(Location)
-    if (RepositoryType != null) __obj.updateDynamic("RepositoryType")(RepositoryType)
+    if (Location != null) __obj.updateDynamic("Location")(Location.asInstanceOf[js.Any])
+    if (RepositoryType != null) __obj.updateDynamic("RepositoryType")(RepositoryType.asInstanceOf[js.Any])
     __obj.asInstanceOf[_FunctionCodeLocation]
   }
 }

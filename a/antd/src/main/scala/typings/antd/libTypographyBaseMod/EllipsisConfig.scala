@@ -18,7 +18,7 @@ object EllipsisConfig {
     rows: Int | Double = null
   ): EllipsisConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(expandable)) __obj.updateDynamic("expandable")(expandable)
+    if (!js.isUndefined(expandable)) __obj.updateDynamic("expandable")(expandable.asInstanceOf[js.Any])
     if (onExpand != null) __obj.updateDynamic("onExpand")(js.Any.fromFunction0(onExpand))
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     __obj.asInstanceOf[EllipsisConfig]

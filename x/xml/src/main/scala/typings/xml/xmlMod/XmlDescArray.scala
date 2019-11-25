@@ -14,7 +14,7 @@ object XmlDescArray {
   @scala.inline
   def apply(NumberDictionary: /* index */ NumberDictionary[Anon_Attr | XmlObject] = null): XmlDescArray = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    if (NumberDictionary != null) js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[XmlDescArray]
   }
 }

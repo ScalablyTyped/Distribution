@@ -22,10 +22,10 @@ object FunctionType {
     `this`: Type,
     `type`: typings.doctrine.doctrineStrings.FunctionType
   ): FunctionType = {
-    val __obj = js.Dynamic.literal(params = params, result = result)
-    __obj.updateDynamic("new")(`new`)
-    __obj.updateDynamic("this")(`this`)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
+    __obj.updateDynamic("new")(`new`.asInstanceOf[js.Any])
+    __obj.updateDynamic("this")(`this`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FunctionType]
   }
 }

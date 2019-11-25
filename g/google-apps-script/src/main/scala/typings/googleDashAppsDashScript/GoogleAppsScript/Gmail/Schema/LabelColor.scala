@@ -13,8 +13,8 @@ object LabelColor {
   @scala.inline
   def apply(backgroundColor: String = null, textColor: String = null): LabelColor = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
-    if (textColor != null) __obj.updateDynamic("textColor")(textColor)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelColor]
   }
 }

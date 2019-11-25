@@ -28,8 +28,8 @@ object SubaccountInformation {
     status: active | suspended | terminated,
     ip_pool: String = null
   ): SubaccountInformation = {
-    val __obj = js.Dynamic.literal(compliance_status = compliance_status, id = id, name = name, status = status.asInstanceOf[js.Any])
-    if (ip_pool != null) __obj.updateDynamic("ip_pool")(ip_pool)
+    val __obj = js.Dynamic.literal(compliance_status = compliance_status.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    if (ip_pool != null) __obj.updateDynamic("ip_pool")(ip_pool.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubaccountInformation]
   }
 }

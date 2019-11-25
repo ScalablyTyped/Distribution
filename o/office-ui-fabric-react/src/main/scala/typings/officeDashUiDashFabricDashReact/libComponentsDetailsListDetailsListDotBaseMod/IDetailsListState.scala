@@ -29,12 +29,12 @@ object IDetailsListState {
     lastSelectionMode: SelectionMode = null,
     lastWidth: Int | Double = null
   ): IDetailsListState = {
-    val __obj = js.Dynamic.literal(adjustedColumns = adjustedColumns, focusedItemIndex = focusedItemIndex)
-    if (!js.isUndefined(isCollapsed)) __obj.updateDynamic("isCollapsed")(isCollapsed)
-    if (!js.isUndefined(isDropping)) __obj.updateDynamic("isDropping")(isDropping)
-    if (!js.isUndefined(isSizing)) __obj.updateDynamic("isSizing")(isSizing)
-    if (!js.isUndefined(isSomeGroupExpanded)) __obj.updateDynamic("isSomeGroupExpanded")(isSomeGroupExpanded)
-    if (lastSelectionMode != null) __obj.updateDynamic("lastSelectionMode")(lastSelectionMode)
+    val __obj = js.Dynamic.literal(adjustedColumns = adjustedColumns.asInstanceOf[js.Any], focusedItemIndex = focusedItemIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCollapsed)) __obj.updateDynamic("isCollapsed")(isCollapsed.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDropping)) __obj.updateDynamic("isDropping")(isDropping.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSizing)) __obj.updateDynamic("isSizing")(isSizing.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSomeGroupExpanded)) __obj.updateDynamic("isSomeGroupExpanded")(isSomeGroupExpanded.asInstanceOf[js.Any])
+    if (lastSelectionMode != null) __obj.updateDynamic("lastSelectionMode")(lastSelectionMode.asInstanceOf[js.Any])
     if (lastWidth != null) __obj.updateDynamic("lastWidth")(lastWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDetailsListState]
   }

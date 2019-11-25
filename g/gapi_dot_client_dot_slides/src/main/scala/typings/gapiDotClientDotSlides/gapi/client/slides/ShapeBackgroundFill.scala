@@ -22,8 +22,8 @@ object ShapeBackgroundFill {
   @scala.inline
   def apply(propertyState: String = null, solidFill: SolidFill = null): ShapeBackgroundFill = {
     val __obj = js.Dynamic.literal()
-    if (propertyState != null) __obj.updateDynamic("propertyState")(propertyState)
-    if (solidFill != null) __obj.updateDynamic("solidFill")(solidFill)
+    if (propertyState != null) __obj.updateDynamic("propertyState")(propertyState.asInstanceOf[js.Any])
+    if (solidFill != null) __obj.updateDynamic("solidFill")(solidFill.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShapeBackgroundFill]
   }
 }

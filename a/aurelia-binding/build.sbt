@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "aurelia-binding"
-version := "2.5.0-7a3d65"
+version := "2.5.0-71a6a6"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "aurelia-dependency-injection" % "1.5.1-0446bf",
-  "org.scalablytyped" %%% "std" % "3.7-1c17cf")
+  "org.scalablytyped" %%% "aurelia-dependency-injection" % "1.5.1-0d68c0",
+  "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

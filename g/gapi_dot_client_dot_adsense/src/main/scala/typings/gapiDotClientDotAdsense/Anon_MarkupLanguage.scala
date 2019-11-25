@@ -24,10 +24,10 @@ object Anon_MarkupLanguage {
     `type`: String = null
   ): Anon_MarkupLanguage = {
     val __obj = js.Dynamic.literal()
-    if (markupLanguage != null) __obj.updateDynamic("markupLanguage")(markupLanguage)
-    if (scriptingLanguage != null) __obj.updateDynamic("scriptingLanguage")(scriptingLanguage)
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (markupLanguage != null) __obj.updateDynamic("markupLanguage")(markupLanguage.asInstanceOf[js.Any])
+    if (scriptingLanguage != null) __obj.updateDynamic("scriptingLanguage")(scriptingLanguage.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_MarkupLanguage]
   }
 }

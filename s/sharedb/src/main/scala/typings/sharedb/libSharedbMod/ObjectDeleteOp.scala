@@ -12,7 +12,7 @@ trait ObjectDeleteOp extends Op {
 object ObjectDeleteOp {
   @scala.inline
   def apply(od: js.Any, p: Path): ObjectDeleteOp = {
-    val __obj = js.Dynamic.literal(od = od, p = p)
+    val __obj = js.Dynamic.literal(od = od.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ObjectDeleteOp]
   }

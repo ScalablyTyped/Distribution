@@ -12,7 +12,7 @@ trait FlattenedItem extends js.Object {
 object FlattenedItem {
   @scala.inline
   def apply(item: TreeItem, path: Path): FlattenedItem = {
-    val __obj = js.Dynamic.literal(item = item, path = path)
+    val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FlattenedItem]
   }

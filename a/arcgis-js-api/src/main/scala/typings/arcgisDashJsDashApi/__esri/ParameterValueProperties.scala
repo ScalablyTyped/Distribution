@@ -60,7 +60,7 @@ object ParameterValueProperties {
   ): ParameterValueProperties = {
     val __obj = js.Dynamic.literal()
     if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParameterValueProperties]
   }
 }

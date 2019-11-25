@@ -38,19 +38,19 @@ object UserAddress {
     `type`: String = null
   ): UserAddress = {
     val __obj = js.Dynamic.literal()
-    if (country != null) __obj.updateDynamic("country")(country)
-    if (countryCode != null) __obj.updateDynamic("countryCode")(countryCode)
-    if (customType != null) __obj.updateDynamic("customType")(customType)
-    if (extendedAddress != null) __obj.updateDynamic("extendedAddress")(extendedAddress)
-    if (formatted != null) __obj.updateDynamic("formatted")(formatted)
-    if (locality != null) __obj.updateDynamic("locality")(locality)
-    if (poBox != null) __obj.updateDynamic("poBox")(poBox)
-    if (postalCode != null) __obj.updateDynamic("postalCode")(postalCode)
-    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary)
-    if (region != null) __obj.updateDynamic("region")(region)
-    if (!js.isUndefined(sourceIsStructured)) __obj.updateDynamic("sourceIsStructured")(sourceIsStructured)
-    if (streetAddress != null) __obj.updateDynamic("streetAddress")(streetAddress)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
+    if (countryCode != null) __obj.updateDynamic("countryCode")(countryCode.asInstanceOf[js.Any])
+    if (customType != null) __obj.updateDynamic("customType")(customType.asInstanceOf[js.Any])
+    if (extendedAddress != null) __obj.updateDynamic("extendedAddress")(extendedAddress.asInstanceOf[js.Any])
+    if (formatted != null) __obj.updateDynamic("formatted")(formatted.asInstanceOf[js.Any])
+    if (locality != null) __obj.updateDynamic("locality")(locality.asInstanceOf[js.Any])
+    if (poBox != null) __obj.updateDynamic("poBox")(poBox.asInstanceOf[js.Any])
+    if (postalCode != null) __obj.updateDynamic("postalCode")(postalCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourceIsStructured)) __obj.updateDynamic("sourceIsStructured")(sourceIsStructured.asInstanceOf[js.Any])
+    if (streetAddress != null) __obj.updateDynamic("streetAddress")(streetAddress.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserAddress]
   }
 }

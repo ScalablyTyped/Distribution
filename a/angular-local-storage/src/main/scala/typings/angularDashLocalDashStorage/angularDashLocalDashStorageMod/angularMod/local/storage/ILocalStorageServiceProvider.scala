@@ -58,7 +58,7 @@ object ILocalStorageServiceProvider {
     setStorageCookieDomain: String => typings.angularDashLocalDashStorage.angularDashLocalDashStorageMod.angularMod.local.storage.ILocalStorageServiceProvider,
     setStorageType: String => typings.angularDashLocalDashStorage.angularDashLocalDashStorageMod.angularMod.local.storage.ILocalStorageServiceProvider
   ): ILocalStorageServiceProvider = {
-    val __obj = js.Dynamic.literal($get = $get, setDefaultToCookie = js.Any.fromFunction1(setDefaultToCookie), setNotify = js.Any.fromFunction2(setNotify), setPrefix = js.Any.fromFunction1(setPrefix), setStorageCookie = js.Any.fromFunction3(setStorageCookie), setStorageCookieDomain = js.Any.fromFunction1(setStorageCookieDomain), setStorageType = js.Any.fromFunction1(setStorageType))
+    val __obj = js.Dynamic.literal($get = $get.asInstanceOf[js.Any], setDefaultToCookie = js.Any.fromFunction1(setDefaultToCookie), setNotify = js.Any.fromFunction2(setNotify), setPrefix = js.Any.fromFunction1(setPrefix), setStorageCookie = js.Any.fromFunction3(setStorageCookie), setStorageCookieDomain = js.Any.fromFunction1(setStorageCookieDomain), setStorageType = js.Any.fromFunction1(setStorageType))
   
     __obj.asInstanceOf[ILocalStorageServiceProvider]
   }

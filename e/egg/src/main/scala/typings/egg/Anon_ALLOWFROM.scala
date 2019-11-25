@@ -15,7 +15,7 @@ trait Anon_ALLOWFROM extends js.Object {
 object Anon_ALLOWFROM {
   @scala.inline
   def apply(enable: Boolean, value: SAMEORIGIN | DENY | `ALLOW-FROM`): Anon_ALLOWFROM = {
-    val __obj = js.Dynamic.literal(enable = enable, value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(enable = enable.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ALLOWFROM]
   }

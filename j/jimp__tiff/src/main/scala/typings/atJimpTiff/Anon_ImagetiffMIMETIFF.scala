@@ -12,7 +12,7 @@ trait Anon_ImagetiffMIMETIFF extends js.Object {
 object Anon_ImagetiffMIMETIFF {
   @scala.inline
   def apply(MIME_TIFF: `image/tiff`): Anon_ImagetiffMIMETIFF = {
-    val __obj = js.Dynamic.literal(MIME_TIFF = MIME_TIFF)
+    val __obj = js.Dynamic.literal(MIME_TIFF = MIME_TIFF.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ImagetiffMIMETIFF]
   }

@@ -13,8 +13,8 @@ object Anon_Active {
   @scala.inline
   def apply(active: String = null, default: String = null): Anon_Active = {
     val __obj = js.Dynamic.literal()
-    if (active != null) __obj.updateDynamic("active")(active)
-    if (default != null) __obj.updateDynamic("default")(default)
+    if (active != null) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Active]
   }
 }

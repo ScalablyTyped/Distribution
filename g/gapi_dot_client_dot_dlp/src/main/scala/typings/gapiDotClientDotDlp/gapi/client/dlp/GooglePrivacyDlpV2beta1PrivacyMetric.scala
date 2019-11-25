@@ -20,10 +20,10 @@ object GooglePrivacyDlpV2beta1PrivacyMetric {
     numericalStatsConfig: GooglePrivacyDlpV2beta1NumericalStatsConfig = null
   ): GooglePrivacyDlpV2beta1PrivacyMetric = {
     val __obj = js.Dynamic.literal()
-    if (categoricalStatsConfig != null) __obj.updateDynamic("categoricalStatsConfig")(categoricalStatsConfig)
-    if (kAnonymityConfig != null) __obj.updateDynamic("kAnonymityConfig")(kAnonymityConfig)
-    if (lDiversityConfig != null) __obj.updateDynamic("lDiversityConfig")(lDiversityConfig)
-    if (numericalStatsConfig != null) __obj.updateDynamic("numericalStatsConfig")(numericalStatsConfig)
+    if (categoricalStatsConfig != null) __obj.updateDynamic("categoricalStatsConfig")(categoricalStatsConfig.asInstanceOf[js.Any])
+    if (kAnonymityConfig != null) __obj.updateDynamic("kAnonymityConfig")(kAnonymityConfig.asInstanceOf[js.Any])
+    if (lDiversityConfig != null) __obj.updateDynamic("lDiversityConfig")(lDiversityConfig.asInstanceOf[js.Any])
+    if (numericalStatsConfig != null) __obj.updateDynamic("numericalStatsConfig")(numericalStatsConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1PrivacyMetric]
   }
 }

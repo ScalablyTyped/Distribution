@@ -19,7 +19,7 @@ object CollectionCellGroupRendererParams {
     cellSizeAndPositionGetter: /* params */ Index => CollectionCellSizeAndPosition,
     indices: js.Array[Double]
   ): CollectionCellGroupRendererParams = {
-    val __obj = js.Dynamic.literal(cellRenderer = js.Any.fromFunction1(cellRenderer), cellSizeAndPositionGetter = js.Any.fromFunction1(cellSizeAndPositionGetter), indices = indices)
+    val __obj = js.Dynamic.literal(cellRenderer = js.Any.fromFunction1(cellRenderer), cellSizeAndPositionGetter = js.Any.fromFunction1(cellSizeAndPositionGetter), indices = indices.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CollectionCellGroupRendererParams]
   }

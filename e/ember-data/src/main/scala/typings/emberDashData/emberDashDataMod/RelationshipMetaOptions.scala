@@ -21,10 +21,10 @@ object RelationshipMetaOptions {
     polymorphic: js.UndefOr[Boolean] = js.undefined
   ): RelationshipMetaOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
-    if (inverse != null) __obj.updateDynamic("inverse")(inverse)
-    if (!js.isUndefined(polymorphic)) __obj.updateDynamic("polymorphic")(polymorphic)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
+    if (inverse != null) __obj.updateDynamic("inverse")(inverse.asInstanceOf[js.Any])
+    if (!js.isUndefined(polymorphic)) __obj.updateDynamic("polymorphic")(polymorphic.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelationshipMetaOptions]
   }
 }

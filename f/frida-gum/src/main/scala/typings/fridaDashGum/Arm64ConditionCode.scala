@@ -24,3 +24,40 @@ import scala.scalajs.js.annotation._
 */
 trait Arm64ConditionCode extends js.Object
 
+object Arm64ConditionCode {
+  @scala.inline
+  def al: typings.fridaDashGum.fridaDashGumStrings.al = this.cast("al")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def eq: typings.fridaDashGum.fridaDashGumStrings.eq = this.cast("eq")
+  @scala.inline
+  def ge: typings.fridaDashGum.fridaDashGumStrings.ge = this.cast("ge")
+  @scala.inline
+  def gt: typings.fridaDashGum.fridaDashGumStrings.gt = this.cast("gt")
+  @scala.inline
+  def hi: typings.fridaDashGum.fridaDashGumStrings.hi = this.cast("hi")
+  @scala.inline
+  def hs: typings.fridaDashGum.fridaDashGumStrings.hs = this.cast("hs")
+  @scala.inline
+  def le: typings.fridaDashGum.fridaDashGumStrings.le = this.cast("le")
+  @scala.inline
+  def lo: typings.fridaDashGum.fridaDashGumStrings.lo = this.cast("lo")
+  @scala.inline
+  def ls: typings.fridaDashGum.fridaDashGumStrings.ls = this.cast("ls")
+  @scala.inline
+  def lt: typings.fridaDashGum.fridaDashGumStrings.lt = this.cast("lt")
+  @scala.inline
+  def mi: typings.fridaDashGum.fridaDashGumStrings.mi = this.cast("mi")
+  @scala.inline
+  def ne: typings.fridaDashGum.fridaDashGumStrings.ne = this.cast("ne")
+  @scala.inline
+  def nv: typings.fridaDashGum.fridaDashGumStrings.nv = this.cast("nv")
+  @scala.inline
+  def pl: typings.fridaDashGum.fridaDashGumStrings.pl = this.cast("pl")
+  @scala.inline
+  def vc: typings.fridaDashGum.fridaDashGumStrings.vc = this.cast("vc")
+  @scala.inline
+  def vs: typings.fridaDashGum.fridaDashGumStrings.vs = this.cast("vs")
+}
+

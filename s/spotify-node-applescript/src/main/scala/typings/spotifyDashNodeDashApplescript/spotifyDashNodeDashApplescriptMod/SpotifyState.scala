@@ -13,7 +13,7 @@ trait SpotifyState extends js.Object {
 object SpotifyState {
   @scala.inline
   def apply(position: Double, state: SpotifyPlayingState, volume: Double): SpotifyState = {
-    val __obj = js.Dynamic.literal(position = position, state = state, volume = volume)
+    val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], volume = volume.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SpotifyState]
   }

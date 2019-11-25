@@ -24,10 +24,10 @@ object IBulkOptions {
     tableLock: js.UndefOr[Boolean] = js.undefined
   ): IBulkOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(checkConstraints)) __obj.updateDynamic("checkConstraints")(checkConstraints)
-    if (!js.isUndefined(fireTriggers)) __obj.updateDynamic("fireTriggers")(fireTriggers)
-    if (!js.isUndefined(keepNulls)) __obj.updateDynamic("keepNulls")(keepNulls)
-    if (!js.isUndefined(tableLock)) __obj.updateDynamic("tableLock")(tableLock)
+    if (!js.isUndefined(checkConstraints)) __obj.updateDynamic("checkConstraints")(checkConstraints.asInstanceOf[js.Any])
+    if (!js.isUndefined(fireTriggers)) __obj.updateDynamic("fireTriggers")(fireTriggers.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepNulls)) __obj.updateDynamic("keepNulls")(keepNulls.asInstanceOf[js.Any])
+    if (!js.isUndefined(tableLock)) __obj.updateDynamic("tableLock")(tableLock.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBulkOptions]
   }
 }

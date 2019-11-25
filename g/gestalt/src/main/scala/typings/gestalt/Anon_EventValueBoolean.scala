@@ -15,7 +15,7 @@ trait Anon_EventValueBoolean extends js.Object {
 object Anon_EventValueBoolean {
   @scala.inline
   def apply(event: SyntheticEvent[HTMLInputElement, Event], value: Boolean): Anon_EventValueBoolean = {
-    val __obj = js.Dynamic.literal(event = event, value = value)
+    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EventValueBoolean]
   }

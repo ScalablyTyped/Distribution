@@ -42,15 +42,15 @@ object CollapseProps {
     onWork: /* args */ CollapseCallbackArgs => Unit = null,
     theme: Anon_Collapse = null
   ): CollapseProps = {
-    val __obj = js.Dynamic.literal(isOpened = isOpened)
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    val __obj = js.Dynamic.literal(isOpened = isOpened.asInstanceOf[js.Any])
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (checkTimeout != null) __obj.updateDynamic("checkTimeout")(checkTimeout.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (initialStyle != null) __obj.updateDynamic("initialStyle")(initialStyle)
+    if (initialStyle != null) __obj.updateDynamic("initialStyle")(initialStyle.asInstanceOf[js.Any])
     if (onRest != null) __obj.updateDynamic("onRest")(js.Any.fromFunction1(onRest))
     if (onWork != null) __obj.updateDynamic("onWork")(js.Any.fromFunction1(onWork))
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollapseProps]
   }
 }

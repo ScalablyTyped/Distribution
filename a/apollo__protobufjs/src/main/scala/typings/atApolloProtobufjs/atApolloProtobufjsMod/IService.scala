@@ -18,9 +18,9 @@ object IService {
     nested: StringDictionary[AnyNestedObject] = null,
     options: StringDictionary[js.Any] = null
   ): IService = {
-    val __obj = js.Dynamic.literal(methods = methods)
-    if (nested != null) __obj.updateDynamic("nested")(nested)
-    if (options != null) __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(methods = methods.asInstanceOf[js.Any])
+    if (nested != null) __obj.updateDynamic("nested")(nested.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[IService]
   }
 }

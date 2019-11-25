@@ -19,7 +19,7 @@ object AsObject {
       typings.libraDashCore.libAtGeneratedGetUnderscoreWithUnderscoreProofUnderscorePbMod.RequestItem.AsObject
     ]
   ): AsObject = {
-    val __obj = js.Dynamic.literal(clientKnownVersion = clientKnownVersion, requestedItemsList = requestedItemsList)
+    val __obj = js.Dynamic.literal(clientKnownVersion = clientKnownVersion.asInstanceOf[js.Any], requestedItemsList = requestedItemsList.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AsObject]
   }

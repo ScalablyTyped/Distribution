@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ImputeTransform extends Transforms {
+trait ImputeTransform extends _Transforms {
   var field: FieldRef
   var groupby: js.UndefOr[js.Array[FieldRef] | SignalRef] = js.undefined
   var key: FieldRef
@@ -28,11 +28,11 @@ object ImputeTransform {
     value: js.Any = null
   ): ImputeTransform = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (groupby != null) __obj.updateDynamic("groupby")(groupby.asInstanceOf[js.Any])
     if (keyvals != null) __obj.updateDynamic("keyvals")(keyvals.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImputeTransform]
   }
 }

@@ -16,10 +16,10 @@ trait Anon_CreditEllipsoidProxy extends js.Object {
 object Anon_CreditEllipsoidProxy {
   @scala.inline
   def apply(url: String, credit: Credit | String = null, ellipsoid: Ellipsoid = null, proxy: js.Any = null): Anon_CreditEllipsoidProxy = {
-    val __obj = js.Dynamic.literal(url = url)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     if (credit != null) __obj.updateDynamic("credit")(credit.asInstanceOf[js.Any])
-    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
-    if (proxy != null) __obj.updateDynamic("proxy")(proxy)
+    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid.asInstanceOf[js.Any])
+    if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CreditEllipsoidProxy]
   }
 }

@@ -12,7 +12,7 @@ trait SubscriptionManagement extends js.Object {
 object SubscriptionManagement {
   @scala.inline
   def apply(serviceInstanceType: String, url: String): SubscriptionManagement = {
-    val __obj = js.Dynamic.literal(serviceInstanceType = serviceInstanceType, url = url)
+    val __obj = js.Dynamic.literal(serviceInstanceType = serviceInstanceType.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SubscriptionManagement]
   }

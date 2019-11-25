@@ -14,8 +14,8 @@ trait DocumentNode extends ASTNode {
 object DocumentNode {
   @scala.inline
   def apply(definitions: js.Array[DefinitionNode], kind: Document, loc: Location = null): DocumentNode = {
-    val __obj = js.Dynamic.literal(definitions = definitions, kind = kind)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(definitions = definitions.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentNode]
   }
 }

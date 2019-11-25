@@ -18,8 +18,8 @@ object LocationMetadata {
     standardEnvironmentAvailable: js.UndefOr[Boolean] = js.undefined
   ): LocationMetadata = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(flexibleEnvironmentAvailable)) __obj.updateDynamic("flexibleEnvironmentAvailable")(flexibleEnvironmentAvailable)
-    if (!js.isUndefined(standardEnvironmentAvailable)) __obj.updateDynamic("standardEnvironmentAvailable")(standardEnvironmentAvailable)
+    if (!js.isUndefined(flexibleEnvironmentAvailable)) __obj.updateDynamic("flexibleEnvironmentAvailable")(flexibleEnvironmentAvailable.asInstanceOf[js.Any])
+    if (!js.isUndefined(standardEnvironmentAvailable)) __obj.updateDynamic("standardEnvironmentAvailable")(standardEnvironmentAvailable.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationMetadata]
   }
 }

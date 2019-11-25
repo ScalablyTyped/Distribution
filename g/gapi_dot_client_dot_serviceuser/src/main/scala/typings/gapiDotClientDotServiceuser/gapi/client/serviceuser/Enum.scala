@@ -27,11 +27,11 @@ object Enum {
     syntax: String = null
   ): Enum = {
     val __obj = js.Dynamic.literal()
-    if (enumvalue != null) __obj.updateDynamic("enumvalue")(enumvalue)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (sourceContext != null) __obj.updateDynamic("sourceContext")(sourceContext)
-    if (syntax != null) __obj.updateDynamic("syntax")(syntax)
+    if (enumvalue != null) __obj.updateDynamic("enumvalue")(enumvalue.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (sourceContext != null) __obj.updateDynamic("sourceContext")(sourceContext.asInstanceOf[js.Any])
+    if (syntax != null) __obj.updateDynamic("syntax")(syntax.asInstanceOf[js.Any])
     __obj.asInstanceOf[Enum]
   }
 }

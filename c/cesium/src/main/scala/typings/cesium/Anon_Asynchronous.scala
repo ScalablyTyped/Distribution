@@ -37,16 +37,16 @@ object Anon_Asynchronous {
     textureRotationAngle: Int | Double = null
   ): Anon_Asynchronous = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(asynchronous)) __obj.updateDynamic("asynchronous")(asynchronous)
-    if (!js.isUndefined(debugShowBoundingVolume)) __obj.updateDynamic("debugShowBoundingVolume")(debugShowBoundingVolume)
-    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
+    if (!js.isUndefined(asynchronous)) __obj.updateDynamic("asynchronous")(asynchronous.asInstanceOf[js.Any])
+    if (!js.isUndefined(debugShowBoundingVolume)) __obj.updateDynamic("debugShowBoundingVolume")(debugShowBoundingVolume.asInstanceOf[js.Any])
+    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid.asInstanceOf[js.Any])
     if (granularity != null) __obj.updateDynamic("granularity")(granularity.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (material != null) __obj.updateDynamic("material")(material)
-    if (rectangle != null) __obj.updateDynamic("rectangle")(rectangle)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (material != null) __obj.updateDynamic("material")(material.asInstanceOf[js.Any])
+    if (rectangle != null) __obj.updateDynamic("rectangle")(rectangle.asInstanceOf[js.Any])
     if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     if (textureRotationAngle != null) __obj.updateDynamic("textureRotationAngle")(textureRotationAngle.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Asynchronous]
   }

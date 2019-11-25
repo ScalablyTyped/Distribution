@@ -12,7 +12,7 @@ object DiagramConnectionEditable {
   @scala.inline
   def apply(tools: js.Array[DiagramConnectionEditableTool] = null): DiagramConnectionEditable = {
     val __obj = js.Dynamic.literal()
-    if (tools != null) __obj.updateDynamic("tools")(tools)
+    if (tools != null) __obj.updateDynamic("tools")(tools.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagramConnectionEditable]
   }
 }

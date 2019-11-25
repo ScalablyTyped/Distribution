@@ -13,7 +13,7 @@ trait StyleArrayProperties extends js.Object {
 object StyleArrayProperties {
   @scala.inline
   def apply(close: String, closeRe: String, open: String): StyleArrayProperties = {
-    val __obj = js.Dynamic.literal(close = close, closeRe = closeRe, open = open)
+    val __obj = js.Dynamic.literal(close = close.asInstanceOf[js.Any], closeRe = closeRe.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StyleArrayProperties]
   }

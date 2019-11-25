@@ -12,8 +12,8 @@ trait RouteRedirect extends js.Object {
 object RouteRedirect {
   @scala.inline
   def apply(from: js.Array[String], to: js.Array[String] = null): RouteRedirect = {
-    val __obj = js.Dynamic.literal(from = from)
-    if (to != null) __obj.updateDynamic("to")(to)
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any])
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteRedirect]
   }
 }

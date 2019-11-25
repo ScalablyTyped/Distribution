@@ -33,14 +33,14 @@ object IndexPage {
   ): IndexPage = {
     val __obj = js.Dynamic.literal()
     if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
-    if (current_url != null) __obj.updateDynamic("current_url")(current_url)
+    if (current_url != null) __obj.updateDynamic("current_url")(current_url.asInstanceOf[js.Any])
     if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
-    if (next_link != null) __obj.updateDynamic("next_link")(next_link)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (next_link != null) __obj.updateDynamic("next_link")(next_link.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (per_page != null) __obj.updateDynamic("per_page")(per_page.asInstanceOf[js.Any])
-    if (posts != null) __obj.updateDynamic("posts")(posts)
+    if (posts != null) __obj.updateDynamic("posts")(posts.asInstanceOf[js.Any])
     if (prev != null) __obj.updateDynamic("prev")(prev.asInstanceOf[js.Any])
-    if (prev_link != null) __obj.updateDynamic("prev_link")(prev_link)
+    if (prev_link != null) __obj.updateDynamic("prev_link")(prev_link.asInstanceOf[js.Any])
     if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndexPage]
   }

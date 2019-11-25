@@ -11,8 +11,8 @@ trait HelmetDatum extends js.Object {
 
 object HelmetDatum {
   @scala.inline
-  def apply(toComponent: () => Component[_, js.Object, _], toString: () => String): HelmetDatum = {
-    val __obj = js.Dynamic.literal(toComponent = js.Any.fromFunction0(toComponent), toString = js.Any.fromFunction0(toString))
+  def apply(toComponent: () => Component[_, js.Object, _]): HelmetDatum = {
+    val __obj = js.Dynamic.literal(toComponent = js.Any.fromFunction0(toComponent))
   
     __obj.asInstanceOf[HelmetDatum]
   }

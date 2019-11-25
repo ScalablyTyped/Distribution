@@ -17,7 +17,7 @@ trait SetScreenBrightnessParams extends js.Object {
 object SetScreenBrightnessParams {
   @scala.inline
   def apply(value: Double, complete: () => Unit = null, fail: () => Unit = null, success: () => Unit = null): SetScreenBrightnessParams = {
-    val __obj = js.Dynamic.literal(value = value)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))

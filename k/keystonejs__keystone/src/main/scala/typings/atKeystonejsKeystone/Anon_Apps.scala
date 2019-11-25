@@ -14,8 +14,8 @@ object Anon_Apps {
   @scala.inline
   def apply(apps: js.Array[BaseApp] = null, dev: js.UndefOr[Boolean] = js.undefined): Anon_Apps = {
     val __obj = js.Dynamic.literal()
-    if (apps != null) __obj.updateDynamic("apps")(apps)
-    if (!js.isUndefined(dev)) __obj.updateDynamic("dev")(dev)
+    if (apps != null) __obj.updateDynamic("apps")(apps.asInstanceOf[js.Any])
+    if (!js.isUndefined(dev)) __obj.updateDynamic("dev")(dev.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Apps]
   }
 }

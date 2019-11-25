@@ -42,7 +42,7 @@ object Procedure {
     shimArgs: js.Array[String],
     blockSize: Int | Double = null
   ): Procedure = {
-    val __obj = js.Dynamic.literal(argTypes = argTypes, arrayArgs = arrayArgs, arrayBlockIndices = arrayBlockIndices, body = body, debug = debug, funcName = funcName, indexArgs = indexArgs, offsetArgIndex = offsetArgIndex, offsetArgs = offsetArgs, post = post, pre = pre, scalarArgs = scalarArgs, shapeArgs = shapeArgs, shimArgs = shimArgs)
+    val __obj = js.Dynamic.literal(argTypes = argTypes.asInstanceOf[js.Any], arrayArgs = arrayArgs.asInstanceOf[js.Any], arrayBlockIndices = arrayBlockIndices.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], funcName = funcName.asInstanceOf[js.Any], indexArgs = indexArgs.asInstanceOf[js.Any], offsetArgIndex = offsetArgIndex.asInstanceOf[js.Any], offsetArgs = offsetArgs.asInstanceOf[js.Any], post = post.asInstanceOf[js.Any], pre = pre.asInstanceOf[js.Any], scalarArgs = scalarArgs.asInstanceOf[js.Any], shapeArgs = shapeArgs.asInstanceOf[js.Any], shimArgs = shimArgs.asInstanceOf[js.Any])
     if (blockSize != null) __obj.updateDynamic("blockSize")(blockSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[Procedure]
   }

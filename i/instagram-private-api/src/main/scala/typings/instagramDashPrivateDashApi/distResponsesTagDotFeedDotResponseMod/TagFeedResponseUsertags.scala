@@ -11,7 +11,7 @@ trait TagFeedResponseUsertags extends js.Object {
 object TagFeedResponseUsertags {
   @scala.inline
   def apply(in: js.Array[TagFeedResponseInItem]): TagFeedResponseUsertags = {
-    val __obj = js.Dynamic.literal(in = in)
+    val __obj = js.Dynamic.literal(in = in.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TagFeedResponseUsertags]
   }

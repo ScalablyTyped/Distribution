@@ -13,19 +13,19 @@ package object bpmnDashModdleMod {
   // tslint:disable-next-line:no-empty-interface
   type Auditing = BaseElement
   // tslint:disable-next-line:no-empty-interface
-  type BPMNEdge = TypeDerived
+  type BPMNEdge = LabeledEdge
   // tslint:disable-next-line:no-empty-interface
-  type BPMNLabel = TypeDerived
+  type BPMNLabel = Label
   // tslint:disable-next-line:no-empty-interface
-  type BPMNLabelStyle = TypeDerived
+  type BPMNLabelStyle = Style
   // tslint:disable-next-line:no-empty-interface
-  type BPMNPlane = TypeDerived
+  type BPMNPlane = Plane
   // tslint:disable-next-line:no-empty-interface
-  type BPMNShape = TypeDerived
+  type BPMNShape = LabeledShape
   // tslint:disable-next-line:no-empty-interface
   type Bounds = TypeDerived
   // tslint:disable-next-line:no-empty-interface
-  type CancelEventDefinition = BaseElement
+  type CancelEventDefinition = EventDefinition
   // tslint:disable-next-line:no-empty-interface
   type ColoredEdge = TypeDerived
   // tslint:disable-next-line:no-empty-interface
@@ -45,15 +45,15 @@ package object bpmnDashModdleMod {
   // tslint:disable-next-line:no-empty-interface
   type EndEvent = ThrowEvent
   // tslint:disable-next-line:no-empty-interface
-  type EndPoint = BaseElement
+  type EndPoint = RootElement
   // tslint:disable-next-line:no-empty-interface
-  type EventDefinition = BaseElement
+  type EventDefinition = RootElement
   // tslint:disable-next-line:no-empty-interface
   type GlobalConversation = Collaboration
   // tslint:disable-next-line:no-empty-interface
   type GlobalManualTask = GlobalTask
   // tslint:disable-next-line:no-empty-interface
-  type HumanPerformer = ResourceRole
+  type HumanPerformer = Performer
   // tslint:disable-next-line:no-empty-interface
   type ImplicitThrowEvent = ThrowEvent
   type ImportFn = js.Function3[/* err */ Error, /* definitions */ Definitions, /* parseContext */ js.Any, Unit]
@@ -81,7 +81,7 @@ package object bpmnDashModdleMod {
   // tslint:disable-next-line:no-empty-interface
   type Plane = TypeDerived
   // tslint:disable-next-line:no-empty-interface
-  type PotentialOwner = ResourceRole
+  type PotentialOwner = Performer
   // tslint:disable-next-line:no-empty-interface
   type Rendering = BaseElement
   // tslint:disable-next-line:no-empty-interface
@@ -91,5 +91,5 @@ package object bpmnDashModdleMod {
   // tslint:disable-next-line:no-empty-interface
   type Style = TypeDerived
   // tslint:disable-next-line:no-empty-interface
-  type TerminateEventDefinition = BaseElement
+  type TerminateEventDefinition = EventDefinition
 }

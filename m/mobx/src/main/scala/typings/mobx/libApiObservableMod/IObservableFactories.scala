@@ -45,13 +45,13 @@ trait IObservableFactories extends js.Object {
   def `object`[T](props: T): T with IObservableObject = js.native
   def `object`[T](
     props: T,
-    decorators: /* import warning: ImportType.apply c Unsupported type mapping: 
+    decorators: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]:? std.Function}
     */ typings.mobx.mobxStrings.IObservableFactories with js.Any
   ): T with IObservableObject = js.native
   def `object`[T](
     props: T,
-    decorators: /* import warning: ImportType.apply c Unsupported type mapping: 
+    decorators: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]:? std.Function}
     */ typings.mobx.mobxStrings.IObservableFactories with js.Any,
     options: CreateObservableOptions

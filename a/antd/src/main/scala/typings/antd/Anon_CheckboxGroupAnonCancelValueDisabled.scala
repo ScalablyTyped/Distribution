@@ -11,7 +11,7 @@ trait Anon_CheckboxGroupAnonCancelValueDisabled extends js.Object {
 object Anon_CheckboxGroupAnonCancelValueDisabled {
   @scala.inline
   def apply(checkboxGroup: Anon_CancelValueDisabled): Anon_CheckboxGroupAnonCancelValueDisabled = {
-    val __obj = js.Dynamic.literal(checkboxGroup = checkboxGroup)
+    val __obj = js.Dynamic.literal(checkboxGroup = checkboxGroup.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CheckboxGroupAnonCancelValueDisabled]
   }

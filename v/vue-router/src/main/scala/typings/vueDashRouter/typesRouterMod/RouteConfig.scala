@@ -40,16 +40,16 @@ object RouteConfig {
     props: Boolean | js.Object | RoutePropsFunction = null,
     redirect: RedirectOption = null
   ): RouteConfig = {
-    val __obj = js.Dynamic.literal(path = path)
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
     if (beforeEnter != null) __obj.updateDynamic("beforeEnter")(js.Any.fromFunction3(beforeEnter))
-    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive)
-    if (children != null) __obj.updateDynamic("children")(children)
+    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (components != null) __obj.updateDynamic("components")(components)
-    if (meta != null) __obj.updateDynamic("meta")(meta)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (pathToRegexpOptions != null) __obj.updateDynamic("pathToRegexpOptions")(pathToRegexpOptions)
+    if (components != null) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])
+    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (pathToRegexpOptions != null) __obj.updateDynamic("pathToRegexpOptions")(pathToRegexpOptions.asInstanceOf[js.Any])
     if (props != null) __obj.updateDynamic("props")(props.asInstanceOf[js.Any])
     if (redirect != null) __obj.updateDynamic("redirect")(redirect.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteConfig]

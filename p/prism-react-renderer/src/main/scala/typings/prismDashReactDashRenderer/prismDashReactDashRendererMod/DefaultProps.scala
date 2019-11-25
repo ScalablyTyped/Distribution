@@ -13,7 +13,7 @@ trait DefaultProps extends js.Object {
 object DefaultProps {
   @scala.inline
   def apply(Prism: PrismLib, theme: PrismTheme): DefaultProps = {
-    val __obj = js.Dynamic.literal(Prism = Prism, theme = theme)
+    val __obj = js.Dynamic.literal(Prism = Prism.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DefaultProps]
   }

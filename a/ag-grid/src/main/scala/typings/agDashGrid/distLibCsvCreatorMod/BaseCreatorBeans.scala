@@ -16,7 +16,7 @@ trait BaseCreatorBeans extends js.Object {
 object BaseCreatorBeans {
   @scala.inline
   def apply(downloader: Downloader, gridOptionsWrapper: GridOptionsWrapper, gridSerializer: GridSerializer): BaseCreatorBeans = {
-    val __obj = js.Dynamic.literal(downloader = downloader, gridOptionsWrapper = gridOptionsWrapper, gridSerializer = gridSerializer)
+    val __obj = js.Dynamic.literal(downloader = downloader.asInstanceOf[js.Any], gridOptionsWrapper = gridOptionsWrapper.asInstanceOf[js.Any], gridSerializer = gridSerializer.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BaseCreatorBeans]
   }

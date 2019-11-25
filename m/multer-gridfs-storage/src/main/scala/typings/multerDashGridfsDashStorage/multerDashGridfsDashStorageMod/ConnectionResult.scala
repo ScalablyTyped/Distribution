@@ -14,8 +14,8 @@ trait ConnectionResult extends js.Object {
 object ConnectionResult {
   @scala.inline
   def apply(db: Db, client: MongoClient = null): ConnectionResult = {
-    val __obj = js.Dynamic.literal(db = db)
-    if (client != null) __obj.updateDynamic("client")(client)
+    val __obj = js.Dynamic.literal(db = db.asInstanceOf[js.Any])
+    if (client != null) __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionResult]
   }
 }

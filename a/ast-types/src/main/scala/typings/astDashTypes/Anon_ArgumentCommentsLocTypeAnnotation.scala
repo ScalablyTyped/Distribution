@@ -24,9 +24,9 @@ object Anon_ArgumentCommentsLocTypeAnnotation {
     loc: SourceLocationKind = null,
     typeAnnotation: TypeAnnotationKind | TSTypeAnnotationKind = null
   ): Anon_ArgumentCommentsLocTypeAnnotation = {
-    val __obj = js.Dynamic.literal(argument = argument)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ArgumentCommentsLocTypeAnnotation]
   }

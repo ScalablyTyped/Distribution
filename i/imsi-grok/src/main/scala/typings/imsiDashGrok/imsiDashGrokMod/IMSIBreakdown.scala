@@ -23,7 +23,7 @@ object IMSIBreakdown {
     mnc: String,
     network_name: String
   ): IMSIBreakdown = {
-    val __obj = js.Dynamic.literal(country_code = country_code, country_iso = country_iso, country_name = country_name, mcc = mcc, mnc = mnc, network_name = network_name)
+    val __obj = js.Dynamic.literal(country_code = country_code.asInstanceOf[js.Any], country_iso = country_iso.asInstanceOf[js.Any], country_name = country_name.asInstanceOf[js.Any], mcc = mcc.asInstanceOf[js.Any], mnc = mnc.asInstanceOf[js.Any], network_name = network_name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IMSIBreakdown]
   }

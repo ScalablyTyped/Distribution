@@ -25,7 +25,7 @@ object DownloadLink {
     upload_at: String,
     url: String
   ): DownloadLink = {
-    val __obj = js.Dynamic.literal(content_type = content_type, name = name, sha1 = sha1, size = size, token = token, upload_at = upload_at, url = url)
+    val __obj = js.Dynamic.literal(content_type = content_type.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], sha1 = sha1.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any], upload_at = upload_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DownloadLink]
   }

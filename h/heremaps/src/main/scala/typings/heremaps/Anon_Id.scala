@@ -27,7 +27,7 @@ object Anon_Id {
     shape: js.Array[String],
     travelTime: Double
   ): Anon_Id = {
-    val __obj = js.Dynamic.literal(_type = _type, id = id, instruction = instruction, length = length, note = note, position = position, shape = shape, travelTime = travelTime)
+    val __obj = js.Dynamic.literal(_type = _type.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], instruction = instruction.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], note = note.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any], travelTime = travelTime.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Id]
   }

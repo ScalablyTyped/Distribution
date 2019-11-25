@@ -28,7 +28,7 @@ object Anon_AchievedConsistency {
     triedHosts: StringDictionary[js.Any],
     warnings: js.Array[String]
   ): Anon_AchievedConsistency = {
-    val __obj = js.Dynamic.literal(achievedConsistency = achievedConsistency, customPayload = customPayload, queriedHost = queriedHost, speculativeExecutions = speculativeExecutions, traceId = traceId, triedHosts = triedHosts, warnings = warnings)
+    val __obj = js.Dynamic.literal(achievedConsistency = achievedConsistency.asInstanceOf[js.Any], customPayload = customPayload.asInstanceOf[js.Any], queriedHost = queriedHost.asInstanceOf[js.Any], speculativeExecutions = speculativeExecutions.asInstanceOf[js.Any], traceId = traceId.asInstanceOf[js.Any], triedHosts = triedHosts.asInstanceOf[js.Any], warnings = warnings.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AchievedConsistency]
   }

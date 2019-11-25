@@ -28,12 +28,12 @@ object LegendEncode {
     title: GuideEncodeEntry[TextEncodeEntry] = null
   ): LegendEncode = {
     val __obj = js.Dynamic.literal()
-    if (entries != null) __obj.updateDynamic("entries")(entries)
-    if (gradient != null) __obj.updateDynamic("gradient")(gradient)
-    if (labels != null) __obj.updateDynamic("labels")(labels)
-    if (legend != null) __obj.updateDynamic("legend")(legend)
-    if (symbols != null) __obj.updateDynamic("symbols")(symbols)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (entries != null) __obj.updateDynamic("entries")(entries.asInstanceOf[js.Any])
+    if (gradient != null) __obj.updateDynamic("gradient")(gradient.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
+    if (symbols != null) __obj.updateDynamic("symbols")(symbols.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[LegendEncode]
   }
 }

@@ -11,7 +11,7 @@ trait Anon_Deep extends js.Object {
 object Anon_Deep {
   @scala.inline
   def apply(deep: Boolean): Anon_Deep = {
-    val __obj = js.Dynamic.literal(deep = deep)
+    val __obj = js.Dynamic.literal(deep = deep.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Deep]
   }

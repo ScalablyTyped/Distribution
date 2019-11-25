@@ -20,9 +20,9 @@ object Streamingbuffer {
   @scala.inline
   def apply(estimatedBytes: String = null, estimatedRows: String = null, oldestEntryTime: String = null): Streamingbuffer = {
     val __obj = js.Dynamic.literal()
-    if (estimatedBytes != null) __obj.updateDynamic("estimatedBytes")(estimatedBytes)
-    if (estimatedRows != null) __obj.updateDynamic("estimatedRows")(estimatedRows)
-    if (oldestEntryTime != null) __obj.updateDynamic("oldestEntryTime")(oldestEntryTime)
+    if (estimatedBytes != null) __obj.updateDynamic("estimatedBytes")(estimatedBytes.asInstanceOf[js.Any])
+    if (estimatedRows != null) __obj.updateDynamic("estimatedRows")(estimatedRows.asInstanceOf[js.Any])
+    if (oldestEntryTime != null) __obj.updateDynamic("oldestEntryTime")(oldestEntryTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[Streamingbuffer]
   }
 }

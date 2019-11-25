@@ -27,13 +27,13 @@ class Store () extends js.Object {
     * example, `adapterFor('person')` will return an instance of
     * `App.PersonAdapter`.
     */
-  def adapterFor[K /* <: String */](modelName: K): /* import warning: ImportType.apply Failed type conversion: ember-data.ember-data/types/registries/adapter.AdapterRegistry[K] */ js.Any = js.native
+  def adapterFor[K /* <: String */](modelName: K): /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/adapter.AdapterRegistry[K] */ js.Any = js.native
   /**
     * Create a new record in the current store. The properties passed
     * to this method are set on the newly created record.
     */
-  def createRecord[K /* <: String */](modelName: K): /* import warning: ImportType.apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any = js.native
-  def createRecord[K /* <: String */](modelName: K, inputProperties: js.Object): /* import warning: ImportType.apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any = js.native
+  def createRecord[K /* <: String */](modelName: K): /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any = js.native
+  def createRecord[K /* <: String */](modelName: K, inputProperties: js.Object): /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any = js.native
   /**
     * For symmetry, a record can be deleted via the store.
     */
@@ -45,34 +45,34 @@ class Store () extends js.Object {
     * of them.
     */
   def findAll[K /* <: String */](modelName: K): PromiseArray[
-    /* import warning: ImportType.apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
   ] = js.native
   def findAll[K /* <: String */](modelName: K, options: Anon_AdapterOptionsBackgroundReload): PromiseArray[
-    /* import warning: ImportType.apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
   ] = js.native
   /**
     * This method returns a record for a given type and id combination.
     */
   def findRecord[K /* <: String */](modelName: K, id: String): (PromiseObject[
-    /* import warning: ImportType.apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
-  ]) with (/* import warning: ImportType.apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any) = js.native
+    /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
+  ]) with (/* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any) = js.native
   def findRecord[K /* <: String */](modelName: K, id: String, options: js.Object): (PromiseObject[
-    /* import warning: ImportType.apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
-  ]) with (/* import warning: ImportType.apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any) = js.native
+    /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
+  ]) with (/* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any) = js.native
   def findRecord[K /* <: String */](modelName: K, id: Double): (PromiseObject[
-    /* import warning: ImportType.apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
-  ]) with (/* import warning: ImportType.apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any) = js.native
+    /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
+  ]) with (/* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any) = js.native
   def findRecord[K /* <: String */](modelName: K, id: Double, options: js.Object): (PromiseObject[
-    /* import warning: ImportType.apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
-  ]) with (/* import warning: ImportType.apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any) = js.native
+    /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
+  ]) with (/* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any) = js.native
   /**
     * Get the reference for the specified record.
     */
   def getReference[K /* <: String */](modelName: K, id: String): RecordReference[
-    /* import warning: ImportType.apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
   ] = js.native
   def getReference[K /* <: String */](modelName: K, id: Double): RecordReference[
-    /* import warning: ImportType.apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
   ] = js.native
   /**
     * This method returns true if a record for a given modelName and id is already
@@ -84,7 +84,7 @@ class Store () extends js.Object {
   /**
     * Returns the model class for the particular `modelName`.
     */
-  def modelFor[K /* <: String */](modelName: K): /* import warning: ImportType.apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any = js.native
+  def modelFor[K /* <: String */](modelName: K): /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any = js.native
   /**
     * `normalize` converts a json payload into the normalized form that
     * [push](#method_push) expects.
@@ -95,13 +95,13 @@ class Store () extends js.Object {
     * known records for a given type in the store.
     */
   def peekAll[K /* <: String */](modelName: K): RecordArray[
-    /* import warning: ImportType.apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
   ] = js.native
   /**
     * Get a record by a given type and ID without triggering a fetch.
     */
-  def peekRecord[K /* <: String */](modelName: K, id: String): (/* import warning: ImportType.apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any) | Null = js.native
-  def peekRecord[K /* <: String */](modelName: K, id: Double): (/* import warning: ImportType.apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any) | Null = js.native
+  def peekRecord[K /* <: String */](modelName: K, id: String): (/* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any) | Null = js.native
+  def peekRecord[K /* <: String */](modelName: K, id: Double): (/* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any) | Null = js.native
   /**
     * Push some data for a given type into the store.
     */
@@ -116,14 +116,14 @@ class Store () extends js.Object {
     * adapter-level semantics are exposed to the application.
     */
   def query[K /* <: String */](modelName: K, query: js.Object): (AdapterPopulatedRecordArray[
-    /* import warning: ImportType.apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
   ]) with (PromiseArray[
-    /* import warning: ImportType.apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
   ]) = js.native
   def query[K /* <: String */](modelName: K, query: js.Object, options: Anon_AdapterOptions): (AdapterPopulatedRecordArray[
-    /* import warning: ImportType.apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
   ]) with (PromiseArray[
-    /* import warning: ImportType.apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
   ]) = js.native
   /**
     * This method makes a request for one record, where the `id` is not known
@@ -131,10 +131,10 @@ class Store () extends js.Object {
     * instead).
     */
   def queryRecord[K /* <: String */](modelName: K, query: js.Object): Promise[
-    /* import warning: ImportType.apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
   ] = js.native
   def queryRecord[K /* <: String */](modelName: K, query: js.Object, options: Anon_AdapterOptions): Promise[
-    /* import warning: ImportType.apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
   ] = js.native
   /**
     * DEPRECATED:
@@ -147,7 +147,7 @@ class Store () extends js.Object {
     * example, `serializerFor('person')` will return an instance of
     * `App.PersonSerializer`.
     */
-  def serializerFor[K /* <: String */](modelName: K): /* import warning: ImportType.apply Failed type conversion: ember-data.ember-data/types/registries/serializer.SerializerRegistry[K] */ js.Any = js.native
+  def serializerFor[K /* <: String */](modelName: K): /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/serializer.SerializerRegistry[K] */ js.Any = js.native
   /**
     * This method unloads all records in the store.
     * It schedules unloading to happen during the next run loop.

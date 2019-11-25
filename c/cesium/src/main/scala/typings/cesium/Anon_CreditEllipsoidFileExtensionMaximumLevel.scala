@@ -30,12 +30,12 @@ object Anon_CreditEllipsoidFileExtensionMaximumLevel {
   ): Anon_CreditEllipsoidFileExtensionMaximumLevel = {
     val __obj = js.Dynamic.literal()
     if (credit != null) __obj.updateDynamic("credit")(credit.asInstanceOf[js.Any])
-    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
-    if (fileExtension != null) __obj.updateDynamic("fileExtension")(fileExtension)
+    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid.asInstanceOf[js.Any])
+    if (fileExtension != null) __obj.updateDynamic("fileExtension")(fileExtension.asInstanceOf[js.Any])
     if (maximumLevel != null) __obj.updateDynamic("maximumLevel")(maximumLevel.asInstanceOf[js.Any])
     if (minimumLevel != null) __obj.updateDynamic("minimumLevel")(minimumLevel.asInstanceOf[js.Any])
-    if (rectangle != null) __obj.updateDynamic("rectangle")(rectangle)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (rectangle != null) __obj.updateDynamic("rectangle")(rectangle.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CreditEllipsoidFileExtensionMaximumLevel]
   }
 }

@@ -14,8 +14,8 @@ trait PolygonVertex extends js.Object {
 object PolygonVertex {
   @scala.inline
   def apply(i: Double, x: Double, y: Double, reflex: js.UndefOr[Boolean] = js.undefined): PolygonVertex = {
-    val __obj = js.Dynamic.literal(i = i, x = x, y = y)
-    if (!js.isUndefined(reflex)) __obj.updateDynamic("reflex")(reflex)
+    val __obj = js.Dynamic.literal(i = i.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    if (!js.isUndefined(reflex)) __obj.updateDynamic("reflex")(reflex.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolygonVertex]
   }
 }

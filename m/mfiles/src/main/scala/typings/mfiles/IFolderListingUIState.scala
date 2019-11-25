@@ -23,7 +23,7 @@ object IFolderListingUIState {
     IconSize: Double,
     ViewMode: MFFolderListingViewMode
   ): IFolderListingUIState = {
-    val __obj = js.Dynamic.literal(ColumnSortings = ColumnSortings, Columns = Columns, GroupingMode = GroupingMode, IconSize = IconSize, ViewMode = ViewMode)
+    val __obj = js.Dynamic.literal(ColumnSortings = ColumnSortings.asInstanceOf[js.Any], Columns = Columns.asInstanceOf[js.Any], GroupingMode = GroupingMode.asInstanceOf[js.Any], IconSize = IconSize.asInstanceOf[js.Any], ViewMode = ViewMode.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IFolderListingUIState]
   }

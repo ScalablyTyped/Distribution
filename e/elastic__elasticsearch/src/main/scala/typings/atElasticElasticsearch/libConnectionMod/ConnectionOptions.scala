@@ -30,14 +30,14 @@ object ConnectionOptions {
     ssl: typings.node.tlsMod.ConnectionOptions = null,
     status: String = null
   ): ConnectionOptions = {
-    val __obj = js.Dynamic.literal(url = url)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     if (agent != null) __obj.updateDynamic("agent")(agent.asInstanceOf[js.Any])
     if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (roles != null) __obj.updateDynamic("roles")(roles)
-    if (ssl != null) __obj.updateDynamic("ssl")(ssl)
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (roles != null) __obj.updateDynamic("roles")(roles.asInstanceOf[js.Any])
+    if (ssl != null) __obj.updateDynamic("ssl")(ssl.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionOptions]
   }
 }

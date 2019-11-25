@@ -14,7 +14,7 @@ trait Typeofproxy extends js.Object {
 object Typeofproxy {
   @scala.inline
   def apply(onProxyError: ProxyErrorEvent, settings: ChromeSetting): Typeofproxy = {
-    val __obj = js.Dynamic.literal(onProxyError = onProxyError, settings = settings)
+    val __obj = js.Dynamic.literal(onProxyError = onProxyError.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Typeofproxy]
   }

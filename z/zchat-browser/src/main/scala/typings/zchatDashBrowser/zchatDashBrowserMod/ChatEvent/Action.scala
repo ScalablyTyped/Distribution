@@ -14,7 +14,7 @@ trait Action extends js.Object {
 object Action {
   @scala.inline
   def apply(`type`: QUICK_REPLY_ACTION | LINK_ACTION, value: String): Action = {
-    val __obj = js.Dynamic.literal(value = value)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Action]
   }

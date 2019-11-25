@@ -11,7 +11,7 @@ trait IThemes extends js.Object {
 object IThemes {
   @scala.inline
   def apply(default: ITheme): IThemes = {
-    val __obj = js.Dynamic.literal(default = default)
+    val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IThemes]
   }

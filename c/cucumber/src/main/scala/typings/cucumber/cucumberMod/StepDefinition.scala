@@ -17,8 +17,8 @@ trait StepDefinition extends js.Object {
 object StepDefinition {
   @scala.inline
   def apply(code: js.Function, line: Double, pattern: js.Any, uri: String, unwrappedCode: js.Function = null): StepDefinition = {
-    val __obj = js.Dynamic.literal(code = code, line = line, pattern = pattern, uri = uri)
-    if (unwrappedCode != null) __obj.updateDynamic("unwrappedCode")(unwrappedCode)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
+    if (unwrappedCode != null) __obj.updateDynamic("unwrappedCode")(unwrappedCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[StepDefinition]
   }
 }

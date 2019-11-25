@@ -19,8 +19,8 @@ object SummariesTogglingEventUIParam {
   @scala.inline
   def apply(isToShow: js.UndefOr[Boolean] = js.undefined, owner: js.Any = null): SummariesTogglingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isToShow)) __obj.updateDynamic("isToShow")(isToShow)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (!js.isUndefined(isToShow)) __obj.updateDynamic("isToShow")(isToShow.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[SummariesTogglingEventUIParam]
   }
 }

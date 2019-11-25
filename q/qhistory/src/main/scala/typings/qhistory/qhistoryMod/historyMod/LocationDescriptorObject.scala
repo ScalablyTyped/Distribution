@@ -12,7 +12,7 @@ object LocationDescriptorObject {
   @scala.inline
   def apply(query: js.Object = null): LocationDescriptorObject = {
     val __obj = js.Dynamic.literal()
-    if (query != null) __obj.updateDynamic("query")(query)
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationDescriptorObject]
   }
 }

@@ -59,11 +59,11 @@ object PlusNavigatorSplashscreenOptions {
     image: String = null
   ): PlusNavigatorSplashscreenOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoclose)) __obj.updateDynamic("autoclose")(autoclose)
-    if (!js.isUndefined(autoclose_w2a)) __obj.updateDynamic("autoclose_w2a")(autoclose_w2a)
+    if (!js.isUndefined(autoclose)) __obj.updateDynamic("autoclose")(autoclose.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoclose_w2a)) __obj.updateDynamic("autoclose_w2a")(autoclose_w2a.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (delay_w2a != null) __obj.updateDynamic("delay_w2a")(delay_w2a.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image)
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusNavigatorSplashscreenOptions]
   }
 }

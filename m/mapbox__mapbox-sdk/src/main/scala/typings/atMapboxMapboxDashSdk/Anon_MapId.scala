@@ -13,8 +13,8 @@ trait Anon_MapId extends js.Object {
 object Anon_MapId {
   @scala.inline
   def apply(mapId: String, url: String, tilesetName: String = null): Anon_MapId = {
-    val __obj = js.Dynamic.literal(mapId = mapId, url = url)
-    if (tilesetName != null) __obj.updateDynamic("tilesetName")(tilesetName)
+    val __obj = js.Dynamic.literal(mapId = mapId.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (tilesetName != null) __obj.updateDynamic("tilesetName")(tilesetName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_MapId]
   }
 }

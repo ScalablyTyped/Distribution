@@ -25,9 +25,9 @@ object DocumentChange {
     targetIds: js.Array[Double] = null
   ): DocumentChange = {
     val __obj = js.Dynamic.literal()
-    if (document != null) __obj.updateDynamic("document")(document)
-    if (removedTargetIds != null) __obj.updateDynamic("removedTargetIds")(removedTargetIds)
-    if (targetIds != null) __obj.updateDynamic("targetIds")(targetIds)
+    if (document != null) __obj.updateDynamic("document")(document.asInstanceOf[js.Any])
+    if (removedTargetIds != null) __obj.updateDynamic("removedTargetIds")(removedTargetIds.asInstanceOf[js.Any])
+    if (targetIds != null) __obj.updateDynamic("targetIds")(targetIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentChange]
   }
 }

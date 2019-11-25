@@ -118,14 +118,14 @@ object LabelClassProperties {
     where: String = null
   ): LabelClassProperties = {
     val __obj = js.Dynamic.literal()
-    if (labelExpression != null) __obj.updateDynamic("labelExpression")(labelExpression)
-    if (labelExpressionInfo != null) __obj.updateDynamic("labelExpressionInfo")(labelExpressionInfo)
+    if (labelExpression != null) __obj.updateDynamic("labelExpression")(labelExpression.asInstanceOf[js.Any])
+    if (labelExpressionInfo != null) __obj.updateDynamic("labelExpressionInfo")(labelExpressionInfo.asInstanceOf[js.Any])
     if (labelPlacement != null) __obj.updateDynamic("labelPlacement")(labelPlacement.asInstanceOf[js.Any])
     if (maxScale != null) __obj.updateDynamic("maxScale")(maxScale.asInstanceOf[js.Any])
     if (minScale != null) __obj.updateDynamic("minScale")(minScale.asInstanceOf[js.Any])
     if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
-    if (!js.isUndefined(useCodedValues)) __obj.updateDynamic("useCodedValues")(useCodedValues)
-    if (where != null) __obj.updateDynamic("where")(where)
+    if (!js.isUndefined(useCodedValues)) __obj.updateDynamic("useCodedValues")(useCodedValues.asInstanceOf[js.Any])
+    if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelClassProperties]
   }
 }

@@ -13,7 +13,7 @@ trait UnlinkAccountsParams extends js.Object {
 object UnlinkAccountsParams {
   @scala.inline
   def apply(id: String, provider: UnlinkAccountsParamsProvider, user_id: String): UnlinkAccountsParams = {
-    val __obj = js.Dynamic.literal(id = id, provider = provider, user_id = user_id)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], user_id = user_id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UnlinkAccountsParams]
   }

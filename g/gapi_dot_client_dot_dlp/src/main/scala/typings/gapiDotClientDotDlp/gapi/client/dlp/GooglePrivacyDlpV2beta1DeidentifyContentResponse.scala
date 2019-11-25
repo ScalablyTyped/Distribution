@@ -17,8 +17,8 @@ object GooglePrivacyDlpV2beta1DeidentifyContentResponse {
     summaries: js.Array[GooglePrivacyDlpV2beta1DeidentificationSummary] = null
   ): GooglePrivacyDlpV2beta1DeidentifyContentResponse = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (summaries != null) __obj.updateDynamic("summaries")(summaries)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (summaries != null) __obj.updateDynamic("summaries")(summaries.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1DeidentifyContentResponse]
   }
 }

@@ -26,13 +26,13 @@ object ComponentPropsOptionsArray {
     selector: js.Array[ComponentPropsOptionsSelector] = null,
     `type`: String = null
   ): ComponentPropsOptionsArray = {
-    val __obj = js.Dynamic.literal(editable = editable, editor = editor, field = field, hideTool = hideTool, key = key, label = label)
-    if (array != null) __obj.updateDynamic("array")(array)
-    if (emptyValue != null) __obj.updateDynamic("emptyValue")(emptyValue)
-    if (instance != null) __obj.updateDynamic("instance")(instance)
-    if (number != null) __obj.updateDynamic("number")(number)
-    if (selector != null) __obj.updateDynamic("selector")(selector)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(editable = editable.asInstanceOf[js.Any], editor = editor.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], hideTool = hideTool.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
+    if (array != null) __obj.updateDynamic("array")(array.asInstanceOf[js.Any])
+    if (emptyValue != null) __obj.updateDynamic("emptyValue")(emptyValue.asInstanceOf[js.Any])
+    if (instance != null) __obj.updateDynamic("instance")(instance.asInstanceOf[js.Any])
+    if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
+    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentPropsOptionsArray]
   }
 }

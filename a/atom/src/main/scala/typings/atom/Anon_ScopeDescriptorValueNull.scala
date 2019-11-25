@@ -13,8 +13,8 @@ trait Anon_ScopeDescriptorValueNull extends js.Object {
 object Anon_ScopeDescriptorValueNull {
   @scala.inline
   def apply(scopeDescriptor: ScopeDescriptor, value: String = null): Anon_ScopeDescriptorValueNull = {
-    val __obj = js.Dynamic.literal(scopeDescriptor = scopeDescriptor)
-    if (value != null) __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(scopeDescriptor = scopeDescriptor.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ScopeDescriptorValueNull]
   }
 }

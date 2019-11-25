@@ -22,7 +22,7 @@ object AssertOptions {
   ): AssertOptions = {
     val __obj = js.Dynamic.literal()
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (message != null) __obj.updateDynamic("message")(message)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (pass != null) __obj.updateDynamic("pass")(js.Any.fromFunction1(pass))
     __obj.asInstanceOf[AssertOptions]
   }

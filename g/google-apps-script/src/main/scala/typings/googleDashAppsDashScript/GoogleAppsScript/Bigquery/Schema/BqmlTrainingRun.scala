@@ -20,10 +20,10 @@ object BqmlTrainingRun {
     trainingOptions: BqmlTrainingRunTrainingOptions = null
   ): BqmlTrainingRun = {
     val __obj = js.Dynamic.literal()
-    if (iterationResults != null) __obj.updateDynamic("iterationResults")(iterationResults)
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (trainingOptions != null) __obj.updateDynamic("trainingOptions")(trainingOptions)
+    if (iterationResults != null) __obj.updateDynamic("iterationResults")(iterationResults.asInstanceOf[js.Any])
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (trainingOptions != null) __obj.updateDynamic("trainingOptions")(trainingOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[BqmlTrainingRun]
   }
 }

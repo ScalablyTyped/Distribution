@@ -21,7 +21,7 @@ object Pickle {
     steps: js.Array[typings.cucumber.cucumberMod.pickle.Step],
     tags: js.Array[typings.cucumber.cucumberMod.pickle.Tag]
   ): Pickle = {
-    val __obj = js.Dynamic.literal(language = language, locations = locations, name = name, steps = steps, tags = tags)
+    val __obj = js.Dynamic.literal(language = language.asInstanceOf[js.Any], locations = locations.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], steps = steps.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Pickle]
   }

@@ -21,8 +21,8 @@ object GooglePrivacyDlpV2beta1BigQueryOptions {
     tableReference: GooglePrivacyDlpV2beta1BigQueryTable = null
   ): GooglePrivacyDlpV2beta1BigQueryOptions = {
     val __obj = js.Dynamic.literal()
-    if (identifyingFields != null) __obj.updateDynamic("identifyingFields")(identifyingFields)
-    if (tableReference != null) __obj.updateDynamic("tableReference")(tableReference)
+    if (identifyingFields != null) __obj.updateDynamic("identifyingFields")(identifyingFields.asInstanceOf[js.Any])
+    if (tableReference != null) __obj.updateDynamic("tableReference")(tableReference.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1BigQueryOptions]
   }
 }

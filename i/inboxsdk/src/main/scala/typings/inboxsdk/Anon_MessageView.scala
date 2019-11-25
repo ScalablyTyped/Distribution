@@ -18,7 +18,7 @@ object Anon_MessageView {
     newViewState: MessageViewViewStates,
     oldViewState: MessageViewViewStates
   ): Anon_MessageView = {
-    val __obj = js.Dynamic.literal(messageView = messageView, newViewState = newViewState, oldViewState = oldViewState)
+    val __obj = js.Dynamic.literal(messageView = messageView.asInstanceOf[js.Any], newViewState = newViewState.asInstanceOf[js.Any], oldViewState = oldViewState.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_MessageView]
   }

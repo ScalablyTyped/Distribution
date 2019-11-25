@@ -19,10 +19,10 @@ object WrapperConfig {
     autoReset: js.UndefOr[Boolean] = js.undefined,
     namespace: String = null
   ): WrapperConfig = {
-    val __obj = js.Dynamic.literal(model = model)
-    if (!js.isUndefined(autoLoad)) __obj.updateDynamic("autoLoad")(autoLoad)
-    if (!js.isUndefined(autoReset)) __obj.updateDynamic("autoReset")(autoReset)
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace)
+    val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoLoad)) __obj.updateDynamic("autoLoad")(autoLoad.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoReset)) __obj.updateDynamic("autoReset")(autoReset.asInstanceOf[js.Any])
+    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[WrapperConfig]
   }
 }

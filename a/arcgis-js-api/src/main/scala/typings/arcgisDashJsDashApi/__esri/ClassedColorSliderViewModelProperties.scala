@@ -27,15 +27,15 @@ object ClassedColorSliderViewModelProperties {
     values: js.Array[Double] = null
   ): ClassedColorSliderViewModelProperties = {
     val __obj = js.Dynamic.literal()
-    if (breaks != null) __obj.updateDynamic("breaks")(breaks)
+    if (breaks != null) __obj.updateDynamic("breaks")(breaks.asInstanceOf[js.Any])
     if (inputFormatFunction != null) __obj.updateDynamic("inputFormatFunction")(js.Any.fromFunction3(inputFormatFunction))
     if (inputParseFunction != null) __obj.updateDynamic("inputParseFunction")(js.Any.fromFunction3(inputParseFunction))
     if (labelFormatFunction != null) __obj.updateDynamic("labelFormatFunction")(js.Any.fromFunction3(labelFormatFunction))
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
-    if (!js.isUndefined(thumbsConstrained)) __obj.updateDynamic("thumbsConstrained")(thumbsConstrained)
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (!js.isUndefined(thumbsConstrained)) __obj.updateDynamic("thumbsConstrained")(thumbsConstrained.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassedColorSliderViewModelProperties]
   }
 }

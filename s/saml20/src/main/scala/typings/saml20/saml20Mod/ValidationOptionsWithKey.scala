@@ -13,9 +13,9 @@ trait ValidationOptionsWithKey extends ValidationOptions {
 object ValidationOptionsWithKey {
   @scala.inline
   def apply(publicKey: String, audience: js.Any = null, bypassExpiration: js.UndefOr[Boolean] = js.undefined): ValidationOptionsWithKey = {
-    val __obj = js.Dynamic.literal(publicKey = publicKey)
-    if (audience != null) __obj.updateDynamic("audience")(audience)
-    if (!js.isUndefined(bypassExpiration)) __obj.updateDynamic("bypassExpiration")(bypassExpiration)
+    val __obj = js.Dynamic.literal(publicKey = publicKey.asInstanceOf[js.Any])
+    if (audience != null) __obj.updateDynamic("audience")(audience.asInstanceOf[js.Any])
+    if (!js.isUndefined(bypassExpiration)) __obj.updateDynamic("bypassExpiration")(bypassExpiration.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidationOptionsWithKey]
   }
 }

@@ -48,18 +48,18 @@ object VerifyPasswordResponse {
     registered: js.UndefOr[Boolean] = js.undefined
   ): VerifyPasswordResponse = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (expiresIn != null) __obj.updateDynamic("expiresIn")(expiresIn)
-    if (idToken != null) __obj.updateDynamic("idToken")(idToken)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (localId != null) __obj.updateDynamic("localId")(localId)
-    if (oauthAccessToken != null) __obj.updateDynamic("oauthAccessToken")(oauthAccessToken)
-    if (oauthAuthorizationCode != null) __obj.updateDynamic("oauthAuthorizationCode")(oauthAuthorizationCode)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (expiresIn != null) __obj.updateDynamic("expiresIn")(expiresIn.asInstanceOf[js.Any])
+    if (idToken != null) __obj.updateDynamic("idToken")(idToken.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (localId != null) __obj.updateDynamic("localId")(localId.asInstanceOf[js.Any])
+    if (oauthAccessToken != null) __obj.updateDynamic("oauthAccessToken")(oauthAccessToken.asInstanceOf[js.Any])
+    if (oauthAuthorizationCode != null) __obj.updateDynamic("oauthAuthorizationCode")(oauthAuthorizationCode.asInstanceOf[js.Any])
     if (oauthExpireIn != null) __obj.updateDynamic("oauthExpireIn")(oauthExpireIn.asInstanceOf[js.Any])
-    if (photoUrl != null) __obj.updateDynamic("photoUrl")(photoUrl)
-    if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken)
-    if (!js.isUndefined(registered)) __obj.updateDynamic("registered")(registered)
+    if (photoUrl != null) __obj.updateDynamic("photoUrl")(photoUrl.asInstanceOf[js.Any])
+    if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken.asInstanceOf[js.Any])
+    if (!js.isUndefined(registered)) __obj.updateDynamic("registered")(registered.asInstanceOf[js.Any])
     __obj.asInstanceOf[VerifyPasswordResponse]
   }
 }

@@ -13,8 +13,8 @@ object LiasettingsListPosDataProvidersResponse {
   @scala.inline
   def apply(kind: String = null, posDataProviders: js.Array[PosDataProviders] = null): LiasettingsListPosDataProvidersResponse = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (posDataProviders != null) __obj.updateDynamic("posDataProviders")(posDataProviders)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (posDataProviders != null) __obj.updateDynamic("posDataProviders")(posDataProviders.asInstanceOf[js.Any])
     __obj.asInstanceOf[LiasettingsListPosDataProvidersResponse]
   }
 }

@@ -81,7 +81,7 @@ object atOnfleetNodeDashOnfleetStrings {
   sealed trait teams extends js.Object
   
   @js.native
-  sealed trait worker extends MetadataVisibility
+  sealed trait worker_ extends MetadataVisibility
   
   @js.native
   sealed trait workers extends js.Object
@@ -129,7 +129,7 @@ object atOnfleetNodeDashOnfleetStrings {
   @scala.inline
   def teams: teams = "teams".asInstanceOf[teams]
   @scala.inline
-  def worker: worker = "worker".asInstanceOf[worker]
+  def worker_ : worker_ = "worker".asInstanceOf[worker_]
   @scala.inline
   def workers: workers = "workers".asInstanceOf[workers]
 }

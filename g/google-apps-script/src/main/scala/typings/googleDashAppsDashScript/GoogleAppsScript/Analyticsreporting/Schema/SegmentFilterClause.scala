@@ -18,9 +18,9 @@ object SegmentFilterClause {
     not: js.UndefOr[Boolean] = js.undefined
   ): SegmentFilterClause = {
     val __obj = js.Dynamic.literal()
-    if (dimensionFilter != null) __obj.updateDynamic("dimensionFilter")(dimensionFilter)
-    if (metricFilter != null) __obj.updateDynamic("metricFilter")(metricFilter)
-    if (!js.isUndefined(not)) __obj.updateDynamic("not")(not)
+    if (dimensionFilter != null) __obj.updateDynamic("dimensionFilter")(dimensionFilter.asInstanceOf[js.Any])
+    if (metricFilter != null) __obj.updateDynamic("metricFilter")(metricFilter.asInstanceOf[js.Any])
+    if (!js.isUndefined(not)) __obj.updateDynamic("not")(not.asInstanceOf[js.Any])
     __obj.asInstanceOf[SegmentFilterClause]
   }
 }

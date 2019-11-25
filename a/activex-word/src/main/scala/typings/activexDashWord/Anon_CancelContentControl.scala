@@ -13,7 +13,7 @@ trait Anon_CancelContentControl extends js.Object {
 object Anon_CancelContentControl {
   @scala.inline
   def apply(Cancel: Boolean, ContentControl: ContentControl): Anon_CancelContentControl = {
-    val __obj = js.Dynamic.literal(Cancel = Cancel, ContentControl = ContentControl)
+    val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], ContentControl = ContentControl.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CancelContentControl]
   }

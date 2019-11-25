@@ -124,10 +124,10 @@ object graphqlStrings {
   sealed trait FRAGMENT_SPREAD extends DirectiveLocationEnum
   
   @js.native
-  sealed trait Field extends KindEnum
+  sealed trait FieldDefinition extends KindEnum
   
   @js.native
-  sealed trait FieldDefinition extends KindEnum
+  sealed trait Field_ extends KindEnum
   
   @js.native
   sealed trait Float extends TokenKindEnum
@@ -360,25 +360,25 @@ object graphqlStrings {
   sealed trait locations extends js.Object
   
   @js.native
-  sealed trait mutation extends OperationTypeNode
+  sealed trait mutation_ extends OperationTypeNode
   
   @js.native
-  sealed trait name extends js.Object
+  sealed trait name_ extends js.Object
   
   @js.native
   sealed trait operationTypes extends js.Object
   
   @js.native
-  sealed trait query extends OperationTypeNode
+  sealed trait query_ extends OperationTypeNode
   
   @js.native
-  sealed trait selectionSet extends js.Object
+  sealed trait selectionSet_ extends js.Object
   
   @js.native
   sealed trait selections extends js.Object
   
   @js.native
-  sealed trait subscription extends OperationTypeNode
+  sealed trait subscription_ extends OperationTypeNode
   
   @js.native
   sealed trait `type` extends js.Object
@@ -396,10 +396,10 @@ object graphqlStrings {
   sealed trait values extends js.Object
   
   @js.native
-  sealed trait variable extends js.Object
+  sealed trait variableDefinitions extends js.Object
   
   @js.native
-  sealed trait variableDefinitions extends js.Object
+  sealed trait variable_ extends js.Object
   
   @js.native
   sealed trait `{` extends TokenKindEnum
@@ -487,9 +487,9 @@ object graphqlStrings {
   @scala.inline
   def FRAGMENT_SPREAD: FRAGMENT_SPREAD = "FRAGMENT_SPREAD".asInstanceOf[FRAGMENT_SPREAD]
   @scala.inline
-  def Field: Field = "Field".asInstanceOf[Field]
-  @scala.inline
   def FieldDefinition: FieldDefinition = "FieldDefinition".asInstanceOf[FieldDefinition]
+  @scala.inline
+  def Field_ : Field_ = "Field".asInstanceOf[Field_]
   @scala.inline
   def Float: Float = "Float".asInstanceOf[Float]
   @scala.inline
@@ -643,19 +643,19 @@ object graphqlStrings {
   @scala.inline
   def locations: locations = "locations".asInstanceOf[locations]
   @scala.inline
-  def mutation: mutation = "mutation".asInstanceOf[mutation]
+  def mutation_ : mutation_ = "mutation".asInstanceOf[mutation_]
   @scala.inline
-  def name: name = "name".asInstanceOf[name]
+  def name_ : name_ = "name".asInstanceOf[name_]
   @scala.inline
   def operationTypes: operationTypes = "operationTypes".asInstanceOf[operationTypes]
   @scala.inline
-  def query: query = "query".asInstanceOf[query]
+  def query_ : query_ = "query".asInstanceOf[query_]
   @scala.inline
-  def selectionSet: selectionSet = "selectionSet".asInstanceOf[selectionSet]
+  def selectionSet_ : selectionSet_ = "selectionSet".asInstanceOf[selectionSet_]
   @scala.inline
   def selections: selections = "selections".asInstanceOf[selections]
   @scala.inline
-  def subscription: subscription = "subscription".asInstanceOf[subscription]
+  def subscription_ : subscription_ = "subscription".asInstanceOf[subscription_]
   @scala.inline
   def `type`: `type` = "type".asInstanceOf[`type`]
   @scala.inline
@@ -667,9 +667,9 @@ object graphqlStrings {
   @scala.inline
   def values: values = "values".asInstanceOf[values]
   @scala.inline
-  def variable: variable = "variable".asInstanceOf[variable]
-  @scala.inline
   def variableDefinitions: variableDefinitions = "variableDefinitions".asInstanceOf[variableDefinitions]
+  @scala.inline
+  def variable_ : variable_ = "variable".asInstanceOf[variable_]
   @scala.inline
   def `{`: `{` = "{".asInstanceOf[`{`]
   @scala.inline

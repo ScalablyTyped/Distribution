@@ -16,3 +16,16 @@ import scala.scalajs.js.annotation._
 */
 trait CreateType extends js.Object
 
+object CreateType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def detached_panel: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.detached_panel = this.cast("detached_panel")
+  @scala.inline
+  def normal: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.normal = this.cast("normal")
+  @scala.inline
+  def panel: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.panel = this.cast("panel")
+  @scala.inline
+  def popup: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.popup = this.cast("popup")
+}
+

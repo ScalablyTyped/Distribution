@@ -25,11 +25,11 @@ object Props {
     focusTrapOptions: Options = null,
     paused: js.UndefOr[Boolean] = js.undefined
   ): Props = {
-    val __obj = js.Dynamic.literal(children = children)
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
-    if (focusTrapOptions != null) __obj.updateDynamic("focusTrapOptions")(focusTrapOptions)
-    if (!js.isUndefined(paused)) __obj.updateDynamic("paused")(paused)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (focusTrapOptions != null) __obj.updateDynamic("focusTrapOptions")(focusTrapOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(paused)) __obj.updateDynamic("paused")(paused.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }
 }

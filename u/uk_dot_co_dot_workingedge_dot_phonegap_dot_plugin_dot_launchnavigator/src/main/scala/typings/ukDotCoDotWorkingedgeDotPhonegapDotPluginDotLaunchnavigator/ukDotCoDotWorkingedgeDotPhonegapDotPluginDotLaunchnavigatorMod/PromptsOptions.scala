@@ -43,11 +43,11 @@ object PromptsOptions {
     yesButtonText: String = null
   ): PromptsOptions = {
     val __obj = js.Dynamic.literal()
-    if (bodyText != null) __obj.updateDynamic("bodyText")(bodyText)
+    if (bodyText != null) __obj.updateDynamic("bodyText")(bodyText.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))
-    if (headerText != null) __obj.updateDynamic("headerText")(headerText)
-    if (noButtonText != null) __obj.updateDynamic("noButtonText")(noButtonText)
-    if (yesButtonText != null) __obj.updateDynamic("yesButtonText")(yesButtonText)
+    if (headerText != null) __obj.updateDynamic("headerText")(headerText.asInstanceOf[js.Any])
+    if (noButtonText != null) __obj.updateDynamic("noButtonText")(noButtonText.asInstanceOf[js.Any])
+    if (yesButtonText != null) __obj.updateDynamic("yesButtonText")(yesButtonText.asInstanceOf[js.Any])
     __obj.asInstanceOf[PromptsOptions]
   }
 }

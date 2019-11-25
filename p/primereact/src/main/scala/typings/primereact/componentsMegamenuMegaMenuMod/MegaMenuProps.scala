@@ -23,11 +23,11 @@ object MegaMenuProps {
     style: js.Object = null
   ): MegaMenuProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[MegaMenuProps]
   }
 }

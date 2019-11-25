@@ -28,9 +28,9 @@ object Observation {
   @scala.inline
   def apply(advertisedId: AdvertisedId = null, telemetry: String = null, timestampMs: String = null): Observation = {
     val __obj = js.Dynamic.literal()
-    if (advertisedId != null) __obj.updateDynamic("advertisedId")(advertisedId)
-    if (telemetry != null) __obj.updateDynamic("telemetry")(telemetry)
-    if (timestampMs != null) __obj.updateDynamic("timestampMs")(timestampMs)
+    if (advertisedId != null) __obj.updateDynamic("advertisedId")(advertisedId.asInstanceOf[js.Any])
+    if (telemetry != null) __obj.updateDynamic("telemetry")(telemetry.asInstanceOf[js.Any])
+    if (timestampMs != null) __obj.updateDynamic("timestampMs")(timestampMs.asInstanceOf[js.Any])
     __obj.asInstanceOf[Observation]
   }
 }

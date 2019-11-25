@@ -19,8 +19,8 @@ object NodeCollapsedEventUIParam {
   @scala.inline
   def apply(node: js.Any = null, owner: js.Any = null): NodeCollapsedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (node != null) __obj.updateDynamic("node")(node)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeCollapsedEventUIParam]
   }
 }

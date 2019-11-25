@@ -20,7 +20,7 @@ object IResult {
     recordsets: js.Array[IRecordSet[T]],
     rowsAffected: js.Array[Double]
   ): IResult[T] = {
-    val __obj = js.Dynamic.literal(output = output, recordset = recordset, recordsets = recordsets, rowsAffected = rowsAffected)
+    val __obj = js.Dynamic.literal(output = output.asInstanceOf[js.Any], recordset = recordset.asInstanceOf[js.Any], recordsets = recordsets.asInstanceOf[js.Any], rowsAffected = rowsAffected.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IResult[T]]
   }

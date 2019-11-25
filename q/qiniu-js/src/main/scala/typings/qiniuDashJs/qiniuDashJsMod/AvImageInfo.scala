@@ -14,7 +14,7 @@ trait AvImageInfo extends js.Object {
 object AvImageInfo {
   @scala.inline
   def apply(colorModel: String, format: String, height: Double, width: Double): AvImageInfo = {
-    val __obj = js.Dynamic.literal(colorModel = colorModel, format = format, height = height, width = width)
+    val __obj = js.Dynamic.literal(colorModel = colorModel.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AvImageInfo]
   }

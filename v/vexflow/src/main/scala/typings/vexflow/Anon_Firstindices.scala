@@ -15,7 +15,7 @@ trait Anon_Firstindices extends js.Object {
 object Anon_Firstindices {
   @scala.inline
   def apply(first_indices: js.Array[Double], first_note: Note, last_indices: js.Array[Double], last_note: Note): Anon_Firstindices = {
-    val __obj = js.Dynamic.literal(first_indices = first_indices, first_note = first_note, last_indices = last_indices, last_note = last_note)
+    val __obj = js.Dynamic.literal(first_indices = first_indices.asInstanceOf[js.Any], first_note = first_note.asInstanceOf[js.Any], last_indices = last_indices.asInstanceOf[js.Any], last_note = last_note.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Firstindices]
   }

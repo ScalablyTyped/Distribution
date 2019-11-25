@@ -15,3 +15,22 @@ import scala.scalajs.js.annotation._
 */
 trait DeviceManagementSubscriptionState extends js.Object
 
+object DeviceManagementSubscriptionState {
+  @scala.inline
+  def active: typings.microsoftDashGraph.microsoftDashGraphStrings.active = this.cast("active")
+  @scala.inline
+  def blocked: typings.microsoftDashGraph.microsoftDashGraphStrings.blocked = this.cast("blocked")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def deleted: typings.microsoftDashGraph.microsoftDashGraphStrings.deleted = this.cast("deleted")
+  @scala.inline
+  def disabled: typings.microsoftDashGraph.microsoftDashGraphStrings.disabled = this.cast("disabled")
+  @scala.inline
+  def lockedOut: typings.microsoftDashGraph.microsoftDashGraphStrings.lockedOut = this.cast("lockedOut")
+  @scala.inline
+  def pending: typings.microsoftDashGraph.microsoftDashGraphStrings.pending = this.cast("pending")
+  @scala.inline
+  def warning: typings.microsoftDashGraph.microsoftDashGraphStrings.warning = this.cast("warning")
+}
+

@@ -17,9 +17,9 @@ object TimeEvent {
   @scala.inline
   def apply(annotation: Annotation = null, networkEvent: NetworkEvent = null, time: String = null): TimeEvent = {
     val __obj = js.Dynamic.literal()
-    if (annotation != null) __obj.updateDynamic("annotation")(annotation)
-    if (networkEvent != null) __obj.updateDynamic("networkEvent")(networkEvent)
-    if (time != null) __obj.updateDynamic("time")(time)
+    if (annotation != null) __obj.updateDynamic("annotation")(annotation.asInstanceOf[js.Any])
+    if (networkEvent != null) __obj.updateDynamic("networkEvent")(networkEvent.asInstanceOf[js.Any])
+    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeEvent]
   }
 }

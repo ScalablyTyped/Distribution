@@ -14,7 +14,7 @@ trait Anon_AnalyzedInjectables extends js.Object {
 object Anon_AnalyzedInjectables {
   @scala.inline
   def apply(analyzedInjectables: js.Array[NgAnalyzedFileWithInjectables], analyzedModules: NgAnalyzedModules): Anon_AnalyzedInjectables = {
-    val __obj = js.Dynamic.literal(analyzedInjectables = analyzedInjectables, analyzedModules = analyzedModules)
+    val __obj = js.Dynamic.literal(analyzedInjectables = analyzedInjectables.asInstanceOf[js.Any], analyzedModules = analyzedModules.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AnalyzedInjectables]
   }

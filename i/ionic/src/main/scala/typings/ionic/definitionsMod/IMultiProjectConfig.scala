@@ -13,8 +13,8 @@ trait IMultiProjectConfig extends ProjectFile {
 object IMultiProjectConfig {
   @scala.inline
   def apply(projects: StringDictionary[js.UndefOr[IProjectConfig]], defaultProject: String = null): IMultiProjectConfig = {
-    val __obj = js.Dynamic.literal(projects = projects)
-    if (defaultProject != null) __obj.updateDynamic("defaultProject")(defaultProject)
+    val __obj = js.Dynamic.literal(projects = projects.asInstanceOf[js.Any])
+    if (defaultProject != null) __obj.updateDynamic("defaultProject")(defaultProject.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMultiProjectConfig]
   }
 }

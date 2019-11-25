@@ -13,7 +13,7 @@ trait ControlPointOptions extends js.Object {
 object ControlPointOptions {
   @scala.inline
   def apply(anchorPointOptions: CircleOptions, midPointOptions: CircleOptions): ControlPointOptions = {
-    val __obj = js.Dynamic.literal(anchorPointOptions = anchorPointOptions, midPointOptions = midPointOptions)
+    val __obj = js.Dynamic.literal(anchorPointOptions = anchorPointOptions.asInstanceOf[js.Any], midPointOptions = midPointOptions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ControlPointOptions]
   }

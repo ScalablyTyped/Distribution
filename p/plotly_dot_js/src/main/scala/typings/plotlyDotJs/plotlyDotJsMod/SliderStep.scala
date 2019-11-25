@@ -1,10 +1,7 @@
 package typings.plotlyDotJs.plotlyDotJsMod
 
 import typings.plotlyDotJs.plotlyDotJsStrings.animate
-import typings.plotlyDotJs.plotlyDotJsStrings.relayout
-import typings.plotlyDotJs.plotlyDotJsStrings.restyle
 import typings.plotlyDotJs.plotlyDotJsStrings.skip
-import typings.plotlyDotJs.plotlyDotJsStrings.update
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,7 +31,7 @@ trait SliderStep extends js.Object {
   	 * updates. This may be used to create a component interface and attach to
   	 * slider events manually via JavaScript.
   	 */
-  var method: animate | relayout | restyle | skip | update
+  var method: animate | typings.plotlyDotJs.plotlyDotJsStrings.relayout | typings.plotlyDotJs.plotlyDotJsStrings.restyle | skip | typings.plotlyDotJs.plotlyDotJsStrings.update
   /**
   	 * Sets the value of the slider step, used to refer to the step programatically.
   	 * Defaults to the slider label if not provided.
@@ -52,11 +49,11 @@ object SliderStep {
     args: js.Array[_],
     execute: Boolean,
     label: String,
-    method: animate | relayout | restyle | skip | update,
+    method: animate | typings.plotlyDotJs.plotlyDotJsStrings.relayout | typings.plotlyDotJs.plotlyDotJsStrings.restyle | skip | typings.plotlyDotJs.plotlyDotJsStrings.update,
     value: String,
     visible: Boolean
   ): SliderStep = {
-    val __obj = js.Dynamic.literal(args = args, execute = execute, label = label, method = method.asInstanceOf[js.Any], value = value, visible = visible)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], execute = execute.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SliderStep]
   }

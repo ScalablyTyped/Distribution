@@ -30,8 +30,8 @@ object IErrors {
   def apply(
     add: () => _ = null,
     addAll: /* addItems */ js.UndefOr[js.Any] => Unit = null,
-    addFilter: /* filter */ js.UndefOr[js.Any] => Unit = null,
-    addFilters: /* filters */ js.UndefOr[js.Any] => _ = null,
+    addFilter: js.UndefOr[js.Any] => Unit = null,
+    addFilters: js.UndefOr[js.Any | Array] => _ = null,
     addSorter: (/* sorter */ js.UndefOr[js.Any], /* defaultDirection */ js.UndefOr[java.lang.String]) => Unit = null,
     addSorters: (/* sorters */ js.UndefOr[Array], /* defaultDirection */ js.UndefOr[java.lang.String]) => Unit = null,
     alias: Array = null,
@@ -53,7 +53,13 @@ object IErrors {
     each: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     eachKey: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     extend: java.lang.String = null,
-    filter: (/* property */ js.UndefOr[js.Any], /* value */ js.UndefOr[js.Any], /* anyMatch */ js.UndefOr[js.Any], /* caseSensitive */ js.UndefOr[js.Any]) => Array = null,
+    filter: (js.Function1[/* data */ js.UndefOr[Array], Array]) | (js.Function4[
+      /* property */ js.UndefOr[js.Any], 
+      /* value */ js.UndefOr[js.Any], 
+      /* anyMatch */ js.UndefOr[js.Any], 
+      /* caseSensitive */ js.UndefOr[js.Any], 
+      Array
+    ]) = null,
     filterBy: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IMixedCollection = null,
     filterRoot: java.lang.String = null,
     filtered: js.UndefOr[Boolean] = js.undefined,
@@ -85,8 +91,8 @@ object IErrors {
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     insert: (/* index */ js.UndefOr[Double], /* key */ js.UndefOr[java.lang.String], /* item */ js.UndefOr[js.Any]) => _ = null,
-    insertFilter: (/* index */ js.UndefOr[Double], /* filter */ js.UndefOr[js.Any]) => _ = null,
-    insertFilters: (/* index */ js.UndefOr[Double], /* filters */ js.UndefOr[Array]) => Array = null,
+    insertFilter: (js.UndefOr[Double], js.UndefOr[js.Any]) => _ = null,
+    insertFilters: (js.UndefOr[Double], js.UndefOr[Array]) => Array = null,
     insertSorter: (/* index */ js.UndefOr[Double], /* sorter */ js.UndefOr[js.Any], /* defaultDirection */ js.UndefOr[java.lang.String]) => Unit = null,
     insertSorters: () => IErrors = null,
     isValid: () => Boolean = null,
@@ -101,7 +107,7 @@ object IErrors {
     removeAll: /* items */ js.UndefOr[Array] => IMixedCollection = null,
     removeAt: /* index */ js.UndefOr[Double] => _ = null,
     removeAtKey: /* key */ js.UndefOr[java.lang.String] => _ = null,
-    removeFilters: /* filters */ js.UndefOr[js.Any] => IErrors = null,
+    removeFilters: js.UndefOr[js.Any | Array] => IErrors | Unit = null,
     removeSorter: /* sorter */ js.UndefOr[js.Any] => Unit = null,
     removeSorters: /* sorters */ js.UndefOr[js.Any] => IErrors = null,
     replace: (/* oldKey */ js.UndefOr[java.lang.String], /* item */ js.UndefOr[js.Any]) => _ = null,
@@ -109,8 +115,8 @@ object IErrors {
     setAutoFilter: /* autoFilter */ js.UndefOr[Boolean] => Unit = null,
     setAutoSort: /* autoSort */ js.UndefOr[Boolean] => Unit = null,
     setDefaultSortDirection: /* defaultSortDirection */ js.UndefOr[java.lang.String] => Unit = null,
-    setFilterRoot: /* filterRoot */ js.UndefOr[java.lang.String] => Unit = null,
-    setFilters: /* filters */ js.UndefOr[Array] => Unit = null,
+    setFilterRoot: js.UndefOr[java.lang.String] => Unit = null,
+    setFilters: js.UndefOr[Array] => Unit = null,
     setSortRoot: /* sortRoot */ js.UndefOr[java.lang.String] => Unit = null,
     setSorters: /* sorters */ js.UndefOr[Array] => Unit = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
@@ -128,30 +134,30 @@ object IErrors {
     if (addFilters != null) __obj.updateDynamic("addFilters")(js.Any.fromFunction1(addFilters))
     if (addSorter != null) __obj.updateDynamic("addSorter")(js.Any.fromFunction2(addSorter))
     if (addSorters != null) __obj.updateDynamic("addSorters")(js.Any.fromFunction2(addSorters))
-    if (alias != null) __obj.updateDynamic("alias")(alias)
-    if (all != null) __obj.updateDynamic("all")(all)
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
+    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
+    if (all != null) __obj.updateDynamic("all")(all.asInstanceOf[js.Any])
+    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
     if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
     if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
     if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (clear != null) __obj.updateDynamic("clear")(js.Any.fromFunction0(clear))
     if (clone != null) __obj.updateDynamic("clone")(js.Any.fromFunction0(clone))
-    if (config != null) __obj.updateDynamic("config")(config)
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
     if (contains != null) __obj.updateDynamic("contains")(js.Any.fromFunction1(contains))
     if (containsKey != null) __obj.updateDynamic("containsKey")(js.Any.fromFunction1(containsKey))
-    if (currentSortFn != null) __obj.updateDynamic("currentSortFn")(currentSortFn)
-    if (defaultSortDirection != null) __obj.updateDynamic("defaultSortDirection")(defaultSortDirection)
+    if (currentSortFn != null) __obj.updateDynamic("currentSortFn")(currentSortFn.asInstanceOf[js.Any])
+    if (defaultSortDirection != null) __obj.updateDynamic("defaultSortDirection")(defaultSortDirection.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (!js.isUndefined(dirtyFilterFn)) __obj.updateDynamic("dirtyFilterFn")(dirtyFilterFn)
-    if (!js.isUndefined(dirtySortFn)) __obj.updateDynamic("dirtySortFn")(dirtySortFn)
+    if (!js.isUndefined(dirtyFilterFn)) __obj.updateDynamic("dirtyFilterFn")(dirtyFilterFn.asInstanceOf[js.Any])
+    if (!js.isUndefined(dirtySortFn)) __obj.updateDynamic("dirtySortFn")(dirtySortFn.asInstanceOf[js.Any])
     if (each != null) __obj.updateDynamic("each")(js.Any.fromFunction2(each))
     if (eachKey != null) __obj.updateDynamic("eachKey")(js.Any.fromFunction2(eachKey))
-    if (extend != null) __obj.updateDynamic("extend")(extend)
-    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction4(filter))
+    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (filterBy != null) __obj.updateDynamic("filterBy")(js.Any.fromFunction2(filterBy))
-    if (filterRoot != null) __obj.updateDynamic("filterRoot")(filterRoot)
-    if (!js.isUndefined(filtered)) __obj.updateDynamic("filtered")(filtered)
-    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (filterRoot != null) __obj.updateDynamic("filterRoot")(filterRoot.asInstanceOf[js.Any])
+    if (!js.isUndefined(filtered)) __obj.updateDynamic("filtered")(filtered.asInstanceOf[js.Any])
+    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
     if (findBy != null) __obj.updateDynamic("findBy")(js.Any.fromFunction2(findBy))
     if (findIndexBy != null) __obj.updateDynamic("findIndexBy")(js.Any.fromFunction3(findIndexBy))
     if (findInsertionIndex != null) __obj.updateDynamic("findInsertionIndex")(js.Any.fromFunction2(findInsertionIndex))
@@ -175,8 +181,8 @@ object IErrors {
     if (getSorters != null) __obj.updateDynamic("getSorters")(js.Any.fromFunction0(getSorters))
     if (indexOf != null) __obj.updateDynamic("indexOf")(js.Any.fromFunction1(indexOf))
     if (indexOfKey != null) __obj.updateDynamic("indexOfKey")(js.Any.fromFunction1(indexOfKey))
-    if (indices != null) __obj.updateDynamic("indices")(indices)
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
+    if (indices != null) __obj.updateDynamic("indices")(indices.asInstanceOf[js.Any])
+    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (insert != null) __obj.updateDynamic("insert")(js.Any.fromFunction3(insert))
     if (insertFilter != null) __obj.updateDynamic("insertFilter")(js.Any.fromFunction2(insertFilter))
@@ -184,13 +190,13 @@ object IErrors {
     if (insertSorter != null) __obj.updateDynamic("insertSorter")(js.Any.fromFunction3(insertSorter))
     if (insertSorters != null) __obj.updateDynamic("insertSorters")(js.Any.fromFunction0(insertSorters))
     if (isValid != null) __obj.updateDynamic("isValid")(js.Any.fromFunction0(isValid))
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (keys != null) __obj.updateDynamic("keys")(keys)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
     if (last != null) __obj.updateDynamic("last")(js.Any.fromFunction0(last))
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (map != null) __obj.updateDynamic("map")(map)
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins)
-    if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig)
+    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
+    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
+    if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
     if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction1(remove))
     if (removeAll != null) __obj.updateDynamic("removeAll")(js.Any.fromFunction1(removeAll))
     if (removeAt != null) __obj.updateDynamic("removeAt")(js.Any.fromFunction1(removeAt))
@@ -199,7 +205,7 @@ object IErrors {
     if (removeSorter != null) __obj.updateDynamic("removeSorter")(js.Any.fromFunction1(removeSorter))
     if (removeSorters != null) __obj.updateDynamic("removeSorters")(js.Any.fromFunction1(removeSorters))
     if (replace != null) __obj.updateDynamic("replace")(js.Any.fromFunction2(replace))
-    if (self != null) __obj.updateDynamic("self")(self)
+    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (setAutoFilter != null) __obj.updateDynamic("setAutoFilter")(js.Any.fromFunction1(setAutoFilter))
     if (setAutoSort != null) __obj.updateDynamic("setAutoSort")(js.Any.fromFunction1(setAutoSort))
     if (setDefaultSortDirection != null) __obj.updateDynamic("setDefaultSortDirection")(js.Any.fromFunction1(setDefaultSortDirection))
@@ -207,13 +213,13 @@ object IErrors {
     if (setFilters != null) __obj.updateDynamic("setFilters")(js.Any.fromFunction1(setFilters))
     if (setSortRoot != null) __obj.updateDynamic("setSortRoot")(js.Any.fromFunction1(setSortRoot))
     if (setSorters != null) __obj.updateDynamic("setSorters")(js.Any.fromFunction1(setSorters))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(js.Any.fromFunction2(sort))
-    if (sortRoot != null) __obj.updateDynamic("sortRoot")(sortRoot)
-    if (!js.isUndefined(sorted)) __obj.updateDynamic("sorted")(sorted)
-    if (sorters != null) __obj.updateDynamic("sorters")(sorters)
-    if (statics != null) __obj.updateDynamic("statics")(statics)
-    if (uses != null) __obj.updateDynamic("uses")(uses)
+    if (sortRoot != null) __obj.updateDynamic("sortRoot")(sortRoot.asInstanceOf[js.Any])
+    if (!js.isUndefined(sorted)) __obj.updateDynamic("sorted")(sorted.asInstanceOf[js.Any])
+    if (sorters != null) __obj.updateDynamic("sorters")(sorters.asInstanceOf[js.Any])
+    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
+    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IErrors]
   }
 }

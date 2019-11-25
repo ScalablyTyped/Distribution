@@ -21,7 +21,7 @@ object Stretchy {
   @scala.inline
   def apply(stretchy: js.UndefOr[Boolean] = js.undefined): Stretchy = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(stretchy)) __obj.updateDynamic("stretchy")(stretchy)
+    if (!js.isUndefined(stretchy)) __obj.updateDynamic("stretchy")(stretchy.asInstanceOf[js.Any])
     __obj.asInstanceOf[Stretchy]
   }
 }

@@ -14,7 +14,7 @@ trait Anon_Full extends js.Object {
 object Anon_Full {
   @scala.inline
   def apply(full: Boolean, styles: StringDictionary[RegisteredStyle[_]]): Anon_Full = {
-    val __obj = js.Dynamic.literal(full = full, styles = styles)
+    val __obj = js.Dynamic.literal(full = full.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Full]
   }

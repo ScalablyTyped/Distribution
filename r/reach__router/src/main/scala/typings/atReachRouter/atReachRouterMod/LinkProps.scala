@@ -20,9 +20,9 @@ object LinkProps {
     replace: js.UndefOr[Boolean] = js.undefined,
     state: TState = null
   ): LinkProps[TState] = {
-    val __obj = js.Dynamic.literal(to = to)
+    val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
     if (getProps != null) __obj.updateDynamic("getProps")(js.Any.fromFunction1(getProps))
-    if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace)
+    if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinkProps[TState]]
   }

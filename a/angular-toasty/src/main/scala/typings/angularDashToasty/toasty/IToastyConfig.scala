@@ -85,19 +85,19 @@ object IToastyConfig {
     timeout: Int | Double = null,
     `type`: String = null
   ): IToastyConfig = {
-    val __obj = js.Dynamic.literal(title = title)
-    if (!js.isUndefined(clickToClose)) __obj.updateDynamic("clickToClose")(clickToClose)
-    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html)
-    if (msg != null) __obj.updateDynamic("msg")(msg)
-    if (onAdd != null) __obj.updateDynamic("onAdd")(onAdd)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onRemove != null) __obj.updateDynamic("onRemove")(onRemove)
-    if (!js.isUndefined(shake)) __obj.updateDynamic("shake")(shake)
-    if (!js.isUndefined(showClose)) __obj.updateDynamic("showClose")(showClose)
-    if (!js.isUndefined(sound)) __obj.updateDynamic("sound")(sound)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
+    if (!js.isUndefined(clickToClose)) __obj.updateDynamic("clickToClose")(clickToClose.asInstanceOf[js.Any])
+    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
+    if (msg != null) __obj.updateDynamic("msg")(msg.asInstanceOf[js.Any])
+    if (onAdd != null) __obj.updateDynamic("onAdd")(onAdd.asInstanceOf[js.Any])
+    if (onClick != null) __obj.updateDynamic("onClick")(onClick.asInstanceOf[js.Any])
+    if (onRemove != null) __obj.updateDynamic("onRemove")(onRemove.asInstanceOf[js.Any])
+    if (!js.isUndefined(shake)) __obj.updateDynamic("shake")(shake.asInstanceOf[js.Any])
+    if (!js.isUndefined(showClose)) __obj.updateDynamic("showClose")(showClose.asInstanceOf[js.Any])
+    if (!js.isUndefined(sound)) __obj.updateDynamic("sound")(sound.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IToastyConfig]
   }
 }

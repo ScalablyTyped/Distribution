@@ -21,9 +21,9 @@ object InputRow {
     entry: js.UndefOr[Boolean] = js.undefined,
     noparse: js.UndefOr[Boolean] = js.undefined
   ): InputRow = {
-    val __obj = js.Dynamic.literal(expose = expose, file = file, id = id)
-    if (!js.isUndefined(entry)) __obj.updateDynamic("entry")(entry)
-    if (!js.isUndefined(noparse)) __obj.updateDynamic("noparse")(noparse)
+    val __obj = js.Dynamic.literal(expose = expose.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
+    if (!js.isUndefined(entry)) __obj.updateDynamic("entry")(entry.asInstanceOf[js.Any])
+    if (!js.isUndefined(noparse)) __obj.updateDynamic("noparse")(noparse.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputRow]
   }
 }

@@ -32,14 +32,14 @@ object QueryOptions {
   ): QueryOptions[TResult] = {
     val __obj = js.Dynamic.literal()
     if (cacheTime != null) __obj.updateDynamic("cacheTime")(cacheTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(manual)) __obj.updateDynamic("manual")(manual)
+    if (!js.isUndefined(manual)) __obj.updateDynamic("manual")(manual.asInstanceOf[js.Any])
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     if (onSucess != null) __obj.updateDynamic("onSucess")(js.Any.fromFunction1(onSucess))
     if (refetchInterval != null) __obj.updateDynamic("refetchInterval")(refetchInterval.asInstanceOf[js.Any])
     if (retry != null) __obj.updateDynamic("retry")(retry.asInstanceOf[js.Any])
     if (retryDelay != null) __obj.updateDynamic("retryDelay")(js.Any.fromFunction1(retryDelay))
     if (staleTime != null) __obj.updateDynamic("staleTime")(staleTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(suspense)) __obj.updateDynamic("suspense")(suspense)
+    if (!js.isUndefined(suspense)) __obj.updateDynamic("suspense")(suspense.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryOptions[TResult]]
   }
 }

@@ -31,14 +31,14 @@ object ListOptions {
   ): ListOptions = {
     val __obj = js.Dynamic.literal()
     if (i != null) __obj.updateDynamic("i")(i.asInstanceOf[js.Any])
-    if (!js.isUndefined(indexAsync)) __obj.updateDynamic("indexAsync")(indexAsync)
-    if (item != null) __obj.updateDynamic("item")(item)
-    if (listClass != null) __obj.updateDynamic("listClass")(listClass)
+    if (!js.isUndefined(indexAsync)) __obj.updateDynamic("indexAsync")(indexAsync.asInstanceOf[js.Any])
+    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
+    if (listClass != null) __obj.updateDynamic("listClass")(listClass.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (!js.isUndefined(pagination)) __obj.updateDynamic("pagination")(pagination)
-    if (searchClass != null) __obj.updateDynamic("searchClass")(searchClass)
-    if (sortClass != null) __obj.updateDynamic("sortClass")(sortClass)
-    if (valueNames != null) __obj.updateDynamic("valueNames")(valueNames)
+    if (!js.isUndefined(pagination)) __obj.updateDynamic("pagination")(pagination.asInstanceOf[js.Any])
+    if (searchClass != null) __obj.updateDynamic("searchClass")(searchClass.asInstanceOf[js.Any])
+    if (sortClass != null) __obj.updateDynamic("sortClass")(sortClass.asInstanceOf[js.Any])
+    if (valueNames != null) __obj.updateDynamic("valueNames")(valueNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListOptions]
   }
 }

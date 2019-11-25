@@ -13,7 +13,7 @@ object Anon_DtypeFloat64 {
   @scala.inline
   def apply(dtype: float64 = null): Anon_DtypeFloat64 = {
     val __obj = js.Dynamic.literal()
-    if (dtype != null) __obj.updateDynamic("dtype")(dtype)
+    if (dtype != null) __obj.updateDynamic("dtype")(dtype.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DtypeFloat64]
   }
 }

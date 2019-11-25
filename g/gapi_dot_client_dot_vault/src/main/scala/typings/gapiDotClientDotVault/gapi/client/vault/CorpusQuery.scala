@@ -21,9 +21,9 @@ object CorpusQuery {
     mailQuery: HeldMailQuery = null
   ): CorpusQuery = {
     val __obj = js.Dynamic.literal()
-    if (driveQuery != null) __obj.updateDynamic("driveQuery")(driveQuery)
-    if (groupsQuery != null) __obj.updateDynamic("groupsQuery")(groupsQuery)
-    if (mailQuery != null) __obj.updateDynamic("mailQuery")(mailQuery)
+    if (driveQuery != null) __obj.updateDynamic("driveQuery")(driveQuery.asInstanceOf[js.Any])
+    if (groupsQuery != null) __obj.updateDynamic("groupsQuery")(groupsQuery.asInstanceOf[js.Any])
+    if (mailQuery != null) __obj.updateDynamic("mailQuery")(mailQuery.asInstanceOf[js.Any])
     __obj.asInstanceOf[CorpusQuery]
   }
 }

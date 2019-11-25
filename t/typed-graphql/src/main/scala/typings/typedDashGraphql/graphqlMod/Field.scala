@@ -27,12 +27,12 @@ object Field {
     loc: Location = null,
     selectionSet: SelectionSet = null
   ): Field = {
-    val __obj = js.Dynamic.literal(kind = kind, name = name)
-    if (alias != null) __obj.updateDynamic("alias")(alias)
-    if (arguments != null) __obj.updateDynamic("arguments")(arguments)
-    if (directives != null) __obj.updateDynamic("directives")(directives)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (selectionSet != null) __obj.updateDynamic("selectionSet")(selectionSet)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
+    if (arguments != null) __obj.updateDynamic("arguments")(arguments.asInstanceOf[js.Any])
+    if (directives != null) __obj.updateDynamic("directives")(directives.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (selectionSet != null) __obj.updateDynamic("selectionSet")(selectionSet.asInstanceOf[js.Any])
     __obj.asInstanceOf[Field]
   }
 }

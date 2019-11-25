@@ -13,8 +13,8 @@ object Anon_TooltipHelp {
   @scala.inline
   def apply(tooltipHelp: String = null, tooltipRequired: String = null): Anon_TooltipHelp = {
     val __obj = js.Dynamic.literal()
-    if (tooltipHelp != null) __obj.updateDynamic("tooltipHelp")(tooltipHelp)
-    if (tooltipRequired != null) __obj.updateDynamic("tooltipRequired")(tooltipRequired)
+    if (tooltipHelp != null) __obj.updateDynamic("tooltipHelp")(tooltipHelp.asInstanceOf[js.Any])
+    if (tooltipRequired != null) __obj.updateDynamic("tooltipRequired")(tooltipRequired.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_TooltipHelp]
   }
 }

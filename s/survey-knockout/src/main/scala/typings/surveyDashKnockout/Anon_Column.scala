@@ -35,7 +35,7 @@ object Anon_Column {
     other: String,
     root: String
   ): Anon_Column = {
-    val __obj = js.Dynamic.literal(column = column, controlLabel = controlLabel, item = item, itemChecked = itemChecked, itemControl = itemControl, itemDecorator = itemDecorator, itemInline = itemInline, label = label, labelChecked = labelChecked, materialDecorator = materialDecorator, other = other, root = root)
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], controlLabel = controlLabel.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], itemChecked = itemChecked.asInstanceOf[js.Any], itemControl = itemControl.asInstanceOf[js.Any], itemDecorator = itemDecorator.asInstanceOf[js.Any], itemInline = itemInline.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], labelChecked = labelChecked.asInstanceOf[js.Any], materialDecorator = materialDecorator.asInstanceOf[js.Any], other = other.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Column]
   }

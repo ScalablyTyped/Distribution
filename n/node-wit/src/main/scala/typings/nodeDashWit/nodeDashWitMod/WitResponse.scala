@@ -13,8 +13,8 @@ object WitResponse {
   @scala.inline
   def apply(quickReplies: js.Any = null, text: String = null): WitResponse = {
     val __obj = js.Dynamic.literal()
-    if (quickReplies != null) __obj.updateDynamic("quickReplies")(quickReplies)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (quickReplies != null) __obj.updateDynamic("quickReplies")(quickReplies.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[WitResponse]
   }
 }

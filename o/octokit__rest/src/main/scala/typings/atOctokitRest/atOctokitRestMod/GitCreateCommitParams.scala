@@ -45,10 +45,10 @@ object GitCreateCommitParams {
     committer: GitCreateCommitParamsCommitter = null,
     signature: String = null
   ): GitCreateCommitParams = {
-    val __obj = js.Dynamic.literal(message = message, owner = owner, parents = parents, repo = repo, tree = tree)
-    if (author != null) __obj.updateDynamic("author")(author)
-    if (committer != null) __obj.updateDynamic("committer")(committer)
-    if (signature != null) __obj.updateDynamic("signature")(signature)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], parents = parents.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], tree = tree.asInstanceOf[js.Any])
+    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
+    if (committer != null) __obj.updateDynamic("committer")(committer.asInstanceOf[js.Any])
+    if (signature != null) __obj.updateDynamic("signature")(signature.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitCreateCommitParams]
   }
 }

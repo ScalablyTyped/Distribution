@@ -20,8 +20,8 @@ object Anon_CollapseOnBlur {
     popupFloat: left | right = null
   ): Anon_CollapseOnBlur = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(collapseOnBlur)) __obj.updateDynamic("collapseOnBlur")(collapseOnBlur)
-    if (!js.isUndefined(expandOnClick)) __obj.updateDynamic("expandOnClick")(expandOnClick)
+    if (!js.isUndefined(collapseOnBlur)) __obj.updateDynamic("collapseOnBlur")(collapseOnBlur.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandOnClick)) __obj.updateDynamic("expandOnClick")(expandOnClick.asInstanceOf[js.Any])
     if (popupFloat != null) __obj.updateDynamic("popupFloat")(popupFloat.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CollapseOnBlur]
   }

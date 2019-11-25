@@ -25,7 +25,7 @@ object Anon_AutoDashed {
     lineWidth: Double,
     rendered: on | off | auto
   ): Anon_AutoDashed = {
-    val __obj = js.Dynamic.literal(lineColor = lineColor, lineStyle = lineStyle.asInstanceOf[js.Any], lineWidth = lineWidth, rendered = rendered.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(lineColor = lineColor.asInstanceOf[js.Any], lineStyle = lineStyle.asInstanceOf[js.Any], lineWidth = lineWidth.asInstanceOf[js.Any], rendered = rendered.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AutoDashed]
   }

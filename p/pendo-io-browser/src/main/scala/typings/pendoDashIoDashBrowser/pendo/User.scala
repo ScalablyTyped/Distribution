@@ -16,7 +16,7 @@ trait User extends js.Object {
 object User {
   @scala.inline
   def apply(first: String, id: String, last: String, role: Double, userType: String, username: String): User = {
-    val __obj = js.Dynamic.literal(first = first, id = id, last = last, role = role, userType = userType, username = username)
+    val __obj = js.Dynamic.literal(first = first.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], last = last.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any], userType = userType.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[User]
   }

@@ -26,10 +26,10 @@ object PivotConfiguratorOptions {
   ): PivotConfiguratorOptions = {
     val __obj = js.Dynamic.literal()
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(filterable)) __obj.updateDynamic("filterable")(filterable)
+    if (!js.isUndefined(filterable)) __obj.updateDynamic("filterable")(filterable.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (sortable != null) __obj.updateDynamic("sortable")(sortable.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotConfiguratorOptions]
   }

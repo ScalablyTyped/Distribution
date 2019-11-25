@@ -20,10 +20,10 @@ object YogBootstrapOption {
   @scala.inline
   def apply(app: Express = null, confPath: String = null, pluginsPath: String = null, rootPath: String = null): YogBootstrapOption = {
     val __obj = js.Dynamic.literal()
-    if (app != null) __obj.updateDynamic("app")(app)
-    if (confPath != null) __obj.updateDynamic("confPath")(confPath)
-    if (pluginsPath != null) __obj.updateDynamic("pluginsPath")(pluginsPath)
-    if (rootPath != null) __obj.updateDynamic("rootPath")(rootPath)
+    if (app != null) __obj.updateDynamic("app")(app.asInstanceOf[js.Any])
+    if (confPath != null) __obj.updateDynamic("confPath")(confPath.asInstanceOf[js.Any])
+    if (pluginsPath != null) __obj.updateDynamic("pluginsPath")(pluginsPath.asInstanceOf[js.Any])
+    if (rootPath != null) __obj.updateDynamic("rootPath")(rootPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[YogBootstrapOption]
   }
 }

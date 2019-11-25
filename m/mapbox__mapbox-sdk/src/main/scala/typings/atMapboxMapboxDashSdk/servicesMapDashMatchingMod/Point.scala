@@ -18,7 +18,7 @@ object Point {
   @scala.inline
   def apply(coordinates: LngLatLike, approach: DirectionsApproach = null): Point = {
     val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
-    if (approach != null) __obj.updateDynamic("approach")(approach)
+    if (approach != null) __obj.updateDynamic("approach")(approach.asInstanceOf[js.Any])
     __obj.asInstanceOf[Point]
   }
 }

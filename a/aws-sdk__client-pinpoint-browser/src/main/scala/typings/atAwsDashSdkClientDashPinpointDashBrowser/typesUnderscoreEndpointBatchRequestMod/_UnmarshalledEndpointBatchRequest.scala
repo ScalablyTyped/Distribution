@@ -17,7 +17,7 @@ object _UnmarshalledEndpointBatchRequest {
   @scala.inline
   def apply(Item: js.Array[_UnmarshalledEndpointBatchItem] = null): _UnmarshalledEndpointBatchRequest = {
     val __obj = js.Dynamic.literal()
-    if (Item != null) __obj.updateDynamic("Item")(Item)
+    if (Item != null) __obj.updateDynamic("Item")(Item.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledEndpointBatchRequest]
   }
 }

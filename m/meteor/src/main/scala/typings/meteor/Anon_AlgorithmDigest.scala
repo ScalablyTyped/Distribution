@@ -13,7 +13,7 @@ trait Anon_AlgorithmDigest extends js.Object {
 object Anon_AlgorithmDigest {
   @scala.inline
   def apply(algorithm: `sha-256`, digest: String): Anon_AlgorithmDigest = {
-    val __obj = js.Dynamic.literal(algorithm = algorithm, digest = digest)
+    val __obj = js.Dynamic.literal(algorithm = algorithm.asInstanceOf[js.Any], digest = digest.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AlgorithmDigest]
   }

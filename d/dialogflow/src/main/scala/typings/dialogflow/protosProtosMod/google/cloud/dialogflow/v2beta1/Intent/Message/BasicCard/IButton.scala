@@ -17,8 +17,8 @@ object IButton {
   @scala.inline
   def apply(openUriAction: IOpenUriAction = null, title: String = null): IButton = {
     val __obj = js.Dynamic.literal()
-    if (openUriAction != null) __obj.updateDynamic("openUriAction")(openUriAction)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (openUriAction != null) __obj.updateDynamic("openUriAction")(openUriAction.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[IButton]
   }
 }

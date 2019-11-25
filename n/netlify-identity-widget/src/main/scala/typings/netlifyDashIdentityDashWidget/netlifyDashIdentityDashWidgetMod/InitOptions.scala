@@ -20,8 +20,8 @@ object InitOptions {
   @scala.inline
   def apply(APIUrl: String = null, container: String = null): InitOptions = {
     val __obj = js.Dynamic.literal()
-    if (APIUrl != null) __obj.updateDynamic("APIUrl")(APIUrl)
-    if (container != null) __obj.updateDynamic("container")(container)
+    if (APIUrl != null) __obj.updateDynamic("APIUrl")(APIUrl.asInstanceOf[js.Any])
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitOptions]
   }
 }

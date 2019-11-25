@@ -63,7 +63,7 @@ object ITeleportComponent {
     targetDistance: Double,
     target_teleport_chance: Double
   ): ITeleportComponent = {
-    val __obj = js.Dynamic.literal(darkTeleportChance = darkTeleportChance, lightTeleportChance = lightTeleportChance, maxRandomTeleportTime = maxRandomTeleportTime, minRandomTeleportTime = minRandomTeleportTime, randomTeleportCube = randomTeleportCube, randomTeleports = randomTeleports, targetDistance = targetDistance, target_teleport_chance = target_teleport_chance)
+    val __obj = js.Dynamic.literal(darkTeleportChance = darkTeleportChance.asInstanceOf[js.Any], lightTeleportChance = lightTeleportChance.asInstanceOf[js.Any], maxRandomTeleportTime = maxRandomTeleportTime.asInstanceOf[js.Any], minRandomTeleportTime = minRandomTeleportTime.asInstanceOf[js.Any], randomTeleportCube = randomTeleportCube.asInstanceOf[js.Any], randomTeleports = randomTeleports.asInstanceOf[js.Any], targetDistance = targetDistance.asInstanceOf[js.Any], target_teleport_chance = target_teleport_chance.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ITeleportComponent]
   }

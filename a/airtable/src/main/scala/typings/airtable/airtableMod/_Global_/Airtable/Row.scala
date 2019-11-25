@@ -12,7 +12,7 @@ trait Row[TFields] extends js.Object {
 object Row {
   @scala.inline
   def apply[TFields](fields: TFields, id: String): Row[TFields] = {
-    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], id = id)
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Row[TFields]]
   }

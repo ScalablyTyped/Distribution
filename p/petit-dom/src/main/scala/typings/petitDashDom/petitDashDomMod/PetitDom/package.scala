@@ -9,7 +9,7 @@ package object PetitDom {
 
   type ComponentProps = js.Object
   type Content = String | VNode
-  type DOMElementProps[E /* <: Element */] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type DOMElementProps[E /* <: Element */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof E ]:? E[P]}
     */ typings.petitDashDom.petitDashDomStrings.DOMElementProps with E
   type Key = String | Double

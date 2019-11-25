@@ -2,13 +2,13 @@ package typings.svgDashPathDashParser.svgDashPathDashParserMod
 
 import typings.svgDashPathDashParser.svgDashPathDashParserStrings.S
 import typings.svgDashPathDashParser.svgDashPathDashParserStrings.`smooth curveto`
-import typings.svgDashPathDashParser.svgDashPathDashParserStrings.s
+import typings.svgDashPathDashParser.svgDashPathDashParserStrings.s_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SmoothCurveToCommand extends js.Object {
-  var code: s | S
+  var code: s_ | S
   var command: `smooth curveto`
   var relative: js.UndefOr[Boolean] = js.undefined
   var x: Double
@@ -20,7 +20,7 @@ trait SmoothCurveToCommand extends js.Object {
 object SmoothCurveToCommand {
   @scala.inline
   def apply(
-    code: s | S,
+    code: s_ | S,
     command: `smooth curveto`,
     x: Double,
     x2: Double,
@@ -28,8 +28,8 @@ object SmoothCurveToCommand {
     y2: Double,
     relative: js.UndefOr[Boolean] = js.undefined
   ): SmoothCurveToCommand = {
-    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], command = command, x = x, x2 = x2, y = y, y2 = y2)
-    if (!js.isUndefined(relative)) __obj.updateDynamic("relative")(relative)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], x2 = x2.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], y2 = y2.asInstanceOf[js.Any])
+    if (!js.isUndefined(relative)) __obj.updateDynamic("relative")(relative.asInstanceOf[js.Any])
     __obj.asInstanceOf[SmoothCurveToCommand]
   }
 }

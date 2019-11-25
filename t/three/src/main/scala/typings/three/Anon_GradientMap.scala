@@ -12,7 +12,7 @@ trait Anon_GradientMap extends js.Object {
 object Anon_GradientMap {
   @scala.inline
   def apply(gradientMap: IUniform): Anon_GradientMap = {
-    val __obj = js.Dynamic.literal(gradientMap = gradientMap)
+    val __obj = js.Dynamic.literal(gradientMap = gradientMap.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_GradientMap]
   }

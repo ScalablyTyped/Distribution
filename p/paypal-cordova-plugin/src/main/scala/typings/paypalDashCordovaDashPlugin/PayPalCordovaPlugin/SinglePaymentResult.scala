@@ -12,7 +12,7 @@ trait SinglePaymentResult extends BaseResult {
 object SinglePaymentResult {
   @scala.inline
   def apply(client: Client, response: Anon_Authorizationid, response_type: String): SinglePaymentResult = {
-    val __obj = js.Dynamic.literal(client = client, response = response, response_type = response_type)
+    val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], response_type = response_type.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SinglePaymentResult]
   }

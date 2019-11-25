@@ -15,7 +15,7 @@ object RunOptions {
   @scala.inline
   def apply(repeatView: js.UndefOr[Boolean] = js.undefined, run: Int | Double = null): RunOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(repeatView)) __obj.updateDynamic("repeatView")(repeatView)
+    if (!js.isUndefined(repeatView)) __obj.updateDynamic("repeatView")(repeatView.asInstanceOf[js.Any])
     if (run != null) __obj.updateDynamic("run")(run.asInstanceOf[js.Any])
     __obj.asInstanceOf[RunOptions]
   }

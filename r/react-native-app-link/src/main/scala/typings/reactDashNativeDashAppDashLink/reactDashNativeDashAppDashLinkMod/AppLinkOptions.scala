@@ -14,7 +14,7 @@ trait AppLinkOptions extends js.Object {
 object AppLinkOptions {
   @scala.inline
   def apply(appName: String, appStoreId: Double, appStoreLocale: String, playStoreId: String): AppLinkOptions = {
-    val __obj = js.Dynamic.literal(appName = appName, appStoreId = appStoreId, appStoreLocale = appStoreLocale, playStoreId = playStoreId)
+    val __obj = js.Dynamic.literal(appName = appName.asInstanceOf[js.Any], appStoreId = appStoreId.asInstanceOf[js.Any], appStoreLocale = appStoreLocale.asInstanceOf[js.Any], playStoreId = playStoreId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AppLinkOptions]
   }

@@ -27,7 +27,7 @@ object Anon_Align {
     scrollTop: Double,
     width: Double
   ): Anon_Align = {
-    val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], cellIndex = cellIndex, height = height, scrollLeft = scrollLeft, scrollTop = scrollTop, width = width)
+    val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], cellIndex = cellIndex.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], scrollLeft = scrollLeft.asInstanceOf[js.Any], scrollTop = scrollTop.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Align]
   }

@@ -28,13 +28,13 @@ object FileAttachment {
   ): FileAttachment = {
     val __obj = js.Dynamic.literal()
     if (contentBytes != null) __obj.updateDynamic("contentBytes")(contentBytes.asInstanceOf[js.Any])
-    if (contentId != null) __obj.updateDynamic("contentId")(contentId)
-    if (contentLocation != null) __obj.updateDynamic("contentLocation")(contentLocation)
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(isInline)) __obj.updateDynamic("isInline")(isInline)
-    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (contentId != null) __obj.updateDynamic("contentId")(contentId.asInstanceOf[js.Any])
+    if (contentLocation != null) __obj.updateDynamic("contentLocation")(contentLocation.asInstanceOf[js.Any])
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(isInline)) __obj.updateDynamic("isInline")(isInline.asInstanceOf[js.Any])
+    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileAttachment]
   }

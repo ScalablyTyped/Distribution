@@ -13,7 +13,7 @@ trait Anon_QFields extends js.Object {
 object Anon_QFields {
   @scala.inline
   def apply(qFields: js.Array[IDataField], qFormatSpec: String): Anon_QFields = {
-    val __obj = js.Dynamic.literal(qFields = qFields, qFormatSpec = qFormatSpec)
+    val __obj = js.Dynamic.literal(qFields = qFields.asInstanceOf[js.Any], qFormatSpec = qFormatSpec.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_QFields]
   }

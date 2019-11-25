@@ -19,8 +19,8 @@ object StartReconciliationRequest {
   @scala.inline
   def apply(reconciliationOperation: QuotaOperation = null, serviceConfigId: String = null): StartReconciliationRequest = {
     val __obj = js.Dynamic.literal()
-    if (reconciliationOperation != null) __obj.updateDynamic("reconciliationOperation")(reconciliationOperation)
-    if (serviceConfigId != null) __obj.updateDynamic("serviceConfigId")(serviceConfigId)
+    if (reconciliationOperation != null) __obj.updateDynamic("reconciliationOperation")(reconciliationOperation.asInstanceOf[js.Any])
+    if (serviceConfigId != null) __obj.updateDynamic("serviceConfigId")(serviceConfigId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartReconciliationRequest]
   }
 }

@@ -25,7 +25,7 @@ object FsStatsData {
     wx_bytes: Double,
     wx_sec: Double
   ): FsStatsData = {
-    val __obj = js.Dynamic.literal(ms = ms, rx_bytes = rx_bytes, rx_sec = rx_sec, tx_bytes = tx_bytes, tx_sec = tx_sec, wx_bytes = wx_bytes, wx_sec = wx_sec)
+    val __obj = js.Dynamic.literal(ms = ms.asInstanceOf[js.Any], rx_bytes = rx_bytes.asInstanceOf[js.Any], rx_sec = rx_sec.asInstanceOf[js.Any], tx_bytes = tx_bytes.asInstanceOf[js.Any], tx_sec = tx_sec.asInstanceOf[js.Any], wx_bytes = wx_bytes.asInstanceOf[js.Any], wx_sec = wx_sec.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FsStatsData]
   }

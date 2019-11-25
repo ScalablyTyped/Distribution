@@ -19,7 +19,7 @@ trait RedirectByRegExParams extends js.Object {
 object RedirectByRegExParams {
   @scala.inline
   def apply(from: String, to: String): RedirectByRegExParams = {
-    val __obj = js.Dynamic.literal(from = from, to = to)
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RedirectByRegExParams]
   }

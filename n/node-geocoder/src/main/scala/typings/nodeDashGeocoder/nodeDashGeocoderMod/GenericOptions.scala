@@ -14,10 +14,10 @@ trait GenericOptions extends js.Object {
 object GenericOptions {
   @scala.inline
   def apply(provider: Providers, apiKey: String = null, host: String = null, language: String = null): GenericOptions = {
-    val __obj = js.Dynamic.literal(provider = provider)
-    if (apiKey != null) __obj.updateDynamic("apiKey")(apiKey)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (language != null) __obj.updateDynamic("language")(language)
+    val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any])
+    if (apiKey != null) __obj.updateDynamic("apiKey")(apiKey.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenericOptions]
   }
 }

@@ -68,7 +68,7 @@ object PriorityClass {
     preemptionPolicy: String,
     value: Double
   ): PriorityClass = {
-    val __obj = js.Dynamic.literal(apiVersion = apiVersion, description = description, globalDefault = globalDefault, kind = kind, metadata = metadata, preemptionPolicy = preemptionPolicy, value = value)
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], globalDefault = globalDefault.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], preemptionPolicy = preemptionPolicy.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PriorityClass]
   }

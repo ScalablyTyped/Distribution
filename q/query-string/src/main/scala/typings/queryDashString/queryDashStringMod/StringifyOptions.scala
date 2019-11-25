@@ -100,10 +100,10 @@ object StringifyOptions {
   ): StringifyOptions = {
     val __obj = js.Dynamic.literal()
     if (arrayFormat != null) __obj.updateDynamic("arrayFormat")(arrayFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(encode)) __obj.updateDynamic("encode")(encode)
-    if (!js.isUndefined(skipNull)) __obj.updateDynamic("skipNull")(skipNull)
+    if (!js.isUndefined(encode)) __obj.updateDynamic("encode")(encode.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipNull)) __obj.updateDynamic("skipNull")(skipNull.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
     __obj.asInstanceOf[StringifyOptions]
   }
 }

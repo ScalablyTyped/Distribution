@@ -28,11 +28,11 @@ object RelationOptsWithResolver {
     projection: Partial[ProjectionType] = null
   ): RelationOptsWithResolver[TRelationSource, TSource, TContext, TArgs] = {
     val __obj = js.Dynamic.literal(resolver = resolver.asInstanceOf[js.Any])
-    if (!js.isUndefined(catchErrors)) __obj.updateDynamic("catchErrors")(catchErrors)
-    if (deprecationReason != null) __obj.updateDynamic("deprecationReason")(deprecationReason)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (prepareArgs != null) __obj.updateDynamic("prepareArgs")(prepareArgs)
-    if (projection != null) __obj.updateDynamic("projection")(projection)
+    if (!js.isUndefined(catchErrors)) __obj.updateDynamic("catchErrors")(catchErrors.asInstanceOf[js.Any])
+    if (deprecationReason != null) __obj.updateDynamic("deprecationReason")(deprecationReason.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (prepareArgs != null) __obj.updateDynamic("prepareArgs")(prepareArgs.asInstanceOf[js.Any])
+    if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelationOptsWithResolver[TRelationSource, TSource, TContext, TArgs]]
   }
 }

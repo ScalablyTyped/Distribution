@@ -14,8 +14,8 @@ object MediaType {
   @scala.inline
   def apply(`type`: String, parameters: StringDictionary[String] = null): MediaType = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaType]
   }
 }

@@ -64,8 +64,8 @@ object ServerAuthSchemeObject {
     verify: /* auth */ RequestAuth => js.Promise[Unit] = null
   ): ServerAuthSchemeObject = {
     val __obj = js.Dynamic.literal(authenticate = js.Any.fromFunction2(authenticate))
-    if (api != null) __obj.updateDynamic("api")(api)
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (api != null) __obj.updateDynamic("api")(api.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (payload != null) __obj.updateDynamic("payload")(js.Any.fromFunction2(payload))
     if (response != null) __obj.updateDynamic("response")(js.Any.fromFunction2(response))
     if (verify != null) __obj.updateDynamic("verify")(js.Any.fromFunction1(verify))

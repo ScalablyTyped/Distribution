@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait DirectionType extends js.Object
 
+object DirectionType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def from: typings.vis.visStrings.from = this.cast("from")
+  @scala.inline
+  def to: typings.vis.visStrings.to = this.cast("to")
+}
+

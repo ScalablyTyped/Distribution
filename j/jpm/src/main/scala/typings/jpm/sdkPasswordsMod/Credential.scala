@@ -25,12 +25,12 @@ object Credential {
     url: String = null,
     usernameField: String = null
   ): Credential = {
-    val __obj = js.Dynamic.literal(password = password, username = username)
-    if (formSubmitURL != null) __obj.updateDynamic("formSubmitURL")(formSubmitURL)
-    if (passwordField != null) __obj.updateDynamic("passwordField")(passwordField)
-    if (realm != null) __obj.updateDynamic("realm")(realm)
-    if (url != null) __obj.updateDynamic("url")(url)
-    if (usernameField != null) __obj.updateDynamic("usernameField")(usernameField)
+    val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
+    if (formSubmitURL != null) __obj.updateDynamic("formSubmitURL")(formSubmitURL.asInstanceOf[js.Any])
+    if (passwordField != null) __obj.updateDynamic("passwordField")(passwordField.asInstanceOf[js.Any])
+    if (realm != null) __obj.updateDynamic("realm")(realm.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (usernameField != null) __obj.updateDynamic("usernameField")(usernameField.asInstanceOf[js.Any])
     __obj.asInstanceOf[Credential]
   }
 }

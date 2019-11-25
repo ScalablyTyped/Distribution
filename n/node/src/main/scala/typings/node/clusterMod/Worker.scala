@@ -6,7 +6,6 @@ import typings.node.childUnderscoreProcessMod.ChildProcess
 import typings.node.eventsMod.EventEmitter
 import typings.node.netMod.Server
 import typings.node.netMod.Socket
-import typings.node.nodeStrings.disconnect
 import typings.node.nodeStrings.error
 import typings.node.nodeStrings.exit
 import typings.node.nodeStrings.listening
@@ -23,7 +22,7 @@ class Worker () extends EventEmitter {
   var id: Double = js.native
   var process: ChildProcess = js.native
   @JSName("addListener")
-  def addListener_disconnect(event: disconnect, listener: js.Function0[Unit]): this.type = js.native
+  def addListener_disconnect(event: typings.node.nodeStrings.disconnect, listener: js.Function0[Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_error(event: error, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native
   @JSName("addListener")
@@ -39,7 +38,7 @@ class Worker () extends EventEmitter {
   def destroy(signal: java.lang.String): Unit = js.native
   def disconnect(): Unit = js.native
   @JSName("emit")
-  def emit_disconnect(event: disconnect): Boolean = js.native
+  def emit_disconnect(event: typings.node.nodeStrings.disconnect): Boolean = js.native
   @JSName("emit")
   def emit_error(event: error, error: Error): Boolean = js.native
   @JSName("emit")
@@ -57,7 +56,7 @@ class Worker () extends EventEmitter {
   def kill(): Unit = js.native
   def kill(signal: java.lang.String): Unit = js.native
   @JSName("on")
-  def on_disconnect(event: disconnect, listener: js.Function0[Unit]): this.type = js.native
+  def on_disconnect(event: typings.node.nodeStrings.disconnect, listener: js.Function0[Unit]): this.type = js.native
   @JSName("on")
   def on_error(event: error, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native
   @JSName("on")
@@ -70,7 +69,7 @@ class Worker () extends EventEmitter {
   @JSName("on")
   def on_online(event: online, listener: js.Function0[Unit]): this.type = js.native
   @JSName("once")
-  def once_disconnect(event: disconnect, listener: js.Function0[Unit]): this.type = js.native
+  def once_disconnect(event: typings.node.nodeStrings.disconnect, listener: js.Function0[Unit]): this.type = js.native
   @JSName("once")
   def once_error(event: error, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native
   @JSName("once")
@@ -83,7 +82,7 @@ class Worker () extends EventEmitter {
   @JSName("once")
   def once_online(event: online, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependListener")
-  def prependListener_disconnect(event: disconnect, listener: js.Function0[Unit]): this.type = js.native
+  def prependListener_disconnect(event: typings.node.nodeStrings.disconnect, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_error(event: error, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native
   @JSName("prependListener")
@@ -96,7 +95,7 @@ class Worker () extends EventEmitter {
   @JSName("prependListener")
   def prependListener_online(event: online, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_disconnect(event: disconnect, listener: js.Function0[Unit]): this.type = js.native
+  def prependOnceListener_disconnect(event: typings.node.nodeStrings.disconnect, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_error(event: error, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native
   @JSName("prependOnceListener")

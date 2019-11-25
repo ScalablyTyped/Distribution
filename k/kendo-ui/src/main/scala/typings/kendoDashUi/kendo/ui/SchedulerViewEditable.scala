@@ -18,9 +18,9 @@ object SchedulerViewEditable {
     update: js.UndefOr[Boolean] = js.undefined
   ): SchedulerViewEditable = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(create)) __obj.updateDynamic("create")(create)
-    if (!js.isUndefined(destroy)) __obj.updateDynamic("destroy")(destroy)
-    if (!js.isUndefined(update)) __obj.updateDynamic("update")(update)
+    if (!js.isUndefined(create)) __obj.updateDynamic("create")(create.asInstanceOf[js.Any])
+    if (!js.isUndefined(destroy)) __obj.updateDynamic("destroy")(destroy.asInstanceOf[js.Any])
+    if (!js.isUndefined(update)) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchedulerViewEditable]
   }
 }

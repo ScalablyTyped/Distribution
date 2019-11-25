@@ -23,8 +23,8 @@ object HotKey {
     key: String = null,
     which: Int | Double = null
   ): HotKey = {
-    val __obj = js.Dynamic.literal(altKey = altKey, ctrlKey = ctrlKey, metaKey = metaKey, shiftKey = shiftKey)
-    if (key != null) __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (which != null) __obj.updateDynamic("which")(which.asInstanceOf[js.Any])
     __obj.asInstanceOf[HotKey]
   }

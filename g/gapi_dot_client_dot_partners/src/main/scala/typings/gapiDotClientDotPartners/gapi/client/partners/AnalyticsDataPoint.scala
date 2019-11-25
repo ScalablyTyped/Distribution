@@ -19,7 +19,7 @@ object AnalyticsDataPoint {
   def apply(eventCount: Int | Double = null, eventLocations: js.Array[LatLng] = null): AnalyticsDataPoint = {
     val __obj = js.Dynamic.literal()
     if (eventCount != null) __obj.updateDynamic("eventCount")(eventCount.asInstanceOf[js.Any])
-    if (eventLocations != null) __obj.updateDynamic("eventLocations")(eventLocations)
+    if (eventLocations != null) __obj.updateDynamic("eventLocations")(eventLocations.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyticsDataPoint]
   }
 }

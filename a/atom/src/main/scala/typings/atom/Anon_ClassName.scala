@@ -15,9 +15,9 @@ object Anon_ClassName {
   @scala.inline
   def apply(className: String = null, onDidClick: /* event */ MouseEvent => Unit = null, text: String = null): Anon_ClassName = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (onDidClick != null) __obj.updateDynamic("onDidClick")(js.Any.fromFunction1(onDidClick))
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ClassName]
   }
 }

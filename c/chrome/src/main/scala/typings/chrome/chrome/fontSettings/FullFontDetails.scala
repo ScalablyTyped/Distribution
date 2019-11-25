@@ -18,8 +18,8 @@ trait FullFontDetails extends js.Object {
 object FullFontDetails {
   @scala.inline
   def apply(fontId: String, genericFamily: String, levelOfControl: String, script: String = null): FullFontDetails = {
-    val __obj = js.Dynamic.literal(fontId = fontId, genericFamily = genericFamily, levelOfControl = levelOfControl)
-    if (script != null) __obj.updateDynamic("script")(script)
+    val __obj = js.Dynamic.literal(fontId = fontId.asInstanceOf[js.Any], genericFamily = genericFamily.asInstanceOf[js.Any], levelOfControl = levelOfControl.asInstanceOf[js.Any])
+    if (script != null) __obj.updateDynamic("script")(script.asInstanceOf[js.Any])
     __obj.asInstanceOf[FullFontDetails]
   }
 }

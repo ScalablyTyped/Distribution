@@ -75,9 +75,9 @@ object CypressRunResult {
     failures: Int | Double = null,
     message: String = null
   ): CypressRunResult = {
-    val __obj = js.Dynamic.literal(browserName = browserName, browserPath = browserPath, browserVersion = browserVersion, config = config, cypressVersion = cypressVersion, endedTestsAt = endedTestsAt, osName = osName, osVersion = osVersion, runs = runs, startedTestsAt = startedTestsAt, totalDuration = totalDuration, totalFailed = totalFailed, totalPassed = totalPassed, totalPending = totalPending, totalSkipped = totalSkipped, totalSuites = totalSuites, totalTests = totalTests)
+    val __obj = js.Dynamic.literal(browserName = browserName.asInstanceOf[js.Any], browserPath = browserPath.asInstanceOf[js.Any], browserVersion = browserVersion.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], cypressVersion = cypressVersion.asInstanceOf[js.Any], endedTestsAt = endedTestsAt.asInstanceOf[js.Any], osName = osName.asInstanceOf[js.Any], osVersion = osVersion.asInstanceOf[js.Any], runs = runs.asInstanceOf[js.Any], startedTestsAt = startedTestsAt.asInstanceOf[js.Any], totalDuration = totalDuration.asInstanceOf[js.Any], totalFailed = totalFailed.asInstanceOf[js.Any], totalPassed = totalPassed.asInstanceOf[js.Any], totalPending = totalPending.asInstanceOf[js.Any], totalSkipped = totalSkipped.asInstanceOf[js.Any], totalSuites = totalSuites.asInstanceOf[js.Any], totalTests = totalTests.asInstanceOf[js.Any])
     if (failures != null) __obj.updateDynamic("failures")(failures.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[CypressRunResult]
   }
 }

@@ -37,7 +37,7 @@ object ClassedSizeSliderBreaks {
     propertyIsEnumerable: PropertyKey => Boolean,
     size: Double
   ): ClassedSizeSliderBreaks = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), max = max, min = min, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), size = size)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), size = size.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ClassedSizeSliderBreaks]
   }

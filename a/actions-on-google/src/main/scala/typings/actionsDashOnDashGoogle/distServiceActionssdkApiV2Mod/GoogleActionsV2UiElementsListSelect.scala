@@ -29,9 +29,9 @@ object GoogleActionsV2UiElementsListSelect {
     title: String = null
   ): GoogleActionsV2UiElementsListSelect = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2UiElementsListSelect]
   }
 }

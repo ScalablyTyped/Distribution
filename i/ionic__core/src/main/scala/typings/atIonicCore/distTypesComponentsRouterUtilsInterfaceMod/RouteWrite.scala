@@ -14,8 +14,8 @@ trait RouteWrite extends js.Object {
 object RouteWrite {
   @scala.inline
   def apply(changed: Boolean, element: HTMLElement = null, markVisible: () => Unit | js.Promise[Unit] = null): RouteWrite = {
-    val __obj = js.Dynamic.literal(changed = changed)
-    if (element != null) __obj.updateDynamic("element")(element)
+    val __obj = js.Dynamic.literal(changed = changed.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
     if (markVisible != null) __obj.updateDynamic("markVisible")(js.Any.fromFunction0(markVisible))
     __obj.asInstanceOf[RouteWrite]
   }

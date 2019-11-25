@@ -13,7 +13,7 @@ object Anon_TextSnippet {
   @scala.inline
   def apply(textSnippet: String = null): Anon_TextSnippet = {
     val __obj = js.Dynamic.literal()
-    if (textSnippet != null) __obj.updateDynamic("textSnippet")(textSnippet)
+    if (textSnippet != null) __obj.updateDynamic("textSnippet")(textSnippet.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_TextSnippet]
   }
 }

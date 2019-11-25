@@ -38,7 +38,7 @@ object Consul {
     status: Status,
     watch: typings.consul.consulMod.Watch.Options => Watch
   ): Consul = {
-    val __obj = js.Dynamic.literal(acl = acl, agent = agent, catalog = catalog, event = event, health = health, kv = kv, lock = js.Any.fromFunction1(lock), session = session, status = status, watch = js.Any.fromFunction1(watch))
+    val __obj = js.Dynamic.literal(acl = acl.asInstanceOf[js.Any], agent = agent.asInstanceOf[js.Any], catalog = catalog.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], health = health.asInstanceOf[js.Any], kv = kv.asInstanceOf[js.Any], lock = js.Any.fromFunction1(lock), session = session.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], watch = js.Any.fromFunction1(watch))
   
     __obj.asInstanceOf[Consul]
   }

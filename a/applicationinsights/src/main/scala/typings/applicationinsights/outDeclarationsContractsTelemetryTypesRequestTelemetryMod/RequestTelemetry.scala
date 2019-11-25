@@ -48,12 +48,12 @@ object RequestTelemetry {
     tagOverrides: StringDictionary[String] = null,
     time: Date = null
   ): RequestTelemetry = {
-    val __obj = js.Dynamic.literal(duration = duration, name = name, resultCode = resultCode.asInstanceOf[js.Any], success = success, url = url)
-    if (contextObjects != null) __obj.updateDynamic("contextObjects")(contextObjects)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (tagOverrides != null) __obj.updateDynamic("tagOverrides")(tagOverrides)
-    if (time != null) __obj.updateDynamic("time")(time)
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], resultCode = resultCode.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (contextObjects != null) __obj.updateDynamic("contextObjects")(contextObjects.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (tagOverrides != null) __obj.updateDynamic("tagOverrides")(tagOverrides.asInstanceOf[js.Any])
+    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestTelemetry]
   }
 }

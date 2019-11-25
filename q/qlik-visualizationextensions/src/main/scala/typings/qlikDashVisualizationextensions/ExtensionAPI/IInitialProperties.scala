@@ -26,11 +26,11 @@ object IInitialProperties {
     width: Int | Double = null
   ): IInitialProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(fixed)) __obj.updateDynamic("fixed")(fixed)
-    if (!js.isUndefined(percent)) __obj.updateDynamic("percent")(percent)
-    if (qHyperCubeDef != null) __obj.updateDynamic("qHyperCubeDef")(qHyperCubeDef)
-    if (qListObjectDef != null) __obj.updateDynamic("qListObjectDef")(qListObjectDef)
-    if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode)
+    if (!js.isUndefined(fixed)) __obj.updateDynamic("fixed")(fixed.asInstanceOf[js.Any])
+    if (!js.isUndefined(percent)) __obj.updateDynamic("percent")(percent.asInstanceOf[js.Any])
+    if (qHyperCubeDef != null) __obj.updateDynamic("qHyperCubeDef")(qHyperCubeDef.asInstanceOf[js.Any])
+    if (qListObjectDef != null) __obj.updateDynamic("qListObjectDef")(qListObjectDef.asInstanceOf[js.Any])
+    if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[IInitialProperties]
   }

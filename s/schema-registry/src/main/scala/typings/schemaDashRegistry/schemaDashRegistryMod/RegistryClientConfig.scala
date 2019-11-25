@@ -21,10 +21,10 @@ object RegistryClientConfig {
     protocol: String = null,
     `type`: String = null
   ): RegistryClientConfig = {
-    val __obj = js.Dynamic.literal(host = host, port = port)
-    if (logger != null) __obj.updateDynamic("logger")(logger)
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
+    if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegistryClientConfig]
   }
 }

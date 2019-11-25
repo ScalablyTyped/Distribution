@@ -14,3 +14,20 @@ import scala.scalajs.js.annotation._
 */
 trait Status extends js.Object
 
+object Status {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def closed: typings.nodeDashZendesk.nodeDashZendeskStrings.closed = this.cast("closed")
+  @scala.inline
+  def hold: typings.nodeDashZendesk.nodeDashZendeskStrings.hold = this.cast("hold")
+  @scala.inline
+  def `new`: typings.nodeDashZendesk.nodeDashZendeskStrings.`new` = this.cast("new")
+  @scala.inline
+  def open: typings.nodeDashZendesk.nodeDashZendeskStrings.open = this.cast("open")
+  @scala.inline
+  def pending: typings.nodeDashZendesk.nodeDashZendeskStrings.pending = this.cast("pending")
+  @scala.inline
+  def solved: typings.nodeDashZendesk.nodeDashZendeskStrings.solved = this.cast("solved")
+}
+

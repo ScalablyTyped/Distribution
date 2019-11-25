@@ -18,8 +18,8 @@ object InviterCancelOptions {
     statusCode: Int | Double = null
   ): InviterCancelOptions = {
     val __obj = js.Dynamic.literal()
-    if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders)
-    if (reasonPhrase != null) __obj.updateDynamic("reasonPhrase")(reasonPhrase)
+    if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders.asInstanceOf[js.Any])
+    if (reasonPhrase != null) __obj.updateDynamic("reasonPhrase")(reasonPhrase.asInstanceOf[js.Any])
     if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[InviterCancelOptions]
   }

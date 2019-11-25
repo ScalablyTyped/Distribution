@@ -40,10 +40,10 @@ object Block {
     property: TextProperty = null
   ): Block = {
     val __obj = js.Dynamic.literal()
-    if (blockType != null) __obj.updateDynamic("blockType")(blockType)
-    if (boundingBox != null) __obj.updateDynamic("boundingBox")(boundingBox)
-    if (paragraphs != null) __obj.updateDynamic("paragraphs")(paragraphs)
-    if (property != null) __obj.updateDynamic("property")(property)
+    if (blockType != null) __obj.updateDynamic("blockType")(blockType.asInstanceOf[js.Any])
+    if (boundingBox != null) __obj.updateDynamic("boundingBox")(boundingBox.asInstanceOf[js.Any])
+    if (paragraphs != null) __obj.updateDynamic("paragraphs")(paragraphs.asInstanceOf[js.Any])
+    if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
     __obj.asInstanceOf[Block]
   }
 }

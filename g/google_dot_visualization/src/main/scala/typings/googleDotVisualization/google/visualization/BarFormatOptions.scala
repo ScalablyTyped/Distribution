@@ -53,12 +53,12 @@ object BarFormatOptions {
   ): BarFormatOptions = {
     val __obj = js.Dynamic.literal()
     if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
-    if (colorNegative != null) __obj.updateDynamic("colorNegative")(colorNegative)
-    if (colorPositive != null) __obj.updateDynamic("colorPositive")(colorPositive)
-    if (!js.isUndefined(drawZeroLine)) __obj.updateDynamic("drawZeroLine")(drawZeroLine)
+    if (colorNegative != null) __obj.updateDynamic("colorNegative")(colorNegative.asInstanceOf[js.Any])
+    if (colorPositive != null) __obj.updateDynamic("colorPositive")(colorPositive.asInstanceOf[js.Any])
+    if (!js.isUndefined(drawZeroLine)) __obj.updateDynamic("drawZeroLine")(drawZeroLine.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (!js.isUndefined(showValue)) __obj.updateDynamic("showValue")(showValue)
+    if (!js.isUndefined(showValue)) __obj.updateDynamic("showValue")(showValue.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[BarFormatOptions]
   }

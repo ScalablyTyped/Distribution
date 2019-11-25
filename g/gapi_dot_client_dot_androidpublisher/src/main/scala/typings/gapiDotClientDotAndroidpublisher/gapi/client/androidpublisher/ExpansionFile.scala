@@ -18,7 +18,7 @@ object ExpansionFile {
   @scala.inline
   def apply(fileSize: String = null, referencesVersion: Int | Double = null): ExpansionFile = {
     val __obj = js.Dynamic.literal()
-    if (fileSize != null) __obj.updateDynamic("fileSize")(fileSize)
+    if (fileSize != null) __obj.updateDynamic("fileSize")(fileSize.asInstanceOf[js.Any])
     if (referencesVersion != null) __obj.updateDynamic("referencesVersion")(referencesVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExpansionFile]
   }

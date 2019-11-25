@@ -35,9 +35,9 @@ object InitialViewPropertiesProperties {
     viewpoint: ViewpointProperties = null
   ): InitialViewPropertiesProperties = {
     val __obj = js.Dynamic.literal()
-    if (background != null) __obj.updateDynamic("background")(background)
-    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)
-    if (viewpoint != null) __obj.updateDynamic("viewpoint")(viewpoint)
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference.asInstanceOf[js.Any])
+    if (viewpoint != null) __obj.updateDynamic("viewpoint")(viewpoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitialViewPropertiesProperties]
   }
 }

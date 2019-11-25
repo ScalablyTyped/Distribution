@@ -21,7 +21,7 @@ object MathEvents {
   def apply(hover: Int | Double = null, styles: js.Any = null): MathEvents = {
     val __obj = js.Dynamic.literal()
     if (hover != null) __obj.updateDynamic("hover")(hover.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles)
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[MathEvents]
   }
 }

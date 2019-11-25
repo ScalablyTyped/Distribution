@@ -1,6 +1,7 @@
 package typings.josa
 
 import typings.josa.josaMod.Conjunction
+import typings.josa.josaMod.Josa
 import typings.josa.josaMod.Means
 import typings.josa.josaMod.Objective
 import typings.josa.josaMod.Subject
@@ -11,34 +12,54 @@ import scala.scalajs.js.annotation._
 
 object josaStrings {
   @js.native
-  sealed trait BACKSLASHuAC00 extends Subject
+  sealed trait BACKSLASHuAC00
+    extends Josa
+       with Subject
   
   @js.native
-  sealed trait BACKSLASHuACFC extends Conjunction
+  sealed trait BACKSLASHuACFC
+    extends Conjunction
+       with Josa
   
   @js.native
-  sealed trait BACKSLASHuB294 extends Topic
+  sealed trait BACKSLASHuB294
+    extends Josa
+       with Topic
   
   @js.native
-  sealed trait BACKSLASHuB85C extends Means
+  sealed trait BACKSLASHuB85C
+    extends Josa
+       with Means
   
   @js.native
-  sealed trait BACKSLASHuB97C extends Objective
+  sealed trait BACKSLASHuB97C
+    extends Josa
+       with Objective
   
   @js.native
-  sealed trait BACKSLASHuC640 extends Conjunction
+  sealed trait BACKSLASHuC640
+    extends Conjunction
+       with Josa
   
   @js.native
-  sealed trait BACKSLASHuC73CBACKSLASHuB85C extends Means
+  sealed trait BACKSLASHuC73CBACKSLASHuB85C
+    extends Josa
+       with Means
   
   @js.native
-  sealed trait BACKSLASHuC740 extends Topic
+  sealed trait BACKSLASHuC740
+    extends Josa
+       with Topic
   
   @js.native
-  sealed trait BACKSLASHuC744 extends Objective
+  sealed trait BACKSLASHuC744
+    extends Josa
+       with Objective
   
   @js.native
-  sealed trait BACKSLASHuC774 extends Subject
+  sealed trait BACKSLASHuC774
+    extends Josa
+       with Subject
   
   @scala.inline
   def BACKSLASHuAC00: BACKSLASHuAC00 = "\uAC00".asInstanceOf[BACKSLASHuAC00]

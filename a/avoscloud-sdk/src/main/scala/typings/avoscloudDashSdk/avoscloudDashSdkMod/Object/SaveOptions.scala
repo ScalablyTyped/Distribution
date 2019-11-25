@@ -26,11 +26,11 @@ object SaveOptions {
     wait: js.UndefOr[Boolean] = js.undefined
   ): SaveOptions = {
     val __obj = js.Dynamic.literal()
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
-    if (success != null) __obj.updateDynamic("success")(success)
-    if (!js.isUndefined(useMasterKey)) __obj.updateDynamic("useMasterKey")(useMasterKey)
-    if (!js.isUndefined(wait)) __obj.updateDynamic("wait")(wait)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
+    if (success != null) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
+    if (!js.isUndefined(useMasterKey)) __obj.updateDynamic("useMasterKey")(useMasterKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(wait)) __obj.updateDynamic("wait")(wait.asInstanceOf[js.Any])
     __obj.asInstanceOf[SaveOptions]
   }
 }

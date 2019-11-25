@@ -12,7 +12,7 @@ trait KeyMapOptions extends js.Object {
 object KeyMapOptions {
   @scala.inline
   def apply(action: KeyEventName, sequence: MouseTrapKeySequence): KeyMapOptions = {
-    val __obj = js.Dynamic.literal(action = action, sequence = sequence.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], sequence = sequence.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[KeyMapOptions]
   }

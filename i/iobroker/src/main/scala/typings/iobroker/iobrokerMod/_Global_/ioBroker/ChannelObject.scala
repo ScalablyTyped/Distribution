@@ -25,10 +25,10 @@ object ChannelObject {
     acl: ObjectACL = null,
     enums: Record[String, String] = null
   ): ChannelObject = {
-    val __obj = js.Dynamic.literal(_id = _id, common = common, native = native)
-    __obj.updateDynamic("type")(`type`)
-    if (acl != null) __obj.updateDynamic("acl")(acl)
-    if (enums != null) __obj.updateDynamic("enums")(enums)
+    val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (acl != null) __obj.updateDynamic("acl")(acl.asInstanceOf[js.Any])
+    if (enums != null) __obj.updateDynamic("enums")(enums.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelObject]
   }
 }

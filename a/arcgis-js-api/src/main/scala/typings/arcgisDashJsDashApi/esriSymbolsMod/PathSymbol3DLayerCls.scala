@@ -1,6 +1,5 @@
 package typings.arcgisDashJsDashApi.esriSymbolsMod
 
-import typings.arcgisDashJsDashApi.__esri.PathSymbol3DLayer
 import typings.arcgisDashJsDashApi.__esri.PathSymbol3DLayerProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +12,8 @@ import scala.scalajs.js.annotation._
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html)
   */
-class PathSymbol3DLayerCls () extends PathSymbol3DLayer {
+class PathSymbol3DLayerCls ()
+  extends typings.arcgisDashJsDashApi.__esri.PathSymbol3DLayer {
   def this(properties: PathSymbol3DLayerProperties) = this()
   /**
     * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation. See the [Using fromJSON()](https://developers.arcgis.com/javascript/latest/guide/programming-patterns/#using-fromjson) topic in the Guide for more information.

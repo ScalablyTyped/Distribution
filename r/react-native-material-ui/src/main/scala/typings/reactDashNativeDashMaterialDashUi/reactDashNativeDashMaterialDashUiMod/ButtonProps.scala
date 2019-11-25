@@ -35,17 +35,17 @@ object ButtonProps {
     testID: String = null,
     upperCase: js.UndefOr[Boolean] = js.undefined
   ): ButtonProps = {
-    val __obj = js.Dynamic.literal(text = text)
-    if (!js.isUndefined(accent)) __obj.updateDynamic("accent")(accent)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
+    if (!js.isUndefined(accent)) __obj.updateDynamic("accent")(accent.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (onLongPress != null) __obj.updateDynamic("onLongPress")(js.Any.fromFunction0(onLongPress))
     if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction0(onPress))
-    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary)
-    if (!js.isUndefined(raised)) __obj.updateDynamic("raised")(raised)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (testID != null) __obj.updateDynamic("testID")(testID)
-    if (!js.isUndefined(upperCase)) __obj.updateDynamic("upperCase")(upperCase)
+    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
+    if (!js.isUndefined(raised)) __obj.updateDynamic("raised")(raised.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (testID != null) __obj.updateDynamic("testID")(testID.asInstanceOf[js.Any])
+    if (!js.isUndefined(upperCase)) __obj.updateDynamic("upperCase")(upperCase.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonProps]
   }
 }

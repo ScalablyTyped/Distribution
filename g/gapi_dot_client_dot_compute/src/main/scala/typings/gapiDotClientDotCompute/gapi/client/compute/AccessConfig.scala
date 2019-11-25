@@ -26,10 +26,10 @@ object AccessConfig {
   @scala.inline
   def apply(kind: String = null, name: String = null, natIP: String = null, `type`: String = null): AccessConfig = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (natIP != null) __obj.updateDynamic("natIP")(natIP)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (natIP != null) __obj.updateDynamic("natIP")(natIP.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessConfig]
   }
 }

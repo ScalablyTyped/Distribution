@@ -11,7 +11,7 @@ trait Anon_Subscribe extends js.Object {
 object Anon_Subscribe {
   @scala.inline
   def apply(subscribe: js.Any): Anon_Subscribe = {
-    val __obj = js.Dynamic.literal(subscribe = subscribe)
+    val __obj = js.Dynamic.literal(subscribe = subscribe.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Subscribe]
   }

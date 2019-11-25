@@ -30,13 +30,13 @@ object Config {
     toExpPos: Int | Double = null
   ): Config = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(crypto)) __obj.updateDynamic("crypto")(crypto)
-    if (!js.isUndefined(defaults)) __obj.updateDynamic("defaults")(defaults)
+    if (!js.isUndefined(crypto)) __obj.updateDynamic("crypto")(crypto.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaults)) __obj.updateDynamic("defaults")(defaults.asInstanceOf[js.Any])
     if (maxE != null) __obj.updateDynamic("maxE")(maxE.asInstanceOf[js.Any])
     if (minE != null) __obj.updateDynamic("minE")(minE.asInstanceOf[js.Any])
-    if (modulo != null) __obj.updateDynamic("modulo")(modulo)
+    if (modulo != null) __obj.updateDynamic("modulo")(modulo.asInstanceOf[js.Any])
     if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
-    if (rounding != null) __obj.updateDynamic("rounding")(rounding)
+    if (rounding != null) __obj.updateDynamic("rounding")(rounding.asInstanceOf[js.Any])
     if (toExpNeg != null) __obj.updateDynamic("toExpNeg")(toExpNeg.asInstanceOf[js.Any])
     if (toExpPos != null) __obj.updateDynamic("toExpPos")(toExpPos.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]

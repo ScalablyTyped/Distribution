@@ -16,9 +16,9 @@ object Geolayerdata {
   @scala.inline
   def apply(common: Anon_Lang = null, geo: Anon_Boundary = null, kind: String = null): Geolayerdata = {
     val __obj = js.Dynamic.literal()
-    if (common != null) __obj.updateDynamic("common")(common)
-    if (geo != null) __obj.updateDynamic("geo")(geo)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (common != null) __obj.updateDynamic("common")(common.asInstanceOf[js.Any])
+    if (geo != null) __obj.updateDynamic("geo")(geo.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[Geolayerdata]
   }
 }

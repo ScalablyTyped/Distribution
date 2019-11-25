@@ -23,12 +23,12 @@ object JwtHeader {
     x5t: String = null,
     x5u: String = null
   ): JwtHeader = {
-    val __obj = js.Dynamic.literal(alg = alg)
-    if (jku != null) __obj.updateDynamic("jku")(jku)
-    if (kid != null) __obj.updateDynamic("kid")(kid)
-    if (typ != null) __obj.updateDynamic("typ")(typ)
-    if (x5t != null) __obj.updateDynamic("x5t")(x5t)
-    if (x5u != null) __obj.updateDynamic("x5u")(x5u)
+    val __obj = js.Dynamic.literal(alg = alg.asInstanceOf[js.Any])
+    if (jku != null) __obj.updateDynamic("jku")(jku.asInstanceOf[js.Any])
+    if (kid != null) __obj.updateDynamic("kid")(kid.asInstanceOf[js.Any])
+    if (typ != null) __obj.updateDynamic("typ")(typ.asInstanceOf[js.Any])
+    if (x5t != null) __obj.updateDynamic("x5t")(x5t.asInstanceOf[js.Any])
+    if (x5u != null) __obj.updateDynamic("x5u")(x5u.asInstanceOf[js.Any])
     __obj.asInstanceOf[JwtHeader]
   }
 }

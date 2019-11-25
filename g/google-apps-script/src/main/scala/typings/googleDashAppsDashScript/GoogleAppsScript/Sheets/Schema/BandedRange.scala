@@ -21,9 +21,9 @@ object BandedRange {
   ): BandedRange = {
     val __obj = js.Dynamic.literal()
     if (bandedRangeId != null) __obj.updateDynamic("bandedRangeId")(bandedRangeId.asInstanceOf[js.Any])
-    if (columnProperties != null) __obj.updateDynamic("columnProperties")(columnProperties)
-    if (range != null) __obj.updateDynamic("range")(range)
-    if (rowProperties != null) __obj.updateDynamic("rowProperties")(rowProperties)
+    if (columnProperties != null) __obj.updateDynamic("columnProperties")(columnProperties.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (rowProperties != null) __obj.updateDynamic("rowProperties")(rowProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[BandedRange]
   }
 }

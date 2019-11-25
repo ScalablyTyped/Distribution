@@ -22,10 +22,10 @@ object Anon_HeadersIdOptionsResourceTypeStringOptional {
     resourceType: ResourceType = null
   ): Anon_HeadersIdOptionsResourceTypeStringOptional = {
     val __obj = js.Dynamic.literal()
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType)
+    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_HeadersIdOptionsResourceTypeStringOptional]
   }
 }

@@ -14,7 +14,7 @@ trait TestAttachmentRequestModel extends js.Object {
 object TestAttachmentRequestModel {
   @scala.inline
   def apply(attachmentType: String, comment: String, fileName: String, stream: String): TestAttachmentRequestModel = {
-    val __obj = js.Dynamic.literal(attachmentType = attachmentType, comment = comment, fileName = fileName, stream = stream)
+    val __obj = js.Dynamic.literal(attachmentType = attachmentType.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], stream = stream.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TestAttachmentRequestModel]
   }

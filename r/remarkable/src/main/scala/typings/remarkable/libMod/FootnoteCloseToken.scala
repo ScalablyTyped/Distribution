@@ -20,9 +20,9 @@ object FootnoteCloseToken {
     lines: js.Tuple2[Double, Double] = null,
     subId: Int | Double = null
   ): FootnoteCloseToken = {
-    val __obj = js.Dynamic.literal(id = id, level = level)
-    __obj.updateDynamic("type")(`type`)
-    if (lines != null) __obj.updateDynamic("lines")(lines)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
     if (subId != null) __obj.updateDynamic("subId")(subId.asInstanceOf[js.Any])
     __obj.asInstanceOf[FootnoteCloseToken]
   }

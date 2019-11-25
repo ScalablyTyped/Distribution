@@ -18,7 +18,7 @@ trait BitmapTextSize extends js.Object {
 object BitmapTextSize {
   @scala.inline
   def apply(global: GlobalBitmapTextSize, local: LocalBitmapTextSize): BitmapTextSize = {
-    val __obj = js.Dynamic.literal(global = global, local = local)
+    val __obj = js.Dynamic.literal(global = global.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BitmapTextSize]
   }

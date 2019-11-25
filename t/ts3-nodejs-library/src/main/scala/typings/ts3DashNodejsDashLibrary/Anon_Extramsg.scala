@@ -21,8 +21,8 @@ object Anon_Extramsg {
     extra_msg: String = null,
     failed_permid: Int | Double = null
   ): Anon_Extramsg = {
-    val __obj = js.Dynamic.literal(id = id, message = message, msg = msg)
-    if (extra_msg != null) __obj.updateDynamic("extra_msg")(extra_msg)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], msg = msg.asInstanceOf[js.Any])
+    if (extra_msg != null) __obj.updateDynamic("extra_msg")(extra_msg.asInstanceOf[js.Any])
     if (failed_permid != null) __obj.updateDynamic("failed_permid")(failed_permid.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Extramsg]
   }

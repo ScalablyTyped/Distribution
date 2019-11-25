@@ -79,8 +79,8 @@ object ISpawnEntityComponent {
     spawn_sound: String,
     filters: MinecraftFilter = null
   ): ISpawnEntityComponent = {
-    val __obj = js.Dynamic.literal(max_wait_time = max_wait_time, min_wait_time = min_wait_time, num_to_spawn = num_to_spawn, should_leash = should_leash, single_use = single_use, spawn_entity = spawn_entity, spawn_event = spawn_event, spawn_item = spawn_item, spawn_method = spawn_method, spawn_sound = spawn_sound)
-    if (filters != null) __obj.updateDynamic("filters")(filters)
+    val __obj = js.Dynamic.literal(max_wait_time = max_wait_time.asInstanceOf[js.Any], min_wait_time = min_wait_time.asInstanceOf[js.Any], num_to_spawn = num_to_spawn.asInstanceOf[js.Any], should_leash = should_leash.asInstanceOf[js.Any], single_use = single_use.asInstanceOf[js.Any], spawn_entity = spawn_entity.asInstanceOf[js.Any], spawn_event = spawn_event.asInstanceOf[js.Any], spawn_item = spawn_item.asInstanceOf[js.Any], spawn_method = spawn_method.asInstanceOf[js.Any], spawn_sound = spawn_sound.asInstanceOf[js.Any])
+    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISpawnEntityComponent]
   }
 }

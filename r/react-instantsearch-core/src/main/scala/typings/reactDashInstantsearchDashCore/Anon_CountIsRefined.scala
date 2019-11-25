@@ -14,7 +14,7 @@ trait Anon_CountIsRefined extends js.Object {
 object Anon_CountIsRefined {
   @scala.inline
   def apply(count: Double, isRefined: Boolean, label: String, value: js.Array[String]): Anon_CountIsRefined = {
-    val __obj = js.Dynamic.literal(count = count, isRefined = isRefined, label = label, value = value)
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], isRefined = isRefined.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CountIsRefined]
   }

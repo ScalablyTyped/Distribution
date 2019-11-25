@@ -33,11 +33,11 @@ object MaskedInputProps {
     value: String | Double = null
   ): MaskedInputProps = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (mask != null) __obj.updateDynamic("mask")(mask)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
-    if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain)
+    if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaskedInputProps]

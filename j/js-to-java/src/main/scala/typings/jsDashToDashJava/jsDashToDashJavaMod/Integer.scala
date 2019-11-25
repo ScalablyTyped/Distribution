@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 object Integer extends js.Object {
   // Note: enum is keyword
   // function enum(className: string, value: string): object;
-  def apply(value: Double): js.Object = js.native
+  def apply(value: scala.Double): js.Object = js.native
 }
 

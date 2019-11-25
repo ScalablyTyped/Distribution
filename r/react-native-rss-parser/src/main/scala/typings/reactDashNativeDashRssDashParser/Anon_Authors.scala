@@ -30,7 +30,7 @@ object Anon_Authors {
     order: Maybe[String] = null,
     summary: Maybe[String] = null
   ): Anon_Authors = {
-    val __obj = js.Dynamic.literal(duration = duration, explicit = explicit, subtitle = subtitle)
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], explicit = explicit.asInstanceOf[js.Any], subtitle = subtitle.asInstanceOf[js.Any])
     if (authors != null) __obj.updateDynamic("authors")(authors.asInstanceOf[js.Any])
     if (block != null) __obj.updateDynamic("block")(block.asInstanceOf[js.Any])
     if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])

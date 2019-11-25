@@ -12,8 +12,8 @@ trait ExcelProtection extends js.Object {
 object ExcelProtection {
   @scala.inline
   def apply(hideFormula: Boolean, `protected`: Boolean): ExcelProtection = {
-    val __obj = js.Dynamic.literal(hideFormula = hideFormula)
-    __obj.updateDynamic("protected")(`protected`)
+    val __obj = js.Dynamic.literal(hideFormula = hideFormula.asInstanceOf[js.Any])
+    __obj.updateDynamic("protected")(`protected`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExcelProtection]
   }
 }

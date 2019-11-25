@@ -14,8 +14,8 @@ object Options {
   @scala.inline
   def apply(condition: Condition = null, kinetic: typings.ol.kineticMod.default = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (condition != null) __obj.updateDynamic("condition")(condition)
-    if (kinetic != null) __obj.updateDynamic("kinetic")(kinetic)
+    if (condition != null) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
+    if (kinetic != null) __obj.updateDynamic("kinetic")(kinetic.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

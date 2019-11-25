@@ -41,12 +41,12 @@ object EntryMetadata {
     thumbnail: String = null
   ): EntryMetadata = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isDirectory)) __obj.updateDynamic("isDirectory")(isDirectory)
-    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType)
-    if (modificationTime != null) __obj.updateDynamic("modificationTime")(modificationTime)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(isDirectory)) __obj.updateDynamic("isDirectory")(isDirectory.asInstanceOf[js.Any])
+    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
+    if (modificationTime != null) __obj.updateDynamic("modificationTime")(modificationTime.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (thumbnail != null) __obj.updateDynamic("thumbnail")(thumbnail)
+    if (thumbnail != null) __obj.updateDynamic("thumbnail")(thumbnail.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntryMetadata]
   }
 }

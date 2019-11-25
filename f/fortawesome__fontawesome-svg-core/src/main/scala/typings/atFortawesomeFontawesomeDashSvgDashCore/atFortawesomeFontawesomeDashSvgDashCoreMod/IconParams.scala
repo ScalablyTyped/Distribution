@@ -23,13 +23,13 @@ object IconParams {
     transform: Transform = null
   ): IconParams = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
     if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (mask != null) __obj.updateDynamic("mask")(mask)
-    if (styles != null) __obj.updateDynamic("styles")(styles)
+    if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (transform != null) __obj.updateDynamic("transform")(transform)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
     __obj.asInstanceOf[IconParams]
   }
 }

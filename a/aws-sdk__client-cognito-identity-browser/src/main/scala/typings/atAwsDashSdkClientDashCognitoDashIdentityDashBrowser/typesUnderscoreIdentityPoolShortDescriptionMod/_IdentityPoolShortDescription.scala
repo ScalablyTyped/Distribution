@@ -19,8 +19,8 @@ object _IdentityPoolShortDescription {
   @scala.inline
   def apply(IdentityPoolId: String = null, IdentityPoolName: String = null): _IdentityPoolShortDescription = {
     val __obj = js.Dynamic.literal()
-    if (IdentityPoolId != null) __obj.updateDynamic("IdentityPoolId")(IdentityPoolId)
-    if (IdentityPoolName != null) __obj.updateDynamic("IdentityPoolName")(IdentityPoolName)
+    if (IdentityPoolId != null) __obj.updateDynamic("IdentityPoolId")(IdentityPoolId.asInstanceOf[js.Any])
+    if (IdentityPoolName != null) __obj.updateDynamic("IdentityPoolName")(IdentityPoolName.asInstanceOf[js.Any])
     __obj.asInstanceOf[_IdentityPoolShortDescription]
   }
 }

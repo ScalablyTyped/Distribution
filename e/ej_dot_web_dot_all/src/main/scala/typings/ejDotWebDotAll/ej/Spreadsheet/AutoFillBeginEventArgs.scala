@@ -44,14 +44,14 @@ object AutoFillBeginEventArgs {
     `type`: String = null
   ): AutoFillBeginEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (dataRange != null) __obj.updateDynamic("dataRange")(dataRange)
-    if (direction != null) __obj.updateDynamic("direction")(direction)
-    if (fillRange != null) __obj.updateDynamic("fillRange")(fillRange)
-    if (fillType != null) __obj.updateDynamic("fillType")(fillType)
-    if (model != null) __obj.updateDynamic("model")(model)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (dataRange != null) __obj.updateDynamic("dataRange")(dataRange.asInstanceOf[js.Any])
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    if (fillRange != null) __obj.updateDynamic("fillRange")(fillRange.asInstanceOf[js.Any])
+    if (fillType != null) __obj.updateDynamic("fillType")(fillType.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (sheetIdx != null) __obj.updateDynamic("sheetIdx")(sheetIdx.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoFillBeginEventArgs]
   }
 }

@@ -146,12 +146,12 @@ object TimeSliderViewModelProperties {
     view: MapViewProperties | SceneViewProperties = null
   ): TimeSliderViewModelProperties = {
     val __obj = js.Dynamic.literal()
-    if (fullTimeExtent != null) __obj.updateDynamic("fullTimeExtent")(fullTimeExtent)
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
+    if (fullTimeExtent != null) __obj.updateDynamic("fullTimeExtent")(fullTimeExtent.asInstanceOf[js.Any])
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (playRate != null) __obj.updateDynamic("playRate")(playRate.asInstanceOf[js.Any])
     if (stops != null) __obj.updateDynamic("stops")(stops.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeSliderViewModelProperties]
   }

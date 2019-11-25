@@ -13,8 +13,8 @@ object DialogMessages {
   @scala.inline
   def apply(close: String = null, promptInput: String = null): DialogMessages = {
     val __obj = js.Dynamic.literal()
-    if (close != null) __obj.updateDynamic("close")(close)
-    if (promptInput != null) __obj.updateDynamic("promptInput")(promptInput)
+    if (close != null) __obj.updateDynamic("close")(close.asInstanceOf[js.Any])
+    if (promptInput != null) __obj.updateDynamic("promptInput")(promptInput.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogMessages]
   }
 }

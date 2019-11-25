@@ -39,17 +39,17 @@ object ResolvedDateTimeFormatOptions {
     weekday: java.lang.String = null,
     year: java.lang.String = null
   ): ResolvedDateTimeFormatOptions = {
-    val __obj = js.Dynamic.literal(calendar = calendar, locale = locale, numberingSystem = numberingSystem, timeZone = timeZone)
-    if (day != null) __obj.updateDynamic("day")(day)
-    if (era != null) __obj.updateDynamic("era")(era)
-    if (hour != null) __obj.updateDynamic("hour")(hour)
-    if (!js.isUndefined(hour12)) __obj.updateDynamic("hour12")(hour12)
-    if (minute != null) __obj.updateDynamic("minute")(minute)
-    if (month != null) __obj.updateDynamic("month")(month)
-    if (second != null) __obj.updateDynamic("second")(second)
-    if (timeZoneName != null) __obj.updateDynamic("timeZoneName")(timeZoneName)
-    if (weekday != null) __obj.updateDynamic("weekday")(weekday)
-    if (year != null) __obj.updateDynamic("year")(year)
+    val __obj = js.Dynamic.literal(calendar = calendar.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], numberingSystem = numberingSystem.asInstanceOf[js.Any], timeZone = timeZone.asInstanceOf[js.Any])
+    if (day != null) __obj.updateDynamic("day")(day.asInstanceOf[js.Any])
+    if (era != null) __obj.updateDynamic("era")(era.asInstanceOf[js.Any])
+    if (hour != null) __obj.updateDynamic("hour")(hour.asInstanceOf[js.Any])
+    if (!js.isUndefined(hour12)) __obj.updateDynamic("hour12")(hour12.asInstanceOf[js.Any])
+    if (minute != null) __obj.updateDynamic("minute")(minute.asInstanceOf[js.Any])
+    if (month != null) __obj.updateDynamic("month")(month.asInstanceOf[js.Any])
+    if (second != null) __obj.updateDynamic("second")(second.asInstanceOf[js.Any])
+    if (timeZoneName != null) __obj.updateDynamic("timeZoneName")(timeZoneName.asInstanceOf[js.Any])
+    if (weekday != null) __obj.updateDynamic("weekday")(weekday.asInstanceOf[js.Any])
+    if (year != null) __obj.updateDynamic("year")(year.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolvedDateTimeFormatOptions]
   }
 }

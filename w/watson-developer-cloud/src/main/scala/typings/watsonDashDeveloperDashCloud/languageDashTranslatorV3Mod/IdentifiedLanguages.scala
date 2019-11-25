@@ -13,7 +13,7 @@ trait IdentifiedLanguages extends js.Object {
 object IdentifiedLanguages {
   @scala.inline
   def apply(languages: js.Array[IdentifiedLanguage]): IdentifiedLanguages = {
-    val __obj = js.Dynamic.literal(languages = languages)
+    val __obj = js.Dynamic.literal(languages = languages.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IdentifiedLanguages]
   }

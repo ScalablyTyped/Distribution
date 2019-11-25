@@ -24,10 +24,10 @@ object Anon_Issue {
     seriesId: String = null
   ): Anon_Issue = {
     val __obj = js.Dynamic.literal()
-    if (issue != null) __obj.updateDynamic("issue")(issue)
+    if (issue != null) __obj.updateDynamic("issue")(issue.asInstanceOf[js.Any])
     if (orderNumber != null) __obj.updateDynamic("orderNumber")(orderNumber.asInstanceOf[js.Any])
-    if (seriesBookType != null) __obj.updateDynamic("seriesBookType")(seriesBookType)
-    if (seriesId != null) __obj.updateDynamic("seriesId")(seriesId)
+    if (seriesBookType != null) __obj.updateDynamic("seriesBookType")(seriesBookType.asInstanceOf[js.Any])
+    if (seriesId != null) __obj.updateDynamic("seriesId")(seriesId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Issue]
   }
 }

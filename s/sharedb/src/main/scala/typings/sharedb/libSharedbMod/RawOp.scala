@@ -17,7 +17,7 @@ trait RawOp extends js.Object {
 object RawOp {
   @scala.inline
   def apply(c: String, d: String, m: js.Any, op: js.Array[Op], seq: Double, src: String, v: Double): RawOp = {
-    val __obj = js.Dynamic.literal(c = c, d = d, m = m, op = op, seq = seq, src = src, v = v)
+    val __obj = js.Dynamic.literal(c = c.asInstanceOf[js.Any], d = d.asInstanceOf[js.Any], m = m.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], seq = seq.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RawOp]
   }

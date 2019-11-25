@@ -12,8 +12,8 @@ trait StateSaved extends js.Object {
 object StateSaved {
   @scala.inline
   def apply(pageId: String, extra: js.Any = null): StateSaved = {
-    val __obj = js.Dynamic.literal(pageId = pageId)
-    if (extra != null) __obj.updateDynamic("extra")(extra)
+    val __obj = js.Dynamic.literal(pageId = pageId.asInstanceOf[js.Any])
+    if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
     __obj.asInstanceOf[StateSaved]
   }
 }

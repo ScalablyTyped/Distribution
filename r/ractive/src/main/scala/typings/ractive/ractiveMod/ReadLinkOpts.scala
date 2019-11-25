@@ -13,7 +13,7 @@ object ReadLinkOpts {
   @scala.inline
   def apply(canonical: js.UndefOr[Boolean] = js.undefined): ReadLinkOpts = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(canonical)) __obj.updateDynamic("canonical")(canonical)
+    if (!js.isUndefined(canonical)) __obj.updateDynamic("canonical")(canonical.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadLinkOpts]
   }
 }

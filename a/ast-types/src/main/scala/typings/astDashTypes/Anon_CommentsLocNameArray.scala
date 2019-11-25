@@ -23,8 +23,8 @@ object Anon_CommentsLocNameArray {
     loc: SourceLocationKind = null
   ): Anon_CommentsLocNameArray = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CommentsLocNameArray]
   }
 }

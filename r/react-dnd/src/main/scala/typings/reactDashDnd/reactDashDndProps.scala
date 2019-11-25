@@ -5,8 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait reactDashDndProps {
-  @scala.inline
-  def DndProviderProps: typings.reactDashDnd.libCommonDndProviderMod.DndProviderProps.type = typings.reactDashDnd.libCommonDndProviderMod.DndProviderProps
   type DndProviderProps[BackendContext, BackendOptions] = typings.reactDashDnd.libCommonDndProviderMod.DndProviderProps[BackendContext, BackendOptions]
   @scala.inline
   def DragPreviewImageProps: typings.reactDashDnd.libCommonDragPreviewImageMod.DragPreviewImageProps.type = typings.reactDashDnd.libCommonDragPreviewImageMod.DragPreviewImageProps

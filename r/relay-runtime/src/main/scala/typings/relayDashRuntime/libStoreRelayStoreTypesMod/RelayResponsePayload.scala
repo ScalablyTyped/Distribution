@@ -25,12 +25,12 @@ object RelayResponsePayload {
     incrementalPlaceholders: js.Array[IncrementalDataPlaceholder] = null,
     moduleImportPayloads: js.Array[ModuleImportPayload] = null
   ): RelayResponsePayload = {
-    val __obj = js.Dynamic.literal(source = source)
-    if (connectionEvents != null) __obj.updateDynamic("connectionEvents")(connectionEvents)
-    if (errors != null) __obj.updateDynamic("errors")(errors)
-    if (fieldPayloads != null) __obj.updateDynamic("fieldPayloads")(fieldPayloads)
-    if (incrementalPlaceholders != null) __obj.updateDynamic("incrementalPlaceholders")(incrementalPlaceholders)
-    if (moduleImportPayloads != null) __obj.updateDynamic("moduleImportPayloads")(moduleImportPayloads)
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
+    if (connectionEvents != null) __obj.updateDynamic("connectionEvents")(connectionEvents.asInstanceOf[js.Any])
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
+    if (fieldPayloads != null) __obj.updateDynamic("fieldPayloads")(fieldPayloads.asInstanceOf[js.Any])
+    if (incrementalPlaceholders != null) __obj.updateDynamic("incrementalPlaceholders")(incrementalPlaceholders.asInstanceOf[js.Any])
+    if (moduleImportPayloads != null) __obj.updateDynamic("moduleImportPayloads")(moduleImportPayloads.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelayResponsePayload]
   }
 }

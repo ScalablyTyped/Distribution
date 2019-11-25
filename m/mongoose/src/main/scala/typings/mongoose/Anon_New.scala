@@ -14,8 +14,8 @@ trait Anon_New extends js.Object {
 object Anon_New {
   @scala.inline
   def apply(`new`: `true`, rawResult: `true`, upsert: `true`): Anon_New = {
-    val __obj = js.Dynamic.literal(rawResult = rawResult, upsert = upsert)
-    __obj.updateDynamic("new")(`new`)
+    val __obj = js.Dynamic.literal(rawResult = rawResult.asInstanceOf[js.Any], upsert = upsert.asInstanceOf[js.Any])
+    __obj.updateDynamic("new")(`new`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_New]
   }
 }

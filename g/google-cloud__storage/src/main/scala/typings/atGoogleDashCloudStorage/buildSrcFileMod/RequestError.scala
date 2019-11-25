@@ -19,10 +19,10 @@ object RequestError {
     errors: js.Array[Error] = null,
     stack: String = null
   ): RequestError = {
-    val __obj = js.Dynamic.literal(message = message, name = name)
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (errors != null) __obj.updateDynamic("errors")(errors)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestError]
   }
 }

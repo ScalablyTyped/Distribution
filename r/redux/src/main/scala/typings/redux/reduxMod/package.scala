@@ -9,7 +9,7 @@ package object reduxMod {
 
   type ActionCreator[A] = js.Function1[/* repeated */ js.Any, A]
   type ActionCreatorsMapObject[A] = StringDictionary[ActionCreator[A]]
-  type DeepPartial[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type DeepPartial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]:? T[K] extends object? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias redux.redux.DeepPartial<T[K]> * / object : T[K]}
     */ typings.redux.reduxStrings.DeepPartial with js.Any
   type Dispatch[A /* <: Action[_] */] = js.Function1[/* action */ A, A]
@@ -23,7 +23,7 @@ package object reduxMod {
     js.Function1[/* next */ Dispatch[AnyAction], js.Function1[/* action */ js.Any, js.Any]]
   ]
   type Reducer[S, A /* <: Action[_] */] = js.Function2[/* state */ js.UndefOr[S], /* action */ A, S]
-  type ReducersMapObject[S, A /* <: Action[_] */] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type ReducersMapObject[S, A /* <: Action[_] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof S ]: redux.redux.Reducer<S[K], A>}
     */ typings.redux.reduxStrings.ReducersMapObject with S
   type StoreEnhancer[Ext, StateExt] = js.Function1[

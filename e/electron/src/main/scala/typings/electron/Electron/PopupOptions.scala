@@ -40,7 +40,7 @@ object PopupOptions {
     val __obj = js.Dynamic.literal()
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction0(callback))
     if (positioningItem != null) __obj.updateDynamic("positioningItem")(positioningItem.asInstanceOf[js.Any])
-    if (window != null) __obj.updateDynamic("window")(window)
+    if (window != null) __obj.updateDynamic("window")(window.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopupOptions]

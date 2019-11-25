@@ -24,9 +24,9 @@ object IPostgresData {
     error: Error = null,
     result: IPostgresResult = null
   ): IPostgresData = {
-    val __obj = js.Dynamic.literal(database = database, duration = duration, query = query)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (result != null) __obj.updateDynamic("result")(result)
+    val __obj = js.Dynamic.literal(database = database.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPostgresData]
   }
 }

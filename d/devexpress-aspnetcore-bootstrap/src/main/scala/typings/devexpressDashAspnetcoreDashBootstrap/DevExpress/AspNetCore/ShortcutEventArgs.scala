@@ -13,7 +13,7 @@ trait ShortcutEventArgs extends EventArgs {
 object ShortcutEventArgs {
   @scala.inline
   def apply(commandName: String, handled: Boolean, htmlEvent: js.Object, sender: Control): ShortcutEventArgs = {
-    val __obj = js.Dynamic.literal(commandName = commandName, handled = handled, htmlEvent = htmlEvent, sender = sender)
+    val __obj = js.Dynamic.literal(commandName = commandName.asInstanceOf[js.Any], handled = handled.asInstanceOf[js.Any], htmlEvent = htmlEvent.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ShortcutEventArgs]
   }

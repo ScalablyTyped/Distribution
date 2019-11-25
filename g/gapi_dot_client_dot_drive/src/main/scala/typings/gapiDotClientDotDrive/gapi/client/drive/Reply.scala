@@ -46,15 +46,15 @@ object Reply {
     modifiedTime: String = null
   ): Reply = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action)
-    if (author != null) __obj.updateDynamic("author")(author)
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (createdTime != null) __obj.updateDynamic("createdTime")(createdTime)
-    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted)
-    if (htmlContent != null) __obj.updateDynamic("htmlContent")(htmlContent)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (modifiedTime != null) __obj.updateDynamic("modifiedTime")(modifiedTime)
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (createdTime != null) __obj.updateDynamic("createdTime")(createdTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.asInstanceOf[js.Any])
+    if (htmlContent != null) __obj.updateDynamic("htmlContent")(htmlContent.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (modifiedTime != null) __obj.updateDynamic("modifiedTime")(modifiedTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[Reply]
   }
 }

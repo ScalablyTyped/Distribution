@@ -15,10 +15,10 @@ trait IEnvelope[T] extends js.Object {
 object IEnvelope {
   @scala.inline
   def apply[T](topic: String, channel: String = null, data: T = null, timeStamp: String = null): IEnvelope[T] = {
-    val __obj = js.Dynamic.literal(topic = topic)
-    if (channel != null) __obj.updateDynamic("channel")(channel)
+    val __obj = js.Dynamic.literal(topic = topic.asInstanceOf[js.Any])
+    if (channel != null) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (timeStamp != null) __obj.updateDynamic("timeStamp")(timeStamp)
+    if (timeStamp != null) __obj.updateDynamic("timeStamp")(timeStamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEnvelope[T]]
   }
 }

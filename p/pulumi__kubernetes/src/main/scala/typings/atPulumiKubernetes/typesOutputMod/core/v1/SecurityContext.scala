@@ -87,7 +87,7 @@ object SecurityContext {
     seLinuxOptions: SELinuxOptions,
     windowsOptions: WindowsSecurityContextOptions
   ): SecurityContext = {
-    val __obj = js.Dynamic.literal(allowPrivilegeEscalation = allowPrivilegeEscalation, capabilities = capabilities, privileged = privileged, procMount = procMount, readOnlyRootFilesystem = readOnlyRootFilesystem, runAsGroup = runAsGroup, runAsNonRoot = runAsNonRoot, runAsUser = runAsUser, seLinuxOptions = seLinuxOptions, windowsOptions = windowsOptions)
+    val __obj = js.Dynamic.literal(allowPrivilegeEscalation = allowPrivilegeEscalation.asInstanceOf[js.Any], capabilities = capabilities.asInstanceOf[js.Any], privileged = privileged.asInstanceOf[js.Any], procMount = procMount.asInstanceOf[js.Any], readOnlyRootFilesystem = readOnlyRootFilesystem.asInstanceOf[js.Any], runAsGroup = runAsGroup.asInstanceOf[js.Any], runAsNonRoot = runAsNonRoot.asInstanceOf[js.Any], runAsUser = runAsUser.asInstanceOf[js.Any], seLinuxOptions = seLinuxOptions.asInstanceOf[js.Any], windowsOptions = windowsOptions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SecurityContext]
   }

@@ -12,7 +12,7 @@ trait Anon_Appearance extends js.Object {
 object Anon_Appearance {
   @scala.inline
   def apply(appearance: String, font: String): Anon_Appearance = {
-    val __obj = js.Dynamic.literal(appearance = appearance, font = font)
+    val __obj = js.Dynamic.literal(appearance = appearance.asInstanceOf[js.Any], font = font.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Appearance]
   }

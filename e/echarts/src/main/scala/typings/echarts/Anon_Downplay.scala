@@ -108,11 +108,11 @@ object Anon_Downplay {
     label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance = null
   ): Anon_Downplay = {
     val __obj = js.Dynamic.literal()
-    if (downplay != null) __obj.updateDynamic("downplay")(downplay)
-    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis)
-    if (highlight != null) __obj.updateDynamic("highlight")(highlight)
-    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
-    if (label != null) __obj.updateDynamic("label")(label)
+    if (downplay != null) __obj.updateDynamic("downplay")(downplay.asInstanceOf[js.Any])
+    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis.asInstanceOf[js.Any])
+    if (highlight != null) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Downplay]
   }
 }

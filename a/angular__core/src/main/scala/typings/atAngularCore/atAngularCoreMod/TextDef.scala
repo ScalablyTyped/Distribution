@@ -11,7 +11,7 @@ trait TextDef extends js.Object {
 object TextDef {
   @scala.inline
   def apply(prefix: String): TextDef = {
-    val __obj = js.Dynamic.literal(prefix = prefix)
+    val __obj = js.Dynamic.literal(prefix = prefix.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TextDef]
   }

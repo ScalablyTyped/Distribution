@@ -36,7 +36,7 @@ object EventMap {
     touchend: Event[touchend, LabelsLayerEvent[I]],
     touchstart: Event[touchstart, LabelsLayerEvent[I]]
   ): EventMap[I] = {
-    val __obj = js.Dynamic.literal(click = click, mousedown = mousedown, mousemove = mousemove, mouseout = mouseout, mouseover = mouseover, mouseup = mouseup, touchend = touchend, touchstart = touchstart)
+    val __obj = js.Dynamic.literal(click = click.asInstanceOf[js.Any], mousedown = mousedown.asInstanceOf[js.Any], mousemove = mousemove.asInstanceOf[js.Any], mouseout = mouseout.asInstanceOf[js.Any], mouseover = mouseover.asInstanceOf[js.Any], mouseup = mouseup.asInstanceOf[js.Any], touchend = touchend.asInstanceOf[js.Any], touchstart = touchstart.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EventMap[I]]
   }

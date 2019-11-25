@@ -14,7 +14,7 @@ trait ResourceTextEdit extends js.Object {
 object ResourceTextEdit {
   @scala.inline
   def apply(edits: js.Array[TextEdit], resource: Uri, modelVersionId: Int | Double = null): ResourceTextEdit = {
-    val __obj = js.Dynamic.literal(edits = edits, resource = resource)
+    val __obj = js.Dynamic.literal(edits = edits.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     if (modelVersionId != null) __obj.updateDynamic("modelVersionId")(modelVersionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceTextEdit]
   }

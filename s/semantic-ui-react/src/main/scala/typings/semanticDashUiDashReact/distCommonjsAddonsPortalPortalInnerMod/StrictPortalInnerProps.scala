@@ -41,7 +41,7 @@ object StrictPortalInnerProps {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
-    if (mountNode != null) __obj.updateDynamic("mountNode")(mountNode)
+    if (mountNode != null) __obj.updateDynamic("mountNode")(mountNode.asInstanceOf[js.Any])
     if (onMount != null) __obj.updateDynamic("onMount")(js.Any.fromFunction2(onMount))
     if (onUnmount != null) __obj.updateDynamic("onUnmount")(js.Any.fromFunction2(onUnmount))
     __obj.asInstanceOf[StrictPortalInnerProps]

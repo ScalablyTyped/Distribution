@@ -128,7 +128,7 @@ trait ojTreemap_[K, D] extends dvtBaseComponent[ojTreemapSettableProperties[K, D
   var onHoverBehaviorDelayChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
   var onIsolatedNodeChanged: (js.Function1[
     /* event */ JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojtreemap.ojTreemap<K, D>['isolatedNode'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojtreemap.ojTreemap<K, D>['isolatedNode'] */ js.Any
     ], 
     _
   ]) | Null = js.native
@@ -143,7 +143,7 @@ trait ojTreemap_[K, D] extends dvtBaseComponent[ojTreemapSettableProperties[K, D
   var onOjDrill: (js.Function1[/* event */ ojDrill, _]) | Null = js.native
   var onRootNodeChanged: (js.Function1[
     /* event */ JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojtreemap.ojTreemap<K, D>['rootNode'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojtreemap.ojTreemap<K, D>['rootNode'] */ js.Any
     ], 
     _
   ]) | Null = js.native
@@ -224,7 +224,7 @@ trait ojTreemap_[K, D] extends dvtBaseComponent[ojTreemapSettableProperties[K, D
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojtreemap.ojTreemap<K, D>['isolatedNode'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojtreemap.ojTreemap<K, D>['isolatedNode'] */ js.Any
       ], 
       _
     ]
@@ -234,7 +234,7 @@ trait ojTreemap_[K, D] extends dvtBaseComponent[ojTreemapSettableProperties[K, D
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojtreemap.ojTreemap<K, D>['isolatedNode'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojtreemap.ojTreemap<K, D>['isolatedNode'] */ js.Any
       ], 
       _
     ],
@@ -271,7 +271,7 @@ trait ojTreemap_[K, D] extends dvtBaseComponent[ojTreemapSettableProperties[K, D
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojtreemap.ojTreemap<K, D>['rootNode'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojtreemap.ojTreemap<K, D>['rootNode'] */ js.Any
       ], 
       _
     ]
@@ -281,7 +281,7 @@ trait ojTreemap_[K, D] extends dvtBaseComponent[ojTreemapSettableProperties[K, D
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojtreemap.ojTreemap<K, D>['rootNode'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojtreemap.ojTreemap<K, D>['rootNode'] */ js.Any
       ], 
       _
     ],
@@ -547,7 +547,7 @@ trait ojTreemap_[K, D] extends dvtBaseComponent[ojTreemapSettableProperties[K, D
   @JSName("getProperty")
   def getProperty_hoverBehaviorDelay(property: hoverBehaviorDelay): Double = js.native
   @JSName("getProperty")
-  def getProperty_isolatedNode(property: isolatedNode): /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojtreemap.ojTreemap<K, D>['isolatedNode'] */ js.Any = js.native
+  def getProperty_isolatedNode(property: isolatedNode): /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojtreemap.ojTreemap<K, D>['isolatedNode'] */ js.Any = js.native
   @JSName("getProperty")
   def getProperty_layout(property: layout): sliceAndDiceHorizontal | sliceAndDiceVertical | squarified = js.native
   @JSName("getProperty")
@@ -557,7 +557,7 @@ trait ojTreemap_[K, D] extends dvtBaseComponent[ojTreemapSettableProperties[K, D
   @JSName("getProperty")
   def getProperty_nodeSeparators(property: nodeSeparators): bevels | gaps = js.native
   @JSName("getProperty")
-  def getProperty_rootNode(property: rootNode): /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojtreemap.ojTreemap<K, D>['rootNode'] */ js.Any = js.native
+  def getProperty_rootNode(property: rootNode): /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojtreemap.ojTreemap<K, D>['rootNode'] */ js.Any = js.native
   @JSName("getProperty")
   def getProperty_selection(property: selection): js.Array[_] = js.native
   @JSName("getProperty")

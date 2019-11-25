@@ -13,8 +13,8 @@ trait LocationChangedAction extends RouterActions {
 object LocationChangedAction {
   @scala.inline
   def apply(payload: Location, `type`: ROUTER_LOCATION_CHANGED): LocationChangedAction = {
-    val __obj = js.Dynamic.literal(payload = payload)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationChangedAction]
   }
 }

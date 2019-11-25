@@ -48,10 +48,10 @@ object BindToStateOptions {
     queries: js.Object = null,
     `then`: () => Unit = null
   ): BindToStateOptions = {
-    val __obj = js.Dynamic.literal(context = context, state = state)
-    if (!js.isUndefined(asArray)) __obj.updateDynamic("asArray")(asArray)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+    if (!js.isUndefined(asArray)) __obj.updateDynamic("asArray")(asArray.asInstanceOf[js.Any])
     if (onFailure != null) __obj.updateDynamic("onFailure")(js.Any.fromFunction0(onFailure))
-    if (queries != null) __obj.updateDynamic("queries")(queries)
+    if (queries != null) __obj.updateDynamic("queries")(queries.asInstanceOf[js.Any])
     if (`then` != null) __obj.updateDynamic("then")(js.Any.fromFunction0(`then`))
     __obj.asInstanceOf[BindToStateOptions]
   }

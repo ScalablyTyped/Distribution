@@ -14,7 +14,7 @@ trait AtlasInfo extends js.Object {
 object AtlasInfo {
   @scala.inline
   def apply(image: HTMLCanvasElement, offsetX: Double, offsetY: Double): AtlasInfo = {
-    val __obj = js.Dynamic.literal(image = image, offsetX = offsetX, offsetY = offsetY)
+    val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AtlasInfo]
   }

@@ -47,13 +47,13 @@ object TypicalBasedOnEventUIParam {
     supportingCalculations: js.Any = null
   ): TypicalBasedOnEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (basedOn != null) __obj.updateDynamic("basedOn")(basedOn)
-    if (chart != null) __obj.updateDynamic("chart")(chart)
-    if (count != null) __obj.updateDynamic("count")(count)
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (series != null) __obj.updateDynamic("series")(series)
-    if (supportingCalculations != null) __obj.updateDynamic("supportingCalculations")(supportingCalculations)
+    if (basedOn != null) __obj.updateDynamic("basedOn")(basedOn.asInstanceOf[js.Any])
+    if (chart != null) __obj.updateDynamic("chart")(chart.asInstanceOf[js.Any])
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
+    if (supportingCalculations != null) __obj.updateDynamic("supportingCalculations")(supportingCalculations.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypicalBasedOnEventUIParam]
   }
 }

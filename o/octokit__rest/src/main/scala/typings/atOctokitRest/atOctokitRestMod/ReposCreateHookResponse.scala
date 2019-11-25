@@ -35,8 +35,8 @@ object ReposCreateHookResponse {
     updated_at: String,
     url: String
   ): ReposCreateHookResponse = {
-    val __obj = js.Dynamic.literal(active = active, config = config, created_at = created_at, events = events, id = id, last_response = last_response, name = name, ping_url = ping_url, test_url = test_url, updated_at = updated_at, url = url)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], last_response = last_response.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], ping_url = ping_url.asInstanceOf[js.Any], test_url = test_url.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposCreateHookResponse]
   }
 }

@@ -15,9 +15,9 @@ object KnexAdaptorOptions {
   @scala.inline
   def apply(knexOptions: Config = null, listAdapterClass: js.Any = null, schemaName: String = null): KnexAdaptorOptions = {
     val __obj = js.Dynamic.literal()
-    if (knexOptions != null) __obj.updateDynamic("knexOptions")(knexOptions)
-    if (listAdapterClass != null) __obj.updateDynamic("listAdapterClass")(listAdapterClass)
-    if (schemaName != null) __obj.updateDynamic("schemaName")(schemaName)
+    if (knexOptions != null) __obj.updateDynamic("knexOptions")(knexOptions.asInstanceOf[js.Any])
+    if (listAdapterClass != null) __obj.updateDynamic("listAdapterClass")(listAdapterClass.asInstanceOf[js.Any])
+    if (schemaName != null) __obj.updateDynamic("schemaName")(schemaName.asInstanceOf[js.Any])
     __obj.asInstanceOf[KnexAdaptorOptions]
   }
 }

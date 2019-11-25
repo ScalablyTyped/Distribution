@@ -22,8 +22,8 @@ trait GenerateRandomOutput extends OutputTypesUnion {
 object GenerateRandomOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, Plaintext: Uint8Array = null): GenerateRandomOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (Plaintext != null) __obj.updateDynamic("Plaintext")(Plaintext)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (Plaintext != null) __obj.updateDynamic("Plaintext")(Plaintext.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenerateRandomOutput]
   }
 }

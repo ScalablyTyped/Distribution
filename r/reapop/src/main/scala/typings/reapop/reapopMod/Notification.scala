@@ -38,19 +38,19 @@ object Notification {
     title: String = null
   ): Notification = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowHTML)) __obj.updateDynamic("allowHTML")(allowHTML)
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons)
-    if (!js.isUndefined(closeButton)) __obj.updateDynamic("closeButton")(closeButton)
+    if (!js.isUndefined(allowHTML)) __obj.updateDynamic("allowHTML")(allowHTML.asInstanceOf[js.Any])
+    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeButton)) __obj.updateDynamic("closeButton")(closeButton.asInstanceOf[js.Any])
     if (dismissAfter != null) __obj.updateDynamic("dismissAfter")(dismissAfter.asInstanceOf[js.Any])
-    if (!js.isUndefined(dismissible)) __obj.updateDynamic("dismissible")(dismissible)
+    if (!js.isUndefined(dismissible)) __obj.updateDynamic("dismissible")(dismissible.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (message != null) __obj.updateDynamic("message")(message)
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (onAdd != null) __obj.updateDynamic("onAdd")(js.Any.fromFunction0(onAdd))
     if (onRemove != null) __obj.updateDynamic("onRemove")(js.Any.fromFunction0(onRemove))
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Notification]
   }
 }

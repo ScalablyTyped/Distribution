@@ -58,15 +58,15 @@ object WebResponse {
     version: String = null
   ): WebResponse = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(noResponseReceived)) __obj.updateDynamic("noResponseReceived")(noResponseReceived)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
-    if (reasonPhrase != null) __obj.updateDynamic("reasonPhrase")(reasonPhrase)
+    if (!js.isUndefined(noResponseReceived)) __obj.updateDynamic("noResponseReceived")(noResponseReceived.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
+    if (reasonPhrase != null) __obj.updateDynamic("reasonPhrase")(reasonPhrase.asInstanceOf[js.Any])
     if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebResponse]
   }
 }

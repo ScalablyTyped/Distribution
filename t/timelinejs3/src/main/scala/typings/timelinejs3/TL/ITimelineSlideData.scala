@@ -64,15 +64,15 @@ object ITimelineSlideData {
     unique_id: String = null
   ): ITimelineSlideData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autolink)) __obj.updateDynamic("autolink")(autolink)
-    if (background != null) __obj.updateDynamic("background")(background)
-    if (display_date != null) __obj.updateDynamic("display_date")(display_date)
-    if (end_date != null) __obj.updateDynamic("end_date")(end_date)
-    if (group != null) __obj.updateDynamic("group")(group)
-    if (media != null) __obj.updateDynamic("media")(media)
-    if (start_date != null) __obj.updateDynamic("start_date")(start_date)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (unique_id != null) __obj.updateDynamic("unique_id")(unique_id)
+    if (!js.isUndefined(autolink)) __obj.updateDynamic("autolink")(autolink.asInstanceOf[js.Any])
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    if (display_date != null) __obj.updateDynamic("display_date")(display_date.asInstanceOf[js.Any])
+    if (end_date != null) __obj.updateDynamic("end_date")(end_date.asInstanceOf[js.Any])
+    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
+    if (media != null) __obj.updateDynamic("media")(media.asInstanceOf[js.Any])
+    if (start_date != null) __obj.updateDynamic("start_date")(start_date.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (unique_id != null) __obj.updateDynamic("unique_id")(unique_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITimelineSlideData]
   }
 }

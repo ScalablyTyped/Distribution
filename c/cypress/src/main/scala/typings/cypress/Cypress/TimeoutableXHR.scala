@@ -27,7 +27,7 @@ trait TimeoutableXHR extends js.Object {
 object TimeoutableXHR {
   @scala.inline
   def apply(requestTimeout: Double, responseTimeout: Double): TimeoutableXHR = {
-    val __obj = js.Dynamic.literal(requestTimeout = requestTimeout, responseTimeout = responseTimeout)
+    val __obj = js.Dynamic.literal(requestTimeout = requestTimeout.asInstanceOf[js.Any], responseTimeout = responseTimeout.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TimeoutableXHR]
   }

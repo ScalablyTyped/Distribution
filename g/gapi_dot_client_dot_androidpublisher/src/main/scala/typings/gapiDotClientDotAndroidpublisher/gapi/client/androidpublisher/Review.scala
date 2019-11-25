@@ -17,9 +17,9 @@ object Review {
   @scala.inline
   def apply(authorName: String = null, comments: js.Array[Comment] = null, reviewId: String = null): Review = {
     val __obj = js.Dynamic.literal()
-    if (authorName != null) __obj.updateDynamic("authorName")(authorName)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (reviewId != null) __obj.updateDynamic("reviewId")(reviewId)
+    if (authorName != null) __obj.updateDynamic("authorName")(authorName.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (reviewId != null) __obj.updateDynamic("reviewId")(reviewId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Review]
   }
 }

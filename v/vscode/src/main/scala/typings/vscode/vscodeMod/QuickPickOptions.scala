@@ -42,12 +42,12 @@ object QuickPickOptions {
     placeHolder: String = null
   ): QuickPickOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(canPickMany)) __obj.updateDynamic("canPickMany")(canPickMany)
-    if (!js.isUndefined(ignoreFocusOut)) __obj.updateDynamic("ignoreFocusOut")(ignoreFocusOut)
-    if (!js.isUndefined(matchOnDescription)) __obj.updateDynamic("matchOnDescription")(matchOnDescription)
-    if (!js.isUndefined(matchOnDetail)) __obj.updateDynamic("matchOnDetail")(matchOnDetail)
+    if (!js.isUndefined(canPickMany)) __obj.updateDynamic("canPickMany")(canPickMany.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreFocusOut)) __obj.updateDynamic("ignoreFocusOut")(ignoreFocusOut.asInstanceOf[js.Any])
+    if (!js.isUndefined(matchOnDescription)) __obj.updateDynamic("matchOnDescription")(matchOnDescription.asInstanceOf[js.Any])
+    if (!js.isUndefined(matchOnDetail)) __obj.updateDynamic("matchOnDetail")(matchOnDetail.asInstanceOf[js.Any])
     if (onDidSelectItem != null) __obj.updateDynamic("onDidSelectItem")(js.Any.fromFunction1(onDidSelectItem))
-    if (placeHolder != null) __obj.updateDynamic("placeHolder")(placeHolder)
+    if (placeHolder != null) __obj.updateDynamic("placeHolder")(placeHolder.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuickPickOptions]
   }
 }

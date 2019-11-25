@@ -13,9 +13,9 @@ trait findResult extends js.Object {
 object findResult {
   @scala.inline
   def apply(findEntries: js.Array[findEntry], error: feedError = null, xmlDocument: String = null): findResult = {
-    val __obj = js.Dynamic.literal(findEntries = findEntries)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (xmlDocument != null) __obj.updateDynamic("xmlDocument")(xmlDocument)
+    val __obj = js.Dynamic.literal(findEntries = findEntries.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (xmlDocument != null) __obj.updateDynamic("xmlDocument")(xmlDocument.asInstanceOf[js.Any])
     __obj.asInstanceOf[findResult]
   }
 }

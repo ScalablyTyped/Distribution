@@ -20,9 +20,9 @@ object SortOptions {
     sortFunction: (/* a */ js.Object, /* b */ js.Object) => js.UndefOr[Double] = null
   ): SortOptions = {
     val __obj = js.Dynamic.literal()
-    if (alphabet != null) __obj.updateDynamic("alphabet")(alphabet)
-    if (!js.isUndefined(insensitive)) __obj.updateDynamic("insensitive")(insensitive)
-    if (order != null) __obj.updateDynamic("order")(order)
+    if (alphabet != null) __obj.updateDynamic("alphabet")(alphabet.asInstanceOf[js.Any])
+    if (!js.isUndefined(insensitive)) __obj.updateDynamic("insensitive")(insensitive.asInstanceOf[js.Any])
+    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     if (sortFunction != null) __obj.updateDynamic("sortFunction")(js.Any.fromFunction2(sortFunction))
     __obj.asInstanceOf[SortOptions]
   }

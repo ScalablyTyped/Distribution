@@ -13,7 +13,7 @@ trait PageIterator extends js.Object {
 object PageIterator {
   @scala.inline
   def apply(collection: Double, docIndex: Double, pageIndex: Double): PageIterator = {
-    val __obj = js.Dynamic.literal(collection = collection, docIndex = docIndex, pageIndex = pageIndex)
+    val __obj = js.Dynamic.literal(collection = collection.asInstanceOf[js.Any], docIndex = docIndex.asInstanceOf[js.Any], pageIndex = pageIndex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PageIterator]
   }

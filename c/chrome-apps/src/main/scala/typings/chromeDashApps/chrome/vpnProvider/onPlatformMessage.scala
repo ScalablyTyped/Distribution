@@ -3,8 +3,8 @@ package typings.chromeDashApps.chrome.vpnProvider
 import org.scalablytyped.runtime.TopLevel
 import typings.chromeDashApps.Anon_CONNECTEDConnectedDISCONNECTED
 import typings.chromeDashApps.chrome.ToStringLiteral
-import typings.chromeDashApps.chromeDashAppsStrings.connected
-import typings.chromeDashApps.chromeDashAppsStrings.disconnected
+import typings.chromeDashApps.chromeDashAppsStrings.connected_
+import typings.chromeDashApps.chromeDashAppsStrings.disconnected_
 import typings.chromeDashApps.chromeDashAppsStrings.error
 import typings.chromeDashApps.chromeDashAppsStrings.linkChanged
 import typings.chromeDashApps.chromeDashAppsStrings.linkDown
@@ -29,7 +29,7 @@ object onPlatformMessage
             String, 
             Exclude[
               String, 
-              linkChanged | linkUp | suspend | error | connected | resume | disconnected | linkDown
+              linkChanged | linkUp | suspend | error | connected_ | resume | disconnected_ | linkDown
             ]
           ], 
           /* error */ String, 

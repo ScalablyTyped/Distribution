@@ -29,10 +29,10 @@ object ImportSettings {
     password: String = null
   ): ImportSettings = {
     val __obj = js.Dynamic.literal()
-    if (importMapper != null) __obj.updateDynamic("importMapper")(importMapper)
-    if (!js.isUndefined(importOnLoad)) __obj.updateDynamic("importOnLoad")(importOnLoad)
-    if (importUrl != null) __obj.updateDynamic("importUrl")(importUrl)
-    if (password != null) __obj.updateDynamic("password")(password)
+    if (importMapper != null) __obj.updateDynamic("importMapper")(importMapper.asInstanceOf[js.Any])
+    if (!js.isUndefined(importOnLoad)) __obj.updateDynamic("importOnLoad")(importOnLoad.asInstanceOf[js.Any])
+    if (importUrl != null) __obj.updateDynamic("importUrl")(importUrl.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportSettings]
   }
 }

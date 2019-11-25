@@ -13,7 +13,7 @@ trait Anon_ColorFontSizeTextAlignVertical extends js.Object {
 object Anon_ColorFontSizeTextAlignVertical {
   @scala.inline
   def apply(color: String, fontSize: Double, textAlignVertical: String): Anon_ColorFontSizeTextAlignVertical = {
-    val __obj = js.Dynamic.literal(color = color, fontSize = fontSize, textAlignVertical = textAlignVertical)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], textAlignVertical = textAlignVertical.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ColorFontSizeTextAlignVertical]
   }

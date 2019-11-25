@@ -31,9 +31,9 @@ object SourceSplitResponse {
     shards: js.Array[SourceSplitShard] = null
   ): SourceSplitResponse = {
     val __obj = js.Dynamic.literal()
-    if (bundles != null) __obj.updateDynamic("bundles")(bundles)
-    if (outcome != null) __obj.updateDynamic("outcome")(outcome)
-    if (shards != null) __obj.updateDynamic("shards")(shards)
+    if (bundles != null) __obj.updateDynamic("bundles")(bundles.asInstanceOf[js.Any])
+    if (outcome != null) __obj.updateDynamic("outcome")(outcome.asInstanceOf[js.Any])
+    if (shards != null) __obj.updateDynamic("shards")(shards.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceSplitResponse]
   }
 }

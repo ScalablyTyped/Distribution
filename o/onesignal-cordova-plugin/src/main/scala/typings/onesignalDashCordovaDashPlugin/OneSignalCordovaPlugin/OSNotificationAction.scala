@@ -14,7 +14,7 @@ trait OSNotificationAction extends js.Object {
 object OSNotificationAction {
   @scala.inline
   def apply(actionID: String, `type`: Opened | ActionTaken): OSNotificationAction = {
-    val __obj = js.Dynamic.literal(actionID = actionID)
+    val __obj = js.Dynamic.literal(actionID = actionID.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[OSNotificationAction]
   }

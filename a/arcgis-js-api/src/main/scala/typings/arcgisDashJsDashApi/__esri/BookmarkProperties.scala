@@ -29,9 +29,9 @@ object BookmarkProperties {
   @scala.inline
   def apply(extent: ExtentProperties = null, name: String = null, thumbnail: BookmarkThumbnail = null): BookmarkProperties = {
     val __obj = js.Dynamic.literal()
-    if (extent != null) __obj.updateDynamic("extent")(extent)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (thumbnail != null) __obj.updateDynamic("thumbnail")(thumbnail)
+    if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (thumbnail != null) __obj.updateDynamic("thumbnail")(thumbnail.asInstanceOf[js.Any])
     __obj.asInstanceOf[BookmarkProperties]
   }
 }

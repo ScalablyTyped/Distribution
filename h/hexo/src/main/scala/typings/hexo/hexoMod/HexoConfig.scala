@@ -223,12 +223,12 @@ object HexoConfig {
     permalink_defaults: String = null,
     skip_render: String | js.Array[String] = null
   ): HexoConfig = {
-    val __obj = js.Dynamic.literal(archive_dir = archive_dir, author = author, category_dir = category_dir, category_map = category_map, code_dir = code_dir, date_format = date_format, default_category = default_category, default_layout = default_layout, description = description, external_link = external_link, filename_case = filename_case, future = future, highlight = highlight, i18n_dir = i18n_dir, ignore = ignore, language = language, new_post_name = new_post_name, pagination_dir = pagination_dir, per_page = per_page, permalink = permalink, post_asset_folder = post_asset_folder, public_dir = public_dir, relative_link = relative_link, render_drafts = render_drafts, root = root, source_dir = source_dir, subtitle = subtitle, tag_dir = tag_dir, tag_map = tag_map, theme = theme.asInstanceOf[js.Any], theme_config = theme_config, time_format = time_format, timezone = timezone, title = title, titlecase = titlecase, url = url)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (deploy != null) __obj.updateDynamic("deploy")(deploy)
-    if (exclude != null) __obj.updateDynamic("exclude")(exclude)
-    if (include != null) __obj.updateDynamic("include")(include)
-    if (permalink_defaults != null) __obj.updateDynamic("permalink_defaults")(permalink_defaults)
+    val __obj = js.Dynamic.literal(archive_dir = archive_dir.asInstanceOf[js.Any], author = author.asInstanceOf[js.Any], category_dir = category_dir.asInstanceOf[js.Any], category_map = category_map.asInstanceOf[js.Any], code_dir = code_dir.asInstanceOf[js.Any], date_format = date_format.asInstanceOf[js.Any], default_category = default_category.asInstanceOf[js.Any], default_layout = default_layout.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], external_link = external_link.asInstanceOf[js.Any], filename_case = filename_case.asInstanceOf[js.Any], future = future.asInstanceOf[js.Any], highlight = highlight.asInstanceOf[js.Any], i18n_dir = i18n_dir.asInstanceOf[js.Any], ignore = ignore.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], new_post_name = new_post_name.asInstanceOf[js.Any], pagination_dir = pagination_dir.asInstanceOf[js.Any], per_page = per_page.asInstanceOf[js.Any], permalink = permalink.asInstanceOf[js.Any], post_asset_folder = post_asset_folder.asInstanceOf[js.Any], public_dir = public_dir.asInstanceOf[js.Any], relative_link = relative_link.asInstanceOf[js.Any], render_drafts = render_drafts.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], source_dir = source_dir.asInstanceOf[js.Any], subtitle = subtitle.asInstanceOf[js.Any], tag_dir = tag_dir.asInstanceOf[js.Any], tag_map = tag_map.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any], theme_config = theme_config.asInstanceOf[js.Any], time_format = time_format.asInstanceOf[js.Any], timezone = timezone.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], titlecase = titlecase.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (deploy != null) __obj.updateDynamic("deploy")(deploy.asInstanceOf[js.Any])
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    if (permalink_defaults != null) __obj.updateDynamic("permalink_defaults")(permalink_defaults.asInstanceOf[js.Any])
     if (skip_render != null) __obj.updateDynamic("skip_render")(skip_render.asInstanceOf[js.Any])
     __obj.asInstanceOf[HexoConfig]
   }

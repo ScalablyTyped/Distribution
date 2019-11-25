@@ -39,10 +39,10 @@ object IHeaderOptions {
     stripe_account: String = null
   ): IHeaderOptions = {
     val __obj = js.Dynamic.literal()
-    if (api_key != null) __obj.updateDynamic("api_key")(api_key)
-    if (expand != null) __obj.updateDynamic("expand")(expand)
-    if (idempotency_key != null) __obj.updateDynamic("idempotency_key")(idempotency_key)
-    if (stripe_account != null) __obj.updateDynamic("stripe_account")(stripe_account)
+    if (api_key != null) __obj.updateDynamic("api_key")(api_key.asInstanceOf[js.Any])
+    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
+    if (idempotency_key != null) __obj.updateDynamic("idempotency_key")(idempotency_key.asInstanceOf[js.Any])
+    if (stripe_account != null) __obj.updateDynamic("stripe_account")(stripe_account.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHeaderOptions]
   }
 }

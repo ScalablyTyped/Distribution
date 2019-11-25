@@ -52,11 +52,11 @@ object PlusContactsContactOrganization {
     `type`: String = null
   ): PlusContactsContactOrganization = {
     val __obj = js.Dynamic.literal()
-    if (department != null) __obj.updateDynamic("department")(department)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(preferred)) __obj.updateDynamic("preferred")(preferred)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (department != null) __obj.updateDynamic("department")(department.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(preferred)) __obj.updateDynamic("preferred")(preferred.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusContactsContactOrganization]
   }
 }

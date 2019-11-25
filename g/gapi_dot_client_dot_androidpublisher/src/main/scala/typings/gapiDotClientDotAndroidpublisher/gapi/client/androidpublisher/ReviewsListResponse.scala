@@ -18,9 +18,9 @@ object ReviewsListResponse {
     tokenPagination: TokenPagination = null
   ): ReviewsListResponse = {
     val __obj = js.Dynamic.literal()
-    if (pageInfo != null) __obj.updateDynamic("pageInfo")(pageInfo)
-    if (reviews != null) __obj.updateDynamic("reviews")(reviews)
-    if (tokenPagination != null) __obj.updateDynamic("tokenPagination")(tokenPagination)
+    if (pageInfo != null) __obj.updateDynamic("pageInfo")(pageInfo.asInstanceOf[js.Any])
+    if (reviews != null) __obj.updateDynamic("reviews")(reviews.asInstanceOf[js.Any])
+    if (tokenPagination != null) __obj.updateDynamic("tokenPagination")(tokenPagination.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReviewsListResponse]
   }
 }

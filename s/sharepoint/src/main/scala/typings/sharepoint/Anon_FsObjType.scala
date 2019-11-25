@@ -13,7 +13,7 @@ trait Anon_FsObjType extends js.Object {
 object Anon_FsObjType {
   @scala.inline
   def apply(fsObjType: FileSystemObjectType, id: Double): Anon_FsObjType = {
-    val __obj = js.Dynamic.literal(fsObjType = fsObjType, id = id)
+    val __obj = js.Dynamic.literal(fsObjType = fsObjType.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FsObjType]
   }

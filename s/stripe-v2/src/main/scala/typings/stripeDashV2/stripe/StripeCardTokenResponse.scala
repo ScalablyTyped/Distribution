@@ -21,10 +21,10 @@ object StripeCardTokenResponse {
     used: Boolean,
     error: StripeError = null
   ): StripeCardTokenResponse = {
-    val __obj = js.Dynamic.literal(card = card, client_ip = client_ip, created = created, id = id, livemode = livemode, used = used)
-    __obj.updateDynamic("object")(`object`)
-    __obj.updateDynamic("type")(`type`)
-    if (error != null) __obj.updateDynamic("error")(error)
+    val __obj = js.Dynamic.literal(card = card.asInstanceOf[js.Any], client_ip = client_ip.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], used = used.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     __obj.asInstanceOf[StripeCardTokenResponse]
   }
 }

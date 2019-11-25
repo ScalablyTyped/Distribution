@@ -35,9 +35,9 @@ object Anon_ErrorExistsAndShouldBeVisible {
     show: js.UndefOr[Boolean] = js.undefined
   ): Anon_ErrorExistsAndShouldBeVisible = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(errorExistsAndShouldBeVisible)) __obj.updateDynamic("errorExistsAndShouldBeVisible")(errorExistsAndShouldBeVisible)
-    if (messages != null) __obj.updateDynamic("messages")(messages)
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
+    if (!js.isUndefined(errorExistsAndShouldBeVisible)) __obj.updateDynamic("errorExistsAndShouldBeVisible")(errorExistsAndShouldBeVisible.asInstanceOf[js.Any])
+    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ErrorExistsAndShouldBeVisible]
   }
 }

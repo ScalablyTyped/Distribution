@@ -32,9 +32,9 @@ object Window {
     TrustedTypes: TrustedTypePolicyFactory = null,
     trustedTypes: TrustedTypePolicyFactory = null
   ): Window = {
-    val __obj = js.Dynamic.literal(TrustedHTML = TrustedHTML, TrustedScript = TrustedScript, TrustedScriptURL = TrustedScriptURL, TrustedTypePolicy = TrustedTypePolicy, TrustedTypePolicyFactory = TrustedTypePolicyFactory, TrustedURL = TrustedURL)
-    if (TrustedTypes != null) __obj.updateDynamic("TrustedTypes")(TrustedTypes)
-    if (trustedTypes != null) __obj.updateDynamic("trustedTypes")(trustedTypes)
+    val __obj = js.Dynamic.literal(TrustedHTML = TrustedHTML.asInstanceOf[js.Any], TrustedScript = TrustedScript.asInstanceOf[js.Any], TrustedScriptURL = TrustedScriptURL.asInstanceOf[js.Any], TrustedTypePolicy = TrustedTypePolicy.asInstanceOf[js.Any], TrustedTypePolicyFactory = TrustedTypePolicyFactory.asInstanceOf[js.Any], TrustedURL = TrustedURL.asInstanceOf[js.Any])
+    if (TrustedTypes != null) __obj.updateDynamic("TrustedTypes")(TrustedTypes.asInstanceOf[js.Any])
+    if (trustedTypes != null) __obj.updateDynamic("trustedTypes")(trustedTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Window]
   }
 }

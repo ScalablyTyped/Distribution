@@ -14,7 +14,7 @@ trait BacklogErrorMessage extends js.Object {
 object BacklogErrorMessage {
   @scala.inline
   def apply(code: Double, errorInfo: String, message: String, moreInfo: String): BacklogErrorMessage = {
-    val __obj = js.Dynamic.literal(code = code, errorInfo = errorInfo, message = message, moreInfo = moreInfo)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], errorInfo = errorInfo.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], moreInfo = moreInfo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BacklogErrorMessage]
   }

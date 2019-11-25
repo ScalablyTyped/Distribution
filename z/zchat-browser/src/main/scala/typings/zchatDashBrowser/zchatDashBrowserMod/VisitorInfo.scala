@@ -13,7 +13,7 @@ trait VisitorInfo extends js.Object {
 object VisitorInfo {
   @scala.inline
   def apply(display_name: String, email: String, phone: String): VisitorInfo = {
-    val __obj = js.Dynamic.literal(display_name = display_name, email = email, phone = phone)
+    val __obj = js.Dynamic.literal(display_name = display_name.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[VisitorInfo]
   }

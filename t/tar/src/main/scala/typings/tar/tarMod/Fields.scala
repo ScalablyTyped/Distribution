@@ -45,8 +45,8 @@ object Fields {
     ustar: Double,
     ustarvar: Double
   ): Fields = {
-    val __obj = js.Dynamic.literal(cksum = cksum, devmaj = devmaj, devmin = devmin, fill = fill, gid = gid, gname = gname, linkpath = linkpath, mode = mode, mtime = mtime, path = path, prefix = prefix, size = size, uid = uid, uname = uname, ustar = ustar, ustarvar = ustarvar)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(cksum = cksum.asInstanceOf[js.Any], devmaj = devmaj.asInstanceOf[js.Any], devmin = devmin.asInstanceOf[js.Any], fill = fill.asInstanceOf[js.Any], gid = gid.asInstanceOf[js.Any], gname = gname.asInstanceOf[js.Any], linkpath = linkpath.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], mtime = mtime.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any], uname = uname.asInstanceOf[js.Any], ustar = ustar.asInstanceOf[js.Any], ustarvar = ustarvar.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fields]
   }
 }

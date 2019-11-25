@@ -25,11 +25,11 @@ object ThumbnailSet {
     source: Thumbnail = null
   ): ThumbnailSet = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (large != null) __obj.updateDynamic("large")(large)
-    if (medium != null) __obj.updateDynamic("medium")(medium)
-    if (small != null) __obj.updateDynamic("small")(small)
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (large != null) __obj.updateDynamic("large")(large.asInstanceOf[js.Any])
+    if (medium != null) __obj.updateDynamic("medium")(medium.asInstanceOf[js.Any])
+    if (small != null) __obj.updateDynamic("small")(small.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThumbnailSet]
   }
 }

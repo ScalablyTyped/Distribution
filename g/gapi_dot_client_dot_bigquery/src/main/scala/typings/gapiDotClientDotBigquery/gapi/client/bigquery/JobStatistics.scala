@@ -36,13 +36,13 @@ object JobStatistics {
     totalBytesProcessed: String = null
   ): JobStatistics = {
     val __obj = js.Dynamic.literal()
-    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime)
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
-    if (extract != null) __obj.updateDynamic("extract")(extract)
-    if (load != null) __obj.updateDynamic("load")(load)
-    if (query != null) __obj.updateDynamic("query")(query)
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
-    if (totalBytesProcessed != null) __obj.updateDynamic("totalBytesProcessed")(totalBytesProcessed)
+    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
+    if (extract != null) __obj.updateDynamic("extract")(extract.asInstanceOf[js.Any])
+    if (load != null) __obj.updateDynamic("load")(load.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
+    if (totalBytesProcessed != null) __obj.updateDynamic("totalBytesProcessed")(totalBytesProcessed.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobStatistics]
   }
 }

@@ -13,8 +13,8 @@ trait AbstractElement extends js.Object {
 object AbstractElement {
   @scala.inline
   def apply(attributes: js.Any, tag: String, children: js.Array[AbstractElement] = null): AbstractElement = {
-    val __obj = js.Dynamic.literal(attributes = attributes, tag = tag)
-    if (children != null) __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[AbstractElement]
   }
 }

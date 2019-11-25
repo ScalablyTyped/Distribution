@@ -28,11 +28,11 @@ object TableProps {
     skeleton: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify InkComponent */ js.Any = null
   ): TableProps = {
     val __obj = js.Dynamic.literal()
-    if (cell != null) __obj.updateDynamic("cell")(cell)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (header != null) __obj.updateDynamic("header")(header)
+    if (cell != null) __obj.updateDynamic("cell")(cell.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (skeleton != null) __obj.updateDynamic("skeleton")(skeleton)
+    if (skeleton != null) __obj.updateDynamic("skeleton")(skeleton.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableProps]
   }
 }

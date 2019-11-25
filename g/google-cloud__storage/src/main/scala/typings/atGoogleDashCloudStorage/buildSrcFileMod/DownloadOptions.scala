@@ -23,11 +23,11 @@ object DownloadOptions {
     validation: md5 | crc32c | `false` | `true` = null
   ): DownloadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(decompress)) __obj.updateDynamic("decompress")(decompress)
-    if (destination != null) __obj.updateDynamic("destination")(destination)
+    if (!js.isUndefined(decompress)) __obj.updateDynamic("decompress")(decompress.asInstanceOf[js.Any])
+    if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (userProject != null) __obj.updateDynamic("userProject")(userProject)
+    if (userProject != null) __obj.updateDynamic("userProject")(userProject.asInstanceOf[js.Any])
     if (validation != null) __obj.updateDynamic("validation")(validation.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownloadOptions]
   }

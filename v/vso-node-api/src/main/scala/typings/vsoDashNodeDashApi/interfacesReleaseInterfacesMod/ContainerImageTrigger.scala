@@ -11,7 +11,7 @@ trait ContainerImageTrigger extends ReleaseTriggerBase {
 object ContainerImageTrigger {
   @scala.inline
   def apply(alias: String, triggerType: ReleaseTriggerType): ContainerImageTrigger = {
-    val __obj = js.Dynamic.literal(alias = alias, triggerType = triggerType)
+    val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any], triggerType = triggerType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ContainerImageTrigger]
   }

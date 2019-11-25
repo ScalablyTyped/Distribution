@@ -24,7 +24,7 @@ object Anon_ColumnFilenameIsList {
     lineno: Double,
     nodes: js.Array[Node]
   ): Anon_ColumnFilenameIsList = {
-    val __obj = js.Dynamic.literal(__type = __type, column = column, filename = filename, isList = isList, lineno = lineno, nodes = nodes)
+    val __obj = js.Dynamic.literal(__type = __type.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], isList = isList.asInstanceOf[js.Any], lineno = lineno.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ColumnFilenameIsList]
   }

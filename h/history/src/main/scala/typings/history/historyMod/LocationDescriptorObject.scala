@@ -22,10 +22,10 @@ object LocationDescriptorObject {
     state: S = null
   ): LocationDescriptorObject[S] = {
     val __obj = js.Dynamic.literal()
-    if (hash != null) __obj.updateDynamic("hash")(hash)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (pathname != null) __obj.updateDynamic("pathname")(pathname)
-    if (search != null) __obj.updateDynamic("search")(search)
+    if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (pathname != null) __obj.updateDynamic("pathname")(pathname.asInstanceOf[js.Any])
+    if (search != null) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationDescriptorObject[S]]
   }

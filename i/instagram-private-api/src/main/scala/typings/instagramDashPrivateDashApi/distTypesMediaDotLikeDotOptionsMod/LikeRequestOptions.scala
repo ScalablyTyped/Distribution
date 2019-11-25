@@ -16,7 +16,7 @@ trait LikeRequestOptions extends js.Object {
 object LikeRequestOptions {
   @scala.inline
   def apply(d: `1` | `0`, mediaId: String, moduleInfo: LikeModuleInfoOption): LikeRequestOptions = {
-    val __obj = js.Dynamic.literal(d = d.asInstanceOf[js.Any], mediaId = mediaId, moduleInfo = moduleInfo)
+    val __obj = js.Dynamic.literal(d = d.asInstanceOf[js.Any], mediaId = mediaId.asInstanceOf[js.Any], moduleInfo = moduleInfo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LikeRequestOptions]
   }

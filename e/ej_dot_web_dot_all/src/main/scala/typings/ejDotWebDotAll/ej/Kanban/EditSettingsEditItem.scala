@@ -38,10 +38,10 @@ object EditSettingsEditItem {
   ): EditSettingsEditItem = {
     val __obj = js.Dynamic.literal()
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (editParams != null) __obj.updateDynamic("editParams")(editParams)
+    if (editParams != null) __obj.updateDynamic("editParams")(editParams.asInstanceOf[js.Any])
     if (editType != null) __obj.updateDynamic("editType")(editType.asInstanceOf[js.Any])
-    if (field != null) __obj.updateDynamic("field")(field)
-    if (validationRules != null) __obj.updateDynamic("validationRules")(validationRules)
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    if (validationRules != null) __obj.updateDynamic("validationRules")(validationRules.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditSettingsEditItem]
   }
 }

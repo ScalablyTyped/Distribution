@@ -14,7 +14,7 @@ trait Anon_NEffect extends js.Object {
 object Anon_NEffect {
   @scala.inline
   def apply(Wn: SlideShowWindow, nEffect: Effect): Anon_NEffect = {
-    val __obj = js.Dynamic.literal(Wn = Wn, nEffect = nEffect)
+    val __obj = js.Dynamic.literal(Wn = Wn.asInstanceOf[js.Any], nEffect = nEffect.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_NEffect]
   }

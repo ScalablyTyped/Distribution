@@ -1,7 +1,6 @@
 package typings.dojo.dojox.mvc
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValueOldValue
 import typings.dojo.dojo.store.api.Store.PutDirectives
 import typings.dojo.dojo.store.api.Store.QueryOptions
 import typings.dojo.dojoStrings.getStatefulOptions
@@ -83,8 +82,24 @@ class StoreRefController () extends ModelRefController {
   @JSName("set")
   def set_store(property: store, value: js.Object): Unit = js.native
   @JSName("watch")
-  def watch_getStatefulOptions(property: getStatefulOptions, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_getStatefulOptions(
+    property: getStatefulOptions,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_store(property: store, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_store(
+    property: store,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

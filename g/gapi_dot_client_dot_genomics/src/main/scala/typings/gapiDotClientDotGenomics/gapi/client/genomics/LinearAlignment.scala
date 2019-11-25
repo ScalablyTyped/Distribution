@@ -26,9 +26,9 @@ object LinearAlignment {
   @scala.inline
   def apply(cigar: js.Array[CigarUnit] = null, mappingQuality: Int | Double = null, position: Position = null): LinearAlignment = {
     val __obj = js.Dynamic.literal()
-    if (cigar != null) __obj.updateDynamic("cigar")(cigar)
+    if (cigar != null) __obj.updateDynamic("cigar")(cigar.asInstanceOf[js.Any])
     if (mappingQuality != null) __obj.updateDynamic("mappingQuality")(mappingQuality.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinearAlignment]
   }
 }

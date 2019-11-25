@@ -16,7 +16,7 @@ trait EntityServices extends js.Object {
 object EntityServices {
   @scala.inline
   def apply(network: Network, router: Router, storage: Storage): EntityServices = {
-    val __obj = js.Dynamic.literal(network = network, router = router, storage = storage)
+    val __obj = js.Dynamic.literal(network = network.asInstanceOf[js.Any], router = router.asInstanceOf[js.Any], storage = storage.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EntityServices]
   }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cadesplugin"
-version := "2.1-dt-20190116Z-2430eb"
+version := "2.1-dt-20190116Z-997349"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -30,7 +30,7 @@ object String {
     white: java.lang.String,
     yellow: java.lang.String
   ): String = {
-    val __obj = js.Dynamic.literal(blue = blue, cyan = cyan, green = green, grey = grey, magenta = magenta, red = red, white = white, yellow = yellow)
+    val __obj = js.Dynamic.literal(blue = blue.asInstanceOf[js.Any], cyan = cyan.asInstanceOf[js.Any], green = green.asInstanceOf[js.Any], grey = grey.asInstanceOf[js.Any], magenta = magenta.asInstanceOf[js.Any], red = red.asInstanceOf[js.Any], white = white.asInstanceOf[js.Any], yellow = yellow.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[String]
   }

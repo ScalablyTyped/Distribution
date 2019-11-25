@@ -27,9 +27,9 @@ object ContourGenerateOptions {
     nodata: Int | Double = null,
     offset: Int | Double = null
   ): ContourGenerateOptions = {
-    val __obj = js.Dynamic.literal(dst = dst, src = src)
+    val __obj = js.Dynamic.literal(dst = dst.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
     if (elevField != null) __obj.updateDynamic("elevField")(elevField.asInstanceOf[js.Any])
-    if (fixedLevels != null) __obj.updateDynamic("fixedLevels")(fixedLevels)
+    if (fixedLevels != null) __obj.updateDynamic("fixedLevels")(fixedLevels.asInstanceOf[js.Any])
     if (idField != null) __obj.updateDynamic("idField")(idField.asInstanceOf[js.Any])
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
     if (nodata != null) __obj.updateDynamic("nodata")(nodata.asInstanceOf[js.Any])

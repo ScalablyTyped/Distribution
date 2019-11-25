@@ -14,10 +14,10 @@ trait MessageDescriptor extends js.Object {
 object MessageDescriptor {
   @scala.inline
   def apply(id: String, defaults: String = null, formats: js.Object = null, values: js.Object = null): MessageDescriptor = {
-    val __obj = js.Dynamic.literal(id = id)
-    if (defaults != null) __obj.updateDynamic("defaults")(defaults)
-    if (formats != null) __obj.updateDynamic("formats")(formats)
-    if (values != null) __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    if (defaults != null) __obj.updateDynamic("defaults")(defaults.asInstanceOf[js.Any])
+    if (formats != null) __obj.updateDynamic("formats")(formats.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageDescriptor]
   }
 }

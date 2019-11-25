@@ -19,7 +19,7 @@ object QueueableFn {
     timeout: () => Double = null
   ): QueueableFn = {
     val __obj = js.Dynamic.literal(fn = js.Any.fromFunction1(fn))
-    if (initError != null) __obj.updateDynamic("initError")(initError)
+    if (initError != null) __obj.updateDynamic("initError")(initError.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(js.Any.fromFunction0(timeout))
     __obj.asInstanceOf[QueueableFn]
   }

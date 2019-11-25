@@ -31,10 +31,10 @@ object Shape {
     text: TextContent = null
   ): Shape = {
     val __obj = js.Dynamic.literal()
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
-    if (shapeProperties != null) __obj.updateDynamic("shapeProperties")(shapeProperties)
-    if (shapeType != null) __obj.updateDynamic("shapeType")(shapeType)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
+    if (shapeProperties != null) __obj.updateDynamic("shapeProperties")(shapeProperties.asInstanceOf[js.Any])
+    if (shapeType != null) __obj.updateDynamic("shapeType")(shapeType.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Shape]
   }
 }

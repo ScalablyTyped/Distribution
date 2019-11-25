@@ -27,10 +27,10 @@ object ErrorHiddenEventUIParam {
   @scala.inline
   def apply(fieldOptions: js.Any = null, message: String = null, owner: js.Any = null, target: String = null): ErrorHiddenEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (fieldOptions != null) __obj.updateDynamic("fieldOptions")(fieldOptions)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (fieldOptions != null) __obj.updateDynamic("fieldOptions")(fieldOptions.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorHiddenEventUIParam]
   }
 }

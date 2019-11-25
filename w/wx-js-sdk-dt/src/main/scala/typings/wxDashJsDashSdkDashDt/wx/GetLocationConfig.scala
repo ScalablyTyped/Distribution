@@ -26,7 +26,7 @@ object GetLocationConfig {
     if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction0(cancel))
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetLocationConfig]
   }
 }

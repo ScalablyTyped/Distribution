@@ -12,7 +12,7 @@ object Options {
   @scala.inline
   def apply(skipBinary: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(skipBinary)) __obj.updateDynamic("skipBinary")(skipBinary)
+    if (!js.isUndefined(skipBinary)) __obj.updateDynamic("skipBinary")(skipBinary.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -14,9 +14,9 @@ trait ReactTestRendererJSON extends js.Object {
 object ReactTestRendererJSON {
   @scala.inline
   def apply(props: StringDictionary[js.Any], `type`: String, children: js.Array[ReactTestRendererNode] = null): ReactTestRendererJSON = {
-    val __obj = js.Dynamic.literal(props = props)
-    __obj.updateDynamic("type")(`type`)
-    if (children != null) __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactTestRendererJSON]
   }
 }

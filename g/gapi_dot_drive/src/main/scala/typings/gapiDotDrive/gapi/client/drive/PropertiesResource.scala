@@ -24,7 +24,7 @@ object PropertiesResource {
     value: String,
     visibility: String
   ): PropertiesResource = {
-    val __obj = js.Dynamic.literal(etag = etag, key = key, kind = kind, selfLink = selfLink, value = value, visibility = visibility)
+    val __obj = js.Dynamic.literal(etag = etag.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], selfLink = selfLink.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], visibility = visibility.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PropertiesResource]
   }

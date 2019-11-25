@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation._
 object ResolvedIntlRelativeTimeFormatOptions {
   @scala.inline
   def apply(locale: String, numberingSystem: String): ResolvedIntlRelativeTimeFormatOptions = {
-    val __obj = js.Dynamic.literal(locale = locale, numberingSystem = numberingSystem)
+    val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any], numberingSystem = numberingSystem.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ResolvedIntlRelativeTimeFormatOptions]
   }

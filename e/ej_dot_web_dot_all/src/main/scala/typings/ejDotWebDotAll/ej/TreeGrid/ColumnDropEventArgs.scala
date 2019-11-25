@@ -40,13 +40,13 @@ object ColumnDropEventArgs {
     `type`: String = null
   ): ColumnDropEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (draggedColumn != null) __obj.updateDynamic("draggedColumn")(draggedColumn)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (draggedColumn != null) __obj.updateDynamic("draggedColumn")(draggedColumn.asInstanceOf[js.Any])
     if (draggedColumnIndex != null) __obj.updateDynamic("draggedColumnIndex")(draggedColumnIndex.asInstanceOf[js.Any])
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (targetColumn != null) __obj.updateDynamic("targetColumn")(targetColumn)
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (targetColumn != null) __obj.updateDynamic("targetColumn")(targetColumn.asInstanceOf[js.Any])
     if (targetColumnIndex != null) __obj.updateDynamic("targetColumnIndex")(targetColumnIndex.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnDropEventArgs]
   }
 }

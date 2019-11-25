@@ -13,7 +13,7 @@ trait IssuesUnlockParams extends js.Object {
 object IssuesUnlockParams {
   @scala.inline
   def apply(issue_number: Double, owner: String, repo: String): IssuesUnlockParams = {
-    val __obj = js.Dynamic.literal(issue_number = issue_number, owner = owner, repo = repo)
+    val __obj = js.Dynamic.literal(issue_number = issue_number.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IssuesUnlockParams]
   }

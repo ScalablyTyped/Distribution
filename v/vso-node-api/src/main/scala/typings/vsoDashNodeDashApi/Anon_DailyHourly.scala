@@ -12,7 +12,7 @@ trait Anon_DailyHourly extends js.Object {
 object Anon_DailyHourly {
   @scala.inline
   def apply(daily: Double, hourly: Double): Anon_DailyHourly = {
-    val __obj = js.Dynamic.literal(daily = daily, hourly = hourly)
+    val __obj = js.Dynamic.literal(daily = daily.asInstanceOf[js.Any], hourly = hourly.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DailyHourly]
   }

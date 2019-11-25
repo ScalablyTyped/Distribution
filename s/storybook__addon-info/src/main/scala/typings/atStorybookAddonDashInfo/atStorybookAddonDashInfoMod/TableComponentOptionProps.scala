@@ -12,7 +12,7 @@ trait TableComponentOptionProps extends js.Object {
 object TableComponentOptionProps {
   @scala.inline
   def apply(propDefinitions: js.Array[Anon_DefaultValue]): TableComponentOptionProps = {
-    val __obj = js.Dynamic.literal(propDefinitions = propDefinitions)
+    val __obj = js.Dynamic.literal(propDefinitions = propDefinitions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TableComponentOptionProps]
   }

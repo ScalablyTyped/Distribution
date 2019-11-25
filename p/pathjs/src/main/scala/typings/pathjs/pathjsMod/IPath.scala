@@ -29,7 +29,7 @@ object IPath {
     root: String => Unit,
     routes: IPathRoutes
   ): IPath = {
-    val __obj = js.Dynamic.literal(core = core, dispatch = js.Any.fromFunction1(dispatch), history = history, listen = js.Any.fromFunction0(listen), map = js.Any.fromFunction1(map), rescue = js.Any.fromFunction1(rescue), root = js.Any.fromFunction1(root), routes = routes)
+    val __obj = js.Dynamic.literal(core = core.asInstanceOf[js.Any], dispatch = js.Any.fromFunction1(dispatch), history = history.asInstanceOf[js.Any], listen = js.Any.fromFunction0(listen), map = js.Any.fromFunction1(map), rescue = js.Any.fromFunction1(rescue), root = js.Any.fromFunction1(root), routes = routes.asInstanceOf[js.Any])
     __obj.updateDynamic("match")(js.Any.fromFunction2(`match`))
     __obj.asInstanceOf[IPath]
   }

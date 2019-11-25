@@ -12,7 +12,7 @@ trait Anon_Color extends js.Object {
 object Anon_Color {
   @scala.inline
   def apply(color: String, focused: Boolean): Anon_Color = {
-    val __obj = js.Dynamic.literal(color = color, focused = focused)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], focused = focused.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Color]
   }

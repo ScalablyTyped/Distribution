@@ -72,18 +72,18 @@ object ScheduleHeaderSettings {
     yearHeaderFormat: String = null
   ): ScheduleHeaderSettings = {
     val __obj = js.Dynamic.literal()
-    if (dayHeaderFormat != null) __obj.updateDynamic("dayHeaderFormat")(dayHeaderFormat)
-    if (hourHeaderFormat != null) __obj.updateDynamic("hourHeaderFormat")(hourHeaderFormat)
+    if (dayHeaderFormat != null) __obj.updateDynamic("dayHeaderFormat")(dayHeaderFormat.asInstanceOf[js.Any])
+    if (hourHeaderFormat != null) __obj.updateDynamic("hourHeaderFormat")(hourHeaderFormat.asInstanceOf[js.Any])
     if (minutesPerInterval != null) __obj.updateDynamic("minutesPerInterval")(minutesPerInterval.asInstanceOf[js.Any])
-    if (monthHeaderFormat != null) __obj.updateDynamic("monthHeaderFormat")(monthHeaderFormat)
+    if (monthHeaderFormat != null) __obj.updateDynamic("monthHeaderFormat")(monthHeaderFormat.asInstanceOf[js.Any])
     if (scheduleHeaderType != null) __obj.updateDynamic("scheduleHeaderType")(scheduleHeaderType.asInstanceOf[js.Any])
     if (timescaleStartDateMode != null) __obj.updateDynamic("timescaleStartDateMode")(timescaleStartDateMode.asInstanceOf[js.Any])
-    if (timescaleUnitSize != null) __obj.updateDynamic("timescaleUnitSize")(timescaleUnitSize)
-    if (!js.isUndefined(updateTimescaleView)) __obj.updateDynamic("updateTimescaleView")(updateTimescaleView)
-    if (weekHeaderFormat != null) __obj.updateDynamic("weekHeaderFormat")(weekHeaderFormat)
+    if (timescaleUnitSize != null) __obj.updateDynamic("timescaleUnitSize")(timescaleUnitSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateTimescaleView)) __obj.updateDynamic("updateTimescaleView")(updateTimescaleView.asInstanceOf[js.Any])
+    if (weekHeaderFormat != null) __obj.updateDynamic("weekHeaderFormat")(weekHeaderFormat.asInstanceOf[js.Any])
     if (weekStartDay != null) __obj.updateDynamic("weekStartDay")(weekStartDay.asInstanceOf[js.Any])
-    if (weekendBackground != null) __obj.updateDynamic("weekendBackground")(weekendBackground)
-    if (yearHeaderFormat != null) __obj.updateDynamic("yearHeaderFormat")(yearHeaderFormat)
+    if (weekendBackground != null) __obj.updateDynamic("weekendBackground")(weekendBackground.asInstanceOf[js.Any])
+    if (yearHeaderFormat != null) __obj.updateDynamic("yearHeaderFormat")(yearHeaderFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScheduleHeaderSettings]
   }
 }

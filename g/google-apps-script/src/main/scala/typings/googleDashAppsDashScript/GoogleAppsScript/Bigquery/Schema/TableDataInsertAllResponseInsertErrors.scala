@@ -13,7 +13,7 @@ object TableDataInsertAllResponseInsertErrors {
   @scala.inline
   def apply(errors: js.Array[ErrorProto] = null, index: Int | Double = null): TableDataInsertAllResponseInsertErrors = {
     val __obj = js.Dynamic.literal()
-    if (errors != null) __obj.updateDynamic("errors")(errors)
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableDataInsertAllResponseInsertErrors]
   }

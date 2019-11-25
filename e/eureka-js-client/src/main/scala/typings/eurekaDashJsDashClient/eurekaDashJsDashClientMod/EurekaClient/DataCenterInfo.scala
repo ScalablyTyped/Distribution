@@ -12,8 +12,8 @@ trait DataCenterInfo extends js.Object {
 object DataCenterInfo {
   @scala.inline
   def apply(name: DataCenterName, `@class`: String = null): DataCenterInfo = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (`@class` != null) __obj.updateDynamic("@class")(`@class`)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (`@class` != null) __obj.updateDynamic("@class")(`@class`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataCenterInfo]
   }
 }

@@ -52,12 +52,12 @@ object SpreadsheetProperties {
     title: String = null
   ): SpreadsheetProperties = {
     val __obj = js.Dynamic.literal()
-    if (autoRecalc != null) __obj.updateDynamic("autoRecalc")(autoRecalc)
-    if (defaultFormat != null) __obj.updateDynamic("defaultFormat")(defaultFormat)
-    if (iterativeCalculationSettings != null) __obj.updateDynamic("iterativeCalculationSettings")(iterativeCalculationSettings)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (autoRecalc != null) __obj.updateDynamic("autoRecalc")(autoRecalc.asInstanceOf[js.Any])
+    if (defaultFormat != null) __obj.updateDynamic("defaultFormat")(defaultFormat.asInstanceOf[js.Any])
+    if (iterativeCalculationSettings != null) __obj.updateDynamic("iterativeCalculationSettings")(iterativeCalculationSettings.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
+    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpreadsheetProperties]
   }
 }

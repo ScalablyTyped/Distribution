@@ -26,13 +26,13 @@ object DeliveryTime {
     transitTimeTable: TransitTable = null
   ): DeliveryTime = {
     val __obj = js.Dynamic.literal()
-    if (cutoffTime != null) __obj.updateDynamic("cutoffTime")(cutoffTime)
-    if (holidayCutoffs != null) __obj.updateDynamic("holidayCutoffs")(holidayCutoffs)
+    if (cutoffTime != null) __obj.updateDynamic("cutoffTime")(cutoffTime.asInstanceOf[js.Any])
+    if (holidayCutoffs != null) __obj.updateDynamic("holidayCutoffs")(holidayCutoffs.asInstanceOf[js.Any])
     if (maxHandlingTimeInDays != null) __obj.updateDynamic("maxHandlingTimeInDays")(maxHandlingTimeInDays.asInstanceOf[js.Any])
     if (maxTransitTimeInDays != null) __obj.updateDynamic("maxTransitTimeInDays")(maxTransitTimeInDays.asInstanceOf[js.Any])
     if (minHandlingTimeInDays != null) __obj.updateDynamic("minHandlingTimeInDays")(minHandlingTimeInDays.asInstanceOf[js.Any])
     if (minTransitTimeInDays != null) __obj.updateDynamic("minTransitTimeInDays")(minTransitTimeInDays.asInstanceOf[js.Any])
-    if (transitTimeTable != null) __obj.updateDynamic("transitTimeTable")(transitTimeTable)
+    if (transitTimeTable != null) __obj.updateDynamic("transitTimeTable")(transitTimeTable.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeliveryTime]
   }
 }

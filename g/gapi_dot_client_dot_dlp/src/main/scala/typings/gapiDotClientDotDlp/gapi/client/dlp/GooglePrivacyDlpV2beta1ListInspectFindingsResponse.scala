@@ -18,8 +18,8 @@ object GooglePrivacyDlpV2beta1ListInspectFindingsResponse {
   @scala.inline
   def apply(nextPageToken: String = null, result: GooglePrivacyDlpV2beta1InspectResult = null): GooglePrivacyDlpV2beta1ListInspectFindingsResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (result != null) __obj.updateDynamic("result")(result)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1ListInspectFindingsResponse]
   }
 }

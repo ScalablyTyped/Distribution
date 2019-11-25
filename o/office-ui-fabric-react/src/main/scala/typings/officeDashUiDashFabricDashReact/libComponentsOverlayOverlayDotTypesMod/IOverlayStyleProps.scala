@@ -32,10 +32,10 @@ object IOverlayStyleProps {
     isDark: js.UndefOr[Boolean] = js.undefined,
     isNone: js.UndefOr[Boolean] = js.undefined
   ): IOverlayStyleProps = {
-    val __obj = js.Dynamic.literal(theme = theme)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(isDark)) __obj.updateDynamic("isDark")(isDark)
-    if (!js.isUndefined(isNone)) __obj.updateDynamic("isNone")(isNone)
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDark)) __obj.updateDynamic("isDark")(isDark.asInstanceOf[js.Any])
+    if (!js.isUndefined(isNone)) __obj.updateDynamic("isNone")(isNone.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOverlayStyleProps]
   }
 }

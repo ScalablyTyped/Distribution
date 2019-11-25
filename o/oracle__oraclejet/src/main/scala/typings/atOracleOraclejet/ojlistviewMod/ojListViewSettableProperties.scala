@@ -61,7 +61,7 @@ object ojListViewSettableProperties {
     selectionRequired: Boolean,
     translations: Anon_AccessibleNavigateSkipItems
   ): ojListViewSettableProperties[K, D] = {
-    val __obj = js.Dynamic.literal(as = as, currentItem = currentItem.asInstanceOf[js.Any], data = data, dnd = dnd, drillMode = drillMode.asInstanceOf[js.Any], expanded = expanded, firstSelectedItem = firstSelectedItem, groupHeaderPosition = groupHeaderPosition.asInstanceOf[js.Any], item = item, scrollPolicy = scrollPolicy.asInstanceOf[js.Any], scrollPolicyOptions = scrollPolicyOptions, scrollPosition = scrollPosition, selection = selection, selectionMode = selectionMode.asInstanceOf[js.Any], selectionRequired = selectionRequired, translations = translations)
+    val __obj = js.Dynamic.literal(as = as.asInstanceOf[js.Any], currentItem = currentItem.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], dnd = dnd.asInstanceOf[js.Any], drillMode = drillMode.asInstanceOf[js.Any], expanded = expanded.asInstanceOf[js.Any], firstSelectedItem = firstSelectedItem.asInstanceOf[js.Any], groupHeaderPosition = groupHeaderPosition.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], scrollPolicy = scrollPolicy.asInstanceOf[js.Any], scrollPolicyOptions = scrollPolicyOptions.asInstanceOf[js.Any], scrollPosition = scrollPosition.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any], selectionMode = selectionMode.asInstanceOf[js.Any], selectionRequired = selectionRequired.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ojListViewSettableProperties[K, D]]
   }

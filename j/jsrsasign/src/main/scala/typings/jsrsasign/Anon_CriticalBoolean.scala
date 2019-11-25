@@ -11,7 +11,7 @@ trait Anon_CriticalBoolean extends js.Object {
 object Anon_CriticalBoolean {
   @scala.inline
   def apply(critical: Boolean): Anon_CriticalBoolean = {
-    val __obj = js.Dynamic.literal(critical = critical)
+    val __obj = js.Dynamic.literal(critical = critical.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CriticalBoolean]
   }

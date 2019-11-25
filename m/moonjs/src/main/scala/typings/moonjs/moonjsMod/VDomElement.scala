@@ -22,9 +22,9 @@ object VDomElement {
     `type`: String,
     `val`: String
   ): VDomElement = {
-    val __obj = js.Dynamic.literal(children = children, meta = meta, props = props)
-    __obj.updateDynamic("type")(`type`)
-    __obj.updateDynamic("val")(`val`)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("val")(`val`.asInstanceOf[js.Any])
     __obj.asInstanceOf[VDomElement]
   }
 }

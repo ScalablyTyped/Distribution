@@ -32,16 +32,16 @@ object SubscribeOptions {
     withoutTenantId: js.UndefOr[Boolean] = js.undefined
   ): SubscribeOptions = {
     val __obj = js.Dynamic.literal()
-    if (businessKey != null) __obj.updateDynamic("businessKey")(businessKey)
+    if (businessKey != null) __obj.updateDynamic("businessKey")(businessKey.asInstanceOf[js.Any])
     if (lockDuration != null) __obj.updateDynamic("lockDuration")(lockDuration.asInstanceOf[js.Any])
-    if (processDefinitionId != null) __obj.updateDynamic("processDefinitionId")(processDefinitionId)
-    if (processDefinitionIdIn != null) __obj.updateDynamic("processDefinitionIdIn")(processDefinitionIdIn)
-    if (processDefinitionKey != null) __obj.updateDynamic("processDefinitionKey")(processDefinitionKey)
-    if (processDefinitionKeyIn != null) __obj.updateDynamic("processDefinitionKeyIn")(processDefinitionKeyIn)
-    if (processDefinitionVersionTag != null) __obj.updateDynamic("processDefinitionVersionTag")(processDefinitionVersionTag)
-    if (tenantIdIn != null) __obj.updateDynamic("tenantIdIn")(tenantIdIn)
-    if (variables != null) __obj.updateDynamic("variables")(variables)
-    if (!js.isUndefined(withoutTenantId)) __obj.updateDynamic("withoutTenantId")(withoutTenantId)
+    if (processDefinitionId != null) __obj.updateDynamic("processDefinitionId")(processDefinitionId.asInstanceOf[js.Any])
+    if (processDefinitionIdIn != null) __obj.updateDynamic("processDefinitionIdIn")(processDefinitionIdIn.asInstanceOf[js.Any])
+    if (processDefinitionKey != null) __obj.updateDynamic("processDefinitionKey")(processDefinitionKey.asInstanceOf[js.Any])
+    if (processDefinitionKeyIn != null) __obj.updateDynamic("processDefinitionKeyIn")(processDefinitionKeyIn.asInstanceOf[js.Any])
+    if (processDefinitionVersionTag != null) __obj.updateDynamic("processDefinitionVersionTag")(processDefinitionVersionTag.asInstanceOf[js.Any])
+    if (tenantIdIn != null) __obj.updateDynamic("tenantIdIn")(tenantIdIn.asInstanceOf[js.Any])
+    if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
+    if (!js.isUndefined(withoutTenantId)) __obj.updateDynamic("withoutTenantId")(withoutTenantId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscribeOptions]
   }
 }

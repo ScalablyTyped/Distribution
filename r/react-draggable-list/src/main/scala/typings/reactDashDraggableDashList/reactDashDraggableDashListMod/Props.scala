@@ -45,16 +45,16 @@ object Props {
     springConfig: js.Object = null,
     unsetZIndex: js.UndefOr[Boolean] = js.undefined
   ): Props[I, C, T] = {
-    val __obj = js.Dynamic.literal(itemKey = itemKey.asInstanceOf[js.Any], list = list, template = template)
+    val __obj = js.Dynamic.literal(itemKey = itemKey.asInstanceOf[js.Any], list = list.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any])
     if (autoScrollMaxSpeed != null) __obj.updateDynamic("autoScrollMaxSpeed")(autoScrollMaxSpeed.asInstanceOf[js.Any])
     if (autoScrollRegionSize != null) __obj.updateDynamic("autoScrollRegionSize")(autoScrollRegionSize.asInstanceOf[js.Any])
     if (commonProps != null) __obj.updateDynamic("commonProps")(commonProps.asInstanceOf[js.Any])
-    if (!js.isUndefined(constrainDrag)) __obj.updateDynamic("constrainDrag")(constrainDrag)
+    if (!js.isUndefined(constrainDrag)) __obj.updateDynamic("constrainDrag")(constrainDrag.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(js.Any.fromFunction0(container))
     if (onMoveEnd != null) __obj.updateDynamic("onMoveEnd")(js.Any.fromFunction4(onMoveEnd))
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (springConfig != null) __obj.updateDynamic("springConfig")(springConfig)
-    if (!js.isUndefined(unsetZIndex)) __obj.updateDynamic("unsetZIndex")(unsetZIndex)
+    if (springConfig != null) __obj.updateDynamic("springConfig")(springConfig.asInstanceOf[js.Any])
+    if (!js.isUndefined(unsetZIndex)) __obj.updateDynamic("unsetZIndex")(unsetZIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props[I, C, T]]
   }
 }

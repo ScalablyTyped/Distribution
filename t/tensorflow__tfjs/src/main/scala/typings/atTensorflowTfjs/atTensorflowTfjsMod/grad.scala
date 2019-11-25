@@ -1,6 +1,5 @@
 package typings.atTensorflowTfjs.atTensorflowTfjsMod
 
-import typings.atTensorflowTfjsDashCore.distTypesMod.Rank
 import typings.atTensorflowTfjsDashCore.distTypesMod.TensorLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -44,13 +43,15 @@ object grad extends js.Object {
   /** @doc {heading: 'Training', subheading: 'Gradients'} */
   def apply(
     f: js.Function1[
-      /* x */ typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank], 
-      typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank]
+      /* x */ typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank], 
+      typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
     ]
   ): js.Function2[
-    /* x */ TensorLike | typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank], 
-    /* dy */ js.UndefOr[TensorLike | typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank]], 
-    typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank]
+    /* x */ TensorLike | typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank], 
+    /* dy */ js.UndefOr[
+      TensorLike | typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
+    ], 
+    typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
   ] = js.native
 }
 

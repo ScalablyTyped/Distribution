@@ -27,7 +27,7 @@ object Anon_Del {
     set: js.Function,
     wrap: js.Function
   ): Anon_Del = {
-    val __obj = js.Dynamic.literal(del = del, get = get, getAndPassUp = getAndPassUp, mget = mget, mset = mset, reset = reset, set = set, wrap = wrap)
+    val __obj = js.Dynamic.literal(del = del.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], getAndPassUp = getAndPassUp.asInstanceOf[js.Any], mget = mget.asInstanceOf[js.Any], mset = mset.asInstanceOf[js.Any], reset = reset.asInstanceOf[js.Any], set = set.asInstanceOf[js.Any], wrap = wrap.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Del]
   }

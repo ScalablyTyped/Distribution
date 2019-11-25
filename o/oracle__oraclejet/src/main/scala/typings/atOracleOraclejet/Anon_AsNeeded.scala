@@ -52,7 +52,7 @@ object Anon_AsNeeded {
     titleHalign: center | end | start,
     titleStyle: js.Object
   ): Anon_AsNeeded = {
-    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, borderColor = borderColor, maxSize = maxSize, position = position.asInstanceOf[js.Any], referenceObjectSection = referenceObjectSection, rendered = rendered.asInstanceOf[js.Any], scrolling = scrolling.asInstanceOf[js.Any], sections = sections, seriesSection = seriesSection, size = size, symbolHeight = symbolHeight, symbolWidth = symbolWidth, textStyle = textStyle, title = title, titleHalign = titleHalign.asInstanceOf[js.Any], titleStyle = titleStyle)
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], borderColor = borderColor.asInstanceOf[js.Any], maxSize = maxSize.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], referenceObjectSection = referenceObjectSection.asInstanceOf[js.Any], rendered = rendered.asInstanceOf[js.Any], scrolling = scrolling.asInstanceOf[js.Any], sections = sections.asInstanceOf[js.Any], seriesSection = seriesSection.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], symbolHeight = symbolHeight.asInstanceOf[js.Any], symbolWidth = symbolWidth.asInstanceOf[js.Any], textStyle = textStyle.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], titleHalign = titleHalign.asInstanceOf[js.Any], titleStyle = titleStyle.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AsNeeded]
   }

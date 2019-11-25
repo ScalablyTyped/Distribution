@@ -22,7 +22,7 @@ object FooterRendererContext {
     footerContext: Anon_DatasourceD[K, D],
     parentElement: Element
   ): FooterRendererContext[K, D] = {
-    val __obj = js.Dynamic.literal(columnIndex = columnIndex, componentElement = componentElement, footerContext = footerContext, parentElement = parentElement)
+    val __obj = js.Dynamic.literal(columnIndex = columnIndex.asInstanceOf[js.Any], componentElement = componentElement.asInstanceOf[js.Any], footerContext = footerContext.asInstanceOf[js.Any], parentElement = parentElement.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FooterRendererContext[K, D]]
   }

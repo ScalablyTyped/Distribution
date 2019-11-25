@@ -60,13 +60,13 @@ object BeginOptions {
     writer: XMLWriter | WriterOptions = null
   ): BeginOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ignoreDecorators)) __obj.updateDynamic("ignoreDecorators")(ignoreDecorators)
-    if (!js.isUndefined(keepNullAttributes)) __obj.updateDynamic("keepNullAttributes")(keepNullAttributes)
-    if (!js.isUndefined(keepNullNodes)) __obj.updateDynamic("keepNullNodes")(keepNullNodes)
-    if (!js.isUndefined(noDoubleEncoding)) __obj.updateDynamic("noDoubleEncoding")(noDoubleEncoding)
-    if (!js.isUndefined(noValidation)) __obj.updateDynamic("noValidation")(noValidation)
-    if (!js.isUndefined(separateArrayItems)) __obj.updateDynamic("separateArrayItems")(separateArrayItems)
-    if (stringify != null) __obj.updateDynamic("stringify")(stringify)
+    if (!js.isUndefined(ignoreDecorators)) __obj.updateDynamic("ignoreDecorators")(ignoreDecorators.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepNullAttributes)) __obj.updateDynamic("keepNullAttributes")(keepNullAttributes.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepNullNodes)) __obj.updateDynamic("keepNullNodes")(keepNullNodes.asInstanceOf[js.Any])
+    if (!js.isUndefined(noDoubleEncoding)) __obj.updateDynamic("noDoubleEncoding")(noDoubleEncoding.asInstanceOf[js.Any])
+    if (!js.isUndefined(noValidation)) __obj.updateDynamic("noValidation")(noValidation.asInstanceOf[js.Any])
+    if (!js.isUndefined(separateArrayItems)) __obj.updateDynamic("separateArrayItems")(separateArrayItems.asInstanceOf[js.Any])
+    if (stringify != null) __obj.updateDynamic("stringify")(stringify.asInstanceOf[js.Any])
     if (writer != null) __obj.updateDynamic("writer")(writer.asInstanceOf[js.Any])
     __obj.asInstanceOf[BeginOptions]
   }

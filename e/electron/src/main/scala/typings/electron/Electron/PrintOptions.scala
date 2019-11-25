@@ -27,9 +27,9 @@ object PrintOptions {
     silent: js.UndefOr[Boolean] = js.undefined
   ): PrintOptions = {
     val __obj = js.Dynamic.literal()
-    if (deviceName != null) __obj.updateDynamic("deviceName")(deviceName)
-    if (!js.isUndefined(printBackground)) __obj.updateDynamic("printBackground")(printBackground)
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    if (deviceName != null) __obj.updateDynamic("deviceName")(deviceName.asInstanceOf[js.Any])
+    if (!js.isUndefined(printBackground)) __obj.updateDynamic("printBackground")(printBackground.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrintOptions]
   }
 }

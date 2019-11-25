@@ -37,19 +37,19 @@ object FontFaceConfiguration {
     localFonts: js.Array[String] = null,
     unicodeRange: String = null
   ): FontFaceConfiguration = {
-    val __obj = js.Dynamic.literal(fontFamily = fontFamily)
-    if (fileFormats != null) __obj.updateDynamic("fileFormats")(fileFormats)
-    if (fontDisplay != null) __obj.updateDynamic("fontDisplay")(fontDisplay)
-    if (fontFeatureSettings != null) __obj.updateDynamic("fontFeatureSettings")(fontFeatureSettings)
-    if (fontFilePath != null) __obj.updateDynamic("fontFilePath")(fontFilePath)
-    if (fontStretch != null) __obj.updateDynamic("fontStretch")(fontStretch)
-    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle)
-    if (fontVariant != null) __obj.updateDynamic("fontVariant")(fontVariant)
-    if (fontVariationSettings != null) __obj.updateDynamic("fontVariationSettings")(fontVariationSettings)
-    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight)
-    if (!js.isUndefined(formatHint)) __obj.updateDynamic("formatHint")(formatHint)
-    if (localFonts != null) __obj.updateDynamic("localFonts")(localFonts)
-    if (unicodeRange != null) __obj.updateDynamic("unicodeRange")(unicodeRange)
+    val __obj = js.Dynamic.literal(fontFamily = fontFamily.asInstanceOf[js.Any])
+    if (fileFormats != null) __obj.updateDynamic("fileFormats")(fileFormats.asInstanceOf[js.Any])
+    if (fontDisplay != null) __obj.updateDynamic("fontDisplay")(fontDisplay.asInstanceOf[js.Any])
+    if (fontFeatureSettings != null) __obj.updateDynamic("fontFeatureSettings")(fontFeatureSettings.asInstanceOf[js.Any])
+    if (fontFilePath != null) __obj.updateDynamic("fontFilePath")(fontFilePath.asInstanceOf[js.Any])
+    if (fontStretch != null) __obj.updateDynamic("fontStretch")(fontStretch.asInstanceOf[js.Any])
+    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
+    if (fontVariant != null) __obj.updateDynamic("fontVariant")(fontVariant.asInstanceOf[js.Any])
+    if (fontVariationSettings != null) __obj.updateDynamic("fontVariationSettings")(fontVariationSettings.asInstanceOf[js.Any])
+    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(formatHint)) __obj.updateDynamic("formatHint")(formatHint.asInstanceOf[js.Any])
+    if (localFonts != null) __obj.updateDynamic("localFonts")(localFonts.asInstanceOf[js.Any])
+    if (unicodeRange != null) __obj.updateDynamic("unicodeRange")(unicodeRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[FontFaceConfiguration]
   }
 }

@@ -18,7 +18,7 @@ object KnockoutValidationGroup {
     isValid: () => Boolean = null
   ): KnockoutValidationGroup = {
     val __obj = js.Dynamic.literal()
-    if (errors != null) __obj.updateDynamic("errors")(errors)
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
     if (isAnyMessageShown != null) __obj.updateDynamic("isAnyMessageShown")(js.Any.fromFunction0(isAnyMessageShown))
     if (isValid != null) __obj.updateDynamic("isValid")(js.Any.fromFunction0(isValid))
     __obj.asInstanceOf[KnockoutValidationGroup]

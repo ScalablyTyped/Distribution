@@ -41,8 +41,8 @@ trait defaultEllipse extends js.Object {
 object defaultEllipse {
   @scala.inline
   def apply(cx: Double, cy: Double, rx: Double, ry: Double, `type`: String): defaultEllipse = {
-    val __obj = js.Dynamic.literal(cx = cx, cy = cy, rx = rx, ry = ry)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(cx = cx.asInstanceOf[js.Any], cy = cy.asInstanceOf[js.Any], rx = rx.asInstanceOf[js.Any], ry = ry.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[defaultEllipse]
   }
 }

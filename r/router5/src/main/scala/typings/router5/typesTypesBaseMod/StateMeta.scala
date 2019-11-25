@@ -15,8 +15,8 @@ trait StateMeta extends js.Object {
 object StateMeta {
   @scala.inline
   def apply(id: Double, options: NavigationOptions, params: Params, redirected: Boolean, source: String = null): StateMeta = {
-    val __obj = js.Dynamic.literal(id = id, options = options, params = params, redirected = redirected)
-    if (source != null) __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], redirected = redirected.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[StateMeta]
   }
 }

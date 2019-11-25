@@ -11,7 +11,7 @@ trait Anon_CorrelationId extends js.Object {
 object Anon_CorrelationId {
   @scala.inline
   def apply(correlationId: Double): Anon_CorrelationId = {
-    val __obj = js.Dynamic.literal(correlationId = correlationId)
+    val __obj = js.Dynamic.literal(correlationId = correlationId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CorrelationId]
   }

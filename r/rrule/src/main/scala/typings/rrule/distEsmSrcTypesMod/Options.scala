@@ -51,23 +51,23 @@ object Options {
     until: Date = null,
     wkst: Weekday | Double = null
   ): Options = {
-    val __obj = js.Dynamic.literal(freq = freq, interval = interval)
+    val __obj = js.Dynamic.literal(freq = freq.asInstanceOf[js.Any], interval = interval.asInstanceOf[js.Any])
     if (byeaster != null) __obj.updateDynamic("byeaster")(byeaster.asInstanceOf[js.Any])
     if (byhour != null) __obj.updateDynamic("byhour")(byhour.asInstanceOf[js.Any])
     if (byminute != null) __obj.updateDynamic("byminute")(byminute.asInstanceOf[js.Any])
     if (bymonth != null) __obj.updateDynamic("bymonth")(bymonth.asInstanceOf[js.Any])
     if (bymonthday != null) __obj.updateDynamic("bymonthday")(bymonthday.asInstanceOf[js.Any])
-    if (bynmonthday != null) __obj.updateDynamic("bynmonthday")(bynmonthday)
-    if (bynweekday != null) __obj.updateDynamic("bynweekday")(bynweekday)
+    if (bynmonthday != null) __obj.updateDynamic("bynmonthday")(bynmonthday.asInstanceOf[js.Any])
+    if (bynweekday != null) __obj.updateDynamic("bynweekday")(bynweekday.asInstanceOf[js.Any])
     if (bysecond != null) __obj.updateDynamic("bysecond")(bysecond.asInstanceOf[js.Any])
     if (bysetpos != null) __obj.updateDynamic("bysetpos")(bysetpos.asInstanceOf[js.Any])
     if (byweekday != null) __obj.updateDynamic("byweekday")(byweekday.asInstanceOf[js.Any])
     if (byweekno != null) __obj.updateDynamic("byweekno")(byweekno.asInstanceOf[js.Any])
     if (byyearday != null) __obj.updateDynamic("byyearday")(byyearday.asInstanceOf[js.Any])
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (dtstart != null) __obj.updateDynamic("dtstart")(dtstart)
-    if (tzid != null) __obj.updateDynamic("tzid")(tzid)
-    if (until != null) __obj.updateDynamic("until")(until)
+    if (dtstart != null) __obj.updateDynamic("dtstart")(dtstart.asInstanceOf[js.Any])
+    if (tzid != null) __obj.updateDynamic("tzid")(tzid.asInstanceOf[js.Any])
+    if (until != null) __obj.updateDynamic("until")(until.asInstanceOf[js.Any])
     if (wkst != null) __obj.updateDynamic("wkst")(wkst.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

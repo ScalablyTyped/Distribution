@@ -36,11 +36,11 @@ object ModalProps {
     onBackgroundClick: /* event */ MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
     onEscapeKeydown: /* event */ Event => Unit = null
   ): ModalProps = {
-    val __obj = js.Dynamic.literal(isOpen = isOpen)
+    val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any])
     if (afterClose != null) __obj.updateDynamic("afterClose")(js.Any.fromFunction0(afterClose))
     if (afterOpen != null) __obj.updateDynamic("afterOpen")(js.Any.fromFunction0(afterOpen))
-    if (!js.isUndefined(allowScroll)) __obj.updateDynamic("allowScroll")(allowScroll)
-    if (backgroundProps != null) __obj.updateDynamic("backgroundProps")(backgroundProps)
+    if (!js.isUndefined(allowScroll)) __obj.updateDynamic("allowScroll")(allowScroll.asInstanceOf[js.Any])
+    if (backgroundProps != null) __obj.updateDynamic("backgroundProps")(backgroundProps.asInstanceOf[js.Any])
     if (beforeClose != null) __obj.updateDynamic("beforeClose")(beforeClose.asInstanceOf[js.Any])
     if (beforeOpen != null) __obj.updateDynamic("beforeOpen")(beforeOpen.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])

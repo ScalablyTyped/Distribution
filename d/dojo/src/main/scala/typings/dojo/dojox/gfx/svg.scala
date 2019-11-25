@@ -132,7 +132,7 @@ object svg {
     useSvgWeb: Boolean,
     xmlns: js.Object
   ): svg = {
-    val __obj = js.Dynamic.literal(Circle = js.Any.fromFunction0(Circle), Ellipse = js.Any.fromFunction0(Ellipse), Group = js.Any.fromFunction0(Group), Image = js.Any.fromFunction0(Image), Line = js.Any.fromFunction0(Line), Path = js.Any.fromFunction0(Path), Polyline = js.Any.fromFunction0(Polyline), Rect = js.Any.fromFunction0(Rect), Shape = js.Any.fromFunction0(Shape), Surface = js.Any.fromFunction0(Surface), Text = js.Any.fromFunction0(Text), TextPath = js.Any.fromFunction0(TextPath), attachNode = js.Any.fromFunction1(attachNode), attachSurface = js.Any.fromFunction1(attachSurface), createSurface = js.Any.fromFunction3(createSurface), dasharray = dasharray, fixTarget = js.Any.fromFunction2(fixTarget), getRef = js.Any.fromFunction1(getRef), useSvgWeb = useSvgWeb, xmlns = xmlns)
+    val __obj = js.Dynamic.literal(Circle = js.Any.fromFunction0(Circle), Ellipse = js.Any.fromFunction0(Ellipse), Group = js.Any.fromFunction0(Group), Image = js.Any.fromFunction0(Image), Line = js.Any.fromFunction0(Line), Path = js.Any.fromFunction0(Path), Polyline = js.Any.fromFunction0(Polyline), Rect = js.Any.fromFunction0(Rect), Shape = js.Any.fromFunction0(Shape), Surface = js.Any.fromFunction0(Surface), Text = js.Any.fromFunction0(Text), TextPath = js.Any.fromFunction0(TextPath), attachNode = js.Any.fromFunction1(attachNode), attachSurface = js.Any.fromFunction1(attachSurface), createSurface = js.Any.fromFunction3(createSurface), dasharray = dasharray.asInstanceOf[js.Any], fixTarget = js.Any.fromFunction2(fixTarget), getRef = js.Any.fromFunction1(getRef), useSvgWeb = useSvgWeb.asInstanceOf[js.Any], xmlns = xmlns.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[svg]
   }

@@ -20,7 +20,7 @@ object GoogleActionsV2Device {
   @scala.inline
   def apply(location: GoogleActionsV2Location = null): GoogleActionsV2Device = {
     val __obj = js.Dynamic.literal()
-    if (location != null) __obj.updateDynamic("location")(location)
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2Device]
   }
 }

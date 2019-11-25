@@ -13,7 +13,7 @@ object Anon_SourceSpan {
   @scala.inline
   def apply(sourceSpan: ParseSourceSpan = null): Anon_SourceSpan = {
     val __obj = js.Dynamic.literal()
-    if (sourceSpan != null) __obj.updateDynamic("sourceSpan")(sourceSpan)
+    if (sourceSpan != null) __obj.updateDynamic("sourceSpan")(sourceSpan.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_SourceSpan]
   }
 }

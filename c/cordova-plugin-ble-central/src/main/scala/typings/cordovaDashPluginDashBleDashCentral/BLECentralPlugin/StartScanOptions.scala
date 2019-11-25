@@ -12,7 +12,7 @@ object StartScanOptions {
   @scala.inline
   def apply(reportDuplicates: js.UndefOr[Boolean] = js.undefined): StartScanOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(reportDuplicates)) __obj.updateDynamic("reportDuplicates")(reportDuplicates)
+    if (!js.isUndefined(reportDuplicates)) __obj.updateDynamic("reportDuplicates")(reportDuplicates.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartScanOptions]
   }
 }

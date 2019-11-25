@@ -29,12 +29,12 @@ object IHelmetContentSecurityPolicyConfiguration {
     setAllHeaders: js.UndefOr[Boolean] = js.undefined
   ): IHelmetContentSecurityPolicyConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(browserSniff)) __obj.updateDynamic("browserSniff")(browserSniff)
-    if (directives != null) __obj.updateDynamic("directives")(directives)
-    if (!js.isUndefined(disableAndroid)) __obj.updateDynamic("disableAndroid")(disableAndroid)
-    if (!js.isUndefined(loose)) __obj.updateDynamic("loose")(loose)
+    if (!js.isUndefined(browserSniff)) __obj.updateDynamic("browserSniff")(browserSniff.asInstanceOf[js.Any])
+    if (directives != null) __obj.updateDynamic("directives")(directives.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableAndroid)) __obj.updateDynamic("disableAndroid")(disableAndroid.asInstanceOf[js.Any])
+    if (!js.isUndefined(loose)) __obj.updateDynamic("loose")(loose.asInstanceOf[js.Any])
     if (reportOnly != null) __obj.updateDynamic("reportOnly")(reportOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(setAllHeaders)) __obj.updateDynamic("setAllHeaders")(setAllHeaders)
+    if (!js.isUndefined(setAllHeaders)) __obj.updateDynamic("setAllHeaders")(setAllHeaders.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHelmetContentSecurityPolicyConfiguration]
   }
 }

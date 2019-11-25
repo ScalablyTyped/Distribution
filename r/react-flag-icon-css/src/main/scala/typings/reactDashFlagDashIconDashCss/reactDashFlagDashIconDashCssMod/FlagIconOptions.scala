@@ -34,9 +34,9 @@ object FlagIconOptions {
     useCssModules: js.UndefOr[Boolean] = js.undefined
   ): FlagIconOptions = {
     val __obj = js.Dynamic.literal()
-    if (customCodes != null) __obj.updateDynamic("customCodes")(customCodes)
-    if (themeStyles != null) __obj.updateDynamic("themeStyles")(themeStyles)
-    if (!js.isUndefined(useCssModules)) __obj.updateDynamic("useCssModules")(useCssModules)
+    if (customCodes != null) __obj.updateDynamic("customCodes")(customCodes.asInstanceOf[js.Any])
+    if (themeStyles != null) __obj.updateDynamic("themeStyles")(themeStyles.asInstanceOf[js.Any])
+    if (!js.isUndefined(useCssModules)) __obj.updateDynamic("useCssModules")(useCssModules.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlagIconOptions]
   }
 }

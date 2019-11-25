@@ -17,7 +17,7 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (cmp != null) __obj.updateDynamic("cmp")(js.Any.fromFunction2(cmp))
-    if (!js.isUndefined(cycles)) __obj.updateDynamic("cycles")(cycles)
+    if (!js.isUndefined(cycles)) __obj.updateDynamic("cycles")(cycles.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

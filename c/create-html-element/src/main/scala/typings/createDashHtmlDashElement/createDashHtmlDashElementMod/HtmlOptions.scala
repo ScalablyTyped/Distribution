@@ -15,7 +15,7 @@ object HtmlOptions {
   @scala.inline
   def apply(html: String = null): HtmlOptions = {
     val __obj = js.Dynamic.literal()
-    if (html != null) __obj.updateDynamic("html")(html)
+    if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
     __obj.asInstanceOf[HtmlOptions]
   }
 }

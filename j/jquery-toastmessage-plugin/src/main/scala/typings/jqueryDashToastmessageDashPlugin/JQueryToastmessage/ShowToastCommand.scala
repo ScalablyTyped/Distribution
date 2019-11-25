@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait ShowToastCommand extends js.Object
 
+object ShowToastCommand {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def showErrorToast: typings.jqueryDashToastmessageDashPlugin.jqueryDashToastmessageDashPluginStrings.showErrorToast = this.cast("showErrorToast")
+  @scala.inline
+  def showNoticeToast: typings.jqueryDashToastmessageDashPlugin.jqueryDashToastmessageDashPluginStrings.showNoticeToast = this.cast("showNoticeToast")
+  @scala.inline
+  def showSuccessToast: typings.jqueryDashToastmessageDashPlugin.jqueryDashToastmessageDashPluginStrings.showSuccessToast = this.cast("showSuccessToast")
+  @scala.inline
+  def showWarningToast: typings.jqueryDashToastmessageDashPlugin.jqueryDashToastmessageDashPluginStrings.showWarningToast = this.cast("showWarningToast")
+}
+

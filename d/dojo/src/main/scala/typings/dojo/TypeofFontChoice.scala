@@ -91,7 +91,7 @@ object TypeofFontChoice {
       _FormatBlockDropDown
     ]
   ): TypeofFontChoice = {
-    val __obj = js.Dynamic.literal(_FontDropDown = _FontDropDown, _FontNameDropDown = _FontNameDropDown, _FontSizeDropDown = _FontSizeDropDown, _FormatBlockDropDown = _FormatBlockDropDown)
+    val __obj = js.Dynamic.literal(_FontDropDown = _FontDropDown.asInstanceOf[js.Any], _FontNameDropDown = _FontNameDropDown.asInstanceOf[js.Any], _FontSizeDropDown = _FontSizeDropDown.asInstanceOf[js.Any], _FormatBlockDropDown = _FormatBlockDropDown.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeofFontChoice]
   }

@@ -28,8 +28,8 @@ object TextRiskIdentificationOptions {
     fail: js.Any => Unit = null,
     success: /* res */ Anon_Fail => Unit = null
   ): TextRiskIdentificationOptions = {
-    val __obj = js.Dynamic.literal(content = content)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))

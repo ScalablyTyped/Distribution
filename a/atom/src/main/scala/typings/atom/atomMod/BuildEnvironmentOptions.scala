@@ -35,11 +35,11 @@ object BuildEnvironmentOptions {
     window: Window = null
   ): BuildEnvironmentOptions = {
     val __obj = js.Dynamic.literal()
-    if (applicationDelegate != null) __obj.updateDynamic("applicationDelegate")(applicationDelegate)
-    if (configDirPath != null) __obj.updateDynamic("configDirPath")(configDirPath)
-    if (document != null) __obj.updateDynamic("document")(document)
-    if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence)
-    if (window != null) __obj.updateDynamic("window")(window)
+    if (applicationDelegate != null) __obj.updateDynamic("applicationDelegate")(applicationDelegate.asInstanceOf[js.Any])
+    if (configDirPath != null) __obj.updateDynamic("configDirPath")(configDirPath.asInstanceOf[js.Any])
+    if (document != null) __obj.updateDynamic("document")(document.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence.asInstanceOf[js.Any])
+    if (window != null) __obj.updateDynamic("window")(window.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildEnvironmentOptions]
   }
 }

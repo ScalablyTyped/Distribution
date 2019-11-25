@@ -14,7 +14,7 @@ object Anon_ScopeSettingScope {
   @scala.inline
   def apply(scope: SettingScope = null): Anon_ScopeSettingScope = {
     val __obj = js.Dynamic.literal()
-    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ScopeSettingScope]
   }
 }

@@ -11,7 +11,7 @@ trait ISelectProvider extends js.Object {
 object ISelectProvider {
   @scala.inline
   def apply(defaults: ISelectOptions): ISelectProvider = {
-    val __obj = js.Dynamic.literal(defaults = defaults)
+    val __obj = js.Dynamic.literal(defaults = defaults.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISelectProvider]
   }

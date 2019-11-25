@@ -37,12 +37,12 @@ object Anon_Algorithm {
     subject: String = null
   ): Anon_Algorithm = {
     val __obj = js.Dynamic.literal()
-    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm)
-    if (audience != null) __obj.updateDynamic("audience")(audience)
-    if (expiresIn != null) __obj.updateDynamic("expiresIn")(expiresIn)
-    if (header != null) __obj.updateDynamic("header")(header)
-    if (issuer != null) __obj.updateDynamic("issuer")(issuer)
-    if (subject != null) __obj.updateDynamic("subject")(subject)
+    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
+    if (audience != null) __obj.updateDynamic("audience")(audience.asInstanceOf[js.Any])
+    if (expiresIn != null) __obj.updateDynamic("expiresIn")(expiresIn.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (issuer != null) __obj.updateDynamic("issuer")(issuer.asInstanceOf[js.Any])
+    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Algorithm]
   }
 }

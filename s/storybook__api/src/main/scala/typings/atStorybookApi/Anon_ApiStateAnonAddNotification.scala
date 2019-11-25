@@ -13,7 +13,7 @@ trait Anon_ApiStateAnonAddNotification extends js.Object {
 object Anon_ApiStateAnonAddNotification {
   @scala.inline
   def apply(api: Anon_AddNotification, state: SubState): Anon_ApiStateAnonAddNotification = {
-    val __obj = js.Dynamic.literal(api = api, state = state)
+    val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ApiStateAnonAddNotification]
   }

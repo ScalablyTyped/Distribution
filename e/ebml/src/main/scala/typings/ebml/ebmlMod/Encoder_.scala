@@ -21,12 +21,12 @@ class Encoder_ () extends Transform {
     * @param info an information object with an `end` parameter
     */
   def startTag(
-    tagName: /* import warning: ImportType.apply Failed type conversion: ebml.ebml.EBMLTagSchema['name'] */ js.Any,
+    tagName: /* import warning: importer.ImportType#apply Failed type conversion: ebml.ebml.EBMLTagSchema['name'] */ js.Any,
     info: Pick[TagStackItem, end]
   ): Unit = js.native
   @JSName("writeTag")
   def writeTag_name(
-    tagName: /* import warning: ImportType.apply Failed type conversion: ebml.ebml.EBMLTagSchema['name'] */ js.Any,
+    tagName: /* import warning: importer.ImportType#apply Failed type conversion: ebml.ebml.EBMLTagSchema['name'] */ js.Any,
     tagData: Buffer
   ): Unit = js.native
 }

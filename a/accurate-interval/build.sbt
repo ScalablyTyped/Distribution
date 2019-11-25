@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "accurate-interval"
-version := "1.0-dt-20191011Z-ef40fe"
+version := "1.0-dt-20191011Z-7d02d1"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

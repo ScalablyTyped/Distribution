@@ -13,7 +13,7 @@ trait MetricQuickPulse extends js.Object {
 object MetricQuickPulse {
   @scala.inline
   def apply(Name: String, Value: Double, Weight: Double): MetricQuickPulse = {
-    val __obj = js.Dynamic.literal(Name = Name, Value = Value, Weight = Weight)
+    val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any], Weight = Weight.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MetricQuickPulse]
   }

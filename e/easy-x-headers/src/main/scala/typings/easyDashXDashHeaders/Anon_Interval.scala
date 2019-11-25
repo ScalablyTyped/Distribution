@@ -14,7 +14,7 @@ object Anon_Interval {
   def apply(interval: Int | Double = null, persistent: js.UndefOr[Boolean] = js.undefined): Anon_Interval = {
     val __obj = js.Dynamic.literal()
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (!js.isUndefined(persistent)) __obj.updateDynamic("persistent")(persistent)
+    if (!js.isUndefined(persistent)) __obj.updateDynamic("persistent")(persistent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Interval]
   }
 }

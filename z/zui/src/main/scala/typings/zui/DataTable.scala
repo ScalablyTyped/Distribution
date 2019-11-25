@@ -11,7 +11,7 @@ trait DataTable extends js.Object {
 object DataTable {
   @scala.inline
   def apply(checks: Anon_CheckedAll): DataTable = {
-    val __obj = js.Dynamic.literal(checks = checks)
+    val __obj = js.Dynamic.literal(checks = checks.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DataTable]
   }

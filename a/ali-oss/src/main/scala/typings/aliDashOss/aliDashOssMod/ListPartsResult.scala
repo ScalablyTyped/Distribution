@@ -29,7 +29,7 @@ object ListPartsResult {
     res: NormalSuccessResponse,
     uploadId: String
   ): ListPartsResult = {
-    val __obj = js.Dynamic.literal(PartNumberMarker = PartNumberMarker, bucket = bucket, isTruncated = isTruncated, maxParts = maxParts, name = name, nextPartNumberMarker = nextPartNumberMarker, parts = parts, res = res, uploadId = uploadId)
+    val __obj = js.Dynamic.literal(PartNumberMarker = PartNumberMarker.asInstanceOf[js.Any], bucket = bucket.asInstanceOf[js.Any], isTruncated = isTruncated.asInstanceOf[js.Any], maxParts = maxParts.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nextPartNumberMarker = nextPartNumberMarker.asInstanceOf[js.Any], parts = parts.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any], uploadId = uploadId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ListPartsResult]
   }

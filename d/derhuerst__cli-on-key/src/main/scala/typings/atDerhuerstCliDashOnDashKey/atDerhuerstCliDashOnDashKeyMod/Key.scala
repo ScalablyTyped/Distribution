@@ -26,9 +26,9 @@ object Key {
     code: String = null,
     name: String = null
   ): Key = {
-    val __obj = js.Dynamic.literal(ctrl = ctrl, meta = meta, raw = raw, sequence = sequence, shift = shift)
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (name != null) __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(ctrl = ctrl.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], sequence = sequence.asInstanceOf[js.Any], shift = shift.asInstanceOf[js.Any])
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Key]
   }
 }

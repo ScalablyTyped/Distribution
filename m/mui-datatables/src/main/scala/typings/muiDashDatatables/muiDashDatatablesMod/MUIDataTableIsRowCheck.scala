@@ -14,7 +14,7 @@ trait MUIDataTableIsRowCheck extends js.Object {
 object MUIDataTableIsRowCheck {
   @scala.inline
   def apply(data: js.Array[Anon_DataIndexIndex], lookup: Anon_DataIndex): MUIDataTableIsRowCheck = {
-    val __obj = js.Dynamic.literal(data = data, lookup = lookup)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], lookup = lookup.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MUIDataTableIsRowCheck]
   }

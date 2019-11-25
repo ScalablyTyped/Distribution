@@ -13,7 +13,7 @@ trait Anon_Rules[S /* <: Schema[_, _] */] extends js.Object {
 object Anon_Rules {
   @scala.inline
   def apply[S /* <: Schema[_, _] */](rules: js.Array[InputRule[S]]): Anon_Rules[S] = {
-    val __obj = js.Dynamic.literal(rules = rules)
+    val __obj = js.Dynamic.literal(rules = rules.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Rules[S]]
   }

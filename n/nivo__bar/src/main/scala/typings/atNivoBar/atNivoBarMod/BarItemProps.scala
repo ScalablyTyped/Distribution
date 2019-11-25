@@ -53,7 +53,7 @@ object BarItemProps {
     x: Double,
     y: Double
   ): BarItemProps = {
-    val __obj = js.Dynamic.literal(borderColor = borderColor, borderRadius = borderRadius, borderWidth = borderWidth, color = color, data = data, height = height, hideTooltip = js.Any.fromFunction0(hideTooltip), label = label, labelColor = labelColor, onClick = js.Any.fromFunction2(onClick), shouldRenderLabel = shouldRenderLabel, showTooltip = js.Any.fromFunction2(showTooltip), theme = theme, tooltip = tooltip, tooltipFormat = tooltipFormat.asInstanceOf[js.Any], width = width, x = x, y = y)
+    val __obj = js.Dynamic.literal(borderColor = borderColor.asInstanceOf[js.Any], borderRadius = borderRadius.asInstanceOf[js.Any], borderWidth = borderWidth.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], hideTooltip = js.Any.fromFunction0(hideTooltip), label = label.asInstanceOf[js.Any], labelColor = labelColor.asInstanceOf[js.Any], onClick = js.Any.fromFunction2(onClick), shouldRenderLabel = shouldRenderLabel.asInstanceOf[js.Any], showTooltip = js.Any.fromFunction2(showTooltip), theme = theme.asInstanceOf[js.Any], tooltip = tooltip.asInstanceOf[js.Any], tooltipFormat = tooltipFormat.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BarItemProps]
   }

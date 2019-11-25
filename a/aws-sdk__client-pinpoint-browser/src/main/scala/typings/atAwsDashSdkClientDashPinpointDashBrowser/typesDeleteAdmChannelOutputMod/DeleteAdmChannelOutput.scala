@@ -22,7 +22,7 @@ trait DeleteAdmChannelOutput extends OutputTypesUnion {
 object DeleteAdmChannelOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, ADMChannelResponse: _UnmarshalledADMChannelResponse): DeleteAdmChannelOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata, ADMChannelResponse = ADMChannelResponse)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], ADMChannelResponse = ADMChannelResponse.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeleteAdmChannelOutput]
   }

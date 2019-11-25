@@ -18,7 +18,7 @@ object globalthisMod extends js.Object {
   	 */
   def getPolyfill(): ReturnType[
     js.Function0[
-      /* import warning: ImportType.apply Failed type conversion: typeof implementation */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: typeof implementation */ js.Any
     ]
   ] = js.native
   /**
@@ -26,7 +26,7 @@ object globalthisMod extends js.Object {
   	 */
   def shim(): ReturnType[
     js.Function0[
-      /* import warning: ImportType.apply Failed type conversion: typeof implementation */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: typeof implementation */ js.Any
     ]
   ] = js.native
 }

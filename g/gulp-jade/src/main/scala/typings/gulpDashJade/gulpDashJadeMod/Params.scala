@@ -82,16 +82,16 @@ object Params {
     self: js.UndefOr[Boolean] = js.undefined
   ): Params = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
-    if (!js.isUndefined(client)) __obj.updateDynamic("client")(client)
-    if (!js.isUndefined(compileDebug)) __obj.updateDynamic("compileDebug")(compileDebug)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (doctype != null) __obj.updateDynamic("doctype")(doctype)
-    if (jade != null) __obj.updateDynamic("jade")(jade)
-    if (locals != null) __obj.updateDynamic("locals")(locals)
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
+    if (!js.isUndefined(client)) __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
+    if (!js.isUndefined(compileDebug)) __obj.updateDynamic("compileDebug")(compileDebug.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (doctype != null) __obj.updateDynamic("doctype")(doctype.asInstanceOf[js.Any])
+    if (jade != null) __obj.updateDynamic("jade")(jade.asInstanceOf[js.Any])
+    if (locals != null) __obj.updateDynamic("locals")(locals.asInstanceOf[js.Any])
     if (pretty != null) __obj.updateDynamic("pretty")(pretty.asInstanceOf[js.Any])
-    if (!js.isUndefined(self)) __obj.updateDynamic("self")(self)
+    if (!js.isUndefined(self)) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     __obj.asInstanceOf[Params]
   }
 }

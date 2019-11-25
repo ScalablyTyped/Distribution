@@ -11,7 +11,7 @@ trait ArrayParam[T] extends js.Object {
 object ArrayParam {
   @scala.inline
   def apply[T](array: js.Array[T]): ArrayParam[T] = {
-    val __obj = js.Dynamic.literal(array = array)
+    val __obj = js.Dynamic.literal(array = array.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ArrayParam[T]]
   }

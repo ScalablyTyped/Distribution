@@ -12,7 +12,7 @@ trait Anon_ContentPath extends js.Object {
 object Anon_ContentPath {
   @scala.inline
   def apply(content: String, path: String): Anon_ContentPath = {
-    val __obj = js.Dynamic.literal(content = content, path = path)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ContentPath]
   }

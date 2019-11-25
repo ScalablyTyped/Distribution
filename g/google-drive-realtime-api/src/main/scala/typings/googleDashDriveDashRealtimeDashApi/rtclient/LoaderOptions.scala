@@ -46,7 +46,7 @@ object LoaderOptions {
     onFileLoaded: Document => Unit,
     registerTypes: () => Unit
   ): LoaderOptions = {
-    val __obj = js.Dynamic.literal(afterAuth = js.Any.fromFunction0(afterAuth), appId = appId, authButtonElementId = authButtonElementId, autoCreate = autoCreate, clientId = clientId, defaultTitle = defaultTitle, initializeModel = js.Any.fromFunction1(initializeModel), newFileMimeType = newFileMimeType, onFileLoaded = js.Any.fromFunction1(onFileLoaded), registerTypes = js.Any.fromFunction0(registerTypes))
+    val __obj = js.Dynamic.literal(afterAuth = js.Any.fromFunction0(afterAuth), appId = appId.asInstanceOf[js.Any], authButtonElementId = authButtonElementId.asInstanceOf[js.Any], autoCreate = autoCreate.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], defaultTitle = defaultTitle.asInstanceOf[js.Any], initializeModel = js.Any.fromFunction1(initializeModel), newFileMimeType = newFileMimeType.asInstanceOf[js.Any], onFileLoaded = js.Any.fromFunction1(onFileLoaded), registerTypes = js.Any.fromFunction0(registerTypes))
   
     __obj.asInstanceOf[LoaderOptions]
   }

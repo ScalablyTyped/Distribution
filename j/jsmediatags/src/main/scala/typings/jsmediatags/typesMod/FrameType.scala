@@ -13,7 +13,7 @@ trait FrameType extends js.Object {
 object FrameType {
   @scala.inline
   def apply(data: js.Any, description: String, id: String): FrameType = {
-    val __obj = js.Dynamic.literal(data = data, description = description, id = id)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FrameType]
   }

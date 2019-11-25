@@ -21,10 +21,10 @@ object RouterProps {
     primary: js.UndefOr[Boolean] = js.undefined
   ): RouterProps = {
     val __obj = js.Dynamic.literal()
-    if (basepath != null) __obj.updateDynamic("basepath")(basepath)
+    if (basepath != null) __obj.updateDynamic("basepath")(basepath.asInstanceOf[js.Any])
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary)
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouterProps]
   }
 }

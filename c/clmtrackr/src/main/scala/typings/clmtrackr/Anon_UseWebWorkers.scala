@@ -13,7 +13,7 @@ object Anon_UseWebWorkers {
   @scala.inline
   def apply(useWebWorkers: js.UndefOr[Boolean] = js.undefined): Anon_UseWebWorkers = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(useWebWorkers)) __obj.updateDynamic("useWebWorkers")(useWebWorkers)
+    if (!js.isUndefined(useWebWorkers)) __obj.updateDynamic("useWebWorkers")(useWebWorkers.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_UseWebWorkers]
   }
 }

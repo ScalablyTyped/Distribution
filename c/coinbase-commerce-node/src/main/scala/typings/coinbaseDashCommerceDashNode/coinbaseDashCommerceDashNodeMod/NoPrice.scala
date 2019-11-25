@@ -18,7 +18,7 @@ trait NoPrice extends js.Object {
 object NoPrice {
   @scala.inline
   def apply(pricing_type: no_price): NoPrice = {
-    val __obj = js.Dynamic.literal(pricing_type = pricing_type)
+    val __obj = js.Dynamic.literal(pricing_type = pricing_type.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NoPrice]
   }

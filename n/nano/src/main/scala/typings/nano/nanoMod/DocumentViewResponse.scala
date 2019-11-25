@@ -20,7 +20,7 @@ trait DocumentViewResponse[V, D] extends js.Object {
 object DocumentViewResponse {
   @scala.inline
   def apply[V, D](offset: Double, rows: js.Array[Anon_DocId[V, D]], total_rows: Double, update_seq: js.Any): DocumentViewResponse[V, D] = {
-    val __obj = js.Dynamic.literal(offset = offset, rows = rows, total_rows = total_rows, update_seq = update_seq)
+    val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any], total_rows = total_rows.asInstanceOf[js.Any], update_seq = update_seq.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DocumentViewResponse[V, D]]
   }

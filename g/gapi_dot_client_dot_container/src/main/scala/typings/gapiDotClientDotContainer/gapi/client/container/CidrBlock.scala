@@ -15,8 +15,8 @@ object CidrBlock {
   @scala.inline
   def apply(cidrBlock: String = null, displayName: String = null): CidrBlock = {
     val __obj = js.Dynamic.literal()
-    if (cidrBlock != null) __obj.updateDynamic("cidrBlock")(cidrBlock)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (cidrBlock != null) __obj.updateDynamic("cidrBlock")(cidrBlock.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CidrBlock]
   }
 }

@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait ClientCertType extends js.Object
 
+object ClientCertType {
+  @scala.inline
+  def Pattern: typings.chromeDashApps.chromeDashAppsStrings.Pattern = this.cast("Pattern")
+  @scala.inline
+  def Ref: typings.chromeDashApps.chromeDashAppsStrings.Ref = this.cast("Ref")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

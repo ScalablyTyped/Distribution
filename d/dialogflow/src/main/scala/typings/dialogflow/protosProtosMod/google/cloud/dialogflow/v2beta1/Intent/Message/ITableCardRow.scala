@@ -16,8 +16,8 @@ object ITableCardRow {
   @scala.inline
   def apply(cells: js.Array[ITableCardCell] = null, dividerAfter: js.UndefOr[Boolean] = js.undefined): ITableCardRow = {
     val __obj = js.Dynamic.literal()
-    if (cells != null) __obj.updateDynamic("cells")(cells)
-    if (!js.isUndefined(dividerAfter)) __obj.updateDynamic("dividerAfter")(dividerAfter)
+    if (cells != null) __obj.updateDynamic("cells")(cells.asInstanceOf[js.Any])
+    if (!js.isUndefined(dividerAfter)) __obj.updateDynamic("dividerAfter")(dividerAfter.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITableCardRow]
   }
 }

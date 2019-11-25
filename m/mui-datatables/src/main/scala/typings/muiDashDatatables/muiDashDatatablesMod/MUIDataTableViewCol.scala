@@ -21,9 +21,9 @@ object MUIDataTableViewCol {
     onColumnUpdate: js.Any => js.Any,
     classes: js.Object = null
   ): MUIDataTableViewCol = {
-    val __obj = js.Dynamic.literal(columns = columns, onColumnUpdate = js.Any.fromFunction1(onColumnUpdate))
-    __obj.updateDynamic("object")(`object`)
-    if (classes != null) __obj.updateDynamic("classes")(classes)
+    val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], onColumnUpdate = js.Any.fromFunction1(onColumnUpdate))
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
     __obj.asInstanceOf[MUIDataTableViewCol]
   }
 }

@@ -25,10 +25,10 @@ object Anon_CfiRangeContentVersion {
     gbTextRange: BooksAnnotationsRange = null
   ): Anon_CfiRangeContentVersion = {
     val __obj = js.Dynamic.literal()
-    if (cfiRange != null) __obj.updateDynamic("cfiRange")(cfiRange)
-    if (contentVersion != null) __obj.updateDynamic("contentVersion")(contentVersion)
-    if (gbImageRange != null) __obj.updateDynamic("gbImageRange")(gbImageRange)
-    if (gbTextRange != null) __obj.updateDynamic("gbTextRange")(gbTextRange)
+    if (cfiRange != null) __obj.updateDynamic("cfiRange")(cfiRange.asInstanceOf[js.Any])
+    if (contentVersion != null) __obj.updateDynamic("contentVersion")(contentVersion.asInstanceOf[js.Any])
+    if (gbImageRange != null) __obj.updateDynamic("gbImageRange")(gbImageRange.asInstanceOf[js.Any])
+    if (gbTextRange != null) __obj.updateDynamic("gbTextRange")(gbTextRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CfiRangeContentVersion]
   }
 }

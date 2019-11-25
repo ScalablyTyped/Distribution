@@ -27,9 +27,9 @@ object IStreamingRecognitionResult {
   ): IStreamingRecognitionResult = {
     val __obj = js.Dynamic.literal()
     if (confidence != null) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFinal)) __obj.updateDynamic("isFinal")(isFinal)
-    if (messageType != null) __obj.updateDynamic("messageType")(messageType)
-    if (transcript != null) __obj.updateDynamic("transcript")(transcript)
+    if (!js.isUndefined(isFinal)) __obj.updateDynamic("isFinal")(isFinal.asInstanceOf[js.Any])
+    if (messageType != null) __obj.updateDynamic("messageType")(messageType.asInstanceOf[js.Any])
+    if (transcript != null) __obj.updateDynamic("transcript")(transcript.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStreamingRecognitionResult]
   }
 }

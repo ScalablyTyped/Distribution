@@ -56,7 +56,7 @@ object CronJobSpec {
     successfulJobsHistoryLimit: Double,
     suspend: Boolean
   ): CronJobSpec = {
-    val __obj = js.Dynamic.literal(concurrencyPolicy = concurrencyPolicy, failedJobsHistoryLimit = failedJobsHistoryLimit, jobTemplate = jobTemplate, schedule = schedule, startingDeadlineSeconds = startingDeadlineSeconds, successfulJobsHistoryLimit = successfulJobsHistoryLimit, suspend = suspend)
+    val __obj = js.Dynamic.literal(concurrencyPolicy = concurrencyPolicy.asInstanceOf[js.Any], failedJobsHistoryLimit = failedJobsHistoryLimit.asInstanceOf[js.Any], jobTemplate = jobTemplate.asInstanceOf[js.Any], schedule = schedule.asInstanceOf[js.Any], startingDeadlineSeconds = startingDeadlineSeconds.asInstanceOf[js.Any], successfulJobsHistoryLimit = successfulJobsHistoryLimit.asInstanceOf[js.Any], suspend = suspend.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CronJobSpec]
   }

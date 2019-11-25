@@ -14,7 +14,7 @@ trait DeleteBucketEncryptionOutput
 object DeleteBucketEncryptionOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata): DeleteBucketEncryptionOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeleteBucketEncryptionOutput]
   }

@@ -21,9 +21,9 @@ object CigarUnit {
   @scala.inline
   def apply(operation: String = null, operationLength: String = null, referenceSequence: String = null): CigarUnit = {
     val __obj = js.Dynamic.literal()
-    if (operation != null) __obj.updateDynamic("operation")(operation)
-    if (operationLength != null) __obj.updateDynamic("operationLength")(operationLength)
-    if (referenceSequence != null) __obj.updateDynamic("referenceSequence")(referenceSequence)
+    if (operation != null) __obj.updateDynamic("operation")(operation.asInstanceOf[js.Any])
+    if (operationLength != null) __obj.updateDynamic("operationLength")(operationLength.asInstanceOf[js.Any])
+    if (referenceSequence != null) __obj.updateDynamic("referenceSequence")(referenceSequence.asInstanceOf[js.Any])
     __obj.asInstanceOf[CigarUnit]
   }
 }

@@ -16,7 +16,7 @@ object AndroidDeviceList {
   @scala.inline
   def apply(androidDevices: js.Array[AndroidDevice] = null): AndroidDeviceList = {
     val __obj = js.Dynamic.literal()
-    if (androidDevices != null) __obj.updateDynamic("androidDevices")(androidDevices)
+    if (androidDevices != null) __obj.updateDynamic("androidDevices")(androidDevices.asInstanceOf[js.Any])
     __obj.asInstanceOf[AndroidDeviceList]
   }
 }

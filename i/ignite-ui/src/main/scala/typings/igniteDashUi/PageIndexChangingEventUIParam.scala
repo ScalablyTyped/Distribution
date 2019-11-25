@@ -25,7 +25,7 @@ object PageIndexChangingEventUIParam {
     val __obj = js.Dynamic.literal()
     if (currentPageIndex != null) __obj.updateDynamic("currentPageIndex")(currentPageIndex.asInstanceOf[js.Any])
     if (newPageIndex != null) __obj.updateDynamic("newPageIndex")(newPageIndex.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageIndexChangingEventUIParam]
   }
 }

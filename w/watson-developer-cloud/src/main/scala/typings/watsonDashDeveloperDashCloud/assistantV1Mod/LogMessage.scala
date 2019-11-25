@@ -23,8 +23,8 @@ object LogMessage {
     StringDictionary: /** LogMessage accepts additional properties. */
   /* propName */ StringDictionary[js.Any] = null
   ): LogMessage = {
-    val __obj = js.Dynamic.literal(level = level, msg = msg)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], msg = msg.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[LogMessage]
   }
 }

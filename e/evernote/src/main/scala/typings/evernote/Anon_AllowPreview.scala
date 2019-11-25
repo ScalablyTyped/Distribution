@@ -40,19 +40,19 @@ object Anon_AllowPreview {
     username: String = null
   ): Anon_AllowPreview = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowPreview)) __obj.updateDynamic("allowPreview")(allowPreview)
-    if (email != null) __obj.updateDynamic("email")(email)
+    if (!js.isUndefined(allowPreview)) __obj.updateDynamic("allowPreview")(allowPreview.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (notebookGuid != null) __obj.updateDynamic("notebookGuid")(notebookGuid)
-    if (!js.isUndefined(notebookModifiable)) __obj.updateDynamic("notebookModifiable")(notebookModifiable)
-    if (privilege != null) __obj.updateDynamic("privilege")(privilege)
-    if (recipientSettings != null) __obj.updateDynamic("recipientSettings")(recipientSettings)
-    if (!js.isUndefined(requireLogin)) __obj.updateDynamic("requireLogin")(requireLogin)
+    if (notebookGuid != null) __obj.updateDynamic("notebookGuid")(notebookGuid.asInstanceOf[js.Any])
+    if (!js.isUndefined(notebookModifiable)) __obj.updateDynamic("notebookModifiable")(notebookModifiable.asInstanceOf[js.Any])
+    if (privilege != null) __obj.updateDynamic("privilege")(privilege.asInstanceOf[js.Any])
+    if (recipientSettings != null) __obj.updateDynamic("recipientSettings")(recipientSettings.asInstanceOf[js.Any])
+    if (!js.isUndefined(requireLogin)) __obj.updateDynamic("requireLogin")(requireLogin.asInstanceOf[js.Any])
     if (serviceCreated != null) __obj.updateDynamic("serviceCreated")(serviceCreated.asInstanceOf[js.Any])
     if (serviceUpdated != null) __obj.updateDynamic("serviceUpdated")(serviceUpdated.asInstanceOf[js.Any])
-    if (shareKey != null) __obj.updateDynamic("shareKey")(shareKey)
+    if (shareKey != null) __obj.updateDynamic("shareKey")(shareKey.asInstanceOf[js.Any])
     if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
-    if (username != null) __obj.updateDynamic("username")(username)
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AllowPreview]
   }
 }

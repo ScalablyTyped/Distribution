@@ -15,7 +15,7 @@ trait ExecChannelRequest extends ChannelRequest {
 object ExecChannelRequest {
   @scala.inline
   def apply(command: String, recipient: Double, request: exec, wantReply: Boolean): ExecChannelRequest = {
-    val __obj = js.Dynamic.literal(command = command, recipient = recipient, request = request, wantReply = wantReply)
+    val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], recipient = recipient.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], wantReply = wantReply.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExecChannelRequest]
   }

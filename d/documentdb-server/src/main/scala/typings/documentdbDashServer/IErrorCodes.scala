@@ -38,7 +38,7 @@ object IErrorCodes {
     RequestEntityTooLarge: Double,
     RetryWith: Double
   ): IErrorCodes = {
-    val __obj = js.Dynamic.literal(BadRequest = BadRequest, Conflict = Conflict, Forbidden = Forbidden, InternalServerError = InternalServerError, NotFound = NotFound, PreconditionFailed = PreconditionFailed, RequestEntityTooLarge = RequestEntityTooLarge, RetryWith = RetryWith)
+    val __obj = js.Dynamic.literal(BadRequest = BadRequest.asInstanceOf[js.Any], Conflict = Conflict.asInstanceOf[js.Any], Forbidden = Forbidden.asInstanceOf[js.Any], InternalServerError = InternalServerError.asInstanceOf[js.Any], NotFound = NotFound.asInstanceOf[js.Any], PreconditionFailed = PreconditionFailed.asInstanceOf[js.Any], RequestEntityTooLarge = RequestEntityTooLarge.asInstanceOf[js.Any], RetryWith = RetryWith.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IErrorCodes]
   }

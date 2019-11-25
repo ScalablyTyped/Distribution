@@ -14,7 +14,7 @@ trait Reference extends Sentinel {
 object Reference {
   @scala.inline
   def apply($type: reference, value: Path, $expires: Int | Double = null): Reference = {
-    val __obj = js.Dynamic.literal($type = $type, value = value)
+    val __obj = js.Dynamic.literal($type = $type.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     if ($expires != null) __obj.updateDynamic("$expires")($expires.asInstanceOf[js.Any])
     __obj.asInstanceOf[Reference]
   }

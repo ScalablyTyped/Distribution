@@ -33,10 +33,10 @@ object Options {
     preflightMaxAge: Int | Double = null,
     preflightStrategy: js.Any = null
   ): Options = {
-    val __obj = js.Dynamic.literal(allowHeaders = allowHeaders, exposeHeaders = exposeHeaders, origins = origins)
-    if (!js.isUndefined(credentials)) __obj.updateDynamic("credentials")(credentials)
+    val __obj = js.Dynamic.literal(allowHeaders = allowHeaders.asInstanceOf[js.Any], exposeHeaders = exposeHeaders.asInstanceOf[js.Any], origins = origins.asInstanceOf[js.Any])
+    if (!js.isUndefined(credentials)) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
     if (preflightMaxAge != null) __obj.updateDynamic("preflightMaxAge")(preflightMaxAge.asInstanceOf[js.Any])
-    if (preflightStrategy != null) __obj.updateDynamic("preflightStrategy")(preflightStrategy)
+    if (preflightStrategy != null) __obj.updateDynamic("preflightStrategy")(preflightStrategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

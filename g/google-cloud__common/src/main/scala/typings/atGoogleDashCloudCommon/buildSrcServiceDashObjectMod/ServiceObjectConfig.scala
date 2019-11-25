@@ -38,11 +38,11 @@ object ServiceObjectConfig {
     id: String = null,
     methods: Methods = null
   ): ServiceObjectConfig = {
-    val __obj = js.Dynamic.literal(parent = parent)
-    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
-    if (createMethod != null) __obj.updateDynamic("createMethod")(createMethod)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (methods != null) __obj.updateDynamic("methods")(methods)
+    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
+    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl.asInstanceOf[js.Any])
+    if (createMethod != null) __obj.updateDynamic("createMethod")(createMethod.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (methods != null) __obj.updateDynamic("methods")(methods.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceObjectConfig]
   }
 }

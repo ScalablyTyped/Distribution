@@ -26,13 +26,13 @@ object WebhookEvent {
     summary: String = null
   ): WebhookEvent = {
     val __obj = js.Dynamic.literal()
-    if (create_time != null) __obj.updateDynamic("create_time")(create_time)
-    if (event_type != null) __obj.updateDynamic("event_type")(event_type)
-    if (event_version != null) __obj.updateDynamic("event_version")(event_version)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (resource != null) __obj.updateDynamic("resource")(resource)
-    if (resource_type != null) __obj.updateDynamic("resource_type")(resource_type)
-    if (summary != null) __obj.updateDynamic("summary")(summary)
+    if (create_time != null) __obj.updateDynamic("create_time")(create_time.asInstanceOf[js.Any])
+    if (event_type != null) __obj.updateDynamic("event_type")(event_type.asInstanceOf[js.Any])
+    if (event_version != null) __obj.updateDynamic("event_version")(event_version.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
+    if (resource_type != null) __obj.updateDynamic("resource_type")(resource_type.asInstanceOf[js.Any])
+    if (summary != null) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebhookEvent]
   }
 }

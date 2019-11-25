@@ -12,7 +12,7 @@ trait Anon_IvBits extends js.Object {
 object Anon_IvBits {
   @scala.inline
   def apply(ivBits: Double, keyBits: Double): Anon_IvBits = {
-    val __obj = js.Dynamic.literal(ivBits = ivBits, keyBits = keyBits)
+    val __obj = js.Dynamic.literal(ivBits = ivBits.asInstanceOf[js.Any], keyBits = keyBits.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IvBits]
   }

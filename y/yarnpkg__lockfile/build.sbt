@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "yarnpkg__lockfile"
-version := "1.1-dt-20190823Z-01ea0d"
+version := "1.1-dt-20190823Z-344b87"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

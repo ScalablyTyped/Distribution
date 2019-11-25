@@ -11,7 +11,7 @@ trait BreakpointsProps extends js.Object {
 object BreakpointsProps {
   @scala.inline
   def apply(breakpoints: Breakpoints): BreakpointsProps = {
-    val __obj = js.Dynamic.literal(breakpoints = breakpoints)
+    val __obj = js.Dynamic.literal(breakpoints = breakpoints.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BreakpointsProps]
   }

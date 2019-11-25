@@ -1,15 +1,13 @@
 package typings.vscodeDashLanguageclient.libClientMod
 
-import typings.vscodeDashJsonrpc.libMessageReaderMod.MessageReader
-import typings.vscodeDashJsonrpc.libMessageWriterMod.MessageWriter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MessageTransports extends js.Object {
   var detached: js.UndefOr[Boolean] = js.undefined
-  var reader: MessageReader
-  var writer: MessageWriter
+  var reader: typings.vscodeDashJsonrpc.libMessageReaderMod.MessageReader
+  var writer: typings.vscodeDashJsonrpc.libMessageWriterMod.MessageWriter
 }
 
 @JSImport("vscode-languageclient/lib/client", "MessageTransports")

@@ -42,12 +42,12 @@ object DefaultFontFamily {
     standard: String = null
   ): DefaultFontFamily = {
     val __obj = js.Dynamic.literal()
-    if (cursive != null) __obj.updateDynamic("cursive")(cursive)
-    if (fantasy != null) __obj.updateDynamic("fantasy")(fantasy)
-    if (monospace != null) __obj.updateDynamic("monospace")(monospace)
-    if (sansSerif != null) __obj.updateDynamic("sansSerif")(sansSerif)
-    if (serif != null) __obj.updateDynamic("serif")(serif)
-    if (standard != null) __obj.updateDynamic("standard")(standard)
+    if (cursive != null) __obj.updateDynamic("cursive")(cursive.asInstanceOf[js.Any])
+    if (fantasy != null) __obj.updateDynamic("fantasy")(fantasy.asInstanceOf[js.Any])
+    if (monospace != null) __obj.updateDynamic("monospace")(monospace.asInstanceOf[js.Any])
+    if (sansSerif != null) __obj.updateDynamic("sansSerif")(sansSerif.asInstanceOf[js.Any])
+    if (serif != null) __obj.updateDynamic("serif")(serif.asInstanceOf[js.Any])
+    if (standard != null) __obj.updateDynamic("standard")(standard.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultFontFamily]
   }
 }

@@ -41,8 +41,8 @@ object CrosshairTrackballTooltipSettings {
     ry: Int | Double = null
   ): CrosshairTrackballTooltipSettings = {
     val __obj = js.Dynamic.literal()
-    if (border != null) __obj.updateDynamic("border")(border)
-    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (rx != null) __obj.updateDynamic("rx")(rx.asInstanceOf[js.Any])

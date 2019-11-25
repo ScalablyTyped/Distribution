@@ -39,10 +39,10 @@ object _UnmarshalledStreamDescriptionSummary {
     EncryptionType: NONE | KMS | String = null,
     KeyId: String = null
   ): _UnmarshalledStreamDescriptionSummary = {
-    val __obj = js.Dynamic.literal(EnhancedMonitoring = EnhancedMonitoring, OpenShardCount = OpenShardCount, RetentionPeriodHours = RetentionPeriodHours, StreamARN = StreamARN, StreamCreationTimestamp = StreamCreationTimestamp, StreamName = StreamName, StreamStatus = StreamStatus.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(EnhancedMonitoring = EnhancedMonitoring.asInstanceOf[js.Any], OpenShardCount = OpenShardCount.asInstanceOf[js.Any], RetentionPeriodHours = RetentionPeriodHours.asInstanceOf[js.Any], StreamARN = StreamARN.asInstanceOf[js.Any], StreamCreationTimestamp = StreamCreationTimestamp.asInstanceOf[js.Any], StreamName = StreamName.asInstanceOf[js.Any], StreamStatus = StreamStatus.asInstanceOf[js.Any])
     if (ConsumerCount != null) __obj.updateDynamic("ConsumerCount")(ConsumerCount.asInstanceOf[js.Any])
     if (EncryptionType != null) __obj.updateDynamic("EncryptionType")(EncryptionType.asInstanceOf[js.Any])
-    if (KeyId != null) __obj.updateDynamic("KeyId")(KeyId)
+    if (KeyId != null) __obj.updateDynamic("KeyId")(KeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledStreamDescriptionSummary]
   }
 }

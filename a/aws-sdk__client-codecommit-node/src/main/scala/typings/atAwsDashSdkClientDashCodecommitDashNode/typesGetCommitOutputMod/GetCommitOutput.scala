@@ -22,7 +22,7 @@ trait GetCommitOutput extends OutputTypesUnion {
 object GetCommitOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, commit: _UnmarshalledCommit): GetCommitOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata, commit = commit)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetCommitOutput]
   }

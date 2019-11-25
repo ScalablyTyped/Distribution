@@ -25,9 +25,9 @@ object SubscriptionPolicies {
   @scala.inline
   def apply(locationPlacementId: String = null, quotaId: String = null, spendingLimit: String = null): SubscriptionPolicies = {
     val __obj = js.Dynamic.literal()
-    if (locationPlacementId != null) __obj.updateDynamic("locationPlacementId")(locationPlacementId)
-    if (quotaId != null) __obj.updateDynamic("quotaId")(quotaId)
-    if (spendingLimit != null) __obj.updateDynamic("spendingLimit")(spendingLimit)
+    if (locationPlacementId != null) __obj.updateDynamic("locationPlacementId")(locationPlacementId.asInstanceOf[js.Any])
+    if (quotaId != null) __obj.updateDynamic("quotaId")(quotaId.asInstanceOf[js.Any])
+    if (spendingLimit != null) __obj.updateDynamic("spendingLimit")(spendingLimit.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscriptionPolicies]
   }
 }

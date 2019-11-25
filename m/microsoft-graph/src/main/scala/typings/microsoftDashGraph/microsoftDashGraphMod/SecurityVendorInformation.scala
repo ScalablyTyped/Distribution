@@ -24,10 +24,10 @@ object SecurityVendorInformation {
     vendor: String = null
   ): SecurityVendorInformation = {
     val __obj = js.Dynamic.literal()
-    if (provider != null) __obj.updateDynamic("provider")(provider)
-    if (providerVersion != null) __obj.updateDynamic("providerVersion")(providerVersion)
-    if (subProvider != null) __obj.updateDynamic("subProvider")(subProvider)
-    if (vendor != null) __obj.updateDynamic("vendor")(vendor)
+    if (provider != null) __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
+    if (providerVersion != null) __obj.updateDynamic("providerVersion")(providerVersion.asInstanceOf[js.Any])
+    if (subProvider != null) __obj.updateDynamic("subProvider")(subProvider.asInstanceOf[js.Any])
+    if (vendor != null) __obj.updateDynamic("vendor")(vendor.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecurityVendorInformation]
   }
 }

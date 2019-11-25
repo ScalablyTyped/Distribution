@@ -19,7 +19,7 @@ object ToolbarIcon {
     name: String,
     title: String
   ): ToolbarIcon = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], className = className, name = name, title = title)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ToolbarIcon]
   }

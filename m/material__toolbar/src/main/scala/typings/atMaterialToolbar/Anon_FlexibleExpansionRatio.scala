@@ -11,7 +11,7 @@ trait Anon_FlexibleExpansionRatio extends js.Object {
 object Anon_FlexibleExpansionRatio {
   @scala.inline
   def apply(flexibleExpansionRatio: Double): Anon_FlexibleExpansionRatio = {
-    val __obj = js.Dynamic.literal(flexibleExpansionRatio = flexibleExpansionRatio)
+    val __obj = js.Dynamic.literal(flexibleExpansionRatio = flexibleExpansionRatio.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FlexibleExpansionRatio]
   }

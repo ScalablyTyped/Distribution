@@ -29,8 +29,8 @@ trait IChangedArgs[T] extends js.Object {
 object IChangedArgs {
   @scala.inline
   def apply[T](key: String, `type`: ChangeType, newValue: T = null, oldValue: T = null): IChangedArgs[T] = {
-    val __obj = js.Dynamic.literal(key = key)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (newValue != null) __obj.updateDynamic("newValue")(newValue.asInstanceOf[js.Any])
     if (oldValue != null) __obj.updateDynamic("oldValue")(oldValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[IChangedArgs[T]]

@@ -13,7 +13,7 @@ trait Anon_Color extends js.Object {
 object Anon_Color {
   @scala.inline
   def apply(color: String, points: js.Array[Point]): Anon_Color = {
-    val __obj = js.Dynamic.literal(color = color, points = points)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], points = points.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Color]
   }

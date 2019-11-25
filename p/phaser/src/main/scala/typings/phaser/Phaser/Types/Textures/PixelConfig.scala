@@ -30,7 +30,7 @@ trait PixelConfig extends js.Object {
 object PixelConfig {
   @scala.inline
   def apply(alpha: Double, color: integer, x: integer, y: integer): PixelConfig = {
-    val __obj = js.Dynamic.literal(alpha = alpha, color = color, x = x, y = y)
+    val __obj = js.Dynamic.literal(alpha = alpha.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PixelConfig]
   }

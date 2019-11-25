@@ -13,8 +13,8 @@ object Anon_ExtendedProfile {
   @scala.inline
   def apply(extendedProfile: js.UndefOr[Boolean] = js.undefined, getMethod: String = null): Anon_ExtendedProfile = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(extendedProfile)) __obj.updateDynamic("extendedProfile")(extendedProfile)
-    if (getMethod != null) __obj.updateDynamic("getMethod")(getMethod)
+    if (!js.isUndefined(extendedProfile)) __obj.updateDynamic("extendedProfile")(extendedProfile.asInstanceOf[js.Any])
+    if (getMethod != null) __obj.updateDynamic("getMethod")(getMethod.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ExtendedProfile]
   }
 }

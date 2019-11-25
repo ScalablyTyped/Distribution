@@ -22,10 +22,10 @@ object DataSourceTransportReadOptionsData {
     take: Int | Double = null
   ): DataSourceTransportReadOptionsData = {
     val __obj = js.Dynamic.literal()
-    if (filter != null) __obj.updateDynamic("filter")(filter)
-    if (group != null) __obj.updateDynamic("group")(group)
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
     if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
-    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     if (take != null) __obj.updateDynamic("take")(take.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceTransportReadOptionsData]
   }

@@ -13,8 +13,8 @@ object Anon_Mode {
   @scala.inline
   def apply(mode: String = null, useColor: js.UndefOr[Boolean] = js.undefined): Anon_Mode = {
     val __obj = js.Dynamic.literal()
-    if (mode != null) __obj.updateDynamic("mode")(mode)
-    if (!js.isUndefined(useColor)) __obj.updateDynamic("useColor")(useColor)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (!js.isUndefined(useColor)) __obj.updateDynamic("useColor")(useColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Mode]
   }
 }

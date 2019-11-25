@@ -15,8 +15,8 @@ object ReportInfo {
   @scala.inline
   def apply(operationId: String = null, quotaInfo: QuotaInfo = null): ReportInfo = {
     val __obj = js.Dynamic.literal()
-    if (operationId != null) __obj.updateDynamic("operationId")(operationId)
-    if (quotaInfo != null) __obj.updateDynamic("quotaInfo")(quotaInfo)
+    if (operationId != null) __obj.updateDynamic("operationId")(operationId.asInstanceOf[js.Any])
+    if (quotaInfo != null) __obj.updateDynamic("quotaInfo")(quotaInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportInfo]
   }
 }

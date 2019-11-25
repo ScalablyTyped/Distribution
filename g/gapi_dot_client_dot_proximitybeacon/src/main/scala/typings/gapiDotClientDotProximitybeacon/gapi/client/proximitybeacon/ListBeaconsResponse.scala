@@ -23,9 +23,9 @@ object ListBeaconsResponse {
   @scala.inline
   def apply(beacons: js.Array[Beacon] = null, nextPageToken: String = null, totalCount: String = null): ListBeaconsResponse = {
     val __obj = js.Dynamic.literal()
-    if (beacons != null) __obj.updateDynamic("beacons")(beacons)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (totalCount != null) __obj.updateDynamic("totalCount")(totalCount)
+    if (beacons != null) __obj.updateDynamic("beacons")(beacons.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (totalCount != null) __obj.updateDynamic("totalCount")(totalCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBeaconsResponse]
   }
 }

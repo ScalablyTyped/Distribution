@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
   - typings.graphql.graphqlStrings.OperationTypeDefinition
   - typings.graphql.graphqlStrings.ScalarTypeExtension
   - typings.graphql.graphqlStrings.Directive
-  - typings.graphql.graphqlStrings.Field
+  - typings.graphql.graphqlStrings.Field_
   - typings.graphql.graphqlStrings.VariableDefinition
   - typings.graphql.graphqlStrings.InputObjectTypeDefinition
   - typings.graphql.graphqlStrings.Argument

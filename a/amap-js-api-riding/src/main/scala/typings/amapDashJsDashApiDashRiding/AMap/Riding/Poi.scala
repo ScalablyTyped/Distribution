@@ -25,7 +25,7 @@ trait Poi extends js.Object {
 object Poi {
   @scala.inline
   def apply(location: LngLat, name: String, `type`: start | end): Poi = {
-    val __obj = js.Dynamic.literal(location = location, name = name)
+    val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Poi]
   }

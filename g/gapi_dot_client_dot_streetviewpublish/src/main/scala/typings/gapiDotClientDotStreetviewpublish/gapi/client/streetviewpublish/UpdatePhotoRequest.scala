@@ -45,8 +45,8 @@ object UpdatePhotoRequest {
   @scala.inline
   def apply(photo: Photo = null, updateMask: String = null): UpdatePhotoRequest = {
     val __obj = js.Dynamic.literal()
-    if (photo != null) __obj.updateDynamic("photo")(photo)
-    if (updateMask != null) __obj.updateDynamic("updateMask")(updateMask)
+    if (photo != null) __obj.updateDynamic("photo")(photo.asInstanceOf[js.Any])
+    if (updateMask != null) __obj.updateDynamic("updateMask")(updateMask.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdatePhotoRequest]
   }
 }

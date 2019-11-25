@@ -22,11 +22,11 @@ object LoadLocaleParams {
     silent: js.UndefOr[Boolean] = js.undefined
   ): LoadLocaleParams = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
-    if (!js.isUndefined(fresh)) __obj.updateDynamic("fresh")(fresh)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (pathOnHost != null) __obj.updateDynamic("pathOnHost")(pathOnHost)
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
+    if (!js.isUndefined(fresh)) __obj.updateDynamic("fresh")(fresh.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (pathOnHost != null) __obj.updateDynamic("pathOnHost")(pathOnHost.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadLocaleParams]
   }
 }

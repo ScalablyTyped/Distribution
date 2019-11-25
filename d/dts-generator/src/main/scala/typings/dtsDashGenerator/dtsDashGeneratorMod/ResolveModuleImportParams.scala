@@ -16,7 +16,7 @@ trait ResolveModuleImportParams extends js.Object {
 object ResolveModuleImportParams {
   @scala.inline
   def apply(currentModuleId: String, importedModuleId: String, isDeclaredExternalModule: Boolean): ResolveModuleImportParams = {
-    val __obj = js.Dynamic.literal(currentModuleId = currentModuleId, importedModuleId = importedModuleId, isDeclaredExternalModule = isDeclaredExternalModule)
+    val __obj = js.Dynamic.literal(currentModuleId = currentModuleId.asInstanceOf[js.Any], importedModuleId = importedModuleId.asInstanceOf[js.Any], isDeclaredExternalModule = isDeclaredExternalModule.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ResolveModuleImportParams]
   }

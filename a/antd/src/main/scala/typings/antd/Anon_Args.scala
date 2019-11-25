@@ -41,8 +41,8 @@ object Anon_Args {
     title: Requireable[String],
     `type`: Requireable[String]
   ): Anon_Args = {
-    val __obj = js.Dynamic.literal(block = block, className = className, htmlType = htmlType, icon = icon, loading = loading, onClick = onClick, shape = shape, size = size, title = title)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(block = block.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], htmlType = htmlType.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any], onClick = onClick.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Args]
   }
 }

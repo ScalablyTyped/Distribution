@@ -13,7 +13,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(path: String, query: js.Any): Options = {
-    val __obj = js.Dynamic.literal(path = path, query = query)
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Options]
   }

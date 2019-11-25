@@ -29,11 +29,11 @@ object RuleNewProps {
     source: NodeSource = null
   ): RuleNewProps = {
     val __obj = js.Dynamic.literal()
-    if (nodes != null) __obj.updateDynamic("nodes")(nodes)
-    if (raws != null) __obj.updateDynamic("raws")(raws)
-    if (selector != null) __obj.updateDynamic("selector")(selector)
-    if (selectors != null) __obj.updateDynamic("selectors")(selectors)
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (nodes != null) __obj.updateDynamic("nodes")(nodes.asInstanceOf[js.Any])
+    if (raws != null) __obj.updateDynamic("raws")(raws.asInstanceOf[js.Any])
+    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
+    if (selectors != null) __obj.updateDynamic("selectors")(selectors.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleNewProps]
   }
 }

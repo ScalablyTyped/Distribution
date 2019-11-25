@@ -59,12 +59,12 @@ object ErrorFormattingOptions {
     wrapArrays: js.UndefOr[Boolean] = js.undefined
   ): ErrorFormattingOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(escapeHtml)) __obj.updateDynamic("escapeHtml")(escapeHtml)
+    if (!js.isUndefined(escapeHtml)) __obj.updateDynamic("escapeHtml")(escapeHtml.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (!js.isUndefined(render)) __obj.updateDynamic("render")(render)
-    if (!js.isUndefined(stack)) __obj.updateDynamic("stack")(stack)
-    if (!js.isUndefined(wrapArrays)) __obj.updateDynamic("wrapArrays")(wrapArrays)
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (!js.isUndefined(render)) __obj.updateDynamic("render")(render.asInstanceOf[js.Any])
+    if (!js.isUndefined(stack)) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrapArrays)) __obj.updateDynamic("wrapArrays")(wrapArrays.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorFormattingOptions]
   }
 }

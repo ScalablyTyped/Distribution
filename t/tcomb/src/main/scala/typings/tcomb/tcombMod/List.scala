@@ -22,6 +22,6 @@ trait List[T]
 @js.native
 object list extends js.Object {
   def apply[T](`type`: Constructor[T]): List[T] = js.native
-  def apply[T](`type`: Constructor[T], name: String): List[T] = js.native
+  def apply[T](`type`: Constructor[T], name: java.lang.String): List[T] = js.native
 }
 

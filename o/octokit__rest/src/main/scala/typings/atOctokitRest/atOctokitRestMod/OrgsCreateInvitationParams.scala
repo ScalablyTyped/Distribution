@@ -39,11 +39,11 @@ object OrgsCreateInvitationParams {
     role: admin | direct_member | billing_manager = null,
     team_ids: js.Array[Double] = null
   ): OrgsCreateInvitationParams = {
-    val __obj = js.Dynamic.literal(org = org)
-    if (email != null) __obj.updateDynamic("email")(email)
+    val __obj = js.Dynamic.literal(org = org.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
     if (invitee_id != null) __obj.updateDynamic("invitee_id")(invitee_id.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
-    if (team_ids != null) __obj.updateDynamic("team_ids")(team_ids)
+    if (team_ids != null) __obj.updateDynamic("team_ids")(team_ids.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrgsCreateInvitationParams]
   }
 }

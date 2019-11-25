@@ -25,9 +25,9 @@ object BootstrapNode {
     chainId: Int | Double = null,
     network: String = null
   ): BootstrapNode = {
-    val __obj = js.Dynamic.literal(comment = comment, id = id, ip = ip, location = location, port = port.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], ip = ip.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
     if (chainId != null) __obj.updateDynamic("chainId")(chainId.asInstanceOf[js.Any])
-    if (network != null) __obj.updateDynamic("network")(network)
+    if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootstrapNode]
   }
 }

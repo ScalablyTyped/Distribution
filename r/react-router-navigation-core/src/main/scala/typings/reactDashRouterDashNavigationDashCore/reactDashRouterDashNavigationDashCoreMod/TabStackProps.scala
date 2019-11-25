@@ -25,9 +25,9 @@ object TabStackProps {
     style: StyleProp[ViewStyle] = null
   ): TabStackProps = {
     val __obj = js.Dynamic.literal(render = js.Any.fromFunction1(render))
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (!js.isUndefined(forceSync)) __obj.updateDynamic("forceSync")(forceSync)
-    if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceSync)) __obj.updateDynamic("forceSync")(forceSync.asInstanceOf[js.Any])
+    if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabStackProps]
   }

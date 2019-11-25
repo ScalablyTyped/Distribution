@@ -26,10 +26,10 @@ object TesterProps {
     startDelay: Int | Double = null,
     waitTime: Int | Double = null
   ): TesterProps = {
-    val __obj = js.Dynamic.literal(specs = specs, store = store)
-    if (!js.isUndefined(clearAsyncStorage)) __obj.updateDynamic("clearAsyncStorage")(clearAsyncStorage)
+    val __obj = js.Dynamic.literal(specs = specs.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearAsyncStorage)) __obj.updateDynamic("clearAsyncStorage")(clearAsyncStorage.asInstanceOf[js.Any])
     if (reporter != null) __obj.updateDynamic("reporter")(js.Any.fromFunction1(reporter))
-    if (!js.isUndefined(sendReport)) __obj.updateDynamic("sendReport")(sendReport)
+    if (!js.isUndefined(sendReport)) __obj.updateDynamic("sendReport")(sendReport.asInstanceOf[js.Any])
     if (startDelay != null) __obj.updateDynamic("startDelay")(startDelay.asInstanceOf[js.Any])
     if (waitTime != null) __obj.updateDynamic("waitTime")(waitTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[TesterProps]

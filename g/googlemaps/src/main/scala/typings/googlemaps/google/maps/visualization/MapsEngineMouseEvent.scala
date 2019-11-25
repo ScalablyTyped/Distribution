@@ -22,10 +22,10 @@ object MapsEngineMouseEvent {
     pixelOffset: Size = null
   ): MapsEngineMouseEvent = {
     val __obj = js.Dynamic.literal()
-    if (featureId != null) __obj.updateDynamic("featureId")(featureId)
-    if (infoWindowHtml != null) __obj.updateDynamic("infoWindowHtml")(infoWindowHtml)
-    if (latLng != null) __obj.updateDynamic("latLng")(latLng)
-    if (pixelOffset != null) __obj.updateDynamic("pixelOffset")(pixelOffset)
+    if (featureId != null) __obj.updateDynamic("featureId")(featureId.asInstanceOf[js.Any])
+    if (infoWindowHtml != null) __obj.updateDynamic("infoWindowHtml")(infoWindowHtml.asInstanceOf[js.Any])
+    if (latLng != null) __obj.updateDynamic("latLng")(latLng.asInstanceOf[js.Any])
+    if (pixelOffset != null) __obj.updateDynamic("pixelOffset")(pixelOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapsEngineMouseEvent]
   }
 }

@@ -17,7 +17,7 @@ trait Anon_ActiveTabIndex extends js.Object {
 object Anon_ActiveTabIndex {
   @scala.inline
   def apply(activeTabIndex: Double, event: SyntheticEvent[MouseEvent[Element, NativeMouseEvent], Event]): Anon_ActiveTabIndex = {
-    val __obj = js.Dynamic.literal(activeTabIndex = activeTabIndex, event = event)
+    val __obj = js.Dynamic.literal(activeTabIndex = activeTabIndex.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ActiveTabIndex]
   }

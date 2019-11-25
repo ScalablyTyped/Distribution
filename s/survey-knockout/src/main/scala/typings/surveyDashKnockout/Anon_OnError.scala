@@ -13,7 +13,7 @@ trait Anon_OnError extends js.Object {
 object Anon_OnError {
   @scala.inline
   def apply(onError: String, root: String, small: String): Anon_OnError = {
-    val __obj = js.Dynamic.literal(onError = onError, root = root, small = small)
+    val __obj = js.Dynamic.literal(onError = onError.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], small = small.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_OnError]
   }

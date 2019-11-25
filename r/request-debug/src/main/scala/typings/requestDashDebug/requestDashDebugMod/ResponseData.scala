@@ -15,8 +15,8 @@ trait ResponseData extends LogData {
 object ResponseData {
   @scala.inline
   def apply(debugId: Double, headers: Headers, statusCode: Double, body: js.Any = null): ResponseData = {
-    val __obj = js.Dynamic.literal(debugId = debugId, headers = headers, statusCode = statusCode)
-    if (body != null) __obj.updateDynamic("body")(body)
+    val __obj = js.Dynamic.literal(debugId = debugId.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseData]
   }
 }

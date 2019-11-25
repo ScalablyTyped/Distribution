@@ -13,7 +13,7 @@ trait Anon_Counter extends js.Object {
 object Anon_Counter {
   @scala.inline
   def apply(counter: Double, result: ArrayBuffer): Anon_Counter = {
-    val __obj = js.Dynamic.literal(counter = counter, result = result)
+    val __obj = js.Dynamic.literal(counter = counter.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Counter]
   }

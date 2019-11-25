@@ -28,9 +28,9 @@ object RegistrationOptions {
     val __obj = js.Dynamic.literal()
     if (knex != null) __obj.updateDynamic("knex")(knex.asInstanceOf[js.Any])
     if (migrateOnStart != null) __obj.updateDynamic("migrateOnStart")(migrateOnStart.asInstanceOf[js.Any])
-    if (migrationsDir != null) __obj.updateDynamic("migrationsDir")(migrationsDir)
+    if (migrationsDir != null) __obj.updateDynamic("migrationsDir")(migrationsDir.asInstanceOf[js.Any])
     if (models != null) __obj.updateDynamic("models")(models.asInstanceOf[js.Any])
-    if (!js.isUndefined(teardownOnStop)) __obj.updateDynamic("teardownOnStop")(teardownOnStop)
+    if (!js.isUndefined(teardownOnStop)) __obj.updateDynamic("teardownOnStop")(teardownOnStop.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegistrationOptions]
   }
 }

@@ -22,14 +22,14 @@ object CopyBlobOptions {
     sourceLeaseId: String = null,
     timeoutIntervalInMs: Int | Double = null
   ): CopyBlobOptions = {
-    val __obj = js.Dynamic.literal(sourceAccessConditions = sourceAccessConditions)
-    if (accessConditions != null) __obj.updateDynamic("accessConditions")(accessConditions)
-    if (leaseId != null) __obj.updateDynamic("leaseId")(leaseId)
-    if (locationMode != null) __obj.updateDynamic("locationMode")(locationMode)
+    val __obj = js.Dynamic.literal(sourceAccessConditions = sourceAccessConditions.asInstanceOf[js.Any])
+    if (accessConditions != null) __obj.updateDynamic("accessConditions")(accessConditions.asInstanceOf[js.Any])
+    if (leaseId != null) __obj.updateDynamic("leaseId")(leaseId.asInstanceOf[js.Any])
+    if (locationMode != null) __obj.updateDynamic("locationMode")(locationMode.asInstanceOf[js.Any])
     if (maximumExecutionTimeInMs != null) __obj.updateDynamic("maximumExecutionTimeInMs")(maximumExecutionTimeInMs.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (snapshotId != null) __obj.updateDynamic("snapshotId")(snapshotId)
-    if (sourceLeaseId != null) __obj.updateDynamic("sourceLeaseId")(sourceLeaseId)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (snapshotId != null) __obj.updateDynamic("snapshotId")(snapshotId.asInstanceOf[js.Any])
+    if (sourceLeaseId != null) __obj.updateDynamic("sourceLeaseId")(sourceLeaseId.asInstanceOf[js.Any])
     if (timeoutIntervalInMs != null) __obj.updateDynamic("timeoutIntervalInMs")(timeoutIntervalInMs.asInstanceOf[js.Any])
     __obj.asInstanceOf[CopyBlobOptions]
   }

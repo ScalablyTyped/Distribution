@@ -34,16 +34,16 @@ object MarkerTooltip {
     width: Int | Double = null
   ): MarkerTooltip = {
     val __obj = js.Dynamic.literal()
-    if (animation != null) __obj.updateDynamic("animation")(animation)
-    if (!js.isUndefined(autoHide)) __obj.updateDynamic("autoHide")(autoHide)
-    if (!js.isUndefined(callout)) __obj.updateDynamic("callout")(callout)
+    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoHide)) __obj.updateDynamic("autoHide")(autoHide.asInstanceOf[js.Any])
+    if (!js.isUndefined(callout)) __obj.updateDynamic("callout")(callout.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(iframe)) __obj.updateDynamic("iframe")(iframe)
-    if (position != null) __obj.updateDynamic("position")(position)
+    if (!js.isUndefined(iframe)) __obj.updateDynamic("iframe")(iframe.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (showAfter != null) __obj.updateDynamic("showAfter")(showAfter.asInstanceOf[js.Any])
-    if (showOn != null) __obj.updateDynamic("showOn")(showOn)
-    if (template != null) __obj.updateDynamic("template")(template)
+    if (showOn != null) __obj.updateDynamic("showOn")(showOn.asInstanceOf[js.Any])
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkerTooltip]
   }

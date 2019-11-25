@@ -38,19 +38,19 @@ object PayerInfo {
     tax_id_type: String = null
   ): PayerInfo = {
     val __obj = js.Dynamic.literal()
-    if (billing_address != null) __obj.updateDynamic("billing_address")(billing_address)
-    if (birth_date != null) __obj.updateDynamic("birth_date")(birth_date)
-    if (country_code != null) __obj.updateDynamic("country_code")(country_code)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (first_name != null) __obj.updateDynamic("first_name")(first_name)
-    if (last_name != null) __obj.updateDynamic("last_name")(last_name)
-    if (middle_name != null) __obj.updateDynamic("middle_name")(middle_name)
-    if (payer_id != null) __obj.updateDynamic("payer_id")(payer_id)
-    if (salutation != null) __obj.updateDynamic("salutation")(salutation)
-    if (shipping_address != null) __obj.updateDynamic("shipping_address")(shipping_address)
-    if (suffix != null) __obj.updateDynamic("suffix")(suffix)
-    if (tax_id != null) __obj.updateDynamic("tax_id")(tax_id)
-    if (tax_id_type != null) __obj.updateDynamic("tax_id_type")(tax_id_type)
+    if (billing_address != null) __obj.updateDynamic("billing_address")(billing_address.asInstanceOf[js.Any])
+    if (birth_date != null) __obj.updateDynamic("birth_date")(birth_date.asInstanceOf[js.Any])
+    if (country_code != null) __obj.updateDynamic("country_code")(country_code.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (first_name != null) __obj.updateDynamic("first_name")(first_name.asInstanceOf[js.Any])
+    if (last_name != null) __obj.updateDynamic("last_name")(last_name.asInstanceOf[js.Any])
+    if (middle_name != null) __obj.updateDynamic("middle_name")(middle_name.asInstanceOf[js.Any])
+    if (payer_id != null) __obj.updateDynamic("payer_id")(payer_id.asInstanceOf[js.Any])
+    if (salutation != null) __obj.updateDynamic("salutation")(salutation.asInstanceOf[js.Any])
+    if (shipping_address != null) __obj.updateDynamic("shipping_address")(shipping_address.asInstanceOf[js.Any])
+    if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
+    if (tax_id != null) __obj.updateDynamic("tax_id")(tax_id.asInstanceOf[js.Any])
+    if (tax_id_type != null) __obj.updateDynamic("tax_id_type")(tax_id_type.asInstanceOf[js.Any])
     __obj.asInstanceOf[PayerInfo]
   }
 }

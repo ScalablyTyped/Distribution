@@ -12,7 +12,7 @@ trait Anon_MaxTime extends js.Object {
 object Anon_MaxTime {
   @scala.inline
   def apply(maxTime: String, minTime: String): Anon_MaxTime = {
-    val __obj = js.Dynamic.literal(maxTime = maxTime, minTime = minTime)
+    val __obj = js.Dynamic.literal(maxTime = maxTime.asInstanceOf[js.Any], minTime = minTime.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_MaxTime]
   }

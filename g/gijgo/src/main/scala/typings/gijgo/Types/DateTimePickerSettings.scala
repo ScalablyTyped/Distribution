@@ -35,14 +35,14 @@ object DateTimePickerSettings {
   ): DateTimePickerSettings = {
     val __obj = js.Dynamic.literal()
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
-    if (datepicker != null) __obj.updateDynamic("datepicker")(datepicker)
-    if (!js.isUndefined(footer)) __obj.updateDynamic("footer")(footer)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal)
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (uiLibrary != null) __obj.updateDynamic("uiLibrary")(uiLibrary)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (datepicker != null) __obj.updateDynamic("datepicker")(datepicker.asInstanceOf[js.Any])
+    if (!js.isUndefined(footer)) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
+    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (uiLibrary != null) __obj.updateDynamic("uiLibrary")(uiLibrary.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateTimePickerSettings]
   }

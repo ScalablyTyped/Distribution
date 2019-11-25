@@ -38,8 +38,8 @@ object cssClasses {
     UPGRADED: `mdc-text-field--upgraded`,
     StringDictionary: StringDictionary[String] = null
   ): cssClasses = {
-    val __obj = js.Dynamic.literal(BOX = BOX, DENSE = DENSE, DISABLED = DISABLED, FOCUSED = FOCUSED, INVALID = INVALID, OUTLINED = OUTLINED, ROOT = ROOT, UPGRADED = UPGRADED)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(BOX = BOX.asInstanceOf[js.Any], DENSE = DENSE.asInstanceOf[js.Any], DISABLED = DISABLED.asInstanceOf[js.Any], FOCUSED = FOCUSED.asInstanceOf[js.Any], INVALID = INVALID.asInstanceOf[js.Any], OUTLINED = OUTLINED.asInstanceOf[js.Any], ROOT = ROOT.asInstanceOf[js.Any], UPGRADED = UPGRADED.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[cssClasses]
   }
 }

@@ -13,7 +13,7 @@ object Suffix {
   @scala.inline
   def apply(option: String = null): Suffix = {
     val __obj = js.Dynamic.literal()
-    if (option != null) __obj.updateDynamic("option")(option)
+    if (option != null) __obj.updateDynamic("option")(option.asInstanceOf[js.Any])
     __obj.asInstanceOf[Suffix]
   }
 }

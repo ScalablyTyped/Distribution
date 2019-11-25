@@ -13,8 +13,8 @@ trait NetworkProps extends js.Object {
 object NetworkProps {
   @scala.inline
   def apply(online: Boolean, offlineAt: Date = null): NetworkProps = {
-    val __obj = js.Dynamic.literal(online = online)
-    if (offlineAt != null) __obj.updateDynamic("offlineAt")(offlineAt)
+    val __obj = js.Dynamic.literal(online = online.asInstanceOf[js.Any])
+    if (offlineAt != null) __obj.updateDynamic("offlineAt")(offlineAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkProps]
   }
 }

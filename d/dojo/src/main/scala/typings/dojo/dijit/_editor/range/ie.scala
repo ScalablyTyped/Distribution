@@ -72,7 +72,7 @@ object ie {
     setEndPoint: (js.Any, js.Any, js.Any) => js.Any,
     setRange: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any
   ): ie = {
-    val __obj = js.Dynamic.literal(cachedSelection = cachedSelection, decomposeControlRange = js.Any.fromFunction1(decomposeControlRange), decomposeTextRange = js.Any.fromFunction1(decomposeTextRange), getEndPoint = js.Any.fromFunction2(getEndPoint), selection = js.Any.fromFunction1(selection), setEndPoint = js.Any.fromFunction3(setEndPoint), setRange = js.Any.fromFunction6(setRange))
+    val __obj = js.Dynamic.literal(cachedSelection = cachedSelection.asInstanceOf[js.Any], decomposeControlRange = js.Any.fromFunction1(decomposeControlRange), decomposeTextRange = js.Any.fromFunction1(decomposeTextRange), getEndPoint = js.Any.fromFunction2(getEndPoint), selection = js.Any.fromFunction1(selection), setEndPoint = js.Any.fromFunction3(setEndPoint), setRange = js.Any.fromFunction6(setRange))
   
     __obj.asInstanceOf[ie]
   }

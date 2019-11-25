@@ -16,7 +16,7 @@ object QueryInfo {
     endCursor: String = null
   ): QueryInfo = {
     val __obj = js.Dynamic.literal(moreResults = moreResults.asInstanceOf[js.Any])
-    if (endCursor != null) __obj.updateDynamic("endCursor")(endCursor)
+    if (endCursor != null) __obj.updateDynamic("endCursor")(endCursor.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryInfo]
   }
 }

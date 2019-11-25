@@ -22,7 +22,7 @@ object ContentFilter {
   ): ContentFilter = {
     val __obj = js.Dynamic.literal()
     if (process != null) __obj.updateDynamic("process")(js.Any.fromFunction1(process))
-    if (regex != null) __obj.updateDynamic("regex")(regex)
+    if (regex != null) __obj.updateDynamic("regex")(regex.asInstanceOf[js.Any])
     if (test != null) __obj.updateDynamic("test")(js.Any.fromFunction1(test))
     __obj.asInstanceOf[ContentFilter]
   }

@@ -12,7 +12,7 @@ trait Variable extends js.Object {
 object Variable {
   @scala.inline
   def apply(qContent: Anon_QIsNum): Variable = {
-    val __obj = js.Dynamic.literal(qContent = qContent)
+    val __obj = js.Dynamic.literal(qContent = qContent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Variable]
   }

@@ -12,8 +12,8 @@ trait RuleTesterTest extends js.Object {
 object RuleTesterTest {
   @scala.inline
   def apply(code: String, description: String = null): RuleTesterTest = {
-    val __obj = js.Dynamic.literal(code = code)
-    if (description != null) __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleTesterTest]
   }
 }

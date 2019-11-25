@@ -23,10 +23,10 @@ object IdentityProviderOptions {
     force_authn: js.UndefOr[Boolean] = js.undefined,
     sign_get_request: js.UndefOr[Boolean] = js.undefined
   ): IdentityProviderOptions = {
-    val __obj = js.Dynamic.literal(certificates = certificates, sso_login_url = sso_login_url, sso_logout_url = sso_logout_url)
-    if (!js.isUndefined(allow_unencrypted_assertion)) __obj.updateDynamic("allow_unencrypted_assertion")(allow_unencrypted_assertion)
-    if (!js.isUndefined(force_authn)) __obj.updateDynamic("force_authn")(force_authn)
-    if (!js.isUndefined(sign_get_request)) __obj.updateDynamic("sign_get_request")(sign_get_request)
+    val __obj = js.Dynamic.literal(certificates = certificates.asInstanceOf[js.Any], sso_login_url = sso_login_url.asInstanceOf[js.Any], sso_logout_url = sso_logout_url.asInstanceOf[js.Any])
+    if (!js.isUndefined(allow_unencrypted_assertion)) __obj.updateDynamic("allow_unencrypted_assertion")(allow_unencrypted_assertion.asInstanceOf[js.Any])
+    if (!js.isUndefined(force_authn)) __obj.updateDynamic("force_authn")(force_authn.asInstanceOf[js.Any])
+    if (!js.isUndefined(sign_get_request)) __obj.updateDynamic("sign_get_request")(sign_get_request.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentityProviderOptions]
   }
 }

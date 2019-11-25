@@ -14,7 +14,7 @@ trait BatchInfo extends js.Object {
 object BatchInfo {
   @scala.inline
   def apply(id: String, jobId: String, state: String, stateMessage: String): BatchInfo = {
-    val __obj = js.Dynamic.literal(id = id, jobId = jobId, state = state, stateMessage = stateMessage)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], jobId = jobId.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], stateMessage = stateMessage.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BatchInfo]
   }

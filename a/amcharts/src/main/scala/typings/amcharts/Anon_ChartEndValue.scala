@@ -16,10 +16,10 @@ trait Anon_ChartEndValue extends js.Object {
 object Anon_ChartEndValue {
   @scala.inline
   def apply(chart: default, `type`: String, endValue: Date = null, startValue: Date = null): Anon_ChartEndValue = {
-    val __obj = js.Dynamic.literal(chart = chart)
-    __obj.updateDynamic("type")(`type`)
-    if (endValue != null) __obj.updateDynamic("endValue")(endValue)
-    if (startValue != null) __obj.updateDynamic("startValue")(startValue)
+    val __obj = js.Dynamic.literal(chart = chart.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (endValue != null) __obj.updateDynamic("endValue")(endValue.asInstanceOf[js.Any])
+    if (startValue != null) __obj.updateDynamic("startValue")(startValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ChartEndValue]
   }
 }

@@ -28,10 +28,10 @@ object CellularBase {
     SignalStrength: Int | Double = null
   ): CellularBase = {
     val __obj = js.Dynamic.literal()
-    if (ActivationState != null) __obj.updateDynamic("ActivationState")(ActivationState)
-    if (NetworkTechnology != null) __obj.updateDynamic("NetworkTechnology")(NetworkTechnology)
-    if (RoamingState != null) __obj.updateDynamic("RoamingState")(RoamingState)
-    if (!js.isUndefined(SIMPresent)) __obj.updateDynamic("SIMPresent")(SIMPresent)
+    if (ActivationState != null) __obj.updateDynamic("ActivationState")(ActivationState.asInstanceOf[js.Any])
+    if (NetworkTechnology != null) __obj.updateDynamic("NetworkTechnology")(NetworkTechnology.asInstanceOf[js.Any])
+    if (RoamingState != null) __obj.updateDynamic("RoamingState")(RoamingState.asInstanceOf[js.Any])
+    if (!js.isUndefined(SIMPresent)) __obj.updateDynamic("SIMPresent")(SIMPresent.asInstanceOf[js.Any])
     if (SignalStrength != null) __obj.updateDynamic("SignalStrength")(SignalStrength.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellularBase]
   }

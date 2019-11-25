@@ -51,11 +51,11 @@ object dotDensityGetSchemesByTagParams {
     excludedTags: js.Array[String] = null,
     includedTags: js.Array[String] = null
   ): dotDensityGetSchemesByTagParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), numColors = numColors, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), numColors = numColors.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
-    if (basemapTheme != null) __obj.updateDynamic("basemapTheme")(basemapTheme)
-    if (excludedTags != null) __obj.updateDynamic("excludedTags")(excludedTags)
-    if (includedTags != null) __obj.updateDynamic("includedTags")(includedTags)
+    if (basemapTheme != null) __obj.updateDynamic("basemapTheme")(basemapTheme.asInstanceOf[js.Any])
+    if (excludedTags != null) __obj.updateDynamic("excludedTags")(excludedTags.asInstanceOf[js.Any])
+    if (includedTags != null) __obj.updateDynamic("includedTags")(includedTags.asInstanceOf[js.Any])
     __obj.asInstanceOf[dotDensityGetSchemesByTagParams]
   }
 }

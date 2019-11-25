@@ -20,8 +20,8 @@ trait CreateTeamProps extends js.Object {
 object CreateTeamProps {
   @scala.inline
   def apply(managers: js.Array[String], name: String, workers: js.Array[String], hub: String = null): CreateTeamProps = {
-    val __obj = js.Dynamic.literal(managers = managers, name = name, workers = workers)
-    if (hub != null) __obj.updateDynamic("hub")(hub)
+    val __obj = js.Dynamic.literal(managers = managers.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], workers = workers.asInstanceOf[js.Any])
+    if (hub != null) __obj.updateDynamic("hub")(hub.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTeamProps]
   }
 }

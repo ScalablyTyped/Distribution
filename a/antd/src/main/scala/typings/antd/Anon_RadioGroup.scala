@@ -12,7 +12,7 @@ trait Anon_RadioGroup extends js.Object {
 object Anon_RadioGroup {
   @scala.inline
   def apply(radioGroup: Requireable[_]): Anon_RadioGroup = {
-    val __obj = js.Dynamic.literal(radioGroup = radioGroup)
+    val __obj = js.Dynamic.literal(radioGroup = radioGroup.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_RadioGroup]
   }

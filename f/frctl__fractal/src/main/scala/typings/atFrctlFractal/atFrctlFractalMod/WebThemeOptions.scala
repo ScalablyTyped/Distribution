@@ -36,18 +36,18 @@ object WebThemeOptions {
     styles: js.Array[String] = null,
     version: String = null
   ): WebThemeOptions = {
-    val __obj = js.Dynamic.literal(rtl = rtl)
-    __obj.updateDynamic("static.mount")(`static.mount`)
-    if (favicon != null) __obj.updateDynamic("favicon")(favicon)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (lang != null) __obj.updateDynamic("lang")(lang)
-    if (nav != null) __obj.updateDynamic("nav")(nav)
-    if (panels != null) __obj.updateDynamic("panels")(panels)
-    if (scripts != null) __obj.updateDynamic("scripts")(scripts)
-    if (skin != null) __obj.updateDynamic("skin")(skin)
-    if (static != null) __obj.updateDynamic("static")(static)
-    if (styles != null) __obj.updateDynamic("styles")(styles)
-    if (version != null) __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(rtl = rtl.asInstanceOf[js.Any])
+    __obj.updateDynamic("static.mount")(`static.mount`.asInstanceOf[js.Any])
+    if (favicon != null) __obj.updateDynamic("favicon")(favicon.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
+    if (nav != null) __obj.updateDynamic("nav")(nav.asInstanceOf[js.Any])
+    if (panels != null) __obj.updateDynamic("panels")(panels.asInstanceOf[js.Any])
+    if (scripts != null) __obj.updateDynamic("scripts")(scripts.asInstanceOf[js.Any])
+    if (skin != null) __obj.updateDynamic("skin")(skin.asInstanceOf[js.Any])
+    if (static != null) __obj.updateDynamic("static")(static.asInstanceOf[js.Any])
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebThemeOptions]
   }
 }

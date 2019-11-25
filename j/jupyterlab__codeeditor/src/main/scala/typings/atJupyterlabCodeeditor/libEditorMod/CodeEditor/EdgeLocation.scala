@@ -14,3 +14,14 @@ import scala.scalajs.js.annotation._
 */
 trait EdgeLocation extends js.Object
 
+object EdgeLocation {
+  @scala.inline
+  def bottom: typings.atJupyterlabCodeeditor.atJupyterlabCodeeditorStrings.bottom = this.cast("bottom")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def top: typings.atJupyterlabCodeeditor.atJupyterlabCodeeditorStrings.top = this.cast("top")
+  @scala.inline
+  def topLine: typings.atJupyterlabCodeeditor.atJupyterlabCodeeditorStrings.topLine = this.cast("topLine")
+}
+

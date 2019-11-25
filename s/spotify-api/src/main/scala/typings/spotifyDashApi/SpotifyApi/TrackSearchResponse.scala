@@ -17,7 +17,7 @@ trait TrackSearchResponse extends js.Object {
 object TrackSearchResponse {
   @scala.inline
   def apply(tracks: PagingObject[TrackObjectFull]): TrackSearchResponse = {
-    val __obj = js.Dynamic.literal(tracks = tracks)
+    val __obj = js.Dynamic.literal(tracks = tracks.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TrackSearchResponse]
   }

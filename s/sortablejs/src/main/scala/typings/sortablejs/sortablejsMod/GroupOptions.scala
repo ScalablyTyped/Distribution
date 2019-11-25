@@ -31,10 +31,10 @@ object GroupOptions {
     put: (js.Function1[/* to */ Sortable, PutResult]) | PutResult = null,
     revertClone: js.UndefOr[Boolean] = js.undefined
   ): GroupOptions = {
-    val __obj = js.Dynamic.literal(name = name)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (pull != null) __obj.updateDynamic("pull")(pull.asInstanceOf[js.Any])
     if (put != null) __obj.updateDynamic("put")(put.asInstanceOf[js.Any])
-    if (!js.isUndefined(revertClone)) __obj.updateDynamic("revertClone")(revertClone)
+    if (!js.isUndefined(revertClone)) __obj.updateDynamic("revertClone")(revertClone.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupOptions]
   }
 }

@@ -21,8 +21,8 @@ object ViewportOptions {
   ): ViewportOptions = {
     val __obj = js.Dynamic.literal()
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation)
-    if (margins != null) __obj.updateDynamic("margins")(margins)
+    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation.asInstanceOf[js.Any])
+    if (margins != null) __obj.updateDynamic("margins")(margins.asInstanceOf[js.Any])
     if (zoomFactor != null) __obj.updateDynamic("zoomFactor")(zoomFactor.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewportOptions]
   }

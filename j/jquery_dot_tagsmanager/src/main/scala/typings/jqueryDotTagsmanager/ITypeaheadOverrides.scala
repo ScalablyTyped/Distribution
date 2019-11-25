@@ -18,9 +18,9 @@ object ITypeaheadOverrides {
     selectedClass: String = null
   ): ITypeaheadOverrides = {
     val __obj = js.Dynamic.literal()
-    if (instanceSelectHandler != null) __obj.updateDynamic("instanceSelectHandler")(instanceSelectHandler)
-    if (select != null) __obj.updateDynamic("select")(select)
-    if (selectedClass != null) __obj.updateDynamic("selectedClass")(selectedClass)
+    if (instanceSelectHandler != null) __obj.updateDynamic("instanceSelectHandler")(instanceSelectHandler.asInstanceOf[js.Any])
+    if (select != null) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
+    if (selectedClass != null) __obj.updateDynamic("selectedClass")(selectedClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITypeaheadOverrides]
   }
 }

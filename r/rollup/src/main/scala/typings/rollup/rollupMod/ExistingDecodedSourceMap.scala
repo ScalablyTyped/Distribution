@@ -25,10 +25,10 @@ object ExistingDecodedSourceMap {
     sourceRoot: String = null,
     sourcesContent: js.Array[String] = null
   ): ExistingDecodedSourceMap = {
-    val __obj = js.Dynamic.literal(mappings = mappings, names = names, sources = sources, version = version)
-    if (file != null) __obj.updateDynamic("file")(file)
-    if (sourceRoot != null) __obj.updateDynamic("sourceRoot")(sourceRoot)
-    if (sourcesContent != null) __obj.updateDynamic("sourcesContent")(sourcesContent)
+    val __obj = js.Dynamic.literal(mappings = mappings.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any], sources = sources.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
+    if (sourceRoot != null) __obj.updateDynamic("sourceRoot")(sourceRoot.asInstanceOf[js.Any])
+    if (sourcesContent != null) __obj.updateDynamic("sourcesContent")(sourcesContent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExistingDecodedSourceMap]
   }
 }

@@ -60,8 +60,8 @@ object BeanstalkdJobStats {
     ttr: Double,
     tube: String
   ): BeanstalkdJobStats = {
-    val __obj = js.Dynamic.literal(age = age, buries = buries, delay = delay, file = file, id = id, kicks = kicks, pri = pri, releases = releases, reserves = reserves, state = state, timeouts = timeouts, ttr = ttr, tube = tube)
-    __obj.updateDynamic("time-left")(`time-left`)
+    val __obj = js.Dynamic.literal(age = age.asInstanceOf[js.Any], buries = buries.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kicks = kicks.asInstanceOf[js.Any], pri = pri.asInstanceOf[js.Any], releases = releases.asInstanceOf[js.Any], reserves = reserves.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], timeouts = timeouts.asInstanceOf[js.Any], ttr = ttr.asInstanceOf[js.Any], tube = tube.asInstanceOf[js.Any])
+    __obj.updateDynamic("time-left")(`time-left`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BeanstalkdJobStats]
   }
 }

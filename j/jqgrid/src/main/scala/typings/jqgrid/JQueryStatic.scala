@@ -12,7 +12,7 @@ object JQueryStatic {
   @scala.inline
   def apply(jqGrid: JQueryJqGridStatic = null): JQueryStatic = {
     val __obj = js.Dynamic.literal()
-    if (jqGrid != null) __obj.updateDynamic("jqGrid")(jqGrid)
+    if (jqGrid != null) __obj.updateDynamic("jqGrid")(jqGrid.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryStatic]
   }
 }

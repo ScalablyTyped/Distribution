@@ -33,7 +33,7 @@ trait PodAffinityTerm extends js.Object {
 object PodAffinityTerm {
   @scala.inline
   def apply(labelSelector: LabelSelector, namespaces: js.Array[String], topologyKey: String): PodAffinityTerm = {
-    val __obj = js.Dynamic.literal(labelSelector = labelSelector, namespaces = namespaces, topologyKey = topologyKey)
+    val __obj = js.Dynamic.literal(labelSelector = labelSelector.asInstanceOf[js.Any], namespaces = namespaces.asInstanceOf[js.Any], topologyKey = topologyKey.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PodAffinityTerm]
   }

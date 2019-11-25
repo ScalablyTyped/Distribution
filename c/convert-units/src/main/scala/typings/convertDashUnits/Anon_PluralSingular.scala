@@ -12,7 +12,7 @@ trait Anon_PluralSingular extends js.Object {
 object Anon_PluralSingular {
   @scala.inline
   def apply(plural: String, singular: String): Anon_PluralSingular = {
-    val __obj = js.Dynamic.literal(plural = plural, singular = singular)
+    val __obj = js.Dynamic.literal(plural = plural.asInstanceOf[js.Any], singular = singular.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_PluralSingular]
   }

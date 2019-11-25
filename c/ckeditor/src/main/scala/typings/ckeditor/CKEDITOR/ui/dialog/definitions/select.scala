@@ -21,8 +21,8 @@ object select {
     size: Int | Double = null,
     validate: () => Boolean = null
   ): select = {
-    val __obj = js.Dynamic.literal(default = default, items = items)
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
+    val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction0(validate))
     __obj.asInstanceOf[select]

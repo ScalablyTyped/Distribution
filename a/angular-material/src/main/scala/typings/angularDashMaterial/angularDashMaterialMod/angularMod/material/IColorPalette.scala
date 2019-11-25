@@ -47,12 +47,12 @@ object IColorPalette {
     teal: IPalette,
     yellow: IPalette
   ): IColorPalette = {
-    val __obj = js.Dynamic.literal(amber = amber, blue = blue, brown = brown, cyan = cyan, green = green, grey = grey, indigo = indigo, lime = lime, orange = orange, pink = pink, red = red, teal = teal, yellow = yellow)
-    __obj.updateDynamic("blue-grey")(`blue-grey`)
-    __obj.updateDynamic("deep-orange")(`deep-orange`)
-    __obj.updateDynamic("deep-purple")(`deep-purple`)
-    __obj.updateDynamic("light-blue")(`light-blue`)
-    __obj.updateDynamic("light-green")(`light-green`)
+    val __obj = js.Dynamic.literal(amber = amber.asInstanceOf[js.Any], blue = blue.asInstanceOf[js.Any], brown = brown.asInstanceOf[js.Any], cyan = cyan.asInstanceOf[js.Any], green = green.asInstanceOf[js.Any], grey = grey.asInstanceOf[js.Any], indigo = indigo.asInstanceOf[js.Any], lime = lime.asInstanceOf[js.Any], orange = orange.asInstanceOf[js.Any], pink = pink.asInstanceOf[js.Any], red = red.asInstanceOf[js.Any], teal = teal.asInstanceOf[js.Any], yellow = yellow.asInstanceOf[js.Any])
+    __obj.updateDynamic("blue-grey")(`blue-grey`.asInstanceOf[js.Any])
+    __obj.updateDynamic("deep-orange")(`deep-orange`.asInstanceOf[js.Any])
+    __obj.updateDynamic("deep-purple")(`deep-purple`.asInstanceOf[js.Any])
+    __obj.updateDynamic("light-blue")(`light-blue`.asInstanceOf[js.Any])
+    __obj.updateDynamic("light-green")(`light-green`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IColorPalette]
   }
 }

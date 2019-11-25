@@ -15,7 +15,7 @@ object RTCIceServer {
   @scala.inline
   def apply(credentialType: RTCIceCredentialType = null): RTCIceServer = {
     val __obj = js.Dynamic.literal()
-    if (credentialType != null) __obj.updateDynamic("credentialType")(credentialType)
+    if (credentialType != null) __obj.updateDynamic("credentialType")(credentialType.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCIceServer]
   }
 }

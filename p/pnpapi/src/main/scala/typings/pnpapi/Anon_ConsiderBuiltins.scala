@@ -12,7 +12,7 @@ object Anon_ConsiderBuiltins {
   @scala.inline
   def apply(considerBuiltins: js.UndefOr[Boolean] = js.undefined): Anon_ConsiderBuiltins = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(considerBuiltins)) __obj.updateDynamic("considerBuiltins")(considerBuiltins)
+    if (!js.isUndefined(considerBuiltins)) __obj.updateDynamic("considerBuiltins")(considerBuiltins.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ConsiderBuiltins]
   }
 }

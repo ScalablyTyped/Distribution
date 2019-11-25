@@ -32,8 +32,8 @@ object JumpListCategory {
     `type`: tasks | frequent | recent | custom = null
   ): JumpListCategory = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[JumpListCategory]
   }

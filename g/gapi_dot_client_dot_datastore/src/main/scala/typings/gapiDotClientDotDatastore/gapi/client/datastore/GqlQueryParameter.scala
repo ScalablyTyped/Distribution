@@ -18,8 +18,8 @@ object GqlQueryParameter {
   @scala.inline
   def apply(cursor: String = null, value: Value = null): GqlQueryParameter = {
     val __obj = js.Dynamic.literal()
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[GqlQueryParameter]
   }
 }

@@ -28,7 +28,7 @@ import typings.electron.electronStrings.purple
 import typings.electron.electronStrings.red
 import typings.electron.electronStrings.restricted
 import typings.electron.electronStrings.string
-import typings.electron.electronStrings.unknown
+import typings.electron.electronStrings.unknown_
 import typings.electron.electronStrings.url
 import typings.electron.electronStrings.yellow
 import scala.scalajs.js
@@ -85,7 +85,7 @@ trait SystemPreferences extends EventEmitter {
     * application, maps to NSApplication.appearance. You can use the
     * setAppLevelAppearance API to set this value.
     */
-  def getAppLevelAppearance(): dark | light | unknown = js.native
+  def getAppLevelAppearance(): dark | light | unknown_ = js.native
   def getColor(color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ js.Any): String = js.native
   /**
     * Gets the macOS appearance setting that is currently applied to your application,
@@ -97,12 +97,12 @@ trait SystemPreferences extends EventEmitter {
     * using electron-packager or electron-forge just set the enableDarwinDarkMode
     * packager option to true.  See the Electron Packager API for more details.
     */
-  def getEffectiveAppearance(): dark | light | unknown = js.native
+  def getEffectiveAppearance(): dark | light | unknown_ = js.native
   /**
     * This user consent was not required until macOS 10.14 Mojave, so this method will
     * always return granted if your system is running 10.13 High Sierra or lower.
     */
-  def getMediaAccessStatus(mediaType: String): `not-determined` | granted | denied | restricted | unknown = js.native
+  def getMediaAccessStatus(mediaType: String): `not-determined` | granted | denied | restricted | unknown_ = js.native
   /**
     * Returns one of several standard system colors that automatically adapt to
     * vibrancy and changes in accessibility settings like 'Increase contrast' and

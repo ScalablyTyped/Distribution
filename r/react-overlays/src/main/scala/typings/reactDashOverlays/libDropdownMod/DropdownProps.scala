@@ -50,11 +50,11 @@ object DropdownProps {
     show: js.UndefOr[Boolean] = js.undefined
   ): DropdownProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
-    if (!js.isUndefined(alignEnd)) __obj.updateDynamic("alignEnd")(alignEnd)
-    if (drop != null) __obj.updateDynamic("drop")(drop)
-    if (itemSelector != null) __obj.updateDynamic("itemSelector")(itemSelector)
+    if (!js.isUndefined(alignEnd)) __obj.updateDynamic("alignEnd")(alignEnd.asInstanceOf[js.Any])
+    if (drop != null) __obj.updateDynamic("drop")(drop.asInstanceOf[js.Any])
+    if (itemSelector != null) __obj.updateDynamic("itemSelector")(itemSelector.asInstanceOf[js.Any])
     if (onToggle != null) __obj.updateDynamic("onToggle")(js.Any.fromFunction2(onToggle))
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropdownProps]
   }
 }

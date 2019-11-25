@@ -14,3 +14,14 @@ import scala.scalajs.js.annotation._
 */
 trait CellType extends js.Object
 
+object CellType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def code: typings.atJupyterlabCoreutils.atJupyterlabCoreutilsStrings.code = this.cast("code")
+  @scala.inline
+  def markdown: typings.atJupyterlabCoreutils.atJupyterlabCoreutilsStrings.markdown = this.cast("markdown")
+  @scala.inline
+  def raw: typings.atJupyterlabCoreutils.atJupyterlabCoreutilsStrings.raw = this.cast("raw")
+}
+

@@ -48,14 +48,14 @@ object DownloadFileOptions {
     readTimeout: Int | Double = null,
     resumable: () => Unit = null
   ): DownloadFileOptions = {
-    val __obj = js.Dynamic.literal(fromUrl = fromUrl, toFile = toFile)
-    if (!js.isUndefined(background)) __obj.updateDynamic("background")(background)
+    val __obj = js.Dynamic.literal(fromUrl = fromUrl.asInstanceOf[js.Any], toFile = toFile.asInstanceOf[js.Any])
+    if (!js.isUndefined(background)) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
     if (backgroundTimeout != null) __obj.updateDynamic("backgroundTimeout")(backgroundTimeout.asInstanceOf[js.Any])
     if (begin != null) __obj.updateDynamic("begin")(js.Any.fromFunction1(begin))
-    if (!js.isUndefined(cacheable)) __obj.updateDynamic("cacheable")(cacheable)
+    if (!js.isUndefined(cacheable)) __obj.updateDynamic("cacheable")(cacheable.asInstanceOf[js.Any])
     if (connectionTimeout != null) __obj.updateDynamic("connectionTimeout")(connectionTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(discretionary)) __obj.updateDynamic("discretionary")(discretionary)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (!js.isUndefined(discretionary)) __obj.updateDynamic("discretionary")(discretionary.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (progress != null) __obj.updateDynamic("progress")(js.Any.fromFunction1(progress))
     if (progressDivider != null) __obj.updateDynamic("progressDivider")(progressDivider.asInstanceOf[js.Any])
     if (progressInterval != null) __obj.updateDynamic("progressInterval")(progressInterval.asInstanceOf[js.Any])

@@ -22,11 +22,11 @@ object ConsoleConstructorOptions {
     inspectOptions: InspectOptions = null,
     stderr: WritableStream = null
   ): ConsoleConstructorOptions = {
-    val __obj = js.Dynamic.literal(stdout = stdout)
+    val __obj = js.Dynamic.literal(stdout = stdout.asInstanceOf[js.Any])
     if (colorMode != null) __obj.updateDynamic("colorMode")(colorMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreErrors)) __obj.updateDynamic("ignoreErrors")(ignoreErrors)
-    if (inspectOptions != null) __obj.updateDynamic("inspectOptions")(inspectOptions)
-    if (stderr != null) __obj.updateDynamic("stderr")(stderr)
+    if (!js.isUndefined(ignoreErrors)) __obj.updateDynamic("ignoreErrors")(ignoreErrors.asInstanceOf[js.Any])
+    if (inspectOptions != null) __obj.updateDynamic("inspectOptions")(inspectOptions.asInstanceOf[js.Any])
+    if (stderr != null) __obj.updateDynamic("stderr")(stderr.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConsoleConstructorOptions]
   }
 }

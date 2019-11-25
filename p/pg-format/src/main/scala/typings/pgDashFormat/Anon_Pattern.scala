@@ -11,7 +11,7 @@ trait Anon_Pattern extends js.Object {
 object Anon_Pattern {
   @scala.inline
   def apply(pattern: Anon_Ident): Anon_Pattern = {
-    val __obj = js.Dynamic.literal(pattern = pattern)
+    val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Pattern]
   }

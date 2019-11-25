@@ -13,8 +13,8 @@ object StartOfSourceMap {
   @scala.inline
   def apply(file: String = null, sourceRoot: String = null): StartOfSourceMap = {
     val __obj = js.Dynamic.literal()
-    if (file != null) __obj.updateDynamic("file")(file)
-    if (sourceRoot != null) __obj.updateDynamic("sourceRoot")(sourceRoot)
+    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
+    if (sourceRoot != null) __obj.updateDynamic("sourceRoot")(sourceRoot.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartOfSourceMap]
   }
 }

@@ -25,11 +25,11 @@ object UpdateArraySpec {
   ): UpdateArraySpec = {
     val __obj = js.Dynamic.literal()
     if ($apply != null) __obj.updateDynamic("$apply")(js.Any.fromFunction1($apply))
-    if ($merge != null) __obj.updateDynamic("$merge")($merge)
-    if ($push != null) __obj.updateDynamic("$push")($push)
-    if ($set != null) __obj.updateDynamic("$set")($set)
-    if ($splice != null) __obj.updateDynamic("$splice")($splice)
-    if ($unshift != null) __obj.updateDynamic("$unshift")($unshift)
+    if ($merge != null) __obj.updateDynamic("$merge")($merge.asInstanceOf[js.Any])
+    if ($push != null) __obj.updateDynamic("$push")($push.asInstanceOf[js.Any])
+    if ($set != null) __obj.updateDynamic("$set")($set.asInstanceOf[js.Any])
+    if ($splice != null) __obj.updateDynamic("$splice")($splice.asInstanceOf[js.Any])
+    if ($unshift != null) __obj.updateDynamic("$unshift")($unshift.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateArraySpec]
   }
 }

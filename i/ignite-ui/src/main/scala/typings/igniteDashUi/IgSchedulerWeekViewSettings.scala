@@ -39,10 +39,10 @@ object IgSchedulerWeekViewSettings {
     workingHoursDisplayMode: String = null
   ): IgSchedulerWeekViewSettings = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (timeSlotInterval != null) __obj.updateDynamic("timeSlotInterval")(timeSlotInterval)
-    if (weekViewDisplayMode != null) __obj.updateDynamic("weekViewDisplayMode")(weekViewDisplayMode)
-    if (workingHoursDisplayMode != null) __obj.updateDynamic("workingHoursDisplayMode")(workingHoursDisplayMode)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (timeSlotInterval != null) __obj.updateDynamic("timeSlotInterval")(timeSlotInterval.asInstanceOf[js.Any])
+    if (weekViewDisplayMode != null) __obj.updateDynamic("weekViewDisplayMode")(weekViewDisplayMode.asInstanceOf[js.Any])
+    if (workingHoursDisplayMode != null) __obj.updateDynamic("workingHoursDisplayMode")(workingHoursDisplayMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgSchedulerWeekViewSettings]
   }
 }

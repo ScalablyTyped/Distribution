@@ -14,8 +14,8 @@ trait Keys extends js.Object {
 object Keys {
   @scala.inline
   def apply(curve: String, id: String, `private`: String, public: String): Keys = {
-    val __obj = js.Dynamic.literal(curve = curve, id = id, public = public)
-    __obj.updateDynamic("private")(`private`)
+    val __obj = js.Dynamic.literal(curve = curve.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], public = public.asInstanceOf[js.Any])
+    __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Keys]
   }
 }

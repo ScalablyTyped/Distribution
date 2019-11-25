@@ -30,15 +30,15 @@ object Options {
     stickyFooter: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (beforeClose != null) __obj.updateDynamic("beforeClose")(beforeClose)
+    if (beforeClose != null) __obj.updateDynamic("beforeClose")(beforeClose.asInstanceOf[js.Any])
     if (beforeOpen != null) __obj.updateDynamic("beforeOpen")(js.Any.fromFunction0(beforeOpen))
-    if (closeLabel != null) __obj.updateDynamic("closeLabel")(closeLabel)
-    if (closeMethods != null) __obj.updateDynamic("closeMethods")(closeMethods)
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
-    if (!js.isUndefined(footer)) __obj.updateDynamic("footer")(footer)
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
-    if (onOpen != null) __obj.updateDynamic("onOpen")(onOpen)
-    if (!js.isUndefined(stickyFooter)) __obj.updateDynamic("stickyFooter")(stickyFooter)
+    if (closeLabel != null) __obj.updateDynamic("closeLabel")(closeLabel.asInstanceOf[js.Any])
+    if (closeMethods != null) __obj.updateDynamic("closeMethods")(closeMethods.asInstanceOf[js.Any])
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
+    if (!js.isUndefined(footer)) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
+    if (onClose != null) __obj.updateDynamic("onClose")(onClose.asInstanceOf[js.Any])
+    if (onOpen != null) __obj.updateDynamic("onOpen")(onOpen.asInstanceOf[js.Any])
+    if (!js.isUndefined(stickyFooter)) __obj.updateDynamic("stickyFooter")(stickyFooter.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

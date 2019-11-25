@@ -26,11 +26,11 @@ object Anon_ChildrenAttribute {
     sortComparators: SortComparators[D] = null
   ): Anon_ChildrenAttribute[D] = {
     val __obj = js.Dynamic.literal()
-    if (childrenAttribute != null) __obj.updateDynamic("childrenAttribute")(childrenAttribute)
-    if (implicitSort != null) __obj.updateDynamic("implicitSort")(implicitSort)
+    if (childrenAttribute != null) __obj.updateDynamic("childrenAttribute")(childrenAttribute.asInstanceOf[js.Any])
+    if (implicitSort != null) __obj.updateDynamic("implicitSort")(implicitSort.asInstanceOf[js.Any])
     if (keyAttributes != null) __obj.updateDynamic("keyAttributes")(keyAttributes.asInstanceOf[js.Any])
     if (keyAttributesScope != null) __obj.updateDynamic("keyAttributesScope")(keyAttributesScope.asInstanceOf[js.Any])
-    if (sortComparators != null) __obj.updateDynamic("sortComparators")(sortComparators)
+    if (sortComparators != null) __obj.updateDynamic("sortComparators")(sortComparators.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ChildrenAttribute[D]]
   }
 }

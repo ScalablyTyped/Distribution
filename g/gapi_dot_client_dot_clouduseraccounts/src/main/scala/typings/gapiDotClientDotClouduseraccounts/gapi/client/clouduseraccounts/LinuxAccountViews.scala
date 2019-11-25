@@ -21,9 +21,9 @@ object LinuxAccountViews {
     userViews: js.Array[LinuxUserView] = null
   ): LinuxAccountViews = {
     val __obj = js.Dynamic.literal()
-    if (groupViews != null) __obj.updateDynamic("groupViews")(groupViews)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (userViews != null) __obj.updateDynamic("userViews")(userViews)
+    if (groupViews != null) __obj.updateDynamic("groupViews")(groupViews.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (userViews != null) __obj.updateDynamic("userViews")(userViews.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinuxAccountViews]
   }
 }

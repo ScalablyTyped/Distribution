@@ -14,8 +14,8 @@ object Anon_IfModifiedSince {
   @scala.inline
   def apply(_with: String = null, ifModifiedSince: Date = null): Anon_IfModifiedSince = {
     val __obj = js.Dynamic.literal()
-    if (_with != null) __obj.updateDynamic("_with")(_with)
-    if (ifModifiedSince != null) __obj.updateDynamic("ifModifiedSince")(ifModifiedSince)
+    if (_with != null) __obj.updateDynamic("_with")(_with.asInstanceOf[js.Any])
+    if (ifModifiedSince != null) __obj.updateDynamic("ifModifiedSince")(ifModifiedSince.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IfModifiedSince]
   }
 }

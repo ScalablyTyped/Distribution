@@ -44,8 +44,8 @@ object Array extends js.Object {
     ): SugarDefaultChainable[Unit] = js.native
     def indexOf(searchElement: T): SugarDefaultChainable[Double] = js.native
     def indexOf(searchElement: T, fromIndex: Double): SugarDefaultChainable[Double] = js.native
-    def join(): SugarDefaultChainable[String] = js.native
-    def join(separator: String): SugarDefaultChainable[String] = js.native
+    def join(): SugarDefaultChainable[java.lang.String] = js.native
+    def join(separator: java.lang.String): SugarDefaultChainable[java.lang.String] = js.native
     def lastIndexOf(searchElement: T): SugarDefaultChainable[Double] = js.native
     def lastIndexOf(searchElement: T, fromIndex: Double): SugarDefaultChainable[Double] = js.native
     def map[U](callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], U]): SugarDefaultChainable[js.Array[U]] = js.native

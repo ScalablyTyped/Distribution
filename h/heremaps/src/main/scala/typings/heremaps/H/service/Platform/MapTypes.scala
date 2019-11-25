@@ -25,10 +25,10 @@ object MapTypes {
     terrain: MapType = null
   ): MapTypes = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (normal != null) __obj.updateDynamic("normal")(normal)
-    if (satellite != null) __obj.updateDynamic("satellite")(satellite)
-    if (terrain != null) __obj.updateDynamic("terrain")(terrain)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (normal != null) __obj.updateDynamic("normal")(normal.asInstanceOf[js.Any])
+    if (satellite != null) __obj.updateDynamic("satellite")(satellite.asInstanceOf[js.Any])
+    if (terrain != null) __obj.updateDynamic("terrain")(terrain.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapTypes]
   }
 }

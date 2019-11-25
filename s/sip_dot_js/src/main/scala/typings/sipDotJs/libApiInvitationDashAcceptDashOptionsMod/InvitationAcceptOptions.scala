@@ -32,8 +32,8 @@ object InvitationAcceptOptions {
   ): InvitationAcceptOptions = {
     val __obj = js.Dynamic.literal()
     if (onInfo != null) __obj.updateDynamic("onInfo")(js.Any.fromFunction1(onInfo))
-    if (sessionDescriptionHandlerModifiers != null) __obj.updateDynamic("sessionDescriptionHandlerModifiers")(sessionDescriptionHandlerModifiers)
-    if (sessionDescriptionHandlerOptions != null) __obj.updateDynamic("sessionDescriptionHandlerOptions")(sessionDescriptionHandlerOptions)
+    if (sessionDescriptionHandlerModifiers != null) __obj.updateDynamic("sessionDescriptionHandlerModifiers")(sessionDescriptionHandlerModifiers.asInstanceOf[js.Any])
+    if (sessionDescriptionHandlerOptions != null) __obj.updateDynamic("sessionDescriptionHandlerOptions")(sessionDescriptionHandlerOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvitationAcceptOptions]
   }
 }

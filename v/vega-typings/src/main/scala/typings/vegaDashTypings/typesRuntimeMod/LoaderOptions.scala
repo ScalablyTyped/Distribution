@@ -26,11 +26,11 @@ object LoaderOptions {
     target: String = null
   ): LoaderOptions = {
     val __obj = js.Dynamic.literal()
-    if (baseURL != null) __obj.updateDynamic("baseURL")(baseURL)
+    if (baseURL != null) __obj.updateDynamic("baseURL")(baseURL.asInstanceOf[js.Any])
     if (defaultProtocol != null) __obj.updateDynamic("defaultProtocol")(defaultProtocol.asInstanceOf[js.Any])
-    if (http != null) __obj.updateDynamic("http")(http)
+    if (http != null) __obj.updateDynamic("http")(http.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoaderOptions]
   }
 }

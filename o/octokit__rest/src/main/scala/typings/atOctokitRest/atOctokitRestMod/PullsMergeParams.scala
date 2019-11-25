@@ -40,11 +40,11 @@ object PullsMergeParams {
     merge_method: merge | squash | rebase = null,
     sha: String = null
   ): PullsMergeParams = {
-    val __obj = js.Dynamic.literal(owner = owner, pull_number = pull_number, repo = repo)
-    if (commit_message != null) __obj.updateDynamic("commit_message")(commit_message)
-    if (commit_title != null) __obj.updateDynamic("commit_title")(commit_title)
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], pull_number = pull_number.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
+    if (commit_message != null) __obj.updateDynamic("commit_message")(commit_message.asInstanceOf[js.Any])
+    if (commit_title != null) __obj.updateDynamic("commit_title")(commit_title.asInstanceOf[js.Any])
     if (merge_method != null) __obj.updateDynamic("merge_method")(merge_method.asInstanceOf[js.Any])
-    if (sha != null) __obj.updateDynamic("sha")(sha)
+    if (sha != null) __obj.updateDynamic("sha")(sha.asInstanceOf[js.Any])
     __obj.asInstanceOf[PullsMergeParams]
   }
 }

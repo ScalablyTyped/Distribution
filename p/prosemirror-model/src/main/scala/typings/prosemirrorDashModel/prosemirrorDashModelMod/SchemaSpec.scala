@@ -13,7 +13,7 @@ trait SchemaSpec[N /* <: String */, M /* <: String */] extends js.Object {
     * rules](#model.MarkSpec.parseDOM) are tried.
     */
   var marks: js.UndefOr[
-    (/* import warning: ImportType.apply c Unsupported type mapping: 
+    (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ name in M ]: prosemirror-model.prosemirror-model.MarkSpec}
     */ typings.prosemirrorDashModel.prosemirrorDashModelStrings.SchemaSpec with js.Any) | ^[MarkSpec] | Null
   ] = js.undefined
@@ -25,7 +25,7 @@ trait SchemaSpec[N /* <: String */, M /* <: String */] extends js.Object {
     * precedence by default, and which nodes come first in a given
     * [group](#model.NodeSpec.group).
     */
-  var nodes: (/* import warning: ImportType.apply c Unsupported type mapping: 
+  var nodes: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ name in N ]: prosemirror-model.prosemirror-model.NodeSpec}
     */ typings.prosemirrorDashModel.prosemirrorDashModelStrings.SchemaSpec with js.Any) | ^[NodeSpec]
   /**
@@ -38,17 +38,17 @@ trait SchemaSpec[N /* <: String */, M /* <: String */] extends js.Object {
 object SchemaSpec {
   @scala.inline
   def apply[N /* <: String */, M /* <: String */](
-    nodes: (/* import warning: ImportType.apply c Unsupported type mapping: 
+    nodes: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ name in N ]: prosemirror-model.prosemirror-model.NodeSpec}
     */ typings.prosemirrorDashModel.prosemirrorDashModelStrings.SchemaSpec with js.Any) | ^[NodeSpec],
-    marks: (/* import warning: ImportType.apply c Unsupported type mapping: 
+    marks: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ name in M ]: prosemirror-model.prosemirror-model.MarkSpec}
     */ typings.prosemirrorDashModel.prosemirrorDashModelStrings.SchemaSpec with js.Any) | ^[MarkSpec] = null,
     topNode: String = null
   ): SchemaSpec[N, M] = {
     val __obj = js.Dynamic.literal(nodes = nodes.asInstanceOf[js.Any])
     if (marks != null) __obj.updateDynamic("marks")(marks.asInstanceOf[js.Any])
-    if (topNode != null) __obj.updateDynamic("topNode")(topNode)
+    if (topNode != null) __obj.updateDynamic("topNode")(topNode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSpec[N, M]]
   }
 }

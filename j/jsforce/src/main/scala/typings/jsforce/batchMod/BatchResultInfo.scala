@@ -21,11 +21,11 @@ object BatchResultInfo {
     jobId: String = null,
     success: js.UndefOr[Boolean] = js.undefined
   ): BatchResultInfo = {
-    val __obj = js.Dynamic.literal(id = id)
-    if (batchId != null) __obj.updateDynamic("batchId")(batchId)
-    if (errors != null) __obj.updateDynamic("errors")(errors)
-    if (jobId != null) __obj.updateDynamic("jobId")(jobId)
-    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    if (batchId != null) __obj.updateDynamic("batchId")(batchId.asInstanceOf[js.Any])
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
+    if (jobId != null) __obj.updateDynamic("jobId")(jobId.asInstanceOf[js.Any])
+    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchResultInfo]
   }
 }

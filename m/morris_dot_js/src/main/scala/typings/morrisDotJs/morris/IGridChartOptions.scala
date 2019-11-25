@@ -52,17 +52,17 @@ object IGridChartOptions {
     hideHover: Boolean | AutoAlways = null,
     resize: js.UndefOr[Boolean] = js.undefined
   ): IGridChartOptions = {
-    val __obj = js.Dynamic.literal(data = data, element = element, labels = labels, xkey = xkey, ykeys = ykeys)
-    if (!js.isUndefined(axes)) __obj.updateDynamic("axes")(axes)
-    if (!js.isUndefined(grid)) __obj.updateDynamic("grid")(grid)
-    if (gridLineColor != null) __obj.updateDynamic("gridLineColor")(gridLineColor)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], xkey = xkey.asInstanceOf[js.Any], ykeys = ykeys.asInstanceOf[js.Any])
+    if (!js.isUndefined(axes)) __obj.updateDynamic("axes")(axes.asInstanceOf[js.Any])
+    if (!js.isUndefined(grid)) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
+    if (gridLineColor != null) __obj.updateDynamic("gridLineColor")(gridLineColor.asInstanceOf[js.Any])
     if (gridStrokeWidth != null) __obj.updateDynamic("gridStrokeWidth")(gridStrokeWidth.asInstanceOf[js.Any])
-    if (gridTextColor != null) __obj.updateDynamic("gridTextColor")(gridTextColor)
-    if (gridTextFamily != null) __obj.updateDynamic("gridTextFamily")(gridTextFamily)
+    if (gridTextColor != null) __obj.updateDynamic("gridTextColor")(gridTextColor.asInstanceOf[js.Any])
+    if (gridTextFamily != null) __obj.updateDynamic("gridTextFamily")(gridTextFamily.asInstanceOf[js.Any])
     if (gridTextSize != null) __obj.updateDynamic("gridTextSize")(gridTextSize.asInstanceOf[js.Any])
-    if (gridTextWeight != null) __obj.updateDynamic("gridTextWeight")(gridTextWeight)
+    if (gridTextWeight != null) __obj.updateDynamic("gridTextWeight")(gridTextWeight.asInstanceOf[js.Any])
     if (hideHover != null) __obj.updateDynamic("hideHover")(hideHover.asInstanceOf[js.Any])
-    if (!js.isUndefined(resize)) __obj.updateDynamic("resize")(resize)
+    if (!js.isUndefined(resize)) __obj.updateDynamic("resize")(resize.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGridChartOptions]
   }
 }

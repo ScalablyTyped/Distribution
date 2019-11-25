@@ -5,15 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object maps {
-  import typings.std.Event
-
   type ArrayOfBounds = js.Array[LatLngBounds | PointBounds]
   type ArrayOfBoundsLiteral = js.Array[LatLngBoundsLiteral | PointBoundsLiteral]
   type ArrayOfCoords = js.Array[LatLng | Point]
   type ArrayOfCoordsLiteral = js.Array[LatLngLiteral | PointLiteral]
   type BoundsLiteral = PointBoundsLiteral | LatLngBoundsLiteral
   type CoordLiteral = PointLiteral | LatLngLiteral
-  type DOMEvent = Event
+  type DOMEvent = typings.std.Event
   type GPX = js.Any
   type GeoJSON = js.Any
   type KML = js.Any

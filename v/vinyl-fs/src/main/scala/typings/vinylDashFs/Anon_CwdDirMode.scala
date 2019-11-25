@@ -21,7 +21,7 @@ object Anon_CwdDirMode {
   @scala.inline
   def apply(cwd: String = null, dirMode: Int | Double = null): Anon_CwdDirMode = {
     val __obj = js.Dynamic.literal()
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
     if (dirMode != null) __obj.updateDynamic("dirMode")(dirMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CwdDirMode]
   }

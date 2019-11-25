@@ -32,11 +32,11 @@ object _UnmarshalledMessageAttributeValue {
     StringListValues: js.Array[String] = null,
     StringValue: String = null
   ): _UnmarshalledMessageAttributeValue = {
-    val __obj = js.Dynamic.literal(DataType = DataType)
-    if (BinaryListValues != null) __obj.updateDynamic("BinaryListValues")(BinaryListValues)
-    if (BinaryValue != null) __obj.updateDynamic("BinaryValue")(BinaryValue)
-    if (StringListValues != null) __obj.updateDynamic("StringListValues")(StringListValues)
-    if (StringValue != null) __obj.updateDynamic("StringValue")(StringValue)
+    val __obj = js.Dynamic.literal(DataType = DataType.asInstanceOf[js.Any])
+    if (BinaryListValues != null) __obj.updateDynamic("BinaryListValues")(BinaryListValues.asInstanceOf[js.Any])
+    if (BinaryValue != null) __obj.updateDynamic("BinaryValue")(BinaryValue.asInstanceOf[js.Any])
+    if (StringListValues != null) __obj.updateDynamic("StringListValues")(StringListValues.asInstanceOf[js.Any])
+    if (StringValue != null) __obj.updateDynamic("StringValue")(StringValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledMessageAttributeValue]
   }
 }

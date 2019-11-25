@@ -52,7 +52,7 @@ object Handshake {
     url: String,
     xdomain: Boolean
   ): Handshake = {
-    val __obj = js.Dynamic.literal(address = address, headers = headers, issued = issued, query = query, secure = secure, time = time, url = url, xdomain = xdomain)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], issued = issued.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], secure = secure.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], xdomain = xdomain.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Handshake]
   }

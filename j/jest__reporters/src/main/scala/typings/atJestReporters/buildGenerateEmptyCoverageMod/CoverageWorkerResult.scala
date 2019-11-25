@@ -12,8 +12,8 @@ trait CoverageWorkerResult extends js.Object {
 object CoverageWorkerResult {
   @scala.inline
   def apply(coverage: js.Any, sourceMapPath: String = null): CoverageWorkerResult = {
-    val __obj = js.Dynamic.literal(coverage = coverage)
-    if (sourceMapPath != null) __obj.updateDynamic("sourceMapPath")(sourceMapPath)
+    val __obj = js.Dynamic.literal(coverage = coverage.asInstanceOf[js.Any])
+    if (sourceMapPath != null) __obj.updateDynamic("sourceMapPath")(sourceMapPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[CoverageWorkerResult]
   }
 }

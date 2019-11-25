@@ -56,7 +56,7 @@ object Mode {
     setFullScreen: Boolean => Unit,
     trackContainerResize: Boolean => Unit
   ): Mode = {
-    val __obj = js.Dynamic.literal(allocatedHeight = allocatedHeight, allocatedWidth = allocatedWidth, isControlDisabled = isControlDisabled, isVisible = isVisible, label = label, setControlState = js.Any.fromFunction1(setControlState), setFullScreen = js.Any.fromFunction1(setFullScreen), trackContainerResize = js.Any.fromFunction1(trackContainerResize))
+    val __obj = js.Dynamic.literal(allocatedHeight = allocatedHeight.asInstanceOf[js.Any], allocatedWidth = allocatedWidth.asInstanceOf[js.Any], isControlDisabled = isControlDisabled.asInstanceOf[js.Any], isVisible = isVisible.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], setControlState = js.Any.fromFunction1(setControlState), setFullScreen = js.Any.fromFunction1(setFullScreen), trackContainerResize = js.Any.fromFunction1(trackContainerResize))
   
     __obj.asInstanceOf[Mode]
   }

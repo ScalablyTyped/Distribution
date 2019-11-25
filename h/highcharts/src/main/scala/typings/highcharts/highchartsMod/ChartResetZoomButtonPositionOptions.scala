@@ -36,8 +36,8 @@ object ChartResetZoomButtonPositionOptions {
     y: Int | Double = null
   ): ChartResetZoomButtonPositionOptions = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align)
-    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign)
+    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
+    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartResetZoomButtonPositionOptions]

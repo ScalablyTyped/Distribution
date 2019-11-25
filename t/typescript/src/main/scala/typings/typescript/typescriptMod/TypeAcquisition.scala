@@ -27,11 +27,11 @@ object TypeAcquisition {
     include: js.Array[String] = null
   ): TypeAcquisition = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable)
-    if (!js.isUndefined(enableAutoDiscovery)) __obj.updateDynamic("enableAutoDiscovery")(enableAutoDiscovery)
-    if (exclude != null) __obj.updateDynamic("exclude")(exclude)
-    if (include != null) __obj.updateDynamic("include")(include)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAutoDiscovery)) __obj.updateDynamic("enableAutoDiscovery")(enableAutoDiscovery.asInstanceOf[js.Any])
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeAcquisition]
   }
 }

@@ -23,11 +23,11 @@ object Model {
     state: js.Any = null,
     subscriptions: SubscriptionsMapObject = null
   ): Model = {
-    val __obj = js.Dynamic.literal(namespace = namespace)
-    if (effects != null) __obj.updateDynamic("effects")(effects)
+    val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any])
+    if (effects != null) __obj.updateDynamic("effects")(effects.asInstanceOf[js.Any])
     if (reducers != null) __obj.updateDynamic("reducers")(reducers.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (subscriptions != null) __obj.updateDynamic("subscriptions")(subscriptions)
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (subscriptions != null) __obj.updateDynamic("subscriptions")(subscriptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]
   }
 }

@@ -65,14 +65,14 @@ object ITransferCreationOptions {
     source_type: SourceTypes = null,
     transfer_group: String = null
   ): ITransferCreationOptions = {
-    val __obj = js.Dynamic.literal(amount = amount, currency = currency, destination = destination)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (expand != null) __obj.updateDynamic("expand")(expand)
-    if (include != null) __obj.updateDynamic("include")(include)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (source_transaction != null) __obj.updateDynamic("source_transaction")(source_transaction)
-    if (source_type != null) __obj.updateDynamic("source_type")(source_type)
-    if (transfer_group != null) __obj.updateDynamic("transfer_group")(transfer_group)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], destination = destination.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (source_transaction != null) __obj.updateDynamic("source_transaction")(source_transaction.asInstanceOf[js.Any])
+    if (source_type != null) __obj.updateDynamic("source_type")(source_type.asInstanceOf[js.Any])
+    if (transfer_group != null) __obj.updateDynamic("transfer_group")(transfer_group.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITransferCreationOptions]
   }
 }

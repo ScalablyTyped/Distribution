@@ -29,9 +29,9 @@ object NavbarLinkProps {
     ClassAttributes: ClassAttributes[NavbarLink] = null,
     onClick: MouseEvent[_, NativeMouseEvent] => Unit = null
   ): NavbarLinkProps = {
-    val __obj = js.Dynamic.literal(href = href)
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     __obj.asInstanceOf[NavbarLinkProps]
   }

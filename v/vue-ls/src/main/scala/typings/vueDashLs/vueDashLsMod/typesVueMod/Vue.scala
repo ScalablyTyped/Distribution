@@ -13,7 +13,7 @@ trait Vue extends js.Object {
 object Vue {
   @scala.inline
   def apply($ls: WebStorage): Vue = {
-    val __obj = js.Dynamic.literal($ls = $ls)
+    val __obj = js.Dynamic.literal($ls = $ls.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Vue]
   }

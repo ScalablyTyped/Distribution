@@ -13,7 +13,7 @@ trait Anon_IndexSigs1 extends js.Object {
 object Anon_IndexSigs1 {
   @scala.inline
   def apply(indexSigs1: IndexSignatureInfo, indexSigs2: IndexSignatureInfo): Anon_IndexSigs1 = {
-    val __obj = js.Dynamic.literal(indexSigs1 = indexSigs1, indexSigs2 = indexSigs2)
+    val __obj = js.Dynamic.literal(indexSigs1 = indexSigs1.asInstanceOf[js.Any], indexSigs2 = indexSigs2.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IndexSigs1]
   }

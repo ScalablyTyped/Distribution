@@ -12,7 +12,7 @@ trait OS extends js.Object {
 object OS {
   @scala.inline
   def apply(NAME: String, VERSION: String): OS = {
-    val __obj = js.Dynamic.literal(NAME = NAME, VERSION = VERSION)
+    val __obj = js.Dynamic.literal(NAME = NAME.asInstanceOf[js.Any], VERSION = VERSION.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OS]
   }

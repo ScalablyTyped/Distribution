@@ -42,11 +42,11 @@ object IssuesUpdateMilestoneParamsDeprecatedNumber {
     state: open | closed = null,
     title: String = null
   ): IssuesUpdateMilestoneParamsDeprecatedNumber = {
-    val __obj = js.Dynamic.literal(number = number, owner = owner, repo = repo)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (due_on != null) __obj.updateDynamic("due_on")(due_on)
+    val __obj = js.Dynamic.literal(number = number.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (due_on != null) __obj.updateDynamic("due_on")(due_on.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[IssuesUpdateMilestoneParamsDeprecatedNumber]
   }
 }

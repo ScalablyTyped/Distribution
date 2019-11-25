@@ -45,7 +45,7 @@ object ModularScaleRatio {
     perfectFifth: Double,
     perfectFourth: Double
   ): ModularScaleRatio = {
-    val __obj = js.Dynamic.literal(augFourth = augFourth, doubleOctave = doubleOctave, goldenSection = goldenSection, majorEleventh = majorEleventh, majorSecond = majorSecond, majorSeventh = majorSeventh, majorSixth = majorSixth, majorTenth = majorTenth, majorThird = majorThird, majorTwelfth = majorTwelfth, minorSecond = minorSecond, minorSeventh = minorSeventh, minorSixth = minorSixth, minorThird = minorThird, octave = octave, perfectFifth = perfectFifth, perfectFourth = perfectFourth)
+    val __obj = js.Dynamic.literal(augFourth = augFourth.asInstanceOf[js.Any], doubleOctave = doubleOctave.asInstanceOf[js.Any], goldenSection = goldenSection.asInstanceOf[js.Any], majorEleventh = majorEleventh.asInstanceOf[js.Any], majorSecond = majorSecond.asInstanceOf[js.Any], majorSeventh = majorSeventh.asInstanceOf[js.Any], majorSixth = majorSixth.asInstanceOf[js.Any], majorTenth = majorTenth.asInstanceOf[js.Any], majorThird = majorThird.asInstanceOf[js.Any], majorTwelfth = majorTwelfth.asInstanceOf[js.Any], minorSecond = minorSecond.asInstanceOf[js.Any], minorSeventh = minorSeventh.asInstanceOf[js.Any], minorSixth = minorSixth.asInstanceOf[js.Any], minorThird = minorThird.asInstanceOf[js.Any], octave = octave.asInstanceOf[js.Any], perfectFifth = perfectFifth.asInstanceOf[js.Any], perfectFourth = perfectFourth.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ModularScaleRatio]
   }

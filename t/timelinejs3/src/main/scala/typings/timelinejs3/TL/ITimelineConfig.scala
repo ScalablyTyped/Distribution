@@ -27,10 +27,10 @@ object ITimelineConfig {
     scale: human | cosmological = null,
     title: ITimelineSlideData = null
   ): ITimelineConfig = {
-    val __obj = js.Dynamic.literal(events = events)
-    if (eras != null) __obj.updateDynamic("eras")(eras)
+    val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any])
+    if (eras != null) __obj.updateDynamic("eras")(eras.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITimelineConfig]
   }
 }

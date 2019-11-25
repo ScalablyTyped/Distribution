@@ -23,7 +23,7 @@ object TransitionProps {
     to: String | Double,
     velocity: Double
   ): TransitionProps = {
-    val __obj = js.Dynamic.literal(dimensions = dimensions, from = from.asInstanceOf[js.Any], key = key, prevPoseKey = prevPoseKey, to = to.asInstanceOf[js.Any], velocity = velocity)
+    val __obj = js.Dynamic.literal(dimensions = dimensions.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], prevPoseKey = prevPoseKey.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any], velocity = velocity.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TransitionProps]
   }

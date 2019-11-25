@@ -12,7 +12,7 @@ trait Anon_UiViewContextAnchor extends js.Object {
 object Anon_UiViewContextAnchor {
   @scala.inline
   def apply(uiViewContextAnchor: String, uiViewName: String): Anon_UiViewContextAnchor = {
-    val __obj = js.Dynamic.literal(uiViewContextAnchor = uiViewContextAnchor, uiViewName = uiViewName)
+    val __obj = js.Dynamic.literal(uiViewContextAnchor = uiViewContextAnchor.asInstanceOf[js.Any], uiViewName = uiViewName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_UiViewContextAnchor]
   }

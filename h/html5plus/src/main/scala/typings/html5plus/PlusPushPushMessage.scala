@@ -41,10 +41,10 @@ object PlusPushPushMessage {
   @scala.inline
   def apply(aps: js.Any = null, content: String = null, payload: js.Any = null, title: String = null): PlusPushPushMessage = {
     val __obj = js.Dynamic.literal()
-    if (aps != null) __obj.updateDynamic("aps")(aps)
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (payload != null) __obj.updateDynamic("payload")(payload)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (aps != null) __obj.updateDynamic("aps")(aps.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusPushPushMessage]
   }
 }

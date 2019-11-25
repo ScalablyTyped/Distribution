@@ -31,7 +31,7 @@ object CpuDetail {
     system: String,
     user: String
   ): CpuDetail = {
-    val __obj = js.Dynamic.literal(guest = guest, guest_nice = guest_nice, idle = idle, iowait = iowait, irq = irq, nice = nice, softirq = softirq, steal = steal, system = system, user = user)
+    val __obj = js.Dynamic.literal(guest = guest.asInstanceOf[js.Any], guest_nice = guest_nice.asInstanceOf[js.Any], idle = idle.asInstanceOf[js.Any], iowait = iowait.asInstanceOf[js.Any], irq = irq.asInstanceOf[js.Any], nice = nice.asInstanceOf[js.Any], softirq = softirq.asInstanceOf[js.Any], steal = steal.asInstanceOf[js.Any], system = system.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CpuDetail]
   }

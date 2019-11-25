@@ -43,19 +43,19 @@ object RasterPaint {
   ): RasterPaint = {
     val __obj = js.Dynamic.literal()
     if (`raster-brightness-max` != null) __obj.updateDynamic("raster-brightness-max")(`raster-brightness-max`.asInstanceOf[js.Any])
-    if (`raster-brightness-max-transition` != null) __obj.updateDynamic("raster-brightness-max-transition")(`raster-brightness-max-transition`)
+    if (`raster-brightness-max-transition` != null) __obj.updateDynamic("raster-brightness-max-transition")(`raster-brightness-max-transition`.asInstanceOf[js.Any])
     if (`raster-brightness-min` != null) __obj.updateDynamic("raster-brightness-min")(`raster-brightness-min`.asInstanceOf[js.Any])
-    if (`raster-brightness-min-transition` != null) __obj.updateDynamic("raster-brightness-min-transition")(`raster-brightness-min-transition`)
+    if (`raster-brightness-min-transition` != null) __obj.updateDynamic("raster-brightness-min-transition")(`raster-brightness-min-transition`.asInstanceOf[js.Any])
     if (`raster-contrast` != null) __obj.updateDynamic("raster-contrast")(`raster-contrast`.asInstanceOf[js.Any])
-    if (`raster-contrast-transition` != null) __obj.updateDynamic("raster-contrast-transition")(`raster-contrast-transition`)
+    if (`raster-contrast-transition` != null) __obj.updateDynamic("raster-contrast-transition")(`raster-contrast-transition`.asInstanceOf[js.Any])
     if (`raster-fade-duration` != null) __obj.updateDynamic("raster-fade-duration")(`raster-fade-duration`.asInstanceOf[js.Any])
     if (`raster-hue-rotate` != null) __obj.updateDynamic("raster-hue-rotate")(`raster-hue-rotate`.asInstanceOf[js.Any])
-    if (`raster-hue-rotate-transition` != null) __obj.updateDynamic("raster-hue-rotate-transition")(`raster-hue-rotate-transition`)
+    if (`raster-hue-rotate-transition` != null) __obj.updateDynamic("raster-hue-rotate-transition")(`raster-hue-rotate-transition`.asInstanceOf[js.Any])
     if (`raster-opacity` != null) __obj.updateDynamic("raster-opacity")(`raster-opacity`.asInstanceOf[js.Any])
-    if (`raster-opacity-transition` != null) __obj.updateDynamic("raster-opacity-transition")(`raster-opacity-transition`)
+    if (`raster-opacity-transition` != null) __obj.updateDynamic("raster-opacity-transition")(`raster-opacity-transition`.asInstanceOf[js.Any])
     if (`raster-resampling` != null) __obj.updateDynamic("raster-resampling")(`raster-resampling`.asInstanceOf[js.Any])
     if (`raster-saturation` != null) __obj.updateDynamic("raster-saturation")(`raster-saturation`.asInstanceOf[js.Any])
-    if (`raster-saturation-transition` != null) __obj.updateDynamic("raster-saturation-transition")(`raster-saturation-transition`)
+    if (`raster-saturation-transition` != null) __obj.updateDynamic("raster-saturation-transition")(`raster-saturation-transition`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RasterPaint]
   }
 }

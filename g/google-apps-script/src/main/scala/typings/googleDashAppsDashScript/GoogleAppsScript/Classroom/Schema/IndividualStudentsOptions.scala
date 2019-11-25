@@ -12,7 +12,7 @@ object IndividualStudentsOptions {
   @scala.inline
   def apply(studentIds: js.Array[String] = null): IndividualStudentsOptions = {
     val __obj = js.Dynamic.literal()
-    if (studentIds != null) __obj.updateDynamic("studentIds")(studentIds)
+    if (studentIds != null) __obj.updateDynamic("studentIds")(studentIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndividualStudentsOptions]
   }
 }

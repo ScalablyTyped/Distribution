@@ -14,8 +14,8 @@ trait AuthBasic extends js.Object {
 object AuthBasic {
   @scala.inline
   def apply(password: String, `type`: basic, username: String): AuthBasic = {
-    val __obj = js.Dynamic.literal(password = password, username = username)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthBasic]
   }
 }

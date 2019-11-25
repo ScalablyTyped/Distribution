@@ -16,7 +16,7 @@ trait Matrix2D extends js.Object {
 object Matrix2D {
   @scala.inline
   def apply(a: Double, b: Double, c: Double, d: Double, e: Double, f: Double): Matrix2D = {
-    val __obj = js.Dynamic.literal(a = a, b = b, c = c, d = d, e = e, f = f)
+    val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], c = c.asInstanceOf[js.Any], d = d.asInstanceOf[js.Any], e = e.asInstanceOf[js.Any], f = f.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Matrix2D]
   }

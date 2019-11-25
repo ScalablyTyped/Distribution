@@ -14,8 +14,8 @@ trait UploadChangeParam[T /* <: js.Object */] extends js.Object {
 object UploadChangeParam {
   @scala.inline
   def apply[T /* <: js.Object */](file: T, fileList: js.Array[UploadFile[_]], event: Anon_Percent = null): UploadChangeParam[T] = {
-    val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], fileList = fileList)
-    if (event != null) __obj.updateDynamic("event")(event)
+    val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], fileList = fileList.asInstanceOf[js.Any])
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadChangeParam[T]]
   }
 }

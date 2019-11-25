@@ -11,7 +11,7 @@ trait Anon_Addons extends js.Object {
 object Anon_Addons {
   @scala.inline
   def apply(selectedPanel: String): Anon_Addons = {
-    val __obj = js.Dynamic.literal(selectedPanel = selectedPanel)
+    val __obj = js.Dynamic.literal(selectedPanel = selectedPanel.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Addons]
   }

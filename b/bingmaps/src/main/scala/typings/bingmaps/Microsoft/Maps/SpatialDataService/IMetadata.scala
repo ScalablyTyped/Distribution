@@ -29,7 +29,7 @@ object IMetadata {
     PopulationClass: String,
     RegionalCulture: String
   ): IMetadata = {
-    val __obj = js.Dynamic.literal(AreaSqKm = AreaSqKm, BestMapViewBox = BestMapViewBox, OfficialCulture = OfficialCulture, PopulationClass = PopulationClass, RegionalCulture = RegionalCulture)
+    val __obj = js.Dynamic.literal(AreaSqKm = AreaSqKm.asInstanceOf[js.Any], BestMapViewBox = BestMapViewBox.asInstanceOf[js.Any], OfficialCulture = OfficialCulture.asInstanceOf[js.Any], PopulationClass = PopulationClass.asInstanceOf[js.Any], RegionalCulture = RegionalCulture.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IMetadata]
   }

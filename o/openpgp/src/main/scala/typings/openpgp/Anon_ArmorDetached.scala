@@ -13,8 +13,8 @@ trait Anon_ArmorDetached extends js.Object {
 object Anon_ArmorDetached {
   @scala.inline
   def apply(detached: `true`, armor: `true` = null): Anon_ArmorDetached = {
-    val __obj = js.Dynamic.literal(detached = detached)
-    if (armor != null) __obj.updateDynamic("armor")(armor)
+    val __obj = js.Dynamic.literal(detached = detached.asInstanceOf[js.Any])
+    if (armor != null) __obj.updateDynamic("armor")(armor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ArmorDetached]
   }
 }

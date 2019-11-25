@@ -12,7 +12,7 @@ trait Anon_AccidentalRoot extends js.Object {
 object Anon_AccidentalRoot {
   @scala.inline
   def apply(accidental: String, root: String): Anon_AccidentalRoot = {
-    val __obj = js.Dynamic.literal(accidental = accidental, root = root)
+    val __obj = js.Dynamic.literal(accidental = accidental.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AccidentalRoot]
   }

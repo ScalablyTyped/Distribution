@@ -17,8 +17,8 @@ object IExportAgentResponse {
   @scala.inline
   def apply(agentContent: Uint8Array = null, agentUri: String = null): IExportAgentResponse = {
     val __obj = js.Dynamic.literal()
-    if (agentContent != null) __obj.updateDynamic("agentContent")(agentContent)
-    if (agentUri != null) __obj.updateDynamic("agentUri")(agentUri)
+    if (agentContent != null) __obj.updateDynamic("agentContent")(agentContent.asInstanceOf[js.Any])
+    if (agentUri != null) __obj.updateDynamic("agentUri")(agentUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[IExportAgentResponse]
   }
 }

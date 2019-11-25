@@ -22,8 +22,8 @@ object NameConstraints {
     permittedSubtrees: js.Array[typings.pkijs.srcGeneralSubtreeMod.default] = null
   ): NameConstraints = {
     val __obj = js.Dynamic.literal(fromSchema = js.Any.fromFunction1(fromSchema), toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
-    if (excludedSubtrees != null) __obj.updateDynamic("excludedSubtrees")(excludedSubtrees)
-    if (permittedSubtrees != null) __obj.updateDynamic("permittedSubtrees")(permittedSubtrees)
+    if (excludedSubtrees != null) __obj.updateDynamic("excludedSubtrees")(excludedSubtrees.asInstanceOf[js.Any])
+    if (permittedSubtrees != null) __obj.updateDynamic("permittedSubtrees")(permittedSubtrees.asInstanceOf[js.Any])
     __obj.asInstanceOf[NameConstraints]
   }
 }

@@ -65,7 +65,7 @@ object RBDPersistentVolumeSource {
     secretRef: SecretReference,
     user: String
   ): RBDPersistentVolumeSource = {
-    val __obj = js.Dynamic.literal(fsType = fsType, image = image, keyring = keyring, monitors = monitors, pool = pool, readOnly = readOnly, secretRef = secretRef, user = user)
+    val __obj = js.Dynamic.literal(fsType = fsType.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], keyring = keyring.asInstanceOf[js.Any], monitors = monitors.asInstanceOf[js.Any], pool = pool.asInstanceOf[js.Any], readOnly = readOnly.asInstanceOf[js.Any], secretRef = secretRef.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RBDPersistentVolumeSource]
   }

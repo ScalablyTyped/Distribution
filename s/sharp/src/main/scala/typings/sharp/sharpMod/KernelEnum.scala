@@ -20,7 +20,7 @@ trait KernelEnum extends js.Object {
 object KernelEnum {
   @scala.inline
   def apply(cubic: cubic, lanczos2: lanczos2, lanczos3: lanczos3, mitchell: mitchell, nearest: nearest): KernelEnum = {
-    val __obj = js.Dynamic.literal(cubic = cubic, lanczos2 = lanczos2, lanczos3 = lanczos3, mitchell = mitchell, nearest = nearest)
+    val __obj = js.Dynamic.literal(cubic = cubic.asInstanceOf[js.Any], lanczos2 = lanczos2.asInstanceOf[js.Any], lanczos3 = lanczos3.asInstanceOf[js.Any], mitchell = mitchell.asInstanceOf[js.Any], nearest = nearest.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[KernelEnum]
   }

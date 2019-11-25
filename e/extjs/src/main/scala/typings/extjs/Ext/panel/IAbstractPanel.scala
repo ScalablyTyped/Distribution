@@ -107,64 +107,50 @@ object IAbstractPanel {
   def apply(
     IContainer: typings.extjs.Ext.container.IContainer = null,
     addBodyCls: /* cls */ js.UndefOr[java.lang.String] => typings.extjs.Ext.panel.IPanel = null,
-    addDocked: (/* component */ js.UndefOr[js.Any], /* pos */ js.UndefOr[Double]) => Array = null,
+    addDocked: (js.UndefOr[js.Any], js.UndefOr[Double]) => Array = null,
     addUIClsToElement: /* cls */ js.UndefOr[js.Any] => Unit = null,
-    baseCls: java.lang.String = null,
     body: typings.extjs.Ext.dom.IElement = null,
     bodyBorder: js.UndefOr[Boolean] = js.undefined,
     bodyCls: js.Any = null,
     bodyPadding: js.Any = null,
     bodyStyle: js.Any = null,
-    border: js.Any = null,
-    componentLayout: js.Any = null,
-    contentPaddingProperty: java.lang.String = null,
     defaultDockWeights: js.Any = null,
     dockedItems: js.Any = null,
-    getComponent: /* comp */ js.UndefOr[js.Any] => IComponent = null,
-    getDockedComponent: /* comp */ js.UndefOr[js.Any] => IComponent = null,
-    getDockedItems: (/* selector */ js.UndefOr[java.lang.String], /* beforeBody */ js.UndefOr[Boolean]) => Array = null,
-    getRefItems: /* deep */ js.UndefOr[js.Any] => Unit = null,
-    insertDocked: (/* pos */ js.UndefOr[Double], /* component */ js.UndefOr[js.Any]) => Unit = null,
+    getDockedComponent: js.UndefOr[js.Any] => IComponent = null,
+    getDockedItems: (js.UndefOr[java.lang.String], js.UndefOr[Boolean]) => Array = null,
+    insertDocked: (js.UndefOr[Double], js.UndefOr[js.Any]) => Unit = null,
     isPanel: js.UndefOr[Boolean] = js.undefined,
-    onDockedAdd: /* component */ js.UndefOr[IComponent] => Unit = null,
-    onDockedRemove: /* component */ js.UndefOr[IComponent] => Unit = null,
+    onDockedAdd: js.UndefOr[IComponent] => Unit = null,
+    onDockedRemove: js.UndefOr[IComponent] => Unit = null,
     removeBodyCls: /* cls */ js.UndefOr[java.lang.String] => typings.extjs.Ext.panel.IPanel = null,
-    removeDocked: (/* item */ js.UndefOr[IComponent], /* autoDestroy */ js.UndefOr[Boolean]) => Unit = null,
+    removeDocked: (js.UndefOr[IComponent], js.UndefOr[Boolean]) => Unit = null,
     removeUIClsFromElement: /* cls */ js.UndefOr[js.Any] => Unit = null,
-    renderTpl: js.Any = null,
     setBodyStyle: (/* style */ js.UndefOr[js.Any], /* value */ js.UndefOr[java.lang.String]) => typings.extjs.Ext.panel.IPanel = null,
     shrinkWrapDock: js.Any = null
   ): IAbstractPanel = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IContainer)
+    if (IContainer != null) js.Dynamic.global.Object.assign(__obj, IContainer)
     if (addBodyCls != null) __obj.updateDynamic("addBodyCls")(js.Any.fromFunction1(addBodyCls))
     if (addDocked != null) __obj.updateDynamic("addDocked")(js.Any.fromFunction2(addDocked))
     if (addUIClsToElement != null) __obj.updateDynamic("addUIClsToElement")(js.Any.fromFunction1(addUIClsToElement))
-    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (!js.isUndefined(bodyBorder)) __obj.updateDynamic("bodyBorder")(bodyBorder)
-    if (bodyCls != null) __obj.updateDynamic("bodyCls")(bodyCls)
-    if (bodyPadding != null) __obj.updateDynamic("bodyPadding")(bodyPadding)
-    if (bodyStyle != null) __obj.updateDynamic("bodyStyle")(bodyStyle)
-    if (border != null) __obj.updateDynamic("border")(border)
-    if (componentLayout != null) __obj.updateDynamic("componentLayout")(componentLayout)
-    if (contentPaddingProperty != null) __obj.updateDynamic("contentPaddingProperty")(contentPaddingProperty)
-    if (defaultDockWeights != null) __obj.updateDynamic("defaultDockWeights")(defaultDockWeights)
-    if (dockedItems != null) __obj.updateDynamic("dockedItems")(dockedItems)
-    if (getComponent != null) __obj.updateDynamic("getComponent")(js.Any.fromFunction1(getComponent))
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (!js.isUndefined(bodyBorder)) __obj.updateDynamic("bodyBorder")(bodyBorder.asInstanceOf[js.Any])
+    if (bodyCls != null) __obj.updateDynamic("bodyCls")(bodyCls.asInstanceOf[js.Any])
+    if (bodyPadding != null) __obj.updateDynamic("bodyPadding")(bodyPadding.asInstanceOf[js.Any])
+    if (bodyStyle != null) __obj.updateDynamic("bodyStyle")(bodyStyle.asInstanceOf[js.Any])
+    if (defaultDockWeights != null) __obj.updateDynamic("defaultDockWeights")(defaultDockWeights.asInstanceOf[js.Any])
+    if (dockedItems != null) __obj.updateDynamic("dockedItems")(dockedItems.asInstanceOf[js.Any])
     if (getDockedComponent != null) __obj.updateDynamic("getDockedComponent")(js.Any.fromFunction1(getDockedComponent))
     if (getDockedItems != null) __obj.updateDynamic("getDockedItems")(js.Any.fromFunction2(getDockedItems))
-    if (getRefItems != null) __obj.updateDynamic("getRefItems")(js.Any.fromFunction1(getRefItems))
     if (insertDocked != null) __obj.updateDynamic("insertDocked")(js.Any.fromFunction2(insertDocked))
-    if (!js.isUndefined(isPanel)) __obj.updateDynamic("isPanel")(isPanel)
+    if (!js.isUndefined(isPanel)) __obj.updateDynamic("isPanel")(isPanel.asInstanceOf[js.Any])
     if (onDockedAdd != null) __obj.updateDynamic("onDockedAdd")(js.Any.fromFunction1(onDockedAdd))
     if (onDockedRemove != null) __obj.updateDynamic("onDockedRemove")(js.Any.fromFunction1(onDockedRemove))
     if (removeBodyCls != null) __obj.updateDynamic("removeBodyCls")(js.Any.fromFunction1(removeBodyCls))
     if (removeDocked != null) __obj.updateDynamic("removeDocked")(js.Any.fromFunction2(removeDocked))
     if (removeUIClsFromElement != null) __obj.updateDynamic("removeUIClsFromElement")(js.Any.fromFunction1(removeUIClsFromElement))
-    if (renderTpl != null) __obj.updateDynamic("renderTpl")(renderTpl)
     if (setBodyStyle != null) __obj.updateDynamic("setBodyStyle")(js.Any.fromFunction2(setBodyStyle))
-    if (shrinkWrapDock != null) __obj.updateDynamic("shrinkWrapDock")(shrinkWrapDock)
+    if (shrinkWrapDock != null) __obj.updateDynamic("shrinkWrapDock")(shrinkWrapDock.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAbstractPanel]
   }
 }

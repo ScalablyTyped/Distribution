@@ -62,15 +62,15 @@ object AllDocsOptions {
     update_seq: js.UndefOr[Boolean] = js.undefined
   ): AllDocsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(attachments)) __obj.updateDynamic("attachments")(attachments)
-    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary)
-    if (!js.isUndefined(conflicts)) __obj.updateDynamic("conflicts")(conflicts)
-    if (!js.isUndefined(descending)) __obj.updateDynamic("descending")(descending)
+    if (!js.isUndefined(attachments)) __obj.updateDynamic("attachments")(attachments.asInstanceOf[js.Any])
+    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary.asInstanceOf[js.Any])
+    if (!js.isUndefined(conflicts)) __obj.updateDynamic("conflicts")(conflicts.asInstanceOf[js.Any])
+    if (!js.isUndefined(descending)) __obj.updateDynamic("descending")(descending.asInstanceOf[js.Any])
     if (fetch != null) __obj.updateDynamic("fetch")(js.Any.fromFunction2(fetch))
-    if (!js.isUndefined(include_docs)) __obj.updateDynamic("include_docs")(include_docs)
+    if (!js.isUndefined(include_docs)) __obj.updateDynamic("include_docs")(include_docs.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
-    if (!js.isUndefined(update_seq)) __obj.updateDynamic("update_seq")(update_seq)
+    if (!js.isUndefined(update_seq)) __obj.updateDynamic("update_seq")(update_seq.asInstanceOf[js.Any])
     __obj.asInstanceOf[AllDocsOptions]
   }
 }

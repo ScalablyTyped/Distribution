@@ -22,8 +22,8 @@ object GoogleActionsV2OrdersGenericExtension {
     time: GoogleActionsV2OrdersTime = null
   ): GoogleActionsV2OrdersGenericExtension = {
     val __obj = js.Dynamic.literal()
-    if (locations != null) __obj.updateDynamic("locations")(locations)
-    if (time != null) __obj.updateDynamic("time")(time)
+    if (locations != null) __obj.updateDynamic("locations")(locations.asInstanceOf[js.Any])
+    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2OrdersGenericExtension]
   }
 }

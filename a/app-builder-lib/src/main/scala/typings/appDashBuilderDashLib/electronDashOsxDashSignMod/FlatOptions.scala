@@ -21,13 +21,13 @@ object FlatOptions {
     platform: String = null,
     scripts: String = null
   ): FlatOptions = {
-    val __obj = js.Dynamic.literal(app = app)
-    if (identity != null) __obj.updateDynamic("identity")(identity)
-    if (install != null) __obj.updateDynamic("install")(install)
-    if (keychain != null) __obj.updateDynamic("keychain")(keychain)
-    if (pkg != null) __obj.updateDynamic("pkg")(pkg)
-    if (platform != null) __obj.updateDynamic("platform")(platform)
-    if (scripts != null) __obj.updateDynamic("scripts")(scripts)
+    val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any])
+    if (identity != null) __obj.updateDynamic("identity")(identity.asInstanceOf[js.Any])
+    if (install != null) __obj.updateDynamic("install")(install.asInstanceOf[js.Any])
+    if (keychain != null) __obj.updateDynamic("keychain")(keychain.asInstanceOf[js.Any])
+    if (pkg != null) __obj.updateDynamic("pkg")(pkg.asInstanceOf[js.Any])
+    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
+    if (scripts != null) __obj.updateDynamic("scripts")(scripts.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlatOptions]
   }
 }

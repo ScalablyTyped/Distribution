@@ -86,7 +86,7 @@ object RouteStep {
     rotary_pronunciation: String,
     weight: Double
   ): RouteStep = {
-    val __obj = js.Dynamic.literal(destinations = destinations, distance = distance, duration = duration, exits = exits, geometry = geometry.asInstanceOf[js.Any], intersections = intersections, maneuver = maneuver, mode = mode, name = name, pronunciation = pronunciation, ref = ref, rotary_name = rotary_name, rotary_pronunciation = rotary_pronunciation, weight = weight)
+    val __obj = js.Dynamic.literal(destinations = destinations.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], exits = exits.asInstanceOf[js.Any], geometry = geometry.asInstanceOf[js.Any], intersections = intersections.asInstanceOf[js.Any], maneuver = maneuver.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pronunciation = pronunciation.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], rotary_name = rotary_name.asInstanceOf[js.Any], rotary_pronunciation = rotary_pronunciation.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RouteStep]
   }

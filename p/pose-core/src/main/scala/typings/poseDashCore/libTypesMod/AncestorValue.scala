@@ -12,8 +12,8 @@ trait AncestorValue[V] extends js.Object {
 object AncestorValue {
   @scala.inline
   def apply[V](values: ValueMap[V], label: String = null): AncestorValue[V] = {
-    val __obj = js.Dynamic.literal(values = values)
-    if (label != null) __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[AncestorValue[V]]
   }
 }

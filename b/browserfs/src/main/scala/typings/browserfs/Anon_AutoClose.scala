@@ -22,10 +22,10 @@ object Anon_AutoClose {
     mode: Int | Double = null
   ): Anon_AutoClose = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoClose)) __obj.updateDynamic("autoClose")(autoClose)
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (!js.isUndefined(autoClose)) __obj.updateDynamic("autoClose")(autoClose.asInstanceOf[js.Any])
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (fd != null) __obj.updateDynamic("fd")(fd.asInstanceOf[js.Any])
-    if (flags != null) __obj.updateDynamic("flags")(flags)
+    if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AutoClose]
   }

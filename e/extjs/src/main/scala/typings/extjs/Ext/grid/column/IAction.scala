@@ -84,7 +84,6 @@ object IAction {
     cascade: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IContainer = null,
     defaultRenderer: (/* v */ js.UndefOr[js.Any], /* meta */ js.UndefOr[js.Any], /* record */ js.UndefOr[js.Any], /* rowIdx */ js.UndefOr[js.Any], /* colIdx */ js.UndefOr[js.Any], /* store */ js.UndefOr[js.Any], /* view */ js.UndefOr[js.Any]) => Unit = null,
     disableAction: (/* index */ js.UndefOr[js.Any], /* silent */ js.UndefOr[Boolean]) => Unit = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
     enableAction: (/* index */ js.UndefOr[js.Any], /* silent */ js.UndefOr[Boolean]) => Unit = null,
     getClass: js.Any = null,
     getRefItems: () => Unit = null,
@@ -93,32 +92,23 @@ object IAction {
     icon: java.lang.String = null,
     iconCls: java.lang.String = null,
     items: Array = null,
-    menuText: java.lang.String = null,
-    scope: js.Any = null,
-    sortable: js.UndefOr[Boolean] = js.undefined,
-    stopSelection: js.UndefOr[Boolean] = js.undefined,
-    tooltip: java.lang.String = null
+    stopSelection: js.UndefOr[Boolean] = js.undefined
   ): IAction = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IColumn)
-    if (altText != null) __obj.updateDynamic("altText")(altText)
+    if (IColumn != null) js.Dynamic.global.Object.assign(__obj, IColumn)
+    if (altText != null) __obj.updateDynamic("altText")(altText.asInstanceOf[js.Any])
     if (cascade != null) __obj.updateDynamic("cascade")(js.Any.fromFunction2(cascade))
     if (defaultRenderer != null) __obj.updateDynamic("defaultRenderer")(js.Any.fromFunction7(defaultRenderer))
     if (disableAction != null) __obj.updateDynamic("disableAction")(js.Any.fromFunction2(disableAction))
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (enableAction != null) __obj.updateDynamic("enableAction")(js.Any.fromFunction2(enableAction))
-    if (getClass != null) __obj.updateDynamic("getClass")(getClass)
+    if (getClass != null) __obj.updateDynamic("getClass")(getClass.asInstanceOf[js.Any])
     if (getRefItems != null) __obj.updateDynamic("getRefItems")(js.Any.fromFunction0(getRefItems))
-    if (getTip != null) __obj.updateDynamic("getTip")(getTip)
-    if (handler != null) __obj.updateDynamic("handler")(handler)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (iconCls != null) __obj.updateDynamic("iconCls")(iconCls)
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (menuText != null) __obj.updateDynamic("menuText")(menuText)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
-    if (!js.isUndefined(sortable)) __obj.updateDynamic("sortable")(sortable)
-    if (!js.isUndefined(stopSelection)) __obj.updateDynamic("stopSelection")(stopSelection)
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (getTip != null) __obj.updateDynamic("getTip")(getTip.asInstanceOf[js.Any])
+    if (handler != null) __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (iconCls != null) __obj.updateDynamic("iconCls")(iconCls.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopSelection)) __obj.updateDynamic("stopSelection")(stopSelection.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAction]
   }
 }

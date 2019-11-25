@@ -107,7 +107,7 @@ trait ISettingRegistry_ extends js.Object {
     */
   def transform(
     plugin: String,
-    transforms: /* import warning: ImportType.apply c Unsupported type mapping: 
+    transforms: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ phase in @jupyterlab/coreutils.@jupyterlab/coreutils/lib/tokens.ISettingRegistry.IPlugin.Phase ]:? @jupyterlab/coreutils.@jupyterlab/coreutils/lib/tokens.ISettingRegistry.IPlugin.Transform}
     */ typings.atJupyterlabCoreutils.atJupyterlabCoreutilsStrings.ISettingRegistry with js.Any
   ): IDisposable
@@ -135,13 +135,13 @@ object ISettingRegistry_ {
     remove: (String, String) => js.Promise[Unit],
     schema: ISchema,
     set: (String, String, JSONValue) => js.Promise[Unit],
-    transform: (String, /* import warning: ImportType.apply c Unsupported type mapping: 
+    transform: (String, /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ phase in @jupyterlab/coreutils.@jupyterlab/coreutils/lib/tokens.ISettingRegistry.IPlugin.Phase ]:? @jupyterlab/coreutils.@jupyterlab/coreutils/lib/tokens.ISettingRegistry.IPlugin.Transform}
     */ typings.atJupyterlabCoreutils.atJupyterlabCoreutilsStrings.ISettingRegistry with js.Any) => IDisposable,
     upload: (String, String) => js.Promise[Unit],
     validator: ISchemaValidator
   ): ISettingRegistry_ = {
-    val __obj = js.Dynamic.literal(connector = connector, get = js.Any.fromFunction2(get), load = js.Any.fromFunction1(load), pluginChanged = pluginChanged, plugins = plugins, reload = js.Any.fromFunction1(reload), remove = js.Any.fromFunction2(remove), schema = schema, set = js.Any.fromFunction3(set), transform = js.Any.fromFunction2(transform), upload = js.Any.fromFunction2(upload), validator = validator)
+    val __obj = js.Dynamic.literal(connector = connector.asInstanceOf[js.Any], get = js.Any.fromFunction2(get), load = js.Any.fromFunction1(load), pluginChanged = pluginChanged.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any], reload = js.Any.fromFunction1(reload), remove = js.Any.fromFunction2(remove), schema = schema.asInstanceOf[js.Any], set = js.Any.fromFunction3(set), transform = js.Any.fromFunction2(transform), upload = js.Any.fromFunction2(upload), validator = validator.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISettingRegistry_]
   }

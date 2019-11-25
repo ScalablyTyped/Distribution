@@ -37,18 +37,18 @@ object PartialStatus {
     zoomEnable: js.UndefOr[Boolean] = js.undefined
   ): PartialStatus = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animateEnable)) __obj.updateDynamic("animateEnable")(animateEnable)
-    if (!js.isUndefined(doubleClickZoom)) __obj.updateDynamic("doubleClickZoom")(doubleClickZoom)
-    if (!js.isUndefined(dragEnable)) __obj.updateDynamic("dragEnable")(dragEnable)
-    if (!js.isUndefined(isHotspot)) __obj.updateDynamic("isHotspot")(isHotspot)
-    if (!js.isUndefined(jogEnable)) __obj.updateDynamic("jogEnable")(jogEnable)
-    if (!js.isUndefined(keyboardEnable)) __obj.updateDynamic("keyboardEnable")(keyboardEnable)
-    if (!js.isUndefined(pitchEnable)) __obj.updateDynamic("pitchEnable")(pitchEnable)
-    if (!js.isUndefined(resizeEnable)) __obj.updateDynamic("resizeEnable")(resizeEnable)
-    if (!js.isUndefined(rotateEnable)) __obj.updateDynamic("rotateEnable")(rotateEnable)
-    if (!js.isUndefined(scrollWheel)) __obj.updateDynamic("scrollWheel")(scrollWheel)
-    if (!js.isUndefined(touchZoom)) __obj.updateDynamic("touchZoom")(touchZoom)
-    if (!js.isUndefined(zoomEnable)) __obj.updateDynamic("zoomEnable")(zoomEnable)
+    if (!js.isUndefined(animateEnable)) __obj.updateDynamic("animateEnable")(animateEnable.asInstanceOf[js.Any])
+    if (!js.isUndefined(doubleClickZoom)) __obj.updateDynamic("doubleClickZoom")(doubleClickZoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragEnable)) __obj.updateDynamic("dragEnable")(dragEnable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isHotspot)) __obj.updateDynamic("isHotspot")(isHotspot.asInstanceOf[js.Any])
+    if (!js.isUndefined(jogEnable)) __obj.updateDynamic("jogEnable")(jogEnable.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboardEnable)) __obj.updateDynamic("keyboardEnable")(keyboardEnable.asInstanceOf[js.Any])
+    if (!js.isUndefined(pitchEnable)) __obj.updateDynamic("pitchEnable")(pitchEnable.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizeEnable)) __obj.updateDynamic("resizeEnable")(resizeEnable.asInstanceOf[js.Any])
+    if (!js.isUndefined(rotateEnable)) __obj.updateDynamic("rotateEnable")(rotateEnable.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollWheel)) __obj.updateDynamic("scrollWheel")(scrollWheel.asInstanceOf[js.Any])
+    if (!js.isUndefined(touchZoom)) __obj.updateDynamic("touchZoom")(touchZoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomEnable)) __obj.updateDynamic("zoomEnable")(zoomEnable.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStatus]
   }
 }

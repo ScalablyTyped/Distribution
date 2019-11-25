@@ -25,7 +25,7 @@ object GeocoderResult {
     postcode_localities: js.Array[String],
     types: js.Array[String]
   ): GeocoderResult = {
-    val __obj = js.Dynamic.literal(address_components = address_components, formatted_address = formatted_address, geometry = geometry, partial_match = partial_match, place_id = place_id, postcode_localities = postcode_localities, types = types)
+    val __obj = js.Dynamic.literal(address_components = address_components.asInstanceOf[js.Any], formatted_address = formatted_address.asInstanceOf[js.Any], geometry = geometry.asInstanceOf[js.Any], partial_match = partial_match.asInstanceOf[js.Any], place_id = place_id.asInstanceOf[js.Any], postcode_localities = postcode_localities.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GeocoderResult]
   }

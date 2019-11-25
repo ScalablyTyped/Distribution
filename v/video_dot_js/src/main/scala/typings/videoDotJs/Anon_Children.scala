@@ -21,8 +21,8 @@ object Anon_Children {
       /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias video.js.video.js.videojs.Child */ js.Object
     ] = null
   ): Anon_Children = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (children != null) __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Children]
   }
 }

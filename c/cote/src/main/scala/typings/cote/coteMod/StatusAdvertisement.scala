@@ -39,14 +39,14 @@ object StatusAdvertisement {
     subscribesTo: js.Array[String] = null,
     subset: String = null
   ): StatusAdvertisement = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (broadcasts != null) __obj.updateDynamic("broadcasts")(broadcasts)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace)
-    if (requests != null) __obj.updateDynamic("requests")(requests)
-    if (respondsTo != null) __obj.updateDynamic("respondsTo")(respondsTo)
-    if (subscribesTo != null) __obj.updateDynamic("subscribesTo")(subscribesTo)
-    if (subset != null) __obj.updateDynamic("subset")(subset)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (broadcasts != null) __obj.updateDynamic("broadcasts")(broadcasts.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
+    if (requests != null) __obj.updateDynamic("requests")(requests.asInstanceOf[js.Any])
+    if (respondsTo != null) __obj.updateDynamic("respondsTo")(respondsTo.asInstanceOf[js.Any])
+    if (subscribesTo != null) __obj.updateDynamic("subscribesTo")(subscribesTo.asInstanceOf[js.Any])
+    if (subset != null) __obj.updateDynamic("subset")(subset.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatusAdvertisement]
   }
 }

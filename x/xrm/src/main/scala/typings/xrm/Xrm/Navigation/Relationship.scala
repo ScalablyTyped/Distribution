@@ -43,10 +43,10 @@ object Relationship {
     relationshipType: RelationshipType = null,
     roleType: RoleType = null
   ): Relationship = {
-    val __obj = js.Dynamic.literal(attributeName = attributeName, name = name)
-    if (navigationPropertyName != null) __obj.updateDynamic("navigationPropertyName")(navigationPropertyName)
-    if (relationshipType != null) __obj.updateDynamic("relationshipType")(relationshipType)
-    if (roleType != null) __obj.updateDynamic("roleType")(roleType)
+    val __obj = js.Dynamic.literal(attributeName = attributeName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (navigationPropertyName != null) __obj.updateDynamic("navigationPropertyName")(navigationPropertyName.asInstanceOf[js.Any])
+    if (relationshipType != null) __obj.updateDynamic("relationshipType")(relationshipType.asInstanceOf[js.Any])
+    if (roleType != null) __obj.updateDynamic("roleType")(roleType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Relationship]
   }
 }

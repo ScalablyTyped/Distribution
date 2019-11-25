@@ -19,9 +19,9 @@ object Initializer {
     after: js.Array[String] = null,
     before: js.Array[String] = null
   ): Initializer[T] = {
-    val __obj = js.Dynamic.literal(initialize = js.Any.fromFunction1(initialize), name = name)
-    if (after != null) __obj.updateDynamic("after")(after)
-    if (before != null) __obj.updateDynamic("before")(before)
+    val __obj = js.Dynamic.literal(initialize = js.Any.fromFunction1(initialize), name = name.asInstanceOf[js.Any])
+    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
+    if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
     __obj.asInstanceOf[Initializer[T]]
   }
 }

@@ -11,7 +11,7 @@ trait QrResponse extends js.Object {
 object QrResponse {
   @scala.inline
   def apply(image: String): QrResponse = {
-    val __obj = js.Dynamic.literal(image = image)
+    val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[QrResponse]
   }

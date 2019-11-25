@@ -1,6 +1,5 @@
 package typings.videoDotJs.distAltVideoDotCoreDotNovttMod.default
 
-import typings.videoDotJs.videoDotJsMod.videojs.Player
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,6 +20,6 @@ object getPlayer extends js.Object {
     * @return	A player instance or `undefined` if there is no player instance
     *          matching the argument.
     */
-  def apply(id: String): Player = js.native
+  def apply(id: String): typings.videoDotJs.videoDotJsMod.videojs.Player = js.native
 }
 

@@ -13,7 +13,7 @@ trait GitFilePathsCollection extends js.Object {
 object GitFilePathsCollection {
   @scala.inline
   def apply(commitId: String, paths: js.Array[String], url: String): GitFilePathsCollection = {
-    val __obj = js.Dynamic.literal(commitId = commitId, paths = paths, url = url)
+    val __obj = js.Dynamic.literal(commitId = commitId.asInstanceOf[js.Any], paths = paths.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GitFilePathsCollection]
   }

@@ -40,13 +40,13 @@ object LineProps {
     selectable: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null
   ): LineProps = {
-    val __obj = js.Dynamic.literal(data = data, number = number, rowHeight = rowHeight)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], rowHeight = rowHeight.asInstanceOf[js.Any])
     if (formatPart != null) __obj.updateDynamic("formatPart")(js.Any.fromFunction1(formatPart))
-    if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight)
+    if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
     if (onLineNumberClick != null) __obj.updateDynamic("onLineNumberClick")(js.Any.fromFunction1(onLineNumberClick))
     if (onRowClick != null) __obj.updateDynamic("onRowClick")(js.Any.fromFunction0(onRowClick))
-    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineProps]
   }
 }

@@ -13,7 +13,7 @@ object Reduced {
   @scala.inline
   def apply[TResult](`@@transducer/reduced`: Boolean, `@@transducer/value`: TResult): Reduced[TResult] = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("@@transducer/reduced")(`@@transducer/reduced`)
+    __obj.updateDynamic("@@transducer/reduced")(`@@transducer/reduced`.asInstanceOf[js.Any])
     __obj.updateDynamic("@@transducer/value")(`@@transducer/value`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Reduced[TResult]]
   }

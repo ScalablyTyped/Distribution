@@ -12,7 +12,7 @@ trait ServerConfig extends js.Object {
 object ServerConfig {
   @scala.inline
   def apply(vnodes: Double, weight: Double): ServerConfig = {
-    val __obj = js.Dynamic.literal(vnodes = vnodes, weight = weight)
+    val __obj = js.Dynamic.literal(vnodes = vnodes.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ServerConfig]
   }

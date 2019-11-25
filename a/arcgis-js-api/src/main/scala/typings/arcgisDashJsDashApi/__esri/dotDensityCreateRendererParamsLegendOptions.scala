@@ -23,8 +23,8 @@ object dotDensityCreateRendererParamsLegendOptions {
     propertyIsEnumerable: PropertyKey => Boolean,
     unit: String = null
   ): dotDensityCreateRendererParamsLegendOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (unit != null) __obj.updateDynamic("unit")(unit)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[dotDensityCreateRendererParamsLegendOptions]
   }
 }

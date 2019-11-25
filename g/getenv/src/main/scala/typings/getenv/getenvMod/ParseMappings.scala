@@ -24,7 +24,7 @@ object ParseMappings {
     string: String,
     url: UrlWithStringQuery
   ): ParseMappings = {
-    val __obj = js.Dynamic.literal(bool = bool, boolish = boolish, float = float, int = int, string = string, url = url)
+    val __obj = js.Dynamic.literal(bool = bool.asInstanceOf[js.Any], boolish = boolish.asInstanceOf[js.Any], float = float.asInstanceOf[js.Any], int = int.asInstanceOf[js.Any], string = string.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ParseMappings]
   }

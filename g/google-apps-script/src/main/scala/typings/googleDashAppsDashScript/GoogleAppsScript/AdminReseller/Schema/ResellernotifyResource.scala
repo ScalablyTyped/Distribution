@@ -12,7 +12,7 @@ object ResellernotifyResource {
   @scala.inline
   def apply(topicName: String = null): ResellernotifyResource = {
     val __obj = js.Dynamic.literal()
-    if (topicName != null) __obj.updateDynamic("topicName")(topicName)
+    if (topicName != null) __obj.updateDynamic("topicName")(topicName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResellernotifyResource]
   }
 }

@@ -20,8 +20,8 @@ object Discoveryclusters {
     totalClusters: Int | Double = null
   ): Discoveryclusters = {
     val __obj = js.Dynamic.literal()
-    if (clusters != null) __obj.updateDynamic("clusters")(clusters)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (clusters != null) __obj.updateDynamic("clusters")(clusters.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (totalClusters != null) __obj.updateDynamic("totalClusters")(totalClusters.asInstanceOf[js.Any])
     __obj.asInstanceOf[Discoveryclusters]
   }

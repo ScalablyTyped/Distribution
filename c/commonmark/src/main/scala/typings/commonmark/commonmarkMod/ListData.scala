@@ -20,10 +20,10 @@ object ListData {
     `type`: String = null
   ): ListData = {
     val __obj = js.Dynamic.literal()
-    if (bulletChar != null) __obj.updateDynamic("bulletChar")(bulletChar)
-    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
-    if (!js.isUndefined(tight)) __obj.updateDynamic("tight")(tight)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (bulletChar != null) __obj.updateDynamic("bulletChar")(bulletChar.asInstanceOf[js.Any])
+    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
+    if (!js.isUndefined(tight)) __obj.updateDynamic("tight")(tight.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListData]
   }
 }

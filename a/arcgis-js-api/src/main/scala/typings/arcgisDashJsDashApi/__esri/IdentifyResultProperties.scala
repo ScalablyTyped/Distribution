@@ -40,10 +40,10 @@ object IdentifyResultProperties {
     layerName: String = null
   ): IdentifyResultProperties = {
     val __obj = js.Dynamic.literal()
-    if (displayFieldName != null) __obj.updateDynamic("displayFieldName")(displayFieldName)
-    if (feature != null) __obj.updateDynamic("feature")(feature)
+    if (displayFieldName != null) __obj.updateDynamic("displayFieldName")(displayFieldName.asInstanceOf[js.Any])
+    if (feature != null) __obj.updateDynamic("feature")(feature.asInstanceOf[js.Any])
     if (layerId != null) __obj.updateDynamic("layerId")(layerId.asInstanceOf[js.Any])
-    if (layerName != null) __obj.updateDynamic("layerName")(layerName)
+    if (layerName != null) __obj.updateDynamic("layerName")(layerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentifyResultProperties]
   }
 }

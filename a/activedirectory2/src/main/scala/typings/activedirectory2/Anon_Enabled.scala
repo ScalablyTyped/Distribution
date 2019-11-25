@@ -27,7 +27,7 @@ object Anon_Enabled {
       `ldaps?://DOT*/CN=Configuration,DOT*`
     ]
   ): Anon_Enabled = {
-    val __obj = js.Dynamic.literal(enabled = enabled, exclude = exclude)
+    val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], exclude = exclude.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Enabled]
   }

@@ -30,7 +30,7 @@ object TaskInstance {
     timeoutInMinutes: Double,
     version: String
   ): TaskInstance = {
-    val __obj = js.Dynamic.literal(alwaysRun = alwaysRun, condition = condition, continueOnError = continueOnError, displayName = displayName, enabled = enabled, id = id, inputs = inputs, instanceId = instanceId, name = name, timeoutInMinutes = timeoutInMinutes, version = version)
+    val __obj = js.Dynamic.literal(alwaysRun = alwaysRun.asInstanceOf[js.Any], condition = condition.asInstanceOf[js.Any], continueOnError = continueOnError.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], instanceId = instanceId.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], timeoutInMinutes = timeoutInMinutes.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TaskInstance]
   }

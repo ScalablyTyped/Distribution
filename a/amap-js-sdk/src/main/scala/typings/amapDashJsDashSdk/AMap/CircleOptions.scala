@@ -33,15 +33,15 @@ object CircleOptions {
     strokeStyle: String = null,
     zIndex: Int | Double = null
   ): CircleOptions = {
-    val __obj = js.Dynamic.literal(center = center, map = map)
-    if (extData != null) __obj.updateDynamic("extData")(extData)
-    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor)
-    if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity)
+    val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any])
+    if (extData != null) __obj.updateDynamic("extData")(extData.asInstanceOf[js.Any])
+    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
+    if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
-    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor)
-    if (strokeDasharray != null) __obj.updateDynamic("strokeDasharray")(strokeDasharray)
+    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor.asInstanceOf[js.Any])
+    if (strokeDasharray != null) __obj.updateDynamic("strokeDasharray")(strokeDasharray.asInstanceOf[js.Any])
     if (strokeOpacity != null) __obj.updateDynamic("strokeOpacity")(strokeOpacity.asInstanceOf[js.Any])
-    if (strokeStyle != null) __obj.updateDynamic("strokeStyle")(strokeStyle)
+    if (strokeStyle != null) __obj.updateDynamic("strokeStyle")(strokeStyle.asInstanceOf[js.Any])
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[CircleOptions]
   }

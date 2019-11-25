@@ -29,7 +29,7 @@ object ChampionMasteryDto {
     lastPlayTime: Double,
     playerId: Double
   ): ChampionMasteryDto = {
-    val __obj = js.Dynamic.literal(championId = championId, championLevel = championLevel, championPoints = championPoints, championPointsSinceLastLevel = championPointsSinceLastLevel, championPointsUntilNextLevel = championPointsUntilNextLevel, chestGranted = chestGranted, highestGrade = highestGrade, lastPlayTime = lastPlayTime, playerId = playerId)
+    val __obj = js.Dynamic.literal(championId = championId.asInstanceOf[js.Any], championLevel = championLevel.asInstanceOf[js.Any], championPoints = championPoints.asInstanceOf[js.Any], championPointsSinceLastLevel = championPointsSinceLastLevel.asInstanceOf[js.Any], championPointsUntilNextLevel = championPointsUntilNextLevel.asInstanceOf[js.Any], chestGranted = chestGranted.asInstanceOf[js.Any], highestGrade = highestGrade.asInstanceOf[js.Any], lastPlayTime = lastPlayTime.asInstanceOf[js.Any], playerId = playerId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChampionMasteryDto]
   }

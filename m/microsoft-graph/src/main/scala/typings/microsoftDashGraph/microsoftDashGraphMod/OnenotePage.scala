@@ -54,20 +54,20 @@ object OnenotePage {
     userTags: js.Array[String] = null
   ): OnenotePage = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (contentUrl != null) __obj.updateDynamic("contentUrl")(contentUrl)
-    if (createdByAppId != null) __obj.updateDynamic("createdByAppId")(createdByAppId)
-    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (contentUrl != null) __obj.updateDynamic("contentUrl")(contentUrl.asInstanceOf[js.Any])
+    if (createdByAppId != null) __obj.updateDynamic("createdByAppId")(createdByAppId.asInstanceOf[js.Any])
+    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (links != null) __obj.updateDynamic("links")(links)
+    if (links != null) __obj.updateDynamic("links")(links.asInstanceOf[js.Any])
     if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
-    if (parentNotebook != null) __obj.updateDynamic("parentNotebook")(parentNotebook)
-    if (parentSection != null) __obj.updateDynamic("parentSection")(parentSection)
-    if (self != null) __obj.updateDynamic("self")(self)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (userTags != null) __obj.updateDynamic("userTags")(userTags)
+    if (parentNotebook != null) __obj.updateDynamic("parentNotebook")(parentNotebook.asInstanceOf[js.Any])
+    if (parentSection != null) __obj.updateDynamic("parentSection")(parentSection.asInstanceOf[js.Any])
+    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (userTags != null) __obj.updateDynamic("userTags")(userTags.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnenotePage]
   }
 }

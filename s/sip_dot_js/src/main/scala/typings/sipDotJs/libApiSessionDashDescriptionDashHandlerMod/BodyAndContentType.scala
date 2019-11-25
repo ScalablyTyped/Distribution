@@ -14,7 +14,7 @@ trait BodyAndContentType extends js.Object {
 object BodyAndContentType {
   @scala.inline
   def apply(body: String, contentType: String): BodyAndContentType = {
-    val __obj = js.Dynamic.literal(body = body, contentType = contentType)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BodyAndContentType]
   }

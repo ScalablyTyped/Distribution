@@ -1,12 +1,5 @@
 package typings.consul.consulMod
 
-import typings.consul.Fn_Address
-import typings.consul.Fn_CallbackEnable
-import typings.consul.Fn_CallbackNode
-import typings.consul.Fn_CallbackOptsChecksOptions
-import typings.consul.Fn_CallbackOptsMembersOptions
-import typings.consul.Fn_CallbackOptsSelfOptions
-import typings.consul.Fn_CallbackOptsServicesOptions
 import typings.consul.consulMod.Agent.Check
 import typings.consul.consulMod.Agent.ChecksOptions
 import typings.consul.consulMod.Agent.ForceLeaveOptions
@@ -24,43 +17,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Agent_ extends js.Object {
   var check: Check = js.native
-  /**
-    * Returns the checks the local agent is managing
-    */
-  @JSName("checks")
-  var checks_Original: Fn_CallbackOptsChecksOptions = js.native
   var consul: Consul = js.native
-  /**
-    * Force remove node
-    */
-  @JSName("forceLeave")
-  var forceLeave_Original: Fn_CallbackNode = js.native
-  /**
-    * Trigger local agent to join a node
-    */
-  @JSName("join")
-  var join_Original: Fn_Address = js.native
-  /**
-    * Manages node maintenance mode
-    */
-  @JSName("maintenance")
-  var maintenance_Original: Fn_CallbackEnable = js.native
-  /**
-    * Returns the members as seen by the local consul agent
-    */
-  @JSName("members")
-  var members_Original: Fn_CallbackOptsMembersOptions = js.native
-  /**
-    * Returns the local node configuration
-    */
-  @JSName("self")
-  var self_Original: Fn_CallbackOptsSelfOptions = js.native
   var service: Service = js.native
-  /**
-    * Returns the services local agent is managing
-    */
-  @JSName("services")
-  var services_Original: Fn_CallbackOptsServicesOptions = js.native
   /**
     * Returns the checks the local agent is managing
     */

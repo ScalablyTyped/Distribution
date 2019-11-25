@@ -16,7 +16,7 @@ trait _UnmarshalledReplicationConfiguration extends _ReplicationConfiguration {
 object _UnmarshalledReplicationConfiguration {
   @scala.inline
   def apply(Role: String, Rules: js.Array[_UnmarshalledReplicationRule]): _UnmarshalledReplicationConfiguration = {
-    val __obj = js.Dynamic.literal(Role = Role, Rules = Rules)
+    val __obj = js.Dynamic.literal(Role = Role.asInstanceOf[js.Any], Rules = Rules.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_UnmarshalledReplicationConfiguration]
   }

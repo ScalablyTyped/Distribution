@@ -26,7 +26,7 @@ trait IFunction extends js.Object {
 object IFunction {
   @scala.inline
   def apply(qGroup: FunctionGroupType, qName: String, qSignature: String): IFunction = {
-    val __obj = js.Dynamic.literal(qGroup = qGroup, qName = qName, qSignature = qSignature)
+    val __obj = js.Dynamic.literal(qGroup = qGroup.asInstanceOf[js.Any], qName = qName.asInstanceOf[js.Any], qSignature = qSignature.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IFunction]
   }

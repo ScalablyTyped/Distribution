@@ -18,9 +18,9 @@ object IDisabledExtendedMetrics {
     loop: js.UndefOr[Boolean] = js.undefined
   ): IDisabledExtendedMetrics = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(gc)) __obj.updateDynamic("gc")(gc)
-    if (!js.isUndefined(heap)) __obj.updateDynamic("heap")(heap)
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
+    if (!js.isUndefined(gc)) __obj.updateDynamic("gc")(gc.asInstanceOf[js.Any])
+    if (!js.isUndefined(heap)) __obj.updateDynamic("heap")(heap.asInstanceOf[js.Any])
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDisabledExtendedMetrics]
   }
 }

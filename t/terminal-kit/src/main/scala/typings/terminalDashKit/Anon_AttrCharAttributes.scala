@@ -14,7 +14,7 @@ object Anon_AttrCharAttributes {
   @scala.inline
   def apply(attr: Attributes | Double, char: String = null): Anon_AttrCharAttributes = {
     val __obj = js.Dynamic.literal(attr = attr.asInstanceOf[js.Any])
-    if (char != null) __obj.updateDynamic("char")(char)
+    if (char != null) __obj.updateDynamic("char")(char.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AttrCharAttributes]
   }
 }

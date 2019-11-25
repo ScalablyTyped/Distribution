@@ -16,8 +16,8 @@ object ExtendedSourceContext {
   @scala.inline
   def apply(context: SourceContext = null, labels: Record[String, String] = null): ExtendedSourceContext = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtendedSourceContext]
   }
 }

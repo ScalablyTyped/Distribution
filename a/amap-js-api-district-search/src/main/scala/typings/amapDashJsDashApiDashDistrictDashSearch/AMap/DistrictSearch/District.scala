@@ -47,9 +47,9 @@ object District {
     boundaries: js.Array[js.Array[LngLat]] = null,
     districtList: js.Array[District] = null
   ): District = {
-    val __obj = js.Dynamic.literal(adcode = adcode, center = center, citycode = citycode, level = level, name = name)
-    if (boundaries != null) __obj.updateDynamic("boundaries")(boundaries)
-    if (districtList != null) __obj.updateDynamic("districtList")(districtList)
+    val __obj = js.Dynamic.literal(adcode = adcode.asInstanceOf[js.Any], center = center.asInstanceOf[js.Any], citycode = citycode.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (boundaries != null) __obj.updateDynamic("boundaries")(boundaries.asInstanceOf[js.Any])
+    if (districtList != null) __obj.updateDynamic("districtList")(districtList.asInstanceOf[js.Any])
     __obj.asInstanceOf[District]
   }
 }

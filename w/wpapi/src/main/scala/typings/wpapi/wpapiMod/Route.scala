@@ -20,8 +20,8 @@ object Route {
     namespace: String,
     _links: Anon_Self = null
   ): Route = {
-    val __obj = js.Dynamic.literal(endpoints = endpoints, methods = methods, namespace = namespace)
-    if (_links != null) __obj.updateDynamic("_links")(_links)
+    val __obj = js.Dynamic.literal(endpoints = endpoints.asInstanceOf[js.Any], methods = methods.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any])
+    if (_links != null) __obj.updateDynamic("_links")(_links.asInstanceOf[js.Any])
     __obj.asInstanceOf[Route]
   }
 }

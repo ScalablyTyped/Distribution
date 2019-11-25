@@ -23,8 +23,8 @@ object _UnmarshalledEnvironmentResponse {
   @scala.inline
   def apply(Error: _UnmarshalledEnvironmentError = null, Variables: StringDictionary[String] = null): _UnmarshalledEnvironmentResponse = {
     val __obj = js.Dynamic.literal()
-    if (Error != null) __obj.updateDynamic("Error")(Error)
-    if (Variables != null) __obj.updateDynamic("Variables")(Variables)
+    if (Error != null) __obj.updateDynamic("Error")(Error.asInstanceOf[js.Any])
+    if (Variables != null) __obj.updateDynamic("Variables")(Variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledEnvironmentResponse]
   }
 }

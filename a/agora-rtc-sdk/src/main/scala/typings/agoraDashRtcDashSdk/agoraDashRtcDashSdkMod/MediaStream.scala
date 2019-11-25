@@ -31,7 +31,7 @@ trait MediaStream extends js.Object {
 object MediaStream {
   @scala.inline
   def apply(active: Boolean, id: String): MediaStream = {
-    val __obj = js.Dynamic.literal(active = active, id = id)
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MediaStream]
   }

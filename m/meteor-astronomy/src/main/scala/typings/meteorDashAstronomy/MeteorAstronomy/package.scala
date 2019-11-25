@@ -18,19 +18,19 @@ package object MeteorAstronomy {
   import typings.std.StringConstructor
 
   type Enum[T] = T with Anon_GetIdentifier
-  type Fields[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type Fields[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof meteor-astronomy.MeteorAstronomy.NonFunctionProperties<T> ]: meteor-astronomy.MeteorAstronomy.ModelField<T[P], T>}
     */ typings.meteorDashAstronomy.meteorDashAstronomyStrings.Fields with T
   type FunctionProperties[T] = Pick[T, FunctionPropertyNames[T]]
-  type FunctionPropertyNames[T] = /* import warning: ImportType.apply Failed type conversion: {[ K in keyof T ]: T[K] extends std.Function? K : never}[keyof T] */ js.Any
-  type Helpers[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type FunctionPropertyNames[T] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends std.Function? K : never}[keyof T] */ js.Any
+  type Helpers[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof meteor-astronomy.MeteorAstronomy.FunctionProperties<T> ]: (this : T, args : ...any): any}
     */ typings.meteorDashAstronomy.meteorDashAstronomyStrings.Helpers with js.Any
   type Model[T] = T with Anon_Callback[T]
   type ModelField[Field, Doc] = (ModelFullField[Field, Doc]) | TypeOptions
   type MongoQuery[T] = Selector[T] | ObjectID | String
   type NonFunctionProperties[T] = Pick[T, NonFunctionPropertyNames[T]]
-  type NonFunctionPropertyNames[T] = /* import warning: ImportType.apply Failed type conversion: {[ K in keyof T ]: T[K] extends std.Function? never : K}[keyof T] */ js.Any
+  type NonFunctionPropertyNames[T] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends std.Function? never : K}[keyof T] */ js.Any
   type Omit[T, K] = Pick[T, Exclude[String, K]]
   type RemoveCallback = js.Function2[/* err */ js.Any, /* result */ js.Any, Unit]
   type SaveAndValidateCallback = js.Function2[/* err */ js.Any, /* id */ js.Any, Unit]

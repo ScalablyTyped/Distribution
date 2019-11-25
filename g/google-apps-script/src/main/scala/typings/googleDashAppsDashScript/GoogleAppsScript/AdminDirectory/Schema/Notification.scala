@@ -28,14 +28,14 @@ object Notification {
     subject: String = null
   ): Notification = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (etag != null) __obj.updateDynamic("etag")(etag)
-    if (fromAddress != null) __obj.updateDynamic("fromAddress")(fromAddress)
-    if (!js.isUndefined(isUnread)) __obj.updateDynamic("isUnread")(isUnread)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (notificationId != null) __obj.updateDynamic("notificationId")(notificationId)
-    if (sendTime != null) __obj.updateDynamic("sendTime")(sendTime)
-    if (subject != null) __obj.updateDynamic("subject")(subject)
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (fromAddress != null) __obj.updateDynamic("fromAddress")(fromAddress.asInstanceOf[js.Any])
+    if (!js.isUndefined(isUnread)) __obj.updateDynamic("isUnread")(isUnread.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (notificationId != null) __obj.updateDynamic("notificationId")(notificationId.asInstanceOf[js.Any])
+    if (sendTime != null) __obj.updateDynamic("sendTime")(sendTime.asInstanceOf[js.Any])
+    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
     __obj.asInstanceOf[Notification]
   }
 }

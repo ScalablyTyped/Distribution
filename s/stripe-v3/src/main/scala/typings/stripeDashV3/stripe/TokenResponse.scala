@@ -13,8 +13,8 @@ object TokenResponse {
   @scala.inline
   def apply(error: Error = null, token: Token = null): TokenResponse = {
     val __obj = js.Dynamic.literal()
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (token != null) __obj.updateDynamic("token")(token)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     __obj.asInstanceOf[TokenResponse]
   }
 }

@@ -21,7 +21,7 @@ object ReaddirParams {
     fail: /* res */ Anon_ErrMsg => Unit = null,
     success: /* res */ Anon_Files => Unit = null
   ): ReaddirParams = {
-    val __obj = js.Dynamic.literal(dirPath = dirPath)
+    val __obj = js.Dynamic.literal(dirPath = dirPath.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))

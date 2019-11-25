@@ -11,7 +11,7 @@ trait OES_texture_float extends js.Object {
 object OES_texture_float {
   @scala.inline
   def apply(__OES_texture_float: Unit): OES_texture_float = {
-    val __obj = js.Dynamic.literal(__OES_texture_float = __OES_texture_float)
+    val __obj = js.Dynamic.literal(__OES_texture_float = __OES_texture_float.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OES_texture_float]
   }

@@ -25,9 +25,9 @@ object WindowsInformationProtectionDataRecoveryCertificate {
   ): WindowsInformationProtectionDataRecoveryCertificate = {
     val __obj = js.Dynamic.literal()
     if (certificate != null) __obj.updateDynamic("certificate")(certificate.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (expirationDateTime != null) __obj.updateDynamic("expirationDateTime")(expirationDateTime)
-    if (subjectName != null) __obj.updateDynamic("subjectName")(subjectName)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (expirationDateTime != null) __obj.updateDynamic("expirationDateTime")(expirationDateTime.asInstanceOf[js.Any])
+    if (subjectName != null) __obj.updateDynamic("subjectName")(subjectName.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowsInformationProtectionDataRecoveryCertificate]
   }
 }

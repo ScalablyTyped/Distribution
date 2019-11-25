@@ -12,7 +12,7 @@ trait summaryItem extends js.Object {
 object summaryItem {
   @scala.inline
   def apply(message: String, name: String): summaryItem = {
-    val __obj = js.Dynamic.literal(message = message, name = name)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[summaryItem]
   }

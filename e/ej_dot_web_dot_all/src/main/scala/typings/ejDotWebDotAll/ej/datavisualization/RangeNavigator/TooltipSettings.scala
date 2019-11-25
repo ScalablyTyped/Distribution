@@ -36,11 +36,11 @@ object TooltipSettings {
     visible: js.UndefOr[Boolean] = js.undefined
   ): TooltipSettings = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
-    if (font != null) __obj.updateDynamic("font")(font)
-    if (labelFormat != null) __obj.updateDynamic("labelFormat")(labelFormat)
-    if (tooltipDisplayMode != null) __obj.updateDynamic("tooltipDisplayMode")(tooltipDisplayMode)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
+    if (labelFormat != null) __obj.updateDynamic("labelFormat")(labelFormat.asInstanceOf[js.Any])
+    if (tooltipDisplayMode != null) __obj.updateDynamic("tooltipDisplayMode")(tooltipDisplayMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipSettings]
   }
 }

@@ -13,8 +13,8 @@ trait RegexTokenizerOptions extends js.Object {
 object RegexTokenizerOptions {
   @scala.inline
   def apply(pattern: RegExp, discardEmpty: js.UndefOr[Boolean] = js.undefined): RegexTokenizerOptions = {
-    val __obj = js.Dynamic.literal(pattern = pattern)
-    if (!js.isUndefined(discardEmpty)) __obj.updateDynamic("discardEmpty")(discardEmpty)
+    val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any])
+    if (!js.isUndefined(discardEmpty)) __obj.updateDynamic("discardEmpty")(discardEmpty.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegexTokenizerOptions]
   }
 }

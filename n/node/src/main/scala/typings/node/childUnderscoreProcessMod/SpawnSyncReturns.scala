@@ -26,9 +26,9 @@ object SpawnSyncReturns {
     signal: java.lang.String = null,
     status: Int | Double = null
   ): SpawnSyncReturns[T] = {
-    val __obj = js.Dynamic.literal(output = output, pid = pid, stderr = stderr.asInstanceOf[js.Any], stdout = stdout.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (signal != null) __obj.updateDynamic("signal")(signal)
+    val __obj = js.Dynamic.literal(output = output.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any], stderr = stderr.asInstanceOf[js.Any], stdout = stdout.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpawnSyncReturns[T]]
   }

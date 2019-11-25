@@ -50,12 +50,12 @@ object FileAssociation {
     role: String = null
   ): FileAssociation = {
     val __obj = js.Dynamic.literal(ext = ext.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (!js.isUndefined(isPackage)) __obj.updateDynamic("isPackage")(isPackage)
-    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (role != null) __obj.updateDynamic("role")(role)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPackage)) __obj.updateDynamic("isPackage")(isPackage.asInstanceOf[js.Any])
+    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileAssociation]
   }
 }

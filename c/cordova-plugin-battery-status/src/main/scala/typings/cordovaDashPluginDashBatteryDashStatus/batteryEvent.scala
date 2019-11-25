@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait batteryEvent extends js.Object
 
+object batteryEvent {
+  @scala.inline
+  def batterycritical: typings.cordovaDashPluginDashBatteryDashStatus.cordovaDashPluginDashBatteryDashStatusStrings.batterycritical = this.cast("batterycritical")
+  @scala.inline
+  def batterylow: typings.cordovaDashPluginDashBatteryDashStatus.cordovaDashPluginDashBatteryDashStatusStrings.batterylow = this.cast("batterylow")
+  @scala.inline
+  def batterystatus: typings.cordovaDashPluginDashBatteryDashStatus.cordovaDashPluginDashBatteryDashStatusStrings.batterystatus = this.cast("batterystatus")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

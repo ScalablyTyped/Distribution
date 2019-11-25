@@ -22,7 +22,7 @@ trait GetChannelsOutput extends OutputTypesUnion {
 object GetChannelsOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, ChannelsResponse: _UnmarshalledChannelsResponse): GetChannelsOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata, ChannelsResponse = ChannelsResponse)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], ChannelsResponse = ChannelsResponse.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetChannelsOutput]
   }

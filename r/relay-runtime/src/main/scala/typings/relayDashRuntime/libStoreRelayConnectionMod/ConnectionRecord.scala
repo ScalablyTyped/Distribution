@@ -13,7 +13,7 @@ trait ConnectionRecord extends js.Object {
 object ConnectionRecord {
   @scala.inline
   def apply(__id: ConnectionID, __typename: String, events: js.Array[ConnectionInternalEvent]): ConnectionRecord = {
-    val __obj = js.Dynamic.literal(__id = __id, __typename = __typename, events = events)
+    val __obj = js.Dynamic.literal(__id = __id.asInstanceOf[js.Any], __typename = __typename.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ConnectionRecord]
   }

@@ -23,7 +23,7 @@ object Anon_Available {
     deposition_pending: Int | Double = null,
     hold: Int | Double = null
   ): Anon_Available = {
-    val __obj = js.Dynamic.literal(available = available, total = total)
+    val __obj = js.Dynamic.literal(available = available.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
     if (blocked != null) __obj.updateDynamic("blocked")(blocked.asInstanceOf[js.Any])
     if (debt != null) __obj.updateDynamic("debt")(debt.asInstanceOf[js.Any])
     if (deposition_pending != null) __obj.updateDynamic("deposition_pending")(deposition_pending.asInstanceOf[js.Any])

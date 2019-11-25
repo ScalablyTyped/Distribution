@@ -17,7 +17,7 @@ object ICPU {
   @scala.inline
   def apply(architecture: String = null): ICPU = {
     val __obj = js.Dynamic.literal()
-    if (architecture != null) __obj.updateDynamic("architecture")(architecture)
+    if (architecture != null) __obj.updateDynamic("architecture")(architecture.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICPU]
   }
 }

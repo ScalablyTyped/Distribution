@@ -12,7 +12,7 @@ trait ELEMENT_MARKER extends js.Object {
 object ELEMENT_MARKER {
   @scala.inline
   def apply(marker: element): ELEMENT_MARKER = {
-    val __obj = js.Dynamic.literal(marker = marker)
+    val __obj = js.Dynamic.literal(marker = marker.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ELEMENT_MARKER]
   }

@@ -17,7 +17,7 @@ object ToolExecutionStep {
   @scala.inline
   def apply(toolExecution: ToolExecution = null): ToolExecutionStep = {
     val __obj = js.Dynamic.literal()
-    if (toolExecution != null) __obj.updateDynamic("toolExecution")(toolExecution)
+    if (toolExecution != null) __obj.updateDynamic("toolExecution")(toolExecution.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolExecutionStep]
   }
 }

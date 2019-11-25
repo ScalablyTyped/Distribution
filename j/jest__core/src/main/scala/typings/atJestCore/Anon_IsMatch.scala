@@ -13,7 +13,7 @@ trait Anon_IsMatch extends js.Object {
 object Anon_IsMatch {
   @scala.inline
   def apply(isMatch: Path => Boolean, stat: String): Anon_IsMatch = {
-    val __obj = js.Dynamic.literal(isMatch = js.Any.fromFunction1(isMatch), stat = stat)
+    val __obj = js.Dynamic.literal(isMatch = js.Any.fromFunction1(isMatch), stat = stat.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IsMatch]
   }

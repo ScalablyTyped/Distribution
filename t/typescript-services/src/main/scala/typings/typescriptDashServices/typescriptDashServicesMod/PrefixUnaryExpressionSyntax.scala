@@ -2,7 +2,6 @@ package typings.typescriptDashServices.typescriptDashServicesMod
 
 import typings.typescriptDashServices.TypeScript.ISyntaxToken
 import typings.typescriptDashServices.TypeScript.IUnaryExpressionSyntax
-import typings.typescriptDashServices.TypeScript.SyntaxKind
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +11,7 @@ import scala.scalajs.js.annotation._
 class PrefixUnaryExpressionSyntax protected ()
   extends typings.typescriptDashServices.TypeScript.PrefixUnaryExpressionSyntax {
   def this(
-    kind: SyntaxKind,
+    kind: typings.typescriptDashServices.TypeScript.SyntaxKind,
     operatorToken: ISyntaxToken,
     operand: IUnaryExpressionSyntax,
     parsedInStrictMode: Boolean

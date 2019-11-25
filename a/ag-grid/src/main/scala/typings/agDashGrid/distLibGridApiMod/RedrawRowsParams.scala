@@ -13,7 +13,7 @@ object RedrawRowsParams {
   @scala.inline
   def apply(rowNodes: js.Array[RowNode] = null): RedrawRowsParams = {
     val __obj = js.Dynamic.literal()
-    if (rowNodes != null) __obj.updateDynamic("rowNodes")(rowNodes)
+    if (rowNodes != null) __obj.updateDynamic("rowNodes")(rowNodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedrawRowsParams]
   }
 }

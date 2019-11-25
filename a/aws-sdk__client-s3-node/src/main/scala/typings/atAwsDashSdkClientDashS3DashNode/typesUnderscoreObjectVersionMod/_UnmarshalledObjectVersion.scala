@@ -33,14 +33,14 @@ object _UnmarshalledObjectVersion {
     VersionId: String = null
   ): _UnmarshalledObjectVersion = {
     val __obj = js.Dynamic.literal()
-    if (ETag != null) __obj.updateDynamic("ETag")(ETag)
-    if (!js.isUndefined(IsLatest)) __obj.updateDynamic("IsLatest")(IsLatest)
-    if (Key != null) __obj.updateDynamic("Key")(Key)
-    if (LastModified != null) __obj.updateDynamic("LastModified")(LastModified)
-    if (Owner != null) __obj.updateDynamic("Owner")(Owner)
+    if (ETag != null) __obj.updateDynamic("ETag")(ETag.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsLatest)) __obj.updateDynamic("IsLatest")(IsLatest.asInstanceOf[js.Any])
+    if (Key != null) __obj.updateDynamic("Key")(Key.asInstanceOf[js.Any])
+    if (LastModified != null) __obj.updateDynamic("LastModified")(LastModified.asInstanceOf[js.Any])
+    if (Owner != null) __obj.updateDynamic("Owner")(Owner.asInstanceOf[js.Any])
     if (Size != null) __obj.updateDynamic("Size")(Size.asInstanceOf[js.Any])
     if (StorageClass != null) __obj.updateDynamic("StorageClass")(StorageClass.asInstanceOf[js.Any])
-    if (VersionId != null) __obj.updateDynamic("VersionId")(VersionId)
+    if (VersionId != null) __obj.updateDynamic("VersionId")(VersionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledObjectVersion]
   }
 }

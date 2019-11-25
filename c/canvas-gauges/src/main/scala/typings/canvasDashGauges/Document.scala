@@ -12,7 +12,7 @@ trait Document extends js.Object {
 object Document {
   @scala.inline
   def apply(gauges: Collection): Document = {
-    val __obj = js.Dynamic.literal(gauges = gauges)
+    val __obj = js.Dynamic.literal(gauges = gauges.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Document]
   }

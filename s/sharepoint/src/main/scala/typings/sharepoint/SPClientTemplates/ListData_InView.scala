@@ -36,7 +36,7 @@ object ListData_InView {
     SortDir: String,
     SortField: String
   ): ListData_InView = {
-    val __obj = js.Dynamic.literal(FilterFields = FilterFields, FilterLink = FilterLink, FirstRow = FirstRow, ForceNoHierarchy = ForceNoHierarchy, HierarchyHasIndention = HierarchyHasIndention, LastRow = LastRow, NextHref = NextHref, PrevHref = PrevHref, Row = Row, SortDir = SortDir, SortField = SortField)
+    val __obj = js.Dynamic.literal(FilterFields = FilterFields.asInstanceOf[js.Any], FilterLink = FilterLink.asInstanceOf[js.Any], FirstRow = FirstRow.asInstanceOf[js.Any], ForceNoHierarchy = ForceNoHierarchy.asInstanceOf[js.Any], HierarchyHasIndention = HierarchyHasIndention.asInstanceOf[js.Any], LastRow = LastRow.asInstanceOf[js.Any], NextHref = NextHref.asInstanceOf[js.Any], PrevHref = PrevHref.asInstanceOf[js.Any], Row = Row.asInstanceOf[js.Any], SortDir = SortDir.asInstanceOf[js.Any], SortField = SortField.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ListData_InView]
   }

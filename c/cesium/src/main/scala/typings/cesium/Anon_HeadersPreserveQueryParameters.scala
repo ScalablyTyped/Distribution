@@ -35,15 +35,15 @@ object Anon_HeadersPreserveQueryParameters {
     url: String = null
   ): Anon_HeadersPreserveQueryParameters = {
     val __obj = js.Dynamic.literal()
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (!js.isUndefined(preserveQueryParameters)) __obj.updateDynamic("preserveQueryParameters")(preserveQueryParameters)
-    if (proxy != null) __obj.updateDynamic("proxy")(proxy)
-    if (queryParameters != null) __obj.updateDynamic("queryParameters")(queryParameters)
-    if (request != null) __obj.updateDynamic("request")(request)
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveQueryParameters)) __obj.updateDynamic("preserveQueryParameters")(preserveQueryParameters.asInstanceOf[js.Any])
+    if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
+    if (queryParameters != null) __obj.updateDynamic("queryParameters")(queryParameters.asInstanceOf[js.Any])
+    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
     if (retryAttempts != null) __obj.updateDynamic("retryAttempts")(retryAttempts.asInstanceOf[js.Any])
     if (retryCallback != null) __obj.updateDynamic("retryCallback")(js.Any.fromFunction2(retryCallback))
-    if (templateValues != null) __obj.updateDynamic("templateValues")(templateValues)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (templateValues != null) __obj.updateDynamic("templateValues")(templateValues.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_HeadersPreserveQueryParameters]
   }
 }

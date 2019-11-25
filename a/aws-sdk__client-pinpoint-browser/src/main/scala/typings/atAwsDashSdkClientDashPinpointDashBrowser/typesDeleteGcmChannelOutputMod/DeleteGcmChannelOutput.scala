@@ -22,7 +22,7 @@ trait DeleteGcmChannelOutput extends OutputTypesUnion {
 object DeleteGcmChannelOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, GCMChannelResponse: _UnmarshalledGCMChannelResponse): DeleteGcmChannelOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata, GCMChannelResponse = GCMChannelResponse)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], GCMChannelResponse = GCMChannelResponse.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeleteGcmChannelOutput]
   }

@@ -30,9 +30,9 @@ object ListIdentityPoolsOutput {
     IdentityPools: js.Array[_UnmarshalledIdentityPoolShortDescription] = null,
     NextToken: String = null
   ): ListIdentityPoolsOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (IdentityPools != null) __obj.updateDynamic("IdentityPools")(IdentityPools)
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (IdentityPools != null) __obj.updateDynamic("IdentityPools")(IdentityPools.asInstanceOf[js.Any])
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListIdentityPoolsOutput]
   }
 }

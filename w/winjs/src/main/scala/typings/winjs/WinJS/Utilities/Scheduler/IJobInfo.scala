@@ -35,7 +35,7 @@ trait IJobInfo extends js.Object {
 object IJobInfo {
   @scala.inline
   def apply(job: IJob, setPromise: Promise[_] => Unit, setWork: js.Function => Unit, shouldYield: Boolean): IJobInfo = {
-    val __obj = js.Dynamic.literal(job = job, setPromise = js.Any.fromFunction1(setPromise), setWork = js.Any.fromFunction1(setWork), shouldYield = shouldYield)
+    val __obj = js.Dynamic.literal(job = job.asInstanceOf[js.Any], setPromise = js.Any.fromFunction1(setPromise), setWork = js.Any.fromFunction1(setWork), shouldYield = shouldYield.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IJobInfo]
   }

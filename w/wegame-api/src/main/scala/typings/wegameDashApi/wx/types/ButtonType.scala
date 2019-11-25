@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait ButtonType extends js.Object
 
+object ButtonType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def image: typings.wegameDashApi.wegameDashApiStrings.image = this.cast("image")
+  @scala.inline
+  def text: typings.wegameDashApi.wegameDashApiStrings.text = this.cast("text")
+}
+

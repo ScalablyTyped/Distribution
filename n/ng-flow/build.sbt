@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "ng-flow"
-version := "0.0-unknown-dt-20190409Z-c112f5"
+version := "0.0-unknown-dt-20190409Z-7ad070"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "flowjs" % "2.13-dt-20190613Z-3b645d",
-  "org.scalablytyped" %%% "std" % "3.7-1c17cf")
+  "org.scalablytyped" %%% "flowjs" % "2.13-dt-20190613Z-384876",
+  "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

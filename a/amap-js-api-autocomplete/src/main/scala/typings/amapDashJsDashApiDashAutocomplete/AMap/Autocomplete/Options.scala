@@ -55,15 +55,15 @@ object Options {
     `type`: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (city != null) __obj.updateDynamic("city")(city)
-    if (!js.isUndefined(citylimit)) __obj.updateDynamic("citylimit")(citylimit)
-    if (!js.isUndefined(closeResultOnScroll)) __obj.updateDynamic("closeResultOnScroll")(closeResultOnScroll)
-    if (datatype != null) __obj.updateDynamic("datatype")(datatype)
+    if (city != null) __obj.updateDynamic("city")(city.asInstanceOf[js.Any])
+    if (!js.isUndefined(citylimit)) __obj.updateDynamic("citylimit")(citylimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeResultOnScroll)) __obj.updateDynamic("closeResultOnScroll")(closeResultOnScroll.asInstanceOf[js.Any])
+    if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
     if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
-    if (lang != null) __obj.updateDynamic("lang")(lang)
-    if (!js.isUndefined(outPutDirAuto)) __obj.updateDynamic("outPutDirAuto")(outPutDirAuto)
+    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
+    if (!js.isUndefined(outPutDirAuto)) __obj.updateDynamic("outPutDirAuto")(outPutDirAuto.asInstanceOf[js.Any])
     if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

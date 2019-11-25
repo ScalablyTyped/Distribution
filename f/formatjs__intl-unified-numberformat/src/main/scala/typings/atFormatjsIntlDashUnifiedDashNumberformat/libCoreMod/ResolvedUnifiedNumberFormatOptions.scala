@@ -54,16 +54,16 @@ object ResolvedUnifiedNumberFormatOptions {
     unit: Unit = null,
     unitDisplay: long | short | narrow = null
   ): ResolvedUnifiedNumberFormatOptions = {
-    val __obj = js.Dynamic.literal(locale = locale, maximumFractionDigits = maximumFractionDigits, minimumFractionDigits = minimumFractionDigits, minimumIntegerDigits = minimumIntegerDigits, numberingSystem = numberingSystem, style = style, useGrouping = useGrouping)
+    val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any], maximumFractionDigits = maximumFractionDigits.asInstanceOf[js.Any], minimumFractionDigits = minimumFractionDigits.asInstanceOf[js.Any], minimumIntegerDigits = minimumIntegerDigits.asInstanceOf[js.Any], numberingSystem = numberingSystem.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], useGrouping = useGrouping.asInstanceOf[js.Any])
     if (compactDisplay != null) __obj.updateDynamic("compactDisplay")(compactDisplay.asInstanceOf[js.Any])
-    if (currency != null) __obj.updateDynamic("currency")(currency)
+    if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
     if (currencyDisplay != null) __obj.updateDynamic("currencyDisplay")(currencyDisplay.asInstanceOf[js.Any])
     if (currencySign != null) __obj.updateDynamic("currencySign")(currencySign.asInstanceOf[js.Any])
     if (maximumSignificantDigits != null) __obj.updateDynamic("maximumSignificantDigits")(maximumSignificantDigits.asInstanceOf[js.Any])
     if (minimumSignificantDigits != null) __obj.updateDynamic("minimumSignificantDigits")(minimumSignificantDigits.asInstanceOf[js.Any])
     if (notation != null) __obj.updateDynamic("notation")(notation.asInstanceOf[js.Any])
     if (signDisplay != null) __obj.updateDynamic("signDisplay")(signDisplay.asInstanceOf[js.Any])
-    if (unit != null) __obj.updateDynamic("unit")(unit)
+    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
     if (unitDisplay != null) __obj.updateDynamic("unitDisplay")(unitDisplay.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolvedUnifiedNumberFormatOptions]
   }

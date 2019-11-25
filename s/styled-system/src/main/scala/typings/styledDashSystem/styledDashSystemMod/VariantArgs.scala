@@ -18,10 +18,10 @@ object VariantArgs {
   @scala.inline
   def apply(key: String = null, prop: String = null, scale: String = null, variants: js.Object = null): VariantArgs = {
     val __obj = js.Dynamic.literal()
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (prop != null) __obj.updateDynamic("prop")(prop)
-    if (scale != null) __obj.updateDynamic("scale")(scale)
-    if (variants != null) __obj.updateDynamic("variants")(variants)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (prop != null) __obj.updateDynamic("prop")(prop.asInstanceOf[js.Any])
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (variants != null) __obj.updateDynamic("variants")(variants.asInstanceOf[js.Any])
     __obj.asInstanceOf[VariantArgs]
   }
 }

@@ -23,11 +23,11 @@ object Anon_BrowserstyleDefaulticonDefaultpanel {
     default_title: String = null,
     open_at_install: js.UndefOr[Boolean] = js.undefined
   ): Anon_BrowserstyleDefaulticonDefaultpanel = {
-    val __obj = js.Dynamic.literal(default_panel = default_panel)
-    if (!js.isUndefined(browser_style)) __obj.updateDynamic("browser_style")(browser_style)
+    val __obj = js.Dynamic.literal(default_panel = default_panel.asInstanceOf[js.Any])
+    if (!js.isUndefined(browser_style)) __obj.updateDynamic("browser_style")(browser_style.asInstanceOf[js.Any])
     if (default_icon != null) __obj.updateDynamic("default_icon")(default_icon.asInstanceOf[js.Any])
-    if (default_title != null) __obj.updateDynamic("default_title")(default_title)
-    if (!js.isUndefined(open_at_install)) __obj.updateDynamic("open_at_install")(open_at_install)
+    if (default_title != null) __obj.updateDynamic("default_title")(default_title.asInstanceOf[js.Any])
+    if (!js.isUndefined(open_at_install)) __obj.updateDynamic("open_at_install")(open_at_install.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BrowserstyleDefaulticonDefaultpanel]
   }
 }

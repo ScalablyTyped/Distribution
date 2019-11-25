@@ -32,16 +32,16 @@ object Container {
     usageContext: js.Array[String] = null
   ): Container = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId)
-    if (containerId != null) __obj.updateDynamic("containerId")(containerId)
-    if (domainName != null) __obj.updateDynamic("domainName")(domainName)
-    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (notes != null) __obj.updateDynamic("notes")(notes)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (publicId != null) __obj.updateDynamic("publicId")(publicId)
-    if (tagManagerUrl != null) __obj.updateDynamic("tagManagerUrl")(tagManagerUrl)
-    if (usageContext != null) __obj.updateDynamic("usageContext")(usageContext)
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
+    if (containerId != null) __obj.updateDynamic("containerId")(containerId.asInstanceOf[js.Any])
+    if (domainName != null) __obj.updateDynamic("domainName")(domainName.asInstanceOf[js.Any])
+    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (publicId != null) __obj.updateDynamic("publicId")(publicId.asInstanceOf[js.Any])
+    if (tagManagerUrl != null) __obj.updateDynamic("tagManagerUrl")(tagManagerUrl.asInstanceOf[js.Any])
+    if (usageContext != null) __obj.updateDynamic("usageContext")(usageContext.asInstanceOf[js.Any])
     __obj.asInstanceOf[Container]
   }
 }

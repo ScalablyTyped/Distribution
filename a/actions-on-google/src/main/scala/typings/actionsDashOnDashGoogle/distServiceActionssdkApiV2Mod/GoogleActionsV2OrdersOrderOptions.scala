@@ -24,8 +24,8 @@ object GoogleActionsV2OrdersOrderOptions {
     requestDeliveryAddress: js.UndefOr[Boolean] = js.undefined
   ): GoogleActionsV2OrdersOrderOptions = {
     val __obj = js.Dynamic.literal()
-    if (customerInfoOptions != null) __obj.updateDynamic("customerInfoOptions")(customerInfoOptions)
-    if (!js.isUndefined(requestDeliveryAddress)) __obj.updateDynamic("requestDeliveryAddress")(requestDeliveryAddress)
+    if (customerInfoOptions != null) __obj.updateDynamic("customerInfoOptions")(customerInfoOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestDeliveryAddress)) __obj.updateDynamic("requestDeliveryAddress")(requestDeliveryAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2OrdersOrderOptions]
   }
 }

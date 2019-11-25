@@ -21,7 +21,7 @@ object parseDateTimeOptions {
     timeFormat: String,
     timeSettings: String
   ): parseDateTimeOptions = {
-    val __obj = js.Dynamic.literal(dateFormat = dateFormat, dateSettings = dateSettings, dateTimeString = dateTimeString, timeFormat = timeFormat, timeSettings = timeSettings)
+    val __obj = js.Dynamic.literal(dateFormat = dateFormat.asInstanceOf[js.Any], dateSettings = dateSettings.asInstanceOf[js.Any], dateTimeString = dateTimeString.asInstanceOf[js.Any], timeFormat = timeFormat.asInstanceOf[js.Any], timeSettings = timeSettings.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[parseDateTimeOptions]
   }

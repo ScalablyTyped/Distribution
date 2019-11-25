@@ -20,10 +20,10 @@ object OpenGraphBook {
     tags: js.Array[String] = null
   ): OpenGraphBook = {
     val __obj = js.Dynamic.literal()
-    if (authors != null) __obj.updateDynamic("authors")(authors)
-    if (isbn != null) __obj.updateDynamic("isbn")(isbn)
-    if (releaseDate != null) __obj.updateDynamic("releaseDate")(releaseDate)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (authors != null) __obj.updateDynamic("authors")(authors.asInstanceOf[js.Any])
+    if (isbn != null) __obj.updateDynamic("isbn")(isbn.asInstanceOf[js.Any])
+    if (releaseDate != null) __obj.updateDynamic("releaseDate")(releaseDate.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenGraphBook]
   }
 }

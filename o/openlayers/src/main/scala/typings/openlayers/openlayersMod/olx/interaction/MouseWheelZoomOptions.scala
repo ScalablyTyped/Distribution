@@ -20,10 +20,10 @@ object MouseWheelZoomOptions {
     useAnchor: js.UndefOr[Boolean] = js.undefined
   ): MouseWheelZoomOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(constrainResolution)) __obj.updateDynamic("constrainResolution")(constrainResolution)
+    if (!js.isUndefined(constrainResolution)) __obj.updateDynamic("constrainResolution")(constrainResolution.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(useAnchor)) __obj.updateDynamic("useAnchor")(useAnchor)
+    if (!js.isUndefined(useAnchor)) __obj.updateDynamic("useAnchor")(useAnchor.asInstanceOf[js.Any])
     __obj.asInstanceOf[MouseWheelZoomOptions]
   }
 }

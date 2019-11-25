@@ -14,3 +14,14 @@ import scala.scalajs.js.annotation._
 */
 trait TaskType extends js.Object
 
+object TaskType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def eventTask: typings.zoneDotJs.zoneDotJsStrings.eventTask = this.cast("eventTask")
+  @scala.inline
+  def macroTask: typings.zoneDotJs.zoneDotJsStrings.macroTask = this.cast("macroTask")
+  @scala.inline
+  def microTask: typings.zoneDotJs.zoneDotJsStrings.microTask = this.cast("microTask")
+}
+

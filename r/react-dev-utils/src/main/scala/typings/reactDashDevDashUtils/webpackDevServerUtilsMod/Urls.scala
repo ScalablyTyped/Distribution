@@ -19,9 +19,9 @@ object Urls {
     lanUrlForConfig: String = null,
     lanUrlForTerminal: String = null
   ): Urls = {
-    val __obj = js.Dynamic.literal(localUrlForBrowser = localUrlForBrowser, localUrlForTerminal = localUrlForTerminal)
-    if (lanUrlForConfig != null) __obj.updateDynamic("lanUrlForConfig")(lanUrlForConfig)
-    if (lanUrlForTerminal != null) __obj.updateDynamic("lanUrlForTerminal")(lanUrlForTerminal)
+    val __obj = js.Dynamic.literal(localUrlForBrowser = localUrlForBrowser.asInstanceOf[js.Any], localUrlForTerminal = localUrlForTerminal.asInstanceOf[js.Any])
+    if (lanUrlForConfig != null) __obj.updateDynamic("lanUrlForConfig")(lanUrlForConfig.asInstanceOf[js.Any])
+    if (lanUrlForTerminal != null) __obj.updateDynamic("lanUrlForTerminal")(lanUrlForTerminal.asInstanceOf[js.Any])
     __obj.asInstanceOf[Urls]
   }
 }

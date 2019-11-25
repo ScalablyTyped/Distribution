@@ -29,7 +29,7 @@ object Line {
     text: String,
     words: js.Array[Word]
   ): Line = {
-    val __obj = js.Dynamic.literal(baseline = baseline, bbox = bbox, block = block, confidence = confidence, page = page, paragraph = paragraph, symbols = symbols, text = text, words = words)
+    val __obj = js.Dynamic.literal(baseline = baseline.asInstanceOf[js.Any], bbox = bbox.asInstanceOf[js.Any], block = block.asInstanceOf[js.Any], confidence = confidence.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], paragraph = paragraph.asInstanceOf[js.Any], symbols = symbols.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], words = words.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Line]
   }

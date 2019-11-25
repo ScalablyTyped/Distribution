@@ -22,7 +22,7 @@ object PositionError {
     code: Double,
     message: java.lang.String
   ): PositionError = {
-    val __obj = js.Dynamic.literal(PERMISSION_DENIED = PERMISSION_DENIED, POSITION_UNAVAILABLE = POSITION_UNAVAILABLE, TIMEOUT = TIMEOUT, code = code, message = message)
+    val __obj = js.Dynamic.literal(PERMISSION_DENIED = PERMISSION_DENIED.asInstanceOf[js.Any], POSITION_UNAVAILABLE = POSITION_UNAVAILABLE.asInstanceOf[js.Any], TIMEOUT = TIMEOUT.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PositionError]
   }

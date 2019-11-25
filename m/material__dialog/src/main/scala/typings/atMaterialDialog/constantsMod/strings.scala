@@ -29,8 +29,8 @@ object strings {
     OPEN_DIALOG_SELECTOR: `DOTmdc-dialog--open`,
     StringDictionary: StringDictionary[String] = null
   ): strings = {
-    val __obj = js.Dynamic.literal(ACCEPT_EVENT = ACCEPT_EVENT, ACCEPT_SELECTOR = ACCEPT_SELECTOR, CANCEL_EVENT = CANCEL_EVENT, DIALOG_SURFACE_SELECTOR = DIALOG_SURFACE_SELECTOR, OPEN_DIALOG_SELECTOR = OPEN_DIALOG_SELECTOR)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(ACCEPT_EVENT = ACCEPT_EVENT.asInstanceOf[js.Any], ACCEPT_SELECTOR = ACCEPT_SELECTOR.asInstanceOf[js.Any], CANCEL_EVENT = CANCEL_EVENT.asInstanceOf[js.Any], DIALOG_SURFACE_SELECTOR = DIALOG_SURFACE_SELECTOR.asInstanceOf[js.Any], OPEN_DIALOG_SELECTOR = OPEN_DIALOG_SELECTOR.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[strings]
   }
 }

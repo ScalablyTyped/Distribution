@@ -23,7 +23,7 @@ trait MessagingConditionResponse extends js.Object {
 object MessagingConditionResponse {
   @scala.inline
   def apply(messageId: Double): MessagingConditionResponse = {
-    val __obj = js.Dynamic.literal(messageId = messageId)
+    val __obj = js.Dynamic.literal(messageId = messageId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MessagingConditionResponse]
   }

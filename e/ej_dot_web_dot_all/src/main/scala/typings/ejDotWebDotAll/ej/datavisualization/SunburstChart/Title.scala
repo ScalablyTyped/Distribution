@@ -35,11 +35,11 @@ object Title {
     visible: String = null
   ): Title = {
     val __obj = js.Dynamic.literal()
-    if (font != null) __obj.updateDynamic("font")(font)
-    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
+    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (textAlignment != null) __obj.updateDynamic("textAlignment")(textAlignment.asInstanceOf[js.Any])
-    if (visible != null) __obj.updateDynamic("visible")(visible)
+    if (visible != null) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[Title]
   }
 }

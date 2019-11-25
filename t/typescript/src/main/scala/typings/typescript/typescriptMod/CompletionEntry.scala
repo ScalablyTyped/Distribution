@@ -35,13 +35,13 @@ object CompletionEntry {
     replacementSpan: TextSpan = null,
     source: String = null
   ): CompletionEntry = {
-    val __obj = js.Dynamic.literal(kind = kind, name = name, sortText = sortText)
-    if (hasAction != null) __obj.updateDynamic("hasAction")(hasAction)
-    if (insertText != null) __obj.updateDynamic("insertText")(insertText)
-    if (isRecommended != null) __obj.updateDynamic("isRecommended")(isRecommended)
-    if (kindModifiers != null) __obj.updateDynamic("kindModifiers")(kindModifiers)
-    if (replacementSpan != null) __obj.updateDynamic("replacementSpan")(replacementSpan)
-    if (source != null) __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], sortText = sortText.asInstanceOf[js.Any])
+    if (hasAction != null) __obj.updateDynamic("hasAction")(hasAction.asInstanceOf[js.Any])
+    if (insertText != null) __obj.updateDynamic("insertText")(insertText.asInstanceOf[js.Any])
+    if (isRecommended != null) __obj.updateDynamic("isRecommended")(isRecommended.asInstanceOf[js.Any])
+    if (kindModifiers != null) __obj.updateDynamic("kindModifiers")(kindModifiers.asInstanceOf[js.Any])
+    if (replacementSpan != null) __obj.updateDynamic("replacementSpan")(replacementSpan.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompletionEntry]
   }
 }

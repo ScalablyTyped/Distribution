@@ -19,8 +19,8 @@ object ExternalData {
   @scala.inline
   def apply(sha256Hash: String = null, url: String = null): ExternalData = {
     val __obj = js.Dynamic.literal()
-    if (sha256Hash != null) __obj.updateDynamic("sha256Hash")(sha256Hash)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (sha256Hash != null) __obj.updateDynamic("sha256Hash")(sha256Hash.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExternalData]
   }
 }

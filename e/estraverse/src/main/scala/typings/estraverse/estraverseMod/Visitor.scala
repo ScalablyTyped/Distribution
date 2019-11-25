@@ -29,7 +29,7 @@ object Visitor {
     val __obj = js.Dynamic.literal()
     if (enter != null) __obj.updateDynamic("enter")(js.Any.fromFunction2(enter))
     if (fallback != null) __obj.updateDynamic("fallback")(fallback.asInstanceOf[js.Any])
-    if (keys != null) __obj.updateDynamic("keys")(keys)
+    if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
     if (leave != null) __obj.updateDynamic("leave")(js.Any.fromFunction2(leave))
     __obj.asInstanceOf[Visitor]
   }

@@ -23,8 +23,8 @@ object Options {
   @scala.inline
   def apply(loc: js.UndefOr[Boolean] = js.undefined, source: String = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(loc)) __obj.updateDynamic("loc")(loc)
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (!js.isUndefined(loc)) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -23,10 +23,10 @@ object BluetoothRequestDeviceFilter {
   ): BluetoothRequestDeviceFilter = {
     val __obj = js.Dynamic.literal()
     if (manufacturerId != null) __obj.updateDynamic("manufacturerId")(manufacturerId.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
     if (serviceDataUUID != null) __obj.updateDynamic("serviceDataUUID")(serviceDataUUID.asInstanceOf[js.Any])
-    if (services != null) __obj.updateDynamic("services")(services)
+    if (services != null) __obj.updateDynamic("services")(services.asInstanceOf[js.Any])
     __obj.asInstanceOf[BluetoothRequestDeviceFilter]
   }
 }

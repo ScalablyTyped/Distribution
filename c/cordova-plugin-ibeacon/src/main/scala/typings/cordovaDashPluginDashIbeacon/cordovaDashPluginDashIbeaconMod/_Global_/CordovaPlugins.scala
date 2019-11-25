@@ -12,7 +12,7 @@ trait CordovaPlugins extends js.Object {
 object CordovaPlugins {
   @scala.inline
   def apply(locationManager: LocationManager): CordovaPlugins = {
-    val __obj = js.Dynamic.literal(locationManager = locationManager)
+    val __obj = js.Dynamic.literal(locationManager = locationManager.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CordovaPlugins]
   }

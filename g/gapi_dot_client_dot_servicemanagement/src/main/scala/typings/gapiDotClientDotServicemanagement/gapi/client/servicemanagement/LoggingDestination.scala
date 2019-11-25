@@ -23,8 +23,8 @@ object LoggingDestination {
   @scala.inline
   def apply(logs: js.Array[String] = null, monitoredResource: String = null): LoggingDestination = {
     val __obj = js.Dynamic.literal()
-    if (logs != null) __obj.updateDynamic("logs")(logs)
-    if (monitoredResource != null) __obj.updateDynamic("monitoredResource")(monitoredResource)
+    if (logs != null) __obj.updateDynamic("logs")(logs.asInstanceOf[js.Any])
+    if (monitoredResource != null) __obj.updateDynamic("monitoredResource")(monitoredResource.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoggingDestination]
   }
 }

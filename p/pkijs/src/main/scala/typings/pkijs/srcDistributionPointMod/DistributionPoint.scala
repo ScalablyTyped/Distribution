@@ -25,9 +25,9 @@ object DistributionPoint {
     reasons: BitString = null
   ): DistributionPoint = {
     val __obj = js.Dynamic.literal(fromSchema = js.Any.fromFunction1(fromSchema), toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
-    if (cRLIssuer != null) __obj.updateDynamic("cRLIssuer")(cRLIssuer)
-    if (distributionPoint != null) __obj.updateDynamic("distributionPoint")(distributionPoint)
-    if (reasons != null) __obj.updateDynamic("reasons")(reasons)
+    if (cRLIssuer != null) __obj.updateDynamic("cRLIssuer")(cRLIssuer.asInstanceOf[js.Any])
+    if (distributionPoint != null) __obj.updateDynamic("distributionPoint")(distributionPoint.asInstanceOf[js.Any])
+    if (reasons != null) __obj.updateDynamic("reasons")(reasons.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistributionPoint]
   }
 }

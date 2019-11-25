@@ -36,8 +36,8 @@ object SuiteResult {
     testPath: Path,
     status: String = null
   ): SuiteResult = {
-    val __obj = js.Dynamic.literal(description = description, failedExpectations = failedExpectations, fullName = fullName, id = id, testPath = testPath)
-    if (status != null) __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], failedExpectations = failedExpectations.asInstanceOf[js.Any], fullName = fullName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], testPath = testPath.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuiteResult]
   }
 }

@@ -30,15 +30,15 @@ object RoomState {
     `subs-only`: js.UndefOr[Boolean] = js.undefined
   ): RoomState = {
     val __obj = js.Dynamic.literal()
-    if (`broadcaster-lang` != null) __obj.updateDynamic("broadcaster-lang")(`broadcaster-lang`)
-    if (channel != null) __obj.updateDynamic("channel")(channel)
-    if (!js.isUndefined(`emote-only`)) __obj.updateDynamic("emote-only")(`emote-only`)
+    if (`broadcaster-lang` != null) __obj.updateDynamic("broadcaster-lang")(`broadcaster-lang`.asInstanceOf[js.Any])
+    if (channel != null) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
+    if (!js.isUndefined(`emote-only`)) __obj.updateDynamic("emote-only")(`emote-only`.asInstanceOf[js.Any])
     if (`followers-only` != null) __obj.updateDynamic("followers-only")(`followers-only`.asInstanceOf[js.Any])
-    if (!js.isUndefined(r9k)) __obj.updateDynamic("r9k")(r9k)
-    if (!js.isUndefined(rituals)) __obj.updateDynamic("rituals")(rituals)
-    if (`room-id` != null) __obj.updateDynamic("room-id")(`room-id`)
+    if (!js.isUndefined(r9k)) __obj.updateDynamic("r9k")(r9k.asInstanceOf[js.Any])
+    if (!js.isUndefined(rituals)) __obj.updateDynamic("rituals")(rituals.asInstanceOf[js.Any])
+    if (`room-id` != null) __obj.updateDynamic("room-id")(`room-id`.asInstanceOf[js.Any])
     if (slow != null) __obj.updateDynamic("slow")(slow.asInstanceOf[js.Any])
-    if (!js.isUndefined(`subs-only`)) __obj.updateDynamic("subs-only")(`subs-only`)
+    if (!js.isUndefined(`subs-only`)) __obj.updateDynamic("subs-only")(`subs-only`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoomState]
   }
 }

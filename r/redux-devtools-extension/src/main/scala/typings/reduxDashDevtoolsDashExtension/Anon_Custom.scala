@@ -63,16 +63,16 @@ object Anon_Custom {
     test: js.UndefOr[Boolean] = js.undefined
   ): Anon_Custom = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dispatch)) __obj.updateDynamic("dispatch")(dispatch)
+    if (!js.isUndefined(dispatch)) __obj.updateDynamic("dispatch")(dispatch.asInstanceOf[js.Any])
     if (export != null) __obj.updateDynamic("export")(export.asInstanceOf[js.Any])
     if (`import` != null) __obj.updateDynamic("import")(`import`.asInstanceOf[js.Any])
-    if (!js.isUndefined(jump)) __obj.updateDynamic("jump")(jump)
-    if (!js.isUndefined(lock)) __obj.updateDynamic("lock")(lock)
-    if (!js.isUndefined(pause)) __obj.updateDynamic("pause")(pause)
-    if (!js.isUndefined(persist)) __obj.updateDynamic("persist")(persist)
-    if (!js.isUndefined(reorder)) __obj.updateDynamic("reorder")(reorder)
-    if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip)
-    if (!js.isUndefined(test)) __obj.updateDynamic("test")(test)
+    if (!js.isUndefined(jump)) __obj.updateDynamic("jump")(jump.asInstanceOf[js.Any])
+    if (!js.isUndefined(lock)) __obj.updateDynamic("lock")(lock.asInstanceOf[js.Any])
+    if (!js.isUndefined(pause)) __obj.updateDynamic("pause")(pause.asInstanceOf[js.Any])
+    if (!js.isUndefined(persist)) __obj.updateDynamic("persist")(persist.asInstanceOf[js.Any])
+    if (!js.isUndefined(reorder)) __obj.updateDynamic("reorder")(reorder.asInstanceOf[js.Any])
+    if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
+    if (!js.isUndefined(test)) __obj.updateDynamic("test")(test.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Custom]
   }
 }

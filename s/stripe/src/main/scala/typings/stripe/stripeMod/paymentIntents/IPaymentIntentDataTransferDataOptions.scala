@@ -20,7 +20,7 @@ object IPaymentIntentDataTransferDataOptions {
   def apply(amount: Int | Double = null, destination: String = null): IPaymentIntentDataTransferDataOptions = {
     val __obj = js.Dynamic.literal()
     if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
-    if (destination != null) __obj.updateDynamic("destination")(destination)
+    if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPaymentIntentDataTransferDataOptions]
   }
 }

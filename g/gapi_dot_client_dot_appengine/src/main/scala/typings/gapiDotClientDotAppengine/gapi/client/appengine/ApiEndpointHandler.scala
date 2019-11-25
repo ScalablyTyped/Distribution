@@ -13,7 +13,7 @@ object ApiEndpointHandler {
   @scala.inline
   def apply(scriptPath: String = null): ApiEndpointHandler = {
     val __obj = js.Dynamic.literal()
-    if (scriptPath != null) __obj.updateDynamic("scriptPath")(scriptPath)
+    if (scriptPath != null) __obj.updateDynamic("scriptPath")(scriptPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApiEndpointHandler]
   }
 }

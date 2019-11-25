@@ -14,8 +14,8 @@ trait SnapshotCreate extends js.Object {
 object SnapshotCreate {
   @scala.inline
   def apply(snapshot: String, version: Double, salt: String = null): SnapshotCreate = {
-    val __obj = js.Dynamic.literal(snapshot = snapshot, version = version)
-    if (salt != null) __obj.updateDynamic("salt")(salt)
+    val __obj = js.Dynamic.literal(snapshot = snapshot.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    if (salt != null) __obj.updateDynamic("salt")(salt.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnapshotCreate]
   }
 }

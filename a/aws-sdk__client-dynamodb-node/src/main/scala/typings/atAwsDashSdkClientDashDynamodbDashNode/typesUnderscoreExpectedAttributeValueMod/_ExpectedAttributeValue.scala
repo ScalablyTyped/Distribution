@@ -51,8 +51,8 @@ object _ExpectedAttributeValue {
     val __obj = js.Dynamic.literal()
     if (AttributeValueList != null) __obj.updateDynamic("AttributeValueList")(AttributeValueList.asInstanceOf[js.Any])
     if (ComparisonOperator != null) __obj.updateDynamic("ComparisonOperator")(ComparisonOperator.asInstanceOf[js.Any])
-    if (!js.isUndefined(Exists)) __obj.updateDynamic("Exists")(Exists)
-    if (Value != null) __obj.updateDynamic("Value")(Value)
+    if (!js.isUndefined(Exists)) __obj.updateDynamic("Exists")(Exists.asInstanceOf[js.Any])
+    if (Value != null) __obj.updateDynamic("Value")(Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[_ExpectedAttributeValue]
   }
 }

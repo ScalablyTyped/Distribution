@@ -29,7 +29,7 @@ import typings.ssh2DashStreams.ssh2DashStreamsStrings.`CHANNEL_OPEN_FAILURE:0`
 import typings.ssh2DashStreams.ssh2DashStreamsStrings.`CHANNEL_REQUEST:0`
 import typings.ssh2DashStreams.ssh2DashStreamsStrings.`CHANNEL_SUCCESS:0`
 import typings.ssh2DashStreams.ssh2DashStreamsStrings.`CHANNEL_WINDOW_ADJUST:0`
-import typings.ssh2DashStreams.ssh2DashStreamsStrings.close
+import typings.ssh2DashStreams.ssh2DashStreamsStrings.close_
 import typings.ssh2DashStreams.ssh2DashStreamsStrings.continue
 import typings.ssh2DashStreams.ssh2DashStreamsStrings.end
 import typings.ssh2DashStreams.ssh2DashStreamsStrings.error
@@ -465,7 +465,7 @@ class SSH2Stream () extends Transform {
     * Emitted when the client socket was closed.
     */
   @JSName("on")
-  def on_close(event: close, listener: js.Function0[Unit]): this.type = js.native
+  def on_close(event: close_, listener: js.Function0[Unit]): this.type = js.native
   /**
     * Emitted when more requests/data can be sent to the stream.
     */

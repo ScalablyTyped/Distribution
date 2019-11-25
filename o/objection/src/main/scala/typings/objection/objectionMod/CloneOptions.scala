@@ -12,7 +12,7 @@ object CloneOptions {
   @scala.inline
   def apply(shallow: js.UndefOr[Boolean] = js.undefined): CloneOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(shallow)) __obj.updateDynamic("shallow")(shallow)
+    if (!js.isUndefined(shallow)) __obj.updateDynamic("shallow")(shallow.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloneOptions]
   }
 }

@@ -37,7 +37,7 @@ object ResembleComparisonResult {
     isSameDimensions: Boolean,
     misMatchPercentage: Double
   ): ResembleComparisonResult = {
-    val __obj = js.Dynamic.literal(analysisTime = analysisTime, diffBounds = diffBounds, dimensionDifference = dimensionDifference, getImageDataUrl = js.Any.fromFunction0(getImageDataUrl), isSameDimensions = isSameDimensions, misMatchPercentage = misMatchPercentage)
+    val __obj = js.Dynamic.literal(analysisTime = analysisTime.asInstanceOf[js.Any], diffBounds = diffBounds.asInstanceOf[js.Any], dimensionDifference = dimensionDifference.asInstanceOf[js.Any], getImageDataUrl = js.Any.fromFunction0(getImageDataUrl), isSameDimensions = isSameDimensions.asInstanceOf[js.Any], misMatchPercentage = misMatchPercentage.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ResembleComparisonResult]
   }

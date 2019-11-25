@@ -15,10 +15,10 @@ object VerificationCode {
   @scala.inline
   def apply(etag: String = null, kind: String = null, userId: String = null, verificationCode: String = null): VerificationCode = {
     val __obj = js.Dynamic.literal()
-    if (etag != null) __obj.updateDynamic("etag")(etag)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (userId != null) __obj.updateDynamic("userId")(userId)
-    if (verificationCode != null) __obj.updateDynamic("verificationCode")(verificationCode)
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
+    if (verificationCode != null) __obj.updateDynamic("verificationCode")(verificationCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[VerificationCode]
   }
 }

@@ -13,7 +13,7 @@ object BatchUpdateIngressRulesResponse {
   @scala.inline
   def apply(ingressRules: js.Array[FirewallRule] = null): BatchUpdateIngressRulesResponse = {
     val __obj = js.Dynamic.literal()
-    if (ingressRules != null) __obj.updateDynamic("ingressRules")(ingressRules)
+    if (ingressRules != null) __obj.updateDynamic("ingressRules")(ingressRules.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchUpdateIngressRulesResponse]
   }
 }

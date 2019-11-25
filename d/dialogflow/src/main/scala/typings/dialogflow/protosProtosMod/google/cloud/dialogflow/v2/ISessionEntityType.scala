@@ -24,9 +24,9 @@ object ISessionEntityType {
     name: String = null
   ): ISessionEntityType = {
     val __obj = js.Dynamic.literal()
-    if (entities != null) __obj.updateDynamic("entities")(entities)
-    if (entityOverrideMode != null) __obj.updateDynamic("entityOverrideMode")(entityOverrideMode)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (entities != null) __obj.updateDynamic("entities")(entities.asInstanceOf[js.Any])
+    if (entityOverrideMode != null) __obj.updateDynamic("entityOverrideMode")(entityOverrideMode.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISessionEntityType]
   }
 }

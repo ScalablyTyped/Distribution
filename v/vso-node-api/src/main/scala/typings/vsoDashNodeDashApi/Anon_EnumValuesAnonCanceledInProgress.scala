@@ -11,7 +11,7 @@ trait Anon_EnumValuesAnonCanceledInProgress extends js.Object {
 object Anon_EnumValuesAnonCanceledInProgress {
   @scala.inline
   def apply(enumValues: Anon_CanceledInProgress): Anon_EnumValuesAnonCanceledInProgress = {
-    val __obj = js.Dynamic.literal(enumValues = enumValues)
+    val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EnumValuesAnonCanceledInProgress]
   }

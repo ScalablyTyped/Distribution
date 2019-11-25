@@ -20,7 +20,7 @@ trait TeamsAddOrUpdateMembershipParams extends js.Object {
 object TeamsAddOrUpdateMembershipParams {
   @scala.inline
   def apply(team_id: Double, username: String, role: member | maintainer = null): TeamsAddOrUpdateMembershipParams = {
-    val __obj = js.Dynamic.literal(team_id = team_id, username = username)
+    val __obj = js.Dynamic.literal(team_id = team_id.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamsAddOrUpdateMembershipParams]
   }

@@ -18,8 +18,8 @@ object FieldStatsResponse {
     indices: StringDictionary[FieldStatsResponseIndex],
     conflicts: StringDictionary[String] = null
   ): FieldStatsResponse = {
-    val __obj = js.Dynamic.literal(_shards = _shards, indices = indices)
-    if (conflicts != null) __obj.updateDynamic("conflicts")(conflicts)
+    val __obj = js.Dynamic.literal(_shards = _shards.asInstanceOf[js.Any], indices = indices.asInstanceOf[js.Any])
+    if (conflicts != null) __obj.updateDynamic("conflicts")(conflicts.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldStatsResponse]
   }
 }

@@ -25,13 +25,13 @@ object CommandMetadataOption {
     spec: Anon_Value = null,
     `type`: CommandOptionType = null
   ): CommandMetadataOption = {
-    val __obj = js.Dynamic.literal(name = name, summary = summary)
-    if (aliases != null) __obj.updateDynamic("aliases")(aliases)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any])
+    if (aliases != null) __obj.updateDynamic("aliases")(aliases.asInstanceOf[js.Any])
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (footnotes != null) __obj.updateDynamic("footnotes")(footnotes)
-    if (groups != null) __obj.updateDynamic("groups")(groups)
-    if (spec != null) __obj.updateDynamic("spec")(spec)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (footnotes != null) __obj.updateDynamic("footnotes")(footnotes.asInstanceOf[js.Any])
+    if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
+    if (spec != null) __obj.updateDynamic("spec")(spec.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommandMetadataOption]
   }

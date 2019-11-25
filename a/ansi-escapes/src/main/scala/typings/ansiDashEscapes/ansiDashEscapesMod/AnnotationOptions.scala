@@ -38,7 +38,7 @@ object AnnotationOptions {
     y: Int | Double = null
   ): AnnotationOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isHidden)) __obj.updateDynamic("isHidden")(isHidden)
+    if (!js.isUndefined(isHidden)) __obj.updateDynamic("isHidden")(isHidden.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])

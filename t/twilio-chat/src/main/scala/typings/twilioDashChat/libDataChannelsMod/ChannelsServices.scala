@@ -35,7 +35,7 @@ object ChannelsServices {
     typingIndicator: TypingIndicator,
     users: Users
   ): ChannelsServices = {
-    val __obj = js.Dynamic.literal(consumptionHorizon = consumptionHorizon, mcsClient = mcsClient, network = network, session = session, syncClient = syncClient, syncList = syncList, typingIndicator = typingIndicator, users = users)
+    val __obj = js.Dynamic.literal(consumptionHorizon = consumptionHorizon.asInstanceOf[js.Any], mcsClient = mcsClient.asInstanceOf[js.Any], network = network.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any], syncClient = syncClient.asInstanceOf[js.Any], syncList = syncList.asInstanceOf[js.Any], typingIndicator = typingIndicator.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChannelsServices]
   }

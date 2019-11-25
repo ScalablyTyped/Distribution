@@ -86,19 +86,14 @@ object IEditor {
     alignment: java.lang.String = null,
     allowBlur: js.UndefOr[Boolean] = js.undefined,
     autoSize: js.Any = null,
-    baseCls: java.lang.String = null,
     cancelEdit: /* remainVisible */ js.UndefOr[Boolean] => Unit = null,
     cancelOnEsc: js.UndefOr[Boolean] = js.undefined,
     completeEdit: /* remainVisible */ js.UndefOr[Boolean] => Unit = null,
     completeOnEnter: js.UndefOr[Boolean] = js.undefined,
-    constrain: js.UndefOr[Boolean] = js.undefined,
     field: IField = null,
-    focusOnToFront: js.UndefOr[Boolean] = js.undefined,
     getValue: () => _ = null,
-    hidden: js.UndefOr[Boolean] = js.undefined,
     hideEl: js.UndefOr[Boolean] = js.undefined,
     ignoreNoChange: js.UndefOr[Boolean] = js.undefined,
-    layout: js.Any = null,
     offsets: Array = null,
     onHide: () => Unit = null,
     onShow: () => Unit = null,
@@ -106,43 +101,36 @@ object IEditor {
     realign: /* autoSize */ js.UndefOr[Boolean] => Unit = null,
     revertInvalid: js.UndefOr[Boolean] = js.undefined,
     setValue: /* value */ js.UndefOr[js.Any] => Unit = null,
-    shadow: js.Any = null,
     startEdit: (/* el */ js.UndefOr[js.Any], /* value */ js.UndefOr[java.lang.String]) => Unit = null,
     swallowKeys: js.UndefOr[Boolean] = js.undefined,
     updateEl: js.UndefOr[Boolean] = js.undefined,
     value: js.Any = null
   ): IEditor = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IContainer)
+    if (IContainer != null) js.Dynamic.global.Object.assign(__obj, IContainer)
     if (afterRender != null) __obj.updateDynamic("afterRender")(js.Any.fromFunction2(afterRender))
-    if (alignment != null) __obj.updateDynamic("alignment")(alignment)
-    if (!js.isUndefined(allowBlur)) __obj.updateDynamic("allowBlur")(allowBlur)
-    if (autoSize != null) __obj.updateDynamic("autoSize")(autoSize)
-    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
+    if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowBlur)) __obj.updateDynamic("allowBlur")(allowBlur.asInstanceOf[js.Any])
+    if (autoSize != null) __obj.updateDynamic("autoSize")(autoSize.asInstanceOf[js.Any])
     if (cancelEdit != null) __obj.updateDynamic("cancelEdit")(js.Any.fromFunction1(cancelEdit))
-    if (!js.isUndefined(cancelOnEsc)) __obj.updateDynamic("cancelOnEsc")(cancelOnEsc)
+    if (!js.isUndefined(cancelOnEsc)) __obj.updateDynamic("cancelOnEsc")(cancelOnEsc.asInstanceOf[js.Any])
     if (completeEdit != null) __obj.updateDynamic("completeEdit")(js.Any.fromFunction1(completeEdit))
-    if (!js.isUndefined(completeOnEnter)) __obj.updateDynamic("completeOnEnter")(completeOnEnter)
-    if (!js.isUndefined(constrain)) __obj.updateDynamic("constrain")(constrain)
-    if (field != null) __obj.updateDynamic("field")(field)
-    if (!js.isUndefined(focusOnToFront)) __obj.updateDynamic("focusOnToFront")(focusOnToFront)
+    if (!js.isUndefined(completeOnEnter)) __obj.updateDynamic("completeOnEnter")(completeOnEnter.asInstanceOf[js.Any])
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     if (getValue != null) __obj.updateDynamic("getValue")(js.Any.fromFunction0(getValue))
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
-    if (!js.isUndefined(hideEl)) __obj.updateDynamic("hideEl")(hideEl)
-    if (!js.isUndefined(ignoreNoChange)) __obj.updateDynamic("ignoreNoChange")(ignoreNoChange)
-    if (layout != null) __obj.updateDynamic("layout")(layout)
-    if (offsets != null) __obj.updateDynamic("offsets")(offsets)
+    if (!js.isUndefined(hideEl)) __obj.updateDynamic("hideEl")(hideEl.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreNoChange)) __obj.updateDynamic("ignoreNoChange")(ignoreNoChange.asInstanceOf[js.Any])
+    if (offsets != null) __obj.updateDynamic("offsets")(offsets.asInstanceOf[js.Any])
     if (onHide != null) __obj.updateDynamic("onHide")(js.Any.fromFunction0(onHide))
     if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction0(onShow))
-    if (parentEl != null) __obj.updateDynamic("parentEl")(parentEl)
+    if (parentEl != null) __obj.updateDynamic("parentEl")(parentEl.asInstanceOf[js.Any])
     if (realign != null) __obj.updateDynamic("realign")(js.Any.fromFunction1(realign))
-    if (!js.isUndefined(revertInvalid)) __obj.updateDynamic("revertInvalid")(revertInvalid)
+    if (!js.isUndefined(revertInvalid)) __obj.updateDynamic("revertInvalid")(revertInvalid.asInstanceOf[js.Any])
     if (setValue != null) __obj.updateDynamic("setValue")(js.Any.fromFunction1(setValue))
-    if (shadow != null) __obj.updateDynamic("shadow")(shadow)
     if (startEdit != null) __obj.updateDynamic("startEdit")(js.Any.fromFunction2(startEdit))
-    if (!js.isUndefined(swallowKeys)) __obj.updateDynamic("swallowKeys")(swallowKeys)
-    if (!js.isUndefined(updateEl)) __obj.updateDynamic("updateEl")(updateEl)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (!js.isUndefined(swallowKeys)) __obj.updateDynamic("swallowKeys")(swallowKeys.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateEl)) __obj.updateDynamic("updateEl")(updateEl.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEditor]
   }
 }

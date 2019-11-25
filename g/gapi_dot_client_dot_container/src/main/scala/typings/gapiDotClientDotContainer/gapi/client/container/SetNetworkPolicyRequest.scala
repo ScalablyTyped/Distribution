@@ -13,7 +13,7 @@ object SetNetworkPolicyRequest {
   @scala.inline
   def apply(networkPolicy: NetworkPolicy = null): SetNetworkPolicyRequest = {
     val __obj = js.Dynamic.literal()
-    if (networkPolicy != null) __obj.updateDynamic("networkPolicy")(networkPolicy)
+    if (networkPolicy != null) __obj.updateDynamic("networkPolicy")(networkPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetNetworkPolicyRequest]
   }
 }

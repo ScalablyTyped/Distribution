@@ -28,11 +28,11 @@ object CalendarGroup {
     name: String = null
   ): CalendarGroup = {
     val __obj = js.Dynamic.literal()
-    if (calendars != null) __obj.updateDynamic("calendars")(calendars)
-    if (changeKey != null) __obj.updateDynamic("changeKey")(changeKey)
-    if (classId != null) __obj.updateDynamic("classId")(classId)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (calendars != null) __obj.updateDynamic("calendars")(calendars.asInstanceOf[js.Any])
+    if (changeKey != null) __obj.updateDynamic("changeKey")(changeKey.asInstanceOf[js.Any])
+    if (classId != null) __obj.updateDynamic("classId")(classId.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalendarGroup]
   }
 }

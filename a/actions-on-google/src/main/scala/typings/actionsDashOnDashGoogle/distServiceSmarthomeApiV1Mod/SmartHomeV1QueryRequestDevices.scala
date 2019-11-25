@@ -13,8 +13,8 @@ trait SmartHomeV1QueryRequestDevices extends js.Object {
 object SmartHomeV1QueryRequestDevices {
   @scala.inline
   def apply(id: String, customData: ApiClientObjectMap[_] = null): SmartHomeV1QueryRequestDevices = {
-    val __obj = js.Dynamic.literal(id = id)
-    if (customData != null) __obj.updateDynamic("customData")(customData)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    if (customData != null) __obj.updateDynamic("customData")(customData.asInstanceOf[js.Any])
     __obj.asInstanceOf[SmartHomeV1QueryRequestDevices]
   }
 }

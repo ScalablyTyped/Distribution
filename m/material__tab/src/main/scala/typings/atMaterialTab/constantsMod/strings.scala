@@ -14,8 +14,8 @@ trait strings extends MDCStrings {
 object strings {
   @scala.inline
   def apply(ARIA_SELECTED: `aria-selected`, StringDictionary: StringDictionary[String] = null): strings = {
-    val __obj = js.Dynamic.literal(ARIA_SELECTED = ARIA_SELECTED)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(ARIA_SELECTED = ARIA_SELECTED.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[strings]
   }
 }

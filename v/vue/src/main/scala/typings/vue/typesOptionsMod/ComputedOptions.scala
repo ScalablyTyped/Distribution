@@ -14,7 +14,7 @@ object ComputedOptions {
   @scala.inline
   def apply[T](cache: js.UndefOr[Boolean] = js.undefined, get: () => T = null, set: /* value */ T => Unit = null): ComputedOptions[T] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
     if (get != null) __obj.updateDynamic("get")(js.Any.fromFunction0(get))
     if (set != null) __obj.updateDynamic("set")(js.Any.fromFunction1(set))
     __obj.asInstanceOf[ComputedOptions[T]]

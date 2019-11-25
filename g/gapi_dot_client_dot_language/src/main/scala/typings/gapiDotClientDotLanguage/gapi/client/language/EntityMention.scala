@@ -22,9 +22,9 @@ object EntityMention {
   @scala.inline
   def apply(sentiment: Sentiment = null, text: TextSpan = null, `type`: String = null): EntityMention = {
     val __obj = js.Dynamic.literal()
-    if (sentiment != null) __obj.updateDynamic("sentiment")(sentiment)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (sentiment != null) __obj.updateDynamic("sentiment")(sentiment.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntityMention]
   }
 }

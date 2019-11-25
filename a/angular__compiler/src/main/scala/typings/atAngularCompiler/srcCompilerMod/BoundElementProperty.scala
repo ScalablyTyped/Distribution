@@ -1,6 +1,7 @@
 package typings.atAngularCompiler.srcCompilerMod
 
 import typings.atAngularCompiler.srcCoreMod.SecurityContext
+import typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.BindingType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +12,7 @@ class BoundElementProperty protected ()
   extends typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.BoundElementProperty {
   def this(
     name: String,
-    `type`: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.BindingType,
+    `type`: BindingType,
     securityContext: SecurityContext,
     value: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.AST,
     unit: String,
@@ -19,7 +20,7 @@ class BoundElementProperty protected ()
   ) = this()
   def this(
     name: String,
-    `type`: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.BindingType,
+    `type`: BindingType,
     securityContext: SecurityContext,
     value: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.AST,
     unit: Null,
@@ -27,7 +28,7 @@ class BoundElementProperty protected ()
   ) = this()
   def this(
     name: String,
-    `type`: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.BindingType,
+    `type`: BindingType,
     securityContext: SecurityContext,
     value: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.AST,
     unit: String,
@@ -36,7 +37,7 @@ class BoundElementProperty protected ()
   ) = this()
   def this(
     name: String,
-    `type`: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.BindingType,
+    `type`: BindingType,
     securityContext: SecurityContext,
     value: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.AST,
     unit: Null,

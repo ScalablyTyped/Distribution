@@ -12,7 +12,7 @@ object ArrayUniqueOptions {
   @scala.inline
   def apply(ignoreUndefined: js.UndefOr[Boolean] = js.undefined): ArrayUniqueOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ignoreUndefined)) __obj.updateDynamic("ignoreUndefined")(ignoreUndefined)
+    if (!js.isUndefined(ignoreUndefined)) __obj.updateDynamic("ignoreUndefined")(ignoreUndefined.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArrayUniqueOptions]
   }
 }

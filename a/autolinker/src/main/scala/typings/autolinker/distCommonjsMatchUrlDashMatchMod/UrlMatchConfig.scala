@@ -33,7 +33,7 @@ object UrlMatchConfig {
     url: String,
     urlMatchType: UrlMatchTypeOptions
   ): UrlMatchConfig = {
-    val __obj = js.Dynamic.literal(decodePercentEncoding = decodePercentEncoding, matchedText = matchedText, offset = offset, protocolRelativeMatch = protocolRelativeMatch, protocolUrlMatch = protocolUrlMatch, stripPrefix = stripPrefix, stripTrailingSlash = stripTrailingSlash, tagBuilder = tagBuilder, url = url, urlMatchType = urlMatchType)
+    val __obj = js.Dynamic.literal(decodePercentEncoding = decodePercentEncoding.asInstanceOf[js.Any], matchedText = matchedText.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], protocolRelativeMatch = protocolRelativeMatch.asInstanceOf[js.Any], protocolUrlMatch = protocolUrlMatch.asInstanceOf[js.Any], stripPrefix = stripPrefix.asInstanceOf[js.Any], stripTrailingSlash = stripTrailingSlash.asInstanceOf[js.Any], tagBuilder = tagBuilder.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], urlMatchType = urlMatchType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UrlMatchConfig]
   }

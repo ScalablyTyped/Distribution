@@ -13,8 +13,8 @@ trait Anon_Children extends js.Object {
 object Anon_Children {
   @scala.inline
   def apply(children: js.Array[IVirtualElement], parent: IVirtualElement = null): Anon_Children = {
-    val __obj = js.Dynamic.literal(children = children)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Children]
   }
 }

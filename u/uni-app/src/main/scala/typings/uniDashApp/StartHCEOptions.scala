@@ -32,7 +32,7 @@ object StartHCEOptions {
     success: () => Unit = null
   ): StartHCEOptions = {
     val __obj = js.Dynamic.literal()
-    if (aid_list != null) __obj.updateDynamic("aid_list")(aid_list)
+    if (aid_list != null) __obj.updateDynamic("aid_list")(aid_list.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))

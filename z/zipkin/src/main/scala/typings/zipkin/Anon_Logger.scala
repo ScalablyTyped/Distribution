@@ -13,7 +13,7 @@ trait Anon_Logger extends js.Object {
 object Anon_Logger {
   @scala.inline
   def apply(logger: Logger, timeout: Int | Double = null): Anon_Logger = {
-    val __obj = js.Dynamic.literal(logger = logger)
+    val __obj = js.Dynamic.literal(logger = logger.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Logger]
   }

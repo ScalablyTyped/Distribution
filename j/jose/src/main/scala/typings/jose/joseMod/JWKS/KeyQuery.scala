@@ -26,13 +26,13 @@ object KeyQuery {
     `x5t#S256`: String = null
   ): KeyQuery = {
     val __obj = js.Dynamic.literal()
-    if (alg != null) __obj.updateDynamic("alg")(alg)
-    if (key_ops != null) __obj.updateDynamic("key_ops")(key_ops)
-    if (kid != null) __obj.updateDynamic("kid")(kid)
-    if (kty != null) __obj.updateDynamic("kty")(kty)
-    if (use != null) __obj.updateDynamic("use")(use)
-    if (x5t != null) __obj.updateDynamic("x5t")(x5t)
-    if (`x5t#S256` != null) __obj.updateDynamic("x5t#S256")(`x5t#S256`)
+    if (alg != null) __obj.updateDynamic("alg")(alg.asInstanceOf[js.Any])
+    if (key_ops != null) __obj.updateDynamic("key_ops")(key_ops.asInstanceOf[js.Any])
+    if (kid != null) __obj.updateDynamic("kid")(kid.asInstanceOf[js.Any])
+    if (kty != null) __obj.updateDynamic("kty")(kty.asInstanceOf[js.Any])
+    if (use != null) __obj.updateDynamic("use")(use.asInstanceOf[js.Any])
+    if (x5t != null) __obj.updateDynamic("x5t")(x5t.asInstanceOf[js.Any])
+    if (`x5t#S256` != null) __obj.updateDynamic("x5t#S256")(`x5t#S256`.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyQuery]
   }
 }

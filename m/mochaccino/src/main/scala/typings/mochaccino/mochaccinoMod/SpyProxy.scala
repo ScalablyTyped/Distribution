@@ -25,7 +25,7 @@ object SpyProxy {
     returnValue: js.Any => Unit,
     spyProxy: `true`
   ): SpyProxy = {
-    val __obj = js.Dynamic.literal(and = and, callFake = js.Any.fromFunction1(callFake), callThrough = js.Any.fromFunction0(callThrough), getSubject = js.Any.fromFunction0(getSubject), returnValue = js.Any.fromFunction1(returnValue), spyProxy = spyProxy)
+    val __obj = js.Dynamic.literal(and = and.asInstanceOf[js.Any], callFake = js.Any.fromFunction1(callFake), callThrough = js.Any.fromFunction0(callThrough), getSubject = js.Any.fromFunction0(getSubject), returnValue = js.Any.fromFunction1(returnValue), spyProxy = spyProxy.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SpyProxy]
   }

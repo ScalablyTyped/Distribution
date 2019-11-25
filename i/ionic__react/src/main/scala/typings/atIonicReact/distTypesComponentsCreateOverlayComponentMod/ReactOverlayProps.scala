@@ -20,7 +20,7 @@ object ReactOverlayProps {
     children: ReactNode = null,
     onDidDismiss: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit = null
   ): ReactOverlayProps = {
-    val __obj = js.Dynamic.literal(isOpen = isOpen)
+    val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (onDidDismiss != null) __obj.updateDynamic("onDidDismiss")(js.Any.fromFunction1(onDidDismiss))
     __obj.asInstanceOf[ReactOverlayProps]

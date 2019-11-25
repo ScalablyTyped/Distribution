@@ -32,15 +32,15 @@ object Anon_Auth {
     timeout: Int | Double = null
   ): Anon_Auth = {
     val __obj = js.Dynamic.literal()
-    if (auth != null) __obj.updateDynamic("auth")(auth)
-    if (beforeSend != null) __obj.updateDynamic("beforeSend")(beforeSend)
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (!js.isUndefined(followRedirects)) __obj.updateDynamic("followRedirects")(followRedirects)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (npmRequestOptions != null) __obj.updateDynamic("npmRequestOptions")(npmRequestOptions)
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (query != null) __obj.updateDynamic("query")(query)
+    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
+    if (beforeSend != null) __obj.updateDynamic("beforeSend")(beforeSend.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (!js.isUndefined(followRedirects)) __obj.updateDynamic("followRedirects")(followRedirects.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (npmRequestOptions != null) __obj.updateDynamic("npmRequestOptions")(npmRequestOptions.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Auth]
   }

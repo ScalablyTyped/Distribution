@@ -13,7 +13,7 @@ trait InsightsServicePostResponseInline_insights_node extends js.Object {
 object InsightsServicePostResponseInline_insights_node {
   @scala.inline
   def apply(error: Null, metrics: InsightsServicePostResponseMetrics, state: String): InsightsServicePostResponseInline_insights_node = {
-    val __obj = js.Dynamic.literal(error = error, metrics = metrics, state = state)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], metrics = metrics.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InsightsServicePostResponseInline_insights_node]
   }

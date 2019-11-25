@@ -21,11 +21,11 @@ object UpdateOneOptions {
     wtimeout: Int | scala.Double = null
   ): UpdateOneOptions = {
     val __obj = js.Dynamic.literal()
-    if (arrayFilters != null) __obj.updateDynamic("arrayFilters")(arrayFilters)
-    if (!js.isUndefined(bypassDocumentValidation)) __obj.updateDynamic("bypassDocumentValidation")(bypassDocumentValidation)
-    if (!js.isUndefined(j)) __obj.updateDynamic("j")(j)
-    if (session != null) __obj.updateDynamic("session")(session)
-    if (!js.isUndefined(upsert)) __obj.updateDynamic("upsert")(upsert)
+    if (arrayFilters != null) __obj.updateDynamic("arrayFilters")(arrayFilters.asInstanceOf[js.Any])
+    if (!js.isUndefined(bypassDocumentValidation)) __obj.updateDynamic("bypassDocumentValidation")(bypassDocumentValidation.asInstanceOf[js.Any])
+    if (!js.isUndefined(j)) __obj.updateDynamic("j")(j.asInstanceOf[js.Any])
+    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
+    if (!js.isUndefined(upsert)) __obj.updateDynamic("upsert")(upsert.asInstanceOf[js.Any])
     if (w != null) __obj.updateDynamic("w")(w.asInstanceOf[js.Any])
     if (wtimeout != null) __obj.updateDynamic("wtimeout")(wtimeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateOneOptions]

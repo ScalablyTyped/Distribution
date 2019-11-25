@@ -16,14 +16,14 @@ trait LodashReduceRight extends js.Object {
   def apply[T](callback: __, accumulator: __, collection: List[T]): LodashReduceRight2x4[T] = js.native
   def apply[T /* <: js.Object */, TResult](
     callback: MemoIteratorCappedRight[
-      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 
       TResult
     ]
   ): LodashReduceRight3x1[T, TResult] = js.native
   def apply[T, TResult](callback: MemoIteratorCappedRight[T, TResult], accumulator: TResult): TResult = js.native
   def apply[T /* <: js.Object */, TResult](
     callback: MemoIteratorCappedRight[
-      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 
       TResult
     ],
     accumulator: TResult,
@@ -34,7 +34,7 @@ trait LodashReduceRight extends js.Object {
   def apply[T, TResult](callback: MemoIteratorCappedRight[T, TResult], accumulator: __): LodashReduceRight2x5[TResult] = js.native
   def apply[T /* <: js.Object */, TResult](
     callback: MemoIteratorCappedRight[
-      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 
       TResult
     ],
     accumulator: __,

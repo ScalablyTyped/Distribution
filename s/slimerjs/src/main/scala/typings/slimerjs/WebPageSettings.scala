@@ -29,7 +29,7 @@ object WebPageSettings {
     userName: String,
     webSecurityEnabled: Boolean
   ): WebPageSettings = {
-    val __obj = js.Dynamic.literal(XSSAuditingEnabled = XSSAuditingEnabled, javascriptEnabled = javascriptEnabled, loadImages = loadImages, localToRemoteUrlAccessEnabled = localToRemoteUrlAccessEnabled, password = password, resourceTimeout = resourceTimeout, userAgent = userAgent, userName = userName, webSecurityEnabled = webSecurityEnabled)
+    val __obj = js.Dynamic.literal(XSSAuditingEnabled = XSSAuditingEnabled.asInstanceOf[js.Any], javascriptEnabled = javascriptEnabled.asInstanceOf[js.Any], loadImages = loadImages.asInstanceOf[js.Any], localToRemoteUrlAccessEnabled = localToRemoteUrlAccessEnabled.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], resourceTimeout = resourceTimeout.asInstanceOf[js.Any], userAgent = userAgent.asInstanceOf[js.Any], userName = userName.asInstanceOf[js.Any], webSecurityEnabled = webSecurityEnabled.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WebPageSettings]
   }

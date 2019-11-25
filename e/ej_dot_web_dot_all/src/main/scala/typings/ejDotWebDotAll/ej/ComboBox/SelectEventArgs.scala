@@ -48,14 +48,14 @@ object SelectEventArgs {
     value: String | Double = null
   ): SelectEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (Item != null) __obj.updateDynamic("Item")(Item)
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (e != null) __obj.updateDynamic("e")(e)
-    if (!js.isUndefined(isInteracted)) __obj.updateDynamic("isInteracted")(isInteracted)
-    if (itemData != null) __obj.updateDynamic("itemData")(itemData)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (Item != null) __obj.updateDynamic("Item")(Item.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (e != null) __obj.updateDynamic("e")(e.asInstanceOf[js.Any])
+    if (!js.isUndefined(isInteracted)) __obj.updateDynamic("isInteracted")(isInteracted.asInstanceOf[js.Any])
+    if (itemData != null) __obj.updateDynamic("itemData")(itemData.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectEventArgs]
   }

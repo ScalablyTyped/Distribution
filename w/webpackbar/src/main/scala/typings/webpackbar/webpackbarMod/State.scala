@@ -13,8 +13,8 @@ trait State extends js.Object {
 object State {
   @scala.inline
   def apply(color: String, isRunning: Boolean, profile: Profile = null): State = {
-    val __obj = js.Dynamic.literal(color = color, isRunning = isRunning)
-    if (profile != null) __obj.updateDynamic("profile")(profile)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], isRunning = isRunning.asInstanceOf[js.Any])
+    if (profile != null) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
     __obj.asInstanceOf[State]
   }
 }

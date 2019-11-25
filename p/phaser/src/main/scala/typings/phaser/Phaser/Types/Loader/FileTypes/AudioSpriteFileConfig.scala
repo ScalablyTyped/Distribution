@@ -42,11 +42,11 @@ object AudioSpriteFileConfig {
     audioXhrSettings: XHRSettingsObject = null,
     jsonXhrSettings: XHRSettingsObject = null
   ): AudioSpriteFileConfig = {
-    val __obj = js.Dynamic.literal(jsonURL = jsonURL, key = key)
-    if (audioConfig != null) __obj.updateDynamic("audioConfig")(audioConfig)
-    if (audioURL != null) __obj.updateDynamic("audioURL")(audioURL)
-    if (audioXhrSettings != null) __obj.updateDynamic("audioXhrSettings")(audioXhrSettings)
-    if (jsonXhrSettings != null) __obj.updateDynamic("jsonXhrSettings")(jsonXhrSettings)
+    val __obj = js.Dynamic.literal(jsonURL = jsonURL.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
+    if (audioConfig != null) __obj.updateDynamic("audioConfig")(audioConfig.asInstanceOf[js.Any])
+    if (audioURL != null) __obj.updateDynamic("audioURL")(audioURL.asInstanceOf[js.Any])
+    if (audioXhrSettings != null) __obj.updateDynamic("audioXhrSettings")(audioXhrSettings.asInstanceOf[js.Any])
+    if (jsonXhrSettings != null) __obj.updateDynamic("jsonXhrSettings")(jsonXhrSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioSpriteFileConfig]
   }
 }

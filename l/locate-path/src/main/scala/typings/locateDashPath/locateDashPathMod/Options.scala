@@ -32,8 +32,8 @@ object Options {
     `type`: file | directory = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowSymlinks)) __obj.updateDynamic("allowSymlinks")(allowSymlinks)
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
+    if (!js.isUndefined(allowSymlinks)) __obj.updateDynamic("allowSymlinks")(allowSymlinks.asInstanceOf[js.Any])
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

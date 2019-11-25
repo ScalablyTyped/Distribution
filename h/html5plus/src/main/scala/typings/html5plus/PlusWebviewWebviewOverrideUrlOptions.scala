@@ -86,7 +86,7 @@ object PlusWebviewWebviewOverrideUrlOptions {
     val __obj = js.Dynamic.literal()
     if (effect != null) __obj.updateDynamic("effect")(effect.asInstanceOf[js.Any])
     if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
-    if (`match` != null) __obj.updateDynamic("match")(`match`)
+    if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusWebviewWebviewOverrideUrlOptions]
   }

@@ -21,10 +21,10 @@ object GroupKeyOptions {
     label: String = null,
     modifier: /* value */ js.Any => _ = null
   ): GroupKeyOptions = {
-    val __obj = js.Dynamic.literal(column = column)
-    __obj.updateDynamic("type")(`type`)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (label != null) __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (modifier != null) __obj.updateDynamic("modifier")(js.Any.fromFunction1(modifier))
     __obj.asInstanceOf[GroupKeyOptions]
   }

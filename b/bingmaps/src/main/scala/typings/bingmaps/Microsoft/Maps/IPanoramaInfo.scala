@@ -13,7 +13,7 @@ object IPanoramaInfo {
   @scala.inline
   def apply(cd: String = null): IPanoramaInfo = {
     val __obj = js.Dynamic.literal()
-    if (cd != null) __obj.updateDynamic("cd")(cd)
+    if (cd != null) __obj.updateDynamic("cd")(cd.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPanoramaInfo]
   }
 }

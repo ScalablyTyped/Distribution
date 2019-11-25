@@ -46,16 +46,16 @@ object Invitation {
     status: String = null
   ): Invitation = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (inviteRedeemUrl != null) __obj.updateDynamic("inviteRedeemUrl")(inviteRedeemUrl)
-    if (inviteRedirectUrl != null) __obj.updateDynamic("inviteRedirectUrl")(inviteRedirectUrl)
-    if (invitedUser != null) __obj.updateDynamic("invitedUser")(invitedUser)
-    if (invitedUserDisplayName != null) __obj.updateDynamic("invitedUserDisplayName")(invitedUserDisplayName)
-    if (invitedUserEmailAddress != null) __obj.updateDynamic("invitedUserEmailAddress")(invitedUserEmailAddress)
-    if (invitedUserMessageInfo != null) __obj.updateDynamic("invitedUserMessageInfo")(invitedUserMessageInfo)
-    if (invitedUserType != null) __obj.updateDynamic("invitedUserType")(invitedUserType)
-    if (!js.isUndefined(sendInvitationMessage)) __obj.updateDynamic("sendInvitationMessage")(sendInvitationMessage)
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (inviteRedeemUrl != null) __obj.updateDynamic("inviteRedeemUrl")(inviteRedeemUrl.asInstanceOf[js.Any])
+    if (inviteRedirectUrl != null) __obj.updateDynamic("inviteRedirectUrl")(inviteRedirectUrl.asInstanceOf[js.Any])
+    if (invitedUser != null) __obj.updateDynamic("invitedUser")(invitedUser.asInstanceOf[js.Any])
+    if (invitedUserDisplayName != null) __obj.updateDynamic("invitedUserDisplayName")(invitedUserDisplayName.asInstanceOf[js.Any])
+    if (invitedUserEmailAddress != null) __obj.updateDynamic("invitedUserEmailAddress")(invitedUserEmailAddress.asInstanceOf[js.Any])
+    if (invitedUserMessageInfo != null) __obj.updateDynamic("invitedUserMessageInfo")(invitedUserMessageInfo.asInstanceOf[js.Any])
+    if (invitedUserType != null) __obj.updateDynamic("invitedUserType")(invitedUserType.asInstanceOf[js.Any])
+    if (!js.isUndefined(sendInvitationMessage)) __obj.updateDynamic("sendInvitationMessage")(sendInvitationMessage.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[Invitation]
   }
 }

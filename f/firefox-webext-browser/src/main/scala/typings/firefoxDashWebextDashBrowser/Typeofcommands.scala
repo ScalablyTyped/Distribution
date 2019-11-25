@@ -32,7 +32,7 @@ object Typeofcommands {
     reset: String => js.Promise[Unit],
     update: Anon_Description => js.Promise[Unit]
   ): Typeofcommands = {
-    val __obj = js.Dynamic.literal(getAll = js.Any.fromFunction0(getAll), onCommand = onCommand, reset = js.Any.fromFunction1(reset), update = js.Any.fromFunction1(update))
+    val __obj = js.Dynamic.literal(getAll = js.Any.fromFunction0(getAll), onCommand = onCommand.asInstanceOf[js.Any], reset = js.Any.fromFunction1(reset), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[Typeofcommands]
   }

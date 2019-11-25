@@ -20,10 +20,10 @@ object PatchUserParams {
     roleType: RoleType = null
   ): PatchUserParams = {
     val __obj = js.Dynamic.literal()
-    if (mailAddress != null) __obj.updateDynamic("mailAddress")(mailAddress)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (roleType != null) __obj.updateDynamic("roleType")(roleType)
+    if (mailAddress != null) __obj.updateDynamic("mailAddress")(mailAddress.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (roleType != null) __obj.updateDynamic("roleType")(roleType.asInstanceOf[js.Any])
     __obj.asInstanceOf[PatchUserParams]
   }
 }

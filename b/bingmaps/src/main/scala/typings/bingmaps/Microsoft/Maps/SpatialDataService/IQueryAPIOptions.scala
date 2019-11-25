@@ -45,12 +45,12 @@ object IQueryAPIOptions {
     spatialFilter: ISpatialFilterOptions | IFindNearRouteOptions = null,
     top: Int | Double = null
   ): IQueryAPIOptions = {
-    val __obj = js.Dynamic.literal(queryUrl = queryUrl)
+    val __obj = js.Dynamic.literal(queryUrl = queryUrl.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (!js.isUndefined(inlineCount)) __obj.updateDynamic("inlineCount")(inlineCount)
-    if (!js.isUndefined(isStaging)) __obj.updateDynamic("isStaging")(isStaging)
-    if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy)
-    if (select != null) __obj.updateDynamic("select")(select)
+    if (!js.isUndefined(inlineCount)) __obj.updateDynamic("inlineCount")(inlineCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(isStaging)) __obj.updateDynamic("isStaging")(isStaging.asInstanceOf[js.Any])
+    if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy.asInstanceOf[js.Any])
+    if (select != null) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
     if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
     if (spatialFilter != null) __obj.updateDynamic("spatialFilter")(spatialFilter.asInstanceOf[js.Any])
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])

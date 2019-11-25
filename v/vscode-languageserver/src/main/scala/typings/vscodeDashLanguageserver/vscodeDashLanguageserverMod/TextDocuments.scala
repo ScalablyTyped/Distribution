@@ -1,12 +1,8 @@
 package typings.vscodeDashLanguageserver.vscodeDashLanguageserverMod
 
-import typings.vscodeDashJsonrpc.libEventsMod.Disposable
 import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.RequestHandler
-import typings.vscodeDashLanguageserverDashProtocol.libProtocolMod.TextDocumentSyncKind
-import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.TextDocument
 import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.TextDocumentChangeEvent
 import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.TextDocumentWillSaveEvent
-import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.TextEdit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,13 +24,15 @@ class TextDocuments () extends js.Object {
     * Returns the [TextDocumentSyncKind](#TextDocumentSyncKind) used by
     * this text document manager.
     */
-  val syncKind: TextDocumentSyncKind = js.native
+  val syncKind: typings.vscodeDashLanguageserverDashProtocol.libProtocolMod.TextDocumentSyncKind = js.native
   /**
     * Returns all text documents managed by this instance.
     *
     * @return all text documents.
     */
-  def all(): js.Array[TextDocument] = js.native
+  def all(): js.Array[
+    typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.TextDocument
+  ] = js.native
   /**
     * Returns the document for the given URI. Returns undefined if
     * the document is not mananged by this instance.
@@ -42,7 +40,9 @@ class TextDocuments () extends js.Object {
     * @param uri The text document's URI to retrieve.
     * @return the text document or `undefined`.
     */
-  def get(uri: String): js.UndefOr[TextDocument] = js.native
+  def get(uri: String): js.UndefOr[
+    typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.TextDocument
+  ] = js.native
   /**
     * Returns the URIs of all text documents managed by this instance.
     *
@@ -60,61 +60,69 @@ class TextDocuments () extends js.Object {
     * An event that fires when a text document managed by this manager
     * has been opened or the content changes.
     */
-  def onDidChangeContent(listener: js.Function1[/* e */ TextDocumentChangeEvent, _]): Disposable = js.native
-  def onDidChangeContent(listener: js.Function1[/* e */ TextDocumentChangeEvent, _], thisArgs: js.Any): Disposable = js.native
+  def onDidChangeContent(listener: js.Function1[/* e */ TextDocumentChangeEvent, _]): typings.vscodeDashJsonrpc.libEventsMod.Disposable = js.native
+  def onDidChangeContent(listener: js.Function1[/* e */ TextDocumentChangeEvent, _], thisArgs: js.Any): typings.vscodeDashJsonrpc.libEventsMod.Disposable = js.native
   def onDidChangeContent(
     listener: js.Function1[/* e */ TextDocumentChangeEvent, _],
     thisArgs: js.Any,
-    disposables: js.Array[Disposable]
-  ): Disposable = js.native
+    disposables: js.Array[typings.vscodeDashJsonrpc.libEventsMod.Disposable]
+  ): typings.vscodeDashJsonrpc.libEventsMod.Disposable = js.native
   /**
     * An event that fires when a text document managed by this manager
     * has been closed.
     */
-  def onDidClose(listener: js.Function1[/* e */ TextDocumentChangeEvent, _]): Disposable = js.native
-  def onDidClose(listener: js.Function1[/* e */ TextDocumentChangeEvent, _], thisArgs: js.Any): Disposable = js.native
+  def onDidClose(listener: js.Function1[/* e */ TextDocumentChangeEvent, _]): typings.vscodeDashJsonrpc.libEventsMod.Disposable = js.native
+  def onDidClose(listener: js.Function1[/* e */ TextDocumentChangeEvent, _], thisArgs: js.Any): typings.vscodeDashJsonrpc.libEventsMod.Disposable = js.native
   def onDidClose(
     listener: js.Function1[/* e */ TextDocumentChangeEvent, _],
     thisArgs: js.Any,
-    disposables: js.Array[Disposable]
-  ): Disposable = js.native
+    disposables: js.Array[typings.vscodeDashJsonrpc.libEventsMod.Disposable]
+  ): typings.vscodeDashJsonrpc.libEventsMod.Disposable = js.native
   /**
     * An event that fires when a text document managed by this manager
     * has been opened.
     */
-  def onDidOpen(listener: js.Function1[/* e */ TextDocumentChangeEvent, _]): Disposable = js.native
-  def onDidOpen(listener: js.Function1[/* e */ TextDocumentChangeEvent, _], thisArgs: js.Any): Disposable = js.native
+  def onDidOpen(listener: js.Function1[/* e */ TextDocumentChangeEvent, _]): typings.vscodeDashJsonrpc.libEventsMod.Disposable = js.native
+  def onDidOpen(listener: js.Function1[/* e */ TextDocumentChangeEvent, _], thisArgs: js.Any): typings.vscodeDashJsonrpc.libEventsMod.Disposable = js.native
   def onDidOpen(
     listener: js.Function1[/* e */ TextDocumentChangeEvent, _],
     thisArgs: js.Any,
-    disposables: js.Array[Disposable]
-  ): Disposable = js.native
+    disposables: js.Array[typings.vscodeDashJsonrpc.libEventsMod.Disposable]
+  ): typings.vscodeDashJsonrpc.libEventsMod.Disposable = js.native
   /**
     * An event that fires when a text document managed by this manager
     * has been saved.
     */
-  def onDidSave(listener: js.Function1[/* e */ TextDocumentChangeEvent, _]): Disposable = js.native
-  def onDidSave(listener: js.Function1[/* e */ TextDocumentChangeEvent, _], thisArgs: js.Any): Disposable = js.native
+  def onDidSave(listener: js.Function1[/* e */ TextDocumentChangeEvent, _]): typings.vscodeDashJsonrpc.libEventsMod.Disposable = js.native
+  def onDidSave(listener: js.Function1[/* e */ TextDocumentChangeEvent, _], thisArgs: js.Any): typings.vscodeDashJsonrpc.libEventsMod.Disposable = js.native
   def onDidSave(
     listener: js.Function1[/* e */ TextDocumentChangeEvent, _],
     thisArgs: js.Any,
-    disposables: js.Array[Disposable]
-  ): Disposable = js.native
+    disposables: js.Array[typings.vscodeDashJsonrpc.libEventsMod.Disposable]
+  ): typings.vscodeDashJsonrpc.libEventsMod.Disposable = js.native
   /**
     * An event that fires when a text document managed by this manager
     * will be saved.
     */
-  def onWillSave(listener: js.Function1[/* e */ TextDocumentWillSaveEvent, _]): Disposable = js.native
-  def onWillSave(listener: js.Function1[/* e */ TextDocumentWillSaveEvent, _], thisArgs: js.Any): Disposable = js.native
+  def onWillSave(listener: js.Function1[/* e */ TextDocumentWillSaveEvent, _]): typings.vscodeDashJsonrpc.libEventsMod.Disposable = js.native
+  def onWillSave(listener: js.Function1[/* e */ TextDocumentWillSaveEvent, _], thisArgs: js.Any): typings.vscodeDashJsonrpc.libEventsMod.Disposable = js.native
   def onWillSave(
     listener: js.Function1[/* e */ TextDocumentWillSaveEvent, _],
     thisArgs: js.Any,
-    disposables: js.Array[Disposable]
-  ): Disposable = js.native
+    disposables: js.Array[typings.vscodeDashJsonrpc.libEventsMod.Disposable]
+  ): typings.vscodeDashJsonrpc.libEventsMod.Disposable = js.native
   /**
     * Sets a handler that will be called if a participant wants to provide
     * edits during a text document save.
     */
-  def onWillSaveWaitUntil(handler: RequestHandler[TextDocumentWillSaveEvent, js.Array[TextEdit], Unit]): Unit = js.native
+  def onWillSaveWaitUntil(
+    handler: RequestHandler[
+      TextDocumentWillSaveEvent, 
+      js.Array[
+        typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.TextEdit
+      ], 
+      Unit
+    ]
+  ): Unit = js.native
 }
 

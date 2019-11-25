@@ -37,10 +37,10 @@ object SearchReadGroupSetsRequest {
     pageToken: String = null
   ): SearchReadGroupSetsRequest = {
     val __obj = js.Dynamic.literal()
-    if (datasetIds != null) __obj.updateDynamic("datasetIds")(datasetIds)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (datasetIds != null) __obj.updateDynamic("datasetIds")(datasetIds.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchReadGroupSetsRequest]
   }
 }

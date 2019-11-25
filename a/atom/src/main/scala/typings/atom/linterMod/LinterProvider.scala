@@ -24,7 +24,7 @@ object LinterProvider {
     name: String,
     scope: file | project
   ): LinterProvider = {
-    val __obj = js.Dynamic.literal(grammarScopes = grammarScopes, lint = js.Any.fromFunction1(lint), lintsOnChange = lintsOnChange, name = name, scope = scope.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(grammarScopes = grammarScopes.asInstanceOf[js.Any], lint = js.Any.fromFunction1(lint), lintsOnChange = lintsOnChange.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LinterProvider]
   }

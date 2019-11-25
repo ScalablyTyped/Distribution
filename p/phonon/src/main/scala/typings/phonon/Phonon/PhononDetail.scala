@@ -12,7 +12,7 @@ trait PhononDetail extends js.Object {
 object PhononDetail {
   @scala.inline
   def apply(page: String, req: js.Array[String]): PhononDetail = {
-    val __obj = js.Dynamic.literal(page = page, req = req)
+    val __obj = js.Dynamic.literal(page = page.asInstanceOf[js.Any], req = req.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PhononDetail]
   }

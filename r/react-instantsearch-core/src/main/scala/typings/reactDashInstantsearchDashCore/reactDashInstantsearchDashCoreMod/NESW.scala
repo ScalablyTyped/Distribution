@@ -13,7 +13,7 @@ trait NESW extends js.Object {
 object NESW {
   @scala.inline
   def apply(northEast: Anon_Lat, southWest: Anon_Lat): NESW = {
-    val __obj = js.Dynamic.literal(northEast = northEast, southWest = southWest)
+    val __obj = js.Dynamic.literal(northEast = northEast.asInstanceOf[js.Any], southWest = southWest.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NESW]
   }

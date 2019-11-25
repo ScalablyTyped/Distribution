@@ -31,7 +31,7 @@ object QueryParameterValues {
     propertyIsEnumerable: PropertyKey => Boolean,
     value: String | (js.Array[Date | Double | String]) | Double | Date
   ): QueryParameterValues = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[QueryParameterValues]
   }

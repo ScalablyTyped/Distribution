@@ -29,7 +29,7 @@ object Viewporter {
     ready: EventListener => Unit,
     refresh: () => Unit
   ): Viewporter = {
-    val __obj = js.Dynamic.literal(ACTIVE = ACTIVE, READY = READY, change = js.Any.fromFunction1(change), forceDetection = forceDetection, isLandscape = js.Any.fromFunction0(isLandscape), preventPageScroll = preventPageScroll, ready = js.Any.fromFunction1(ready), refresh = js.Any.fromFunction0(refresh))
+    val __obj = js.Dynamic.literal(ACTIVE = ACTIVE.asInstanceOf[js.Any], READY = READY.asInstanceOf[js.Any], change = js.Any.fromFunction1(change), forceDetection = forceDetection.asInstanceOf[js.Any], isLandscape = js.Any.fromFunction0(isLandscape), preventPageScroll = preventPageScroll.asInstanceOf[js.Any], ready = js.Any.fromFunction1(ready), refresh = js.Any.fromFunction0(refresh))
   
     __obj.asInstanceOf[Viewporter]
   }

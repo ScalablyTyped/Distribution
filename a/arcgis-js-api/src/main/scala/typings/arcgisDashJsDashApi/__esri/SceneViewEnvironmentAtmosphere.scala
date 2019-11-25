@@ -34,10 +34,10 @@ object SceneViewEnvironmentAtmosphere {
     set: (js.Function2[/* propertyName */ String, /* value */ js.Any, SceneViewEnvironmentAtmosphere]) with (js.Function1[/* props */ HashMap[_], SceneViewEnvironmentAtmosphere]) = null,
     watch: (/* path */ String | js.Array[String], /* callback */ WatchCallback, /* sync */ js.UndefOr[Boolean]) => WatchHandle = null
   ): SceneViewEnvironmentAtmosphere = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (get != null) __obj.updateDynamic("get")(js.Any.fromFunction1(get))
-    if (quality != null) __obj.updateDynamic("quality")(quality)
-    if (set != null) __obj.updateDynamic("set")(set)
+    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
+    if (set != null) __obj.updateDynamic("set")(set.asInstanceOf[js.Any])
     if (watch != null) __obj.updateDynamic("watch")(js.Any.fromFunction3(watch))
     __obj.asInstanceOf[SceneViewEnvironmentAtmosphere]
   }

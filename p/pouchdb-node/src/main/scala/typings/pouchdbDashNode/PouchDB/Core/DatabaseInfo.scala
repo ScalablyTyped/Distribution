@@ -13,7 +13,7 @@ object DatabaseInfo {
   @scala.inline
   def apply(backend_adapter: String = null): DatabaseInfo = {
     val __obj = js.Dynamic.literal()
-    if (backend_adapter != null) __obj.updateDynamic("backend_adapter")(backend_adapter)
+    if (backend_adapter != null) __obj.updateDynamic("backend_adapter")(backend_adapter.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatabaseInfo]
   }
 }

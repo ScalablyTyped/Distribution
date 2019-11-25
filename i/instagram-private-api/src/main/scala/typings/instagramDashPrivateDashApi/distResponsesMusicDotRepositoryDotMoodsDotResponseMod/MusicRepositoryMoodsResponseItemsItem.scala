@@ -11,7 +11,7 @@ trait MusicRepositoryMoodsResponseItemsItem extends js.Object {
 object MusicRepositoryMoodsResponseItemsItem {
   @scala.inline
   def apply(mood: MusicRepositoryMoodsResponseMood): MusicRepositoryMoodsResponseItemsItem = {
-    val __obj = js.Dynamic.literal(mood = mood)
+    val __obj = js.Dynamic.literal(mood = mood.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MusicRepositoryMoodsResponseItemsItem]
   }

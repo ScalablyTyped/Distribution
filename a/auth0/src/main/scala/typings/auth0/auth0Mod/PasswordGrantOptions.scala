@@ -14,9 +14,9 @@ trait PasswordGrantOptions extends js.Object {
 object PasswordGrantOptions {
   @scala.inline
   def apply(password: String, username: String, realm: String = null, scope: String = null): PasswordGrantOptions = {
-    val __obj = js.Dynamic.literal(password = password, username = username)
-    if (realm != null) __obj.updateDynamic("realm")(realm)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
+    val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
+    if (realm != null) __obj.updateDynamic("realm")(realm.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[PasswordGrantOptions]
   }
 }

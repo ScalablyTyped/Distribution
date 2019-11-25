@@ -19,8 +19,8 @@ object PageableSetSortingOptions {
     sortValue: (/* model */ TModel, /* sortKey */ String) => _ | String = null
   ): PageableSetSortingOptions[TModel] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(full)) __obj.updateDynamic("full")(full)
-    if (side != null) __obj.updateDynamic("side")(side)
+    if (!js.isUndefined(full)) __obj.updateDynamic("full")(full.asInstanceOf[js.Any])
+    if (side != null) __obj.updateDynamic("side")(side.asInstanceOf[js.Any])
     if (sortValue != null) __obj.updateDynamic("sortValue")(js.Any.fromFunction2(sortValue))
     __obj.asInstanceOf[PageableSetSortingOptions[TModel]]
   }

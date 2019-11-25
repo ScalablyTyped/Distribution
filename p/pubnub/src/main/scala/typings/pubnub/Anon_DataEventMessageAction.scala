@@ -13,7 +13,7 @@ trait Anon_DataEventMessageAction extends js.Object {
 object Anon_DataEventMessageAction {
   @scala.inline
   def apply(data: MessageAction, event: String): Anon_DataEventMessageAction = {
-    val __obj = js.Dynamic.literal(data = data, event = event)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DataEventMessageAction]
   }

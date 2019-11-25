@@ -27,9 +27,9 @@ object GetBluetoothAdapterStateSuccess {
     errMsg: String = null
   ): GetBluetoothAdapterStateSuccess = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(available)) __obj.updateDynamic("available")(available)
-    if (!js.isUndefined(discovering)) __obj.updateDynamic("discovering")(discovering)
-    if (errMsg != null) __obj.updateDynamic("errMsg")(errMsg)
+    if (!js.isUndefined(available)) __obj.updateDynamic("available")(available.asInstanceOf[js.Any])
+    if (!js.isUndefined(discovering)) __obj.updateDynamic("discovering")(discovering.asInstanceOf[js.Any])
+    if (errMsg != null) __obj.updateDynamic("errMsg")(errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBluetoothAdapterStateSuccess]
   }
 }

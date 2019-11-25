@@ -13,7 +13,7 @@ trait Anon_AllMe extends js.Object {
 object Anon_AllMe {
   @scala.inline
   def apply(all: Double, me: Double, none: Double): Anon_AllMe = {
-    val __obj = js.Dynamic.literal(all = all, me = me, none = none)
+    val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any], me = me.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AllMe]
   }

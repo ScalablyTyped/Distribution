@@ -15,7 +15,7 @@ object GoogleActionsV2OrdersFulfillmentInfo {
   @scala.inline
   def apply(deliveryTime: String = null): GoogleActionsV2OrdersFulfillmentInfo = {
     val __obj = js.Dynamic.literal()
-    if (deliveryTime != null) __obj.updateDynamic("deliveryTime")(deliveryTime)
+    if (deliveryTime != null) __obj.updateDynamic("deliveryTime")(deliveryTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2OrdersFulfillmentInfo]
   }
 }

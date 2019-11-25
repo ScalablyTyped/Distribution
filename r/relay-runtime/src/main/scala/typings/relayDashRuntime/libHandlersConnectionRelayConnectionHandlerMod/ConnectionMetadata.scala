@@ -21,10 +21,10 @@ object ConnectionMetadata {
     path: js.Array[String] = null
   ): ConnectionMetadata = {
     val __obj = js.Dynamic.literal()
-    if (count != null) __obj.updateDynamic("count")(count)
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor)
-    if (direction != null) __obj.updateDynamic("direction")(direction)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionMetadata]
   }
 }

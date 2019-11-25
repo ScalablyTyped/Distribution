@@ -12,7 +12,7 @@ trait Anon_AtMobiles extends js.Object {
 object Anon_AtMobiles {
   @scala.inline
   def apply(atMobiles: js.Array[String], isAtAll: Boolean): Anon_AtMobiles = {
-    val __obj = js.Dynamic.literal(atMobiles = atMobiles, isAtAll = isAtAll)
+    val __obj = js.Dynamic.literal(atMobiles = atMobiles.asInstanceOf[js.Any], isAtAll = isAtAll.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AtMobiles]
   }

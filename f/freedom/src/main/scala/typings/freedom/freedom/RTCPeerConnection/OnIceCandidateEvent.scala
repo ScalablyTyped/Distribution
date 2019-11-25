@@ -11,7 +11,7 @@ trait OnIceCandidateEvent extends js.Object {
 object OnIceCandidateEvent {
   @scala.inline
   def apply(candidate: RTCIceCandidate): OnIceCandidateEvent = {
-    val __obj = js.Dynamic.literal(candidate = candidate)
+    val __obj = js.Dynamic.literal(candidate = candidate.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OnIceCandidateEvent]
   }

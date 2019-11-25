@@ -27,10 +27,10 @@ object PushNotificationOptions {
     val __obj = js.Dynamic.literal()
     if (onNotification != null) __obj.updateDynamic("onNotification")(js.Any.fromFunction1(onNotification))
     if (onRegister != null) __obj.updateDynamic("onRegister")(js.Any.fromFunction1(onRegister))
-    if (permissions != null) __obj.updateDynamic("permissions")(permissions)
-    if (!js.isUndefined(popInitialNotification)) __obj.updateDynamic("popInitialNotification")(popInitialNotification)
-    if (!js.isUndefined(requestPermissions)) __obj.updateDynamic("requestPermissions")(requestPermissions)
-    if (senderID != null) __obj.updateDynamic("senderID")(senderID)
+    if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
+    if (!js.isUndefined(popInitialNotification)) __obj.updateDynamic("popInitialNotification")(popInitialNotification.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestPermissions)) __obj.updateDynamic("requestPermissions")(requestPermissions.asInstanceOf[js.Any])
+    if (senderID != null) __obj.updateDynamic("senderID")(senderID.asInstanceOf[js.Any])
     __obj.asInstanceOf[PushNotificationOptions]
   }
 }

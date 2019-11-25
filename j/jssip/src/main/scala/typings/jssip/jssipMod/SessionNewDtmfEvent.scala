@@ -14,7 +14,7 @@ trait SessionNewDtmfEvent extends js.Object {
 object SessionNewDtmfEvent {
   @scala.inline
   def apply(dtmf: DTMF, originator: String, request: IncomingRequest | OutgoingRequest): SessionNewDtmfEvent = {
-    val __obj = js.Dynamic.literal(dtmf = dtmf, originator = originator, request = request.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dtmf = dtmf.asInstanceOf[js.Any], originator = originator.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SessionNewDtmfEvent]
   }

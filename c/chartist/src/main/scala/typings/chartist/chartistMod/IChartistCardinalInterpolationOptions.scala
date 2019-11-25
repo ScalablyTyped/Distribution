@@ -12,7 +12,7 @@ object IChartistCardinalInterpolationOptions {
   @scala.inline
   def apply(fillHoles: js.UndefOr[Boolean] = js.undefined, tension: Int | Double = null): IChartistCardinalInterpolationOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(fillHoles)) __obj.updateDynamic("fillHoles")(fillHoles)
+    if (!js.isUndefined(fillHoles)) __obj.updateDynamic("fillHoles")(fillHoles.asInstanceOf[js.Any])
     if (tension != null) __obj.updateDynamic("tension")(tension.asInstanceOf[js.Any])
     __obj.asInstanceOf[IChartistCardinalInterpolationOptions]
   }

@@ -28,15 +28,15 @@ object Item {
     title: String = null,
     vGap: Anon_BottomTop = null
   ): Item = {
-    val __obj = js.Dynamic.literal(h = h, src = src, w = w)
-    if (bounds != null) __obj.updateDynamic("bounds")(bounds)
+    val __obj = js.Dynamic.literal(h = h.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], w = w.asInstanceOf[js.Any])
+    if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
     if (fitRatio != null) __obj.updateDynamic("fitRatio")(fitRatio.asInstanceOf[js.Any])
-    if (initialPosition != null) __obj.updateDynamic("initialPosition")(initialPosition)
+    if (initialPosition != null) __obj.updateDynamic("initialPosition")(initialPosition.asInstanceOf[js.Any])
     if (initialZoomLevel != null) __obj.updateDynamic("initialZoomLevel")(initialZoomLevel.asInstanceOf[js.Any])
-    if (!js.isUndefined(loadError)) __obj.updateDynamic("loadError")(loadError)
-    if (msrc != null) __obj.updateDynamic("msrc")(msrc)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (vGap != null) __obj.updateDynamic("vGap")(vGap)
+    if (!js.isUndefined(loadError)) __obj.updateDynamic("loadError")(loadError.asInstanceOf[js.Any])
+    if (msrc != null) __obj.updateDynamic("msrc")(msrc.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (vGap != null) __obj.updateDynamic("vGap")(vGap.asInstanceOf[js.Any])
     __obj.asInstanceOf[Item]
   }
 }

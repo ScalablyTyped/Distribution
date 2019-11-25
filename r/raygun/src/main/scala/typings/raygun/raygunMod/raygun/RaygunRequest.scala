@@ -28,14 +28,14 @@ object RaygunRequest {
     queryString: KeyValueObject = null
   ): RaygunRequest = {
     val __obj = js.Dynamic.literal()
-    if (form != null) __obj.updateDynamic("form")(form)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (hostname != null) __obj.updateDynamic("hostname")(hostname)
-    if (ip != null) __obj.updateDynamic("ip")(ip)
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (queryString != null) __obj.updateDynamic("queryString")(queryString)
+    if (form != null) __obj.updateDynamic("form")(form.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
+    if (ip != null) __obj.updateDynamic("ip")(ip.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (queryString != null) __obj.updateDynamic("queryString")(queryString.asInstanceOf[js.Any])
     __obj.asInstanceOf[RaygunRequest]
   }
 }

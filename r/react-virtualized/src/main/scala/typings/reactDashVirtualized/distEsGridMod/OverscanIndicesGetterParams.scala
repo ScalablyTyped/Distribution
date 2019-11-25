@@ -23,7 +23,7 @@ object OverscanIndicesGetterParams {
     stopIndex: Double,
     direction: SCROLL_DIRECTION_HORIZONTAL | SCROLL_DIRECTION_VERTICAL = null
   ): OverscanIndicesGetterParams = {
-    val __obj = js.Dynamic.literal(cellCount = cellCount, overscanCellsCount = overscanCellsCount, scrollDirection = scrollDirection.asInstanceOf[js.Any], startIndex = startIndex, stopIndex = stopIndex)
+    val __obj = js.Dynamic.literal(cellCount = cellCount.asInstanceOf[js.Any], overscanCellsCount = overscanCellsCount.asInstanceOf[js.Any], scrollDirection = scrollDirection.asInstanceOf[js.Any], startIndex = startIndex.asInstanceOf[js.Any], stopIndex = stopIndex.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     __obj.asInstanceOf[OverscanIndicesGetterParams]
   }

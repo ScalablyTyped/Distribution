@@ -34,11 +34,11 @@ object Anon_ApiKey {
     scope: String = null
   ): Anon_ApiKey = {
     val __obj = js.Dynamic.literal()
-    if (apiKey != null) __obj.updateDynamic("apiKey")(apiKey)
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId)
-    if (discoveryDocs != null) __obj.updateDynamic("discoveryDocs")(discoveryDocs)
-    if (hosted_domain != null) __obj.updateDynamic("hosted_domain")(hosted_domain)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (apiKey != null) __obj.updateDynamic("apiKey")(apiKey.asInstanceOf[js.Any])
+    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
+    if (discoveryDocs != null) __obj.updateDynamic("discoveryDocs")(discoveryDocs.asInstanceOf[js.Any])
+    if (hosted_domain != null) __obj.updateDynamic("hosted_domain")(hosted_domain.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ApiKey]
   }
 }

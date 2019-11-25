@@ -26,13 +26,13 @@ object ContainersStyle {
     tl: CSSProperties = null,
     tr: CSSProperties = null
   ): ContainersStyle = {
-    val __obj = js.Dynamic.literal(DefaultStyle = DefaultStyle)
-    if (bc != null) __obj.updateDynamic("bc")(bc)
-    if (bl != null) __obj.updateDynamic("bl")(bl)
-    if (br != null) __obj.updateDynamic("br")(br)
-    if (tc != null) __obj.updateDynamic("tc")(tc)
-    if (tl != null) __obj.updateDynamic("tl")(tl)
-    if (tr != null) __obj.updateDynamic("tr")(tr)
+    val __obj = js.Dynamic.literal(DefaultStyle = DefaultStyle.asInstanceOf[js.Any])
+    if (bc != null) __obj.updateDynamic("bc")(bc.asInstanceOf[js.Any])
+    if (bl != null) __obj.updateDynamic("bl")(bl.asInstanceOf[js.Any])
+    if (br != null) __obj.updateDynamic("br")(br.asInstanceOf[js.Any])
+    if (tc != null) __obj.updateDynamic("tc")(tc.asInstanceOf[js.Any])
+    if (tl != null) __obj.updateDynamic("tl")(tl.asInstanceOf[js.Any])
+    if (tr != null) __obj.updateDynamic("tr")(tr.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContainersStyle]
   }
 }

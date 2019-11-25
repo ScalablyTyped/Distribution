@@ -22,10 +22,10 @@ object PricePerBuyer {
   @scala.inline
   def apply(auctionTier: String = null, billedBuyer: Buyer = null, buyer: Buyer = null, price: Price = null): PricePerBuyer = {
     val __obj = js.Dynamic.literal()
-    if (auctionTier != null) __obj.updateDynamic("auctionTier")(auctionTier)
-    if (billedBuyer != null) __obj.updateDynamic("billedBuyer")(billedBuyer)
-    if (buyer != null) __obj.updateDynamic("buyer")(buyer)
-    if (price != null) __obj.updateDynamic("price")(price)
+    if (auctionTier != null) __obj.updateDynamic("auctionTier")(auctionTier.asInstanceOf[js.Any])
+    if (billedBuyer != null) __obj.updateDynamic("billedBuyer")(billedBuyer.asInstanceOf[js.Any])
+    if (buyer != null) __obj.updateDynamic("buyer")(buyer.asInstanceOf[js.Any])
+    if (price != null) __obj.updateDynamic("price")(price.asInstanceOf[js.Any])
     __obj.asInstanceOf[PricePerBuyer]
   }
 }

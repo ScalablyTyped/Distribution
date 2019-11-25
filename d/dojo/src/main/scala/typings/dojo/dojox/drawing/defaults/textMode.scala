@@ -25,7 +25,7 @@ trait textMode extends js.Object {
 object textMode {
   @scala.inline
   def apply(create: js.Object, edit: js.Object): textMode = {
-    val __obj = js.Dynamic.literal(create = create, edit = edit)
+    val __obj = js.Dynamic.literal(create = create.asInstanceOf[js.Any], edit = edit.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[textMode]
   }

@@ -14,7 +14,7 @@ trait Anon_BackgroundColorBorderRadiusHeight extends js.Object {
 object Anon_BackgroundColorBorderRadiusHeight {
   @scala.inline
   def apply(backgroundColor: String, borderRadius: Double, height: Double, width: Double): Anon_BackgroundColorBorderRadiusHeight = {
-    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, borderRadius = borderRadius, height = height, width = width)
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], borderRadius = borderRadius.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BackgroundColorBorderRadiusHeight]
   }

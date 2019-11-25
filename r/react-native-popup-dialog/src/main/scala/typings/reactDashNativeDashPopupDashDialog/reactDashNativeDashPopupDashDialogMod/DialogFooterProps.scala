@@ -15,7 +15,7 @@ object DialogFooterProps {
   @scala.inline
   def apply(bordered: js.UndefOr[Boolean] = js.undefined, style: StyleProp[ViewStyle] = null): DialogFooterProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bordered)) __obj.updateDynamic("bordered")(bordered)
+    if (!js.isUndefined(bordered)) __obj.updateDynamic("bordered")(bordered.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogFooterProps]
   }

@@ -30,9 +30,9 @@ object AmpAttachment {
   ): AmpAttachment = {
     val __obj = js.Dynamic.literal()
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
-    if (href != null) __obj.updateDynamic("href")(href)
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (raw != null) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
     __obj.asInstanceOf[AmpAttachment]

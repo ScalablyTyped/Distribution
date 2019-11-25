@@ -25,7 +25,7 @@ object Anon_Accuracy {
     speed: Double,
     timestamp: Double
   ): Anon_Accuracy = {
-    val __obj = js.Dynamic.literal(accuracy = accuracy, altitude = altitude, isFromMockProvider = isFromMockProvider, latitude = latitude, longitude = longitude, speed = speed, timestamp = timestamp)
+    val __obj = js.Dynamic.literal(accuracy = accuracy.asInstanceOf[js.Any], altitude = altitude.asInstanceOf[js.Any], isFromMockProvider = isFromMockProvider.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], speed = speed.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Accuracy]
   }

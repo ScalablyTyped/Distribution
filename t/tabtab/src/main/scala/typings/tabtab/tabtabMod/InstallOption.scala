@@ -12,7 +12,7 @@ trait InstallOption extends js.Object {
 object InstallOption {
   @scala.inline
   def apply(completer: String, name: String): InstallOption = {
-    val __obj = js.Dynamic.literal(completer = completer, name = name)
+    val __obj = js.Dynamic.literal(completer = completer.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InstallOption]
   }

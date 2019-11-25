@@ -45,11 +45,11 @@ object Anon_CompleteFailSendMessageImg {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
-    if (sendMessageImg != null) __obj.updateDynamic("sendMessageImg")(sendMessageImg)
-    if (sendMessagePath != null) __obj.updateDynamic("sendMessagePath")(sendMessagePath)
-    if (sendMessageTitle != null) __obj.updateDynamic("sendMessageTitle")(sendMessageTitle)
-    if (sessionFrom != null) __obj.updateDynamic("sessionFrom")(sessionFrom)
-    if (!js.isUndefined(showMessageCard)) __obj.updateDynamic("showMessageCard")(showMessageCard)
+    if (sendMessageImg != null) __obj.updateDynamic("sendMessageImg")(sendMessageImg.asInstanceOf[js.Any])
+    if (sendMessagePath != null) __obj.updateDynamic("sendMessagePath")(sendMessagePath.asInstanceOf[js.Any])
+    if (sendMessageTitle != null) __obj.updateDynamic("sendMessageTitle")(sendMessageTitle.asInstanceOf[js.Any])
+    if (sessionFrom != null) __obj.updateDynamic("sessionFrom")(sessionFrom.asInstanceOf[js.Any])
+    if (!js.isUndefined(showMessageCard)) __obj.updateDynamic("showMessageCard")(showMessageCard.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))
     __obj.asInstanceOf[Anon_CompleteFailSendMessageImg]
   }

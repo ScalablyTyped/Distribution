@@ -16,7 +16,7 @@ trait ClusterMetadataResponse extends js.Object {
 object ClusterMetadataResponse {
   @scala.inline
   def apply(clusterMetadata: Anon_ControllerId, metadata: StringDictionary[NumberDictionary[Anon_Isr]]): ClusterMetadataResponse = {
-    val __obj = js.Dynamic.literal(clusterMetadata = clusterMetadata, metadata = metadata)
+    val __obj = js.Dynamic.literal(clusterMetadata = clusterMetadata.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ClusterMetadataResponse]
   }

@@ -18,7 +18,7 @@ trait Anon_112 extends js.Object {
 object Anon_112 {
   @scala.inline
   def apply(CMD: `BACKSLASHu001B##QPIX`, DEFAULT: `12`, MAX: `24`, MIN: `1`): Anon_112 = {
-    val __obj = js.Dynamic.literal(CMD = CMD, DEFAULT = DEFAULT, MAX = MAX, MIN = MIN)
+    val __obj = js.Dynamic.literal(CMD = CMD.asInstanceOf[js.Any], DEFAULT = DEFAULT.asInstanceOf[js.Any], MAX = MAX.asInstanceOf[js.Any], MIN = MIN.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_112]
   }

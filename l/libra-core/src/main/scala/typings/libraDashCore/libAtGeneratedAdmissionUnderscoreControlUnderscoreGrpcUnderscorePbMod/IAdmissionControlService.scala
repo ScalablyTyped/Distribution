@@ -16,7 +16,7 @@ object IAdmissionControlService {
     submitTransaction: IAdmissionControlService_ISubmitTransaction,
     updateToLatestLedger: IAdmissionControlService_IUpdateToLatestLedger
   ): IAdmissionControlService = {
-    val __obj = js.Dynamic.literal(submitTransaction = submitTransaction, updateToLatestLedger = updateToLatestLedger)
+    val __obj = js.Dynamic.literal(submitTransaction = submitTransaction.asInstanceOf[js.Any], updateToLatestLedger = updateToLatestLedger.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IAdmissionControlService]
   }

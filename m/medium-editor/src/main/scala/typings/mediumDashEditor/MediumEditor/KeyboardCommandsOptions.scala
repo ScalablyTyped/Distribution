@@ -12,7 +12,7 @@ object KeyboardCommandsOptions {
   @scala.inline
   def apply(commands: js.Array[KeyboardCommandOptions] = null): KeyboardCommandsOptions = {
     val __obj = js.Dynamic.literal()
-    if (commands != null) __obj.updateDynamic("commands")(commands)
+    if (commands != null) __obj.updateDynamic("commands")(commands.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyboardCommandsOptions]
   }
 }

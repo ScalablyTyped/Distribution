@@ -26,9 +26,9 @@ object GistsCreateParams {
     description: String = null,
     public: js.UndefOr[Boolean] = js.undefined
   ): GistsCreateParams = {
-    val __obj = js.Dynamic.literal(files = files)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (!js.isUndefined(public)) __obj.updateDynamic("public")(public)
+    val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(public)) __obj.updateDynamic("public")(public.asInstanceOf[js.Any])
     __obj.asInstanceOf[GistsCreateParams]
   }
 }

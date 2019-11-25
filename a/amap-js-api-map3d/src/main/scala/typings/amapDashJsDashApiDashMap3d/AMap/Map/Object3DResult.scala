@@ -16,8 +16,8 @@ trait Object3DResult extends js.Object {
 object Object3DResult {
   @scala.inline
   def apply(distance: Double, index: Double, `object`: Object3D, point: Vector3): Object3DResult = {
-    val __obj = js.Dynamic.literal(distance = distance, index = index, point = point)
-    __obj.updateDynamic("object")(`object`)
+    val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], point = point.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Object3DResult]
   }
 }

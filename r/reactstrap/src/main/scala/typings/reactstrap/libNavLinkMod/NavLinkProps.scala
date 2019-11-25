@@ -33,23 +33,17 @@ object NavLinkProps {
     ClassAttributes: ClassAttributes[HTMLAnchorElement] = null,
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
     active: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
     cssModule: CSSModule = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    href: String = null,
     innerRef: Ref[HTMLAnchorElement] = null,
     onClick: MouseEvent[_, NativeMouseEvent] => Unit = null,
     tag: String | ReactType[_] = null
   ): NavLinkProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (href != null) __obj.updateDynamic("href")(href)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule.asInstanceOf[js.Any])
     if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])

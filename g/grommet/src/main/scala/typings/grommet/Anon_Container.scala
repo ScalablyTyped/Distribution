@@ -13,8 +13,8 @@ object Anon_Container {
   @scala.inline
   def apply(container: Anon_Align = null, text: Anon_Margin = null): Anon_Container = {
     val __obj = js.Dynamic.literal()
-    if (container != null) __obj.updateDynamic("container")(container)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Container]
   }
 }

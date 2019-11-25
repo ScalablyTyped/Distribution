@@ -21,9 +21,9 @@ object BucketOptions {
     linearBuckets: Linear = null
   ): BucketOptions = {
     val __obj = js.Dynamic.literal()
-    if (explicitBuckets != null) __obj.updateDynamic("explicitBuckets")(explicitBuckets)
-    if (exponentialBuckets != null) __obj.updateDynamic("exponentialBuckets")(exponentialBuckets)
-    if (linearBuckets != null) __obj.updateDynamic("linearBuckets")(linearBuckets)
+    if (explicitBuckets != null) __obj.updateDynamic("explicitBuckets")(explicitBuckets.asInstanceOf[js.Any])
+    if (exponentialBuckets != null) __obj.updateDynamic("exponentialBuckets")(exponentialBuckets.asInstanceOf[js.Any])
+    if (linearBuckets != null) __obj.updateDynamic("linearBuckets")(linearBuckets.asInstanceOf[js.Any])
     __obj.asInstanceOf[BucketOptions]
   }
 }

@@ -15,7 +15,7 @@ object _KeyUnavailableExceptionDetails {
   @scala.inline
   def apply(message: String = null): _KeyUnavailableExceptionDetails = {
     val __obj = js.Dynamic.literal()
-    if (message != null) __obj.updateDynamic("message")(message)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[_KeyUnavailableExceptionDetails]
   }
 }

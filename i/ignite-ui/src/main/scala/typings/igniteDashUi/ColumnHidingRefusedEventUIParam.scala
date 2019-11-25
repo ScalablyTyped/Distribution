@@ -19,8 +19,8 @@ object ColumnHidingRefusedEventUIParam {
   @scala.inline
   def apply(columnKeys: js.Array[_] = null, owner: js.Any = null): ColumnHidingRefusedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (columnKeys != null) __obj.updateDynamic("columnKeys")(columnKeys)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (columnKeys != null) __obj.updateDynamic("columnKeys")(columnKeys.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnHidingRefusedEventUIParam]
   }
 }

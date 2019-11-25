@@ -18,8 +18,8 @@ trait NotificationMessage extends Message {
 object NotificationMessage {
   @scala.inline
   def apply(jsonrpc: String, method: String, params: js.Any = null): NotificationMessage = {
-    val __obj = js.Dynamic.literal(jsonrpc = jsonrpc, method = method)
-    if (params != null) __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(jsonrpc = jsonrpc.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationMessage]
   }
 }

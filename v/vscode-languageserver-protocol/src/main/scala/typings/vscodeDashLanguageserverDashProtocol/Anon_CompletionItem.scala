@@ -31,10 +31,10 @@ object Anon_CompletionItem {
     dynamicRegistration: js.UndefOr[Boolean] = js.undefined
   ): Anon_CompletionItem = {
     val __obj = js.Dynamic.literal()
-    if (completionItem != null) __obj.updateDynamic("completionItem")(completionItem)
-    if (completionItemKind != null) __obj.updateDynamic("completionItemKind")(completionItemKind)
-    if (!js.isUndefined(contextSupport)) __obj.updateDynamic("contextSupport")(contextSupport)
-    if (!js.isUndefined(dynamicRegistration)) __obj.updateDynamic("dynamicRegistration")(dynamicRegistration)
+    if (completionItem != null) __obj.updateDynamic("completionItem")(completionItem.asInstanceOf[js.Any])
+    if (completionItemKind != null) __obj.updateDynamic("completionItemKind")(completionItemKind.asInstanceOf[js.Any])
+    if (!js.isUndefined(contextSupport)) __obj.updateDynamic("contextSupport")(contextSupport.asInstanceOf[js.Any])
+    if (!js.isUndefined(dynamicRegistration)) __obj.updateDynamic("dynamicRegistration")(dynamicRegistration.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CompletionItem]
   }
 }

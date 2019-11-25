@@ -19,9 +19,9 @@ object ParserOptions {
     tracer: js.Any = null
   ): ParserOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (startRule != null) __obj.updateDynamic("startRule")(startRule)
-    if (tracer != null) __obj.updateDynamic("tracer")(tracer)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (startRule != null) __obj.updateDynamic("startRule")(startRule.asInstanceOf[js.Any])
+    if (tracer != null) __obj.updateDynamic("tracer")(tracer.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParserOptions]
   }
 }

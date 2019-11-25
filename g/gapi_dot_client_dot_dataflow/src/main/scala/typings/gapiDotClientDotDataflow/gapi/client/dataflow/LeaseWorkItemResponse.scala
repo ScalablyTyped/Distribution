@@ -13,7 +13,7 @@ object LeaseWorkItemResponse {
   @scala.inline
   def apply(workItems: js.Array[WorkItem] = null): LeaseWorkItemResponse = {
     val __obj = js.Dynamic.literal()
-    if (workItems != null) __obj.updateDynamic("workItems")(workItems)
+    if (workItems != null) __obj.updateDynamic("workItems")(workItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[LeaseWorkItemResponse]
   }
 }

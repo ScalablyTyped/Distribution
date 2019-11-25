@@ -155,14 +155,14 @@ object Anon_BorderColorBorderColor0 {
     shadowOffsetY: Int | Double = null
   ): Anon_BorderColorBorderColor0 = {
     val __obj = js.Dynamic.literal()
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
-    if (borderColor0 != null) __obj.updateDynamic("borderColor0")(borderColor0)
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
+    if (borderColor0 != null) __obj.updateDynamic("borderColor0")(borderColor0.asInstanceOf[js.Any])
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (color0 != null) __obj.updateDynamic("color0")(color0)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (color0 != null) __obj.updateDynamic("color0")(color0.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (shadowBlur != null) __obj.updateDynamic("shadowBlur")(shadowBlur.asInstanceOf[js.Any])
-    if (shadowColor != null) __obj.updateDynamic("shadowColor")(shadowColor)
+    if (shadowColor != null) __obj.updateDynamic("shadowColor")(shadowColor.asInstanceOf[js.Any])
     if (shadowOffsetX != null) __obj.updateDynamic("shadowOffsetX")(shadowOffsetX.asInstanceOf[js.Any])
     if (shadowOffsetY != null) __obj.updateDynamic("shadowOffsetY")(shadowOffsetY.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BorderColorBorderColor0]

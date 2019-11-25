@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("RangeError")
 @js.native
 class RangeError ()
-  extends typings.std.RangeError {
+  extends typings.std.Error {
   def this(message: java.lang.String) = this()
   /* CompleteClass */
   override var message: java.lang.String = js.native

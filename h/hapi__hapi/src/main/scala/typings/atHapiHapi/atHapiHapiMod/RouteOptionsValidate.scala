@@ -92,7 +92,7 @@ object RouteOptionsValidate {
     state: RouteOptionsResponseSchema = null
   ): RouteOptionsValidate = {
     val __obj = js.Dynamic.literal()
-    if (errorFields != null) __obj.updateDynamic("errorFields")(errorFields)
+    if (errorFields != null) __obj.updateDynamic("errorFields")(errorFields.asInstanceOf[js.Any])
     if (failAction != null) __obj.updateDynamic("failAction")(failAction.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])

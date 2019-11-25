@@ -30,8 +30,8 @@ object LocatorLocationToAddressParams {
     propertyIsEnumerable: PropertyKey => Boolean,
     locationType: String = null
   ): LocatorLocationToAddressParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), location = location, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (locationType != null) __obj.updateDynamic("locationType")(locationType)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), location = location.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (locationType != null) __obj.updateDynamic("locationType")(locationType.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocatorLocationToAddressParams]
   }
 }

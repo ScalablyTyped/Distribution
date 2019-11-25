@@ -32,10 +32,10 @@ object ModalDialogMovingEventUIParam {
     position: js.Any = null
   ): ModalDialogMovingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (modalDialogElement != null) __obj.updateDynamic("modalDialogElement")(modalDialogElement)
-    if (originalPosition != null) __obj.updateDynamic("originalPosition")(originalPosition)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (position != null) __obj.updateDynamic("position")(position)
+    if (modalDialogElement != null) __obj.updateDynamic("modalDialogElement")(modalDialogElement.asInstanceOf[js.Any])
+    if (originalPosition != null) __obj.updateDynamic("originalPosition")(originalPosition.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModalDialogMovingEventUIParam]
   }
 }

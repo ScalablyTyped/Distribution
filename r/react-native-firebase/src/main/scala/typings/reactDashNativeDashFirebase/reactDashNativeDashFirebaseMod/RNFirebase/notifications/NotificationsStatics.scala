@@ -16,7 +16,7 @@ trait NotificationsStatics extends js.Object {
 object NotificationsStatics {
   @scala.inline
   def apply(Android: Anon_Action, Notification: Instantiable0[Notification]): NotificationsStatics = {
-    val __obj = js.Dynamic.literal(Android = Android, Notification = Notification)
+    val __obj = js.Dynamic.literal(Android = Android.asInstanceOf[js.Any], Notification = Notification.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NotificationsStatics]
   }

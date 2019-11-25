@@ -1,7 +1,6 @@
 package typings.postmark.postmarkMod.Models
 
 import typings.postmark.distClientModelsClientSupportingTypesMod.Hash
-import typings.postmark.distClientModelsMessageSupportingTypesMod.LinkTrackingOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +20,7 @@ class Message protected ()
     ReplyTo: js.UndefOr[String],
     Tag: js.UndefOr[String],
     TrackOpens: js.UndefOr[Boolean],
-    TrackLinks: js.UndefOr[LinkTrackingOptions],
+    TrackLinks: js.UndefOr[typings.postmark.distClientModelsMessageSupportingTypesMod.LinkTrackingOptions],
     Headers: js.UndefOr[js.Array[typings.postmark.distClientModelsMessageSupportingTypesMod.Header]],
     Attachments: js.UndefOr[js.Array[typings.postmark.distClientModelsMessageSupportingTypesMod.Attachment]],
     Metadata: js.UndefOr[Hash[String]]

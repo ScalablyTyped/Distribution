@@ -40,14 +40,14 @@ object AdSlot {
     width: String = null
   ): AdSlot = {
     val __obj = js.Dynamic.literal()
-    if (comment != null) __obj.updateDynamic("comment")(comment)
-    if (compatibility != null) __obj.updateDynamic("compatibility")(compatibility)
-    if (height != null) __obj.updateDynamic("height")(height)
-    if (linkedPlacementId != null) __obj.updateDynamic("linkedPlacementId")(linkedPlacementId)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (paymentSourceType != null) __obj.updateDynamic("paymentSourceType")(paymentSourceType)
-    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary)
-    if (width != null) __obj.updateDynamic("width")(width)
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (compatibility != null) __obj.updateDynamic("compatibility")(compatibility.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (linkedPlacementId != null) __obj.updateDynamic("linkedPlacementId")(linkedPlacementId.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (paymentSourceType != null) __obj.updateDynamic("paymentSourceType")(paymentSourceType.asInstanceOf[js.Any])
+    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdSlot]
   }
 }

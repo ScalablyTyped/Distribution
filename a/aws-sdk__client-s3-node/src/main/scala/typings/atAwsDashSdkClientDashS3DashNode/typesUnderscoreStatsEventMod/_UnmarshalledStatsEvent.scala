@@ -17,7 +17,7 @@ object _UnmarshalledStatsEvent {
   @scala.inline
   def apply(Details: _UnmarshalledStats = null): _UnmarshalledStatsEvent = {
     val __obj = js.Dynamic.literal()
-    if (Details != null) __obj.updateDynamic("Details")(Details)
+    if (Details != null) __obj.updateDynamic("Details")(Details.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledStatsEvent]
   }
 }

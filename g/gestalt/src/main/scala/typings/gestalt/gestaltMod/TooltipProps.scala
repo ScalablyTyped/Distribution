@@ -33,10 +33,10 @@ object TooltipProps {
     positionRelativeToAnchor: js.UndefOr[Boolean] = js.undefined,
     size: xs | sm | md | lg | xl = null
   ): TooltipProps = {
-    val __obj = js.Dynamic.literal(anchor = anchor, onDismiss = js.Any.fromFunction0(onDismiss))
+    val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], onDismiss = js.Any.fromFunction0(onDismiss))
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (idealDirection != null) __obj.updateDynamic("idealDirection")(idealDirection.asInstanceOf[js.Any])
-    if (!js.isUndefined(positionRelativeToAnchor)) __obj.updateDynamic("positionRelativeToAnchor")(positionRelativeToAnchor)
+    if (!js.isUndefined(positionRelativeToAnchor)) __obj.updateDynamic("positionRelativeToAnchor")(positionRelativeToAnchor.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipProps]
   }

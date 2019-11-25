@@ -12,7 +12,7 @@ object ParallelConfig {
   @scala.inline
   def apply(stopTogether: js.UndefOr[Boolean] = js.undefined): ParallelConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(stopTogether)) __obj.updateDynamic("stopTogether")(stopTogether)
+    if (!js.isUndefined(stopTogether)) __obj.updateDynamic("stopTogether")(stopTogether.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParallelConfig]
   }
 }

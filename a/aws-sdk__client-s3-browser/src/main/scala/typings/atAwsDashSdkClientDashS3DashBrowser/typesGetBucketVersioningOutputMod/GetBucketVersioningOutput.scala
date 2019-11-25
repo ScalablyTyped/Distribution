@@ -30,7 +30,7 @@ object GetBucketVersioningOutput {
     MFADelete: Enabled | Disabled | String = null,
     Status: Enabled | Suspended | String = null
   ): GetBucketVersioningOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     if (MFADelete != null) __obj.updateDynamic("MFADelete")(MFADelete.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketVersioningOutput]

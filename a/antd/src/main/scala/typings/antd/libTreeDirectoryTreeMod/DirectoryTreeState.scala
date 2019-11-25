@@ -13,8 +13,8 @@ object DirectoryTreeState {
   @scala.inline
   def apply(expandedKeys: js.Array[String] = null, selectedKeys: js.Array[String] = null): DirectoryTreeState = {
     val __obj = js.Dynamic.literal()
-    if (expandedKeys != null) __obj.updateDynamic("expandedKeys")(expandedKeys)
-    if (selectedKeys != null) __obj.updateDynamic("selectedKeys")(selectedKeys)
+    if (expandedKeys != null) __obj.updateDynamic("expandedKeys")(expandedKeys.asInstanceOf[js.Any])
+    if (selectedKeys != null) __obj.updateDynamic("selectedKeys")(selectedKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectoryTreeState]
   }
 }

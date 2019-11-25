@@ -14,8 +14,8 @@ trait Anon_Level extends js.Object {
 object Anon_Level {
   @scala.inline
   def apply(stream: WritableStream, level: Level = null): Anon_Level = {
-    val __obj = js.Dynamic.literal(stream = stream)
-    if (level != null) __obj.updateDynamic("level")(level)
+    val __obj = js.Dynamic.literal(stream = stream.asInstanceOf[js.Any])
+    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Level]
   }
 }

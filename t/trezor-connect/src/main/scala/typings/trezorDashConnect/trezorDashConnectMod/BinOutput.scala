@@ -12,7 +12,7 @@ trait BinOutput extends js.Object {
 object BinOutput {
   @scala.inline
   def apply(amount: Double, script_pubkey: String): BinOutput = {
-    val __obj = js.Dynamic.literal(amount = amount, script_pubkey = script_pubkey)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], script_pubkey = script_pubkey.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BinOutput]
   }

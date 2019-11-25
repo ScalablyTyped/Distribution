@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait VideoSourceType extends js.Object
 
+object VideoSourceType {
+  @scala.inline
+  def album: typings.weappDashApi.weappDashApiStrings.album = this.cast("album")
+  @scala.inline
+  def camera: typings.weappDashApi.weappDashApiStrings.camera = this.cast("camera")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

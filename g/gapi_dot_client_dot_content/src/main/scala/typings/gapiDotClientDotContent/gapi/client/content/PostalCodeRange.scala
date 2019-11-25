@@ -23,8 +23,8 @@ object PostalCodeRange {
   @scala.inline
   def apply(postalCodeRangeBegin: String = null, postalCodeRangeEnd: String = null): PostalCodeRange = {
     val __obj = js.Dynamic.literal()
-    if (postalCodeRangeBegin != null) __obj.updateDynamic("postalCodeRangeBegin")(postalCodeRangeBegin)
-    if (postalCodeRangeEnd != null) __obj.updateDynamic("postalCodeRangeEnd")(postalCodeRangeEnd)
+    if (postalCodeRangeBegin != null) __obj.updateDynamic("postalCodeRangeBegin")(postalCodeRangeBegin.asInstanceOf[js.Any])
+    if (postalCodeRangeEnd != null) __obj.updateDynamic("postalCodeRangeEnd")(postalCodeRangeEnd.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostalCodeRange]
   }
 }

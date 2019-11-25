@@ -24,7 +24,7 @@ object Anon_Matcher {
     val __obj = js.Dynamic.literal()
     if (matcher != null) __obj.updateDynamic("matcher")(js.Any.fromFunction1(matcher))
     if (pathTransformer != null) __obj.updateDynamic("pathTransformer")(js.Any.fromFunction1(pathTransformer))
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Matcher]
   }
 }

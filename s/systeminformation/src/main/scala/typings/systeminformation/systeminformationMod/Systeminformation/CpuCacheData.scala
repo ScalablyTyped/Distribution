@@ -14,7 +14,7 @@ trait CpuCacheData extends js.Object {
 object CpuCacheData {
   @scala.inline
   def apply(l1d: Double, l1i: Double, l2: Double, l3: Double): CpuCacheData = {
-    val __obj = js.Dynamic.literal(l1d = l1d, l1i = l1i, l2 = l2, l3 = l3)
+    val __obj = js.Dynamic.literal(l1d = l1d.asInstanceOf[js.Any], l1i = l1i.asInstanceOf[js.Any], l2 = l2.asInstanceOf[js.Any], l3 = l3.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CpuCacheData]
   }

@@ -19,7 +19,7 @@ trait _meta extends js.Object {
 object _meta {
   @scala.inline
   def apply(bases: js.Array[_]): _meta = {
-    val __obj = js.Dynamic.literal(bases = bases)
+    val __obj = js.Dynamic.literal(bases = bases.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_meta]
   }

@@ -22,8 +22,8 @@ trait DeleteBranchOutput extends OutputTypesUnion {
 object DeleteBranchOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, deletedBranch: _UnmarshalledBranchInfo = null): DeleteBranchOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (deletedBranch != null) __obj.updateDynamic("deletedBranch")(deletedBranch)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (deletedBranch != null) __obj.updateDynamic("deletedBranch")(deletedBranch.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteBranchOutput]
   }
 }

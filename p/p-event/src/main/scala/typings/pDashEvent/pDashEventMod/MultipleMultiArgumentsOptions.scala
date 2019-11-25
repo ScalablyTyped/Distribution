@@ -20,10 +20,10 @@ object MultipleMultiArgumentsOptions {
     resolveImmediately: js.UndefOr[Boolean] = js.undefined,
     timeout: Int | Double = null
   ): MultipleMultiArgumentsOptions[EmittedType] = {
-    val __obj = js.Dynamic.literal(count = count, multiArgs = multiArgs)
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], multiArgs = multiArgs.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
-    if (rejectionEvents != null) __obj.updateDynamic("rejectionEvents")(rejectionEvents)
-    if (!js.isUndefined(resolveImmediately)) __obj.updateDynamic("resolveImmediately")(resolveImmediately)
+    if (rejectionEvents != null) __obj.updateDynamic("rejectionEvents")(rejectionEvents.asInstanceOf[js.Any])
+    if (!js.isUndefined(resolveImmediately)) __obj.updateDynamic("resolveImmediately")(resolveImmediately.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultipleMultiArgumentsOptions[EmittedType]]
   }

@@ -23,9 +23,9 @@ object FilterMembersLoadedEventUIParam {
   @scala.inline
   def apply(filterMembers: js.Array[_] = null, parent: String = null, rootFilterMembers: js.Array[_] = null): FilterMembersLoadedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (filterMembers != null) __obj.updateDynamic("filterMembers")(filterMembers)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
-    if (rootFilterMembers != null) __obj.updateDynamic("rootFilterMembers")(rootFilterMembers)
+    if (filterMembers != null) __obj.updateDynamic("filterMembers")(filterMembers.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (rootFilterMembers != null) __obj.updateDynamic("rootFilterMembers")(rootFilterMembers.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterMembersLoadedEventUIParam]
   }
 }

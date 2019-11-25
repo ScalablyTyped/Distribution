@@ -114,8 +114,8 @@ object PlaceSearchResult {
     types: js.Array[PlaceType1 | PlaceType2],
     vicinity: String = null
   ): PlaceSearchResult = {
-    val __obj = js.Dynamic.literal(alt_ids = alt_ids, formatted_address = formatted_address, geometry = geometry, icon = icon, name = name, opening_hours = opening_hours, permanently_closed = permanently_closed, photos = photos, place_id = place_id, plus_code = plus_code, price_level = price_level, rating = rating, scope = scope, types = types)
-    if (vicinity != null) __obj.updateDynamic("vicinity")(vicinity)
+    val __obj = js.Dynamic.literal(alt_ids = alt_ids.asInstanceOf[js.Any], formatted_address = formatted_address.asInstanceOf[js.Any], geometry = geometry.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], opening_hours = opening_hours.asInstanceOf[js.Any], permanently_closed = permanently_closed.asInstanceOf[js.Any], photos = photos.asInstanceOf[js.Any], place_id = place_id.asInstanceOf[js.Any], plus_code = plus_code.asInstanceOf[js.Any], price_level = price_level.asInstanceOf[js.Any], rating = rating.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
+    if (vicinity != null) __obj.updateDynamic("vicinity")(vicinity.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaceSearchResult]
   }
 }

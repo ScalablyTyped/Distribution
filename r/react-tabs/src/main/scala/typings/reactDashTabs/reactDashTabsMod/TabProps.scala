@@ -25,10 +25,10 @@ object TabProps {
   ): TabProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (disabledClassName != null) __obj.updateDynamic("disabledClassName")(disabledClassName)
-    if (selectedClassName != null) __obj.updateDynamic("selectedClassName")(selectedClassName)
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (disabledClassName != null) __obj.updateDynamic("disabledClassName")(disabledClassName.asInstanceOf[js.Any])
+    if (selectedClassName != null) __obj.updateDynamic("selectedClassName")(selectedClassName.asInstanceOf[js.Any])
+    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabProps]
   }
 }

@@ -42,20 +42,20 @@ object RevealOptions {
     root_element: String = null
   ): RevealOptions = {
     val __obj = js.Dynamic.literal()
-    if (animation != null) __obj.updateDynamic("animation")(animation)
+    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (animation_speed != null) __obj.updateDynamic("animation_speed")(animation_speed.asInstanceOf[js.Any])
-    if (bg != null) __obj.updateDynamic("bg")(bg)
-    if (bg_class != null) __obj.updateDynamic("bg_class")(bg_class)
+    if (bg != null) __obj.updateDynamic("bg")(bg.asInstanceOf[js.Any])
+    if (bg_class != null) __obj.updateDynamic("bg_class")(bg_class.asInstanceOf[js.Any])
     if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction0(close))
-    if (!js.isUndefined(close_on_background_click)) __obj.updateDynamic("close_on_background_click")(close_on_background_click)
+    if (!js.isUndefined(close_on_background_click)) __obj.updateDynamic("close_on_background_click")(close_on_background_click.asInstanceOf[js.Any])
     if (closed != null) __obj.updateDynamic("closed")(js.Any.fromFunction0(closed))
-    if (css != null) __obj.updateDynamic("css")(css)
-    if (dismiss_modal_class != null) __obj.updateDynamic("dismiss_modal_class")(dismiss_modal_class)
-    if (!js.isUndefined(multiple_opened)) __obj.updateDynamic("multiple_opened")(multiple_opened)
+    if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
+    if (dismiss_modal_class != null) __obj.updateDynamic("dismiss_modal_class")(dismiss_modal_class.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiple_opened)) __obj.updateDynamic("multiple_opened")(multiple_opened.asInstanceOf[js.Any])
     if (on_ajax_error != null) __obj.updateDynamic("on_ajax_error")(js.Any.fromFunction0(on_ajax_error))
     if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction0(open))
     if (opened != null) __obj.updateDynamic("opened")(js.Any.fromFunction0(opened))
-    if (root_element != null) __obj.updateDynamic("root_element")(root_element)
+    if (root_element != null) __obj.updateDynamic("root_element")(root_element.asInstanceOf[js.Any])
     __obj.asInstanceOf[RevealOptions]
   }
 }

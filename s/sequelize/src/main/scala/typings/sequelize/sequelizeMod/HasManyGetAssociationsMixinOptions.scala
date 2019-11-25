@@ -27,9 +27,9 @@ object HasManyGetAssociationsMixinOptions {
   @scala.inline
   def apply(include: IncludeOptions = null, scope: String | Boolean = null, where: AnyWhereOptions = null): HasManyGetAssociationsMixinOptions = {
     val __obj = js.Dynamic.literal()
-    if (include != null) __obj.updateDynamic("include")(include)
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    if (where != null) __obj.updateDynamic("where")(where)
+    if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])
     __obj.asInstanceOf[HasManyGetAssociationsMixinOptions]
   }
 }

@@ -15,7 +15,7 @@ object Anon_App {
   def apply(app: String | js.Array[String] = null, wait: js.UndefOr[Boolean] = js.undefined): Anon_App = {
     val __obj = js.Dynamic.literal()
     if (app != null) __obj.updateDynamic("app")(app.asInstanceOf[js.Any])
-    if (!js.isUndefined(wait)) __obj.updateDynamic("wait")(wait)
+    if (!js.isUndefined(wait)) __obj.updateDynamic("wait")(wait.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_App]
   }
 }

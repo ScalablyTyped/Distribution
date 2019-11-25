@@ -18,9 +18,9 @@ object Anon_OnlyLeaves {
     onlyTypes: js.Array[String] = null
   ): Anon_OnlyLeaves = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(onlyLeaves)) __obj.updateDynamic("onlyLeaves")(onlyLeaves)
-    if (!js.isUndefined(onlyRoots)) __obj.updateDynamic("onlyRoots")(onlyRoots)
-    if (onlyTypes != null) __obj.updateDynamic("onlyTypes")(onlyTypes)
+    if (!js.isUndefined(onlyLeaves)) __obj.updateDynamic("onlyLeaves")(onlyLeaves.asInstanceOf[js.Any])
+    if (!js.isUndefined(onlyRoots)) __obj.updateDynamic("onlyRoots")(onlyRoots.asInstanceOf[js.Any])
+    if (onlyTypes != null) __obj.updateDynamic("onlyTypes")(onlyTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_OnlyLeaves]
   }
 }

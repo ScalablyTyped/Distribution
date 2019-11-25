@@ -36,18 +36,18 @@ object Sheet {
     rowGroups: js.Array[DimensionGroup] = null
   ): Sheet = {
     val __obj = js.Dynamic.literal()
-    if (bandedRanges != null) __obj.updateDynamic("bandedRanges")(bandedRanges)
-    if (basicFilter != null) __obj.updateDynamic("basicFilter")(basicFilter)
-    if (charts != null) __obj.updateDynamic("charts")(charts)
-    if (columnGroups != null) __obj.updateDynamic("columnGroups")(columnGroups)
-    if (conditionalFormats != null) __obj.updateDynamic("conditionalFormats")(conditionalFormats)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (developerMetadata != null) __obj.updateDynamic("developerMetadata")(developerMetadata)
-    if (filterViews != null) __obj.updateDynamic("filterViews")(filterViews)
-    if (merges != null) __obj.updateDynamic("merges")(merges)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (protectedRanges != null) __obj.updateDynamic("protectedRanges")(protectedRanges)
-    if (rowGroups != null) __obj.updateDynamic("rowGroups")(rowGroups)
+    if (bandedRanges != null) __obj.updateDynamic("bandedRanges")(bandedRanges.asInstanceOf[js.Any])
+    if (basicFilter != null) __obj.updateDynamic("basicFilter")(basicFilter.asInstanceOf[js.Any])
+    if (charts != null) __obj.updateDynamic("charts")(charts.asInstanceOf[js.Any])
+    if (columnGroups != null) __obj.updateDynamic("columnGroups")(columnGroups.asInstanceOf[js.Any])
+    if (conditionalFormats != null) __obj.updateDynamic("conditionalFormats")(conditionalFormats.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (developerMetadata != null) __obj.updateDynamic("developerMetadata")(developerMetadata.asInstanceOf[js.Any])
+    if (filterViews != null) __obj.updateDynamic("filterViews")(filterViews.asInstanceOf[js.Any])
+    if (merges != null) __obj.updateDynamic("merges")(merges.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (protectedRanges != null) __obj.updateDynamic("protectedRanges")(protectedRanges.asInstanceOf[js.Any])
+    if (rowGroups != null) __obj.updateDynamic("rowGroups")(rowGroups.asInstanceOf[js.Any])
     __obj.asInstanceOf[Sheet]
   }
 }

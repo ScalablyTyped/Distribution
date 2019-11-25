@@ -25,9 +25,9 @@ object Event {
     bgColor: String = null,
     rrule: String = null
   ): Event = {
-    val __obj = js.Dynamic.literal(end = end, id = id, resourceId = resourceId, start = start, title = title)
-    if (bgColor != null) __obj.updateDynamic("bgColor")(bgColor)
-    if (rrule != null) __obj.updateDynamic("rrule")(rrule)
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceId = resourceId.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    if (bgColor != null) __obj.updateDynamic("bgColor")(bgColor.asInstanceOf[js.Any])
+    if (rrule != null) __obj.updateDynamic("rrule")(rrule.asInstanceOf[js.Any])
     __obj.asInstanceOf[Event]
   }
 }

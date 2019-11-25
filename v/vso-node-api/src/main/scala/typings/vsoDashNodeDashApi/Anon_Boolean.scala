@@ -25,7 +25,7 @@ object Anon_Boolean {
     string: Double,
     stringList: Double
   ): Anon_Boolean = {
-    val __obj = js.Dynamic.literal(boolean = boolean, branchFilter = branchFilter, multiLine = multiLine, pickList = pickList, radio = radio, string = string, stringList = stringList)
+    val __obj = js.Dynamic.literal(boolean = boolean.asInstanceOf[js.Any], branchFilter = branchFilter.asInstanceOf[js.Any], multiLine = multiLine.asInstanceOf[js.Any], pickList = pickList.asInstanceOf[js.Any], radio = radio.asInstanceOf[js.Any], string = string.asInstanceOf[js.Any], stringList = stringList.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Boolean]
   }

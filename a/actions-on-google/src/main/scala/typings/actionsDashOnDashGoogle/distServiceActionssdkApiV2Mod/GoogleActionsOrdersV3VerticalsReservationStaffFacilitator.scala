@@ -19,8 +19,8 @@ object GoogleActionsOrdersV3VerticalsReservationStaffFacilitator {
   @scala.inline
   def apply(image: GoogleActionsV2UiElementsImage = null, name: String = null): GoogleActionsOrdersV3VerticalsReservationStaffFacilitator = {
     val __obj = js.Dynamic.literal()
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsOrdersV3VerticalsReservationStaffFacilitator]
   }
 }

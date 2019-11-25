@@ -17,7 +17,7 @@ object CategoriesOptions {
   def apply(limit: Int | Double = null, model: String = null): CategoriesOptions = {
     val __obj = js.Dynamic.literal()
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (model != null) __obj.updateDynamic("model")(model)
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     __obj.asInstanceOf[CategoriesOptions]
   }
 }

@@ -25,7 +25,7 @@ object IExpandedMonarchLanguageRule {
   def apply(action: IMonarchLanguageAction = null, include: String = null, regex: String | RegExp = null): IExpandedMonarchLanguageRule = {
     val __obj = js.Dynamic.literal()
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (include != null) __obj.updateDynamic("include")(include)
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     if (regex != null) __obj.updateDynamic("regex")(regex.asInstanceOf[js.Any])
     __obj.asInstanceOf[IExpandedMonarchLanguageRule]
   }

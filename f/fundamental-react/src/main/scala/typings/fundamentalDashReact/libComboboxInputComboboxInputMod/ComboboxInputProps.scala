@@ -30,14 +30,14 @@ object ComboboxInputProps {
     placeholder: String = null,
     popoverProps: js.Object = null
   ): ComboboxInputProps = {
-    val __obj = js.Dynamic.literal(menu = menu)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (buttonProps != null) __obj.updateDynamic("buttonProps")(buttonProps)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact)
-    if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps)
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
-    if (popoverProps != null) __obj.updateDynamic("popoverProps")(popoverProps)
+    val __obj = js.Dynamic.literal(menu = menu.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (buttonProps != null) __obj.updateDynamic("buttonProps")(buttonProps.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
+    if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps.asInstanceOf[js.Any])
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
+    if (popoverProps != null) __obj.updateDynamic("popoverProps")(popoverProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComboboxInputProps]
   }
 }

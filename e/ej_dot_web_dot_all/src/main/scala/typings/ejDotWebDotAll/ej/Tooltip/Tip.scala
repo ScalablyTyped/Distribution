@@ -17,8 +17,8 @@ object Tip {
   @scala.inline
   def apply(adjust: TipAdjust = null, size: TipSize = null): Tip = {
     val __obj = js.Dynamic.literal()
-    if (adjust != null) __obj.updateDynamic("adjust")(adjust)
-    if (size != null) __obj.updateDynamic("size")(size)
+    if (adjust != null) __obj.updateDynamic("adjust")(adjust.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tip]
   }
 }

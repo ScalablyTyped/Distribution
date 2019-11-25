@@ -15,8 +15,8 @@ trait ToneAnalysis extends js.Object {
 object ToneAnalysis {
   @scala.inline
   def apply(document_tone: DocumentAnalysis, sentences_tone: js.Array[SentenceAnalysis] = null): ToneAnalysis = {
-    val __obj = js.Dynamic.literal(document_tone = document_tone)
-    if (sentences_tone != null) __obj.updateDynamic("sentences_tone")(sentences_tone)
+    val __obj = js.Dynamic.literal(document_tone = document_tone.asInstanceOf[js.Any])
+    if (sentences_tone != null) __obj.updateDynamic("sentences_tone")(sentences_tone.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToneAnalysis]
   }
 }

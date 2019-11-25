@@ -15,8 +15,8 @@ trait EventsDeleteParameters extends js.Object {
 object EventsDeleteParameters {
   @scala.inline
   def apply(calendarId: String, eventId: String, sendNotifications: js.UndefOr[Boolean] = js.undefined): EventsDeleteParameters = {
-    val __obj = js.Dynamic.literal(calendarId = calendarId, eventId = eventId)
-    if (!js.isUndefined(sendNotifications)) __obj.updateDynamic("sendNotifications")(sendNotifications)
+    val __obj = js.Dynamic.literal(calendarId = calendarId.asInstanceOf[js.Any], eventId = eventId.asInstanceOf[js.Any])
+    if (!js.isUndefined(sendNotifications)) __obj.updateDynamic("sendNotifications")(sendNotifications.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventsDeleteParameters]
   }
 }

@@ -15,7 +15,7 @@ object ITabsState {
   @scala.inline
   def apply(indicatorWrapperStyle: CSSProperties = null, selectedTabId: TabId = null): ITabsState = {
     val __obj = js.Dynamic.literal()
-    if (indicatorWrapperStyle != null) __obj.updateDynamic("indicatorWrapperStyle")(indicatorWrapperStyle)
+    if (indicatorWrapperStyle != null) __obj.updateDynamic("indicatorWrapperStyle")(indicatorWrapperStyle.asInstanceOf[js.Any])
     if (selectedTabId != null) __obj.updateDynamic("selectedTabId")(selectedTabId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITabsState]
   }

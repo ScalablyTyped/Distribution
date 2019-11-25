@@ -37,10 +37,10 @@ object MessageText {
   @scala.inline
   def apply(`type`: text, html: String | Boolean = null, text: String = null, textAsHtml: String = null): MessageText = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (textAsHtml != null) __obj.updateDynamic("textAsHtml")(textAsHtml)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (textAsHtml != null) __obj.updateDynamic("textAsHtml")(textAsHtml.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageText]
   }
 }

@@ -21,9 +21,9 @@ object Anon_ErrorCharStart {
     errorLength: Int | Double = null,
     text: String = null
   ): Anon_ErrorCharStart = {
-    val __obj = js.Dynamic.literal(errorCharStart = errorCharStart, lineIndex = lineIndex, lineNumber = lineNumber)
+    val __obj = js.Dynamic.literal(errorCharStart = errorCharStart.asInstanceOf[js.Any], lineIndex = lineIndex.asInstanceOf[js.Any], lineNumber = lineNumber.asInstanceOf[js.Any])
     if (errorLength != null) __obj.updateDynamic("errorLength")(errorLength.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ErrorCharStart]
   }
 }

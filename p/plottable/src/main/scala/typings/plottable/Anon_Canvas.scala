@@ -14,7 +14,7 @@ trait Anon_Canvas extends js.Object {
 object Anon_Canvas {
   @scala.inline
   def apply(canvas: canvas, svg: svg): Anon_Canvas = {
-    val __obj = js.Dynamic.literal(canvas = canvas, svg = svg)
+    val __obj = js.Dynamic.literal(canvas = canvas.asInstanceOf[js.Any], svg = svg.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Canvas]
   }

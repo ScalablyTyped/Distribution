@@ -15,9 +15,9 @@ trait CommandHelpSchemaFootnoteLink extends CommandHelpSchemaFootnote {
 object CommandHelpSchemaFootnoteLink {
   @scala.inline
   def apply(id: String | Double, `type`: link, url: String, shortUrl: String = null): CommandHelpSchemaFootnoteLink = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], url = url)
-    __obj.updateDynamic("type")(`type`)
-    if (shortUrl != null) __obj.updateDynamic("shortUrl")(shortUrl)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (shortUrl != null) __obj.updateDynamic("shortUrl")(shortUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommandHelpSchemaFootnoteLink]
   }
 }

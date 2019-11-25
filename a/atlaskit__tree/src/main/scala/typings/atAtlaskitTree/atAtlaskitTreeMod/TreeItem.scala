@@ -23,11 +23,11 @@ object TreeItem {
     isChildrenLoading: js.UndefOr[Boolean] = js.undefined,
     isExpanded: js.UndefOr[Boolean] = js.undefined
   ): TreeItem = {
-    val __obj = js.Dynamic.literal(children = children, id = id)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (!js.isUndefined(hasChildren)) __obj.updateDynamic("hasChildren")(hasChildren)
-    if (!js.isUndefined(isChildrenLoading)) __obj.updateDynamic("isChildrenLoading")(isChildrenLoading)
-    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasChildren)) __obj.updateDynamic("hasChildren")(hasChildren.asInstanceOf[js.Any])
+    if (!js.isUndefined(isChildrenLoading)) __obj.updateDynamic("isChildrenLoading")(isChildrenLoading.asInstanceOf[js.Any])
+    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeItem]
   }
 }

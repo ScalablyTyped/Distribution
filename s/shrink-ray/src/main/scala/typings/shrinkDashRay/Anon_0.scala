@@ -47,7 +47,7 @@ object Anon_0 {
   ): Anon_0 = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], memLevel = memLevel.asInstanceOf[js.Any])
     if (chunkSize != null) __obj.updateDynamic("chunkSize")(chunkSize.asInstanceOf[js.Any])
-    if (dictionary != null) __obj.updateDynamic("dictionary")(dictionary)
+    if (dictionary != null) __obj.updateDynamic("dictionary")(dictionary.asInstanceOf[js.Any])
     if (finishFlush != null) __obj.updateDynamic("finishFlush")(finishFlush.asInstanceOf[js.Any])
     if (flush != null) __obj.updateDynamic("flush")(flush.asInstanceOf[js.Any])
     if (strategy != null) __obj.updateDynamic("strategy")(strategy.asInstanceOf[js.Any])

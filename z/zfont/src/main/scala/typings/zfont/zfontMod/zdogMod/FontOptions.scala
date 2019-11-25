@@ -16,7 +16,7 @@ trait FontOptions extends js.Object {
 object FontOptions {
   @scala.inline
   def apply(src: String): FontOptions = {
-    val __obj = js.Dynamic.literal(src = src)
+    val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FontOptions]
   }

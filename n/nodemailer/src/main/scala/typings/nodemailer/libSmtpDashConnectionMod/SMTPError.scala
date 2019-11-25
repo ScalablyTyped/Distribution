@@ -27,14 +27,14 @@ object SMTPError {
     syscall: String = null
   ): SMTPError = {
     val __obj = js.Dynamic.literal()
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (command != null) __obj.updateDynamic("command")(command)
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (command != null) __obj.updateDynamic("command")(command.asInstanceOf[js.Any])
     if (errno != null) __obj.updateDynamic("errno")(errno.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (response != null) __obj.updateDynamic("response")(response)
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
     if (responseCode != null) __obj.updateDynamic("responseCode")(responseCode.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack)
-    if (syscall != null) __obj.updateDynamic("syscall")(syscall)
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
+    if (syscall != null) __obj.updateDynamic("syscall")(syscall.asInstanceOf[js.Any])
     __obj.asInstanceOf[SMTPError]
   }
 }

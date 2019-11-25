@@ -34,11 +34,11 @@ object ScheduleInformation {
     workingHours: WorkingHours = null
   ): ScheduleInformation = {
     val __obj = js.Dynamic.literal()
-    if (availabilityView != null) __obj.updateDynamic("availabilityView")(availabilityView)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (scheduleId != null) __obj.updateDynamic("scheduleId")(scheduleId)
-    if (scheduleItems != null) __obj.updateDynamic("scheduleItems")(scheduleItems)
-    if (workingHours != null) __obj.updateDynamic("workingHours")(workingHours)
+    if (availabilityView != null) __obj.updateDynamic("availabilityView")(availabilityView.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (scheduleId != null) __obj.updateDynamic("scheduleId")(scheduleId.asInstanceOf[js.Any])
+    if (scheduleItems != null) __obj.updateDynamic("scheduleItems")(scheduleItems.asInstanceOf[js.Any])
+    if (workingHours != null) __obj.updateDynamic("workingHours")(workingHours.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScheduleInformation]
   }
 }

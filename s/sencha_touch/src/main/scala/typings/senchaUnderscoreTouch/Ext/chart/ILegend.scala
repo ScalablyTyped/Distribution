@@ -81,25 +81,15 @@ object ILegend {
   @scala.inline
   def apply(
     IDataView: typings.senchaUnderscoreTouch.Ext.dataview.IDataView = null,
-    baseCls: java.lang.String = null,
-    disableSelection: js.UndefOr[Boolean] = js.undefined,
-    docked: java.lang.String = null,
-    getBaseCls: () => java.lang.String = null,
     getDisableSelection: () => Boolean = null,
-    getDocked: () => java.lang.String = null,
     getHorizontalHeight: () => Double = null,
     getInline: () => Boolean = null,
     getItemTpl: () => Array = null,
     getPadding: () => Double = null,
     getToggleable: () => Boolean = null,
     getVerticalWidth: () => Double = null,
-    `inline`: js.Any = null,
-    itemTpl: js.Any = null,
-    padding: js.Any = null,
     position: java.lang.String = null,
-    setBaseCls: /* baseCls */ js.UndefOr[java.lang.String] => Unit = null,
     setDisableSelection: /* disableSelection */ js.UndefOr[Boolean] => Unit = null,
-    setDocked: /* docked */ js.UndefOr[java.lang.String] => Unit = null,
     setHorizontalHeight: /* horizontalHeight */ js.UndefOr[Double] => Unit = null,
     setInline: /* inline */ js.UndefOr[Boolean] => Unit = null,
     setItemTpl: /* itemTpl */ js.UndefOr[Array] => Unit = null,
@@ -109,33 +99,23 @@ object ILegend {
     toggleable: js.UndefOr[Boolean] = js.undefined
   ): ILegend = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IDataView)
-    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
-    if (!js.isUndefined(disableSelection)) __obj.updateDynamic("disableSelection")(disableSelection)
-    if (docked != null) __obj.updateDynamic("docked")(docked)
-    if (getBaseCls != null) __obj.updateDynamic("getBaseCls")(js.Any.fromFunction0(getBaseCls))
+    if (IDataView != null) js.Dynamic.global.Object.assign(__obj, IDataView)
     if (getDisableSelection != null) __obj.updateDynamic("getDisableSelection")(js.Any.fromFunction0(getDisableSelection))
-    if (getDocked != null) __obj.updateDynamic("getDocked")(js.Any.fromFunction0(getDocked))
     if (getHorizontalHeight != null) __obj.updateDynamic("getHorizontalHeight")(js.Any.fromFunction0(getHorizontalHeight))
     if (getInline != null) __obj.updateDynamic("getInline")(js.Any.fromFunction0(getInline))
     if (getItemTpl != null) __obj.updateDynamic("getItemTpl")(js.Any.fromFunction0(getItemTpl))
     if (getPadding != null) __obj.updateDynamic("getPadding")(js.Any.fromFunction0(getPadding))
     if (getToggleable != null) __obj.updateDynamic("getToggleable")(js.Any.fromFunction0(getToggleable))
     if (getVerticalWidth != null) __obj.updateDynamic("getVerticalWidth")(js.Any.fromFunction0(getVerticalWidth))
-    if (`inline` != null) __obj.updateDynamic("inline")(`inline`)
-    if (itemTpl != null) __obj.updateDynamic("itemTpl")(itemTpl)
-    if (padding != null) __obj.updateDynamic("padding")(padding)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (setBaseCls != null) __obj.updateDynamic("setBaseCls")(js.Any.fromFunction1(setBaseCls))
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (setDisableSelection != null) __obj.updateDynamic("setDisableSelection")(js.Any.fromFunction1(setDisableSelection))
-    if (setDocked != null) __obj.updateDynamic("setDocked")(js.Any.fromFunction1(setDocked))
     if (setHorizontalHeight != null) __obj.updateDynamic("setHorizontalHeight")(js.Any.fromFunction1(setHorizontalHeight))
     if (setInline != null) __obj.updateDynamic("setInline")(js.Any.fromFunction1(setInline))
     if (setItemTpl != null) __obj.updateDynamic("setItemTpl")(js.Any.fromFunction1(setItemTpl))
     if (setPadding != null) __obj.updateDynamic("setPadding")(js.Any.fromFunction1(setPadding))
     if (setToggleable != null) __obj.updateDynamic("setToggleable")(js.Any.fromFunction1(setToggleable))
     if (setVerticalWidth != null) __obj.updateDynamic("setVerticalWidth")(js.Any.fromFunction1(setVerticalWidth))
-    if (!js.isUndefined(toggleable)) __obj.updateDynamic("toggleable")(toggleable)
+    if (!js.isUndefined(toggleable)) __obj.updateDynamic("toggleable")(toggleable.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILegend]
   }
 }

@@ -14,7 +14,7 @@ trait Anon_ColorsLevelsSyslogConfigSetColors extends js.Object {
 object Anon_ColorsLevelsSyslogConfigSetColors {
   @scala.inline
   def apply(colors: SyslogConfigSetColors, levels: SyslogConfigSetLevels): Anon_ColorsLevelsSyslogConfigSetColors = {
-    val __obj = js.Dynamic.literal(colors = colors, levels = levels)
+    val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any], levels = levels.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ColorsLevelsSyslogConfigSetColors]
   }

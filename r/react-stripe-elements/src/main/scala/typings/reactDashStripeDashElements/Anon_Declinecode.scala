@@ -12,7 +12,7 @@ object Anon_Declinecode {
   @scala.inline
   def apply(decline_code: String = null): Anon_Declinecode = {
     val __obj = js.Dynamic.literal()
-    if (decline_code != null) __obj.updateDynamic("decline_code")(decline_code)
+    if (decline_code != null) __obj.updateDynamic("decline_code")(decline_code.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Declinecode]
   }
 }

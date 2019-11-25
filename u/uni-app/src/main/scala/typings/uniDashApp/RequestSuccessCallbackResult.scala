@@ -23,8 +23,8 @@ object RequestSuccessCallbackResult {
   @scala.inline
   def apply(data: String = null, header: js.Any = null, statusCode: Int | Double = null): RequestSuccessCallbackResult = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (header != null) __obj.updateDynamic("header")(header)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestSuccessCallbackResult]
   }

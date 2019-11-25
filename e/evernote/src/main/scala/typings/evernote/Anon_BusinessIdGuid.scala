@@ -35,16 +35,16 @@ object Anon_BusinessIdGuid {
   ): Anon_BusinessIdGuid = {
     val __obj = js.Dynamic.literal()
     if (businessId != null) __obj.updateDynamic("businessId")(businessId.asInstanceOf[js.Any])
-    if (guid != null) __obj.updateDynamic("guid")(guid)
-    if (noteStoreUrl != null) __obj.updateDynamic("noteStoreUrl")(noteStoreUrl)
-    if (shardId != null) __obj.updateDynamic("shardId")(shardId)
-    if (shareKey != null) __obj.updateDynamic("shareKey")(shareKey)
-    if (shareName != null) __obj.updateDynamic("shareName")(shareName)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    if (guid != null) __obj.updateDynamic("guid")(guid.asInstanceOf[js.Any])
+    if (noteStoreUrl != null) __obj.updateDynamic("noteStoreUrl")(noteStoreUrl.asInstanceOf[js.Any])
+    if (shardId != null) __obj.updateDynamic("shardId")(shardId.asInstanceOf[js.Any])
+    if (shareKey != null) __obj.updateDynamic("shareKey")(shareKey.asInstanceOf[js.Any])
+    if (shareName != null) __obj.updateDynamic("shareName")(shareName.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     if (updateSequenceNum != null) __obj.updateDynamic("updateSequenceNum")(updateSequenceNum.asInstanceOf[js.Any])
-    if (uri != null) __obj.updateDynamic("uri")(uri)
-    if (username != null) __obj.updateDynamic("username")(username)
-    if (webApiUrlPrefix != null) __obj.updateDynamic("webApiUrlPrefix")(webApiUrlPrefix)
+    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
+    if (webApiUrlPrefix != null) __obj.updateDynamic("webApiUrlPrefix")(webApiUrlPrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BusinessIdGuid]
   }
 }

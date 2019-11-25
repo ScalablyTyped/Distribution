@@ -12,8 +12,8 @@ trait Animate extends js.Object {
 object Animate {
   @scala.inline
   def apply(args: js.Array[_], `type`: String): Animate = {
-    val __obj = js.Dynamic.literal(args = args)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Animate]
   }
 }

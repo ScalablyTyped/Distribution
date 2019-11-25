@@ -19,8 +19,8 @@ object RowEditDialogBeforeOpenEventUIParam {
   @scala.inline
   def apply(dialogElement: js.Any = null, owner: js.Any = null): RowEditDialogBeforeOpenEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (dialogElement != null) __obj.updateDynamic("dialogElement")(dialogElement)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (dialogElement != null) __obj.updateDynamic("dialogElement")(dialogElement.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowEditDialogBeforeOpenEventUIParam]
   }
 }

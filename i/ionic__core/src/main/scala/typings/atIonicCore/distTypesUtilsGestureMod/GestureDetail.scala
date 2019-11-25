@@ -38,9 +38,9 @@ object GestureDetail {
     velocityY: Double,
     data: js.Any = null
   ): GestureDetail = {
-    val __obj = js.Dynamic.literal(currentX = currentX, currentY = currentY, deltaX = deltaX, deltaY = deltaY, event = event, startTimeStamp = startTimeStamp, startX = startX, startY = startY, timeStamp = timeStamp, velocityX = velocityX, velocityY = velocityY)
-    __obj.updateDynamic("type")(`type`)
-    if (data != null) __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(currentX = currentX.asInstanceOf[js.Any], currentY = currentY.asInstanceOf[js.Any], deltaX = deltaX.asInstanceOf[js.Any], deltaY = deltaY.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], startTimeStamp = startTimeStamp.asInstanceOf[js.Any], startX = startX.asInstanceOf[js.Any], startY = startY.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], velocityX = velocityX.asInstanceOf[js.Any], velocityY = velocityY.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     __obj.asInstanceOf[GestureDetail]
   }
 }

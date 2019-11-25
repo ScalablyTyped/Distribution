@@ -13,7 +13,7 @@ trait SurfaceState extends js.Object {
 object SurfaceState {
   @scala.inline
   def apply(debug: Boolean, ready: Boolean, rebootId: Double): SurfaceState = {
-    val __obj = js.Dynamic.literal(debug = debug, ready = ready, rebootId = rebootId)
+    val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any], ready = ready.asInstanceOf[js.Any], rebootId = rebootId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SurfaceState]
   }

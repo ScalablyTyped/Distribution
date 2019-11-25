@@ -15,7 +15,7 @@ object Anon_LonghandShorthand {
     longhand: js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String],
     shorthand: js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String]
   ): Anon_LonghandShorthand = {
-    val __obj = js.Dynamic.literal(longhand = longhand, shorthand = shorthand)
+    val __obj = js.Dynamic.literal(longhand = longhand.asInstanceOf[js.Any], shorthand = shorthand.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_LonghandShorthand]
   }

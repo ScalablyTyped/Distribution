@@ -16,3 +16,16 @@ import scala.scalajs.js.annotation._
 */
 trait _UndefinedType extends js.Object
 
+object _UndefinedType {
+  @scala.inline
+  def api_call: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.api_call = this.cast("api_call")
+  @scala.inline
+  def api_event: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.api_event = this.cast("api_event")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def content_script: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.content_script = this.cast("content_script")
+  @scala.inline
+  def user_script: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.user_script = this.cast("user_script")
+}
+

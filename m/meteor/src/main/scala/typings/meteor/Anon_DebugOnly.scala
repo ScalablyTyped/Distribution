@@ -28,14 +28,14 @@ object Anon_DebugOnly {
     version: String = null
   ): Anon_DebugOnly = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(debugOnly)) __obj.updateDynamic("debugOnly")(debugOnly)
-    if (documentation != null) __obj.updateDynamic("documentation")(documentation)
-    if (git != null) __obj.updateDynamic("git")(git)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(prodOnly)) __obj.updateDynamic("prodOnly")(prodOnly)
-    if (summary != null) __obj.updateDynamic("summary")(summary)
-    if (!js.isUndefined(testOnly)) __obj.updateDynamic("testOnly")(testOnly)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (!js.isUndefined(debugOnly)) __obj.updateDynamic("debugOnly")(debugOnly.asInstanceOf[js.Any])
+    if (documentation != null) __obj.updateDynamic("documentation")(documentation.asInstanceOf[js.Any])
+    if (git != null) __obj.updateDynamic("git")(git.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(prodOnly)) __obj.updateDynamic("prodOnly")(prodOnly.asInstanceOf[js.Any])
+    if (summary != null) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
+    if (!js.isUndefined(testOnly)) __obj.updateDynamic("testOnly")(testOnly.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DebugOnly]
   }
 }

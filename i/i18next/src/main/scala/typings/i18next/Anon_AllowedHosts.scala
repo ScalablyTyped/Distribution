@@ -46,12 +46,12 @@ object Anon_AllowedHosts {
     referenceLng: String = null,
     version: String = null
   ): Anon_AllowedHosts = {
-    val __obj = js.Dynamic.literal(projectId = projectId)
-    if (allowedHosts != null) __obj.updateDynamic("allowedHosts")(allowedHosts)
-    if (apiKey != null) __obj.updateDynamic("apiKey")(apiKey)
+    val __obj = js.Dynamic.literal(projectId = projectId.asInstanceOf[js.Any])
+    if (allowedHosts != null) __obj.updateDynamic("allowedHosts")(allowedHosts.asInstanceOf[js.Any])
+    if (apiKey != null) __obj.updateDynamic("apiKey")(apiKey.asInstanceOf[js.Any])
     if (debounceSubmit != null) __obj.updateDynamic("debounceSubmit")(debounceSubmit.asInstanceOf[js.Any])
-    if (referenceLng != null) __obj.updateDynamic("referenceLng")(referenceLng)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (referenceLng != null) __obj.updateDynamic("referenceLng")(referenceLng.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AllowedHosts]
   }
 }

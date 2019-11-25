@@ -13,3 +13,18 @@ import scala.scalajs.js.annotation._
 */
 trait ContainerType extends js.Object
 
+object ContainerType {
+  @scala.inline
+  def brush: typings.victory.victoryStrings.brush = this.cast("brush")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def cursor: typings.victory.victoryStrings.cursor = this.cast("cursor")
+  @scala.inline
+  def selection: typings.victory.victoryStrings.selection = this.cast("selection")
+  @scala.inline
+  def voronoi: typings.victory.victoryStrings.voronoi = this.cast("voronoi")
+  @scala.inline
+  def zoom: typings.victory.victoryStrings.zoom = this.cast("zoom")
+}
+

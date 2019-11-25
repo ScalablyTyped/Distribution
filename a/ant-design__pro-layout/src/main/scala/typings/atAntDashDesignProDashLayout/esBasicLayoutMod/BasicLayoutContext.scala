@@ -15,7 +15,7 @@ trait BasicLayoutContext extends js.Object {
 object BasicLayoutContext {
   @scala.inline
   def apply(breadcrumb: StringDictionary[MenuDataItem], location: js.Any): BasicLayoutContext = {
-    val __obj = js.Dynamic.literal(breadcrumb = breadcrumb, location = location)
+    val __obj = js.Dynamic.literal(breadcrumb = breadcrumb.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BasicLayoutContext]
   }

@@ -17,8 +17,8 @@ object PieDatum {
     value: Double,
     StringDictionary: /* key */ StringDictionary[String | Double] = null
   ): PieDatum = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], value = value)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[PieDatum]
   }
 }

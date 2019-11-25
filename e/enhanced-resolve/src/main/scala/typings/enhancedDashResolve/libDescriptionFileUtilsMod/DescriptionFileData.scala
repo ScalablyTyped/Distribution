@@ -15,8 +15,8 @@ object DescriptionFileData {
   @scala.inline
   def apply(browser: Dictionary[String | Boolean] = null, concord: Concord = null): DescriptionFileData = {
     val __obj = js.Dynamic.literal()
-    if (browser != null) __obj.updateDynamic("browser")(browser)
-    if (concord != null) __obj.updateDynamic("concord")(concord)
+    if (browser != null) __obj.updateDynamic("browser")(browser.asInstanceOf[js.Any])
+    if (concord != null) __obj.updateDynamic("concord")(concord.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescriptionFileData]
   }
 }

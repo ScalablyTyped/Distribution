@@ -20,10 +20,10 @@ object ExtendedGeometryCollection {
     bbox: js.Array[Double] = null,
     crs: Anon_Properties = null
   ): ExtendedGeometryCollection[GeometryType] = {
-    val __obj = js.Dynamic.literal(geometries = geometries)
-    __obj.updateDynamic("type")(`type`)
-    if (bbox != null) __obj.updateDynamic("bbox")(bbox)
-    if (crs != null) __obj.updateDynamic("crs")(crs)
+    val __obj = js.Dynamic.literal(geometries = geometries.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (bbox != null) __obj.updateDynamic("bbox")(bbox.asInstanceOf[js.Any])
+    if (crs != null) __obj.updateDynamic("crs")(crs.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtendedGeometryCollection[GeometryType]]
   }
 }

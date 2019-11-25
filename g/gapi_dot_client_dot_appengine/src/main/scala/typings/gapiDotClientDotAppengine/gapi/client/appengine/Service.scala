@@ -17,9 +17,9 @@ object Service {
   @scala.inline
   def apply(id: String = null, name: String = null, split: TrafficSplit = null): Service = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (split != null) __obj.updateDynamic("split")(split)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (split != null) __obj.updateDynamic("split")(split.asInstanceOf[js.Any])
     __obj.asInstanceOf[Service]
   }
 }

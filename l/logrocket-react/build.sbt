@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "logrocket-react"
-version := "3.0-dt-20190628Z-3e1934"
+version := "3.0-dt-20190628Z-2092d6"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

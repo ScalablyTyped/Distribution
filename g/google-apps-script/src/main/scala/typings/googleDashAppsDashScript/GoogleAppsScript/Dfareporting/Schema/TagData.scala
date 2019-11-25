@@ -22,11 +22,11 @@ object TagData {
     impressionTag: String = null
   ): TagData = {
     val __obj = js.Dynamic.literal()
-    if (adId != null) __obj.updateDynamic("adId")(adId)
-    if (clickTag != null) __obj.updateDynamic("clickTag")(clickTag)
-    if (creativeId != null) __obj.updateDynamic("creativeId")(creativeId)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (impressionTag != null) __obj.updateDynamic("impressionTag")(impressionTag)
+    if (adId != null) __obj.updateDynamic("adId")(adId.asInstanceOf[js.Any])
+    if (clickTag != null) __obj.updateDynamic("clickTag")(clickTag.asInstanceOf[js.Any])
+    if (creativeId != null) __obj.updateDynamic("creativeId")(creativeId.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (impressionTag != null) __obj.updateDynamic("impressionTag")(impressionTag.asInstanceOf[js.Any])
     __obj.asInstanceOf[TagData]
   }
 }

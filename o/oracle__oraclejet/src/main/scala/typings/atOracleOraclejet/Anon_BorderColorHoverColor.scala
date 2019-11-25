@@ -20,10 +20,10 @@ object Anon_BorderColorHoverColor {
     selectedOuterColor: String = null
   ): Anon_BorderColorHoverColor = {
     val __obj = js.Dynamic.literal()
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
-    if (hoverColor != null) __obj.updateDynamic("hoverColor")(hoverColor)
-    if (selectedInnerColor != null) __obj.updateDynamic("selectedInnerColor")(selectedInnerColor)
-    if (selectedOuterColor != null) __obj.updateDynamic("selectedOuterColor")(selectedOuterColor)
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
+    if (hoverColor != null) __obj.updateDynamic("hoverColor")(hoverColor.asInstanceOf[js.Any])
+    if (selectedInnerColor != null) __obj.updateDynamic("selectedInnerColor")(selectedInnerColor.asInstanceOf[js.Any])
+    if (selectedOuterColor != null) __obj.updateDynamic("selectedOuterColor")(selectedOuterColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BorderColorHoverColor]
   }
 }

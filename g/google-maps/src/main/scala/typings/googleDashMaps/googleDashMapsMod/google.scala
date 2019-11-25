@@ -12,7 +12,7 @@ trait google extends js.Object {
 object google {
   @scala.inline
   def apply(maps: Typeofmaps): google = {
-    val __obj = js.Dynamic.literal(maps = maps)
+    val __obj = js.Dynamic.literal(maps = maps.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[google]
   }

@@ -12,7 +12,7 @@ trait Anon_Lat extends js.Object {
 object Anon_Lat {
   @scala.inline
   def apply(lat: Double, lng: Double): Anon_Lat = {
-    val __obj = js.Dynamic.literal(lat = lat, lng = lng)
+    val __obj = js.Dynamic.literal(lat = lat.asInstanceOf[js.Any], lng = lng.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Lat]
   }

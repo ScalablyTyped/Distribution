@@ -13,7 +13,7 @@ object MasterProperties {
   @scala.inline
   def apply(displayName: String = null): MasterProperties = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     __obj.asInstanceOf[MasterProperties]
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("transducers-js", "TakeWhile")
 @js.native
-class TakeWhile[TResult, TInput] protected () extends Transformer[TResult, TInput] {
+class TakeWhile[TResult, TInput] protected () extends CompletingTransformer[TResult, TResult, TInput] {
   def this(pred: js.Function1[/* n */ TInput, Boolean], xf: Transformer[TResult, TInput]) = this()
   /* CompleteClass */
   override def `@@transducer/init`(): TResult | Unit = js.native

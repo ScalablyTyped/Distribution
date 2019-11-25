@@ -52,16 +52,16 @@ object QueryCellInfoEventArgs {
     resource: js.Any = null
   ): QueryCellInfoEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (appointment != null) __obj.updateDynamic("appointment")(appointment)
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (cell != null) __obj.updateDynamic("cell")(cell)
-    if (cellType != null) __obj.updateDynamic("cellType")(cellType)
-    if (currentAppointmentDate != null) __obj.updateDynamic("currentAppointmentDate")(currentAppointmentDate)
-    if (currentDay != null) __obj.updateDynamic("currentDay")(currentDay)
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (requestType != null) __obj.updateDynamic("requestType")(requestType)
-    if (resource != null) __obj.updateDynamic("resource")(resource)
+    if (appointment != null) __obj.updateDynamic("appointment")(appointment.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (cell != null) __obj.updateDynamic("cell")(cell.asInstanceOf[js.Any])
+    if (cellType != null) __obj.updateDynamic("cellType")(cellType.asInstanceOf[js.Any])
+    if (currentAppointmentDate != null) __obj.updateDynamic("currentAppointmentDate")(currentAppointmentDate.asInstanceOf[js.Any])
+    if (currentDay != null) __obj.updateDynamic("currentDay")(currentDay.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (requestType != null) __obj.updateDynamic("requestType")(requestType.asInstanceOf[js.Any])
+    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryCellInfoEventArgs]
   }
 }

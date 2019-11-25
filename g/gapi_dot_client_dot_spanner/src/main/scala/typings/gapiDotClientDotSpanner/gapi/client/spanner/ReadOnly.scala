@@ -80,12 +80,12 @@ object ReadOnly {
     strong: js.UndefOr[Boolean] = js.undefined
   ): ReadOnly = {
     val __obj = js.Dynamic.literal()
-    if (exactStaleness != null) __obj.updateDynamic("exactStaleness")(exactStaleness)
-    if (maxStaleness != null) __obj.updateDynamic("maxStaleness")(maxStaleness)
-    if (minReadTimestamp != null) __obj.updateDynamic("minReadTimestamp")(minReadTimestamp)
-    if (readTimestamp != null) __obj.updateDynamic("readTimestamp")(readTimestamp)
-    if (!js.isUndefined(returnReadTimestamp)) __obj.updateDynamic("returnReadTimestamp")(returnReadTimestamp)
-    if (!js.isUndefined(strong)) __obj.updateDynamic("strong")(strong)
+    if (exactStaleness != null) __obj.updateDynamic("exactStaleness")(exactStaleness.asInstanceOf[js.Any])
+    if (maxStaleness != null) __obj.updateDynamic("maxStaleness")(maxStaleness.asInstanceOf[js.Any])
+    if (minReadTimestamp != null) __obj.updateDynamic("minReadTimestamp")(minReadTimestamp.asInstanceOf[js.Any])
+    if (readTimestamp != null) __obj.updateDynamic("readTimestamp")(readTimestamp.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnReadTimestamp)) __obj.updateDynamic("returnReadTimestamp")(returnReadTimestamp.asInstanceOf[js.Any])
+    if (!js.isUndefined(strong)) __obj.updateDynamic("strong")(strong.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadOnly]
   }
 }

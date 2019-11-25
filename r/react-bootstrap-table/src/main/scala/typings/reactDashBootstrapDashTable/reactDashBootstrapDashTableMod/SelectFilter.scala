@@ -47,13 +47,13 @@ object SelectFilter {
     style: CSSProperties = null,
     withoutEmptyOption: js.UndefOr[Boolean] = js.undefined
   ): SelectFilter = {
-    val __obj = js.Dynamic.literal(options = options)
-    __obj.updateDynamic("type")(`type`)
-    if (condition != null) __obj.updateDynamic("condition")(condition)
+    val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (condition != null) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (selectText != null) __obj.updateDynamic("selectText")(selectText)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (!js.isUndefined(withoutEmptyOption)) __obj.updateDynamic("withoutEmptyOption")(withoutEmptyOption)
+    if (selectText != null) __obj.updateDynamic("selectText")(selectText.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(withoutEmptyOption)) __obj.updateDynamic("withoutEmptyOption")(withoutEmptyOption.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectFilter]
   }
 }

@@ -20,10 +20,10 @@ object SetHeightConfig {
     fullViewport: js.UndefOr[Boolean] = js.undefined,
     growOnly: js.UndefOr[Boolean] = js.undefined
   ): SetHeightConfig = {
-    val __obj = js.Dynamic.literal(height = height)
-    if (!js.isUndefined(full)) __obj.updateDynamic("full")(full)
-    if (!js.isUndefined(fullViewport)) __obj.updateDynamic("fullViewport")(fullViewport)
-    if (!js.isUndefined(growOnly)) __obj.updateDynamic("growOnly")(growOnly)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any])
+    if (!js.isUndefined(full)) __obj.updateDynamic("full")(full.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullViewport)) __obj.updateDynamic("fullViewport")(fullViewport.asInstanceOf[js.Any])
+    if (!js.isUndefined(growOnly)) __obj.updateDynamic("growOnly")(growOnly.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetHeightConfig]
   }
 }

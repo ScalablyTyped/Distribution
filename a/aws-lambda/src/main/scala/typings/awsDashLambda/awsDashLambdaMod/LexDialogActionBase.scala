@@ -25,8 +25,8 @@ object LexDialogActionBase {
   ): LexDialogActionBase = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (responseCard != null) __obj.updateDynamic("responseCard")(responseCard)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (responseCard != null) __obj.updateDynamic("responseCard")(responseCard.asInstanceOf[js.Any])
     __obj.asInstanceOf[LexDialogActionBase]
   }
 }

@@ -51,17 +51,17 @@ object Response {
     replaceAllText: ReplaceAllTextResponse = null
   ): Response = {
     val __obj = js.Dynamic.literal()
-    if (createImage != null) __obj.updateDynamic("createImage")(createImage)
-    if (createLine != null) __obj.updateDynamic("createLine")(createLine)
-    if (createShape != null) __obj.updateDynamic("createShape")(createShape)
-    if (createSheetsChart != null) __obj.updateDynamic("createSheetsChart")(createSheetsChart)
-    if (createSlide != null) __obj.updateDynamic("createSlide")(createSlide)
-    if (createTable != null) __obj.updateDynamic("createTable")(createTable)
-    if (createVideo != null) __obj.updateDynamic("createVideo")(createVideo)
-    if (duplicateObject != null) __obj.updateDynamic("duplicateObject")(duplicateObject)
-    if (replaceAllShapesWithImage != null) __obj.updateDynamic("replaceAllShapesWithImage")(replaceAllShapesWithImage)
-    if (replaceAllShapesWithSheetsChart != null) __obj.updateDynamic("replaceAllShapesWithSheetsChart")(replaceAllShapesWithSheetsChart)
-    if (replaceAllText != null) __obj.updateDynamic("replaceAllText")(replaceAllText)
+    if (createImage != null) __obj.updateDynamic("createImage")(createImage.asInstanceOf[js.Any])
+    if (createLine != null) __obj.updateDynamic("createLine")(createLine.asInstanceOf[js.Any])
+    if (createShape != null) __obj.updateDynamic("createShape")(createShape.asInstanceOf[js.Any])
+    if (createSheetsChart != null) __obj.updateDynamic("createSheetsChart")(createSheetsChart.asInstanceOf[js.Any])
+    if (createSlide != null) __obj.updateDynamic("createSlide")(createSlide.asInstanceOf[js.Any])
+    if (createTable != null) __obj.updateDynamic("createTable")(createTable.asInstanceOf[js.Any])
+    if (createVideo != null) __obj.updateDynamic("createVideo")(createVideo.asInstanceOf[js.Any])
+    if (duplicateObject != null) __obj.updateDynamic("duplicateObject")(duplicateObject.asInstanceOf[js.Any])
+    if (replaceAllShapesWithImage != null) __obj.updateDynamic("replaceAllShapesWithImage")(replaceAllShapesWithImage.asInstanceOf[js.Any])
+    if (replaceAllShapesWithSheetsChart != null) __obj.updateDynamic("replaceAllShapesWithSheetsChart")(replaceAllShapesWithSheetsChart.asInstanceOf[js.Any])
+    if (replaceAllText != null) __obj.updateDynamic("replaceAllText")(replaceAllText.asInstanceOf[js.Any])
     __obj.asInstanceOf[Response]
   }
 }

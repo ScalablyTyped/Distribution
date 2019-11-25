@@ -21,7 +21,7 @@ trait SearchAutocompleteResult extends js.Object {
 object SearchAutocompleteResult {
   @scala.inline
   def apply(coordinate: Coordinate, displayLines: js.Array[String]): SearchAutocompleteResult = {
-    val __obj = js.Dynamic.literal(coordinate = coordinate, displayLines = displayLines)
+    val __obj = js.Dynamic.literal(coordinate = coordinate.asInstanceOf[js.Any], displayLines = displayLines.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SearchAutocompleteResult]
   }

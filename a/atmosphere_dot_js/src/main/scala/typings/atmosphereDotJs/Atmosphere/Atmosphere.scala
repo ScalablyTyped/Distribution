@@ -29,7 +29,7 @@ object Atmosphere {
     unsubscribe: () => Unit = null
   ): Atmosphere = {
     val __obj = js.Dynamic.literal()
-    if (AtmosphereRequest != null) __obj.updateDynamic("AtmosphereRequest")(AtmosphereRequest)
+    if (AtmosphereRequest != null) __obj.updateDynamic("AtmosphereRequest")(AtmosphereRequest.asInstanceOf[js.Any])
     if (subscribe != null) __obj.updateDynamic("subscribe")(js.Any.fromFunction3(subscribe))
     if (unsubscribe != null) __obj.updateDynamic("unsubscribe")(js.Any.fromFunction0(unsubscribe))
     __obj.asInstanceOf[Atmosphere]

@@ -32,7 +32,7 @@ object RenderContext {
     scopedSlots: StringDictionary[NormalizedScopedSlot],
     slots: () => js.Any
   ): RenderContext[Props] = {
-    val __obj = js.Dynamic.literal(children = children, data = data, injections = injections, listeners = listeners, parent = parent, props = props.asInstanceOf[js.Any], scopedSlots = scopedSlots, slots = js.Any.fromFunction0(slots))
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], injections = injections.asInstanceOf[js.Any], listeners = listeners.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], scopedSlots = scopedSlots.asInstanceOf[js.Any], slots = js.Any.fromFunction0(slots))
   
     __obj.asInstanceOf[RenderContext[Props]]
   }

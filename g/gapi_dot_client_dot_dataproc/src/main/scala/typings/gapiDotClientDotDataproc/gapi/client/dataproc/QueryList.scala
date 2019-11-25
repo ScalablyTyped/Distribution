@@ -25,7 +25,7 @@ object QueryList {
   @scala.inline
   def apply(queries: js.Array[String] = null): QueryList = {
     val __obj = js.Dynamic.literal()
-    if (queries != null) __obj.updateDynamic("queries")(queries)
+    if (queries != null) __obj.updateDynamic("queries")(queries.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryList]
   }
 }

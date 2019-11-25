@@ -77,10 +77,10 @@ object Options {
     separator: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (customReplacements != null) __obj.updateDynamic("customReplacements")(customReplacements)
-    if (!js.isUndefined(decamelize)) __obj.updateDynamic("decamelize")(decamelize)
-    if (!js.isUndefined(lowercase)) __obj.updateDynamic("lowercase")(lowercase)
-    if (separator != null) __obj.updateDynamic("separator")(separator)
+    if (customReplacements != null) __obj.updateDynamic("customReplacements")(customReplacements.asInstanceOf[js.Any])
+    if (!js.isUndefined(decamelize)) __obj.updateDynamic("decamelize")(decamelize.asInstanceOf[js.Any])
+    if (!js.isUndefined(lowercase)) __obj.updateDynamic("lowercase")(lowercase.asInstanceOf[js.Any])
+    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

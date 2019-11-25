@@ -44,8 +44,8 @@ object DeploymentCondition {
     status: String,
     `type`: String
   ): DeploymentCondition = {
-    val __obj = js.Dynamic.literal(lastTransitionTime = lastTransitionTime, lastUpdateTime = lastUpdateTime, message = message, reason = reason, status = status)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(lastTransitionTime = lastTransitionTime.asInstanceOf[js.Any], lastUpdateTime = lastUpdateTime.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeploymentCondition]
   }
 }

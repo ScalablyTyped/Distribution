@@ -36,11 +36,11 @@ object CacheKeyPolicy {
     queryStringWhitelist: js.Array[String] = null
   ): CacheKeyPolicy = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeHost)) __obj.updateDynamic("includeHost")(includeHost)
-    if (!js.isUndefined(includeProtocol)) __obj.updateDynamic("includeProtocol")(includeProtocol)
-    if (!js.isUndefined(includeQueryString)) __obj.updateDynamic("includeQueryString")(includeQueryString)
-    if (queryStringBlacklist != null) __obj.updateDynamic("queryStringBlacklist")(queryStringBlacklist)
-    if (queryStringWhitelist != null) __obj.updateDynamic("queryStringWhitelist")(queryStringWhitelist)
+    if (!js.isUndefined(includeHost)) __obj.updateDynamic("includeHost")(includeHost.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeProtocol)) __obj.updateDynamic("includeProtocol")(includeProtocol.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeQueryString)) __obj.updateDynamic("includeQueryString")(includeQueryString.asInstanceOf[js.Any])
+    if (queryStringBlacklist != null) __obj.updateDynamic("queryStringBlacklist")(queryStringBlacklist.asInstanceOf[js.Any])
+    if (queryStringWhitelist != null) __obj.updateDynamic("queryStringWhitelist")(queryStringWhitelist.asInstanceOf[js.Any])
     __obj.asInstanceOf[CacheKeyPolicy]
   }
 }

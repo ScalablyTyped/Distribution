@@ -14,7 +14,7 @@ object Anon_TypeArguments {
   @scala.inline
   def apply(typeArguments: NodeArray[TypeNode] = null): Anon_TypeArguments = {
     val __obj = js.Dynamic.literal()
-    if (typeArguments != null) __obj.updateDynamic("typeArguments")(typeArguments)
+    if (typeArguments != null) __obj.updateDynamic("typeArguments")(typeArguments.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_TypeArguments]
   }
 }

@@ -22,9 +22,9 @@ trait PublicKeyCredentialDescriptor extends js.Object {
 object PublicKeyCredentialDescriptor {
   @scala.inline
   def apply(id: BufferSource, `type`: `public-key`, transports: js.Array[usb | nfc | ble | internal] = null): PublicKeyCredentialDescriptor = {
-    val __obj = js.Dynamic.literal(id = id)
-    __obj.updateDynamic("type")(`type`)
-    if (transports != null) __obj.updateDynamic("transports")(transports)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (transports != null) __obj.updateDynamic("transports")(transports.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublicKeyCredentialDescriptor]
   }
 }

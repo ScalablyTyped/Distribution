@@ -42,12 +42,12 @@ trait Server extends js.Object {
   /** Unregister an event handler. */
   def off[K /* <: String */](
     eventType: K,
-    handler: /* import warning: ImportType.apply Failed type conversion: tern.tern/lib/tern.Events[K] */ js.Any
+    handler: /* import warning: importer.ImportType#apply Failed type conversion: tern.tern/lib/tern.Events[K] */ js.Any
   ): Unit = js.native
   /** Register an event handler for the named type of event. */
   def on[K /* <: String */](
     eventType: K,
-    handler: /* import warning: ImportType.apply Failed type conversion: tern.tern/lib/tern.Events[K] */ js.Any
+    handler: /* import warning: importer.ImportType#apply Failed type conversion: tern.tern/lib/tern.Events[K] */ js.Any
   ): Unit = js.native
   /**
     * Perform a request. `doc` is a (parsed) JSON document as described in the protocol documentation.

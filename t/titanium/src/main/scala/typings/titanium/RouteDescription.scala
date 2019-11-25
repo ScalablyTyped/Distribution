@@ -22,8 +22,8 @@ object RouteDescription {
   @scala.inline
   def apply(inputs: js.Array[_] = null, outputs: js.Array[_] = null): RouteDescription = {
     val __obj = js.Dynamic.literal()
-    if (inputs != null) __obj.updateDynamic("inputs")(inputs)
-    if (outputs != null) __obj.updateDynamic("outputs")(outputs)
+    if (inputs != null) __obj.updateDynamic("inputs")(inputs.asInstanceOf[js.Any])
+    if (outputs != null) __obj.updateDynamic("outputs")(outputs.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteDescription]
   }
 }

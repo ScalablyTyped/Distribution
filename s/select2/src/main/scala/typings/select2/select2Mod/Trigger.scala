@@ -14,8 +14,8 @@ trait Trigger extends js.Object {
 object Trigger {
   @scala.inline
   def apply(params: Anon_Data, `type`: `select2:select`): Trigger = {
-    val __obj = js.Dynamic.literal(params = params)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Trigger]
   }
 }

@@ -13,7 +13,7 @@ trait GitResolutionMergeContent extends GitResolution {
 object GitResolutionMergeContent {
   @scala.inline
   def apply(mergeType: GitResolutionMergeType, userMergedBlob: GitBlobRef, userMergedContent: js.Array[Double]): GitResolutionMergeContent = {
-    val __obj = js.Dynamic.literal(mergeType = mergeType, userMergedBlob = userMergedBlob, userMergedContent = userMergedContent)
+    val __obj = js.Dynamic.literal(mergeType = mergeType.asInstanceOf[js.Any], userMergedBlob = userMergedBlob.asInstanceOf[js.Any], userMergedContent = userMergedContent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GitResolutionMergeContent]
   }

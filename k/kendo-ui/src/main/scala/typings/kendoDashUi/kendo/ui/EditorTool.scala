@@ -27,12 +27,12 @@ object EditorTool {
   ): EditorTool = {
     val __obj = js.Dynamic.literal()
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (exec != null) __obj.updateDynamic("exec")(exec)
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (exec != null) __obj.updateDynamic("exec")(exec.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (palette != null) __obj.updateDynamic("palette")(palette.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template)
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorTool]
   }
 }

@@ -21,9 +21,9 @@ object FileSystemInfo {
     lastModifiedDateTime: String = null
   ): FileSystemInfo = {
     val __obj = js.Dynamic.literal()
-    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime)
-    if (lastAccessedDateTime != null) __obj.updateDynamic("lastAccessedDateTime")(lastAccessedDateTime)
-    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime)
+    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
+    if (lastAccessedDateTime != null) __obj.updateDynamic("lastAccessedDateTime")(lastAccessedDateTime.asInstanceOf[js.Any])
+    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileSystemInfo]
   }
 }

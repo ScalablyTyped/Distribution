@@ -17,7 +17,7 @@ trait SplitShardOutput extends OutputTypesUnion {
 object SplitShardOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata): SplitShardOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SplitShardOutput]
   }

@@ -14,7 +14,7 @@ trait Anon_HAdjustmentFactor extends js.Object {
 object Anon_HAdjustmentFactor {
   @scala.inline
   def apply(hAdjustmentFactor: Double, height: Double, vAdjustmentFactor: Double, width: Double): Anon_HAdjustmentFactor = {
-    val __obj = js.Dynamic.literal(hAdjustmentFactor = hAdjustmentFactor, height = height, vAdjustmentFactor = vAdjustmentFactor, width = width)
+    val __obj = js.Dynamic.literal(hAdjustmentFactor = hAdjustmentFactor.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], vAdjustmentFactor = vAdjustmentFactor.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_HAdjustmentFactor]
   }

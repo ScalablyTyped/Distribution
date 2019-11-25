@@ -26,19 +26,15 @@ object FormControlProps {
     bsClass: String = null,
     bsSize: Sizes = null,
     componentClass: ReactType[_] = null,
-    id: String = null,
-    inputRef: /* instance */ HTMLInputElement => Unit = null,
-    `type`: String = null
+    inputRef: /* instance */ HTMLInputElement => Unit = null
   ): FormControlProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass)
-    if (bsSize != null) __obj.updateDynamic("bsSize")(bsSize)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass.asInstanceOf[js.Any])
+    if (bsSize != null) __obj.updateDynamic("bsSize")(bsSize.asInstanceOf[js.Any])
     if (componentClass != null) __obj.updateDynamic("componentClass")(componentClass.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id)
     if (inputRef != null) __obj.updateDynamic("inputRef")(js.Any.fromFunction1(inputRef))
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[FormControlProps]
   }
 }

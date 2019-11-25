@@ -20,7 +20,7 @@ trait XLSX$Consts extends js.Object {
 object XLSX$Consts {
   @scala.inline
   def apply(SHEET_HIDDEN: `1`, SHEET_VERYHIDDEN: `2`, SHEET_VISIBLE: `0`): XLSX$Consts = {
-    val __obj = js.Dynamic.literal(SHEET_HIDDEN = SHEET_HIDDEN, SHEET_VERYHIDDEN = SHEET_VERYHIDDEN, SHEET_VISIBLE = SHEET_VISIBLE)
+    val __obj = js.Dynamic.literal(SHEET_HIDDEN = SHEET_HIDDEN.asInstanceOf[js.Any], SHEET_VERYHIDDEN = SHEET_VERYHIDDEN.asInstanceOf[js.Any], SHEET_VISIBLE = SHEET_VISIBLE.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[XLSX$Consts]
   }

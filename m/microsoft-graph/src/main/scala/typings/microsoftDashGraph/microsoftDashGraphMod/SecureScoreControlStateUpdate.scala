@@ -27,11 +27,11 @@ object SecureScoreControlStateUpdate {
     updatedDateTime: String = null
   ): SecureScoreControlStateUpdate = {
     val __obj = js.Dynamic.literal()
-    if (assignedTo != null) __obj.updateDynamic("assignedTo")(assignedTo)
-    if (comment != null) __obj.updateDynamic("comment")(comment)
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (updatedBy != null) __obj.updateDynamic("updatedBy")(updatedBy)
-    if (updatedDateTime != null) __obj.updateDynamic("updatedDateTime")(updatedDateTime)
+    if (assignedTo != null) __obj.updateDynamic("assignedTo")(assignedTo.asInstanceOf[js.Any])
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (updatedBy != null) __obj.updateDynamic("updatedBy")(updatedBy.asInstanceOf[js.Any])
+    if (updatedDateTime != null) __obj.updateDynamic("updatedDateTime")(updatedDateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecureScoreControlStateUpdate]
   }
 }

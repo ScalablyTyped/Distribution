@@ -21,9 +21,9 @@ object Anon_Department {
     department: Int | Double = null,
     phone: String = null
   ): Anon_Department = {
-    val __obj = js.Dynamic.literal(email = email, message = message, name = name)
+    val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (department != null) __obj.updateDynamic("department")(department.asInstanceOf[js.Any])
-    if (phone != null) __obj.updateDynamic("phone")(phone)
+    if (phone != null) __obj.updateDynamic("phone")(phone.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Department]
   }
 }

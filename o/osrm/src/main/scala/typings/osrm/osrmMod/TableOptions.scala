@@ -32,13 +32,13 @@ object TableOptions {
     sources: js.Array[Double] = null
   ): TableOptions = {
     val __obj = js.Dynamic.literal()
-    if (bearings != null) __obj.updateDynamic("bearings")(bearings)
-    if (coordinates != null) __obj.updateDynamic("coordinates")(coordinates)
-    if (destinations != null) __obj.updateDynamic("destinations")(destinations)
-    if (!js.isUndefined(generate_hints)) __obj.updateDynamic("generate_hints")(generate_hints)
-    if (hints != null) __obj.updateDynamic("hints")(hints)
-    if (radiuses != null) __obj.updateDynamic("radiuses")(radiuses)
-    if (sources != null) __obj.updateDynamic("sources")(sources)
+    if (bearings != null) __obj.updateDynamic("bearings")(bearings.asInstanceOf[js.Any])
+    if (coordinates != null) __obj.updateDynamic("coordinates")(coordinates.asInstanceOf[js.Any])
+    if (destinations != null) __obj.updateDynamic("destinations")(destinations.asInstanceOf[js.Any])
+    if (!js.isUndefined(generate_hints)) __obj.updateDynamic("generate_hints")(generate_hints.asInstanceOf[js.Any])
+    if (hints != null) __obj.updateDynamic("hints")(hints.asInstanceOf[js.Any])
+    if (radiuses != null) __obj.updateDynamic("radiuses")(radiuses.asInstanceOf[js.Any])
+    if (sources != null) __obj.updateDynamic("sources")(sources.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableOptions]
   }
 }

@@ -20,10 +20,10 @@ object FilterOperators {
     string: FilterOperatorsString = null
   ): FilterOperators = {
     val __obj = js.Dynamic.literal()
-    if (boolean != null) __obj.updateDynamic("boolean")(boolean)
-    if (date != null) __obj.updateDynamic("date")(date)
-    if (number != null) __obj.updateDynamic("number")(number)
-    if (string != null) __obj.updateDynamic("string")(string)
+    if (boolean != null) __obj.updateDynamic("boolean")(boolean.asInstanceOf[js.Any])
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
+    if (string != null) __obj.updateDynamic("string")(string.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterOperators]
   }
 }

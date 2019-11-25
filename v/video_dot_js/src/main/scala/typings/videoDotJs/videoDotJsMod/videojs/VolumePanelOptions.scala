@@ -17,9 +17,9 @@ object VolumePanelOptions {
     volumeControl: VolumeControlOptions = null
   ): VolumePanelOptions = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`)
-    if (volumeControl != null) __obj.updateDynamic("volumeControl")(volumeControl)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
+    if (volumeControl != null) __obj.updateDynamic("volumeControl")(volumeControl.asInstanceOf[js.Any])
     __obj.asInstanceOf[VolumePanelOptions]
   }
 }

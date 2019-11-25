@@ -11,7 +11,7 @@ trait Anon_Sha256 extends js.Object {
 object Anon_Sha256 {
   @scala.inline
   def apply(sha256: String): Anon_Sha256 = {
-    val __obj = js.Dynamic.literal(sha256 = sha256)
+    val __obj = js.Dynamic.literal(sha256 = sha256.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Sha256]
   }

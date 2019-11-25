@@ -40,7 +40,7 @@ object SparklineOptions {
   ): SparklineOptions = {
     val __obj = js.Dynamic.literal()
     if (cursorwidth != null) __obj.updateDynamic("cursorwidth")(cursorwidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive)
+    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive.asInstanceOf[js.Any])
     if (onmousemove != null) __obj.updateDynamic("onmousemove")(js.Any.fromFunction1(onmousemove))
     if (onmouseout != null) __obj.updateDynamic("onmouseout")(js.Any.fromFunction1(onmouseout))
     if (spotRadius != null) __obj.updateDynamic("spotRadius")(spotRadius.asInstanceOf[js.Any])

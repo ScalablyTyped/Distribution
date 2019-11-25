@@ -12,7 +12,7 @@ trait Anon_FilePathRootDir extends js.Object {
 object Anon_FilePathRootDir {
   @scala.inline
   def apply(filePath: String, rootDir: String): Anon_FilePathRootDir = {
-    val __obj = js.Dynamic.literal(filePath = filePath, rootDir = rootDir)
+    val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any], rootDir = rootDir.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FilePathRootDir]
   }

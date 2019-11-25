@@ -44,16 +44,16 @@ object Review {
     volumeId: String = null
   ): Review = {
     val __obj = js.Dynamic.literal()
-    if (author != null) __obj.updateDynamic("author")(author)
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (date != null) __obj.updateDynamic("date")(date)
-    if (fullTextUrl != null) __obj.updateDynamic("fullTextUrl")(fullTextUrl)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (rating != null) __obj.updateDynamic("rating")(rating)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (volumeId != null) __obj.updateDynamic("volumeId")(volumeId)
+    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (fullTextUrl != null) __obj.updateDynamic("fullTextUrl")(fullTextUrl.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (rating != null) __obj.updateDynamic("rating")(rating.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (volumeId != null) __obj.updateDynamic("volumeId")(volumeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Review]
   }
 }

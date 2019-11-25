@@ -24,11 +24,11 @@ object Anon_Items {
     min: Int | Double = null,
     ref: String = null
   ): Anon_Items = {
-    val __obj = js.Dynamic.literal(uses = uses)
-    if (items != null) __obj.updateDynamic("items")(items)
+    val __obj = js.Dynamic.literal(uses = uses.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref)
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Items]
   }
 }

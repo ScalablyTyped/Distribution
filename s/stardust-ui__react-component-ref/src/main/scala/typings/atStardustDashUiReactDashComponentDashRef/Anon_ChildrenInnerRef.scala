@@ -16,8 +16,8 @@ object Anon_ChildrenInnerRef {
     innerRef: js.UndefOr[scala.Nothing] = js.undefined
   ): Anon_ChildrenInnerRef = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(children)) __obj.updateDynamic("children")(children)
-    if (!js.isUndefined(innerRef)) __obj.updateDynamic("innerRef")(innerRef)
+    if (!js.isUndefined(children)) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (!js.isUndefined(innerRef)) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ChildrenInnerRef]
   }
 }

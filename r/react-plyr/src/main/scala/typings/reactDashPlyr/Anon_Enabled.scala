@@ -18,9 +18,9 @@ object Anon_Enabled {
     iosNative: js.UndefOr[Boolean] = js.undefined
   ): Anon_Enabled = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (!js.isUndefined(fallback)) __obj.updateDynamic("fallback")(fallback)
-    if (!js.isUndefined(iosNative)) __obj.updateDynamic("iosNative")(iosNative)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(fallback)) __obj.updateDynamic("fallback")(fallback.asInstanceOf[js.Any])
+    if (!js.isUndefined(iosNative)) __obj.updateDynamic("iosNative")(iosNative.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Enabled]
   }
 }

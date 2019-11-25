@@ -41,22 +41,22 @@ object GetSourceParams {
     version: Int | Double = null,
     versionType: VersionType = null
   ): GetSourceParams = {
-    val __obj = js.Dynamic.literal(_source = _source.asInstanceOf[js.Any], id = id, index = index)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(_source = _source.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (_sourceExclude != null) __obj.updateDynamic("_sourceExclude")(_sourceExclude.asInstanceOf[js.Any])
     if (_sourceInclude != null) __obj.updateDynamic("_sourceInclude")(_sourceInclude.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body)
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
     if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (preference != null) __obj.updateDynamic("preference")(preference)
-    if (!js.isUndefined(realtime)) __obj.updateDynamic("realtime")(realtime)
-    if (!js.isUndefined(refresh)) __obj.updateDynamic("refresh")(refresh)
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (preference != null) __obj.updateDynamic("preference")(preference.asInstanceOf[js.Any])
+    if (!js.isUndefined(realtime)) __obj.updateDynamic("realtime")(realtime.asInstanceOf[js.Any])
+    if (!js.isUndefined(refresh)) __obj.updateDynamic("refresh")(refresh.asInstanceOf[js.Any])
     if (requestTimeout != null) __obj.updateDynamic("requestTimeout")(requestTimeout.asInstanceOf[js.Any])
-    if (routing != null) __obj.updateDynamic("routing")(routing)
+    if (routing != null) __obj.updateDynamic("routing")(routing.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (versionType != null) __obj.updateDynamic("versionType")(versionType)
+    if (versionType != null) __obj.updateDynamic("versionType")(versionType.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSourceParams]
   }
 }

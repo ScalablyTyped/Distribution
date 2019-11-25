@@ -29,8 +29,8 @@ trait AutoCompleteCommand extends js.Object {
 object AutoCompleteCommand {
   @scala.inline
   def apply(action: () => Unit, id: String, label: String, icon: String = null): AutoCompleteCommand = {
-    val __obj = js.Dynamic.literal(action = js.Any.fromFunction0(action), id = id, label = label)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
+    val __obj = js.Dynamic.literal(action = js.Any.fromFunction0(action), id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoCompleteCommand]
   }
 }

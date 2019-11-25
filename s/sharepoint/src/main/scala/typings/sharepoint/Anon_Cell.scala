@@ -35,7 +35,7 @@ object Anon_Cell {
     TimescaleTier: TimescaleTier,
     Widget: Widget
   ): Anon_Cell = {
-    val __obj = js.Dynamic.literal(Cell = Cell, GridPane = GridPane, Header = Header, RowHeaderStyle = RowHeaderStyle, Splitter = Splitter, SplitterHandle = SplitterHandle, TimescaleTier = TimescaleTier, Widget = Widget)
+    val __obj = js.Dynamic.literal(Cell = Cell.asInstanceOf[js.Any], GridPane = GridPane.asInstanceOf[js.Any], Header = Header.asInstanceOf[js.Any], RowHeaderStyle = RowHeaderStyle.asInstanceOf[js.Any], Splitter = Splitter.asInstanceOf[js.Any], SplitterHandle = SplitterHandle.asInstanceOf[js.Any], TimescaleTier = TimescaleTier.asInstanceOf[js.Any], Widget = Widget.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Cell]
   }

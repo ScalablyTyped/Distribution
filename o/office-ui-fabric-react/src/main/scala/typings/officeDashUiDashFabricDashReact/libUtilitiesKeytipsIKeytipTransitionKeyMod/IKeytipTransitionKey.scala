@@ -12,8 +12,8 @@ trait IKeytipTransitionKey extends js.Object {
 object IKeytipTransitionKey {
   @scala.inline
   def apply(key: String, modifierKeys: js.Array[KeytipTransitionModifier] = null): IKeytipTransitionKey = {
-    val __obj = js.Dynamic.literal(key = key)
-    if (modifierKeys != null) __obj.updateDynamic("modifierKeys")(modifierKeys)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+    if (modifierKeys != null) __obj.updateDynamic("modifierKeys")(modifierKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[IKeytipTransitionKey]
   }
 }

@@ -62,10 +62,10 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (depthLimit != null) __obj.updateDynamic("depthLimit")(depthLimit.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
-    if (fs != null) __obj.updateDynamic("fs")(fs)
-    if (!js.isUndefined(nodir)) __obj.updateDynamic("nodir")(nodir)
-    if (!js.isUndefined(nofile)) __obj.updateDynamic("nofile")(nofile)
-    if (!js.isUndefined(traverseAll)) __obj.updateDynamic("traverseAll")(traverseAll)
+    if (fs != null) __obj.updateDynamic("fs")(fs.asInstanceOf[js.Any])
+    if (!js.isUndefined(nodir)) __obj.updateDynamic("nodir")(nodir.asInstanceOf[js.Any])
+    if (!js.isUndefined(nofile)) __obj.updateDynamic("nofile")(nofile.asInstanceOf[js.Any])
+    if (!js.isUndefined(traverseAll)) __obj.updateDynamic("traverseAll")(traverseAll.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -27,8 +27,8 @@ trait FileStat extends js.Object {
 object FileStat {
   @scala.inline
   def apply(ctime: Double, mtime: Double, size: Double, `type`: FileType): FileStat = {
-    val __obj = js.Dynamic.literal(ctime = ctime, mtime = mtime, size = size)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(ctime = ctime.asInstanceOf[js.Any], mtime = mtime.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileStat]
   }
 }

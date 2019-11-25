@@ -37,8 +37,8 @@ object LexEvent {
     userId: String,
     requestAttributes: StringDictionary[String] = null
   ): LexEvent = {
-    val __obj = js.Dynamic.literal(bot = bot, currentIntent = currentIntent, inputTranscript = inputTranscript, invocationSource = invocationSource.asInstanceOf[js.Any], messageVersion = messageVersion, outputDialogMode = outputDialogMode.asInstanceOf[js.Any], sessionAttributes = sessionAttributes, userId = userId)
-    if (requestAttributes != null) __obj.updateDynamic("requestAttributes")(requestAttributes)
+    val __obj = js.Dynamic.literal(bot = bot.asInstanceOf[js.Any], currentIntent = currentIntent.asInstanceOf[js.Any], inputTranscript = inputTranscript.asInstanceOf[js.Any], invocationSource = invocationSource.asInstanceOf[js.Any], messageVersion = messageVersion.asInstanceOf[js.Any], outputDialogMode = outputDialogMode.asInstanceOf[js.Any], sessionAttributes = sessionAttributes.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
+    if (requestAttributes != null) __obj.updateDynamic("requestAttributes")(requestAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[LexEvent]
   }
 }

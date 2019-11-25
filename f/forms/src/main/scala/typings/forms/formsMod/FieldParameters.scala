@@ -50,17 +50,17 @@ object FieldParameters {
   ): FieldParameters = {
     val __obj = js.Dynamic.literal()
     if (choices != null) __obj.updateDynamic("choices")(choices.asInstanceOf[js.Any])
-    if (cssClasses != null) __obj.updateDynamic("cssClasses")(cssClasses)
-    if (!js.isUndefined(errorAfterField)) __obj.updateDynamic("errorAfterField")(errorAfterField)
-    if (fieldsetClasses != null) __obj.updateDynamic("fieldsetClasses")(fieldsetClasses)
-    if (!js.isUndefined(hideError)) __obj.updateDynamic("hideError")(hideError)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (!js.isUndefined(labelAfterField)) __obj.updateDynamic("labelAfterField")(labelAfterField)
-    if (legendClasses != null) __obj.updateDynamic("legendClasses")(legendClasses)
+    if (cssClasses != null) __obj.updateDynamic("cssClasses")(cssClasses.asInstanceOf[js.Any])
+    if (!js.isUndefined(errorAfterField)) __obj.updateDynamic("errorAfterField")(errorAfterField.asInstanceOf[js.Any])
+    if (fieldsetClasses != null) __obj.updateDynamic("fieldsetClasses")(fieldsetClasses.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideError)) __obj.updateDynamic("hideError")(hideError.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelAfterField)) __obj.updateDynamic("labelAfterField")(labelAfterField.asInstanceOf[js.Any])
+    if (legendClasses != null) __obj.updateDynamic("legendClasses")(legendClasses.asInstanceOf[js.Any])
     if (required != null) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
-    if (validators != null) __obj.updateDynamic("validators")(validators)
-    if (widget != null) __obj.updateDynamic("widget")(widget)
+    if (validators != null) __obj.updateDynamic("validators")(validators.asInstanceOf[js.Any])
+    if (widget != null) __obj.updateDynamic("widget")(widget.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldParameters]
   }
 }

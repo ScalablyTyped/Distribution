@@ -13,9 +13,9 @@ trait AbortSignalLike extends js.Object {
 
 object AbortSignalLike {
   @scala.inline
-  def apply(aborted: Boolean, addEventListener_abort: (abort, js.Function0[_]) => js.Any): AbortSignalLike = {
-    val __obj = js.Dynamic.literal(aborted = aborted)
-    __obj.updateDynamic("addEventListener")(js.Any.fromFunction2(addEventListener_abort))
+  def apply(aborted: Boolean, addEventListener: (abort, js.Function0[_]) => js.Any): AbortSignalLike = {
+    val __obj = js.Dynamic.literal(aborted = aborted.asInstanceOf[js.Any], addEventListener = js.Any.fromFunction2(addEventListener))
+  
     __obj.asInstanceOf[AbortSignalLike]
   }
 }

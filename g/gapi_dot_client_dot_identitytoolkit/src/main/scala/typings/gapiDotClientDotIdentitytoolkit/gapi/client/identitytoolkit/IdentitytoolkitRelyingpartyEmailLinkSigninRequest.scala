@@ -17,9 +17,9 @@ object IdentitytoolkitRelyingpartyEmailLinkSigninRequest {
   @scala.inline
   def apply(email: String = null, idToken: String = null, oobCode: String = null): IdentitytoolkitRelyingpartyEmailLinkSigninRequest = {
     val __obj = js.Dynamic.literal()
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (idToken != null) __obj.updateDynamic("idToken")(idToken)
-    if (oobCode != null) __obj.updateDynamic("oobCode")(oobCode)
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (idToken != null) __obj.updateDynamic("idToken")(idToken.asInstanceOf[js.Any])
+    if (oobCode != null) __obj.updateDynamic("oobCode")(oobCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentitytoolkitRelyingpartyEmailLinkSigninRequest]
   }
 }

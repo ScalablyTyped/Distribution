@@ -37,17 +37,17 @@ object IFieldGroup {
     wrapper: String | js.Array[String] = null
   ): IFieldGroup = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (elementAttributes != null) __obj.updateDynamic("elementAttributes")(elementAttributes)
-    if (fieldGroup != null) __obj.updateDynamic("fieldGroup")(fieldGroup)
-    if (form != null) __obj.updateDynamic("form")(form)
-    if (!js.isUndefined(hide)) __obj.updateDynamic("hide")(hide)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (elementAttributes != null) __obj.updateDynamic("elementAttributes")(elementAttributes.asInstanceOf[js.Any])
+    if (fieldGroup != null) __obj.updateDynamic("fieldGroup")(fieldGroup.asInstanceOf[js.Any])
+    if (form != null) __obj.updateDynamic("form")(form.asInstanceOf[js.Any])
+    if (!js.isUndefined(hide)) __obj.updateDynamic("hide")(hide.asInstanceOf[js.Any])
     if (hideExpression != null) __obj.updateDynamic("hideExpression")(hideExpression.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (templateOptions != null) __obj.updateDynamic("templateOptions")(templateOptions)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (templateOptions != null) __obj.updateDynamic("templateOptions")(templateOptions.asInstanceOf[js.Any])
     if (wrapper != null) __obj.updateDynamic("wrapper")(wrapper.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFieldGroup]
   }

@@ -20,10 +20,10 @@ object Anon_FormattedSearchTime {
     totalResults: String = null
   ): Anon_FormattedSearchTime = {
     val __obj = js.Dynamic.literal()
-    if (formattedSearchTime != null) __obj.updateDynamic("formattedSearchTime")(formattedSearchTime)
-    if (formattedTotalResults != null) __obj.updateDynamic("formattedTotalResults")(formattedTotalResults)
+    if (formattedSearchTime != null) __obj.updateDynamic("formattedSearchTime")(formattedSearchTime.asInstanceOf[js.Any])
+    if (formattedTotalResults != null) __obj.updateDynamic("formattedTotalResults")(formattedTotalResults.asInstanceOf[js.Any])
     if (searchTime != null) __obj.updateDynamic("searchTime")(searchTime.asInstanceOf[js.Any])
-    if (totalResults != null) __obj.updateDynamic("totalResults")(totalResults)
+    if (totalResults != null) __obj.updateDynamic("totalResults")(totalResults.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FormattedSearchTime]
   }
 }

@@ -40,7 +40,7 @@ object VolumeAttachmentStatus {
     attachmentMetadata: StringDictionary[String],
     detachError: VolumeError
   ): VolumeAttachmentStatus = {
-    val __obj = js.Dynamic.literal(attachError = attachError, attached = attached, attachmentMetadata = attachmentMetadata, detachError = detachError)
+    val __obj = js.Dynamic.literal(attachError = attachError.asInstanceOf[js.Any], attached = attached.asInstanceOf[js.Any], attachmentMetadata = attachmentMetadata.asInstanceOf[js.Any], detachError = detachError.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[VolumeAttachmentStatus]
   }

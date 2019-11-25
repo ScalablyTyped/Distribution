@@ -20,7 +20,7 @@ object VRLayer {
     val __obj = js.Dynamic.literal()
     if (leftBounds != null) __obj.updateDynamic("leftBounds")(leftBounds.asInstanceOf[js.Any])
     if (rightBounds != null) __obj.updateDynamic("rightBounds")(rightBounds.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[VRLayer]
   }
 }

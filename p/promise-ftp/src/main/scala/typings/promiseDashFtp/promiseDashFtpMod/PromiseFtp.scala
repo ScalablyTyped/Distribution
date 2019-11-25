@@ -5,7 +5,6 @@ import typings.ftp.ftpMod.Options
 import typings.node.Buffer
 import typings.node.NodeJS.ReadableStream
 import typings.promiseDashFtp.Anon_Code
-import typings.promiseDashFtpDashCommon.promiseDashFtpDashCommonMod.STATUSES
 import typings.std.Date
 import typings.std.Error
 import scala.scalajs.js
@@ -83,7 +82,7 @@ trait PromiseFtp extends js.Object {
     */
   def get(path: String): typings.bluebird.bluebirdMod.^[ReadableStream] = js.native
   def get(path: String, useCompression: Boolean): typings.bluebird.bluebirdMod.^[ReadableStream] = js.native
-  def getConnectionStatus(): STATUSES = js.native
+  def getConnectionStatus(): typings.promiseDashFtpDashCommon.promiseDashFtpDashCommonMod.STATUSES = js.native
   /**
     * Extended commands (RFC 3659)
     * Retrieve the last modified date and time for a file or directory.

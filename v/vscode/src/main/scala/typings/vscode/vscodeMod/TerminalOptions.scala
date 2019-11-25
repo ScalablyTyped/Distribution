@@ -58,12 +58,12 @@ object TerminalOptions {
   ): TerminalOptions = {
     val __obj = js.Dynamic.literal()
     if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
-    if (env != null) __obj.updateDynamic("env")(env)
-    if (!js.isUndefined(hideFromUser)) __obj.updateDynamic("hideFromUser")(hideFromUser)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideFromUser)) __obj.updateDynamic("hideFromUser")(hideFromUser.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (shellArgs != null) __obj.updateDynamic("shellArgs")(shellArgs.asInstanceOf[js.Any])
-    if (shellPath != null) __obj.updateDynamic("shellPath")(shellPath)
-    if (!js.isUndefined(strictEnv)) __obj.updateDynamic("strictEnv")(strictEnv)
+    if (shellPath != null) __obj.updateDynamic("shellPath")(shellPath.asInstanceOf[js.Any])
+    if (!js.isUndefined(strictEnv)) __obj.updateDynamic("strictEnv")(strictEnv.asInstanceOf[js.Any])
     __obj.asInstanceOf[TerminalOptions]
   }
 }

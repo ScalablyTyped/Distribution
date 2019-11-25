@@ -34,17 +34,17 @@ object FancyBoxInternationalizatioObject {
     ZOOM: String = null
   ): FancyBoxInternationalizatioObject = {
     val __obj = js.Dynamic.literal()
-    if (CLOSE != null) __obj.updateDynamic("CLOSE")(CLOSE)
-    if (DOWNLOAD != null) __obj.updateDynamic("DOWNLOAD")(DOWNLOAD)
-    if (ERROR != null) __obj.updateDynamic("ERROR")(ERROR)
-    if (FULL_SCREEN != null) __obj.updateDynamic("FULL_SCREEN")(FULL_SCREEN)
-    if (NEXT != null) __obj.updateDynamic("NEXT")(NEXT)
-    if (PLAY_START != null) __obj.updateDynamic("PLAY_START")(PLAY_START)
-    if (PLAY_STOP != null) __obj.updateDynamic("PLAY_STOP")(PLAY_STOP)
-    if (PREV != null) __obj.updateDynamic("PREV")(PREV)
-    if (SHARE != null) __obj.updateDynamic("SHARE")(SHARE)
-    if (THUMBS != null) __obj.updateDynamic("THUMBS")(THUMBS)
-    if (ZOOM != null) __obj.updateDynamic("ZOOM")(ZOOM)
+    if (CLOSE != null) __obj.updateDynamic("CLOSE")(CLOSE.asInstanceOf[js.Any])
+    if (DOWNLOAD != null) __obj.updateDynamic("DOWNLOAD")(DOWNLOAD.asInstanceOf[js.Any])
+    if (ERROR != null) __obj.updateDynamic("ERROR")(ERROR.asInstanceOf[js.Any])
+    if (FULL_SCREEN != null) __obj.updateDynamic("FULL_SCREEN")(FULL_SCREEN.asInstanceOf[js.Any])
+    if (NEXT != null) __obj.updateDynamic("NEXT")(NEXT.asInstanceOf[js.Any])
+    if (PLAY_START != null) __obj.updateDynamic("PLAY_START")(PLAY_START.asInstanceOf[js.Any])
+    if (PLAY_STOP != null) __obj.updateDynamic("PLAY_STOP")(PLAY_STOP.asInstanceOf[js.Any])
+    if (PREV != null) __obj.updateDynamic("PREV")(PREV.asInstanceOf[js.Any])
+    if (SHARE != null) __obj.updateDynamic("SHARE")(SHARE.asInstanceOf[js.Any])
+    if (THUMBS != null) __obj.updateDynamic("THUMBS")(THUMBS.asInstanceOf[js.Any])
+    if (ZOOM != null) __obj.updateDynamic("ZOOM")(ZOOM.asInstanceOf[js.Any])
     __obj.asInstanceOf[FancyBoxInternationalizatioObject]
   }
 }

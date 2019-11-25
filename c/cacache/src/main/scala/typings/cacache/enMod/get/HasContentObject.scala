@@ -13,7 +13,7 @@ trait HasContentObject extends js.Object {
 object HasContentObject {
   @scala.inline
   def apply(size: Double, sri: Anon_Algorithm): HasContentObject = {
-    val __obj = js.Dynamic.literal(size = size, sri = sri)
+    val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any], sri = sri.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HasContentObject]
   }

@@ -47,13 +47,13 @@ object PNotifyButtons {
     sticker_hover: js.UndefOr[Boolean] = js.undefined
   ): PNotifyButtons = {
     val __obj = js.Dynamic.literal()
-    if (classes != null) __obj.updateDynamic("classes")(classes)
-    if (!js.isUndefined(closer)) __obj.updateDynamic("closer")(closer)
-    if (!js.isUndefined(closer_hover)) __obj.updateDynamic("closer_hover")(closer_hover)
-    if (labels != null) __obj.updateDynamic("labels")(labels)
-    if (!js.isUndefined(show_on_nonblock)) __obj.updateDynamic("show_on_nonblock")(show_on_nonblock)
-    if (!js.isUndefined(sticker)) __obj.updateDynamic("sticker")(sticker)
-    if (!js.isUndefined(sticker_hover)) __obj.updateDynamic("sticker_hover")(sticker_hover)
+    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
+    if (!js.isUndefined(closer)) __obj.updateDynamic("closer")(closer.asInstanceOf[js.Any])
+    if (!js.isUndefined(closer_hover)) __obj.updateDynamic("closer_hover")(closer_hover.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (!js.isUndefined(show_on_nonblock)) __obj.updateDynamic("show_on_nonblock")(show_on_nonblock.asInstanceOf[js.Any])
+    if (!js.isUndefined(sticker)) __obj.updateDynamic("sticker")(sticker.asInstanceOf[js.Any])
+    if (!js.isUndefined(sticker_hover)) __obj.updateDynamic("sticker_hover")(sticker_hover.asInstanceOf[js.Any])
     __obj.asInstanceOf[PNotifyButtons]
   }
 }

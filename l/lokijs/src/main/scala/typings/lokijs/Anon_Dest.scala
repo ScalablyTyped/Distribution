@@ -17,7 +17,7 @@ object Anon_Dest {
   ): Anon_Dest = {
     val __obj = js.Dynamic.literal()
     if (inflate != null) __obj.updateDynamic("inflate")(js.Any.fromFunction2(inflate))
-    if (proto != null) __obj.updateDynamic("proto")(proto)
+    if (proto != null) __obj.updateDynamic("proto")(proto.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Dest]
   }
 }

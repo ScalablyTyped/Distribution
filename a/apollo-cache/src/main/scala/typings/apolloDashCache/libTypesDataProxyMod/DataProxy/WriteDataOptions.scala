@@ -13,7 +13,7 @@ object WriteDataOptions {
   @scala.inline
   def apply[TData](data: TData, id: String = null): WriteDataOptions[TData] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[WriteDataOptions[TData]]
   }
 }

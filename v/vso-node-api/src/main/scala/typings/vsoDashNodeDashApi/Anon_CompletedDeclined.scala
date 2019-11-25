@@ -23,7 +23,7 @@ object Anon_CompletedDeclined {
     paused: Double,
     unspecified: Double
   ): Anon_CompletedDeclined = {
-    val __obj = js.Dynamic.literal(completed = completed, declined = declined, inProgress = inProgress, notStarted = notStarted, paused = paused, unspecified = unspecified)
+    val __obj = js.Dynamic.literal(completed = completed.asInstanceOf[js.Any], declined = declined.asInstanceOf[js.Any], inProgress = inProgress.asInstanceOf[js.Any], notStarted = notStarted.asInstanceOf[js.Any], paused = paused.asInstanceOf[js.Any], unspecified = unspecified.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CompletedDeclined]
   }

@@ -13,7 +13,7 @@ object ListSendAsResponse {
   @scala.inline
   def apply(sendAs: js.Array[SendAs] = null): ListSendAsResponse = {
     val __obj = js.Dynamic.literal()
-    if (sendAs != null) __obj.updateDynamic("sendAs")(sendAs)
+    if (sendAs != null) __obj.updateDynamic("sendAs")(sendAs.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListSendAsResponse]
   }
 }

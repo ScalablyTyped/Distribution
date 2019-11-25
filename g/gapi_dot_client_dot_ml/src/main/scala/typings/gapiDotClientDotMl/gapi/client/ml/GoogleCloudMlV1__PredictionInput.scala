@@ -73,16 +73,16 @@ object GoogleCloudMlV1__PredictionInput {
     versionName: String = null
   ): GoogleCloudMlV1__PredictionInput = {
     val __obj = js.Dynamic.literal()
-    if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize)
-    if (dataFormat != null) __obj.updateDynamic("dataFormat")(dataFormat)
-    if (inputPaths != null) __obj.updateDynamic("inputPaths")(inputPaths)
-    if (maxWorkerCount != null) __obj.updateDynamic("maxWorkerCount")(maxWorkerCount)
-    if (modelName != null) __obj.updateDynamic("modelName")(modelName)
-    if (outputPath != null) __obj.updateDynamic("outputPath")(outputPath)
-    if (region != null) __obj.updateDynamic("region")(region)
-    if (runtimeVersion != null) __obj.updateDynamic("runtimeVersion")(runtimeVersion)
-    if (uri != null) __obj.updateDynamic("uri")(uri)
-    if (versionName != null) __obj.updateDynamic("versionName")(versionName)
+    if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
+    if (dataFormat != null) __obj.updateDynamic("dataFormat")(dataFormat.asInstanceOf[js.Any])
+    if (inputPaths != null) __obj.updateDynamic("inputPaths")(inputPaths.asInstanceOf[js.Any])
+    if (maxWorkerCount != null) __obj.updateDynamic("maxWorkerCount")(maxWorkerCount.asInstanceOf[js.Any])
+    if (modelName != null) __obj.updateDynamic("modelName")(modelName.asInstanceOf[js.Any])
+    if (outputPath != null) __obj.updateDynamic("outputPath")(outputPath.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    if (runtimeVersion != null) __obj.updateDynamic("runtimeVersion")(runtimeVersion.asInstanceOf[js.Any])
+    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
+    if (versionName != null) __obj.updateDynamic("versionName")(versionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudMlV1__PredictionInput]
   }
 }

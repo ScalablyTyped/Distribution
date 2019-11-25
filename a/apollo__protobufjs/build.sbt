@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "apollo__protobufjs"
-version := "1.0.3-b8e6ba"
+version := "1.0.3-1938e4"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "long" % "4.0.0-dt-20190322Z-f5282e",
-  "org.scalablytyped" %%% "std" % "3.7-1c17cf")
+  "org.scalablytyped" %%% "long" % "4.0.0-dt-20190322Z-ae878f",
+  "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

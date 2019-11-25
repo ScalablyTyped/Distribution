@@ -38,15 +38,15 @@ object ID3PieOptions {
     size: Anon_CanvasHeight = null,
     tooltips: Anon_Caption = null
   ): ID3PieOptions = {
-    val __obj = js.Dynamic.literal(data = data)
-    if (callbacks != null) __obj.updateDynamic("callbacks")(callbacks)
-    if (effects != null) __obj.updateDynamic("effects")(effects)
-    if (footer != null) __obj.updateDynamic("footer")(footer)
-    if (header != null) __obj.updateDynamic("header")(header)
-    if (labels != null) __obj.updateDynamic("labels")(labels)
-    if (misc != null) __obj.updateDynamic("misc")(misc)
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (tooltips != null) __obj.updateDynamic("tooltips")(tooltips)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
+    if (callbacks != null) __obj.updateDynamic("callbacks")(callbacks.asInstanceOf[js.Any])
+    if (effects != null) __obj.updateDynamic("effects")(effects.asInstanceOf[js.Any])
+    if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (misc != null) __obj.updateDynamic("misc")(misc.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (tooltips != null) __obj.updateDynamic("tooltips")(tooltips.asInstanceOf[js.Any])
     __obj.asInstanceOf[ID3PieOptions]
   }
 }

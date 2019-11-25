@@ -25,8 +25,8 @@ object InitializeResult {
     */
   /* custom */ StringDictionary[js.Any] = null
   ): InitializeResult = {
-    val __obj = js.Dynamic.literal(capabilities = capabilities)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(capabilities = capabilities.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[InitializeResult]
   }
 }

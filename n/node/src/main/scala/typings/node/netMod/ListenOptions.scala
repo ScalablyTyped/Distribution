@@ -32,13 +32,13 @@ object ListenOptions {
   ): ListenOptions = {
     val __obj = js.Dynamic.literal()
     if (backlog != null) __obj.updateDynamic("backlog")(backlog.asInstanceOf[js.Any])
-    if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (!js.isUndefined(ipv6Only)) __obj.updateDynamic("ipv6Only")(ipv6Only)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (!js.isUndefined(ipv6Only)) __obj.updateDynamic("ipv6Only")(ipv6Only.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (!js.isUndefined(readableAll)) __obj.updateDynamic("readableAll")(readableAll)
-    if (!js.isUndefined(writableAll)) __obj.updateDynamic("writableAll")(writableAll)
+    if (!js.isUndefined(readableAll)) __obj.updateDynamic("readableAll")(readableAll.asInstanceOf[js.Any])
+    if (!js.isUndefined(writableAll)) __obj.updateDynamic("writableAll")(writableAll.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListenOptions]
   }
 }

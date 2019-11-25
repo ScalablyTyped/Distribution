@@ -13,7 +13,7 @@ trait UpdateSuccess extends js.Object {
 object UpdateSuccess {
   @scala.inline
   def apply(status: String, token: String, uuid: String): UpdateSuccess = {
-    val __obj = js.Dynamic.literal(status = status, token = token, uuid = uuid)
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UpdateSuccess]
   }

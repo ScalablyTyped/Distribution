@@ -11,7 +11,7 @@ trait Anon_FontWeight extends js.Object {
 object Anon_FontWeight {
   @scala.inline
   def apply(fontWeight: String): Anon_FontWeight = {
-    val __obj = js.Dynamic.literal(fontWeight = fontWeight)
+    val __obj = js.Dynamic.literal(fontWeight = fontWeight.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FontWeight]
   }

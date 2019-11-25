@@ -31,17 +31,17 @@ object ErrorLoggerOptionsWithWinstonInstance {
     requestFilter: (/* req */ FilterRequest, /* propName */ String) => js.Any = null,
     requestWhitelist: js.Array[String] = null
   ): ErrorLoggerOptionsWithWinstonInstance = {
-    val __obj = js.Dynamic.literal(winstonInstance = winstonInstance)
-    if (baseMeta != null) __obj.updateDynamic("baseMeta")(baseMeta)
+    val __obj = js.Dynamic.literal(winstonInstance = winstonInstance.asInstanceOf[js.Any])
+    if (baseMeta != null) __obj.updateDynamic("baseMeta")(baseMeta.asInstanceOf[js.Any])
     if (dynamicMeta != null) __obj.updateDynamic("dynamicMeta")(js.Any.fromFunction3(dynamicMeta))
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (!js.isUndefined(meta)) __obj.updateDynamic("meta")(meta)
-    if (metaField != null) __obj.updateDynamic("metaField")(metaField)
+    if (!js.isUndefined(meta)) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
+    if (metaField != null) __obj.updateDynamic("metaField")(metaField.asInstanceOf[js.Any])
     if (msg != null) __obj.updateDynamic("msg")(msg.asInstanceOf[js.Any])
-    if (requestField != null) __obj.updateDynamic("requestField")(requestField)
+    if (requestField != null) __obj.updateDynamic("requestField")(requestField.asInstanceOf[js.Any])
     if (requestFilter != null) __obj.updateDynamic("requestFilter")(js.Any.fromFunction2(requestFilter))
-    if (requestWhitelist != null) __obj.updateDynamic("requestWhitelist")(requestWhitelist)
+    if (requestWhitelist != null) __obj.updateDynamic("requestWhitelist")(requestWhitelist.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorLoggerOptionsWithWinstonInstance]
   }
 }

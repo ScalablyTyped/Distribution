@@ -29,8 +29,8 @@ object MusicLibraryResponseType {
   @scala.inline
   def apply(items: js.Array[Item] = null, representative: Item = null, types: Int | Double = null): MusicLibraryResponseType = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (representative != null) __obj.updateDynamic("representative")(representative)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (representative != null) __obj.updateDynamic("representative")(representative.asInstanceOf[js.Any])
     if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
     __obj.asInstanceOf[MusicLibraryResponseType]
   }

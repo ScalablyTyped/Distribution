@@ -14,7 +14,7 @@ trait Anon_Annotation extends js.Object {
 object Anon_Annotation {
   @scala.inline
   def apply(annotation: Directive, metadata: CompileDirectiveMetadata): Anon_Annotation = {
-    val __obj = js.Dynamic.literal(annotation = annotation, metadata = metadata)
+    val __obj = js.Dynamic.literal(annotation = annotation.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Annotation]
   }

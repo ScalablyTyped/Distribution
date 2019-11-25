@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait MicrosoftStoreForBusinessLicenseType extends js.Object
 
+object MicrosoftStoreForBusinessLicenseType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def offline: typings.microsoftDashGraph.microsoftDashGraphStrings.offline = this.cast("offline")
+  @scala.inline
+  def online: typings.microsoftDashGraph.microsoftDashGraphStrings.online = this.cast("online")
+}
+

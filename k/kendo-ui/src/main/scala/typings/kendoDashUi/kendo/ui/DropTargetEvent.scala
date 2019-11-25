@@ -16,9 +16,9 @@ object DropTargetEvent {
   @scala.inline
   def apply(draggable: Draggable = null, dropTarget: JQuery = null, sender: DropTarget = null): DropTargetEvent = {
     val __obj = js.Dynamic.literal()
-    if (draggable != null) __obj.updateDynamic("draggable")(draggable)
-    if (dropTarget != null) __obj.updateDynamic("dropTarget")(dropTarget)
-    if (sender != null) __obj.updateDynamic("sender")(sender)
+    if (draggable != null) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
+    if (dropTarget != null) __obj.updateDynamic("dropTarget")(dropTarget.asInstanceOf[js.Any])
+    if (sender != null) __obj.updateDynamic("sender")(sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropTargetEvent]
   }
 }

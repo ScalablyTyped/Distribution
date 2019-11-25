@@ -12,8 +12,8 @@ trait AuthOptions extends js.Object {
 object AuthOptions {
   @scala.inline
   def apply(api_key: String, domain: String = null): AuthOptions = {
-    val __obj = js.Dynamic.literal(api_key = api_key)
-    if (domain != null) __obj.updateDynamic("domain")(domain)
+    val __obj = js.Dynamic.literal(api_key = api_key.asInstanceOf[js.Any])
+    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthOptions]
   }
 }

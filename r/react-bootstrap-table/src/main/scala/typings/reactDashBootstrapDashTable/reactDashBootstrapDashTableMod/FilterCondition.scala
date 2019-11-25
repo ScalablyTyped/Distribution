@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait FilterCondition extends js.Object
 
+object FilterCondition {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def eq: typings.reactDashBootstrapDashTable.reactDashBootstrapDashTableStrings.eq = this.cast("eq")
+  @scala.inline
+  def like: typings.reactDashBootstrapDashTable.reactDashBootstrapDashTableStrings.like = this.cast("like")
+}
+

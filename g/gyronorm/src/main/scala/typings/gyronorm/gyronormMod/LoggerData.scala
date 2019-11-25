@@ -12,7 +12,7 @@ trait LoggerData extends js.Object {
 object LoggerData {
   @scala.inline
   def apply(code: Double, message: String): LoggerData = {
-    val __obj = js.Dynamic.literal(code = code, message = message)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LoggerData]
   }

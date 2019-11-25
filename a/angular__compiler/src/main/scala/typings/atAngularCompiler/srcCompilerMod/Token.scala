@@ -1,6 +1,5 @@
 package typings.atAngularCompiler.srcCompilerMod
 
-import typings.atAngularCompiler.srcExpressionUnderscoreParserLexerMod.TokenType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class Token protected ()
   extends typings.atAngularCompiler.srcExpressionUnderscoreParserLexerMod.Token {
-  def this(index: Double, `type`: TokenType, numValue: Double, strValue: String) = this()
+  def this(
+    index: Double,
+    `type`: typings.atAngularCompiler.srcExpressionUnderscoreParserLexerMod.TokenType,
+    numValue: Double,
+    strValue: String
+  ) = this()
 }
 

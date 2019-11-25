@@ -27,11 +27,11 @@ object Value {
     subtableName: String = null
   ): Value = {
     val __obj = js.Dynamic.literal()
-    if (carrierRateName != null) __obj.updateDynamic("carrierRateName")(carrierRateName)
-    if (flatRate != null) __obj.updateDynamic("flatRate")(flatRate)
-    if (!js.isUndefined(noShipping)) __obj.updateDynamic("noShipping")(noShipping)
-    if (pricePercentage != null) __obj.updateDynamic("pricePercentage")(pricePercentage)
-    if (subtableName != null) __obj.updateDynamic("subtableName")(subtableName)
+    if (carrierRateName != null) __obj.updateDynamic("carrierRateName")(carrierRateName.asInstanceOf[js.Any])
+    if (flatRate != null) __obj.updateDynamic("flatRate")(flatRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(noShipping)) __obj.updateDynamic("noShipping")(noShipping.asInstanceOf[js.Any])
+    if (pricePercentage != null) __obj.updateDynamic("pricePercentage")(pricePercentage.asInstanceOf[js.Any])
+    if (subtableName != null) __obj.updateDynamic("subtableName")(subtableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Value]
   }
 }

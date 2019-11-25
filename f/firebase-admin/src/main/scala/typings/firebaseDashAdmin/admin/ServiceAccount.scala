@@ -14,9 +14,9 @@ object ServiceAccount {
   @scala.inline
   def apply(clientEmail: String = null, privateKey: String = null, projectId: String = null): ServiceAccount = {
     val __obj = js.Dynamic.literal()
-    if (clientEmail != null) __obj.updateDynamic("clientEmail")(clientEmail)
-    if (privateKey != null) __obj.updateDynamic("privateKey")(privateKey)
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
+    if (clientEmail != null) __obj.updateDynamic("clientEmail")(clientEmail.asInstanceOf[js.Any])
+    if (privateKey != null) __obj.updateDynamic("privateKey")(privateKey.asInstanceOf[js.Any])
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceAccount]
   }
 }

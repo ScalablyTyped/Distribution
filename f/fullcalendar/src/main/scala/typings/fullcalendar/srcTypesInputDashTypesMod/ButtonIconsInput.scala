@@ -15,10 +15,10 @@ object ButtonIconsInput {
   @scala.inline
   def apply(next: String = null, nextYear: String = null, prev: String = null, prevYear: String = null): ButtonIconsInput = {
     val __obj = js.Dynamic.literal()
-    if (next != null) __obj.updateDynamic("next")(next)
-    if (nextYear != null) __obj.updateDynamic("nextYear")(nextYear)
-    if (prev != null) __obj.updateDynamic("prev")(prev)
-    if (prevYear != null) __obj.updateDynamic("prevYear")(prevYear)
+    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
+    if (nextYear != null) __obj.updateDynamic("nextYear")(nextYear.asInstanceOf[js.Any])
+    if (prev != null) __obj.updateDynamic("prev")(prev.asInstanceOf[js.Any])
+    if (prevYear != null) __obj.updateDynamic("prevYear")(prevYear.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonIconsInput]
   }
 }

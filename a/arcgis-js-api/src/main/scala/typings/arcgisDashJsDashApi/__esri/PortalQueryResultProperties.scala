@@ -40,9 +40,9 @@ object PortalQueryResultProperties {
     total: Int | Double = null
   ): PortalQueryResultProperties = {
     val __obj = js.Dynamic.literal()
-    if (nextQueryParams != null) __obj.updateDynamic("nextQueryParams")(nextQueryParams)
-    if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams)
-    if (results != null) __obj.updateDynamic("results")(results)
+    if (nextQueryParams != null) __obj.updateDynamic("nextQueryParams")(nextQueryParams.asInstanceOf[js.Any])
+    if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams.asInstanceOf[js.Any])
+    if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
     if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
     __obj.asInstanceOf[PortalQueryResultProperties]
   }

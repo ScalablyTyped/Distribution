@@ -20,8 +20,8 @@ trait _RoutingRule extends js.Object {
 object _RoutingRule {
   @scala.inline
   def apply(Redirect: _Redirect, Condition: _Condition = null): _RoutingRule = {
-    val __obj = js.Dynamic.literal(Redirect = Redirect)
-    if (Condition != null) __obj.updateDynamic("Condition")(Condition)
+    val __obj = js.Dynamic.literal(Redirect = Redirect.asInstanceOf[js.Any])
+    if (Condition != null) __obj.updateDynamic("Condition")(Condition.asInstanceOf[js.Any])
     __obj.asInstanceOf[_RoutingRule]
   }
 }

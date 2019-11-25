@@ -13,7 +13,7 @@ trait SendJobResponse extends js.Object {
 object SendJobResponse {
   @scala.inline
   def apply(events: JobEventsConfig, variables: StringDictionary[String]): SendJobResponse = {
-    val __obj = js.Dynamic.literal(events = events, variables = variables)
+    val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SendJobResponse]
   }

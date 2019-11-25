@@ -1,7 +1,6 @@
 package typings.openpgp.openpgpMod.packet
 
 import typings.openpgp.Integer
-import typings.openpgp.openpgpMod.enums.signature
 import typings.std.Date
 import typings.std.Uint8Array
 import scala.scalajs.js
@@ -50,8 +49,8 @@ class Signature protected () extends js.Object {
     * @returns
     */
   def sign(key: SecretKey, data: js.Object): js.Promise[Boolean] = js.native
-  def verify(key: PublicKey, signatureType: signature, data: String): js.Promise[Boolean] = js.native
-  def verify(key: PublicKey, signatureType: signature, data: js.Object): js.Promise[Boolean] = js.native
+  def verify(key: PublicKey, signatureType: typings.openpgp.openpgpMod.enums.signature, data: String): js.Promise[Boolean] = js.native
+  def verify(key: PublicKey, signatureType: typings.openpgp.openpgpMod.enums.signature, data: js.Object): js.Promise[Boolean] = js.native
   /**
     * verifys the signature packet. Note: not signature types are implemented
     * @param key the public key to verify the signature
@@ -59,12 +58,12 @@ class Signature protected () extends js.Object {
     * @param data data which on the signature applies
     * @returns True if message is verified, else false.
     */
-  def verify(key: PublicSubkey, signatureType: signature, data: String): js.Promise[Boolean] = js.native
-  def verify(key: PublicSubkey, signatureType: signature, data: js.Object): js.Promise[Boolean] = js.native
-  def verify(key: SecretKey, signatureType: signature, data: String): js.Promise[Boolean] = js.native
-  def verify(key: SecretKey, signatureType: signature, data: js.Object): js.Promise[Boolean] = js.native
-  def verify(key: SecretSubkey, signatureType: signature, data: String): js.Promise[Boolean] = js.native
-  def verify(key: SecretSubkey, signatureType: signature, data: js.Object): js.Promise[Boolean] = js.native
+  def verify(key: PublicSubkey, signatureType: typings.openpgp.openpgpMod.enums.signature, data: String): js.Promise[Boolean] = js.native
+  def verify(key: PublicSubkey, signatureType: typings.openpgp.openpgpMod.enums.signature, data: js.Object): js.Promise[Boolean] = js.native
+  def verify(key: SecretKey, signatureType: typings.openpgp.openpgpMod.enums.signature, data: String): js.Promise[Boolean] = js.native
+  def verify(key: SecretKey, signatureType: typings.openpgp.openpgpMod.enums.signature, data: js.Object): js.Promise[Boolean] = js.native
+  def verify(key: SecretSubkey, signatureType: typings.openpgp.openpgpMod.enums.signature, data: String): js.Promise[Boolean] = js.native
+  def verify(key: SecretSubkey, signatureType: typings.openpgp.openpgpMod.enums.signature, data: js.Object): js.Promise[Boolean] = js.native
   /**
     * Creates Uint8Array of bytes of all subpacket data except Issuer and Embedded Signature subpackets
     * @returns subpacket data

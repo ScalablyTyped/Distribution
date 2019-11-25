@@ -17,7 +17,7 @@ trait TypeofPropertyBinding extends js.Object {
 object TypeofPropertyBinding {
   @scala.inline
   def apply(Composite: Instantiable2[/* targetGroup */ js.Any, /* path */ js.Any, Composite]): TypeofPropertyBinding = {
-    val __obj = js.Dynamic.literal(Composite = Composite)
+    val __obj = js.Dynamic.literal(Composite = Composite.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeofPropertyBinding]
   }

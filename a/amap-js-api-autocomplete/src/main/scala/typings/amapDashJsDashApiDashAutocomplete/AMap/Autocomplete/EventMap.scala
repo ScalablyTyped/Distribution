@@ -38,7 +38,7 @@ object EventMap {
     error: Event[error, Anon_Info],
     select: Event[select, Anon_Tip]
   ): EventMap = {
-    val __obj = js.Dynamic.literal(choose = choose, complete = complete, error = error, select = select)
+    val __obj = js.Dynamic.literal(choose = choose.asInstanceOf[js.Any], complete = complete.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EventMap]
   }

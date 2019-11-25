@@ -12,7 +12,7 @@ trait IResolvedState extends js.Object {
 object IResolvedState {
   @scala.inline
   def apply(locals: Anon_Globals): IResolvedState = {
-    val __obj = js.Dynamic.literal(locals = locals)
+    val __obj = js.Dynamic.literal(locals = locals.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IResolvedState]
   }

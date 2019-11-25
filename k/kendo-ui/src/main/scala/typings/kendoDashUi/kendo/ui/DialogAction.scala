@@ -14,9 +14,9 @@ object DialogAction {
   @scala.inline
   def apply(action: js.Function = null, primary: js.UndefOr[Boolean] = js.undefined, text: String = null): DialogAction = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action)
-    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogAction]
   }
 }

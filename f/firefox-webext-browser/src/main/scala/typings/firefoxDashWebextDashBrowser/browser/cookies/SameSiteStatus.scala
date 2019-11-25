@@ -17,3 +17,14 @@ import scala.scalajs.js.annotation._
 */
 trait SameSiteStatus extends js.Object
 
+object SameSiteStatus {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def lax: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.lax = this.cast("lax")
+  @scala.inline
+  def no_restriction: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.no_restriction = this.cast("no_restriction")
+  @scala.inline
+  def strict: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.strict = this.cast("strict")
+}
+

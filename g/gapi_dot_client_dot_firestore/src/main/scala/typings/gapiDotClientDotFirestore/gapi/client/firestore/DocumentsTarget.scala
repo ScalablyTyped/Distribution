@@ -18,7 +18,7 @@ object DocumentsTarget {
   @scala.inline
   def apply(documents: js.Array[String] = null): DocumentsTarget = {
     val __obj = js.Dynamic.literal()
-    if (documents != null) __obj.updateDynamic("documents")(documents)
+    if (documents != null) __obj.updateDynamic("documents")(documents.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentsTarget]
   }
 }

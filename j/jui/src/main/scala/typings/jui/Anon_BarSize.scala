@@ -85,16 +85,16 @@ object Anon_BarSize {
   ): Anon_BarSize = {
     val __obj = js.Dynamic.literal()
     if (barSize != null) __obj.updateDynamic("barSize")(barSize.asInstanceOf[js.Any])
-    if (barStyle != null) __obj.updateDynamic("barStyle")(barStyle)
+    if (barStyle != null) __obj.updateDynamic("barStyle")(barStyle.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (event != null) __obj.updateDynamic("event")(event)
-    if (!js.isUndefined(fixed)) __obj.updateDynamic("fixed")(fixed)
-    if (hideClass != null) __obj.updateDynamic("hideClass")(hideClass)
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixed)) __obj.updateDynamic("fixed")(fixed.asInstanceOf[js.Any])
+    if (hideClass != null) __obj.updateDynamic("hideClass")(hideClass.asInstanceOf[js.Any])
     if (initSize != null) __obj.updateDynamic("initSize")(initSize.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (minSize != null) __obj.updateDynamic("minSize")(minSize.asInstanceOf[js.Any])
-    if (splitterClass != null) __obj.updateDynamic("splitterClass")(splitterClass)
-    if (tpl != null) __obj.updateDynamic("tpl")(tpl)
+    if (splitterClass != null) __obj.updateDynamic("splitterClass")(splitterClass.asInstanceOf[js.Any])
+    if (tpl != null) __obj.updateDynamic("tpl")(tpl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BarSize]
   }
 }

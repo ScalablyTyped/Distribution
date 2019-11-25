@@ -18,8 +18,8 @@ object EmbeddedChart {
   def apply(chartId: Int | Double = null, position: EmbeddedObjectPosition = null, spec: ChartSpec = null): EmbeddedChart = {
     val __obj = js.Dynamic.literal()
     if (chartId != null) __obj.updateDynamic("chartId")(chartId.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (spec != null) __obj.updateDynamic("spec")(spec)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (spec != null) __obj.updateDynamic("spec")(spec.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmbeddedChart]
   }
 }

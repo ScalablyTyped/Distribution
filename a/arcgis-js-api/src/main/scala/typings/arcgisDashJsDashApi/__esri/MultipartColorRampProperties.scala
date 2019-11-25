@@ -17,7 +17,7 @@ object MultipartColorRampProperties {
   @scala.inline
   def apply(colorRamps: js.Array[AlgorithmicColorRampProperties] = null): MultipartColorRampProperties = {
     val __obj = js.Dynamic.literal()
-    if (colorRamps != null) __obj.updateDynamic("colorRamps")(colorRamps)
+    if (colorRamps != null) __obj.updateDynamic("colorRamps")(colorRamps.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultipartColorRampProperties]
   }
 }

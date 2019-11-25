@@ -17,12 +17,12 @@ trait DigestMd5Mechanism extends Mechanism {
 object DigestMd5Mechanism {
   @scala.inline
   def apply(
-    challenge: String => DigestMd5Mechanism,
+    challenge: String => Unit,
     clientFirst: `false`,
     name: `DIGEST-MD5`,
     response: Credentials => String
   ): DigestMd5Mechanism = {
-    val __obj = js.Dynamic.literal(challenge = js.Any.fromFunction1(challenge), clientFirst = clientFirst, name = name, response = js.Any.fromFunction1(response))
+    val __obj = js.Dynamic.literal(challenge = js.Any.fromFunction1(challenge), clientFirst = clientFirst.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], response = js.Any.fromFunction1(response))
   
     __obj.asInstanceOf[DigestMd5Mechanism]
   }

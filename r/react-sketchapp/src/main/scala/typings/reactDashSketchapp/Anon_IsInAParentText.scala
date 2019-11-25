@@ -11,7 +11,7 @@ trait Anon_IsInAParentText extends js.Object {
 object Anon_IsInAParentText {
   @scala.inline
   def apply(isInAParentText: Boolean): Anon_IsInAParentText = {
-    val __obj = js.Dynamic.literal(isInAParentText = isInAParentText)
+    val __obj = js.Dynamic.literal(isInAParentText = isInAParentText.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IsInAParentText]
   }

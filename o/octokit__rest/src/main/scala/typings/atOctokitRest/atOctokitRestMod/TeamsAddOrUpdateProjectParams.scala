@@ -24,7 +24,7 @@ trait TeamsAddOrUpdateProjectParams extends js.Object {
 object TeamsAddOrUpdateProjectParams {
   @scala.inline
   def apply(project_id: Double, team_id: Double, permission: read | write | admin = null): TeamsAddOrUpdateProjectParams = {
-    val __obj = js.Dynamic.literal(project_id = project_id, team_id = team_id)
+    val __obj = js.Dynamic.literal(project_id = project_id.asInstanceOf[js.Any], team_id = team_id.asInstanceOf[js.Any])
     if (permission != null) __obj.updateDynamic("permission")(permission.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamsAddOrUpdateProjectParams]
   }

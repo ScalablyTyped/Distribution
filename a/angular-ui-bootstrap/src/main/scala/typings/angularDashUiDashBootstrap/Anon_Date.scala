@@ -14,9 +14,9 @@ object Anon_Date {
   @scala.inline
   def apply(date: String = null, `datetime-local`: String = null, month: String = null): Anon_Date = {
     val __obj = js.Dynamic.literal()
-    if (date != null) __obj.updateDynamic("date")(date)
-    if (`datetime-local` != null) __obj.updateDynamic("datetime-local")(`datetime-local`)
-    if (month != null) __obj.updateDynamic("month")(month)
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (`datetime-local` != null) __obj.updateDynamic("datetime-local")(`datetime-local`.asInstanceOf[js.Any])
+    if (month != null) __obj.updateDynamic("month")(month.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Date]
   }
 }

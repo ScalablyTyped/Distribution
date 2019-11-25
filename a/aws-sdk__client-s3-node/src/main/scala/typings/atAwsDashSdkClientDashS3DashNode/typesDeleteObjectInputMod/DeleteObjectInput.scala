@@ -1,6 +1,6 @@
 package typings.atAwsDashSdkClientDashS3DashNode.typesDeleteObjectInputMod
 
-import typings.atAwsDashSdkClientDashS3DashNode.atAwsDashSdkClientDashS3DashNodeStrings.requester
+import typings.atAwsDashSdkClientDashS3DashNode.atAwsDashSdkClientDashS3DashNodeStrings.requester_
 import typings.atAwsDashSdkClientDashS3DashNode.typesInputTypesUnionMod._InputTypesUnion
 import typings.atAwsDashSdkTypes.buildAbortMod.AbortSignal
 import typings.atAwsDashSdkTypes.buildHttpMod.NodeHttpOptions
@@ -70,7 +70,7 @@ trait DeleteObjectInput extends _InputTypesUnion {
   /**
     * <p>Confirms that the requester knows that she or he will be charged for the request. Bucket owners need not specify this parameter in their requests. Documentation on downloading objects from requester pays buckets can be found at http://docs.aws.amazon.com/AmazonS3/latest/dev/ObjectsinRequesterPaysBuckets.html</p>
     */
-  var RequestPayer: js.UndefOr[requester | String] = js.undefined
+  var RequestPayer: js.UndefOr[requester_ | String] = js.undefined
   /**
     * <p>VersionId used to reference a specific version of the object.</p>
     */
@@ -90,20 +90,20 @@ object DeleteObjectInput {
     $useAccelerateEndpoint: js.UndefOr[Boolean] = js.undefined,
     $useDualstackEndpoint: js.UndefOr[Boolean] = js.undefined,
     MFA: String = null,
-    RequestPayer: requester | String = null,
+    RequestPayer: requester_ | String = null,
     VersionId: String = null
   ): DeleteObjectInput = {
-    val __obj = js.Dynamic.literal(Bucket = Bucket, Key = Key)
-    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal)
-    if ($bucketEndpoint != null) __obj.updateDynamic("$bucketEndpoint")($bucketEndpoint)
-    if (!js.isUndefined($forcePathStyle)) __obj.updateDynamic("$forcePathStyle")($forcePathStyle)
-    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions)
+    val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any])
+    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal.asInstanceOf[js.Any])
+    if ($bucketEndpoint != null) __obj.updateDynamic("$bucketEndpoint")($bucketEndpoint.asInstanceOf[js.Any])
+    if (!js.isUndefined($forcePathStyle)) __obj.updateDynamic("$forcePathStyle")($forcePathStyle.asInstanceOf[js.Any])
+    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions.asInstanceOf[js.Any])
     if ($maxRetries != null) __obj.updateDynamic("$maxRetries")($maxRetries.asInstanceOf[js.Any])
-    if (!js.isUndefined($useAccelerateEndpoint)) __obj.updateDynamic("$useAccelerateEndpoint")($useAccelerateEndpoint)
-    if (!js.isUndefined($useDualstackEndpoint)) __obj.updateDynamic("$useDualstackEndpoint")($useDualstackEndpoint)
-    if (MFA != null) __obj.updateDynamic("MFA")(MFA)
+    if (!js.isUndefined($useAccelerateEndpoint)) __obj.updateDynamic("$useAccelerateEndpoint")($useAccelerateEndpoint.asInstanceOf[js.Any])
+    if (!js.isUndefined($useDualstackEndpoint)) __obj.updateDynamic("$useDualstackEndpoint")($useDualstackEndpoint.asInstanceOf[js.Any])
+    if (MFA != null) __obj.updateDynamic("MFA")(MFA.asInstanceOf[js.Any])
     if (RequestPayer != null) __obj.updateDynamic("RequestPayer")(RequestPayer.asInstanceOf[js.Any])
-    if (VersionId != null) __obj.updateDynamic("VersionId")(VersionId)
+    if (VersionId != null) __obj.updateDynamic("VersionId")(VersionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteObjectInput]
   }
 }

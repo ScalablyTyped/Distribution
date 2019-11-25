@@ -49,14 +49,14 @@ object IdentifierProps {
     label: String = null,
     modifier: IdentifierModifiers = null
   ): IdentifierProps = {
-    val __obj = js.Dynamic.literal(size = size)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (backgroundImageUrl != null) __obj.updateDynamic("backgroundImageUrl")(backgroundImageUrl)
-    if (className != null) __obj.updateDynamic("className")(className)
+    val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (backgroundImageUrl != null) __obj.updateDynamic("backgroundImageUrl")(backgroundImageUrl.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (glyph != null) __obj.updateDynamic("glyph")(glyph)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (modifier != null) __obj.updateDynamic("modifier")(modifier)
+    if (glyph != null) __obj.updateDynamic("glyph")(glyph.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (modifier != null) __obj.updateDynamic("modifier")(modifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentifierProps]
   }
 }

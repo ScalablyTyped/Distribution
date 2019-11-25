@@ -17,7 +17,7 @@ trait UsersFollowedArtistsResponse extends js.Object {
 object UsersFollowedArtistsResponse {
   @scala.inline
   def apply(artists: CursorBasedPagingObject[ArtistObjectFull]): UsersFollowedArtistsResponse = {
-    val __obj = js.Dynamic.literal(artists = artists)
+    val __obj = js.Dynamic.literal(artists = artists.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UsersFollowedArtistsResponse]
   }

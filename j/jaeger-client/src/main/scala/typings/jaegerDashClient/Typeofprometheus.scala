@@ -16,24 +16,24 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Typeofprometheus extends js.Object {
   var AggregatorRegistry: TypeofClassAggregatorRegistry = js.native
-  var Counter: js.Any | (Instantiable1[
+  var Counter: Instantiable1[
     /* configuration */ CounterConfiguration, 
     typings.promDashClient.promDashClientMod.Counter
-  ]) = js.native
-  var Gauge: js.Any | (Instantiable1[
+  ] = js.native
+  var Gauge: Instantiable1[
     /* configuration */ GaugeConfiguration, 
     typings.promDashClient.promDashClientMod.Gauge
-  ]) = js.native
-  var Histogram: js.Any | (Instantiable1[
+  ] = js.native
+  var Histogram: Instantiable1[
     /* configuration */ HistogramConfiguration, 
     typings.promDashClient.promDashClientMod.Histogram
-  ]) = js.native
-  var Pushgateway: js.Any | (Instantiable1[/* url */ String, typings.promDashClient.promDashClientMod.Pushgateway]) = js.native
+  ] = js.native
+  var Pushgateway: Instantiable1[/* url */ String, typings.promDashClient.promDashClientMod.Pushgateway] = js.native
   var Registry: TypeofClassRegistry = js.native
-  var Summary: js.Any | (Instantiable1[
+  var Summary: Instantiable1[
     /* configuration */ SummaryConfiguration, 
     typings.promDashClient.promDashClientMod.Summary
-  ]) = js.native
+  ] = js.native
   val register: Registry = js.native
   def collectDefaultMetrics(): ReturnType[Fn_Arguments] = js.native
   def collectDefaultMetrics(config: DefaultMetricsCollectorConfiguration): ReturnType[Fn_Arguments] = js.native

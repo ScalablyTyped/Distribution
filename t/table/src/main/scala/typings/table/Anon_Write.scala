@@ -11,7 +11,7 @@ trait Anon_Write extends js.Object {
 object Anon_Write {
   @scala.inline
   def apply(write: js.Array[String]): Anon_Write = {
-    val __obj = js.Dynamic.literal(write = write)
+    val __obj = js.Dynamic.literal(write = write.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Write]
   }

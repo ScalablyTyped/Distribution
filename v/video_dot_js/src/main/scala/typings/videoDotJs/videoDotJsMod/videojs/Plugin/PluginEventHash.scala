@@ -24,7 +24,7 @@ trait PluginEventHash extends js.Object {
 object PluginEventHash {
   @scala.inline
   def apply(instance: typings.videoDotJs.videoDotJsMod.videojs.Plugin, name: String, plugin: String): PluginEventHash = {
-    val __obj = js.Dynamic.literal(instance = instance, name = name, plugin = plugin)
+    val __obj = js.Dynamic.literal(instance = instance.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], plugin = plugin.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PluginEventHash]
   }

@@ -47,7 +47,9 @@ object stripeDashV2Strings {
   sealed trait `final` extends js.Object
   
   @js.native
-  sealed trait name extends StripeApplePayBillingContactField
+  sealed trait name
+    extends StripeApplePayBillingContactField
+       with StripeApplePayShippingContactField
   
   @js.native
   sealed trait pending extends js.Object
@@ -56,7 +58,9 @@ object stripeDashV2Strings {
   sealed trait phone extends StripeApplePayShippingContactField
   
   @js.native
-  sealed trait postalAddress extends StripeApplePayBillingContactField
+  sealed trait postalAddress
+    extends StripeApplePayBillingContactField
+       with StripeApplePayShippingContactField
   
   @js.native
   sealed trait prepaid extends StripeCardDataFunding
@@ -71,7 +75,7 @@ object stripeDashV2Strings {
   sealed trait storePickup extends StripeApplePayShipping
   
   @js.native
-  sealed trait unknown extends StripeCardDataFunding
+  sealed trait unknown_ extends StripeCardDataFunding
   
   @scala.inline
   def `American Express`: `American Express` = "American Express".asInstanceOf[`American Express`]
@@ -114,6 +118,6 @@ object stripeDashV2Strings {
   @scala.inline
   def storePickup: storePickup = "storePickup".asInstanceOf[storePickup]
   @scala.inline
-  def unknown: unknown = "unknown".asInstanceOf[unknown]
+  def unknown_ : unknown_ = "unknown".asInstanceOf[unknown_]
 }
 

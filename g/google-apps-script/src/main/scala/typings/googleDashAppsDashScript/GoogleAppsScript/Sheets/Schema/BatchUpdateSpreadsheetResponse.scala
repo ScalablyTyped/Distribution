@@ -18,9 +18,9 @@ object BatchUpdateSpreadsheetResponse {
     updatedSpreadsheet: typings.googleDashAppsDashScript.GoogleAppsScript.Sheets.Schema.Spreadsheet = null
   ): BatchUpdateSpreadsheetResponse = {
     val __obj = js.Dynamic.literal()
-    if (replies != null) __obj.updateDynamic("replies")(replies)
-    if (spreadsheetId != null) __obj.updateDynamic("spreadsheetId")(spreadsheetId)
-    if (updatedSpreadsheet != null) __obj.updateDynamic("updatedSpreadsheet")(updatedSpreadsheet)
+    if (replies != null) __obj.updateDynamic("replies")(replies.asInstanceOf[js.Any])
+    if (spreadsheetId != null) __obj.updateDynamic("spreadsheetId")(spreadsheetId.asInstanceOf[js.Any])
+    if (updatedSpreadsheet != null) __obj.updateDynamic("updatedSpreadsheet")(updatedSpreadsheet.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchUpdateSpreadsheetResponse]
   }
 }

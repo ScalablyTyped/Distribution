@@ -12,7 +12,7 @@ trait Anon_ANDROID extends js.Object {
 object Anon_ANDROID {
   @scala.inline
   def apply(ANDROID: Anon_ACCEPTHANDOVER, IOS: Anon_BLUETOOTHPERIPHERAL): Anon_ANDROID = {
-    val __obj = js.Dynamic.literal(ANDROID = ANDROID, IOS = IOS)
+    val __obj = js.Dynamic.literal(ANDROID = ANDROID.asInstanceOf[js.Any], IOS = IOS.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ANDROID]
   }

@@ -20,10 +20,10 @@ object ImageZoomDefaultStyles {
     zoomImage: js.Object = null
   ): ImageZoomDefaultStyles = {
     val __obj = js.Dynamic.literal()
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (overlay != null) __obj.updateDynamic("overlay")(overlay)
-    if (zoomContainer != null) __obj.updateDynamic("zoomContainer")(zoomContainer)
-    if (zoomImage != null) __obj.updateDynamic("zoomImage")(zoomImage)
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (overlay != null) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
+    if (zoomContainer != null) __obj.updateDynamic("zoomContainer")(zoomContainer.asInstanceOf[js.Any])
+    if (zoomImage != null) __obj.updateDynamic("zoomImage")(zoomImage.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageZoomDefaultStyles]
   }
 }

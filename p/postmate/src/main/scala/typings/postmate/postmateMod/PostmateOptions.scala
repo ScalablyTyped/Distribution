@@ -35,10 +35,10 @@ object PostmateOptions {
     container: HTMLElement = null,
     model: js.Any = null
   ): PostmateOptions = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (classListArray != null) __obj.updateDynamic("classListArray")(classListArray)
-    if (container != null) __obj.updateDynamic("container")(container)
-    if (model != null) __obj.updateDynamic("model")(model)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (classListArray != null) __obj.updateDynamic("classListArray")(classListArray.asInstanceOf[js.Any])
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostmateOptions]
   }
 }

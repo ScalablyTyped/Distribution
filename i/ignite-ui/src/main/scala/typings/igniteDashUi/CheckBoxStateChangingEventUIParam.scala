@@ -57,15 +57,15 @@ object CheckBoxStateChangingEventUIParam {
     rowSelector: String = null
   ): CheckBoxStateChangingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (currentState != null) __obj.updateDynamic("currentState")(currentState)
-    if (grid != null) __obj.updateDynamic("grid")(grid)
-    if (!js.isUndefined(isHeader)) __obj.updateDynamic("isHeader")(isHeader)
-    if (newState != null) __obj.updateDynamic("newState")(newState)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (row != null) __obj.updateDynamic("row")(row)
+    if (currentState != null) __obj.updateDynamic("currentState")(currentState.asInstanceOf[js.Any])
+    if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
+    if (!js.isUndefined(isHeader)) __obj.updateDynamic("isHeader")(isHeader.asInstanceOf[js.Any])
+    if (newState != null) __obj.updateDynamic("newState")(newState.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
     if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
-    if (rowKey != null) __obj.updateDynamic("rowKey")(rowKey)
-    if (rowSelector != null) __obj.updateDynamic("rowSelector")(rowSelector)
+    if (rowKey != null) __obj.updateDynamic("rowKey")(rowKey.asInstanceOf[js.Any])
+    if (rowSelector != null) __obj.updateDynamic("rowSelector")(rowSelector.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckBoxStateChangingEventUIParam]
   }
 }

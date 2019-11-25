@@ -14,8 +14,8 @@ trait Anon_TabIdTitleNull extends js.Object {
 object Anon_TabIdTitleNull {
   @scala.inline
   def apply(tabId: Double, title: String = null): Anon_TabIdTitleNull = {
-    val __obj = js.Dynamic.literal(tabId = tabId)
-    if (title != null) __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(tabId = tabId.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_TabIdTitleNull]
   }
 }

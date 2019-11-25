@@ -22,11 +22,11 @@ object Anon_AccessToken {
     notificationMethod: String = null
   ): Anon_AccessToken = {
     val __obj = js.Dynamic.literal()
-    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken)
-    if (client_id != null) __obj.updateDynamic("client_id")(client_id)
-    if (client_secret != null) __obj.updateDynamic("client_secret")(client_secret)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (notificationMethod != null) __obj.updateDynamic("notificationMethod")(notificationMethod)
+    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken.asInstanceOf[js.Any])
+    if (client_id != null) __obj.updateDynamic("client_id")(client_id.asInstanceOf[js.Any])
+    if (client_secret != null) __obj.updateDynamic("client_secret")(client_secret.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (notificationMethod != null) __obj.updateDynamic("notificationMethod")(notificationMethod.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AccessToken]
   }
 }

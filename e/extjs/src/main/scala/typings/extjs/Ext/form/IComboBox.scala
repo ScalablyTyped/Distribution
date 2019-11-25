@@ -173,20 +173,16 @@ object IComboBox {
   def apply(
     IPicker: typings.extjs.Ext.form.field.IPicker = null,
     afterQuery: /* queryPlan */ js.UndefOr[js.Any] => Unit = null,
-    afterRender: () => Unit = null,
-    alignPicker: () => Unit = null,
     allQuery: java.lang.String = null,
     anyMatch: js.UndefOr[Boolean] = js.undefined,
     autoSelect: js.UndefOr[Boolean] = js.undefined,
     beforeBlur: () => Unit = null,
     beforeQuery: /* queryPlan */ js.UndefOr[js.Any] => Unit = null,
     beforeReset: () => Unit = null,
-    bindStore: /* store */ js.UndefOr[js.Any] => Unit = null,
-    bindStoreListeners: /* store */ js.UndefOr[IAbstractStore] => Unit = null,
+    bindStore: js.UndefOr[js.Any] => Unit = null,
+    bindStoreListeners: js.UndefOr[IAbstractStore] => Unit = null,
     caseSensitive: js.UndefOr[Boolean] = js.undefined,
     clearValue: () => Unit = null,
-    componentLayout: js.Any = null,
-    createPicker: () => Unit = null,
     defaultListConfig: js.Any = null,
     delimiter: java.lang.String = null,
     displayField: java.lang.String = null,
@@ -197,23 +193,18 @@ object IComboBox {
     findRecordByDisplay: /* value */ js.UndefOr[js.Any] => IModel = null,
     findRecordByValue: /* value */ js.UndefOr[js.Any] => IModel = null,
     forceSelection: js.UndefOr[Boolean] = js.undefined,
-    getStore: () => IStore = null,
-    getStoreListeners: () => _ = null,
-    getSubTplData: () => _ = null,
+    getStore: () => IAbstractStore | IStore = null,
+    getStoreListeners: js.Function0[_] | (js.Function1[/* store */ js.UndefOr[IStore], _]) = null,
     getSubmitValue: () => java.lang.String = null,
     getValue: () => _ = null,
     growToLongestValue: js.UndefOr[Boolean] = js.undefined,
     hiddenName: java.lang.String = null,
-    initComponent: () => Unit = null,
-    initEvents: () => Unit = null,
     lastQuery: java.lang.String = null,
     listConfig: js.Any = null,
     minChars: Int | Double = null,
     multiSelect: js.UndefOr[Boolean] = js.undefined,
-    onAdded: () => Unit = null,
-    onBindStore: (/* store */ js.UndefOr[js.Any], /* initial */ js.UndefOr[js.Any]) => Unit = null,
-    onTriggerClick: () => Unit = null,
-    onUnbindStore: /* store */ js.UndefOr[js.Any] => Unit = null,
+    onBindStore: (js.UndefOr[js.Any | IAbstractStore], js.UndefOr[js.Any | Boolean]) => Unit = null,
+    onUnbindStore: (js.Function1[/* store */ js.UndefOr[js.Any], Unit]) | (js.Function2[/* store */ js.UndefOr[IAbstractStore], /* initial */ js.UndefOr[Boolean], Unit]) = null,
     pageSize: Int | Double = null,
     queryCaching: js.UndefOr[Boolean] = js.undefined,
     queryDelay: Int | Double = null,
@@ -221,78 +212,65 @@ object IComboBox {
     queryParam: java.lang.String = null,
     select: /* r */ js.UndefOr[js.Any] => Unit = null,
     selectOnTab: js.UndefOr[Boolean] = js.undefined,
-    setValue: /* value */ js.UndefOr[js.Any] => _ = null,
     store: js.Any = null,
     transform: js.Any = null,
     triggerAction: java.lang.String = null,
-    triggerCls: java.lang.String = null,
     typeAhead: js.UndefOr[Boolean] = js.undefined,
     typeAheadDelay: Int | Double = null,
-    unbindStoreListeners: /* store */ js.UndefOr[IAbstractStore] => Unit = null,
+    unbindStoreListeners: js.UndefOr[IAbstractStore] => Unit = null,
     valueField: java.lang.String = null,
     valueNotFoundText: java.lang.String = null
   ): IComboBox = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IPicker)
+    if (IPicker != null) js.Dynamic.global.Object.assign(__obj, IPicker)
     if (afterQuery != null) __obj.updateDynamic("afterQuery")(js.Any.fromFunction1(afterQuery))
-    if (afterRender != null) __obj.updateDynamic("afterRender")(js.Any.fromFunction0(afterRender))
-    if (alignPicker != null) __obj.updateDynamic("alignPicker")(js.Any.fromFunction0(alignPicker))
-    if (allQuery != null) __obj.updateDynamic("allQuery")(allQuery)
-    if (!js.isUndefined(anyMatch)) __obj.updateDynamic("anyMatch")(anyMatch)
-    if (!js.isUndefined(autoSelect)) __obj.updateDynamic("autoSelect")(autoSelect)
+    if (allQuery != null) __obj.updateDynamic("allQuery")(allQuery.asInstanceOf[js.Any])
+    if (!js.isUndefined(anyMatch)) __obj.updateDynamic("anyMatch")(anyMatch.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoSelect)) __obj.updateDynamic("autoSelect")(autoSelect.asInstanceOf[js.Any])
     if (beforeBlur != null) __obj.updateDynamic("beforeBlur")(js.Any.fromFunction0(beforeBlur))
     if (beforeQuery != null) __obj.updateDynamic("beforeQuery")(js.Any.fromFunction1(beforeQuery))
     if (beforeReset != null) __obj.updateDynamic("beforeReset")(js.Any.fromFunction0(beforeReset))
     if (bindStore != null) __obj.updateDynamic("bindStore")(js.Any.fromFunction1(bindStore))
     if (bindStoreListeners != null) __obj.updateDynamic("bindStoreListeners")(js.Any.fromFunction1(bindStoreListeners))
-    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive)
+    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive.asInstanceOf[js.Any])
     if (clearValue != null) __obj.updateDynamic("clearValue")(js.Any.fromFunction0(clearValue))
-    if (componentLayout != null) __obj.updateDynamic("componentLayout")(componentLayout)
-    if (createPicker != null) __obj.updateDynamic("createPicker")(js.Any.fromFunction0(createPicker))
-    if (defaultListConfig != null) __obj.updateDynamic("defaultListConfig")(defaultListConfig)
-    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
-    if (displayField != null) __obj.updateDynamic("displayField")(displayField)
+    if (defaultListConfig != null) __obj.updateDynamic("defaultListConfig")(defaultListConfig.asInstanceOf[js.Any])
+    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
+    if (displayField != null) __obj.updateDynamic("displayField")(displayField.asInstanceOf[js.Any])
     if (doQuery != null) __obj.updateDynamic("doQuery")(js.Any.fromFunction3(doQuery))
-    if (!js.isUndefined(enableRegEx)) __obj.updateDynamic("enableRegEx")(enableRegEx)
-    if (fieldSubTpl != null) __obj.updateDynamic("fieldSubTpl")(fieldSubTpl)
+    if (!js.isUndefined(enableRegEx)) __obj.updateDynamic("enableRegEx")(enableRegEx.asInstanceOf[js.Any])
+    if (fieldSubTpl != null) __obj.updateDynamic("fieldSubTpl")(fieldSubTpl.asInstanceOf[js.Any])
     if (findRecord != null) __obj.updateDynamic("findRecord")(js.Any.fromFunction2(findRecord))
     if (findRecordByDisplay != null) __obj.updateDynamic("findRecordByDisplay")(js.Any.fromFunction1(findRecordByDisplay))
     if (findRecordByValue != null) __obj.updateDynamic("findRecordByValue")(js.Any.fromFunction1(findRecordByValue))
-    if (!js.isUndefined(forceSelection)) __obj.updateDynamic("forceSelection")(forceSelection)
+    if (!js.isUndefined(forceSelection)) __obj.updateDynamic("forceSelection")(forceSelection.asInstanceOf[js.Any])
     if (getStore != null) __obj.updateDynamic("getStore")(js.Any.fromFunction0(getStore))
-    if (getStoreListeners != null) __obj.updateDynamic("getStoreListeners")(js.Any.fromFunction0(getStoreListeners))
-    if (getSubTplData != null) __obj.updateDynamic("getSubTplData")(js.Any.fromFunction0(getSubTplData))
+    if (getStoreListeners != null) __obj.updateDynamic("getStoreListeners")(getStoreListeners.asInstanceOf[js.Any])
     if (getSubmitValue != null) __obj.updateDynamic("getSubmitValue")(js.Any.fromFunction0(getSubmitValue))
     if (getValue != null) __obj.updateDynamic("getValue")(js.Any.fromFunction0(getValue))
-    if (!js.isUndefined(growToLongestValue)) __obj.updateDynamic("growToLongestValue")(growToLongestValue)
-    if (hiddenName != null) __obj.updateDynamic("hiddenName")(hiddenName)
-    if (initComponent != null) __obj.updateDynamic("initComponent")(js.Any.fromFunction0(initComponent))
-    if (initEvents != null) __obj.updateDynamic("initEvents")(js.Any.fromFunction0(initEvents))
-    if (lastQuery != null) __obj.updateDynamic("lastQuery")(lastQuery)
-    if (listConfig != null) __obj.updateDynamic("listConfig")(listConfig)
+    if (!js.isUndefined(growToLongestValue)) __obj.updateDynamic("growToLongestValue")(growToLongestValue.asInstanceOf[js.Any])
+    if (hiddenName != null) __obj.updateDynamic("hiddenName")(hiddenName.asInstanceOf[js.Any])
+    if (lastQuery != null) __obj.updateDynamic("lastQuery")(lastQuery.asInstanceOf[js.Any])
+    if (listConfig != null) __obj.updateDynamic("listConfig")(listConfig.asInstanceOf[js.Any])
     if (minChars != null) __obj.updateDynamic("minChars")(minChars.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiSelect)) __obj.updateDynamic("multiSelect")(multiSelect)
-    if (onAdded != null) __obj.updateDynamic("onAdded")(js.Any.fromFunction0(onAdded))
+    if (!js.isUndefined(multiSelect)) __obj.updateDynamic("multiSelect")(multiSelect.asInstanceOf[js.Any])
     if (onBindStore != null) __obj.updateDynamic("onBindStore")(js.Any.fromFunction2(onBindStore))
-    if (onTriggerClick != null) __obj.updateDynamic("onTriggerClick")(js.Any.fromFunction0(onTriggerClick))
-    if (onUnbindStore != null) __obj.updateDynamic("onUnbindStore")(js.Any.fromFunction1(onUnbindStore))
+    if (onUnbindStore != null) __obj.updateDynamic("onUnbindStore")(onUnbindStore.asInstanceOf[js.Any])
     if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(queryCaching)) __obj.updateDynamic("queryCaching")(queryCaching)
+    if (!js.isUndefined(queryCaching)) __obj.updateDynamic("queryCaching")(queryCaching.asInstanceOf[js.Any])
     if (queryDelay != null) __obj.updateDynamic("queryDelay")(queryDelay.asInstanceOf[js.Any])
-    if (queryMode != null) __obj.updateDynamic("queryMode")(queryMode)
-    if (queryParam != null) __obj.updateDynamic("queryParam")(queryParam)
+    if (queryMode != null) __obj.updateDynamic("queryMode")(queryMode.asInstanceOf[js.Any])
+    if (queryParam != null) __obj.updateDynamic("queryParam")(queryParam.asInstanceOf[js.Any])
     if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction1(select))
-    if (!js.isUndefined(selectOnTab)) __obj.updateDynamic("selectOnTab")(selectOnTab)
-    if (setValue != null) __obj.updateDynamic("setValue")(js.Any.fromFunction1(setValue))
-    if (store != null) __obj.updateDynamic("store")(store)
-    if (transform != null) __obj.updateDynamic("transform")(transform)
-    if (triggerAction != null) __obj.updateDynamic("triggerAction")(triggerAction)
-    if (triggerCls != null) __obj.updateDynamic("triggerCls")(triggerCls)
-    if (!js.isUndefined(typeAhead)) __obj.updateDynamic("typeAhead")(typeAhead)
+    if (!js.isUndefined(selectOnTab)) __obj.updateDynamic("selectOnTab")(selectOnTab.asInstanceOf[js.Any])
+    if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
+    if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
+    if (triggerAction != null) __obj.updateDynamic("triggerAction")(triggerAction.asInstanceOf[js.Any])
+    if (!js.isUndefined(typeAhead)) __obj.updateDynamic("typeAhead")(typeAhead.asInstanceOf[js.Any])
     if (typeAheadDelay != null) __obj.updateDynamic("typeAheadDelay")(typeAheadDelay.asInstanceOf[js.Any])
     if (unbindStoreListeners != null) __obj.updateDynamic("unbindStoreListeners")(js.Any.fromFunction1(unbindStoreListeners))
-    if (valueField != null) __obj.updateDynamic("valueField")(valueField)
-    if (valueNotFoundText != null) __obj.updateDynamic("valueNotFoundText")(valueNotFoundText)
+    if (valueField != null) __obj.updateDynamic("valueField")(valueField.asInstanceOf[js.Any])
+    if (valueNotFoundText != null) __obj.updateDynamic("valueNotFoundText")(valueNotFoundText.asInstanceOf[js.Any])
     __obj.asInstanceOf[IComboBox]
   }
 }

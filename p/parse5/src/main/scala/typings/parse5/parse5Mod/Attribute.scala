@@ -26,9 +26,9 @@ trait Attribute extends js.Object {
 object Attribute {
   @scala.inline
   def apply(name: String, value: String, namespace: String = null, prefix: String = null): Attribute = {
-    val __obj = js.Dynamic.literal(name = name, value = value)
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace)
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attribute]
   }
 }

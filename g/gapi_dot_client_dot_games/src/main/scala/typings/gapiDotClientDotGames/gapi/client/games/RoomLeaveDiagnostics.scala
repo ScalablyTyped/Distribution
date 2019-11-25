@@ -47,11 +47,11 @@ object RoomLeaveDiagnostics {
     if (androidNetworkSubtype != null) __obj.updateDynamic("androidNetworkSubtype")(androidNetworkSubtype.asInstanceOf[js.Any])
     if (androidNetworkType != null) __obj.updateDynamic("androidNetworkType")(androidNetworkType.asInstanceOf[js.Any])
     if (iosNetworkType != null) __obj.updateDynamic("iosNetworkType")(iosNetworkType.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (networkOperatorCode != null) __obj.updateDynamic("networkOperatorCode")(networkOperatorCode)
-    if (networkOperatorName != null) __obj.updateDynamic("networkOperatorName")(networkOperatorName)
-    if (peerSession != null) __obj.updateDynamic("peerSession")(peerSession)
-    if (!js.isUndefined(socketsUsed)) __obj.updateDynamic("socketsUsed")(socketsUsed)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (networkOperatorCode != null) __obj.updateDynamic("networkOperatorCode")(networkOperatorCode.asInstanceOf[js.Any])
+    if (networkOperatorName != null) __obj.updateDynamic("networkOperatorName")(networkOperatorName.asInstanceOf[js.Any])
+    if (peerSession != null) __obj.updateDynamic("peerSession")(peerSession.asInstanceOf[js.Any])
+    if (!js.isUndefined(socketsUsed)) __obj.updateDynamic("socketsUsed")(socketsUsed.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoomLeaveDiagnostics]
   }
 }

@@ -14,8 +14,8 @@ trait GraphLinkObject extends GraphLink {
 object GraphLinkObject {
   @scala.inline
   def apply(id: String, source: GraphNode, target: GraphNode, `type`: String): GraphLinkObject = {
-    val __obj = js.Dynamic.literal(id = id, source = source, target = target)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphLinkObject]
   }
 }

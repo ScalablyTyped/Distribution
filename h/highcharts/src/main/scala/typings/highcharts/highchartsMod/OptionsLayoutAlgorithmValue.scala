@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait OptionsLayoutAlgorithmValue extends js.Object
 
+object OptionsLayoutAlgorithmValue {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def sliceAndDice: typings.highcharts.highchartsStrings.sliceAndDice = this.cast("sliceAndDice")
+  @scala.inline
+  def squarified: typings.highcharts.highchartsStrings.squarified = this.cast("squarified")
+  @scala.inline
+  def strip: typings.highcharts.highchartsStrings.strip = this.cast("strip")
+  @scala.inline
+  def stripes: typings.highcharts.highchartsStrings.stripes = this.cast("stripes")
+}
+

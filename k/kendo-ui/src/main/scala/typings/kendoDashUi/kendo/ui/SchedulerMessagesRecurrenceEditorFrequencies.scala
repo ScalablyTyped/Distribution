@@ -22,11 +22,11 @@ object SchedulerMessagesRecurrenceEditorFrequencies {
     yearly: String = null
   ): SchedulerMessagesRecurrenceEditorFrequencies = {
     val __obj = js.Dynamic.literal()
-    if (daily != null) __obj.updateDynamic("daily")(daily)
-    if (monthly != null) __obj.updateDynamic("monthly")(monthly)
-    if (never != null) __obj.updateDynamic("never")(never)
-    if (weekly != null) __obj.updateDynamic("weekly")(weekly)
-    if (yearly != null) __obj.updateDynamic("yearly")(yearly)
+    if (daily != null) __obj.updateDynamic("daily")(daily.asInstanceOf[js.Any])
+    if (monthly != null) __obj.updateDynamic("monthly")(monthly.asInstanceOf[js.Any])
+    if (never != null) __obj.updateDynamic("never")(never.asInstanceOf[js.Any])
+    if (weekly != null) __obj.updateDynamic("weekly")(weekly.asInstanceOf[js.Any])
+    if (yearly != null) __obj.updateDynamic("yearly")(yearly.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchedulerMessagesRecurrenceEditorFrequencies]
   }
 }

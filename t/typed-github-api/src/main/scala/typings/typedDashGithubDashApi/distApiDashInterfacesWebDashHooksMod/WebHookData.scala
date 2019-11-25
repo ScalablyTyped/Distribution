@@ -21,9 +21,9 @@ object WebHookData {
     organization: OrganizationSummary = null,
     repository: Repository = null
   ): WebHookData = {
-    val __obj = js.Dynamic.literal(action = action, sender = sender)
-    if (organization != null) __obj.updateDynamic("organization")(organization)
-    if (repository != null) __obj.updateDynamic("repository")(repository)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (organization != null) __obj.updateDynamic("organization")(organization.asInstanceOf[js.Any])
+    if (repository != null) __obj.updateDynamic("repository")(repository.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebHookData]
   }
 }

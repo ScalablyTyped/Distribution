@@ -19,7 +19,7 @@ object DexieEvent {
     subscribers: js.Array[js.Function],
     unsubscribe: js.Function1[/* repeated */ js.Any, _] => Unit
   ): DexieEvent = {
-    val __obj = js.Dynamic.literal(fire = js.Any.fromFunction1(fire), subscribe = js.Any.fromFunction1(subscribe), subscribers = subscribers, unsubscribe = js.Any.fromFunction1(unsubscribe))
+    val __obj = js.Dynamic.literal(fire = js.Any.fromFunction1(fire), subscribe = js.Any.fromFunction1(subscribe), subscribers = subscribers.asInstanceOf[js.Any], unsubscribe = js.Any.fromFunction1(unsubscribe))
   
     __obj.asInstanceOf[DexieEvent]
   }

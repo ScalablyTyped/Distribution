@@ -23,7 +23,7 @@ object typeCreateRendererParamsLegendOptions {
     propertyIsEnumerable: PropertyKey => Boolean,
     title: String
   ): typeCreateRendererParamsLegendOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), title = title)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), title = title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[typeCreateRendererParamsLegendOptions]
   }

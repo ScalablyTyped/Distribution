@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait MediaSessionPlaybackState extends js.Object
 
+object MediaSessionPlaybackState {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def none: typings.wicgDashMediasession.wicgDashMediasessionStrings.none = this.cast("none")
+  @scala.inline
+  def paused: typings.wicgDashMediasession.wicgDashMediasessionStrings.paused = this.cast("paused")
+  @scala.inline
+  def playing: typings.wicgDashMediasession.wicgDashMediasessionStrings.playing = this.cast("playing")
+}
+

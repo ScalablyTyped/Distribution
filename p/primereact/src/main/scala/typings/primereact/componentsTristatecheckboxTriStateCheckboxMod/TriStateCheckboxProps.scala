@@ -32,15 +32,15 @@ object TriStateCheckboxProps {
     value: js.UndefOr[Boolean] = js.undefined
   ): TriStateCheckboxProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (inputId != null) __obj.updateDynamic("inputId")(inputId)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (inputId != null) __obj.updateDynamic("inputId")(inputId.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
-    if (tooltipOptions != null) __obj.updateDynamic("tooltipOptions")(tooltipOptions)
-    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
+    if (tooltipOptions != null) __obj.updateDynamic("tooltipOptions")(tooltipOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TriStateCheckboxProps]
   }
 }

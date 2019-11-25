@@ -27,9 +27,9 @@ object VideoProcessingDetailsProcessingProgress {
   @scala.inline
   def apply(partsProcessed: String = null, partsTotal: String = null, timeLeftMs: String = null): VideoProcessingDetailsProcessingProgress = {
     val __obj = js.Dynamic.literal()
-    if (partsProcessed != null) __obj.updateDynamic("partsProcessed")(partsProcessed)
-    if (partsTotal != null) __obj.updateDynamic("partsTotal")(partsTotal)
-    if (timeLeftMs != null) __obj.updateDynamic("timeLeftMs")(timeLeftMs)
+    if (partsProcessed != null) __obj.updateDynamic("partsProcessed")(partsProcessed.asInstanceOf[js.Any])
+    if (partsTotal != null) __obj.updateDynamic("partsTotal")(partsTotal.asInstanceOf[js.Any])
+    if (timeLeftMs != null) __obj.updateDynamic("timeLeftMs")(timeLeftMs.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoProcessingDetailsProcessingProgress]
   }
 }

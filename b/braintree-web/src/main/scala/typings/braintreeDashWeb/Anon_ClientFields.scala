@@ -15,7 +15,7 @@ trait Anon_ClientFields extends js.Object {
 object Anon_ClientFields {
   @scala.inline
   def apply(client: Client, fields: HostedFieldFieldOptions, styles: js.Any): Anon_ClientFields = {
-    val __obj = js.Dynamic.literal(client = client, fields = fields, styles = styles)
+    val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ClientFields]
   }

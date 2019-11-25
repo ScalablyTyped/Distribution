@@ -12,7 +12,7 @@ trait OAuth2ConfigClient extends js.Object {
 object OAuth2ConfigClient {
   @scala.inline
   def apply(id: String): OAuth2ConfigClient = {
-    val __obj = js.Dynamic.literal(id = id)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OAuth2ConfigClient]
   }

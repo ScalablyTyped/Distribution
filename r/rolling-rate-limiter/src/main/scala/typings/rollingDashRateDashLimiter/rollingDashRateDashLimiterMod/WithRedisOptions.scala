@@ -18,9 +18,9 @@ object WithRedisOptions {
     minDifference: Int | Double = null,
     namespace: String = null
   ): WithRedisOptions = {
-    val __obj = js.Dynamic.literal(interval = interval, maxInInterval = maxInInterval, redis = redis)
+    val __obj = js.Dynamic.literal(interval = interval.asInstanceOf[js.Any], maxInInterval = maxInInterval.asInstanceOf[js.Any], redis = redis.asInstanceOf[js.Any])
     if (minDifference != null) __obj.updateDynamic("minDifference")(minDifference.asInstanceOf[js.Any])
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace)
+    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[WithRedisOptions]
   }
 }

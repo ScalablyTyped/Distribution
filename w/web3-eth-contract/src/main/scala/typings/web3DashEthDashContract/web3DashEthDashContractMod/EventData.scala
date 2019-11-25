@@ -33,7 +33,7 @@ object EventData {
     transactionHash: String,
     transactionIndex: Double
   ): EventData = {
-    val __obj = js.Dynamic.literal(address = address, blockHash = blockHash, blockNumber = blockNumber, event = event, logIndex = logIndex, raw = raw, returnValues = returnValues, signature = signature, transactionHash = transactionHash, transactionIndex = transactionIndex)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], blockHash = blockHash.asInstanceOf[js.Any], blockNumber = blockNumber.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], logIndex = logIndex.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], returnValues = returnValues.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any], transactionHash = transactionHash.asInstanceOf[js.Any], transactionIndex = transactionIndex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EventData]
   }

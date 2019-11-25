@@ -30,8 +30,8 @@ object EscapeCharacterSet {
     start: Double,
     `type`: typings.regexpp.regexppStrings.CharacterSet
   ): EscapeCharacterSet = {
-    val __obj = js.Dynamic.literal(end = end, kind = kind.asInstanceOf[js.Any], negate = negate, parent = parent.asInstanceOf[js.Any], raw = raw, start = start)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], negate = negate.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EscapeCharacterSet]
   }
 }

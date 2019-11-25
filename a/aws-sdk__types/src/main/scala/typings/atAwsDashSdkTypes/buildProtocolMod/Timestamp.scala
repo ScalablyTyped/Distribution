@@ -21,9 +21,9 @@ object Timestamp {
     timestampFormat: java.lang.String = null
   ): Timestamp = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive)
-    if (timestampFormat != null) __obj.updateDynamic("timestampFormat")(timestampFormat)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive.asInstanceOf[js.Any])
+    if (timestampFormat != null) __obj.updateDynamic("timestampFormat")(timestampFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[Timestamp]
   }
 }

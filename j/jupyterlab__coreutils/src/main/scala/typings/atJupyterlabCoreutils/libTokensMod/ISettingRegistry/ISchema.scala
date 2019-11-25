@@ -67,16 +67,16 @@ object ISchema {
     title: String = null
   ): ISchema = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (default != null) __obj.updateDynamic("default")(default)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (!js.isUndefined(`jupyter.lab.setting-deprecated`)) __obj.updateDynamic("jupyter.lab.setting-deprecated")(`jupyter.lab.setting-deprecated`)
-    if (`jupyter.lab.setting-icon-class` != null) __obj.updateDynamic("jupyter.lab.setting-icon-class")(`jupyter.lab.setting-icon-class`)
-    if (`jupyter.lab.setting-icon-label` != null) __obj.updateDynamic("jupyter.lab.setting-icon-label")(`jupyter.lab.setting-icon-label`)
-    if (`jupyter.lab.shortcuts` != null) __obj.updateDynamic("jupyter.lab.shortcuts")(`jupyter.lab.shortcuts`)
-    if (!js.isUndefined(`jupyter.lab.transform`)) __obj.updateDynamic("jupyter.lab.transform")(`jupyter.lab.transform`)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(`jupyter.lab.setting-deprecated`)) __obj.updateDynamic("jupyter.lab.setting-deprecated")(`jupyter.lab.setting-deprecated`.asInstanceOf[js.Any])
+    if (`jupyter.lab.setting-icon-class` != null) __obj.updateDynamic("jupyter.lab.setting-icon-class")(`jupyter.lab.setting-icon-class`.asInstanceOf[js.Any])
+    if (`jupyter.lab.setting-icon-label` != null) __obj.updateDynamic("jupyter.lab.setting-icon-label")(`jupyter.lab.setting-icon-label`.asInstanceOf[js.Any])
+    if (`jupyter.lab.shortcuts` != null) __obj.updateDynamic("jupyter.lab.shortcuts")(`jupyter.lab.shortcuts`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`jupyter.lab.transform`)) __obj.updateDynamic("jupyter.lab.transform")(`jupyter.lab.transform`.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISchema]
   }
 }

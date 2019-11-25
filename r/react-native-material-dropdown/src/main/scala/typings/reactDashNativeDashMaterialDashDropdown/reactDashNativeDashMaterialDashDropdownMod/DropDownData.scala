@@ -17,9 +17,9 @@ trait DropDownData extends js.Object {
 object DropDownData {
   @scala.inline
   def apply(value: String, label: String = null, props: Partial[DropDownProps] = null): DropDownData = {
-    val __obj = js.Dynamic.literal(value = value)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (props != null) __obj.updateDynamic("props")(props)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (props != null) __obj.updateDynamic("props")(props.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropDownData]
   }
 }

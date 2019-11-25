@@ -13,7 +13,7 @@ trait SendParamsRecipient extends js.Object {
 object SendParamsRecipient {
   @scala.inline
   def apply(Email: String, Name: String): SendParamsRecipient = {
-    val __obj = js.Dynamic.literal(Email = Email, Name = Name)
+    val __obj = js.Dynamic.literal(Email = Email.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SendParamsRecipient]
   }

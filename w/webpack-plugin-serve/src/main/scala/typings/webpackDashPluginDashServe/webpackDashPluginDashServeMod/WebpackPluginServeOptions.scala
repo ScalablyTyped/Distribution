@@ -56,22 +56,22 @@ object WebpackPluginServeOptions {
     waitForBuild: js.UndefOr[Boolean] = js.undefined
   ): WebpackPluginServeOptions = {
     val __obj = js.Dynamic.literal()
-    if (client != null) __obj.updateDynamic("client")(client)
-    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress)
+    if (client != null) __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
+    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress.asInstanceOf[js.Any])
     if (historyFallback != null) __obj.updateDynamic("historyFallback")(historyFallback.asInstanceOf[js.Any])
-    if (!js.isUndefined(hmr)) __obj.updateDynamic("hmr")(hmr)
+    if (!js.isUndefined(hmr)) __obj.updateDynamic("hmr")(hmr.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (http2 != null) __obj.updateDynamic("http2")(http2.asInstanceOf[js.Any])
-    if (https != null) __obj.updateDynamic("https")(https)
-    if (!js.isUndefined(liveReload)) __obj.updateDynamic("liveReload")(liveReload)
-    if (log != null) __obj.updateDynamic("log")(log)
+    if (https != null) __obj.updateDynamic("https")(https.asInstanceOf[js.Any])
+    if (!js.isUndefined(liveReload)) __obj.updateDynamic("liveReload")(liveReload.asInstanceOf[js.Any])
+    if (log != null) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
     if (middleware != null) __obj.updateDynamic("middleware")(js.Any.fromFunction2(middleware))
     if (open != null) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (progress != null) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
     if (static != null) __obj.updateDynamic("static")(static.asInstanceOf[js.Any])
-    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status)
-    if (!js.isUndefined(waitForBuild)) __obj.updateDynamic("waitForBuild")(waitForBuild)
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(waitForBuild)) __obj.updateDynamic("waitForBuild")(waitForBuild.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebpackPluginServeOptions]
   }
 }

@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait baseviewEventName extends js.Object
 
+object baseviewEventName {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def onBindRequest: typings.webix.webixStrings.onBindRequest = this.cast("onBindRequest")
+  @scala.inline
+  def onDestruct: typings.webix.webixStrings.onDestruct = this.cast("onDestruct")
+  @scala.inline
+  def onViewShow: typings.webix.webixStrings.onViewShow = this.cast("onViewShow")
+}
+

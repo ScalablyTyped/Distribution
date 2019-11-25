@@ -20,8 +20,8 @@ object Anon_Callback {
     getNodeKey: /* data */ TreeIndex with TreeNode => String | Double,
     ignoreCollapsed: js.UndefOr[Boolean] = js.undefined
   ): Anon_Callback = {
-    val __obj = js.Dynamic.literal(callback = callback, getNodeKey = js.Any.fromFunction1(getNodeKey))
-    if (!js.isUndefined(ignoreCollapsed)) __obj.updateDynamic("ignoreCollapsed")(ignoreCollapsed)
+    val __obj = js.Dynamic.literal(callback = callback.asInstanceOf[js.Any], getNodeKey = js.Any.fromFunction1(getNodeKey))
+    if (!js.isUndefined(ignoreCollapsed)) __obj.updateDynamic("ignoreCollapsed")(ignoreCollapsed.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Callback]
   }
 }

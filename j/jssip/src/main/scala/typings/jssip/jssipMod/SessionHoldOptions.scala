@@ -13,8 +13,8 @@ object SessionHoldOptions {
   @scala.inline
   def apply(extraHeaders: js.Array[String] = null, useUpdate: js.UndefOr[Boolean] = js.undefined): SessionHoldOptions = {
     val __obj = js.Dynamic.literal()
-    if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders)
-    if (!js.isUndefined(useUpdate)) __obj.updateDynamic("useUpdate")(useUpdate)
+    if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders.asInstanceOf[js.Any])
+    if (!js.isUndefined(useUpdate)) __obj.updateDynamic("useUpdate")(useUpdate.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionHoldOptions]
   }
 }

@@ -12,7 +12,7 @@ trait Anon_CurrentModule extends js.Object {
 object Anon_CurrentModule {
   @scala.inline
   def apply(CurrentModule: NavigationModule): Anon_CurrentModule = {
-    val __obj = js.Dynamic.literal(CurrentModule = CurrentModule)
+    val __obj = js.Dynamic.literal(CurrentModule = CurrentModule.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CurrentModule]
   }

@@ -21,8 +21,8 @@ object DetailedChooseSpecifier {
   @scala.inline
   def apply(`class`: Object, subclasses: js.UndefOr[Boolean] = js.undefined): DetailedChooseSpecifier = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("class")(`class`)
-    if (!js.isUndefined(subclasses)) __obj.updateDynamic("subclasses")(subclasses)
+    __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
+    if (!js.isUndefined(subclasses)) __obj.updateDynamic("subclasses")(subclasses.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetailedChooseSpecifier]
   }
 }

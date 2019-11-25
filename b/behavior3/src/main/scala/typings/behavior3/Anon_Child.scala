@@ -16,10 +16,10 @@ object Anon_Child {
   @scala.inline
   def apply(child: BaseNode = null, name: String = null, properties: js.Any = null, title: String = null): Anon_Child = {
     val __obj = js.Dynamic.literal()
-    if (child != null) __obj.updateDynamic("child")(child)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (child != null) __obj.updateDynamic("child")(child.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Child]
   }
 }

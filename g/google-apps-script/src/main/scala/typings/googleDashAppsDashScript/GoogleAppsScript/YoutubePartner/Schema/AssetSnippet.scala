@@ -28,14 +28,14 @@ object AssetSnippet {
     `type`: String = null
   ): AssetSnippet = {
     val __obj = js.Dynamic.literal()
-    if (customId != null) __obj.updateDynamic("customId")(customId)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (isrc != null) __obj.updateDynamic("isrc")(isrc)
-    if (iswc != null) __obj.updateDynamic("iswc")(iswc)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (timeCreated != null) __obj.updateDynamic("timeCreated")(timeCreated)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (customId != null) __obj.updateDynamic("customId")(customId.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (isrc != null) __obj.updateDynamic("isrc")(isrc.asInstanceOf[js.Any])
+    if (iswc != null) __obj.updateDynamic("iswc")(iswc.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (timeCreated != null) __obj.updateDynamic("timeCreated")(timeCreated.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssetSnippet]
   }
 }

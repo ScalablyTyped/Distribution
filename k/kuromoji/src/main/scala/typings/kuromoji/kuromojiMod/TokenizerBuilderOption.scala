@@ -12,7 +12,7 @@ object TokenizerBuilderOption {
   @scala.inline
   def apply(dicPath: String = null): TokenizerBuilderOption = {
     val __obj = js.Dynamic.literal()
-    if (dicPath != null) __obj.updateDynamic("dicPath")(dicPath)
+    if (dicPath != null) __obj.updateDynamic("dicPath")(dicPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[TokenizerBuilderOption]
   }
 }

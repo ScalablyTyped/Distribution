@@ -42,8 +42,8 @@ object IOptions {
     session: IClientSession,
     modelFactory: IModelFactory = null
   ): IOptions = {
-    val __obj = js.Dynamic.literal(contentFactory = contentFactory, mimeTypeService = mimeTypeService, rendermime = rendermime, session = session)
-    if (modelFactory != null) __obj.updateDynamic("modelFactory")(modelFactory)
+    val __obj = js.Dynamic.literal(contentFactory = contentFactory.asInstanceOf[js.Any], mimeTypeService = mimeTypeService.asInstanceOf[js.Any], rendermime = rendermime.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any])
+    if (modelFactory != null) __obj.updateDynamic("modelFactory")(modelFactory.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

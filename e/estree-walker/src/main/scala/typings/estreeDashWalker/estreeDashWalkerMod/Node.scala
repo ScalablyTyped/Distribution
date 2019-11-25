@@ -20,9 +20,9 @@ object Node {
     `type`: String,
     StringDictionary: /* propName */ StringDictionary[js.Any] = null
   ): Node = {
-    val __obj = js.Dynamic.literal(end = end, start = start)
-    __obj.updateDynamic("type")(`type`)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Node]
   }
 }

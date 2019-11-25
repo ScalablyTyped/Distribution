@@ -12,7 +12,7 @@ object Anon_DatasetIdString {
   @scala.inline
   def apply(datasetId: String = null): Anon_DatasetIdString = {
     val __obj = js.Dynamic.literal()
-    if (datasetId != null) __obj.updateDynamic("datasetId")(datasetId)
+    if (datasetId != null) __obj.updateDynamic("datasetId")(datasetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DatasetIdString]
   }
 }

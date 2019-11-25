@@ -16,8 +16,8 @@ object SelectOptions {
     sortAvailable: js.UndefOr[Boolean] = js.undefined
   ): SelectOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(sortAccepted)) __obj.updateDynamic("sortAccepted")(sortAccepted)
-    if (!js.isUndefined(sortAvailable)) __obj.updateDynamic("sortAvailable")(sortAvailable)
+    if (!js.isUndefined(sortAccepted)) __obj.updateDynamic("sortAccepted")(sortAccepted.asInstanceOf[js.Any])
+    if (!js.isUndefined(sortAvailable)) __obj.updateDynamic("sortAvailable")(sortAvailable.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectOptions]
   }
 }

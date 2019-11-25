@@ -12,7 +12,7 @@ trait Anon_AmountLabel extends js.Object {
 object Anon_AmountLabel {
   @scala.inline
   def apply(amount: String, label: String): Anon_AmountLabel = {
-    val __obj = js.Dynamic.literal(amount = amount, label = label)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AmountLabel]
   }

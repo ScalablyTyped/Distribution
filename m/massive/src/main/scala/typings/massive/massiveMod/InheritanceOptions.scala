@@ -12,7 +12,7 @@ object InheritanceOptions {
   @scala.inline
   def apply(only: js.UndefOr[Boolean] = js.undefined): InheritanceOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(only)) __obj.updateDynamic("only")(only)
+    if (!js.isUndefined(only)) __obj.updateDynamic("only")(only.asInstanceOf[js.Any])
     __obj.asInstanceOf[InheritanceOptions]
   }
 }

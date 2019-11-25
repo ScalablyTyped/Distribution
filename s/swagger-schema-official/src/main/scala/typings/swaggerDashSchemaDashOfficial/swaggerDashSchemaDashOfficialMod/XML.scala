@@ -22,11 +22,11 @@ object XML {
     wrapped: js.UndefOr[Boolean] = js.undefined
   ): XML = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(attribute)) __obj.updateDynamic("attribute")(attribute)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace)
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
-    if (!js.isUndefined(wrapped)) __obj.updateDynamic("wrapped")(wrapped)
+    if (!js.isUndefined(attribute)) __obj.updateDynamic("attribute")(attribute.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrapped)) __obj.updateDynamic("wrapped")(wrapped.asInstanceOf[js.Any])
     __obj.asInstanceOf[XML]
   }
 }

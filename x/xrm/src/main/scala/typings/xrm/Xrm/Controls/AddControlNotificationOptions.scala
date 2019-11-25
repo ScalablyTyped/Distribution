@@ -32,9 +32,9 @@ object AddControlNotificationOptions {
     actions: js.Array[ControlNotificationAction] = null,
     notificationLevel: NotificationLevel = null
   ): AddControlNotificationOptions = {
-    val __obj = js.Dynamic.literal(messages = messages, uniqueId = uniqueId)
-    if (actions != null) __obj.updateDynamic("actions")(actions)
-    if (notificationLevel != null) __obj.updateDynamic("notificationLevel")(notificationLevel)
+    val __obj = js.Dynamic.literal(messages = messages.asInstanceOf[js.Any], uniqueId = uniqueId.asInstanceOf[js.Any])
+    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
+    if (notificationLevel != null) __obj.updateDynamic("notificationLevel")(notificationLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddControlNotificationOptions]
   }
 }

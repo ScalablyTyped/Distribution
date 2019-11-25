@@ -18,10 +18,10 @@ trait Anon_Ddoc extends js.Object {
 object Anon_Ddoc {
   @scala.inline
   def apply(fields: js.Array[String], ddoc: String = null, name: String = null, `type`: String = null): Anon_Ddoc = {
-    val __obj = js.Dynamic.literal(fields = fields)
-    if (ddoc != null) __obj.updateDynamic("ddoc")(ddoc)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
+    if (ddoc != null) __obj.updateDynamic("ddoc")(ddoc.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Ddoc]
   }
 }

@@ -36,18 +36,18 @@ object UserOrganization {
     `type`: String = null
   ): UserOrganization = {
     val __obj = js.Dynamic.literal()
-    if (costCenter != null) __obj.updateDynamic("costCenter")(costCenter)
-    if (customType != null) __obj.updateDynamic("customType")(customType)
-    if (department != null) __obj.updateDynamic("department")(department)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (domain != null) __obj.updateDynamic("domain")(domain)
+    if (costCenter != null) __obj.updateDynamic("costCenter")(costCenter.asInstanceOf[js.Any])
+    if (customType != null) __obj.updateDynamic("customType")(customType.asInstanceOf[js.Any])
+    if (department != null) __obj.updateDynamic("department")(department.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
     if (fullTimeEquivalent != null) __obj.updateDynamic("fullTimeEquivalent")(fullTimeEquivalent.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary)
-    if (symbol != null) __obj.updateDynamic("symbol")(symbol)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
+    if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserOrganization]
   }
 }

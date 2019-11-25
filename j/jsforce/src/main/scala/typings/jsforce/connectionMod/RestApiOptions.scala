@@ -13,7 +13,7 @@ object RestApiOptions {
   @scala.inline
   def apply(headers: StringDictionary[String] = null): RestApiOptions = {
     val __obj = js.Dynamic.literal()
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestApiOptions]
   }
 }

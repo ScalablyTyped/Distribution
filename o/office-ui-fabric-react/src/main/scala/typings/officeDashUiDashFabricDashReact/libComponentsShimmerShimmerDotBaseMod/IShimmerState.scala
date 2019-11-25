@@ -15,7 +15,7 @@ object IShimmerState {
   @scala.inline
   def apply(contentLoaded: js.UndefOr[Boolean] = js.undefined): IShimmerState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(contentLoaded)) __obj.updateDynamic("contentLoaded")(contentLoaded)
+    if (!js.isUndefined(contentLoaded)) __obj.updateDynamic("contentLoaded")(contentLoaded.asInstanceOf[js.Any])
     __obj.asInstanceOf[IShimmerState]
   }
 }

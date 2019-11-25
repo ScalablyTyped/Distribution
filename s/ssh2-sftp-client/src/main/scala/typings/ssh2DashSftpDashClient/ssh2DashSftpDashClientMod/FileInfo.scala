@@ -28,8 +28,8 @@ object FileInfo {
     size: Double,
     `type`: String
   ): FileInfo = {
-    val __obj = js.Dynamic.literal(accessTime = accessTime, group = group, modifyTime = modifyTime, name = name, owner = owner, rights = rights, size = size)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(accessTime = accessTime.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], modifyTime = modifyTime.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], rights = rights.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileInfo]
   }
 }

@@ -33,13 +33,13 @@ object NoticeNativeProps {
     styles: Partial[NoticeBarStyle] = null
   ): NoticeNativeProps = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (marqueeProps != null) __obj.updateDynamic("marqueeProps")(marqueeProps)
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (marqueeProps != null) __obj.updateDynamic("marqueeProps")(marqueeProps.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction0(onPress))
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles)
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[NoticeNativeProps]
   }
 }

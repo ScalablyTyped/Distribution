@@ -47,11 +47,11 @@ object RedirectOptions {
     follow_set_referer: js.UndefOr[Boolean] = js.undefined
   ): RedirectOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(follow_if_same_host)) __obj.updateDynamic("follow_if_same_host")(follow_if_same_host)
-    if (!js.isUndefined(follow_if_same_protocol)) __obj.updateDynamic("follow_if_same_protocol")(follow_if_same_protocol)
-    if (!js.isUndefined(follow_keep_method)) __obj.updateDynamic("follow_keep_method")(follow_keep_method)
-    if (!js.isUndefined(follow_set_cookie)) __obj.updateDynamic("follow_set_cookie")(follow_set_cookie)
-    if (!js.isUndefined(follow_set_referer)) __obj.updateDynamic("follow_set_referer")(follow_set_referer)
+    if (!js.isUndefined(follow_if_same_host)) __obj.updateDynamic("follow_if_same_host")(follow_if_same_host.asInstanceOf[js.Any])
+    if (!js.isUndefined(follow_if_same_protocol)) __obj.updateDynamic("follow_if_same_protocol")(follow_if_same_protocol.asInstanceOf[js.Any])
+    if (!js.isUndefined(follow_keep_method)) __obj.updateDynamic("follow_keep_method")(follow_keep_method.asInstanceOf[js.Any])
+    if (!js.isUndefined(follow_set_cookie)) __obj.updateDynamic("follow_set_cookie")(follow_set_cookie.asInstanceOf[js.Any])
+    if (!js.isUndefined(follow_set_referer)) __obj.updateDynamic("follow_set_referer")(follow_set_referer.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedirectOptions]
   }
 }

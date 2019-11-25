@@ -19,9 +19,9 @@ trait FeedURLOptions extends js.Object {
 object FeedURLOptions {
   @scala.inline
   def apply(url: String, headers: Headers = null, serverType: String = null): FeedURLOptions = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (serverType != null) __obj.updateDynamic("serverType")(serverType)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (serverType != null) __obj.updateDynamic("serverType")(serverType.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeedURLOptions]
   }
 }

@@ -19,8 +19,8 @@ trait ITryStaticReturns extends js.Object {
 object ITryStaticReturns {
   @scala.inline
   def apply(value: js.Any, error: Error = null): ITryStaticReturns = {
-    val __obj = js.Dynamic.literal(value = value)
-    if (error != null) __obj.updateDynamic("error")(error)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITryStaticReturns]
   }
 }

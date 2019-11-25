@@ -32,11 +32,11 @@ object AdminReports_ {
     UserUsageReport: UserUsageReportCollection = null
   ): AdminReports_ = {
     val __obj = js.Dynamic.literal(newChannel = js.Any.fromFunction0(newChannel))
-    if (Activities != null) __obj.updateDynamic("Activities")(Activities)
-    if (Channels != null) __obj.updateDynamic("Channels")(Channels)
-    if (CustomerUsageReports != null) __obj.updateDynamic("CustomerUsageReports")(CustomerUsageReports)
-    if (EntityUsageReports != null) __obj.updateDynamic("EntityUsageReports")(EntityUsageReports)
-    if (UserUsageReport != null) __obj.updateDynamic("UserUsageReport")(UserUsageReport)
+    if (Activities != null) __obj.updateDynamic("Activities")(Activities.asInstanceOf[js.Any])
+    if (Channels != null) __obj.updateDynamic("Channels")(Channels.asInstanceOf[js.Any])
+    if (CustomerUsageReports != null) __obj.updateDynamic("CustomerUsageReports")(CustomerUsageReports.asInstanceOf[js.Any])
+    if (EntityUsageReports != null) __obj.updateDynamic("EntityUsageReports")(EntityUsageReports.asInstanceOf[js.Any])
+    if (UserUsageReport != null) __obj.updateDynamic("UserUsageReport")(UserUsageReport.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdminReports_]
   }
 }

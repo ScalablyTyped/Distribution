@@ -13,7 +13,7 @@ trait IOpenAPIFramework extends js.Object {
 object IOpenAPIFramework {
   @scala.inline
   def apply(featureType: String, loggingPrefix: String, name: String): IOpenAPIFramework = {
-    val __obj = js.Dynamic.literal(featureType = featureType, loggingPrefix = loggingPrefix, name = name)
+    val __obj = js.Dynamic.literal(featureType = featureType.asInstanceOf[js.Any], loggingPrefix = loggingPrefix.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IOpenAPIFramework]
   }

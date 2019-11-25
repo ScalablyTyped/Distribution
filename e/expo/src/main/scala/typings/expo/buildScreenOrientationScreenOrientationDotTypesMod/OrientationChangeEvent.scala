@@ -12,7 +12,7 @@ trait OrientationChangeEvent extends js.Object {
 object OrientationChangeEvent {
   @scala.inline
   def apply(orientationInfo: OrientationInfo, orientationLock: OrientationLock): OrientationChangeEvent = {
-    val __obj = js.Dynamic.literal(orientationInfo = orientationInfo, orientationLock = orientationLock)
+    val __obj = js.Dynamic.literal(orientationInfo = orientationInfo.asInstanceOf[js.Any], orientationLock = orientationLock.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OrientationChangeEvent]
   }

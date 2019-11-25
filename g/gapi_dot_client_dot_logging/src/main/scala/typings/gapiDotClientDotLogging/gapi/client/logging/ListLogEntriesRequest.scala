@@ -54,12 +54,12 @@ object ListLogEntriesRequest {
     resourceNames: js.Array[String] = null
   ): ListLogEntriesRequest = {
     val __obj = js.Dynamic.literal()
-    if (filter != null) __obj.updateDynamic("filter")(filter)
-    if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy)
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy.asInstanceOf[js.Any])
     if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
-    if (projectIds != null) __obj.updateDynamic("projectIds")(projectIds)
-    if (resourceNames != null) __obj.updateDynamic("resourceNames")(resourceNames)
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
+    if (projectIds != null) __obj.updateDynamic("projectIds")(projectIds.asInstanceOf[js.Any])
+    if (resourceNames != null) __obj.updateDynamic("resourceNames")(resourceNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListLogEntriesRequest]
   }
 }

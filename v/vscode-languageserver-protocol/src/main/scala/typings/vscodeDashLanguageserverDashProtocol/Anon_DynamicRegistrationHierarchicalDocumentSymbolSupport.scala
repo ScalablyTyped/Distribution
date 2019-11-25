@@ -27,9 +27,9 @@ object Anon_DynamicRegistrationHierarchicalDocumentSymbolSupport {
     symbolKind: Anon_ValueSet = null
   ): Anon_DynamicRegistrationHierarchicalDocumentSymbolSupport = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dynamicRegistration)) __obj.updateDynamic("dynamicRegistration")(dynamicRegistration)
-    if (!js.isUndefined(hierarchicalDocumentSymbolSupport)) __obj.updateDynamic("hierarchicalDocumentSymbolSupport")(hierarchicalDocumentSymbolSupport)
-    if (symbolKind != null) __obj.updateDynamic("symbolKind")(symbolKind)
+    if (!js.isUndefined(dynamicRegistration)) __obj.updateDynamic("dynamicRegistration")(dynamicRegistration.asInstanceOf[js.Any])
+    if (!js.isUndefined(hierarchicalDocumentSymbolSupport)) __obj.updateDynamic("hierarchicalDocumentSymbolSupport")(hierarchicalDocumentSymbolSupport.asInstanceOf[js.Any])
+    if (symbolKind != null) __obj.updateDynamic("symbolKind")(symbolKind.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DynamicRegistrationHierarchicalDocumentSymbolSupport]
   }
 }

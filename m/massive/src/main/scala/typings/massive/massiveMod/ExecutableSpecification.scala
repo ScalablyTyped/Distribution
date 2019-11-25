@@ -38,7 +38,7 @@ object ExecutableSpecification {
     singleValue: Boolean,
     sql: js.Any
   ): ExecutableSpecification = {
-    val __obj = js.Dynamic.literal(db = db, enhancedFunctions = enhancedFunctions, isVariadic = isVariadic, name = name, paramCount = paramCount, schema = schema, singleRow = singleRow, singleValue = singleValue, sql = sql)
+    val __obj = js.Dynamic.literal(db = db.asInstanceOf[js.Any], enhancedFunctions = enhancedFunctions.asInstanceOf[js.Any], isVariadic = isVariadic.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], paramCount = paramCount.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any], singleRow = singleRow.asInstanceOf[js.Any], singleValue = singleValue.asInstanceOf[js.Any], sql = sql.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExecutableSpecification]
   }

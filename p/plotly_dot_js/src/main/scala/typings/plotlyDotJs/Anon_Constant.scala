@@ -15,7 +15,7 @@ trait Anon_Constant extends js.Object {
 object Anon_Constant {
   @scala.inline
   def apply(`type`: constant | percent, value: Double, valueminus: Int | Double = null): Anon_Constant = {
-    val __obj = js.Dynamic.literal(value = value)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (valueminus != null) __obj.updateDynamic("valueminus")(valueminus.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Constant]

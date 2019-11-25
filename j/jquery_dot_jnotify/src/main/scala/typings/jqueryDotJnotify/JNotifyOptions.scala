@@ -23,10 +23,10 @@ object JNotifyOptions {
   ): JNotifyOptions = {
     val __obj = js.Dynamic.literal()
     if (disappearTime != null) __obj.updateDynamic("disappearTime")(disappearTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(permanent)) __obj.updateDynamic("permanent")(permanent)
-    if (!js.isUndefined(showIcon)) __obj.updateDynamic("showIcon")(showIcon)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(permanent)) __obj.updateDynamic("permanent")(permanent.asInstanceOf[js.Any])
+    if (!js.isUndefined(showIcon)) __obj.updateDynamic("showIcon")(showIcon.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[JNotifyOptions]
   }
 }

@@ -23,9 +23,9 @@ object _EC2UnexpectedExceptionDetails {
   @scala.inline
   def apply(EC2ErrorCode: String = null, Message: String = null, Type: String = null): _EC2UnexpectedExceptionDetails = {
     val __obj = js.Dynamic.literal()
-    if (EC2ErrorCode != null) __obj.updateDynamic("EC2ErrorCode")(EC2ErrorCode)
-    if (Message != null) __obj.updateDynamic("Message")(Message)
-    if (Type != null) __obj.updateDynamic("Type")(Type)
+    if (EC2ErrorCode != null) __obj.updateDynamic("EC2ErrorCode")(EC2ErrorCode.asInstanceOf[js.Any])
+    if (Message != null) __obj.updateDynamic("Message")(Message.asInstanceOf[js.Any])
+    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[_EC2UnexpectedExceptionDetails]
   }
 }

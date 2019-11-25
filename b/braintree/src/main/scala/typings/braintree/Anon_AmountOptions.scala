@@ -12,7 +12,7 @@ trait Anon_AmountOptions extends js.Object {
 object Anon_AmountOptions {
   @scala.inline
   def apply(amount: String, options: Anon_SubmitForSettlement): Anon_AmountOptions = {
-    val __obj = js.Dynamic.literal(amount = amount, options = options)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AmountOptions]
   }

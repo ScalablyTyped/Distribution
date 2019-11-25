@@ -16,7 +16,7 @@ object MultiOutputInfo {
   @scala.inline
   def apply(tag: String = null): MultiOutputInfo = {
     val __obj = js.Dynamic.literal()
-    if (tag != null) __obj.updateDynamic("tag")(tag)
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiOutputInfo]
   }
 }

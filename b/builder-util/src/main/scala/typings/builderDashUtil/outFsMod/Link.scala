@@ -12,7 +12,7 @@ trait Link extends js.Object {
 object Link {
   @scala.inline
   def apply(file: String, link: String): Link = {
-    val __obj = js.Dynamic.literal(file = file, link = link)
+    val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Link]
   }

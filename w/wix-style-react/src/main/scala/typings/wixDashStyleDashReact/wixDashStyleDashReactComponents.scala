@@ -1,14 +1,13 @@
 package typings.wixDashStyleDashReact
 
 import typings.react.reactMod.ComponentType
-import typings.wixDashStyleDashReact.baseComponentsMod.WixComponentProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object wixDashStyleDashReactComponents extends wixDashStyleDashReactProps {
   @scala.inline
-  def BaseComponents[T /* <: WixComponentProps */]: ComponentType[T] = js.constructorOf[typings.wixDashStyleDashReact.baseComponentsMod.default[T]].asInstanceOf[typings.react.reactMod.ComponentType[T]]
+  def BaseComponents: ComponentType[BaseComponentsProps] = js.constructorOf[typings.wixDashStyleDashReact.baseComponentsMod.default[typings.wixDashStyleDashReact.baseComponentsMod.WixComponentProps]].asInstanceOf[typings.react.reactMod.ComponentType[BaseComponentsProps]]
   @scala.inline
   def Button: ComponentType[ButtonProps] = js.constructorOf[typings.wixDashStyleDashReact.buttonMod.default].asInstanceOf[typings.react.reactMod.ComponentType[ButtonProps]]
   @scala.inline
@@ -16,6 +15,6 @@ object wixDashStyleDashReactComponents extends wixDashStyleDashReactProps {
   @scala.inline
   def Text: ComponentType[TextProps] = typings.wixDashStyleDashReact.textMod.default.asInstanceOf[typings.react.reactMod.ComponentType[TextProps]]
   @scala.inline
-  def WixComponent[T /* <: WixComponentProps */]: ComponentType[T] = js.constructorOf[typings.wixDashStyleDashReact.wixDashStyleDashReactMod.WixComponent[T]].asInstanceOf[typings.react.reactMod.ComponentType[T]]
+  def WixComponent: ComponentType[WixComponentProps] = js.constructorOf[typings.wixDashStyleDashReact.wixDashStyleDashReactMod.WixComponent[typings.wixDashStyleDashReact.baseComponentsMod.WixComponentProps]].asInstanceOf[typings.react.reactMod.ComponentType[WixComponentProps]]
 }
 

@@ -13,8 +13,8 @@ object PDFViewerDplProcessingUpload {
   @scala.inline
   def apply(saveField: String = null, url: String = null): PDFViewerDplProcessingUpload = {
     val __obj = js.Dynamic.literal()
-    if (saveField != null) __obj.updateDynamic("saveField")(saveField)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (saveField != null) __obj.updateDynamic("saveField")(saveField.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[PDFViewerDplProcessingUpload]
   }
 }

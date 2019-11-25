@@ -61,7 +61,7 @@ object ref {
     serializeFunctions: Boolean,
     toJson: (js.Object, Boolean, js.Object, js.Object) => js.Any
   ): ref = {
-    val __obj = js.Dynamic.literal(fromJson = js.Any.fromFunction2(fromJson), refAttribute = refAttribute, resolveJson = js.Any.fromFunction2(resolveJson), serializeFunctions = serializeFunctions, toJson = js.Any.fromFunction4(toJson))
+    val __obj = js.Dynamic.literal(fromJson = js.Any.fromFunction2(fromJson), refAttribute = refAttribute.asInstanceOf[js.Any], resolveJson = js.Any.fromFunction2(resolveJson), serializeFunctions = serializeFunctions.asInstanceOf[js.Any], toJson = js.Any.fromFunction4(toJson))
   
     __obj.asInstanceOf[ref]
   }

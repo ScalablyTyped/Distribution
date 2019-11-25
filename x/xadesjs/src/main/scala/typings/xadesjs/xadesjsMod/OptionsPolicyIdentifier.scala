@@ -20,9 +20,9 @@ object OptionsPolicyIdentifier {
     description: String = null,
     references: js.Array[String] = null
   ): OptionsPolicyIdentifier = {
-    val __obj = js.Dynamic.literal(qualifier = qualifier, value = value)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (references != null) __obj.updateDynamic("references")(references)
+    val __obj = js.Dynamic.literal(qualifier = qualifier.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (references != null) __obj.updateDynamic("references")(references.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsPolicyIdentifier]
   }
 }

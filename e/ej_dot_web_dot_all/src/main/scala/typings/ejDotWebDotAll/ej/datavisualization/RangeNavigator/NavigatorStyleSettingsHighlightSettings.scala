@@ -31,9 +31,9 @@ object NavigatorStyleSettingsHighlightSettings {
     opacity: Int | Double = null
   ): NavigatorStyleSettingsHighlightSettings = {
     val __obj = js.Dynamic.literal()
-    if (border != null) __obj.updateDynamic("border")(border)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable)
+    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigatorStyleSettingsHighlightSettings]
   }

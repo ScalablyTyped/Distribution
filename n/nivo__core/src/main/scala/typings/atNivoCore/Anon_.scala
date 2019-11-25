@@ -13,7 +13,7 @@ trait Anon_[T] extends js.Object {
 object Anon_ {
   @scala.inline
   def apply[T](id: String, `match`: js.Object | SvgFillMatcher[T] | typings.atNivoCore.atNivoCoreStrings.`*`): Anon_[T] = {
-    val __obj = js.Dynamic.literal(id = id)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_[T]]
   }

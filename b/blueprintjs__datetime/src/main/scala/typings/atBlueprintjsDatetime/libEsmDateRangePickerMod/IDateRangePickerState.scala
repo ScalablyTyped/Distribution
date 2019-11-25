@@ -26,12 +26,12 @@ object IDateRangePickerState {
     value: DateRange = null
   ): IDateRangePickerState = {
     val __obj = js.Dynamic.literal()
-    if (hoverValue != null) __obj.updateDynamic("hoverValue")(hoverValue)
-    if (leftView != null) __obj.updateDynamic("leftView")(leftView)
-    if (rightView != null) __obj.updateDynamic("rightView")(rightView)
+    if (hoverValue != null) __obj.updateDynamic("hoverValue")(hoverValue.asInstanceOf[js.Any])
+    if (leftView != null) __obj.updateDynamic("leftView")(leftView.asInstanceOf[js.Any])
+    if (rightView != null) __obj.updateDynamic("rightView")(rightView.asInstanceOf[js.Any])
     if (selectedShortcutIndex != null) __obj.updateDynamic("selectedShortcutIndex")(selectedShortcutIndex.asInstanceOf[js.Any])
-    if (time != null) __obj.updateDynamic("time")(time)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDateRangePickerState]
   }
 }

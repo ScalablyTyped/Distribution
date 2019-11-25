@@ -15,3 +15,22 @@ import scala.scalajs.js.annotation._
 */
 trait CompletionsTriggerCharacter extends js.Object
 
+object CompletionsTriggerCharacter {
+  @scala.inline
+  def _quote: typings.typescript.typescriptStrings._quote = this.cast("'")
+  @scala.inline
+  def `/`: typings.typescript.typescriptStrings.`/` = this.cast("/")
+  @scala.inline
+  def `<`: typings.typescript.typescriptStrings.`<` = this.cast("<")
+  @scala.inline
+  def `@`: typings.typescript.typescriptStrings.`@` = this.cast("@")
+  @scala.inline
+  def BACKSLASH: typings.typescript.typescriptStrings.BACKSLASH = this.cast("\"")
+  @scala.inline
+  def BACKTICK: typings.typescript.typescriptStrings.BACKTICK = this.cast("`")
+  @scala.inline
+  def DOT: typings.typescript.typescriptStrings.DOT = this.cast(".")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

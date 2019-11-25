@@ -23,9 +23,9 @@ trait IDocumentCardPreviewStyleProps extends js.Object {
 object IDocumentCardPreviewStyleProps {
   @scala.inline
   def apply(theme: ITheme, className: String = null, isFileList: js.UndefOr[Boolean] = js.undefined): IDocumentCardPreviewStyleProps = {
-    val __obj = js.Dynamic.literal(theme = theme)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(isFileList)) __obj.updateDynamic("isFileList")(isFileList)
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFileList)) __obj.updateDynamic("isFileList")(isFileList.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDocumentCardPreviewStyleProps]
   }
 }

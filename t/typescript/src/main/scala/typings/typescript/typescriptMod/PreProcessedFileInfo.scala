@@ -23,8 +23,8 @@ object PreProcessedFileInfo {
     typeReferenceDirectives: js.Array[FileReference],
     ambientExternalModules: js.Array[String] = null
   ): PreProcessedFileInfo = {
-    val __obj = js.Dynamic.literal(importedFiles = importedFiles, isLibFile = isLibFile, libReferenceDirectives = libReferenceDirectives, referencedFiles = referencedFiles, typeReferenceDirectives = typeReferenceDirectives)
-    if (ambientExternalModules != null) __obj.updateDynamic("ambientExternalModules")(ambientExternalModules)
+    val __obj = js.Dynamic.literal(importedFiles = importedFiles.asInstanceOf[js.Any], isLibFile = isLibFile.asInstanceOf[js.Any], libReferenceDirectives = libReferenceDirectives.asInstanceOf[js.Any], referencedFiles = referencedFiles.asInstanceOf[js.Any], typeReferenceDirectives = typeReferenceDirectives.asInstanceOf[js.Any])
+    if (ambientExternalModules != null) __obj.updateDynamic("ambientExternalModules")(ambientExternalModules.asInstanceOf[js.Any])
     __obj.asInstanceOf[PreProcessedFileInfo]
   }
 }

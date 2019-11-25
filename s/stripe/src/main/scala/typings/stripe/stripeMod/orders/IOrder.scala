@@ -104,8 +104,8 @@ object IOrder {
     status_transitions: Anon_Canceled,
     updated: Double
   ): IOrder = {
-    val __obj = js.Dynamic.literal(amount = amount, amount_returned = amount_returned, application = application, application_fee = application_fee, charge = charge.asInstanceOf[js.Any], created = created, currency = currency, customer = customer.asInstanceOf[js.Any], email = email, external_coupon_code = external_coupon_code, id = id, items = items, livemode = livemode, metadata = metadata, selected_shipping_method = selected_shipping_method, shipping = shipping, shipping_methods = shipping_methods, status = status, status_transitions = status_transitions, updated = updated)
-    __obj.updateDynamic("object")(`object`)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], amount_returned = amount_returned.asInstanceOf[js.Any], application = application.asInstanceOf[js.Any], application_fee = application_fee.asInstanceOf[js.Any], charge = charge.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], customer = customer.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], external_coupon_code = external_coupon_code.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], selected_shipping_method = selected_shipping_method.asInstanceOf[js.Any], shipping = shipping.asInstanceOf[js.Any], shipping_methods = shipping_methods.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], status_transitions = status_transitions.asInstanceOf[js.Any], updated = updated.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOrder]
   }
 }

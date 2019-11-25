@@ -13,8 +13,8 @@ trait R3Reference extends js.Object {
 object R3Reference {
   @scala.inline
   def apply(`type`: Expression, value: Expression): R3Reference = {
-    val __obj = js.Dynamic.literal(value = value)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[R3Reference]
   }
 }

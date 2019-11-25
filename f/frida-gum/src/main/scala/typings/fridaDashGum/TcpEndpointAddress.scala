@@ -18,7 +18,7 @@ trait TcpEndpointAddress extends SocketEndpointAddress {
 object TcpEndpointAddress {
   @scala.inline
   def apply(ip: String, port: Double): TcpEndpointAddress = {
-    val __obj = js.Dynamic.literal(ip = ip, port = port)
+    val __obj = js.Dynamic.literal(ip = ip.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TcpEndpointAddress]
   }

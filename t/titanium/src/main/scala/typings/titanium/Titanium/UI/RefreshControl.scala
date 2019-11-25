@@ -69,10 +69,10 @@ object RefreshControl {
     lifecycleContainer: Window | TabGroup = null,
     setLifecycleContainer: (js.Function1[/* lifecycleContainer */ Window, Unit]) with (js.Function1[/* lifecycleContainer */ TabGroup, Unit]) = null
   ): RefreshControl = {
-    val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), apiName = apiName, applyProperties = js.Any.fromFunction1(applyProperties), beginRefreshing = js.Any.fromFunction0(beginRefreshing), bubbleParent = bubbleParent, endRefreshing = js.Any.fromFunction0(endRefreshing), fireEvent = js.Any.fromFunction2(fireEvent), getApiName = js.Any.fromFunction0(getApiName), getBubbleParent = js.Any.fromFunction0(getBubbleParent), getTintColor = js.Any.fromFunction0(getTintColor), getTitle = js.Any.fromFunction0(getTitle), removeEventListener = js.Any.fromFunction2(removeEventListener), setBubbleParent = js.Any.fromFunction1(setBubbleParent), setTintColor = js.Any.fromFunction1(setTintColor), setTitle = js.Any.fromFunction1(setTitle), tintColor = tintColor, title = title)
+    val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), apiName = apiName.asInstanceOf[js.Any], applyProperties = js.Any.fromFunction1(applyProperties), beginRefreshing = js.Any.fromFunction0(beginRefreshing), bubbleParent = bubbleParent.asInstanceOf[js.Any], endRefreshing = js.Any.fromFunction0(endRefreshing), fireEvent = js.Any.fromFunction2(fireEvent), getApiName = js.Any.fromFunction0(getApiName), getBubbleParent = js.Any.fromFunction0(getBubbleParent), getTintColor = js.Any.fromFunction0(getTintColor), getTitle = js.Any.fromFunction0(getTitle), removeEventListener = js.Any.fromFunction2(removeEventListener), setBubbleParent = js.Any.fromFunction1(setBubbleParent), setTintColor = js.Any.fromFunction1(setTintColor), setTitle = js.Any.fromFunction1(setTitle), tintColor = tintColor.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(js.Any.fromFunction0(getLifecycleContainer))
     if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
-    if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer)
+    if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer.asInstanceOf[js.Any])
     __obj.asInstanceOf[RefreshControl]
   }
 }

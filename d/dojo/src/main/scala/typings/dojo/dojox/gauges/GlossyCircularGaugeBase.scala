@@ -1,10 +1,6 @@
 package typings.dojo.dojox.gauges
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValue
-import typings.dojo.Fn_NewValueOldValueProperty
-import typings.dojo.Fn_NewValueOldValuePropertyNumber
 import typings.dojo.dojoStrings.font
 import typings.dojo.dojoStrings.majorTicksColor
 import typings.dojo.dojoStrings.majorTicksInterval
@@ -217,34 +213,154 @@ class GlossyCircularGaugeBase () extends AnalogGauge {
   @JSName("set")
   def set_value(property: value, value: Double): Unit = js.native
   @JSName("watch")
-  def watch_color(property: typings.dojo.dojoStrings.color, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_color(
+    property: typings.dojo.dojoStrings.color,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_font(property: font, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_font(
+    property: font,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_majorTicksColor(property: majorTicksColor, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_majorTicksColor(
+    property: majorTicksColor,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_majorTicksInterval(property: majorTicksInterval, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_majorTicksInterval(
+    property: majorTicksInterval,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_majorTicksLabelPlacement(property: majorTicksLabelPlacement, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_majorTicksLabelPlacement(
+    property: majorTicksLabelPlacement,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_minorTicksColor(property: minorTicksColor, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_minorTicksColor(
+    property: minorTicksColor,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_minorTicksInterval(property: minorTicksInterval, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_minorTicksInterval(
+    property: minorTicksInterval,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_needleColor(property: needleColor, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_needleColor(
+    property: needleColor,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_noChange(property: noChange, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_noChange(
+    property: noChange,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_scalePrecision(property: scalePrecision, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_scalePrecision(
+    property: scalePrecision,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_textIndicatorColor(property: textIndicatorColor, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_textIndicatorColor(
+    property: textIndicatorColor,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_textIndicatorFont(property: textIndicatorFont, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_textIndicatorFont(
+    property: textIndicatorFont,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_textIndicatorPrecision(property: textIndicatorPrecision, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_textIndicatorPrecision(
+    property: textIndicatorPrecision,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_textIndicatorVisible(property: textIndicatorVisible, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_textIndicatorVisible(
+    property: textIndicatorVisible,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_value(property: value, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_value(
+    property: value,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

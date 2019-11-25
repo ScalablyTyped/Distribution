@@ -42,16 +42,16 @@ object ProductStatus {
     title: String = null
   ): ProductStatus = {
     val __obj = js.Dynamic.literal()
-    if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate)
-    if (dataQualityIssues != null) __obj.updateDynamic("dataQualityIssues")(dataQualityIssues)
-    if (destinationStatuses != null) __obj.updateDynamic("destinationStatuses")(destinationStatuses)
-    if (googleExpirationDate != null) __obj.updateDynamic("googleExpirationDate")(googleExpirationDate)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (lastUpdateDate != null) __obj.updateDynamic("lastUpdateDate")(lastUpdateDate)
-    if (link != null) __obj.updateDynamic("link")(link)
-    if (product != null) __obj.updateDynamic("product")(product)
-    if (productId != null) __obj.updateDynamic("productId")(productId)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate.asInstanceOf[js.Any])
+    if (dataQualityIssues != null) __obj.updateDynamic("dataQualityIssues")(dataQualityIssues.asInstanceOf[js.Any])
+    if (destinationStatuses != null) __obj.updateDynamic("destinationStatuses")(destinationStatuses.asInstanceOf[js.Any])
+    if (googleExpirationDate != null) __obj.updateDynamic("googleExpirationDate")(googleExpirationDate.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (lastUpdateDate != null) __obj.updateDynamic("lastUpdateDate")(lastUpdateDate.asInstanceOf[js.Any])
+    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
+    if (product != null) __obj.updateDynamic("product")(product.asInstanceOf[js.Any])
+    if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProductStatus]
   }
 }

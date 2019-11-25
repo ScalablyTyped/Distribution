@@ -60,14 +60,14 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (connTimeout != null) __obj.updateDynamic("connTimeout")(connTimeout.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host)
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (keepalive != null) __obj.updateDynamic("keepalive")(keepalive.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password)
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     if (pasvTimeout != null) __obj.updateDynamic("pasvTimeout")(pasvTimeout.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (secure != null) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
-    if (secureOptions != null) __obj.updateDynamic("secureOptions")(secureOptions)
-    if (user != null) __obj.updateDynamic("user")(user)
+    if (secureOptions != null) __obj.updateDynamic("secureOptions")(secureOptions.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

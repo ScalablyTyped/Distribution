@@ -11,7 +11,7 @@ trait Anon_Exist extends js.Object {
 object Anon_Exist {
   @scala.inline
   def apply(exist: Boolean): Anon_Exist = {
-    val __obj = js.Dynamic.literal(exist = exist)
+    val __obj = js.Dynamic.literal(exist = exist.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Exist]
   }

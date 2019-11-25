@@ -39,15 +39,15 @@ object SslCert {
     sha1Fingerprint: String = null
   ): SslCert = {
     val __obj = js.Dynamic.literal()
-    if (cert != null) __obj.updateDynamic("cert")(cert)
-    if (certSerialNumber != null) __obj.updateDynamic("certSerialNumber")(certSerialNumber)
-    if (commonName != null) __obj.updateDynamic("commonName")(commonName)
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
-    if (expirationTime != null) __obj.updateDynamic("expirationTime")(expirationTime)
-    if (instance != null) __obj.updateDynamic("instance")(instance)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
-    if (sha1Fingerprint != null) __obj.updateDynamic("sha1Fingerprint")(sha1Fingerprint)
+    if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
+    if (certSerialNumber != null) __obj.updateDynamic("certSerialNumber")(certSerialNumber.asInstanceOf[js.Any])
+    if (commonName != null) __obj.updateDynamic("commonName")(commonName.asInstanceOf[js.Any])
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
+    if (expirationTime != null) __obj.updateDynamic("expirationTime")(expirationTime.asInstanceOf[js.Any])
+    if (instance != null) __obj.updateDynamic("instance")(instance.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
+    if (sha1Fingerprint != null) __obj.updateDynamic("sha1Fingerprint")(sha1Fingerprint.asInstanceOf[js.Any])
     __obj.asInstanceOf[SslCert]
   }
 }

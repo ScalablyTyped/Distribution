@@ -24,12 +24,12 @@ object MessagePart {
     parts: js.Array[MessagePart] = null
   ): MessagePart = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (filename != null) __obj.updateDynamic("filename")(filename)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType)
-    if (partId != null) __obj.updateDynamic("partId")(partId)
-    if (parts != null) __obj.updateDynamic("parts")(parts)
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
+    if (partId != null) __obj.updateDynamic("partId")(partId.asInstanceOf[js.Any])
+    if (parts != null) __obj.updateDynamic("parts")(parts.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessagePart]
   }
 }

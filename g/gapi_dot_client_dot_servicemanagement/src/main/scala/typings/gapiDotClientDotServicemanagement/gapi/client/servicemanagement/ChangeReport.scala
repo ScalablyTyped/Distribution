@@ -19,7 +19,7 @@ object ChangeReport {
   @scala.inline
   def apply(configChanges: js.Array[ConfigChange] = null): ChangeReport = {
     val __obj = js.Dynamic.literal()
-    if (configChanges != null) __obj.updateDynamic("configChanges")(configChanges)
+    if (configChanges != null) __obj.updateDynamic("configChanges")(configChanges.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangeReport]
   }
 }

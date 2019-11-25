@@ -106,8 +106,8 @@ object LaunchShowOption {
     shareTicket: String,
     referrerInfo: ReferrerInfo = null
   ): LaunchShowOption = {
-    val __obj = js.Dynamic.literal(path = path, query = query, scene = scene, shareTicket = shareTicket)
-    if (referrerInfo != null) __obj.updateDynamic("referrerInfo")(referrerInfo)
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], scene = scene.asInstanceOf[js.Any], shareTicket = shareTicket.asInstanceOf[js.Any])
+    if (referrerInfo != null) __obj.updateDynamic("referrerInfo")(referrerInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchShowOption]
   }
 }

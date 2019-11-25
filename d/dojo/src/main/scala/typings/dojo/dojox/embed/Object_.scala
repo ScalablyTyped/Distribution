@@ -1,9 +1,6 @@
 package typings.dojo.dojox.embed
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValueOldValue
-import typings.dojo.Fn_NewValueOldValueProperty
-import typings.dojo.Fn_NewValueOldValuePropertyRegExp
 import typings.dojo.dijit._Widget
 import typings.dojo.dojoStrings.height
 import typings.dojo.dojoStrings.movie
@@ -118,22 +115,84 @@ class Object_ () extends _Widget {
   @JSName("set")
   def set_width(property: width, value: js.Object): Unit = js.native
   @JSName("watch")
-  def watch_height(property: height, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_height(
+    property: height,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_movie(property: movie, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_movie(
+    property: movie,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_params(property: params, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_params(
+    property: params,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_reFlash(property: reFlash, callback: Fn_NewValueOldValuePropertyRegExp): Anon_Unwatch = js.native
+  def watch_reFlash(
+    property: reFlash,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[RegExp], 
+      /* newValue */ js.UndefOr[RegExp], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_reQtAudio(property: reQtAudio, callback: Fn_NewValueOldValuePropertyRegExp): Anon_Unwatch = js.native
+  def watch_reQtAudio(
+    property: reQtAudio,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[RegExp], 
+      /* newValue */ js.UndefOr[RegExp], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_reQtMovie(property: reQtMovie, callback: Fn_NewValueOldValuePropertyRegExp): Anon_Unwatch = js.native
+  def watch_reQtMovie(
+    property: reQtMovie,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[RegExp], 
+      /* newValue */ js.UndefOr[RegExp], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_src(property: src, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_src(
+    property: src,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_style(property: style, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
-  @JSName("watch")
-  def watch_width(property: width, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_width(
+    property: width,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

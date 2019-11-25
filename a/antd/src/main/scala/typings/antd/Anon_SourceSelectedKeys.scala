@@ -12,7 +12,7 @@ trait Anon_SourceSelectedKeys extends js.Object {
 object Anon_SourceSelectedKeys {
   @scala.inline
   def apply(sourceSelectedKeys: js.Array[String], targetSelectedKeys: js.Array[String]): Anon_SourceSelectedKeys = {
-    val __obj = js.Dynamic.literal(sourceSelectedKeys = sourceSelectedKeys, targetSelectedKeys = targetSelectedKeys)
+    val __obj = js.Dynamic.literal(sourceSelectedKeys = sourceSelectedKeys.asInstanceOf[js.Any], targetSelectedKeys = targetSelectedKeys.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_SourceSelectedKeys]
   }

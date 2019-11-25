@@ -23,12 +23,12 @@ object Anon_Depth {
     `type`: String = null,
     url: String = null
   ): Anon_Depth = {
-    val __obj = js.Dynamic.literal(name = name)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
-    if (doc != null) __obj.updateDynamic("doc")(doc)
-    if (origin != null) __obj.updateDynamic("origin")(origin)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (doc != null) __obj.updateDynamic("doc")(doc.asInstanceOf[js.Any])
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Depth]
   }
 }

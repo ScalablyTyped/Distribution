@@ -64,7 +64,7 @@ object MetricsCallbackOptions {
     preLatency: Int | Double = null,
     useLatency: Int | Double = null
   ): MetricsCallbackOptions = {
-    val __obj = js.Dynamic.literal(inflightRequests = inflightRequests, latency = latency, method = method, path = path, statusCode = statusCode, totalLatency = totalLatency, unfinishedRequests = unfinishedRequests)
+    val __obj = js.Dynamic.literal(inflightRequests = inflightRequests.asInstanceOf[js.Any], latency = latency.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], totalLatency = totalLatency.asInstanceOf[js.Any], unfinishedRequests = unfinishedRequests.asInstanceOf[js.Any])
     if (connectionState != null) __obj.updateDynamic("connectionState")(connectionState.asInstanceOf[js.Any])
     if (preLatency != null) __obj.updateDynamic("preLatency")(preLatency.asInstanceOf[js.Any])
     if (useLatency != null) __obj.updateDynamic("useLatency")(useLatency.asInstanceOf[js.Any])

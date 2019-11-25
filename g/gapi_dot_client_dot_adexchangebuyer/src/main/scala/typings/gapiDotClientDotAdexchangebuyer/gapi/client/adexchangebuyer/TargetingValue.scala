@@ -24,10 +24,10 @@ object TargetingValue {
     stringValue: String = null
   ): TargetingValue = {
     val __obj = js.Dynamic.literal()
-    if (creativeSizeValue != null) __obj.updateDynamic("creativeSizeValue")(creativeSizeValue)
-    if (dayPartTargetingValue != null) __obj.updateDynamic("dayPartTargetingValue")(dayPartTargetingValue)
-    if (longValue != null) __obj.updateDynamic("longValue")(longValue)
-    if (stringValue != null) __obj.updateDynamic("stringValue")(stringValue)
+    if (creativeSizeValue != null) __obj.updateDynamic("creativeSizeValue")(creativeSizeValue.asInstanceOf[js.Any])
+    if (dayPartTargetingValue != null) __obj.updateDynamic("dayPartTargetingValue")(dayPartTargetingValue.asInstanceOf[js.Any])
+    if (longValue != null) __obj.updateDynamic("longValue")(longValue.asInstanceOf[js.Any])
+    if (stringValue != null) __obj.updateDynamic("stringValue")(stringValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetingValue]
   }
 }

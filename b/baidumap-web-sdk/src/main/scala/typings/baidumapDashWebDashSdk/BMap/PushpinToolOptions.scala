@@ -14,9 +14,9 @@ object PushpinToolOptions {
   @scala.inline
   def apply(cursor: String = null, followText: String = null, icon: Icon = null): PushpinToolOptions = {
     val __obj = js.Dynamic.literal()
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor)
-    if (followText != null) __obj.updateDynamic("followText")(followText)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
+    if (followText != null) __obj.updateDynamic("followText")(followText.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     __obj.asInstanceOf[PushpinToolOptions]
   }
 }

@@ -15,8 +15,8 @@ object WindowsInformationProtectionIPRangeCollection {
   @scala.inline
   def apply(displayName: String = null, ranges: js.Array[IpRange] = null): WindowsInformationProtectionIPRangeCollection = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (ranges != null) __obj.updateDynamic("ranges")(ranges)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (ranges != null) __obj.updateDynamic("ranges")(ranges.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowsInformationProtectionIPRangeCollection]
   }
 }

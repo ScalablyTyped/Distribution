@@ -13,8 +13,8 @@ object Anon_ContextKey {
   @scala.inline
   def apply(context: js.Any = null, key: String = null): Anon_ContextKey = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (key != null) __obj.updateDynamic("key")(key)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ContextKey]
   }
 }

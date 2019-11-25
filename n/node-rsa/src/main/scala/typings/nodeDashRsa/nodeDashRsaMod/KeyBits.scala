@@ -14,7 +14,7 @@ trait KeyBits extends js.Object {
 object KeyBits {
   @scala.inline
   def apply(b: Double): KeyBits = {
-    val __obj = js.Dynamic.literal(b = b)
+    val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[KeyBits]
   }

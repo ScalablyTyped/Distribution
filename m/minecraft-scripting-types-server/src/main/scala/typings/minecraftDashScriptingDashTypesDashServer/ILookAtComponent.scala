@@ -52,8 +52,8 @@ object ILookAtComponent {
     setTarget: Boolean,
     filters: MinecraftFilter = null
   ): ILookAtComponent = {
-    val __obj = js.Dynamic.literal(look_cooldown = look_cooldown, look_event = look_event.asInstanceOf[js.Any], mAllowInvulnerable = mAllowInvulnerable, searchRadius = searchRadius, setTarget = setTarget)
-    if (filters != null) __obj.updateDynamic("filters")(filters)
+    val __obj = js.Dynamic.literal(look_cooldown = look_cooldown.asInstanceOf[js.Any], look_event = look_event.asInstanceOf[js.Any], mAllowInvulnerable = mAllowInvulnerable.asInstanceOf[js.Any], searchRadius = searchRadius.asInstanceOf[js.Any], setTarget = setTarget.asInstanceOf[js.Any])
+    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILookAtComponent]
   }
 }

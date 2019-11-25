@@ -13,7 +13,7 @@ trait TressJobQueues extends js.Object {
 object TressJobQueues {
   @scala.inline
   def apply(failed: js.Array[TressJobData], finished: js.Array[TressJobData], waiting: js.Array[TressJobData]): TressJobQueues = {
-    val __obj = js.Dynamic.literal(failed = failed, finished = finished, waiting = waiting)
+    val __obj = js.Dynamic.literal(failed = failed.asInstanceOf[js.Any], finished = finished.asInstanceOf[js.Any], waiting = waiting.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TressJobQueues]
   }

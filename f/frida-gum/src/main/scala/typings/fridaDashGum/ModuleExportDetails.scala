@@ -22,8 +22,8 @@ trait ModuleExportDetails extends js.Object {
 object ModuleExportDetails {
   @scala.inline
   def apply(address: NativePointer, name: String, `type`: ModuleExportType): ModuleExportDetails = {
-    val __obj = js.Dynamic.literal(address = address, name = name)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModuleExportDetails]
   }
 }

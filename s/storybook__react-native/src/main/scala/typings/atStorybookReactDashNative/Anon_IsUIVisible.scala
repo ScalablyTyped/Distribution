@@ -11,7 +11,7 @@ trait Anon_IsUIVisible extends js.Object {
 object Anon_IsUIVisible {
   @scala.inline
   def apply(isUIVisible: Boolean): Anon_IsUIVisible = {
-    val __obj = js.Dynamic.literal(isUIVisible = isUIVisible)
+    val __obj = js.Dynamic.literal(isUIVisible = isUIVisible.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IsUIVisible]
   }

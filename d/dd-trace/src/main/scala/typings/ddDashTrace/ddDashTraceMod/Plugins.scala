@@ -126,12 +126,12 @@ object Plugins {
     when: when,
     winston: winston
   ): Plugins = {
-    val __obj = js.Dynamic.literal(amqp10 = amqp10, amqplib = amqplib, bluebird = bluebird, bunyan = bunyan, connect = connect, couchbase = couchbase, dns = dns, elasticsearch = elasticsearch, express = express, fastify = fastify, graphql = graphql, grpc = grpc, hapi = hapi, http = http, http2 = http2, ioredis = ioredis, knex = knex, koa = koa, memcached = memcached, mysql = mysql, mysql2 = mysql2, net = net, paperplane = paperplane, pg = pg, pino = pino, promise = promise, q = q, redis = redis, restify = restify, router = router, tedious = tedious, when = when, winston = winston)
-    __obj.updateDynamic("cassandra-driver")(`cassandra-driver`)
-    __obj.updateDynamic("generic-pool")(`generic-pool`)
-    __obj.updateDynamic("limitd-client")(`limitd-client`)
-    __obj.updateDynamic("mongodb-core")(`mongodb-core`)
-    __obj.updateDynamic("promise-js")(`promise-js`)
+    val __obj = js.Dynamic.literal(amqp10 = amqp10.asInstanceOf[js.Any], amqplib = amqplib.asInstanceOf[js.Any], bluebird = bluebird.asInstanceOf[js.Any], bunyan = bunyan.asInstanceOf[js.Any], connect = connect.asInstanceOf[js.Any], couchbase = couchbase.asInstanceOf[js.Any], dns = dns.asInstanceOf[js.Any], elasticsearch = elasticsearch.asInstanceOf[js.Any], express = express.asInstanceOf[js.Any], fastify = fastify.asInstanceOf[js.Any], graphql = graphql.asInstanceOf[js.Any], grpc = grpc.asInstanceOf[js.Any], hapi = hapi.asInstanceOf[js.Any], http = http.asInstanceOf[js.Any], http2 = http2.asInstanceOf[js.Any], ioredis = ioredis.asInstanceOf[js.Any], knex = knex.asInstanceOf[js.Any], koa = koa.asInstanceOf[js.Any], memcached = memcached.asInstanceOf[js.Any], mysql = mysql.asInstanceOf[js.Any], mysql2 = mysql2.asInstanceOf[js.Any], net = net.asInstanceOf[js.Any], paperplane = paperplane.asInstanceOf[js.Any], pg = pg.asInstanceOf[js.Any], pino = pino.asInstanceOf[js.Any], promise = promise.asInstanceOf[js.Any], q = q.asInstanceOf[js.Any], redis = redis.asInstanceOf[js.Any], restify = restify.asInstanceOf[js.Any], router = router.asInstanceOf[js.Any], tedious = tedious.asInstanceOf[js.Any], when = when.asInstanceOf[js.Any], winston = winston.asInstanceOf[js.Any])
+    __obj.updateDynamic("cassandra-driver")(`cassandra-driver`.asInstanceOf[js.Any])
+    __obj.updateDynamic("generic-pool")(`generic-pool`.asInstanceOf[js.Any])
+    __obj.updateDynamic("limitd-client")(`limitd-client`.asInstanceOf[js.Any])
+    __obj.updateDynamic("mongodb-core")(`mongodb-core`.asInstanceOf[js.Any])
+    __obj.updateDynamic("promise-js")(`promise-js`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Plugins]
   }
 }

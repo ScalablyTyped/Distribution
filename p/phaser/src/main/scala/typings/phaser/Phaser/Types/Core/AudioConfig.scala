@@ -31,9 +31,9 @@ object AudioConfig {
     noAudio: js.UndefOr[Boolean] = js.undefined
   ): AudioConfig = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (!js.isUndefined(disableWebAudio)) __obj.updateDynamic("disableWebAudio")(disableWebAudio)
-    if (!js.isUndefined(noAudio)) __obj.updateDynamic("noAudio")(noAudio)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableWebAudio)) __obj.updateDynamic("disableWebAudio")(disableWebAudio.asInstanceOf[js.Any])
+    if (!js.isUndefined(noAudio)) __obj.updateDynamic("noAudio")(noAudio.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioConfig]
   }
 }

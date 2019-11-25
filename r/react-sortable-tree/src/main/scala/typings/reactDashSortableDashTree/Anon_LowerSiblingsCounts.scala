@@ -11,7 +11,7 @@ trait Anon_LowerSiblingsCounts extends js.Object {
 object Anon_LowerSiblingsCounts {
   @scala.inline
   def apply(lowerSiblingsCounts: js.Array[Double]): Anon_LowerSiblingsCounts = {
-    val __obj = js.Dynamic.literal(lowerSiblingsCounts = lowerSiblingsCounts)
+    val __obj = js.Dynamic.literal(lowerSiblingsCounts = lowerSiblingsCounts.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_LowerSiblingsCounts]
   }

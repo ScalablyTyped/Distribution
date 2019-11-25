@@ -24,10 +24,10 @@ object DragAndDropOptions {
     target: Element = null
   ): DragAndDropOptions = {
     val __obj = js.Dynamic.literal()
-    if (formatConstructors != null) __obj.updateDynamic("formatConstructors")(formatConstructors)
+    if (formatConstructors != null) __obj.updateDynamic("formatConstructors")(formatConstructors.asInstanceOf[js.Any])
     if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[DragAndDropOptions]
   }
 }

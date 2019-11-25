@@ -16,8 +16,8 @@ object SharedSessionOptions {
     saveUninitialized: js.UndefOr[Boolean] = js.undefined
   ): SharedSessionOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoSave)) __obj.updateDynamic("autoSave")(autoSave)
-    if (!js.isUndefined(saveUninitialized)) __obj.updateDynamic("saveUninitialized")(saveUninitialized)
+    if (!js.isUndefined(autoSave)) __obj.updateDynamic("autoSave")(autoSave.asInstanceOf[js.Any])
+    if (!js.isUndefined(saveUninitialized)) __obj.updateDynamic("saveUninitialized")(saveUninitialized.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharedSessionOptions]
   }
 }

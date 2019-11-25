@@ -60,19 +60,19 @@ object PricingInfo {
     tax: js.Array[TaxInfo] = null
   ): PricingInfo = {
     val __obj = js.Dynamic.literal()
-    if (baseFareTotal != null) __obj.updateDynamic("baseFareTotal")(baseFareTotal)
-    if (fare != null) __obj.updateDynamic("fare")(fare)
-    if (fareCalculation != null) __obj.updateDynamic("fareCalculation")(fareCalculation)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (latestTicketingTime != null) __obj.updateDynamic("latestTicketingTime")(latestTicketingTime)
-    if (passengers != null) __obj.updateDynamic("passengers")(passengers)
-    if (ptc != null) __obj.updateDynamic("ptc")(ptc)
-    if (!js.isUndefined(refundable)) __obj.updateDynamic("refundable")(refundable)
-    if (saleFareTotal != null) __obj.updateDynamic("saleFareTotal")(saleFareTotal)
-    if (saleTaxTotal != null) __obj.updateDynamic("saleTaxTotal")(saleTaxTotal)
-    if (saleTotal != null) __obj.updateDynamic("saleTotal")(saleTotal)
-    if (segmentPricing != null) __obj.updateDynamic("segmentPricing")(segmentPricing)
-    if (tax != null) __obj.updateDynamic("tax")(tax)
+    if (baseFareTotal != null) __obj.updateDynamic("baseFareTotal")(baseFareTotal.asInstanceOf[js.Any])
+    if (fare != null) __obj.updateDynamic("fare")(fare.asInstanceOf[js.Any])
+    if (fareCalculation != null) __obj.updateDynamic("fareCalculation")(fareCalculation.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (latestTicketingTime != null) __obj.updateDynamic("latestTicketingTime")(latestTicketingTime.asInstanceOf[js.Any])
+    if (passengers != null) __obj.updateDynamic("passengers")(passengers.asInstanceOf[js.Any])
+    if (ptc != null) __obj.updateDynamic("ptc")(ptc.asInstanceOf[js.Any])
+    if (!js.isUndefined(refundable)) __obj.updateDynamic("refundable")(refundable.asInstanceOf[js.Any])
+    if (saleFareTotal != null) __obj.updateDynamic("saleFareTotal")(saleFareTotal.asInstanceOf[js.Any])
+    if (saleTaxTotal != null) __obj.updateDynamic("saleTaxTotal")(saleTaxTotal.asInstanceOf[js.Any])
+    if (saleTotal != null) __obj.updateDynamic("saleTotal")(saleTotal.asInstanceOf[js.Any])
+    if (segmentPricing != null) __obj.updateDynamic("segmentPricing")(segmentPricing.asInstanceOf[js.Any])
+    if (tax != null) __obj.updateDynamic("tax")(tax.asInstanceOf[js.Any])
     __obj.asInstanceOf[PricingInfo]
   }
 }

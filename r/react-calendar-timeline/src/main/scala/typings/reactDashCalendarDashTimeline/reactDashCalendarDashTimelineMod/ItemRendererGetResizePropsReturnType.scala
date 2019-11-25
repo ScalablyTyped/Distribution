@@ -14,8 +14,8 @@ object ItemRendererGetResizePropsReturnType {
   @scala.inline
   def apply(left: Anon_ClassName = null, right: Anon_ClassName = null): ItemRendererGetResizePropsReturnType = {
     val __obj = js.Dynamic.literal()
-    if (left != null) __obj.updateDynamic("left")(left)
-    if (right != null) __obj.updateDynamic("right")(right)
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemRendererGetResizePropsReturnType]
   }
 }

@@ -21,10 +21,10 @@ object ChatPostEvent {
     text: String = null,
     timestamp: Date = null
   ): ChatPostEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (from != null) __obj.updateDynamic("from")(from)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChatPostEvent]
   }
 }

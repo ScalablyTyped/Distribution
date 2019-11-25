@@ -25,11 +25,11 @@ object StructuralElement {
   ): StructuralElement = {
     val __obj = js.Dynamic.literal()
     if (endIndex != null) __obj.updateDynamic("endIndex")(endIndex.asInstanceOf[js.Any])
-    if (paragraph != null) __obj.updateDynamic("paragraph")(paragraph)
-    if (sectionBreak != null) __obj.updateDynamic("sectionBreak")(sectionBreak)
+    if (paragraph != null) __obj.updateDynamic("paragraph")(paragraph.asInstanceOf[js.Any])
+    if (sectionBreak != null) __obj.updateDynamic("sectionBreak")(sectionBreak.asInstanceOf[js.Any])
     if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
-    if (table != null) __obj.updateDynamic("table")(table)
-    if (tableOfContents != null) __obj.updateDynamic("tableOfContents")(tableOfContents)
+    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
+    if (tableOfContents != null) __obj.updateDynamic("tableOfContents")(tableOfContents.asInstanceOf[js.Any])
     __obj.asInstanceOf[StructuralElement]
   }
 }

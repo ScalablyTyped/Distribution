@@ -28,10 +28,10 @@ object IPathBezierSeed {
     layer: String = null,
     parentRange: IBezierRange = null
   ): IPathBezierSeed = {
-    val __obj = js.Dynamic.literal(controls = controls, end = end, origin = origin)
-    __obj.updateDynamic("type")(`type`)
-    if (layer != null) __obj.updateDynamic("layer")(layer)
-    if (parentRange != null) __obj.updateDynamic("parentRange")(parentRange)
+    val __obj = js.Dynamic.literal(controls = controls.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (layer != null) __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
+    if (parentRange != null) __obj.updateDynamic("parentRange")(parentRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPathBezierSeed]
   }
 }

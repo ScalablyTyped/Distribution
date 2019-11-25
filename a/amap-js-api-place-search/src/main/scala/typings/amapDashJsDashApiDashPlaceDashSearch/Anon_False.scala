@@ -12,7 +12,7 @@ trait Anon_False extends js.Object {
 object Anon_False {
   @scala.inline
   def apply(indoor_map: `false`): Anon_False = {
-    val __obj = js.Dynamic.literal(indoor_map = indoor_map)
+    val __obj = js.Dynamic.literal(indoor_map = indoor_map.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_False]
   }

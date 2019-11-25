@@ -23,7 +23,7 @@ object Theming {
     useTheme: () => Theme,
     withTheme: /* comp */ ComponentType[Anon_Theme[Theme]] => ComponentType[Anon_Theme[Theme] with Anon_ThemeNonNullable[Theme]]
   ): Theming[Theme] = {
-    val __obj = js.Dynamic.literal(ThemeProvider = ThemeProvider.asInstanceOf[js.Any], context = context, useTheme = js.Any.fromFunction0(useTheme), withTheme = js.Any.fromFunction1(withTheme))
+    val __obj = js.Dynamic.literal(ThemeProvider = ThemeProvider.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], useTheme = js.Any.fromFunction0(useTheme), withTheme = js.Any.fromFunction1(withTheme))
   
     __obj.asInstanceOf[Theming[Theme]]
   }

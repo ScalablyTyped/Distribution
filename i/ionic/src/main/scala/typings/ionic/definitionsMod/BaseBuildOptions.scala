@@ -21,11 +21,11 @@ object BaseBuildOptions {
     project: String = null,
     verbose: js.UndefOr[Boolean] = js.undefined
   ): BaseBuildOptions = {
-    val __obj = js.Dynamic.literal(engine = engine)
-    __obj.updateDynamic("--")(`--`)
-    if (platform != null) __obj.updateDynamic("platform")(platform)
-    if (project != null) __obj.updateDynamic("project")(project)
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
+    val __obj = js.Dynamic.literal(engine = engine.asInstanceOf[js.Any])
+    __obj.updateDynamic("--")(`--`.asInstanceOf[js.Any])
+    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
+    if (project != null) __obj.updateDynamic("project")(project.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseBuildOptions]
   }
 }

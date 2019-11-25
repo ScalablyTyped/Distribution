@@ -13,7 +13,7 @@ trait ChecksUpdateResponsePullRequestsItemHead extends js.Object {
 object ChecksUpdateResponsePullRequestsItemHead {
   @scala.inline
   def apply(ref: String, repo: ChecksUpdateResponsePullRequestsItemHeadRepo, sha: String): ChecksUpdateResponsePullRequestsItemHead = {
-    val __obj = js.Dynamic.literal(ref = ref, repo = repo, sha = sha)
+    val __obj = js.Dynamic.literal(ref = ref.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChecksUpdateResponsePullRequestsItemHead]
   }

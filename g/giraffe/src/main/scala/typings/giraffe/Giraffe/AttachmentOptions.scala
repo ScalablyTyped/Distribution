@@ -18,9 +18,9 @@ object AttachmentOptions {
     suppressRender: js.UndefOr[Boolean] = js.undefined
   ): AttachmentOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(forceRender)) __obj.updateDynamic("forceRender")(forceRender)
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (!js.isUndefined(suppressRender)) __obj.updateDynamic("suppressRender")(suppressRender)
+    if (!js.isUndefined(forceRender)) __obj.updateDynamic("forceRender")(forceRender.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressRender)) __obj.updateDynamic("suppressRender")(suppressRender.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachmentOptions]
   }
 }

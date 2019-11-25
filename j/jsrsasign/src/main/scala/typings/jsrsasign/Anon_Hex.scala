@@ -11,7 +11,7 @@ trait Anon_Hex extends js.Object {
 object Anon_Hex {
   @scala.inline
   def apply(hex: String): Anon_Hex = {
-    val __obj = js.Dynamic.literal(hex = hex)
+    val __obj = js.Dynamic.literal(hex = hex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Hex]
   }

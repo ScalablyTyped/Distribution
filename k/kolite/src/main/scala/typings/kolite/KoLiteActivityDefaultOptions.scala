@@ -14,9 +14,9 @@ object KoLiteActivityDefaultOptions {
   @scala.inline
   def apply(activityClass: String = null, container: String = null, inactiveClass: String = null): KoLiteActivityDefaultOptions = {
     val __obj = js.Dynamic.literal()
-    if (activityClass != null) __obj.updateDynamic("activityClass")(activityClass)
-    if (container != null) __obj.updateDynamic("container")(container)
-    if (inactiveClass != null) __obj.updateDynamic("inactiveClass")(inactiveClass)
+    if (activityClass != null) __obj.updateDynamic("activityClass")(activityClass.asInstanceOf[js.Any])
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (inactiveClass != null) __obj.updateDynamic("inactiveClass")(inactiveClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[KoLiteActivityDefaultOptions]
   }
 }

@@ -17,9 +17,9 @@ object UnclaimDeviceRequest {
   @scala.inline
   def apply(deviceId: String = null, deviceIdentifier: DeviceIdentifier = null, sectionType: String = null): UnclaimDeviceRequest = {
     val __obj = js.Dynamic.literal()
-    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId)
-    if (deviceIdentifier != null) __obj.updateDynamic("deviceIdentifier")(deviceIdentifier)
-    if (sectionType != null) __obj.updateDynamic("sectionType")(sectionType)
+    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId.asInstanceOf[js.Any])
+    if (deviceIdentifier != null) __obj.updateDynamic("deviceIdentifier")(deviceIdentifier.asInstanceOf[js.Any])
+    if (sectionType != null) __obj.updateDynamic("sectionType")(sectionType.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnclaimDeviceRequest]
   }
 }

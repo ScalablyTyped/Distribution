@@ -90,20 +90,20 @@ object OptionsTopBarButton {
     testID: String = null,
     text: String = null
   ): OptionsTopBarButton = {
-    val __obj = js.Dynamic.literal(id = id)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (component != null) __obj.updateDynamic("component")(component)
-    if (!js.isUndefined(disableIconTint)) __obj.updateDynamic("disableIconTint")(disableIconTint)
-    if (disabledColor != null) __obj.updateDynamic("disabledColor")(disabledColor)
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
-    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableIconTint)) __obj.updateDynamic("disableIconTint")(disableIconTint.asInstanceOf[js.Any])
+    if (disabledColor != null) __obj.updateDynamic("disabledColor")(disabledColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
+    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (iconInsets != null) __obj.updateDynamic("iconInsets")(iconInsets)
+    if (iconInsets != null) __obj.updateDynamic("iconInsets")(iconInsets.asInstanceOf[js.Any])
     if (showAsAction != null) __obj.updateDynamic("showAsAction")(showAsAction.asInstanceOf[js.Any])
-    if (systemItem != null) __obj.updateDynamic("systemItem")(systemItem)
-    if (testID != null) __obj.updateDynamic("testID")(testID)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (systemItem != null) __obj.updateDynamic("systemItem")(systemItem.asInstanceOf[js.Any])
+    if (testID != null) __obj.updateDynamic("testID")(testID.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsTopBarButton]
   }
 }

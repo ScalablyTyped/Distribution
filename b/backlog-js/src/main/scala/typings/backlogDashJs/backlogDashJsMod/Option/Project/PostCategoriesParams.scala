@@ -11,7 +11,7 @@ trait PostCategoriesParams extends js.Object {
 object PostCategoriesParams {
   @scala.inline
   def apply(name: String): PostCategoriesParams = {
-    val __obj = js.Dynamic.literal(name = name)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PostCategoriesParams]
   }

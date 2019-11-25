@@ -13,7 +13,7 @@ object Anon_Separator {
   @scala.inline
   def apply(`type`: separator): Anon_Separator = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Separator]
   }
 }

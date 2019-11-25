@@ -12,8 +12,8 @@ trait Anon_BaseDispMipsRegister extends js.Object {
 object Anon_BaseDispMipsRegister {
   @scala.inline
   def apply(disp: Double, base: MipsRegister = null): Anon_BaseDispMipsRegister = {
-    val __obj = js.Dynamic.literal(disp = disp)
-    if (base != null) __obj.updateDynamic("base")(base)
+    val __obj = js.Dynamic.literal(disp = disp.asInstanceOf[js.Any])
+    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BaseDispMipsRegister]
   }
 }

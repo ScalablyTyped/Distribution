@@ -21,8 +21,8 @@ object GoogleActionsV2UiElementsButton {
   @scala.inline
   def apply(openUrlAction: GoogleActionsV2UiElementsOpenUrlAction = null, title: String = null): GoogleActionsV2UiElementsButton = {
     val __obj = js.Dynamic.literal()
-    if (openUrlAction != null) __obj.updateDynamic("openUrlAction")(openUrlAction)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (openUrlAction != null) __obj.updateDynamic("openUrlAction")(openUrlAction.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2UiElementsButton]
   }
 }

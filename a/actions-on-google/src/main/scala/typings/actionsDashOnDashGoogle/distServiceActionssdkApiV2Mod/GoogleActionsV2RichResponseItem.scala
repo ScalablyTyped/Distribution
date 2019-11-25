@@ -53,14 +53,14 @@ object GoogleActionsV2RichResponseItem {
     tableCard: GoogleActionsV2UiElementsTableCard = null
   ): GoogleActionsV2RichResponseItem = {
     val __obj = js.Dynamic.literal()
-    if (basicCard != null) __obj.updateDynamic("basicCard")(basicCard)
-    if (carouselBrowse != null) __obj.updateDynamic("carouselBrowse")(carouselBrowse)
-    if (htmlResponse != null) __obj.updateDynamic("htmlResponse")(htmlResponse)
-    if (mediaResponse != null) __obj.updateDynamic("mediaResponse")(mediaResponse)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (simpleResponse != null) __obj.updateDynamic("simpleResponse")(simpleResponse)
-    if (structuredResponse != null) __obj.updateDynamic("structuredResponse")(structuredResponse)
-    if (tableCard != null) __obj.updateDynamic("tableCard")(tableCard)
+    if (basicCard != null) __obj.updateDynamic("basicCard")(basicCard.asInstanceOf[js.Any])
+    if (carouselBrowse != null) __obj.updateDynamic("carouselBrowse")(carouselBrowse.asInstanceOf[js.Any])
+    if (htmlResponse != null) __obj.updateDynamic("htmlResponse")(htmlResponse.asInstanceOf[js.Any])
+    if (mediaResponse != null) __obj.updateDynamic("mediaResponse")(mediaResponse.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (simpleResponse != null) __obj.updateDynamic("simpleResponse")(simpleResponse.asInstanceOf[js.Any])
+    if (structuredResponse != null) __obj.updateDynamic("structuredResponse")(structuredResponse.asInstanceOf[js.Any])
+    if (tableCard != null) __obj.updateDynamic("tableCard")(tableCard.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2RichResponseItem]
   }
 }

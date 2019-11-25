@@ -14,3 +14,20 @@ import scala.scalajs.js.annotation._
 */
 trait CanvasTextBaseline extends js.Object
 
+object CanvasTextBaseline {
+  @scala.inline
+  def alphabetic: typings.std.stdStrings.alphabetic = this.cast("alphabetic")
+  @scala.inline
+  def bottom: typings.std.stdStrings.bottom = this.cast("bottom")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def hanging: typings.std.stdStrings.hanging = this.cast("hanging")
+  @scala.inline
+  def ideographic: typings.std.stdStrings.ideographic = this.cast("ideographic")
+  @scala.inline
+  def middle: typings.std.stdStrings.middle = this.cast("middle")
+  @scala.inline
+  def top: typings.std.stdStrings.top = this.cast("top")
+}
+

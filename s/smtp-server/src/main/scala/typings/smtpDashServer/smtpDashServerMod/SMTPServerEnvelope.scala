@@ -19,7 +19,7 @@ trait SMTPServerEnvelope extends js.Object {
 object SMTPServerEnvelope {
   @scala.inline
   def apply(mailFrom: SMTPServerAddress | `false`, rcptTo: js.Array[SMTPServerAddress]): SMTPServerEnvelope = {
-    val __obj = js.Dynamic.literal(mailFrom = mailFrom.asInstanceOf[js.Any], rcptTo = rcptTo)
+    val __obj = js.Dynamic.literal(mailFrom = mailFrom.asInstanceOf[js.Any], rcptTo = rcptTo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SMTPServerEnvelope]
   }

@@ -59,12 +59,12 @@ object CronJobParameters {
     utcOffset: String | Double = null
   ): CronJobParameters = {
     val __obj = js.Dynamic.literal(cronTime = cronTime.asInstanceOf[js.Any], onTick = onTick.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (onComplete != null) __obj.updateDynamic("onComplete")(onComplete.asInstanceOf[js.Any])
-    if (!js.isUndefined(runOnInit)) __obj.updateDynamic("runOnInit")(runOnInit)
-    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start)
-    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone)
-    if (!js.isUndefined(unrefTimeout)) __obj.updateDynamic("unrefTimeout")(unrefTimeout)
+    if (!js.isUndefined(runOnInit)) __obj.updateDynamic("runOnInit")(runOnInit.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone.asInstanceOf[js.Any])
+    if (!js.isUndefined(unrefTimeout)) __obj.updateDynamic("unrefTimeout")(unrefTimeout.asInstanceOf[js.Any])
     if (utcOffset != null) __obj.updateDynamic("utcOffset")(utcOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[CronJobParameters]
   }

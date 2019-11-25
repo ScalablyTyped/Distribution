@@ -42,11 +42,11 @@ object DotenvConfigOptions {
     purge_dotenv: js.UndefOr[Boolean] = js.undefined
   ): DotenvConfigOptions = {
     val __obj = js.Dynamic.literal()
-    if (default_node_env != null) __obj.updateDynamic("default_node_env")(default_node_env)
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
-    if (node_env != null) __obj.updateDynamic("node_env")(node_env)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (!js.isUndefined(purge_dotenv)) __obj.updateDynamic("purge_dotenv")(purge_dotenv)
+    if (default_node_env != null) __obj.updateDynamic("default_node_env")(default_node_env.asInstanceOf[js.Any])
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    if (node_env != null) __obj.updateDynamic("node_env")(node_env.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (!js.isUndefined(purge_dotenv)) __obj.updateDynamic("purge_dotenv")(purge_dotenv.asInstanceOf[js.Any])
     __obj.asInstanceOf[DotenvConfigOptions]
   }
 }

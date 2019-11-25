@@ -14,8 +14,8 @@ object Anon_Charge {
   @scala.inline
   def apply(charge: String = null, payment_method_details: PaymentMethodDetails = null): Anon_Charge = {
     val __obj = js.Dynamic.literal()
-    if (charge != null) __obj.updateDynamic("charge")(charge)
-    if (payment_method_details != null) __obj.updateDynamic("payment_method_details")(payment_method_details)
+    if (charge != null) __obj.updateDynamic("charge")(charge.asInstanceOf[js.Any])
+    if (payment_method_details != null) __obj.updateDynamic("payment_method_details")(payment_method_details.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Charge]
   }
 }

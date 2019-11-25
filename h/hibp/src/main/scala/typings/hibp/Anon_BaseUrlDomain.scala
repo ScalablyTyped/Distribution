@@ -14,9 +14,9 @@ object Anon_BaseUrlDomain {
   @scala.inline
   def apply(baseUrl: String = null, domain: String = null, userAgent: String = null): Anon_BaseUrlDomain = {
     val __obj = js.Dynamic.literal()
-    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
-    if (domain != null) __obj.updateDynamic("domain")(domain)
-    if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent)
+    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl.asInstanceOf[js.Any])
+    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
+    if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BaseUrlDomain]
   }
 }

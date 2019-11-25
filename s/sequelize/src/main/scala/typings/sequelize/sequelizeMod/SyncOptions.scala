@@ -55,13 +55,13 @@ object SyncOptions {
     searchPath: String = null
   ): SyncOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alter)) __obj.updateDynamic("alter")(alter)
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
-    if (!js.isUndefined(hooks)) __obj.updateDynamic("hooks")(hooks)
+    if (!js.isUndefined(alter)) __obj.updateDynamic("alter")(alter.asInstanceOf[js.Any])
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
+    if (!js.isUndefined(hooks)) __obj.updateDynamic("hooks")(hooks.asInstanceOf[js.Any])
     if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
-    if (`match` != null) __obj.updateDynamic("match")(`match`)
-    if (schema != null) __obj.updateDynamic("schema")(schema)
-    if (searchPath != null) __obj.updateDynamic("searchPath")(searchPath)
+    if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
+    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
+    if (searchPath != null) __obj.updateDynamic("searchPath")(searchPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[SyncOptions]
   }
 }

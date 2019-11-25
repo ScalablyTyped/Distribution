@@ -27,7 +27,7 @@ object ReactImageFallbackProps {
     onError: /* event */ SyntheticEvent[HTMLImageElement, Event] => Unit = null,
     onLoad: /* event */ SyntheticEvent[HTMLImageElement, Event] => Unit = null
   ): ReactImageFallbackProps = {
-    val __obj = js.Dynamic.literal(fallbackImage = fallbackImage.asInstanceOf[js.Any], src = src)
+    val __obj = js.Dynamic.literal(fallbackImage = fallbackImage.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
     if (initialImage != null) __obj.updateDynamic("initialImage")(initialImage.asInstanceOf[js.Any])
     if (initialTimeout != null) __obj.updateDynamic("initialTimeout")(initialTimeout.asInstanceOf[js.Any])
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))

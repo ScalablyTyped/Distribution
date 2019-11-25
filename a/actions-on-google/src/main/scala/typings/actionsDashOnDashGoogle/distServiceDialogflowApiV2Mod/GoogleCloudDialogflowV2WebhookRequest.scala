@@ -20,10 +20,10 @@ object GoogleCloudDialogflowV2WebhookRequest {
     session: String = null
   ): GoogleCloudDialogflowV2WebhookRequest = {
     val __obj = js.Dynamic.literal()
-    if (originalDetectIntentRequest != null) __obj.updateDynamic("originalDetectIntentRequest")(originalDetectIntentRequest)
-    if (queryResult != null) __obj.updateDynamic("queryResult")(queryResult)
-    if (responseId != null) __obj.updateDynamic("responseId")(responseId)
-    if (session != null) __obj.updateDynamic("session")(session)
+    if (originalDetectIntentRequest != null) __obj.updateDynamic("originalDetectIntentRequest")(originalDetectIntentRequest.asInstanceOf[js.Any])
+    if (queryResult != null) __obj.updateDynamic("queryResult")(queryResult.asInstanceOf[js.Any])
+    if (responseId != null) __obj.updateDynamic("responseId")(responseId.asInstanceOf[js.Any])
+    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudDialogflowV2WebhookRequest]
   }
 }

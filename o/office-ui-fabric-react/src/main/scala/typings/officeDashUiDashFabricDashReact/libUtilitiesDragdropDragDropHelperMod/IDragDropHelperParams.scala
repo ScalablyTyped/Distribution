@@ -13,7 +13,7 @@ trait IDragDropHelperParams extends js.Object {
 object IDragDropHelperParams {
   @scala.inline
   def apply(selection: ISelection, minimumPixelsForDrag: Int | Double = null): IDragDropHelperParams = {
-    val __obj = js.Dynamic.literal(selection = selection)
+    val __obj = js.Dynamic.literal(selection = selection.asInstanceOf[js.Any])
     if (minimumPixelsForDrag != null) __obj.updateDynamic("minimumPixelsForDrag")(minimumPixelsForDrag.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDragDropHelperParams]
   }

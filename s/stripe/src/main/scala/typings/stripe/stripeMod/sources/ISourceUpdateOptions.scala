@@ -23,11 +23,11 @@ object ISourceUpdateOptions {
     owner: Anon_AddressEmailNamePhoneIAddress = null
   ): ISourceUpdateOptions = {
     val __obj = js.Dynamic.literal()
-    if (expand != null) __obj.updateDynamic("expand")(expand)
-    if (include != null) __obj.updateDynamic("include")(include)
-    if (mandate != null) __obj.updateDynamic("mandate")(mandate)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    if (mandate != null) __obj.updateDynamic("mandate")(mandate.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISourceUpdateOptions]
   }
 }

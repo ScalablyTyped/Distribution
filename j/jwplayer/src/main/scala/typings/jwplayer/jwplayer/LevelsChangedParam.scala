@@ -11,7 +11,7 @@ trait LevelsChangedParam extends js.Object {
 object LevelsChangedParam {
   @scala.inline
   def apply(currentQuality: Double): LevelsChangedParam = {
-    val __obj = js.Dynamic.literal(currentQuality = currentQuality)
+    val __obj = js.Dynamic.literal(currentQuality = currentQuality.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LevelsChangedParam]
   }

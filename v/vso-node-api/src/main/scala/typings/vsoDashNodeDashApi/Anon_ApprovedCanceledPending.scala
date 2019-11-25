@@ -15,7 +15,7 @@ trait Anon_ApprovedCanceledPending extends js.Object {
 object Anon_ApprovedCanceledPending {
   @scala.inline
   def apply(approved: Double, canceled: Double, pending: Double, rejected: Double, unknown: Double): Anon_ApprovedCanceledPending = {
-    val __obj = js.Dynamic.literal(approved = approved, canceled = canceled, pending = pending, rejected = rejected, unknown = unknown)
+    val __obj = js.Dynamic.literal(approved = approved.asInstanceOf[js.Any], canceled = canceled.asInstanceOf[js.Any], pending = pending.asInstanceOf[js.Any], rejected = rejected.asInstanceOf[js.Any], unknown = unknown.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ApprovedCanceledPending]
   }

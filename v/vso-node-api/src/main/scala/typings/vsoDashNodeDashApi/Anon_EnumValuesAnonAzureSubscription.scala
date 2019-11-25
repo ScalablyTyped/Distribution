@@ -11,7 +11,7 @@ trait Anon_EnumValuesAnonAzureSubscription extends js.Object {
 object Anon_EnumValuesAnonAzureSubscription {
   @scala.inline
   def apply(enumValues: Anon_AzureSubscription): Anon_EnumValuesAnonAzureSubscription = {
-    val __obj = js.Dynamic.literal(enumValues = enumValues)
+    val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EnumValuesAnonAzureSubscription]
   }

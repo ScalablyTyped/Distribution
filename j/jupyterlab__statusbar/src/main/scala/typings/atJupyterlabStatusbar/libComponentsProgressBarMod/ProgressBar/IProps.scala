@@ -17,7 +17,7 @@ trait IProps extends js.Object {
 object IProps {
   @scala.inline
   def apply(percentage: Double): IProps = {
-    val __obj = js.Dynamic.literal(percentage = percentage)
+    val __obj = js.Dynamic.literal(percentage = percentage.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IProps]
   }

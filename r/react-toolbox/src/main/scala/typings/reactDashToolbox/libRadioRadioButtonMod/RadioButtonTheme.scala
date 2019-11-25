@@ -27,10 +27,10 @@ object RadioButtonTheme {
   @scala.inline
   def apply(disabled: String = null, field: String = null, input: String = null, text: String = null): RadioButtonTheme = {
     val __obj = js.Dynamic.literal()
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled)
-    if (field != null) __obj.updateDynamic("field")(field)
-    if (input != null) __obj.updateDynamic("input")(input)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[RadioButtonTheme]
   }
 }

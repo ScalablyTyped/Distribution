@@ -33,7 +33,7 @@ object EBookInstallSummary {
     val __obj = js.Dynamic.literal()
     if (failedDeviceCount != null) __obj.updateDynamic("failedDeviceCount")(failedDeviceCount.asInstanceOf[js.Any])
     if (failedUserCount != null) __obj.updateDynamic("failedUserCount")(failedUserCount.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (installedDeviceCount != null) __obj.updateDynamic("installedDeviceCount")(installedDeviceCount.asInstanceOf[js.Any])
     if (installedUserCount != null) __obj.updateDynamic("installedUserCount")(installedUserCount.asInstanceOf[js.Any])
     if (notInstalledDeviceCount != null) __obj.updateDynamic("notInstalledDeviceCount")(notInstalledDeviceCount.asInstanceOf[js.Any])

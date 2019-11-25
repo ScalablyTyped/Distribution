@@ -86,15 +86,15 @@ object SeriesMapDataOptions {
   ): SeriesMapDataOptions = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels)
-    if (drilldown != null) __obj.updateDynamic("drilldown")(drilldown)
-    if (events != null) __obj.updateDynamic("events")(events)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
+    if (drilldown != null) __obj.updateDynamic("drilldown")(drilldown.asInstanceOf[js.Any])
+    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (labelrank != null) __obj.updateDynamic("labelrank")(labelrank.asInstanceOf[js.Any])
     if (middleX != null) __obj.updateDynamic("middleX")(middleX.asInstanceOf[js.Any])
     if (middleY != null) __obj.updateDynamic("middleY")(middleY.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesMapDataOptions]
   }

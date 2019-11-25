@@ -35,17 +35,17 @@ object CallbackParamsType {
     token_type: String = null
   ): CallbackParamsType = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (access_token != null) __obj.updateDynamic("access_token")(access_token)
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (error_description != null) __obj.updateDynamic("error_description")(error_description)
-    if (error_uri != null) __obj.updateDynamic("error_uri")(error_uri)
-    if (expires_in != null) __obj.updateDynamic("expires_in")(expires_in)
-    if (id_token != null) __obj.updateDynamic("id_token")(id_token)
-    if (session_state != null) __obj.updateDynamic("session_state")(session_state)
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (token_type != null) __obj.updateDynamic("token_type")(token_type)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (access_token != null) __obj.updateDynamic("access_token")(access_token.asInstanceOf[js.Any])
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (error_description != null) __obj.updateDynamic("error_description")(error_description.asInstanceOf[js.Any])
+    if (error_uri != null) __obj.updateDynamic("error_uri")(error_uri.asInstanceOf[js.Any])
+    if (expires_in != null) __obj.updateDynamic("expires_in")(expires_in.asInstanceOf[js.Any])
+    if (id_token != null) __obj.updateDynamic("id_token")(id_token.asInstanceOf[js.Any])
+    if (session_state != null) __obj.updateDynamic("session_state")(session_state.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (token_type != null) __obj.updateDynamic("token_type")(token_type.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallbackParamsType]
   }
 }

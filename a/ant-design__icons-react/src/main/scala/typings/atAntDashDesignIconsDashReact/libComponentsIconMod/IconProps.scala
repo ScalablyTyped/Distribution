@@ -33,12 +33,12 @@ object IconProps {
   ): IconProps = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (focusable != null) __obj.updateDynamic("focusable")(focusable)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (focusable != null) __obj.updateDynamic("focusable")(focusable.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (primaryColor != null) __obj.updateDynamic("primaryColor")(primaryColor)
-    if (secondaryColor != null) __obj.updateDynamic("secondaryColor")(secondaryColor)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (primaryColor != null) __obj.updateDynamic("primaryColor")(primaryColor.asInstanceOf[js.Any])
+    if (secondaryColor != null) __obj.updateDynamic("secondaryColor")(secondaryColor.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[IconProps]
   }
 }

@@ -23,12 +23,12 @@ object OptionsSync {
     transform: /* CosmiconfigResult */ CosmiconfigResult => CosmiconfigResult = null
   ): OptionsSync = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
-    if (!js.isUndefined(ignoreEmptySearchPlaces)) __obj.updateDynamic("ignoreEmptySearchPlaces")(ignoreEmptySearchPlaces)
-    if (loaders != null) __obj.updateDynamic("loaders")(loaders)
-    if (packageProp != null) __obj.updateDynamic("packageProp")(packageProp)
-    if (searchPlaces != null) __obj.updateDynamic("searchPlaces")(searchPlaces)
-    if (stopDir != null) __obj.updateDynamic("stopDir")(stopDir)
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreEmptySearchPlaces)) __obj.updateDynamic("ignoreEmptySearchPlaces")(ignoreEmptySearchPlaces.asInstanceOf[js.Any])
+    if (loaders != null) __obj.updateDynamic("loaders")(loaders.asInstanceOf[js.Any])
+    if (packageProp != null) __obj.updateDynamic("packageProp")(packageProp.asInstanceOf[js.Any])
+    if (searchPlaces != null) __obj.updateDynamic("searchPlaces")(searchPlaces.asInstanceOf[js.Any])
+    if (stopDir != null) __obj.updateDynamic("stopDir")(stopDir.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction1(transform))
     __obj.asInstanceOf[OptionsSync]
   }

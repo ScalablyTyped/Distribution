@@ -12,7 +12,7 @@ object Anon_Allvoices {
   @scala.inline
   def apply(all_voices: js.UndefOr[Boolean] = js.undefined): Anon_Allvoices = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(all_voices)) __obj.updateDynamic("all_voices")(all_voices)
+    if (!js.isUndefined(all_voices)) __obj.updateDynamic("all_voices")(all_voices.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Allvoices]
   }
 }

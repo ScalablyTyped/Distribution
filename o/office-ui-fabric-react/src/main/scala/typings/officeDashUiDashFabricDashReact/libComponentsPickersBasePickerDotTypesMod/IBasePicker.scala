@@ -17,7 +17,7 @@ object IBasePicker {
   @scala.inline
   def apply[T](focus: () => Unit, focusInput: () => Unit, items: js.Array[T] = null): IBasePicker[T] = {
     val __obj = js.Dynamic.literal(focus = js.Any.fromFunction0(focus), focusInput = js.Any.fromFunction0(focusInput))
-    if (items != null) __obj.updateDynamic("items")(items)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBasePicker[T]]
   }
 }

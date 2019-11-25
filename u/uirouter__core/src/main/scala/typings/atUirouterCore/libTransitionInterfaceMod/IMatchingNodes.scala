@@ -25,8 +25,8 @@ object IMatchingNodes {
     to: js.Array[PathNode],
     StringDictionary: /* key */ StringDictionary[js.Array[PathNode]] = null
   ): IMatchingNodes = {
-    val __obj = js.Dynamic.literal(entering = entering, exiting = exiting, from = from, retained = retained, to = to)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(entering = entering.asInstanceOf[js.Any], exiting = exiting.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], retained = retained.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[IMatchingNodes]
   }
 }

@@ -42,11 +42,11 @@ object ConfigItem {
     regexMessage: String = null,
     valueItems: js.Array[String] = null
   ): ConfigItem = {
-    val __obj = js.Dynamic.literal(description = description, displayName = displayName, name = name, value = value, valueType = valueType)
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
-    if (regex != null) __obj.updateDynamic("regex")(regex)
-    if (regexMessage != null) __obj.updateDynamic("regexMessage")(regexMessage)
-    if (valueItems != null) __obj.updateDynamic("valueItems")(valueItems)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], valueType = valueType.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (regex != null) __obj.updateDynamic("regex")(regex.asInstanceOf[js.Any])
+    if (regexMessage != null) __obj.updateDynamic("regexMessage")(regexMessage.asInstanceOf[js.Any])
+    if (valueItems != null) __obj.updateDynamic("valueItems")(valueItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigItem]
   }
 }

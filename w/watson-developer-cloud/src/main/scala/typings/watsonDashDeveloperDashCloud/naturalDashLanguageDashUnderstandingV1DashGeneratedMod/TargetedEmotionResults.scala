@@ -16,8 +16,8 @@ object TargetedEmotionResults {
   @scala.inline
   def apply(emotion: EmotionScores = null, text: String = null): TargetedEmotionResults = {
     val __obj = js.Dynamic.literal()
-    if (emotion != null) __obj.updateDynamic("emotion")(emotion)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (emotion != null) __obj.updateDynamic("emotion")(emotion.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetedEmotionResults]
   }
 }

@@ -14,7 +14,7 @@ trait UrlClassification extends js.Object {
 object UrlClassification {
   @scala.inline
   def apply(firstParty: UrlClassificationParty, thirdParty: UrlClassificationParty): UrlClassification = {
-    val __obj = js.Dynamic.literal(firstParty = firstParty, thirdParty = thirdParty)
+    val __obj = js.Dynamic.literal(firstParty = firstParty.asInstanceOf[js.Any], thirdParty = thirdParty.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UrlClassification]
   }

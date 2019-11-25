@@ -12,7 +12,7 @@ trait IFeaturePolicyOptions extends js.Object {
 object IFeaturePolicyOptions {
   @scala.inline
   def apply(features: StringDictionary[js.Array[String]]): IFeaturePolicyOptions = {
-    val __obj = js.Dynamic.literal(features = features)
+    val __obj = js.Dynamic.literal(features = features.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IFeaturePolicyOptions]
   }

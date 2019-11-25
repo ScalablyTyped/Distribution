@@ -34,16 +34,16 @@ object InlineQueryResultGif {
     thumb_url: String = null,
     title: String = null
   ): InlineQueryResultGif = {
-    val __obj = js.Dynamic.literal(gif_url = gif_url, id = id)
-    __obj.updateDynamic("type")(`type`)
-    if (caption != null) __obj.updateDynamic("caption")(caption)
+    val __obj = js.Dynamic.literal(gif_url = gif_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
     if (gif_duration != null) __obj.updateDynamic("gif_duration")(gif_duration.asInstanceOf[js.Any])
     if (gif_height != null) __obj.updateDynamic("gif_height")(gif_height.asInstanceOf[js.Any])
     if (gif_width != null) __obj.updateDynamic("gif_width")(gif_width.asInstanceOf[js.Any])
-    if (input_message_content != null) __obj.updateDynamic("input_message_content")(input_message_content)
-    if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup)
-    if (thumb_url != null) __obj.updateDynamic("thumb_url")(thumb_url)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (input_message_content != null) __obj.updateDynamic("input_message_content")(input_message_content.asInstanceOf[js.Any])
+    if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup.asInstanceOf[js.Any])
+    if (thumb_url != null) __obj.updateDynamic("thumb_url")(thumb_url.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[InlineQueryResultGif]
   }
 }

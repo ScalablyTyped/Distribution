@@ -18,9 +18,9 @@ object GraphQLConfigEnpointConfig {
     headers: StringDictionary[String] = null,
     subscription: GraphQLConfigEnpointsSubscription = null
   ): GraphQLConfigEnpointConfig = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (subscription != null) __obj.updateDynamic("subscription")(subscription)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (subscription != null) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLConfigEnpointConfig]
   }
 }

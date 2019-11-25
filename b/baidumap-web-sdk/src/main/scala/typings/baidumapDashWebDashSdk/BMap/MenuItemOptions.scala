@@ -14,8 +14,8 @@ object MenuItemOptions {
   @scala.inline
   def apply(iconUrl: String = null, id: String = null, width: Int | Double = null): MenuItemOptions = {
     val __obj = js.Dynamic.literal()
-    if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuItemOptions]
   }

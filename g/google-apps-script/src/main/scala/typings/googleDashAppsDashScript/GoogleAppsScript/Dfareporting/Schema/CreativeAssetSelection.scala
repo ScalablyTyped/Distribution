@@ -13,8 +13,8 @@ object CreativeAssetSelection {
   @scala.inline
   def apply(defaultAssetId: String = null, rules: js.Array[Rule] = null): CreativeAssetSelection = {
     val __obj = js.Dynamic.literal()
-    if (defaultAssetId != null) __obj.updateDynamic("defaultAssetId")(defaultAssetId)
-    if (rules != null) __obj.updateDynamic("rules")(rules)
+    if (defaultAssetId != null) __obj.updateDynamic("defaultAssetId")(defaultAssetId.asInstanceOf[js.Any])
+    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreativeAssetSelection]
   }
 }

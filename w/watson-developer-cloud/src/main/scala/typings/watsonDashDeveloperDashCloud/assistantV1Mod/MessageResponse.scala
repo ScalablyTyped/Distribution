@@ -33,9 +33,9 @@ object MessageResponse {
     actions: js.Array[DialogNodeAction] = null,
     alternate_intents: js.UndefOr[Boolean] = js.undefined
   ): MessageResponse = {
-    val __obj = js.Dynamic.literal(context = context, entities = entities, input = input, intents = intents, output = output)
-    if (actions != null) __obj.updateDynamic("actions")(actions)
-    if (!js.isUndefined(alternate_intents)) __obj.updateDynamic("alternate_intents")(alternate_intents)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], entities = entities.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], intents = intents.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any])
+    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
+    if (!js.isUndefined(alternate_intents)) __obj.updateDynamic("alternate_intents")(alternate_intents.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageResponse]
   }
 }

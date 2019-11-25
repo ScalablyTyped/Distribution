@@ -48,19 +48,19 @@ object SketchMSStyle {
     startDecorationType: Int | Double = null,
     textStyle: SketchMSTextStyle = null
   ): SketchMSStyle = {
-    val __obj = js.Dynamic.literal(_class = _class, do_objectID = do_objectID, endMarkerType = endMarkerType, miterLimit = miterLimit, startMarkerType = startMarkerType, windingRule = windingRule)
-    if (blur != null) __obj.updateDynamic("blur")(blur)
-    if (borderOptions != null) __obj.updateDynamic("borderOptions")(borderOptions)
-    if (borders != null) __obj.updateDynamic("borders")(borders)
-    if (colorControls != null) __obj.updateDynamic("colorControls")(colorControls)
-    if (contextSettings != null) __obj.updateDynamic("contextSettings")(contextSettings)
+    val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], do_objectID = do_objectID.asInstanceOf[js.Any], endMarkerType = endMarkerType.asInstanceOf[js.Any], miterLimit = miterLimit.asInstanceOf[js.Any], startMarkerType = startMarkerType.asInstanceOf[js.Any], windingRule = windingRule.asInstanceOf[js.Any])
+    if (blur != null) __obj.updateDynamic("blur")(blur.asInstanceOf[js.Any])
+    if (borderOptions != null) __obj.updateDynamic("borderOptions")(borderOptions.asInstanceOf[js.Any])
+    if (borders != null) __obj.updateDynamic("borders")(borders.asInstanceOf[js.Any])
+    if (colorControls != null) __obj.updateDynamic("colorControls")(colorControls.asInstanceOf[js.Any])
+    if (contextSettings != null) __obj.updateDynamic("contextSettings")(contextSettings.asInstanceOf[js.Any])
     if (endDecorationType != null) __obj.updateDynamic("endDecorationType")(endDecorationType.asInstanceOf[js.Any])
-    if (fills != null) __obj.updateDynamic("fills")(fills)
-    if (innerShadows != null) __obj.updateDynamic("innerShadows")(innerShadows)
-    if (reflection != null) __obj.updateDynamic("reflection")(reflection)
-    if (shadows != null) __obj.updateDynamic("shadows")(shadows)
+    if (fills != null) __obj.updateDynamic("fills")(fills.asInstanceOf[js.Any])
+    if (innerShadows != null) __obj.updateDynamic("innerShadows")(innerShadows.asInstanceOf[js.Any])
+    if (reflection != null) __obj.updateDynamic("reflection")(reflection.asInstanceOf[js.Any])
+    if (shadows != null) __obj.updateDynamic("shadows")(shadows.asInstanceOf[js.Any])
     if (startDecorationType != null) __obj.updateDynamic("startDecorationType")(startDecorationType.asInstanceOf[js.Any])
-    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle)
+    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSStyle]
   }
 }

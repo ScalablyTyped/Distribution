@@ -15,7 +15,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(bufoverflow: Double, frequence: Double, maxbufsize: Double, readable: Boolean, writeable: Boolean): Options = {
-    val __obj = js.Dynamic.literal(bufoverflow = bufoverflow, frequence = frequence, maxbufsize = maxbufsize, readable = readable, writeable = writeable)
+    val __obj = js.Dynamic.literal(bufoverflow = bufoverflow.asInstanceOf[js.Any], frequence = frequence.asInstanceOf[js.Any], maxbufsize = maxbufsize.asInstanceOf[js.Any], readable = readable.asInstanceOf[js.Any], writeable = writeable.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Options]
   }

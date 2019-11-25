@@ -21,8 +21,8 @@ object TimestampOptions {
   @scala.inline
   def apply(alias: String = null, format: String = null): TimestampOptions = {
     val __obj = js.Dynamic.literal()
-    if (alias != null) __obj.updateDynamic("alias")(alias)
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimestampOptions]
   }
 }

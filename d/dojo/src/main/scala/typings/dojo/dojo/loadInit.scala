@@ -28,7 +28,7 @@ trait loadInit extends js.Object {
 object loadInit {
   @scala.inline
   def apply(dynamic: Double, load: js.Object, normalize: js.Any => js.Any): loadInit = {
-    val __obj = js.Dynamic.literal(dynamic = dynamic, load = load, normalize = js.Any.fromFunction1(normalize))
+    val __obj = js.Dynamic.literal(dynamic = dynamic.asInstanceOf[js.Any], load = load.asInstanceOf[js.Any], normalize = js.Any.fromFunction1(normalize))
   
     __obj.asInstanceOf[loadInit]
   }

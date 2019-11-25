@@ -15,7 +15,7 @@ object TokensToFunctionOptions {
   @scala.inline
   def apply(sensitive: js.UndefOr[Boolean] = js.undefined): TokensToFunctionOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive)
+    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive.asInstanceOf[js.Any])
     __obj.asInstanceOf[TokensToFunctionOptions]
   }
 }

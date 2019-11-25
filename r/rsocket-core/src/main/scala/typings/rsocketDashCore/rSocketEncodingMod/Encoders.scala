@@ -24,7 +24,7 @@ object Encoders {
     metadataMimeType: Encoder[String],
     resumeToken: Encoder[T]
   ): Encoders[T] = {
-    val __obj = js.Dynamic.literal(data = data, dataMimeType = dataMimeType, message = message, metadata = metadata, metadataMimeType = metadataMimeType, resumeToken = resumeToken)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], dataMimeType = dataMimeType.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], metadataMimeType = metadataMimeType.asInstanceOf[js.Any], resumeToken = resumeToken.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Encoders[T]]
   }

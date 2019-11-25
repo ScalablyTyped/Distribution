@@ -23,9 +23,9 @@ object Identity {
   @scala.inline
   def apply(principalId: String = null, tenantId: String = null, `type`: String = null): Identity = {
     val __obj = js.Dynamic.literal()
-    if (principalId != null) __obj.updateDynamic("principalId")(principalId)
-    if (tenantId != null) __obj.updateDynamic("tenantId")(tenantId)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (principalId != null) __obj.updateDynamic("principalId")(principalId.asInstanceOf[js.Any])
+    if (tenantId != null) __obj.updateDynamic("tenantId")(tenantId.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Identity]
   }
 }

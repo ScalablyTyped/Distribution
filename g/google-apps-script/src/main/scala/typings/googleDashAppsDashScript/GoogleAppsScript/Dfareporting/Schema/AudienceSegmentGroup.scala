@@ -14,9 +14,9 @@ object AudienceSegmentGroup {
   @scala.inline
   def apply(audienceSegments: js.Array[AudienceSegment] = null, id: String = null, name: String = null): AudienceSegmentGroup = {
     val __obj = js.Dynamic.literal()
-    if (audienceSegments != null) __obj.updateDynamic("audienceSegments")(audienceSegments)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (audienceSegments != null) __obj.updateDynamic("audienceSegments")(audienceSegments.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudienceSegmentGroup]
   }
 }

@@ -14,7 +14,7 @@ trait GeolocationResult extends js.Object {
 object GeolocationResult {
   @scala.inline
   def apply(accuracy: Double, info: String, isConverted: Boolean, position: LngLat): GeolocationResult = {
-    val __obj = js.Dynamic.literal(accuracy = accuracy, info = info, isConverted = isConverted, position = position)
+    val __obj = js.Dynamic.literal(accuracy = accuracy.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], isConverted = isConverted.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GeolocationResult]
   }

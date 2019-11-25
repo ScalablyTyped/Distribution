@@ -34,7 +34,7 @@ object CircularProgressbarDefaultProps {
     styles: CircularProgressbarStyles,
     text: String
   ): CircularProgressbarDefaultProps = {
-    val __obj = js.Dynamic.literal(background = background, backgroundPadding = backgroundPadding, circleRatio = circleRatio, className = className, classes = classes, counterClockwise = counterClockwise, maxValue = maxValue, minValue = minValue, strokeWidth = strokeWidth, styles = styles, text = text)
+    val __obj = js.Dynamic.literal(background = background.asInstanceOf[js.Any], backgroundPadding = backgroundPadding.asInstanceOf[js.Any], circleRatio = circleRatio.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], classes = classes.asInstanceOf[js.Any], counterClockwise = counterClockwise.asInstanceOf[js.Any], maxValue = maxValue.asInstanceOf[js.Any], minValue = minValue.asInstanceOf[js.Any], strokeWidth = strokeWidth.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CircularProgressbarDefaultProps]
   }

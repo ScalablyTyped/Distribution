@@ -12,7 +12,7 @@ trait Context extends js.Object {
 object Context {
   @scala.inline
   def apply(merge: Properties => Context, properties: Properties): Context = {
-    val __obj = js.Dynamic.literal(merge = js.Any.fromFunction1(merge), properties = properties)
+    val __obj = js.Dynamic.literal(merge = js.Any.fromFunction1(merge), properties = properties.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Context]
   }

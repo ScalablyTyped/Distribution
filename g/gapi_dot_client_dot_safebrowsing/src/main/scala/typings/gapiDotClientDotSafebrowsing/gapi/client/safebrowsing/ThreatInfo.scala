@@ -24,10 +24,10 @@ object ThreatInfo {
     threatTypes: js.Array[String] = null
   ): ThreatInfo = {
     val __obj = js.Dynamic.literal()
-    if (platformTypes != null) __obj.updateDynamic("platformTypes")(platformTypes)
-    if (threatEntries != null) __obj.updateDynamic("threatEntries")(threatEntries)
-    if (threatEntryTypes != null) __obj.updateDynamic("threatEntryTypes")(threatEntryTypes)
-    if (threatTypes != null) __obj.updateDynamic("threatTypes")(threatTypes)
+    if (platformTypes != null) __obj.updateDynamic("platformTypes")(platformTypes.asInstanceOf[js.Any])
+    if (threatEntries != null) __obj.updateDynamic("threatEntries")(threatEntries.asInstanceOf[js.Any])
+    if (threatEntryTypes != null) __obj.updateDynamic("threatEntryTypes")(threatEntryTypes.asInstanceOf[js.Any])
+    if (threatTypes != null) __obj.updateDynamic("threatTypes")(threatTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThreatInfo]
   }
 }

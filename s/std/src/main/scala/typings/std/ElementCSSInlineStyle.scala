@@ -11,7 +11,7 @@ trait ElementCSSInlineStyle extends js.Object {
 object ElementCSSInlineStyle {
   @scala.inline
   def apply(style: CSSStyleDeclaration): ElementCSSInlineStyle = {
-    val __obj = js.Dynamic.literal(style = style)
+    val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ElementCSSInlineStyle]
   }

@@ -83,7 +83,7 @@ object atUifabricStylingMod extends js.Object {
   val hiddenContentStyle: IRawStyle = js.native
   val noWrap: IRawStyle = js.native
   val normalize: IRawStyle = js.native
-  def buildClassMap[T /* <: js.Object */](styles: T): /* import warning: ImportType.apply c Unsupported type mapping: 
+  def buildClassMap[T /* <: js.Object */](styles: T): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof T ]:? string}
     */ typings.atUifabricStyling.atUifabricStylingStrings.buildClassMap with js.Any = js.native
   def concatStyleSets[TStyleSet /* <: IStyleSet[TStyleSet] */](): IConcatenatedStyleSet[TStyleSet] = js.native

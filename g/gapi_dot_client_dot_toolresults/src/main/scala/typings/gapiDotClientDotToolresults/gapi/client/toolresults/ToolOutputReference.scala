@@ -29,9 +29,9 @@ object ToolOutputReference {
   @scala.inline
   def apply(creationTime: Timestamp = null, output: FileReference = null, testCase: TestCaseReference = null): ToolOutputReference = {
     val __obj = js.Dynamic.literal()
-    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime)
-    if (output != null) __obj.updateDynamic("output")(output)
-    if (testCase != null) __obj.updateDynamic("testCase")(testCase)
+    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
+    if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
+    if (testCase != null) __obj.updateDynamic("testCase")(testCase.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolOutputReference]
   }
 }

@@ -59,8 +59,8 @@ object LevelDetails {
     `type`: String,
     version: Double
   ): LevelDetails = {
-    val __obj = js.Dynamic.literal(averagetargetduration = averagetargetduration, endSN = endSN, fragments = fragments, live = live, startSN = startSN, targetduration = targetduration, totalduration = totalduration, version = version)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(averagetargetduration = averagetargetduration.asInstanceOf[js.Any], endSN = endSN.asInstanceOf[js.Any], fragments = fragments.asInstanceOf[js.Any], live = live.asInstanceOf[js.Any], startSN = startSN.asInstanceOf[js.Any], targetduration = targetduration.asInstanceOf[js.Any], totalduration = totalduration.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LevelDetails]
   }
 }

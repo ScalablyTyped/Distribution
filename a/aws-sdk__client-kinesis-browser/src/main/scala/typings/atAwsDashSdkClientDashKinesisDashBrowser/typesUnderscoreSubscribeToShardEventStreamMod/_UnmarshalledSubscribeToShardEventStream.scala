@@ -16,7 +16,7 @@ trait _UnmarshalledSubscribeToShardEventStream extends _SubscribeToShardEventStr
 object _UnmarshalledSubscribeToShardEventStream {
   @scala.inline
   def apply(SubscribeToShardEvent: _UnmarshalledSubscribeToShardEvent): _UnmarshalledSubscribeToShardEventStream = {
-    val __obj = js.Dynamic.literal(SubscribeToShardEvent = SubscribeToShardEvent)
+    val __obj = js.Dynamic.literal(SubscribeToShardEvent = SubscribeToShardEvent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_UnmarshalledSubscribeToShardEventStream]
   }

@@ -34,9 +34,9 @@ object MessagingDeviceResult {
   @scala.inline
   def apply(canonicalRegistrationToken: String = null, error: FirebaseError = null, messageId: String = null): MessagingDeviceResult = {
     val __obj = js.Dynamic.literal()
-    if (canonicalRegistrationToken != null) __obj.updateDynamic("canonicalRegistrationToken")(canonicalRegistrationToken)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (messageId != null) __obj.updateDynamic("messageId")(messageId)
+    if (canonicalRegistrationToken != null) __obj.updateDynamic("canonicalRegistrationToken")(canonicalRegistrationToken.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessagingDeviceResult]
   }
 }

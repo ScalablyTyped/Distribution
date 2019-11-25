@@ -33,11 +33,11 @@ object Anon_AutoFold {
     tpl: js.Any = null
   ): Anon_AutoFold = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoFold)) __obj.updateDynamic("autoFold")(autoFold)
-    if (event != null) __obj.updateDynamic("event")(event)
+    if (!js.isUndefined(autoFold)) __obj.updateDynamic("autoFold")(autoFold.asInstanceOf[js.Any])
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(multipanel)) __obj.updateDynamic("multipanel")(multipanel)
-    if (tpl != null) __obj.updateDynamic("tpl")(tpl)
+    if (!js.isUndefined(multipanel)) __obj.updateDynamic("multipanel")(multipanel.asInstanceOf[js.Any])
+    if (tpl != null) __obj.updateDynamic("tpl")(tpl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AutoFold]
   }
 }

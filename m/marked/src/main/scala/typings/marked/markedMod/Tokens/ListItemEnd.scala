@@ -14,7 +14,7 @@ object ListItemEnd {
   @scala.inline
   def apply(`type`: list_item_end): ListItemEnd = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListItemEnd]
   }
 }

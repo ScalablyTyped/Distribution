@@ -16,7 +16,7 @@ trait WebResponse extends js.Object {
 object WebResponse {
   @scala.inline
   def apply(body: Anon_Entry, headers: js.Any, isSuccessful: Boolean, md5: js.Any, statusCode: Double): WebResponse = {
-    val __obj = js.Dynamic.literal(body = body, headers = headers, isSuccessful = isSuccessful, md5 = md5, statusCode = statusCode)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], isSuccessful = isSuccessful.asInstanceOf[js.Any], md5 = md5.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WebResponse]
   }

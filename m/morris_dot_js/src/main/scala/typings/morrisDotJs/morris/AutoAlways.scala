@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait AutoAlways extends js.Object
 
+object AutoAlways {
+  @scala.inline
+  def always: typings.morrisDotJs.morrisDotJsStrings.always = this.cast("always")
+  @scala.inline
+  def auto: typings.morrisDotJs.morrisDotJsStrings.auto = this.cast("auto")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

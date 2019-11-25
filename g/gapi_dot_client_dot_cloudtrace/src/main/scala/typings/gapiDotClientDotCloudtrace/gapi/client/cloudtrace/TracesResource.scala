@@ -21,7 +21,7 @@ trait TracesResource extends js.Object {
 object TracesResource {
   @scala.inline
   def apply(batchWrite: Anon_Accesstoken => Request[js.Object], spans: SpansResource): TracesResource = {
-    val __obj = js.Dynamic.literal(batchWrite = js.Any.fromFunction1(batchWrite), spans = spans)
+    val __obj = js.Dynamic.literal(batchWrite = js.Any.fromFunction1(batchWrite), spans = spans.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TracesResource]
   }

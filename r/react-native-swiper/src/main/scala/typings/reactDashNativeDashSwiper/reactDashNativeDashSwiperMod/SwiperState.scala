@@ -32,7 +32,7 @@ object SwiperState {
     total: Double,
     width: Double
   ): SwiperState = {
-    val __obj = js.Dynamic.literal(autoplayEnd = autoplayEnd, dir = dir.asInstanceOf[js.Any], height = height, index = index, isScrolling = isScrolling, loopJump = loopJump, offset = offset, total = total, width = width)
+    val __obj = js.Dynamic.literal(autoplayEnd = autoplayEnd.asInstanceOf[js.Any], dir = dir.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], isScrolling = isScrolling.asInstanceOf[js.Any], loopJump = loopJump.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SwiperState]
   }

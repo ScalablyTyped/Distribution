@@ -1,6 +1,5 @@
 package typings.atAngularCompiler.srcCompilerMod
 
-import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BinaryOperator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,32 +9,32 @@ import scala.scalajs.js.annotation._
 class BinaryOperatorExpr protected ()
   extends typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BinaryOperatorExpr {
   def this(
-    operator: BinaryOperator,
+    operator: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BinaryOperator,
     lhs: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Expression,
     rhs: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Expression
   ) = this()
   def this(
-    operator: BinaryOperator,
+    operator: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BinaryOperator,
     lhs: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Expression,
     rhs: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Expression,
     `type`: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Type
   ) = this()
   def this(
-    operator: BinaryOperator,
+    operator: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BinaryOperator,
     lhs: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Expression,
     rhs: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Expression,
     `type`: Null,
     sourceSpan: typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseSourceSpan
   ) = this()
   def this(
-    operator: BinaryOperator,
+    operator: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BinaryOperator,
     lhs: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Expression,
     rhs: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Expression,
     `type`: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Type,
     sourceSpan: typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseSourceSpan
   ) = this()
   def this(
-    operator: BinaryOperator,
+    operator: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BinaryOperator,
     lhs: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Expression,
     rhs: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Expression,
     `type`: Null,
@@ -43,7 +42,7 @@ class BinaryOperatorExpr protected ()
     parens: Boolean
   ) = this()
   def this(
-    operator: BinaryOperator,
+    operator: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BinaryOperator,
     lhs: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Expression,
     rhs: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Expression,
     `type`: Null,
@@ -51,7 +50,7 @@ class BinaryOperatorExpr protected ()
     parens: Boolean
   ) = this()
   def this(
-    operator: BinaryOperator,
+    operator: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BinaryOperator,
     lhs: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Expression,
     rhs: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Expression,
     `type`: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Type,
@@ -59,7 +58,7 @@ class BinaryOperatorExpr protected ()
     parens: Boolean
   ) = this()
   def this(
-    operator: BinaryOperator,
+    operator: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BinaryOperator,
     lhs: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Expression,
     rhs: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Expression,
     `type`: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Type,

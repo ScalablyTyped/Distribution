@@ -31,7 +31,7 @@ object Anon_AnimateAppear {
     transparent: Boolean,
     visible: Boolean
   ): Anon_AnimateAppear = {
-    val __obj = js.Dynamic.literal(animateAppear = animateAppear, animationType = animationType, closable = closable, footer = footer, maskClosable = maskClosable, onClose = js.Any.fromFunction0(onClose), operation = operation, popup = popup, transparent = transparent, visible = visible)
+    val __obj = js.Dynamic.literal(animateAppear = animateAppear.asInstanceOf[js.Any], animationType = animationType.asInstanceOf[js.Any], closable = closable.asInstanceOf[js.Any], footer = footer.asInstanceOf[js.Any], maskClosable = maskClosable.asInstanceOf[js.Any], onClose = js.Any.fromFunction0(onClose), operation = operation.asInstanceOf[js.Any], popup = popup.asInstanceOf[js.Any], transparent = transparent.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AnimateAppear]
   }

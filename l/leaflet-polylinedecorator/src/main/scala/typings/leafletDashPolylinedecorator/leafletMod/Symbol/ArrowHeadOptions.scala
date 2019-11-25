@@ -22,9 +22,9 @@ object ArrowHeadOptions {
   ): ArrowHeadOptions = {
     val __obj = js.Dynamic.literal()
     if (headAngle != null) __obj.updateDynamic("headAngle")(headAngle.asInstanceOf[js.Any])
-    if (pathOptions != null) __obj.updateDynamic("pathOptions")(pathOptions)
+    if (pathOptions != null) __obj.updateDynamic("pathOptions")(pathOptions.asInstanceOf[js.Any])
     if (pixelSize != null) __obj.updateDynamic("pixelSize")(pixelSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(polygon)) __obj.updateDynamic("polygon")(polygon)
+    if (!js.isUndefined(polygon)) __obj.updateDynamic("polygon")(polygon.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArrowHeadOptions]
   }
 }

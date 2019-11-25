@@ -18,8 +18,8 @@ object AnalyticsInfo {
     itunesConnectAnalytics: ITunesConnectAnalytics = null
   ): AnalyticsInfo = {
     val __obj = js.Dynamic.literal()
-    if (googlePlayAnalytics != null) __obj.updateDynamic("googlePlayAnalytics")(googlePlayAnalytics)
-    if (itunesConnectAnalytics != null) __obj.updateDynamic("itunesConnectAnalytics")(itunesConnectAnalytics)
+    if (googlePlayAnalytics != null) __obj.updateDynamic("googlePlayAnalytics")(googlePlayAnalytics.asInstanceOf[js.Any])
+    if (itunesConnectAnalytics != null) __obj.updateDynamic("itunesConnectAnalytics")(itunesConnectAnalytics.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyticsInfo]
   }
 }

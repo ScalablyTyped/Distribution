@@ -24,7 +24,7 @@ object WindowChangeChannelRequest {
     rows: Double,
     width: Double
   ): WindowChangeChannelRequest = {
-    val __obj = js.Dynamic.literal(cols = cols, height = height, recipient = recipient, request = request, rows = rows, width = width)
+    val __obj = js.Dynamic.literal(cols = cols.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], recipient = recipient.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WindowChangeChannelRequest]
   }

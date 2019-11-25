@@ -17,7 +17,7 @@ trait Anon_ColumnFilenameLinenoTypeVals extends js.Object {
 object Anon_ColumnFilenameLinenoTypeVals {
   @scala.inline
   def apply(__type: String, column: Double, filename: String, lineno: Double, vals: Dictionary[Node]): Anon_ColumnFilenameLinenoTypeVals = {
-    val __obj = js.Dynamic.literal(__type = __type, column = column, filename = filename, lineno = lineno, vals = vals)
+    val __obj = js.Dynamic.literal(__type = __type.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], lineno = lineno.asInstanceOf[js.Any], vals = vals.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ColumnFilenameLinenoTypeVals]
   }

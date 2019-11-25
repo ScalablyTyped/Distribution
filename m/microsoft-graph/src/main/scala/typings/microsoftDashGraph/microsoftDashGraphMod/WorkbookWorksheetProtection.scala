@@ -19,9 +19,9 @@ object WorkbookWorksheetProtection {
     `protected`: js.UndefOr[Boolean] = js.undefined
   ): WorkbookWorksheetProtection = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (!js.isUndefined(`protected`)) __obj.updateDynamic("protected")(`protected`)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (!js.isUndefined(`protected`)) __obj.updateDynamic("protected")(`protected`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookWorksheetProtection]
   }
 }

@@ -12,7 +12,7 @@ trait Anon_Normalize extends js.Object {
 object Anon_Normalize {
   @scala.inline
   def apply(normalize: `true`): Anon_Normalize = {
-    val __obj = js.Dynamic.literal(normalize = normalize)
+    val __obj = js.Dynamic.literal(normalize = normalize.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Normalize]
   }

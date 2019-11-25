@@ -24,9 +24,9 @@ object SshPublicKey {
   @scala.inline
   def apply(expirationTimeUsec: String = null, fingerprint: String = null, key: String = null): SshPublicKey = {
     val __obj = js.Dynamic.literal()
-    if (expirationTimeUsec != null) __obj.updateDynamic("expirationTimeUsec")(expirationTimeUsec)
-    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint)
-    if (key != null) __obj.updateDynamic("key")(key)
+    if (expirationTimeUsec != null) __obj.updateDynamic("expirationTimeUsec")(expirationTimeUsec.asInstanceOf[js.Any])
+    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[SshPublicKey]
   }
 }

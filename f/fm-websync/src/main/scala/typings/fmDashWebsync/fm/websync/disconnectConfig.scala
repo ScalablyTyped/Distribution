@@ -31,13 +31,13 @@ object disconnectConfig {
     sync: js.UndefOr[Boolean] = js.undefined
   ): disconnectConfig = {
     val __obj = js.Dynamic.literal()
-    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
     if (onComplete != null) __obj.updateDynamic("onComplete")(js.Any.fromFunction1(onComplete))
     if (onFailure != null) __obj.updateDynamic("onFailure")(js.Any.fromFunction1(onFailure))
     if (onSuccess != null) __obj.updateDynamic("onSuccess")(js.Any.fromFunction1(onSuccess))
-    if (requestUrl != null) __obj.updateDynamic("requestUrl")(requestUrl)
-    if (!js.isUndefined(suppressErrors)) __obj.updateDynamic("suppressErrors")(suppressErrors)
-    if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync)
+    if (requestUrl != null) __obj.updateDynamic("requestUrl")(requestUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressErrors)) __obj.updateDynamic("suppressErrors")(suppressErrors.asInstanceOf[js.Any])
+    if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync.asInstanceOf[js.Any])
     __obj.asInstanceOf[disconnectConfig]
   }
 }

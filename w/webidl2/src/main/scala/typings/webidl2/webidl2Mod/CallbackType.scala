@@ -26,8 +26,8 @@ object CallbackType {
     name: String,
     `type`: callback
   ): CallbackType = {
-    val __obj = js.Dynamic.literal(arguments = arguments, extAttrs = extAttrs, idlType = idlType, name = name)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], extAttrs = extAttrs.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallbackType]
   }
 }

@@ -12,7 +12,7 @@ trait Anon_CancelFormatCount extends js.Object {
 object Anon_CancelFormatCount {
   @scala.inline
   def apply(Cancel: Double, FormatCount: Double): Anon_CancelFormatCount = {
-    val __obj = js.Dynamic.literal(Cancel = Cancel, FormatCount = FormatCount)
+    val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], FormatCount = FormatCount.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CancelFormatCount]
   }

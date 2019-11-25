@@ -17,7 +17,7 @@ trait IExecuteCommandParameters extends js.Object {
 object IExecuteCommandParameters {
   @scala.inline
   def apply(command: String): IExecuteCommandParameters = {
-    val __obj = js.Dynamic.literal(command = command)
+    val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IExecuteCommandParameters]
   }

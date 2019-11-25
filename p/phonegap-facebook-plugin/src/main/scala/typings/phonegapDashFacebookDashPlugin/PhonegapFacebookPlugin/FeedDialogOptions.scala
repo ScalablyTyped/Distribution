@@ -72,16 +72,16 @@ object FeedDialogOptions {
     source: String = null,
     to: String = null
   ): FeedDialogOptions = {
-    val __obj = js.Dynamic.literal(method = method)
-    if (caption != null) __obj.updateDynamic("caption")(caption)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (from != null) __obj.updateDynamic("from")(from)
-    if (link != null) __obj.updateDynamic("link")(link)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (picture != null) __obj.updateDynamic("picture")(picture)
-    if (ref != null) __obj.updateDynamic("ref")(ref)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (to != null) __obj.updateDynamic("to")(to)
+    val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
+    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (picture != null) __obj.updateDynamic("picture")(picture.asInstanceOf[js.Any])
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeedDialogOptions]
   }
 }

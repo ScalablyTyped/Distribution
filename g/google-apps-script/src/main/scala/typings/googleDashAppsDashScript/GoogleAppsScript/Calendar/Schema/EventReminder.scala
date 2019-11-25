@@ -13,7 +13,7 @@ object EventReminder {
   @scala.inline
   def apply(method: String = null, minutes: Int | Double = null): EventReminder = {
     val __obj = js.Dynamic.literal()
-    if (method != null) __obj.updateDynamic("method")(method)
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (minutes != null) __obj.updateDynamic("minutes")(minutes.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventReminder]
   }

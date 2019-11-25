@@ -37,11 +37,11 @@ object ClassSpec {
     methods: StringDictionary[MethodImplementation | MethodSpec | js.Array[MethodSpec]] = null,
     superClass: Wrapper = null
   ): ClassSpec = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (implements != null) __obj.updateDynamic("implements")(implements)
-    if (methods != null) __obj.updateDynamic("methods")(methods)
-    if (superClass != null) __obj.updateDynamic("superClass")(superClass)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (implements != null) __obj.updateDynamic("implements")(implements.asInstanceOf[js.Any])
+    if (methods != null) __obj.updateDynamic("methods")(methods.asInstanceOf[js.Any])
+    if (superClass != null) __obj.updateDynamic("superClass")(superClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassSpec]
   }
 }

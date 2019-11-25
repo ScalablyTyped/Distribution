@@ -27,11 +27,11 @@ object ActivityContentDetailsSocial {
     `type`: String = null
   ): ActivityContentDetailsSocial = {
     val __obj = js.Dynamic.literal()
-    if (author != null) __obj.updateDynamic("author")(author)
-    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
-    if (referenceUrl != null) __obj.updateDynamic("referenceUrl")(referenceUrl)
-    if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
+    if (referenceUrl != null) __obj.updateDynamic("referenceUrl")(referenceUrl.asInstanceOf[js.Any])
+    if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivityContentDetailsSocial]
   }
 }

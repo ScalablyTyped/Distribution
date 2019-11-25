@@ -72,10 +72,10 @@ object GanttConfig {
     topPadding: Int | Double = null
   ): GanttConfig = {
     val __obj = js.Dynamic.literal()
-    if (axisFormat != null) __obj.updateDynamic("axisFormat")(axisFormat)
+    if (axisFormat != null) __obj.updateDynamic("axisFormat")(axisFormat.asInstanceOf[js.Any])
     if (barGap != null) __obj.updateDynamic("barGap")(barGap.asInstanceOf[js.Any])
     if (barHeight != null) __obj.updateDynamic("barHeight")(barHeight.asInstanceOf[js.Any])
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
+    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
     if (gridLineStartPadding != null) __obj.updateDynamic("gridLineStartPadding")(gridLineStartPadding.asInstanceOf[js.Any])
     if (leftPadding != null) __obj.updateDynamic("leftPadding")(leftPadding.asInstanceOf[js.Any])

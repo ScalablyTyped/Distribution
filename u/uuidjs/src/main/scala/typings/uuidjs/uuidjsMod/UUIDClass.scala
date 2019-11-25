@@ -26,11 +26,10 @@ object UUIDClass {
     hexNoDelim: String,
     hexString: String,
     intFields: UUIDFields[Double],
-    toString: () => String,
     urn: String,
     version: Double
   ): UUIDClass = {
-    val __obj = js.Dynamic.literal(bitFields = bitFields, bitString = bitString, equals = js.Any.fromFunction1(equals), hexFields = hexFields, hexNoDelim = hexNoDelim, hexString = hexString, intFields = intFields, toString = js.Any.fromFunction0(toString), urn = urn, version = version)
+    val __obj = js.Dynamic.literal(bitFields = bitFields.asInstanceOf[js.Any], bitString = bitString.asInstanceOf[js.Any], equals = js.Any.fromFunction1(equals), hexFields = hexFields.asInstanceOf[js.Any], hexNoDelim = hexNoDelim.asInstanceOf[js.Any], hexString = hexString.asInstanceOf[js.Any], intFields = intFields.asInstanceOf[js.Any], urn = urn.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UUIDClass]
   }

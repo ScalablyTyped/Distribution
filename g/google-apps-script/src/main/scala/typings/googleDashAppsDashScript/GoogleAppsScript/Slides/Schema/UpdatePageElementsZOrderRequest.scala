@@ -13,8 +13,8 @@ object UpdatePageElementsZOrderRequest {
   @scala.inline
   def apply(operation: String = null, pageElementObjectIds: js.Array[String] = null): UpdatePageElementsZOrderRequest = {
     val __obj = js.Dynamic.literal()
-    if (operation != null) __obj.updateDynamic("operation")(operation)
-    if (pageElementObjectIds != null) __obj.updateDynamic("pageElementObjectIds")(pageElementObjectIds)
+    if (operation != null) __obj.updateDynamic("operation")(operation.asInstanceOf[js.Any])
+    if (pageElementObjectIds != null) __obj.updateDynamic("pageElementObjectIds")(pageElementObjectIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdatePageElementsZOrderRequest]
   }
 }

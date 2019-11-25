@@ -20,9 +20,9 @@ object StructuredMessage {
   @scala.inline
   def apply(messageKey: String = null, messageText: String = null, parameters: js.Array[Parameter] = null): StructuredMessage = {
     val __obj = js.Dynamic.literal()
-    if (messageKey != null) __obj.updateDynamic("messageKey")(messageKey)
-    if (messageText != null) __obj.updateDynamic("messageText")(messageText)
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
+    if (messageKey != null) __obj.updateDynamic("messageKey")(messageKey.asInstanceOf[js.Any])
+    if (messageText != null) __obj.updateDynamic("messageText")(messageText.asInstanceOf[js.Any])
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[StructuredMessage]
   }
 }

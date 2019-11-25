@@ -52,17 +52,17 @@ object Snapshot {
     uniqueName: String = null
   ): Snapshot = {
     val __obj = js.Dynamic.literal()
-    if (coverImage != null) __obj.updateDynamic("coverImage")(coverImage)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (driveId != null) __obj.updateDynamic("driveId")(driveId)
-    if (durationMillis != null) __obj.updateDynamic("durationMillis")(durationMillis)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (lastModifiedMillis != null) __obj.updateDynamic("lastModifiedMillis")(lastModifiedMillis)
-    if (progressValue != null) __obj.updateDynamic("progressValue")(progressValue)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (uniqueName != null) __obj.updateDynamic("uniqueName")(uniqueName)
+    if (coverImage != null) __obj.updateDynamic("coverImage")(coverImage.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (driveId != null) __obj.updateDynamic("driveId")(driveId.asInstanceOf[js.Any])
+    if (durationMillis != null) __obj.updateDynamic("durationMillis")(durationMillis.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (lastModifiedMillis != null) __obj.updateDynamic("lastModifiedMillis")(lastModifiedMillis.asInstanceOf[js.Any])
+    if (progressValue != null) __obj.updateDynamic("progressValue")(progressValue.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (uniqueName != null) __obj.updateDynamic("uniqueName")(uniqueName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Snapshot]
   }
 }

@@ -28,8 +28,8 @@ object IOptions {
     standby: Standby = null
   ): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (serverSettings != null) __obj.updateDynamic("serverSettings")(serverSettings)
-    if (standby != null) __obj.updateDynamic("standby")(standby)
+    if (serverSettings != null) __obj.updateDynamic("serverSettings")(serverSettings.asInstanceOf[js.Any])
+    if (standby != null) __obj.updateDynamic("standby")(standby.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

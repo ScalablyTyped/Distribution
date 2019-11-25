@@ -134,10 +134,10 @@ object IHyperCube {
     qIndentMode: js.UndefOr[Boolean] = js.undefined,
     qLastExpandedPos: INxCellPosition = null
   ): IHyperCube = {
-    val __obj = js.Dynamic.literal(qDataPages = qDataPages, qDimensionInfo = qDimensionInfo, qEffectiveInterColumnSortOrder = qEffectiveInterColumnSortOrder, qGrandTotalRow = qGrandTotalRow, qHasOtherValues = qHasOtherValues, qMeasureInfo = qMeasureInfo, qMode = qMode, qNoOfLeftDims = qNoOfLeftDims, qPivotDataPages = qPivotDataPages, qSize = qSize, qStackedDataPages = qStackedDataPages, qStateName = qStateName)
-    if (qError != null) __obj.updateDynamic("qError")(qError)
-    if (!js.isUndefined(qIndentMode)) __obj.updateDynamic("qIndentMode")(qIndentMode)
-    if (qLastExpandedPos != null) __obj.updateDynamic("qLastExpandedPos")(qLastExpandedPos)
+    val __obj = js.Dynamic.literal(qDataPages = qDataPages.asInstanceOf[js.Any], qDimensionInfo = qDimensionInfo.asInstanceOf[js.Any], qEffectiveInterColumnSortOrder = qEffectiveInterColumnSortOrder.asInstanceOf[js.Any], qGrandTotalRow = qGrandTotalRow.asInstanceOf[js.Any], qHasOtherValues = qHasOtherValues.asInstanceOf[js.Any], qMeasureInfo = qMeasureInfo.asInstanceOf[js.Any], qMode = qMode.asInstanceOf[js.Any], qNoOfLeftDims = qNoOfLeftDims.asInstanceOf[js.Any], qPivotDataPages = qPivotDataPages.asInstanceOf[js.Any], qSize = qSize.asInstanceOf[js.Any], qStackedDataPages = qStackedDataPages.asInstanceOf[js.Any], qStateName = qStateName.asInstanceOf[js.Any])
+    if (qError != null) __obj.updateDynamic("qError")(qError.asInstanceOf[js.Any])
+    if (!js.isUndefined(qIndentMode)) __obj.updateDynamic("qIndentMode")(qIndentMode.asInstanceOf[js.Any])
+    if (qLastExpandedPos != null) __obj.updateDynamic("qLastExpandedPos")(qLastExpandedPos.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHyperCube]
   }
 }

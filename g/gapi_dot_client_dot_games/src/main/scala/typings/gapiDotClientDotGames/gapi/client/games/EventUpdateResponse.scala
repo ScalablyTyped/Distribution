@@ -24,10 +24,10 @@ object EventUpdateResponse {
     playerEvents: js.Array[PlayerEvent] = null
   ): EventUpdateResponse = {
     val __obj = js.Dynamic.literal()
-    if (batchFailures != null) __obj.updateDynamic("batchFailures")(batchFailures)
-    if (eventFailures != null) __obj.updateDynamic("eventFailures")(eventFailures)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (playerEvents != null) __obj.updateDynamic("playerEvents")(playerEvents)
+    if (batchFailures != null) __obj.updateDynamic("batchFailures")(batchFailures.asInstanceOf[js.Any])
+    if (eventFailures != null) __obj.updateDynamic("eventFailures")(eventFailures.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (playerEvents != null) __obj.updateDynamic("playerEvents")(playerEvents.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventUpdateResponse]
   }
 }

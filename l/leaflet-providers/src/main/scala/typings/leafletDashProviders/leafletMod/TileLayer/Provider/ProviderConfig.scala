@@ -19,9 +19,9 @@ object ProviderConfig {
     options: TileLayerOptions = null,
     variants: StringDictionary[String | ProviderConfig] = null
   ): ProviderConfig = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (variants != null) __obj.updateDynamic("variants")(variants)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (variants != null) __obj.updateDynamic("variants")(variants.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProviderConfig]
   }
 }

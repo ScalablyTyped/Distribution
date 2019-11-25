@@ -24,9 +24,9 @@ object Anon_LinkIsSelected {
     rootIsTabs: js.UndefOr[Boolean] = js.undefined
   ): Anon_LinkIsSelected = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(linkIsSelected)) __obj.updateDynamic("linkIsSelected")(linkIsSelected)
-    if (!js.isUndefined(rootIsLarge)) __obj.updateDynamic("rootIsLarge")(rootIsLarge)
-    if (!js.isUndefined(rootIsTabs)) __obj.updateDynamic("rootIsTabs")(rootIsTabs)
+    if (!js.isUndefined(linkIsSelected)) __obj.updateDynamic("linkIsSelected")(linkIsSelected.asInstanceOf[js.Any])
+    if (!js.isUndefined(rootIsLarge)) __obj.updateDynamic("rootIsLarge")(rootIsLarge.asInstanceOf[js.Any])
+    if (!js.isUndefined(rootIsTabs)) __obj.updateDynamic("rootIsTabs")(rootIsTabs.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_LinkIsSelected]
   }
 }

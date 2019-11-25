@@ -12,7 +12,7 @@ object ShareDBSourceOptions {
   @scala.inline
   def apply(source: js.UndefOr[Boolean] = js.undefined): ShareDBSourceOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(source)) __obj.updateDynamic("source")(source)
+    if (!js.isUndefined(source)) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShareDBSourceOptions]
   }
 }

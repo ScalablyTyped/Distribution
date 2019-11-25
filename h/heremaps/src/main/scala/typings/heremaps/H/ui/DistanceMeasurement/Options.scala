@@ -39,12 +39,12 @@ object Options {
     stopoverIcon: Icon = null
   ): Options = {
     val __obj = js.Dynamic.literal(lineStyle = lineStyle.asInstanceOf[js.Any])
-    if (alignment != null) __obj.updateDynamic("alignment")(alignment)
+    if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
     if (distanceFormatter != null) __obj.updateDynamic("distanceFormatter")(js.Any.fromFunction1(distanceFormatter))
-    if (endIcon != null) __obj.updateDynamic("endIcon")(endIcon)
-    if (splitIcon != null) __obj.updateDynamic("splitIcon")(splitIcon)
-    if (startIcon != null) __obj.updateDynamic("startIcon")(startIcon)
-    if (stopoverIcon != null) __obj.updateDynamic("stopoverIcon")(stopoverIcon)
+    if (endIcon != null) __obj.updateDynamic("endIcon")(endIcon.asInstanceOf[js.Any])
+    if (splitIcon != null) __obj.updateDynamic("splitIcon")(splitIcon.asInstanceOf[js.Any])
+    if (startIcon != null) __obj.updateDynamic("startIcon")(startIcon.asInstanceOf[js.Any])
+    if (stopoverIcon != null) __obj.updateDynamic("stopoverIcon")(stopoverIcon.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

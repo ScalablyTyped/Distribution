@@ -21,9 +21,9 @@ object ReadLineOptions {
     completer: js.Function = null,
     terminal: js.UndefOr[Boolean] = js.undefined
   ): ReadLineOptions = {
-    val __obj = js.Dynamic.literal(input = input, output = output)
-    if (completer != null) __obj.updateDynamic("completer")(completer)
-    if (!js.isUndefined(terminal)) __obj.updateDynamic("terminal")(terminal)
+    val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any])
+    if (completer != null) __obj.updateDynamic("completer")(completer.asInstanceOf[js.Any])
+    if (!js.isUndefined(terminal)) __obj.updateDynamic("terminal")(terminal.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadLineOptions]
   }
 }

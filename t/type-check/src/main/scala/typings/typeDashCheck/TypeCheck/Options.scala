@@ -11,7 +11,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(customTypes: CustomType): Options = {
-    val __obj = js.Dynamic.literal(customTypes = customTypes)
+    val __obj = js.Dynamic.literal(customTypes = customTypes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Options]
   }

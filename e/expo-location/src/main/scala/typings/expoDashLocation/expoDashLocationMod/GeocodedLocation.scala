@@ -14,7 +14,7 @@ trait GeocodedLocation extends js.Object {
 object GeocodedLocation {
   @scala.inline
   def apply(latitude: Double, longitude: Double, accuracy: Int | Double = null, altitude: Int | Double = null): GeocodedLocation = {
-    val __obj = js.Dynamic.literal(latitude = latitude, longitude = longitude)
+    val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any])
     if (accuracy != null) __obj.updateDynamic("accuracy")(accuracy.asInstanceOf[js.Any])
     if (altitude != null) __obj.updateDynamic("altitude")(altitude.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeocodedLocation]

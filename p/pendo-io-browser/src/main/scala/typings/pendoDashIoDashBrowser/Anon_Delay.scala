@@ -20,10 +20,10 @@ object Anon_Delay {
     tooltip: Anon_ArrowSize = null
   ): Anon_Delay = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay)
-    if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable)
+    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Delay]
   }
 }

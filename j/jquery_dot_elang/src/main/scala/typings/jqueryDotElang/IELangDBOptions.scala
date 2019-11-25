@@ -12,7 +12,7 @@ trait IELangDBOptions extends js.Object {
 object IELangDBOptions {
   @scala.inline
   def apply(autocompleteRows: Double): IELangDBOptions = {
-    val __obj = js.Dynamic.literal(autocompleteRows = autocompleteRows)
+    val __obj = js.Dynamic.literal(autocompleteRows = autocompleteRows.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IELangDBOptions]
   }

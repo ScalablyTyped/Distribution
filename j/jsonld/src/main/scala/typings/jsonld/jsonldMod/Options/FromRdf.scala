@@ -21,10 +21,10 @@ object FromRdf {
     useRdfType: js.UndefOr[Boolean] = js.undefined
   ): FromRdf = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (rdfParser != null) __obj.updateDynamic("rdfParser")(rdfParser)
-    if (!js.isUndefined(useNativeTypes)) __obj.updateDynamic("useNativeTypes")(useNativeTypes)
-    if (!js.isUndefined(useRdfType)) __obj.updateDynamic("useRdfType")(useRdfType)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (rdfParser != null) __obj.updateDynamic("rdfParser")(rdfParser.asInstanceOf[js.Any])
+    if (!js.isUndefined(useNativeTypes)) __obj.updateDynamic("useNativeTypes")(useNativeTypes.asInstanceOf[js.Any])
+    if (!js.isUndefined(useRdfType)) __obj.updateDynamic("useRdfType")(useRdfType.asInstanceOf[js.Any])
     __obj.asInstanceOf[FromRdf]
   }
 }

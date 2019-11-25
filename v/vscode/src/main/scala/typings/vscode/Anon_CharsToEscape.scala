@@ -18,7 +18,7 @@ trait Anon_CharsToEscape extends js.Object {
 object Anon_CharsToEscape {
   @scala.inline
   def apply(charsToEscape: String, escapeChar: String): Anon_CharsToEscape = {
-    val __obj = js.Dynamic.literal(charsToEscape = charsToEscape, escapeChar = escapeChar)
+    val __obj = js.Dynamic.literal(charsToEscape = charsToEscape.asInstanceOf[js.Any], escapeChar = escapeChar.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CharsToEscape]
   }

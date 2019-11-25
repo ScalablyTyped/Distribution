@@ -15,8 +15,8 @@ trait DiffEdit[LHS, RHS] extends Diff[LHS, RHS] {
 object DiffEdit {
   @scala.inline
   def apply[LHS, RHS](kind: E, lhs: LHS, rhs: RHS, path: js.Array[_] = null): DiffEdit[LHS, RHS] = {
-    val __obj = js.Dynamic.literal(kind = kind, lhs = lhs.asInstanceOf[js.Any], rhs = rhs.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], lhs = lhs.asInstanceOf[js.Any], rhs = rhs.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiffEdit[LHS, RHS]]
   }
 }

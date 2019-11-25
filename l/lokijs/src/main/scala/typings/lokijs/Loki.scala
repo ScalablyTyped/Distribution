@@ -181,9 +181,9 @@ class Loki protected () extends LokiEventEmitter {
     * @returns an array of documents to attach to collection.data.
     */
   def deserializeCollection(destructuredSource: String): js.Array[_] = js.native
-  def deserializeCollection(destructuredSource: String, options: Anon_DelimitedDelimiter): js.Array[_] = js.native
+  def deserializeCollection(destructuredSource: String, options: Anon_DelimitedDelimiterPartitioned): js.Array[_] = js.native
   def deserializeCollection(destructuredSource: js.Array[String]): js.Array[_] = js.native
-  def deserializeCollection(destructuredSource: js.Array[String], options: Anon_DelimitedDelimiter): js.Array[_] = js.native
+  def deserializeCollection(destructuredSource: js.Array[String], options: Anon_DelimitedDelimiterPartitioned): js.Array[_] = js.native
   def deserializeDestructured(): js.Any = js.native
   /**
     * Database level destructured JSON deserialization routine to minimize memory overhead.
@@ -368,7 +368,7 @@ class Loki protected () extends LokiEventEmitter {
     * @returns A custom, restructured aggregation of independent serializations.
     */
   def serializeDestructured(): String | js.Array[String] = js.native
-  def serializeDestructured(options: Anon_Delimited): String | js.Array[String] = js.native
+  def serializeDestructured(options: Anon_DelimitedDelimiterPartition): String | js.Array[String] = js.native
   def serializeReplacer(key: String, value: js.Any): js.Any = js.native
   /**
     * serializeReplacer - used to prevent certain properties from being serialized

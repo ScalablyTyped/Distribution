@@ -42,7 +42,7 @@ object ViewabilityConfig {
     if (itemVisiblePercentThreshold != null) __obj.updateDynamic("itemVisiblePercentThreshold")(itemVisiblePercentThreshold.asInstanceOf[js.Any])
     if (minimumViewTime != null) __obj.updateDynamic("minimumViewTime")(minimumViewTime.asInstanceOf[js.Any])
     if (viewAreaCoveragePercentThreshold != null) __obj.updateDynamic("viewAreaCoveragePercentThreshold")(viewAreaCoveragePercentThreshold.asInstanceOf[js.Any])
-    if (!js.isUndefined(waitForInteraction)) __obj.updateDynamic("waitForInteraction")(waitForInteraction)
+    if (!js.isUndefined(waitForInteraction)) __obj.updateDynamic("waitForInteraction")(waitForInteraction.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewabilityConfig]
   }
 }

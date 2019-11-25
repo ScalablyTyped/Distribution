@@ -22,11 +22,11 @@ object Anon_Font {
     xlarge: Anon_HeightMaxWidth = null
   ): Anon_Font = {
     val __obj = js.Dynamic.literal()
-    if (font != null) __obj.updateDynamic("font")(font)
-    if (large != null) __obj.updateDynamic("large")(large)
-    if (medium != null) __obj.updateDynamic("medium")(medium)
-    if (small != null) __obj.updateDynamic("small")(small)
-    if (xlarge != null) __obj.updateDynamic("xlarge")(xlarge)
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
+    if (large != null) __obj.updateDynamic("large")(large.asInstanceOf[js.Any])
+    if (medium != null) __obj.updateDynamic("medium")(medium.asInstanceOf[js.Any])
+    if (small != null) __obj.updateDynamic("small")(small.asInstanceOf[js.Any])
+    if (xlarge != null) __obj.updateDynamic("xlarge")(xlarge.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Font]
   }
 }

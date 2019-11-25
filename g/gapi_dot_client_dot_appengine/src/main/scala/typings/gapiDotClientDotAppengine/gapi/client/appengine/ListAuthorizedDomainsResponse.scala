@@ -15,8 +15,8 @@ object ListAuthorizedDomainsResponse {
   @scala.inline
   def apply(domains: js.Array[AuthorizedDomain] = null, nextPageToken: String = null): ListAuthorizedDomainsResponse = {
     val __obj = js.Dynamic.literal()
-    if (domains != null) __obj.updateDynamic("domains")(domains)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (domains != null) __obj.updateDynamic("domains")(domains.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAuthorizedDomainsResponse]
   }
 }

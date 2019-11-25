@@ -12,7 +12,7 @@ object Anon_Protected {
   @scala.inline
   def apply(`protected`: Boolean): Anon_Protected = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("protected")(`protected`)
+    __obj.updateDynamic("protected")(`protected`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Protected]
   }
 }

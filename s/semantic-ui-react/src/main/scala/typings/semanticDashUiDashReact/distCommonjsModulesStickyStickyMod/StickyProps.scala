@@ -34,21 +34,21 @@ object StickyProps {
     styleElement: js.Object = null
   ): StickyProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
-    if (as != null) __obj.updateDynamic("as")(as)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (bottomOffset != null) __obj.updateDynamic("bottomOffset")(bottomOffset.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (onBottom != null) __obj.updateDynamic("onBottom")(js.Any.fromFunction2(onBottom))
     if (onStick != null) __obj.updateDynamic("onStick")(js.Any.fromFunction2(onStick))
     if (onTop != null) __obj.updateDynamic("onTop")(js.Any.fromFunction2(onTop))
     if (onUnstick != null) __obj.updateDynamic("onUnstick")(js.Any.fromFunction2(onUnstick))
-    if (!js.isUndefined(pushing)) __obj.updateDynamic("pushing")(pushing)
+    if (!js.isUndefined(pushing)) __obj.updateDynamic("pushing")(pushing.asInstanceOf[js.Any])
     if (scrollContext != null) __obj.updateDynamic("scrollContext")(scrollContext.asInstanceOf[js.Any])
-    if (styleElement != null) __obj.updateDynamic("styleElement")(styleElement)
+    if (styleElement != null) __obj.updateDynamic("styleElement")(styleElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[StickyProps]
   }
 }

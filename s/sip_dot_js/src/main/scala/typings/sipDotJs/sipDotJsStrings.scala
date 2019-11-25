@@ -58,7 +58,7 @@ object sipDotJsStrings {
   sealed trait accepted extends js.Object
   
   @js.native
-  sealed trait ack extends js.Object
+  sealed trait ack_ extends js.Object
   
   @js.native
   sealed trait addStream extends js.Object
@@ -67,10 +67,10 @@ object sipDotJsStrings {
   sealed trait addTrack extends js.Object
   
   @js.native
-  sealed trait bye extends js.Object
+  sealed trait bye_ extends js.Object
   
   @js.native
-  sealed trait cancel extends js.Object
+  sealed trait cancel_ extends js.Object
   
   @js.native
   sealed trait confirmed extends js.Object
@@ -130,22 +130,22 @@ object sipDotJsStrings {
   sealed trait iceGatheringComplete extends js.Object
   
   @js.native
-  sealed trait invite extends js.Object
+  sealed trait inviteSent extends js.Object
   
   @js.native
-  sealed trait inviteSent extends js.Object
+  sealed trait invite_ extends js.Object
   
   @js.native
   sealed trait log extends LogLevel
   
   @js.native
-  sealed trait message extends js.Object
+  sealed trait message_ extends js.Object
   
   @js.native
   sealed trait none extends js.Object
   
   @js.native
-  sealed trait notify extends js.Object
+  sealed trait notify_ extends js.Object
   
   @js.native
   sealed trait outOfDialogReferRequested extends js.Object
@@ -235,7 +235,7 @@ object sipDotJsStrings {
   sealed trait stateChanged extends js.Object
   
   @js.native
-  sealed trait subscribe extends js.Object
+  sealed trait subscribe_ extends js.Object
   
   @js.native
   sealed trait supported extends js.Object
@@ -299,15 +299,15 @@ object sipDotJsStrings {
   @scala.inline
   def accepted: accepted = "accepted".asInstanceOf[accepted]
   @scala.inline
-  def ack: ack = "ack".asInstanceOf[ack]
+  def ack_ : ack_ = "ack".asInstanceOf[ack_]
   @scala.inline
   def addStream: addStream = "addStream".asInstanceOf[addStream]
   @scala.inline
   def addTrack: addTrack = "addTrack".asInstanceOf[addTrack]
   @scala.inline
-  def bye: bye = "bye".asInstanceOf[bye]
+  def bye_ : bye_ = "bye".asInstanceOf[bye_]
   @scala.inline
-  def cancel: cancel = "cancel".asInstanceOf[cancel]
+  def cancel_ : cancel_ = "cancel".asInstanceOf[cancel_]
   @scala.inline
   def confirmed: confirmed = "confirmed".asInstanceOf[confirmed]
   @scala.inline
@@ -347,15 +347,17 @@ object sipDotJsStrings {
   @scala.inline
   def iceGatheringComplete: iceGatheringComplete = "iceGatheringComplete".asInstanceOf[iceGatheringComplete]
   @scala.inline
-  def invite: invite = "invite".asInstanceOf[invite]
-  @scala.inline
   def inviteSent: inviteSent = "inviteSent".asInstanceOf[inviteSent]
+  @scala.inline
+  def invite_ : invite_ = "invite".asInstanceOf[invite_]
   @scala.inline
   def log: log = "log".asInstanceOf[log]
   @scala.inline
-  def message: message = "message".asInstanceOf[message]
+  def message_ : message_ = "message".asInstanceOf[message_]
   @scala.inline
   def none: none = "none".asInstanceOf[none]
+  @scala.inline
+  def notify_ : notify_ = "notify".asInstanceOf[notify_]
   @scala.inline
   def outOfDialogReferRequested: outOfDialogReferRequested = "outOfDialogReferRequested".asInstanceOf[outOfDialogReferRequested]
   @scala.inline
@@ -415,7 +417,7 @@ object sipDotJsStrings {
   @scala.inline
   def stateChanged: stateChanged = "stateChanged".asInstanceOf[stateChanged]
   @scala.inline
-  def subscribe: subscribe = "subscribe".asInstanceOf[subscribe]
+  def subscribe_ : subscribe_ = "subscribe".asInstanceOf[subscribe_]
   @scala.inline
   def supported: supported = "supported".asInstanceOf[supported]
   @scala.inline

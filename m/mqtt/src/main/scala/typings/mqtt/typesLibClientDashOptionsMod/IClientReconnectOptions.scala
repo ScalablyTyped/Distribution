@@ -20,8 +20,8 @@ object IClientReconnectOptions {
   @scala.inline
   def apply(incomingStore: Store = null, outgoingStore: Store = null): IClientReconnectOptions = {
     val __obj = js.Dynamic.literal()
-    if (incomingStore != null) __obj.updateDynamic("incomingStore")(incomingStore)
-    if (outgoingStore != null) __obj.updateDynamic("outgoingStore")(outgoingStore)
+    if (incomingStore != null) __obj.updateDynamic("incomingStore")(incomingStore.asInstanceOf[js.Any])
+    if (outgoingStore != null) __obj.updateDynamic("outgoingStore")(outgoingStore.asInstanceOf[js.Any])
     __obj.asInstanceOf[IClientReconnectOptions]
   }
 }

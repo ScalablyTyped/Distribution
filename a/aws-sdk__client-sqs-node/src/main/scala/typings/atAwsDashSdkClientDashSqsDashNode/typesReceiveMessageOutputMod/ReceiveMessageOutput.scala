@@ -22,8 +22,8 @@ trait ReceiveMessageOutput extends OutputTypesUnion {
 object ReceiveMessageOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, Messages: js.Array[_UnmarshalledMessage] = null): ReceiveMessageOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (Messages != null) __obj.updateDynamic("Messages")(Messages)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (Messages != null) __obj.updateDynamic("Messages")(Messages.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReceiveMessageOutput]
   }
 }

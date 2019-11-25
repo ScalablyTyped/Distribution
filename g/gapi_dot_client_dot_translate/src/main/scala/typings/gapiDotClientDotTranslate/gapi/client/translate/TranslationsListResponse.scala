@@ -13,7 +13,7 @@ object TranslationsListResponse {
   @scala.inline
   def apply(translations: js.Array[TranslationsResource] = null): TranslationsListResponse = {
     val __obj = js.Dynamic.literal()
-    if (translations != null) __obj.updateDynamic("translations")(translations)
+    if (translations != null) __obj.updateDynamic("translations")(translations.asInstanceOf[js.Any])
     __obj.asInstanceOf[TranslationsListResponse]
   }
 }

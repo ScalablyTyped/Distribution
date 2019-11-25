@@ -15,7 +15,7 @@ trait Anon_IdLabelLayout extends js.Object {
 object Anon_IdLabelLayout {
   @scala.inline
   def apply(id: js.Any, labelLayout: LabelLayout, x: Double, y: Double): Anon_IdLabelLayout = {
-    val __obj = js.Dynamic.literal(id = id, labelLayout = labelLayout, x = x, y = y)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], labelLayout = labelLayout.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IdLabelLayout]
   }

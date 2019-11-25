@@ -23,9 +23,9 @@ object ErrorGroup {
   @scala.inline
   def apply(groupId: String = null, name: String = null, trackingIssues: js.Array[TrackingIssue] = null): ErrorGroup = {
     val __obj = js.Dynamic.literal()
-    if (groupId != null) __obj.updateDynamic("groupId")(groupId)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (trackingIssues != null) __obj.updateDynamic("trackingIssues")(trackingIssues)
+    if (groupId != null) __obj.updateDynamic("groupId")(groupId.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (trackingIssues != null) __obj.updateDynamic("trackingIssues")(trackingIssues.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorGroup]
   }
 }

@@ -12,7 +12,7 @@ trait Anon_Ojdatagridheader extends js.Object {
 object Anon_Ojdatagridheader {
   @scala.inline
   def apply(subId: `oj-datagrid-header`): Anon_Ojdatagridheader = {
-    val __obj = js.Dynamic.literal(subId = subId)
+    val __obj = js.Dynamic.literal(subId = subId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Ojdatagridheader]
   }

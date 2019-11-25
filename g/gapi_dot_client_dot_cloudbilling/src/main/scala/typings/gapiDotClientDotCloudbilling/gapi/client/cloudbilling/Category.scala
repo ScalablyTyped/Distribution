@@ -33,10 +33,10 @@ object Category {
     usageType: String = null
   ): Category = {
     val __obj = js.Dynamic.literal()
-    if (resourceFamily != null) __obj.updateDynamic("resourceFamily")(resourceFamily)
-    if (resourceGroup != null) __obj.updateDynamic("resourceGroup")(resourceGroup)
-    if (serviceDisplayName != null) __obj.updateDynamic("serviceDisplayName")(serviceDisplayName)
-    if (usageType != null) __obj.updateDynamic("usageType")(usageType)
+    if (resourceFamily != null) __obj.updateDynamic("resourceFamily")(resourceFamily.asInstanceOf[js.Any])
+    if (resourceGroup != null) __obj.updateDynamic("resourceGroup")(resourceGroup.asInstanceOf[js.Any])
+    if (serviceDisplayName != null) __obj.updateDynamic("serviceDisplayName")(serviceDisplayName.asInstanceOf[js.Any])
+    if (usageType != null) __obj.updateDynamic("usageType")(usageType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Category]
   }
 }

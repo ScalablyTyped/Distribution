@@ -27,10 +27,10 @@ object FindFullHashesRequest {
     threatInfo: ThreatInfo = null
   ): FindFullHashesRequest = {
     val __obj = js.Dynamic.literal()
-    if (apiClient != null) __obj.updateDynamic("apiClient")(apiClient)
-    if (client != null) __obj.updateDynamic("client")(client)
-    if (clientStates != null) __obj.updateDynamic("clientStates")(clientStates)
-    if (threatInfo != null) __obj.updateDynamic("threatInfo")(threatInfo)
+    if (apiClient != null) __obj.updateDynamic("apiClient")(apiClient.asInstanceOf[js.Any])
+    if (client != null) __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
+    if (clientStates != null) __obj.updateDynamic("clientStates")(clientStates.asInstanceOf[js.Any])
+    if (threatInfo != null) __obj.updateDynamic("threatInfo")(threatInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindFullHashesRequest]
   }
 }

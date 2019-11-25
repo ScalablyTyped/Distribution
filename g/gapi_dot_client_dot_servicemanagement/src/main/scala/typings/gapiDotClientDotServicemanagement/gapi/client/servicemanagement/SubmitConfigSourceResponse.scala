@@ -13,7 +13,7 @@ object SubmitConfigSourceResponse {
   @scala.inline
   def apply(serviceConfig: Service = null): SubmitConfigSourceResponse = {
     val __obj = js.Dynamic.literal()
-    if (serviceConfig != null) __obj.updateDynamic("serviceConfig")(serviceConfig)
+    if (serviceConfig != null) __obj.updateDynamic("serviceConfig")(serviceConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubmitConfigSourceResponse]
   }
 }

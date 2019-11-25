@@ -19,7 +19,7 @@ object ClearOptOutInOutOptions {
     persistence_type: Persistence,
     secure_cookie: Boolean
   ): ClearOptOutInOutOptions = {
-    val __obj = js.Dynamic.literal(cookie_expiration = cookie_expiration, cookie_prefix = cookie_prefix, cross_subdomain_cookie = cross_subdomain_cookie, persistence_type = persistence_type, secure_cookie = secure_cookie)
+    val __obj = js.Dynamic.literal(cookie_expiration = cookie_expiration.asInstanceOf[js.Any], cookie_prefix = cookie_prefix.asInstanceOf[js.Any], cross_subdomain_cookie = cross_subdomain_cookie.asInstanceOf[js.Any], persistence_type = persistence_type.asInstanceOf[js.Any], secure_cookie = secure_cookie.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ClearOptOutInOutOptions]
   }

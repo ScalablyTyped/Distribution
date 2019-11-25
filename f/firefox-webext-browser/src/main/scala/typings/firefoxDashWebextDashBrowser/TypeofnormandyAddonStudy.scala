@@ -31,7 +31,7 @@ object TypeofnormandyAddonStudy {
     getStudy: () => js.Promise[_],
     onUnenroll: WebExtEvent[js.Function1[/* reason */ String, Unit]]
   ): TypeofnormandyAddonStudy = {
-    val __obj = js.Dynamic.literal(endStudy = js.Any.fromFunction1(endStudy), getClientMetadata = js.Any.fromFunction0(getClientMetadata), getStudy = js.Any.fromFunction0(getStudy), onUnenroll = onUnenroll)
+    val __obj = js.Dynamic.literal(endStudy = js.Any.fromFunction1(endStudy), getClientMetadata = js.Any.fromFunction0(getClientMetadata), getStudy = js.Any.fromFunction0(getStudy), onUnenroll = onUnenroll.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeofnormandyAddonStudy]
   }

@@ -1,10 +1,6 @@
 package typings.dojo.dojox.charting
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValue
-import typings.dojo.Fn_NewValueOldValueProperty
-import typings.dojo.Fn_NewValueOldValuePropertyNumber
 import typings.dojo.dijit._WidgetBase
 import typings.dojo.dojoStrings.chartRef
 import typings.dojo.dojoStrings.horizontal
@@ -96,11 +92,25 @@ object widget extends js.Object {
       */
     def stroke(): js.Any = js.native
     @JSName("watch")
-    def watch_margins(property: margins, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+    def watch_margins(
+      property: margins,
+      callback: js.Function3[
+          /* property */ js.UndefOr[String], 
+          /* oldValue */ js.UndefOr[js.Object], 
+          /* newValue */ js.UndefOr[js.Object], 
+          Unit
+        ]
+    ): Anon_Unwatch = js.native
     @JSName("watch")
-    def watch_style(property: style, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
-    @JSName("watch")
-    def watch_theme(property: theme, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+    def watch_theme(
+      property: theme,
+      callback: js.Function3[
+          /* property */ js.UndefOr[String], 
+          /* oldValue */ js.UndefOr[js.Object], 
+          /* newValue */ js.UndefOr[js.Object], 
+          Unit
+        ]
+    ): Anon_Unwatch = js.native
   }
   
   /**
@@ -174,11 +184,25 @@ object widget extends js.Object {
       */
     def stroke(): js.Any = js.native
     @JSName("watch")
-    def watch_margins(property: margins, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+    def watch_margins(
+      property: margins,
+      callback: js.Function3[
+          /* property */ js.UndefOr[String], 
+          /* oldValue */ js.UndefOr[js.Object], 
+          /* newValue */ js.UndefOr[js.Object], 
+          Unit
+        ]
+    ): Anon_Unwatch = js.native
     @JSName("watch")
-    def watch_style(property: style, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
-    @JSName("watch")
-    def watch_theme(property: theme, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+    def watch_theme(
+      property: theme,
+      callback: js.Function3[
+          /* property */ js.UndefOr[String], 
+          /* oldValue */ js.UndefOr[js.Object], 
+          /* newValue */ js.UndefOr[js.Object], 
+          Unit
+        ]
+    ): Anon_Unwatch = js.native
   }
   
   /**
@@ -256,15 +280,45 @@ object widget extends js.Object {
     @JSName("set")
     def set_swatchSize(property: swatchSize, value: Double): Unit = js.native
     @JSName("watch")
-    def watch_chartRef(property: chartRef, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+    def watch_chartRef(
+      property: chartRef,
+      callback: js.Function3[
+          /* property */ js.UndefOr[String], 
+          /* oldValue */ js.UndefOr[String], 
+          /* newValue */ js.UndefOr[String], 
+          Unit
+        ]
+    ): Anon_Unwatch = js.native
     @JSName("watch")
-    def watch_horizontal(property: horizontal, callback: Fn_NewValue): Anon_Unwatch = js.native
+    def watch_horizontal(
+      property: horizontal,
+      callback: js.Function3[
+          /* property */ js.UndefOr[String], 
+          /* oldValue */ js.UndefOr[Boolean], 
+          /* newValue */ js.UndefOr[Boolean], 
+          Unit
+        ]
+    ): Anon_Unwatch = js.native
     @JSName("watch")
-    def watch_legendBody(property: legendBody, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+    def watch_legendBody(
+      property: legendBody,
+      callback: js.Function3[
+          /* property */ js.UndefOr[String], 
+          /* oldValue */ js.UndefOr[js.Object], 
+          /* newValue */ js.UndefOr[js.Object], 
+          Unit
+        ]
+    ): Anon_Unwatch = js.native
     @JSName("watch")
-    def watch_style(property: style, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
-    @JSName("watch")
-    def watch_swatchSize(property: swatchSize, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+    def watch_swatchSize(
+      property: swatchSize,
+      callback: js.Function3[
+          /* property */ js.UndefOr[String], 
+          /* oldValue */ js.UndefOr[Double], 
+          /* newValue */ js.UndefOr[Double], 
+          Unit
+        ]
+    ): Anon_Unwatch = js.native
   }
   
   /**
@@ -304,11 +358,35 @@ object widget extends js.Object {
     @JSName("set")
     def set_transitionStroke(property: transitionStroke, value: js.Object): Unit = js.native
     @JSName("watch")
-    def watch_outline(property: outline, callback: Fn_NewValue): Anon_Unwatch = js.native
+    def watch_outline(
+      property: outline,
+      callback: js.Function3[
+          /* property */ js.UndefOr[String], 
+          /* oldValue */ js.UndefOr[Boolean], 
+          /* newValue */ js.UndefOr[Boolean], 
+          Unit
+        ]
+    ): Anon_Unwatch = js.native
     @JSName("watch")
-    def watch_transitionFill(property: transitionFill, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+    def watch_transitionFill(
+      property: transitionFill,
+      callback: js.Function3[
+          /* property */ js.UndefOr[String], 
+          /* oldValue */ js.UndefOr[js.Object], 
+          /* newValue */ js.UndefOr[js.Object], 
+          Unit
+        ]
+    ): Anon_Unwatch = js.native
     @JSName("watch")
-    def watch_transitionStroke(property: transitionStroke, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+    def watch_transitionStroke(
+      property: transitionStroke,
+      callback: js.Function3[
+          /* property */ js.UndefOr[String], 
+          /* oldValue */ js.UndefOr[js.Object], 
+          /* newValue */ js.UndefOr[js.Object], 
+          Unit
+        ]
+    ): Anon_Unwatch = js.native
   }
   
 }

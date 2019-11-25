@@ -51,14 +51,14 @@ object MessageOptions {
     theme: String = null,
     `type`: String = null
   ): MessageOptions = {
-    val __obj = js.Dynamic.literal(message = message)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     if (hideAfter != null) __obj.updateDynamic("hideAfter")(hideAfter.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideOnNavigate)) __obj.updateDynamic("hideOnNavigate")(hideOnNavigate)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(showCloseButton)) __obj.updateDynamic("showCloseButton")(showCloseButton)
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(hideOnNavigate)) __obj.updateDynamic("hideOnNavigate")(hideOnNavigate.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(showCloseButton)) __obj.updateDynamic("showCloseButton")(showCloseButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageOptions]
   }
 }

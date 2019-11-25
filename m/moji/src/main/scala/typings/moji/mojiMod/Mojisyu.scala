@@ -16,3 +16,24 @@ import scala.scalajs.js.annotation._
 */
 trait Mojisyu extends js.Object
 
+object Mojisyu {
+  @scala.inline
+  def HE: typings.moji.mojiStrings.HE = this.cast("HE")
+  @scala.inline
+  def HG: typings.moji.mojiStrings.HG = this.cast("HG")
+  @scala.inline
+  def HK: typings.moji.mojiStrings.HK = this.cast("HK")
+  @scala.inline
+  def HS: typings.moji.mojiStrings.HS = this.cast("HS")
+  @scala.inline
+  def KK: typings.moji.mojiStrings.KK = this.cast("KK")
+  @scala.inline
+  def ZE: typings.moji.mojiStrings.ZE = this.cast("ZE")
+  @scala.inline
+  def ZK: typings.moji.mojiStrings.ZK = this.cast("ZK")
+  @scala.inline
+  def ZS: typings.moji.mojiStrings.ZS = this.cast("ZS")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

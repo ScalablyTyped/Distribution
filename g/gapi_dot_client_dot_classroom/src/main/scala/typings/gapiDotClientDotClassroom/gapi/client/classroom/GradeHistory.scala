@@ -30,9 +30,9 @@ object GradeHistory {
     pointsEarned: Int | Double = null
   ): GradeHistory = {
     val __obj = js.Dynamic.literal()
-    if (actorUserId != null) __obj.updateDynamic("actorUserId")(actorUserId)
-    if (gradeChangeType != null) __obj.updateDynamic("gradeChangeType")(gradeChangeType)
-    if (gradeTimestamp != null) __obj.updateDynamic("gradeTimestamp")(gradeTimestamp)
+    if (actorUserId != null) __obj.updateDynamic("actorUserId")(actorUserId.asInstanceOf[js.Any])
+    if (gradeChangeType != null) __obj.updateDynamic("gradeChangeType")(gradeChangeType.asInstanceOf[js.Any])
+    if (gradeTimestamp != null) __obj.updateDynamic("gradeTimestamp")(gradeTimestamp.asInstanceOf[js.Any])
     if (maxPoints != null) __obj.updateDynamic("maxPoints")(maxPoints.asInstanceOf[js.Any])
     if (pointsEarned != null) __obj.updateDynamic("pointsEarned")(pointsEarned.asInstanceOf[js.Any])
     __obj.asInstanceOf[GradeHistory]

@@ -37,18 +37,18 @@ object ChromeOptions {
     windowTypes: js.Array[String] = null
   ): ChromeOptions = {
     val __obj = js.Dynamic.literal()
-    if (args != null) __obj.updateDynamic("args")(args)
-    if (binary != null) __obj.updateDynamic("binary")(binary)
-    if (debuggerAddress != null) __obj.updateDynamic("debuggerAddress")(debuggerAddress)
-    if (!js.isUndefined(detach)) __obj.updateDynamic("detach")(detach)
-    if (excludeSwitches != null) __obj.updateDynamic("excludeSwitches")(excludeSwitches)
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
-    if (localState != null) __obj.updateDynamic("localState")(localState)
-    if (minidumpPath != null) __obj.updateDynamic("minidumpPath")(minidumpPath)
-    if (mobileEmulation != null) __obj.updateDynamic("mobileEmulation")(mobileEmulation)
-    if (perfLoggingPrefs != null) __obj.updateDynamic("perfLoggingPrefs")(perfLoggingPrefs)
-    if (prefs != null) __obj.updateDynamic("prefs")(prefs)
-    if (windowTypes != null) __obj.updateDynamic("windowTypes")(windowTypes)
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (binary != null) __obj.updateDynamic("binary")(binary.asInstanceOf[js.Any])
+    if (debuggerAddress != null) __obj.updateDynamic("debuggerAddress")(debuggerAddress.asInstanceOf[js.Any])
+    if (!js.isUndefined(detach)) __obj.updateDynamic("detach")(detach.asInstanceOf[js.Any])
+    if (excludeSwitches != null) __obj.updateDynamic("excludeSwitches")(excludeSwitches.asInstanceOf[js.Any])
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
+    if (localState != null) __obj.updateDynamic("localState")(localState.asInstanceOf[js.Any])
+    if (minidumpPath != null) __obj.updateDynamic("minidumpPath")(minidumpPath.asInstanceOf[js.Any])
+    if (mobileEmulation != null) __obj.updateDynamic("mobileEmulation")(mobileEmulation.asInstanceOf[js.Any])
+    if (perfLoggingPrefs != null) __obj.updateDynamic("perfLoggingPrefs")(perfLoggingPrefs.asInstanceOf[js.Any])
+    if (prefs != null) __obj.updateDynamic("prefs")(prefs.asInstanceOf[js.Any])
+    if (windowTypes != null) __obj.updateDynamic("windowTypes")(windowTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChromeOptions]
   }
 }

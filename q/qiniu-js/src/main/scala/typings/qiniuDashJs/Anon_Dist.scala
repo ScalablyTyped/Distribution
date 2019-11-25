@@ -16,7 +16,7 @@ trait Anon_Dist extends js.Object {
 object Anon_Dist {
   @scala.inline
   def apply(dist: Blob, height: Double, width: Double): Anon_Dist = {
-    val __obj = js.Dynamic.literal(dist = dist, height = height, width = width)
+    val __obj = js.Dynamic.literal(dist = dist.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Dist]
   }

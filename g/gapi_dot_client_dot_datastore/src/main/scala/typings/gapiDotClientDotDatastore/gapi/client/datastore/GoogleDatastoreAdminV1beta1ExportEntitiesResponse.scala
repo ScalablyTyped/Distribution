@@ -18,7 +18,7 @@ object GoogleDatastoreAdminV1beta1ExportEntitiesResponse {
   @scala.inline
   def apply(outputUrl: String = null): GoogleDatastoreAdminV1beta1ExportEntitiesResponse = {
     val __obj = js.Dynamic.literal()
-    if (outputUrl != null) __obj.updateDynamic("outputUrl")(outputUrl)
+    if (outputUrl != null) __obj.updateDynamic("outputUrl")(outputUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleDatastoreAdminV1beta1ExportEntitiesResponse]
   }
 }

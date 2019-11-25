@@ -18,8 +18,8 @@ trait Credentials extends js.Object {
 object Credentials {
   @scala.inline
   def apply(provider: Provider | custom, query: StringLikeMap, token: String, profile: js.Object = null): Credentials = {
-    val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any], query = query, token = token)
-    if (profile != null) __obj.updateDynamic("profile")(profile)
+    val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
+    if (profile != null) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
     __obj.asInstanceOf[Credentials]
   }
 }

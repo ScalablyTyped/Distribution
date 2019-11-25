@@ -42,10 +42,10 @@ object AndroidTestLoop {
     scenarios: js.Array[Double] = null
   ): AndroidTestLoop = {
     val __obj = js.Dynamic.literal()
-    if (appApk != null) __obj.updateDynamic("appApk")(appApk)
-    if (appPackageId != null) __obj.updateDynamic("appPackageId")(appPackageId)
-    if (scenarioLabels != null) __obj.updateDynamic("scenarioLabels")(scenarioLabels)
-    if (scenarios != null) __obj.updateDynamic("scenarios")(scenarios)
+    if (appApk != null) __obj.updateDynamic("appApk")(appApk.asInstanceOf[js.Any])
+    if (appPackageId != null) __obj.updateDynamic("appPackageId")(appPackageId.asInstanceOf[js.Any])
+    if (scenarioLabels != null) __obj.updateDynamic("scenarioLabels")(scenarioLabels.asInstanceOf[js.Any])
+    if (scenarios != null) __obj.updateDynamic("scenarios")(scenarios.asInstanceOf[js.Any])
     __obj.asInstanceOf[AndroidTestLoop]
   }
 }

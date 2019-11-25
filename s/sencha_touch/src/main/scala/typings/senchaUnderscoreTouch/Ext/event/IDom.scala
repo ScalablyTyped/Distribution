@@ -73,7 +73,7 @@ object IDom {
     if (pageX != null) __obj.updateDynamic("pageX")(pageX.asInstanceOf[js.Any])
     if (pageY != null) __obj.updateDynamic("pageY")(pageY.asInstanceOf[js.Any])
     if (preventDefault != null) __obj.updateDynamic("preventDefault")(js.Any.fromFunction0(preventDefault))
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDom]
   }
 }

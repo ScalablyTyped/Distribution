@@ -14,7 +14,7 @@ trait Anon_CacheKey extends js.Object {
 object Anon_CacheKey {
   @scala.inline
   def apply(cacheKey: GraphQLCacheKey, cacheValue: GraphQLCacheValue[_]): Anon_CacheKey = {
-    val __obj = js.Dynamic.literal(cacheKey = cacheKey, cacheValue = cacheValue)
+    val __obj = js.Dynamic.literal(cacheKey = cacheKey.asInstanceOf[js.Any], cacheValue = cacheValue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CacheKey]
   }

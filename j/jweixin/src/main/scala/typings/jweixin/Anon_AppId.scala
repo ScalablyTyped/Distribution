@@ -29,8 +29,8 @@ object Anon_AppId {
     timestamp: Double,
     debug: js.UndefOr[Boolean] = js.undefined
   ): Anon_AppId = {
-    val __obj = js.Dynamic.literal(appId = appId, jsApiList = jsApiList, nonceStr = nonceStr, signature = signature, timestamp = timestamp)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], jsApiList = jsApiList.asInstanceOf[js.Any], nonceStr = nonceStr.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AppId]
   }
 }

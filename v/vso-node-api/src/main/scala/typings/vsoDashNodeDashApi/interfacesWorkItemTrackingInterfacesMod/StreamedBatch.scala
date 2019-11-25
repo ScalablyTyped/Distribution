@@ -14,7 +14,7 @@ trait StreamedBatch[T] extends js.Object {
 object StreamedBatch {
   @scala.inline
   def apply[T](continuationToken: String, isLastBatch: Boolean, nextLink: String, values: js.Array[T]): StreamedBatch[T] = {
-    val __obj = js.Dynamic.literal(continuationToken = continuationToken, isLastBatch = isLastBatch, nextLink = nextLink, values = values)
+    val __obj = js.Dynamic.literal(continuationToken = continuationToken.asInstanceOf[js.Any], isLastBatch = isLastBatch.asInstanceOf[js.Any], nextLink = nextLink.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StreamedBatch[T]]
   }

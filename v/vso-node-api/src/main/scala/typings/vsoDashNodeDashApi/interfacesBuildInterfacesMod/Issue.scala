@@ -24,8 +24,8 @@ trait Issue extends js.Object {
 object Issue {
   @scala.inline
   def apply(category: String, data: StringDictionary[String], message: String, `type`: IssueType): Issue = {
-    val __obj = js.Dynamic.literal(category = category, data = data, message = message)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Issue]
   }
 }

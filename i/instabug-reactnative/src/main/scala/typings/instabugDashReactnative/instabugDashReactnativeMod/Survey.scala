@@ -11,7 +11,7 @@ trait Survey extends js.Object {
 object Survey {
   @scala.inline
   def apply(title: String): Survey = {
-    val __obj = js.Dynamic.literal(title = title)
+    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Survey]
   }

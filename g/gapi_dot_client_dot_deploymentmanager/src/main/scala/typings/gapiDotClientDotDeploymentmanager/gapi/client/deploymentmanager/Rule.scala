@@ -36,13 +36,13 @@ object Rule {
     permissions: js.Array[String] = null
   ): Rule = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action)
-    if (conditions != null) __obj.updateDynamic("conditions")(conditions)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (ins != null) __obj.updateDynamic("ins")(ins)
-    if (logConfigs != null) __obj.updateDynamic("logConfigs")(logConfigs)
-    if (notIns != null) __obj.updateDynamic("notIns")(notIns)
-    if (permissions != null) __obj.updateDynamic("permissions")(permissions)
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (conditions != null) __obj.updateDynamic("conditions")(conditions.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (ins != null) __obj.updateDynamic("ins")(ins.asInstanceOf[js.Any])
+    if (logConfigs != null) __obj.updateDynamic("logConfigs")(logConfigs.asInstanceOf[js.Any])
+    if (notIns != null) __obj.updateDynamic("notIns")(notIns.asInstanceOf[js.Any])
+    if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Rule]
   }
 }

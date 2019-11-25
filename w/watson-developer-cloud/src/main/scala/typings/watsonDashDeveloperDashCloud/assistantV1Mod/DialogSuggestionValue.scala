@@ -22,9 +22,9 @@ object DialogSuggestionValue {
     intents: js.Array[RuntimeIntent] = null
   ): DialogSuggestionValue = {
     val __obj = js.Dynamic.literal()
-    if (entities != null) __obj.updateDynamic("entities")(entities)
-    if (input != null) __obj.updateDynamic("input")(input)
-    if (intents != null) __obj.updateDynamic("intents")(intents)
+    if (entities != null) __obj.updateDynamic("entities")(entities.asInstanceOf[js.Any])
+    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
+    if (intents != null) __obj.updateDynamic("intents")(intents.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogSuggestionValue]
   }
 }

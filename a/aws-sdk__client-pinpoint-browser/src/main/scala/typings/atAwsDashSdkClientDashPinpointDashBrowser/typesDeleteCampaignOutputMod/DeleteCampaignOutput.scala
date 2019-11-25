@@ -22,7 +22,7 @@ trait DeleteCampaignOutput extends OutputTypesUnion {
 object DeleteCampaignOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, CampaignResponse: _UnmarshalledCampaignResponse): DeleteCampaignOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata, CampaignResponse = CampaignResponse)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], CampaignResponse = CampaignResponse.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeleteCampaignOutput]
   }

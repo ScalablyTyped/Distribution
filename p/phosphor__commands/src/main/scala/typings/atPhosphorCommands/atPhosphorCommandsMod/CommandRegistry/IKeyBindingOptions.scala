@@ -83,11 +83,11 @@ object IKeyBindingOptions {
     macKeys: js.Array[String] = null,
     winKeys: js.Array[String] = null
   ): IKeyBindingOptions = {
-    val __obj = js.Dynamic.literal(command = command, keys = keys, selector = selector)
-    if (args != null) __obj.updateDynamic("args")(args)
-    if (linuxKeys != null) __obj.updateDynamic("linuxKeys")(linuxKeys)
-    if (macKeys != null) __obj.updateDynamic("macKeys")(macKeys)
-    if (winKeys != null) __obj.updateDynamic("winKeys")(winKeys)
+    val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any])
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (linuxKeys != null) __obj.updateDynamic("linuxKeys")(linuxKeys.asInstanceOf[js.Any])
+    if (macKeys != null) __obj.updateDynamic("macKeys")(macKeys.asInstanceOf[js.Any])
+    if (winKeys != null) __obj.updateDynamic("winKeys")(winKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[IKeyBindingOptions]
   }
 }

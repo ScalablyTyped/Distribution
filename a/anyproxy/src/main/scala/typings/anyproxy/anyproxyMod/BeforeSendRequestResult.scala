@@ -14,7 +14,7 @@ object BeforeSendRequestResult {
   @scala.inline
   def apply(response: Partial[Response] = null): BeforeSendRequestResult = {
     val __obj = js.Dynamic.literal()
-    if (response != null) __obj.updateDynamic("response")(response)
+    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
     __obj.asInstanceOf[BeforeSendRequestResult]
   }
 }

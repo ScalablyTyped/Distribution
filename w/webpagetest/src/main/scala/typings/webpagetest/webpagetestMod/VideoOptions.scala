@@ -13,7 +13,7 @@ object VideoOptions {
   @scala.inline
   def apply(comparisonEndPoint: String = null): VideoOptions = {
     val __obj = js.Dynamic.literal()
-    if (comparisonEndPoint != null) __obj.updateDynamic("comparisonEndPoint")(comparisonEndPoint)
+    if (comparisonEndPoint != null) __obj.updateDynamic("comparisonEndPoint")(comparisonEndPoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoOptions]
   }
 }

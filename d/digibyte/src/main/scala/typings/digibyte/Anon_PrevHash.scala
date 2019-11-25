@@ -12,7 +12,7 @@ trait Anon_PrevHash extends js.Object {
 object Anon_PrevHash {
   @scala.inline
   def apply(prevHash: String, time: Double): Anon_PrevHash = {
-    val __obj = js.Dynamic.literal(prevHash = prevHash, time = time)
+    val __obj = js.Dynamic.literal(prevHash = prevHash.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_PrevHash]
   }

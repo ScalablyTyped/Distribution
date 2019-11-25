@@ -13,8 +13,8 @@ trait StringSet extends DynamoDbSet {
 object StringSet {
   @scala.inline
   def apply(`type`: String, values: js.Array[java.lang.String]): StringSet = {
-    val __obj = js.Dynamic.literal(values = values)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[StringSet]
   }
 }

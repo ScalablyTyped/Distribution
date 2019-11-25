@@ -12,7 +12,7 @@ trait OperationType extends js.Object {
 object OperationType {
   @scala.inline
   def apply(response: js.Any, variables: Variables): OperationType = {
-    val __obj = js.Dynamic.literal(response = response, variables = variables)
+    val __obj = js.Dynamic.literal(response = response.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OperationType]
   }

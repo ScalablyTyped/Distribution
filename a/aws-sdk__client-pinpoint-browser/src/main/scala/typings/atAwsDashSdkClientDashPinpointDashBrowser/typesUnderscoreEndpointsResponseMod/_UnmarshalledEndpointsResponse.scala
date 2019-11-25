@@ -17,7 +17,7 @@ object _UnmarshalledEndpointsResponse {
   @scala.inline
   def apply(Item: js.Array[_UnmarshalledEndpointResponse] = null): _UnmarshalledEndpointsResponse = {
     val __obj = js.Dynamic.literal()
-    if (Item != null) __obj.updateDynamic("Item")(Item)
+    if (Item != null) __obj.updateDynamic("Item")(Item.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledEndpointsResponse]
   }
 }

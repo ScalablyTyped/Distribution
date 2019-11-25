@@ -15,7 +15,7 @@ trait RegisteredField extends js.Object {
 object RegisteredField {
   @scala.inline
   def apply(count: Double, name: String, `type`: Field | FieldArray): RegisteredField = {
-    val __obj = js.Dynamic.literal(count = count, name = name)
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisteredField]
   }

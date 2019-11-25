@@ -27,10 +27,10 @@ object Anon_DisplayName {
     providerId: String = null
   ): Anon_DisplayName = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (federatedId != null) __obj.updateDynamic("federatedId")(federatedId)
-    if (photoUrl != null) __obj.updateDynamic("photoUrl")(photoUrl)
-    if (providerId != null) __obj.updateDynamic("providerId")(providerId)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (federatedId != null) __obj.updateDynamic("federatedId")(federatedId.asInstanceOf[js.Any])
+    if (photoUrl != null) __obj.updateDynamic("photoUrl")(photoUrl.asInstanceOf[js.Any])
+    if (providerId != null) __obj.updateDynamic("providerId")(providerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DisplayName]
   }
 }

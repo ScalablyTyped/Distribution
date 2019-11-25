@@ -31,9 +31,9 @@ object OptionsSideMenu {
     right: SideMenuSide = null
   ): OptionsSideMenu = {
     val __obj = js.Dynamic.literal()
-    if (left != null) __obj.updateDynamic("left")(left)
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
     if (openGestureMode != null) __obj.updateDynamic("openGestureMode")(openGestureMode.asInstanceOf[js.Any])
-    if (right != null) __obj.updateDynamic("right")(right)
+    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsSideMenu]
   }
 }

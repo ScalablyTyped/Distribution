@@ -14,7 +14,7 @@ trait IWebSocketQueueItem extends js.Object {
 object IWebSocketQueueItem {
   @scala.inline
   def apply(defered: IPromise[Unit], message: js.Any): IWebSocketQueueItem = {
-    val __obj = js.Dynamic.literal(defered = defered, message = message)
+    val __obj = js.Dynamic.literal(defered = defered.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IWebSocketQueueItem]
   }

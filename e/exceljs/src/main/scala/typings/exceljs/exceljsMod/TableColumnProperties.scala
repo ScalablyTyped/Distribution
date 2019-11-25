@@ -7,7 +7,7 @@ import typings.exceljs.exceljsStrings.countNums
 import typings.exceljs.exceljsStrings.custom
 import typings.exceljs.exceljsStrings.max
 import typings.exceljs.exceljsStrings.min
-import typings.exceljs.exceljsStrings.none
+import typings.exceljs.exceljsStrings.none_
 import typings.exceljs.exceljsStrings.stdDev
 import typings.exceljs.exceljsStrings.sum
 import scala.scalajs.js
@@ -32,7 +32,7 @@ trait TableColumnProperties extends js.Object {
   	  * Name of the totals function
   	  * @default 'none'
   	  */
-  var totalsRowFunction: js.UndefOr[none | average | countNums | count | max | min | stdDev | `var` | sum | custom] = js.undefined
+  var totalsRowFunction: js.UndefOr[none_ | average | countNums | count | max | min | stdDev | `var` | sum | custom] = js.undefined
   /**
   	  * Label to describe the totals row (first column)
   	  * @default 'Total'
@@ -46,14 +46,14 @@ object TableColumnProperties {
     name: String,
     filterButton: js.UndefOr[Boolean] = js.undefined,
     totalsRowFormula: String = null,
-    totalsRowFunction: none | average | countNums | count | max | min | stdDev | `var` | sum | custom = null,
+    totalsRowFunction: none_ | average | countNums | count | max | min | stdDev | `var` | sum | custom = null,
     totalsRowLabel: String = null
   ): TableColumnProperties = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (!js.isUndefined(filterButton)) __obj.updateDynamic("filterButton")(filterButton)
-    if (totalsRowFormula != null) __obj.updateDynamic("totalsRowFormula")(totalsRowFormula)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (!js.isUndefined(filterButton)) __obj.updateDynamic("filterButton")(filterButton.asInstanceOf[js.Any])
+    if (totalsRowFormula != null) __obj.updateDynamic("totalsRowFormula")(totalsRowFormula.asInstanceOf[js.Any])
     if (totalsRowFunction != null) __obj.updateDynamic("totalsRowFunction")(totalsRowFunction.asInstanceOf[js.Any])
-    if (totalsRowLabel != null) __obj.updateDynamic("totalsRowLabel")(totalsRowLabel)
+    if (totalsRowLabel != null) __obj.updateDynamic("totalsRowLabel")(totalsRowLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableColumnProperties]
   }
 }

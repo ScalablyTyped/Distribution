@@ -35,7 +35,7 @@ object ITimestamp {
     UtcToLocalTime: () => ITimestamp,
     Year: Double
   ): ITimestamp = {
-    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), Day = Day, Fraction = Fraction, GetValue = js.Any.fromFunction0(GetValue), Hour = Hour, LocalTimeToUtc = js.Any.fromFunction0(LocalTimeToUtc), Minute = Minute, Month = Month, Second = Second, SetValue = js.Any.fromFunction1(SetValue), UtcToLocalTime = js.Any.fromFunction0(UtcToLocalTime), Year = Year)
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), Day = Day.asInstanceOf[js.Any], Fraction = Fraction.asInstanceOf[js.Any], GetValue = js.Any.fromFunction0(GetValue), Hour = Hour.asInstanceOf[js.Any], LocalTimeToUtc = js.Any.fromFunction0(LocalTimeToUtc), Minute = Minute.asInstanceOf[js.Any], Month = Month.asInstanceOf[js.Any], Second = Second.asInstanceOf[js.Any], SetValue = js.Any.fromFunction1(SetValue), UtcToLocalTime = js.Any.fromFunction0(UtcToLocalTime), Year = Year.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ITimestamp]
   }

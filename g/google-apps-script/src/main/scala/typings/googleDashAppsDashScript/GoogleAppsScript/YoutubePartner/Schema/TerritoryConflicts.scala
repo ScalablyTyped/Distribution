@@ -13,8 +13,8 @@ object TerritoryConflicts {
   @scala.inline
   def apply(conflictingOwnership: js.Array[ConflictingOwnership] = null, territory: String = null): TerritoryConflicts = {
     val __obj = js.Dynamic.literal()
-    if (conflictingOwnership != null) __obj.updateDynamic("conflictingOwnership")(conflictingOwnership)
-    if (territory != null) __obj.updateDynamic("territory")(territory)
+    if (conflictingOwnership != null) __obj.updateDynamic("conflictingOwnership")(conflictingOwnership.asInstanceOf[js.Any])
+    if (territory != null) __obj.updateDynamic("territory")(territory.asInstanceOf[js.Any])
     __obj.asInstanceOf[TerritoryConflicts]
   }
 }

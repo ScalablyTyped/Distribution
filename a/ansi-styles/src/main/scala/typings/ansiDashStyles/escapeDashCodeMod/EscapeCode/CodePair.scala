@@ -12,7 +12,7 @@ trait CodePair extends js.Object {
 object CodePair {
   @scala.inline
   def apply(close: String, open: String): CodePair = {
-    val __obj = js.Dynamic.literal(close = close, open = open)
+    val __obj = js.Dynamic.literal(close = close.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CodePair]
   }

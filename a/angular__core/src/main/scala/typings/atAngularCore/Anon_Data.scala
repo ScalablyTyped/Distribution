@@ -19,7 +19,7 @@ object Anon_Data {
     encapsulation: ViewEncapsulation,
     styles: js.Array[String | js.Array[_]]
   ): Anon_Data = {
-    val __obj = js.Dynamic.literal(data = data, encapsulation = encapsulation, styles = styles)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], encapsulation = encapsulation.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Data]
   }

@@ -13,7 +13,7 @@ object CreateIntegrationResponse {
   @scala.inline
   def apply(data: Integration = null): CreateIntegrationResponse = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateIntegrationResponse]
   }
 }

@@ -26,10 +26,10 @@ object Config {
   ): Config = {
     val __obj = js.Dynamic.literal()
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (!js.isUndefined(logStructureOnSuccess)) __obj.updateDynamic("logStructureOnSuccess")(logStructureOnSuccess)
-    if (!js.isUndefined(logStructureOnTimeout)) __obj.updateDynamic("logStructureOnTimeout")(logStructureOnTimeout)
+    if (!js.isUndefined(logStructureOnSuccess)) __obj.updateDynamic("logStructureOnSuccess")(logStructureOnSuccess.asInstanceOf[js.Any])
+    if (!js.isUndefined(logStructureOnTimeout)) __obj.updateDynamic("logStructureOnTimeout")(logStructureOnTimeout.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (timeoutMessage != null) __obj.updateDynamic("timeoutMessage")(timeoutMessage)
+    if (timeoutMessage != null) __obj.updateDynamic("timeoutMessage")(timeoutMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

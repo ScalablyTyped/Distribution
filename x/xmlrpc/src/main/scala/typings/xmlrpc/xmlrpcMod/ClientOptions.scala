@@ -30,14 +30,14 @@ object ClientOptions {
     url: String = null
   ): ClientOptions = {
     val __obj = js.Dynamic.literal()
-    if (basic_auth != null) __obj.updateDynamic("basic_auth")(basic_auth)
-    if (!js.isUndefined(cookies)) __obj.updateDynamic("cookies")(cookies)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (basic_auth != null) __obj.updateDynamic("basic_auth")(basic_auth.asInstanceOf[js.Any])
+    if (!js.isUndefined(cookies)) __obj.updateDynamic("cookies")(cookies.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientOptions]
   }
 }

@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait Action extends js.Object
 
+object Action {
+  @scala.inline
+  def POP: typings.history.historyStrings.POP = this.cast("POP")
+  @scala.inline
+  def PUSH: typings.history.historyStrings.PUSH = this.cast("PUSH")
+  @scala.inline
+  def REPLACE: typings.history.historyStrings.REPLACE = this.cast("REPLACE")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

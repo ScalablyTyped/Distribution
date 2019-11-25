@@ -13,8 +13,8 @@ object NodeNewProps {
   @scala.inline
   def apply(raws: NodeRaws = null, source: NodeSource = null): NodeNewProps = {
     val __obj = js.Dynamic.literal()
-    if (raws != null) __obj.updateDynamic("raws")(raws)
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (raws != null) __obj.updateDynamic("raws")(raws.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeNewProps]
   }
 }

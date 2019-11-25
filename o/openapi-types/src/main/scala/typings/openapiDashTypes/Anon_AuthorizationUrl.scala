@@ -14,8 +14,8 @@ trait Anon_AuthorizationUrl extends js.Object {
 object Anon_AuthorizationUrl {
   @scala.inline
   def apply(authorizationUrl: String, scopes: StringDictionary[String], refreshUrl: String = null): Anon_AuthorizationUrl = {
-    val __obj = js.Dynamic.literal(authorizationUrl = authorizationUrl, scopes = scopes)
-    if (refreshUrl != null) __obj.updateDynamic("refreshUrl")(refreshUrl)
+    val __obj = js.Dynamic.literal(authorizationUrl = authorizationUrl.asInstanceOf[js.Any], scopes = scopes.asInstanceOf[js.Any])
+    if (refreshUrl != null) __obj.updateDynamic("refreshUrl")(refreshUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AuthorizationUrl]
   }
 }

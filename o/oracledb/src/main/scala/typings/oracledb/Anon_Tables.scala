@@ -13,7 +13,7 @@ trait Anon_Tables extends js.Object {
 object Anon_Tables {
   @scala.inline
   def apply(tables: SubscriptionTables): Anon_Tables = {
-    val __obj = js.Dynamic.literal(tables = tables)
+    val __obj = js.Dynamic.literal(tables = tables.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Tables]
   }

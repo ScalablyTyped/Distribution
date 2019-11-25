@@ -26,13 +26,13 @@ object Anon_Author {
     website: String = null
   ): Anon_Author = {
     val __obj = js.Dynamic.literal()
-    if (author != null) __obj.updateDynamic("author")(author)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (version != null) __obj.updateDynamic("version")(version)
-    if (website != null) __obj.updateDynamic("website")(website)
+    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (website != null) __obj.updateDynamic("website")(website.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Author]
   }
 }

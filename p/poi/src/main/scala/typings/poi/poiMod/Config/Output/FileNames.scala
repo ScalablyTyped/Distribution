@@ -16,10 +16,10 @@ object FileNames {
   @scala.inline
   def apply(css: String = null, font: String = null, image: String = null, js_ : String = null): FileNames = {
     val __obj = js.Dynamic.literal()
-    if (css != null) __obj.updateDynamic("css")(css)
-    if (font != null) __obj.updateDynamic("font")(font)
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (js_ != null) __obj.updateDynamic("js")(js_)
+    if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (js_ != null) __obj.updateDynamic("js")(js_.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileNames]
   }
 }

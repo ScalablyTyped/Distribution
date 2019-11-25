@@ -21,7 +21,7 @@ object SendOptions {
     val __obj = js.Dynamic.literal()
     if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))
-    if (!js.isUndefined(useMasterKey)) __obj.updateDynamic("useMasterKey")(useMasterKey)
+    if (!js.isUndefined(useMasterKey)) __obj.updateDynamic("useMasterKey")(useMasterKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendOptions]
   }
 }

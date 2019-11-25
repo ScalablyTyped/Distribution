@@ -16,8 +16,8 @@ trait InternalServerError extends Base {
 object InternalServerError {
   @scala.inline
   def apply(details: String, instance: String, status: `500`, title: `Internal Server Error`, `type`: String): InternalServerError = {
-    val __obj = js.Dynamic.literal(details = details, instance = instance, status = status, title = title)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(details = details.asInstanceOf[js.Any], instance = instance.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[InternalServerError]
   }
 }

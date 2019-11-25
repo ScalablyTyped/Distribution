@@ -19,8 +19,8 @@ object LayersSubLayersShapeSettingsColorMappingsEqualColorMapping {
   @scala.inline
   def apply(color: String = null, value: String = null): LayersSubLayersShapeSettingsColorMappingsEqualColorMapping = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayersSubLayersShapeSettingsColorMappingsEqualColorMapping]
   }
 }

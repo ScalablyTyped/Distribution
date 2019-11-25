@@ -40,7 +40,7 @@ object SearchDegreeCentralityOptions {
   ): SearchDegreeCentralityOptions = {
     val __obj = js.Dynamic.literal(root = root.asInstanceOf[js.Any])
     if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
-    if (!js.isUndefined(directed)) __obj.updateDynamic("directed")(directed)
+    if (!js.isUndefined(directed)) __obj.updateDynamic("directed")(directed.asInstanceOf[js.Any])
     if (weight != null) __obj.updateDynamic("weight")(js.Any.fromFunction1(weight))
     __obj.asInstanceOf[SearchDegreeCentralityOptions]
   }

@@ -17,7 +17,7 @@ object QueryPlan {
   @scala.inline
   def apply(planNodes: js.Array[PlanNode] = null): QueryPlan = {
     val __obj = js.Dynamic.literal()
-    if (planNodes != null) __obj.updateDynamic("planNodes")(planNodes)
+    if (planNodes != null) __obj.updateDynamic("planNodes")(planNodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryPlan]
   }
 }

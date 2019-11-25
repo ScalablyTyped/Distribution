@@ -28,10 +28,10 @@ object CombinationOperators {
     $or: js.Array[Selector] = null
   ): CombinationOperators = {
     val __obj = js.Dynamic.literal()
-    if ($and != null) __obj.updateDynamic("$and")($and)
-    if ($nor != null) __obj.updateDynamic("$nor")($nor)
-    if ($not != null) __obj.updateDynamic("$not")($not)
-    if ($or != null) __obj.updateDynamic("$or")($or)
+    if ($and != null) __obj.updateDynamic("$and")($and.asInstanceOf[js.Any])
+    if ($nor != null) __obj.updateDynamic("$nor")($nor.asInstanceOf[js.Any])
+    if ($not != null) __obj.updateDynamic("$not")($not.asInstanceOf[js.Any])
+    if ($or != null) __obj.updateDynamic("$or")($or.asInstanceOf[js.Any])
     __obj.asInstanceOf[CombinationOperators]
   }
 }

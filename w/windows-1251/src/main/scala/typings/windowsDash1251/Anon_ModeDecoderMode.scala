@@ -13,7 +13,7 @@ object Anon_ModeDecoderMode {
   @scala.inline
   def apply(mode: DecoderMode = null): Anon_ModeDecoderMode = {
     val __obj = js.Dynamic.literal()
-    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ModeDecoderMode]
   }
 }

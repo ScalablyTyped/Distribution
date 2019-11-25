@@ -12,7 +12,7 @@ object OnsOptions {
   @scala.inline
   def apply(parentScope: js.Object = null): OnsOptions = {
     val __obj = js.Dynamic.literal()
-    if (parentScope != null) __obj.updateDynamic("parentScope")(parentScope)
+    if (parentScope != null) __obj.updateDynamic("parentScope")(parentScope.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnsOptions]
   }
 }

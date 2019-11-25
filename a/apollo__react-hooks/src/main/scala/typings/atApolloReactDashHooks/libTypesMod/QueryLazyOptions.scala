@@ -14,7 +14,7 @@ object QueryLazyOptions {
   @scala.inline
   def apply[TVariables](context: Context = null, variables: TVariables = null): QueryLazyOptions[TVariables] = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryLazyOptions[TVariables]]
   }

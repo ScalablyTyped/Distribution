@@ -24,12 +24,12 @@ object Config {
     path: String = null
   ): Config = {
     val __obj = js.Dynamic.literal()
-    if (entity != null) __obj.updateDynamic("entity")(entity)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (mixin != null) __obj.updateDynamic("mixin")(mixin)
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (entity != null) __obj.updateDynamic("entity")(entity.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (mixin != null) __obj.updateDynamic("mixin")(mixin.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

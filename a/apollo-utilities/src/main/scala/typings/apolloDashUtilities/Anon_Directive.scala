@@ -14,7 +14,7 @@ trait Anon_Directive extends js.Object {
 object Anon_Directive {
   @scala.inline
   def apply(directive: DirectiveNode, ifArgument: ArgumentNode): Anon_Directive = {
-    val __obj = js.Dynamic.literal(directive = directive, ifArgument = ifArgument)
+    val __obj = js.Dynamic.literal(directive = directive.asInstanceOf[js.Any], ifArgument = ifArgument.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Directive]
   }

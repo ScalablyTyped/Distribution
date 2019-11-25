@@ -13,8 +13,8 @@ object Anon_Android {
   @scala.inline
   def apply(android: js.Object = null, ios: js.Object = null): Anon_Android = {
     val __obj = js.Dynamic.literal()
-    if (android != null) __obj.updateDynamic("android")(android)
-    if (ios != null) __obj.updateDynamic("ios")(ios)
+    if (android != null) __obj.updateDynamic("android")(android.asInstanceOf[js.Any])
+    if (ios != null) __obj.updateDynamic("ios")(ios.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Android]
   }
 }

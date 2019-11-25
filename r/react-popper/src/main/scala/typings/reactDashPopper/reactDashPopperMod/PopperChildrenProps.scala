@@ -26,8 +26,8 @@ object PopperChildrenProps {
     outOfBoundaries: js.UndefOr[Boolean] = js.undefined,
     ref: Ref[_] = null
   ): PopperChildrenProps = {
-    val __obj = js.Dynamic.literal(arrowProps = arrowProps, placement = placement, scheduleUpdate = js.Any.fromFunction0(scheduleUpdate), style = style)
-    if (!js.isUndefined(outOfBoundaries)) __obj.updateDynamic("outOfBoundaries")(outOfBoundaries)
+    val __obj = js.Dynamic.literal(arrowProps = arrowProps.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any], scheduleUpdate = js.Any.fromFunction0(scheduleUpdate), style = style.asInstanceOf[js.Any])
+    if (!js.isUndefined(outOfBoundaries)) __obj.updateDynamic("outOfBoundaries")(outOfBoundaries.asInstanceOf[js.Any])
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopperChildrenProps]
   }

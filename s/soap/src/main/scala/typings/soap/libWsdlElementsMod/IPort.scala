@@ -12,7 +12,7 @@ trait IPort extends js.Object {
 object IPort {
   @scala.inline
   def apply(binding: BindingElement, location: String): IPort = {
-    val __obj = js.Dynamic.literal(binding = binding, location = location)
+    val __obj = js.Dynamic.literal(binding = binding.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IPort]
   }

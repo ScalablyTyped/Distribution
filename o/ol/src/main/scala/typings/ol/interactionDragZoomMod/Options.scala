@@ -21,10 +21,10 @@ object Options {
     out: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (condition != null) __obj.updateDynamic("condition")(condition)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (condition != null) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (!js.isUndefined(out)) __obj.updateDynamic("out")(out)
+    if (!js.isUndefined(out)) __obj.updateDynamic("out")(out.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -44,16 +44,16 @@ object CreateModel {
     ticket_form_id: Int | Double = null,
     `type`: TicketType = null
   ): CreateModel = {
-    val __obj = js.Dynamic.literal(comment = comment, subject = subject)
-    if (collaborators != null) __obj.updateDynamic("collaborators")(collaborators)
-    if (custom_fields != null) __obj.updateDynamic("custom_fields")(custom_fields)
-    if (due_at != null) __obj.updateDynamic("due_at")(due_at)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (priority != null) __obj.updateDynamic("priority")(priority)
-    if (recipient != null) __obj.updateDynamic("recipient")(recipient)
-    if (requester != null) __obj.updateDynamic("requester")(requester)
+    val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any])
+    if (collaborators != null) __obj.updateDynamic("collaborators")(collaborators.asInstanceOf[js.Any])
+    if (custom_fields != null) __obj.updateDynamic("custom_fields")(custom_fields.asInstanceOf[js.Any])
+    if (due_at != null) __obj.updateDynamic("due_at")(due_at.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (recipient != null) __obj.updateDynamic("recipient")(recipient.asInstanceOf[js.Any])
+    if (requester != null) __obj.updateDynamic("requester")(requester.asInstanceOf[js.Any])
     if (ticket_form_id != null) __obj.updateDynamic("ticket_form_id")(ticket_form_id.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateModel]
   }
 }

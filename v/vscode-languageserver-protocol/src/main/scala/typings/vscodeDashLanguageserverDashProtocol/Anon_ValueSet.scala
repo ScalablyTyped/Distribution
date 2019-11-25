@@ -23,7 +23,7 @@ object Anon_ValueSet {
   @scala.inline
   def apply(valueSet: js.Array[SymbolKind] = null): Anon_ValueSet = {
     val __obj = js.Dynamic.literal()
-    if (valueSet != null) __obj.updateDynamic("valueSet")(valueSet)
+    if (valueSet != null) __obj.updateDynamic("valueSet")(valueSet.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ValueSet]
   }
 }

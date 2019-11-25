@@ -13,8 +13,8 @@ object EmitterOptions {
   @scala.inline
   def apply(onFirstListenerAdd: js.Function = null, onLastListenerRemove: js.Function = null): EmitterOptions = {
     val __obj = js.Dynamic.literal()
-    if (onFirstListenerAdd != null) __obj.updateDynamic("onFirstListenerAdd")(onFirstListenerAdd)
-    if (onLastListenerRemove != null) __obj.updateDynamic("onLastListenerRemove")(onLastListenerRemove)
+    if (onFirstListenerAdd != null) __obj.updateDynamic("onFirstListenerAdd")(onFirstListenerAdd.asInstanceOf[js.Any])
+    if (onLastListenerRemove != null) __obj.updateDynamic("onLastListenerRemove")(onLastListenerRemove.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmitterOptions]
   }
 }

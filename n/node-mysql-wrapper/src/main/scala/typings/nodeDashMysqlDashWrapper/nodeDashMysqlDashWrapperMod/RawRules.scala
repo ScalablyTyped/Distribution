@@ -30,7 +30,7 @@ object RawRules {
     orderByDesc: String,
     table: String
   ): RawRules = {
-    val __obj = js.Dynamic.literal(begin = begin, end = end, groupBy = groupBy, limit = limit, limitEnd = limitEnd, limitStart = limitStart, orderBy = orderBy, orderByDesc = orderByDesc, table = table)
+    val __obj = js.Dynamic.literal(begin = begin.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], groupBy = groupBy.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], limitEnd = limitEnd.asInstanceOf[js.Any], limitStart = limitStart.asInstanceOf[js.Any], orderBy = orderBy.asInstanceOf[js.Any], orderByDesc = orderByDesc.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RawRules]
   }

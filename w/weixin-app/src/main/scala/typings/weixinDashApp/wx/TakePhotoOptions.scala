@@ -24,7 +24,7 @@ object TakePhotoOptions {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (quality != null) __obj.updateDynamic("quality")(quality)
+    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[TakePhotoOptions]
   }

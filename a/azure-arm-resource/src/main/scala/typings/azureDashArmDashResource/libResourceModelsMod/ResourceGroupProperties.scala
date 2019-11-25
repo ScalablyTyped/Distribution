@@ -15,7 +15,7 @@ object ResourceGroupProperties {
   @scala.inline
   def apply(provisioningState: String = null): ResourceGroupProperties = {
     val __obj = js.Dynamic.literal()
-    if (provisioningState != null) __obj.updateDynamic("provisioningState")(provisioningState)
+    if (provisioningState != null) __obj.updateDynamic("provisioningState")(provisioningState.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceGroupProperties]
   }
 }

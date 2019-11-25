@@ -21,9 +21,9 @@ object PivotGroupRule {
     manualRule: ManualRule = null
   ): PivotGroupRule = {
     val __obj = js.Dynamic.literal()
-    if (dateTimeRule != null) __obj.updateDynamic("dateTimeRule")(dateTimeRule)
-    if (histogramRule != null) __obj.updateDynamic("histogramRule")(histogramRule)
-    if (manualRule != null) __obj.updateDynamic("manualRule")(manualRule)
+    if (dateTimeRule != null) __obj.updateDynamic("dateTimeRule")(dateTimeRule.asInstanceOf[js.Any])
+    if (histogramRule != null) __obj.updateDynamic("histogramRule")(histogramRule.asInstanceOf[js.Any])
+    if (manualRule != null) __obj.updateDynamic("manualRule")(manualRule.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotGroupRule]
   }
 }

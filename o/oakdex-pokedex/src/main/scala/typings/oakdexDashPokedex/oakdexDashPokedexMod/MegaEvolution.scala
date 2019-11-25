@@ -29,8 +29,8 @@ object MegaEvolution {
     weight_us: String,
     image_suffix: String = null
   ): MegaEvolution = {
-    val __obj = js.Dynamic.literal(ability = ability, base_stats = base_stats, height_eu = height_eu, height_us = height_us, mega_stone = mega_stone, types = types, weight_eu = weight_eu, weight_us = weight_us)
-    if (image_suffix != null) __obj.updateDynamic("image_suffix")(image_suffix)
+    val __obj = js.Dynamic.literal(ability = ability.asInstanceOf[js.Any], base_stats = base_stats.asInstanceOf[js.Any], height_eu = height_eu.asInstanceOf[js.Any], height_us = height_us.asInstanceOf[js.Any], mega_stone = mega_stone.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any], weight_eu = weight_eu.asInstanceOf[js.Any], weight_us = weight_us.asInstanceOf[js.Any])
+    if (image_suffix != null) __obj.updateDynamic("image_suffix")(image_suffix.asInstanceOf[js.Any])
     __obj.asInstanceOf[MegaEvolution]
   }
 }

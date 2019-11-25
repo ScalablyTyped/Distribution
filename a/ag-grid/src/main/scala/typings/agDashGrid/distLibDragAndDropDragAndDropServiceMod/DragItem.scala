@@ -21,9 +21,9 @@ object DragItem {
     visibleState: StringDictionary[Boolean] = null
   ): DragItem = {
     val __obj = js.Dynamic.literal()
-    if (columns != null) __obj.updateDynamic("columns")(columns)
-    if (rowNode != null) __obj.updateDynamic("rowNode")(rowNode)
-    if (visibleState != null) __obj.updateDynamic("visibleState")(visibleState)
+    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (rowNode != null) __obj.updateDynamic("rowNode")(rowNode.asInstanceOf[js.Any])
+    if (visibleState != null) __obj.updateDynamic("visibleState")(visibleState.asInstanceOf[js.Any])
     __obj.asInstanceOf[DragItem]
   }
 }

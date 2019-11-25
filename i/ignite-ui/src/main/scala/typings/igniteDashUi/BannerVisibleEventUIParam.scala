@@ -23,8 +23,8 @@ object BannerVisibleEventUIParam {
   @scala.inline
   def apply(banner: js.Any = null, bannerElement: js.Any = null, index: Int | Double = null): BannerVisibleEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (banner != null) __obj.updateDynamic("banner")(banner)
-    if (bannerElement != null) __obj.updateDynamic("bannerElement")(bannerElement)
+    if (banner != null) __obj.updateDynamic("banner")(banner.asInstanceOf[js.Any])
+    if (bannerElement != null) __obj.updateDynamic("bannerElement")(bannerElement.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     __obj.asInstanceOf[BannerVisibleEventUIParam]
   }

@@ -16,7 +16,7 @@ object ProjectsListXpnHostsRequest {
   @scala.inline
   def apply(organization: String = null): ProjectsListXpnHostsRequest = {
     val __obj = js.Dynamic.literal()
-    if (organization != null) __obj.updateDynamic("organization")(organization)
+    if (organization != null) __obj.updateDynamic("organization")(organization.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectsListXpnHostsRequest]
   }
 }

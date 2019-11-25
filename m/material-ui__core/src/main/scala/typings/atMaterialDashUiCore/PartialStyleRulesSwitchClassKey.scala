@@ -34,16 +34,16 @@ object PartialStyleRulesSwitchClassKey {
     switchBase: CSSProperties = null
   ): PartialStyleRulesSwitchClassKey = {
     val __obj = js.Dynamic.literal()
-    if (bar != null) __obj.updateDynamic("bar")(bar)
-    if (checked != null) __obj.updateDynamic("checked")(checked)
-    if (colorPrimary != null) __obj.updateDynamic("colorPrimary")(colorPrimary)
-    if (colorSecondary != null) __obj.updateDynamic("colorSecondary")(colorSecondary)
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (iconChecked != null) __obj.updateDynamic("iconChecked")(iconChecked)
-    if (input != null) __obj.updateDynamic("input")(input)
-    if (root != null) __obj.updateDynamic("root")(root)
-    if (switchBase != null) __obj.updateDynamic("switchBase")(switchBase)
+    if (bar != null) __obj.updateDynamic("bar")(bar.asInstanceOf[js.Any])
+    if (checked != null) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
+    if (colorPrimary != null) __obj.updateDynamic("colorPrimary")(colorPrimary.asInstanceOf[js.Any])
+    if (colorSecondary != null) __obj.updateDynamic("colorSecondary")(colorSecondary.asInstanceOf[js.Any])
+    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (iconChecked != null) __obj.updateDynamic("iconChecked")(iconChecked.asInstanceOf[js.Any])
+    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (switchBase != null) __obj.updateDynamic("switchBase")(switchBase.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyleRulesSwitchClassKey]
   }
 }

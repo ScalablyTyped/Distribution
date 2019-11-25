@@ -20,11 +20,11 @@ object GraphReference {
     named: js.UndefOr[Boolean] = js.undefined
   ): GraphReference = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(all)) __obj.updateDynamic("all")(all)
-    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(named)) __obj.updateDynamic("named")(named)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(all)) __obj.updateDynamic("all")(all.asInstanceOf[js.Any])
+    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(named)) __obj.updateDynamic("named")(named.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphReference]
   }
 }

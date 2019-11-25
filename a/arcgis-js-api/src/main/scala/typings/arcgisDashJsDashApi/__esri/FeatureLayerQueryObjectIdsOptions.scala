@@ -24,8 +24,8 @@ object FeatureLayerQueryObjectIdsOptions {
     propertyIsEnumerable: PropertyKey => Boolean,
     signal: AbortSignal = null
   ): FeatureLayerQueryObjectIdsOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (signal != null) __obj.updateDynamic("signal")(signal)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureLayerQueryObjectIdsOptions]
   }
 }

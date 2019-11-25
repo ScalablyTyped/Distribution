@@ -29,8 +29,8 @@ object PlusContactsContactFindOption {
   @scala.inline
   def apply(filter: PlusContactsContactFindFilter = null, multiple: js.UndefOr[Boolean] = js.undefined): PlusContactsContactFindOption = {
     val __obj = js.Dynamic.literal()
-    if (filter != null) __obj.updateDynamic("filter")(filter)
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusContactsContactFindOption]
   }
 }

@@ -29,7 +29,7 @@ object ChartAxisViewWindowOptions {
     val __obj = js.Dynamic.literal()
     if (viewWindowMax != null) __obj.updateDynamic("viewWindowMax")(viewWindowMax.asInstanceOf[js.Any])
     if (viewWindowMin != null) __obj.updateDynamic("viewWindowMin")(viewWindowMin.asInstanceOf[js.Any])
-    if (viewWindowMode != null) __obj.updateDynamic("viewWindowMode")(viewWindowMode)
+    if (viewWindowMode != null) __obj.updateDynamic("viewWindowMode")(viewWindowMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartAxisViewWindowOptions]
   }
 }

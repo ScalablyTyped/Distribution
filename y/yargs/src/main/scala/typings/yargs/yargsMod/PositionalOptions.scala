@@ -46,16 +46,16 @@ object PositionalOptions {
   ): PositionalOptions = {
     val __obj = js.Dynamic.literal()
     if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (choices != null) __obj.updateDynamic("choices")(choices)
+    if (choices != null) __obj.updateDynamic("choices")(choices.asInstanceOf[js.Any])
     if (coerce != null) __obj.updateDynamic("coerce")(js.Any.fromFunction1(coerce))
     if (conflicts != null) __obj.updateDynamic("conflicts")(conflicts.asInstanceOf[js.Any])
-    if (default != null) __obj.updateDynamic("default")(default)
-    if (desc != null) __obj.updateDynamic("desc")(desc)
-    if (describe != null) __obj.updateDynamic("describe")(describe)
-    if (description != null) __obj.updateDynamic("description")(description)
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (desc != null) __obj.updateDynamic("desc")(desc.asInstanceOf[js.Any])
+    if (describe != null) __obj.updateDynamic("describe")(describe.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (implies != null) __obj.updateDynamic("implies")(implies.asInstanceOf[js.Any])
-    if (!js.isUndefined(normalize)) __obj.updateDynamic("normalize")(normalize)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(normalize)) __obj.updateDynamic("normalize")(normalize.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PositionalOptions]
   }
 }

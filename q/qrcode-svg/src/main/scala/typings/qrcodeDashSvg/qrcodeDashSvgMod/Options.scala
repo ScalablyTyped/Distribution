@@ -36,9 +36,9 @@ object Options {
     padding: Int | Double = null,
     width: Int | Double = null
   ): Options = {
-    val __obj = js.Dynamic.literal(content = content)
-    if (background != null) __obj.updateDynamic("background")(background)
-    if (color != null) __obj.updateDynamic("color")(color)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (ecl != null) __obj.updateDynamic("ecl")(ecl.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])

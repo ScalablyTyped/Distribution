@@ -48,20 +48,20 @@ object RouteContextType {
     title: String = null
   ): RouteContextType = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoHideHeader)) __obj.updateDynamic("autoHideHeader")(autoHideHeader)
-    if (breadcrumb != null) __obj.updateDynamic("breadcrumb")(breadcrumb)
-    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed)
-    if (contentWidth != null) __obj.updateDynamic("contentWidth")(contentWidth)
-    if (!js.isUndefined(fixSiderbar)) __obj.updateDynamic("fixSiderbar")(fixSiderbar)
-    if (!js.isUndefined(fixedHeader)) __obj.updateDynamic("fixedHeader")(fixedHeader)
-    if (iconfontUrl != null) __obj.updateDynamic("iconfontUrl")(iconfontUrl)
-    if (!js.isUndefined(isChildrenLayout)) __obj.updateDynamic("isChildrenLayout")(isChildrenLayout)
-    if (!js.isUndefined(isMobile)) __obj.updateDynamic("isMobile")(isMobile)
+    if (!js.isUndefined(autoHideHeader)) __obj.updateDynamic("autoHideHeader")(autoHideHeader.asInstanceOf[js.Any])
+    if (breadcrumb != null) __obj.updateDynamic("breadcrumb")(breadcrumb.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.asInstanceOf[js.Any])
+    if (contentWidth != null) __obj.updateDynamic("contentWidth")(contentWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixSiderbar)) __obj.updateDynamic("fixSiderbar")(fixSiderbar.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixedHeader)) __obj.updateDynamic("fixedHeader")(fixedHeader.asInstanceOf[js.Any])
+    if (iconfontUrl != null) __obj.updateDynamic("iconfontUrl")(iconfontUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(isChildrenLayout)) __obj.updateDynamic("isChildrenLayout")(isChildrenLayout.asInstanceOf[js.Any])
+    if (!js.isUndefined(isMobile)) __obj.updateDynamic("isMobile")(isMobile.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (menu != null) __obj.updateDynamic("menu")(menu)
-    if (menuData != null) __obj.updateDynamic("menuData")(menuData)
-    if (navTheme != null) __obj.updateDynamic("navTheme")(navTheme)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (menu != null) __obj.updateDynamic("menu")(menu.asInstanceOf[js.Any])
+    if (menuData != null) __obj.updateDynamic("menuData")(menuData.asInstanceOf[js.Any])
+    if (navTheme != null) __obj.updateDynamic("navTheme")(navTheme.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteContextType]
   }
 }

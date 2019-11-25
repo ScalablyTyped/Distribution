@@ -37,10 +37,10 @@ object MapImageLayerCreateExportImageParametersOptions {
     rotation: Int | Double = null,
     timeExtent: js.Any = null
   ): MapImageLayerCreateExportImageParametersOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (pixelRatio != null) __obj.updateDynamic("pixelRatio")(pixelRatio.asInstanceOf[js.Any])
     if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
-    if (timeExtent != null) __obj.updateDynamic("timeExtent")(timeExtent)
+    if (timeExtent != null) __obj.updateDynamic("timeExtent")(timeExtent.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapImageLayerCreateExportImageParametersOptions]
   }
 }

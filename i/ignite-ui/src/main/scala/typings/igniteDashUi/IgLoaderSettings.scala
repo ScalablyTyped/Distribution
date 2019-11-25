@@ -31,15 +31,15 @@ object IgLoaderSettings {
     resources: String = null,
     theme: String = null
   ): IgLoaderSettings = {
-    val __obj = js.Dynamic.literal(cssPath = cssPath, scriptPath = scriptPath)
-    if (!js.isUndefined(autoDetectLocale)) __obj.updateDynamic("autoDetectLocale")(autoDetectLocale)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (localePath != null) __obj.updateDynamic("localePath")(localePath)
-    if (preinit != null) __obj.updateDynamic("preinit")(preinit)
-    if (ready != null) __obj.updateDynamic("ready")(ready)
-    if (regional != null) __obj.updateDynamic("regional")(regional)
-    if (resources != null) __obj.updateDynamic("resources")(resources)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    val __obj = js.Dynamic.literal(cssPath = cssPath.asInstanceOf[js.Any], scriptPath = scriptPath.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoDetectLocale)) __obj.updateDynamic("autoDetectLocale")(autoDetectLocale.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
+    if (localePath != null) __obj.updateDynamic("localePath")(localePath.asInstanceOf[js.Any])
+    if (preinit != null) __obj.updateDynamic("preinit")(preinit.asInstanceOf[js.Any])
+    if (ready != null) __obj.updateDynamic("ready")(ready.asInstanceOf[js.Any])
+    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
+    if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgLoaderSettings]
   }
 }

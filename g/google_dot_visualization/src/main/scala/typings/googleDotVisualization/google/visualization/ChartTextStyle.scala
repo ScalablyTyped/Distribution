@@ -26,12 +26,12 @@ object ChartTextStyle {
     opacity: Int | Double = null
   ): ChartTextStyle = {
     val __obj = js.Dynamic.literal()
-    if (auraColor != null) __obj.updateDynamic("auraColor")(auraColor)
-    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (fontName != null) __obj.updateDynamic("fontName")(fontName)
+    if (auraColor != null) __obj.updateDynamic("auraColor")(auraColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (fontName != null) __obj.updateDynamic("fontName")(fontName.asInstanceOf[js.Any])
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic)
+    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartTextStyle]
   }

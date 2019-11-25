@@ -14,7 +14,7 @@ trait Anon_CancelItemMoveTo extends js.Object {
 object Anon_CancelItemMoveTo {
   @scala.inline
   def apply(Cancel: Boolean, Item: js.Any, MoveTo: Folder): Anon_CancelItemMoveTo = {
-    val __obj = js.Dynamic.literal(Cancel = Cancel, Item = Item, MoveTo = MoveTo)
+    val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], Item = Item.asInstanceOf[js.Any], MoveTo = MoveTo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CancelItemMoveTo]
   }

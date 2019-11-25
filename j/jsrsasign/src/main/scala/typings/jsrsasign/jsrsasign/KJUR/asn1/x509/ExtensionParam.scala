@@ -13,7 +13,7 @@ trait ExtensionParam extends js.Object {
 object ExtensionParam {
   @scala.inline
   def apply(accessLocation: UriParam, accessMethod: ObjectIdentifierParam): ExtensionParam = {
-    val __obj = js.Dynamic.literal(accessLocation = accessLocation, accessMethod = accessMethod)
+    val __obj = js.Dynamic.literal(accessLocation = accessLocation.asInstanceOf[js.Any], accessMethod = accessMethod.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExtensionParam]
   }

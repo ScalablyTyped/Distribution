@@ -43,7 +43,7 @@ object INxVariableProperties {
     qPreDefinedList: js.Array[String],
     qUsePredefListedValues: Boolean
   ): INxVariableProperties = {
-    val __obj = js.Dynamic.literal(qIncludeInBookmark = qIncludeInBookmark, qName = qName, qNumberPresentation = qNumberPresentation, qPreDefinedList = qPreDefinedList, qUsePredefListedValues = qUsePredefListedValues)
+    val __obj = js.Dynamic.literal(qIncludeInBookmark = qIncludeInBookmark.asInstanceOf[js.Any], qName = qName.asInstanceOf[js.Any], qNumberPresentation = qNumberPresentation.asInstanceOf[js.Any], qPreDefinedList = qPreDefinedList.asInstanceOf[js.Any], qUsePredefListedValues = qUsePredefListedValues.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[INxVariableProperties]
   }

@@ -57,9 +57,9 @@ object CanvasPutImageDataOptions {
     y: Int | Double = null
   ): CanvasPutImageDataOptions = {
     val __obj = js.Dynamic.literal()
-    if (canvasId != null) __obj.updateDynamic("canvasId")(canvasId)
+    if (canvasId != null) __obj.updateDynamic("canvasId")(canvasId.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
-    if (data != null) __obj.updateDynamic("data")(data)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))

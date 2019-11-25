@@ -19,10 +19,10 @@ object EditorChangeLinkedList {
     origin: String = null,
     removed: js.Array[String] = null
   ): EditorChangeLinkedList = {
-    val __obj = js.Dynamic.literal(from = from, text = text, to = to)
-    if (next != null) __obj.updateDynamic("next")(next)
-    if (origin != null) __obj.updateDynamic("origin")(origin)
-    if (removed != null) __obj.updateDynamic("removed")(removed)
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
+    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
+    if (removed != null) __obj.updateDynamic("removed")(removed.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorChangeLinkedList]
   }
 }

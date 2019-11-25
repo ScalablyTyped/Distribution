@@ -14,8 +14,8 @@ trait Anon_Bucket extends js.Object {
 object Anon_Bucket {
   @scala.inline
   def apply(bucket: Anon_Arn, configurationId: String, `object`: Anon_ETag, s3SchemaVersion: String): Anon_Bucket = {
-    val __obj = js.Dynamic.literal(bucket = bucket, configurationId = configurationId, s3SchemaVersion = s3SchemaVersion)
-    __obj.updateDynamic("object")(`object`)
+    val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any], configurationId = configurationId.asInstanceOf[js.Any], s3SchemaVersion = s3SchemaVersion.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Bucket]
   }
 }

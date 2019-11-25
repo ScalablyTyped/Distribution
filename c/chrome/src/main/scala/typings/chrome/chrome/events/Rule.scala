@@ -30,10 +30,10 @@ object Rule {
     priority: Int | Double = null,
     tags: js.Array[String] = null
   ): Rule = {
-    val __obj = js.Dynamic.literal(actions = actions, conditions = conditions)
-    if (id != null) __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], conditions = conditions.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[Rule]
   }
 }

@@ -13,8 +13,8 @@ trait SelectOption extends js.Object {
 object SelectOption {
   @scala.inline
   def apply(id: String, value: js.Array[MessageFormatElement], location: Location = null): SelectOption = {
-    val __obj = js.Dynamic.literal(id = id, value = value)
-    if (location != null) __obj.updateDynamic("location")(location)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectOption]
   }
 }

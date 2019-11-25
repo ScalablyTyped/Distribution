@@ -15,8 +15,8 @@ object AccessPolicy {
   @scala.inline
   def apply(allowed: js.UndefOr[Boolean] = js.undefined, exception: js.Array[String] = null): AccessPolicy = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowed)) __obj.updateDynamic("allowed")(allowed)
-    if (exception != null) __obj.updateDynamic("exception")(exception)
+    if (!js.isUndefined(allowed)) __obj.updateDynamic("allowed")(allowed.asInstanceOf[js.Any])
+    if (exception != null) __obj.updateDynamic("exception")(exception.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessPolicy]
   }
 }

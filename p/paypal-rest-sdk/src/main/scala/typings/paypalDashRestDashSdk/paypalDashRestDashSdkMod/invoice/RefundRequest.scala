@@ -14,8 +14,8 @@ trait RefundRequest extends js.Object {
 object RefundRequest {
   @scala.inline
   def apply(amount: Currency, date: String, note: String = null): RefundRequest = {
-    val __obj = js.Dynamic.literal(amount = amount, date = date)
-    if (note != null) __obj.updateDynamic("note")(note)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any])
+    if (note != null) __obj.updateDynamic("note")(note.asInstanceOf[js.Any])
     __obj.asInstanceOf[RefundRequest]
   }
 }

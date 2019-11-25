@@ -12,7 +12,7 @@ object Anon_Header {
   @scala.inline
   def apply(header: String = null): Anon_Header = {
     val __obj = js.Dynamic.literal()
-    if (header != null) __obj.updateDynamic("header")(header)
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Header]
   }
 }

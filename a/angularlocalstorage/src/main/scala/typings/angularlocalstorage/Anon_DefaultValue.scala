@@ -13,8 +13,8 @@ object Anon_DefaultValue {
   @scala.inline
   def apply(defaultValue: js.Any = null, storeName: String = null): Anon_DefaultValue = {
     val __obj = js.Dynamic.literal()
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
-    if (storeName != null) __obj.updateDynamic("storeName")(storeName)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (storeName != null) __obj.updateDynamic("storeName")(storeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DefaultValue]
   }
 }

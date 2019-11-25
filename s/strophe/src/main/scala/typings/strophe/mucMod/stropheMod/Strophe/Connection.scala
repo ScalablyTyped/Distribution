@@ -12,7 +12,7 @@ trait Connection extends js.Object {
 object Connection {
   @scala.inline
   def apply(muc: Plugin): Connection = {
-    val __obj = js.Dynamic.literal(muc = muc)
+    val __obj = js.Dynamic.literal(muc = muc.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Connection]
   }

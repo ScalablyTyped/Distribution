@@ -24,16 +24,14 @@ object NavbarBrandProps {
     AllHTMLAttributes: AllHTMLAttributes[HTMLAnchorElement] = null,
     ClassAttributes: ClassAttributes[HTMLAnchorElement] = null,
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    className: String = null,
     cssModule: CSSModule = null,
     tag: String | ReactType[_] = null
   ): NavbarBrandProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule.asInstanceOf[js.Any])
     if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavbarBrandProps]
   }

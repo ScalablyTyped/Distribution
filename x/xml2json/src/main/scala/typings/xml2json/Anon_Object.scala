@@ -13,7 +13,7 @@ object Anon_Object {
   @scala.inline
   def apply(`object`: `true`): Anon_Object = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("object")(`object`)
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Object]
   }
 }

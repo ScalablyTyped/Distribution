@@ -12,7 +12,7 @@ object Anon_Weight {
   @scala.inline
   def apply(weight: String = null): Anon_Weight = {
     val __obj = js.Dynamic.literal()
-    if (weight != null) __obj.updateDynamic("weight")(weight)
+    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Weight]
   }
 }

@@ -39,6 +39,7 @@ import typings.vegaDashTypings.typesSpecScaleMod.ScaleType
 import typings.vegaDashTypings.typesSpecScaleMod.SortOrder
 import typings.vegaDashTypings.typesSpecScaleMod.TimeInterval
 import typings.vegaDashTypings.typesSpecSchemeMod.Categorical
+import typings.vegaDashTypings.typesSpecSchemeMod.ColorScheme
 import typings.vegaDashTypings.typesSpecSchemeMod.Cyclical
 import typings.vegaDashTypings.typesSpecSchemeMod.Diverging
 import typings.vegaDashTypings.typesSpecSchemeMod.SequentialMultiHue
@@ -67,7 +68,9 @@ import scala.scalajs.js.annotation._
 
 object vegaDashTypingsStrings {
   @js.native
-  sealed trait accent extends Categorical
+  sealed trait accent
+    extends Categorical
+       with ColorScheme
   
   @js.native
   sealed trait aggregate extends js.Object
@@ -174,7 +177,9 @@ object vegaDashTypingsStrings {
   sealed trait azure extends ColorName
   
   @js.native
-  sealed trait band extends DiscreteScaleType
+  sealed trait band
+    extends DiscreteScaleType
+       with ScaleType
   
   @js.native
   sealed trait basis extends Interpolate
@@ -192,7 +197,9 @@ object vegaDashTypingsStrings {
   sealed trait bin extends js.Object
   
   @js.native
-  sealed trait `bin-ordinal` extends DiscretizingScaleType
+  sealed trait `bin-ordinal`
+    extends DiscretizingScaleType
+       with ScaleType
   
   @js.native
   sealed trait binary extends TreemapMethod
@@ -210,85 +217,139 @@ object vegaDashTypingsStrings {
   sealed trait blue extends ColorName
   
   @js.native
-  sealed trait bluegreen extends SequentialMultiHue
+  sealed trait bluegreen
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `bluegreen-3` extends SequentialMultiHue
+  sealed trait `bluegreen-3`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `bluegreen-4` extends SequentialMultiHue
+  sealed trait `bluegreen-4`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `bluegreen-5` extends SequentialMultiHue
+  sealed trait `bluegreen-5`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `bluegreen-6` extends SequentialMultiHue
+  sealed trait `bluegreen-6`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `bluegreen-7` extends SequentialMultiHue
+  sealed trait `bluegreen-7`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `bluegreen-8` extends SequentialMultiHue
+  sealed trait `bluegreen-8`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `bluegreen-9` extends SequentialMultiHue
+  sealed trait `bluegreen-9`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait blueorange extends Diverging
+  sealed trait blueorange
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `blueorange-10` extends Diverging
+  sealed trait `blueorange-10`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `blueorange-11` extends Diverging
+  sealed trait `blueorange-11`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `blueorange-3` extends Diverging
+  sealed trait `blueorange-3`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `blueorange-4` extends Diverging
+  sealed trait `blueorange-4`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `blueorange-5` extends Diverging
+  sealed trait `blueorange-5`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `blueorange-6` extends Diverging
+  sealed trait `blueorange-6`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `blueorange-7` extends Diverging
+  sealed trait `blueorange-7`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `blueorange-8` extends Diverging
+  sealed trait `blueorange-8`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `blueorange-9` extends Diverging
+  sealed trait `blueorange-9`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait bluepurple extends SequentialMultiHue
+  sealed trait bluepurple
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `bluepurple-3` extends SequentialMultiHue
+  sealed trait `bluepurple-3`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `bluepurple-4` extends SequentialMultiHue
+  sealed trait `bluepurple-4`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `bluepurple-5` extends SequentialMultiHue
+  sealed trait `bluepurple-5`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `bluepurple-6` extends SequentialMultiHue
+  sealed trait `bluepurple-6`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `bluepurple-7` extends SequentialMultiHue
+  sealed trait `bluepurple-7`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `bluepurple-8` extends SequentialMultiHue
+  sealed trait `bluepurple-8`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `bluepurple-9` extends SequentialMultiHue
+  sealed trait `bluepurple-9`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait blues extends SequentialSingleHue
+  sealed trait blues
+    extends ColorScheme
+       with SequentialSingleHue
   
   @js.native
   sealed trait blueviolet extends ColorName
@@ -304,11 +365,12 @@ object vegaDashTypingsStrings {
   
   @js.native
   sealed trait bottom
-    extends Baseline
-       with AxisOrient
+    extends AxisOrient
+       with Baseline
        with LegendOrient
        with Orient
        with SceneTextBaseline
+       with TextBaseline
        with TitleOrient
   
   @js.native
@@ -324,34 +386,54 @@ object vegaDashTypingsStrings {
   sealed trait brown extends ColorName
   
   @js.native
-  sealed trait brownbluegreen extends Diverging
+  sealed trait brownbluegreen
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `brownbluegreen-10` extends Diverging
+  sealed trait `brownbluegreen-10`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `brownbluegreen-11` extends Diverging
+  sealed trait `brownbluegreen-11`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `brownbluegreen-3` extends Diverging
+  sealed trait `brownbluegreen-3`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `brownbluegreen-4` extends Diverging
+  sealed trait `brownbluegreen-4`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `brownbluegreen-5` extends Diverging
+  sealed trait `brownbluegreen-5`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `brownbluegreen-6` extends Diverging
+  sealed trait `brownbluegreen-6`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `brownbluegreen-7` extends Diverging
+  sealed trait `brownbluegreen-7`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `brownbluegreen-8` extends Diverging
+  sealed trait `brownbluegreen-8`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `brownbluegreen-9` extends Diverging
+  sealed trait `brownbluegreen-9`
+    extends ColorScheme
+       with Diverging
   
   @js.native
   sealed trait bundle extends Interpolate
@@ -378,16 +460,24 @@ object vegaDashTypingsStrings {
   sealed trait category extends RangeEnum
   
   @js.native
-  sealed trait category10 extends Categorical
+  sealed trait category10
+    extends Categorical
+       with ColorScheme
   
   @js.native
-  sealed trait category20 extends Categorical
+  sealed trait category20
+    extends Categorical
+       with ColorScheme
   
   @js.native
-  sealed trait category20b extends Categorical
+  sealed trait category20b
+    extends Categorical
+       with ColorScheme
   
   @js.native
-  sealed trait category20c extends Categorical
+  sealed trait category20c
+    extends Categorical
+       with ColorScheme
   
   @js.native
   sealed trait `catmull-rom` extends Interpolate
@@ -507,7 +597,9 @@ object vegaDashTypingsStrings {
   sealed trait cyan extends ColorName
   
   @js.native
-  sealed trait dark2 extends Categorical
+  sealed trait dark2
+    extends Categorical
+       with ColorScheme
   
   @js.native
   sealed trait darkblue extends ColorName
@@ -768,31 +860,49 @@ object vegaDashTypingsStrings {
   sealed trait green extends ColorName
   
   @js.native
-  sealed trait greenblue extends SequentialMultiHue
+  sealed trait greenblue
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `greenblue-3` extends SequentialMultiHue
+  sealed trait `greenblue-3`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `greenblue-4` extends SequentialMultiHue
+  sealed trait `greenblue-4`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `greenblue-5` extends SequentialMultiHue
+  sealed trait `greenblue-5`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `greenblue-6` extends SequentialMultiHue
+  sealed trait `greenblue-6`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `greenblue-7` extends SequentialMultiHue
+  sealed trait `greenblue-7`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `greenblue-8` extends SequentialMultiHue
+  sealed trait `greenblue-8`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `greenblue-9` extends SequentialMultiHue
+  sealed trait `greenblue-9`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait greens extends SequentialSingleHue
+  sealed trait greens
+    extends ColorScheme
+       with SequentialSingleHue
   
   @js.native
   sealed trait greenyellow extends ColorName
@@ -801,7 +911,9 @@ object vegaDashTypingsStrings {
   sealed trait grey extends ColorName
   
   @js.native
-  sealed trait greys extends SequentialSingleHue
+  sealed trait greys
+    extends ColorScheme
+       with SequentialSingleHue
   
   @js.native
   sealed trait group
@@ -879,7 +991,9 @@ object vegaDashTypingsStrings {
   sealed trait indigo extends ColorName
   
   @js.native
-  sealed trait inferno extends SequentialMultiHue
+  sealed trait inferno
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
   sealed trait integer extends TypeInference
@@ -1023,9 +1137,10 @@ object vegaDashTypingsStrings {
   
   @js.native
   sealed trait linear
-    extends QuantScaleType
-       with Interpolate
+    extends Interpolate
+       with QuantScaleType
        with RegressionMethod
+       with ScaleType
   
   @js.native
   sealed trait `linear-closed` extends Interpolate
@@ -1049,6 +1164,7 @@ object vegaDashTypingsStrings {
   sealed trait log
     extends QuantScaleType
        with RegressionMethod
+       with ScaleType
   
   @js.native
   sealed trait lognormal extends js.Object
@@ -1063,7 +1179,9 @@ object vegaDashTypingsStrings {
   sealed trait magenta extends ColorName
   
   @js.native
-  sealed trait magma extends SequentialMultiHue
+  sealed trait magma
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
   sealed trait mark extends js.Object
@@ -1120,6 +1238,7 @@ object vegaDashTypingsStrings {
   sealed trait middle
     extends Baseline
        with SceneTextBaseline
+       with TextBaseline
        with _TitleAnchor
   
   @js.native
@@ -1276,32 +1395,49 @@ object vegaDashTypingsStrings {
   
   @js.native
   sealed trait orangered
-    extends SequentialMultiHue
-       with ColorName
+    extends ColorName
+       with ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `orangered-3` extends SequentialMultiHue
+  sealed trait `orangered-3`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `orangered-4` extends SequentialMultiHue
+  sealed trait `orangered-4`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `orangered-5` extends SequentialMultiHue
+  sealed trait `orangered-5`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `orangered-6` extends SequentialMultiHue
+  sealed trait `orangered-6`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `orangered-7` extends SequentialMultiHue
+  sealed trait `orangered-7`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `orangered-8` extends SequentialMultiHue
+  sealed trait `orangered-8`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `orangered-9` extends SequentialMultiHue
+  sealed trait `orangered-9`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait oranges extends SequentialSingleHue
+  sealed trait oranges
+    extends ColorScheme
+       with SequentialSingleHue
   
   @js.native
   sealed trait orchid extends ColorName
@@ -1310,6 +1446,7 @@ object vegaDashTypingsStrings {
   sealed trait ordinal
     extends RangeEnum
        with DiscreteScaleType
+       with ScaleType
   
   @js.native
   sealed trait orthogonal extends LinkPathShape
@@ -1330,7 +1467,9 @@ object vegaDashTypingsStrings {
   sealed trait padding extends js.Object
   
   @js.native
-  sealed trait paired extends Categorical
+  sealed trait paired
+    extends Categorical
+       with ColorScheme
   
   @js.native
   sealed trait palegoldenrod extends ColorName
@@ -1354,10 +1493,14 @@ object vegaDashTypingsStrings {
   sealed trait partition extends js.Object
   
   @js.native
-  sealed trait pastel1 extends Categorical
+  sealed trait pastel1
+    extends Categorical
+       with ColorScheme
   
   @js.native
-  sealed trait pastel2 extends Categorical
+  sealed trait pastel2
+    extends Categorical
+       with ColorScheme
   
   @js.native
   sealed trait path extends MarkType
@@ -1381,46 +1524,70 @@ object vegaDashTypingsStrings {
   sealed trait pink extends ColorName
   
   @js.native
-  sealed trait pinkyellowgreen extends Diverging
+  sealed trait pinkyellowgreen
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `pinkyellowgreen-10` extends Diverging
+  sealed trait `pinkyellowgreen-10`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `pinkyellowgreen-11` extends Diverging
+  sealed trait `pinkyellowgreen-11`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `pinkyellowgreen-3` extends Diverging
+  sealed trait `pinkyellowgreen-3`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `pinkyellowgreen-4` extends Diverging
+  sealed trait `pinkyellowgreen-4`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `pinkyellowgreen-5` extends Diverging
+  sealed trait `pinkyellowgreen-5`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `pinkyellowgreen-6` extends Diverging
+  sealed trait `pinkyellowgreen-6`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `pinkyellowgreen-7` extends Diverging
+  sealed trait `pinkyellowgreen-7`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `pinkyellowgreen-8` extends Diverging
+  sealed trait `pinkyellowgreen-8`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `pinkyellowgreen-9` extends Diverging
+  sealed trait `pinkyellowgreen-9`
+    extends ColorScheme
+       with Diverging
   
   @js.native
   sealed trait pivot extends js.Object
   
   @js.native
-  sealed trait plasma extends SequentialMultiHue
+  sealed trait plasma
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
   sealed trait plum extends ColorName
   
   @js.native
-  sealed trait point extends DiscreteScaleType
+  sealed trait point
+    extends DiscreteScaleType
+       with ScaleType
   
   @js.native
   sealed trait pointer extends Cursor
@@ -1432,6 +1599,7 @@ object vegaDashTypingsStrings {
   sealed trait pow
     extends QuantScaleType
        with RegressionMethod
+       with ScaleType
   
   @js.native
   sealed trait powderblue extends ColorName
@@ -1452,139 +1620,229 @@ object vegaDashTypingsStrings {
   sealed trait purple extends ColorName
   
   @js.native
-  sealed trait purpleblue extends SequentialMultiHue
+  sealed trait purpleblue
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `purpleblue-3` extends SequentialMultiHue
+  sealed trait `purpleblue-3`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `purpleblue-4` extends SequentialMultiHue
+  sealed trait `purpleblue-4`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `purpleblue-5` extends SequentialMultiHue
+  sealed trait `purpleblue-5`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `purpleblue-6` extends SequentialMultiHue
+  sealed trait `purpleblue-6`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `purpleblue-7` extends SequentialMultiHue
+  sealed trait `purpleblue-7`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `purpleblue-8` extends SequentialMultiHue
+  sealed trait `purpleblue-8`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `purpleblue-9` extends SequentialMultiHue
+  sealed trait `purpleblue-9`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait purplebluegreen extends SequentialMultiHue
+  sealed trait purplebluegreen
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `purplebluegreen-3` extends SequentialMultiHue
+  sealed trait `purplebluegreen-3`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `purplebluegreen-4` extends SequentialMultiHue
+  sealed trait `purplebluegreen-4`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `purplebluegreen-5` extends SequentialMultiHue
+  sealed trait `purplebluegreen-5`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `purplebluegreen-6` extends SequentialMultiHue
+  sealed trait `purplebluegreen-6`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `purplebluegreen-7` extends SequentialMultiHue
+  sealed trait `purplebluegreen-7`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `purplebluegreen-8` extends SequentialMultiHue
+  sealed trait `purplebluegreen-8`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `purplebluegreen-9` extends SequentialMultiHue
+  sealed trait `purplebluegreen-9`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait purplegreen extends Diverging
+  sealed trait purplegreen
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `purplegreen-10` extends Diverging
+  sealed trait `purplegreen-10`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `purplegreen-11` extends Diverging
+  sealed trait `purplegreen-11`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `purplegreen-3` extends Diverging
+  sealed trait `purplegreen-3`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `purplegreen-4` extends Diverging
+  sealed trait `purplegreen-4`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `purplegreen-5` extends Diverging
+  sealed trait `purplegreen-5`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `purplegreen-6` extends Diverging
+  sealed trait `purplegreen-6`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `purplegreen-7` extends Diverging
+  sealed trait `purplegreen-7`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `purplegreen-8` extends Diverging
+  sealed trait `purplegreen-8`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `purplegreen-9` extends Diverging
+  sealed trait `purplegreen-9`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait purpleorange extends Diverging
+  sealed trait purpleorange
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `purpleorange-10` extends Diverging
+  sealed trait `purpleorange-10`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `purpleorange-11` extends Diverging
+  sealed trait `purpleorange-11`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `purpleorange-3` extends Diverging
+  sealed trait `purpleorange-3`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `purpleorange-4` extends Diverging
+  sealed trait `purpleorange-4`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `purpleorange-5` extends Diverging
+  sealed trait `purpleorange-5`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `purpleorange-6` extends Diverging
+  sealed trait `purpleorange-6`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `purpleorange-7` extends Diverging
+  sealed trait `purpleorange-7`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `purpleorange-8` extends Diverging
+  sealed trait `purpleorange-8`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `purpleorange-9` extends Diverging
+  sealed trait `purpleorange-9`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait purplered extends SequentialMultiHue
+  sealed trait purplered
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `purplered-3` extends SequentialMultiHue
+  sealed trait `purplered-3`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `purplered-4` extends SequentialMultiHue
+  sealed trait `purplered-4`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `purplered-5` extends SequentialMultiHue
+  sealed trait `purplered-5`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `purplered-6` extends SequentialMultiHue
+  sealed trait `purplered-6`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `purplered-7` extends SequentialMultiHue
+  sealed trait `purplered-7`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `purplered-8` extends SequentialMultiHue
+  sealed trait `purplered-8`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `purplered-9` extends SequentialMultiHue
+  sealed trait `purplered-9`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait purples extends SequentialSingleHue
+  sealed trait purples
+    extends ColorScheme
+       with SequentialSingleHue
   
   @js.native
   sealed trait q1 extends AggregateOp
@@ -1596,10 +1854,14 @@ object vegaDashTypingsStrings {
   sealed trait quad extends RegressionMethod
   
   @js.native
-  sealed trait quantile extends DiscretizingScaleType
+  sealed trait quantile
+    extends DiscretizingScaleType
+       with ScaleType
   
   @js.native
-  sealed trait quantize extends DiscretizingScaleType
+  sealed trait quantize
+    extends DiscretizingScaleType
+       with ScaleType
   
   @js.native
   sealed trait quarter extends TimeUnit
@@ -1611,7 +1873,9 @@ object vegaDashTypingsStrings {
   sealed trait radio extends js.Object
   
   @js.native
-  sealed trait rainbow extends Cyclical
+  sealed trait rainbow
+    extends ColorScheme
+       with Cyclical
   
   @js.native
   sealed trait ramp extends RangeEnum
@@ -1635,151 +1899,249 @@ object vegaDashTypingsStrings {
   sealed trait red extends ColorName
   
   @js.native
-  sealed trait redblue extends Diverging
+  sealed trait redblue
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `redblue-10` extends Diverging
+  sealed trait `redblue-10`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `redblue-11` extends Diverging
+  sealed trait `redblue-11`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `redblue-3` extends Diverging
+  sealed trait `redblue-3`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `redblue-4` extends Diverging
+  sealed trait `redblue-4`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `redblue-5` extends Diverging
+  sealed trait `redblue-5`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `redblue-6` extends Diverging
+  sealed trait `redblue-6`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `redblue-7` extends Diverging
+  sealed trait `redblue-7`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `redblue-8` extends Diverging
+  sealed trait `redblue-8`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `redblue-9` extends Diverging
+  sealed trait `redblue-9`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait redgrey extends Diverging
+  sealed trait redgrey
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `redgrey-10` extends Diverging
+  sealed trait `redgrey-10`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `redgrey-11` extends Diverging
+  sealed trait `redgrey-11`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `redgrey-3` extends Diverging
+  sealed trait `redgrey-3`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `redgrey-4` extends Diverging
+  sealed trait `redgrey-4`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `redgrey-5` extends Diverging
+  sealed trait `redgrey-5`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `redgrey-6` extends Diverging
+  sealed trait `redgrey-6`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `redgrey-7` extends Diverging
+  sealed trait `redgrey-7`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `redgrey-8` extends Diverging
+  sealed trait `redgrey-8`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `redgrey-9` extends Diverging
+  sealed trait `redgrey-9`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait redpurple extends SequentialMultiHue
+  sealed trait redpurple
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `redpurple-3` extends SequentialMultiHue
+  sealed trait `redpurple-3`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `redpurple-4` extends SequentialMultiHue
+  sealed trait `redpurple-4`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `redpurple-5` extends SequentialMultiHue
+  sealed trait `redpurple-5`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `redpurple-6` extends SequentialMultiHue
+  sealed trait `redpurple-6`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `redpurple-7` extends SequentialMultiHue
+  sealed trait `redpurple-7`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `redpurple-8` extends SequentialMultiHue
+  sealed trait `redpurple-8`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `redpurple-9` extends SequentialMultiHue
+  sealed trait `redpurple-9`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait reds extends SequentialSingleHue
+  sealed trait reds
+    extends ColorScheme
+       with SequentialSingleHue
   
   @js.native
-  sealed trait redyellowblue extends Diverging
+  sealed trait redyellowblue
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `redyellowblue-10` extends Diverging
+  sealed trait `redyellowblue-10`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `redyellowblue-11` extends Diverging
+  sealed trait `redyellowblue-11`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `redyellowblue-3` extends Diverging
+  sealed trait `redyellowblue-3`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `redyellowblue-4` extends Diverging
+  sealed trait `redyellowblue-4`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `redyellowblue-5` extends Diverging
+  sealed trait `redyellowblue-5`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `redyellowblue-6` extends Diverging
+  sealed trait `redyellowblue-6`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `redyellowblue-7` extends Diverging
+  sealed trait `redyellowblue-7`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `redyellowblue-8` extends Diverging
+  sealed trait `redyellowblue-8`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `redyellowblue-9` extends Diverging
+  sealed trait `redyellowblue-9`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait redyellowgreen extends Diverging
+  sealed trait redyellowgreen
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `redyellowgreen-10` extends Diverging
+  sealed trait `redyellowgreen-10`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `redyellowgreen-11` extends Diverging
+  sealed trait `redyellowgreen-11`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `redyellowgreen-3` extends Diverging
+  sealed trait `redyellowgreen-3`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `redyellowgreen-4` extends Diverging
+  sealed trait `redyellowgreen-4`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `redyellowgreen-5` extends Diverging
+  sealed trait `redyellowgreen-5`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `redyellowgreen-6` extends Diverging
+  sealed trait `redyellowgreen-6`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `redyellowgreen-7` extends Diverging
+  sealed trait `redyellowgreen-7`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `redyellowgreen-8` extends Diverging
+  sealed trait `redyellowgreen-8`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `redyellowgreen-9` extends Diverging
+  sealed trait `redyellowgreen-9`
+    extends ColorScheme
+       with Diverging
   
   @js.native
   sealed trait regression extends js.Object
@@ -1863,16 +2225,24 @@ object vegaDashTypingsStrings {
   sealed trait sequence extends js.Object
   
   @js.native
-  sealed trait sequential extends QuantScaleType
+  sealed trait sequential
+    extends QuantScaleType
+       with ScaleType
   
   @js.native
-  sealed trait set1 extends Categorical
+  sealed trait set1
+    extends Categorical
+       with ColorScheme
   
   @js.native
-  sealed trait set2 extends Categorical
+  sealed trait set2
+    extends Categorical
+       with ColorScheme
   
   @js.native
-  sealed trait set3 extends Categorical
+  sealed trait set3
+    extends Categorical
+       with ColorScheme
   
   @js.native
   sealed trait shape extends MarkType
@@ -1887,7 +2257,9 @@ object vegaDashTypingsStrings {
   sealed trait silver extends ColorName
   
   @js.native
-  sealed trait sinebow extends Cyclical
+  sealed trait sinebow
+    extends ColorScheme
+       with Cyclical
   
   @js.native
   sealed trait skyblue extends ColorName
@@ -1911,40 +2283,62 @@ object vegaDashTypingsStrings {
   sealed trait snow extends ColorName
   
   @js.native
-  sealed trait spectral extends Diverging
+  sealed trait spectral
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `spectral-10` extends Diverging
+  sealed trait `spectral-10`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `spectral-11` extends Diverging
+  sealed trait `spectral-11`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `spectral-3` extends Diverging
+  sealed trait `spectral-3`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `spectral-4` extends Diverging
+  sealed trait `spectral-4`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `spectral-5` extends Diverging
+  sealed trait `spectral-5`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `spectral-6` extends Diverging
+  sealed trait `spectral-6`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `spectral-7` extends Diverging
+  sealed trait `spectral-7`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `spectral-8` extends Diverging
+  sealed trait `spectral-8`
+    extends ColorScheme
+       with Diverging
   
   @js.native
-  sealed trait `spectral-9` extends Diverging
+  sealed trait `spectral-9`
+    extends ColorScheme
+       with Diverging
   
   @js.native
   sealed trait springgreen extends ColorName
   
   @js.native
-  sealed trait sqrt extends QuantScaleType
+  sealed trait sqrt
+    extends QuantScaleType
+       with ScaleType
   
   @js.native
   sealed trait square extends _SymbolShape
@@ -2009,13 +2403,19 @@ object vegaDashTypingsStrings {
        with MarkType
   
   @js.native
-  sealed trait symlog extends QuantScaleType
+  sealed trait symlog
+    extends QuantScaleType
+       with ScaleType
   
   @js.native
-  sealed trait tableau10 extends Categorical
+  sealed trait tableau10
+    extends Categorical
+       with ColorScheme
   
   @js.native
-  sealed trait tableau20 extends Categorical
+  sealed trait tableau20
+    extends Categorical
+       with ColorScheme
   
   @js.native
   sealed trait tan extends ColorName
@@ -2032,15 +2432,18 @@ object vegaDashTypingsStrings {
   sealed trait thistle extends ColorName
   
   @js.native
-  sealed trait threshold extends DiscretizingScaleType
+  sealed trait threshold
+    extends DiscretizingScaleType
+       with ScaleType
   
   @js.native
   sealed trait tidy extends TreeMethod
   
   @js.native
   sealed trait time
-    extends QuantScaleType
-       with FormatType
+    extends FormatType
+       with QuantScaleType
+       with ScaleType
   
   @js.native
   sealed trait timer extends EventType
@@ -2053,11 +2456,12 @@ object vegaDashTypingsStrings {
   
   @js.native
   sealed trait top
-    extends Baseline
-       with AxisOrient
+    extends AxisOrient
+       with Baseline
        with LegendOrient
        with Orient
        with SceneTextBaseline
+       with TextBaseline
        with TitleOrient
   
   @js.native
@@ -2122,8 +2526,9 @@ object vegaDashTypingsStrings {
   
   @js.native
   sealed trait utc
-    extends QuantScaleType
-       with FormatType
+    extends FormatType
+       with QuantScaleType
+       with ScaleType
        with TimeZone
   
   @js.native
@@ -2156,7 +2561,9 @@ object vegaDashTypingsStrings {
   sealed trait violet extends ColorName
   
   @js.native
-  sealed trait viridis extends SequentialMultiHue
+  sealed trait viridis
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
   sealed trait voronoi extends js.Object
@@ -2212,101 +2619,164 @@ object vegaDashTypingsStrings {
   
   @js.native
   sealed trait yellowgreen
-    extends SequentialMultiHue
-       with ColorName
+    extends ColorName
+       with ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `yellowgreen-3` extends SequentialMultiHue
+  sealed trait `yellowgreen-3`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `yellowgreen-4` extends SequentialMultiHue
+  sealed trait `yellowgreen-4`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `yellowgreen-5` extends SequentialMultiHue
+  sealed trait `yellowgreen-5`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `yellowgreen-6` extends SequentialMultiHue
+  sealed trait `yellowgreen-6`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `yellowgreen-7` extends SequentialMultiHue
+  sealed trait `yellowgreen-7`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `yellowgreen-8` extends SequentialMultiHue
+  sealed trait `yellowgreen-8`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `yellowgreen-9` extends SequentialMultiHue
+  sealed trait `yellowgreen-9`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait yellowgreenblue extends SequentialMultiHue
+  sealed trait yellowgreenblue
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `yellowgreenblue-3` extends SequentialMultiHue
+  sealed trait `yellowgreenblue-3`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `yellowgreenblue-4` extends SequentialMultiHue
+  sealed trait `yellowgreenblue-4`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `yellowgreenblue-5` extends SequentialMultiHue
+  sealed trait `yellowgreenblue-5`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `yellowgreenblue-6` extends SequentialMultiHue
+  sealed trait `yellowgreenblue-6`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `yellowgreenblue-7` extends SequentialMultiHue
+  sealed trait `yellowgreenblue-7`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `yellowgreenblue-8` extends SequentialMultiHue
+  sealed trait `yellowgreenblue-8`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `yellowgreenblue-9` extends SequentialMultiHue
+  sealed trait `yellowgreenblue-9`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait yelloworangebrown extends SequentialMultiHue
+  sealed trait yelloworangebrown
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `yelloworangebrown-3` extends SequentialMultiHue
+  sealed trait `yelloworangebrown-3`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `yelloworangebrown-4` extends SequentialMultiHue
+  sealed trait `yelloworangebrown-4`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `yelloworangebrown-5` extends SequentialMultiHue
+  sealed trait `yelloworangebrown-5`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `yelloworangebrown-6` extends SequentialMultiHue
+  sealed trait `yelloworangebrown-6`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `yelloworangebrown-7` extends SequentialMultiHue
+  sealed trait `yelloworangebrown-7`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `yelloworangebrown-8` extends SequentialMultiHue
+  sealed trait `yelloworangebrown-8`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `yelloworangebrown-9` extends SequentialMultiHue
+  sealed trait `yelloworangebrown-9`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait yelloworangered extends SequentialMultiHue
+  sealed trait yelloworangered
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `yelloworangered-3` extends SequentialMultiHue
+  sealed trait `yelloworangered-3`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `yelloworangered-4` extends SequentialMultiHue
+  sealed trait `yelloworangered-4`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `yelloworangered-5` extends SequentialMultiHue
+  sealed trait `yelloworangered-5`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `yelloworangered-6` extends SequentialMultiHue
+  sealed trait `yelloworangered-6`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `yelloworangered-7` extends SequentialMultiHue
+  sealed trait `yelloworangered-7`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `yelloworangered-8` extends SequentialMultiHue
+  sealed trait `yelloworangered-8`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
-  sealed trait `yelloworangered-9` extends SequentialMultiHue
+  sealed trait `yelloworangered-9`
+    extends ColorScheme
+       with SequentialMultiHue
   
   @js.native
   sealed trait zero extends StackOffset

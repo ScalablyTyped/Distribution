@@ -12,7 +12,7 @@ object Anon_FocusIndex {
   @scala.inline
   def apply(focusIndex: Null = null): Anon_FocusIndex = {
     val __obj = js.Dynamic.literal()
-    if (focusIndex != null) __obj.updateDynamic("focusIndex")(focusIndex)
+    if (focusIndex != null) __obj.updateDynamic("focusIndex")(focusIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FocusIndex]
   }
 }

@@ -22,7 +22,7 @@ object ITask {
     patterns: js.Array[Pattern],
     positive: js.Array[Pattern]
   ): ITask = {
-    val __obj = js.Dynamic.literal(base = base, dynamic = dynamic, negative = negative, patterns = patterns, positive = positive)
+    val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], dynamic = dynamic.asInstanceOf[js.Any], negative = negative.asInstanceOf[js.Any], patterns = patterns.asInstanceOf[js.Any], positive = positive.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ITask]
   }

@@ -62,13 +62,13 @@ object CryptoKey {
     rotationPeriod: String = null
   ): CryptoKey = {
     val __obj = js.Dynamic.literal()
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
-    if (labels != null) __obj.updateDynamic("labels")(labels)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (nextRotationTime != null) __obj.updateDynamic("nextRotationTime")(nextRotationTime)
-    if (primary != null) __obj.updateDynamic("primary")(primary)
-    if (purpose != null) __obj.updateDynamic("purpose")(purpose)
-    if (rotationPeriod != null) __obj.updateDynamic("rotationPeriod")(rotationPeriod)
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (nextRotationTime != null) __obj.updateDynamic("nextRotationTime")(nextRotationTime.asInstanceOf[js.Any])
+    if (primary != null) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
+    if (purpose != null) __obj.updateDynamic("purpose")(purpose.asInstanceOf[js.Any])
+    if (rotationPeriod != null) __obj.updateDynamic("rotationPeriod")(rotationPeriod.asInstanceOf[js.Any])
     __obj.asInstanceOf[CryptoKey]
   }
 }

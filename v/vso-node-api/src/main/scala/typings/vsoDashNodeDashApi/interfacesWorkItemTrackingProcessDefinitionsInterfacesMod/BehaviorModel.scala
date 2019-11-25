@@ -56,8 +56,8 @@ object BehaviorModel {
     rank: Double,
     url: String
   ): BehaviorModel = {
-    val __obj = js.Dynamic.literal(color = color, description = description, id = id, inherits = inherits, name = name, overridden = overridden, rank = rank, url = url)
-    __obj.updateDynamic("abstract")(`abstract`)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], inherits = inherits.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], overridden = overridden.asInstanceOf[js.Any], rank = rank.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("abstract")(`abstract`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BehaviorModel]
   }
 }

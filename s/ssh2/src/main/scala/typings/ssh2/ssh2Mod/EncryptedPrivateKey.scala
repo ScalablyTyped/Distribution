@@ -16,7 +16,7 @@ object EncryptedPrivateKey {
   @scala.inline
   def apply(key: Buffer | String, passphrase: String = null): EncryptedPrivateKey = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-    if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase)
+    if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncryptedPrivateKey]
   }
 }

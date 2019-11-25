@@ -10,8 +10,8 @@ trait WhereBetween[TRecord, TResult] extends js.Object {
   def apply[K /* <: String */](
     columnName: K,
     range: js.Tuple2[
-      /* import warning: ImportType.apply Failed type conversion: TRecord[K] */ js.Any, 
-      /* import warning: ImportType.apply Failed type conversion: TRecord[K] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: TRecord[K] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: TRecord[K] */ js.Any
     ]
   ): QueryBuilder[TRecord, TResult] = js.native
 }

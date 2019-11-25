@@ -29,7 +29,7 @@ object Dirs {
     PictureDir: String,
     SDCardDir: String
   ): Dirs = {
-    val __obj = js.Dynamic.literal(CacheDir = CacheDir, DCIMDir = DCIMDir, DocumentDir = DocumentDir, DownloadDir = DownloadDir, MainBundleDir = MainBundleDir, MovieDir = MovieDir, MusicDir = MusicDir, PictureDir = PictureDir, SDCardDir = SDCardDir)
+    val __obj = js.Dynamic.literal(CacheDir = CacheDir.asInstanceOf[js.Any], DCIMDir = DCIMDir.asInstanceOf[js.Any], DocumentDir = DocumentDir.asInstanceOf[js.Any], DownloadDir = DownloadDir.asInstanceOf[js.Any], MainBundleDir = MainBundleDir.asInstanceOf[js.Any], MovieDir = MovieDir.asInstanceOf[js.Any], MusicDir = MusicDir.asInstanceOf[js.Any], PictureDir = PictureDir.asInstanceOf[js.Any], SDCardDir = SDCardDir.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Dirs]
   }

@@ -20,8 +20,8 @@ object IFD {
     width: Double,
     StringDictionary: /* property */ StringDictionary[TiffTag | Double | Uint8Array] = null
   ): IFD = {
-    val __obj = js.Dynamic.literal(data = data, height = height, width = width)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[IFD]
   }
 }

@@ -23,9 +23,9 @@ object Arguments {
     StringDictionary: /** All remaining options */
   /* argName */ StringDictionary[js.Any] = null
   ): Arguments = {
-    val __obj = js.Dynamic.literal($0 = $0)
-    __obj.updateDynamic("_")(`_`)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal($0 = $0.asInstanceOf[js.Any])
+    __obj.updateDynamic("_")(`_`.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Arguments]
   }
 }

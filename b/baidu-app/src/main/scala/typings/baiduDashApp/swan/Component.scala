@@ -14,7 +14,7 @@ trait Component[D, P] extends js.Object {
   /**
   		 * 组件数据，包括内部数据和属性值
   		 */
-  var data: /* import warning: ImportType.apply c Unsupported type mapping: 
+  var data: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof D & P ]: baidu-app.swan.DataValueType<D & P[key]>}
     */ typings.baiduDashApp.baiduDashAppStrings.Component with js.Any = js.native
   /**
@@ -32,7 +32,7 @@ trait Component[D, P] extends js.Object {
   /**
   		 * 组件数据，包括内部数据和属性值（与 data 一致）
   		 */
-  var properties: /* import warning: ImportType.apply c Unsupported type mapping: 
+  var properties: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof D & P ]: baidu-app.swan.DataValueType<D & P[key]>}
     */ typings.baiduDashApp.baiduDashAppStrings.Component with js.Any = js.native
   /**
@@ -55,25 +55,25 @@ trait Component[D, P] extends js.Object {
   /**
   		 * selector  使用选择器选择组件实例节点，返回匹配到的全部组件实例对象组成的数组
   		 */
-  def selectAllComponents(selector: String): js.Array[Component[_, _]] = js.native
+  def selectAllComponents(selector: String): js.Array[typings.baiduDashApp.swan.Component[_, _]] = js.native
   /**
   		 * 使用选择器选择组件实例节点
   		 * 返回匹配到的第一个组件实例对象
   		 */
-  def selectComponent(selector: String): Component[_, _] = js.native
+  def selectComponent(selector: String): typings.baiduDashApp.swan.Component[_, _] = js.native
   def setData(
-    key: /* import warning: ImportType.apply c Unsupported type mapping: 
+    key: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof D ]:? string | number | boolean | symbol | object | null | std.Array<any>}
     */ typings.baiduDashApp.baiduDashAppStrings.Component with js.Any
   ): Unit = js.native
   def setData(
-    key: /* import warning: ImportType.apply c Unsupported type mapping: 
+    key: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof D ]:? string | number | boolean | symbol | object | null | std.Array<any>}
     */ typings.baiduDashApp.baiduDashAppStrings.Component with js.Any,
     value: js.Any
   ): Unit = js.native
   def setData(
-    key: /* import warning: ImportType.apply c Unsupported type mapping: 
+    key: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof D ]:? string | number | boolean | symbol | object | null | std.Array<any>}
     */ typings.baiduDashApp.baiduDashAppStrings.Component with js.Any,
     value: js.Any,

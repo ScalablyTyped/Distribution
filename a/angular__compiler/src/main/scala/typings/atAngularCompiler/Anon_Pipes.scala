@@ -14,7 +14,7 @@ trait Anon_Pipes extends js.Object {
 object Anon_Pipes {
   @scala.inline
   def apply(pipes: js.Array[CompilePipeSummary], template: js.Array[TemplateAst]): Anon_Pipes = {
-    val __obj = js.Dynamic.literal(pipes = pipes, template = template)
+    val __obj = js.Dynamic.literal(pipes = pipes.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Pipes]
   }

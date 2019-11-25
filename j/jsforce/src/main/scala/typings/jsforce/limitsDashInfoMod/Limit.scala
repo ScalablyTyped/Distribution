@@ -12,7 +12,7 @@ trait Limit extends js.Object {
 object Limit {
   @scala.inline
   def apply(Max: Double, Remaining: Double): Limit = {
-    val __obj = js.Dynamic.literal(Max = Max, Remaining = Remaining)
+    val __obj = js.Dynamic.literal(Max = Max.asInstanceOf[js.Any], Remaining = Remaining.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Limit]
   }

@@ -28,11 +28,11 @@ object Anon_Condition {
     purpose: _WebExtensionManifestChromeSettingsOverridesSearchProviderParamsPurpose = null,
     value: String = null
   ): Anon_Condition = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (condition != null) __obj.updateDynamic("condition")(condition)
-    if (pref != null) __obj.updateDynamic("pref")(pref)
-    if (purpose != null) __obj.updateDynamic("purpose")(purpose)
-    if (value != null) __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (condition != null) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
+    if (pref != null) __obj.updateDynamic("pref")(pref.asInstanceOf[js.Any])
+    if (purpose != null) __obj.updateDynamic("purpose")(purpose.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Condition]
   }
 }

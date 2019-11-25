@@ -25,11 +25,11 @@ object Metadata {
     properties: js.Object = null,
     slots: js.Object = null
   ): Metadata = {
-    val __obj = js.Dynamic.literal(jetVersion = jetVersion, name = name, version = version)
-    if (events != null) __obj.updateDynamic("events")(events)
-    if (methods != null) __obj.updateDynamic("methods")(methods)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (slots != null) __obj.updateDynamic("slots")(slots)
+    val __obj = js.Dynamic.literal(jetVersion = jetVersion.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
+    if (methods != null) __obj.updateDynamic("methods")(methods.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (slots != null) __obj.updateDynamic("slots")(slots.asInstanceOf[js.Any])
     __obj.asInstanceOf[Metadata]
   }
 }

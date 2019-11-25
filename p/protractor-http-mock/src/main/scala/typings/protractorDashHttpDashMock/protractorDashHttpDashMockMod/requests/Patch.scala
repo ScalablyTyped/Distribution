@@ -17,7 +17,7 @@ trait Patch[TResponse] extends js.Object {
 object Patch {
   @scala.inline
   def apply[TResponse](request: Anon_MethodPATCH, response: Anon_Data[TResponse]): Patch[TResponse] = {
-    val __obj = js.Dynamic.literal(request = request, response = response)
+    val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Patch[TResponse]]
   }

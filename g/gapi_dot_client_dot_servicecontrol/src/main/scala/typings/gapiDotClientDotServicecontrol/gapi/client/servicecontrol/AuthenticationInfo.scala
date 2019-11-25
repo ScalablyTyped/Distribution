@@ -35,9 +35,9 @@ object AuthenticationInfo {
     thirdPartyPrincipal: Record[String, _] = null
   ): AuthenticationInfo = {
     val __obj = js.Dynamic.literal()
-    if (authoritySelector != null) __obj.updateDynamic("authoritySelector")(authoritySelector)
-    if (principalEmail != null) __obj.updateDynamic("principalEmail")(principalEmail)
-    if (thirdPartyPrincipal != null) __obj.updateDynamic("thirdPartyPrincipal")(thirdPartyPrincipal)
+    if (authoritySelector != null) __obj.updateDynamic("authoritySelector")(authoritySelector.asInstanceOf[js.Any])
+    if (principalEmail != null) __obj.updateDynamic("principalEmail")(principalEmail.asInstanceOf[js.Any])
+    if (thirdPartyPrincipal != null) __obj.updateDynamic("thirdPartyPrincipal")(thirdPartyPrincipal.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthenticationInfo]
   }
 }

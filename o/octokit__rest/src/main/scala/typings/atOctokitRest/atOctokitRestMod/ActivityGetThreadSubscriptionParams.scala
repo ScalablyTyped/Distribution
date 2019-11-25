@@ -11,7 +11,7 @@ trait ActivityGetThreadSubscriptionParams extends js.Object {
 object ActivityGetThreadSubscriptionParams {
   @scala.inline
   def apply(thread_id: Double): ActivityGetThreadSubscriptionParams = {
-    val __obj = js.Dynamic.literal(thread_id = thread_id)
+    val __obj = js.Dynamic.literal(thread_id = thread_id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ActivityGetThreadSubscriptionParams]
   }

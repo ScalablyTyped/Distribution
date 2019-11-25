@@ -13,7 +13,7 @@ trait DescriptorOptions extends js.Object {
 object DescriptorOptions {
   @scala.inline
   def apply(uuid: String, value: Buffer | String = null): DescriptorOptions = {
-    val __obj = js.Dynamic.literal(uuid = uuid)
+    val __obj = js.Dynamic.literal(uuid = uuid.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescriptorOptions]
   }

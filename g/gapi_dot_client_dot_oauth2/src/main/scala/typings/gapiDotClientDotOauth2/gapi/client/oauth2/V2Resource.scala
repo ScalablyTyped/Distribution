@@ -11,7 +11,7 @@ trait V2Resource extends js.Object {
 object V2Resource {
   @scala.inline
   def apply(me: MeResource): V2Resource = {
-    val __obj = js.Dynamic.literal(me = me)
+    val __obj = js.Dynamic.literal(me = me.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[V2Resource]
   }

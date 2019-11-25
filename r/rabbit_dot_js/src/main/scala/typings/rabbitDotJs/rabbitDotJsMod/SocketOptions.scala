@@ -24,12 +24,12 @@ object SocketOptions {
     topic: js.Any = null
   ): SocketOptions = {
     val __obj = js.Dynamic.literal()
-    if (expiration != null) __obj.updateDynamic("expiration")(expiration)
-    if (persistent != null) __obj.updateDynamic("persistent")(persistent)
-    if (prefetch != null) __obj.updateDynamic("prefetch")(prefetch)
-    if (routing != null) __obj.updateDynamic("routing")(routing)
-    if (task != null) __obj.updateDynamic("task")(task)
-    if (topic != null) __obj.updateDynamic("topic")(topic)
+    if (expiration != null) __obj.updateDynamic("expiration")(expiration.asInstanceOf[js.Any])
+    if (persistent != null) __obj.updateDynamic("persistent")(persistent.asInstanceOf[js.Any])
+    if (prefetch != null) __obj.updateDynamic("prefetch")(prefetch.asInstanceOf[js.Any])
+    if (routing != null) __obj.updateDynamic("routing")(routing.asInstanceOf[js.Any])
+    if (task != null) __obj.updateDynamic("task")(task.asInstanceOf[js.Any])
+    if (topic != null) __obj.updateDynamic("topic")(topic.asInstanceOf[js.Any])
     __obj.asInstanceOf[SocketOptions]
   }
 }

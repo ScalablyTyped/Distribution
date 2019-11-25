@@ -16,9 +16,9 @@ object AddPolygonOptions {
     fill: String = null,
     width: Int | Double = null
   ): AddPolygonOptions = {
-    val __obj = js.Dynamic.literal(coords = coords)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (fill != null) __obj.updateDynamic("fill")(fill)
+    val __obj = js.Dynamic.literal(coords = coords.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddPolygonOptions]
   }

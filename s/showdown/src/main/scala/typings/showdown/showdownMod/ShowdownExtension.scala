@@ -57,11 +57,11 @@ object ShowdownExtension {
     replace: js.Any = null
   ): ShowdownExtension = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction3(filter))
-    if (listeners != null) __obj.updateDynamic("listeners")(listeners)
+    if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     if (regex != null) __obj.updateDynamic("regex")(regex.asInstanceOf[js.Any])
-    if (replace != null) __obj.updateDynamic("replace")(replace)
+    if (replace != null) __obj.updateDynamic("replace")(replace.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShowdownExtension]
   }
 }

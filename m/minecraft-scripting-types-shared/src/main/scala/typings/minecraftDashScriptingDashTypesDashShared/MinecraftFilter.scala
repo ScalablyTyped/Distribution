@@ -41,13 +41,13 @@ object MinecraftFilter {
     value: js.Any = null
   ): MinecraftFilter = {
     val __obj = js.Dynamic.literal()
-    if (all_of != null) __obj.updateDynamic("all_of")(all_of)
-    if (any_of != null) __obj.updateDynamic("any_of")(any_of)
-    if (domain != null) __obj.updateDynamic("domain")(domain)
+    if (all_of != null) __obj.updateDynamic("all_of")(all_of.asInstanceOf[js.Any])
+    if (any_of != null) __obj.updateDynamic("any_of")(any_of.asInstanceOf[js.Any])
+    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
     if (operator != null) __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
     if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
-    if (test != null) __obj.updateDynamic("test")(test)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (test != null) __obj.updateDynamic("test")(test.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[MinecraftFilter]
   }
 }

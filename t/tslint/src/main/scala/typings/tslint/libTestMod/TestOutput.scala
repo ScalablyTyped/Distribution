@@ -27,7 +27,7 @@ object TestOutput {
     markupFromMarkup: String,
     skipped: `false`
   ): TestOutput = {
-    val __obj = js.Dynamic.literal(errorsFromLinter = errorsFromLinter, errorsFromMarkup = errorsFromMarkup, fixesFromLinter = fixesFromLinter, fixesFromMarkup = fixesFromMarkup, markupFromLinter = markupFromLinter, markupFromMarkup = markupFromMarkup, skipped = skipped)
+    val __obj = js.Dynamic.literal(errorsFromLinter = errorsFromLinter.asInstanceOf[js.Any], errorsFromMarkup = errorsFromMarkup.asInstanceOf[js.Any], fixesFromLinter = fixesFromLinter.asInstanceOf[js.Any], fixesFromMarkup = fixesFromMarkup.asInstanceOf[js.Any], markupFromLinter = markupFromLinter.asInstanceOf[js.Any], markupFromMarkup = markupFromMarkup.asInstanceOf[js.Any], skipped = skipped.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TestOutput]
   }

@@ -32,16 +32,16 @@ object IStepsProps {
     style: js.Any = null
   ): IStepsProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction)
-    if (iconPrefix != null) __obj.updateDynamic("iconPrefix")(iconPrefix)
-    if (labelPlacement != null) __obj.updateDynamic("labelPlacement")(labelPlacement)
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    if (iconPrefix != null) __obj.updateDynamic("iconPrefix")(iconPrefix.asInstanceOf[js.Any])
+    if (labelPlacement != null) __obj.updateDynamic("labelPlacement")(labelPlacement.asInstanceOf[js.Any])
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (progressDot != null) __obj.updateDynamic("progressDot")(progressDot.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStepsProps]
   }
 }

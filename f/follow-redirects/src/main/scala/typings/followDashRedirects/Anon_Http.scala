@@ -14,8 +14,8 @@ object Anon_Http {
   @scala.inline
   def apply(http: Agent = null, https: typings.node.httpsMod.Agent = null): Anon_Http = {
     val __obj = js.Dynamic.literal()
-    if (http != null) __obj.updateDynamic("http")(http)
-    if (https != null) __obj.updateDynamic("https")(https)
+    if (http != null) __obj.updateDynamic("http")(http.asInstanceOf[js.Any])
+    if (https != null) __obj.updateDynamic("https")(https.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Http]
   }
 }

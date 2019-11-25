@@ -46,8 +46,8 @@ object InstalledDetails {
     previousVersion: String = null
   ): InstalledDetails = {
     val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (previousVersion != null) __obj.updateDynamic("previousVersion")(previousVersion)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (previousVersion != null) __obj.updateDynamic("previousVersion")(previousVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstalledDetails]
   }
 }

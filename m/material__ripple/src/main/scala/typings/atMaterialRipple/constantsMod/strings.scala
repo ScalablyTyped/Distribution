@@ -32,8 +32,8 @@ object strings {
     VAR_TOP: `--mdc-ripple-top`,
     StringDictionary: StringDictionary[String] = null
   ): strings = {
-    val __obj = js.Dynamic.literal(VAR_FG_SCALE = VAR_FG_SCALE, VAR_FG_SIZE = VAR_FG_SIZE, VAR_FG_TRANSLATE_END = VAR_FG_TRANSLATE_END, VAR_FG_TRANSLATE_START = VAR_FG_TRANSLATE_START, VAR_LEFT = VAR_LEFT, VAR_TOP = VAR_TOP)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(VAR_FG_SCALE = VAR_FG_SCALE.asInstanceOf[js.Any], VAR_FG_SIZE = VAR_FG_SIZE.asInstanceOf[js.Any], VAR_FG_TRANSLATE_END = VAR_FG_TRANSLATE_END.asInstanceOf[js.Any], VAR_FG_TRANSLATE_START = VAR_FG_TRANSLATE_START.asInstanceOf[js.Any], VAR_LEFT = VAR_LEFT.asInstanceOf[js.Any], VAR_TOP = VAR_TOP.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[strings]
   }
 }

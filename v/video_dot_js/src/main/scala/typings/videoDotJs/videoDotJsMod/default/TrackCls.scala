@@ -1,6 +1,5 @@
 package typings.videoDotJs.videoDotJsMod.default
 
-import typings.videoDotJs.videoDotJsMod.videojs.Track
 import typings.videoDotJs.videoDotJsMod.videojs.TrackOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -26,7 +25,8 @@ import scala.scalajs.js.annotation._
   * @param [options.language='']
   *        A valid two character language code.
   */
-class TrackCls () extends Track {
+class TrackCls ()
+  extends typings.videoDotJs.videoDotJsMod.videojs.Track {
   def this(options: TrackOptions) = this()
 }
 

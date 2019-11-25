@@ -31,15 +31,15 @@ object PDFOptions {
     title: String = null
   ): PDFOptions = {
     val __obj = js.Dynamic.literal()
-    if (creator != null) __obj.updateDynamic("creator")(creator)
-    if (date != null) __obj.updateDynamic("date")(date)
+    if (creator != null) __obj.updateDynamic("creator")(creator.asInstanceOf[js.Any])
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
     if (imgDPI != null) __obj.updateDynamic("imgDPI")(imgDPI.asInstanceOf[js.Any])
-    if (keywords != null) __obj.updateDynamic("keywords")(keywords)
-    if (!js.isUndefined(landscape)) __obj.updateDynamic("landscape")(landscape)
-    if (margin != null) __obj.updateDynamic("margin")(margin)
-    if (paperSize != null) __obj.updateDynamic("paperSize")(paperSize)
-    if (subject != null) __obj.updateDynamic("subject")(subject)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (keywords != null) __obj.updateDynamic("keywords")(keywords.asInstanceOf[js.Any])
+    if (!js.isUndefined(landscape)) __obj.updateDynamic("landscape")(landscape.asInstanceOf[js.Any])
+    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
+    if (paperSize != null) __obj.updateDynamic("paperSize")(paperSize.asInstanceOf[js.Any])
+    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[PDFOptions]
   }
 }

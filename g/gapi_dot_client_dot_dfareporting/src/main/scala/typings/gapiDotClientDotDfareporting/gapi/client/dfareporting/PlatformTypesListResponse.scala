@@ -15,8 +15,8 @@ object PlatformTypesListResponse {
   @scala.inline
   def apply(kind: String = null, platformTypes: js.Array[PlatformType] = null): PlatformTypesListResponse = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (platformTypes != null) __obj.updateDynamic("platformTypes")(platformTypes)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (platformTypes != null) __obj.updateDynamic("platformTypes")(platformTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlatformTypesListResponse]
   }
 }

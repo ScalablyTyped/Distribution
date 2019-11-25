@@ -132,9 +132,9 @@ object IonSlides {
     if (onIonSlideTransitionStart != null) __obj.updateDynamic("onIonSlideTransitionStart")(js.Any.fromFunction1(onIonSlideTransitionStart))
     if (onIonSlideWillChange != null) __obj.updateDynamic("onIonSlideWillChange")(js.Any.fromFunction1(onIonSlideWillChange))
     if (onIonSlidesDidLoad != null) __obj.updateDynamic("onIonSlidesDidLoad")(js.Any.fromFunction1(onIonSlidesDidLoad))
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (!js.isUndefined(pager)) __obj.updateDynamic("pager")(pager)
-    if (!js.isUndefined(scrollbar)) __obj.updateDynamic("scrollbar")(scrollbar)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (!js.isUndefined(pager)) __obj.updateDynamic("pager")(pager.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollbar)) __obj.updateDynamic("scrollbar")(scrollbar.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonSlides]
   }
 }

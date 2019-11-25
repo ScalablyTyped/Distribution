@@ -57,15 +57,15 @@ object Fields {
     title: String = null
   ): Fields = {
     val __obj = js.Dynamic.literal()
-    if (collapsibleCards != null) __obj.updateDynamic("collapsibleCards")(collapsibleCards)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
-    if (primaryKey != null) __obj.updateDynamic("primaryKey")(primaryKey)
-    if (priority != null) __obj.updateDynamic("priority")(priority)
-    if (swimlaneKey != null) __obj.updateDynamic("swimlaneKey")(swimlaneKey)
-    if (tag != null) __obj.updateDynamic("tag")(tag)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (collapsibleCards != null) __obj.updateDynamic("collapsibleCards")(collapsibleCards.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
+    if (primaryKey != null) __obj.updateDynamic("primaryKey")(primaryKey.asInstanceOf[js.Any])
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (swimlaneKey != null) __obj.updateDynamic("swimlaneKey")(swimlaneKey.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fields]
   }
 }

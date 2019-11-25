@@ -20,10 +20,10 @@ object UrlStorageOptions {
     file: (/* req */ Request, /* file */ File) => _ = null,
     options: js.Any = null
   ): UrlStorageOptions = {
-    val __obj = js.Dynamic.literal(url = url)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
     if (file != null) __obj.updateDynamic("file")(js.Any.fromFunction2(file))
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[UrlStorageOptions]
   }
 }

@@ -28,7 +28,7 @@ object RangeSelectorButton {
     step: second | minute | hour | day | month | year | all,
     stepmode: backward | todate
   ): RangeSelectorButton = {
-    val __obj = js.Dynamic.literal(count = count, label = label, step = step.asInstanceOf[js.Any], stepmode = stepmode.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any], stepmode = stepmode.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RangeSelectorButton]
   }

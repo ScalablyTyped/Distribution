@@ -13,8 +13,8 @@ trait IModifierValueHistory extends js.Object {
 object IModifierValueHistory {
   @scala.inline
   def apply(currentValue: Boolean, changedIn: js.Array[String] = null): IModifierValueHistory = {
-    val __obj = js.Dynamic.literal(currentValue = currentValue)
-    if (changedIn != null) __obj.updateDynamic("changedIn")(changedIn)
+    val __obj = js.Dynamic.literal(currentValue = currentValue.asInstanceOf[js.Any])
+    if (changedIn != null) __obj.updateDynamic("changedIn")(changedIn.asInstanceOf[js.Any])
     __obj.asInstanceOf[IModifierValueHistory]
   }
 }

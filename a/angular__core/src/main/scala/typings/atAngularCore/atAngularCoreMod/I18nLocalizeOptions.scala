@@ -12,7 +12,7 @@ trait I18nLocalizeOptions extends js.Object {
 object I18nLocalizeOptions {
   @scala.inline
   def apply(translations: StringDictionary[String]): I18nLocalizeOptions = {
-    val __obj = js.Dynamic.literal(translations = translations)
+    val __obj = js.Dynamic.literal(translations = translations.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[I18nLocalizeOptions]
   }

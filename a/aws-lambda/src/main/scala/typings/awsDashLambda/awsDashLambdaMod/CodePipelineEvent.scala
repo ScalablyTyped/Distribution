@@ -13,7 +13,7 @@ object CodePipelineEvent {
   @scala.inline
   def apply(`CodePipeline.job`: Anon_AccountId): CodePipelineEvent = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CodePipeline.job")(`CodePipeline.job`)
+    __obj.updateDynamic("CodePipeline.job")(`CodePipeline.job`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodePipelineEvent]
   }
 }

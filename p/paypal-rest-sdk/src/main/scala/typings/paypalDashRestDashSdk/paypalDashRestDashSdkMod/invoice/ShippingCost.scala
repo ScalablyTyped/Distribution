@@ -14,8 +14,8 @@ object ShippingCost {
   @scala.inline
   def apply(amount: Currency = null, tax: Tax = null): ShippingCost = {
     val __obj = js.Dynamic.literal()
-    if (amount != null) __obj.updateDynamic("amount")(amount)
-    if (tax != null) __obj.updateDynamic("tax")(tax)
+    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
+    if (tax != null) __obj.updateDynamic("tax")(tax.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShippingCost]
   }
 }

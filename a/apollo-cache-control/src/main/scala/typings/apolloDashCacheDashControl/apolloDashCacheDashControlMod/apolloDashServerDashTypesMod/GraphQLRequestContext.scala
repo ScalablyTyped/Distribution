@@ -14,7 +14,7 @@ object GraphQLRequestContext {
   @scala.inline
   def apply[TContext](overallCachePolicy: Required[CacheHint] = null): GraphQLRequestContext[TContext] = {
     val __obj = js.Dynamic.literal()
-    if (overallCachePolicy != null) __obj.updateDynamic("overallCachePolicy")(overallCachePolicy)
+    if (overallCachePolicy != null) __obj.updateDynamic("overallCachePolicy")(overallCachePolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLRequestContext[TContext]]
   }
 }

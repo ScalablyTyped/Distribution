@@ -12,9 +12,9 @@ trait Anon_Cb extends js.Object {
 
 object Anon_Cb {
   @scala.inline
-  def apply(get_false: (js.Any, js.Function1[/* success */ `false` | js.Object, Unit]) => Unit): Anon_Cb = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(js.Any.fromFunction2(get_false))
+  def apply(get: (js.Any, js.Function1[/* success */ `false` | js.Object, Unit]) => Unit): Anon_Cb = {
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get))
+  
     __obj.asInstanceOf[Anon_Cb]
   }
 }

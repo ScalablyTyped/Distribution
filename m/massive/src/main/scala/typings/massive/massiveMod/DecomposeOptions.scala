@@ -18,8 +18,8 @@ object DecomposeOptions {
     StringDictionary: /* foreignTable */ StringDictionary[DecomposeOptions | js.Any] = null,
     columns: js.Array[String] | AnyObject[String] = null
   ): DecomposeOptions = {
-    val __obj = js.Dynamic.literal(pk = pk)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(pk = pk.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecomposeOptions]
   }

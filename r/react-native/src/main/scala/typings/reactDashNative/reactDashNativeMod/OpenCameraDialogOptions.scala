@@ -13,7 +13,7 @@ object OpenCameraDialogOptions {
   @scala.inline
   def apply(videoMode: js.UndefOr[Boolean] = js.undefined): OpenCameraDialogOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(videoMode)) __obj.updateDynamic("videoMode")(videoMode)
+    if (!js.isUndefined(videoMode)) __obj.updateDynamic("videoMode")(videoMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenCameraDialogOptions]
   }
 }

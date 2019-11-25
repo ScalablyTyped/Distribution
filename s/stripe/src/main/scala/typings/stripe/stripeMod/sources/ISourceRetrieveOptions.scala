@@ -12,7 +12,7 @@ object ISourceRetrieveOptions {
   @scala.inline
   def apply(client_secret: String = null): ISourceRetrieveOptions = {
     val __obj = js.Dynamic.literal()
-    if (client_secret != null) __obj.updateDynamic("client_secret")(client_secret)
+    if (client_secret != null) __obj.updateDynamic("client_secret")(client_secret.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISourceRetrieveOptions]
   }
 }

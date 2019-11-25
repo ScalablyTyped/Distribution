@@ -30,11 +30,11 @@ object Property {
     formatted: String = null,
     security: SecurityValues = null
   ): Property = {
-    val __obj = js.Dynamic.literal(error = error, errorMessage = errorMessage, raw = raw)
-    __obj.updateDynamic("type")(`type`)
-    if (attribute != null) __obj.updateDynamic("attribute")(attribute)
-    if (formatted != null) __obj.updateDynamic("formatted")(formatted)
-    if (security != null) __obj.updateDynamic("security")(security)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (attribute != null) __obj.updateDynamic("attribute")(attribute.asInstanceOf[js.Any])
+    if (formatted != null) __obj.updateDynamic("formatted")(formatted.asInstanceOf[js.Any])
+    if (security != null) __obj.updateDynamic("security")(security.asInstanceOf[js.Any])
     __obj.asInstanceOf[Property]
   }
 }

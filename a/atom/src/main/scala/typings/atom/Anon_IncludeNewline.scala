@@ -12,7 +12,7 @@ object Anon_IncludeNewline {
   @scala.inline
   def apply(includeNewline: js.UndefOr[Boolean] = js.undefined): Anon_IncludeNewline = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeNewline)) __obj.updateDynamic("includeNewline")(includeNewline)
+    if (!js.isUndefined(includeNewline)) __obj.updateDynamic("includeNewline")(includeNewline.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IncludeNewline]
   }
 }

@@ -15,8 +15,8 @@ object hardforkOptions {
   @scala.inline
   def apply(onlyActive: js.UndefOr[Boolean] = js.undefined, onlySupported: js.UndefOr[Boolean] = js.undefined): hardforkOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(onlyActive)) __obj.updateDynamic("onlyActive")(onlyActive)
-    if (!js.isUndefined(onlySupported)) __obj.updateDynamic("onlySupported")(onlySupported)
+    if (!js.isUndefined(onlyActive)) __obj.updateDynamic("onlyActive")(onlyActive.asInstanceOf[js.Any])
+    if (!js.isUndefined(onlySupported)) __obj.updateDynamic("onlySupported")(onlySupported.asInstanceOf[js.Any])
     __obj.asInstanceOf[hardforkOptions]
   }
 }

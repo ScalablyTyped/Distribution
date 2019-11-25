@@ -20,7 +20,7 @@ object Anon_EMAILSIGNIN {
     RECOVER_EMAIL: Operation,
     VERIFY_EMAIL: Operation
   ): Anon_EMAILSIGNIN = {
-    val __obj = js.Dynamic.literal(EMAIL_SIGNIN = EMAIL_SIGNIN, PASSWORD_RESET = PASSWORD_RESET, RECOVER_EMAIL = RECOVER_EMAIL, VERIFY_EMAIL = VERIFY_EMAIL)
+    val __obj = js.Dynamic.literal(EMAIL_SIGNIN = EMAIL_SIGNIN.asInstanceOf[js.Any], PASSWORD_RESET = PASSWORD_RESET.asInstanceOf[js.Any], RECOVER_EMAIL = RECOVER_EMAIL.asInstanceOf[js.Any], VERIFY_EMAIL = VERIFY_EMAIL.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EMAILSIGNIN]
   }

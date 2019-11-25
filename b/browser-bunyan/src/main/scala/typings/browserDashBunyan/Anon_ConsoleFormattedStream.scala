@@ -14,7 +14,7 @@ trait Anon_ConsoleFormattedStream extends js.Object {
 object Anon_ConsoleFormattedStream {
   @scala.inline
   def apply(ConsoleFormattedStream: ConsoleFormattedStream, ConsoleRawStream: ConsoleRawStream): Anon_ConsoleFormattedStream = {
-    val __obj = js.Dynamic.literal(ConsoleFormattedStream = ConsoleFormattedStream, ConsoleRawStream = ConsoleRawStream)
+    val __obj = js.Dynamic.literal(ConsoleFormattedStream = ConsoleFormattedStream.asInstanceOf[js.Any], ConsoleRawStream = ConsoleRawStream.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ConsoleFormattedStream]
   }

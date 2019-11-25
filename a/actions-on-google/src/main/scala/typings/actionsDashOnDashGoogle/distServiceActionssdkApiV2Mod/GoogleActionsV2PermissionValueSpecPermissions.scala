@@ -13,3 +13,18 @@ import scala.scalajs.js.annotation._
 */
 trait GoogleActionsV2PermissionValueSpecPermissions extends js.Object
 
+object GoogleActionsV2PermissionValueSpecPermissions {
+  @scala.inline
+  def DEVICE_COARSE_LOCATION: typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.DEVICE_COARSE_LOCATION = this.cast("DEVICE_COARSE_LOCATION")
+  @scala.inline
+  def DEVICE_PRECISE_LOCATION: typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.DEVICE_PRECISE_LOCATION = this.cast("DEVICE_PRECISE_LOCATION")
+  @scala.inline
+  def NAME: typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.NAME = this.cast("NAME")
+  @scala.inline
+  def UNSPECIFIED_PERMISSION: typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.UNSPECIFIED_PERMISSION = this.cast("UNSPECIFIED_PERMISSION")
+  @scala.inline
+  def UPDATE: typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.UPDATE = this.cast("UPDATE")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

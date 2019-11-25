@@ -15,8 +15,8 @@ object Interest {
   @scala.inline
   def apply(metadata: FieldMetadata = null, value: String = null): Interest = {
     val __obj = js.Dynamic.literal()
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Interest]
   }
 }

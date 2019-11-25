@@ -22,7 +22,7 @@ trait GoogleApiYouTubeVideoGetRatingResponse extends js.Object {
 object GoogleApiYouTubeVideoGetRatingResponse {
   @scala.inline
   def apply(etag: String, items: js.Array[Anon_Rating], kind: String): GoogleApiYouTubeVideoGetRatingResponse = {
-    val __obj = js.Dynamic.literal(etag = etag, items = items, kind = kind)
+    val __obj = js.Dynamic.literal(etag = etag.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GoogleApiYouTubeVideoGetRatingResponse]
   }

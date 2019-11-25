@@ -11,7 +11,7 @@ trait Anon_VertexNormals extends js.Object {
 object Anon_VertexNormals {
   @scala.inline
   def apply(vertexNormals: js.Array[Double]): Anon_VertexNormals = {
-    val __obj = js.Dynamic.literal(vertexNormals = vertexNormals)
+    val __obj = js.Dynamic.literal(vertexNormals = vertexNormals.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_VertexNormals]
   }

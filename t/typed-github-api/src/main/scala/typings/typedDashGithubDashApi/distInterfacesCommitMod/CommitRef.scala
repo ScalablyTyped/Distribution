@@ -20,7 +20,7 @@ object CommitRef {
     repository: RepositoryRef,
     sha: String
   ): CommitRef = {
-    val __obj = js.Dynamic.literal(loadAsync = js.Any.fromFunction0(loadAsync), loadGitAsync = js.Any.fromFunction0(loadGitAsync), repository = repository, sha = sha)
+    val __obj = js.Dynamic.literal(loadAsync = js.Any.fromFunction0(loadAsync), loadGitAsync = js.Any.fromFunction0(loadGitAsync), repository = repository.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CommitRef]
   }

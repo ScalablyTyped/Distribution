@@ -29,7 +29,7 @@ object Anon_Bottom {
     valign: top | bottom | middle,
     width: Double
   ): Anon_Bottom = {
-    val __obj = js.Dynamic.literal(halign = halign.asInstanceOf[js.Any], height = height, rendered = rendered.asInstanceOf[js.Any], valign = valign.asInstanceOf[js.Any], width = width)
+    val __obj = js.Dynamic.literal(halign = halign.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], rendered = rendered.asInstanceOf[js.Any], valign = valign.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Bottom]
   }

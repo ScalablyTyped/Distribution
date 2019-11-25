@@ -24,11 +24,11 @@ object ValueJSON {
     selection: SelectionJSON = null
   ): ValueJSON = {
     val __obj = js.Dynamic.literal()
-    if (annotations != null) __obj.updateDynamic("annotations")(annotations)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (document != null) __obj.updateDynamic("document")(document)
-    if (`object` != null) __obj.updateDynamic("object")(`object`)
-    if (selection != null) __obj.updateDynamic("selection")(selection)
+    if (annotations != null) __obj.updateDynamic("annotations")(annotations.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (document != null) __obj.updateDynamic("document")(document.asInstanceOf[js.Any])
+    if (`object` != null) __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    if (selection != null) __obj.updateDynamic("selection")(selection.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValueJSON]
   }
 }

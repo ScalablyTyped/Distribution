@@ -3,7 +3,7 @@ package typings.chromeDashApps.chrome.system.storage
 import typings.chromeDashApps.Anon_FAILURE
 import typings.chromeDashApps.chrome.ToStringLiteral
 import typings.chromeDashApps.chromeDashAppsStrings.failure
-import typings.chromeDashApps.chromeDashAppsStrings.in_use
+import typings.chromeDashApps.chromeDashAppsStrings.in_use_
 import typings.chromeDashApps.chromeDashAppsStrings.no_such_device
 import typings.chromeDashApps.chromeDashAppsStrings.success
 import typings.std.Exclude
@@ -31,7 +31,7 @@ object ejectDevice extends js.Object {
   def apply(
     id: String,
     callback: js.Function1[
-      /* result */ ToStringLiteral[Anon_FAILURE, String, Exclude[String, success | in_use | no_such_device | failure]], 
+      /* result */ ToStringLiteral[Anon_FAILURE, String, Exclude[String, success | in_use_ | no_such_device | failure]], 
       Unit
     ]
   ): Unit = js.native

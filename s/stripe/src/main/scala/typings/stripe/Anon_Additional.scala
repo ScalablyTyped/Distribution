@@ -12,7 +12,7 @@ trait Anon_Additional extends js.Object {
 object Anon_Additional {
   @scala.inline
   def apply(additional: js.Array[String], minimum: js.Array[String]): Anon_Additional = {
-    val __obj = js.Dynamic.literal(additional = additional, minimum = minimum)
+    val __obj = js.Dynamic.literal(additional = additional.asInstanceOf[js.Any], minimum = minimum.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Additional]
   }

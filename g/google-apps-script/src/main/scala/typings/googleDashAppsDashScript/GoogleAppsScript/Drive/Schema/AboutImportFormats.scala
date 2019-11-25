@@ -13,8 +13,8 @@ object AboutImportFormats {
   @scala.inline
   def apply(source: String = null, targets: js.Array[String] = null): AboutImportFormats = {
     val __obj = js.Dynamic.literal()
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (targets != null) __obj.updateDynamic("targets")(targets)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (targets != null) __obj.updateDynamic("targets")(targets.asInstanceOf[js.Any])
     __obj.asInstanceOf[AboutImportFormats]
   }
 }

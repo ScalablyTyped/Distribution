@@ -22,8 +22,8 @@ trait _UnmarshalledRoutingRule extends _RoutingRule {
 object _UnmarshalledRoutingRule {
   @scala.inline
   def apply(Redirect: _UnmarshalledRedirect, Condition: _UnmarshalledCondition = null): _UnmarshalledRoutingRule = {
-    val __obj = js.Dynamic.literal(Redirect = Redirect)
-    if (Condition != null) __obj.updateDynamic("Condition")(Condition)
+    val __obj = js.Dynamic.literal(Redirect = Redirect.asInstanceOf[js.Any])
+    if (Condition != null) __obj.updateDynamic("Condition")(Condition.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledRoutingRule]
   }
 }

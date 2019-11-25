@@ -13,8 +13,8 @@ object DiagramEditableRotate {
   @scala.inline
   def apply(fill: DiagramEditableRotateFill = null, stroke: DiagramEditableRotateStroke = null): DiagramEditableRotate = {
     val __obj = js.Dynamic.literal()
-    if (fill != null) __obj.updateDynamic("fill")(fill)
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagramEditableRotate]
   }
 }

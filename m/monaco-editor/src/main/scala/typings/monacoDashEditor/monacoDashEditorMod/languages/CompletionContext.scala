@@ -20,8 +20,8 @@ trait CompletionContext extends js.Object {
 object CompletionContext {
   @scala.inline
   def apply(triggerKind: CompletionTriggerKind, triggerCharacter: String = null): CompletionContext = {
-    val __obj = js.Dynamic.literal(triggerKind = triggerKind)
-    if (triggerCharacter != null) __obj.updateDynamic("triggerCharacter")(triggerCharacter)
+    val __obj = js.Dynamic.literal(triggerKind = triggerKind.asInstanceOf[js.Any])
+    if (triggerCharacter != null) __obj.updateDynamic("triggerCharacter")(triggerCharacter.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompletionContext]
   }
 }

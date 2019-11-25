@@ -21,8 +21,8 @@ object AndroidRuntimeConfiguration {
   @scala.inline
   def apply(locales: js.Array[Locale] = null, orientations: js.Array[Orientation] = null): AndroidRuntimeConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (locales != null) __obj.updateDynamic("locales")(locales)
-    if (orientations != null) __obj.updateDynamic("orientations")(orientations)
+    if (locales != null) __obj.updateDynamic("locales")(locales.asInstanceOf[js.Any])
+    if (orientations != null) __obj.updateDynamic("orientations")(orientations.asInstanceOf[js.Any])
     __obj.asInstanceOf[AndroidRuntimeConfiguration]
   }
 }

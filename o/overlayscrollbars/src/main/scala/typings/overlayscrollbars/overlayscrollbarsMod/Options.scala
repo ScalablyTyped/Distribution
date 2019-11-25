@@ -43,19 +43,19 @@ object Options {
     textarea: Anon_DynHeight = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoUpdate)) __obj.updateDynamic("autoUpdate")(autoUpdate)
+    if (!js.isUndefined(autoUpdate)) __obj.updateDynamic("autoUpdate")(autoUpdate.asInstanceOf[js.Any])
     if (autoUpdateInterval != null) __obj.updateDynamic("autoUpdateInterval")(autoUpdateInterval.asInstanceOf[js.Any])
-    if (callbacks != null) __obj.updateDynamic("callbacks")(callbacks)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(clipAlways)) __obj.updateDynamic("clipAlways")(clipAlways)
-    if (nativeScrollbarsOverlaid != null) __obj.updateDynamic("nativeScrollbarsOverlaid")(nativeScrollbarsOverlaid)
-    if (!js.isUndefined(normalizeRTL)) __obj.updateDynamic("normalizeRTL")(normalizeRTL)
-    if (overflowBehavior != null) __obj.updateDynamic("overflowBehavior")(overflowBehavior)
-    if (!js.isUndefined(paddingAbsolute)) __obj.updateDynamic("paddingAbsolute")(paddingAbsolute)
-    if (resize != null) __obj.updateDynamic("resize")(resize)
-    if (scrollbars != null) __obj.updateDynamic("scrollbars")(scrollbars)
-    if (!js.isUndefined(sizeAutoCapable)) __obj.updateDynamic("sizeAutoCapable")(sizeAutoCapable)
-    if (textarea != null) __obj.updateDynamic("textarea")(textarea)
+    if (callbacks != null) __obj.updateDynamic("callbacks")(callbacks.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(clipAlways)) __obj.updateDynamic("clipAlways")(clipAlways.asInstanceOf[js.Any])
+    if (nativeScrollbarsOverlaid != null) __obj.updateDynamic("nativeScrollbarsOverlaid")(nativeScrollbarsOverlaid.asInstanceOf[js.Any])
+    if (!js.isUndefined(normalizeRTL)) __obj.updateDynamic("normalizeRTL")(normalizeRTL.asInstanceOf[js.Any])
+    if (overflowBehavior != null) __obj.updateDynamic("overflowBehavior")(overflowBehavior.asInstanceOf[js.Any])
+    if (!js.isUndefined(paddingAbsolute)) __obj.updateDynamic("paddingAbsolute")(paddingAbsolute.asInstanceOf[js.Any])
+    if (resize != null) __obj.updateDynamic("resize")(resize.asInstanceOf[js.Any])
+    if (scrollbars != null) __obj.updateDynamic("scrollbars")(scrollbars.asInstanceOf[js.Any])
+    if (!js.isUndefined(sizeAutoCapable)) __obj.updateDynamic("sizeAutoCapable")(sizeAutoCapable.asInstanceOf[js.Any])
+    if (textarea != null) __obj.updateDynamic("textarea")(textarea.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

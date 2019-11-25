@@ -13,7 +13,7 @@ object ChartData {
   @scala.inline
   def apply(sourceRange: ChartSourceRange = null): ChartData = {
     val __obj = js.Dynamic.literal()
-    if (sourceRange != null) __obj.updateDynamic("sourceRange")(sourceRange)
+    if (sourceRange != null) __obj.updateDynamic("sourceRange")(sourceRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartData]
   }
 }

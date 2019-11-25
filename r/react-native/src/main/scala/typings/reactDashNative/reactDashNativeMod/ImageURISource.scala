@@ -86,14 +86,14 @@ object ImageURISource {
     width: Int | Double = null
   ): ImageURISource = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (bundle != null) __obj.updateDynamic("bundle")(bundle)
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (bundle != null) __obj.updateDynamic("bundle")(bundle.asInstanceOf[js.Any])
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method)
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (uri != null) __obj.updateDynamic("uri")(uri)
+    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageURISource]
   }

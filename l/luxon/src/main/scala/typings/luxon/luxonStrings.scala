@@ -8,6 +8,7 @@ import typings.luxon.luxonMod.NumberUnitLength
 import typings.luxon.luxonMod.NumberingSystem
 import typings.luxon.luxonMod.StringUnitLength
 import typings.luxon.luxonMod.ToRelativeUnit
+import typings.luxon.luxonMod.UnitLength
 import typings.luxon.luxonMod.ZoneOffsetFormat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +16,9 @@ import scala.scalajs.js.annotation._
 
 object luxonStrings {
   @js.native
-  sealed trait `2-digit` extends NumberUnitLength
+  sealed trait `2-digit`
+    extends NumberUnitLength
+       with UnitLength
   
   @js.native
   sealed trait arab extends NumberingSystem
@@ -127,7 +130,9 @@ object luxonStrings {
   sealed trait limb extends NumberingSystem
   
   @js.native
-  sealed trait long extends StringUnitLength
+  sealed trait long
+    extends StringUnitLength
+       with UnitLength
   
   @js.native
   sealed trait longterm extends ConversionAccuracy
@@ -166,10 +171,13 @@ object luxonStrings {
   @js.native
   sealed trait narrow
     extends StringUnitLength
+       with UnitLength
        with ZoneOffsetFormat
   
   @js.native
-  sealed trait numeric extends NumberUnitLength
+  sealed trait numeric
+    extends NumberUnitLength
+       with UnitLength
   
   @js.native
   sealed trait orya extends NumberingSystem
@@ -199,6 +207,7 @@ object luxonStrings {
   @js.native
   sealed trait short
     extends StringUnitLength
+       with UnitLength
        with ZoneOffsetFormat
   
   @js.native

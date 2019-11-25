@@ -13,7 +13,7 @@ trait Anon_Glyph extends js.Object {
 object Anon_Glyph {
   @scala.inline
   def apply(glyph: Glyph, num: Double): Anon_Glyph = {
-    val __obj = js.Dynamic.literal(glyph = glyph, num = num)
+    val __obj = js.Dynamic.literal(glyph = glyph.asInstanceOf[js.Any], num = num.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Glyph]
   }

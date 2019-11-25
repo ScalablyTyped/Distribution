@@ -26,10 +26,10 @@ object Anon_Alpha {
     val __obj = js.Dynamic.literal()
     if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
     if (beta != null) __obj.updateDynamic("beta")(beta.asInstanceOf[js.Any])
-    if (full != null) __obj.updateDynamic("full")(full)
-    if (major != null) __obj.updateDynamic("major")(major)
-    if (minor != null) __obj.updateDynamic("minor")(minor)
-    if (patch != null) __obj.updateDynamic("patch")(patch)
+    if (full != null) __obj.updateDynamic("full")(full.asInstanceOf[js.Any])
+    if (major != null) __obj.updateDynamic("major")(major.asInstanceOf[js.Any])
+    if (minor != null) __obj.updateDynamic("minor")(minor.asInstanceOf[js.Any])
+    if (patch != null) __obj.updateDynamic("patch")(patch.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Alpha]
   }
 }

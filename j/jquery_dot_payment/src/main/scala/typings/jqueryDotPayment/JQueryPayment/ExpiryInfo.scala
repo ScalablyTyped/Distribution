@@ -12,7 +12,7 @@ trait ExpiryInfo extends js.Object {
 object ExpiryInfo {
   @scala.inline
   def apply(month: Double, year: Double): ExpiryInfo = {
-    val __obj = js.Dynamic.literal(month = month, year = year)
+    val __obj = js.Dynamic.literal(month = month.asInstanceOf[js.Any], year = year.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExpiryInfo]
   }

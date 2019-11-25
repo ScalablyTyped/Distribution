@@ -114,16 +114,16 @@ object PlusMapsMapStyles {
     zoomControls: js.UndefOr[Boolean] = js.undefined
   ): PlusMapsMapStyles = {
     val __obj = js.Dynamic.literal()
-    if (center != null) __obj.updateDynamic("center")(center)
-    if (height != null) __obj.updateDynamic("height")(height)
-    if (left != null) __obj.updateDynamic("left")(left)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (top != null) __obj.updateDynamic("top")(top)
-    if (!js.isUndefined(traffic)) __obj.updateDynamic("traffic")(traffic)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (width != null) __obj.updateDynamic("width")(width)
+    if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (!js.isUndefined(traffic)) __obj.updateDynamic("traffic")(traffic.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoomControls)) __obj.updateDynamic("zoomControls")(zoomControls)
+    if (!js.isUndefined(zoomControls)) __obj.updateDynamic("zoomControls")(zoomControls.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusMapsMapStyles]
   }
 }

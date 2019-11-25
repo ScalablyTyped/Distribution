@@ -19,8 +19,8 @@ object SubmitConfigSourceRequest {
   @scala.inline
   def apply(configSource: ConfigSource = null, validateOnly: js.UndefOr[Boolean] = js.undefined): SubmitConfigSourceRequest = {
     val __obj = js.Dynamic.literal()
-    if (configSource != null) __obj.updateDynamic("configSource")(configSource)
-    if (!js.isUndefined(validateOnly)) __obj.updateDynamic("validateOnly")(validateOnly)
+    if (configSource != null) __obj.updateDynamic("configSource")(configSource.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateOnly)) __obj.updateDynamic("validateOnly")(validateOnly.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubmitConfigSourceRequest]
   }
 }

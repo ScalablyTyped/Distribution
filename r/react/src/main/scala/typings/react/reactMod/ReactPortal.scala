@@ -11,8 +11,8 @@ trait ReactPortal extends ReactElement {
 object ReactPortal {
   @scala.inline
   def apply(props: js.Any, `type`: js.Any, children: ReactNode = null, key: Key = null): ReactPortal = {
-    val __obj = js.Dynamic.literal(props = props)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactPortal]

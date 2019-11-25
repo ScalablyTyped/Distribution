@@ -11,7 +11,7 @@ trait ICollapseProvider extends js.Object {
 object ICollapseProvider {
   @scala.inline
   def apply(defaults: ICollapseOptions): ICollapseProvider = {
-    val __obj = js.Dynamic.literal(defaults = defaults)
+    val __obj = js.Dynamic.literal(defaults = defaults.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ICollapseProvider]
   }

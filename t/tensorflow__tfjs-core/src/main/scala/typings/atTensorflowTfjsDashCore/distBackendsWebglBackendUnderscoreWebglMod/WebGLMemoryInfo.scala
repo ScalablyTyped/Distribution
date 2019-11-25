@@ -21,7 +21,7 @@ object WebGLMemoryInfo {
     reasons: js.Array[String],
     unreliable: Boolean
   ): WebGLMemoryInfo = {
-    val __obj = js.Dynamic.literal(numBytes = numBytes, numBytesInGPU = numBytesInGPU, numDataBuffers = numDataBuffers, numTensors = numTensors, reasons = reasons, unreliable = unreliable)
+    val __obj = js.Dynamic.literal(numBytes = numBytes.asInstanceOf[js.Any], numBytesInGPU = numBytesInGPU.asInstanceOf[js.Any], numDataBuffers = numDataBuffers.asInstanceOf[js.Any], numTensors = numTensors.asInstanceOf[js.Any], reasons = reasons.asInstanceOf[js.Any], unreliable = unreliable.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WebGLMemoryInfo]
   }

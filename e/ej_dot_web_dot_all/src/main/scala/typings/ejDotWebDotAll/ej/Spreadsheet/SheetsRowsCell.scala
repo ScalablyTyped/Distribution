@@ -46,13 +46,13 @@ object SheetsRowsCell {
     value: String = null
   ): SheetsRowsCell = {
     val __obj = js.Dynamic.literal()
-    if (comment != null) __obj.updateDynamic("comment")(comment)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (hyperlink != null) __obj.updateDynamic("hyperlink")(hyperlink)
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (hyperlink != null) __obj.updateDynamic("hyperlink")(hyperlink.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(isLocked)) __obj.updateDynamic("isLocked")(isLocked)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (!js.isUndefined(isLocked)) __obj.updateDynamic("isLocked")(isLocked.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SheetsRowsCell]
   }
 }

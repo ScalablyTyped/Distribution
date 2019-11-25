@@ -47,13 +47,13 @@ object Location {
     relationships: js.Array[LocationRelationship] = null
   ): Location = {
     val __obj = js.Dynamic.literal()
-    if (annotations != null) __obj.updateDynamic("annotations")(annotations)
+    if (annotations != null) __obj.updateDynamic("annotations")(annotations.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (logicalLocations != null) __obj.updateDynamic("logicalLocations")(logicalLocations)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (physicalLocation != null) __obj.updateDynamic("physicalLocation")(physicalLocation)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (relationships != null) __obj.updateDynamic("relationships")(relationships)
+    if (logicalLocations != null) __obj.updateDynamic("logicalLocations")(logicalLocations.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (physicalLocation != null) __obj.updateDynamic("physicalLocation")(physicalLocation.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (relationships != null) __obj.updateDynamic("relationships")(relationships.asInstanceOf[js.Any])
     __obj.asInstanceOf[Location]
   }
 }

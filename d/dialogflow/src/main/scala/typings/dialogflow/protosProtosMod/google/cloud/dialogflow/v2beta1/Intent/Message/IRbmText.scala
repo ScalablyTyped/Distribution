@@ -16,8 +16,8 @@ object IRbmText {
   @scala.inline
   def apply(rbmSuggestion: js.Array[IRbmSuggestion] = null, text: String = null): IRbmText = {
     val __obj = js.Dynamic.literal()
-    if (rbmSuggestion != null) __obj.updateDynamic("rbmSuggestion")(rbmSuggestion)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (rbmSuggestion != null) __obj.updateDynamic("rbmSuggestion")(rbmSuggestion.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRbmText]
   }
 }

@@ -23,12 +23,12 @@ object Table {
     layout: String | TableLayoutFunctions = null,
     widths: js.Array[String | Double] = null
   ): Table = {
-    val __obj = js.Dynamic.literal(body = body)
-    if (!js.isUndefined(dontBreakRows)) __obj.updateDynamic("dontBreakRows")(dontBreakRows)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
+    if (!js.isUndefined(dontBreakRows)) __obj.updateDynamic("dontBreakRows")(dontBreakRows.asInstanceOf[js.Any])
     if (headerRows != null) __obj.updateDynamic("headerRows")(headerRows.asInstanceOf[js.Any])
     if (heights != null) __obj.updateDynamic("heights")(heights.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (widths != null) __obj.updateDynamic("widths")(widths)
+    if (widths != null) __obj.updateDynamic("widths")(widths.asInstanceOf[js.Any])
     __obj.asInstanceOf[Table]
   }
 }

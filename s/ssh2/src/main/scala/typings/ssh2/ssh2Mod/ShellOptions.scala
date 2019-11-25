@@ -16,7 +16,7 @@ object ShellOptions {
   @scala.inline
   def apply(env: ProcessEnv = null, x11: Boolean | Double | X11Options = null): ShellOptions = {
     val __obj = js.Dynamic.literal()
-    if (env != null) __obj.updateDynamic("env")(env)
+    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
     if (x11 != null) __obj.updateDynamic("x11")(x11.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShellOptions]
   }

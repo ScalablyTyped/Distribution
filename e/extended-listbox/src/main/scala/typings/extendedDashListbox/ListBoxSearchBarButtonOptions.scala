@@ -17,9 +17,9 @@ object ListBoxSearchBarButtonOptions {
   @scala.inline
   def apply(icon: String = null, onClick: () => Unit = null, visible: js.UndefOr[Boolean] = js.undefined): ListBoxSearchBarButtonOptions = {
     val __obj = js.Dynamic.literal()
-    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction0(onClick))
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBoxSearchBarButtonOptions]
   }
 }

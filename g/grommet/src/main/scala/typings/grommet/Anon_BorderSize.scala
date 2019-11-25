@@ -20,9 +20,9 @@ object Anon_BorderSize {
     value: Int | Double = null
   ): Anon_BorderSize = {
     val __obj = js.Dynamic.literal()
-    if (borderSize != null) __obj.updateDynamic("borderSize")(borderSize)
-    if (edgeSize != null) __obj.updateDynamic("edgeSize")(edgeSize)
-    if (size != null) __obj.updateDynamic("size")(size)
+    if (borderSize != null) __obj.updateDynamic("borderSize")(borderSize.asInstanceOf[js.Any])
+    if (edgeSize != null) __obj.updateDynamic("edgeSize")(edgeSize.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BorderSize]
   }

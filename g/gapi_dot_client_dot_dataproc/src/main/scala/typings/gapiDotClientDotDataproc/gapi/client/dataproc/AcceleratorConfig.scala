@@ -21,7 +21,7 @@ object AcceleratorConfig {
   def apply(acceleratorCount: Int | Double = null, acceleratorTypeUri: String = null): AcceleratorConfig = {
     val __obj = js.Dynamic.literal()
     if (acceleratorCount != null) __obj.updateDynamic("acceleratorCount")(acceleratorCount.asInstanceOf[js.Any])
-    if (acceleratorTypeUri != null) __obj.updateDynamic("acceleratorTypeUri")(acceleratorTypeUri)
+    if (acceleratorTypeUri != null) __obj.updateDynamic("acceleratorTypeUri")(acceleratorTypeUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[AcceleratorConfig]
   }
 }

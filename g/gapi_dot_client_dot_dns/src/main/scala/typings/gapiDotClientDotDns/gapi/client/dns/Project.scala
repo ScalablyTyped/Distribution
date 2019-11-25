@@ -19,10 +19,10 @@ object Project {
   @scala.inline
   def apply(id: String = null, kind: String = null, number: String = null, quota: Quota = null): Project = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (number != null) __obj.updateDynamic("number")(number)
-    if (quota != null) __obj.updateDynamic("quota")(quota)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
+    if (quota != null) __obj.updateDynamic("quota")(quota.asInstanceOf[js.Any])
     __obj.asInstanceOf[Project]
   }
 }

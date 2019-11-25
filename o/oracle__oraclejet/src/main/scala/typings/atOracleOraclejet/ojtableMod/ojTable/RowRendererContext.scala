@@ -23,7 +23,7 @@ object RowRendererContext {
     parentElement: Element,
     rowContext: Anon_Datasource[K, D]
   ): RowRendererContext[K, D] = {
-    val __obj = js.Dynamic.literal(componentElement = componentElement, data = data, parentElement = parentElement, rowContext = rowContext)
+    val __obj = js.Dynamic.literal(componentElement = componentElement.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], parentElement = parentElement.asInstanceOf[js.Any], rowContext = rowContext.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RowRendererContext[K, D]]
   }

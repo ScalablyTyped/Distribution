@@ -12,7 +12,7 @@ trait RequestLike extends js.Object {
 object RequestLike {
   @scala.inline
   def apply(headers: StringDictionary[js.UndefOr[String | js.Array[String]]]): RequestLike = {
-    val __obj = js.Dynamic.literal(headers = headers)
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RequestLike]
   }

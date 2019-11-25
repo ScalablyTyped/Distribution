@@ -13,7 +13,7 @@ object Anon_Canvas {
   @scala.inline
   def apply(renderAs: canvas = null): Anon_Canvas = {
     val __obj = js.Dynamic.literal()
-    if (renderAs != null) __obj.updateDynamic("renderAs")(renderAs)
+    if (renderAs != null) __obj.updateDynamic("renderAs")(renderAs.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Canvas]
   }
 }

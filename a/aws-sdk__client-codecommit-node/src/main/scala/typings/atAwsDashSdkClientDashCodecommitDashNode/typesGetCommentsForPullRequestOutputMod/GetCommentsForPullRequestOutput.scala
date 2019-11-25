@@ -30,9 +30,9 @@ object GetCommentsForPullRequestOutput {
     commentsForPullRequestData: js.Array[_UnmarshalledCommentsForPullRequest] = null,
     nextToken: String = null
   ): GetCommentsForPullRequestOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (commentsForPullRequestData != null) __obj.updateDynamic("commentsForPullRequestData")(commentsForPullRequestData)
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (commentsForPullRequestData != null) __obj.updateDynamic("commentsForPullRequestData")(commentsForPullRequestData.asInstanceOf[js.Any])
+    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCommentsForPullRequestOutput]
   }
 }

@@ -21,7 +21,7 @@ object Anon_ClassName {
     ref: Ref[_] = null,
     startAdornment: ReactNode = null
   ): Anon_ClassName = {
-    val __obj = js.Dynamic.literal(className = className)
+    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any])
     if (endAdornment != null) __obj.updateDynamic("endAdornment")(endAdornment.asInstanceOf[js.Any])
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (startAdornment != null) __obj.updateDynamic("startAdornment")(startAdornment.asInstanceOf[js.Any])

@@ -33,10 +33,10 @@ object SurveyCost {
     nanos: String = null
   ): SurveyCost = {
     val __obj = js.Dynamic.literal()
-    if (costPerResponseNanos != null) __obj.updateDynamic("costPerResponseNanos")(costPerResponseNanos)
-    if (currencyCode != null) __obj.updateDynamic("currencyCode")(currencyCode)
-    if (maxCostPerResponseNanos != null) __obj.updateDynamic("maxCostPerResponseNanos")(maxCostPerResponseNanos)
-    if (nanos != null) __obj.updateDynamic("nanos")(nanos)
+    if (costPerResponseNanos != null) __obj.updateDynamic("costPerResponseNanos")(costPerResponseNanos.asInstanceOf[js.Any])
+    if (currencyCode != null) __obj.updateDynamic("currencyCode")(currencyCode.asInstanceOf[js.Any])
+    if (maxCostPerResponseNanos != null) __obj.updateDynamic("maxCostPerResponseNanos")(maxCostPerResponseNanos.asInstanceOf[js.Any])
+    if (nanos != null) __obj.updateDynamic("nanos")(nanos.asInstanceOf[js.Any])
     __obj.asInstanceOf[SurveyCost]
   }
 }

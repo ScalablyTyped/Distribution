@@ -26,11 +26,11 @@ object Anon_CommentsFlags {
     regex: Anon_Flags = null,
     value: RegExp = null
   ): Anon_CommentsFlags = {
-    val __obj = js.Dynamic.literal(flags = flags, pattern = pattern)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (regex != null) __obj.updateDynamic("regex")(regex)
-    if (value != null) __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (regex != null) __obj.updateDynamic("regex")(regex.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CommentsFlags]
   }
 }

@@ -22,7 +22,7 @@ object GroundOverlayOptions {
     val __obj = js.Dynamic.literal()
     if (displayOnMaxLevel != null) __obj.updateDynamic("displayOnMaxLevel")(displayOnMaxLevel.asInstanceOf[js.Any])
     if (displayOnMinLevel != null) __obj.updateDynamic("displayOnMinLevel")(displayOnMinLevel.asInstanceOf[js.Any])
-    if (imageURL != null) __obj.updateDynamic("imageURL")(imageURL)
+    if (imageURL != null) __obj.updateDynamic("imageURL")(imageURL.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroundOverlayOptions]
   }

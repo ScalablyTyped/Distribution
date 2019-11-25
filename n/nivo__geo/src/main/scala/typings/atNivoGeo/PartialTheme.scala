@@ -34,14 +34,14 @@ object PartialTheme {
     tooltip: PartialcontainerPartialCSSPropertiesbasicPartialCS = null
   ): PartialTheme = {
     val __obj = js.Dynamic.literal()
-    if (axis != null) __obj.updateDynamic("axis")(axis)
-    if (background != null) __obj.updateDynamic("background")(background)
-    if (dots != null) __obj.updateDynamic("dots")(dots)
-    if (grid != null) __obj.updateDynamic("grid")(grid)
-    if (labels != null) __obj.updateDynamic("labels")(labels)
-    if (legends != null) __obj.updateDynamic("legends")(legends)
-    if (markers != null) __obj.updateDynamic("markers")(markers)
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    if (dots != null) __obj.updateDynamic("dots")(dots.asInstanceOf[js.Any])
+    if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (legends != null) __obj.updateDynamic("legends")(legends.asInstanceOf[js.Any])
+    if (markers != null) __obj.updateDynamic("markers")(markers.asInstanceOf[js.Any])
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialTheme]
   }
 }

@@ -33,7 +33,7 @@ object NewsRepositoryInboxResponseRootObject {
     status: String,
     subscription: js.Any
   ): NewsRepositoryInboxResponseRootObject = {
-    val __obj = js.Dynamic.literal(ads_manager = ads_manager, aymf = aymf, business_profile_reminder = business_profile_reminder, continuation_token = continuation_token, counts = counts, friend_request_stories = friend_request_stories, new_stories = new_stories, old_stories = old_stories, partition = partition, status = status, subscription = subscription)
+    val __obj = js.Dynamic.literal(ads_manager = ads_manager.asInstanceOf[js.Any], aymf = aymf.asInstanceOf[js.Any], business_profile_reminder = business_profile_reminder.asInstanceOf[js.Any], continuation_token = continuation_token.asInstanceOf[js.Any], counts = counts.asInstanceOf[js.Any], friend_request_stories = friend_request_stories.asInstanceOf[js.Any], new_stories = new_stories.asInstanceOf[js.Any], old_stories = old_stories.asInstanceOf[js.Any], partition = partition.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], subscription = subscription.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NewsRepositoryInboxResponseRootObject]
   }

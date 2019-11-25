@@ -22,11 +22,11 @@ object DataToEsmOptions {
     preferConst: js.UndefOr[Boolean] = js.undefined
   ): DataToEsmOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact)
-    if (indent != null) __obj.updateDynamic("indent")(indent)
-    if (!js.isUndefined(namedExports)) __obj.updateDynamic("namedExports")(namedExports)
-    if (!js.isUndefined(objectShorthand)) __obj.updateDynamic("objectShorthand")(objectShorthand)
-    if (!js.isUndefined(preferConst)) __obj.updateDynamic("preferConst")(preferConst)
+    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
+    if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
+    if (!js.isUndefined(namedExports)) __obj.updateDynamic("namedExports")(namedExports.asInstanceOf[js.Any])
+    if (!js.isUndefined(objectShorthand)) __obj.updateDynamic("objectShorthand")(objectShorthand.asInstanceOf[js.Any])
+    if (!js.isUndefined(preferConst)) __obj.updateDynamic("preferConst")(preferConst.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataToEsmOptions]
   }
 }

@@ -12,8 +12,8 @@ trait MongooseAdaptorOptions extends js.Object {
 object MongooseAdaptorOptions {
   @scala.inline
   def apply(mongoUri: String, listAdapterClass: js.Any = null): MongooseAdaptorOptions = {
-    val __obj = js.Dynamic.literal(mongoUri = mongoUri)
-    if (listAdapterClass != null) __obj.updateDynamic("listAdapterClass")(listAdapterClass)
+    val __obj = js.Dynamic.literal(mongoUri = mongoUri.asInstanceOf[js.Any])
+    if (listAdapterClass != null) __obj.updateDynamic("listAdapterClass")(listAdapterClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[MongooseAdaptorOptions]
   }
 }

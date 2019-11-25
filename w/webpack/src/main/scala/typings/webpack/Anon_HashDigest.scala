@@ -14,9 +14,9 @@ object Anon_HashDigest {
   @scala.inline
   def apply(hashDigest: String = null, hashDigestLength: Int | Double = null, hashFunction: String = null): Anon_HashDigest = {
     val __obj = js.Dynamic.literal()
-    if (hashDigest != null) __obj.updateDynamic("hashDigest")(hashDigest)
+    if (hashDigest != null) __obj.updateDynamic("hashDigest")(hashDigest.asInstanceOf[js.Any])
     if (hashDigestLength != null) __obj.updateDynamic("hashDigestLength")(hashDigestLength.asInstanceOf[js.Any])
-    if (hashFunction != null) __obj.updateDynamic("hashFunction")(hashFunction)
+    if (hashFunction != null) __obj.updateDynamic("hashFunction")(hashFunction.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_HashDigest]
   }
 }

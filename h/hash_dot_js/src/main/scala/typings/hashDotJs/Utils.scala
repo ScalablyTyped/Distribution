@@ -13,9 +13,9 @@ trait Utils extends js.Object {
 
 object Utils {
   @scala.inline
-  def apply(toArray_hex: (js.Any, hex) => js.Array[Double], toHex: js.Any => String): Utils = {
-    val __obj = js.Dynamic.literal(toHex = js.Any.fromFunction1(toHex))
-    __obj.updateDynamic("toArray")(js.Any.fromFunction2(toArray_hex))
+  def apply(toArray: (js.Any, hex) => js.Array[Double], toHex: js.Any => String): Utils = {
+    val __obj = js.Dynamic.literal(toArray = js.Any.fromFunction2(toArray), toHex = js.Any.fromFunction1(toHex))
+  
     __obj.asInstanceOf[Utils]
   }
 }

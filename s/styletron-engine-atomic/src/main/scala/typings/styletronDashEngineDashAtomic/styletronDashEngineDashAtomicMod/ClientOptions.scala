@@ -15,9 +15,9 @@ object ClientOptions {
   @scala.inline
   def apply(container: Element = null, hydrate: hydrateType = null, prefix: String = null): ClientOptions = {
     val __obj = js.Dynamic.literal()
-    if (container != null) __obj.updateDynamic("container")(container)
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (hydrate != null) __obj.updateDynamic("hydrate")(hydrate.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientOptions]
   }
 }

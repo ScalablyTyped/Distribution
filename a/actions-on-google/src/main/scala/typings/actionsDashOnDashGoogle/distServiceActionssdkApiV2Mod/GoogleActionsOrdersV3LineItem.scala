@@ -92,19 +92,19 @@ object GoogleActionsOrdersV3LineItem {
     vertical: ApiClientObjectMap[_] = null
   ): GoogleActionsOrdersV3LineItem = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (followUpActions != null) __obj.updateDynamic("followUpActions")(followUpActions)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (notes != null) __obj.updateDynamic("notes")(notes)
-    if (priceAttributes != null) __obj.updateDynamic("priceAttributes")(priceAttributes)
-    if (provider != null) __obj.updateDynamic("provider")(provider)
-    if (purchase != null) __obj.updateDynamic("purchase")(purchase)
-    if (recipients != null) __obj.updateDynamic("recipients")(recipients)
-    if (reservation != null) __obj.updateDynamic("reservation")(reservation)
-    if (userVisibleStateLabel != null) __obj.updateDynamic("userVisibleStateLabel")(userVisibleStateLabel)
-    if (vertical != null) __obj.updateDynamic("vertical")(vertical)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (followUpActions != null) __obj.updateDynamic("followUpActions")(followUpActions.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
+    if (priceAttributes != null) __obj.updateDynamic("priceAttributes")(priceAttributes.asInstanceOf[js.Any])
+    if (provider != null) __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
+    if (purchase != null) __obj.updateDynamic("purchase")(purchase.asInstanceOf[js.Any])
+    if (recipients != null) __obj.updateDynamic("recipients")(recipients.asInstanceOf[js.Any])
+    if (reservation != null) __obj.updateDynamic("reservation")(reservation.asInstanceOf[js.Any])
+    if (userVisibleStateLabel != null) __obj.updateDynamic("userVisibleStateLabel")(userVisibleStateLabel.asInstanceOf[js.Any])
+    if (vertical != null) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsOrdersV3LineItem]
   }
 }

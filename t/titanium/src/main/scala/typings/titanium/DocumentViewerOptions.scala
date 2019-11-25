@@ -23,8 +23,8 @@ object DocumentViewerOptions {
   @scala.inline
   def apply(animated: js.UndefOr[Boolean] = js.undefined, view: View = null): DocumentViewerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
-    if (view != null) __obj.updateDynamic("view")(view)
+    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentViewerOptions]
   }
 }

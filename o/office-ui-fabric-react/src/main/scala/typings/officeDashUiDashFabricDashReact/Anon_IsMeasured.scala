@@ -11,7 +11,7 @@ trait Anon_IsMeasured extends js.Object {
 object Anon_IsMeasured {
   @scala.inline
   def apply(isMeasured: Boolean): Anon_IsMeasured = {
-    val __obj = js.Dynamic.literal(isMeasured = isMeasured)
+    val __obj = js.Dynamic.literal(isMeasured = isMeasured.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IsMeasured]
   }

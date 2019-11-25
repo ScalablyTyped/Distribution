@@ -13,7 +13,7 @@ object ModelOptions {
   @scala.inline
   def apply(session: ClientSession = null): ModelOptions = {
     val __obj = js.Dynamic.literal()
-    if (session != null) __obj.updateDynamic("session")(session)
+    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelOptions]
   }
 }

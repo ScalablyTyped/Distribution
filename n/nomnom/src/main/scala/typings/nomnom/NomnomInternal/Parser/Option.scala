@@ -82,20 +82,20 @@ object Option {
     `type`: String = null
   ): Option = {
     val __obj = js.Dynamic.literal()
-    if (abbr != null) __obj.updateDynamic("abbr")(abbr)
+    if (abbr != null) __obj.updateDynamic("abbr")(abbr.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))
-    if (choices != null) __obj.updateDynamic("choices")(choices)
-    if (default != null) __obj.updateDynamic("default")(default)
-    if (!js.isUndefined(flag)) __obj.updateDynamic("flag")(flag)
-    if (full != null) __obj.updateDynamic("full")(full)
-    if (help != null) __obj.updateDynamic("help")(help)
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
-    if (!js.isUndefined(list)) __obj.updateDynamic("list")(list)
-    if (metavar != null) __obj.updateDynamic("metavar")(metavar)
+    if (choices != null) __obj.updateDynamic("choices")(choices.asInstanceOf[js.Any])
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (!js.isUndefined(flag)) __obj.updateDynamic("flag")(flag.asInstanceOf[js.Any])
+    if (full != null) __obj.updateDynamic("full")(full.asInstanceOf[js.Any])
+    if (help != null) __obj.updateDynamic("help")(help.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(list)) __obj.updateDynamic("list")(list.asInstanceOf[js.Any])
+    if (metavar != null) __obj.updateDynamic("metavar")(metavar.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
-    if (string != null) __obj.updateDynamic("string")(string)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
+    if (string != null) __obj.updateDynamic("string")(string.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Option]
   }
 }

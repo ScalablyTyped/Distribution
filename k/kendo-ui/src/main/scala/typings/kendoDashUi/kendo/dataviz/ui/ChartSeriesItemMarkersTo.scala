@@ -32,7 +32,7 @@ object ChartSeriesItemMarkersTo {
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (visible != null) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (visual != null) __obj.updateDynamic("visual")(visual)
+    if (visual != null) __obj.updateDynamic("visual")(visual.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartSeriesItemMarkersTo]
   }
 }

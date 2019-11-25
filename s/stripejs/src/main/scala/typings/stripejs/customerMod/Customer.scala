@@ -52,7 +52,7 @@ object Customer {
     verified_name: String,
     verified_phone: String
   ): Customer = {
-    val __obj = js.Dynamic.literal(address = address, email = email, name = name, phone = phone, verified_address = verified_address, verified_email = verified_email, verified_name = verified_name, verified_phone = verified_phone)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any], verified_address = verified_address.asInstanceOf[js.Any], verified_email = verified_email.asInstanceOf[js.Any], verified_name = verified_name.asInstanceOf[js.Any], verified_phone = verified_phone.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Customer]
   }

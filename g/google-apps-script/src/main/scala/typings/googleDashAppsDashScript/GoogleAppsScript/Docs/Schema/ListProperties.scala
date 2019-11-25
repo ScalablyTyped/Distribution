@@ -12,7 +12,7 @@ object ListProperties {
   @scala.inline
   def apply(nestingLevels: js.Array[NestingLevel] = null): ListProperties = {
     val __obj = js.Dynamic.literal()
-    if (nestingLevels != null) __obj.updateDynamic("nestingLevels")(nestingLevels)
+    if (nestingLevels != null) __obj.updateDynamic("nestingLevels")(nestingLevels.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListProperties]
   }
 }

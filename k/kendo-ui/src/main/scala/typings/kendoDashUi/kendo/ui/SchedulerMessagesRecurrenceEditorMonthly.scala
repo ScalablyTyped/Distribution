@@ -15,10 +15,10 @@ object SchedulerMessagesRecurrenceEditorMonthly {
   @scala.inline
   def apply(day: String = null, interval: String = null, repeatEvery: String = null, repeatOn: String = null): SchedulerMessagesRecurrenceEditorMonthly = {
     val __obj = js.Dynamic.literal()
-    if (day != null) __obj.updateDynamic("day")(day)
-    if (interval != null) __obj.updateDynamic("interval")(interval)
-    if (repeatEvery != null) __obj.updateDynamic("repeatEvery")(repeatEvery)
-    if (repeatOn != null) __obj.updateDynamic("repeatOn")(repeatOn)
+    if (day != null) __obj.updateDynamic("day")(day.asInstanceOf[js.Any])
+    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (repeatEvery != null) __obj.updateDynamic("repeatEvery")(repeatEvery.asInstanceOf[js.Any])
+    if (repeatOn != null) __obj.updateDynamic("repeatOn")(repeatOn.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchedulerMessagesRecurrenceEditorMonthly]
   }
 }

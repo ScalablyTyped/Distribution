@@ -15,7 +15,7 @@ trait Anon_Connect extends js.Object {
 object Anon_Connect {
   @scala.inline
   def apply(connect: Double, end: Double, lookup: Double, response: Double, socket: Double): Anon_Connect = {
-    val __obj = js.Dynamic.literal(connect = connect, end = end, lookup = lookup, response = response, socket = socket)
+    val __obj = js.Dynamic.literal(connect = connect.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], lookup = lookup.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], socket = socket.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Connect]
   }

@@ -44,7 +44,7 @@ object FieldSchema_InForm_MultiLineText {
     Type: String,
     UseMinWidth: Boolean
   ): FieldSchema_InForm_MultiLineText = {
-    val __obj = js.Dynamic.literal(AllowGridEditing = AllowGridEditing, AllowHyperlink = AllowHyperlink, AppendOnly = AppendOnly, Description = Description, Direction = Direction, FieldType = FieldType, Hidden = Hidden, IMEMode = IMEMode, Id = Id, Name = Name, NumberOfLines = NumberOfLines, ReadOnlyField = ReadOnlyField, Required = Required, RestrictedMode = RestrictedMode, RichText = RichText, RichTextMode = RichTextMode, ScriptEditorAdderId = ScriptEditorAdderId, Title = Title, Type = Type, UseMinWidth = UseMinWidth)
+    val __obj = js.Dynamic.literal(AllowGridEditing = AllowGridEditing.asInstanceOf[js.Any], AllowHyperlink = AllowHyperlink.asInstanceOf[js.Any], AppendOnly = AppendOnly.asInstanceOf[js.Any], Description = Description.asInstanceOf[js.Any], Direction = Direction.asInstanceOf[js.Any], FieldType = FieldType.asInstanceOf[js.Any], Hidden = Hidden.asInstanceOf[js.Any], IMEMode = IMEMode.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], NumberOfLines = NumberOfLines.asInstanceOf[js.Any], ReadOnlyField = ReadOnlyField.asInstanceOf[js.Any], Required = Required.asInstanceOf[js.Any], RestrictedMode = RestrictedMode.asInstanceOf[js.Any], RichText = RichText.asInstanceOf[js.Any], RichTextMode = RichTextMode.asInstanceOf[js.Any], ScriptEditorAdderId = ScriptEditorAdderId.asInstanceOf[js.Any], Title = Title.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], UseMinWidth = UseMinWidth.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FieldSchema_InForm_MultiLineText]
   }

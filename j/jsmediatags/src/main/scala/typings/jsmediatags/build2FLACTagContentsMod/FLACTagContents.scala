@@ -13,7 +13,7 @@ trait FLACTagContents extends js.Object {
 object FLACTagContents {
   @scala.inline
   def apply(blocks: js.Array[MetadataBlock], toArray: () => ByteArray): FLACTagContents = {
-    val __obj = js.Dynamic.literal(blocks = blocks, toArray = js.Any.fromFunction0(toArray))
+    val __obj = js.Dynamic.literal(blocks = blocks.asInstanceOf[js.Any], toArray = js.Any.fromFunction0(toArray))
   
     __obj.asInstanceOf[FLACTagContents]
   }

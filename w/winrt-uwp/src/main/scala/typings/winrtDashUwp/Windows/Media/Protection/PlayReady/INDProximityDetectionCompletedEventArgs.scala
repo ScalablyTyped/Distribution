@@ -13,7 +13,7 @@ trait INDProximityDetectionCompletedEventArgs extends js.Object {
 object INDProximityDetectionCompletedEventArgs {
   @scala.inline
   def apply(proximityDetectionRetryCount: Double): INDProximityDetectionCompletedEventArgs = {
-    val __obj = js.Dynamic.literal(proximityDetectionRetryCount = proximityDetectionRetryCount)
+    val __obj = js.Dynamic.literal(proximityDetectionRetryCount = proximityDetectionRetryCount.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[INDProximityDetectionCompletedEventArgs]
   }

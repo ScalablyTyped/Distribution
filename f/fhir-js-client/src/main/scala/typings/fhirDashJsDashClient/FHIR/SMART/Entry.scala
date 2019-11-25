@@ -38,10 +38,10 @@ object Entry {
     `type`: String = null,
     versionId: String = null
   ): Entry = {
-    val __obj = js.Dynamic.literal(resource = resource)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (versionId != null) __obj.updateDynamic("versionId")(versionId)
+    val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (versionId != null) __obj.updateDynamic("versionId")(versionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Entry]
   }
 }

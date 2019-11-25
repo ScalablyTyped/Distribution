@@ -22,7 +22,7 @@ object GridViewContextMenuEventArgs {
     sender: Control,
     showBrowserMenu: Boolean
   ): GridViewContextMenuEventArgs = {
-    val __obj = js.Dynamic.literal(htmlEvent = htmlEvent, index = index, menu = menu, objectType = objectType, sender = sender, showBrowserMenu = showBrowserMenu)
+    val __obj = js.Dynamic.literal(htmlEvent = htmlEvent.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], menu = menu.asInstanceOf[js.Any], objectType = objectType.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], showBrowserMenu = showBrowserMenu.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GridViewContextMenuEventArgs]
   }

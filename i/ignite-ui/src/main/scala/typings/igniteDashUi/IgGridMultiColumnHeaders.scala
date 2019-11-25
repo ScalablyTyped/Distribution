@@ -47,12 +47,12 @@ object IgGridMultiColumnHeaders {
     inherit: js.UndefOr[Boolean] = js.undefined
   ): IgGridMultiColumnHeaders = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (groupCollapsed != null) __obj.updateDynamic("groupCollapsed")(js.Any.fromFunction2(groupCollapsed))
     if (groupCollapsing != null) __obj.updateDynamic("groupCollapsing")(js.Any.fromFunction2(groupCollapsing))
     if (groupExpanded != null) __obj.updateDynamic("groupExpanded")(js.Any.fromFunction2(groupExpanded))
     if (groupExpanding != null) __obj.updateDynamic("groupExpanding")(js.Any.fromFunction2(groupExpanding))
-    if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit)
+    if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridMultiColumnHeaders]
   }
 }

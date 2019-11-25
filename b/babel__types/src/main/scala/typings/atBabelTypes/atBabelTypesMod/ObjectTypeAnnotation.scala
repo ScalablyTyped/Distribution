@@ -36,18 +36,18 @@ object ObjectTypeAnnotation {
     start: Int | Double = null,
     trailingComments: js.Array[Comment] = null
   ): ObjectTypeAnnotation = {
-    val __obj = js.Dynamic.literal(exact = exact, properties = properties)
-    __obj.updateDynamic("type")(`type`)
-    if (callProperties != null) __obj.updateDynamic("callProperties")(callProperties)
+    val __obj = js.Dynamic.literal(exact = exact.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (callProperties != null) __obj.updateDynamic("callProperties")(callProperties.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (indexers != null) __obj.updateDynamic("indexers")(indexers)
-    if (!js.isUndefined(inexact)) __obj.updateDynamic("inexact")(inexact)
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
-    if (internalSlots != null) __obj.updateDynamic("internalSlots")(internalSlots)
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (indexers != null) __obj.updateDynamic("indexers")(indexers.asInstanceOf[js.Any])
+    if (!js.isUndefined(inexact)) __obj.updateDynamic("inexact")(inexact.asInstanceOf[js.Any])
+    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
+    if (internalSlots != null) __obj.updateDynamic("internalSlots")(internalSlots.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectTypeAnnotation]
   }
 }

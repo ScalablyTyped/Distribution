@@ -38,18 +38,18 @@ object AutoCompleteEditorProps {
     valueParams: js.Array[String] = null
   ): AutoCompleteEditorProps = {
     val __obj = js.Dynamic.literal()
-    if (column != null) __obj.updateDynamic("column")(column)
+    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
     if (editorDisplayValue != null) __obj.updateDynamic("editorDisplayValue")(js.Any.fromFunction2(editorDisplayValue))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (onCommit != null) __obj.updateDynamic("onCommit")(js.Any.fromFunction0(onCommit))
     if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction0(onFocus))
     if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction0(onKeyDown))
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (resultIdentifier != null) __obj.updateDynamic("resultIdentifier")(resultIdentifier)
-    if (search != null) __obj.updateDynamic("search")(search)
-    if (value != null) __obj.updateDynamic("value")(value)
-    if (valueParams != null) __obj.updateDynamic("valueParams")(valueParams)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (resultIdentifier != null) __obj.updateDynamic("resultIdentifier")(resultIdentifier.asInstanceOf[js.Any])
+    if (search != null) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (valueParams != null) __obj.updateDynamic("valueParams")(valueParams.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoCompleteEditorProps]
   }
 }

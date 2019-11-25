@@ -47,10 +47,10 @@ object FormOpenParameters {
     navbar: NavBarDisplay = null
   ): FormOpenParameters = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (cmdbar != null) __obj.updateDynamic("cmdbar")(cmdbar)
-    if (formid != null) __obj.updateDynamic("formid")(formid)
-    if (navbar != null) __obj.updateDynamic("navbar")(navbar)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (cmdbar != null) __obj.updateDynamic("cmdbar")(cmdbar.asInstanceOf[js.Any])
+    if (formid != null) __obj.updateDynamic("formid")(formid.asInstanceOf[js.Any])
+    if (navbar != null) __obj.updateDynamic("navbar")(navbar.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormOpenParameters]
   }
 }

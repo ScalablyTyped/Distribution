@@ -34,13 +34,13 @@ object ConnectionAdvancedParameters {
     user: String = null
   ): ConnectionAdvancedParameters = {
     val __obj = js.Dynamic.literal()
-    if (_clientSslCertificate != null) __obj.updateDynamic("_clientSslCertificate")(_clientSslCertificate)
-    if (_clientSslKey != null) __obj.updateDynamic("_clientSslKey")(_clientSslKey)
-    if (_serverSslCertificate != null) __obj.updateDynamic("_serverSslCertificate")(_serverSslCertificate)
-    if (databaseName != null) __obj.updateDynamic("databaseName")(databaseName)
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (!js.isUndefined(useJDBCCompliantTimeZoneShift)) __obj.updateDynamic("useJDBCCompliantTimeZoneShift")(useJDBCCompliantTimeZoneShift)
-    if (user != null) __obj.updateDynamic("user")(user)
+    if (_clientSslCertificate != null) __obj.updateDynamic("_clientSslCertificate")(_clientSslCertificate.asInstanceOf[js.Any])
+    if (_clientSslKey != null) __obj.updateDynamic("_clientSslKey")(_clientSslKey.asInstanceOf[js.Any])
+    if (_serverSslCertificate != null) __obj.updateDynamic("_serverSslCertificate")(_serverSslCertificate.asInstanceOf[js.Any])
+    if (databaseName != null) __obj.updateDynamic("databaseName")(databaseName.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (!js.isUndefined(useJDBCCompliantTimeZoneShift)) __obj.updateDynamic("useJDBCCompliantTimeZoneShift")(useJDBCCompliantTimeZoneShift.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionAdvancedParameters]
   }
 }

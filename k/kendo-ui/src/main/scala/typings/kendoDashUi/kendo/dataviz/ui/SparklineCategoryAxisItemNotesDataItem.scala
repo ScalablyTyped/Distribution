@@ -22,11 +22,11 @@ object SparklineCategoryAxisItemNotesDataItem {
     value: js.Any = null
   ): SparklineCategoryAxisItemNotesDataItem = {
     val __obj = js.Dynamic.literal()
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (line != null) __obj.updateDynamic("line")(line)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SparklineCategoryAxisItemNotesDataItem]
   }
 }

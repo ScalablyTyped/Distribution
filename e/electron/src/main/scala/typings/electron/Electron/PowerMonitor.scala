@@ -11,7 +11,7 @@ import typings.electron.electronStrings.locked
 import typings.electron.electronStrings.resume
 import typings.electron.electronStrings.shutdown
 import typings.electron.electronStrings.suspend
-import typings.electron.electronStrings.unknown
+import typings.electron.electronStrings.unknown_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,7 +36,7 @@ trait PowerMonitor extends EventEmitter {
     * Calculate the system idle state. idleThreshold is the amount of time (in
     * seconds) before considered idle.  locked is available on supported systems only.
     */
-  def getSystemIdleState(idleThreshold: Double): active | idle | locked | unknown = js.native
+  def getSystemIdleState(idleThreshold: Double): active | idle | locked | unknown_ = js.native
   /**
     * Calculate system idle time in seconds.
     */
@@ -102,7 +102,7 @@ trait PowerMonitor extends EventEmitter {
     */
   def querySystemIdleState(
     idleThreshold: Double,
-    callback: js.Function1[/* idleState */ active | idle | locked | unknown, Unit]
+    callback: js.Function1[/* idleState */ active | idle | locked | unknown_, Unit]
   ): Unit = js.native
   /**
     * Calculate system idle time in seconds.

@@ -38,7 +38,7 @@ object Locale {
     SearchBar: Anon_CancelText,
     locale: String
   ): Locale = {
-    val __obj = js.Dynamic.literal(DatePicker = DatePicker, DatePickerView = DatePickerView, InputItem = InputItem, ListView = ListView, Modal = Modal, Pagination = Pagination, Picker = Picker, SearchBar = SearchBar, locale = locale)
+    val __obj = js.Dynamic.literal(DatePicker = DatePicker.asInstanceOf[js.Any], DatePickerView = DatePickerView.asInstanceOf[js.Any], InputItem = InputItem.asInstanceOf[js.Any], ListView = ListView.asInstanceOf[js.Any], Modal = Modal.asInstanceOf[js.Any], Pagination = Pagination.asInstanceOf[js.Any], Picker = Picker.asInstanceOf[js.Any], SearchBar = SearchBar.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Locale]
   }

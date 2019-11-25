@@ -20,10 +20,10 @@ object EncryptionInfo {
     kind: String = null
   ): EncryptionInfo = {
     val __obj = js.Dynamic.literal()
-    if (encryptionEntityId != null) __obj.updateDynamic("encryptionEntityId")(encryptionEntityId)
-    if (encryptionEntityType != null) __obj.updateDynamic("encryptionEntityType")(encryptionEntityType)
-    if (encryptionSource != null) __obj.updateDynamic("encryptionSource")(encryptionSource)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (encryptionEntityId != null) __obj.updateDynamic("encryptionEntityId")(encryptionEntityId.asInstanceOf[js.Any])
+    if (encryptionEntityType != null) __obj.updateDynamic("encryptionEntityType")(encryptionEntityType.asInstanceOf[js.Any])
+    if (encryptionSource != null) __obj.updateDynamic("encryptionSource")(encryptionSource.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncryptionInfo]
   }
 }

@@ -19,10 +19,10 @@ object ImageDescriptor {
     orderHint: Int | Double = null,
     tooltip: String = null
   ): ImageDescriptor = {
-    val __obj = js.Dynamic.literal(imageUrl = imageUrl)
-    if (imageClass != null) __obj.updateDynamic("imageClass")(imageClass)
+    val __obj = js.Dynamic.literal(imageUrl = imageUrl.asInstanceOf[js.Any])
+    if (imageClass != null) __obj.updateDynamic("imageClass")(imageClass.asInstanceOf[js.Any])
     if (orderHint != null) __obj.updateDynamic("orderHint")(orderHint.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageDescriptor]
   }
 }

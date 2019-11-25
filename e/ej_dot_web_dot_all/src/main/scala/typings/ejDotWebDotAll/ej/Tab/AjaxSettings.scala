@@ -42,12 +42,12 @@ object AjaxSettings {
     `type`: String = null
   ): AjaxSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (dataType != null) __obj.updateDynamic("dataType")(dataType)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AjaxSettings]
   }
 }

@@ -18,9 +18,9 @@ object CustomWord {
   @scala.inline
   def apply(display_as: String = null, sounds_like: js.Array[String] = null, word: String = null): CustomWord = {
     val __obj = js.Dynamic.literal()
-    if (display_as != null) __obj.updateDynamic("display_as")(display_as)
-    if (sounds_like != null) __obj.updateDynamic("sounds_like")(sounds_like)
-    if (word != null) __obj.updateDynamic("word")(word)
+    if (display_as != null) __obj.updateDynamic("display_as")(display_as.asInstanceOf[js.Any])
+    if (sounds_like != null) __obj.updateDynamic("sounds_like")(sounds_like.asInstanceOf[js.Any])
+    if (word != null) __obj.updateDynamic("word")(word.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomWord]
   }
 }

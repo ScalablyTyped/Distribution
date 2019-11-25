@@ -34,11 +34,11 @@ object ServerOptions {
   ): ServerOptions = {
     val __obj = js.Dynamic.literal()
     if (baseDir != null) __obj.updateDynamic("baseDir")(baseDir.asInstanceOf[js.Any])
-    if (!js.isUndefined(directory)) __obj.updateDynamic("directory")(directory)
-    if (index != null) __obj.updateDynamic("index")(index)
-    if (middleware != null) __obj.updateDynamic("middleware")(middleware)
-    if (routes != null) __obj.updateDynamic("routes")(routes)
-    if (serveStaticOptions != null) __obj.updateDynamic("serveStaticOptions")(serveStaticOptions)
+    if (!js.isUndefined(directory)) __obj.updateDynamic("directory")(directory.asInstanceOf[js.Any])
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (middleware != null) __obj.updateDynamic("middleware")(middleware.asInstanceOf[js.Any])
+    if (routes != null) __obj.updateDynamic("routes")(routes.asInstanceOf[js.Any])
+    if (serveStaticOptions != null) __obj.updateDynamic("serveStaticOptions")(serveStaticOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerOptions]
   }
 }

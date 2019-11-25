@@ -23,9 +23,9 @@ object _UnprocessedStatistics {
   @scala.inline
   def apply(ErrorCode: String = null, Message: String = null, RuleName: String = null): _UnprocessedStatistics = {
     val __obj = js.Dynamic.literal()
-    if (ErrorCode != null) __obj.updateDynamic("ErrorCode")(ErrorCode)
-    if (Message != null) __obj.updateDynamic("Message")(Message)
-    if (RuleName != null) __obj.updateDynamic("RuleName")(RuleName)
+    if (ErrorCode != null) __obj.updateDynamic("ErrorCode")(ErrorCode.asInstanceOf[js.Any])
+    if (Message != null) __obj.updateDynamic("Message")(Message.asInstanceOf[js.Any])
+    if (RuleName != null) __obj.updateDynamic("RuleName")(RuleName.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnprocessedStatistics]
   }
 }

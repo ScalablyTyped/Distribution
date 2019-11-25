@@ -15,8 +15,8 @@ object MetadataCollection {
   @scala.inline
   def apply(Dimensions: DimensionsCollection = null, Metrics: MetricsCollection = null): MetadataCollection = {
     val __obj = js.Dynamic.literal()
-    if (Dimensions != null) __obj.updateDynamic("Dimensions")(Dimensions)
-    if (Metrics != null) __obj.updateDynamic("Metrics")(Metrics)
+    if (Dimensions != null) __obj.updateDynamic("Dimensions")(Dimensions.asInstanceOf[js.Any])
+    if (Metrics != null) __obj.updateDynamic("Metrics")(Metrics.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetadataCollection]
   }
 }

@@ -22,11 +22,11 @@ object IActionDescriptor {
     params: js.Any = null,
     url: String = null
   ): IActionDescriptor = {
-    val __obj = js.Dynamic.literal(method = method)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (!js.isUndefined(isArray)) __obj.updateDynamic("isArray")(isArray)
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (url != null) __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (!js.isUndefined(isArray)) __obj.updateDynamic("isArray")(isArray.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[IActionDescriptor]
   }
 }

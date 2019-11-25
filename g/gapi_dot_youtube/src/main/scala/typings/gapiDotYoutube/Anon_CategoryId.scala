@@ -61,16 +61,16 @@ object Anon_CategoryId {
     onBehalfOfContentOwner: String = null,
     pageToken: String = null
   ): Anon_CategoryId = {
-    val __obj = js.Dynamic.literal(part = part)
-    if (categoryId != null) __obj.updateDynamic("categoryId")(categoryId)
-    if (forUsername != null) __obj.updateDynamic("forUsername")(forUsername)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(managedByMe)) __obj.updateDynamic("managedByMe")(managedByMe)
+    val __obj = js.Dynamic.literal(part = part.asInstanceOf[js.Any])
+    if (categoryId != null) __obj.updateDynamic("categoryId")(categoryId.asInstanceOf[js.Any])
+    if (forUsername != null) __obj.updateDynamic("forUsername")(forUsername.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(managedByMe)) __obj.updateDynamic("managedByMe")(managedByMe.asInstanceOf[js.Any])
     if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
-    if (!js.isUndefined(mine)) __obj.updateDynamic("mine")(mine)
-    if (!js.isUndefined(mySubscribers)) __obj.updateDynamic("mySubscribers")(mySubscribers)
-    if (onBehalfOfContentOwner != null) __obj.updateDynamic("onBehalfOfContentOwner")(onBehalfOfContentOwner)
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
+    if (!js.isUndefined(mine)) __obj.updateDynamic("mine")(mine.asInstanceOf[js.Any])
+    if (!js.isUndefined(mySubscribers)) __obj.updateDynamic("mySubscribers")(mySubscribers.asInstanceOf[js.Any])
+    if (onBehalfOfContentOwner != null) __obj.updateDynamic("onBehalfOfContentOwner")(onBehalfOfContentOwner.asInstanceOf[js.Any])
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CategoryId]
   }
 }

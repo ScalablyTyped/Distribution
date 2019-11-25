@@ -14,7 +14,7 @@ trait Anon_AttrCdata extends _XmlDesc {
 object Anon_AttrCdata {
   @scala.inline
   def apply(_attr: XmlAttrs, _cdata: String): Anon_AttrCdata = {
-    val __obj = js.Dynamic.literal(_attr = _attr, _cdata = _cdata)
+    val __obj = js.Dynamic.literal(_attr = _attr.asInstanceOf[js.Any], _cdata = _cdata.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AttrCdata]
   }

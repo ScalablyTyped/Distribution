@@ -12,7 +12,7 @@ object Anon_CircularRefs {
   @scala.inline
   def apply(circularRefs: js.UndefOr[Boolean] = js.undefined): Anon_CircularRefs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(circularRefs)) __obj.updateDynamic("circularRefs")(circularRefs)
+    if (!js.isUndefined(circularRefs)) __obj.updateDynamic("circularRefs")(circularRefs.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CircularRefs]
   }
 }

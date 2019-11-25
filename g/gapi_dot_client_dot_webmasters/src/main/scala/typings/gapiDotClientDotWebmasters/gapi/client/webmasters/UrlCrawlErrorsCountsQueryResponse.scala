@@ -13,7 +13,7 @@ object UrlCrawlErrorsCountsQueryResponse {
   @scala.inline
   def apply(countPerTypes: js.Array[UrlCrawlErrorCountsPerType] = null): UrlCrawlErrorsCountsQueryResponse = {
     val __obj = js.Dynamic.literal()
-    if (countPerTypes != null) __obj.updateDynamic("countPerTypes")(countPerTypes)
+    if (countPerTypes != null) __obj.updateDynamic("countPerTypes")(countPerTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[UrlCrawlErrorsCountsQueryResponse]
   }
 }

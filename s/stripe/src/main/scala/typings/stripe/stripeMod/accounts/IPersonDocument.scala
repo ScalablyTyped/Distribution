@@ -25,10 +25,10 @@ object IPersonDocument {
   @scala.inline
   def apply(back: String = null, details: String = null, details_code: String = null, front: String = null): IPersonDocument = {
     val __obj = js.Dynamic.literal()
-    if (back != null) __obj.updateDynamic("back")(back)
-    if (details != null) __obj.updateDynamic("details")(details)
-    if (details_code != null) __obj.updateDynamic("details_code")(details_code)
-    if (front != null) __obj.updateDynamic("front")(front)
+    if (back != null) __obj.updateDynamic("back")(back.asInstanceOf[js.Any])
+    if (details != null) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
+    if (details_code != null) __obj.updateDynamic("details_code")(details_code.asInstanceOf[js.Any])
+    if (front != null) __obj.updateDynamic("front")(front.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPersonDocument]
   }
 }

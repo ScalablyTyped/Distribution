@@ -23,9 +23,9 @@ object DomainState {
   @scala.inline
   def apply(lastActionDateTime: String = null, operation: String = null, status: String = null): DomainState = {
     val __obj = js.Dynamic.literal()
-    if (lastActionDateTime != null) __obj.updateDynamic("lastActionDateTime")(lastActionDateTime)
-    if (operation != null) __obj.updateDynamic("operation")(operation)
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (lastActionDateTime != null) __obj.updateDynamic("lastActionDateTime")(lastActionDateTime.asInstanceOf[js.Any])
+    if (operation != null) __obj.updateDynamic("operation")(operation.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainState]
   }
 }

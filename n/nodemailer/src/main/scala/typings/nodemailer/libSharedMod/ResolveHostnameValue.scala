@@ -15,8 +15,8 @@ trait ResolveHostnameValue extends js.Object {
 object ResolveHostnameValue {
   @scala.inline
   def apply(host: String, servername: String | `false`, _cached: `true` = null): ResolveHostnameValue = {
-    val __obj = js.Dynamic.literal(host = host, servername = servername.asInstanceOf[js.Any])
-    if (_cached != null) __obj.updateDynamic("_cached")(_cached)
+    val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], servername = servername.asInstanceOf[js.Any])
+    if (_cached != null) __obj.updateDynamic("_cached")(_cached.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolveHostnameValue]
   }
 }

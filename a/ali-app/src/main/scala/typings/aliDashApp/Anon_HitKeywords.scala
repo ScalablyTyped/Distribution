@@ -25,8 +25,8 @@ object Anon_HitKeywords {
   def apply(`type`: TextRiskIdentificationType, hitKeywords: js.Array[String] = null, score: String = null): Anon_HitKeywords = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (hitKeywords != null) __obj.updateDynamic("hitKeywords")(hitKeywords)
-    if (score != null) __obj.updateDynamic("score")(score)
+    if (hitKeywords != null) __obj.updateDynamic("hitKeywords")(hitKeywords.asInstanceOf[js.Any])
+    if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_HitKeywords]
   }
 }

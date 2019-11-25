@@ -24,11 +24,11 @@ object Anon_DataHeaders {
     responseType: String = null
   ): Anon_DataHeaders = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (overrideMimeType != null) __obj.updateDynamic("overrideMimeType")(overrideMimeType)
-    if (responseType != null) __obj.updateDynamic("responseType")(responseType)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (overrideMimeType != null) __obj.updateDynamic("overrideMimeType")(overrideMimeType.asInstanceOf[js.Any])
+    if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DataHeaders]
   }
 }

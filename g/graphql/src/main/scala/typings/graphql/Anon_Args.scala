@@ -20,7 +20,7 @@ object Anon_Args {
     isRepeatable: Boolean,
     extensions: Maybe[Record[String, _]] = null
   ): Anon_Args = {
-    val __obj = js.Dynamic.literal(args = args, isRepeatable = isRepeatable)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], isRepeatable = isRepeatable.asInstanceOf[js.Any])
     if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Args]
   }

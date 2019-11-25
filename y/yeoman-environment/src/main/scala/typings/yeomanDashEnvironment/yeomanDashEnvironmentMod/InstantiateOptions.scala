@@ -12,7 +12,7 @@ trait InstantiateOptions extends js.Object {
 object InstantiateOptions {
   @scala.inline
   def apply(arguments: String | js.Array[String], options: Options): InstantiateOptions = {
-    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], options = options)
+    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InstantiateOptions]
   }

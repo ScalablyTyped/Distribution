@@ -20,8 +20,8 @@ trait GetBucketLoggingOutput
 object GetBucketLoggingOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, LoggingEnabled: _UnmarshalledLoggingEnabled = null): GetBucketLoggingOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (LoggingEnabled != null) __obj.updateDynamic("LoggingEnabled")(LoggingEnabled)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (LoggingEnabled != null) __obj.updateDynamic("LoggingEnabled")(LoggingEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketLoggingOutput]
   }
 }

@@ -22,11 +22,11 @@ object EventData {
     eventValue: String = null
   ): EventData = {
     val __obj = js.Dynamic.literal()
-    if (eventAction != null) __obj.updateDynamic("eventAction")(eventAction)
-    if (eventCategory != null) __obj.updateDynamic("eventCategory")(eventCategory)
-    if (eventCount != null) __obj.updateDynamic("eventCount")(eventCount)
-    if (eventLabel != null) __obj.updateDynamic("eventLabel")(eventLabel)
-    if (eventValue != null) __obj.updateDynamic("eventValue")(eventValue)
+    if (eventAction != null) __obj.updateDynamic("eventAction")(eventAction.asInstanceOf[js.Any])
+    if (eventCategory != null) __obj.updateDynamic("eventCategory")(eventCategory.asInstanceOf[js.Any])
+    if (eventCount != null) __obj.updateDynamic("eventCount")(eventCount.asInstanceOf[js.Any])
+    if (eventLabel != null) __obj.updateDynamic("eventLabel")(eventLabel.asInstanceOf[js.Any])
+    if (eventValue != null) __obj.updateDynamic("eventValue")(eventValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventData]
   }
 }

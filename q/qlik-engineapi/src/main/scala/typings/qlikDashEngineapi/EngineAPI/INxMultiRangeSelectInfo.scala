@@ -18,7 +18,7 @@ trait INxMultiRangeSelectInfo extends IRangeSelectInfo {
 object INxMultiRangeSelectInfo {
   @scala.inline
   def apply(qColumnsToSelect: Double, qRange: IRange): INxMultiRangeSelectInfo = {
-    val __obj = js.Dynamic.literal(qColumnsToSelect = qColumnsToSelect, qRange = qRange)
+    val __obj = js.Dynamic.literal(qColumnsToSelect = qColumnsToSelect.asInstanceOf[js.Any], qRange = qRange.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[INxMultiRangeSelectInfo]
   }

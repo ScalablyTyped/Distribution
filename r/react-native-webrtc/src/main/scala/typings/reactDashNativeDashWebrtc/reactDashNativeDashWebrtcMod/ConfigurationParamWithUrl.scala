@@ -11,9 +11,9 @@ trait ConfigurationParamWithUrl extends ConfigurationParam {
 object ConfigurationParamWithUrl {
   @scala.inline
   def apply(url: String, credential: String = null, username: String = null): ConfigurationParamWithUrl = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (credential != null) __obj.updateDynamic("credential")(credential)
-    if (username != null) __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (credential != null) __obj.updateDynamic("credential")(credential.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigurationParamWithUrl]
   }
 }

@@ -22,9 +22,9 @@ object MetricAggregation {
     results: js.Array[MetricAggregationResult] = null
   ): MetricAggregation = {
     val __obj = js.Dynamic.literal()
-    if (event_type != null) __obj.updateDynamic("event_type")(event_type)
-    if (interval != null) __obj.updateDynamic("interval")(interval)
-    if (results != null) __obj.updateDynamic("results")(results)
+    if (event_type != null) __obj.updateDynamic("event_type")(event_type.asInstanceOf[js.Any])
+    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricAggregation]
   }
 }

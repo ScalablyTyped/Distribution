@@ -27,10 +27,10 @@ object Anon_CallbackEventGlyph {
     link: String = null,
     url: String = null
   ): Anon_CallbackEventGlyph = {
-    val __obj = js.Dynamic.literal(glyph = glyph, image = image, title = title)
+    val __obj = js.Dynamic.literal(glyph = glyph.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))
-    if (link != null) __obj.updateDynamic("link")(link)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CallbackEventGlyph]
   }
 }

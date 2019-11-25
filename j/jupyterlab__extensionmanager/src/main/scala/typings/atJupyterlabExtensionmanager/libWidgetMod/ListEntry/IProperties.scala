@@ -20,7 +20,7 @@ trait IProperties extends js.Object {
 object IProperties {
   @scala.inline
   def apply(entry: IEntry, performAction: (Action, IEntry) => Unit): IProperties = {
-    val __obj = js.Dynamic.literal(entry = entry, performAction = js.Any.fromFunction2(performAction))
+    val __obj = js.Dynamic.literal(entry = entry.asInstanceOf[js.Any], performAction = js.Any.fromFunction2(performAction))
   
     __obj.asInstanceOf[IProperties]
   }

@@ -21,8 +21,8 @@ object AsObject {
     maxGasCost: String,
     signedTxn: typings.libraDashCore.libAtGeneratedTransactionUnderscorePbMod.SignedTransaction.AsObject = null
   ): AsObject = {
-    val __obj = js.Dynamic.literal(accountBalance = accountBalance, latestSequenceNumber = latestSequenceNumber, maxGasCost = maxGasCost)
-    if (signedTxn != null) __obj.updateDynamic("signedTxn")(signedTxn)
+    val __obj = js.Dynamic.literal(accountBalance = accountBalance.asInstanceOf[js.Any], latestSequenceNumber = latestSequenceNumber.asInstanceOf[js.Any], maxGasCost = maxGasCost.asInstanceOf[js.Any])
+    if (signedTxn != null) __obj.updateDynamic("signedTxn")(signedTxn.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsObject]
   }
 }

@@ -15,9 +15,9 @@ object WorkbookChartAxisFormat {
   @scala.inline
   def apply(font: WorkbookChartFont = null, id: String = null, line: WorkbookChartLineFormat = null): WorkbookChartAxisFormat = {
     val __obj = js.Dynamic.literal()
-    if (font != null) __obj.updateDynamic("font")(font)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (line != null) __obj.updateDynamic("line")(line)
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookChartAxisFormat]
   }
 }

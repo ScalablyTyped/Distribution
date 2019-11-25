@@ -12,7 +12,7 @@ object ListFiltersResponse {
   @scala.inline
   def apply(filter: js.Array[Filter] = null): ListFiltersResponse = {
     val __obj = js.Dynamic.literal()
-    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListFiltersResponse]
   }
 }

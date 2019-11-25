@@ -21,10 +21,10 @@ object Options {
     layers: js.Array[String] = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (featureClass != null) __obj.updateDynamic("featureClass")(featureClass)
-    if (geometryName != null) __obj.updateDynamic("geometryName")(geometryName)
-    if (layerName != null) __obj.updateDynamic("layerName")(layerName)
-    if (layers != null) __obj.updateDynamic("layers")(layers)
+    if (featureClass != null) __obj.updateDynamic("featureClass")(featureClass.asInstanceOf[js.Any])
+    if (geometryName != null) __obj.updateDynamic("geometryName")(geometryName.asInstanceOf[js.Any])
+    if (layerName != null) __obj.updateDynamic("layerName")(layerName.asInstanceOf[js.Any])
+    if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

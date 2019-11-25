@@ -22,9 +22,9 @@ object IndexCapacity {
     documents: EnvironmentDocuments = null
   ): IndexCapacity = {
     val __obj = js.Dynamic.literal()
-    if (collections != null) __obj.updateDynamic("collections")(collections)
-    if (disk_usage != null) __obj.updateDynamic("disk_usage")(disk_usage)
-    if (documents != null) __obj.updateDynamic("documents")(documents)
+    if (collections != null) __obj.updateDynamic("collections")(collections.asInstanceOf[js.Any])
+    if (disk_usage != null) __obj.updateDynamic("disk_usage")(disk_usage.asInstanceOf[js.Any])
+    if (documents != null) __obj.updateDynamic("documents")(documents.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndexCapacity]
   }
 }

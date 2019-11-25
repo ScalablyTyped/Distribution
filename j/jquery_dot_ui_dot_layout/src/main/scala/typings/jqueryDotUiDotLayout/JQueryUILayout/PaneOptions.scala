@@ -1,8 +1,7 @@
 package typings.jqueryDotUiDotLayout.JQueryUILayout
 
 import typings.jquery.JQueryAnimationOptions
-import typings.jqueryDotUiDotLayout.Fn_Layoutname
-import typings.jqueryDotUiDotLayout.Fn_LayoutnameName
+import typings.jqueryDotUiDotLayout.JQuery
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,21 +24,156 @@ trait PaneOptions extends js.Object {
   var maskIframesOnResize: js.UndefOr[Boolean | String] = js.undefined
   var maxSize: js.UndefOr[Double] = js.undefined
   var minSize: js.UndefOr[Double] = js.undefined
-  var onclose: js.UndefOr[String | Fn_LayoutnameName] = js.undefined
-  var onclose_end: js.UndefOr[String | Fn_LayoutnameName] = js.undefined
-  var onclose_start: js.UndefOr[String | Fn_Layoutname] = js.undefined
-  var onhide: js.UndefOr[String | Fn_LayoutnameName] = js.undefined
-  var onhide_end: js.UndefOr[String | Fn_LayoutnameName] = js.undefined
-  var onhide_start: js.UndefOr[String | Fn_Layoutname] = js.undefined
-  var onopen: js.UndefOr[String | Fn_LayoutnameName] = js.undefined
-  var onopen_end: js.UndefOr[String | Fn_LayoutnameName] = js.undefined
-  var onopen_start: js.UndefOr[String | Fn_Layoutname] = js.undefined
-  var onresize: js.UndefOr[String | Fn_LayoutnameName] = js.undefined
-  var onresize_end: js.UndefOr[String | Fn_LayoutnameName] = js.undefined
-  var onresize_start: js.UndefOr[String | Fn_Layoutname] = js.undefined
-  var onshow: js.UndefOr[String | Fn_LayoutnameName] = js.undefined
-  var onshow_end: js.UndefOr[String | Fn_LayoutnameName] = js.undefined
-  var onshow_start: js.UndefOr[String | Fn_Layoutname] = js.undefined
+  var onclose: js.UndefOr[
+    String | (js.Function5[
+      /* name */ String, 
+      /* pane */ JQuery, 
+      /* state */ PaneState, 
+      /* options */ this.type, 
+      /* layout_name */ String, 
+      Unit
+    ])
+  ] = js.undefined
+  var onclose_end: js.UndefOr[
+    String | (js.Function5[
+      /* name */ String, 
+      /* pane */ JQuery, 
+      /* state */ PaneState, 
+      /* options */ this.type, 
+      /* layout_name */ String, 
+      Unit
+    ])
+  ] = js.undefined
+  var onclose_start: js.UndefOr[
+    String | (js.Function5[
+      /* name */ String, 
+      /* pane */ JQuery, 
+      /* state */ PaneState, 
+      /* options */ this.type, 
+      /* layout_name */ String, 
+      Boolean | Unit
+    ])
+  ] = js.undefined
+  var onhide: js.UndefOr[
+    String | (js.Function5[
+      /* name */ String, 
+      /* pane */ JQuery, 
+      /* state */ PaneState, 
+      /* options */ this.type, 
+      /* layout_name */ String, 
+      Unit
+    ])
+  ] = js.undefined
+  var onhide_end: js.UndefOr[
+    String | (js.Function5[
+      /* name */ String, 
+      /* pane */ JQuery, 
+      /* state */ PaneState, 
+      /* options */ this.type, 
+      /* layout_name */ String, 
+      Unit
+    ])
+  ] = js.undefined
+  var onhide_start: js.UndefOr[
+    String | (js.Function5[
+      /* name */ String, 
+      /* pane */ JQuery, 
+      /* state */ PaneState, 
+      /* options */ this.type, 
+      /* layout_name */ String, 
+      Boolean | Unit
+    ])
+  ] = js.undefined
+  var onopen: js.UndefOr[
+    String | (js.Function5[
+      /* name */ String, 
+      /* pane */ JQuery, 
+      /* state */ PaneState, 
+      /* options */ this.type, 
+      /* layout_name */ String, 
+      Unit
+    ])
+  ] = js.undefined
+  var onopen_end: js.UndefOr[
+    String | (js.Function5[
+      /* name */ String, 
+      /* pane */ JQuery, 
+      /* state */ PaneState, 
+      /* options */ this.type, 
+      /* layout_name */ String, 
+      Unit
+    ])
+  ] = js.undefined
+  var onopen_start: js.UndefOr[
+    String | (js.Function5[
+      /* name */ String, 
+      /* pane */ JQuery, 
+      /* state */ PaneState, 
+      /* options */ this.type, 
+      /* layout_name */ String, 
+      Boolean | Unit
+    ])
+  ] = js.undefined
+  var onresize: js.UndefOr[
+    String | (js.Function5[
+      /* name */ String, 
+      /* pane */ JQuery, 
+      /* state */ PaneState, 
+      /* options */ this.type, 
+      /* layout_name */ String, 
+      Unit
+    ])
+  ] = js.undefined
+  var onresize_end: js.UndefOr[
+    String | (js.Function5[
+      /* name */ String, 
+      /* pane */ JQuery, 
+      /* state */ PaneState, 
+      /* options */ this.type, 
+      /* layout_name */ String, 
+      Unit
+    ])
+  ] = js.undefined
+  var onresize_start: js.UndefOr[
+    String | (js.Function5[
+      /* name */ String, 
+      /* pane */ JQuery, 
+      /* state */ PaneState, 
+      /* options */ this.type, 
+      /* layout_name */ String, 
+      Boolean | Unit
+    ])
+  ] = js.undefined
+  var onshow: js.UndefOr[
+    String | (js.Function5[
+      /* name */ String, 
+      /* pane */ JQuery, 
+      /* state */ PaneState, 
+      /* options */ this.type, 
+      /* layout_name */ String, 
+      Unit
+    ])
+  ] = js.undefined
+  var onshow_end: js.UndefOr[
+    String | (js.Function5[
+      /* name */ String, 
+      /* pane */ JQuery, 
+      /* state */ PaneState, 
+      /* options */ this.type, 
+      /* layout_name */ String, 
+      Unit
+    ])
+  ] = js.undefined
+  var onshow_start: js.UndefOr[
+    String | (js.Function5[
+      /* name */ String, 
+      /* pane */ JQuery, 
+      /* state */ PaneState, 
+      /* options */ this.type, 
+      /* layout_name */ String, 
+      Boolean | Unit
+    ])
+  ] = js.undefined
   var paneClass: js.UndefOr[String] = js.undefined
   var paneSelector: js.UndefOr[String] = js.undefined
   var resizable: js.UndefOr[Boolean] = js.undefined
@@ -88,21 +222,126 @@ object PaneOptions {
     maskIframesOnResize: Boolean | String = null,
     maxSize: Int | Double = null,
     minSize: Int | Double = null,
-    onclose: String | Fn_LayoutnameName = null,
-    onclose_end: String | Fn_LayoutnameName = null,
-    onclose_start: String | Fn_Layoutname = null,
-    onhide: String | Fn_LayoutnameName = null,
-    onhide_end: String | Fn_LayoutnameName = null,
-    onhide_start: String | Fn_Layoutname = null,
-    onopen: String | Fn_LayoutnameName = null,
-    onopen_end: String | Fn_LayoutnameName = null,
-    onopen_start: String | Fn_Layoutname = null,
-    onresize: String | Fn_LayoutnameName = null,
-    onresize_end: String | Fn_LayoutnameName = null,
-    onresize_start: String | Fn_Layoutname = null,
-    onshow: String | Fn_LayoutnameName = null,
-    onshow_end: String | Fn_LayoutnameName = null,
-    onshow_start: String | Fn_Layoutname = null,
+    onclose: String | (js.Function5[
+      /* name */ String, 
+      /* pane */ JQuery, 
+      /* state */ PaneState, 
+      PaneOptions, 
+      /* layout_name */ String, 
+      Unit
+    ]) = null,
+    onclose_end: String | (js.Function5[
+      /* name */ String, 
+      /* pane */ JQuery, 
+      /* state */ PaneState, 
+      PaneOptions, 
+      /* layout_name */ String, 
+      Unit
+    ]) = null,
+    onclose_start: String | (js.Function5[
+      /* name */ String, 
+      /* pane */ JQuery, 
+      /* state */ PaneState, 
+      PaneOptions, 
+      /* layout_name */ String, 
+      Boolean | Unit
+    ]) = null,
+    onhide: String | (js.Function5[
+      /* name */ String, 
+      /* pane */ JQuery, 
+      /* state */ PaneState, 
+      PaneOptions, 
+      /* layout_name */ String, 
+      Unit
+    ]) = null,
+    onhide_end: String | (js.Function5[
+      /* name */ String, 
+      /* pane */ JQuery, 
+      /* state */ PaneState, 
+      PaneOptions, 
+      /* layout_name */ String, 
+      Unit
+    ]) = null,
+    onhide_start: String | (js.Function5[
+      /* name */ String, 
+      /* pane */ JQuery, 
+      /* state */ PaneState, 
+      PaneOptions, 
+      /* layout_name */ String, 
+      Boolean | Unit
+    ]) = null,
+    onopen: String | (js.Function5[
+      /* name */ String, 
+      /* pane */ JQuery, 
+      /* state */ PaneState, 
+      PaneOptions, 
+      /* layout_name */ String, 
+      Unit
+    ]) = null,
+    onopen_end: String | (js.Function5[
+      /* name */ String, 
+      /* pane */ JQuery, 
+      /* state */ PaneState, 
+      PaneOptions, 
+      /* layout_name */ String, 
+      Unit
+    ]) = null,
+    onopen_start: String | (js.Function5[
+      /* name */ String, 
+      /* pane */ JQuery, 
+      /* state */ PaneState, 
+      PaneOptions, 
+      /* layout_name */ String, 
+      Boolean | Unit
+    ]) = null,
+    onresize: String | (js.Function5[
+      /* name */ String, 
+      /* pane */ JQuery, 
+      /* state */ PaneState, 
+      PaneOptions, 
+      /* layout_name */ String, 
+      Unit
+    ]) = null,
+    onresize_end: String | (js.Function5[
+      /* name */ String, 
+      /* pane */ JQuery, 
+      /* state */ PaneState, 
+      PaneOptions, 
+      /* layout_name */ String, 
+      Unit
+    ]) = null,
+    onresize_start: String | (js.Function5[
+      /* name */ String, 
+      /* pane */ JQuery, 
+      /* state */ PaneState, 
+      PaneOptions, 
+      /* layout_name */ String, 
+      Boolean | Unit
+    ]) = null,
+    onshow: String | (js.Function5[
+      /* name */ String, 
+      /* pane */ JQuery, 
+      /* state */ PaneState, 
+      PaneOptions, 
+      /* layout_name */ String, 
+      Unit
+    ]) = null,
+    onshow_end: String | (js.Function5[
+      /* name */ String, 
+      /* pane */ JQuery, 
+      /* state */ PaneState, 
+      PaneOptions, 
+      /* layout_name */ String, 
+      Unit
+    ]) = null,
+    onshow_start: String | (js.Function5[
+      /* name */ String, 
+      /* pane */ JQuery, 
+      /* state */ PaneState, 
+      PaneOptions, 
+      /* layout_name */ String, 
+      Boolean | Unit
+    ]) = null,
     paneClass: String = null,
     paneSelector: String = null,
     resizable: js.UndefOr[Boolean] = js.undefined,
@@ -131,20 +370,20 @@ object PaneOptions {
     togglerTip_open: String = null
   ): PaneOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(applyDefaultStyles)) __obj.updateDynamic("applyDefaultStyles")(applyDefaultStyles)
-    if (buttonClass != null) __obj.updateDynamic("buttonClass")(buttonClass)
-    if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable)
-    if (contentIgnoreSelector != null) __obj.updateDynamic("contentIgnoreSelector")(contentIgnoreSelector)
-    if (contentSelector != null) __obj.updateDynamic("contentSelector")(contentSelector)
+    if (!js.isUndefined(applyDefaultStyles)) __obj.updateDynamic("applyDefaultStyles")(applyDefaultStyles.asInstanceOf[js.Any])
+    if (buttonClass != null) __obj.updateDynamic("buttonClass")(buttonClass.asInstanceOf[js.Any])
+    if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable.asInstanceOf[js.Any])
+    if (contentIgnoreSelector != null) __obj.updateDynamic("contentIgnoreSelector")(contentIgnoreSelector.asInstanceOf[js.Any])
+    if (contentSelector != null) __obj.updateDynamic("contentSelector")(contentSelector.asInstanceOf[js.Any])
     if (customHotkey != null) __obj.updateDynamic("customHotkey")(customHotkey.asInstanceOf[js.Any])
-    if (customHotkeyModifier != null) __obj.updateDynamic("customHotkeyModifier")(customHotkeyModifier)
-    if (!js.isUndefined(enableCursorHotkey)) __obj.updateDynamic("enableCursorHotkey")(enableCursorHotkey)
-    if (fxName != null) __obj.updateDynamic("fxName")(fxName)
-    if (fxSettings != null) __obj.updateDynamic("fxSettings")(fxSettings)
+    if (customHotkeyModifier != null) __obj.updateDynamic("customHotkeyModifier")(customHotkeyModifier.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableCursorHotkey)) __obj.updateDynamic("enableCursorHotkey")(enableCursorHotkey.asInstanceOf[js.Any])
+    if (fxName != null) __obj.updateDynamic("fxName")(fxName.asInstanceOf[js.Any])
+    if (fxSettings != null) __obj.updateDynamic("fxSettings")(fxSettings.asInstanceOf[js.Any])
     if (fxSpeed != null) __obj.updateDynamic("fxSpeed")(fxSpeed.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideTogglerOnSlide)) __obj.updateDynamic("hideTogglerOnSlide")(hideTogglerOnSlide)
-    if (!js.isUndefined(initClosed)) __obj.updateDynamic("initClosed")(initClosed)
-    if (!js.isUndefined(initHidden)) __obj.updateDynamic("initHidden")(initHidden)
+    if (!js.isUndefined(hideTogglerOnSlide)) __obj.updateDynamic("hideTogglerOnSlide")(hideTogglerOnSlide.asInstanceOf[js.Any])
+    if (!js.isUndefined(initClosed)) __obj.updateDynamic("initClosed")(initClosed.asInstanceOf[js.Any])
+    if (!js.isUndefined(initHidden)) __obj.updateDynamic("initHidden")(initHidden.asInstanceOf[js.Any])
     if (maskIframesOnResize != null) __obj.updateDynamic("maskIframesOnResize")(maskIframesOnResize.asInstanceOf[js.Any])
     if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
     if (minSize != null) __obj.updateDynamic("minSize")(minSize.asInstanceOf[js.Any])
@@ -163,32 +402,32 @@ object PaneOptions {
     if (onshow != null) __obj.updateDynamic("onshow")(onshow.asInstanceOf[js.Any])
     if (onshow_end != null) __obj.updateDynamic("onshow_end")(onshow_end.asInstanceOf[js.Any])
     if (onshow_start != null) __obj.updateDynamic("onshow_start")(onshow_start.asInstanceOf[js.Any])
-    if (paneClass != null) __obj.updateDynamic("paneClass")(paneClass)
-    if (paneSelector != null) __obj.updateDynamic("paneSelector")(paneSelector)
-    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable)
-    if (resizerClass != null) __obj.updateDynamic("resizerClass")(resizerClass)
-    if (resizerCursor != null) __obj.updateDynamic("resizerCursor")(resizerCursor)
+    if (paneClass != null) __obj.updateDynamic("paneClass")(paneClass.asInstanceOf[js.Any])
+    if (paneSelector != null) __obj.updateDynamic("paneSelector")(paneSelector.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable.asInstanceOf[js.Any])
+    if (resizerClass != null) __obj.updateDynamic("resizerClass")(resizerClass.asInstanceOf[js.Any])
+    if (resizerCursor != null) __obj.updateDynamic("resizerCursor")(resizerCursor.asInstanceOf[js.Any])
     if (resizerDragOpacity != null) __obj.updateDynamic("resizerDragOpacity")(resizerDragOpacity.asInstanceOf[js.Any])
-    if (resizerTip != null) __obj.updateDynamic("resizerTip")(resizerTip)
-    if (!js.isUndefined(scrollToBookmarkOnLoad)) __obj.updateDynamic("scrollToBookmarkOnLoad")(scrollToBookmarkOnLoad)
-    if (!js.isUndefined(showOverflowOnHover)) __obj.updateDynamic("showOverflowOnHover")(showOverflowOnHover)
+    if (resizerTip != null) __obj.updateDynamic("resizerTip")(resizerTip.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollToBookmarkOnLoad)) __obj.updateDynamic("scrollToBookmarkOnLoad")(scrollToBookmarkOnLoad.asInstanceOf[js.Any])
+    if (!js.isUndefined(showOverflowOnHover)) __obj.updateDynamic("showOverflowOnHover")(showOverflowOnHover.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(slidable)) __obj.updateDynamic("slidable")(slidable)
-    if (slideTrigger_close != null) __obj.updateDynamic("slideTrigger_close")(slideTrigger_close)
-    if (slideTrigger_open != null) __obj.updateDynamic("slideTrigger_open")(slideTrigger_open)
-    if (sliderCursor != null) __obj.updateDynamic("sliderCursor")(sliderCursor)
-    if (sliderTip != null) __obj.updateDynamic("sliderTip")(sliderTip)
+    if (!js.isUndefined(slidable)) __obj.updateDynamic("slidable")(slidable.asInstanceOf[js.Any])
+    if (slideTrigger_close != null) __obj.updateDynamic("slideTrigger_close")(slideTrigger_close.asInstanceOf[js.Any])
+    if (slideTrigger_open != null) __obj.updateDynamic("slideTrigger_open")(slideTrigger_open.asInstanceOf[js.Any])
+    if (sliderCursor != null) __obj.updateDynamic("sliderCursor")(sliderCursor.asInstanceOf[js.Any])
+    if (sliderTip != null) __obj.updateDynamic("sliderTip")(sliderTip.asInstanceOf[js.Any])
     if (spacing_closed != null) __obj.updateDynamic("spacing_closed")(spacing_closed.asInstanceOf[js.Any])
     if (spacing_open != null) __obj.updateDynamic("spacing_open")(spacing_open.asInstanceOf[js.Any])
     if (togglerAlign_closed != null) __obj.updateDynamic("togglerAlign_closed")(togglerAlign_closed.asInstanceOf[js.Any])
     if (togglerAlign_open != null) __obj.updateDynamic("togglerAlign_open")(togglerAlign_open.asInstanceOf[js.Any])
-    if (togglerClass != null) __obj.updateDynamic("togglerClass")(togglerClass)
-    if (togglerContent_closed != null) __obj.updateDynamic("togglerContent_closed")(togglerContent_closed)
-    if (togglerContent_open != null) __obj.updateDynamic("togglerContent_open")(togglerContent_open)
+    if (togglerClass != null) __obj.updateDynamic("togglerClass")(togglerClass.asInstanceOf[js.Any])
+    if (togglerContent_closed != null) __obj.updateDynamic("togglerContent_closed")(togglerContent_closed.asInstanceOf[js.Any])
+    if (togglerContent_open != null) __obj.updateDynamic("togglerContent_open")(togglerContent_open.asInstanceOf[js.Any])
     if (togglerLength_closed != null) __obj.updateDynamic("togglerLength_closed")(togglerLength_closed.asInstanceOf[js.Any])
     if (togglerLength_open != null) __obj.updateDynamic("togglerLength_open")(togglerLength_open.asInstanceOf[js.Any])
-    if (togglerTip_closed != null) __obj.updateDynamic("togglerTip_closed")(togglerTip_closed)
-    if (togglerTip_open != null) __obj.updateDynamic("togglerTip_open")(togglerTip_open)
+    if (togglerTip_closed != null) __obj.updateDynamic("togglerTip_closed")(togglerTip_closed.asInstanceOf[js.Any])
+    if (togglerTip_open != null) __obj.updateDynamic("togglerTip_open")(togglerTip_open.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaneOptions]
   }
 }

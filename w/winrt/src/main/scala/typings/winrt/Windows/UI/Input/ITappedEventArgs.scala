@@ -15,7 +15,7 @@ trait ITappedEventArgs extends js.Object {
 object ITappedEventArgs {
   @scala.inline
   def apply(pointerDeviceType: PointerDeviceType, position: Point, tapCount: Double): ITappedEventArgs = {
-    val __obj = js.Dynamic.literal(pointerDeviceType = pointerDeviceType, position = position, tapCount = tapCount)
+    val __obj = js.Dynamic.literal(pointerDeviceType = pointerDeviceType.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], tapCount = tapCount.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ITappedEventArgs]
   }

@@ -24,7 +24,7 @@ trait LDEvaluationDetail extends js.Object {
 object LDEvaluationDetail {
   @scala.inline
   def apply(reason: LDEvaluationReason, value: LDFlagValue, variationIndex: Int | Double = null): LDEvaluationDetail = {
-    val __obj = js.Dynamic.literal(reason = reason, value = value)
+    val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     if (variationIndex != null) __obj.updateDynamic("variationIndex")(variationIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[LDEvaluationDetail]
   }

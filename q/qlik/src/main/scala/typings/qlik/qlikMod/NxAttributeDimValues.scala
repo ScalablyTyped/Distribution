@@ -11,7 +11,7 @@ trait NxAttributeDimValues extends js.Object {
 object NxAttributeDimValues {
   @scala.inline
   def apply(qValues: js.Array[NxSimpleDimValue]): NxAttributeDimValues = {
-    val __obj = js.Dynamic.literal(qValues = qValues)
+    val __obj = js.Dynamic.literal(qValues = qValues.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NxAttributeDimValues]
   }

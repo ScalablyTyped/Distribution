@@ -36,17 +36,15 @@ object IPolarChart {
     getCenter: () => Array = null,
     getRadius: () => Double = null,
     radius: Int | Double = null,
-    redraw: () => Unit = null,
     setCenter: /* center */ js.UndefOr[Array] => Unit = null,
     setRadius: /* radius */ js.UndefOr[Double] => Unit = null
   ): IPolarChart = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IAbstractChart)
-    if (center != null) __obj.updateDynamic("center")(center)
+    if (IAbstractChart != null) js.Dynamic.global.Object.assign(__obj, IAbstractChart)
+    if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
     if (getCenter != null) __obj.updateDynamic("getCenter")(js.Any.fromFunction0(getCenter))
     if (getRadius != null) __obj.updateDynamic("getRadius")(js.Any.fromFunction0(getRadius))
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
-    if (redraw != null) __obj.updateDynamic("redraw")(js.Any.fromFunction0(redraw))
     if (setCenter != null) __obj.updateDynamic("setCenter")(js.Any.fromFunction1(setCenter))
     if (setRadius != null) __obj.updateDynamic("setRadius")(js.Any.fromFunction1(setRadius))
     __obj.asInstanceOf[IPolarChart]

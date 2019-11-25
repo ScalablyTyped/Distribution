@@ -14,7 +14,7 @@ trait Anon_StackIndex extends js.Object {
 object Anon_StackIndex {
   @scala.inline
   def apply(stackIndex: StackIndex, stackInfo: StackInfo): Anon_StackIndex = {
-    val __obj = js.Dynamic.literal(stackIndex = stackIndex, stackInfo = stackInfo)
+    val __obj = js.Dynamic.literal(stackIndex = stackIndex.asInstanceOf[js.Any], stackInfo = stackInfo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_StackIndex]
   }

@@ -66,15 +66,15 @@ object Options {
     speed: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (disabledOpacity != null) __obj.updateDynamic("disabledOpacity")(disabledOpacity.asInstanceOf[js.Any])
-    if (jackColor != null) __obj.updateDynamic("jackColor")(jackColor)
-    if (jackSecondaryColor != null) __obj.updateDynamic("jackSecondaryColor")(jackSecondaryColor)
-    if (secondaryColor != null) __obj.updateDynamic("secondaryColor")(secondaryColor)
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (speed != null) __obj.updateDynamic("speed")(speed)
+    if (jackColor != null) __obj.updateDynamic("jackColor")(jackColor.asInstanceOf[js.Any])
+    if (jackSecondaryColor != null) __obj.updateDynamic("jackSecondaryColor")(jackSecondaryColor.asInstanceOf[js.Any])
+    if (secondaryColor != null) __obj.updateDynamic("secondaryColor")(secondaryColor.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

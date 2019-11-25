@@ -13,7 +13,7 @@ trait Anon_Canvas extends js.Object {
 object Anon_Canvas {
   @scala.inline
   def apply(DOM: Position, canvas: Position): Anon_Canvas = {
-    val __obj = js.Dynamic.literal(DOM = DOM, canvas = canvas)
+    val __obj = js.Dynamic.literal(DOM = DOM.asInstanceOf[js.Any], canvas = canvas.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Canvas]
   }

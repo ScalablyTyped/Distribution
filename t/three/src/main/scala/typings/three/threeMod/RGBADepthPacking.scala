@@ -1,12 +1,12 @@
 package typings.three.threeMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.three.srcConstantsMod.DepthPackingStrategies
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("three", "RGBADepthPacking")
 @js.native
-object RGBADepthPacking extends TopLevel[DepthPackingStrategies]
+object RGBADepthPacking
+  extends TopLevel[typings.three.srcConstantsMod.DepthPackingStrategies]
 

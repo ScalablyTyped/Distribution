@@ -20,7 +20,7 @@ object PrettyPrintOptions {
   @scala.inline
   def apply(colorize: js.UndefOr[Boolean] = js.undefined, depth: Int | Double = null): PrettyPrintOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(colorize)) __obj.updateDynamic("colorize")(colorize)
+    if (!js.isUndefined(colorize)) __obj.updateDynamic("colorize")(colorize.asInstanceOf[js.Any])
     if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrettyPrintOptions]
   }

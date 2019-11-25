@@ -27,11 +27,11 @@ object Anon_Doc {
     storedMarks: js.Array[Mark[_]] = null
   ): Anon_Doc[S] = {
     val __obj = js.Dynamic.literal()
-    if (doc != null) __obj.updateDynamic("doc")(doc)
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
+    if (doc != null) __obj.updateDynamic("doc")(doc.asInstanceOf[js.Any])
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
     if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
-    if (selection != null) __obj.updateDynamic("selection")(selection)
-    if (storedMarks != null) __obj.updateDynamic("storedMarks")(storedMarks)
+    if (selection != null) __obj.updateDynamic("selection")(selection.asInstanceOf[js.Any])
+    if (storedMarks != null) __obj.updateDynamic("storedMarks")(storedMarks.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Doc[S]]
   }
 }

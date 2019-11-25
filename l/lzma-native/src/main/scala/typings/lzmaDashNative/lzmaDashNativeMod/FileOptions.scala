@@ -18,7 +18,7 @@ object FileOptions {
     read: (Double, Double, js.Function2[/* err */ js.Any, /* buffer */ Buffer, Unit]) => Unit,
     memlimit: Int | Double = null
   ): FileOptions = {
-    val __obj = js.Dynamic.literal(fileSize = fileSize, read = js.Any.fromFunction3(read))
+    val __obj = js.Dynamic.literal(fileSize = fileSize.asInstanceOf[js.Any], read = js.Any.fromFunction3(read))
     if (memlimit != null) __obj.updateDynamic("memlimit")(memlimit.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileOptions]
   }

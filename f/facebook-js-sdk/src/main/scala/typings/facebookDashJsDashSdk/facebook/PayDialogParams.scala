@@ -38,16 +38,16 @@ object PayDialogParams {
     request_id: String = null,
     test_currency: String = null
   ): PayDialogParams = {
-    val __obj = js.Dynamic.literal(action = action, method = method, product = product)
-    if (app_id != null) __obj.updateDynamic("app_id")(app_id)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], product = product.asInstanceOf[js.Any])
+    if (app_id != null) __obj.updateDynamic("app_id")(app_id.asInstanceOf[js.Any])
     if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (pricepoint_id != null) __obj.updateDynamic("pricepoint_id")(pricepoint_id)
+    if (pricepoint_id != null) __obj.updateDynamic("pricepoint_id")(pricepoint_id.asInstanceOf[js.Any])
     if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
     if (quantity_max != null) __obj.updateDynamic("quantity_max")(quantity_max.asInstanceOf[js.Any])
     if (quantity_min != null) __obj.updateDynamic("quantity_min")(quantity_min.asInstanceOf[js.Any])
-    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri)
-    if (request_id != null) __obj.updateDynamic("request_id")(request_id)
-    if (test_currency != null) __obj.updateDynamic("test_currency")(test_currency)
+    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri.asInstanceOf[js.Any])
+    if (request_id != null) __obj.updateDynamic("request_id")(request_id.asInstanceOf[js.Any])
+    if (test_currency != null) __obj.updateDynamic("test_currency")(test_currency.asInstanceOf[js.Any])
     __obj.asInstanceOf[PayDialogParams]
   }
 }

@@ -22,7 +22,7 @@ trait ISearchSuggestItem extends js.Object {
 object ISearchSuggestItem {
   @scala.inline
   def apply(qTerm: Double, qValue: String): ISearchSuggestItem = {
-    val __obj = js.Dynamic.literal(qTerm = qTerm, qValue = qValue)
+    val __obj = js.Dynamic.literal(qTerm = qTerm.asInstanceOf[js.Any], qValue = qValue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISearchSuggestItem]
   }

@@ -15,3 +15,22 @@ import scala.scalajs.js.annotation._
 */
 trait StyleProperty extends js.Object
 
+object StyleProperty {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def category: typings.theo.theoStrings.category = this.cast("category")
+  @scala.inline
+  def comment: typings.theo.theoStrings.comment = this.cast("comment")
+  @scala.inline
+  def meta: typings.theo.theoStrings.meta = this.cast("meta")
+  @scala.inline
+  def name: typings.theo.theoStrings.name = this.cast("name")
+  @scala.inline
+  def originalValue: typings.theo.theoStrings.originalValue = this.cast("originalValue")
+  @scala.inline
+  def `type`: typings.theo.theoStrings.`type` = this.cast("type")
+  @scala.inline
+  def value: typings.theo.theoStrings.value = this.cast("value")
+}
+

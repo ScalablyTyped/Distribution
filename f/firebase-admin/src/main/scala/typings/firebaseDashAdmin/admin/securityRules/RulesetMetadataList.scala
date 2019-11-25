@@ -18,8 +18,8 @@ trait RulesetMetadataList extends js.Object {
 object RulesetMetadataList {
   @scala.inline
   def apply(rulesets: js.Array[RulesetMetadata], nextPageToken: String = null): RulesetMetadataList = {
-    val __obj = js.Dynamic.literal(rulesets = rulesets)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    val __obj = js.Dynamic.literal(rulesets = rulesets.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[RulesetMetadataList]
   }
 }

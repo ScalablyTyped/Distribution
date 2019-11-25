@@ -13,9 +13,9 @@ trait Item extends js.Object {
 object Item {
   @scala.inline
   def apply(data: js.Any, next: Item = null, prev: Item = null): Item = {
-    val __obj = js.Dynamic.literal(data = data)
-    if (next != null) __obj.updateDynamic("next")(next)
-    if (prev != null) __obj.updateDynamic("prev")(prev)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
+    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
+    if (prev != null) __obj.updateDynamic("prev")(prev.asInstanceOf[js.Any])
     __obj.asInstanceOf[Item]
   }
 }

@@ -20,10 +20,10 @@ object Anon_NumberRange {
     tooltipIncrement: String = null
   ): Anon_NumberRange = {
     val __obj = js.Dynamic.literal()
-    if (numberRange != null) __obj.updateDynamic("numberRange")(numberRange)
-    if (required != null) __obj.updateDynamic("required")(required)
-    if (tooltipDecrement != null) __obj.updateDynamic("tooltipDecrement")(tooltipDecrement)
-    if (tooltipIncrement != null) __obj.updateDynamic("tooltipIncrement")(tooltipIncrement)
+    if (numberRange != null) __obj.updateDynamic("numberRange")(numberRange.asInstanceOf[js.Any])
+    if (required != null) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
+    if (tooltipDecrement != null) __obj.updateDynamic("tooltipDecrement")(tooltipDecrement.asInstanceOf[js.Any])
+    if (tooltipIncrement != null) __obj.updateDynamic("tooltipIncrement")(tooltipIncrement.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_NumberRange]
   }
 }

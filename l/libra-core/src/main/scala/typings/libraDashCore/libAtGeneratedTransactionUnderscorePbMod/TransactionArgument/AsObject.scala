@@ -14,7 +14,7 @@ object AsObject {
   @scala.inline
   def apply(data: Uint8Array | String, `type`: ArgType): AsObject = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsObject]
   }
 }

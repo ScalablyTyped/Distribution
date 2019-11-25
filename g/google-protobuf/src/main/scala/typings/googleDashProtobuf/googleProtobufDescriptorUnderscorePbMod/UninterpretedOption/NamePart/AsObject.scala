@@ -13,8 +13,8 @@ object AsObject {
   @scala.inline
   def apply(isExtension: js.UndefOr[Boolean] = js.undefined, namePart: String = null): AsObject = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isExtension)) __obj.updateDynamic("isExtension")(isExtension)
-    if (namePart != null) __obj.updateDynamic("namePart")(namePart)
+    if (!js.isUndefined(isExtension)) __obj.updateDynamic("isExtension")(isExtension.asInstanceOf[js.Any])
+    if (namePart != null) __obj.updateDynamic("namePart")(namePart.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsObject]
   }
 }

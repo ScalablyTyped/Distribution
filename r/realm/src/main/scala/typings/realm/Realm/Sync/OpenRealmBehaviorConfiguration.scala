@@ -18,9 +18,9 @@ object OpenRealmBehaviorConfiguration {
     timeOutBehavior: OpenRealmTimeOutBehavior = null
   ): OpenRealmBehaviorConfiguration = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (timeOut != null) __obj.updateDynamic("timeOut")(timeOut.asInstanceOf[js.Any])
-    if (timeOutBehavior != null) __obj.updateDynamic("timeOutBehavior")(timeOutBehavior)
+    if (timeOutBehavior != null) __obj.updateDynamic("timeOutBehavior")(timeOutBehavior.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenRealmBehaviorConfiguration]
   }
 }

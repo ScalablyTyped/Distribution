@@ -17,7 +17,7 @@ trait RevokeGrantOutput extends OutputTypesUnion {
 object RevokeGrantOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata): RevokeGrantOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RevokeGrantOutput]
   }

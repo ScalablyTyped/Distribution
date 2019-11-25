@@ -182,19 +182,19 @@ object JSTreeStaticDefaultsCore {
     worker: js.UndefOr[Boolean] = js.undefined
   ): JSTreeStaticDefaultsCore = {
     val __obj = js.Dynamic.literal(error = js.Any.fromFunction0(error))
-    if (animation != null) __obj.updateDynamic("animation")(animation)
-    if (check_callback != null) __obj.updateDynamic("check_callback")(check_callback)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (!js.isUndefined(dblclick_toggle)) __obj.updateDynamic("dblclick_toggle")(dblclick_toggle)
-    if (!js.isUndefined(expand_selected_onload)) __obj.updateDynamic("expand_selected_onload")(expand_selected_onload)
-    if (!js.isUndefined(force_text)) __obj.updateDynamic("force_text")(force_text)
-    if (keyboard != null) __obj.updateDynamic("keyboard")(keyboard)
-    if (!js.isUndefined(loaded_state)) __obj.updateDynamic("loaded_state")(loaded_state)
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
-    if (!js.isUndefined(restore_focus)) __obj.updateDynamic("restore_focus")(restore_focus)
-    if (strings != null) __obj.updateDynamic("strings")(strings)
-    if (themes != null) __obj.updateDynamic("themes")(themes)
-    if (!js.isUndefined(worker)) __obj.updateDynamic("worker")(worker)
+    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (check_callback != null) __obj.updateDynamic("check_callback")(check_callback.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (!js.isUndefined(dblclick_toggle)) __obj.updateDynamic("dblclick_toggle")(dblclick_toggle.asInstanceOf[js.Any])
+    if (!js.isUndefined(expand_selected_onload)) __obj.updateDynamic("expand_selected_onload")(expand_selected_onload.asInstanceOf[js.Any])
+    if (!js.isUndefined(force_text)) __obj.updateDynamic("force_text")(force_text.asInstanceOf[js.Any])
+    if (keyboard != null) __obj.updateDynamic("keyboard")(keyboard.asInstanceOf[js.Any])
+    if (!js.isUndefined(loaded_state)) __obj.updateDynamic("loaded_state")(loaded_state.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
+    if (!js.isUndefined(restore_focus)) __obj.updateDynamic("restore_focus")(restore_focus.asInstanceOf[js.Any])
+    if (strings != null) __obj.updateDynamic("strings")(strings.asInstanceOf[js.Any])
+    if (themes != null) __obj.updateDynamic("themes")(themes.asInstanceOf[js.Any])
+    if (!js.isUndefined(worker)) __obj.updateDynamic("worker")(worker.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSTreeStaticDefaultsCore]
   }
 }

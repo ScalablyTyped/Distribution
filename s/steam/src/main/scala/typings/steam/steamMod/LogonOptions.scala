@@ -14,9 +14,9 @@ trait LogonOptions extends js.Object {
 object LogonOptions {
   @scala.inline
   def apply(accountName: String, password: String, authCode: String = null, shaSentryfile: String = null): LogonOptions = {
-    val __obj = js.Dynamic.literal(accountName = accountName, password = password)
-    if (authCode != null) __obj.updateDynamic("authCode")(authCode)
-    if (shaSentryfile != null) __obj.updateDynamic("shaSentryfile")(shaSentryfile)
+    val __obj = js.Dynamic.literal(accountName = accountName.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any])
+    if (authCode != null) __obj.updateDynamic("authCode")(authCode.asInstanceOf[js.Any])
+    if (shaSentryfile != null) __obj.updateDynamic("shaSentryfile")(shaSentryfile.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogonOptions]
   }
 }

@@ -40,19 +40,19 @@ object SelectButtonProps {
     value: js.Any = null
   ): SelectButtonProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (dataKey != null) __obj.updateDynamic("dataKey")(dataKey)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (dataKey != null) __obj.updateDynamic("dataKey")(dataKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (optionLabel != null) __obj.updateDynamic("optionLabel")(optionLabel)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex)
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
-    if (tooltipOptions != null) __obj.updateDynamic("tooltipOptions")(tooltipOptions)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (optionLabel != null) __obj.updateDynamic("optionLabel")(optionLabel.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
+    if (tooltipOptions != null) __obj.updateDynamic("tooltipOptions")(tooltipOptions.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectButtonProps]
   }
 }

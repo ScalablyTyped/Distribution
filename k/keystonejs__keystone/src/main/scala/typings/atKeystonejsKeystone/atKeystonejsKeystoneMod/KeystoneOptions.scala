@@ -39,17 +39,17 @@ object KeystoneOptions {
     secureCookies: js.UndefOr[Boolean] = js.undefined,
     sessionStore: js.Any = null
   ): KeystoneOptions = {
-    val __obj = js.Dynamic.literal(adapter = adapter, name = name)
-    if (adapters != null) __obj.updateDynamic("adapters")(adapters)
+    val __obj = js.Dynamic.literal(adapter = adapter.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (adapters != null) __obj.updateDynamic("adapters")(adapters.asInstanceOf[js.Any])
     if (cookieMaxAge != null) __obj.updateDynamic("cookieMaxAge")(cookieMaxAge.asInstanceOf[js.Any])
-    if (cookieSecret != null) __obj.updateDynamic("cookieSecret")(cookieSecret)
-    if (defaultAcces != null) __obj.updateDynamic("defaultAcces")(defaultAcces)
-    if (defaultAdapter != null) __obj.updateDynamic("defaultAdapter")(defaultAdapter)
+    if (cookieSecret != null) __obj.updateDynamic("cookieSecret")(cookieSecret.asInstanceOf[js.Any])
+    if (defaultAcces != null) __obj.updateDynamic("defaultAcces")(defaultAcces.asInstanceOf[js.Any])
+    if (defaultAdapter != null) __obj.updateDynamic("defaultAdapter")(defaultAdapter.asInstanceOf[js.Any])
     if (onConnect != null) __obj.updateDynamic("onConnect")(js.Any.fromFunction0(onConnect))
-    if (queryLimits != null) __obj.updateDynamic("queryLimits")(queryLimits)
-    if (schemaNames != null) __obj.updateDynamic("schemaNames")(schemaNames)
-    if (!js.isUndefined(secureCookies)) __obj.updateDynamic("secureCookies")(secureCookies)
-    if (sessionStore != null) __obj.updateDynamic("sessionStore")(sessionStore)
+    if (queryLimits != null) __obj.updateDynamic("queryLimits")(queryLimits.asInstanceOf[js.Any])
+    if (schemaNames != null) __obj.updateDynamic("schemaNames")(schemaNames.asInstanceOf[js.Any])
+    if (!js.isUndefined(secureCookies)) __obj.updateDynamic("secureCookies")(secureCookies.asInstanceOf[js.Any])
+    if (sessionStore != null) __obj.updateDynamic("sessionStore")(sessionStore.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeystoneOptions]
   }
 }

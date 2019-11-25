@@ -14,7 +14,7 @@ object Attribute {
   @scala.inline
   def apply(`type`: Double, value: Double | Boolean | String | Buffer = null): Attribute = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attribute]
   }

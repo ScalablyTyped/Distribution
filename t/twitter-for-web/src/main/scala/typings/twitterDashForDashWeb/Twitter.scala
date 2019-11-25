@@ -25,7 +25,7 @@ object Twitter {
     ready: js.Function1[/* twttr */ Twitter, Unit] => Unit,
     widgets: TwitterWidgets
   ): Twitter = {
-    val __obj = js.Dynamic.literal(events = events, ready = js.Any.fromFunction1(ready), widgets = widgets)
+    val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], ready = js.Any.fromFunction1(ready), widgets = widgets.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Twitter]
   }

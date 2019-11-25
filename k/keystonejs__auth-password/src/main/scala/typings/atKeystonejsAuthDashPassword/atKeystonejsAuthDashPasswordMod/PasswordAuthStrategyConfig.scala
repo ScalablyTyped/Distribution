@@ -12,7 +12,7 @@ trait PasswordAuthStrategyConfig extends js.Object {
 object PasswordAuthStrategyConfig {
   @scala.inline
   def apply(identityField: String, secretField: String): PasswordAuthStrategyConfig = {
-    val __obj = js.Dynamic.literal(identityField = identityField, secretField = secretField)
+    val __obj = js.Dynamic.literal(identityField = identityField.asInstanceOf[js.Any], secretField = secretField.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PasswordAuthStrategyConfig]
   }

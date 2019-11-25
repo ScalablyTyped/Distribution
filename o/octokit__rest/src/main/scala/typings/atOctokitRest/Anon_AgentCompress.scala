@@ -22,8 +22,8 @@ object Anon_AgentCompress {
     timeout: Int | Double = null
   ): Anon_AgentCompress = {
     val __obj = js.Dynamic.literal()
-    if (agent != null) __obj.updateDynamic("agent")(agent)
-    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress)
+    if (agent != null) __obj.updateDynamic("agent")(agent.asInstanceOf[js.Any])
+    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress.asInstanceOf[js.Any])
     if (follow != null) __obj.updateDynamic("follow")(follow.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])

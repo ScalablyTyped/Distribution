@@ -23,10 +23,10 @@ object StrategyOptions {
     lang: String = null,
     profileFields: js.Array[String] = null
   ): StrategyOptions = {
-    val __obj = js.Dynamic.literal(callbackURL = callbackURL, clientID = clientID, clientSecret = clientSecret)
-    if (apiVersion != null) __obj.updateDynamic("apiVersion")(apiVersion)
-    if (lang != null) __obj.updateDynamic("lang")(lang)
-    if (profileFields != null) __obj.updateDynamic("profileFields")(profileFields)
+    val __obj = js.Dynamic.literal(callbackURL = callbackURL.asInstanceOf[js.Any], clientID = clientID.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any])
+    if (apiVersion != null) __obj.updateDynamic("apiVersion")(apiVersion.asInstanceOf[js.Any])
+    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
+    if (profileFields != null) __obj.updateDynamic("profileFields")(profileFields.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrategyOptions]
   }
 }

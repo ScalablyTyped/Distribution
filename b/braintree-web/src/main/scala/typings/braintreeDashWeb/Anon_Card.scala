@@ -13,7 +13,7 @@ trait Anon_Card extends js.Object {
 object Anon_Card {
   @scala.inline
   def apply(card: js.Any, hostedFields: HostedFields): Anon_Card = {
-    val __obj = js.Dynamic.literal(card = card, hostedFields = hostedFields)
+    val __obj = js.Dynamic.literal(card = card.asInstanceOf[js.Any], hostedFields = hostedFields.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Card]
   }

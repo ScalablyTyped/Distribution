@@ -13,3 +13,18 @@ import scala.scalajs.js.annotation._
 */
 trait NicknameType extends js.Object
 
+object NicknameType {
+  @scala.inline
+  def DEFAULT: typings.gapiDotPeople.gapiDotPeopleStrings.DEFAULT = this.cast("DEFAULT")
+  @scala.inline
+  def GPLUS: typings.gapiDotPeople.gapiDotPeopleStrings.GPLUS = this.cast("GPLUS")
+  @scala.inline
+  def INITIALS: typings.gapiDotPeople.gapiDotPeopleStrings.INITIALS = this.cast("INITIALS")
+  @scala.inline
+  def MAIDEN_NAME: typings.gapiDotPeople.gapiDotPeopleStrings.MAIDEN_NAME = this.cast("MAIDEN_NAME")
+  @scala.inline
+  def OTHER_NAME: typings.gapiDotPeople.gapiDotPeopleStrings.OTHER_NAME = this.cast("OTHER_NAME")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

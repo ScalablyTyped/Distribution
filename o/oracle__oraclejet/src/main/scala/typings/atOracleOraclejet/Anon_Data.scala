@@ -28,8 +28,8 @@ object Anon_Data {
     seriesData: js.Object,
     StringDictionary: /* propName */ StringDictionary[js.Any] = null
   ): Anon_Data = {
-    val __obj = js.Dynamic.literal(data = data, group = group, groupData = groupData, id = id, itemData = itemData, series = series, seriesData = seriesData)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], groupData = groupData.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], itemData = itemData.asInstanceOf[js.Any], series = series.asInstanceOf[js.Any], seriesData = seriesData.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_Data]
   }
 }

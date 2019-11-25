@@ -24,12 +24,12 @@ object Anon_Email {
     photo: String = null
   ): Anon_Email = {
     val __obj = js.Dynamic.literal()
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (familyName != null) __obj.updateDynamic("familyName")(familyName)
-    if (givenName != null) __obj.updateDynamic("givenName")(givenName)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (photo != null) __obj.updateDynamic("photo")(photo)
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (familyName != null) __obj.updateDynamic("familyName")(familyName.asInstanceOf[js.Any])
+    if (givenName != null) __obj.updateDynamic("givenName")(givenName.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (photo != null) __obj.updateDynamic("photo")(photo.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Email]
   }
 }

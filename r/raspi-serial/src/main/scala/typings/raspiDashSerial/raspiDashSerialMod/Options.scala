@@ -55,7 +55,7 @@ object Options {
     if (baudRate != null) __obj.updateDynamic("baudRate")(baudRate.asInstanceOf[js.Any])
     if (dataBits != null) __obj.updateDynamic("dataBits")(dataBits.asInstanceOf[js.Any])
     if (parity != null) __obj.updateDynamic("parity")(parity.asInstanceOf[js.Any])
-    if (portId != null) __obj.updateDynamic("portId")(portId)
+    if (portId != null) __obj.updateDynamic("portId")(portId.asInstanceOf[js.Any])
     if (stopBits != null) __obj.updateDynamic("stopBits")(stopBits.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

@@ -19,9 +19,9 @@ object Anon_Homepage {
     startup_pages: js.Array[String] = null
   ): Anon_Homepage = {
     val __obj = js.Dynamic.literal()
-    if (homepage != null) __obj.updateDynamic("homepage")(homepage)
-    if (search_provider != null) __obj.updateDynamic("search_provider")(search_provider)
-    if (startup_pages != null) __obj.updateDynamic("startup_pages")(startup_pages)
+    if (homepage != null) __obj.updateDynamic("homepage")(homepage.asInstanceOf[js.Any])
+    if (search_provider != null) __obj.updateDynamic("search_provider")(search_provider.asInstanceOf[js.Any])
+    if (startup_pages != null) __obj.updateDynamic("startup_pages")(startup_pages.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Homepage]
   }
 }

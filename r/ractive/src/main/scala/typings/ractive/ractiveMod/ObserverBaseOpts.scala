@@ -27,9 +27,9 @@ object ObserverBaseOpts {
     init: js.UndefOr[Boolean] = js.undefined
   ): ObserverBaseOpts = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (!js.isUndefined(defer)) __obj.updateDynamic("defer")(defer)
-    if (!js.isUndefined(init)) __obj.updateDynamic("init")(init)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (!js.isUndefined(defer)) __obj.updateDynamic("defer")(defer.asInstanceOf[js.Any])
+    if (!js.isUndefined(init)) __obj.updateDynamic("init")(init.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObserverBaseOpts]
   }
 }

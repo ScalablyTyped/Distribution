@@ -13,8 +13,8 @@ trait BinarySqlTokenType extends _SqlTokenType {
 object BinarySqlTokenType {
   @scala.inline
   def apply(data: Buffer, `type`: js.Symbol): BinarySqlTokenType = {
-    val __obj = js.Dynamic.literal(data = data)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BinarySqlTokenType]
   }
 }

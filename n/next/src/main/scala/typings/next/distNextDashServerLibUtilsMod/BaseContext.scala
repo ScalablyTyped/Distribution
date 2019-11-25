@@ -15,8 +15,8 @@ object BaseContext {
   @scala.inline
   def apply(StringDictionary: /* k */ StringDictionary[js.Any] = null, res: ServerResponse = null): BaseContext = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (res != null) __obj.updateDynamic("res")(res)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (res != null) __obj.updateDynamic("res")(res.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseContext]
   }
 }

@@ -12,7 +12,7 @@ trait Anon_FontSizeTextAlign extends js.Object {
 object Anon_FontSizeTextAlign {
   @scala.inline
   def apply(fontSize: Double, textAlign: String): Anon_FontSizeTextAlign = {
-    val __obj = js.Dynamic.literal(fontSize = fontSize, textAlign = textAlign)
+    val __obj = js.Dynamic.literal(fontSize = fontSize.asInstanceOf[js.Any], textAlign = textAlign.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FontSizeTextAlign]
   }

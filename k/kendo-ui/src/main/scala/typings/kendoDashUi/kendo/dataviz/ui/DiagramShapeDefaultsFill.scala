@@ -18,8 +18,8 @@ object DiagramShapeDefaultsFill {
     opacity: Int | Double = null
   ): DiagramShapeDefaultsFill = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (gradient != null) __obj.updateDynamic("gradient")(gradient)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (gradient != null) __obj.updateDynamic("gradient")(gradient.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagramShapeDefaultsFill]
   }

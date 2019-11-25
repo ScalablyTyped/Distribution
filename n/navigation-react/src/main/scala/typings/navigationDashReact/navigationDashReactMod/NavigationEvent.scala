@@ -32,7 +32,7 @@ trait NavigationEvent extends js.Object {
 object NavigationEvent {
   @scala.inline
   def apply(asyncData: js.Any, data: js.Any, oldState: State, state: State, stateNavigator: StateNavigator): NavigationEvent = {
-    val __obj = js.Dynamic.literal(asyncData = asyncData, data = data, oldState = oldState, state = state, stateNavigator = stateNavigator)
+    val __obj = js.Dynamic.literal(asyncData = asyncData.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], oldState = oldState.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], stateNavigator = stateNavigator.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NavigationEvent]
   }

@@ -23,10 +23,10 @@ object SamplerConfig {
     port: Int | Double = null,
     refreshIntervalMs: Int | Double = null
   ): SamplerConfig = {
-    val __obj = js.Dynamic.literal(param = param)
-    __obj.updateDynamic("type")(`type`)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (hostPort != null) __obj.updateDynamic("hostPort")(hostPort)
+    val __obj = js.Dynamic.literal(param = param.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (hostPort != null) __obj.updateDynamic("hostPort")(hostPort.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (refreshIntervalMs != null) __obj.updateDynamic("refreshIntervalMs")(refreshIntervalMs.asInstanceOf[js.Any])
     __obj.asInstanceOf[SamplerConfig]

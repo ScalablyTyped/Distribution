@@ -30,15 +30,15 @@ object EditorPasteCleanup {
     span: js.UndefOr[Boolean] = js.undefined
   ): EditorPasteCleanup = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(all)) __obj.updateDynamic("all")(all)
-    if (!js.isUndefined(css)) __obj.updateDynamic("css")(css)
-    if (custom != null) __obj.updateDynamic("custom")(custom)
-    if (!js.isUndefined(keepNewLines)) __obj.updateDynamic("keepNewLines")(keepNewLines)
-    if (!js.isUndefined(msAllFormatting)) __obj.updateDynamic("msAllFormatting")(msAllFormatting)
-    if (!js.isUndefined(msConvertLists)) __obj.updateDynamic("msConvertLists")(msConvertLists)
-    if (!js.isUndefined(msTags)) __obj.updateDynamic("msTags")(msTags)
-    if (!js.isUndefined(none)) __obj.updateDynamic("none")(none)
-    if (!js.isUndefined(span)) __obj.updateDynamic("span")(span)
+    if (!js.isUndefined(all)) __obj.updateDynamic("all")(all.asInstanceOf[js.Any])
+    if (!js.isUndefined(css)) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
+    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepNewLines)) __obj.updateDynamic("keepNewLines")(keepNewLines.asInstanceOf[js.Any])
+    if (!js.isUndefined(msAllFormatting)) __obj.updateDynamic("msAllFormatting")(msAllFormatting.asInstanceOf[js.Any])
+    if (!js.isUndefined(msConvertLists)) __obj.updateDynamic("msConvertLists")(msConvertLists.asInstanceOf[js.Any])
+    if (!js.isUndefined(msTags)) __obj.updateDynamic("msTags")(msTags.asInstanceOf[js.Any])
+    if (!js.isUndefined(none)) __obj.updateDynamic("none")(none.asInstanceOf[js.Any])
+    if (!js.isUndefined(span)) __obj.updateDynamic("span")(span.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorPasteCleanup]
   }
 }

@@ -14,7 +14,7 @@ trait Anon_AUTOVERIFIED extends js.Object {
 object Anon_AUTOVERIFIED {
   @scala.inline
   def apply(AUTO_VERIFIED: String, AUTO_VERIFY_TIMEOUT: String, CODE_SENT: String, ERROR: String): Anon_AUTOVERIFIED = {
-    val __obj = js.Dynamic.literal(AUTO_VERIFIED = AUTO_VERIFIED, AUTO_VERIFY_TIMEOUT = AUTO_VERIFY_TIMEOUT, CODE_SENT = CODE_SENT, ERROR = ERROR)
+    val __obj = js.Dynamic.literal(AUTO_VERIFIED = AUTO_VERIFIED.asInstanceOf[js.Any], AUTO_VERIFY_TIMEOUT = AUTO_VERIFY_TIMEOUT.asInstanceOf[js.Any], CODE_SENT = CODE_SENT.asInstanceOf[js.Any], ERROR = ERROR.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AUTOVERIFIED]
   }

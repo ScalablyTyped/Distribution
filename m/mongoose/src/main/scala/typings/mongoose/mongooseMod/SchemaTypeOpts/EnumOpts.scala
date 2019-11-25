@@ -13,8 +13,8 @@ object EnumOpts {
   @scala.inline
   def apply[T](message: String = null, values: js.Array[T] = null): EnumOpts[T] = {
     val __obj = js.Dynamic.literal()
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumOpts[T]]
   }
 }

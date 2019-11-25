@@ -23,7 +23,7 @@ object AxisPointBreakEventObject {
     target: SVGElement,
     `type`: pointBreak | pointInBreak
   ): AxisPointBreakEventObject = {
-    val __obj = js.Dynamic.literal(brk = brk, point = point, preventDefault = preventDefault, target = target)
+    val __obj = js.Dynamic.literal(brk = brk.asInstanceOf[js.Any], point = point.asInstanceOf[js.Any], preventDefault = preventDefault.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AxisPointBreakEventObject]
   }

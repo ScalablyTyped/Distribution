@@ -29,11 +29,11 @@ object ValidatorOptions {
     min: Int | Double = null
   ): ValidatorOptions = {
     val __obj = js.Dynamic.literal()
-    if (converter != null) __obj.updateDynamic("converter")(converter)
-    if (hint != null) __obj.updateDynamic("hint")(hint)
+    if (converter != null) __obj.updateDynamic("converter")(converter.asInstanceOf[js.Any])
+    if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (messageDetail != null) __obj.updateDynamic("messageDetail")(messageDetail)
-    if (messageSummary != null) __obj.updateDynamic("messageSummary")(messageSummary)
+    if (messageDetail != null) __obj.updateDynamic("messageDetail")(messageDetail.asInstanceOf[js.Any])
+    if (messageSummary != null) __obj.updateDynamic("messageSummary")(messageSummary.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidatorOptions]
   }

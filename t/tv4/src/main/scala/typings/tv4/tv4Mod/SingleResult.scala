@@ -11,7 +11,7 @@ trait SingleResult extends BaseResult {
 object SingleResult {
   @scala.inline
   def apply(error: ValidationError, missing: js.Array[String], valid: Boolean): SingleResult = {
-    val __obj = js.Dynamic.literal(error = error, missing = missing, valid = valid)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], missing = missing.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SingleResult]
   }

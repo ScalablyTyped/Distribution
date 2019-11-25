@@ -11,7 +11,7 @@ trait SingOutOptions extends js.Object {
 object SingOutOptions {
   @scala.inline
   def apply(mustInvalidate: Boolean): SingOutOptions = {
-    val __obj = js.Dynamic.literal(mustInvalidate = mustInvalidate)
+    val __obj = js.Dynamic.literal(mustInvalidate = mustInvalidate.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SingOutOptions]
   }

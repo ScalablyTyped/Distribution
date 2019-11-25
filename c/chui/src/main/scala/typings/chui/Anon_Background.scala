@@ -19,10 +19,10 @@ object Anon_Background {
     handle: js.UndefOr[Boolean] = js.undefined,
     listClass: String = null
   ): Anon_Background = {
-    val __obj = js.Dynamic.literal(id = id)
-    if (background != null) __obj.updateDynamic("background")(background)
-    if (!js.isUndefined(handle)) __obj.updateDynamic("handle")(handle)
-    if (listClass != null) __obj.updateDynamic("listClass")(listClass)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    if (!js.isUndefined(handle)) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
+    if (listClass != null) __obj.updateDynamic("listClass")(listClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Background]
   }
 }

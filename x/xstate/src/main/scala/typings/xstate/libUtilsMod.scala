@@ -31,7 +31,7 @@ object libUtilsMod extends js.Object {
   def bindActionToState[TC, TE /* <: EventObject */](action: ActionObject[TC, TE], state: StateInterface[TC, TE]): ActionObject[TC, TE] = js.native
   def flatten[T](array: js.Array[T | js.Array[T]]): js.Array[T] = js.native
   def getActionType(action: Action[_, _]): ActionType = js.native
-  def getEventType[TEvent /* <: EventObject */](event: Event[TEvent]): /* import warning: ImportType.apply Failed type conversion: TEvent['type'] */ js.Any = js.native
+  def getEventType[TEvent /* <: EventObject */](event: Event[TEvent]): /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any = js.native
   def isArray(value: js.Any): /* is std.Array<any> */ Boolean = js.native
   def isBuiltInEvent(eventType: EventType): Boolean = js.native
   def isFunction(value: js.Any): /* is std.Function */ Boolean = js.native

@@ -67,7 +67,7 @@ object IModel {
     selections: IObservableMap[js.Array[ITextSelection]],
     value: IObservableString
   ): IModel = {
-    val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), isDisposed = isDisposed, mimeType = mimeType, mimeTypeChanged = mimeTypeChanged, modelDB = modelDB, selections = selections, value = value)
+    val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), isDisposed = isDisposed.asInstanceOf[js.Any], mimeType = mimeType.asInstanceOf[js.Any], mimeTypeChanged = mimeTypeChanged.asInstanceOf[js.Any], modelDB = modelDB.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IModel]
   }

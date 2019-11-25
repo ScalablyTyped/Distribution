@@ -13,8 +13,8 @@ object Anon_Modules {
   @scala.inline
   def apply(modules: js.UndefOr[Boolean] = js.undefined, targets: String = null): Anon_Modules = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(modules)) __obj.updateDynamic("modules")(modules)
-    if (targets != null) __obj.updateDynamic("targets")(targets)
+    if (!js.isUndefined(modules)) __obj.updateDynamic("modules")(modules.asInstanceOf[js.Any])
+    if (targets != null) __obj.updateDynamic("targets")(targets.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Modules]
   }
 }

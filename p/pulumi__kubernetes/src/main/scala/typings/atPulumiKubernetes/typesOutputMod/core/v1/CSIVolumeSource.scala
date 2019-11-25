@@ -46,7 +46,7 @@ object CSIVolumeSource {
     readOnly: Boolean,
     volumeAttributes: StringDictionary[String]
   ): CSIVolumeSource = {
-    val __obj = js.Dynamic.literal(driver = driver, fsType = fsType, nodePublishSecretRef = nodePublishSecretRef, readOnly = readOnly, volumeAttributes = volumeAttributes)
+    val __obj = js.Dynamic.literal(driver = driver.asInstanceOf[js.Any], fsType = fsType.asInstanceOf[js.Any], nodePublishSecretRef = nodePublishSecretRef.asInstanceOf[js.Any], readOnly = readOnly.asInstanceOf[js.Any], volumeAttributes = volumeAttributes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CSIVolumeSource]
   }

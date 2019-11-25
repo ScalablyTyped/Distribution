@@ -19,10 +19,10 @@ object ObserverArrayOpts {
     defer: js.UndefOr[Boolean] = js.undefined,
     init: js.UndefOr[Boolean] = js.undefined
   ): ObserverArrayOpts = {
-    val __obj = js.Dynamic.literal(array = array)
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (!js.isUndefined(defer)) __obj.updateDynamic("defer")(defer)
-    if (!js.isUndefined(init)) __obj.updateDynamic("init")(init)
+    val __obj = js.Dynamic.literal(array = array.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (!js.isUndefined(defer)) __obj.updateDynamic("defer")(defer.asInstanceOf[js.Any])
+    if (!js.isUndefined(init)) __obj.updateDynamic("init")(init.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObserverArrayOpts]
   }
 }

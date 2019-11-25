@@ -36,7 +36,7 @@ object Hide {
     if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
     if (effect != null) __obj.updateDynamic("effect")(effect.asInstanceOf[js.Any])
     if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixed)) __obj.updateDynamic("fixed")(fixed)
+    if (!js.isUndefined(fixed)) __obj.updateDynamic("fixed")(fixed.asInstanceOf[js.Any])
     if (inactive != null) __obj.updateDynamic("inactive")(inactive.asInstanceOf[js.Any])
     if (leave != null) __obj.updateDynamic("leave")(leave.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])

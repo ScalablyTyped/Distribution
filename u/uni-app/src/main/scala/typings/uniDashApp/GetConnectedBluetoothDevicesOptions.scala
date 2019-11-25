@@ -34,7 +34,7 @@ object GetConnectedBluetoothDevicesOptions {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
-    if (services != null) __obj.updateDynamic("services")(services)
+    if (services != null) __obj.updateDynamic("services")(services.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[GetConnectedBluetoothDevicesOptions]
   }

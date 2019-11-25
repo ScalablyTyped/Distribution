@@ -18,9 +18,9 @@ object CreateItemData {
     relationships: CreateItemDataRelationships = null
   ): CreateItemData = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
-    if (relationships != null) __obj.updateDynamic("relationships")(relationships)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (relationships != null) __obj.updateDynamic("relationships")(relationships.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateItemData]
   }
 }

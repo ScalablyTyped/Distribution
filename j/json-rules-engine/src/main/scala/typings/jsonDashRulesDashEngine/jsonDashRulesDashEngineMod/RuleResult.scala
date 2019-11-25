@@ -21,8 +21,8 @@ object RuleResult {
     event: Event = null,
     priority: Int | Double = null
   ): RuleResult = {
-    val __obj = js.Dynamic.literal(conditions = conditions, name = name, result = result)
-    if (event != null) __obj.updateDynamic("event")(event)
+    val __obj = js.Dynamic.literal(conditions = conditions.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleResult]
   }

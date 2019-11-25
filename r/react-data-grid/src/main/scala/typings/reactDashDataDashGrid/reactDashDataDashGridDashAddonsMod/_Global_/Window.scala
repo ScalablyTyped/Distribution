@@ -12,7 +12,7 @@ trait Window extends js.Object {
 object Window {
   @scala.inline
   def apply(ReactDataGridPlugins: Anon_Data): Window = {
-    val __obj = js.Dynamic.literal(ReactDataGridPlugins = ReactDataGridPlugins)
+    val __obj = js.Dynamic.literal(ReactDataGridPlugins = ReactDataGridPlugins.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Window]
   }

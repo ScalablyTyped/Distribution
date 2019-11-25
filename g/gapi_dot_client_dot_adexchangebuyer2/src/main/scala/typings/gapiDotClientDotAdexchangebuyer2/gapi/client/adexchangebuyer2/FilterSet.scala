@@ -81,19 +81,19 @@ object FilterSet {
     timeSeriesGranularity: String = null
   ): FilterSet = {
     val __obj = js.Dynamic.literal()
-    if (absoluteDateRange != null) __obj.updateDynamic("absoluteDateRange")(absoluteDateRange)
-    if (buyerAccountId != null) __obj.updateDynamic("buyerAccountId")(buyerAccountId)
-    if (creativeId != null) __obj.updateDynamic("creativeId")(creativeId)
-    if (dealId != null) __obj.updateDynamic("dealId")(dealId)
-    if (environment != null) __obj.updateDynamic("environment")(environment)
-    if (filterSetId != null) __obj.updateDynamic("filterSetId")(filterSetId)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (ownerAccountId != null) __obj.updateDynamic("ownerAccountId")(ownerAccountId)
-    if (platforms != null) __obj.updateDynamic("platforms")(platforms)
-    if (realtimeTimeRange != null) __obj.updateDynamic("realtimeTimeRange")(realtimeTimeRange)
-    if (relativeDateRange != null) __obj.updateDynamic("relativeDateRange")(relativeDateRange)
-    if (sellerNetworkIds != null) __obj.updateDynamic("sellerNetworkIds")(sellerNetworkIds)
-    if (timeSeriesGranularity != null) __obj.updateDynamic("timeSeriesGranularity")(timeSeriesGranularity)
+    if (absoluteDateRange != null) __obj.updateDynamic("absoluteDateRange")(absoluteDateRange.asInstanceOf[js.Any])
+    if (buyerAccountId != null) __obj.updateDynamic("buyerAccountId")(buyerAccountId.asInstanceOf[js.Any])
+    if (creativeId != null) __obj.updateDynamic("creativeId")(creativeId.asInstanceOf[js.Any])
+    if (dealId != null) __obj.updateDynamic("dealId")(dealId.asInstanceOf[js.Any])
+    if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
+    if (filterSetId != null) __obj.updateDynamic("filterSetId")(filterSetId.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (ownerAccountId != null) __obj.updateDynamic("ownerAccountId")(ownerAccountId.asInstanceOf[js.Any])
+    if (platforms != null) __obj.updateDynamic("platforms")(platforms.asInstanceOf[js.Any])
+    if (realtimeTimeRange != null) __obj.updateDynamic("realtimeTimeRange")(realtimeTimeRange.asInstanceOf[js.Any])
+    if (relativeDateRange != null) __obj.updateDynamic("relativeDateRange")(relativeDateRange.asInstanceOf[js.Any])
+    if (sellerNetworkIds != null) __obj.updateDynamic("sellerNetworkIds")(sellerNetworkIds.asInstanceOf[js.Any])
+    if (timeSeriesGranularity != null) __obj.updateDynamic("timeSeriesGranularity")(timeSeriesGranularity.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterSet]
   }
 }

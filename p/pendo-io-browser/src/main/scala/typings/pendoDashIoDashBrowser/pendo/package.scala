@@ -11,7 +11,7 @@ package object pendo {
   import typings.std.Date
 
   type Account = Anon_IdString with Metadata
-  type Events = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type Events = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in 'ready' | 'guidesLoaded' | 'guidesFailed' ]: -? (callback : pendo-io-browser.pendo.EventCallbacks[K]): / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias pendo-io-browser.pendo.Events * / object}
     */ typings.pendoDashIoDashBrowser.pendoDashIoDashBrowserStrings.Events with EventCallbacks
   type Metadata = StringDictionary[String | Double | Boolean | Date | (js.Array[Double | String])]

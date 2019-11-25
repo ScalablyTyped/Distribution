@@ -20,8 +20,8 @@ object DeleteCardOptions {
   @scala.inline
   def apply(sandbox: Sandbox = null, xhr: Transport = null): DeleteCardOptions = {
     val __obj = js.Dynamic.literal()
-    if (sandbox != null) __obj.updateDynamic("sandbox")(sandbox)
-    if (xhr != null) __obj.updateDynamic("xhr")(xhr)
+    if (sandbox != null) __obj.updateDynamic("sandbox")(sandbox.asInstanceOf[js.Any])
+    if (xhr != null) __obj.updateDynamic("xhr")(xhr.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteCardOptions]
   }
 }

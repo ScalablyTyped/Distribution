@@ -1,11 +1,5 @@
 package typings.consul.consulMod.Agent
 
-import typings.consul.Fn_CallbackIdOptsDeregisterOptions
-import typings.consul.Fn_CallbackIdOptsFailOptions
-import typings.consul.Fn_CallbackIdOptsPassOptions
-import typings.consul.Fn_CallbackIdOptsString
-import typings.consul.Fn_CallbackOptsListOptionsTData
-import typings.consul.Fn_CallbackOptsRegisterOptions
 import typings.consul.consulMod.Agent.Check.DeregisterOptions
 import typings.consul.consulMod.Agent.Check.FailOptions
 import typings.consul.consulMod.Agent.Check.ListOptions
@@ -23,36 +17,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Check_ extends js.Object {
   var consul: Consul = js.native
-  /**
-    * Deregister a local check
-    */
-  @JSName("deregister")
-  var deregister_Original: Fn_CallbackIdOptsDeregisterOptions = js.native
-  /**
-    * Mark a local test as critical
-    */
-  @JSName("fail")
-  var fail_Original: Fn_CallbackIdOptsFailOptions = js.native
-  /**
-    * Returns the checks the local agent is managing
-    */
-  @JSName("list")
-  var list_Original: Fn_CallbackOptsListOptionsTData = js.native
-  /**
-    * Mark a local test as passing
-    */
-  @JSName("pass")
-  var pass_Original: Fn_CallbackIdOptsPassOptions = js.native
-  /**
-    * Registers a new local check
-    */
-  @JSName("register")
-  var register_Original: Fn_CallbackOptsRegisterOptions = js.native
-  /**
-    * Mark a local test as warning
-    */
-  @JSName("warn")
-  var warn_Original: Fn_CallbackIdOptsString = js.native
   /**
     * Deregister a local check
     */

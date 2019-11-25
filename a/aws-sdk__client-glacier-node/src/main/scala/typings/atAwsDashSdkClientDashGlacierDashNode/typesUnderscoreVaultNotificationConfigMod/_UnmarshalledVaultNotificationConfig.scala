@@ -16,8 +16,8 @@ object _UnmarshalledVaultNotificationConfig {
   @scala.inline
   def apply(Events: js.Array[String] = null, SNSTopic: String = null): _UnmarshalledVaultNotificationConfig = {
     val __obj = js.Dynamic.literal()
-    if (Events != null) __obj.updateDynamic("Events")(Events)
-    if (SNSTopic != null) __obj.updateDynamic("SNSTopic")(SNSTopic)
+    if (Events != null) __obj.updateDynamic("Events")(Events.asInstanceOf[js.Any])
+    if (SNSTopic != null) __obj.updateDynamic("SNSTopic")(SNSTopic.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledVaultNotificationConfig]
   }
 }

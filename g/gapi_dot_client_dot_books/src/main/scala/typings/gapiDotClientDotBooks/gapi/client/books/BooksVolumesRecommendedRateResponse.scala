@@ -12,7 +12,7 @@ object BooksVolumesRecommendedRateResponse {
   @scala.inline
   def apply(consistency_token: String = null): BooksVolumesRecommendedRateResponse = {
     val __obj = js.Dynamic.literal()
-    if (consistency_token != null) __obj.updateDynamic("consistency_token")(consistency_token)
+    if (consistency_token != null) __obj.updateDynamic("consistency_token")(consistency_token.asInstanceOf[js.Any])
     __obj.asInstanceOf[BooksVolumesRecommendedRateResponse]
   }
 }

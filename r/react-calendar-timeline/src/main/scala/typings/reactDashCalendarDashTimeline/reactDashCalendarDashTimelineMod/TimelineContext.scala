@@ -21,7 +21,7 @@ object TimelineContext {
     visibleTimeEnd: Double,
     visibleTimeStart: Double
   ): TimelineContext = {
-    val __obj = js.Dynamic.literal(canvasTimeEnd = canvasTimeEnd, canvasTimeStart = canvasTimeStart, timelineWidth = timelineWidth, visibleTimeEnd = visibleTimeEnd, visibleTimeStart = visibleTimeStart)
+    val __obj = js.Dynamic.literal(canvasTimeEnd = canvasTimeEnd.asInstanceOf[js.Any], canvasTimeStart = canvasTimeStart.asInstanceOf[js.Any], timelineWidth = timelineWidth.asInstanceOf[js.Any], visibleTimeEnd = visibleTimeEnd.asInstanceOf[js.Any], visibleTimeStart = visibleTimeStart.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TimelineContext]
   }

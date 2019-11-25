@@ -37,7 +37,7 @@ object IdentityManagerGenerateTokenOptions {
     ssl: Boolean,
     token: String
   ): IdentityManagerGenerateTokenOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), serverUrl = serverUrl, ssl = ssl, token = token)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), serverUrl = serverUrl.asInstanceOf[js.Any], ssl = ssl.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IdentityManagerGenerateTokenOptions]
   }

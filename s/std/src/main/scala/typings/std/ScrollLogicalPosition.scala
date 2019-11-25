@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait ScrollLogicalPosition extends js.Object
 
+object ScrollLogicalPosition {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def center: typings.std.stdStrings.center = this.cast("center")
+  @scala.inline
+  def end: typings.std.stdStrings.end = this.cast("end")
+  @scala.inline
+  def nearest: typings.std.stdStrings.nearest = this.cast("nearest")
+  @scala.inline
+  def start: typings.std.stdStrings.start = this.cast("start")
+}
+

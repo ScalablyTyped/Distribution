@@ -29,10 +29,10 @@ object Anon_Amount {
     pattern_id: String = null,
     `type`: String = null
   ): Anon_Amount = {
-    val __obj = js.Dynamic.literal(amount = amount, datetime = datetime, direction = direction, operation_id = operation_id, status = status, title = title)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (pattern_id != null) __obj.updateDynamic("pattern_id")(pattern_id)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], datetime = datetime.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], operation_id = operation_id.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (pattern_id != null) __obj.updateDynamic("pattern_id")(pattern_id.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Amount]
   }
 }

@@ -79,13 +79,13 @@ object ILoadingBarProvider {
     startSize: Int | Double = null
   ): ILoadingBarProvider = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete), inc = js.Any.fromFunction0(inc), set = js.Any.fromFunction1(set), start = js.Any.fromFunction0(start), status = js.Any.fromFunction0(status))
-    if (!js.isUndefined(autoIncrement)) __obj.updateDynamic("autoIncrement")(autoIncrement)
-    if (!js.isUndefined(includeBar)) __obj.updateDynamic("includeBar")(includeBar)
-    if (!js.isUndefined(includeSpinner)) __obj.updateDynamic("includeSpinner")(includeSpinner)
+    if (!js.isUndefined(autoIncrement)) __obj.updateDynamic("autoIncrement")(autoIncrement.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeBar)) __obj.updateDynamic("includeBar")(includeBar.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeSpinner)) __obj.updateDynamic("includeSpinner")(includeSpinner.asInstanceOf[js.Any])
     if (latencyThreshold != null) __obj.updateDynamic("latencyThreshold")(latencyThreshold.asInstanceOf[js.Any])
-    if (loadingBarTemplate != null) __obj.updateDynamic("loadingBarTemplate")(loadingBarTemplate)
-    if (parentSelector != null) __obj.updateDynamic("parentSelector")(parentSelector)
-    if (spinnerTemplate != null) __obj.updateDynamic("spinnerTemplate")(spinnerTemplate)
+    if (loadingBarTemplate != null) __obj.updateDynamic("loadingBarTemplate")(loadingBarTemplate.asInstanceOf[js.Any])
+    if (parentSelector != null) __obj.updateDynamic("parentSelector")(parentSelector.asInstanceOf[js.Any])
+    if (spinnerTemplate != null) __obj.updateDynamic("spinnerTemplate")(spinnerTemplate.asInstanceOf[js.Any])
     if (startSize != null) __obj.updateDynamic("startSize")(startSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILoadingBarProvider]
   }

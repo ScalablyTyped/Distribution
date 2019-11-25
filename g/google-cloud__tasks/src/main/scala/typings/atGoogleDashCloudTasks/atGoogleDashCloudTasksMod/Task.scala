@@ -29,7 +29,7 @@ object Task {
     scheduleTime: String,
     view: View
   ): Task = {
-    val __obj = js.Dynamic.literal(appEngineHttpRequest = appEngineHttpRequest, createTime = createTime, dispatchCount = dispatchCount, firstAttempt = firstAttempt, lastAttempt = lastAttempt, name = name, responseCount = responseCount, scheduleTime = scheduleTime, view = view)
+    val __obj = js.Dynamic.literal(appEngineHttpRequest = appEngineHttpRequest.asInstanceOf[js.Any], createTime = createTime.asInstanceOf[js.Any], dispatchCount = dispatchCount.asInstanceOf[js.Any], firstAttempt = firstAttempt.asInstanceOf[js.Any], lastAttempt = lastAttempt.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], responseCount = responseCount.asInstanceOf[js.Any], scheduleTime = scheduleTime.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Task]
   }

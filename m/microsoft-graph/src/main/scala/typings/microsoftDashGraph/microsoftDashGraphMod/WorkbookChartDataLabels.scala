@@ -43,16 +43,16 @@ object WorkbookChartDataLabels {
     showValue: js.UndefOr[Boolean] = js.undefined
   ): WorkbookChartDataLabels = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (separator != null) __obj.updateDynamic("separator")(separator)
-    if (!js.isUndefined(showBubbleSize)) __obj.updateDynamic("showBubbleSize")(showBubbleSize)
-    if (!js.isUndefined(showCategoryName)) __obj.updateDynamic("showCategoryName")(showCategoryName)
-    if (!js.isUndefined(showLegendKey)) __obj.updateDynamic("showLegendKey")(showLegendKey)
-    if (!js.isUndefined(showPercentage)) __obj.updateDynamic("showPercentage")(showPercentage)
-    if (!js.isUndefined(showSeriesName)) __obj.updateDynamic("showSeriesName")(showSeriesName)
-    if (!js.isUndefined(showValue)) __obj.updateDynamic("showValue")(showValue)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
+    if (!js.isUndefined(showBubbleSize)) __obj.updateDynamic("showBubbleSize")(showBubbleSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(showCategoryName)) __obj.updateDynamic("showCategoryName")(showCategoryName.asInstanceOf[js.Any])
+    if (!js.isUndefined(showLegendKey)) __obj.updateDynamic("showLegendKey")(showLegendKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(showPercentage)) __obj.updateDynamic("showPercentage")(showPercentage.asInstanceOf[js.Any])
+    if (!js.isUndefined(showSeriesName)) __obj.updateDynamic("showSeriesName")(showSeriesName.asInstanceOf[js.Any])
+    if (!js.isUndefined(showValue)) __obj.updateDynamic("showValue")(showValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookChartDataLabels]
   }
 }

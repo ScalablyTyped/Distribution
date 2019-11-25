@@ -19,9 +19,9 @@ object NullComparator {
     lessThan: js.UndefOr[Boolean] = js.undefined
   ): NullComparator = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(equals)) __obj.updateDynamic("equals")(equals)
-    if (!js.isUndefined(greaterThan)) __obj.updateDynamic("greaterThan")(greaterThan)
-    if (!js.isUndefined(lessThan)) __obj.updateDynamic("lessThan")(lessThan)
+    if (!js.isUndefined(equals)) __obj.updateDynamic("equals")(equals.asInstanceOf[js.Any])
+    if (!js.isUndefined(greaterThan)) __obj.updateDynamic("greaterThan")(greaterThan.asInstanceOf[js.Any])
+    if (!js.isUndefined(lessThan)) __obj.updateDynamic("lessThan")(lessThan.asInstanceOf[js.Any])
     __obj.asInstanceOf[NullComparator]
   }
 }

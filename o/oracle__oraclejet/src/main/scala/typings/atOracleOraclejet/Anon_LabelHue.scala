@@ -20,10 +20,10 @@ object Anon_LabelHue {
     labelThumbDesc: String = null
   ): Anon_LabelHue = {
     val __obj = js.Dynamic.literal()
-    if (labelHue != null) __obj.updateDynamic("labelHue")(labelHue)
-    if (labelOpacity != null) __obj.updateDynamic("labelOpacity")(labelOpacity)
-    if (labelSatLum != null) __obj.updateDynamic("labelSatLum")(labelSatLum)
-    if (labelThumbDesc != null) __obj.updateDynamic("labelThumbDesc")(labelThumbDesc)
+    if (labelHue != null) __obj.updateDynamic("labelHue")(labelHue.asInstanceOf[js.Any])
+    if (labelOpacity != null) __obj.updateDynamic("labelOpacity")(labelOpacity.asInstanceOf[js.Any])
+    if (labelSatLum != null) __obj.updateDynamic("labelSatLum")(labelSatLum.asInstanceOf[js.Any])
+    if (labelThumbDesc != null) __obj.updateDynamic("labelThumbDesc")(labelThumbDesc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_LabelHue]
   }
 }

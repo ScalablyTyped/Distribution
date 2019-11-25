@@ -13,9 +13,9 @@ trait Common extends js.Object {
 object Common {
   @scala.inline
   def apply(customChain: CustomChainParams, baseChain: chain = null, hardfork: hardfork = null): Common = {
-    val __obj = js.Dynamic.literal(customChain = customChain)
-    if (baseChain != null) __obj.updateDynamic("baseChain")(baseChain)
-    if (hardfork != null) __obj.updateDynamic("hardfork")(hardfork)
+    val __obj = js.Dynamic.literal(customChain = customChain.asInstanceOf[js.Any])
+    if (baseChain != null) __obj.updateDynamic("baseChain")(baseChain.asInstanceOf[js.Any])
+    if (hardfork != null) __obj.updateDynamic("hardfork")(hardfork.asInstanceOf[js.Any])
     __obj.asInstanceOf[Common]
   }
 }

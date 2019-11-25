@@ -35,7 +35,7 @@ trait ojButtonsetOne extends ojButtonset[ojButtonsetOneSettableProperties] {
   var onFocusManagementChanged: (js.Function1[/* event */ JetElementCustomEvent[oneTabstop | none], _]) | Null = js.native
   var onValueChanged: (js.Function1[
     /* event */ JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojbutton.ojButtonsetOne['value'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojbutton.ojButtonsetOne['value'] */ js.Any
     ], 
     _
   ]) | Null = js.native
@@ -72,7 +72,7 @@ trait ojButtonsetOne extends ojButtonset[ojButtonsetOneSettableProperties] {
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojbutton.ojButtonsetOne['value'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojbutton.ojButtonsetOne['value'] */ js.Any
       ], 
       _
     ]
@@ -82,7 +82,7 @@ trait ojButtonsetOne extends ojButtonset[ojButtonsetOneSettableProperties] {
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojbutton.ojButtonsetOne['value'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojbutton.ojButtonsetOne['value'] */ js.Any
       ], 
       _
     ],
@@ -108,7 +108,7 @@ trait ojButtonsetOne extends ojButtonset[ojButtonsetOneSettableProperties] {
   @JSName("getProperty")
   def getProperty_focusManagement(property: focusManagement): oneTabstop | none = js.native
   @JSName("getProperty")
-  def getProperty_value(property: value): /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojbutton.ojButtonsetOne['value'] */ js.Any = js.native
+  def getProperty_value(property: value): /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojbutton.ojButtonsetOne['value'] */ js.Any = js.native
   def setProperties(properties: ojButtonsetOneSettablePropertiesLenient): Unit = js.native
   def setProperty(property: chroming, value: full): Unit = js.native
   def setProperty(property: chroming, value: half): Unit = js.native

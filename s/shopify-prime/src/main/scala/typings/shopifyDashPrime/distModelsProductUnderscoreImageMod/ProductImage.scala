@@ -55,16 +55,16 @@ object ProductImage {
     variant_ids: js.Array[Double] = null
   ): ProductImage = {
     val __obj = js.Dynamic.literal()
-    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
-    if (attachment != null) __obj.updateDynamic("attachment")(attachment)
-    if (created_at != null) __obj.updateDynamic("created_at")(created_at)
-    if (filename != null) __obj.updateDynamic("filename")(filename)
+    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id.asInstanceOf[js.Any])
+    if (attachment != null) __obj.updateDynamic("attachment")(attachment.asInstanceOf[js.Any])
+    if (created_at != null) __obj.updateDynamic("created_at")(created_at.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (product_id != null) __obj.updateDynamic("product_id")(product_id.asInstanceOf[js.Any])
-    if (src != null) __obj.updateDynamic("src")(src)
-    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at)
-    if (variant_ids != null) __obj.updateDynamic("variant_ids")(variant_ids)
+    if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
+    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at.asInstanceOf[js.Any])
+    if (variant_ids != null) __obj.updateDynamic("variant_ids")(variant_ids.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProductImage]
   }
 }

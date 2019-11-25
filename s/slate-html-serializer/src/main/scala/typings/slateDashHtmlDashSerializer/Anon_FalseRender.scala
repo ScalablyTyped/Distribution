@@ -12,7 +12,7 @@ trait Anon_FalseRender extends js.Object {
 object Anon_FalseRender {
   @scala.inline
   def apply(render: `false`): Anon_FalseRender = {
-    val __obj = js.Dynamic.literal(render = render)
+    val __obj = js.Dynamic.literal(render = render.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FalseRender]
   }

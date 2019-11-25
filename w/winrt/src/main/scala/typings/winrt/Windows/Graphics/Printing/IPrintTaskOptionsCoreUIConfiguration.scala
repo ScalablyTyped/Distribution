@@ -12,7 +12,7 @@ trait IPrintTaskOptionsCoreUIConfiguration extends js.Object {
 object IPrintTaskOptionsCoreUIConfiguration {
   @scala.inline
   def apply(displayedOptions: IVector[String]): IPrintTaskOptionsCoreUIConfiguration = {
-    val __obj = js.Dynamic.literal(displayedOptions = displayedOptions)
+    val __obj = js.Dynamic.literal(displayedOptions = displayedOptions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IPrintTaskOptionsCoreUIConfiguration]
   }

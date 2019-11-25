@@ -15,8 +15,8 @@ object TimelineFeedResponseFeedItemsItem {
     media_or_ad: TimelineFeedResponseMedia_or_ad,
     stories_netego: TimelineFeedResponseStories_netego = null
   ): TimelineFeedResponseFeedItemsItem = {
-    val __obj = js.Dynamic.literal(media_or_ad = media_or_ad)
-    if (stories_netego != null) __obj.updateDynamic("stories_netego")(stories_netego)
+    val __obj = js.Dynamic.literal(media_or_ad = media_or_ad.asInstanceOf[js.Any])
+    if (stories_netego != null) __obj.updateDynamic("stories_netego")(stories_netego.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineFeedResponseFeedItemsItem]
   }
 }

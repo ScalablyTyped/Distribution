@@ -34,7 +34,7 @@ object AccountsResource {
     reports: ReportsResource,
     urlchannels: UrlchannelsResource
   ): AccountsResource = {
-    val __obj = js.Dynamic.literal(adclients = adclients, alerts = alerts, customchannels = customchannels, get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), metadata = metadata, preferreddeals = preferreddeals, reports = reports, urlchannels = urlchannels)
+    val __obj = js.Dynamic.literal(adclients = adclients.asInstanceOf[js.Any], alerts = alerts.asInstanceOf[js.Any], customchannels = customchannels.asInstanceOf[js.Any], get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), metadata = metadata.asInstanceOf[js.Any], preferreddeals = preferreddeals.asInstanceOf[js.Any], reports = reports.asInstanceOf[js.Any], urlchannels = urlchannels.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AccountsResource]
   }

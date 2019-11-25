@@ -22,8 +22,8 @@ trait SignatureHelpRetriggeredReason extends SignatureHelpTriggerReason {
 object SignatureHelpRetriggeredReason {
   @scala.inline
   def apply(kind: retrigger, triggerCharacter: SignatureHelpRetriggerCharacter = null): SignatureHelpRetriggeredReason = {
-    val __obj = js.Dynamic.literal(kind = kind)
-    if (triggerCharacter != null) __obj.updateDynamic("triggerCharacter")(triggerCharacter)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
+    if (triggerCharacter != null) __obj.updateDynamic("triggerCharacter")(triggerCharacter.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignatureHelpRetriggeredReason]
   }
 }

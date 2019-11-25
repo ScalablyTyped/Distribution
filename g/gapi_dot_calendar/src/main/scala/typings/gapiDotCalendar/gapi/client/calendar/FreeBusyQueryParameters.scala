@@ -24,10 +24,10 @@ object FreeBusyQueryParameters {
     groupExpansionMax: Int | Double = null,
     timeZone: String = null
   ): FreeBusyQueryParameters = {
-    val __obj = js.Dynamic.literal(items = items, timeMax = timeMax, timeMin = timeMin)
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], timeMax = timeMax.asInstanceOf[js.Any], timeMin = timeMin.asInstanceOf[js.Any])
     if (calendarExpansionMax != null) __obj.updateDynamic("calendarExpansionMax")(calendarExpansionMax.asInstanceOf[js.Any])
     if (groupExpansionMax != null) __obj.updateDynamic("groupExpansionMax")(groupExpansionMax.asInstanceOf[js.Any])
-    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone)
+    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone.asInstanceOf[js.Any])
     __obj.asInstanceOf[FreeBusyQueryParameters]
   }
 }

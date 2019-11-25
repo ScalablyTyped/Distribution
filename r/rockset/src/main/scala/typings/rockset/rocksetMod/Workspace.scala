@@ -28,10 +28,10 @@ object Workspace {
   ): Workspace = {
     val __obj = js.Dynamic.literal()
     if (collection_count != null) __obj.updateDynamic("collection_count")(collection_count.asInstanceOf[js.Any])
-    if (created_at != null) __obj.updateDynamic("created_at")(created_at)
-    if (created_by != null) __obj.updateDynamic("created_by")(created_by)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (created_at != null) __obj.updateDynamic("created_at")(created_at.asInstanceOf[js.Any])
+    if (created_by != null) __obj.updateDynamic("created_by")(created_by.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Workspace]
   }
 }

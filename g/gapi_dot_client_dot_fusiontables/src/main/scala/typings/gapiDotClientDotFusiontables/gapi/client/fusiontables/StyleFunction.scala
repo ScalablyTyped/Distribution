@@ -29,10 +29,10 @@ object StyleFunction {
     kind: String = null
   ): StyleFunction = {
     val __obj = js.Dynamic.literal()
-    if (buckets != null) __obj.updateDynamic("buckets")(buckets)
-    if (columnName != null) __obj.updateDynamic("columnName")(columnName)
-    if (gradient != null) __obj.updateDynamic("gradient")(gradient)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (buckets != null) __obj.updateDynamic("buckets")(buckets.asInstanceOf[js.Any])
+    if (columnName != null) __obj.updateDynamic("columnName")(columnName.asInstanceOf[js.Any])
+    if (gradient != null) __obj.updateDynamic("gradient")(gradient.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[StyleFunction]
   }
 }

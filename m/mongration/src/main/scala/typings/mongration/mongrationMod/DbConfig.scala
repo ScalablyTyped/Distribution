@@ -25,13 +25,13 @@ object DbConfig {
     replicaSet: String = null,
     user: String = null
   ): DbConfig = {
-    val __obj = js.Dynamic.literal(migrationCollection = migrationCollection)
-    if (db != null) __obj.updateDynamic("db")(db)
-    if (hosts != null) __obj.updateDynamic("hosts")(hosts)
-    if (mongoUri != null) __obj.updateDynamic("mongoUri")(mongoUri)
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (replicaSet != null) __obj.updateDynamic("replicaSet")(replicaSet)
-    if (user != null) __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(migrationCollection = migrationCollection.asInstanceOf[js.Any])
+    if (db != null) __obj.updateDynamic("db")(db.asInstanceOf[js.Any])
+    if (hosts != null) __obj.updateDynamic("hosts")(hosts.asInstanceOf[js.Any])
+    if (mongoUri != null) __obj.updateDynamic("mongoUri")(mongoUri.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (replicaSet != null) __obj.updateDynamic("replicaSet")(replicaSet.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[DbConfig]
   }
 }

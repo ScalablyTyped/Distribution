@@ -78,7 +78,7 @@ object reactDashBootstrapDashTableStrings {
   sealed trait both extends PaginationPostion
   
   @js.native
-  sealed trait bottom extends PaginationPostion
+  sealed trait bottom_ extends PaginationPostion
   
   @js.native
   sealed trait center extends DataAlignType
@@ -157,7 +157,7 @@ object reactDashBootstrapDashTableStrings {
   sealed trait textarea extends EditCellType
   
   @js.native
-  sealed trait top extends PaginationPostion
+  sealed trait top_ extends PaginationPostion
   
   @scala.inline
   def `!=`: `!=` = "!=".asInstanceOf[`!=`]
@@ -198,7 +198,7 @@ object reactDashBootstrapDashTableStrings {
   @scala.inline
   def both: both = "both".asInstanceOf[both]
   @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  def bottom_ : bottom_ = "bottom".asInstanceOf[bottom_]
   @scala.inline
   def center: center = "center".asInstanceOf[center]
   @scala.inline
@@ -248,6 +248,6 @@ object reactDashBootstrapDashTableStrings {
   @scala.inline
   def textarea: textarea = "textarea".asInstanceOf[textarea]
   @scala.inline
-  def top: top = "top".asInstanceOf[top]
+  def top_ : top_ = "top".asInstanceOf[top_]
 }
 

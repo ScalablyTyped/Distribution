@@ -71,7 +71,7 @@ object dasharray {
     shortdot: js.Array[_],
     solid: String
   ): dasharray = {
-    val __obj = js.Dynamic.literal(dash = dash, dashdot = dashdot, dot = dot, longdash = longdash, longdashdot = longdashdot, longdashdotdot = longdashdotdot, shortdash = shortdash, shortdashdot = shortdashdot, shortdashdotdot = shortdashdotdot, shortdot = shortdot, solid = solid)
+    val __obj = js.Dynamic.literal(dash = dash.asInstanceOf[js.Any], dashdot = dashdot.asInstanceOf[js.Any], dot = dot.asInstanceOf[js.Any], longdash = longdash.asInstanceOf[js.Any], longdashdot = longdashdot.asInstanceOf[js.Any], longdashdotdot = longdashdotdot.asInstanceOf[js.Any], shortdash = shortdash.asInstanceOf[js.Any], shortdashdot = shortdashdot.asInstanceOf[js.Any], shortdashdotdot = shortdashdotdot.asInstanceOf[js.Any], shortdot = shortdot.asInstanceOf[js.Any], solid = solid.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[dasharray]
   }

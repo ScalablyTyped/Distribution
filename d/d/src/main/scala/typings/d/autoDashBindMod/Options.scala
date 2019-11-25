@@ -16,7 +16,7 @@ object Options {
     resolveContext: /* context */ js.Any => _ = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(overwriteDefinition)) __obj.updateDynamic("overwriteDefinition")(overwriteDefinition)
+    if (!js.isUndefined(overwriteDefinition)) __obj.updateDynamic("overwriteDefinition")(overwriteDefinition.asInstanceOf[js.Any])
     if (resolveContext != null) __obj.updateDynamic("resolveContext")(js.Any.fromFunction1(resolveContext))
     __obj.asInstanceOf[Options]
   }

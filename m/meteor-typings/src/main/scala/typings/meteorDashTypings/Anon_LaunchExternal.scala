@@ -13,8 +13,8 @@ object Anon_LaunchExternal {
   @scala.inline
   def apply(launchExternal: js.UndefOr[Boolean] = js.undefined, `type`: String = null): Anon_LaunchExternal = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(launchExternal)) __obj.updateDynamic("launchExternal")(launchExternal)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(launchExternal)) __obj.updateDynamic("launchExternal")(launchExternal.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_LaunchExternal]
   }
 }

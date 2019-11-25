@@ -19,7 +19,7 @@ object Anon_FirstParent {
     fullHistorySimplifyMerges: Double,
     simplifiedHistory: Double
   ): Anon_FirstParent = {
-    val __obj = js.Dynamic.literal(firstParent = firstParent, fullHistory = fullHistory, fullHistorySimplifyMerges = fullHistorySimplifyMerges, simplifiedHistory = simplifiedHistory)
+    val __obj = js.Dynamic.literal(firstParent = firstParent.asInstanceOf[js.Any], fullHistory = fullHistory.asInstanceOf[js.Any], fullHistorySimplifyMerges = fullHistorySimplifyMerges.asInstanceOf[js.Any], simplifiedHistory = simplifiedHistory.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FirstParent]
   }

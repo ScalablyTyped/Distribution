@@ -19,7 +19,7 @@ trait Anon_Currency extends js.Object {
 object Anon_Currency {
   @scala.inline
   def apply(currency: String, rates: StringDictionary[String]): Anon_Currency = {
-    val __obj = js.Dynamic.literal(currency = currency, rates = rates)
+    val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any], rates = rates.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Currency]
   }

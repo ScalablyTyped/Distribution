@@ -8,7 +8,6 @@ import typings.tstl.baseDisposableIListAlgorithmMod._IListAlgorithm
 import typings.tstl.baseDisposableIListAlgorithmMod._IListAlgorithm.ValueType
 import typings.tstl.experimentalAlgorithmMod.IErasableContainer
 import typings.tstl.iteratorIForwardIteratorMod.IForwardIterator
-import typings.tstl.tstlStrings.remove_if
 import typings.tstl.utilityIPairMod.IPair
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -345,10 +344,16 @@ object experimental extends js.Object {
     ) = this()
   }
   
-  def erase[Container /* <: Pick[_IListAlgorithm[ValueType[Container], Container], remove_if] */](contaier: Container, `val`: ValueType[Container]): Unit = js.native
+  def erase[Container /* <: Pick[
+    _IListAlgorithm[ValueType[Container], Container], 
+    typings.tstl.tstlStrings.remove_if
+  ] */](contaier: Container, `val`: ValueType[Container]): Unit = js.native
   @JSName("erase")
   def erase_Container_IErasableContainerIteratorIterator_IForwardIteratorValueTypeIteratorIterator[Container /* <: IErasableContainer[Iterator] */, Iterator /* <: IForwardIterator[typings.tstl.functionalIPointerMod.IPointer.ValueType[Iterator], Iterator] */](container: Container, `val`: typings.tstl.functionalIPointerMod.IPointer.ValueType[Iterator]): Unit = js.native
-  def erase_if[Container /* <: Pick[_IListAlgorithm[ValueType[Container], Container], remove_if] */](contaier: Container, predicator: js.Function1[/* val */ ValueType[Container], Boolean]): Unit = js.native
+  def erase_if[Container /* <: Pick[
+    _IListAlgorithm[ValueType[Container], Container], 
+    typings.tstl.tstlStrings.remove_if
+  ] */](contaier: Container, predicator: js.Function1[/* val */ ValueType[Container], Boolean]): Unit = js.native
   @JSName("erase_if")
   def erase_if_Container_IErasableContainerIteratorIterator_IForwardIteratorValueTypeIteratorIterator[Container /* <: IErasableContainer[Iterator] */, Iterator /* <: IForwardIterator[typings.tstl.functionalIPointerMod.IPointer.ValueType[Iterator], Iterator] */](
     container: Container,

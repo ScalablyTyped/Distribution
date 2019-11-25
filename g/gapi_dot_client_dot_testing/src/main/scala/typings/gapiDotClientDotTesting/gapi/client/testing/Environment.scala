@@ -13,7 +13,7 @@ object Environment {
   @scala.inline
   def apply(androidDevice: AndroidDevice = null): Environment = {
     val __obj = js.Dynamic.literal()
-    if (androidDevice != null) __obj.updateDynamic("androidDevice")(androidDevice)
+    if (androidDevice != null) __obj.updateDynamic("androidDevice")(androidDevice.asInstanceOf[js.Any])
     __obj.asInstanceOf[Environment]
   }
 }

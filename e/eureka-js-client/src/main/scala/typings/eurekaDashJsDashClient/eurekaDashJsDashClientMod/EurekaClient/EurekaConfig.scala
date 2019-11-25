@@ -24,10 +24,10 @@ object EurekaConfig {
     requestMiddleware: (/* requestOpts */ js.Any, /* done */ js.Function1[/* opts */ js.Any, Unit]) => Unit = null,
     shouldUseDelta: js.UndefOr[Boolean] = js.undefined
   ): EurekaConfig = {
-    val __obj = js.Dynamic.literal(eureka = eureka, instance = instance)
-    if (logger != null) __obj.updateDynamic("logger")(logger)
+    val __obj = js.Dynamic.literal(eureka = eureka.asInstanceOf[js.Any], instance = instance.asInstanceOf[js.Any])
+    if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
     if (requestMiddleware != null) __obj.updateDynamic("requestMiddleware")(js.Any.fromFunction2(requestMiddleware))
-    if (!js.isUndefined(shouldUseDelta)) __obj.updateDynamic("shouldUseDelta")(shouldUseDelta)
+    if (!js.isUndefined(shouldUseDelta)) __obj.updateDynamic("shouldUseDelta")(shouldUseDelta.asInstanceOf[js.Any])
     __obj.asInstanceOf[EurekaConfig]
   }
 }

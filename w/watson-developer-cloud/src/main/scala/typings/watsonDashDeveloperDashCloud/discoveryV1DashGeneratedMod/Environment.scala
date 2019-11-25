@@ -46,17 +46,17 @@ object Environment {
     updated: String = null
   ): Environment = {
     val __obj = js.Dynamic.literal()
-    if (created != null) __obj.updateDynamic("created")(created)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (environment_id != null) __obj.updateDynamic("environment_id")(environment_id)
-    if (index_capacity != null) __obj.updateDynamic("index_capacity")(index_capacity)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(read_only)) __obj.updateDynamic("read_only")(read_only)
-    if (requested_size != null) __obj.updateDynamic("requested_size")(requested_size)
-    if (search_status != null) __obj.updateDynamic("search_status")(search_status)
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (updated != null) __obj.updateDynamic("updated")(updated)
+    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (environment_id != null) __obj.updateDynamic("environment_id")(environment_id.asInstanceOf[js.Any])
+    if (index_capacity != null) __obj.updateDynamic("index_capacity")(index_capacity.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(read_only)) __obj.updateDynamic("read_only")(read_only.asInstanceOf[js.Any])
+    if (requested_size != null) __obj.updateDynamic("requested_size")(requested_size.asInstanceOf[js.Any])
+    if (search_status != null) __obj.updateDynamic("search_status")(search_status.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
     __obj.asInstanceOf[Environment]
   }
 }

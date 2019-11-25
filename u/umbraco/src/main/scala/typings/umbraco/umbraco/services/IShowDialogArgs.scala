@@ -16,7 +16,7 @@ trait IShowDialogArgs extends js.Object {
 object IShowDialogArgs {
   @scala.inline
   def apply(action: IShowDialogAction, scope: IScope): IShowDialogArgs = {
-    val __obj = js.Dynamic.literal(action = action, scope = scope)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IShowDialogArgs]
   }

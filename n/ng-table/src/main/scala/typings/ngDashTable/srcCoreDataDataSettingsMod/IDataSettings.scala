@@ -18,9 +18,9 @@ object IDataSettings {
     applySort: js.UndefOr[Boolean] = js.undefined
   ): IDataSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(applyFilter)) __obj.updateDynamic("applyFilter")(applyFilter)
-    if (!js.isUndefined(applyPaging)) __obj.updateDynamic("applyPaging")(applyPaging)
-    if (!js.isUndefined(applySort)) __obj.updateDynamic("applySort")(applySort)
+    if (!js.isUndefined(applyFilter)) __obj.updateDynamic("applyFilter")(applyFilter.asInstanceOf[js.Any])
+    if (!js.isUndefined(applyPaging)) __obj.updateDynamic("applyPaging")(applyPaging.asInstanceOf[js.Any])
+    if (!js.isUndefined(applySort)) __obj.updateDynamic("applySort")(applySort.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDataSettings]
   }
 }

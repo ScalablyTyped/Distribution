@@ -27,8 +27,8 @@ object CodePath {
     thrownSegments: js.Array[CodePathSegment],
     upper: CodePath = null
   ): CodePath = {
-    val __obj = js.Dynamic.literal(childCodePaths = childCodePaths, currentSegments = currentSegments, finalSegments = finalSegments, id = id, initialSegment = initialSegment, returnedSegments = returnedSegments, thrownSegments = thrownSegments)
-    if (upper != null) __obj.updateDynamic("upper")(upper)
+    val __obj = js.Dynamic.literal(childCodePaths = childCodePaths.asInstanceOf[js.Any], currentSegments = currentSegments.asInstanceOf[js.Any], finalSegments = finalSegments.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], initialSegment = initialSegment.asInstanceOf[js.Any], returnedSegments = returnedSegments.asInstanceOf[js.Any], thrownSegments = thrownSegments.asInstanceOf[js.Any])
+    if (upper != null) __obj.updateDynamic("upper")(upper.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodePath]
   }
 }

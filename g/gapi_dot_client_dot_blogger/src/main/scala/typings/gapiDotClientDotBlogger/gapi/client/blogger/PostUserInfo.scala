@@ -17,9 +17,9 @@ object PostUserInfo {
   @scala.inline
   def apply(kind: String = null, post: Post = null, post_user_info: PostPerUserInfo = null): PostUserInfo = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (post != null) __obj.updateDynamic("post")(post)
-    if (post_user_info != null) __obj.updateDynamic("post_user_info")(post_user_info)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (post != null) __obj.updateDynamic("post")(post.asInstanceOf[js.Any])
+    if (post_user_info != null) __obj.updateDynamic("post_user_info")(post_user_info.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostUserInfo]
   }
 }

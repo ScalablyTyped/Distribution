@@ -63,7 +63,7 @@ object IExplodeComponent {
     maxResistance: Double,
     power: Double
   ): IExplodeComponent = {
-    val __obj = js.Dynamic.literal(breaks_blocks = breaks_blocks, causesFire = causesFire, destroyAffectedByGriefing = destroyAffectedByGriefing, fireAffectedByGriefing = fireAffectedByGriefing, fuseLength = fuseLength, fuseLit = fuseLit, maxResistance = maxResistance, power = power)
+    val __obj = js.Dynamic.literal(breaks_blocks = breaks_blocks.asInstanceOf[js.Any], causesFire = causesFire.asInstanceOf[js.Any], destroyAffectedByGriefing = destroyAffectedByGriefing.asInstanceOf[js.Any], fireAffectedByGriefing = fireAffectedByGriefing.asInstanceOf[js.Any], fuseLength = fuseLength.asInstanceOf[js.Any], fuseLit = fuseLit.asInstanceOf[js.Any], maxResistance = maxResistance.asInstanceOf[js.Any], power = power.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IExplodeComponent]
   }

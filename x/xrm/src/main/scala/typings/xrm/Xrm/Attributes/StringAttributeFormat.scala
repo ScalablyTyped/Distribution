@@ -16,5 +16,22 @@ import scala.scalajs.js.annotation._
   - typings.xrm.xrmStrings.tickersymbol
   - typings.xrm.xrmStrings.url
 */
-trait StringAttributeFormat extends AttributeFormat
+trait StringAttributeFormat extends js.Object
+
+object StringAttributeFormat {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def email: typings.xrm.xrmStrings.email = this.cast("email")
+  @scala.inline
+  def phone: typings.xrm.xrmStrings.phone = this.cast("phone")
+  @scala.inline
+  def text: typings.xrm.xrmStrings.text = this.cast("text")
+  @scala.inline
+  def textarea: typings.xrm.xrmStrings.textarea = this.cast("textarea")
+  @scala.inline
+  def tickersymbol: typings.xrm.xrmStrings.tickersymbol = this.cast("tickersymbol")
+  @scala.inline
+  def url: typings.xrm.xrmStrings.url = this.cast("url")
+}
 

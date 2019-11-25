@@ -35,16 +35,16 @@ object TooltipProps {
     touch: js.UndefOr[Boolean] = js.undefined,
     verticalPosition: vertical = null
   ): TooltipProps = {
-    val __obj = js.Dynamic.literal(label = label)
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (horizontalPosition != null) __obj.updateDynamic("horizontalPosition")(horizontalPosition)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (horizontalPosition != null) __obj.updateDynamic("horizontalPosition")(horizontalPosition.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (!js.isUndefined(touch)) __obj.updateDynamic("touch")(touch)
-    if (verticalPosition != null) __obj.updateDynamic("verticalPosition")(verticalPosition)
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(touch)) __obj.updateDynamic("touch")(touch.asInstanceOf[js.Any])
+    if (verticalPosition != null) __obj.updateDynamic("verticalPosition")(verticalPosition.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipProps]
   }
 }

@@ -15,9 +15,9 @@ import scala.scalajs.js.annotation._
 object Plugin {
   @scala.inline
   def apply(position: String, Action: js.Any = null, Store: js.Any = null): Plugin = {
-    val __obj = js.Dynamic.literal(position = position)
-    if (Action != null) __obj.updateDynamic("Action")(Action)
-    if (Store != null) __obj.updateDynamic("Store")(Store)
+    val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
+    if (Action != null) __obj.updateDynamic("Action")(Action.asInstanceOf[js.Any])
+    if (Store != null) __obj.updateDynamic("Store")(Store.asInstanceOf[js.Any])
     __obj.asInstanceOf[Plugin]
   }
 }

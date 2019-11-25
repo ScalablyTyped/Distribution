@@ -37,7 +37,7 @@ object ExternalRenderer {
     render: /* context */ js.UndefOr[RenderContext] => Unit = null,
     setup: /* context */ js.UndefOr[RenderContext] => Unit = null
   ): ExternalRenderer = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (dispose != null) __obj.updateDynamic("dispose")(js.Any.fromFunction1(dispose))
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
     if (setup != null) __obj.updateDynamic("setup")(js.Any.fromFunction1(setup))

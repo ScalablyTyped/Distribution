@@ -12,7 +12,7 @@ trait Anon_Overrides extends js.Object {
 object Anon_Overrides {
   @scala.inline
   def apply(overrides: js.Array[Anon_MethodMinutes], useDefault: Boolean): Anon_Overrides = {
-    val __obj = js.Dynamic.literal(overrides = overrides, useDefault = useDefault)
+    val __obj = js.Dynamic.literal(overrides = overrides.asInstanceOf[js.Any], useDefault = useDefault.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Overrides]
   }

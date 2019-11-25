@@ -20,7 +20,7 @@ object Router {
     execute: (IncomingMessage, ServerResponse, UrlWithParsedQuery) => js.Promise[Boolean],
     routes: js.Array[Route]
   ): Router = {
-    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), execute = js.Any.fromFunction3(execute), routes = routes)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), execute = js.Any.fromFunction3(execute), routes = routes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Router]
   }

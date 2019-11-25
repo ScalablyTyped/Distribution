@@ -24,9 +24,9 @@ object S3UploaderVersion {
     val __obj = js.Dynamic.literal()
     if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
     if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(original)) __obj.updateDynamic("original")(original)
+    if (!js.isUndefined(original)) __obj.updateDynamic("original")(original.asInstanceOf[js.Any])
     if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
-    if (suffix != null) __obj.updateDynamic("suffix")(suffix)
+    if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3UploaderVersion]
   }
 }

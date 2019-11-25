@@ -33,9 +33,9 @@ object ColumnResizingEventUIParam {
   ): ColumnResizingEventUIParam = {
     val __obj = js.Dynamic.literal()
     if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
-    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey)
+    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey.asInstanceOf[js.Any])
     if (desiredWidth != null) __obj.updateDynamic("desiredWidth")(desiredWidth.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnResizingEventUIParam]
   }
 }

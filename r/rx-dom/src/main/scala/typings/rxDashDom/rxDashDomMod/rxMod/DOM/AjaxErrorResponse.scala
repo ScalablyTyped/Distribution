@@ -16,8 +16,8 @@ trait AjaxErrorResponse extends js.Object {
 object AjaxErrorResponse {
   @scala.inline
   def apply(originalEvent: Event, status: Double, `type`: String, xhr: XMLHttpRequest): AjaxErrorResponse = {
-    val __obj = js.Dynamic.literal(originalEvent = originalEvent, status = status, xhr = xhr)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], xhr = xhr.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AjaxErrorResponse]
   }
 }

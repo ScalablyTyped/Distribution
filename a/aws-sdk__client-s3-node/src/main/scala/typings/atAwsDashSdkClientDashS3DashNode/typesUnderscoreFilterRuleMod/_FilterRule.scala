@@ -22,7 +22,7 @@ object _FilterRule {
   def apply(Name: prefix | suffix | String = null, Value: String = null): _FilterRule = {
     val __obj = js.Dynamic.literal()
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Value != null) __obj.updateDynamic("Value")(Value)
+    if (Value != null) __obj.updateDynamic("Value")(Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[_FilterRule]
   }
 }

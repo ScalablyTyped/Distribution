@@ -27,8 +27,8 @@ object HingeConstraintDefinition {
     positionb: Vector3,
     `type`: String
   ): HingeConstraintDefinition = {
-    val __obj = js.Dynamic.literal(axis = axis, id = id, objecta = objecta, objectb = objectb, positiona = positiona, positionb = positionb)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], objecta = objecta.asInstanceOf[js.Any], objectb = objectb.asInstanceOf[js.Any], positiona = positiona.asInstanceOf[js.Any], positionb = positionb.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HingeConstraintDefinition]
   }
 }

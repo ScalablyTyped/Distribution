@@ -16,7 +16,7 @@ object Checksum {
   @scala.inline
   def apply(sha256: String = null): Checksum = {
     val __obj = js.Dynamic.literal()
-    if (sha256 != null) __obj.updateDynamic("sha256")(sha256)
+    if (sha256 != null) __obj.updateDynamic("sha256")(sha256.asInstanceOf[js.Any])
     __obj.asInstanceOf[Checksum]
   }
 }

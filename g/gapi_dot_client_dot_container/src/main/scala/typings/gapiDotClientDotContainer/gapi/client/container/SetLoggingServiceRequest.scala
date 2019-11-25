@@ -19,7 +19,7 @@ object SetLoggingServiceRequest {
   @scala.inline
   def apply(loggingService: String = null): SetLoggingServiceRequest = {
     val __obj = js.Dynamic.literal()
-    if (loggingService != null) __obj.updateDynamic("loggingService")(loggingService)
+    if (loggingService != null) __obj.updateDynamic("loggingService")(loggingService.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetLoggingServiceRequest]
   }
 }

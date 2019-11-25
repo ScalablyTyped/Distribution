@@ -30,7 +30,7 @@ object TypeofHorizontalSlider {
   def apply(
     _Mover: Instantiable3[/* node */ HTMLElement, /* e */ Event, js.UndefOr[/* host */ js.Object], _Mover]
   ): TypeofHorizontalSlider = {
-    val __obj = js.Dynamic.literal(_Mover = _Mover)
+    val __obj = js.Dynamic.literal(_Mover = _Mover.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeofHorizontalSlider]
   }

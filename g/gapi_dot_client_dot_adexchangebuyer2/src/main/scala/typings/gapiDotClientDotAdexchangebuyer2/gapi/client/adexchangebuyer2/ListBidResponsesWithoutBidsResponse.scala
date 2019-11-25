@@ -28,8 +28,8 @@ object ListBidResponsesWithoutBidsResponse {
     nextPageToken: String = null
   ): ListBidResponsesWithoutBidsResponse = {
     val __obj = js.Dynamic.literal()
-    if (bidResponseWithoutBidsStatusRows != null) __obj.updateDynamic("bidResponseWithoutBidsStatusRows")(bidResponseWithoutBidsStatusRows)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (bidResponseWithoutBidsStatusRows != null) __obj.updateDynamic("bidResponseWithoutBidsStatusRows")(bidResponseWithoutBidsStatusRows.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBidResponsesWithoutBidsResponse]
   }
 }

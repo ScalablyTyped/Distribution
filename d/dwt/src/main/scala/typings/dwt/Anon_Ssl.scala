@@ -16,7 +16,7 @@ trait Anon_Ssl extends js.Object {
 object Anon_Ssl {
   @scala.inline
   def apply(ssl: Boolean): Anon_Ssl = {
-    val __obj = js.Dynamic.literal(ssl = ssl)
+    val __obj = js.Dynamic.literal(ssl = ssl.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Ssl]
   }

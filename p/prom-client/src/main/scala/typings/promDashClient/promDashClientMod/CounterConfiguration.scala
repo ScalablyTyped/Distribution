@@ -21,10 +21,10 @@ object CounterConfiguration {
     labelNames: js.Array[String] = null,
     registers: js.Array[Registry] = null
   ): CounterConfiguration = {
-    val __obj = js.Dynamic.literal(help = help, name = name)
-    if (aggregator != null) __obj.updateDynamic("aggregator")(aggregator)
-    if (labelNames != null) __obj.updateDynamic("labelNames")(labelNames)
-    if (registers != null) __obj.updateDynamic("registers")(registers)
+    val __obj = js.Dynamic.literal(help = help.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (aggregator != null) __obj.updateDynamic("aggregator")(aggregator.asInstanceOf[js.Any])
+    if (labelNames != null) __obj.updateDynamic("labelNames")(labelNames.asInstanceOf[js.Any])
+    if (registers != null) __obj.updateDynamic("registers")(registers.asInstanceOf[js.Any])
     __obj.asInstanceOf[CounterConfiguration]
   }
 }

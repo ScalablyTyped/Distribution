@@ -39,19 +39,19 @@ object PartialClassNameMapInputBaseClassKey {
     root: String = null
   ): PartialClassNameMapInputBaseClassKey = {
     val __obj = js.Dynamic.literal()
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (focused != null) __obj.updateDynamic("focused")(focused)
-    if (formControl != null) __obj.updateDynamic("formControl")(formControl)
-    if (fullWidth != null) __obj.updateDynamic("fullWidth")(fullWidth)
-    if (input != null) __obj.updateDynamic("input")(input)
-    if (inputDisabled != null) __obj.updateDynamic("inputDisabled")(inputDisabled)
-    if (inputMarginDense != null) __obj.updateDynamic("inputMarginDense")(inputMarginDense)
-    if (inputMultiline != null) __obj.updateDynamic("inputMultiline")(inputMultiline)
-    if (inputType != null) __obj.updateDynamic("inputType")(inputType)
-    if (inputTypeSearch != null) __obj.updateDynamic("inputTypeSearch")(inputTypeSearch)
-    if (multiline != null) __obj.updateDynamic("multiline")(multiline)
-    if (root != null) __obj.updateDynamic("root")(root)
+    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (focused != null) __obj.updateDynamic("focused")(focused.asInstanceOf[js.Any])
+    if (formControl != null) __obj.updateDynamic("formControl")(formControl.asInstanceOf[js.Any])
+    if (fullWidth != null) __obj.updateDynamic("fullWidth")(fullWidth.asInstanceOf[js.Any])
+    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
+    if (inputDisabled != null) __obj.updateDynamic("inputDisabled")(inputDisabled.asInstanceOf[js.Any])
+    if (inputMarginDense != null) __obj.updateDynamic("inputMarginDense")(inputMarginDense.asInstanceOf[js.Any])
+    if (inputMultiline != null) __obj.updateDynamic("inputMultiline")(inputMultiline.asInstanceOf[js.Any])
+    if (inputType != null) __obj.updateDynamic("inputType")(inputType.asInstanceOf[js.Any])
+    if (inputTypeSearch != null) __obj.updateDynamic("inputTypeSearch")(inputTypeSearch.asInstanceOf[js.Any])
+    if (multiline != null) __obj.updateDynamic("multiline")(multiline.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapInputBaseClassKey]
   }
 }

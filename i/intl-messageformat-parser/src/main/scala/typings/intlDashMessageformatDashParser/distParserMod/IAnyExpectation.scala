@@ -13,7 +13,7 @@ object IAnyExpectation {
   @scala.inline
   def apply(`type`: any): IAnyExpectation = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAnyExpectation]
   }
 }

@@ -12,7 +12,7 @@ trait Anon_DisplayHeight extends js.Object {
 object Anon_DisplayHeight {
   @scala.inline
   def apply(display: String, height: Double): Anon_DisplayHeight = {
-    val __obj = js.Dynamic.literal(display = display, height = height)
+    val __obj = js.Dynamic.literal(display = display.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DisplayHeight]
   }

@@ -50,15 +50,15 @@ object ActivityHistoryItem {
   ): ActivityHistoryItem = {
     val __obj = js.Dynamic.literal()
     if (activeDurationSeconds != null) __obj.updateDynamic("activeDurationSeconds")(activeDurationSeconds.asInstanceOf[js.Any])
-    if (activity != null) __obj.updateDynamic("activity")(activity)
-    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime)
-    if (expirationDateTime != null) __obj.updateDynamic("expirationDateTime")(expirationDateTime)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (lastActiveDateTime != null) __obj.updateDynamic("lastActiveDateTime")(lastActiveDateTime)
-    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime)
-    if (startedDateTime != null) __obj.updateDynamic("startedDateTime")(startedDateTime)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (userTimezone != null) __obj.updateDynamic("userTimezone")(userTimezone)
+    if (activity != null) __obj.updateDynamic("activity")(activity.asInstanceOf[js.Any])
+    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
+    if (expirationDateTime != null) __obj.updateDynamic("expirationDateTime")(expirationDateTime.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (lastActiveDateTime != null) __obj.updateDynamic("lastActiveDateTime")(lastActiveDateTime.asInstanceOf[js.Any])
+    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
+    if (startedDateTime != null) __obj.updateDynamic("startedDateTime")(startedDateTime.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (userTimezone != null) __obj.updateDynamic("userTimezone")(userTimezone.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivityHistoryItem]
   }
 }

@@ -13,7 +13,7 @@ object UndeleteServiceResponse {
   @scala.inline
   def apply(service: ManagedService = null): UndeleteServiceResponse = {
     val __obj = js.Dynamic.literal()
-    if (service != null) __obj.updateDynamic("service")(service)
+    if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
     __obj.asInstanceOf[UndeleteServiceResponse]
   }
 }

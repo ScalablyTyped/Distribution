@@ -38,7 +38,7 @@ object IsFloatOptions {
   ): IsFloatOptions = {
     val __obj = js.Dynamic.literal()
     if (gt != null) __obj.updateDynamic("gt")(gt.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (lt != null) __obj.updateDynamic("lt")(lt.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])

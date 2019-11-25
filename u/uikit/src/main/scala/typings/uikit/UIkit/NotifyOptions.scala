@@ -37,9 +37,9 @@ object NotifyOptions {
   @scala.inline
   def apply(message: String = null, pos: String = null, status: String = null, timeout: Int | Double = null): NotifyOptions = {
     val __obj = js.Dynamic.literal()
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (pos != null) __obj.updateDynamic("pos")(pos)
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (pos != null) __obj.updateDynamic("pos")(pos.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotifyOptions]
   }

@@ -21,10 +21,10 @@ object FunctionRequest {
     user: User[_] = null
   ): FunctionRequest = {
     val __obj = js.Dynamic.literal()
-    if (installationId != null) __obj.updateDynamic("installationId")(installationId)
-    if (!js.isUndefined(master)) __obj.updateDynamic("master")(master)
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (user != null) __obj.updateDynamic("user")(user)
+    if (installationId != null) __obj.updateDynamic("installationId")(installationId.asInstanceOf[js.Any])
+    if (!js.isUndefined(master)) __obj.updateDynamic("master")(master.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[FunctionRequest]
   }
 }

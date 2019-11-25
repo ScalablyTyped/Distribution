@@ -34,17 +34,17 @@ object DiagramConnectionDefaults {
     `type`: String = null
   ): DiagramConnectionDefaults = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (editable != null) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
     if (endCap != null) __obj.updateDynamic("endCap")(endCap.asInstanceOf[js.Any])
-    if (fromConnector != null) __obj.updateDynamic("fromConnector")(fromConnector)
-    if (hover != null) __obj.updateDynamic("hover")(hover)
-    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable)
-    if (selection != null) __obj.updateDynamic("selection")(selection)
+    if (fromConnector != null) __obj.updateDynamic("fromConnector")(fromConnector.asInstanceOf[js.Any])
+    if (hover != null) __obj.updateDynamic("hover")(hover.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
+    if (selection != null) __obj.updateDynamic("selection")(selection.asInstanceOf[js.Any])
     if (startCap != null) __obj.updateDynamic("startCap")(startCap.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
-    if (toConnector != null) __obj.updateDynamic("toConnector")(toConnector)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
+    if (toConnector != null) __obj.updateDynamic("toConnector")(toConnector.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagramConnectionDefaults]
   }
 }

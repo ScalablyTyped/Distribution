@@ -39,10 +39,10 @@ object LoadOptions {
     longsAsStrings: js.UndefOr[Boolean] = js.undefined
   ): LoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(binaryAsBase64)) __obj.updateDynamic("binaryAsBase64")(binaryAsBase64)
-    if (!js.isUndefined(convertFieldsToCamelCase)) __obj.updateDynamic("convertFieldsToCamelCase")(convertFieldsToCamelCase)
-    if (!js.isUndefined(deprecatedArgumentOrder)) __obj.updateDynamic("deprecatedArgumentOrder")(deprecatedArgumentOrder)
-    if (!js.isUndefined(longsAsStrings)) __obj.updateDynamic("longsAsStrings")(longsAsStrings)
+    if (!js.isUndefined(binaryAsBase64)) __obj.updateDynamic("binaryAsBase64")(binaryAsBase64.asInstanceOf[js.Any])
+    if (!js.isUndefined(convertFieldsToCamelCase)) __obj.updateDynamic("convertFieldsToCamelCase")(convertFieldsToCamelCase.asInstanceOf[js.Any])
+    if (!js.isUndefined(deprecatedArgumentOrder)) __obj.updateDynamic("deprecatedArgumentOrder")(deprecatedArgumentOrder.asInstanceOf[js.Any])
+    if (!js.isUndefined(longsAsStrings)) __obj.updateDynamic("longsAsStrings")(longsAsStrings.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadOptions]
   }
 }

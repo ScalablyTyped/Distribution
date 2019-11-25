@@ -66,16 +66,16 @@ object Anon_BrowserName {
     specs: js.Array[String] = null
   ): Anon_BrowserName = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (browserName != null) __obj.updateDynamic("browserName")(browserName)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (browserName != null) __obj.updateDynamic("browserName")(browserName.asInstanceOf[js.Any])
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (exclude != null) __obj.updateDynamic("exclude")(exclude)
-    if (logName != null) __obj.updateDynamic("logName")(logName)
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
+    if (logName != null) __obj.updateDynamic("logName")(logName.asInstanceOf[js.Any])
     if (maxInstances != null) __obj.updateDynamic("maxInstances")(maxInstances.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (seleniumAddress != null) __obj.updateDynamic("seleniumAddress")(seleniumAddress)
-    if (!js.isUndefined(shardTestFiles)) __obj.updateDynamic("shardTestFiles")(shardTestFiles)
-    if (specs != null) __obj.updateDynamic("specs")(specs)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (seleniumAddress != null) __obj.updateDynamic("seleniumAddress")(seleniumAddress.asInstanceOf[js.Any])
+    if (!js.isUndefined(shardTestFiles)) __obj.updateDynamic("shardTestFiles")(shardTestFiles.asInstanceOf[js.Any])
+    if (specs != null) __obj.updateDynamic("specs")(specs.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BrowserName]
   }
 }

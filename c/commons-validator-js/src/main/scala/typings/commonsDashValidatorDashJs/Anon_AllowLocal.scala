@@ -12,7 +12,7 @@ trait Anon_AllowLocal extends js.Object {
 object Anon_AllowLocal {
   @scala.inline
   def apply(allowLocal: Boolean, allowTld: Boolean): Anon_AllowLocal = {
-    val __obj = js.Dynamic.literal(allowLocal = allowLocal, allowTld = allowTld)
+    val __obj = js.Dynamic.literal(allowLocal = allowLocal.asInstanceOf[js.Any], allowTld = allowTld.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AllowLocal]
   }

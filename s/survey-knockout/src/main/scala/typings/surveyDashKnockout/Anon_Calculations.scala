@@ -13,8 +13,8 @@ object Anon_Calculations {
   @scala.inline
   def apply(calculations: js.Array[Anon_PropertyName] = null, includeEmpty: js.UndefOr[Boolean] = js.undefined): Anon_Calculations = {
     val __obj = js.Dynamic.literal()
-    if (calculations != null) __obj.updateDynamic("calculations")(calculations)
-    if (!js.isUndefined(includeEmpty)) __obj.updateDynamic("includeEmpty")(includeEmpty)
+    if (calculations != null) __obj.updateDynamic("calculations")(calculations.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeEmpty)) __obj.updateDynamic("includeEmpty")(includeEmpty.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Calculations]
   }
 }

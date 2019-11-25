@@ -14,7 +14,7 @@ trait Anon_Table extends js.Object {
 object Anon_Table {
   @scala.inline
   def apply(table: String): Anon_Table = {
-    val __obj = js.Dynamic.literal(table = table)
+    val __obj = js.Dynamic.literal(table = table.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Table]
   }

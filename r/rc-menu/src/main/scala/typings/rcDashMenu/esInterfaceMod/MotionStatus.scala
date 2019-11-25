@@ -16,3 +16,16 @@ import scala.scalajs.js.annotation._
 */
 trait MotionStatus extends js.Object
 
+object MotionStatus {
+  @scala.inline
+  def appear: typings.rcDashMenu.rcDashMenuStrings.appear = this.cast("appear")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def enter: typings.rcDashMenu.rcDashMenuStrings.enter = this.cast("enter")
+  @scala.inline
+  def leave: typings.rcDashMenu.rcDashMenuStrings.leave = this.cast("leave")
+  @scala.inline
+  def none: typings.rcDashMenu.rcDashMenuStrings.none = this.cast("none")
+}
+

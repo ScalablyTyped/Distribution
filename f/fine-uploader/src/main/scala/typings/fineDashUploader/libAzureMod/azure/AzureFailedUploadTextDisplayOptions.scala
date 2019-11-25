@@ -17,7 +17,7 @@ object AzureFailedUploadTextDisplayOptions {
   @scala.inline
   def apply(mode: String = null): AzureFailedUploadTextDisplayOptions = {
     val __obj = js.Dynamic.literal()
-    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[AzureFailedUploadTextDisplayOptions]
   }
 }

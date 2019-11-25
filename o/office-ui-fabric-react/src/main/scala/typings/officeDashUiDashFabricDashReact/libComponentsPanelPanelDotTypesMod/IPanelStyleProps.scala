@@ -72,18 +72,18 @@ object IPanelStyleProps {
     isOpen: js.UndefOr[Boolean] = js.undefined,
     `type`: PanelType = null
   ): IPanelStyleProps = {
-    val __obj = js.Dynamic.literal(theme = theme)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (focusTrapZoneClassName != null) __obj.updateDynamic("focusTrapZoneClassName")(focusTrapZoneClassName)
-    if (!js.isUndefined(hasCloseButton)) __obj.updateDynamic("hasCloseButton")(hasCloseButton)
-    if (headerClassName != null) __obj.updateDynamic("headerClassName")(headerClassName)
-    if (!js.isUndefined(isAnimating)) __obj.updateDynamic("isAnimating")(isAnimating)
-    if (!js.isUndefined(isFooterAtBottom)) __obj.updateDynamic("isFooterAtBottom")(isFooterAtBottom)
-    if (!js.isUndefined(isFooterSticky)) __obj.updateDynamic("isFooterSticky")(isFooterSticky)
-    if (!js.isUndefined(isHiddenOnDismiss)) __obj.updateDynamic("isHiddenOnDismiss")(isHiddenOnDismiss)
-    if (!js.isUndefined(isOnRightSide)) __obj.updateDynamic("isOnRightSide")(isOnRightSide)
-    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (focusTrapZoneClassName != null) __obj.updateDynamic("focusTrapZoneClassName")(focusTrapZoneClassName.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasCloseButton)) __obj.updateDynamic("hasCloseButton")(hasCloseButton.asInstanceOf[js.Any])
+    if (headerClassName != null) __obj.updateDynamic("headerClassName")(headerClassName.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAnimating)) __obj.updateDynamic("isAnimating")(isAnimating.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFooterAtBottom)) __obj.updateDynamic("isFooterAtBottom")(isFooterAtBottom.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFooterSticky)) __obj.updateDynamic("isFooterSticky")(isFooterSticky.asInstanceOf[js.Any])
+    if (!js.isUndefined(isHiddenOnDismiss)) __obj.updateDynamic("isHiddenOnDismiss")(isHiddenOnDismiss.asInstanceOf[js.Any])
+    if (!js.isUndefined(isOnRightSide)) __obj.updateDynamic("isOnRightSide")(isOnRightSide.asInstanceOf[js.Any])
+    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPanelStyleProps]
   }
 }

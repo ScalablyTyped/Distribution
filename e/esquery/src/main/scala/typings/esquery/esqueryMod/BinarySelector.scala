@@ -23,9 +23,9 @@ object BinarySelector {
     `type`: child | sibling | adjacent | descendant,
     subject: js.UndefOr[Boolean] = js.undefined
   ): BinarySelector = {
-    val __obj = js.Dynamic.literal(left = left, right = right)
+    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(subject)) __obj.updateDynamic("subject")(subject)
+    if (!js.isUndefined(subject)) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
     __obj.asInstanceOf[BinarySelector]
   }
 }

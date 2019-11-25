@@ -29,9 +29,9 @@ object Token {
     `type`: whitespace | comment | key | literal | separator | newline,
     value: js.Any = null
   ): Token = {
-    val __obj = js.Dynamic.literal(raw = raw, stack = stack)
+    val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
 }

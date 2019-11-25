@@ -13,8 +13,8 @@ object RTCSessionDescriptionInit {
   @scala.inline
   def apply(`type`: RTCSdpType, sdp: java.lang.String = null): RTCSessionDescriptionInit = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (sdp != null) __obj.updateDynamic("sdp")(sdp)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (sdp != null) __obj.updateDynamic("sdp")(sdp.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCSessionDescriptionInit]
   }
 }

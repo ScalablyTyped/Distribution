@@ -12,7 +12,7 @@ trait BlockItemDto extends js.Object {
 object BlockItemDto {
   @scala.inline
   def apply(count: Double, id: Double): BlockItemDto = {
-    val __obj = js.Dynamic.literal(count = count, id = id)
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BlockItemDto]
   }

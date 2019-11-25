@@ -16,8 +16,8 @@ trait Browser extends js.Object {
 object Browser {
   @scala.inline
   def apply(name: String, version: String, comment: String = null): Browser = {
-    val __obj = js.Dynamic.literal(name = name, version = version)
-    if (comment != null) __obj.updateDynamic("comment")(comment)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
     __obj.asInstanceOf[Browser]
   }
 }

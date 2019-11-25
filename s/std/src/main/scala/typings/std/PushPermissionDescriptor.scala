@@ -14,8 +14,8 @@ trait PushPermissionDescriptor extends PermissionDescriptor {
 object PushPermissionDescriptor {
   @scala.inline
   def apply(name: push, userVisibleOnly: js.UndefOr[scala.Boolean] = js.undefined): PushPermissionDescriptor = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (!js.isUndefined(userVisibleOnly)) __obj.updateDynamic("userVisibleOnly")(userVisibleOnly)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (!js.isUndefined(userVisibleOnly)) __obj.updateDynamic("userVisibleOnly")(userVisibleOnly.asInstanceOf[js.Any])
     __obj.asInstanceOf[PushPermissionDescriptor]
   }
 }

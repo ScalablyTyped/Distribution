@@ -23,10 +23,10 @@ object GetDetails {
     resourceIdentifier: typings.chrome.chrome.contentSettings.ResourceIdentifier = null,
     secondaryUrl: String = null
   ): GetDetails = {
-    val __obj = js.Dynamic.literal(primaryUrl = primaryUrl)
-    if (!js.isUndefined(incognito)) __obj.updateDynamic("incognito")(incognito)
-    if (resourceIdentifier != null) __obj.updateDynamic("resourceIdentifier")(resourceIdentifier)
-    if (secondaryUrl != null) __obj.updateDynamic("secondaryUrl")(secondaryUrl)
+    val __obj = js.Dynamic.literal(primaryUrl = primaryUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(incognito)) __obj.updateDynamic("incognito")(incognito.asInstanceOf[js.Any])
+    if (resourceIdentifier != null) __obj.updateDynamic("resourceIdentifier")(resourceIdentifier.asInstanceOf[js.Any])
+    if (secondaryUrl != null) __obj.updateDynamic("secondaryUrl")(secondaryUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDetails]
   }
 }

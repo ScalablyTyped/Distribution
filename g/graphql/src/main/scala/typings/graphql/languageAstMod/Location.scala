@@ -31,7 +31,7 @@ trait Location extends js.Object {
 object Location {
   @scala.inline
   def apply(end: Double, endToken: Token, source: Source, start: Double, startToken: Token): Location = {
-    val __obj = js.Dynamic.literal(end = end, endToken = endToken, source = source, start = start, startToken = startToken)
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], endToken = endToken.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], startToken = startToken.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Location]
   }

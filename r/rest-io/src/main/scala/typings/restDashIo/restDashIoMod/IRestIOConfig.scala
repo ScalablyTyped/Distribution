@@ -13,8 +13,8 @@ trait IRestIOConfig extends js.Object {
 object IRestIOConfig {
   @scala.inline
   def apply(resources: String, db: Mongoose = null): IRestIOConfig = {
-    val __obj = js.Dynamic.literal(resources = resources)
-    if (db != null) __obj.updateDynamic("db")(db)
+    val __obj = js.Dynamic.literal(resources = resources.asInstanceOf[js.Any])
+    if (db != null) __obj.updateDynamic("db")(db.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRestIOConfig]
   }
 }

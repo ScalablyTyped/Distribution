@@ -15,7 +15,7 @@ object Literal {
   @scala.inline
   def apply(`type`: literal, value: String | Double): Literal = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Literal]
   }
 }

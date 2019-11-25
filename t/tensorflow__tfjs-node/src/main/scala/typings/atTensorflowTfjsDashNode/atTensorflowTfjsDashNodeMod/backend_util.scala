@@ -3,17 +3,13 @@ package typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeMod
 import typings.atTensorflowTfjsDashCore.distOpsConvUnderscoreUtilMod.Conv2DInfo
 import typings.atTensorflowTfjsDashCore.distOpsConvUnderscoreUtilMod.Conv3DInfo
 import typings.atTensorflowTfjsDashCore.distTypesMod.DataType
-import typings.atTensorflowTfjsDashCore.distTypesMod.Rank
 import typings.atTensorflowTfjsDashCore.distTypesMod.Rank.R1
 import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.NCDHW
 import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.NCHW
 import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.NDHWC
 import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.NHWC
-import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.ceil
 import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.channelsFirst
 import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.channelsLast
-import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.floor
-import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.round
 import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.same
 import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.valid
 import scala.scalajs.js
@@ -27,7 +23,7 @@ object backend_util extends js.Object {
   def assertAxesAreInnerMostDims(msg: String, axes: js.Array[Double], rank: Double): Unit = js.native
   def assertParamsConsistent(shapes: js.Array[js.Array[Double]], axis: Double): Unit = js.native
   def axesAreInnerMostDims(axes: js.Array[Double], rank: Double): Boolean = js.native
-  def castTensor[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+  def castTensor[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
     x: T,
     dtype: DataType,
     backend: typings.atTensorflowTfjsDashCore.distBackendsBackendMod.KernelBackend
@@ -39,7 +35,7 @@ object backend_util extends js.Object {
     strides: Double | (js.Tuple2[Double, Double]),
     dilations: Double | (js.Tuple2[Double, Double]),
     pad: same | valid | Double,
-    roundingMode: floor | round | ceil
+    roundingMode: typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.floor | typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.round | typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.ceil
   ): Conv2DInfo = js.native
   def computeConv2DInfo(
     inShape: js.Tuple4[Double, Double, Double, Double],
@@ -47,7 +43,7 @@ object backend_util extends js.Object {
     strides: Double | (js.Tuple2[Double, Double]),
     dilations: Double | (js.Tuple2[Double, Double]),
     pad: same | valid | Double,
-    roundingMode: floor | round | ceil,
+    roundingMode: typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.floor | typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.round | typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.ceil,
     depthwise: Boolean
   ): Conv2DInfo = js.native
   def computeConv2DInfo(
@@ -56,7 +52,7 @@ object backend_util extends js.Object {
     strides: Double | (js.Tuple2[Double, Double]),
     dilations: Double | (js.Tuple2[Double, Double]),
     pad: same | valid | Double,
-    roundingMode: floor | round | ceil,
+    roundingMode: typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.floor | typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.round | typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.ceil,
     depthwise: Boolean,
     dataFormat: channelsFirst | channelsLast
   ): Conv2DInfo = js.native
@@ -169,7 +165,7 @@ object backend_util extends js.Object {
     pad: same | valid | Double,
     depthwise: Boolean,
     dataFormat: channelsFirst | channelsLast,
-    roundingMode: floor | round | ceil
+    roundingMode: typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.floor | typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.round | typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.ceil
   ): Conv3DInfo = js.native
   def computeConv3DInfo(
     inShape: js.Tuple5[Double, Double, Double, Double, Double],
@@ -391,7 +387,7 @@ object backend_util extends js.Object {
     strides: Double | (js.Tuple2[Double, Double]),
     dilations: Double | (js.Tuple2[Double, Double]),
     pad: same | valid | Double,
-    roundingMode: floor | round | ceil
+    roundingMode: typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.floor | typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.round | typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.ceil
   ): Conv2DInfo = js.native
   def computePool2DInfo(
     inShape: js.Tuple4[Double, Double, Double, Double],
@@ -399,7 +395,7 @@ object backend_util extends js.Object {
     strides: Double | (js.Tuple2[Double, Double]),
     dilations: Double | (js.Tuple2[Double, Double]),
     pad: same | valid | Double,
-    roundingMode: floor | round | ceil,
+    roundingMode: typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.floor | typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.round | typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.ceil,
     dataFormat: channelsFirst | channelsLast
   ): Conv2DInfo = js.native
   def computePool3DInfo(
@@ -415,7 +411,7 @@ object backend_util extends js.Object {
     strides: Double | (js.Tuple3[Double, Double, Double]),
     dilations: Double | (js.Tuple3[Double, Double, Double]),
     pad: same | valid | Double,
-    roundingMode: floor | round | ceil
+    roundingMode: typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.floor | typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.round | typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.ceil
   ): Conv3DInfo = js.native
   def computePool3DInfo(
     inShape: js.Tuple5[Double, Double, Double, Double, Double],
@@ -423,7 +419,7 @@ object backend_util extends js.Object {
     strides: Double | (js.Tuple3[Double, Double, Double]),
     dilations: Double | (js.Tuple3[Double, Double, Double]),
     pad: same | valid | Double,
-    roundingMode: floor | round | ceil,
+    roundingMode: typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.floor | typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.round | typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.ceil,
     dataFormat: NDHWC | NCDHW
   ): Conv3DInfo = js.native
   @JSName("convertConv2DDataFormat")
@@ -441,9 +437,9 @@ object backend_util extends js.Object {
   def getReductionAxes(inShape: js.Array[Double], outShape: js.Array[Double]): js.Array[Double] = js.native
   def getUndoAxesPermutation(axes: js.Array[Double]): js.Array[Double] = js.native
   def linspaceImpl(start: Double, stop: Double, num: Double): typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R1] = js.native
-  def reshapeTensor[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, R /* <: Rank */](
+  def reshapeTensor[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, R /* <: typings.atTensorflowTfjsDashCore.distTypesMod.Rank */](
     x: T,
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
   ): typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R] = js.native
   def tupleValuesAreOne(param: js.Array[Double]): Boolean = js.native
   def tupleValuesAreOne(param: Double): Boolean = js.native

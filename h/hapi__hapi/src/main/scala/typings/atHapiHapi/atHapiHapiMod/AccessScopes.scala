@@ -18,9 +18,9 @@ object AccessScopes {
     selection: js.Array[String] = null
   ): AccessScopes = {
     val __obj = js.Dynamic.literal()
-    if (forbidden != null) __obj.updateDynamic("forbidden")(forbidden)
-    if (required != null) __obj.updateDynamic("required")(required)
-    if (selection != null) __obj.updateDynamic("selection")(selection)
+    if (forbidden != null) __obj.updateDynamic("forbidden")(forbidden.asInstanceOf[js.Any])
+    if (required != null) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
+    if (selection != null) __obj.updateDynamic("selection")(selection.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessScopes]
   }
 }

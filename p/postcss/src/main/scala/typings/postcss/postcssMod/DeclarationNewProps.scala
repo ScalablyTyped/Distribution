@@ -23,9 +23,9 @@ object DeclarationNewProps {
   @scala.inline
   def apply(prop: String = null, raws: DeclarationRaws = null, value: String = null): DeclarationNewProps = {
     val __obj = js.Dynamic.literal()
-    if (prop != null) __obj.updateDynamic("prop")(prop)
-    if (raws != null) __obj.updateDynamic("raws")(raws)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (prop != null) __obj.updateDynamic("prop")(prop.asInstanceOf[js.Any])
+    if (raws != null) __obj.updateDynamic("raws")(raws.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeclarationNewProps]
   }
 }

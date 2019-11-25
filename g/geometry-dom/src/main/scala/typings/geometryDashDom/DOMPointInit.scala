@@ -26,7 +26,7 @@ trait DOMPointInit extends js.Object {
 object DOMPointInit {
   @scala.inline
   def apply(x: Double, y: Double, w: Int | Double = null, z: Int | Double = null): DOMPointInit = {
-    val __obj = js.Dynamic.literal(x = x, y = y)
+    val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     if (w != null) __obj.updateDynamic("w")(w.asInstanceOf[js.Any])
     if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
     __obj.asInstanceOf[DOMPointInit]

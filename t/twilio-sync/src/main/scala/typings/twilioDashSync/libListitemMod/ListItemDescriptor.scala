@@ -26,7 +26,7 @@ object ListItemDescriptor {
     uri: String,
     value: js.Object
   ): ListItemDescriptor = {
-    val __obj = js.Dynamic.literal(dateExpires = dateExpires, dateUpdated = dateUpdated, index = index, lastEventId = lastEventId, revision = revision, uri = uri, value = value)
+    val __obj = js.Dynamic.literal(dateExpires = dateExpires.asInstanceOf[js.Any], dateUpdated = dateUpdated.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], lastEventId = lastEventId.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ListItemDescriptor]
   }

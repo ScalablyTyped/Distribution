@@ -10,49 +10,94 @@ import scala.scalajs.js.annotation._
 
 object dayjsStrings {
   @js.native
-  sealed trait M extends UnitTypeShort
+  sealed trait M
+    extends OpUnitType
+       with QUnitType
+       with UnitType
+       with UnitTypeShort
   
   @js.native
   sealed trait Q extends QUnitType
   
   @js.native
-  sealed trait d extends UnitTypeShort
+  sealed trait d
+    extends OpUnitType
+       with QUnitType
+       with UnitType
+       with UnitTypeShort
   
   @js.native
-  sealed trait date extends UnitType
+  sealed trait date
+    extends OpUnitType
+       with QUnitType
+       with UnitType
   
   @js.native
-  sealed trait day extends UnitType
+  sealed trait day
+    extends OpUnitType
+       with QUnitType
+       with UnitType
   
   @js.native
-  sealed trait h extends UnitTypeShort
+  sealed trait h
+    extends OpUnitType
+       with QUnitType
+       with UnitType
+       with UnitTypeShort
   
   @js.native
-  sealed trait hour extends UnitType
+  sealed trait hour
+    extends OpUnitType
+       with QUnitType
+       with UnitType
   
   @js.native
-  sealed trait m extends UnitTypeShort
+  sealed trait m_
+    extends OpUnitType
+       with QUnitType
+       with UnitType
+       with UnitTypeShort
   
   @js.native
-  sealed trait millisecond extends UnitType
+  sealed trait millisecond
+    extends OpUnitType
+       with QUnitType
+       with UnitType
   
   @js.native
-  sealed trait minute extends UnitType
+  sealed trait minute
+    extends OpUnitType
+       with QUnitType
+       with UnitType
   
   @js.native
-  sealed trait month extends UnitType
+  sealed trait month
+    extends OpUnitType
+       with QUnitType
+       with UnitType
   
   @js.native
-  sealed trait ms extends UnitTypeShort
+  sealed trait ms
+    extends OpUnitType
+       with QUnitType
+       with UnitType
+       with UnitTypeShort
   
   @js.native
   sealed trait quarter extends QUnitType
   
   @js.native
-  sealed trait s extends UnitTypeShort
+  sealed trait s
+    extends OpUnitType
+       with QUnitType
+       with UnitType
+       with UnitTypeShort
   
   @js.native
-  sealed trait second extends UnitType
+  sealed trait second
+    extends OpUnitType
+       with QUnitType
+       with UnitType
   
   @js.native
   sealed trait w extends OpUnitType
@@ -61,10 +106,17 @@ object dayjsStrings {
   sealed trait week extends OpUnitType
   
   @js.native
-  sealed trait y extends UnitTypeShort
+  sealed trait y
+    extends OpUnitType
+       with QUnitType
+       with UnitType
+       with UnitTypeShort
   
   @js.native
-  sealed trait year extends UnitType
+  sealed trait year
+    extends OpUnitType
+       with QUnitType
+       with UnitType
   
   @scala.inline
   def M: M = "M".asInstanceOf[M]
@@ -81,7 +133,7 @@ object dayjsStrings {
   @scala.inline
   def hour: hour = "hour".asInstanceOf[hour]
   @scala.inline
-  def m: m = "m".asInstanceOf[m]
+  def m_ : m_ = "m".asInstanceOf[m_]
   @scala.inline
   def millisecond: millisecond = "millisecond".asInstanceOf[millisecond]
   @scala.inline

@@ -42,7 +42,7 @@ object denodeify extends js.Object {
   ): js.Function1[
     /* arg1 */ A, 
     typings.rsvp.rsvpMod.RSVP.Promise[
-      /* import warning: ImportType.apply c Unsupported type mapping: 
+      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in K1 ]: T}
     */ typings.rsvp.rsvpStrings.denodeify with js.Any
     ]

@@ -1,7 +1,6 @@
 package typings.videoDotJs.videoDotJsMod.default
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.videoDotJs.videoDotJsMod.videojs.MediaError
 import typings.videoDotJs.videoDotJsNumbers.`0`
 import typings.videoDotJs.videoDotJsNumbers.`1`
 import typings.videoDotJs.videoDotJsNumbers.`2`
@@ -14,7 +13,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("video.js", "MediaError")
 @js.native
-class MediaErrorCls protected () extends MediaError {
+class MediaErrorCls protected ()
+  extends typings.videoDotJs.videoDotJsMod.videojs.MediaError {
   def this(value: String) = this()
   def this(value: StringDictionary[js.Any]) = this()
   /**
@@ -30,7 +30,7 @@ class MediaErrorCls protected () extends MediaError {
     *          video.js `MediaError` object.
     */
   def this(value: Double) = this()
-  def this(value: MediaError) = this()
+  def this(value: typings.videoDotJs.videoDotJsMod.videojs.MediaError) = this()
   /**
     * W3C error code for media error aborted.
     * @default 1

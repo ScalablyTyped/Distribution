@@ -21,10 +21,10 @@ object InappproductsListResponse {
     tokenPagination: TokenPagination = null
   ): InappproductsListResponse = {
     val __obj = js.Dynamic.literal()
-    if (inappproduct != null) __obj.updateDynamic("inappproduct")(inappproduct)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (pageInfo != null) __obj.updateDynamic("pageInfo")(pageInfo)
-    if (tokenPagination != null) __obj.updateDynamic("tokenPagination")(tokenPagination)
+    if (inappproduct != null) __obj.updateDynamic("inappproduct")(inappproduct.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (pageInfo != null) __obj.updateDynamic("pageInfo")(pageInfo.asInstanceOf[js.Any])
+    if (tokenPagination != null) __obj.updateDynamic("tokenPagination")(tokenPagination.asInstanceOf[js.Any])
     __obj.asInstanceOf[InappproductsListResponse]
   }
 }

@@ -36,18 +36,18 @@ object Announcement {
     updateTime: String = null
   ): Announcement = {
     val __obj = js.Dynamic.literal()
-    if (alternateLink != null) __obj.updateDynamic("alternateLink")(alternateLink)
-    if (assigneeMode != null) __obj.updateDynamic("assigneeMode")(assigneeMode)
-    if (courseId != null) __obj.updateDynamic("courseId")(courseId)
-    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime)
-    if (creatorUserId != null) __obj.updateDynamic("creatorUserId")(creatorUserId)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (individualStudentsOptions != null) __obj.updateDynamic("individualStudentsOptions")(individualStudentsOptions)
-    if (materials != null) __obj.updateDynamic("materials")(materials)
-    if (scheduledTime != null) __obj.updateDynamic("scheduledTime")(scheduledTime)
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime)
+    if (alternateLink != null) __obj.updateDynamic("alternateLink")(alternateLink.asInstanceOf[js.Any])
+    if (assigneeMode != null) __obj.updateDynamic("assigneeMode")(assigneeMode.asInstanceOf[js.Any])
+    if (courseId != null) __obj.updateDynamic("courseId")(courseId.asInstanceOf[js.Any])
+    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
+    if (creatorUserId != null) __obj.updateDynamic("creatorUserId")(creatorUserId.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (individualStudentsOptions != null) __obj.updateDynamic("individualStudentsOptions")(individualStudentsOptions.asInstanceOf[js.Any])
+    if (materials != null) __obj.updateDynamic("materials")(materials.asInstanceOf[js.Any])
+    if (scheduledTime != null) __obj.updateDynamic("scheduledTime")(scheduledTime.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[Announcement]
   }
 }

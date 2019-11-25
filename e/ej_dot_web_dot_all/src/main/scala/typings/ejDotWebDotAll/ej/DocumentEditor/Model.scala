@@ -32,7 +32,7 @@ object Model {
     onZoomFactorChange: /* e */ OnZoomFactorChangeEventArgs => Unit = null
   ): Model = {
     val __obj = js.Dynamic.literal()
-    if (importExportSettings != null) __obj.updateDynamic("importExportSettings")(importExportSettings)
+    if (importExportSettings != null) __obj.updateDynamic("importExportSettings")(importExportSettings.asInstanceOf[js.Any])
     if (onDocumentChange != null) __obj.updateDynamic("onDocumentChange")(js.Any.fromFunction1(onDocumentChange))
     if (onRequestNavigate != null) __obj.updateDynamic("onRequestNavigate")(js.Any.fromFunction1(onRequestNavigate))
     if (onSelectionChange != null) __obj.updateDynamic("onSelectionChange")(js.Any.fromFunction1(onSelectionChange))

@@ -99,21 +99,21 @@ object Anon_Aggregator {
     userIp: String = null,
     window: String = null
   ): Anon_Aggregator = {
-    val __obj = js.Dynamic.literal(metric = metric, project = project, youngest = youngest)
-    if (aggregator != null) __obj.updateDynamic("aggregator")(aggregator)
-    if (alt != null) __obj.updateDynamic("alt")(alt)
+    val __obj = js.Dynamic.literal(metric = metric.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], youngest = youngest.asInstanceOf[js.Any])
+    if (aggregator != null) __obj.updateDynamic("aggregator")(aggregator.asInstanceOf[js.Any])
+    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (labels != null) __obj.updateDynamic("labels")(labels)
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
-    if (oldest != null) __obj.updateDynamic("oldest")(oldest)
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
-    if (timespan != null) __obj.updateDynamic("timespan")(timespan)
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
-    if (window != null) __obj.updateDynamic("window")(window)
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
+    if (oldest != null) __obj.updateDynamic("oldest")(oldest.asInstanceOf[js.Any])
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
+    if (timespan != null) __obj.updateDynamic("timespan")(timespan.asInstanceOf[js.Any])
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
+    if (window != null) __obj.updateDynamic("window")(window.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Aggregator]
   }
 }

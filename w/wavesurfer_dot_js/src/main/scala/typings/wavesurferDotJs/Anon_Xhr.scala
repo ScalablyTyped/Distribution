@@ -13,7 +13,7 @@ object Anon_Xhr {
   @scala.inline
   def apply(xhr: XHROptions = null): Anon_Xhr = {
     val __obj = js.Dynamic.literal()
-    if (xhr != null) __obj.updateDynamic("xhr")(xhr)
+    if (xhr != null) __obj.updateDynamic("xhr")(xhr.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Xhr]
   }
 }

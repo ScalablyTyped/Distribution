@@ -14,8 +14,8 @@ trait NavigationSetParamsActionPayload extends js.Object {
 object NavigationSetParamsActionPayload {
   @scala.inline
   def apply(key: String, params: NavigationParams = null): NavigationSetParamsActionPayload = {
-    val __obj = js.Dynamic.literal(key = key)
-    if (params != null) __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationSetParamsActionPayload]
   }
 }

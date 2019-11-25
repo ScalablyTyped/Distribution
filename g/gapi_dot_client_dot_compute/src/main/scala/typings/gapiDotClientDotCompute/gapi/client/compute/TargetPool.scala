@@ -80,18 +80,18 @@ object TargetPool {
     sessionAffinity: String = null
   ): TargetPool = {
     val __obj = js.Dynamic.literal()
-    if (backupPool != null) __obj.updateDynamic("backupPool")(backupPool)
-    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp)
-    if (description != null) __obj.updateDynamic("description")(description)
+    if (backupPool != null) __obj.updateDynamic("backupPool")(backupPool.asInstanceOf[js.Any])
+    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (failoverRatio != null) __obj.updateDynamic("failoverRatio")(failoverRatio.asInstanceOf[js.Any])
-    if (healthChecks != null) __obj.updateDynamic("healthChecks")(healthChecks)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (instances != null) __obj.updateDynamic("instances")(instances)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (region != null) __obj.updateDynamic("region")(region)
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
-    if (sessionAffinity != null) __obj.updateDynamic("sessionAffinity")(sessionAffinity)
+    if (healthChecks != null) __obj.updateDynamic("healthChecks")(healthChecks.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (instances != null) __obj.updateDynamic("instances")(instances.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
+    if (sessionAffinity != null) __obj.updateDynamic("sessionAffinity")(sessionAffinity.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetPool]
   }
 }

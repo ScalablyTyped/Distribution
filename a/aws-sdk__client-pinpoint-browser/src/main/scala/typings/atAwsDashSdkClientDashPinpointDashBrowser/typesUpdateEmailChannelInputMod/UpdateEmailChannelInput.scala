@@ -45,9 +45,9 @@ object UpdateEmailChannelInput {
     $httpOptions: BrowserHttpOptions = null,
     $maxRetries: Int | Double = null
   ): UpdateEmailChannelInput = {
-    val __obj = js.Dynamic.literal(ApplicationId = ApplicationId, EmailChannelRequest = EmailChannelRequest)
-    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal)
-    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions)
+    val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], EmailChannelRequest = EmailChannelRequest.asInstanceOf[js.Any])
+    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal.asInstanceOf[js.Any])
+    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions.asInstanceOf[js.Any])
     if ($maxRetries != null) __obj.updateDynamic("$maxRetries")($maxRetries.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateEmailChannelInput]
   }

@@ -19,9 +19,9 @@ object IPaymentMethodUpdateOptions {
   @scala.inline
   def apply(billing_details: Anon_Address = null, card: Anon_Expmonth = null, metadata: IMetadata = null): IPaymentMethodUpdateOptions = {
     val __obj = js.Dynamic.literal()
-    if (billing_details != null) __obj.updateDynamic("billing_details")(billing_details)
-    if (card != null) __obj.updateDynamic("card")(card)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (billing_details != null) __obj.updateDynamic("billing_details")(billing_details.asInstanceOf[js.Any])
+    if (card != null) __obj.updateDynamic("card")(card.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPaymentMethodUpdateOptions]
   }
 }

@@ -22,7 +22,7 @@ trait ContainerImage extends js.Object {
 object ContainerImage {
   @scala.inline
   def apply(names: js.Array[String], sizeBytes: Double): ContainerImage = {
-    val __obj = js.Dynamic.literal(names = names, sizeBytes = sizeBytes)
+    val __obj = js.Dynamic.literal(names = names.asInstanceOf[js.Any], sizeBytes = sizeBytes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ContainerImage]
   }

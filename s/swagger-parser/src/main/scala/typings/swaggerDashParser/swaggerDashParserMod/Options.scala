@@ -40,10 +40,10 @@ object Options {
     validate: Anon_Schema = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (dereference != null) __obj.updateDynamic("dereference")(dereference)
-    if (parse != null) __obj.updateDynamic("parse")(parse)
-    if (resolve != null) __obj.updateDynamic("resolve")(resolve)
-    if (validate != null) __obj.updateDynamic("validate")(validate)
+    if (dereference != null) __obj.updateDynamic("dereference")(dereference.asInstanceOf[js.Any])
+    if (parse != null) __obj.updateDynamic("parse")(parse.asInstanceOf[js.Any])
+    if (resolve != null) __obj.updateDynamic("resolve")(resolve.asInstanceOf[js.Any])
+    if (validate != null) __obj.updateDynamic("validate")(validate.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

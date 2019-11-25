@@ -23,7 +23,7 @@ object CustomLoaderConfig {
   def apply(inject: ctx | app = null, loadunit: js.UndefOr[Boolean] = js.undefined): CustomLoaderConfig = {
     val __obj = js.Dynamic.literal()
     if (inject != null) __obj.updateDynamic("inject")(inject.asInstanceOf[js.Any])
-    if (!js.isUndefined(loadunit)) __obj.updateDynamic("loadunit")(loadunit)
+    if (!js.isUndefined(loadunit)) __obj.updateDynamic("loadunit")(loadunit.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomLoaderConfig]
   }
 }

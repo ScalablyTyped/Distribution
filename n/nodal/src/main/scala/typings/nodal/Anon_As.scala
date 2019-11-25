@@ -20,10 +20,10 @@ object Anon_As {
     via: String = null
   ): Anon_As = {
     val __obj = js.Dynamic.literal()
-    if (as != null) __obj.updateDynamic("as")(as)
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (via != null) __obj.updateDynamic("via")(via)
+    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (via != null) __obj.updateDynamic("via")(via.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_As]
   }
 }

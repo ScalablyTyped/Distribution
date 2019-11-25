@@ -13,8 +13,8 @@ trait Shape extends js.Object {
 object Shape {
   @scala.inline
   def apply(meta: js.Object, params: js.Object, `type`: String): Shape = {
-    val __obj = js.Dynamic.literal(meta = meta, params = params)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Shape]
   }
 }

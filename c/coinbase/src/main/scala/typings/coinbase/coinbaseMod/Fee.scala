@@ -18,8 +18,8 @@ trait Fee extends js.Object {
 object Fee {
   @scala.inline
   def apply(amount: MoneyHash, `type`: String): Fee = {
-    val __obj = js.Dynamic.literal(amount = amount)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fee]
   }
 }

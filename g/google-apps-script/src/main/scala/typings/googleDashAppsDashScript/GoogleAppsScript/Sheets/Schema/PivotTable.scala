@@ -24,12 +24,12 @@ object PivotTable {
     values: js.Array[PivotValue] = null
   ): PivotTable = {
     val __obj = js.Dynamic.literal()
-    if (columns != null) __obj.updateDynamic("columns")(columns)
-    if (criteria != null) __obj.updateDynamic("criteria")(criteria)
-    if (rows != null) __obj.updateDynamic("rows")(rows)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (valueLayout != null) __obj.updateDynamic("valueLayout")(valueLayout)
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (criteria != null) __obj.updateDynamic("criteria")(criteria.asInstanceOf[js.Any])
+    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (valueLayout != null) __obj.updateDynamic("valueLayout")(valueLayout.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotTable]
   }
 }

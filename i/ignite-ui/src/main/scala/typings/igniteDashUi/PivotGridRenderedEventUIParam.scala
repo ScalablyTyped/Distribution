@@ -19,8 +19,8 @@ object PivotGridRenderedEventUIParam {
   @scala.inline
   def apply(grid: js.Any = null, owner: js.Any = null): PivotGridRenderedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (grid != null) __obj.updateDynamic("grid")(grid)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotGridRenderedEventUIParam]
   }
 }

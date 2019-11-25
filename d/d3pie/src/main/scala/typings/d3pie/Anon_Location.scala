@@ -25,8 +25,8 @@ object Anon_Location {
   ): Anon_Location = {
     val __obj = js.Dynamic.literal()
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (titleSubtitlePadding != null) __obj.updateDynamic("titleSubtitlePadding")(titleSubtitlePadding.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Location]
   }

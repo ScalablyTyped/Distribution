@@ -13,8 +13,8 @@ trait Anon_ConstantFalse extends js.Object {
 object Anon_ConstantFalse {
   @scala.inline
   def apply(constant: `false`, result: js.UndefOr[Unit] = js.undefined): Anon_ConstantFalse = {
-    val __obj = js.Dynamic.literal(constant = constant)
-    if (!js.isUndefined(result)) __obj.updateDynamic("result")(result)
+    val __obj = js.Dynamic.literal(constant = constant.asInstanceOf[js.Any])
+    if (!js.isUndefined(result)) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ConstantFalse]
   }
 }

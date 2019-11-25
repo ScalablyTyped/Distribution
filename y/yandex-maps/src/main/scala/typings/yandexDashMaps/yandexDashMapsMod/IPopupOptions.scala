@@ -28,7 +28,7 @@ object IPopupOptions {
     if (interactivityModel != null) __obj.updateDynamic("interactivityModel")(interactivityModel.asInstanceOf[js.Any])
     if (openTimeout != null) __obj.updateDynamic("openTimeout")(openTimeout.asInstanceOf[js.Any])
     if (pane != null) __obj.updateDynamic("pane")(pane.asInstanceOf[js.Any])
-    if (projection != null) __obj.updateDynamic("projection")(projection)
+    if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPopupOptions]
   }

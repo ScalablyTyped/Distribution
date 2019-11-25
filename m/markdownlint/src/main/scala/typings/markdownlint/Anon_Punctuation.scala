@@ -12,7 +12,7 @@ object Anon_Punctuation {
   @scala.inline
   def apply(punctuation: String = null): Anon_Punctuation = {
     val __obj = js.Dynamic.literal()
-    if (punctuation != null) __obj.updateDynamic("punctuation")(punctuation)
+    if (punctuation != null) __obj.updateDynamic("punctuation")(punctuation.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Punctuation]
   }
 }

@@ -85,7 +85,7 @@ object _base {
     SortedList: js.Object => Unit,
     Stack: js.Array[_] => Unit
   ): _base = {
-    val __obj = js.Dynamic.literal(ArrayList = js.Any.fromFunction1(ArrayList), BinaryTree = js.Any.fromFunction1(BinaryTree), Dictionary = js.Any.fromFunction1(Dictionary), DictionaryEntry = js.Any.fromFunction2(DictionaryEntry), DictionaryIterator = js.Any.fromFunction1(DictionaryIterator), Iterator = js.Any.fromFunction1(Iterator), Queue = js.Any.fromFunction1(Queue), Set = Set, SortedList = js.Any.fromFunction1(SortedList), Stack = js.Any.fromFunction1(Stack))
+    val __obj = js.Dynamic.literal(ArrayList = js.Any.fromFunction1(ArrayList), BinaryTree = js.Any.fromFunction1(BinaryTree), Dictionary = js.Any.fromFunction1(Dictionary), DictionaryEntry = js.Any.fromFunction2(DictionaryEntry), DictionaryIterator = js.Any.fromFunction1(DictionaryIterator), Iterator = js.Any.fromFunction1(Iterator), Queue = js.Any.fromFunction1(Queue), Set = Set.asInstanceOf[js.Any], SortedList = js.Any.fromFunction1(SortedList), Stack = js.Any.fromFunction1(Stack))
   
     __obj.asInstanceOf[_base]
   }

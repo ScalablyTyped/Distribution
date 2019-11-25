@@ -25,10 +25,10 @@ object MobileAppAssignment {
     target: DeviceAndAppManagementAssignmentTarget = null
   ): MobileAppAssignment = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (intent != null) __obj.updateDynamic("intent")(intent)
-    if (settings != null) __obj.updateDynamic("settings")(settings)
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (intent != null) __obj.updateDynamic("intent")(intent.asInstanceOf[js.Any])
+    if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[MobileAppAssignment]
   }
 }

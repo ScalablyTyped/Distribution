@@ -22,7 +22,7 @@ trait WorkItemLink extends js.Object {
 object WorkItemLink {
   @scala.inline
   def apply(rel: String, source: WorkItemReference, target: WorkItemReference): WorkItemLink = {
-    val __obj = js.Dynamic.literal(rel = rel, source = source, target = target)
+    val __obj = js.Dynamic.literal(rel = rel.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WorkItemLink]
   }

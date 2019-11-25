@@ -31,10 +31,10 @@ object ISensor {
     id: String = null,
     uniqueid: String = null
   ): ISensor = {
-    val __obj = js.Dynamic.literal(config = config, manufacturername = manufacturername, modelid = modelid, name = name, state = state, swversion = swversion)
-    __obj.updateDynamic("type")(`type`)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (uniqueid != null) __obj.updateDynamic("uniqueid")(uniqueid)
+    val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], manufacturername = manufacturername.asInstanceOf[js.Any], modelid = modelid.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], swversion = swversion.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (uniqueid != null) __obj.updateDynamic("uniqueid")(uniqueid.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISensor]
   }
 }

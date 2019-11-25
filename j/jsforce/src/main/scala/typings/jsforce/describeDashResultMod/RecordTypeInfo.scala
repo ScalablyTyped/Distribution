@@ -26,7 +26,7 @@ object RecordTypeInfo {
     urls: Record[String, String],
     developerName: maybe[String] = null
   ): RecordTypeInfo = {
-    val __obj = js.Dynamic.literal(available = available, defaultRecordTypeMapping = defaultRecordTypeMapping, master = master, name = name, recordTypeId = recordTypeId, urls = urls)
+    val __obj = js.Dynamic.literal(available = available.asInstanceOf[js.Any], defaultRecordTypeMapping = defaultRecordTypeMapping.asInstanceOf[js.Any], master = master.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], recordTypeId = recordTypeId.asInstanceOf[js.Any], urls = urls.asInstanceOf[js.Any])
     if (developerName != null) __obj.updateDynamic("developerName")(developerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecordTypeInfo]
   }

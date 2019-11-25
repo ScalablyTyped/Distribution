@@ -41,7 +41,7 @@ object Anon_FastReady {
     reloadPattern: js.Array[String] | String,
     watchDirs: js.Array[String]
   ): Anon_FastReady = {
-    val __obj = js.Dynamic.literal(fastReady = fastReady, ignoreDirs = ignoreDirs, overrideDefault = overrideDefault, reloadOnDebug = reloadOnDebug, reloadPattern = reloadPattern.asInstanceOf[js.Any], watchDirs = watchDirs)
+    val __obj = js.Dynamic.literal(fastReady = fastReady.asInstanceOf[js.Any], ignoreDirs = ignoreDirs.asInstanceOf[js.Any], overrideDefault = overrideDefault.asInstanceOf[js.Any], reloadOnDebug = reloadOnDebug.asInstanceOf[js.Any], reloadPattern = reloadPattern.asInstanceOf[js.Any], watchDirs = watchDirs.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FastReady]
   }

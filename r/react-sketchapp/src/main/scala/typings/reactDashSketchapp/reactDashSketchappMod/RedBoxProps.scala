@@ -13,7 +13,7 @@ trait RedBoxProps extends js.Object {
 object RedBoxProps {
   @scala.inline
   def apply(error: Error): RedBoxProps = {
-    val __obj = js.Dynamic.literal(error = error)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RedBoxProps]
   }

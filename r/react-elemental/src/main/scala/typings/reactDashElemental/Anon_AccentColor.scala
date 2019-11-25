@@ -32,12 +32,12 @@ object Anon_AccentColor {
     value: String = null
   ): Anon_AccentColor = {
     val __obj = js.Dynamic.literal()
-    if (accentColor != null) __obj.updateDynamic("accentColor")(accentColor)
-    if (idleColor != null) __obj.updateDynamic("idleColor")(idleColor)
+    if (accentColor != null) __obj.updateDynamic("accentColor")(accentColor.asInstanceOf[js.Any])
+    if (idleColor != null) __obj.updateDynamic("idleColor")(idleColor.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (radioRenderer != null) __obj.updateDynamic("radioRenderer")(js.Any.fromFunction3(radioRenderer))
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AccentColor]
   }
 }

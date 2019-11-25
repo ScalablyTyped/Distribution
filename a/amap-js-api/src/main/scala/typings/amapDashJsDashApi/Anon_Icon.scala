@@ -16,7 +16,7 @@ trait Anon_Icon extends js.Object {
 object Anon_Icon {
   @scala.inline
   def apply(icon: IconOptions, opacity: Double, text: TextOptions, zIndex: Double): Anon_Icon = {
-    val __obj = js.Dynamic.literal(icon = icon, opacity = opacity, text = text, zIndex = zIndex)
+    val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], zIndex = zIndex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Icon]
   }

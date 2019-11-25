@@ -24,8 +24,8 @@ object DailyMaintenanceWindow {
   @scala.inline
   def apply(duration: String = null, startTime: String = null): DailyMaintenanceWindow = {
     val __obj = js.Dynamic.literal()
-    if (duration != null) __obj.updateDynamic("duration")(duration)
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[DailyMaintenanceWindow]
   }
 }

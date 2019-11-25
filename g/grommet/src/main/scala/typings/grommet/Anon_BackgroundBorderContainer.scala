@@ -29,12 +29,12 @@ object Anon_BackgroundBorderContainer {
   ): Anon_BackgroundBorderContainer = {
     val __obj = js.Dynamic.literal()
     if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (border != null) __obj.updateDynamic("border")(border)
-    if (container != null) __obj.updateDynamic("container")(container)
+    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (overlay != null) __obj.updateDynamic("overlay")(overlay)
-    if (responsiveBreakpoint != null) __obj.updateDynamic("responsiveBreakpoint")(responsiveBreakpoint)
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex)
+    if (overlay != null) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
+    if (responsiveBreakpoint != null) __obj.updateDynamic("responsiveBreakpoint")(responsiveBreakpoint.asInstanceOf[js.Any])
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BackgroundBorderContainer]
   }
 }

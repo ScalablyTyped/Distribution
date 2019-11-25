@@ -27,8 +27,8 @@ object ResolveParams {
     source: TSource,
     StringDictionary: /* opt */ StringDictionary[js.Any] = null
   ): ResolveParams[TSource, TContext, TArgs] = {
-    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], info = info, projection = projection, source = source.asInstanceOf[js.Any])
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], projection = projection.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ResolveParams[TSource, TContext, TArgs]]
   }
 }

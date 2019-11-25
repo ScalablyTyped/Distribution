@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait SetupIntentPaymentMethodType extends js.Object
 
+object SetupIntentPaymentMethodType {
+  @scala.inline
+  def card: typings.stripe.stripeStrings.card = this.cast("card")
+  @scala.inline
+  def card_present: typings.stripe.stripeStrings.card_present = this.cast("card_present")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def sepa_debit: typings.stripe.stripeStrings.sepa_debit = this.cast("sepa_debit")
+}
+

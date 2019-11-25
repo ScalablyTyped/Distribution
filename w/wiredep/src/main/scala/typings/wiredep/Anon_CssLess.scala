@@ -21,7 +21,7 @@ trait Anon_CssLess extends js.Object {
 object Anon_CssLess {
   @scala.inline
   def apply(css: RegExp, less: RegExp): Anon_CssLess = {
-    val __obj = js.Dynamic.literal(css = css, less = less)
+    val __obj = js.Dynamic.literal(css = css.asInstanceOf[js.Any], less = less.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CssLess]
   }

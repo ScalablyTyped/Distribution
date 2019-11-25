@@ -73,7 +73,7 @@ object Typeofsystem {
     powerSource: TypeofpowerSource,
     storage: TypeofstorageCallback
   ): Typeofsystem = {
-    val __obj = js.Dynamic.literal(cpu = cpu, display = display, memory = memory, network = network, powerSource = powerSource, storage = storage)
+    val __obj = js.Dynamic.literal(cpu = cpu.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], memory = memory.asInstanceOf[js.Any], network = network.asInstanceOf[js.Any], powerSource = powerSource.asInstanceOf[js.Any], storage = storage.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Typeofsystem]
   }

@@ -11,7 +11,7 @@ trait KdfStatic extends js.Object {
 object KdfStatic {
   @scala.inline
   def apply(OpenSSL: IKdfImpl): KdfStatic = {
-    val __obj = js.Dynamic.literal(OpenSSL = OpenSSL)
+    val __obj = js.Dynamic.literal(OpenSSL = OpenSSL.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[KdfStatic]
   }

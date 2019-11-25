@@ -16,7 +16,7 @@ trait RegExpOptions extends js.Object {
 object RegExpOptions {
   @scala.inline
   def apply(options: i | m | s, regexp: String): RegExpOptions = {
-    val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], regexp = regexp)
+    val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], regexp = regexp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RegExpOptions]
   }

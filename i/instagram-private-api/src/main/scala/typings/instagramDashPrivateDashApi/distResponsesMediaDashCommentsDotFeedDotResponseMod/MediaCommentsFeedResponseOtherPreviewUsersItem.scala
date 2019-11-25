@@ -12,7 +12,7 @@ trait MediaCommentsFeedResponseOtherPreviewUsersItem extends js.Object {
 object MediaCommentsFeedResponseOtherPreviewUsersItem {
   @scala.inline
   def apply(id: Double, profile_pic_url: String): MediaCommentsFeedResponseOtherPreviewUsersItem = {
-    val __obj = js.Dynamic.literal(id = id, profile_pic_url = profile_pic_url)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], profile_pic_url = profile_pic_url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MediaCommentsFeedResponseOtherPreviewUsersItem]
   }

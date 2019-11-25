@@ -17,7 +17,7 @@ trait Anon_Element extends js.Object {
 object Anon_Element {
   @scala.inline
   def apply(element: Element, model: BaseModel[BaseEntity[BaseListener[_]], BaseModelListener]): Anon_Element = {
-    val __obj = js.Dynamic.literal(element = element, model = model)
+    val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Element]
   }

@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait Bool extends js.Object
 
+object Bool {
+  @scala.inline
+  def AND: typings.elasticlunr.elasticlunrStrings.AND = this.cast("AND")
+  @scala.inline
+  def OR: typings.elasticlunr.elasticlunrStrings.OR = this.cast("OR")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

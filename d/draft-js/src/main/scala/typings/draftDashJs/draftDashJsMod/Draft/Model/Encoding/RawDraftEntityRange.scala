@@ -19,7 +19,7 @@ trait RawDraftEntityRange extends js.Object {
 object RawDraftEntityRange {
   @scala.inline
   def apply(key: Double, length: Double, offset: Double): RawDraftEntityRange = {
-    val __obj = js.Dynamic.literal(key = key, length = length, offset = offset)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RawDraftEntityRange]
   }

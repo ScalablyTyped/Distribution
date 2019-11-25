@@ -21,9 +21,9 @@ object AddOnUpdateRequest {
     numberOfBillingCycles: Int | Double = null,
     quantity: Int | Double = null
   ): AddOnUpdateRequest = {
-    val __obj = js.Dynamic.literal(existingId = existingId)
-    if (amount != null) __obj.updateDynamic("amount")(amount)
-    if (!js.isUndefined(neverExpires)) __obj.updateDynamic("neverExpires")(neverExpires)
+    val __obj = js.Dynamic.literal(existingId = existingId.asInstanceOf[js.Any])
+    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
+    if (!js.isUndefined(neverExpires)) __obj.updateDynamic("neverExpires")(neverExpires.asInstanceOf[js.Any])
     if (numberOfBillingCycles != null) __obj.updateDynamic("numberOfBillingCycles")(numberOfBillingCycles.asInstanceOf[js.Any])
     if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddOnUpdateRequest]

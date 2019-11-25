@@ -15,8 +15,8 @@ object ListUserStatesResponse {
   @scala.inline
   def apply(responseMetadata: ResponseMetadata = null, userStates: js.Array[String] = null): ListUserStatesResponse = {
     val __obj = js.Dynamic.literal()
-    if (responseMetadata != null) __obj.updateDynamic("responseMetadata")(responseMetadata)
-    if (userStates != null) __obj.updateDynamic("userStates")(userStates)
+    if (responseMetadata != null) __obj.updateDynamic("responseMetadata")(responseMetadata.asInstanceOf[js.Any])
+    if (userStates != null) __obj.updateDynamic("userStates")(userStates.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListUserStatesResponse]
   }
 }

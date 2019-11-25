@@ -24,7 +24,7 @@ object InitializationOptions {
   def apply(flags: Int | Double = null, libraryParameters: String = null): InitializationOptions = {
     val __obj = js.Dynamic.literal()
     if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
-    if (libraryParameters != null) __obj.updateDynamic("libraryParameters")(libraryParameters)
+    if (libraryParameters != null) __obj.updateDynamic("libraryParameters")(libraryParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitializationOptions]
   }
 }

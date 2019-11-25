@@ -14,3 +14,20 @@ import scala.scalajs.js.annotation._
 */
 trait ChartPointShape extends js.Object
 
+object ChartPointShape {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def circle: typings.googleDotVisualization.googleDotVisualizationStrings.circle = this.cast("circle")
+  @scala.inline
+  def diamond: typings.googleDotVisualization.googleDotVisualizationStrings.diamond = this.cast("diamond")
+  @scala.inline
+  def polygon: typings.googleDotVisualization.googleDotVisualizationStrings.polygon = this.cast("polygon")
+  @scala.inline
+  def square: typings.googleDotVisualization.googleDotVisualizationStrings.square = this.cast("square")
+  @scala.inline
+  def star: typings.googleDotVisualization.googleDotVisualizationStrings.star = this.cast("star")
+  @scala.inline
+  def triangle: typings.googleDotVisualization.googleDotVisualizationStrings.triangle = this.cast("triangle")
+}
+

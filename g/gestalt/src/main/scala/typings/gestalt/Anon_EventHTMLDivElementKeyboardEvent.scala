@@ -25,7 +25,7 @@ object Anon_EventHTMLDivElementKeyboardEvent {
       Event
     ]
   ): Anon_EventHTMLDivElementKeyboardEvent = {
-    val __obj = js.Dynamic.literal(event = event)
+    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EventHTMLDivElementKeyboardEvent]
   }

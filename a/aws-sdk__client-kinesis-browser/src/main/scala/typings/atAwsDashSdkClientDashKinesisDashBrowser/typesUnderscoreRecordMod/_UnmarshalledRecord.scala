@@ -30,8 +30,8 @@ object _UnmarshalledRecord {
     ApproximateArrivalTimestamp: Date = null,
     EncryptionType: NONE | KMS | String = null
   ): _UnmarshalledRecord = {
-    val __obj = js.Dynamic.literal(Data = Data, PartitionKey = PartitionKey, SequenceNumber = SequenceNumber)
-    if (ApproximateArrivalTimestamp != null) __obj.updateDynamic("ApproximateArrivalTimestamp")(ApproximateArrivalTimestamp)
+    val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any], PartitionKey = PartitionKey.asInstanceOf[js.Any], SequenceNumber = SequenceNumber.asInstanceOf[js.Any])
+    if (ApproximateArrivalTimestamp != null) __obj.updateDynamic("ApproximateArrivalTimestamp")(ApproximateArrivalTimestamp.asInstanceOf[js.Any])
     if (EncryptionType != null) __obj.updateDynamic("EncryptionType")(EncryptionType.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledRecord]
   }

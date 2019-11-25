@@ -20,8 +20,8 @@ object DateLocalizerSpec {
     formats: Formats,
     propType: Validator[_] = null
   ): DateLocalizerSpec = {
-    val __obj = js.Dynamic.literal(firstOfWeek = js.Any.fromFunction1(firstOfWeek), format = js.Any.fromFunction3(format), formats = formats)
-    if (propType != null) __obj.updateDynamic("propType")(propType)
+    val __obj = js.Dynamic.literal(firstOfWeek = js.Any.fromFunction1(firstOfWeek), format = js.Any.fromFunction3(format), formats = formats.asInstanceOf[js.Any])
+    if (propType != null) __obj.updateDynamic("propType")(propType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateLocalizerSpec]
   }
 }

@@ -48,17 +48,17 @@ object AcousticModel {
     versions: js.Array[String] = null,
     warnings: String = null
   ): AcousticModel = {
-    val __obj = js.Dynamic.literal(customization_id = customization_id)
-    if (base_model_name != null) __obj.updateDynamic("base_model_name")(base_model_name)
-    if (created != null) __obj.updateDynamic("created")(created)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    val __obj = js.Dynamic.literal(customization_id = customization_id.asInstanceOf[js.Any])
+    if (base_model_name != null) __obj.updateDynamic("base_model_name")(base_model_name.asInstanceOf[js.Any])
+    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     if (progress != null) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (versions != null) __obj.updateDynamic("versions")(versions)
-    if (warnings != null) __obj.updateDynamic("warnings")(warnings)
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (versions != null) __obj.updateDynamic("versions")(versions.asInstanceOf[js.Any])
+    if (warnings != null) __obj.updateDynamic("warnings")(warnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[AcousticModel]
   }
 }

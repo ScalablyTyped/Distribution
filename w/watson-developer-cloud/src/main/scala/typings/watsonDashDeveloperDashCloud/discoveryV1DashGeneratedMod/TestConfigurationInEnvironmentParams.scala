@@ -45,15 +45,15 @@ object TestConfigurationInEnvironmentParams {
     return_response: js.UndefOr[Boolean] = js.undefined,
     step: Step | String = null
   ): TestConfigurationInEnvironmentParams = {
-    val __obj = js.Dynamic.literal(environment_id = environment_id)
-    if (configuration != null) __obj.updateDynamic("configuration")(configuration)
-    if (configuration_id != null) __obj.updateDynamic("configuration_id")(configuration_id)
+    val __obj = js.Dynamic.literal(environment_id = environment_id.asInstanceOf[js.Any])
+    if (configuration != null) __obj.updateDynamic("configuration")(configuration.asInstanceOf[js.Any])
+    if (configuration_id != null) __obj.updateDynamic("configuration_id")(configuration_id.asInstanceOf[js.Any])
     if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
     if (file_content_type != null) __obj.updateDynamic("file_content_type")(file_content_type.asInstanceOf[js.Any])
-    if (filename != null) __obj.updateDynamic("filename")(filename)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response)
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestConfigurationInEnvironmentParams]
   }

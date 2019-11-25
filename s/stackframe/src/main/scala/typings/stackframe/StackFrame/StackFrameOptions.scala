@@ -32,16 +32,16 @@ object StackFrameOptions {
     source: String = null
   ): StackFrameOptions = {
     val __obj = js.Dynamic.literal()
-    if (args != null) __obj.updateDynamic("args")(args)
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
     if (columnNumber != null) __obj.updateDynamic("columnNumber")(columnNumber.asInstanceOf[js.Any])
-    if (fileName != null) __obj.updateDynamic("fileName")(fileName)
-    if (functionName != null) __obj.updateDynamic("functionName")(functionName)
-    if (!js.isUndefined(isConstructor)) __obj.updateDynamic("isConstructor")(isConstructor)
-    if (!js.isUndefined(isEval)) __obj.updateDynamic("isEval")(isEval)
-    if (!js.isUndefined(isNative)) __obj.updateDynamic("isNative")(isNative)
-    if (!js.isUndefined(isToplevel)) __obj.updateDynamic("isToplevel")(isToplevel)
+    if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
+    if (functionName != null) __obj.updateDynamic("functionName")(functionName.asInstanceOf[js.Any])
+    if (!js.isUndefined(isConstructor)) __obj.updateDynamic("isConstructor")(isConstructor.asInstanceOf[js.Any])
+    if (!js.isUndefined(isEval)) __obj.updateDynamic("isEval")(isEval.asInstanceOf[js.Any])
+    if (!js.isUndefined(isNative)) __obj.updateDynamic("isNative")(isNative.asInstanceOf[js.Any])
+    if (!js.isUndefined(isToplevel)) __obj.updateDynamic("isToplevel")(isToplevel.asInstanceOf[js.Any])
     if (lineNumber != null) __obj.updateDynamic("lineNumber")(lineNumber.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackFrameOptions]
   }
 }

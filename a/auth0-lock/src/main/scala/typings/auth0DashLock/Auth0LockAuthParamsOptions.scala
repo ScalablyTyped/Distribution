@@ -29,14 +29,14 @@ object Auth0LockAuthParamsOptions {
     state: String = null
   ): Auth0LockAuthParamsOptions = {
     val __obj = js.Dynamic.literal()
-    if (access_token != null) __obj.updateDynamic("access_token")(access_token)
-    if (connection_scopes != null) __obj.updateDynamic("connection_scopes")(connection_scopes)
-    if (device != null) __obj.updateDynamic("device")(device)
-    if (nonce != null) __obj.updateDynamic("nonce")(nonce)
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
-    if (request_id != null) __obj.updateDynamic("request_id")(request_id)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (access_token != null) __obj.updateDynamic("access_token")(access_token.asInstanceOf[js.Any])
+    if (connection_scopes != null) __obj.updateDynamic("connection_scopes")(connection_scopes.asInstanceOf[js.Any])
+    if (device != null) __obj.updateDynamic("device")(device.asInstanceOf[js.Any])
+    if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
+    if (request_id != null) __obj.updateDynamic("request_id")(request_id.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[Auth0LockAuthParamsOptions]
   }
 }

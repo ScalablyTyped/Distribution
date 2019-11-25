@@ -13,8 +13,8 @@ object CallOptions {
   @scala.inline
   def apply(autoDeleteCallback: js.Any = null, correlationId: String = null): CallOptions = {
     val __obj = js.Dynamic.literal()
-    if (autoDeleteCallback != null) __obj.updateDynamic("autoDeleteCallback")(autoDeleteCallback)
-    if (correlationId != null) __obj.updateDynamic("correlationId")(correlationId)
+    if (autoDeleteCallback != null) __obj.updateDynamic("autoDeleteCallback")(autoDeleteCallback.asInstanceOf[js.Any])
+    if (correlationId != null) __obj.updateDynamic("correlationId")(correlationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallOptions]
   }
 }

@@ -12,7 +12,7 @@ trait Anon_Items extends js.Object {
 object Anon_Items {
   @scala.inline
   def apply(items: js.Array[String], viewportTopOffset: Double): Anon_Items = {
-    val __obj = js.Dynamic.literal(items = items, viewportTopOffset = viewportTopOffset)
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], viewportTopOffset = viewportTopOffset.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Items]
   }

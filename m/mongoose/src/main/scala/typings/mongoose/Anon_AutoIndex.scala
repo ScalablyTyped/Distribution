@@ -16,7 +16,7 @@ object Anon_AutoIndex {
   @scala.inline
   def apply(autoIndex: js.UndefOr[Boolean] = js.undefined): Anon_AutoIndex = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoIndex)) __obj.updateDynamic("autoIndex")(autoIndex)
+    if (!js.isUndefined(autoIndex)) __obj.updateDynamic("autoIndex")(autoIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AutoIndex]
   }
 }

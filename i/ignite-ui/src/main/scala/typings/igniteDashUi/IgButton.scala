@@ -39,16 +39,16 @@ object IgButton {
     width: js.Any = null
   ): IgButton = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(centerLabel)) __obj.updateDynamic("centerLabel")(centerLabel)
-    if (css != null) __obj.updateDynamic("css")(css)
-    if (height != null) __obj.updateDynamic("height")(height)
-    if (icons != null) __obj.updateDynamic("icons")(icons)
-    if (labelText != null) __obj.updateDynamic("labelText")(labelText)
-    if (link != null) __obj.updateDynamic("link")(link)
-    if (!js.isUndefined(onlyIcons)) __obj.updateDynamic("onlyIcons")(onlyIcons)
-    if (!js.isUndefined(title)) __obj.updateDynamic("title")(title)
-    if (width != null) __obj.updateDynamic("width")(width)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(centerLabel)) __obj.updateDynamic("centerLabel")(centerLabel.asInstanceOf[js.Any])
+    if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
+    if (labelText != null) __obj.updateDynamic("labelText")(labelText.asInstanceOf[js.Any])
+    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
+    if (!js.isUndefined(onlyIcons)) __obj.updateDynamic("onlyIcons")(onlyIcons.asInstanceOf[js.Any])
+    if (!js.isUndefined(title)) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgButton]
   }
 }

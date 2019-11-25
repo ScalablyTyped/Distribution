@@ -19,7 +19,7 @@ trait Options[T] extends js.Object {
 object Options {
   @scala.inline
   def apply[T](count: Double, filter: /* value */ T => Boolean = null): Options[T] = {
-    val __obj = js.Dynamic.literal(count = count)
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
     __obj.asInstanceOf[Options[T]]
   }

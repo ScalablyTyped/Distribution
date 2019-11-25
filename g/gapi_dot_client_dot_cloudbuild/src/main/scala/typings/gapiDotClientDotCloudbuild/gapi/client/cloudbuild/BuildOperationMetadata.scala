@@ -13,7 +13,7 @@ object BuildOperationMetadata {
   @scala.inline
   def apply(build: Build = null): BuildOperationMetadata = {
     val __obj = js.Dynamic.literal()
-    if (build != null) __obj.updateDynamic("build")(build)
+    if (build != null) __obj.updateDynamic("build")(build.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildOperationMetadata]
   }
 }

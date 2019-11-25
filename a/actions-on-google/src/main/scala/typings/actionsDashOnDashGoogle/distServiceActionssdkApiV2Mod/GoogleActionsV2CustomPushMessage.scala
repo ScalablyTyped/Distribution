@@ -28,9 +28,9 @@ object GoogleActionsV2CustomPushMessage {
     userNotification: GoogleActionsV2UserNotification = null
   ): GoogleActionsV2CustomPushMessage = {
     val __obj = js.Dynamic.literal()
-    if (orderUpdate != null) __obj.updateDynamic("orderUpdate")(orderUpdate)
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (userNotification != null) __obj.updateDynamic("userNotification")(userNotification)
+    if (orderUpdate != null) __obj.updateDynamic("orderUpdate")(orderUpdate.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (userNotification != null) __obj.updateDynamic("userNotification")(userNotification.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2CustomPushMessage]
   }
 }

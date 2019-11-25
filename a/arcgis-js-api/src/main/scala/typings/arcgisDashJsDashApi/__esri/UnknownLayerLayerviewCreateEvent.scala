@@ -12,7 +12,7 @@ trait UnknownLayerLayerviewCreateEvent extends js.Object {
 object UnknownLayerLayerviewCreateEvent {
   @scala.inline
   def apply(layerView: LayerView, view: View): UnknownLayerLayerviewCreateEvent = {
-    val __obj = js.Dynamic.literal(layerView = layerView, view = view)
+    val __obj = js.Dynamic.literal(layerView = layerView.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UnknownLayerLayerviewCreateEvent]
   }

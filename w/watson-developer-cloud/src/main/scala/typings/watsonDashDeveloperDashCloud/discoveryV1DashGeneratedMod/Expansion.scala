@@ -15,8 +15,8 @@ trait Expansion extends js.Object {
 object Expansion {
   @scala.inline
   def apply(expanded_terms: js.Array[String], input_terms: js.Array[String] = null): Expansion = {
-    val __obj = js.Dynamic.literal(expanded_terms = expanded_terms)
-    if (input_terms != null) __obj.updateDynamic("input_terms")(input_terms)
+    val __obj = js.Dynamic.literal(expanded_terms = expanded_terms.asInstanceOf[js.Any])
+    if (input_terms != null) __obj.updateDynamic("input_terms")(input_terms.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expansion]
   }
 }

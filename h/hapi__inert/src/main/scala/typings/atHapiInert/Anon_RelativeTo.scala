@@ -14,7 +14,7 @@ trait Anon_RelativeTo extends js.Object {
 object Anon_RelativeTo {
   @scala.inline
   def apply(relativeTo: String): Anon_RelativeTo = {
-    val __obj = js.Dynamic.literal(relativeTo = relativeTo)
+    val __obj = js.Dynamic.literal(relativeTo = relativeTo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_RelativeTo]
   }

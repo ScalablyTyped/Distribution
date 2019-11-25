@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait MatchedRoute[Params /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+trait MatchedRoute[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ K in keyof Params ]:? string}
   */ typings.reactDashRouterDashConfig.reactDashRouterDashConfigStrings.MatchedRoute with js.Any */] extends js.Object {
   var `match`: typings.reactDashRouter.reactDashRouterMod.`match`[Params]
@@ -14,11 +14,11 @@ trait MatchedRoute[Params /* <: /* import warning: ImportType.apply c Unsupporte
 
 object MatchedRoute {
   @scala.inline
-  def apply[Params /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  def apply[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
     */ typings.reactDashRouterDashConfig.reactDashRouterDashConfigStrings.MatchedRoute with js.Any */](`match`: `match`[Params], route: RouteConfig): MatchedRoute[Params] = {
-    val __obj = js.Dynamic.literal(route = route)
-    __obj.updateDynamic("match")(`match`)
+    val __obj = js.Dynamic.literal(route = route.asInstanceOf[js.Any])
+    __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatchedRoute[Params]]
   }
 }

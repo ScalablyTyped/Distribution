@@ -39,19 +39,19 @@ object DocumentFetchParams {
     update_seq: js.UndefOr[Boolean] = js.undefined
   ): DocumentFetchParams = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(conflicts)) __obj.updateDynamic("conflicts")(conflicts)
-    if (!js.isUndefined(descending)) __obj.updateDynamic("descending")(descending)
-    if (end_key != null) __obj.updateDynamic("end_key")(end_key)
-    if (end_key_doc_id != null) __obj.updateDynamic("end_key_doc_id")(end_key_doc_id)
-    if (!js.isUndefined(inclusive_end)) __obj.updateDynamic("inclusive_end")(inclusive_end)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (keys != null) __obj.updateDynamic("keys")(keys)
+    if (!js.isUndefined(conflicts)) __obj.updateDynamic("conflicts")(conflicts.asInstanceOf[js.Any])
+    if (!js.isUndefined(descending)) __obj.updateDynamic("descending")(descending.asInstanceOf[js.Any])
+    if (end_key != null) __obj.updateDynamic("end_key")(end_key.asInstanceOf[js.Any])
+    if (end_key_doc_id != null) __obj.updateDynamic("end_key_doc_id")(end_key_doc_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(inclusive_end)) __obj.updateDynamic("inclusive_end")(inclusive_end.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
-    if (stale != null) __obj.updateDynamic("stale")(stale)
-    if (start_key != null) __obj.updateDynamic("start_key")(start_key)
-    if (start_key_doc_id != null) __obj.updateDynamic("start_key_doc_id")(start_key_doc_id)
-    if (!js.isUndefined(update_seq)) __obj.updateDynamic("update_seq")(update_seq)
+    if (stale != null) __obj.updateDynamic("stale")(stale.asInstanceOf[js.Any])
+    if (start_key != null) __obj.updateDynamic("start_key")(start_key.asInstanceOf[js.Any])
+    if (start_key_doc_id != null) __obj.updateDynamic("start_key_doc_id")(start_key_doc_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(update_seq)) __obj.updateDynamic("update_seq")(update_seq.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentFetchParams]
   }
 }

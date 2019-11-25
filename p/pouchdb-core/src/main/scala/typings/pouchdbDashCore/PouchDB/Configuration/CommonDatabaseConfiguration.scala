@@ -23,8 +23,8 @@ object CommonDatabaseConfiguration {
   @scala.inline
   def apply(adapter: String = null, name: String = null): CommonDatabaseConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (adapter != null) __obj.updateDynamic("adapter")(adapter)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (adapter != null) __obj.updateDynamic("adapter")(adapter.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommonDatabaseConfiguration]
   }
 }

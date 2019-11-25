@@ -13,7 +13,7 @@ trait ISplashScreen extends js.Object {
 object ISplashScreen {
   @scala.inline
   def apply(imageLocation: Rect, ondismissed: js.Any): ISplashScreen = {
-    val __obj = js.Dynamic.literal(imageLocation = imageLocation, ondismissed = ondismissed)
+    val __obj = js.Dynamic.literal(imageLocation = imageLocation.asInstanceOf[js.Any], ondismissed = ondismissed.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISplashScreen]
   }

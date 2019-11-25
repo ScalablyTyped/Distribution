@@ -23,7 +23,7 @@ object INumericInputState {
     prevMinProp: Int | Double = null,
     prevValueProp: Double | String = null
   ): INumericInputState = {
-    val __obj = js.Dynamic.literal(shouldSelectAfterUpdate = shouldSelectAfterUpdate, stepMaxPrecision = stepMaxPrecision, value = value)
+    val __obj = js.Dynamic.literal(shouldSelectAfterUpdate = shouldSelectAfterUpdate.asInstanceOf[js.Any], stepMaxPrecision = stepMaxPrecision.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     if (prevMaxProp != null) __obj.updateDynamic("prevMaxProp")(prevMaxProp.asInstanceOf[js.Any])
     if (prevMinProp != null) __obj.updateDynamic("prevMinProp")(prevMinProp.asInstanceOf[js.Any])
     if (prevValueProp != null) __obj.updateDynamic("prevValueProp")(prevValueProp.asInstanceOf[js.Any])

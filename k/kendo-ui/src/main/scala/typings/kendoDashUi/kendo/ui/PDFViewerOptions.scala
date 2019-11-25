@@ -38,18 +38,18 @@ object PDFViewerOptions {
     width: Double | String = null
   ): PDFViewerOptions = {
     val __obj = js.Dynamic.literal()
-    if (defaultPageSize != null) __obj.updateDynamic("defaultPageSize")(defaultPageSize)
-    if (dplProcessing != null) __obj.updateDynamic("dplProcessing")(dplProcessing)
+    if (defaultPageSize != null) __obj.updateDynamic("defaultPageSize")(defaultPageSize.asInstanceOf[js.Any])
+    if (dplProcessing != null) __obj.updateDynamic("dplProcessing")(dplProcessing.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction1(open))
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (pdfjsProcessing != null) __obj.updateDynamic("pdfjsProcessing")(pdfjsProcessing)
+    if (pdfjsProcessing != null) __obj.updateDynamic("pdfjsProcessing")(pdfjsProcessing.asInstanceOf[js.Any])
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
     if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view)
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[PDFViewerOptions]
   }

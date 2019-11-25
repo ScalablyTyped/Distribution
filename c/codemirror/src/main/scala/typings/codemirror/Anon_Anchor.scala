@@ -13,7 +13,7 @@ trait Anon_Anchor extends js.Object {
 object Anon_Anchor {
   @scala.inline
   def apply(anchor: Position, head: Position): Anon_Anchor = {
-    val __obj = js.Dynamic.literal(anchor = anchor, head = head)
+    val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Anchor]
   }

@@ -43,16 +43,16 @@ object Profile {
     spNameQualifier: String = null
   ): Profile = {
     val __obj = js.Dynamic.literal(getAssertion = js.Any.fromFunction0(getAssertion), getAssertionXml = js.Any.fromFunction0(getAssertionXml), getSamlResponseXml = js.Any.fromFunction0(getSamlResponseXml))
-    if (ID != null) __obj.updateDynamic("ID")(ID)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (issuer != null) __obj.updateDynamic("issuer")(issuer)
-    if (mail != null) __obj.updateDynamic("mail")(mail)
-    if (nameID != null) __obj.updateDynamic("nameID")(nameID)
-    if (nameIDFormat != null) __obj.updateDynamic("nameIDFormat")(nameIDFormat)
-    if (nameQualifier != null) __obj.updateDynamic("nameQualifier")(nameQualifier)
-    if (sessionIndex != null) __obj.updateDynamic("sessionIndex")(sessionIndex)
-    if (spNameQualifier != null) __obj.updateDynamic("spNameQualifier")(spNameQualifier)
+    if (ID != null) __obj.updateDynamic("ID")(ID.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (issuer != null) __obj.updateDynamic("issuer")(issuer.asInstanceOf[js.Any])
+    if (mail != null) __obj.updateDynamic("mail")(mail.asInstanceOf[js.Any])
+    if (nameID != null) __obj.updateDynamic("nameID")(nameID.asInstanceOf[js.Any])
+    if (nameIDFormat != null) __obj.updateDynamic("nameIDFormat")(nameIDFormat.asInstanceOf[js.Any])
+    if (nameQualifier != null) __obj.updateDynamic("nameQualifier")(nameQualifier.asInstanceOf[js.Any])
+    if (sessionIndex != null) __obj.updateDynamic("sessionIndex")(sessionIndex.asInstanceOf[js.Any])
+    if (spNameQualifier != null) __obj.updateDynamic("spNameQualifier")(spNameQualifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[Profile]
   }
 }

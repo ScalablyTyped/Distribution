@@ -18,10 +18,10 @@ trait RelayWebhook extends js.Object {
 object RelayWebhook {
   @scala.inline
   def apply(`match`: Match, target: String, auth_token: String = null, name: String = null): RelayWebhook = {
-    val __obj = js.Dynamic.literal(target = target)
-    __obj.updateDynamic("match")(`match`)
-    if (auth_token != null) __obj.updateDynamic("auth_token")(auth_token)
-    if (name != null) __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
+    __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
+    if (auth_token != null) __obj.updateDynamic("auth_token")(auth_token.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelayWebhook]
   }
 }

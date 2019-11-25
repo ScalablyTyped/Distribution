@@ -52,9 +52,9 @@ object ojNavigationListSettableProperties {
     data: DataProvider[K, D] = null,
     rootLabel: String = null
   ): ojNavigationListSettableProperties[K, D] = {
-    val __obj = js.Dynamic.literal(as = as, currentItem = currentItem.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], drillMode = drillMode.asInstanceOf[js.Any], edge = edge.asInstanceOf[js.Any], expanded = expanded, hierarchyMenuThreshold = hierarchyMenuThreshold, item = item, overflow = overflow.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any], translations = translations)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (rootLabel != null) __obj.updateDynamic("rootLabel")(rootLabel)
+    val __obj = js.Dynamic.literal(as = as.asInstanceOf[js.Any], currentItem = currentItem.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], drillMode = drillMode.asInstanceOf[js.Any], edge = edge.asInstanceOf[js.Any], expanded = expanded.asInstanceOf[js.Any], hierarchyMenuThreshold = hierarchyMenuThreshold.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], overflow = overflow.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (rootLabel != null) __obj.updateDynamic("rootLabel")(rootLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojNavigationListSettableProperties[K, D]]
   }
 }

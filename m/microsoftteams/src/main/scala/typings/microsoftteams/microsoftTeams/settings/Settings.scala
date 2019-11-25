@@ -37,10 +37,10 @@ object Settings {
     suggestedDisplayName: String = null,
     websiteUrl: String = null
   ): Settings = {
-    val __obj = js.Dynamic.literal(contentUrl = contentUrl, entityId = entityId)
-    if (removeUrl != null) __obj.updateDynamic("removeUrl")(removeUrl)
-    if (suggestedDisplayName != null) __obj.updateDynamic("suggestedDisplayName")(suggestedDisplayName)
-    if (websiteUrl != null) __obj.updateDynamic("websiteUrl")(websiteUrl)
+    val __obj = js.Dynamic.literal(contentUrl = contentUrl.asInstanceOf[js.Any], entityId = entityId.asInstanceOf[js.Any])
+    if (removeUrl != null) __obj.updateDynamic("removeUrl")(removeUrl.asInstanceOf[js.Any])
+    if (suggestedDisplayName != null) __obj.updateDynamic("suggestedDisplayName")(suggestedDisplayName.asInstanceOf[js.Any])
+    if (websiteUrl != null) __obj.updateDynamic("websiteUrl")(websiteUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Settings]
   }
 }

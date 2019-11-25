@@ -32,10 +32,10 @@ object TextareaState {
     left: Int | Double = null,
     top: Int | Double = null
   ): TextareaState[TItem] = {
-    val __obj = js.Dynamic.literal(actualToken = actualToken, dataLoading = dataLoading, selectionEnd = selectionEnd, selectionStart = selectionStart, value = value)
-    if (component != null) __obj.updateDynamic("component")(component)
-    if (currentTrigger != null) __obj.updateDynamic("currentTrigger")(currentTrigger)
-    if (data != null) __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(actualToken = actualToken.asInstanceOf[js.Any], dataLoading = dataLoading.asInstanceOf[js.Any], selectionEnd = selectionEnd.asInstanceOf[js.Any], selectionStart = selectionStart.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
+    if (currentTrigger != null) __obj.updateDynamic("currentTrigger")(currentTrigger.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextareaState[TItem]]

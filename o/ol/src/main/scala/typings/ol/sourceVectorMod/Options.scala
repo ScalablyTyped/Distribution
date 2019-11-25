@@ -38,13 +38,13 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (attributions != null) __obj.updateDynamic("attributions")(attributions.asInstanceOf[js.Any])
     if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (loader != null) __obj.updateDynamic("loader")(loader)
-    if (!js.isUndefined(overlaps)) __obj.updateDynamic("overlaps")(overlaps)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (loader != null) __obj.updateDynamic("loader")(loader.asInstanceOf[js.Any])
+    if (!js.isUndefined(overlaps)) __obj.updateDynamic("overlaps")(overlaps.asInstanceOf[js.Any])
     if (strategy != null) __obj.updateDynamic("strategy")(js.Any.fromFunction2(strategy))
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (!js.isUndefined(useSpatialIndex)) __obj.updateDynamic("useSpatialIndex")(useSpatialIndex)
-    if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX)
+    if (!js.isUndefined(useSpatialIndex)) __obj.updateDynamic("useSpatialIndex")(useSpatialIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

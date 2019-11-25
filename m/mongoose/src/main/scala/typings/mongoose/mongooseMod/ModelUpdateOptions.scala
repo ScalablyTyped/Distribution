@@ -53,16 +53,16 @@ object ModelUpdateOptions {
     upsert: js.UndefOr[Boolean] = js.undefined
   ): ModelUpdateOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi)
-    if (!js.isUndefined(multipleCastError)) __obj.updateDynamic("multipleCastError")(multipleCastError)
-    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite)
-    if (!js.isUndefined(runValidators)) __obj.updateDynamic("runValidators")(runValidators)
-    if (!js.isUndefined(safe)) __obj.updateDynamic("safe")(safe)
-    if (session != null) __obj.updateDynamic("session")(session)
-    if (!js.isUndefined(setDefaultsOnInsert)) __obj.updateDynamic("setDefaultsOnInsert")(setDefaultsOnInsert)
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
-    if (!js.isUndefined(upsert)) __obj.updateDynamic("upsert")(upsert)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi.asInstanceOf[js.Any])
+    if (!js.isUndefined(multipleCastError)) __obj.updateDynamic("multipleCastError")(multipleCastError.asInstanceOf[js.Any])
+    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite.asInstanceOf[js.Any])
+    if (!js.isUndefined(runValidators)) __obj.updateDynamic("runValidators")(runValidators.asInstanceOf[js.Any])
+    if (!js.isUndefined(safe)) __obj.updateDynamic("safe")(safe.asInstanceOf[js.Any])
+    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
+    if (!js.isUndefined(setDefaultsOnInsert)) __obj.updateDynamic("setDefaultsOnInsert")(setDefaultsOnInsert.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
+    if (!js.isUndefined(upsert)) __obj.updateDynamic("upsert")(upsert.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelUpdateOptions]
   }
 }

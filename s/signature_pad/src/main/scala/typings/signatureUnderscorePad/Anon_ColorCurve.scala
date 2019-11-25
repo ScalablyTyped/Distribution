@@ -13,7 +13,7 @@ trait Anon_ColorCurve extends js.Object {
 object Anon_ColorCurve {
   @scala.inline
   def apply(color: String, curve: Bezier): Anon_ColorCurve = {
-    val __obj = js.Dynamic.literal(color = color, curve = curve)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], curve = curve.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ColorCurve]
   }

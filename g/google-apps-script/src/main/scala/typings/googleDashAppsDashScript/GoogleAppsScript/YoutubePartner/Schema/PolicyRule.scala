@@ -14,9 +14,9 @@ object PolicyRule {
   @scala.inline
   def apply(action: String = null, conditions: Conditions = null, subaction: js.Array[String] = null): PolicyRule = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action)
-    if (conditions != null) __obj.updateDynamic("conditions")(conditions)
-    if (subaction != null) __obj.updateDynamic("subaction")(subaction)
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (conditions != null) __obj.updateDynamic("conditions")(conditions.asInstanceOf[js.Any])
+    if (subaction != null) __obj.updateDynamic("subaction")(subaction.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolicyRule]
   }
 }

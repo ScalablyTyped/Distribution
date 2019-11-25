@@ -11,7 +11,7 @@ trait DiscoverRepositoryChainingResponseChaining_info extends js.Object {
 object DiscoverRepositoryChainingResponseChaining_info {
   @scala.inline
   def apply(sources: String): DiscoverRepositoryChainingResponseChaining_info = {
-    val __obj = js.Dynamic.literal(sources = sources)
+    val __obj = js.Dynamic.literal(sources = sources.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DiscoverRepositoryChainingResponseChaining_info]
   }

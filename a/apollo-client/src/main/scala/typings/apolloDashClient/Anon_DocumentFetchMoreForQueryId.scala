@@ -28,8 +28,8 @@ object Anon_DocumentFetchMoreForQueryId {
     variables: js.Object,
     fetchMoreForQueryId: String = null
   ): Anon_DocumentFetchMoreForQueryId = {
-    val __obj = js.Dynamic.literal(document = document, isPoll = isPoll, isRefetch = isRefetch, metadata = metadata, queryId = queryId, storePreviousVariables = storePreviousVariables, variables = variables)
-    if (fetchMoreForQueryId != null) __obj.updateDynamic("fetchMoreForQueryId")(fetchMoreForQueryId)
+    val __obj = js.Dynamic.literal(document = document.asInstanceOf[js.Any], isPoll = isPoll.asInstanceOf[js.Any], isRefetch = isRefetch.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], queryId = queryId.asInstanceOf[js.Any], storePreviousVariables = storePreviousVariables.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
+    if (fetchMoreForQueryId != null) __obj.updateDynamic("fetchMoreForQueryId")(fetchMoreForQueryId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DocumentFetchMoreForQueryId]
   }
 }

@@ -14,8 +14,8 @@ trait OAuth2SecurityScheme extends SecuritySchemeObject {
 object OAuth2SecurityScheme {
   @scala.inline
   def apply(flows: Anon_AuthorizationCode, `type`: oauth2): OAuth2SecurityScheme = {
-    val __obj = js.Dynamic.literal(flows = flows)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(flows = flows.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[OAuth2SecurityScheme]
   }
 }

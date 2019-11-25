@@ -38,8 +38,8 @@ object CardDetails {
     redactedCardNumber: String,
     scanned: js.UndefOr[Boolean] = js.undefined
   ): CardDetails = {
-    val __obj = js.Dynamic.literal(cardNumber = cardNumber, cardType = cardType, cardholderName = cardholderName, cvv = cvv, expiryMonth = expiryMonth, expiryYear = expiryYear, postalCode = postalCode, redactedCardNumber = redactedCardNumber)
-    if (!js.isUndefined(scanned)) __obj.updateDynamic("scanned")(scanned)
+    val __obj = js.Dynamic.literal(cardNumber = cardNumber.asInstanceOf[js.Any], cardType = cardType.asInstanceOf[js.Any], cardholderName = cardholderName.asInstanceOf[js.Any], cvv = cvv.asInstanceOf[js.Any], expiryMonth = expiryMonth.asInstanceOf[js.Any], expiryYear = expiryYear.asInstanceOf[js.Any], postalCode = postalCode.asInstanceOf[js.Any], redactedCardNumber = redactedCardNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(scanned)) __obj.updateDynamic("scanned")(scanned.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardDetails]
   }
 }

@@ -44,18 +44,18 @@ object XmppOptions {
     reconnect: js.UndefOr[Boolean] = js.undefined,
     register: js.UndefOr[Boolean] = js.undefined
   ): XmppOptions = {
-    val __obj = js.Dynamic.literal(jid = jid, password = password)
-    if (actAs != null) __obj.updateDynamic("actAs")(actAs)
-    if (!js.isUndefined(autostart)) __obj.updateDynamic("autostart")(autostart)
-    if (bosh != null) __obj.updateDynamic("bosh")(bosh)
-    if (credentials != null) __obj.updateDynamic("credentials")(credentials)
-    if (!js.isUndefined(disallowTLS)) __obj.updateDynamic("disallowTLS")(disallowTLS)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (!js.isUndefined(legacySSL)) __obj.updateDynamic("legacySSL")(legacySSL)
+    val __obj = js.Dynamic.literal(jid = jid.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any])
+    if (actAs != null) __obj.updateDynamic("actAs")(actAs.asInstanceOf[js.Any])
+    if (!js.isUndefined(autostart)) __obj.updateDynamic("autostart")(autostart.asInstanceOf[js.Any])
+    if (bosh != null) __obj.updateDynamic("bosh")(bosh.asInstanceOf[js.Any])
+    if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
+    if (!js.isUndefined(disallowTLS)) __obj.updateDynamic("disallowTLS")(disallowTLS.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (!js.isUndefined(legacySSL)) __obj.updateDynamic("legacySSL")(legacySSL.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (preferred != null) __obj.updateDynamic("preferred")(preferred)
-    if (!js.isUndefined(reconnect)) __obj.updateDynamic("reconnect")(reconnect)
-    if (!js.isUndefined(register)) __obj.updateDynamic("register")(register)
+    if (preferred != null) __obj.updateDynamic("preferred")(preferred.asInstanceOf[js.Any])
+    if (!js.isUndefined(reconnect)) __obj.updateDynamic("reconnect")(reconnect.asInstanceOf[js.Any])
+    if (!js.isUndefined(register)) __obj.updateDynamic("register")(register.asInstanceOf[js.Any])
     __obj.asInstanceOf[XmppOptions]
   }
 }

@@ -22,7 +22,7 @@ object Font {
     kernings: StringDictionary[StringDictionary[Double]],
     pages: js.Array[String]
   ): Font = {
-    val __obj = js.Dynamic.literal(chars = chars, common = common, info = info, kernings = kernings, pages = pages)
+    val __obj = js.Dynamic.literal(chars = chars.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], kernings = kernings.asInstanceOf[js.Any], pages = pages.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Font]
   }

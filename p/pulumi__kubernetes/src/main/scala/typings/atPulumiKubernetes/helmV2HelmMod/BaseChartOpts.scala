@@ -57,9 +57,9 @@ object BaseChartOpts {
   ): BaseChartOpts = {
     val __obj = js.Dynamic.literal()
     if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
-    if (resourcePrefix != null) __obj.updateDynamic("resourcePrefix")(resourcePrefix)
-    if (transformations != null) __obj.updateDynamic("transformations")(transformations)
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (resourcePrefix != null) __obj.updateDynamic("resourcePrefix")(resourcePrefix.asInstanceOf[js.Any])
+    if (transformations != null) __obj.updateDynamic("transformations")(transformations.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseChartOpts]
   }
 }

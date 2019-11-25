@@ -23,7 +23,7 @@ object Anon_BATTERYSAVING {
     HIGH_ACCURACY: high_accuracy,
     LOCATION_OFF: location_off
   ): Anon_BATTERYSAVING = {
-    val __obj = js.Dynamic.literal(BATTERY_SAVING = BATTERY_SAVING, DEVICE_ONLY = DEVICE_ONLY, HIGH_ACCURACY = HIGH_ACCURACY, LOCATION_OFF = LOCATION_OFF)
+    val __obj = js.Dynamic.literal(BATTERY_SAVING = BATTERY_SAVING.asInstanceOf[js.Any], DEVICE_ONLY = DEVICE_ONLY.asInstanceOf[js.Any], HIGH_ACCURACY = HIGH_ACCURACY.asInstanceOf[js.Any], LOCATION_OFF = LOCATION_OFF.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BATTERYSAVING]
   }

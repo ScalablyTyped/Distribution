@@ -21,7 +21,7 @@ object Anon_MinuteStep {
     styles: StringDictionary[RegisteredStyle[_]],
     triggerType: String
   ): Anon_MinuteStep = {
-    val __obj = js.Dynamic.literal(minuteStep = minuteStep, mode = mode, styles = styles, triggerType = triggerType)
+    val __obj = js.Dynamic.literal(minuteStep = minuteStep.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any], triggerType = triggerType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_MinuteStep]
   }

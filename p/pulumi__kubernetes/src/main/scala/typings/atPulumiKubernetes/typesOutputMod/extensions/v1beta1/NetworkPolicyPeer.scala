@@ -38,7 +38,7 @@ trait NetworkPolicyPeer extends js.Object {
 object NetworkPolicyPeer {
   @scala.inline
   def apply(ipBlock: IPBlock, namespaceSelector: LabelSelector, podSelector: LabelSelector): NetworkPolicyPeer = {
-    val __obj = js.Dynamic.literal(ipBlock = ipBlock, namespaceSelector = namespaceSelector, podSelector = podSelector)
+    val __obj = js.Dynamic.literal(ipBlock = ipBlock.asInstanceOf[js.Any], namespaceSelector = namespaceSelector.asInstanceOf[js.Any], podSelector = podSelector.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NetworkPolicyPeer]
   }

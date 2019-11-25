@@ -30,11 +30,11 @@ object PropsType {
     val __obj = js.Dynamic.literal()
     if (clearIcon != null) __obj.updateDynamic("clearIcon")(clearIcon.asInstanceOf[js.Any])
     if (closeIcon != null) __obj.updateDynamic("closeIcon")(closeIcon.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (onCancel != null) __obj.updateDynamic("onCancel")(js.Any.fromFunction0(onCancel))
     if (onClear != null) __obj.updateDynamic("onClear")(js.Any.fromFunction0(onClear))
-    if (!js.isUndefined(showClear)) __obj.updateDynamic("showClear")(showClear)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(showClear)) __obj.updateDynamic("showClear")(showClear.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropsType]
   }
 }

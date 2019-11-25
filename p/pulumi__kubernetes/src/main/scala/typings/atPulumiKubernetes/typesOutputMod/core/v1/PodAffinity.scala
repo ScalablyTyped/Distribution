@@ -36,7 +36,7 @@ object PodAffinity {
     preferredDuringSchedulingIgnoredDuringExecution: js.Array[WeightedPodAffinityTerm],
     requiredDuringSchedulingIgnoredDuringExecution: js.Array[PodAffinityTerm]
   ): PodAffinity = {
-    val __obj = js.Dynamic.literal(preferredDuringSchedulingIgnoredDuringExecution = preferredDuringSchedulingIgnoredDuringExecution, requiredDuringSchedulingIgnoredDuringExecution = requiredDuringSchedulingIgnoredDuringExecution)
+    val __obj = js.Dynamic.literal(preferredDuringSchedulingIgnoredDuringExecution = preferredDuringSchedulingIgnoredDuringExecution.asInstanceOf[js.Any], requiredDuringSchedulingIgnoredDuringExecution = requiredDuringSchedulingIgnoredDuringExecution.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PodAffinity]
   }

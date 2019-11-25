@@ -66,9 +66,9 @@ object Options {
     timeoutInterval: Int | Double = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(automaticOpen)) __obj.updateDynamic("automaticOpen")(automaticOpen)
-    if (binaryType != null) __obj.updateDynamic("binaryType")(binaryType)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (!js.isUndefined(automaticOpen)) __obj.updateDynamic("automaticOpen")(automaticOpen.asInstanceOf[js.Any])
+    if (binaryType != null) __obj.updateDynamic("binaryType")(binaryType.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
     if (maxReconnectAttempts != null) __obj.updateDynamic("maxReconnectAttempts")(maxReconnectAttempts.asInstanceOf[js.Any])
     if (maxReconnectInterval != null) __obj.updateDynamic("maxReconnectInterval")(maxReconnectInterval.asInstanceOf[js.Any])
     if (reconnectDecay != null) __obj.updateDynamic("reconnectDecay")(reconnectDecay.asInstanceOf[js.Any])

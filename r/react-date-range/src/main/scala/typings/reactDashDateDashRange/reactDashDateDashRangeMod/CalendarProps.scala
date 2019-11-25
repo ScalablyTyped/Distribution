@@ -24,13 +24,13 @@ object CalendarProps {
   ): CalendarProps = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any])
     if (firstDayOfWeek != null) __obj.updateDynamic("firstDayOfWeek")(firstDayOfWeek.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (lang != null) __obj.updateDynamic("lang")(lang)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
     if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
     if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onInit != null) __obj.updateDynamic("onInit")(js.Any.fromFunction1(onInit))
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalendarProps]
   }
 }

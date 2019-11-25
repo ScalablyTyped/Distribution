@@ -19,10 +19,10 @@ object Permission {
   @scala.inline
   def apply(description: String = null, kind: String = null, name: String = null, permissionId: String = null): Permission = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (permissionId != null) __obj.updateDynamic("permissionId")(permissionId)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (permissionId != null) __obj.updateDynamic("permissionId")(permissionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Permission]
   }
 }

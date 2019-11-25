@@ -13,7 +13,7 @@ object LocalIdentificationBlockParams {
   @scala.inline
   def apply(idBlock: LocalHexBlockParams with Anon_IsConstructed = null): LocalIdentificationBlockParams = {
     val __obj = js.Dynamic.literal()
-    if (idBlock != null) __obj.updateDynamic("idBlock")(idBlock)
+    if (idBlock != null) __obj.updateDynamic("idBlock")(idBlock.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalIdentificationBlockParams]
   }
 }

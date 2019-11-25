@@ -22,9 +22,9 @@ object MaybeLegacyResponse {
   ): MaybeLegacyResponse = {
     val __obj = js.Dynamic.literal()
     if (getAlertText != null) __obj.updateDynamic("getAlertText")(js.Any.fromFunction0(getAlertText))
-    if (message != null) __obj.updateDynamic("message")(message)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaybeLegacyResponse]
   }
 }

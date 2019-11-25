@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@angular/core", "ViewChildren")
 @js.native
-class ViewChildrenCls protected () extends ViewChildren {
+class ViewChildrenCls protected () extends Query {
   def this(selector: String) = this()
   def this(selector: js.Function) = this()
   def this(selector: Type[_]) = this()

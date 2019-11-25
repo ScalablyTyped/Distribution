@@ -13,7 +13,7 @@ object MixinOptions {
   @scala.inline
   def apply(chain: js.UndefOr[Boolean] = js.undefined): MixinOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(chain)) __obj.updateDynamic("chain")(chain)
+    if (!js.isUndefined(chain)) __obj.updateDynamic("chain")(chain.asInstanceOf[js.Any])
     __obj.asInstanceOf[MixinOptions]
   }
 }

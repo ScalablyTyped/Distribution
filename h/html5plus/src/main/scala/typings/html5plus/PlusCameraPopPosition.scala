@@ -44,10 +44,10 @@ object PlusCameraPopPosition {
   @scala.inline
   def apply(height: String = null, left: String = null, top: String = null, width: String = null): PlusCameraPopPosition = {
     val __obj = js.Dynamic.literal()
-    if (height != null) __obj.updateDynamic("height")(height)
-    if (left != null) __obj.updateDynamic("left")(left)
-    if (top != null) __obj.updateDynamic("top")(top)
-    if (width != null) __obj.updateDynamic("width")(width)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusCameraPopPosition]
   }
 }

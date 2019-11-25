@@ -11,7 +11,7 @@ trait Anon_TempImagePath extends js.Object {
 object Anon_TempImagePath {
   @scala.inline
   def apply(tempImagePath: String): Anon_TempImagePath = {
-    val __obj = js.Dynamic.literal(tempImagePath = tempImagePath)
+    val __obj = js.Dynamic.literal(tempImagePath = tempImagePath.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_TempImagePath]
   }

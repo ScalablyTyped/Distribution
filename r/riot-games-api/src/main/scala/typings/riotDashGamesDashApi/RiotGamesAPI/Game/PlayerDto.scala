@@ -13,7 +13,7 @@ trait PlayerDto extends js.Object {
 object PlayerDto {
   @scala.inline
   def apply(championId: Double, summonerId: Double, teamId: Double): PlayerDto = {
-    val __obj = js.Dynamic.literal(championId = championId, summonerId = summonerId, teamId = teamId)
+    val __obj = js.Dynamic.literal(championId = championId.asInstanceOf[js.Any], summonerId = summonerId.asInstanceOf[js.Any], teamId = teamId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PlayerDto]
   }

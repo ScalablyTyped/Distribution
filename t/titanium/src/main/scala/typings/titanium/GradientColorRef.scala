@@ -22,7 +22,7 @@ object GradientColorRef {
   @scala.inline
   def apply(color: String = null, offset: Int | Double = null): GradientColorRef = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[GradientColorRef]
   }

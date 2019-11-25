@@ -15,7 +15,7 @@ trait MessageList extends js.Object {
 object MessageList {
   @scala.inline
   def apply(cluid: String, flag_read: Double, msgid: Double, subject: String, timestamp: Double): MessageList = {
-    val __obj = js.Dynamic.literal(cluid = cluid, flag_read = flag_read, msgid = msgid, subject = subject, timestamp = timestamp)
+    val __obj = js.Dynamic.literal(cluid = cluid.asInstanceOf[js.Any], flag_read = flag_read.asInstanceOf[js.Any], msgid = msgid.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MessageList]
   }

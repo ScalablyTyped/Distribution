@@ -20,8 +20,8 @@ object ActionOptions {
     limit: Int | Double = null
   ): ActionOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowFunction)) __obj.updateDynamic("allowFunction")(allowFunction)
-    if (!js.isUndefined(clearOnStoryChange)) __obj.updateDynamic("clearOnStoryChange")(clearOnStoryChange)
+    if (!js.isUndefined(allowFunction)) __obj.updateDynamic("allowFunction")(allowFunction.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearOnStoryChange)) __obj.updateDynamic("clearOnStoryChange")(clearOnStoryChange.asInstanceOf[js.Any])
     if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionOptions]

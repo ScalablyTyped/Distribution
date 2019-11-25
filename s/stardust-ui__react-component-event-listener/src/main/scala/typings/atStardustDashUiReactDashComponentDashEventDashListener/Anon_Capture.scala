@@ -20,10 +20,10 @@ object Anon_Capture {
     `type`: js.UndefOr[scala.Nothing] = js.undefined
   ): Anon_Capture = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(capture)) __obj.updateDynamic("capture")(capture)
-    if (!js.isUndefined(listener)) __obj.updateDynamic("listener")(listener)
-    if (!js.isUndefined(targetRef)) __obj.updateDynamic("targetRef")(targetRef)
-    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(capture)) __obj.updateDynamic("capture")(capture.asInstanceOf[js.Any])
+    if (!js.isUndefined(listener)) __obj.updateDynamic("listener")(listener.asInstanceOf[js.Any])
+    if (!js.isUndefined(targetRef)) __obj.updateDynamic("targetRef")(targetRef.asInstanceOf[js.Any])
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Capture]
   }
 }

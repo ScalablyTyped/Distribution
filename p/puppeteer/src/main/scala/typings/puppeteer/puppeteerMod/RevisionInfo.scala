@@ -20,7 +20,7 @@ trait RevisionInfo extends js.Object {
 object RevisionInfo {
   @scala.inline
   def apply(executablePath: String, folderPath: String, local: Boolean, revision: String, url: String): RevisionInfo = {
-    val __obj = js.Dynamic.literal(executablePath = executablePath, folderPath = folderPath, local = local, revision = revision, url = url)
+    val __obj = js.Dynamic.literal(executablePath = executablePath.asInstanceOf[js.Any], folderPath = folderPath.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RevisionInfo]
   }

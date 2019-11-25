@@ -14,3 +14,20 @@ import scala.scalajs.js.annotation._
 */
 trait ChartLegendPosition extends js.Object
 
+object ChartLegendPosition {
+  @scala.inline
+  def bottom: typings.googleDotVisualization.googleDotVisualizationStrings.bottom = this.cast("bottom")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def in: typings.googleDotVisualization.googleDotVisualizationStrings.in = this.cast("in")
+  @scala.inline
+  def left: typings.googleDotVisualization.googleDotVisualizationStrings.left = this.cast("left")
+  @scala.inline
+  def none: typings.googleDotVisualization.googleDotVisualizationStrings.none = this.cast("none")
+  @scala.inline
+  def right: typings.googleDotVisualization.googleDotVisualizationStrings.right = this.cast("right")
+  @scala.inline
+  def top: typings.googleDotVisualization.googleDotVisualizationStrings.top = this.cast("top")
+}
+

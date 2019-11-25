@@ -19,8 +19,8 @@ object Anon_Deferred {
     fetchSize: Int | Double = null
   ): Anon_Deferred = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(deferred)) __obj.updateDynamic("deferred")(deferred)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(deferred)) __obj.updateDynamic("deferred")(deferred.asInstanceOf[js.Any])
     if (fetchSize != null) __obj.updateDynamic("fetchSize")(fetchSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Deferred]
   }

@@ -30,15 +30,15 @@ object MenuItemDef {
     subMenu: js.Array[MenuItemDef | String] = null,
     tooltip: String = null
   ): MenuItemDef = {
-    val __obj = js.Dynamic.literal(name = name)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (action != null) __obj.updateDynamic("action")(js.Any.fromFunction0(action))
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
-    if (cssClasses != null) __obj.updateDynamic("cssClasses")(cssClasses)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
+    if (cssClasses != null) __obj.updateDynamic("cssClasses")(cssClasses.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (shortcut != null) __obj.updateDynamic("shortcut")(shortcut)
-    if (subMenu != null) __obj.updateDynamic("subMenu")(subMenu)
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (shortcut != null) __obj.updateDynamic("shortcut")(shortcut.asInstanceOf[js.Any])
+    if (subMenu != null) __obj.updateDynamic("subMenu")(subMenu.asInstanceOf[js.Any])
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuItemDef]
   }
 }

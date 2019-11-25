@@ -32,10 +32,10 @@ object ModalDialogGroupColumnEventUIParam {
     owner: js.Any = null
   ): ModalDialogGroupColumnEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (groupedColumns != null) __obj.updateDynamic("groupedColumns")(groupedColumns)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (layout != null) __obj.updateDynamic("layout")(layout)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (groupedColumns != null) __obj.updateDynamic("groupedColumns")(groupedColumns.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModalDialogGroupColumnEventUIParam]
   }
 }

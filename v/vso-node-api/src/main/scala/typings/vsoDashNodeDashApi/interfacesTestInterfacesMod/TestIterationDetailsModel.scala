@@ -34,7 +34,7 @@ object TestIterationDetailsModel {
     startedDate: Date,
     url: String
   ): TestIterationDetailsModel = {
-    val __obj = js.Dynamic.literal(actionResults = actionResults, attachments = attachments, comment = comment, completedDate = completedDate, durationInMs = durationInMs, errorMessage = errorMessage, id = id, outcome = outcome, parameters = parameters, startedDate = startedDate, url = url)
+    val __obj = js.Dynamic.literal(actionResults = actionResults.asInstanceOf[js.Any], attachments = attachments.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], completedDate = completedDate.asInstanceOf[js.Any], durationInMs = durationInMs.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], outcome = outcome.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any], startedDate = startedDate.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TestIterationDetailsModel]
   }

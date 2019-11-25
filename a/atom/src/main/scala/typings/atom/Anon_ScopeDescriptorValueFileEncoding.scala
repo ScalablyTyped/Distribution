@@ -14,7 +14,7 @@ trait Anon_ScopeDescriptorValueFileEncoding extends js.Object {
 object Anon_ScopeDescriptorValueFileEncoding {
   @scala.inline
   def apply(scopeDescriptor: ScopeDescriptor, value: FileEncoding): Anon_ScopeDescriptorValueFileEncoding = {
-    val __obj = js.Dynamic.literal(scopeDescriptor = scopeDescriptor, value = value)
+    val __obj = js.Dynamic.literal(scopeDescriptor = scopeDescriptor.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ScopeDescriptorValueFileEncoding]
   }

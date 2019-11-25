@@ -48,15 +48,15 @@ object TaskbarEditedEventArgs {
     rightResizing: js.UndefOr[Boolean] = js.undefined
   ): TaskbarEditedEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (!js.isUndefined(dragging)) __obj.updateDynamic("dragging")(dragging)
-    if (editingFields != null) __obj.updateDynamic("editingFields")(editingFields)
-    if (!js.isUndefined(leftResizing)) __obj.updateDynamic("leftResizing")(leftResizing)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (previousData != null) __obj.updateDynamic("previousData")(previousData)
-    if (!js.isUndefined(progressResizing)) __obj.updateDynamic("progressResizing")(progressResizing)
-    if (!js.isUndefined(rightResizing)) __obj.updateDynamic("rightResizing")(rightResizing)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragging)) __obj.updateDynamic("dragging")(dragging.asInstanceOf[js.Any])
+    if (editingFields != null) __obj.updateDynamic("editingFields")(editingFields.asInstanceOf[js.Any])
+    if (!js.isUndefined(leftResizing)) __obj.updateDynamic("leftResizing")(leftResizing.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (previousData != null) __obj.updateDynamic("previousData")(previousData.asInstanceOf[js.Any])
+    if (!js.isUndefined(progressResizing)) __obj.updateDynamic("progressResizing")(progressResizing.asInstanceOf[js.Any])
+    if (!js.isUndefined(rightResizing)) __obj.updateDynamic("rightResizing")(rightResizing.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskbarEditedEventArgs]
   }
 }

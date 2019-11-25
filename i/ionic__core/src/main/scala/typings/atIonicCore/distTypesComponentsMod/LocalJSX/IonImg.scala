@@ -38,11 +38,11 @@ object IonImg {
     src: String = null
   ): IonImg = {
     val __obj = js.Dynamic.literal()
-    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
     if (onIonError != null) __obj.updateDynamic("onIonError")(js.Any.fromFunction1(onIonError))
     if (onIonImgDidLoad != null) __obj.updateDynamic("onIonImgDidLoad")(js.Any.fromFunction1(onIonImgDidLoad))
     if (onIonImgWillLoad != null) __obj.updateDynamic("onIonImgWillLoad")(js.Any.fromFunction1(onIonImgWillLoad))
-    if (src != null) __obj.updateDynamic("src")(src)
+    if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonImg]
   }
 }

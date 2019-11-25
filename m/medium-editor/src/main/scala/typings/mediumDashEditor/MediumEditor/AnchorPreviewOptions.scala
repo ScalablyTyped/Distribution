@@ -21,9 +21,9 @@ object AnchorPreviewOptions {
   ): AnchorPreviewOptions = {
     val __obj = js.Dynamic.literal()
     if (hideDelay != null) __obj.updateDynamic("hideDelay")(hideDelay.asInstanceOf[js.Any])
-    if (previewValueSelector != null) __obj.updateDynamic("previewValueSelector")(previewValueSelector)
-    if (!js.isUndefined(showOnEmptyLinks)) __obj.updateDynamic("showOnEmptyLinks")(showOnEmptyLinks)
-    if (!js.isUndefined(showWhenToolbarIsVisible)) __obj.updateDynamic("showWhenToolbarIsVisible")(showWhenToolbarIsVisible)
+    if (previewValueSelector != null) __obj.updateDynamic("previewValueSelector")(previewValueSelector.asInstanceOf[js.Any])
+    if (!js.isUndefined(showOnEmptyLinks)) __obj.updateDynamic("showOnEmptyLinks")(showOnEmptyLinks.asInstanceOf[js.Any])
+    if (!js.isUndefined(showWhenToolbarIsVisible)) __obj.updateDynamic("showWhenToolbarIsVisible")(showWhenToolbarIsVisible.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnchorPreviewOptions]
   }
 }

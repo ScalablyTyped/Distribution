@@ -15,7 +15,7 @@ trait Anon_Bits extends js.Object {
 object Anon_Bits {
   @scala.inline
   def apply(bits: Double): Anon_Bits = {
-    val __obj = js.Dynamic.literal(bits = bits)
+    val __obj = js.Dynamic.literal(bits = bits.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Bits]
   }

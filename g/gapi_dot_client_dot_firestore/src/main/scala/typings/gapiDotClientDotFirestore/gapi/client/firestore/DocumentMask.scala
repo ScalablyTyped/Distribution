@@ -16,7 +16,7 @@ object DocumentMask {
   @scala.inline
   def apply(fieldPaths: js.Array[String] = null): DocumentMask = {
     val __obj = js.Dynamic.literal()
-    if (fieldPaths != null) __obj.updateDynamic("fieldPaths")(fieldPaths)
+    if (fieldPaths != null) __obj.updateDynamic("fieldPaths")(fieldPaths.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentMask]
   }
 }

@@ -12,7 +12,7 @@ trait IPoint extends js.Object {
 object IPoint {
   @scala.inline
   def apply(x: Double, y: Double): IPoint = {
-    val __obj = js.Dynamic.literal(x = x, y = y)
+    val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IPoint]
   }

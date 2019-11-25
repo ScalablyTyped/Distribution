@@ -35,10 +35,10 @@ object FileProperties {
     manageableState: String = null,
     namespacePrefix: String = null
   ): FileProperties = {
-    val __obj = js.Dynamic.literal(createdById = createdById, createdByName = createdByName, createdDate = createdDate, fileName = fileName, fullName = fullName, id = id, lastModifiedById = lastModifiedById, lastModifiedByName = lastModifiedByName, lastModifiedDate = lastModifiedDate)
-    __obj.updateDynamic("type")(`type`)
-    if (manageableState != null) __obj.updateDynamic("manageableState")(manageableState)
-    if (namespacePrefix != null) __obj.updateDynamic("namespacePrefix")(namespacePrefix)
+    val __obj = js.Dynamic.literal(createdById = createdById.asInstanceOf[js.Any], createdByName = createdByName.asInstanceOf[js.Any], createdDate = createdDate.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], fullName = fullName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], lastModifiedById = lastModifiedById.asInstanceOf[js.Any], lastModifiedByName = lastModifiedByName.asInstanceOf[js.Any], lastModifiedDate = lastModifiedDate.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (manageableState != null) __obj.updateDynamic("manageableState")(manageableState.asInstanceOf[js.Any])
+    if (namespacePrefix != null) __obj.updateDynamic("namespacePrefix")(namespacePrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileProperties]
   }
 }

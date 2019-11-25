@@ -15,8 +15,8 @@ object RendererSettings {
   @scala.inline
   def apply(header: String = null, pageButton: String = null): RendererSettings = {
     val __obj = js.Dynamic.literal()
-    if (header != null) __obj.updateDynamic("header")(header)
-    if (pageButton != null) __obj.updateDynamic("pageButton")(pageButton)
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (pageButton != null) __obj.updateDynamic("pageButton")(pageButton.asInstanceOf[js.Any])
     __obj.asInstanceOf[RendererSettings]
   }
 }

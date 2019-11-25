@@ -21,10 +21,10 @@ object PasswordlessStartOptions {
     email: String = null,
     phoneNumber: String = null
   ): PasswordlessStartOptions = {
-    val __obj = js.Dynamic.literal(connection = connection, send = send)
-    if (authParams != null) __obj.updateDynamic("authParams")(authParams)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber)
+    val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], send = send.asInstanceOf[js.Any])
+    if (authParams != null) __obj.updateDynamic("authParams")(authParams.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[PasswordlessStartOptions]
   }
 }

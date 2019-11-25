@@ -29,7 +29,7 @@ object Edge {
     updateEdgeByName: (String, js.Object, CbCallback) => Unit,
     user: APIUser
   ): Edge = {
-    val __obj = js.Dynamic.literal(URI = URI, columns = js.Any.fromFunction1(columns), count = js.Any.fromFunction2(count), create = js.Any.fromFunction3(create), deleteEdgeByName = js.Any.fromFunction2(deleteEdgeByName), systemKey = systemKey, systemSecret = systemSecret, updateEdgeByName = js.Any.fromFunction3(updateEdgeByName), user = user)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], columns = js.Any.fromFunction1(columns), count = js.Any.fromFunction2(count), create = js.Any.fromFunction3(create), deleteEdgeByName = js.Any.fromFunction2(deleteEdgeByName), systemKey = systemKey.asInstanceOf[js.Any], systemSecret = systemSecret.asInstanceOf[js.Any], updateEdgeByName = js.Any.fromFunction3(updateEdgeByName), user = user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Edge]
   }

@@ -22,7 +22,7 @@ object ^ extends js.Object {
   var throws_Original: Fn_Block = js.native
   def apply(value: js.Any): Unit = js.native
   def apply(value: js.Any, message: String): Unit = js.native
-  def customize(options: Options): /* import warning: ImportType.apply Failed type conversion: typeof assert */ js.Any = js.native
+  def customize(options: Options): /* import warning: importer.ImportType#apply Failed type conversion: typeof assert */ js.Any = js.native
   def deepEqual(actual: js.Any, expected: js.Any): Unit = js.native
   def deepEqual(actual: js.Any, expected: js.Any, message: String): Unit = js.native
   def deepStrictEqual(actual: js.Any, expected: js.Any): Unit = js.native

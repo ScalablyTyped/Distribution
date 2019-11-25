@@ -12,7 +12,7 @@ trait Anon_JPEG extends js.Object {
 object Anon_JPEG {
   @scala.inline
   def apply(JPEG: Double, PNG: Double): Anon_JPEG = {
-    val __obj = js.Dynamic.literal(JPEG = JPEG, PNG = PNG)
+    val __obj = js.Dynamic.literal(JPEG = JPEG.asInstanceOf[js.Any], PNG = PNG.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_JPEG]
   }

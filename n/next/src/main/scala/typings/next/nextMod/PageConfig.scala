@@ -16,7 +16,7 @@ object PageConfig {
   def apply(amp: Boolean | hybrid = null, api: Anon_BodyParser = null): PageConfig = {
     val __obj = js.Dynamic.literal()
     if (amp != null) __obj.updateDynamic("amp")(amp.asInstanceOf[js.Any])
-    if (api != null) __obj.updateDynamic("api")(api)
+    if (api != null) __obj.updateDynamic("api")(api.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageConfig]
   }
 }

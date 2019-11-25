@@ -1,7 +1,6 @@
 package typings.victory.victoryMod
 
 import typings.react.reactMod.ReactElement
-import typings.victory.Fn_DataAnyString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,15 +13,18 @@ trait VictorySingleLabableProps extends VictoryLabableProps {
     * VictoryArea with VictoryScatter
     * @example: "Series 1", (data) => `${data.length} points`
     */
-  var label: js.UndefOr[String | Fn_DataAnyString] = js.undefined
+  var label: js.UndefOr[String | (js.Function1[/* data */ js.Any, String])] = js.undefined
 }
 
 object VictorySingleLabableProps {
   @scala.inline
-  def apply(label: String | Fn_DataAnyString = null, labelComponent: ReactElement = null): VictorySingleLabableProps = {
+  def apply(
+    label: String | (js.Function1[/* data */ js.Any, String]) = null,
+    labelComponent: ReactElement = null
+  ): VictorySingleLabableProps = {
     val __obj = js.Dynamic.literal()
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (labelComponent != null) __obj.updateDynamic("labelComponent")(labelComponent)
+    if (labelComponent != null) __obj.updateDynamic("labelComponent")(labelComponent.asInstanceOf[js.Any])
     __obj.asInstanceOf[VictorySingleLabableProps]
   }
 }

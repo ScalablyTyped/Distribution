@@ -22,7 +22,7 @@ trait UpdateBaiduChannelOutput extends OutputTypesUnion {
 object UpdateBaiduChannelOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, BaiduChannelResponse: _UnmarshalledBaiduChannelResponse): UpdateBaiduChannelOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata, BaiduChannelResponse = BaiduChannelResponse)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], BaiduChannelResponse = BaiduChannelResponse.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UpdateBaiduChannelOutput]
   }

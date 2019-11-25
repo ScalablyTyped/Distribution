@@ -12,8 +12,8 @@ trait Anon_LengthXNumberTInner[TInner] extends /* x */ NumberDictionary[TInner] 
 object Anon_LengthXNumberTInner {
   @scala.inline
   def apply[TInner](length: Double, NumberDictionary: /* x */ NumberDictionary[TInner] = null): Anon_LengthXNumberTInner[TInner] = {
-    val __obj = js.Dynamic.literal(length = length)
-    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
+    if (NumberDictionary != null) js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[Anon_LengthXNumberTInner[TInner]]
   }
 }

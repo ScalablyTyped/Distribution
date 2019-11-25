@@ -21,9 +21,9 @@ object TestCaseReference {
   @scala.inline
   def apply(className: String = null, name: String = null, testSuiteName: String = null): TestCaseReference = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (testSuiteName != null) __obj.updateDynamic("testSuiteName")(testSuiteName)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (testSuiteName != null) __obj.updateDynamic("testSuiteName")(testSuiteName.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestCaseReference]
   }
 }

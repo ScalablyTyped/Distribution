@@ -20,12 +20,12 @@ object DataProviderAddOperationEventDetail {
     metadata: js.Array[ItemMetadata[K]] = null,
     parentKeys: js.Array[K] = null
   ): DataProviderAddOperationEventDetail[K, D] = {
-    val __obj = js.Dynamic.literal(keys = keys)
-    if (addBeforeKeys != null) __obj.updateDynamic("addBeforeKeys")(addBeforeKeys)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (indexes != null) __obj.updateDynamic("indexes")(indexes)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (parentKeys != null) __obj.updateDynamic("parentKeys")(parentKeys)
+    val __obj = js.Dynamic.literal(keys = keys.asInstanceOf[js.Any])
+    if (addBeforeKeys != null) __obj.updateDynamic("addBeforeKeys")(addBeforeKeys.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (indexes != null) __obj.updateDynamic("indexes")(indexes.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (parentKeys != null) __obj.updateDynamic("parentKeys")(parentKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataProviderAddOperationEventDetail[K, D]]
   }
 }

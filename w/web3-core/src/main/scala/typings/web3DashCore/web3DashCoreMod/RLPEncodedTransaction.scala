@@ -13,7 +13,7 @@ trait RLPEncodedTransaction extends js.Object {
 object RLPEncodedTransaction {
   @scala.inline
   def apply(raw: String, tx: Anon_Gas): RLPEncodedTransaction = {
-    val __obj = js.Dynamic.literal(raw = raw, tx = tx)
+    val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], tx = tx.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RLPEncodedTransaction]
   }

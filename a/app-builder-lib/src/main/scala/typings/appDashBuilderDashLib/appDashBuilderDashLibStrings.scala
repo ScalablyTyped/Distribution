@@ -138,7 +138,7 @@ object appDashBuilderDashLibStrings {
   sealed trait maximum extends CompressionLevel
   
   @js.native
-  sealed trait none extends BackgroundScaling
+  sealed trait none_ extends BackgroundScaling
   
   @js.native
   sealed trait normal extends CompressionLevel
@@ -301,7 +301,7 @@ object appDashBuilderDashLibStrings {
   @scala.inline
   def maximum: maximum = "maximum".asInstanceOf[maximum]
   @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  def none_ : none_ = "none".asInstanceOf[none_]
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
   @scala.inline

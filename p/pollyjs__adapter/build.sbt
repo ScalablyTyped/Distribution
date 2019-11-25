@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pollyjs__adapter"
-version := "2.0-dt-20190131Z-878ae5"
+version := "2.0-dt-20190131Z-728f39"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -40,10 +40,10 @@ object DraggableProvidedDragHandleProps {
     onTouchStart: TouchEvent[_] => Unit,
     tabIndex: Double
   ): DraggableProvidedDragHandleProps = {
-    val __obj = js.Dynamic.literal(draggable = draggable, onDragStart = js.Any.fromFunction1(onDragStart), onKeyDown = js.Any.fromFunction1(onKeyDown), onMouseDown = js.Any.fromFunction1(onMouseDown), onTouchMove = js.Any.fromFunction1(onTouchMove), onTouchStart = js.Any.fromFunction1(onTouchStart), tabIndex = tabIndex)
-    __obj.updateDynamic("aria-grabbed")(`aria-grabbed`)
-    __obj.updateDynamic("aria-roledescription")(`aria-roledescription`)
-    __obj.updateDynamic("data-react-beautiful-dnd-drag-handle")(`data-react-beautiful-dnd-drag-handle`)
+    val __obj = js.Dynamic.literal(draggable = draggable.asInstanceOf[js.Any], onDragStart = js.Any.fromFunction1(onDragStart), onKeyDown = js.Any.fromFunction1(onKeyDown), onMouseDown = js.Any.fromFunction1(onMouseDown), onTouchMove = js.Any.fromFunction1(onTouchMove), onTouchStart = js.Any.fromFunction1(onTouchStart), tabIndex = tabIndex.asInstanceOf[js.Any])
+    __obj.updateDynamic("aria-grabbed")(`aria-grabbed`.asInstanceOf[js.Any])
+    __obj.updateDynamic("aria-roledescription")(`aria-roledescription`.asInstanceOf[js.Any])
+    __obj.updateDynamic("data-react-beautiful-dnd-drag-handle")(`data-react-beautiful-dnd-drag-handle`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DraggableProvidedDragHandleProps]
   }
 }

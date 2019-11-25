@@ -21,8 +21,8 @@ object NotificationAction {
   @scala.inline
   def apply(`type`: button, text: String = null): NotificationAction = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationAction]
   }
 }

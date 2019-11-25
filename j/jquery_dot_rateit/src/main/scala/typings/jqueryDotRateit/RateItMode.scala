@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait RateItMode extends js.Object
 
+object RateItMode {
+  @scala.inline
+  def bg: typings.jqueryDotRateit.jqueryDotRateitStrings.bg = this.cast("bg")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def font: typings.jqueryDotRateit.jqueryDotRateitStrings.font = this.cast("font")
+}
+

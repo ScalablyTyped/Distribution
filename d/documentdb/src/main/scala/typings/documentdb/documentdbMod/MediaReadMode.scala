@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait MediaReadMode extends js.Object
 
+object MediaReadMode {
+  @scala.inline
+  def Buffered: typings.documentdb.documentdbStrings.Buffered = this.cast("Buffered")
+  @scala.inline
+  def Streamed: typings.documentdb.documentdbStrings.Streamed = this.cast("Streamed")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

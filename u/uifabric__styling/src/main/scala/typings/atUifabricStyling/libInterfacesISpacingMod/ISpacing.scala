@@ -15,7 +15,7 @@ trait ISpacing extends js.Object {
 object ISpacing {
   @scala.inline
   def apply(l1: String, l2: String, m: String, s1: String, s2: String): ISpacing = {
-    val __obj = js.Dynamic.literal(l1 = l1, l2 = l2, m = m, s1 = s1, s2 = s2)
+    val __obj = js.Dynamic.literal(l1 = l1.asInstanceOf[js.Any], l2 = l2.asInstanceOf[js.Any], m = m.asInstanceOf[js.Any], s1 = s1.asInstanceOf[js.Any], s2 = s2.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISpacing]
   }

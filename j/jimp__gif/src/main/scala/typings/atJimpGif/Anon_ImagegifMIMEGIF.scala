@@ -12,7 +12,7 @@ trait Anon_ImagegifMIMEGIF extends js.Object {
 object Anon_ImagegifMIMEGIF {
   @scala.inline
   def apply(MIME_GIF: `image/gif`): Anon_ImagegifMIMEGIF = {
-    val __obj = js.Dynamic.literal(MIME_GIF = MIME_GIF)
+    val __obj = js.Dynamic.literal(MIME_GIF = MIME_GIF.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ImagegifMIMEGIF]
   }

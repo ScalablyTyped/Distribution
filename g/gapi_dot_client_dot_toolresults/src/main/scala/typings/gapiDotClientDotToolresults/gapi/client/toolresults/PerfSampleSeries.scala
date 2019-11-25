@@ -30,12 +30,12 @@ object PerfSampleSeries {
     stepId: String = null
   ): PerfSampleSeries = {
     val __obj = js.Dynamic.literal()
-    if (basicPerfSampleSeries != null) __obj.updateDynamic("basicPerfSampleSeries")(basicPerfSampleSeries)
-    if (executionId != null) __obj.updateDynamic("executionId")(executionId)
-    if (historyId != null) __obj.updateDynamic("historyId")(historyId)
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
-    if (sampleSeriesId != null) __obj.updateDynamic("sampleSeriesId")(sampleSeriesId)
-    if (stepId != null) __obj.updateDynamic("stepId")(stepId)
+    if (basicPerfSampleSeries != null) __obj.updateDynamic("basicPerfSampleSeries")(basicPerfSampleSeries.asInstanceOf[js.Any])
+    if (executionId != null) __obj.updateDynamic("executionId")(executionId.asInstanceOf[js.Any])
+    if (historyId != null) __obj.updateDynamic("historyId")(historyId.asInstanceOf[js.Any])
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
+    if (sampleSeriesId != null) __obj.updateDynamic("sampleSeriesId")(sampleSeriesId.asInstanceOf[js.Any])
+    if (stepId != null) __obj.updateDynamic("stepId")(stepId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PerfSampleSeries]
   }
 }

@@ -22,11 +22,11 @@ object Options {
     start: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (EXPERIMENTAL != null) __obj.updateDynamic("EXPERIMENTAL")(EXPERIMENTAL)
-    if (config != null) __obj.updateDynamic("config")(config)
-    if (!js.isUndefined(init)) __obj.updateDynamic("init")(init)
-    if (repo != null) __obj.updateDynamic("repo")(repo)
-    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start)
+    if (EXPERIMENTAL != null) __obj.updateDynamic("EXPERIMENTAL")(EXPERIMENTAL.asInstanceOf[js.Any])
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
+    if (!js.isUndefined(init)) __obj.updateDynamic("init")(init.asInstanceOf[js.Any])
+    if (repo != null) __obj.updateDynamic("repo")(repo.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -12,7 +12,7 @@ object Anon_ZIndex {
   @scala.inline
   def apply(zIndex: String = null): Anon_ZIndex = {
     val __obj = js.Dynamic.literal()
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex)
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ZIndex]
   }
 }

@@ -11,7 +11,7 @@ trait Anon_NormalizeWhitespace extends js.Object {
 object Anon_NormalizeWhitespace {
   @scala.inline
   def apply(normalizeWhitespace: Boolean): Anon_NormalizeWhitespace = {
-    val __obj = js.Dynamic.literal(normalizeWhitespace = normalizeWhitespace)
+    val __obj = js.Dynamic.literal(normalizeWhitespace = normalizeWhitespace.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_NormalizeWhitespace]
   }

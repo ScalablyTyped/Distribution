@@ -23,9 +23,9 @@ object BuiltinFrameworkMetadata {
     lambda: LambdaMetadata = null
   ): BuiltinFrameworkMetadata = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (express != null) __obj.updateDynamic("express")(express)
-    if (lambda != null) __obj.updateDynamic("lambda")(lambda)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (express != null) __obj.updateDynamic("express")(express.asInstanceOf[js.Any])
+    if (lambda != null) __obj.updateDynamic("lambda")(lambda.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuiltinFrameworkMetadata]
   }
 }

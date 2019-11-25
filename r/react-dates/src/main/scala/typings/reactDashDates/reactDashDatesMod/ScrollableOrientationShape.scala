@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait ScrollableOrientationShape extends js.Object
 
+object ScrollableOrientationShape {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def horizontal: typings.reactDashDates.reactDashDatesStrings.horizontal = this.cast("horizontal")
+  @scala.inline
+  def vertical: typings.reactDashDates.reactDashDatesStrings.vertical = this.cast("vertical")
+  @scala.inline
+  def verticalScrollable: typings.reactDashDates.reactDashDatesStrings.verticalScrollable = this.cast("verticalScrollable")
+}
+

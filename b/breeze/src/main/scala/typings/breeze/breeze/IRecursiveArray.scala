@@ -11,7 +11,7 @@ object IRecursiveArray {
   @scala.inline
   def apply[T](NumberDictionary: /* i */ NumberDictionary[T | IRecursiveArray[T]] = null): IRecursiveArray[T] = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    if (NumberDictionary != null) js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[IRecursiveArray[T]]
   }
 }

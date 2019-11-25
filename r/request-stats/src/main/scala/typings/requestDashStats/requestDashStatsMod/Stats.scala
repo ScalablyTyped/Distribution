@@ -22,7 +22,7 @@ trait Stats extends js.Object {
 object Stats {
   @scala.inline
   def apply(ok: Boolean, req: Anon_Bytes, res: Anon_BytesHeaders, time: Double): Stats = {
-    val __obj = js.Dynamic.literal(ok = ok, req = req, res = res, time = time)
+    val __obj = js.Dynamic.literal(ok = ok.asInstanceOf[js.Any], req = req.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Stats]
   }

@@ -19,7 +19,7 @@ object VideoByMediaContentUrlSettings {
     startSeconds: Int | Double = null,
     suggestedQuality: SuggestedVideoQuality = null
   ): VideoByMediaContentUrlSettings = {
-    val __obj = js.Dynamic.literal(mediaContentUrl = mediaContentUrl)
+    val __obj = js.Dynamic.literal(mediaContentUrl = mediaContentUrl.asInstanceOf[js.Any])
     if (endSeconds != null) __obj.updateDynamic("endSeconds")(endSeconds.asInstanceOf[js.Any])
     if (startSeconds != null) __obj.updateDynamic("startSeconds")(startSeconds.asInstanceOf[js.Any])
     if (suggestedQuality != null) __obj.updateDynamic("suggestedQuality")(suggestedQuality.asInstanceOf[js.Any])

@@ -46,13 +46,13 @@ object CategorizeSettings {
     text: String = null
   ): CategorizeSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowMultiple)) __obj.updateDynamic("allowMultiple")(allowMultiple)
-    if (color != null) __obj.updateDynamic("color")(color)
+    if (!js.isUndefined(allowMultiple)) __obj.updateDynamic("allowMultiple")(allowMultiple.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable)
-    if (fontColor != null) __obj.updateDynamic("fontColor")(fontColor)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
+    if (fontColor != null) __obj.updateDynamic("fontColor")(fontColor.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[CategorizeSettings]
   }
 }

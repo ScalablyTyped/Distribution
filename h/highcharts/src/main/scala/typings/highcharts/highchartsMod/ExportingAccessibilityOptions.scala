@@ -16,7 +16,7 @@ object ExportingAccessibilityOptions {
   @scala.inline
   def apply(enabled: js.Any = null): ExportingAccessibilityOptions = {
     val __obj = js.Dynamic.literal()
-    if (enabled != null) __obj.updateDynamic("enabled")(enabled)
+    if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportingAccessibilityOptions]
   }
 }

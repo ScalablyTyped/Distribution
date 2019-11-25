@@ -13,8 +13,8 @@ object ShipmentTrackingInfo {
   @scala.inline
   def apply(carrier: String = null, trackingNumber: String = null): ShipmentTrackingInfo = {
     val __obj = js.Dynamic.literal()
-    if (carrier != null) __obj.updateDynamic("carrier")(carrier)
-    if (trackingNumber != null) __obj.updateDynamic("trackingNumber")(trackingNumber)
+    if (carrier != null) __obj.updateDynamic("carrier")(carrier.asInstanceOf[js.Any])
+    if (trackingNumber != null) __obj.updateDynamic("trackingNumber")(trackingNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShipmentTrackingInfo]
   }
 }

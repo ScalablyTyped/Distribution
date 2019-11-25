@@ -12,7 +12,7 @@ object RcBaseFormProps {
   @scala.inline
   def apply(wrappedComponentRef: js.Any = null): RcBaseFormProps = {
     val __obj = js.Dynamic.literal()
-    if (wrappedComponentRef != null) __obj.updateDynamic("wrappedComponentRef")(wrappedComponentRef)
+    if (wrappedComponentRef != null) __obj.updateDynamic("wrappedComponentRef")(wrappedComponentRef.asInstanceOf[js.Any])
     __obj.asInstanceOf[RcBaseFormProps]
   }
 }

@@ -14,9 +14,9 @@ object ErrorPOJO {
   @scala.inline
   def apply(message: String = null, name: String = null, stack: String = null): ErrorPOJO = {
     val __obj = js.Dynamic.literal()
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorPOJO]
   }
 }

@@ -13,8 +13,8 @@ trait CertificateRequest extends js.Object {
 object CertificateRequest {
   @scala.inline
   def apply(issuerCert: String, subjectCert: String, alg: String = null): CertificateRequest = {
-    val __obj = js.Dynamic.literal(issuerCert = issuerCert, subjectCert = subjectCert)
-    if (alg != null) __obj.updateDynamic("alg")(alg)
+    val __obj = js.Dynamic.literal(issuerCert = issuerCert.asInstanceOf[js.Any], subjectCert = subjectCert.asInstanceOf[js.Any])
+    if (alg != null) __obj.updateDynamic("alg")(alg.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertificateRequest]
   }
 }

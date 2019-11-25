@@ -32,7 +32,7 @@ object GCStatistics {
     pauseMS: Double,
     startTime: Double
   ): GCStatistics = {
-    val __obj = js.Dynamic.literal(after = after, before = before, diff = diff, endTime = endTime, gctype = gctype.asInstanceOf[js.Any], pause = pause, pauseMS = pauseMS, startTime = startTime)
+    val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any], diff = diff.asInstanceOf[js.Any], endTime = endTime.asInstanceOf[js.Any], gctype = gctype.asInstanceOf[js.Any], pause = pause.asInstanceOf[js.Any], pauseMS = pauseMS.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GCStatistics]
   }

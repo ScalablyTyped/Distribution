@@ -24,9 +24,9 @@ object StartOptions {
     tagLength: Int | Double = null
   ): StartOptions = {
     val __obj = js.Dynamic.literal()
-    if (additionalData != null) __obj.updateDynamic("additionalData")(additionalData)
+    if (additionalData != null) __obj.updateDynamic("additionalData")(additionalData.asInstanceOf[js.Any])
     if (iv != null) __obj.updateDynamic("iv")(iv.asInstanceOf[js.Any])
-    if (tag != null) __obj.updateDynamic("tag")(tag)
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     if (tagLength != null) __obj.updateDynamic("tagLength")(tagLength.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartOptions]
   }

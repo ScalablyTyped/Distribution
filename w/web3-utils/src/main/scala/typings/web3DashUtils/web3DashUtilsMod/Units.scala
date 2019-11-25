@@ -65,7 +65,7 @@ object Units {
     tether: String,
     wei: String
   ): Units = {
-    val __obj = js.Dynamic.literal(Gwei = Gwei, Kwei = Kwei, Mwei = Mwei, babbage = babbage, ether = ether, femtoether = femtoether, finney = finney, gether = gether, grand = grand, gwei = gwei, kether = kether, kwei = kwei, lovelace = lovelace, mether = mether, micro = micro, microether = microether, milli = milli, milliether = milliether, mwei = mwei, nano = nano, nanoether = nanoether, noether = noether, picoether = picoether, shannon = shannon, szabo = szabo, tether = tether, wei = wei)
+    val __obj = js.Dynamic.literal(Gwei = Gwei.asInstanceOf[js.Any], Kwei = Kwei.asInstanceOf[js.Any], Mwei = Mwei.asInstanceOf[js.Any], babbage = babbage.asInstanceOf[js.Any], ether = ether.asInstanceOf[js.Any], femtoether = femtoether.asInstanceOf[js.Any], finney = finney.asInstanceOf[js.Any], gether = gether.asInstanceOf[js.Any], grand = grand.asInstanceOf[js.Any], gwei = gwei.asInstanceOf[js.Any], kether = kether.asInstanceOf[js.Any], kwei = kwei.asInstanceOf[js.Any], lovelace = lovelace.asInstanceOf[js.Any], mether = mether.asInstanceOf[js.Any], micro = micro.asInstanceOf[js.Any], microether = microether.asInstanceOf[js.Any], milli = milli.asInstanceOf[js.Any], milliether = milliether.asInstanceOf[js.Any], mwei = mwei.asInstanceOf[js.Any], nano = nano.asInstanceOf[js.Any], nanoether = nanoether.asInstanceOf[js.Any], noether = noether.asInstanceOf[js.Any], picoether = picoether.asInstanceOf[js.Any], shannon = shannon.asInstanceOf[js.Any], szabo = szabo.asInstanceOf[js.Any], tether = tether.asInstanceOf[js.Any], wei = wei.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Units]
   }

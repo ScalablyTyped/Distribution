@@ -20,7 +20,7 @@ object Anon_FourDigits {
     fullWithTwoDecimals: Format,
     fullWithTwoDecimalsNoCurrency: Format
   ): Anon_FourDigits = {
-    val __obj = js.Dynamic.literal(fourDigits = fourDigits, fullWithNoDecimals = fullWithNoDecimals, fullWithTwoDecimals = fullWithTwoDecimals, fullWithTwoDecimalsNoCurrency = fullWithTwoDecimalsNoCurrency)
+    val __obj = js.Dynamic.literal(fourDigits = fourDigits.asInstanceOf[js.Any], fullWithNoDecimals = fullWithNoDecimals.asInstanceOf[js.Any], fullWithTwoDecimals = fullWithTwoDecimals.asInstanceOf[js.Any], fullWithTwoDecimalsNoCurrency = fullWithTwoDecimalsNoCurrency.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FourDigits]
   }

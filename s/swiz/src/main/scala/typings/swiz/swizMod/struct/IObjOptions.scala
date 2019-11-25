@@ -14,9 +14,9 @@ object IObjOptions {
   @scala.inline
   def apply(fields: js.Array[IField] = null, plural: String = null, singular: String = null): IObjOptions = {
     val __obj = js.Dynamic.literal()
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (plural != null) __obj.updateDynamic("plural")(plural)
-    if (singular != null) __obj.updateDynamic("singular")(singular)
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (plural != null) __obj.updateDynamic("plural")(plural.asInstanceOf[js.Any])
+    if (singular != null) __obj.updateDynamic("singular")(singular.asInstanceOf[js.Any])
     __obj.asInstanceOf[IObjOptions]
   }
 }

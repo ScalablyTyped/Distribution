@@ -13,8 +13,8 @@ trait DataChangedEvent extends RowNodeEvent {
 object DataChangedEvent {
   @scala.inline
   def apply(newData: js.Any, node: RowNode, oldData: js.Any, `type`: String, update: Boolean): DataChangedEvent = {
-    val __obj = js.Dynamic.literal(newData = newData, node = node, oldData = oldData, update = update)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(newData = newData.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], oldData = oldData.asInstanceOf[js.Any], update = update.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataChangedEvent]
   }
 }

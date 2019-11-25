@@ -12,7 +12,7 @@ trait Anon_ErrorType extends js.Object {
 object Anon_ErrorType {
   @scala.inline
   def apply(errorType: String, message: String): Anon_ErrorType = {
-    val __obj = js.Dynamic.literal(errorType = errorType, message = message)
+    val __obj = js.Dynamic.literal(errorType = errorType.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ErrorType]
   }

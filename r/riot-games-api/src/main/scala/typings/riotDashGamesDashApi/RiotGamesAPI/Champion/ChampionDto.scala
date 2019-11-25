@@ -23,7 +23,7 @@ object ChampionDto {
     id: Double,
     rankedPlayEnabled: Boolean
   ): ChampionDto = {
-    val __obj = js.Dynamic.literal(active = active, botEnabled = botEnabled, botMmEnabled = botMmEnabled, freeToPlay = freeToPlay, id = id, rankedPlayEnabled = rankedPlayEnabled)
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], botEnabled = botEnabled.asInstanceOf[js.Any], botMmEnabled = botMmEnabled.asInstanceOf[js.Any], freeToPlay = freeToPlay.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], rankedPlayEnabled = rankedPlayEnabled.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChampionDto]
   }

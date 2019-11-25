@@ -14,7 +14,7 @@ trait MsCrypto extends js.Object {
 object MsCrypto {
   @scala.inline
   def apply(getRandomValues: Uint8Array => Unit, subtle: MsSubtleCrypto): MsCrypto = {
-    val __obj = js.Dynamic.literal(getRandomValues = js.Any.fromFunction1(getRandomValues), subtle = subtle)
+    val __obj = js.Dynamic.literal(getRandomValues = js.Any.fromFunction1(getRandomValues), subtle = subtle.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MsCrypto]
   }

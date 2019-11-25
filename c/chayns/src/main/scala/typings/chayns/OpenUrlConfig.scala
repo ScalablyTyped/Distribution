@@ -24,11 +24,11 @@ object OpenUrlConfig {
     title: String = null,
     width: Int | Double = null
   ): OpenUrlConfig = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (!js.isUndefined(darkenBackground)) __obj.updateDynamic("darkenBackground")(darkenBackground)
-    if (!js.isUndefined(exclusiveView)) __obj.updateDynamic("exclusiveView")(exclusiveView)
-    if (!js.isUndefined(fullSize)) __obj.updateDynamic("fullSize")(fullSize)
-    if (title != null) __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (!js.isUndefined(darkenBackground)) __obj.updateDynamic("darkenBackground")(darkenBackground.asInstanceOf[js.Any])
+    if (!js.isUndefined(exclusiveView)) __obj.updateDynamic("exclusiveView")(exclusiveView.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullSize)) __obj.updateDynamic("fullSize")(fullSize.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenUrlConfig]
   }

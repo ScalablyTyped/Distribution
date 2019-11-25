@@ -40,8 +40,8 @@ object Item {
     title: String,
     StringDictionary: /* key */ StringDictionary[js.Any] = null
   ): Item = {
-    val __obj = js.Dynamic.literal(author = author, categories = categories, comments = comments, date = date, description = description, enclosures = enclosures, guid = guid.asInstanceOf[js.Any], image = image, link = link, origlink = origlink, pubdate = pubdate, summary = summary, title = title)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], categories = categories.asInstanceOf[js.Any], comments = comments.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], enclosures = enclosures.asInstanceOf[js.Any], guid = guid.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], origlink = origlink.asInstanceOf[js.Any], pubdate = pubdate.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Item]
   }
 }

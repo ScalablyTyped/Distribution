@@ -31,7 +31,7 @@ object PaginationToolbarProps {
     showPageSize: Boolean,
     showRefreshIcon: Boolean
   ): PaginationToolbarProps = {
-    val __obj = js.Dynamic.literal(iconProps = iconProps, iconSize = iconSize, pageSizes = pageSizes, showPageSize = showPageSize, showRefreshIcon = showRefreshIcon)
+    val __obj = js.Dynamic.literal(iconProps = iconProps.asInstanceOf[js.Any], iconSize = iconSize.asInstanceOf[js.Any], pageSizes = pageSizes.asInstanceOf[js.Any], showPageSize = showPageSize.asInstanceOf[js.Any], showRefreshIcon = showRefreshIcon.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PaginationToolbarProps]
   }

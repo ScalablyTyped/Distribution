@@ -24,10 +24,10 @@ object SwitchPropsType {
     onPress: /* checked */ js.UndefOr[Boolean] => Unit = null
   ): SwitchPropsType = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction1(onPress))
     __obj.asInstanceOf[SwitchPropsType]

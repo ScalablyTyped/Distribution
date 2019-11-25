@@ -12,7 +12,7 @@ object AnswerPreCheckoutQueryOptions {
   @scala.inline
   def apply(error_message: String = null): AnswerPreCheckoutQueryOptions = {
     val __obj = js.Dynamic.literal()
-    if (error_message != null) __obj.updateDynamic("error_message")(error_message)
+    if (error_message != null) __obj.updateDynamic("error_message")(error_message.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnswerPreCheckoutQueryOptions]
   }
 }

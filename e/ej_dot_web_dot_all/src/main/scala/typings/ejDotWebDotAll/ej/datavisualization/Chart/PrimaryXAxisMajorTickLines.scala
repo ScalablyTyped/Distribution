@@ -24,7 +24,7 @@ object PrimaryXAxisMajorTickLines {
   def apply(size: Int | Double = null, visible: js.UndefOr[Boolean] = js.undefined, width: Int | Double = null): PrimaryXAxisMajorTickLines = {
     val __obj = js.Dynamic.literal()
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrimaryXAxisMajorTickLines]
   }

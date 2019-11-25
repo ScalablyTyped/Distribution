@@ -138,19 +138,19 @@ object PriceRule {
     updated_at: String = null,
     usage_limit: Int | Double = null
   ): PriceRule = {
-    val __obj = js.Dynamic.literal(allocation_method = allocation_method.asInstanceOf[js.Any], customer_selection = customer_selection.asInstanceOf[js.Any], once_per_customer = once_per_customer, starts_at = starts_at, target_selection = target_selection.asInstanceOf[js.Any], target_type = target_type.asInstanceOf[js.Any], title = title, value = value, value_type = value_type.asInstanceOf[js.Any])
-    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
-    if (created_at != null) __obj.updateDynamic("created_at")(created_at)
-    if (ends_at != null) __obj.updateDynamic("ends_at")(ends_at)
-    if (entitled_collection_ids != null) __obj.updateDynamic("entitled_collection_ids")(entitled_collection_ids)
-    if (entitled_country_ids != null) __obj.updateDynamic("entitled_country_ids")(entitled_country_ids)
-    if (entitled_product_ids != null) __obj.updateDynamic("entitled_product_ids")(entitled_product_ids)
-    if (entitled_variant_ids != null) __obj.updateDynamic("entitled_variant_ids")(entitled_variant_ids)
+    val __obj = js.Dynamic.literal(allocation_method = allocation_method.asInstanceOf[js.Any], customer_selection = customer_selection.asInstanceOf[js.Any], once_per_customer = once_per_customer.asInstanceOf[js.Any], starts_at = starts_at.asInstanceOf[js.Any], target_selection = target_selection.asInstanceOf[js.Any], target_type = target_type.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], value_type = value_type.asInstanceOf[js.Any])
+    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id.asInstanceOf[js.Any])
+    if (created_at != null) __obj.updateDynamic("created_at")(created_at.asInstanceOf[js.Any])
+    if (ends_at != null) __obj.updateDynamic("ends_at")(ends_at.asInstanceOf[js.Any])
+    if (entitled_collection_ids != null) __obj.updateDynamic("entitled_collection_ids")(entitled_collection_ids.asInstanceOf[js.Any])
+    if (entitled_country_ids != null) __obj.updateDynamic("entitled_country_ids")(entitled_country_ids.asInstanceOf[js.Any])
+    if (entitled_product_ids != null) __obj.updateDynamic("entitled_product_ids")(entitled_product_ids.asInstanceOf[js.Any])
+    if (entitled_variant_ids != null) __obj.updateDynamic("entitled_variant_ids")(entitled_variant_ids.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (prerequisite_saved_search_ids != null) __obj.updateDynamic("prerequisite_saved_search_ids")(prerequisite_saved_search_ids)
-    if (prerequisite_shipping_price_range != null) __obj.updateDynamic("prerequisite_shipping_price_range")(prerequisite_shipping_price_range)
-    if (prerequisite_subtotal_range != null) __obj.updateDynamic("prerequisite_subtotal_range")(prerequisite_subtotal_range)
-    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at)
+    if (prerequisite_saved_search_ids != null) __obj.updateDynamic("prerequisite_saved_search_ids")(prerequisite_saved_search_ids.asInstanceOf[js.Any])
+    if (prerequisite_shipping_price_range != null) __obj.updateDynamic("prerequisite_shipping_price_range")(prerequisite_shipping_price_range.asInstanceOf[js.Any])
+    if (prerequisite_subtotal_range != null) __obj.updateDynamic("prerequisite_subtotal_range")(prerequisite_subtotal_range.asInstanceOf[js.Any])
+    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at.asInstanceOf[js.Any])
     if (usage_limit != null) __obj.updateDynamic("usage_limit")(usage_limit.asInstanceOf[js.Any])
     __obj.asInstanceOf[PriceRule]
   }

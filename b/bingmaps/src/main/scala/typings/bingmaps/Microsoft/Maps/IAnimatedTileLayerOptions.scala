@@ -29,12 +29,12 @@ object IAnimatedTileLayerOptions {
     maxTotalLoadTime: Int | Double = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): IAnimatedTileLayerOptions = {
-    val __obj = js.Dynamic.literal(mercator = mercator)
-    if (!js.isUndefined(autoPlay)) __obj.updateDynamic("autoPlay")(autoPlay)
+    val __obj = js.Dynamic.literal(mercator = mercator.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoPlay)) __obj.updateDynamic("autoPlay")(autoPlay.asInstanceOf[js.Any])
     if (frameRate != null) __obj.updateDynamic("frameRate")(frameRate.asInstanceOf[js.Any])
-    if (loadingScreen != null) __obj.updateDynamic("loadingScreen")(loadingScreen)
+    if (loadingScreen != null) __obj.updateDynamic("loadingScreen")(loadingScreen.asInstanceOf[js.Any])
     if (maxTotalLoadTime != null) __obj.updateDynamic("maxTotalLoadTime")(maxTotalLoadTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAnimatedTileLayerOptions]
   }
 }

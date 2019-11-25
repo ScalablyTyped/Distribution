@@ -34,15 +34,15 @@ object ReactSpecimenProps {
   ): ReactSpecimenProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(dark)) __obj.updateDynamic("dark")(dark)
-    if (!js.isUndefined(frame)) __obj.updateDynamic("frame")(frame)
-    if (!js.isUndefined(light)) __obj.updateDynamic("light")(light)
-    if (!js.isUndefined(noSource)) __obj.updateDynamic("noSource")(noSource)
-    if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain)
+    if (!js.isUndefined(dark)) __obj.updateDynamic("dark")(dark.asInstanceOf[js.Any])
+    if (!js.isUndefined(frame)) __obj.updateDynamic("frame")(frame.asInstanceOf[js.Any])
+    if (!js.isUndefined(light)) __obj.updateDynamic("light")(light.asInstanceOf[js.Any])
+    if (!js.isUndefined(noSource)) __obj.updateDynamic("noSource")(noSource.asInstanceOf[js.Any])
+    if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain.asInstanceOf[js.Any])
     if (responsive != null) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSource)) __obj.updateDynamic("showSource")(showSource)
-    if (sourceText != null) __obj.updateDynamic("sourceText")(sourceText)
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (!js.isUndefined(showSource)) __obj.updateDynamic("showSource")(showSource.asInstanceOf[js.Any])
+    if (sourceText != null) __obj.updateDynamic("sourceText")(sourceText.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactSpecimenProps]
   }
 }

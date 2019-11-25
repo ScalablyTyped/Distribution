@@ -21,7 +21,7 @@ object ReposRetrieveCommunityProfileMetricsResponse {
     health_percentage: Double,
     updated_at: String
   ): ReposRetrieveCommunityProfileMetricsResponse = {
-    val __obj = js.Dynamic.literal(description = description, documentation = documentation, files = files, health_percentage = health_percentage, updated_at = updated_at)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], documentation = documentation.asInstanceOf[js.Any], files = files.asInstanceOf[js.Any], health_percentage = health_percentage.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReposRetrieveCommunityProfileMetricsResponse]
   }

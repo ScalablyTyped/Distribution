@@ -27,11 +27,11 @@ object BadgeProps {
   ): BadgeProps = {
     val __obj = js.Dynamic.literal()
     if (badgeContent != null) __obj.updateDynamic("badgeContent")(badgeContent.asInstanceOf[js.Any])
-    if (badgeStyle != null) __obj.updateDynamic("badgeStyle")(badgeStyle)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary)
-    if (!js.isUndefined(secondary)) __obj.updateDynamic("secondary")(secondary)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (badgeStyle != null) __obj.updateDynamic("badgeStyle")(badgeStyle.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
+    if (!js.isUndefined(secondary)) __obj.updateDynamic("secondary")(secondary.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[BadgeProps]
   }
 }

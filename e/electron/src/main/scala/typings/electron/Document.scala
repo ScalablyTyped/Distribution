@@ -13,9 +13,9 @@ trait Document extends js.Object {
 
 object Document {
   @scala.inline
-  def apply(createElement_webview: webview => WebviewTag): Document = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createElement")(js.Any.fromFunction1(createElement_webview))
+  def apply(createElement: webview => WebviewTag): Document = {
+    val __obj = js.Dynamic.literal(createElement = js.Any.fromFunction1(createElement))
+  
     __obj.asInstanceOf[Document]
   }
 }

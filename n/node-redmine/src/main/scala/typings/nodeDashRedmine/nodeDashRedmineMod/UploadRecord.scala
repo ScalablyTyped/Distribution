@@ -13,8 +13,8 @@ trait UploadRecord extends js.Object {
 object UploadRecord {
   @scala.inline
   def apply(filename: String, token: String, content_type: String = null): UploadRecord = {
-    val __obj = js.Dynamic.literal(filename = filename, token = token)
-    if (content_type != null) __obj.updateDynamic("content_type")(content_type)
+    val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
+    if (content_type != null) __obj.updateDynamic("content_type")(content_type.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadRecord]
   }
 }

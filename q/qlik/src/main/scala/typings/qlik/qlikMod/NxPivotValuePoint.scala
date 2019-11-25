@@ -28,8 +28,8 @@ object NxPivotValuePoint {
     qType: V | E | N | T | P | R | U,
     qLabel: String = null
   ): NxPivotValuePoint = {
-    val __obj = js.Dynamic.literal(qAttrExps = qAttrExps, qNum = qNum, qText = qText, qType = qType.asInstanceOf[js.Any])
-    if (qLabel != null) __obj.updateDynamic("qLabel")(qLabel)
+    val __obj = js.Dynamic.literal(qAttrExps = qAttrExps.asInstanceOf[js.Any], qNum = qNum.asInstanceOf[js.Any], qText = qText.asInstanceOf[js.Any], qType = qType.asInstanceOf[js.Any])
+    if (qLabel != null) __obj.updateDynamic("qLabel")(qLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[NxPivotValuePoint]
   }
 }

@@ -13,8 +13,8 @@ object ReplaceAllTextRequest {
   @scala.inline
   def apply(containsText: SubstringMatchCriteria = null, replaceText: String = null): ReplaceAllTextRequest = {
     val __obj = js.Dynamic.literal()
-    if (containsText != null) __obj.updateDynamic("containsText")(containsText)
-    if (replaceText != null) __obj.updateDynamic("replaceText")(replaceText)
+    if (containsText != null) __obj.updateDynamic("containsText")(containsText.asInstanceOf[js.Any])
+    if (replaceText != null) __obj.updateDynamic("replaceText")(replaceText.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplaceAllTextRequest]
   }
 }

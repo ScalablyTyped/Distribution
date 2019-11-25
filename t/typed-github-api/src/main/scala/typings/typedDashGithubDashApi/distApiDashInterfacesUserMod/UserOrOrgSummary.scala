@@ -25,7 +25,7 @@ object UserOrOrgSummary {
     `type`: typings.typedDashGithubDashApi.typedDashGithubDashApiStrings.User | typings.typedDashGithubDashApi.typedDashGithubDashApiStrings.Organization,
     url: String
   ): UserOrOrgSummary = {
-    val __obj = js.Dynamic.literal(avatar_url = avatar_url, events_url = events_url, id = id, login = login, repos_url = repos_url, url = url)
+    val __obj = js.Dynamic.literal(avatar_url = avatar_url.asInstanceOf[js.Any], events_url = events_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], login = login.asInstanceOf[js.Any], repos_url = repos_url.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserOrOrgSummary]
   }

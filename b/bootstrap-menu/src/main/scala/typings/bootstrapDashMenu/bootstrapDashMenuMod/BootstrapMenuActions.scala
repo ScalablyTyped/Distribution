@@ -45,9 +45,9 @@ object BootstrapMenuActions {
     isEnabled: /* rowElement */ BootstrapMenuRowElement => Boolean = null,
     isShown: /* rowElement */ BootstrapMenuRowElement => Boolean = null
   ): BootstrapMenuActions = {
-    val __obj = js.Dynamic.literal(name = name, onClick = js.Any.fromFunction1(onClick))
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick))
     if (classNames != null) __obj.updateDynamic("classNames")(classNames.asInstanceOf[js.Any])
-    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)
+    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass.asInstanceOf[js.Any])
     if (isEnabled != null) __obj.updateDynamic("isEnabled")(js.Any.fromFunction1(isEnabled))
     if (isShown != null) __obj.updateDynamic("isShown")(js.Any.fromFunction1(isShown))
     __obj.asInstanceOf[BootstrapMenuActions]

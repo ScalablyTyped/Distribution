@@ -13,7 +13,7 @@ object IsMobileOptions {
   @scala.inline
   def apply(tablet: js.UndefOr[Boolean] = js.undefined, ua: String | HttpRequestInterfaceMock = null): IsMobileOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(tablet)) __obj.updateDynamic("tablet")(tablet)
+    if (!js.isUndefined(tablet)) __obj.updateDynamic("tablet")(tablet.asInstanceOf[js.Any])
     if (ua != null) __obj.updateDynamic("ua")(ua.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsMobileOptions]
   }

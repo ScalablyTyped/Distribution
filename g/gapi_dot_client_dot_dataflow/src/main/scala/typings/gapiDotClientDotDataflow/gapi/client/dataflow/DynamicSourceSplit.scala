@@ -22,8 +22,8 @@ object DynamicSourceSplit {
   @scala.inline
   def apply(primary: DerivedSource = null, residual: DerivedSource = null): DynamicSourceSplit = {
     val __obj = js.Dynamic.literal()
-    if (primary != null) __obj.updateDynamic("primary")(primary)
-    if (residual != null) __obj.updateDynamic("residual")(residual)
+    if (primary != null) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
+    if (residual != null) __obj.updateDynamic("residual")(residual.asInstanceOf[js.Any])
     __obj.asInstanceOf[DynamicSourceSplit]
   }
 }

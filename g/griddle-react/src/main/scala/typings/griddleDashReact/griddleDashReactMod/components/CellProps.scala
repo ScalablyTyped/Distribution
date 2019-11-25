@@ -33,14 +33,14 @@ object CellProps {
     value: js.Any = null
   ): CellProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (columnId != null) __obj.updateDynamic("columnId")(columnId)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (columnId != null) __obj.updateDynamic("columnId")(columnId.asInstanceOf[js.Any])
     if (griddleKey != null) __obj.updateDynamic("griddleKey")(griddleKey.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))
     if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellProps]
   }
 }

@@ -23,10 +23,10 @@ object MarkerOptions {
   ): MarkerOptions = {
     val __obj = js.Dynamic.literal()
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (shape != null) __obj.updateDynamic("shape")(shape)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkerOptions]
   }
 }

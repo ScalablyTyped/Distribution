@@ -33,7 +33,7 @@ object _Part {
     Size: Int | Double = null
   ): _Part = {
     val __obj = js.Dynamic.literal()
-    if (ETag != null) __obj.updateDynamic("ETag")(ETag)
+    if (ETag != null) __obj.updateDynamic("ETag")(ETag.asInstanceOf[js.Any])
     if (LastModified != null) __obj.updateDynamic("LastModified")(LastModified.asInstanceOf[js.Any])
     if (PartNumber != null) __obj.updateDynamic("PartNumber")(PartNumber.asInstanceOf[js.Any])
     if (Size != null) __obj.updateDynamic("Size")(Size.asInstanceOf[js.Any])

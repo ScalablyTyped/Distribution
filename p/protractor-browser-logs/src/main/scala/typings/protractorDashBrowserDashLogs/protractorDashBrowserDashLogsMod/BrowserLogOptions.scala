@@ -13,7 +13,7 @@ object BrowserLogOptions {
   @scala.inline
   def apply(reporters: js.Array[js.Function1[/* entries */ js.Array[Entry], Unit]] = null): BrowserLogOptions = {
     val __obj = js.Dynamic.literal()
-    if (reporters != null) __obj.updateDynamic("reporters")(reporters)
+    if (reporters != null) __obj.updateDynamic("reporters")(reporters.asInstanceOf[js.Any])
     __obj.asInstanceOf[BrowserLogOptions]
   }
 }

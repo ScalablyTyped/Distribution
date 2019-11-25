@@ -39,17 +39,17 @@ object MergerSettingsTypeSettings {
     title: String = null
   ): MergerSettingsTypeSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoHideHeader)) __obj.updateDynamic("autoHideHeader")(autoHideHeader)
-    if (!js.isUndefined(colorWeak)) __obj.updateDynamic("colorWeak")(colorWeak)
-    if (contentWidth != null) __obj.updateDynamic("contentWidth")(contentWidth)
-    if (!js.isUndefined(fixSiderbar)) __obj.updateDynamic("fixSiderbar")(fixSiderbar)
-    if (!js.isUndefined(fixedHeader)) __obj.updateDynamic("fixedHeader")(fixedHeader)
-    if (iconfontUrl != null) __obj.updateDynamic("iconfontUrl")(iconfontUrl)
+    if (!js.isUndefined(autoHideHeader)) __obj.updateDynamic("autoHideHeader")(autoHideHeader.asInstanceOf[js.Any])
+    if (!js.isUndefined(colorWeak)) __obj.updateDynamic("colorWeak")(colorWeak.asInstanceOf[js.Any])
+    if (contentWidth != null) __obj.updateDynamic("contentWidth")(contentWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixSiderbar)) __obj.updateDynamic("fixSiderbar")(fixSiderbar.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixedHeader)) __obj.updateDynamic("fixedHeader")(fixedHeader.asInstanceOf[js.Any])
+    if (iconfontUrl != null) __obj.updateDynamic("iconfontUrl")(iconfontUrl.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (menu != null) __obj.updateDynamic("menu")(menu)
-    if (navTheme != null) __obj.updateDynamic("navTheme")(navTheme)
-    if (primaryColor != null) __obj.updateDynamic("primaryColor")(primaryColor)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (menu != null) __obj.updateDynamic("menu")(menu.asInstanceOf[js.Any])
+    if (navTheme != null) __obj.updateDynamic("navTheme")(navTheme.asInstanceOf[js.Any])
+    if (primaryColor != null) __obj.updateDynamic("primaryColor")(primaryColor.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[MergerSettingsTypeSettings]
   }
 }

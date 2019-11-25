@@ -51,13 +51,13 @@ object showParams {
     view: View = null
   ): showParams = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
-    if (buttonNames != null) __obj.updateDynamic("buttonNames")(buttonNames)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (rect != null) __obj.updateDynamic("rect")(rect)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (view != null) __obj.updateDynamic("view")(view)
+    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
+    if (buttonNames != null) __obj.updateDynamic("buttonNames")(buttonNames.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (rect != null) __obj.updateDynamic("rect")(rect.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[showParams]
   }
 }

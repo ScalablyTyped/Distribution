@@ -13,8 +13,8 @@ trait ConnectError extends Error {
 object ConnectError {
   @scala.inline
   def apply(connectArgs: ConnectOptions, message: String, name: String, stack: String = null): ConnectError = {
-    val __obj = js.Dynamic.literal(connectArgs = connectArgs, message = message, name = name)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    val __obj = js.Dynamic.literal(connectArgs = connectArgs.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectError]
   }
 }

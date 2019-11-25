@@ -44,13 +44,13 @@ object UITextOptions {
     waitingForResponse: String = null
   ): UITextOptions = {
     val __obj = js.Dynamic.literal()
-    if (defaultResponseError != null) __obj.updateDynamic("defaultResponseError")(defaultResponseError)
-    if (failUpload != null) __obj.updateDynamic("failUpload")(failUpload)
-    if (fileInputTitle != null) __obj.updateDynamic("fileInputTitle")(fileInputTitle)
-    if (formatProgress != null) __obj.updateDynamic("formatProgress")(formatProgress)
-    if (paused != null) __obj.updateDynamic("paused")(paused)
-    if (sizeSymbols != null) __obj.updateDynamic("sizeSymbols")(sizeSymbols)
-    if (waitingForResponse != null) __obj.updateDynamic("waitingForResponse")(waitingForResponse)
+    if (defaultResponseError != null) __obj.updateDynamic("defaultResponseError")(defaultResponseError.asInstanceOf[js.Any])
+    if (failUpload != null) __obj.updateDynamic("failUpload")(failUpload.asInstanceOf[js.Any])
+    if (fileInputTitle != null) __obj.updateDynamic("fileInputTitle")(fileInputTitle.asInstanceOf[js.Any])
+    if (formatProgress != null) __obj.updateDynamic("formatProgress")(formatProgress.asInstanceOf[js.Any])
+    if (paused != null) __obj.updateDynamic("paused")(paused.asInstanceOf[js.Any])
+    if (sizeSymbols != null) __obj.updateDynamic("sizeSymbols")(sizeSymbols.asInstanceOf[js.Any])
+    if (waitingForResponse != null) __obj.updateDynamic("waitingForResponse")(waitingForResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[UITextOptions]
   }
 }

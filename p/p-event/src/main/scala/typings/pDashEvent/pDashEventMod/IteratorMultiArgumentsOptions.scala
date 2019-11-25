@@ -20,11 +20,11 @@ object IteratorMultiArgumentsOptions {
     resolutionEvents: js.Array[String | js.Symbol] = null,
     timeout: Int | Double = null
   ): IteratorMultiArgumentsOptions[EmittedType] = {
-    val __obj = js.Dynamic.literal(multiArgs = multiArgs)
+    val __obj = js.Dynamic.literal(multiArgs = multiArgs.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (rejectionEvents != null) __obj.updateDynamic("rejectionEvents")(rejectionEvents)
-    if (resolutionEvents != null) __obj.updateDynamic("resolutionEvents")(resolutionEvents)
+    if (rejectionEvents != null) __obj.updateDynamic("rejectionEvents")(rejectionEvents.asInstanceOf[js.Any])
+    if (resolutionEvents != null) __obj.updateDynamic("resolutionEvents")(resolutionEvents.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[IteratorMultiArgumentsOptions[EmittedType]]
   }

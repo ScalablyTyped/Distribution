@@ -30,11 +30,11 @@ object IOptions {
     refreshInterval: Int | Double = null,
     state: IStateDB[ReadonlyJSONValue] = null
   ): IOptions = {
-    val __obj = js.Dynamic.literal(iconRegistry = iconRegistry, manager = manager)
-    if (driveName != null) __obj.updateDynamic("driveName")(driveName)
+    val __obj = js.Dynamic.literal(iconRegistry = iconRegistry.asInstanceOf[js.Any], manager = manager.asInstanceOf[js.Any])
+    if (driveName != null) __obj.updateDynamic("driveName")(driveName.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
     if (refreshInterval != null) __obj.updateDynamic("refreshInterval")(refreshInterval.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

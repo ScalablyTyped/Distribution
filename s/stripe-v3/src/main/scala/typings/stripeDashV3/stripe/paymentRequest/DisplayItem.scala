@@ -13,8 +13,8 @@ trait DisplayItem extends js.Object {
 object DisplayItem {
   @scala.inline
   def apply(amount: Double, label: String, pending: js.UndefOr[Boolean] = js.undefined): DisplayItem = {
-    val __obj = js.Dynamic.literal(amount = amount, label = label)
-    if (!js.isUndefined(pending)) __obj.updateDynamic("pending")(pending)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
+    if (!js.isUndefined(pending)) __obj.updateDynamic("pending")(pending.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisplayItem]
   }
 }

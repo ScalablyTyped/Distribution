@@ -28,9 +28,9 @@ object GeographicDivision {
   @scala.inline
   def apply(alsoKnownAs: js.Array[String] = null, name: String = null, officeIndices: js.Array[Double] = null): GeographicDivision = {
     val __obj = js.Dynamic.literal()
-    if (alsoKnownAs != null) __obj.updateDynamic("alsoKnownAs")(alsoKnownAs)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (officeIndices != null) __obj.updateDynamic("officeIndices")(officeIndices)
+    if (alsoKnownAs != null) __obj.updateDynamic("alsoKnownAs")(alsoKnownAs.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (officeIndices != null) __obj.updateDynamic("officeIndices")(officeIndices.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeographicDivision]
   }
 }

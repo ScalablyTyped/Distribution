@@ -26,10 +26,10 @@ trait Anon_Hl extends js.Object {
 object Anon_Hl {
   @scala.inline
   def apply(part: String, hl: String = null, id: String = null, regionCode: String = null): Anon_Hl = {
-    val __obj = js.Dynamic.literal(part = part)
-    if (hl != null) __obj.updateDynamic("hl")(hl)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (regionCode != null) __obj.updateDynamic("regionCode")(regionCode)
+    val __obj = js.Dynamic.literal(part = part.asInstanceOf[js.Any])
+    if (hl != null) __obj.updateDynamic("hl")(hl.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (regionCode != null) __obj.updateDynamic("regionCode")(regionCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Hl]
   }
 }

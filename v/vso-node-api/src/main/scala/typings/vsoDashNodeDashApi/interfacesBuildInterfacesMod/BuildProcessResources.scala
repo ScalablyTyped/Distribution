@@ -17,7 +17,7 @@ object BuildProcessResources {
     files: js.Array[SecureFileReference],
     queues: js.Array[AgentPoolQueueReference]
   ): BuildProcessResources = {
-    val __obj = js.Dynamic.literal(endpoints = endpoints, files = files, queues = queues)
+    val __obj = js.Dynamic.literal(endpoints = endpoints.asInstanceOf[js.Any], files = files.asInstanceOf[js.Any], queues = queues.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BuildProcessResources]
   }

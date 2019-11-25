@@ -25,7 +25,7 @@ object Anon_CertreqMi {
     nonce: IntegerParam | BigIntegerParam | HexParam | Double,
     policy: ObjectIdentifierParam | HexParam | NameParam
   ): Anon_CertreqMi = {
-    val __obj = js.Dynamic.literal(certreq = certreq, mi = mi, nonce = nonce.asInstanceOf[js.Any], policy = policy.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(certreq = certreq.asInstanceOf[js.Any], mi = mi.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any], policy = policy.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CertreqMi]
   }

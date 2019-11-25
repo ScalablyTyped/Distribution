@@ -14,9 +14,9 @@ object Create {
   @scala.inline
   def apply(copy: Copy = null, `new`: js.Any = null, upload: js.Any = null): Create = {
     val __obj = js.Dynamic.literal()
-    if (copy != null) __obj.updateDynamic("copy")(copy)
-    if (`new` != null) __obj.updateDynamic("new")(`new`)
-    if (upload != null) __obj.updateDynamic("upload")(upload)
+    if (copy != null) __obj.updateDynamic("copy")(copy.asInstanceOf[js.Any])
+    if (`new` != null) __obj.updateDynamic("new")(`new`.asInstanceOf[js.Any])
+    if (upload != null) __obj.updateDynamic("upload")(upload.asInstanceOf[js.Any])
     __obj.asInstanceOf[Create]
   }
 }

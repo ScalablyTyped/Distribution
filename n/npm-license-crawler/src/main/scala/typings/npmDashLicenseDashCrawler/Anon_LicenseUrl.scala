@@ -14,7 +14,7 @@ trait Anon_LicenseUrl extends js.Object {
 object Anon_LicenseUrl {
   @scala.inline
   def apply(licenseUrl: String, licenses: String, parents: String, repository: String): Anon_LicenseUrl = {
-    val __obj = js.Dynamic.literal(licenseUrl = licenseUrl, licenses = licenses, parents = parents, repository = repository)
+    val __obj = js.Dynamic.literal(licenseUrl = licenseUrl.asInstanceOf[js.Any], licenses = licenses.asInstanceOf[js.Any], parents = parents.asInstanceOf[js.Any], repository = repository.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_LicenseUrl]
   }

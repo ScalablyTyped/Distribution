@@ -19,8 +19,8 @@ object ReadBLECharacteristicValueSuccess {
   @scala.inline
   def apply(errCode: String = null, errMsg: String = null): ReadBLECharacteristicValueSuccess = {
     val __obj = js.Dynamic.literal()
-    if (errCode != null) __obj.updateDynamic("errCode")(errCode)
-    if (errMsg != null) __obj.updateDynamic("errMsg")(errMsg)
+    if (errCode != null) __obj.updateDynamic("errCode")(errCode.asInstanceOf[js.Any])
+    if (errMsg != null) __obj.updateDynamic("errMsg")(errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadBLECharacteristicValueSuccess]
   }
 }

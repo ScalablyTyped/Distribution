@@ -30,7 +30,7 @@ object MediaTrackConstraints {
     width: ConstrainLong = null
   ): MediaTrackConstraints = {
     val __obj = js.Dynamic.literal()
-    if (advanced != null) __obj.updateDynamic("advanced")(advanced)
+    if (advanced != null) __obj.updateDynamic("advanced")(advanced.asInstanceOf[js.Any])
     if (aspectRatio != null) __obj.updateDynamic("aspectRatio")(aspectRatio.asInstanceOf[js.Any])
     if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId.asInstanceOf[js.Any])
     if (echoCancellation != null) __obj.updateDynamic("echoCancellation")(echoCancellation.asInstanceOf[js.Any])

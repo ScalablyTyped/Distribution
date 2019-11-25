@@ -20,7 +20,7 @@ object SpeechContext {
   @scala.inline
   def apply(phrases: js.Array[String] = null): SpeechContext = {
     val __obj = js.Dynamic.literal()
-    if (phrases != null) __obj.updateDynamic("phrases")(phrases)
+    if (phrases != null) __obj.updateDynamic("phrases")(phrases.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpeechContext]
   }
 }

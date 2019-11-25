@@ -44,7 +44,7 @@ object ArcGISMapServiceCapabilitiesExportMap {
     supportsSublayerVisibility: Boolean,
     supportsSublayersChanges: Boolean
   ): ArcGISMapServiceCapabilitiesExportMap = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), supportsDynamicLayers = supportsDynamicLayers, supportsSublayerDefinitionExpression = supportsSublayerDefinitionExpression, supportsSublayerVisibility = supportsSublayerVisibility, supportsSublayersChanges = supportsSublayersChanges)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), supportsDynamicLayers = supportsDynamicLayers.asInstanceOf[js.Any], supportsSublayerDefinitionExpression = supportsSublayerDefinitionExpression.asInstanceOf[js.Any], supportsSublayerVisibility = supportsSublayerVisibility.asInstanceOf[js.Any], supportsSublayersChanges = supportsSublayersChanges.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ArcGISMapServiceCapabilitiesExportMap]
   }

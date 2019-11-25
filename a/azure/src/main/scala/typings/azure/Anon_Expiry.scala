@@ -14,9 +14,9 @@ trait Anon_Expiry extends js.Object {
 object Anon_Expiry {
   @scala.inline
   def apply(Expiry: Date, Permission: String = null, Start: Date = null): Anon_Expiry = {
-    val __obj = js.Dynamic.literal(Expiry = Expiry)
-    if (Permission != null) __obj.updateDynamic("Permission")(Permission)
-    if (Start != null) __obj.updateDynamic("Start")(Start)
+    val __obj = js.Dynamic.literal(Expiry = Expiry.asInstanceOf[js.Any])
+    if (Permission != null) __obj.updateDynamic("Permission")(Permission.asInstanceOf[js.Any])
+    if (Start != null) __obj.updateDynamic("Start")(Start.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Expiry]
   }
 }

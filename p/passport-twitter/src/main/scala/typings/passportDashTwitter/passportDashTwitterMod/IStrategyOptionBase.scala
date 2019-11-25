@@ -32,14 +32,14 @@ object IStrategyOptionBase {
     userAuthorizationURL: String = null,
     userProfileURL: String = null
   ): IStrategyOptionBase = {
-    val __obj = js.Dynamic.literal(callbackURL = callbackURL, consumerKey = consumerKey, consumerSecret = consumerSecret)
-    if (accessTokenURL != null) __obj.updateDynamic("accessTokenURL")(accessTokenURL)
-    if (includeEmail != null) __obj.updateDynamic("includeEmail")(includeEmail)
-    if (reguestTokenURL != null) __obj.updateDynamic("reguestTokenURL")(reguestTokenURL)
-    if (sessionKey != null) __obj.updateDynamic("sessionKey")(sessionKey)
-    if (!js.isUndefined(skipExtendedUserProfile)) __obj.updateDynamic("skipExtendedUserProfile")(skipExtendedUserProfile)
-    if (userAuthorizationURL != null) __obj.updateDynamic("userAuthorizationURL")(userAuthorizationURL)
-    if (userProfileURL != null) __obj.updateDynamic("userProfileURL")(userProfileURL)
+    val __obj = js.Dynamic.literal(callbackURL = callbackURL.asInstanceOf[js.Any], consumerKey = consumerKey.asInstanceOf[js.Any], consumerSecret = consumerSecret.asInstanceOf[js.Any])
+    if (accessTokenURL != null) __obj.updateDynamic("accessTokenURL")(accessTokenURL.asInstanceOf[js.Any])
+    if (includeEmail != null) __obj.updateDynamic("includeEmail")(includeEmail.asInstanceOf[js.Any])
+    if (reguestTokenURL != null) __obj.updateDynamic("reguestTokenURL")(reguestTokenURL.asInstanceOf[js.Any])
+    if (sessionKey != null) __obj.updateDynamic("sessionKey")(sessionKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipExtendedUserProfile)) __obj.updateDynamic("skipExtendedUserProfile")(skipExtendedUserProfile.asInstanceOf[js.Any])
+    if (userAuthorizationURL != null) __obj.updateDynamic("userAuthorizationURL")(userAuthorizationURL.asInstanceOf[js.Any])
+    if (userProfileURL != null) __obj.updateDynamic("userProfileURL")(userProfileURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStrategyOptionBase]
   }
 }

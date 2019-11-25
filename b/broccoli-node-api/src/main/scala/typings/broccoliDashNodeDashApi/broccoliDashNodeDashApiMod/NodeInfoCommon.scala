@@ -30,8 +30,8 @@ trait NodeInfoCommon[T /* <: NodeType */] extends js.Object {
 object NodeInfoCommon {
   @scala.inline
   def apply[T /* <: NodeType */](instantiationStack: String, name: String, nodeType: T, annotation: String = null): NodeInfoCommon[T] = {
-    val __obj = js.Dynamic.literal(instantiationStack = instantiationStack, name = name, nodeType = nodeType.asInstanceOf[js.Any])
-    if (annotation != null) __obj.updateDynamic("annotation")(annotation)
+    val __obj = js.Dynamic.literal(instantiationStack = instantiationStack.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any])
+    if (annotation != null) __obj.updateDynamic("annotation")(annotation.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeInfoCommon[T]]
   }
 }

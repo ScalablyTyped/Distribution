@@ -22,9 +22,9 @@ object CardNativeProps {
     styles: Partial[CardStyle] = null
   ): CardNativeProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(full)) __obj.updateDynamic("full")(full)
+    if (!js.isUndefined(full)) __obj.updateDynamic("full")(full.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles)
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardNativeProps]
   }
 }

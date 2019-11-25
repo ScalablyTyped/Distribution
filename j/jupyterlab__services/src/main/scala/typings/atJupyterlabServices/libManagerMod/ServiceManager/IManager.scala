@@ -86,8 +86,8 @@ object IManager {
     workspaces: typings.atJupyterlabServices.libWorkspaceMod.Workspace.IManager,
     specs: ISpecModels = null
   ): IManager = {
-    val __obj = js.Dynamic.literal(builder = builder, connectionFailure = connectionFailure, contents = contents, dispose = js.Any.fromFunction0(dispose), isDisposed = isDisposed, isReady = isReady, nbconvert = nbconvert, ready = ready, serverSettings = serverSettings, sessions = sessions, settings = settings, specsChanged = specsChanged, terminals = terminals, workspaces = workspaces)
-    if (specs != null) __obj.updateDynamic("specs")(specs)
+    val __obj = js.Dynamic.literal(builder = builder.asInstanceOf[js.Any], connectionFailure = connectionFailure.asInstanceOf[js.Any], contents = contents.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), isDisposed = isDisposed.asInstanceOf[js.Any], isReady = isReady.asInstanceOf[js.Any], nbconvert = nbconvert.asInstanceOf[js.Any], ready = ready.asInstanceOf[js.Any], serverSettings = serverSettings.asInstanceOf[js.Any], sessions = sessions.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any], specsChanged = specsChanged.asInstanceOf[js.Any], terminals = terminals.asInstanceOf[js.Any], workspaces = workspaces.asInstanceOf[js.Any])
+    if (specs != null) __obj.updateDynamic("specs")(specs.asInstanceOf[js.Any])
     __obj.asInstanceOf[IManager]
   }
 }

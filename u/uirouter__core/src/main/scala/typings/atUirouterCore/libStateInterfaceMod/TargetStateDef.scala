@@ -16,8 +16,8 @@ object TargetStateDef {
   @scala.inline
   def apply(state: StateOrName, options: TransitionOptions = null, params: RawParams = null): TargetStateDef = {
     val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (params != null) __obj.updateDynamic("params")(params)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetStateDef]
   }
 }

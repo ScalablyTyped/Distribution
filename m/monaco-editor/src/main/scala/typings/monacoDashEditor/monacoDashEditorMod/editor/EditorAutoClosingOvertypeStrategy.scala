@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait EditorAutoClosingOvertypeStrategy extends js.Object
 
+object EditorAutoClosingOvertypeStrategy {
+  @scala.inline
+  def always: typings.monacoDashEditor.monacoDashEditorStrings.always = this.cast("always")
+  @scala.inline
+  def auto: typings.monacoDashEditor.monacoDashEditorStrings.auto = this.cast("auto")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def never: typings.monacoDashEditor.monacoDashEditorStrings.never = this.cast("never")
+}
+

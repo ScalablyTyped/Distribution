@@ -19,7 +19,7 @@ object IShortcutMappingInfo {
     ObjectTypeName: String,
     ObjectTypeSemanticAliases: ISemanticAliases
   ): IShortcutMappingInfo = {
-    val __obj = js.Dynamic.literal(ObjectTypeGUID = ObjectTypeGUID, ObjectTypeID = ObjectTypeID, ObjectTypeName = ObjectTypeName, ObjectTypeSemanticAliases = ObjectTypeSemanticAliases)
+    val __obj = js.Dynamic.literal(ObjectTypeGUID = ObjectTypeGUID.asInstanceOf[js.Any], ObjectTypeID = ObjectTypeID.asInstanceOf[js.Any], ObjectTypeName = ObjectTypeName.asInstanceOf[js.Any], ObjectTypeSemanticAliases = ObjectTypeSemanticAliases.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IShortcutMappingInfo]
   }

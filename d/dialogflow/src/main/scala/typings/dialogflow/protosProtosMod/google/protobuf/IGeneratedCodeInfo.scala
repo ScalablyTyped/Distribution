@@ -15,7 +15,7 @@ object IGeneratedCodeInfo {
   @scala.inline
   def apply(annotation: js.Array[IAnnotation] = null): IGeneratedCodeInfo = {
     val __obj = js.Dynamic.literal()
-    if (annotation != null) __obj.updateDynamic("annotation")(annotation)
+    if (annotation != null) __obj.updateDynamic("annotation")(annotation.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGeneratedCodeInfo]
   }
 }

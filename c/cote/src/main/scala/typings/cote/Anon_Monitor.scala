@@ -14,7 +14,7 @@ trait Anon_Monitor extends js.Object {
 object Anon_Monitor {
   @scala.inline
   def apply(monitor: Monitor, server: Server): Anon_Monitor = {
-    val __obj = js.Dynamic.literal(monitor = monitor, server = server)
+    val __obj = js.Dynamic.literal(monitor = monitor.asInstanceOf[js.Any], server = server.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Monitor]
   }

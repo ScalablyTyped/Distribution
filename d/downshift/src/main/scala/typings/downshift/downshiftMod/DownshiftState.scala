@@ -19,9 +19,9 @@ object DownshiftState {
     inputValue: String = null,
     selectedItem: Item = null
   ): DownshiftState[Item] = {
-    val __obj = js.Dynamic.literal(isOpen = isOpen)
+    val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any])
     if (highlightedIndex != null) __obj.updateDynamic("highlightedIndex")(highlightedIndex.asInstanceOf[js.Any])
-    if (inputValue != null) __obj.updateDynamic("inputValue")(inputValue)
+    if (inputValue != null) __obj.updateDynamic("inputValue")(inputValue.asInstanceOf[js.Any])
     if (selectedItem != null) __obj.updateDynamic("selectedItem")(selectedItem.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownshiftState[Item]]
   }

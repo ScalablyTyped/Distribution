@@ -14,7 +14,7 @@ trait BoundingBox12 extends js.Object {
 object BoundingBox12 {
   @scala.inline
   def apply(x1: Double, x2: Double, y1: Double, y2: Double): BoundingBox12 = {
-    val __obj = js.Dynamic.literal(x1 = x1, x2 = x2, y1 = y1, y2 = y2)
+    val __obj = js.Dynamic.literal(x1 = x1.asInstanceOf[js.Any], x2 = x2.asInstanceOf[js.Any], y1 = y1.asInstanceOf[js.Any], y2 = y2.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BoundingBox12]
   }

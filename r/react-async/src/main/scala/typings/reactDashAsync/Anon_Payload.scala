@@ -14,7 +14,7 @@ object Anon_Payload {
   @scala.inline
   def apply(payload: () => js.Promise[Unit], `type`: start): Anon_Payload = {
     val __obj = js.Dynamic.literal(payload = js.Any.fromFunction0(payload))
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Payload]
   }
 }

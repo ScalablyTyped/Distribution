@@ -75,22 +75,22 @@ object ImmunizationRecommendationRecommendation {
     targetDisease: CodeableConcept = null,
     vaccineCode: CodeableConcept = null
   ): ImmunizationRecommendationRecommendation = {
-    val __obj = js.Dynamic.literal(date = date, forecastStatus = forecastStatus)
-    if (_date != null) __obj.updateDynamic("_date")(_date)
-    if (_doseNumber != null) __obj.updateDynamic("_doseNumber")(_doseNumber)
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
-    if (_id != null) __obj.updateDynamic("_id")(_id)
-    if (dateCriterion != null) __obj.updateDynamic("dateCriterion")(dateCriterion)
+    val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], forecastStatus = forecastStatus.asInstanceOf[js.Any])
+    if (_date != null) __obj.updateDynamic("_date")(_date.asInstanceOf[js.Any])
+    if (_doseNumber != null) __obj.updateDynamic("_doseNumber")(_doseNumber.asInstanceOf[js.Any])
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
+    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
+    if (dateCriterion != null) __obj.updateDynamic("dateCriterion")(dateCriterion.asInstanceOf[js.Any])
     if (doseNumber != null) __obj.updateDynamic("doseNumber")(doseNumber.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
-    if (supportingImmunization != null) __obj.updateDynamic("supportingImmunization")(supportingImmunization)
-    if (supportingPatientInformation != null) __obj.updateDynamic("supportingPatientInformation")(supportingPatientInformation)
-    if (targetDisease != null) __obj.updateDynamic("targetDisease")(targetDisease)
-    if (vaccineCode != null) __obj.updateDynamic("vaccineCode")(vaccineCode)
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
+    if (supportingImmunization != null) __obj.updateDynamic("supportingImmunization")(supportingImmunization.asInstanceOf[js.Any])
+    if (supportingPatientInformation != null) __obj.updateDynamic("supportingPatientInformation")(supportingPatientInformation.asInstanceOf[js.Any])
+    if (targetDisease != null) __obj.updateDynamic("targetDisease")(targetDisease.asInstanceOf[js.Any])
+    if (vaccineCode != null) __obj.updateDynamic("vaccineCode")(vaccineCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImmunizationRecommendationRecommendation]
   }
 }

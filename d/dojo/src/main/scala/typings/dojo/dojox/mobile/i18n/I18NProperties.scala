@@ -21,7 +21,7 @@ trait I18NProperties extends js.Object {
 object I18NProperties {
   @scala.inline
   def apply(mblNoConv: Boolean): I18NProperties = {
-    val __obj = js.Dynamic.literal(mblNoConv = mblNoConv)
+    val __obj = js.Dynamic.literal(mblNoConv = mblNoConv.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[I18NProperties]
   }

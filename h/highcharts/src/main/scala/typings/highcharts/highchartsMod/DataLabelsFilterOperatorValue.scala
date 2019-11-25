@@ -14,3 +14,20 @@ import scala.scalajs.js.annotation._
 */
 trait DataLabelsFilterOperatorValue extends js.Object
 
+object DataLabelsFilterOperatorValue {
+  @scala.inline
+  def `<`: typings.highcharts.highchartsStrings.`<` = this.cast("<")
+  @scala.inline
+  def `<=`: typings.highcharts.highchartsStrings.`<=` = this.cast("<=")
+  @scala.inline
+  def `==`: typings.highcharts.highchartsStrings.`==` = this.cast("==")
+  @scala.inline
+  def `===`: typings.highcharts.highchartsStrings.`===` = this.cast("===")
+  @scala.inline
+  def `>`: typings.highcharts.highchartsStrings.`>` = this.cast(">")
+  @scala.inline
+  def `>=`: typings.highcharts.highchartsStrings.`>=` = this.cast(">=")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

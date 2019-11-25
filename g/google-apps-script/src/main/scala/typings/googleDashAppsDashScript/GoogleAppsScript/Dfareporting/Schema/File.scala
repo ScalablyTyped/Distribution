@@ -32,16 +32,16 @@ object File {
     urls: FileUrls = null
   ): File = {
     val __obj = js.Dynamic.literal()
-    if (dateRange != null) __obj.updateDynamic("dateRange")(dateRange)
-    if (etag != null) __obj.updateDynamic("etag")(etag)
-    if (fileName != null) __obj.updateDynamic("fileName")(fileName)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (lastModifiedTime != null) __obj.updateDynamic("lastModifiedTime")(lastModifiedTime)
-    if (reportId != null) __obj.updateDynamic("reportId")(reportId)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (urls != null) __obj.updateDynamic("urls")(urls)
+    if (dateRange != null) __obj.updateDynamic("dateRange")(dateRange.asInstanceOf[js.Any])
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (lastModifiedTime != null) __obj.updateDynamic("lastModifiedTime")(lastModifiedTime.asInstanceOf[js.Any])
+    if (reportId != null) __obj.updateDynamic("reportId")(reportId.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (urls != null) __obj.updateDynamic("urls")(urls.asInstanceOf[js.Any])
     __obj.asInstanceOf[File]
   }
 }

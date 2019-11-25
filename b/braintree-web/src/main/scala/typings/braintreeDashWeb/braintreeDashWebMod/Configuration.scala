@@ -13,7 +13,7 @@ trait Configuration extends js.Object {
 object Configuration {
   @scala.inline
   def apply(analyticsMetadata: ClientAnalyticsMetadata, client: Client, gatewayConfiguration: js.Any): Configuration = {
-    val __obj = js.Dynamic.literal(analyticsMetadata = analyticsMetadata, client = client, gatewayConfiguration = gatewayConfiguration)
+    val __obj = js.Dynamic.literal(analyticsMetadata = analyticsMetadata.asInstanceOf[js.Any], client = client.asInstanceOf[js.Any], gatewayConfiguration = gatewayConfiguration.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Configuration]
   }

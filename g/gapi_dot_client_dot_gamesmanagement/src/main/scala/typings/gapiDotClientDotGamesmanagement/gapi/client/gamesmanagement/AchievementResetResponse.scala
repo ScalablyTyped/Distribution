@@ -30,10 +30,10 @@ object AchievementResetResponse {
     updateOccurred: js.UndefOr[Boolean] = js.undefined
   ): AchievementResetResponse = {
     val __obj = js.Dynamic.literal()
-    if (currentState != null) __obj.updateDynamic("currentState")(currentState)
-    if (definitionId != null) __obj.updateDynamic("definitionId")(definitionId)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (!js.isUndefined(updateOccurred)) __obj.updateDynamic("updateOccurred")(updateOccurred)
+    if (currentState != null) __obj.updateDynamic("currentState")(currentState.asInstanceOf[js.Any])
+    if (definitionId != null) __obj.updateDynamic("definitionId")(definitionId.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateOccurred)) __obj.updateDynamic("updateOccurred")(updateOccurred.asInstanceOf[js.Any])
     __obj.asInstanceOf[AchievementResetResponse]
   }
 }

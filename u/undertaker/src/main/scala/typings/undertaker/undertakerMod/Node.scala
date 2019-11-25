@@ -19,9 +19,9 @@ object Node {
     branch: js.UndefOr[Boolean] = js.undefined,
     `type`: String = null
   ): Node = {
-    val __obj = js.Dynamic.literal(label = label, nodes = nodes)
-    if (!js.isUndefined(branch)) __obj.updateDynamic("branch")(branch)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any])
+    if (!js.isUndefined(branch)) __obj.updateDynamic("branch")(branch.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
 }

@@ -28,13 +28,13 @@ object ButtonProps {
     primary: js.UndefOr[Boolean] = js.undefined
   ): ButtonProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    js.Dynamic.global.Object.assign(__obj, CustomRenderedComponent)
-    js.Dynamic.global.Object.assign(__obj, RippleComponent)
-    if (!js.isUndefined(accent)) __obj.updateDynamic("accent")(accent)
-    if (!js.isUndefined(colored)) __obj.updateDynamic("colored")(colored)
-    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (CustomRenderedComponent != null) js.Dynamic.global.Object.assign(__obj, CustomRenderedComponent)
+    if (RippleComponent != null) js.Dynamic.global.Object.assign(__obj, RippleComponent)
+    if (!js.isUndefined(accent)) __obj.updateDynamic("accent")(accent.asInstanceOf[js.Any])
+    if (!js.isUndefined(colored)) __obj.updateDynamic("colored")(colored.asInstanceOf[js.Any])
+    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonProps]
   }
 }

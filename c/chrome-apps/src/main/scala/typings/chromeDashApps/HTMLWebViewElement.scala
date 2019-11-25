@@ -30,7 +30,7 @@ import typings.chromeDashApps.WebView.ZoomMode
 import typings.chromeDashApps.chrome.double
 import typings.chromeDashApps.chrome.extensionTypes.ImageDetails
 import typings.chromeDashApps.chrome.integer
-import typings.chromeDashApps.chromeDashAppsStrings.abort
+import typings.chromeDashApps.chromeDashAppsStrings.abort_
 import typings.chromeDashApps.chromeDashAppsStrings.activate
 import typings.chromeDashApps.chromeDashAppsStrings.animationcancel
 import typings.chromeDashApps.chromeDashAppsStrings.animationend
@@ -73,7 +73,7 @@ import typings.chromeDashApps.chromeDashAppsStrings.focusout
 import typings.chromeDashApps.chromeDashAppsStrings.fullscreenchange
 import typings.chromeDashApps.chromeDashAppsStrings.fullscreenerror
 import typings.chromeDashApps.chromeDashAppsStrings.gotpointercapture
-import typings.chromeDashApps.chromeDashAppsStrings.input
+import typings.chromeDashApps.chromeDashAppsStrings.input_
 import typings.chromeDashApps.chromeDashAppsStrings.invalid
 import typings.chromeDashApps.chromeDashAppsStrings.keep
 import typings.chromeDashApps.chromeDashAppsStrings.keydown
@@ -390,16 +390,16 @@ class HTMLWebViewElement () extends HTMLElement {
     */
   def addContentScripts(contentScriptList: js.Array[ContentScriptDetails]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_abort(`type`: abort, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ UIEvent, _]): Unit = js.native
+  def addEventListener_abort(`type`: abort_, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ UIEvent, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_abort(
-    `type`: abort,
+    `type`: abort_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ UIEvent, _],
     options: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_abort(
-    `type`: abort,
+    `type`: abort_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ UIEvent, _],
     options: AddEventListenerOptions
   ): Unit = js.native
@@ -988,16 +988,16 @@ class HTMLWebViewElement () extends HTMLElement {
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_input(`type`: input, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _]): Unit = js.native
+  def addEventListener_input(`type`: input_, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_input(
-    `type`: input,
+    `type`: input_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _],
     options: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_input(
-    `type`: input,
+    `type`: input_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): Unit = js.native
@@ -2157,16 +2157,16 @@ class HTMLWebViewElement () extends HTMLElement {
   def removeContentScripts(): Unit = js.native
   def removeContentScripts(scriptNameList: js.Array[String]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_abort(`type`: abort, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ UIEvent, _]): Unit = js.native
+  def removeEventListener_abort(`type`: abort_, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ UIEvent, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_abort(
-    `type`: abort,
+    `type`: abort_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ UIEvent, _],
     options: Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_abort(
-    `type`: abort,
+    `type`: abort_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ UIEvent, _],
     options: EventListenerOptions
   ): Unit = js.native
@@ -2755,16 +2755,16 @@ class HTMLWebViewElement () extends HTMLElement {
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_input(`type`: input, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _]): Unit = js.native
+  def removeEventListener_input(`type`: input_, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_input(
-    `type`: input,
+    `type`: input_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _],
     options: Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_input(
-    `type`: input,
+    `type`: input_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, _],
     options: EventListenerOptions
   ): Unit = js.native

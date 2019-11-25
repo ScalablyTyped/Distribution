@@ -22,9 +22,9 @@ object Anon_BackgroundBorderShadowSize {
   ): Anon_BackgroundBorderShadowSize = {
     val __obj = js.Dynamic.literal()
     if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (border != null) __obj.updateDynamic("border")(border)
-    if (shadowSize != null) __obj.updateDynamic("shadowSize")(shadowSize)
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex)
+    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
+    if (shadowSize != null) __obj.updateDynamic("shadowSize")(shadowSize.asInstanceOf[js.Any])
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BackgroundBorderShadowSize]
   }
 }

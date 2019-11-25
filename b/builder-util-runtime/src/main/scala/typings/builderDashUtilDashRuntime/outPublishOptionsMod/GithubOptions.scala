@@ -74,18 +74,18 @@ object GithubOptions {
     updaterCacheDirName: String = null,
     vPrefixedTagName: js.UndefOr[Boolean] = js.undefined
   ): GithubOptions = {
-    val __obj = js.Dynamic.literal(provider = provider)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`)
+    val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    if (!js.isUndefined(publishAutoUpdate)) __obj.updateDynamic("publishAutoUpdate")(publishAutoUpdate)
-    if (publisherName != null) __obj.updateDynamic("publisherName")(publisherName)
+    if (!js.isUndefined(publishAutoUpdate)) __obj.updateDynamic("publishAutoUpdate")(publishAutoUpdate.asInstanceOf[js.Any])
+    if (publisherName != null) __obj.updateDynamic("publisherName")(publisherName.asInstanceOf[js.Any])
     if (releaseType != null) __obj.updateDynamic("releaseType")(releaseType.asInstanceOf[js.Any])
-    if (repo != null) __obj.updateDynamic("repo")(repo)
-    if (token != null) __obj.updateDynamic("token")(token)
-    if (updaterCacheDirName != null) __obj.updateDynamic("updaterCacheDirName")(updaterCacheDirName)
-    if (!js.isUndefined(vPrefixedTagName)) __obj.updateDynamic("vPrefixedTagName")(vPrefixedTagName)
+    if (repo != null) __obj.updateDynamic("repo")(repo.asInstanceOf[js.Any])
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
+    if (updaterCacheDirName != null) __obj.updateDynamic("updaterCacheDirName")(updaterCacheDirName.asInstanceOf[js.Any])
+    if (!js.isUndefined(vPrefixedTagName)) __obj.updateDynamic("vPrefixedTagName")(vPrefixedTagName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GithubOptions]
   }
 }

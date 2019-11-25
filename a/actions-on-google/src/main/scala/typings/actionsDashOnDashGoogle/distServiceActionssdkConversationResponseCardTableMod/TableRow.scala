@@ -31,8 +31,8 @@ object TableRow {
     dividerAfter: js.UndefOr[Boolean] = js.undefined
   ): TableRow = {
     val __obj = js.Dynamic.literal()
-    if (cells != null) __obj.updateDynamic("cells")(cells)
-    if (!js.isUndefined(dividerAfter)) __obj.updateDynamic("dividerAfter")(dividerAfter)
+    if (cells != null) __obj.updateDynamic("cells")(cells.asInstanceOf[js.Any])
+    if (!js.isUndefined(dividerAfter)) __obj.updateDynamic("dividerAfter")(dividerAfter.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableRow]
   }
 }

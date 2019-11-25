@@ -34,14 +34,14 @@ object BuildOptions {
     val __obj = js.Dynamic.literal()
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
     if (effectiveOptionComputed != null) __obj.updateDynamic("effectiveOptionComputed")(js.Any.fromFunction1(effectiveOptionComputed))
-    if (linux != null) __obj.updateDynamic("linux")(linux)
-    if (mac != null) __obj.updateDynamic("mac")(mac)
+    if (linux != null) __obj.updateDynamic("linux")(linux.asInstanceOf[js.Any])
+    if (mac != null) __obj.updateDynamic("mac")(mac.asInstanceOf[js.Any])
     if (platformPackagerFactory != null) __obj.updateDynamic("platformPackagerFactory")(js.Any.fromFunction2(platformPackagerFactory))
-    if (prepackaged != null) __obj.updateDynamic("prepackaged")(prepackaged)
-    if (projectDir != null) __obj.updateDynamic("projectDir")(projectDir)
-    if (publish != null) __obj.updateDynamic("publish")(publish)
-    if (targets != null) __obj.updateDynamic("targets")(targets)
-    if (win != null) __obj.updateDynamic("win")(win)
+    if (prepackaged != null) __obj.updateDynamic("prepackaged")(prepackaged.asInstanceOf[js.Any])
+    if (projectDir != null) __obj.updateDynamic("projectDir")(projectDir.asInstanceOf[js.Any])
+    if (publish != null) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
+    if (targets != null) __obj.updateDynamic("targets")(targets.asInstanceOf[js.Any])
+    if (win != null) __obj.updateDynamic("win")(win.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildOptions]
   }
 }

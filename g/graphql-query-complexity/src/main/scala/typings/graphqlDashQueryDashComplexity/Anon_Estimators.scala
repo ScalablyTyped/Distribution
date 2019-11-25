@@ -22,8 +22,8 @@ object Anon_Estimators {
     schema: GraphQLSchema,
     variables: js.Object = null
   ): Anon_Estimators = {
-    val __obj = js.Dynamic.literal(estimators = estimators, query = query, schema = schema)
-    if (variables != null) __obj.updateDynamic("variables")(variables)
+    val __obj = js.Dynamic.literal(estimators = estimators.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
+    if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Estimators]
   }
 }

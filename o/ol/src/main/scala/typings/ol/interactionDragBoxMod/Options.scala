@@ -23,9 +23,9 @@ object Options {
     minArea: Int | Double = null
   ): Options = {
     val __obj = js.Dynamic.literal(onBoxEnd = js.Any.fromFunction2(onBoxEnd))
-    if (boxEndCondition != null) __obj.updateDynamic("boxEndCondition")(boxEndCondition)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (condition != null) __obj.updateDynamic("condition")(condition)
+    if (boxEndCondition != null) __obj.updateDynamic("boxEndCondition")(boxEndCondition.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (condition != null) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
     if (minArea != null) __obj.updateDynamic("minArea")(minArea.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

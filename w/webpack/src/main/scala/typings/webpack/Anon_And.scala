@@ -67,12 +67,12 @@ object Anon_And {
     test: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias webpack.webpack.RuleSetCondition */ js.Object = null
   ): Anon_And = {
     val __obj = js.Dynamic.literal()
-    if (and != null) __obj.updateDynamic("and")(and)
-    if (exclude != null) __obj.updateDynamic("exclude")(exclude)
-    if (include != null) __obj.updateDynamic("include")(include)
-    if (not != null) __obj.updateDynamic("not")(not)
-    if (or != null) __obj.updateDynamic("or")(or)
-    if (test != null) __obj.updateDynamic("test")(test)
+    if (and != null) __obj.updateDynamic("and")(and.asInstanceOf[js.Any])
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    if (not != null) __obj.updateDynamic("not")(not.asInstanceOf[js.Any])
+    if (or != null) __obj.updateDynamic("or")(or.asInstanceOf[js.Any])
+    if (test != null) __obj.updateDynamic("test")(test.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_And]
   }
 }

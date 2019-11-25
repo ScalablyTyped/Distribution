@@ -25,7 +25,7 @@ object Anon_Pagination {
     pointStyle: RegisteredStyle[ViewStyle],
     spaceStyle: RegisteredStyle[ViewStyle]
   ): Anon_Pagination = {
-    val __obj = js.Dynamic.literal(pagination = pagination, paginationX = paginationX, paginationY = paginationY, pointActiveStyle = pointActiveStyle, pointStyle = pointStyle, spaceStyle = spaceStyle)
+    val __obj = js.Dynamic.literal(pagination = pagination.asInstanceOf[js.Any], paginationX = paginationX.asInstanceOf[js.Any], paginationY = paginationY.asInstanceOf[js.Any], pointActiveStyle = pointActiveStyle.asInstanceOf[js.Any], pointStyle = pointStyle.asInstanceOf[js.Any], spaceStyle = spaceStyle.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Pagination]
   }

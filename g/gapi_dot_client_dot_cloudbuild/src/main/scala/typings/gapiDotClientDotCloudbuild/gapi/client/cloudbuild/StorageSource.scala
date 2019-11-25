@@ -29,9 +29,9 @@ object StorageSource {
   @scala.inline
   def apply(bucket: String = null, generation: String = null, `object`: String = null): StorageSource = {
     val __obj = js.Dynamic.literal()
-    if (bucket != null) __obj.updateDynamic("bucket")(bucket)
-    if (generation != null) __obj.updateDynamic("generation")(generation)
-    if (`object` != null) __obj.updateDynamic("object")(`object`)
+    if (bucket != null) __obj.updateDynamic("bucket")(bucket.asInstanceOf[js.Any])
+    if (generation != null) __obj.updateDynamic("generation")(generation.asInstanceOf[js.Any])
+    if (`object` != null) __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[StorageSource]
   }
 }

@@ -18,8 +18,8 @@ object Anon_01Any {
     `1`: Concat[TN, Cast[_, js.Array[_]]]
   ): Anon_01Any[TN, I, T2] = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("0")(`0`)
-    __obj.updateDynamic("1")(`1`)
+    __obj.updateDynamic("0")(`0`.asInstanceOf[js.Any])
+    __obj.updateDynamic("1")(`1`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_01Any[TN, I, T2]]
   }
 }

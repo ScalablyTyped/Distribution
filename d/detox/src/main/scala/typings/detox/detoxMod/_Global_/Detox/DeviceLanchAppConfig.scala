@@ -57,14 +57,14 @@ object DeviceLanchAppConfig {
     userNotification: js.Any = null
   ): DeviceLanchAppConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(delete)) __obj.updateDynamic("delete")(delete)
-    if (languageAndLocale != null) __obj.updateDynamic("languageAndLocale")(languageAndLocale)
-    if (launchArgs != null) __obj.updateDynamic("launchArgs")(launchArgs)
-    if (!js.isUndefined(newInstance)) __obj.updateDynamic("newInstance")(newInstance)
-    if (permissions != null) __obj.updateDynamic("permissions")(permissions)
-    if (url != null) __obj.updateDynamic("url")(url)
-    if (userActivity != null) __obj.updateDynamic("userActivity")(userActivity)
-    if (userNotification != null) __obj.updateDynamic("userNotification")(userNotification)
+    if (!js.isUndefined(delete)) __obj.updateDynamic("delete")(delete.asInstanceOf[js.Any])
+    if (languageAndLocale != null) __obj.updateDynamic("languageAndLocale")(languageAndLocale.asInstanceOf[js.Any])
+    if (launchArgs != null) __obj.updateDynamic("launchArgs")(launchArgs.asInstanceOf[js.Any])
+    if (!js.isUndefined(newInstance)) __obj.updateDynamic("newInstance")(newInstance.asInstanceOf[js.Any])
+    if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (userActivity != null) __obj.updateDynamic("userActivity")(userActivity.asInstanceOf[js.Any])
+    if (userNotification != null) __obj.updateDynamic("userNotification")(userNotification.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceLanchAppConfig]
   }
 }

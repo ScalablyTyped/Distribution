@@ -15,7 +15,7 @@ trait InterfaceDatum extends js.Object {
 object InterfaceDatum {
   @scala.inline
   def apply(a: Double, b: Double, datum_type: Double, ep2: Double, es: Double): InterfaceDatum = {
-    val __obj = js.Dynamic.literal(a = a, b = b, datum_type = datum_type, ep2 = ep2, es = es)
+    val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], datum_type = datum_type.asInstanceOf[js.Any], ep2 = ep2.asInstanceOf[js.Any], es = es.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InterfaceDatum]
   }

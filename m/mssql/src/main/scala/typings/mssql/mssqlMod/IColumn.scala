@@ -13,8 +13,8 @@ trait IColumn extends ISqlType {
 object IColumn {
   @scala.inline
   def apply(name: String, nullable: Boolean, primary: Boolean, `type`: ISqlTypeFactory): IColumn = {
-    val __obj = js.Dynamic.literal(name = name, nullable = nullable, primary = primary)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], nullable = nullable.asInstanceOf[js.Any], primary = primary.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IColumn]
   }
 }

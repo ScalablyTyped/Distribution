@@ -11,7 +11,7 @@ trait PickerItemProps extends js.Object {
 object PickerItemProps {
   @scala.inline
   def apply(children: String): PickerItemProps = {
-    val __obj = js.Dynamic.literal(children = children)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PickerItemProps]
   }

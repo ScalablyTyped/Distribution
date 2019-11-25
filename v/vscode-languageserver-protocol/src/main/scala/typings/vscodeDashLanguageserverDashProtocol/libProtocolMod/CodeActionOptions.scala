@@ -19,7 +19,7 @@ object CodeActionOptions {
   @scala.inline
   def apply(codeActionKinds: js.Array[CodeActionKind] = null): CodeActionOptions = {
     val __obj = js.Dynamic.literal()
-    if (codeActionKinds != null) __obj.updateDynamic("codeActionKinds")(codeActionKinds)
+    if (codeActionKinds != null) __obj.updateDynamic("codeActionKinds")(codeActionKinds.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeActionOptions]
   }
 }

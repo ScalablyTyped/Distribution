@@ -27,9 +27,9 @@ object NavbarOptions {
   @scala.inline
   def apply(add: js.UndefOr[Boolean] = js.undefined, title: String = null, titleLink: String = null): NavbarOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(add)) __obj.updateDynamic("add")(add)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (titleLink != null) __obj.updateDynamic("titleLink")(titleLink)
+    if (!js.isUndefined(add)) __obj.updateDynamic("add")(add.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (titleLink != null) __obj.updateDynamic("titleLink")(titleLink.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavbarOptions]
   }
 }

@@ -36,7 +36,7 @@ object Anon_CfgEmail {
     Phone: Instantiable1[/* cfg */ PhoneMatchConfig, PhoneMatch],
     Url: Instantiable1[/* cfg */ UrlMatchConfig, UrlMatch]
   ): Anon_CfgEmail = {
-    val __obj = js.Dynamic.literal(Email = Email, Hashtag = Hashtag, Match = Match, Mention = Mention, Phone = Phone, Url = Url)
+    val __obj = js.Dynamic.literal(Email = Email.asInstanceOf[js.Any], Hashtag = Hashtag.asInstanceOf[js.Any], Match = Match.asInstanceOf[js.Any], Mention = Mention.asInstanceOf[js.Any], Phone = Phone.asInstanceOf[js.Any], Url = Url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CfgEmail]
   }

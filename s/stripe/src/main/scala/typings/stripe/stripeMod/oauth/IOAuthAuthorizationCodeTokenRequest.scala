@@ -32,9 +32,9 @@ object IOAuthAuthorizationCodeTokenRequest {
     assert_capabilities: String = null,
     scope: String = null
   ): IOAuthAuthorizationCodeTokenRequest = {
-    val __obj = js.Dynamic.literal(code = code, grant_type = grant_type)
-    if (assert_capabilities != null) __obj.updateDynamic("assert_capabilities")(assert_capabilities)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], grant_type = grant_type.asInstanceOf[js.Any])
+    if (assert_capabilities != null) __obj.updateDynamic("assert_capabilities")(assert_capabilities.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOAuthAuthorizationCodeTokenRequest]
   }
 }

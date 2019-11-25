@@ -17,8 +17,8 @@ object IElementPositionInfo {
     targetRectangle: Rectangle,
     alignmentEdge: RectangleEdge = null
   ): IElementPositionInfo = {
-    val __obj = js.Dynamic.literal(elementRectangle = elementRectangle, targetEdge = targetEdge, targetRectangle = targetRectangle)
-    if (alignmentEdge != null) __obj.updateDynamic("alignmentEdge")(alignmentEdge)
+    val __obj = js.Dynamic.literal(elementRectangle = elementRectangle.asInstanceOf[js.Any], targetEdge = targetEdge.asInstanceOf[js.Any], targetRectangle = targetRectangle.asInstanceOf[js.Any])
+    if (alignmentEdge != null) __obj.updateDynamic("alignmentEdge")(alignmentEdge.asInstanceOf[js.Any])
     __obj.asInstanceOf[IElementPositionInfo]
   }
 }

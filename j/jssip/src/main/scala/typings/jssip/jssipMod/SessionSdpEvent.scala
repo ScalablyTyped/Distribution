@@ -13,8 +13,8 @@ trait SessionSdpEvent extends js.Object {
 object SessionSdpEvent {
   @scala.inline
   def apply(originator: String, sdp: String, `type`: String): SessionSdpEvent = {
-    val __obj = js.Dynamic.literal(originator = originator, sdp = sdp)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(originator = originator.asInstanceOf[js.Any], sdp = sdp.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionSdpEvent]
   }
 }

@@ -30,9 +30,9 @@ object ItemsMappingColumnStyle {
     width: Int | Double = null
   ): ItemsMappingColumnStyle = {
     val __obj = js.Dynamic.literal()
-    if (headerTemplateID != null) __obj.updateDynamic("headerTemplateID")(headerTemplateID)
-    if (templateID != null) __obj.updateDynamic("templateID")(templateID)
-    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign)
+    if (headerTemplateID != null) __obj.updateDynamic("headerTemplateID")(headerTemplateID.asInstanceOf[js.Any])
+    if (templateID != null) __obj.updateDynamic("templateID")(templateID.asInstanceOf[js.Any])
+    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemsMappingColumnStyle]
   }

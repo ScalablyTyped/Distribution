@@ -74,9 +74,9 @@ object Anon_01 {
     scrollingResetTimeInterval: `150`,
     tabIndex: `0`
   ): Anon_01 = {
-    val __obj = js.Dynamic.literal(autoContainerWidth = autoContainerWidth, autoHeight = autoHeight, autoWidth = autoWidth, cellRangeRenderer = js.Any.fromFunction1(cellRangeRenderer), containerRole = containerRole, estimatedColumnSize = estimatedColumnSize, estimatedRowSize = estimatedRowSize, getScrollbarSize = js.Any.fromFunction0(getScrollbarSize), noContentRenderer = js.Any.fromFunction0(noContentRenderer), onScroll = js.Any.fromFunction0(onScroll), onScrollbarPresenceChange = js.Any.fromFunction0(onScrollbarPresenceChange), onSectionRendered = js.Any.fromFunction0(onSectionRendered), overscanColumnCount = overscanColumnCount, overscanIndicesGetter = js.Any.fromFunction1(overscanIndicesGetter), overscanRowCount = overscanRowCount, role = role, scrollToAlignment = scrollToAlignment, scrollToColumn = scrollToColumn, scrollToRow = scrollToRow, scrollingResetTimeInterval = scrollingResetTimeInterval, tabIndex = tabIndex)
-    __obj.updateDynamic("aria-label")(`aria-label`)
-    __obj.updateDynamic("aria-readonly")(`aria-readonly`)
+    val __obj = js.Dynamic.literal(autoContainerWidth = autoContainerWidth.asInstanceOf[js.Any], autoHeight = autoHeight.asInstanceOf[js.Any], autoWidth = autoWidth.asInstanceOf[js.Any], cellRangeRenderer = js.Any.fromFunction1(cellRangeRenderer), containerRole = containerRole.asInstanceOf[js.Any], estimatedColumnSize = estimatedColumnSize.asInstanceOf[js.Any], estimatedRowSize = estimatedRowSize.asInstanceOf[js.Any], getScrollbarSize = js.Any.fromFunction0(getScrollbarSize), noContentRenderer = js.Any.fromFunction0(noContentRenderer), onScroll = js.Any.fromFunction0(onScroll), onScrollbarPresenceChange = js.Any.fromFunction0(onScrollbarPresenceChange), onSectionRendered = js.Any.fromFunction0(onSectionRendered), overscanColumnCount = overscanColumnCount.asInstanceOf[js.Any], overscanIndicesGetter = js.Any.fromFunction1(overscanIndicesGetter), overscanRowCount = overscanRowCount.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any], scrollToAlignment = scrollToAlignment.asInstanceOf[js.Any], scrollToColumn = scrollToColumn.asInstanceOf[js.Any], scrollToRow = scrollToRow.asInstanceOf[js.Any], scrollingResetTimeInterval = scrollingResetTimeInterval.asInstanceOf[js.Any], tabIndex = tabIndex.asInstanceOf[js.Any])
+    __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])
+    __obj.updateDynamic("aria-readonly")(`aria-readonly`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_01]
   }
 }

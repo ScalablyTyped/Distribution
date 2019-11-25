@@ -13,3 +13,18 @@ import scala.scalajs.js.annotation._
 */
 trait StrokeCap extends js.Object
 
+object StrokeCap {
+  @scala.inline
+  def ARROW_EQUILATERAL: typings.figma.figmaStrings.ARROW_EQUILATERAL = this.cast("ARROW_EQUILATERAL")
+  @scala.inline
+  def ARROW_LINES: typings.figma.figmaStrings.ARROW_LINES = this.cast("ARROW_LINES")
+  @scala.inline
+  def NONE: typings.figma.figmaStrings.NONE = this.cast("NONE")
+  @scala.inline
+  def ROUND: typings.figma.figmaStrings.ROUND = this.cast("ROUND")
+  @scala.inline
+  def SQUARE: typings.figma.figmaStrings.SQUARE = this.cast("SQUARE")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

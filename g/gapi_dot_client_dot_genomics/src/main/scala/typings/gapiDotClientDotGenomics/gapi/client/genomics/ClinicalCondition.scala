@@ -30,10 +30,10 @@ object ClinicalCondition {
     omimId: String = null
   ): ClinicalCondition = {
     val __obj = js.Dynamic.literal()
-    if (conceptId != null) __obj.updateDynamic("conceptId")(conceptId)
-    if (externalIds != null) __obj.updateDynamic("externalIds")(externalIds)
-    if (names != null) __obj.updateDynamic("names")(names)
-    if (omimId != null) __obj.updateDynamic("omimId")(omimId)
+    if (conceptId != null) __obj.updateDynamic("conceptId")(conceptId.asInstanceOf[js.Any])
+    if (externalIds != null) __obj.updateDynamic("externalIds")(externalIds.asInstanceOf[js.Any])
+    if (names != null) __obj.updateDynamic("names")(names.asInstanceOf[js.Any])
+    if (omimId != null) __obj.updateDynamic("omimId")(omimId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClinicalCondition]
   }
 }

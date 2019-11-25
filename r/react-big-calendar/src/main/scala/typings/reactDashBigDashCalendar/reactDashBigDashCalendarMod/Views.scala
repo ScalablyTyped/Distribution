@@ -1,26 +1,26 @@
 package typings.reactDashBigDashCalendar.reactDashBigDashCalendarMod
 
-import typings.reactDashBigDashCalendar.reactDashBigDashCalendarStrings.agenda
-import typings.reactDashBigDashCalendar.reactDashBigDashCalendarStrings.day
-import typings.reactDashBigDashCalendar.reactDashBigDashCalendarStrings.month
-import typings.reactDashBigDashCalendar.reactDashBigDashCalendarStrings.week
-import typings.reactDashBigDashCalendar.reactDashBigDashCalendarStrings.work_week
+import typings.reactDashBigDashCalendar.reactDashBigDashCalendarStrings.agenda_
+import typings.reactDashBigDashCalendar.reactDashBigDashCalendarStrings.day_
+import typings.reactDashBigDashCalendar.reactDashBigDashCalendarStrings.month_
+import typings.reactDashBigDashCalendar.reactDashBigDashCalendarStrings.week_
+import typings.reactDashBigDashCalendar.reactDashBigDashCalendarStrings.work_week_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Views extends js.Object {
-  var AGENDA: agenda
-  var DAY: day
-  var MONTH: month
-  var WEEK: week
-  var WORK_WEEK: work_week
+  var AGENDA: agenda_
+  var DAY: day_
+  var MONTH: month_
+  var WEEK: week_
+  var WORK_WEEK: work_week_
 }
 
 object Views {
   @scala.inline
-  def apply(AGENDA: agenda, DAY: day, MONTH: month, WEEK: week, WORK_WEEK: work_week): Views = {
-    val __obj = js.Dynamic.literal(AGENDA = AGENDA, DAY = DAY, MONTH = MONTH, WEEK = WEEK, WORK_WEEK = WORK_WEEK)
+  def apply(AGENDA: agenda_, DAY: day_, MONTH: month_, WEEK: week_, WORK_WEEK: work_week_): Views = {
+    val __obj = js.Dynamic.literal(AGENDA = AGENDA.asInstanceOf[js.Any], DAY = DAY.asInstanceOf[js.Any], MONTH = MONTH.asInstanceOf[js.Any], WEEK = WEEK.asInstanceOf[js.Any], WORK_WEEK = WORK_WEEK.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Views]
   }

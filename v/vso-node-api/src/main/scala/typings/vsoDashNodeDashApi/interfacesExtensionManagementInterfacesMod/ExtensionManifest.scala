@@ -76,7 +76,7 @@ object ExtensionManifest {
     scopes: js.Array[String],
     serviceInstanceType: String
   ): ExtensionManifest = {
-    val __obj = js.Dynamic.literal(baseUri = baseUri, constraints = constraints, contributionTypes = contributionTypes, contributions = contributions, demands = demands, eventCallbacks = eventCallbacks, fallbackBaseUri = fallbackBaseUri, language = language, licensing = licensing, manifestVersion = manifestVersion, restrictedTo = restrictedTo, scopes = scopes, serviceInstanceType = serviceInstanceType)
+    val __obj = js.Dynamic.literal(baseUri = baseUri.asInstanceOf[js.Any], constraints = constraints.asInstanceOf[js.Any], contributionTypes = contributionTypes.asInstanceOf[js.Any], contributions = contributions.asInstanceOf[js.Any], demands = demands.asInstanceOf[js.Any], eventCallbacks = eventCallbacks.asInstanceOf[js.Any], fallbackBaseUri = fallbackBaseUri.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], licensing = licensing.asInstanceOf[js.Any], manifestVersion = manifestVersion.asInstanceOf[js.Any], restrictedTo = restrictedTo.asInstanceOf[js.Any], scopes = scopes.asInstanceOf[js.Any], serviceInstanceType = serviceInstanceType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExtensionManifest]
   }

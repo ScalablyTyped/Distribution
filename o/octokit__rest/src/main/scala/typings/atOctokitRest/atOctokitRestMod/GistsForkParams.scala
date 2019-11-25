@@ -11,7 +11,7 @@ trait GistsForkParams extends js.Object {
 object GistsForkParams {
   @scala.inline
   def apply(gist_id: String): GistsForkParams = {
-    val __obj = js.Dynamic.literal(gist_id = gist_id)
+    val __obj = js.Dynamic.literal(gist_id = gist_id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GistsForkParams]
   }

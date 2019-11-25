@@ -17,8 +17,8 @@ object SuperAgentError {
     response: typings.superagent.superagentMod.Response,
     stack: String = null
   ): SuperAgentError = {
-    val __obj = js.Dynamic.literal(message = message, name = name, response = response)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuperAgentError]
   }
 }

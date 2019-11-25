@@ -18,9 +18,9 @@ object StorageAclOptions {
     maximumExecutionTimeInMs: Int | Double = null,
     timeoutIntervalInMs: Int | Double = null
   ): StorageAclOptions = {
-    val __obj = js.Dynamic.literal(signedIdentifiers = signedIdentifiers)
-    if (leaseId != null) __obj.updateDynamic("leaseId")(leaseId)
-    if (locationMode != null) __obj.updateDynamic("locationMode")(locationMode)
+    val __obj = js.Dynamic.literal(signedIdentifiers = signedIdentifiers.asInstanceOf[js.Any])
+    if (leaseId != null) __obj.updateDynamic("leaseId")(leaseId.asInstanceOf[js.Any])
+    if (locationMode != null) __obj.updateDynamic("locationMode")(locationMode.asInstanceOf[js.Any])
     if (maximumExecutionTimeInMs != null) __obj.updateDynamic("maximumExecutionTimeInMs")(maximumExecutionTimeInMs.asInstanceOf[js.Any])
     if (timeoutIntervalInMs != null) __obj.updateDynamic("timeoutIntervalInMs")(timeoutIntervalInMs.asInstanceOf[js.Any])
     __obj.asInstanceOf[StorageAclOptions]

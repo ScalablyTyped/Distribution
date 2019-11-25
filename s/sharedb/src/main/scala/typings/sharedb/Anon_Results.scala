@@ -13,7 +13,7 @@ object Anon_Results {
   @scala.inline
   def apply(results: js.Array[Query] = null): Anon_Results = {
     val __obj = js.Dynamic.literal()
-    if (results != null) __obj.updateDynamic("results")(results)
+    if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Results]
   }
 }

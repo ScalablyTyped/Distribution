@@ -79,7 +79,7 @@ object CSVLayerCapabilitiesOperations {
     supportsUpdate: Boolean,
     supportsValidateSql: Boolean
   ): CSVLayerCapabilitiesOperations = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), supportsAdd = supportsAdd, supportsCalculate = supportsCalculate, supportsDelete = supportsDelete, supportsEditing = supportsEditing, supportsQuery = supportsQuery, supportsQueryAttachments = supportsQueryAttachments, supportsResizeAttachments = supportsResizeAttachments, supportsUpdate = supportsUpdate, supportsValidateSql = supportsValidateSql)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), supportsAdd = supportsAdd.asInstanceOf[js.Any], supportsCalculate = supportsCalculate.asInstanceOf[js.Any], supportsDelete = supportsDelete.asInstanceOf[js.Any], supportsEditing = supportsEditing.asInstanceOf[js.Any], supportsQuery = supportsQuery.asInstanceOf[js.Any], supportsQueryAttachments = supportsQueryAttachments.asInstanceOf[js.Any], supportsResizeAttachments = supportsResizeAttachments.asInstanceOf[js.Any], supportsUpdate = supportsUpdate.asInstanceOf[js.Any], supportsValidateSql = supportsValidateSql.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CSVLayerCapabilitiesOperations]
   }

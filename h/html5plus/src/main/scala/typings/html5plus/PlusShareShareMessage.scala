@@ -130,17 +130,17 @@ object PlusShareShareMessage {
     `type`: String = null
   ): PlusShareShareMessage = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (extra != null) __obj.updateDynamic("extra")(extra)
-    if (geo != null) __obj.updateDynamic("geo")(geo)
-    if (href != null) __obj.updateDynamic("href")(href)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
+    if (geo != null) __obj.updateDynamic("geo")(geo.asInstanceOf[js.Any])
+    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
     if (interface != null) __obj.updateDynamic("interface")(interface.asInstanceOf[js.Any])
-    if (media != null) __obj.updateDynamic("media")(media)
-    if (miniProgram != null) __obj.updateDynamic("miniProgram")(miniProgram)
-    if (pictures != null) __obj.updateDynamic("pictures")(pictures)
-    if (thumbs != null) __obj.updateDynamic("thumbs")(thumbs)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (media != null) __obj.updateDynamic("media")(media.asInstanceOf[js.Any])
+    if (miniProgram != null) __obj.updateDynamic("miniProgram")(miniProgram.asInstanceOf[js.Any])
+    if (pictures != null) __obj.updateDynamic("pictures")(pictures.asInstanceOf[js.Any])
+    if (thumbs != null) __obj.updateDynamic("thumbs")(thumbs.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusShareShareMessage]
   }
 }

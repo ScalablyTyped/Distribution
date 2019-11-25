@@ -20,7 +20,7 @@ object Anon_Message {
     val __obj = js.Dynamic.literal()
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     if (onSuccess != null) __obj.updateDynamic("onSuccess")(js.Any.fromFunction0(onSuccess))
-    if (transferReason != null) __obj.updateDynamic("transferReason")(transferReason)
+    if (transferReason != null) __obj.updateDynamic("transferReason")(transferReason.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Message]
   }
 }

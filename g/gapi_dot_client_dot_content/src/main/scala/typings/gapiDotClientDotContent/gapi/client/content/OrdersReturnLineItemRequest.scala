@@ -27,11 +27,11 @@ object OrdersReturnLineItemRequest {
     reasonText: String = null
   ): OrdersReturnLineItemRequest = {
     val __obj = js.Dynamic.literal()
-    if (lineItemId != null) __obj.updateDynamic("lineItemId")(lineItemId)
-    if (operationId != null) __obj.updateDynamic("operationId")(operationId)
+    if (lineItemId != null) __obj.updateDynamic("lineItemId")(lineItemId.asInstanceOf[js.Any])
+    if (operationId != null) __obj.updateDynamic("operationId")(operationId.asInstanceOf[js.Any])
     if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
-    if (reason != null) __obj.updateDynamic("reason")(reason)
-    if (reasonText != null) __obj.updateDynamic("reasonText")(reasonText)
+    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
+    if (reasonText != null) __obj.updateDynamic("reasonText")(reasonText.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrdersReturnLineItemRequest]
   }
 }

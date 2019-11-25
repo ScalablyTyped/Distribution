@@ -18,11 +18,11 @@ object IDropdownConfigNgOptions {
     updateOn: String = null
   ): IDropdownConfigNgOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowInvalid)) __obj.updateDynamic("allowInvalid")(allowInvalid)
+    if (!js.isUndefined(allowInvalid)) __obj.updateDynamic("allowInvalid")(allowInvalid.asInstanceOf[js.Any])
     if (debounce != null) __obj.updateDynamic("debounce")(debounce.asInstanceOf[js.Any])
-    if (!js.isUndefined(getterSetter)) __obj.updateDynamic("getterSetter")(getterSetter)
-    if (timezone != null) __obj.updateDynamic("timezone")(timezone)
-    if (updateOn != null) __obj.updateDynamic("updateOn")(updateOn)
+    if (!js.isUndefined(getterSetter)) __obj.updateDynamic("getterSetter")(getterSetter.asInstanceOf[js.Any])
+    if (timezone != null) __obj.updateDynamic("timezone")(timezone.asInstanceOf[js.Any])
+    if (updateOn != null) __obj.updateDynamic("updateOn")(updateOn.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDropdownConfigNgOptions]
   }
 }

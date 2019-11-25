@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait ButtonPriority extends js.Object
 
+object ButtonPriority {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def primary: typings.wixDashStyleDashReact.wixDashStyleDashReactStrings.primary = this.cast("primary")
+  @scala.inline
+  def secondary: typings.wixDashStyleDashReact.wixDashStyleDashReactStrings.secondary = this.cast("secondary")
+}
+

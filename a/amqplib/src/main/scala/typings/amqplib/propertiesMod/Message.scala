@@ -14,7 +14,7 @@ trait Message extends js.Object {
 object Message {
   @scala.inline
   def apply(content: Buffer, fields: MessageFields, properties: MessageProperties): Message = {
-    val __obj = js.Dynamic.literal(content = content, fields = fields, properties = properties)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Message]
   }

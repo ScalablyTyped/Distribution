@@ -11,7 +11,7 @@ trait GridsterUi extends js.Object {
 object GridsterUi {
   @scala.inline
   def apply(position: Anon_Left): GridsterUi = {
-    val __obj = js.Dynamic.literal(position = position)
+    val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GridsterUi]
   }

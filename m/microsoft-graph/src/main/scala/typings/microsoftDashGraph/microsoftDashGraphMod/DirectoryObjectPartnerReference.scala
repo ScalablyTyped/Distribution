@@ -26,12 +26,12 @@ object DirectoryObjectPartnerReference {
     objectType: String = null
   ): DirectoryObjectPartnerReference = {
     val __obj = js.Dynamic.literal()
-    if (deletedDateTime != null) __obj.updateDynamic("deletedDateTime")(deletedDateTime)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (externalPartnerTenantId != null) __obj.updateDynamic("externalPartnerTenantId")(externalPartnerTenantId)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (objectType != null) __obj.updateDynamic("objectType")(objectType)
+    if (deletedDateTime != null) __obj.updateDynamic("deletedDateTime")(deletedDateTime.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (externalPartnerTenantId != null) __obj.updateDynamic("externalPartnerTenantId")(externalPartnerTenantId.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (objectType != null) __obj.updateDynamic("objectType")(objectType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectoryObjectPartnerReference]
   }
 }

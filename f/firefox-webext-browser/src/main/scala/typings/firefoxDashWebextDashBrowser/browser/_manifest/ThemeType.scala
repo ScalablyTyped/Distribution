@@ -21,9 +21,9 @@ object ThemeType {
     properties: Anon_Additionalbackgroundsalignment = null
   ): ThemeType = {
     val __obj = js.Dynamic.literal()
-    if (colors != null) __obj.updateDynamic("colors")(colors)
-    if (images != null) __obj.updateDynamic("images")(images)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
+    if (images != null) __obj.updateDynamic("images")(images.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThemeType]
   }
 }

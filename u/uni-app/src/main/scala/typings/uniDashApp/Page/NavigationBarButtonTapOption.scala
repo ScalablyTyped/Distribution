@@ -14,7 +14,7 @@ trait NavigationBarButtonTapOption extends js.Object {
 object NavigationBarButtonTapOption {
   @scala.inline
   def apply(index: String): NavigationBarButtonTapOption = {
-    val __obj = js.Dynamic.literal(index = index)
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NavigationBarButtonTapOption]
   }

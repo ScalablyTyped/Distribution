@@ -30,8 +30,8 @@ object ReposUploadReleaseAssetParams {
     url: String,
     label: String = null
   ): ReposUploadReleaseAssetParams = {
-    val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], headers = headers, name = name, url = url)
-    if (label != null) __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposUploadReleaseAssetParams]
   }
 }

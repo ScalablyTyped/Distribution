@@ -13,7 +13,7 @@ trait Anon_ItemsReturnValueArrayCharacterGrouping extends js.Object {
 object Anon_ItemsReturnValueArrayCharacterGrouping {
   @scala.inline
   def apply(items: js.Array[CharacterGrouping], returnValue: Double): Anon_ItemsReturnValueArrayCharacterGrouping = {
-    val __obj = js.Dynamic.literal(items = items, returnValue = returnValue)
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ItemsReturnValueArrayCharacterGrouping]
   }

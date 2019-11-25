@@ -23,7 +23,7 @@ trait Matrix3x2 extends js.Object {
 object Matrix3x2 {
   @scala.inline
   def apply(m11: Double, m12: Double, m21: Double, m22: Double, m31: Double, m32: Double): Matrix3x2 = {
-    val __obj = js.Dynamic.literal(m11 = m11, m12 = m12, m21 = m21, m22 = m22, m31 = m31, m32 = m32)
+    val __obj = js.Dynamic.literal(m11 = m11.asInstanceOf[js.Any], m12 = m12.asInstanceOf[js.Any], m21 = m21.asInstanceOf[js.Any], m22 = m22.asInstanceOf[js.Any], m31 = m31.asInstanceOf[js.Any], m32 = m32.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Matrix3x2]
   }

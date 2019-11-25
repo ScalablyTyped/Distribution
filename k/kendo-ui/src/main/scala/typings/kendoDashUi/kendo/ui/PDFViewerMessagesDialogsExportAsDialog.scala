@@ -24,12 +24,12 @@ object PDFViewerMessagesDialogsExportAsDialog {
     title: String = null
   ): PDFViewerMessagesDialogsExportAsDialog = {
     val __obj = js.Dynamic.literal()
-    if (defaultFileName != null) __obj.updateDynamic("defaultFileName")(defaultFileName)
-    if (labels != null) __obj.updateDynamic("labels")(labels)
-    if (pdf != null) __obj.updateDynamic("pdf")(pdf)
-    if (png != null) __obj.updateDynamic("png")(png)
-    if (svg != null) __obj.updateDynamic("svg")(svg)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (defaultFileName != null) __obj.updateDynamic("defaultFileName")(defaultFileName.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (pdf != null) __obj.updateDynamic("pdf")(pdf.asInstanceOf[js.Any])
+    if (png != null) __obj.updateDynamic("png")(png.asInstanceOf[js.Any])
+    if (svg != null) __obj.updateDynamic("svg")(svg.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[PDFViewerMessagesDialogsExportAsDialog]
   }
 }

@@ -1,6 +1,5 @@
 package typings.extjs.Ext.form
 
-import typings.extjs.Ext.Array
 import typings.extjs.Ext.IComponent
 import typings.extjs.Ext.panel.ITool
 import scala.scalajs.js
@@ -79,67 +78,49 @@ object IFieldSet {
   @scala.inline
   def apply(
     IContainer: typings.extjs.Ext.container.IContainer = null,
-    autoEl: js.Any = null,
-    baseCls: java.lang.String = null,
     checkboxCmp: typings.extjs.Ext.form.field.ICheckbox = null,
     checkboxName: java.lang.String = null,
     checkboxToggle: js.UndefOr[Boolean] = js.undefined,
     collapse: () => IFieldSet = null,
     collapsed: js.UndefOr[Boolean] = js.undefined,
     collapsible: js.UndefOr[Boolean] = js.undefined,
-    componentLayout: js.Any = null,
     createCheckboxCmp: () => IComponent = null,
     createTitleCmp: () => IComponent = null,
     createToggleCmp: () => IComponent = null,
     expand: () => IFieldSet = null,
     fieldDefaults: js.Any = null,
-    getRefItems: /* deep */ js.UndefOr[js.Any] => Unit = null,
-    getState: () => _ = null,
     initFieldAncestor: () => Unit = null,
-    layout: js.Any = null,
     legend: IComponent = null,
-    maskOnDisable: js.UndefOr[Boolean] = js.undefined,
-    onFieldErrorChange: (/* field */ js.UndefOr[ILabelable], /* error */ js.UndefOr[java.lang.String]) => Unit = null,
-    onFieldValidityChange: (/* field */ js.UndefOr[typings.extjs.Ext.form.field.IField], /* valid */ js.UndefOr[Boolean]) => Unit = null,
-    renderTpl: js.Any = null,
+    onFieldErrorChange: (js.UndefOr[ILabelable], js.UndefOr[java.lang.String]) => Unit = null,
+    onFieldValidityChange: (js.UndefOr[typings.extjs.Ext.form.field.IField], js.UndefOr[Boolean]) => Unit = null,
     setTitle: /* title */ js.UndefOr[java.lang.String] => IFieldSet = null,
-    stateEvents: Array = null,
     title: java.lang.String = null,
     toggle: () => Unit = null,
     toggleCmp: ITool = null,
     toggleOnTitleClick: js.UndefOr[Boolean] = js.undefined
   ): IFieldSet = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IContainer)
-    if (autoEl != null) __obj.updateDynamic("autoEl")(autoEl)
-    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
-    if (checkboxCmp != null) __obj.updateDynamic("checkboxCmp")(checkboxCmp)
-    if (checkboxName != null) __obj.updateDynamic("checkboxName")(checkboxName)
-    if (!js.isUndefined(checkboxToggle)) __obj.updateDynamic("checkboxToggle")(checkboxToggle)
+    if (IContainer != null) js.Dynamic.global.Object.assign(__obj, IContainer)
+    if (checkboxCmp != null) __obj.updateDynamic("checkboxCmp")(checkboxCmp.asInstanceOf[js.Any])
+    if (checkboxName != null) __obj.updateDynamic("checkboxName")(checkboxName.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkboxToggle)) __obj.updateDynamic("checkboxToggle")(checkboxToggle.asInstanceOf[js.Any])
     if (collapse != null) __obj.updateDynamic("collapse")(js.Any.fromFunction0(collapse))
-    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed)
-    if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible)
-    if (componentLayout != null) __obj.updateDynamic("componentLayout")(componentLayout)
+    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible.asInstanceOf[js.Any])
     if (createCheckboxCmp != null) __obj.updateDynamic("createCheckboxCmp")(js.Any.fromFunction0(createCheckboxCmp))
     if (createTitleCmp != null) __obj.updateDynamic("createTitleCmp")(js.Any.fromFunction0(createTitleCmp))
     if (createToggleCmp != null) __obj.updateDynamic("createToggleCmp")(js.Any.fromFunction0(createToggleCmp))
     if (expand != null) __obj.updateDynamic("expand")(js.Any.fromFunction0(expand))
-    if (fieldDefaults != null) __obj.updateDynamic("fieldDefaults")(fieldDefaults)
-    if (getRefItems != null) __obj.updateDynamic("getRefItems")(js.Any.fromFunction1(getRefItems))
-    if (getState != null) __obj.updateDynamic("getState")(js.Any.fromFunction0(getState))
+    if (fieldDefaults != null) __obj.updateDynamic("fieldDefaults")(fieldDefaults.asInstanceOf[js.Any])
     if (initFieldAncestor != null) __obj.updateDynamic("initFieldAncestor")(js.Any.fromFunction0(initFieldAncestor))
-    if (layout != null) __obj.updateDynamic("layout")(layout)
-    if (legend != null) __obj.updateDynamic("legend")(legend)
-    if (!js.isUndefined(maskOnDisable)) __obj.updateDynamic("maskOnDisable")(maskOnDisable)
+    if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
     if (onFieldErrorChange != null) __obj.updateDynamic("onFieldErrorChange")(js.Any.fromFunction2(onFieldErrorChange))
     if (onFieldValidityChange != null) __obj.updateDynamic("onFieldValidityChange")(js.Any.fromFunction2(onFieldValidityChange))
-    if (renderTpl != null) __obj.updateDynamic("renderTpl")(renderTpl)
     if (setTitle != null) __obj.updateDynamic("setTitle")(js.Any.fromFunction1(setTitle))
-    if (stateEvents != null) __obj.updateDynamic("stateEvents")(stateEvents)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (toggle != null) __obj.updateDynamic("toggle")(js.Any.fromFunction0(toggle))
-    if (toggleCmp != null) __obj.updateDynamic("toggleCmp")(toggleCmp)
-    if (!js.isUndefined(toggleOnTitleClick)) __obj.updateDynamic("toggleOnTitleClick")(toggleOnTitleClick)
+    if (toggleCmp != null) __obj.updateDynamic("toggleCmp")(toggleCmp.asInstanceOf[js.Any])
+    if (!js.isUndefined(toggleOnTitleClick)) __obj.updateDynamic("toggleOnTitleClick")(toggleOnTitleClick.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFieldSet]
   }
 }

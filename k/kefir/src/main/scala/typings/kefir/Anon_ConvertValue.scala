@@ -12,7 +12,7 @@ trait Anon_ConvertValue[U] extends js.Object {
 object Anon_ConvertValue {
   @scala.inline
   def apply[U](convert: Boolean, value: U): Anon_ConvertValue[U] = {
-    val __obj = js.Dynamic.literal(convert = convert, value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(convert = convert.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ConvertValue[U]]
   }

@@ -14,9 +14,9 @@ object Anon_BorderHeading {
   @scala.inline
   def apply(border: Anon_ColorSideColorType = null, heading: Anon_Level = null, icons: Anon_Collapse = null): Anon_BorderHeading = {
     val __obj = js.Dynamic.literal()
-    if (border != null) __obj.updateDynamic("border")(border)
-    if (heading != null) __obj.updateDynamic("heading")(heading)
-    if (icons != null) __obj.updateDynamic("icons")(icons)
+    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
+    if (heading != null) __obj.updateDynamic("heading")(heading.asInstanceOf[js.Any])
+    if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BorderHeading]
   }
 }

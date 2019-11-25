@@ -21,7 +21,7 @@ trait SocketPermission extends Permission {
 object SocketPermission {
   @scala.inline
   def apply(socket: js.Array[String]): SocketPermission = {
-    val __obj = js.Dynamic.literal(socket = socket)
+    val __obj = js.Dynamic.literal(socket = socket.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SocketPermission]
   }

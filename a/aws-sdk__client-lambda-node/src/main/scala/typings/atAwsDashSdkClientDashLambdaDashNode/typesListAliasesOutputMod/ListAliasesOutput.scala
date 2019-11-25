@@ -30,9 +30,9 @@ object ListAliasesOutput {
     Aliases: js.Array[_UnmarshalledAliasConfiguration] = null,
     NextMarker: String = null
   ): ListAliasesOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (Aliases != null) __obj.updateDynamic("Aliases")(Aliases)
-    if (NextMarker != null) __obj.updateDynamic("NextMarker")(NextMarker)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (Aliases != null) __obj.updateDynamic("Aliases")(Aliases.asInstanceOf[js.Any])
+    if (NextMarker != null) __obj.updateDynamic("NextMarker")(NextMarker.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAliasesOutput]
   }
 }

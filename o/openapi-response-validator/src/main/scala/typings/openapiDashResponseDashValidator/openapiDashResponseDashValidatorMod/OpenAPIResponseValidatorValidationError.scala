@@ -12,8 +12,8 @@ trait OpenAPIResponseValidatorValidationError extends js.Object {
 object OpenAPIResponseValidatorValidationError {
   @scala.inline
   def apply(message: String, errors: js.Array[_] = null): OpenAPIResponseValidatorValidationError = {
-    val __obj = js.Dynamic.literal(message = message)
-    if (errors != null) __obj.updateDynamic("errors")(errors)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenAPIResponseValidatorValidationError]
   }
 }

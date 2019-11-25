@@ -30,9 +30,9 @@ trait DmgContent extends js.Object {
 object DmgContent {
   @scala.inline
   def apply(x: Double, y: Double, name: String = null, path: String = null, `type`: link | file | dir = null): DmgContent = {
-    val __obj = js.Dynamic.literal(x = x, y = y)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (path != null) __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DmgContent]
   }

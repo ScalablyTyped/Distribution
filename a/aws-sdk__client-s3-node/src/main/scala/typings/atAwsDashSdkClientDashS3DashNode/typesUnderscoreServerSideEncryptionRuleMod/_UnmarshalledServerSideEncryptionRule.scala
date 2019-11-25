@@ -17,7 +17,7 @@ object _UnmarshalledServerSideEncryptionRule {
   @scala.inline
   def apply(ApplyServerSideEncryptionByDefault: _UnmarshalledServerSideEncryptionByDefault = null): _UnmarshalledServerSideEncryptionRule = {
     val __obj = js.Dynamic.literal()
-    if (ApplyServerSideEncryptionByDefault != null) __obj.updateDynamic("ApplyServerSideEncryptionByDefault")(ApplyServerSideEncryptionByDefault)
+    if (ApplyServerSideEncryptionByDefault != null) __obj.updateDynamic("ApplyServerSideEncryptionByDefault")(ApplyServerSideEncryptionByDefault.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledServerSideEncryptionRule]
   }
 }

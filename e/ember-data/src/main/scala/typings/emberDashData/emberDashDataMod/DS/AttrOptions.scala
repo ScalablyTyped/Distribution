@@ -13,7 +13,7 @@ object AttrOptions {
   @scala.inline
   def apply[T](allowNull: js.UndefOr[Boolean] = js.undefined, defaultValue: T | js.Function0[T] = null): AttrOptions[T] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowNull)) __obj.updateDynamic("allowNull")(allowNull)
+    if (!js.isUndefined(allowNull)) __obj.updateDynamic("allowNull")(allowNull.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttrOptions[T]]
   }

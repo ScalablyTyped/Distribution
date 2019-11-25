@@ -18,7 +18,7 @@ trait Application[ServiceTypes] extends EventEmitter {
   def hooks(hooks: Partial[HooksObject]): this.type = js.native
   def service(location: String): Service[_] = js.native
   def service[L /* <: String */](location: L): Service[
-    /* import warning: ImportType.apply Failed type conversion: ServiceTypes[L] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: ServiceTypes[L] */ js.Any
   ] = js.native
   def set(name: String, value: js.Any): this.type = js.native
   def setup(): this.type = js.native

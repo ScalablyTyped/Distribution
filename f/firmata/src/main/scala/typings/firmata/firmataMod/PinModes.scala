@@ -39,7 +39,7 @@ object PinModes {
     STEPPER: PIN_MODE,
     UNKOWN: PIN_MODE
   ): PinModes = {
-    val __obj = js.Dynamic.literal(ANALOG = ANALOG, I2C = I2C, IGNORE = IGNORE, INPUT = INPUT, ONEWIRE = ONEWIRE, OUTPUT = OUTPUT, PING_READ = PING_READ, PULLUP = PULLUP, PWM = PWM, SERIAL = SERIAL, SERVO = SERVO, SHIFT = SHIFT, STEPPER = STEPPER, UNKOWN = UNKOWN)
+    val __obj = js.Dynamic.literal(ANALOG = ANALOG.asInstanceOf[js.Any], I2C = I2C.asInstanceOf[js.Any], IGNORE = IGNORE.asInstanceOf[js.Any], INPUT = INPUT.asInstanceOf[js.Any], ONEWIRE = ONEWIRE.asInstanceOf[js.Any], OUTPUT = OUTPUT.asInstanceOf[js.Any], PING_READ = PING_READ.asInstanceOf[js.Any], PULLUP = PULLUP.asInstanceOf[js.Any], PWM = PWM.asInstanceOf[js.Any], SERIAL = SERIAL.asInstanceOf[js.Any], SERVO = SERVO.asInstanceOf[js.Any], SHIFT = SHIFT.asInstanceOf[js.Any], STEPPER = STEPPER.asInstanceOf[js.Any], UNKOWN = UNKOWN.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PinModes]
   }

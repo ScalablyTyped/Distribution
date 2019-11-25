@@ -23,8 +23,8 @@ trait defaultPolygon extends js.Object {
 object defaultPolygon {
   @scala.inline
   def apply(path: js.Array[_], `type`: String): defaultPolygon = {
-    val __obj = js.Dynamic.literal(path = path)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[defaultPolygon]
   }
 }

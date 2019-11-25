@@ -12,7 +12,7 @@ object SegmentDefinition {
   @scala.inline
   def apply(segmentFilters: js.Array[SegmentFilter] = null): SegmentDefinition = {
     val __obj = js.Dynamic.literal()
-    if (segmentFilters != null) __obj.updateDynamic("segmentFilters")(segmentFilters)
+    if (segmentFilters != null) __obj.updateDynamic("segmentFilters")(segmentFilters.asInstanceOf[js.Any])
     __obj.asInstanceOf[SegmentDefinition]
   }
 }

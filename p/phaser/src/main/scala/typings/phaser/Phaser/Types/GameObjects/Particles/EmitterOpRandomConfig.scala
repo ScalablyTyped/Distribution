@@ -17,7 +17,7 @@ trait EmitterOpRandomConfig extends _EmitterOpOnEmitType {
 object EmitterOpRandomConfig {
   @scala.inline
   def apply(random: js.Array[Double]): EmitterOpRandomConfig = {
-    val __obj = js.Dynamic.literal(random = random)
+    val __obj = js.Dynamic.literal(random = random.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EmitterOpRandomConfig]
   }

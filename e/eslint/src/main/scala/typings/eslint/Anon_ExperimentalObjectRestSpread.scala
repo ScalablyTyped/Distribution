@@ -23,11 +23,11 @@ object Anon_ExperimentalObjectRestSpread {
     jsx: js.UndefOr[Boolean] = js.undefined
   ): Anon_ExperimentalObjectRestSpread = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(experimentalObjectRestSpread)) __obj.updateDynamic("experimentalObjectRestSpread")(experimentalObjectRestSpread)
-    if (!js.isUndefined(globalReturn)) __obj.updateDynamic("globalReturn")(globalReturn)
-    if (!js.isUndefined(impliedStrict)) __obj.updateDynamic("impliedStrict")(impliedStrict)
-    if (!js.isUndefined(jsx)) __obj.updateDynamic("jsx")(jsx)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(experimentalObjectRestSpread)) __obj.updateDynamic("experimentalObjectRestSpread")(experimentalObjectRestSpread.asInstanceOf[js.Any])
+    if (!js.isUndefined(globalReturn)) __obj.updateDynamic("globalReturn")(globalReturn.asInstanceOf[js.Any])
+    if (!js.isUndefined(impliedStrict)) __obj.updateDynamic("impliedStrict")(impliedStrict.asInstanceOf[js.Any])
+    if (!js.isUndefined(jsx)) __obj.updateDynamic("jsx")(jsx.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ExperimentalObjectRestSpread]
   }
 }

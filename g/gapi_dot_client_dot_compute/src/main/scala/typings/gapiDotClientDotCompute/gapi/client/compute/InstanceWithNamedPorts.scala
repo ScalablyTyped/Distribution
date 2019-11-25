@@ -17,9 +17,9 @@ object InstanceWithNamedPorts {
   @scala.inline
   def apply(instance: String = null, namedPorts: js.Array[NamedPort] = null, status: String = null): InstanceWithNamedPorts = {
     val __obj = js.Dynamic.literal()
-    if (instance != null) __obj.updateDynamic("instance")(instance)
-    if (namedPorts != null) __obj.updateDynamic("namedPorts")(namedPorts)
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (instance != null) __obj.updateDynamic("instance")(instance.asInstanceOf[js.Any])
+    if (namedPorts != null) __obj.updateDynamic("namedPorts")(namedPorts.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceWithNamedPorts]
   }
 }

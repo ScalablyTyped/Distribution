@@ -23,7 +23,7 @@ object Anon_Depth {
     width: Double,
     widthSegments: Double
   ): Anon_Depth = {
-    val __obj = js.Dynamic.literal(depth = depth, depthSegments = depthSegments, height = height, heightSegments = heightSegments, width = width, widthSegments = widthSegments)
+    val __obj = js.Dynamic.literal(depth = depth.asInstanceOf[js.Any], depthSegments = depthSegments.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], heightSegments = heightSegments.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], widthSegments = widthSegments.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Depth]
   }

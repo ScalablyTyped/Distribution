@@ -99,9 +99,6 @@ object IComponent {
   def apply(
     IContainer: IContainer = null,
     autoSize: js.UndefOr[Boolean] = js.undefined,
-    cls: js.Any = null,
-    defaultType: java.lang.String = null,
-    destroy: () => Unit = null,
     fitSurface: js.UndefOr[Boolean] = js.undefined,
     getAutoSize: () => Boolean = null,
     getBackground: () => _ = null,
@@ -113,7 +110,6 @@ object IComponent {
     getSurface: /* id */ js.UndefOr[java.lang.String] => ISurface = null,
     getViewBox: () => Boolean = null,
     gradients: Array = null,
-    initialize: () => Unit = null,
     onPlaceWatermark: () => Unit = null,
     renderFrame: () => Unit = null,
     resizeHandler: js.Any = null,
@@ -128,12 +124,9 @@ object IComponent {
     viewBox: js.UndefOr[Boolean] = js.undefined
   ): IComponent = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IContainer)
-    if (!js.isUndefined(autoSize)) __obj.updateDynamic("autoSize")(autoSize)
-    if (cls != null) __obj.updateDynamic("cls")(cls)
-    if (defaultType != null) __obj.updateDynamic("defaultType")(defaultType)
-    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (!js.isUndefined(fitSurface)) __obj.updateDynamic("fitSurface")(fitSurface)
+    if (IContainer != null) js.Dynamic.global.Object.assign(__obj, IContainer)
+    if (!js.isUndefined(autoSize)) __obj.updateDynamic("autoSize")(autoSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(fitSurface)) __obj.updateDynamic("fitSurface")(fitSurface.asInstanceOf[js.Any])
     if (getAutoSize != null) __obj.updateDynamic("getAutoSize")(js.Any.fromFunction0(getAutoSize))
     if (getBackground != null) __obj.updateDynamic("getBackground")(js.Any.fromFunction0(getBackground))
     if (getCls != null) __obj.updateDynamic("getCls")(js.Any.fromFunction0(getCls))
@@ -143,11 +136,10 @@ object IComponent {
     if (getSprites != null) __obj.updateDynamic("getSprites")(js.Any.fromFunction0(getSprites))
     if (getSurface != null) __obj.updateDynamic("getSurface")(js.Any.fromFunction1(getSurface))
     if (getViewBox != null) __obj.updateDynamic("getViewBox")(js.Any.fromFunction0(getViewBox))
-    if (gradients != null) __obj.updateDynamic("gradients")(gradients)
-    if (initialize != null) __obj.updateDynamic("initialize")(js.Any.fromFunction0(initialize))
+    if (gradients != null) __obj.updateDynamic("gradients")(gradients.asInstanceOf[js.Any])
     if (onPlaceWatermark != null) __obj.updateDynamic("onPlaceWatermark")(js.Any.fromFunction0(onPlaceWatermark))
     if (renderFrame != null) __obj.updateDynamic("renderFrame")(js.Any.fromFunction0(renderFrame))
-    if (resizeHandler != null) __obj.updateDynamic("resizeHandler")(resizeHandler)
+    if (resizeHandler != null) __obj.updateDynamic("resizeHandler")(resizeHandler.asInstanceOf[js.Any])
     if (setAutoSize != null) __obj.updateDynamic("setAutoSize")(js.Any.fromFunction1(setAutoSize))
     if (setBackground != null) __obj.updateDynamic("setBackground")(js.Any.fromFunction1(setBackground))
     if (setCls != null) __obj.updateDynamic("setCls")(js.Any.fromFunction1(setCls))
@@ -156,7 +148,7 @@ object IComponent {
     if (setResizeHandler != null) __obj.updateDynamic("setResizeHandler")(js.Any.fromFunction1(setResizeHandler))
     if (setSprites != null) __obj.updateDynamic("setSprites")(js.Any.fromFunction1(setSprites))
     if (setViewBox != null) __obj.updateDynamic("setViewBox")(js.Any.fromFunction1(setViewBox))
-    if (!js.isUndefined(viewBox)) __obj.updateDynamic("viewBox")(viewBox)
+    if (!js.isUndefined(viewBox)) __obj.updateDynamic("viewBox")(viewBox.asInstanceOf[js.Any])
     __obj.asInstanceOf[IComponent]
   }
 }

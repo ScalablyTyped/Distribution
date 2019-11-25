@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("transducers-js", "KeepIndexed")
 @js.native
-class KeepIndexed[TResult, TInput] protected () extends Transformer[TResult, TInput] {
+class KeepIndexed[TResult, TInput] protected () extends CompletingTransformer[TResult, TResult, TInput] {
   def this(f: js.Function2[/* i */ Double, /* x */ TInput, _], xf: Transformer[TResult, TInput]) = this()
   /* CompleteClass */
   override def `@@transducer/init`(): TResult | Unit = js.native

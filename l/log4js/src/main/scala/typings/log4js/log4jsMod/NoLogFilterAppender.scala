@@ -18,8 +18,8 @@ trait NoLogFilterAppender extends Appender {
 object NoLogFilterAppender {
   @scala.inline
   def apply(appender: String, exclude: String | js.Array[String], `type`: noLogFilter): NoLogFilterAppender = {
-    val __obj = js.Dynamic.literal(appender = appender, exclude = exclude.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(appender = appender.asInstanceOf[js.Any], exclude = exclude.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NoLogFilterAppender]
   }
 }

@@ -19,7 +19,7 @@ object ConnectedCallbackArgs {
   @scala.inline
   def apply(socket: TCP = null): ConnectedCallbackArgs = {
     val __obj = js.Dynamic.literal()
-    if (socket != null) __obj.updateDynamic("socket")(socket)
+    if (socket != null) __obj.updateDynamic("socket")(socket.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectedCallbackArgs]
   }
 }

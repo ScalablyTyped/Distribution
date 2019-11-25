@@ -52,11 +52,11 @@ object Anon_BoundingSphere {
     encodedNormals: Uint8Array = null,
     waterMask: Uint8Array = null
   ): Anon_BoundingSphere = {
-    val __obj = js.Dynamic.literal(boundingSphere = boundingSphere, eastIndices = eastIndices, eastSkirtHeight = eastSkirtHeight, horizonOcclusionPoint = horizonOcclusionPoint, indices = indices.asInstanceOf[js.Any], maximumHeight = maximumHeight, minimumHeight = minimumHeight, northIndices = northIndices, northSkirtHeight = northSkirtHeight, quantizedVertices = quantizedVertices, southIndices = southIndices, southSkirtHeight = southSkirtHeight, westIndices = westIndices, westSkirtHeight = westSkirtHeight)
+    val __obj = js.Dynamic.literal(boundingSphere = boundingSphere.asInstanceOf[js.Any], eastIndices = eastIndices.asInstanceOf[js.Any], eastSkirtHeight = eastSkirtHeight.asInstanceOf[js.Any], horizonOcclusionPoint = horizonOcclusionPoint.asInstanceOf[js.Any], indices = indices.asInstanceOf[js.Any], maximumHeight = maximumHeight.asInstanceOf[js.Any], minimumHeight = minimumHeight.asInstanceOf[js.Any], northIndices = northIndices.asInstanceOf[js.Any], northSkirtHeight = northSkirtHeight.asInstanceOf[js.Any], quantizedVertices = quantizedVertices.asInstanceOf[js.Any], southIndices = southIndices.asInstanceOf[js.Any], southSkirtHeight = southSkirtHeight.asInstanceOf[js.Any], westIndices = westIndices.asInstanceOf[js.Any], westSkirtHeight = westSkirtHeight.asInstanceOf[js.Any])
     if (childTileMask != null) __obj.updateDynamic("childTileMask")(childTileMask.asInstanceOf[js.Any])
-    if (!js.isUndefined(createdByUpsampling)) __obj.updateDynamic("createdByUpsampling")(createdByUpsampling)
-    if (encodedNormals != null) __obj.updateDynamic("encodedNormals")(encodedNormals)
-    if (waterMask != null) __obj.updateDynamic("waterMask")(waterMask)
+    if (!js.isUndefined(createdByUpsampling)) __obj.updateDynamic("createdByUpsampling")(createdByUpsampling.asInstanceOf[js.Any])
+    if (encodedNormals != null) __obj.updateDynamic("encodedNormals")(encodedNormals.asInstanceOf[js.Any])
+    if (waterMask != null) __obj.updateDynamic("waterMask")(waterMask.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BoundingSphere]
   }
 }

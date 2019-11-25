@@ -14,8 +14,8 @@ trait ColumnGroupOpenedEvent extends AgGridEvent {
 object ColumnGroupOpenedEvent {
   @scala.inline
   def apply(api: GridApi, columnApi: ColumnApi, columnGroup: OriginalColumnGroup, `type`: String): ColumnGroupOpenedEvent = {
-    val __obj = js.Dynamic.literal(api = api, columnApi = columnApi, columnGroup = columnGroup)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], columnApi = columnApi.asInstanceOf[js.Any], columnGroup = columnGroup.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnGroupOpenedEvent]
   }
 }

@@ -13,7 +13,7 @@ trait Anon_ValueSignalValue extends _Update {
 object Anon_ValueSignalValue {
   @scala.inline
   def apply(value: SignalValue): Anon_ValueSignalValue = {
-    val __obj = js.Dynamic.literal(value = value)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ValueSignalValue]
   }

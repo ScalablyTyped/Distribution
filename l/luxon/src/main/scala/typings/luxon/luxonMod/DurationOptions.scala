@@ -18,9 +18,9 @@ object DurationOptions {
     numberingSystem: NumberingSystem = null
   ): DurationOptions = {
     val __obj = js.Dynamic.literal()
-    if (conversionAccuracy != null) __obj.updateDynamic("conversionAccuracy")(conversionAccuracy)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (numberingSystem != null) __obj.updateDynamic("numberingSystem")(numberingSystem)
+    if (conversionAccuracy != null) __obj.updateDynamic("conversionAccuracy")(conversionAccuracy.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
+    if (numberingSystem != null) __obj.updateDynamic("numberingSystem")(numberingSystem.asInstanceOf[js.Any])
     __obj.asInstanceOf[DurationOptions]
   }
 }

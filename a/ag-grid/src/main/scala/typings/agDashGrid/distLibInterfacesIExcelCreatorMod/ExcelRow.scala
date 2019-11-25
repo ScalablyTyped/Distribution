@@ -11,7 +11,7 @@ trait ExcelRow extends js.Object {
 object ExcelRow {
   @scala.inline
   def apply(cells: js.Array[ExcelCell]): ExcelRow = {
-    val __obj = js.Dynamic.literal(cells = cells)
+    val __obj = js.Dynamic.literal(cells = cells.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExcelRow]
   }

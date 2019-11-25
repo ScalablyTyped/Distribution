@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-addons-css-transition-group"
-version := "15.0-dt-20190322Z-23d8ec"
+version := "15.0-dt-20190322Z-62574d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

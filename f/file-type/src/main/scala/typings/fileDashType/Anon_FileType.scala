@@ -13,7 +13,7 @@ object Anon_FileType {
   @scala.inline
   def apply(fileType: FileTypeResult = null): Anon_FileType = {
     val __obj = js.Dynamic.literal()
-    if (fileType != null) __obj.updateDynamic("fileType")(fileType)
+    if (fileType != null) __obj.updateDynamic("fileType")(fileType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FileType]
   }
 }

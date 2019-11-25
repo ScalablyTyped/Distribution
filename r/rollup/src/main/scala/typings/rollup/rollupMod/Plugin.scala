@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 object Plugin {
   @scala.inline
   def apply(name: String): Plugin = {
-    val __obj = js.Dynamic.literal(name = name)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Plugin]
   }

@@ -11,7 +11,7 @@ trait CreateInfo extends js.Object {
 object CreateInfo {
   @scala.inline
   def apply(socketId: Double): CreateInfo = {
-    val __obj = js.Dynamic.literal(socketId = socketId)
+    val __obj = js.Dynamic.literal(socketId = socketId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CreateInfo]
   }

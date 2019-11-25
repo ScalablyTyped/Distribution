@@ -73,18 +73,18 @@ object GenerateOptions {
     verbatim: String = null
   ): GenerateOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(comment)) __obj.updateDynamic("comment")(comment)
-    if (!js.isUndefined(directive)) __obj.updateDynamic("directive")(directive)
-    if (file != null) __obj.updateDynamic("file")(file)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (moz != null) __obj.updateDynamic("moz")(moz)
-    if (parse != null) __obj.updateDynamic("parse")(parse)
-    if (sourceCode != null) __obj.updateDynamic("sourceCode")(sourceCode)
-    if (sourceContent != null) __obj.updateDynamic("sourceContent")(sourceContent)
-    if (sourceMap != null) __obj.updateDynamic("sourceMap")(sourceMap)
-    if (sourceMapRoot != null) __obj.updateDynamic("sourceMapRoot")(sourceMapRoot)
-    if (!js.isUndefined(sourceMapWithCode)) __obj.updateDynamic("sourceMapWithCode")(sourceMapWithCode)
-    if (verbatim != null) __obj.updateDynamic("verbatim")(verbatim)
+    if (!js.isUndefined(comment)) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (!js.isUndefined(directive)) __obj.updateDynamic("directive")(directive.asInstanceOf[js.Any])
+    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (moz != null) __obj.updateDynamic("moz")(moz.asInstanceOf[js.Any])
+    if (parse != null) __obj.updateDynamic("parse")(parse.asInstanceOf[js.Any])
+    if (sourceCode != null) __obj.updateDynamic("sourceCode")(sourceCode.asInstanceOf[js.Any])
+    if (sourceContent != null) __obj.updateDynamic("sourceContent")(sourceContent.asInstanceOf[js.Any])
+    if (sourceMap != null) __obj.updateDynamic("sourceMap")(sourceMap.asInstanceOf[js.Any])
+    if (sourceMapRoot != null) __obj.updateDynamic("sourceMapRoot")(sourceMapRoot.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourceMapWithCode)) __obj.updateDynamic("sourceMapWithCode")(sourceMapWithCode.asInstanceOf[js.Any])
+    if (verbatim != null) __obj.updateDynamic("verbatim")(verbatim.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenerateOptions]
   }
 }

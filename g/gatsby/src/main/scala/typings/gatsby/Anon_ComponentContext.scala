@@ -14,8 +14,8 @@ trait Anon_ComponentContext[TContext] extends js.Object {
 object Anon_ComponentContext {
   @scala.inline
   def apply[TContext](component: String, context: TContext, path: String, matchPath: String = null): Anon_ComponentContext[TContext] = {
-    val __obj = js.Dynamic.literal(component = component, context = context.asInstanceOf[js.Any], path = path)
-    if (matchPath != null) __obj.updateDynamic("matchPath")(matchPath)
+    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    if (matchPath != null) __obj.updateDynamic("matchPath")(matchPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ComponentContext[TContext]]
   }
 }

@@ -24,12 +24,12 @@ object SwaggerDefinition {
     openapi: String = null,
     servers: js.Array[ServerInformation] = null
   ): SwaggerDefinition = {
-    val __obj = js.Dynamic.literal(info = info)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (basePath != null) __obj.updateDynamic("basePath")(basePath)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (openapi != null) __obj.updateDynamic("openapi")(openapi)
-    if (servers != null) __obj.updateDynamic("servers")(servers)
+    val __obj = js.Dynamic.literal(info = info.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (basePath != null) __obj.updateDynamic("basePath")(basePath.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (openapi != null) __obj.updateDynamic("openapi")(openapi.asInstanceOf[js.Any])
+    if (servers != null) __obj.updateDynamic("servers")(servers.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwaggerDefinition]
   }
 }

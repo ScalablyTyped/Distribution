@@ -103,7 +103,7 @@ trait ojTable_[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
   var onEditModeChanged: (js.Function1[/* event */ JetElementCustomEvent[none | rowEdit], _]) | Null = js.native
   var onFirstSelectedRowChanged: (js.Function1[
     /* event */ JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojtable.ojTable<K, D>['firstSelectedRow'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojtable.ojTable<K, D>['firstSelectedRow'] */ js.Any
     ], 
     _
   ]) | Null = js.native
@@ -169,7 +169,7 @@ trait ojTable_[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojtable.ojTable<K, D>['firstSelectedRow'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojtable.ojTable<K, D>['firstSelectedRow'] */ js.Any
       ], 
       _
     ]
@@ -179,7 +179,7 @@ trait ojTable_[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojtable.ojTable<K, D>['firstSelectedRow'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojtable.ojTable<K, D>['firstSelectedRow'] */ js.Any
       ], 
       _
     ],
@@ -502,7 +502,7 @@ trait ojTable_[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
   @JSName("getProperty")
   def getProperty_editMode(property: editMode): none | rowEdit = js.native
   @JSName("getProperty")
-  def getProperty_firstSelectedRow(property: typings.atOracleOraclejet.atOracleOraclejetStrings.firstSelectedRow): /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojtable.ojTable<K, D>['firstSelectedRow'] */ js.Any = js.native
+  def getProperty_firstSelectedRow(property: typings.atOracleOraclejet.atOracleOraclejetStrings.firstSelectedRow): /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojtable.ojTable<K, D>['firstSelectedRow'] */ js.Any = js.native
   @JSName("getProperty")
   def getProperty_horizontalGridVisible(property: horizontalGridVisible): auto | enabled | disabled = js.native
   @JSName("getProperty")

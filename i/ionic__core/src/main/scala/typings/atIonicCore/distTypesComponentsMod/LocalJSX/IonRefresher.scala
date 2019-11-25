@@ -1,6 +1,5 @@
 package typings.atIonicCore.distTypesComponentsMod.LocalJSX
 
-import typings.atIonicCore.distTypesComponentsRefresherRefresherDashInterfaceMod.RefresherEventDetail
 import typings.std.CustomEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,7 +21,14 @@ trait IonRefresher extends js.Object {
   /**
     * Emitted when the user lets go of the content and has pulled down further than the `pullMin` or pulls the content down and exceeds the pullMax. Updates the refresher state to `refreshing`. The `complete()` method should be called when the async operation has completed.
     */
-  var onIonRefresh: js.UndefOr[js.Function1[/* event */ CustomEvent[RefresherEventDetail], Unit]] = js.undefined
+  var onIonRefresh: js.UndefOr[
+    js.Function1[
+      /* event */ CustomEvent[
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RefresherEventDetail */ _
+      ], 
+      Unit
+    ]
+  ] = js.undefined
   /**
     * Emitted when the user begins to start pulling down.
     */
@@ -51,7 +57,9 @@ object IonRefresher {
     closeDuration: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     onIonPull: /* event */ CustomEvent[Unit] => Unit = null,
-    onIonRefresh: /* event */ CustomEvent[RefresherEventDetail] => Unit = null,
+    onIonRefresh: /* event */ CustomEvent[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RefresherEventDetail */ _
+    ] => Unit = null,
     onIonStart: /* event */ CustomEvent[Unit] => Unit = null,
     pullFactor: Int | Double = null,
     pullMax: Int | Double = null,
@@ -59,15 +67,15 @@ object IonRefresher {
     snapbackDuration: String = null
   ): IonRefresher = {
     val __obj = js.Dynamic.literal()
-    if (closeDuration != null) __obj.updateDynamic("closeDuration")(closeDuration)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (closeDuration != null) __obj.updateDynamic("closeDuration")(closeDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (onIonPull != null) __obj.updateDynamic("onIonPull")(js.Any.fromFunction1(onIonPull))
     if (onIonRefresh != null) __obj.updateDynamic("onIonRefresh")(js.Any.fromFunction1(onIonRefresh))
     if (onIonStart != null) __obj.updateDynamic("onIonStart")(js.Any.fromFunction1(onIonStart))
     if (pullFactor != null) __obj.updateDynamic("pullFactor")(pullFactor.asInstanceOf[js.Any])
     if (pullMax != null) __obj.updateDynamic("pullMax")(pullMax.asInstanceOf[js.Any])
     if (pullMin != null) __obj.updateDynamic("pullMin")(pullMin.asInstanceOf[js.Any])
-    if (snapbackDuration != null) __obj.updateDynamic("snapbackDuration")(snapbackDuration)
+    if (snapbackDuration != null) __obj.updateDynamic("snapbackDuration")(snapbackDuration.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonRefresher]
   }
 }

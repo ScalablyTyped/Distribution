@@ -27,10 +27,10 @@ trait Anon_ImageUrl extends js.Object {
 object Anon_ImageUrl {
   @scala.inline
   def apply(openId: String, imageUrl: String = null, imageUrlId: String = null, title: String = null): Anon_ImageUrl = {
-    val __obj = js.Dynamic.literal(openId = openId)
-    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
-    if (imageUrlId != null) __obj.updateDynamic("imageUrlId")(imageUrlId)
-    if (title != null) __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(openId = openId.asInstanceOf[js.Any])
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
+    if (imageUrlId != null) __obj.updateDynamic("imageUrlId")(imageUrlId.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ImageUrl]
   }
 }

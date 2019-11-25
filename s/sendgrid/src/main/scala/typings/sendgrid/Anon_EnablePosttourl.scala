@@ -13,7 +13,7 @@ trait Anon_EnablePosttourl extends js.Object {
 object Anon_EnablePosttourl {
   @scala.inline
   def apply(enable: Boolean, post_to_url: String, threshold: Double): Anon_EnablePosttourl = {
-    val __obj = js.Dynamic.literal(enable = enable, post_to_url = post_to_url, threshold = threshold)
+    val __obj = js.Dynamic.literal(enable = enable.asInstanceOf[js.Any], post_to_url = post_to_url.asInstanceOf[js.Any], threshold = threshold.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EnablePosttourl]
   }

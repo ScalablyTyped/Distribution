@@ -12,7 +12,7 @@ trait ZoomOptionsRendered extends js.Object {
 object ZoomOptionsRendered {
   @scala.inline
   def apply(renderedPosition: Position): ZoomOptionsRendered = {
-    val __obj = js.Dynamic.literal(renderedPosition = renderedPosition)
+    val __obj = js.Dynamic.literal(renderedPosition = renderedPosition.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ZoomOptionsRendered]
   }

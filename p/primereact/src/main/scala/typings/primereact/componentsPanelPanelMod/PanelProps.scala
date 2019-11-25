@@ -36,17 +36,17 @@ object PanelProps {
     toggleable: js.UndefOr[Boolean] = js.undefined
   ): PanelProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (collapseIcon != null) __obj.updateDynamic("collapseIcon")(collapseIcon)
-    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed)
-    if (expandIcon != null) __obj.updateDynamic("expandIcon")(expandIcon)
-    if (header != null) __obj.updateDynamic("header")(header)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (collapseIcon != null) __obj.updateDynamic("collapseIcon")(collapseIcon.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.asInstanceOf[js.Any])
+    if (expandIcon != null) __obj.updateDynamic("expandIcon")(expandIcon.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (onCollapse != null) __obj.updateDynamic("onCollapse")(js.Any.fromFunction1(onCollapse))
     if (onExpand != null) __obj.updateDynamic("onExpand")(js.Any.fromFunction1(onExpand))
     if (onToggle != null) __obj.updateDynamic("onToggle")(js.Any.fromFunction1(onToggle))
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (!js.isUndefined(toggleable)) __obj.updateDynamic("toggleable")(toggleable)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(toggleable)) __obj.updateDynamic("toggleable")(toggleable.asInstanceOf[js.Any])
     __obj.asInstanceOf[PanelProps]
   }
 }

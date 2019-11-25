@@ -12,7 +12,7 @@ trait Anon_FileListAny extends js.Object {
 object Anon_FileListAny {
   @scala.inline
   def apply(fileList: js.Array[UploadFile[_]]): Anon_FileListAny = {
-    val __obj = js.Dynamic.literal(fileList = fileList)
+    val __obj = js.Dynamic.literal(fileList = fileList.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FileListAny]
   }

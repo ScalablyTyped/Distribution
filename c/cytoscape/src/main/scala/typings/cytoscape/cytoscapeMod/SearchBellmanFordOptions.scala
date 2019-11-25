@@ -26,7 +26,7 @@ trait SearchBellmanFordOptions extends js.Object {
 object SearchBellmanFordOptions {
   @scala.inline
   def apply(directed: Boolean, root: js.Any, weight: /* edge */ EdgeCollection => Double = null): SearchBellmanFordOptions = {
-    val __obj = js.Dynamic.literal(directed = directed, root = root)
+    val __obj = js.Dynamic.literal(directed = directed.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
     if (weight != null) __obj.updateDynamic("weight")(js.Any.fromFunction1(weight))
     __obj.asInstanceOf[SearchBellmanFordOptions]
   }

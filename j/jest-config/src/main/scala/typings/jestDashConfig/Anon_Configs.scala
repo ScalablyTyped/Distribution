@@ -15,7 +15,7 @@ trait Anon_Configs extends js.Object {
 object Anon_Configs {
   @scala.inline
   def apply(configs: js.Array[ProjectConfig], globalConfig: GlobalConfig, hasDeprecationWarnings: Boolean): Anon_Configs = {
-    val __obj = js.Dynamic.literal(configs = configs, globalConfig = globalConfig, hasDeprecationWarnings = hasDeprecationWarnings)
+    val __obj = js.Dynamic.literal(configs = configs.asInstanceOf[js.Any], globalConfig = globalConfig.asInstanceOf[js.Any], hasDeprecationWarnings = hasDeprecationWarnings.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Configs]
   }

@@ -19,7 +19,7 @@ object BreadcrumbProps {
     hidden: js.UndefOr[Boolean] = js.undefined
   ): BreadcrumbProps = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
     __obj.asInstanceOf[BreadcrumbProps]
   }
 }

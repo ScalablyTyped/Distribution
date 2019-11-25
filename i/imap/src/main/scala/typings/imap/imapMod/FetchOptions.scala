@@ -31,11 +31,11 @@ object FetchOptions {
   ): FetchOptions = {
     val __obj = js.Dynamic.literal()
     if (bodies != null) __obj.updateDynamic("bodies")(bodies.asInstanceOf[js.Any])
-    if (!js.isUndefined(envelope)) __obj.updateDynamic("envelope")(envelope)
-    if (!js.isUndefined(markSeen)) __obj.updateDynamic("markSeen")(markSeen)
-    if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers)
-    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size)
-    if (!js.isUndefined(struct)) __obj.updateDynamic("struct")(struct)
+    if (!js.isUndefined(envelope)) __obj.updateDynamic("envelope")(envelope.asInstanceOf[js.Any])
+    if (!js.isUndefined(markSeen)) __obj.updateDynamic("markSeen")(markSeen.asInstanceOf[js.Any])
+    if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(struct)) __obj.updateDynamic("struct")(struct.asInstanceOf[js.Any])
     __obj.asInstanceOf[FetchOptions]
   }
 }

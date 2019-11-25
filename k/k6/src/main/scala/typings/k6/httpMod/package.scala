@@ -13,7 +13,7 @@ package object httpMod {
   type ArrayRefinedBatchRequest[RT /* <: js.UndefOr[ResponseType] */] = js.Tuple4[String, String, js.UndefOr[RequestBody | Null], js.UndefOr[RefinedParams[RT] | Null]]
   type BatchRequest = String | ArrayBatchRequest | ObjectBatchRequest
   type BatchRequests = js.Array[BatchRequest] | StringDictionary[BatchRequest]
-  type BatchResponses[Q] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type BatchResponses[Q] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Q ]: Q[K] extends k6.k6/http.RefinedBatchRequest<infer RT>? k6.k6/http.RefinedResponse<any> : never}
     */ typings.k6.k6Strings.BatchResponses with Q
   type CookieJarCookies = StringDictionary[js.Array[String]]

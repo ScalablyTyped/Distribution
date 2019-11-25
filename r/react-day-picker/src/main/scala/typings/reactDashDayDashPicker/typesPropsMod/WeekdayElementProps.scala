@@ -23,9 +23,9 @@ object WeekdayElementProps {
     weekdaysLong: js.Array[String] = null,
     weekdaysShort: js.Array[String] = null
   ): WeekdayElementProps = {
-    val __obj = js.Dynamic.literal(className = className, locale = locale, localeUtils = localeUtils, weekday = weekday)
-    if (weekdaysLong != null) __obj.updateDynamic("weekdaysLong")(weekdaysLong)
-    if (weekdaysShort != null) __obj.updateDynamic("weekdaysShort")(weekdaysShort)
+    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], localeUtils = localeUtils.asInstanceOf[js.Any], weekday = weekday.asInstanceOf[js.Any])
+    if (weekdaysLong != null) __obj.updateDynamic("weekdaysLong")(weekdaysLong.asInstanceOf[js.Any])
+    if (weekdaysShort != null) __obj.updateDynamic("weekdaysShort")(weekdaysShort.asInstanceOf[js.Any])
     __obj.asInstanceOf[WeekdayElementProps]
   }
 }

@@ -13,7 +13,7 @@ object Anon_Features {
   @scala.inline
   def apply(features: js.Array[MapboxGeoJSONFeature] = null): Anon_Features = {
     val __obj = js.Dynamic.literal()
-    if (features != null) __obj.updateDynamic("features")(features)
+    if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Features]
   }
 }

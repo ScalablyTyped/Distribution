@@ -18,9 +18,9 @@ object Entries {
     per_page: Int | Double = null,
     total_pages: Int | Double = null
   ): Entries[T] = {
-    val __obj = js.Dynamic.literal(entries = entries)
+    val __obj = js.Dynamic.literal(entries = entries.asInstanceOf[js.Any])
     if (current_page != null) __obj.updateDynamic("current_page")(current_page.asInstanceOf[js.Any])
-    if (!js.isUndefined(has_more)) __obj.updateDynamic("has_more")(has_more)
+    if (!js.isUndefined(has_more)) __obj.updateDynamic("has_more")(has_more.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (per_page != null) __obj.updateDynamic("per_page")(per_page.asInstanceOf[js.Any])
     if (total_pages != null) __obj.updateDynamic("total_pages")(total_pages.asInstanceOf[js.Any])

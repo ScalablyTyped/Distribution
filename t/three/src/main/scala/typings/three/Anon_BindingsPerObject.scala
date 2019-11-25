@@ -12,7 +12,7 @@ trait Anon_BindingsPerObject extends js.Object {
 object Anon_BindingsPerObject {
   @scala.inline
   def apply(bindingsPerObject: Double, objects: Anon_InUse): Anon_BindingsPerObject = {
-    val __obj = js.Dynamic.literal(bindingsPerObject = bindingsPerObject, objects = objects)
+    val __obj = js.Dynamic.literal(bindingsPerObject = bindingsPerObject.asInstanceOf[js.Any], objects = objects.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BindingsPerObject]
   }

@@ -11,7 +11,7 @@ trait _HasRoomPosition extends js.Object {
 object _HasRoomPosition {
   @scala.inline
   def apply(pos: RoomPosition): _HasRoomPosition = {
-    val __obj = js.Dynamic.literal(pos = pos)
+    val __obj = js.Dynamic.literal(pos = pos.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_HasRoomPosition]
   }

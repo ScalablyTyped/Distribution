@@ -73,8 +73,8 @@ object Plan {
     url: String,
     userPermissions: PlanUserPermissions
   ): Plan = {
-    val __obj = js.Dynamic.literal(createdByIdentity = createdByIdentity, createdDate = createdDate, description = description, id = id, modifiedByIdentity = modifiedByIdentity, modifiedDate = modifiedDate, name = name, properties = properties, revision = revision, url = url, userPermissions = userPermissions)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(createdByIdentity = createdByIdentity.asInstanceOf[js.Any], createdDate = createdDate.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], modifiedByIdentity = modifiedByIdentity.asInstanceOf[js.Any], modifiedDate = modifiedDate.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], userPermissions = userPermissions.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Plan]
   }
 }

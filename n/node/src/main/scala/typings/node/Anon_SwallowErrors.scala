@@ -12,7 +12,7 @@ object Anon_SwallowErrors {
   @scala.inline
   def apply(swallowErrors: js.UndefOr[Boolean] = js.undefined): Anon_SwallowErrors = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(swallowErrors)) __obj.updateDynamic("swallowErrors")(swallowErrors)
+    if (!js.isUndefined(swallowErrors)) __obj.updateDynamic("swallowErrors")(swallowErrors.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_SwallowErrors]
   }
 }

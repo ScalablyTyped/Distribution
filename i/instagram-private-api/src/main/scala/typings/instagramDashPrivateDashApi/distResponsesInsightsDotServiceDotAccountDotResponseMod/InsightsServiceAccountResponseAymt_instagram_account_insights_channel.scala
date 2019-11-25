@@ -13,7 +13,7 @@ trait InsightsServiceAccountResponseAymt_instagram_account_insights_channel exte
 object InsightsServiceAccountResponseAymt_instagram_account_insights_channel {
   @scala.inline
   def apply(channel_id: String, id: String, tips: js.Array[_]): InsightsServiceAccountResponseAymt_instagram_account_insights_channel = {
-    val __obj = js.Dynamic.literal(channel_id = channel_id, id = id, tips = tips)
+    val __obj = js.Dynamic.literal(channel_id = channel_id.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], tips = tips.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InsightsServiceAccountResponseAymt_instagram_account_insights_channel]
   }

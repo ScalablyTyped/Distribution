@@ -37,19 +37,19 @@ object TabProps {
     unmountOnExit: js.UndefOr[Boolean] = js.undefined
   ): TabProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation)
-    if (`aria-labelledby` != null) __obj.updateDynamic("aria-labelledby")(`aria-labelledby`)
-    if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass)
-    if (eventKey != null) __obj.updateDynamic("eventKey")(eventKey)
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (`aria-labelledby` != null) __obj.updateDynamic("aria-labelledby")(`aria-labelledby`.asInstanceOf[js.Any])
+    if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass.asInstanceOf[js.Any])
+    if (eventKey != null) __obj.updateDynamic("eventKey")(eventKey.asInstanceOf[js.Any])
     if (onEnter != null) __obj.updateDynamic("onEnter")(js.Any.fromFunction1(onEnter))
     if (onEntered != null) __obj.updateDynamic("onEntered")(js.Any.fromFunction1(onEntered))
     if (onEntering != null) __obj.updateDynamic("onEntering")(js.Any.fromFunction1(onEntering))
     if (onExit != null) __obj.updateDynamic("onExit")(js.Any.fromFunction1(onExit))
     if (onExited != null) __obj.updateDynamic("onExited")(js.Any.fromFunction1(onExited))
     if (onExiting != null) __obj.updateDynamic("onExiting")(js.Any.fromFunction1(onExiting))
-    if (tabClassName != null) __obj.updateDynamic("tabClassName")(tabClassName)
+    if (tabClassName != null) __obj.updateDynamic("tabClassName")(tabClassName.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(unmountOnExit)) __obj.updateDynamic("unmountOnExit")(unmountOnExit)
+    if (!js.isUndefined(unmountOnExit)) __obj.updateDynamic("unmountOnExit")(unmountOnExit.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabProps]
   }
 }

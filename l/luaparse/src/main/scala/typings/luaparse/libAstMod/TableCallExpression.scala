@@ -20,9 +20,9 @@ object TableCallExpression {
     `type`: typings.luaparse.luaparseStrings.TableCallExpression,
     loc: Anon_End = null
   ): TableCallExpression = {
-    val __obj = js.Dynamic.literal(arguments = arguments, base = base)
-    __obj.updateDynamic("type")(`type`)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableCallExpression]
   }
 }

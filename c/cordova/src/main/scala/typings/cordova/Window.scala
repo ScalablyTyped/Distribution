@@ -11,7 +11,7 @@ trait Window extends js.Object {
 object Window {
   @scala.inline
   def apply(cordova: Cordova): Window = {
-    val __obj = js.Dynamic.literal(cordova = cordova)
+    val __obj = js.Dynamic.literal(cordova = cordova.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Window]
   }

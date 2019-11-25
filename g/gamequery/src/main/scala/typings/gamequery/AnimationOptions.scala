@@ -27,7 +27,7 @@ object AnimationOptions {
     rate: Int | Double = null,
     `type`: Int | Double = null
   ): AnimationOptions = {
-    val __obj = js.Dynamic.literal(imageURL = imageURL)
+    val __obj = js.Dynamic.literal(imageURL = imageURL.asInstanceOf[js.Any])
     if (delta != null) __obj.updateDynamic("delta")(delta.asInstanceOf[js.Any])
     if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
     if (numberOfFrame != null) __obj.updateDynamic("numberOfFrame")(numberOfFrame.asInstanceOf[js.Any])

@@ -55,12 +55,12 @@ object INxMeasure {
     qLibraryId: String = null,
     qSortBy: ISortCriteria = null
   ): INxMeasure = {
-    val __obj = js.Dynamic.literal(qDef = qDef)
-    if (qAttributeDimensions != null) __obj.updateDynamic("qAttributeDimensions")(qAttributeDimensions)
-    if (qAttributeExpressions != null) __obj.updateDynamic("qAttributeExpressions")(qAttributeExpressions)
-    if (qCalcCond != null) __obj.updateDynamic("qCalcCond")(qCalcCond)
-    if (qLibraryId != null) __obj.updateDynamic("qLibraryId")(qLibraryId)
-    if (qSortBy != null) __obj.updateDynamic("qSortBy")(qSortBy)
+    val __obj = js.Dynamic.literal(qDef = qDef.asInstanceOf[js.Any])
+    if (qAttributeDimensions != null) __obj.updateDynamic("qAttributeDimensions")(qAttributeDimensions.asInstanceOf[js.Any])
+    if (qAttributeExpressions != null) __obj.updateDynamic("qAttributeExpressions")(qAttributeExpressions.asInstanceOf[js.Any])
+    if (qCalcCond != null) __obj.updateDynamic("qCalcCond")(qCalcCond.asInstanceOf[js.Any])
+    if (qLibraryId != null) __obj.updateDynamic("qLibraryId")(qLibraryId.asInstanceOf[js.Any])
+    if (qSortBy != null) __obj.updateDynamic("qSortBy")(qSortBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxMeasure]
   }
 }

@@ -37,7 +37,7 @@ object JobTaskUpdateNotesParams {
     propertyIsEnumerable: PropertyKey => Boolean,
     user: String
   ): JobTaskUpdateNotesParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), jobId = jobId, notes = notes, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), user = user)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), jobId = jobId.asInstanceOf[js.Any], notes = notes.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), user = user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[JobTaskUpdateNotesParams]
   }

@@ -43,7 +43,7 @@ object LogInfo {
     unpack: String,
     write: String
   ): LogInfo = {
-    val __obj = js.Dynamic.literal(conv = conv, cost = cost, method = method, pack = pack, path = path, prot = prot, proxy = proxy, query = query, read = read, remote = remote, requestID = requestID, retry = retry, service = service, talk = talk, unpack = unpack, write = write)
+    val __obj = js.Dynamic.literal(conv = conv.asInstanceOf[js.Any], cost = cost.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], pack = pack.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], prot = prot.asInstanceOf[js.Any], proxy = proxy.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], read = read.asInstanceOf[js.Any], remote = remote.asInstanceOf[js.Any], requestID = requestID.asInstanceOf[js.Any], retry = retry.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], talk = talk.asInstanceOf[js.Any], unpack = unpack.asInstanceOf[js.Any], write = write.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LogInfo]
   }

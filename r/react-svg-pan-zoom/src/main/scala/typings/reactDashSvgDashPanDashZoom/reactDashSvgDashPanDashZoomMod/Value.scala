@@ -48,7 +48,7 @@ object Value {
     startX: Int | Double = null,
     startY: Int | Double = null
   ): Value = {
-    val __obj = js.Dynamic.literal(SVGHeight = SVGHeight, SVGWidth = SVGWidth, a = a, b = b, c = c, d = d, e = e, f = f, focus = focus, miniatureOpen = miniatureOpen, mode = mode, version = version, viewerHeight = viewerHeight, viewerWidth = viewerWidth)
+    val __obj = js.Dynamic.literal(SVGHeight = SVGHeight.asInstanceOf[js.Any], SVGWidth = SVGWidth.asInstanceOf[js.Any], a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], c = c.asInstanceOf[js.Any], d = d.asInstanceOf[js.Any], e = e.asInstanceOf[js.Any], f = f.asInstanceOf[js.Any], focus = focus.asInstanceOf[js.Any], miniatureOpen = miniatureOpen.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], viewerHeight = viewerHeight.asInstanceOf[js.Any], viewerWidth = viewerWidth.asInstanceOf[js.Any])
     if (endX != null) __obj.updateDynamic("endX")(endX.asInstanceOf[js.Any])
     if (endY != null) __obj.updateDynamic("endY")(endY.asInstanceOf[js.Any])
     if (startX != null) __obj.updateDynamic("startX")(startX.asInstanceOf[js.Any])

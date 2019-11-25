@@ -13,7 +13,7 @@ trait TransitionViewport extends js.Object {
 object TransitionViewport {
   @scala.inline
   def apply(latitude: Double, longitude: Double, zoom: Double): TransitionViewport = {
-    val __obj = js.Dynamic.literal(latitude = latitude, longitude = longitude, zoom = zoom)
+    val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TransitionViewport]
   }

@@ -38,8 +38,8 @@ object Constraints {
     val __obj = js.Dynamic.literal()
     if (maxDatabaseEntries != null) __obj.updateDynamic("maxDatabaseEntries")(maxDatabaseEntries.asInstanceOf[js.Any])
     if (maxUpdateEntries != null) __obj.updateDynamic("maxUpdateEntries")(maxUpdateEntries.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region)
-    if (supportedCompressions != null) __obj.updateDynamic("supportedCompressions")(supportedCompressions)
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    if (supportedCompressions != null) __obj.updateDynamic("supportedCompressions")(supportedCompressions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Constraints]
   }
 }

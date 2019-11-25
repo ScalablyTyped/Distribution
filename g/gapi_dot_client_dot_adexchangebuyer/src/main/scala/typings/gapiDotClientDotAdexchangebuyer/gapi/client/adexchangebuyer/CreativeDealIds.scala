@@ -16,8 +16,8 @@ object CreativeDealIds {
   @scala.inline
   def apply(dealStatuses: js.Array[Anon_ArcStatus] = null, kind: String = null): CreativeDealIds = {
     val __obj = js.Dynamic.literal()
-    if (dealStatuses != null) __obj.updateDynamic("dealStatuses")(dealStatuses)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (dealStatuses != null) __obj.updateDynamic("dealStatuses")(dealStatuses.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreativeDealIds]
   }
 }

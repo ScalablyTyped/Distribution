@@ -12,7 +12,7 @@ trait Anon_NormalModuleFactory extends js.Object {
 object Anon_NormalModuleFactory {
   @scala.inline
   def apply(normalModuleFactory: NormalModuleFactory): Anon_NormalModuleFactory = {
-    val __obj = js.Dynamic.literal(normalModuleFactory = normalModuleFactory)
+    val __obj = js.Dynamic.literal(normalModuleFactory = normalModuleFactory.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_NormalModuleFactory]
   }

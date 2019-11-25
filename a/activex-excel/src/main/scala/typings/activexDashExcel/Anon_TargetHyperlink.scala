@@ -12,7 +12,7 @@ trait Anon_TargetHyperlink extends js.Object {
 object Anon_TargetHyperlink {
   @scala.inline
   def apply(Target: Hyperlink): Anon_TargetHyperlink = {
-    val __obj = js.Dynamic.literal(Target = Target)
+    val __obj = js.Dynamic.literal(Target = Target.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_TargetHyperlink]
   }

@@ -21,8 +21,8 @@ object Response {
     statusCode: Double,
     md5: String = null
   ): Response = {
-    val __obj = js.Dynamic.literal(body = body, headers = headers, isSuccessful = isSuccessful, statusCode = statusCode)
-    if (md5 != null) __obj.updateDynamic("md5")(md5)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], isSuccessful = isSuccessful.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
+    if (md5 != null) __obj.updateDynamic("md5")(md5.asInstanceOf[js.Any])
     __obj.asInstanceOf[Response]
   }
 }

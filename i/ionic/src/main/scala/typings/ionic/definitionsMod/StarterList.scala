@@ -14,7 +14,7 @@ trait StarterList extends js.Object {
 object StarterList {
   @scala.inline
   def apply(integrations: js.Array[Anon_IdNameIntegrationName], starters: js.Array[Anon_IdName]): StarterList = {
-    val __obj = js.Dynamic.literal(integrations = integrations, starters = starters)
+    val __obj = js.Dynamic.literal(integrations = integrations.asInstanceOf[js.Any], starters = starters.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StarterList]
   }

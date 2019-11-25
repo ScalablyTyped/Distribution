@@ -26,10 +26,10 @@ object Anon_CrossOrigin {
   ): Anon_CrossOrigin = {
     val __obj = js.Dynamic.literal()
     if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
-    if (loadType != null) __obj.updateDynamic("loadType")(loadType)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (loadType != null) __obj.updateDynamic("loadType")(loadType.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (xhrType != null) __obj.updateDynamic("xhrType")(xhrType)
+    if (xhrType != null) __obj.updateDynamic("xhrType")(xhrType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CrossOrigin]
   }
 }

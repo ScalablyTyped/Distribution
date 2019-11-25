@@ -27,7 +27,7 @@ object OpenFileRequestedEventOptions {
     mode: ToStringLiteral[Anon_READ, String, Exclude[String, READ | WRITE]],
     requestId: integer
   ): OpenFileRequestedEventOptions = {
-    val __obj = js.Dynamic.literal(filePath = filePath, fileSystemId = fileSystemId, mode = mode.asInstanceOf[js.Any], requestId = requestId)
+    val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any], fileSystemId = fileSystemId.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OpenFileRequestedEventOptions]
   }

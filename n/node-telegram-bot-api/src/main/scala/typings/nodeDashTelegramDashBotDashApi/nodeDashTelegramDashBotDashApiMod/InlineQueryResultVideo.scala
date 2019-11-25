@@ -38,12 +38,12 @@ object InlineQueryResultVideo {
     video_height: Int | Double = null,
     video_width: Int | Double = null
   ): InlineQueryResultVideo = {
-    val __obj = js.Dynamic.literal(id = id, mime_type = mime_type, thumb_url = thumb_url, title = title, video_url = video_url)
-    __obj.updateDynamic("type")(`type`)
-    if (caption != null) __obj.updateDynamic("caption")(caption)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (input_message_content != null) __obj.updateDynamic("input_message_content")(input_message_content)
-    if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], mime_type = mime_type.asInstanceOf[js.Any], thumb_url = thumb_url.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], video_url = video_url.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (input_message_content != null) __obj.updateDynamic("input_message_content")(input_message_content.asInstanceOf[js.Any])
+    if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup.asInstanceOf[js.Any])
     if (video_duration != null) __obj.updateDynamic("video_duration")(video_duration.asInstanceOf[js.Any])
     if (video_height != null) __obj.updateDynamic("video_height")(video_height.asInstanceOf[js.Any])
     if (video_width != null) __obj.updateDynamic("video_width")(video_width.asInstanceOf[js.Any])

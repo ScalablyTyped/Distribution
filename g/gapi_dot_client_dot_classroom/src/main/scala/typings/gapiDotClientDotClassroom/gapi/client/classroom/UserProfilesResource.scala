@@ -28,7 +28,7 @@ object UserProfilesResource {
     guardianInvitations: GuardianInvitationsResource,
     guardians: GuardiansResource
   ): UserProfilesResource = {
-    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), guardianInvitations = guardianInvitations, guardians = guardians)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), guardianInvitations = guardianInvitations.asInstanceOf[js.Any], guardians = guardians.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UserProfilesResource]
   }

@@ -60,11 +60,11 @@ object ConfigurationPropertyDefinitionRuntimeAttributes {
     imports: js.Array[Import] = null,
     normalize: String = null
   ): ConfigurationPropertyDefinitionRuntimeAttributes = {
-    val __obj = js.Dynamic.literal(required = required)
-    if (apply != null) __obj.updateDynamic("apply")(apply)
+    val __obj = js.Dynamic.literal(required = required.asInstanceOf[js.Any])
+    if (apply != null) __obj.updateDynamic("apply")(apply.asInstanceOf[js.Any])
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (imports != null) __obj.updateDynamic("imports")(imports)
-    if (normalize != null) __obj.updateDynamic("normalize")(normalize)
+    if (imports != null) __obj.updateDynamic("imports")(imports.asInstanceOf[js.Any])
+    if (normalize != null) __obj.updateDynamic("normalize")(normalize.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigurationPropertyDefinitionRuntimeAttributes]
   }
 }

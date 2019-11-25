@@ -13,7 +13,7 @@ object CopySheetToAnotherSpreadsheetRequest {
   @scala.inline
   def apply(destinationSpreadsheetId: String = null): CopySheetToAnotherSpreadsheetRequest = {
     val __obj = js.Dynamic.literal()
-    if (destinationSpreadsheetId != null) __obj.updateDynamic("destinationSpreadsheetId")(destinationSpreadsheetId)
+    if (destinationSpreadsheetId != null) __obj.updateDynamic("destinationSpreadsheetId")(destinationSpreadsheetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CopySheetToAnotherSpreadsheetRequest]
   }
 }

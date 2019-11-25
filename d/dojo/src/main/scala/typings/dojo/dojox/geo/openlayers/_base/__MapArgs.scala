@@ -44,7 +44,7 @@ trait __MapArgs extends js.Object {
 object __MapArgs {
   @scala.inline
   def apply(baseLayerName: String, baseLayerOptions: String, baseLayerType: String, baseLayerUrl: String): __MapArgs = {
-    val __obj = js.Dynamic.literal(baseLayerName = baseLayerName, baseLayerOptions = baseLayerOptions, baseLayerType = baseLayerType, baseLayerUrl = baseLayerUrl)
+    val __obj = js.Dynamic.literal(baseLayerName = baseLayerName.asInstanceOf[js.Any], baseLayerOptions = baseLayerOptions.asInstanceOf[js.Any], baseLayerType = baseLayerType.asInstanceOf[js.Any], baseLayerUrl = baseLayerUrl.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[__MapArgs]
   }

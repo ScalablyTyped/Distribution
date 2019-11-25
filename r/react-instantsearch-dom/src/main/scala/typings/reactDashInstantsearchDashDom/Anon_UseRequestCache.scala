@@ -11,7 +11,7 @@ trait Anon_UseRequestCache extends js.Object {
 object Anon_UseRequestCache {
   @scala.inline
   def apply(_useRequestCache: Boolean): Anon_UseRequestCache = {
-    val __obj = js.Dynamic.literal(_useRequestCache = _useRequestCache)
+    val __obj = js.Dynamic.literal(_useRequestCache = _useRequestCache.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_UseRequestCache]
   }

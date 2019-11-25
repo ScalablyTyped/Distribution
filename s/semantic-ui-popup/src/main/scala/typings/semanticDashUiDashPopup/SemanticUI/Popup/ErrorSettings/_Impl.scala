@@ -36,7 +36,7 @@ object _Impl {
     noTransition: String,
     notFound: String
   ): _Impl = {
-    val __obj = js.Dynamic.literal(cannotPlace = cannotPlace, invalidPosition = invalidPosition, method = method, noTransition = noTransition, notFound = notFound)
+    val __obj = js.Dynamic.literal(cannotPlace = cannotPlace.asInstanceOf[js.Any], invalidPosition = invalidPosition.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], noTransition = noTransition.asInstanceOf[js.Any], notFound = notFound.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_Impl]
   }

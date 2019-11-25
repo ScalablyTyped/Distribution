@@ -11,7 +11,7 @@ trait Anon_VerifyChecksum extends js.Object {
 object Anon_VerifyChecksum {
   @scala.inline
   def apply(verifyChecksum: Boolean): Anon_VerifyChecksum = {
-    val __obj = js.Dynamic.literal(verifyChecksum = verifyChecksum)
+    val __obj = js.Dynamic.literal(verifyChecksum = verifyChecksum.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_VerifyChecksum]
   }

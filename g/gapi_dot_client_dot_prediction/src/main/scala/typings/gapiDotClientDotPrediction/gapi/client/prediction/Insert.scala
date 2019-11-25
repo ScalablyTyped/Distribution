@@ -38,14 +38,14 @@ object Insert {
     utility: js.Array[Record[String, Double]] = null
   ): Insert = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (modelType != null) __obj.updateDynamic("modelType")(modelType)
-    if (sourceModel != null) __obj.updateDynamic("sourceModel")(sourceModel)
-    if (storageDataLocation != null) __obj.updateDynamic("storageDataLocation")(storageDataLocation)
-    if (storagePMMLLocation != null) __obj.updateDynamic("storagePMMLLocation")(storagePMMLLocation)
-    if (storagePMMLModelLocation != null) __obj.updateDynamic("storagePMMLModelLocation")(storagePMMLModelLocation)
-    if (trainingInstances != null) __obj.updateDynamic("trainingInstances")(trainingInstances)
-    if (utility != null) __obj.updateDynamic("utility")(utility)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (modelType != null) __obj.updateDynamic("modelType")(modelType.asInstanceOf[js.Any])
+    if (sourceModel != null) __obj.updateDynamic("sourceModel")(sourceModel.asInstanceOf[js.Any])
+    if (storageDataLocation != null) __obj.updateDynamic("storageDataLocation")(storageDataLocation.asInstanceOf[js.Any])
+    if (storagePMMLLocation != null) __obj.updateDynamic("storagePMMLLocation")(storagePMMLLocation.asInstanceOf[js.Any])
+    if (storagePMMLModelLocation != null) __obj.updateDynamic("storagePMMLModelLocation")(storagePMMLModelLocation.asInstanceOf[js.Any])
+    if (trainingInstances != null) __obj.updateDynamic("trainingInstances")(trainingInstances.asInstanceOf[js.Any])
+    if (utility != null) __obj.updateDynamic("utility")(utility.asInstanceOf[js.Any])
     __obj.asInstanceOf[Insert]
   }
 }

@@ -22,8 +22,8 @@ object Anon_ExecutionidPipeline {
     state: CodePipelineStageState,
     version: Double
   ): Anon_ExecutionidPipeline = {
-    val __obj = js.Dynamic.literal(pipeline = pipeline, stage = stage, state = state, version = version)
-    __obj.updateDynamic("execution-id")(`execution-id`)
+    val __obj = js.Dynamic.literal(pipeline = pipeline.asInstanceOf[js.Any], stage = stage.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    __obj.updateDynamic("execution-id")(`execution-id`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ExecutionidPipeline]
   }
 }

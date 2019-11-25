@@ -12,7 +12,7 @@ trait CallbackErrorEventArgs extends EventArgs {
 object CallbackErrorEventArgs {
   @scala.inline
   def apply(handled: Boolean, message: String, sender: Control): CallbackErrorEventArgs = {
-    val __obj = js.Dynamic.literal(handled = handled, message = message, sender = sender)
+    val __obj = js.Dynamic.literal(handled = handled.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CallbackErrorEventArgs]
   }

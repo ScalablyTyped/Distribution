@@ -23,11 +23,11 @@ object FirefoxOptions {
     profile: String = null
   ): FirefoxOptions = {
     val __obj = js.Dynamic.literal()
-    if (args != null) __obj.updateDynamic("args")(args)
-    if (binary != null) __obj.updateDynamic("binary")(binary)
-    if (log != null) __obj.updateDynamic("log")(log)
-    if (prefs != null) __obj.updateDynamic("prefs")(prefs)
-    if (profile != null) __obj.updateDynamic("profile")(profile)
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (binary != null) __obj.updateDynamic("binary")(binary.asInstanceOf[js.Any])
+    if (log != null) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
+    if (prefs != null) __obj.updateDynamic("prefs")(prefs.asInstanceOf[js.Any])
+    if (profile != null) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirefoxOptions]
   }
 }

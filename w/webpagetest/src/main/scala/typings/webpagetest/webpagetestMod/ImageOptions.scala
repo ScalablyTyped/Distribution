@@ -15,8 +15,8 @@ object ImageOptions {
   @scala.inline
   def apply(dataURI: js.UndefOr[Boolean] = js.undefined, thumbnail: js.UndefOr[Boolean] = js.undefined): ImageOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dataURI)) __obj.updateDynamic("dataURI")(dataURI)
-    if (!js.isUndefined(thumbnail)) __obj.updateDynamic("thumbnail")(thumbnail)
+    if (!js.isUndefined(dataURI)) __obj.updateDynamic("dataURI")(dataURI.asInstanceOf[js.Any])
+    if (!js.isUndefined(thumbnail)) __obj.updateDynamic("thumbnail")(thumbnail.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageOptions]
   }
 }

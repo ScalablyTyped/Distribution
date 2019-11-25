@@ -11,7 +11,7 @@ trait Map extends js.Object {
 object Map {
   @scala.inline
   def apply(pm: typings.leafletDotPm.leafletMod.PM.Map): Map = {
-    val __obj = js.Dynamic.literal(pm = pm)
+    val __obj = js.Dynamic.literal(pm = pm.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Map]
   }

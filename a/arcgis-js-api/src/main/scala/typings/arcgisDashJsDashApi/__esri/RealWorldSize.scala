@@ -58,12 +58,12 @@ object RealWorldSize {
     valueExpression: String = null,
     valueRepresentation: String = null
   ): RealWorldSize = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), valueUnit = valueUnit)
-    __obj.updateDynamic("type")(`type`)
-    if (field != null) __obj.updateDynamic("field")(field)
-    if (normalizationField != null) __obj.updateDynamic("normalizationField")(normalizationField)
-    if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression)
-    if (valueRepresentation != null) __obj.updateDynamic("valueRepresentation")(valueRepresentation)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), valueUnit = valueUnit.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    if (normalizationField != null) __obj.updateDynamic("normalizationField")(normalizationField.asInstanceOf[js.Any])
+    if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression.asInstanceOf[js.Any])
+    if (valueRepresentation != null) __obj.updateDynamic("valueRepresentation")(valueRepresentation.asInstanceOf[js.Any])
     __obj.asInstanceOf[RealWorldSize]
   }
 }

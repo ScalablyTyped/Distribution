@@ -26,12 +26,12 @@ object BonjourOptions {
     ttl: Int | Double = null
   ): BonjourOptions = {
     val __obj = js.Dynamic.literal()
-    if (interface != null) __obj.updateDynamic("interface")(interface)
-    if (ip != null) __obj.updateDynamic("ip")(ip)
-    if (!js.isUndefined(loopback)) __obj.updateDynamic("loopback")(loopback)
-    if (!js.isUndefined(multicast)) __obj.updateDynamic("multicast")(multicast)
+    if (interface != null) __obj.updateDynamic("interface")(interface.asInstanceOf[js.Any])
+    if (ip != null) __obj.updateDynamic("ip")(ip.asInstanceOf[js.Any])
+    if (!js.isUndefined(loopback)) __obj.updateDynamic("loopback")(loopback.asInstanceOf[js.Any])
+    if (!js.isUndefined(multicast)) __obj.updateDynamic("multicast")(multicast.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (!js.isUndefined(reuseAddr)) __obj.updateDynamic("reuseAddr")(reuseAddr)
+    if (!js.isUndefined(reuseAddr)) __obj.updateDynamic("reuseAddr")(reuseAddr.asInstanceOf[js.Any])
     if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
     __obj.asInstanceOf[BonjourOptions]
   }

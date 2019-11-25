@@ -14,7 +14,7 @@ object ListModelsResults {
   @scala.inline
   def apply(models: js.Array[Model] = null): ListModelsResults = {
     val __obj = js.Dynamic.literal()
-    if (models != null) __obj.updateDynamic("models")(models)
+    if (models != null) __obj.updateDynamic("models")(models.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListModelsResults]
   }
 }

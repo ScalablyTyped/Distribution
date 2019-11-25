@@ -36,18 +36,18 @@ object Anon_2a864886f70d010101 {
     `608648016503040302`: String
   ): Anon_2a864886f70d010101 = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("2a864886f70d010101")(`2a864886f70d010101`)
-    __obj.updateDynamic("2a8648ce380401")(`2a8648ce380401`)
-    __obj.updateDynamic("2a8648ce380403")(`2a8648ce380403`)
-    __obj.updateDynamic("2a8648ce3d0201")(`2a8648ce3d0201`)
-    __obj.updateDynamic("2a8648ce3d030107")(`2a8648ce3d030107`)
-    __obj.updateDynamic("2b8104000a")(`2b8104000a`)
-    __obj.updateDynamic("2b8104001f")(`2b8104001f`)
-    __obj.updateDynamic("2b81040021")(`2b81040021`)
-    __obj.updateDynamic("2b81040022")(`2b81040022`)
-    __obj.updateDynamic("2b81040023")(`2b81040023`)
-    __obj.updateDynamic("608648016503040301")(`608648016503040301`)
-    __obj.updateDynamic("608648016503040302")(`608648016503040302`)
+    __obj.updateDynamic("2a864886f70d010101")(`2a864886f70d010101`.asInstanceOf[js.Any])
+    __obj.updateDynamic("2a8648ce380401")(`2a8648ce380401`.asInstanceOf[js.Any])
+    __obj.updateDynamic("2a8648ce380403")(`2a8648ce380403`.asInstanceOf[js.Any])
+    __obj.updateDynamic("2a8648ce3d0201")(`2a8648ce3d0201`.asInstanceOf[js.Any])
+    __obj.updateDynamic("2a8648ce3d030107")(`2a8648ce3d030107`.asInstanceOf[js.Any])
+    __obj.updateDynamic("2b8104000a")(`2b8104000a`.asInstanceOf[js.Any])
+    __obj.updateDynamic("2b8104001f")(`2b8104001f`.asInstanceOf[js.Any])
+    __obj.updateDynamic("2b81040021")(`2b81040021`.asInstanceOf[js.Any])
+    __obj.updateDynamic("2b81040022")(`2b81040022`.asInstanceOf[js.Any])
+    __obj.updateDynamic("2b81040023")(`2b81040023`.asInstanceOf[js.Any])
+    __obj.updateDynamic("608648016503040301")(`608648016503040301`.asInstanceOf[js.Any])
+    __obj.updateDynamic("608648016503040302")(`608648016503040302`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_2a864886f70d010101]
   }
 }

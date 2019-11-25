@@ -14,9 +14,9 @@ object InventoryItemsListResponse {
   @scala.inline
   def apply(inventoryItems: js.Array[InventoryItem] = null, kind: String = null, nextPageToken: String = null): InventoryItemsListResponse = {
     val __obj = js.Dynamic.literal()
-    if (inventoryItems != null) __obj.updateDynamic("inventoryItems")(inventoryItems)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (inventoryItems != null) __obj.updateDynamic("inventoryItems")(inventoryItems.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[InventoryItemsListResponse]
   }
 }

@@ -12,11 +12,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@tensorflow/tfjs-core/dist/ops/lstm", JSImport.Namespace)
 @js.native
 object distOpsLstmMod extends js.Object {
-  @js.native
-  trait LSTMCellFunc extends js.Object {
-    def apply(data: Tensor2D, c: Tensor2D, h: Tensor2D): js.Tuple2[Tensor2D, Tensor2D] = js.native
-  }
-  
   val basicLSTMCell: js.Function6[
     /* forgetBias */ Scalar | TensorLike, 
     /* lstmKernel */ Tensor2D | TensorLike, 
@@ -33,5 +28,6 @@ object distOpsLstmMod extends js.Object {
     /* h */ js.Array[Tensor2D | TensorLike], 
     js.Tuple2[js.Array[Tensor2D], js.Array[Tensor2D]]
   ] = js.native
+  type LSTMCellFunc = js.Function3[/* data */ Tensor2D, /* c */ Tensor2D, /* h */ Tensor2D, js.Tuple2[Tensor2D, Tensor2D]]
 }
 

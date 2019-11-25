@@ -14,7 +14,7 @@ trait Anon_CharHeight extends js.Object {
 object Anon_CharHeight {
   @scala.inline
   def apply(charHeight: Double, fontSize: String, left: String, top: String): Anon_CharHeight = {
-    val __obj = js.Dynamic.literal(charHeight = charHeight, fontSize = fontSize, left = left, top = top)
+    val __obj = js.Dynamic.literal(charHeight = charHeight.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CharHeight]
   }

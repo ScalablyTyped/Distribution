@@ -13,8 +13,8 @@ object Anon_ApiKeyHash {
   @scala.inline
   def apply(apiKeyHash: String = null, serviceID: String = null): Anon_ApiKeyHash = {
     val __obj = js.Dynamic.literal()
-    if (apiKeyHash != null) __obj.updateDynamic("apiKeyHash")(apiKeyHash)
-    if (serviceID != null) __obj.updateDynamic("serviceID")(serviceID)
+    if (apiKeyHash != null) __obj.updateDynamic("apiKeyHash")(apiKeyHash.asInstanceOf[js.Any])
+    if (serviceID != null) __obj.updateDynamic("serviceID")(serviceID.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ApiKeyHash]
   }
 }

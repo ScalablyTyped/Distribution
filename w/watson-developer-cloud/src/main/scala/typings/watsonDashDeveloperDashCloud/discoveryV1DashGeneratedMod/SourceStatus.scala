@@ -16,8 +16,8 @@ object SourceStatus {
   @scala.inline
   def apply(last_updated: String = null, status: String = null): SourceStatus = {
     val __obj = js.Dynamic.literal()
-    if (last_updated != null) __obj.updateDynamic("last_updated")(last_updated)
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (last_updated != null) __obj.updateDynamic("last_updated")(last_updated.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceStatus]
   }
 }

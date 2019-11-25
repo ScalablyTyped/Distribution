@@ -40,16 +40,16 @@ object ClauseBiblioEntry {
     refId: String = null,
     term: String = null
   ): ClauseBiblioEntry = {
-    val __obj = js.Dynamic.literal(aoid = aoid, id = id, number = number.asInstanceOf[js.Any], referencingIds = referencingIds, title = title, titleHTML = titleHTML)
-    __obj.updateDynamic("type")(`type`)
-    if (caption != null) __obj.updateDynamic("caption")(caption)
-    if (clauseId != null) __obj.updateDynamic("clauseId")(clauseId)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace)
-    if (refId != null) __obj.updateDynamic("refId")(refId)
-    if (term != null) __obj.updateDynamic("term")(term)
+    val __obj = js.Dynamic.literal(aoid = aoid.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], referencingIds = referencingIds.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], titleHTML = titleHTML.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
+    if (clauseId != null) __obj.updateDynamic("clauseId")(clauseId.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
+    if (refId != null) __obj.updateDynamic("refId")(refId.asInstanceOf[js.Any])
+    if (term != null) __obj.updateDynamic("term")(term.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClauseBiblioEntry]
   }
 }

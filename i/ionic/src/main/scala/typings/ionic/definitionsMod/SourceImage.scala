@@ -29,9 +29,9 @@ object SourceImage {
     cachedId: String = null,
     imageId: String = null
   ): SourceImage = {
-    val __obj = js.Dynamic.literal(ext = ext, height = height, path = path, platform = platform, resType = resType, vector = vector, width = width)
-    if (cachedId != null) __obj.updateDynamic("cachedId")(cachedId)
-    if (imageId != null) __obj.updateDynamic("imageId")(imageId)
+    val __obj = js.Dynamic.literal(ext = ext.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], resType = resType.asInstanceOf[js.Any], vector = vector.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    if (cachedId != null) __obj.updateDynamic("cachedId")(cachedId.asInstanceOf[js.Any])
+    if (imageId != null) __obj.updateDynamic("imageId")(imageId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceImage]
   }
 }

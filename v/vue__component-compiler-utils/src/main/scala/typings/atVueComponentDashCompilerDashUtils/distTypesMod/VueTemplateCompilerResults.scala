@@ -21,7 +21,7 @@ object VueTemplateCompilerResults {
     staticRenderFns: js.Array[String],
     tips: js.Array[String | ErrorWithRange]
   ): VueTemplateCompilerResults = {
-    val __obj = js.Dynamic.literal(ast = ast.asInstanceOf[js.Any], errors = errors, render = render, staticRenderFns = staticRenderFns, tips = tips)
+    val __obj = js.Dynamic.literal(ast = ast.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any], render = render.asInstanceOf[js.Any], staticRenderFns = staticRenderFns.asInstanceOf[js.Any], tips = tips.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[VueTemplateCompilerResults]
   }

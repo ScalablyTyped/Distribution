@@ -15,7 +15,7 @@ object GoogleActionsV2MediaStatus {
   @scala.inline
   def apply(status: GoogleActionsV2MediaStatusStatus = null): GoogleActionsV2MediaStatus = {
     val __obj = js.Dynamic.literal()
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2MediaStatus]
   }
 }

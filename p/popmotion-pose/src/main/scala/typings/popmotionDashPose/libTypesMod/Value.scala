@@ -14,8 +14,8 @@ trait Value extends js.Object {
 object Value {
   @scala.inline
   def apply(raw: ValueReaction, `type`: ValueType = null): Value = {
-    val __obj = js.Dynamic.literal(raw = raw)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Value]
   }
 }

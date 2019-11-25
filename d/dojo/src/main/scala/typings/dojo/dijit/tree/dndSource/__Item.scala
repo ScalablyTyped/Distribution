@@ -24,7 +24,7 @@ trait __Item extends js.Object {
 object __Item {
   @scala.inline
   def apply(id: js.Object, name: String): __Item = {
-    val __obj = js.Dynamic.literal(id = id, name = name)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[__Item]
   }

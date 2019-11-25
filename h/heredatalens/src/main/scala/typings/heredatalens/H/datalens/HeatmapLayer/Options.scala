@@ -81,13 +81,13 @@ object Options {
     valueRange: /* zoom */ Zoom => js.Array[Double] = null
   ): Options = {
     val __obj = js.Dynamic.literal(rowToTilePoint = js.Any.fromFunction3(rowToTilePoint))
-    if (aggregation != null) __obj.updateDynamic("aggregation")(aggregation)
+    if (aggregation != null) __obj.updateDynamic("aggregation")(aggregation.asInstanceOf[js.Any])
     if (alphaScale != null) __obj.updateDynamic("alphaScale")(js.Any.fromFunction1(alphaScale))
     if (bandwidth != null) __obj.updateDynamic("bandwidth")(bandwidth.asInstanceOf[js.Any])
     if (colorScale != null) __obj.updateDynamic("colorScale")(js.Any.fromFunction1(colorScale))
     if (countRange != null) __obj.updateDynamic("countRange")(js.Any.fromFunction1(countRange))
     if (dataToRows != null) __obj.updateDynamic("dataToRows")(js.Any.fromFunction4(dataToRows))
-    if (inputScale != null) __obj.updateDynamic("inputScale")(inputScale)
+    if (inputScale != null) __obj.updateDynamic("inputScale")(inputScale.asInstanceOf[js.Any])
     if (valueRange != null) __obj.updateDynamic("valueRange")(js.Any.fromFunction1(valueRange))
     __obj.asInstanceOf[Options]
   }

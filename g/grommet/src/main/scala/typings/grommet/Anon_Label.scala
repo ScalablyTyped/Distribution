@@ -15,7 +15,7 @@ object Anon_Label {
   def apply(label: ReactNode = null, value: js.Any = null): Anon_Label = {
     val __obj = js.Dynamic.literal()
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Label]
   }
 }

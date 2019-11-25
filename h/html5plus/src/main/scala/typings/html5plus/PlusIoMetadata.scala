@@ -52,7 +52,7 @@ object PlusIoMetadata {
     val __obj = js.Dynamic.literal()
     if (directoryCount != null) __obj.updateDynamic("directoryCount")(directoryCount.asInstanceOf[js.Any])
     if (fileCount != null) __obj.updateDynamic("fileCount")(fileCount.asInstanceOf[js.Any])
-    if (modificationTime != null) __obj.updateDynamic("modificationTime")(modificationTime)
+    if (modificationTime != null) __obj.updateDynamic("modificationTime")(modificationTime.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusIoMetadata]
   }

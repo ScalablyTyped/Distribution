@@ -22,10 +22,10 @@ object cardCreateOptions {
     clearFieldsAfterTokenization: js.UndefOr[Boolean] = js.undefined,
     vault: Anon_AllowVaultCardOverride = null
   ): cardCreateOptions = {
-    val __obj = js.Dynamic.literal(overrides = overrides)
+    val __obj = js.Dynamic.literal(overrides = overrides.asInstanceOf[js.Any])
     if (cardholderName != null) __obj.updateDynamic("cardholderName")(cardholderName.asInstanceOf[js.Any])
-    if (!js.isUndefined(clearFieldsAfterTokenization)) __obj.updateDynamic("clearFieldsAfterTokenization")(clearFieldsAfterTokenization)
-    if (vault != null) __obj.updateDynamic("vault")(vault)
+    if (!js.isUndefined(clearFieldsAfterTokenization)) __obj.updateDynamic("clearFieldsAfterTokenization")(clearFieldsAfterTokenization.asInstanceOf[js.Any])
+    if (vault != null) __obj.updateDynamic("vault")(vault.asInstanceOf[js.Any])
     __obj.asInstanceOf[cardCreateOptions]
   }
 }

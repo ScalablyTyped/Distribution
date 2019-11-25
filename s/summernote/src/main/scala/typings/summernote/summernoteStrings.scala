@@ -163,7 +163,7 @@ object summernoteStrings {
   sealed trait fontSize extends js.Object
   
   @js.native
-  sealed trait fontsize extends js.Object
+  sealed trait fontsize_ extends js.Object
   
   @js.native
   sealed trait foreColor extends js.Object
@@ -459,7 +459,7 @@ object summernoteStrings {
   @scala.inline
   def fontSize: fontSize = "fontSize".asInstanceOf[fontSize]
   @scala.inline
-  def fontsize: fontsize = "fontsize".asInstanceOf[fontsize]
+  def fontsize_ : fontsize_ = "fontsize".asInstanceOf[fontsize_]
   @scala.inline
   def foreColor: foreColor = "foreColor".asInstanceOf[foreColor]
   @scala.inline

@@ -39,17 +39,17 @@ object ProgressBarProps {
     striped: js.UndefOr[Boolean] = js.undefined
   ): ProgressBarProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
-    if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass)
-    if (bsSize != null) __obj.updateDynamic("bsSize")(bsSize)
-    if (bsStyle != null) __obj.updateDynamic("bsStyle")(bsStyle)
-    if (interpolatedClass != null) __obj.updateDynamic("interpolatedClass")(interpolatedClass)
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass.asInstanceOf[js.Any])
+    if (bsSize != null) __obj.updateDynamic("bsSize")(bsSize.asInstanceOf[js.Any])
+    if (bsStyle != null) __obj.updateDynamic("bsStyle")(bsStyle.asInstanceOf[js.Any])
+    if (interpolatedClass != null) __obj.updateDynamic("interpolatedClass")(interpolatedClass.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (now != null) __obj.updateDynamic("now")(now.asInstanceOf[js.Any])
-    if (!js.isUndefined(srOnly)) __obj.updateDynamic("srOnly")(srOnly)
-    if (!js.isUndefined(striped)) __obj.updateDynamic("striped")(striped)
+    if (!js.isUndefined(srOnly)) __obj.updateDynamic("srOnly")(srOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(striped)) __obj.updateDynamic("striped")(striped.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProgressBarProps]
   }
 }

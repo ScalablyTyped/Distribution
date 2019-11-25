@@ -3,8 +3,6 @@ package typings.atStorybookClientDashApi
 import typings.atStorybookAddons.Anon_Current
 import typings.atStorybookAddons.distHooksMod.Decorator
 import typings.atStorybookAddons.distHooksMod.EventMap
-import typings.atStorybookAddons.distTypesMod.StoryContext
-import typings.atStorybookAddons.distTypesMod.StoryGetter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,14 +12,21 @@ import scala.scalajs.js.annotation._
 object distHooksMod extends js.Object {
   @js.native
   class HooksContext ()
-    extends typings.atStorybookAddons.distPublicUnderscoreApiMod.HooksContext
+    extends typings.atStorybookAddons.atStorybookAddonsMod.HooksContext
   
   def applyHooks(
-    applyDecorators: js.Function2[/* getStory */ StoryGetter, /* decorators */ js.Array[Decorator], StoryGetter]
+    applyDecorators: js.Function2[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify StoryGetter */ /* getStory */ js.Any, 
+      /* decorators */ js.Array[Decorator], 
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify StoryGetter */ _
+    ]
   ): js.Function2[
-    /* getStory */ StoryGetter, 
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify StoryGetter */ /* getStory */ js.Any, 
     /* decorators */ js.Array[Decorator], 
-    js.Function1[/* context */ StoryContext, _]
+    js.Function1[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify StoryContext */ /* context */ _, 
+      _
+    ]
   ] = js.native
   def useCallback[T](callback: T): T = js.native
   def useCallback[T](callback: T, deps: js.Array[_]): T = js.native
@@ -42,6 +47,6 @@ object distHooksMod extends js.Object {
   def useRef[T](initialValue: T): Anon_Current[T] = js.native
   def useState[S](initialState: S): js.Tuple2[S, js.Function1[/* update */ (js.Function1[/* prevState */ S, S]) | S, Unit]] = js.native
   def useState[S](initialState: js.Function0[S]): js.Tuple2[S, js.Function1[/* update */ (js.Function1[/* prevState */ S, S]) | S, Unit]] = js.native
-  def useStoryContext(): StoryContext = js.native
+  def useStoryContext(): js.Any = js.native
 }
 

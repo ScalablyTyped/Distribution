@@ -26,13 +26,13 @@ object Account {
     timezone: String = null
   ): Account = {
     val __obj = js.Dynamic.literal()
-    if (creation_time != null) __obj.updateDynamic("creation_time")(creation_time)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(premium)) __obj.updateDynamic("premium")(premium)
-    if (subAccounts != null) __obj.updateDynamic("subAccounts")(subAccounts)
-    if (timezone != null) __obj.updateDynamic("timezone")(timezone)
+    if (creation_time != null) __obj.updateDynamic("creation_time")(creation_time.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(premium)) __obj.updateDynamic("premium")(premium.asInstanceOf[js.Any])
+    if (subAccounts != null) __obj.updateDynamic("subAccounts")(subAccounts.asInstanceOf[js.Any])
+    if (timezone != null) __obj.updateDynamic("timezone")(timezone.asInstanceOf[js.Any])
     __obj.asInstanceOf[Account]
   }
 }

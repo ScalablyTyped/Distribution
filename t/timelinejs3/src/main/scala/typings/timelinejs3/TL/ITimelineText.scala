@@ -19,8 +19,8 @@ object ITimelineText {
   @scala.inline
   def apply(headline: String = null, text: String = null): ITimelineText = {
     val __obj = js.Dynamic.literal()
-    if (headline != null) __obj.updateDynamic("headline")(headline)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (headline != null) __obj.updateDynamic("headline")(headline.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITimelineText]
   }
 }

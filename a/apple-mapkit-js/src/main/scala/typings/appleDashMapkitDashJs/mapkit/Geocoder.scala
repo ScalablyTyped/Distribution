@@ -1,6 +1,5 @@
 package typings.appleDashMapkitDashJs.mapkit
 
-import typings.appleDashMapkitDashJs.appleDashMapkitDashJsStrings.language
 import typings.std.Error
 import typings.std.Pick
 import scala.scalajs.js
@@ -61,7 +60,10 @@ class Geocoder () extends js.Object {
   def reverseLookup_language(
     coordinate: Coordinate,
     callback: js.Function2[/* error */ Error | Null, /* data */ GeocoderResponse, Unit],
-    options: Pick[GeocoderConstructorOptions, language]
+    options: Pick[
+      GeocoderConstructorOptions, 
+      typings.appleDashMapkitDashJs.appleDashMapkitDashJsStrings.language
+    ]
   ): Double = js.native
 }
 

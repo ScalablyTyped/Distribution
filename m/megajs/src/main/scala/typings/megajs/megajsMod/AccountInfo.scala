@@ -25,8 +25,8 @@ object AccountInfo {
     spaceUsed: Double,
     `type`: String
   ): AccountInfo = {
-    val __obj = js.Dynamic.literal(downloadBandwidthTotal = downloadBandwidthTotal, downloadBandwidthUsed = downloadBandwidthUsed, sharedBandwidthLimit = sharedBandwidthLimit, sharedBandwidthUsed = sharedBandwidthUsed, spaceTotal = spaceTotal, spaceUsed = spaceUsed)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(downloadBandwidthTotal = downloadBandwidthTotal.asInstanceOf[js.Any], downloadBandwidthUsed = downloadBandwidthUsed.asInstanceOf[js.Any], sharedBandwidthLimit = sharedBandwidthLimit.asInstanceOf[js.Any], sharedBandwidthUsed = sharedBandwidthUsed.asInstanceOf[js.Any], spaceTotal = spaceTotal.asInstanceOf[js.Any], spaceUsed = spaceUsed.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountInfo]
   }
 }

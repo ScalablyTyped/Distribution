@@ -26,11 +26,11 @@ object UnionTypeDefinitionNode {
     loc: Location = null,
     types: js.Array[NamedTypeNode] = null
   ): UnionTypeDefinitionNode = {
-    val __obj = js.Dynamic.literal(kind = kind, name = name)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (directives != null) __obj.updateDynamic("directives")(directives)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (types != null) __obj.updateDynamic("types")(types)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (directives != null) __obj.updateDynamic("directives")(directives.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnionTypeDefinitionNode]
   }
 }

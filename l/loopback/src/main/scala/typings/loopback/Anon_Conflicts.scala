@@ -13,7 +13,7 @@ trait Anon_Conflicts extends js.Object {
 object Anon_Conflicts {
   @scala.inline
   def apply(conflicts: js.Array[Conflict], params: js.Any): Anon_Conflicts = {
-    val __obj = js.Dynamic.literal(conflicts = conflicts, params = params)
+    val __obj = js.Dynamic.literal(conflicts = conflicts.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Conflicts]
   }

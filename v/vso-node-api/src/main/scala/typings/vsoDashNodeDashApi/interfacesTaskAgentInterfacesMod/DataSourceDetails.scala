@@ -20,7 +20,7 @@ object DataSourceDetails {
     parameters: StringDictionary[String],
     resultSelector: String
   ): DataSourceDetails = {
-    val __obj = js.Dynamic.literal(dataSourceName = dataSourceName, dataSourceUrl = dataSourceUrl, parameters = parameters, resultSelector = resultSelector)
+    val __obj = js.Dynamic.literal(dataSourceName = dataSourceName.asInstanceOf[js.Any], dataSourceUrl = dataSourceUrl.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any], resultSelector = resultSelector.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DataSourceDetails]
   }

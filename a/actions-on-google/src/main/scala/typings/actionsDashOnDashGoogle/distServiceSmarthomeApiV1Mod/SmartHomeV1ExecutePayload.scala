@@ -17,9 +17,9 @@ object SmartHomeV1ExecutePayload {
     debugString: String = null,
     errorCode: SmartHomeV1ExecuteErrors = null
   ): SmartHomeV1ExecutePayload = {
-    val __obj = js.Dynamic.literal(commands = commands)
-    if (debugString != null) __obj.updateDynamic("debugString")(debugString)
-    if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode)
+    val __obj = js.Dynamic.literal(commands = commands.asInstanceOf[js.Any])
+    if (debugString != null) __obj.updateDynamic("debugString")(debugString.asInstanceOf[js.Any])
+    if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SmartHomeV1ExecutePayload]
   }
 }

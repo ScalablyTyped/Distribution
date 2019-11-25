@@ -27,11 +27,11 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (append != null) __obj.updateDynamic("append")(append.asInstanceOf[js.Any])
-    if (!js.isUndefined(columns)) __obj.updateDynamic("columns")(columns)
+    if (!js.isUndefined(columns)) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
     if (lineToLine != null) __obj.updateDynamic("lineToLine")(lineToLine.asInstanceOf[js.Any])
-    if (!js.isUndefined(module)) __obj.updateDynamic("module")(module)
-    if (moduleFilenameTemplate != null) __obj.updateDynamic("moduleFilenameTemplate")(moduleFilenameTemplate)
-    if (sourceRoot != null) __obj.updateDynamic("sourceRoot")(sourceRoot)
+    if (!js.isUndefined(module)) __obj.updateDynamic("module")(module.asInstanceOf[js.Any])
+    if (moduleFilenameTemplate != null) __obj.updateDynamic("moduleFilenameTemplate")(moduleFilenameTemplate.asInstanceOf[js.Any])
+    if (sourceRoot != null) __obj.updateDynamic("sourceRoot")(sourceRoot.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

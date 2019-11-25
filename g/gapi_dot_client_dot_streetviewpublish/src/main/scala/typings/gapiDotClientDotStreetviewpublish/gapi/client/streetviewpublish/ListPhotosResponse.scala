@@ -22,8 +22,8 @@ object ListPhotosResponse {
   @scala.inline
   def apply(nextPageToken: String = null, photos: js.Array[Photo] = null): ListPhotosResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (photos != null) __obj.updateDynamic("photos")(photos)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (photos != null) __obj.updateDynamic("photos")(photos.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPhotosResponse]
   }
 }

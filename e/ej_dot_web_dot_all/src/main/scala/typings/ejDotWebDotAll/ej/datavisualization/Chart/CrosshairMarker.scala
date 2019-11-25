@@ -30,10 +30,10 @@ object CrosshairMarker {
     visible: js.UndefOr[Boolean] = js.undefined
   ): CrosshairMarker = {
     val __obj = js.Dynamic.literal()
-    if (border != null) __obj.updateDynamic("border")(border)
-    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity)
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[CrosshairMarker]
   }
 }

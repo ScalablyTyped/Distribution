@@ -51,8 +51,8 @@ object IFileUpdate {
     `type`: pdf | jpg | png,
     url: String
   ): IFileUpdate = {
-    val __obj = js.Dynamic.literal(created = created, id = id, purpose = purpose, size = size, url = url)
-    __obj.updateDynamic("object")(`object`)
+    val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], purpose = purpose.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFileUpdate]
   }

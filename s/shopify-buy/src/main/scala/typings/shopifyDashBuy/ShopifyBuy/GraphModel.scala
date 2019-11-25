@@ -13,8 +13,8 @@ object GraphModel {
   @scala.inline
   def apply(attrs: js.Any = null, onlineStoreUrl: String = null): GraphModel = {
     val __obj = js.Dynamic.literal()
-    if (attrs != null) __obj.updateDynamic("attrs")(attrs)
-    if (onlineStoreUrl != null) __obj.updateDynamic("onlineStoreUrl")(onlineStoreUrl)
+    if (attrs != null) __obj.updateDynamic("attrs")(attrs.asInstanceOf[js.Any])
+    if (onlineStoreUrl != null) __obj.updateDynamic("onlineStoreUrl")(onlineStoreUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphModel]
   }
 }

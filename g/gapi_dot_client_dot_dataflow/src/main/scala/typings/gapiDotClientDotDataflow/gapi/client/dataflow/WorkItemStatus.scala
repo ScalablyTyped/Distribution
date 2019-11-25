@@ -105,20 +105,20 @@ object WorkItemStatus {
     workItemId: String = null
   ): WorkItemStatus = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(completed)) __obj.updateDynamic("completed")(completed)
-    if (counterUpdates != null) __obj.updateDynamic("counterUpdates")(counterUpdates)
-    if (dynamicSourceSplit != null) __obj.updateDynamic("dynamicSourceSplit")(dynamicSourceSplit)
-    if (errors != null) __obj.updateDynamic("errors")(errors)
-    if (metricUpdates != null) __obj.updateDynamic("metricUpdates")(metricUpdates)
-    if (progress != null) __obj.updateDynamic("progress")(progress)
-    if (reportIndex != null) __obj.updateDynamic("reportIndex")(reportIndex)
-    if (reportedProgress != null) __obj.updateDynamic("reportedProgress")(reportedProgress)
-    if (requestedLeaseDuration != null) __obj.updateDynamic("requestedLeaseDuration")(requestedLeaseDuration)
-    if (sourceFork != null) __obj.updateDynamic("sourceFork")(sourceFork)
-    if (sourceOperationResponse != null) __obj.updateDynamic("sourceOperationResponse")(sourceOperationResponse)
-    if (stopPosition != null) __obj.updateDynamic("stopPosition")(stopPosition)
+    if (!js.isUndefined(completed)) __obj.updateDynamic("completed")(completed.asInstanceOf[js.Any])
+    if (counterUpdates != null) __obj.updateDynamic("counterUpdates")(counterUpdates.asInstanceOf[js.Any])
+    if (dynamicSourceSplit != null) __obj.updateDynamic("dynamicSourceSplit")(dynamicSourceSplit.asInstanceOf[js.Any])
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
+    if (metricUpdates != null) __obj.updateDynamic("metricUpdates")(metricUpdates.asInstanceOf[js.Any])
+    if (progress != null) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
+    if (reportIndex != null) __obj.updateDynamic("reportIndex")(reportIndex.asInstanceOf[js.Any])
+    if (reportedProgress != null) __obj.updateDynamic("reportedProgress")(reportedProgress.asInstanceOf[js.Any])
+    if (requestedLeaseDuration != null) __obj.updateDynamic("requestedLeaseDuration")(requestedLeaseDuration.asInstanceOf[js.Any])
+    if (sourceFork != null) __obj.updateDynamic("sourceFork")(sourceFork.asInstanceOf[js.Any])
+    if (sourceOperationResponse != null) __obj.updateDynamic("sourceOperationResponse")(sourceOperationResponse.asInstanceOf[js.Any])
+    if (stopPosition != null) __obj.updateDynamic("stopPosition")(stopPosition.asInstanceOf[js.Any])
     if (totalThrottlerWaitTimeSeconds != null) __obj.updateDynamic("totalThrottlerWaitTimeSeconds")(totalThrottlerWaitTimeSeconds.asInstanceOf[js.Any])
-    if (workItemId != null) __obj.updateDynamic("workItemId")(workItemId)
+    if (workItemId != null) __obj.updateDynamic("workItemId")(workItemId.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkItemStatus]
   }
 }

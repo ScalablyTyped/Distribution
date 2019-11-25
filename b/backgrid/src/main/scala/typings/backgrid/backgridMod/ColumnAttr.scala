@@ -27,7 +27,7 @@ object ColumnAttr {
     renderable: Boolean,
     sortable: Boolean
   ): ColumnAttr = {
-    val __obj = js.Dynamic.literal(cell = cell, editable = editable, formater = formater, headerCell = headerCell, label = label, name = name, renderable = renderable, sortable = sortable)
+    val __obj = js.Dynamic.literal(cell = cell.asInstanceOf[js.Any], editable = editable.asInstanceOf[js.Any], formater = formater.asInstanceOf[js.Any], headerCell = headerCell.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], renderable = renderable.asInstanceOf[js.Any], sortable = sortable.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ColumnAttr]
   }

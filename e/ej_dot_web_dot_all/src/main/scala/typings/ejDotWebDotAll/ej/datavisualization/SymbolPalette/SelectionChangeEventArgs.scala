@@ -17,8 +17,8 @@ object SelectionChangeEventArgs {
   @scala.inline
   def apply(changeType: String = null, element: js.Any = null): SelectionChangeEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (changeType != null) __obj.updateDynamic("changeType")(changeType)
-    if (element != null) __obj.updateDynamic("element")(element)
+    if (changeType != null) __obj.updateDynamic("changeType")(changeType.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectionChangeEventArgs]
   }
 }

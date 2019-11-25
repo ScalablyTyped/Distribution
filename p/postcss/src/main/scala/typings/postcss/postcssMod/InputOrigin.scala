@@ -48,9 +48,9 @@ object InputOrigin {
   def apply(column: Int | Double = null, file: String = null, line: Int | Double = null, source: String = null): InputOrigin = {
     val __obj = js.Dynamic.literal()
     if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
-    if (file != null) __obj.updateDynamic("file")(file)
+    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
     if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputOrigin]
   }
 }

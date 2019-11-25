@@ -12,7 +12,7 @@ object Options {
   @scala.inline
   def apply(gitDir: String = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (gitDir != null) __obj.updateDynamic("gitDir")(gitDir)
+    if (gitDir != null) __obj.updateDynamic("gitDir")(gitDir.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -24,12 +24,12 @@ object Anon_Base {
     webkitAutofill: String = null
   ): Anon_Base = {
     val __obj = js.Dynamic.literal()
-    if (base != null) __obj.updateDynamic("base")(base)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (empty != null) __obj.updateDynamic("empty")(empty)
-    if (focus != null) __obj.updateDynamic("focus")(focus)
-    if (invalid != null) __obj.updateDynamic("invalid")(invalid)
-    if (webkitAutofill != null) __obj.updateDynamic("webkitAutofill")(webkitAutofill)
+    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
+    if (complete != null) __obj.updateDynamic("complete")(complete.asInstanceOf[js.Any])
+    if (empty != null) __obj.updateDynamic("empty")(empty.asInstanceOf[js.Any])
+    if (focus != null) __obj.updateDynamic("focus")(focus.asInstanceOf[js.Any])
+    if (invalid != null) __obj.updateDynamic("invalid")(invalid.asInstanceOf[js.Any])
+    if (webkitAutofill != null) __obj.updateDynamic("webkitAutofill")(webkitAutofill.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Base]
   }
 }

@@ -18,7 +18,7 @@ trait MemoryRange extends js.Object {
 object MemoryRange {
   @scala.inline
   def apply(base: NativePointer, size: Double): MemoryRange = {
-    val __obj = js.Dynamic.literal(base = base, size = size)
+    val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MemoryRange]
   }

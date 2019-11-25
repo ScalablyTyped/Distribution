@@ -37,7 +37,7 @@ object DesaturationColorMapping {
     to: Int | Double = null
   ): DesaturationColorMapping = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
     if (rangeMaximum != null) __obj.updateDynamic("rangeMaximum")(rangeMaximum.asInstanceOf[js.Any])
     if (rangeMinimum != null) __obj.updateDynamic("rangeMinimum")(rangeMinimum.asInstanceOf[js.Any])

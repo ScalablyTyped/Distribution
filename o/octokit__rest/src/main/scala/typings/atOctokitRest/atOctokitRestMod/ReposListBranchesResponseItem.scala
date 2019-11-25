@@ -21,8 +21,8 @@ object ReposListBranchesResponseItem {
     protection: ReposListBranchesResponseItemProtection,
     protection_url: String
   ): ReposListBranchesResponseItem = {
-    val __obj = js.Dynamic.literal(commit = commit, name = name, protection = protection, protection_url = protection_url)
-    __obj.updateDynamic("protected")(`protected`)
+    val __obj = js.Dynamic.literal(commit = commit.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], protection = protection.asInstanceOf[js.Any], protection_url = protection_url.asInstanceOf[js.Any])
+    __obj.updateDynamic("protected")(`protected`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposListBranchesResponseItem]
   }
 }

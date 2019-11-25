@@ -13,7 +13,7 @@ trait Anon_Accepted extends js.Object {
 object Anon_Accepted {
   @scala.inline
   def apply(accepted: Double, open: Double, rejected: Double): Anon_Accepted = {
-    val __obj = js.Dynamic.literal(accepted = accepted, open = open, rejected = rejected)
+    val __obj = js.Dynamic.literal(accepted = accepted.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any], rejected = rejected.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Accepted]
   }

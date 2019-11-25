@@ -13,8 +13,8 @@ object DiagramShapeEditable {
   @scala.inline
   def apply(connect: js.UndefOr[Boolean] = js.undefined, tools: js.Array[DiagramShapeEditableTool] = null): DiagramShapeEditable = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(connect)) __obj.updateDynamic("connect")(connect)
-    if (tools != null) __obj.updateDynamic("tools")(tools)
+    if (!js.isUndefined(connect)) __obj.updateDynamic("connect")(connect.asInstanceOf[js.Any])
+    if (tools != null) __obj.updateDynamic("tools")(tools.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagramShapeEditable]
   }
 }

@@ -35,8 +35,8 @@ object InputContext {
     spellCheck: Boolean,
     `type`: String
   ): InputContext = {
-    val __obj = js.Dynamic.literal(autoComplete = autoComplete, autoCorrect = autoCorrect, contextID = contextID, spellCheck = spellCheck)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(autoComplete = autoComplete.asInstanceOf[js.Any], autoCorrect = autoCorrect.asInstanceOf[js.Any], contextID = contextID.asInstanceOf[js.Any], spellCheck = spellCheck.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputContext]
   }
 }

@@ -13,7 +13,7 @@ trait LinterResult extends js.Object {
 object LinterResult {
   @scala.inline
   def apply(errored: Boolean, output: String, results: js.Array[LintResult]): LinterResult = {
-    val __obj = js.Dynamic.literal(errored = errored, output = output, results = results)
+    val __obj = js.Dynamic.literal(errored = errored.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LinterResult]
   }

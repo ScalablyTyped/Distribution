@@ -13,7 +13,7 @@ trait Holidays extends js.Object {
 object Holidays {
   @scala.inline
   def apply(active: HolidaysMapping, active_last: HolidaysMapping): Holidays = {
-    val __obj = js.Dynamic.literal(active = active, active_last = active_last)
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], active_last = active_last.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Holidays]
   }

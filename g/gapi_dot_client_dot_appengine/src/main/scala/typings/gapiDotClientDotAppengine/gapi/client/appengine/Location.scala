@@ -28,10 +28,10 @@ object Location {
     name: String = null
   ): Location = {
     val __obj = js.Dynamic.literal()
-    if (labels != null) __obj.updateDynamic("labels")(labels)
-    if (locationId != null) __obj.updateDynamic("locationId")(locationId)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (locationId != null) __obj.updateDynamic("locationId")(locationId.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Location]
   }
 }

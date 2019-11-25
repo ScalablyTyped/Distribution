@@ -12,7 +12,7 @@ object Copy {
   @scala.inline
   def apply(originalObject: TargetReference = null): Copy = {
     val __obj = js.Dynamic.literal()
-    if (originalObject != null) __obj.updateDynamic("originalObject")(originalObject)
+    if (originalObject != null) __obj.updateDynamic("originalObject")(originalObject.asInstanceOf[js.Any])
     __obj.asInstanceOf[Copy]
   }
 }

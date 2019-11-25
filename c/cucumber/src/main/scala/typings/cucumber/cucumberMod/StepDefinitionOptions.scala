@@ -15,7 +15,7 @@ object StepDefinitionOptions {
   def apply(timeout: Int | Double = null, wrapperOptions: StringDictionary[js.Any] = null): StepDefinitionOptions = {
     val __obj = js.Dynamic.literal()
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (wrapperOptions != null) __obj.updateDynamic("wrapperOptions")(wrapperOptions)
+    if (wrapperOptions != null) __obj.updateDynamic("wrapperOptions")(wrapperOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[StepDefinitionOptions]
   }
 }

@@ -12,7 +12,7 @@ trait GetVisibleCellRangeParams extends js.Object {
 object GetVisibleCellRangeParams {
   @scala.inline
   def apply(containerSize: Double, offset: Double): GetVisibleCellRangeParams = {
-    val __obj = js.Dynamic.literal(containerSize = containerSize, offset = offset)
+    val __obj = js.Dynamic.literal(containerSize = containerSize.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetVisibleCellRangeParams]
   }

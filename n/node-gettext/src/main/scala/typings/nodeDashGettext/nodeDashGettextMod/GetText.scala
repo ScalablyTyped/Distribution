@@ -40,17 +40,16 @@ object GetText {
     gettext: String => String,
     ngettext: (String, String, Double) => String,
     npgettext: (String, String, String, Double) => String,
-    off_error: (error, js.Function1[/* error */ String, Unit]) => Unit,
-    on_error: (error, js.Function1[/* error */ String, Unit]) => Unit,
+    off: (error, js.Function1[/* error */ String, Unit]) => Unit,
+    on: (error, js.Function1[/* error */ String, Unit]) => Unit,
     pgettext: (String, String) => String,
     setLocale: String => Unit,
     setTextDomain: String => Unit,
     textdomain: String => Unit,
     warn: String => Unit
   ): GetText = {
-    val __obj = js.Dynamic.literal(addTranslations = js.Any.fromFunction3(addTranslations), dgettext = js.Any.fromFunction2(dgettext), dngettext = js.Any.fromFunction4(dngettext), dnpgettext = js.Any.fromFunction5(dnpgettext), dpgettext = js.Any.fromFunction3(dpgettext), emit = js.Any.fromFunction2(emit), getComment = js.Any.fromFunction3(getComment), gettext = js.Any.fromFunction1(gettext), ngettext = js.Any.fromFunction3(ngettext), npgettext = js.Any.fromFunction4(npgettext), pgettext = js.Any.fromFunction2(pgettext), setLocale = js.Any.fromFunction1(setLocale), setTextDomain = js.Any.fromFunction1(setTextDomain), textdomain = js.Any.fromFunction1(textdomain), warn = js.Any.fromFunction1(warn))
-    __obj.updateDynamic("off")(js.Any.fromFunction2(off_error))
-    __obj.updateDynamic("on")(js.Any.fromFunction2(on_error))
+    val __obj = js.Dynamic.literal(addTranslations = js.Any.fromFunction3(addTranslations), dgettext = js.Any.fromFunction2(dgettext), dngettext = js.Any.fromFunction4(dngettext), dnpgettext = js.Any.fromFunction5(dnpgettext), dpgettext = js.Any.fromFunction3(dpgettext), emit = js.Any.fromFunction2(emit), getComment = js.Any.fromFunction3(getComment), gettext = js.Any.fromFunction1(gettext), ngettext = js.Any.fromFunction3(ngettext), npgettext = js.Any.fromFunction4(npgettext), off = js.Any.fromFunction2(off), on = js.Any.fromFunction2(on), pgettext = js.Any.fromFunction2(pgettext), setLocale = js.Any.fromFunction1(setLocale), setTextDomain = js.Any.fromFunction1(setTextDomain), textdomain = js.Any.fromFunction1(textdomain), warn = js.Any.fromFunction1(warn))
+  
     __obj.asInstanceOf[GetText]
   }
 }

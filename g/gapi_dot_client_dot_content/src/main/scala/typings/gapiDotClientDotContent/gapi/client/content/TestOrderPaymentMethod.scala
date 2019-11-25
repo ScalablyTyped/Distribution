@@ -29,9 +29,9 @@ object TestOrderPaymentMethod {
     val __obj = js.Dynamic.literal()
     if (expirationMonth != null) __obj.updateDynamic("expirationMonth")(expirationMonth.asInstanceOf[js.Any])
     if (expirationYear != null) __obj.updateDynamic("expirationYear")(expirationYear.asInstanceOf[js.Any])
-    if (lastFourDigits != null) __obj.updateDynamic("lastFourDigits")(lastFourDigits)
-    if (predefinedBillingAddress != null) __obj.updateDynamic("predefinedBillingAddress")(predefinedBillingAddress)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (lastFourDigits != null) __obj.updateDynamic("lastFourDigits")(lastFourDigits.asInstanceOf[js.Any])
+    if (predefinedBillingAddress != null) __obj.updateDynamic("predefinedBillingAddress")(predefinedBillingAddress.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestOrderPaymentMethod]
   }
 }

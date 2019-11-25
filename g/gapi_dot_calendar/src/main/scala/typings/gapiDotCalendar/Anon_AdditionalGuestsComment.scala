@@ -33,11 +33,11 @@ object Anon_AdditionalGuestsComment {
     displayName: String = null,
     optional: js.UndefOr[Boolean] = js.undefined
   ): Anon_AdditionalGuestsComment = {
-    val __obj = js.Dynamic.literal(email = email, id = id, organizer = organizer, resource = resource, responseStatus = responseStatus, self = self)
+    val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], organizer = organizer.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], responseStatus = responseStatus.asInstanceOf[js.Any], self = self.asInstanceOf[js.Any])
     if (additionalGuests != null) __obj.updateDynamic("additionalGuests")(additionalGuests.asInstanceOf[js.Any])
-    if (comment != null) __obj.updateDynamic("comment")(comment)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional)
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AdditionalGuestsComment]
   }
 }

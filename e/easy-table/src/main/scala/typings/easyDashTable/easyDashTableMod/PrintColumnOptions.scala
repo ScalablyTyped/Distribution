@@ -20,7 +20,7 @@ object PrintColumnOptions {
   def apply[T](namePrinter: (T, /* width */ Double) => String = null, separator: String = null): PrintColumnOptions[T] = {
     val __obj = js.Dynamic.literal()
     if (namePrinter != null) __obj.updateDynamic("namePrinter")(js.Any.fromFunction2(namePrinter))
-    if (separator != null) __obj.updateDynamic("separator")(separator)
+    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrintColumnOptions[T]]
   }
 }

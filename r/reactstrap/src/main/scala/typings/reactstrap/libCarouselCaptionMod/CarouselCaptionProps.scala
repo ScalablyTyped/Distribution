@@ -28,12 +28,12 @@ object CarouselCaptionProps {
     captionHeader: String = null,
     cssModule: CSSModule = null
   ): CarouselCaptionProps = {
-    val __obj = js.Dynamic.literal(captionText = captionText)
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (captionHeader != null) __obj.updateDynamic("captionHeader")(captionHeader)
-    if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule)
+    val __obj = js.Dynamic.literal(captionText = captionText.asInstanceOf[js.Any])
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (captionHeader != null) __obj.updateDynamic("captionHeader")(captionHeader.asInstanceOf[js.Any])
+    if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule.asInstanceOf[js.Any])
     __obj.asInstanceOf[CarouselCaptionProps]
   }
 }

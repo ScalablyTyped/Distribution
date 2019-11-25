@@ -23,9 +23,9 @@ object GetIntervalProps {
     style: CSSProperties = null
   ): GetIntervalProps = {
     val __obj = js.Dynamic.literal()
-    if (interval != null) __obj.updateDynamic("interval")(interval)
+    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetIntervalProps]
   }
 }

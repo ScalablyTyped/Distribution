@@ -20,9 +20,9 @@ object PostModuleAction {
     geoJsonOption: IGeoJsonReadOptions = null,
     geoXmlOption: IGeoXmlLayerOptions = null
   ): PostModuleAction = {
-    val __obj = js.Dynamic.literal(addLayerFromUrl = addLayerFromUrl)
-    if (geoJsonOption != null) __obj.updateDynamic("geoJsonOption")(geoJsonOption)
-    if (geoXmlOption != null) __obj.updateDynamic("geoXmlOption")(geoXmlOption)
+    val __obj = js.Dynamic.literal(addLayerFromUrl = addLayerFromUrl.asInstanceOf[js.Any])
+    if (geoJsonOption != null) __obj.updateDynamic("geoJsonOption")(geoJsonOption.asInstanceOf[js.Any])
+    if (geoXmlOption != null) __obj.updateDynamic("geoXmlOption")(geoXmlOption.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostModuleAction]
   }
 }

@@ -36,7 +36,7 @@ object ISuggestionsStyles {
     suggestionsContainer: IStyle = null,
     title: IStyle = null
   ): ISuggestionsStyles = {
-    val __obj = js.Dynamic.literal(subComponentStyles = subComponentStyles)
+    val __obj = js.Dynamic.literal(subComponentStyles = subComponentStyles.asInstanceOf[js.Any])
     if (forceResolveButton != null) __obj.updateDynamic("forceResolveButton")(forceResolveButton.asInstanceOf[js.Any])
     if (noSuggestions != null) __obj.updateDynamic("noSuggestions")(noSuggestions.asInstanceOf[js.Any])
     if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])

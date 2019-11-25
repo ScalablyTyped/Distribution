@@ -23,7 +23,7 @@ trait _runsemaphore extends js.Object {
 object _runsemaphore {
   @scala.inline
   def apply(lock: js.Array[_], unlock: () => js.Any): _runsemaphore = {
-    val __obj = js.Dynamic.literal(lock = lock, unlock = js.Any.fromFunction0(unlock))
+    val __obj = js.Dynamic.literal(lock = lock.asInstanceOf[js.Any], unlock = js.Any.fromFunction0(unlock))
   
     __obj.asInstanceOf[_runsemaphore]
   }

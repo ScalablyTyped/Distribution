@@ -41,7 +41,7 @@ object GoogleApiUrlShortenerUrlResource {
     longUrl: String,
     status: String
   ): GoogleApiUrlShortenerUrlResource = {
-    val __obj = js.Dynamic.literal(analytics = analytics, created = created, id = id, kind = kind, longUrl = longUrl, status = status)
+    val __obj = js.Dynamic.literal(analytics = analytics.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], longUrl = longUrl.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GoogleApiUrlShortenerUrlResource]
   }

@@ -28,9 +28,9 @@ object PaceAjaxOptions {
     trackWebSockets: js.UndefOr[Boolean] = js.undefined
   ): PaceAjaxOptions = {
     val __obj = js.Dynamic.literal()
-    if (ignoreURLs != null) __obj.updateDynamic("ignoreURLs")(ignoreURLs)
-    if (trackMethods != null) __obj.updateDynamic("trackMethods")(trackMethods)
-    if (!js.isUndefined(trackWebSockets)) __obj.updateDynamic("trackWebSockets")(trackWebSockets)
+    if (ignoreURLs != null) __obj.updateDynamic("ignoreURLs")(ignoreURLs.asInstanceOf[js.Any])
+    if (trackMethods != null) __obj.updateDynamic("trackMethods")(trackMethods.asInstanceOf[js.Any])
+    if (!js.isUndefined(trackWebSockets)) __obj.updateDynamic("trackWebSockets")(trackWebSockets.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaceAjaxOptions]
   }
 }

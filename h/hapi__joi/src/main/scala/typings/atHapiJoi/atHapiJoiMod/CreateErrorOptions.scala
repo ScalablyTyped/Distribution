@@ -13,8 +13,8 @@ object CreateErrorOptions {
   @scala.inline
   def apply(flags: js.UndefOr[Boolean] = js.undefined, messages: LanguageMessages = null): CreateErrorOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(flags)) __obj.updateDynamic("flags")(flags)
-    if (messages != null) __obj.updateDynamic("messages")(messages)
+    if (!js.isUndefined(flags)) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
+    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateErrorOptions]
   }
 }

@@ -12,7 +12,7 @@ trait plupload_filters_mime_types extends js.Object {
 object plupload_filters_mime_types {
   @scala.inline
   def apply(extensions: String, title: String): plupload_filters_mime_types = {
-    val __obj = js.Dynamic.literal(extensions = extensions, title = title)
+    val __obj = js.Dynamic.literal(extensions = extensions.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[plupload_filters_mime_types]
   }

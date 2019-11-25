@@ -2,32 +2,12 @@ package typings.socketDotIoDashRedis.socketDotIoDashRedisMod
 
 import typings.socketDotIo.socketDotIoMod.Adapter
 import typings.socketDotIoDashRedis.Anon_Except
-import typings.socketDotIoDashRedis.Fn_Callback
-import typings.socketDotIoDashRedis.Fn_Opts
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait RedisAdapter extends Adapter {
-  /**
-  		 * Broadcasts a packet
-  		 * @param packet The packet to broadcast
-  		 * @param opts Any options to send along:
-  		 *    - rooms: An optional list of rooms to broadcast to. If empty, the packet is broadcast to all sockets
-  		 *    - except: A list of Socket IDs to exclude
-  		 *    - flags: Any flags that we want to send along ('json', 'volatile', 'broadcast')
-  		 * @param remote The optional flag, whether the packet came from another node
-  		 */
-  @JSName("broadcast")
-  var broadcast_Original: Fn_Opts = js.native
-  /**
-  		 * Removes a socket from all the rooms that it's joined
-  		 * @param id The ID of the socket that we're removing
-  		 * @param callback An optional callback to call when the socket has been
-  		 */
-  @JSName("delAll")
-  var delAll_Original: Fn_Callback = js.native
   /**
   		 * The prefix of pub/sub events
   		 */

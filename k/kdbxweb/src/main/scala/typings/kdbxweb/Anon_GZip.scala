@@ -12,7 +12,7 @@ trait Anon_GZip extends js.Object {
 object Anon_GZip {
   @scala.inline
   def apply(GZip: Double, None: Double): Anon_GZip = {
-    val __obj = js.Dynamic.literal(GZip = GZip, None = None)
+    val __obj = js.Dynamic.literal(GZip = GZip.asInstanceOf[js.Any], None = None.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_GZip]
   }

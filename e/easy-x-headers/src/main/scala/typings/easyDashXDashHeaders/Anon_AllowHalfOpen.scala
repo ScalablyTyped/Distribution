@@ -14,9 +14,9 @@ object Anon_AllowHalfOpen {
   @scala.inline
   def apply(allowHalfOpen: js.UndefOr[Boolean] = js.undefined, fd: String = null, `type`: String = null): Anon_AllowHalfOpen = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowHalfOpen)) __obj.updateDynamic("allowHalfOpen")(allowHalfOpen)
-    if (fd != null) __obj.updateDynamic("fd")(fd)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(allowHalfOpen)) __obj.updateDynamic("allowHalfOpen")(allowHalfOpen.asInstanceOf[js.Any])
+    if (fd != null) __obj.updateDynamic("fd")(fd.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AllowHalfOpen]
   }
 }

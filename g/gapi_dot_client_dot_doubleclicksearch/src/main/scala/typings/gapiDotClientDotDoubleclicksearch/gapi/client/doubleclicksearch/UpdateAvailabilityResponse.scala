@@ -13,7 +13,7 @@ object UpdateAvailabilityResponse {
   @scala.inline
   def apply(availabilities: js.Array[Availability] = null): UpdateAvailabilityResponse = {
     val __obj = js.Dynamic.literal()
-    if (availabilities != null) __obj.updateDynamic("availabilities")(availabilities)
+    if (availabilities != null) __obj.updateDynamic("availabilities")(availabilities.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateAvailabilityResponse]
   }
 }

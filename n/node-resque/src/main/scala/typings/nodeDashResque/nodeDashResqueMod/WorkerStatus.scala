@@ -15,7 +15,7 @@ trait WorkerStatus extends js.Object {
 object WorkerStatus {
   @scala.inline
   def apply(payload: Anon_Args, queue: String, run_at: String, worker: String): WorkerStatus = {
-    val __obj = js.Dynamic.literal(payload = payload, queue = queue, run_at = run_at, worker = worker)
+    val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any], queue = queue.asInstanceOf[js.Any], run_at = run_at.asInstanceOf[js.Any], worker = worker.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WorkerStatus]
   }

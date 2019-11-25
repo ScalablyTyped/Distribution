@@ -11,7 +11,7 @@ trait InsightsServiceAccountResponseAccount_discovery_graph extends js.Object {
 object InsightsServiceAccountResponseAccount_discovery_graph {
   @scala.inline
   def apply(nodes: js.Array[InsightsServiceAccountResponseNodesItem]): InsightsServiceAccountResponseAccount_discovery_graph = {
-    val __obj = js.Dynamic.literal(nodes = nodes)
+    val __obj = js.Dynamic.literal(nodes = nodes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InsightsServiceAccountResponseAccount_discovery_graph]
   }

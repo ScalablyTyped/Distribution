@@ -13,7 +13,7 @@ trait Anon_Action extends js.Object {
 object Anon_Action {
   @scala.inline
   def apply(Action: js.Any, Cancel: Boolean, Response: js.Any): Anon_Action = {
-    val __obj = js.Dynamic.literal(Action = Action, Cancel = Cancel, Response = Response)
+    val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], Cancel = Cancel.asInstanceOf[js.Any], Response = Response.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Action]
   }

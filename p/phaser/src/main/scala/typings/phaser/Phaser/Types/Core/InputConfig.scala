@@ -54,7 +54,7 @@ object InputConfig {
     if (mouse != null) __obj.updateDynamic("mouse")(mouse.asInstanceOf[js.Any])
     if (smoothFactor != null) __obj.updateDynamic("smoothFactor")(smoothFactor.asInstanceOf[js.Any])
     if (touch != null) __obj.updateDynamic("touch")(touch.asInstanceOf[js.Any])
-    if (!js.isUndefined(windowEvents)) __obj.updateDynamic("windowEvents")(windowEvents)
+    if (!js.isUndefined(windowEvents)) __obj.updateDynamic("windowEvents")(windowEvents.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputConfig]
   }
 }

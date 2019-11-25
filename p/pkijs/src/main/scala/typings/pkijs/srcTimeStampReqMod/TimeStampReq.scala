@@ -30,11 +30,11 @@ object TimeStampReq {
     nonce: Integer = null,
     reqPolicy: String = null
   ): TimeStampReq = {
-    val __obj = js.Dynamic.literal(fromSchema = js.Any.fromFunction1(fromSchema), messageImprint = messageImprint, toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema), version = version)
-    if (!js.isUndefined(certReq)) __obj.updateDynamic("certReq")(certReq)
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
-    if (nonce != null) __obj.updateDynamic("nonce")(nonce)
-    if (reqPolicy != null) __obj.updateDynamic("reqPolicy")(reqPolicy)
+    val __obj = js.Dynamic.literal(fromSchema = js.Any.fromFunction1(fromSchema), messageImprint = messageImprint.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema), version = version.asInstanceOf[js.Any])
+    if (!js.isUndefined(certReq)) __obj.updateDynamic("certReq")(certReq.asInstanceOf[js.Any])
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
+    if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
+    if (reqPolicy != null) __obj.updateDynamic("reqPolicy")(reqPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeStampReq]
   }
 }

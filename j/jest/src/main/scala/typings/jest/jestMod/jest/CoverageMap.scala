@@ -23,7 +23,7 @@ object CoverageMap {
     getCoverageSummary: () => FileCoverage,
     merge: js.Object => Unit
   ): CoverageMap = {
-    val __obj = js.Dynamic.literal(addFileCoverage = js.Any.fromFunction1(addFileCoverage), data = data, fileCoverageFor = js.Any.fromFunction1(fileCoverageFor), files = js.Any.fromFunction0(files), getCoverageSummary = js.Any.fromFunction0(getCoverageSummary), merge = js.Any.fromFunction1(merge))
+    val __obj = js.Dynamic.literal(addFileCoverage = js.Any.fromFunction1(addFileCoverage), data = data.asInstanceOf[js.Any], fileCoverageFor = js.Any.fromFunction1(fileCoverageFor), files = js.Any.fromFunction0(files), getCoverageSummary = js.Any.fromFunction0(getCoverageSummary), merge = js.Any.fromFunction1(merge))
   
     __obj.asInstanceOf[CoverageMap]
   }

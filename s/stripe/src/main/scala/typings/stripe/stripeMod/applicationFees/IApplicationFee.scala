@@ -75,8 +75,8 @@ object IApplicationFee {
     refunded: Boolean,
     refunds: IApplicationFeeRefunds
   ): IApplicationFee = {
-    val __obj = js.Dynamic.literal(account = account.asInstanceOf[js.Any], amount = amount, amount_refunded = amount_refunded, application = application.asInstanceOf[js.Any], balance_transaction = balance_transaction.asInstanceOf[js.Any], charge = charge.asInstanceOf[js.Any], created = created, currency = currency, id = id, livemode = livemode, originating_transaction = originating_transaction, refunded = refunded, refunds = refunds)
-    __obj.updateDynamic("object")(`object`)
+    val __obj = js.Dynamic.literal(account = account.asInstanceOf[js.Any], amount = amount.asInstanceOf[js.Any], amount_refunded = amount_refunded.asInstanceOf[js.Any], application = application.asInstanceOf[js.Any], balance_transaction = balance_transaction.asInstanceOf[js.Any], charge = charge.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], originating_transaction = originating_transaction.asInstanceOf[js.Any], refunded = refunded.asInstanceOf[js.Any], refunds = refunds.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IApplicationFee]
   }
 }

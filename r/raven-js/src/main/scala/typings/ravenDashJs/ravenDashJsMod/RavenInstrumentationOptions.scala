@@ -12,7 +12,7 @@ object RavenInstrumentationOptions {
   @scala.inline
   def apply(tryCatch: js.UndefOr[Boolean] = js.undefined): RavenInstrumentationOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(tryCatch)) __obj.updateDynamic("tryCatch")(tryCatch)
+    if (!js.isUndefined(tryCatch)) __obj.updateDynamic("tryCatch")(tryCatch.asInstanceOf[js.Any])
     __obj.asInstanceOf[RavenInstrumentationOptions]
   }
 }

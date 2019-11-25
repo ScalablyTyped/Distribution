@@ -26,9 +26,9 @@ object GetPropertiesReturnType {
     exceptionDetails: ExceptionDetails = null,
     internalProperties: js.Array[InternalPropertyDescriptor] = null
   ): GetPropertiesReturnType = {
-    val __obj = js.Dynamic.literal(result = result)
-    if (exceptionDetails != null) __obj.updateDynamic("exceptionDetails")(exceptionDetails)
-    if (internalProperties != null) __obj.updateDynamic("internalProperties")(internalProperties)
+    val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
+    if (exceptionDetails != null) __obj.updateDynamic("exceptionDetails")(exceptionDetails.asInstanceOf[js.Any])
+    if (internalProperties != null) __obj.updateDynamic("internalProperties")(internalProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPropertiesReturnType]
   }
 }

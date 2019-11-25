@@ -18,7 +18,7 @@ trait Anon_Connected extends js.Object {
 object Anon_Connected {
   @scala.inline
   def apply(connected: Boolean, deviceId: String): Anon_Connected = {
-    val __obj = js.Dynamic.literal(connected = connected, deviceId = deviceId)
+    val __obj = js.Dynamic.literal(connected = connected.asInstanceOf[js.Any], deviceId = deviceId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Connected]
   }

@@ -14,9 +14,9 @@ object LabelOptions {
   @scala.inline
   def apply(enableMassClear: js.UndefOr[Boolean] = js.undefined, offset: Size = null, position: Point = null): LabelOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableMassClear)) __obj.updateDynamic("enableMassClear")(enableMassClear)
-    if (offset != null) __obj.updateDynamic("offset")(offset)
-    if (position != null) __obj.updateDynamic("position")(position)
+    if (!js.isUndefined(enableMassClear)) __obj.updateDynamic("enableMassClear")(enableMassClear.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelOptions]
   }
 }

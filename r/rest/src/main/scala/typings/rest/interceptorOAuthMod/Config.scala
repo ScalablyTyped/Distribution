@@ -28,13 +28,13 @@ object Config {
     windowStrategy: /* url */ String => DismissWindow = null
   ): Config = {
     val __obj = js.Dynamic.literal()
-    if (authorizationUrl != null) __obj.updateDynamic("authorizationUrl")(authorizationUrl)
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId)
+    if (authorizationUrl != null) __obj.updateDynamic("authorizationUrl")(authorizationUrl.asInstanceOf[js.Any])
+    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
     if (oAuthCallback != null) __obj.updateDynamic("oAuthCallback")(js.Any.fromFunction1(oAuthCallback))
-    if (oAuthCallbackName != null) __obj.updateDynamic("oAuthCallbackName")(oAuthCallbackName)
-    if (redirectUrl != null) __obj.updateDynamic("redirectUrl")(redirectUrl)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
-    if (token != null) __obj.updateDynamic("token")(token)
+    if (oAuthCallbackName != null) __obj.updateDynamic("oAuthCallbackName")(oAuthCallbackName.asInstanceOf[js.Any])
+    if (redirectUrl != null) __obj.updateDynamic("redirectUrl")(redirectUrl.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     if (windowStrategy != null) __obj.updateDynamic("windowStrategy")(js.Any.fromFunction1(windowStrategy))
     __obj.asInstanceOf[Config]
   }

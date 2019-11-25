@@ -13,8 +13,8 @@ object ChatUser {
   @scala.inline
   def apply(iconUrl: String = null, name: String = null): ChatUser = {
     val __obj = js.Dynamic.literal()
-    if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChatUser]
   }
 }

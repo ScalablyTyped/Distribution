@@ -33,9 +33,9 @@ object IgHierarchicalGridLocale {
     expandTooltip: String = null
   ): IgHierarchicalGridLocale = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (collapseTooltip != null) __obj.updateDynamic("collapseTooltip")(collapseTooltip)
-    if (expandTooltip != null) __obj.updateDynamic("expandTooltip")(expandTooltip)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (collapseTooltip != null) __obj.updateDynamic("collapseTooltip")(collapseTooltip.asInstanceOf[js.Any])
+    if (expandTooltip != null) __obj.updateDynamic("expandTooltip")(expandTooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgHierarchicalGridLocale]
   }
 }

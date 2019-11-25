@@ -30,8 +30,8 @@ object Word {
     word: String,
     error: js.Array[WordError] = null
   ): Word = {
-    val __obj = js.Dynamic.literal(count = count, display_as = display_as, sounds_like = sounds_like, source = source, word = word)
-    if (error != null) __obj.updateDynamic("error")(error)
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], display_as = display_as.asInstanceOf[js.Any], sounds_like = sounds_like.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], word = word.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     __obj.asInstanceOf[Word]
   }
 }

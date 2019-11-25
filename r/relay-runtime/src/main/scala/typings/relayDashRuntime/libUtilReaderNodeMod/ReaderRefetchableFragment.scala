@@ -20,8 +20,8 @@ object ReaderRefetchableFragment {
     selections: js.Array[ReaderSelection],
     `type`: String
   ): ReaderRefetchableFragment = {
-    val __obj = js.Dynamic.literal(argumentDefinitions = argumentDefinitions, kind = kind, metadata = metadata, name = name, selections = selections)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(argumentDefinitions = argumentDefinitions.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReaderRefetchableFragment]
   }
 }

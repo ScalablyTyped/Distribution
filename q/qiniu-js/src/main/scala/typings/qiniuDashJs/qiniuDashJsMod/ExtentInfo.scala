@@ -25,8 +25,8 @@ object ExtentInfo {
     ResolutionUnit: ExtentInfoValue,
     StringDictionary: /* key */ StringDictionary[ExtentInfoValue] = null
   ): ExtentInfo = {
-    val __obj = js.Dynamic.literal(DateTime = DateTime, ExposureBiasValue = ExposureBiasValue, ExposureTime = ExposureTime, ISOSpeedRatings = ISOSpeedRatings, Model = Model, ResolutionUnit = ResolutionUnit)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(DateTime = DateTime.asInstanceOf[js.Any], ExposureBiasValue = ExposureBiasValue.asInstanceOf[js.Any], ExposureTime = ExposureTime.asInstanceOf[js.Any], ISOSpeedRatings = ISOSpeedRatings.asInstanceOf[js.Any], Model = Model.asInstanceOf[js.Any], ResolutionUnit = ResolutionUnit.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ExtentInfo]
   }
 }

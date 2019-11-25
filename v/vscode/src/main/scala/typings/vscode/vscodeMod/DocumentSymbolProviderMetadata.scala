@@ -15,7 +15,7 @@ object DocumentSymbolProviderMetadata {
   @scala.inline
   def apply(label: String = null): DocumentSymbolProviderMetadata = {
     val __obj = js.Dynamic.literal()
-    if (label != null) __obj.updateDynamic("label")(label)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentSymbolProviderMetadata]
   }
 }

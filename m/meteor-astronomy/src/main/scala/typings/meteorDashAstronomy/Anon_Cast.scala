@@ -19,9 +19,9 @@ object Anon_Cast {
     merge: js.UndefOr[Boolean] = js.undefined
   ): Anon_Cast = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cast)) __obj.updateDynamic("cast")(cast)
-    if (!js.isUndefined(clone)) __obj.updateDynamic("clone")(clone)
-    if (!js.isUndefined(merge)) __obj.updateDynamic("merge")(merge)
+    if (!js.isUndefined(cast)) __obj.updateDynamic("cast")(cast.asInstanceOf[js.Any])
+    if (!js.isUndefined(clone)) __obj.updateDynamic("clone")(clone.asInstanceOf[js.Any])
+    if (!js.isUndefined(merge)) __obj.updateDynamic("merge")(merge.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Cast]
   }
 }

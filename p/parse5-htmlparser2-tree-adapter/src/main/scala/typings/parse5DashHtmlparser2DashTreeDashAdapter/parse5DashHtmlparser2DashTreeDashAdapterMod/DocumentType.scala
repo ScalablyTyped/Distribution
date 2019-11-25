@@ -54,11 +54,11 @@ object DocumentType {
     `x-publicId`: String,
     `x-systemId`: String
   ): DocumentType = {
-    val __obj = js.Dynamic.literal(data = data, name = name, next = next, nextSibling = nextSibling, nodeType = nodeType, parent = parent, parentNode = parentNode, prev = prev, previousSibling = previousSibling)
-    __obj.updateDynamic("type")(`type`)
-    __obj.updateDynamic("x-name")(`x-name`)
-    __obj.updateDynamic("x-publicId")(`x-publicId`)
-    __obj.updateDynamic("x-systemId")(`x-systemId`)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], next = next.asInstanceOf[js.Any], nextSibling = nextSibling.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], parentNode = parentNode.asInstanceOf[js.Any], prev = prev.asInstanceOf[js.Any], previousSibling = previousSibling.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("x-name")(`x-name`.asInstanceOf[js.Any])
+    __obj.updateDynamic("x-publicId")(`x-publicId`.asInstanceOf[js.Any])
+    __obj.updateDynamic("x-systemId")(`x-systemId`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentType]
   }
 }

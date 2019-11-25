@@ -14,7 +14,7 @@ trait MethodNames extends js.Object {
 object MethodNames {
   @scala.inline
   def apply(authCodeGrant: String): MethodNames = {
-    val __obj = js.Dynamic.literal(authCodeGrant = authCodeGrant)
+    val __obj = js.Dynamic.literal(authCodeGrant = authCodeGrant.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MethodNames]
   }

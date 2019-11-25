@@ -15,7 +15,7 @@ object FetchProperties {
   @scala.inline
   def apply(`type`: String = null, windowId: Int | Double = null): FetchProperties = {
     val __obj = js.Dynamic.literal()
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (windowId != null) __obj.updateDynamic("windowId")(windowId.asInstanceOf[js.Any])
     __obj.asInstanceOf[FetchProperties]
   }

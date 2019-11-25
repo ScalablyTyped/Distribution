@@ -20,8 +20,8 @@ object Anon_Message {
     statusCode: Int | Double = null
   ): Anon_Message = {
     val __obj = js.Dynamic.literal()
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Message]

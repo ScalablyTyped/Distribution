@@ -2,9 +2,6 @@ package typings.atTensorflowTfjs.atTensorflowTfjsMod
 
 import typings.atTensorflowTfjs.atTensorflowTfjsStrings.NCHW
 import typings.atTensorflowTfjs.atTensorflowTfjsStrings.NHWC
-import typings.atTensorflowTfjs.atTensorflowTfjsStrings.ceil
-import typings.atTensorflowTfjs.atTensorflowTfjsStrings.floor
-import typings.atTensorflowTfjs.atTensorflowTfjsStrings.round
 import typings.atTensorflowTfjs.atTensorflowTfjsStrings.same
 import typings.atTensorflowTfjs.atTensorflowTfjsStrings.valid
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor3D
@@ -45,7 +42,7 @@ object depthwiseConv2d extends js.Object {
     pad: valid | same | Double,
     dataFormat: NHWC | NCHW,
     dilations: (js.Tuple2[Double, Double]) | Double,
-    dimRoundingMode: floor | round | ceil
+    dimRoundingMode: typings.atTensorflowTfjs.atTensorflowTfjsStrings.floor | typings.atTensorflowTfjs.atTensorflowTfjsStrings.round | typings.atTensorflowTfjs.atTensorflowTfjsStrings.ceil
   ): T = js.native
 }
 

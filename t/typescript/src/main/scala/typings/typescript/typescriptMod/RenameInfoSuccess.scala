@@ -30,8 +30,8 @@ object RenameInfoSuccess {
     triggerSpan: TextSpan,
     fileToRename: String = null
   ): RenameInfoSuccess = {
-    val __obj = js.Dynamic.literal(canRename = canRename, displayName = displayName, fullDisplayName = fullDisplayName, kind = kind, kindModifiers = kindModifiers, triggerSpan = triggerSpan)
-    if (fileToRename != null) __obj.updateDynamic("fileToRename")(fileToRename)
+    val __obj = js.Dynamic.literal(canRename = canRename.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], fullDisplayName = fullDisplayName.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], kindModifiers = kindModifiers.asInstanceOf[js.Any], triggerSpan = triggerSpan.asInstanceOf[js.Any])
+    if (fileToRename != null) __obj.updateDynamic("fileToRename")(fileToRename.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenameInfoSuccess]
   }
 }

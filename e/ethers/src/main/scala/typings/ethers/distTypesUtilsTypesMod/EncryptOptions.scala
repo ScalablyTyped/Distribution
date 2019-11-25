@@ -29,14 +29,14 @@ object EncryptOptions {
     uuid: String = null
   ): EncryptOptions = {
     val __obj = js.Dynamic.literal()
-    if (client != null) __obj.updateDynamic("client")(client)
+    if (client != null) __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
     if (entropy != null) __obj.updateDynamic("entropy")(entropy.asInstanceOf[js.Any])
     if (iv != null) __obj.updateDynamic("iv")(iv.asInstanceOf[js.Any])
-    if (mnemonic != null) __obj.updateDynamic("mnemonic")(mnemonic)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (mnemonic != null) __obj.updateDynamic("mnemonic")(mnemonic.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (salt != null) __obj.updateDynamic("salt")(salt.asInstanceOf[js.Any])
-    if (scrypt != null) __obj.updateDynamic("scrypt")(scrypt)
-    if (uuid != null) __obj.updateDynamic("uuid")(uuid)
+    if (scrypt != null) __obj.updateDynamic("scrypt")(scrypt.asInstanceOf[js.Any])
+    if (uuid != null) __obj.updateDynamic("uuid")(uuid.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncryptOptions]
   }
 }

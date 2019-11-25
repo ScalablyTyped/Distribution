@@ -17,7 +17,7 @@ object AsObject {
       typings.googleDashProtobuf.googleProtobufDescriptorUnderscorePbMod.UninterpretedOption.AsObject
     ]
   ): AsObject = {
-    val __obj = js.Dynamic.literal(uninterpretedOptionList = uninterpretedOptionList)
+    val __obj = js.Dynamic.literal(uninterpretedOptionList = uninterpretedOptionList.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AsObject]
   }

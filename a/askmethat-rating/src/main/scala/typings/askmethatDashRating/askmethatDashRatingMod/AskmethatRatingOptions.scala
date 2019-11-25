@@ -55,15 +55,15 @@ object AskmethatRatingOptions {
     step: AskmethatRatingSteps = null
   ): AskmethatRatingOptions = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
-    if (fontClass != null) __obj.updateDynamic("fontClass")(fontClass)
-    if (hoverColor != null) __obj.updateDynamic("hoverColor")(hoverColor)
-    if (inputName != null) __obj.updateDynamic("inputName")(inputName)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (fontClass != null) __obj.updateDynamic("fontClass")(fontClass.asInstanceOf[js.Any])
+    if (hoverColor != null) __obj.updateDynamic("hoverColor")(hoverColor.asInstanceOf[js.Any])
+    if (inputName != null) __obj.updateDynamic("inputName")(inputName.asInstanceOf[js.Any])
     if (maxRating != null) __obj.updateDynamic("maxRating")(maxRating.asInstanceOf[js.Any])
     if (minRating != null) __obj.updateDynamic("minRating")(minRating.asInstanceOf[js.Any])
-    if (popover != null) __obj.updateDynamic("popover")(popover)
-    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly)
-    if (step != null) __obj.updateDynamic("step")(step)
+    if (popover != null) __obj.updateDynamic("popover")(popover.asInstanceOf[js.Any])
+    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly.asInstanceOf[js.Any])
+    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     __obj.asInstanceOf[AskmethatRatingOptions]
   }
 }

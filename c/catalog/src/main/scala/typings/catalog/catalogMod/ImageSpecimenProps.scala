@@ -27,14 +27,14 @@ object ImageSpecimenProps {
     scale: js.UndefOr[Boolean] = js.undefined,
     title: String = null
   ): ImageSpecimenProps = {
-    val __obj = js.Dynamic.literal(src = src)
-    if (!js.isUndefined(dark)) __obj.updateDynamic("dark")(dark)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (!js.isUndefined(light)) __obj.updateDynamic("light")(light)
-    if (overlay != null) __obj.updateDynamic("overlay")(overlay)
-    if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain)
-    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale)
-    if (title != null) __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
+    if (!js.isUndefined(dark)) __obj.updateDynamic("dark")(dark.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(light)) __obj.updateDynamic("light")(light.asInstanceOf[js.Any])
+    if (overlay != null) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
+    if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain.asInstanceOf[js.Any])
+    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageSpecimenProps]
   }
 }

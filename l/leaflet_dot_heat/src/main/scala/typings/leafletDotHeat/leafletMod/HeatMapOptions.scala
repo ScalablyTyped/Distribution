@@ -25,7 +25,7 @@ object HeatMapOptions {
   ): HeatMapOptions = {
     val __obj = js.Dynamic.literal()
     if (blur != null) __obj.updateDynamic("blur")(blur.asInstanceOf[js.Any])
-    if (gradient != null) __obj.updateDynamic("gradient")(gradient)
+    if (gradient != null) __obj.updateDynamic("gradient")(gradient.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
     if (minOpacity != null) __obj.updateDynamic("minOpacity")(minOpacity.asInstanceOf[js.Any])

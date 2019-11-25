@@ -14,7 +14,7 @@ trait CasperSelector extends js.Object {
 object CasperSelector {
   @scala.inline
   def apply(path: String, `type`: xpath | css = null): CasperSelector = {
-    val __obj = js.Dynamic.literal(path = path)
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CasperSelector]
   }

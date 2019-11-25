@@ -17,9 +17,9 @@ trait Synonym extends js.Object {
 object Synonym {
   @scala.inline
   def apply(synonym: String, created: String = null, updated: String = null): Synonym = {
-    val __obj = js.Dynamic.literal(synonym = synonym)
-    if (created != null) __obj.updateDynamic("created")(created)
-    if (updated != null) __obj.updateDynamic("updated")(updated)
+    val __obj = js.Dynamic.literal(synonym = synonym.asInstanceOf[js.Any])
+    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
+    if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
     __obj.asInstanceOf[Synonym]
   }
 }

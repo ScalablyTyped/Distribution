@@ -29,7 +29,7 @@ object ICommandChangedArgs {
   def apply(`type`: added | removed | changed | `many-changed`, id: String = null): ICommandChangedArgs = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICommandChangedArgs]
   }
 }

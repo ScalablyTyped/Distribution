@@ -26,7 +26,7 @@ object RecipientList {
     name: String,
     total_accepted_recipients: Double
   ): RecipientList = {
-    val __obj = js.Dynamic.literal(attributes = attributes, description = description, id = id, name = name, total_accepted_recipients = total_accepted_recipients)
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], total_accepted_recipients = total_accepted_recipients.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RecipientList]
   }

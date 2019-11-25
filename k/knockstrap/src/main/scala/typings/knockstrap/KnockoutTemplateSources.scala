@@ -11,7 +11,7 @@ trait KnockoutTemplateSources extends js.Object {
 object KnockoutTemplateSources {
   @scala.inline
   def apply(stringTemplate: Anon_Template): KnockoutTemplateSources = {
-    val __obj = js.Dynamic.literal(stringTemplate = stringTemplate)
+    val __obj = js.Dynamic.literal(stringTemplate = stringTemplate.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[KnockoutTemplateSources]
   }

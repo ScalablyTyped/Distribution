@@ -21,7 +21,7 @@ object TemplateValidation {
     SuggestedTemplateModel: js.Object,
     TextBody: ValidationSection
   ): TemplateValidation = {
-    val __obj = js.Dynamic.literal(AllContentIsValid = AllContentIsValid, HtmlBody = HtmlBody, Subject = Subject, SuggestedTemplateModel = SuggestedTemplateModel, TextBody = TextBody)
+    val __obj = js.Dynamic.literal(AllContentIsValid = AllContentIsValid.asInstanceOf[js.Any], HtmlBody = HtmlBody.asInstanceOf[js.Any], Subject = Subject.asInstanceOf[js.Any], SuggestedTemplateModel = SuggestedTemplateModel.asInstanceOf[js.Any], TextBody = TextBody.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TemplateValidation]
   }

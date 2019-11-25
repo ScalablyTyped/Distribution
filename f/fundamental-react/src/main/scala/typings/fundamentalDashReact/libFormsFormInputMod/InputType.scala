@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait InputType extends js.Object
 
+object InputType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def invalid: typings.fundamentalDashReact.fundamentalDashReactStrings.invalid = this.cast("invalid")
+  @scala.inline
+  def normal: typings.fundamentalDashReact.fundamentalDashReactStrings.normal = this.cast("normal")
+  @scala.inline
+  def valid: typings.fundamentalDashReact.fundamentalDashReactStrings.valid = this.cast("valid")
+  @scala.inline
+  def warning: typings.fundamentalDashReact.fundamentalDashReactStrings.warning = this.cast("warning")
+}
+

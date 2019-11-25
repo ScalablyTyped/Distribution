@@ -26,7 +26,7 @@ trait Anon_ContentTransition extends js.Object {
 object Anon_ContentTransition {
   @scala.inline
   def apply(contentTransition: String, entrance: String, insert: String, remove: String): Anon_ContentTransition = {
-    val __obj = js.Dynamic.literal(contentTransition = contentTransition, entrance = entrance, insert = insert, remove = remove)
+    val __obj = js.Dynamic.literal(contentTransition = contentTransition.asInstanceOf[js.Any], entrance = entrance.asInstanceOf[js.Any], insert = insert.asInstanceOf[js.Any], remove = remove.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ContentTransition]
   }

@@ -37,7 +37,7 @@ object Anon_BuiltInDisabled {
     unpublished: Double,
     validated: Double
   ): Anon_BuiltInDisabled = {
-    val __obj = js.Dynamic.literal(builtIn = builtIn, disabled = disabled, locked = locked, multiVersion = multiVersion, none = none, paid = paid, preview = preview, public = public, system = system, trial = trial, trusted = trusted, unpublished = unpublished, validated = validated)
+    val __obj = js.Dynamic.literal(builtIn = builtIn.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], locked = locked.asInstanceOf[js.Any], multiVersion = multiVersion.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any], paid = paid.asInstanceOf[js.Any], preview = preview.asInstanceOf[js.Any], public = public.asInstanceOf[js.Any], system = system.asInstanceOf[js.Any], trial = trial.asInstanceOf[js.Any], trusted = trusted.asInstanceOf[js.Any], unpublished = unpublished.asInstanceOf[js.Any], validated = validated.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BuiltInDisabled]
   }

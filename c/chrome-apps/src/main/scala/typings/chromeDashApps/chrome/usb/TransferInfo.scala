@@ -6,11 +6,11 @@ import typings.chromeDashApps.Anon_IN
 import typings.chromeDashApps.chrome.ToStringLiteral
 import typings.chromeDashApps.chrome.integer
 import typings.chromeDashApps.chromeDashAppsStrings.`class`
-import typings.chromeDashApps.chromeDashAppsStrings.device
+import typings.chromeDashApps.chromeDashAppsStrings.device_
 import typings.chromeDashApps.chromeDashAppsStrings.endpoint
 import typings.chromeDashApps.chromeDashAppsStrings.in
 import typings.chromeDashApps.chromeDashAppsStrings.interface
-import typings.chromeDashApps.chromeDashAppsStrings.other
+import typings.chromeDashApps.chromeDashAppsStrings.other_
 import typings.chromeDashApps.chromeDashAppsStrings.out
 import typings.chromeDashApps.chromeDashAppsStrings.reserved
 import typings.chromeDashApps.chromeDashAppsStrings.standard
@@ -38,7 +38,7 @@ trait TransferInfo extends js.Object {
     * The target given by index must be claimed if 'interface' or 'endpoint'.
     * @see Recipient
     */
-  var recipient: ToStringLiteral[Anon_DEVICE, String, Exclude[String, device | interface | endpoint | other]]
+  var recipient: ToStringLiteral[Anon_DEVICE, String, Exclude[String, device_ | interface | endpoint | other_]]
   /** The bRequest field, see *Universal Serial Bus Specification Revision 1.1 § 9.3.* */
   var request: integer
   /**
@@ -62,7 +62,7 @@ object TransferInfo {
   def apply(
     direction: ToStringLiteral[Anon_IN, String, Exclude[String, in | out]],
     index: integer,
-    recipient: ToStringLiteral[Anon_DEVICE, String, Exclude[String, device | interface | endpoint | other]],
+    recipient: ToStringLiteral[Anon_DEVICE, String, Exclude[String, device_ | interface | endpoint | other_]],
     request: integer,
     requestType: ToStringLiteral[Anon_CLASS, String, Exclude[String, standard | `class` | vendor | reserved]],
     value: integer,
@@ -70,8 +70,8 @@ object TransferInfo {
     length: Int | Double = null,
     timeout: Int | Double = null
   ): TransferInfo = {
-    val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], index = index, recipient = recipient.asInstanceOf[js.Any], request = request, requestType = requestType.asInstanceOf[js.Any], value = value)
-    if (data != null) __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], recipient = recipient.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], requestType = requestType.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransferInfo]

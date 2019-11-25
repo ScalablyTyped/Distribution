@@ -12,7 +12,7 @@ object ChartSeriesDefaultsOverlay {
   @scala.inline
   def apply(gradient: String = null): ChartSeriesDefaultsOverlay = {
     val __obj = js.Dynamic.literal()
-    if (gradient != null) __obj.updateDynamic("gradient")(gradient)
+    if (gradient != null) __obj.updateDynamic("gradient")(gradient.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartSeriesDefaultsOverlay]
   }
 }

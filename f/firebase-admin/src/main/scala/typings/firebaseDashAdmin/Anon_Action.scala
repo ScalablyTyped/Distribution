@@ -22,8 +22,8 @@ trait Anon_Action extends js.Object {
 object Anon_Action {
   @scala.inline
   def apply(action: String, title: String, icon: String = null): Anon_Action = {
-    val __obj = js.Dynamic.literal(action = action, title = title)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Action]
   }
 }

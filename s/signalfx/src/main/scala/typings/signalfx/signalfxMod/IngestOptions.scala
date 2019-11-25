@@ -27,12 +27,12 @@ object IngestOptions {
   ): IngestOptions = {
     val __obj = js.Dynamic.literal()
     if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
-    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions)
-    if (!js.isUndefined(enableAmazonUniqueId)) __obj.updateDynamic("enableAmazonUniqueId")(enableAmazonUniqueId)
-    if (ingestEndpoint != null) __obj.updateDynamic("ingestEndpoint")(ingestEndpoint)
-    if (proxy != null) __obj.updateDynamic("proxy")(proxy)
+    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAmazonUniqueId)) __obj.updateDynamic("enableAmazonUniqueId")(enableAmazonUniqueId.asInstanceOf[js.Any])
+    if (ingestEndpoint != null) __obj.updateDynamic("ingestEndpoint")(ingestEndpoint.asInstanceOf[js.Any])
+    if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (userAgents != null) __obj.updateDynamic("userAgents")(userAgents)
+    if (userAgents != null) __obj.updateDynamic("userAgents")(userAgents.asInstanceOf[js.Any])
     __obj.asInstanceOf[IngestOptions]
   }
 }

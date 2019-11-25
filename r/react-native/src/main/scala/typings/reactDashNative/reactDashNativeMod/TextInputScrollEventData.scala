@@ -12,7 +12,7 @@ trait TextInputScrollEventData extends js.Object {
 object TextInputScrollEventData {
   @scala.inline
   def apply(contentOffset: Anon_X): TextInputScrollEventData = {
-    val __obj = js.Dynamic.literal(contentOffset = contentOffset)
+    val __obj = js.Dynamic.literal(contentOffset = contentOffset.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TextInputScrollEventData]
   }

@@ -42,9 +42,9 @@ object FormatLocaleDefinition {
     numerals: js.Array[String] = null,
     percent: String = null
   ): FormatLocaleDefinition = {
-    val __obj = js.Dynamic.literal(currency = currency, decimal = decimal, grouping = grouping, thousands = thousands)
-    if (numerals != null) __obj.updateDynamic("numerals")(numerals)
-    if (percent != null) __obj.updateDynamic("percent")(percent)
+    val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any], decimal = decimal.asInstanceOf[js.Any], grouping = grouping.asInstanceOf[js.Any], thousands = thousands.asInstanceOf[js.Any])
+    if (numerals != null) __obj.updateDynamic("numerals")(numerals.asInstanceOf[js.Any])
+    if (percent != null) __obj.updateDynamic("percent")(percent.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormatLocaleDefinition]
   }
 }

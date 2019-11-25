@@ -23,11 +23,11 @@ object FloatingLabelProperties {
     floatingLabelFont: font = null
   ): FloatingLabelProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowFontScaling)) __obj.updateDynamic("allowFontScaling")(allowFontScaling)
+    if (!js.isUndefined(allowFontScaling)) __obj.updateDynamic("allowFontScaling")(allowFontScaling.asInstanceOf[js.Any])
     if (floatingLabelAniDuration != null) __obj.updateDynamic("floatingLabelAniDuration")(floatingLabelAniDuration.asInstanceOf[js.Any])
     if (floatingLabelBottomMargin != null) __obj.updateDynamic("floatingLabelBottomMargin")(floatingLabelBottomMargin.asInstanceOf[js.Any])
-    if (!js.isUndefined(floatingLabelEnabled)) __obj.updateDynamic("floatingLabelEnabled")(floatingLabelEnabled)
-    if (floatingLabelFont != null) __obj.updateDynamic("floatingLabelFont")(floatingLabelFont)
+    if (!js.isUndefined(floatingLabelEnabled)) __obj.updateDynamic("floatingLabelEnabled")(floatingLabelEnabled.asInstanceOf[js.Any])
+    if (floatingLabelFont != null) __obj.updateDynamic("floatingLabelFont")(floatingLabelFont.asInstanceOf[js.Any])
     __obj.asInstanceOf[FloatingLabelProperties]
   }
 }

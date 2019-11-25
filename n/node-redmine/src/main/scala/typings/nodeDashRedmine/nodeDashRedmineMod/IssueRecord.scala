@@ -47,13 +47,13 @@ object IssueRecord {
     total_estimated_hours: Int | Double = null,
     updated_at: String = null
   ): IssueRecord = {
-    val __obj = js.Dynamic.literal(assigned_to = assigned_to, author = author, created_at = created_at, description = description, done_ratio = done_ratio, id = id, is_private = is_private, priority = priority, project = project, status = status, subject = subject, tracker = tracker)
-    if (closed_on != null) __obj.updateDynamic("closed_on")(closed_on)
-    if (due_date != null) __obj.updateDynamic("due_date")(due_date)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
-    if (start_date != null) __obj.updateDynamic("start_date")(start_date)
+    val __obj = js.Dynamic.literal(assigned_to = assigned_to.asInstanceOf[js.Any], author = author.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], done_ratio = done_ratio.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], is_private = is_private.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any], tracker = tracker.asInstanceOf[js.Any])
+    if (closed_on != null) __obj.updateDynamic("closed_on")(closed_on.asInstanceOf[js.Any])
+    if (due_date != null) __obj.updateDynamic("due_date")(due_date.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (start_date != null) __obj.updateDynamic("start_date")(start_date.asInstanceOf[js.Any])
     if (total_estimated_hours != null) __obj.updateDynamic("total_estimated_hours")(total_estimated_hours.asInstanceOf[js.Any])
-    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at)
+    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at.asInstanceOf[js.Any])
     __obj.asInstanceOf[IssueRecord]
   }
 }

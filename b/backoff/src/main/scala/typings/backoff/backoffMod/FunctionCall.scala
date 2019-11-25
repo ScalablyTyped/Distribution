@@ -2,7 +2,6 @@ package typings.backoff.backoffMod
 
 import org.scalablytyped.runtime.TopLevel
 import typings.backoff.backoffStrings.abort
-import typings.backoff.backoffStrings.call
 import typings.backoff.backoffStrings.callback
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
@@ -39,7 +38,7 @@ trait FunctionCall[T] extends EventEmitter {
     * @param args: wrapped function's arguments
     */
   @JSName("addListener")
-  def addListener_call(event: call, listener: js.Function1[/* args */ T, Unit]): this.type = js.native
+  def addListener_call(event: typings.backoff.backoffStrings.call, listener: js.Function1[/* args */ T, Unit]): this.type = js.native
   @JSName("emit")
   def emit_abort(event: abort): Boolean = js.native
   @JSName("emit")
@@ -47,7 +46,7 @@ trait FunctionCall[T] extends EventEmitter {
   @JSName("emit")
   def emit_backoff(event: typings.backoff.backoffStrings.backoff, number: Double, delay: Double, error: js.Any): Boolean = js.native
   @JSName("emit")
-  def emit_call(event: call, args: T): Boolean = js.native
+  def emit_call(event: typings.backoff.backoffStrings.call, args: T): Boolean = js.native
   /**
     * Sets the maximum number of backoffs before the call is aborted. By default,
     * there is no limit on the number of backoffs that can be performed.
@@ -86,7 +85,7 @@ trait FunctionCall[T] extends EventEmitter {
   @JSName("listenerCount")
   def listenerCount_backoff(`type`: typings.backoff.backoffStrings.backoff): Double = js.native
   @JSName("listenerCount")
-  def listenerCount_call(`type`: call): Double = js.native
+  def listenerCount_call(`type`: typings.backoff.backoffStrings.call): Double = js.native
   @JSName("listenerCount")
   def listenerCount_callback(`type`: callback): Double = js.native
   @JSName("listeners")
@@ -96,7 +95,7 @@ trait FunctionCall[T] extends EventEmitter {
     js.Function3[/* number */ Double, /* delay */ Double, /* error */ js.UndefOr[_], Unit]
   ] = js.native
   @JSName("listeners")
-  def listeners_call(event: call): js.Array[js.Function1[/* args */ T, Unit]] = js.native
+  def listeners_call(event: typings.backoff.backoffStrings.call): js.Array[js.Function1[/* args */ T, Unit]] = js.native
   @JSName("on")
   def on_abort(event: abort, listener: js.Function0[Unit]): this.type = js.native
   @JSName("on")
@@ -105,7 +104,7 @@ trait FunctionCall[T] extends EventEmitter {
     listener: js.Function3[/* number */ Double, /* delay */ Double, /* error */ js.UndefOr[js.Any], Unit]
   ): this.type = js.native
   @JSName("on")
-  def on_call(event: call, listener: js.Function1[/* args */ T, Unit]): this.type = js.native
+  def on_call(event: typings.backoff.backoffStrings.call, listener: js.Function1[/* args */ T, Unit]): this.type = js.native
   @JSName("once")
   def once_abort(event: abort, listener: js.Function0[Unit]): this.type = js.native
   @JSName("once")
@@ -114,7 +113,7 @@ trait FunctionCall[T] extends EventEmitter {
     listener: js.Function3[/* number */ Double, /* delay */ Double, /* error */ js.UndefOr[js.Any], Unit]
   ): this.type = js.native
   @JSName("once")
-  def once_call(event: call, listener: js.Function1[/* args */ T, Unit]): this.type = js.native
+  def once_call(event: typings.backoff.backoffStrings.call, listener: js.Function1[/* args */ T, Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_abort(event: abort, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependListener")
@@ -123,7 +122,7 @@ trait FunctionCall[T] extends EventEmitter {
     listener: js.Function3[/* number */ Double, /* delay */ Double, /* error */ js.UndefOr[js.Any], Unit]
   ): this.type = js.native
   @JSName("prependListener")
-  def prependListener_call(event: call, listener: js.Function1[/* args */ T, Unit]): this.type = js.native
+  def prependListener_call(event: typings.backoff.backoffStrings.call, listener: js.Function1[/* args */ T, Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_abort(event: abort, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependOnceListener")
@@ -132,13 +131,13 @@ trait FunctionCall[T] extends EventEmitter {
     listener: js.Function3[/* number */ Double, /* delay */ Double, /* error */ js.UndefOr[js.Any], Unit]
   ): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_call(event: call, listener: js.Function1[/* args */ T, Unit]): this.type = js.native
+  def prependOnceListener_call(event: typings.backoff.backoffStrings.call, listener: js.Function1[/* args */ T, Unit]): this.type = js.native
   @JSName("removeAllListeners")
   def removeAllListeners_abort(event: abort): this.type = js.native
   @JSName("removeAllListeners")
   def removeAllListeners_backoff(event: typings.backoff.backoffStrings.backoff): this.type = js.native
   @JSName("removeAllListeners")
-  def removeAllListeners_call(event: call): this.type = js.native
+  def removeAllListeners_call(event: typings.backoff.backoffStrings.call): this.type = js.native
   @JSName("removeAllListeners")
   def removeAllListeners_callback(event: callback): this.type = js.native
   @JSName("removeListener")
@@ -149,7 +148,7 @@ trait FunctionCall[T] extends EventEmitter {
     listener: js.Function3[/* number */ Double, /* delay */ Double, /* error */ js.UndefOr[js.Any], Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_call(event: call, listener: js.Function1[/* args */ T, Unit]): this.type = js.native
+  def removeListener_call(event: typings.backoff.backoffStrings.call, listener: js.Function1[/* args */ T, Unit]): this.type = js.native
   /**
     * Sets the predicate which will be invoked to determine whether a given error
     * should be retried or not, e.g. a network error would be retriable while a type

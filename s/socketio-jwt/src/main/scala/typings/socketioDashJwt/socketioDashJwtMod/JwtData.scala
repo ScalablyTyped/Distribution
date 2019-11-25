@@ -13,8 +13,8 @@ trait JwtData extends js.Object {
 object JwtData {
   @scala.inline
   def apply(code: String, message: String, `type`: String): JwtData = {
-    val __obj = js.Dynamic.literal(code = code, message = message)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[JwtData]
   }
 }

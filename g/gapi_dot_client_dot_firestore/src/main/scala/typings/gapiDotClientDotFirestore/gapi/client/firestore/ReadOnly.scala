@@ -16,7 +16,7 @@ object ReadOnly {
   @scala.inline
   def apply(readTime: String = null): ReadOnly = {
     val __obj = js.Dynamic.literal()
-    if (readTime != null) __obj.updateDynamic("readTime")(readTime)
+    if (readTime != null) __obj.updateDynamic("readTime")(readTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadOnly]
   }
 }

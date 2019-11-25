@@ -14,8 +14,8 @@ object Anon_InRange {
   @scala.inline
   def apply(inRange: RangeObject = null, outOfRange: RangeObject = null): Anon_InRange = {
     val __obj = js.Dynamic.literal()
-    if (inRange != null) __obj.updateDynamic("inRange")(inRange)
-    if (outOfRange != null) __obj.updateDynamic("outOfRange")(outOfRange)
+    if (inRange != null) __obj.updateDynamic("inRange")(inRange.asInstanceOf[js.Any])
+    if (outOfRange != null) __obj.updateDynamic("outOfRange")(outOfRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_InRange]
   }
 }

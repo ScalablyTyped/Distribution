@@ -16,8 +16,8 @@ trait IGenericSelectionListProperties extends IGenericObjectProperties {
 object IGenericSelectionListProperties {
   @scala.inline
   def apply(qInfo: IGenericSelectionNxInfo, qSelectionObjectDef: js.Any, qExtendsId: String = null): IGenericSelectionListProperties = {
-    val __obj = js.Dynamic.literal(qInfo = qInfo, qSelectionObjectDef = qSelectionObjectDef)
-    if (qExtendsId != null) __obj.updateDynamic("qExtendsId")(qExtendsId)
+    val __obj = js.Dynamic.literal(qInfo = qInfo.asInstanceOf[js.Any], qSelectionObjectDef = qSelectionObjectDef.asInstanceOf[js.Any])
+    if (qExtendsId != null) __obj.updateDynamic("qExtendsId")(qExtendsId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGenericSelectionListProperties]
   }
 }

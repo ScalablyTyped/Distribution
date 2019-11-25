@@ -12,7 +12,7 @@ object Anon_PreserveLeadingWhitespace {
   @scala.inline
   def apply(preserveLeadingWhitespace: js.UndefOr[Boolean] = js.undefined): Anon_PreserveLeadingWhitespace = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(preserveLeadingWhitespace)) __obj.updateDynamic("preserveLeadingWhitespace")(preserveLeadingWhitespace)
+    if (!js.isUndefined(preserveLeadingWhitespace)) __obj.updateDynamic("preserveLeadingWhitespace")(preserveLeadingWhitespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_PreserveLeadingWhitespace]
   }
 }

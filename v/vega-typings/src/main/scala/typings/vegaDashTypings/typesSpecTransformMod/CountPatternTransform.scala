@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CountPatternTransform extends Transforms {
+trait CountPatternTransform extends _Transforms {
   var as: js.UndefOr[(Vector2[String | SignalRef]) | SignalRef] = js.undefined
   var `case`: js.UndefOr[String | SignalRef] = js.undefined
   var field: FieldRef
@@ -27,7 +27,7 @@ object CountPatternTransform {
     stopwords: String | SignalRef = null
   ): CountPatternTransform = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (`case` != null) __obj.updateDynamic("case")(`case`.asInstanceOf[js.Any])
     if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])

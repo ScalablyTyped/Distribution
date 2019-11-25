@@ -12,8 +12,8 @@ trait Anon_OverridesUseDefault extends js.Object {
 object Anon_OverridesUseDefault {
   @scala.inline
   def apply(useDefault: Boolean, overrides: js.Array[Anon_Method] = null): Anon_OverridesUseDefault = {
-    val __obj = js.Dynamic.literal(useDefault = useDefault)
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides)
+    val __obj = js.Dynamic.literal(useDefault = useDefault.asInstanceOf[js.Any])
+    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_OverridesUseDefault]
   }
 }

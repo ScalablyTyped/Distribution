@@ -14,7 +14,7 @@ trait Anon_Both extends js.Object {
 object Anon_Both {
   @scala.inline
   def apply(both: CollectionReturnValue, left: CollectionReturnValue, right: CollectionReturnValue): Anon_Both = {
-    val __obj = js.Dynamic.literal(both = both, left = left, right = right)
+    val __obj = js.Dynamic.literal(both = both.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Both]
   }

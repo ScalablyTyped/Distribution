@@ -17,9 +17,9 @@ object FieldFilter {
   @scala.inline
   def apply(field: FieldReference = null, op: String = null, value: Value = null): FieldFilter = {
     val __obj = js.Dynamic.literal()
-    if (field != null) __obj.updateDynamic("field")(field)
-    if (op != null) __obj.updateDynamic("op")(op)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    if (op != null) __obj.updateDynamic("op")(op.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldFilter]
   }
 }

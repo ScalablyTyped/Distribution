@@ -12,8 +12,8 @@ trait HistoryLocation extends js.Object {
 object HistoryLocation {
   @scala.inline
   def apply(pathname: String, search: String = null): HistoryLocation = {
-    val __obj = js.Dynamic.literal(pathname = pathname)
-    if (search != null) __obj.updateDynamic("search")(search)
+    val __obj = js.Dynamic.literal(pathname = pathname.asInstanceOf[js.Any])
+    if (search != null) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistoryLocation]
   }
 }

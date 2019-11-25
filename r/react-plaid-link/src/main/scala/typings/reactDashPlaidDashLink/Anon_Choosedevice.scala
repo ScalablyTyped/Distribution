@@ -25,9 +25,9 @@ object Anon_Choosedevice {
     link_session_id: String = null,
     request_id: String = null
   ): Anon_Choosedevice = {
-    val __obj = js.Dynamic.literal(institution = institution, status = status.asInstanceOf[js.Any])
-    if (link_session_id != null) __obj.updateDynamic("link_session_id")(link_session_id)
-    if (request_id != null) __obj.updateDynamic("request_id")(request_id)
+    val __obj = js.Dynamic.literal(institution = institution.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    if (link_session_id != null) __obj.updateDynamic("link_session_id")(link_session_id.asInstanceOf[js.Any])
+    if (request_id != null) __obj.updateDynamic("request_id")(request_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Choosedevice]
   }
 }

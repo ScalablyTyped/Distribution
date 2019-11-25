@@ -25,8 +25,8 @@ object Anon_01AnonCoordLabelLineStyleName {
   @scala.inline
   def apply(`0`: Anon_CoordLabelLineStyleName = null, `1`: Anon_CoordLabelLineStyleName = null): Anon_01AnonCoordLabelLineStyleName = {
     val __obj = js.Dynamic.literal()
-    if (`0` != null) __obj.updateDynamic("0")(`0`)
-    if (`1` != null) __obj.updateDynamic("1")(`1`)
+    if (`0` != null) __obj.updateDynamic("0")(`0`.asInstanceOf[js.Any])
+    if (`1` != null) __obj.updateDynamic("1")(`1`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_01AnonCoordLabelLineStyleName]
   }
 }

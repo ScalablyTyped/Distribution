@@ -14,9 +14,9 @@ trait Anon_Buckets extends js.Object {
 object Anon_Buckets {
   @scala.inline
   def apply(buckets: Double, groupBy: js.Any, granularity: js.Any = null, output: js.Object = null): Anon_Buckets = {
-    val __obj = js.Dynamic.literal(buckets = buckets, groupBy = groupBy)
-    if (granularity != null) __obj.updateDynamic("granularity")(granularity)
-    if (output != null) __obj.updateDynamic("output")(output)
+    val __obj = js.Dynamic.literal(buckets = buckets.asInstanceOf[js.Any], groupBy = groupBy.asInstanceOf[js.Any])
+    if (granularity != null) __obj.updateDynamic("granularity")(granularity.asInstanceOf[js.Any])
+    if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Buckets]
   }
 }

@@ -13,8 +13,8 @@ trait HistogramRangeSliderViewModelMaxChangeEvent extends js.Object {
 object HistogramRangeSliderViewModelMaxChangeEvent {
   @scala.inline
   def apply(oldValue: Double, `type`: String, value: Double): HistogramRangeSliderViewModelMaxChangeEvent = {
-    val __obj = js.Dynamic.literal(oldValue = oldValue, value = value)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(oldValue = oldValue.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistogramRangeSliderViewModelMaxChangeEvent]
   }
 }

@@ -19,7 +19,7 @@ object TagRepositorySearchResponseRootObject {
     results: js.Array[TagRepositorySearchResponseResultsItem],
     status: String
   ): TagRepositorySearchResponseRootObject = {
-    val __obj = js.Dynamic.literal(has_more = has_more, rank_token = rank_token, results = results, status = status)
+    val __obj = js.Dynamic.literal(has_more = has_more.asInstanceOf[js.Any], rank_token = rank_token.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TagRepositorySearchResponseRootObject]
   }

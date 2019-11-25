@@ -17,7 +17,7 @@ trait CopyMoveAddOperation extends ManagementOperation {
 object CopyMoveAddOperation {
   @scala.inline
   def apply(destination: GraphOrDefault, silent: Boolean, source: GraphOrDefault, `type`: copy | move | add): CopyMoveAddOperation = {
-    val __obj = js.Dynamic.literal(destination = destination, silent = silent, source = source)
+    val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CopyMoveAddOperation]
   }

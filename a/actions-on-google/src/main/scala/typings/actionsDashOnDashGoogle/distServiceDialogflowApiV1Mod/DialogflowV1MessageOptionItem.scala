@@ -20,10 +20,10 @@ object DialogflowV1MessageOptionItem {
     title: String = null
   ): DialogflowV1MessageOptionItem = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (optionInfo != null) __obj.updateDynamic("optionInfo")(optionInfo)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (optionInfo != null) __obj.updateDynamic("optionInfo")(optionInfo.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogflowV1MessageOptionItem]
   }
 }

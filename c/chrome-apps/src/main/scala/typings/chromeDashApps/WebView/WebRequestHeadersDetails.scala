@@ -26,10 +26,10 @@ object WebRequestHeadersDetails {
     initiator: String = null,
     requestHeaders: js.Array[HttpHeader] = null
   ): WebRequestHeadersDetails = {
-    val __obj = js.Dynamic.literal(frameId = frameId, method = method, parentFrameId = parentFrameId, requestId = requestId, tabId = tabId, timeStamp = timeStamp, url = url)
-    __obj.updateDynamic("type")(`type`)
-    if (initiator != null) __obj.updateDynamic("initiator")(initiator)
-    if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders)
+    val __obj = js.Dynamic.literal(frameId = frameId.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], parentFrameId = parentFrameId.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any], tabId = tabId.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (initiator != null) __obj.updateDynamic("initiator")(initiator.asInstanceOf[js.Any])
+    if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebRequestHeadersDetails]
   }
 }

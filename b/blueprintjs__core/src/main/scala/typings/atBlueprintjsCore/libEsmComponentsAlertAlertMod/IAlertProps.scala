@@ -119,14 +119,14 @@ object IAlertProps {
     style: CSSProperties = null,
     transitionDuration: Int | Double = null
   ): IAlertProps = {
-    val __obj = js.Dynamic.literal(isOpen = isOpen)
-    if (!js.isUndefined(canEscapeKeyCancel)) __obj.updateDynamic("canEscapeKeyCancel")(canEscapeKeyCancel)
-    if (!js.isUndefined(canOutsideClickCancel)) __obj.updateDynamic("canOutsideClickCancel")(canOutsideClickCancel)
-    if (cancelButtonText != null) __obj.updateDynamic("cancelButtonText")(cancelButtonText)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (confirmButtonText != null) __obj.updateDynamic("confirmButtonText")(confirmButtonText)
+    val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any])
+    if (!js.isUndefined(canEscapeKeyCancel)) __obj.updateDynamic("canEscapeKeyCancel")(canEscapeKeyCancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(canOutsideClickCancel)) __obj.updateDynamic("canOutsideClickCancel")(canOutsideClickCancel.asInstanceOf[js.Any])
+    if (cancelButtonText != null) __obj.updateDynamic("cancelButtonText")(cancelButtonText.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (confirmButtonText != null) __obj.updateDynamic("confirmButtonText")(confirmButtonText.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (intent != null) __obj.updateDynamic("intent")(intent)
+    if (intent != null) __obj.updateDynamic("intent")(intent.asInstanceOf[js.Any])
     if (onCancel != null) __obj.updateDynamic("onCancel")(js.Any.fromFunction1(onCancel))
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction2(onClose))
     if (onClosed != null) __obj.updateDynamic("onClosed")(js.Any.fromFunction1(onClosed))
@@ -134,8 +134,8 @@ object IAlertProps {
     if (onConfirm != null) __obj.updateDynamic("onConfirm")(js.Any.fromFunction1(onConfirm))
     if (onOpened != null) __obj.updateDynamic("onOpened")(js.Any.fromFunction1(onOpened))
     if (onOpening != null) __obj.updateDynamic("onOpening")(js.Any.fromFunction1(onOpening))
-    if (portalContainer != null) __obj.updateDynamic("portalContainer")(portalContainer)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (portalContainer != null) __obj.updateDynamic("portalContainer")(portalContainer.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAlertProps]
   }

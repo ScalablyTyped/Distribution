@@ -13,7 +13,7 @@ trait Anon_Altitude extends js.Object {
 object Anon_Altitude {
   @scala.inline
   def apply(altitude: Double, latitude: Double, longitude: Double): Anon_Altitude = {
-    val __obj = js.Dynamic.literal(altitude = altitude, latitude = latitude, longitude = longitude)
+    val __obj = js.Dynamic.literal(altitude = altitude.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Altitude]
   }

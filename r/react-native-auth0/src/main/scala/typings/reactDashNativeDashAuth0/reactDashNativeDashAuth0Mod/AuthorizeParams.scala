@@ -26,13 +26,13 @@ object AuthorizeParams {
     state: String = null
   ): AuthorizeParams = {
     val __obj = js.Dynamic.literal()
-    if (audience != null) __obj.updateDynamic("audience")(audience)
-    if (connection != null) __obj.updateDynamic("connection")(connection)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (nonce != null) __obj.updateDynamic("nonce")(nonce)
-    if (prompt != null) __obj.updateDynamic("prompt")(prompt)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (audience != null) __obj.updateDynamic("audience")(audience.asInstanceOf[js.Any])
+    if (connection != null) __obj.updateDynamic("connection")(connection.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
+    if (prompt != null) __obj.updateDynamic("prompt")(prompt.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthorizeParams]
   }
 }

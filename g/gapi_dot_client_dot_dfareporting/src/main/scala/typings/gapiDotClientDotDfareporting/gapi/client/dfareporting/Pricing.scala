@@ -35,12 +35,12 @@ object Pricing {
     startDate: String = null
   ): Pricing = {
     val __obj = js.Dynamic.literal()
-    if (capCostType != null) __obj.updateDynamic("capCostType")(capCostType)
-    if (endDate != null) __obj.updateDynamic("endDate")(endDate)
-    if (flights != null) __obj.updateDynamic("flights")(flights)
-    if (groupType != null) __obj.updateDynamic("groupType")(groupType)
-    if (pricingType != null) __obj.updateDynamic("pricingType")(pricingType)
-    if (startDate != null) __obj.updateDynamic("startDate")(startDate)
+    if (capCostType != null) __obj.updateDynamic("capCostType")(capCostType.asInstanceOf[js.Any])
+    if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
+    if (flights != null) __obj.updateDynamic("flights")(flights.asInstanceOf[js.Any])
+    if (groupType != null) __obj.updateDynamic("groupType")(groupType.asInstanceOf[js.Any])
+    if (pricingType != null) __obj.updateDynamic("pricingType")(pricingType.asInstanceOf[js.Any])
+    if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pricing]
   }
 }

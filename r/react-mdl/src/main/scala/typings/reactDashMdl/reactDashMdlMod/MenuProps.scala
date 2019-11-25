@@ -26,12 +26,12 @@ object MenuProps {
     align: String = null,
     valign: String = null
   ): MenuProps = {
-    val __obj = js.Dynamic.literal(target = target)
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    js.Dynamic.global.Object.assign(__obj, RippleComponent)
-    if (align != null) __obj.updateDynamic("align")(align)
-    if (valign != null) __obj.updateDynamic("valign")(valign)
+    val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (RippleComponent != null) js.Dynamic.global.Object.assign(__obj, RippleComponent)
+    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
+    if (valign != null) __obj.updateDynamic("valign")(valign.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuProps]
   }
 }

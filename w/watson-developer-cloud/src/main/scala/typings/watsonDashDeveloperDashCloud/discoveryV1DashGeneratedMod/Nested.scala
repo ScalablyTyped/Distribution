@@ -14,7 +14,7 @@ object Nested {
   @scala.inline
   def apply(path: String = null): Nested = {
     val __obj = js.Dynamic.literal()
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[Nested]
   }
 }

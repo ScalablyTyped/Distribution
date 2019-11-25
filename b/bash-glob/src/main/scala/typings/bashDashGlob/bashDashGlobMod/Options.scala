@@ -30,15 +30,15 @@ object Options {
     nullglob: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
-    if (!js.isUndefined(dot)) __obj.updateDynamic("dot")(dot)
-    if (!js.isUndefined(dotglob)) __obj.updateDynamic("dotglob")(dotglob)
-    if (!js.isUndefined(extglob)) __obj.updateDynamic("extglob")(extglob)
-    if (!js.isUndefined(failglob)) __obj.updateDynamic("failglob")(failglob)
-    if (!js.isUndefined(globstar)) __obj.updateDynamic("globstar")(globstar)
-    if (!js.isUndefined(nocase)) __obj.updateDynamic("nocase")(nocase)
-    if (!js.isUndefined(nocaseglob)) __obj.updateDynamic("nocaseglob")(nocaseglob)
-    if (!js.isUndefined(nullglob)) __obj.updateDynamic("nullglob")(nullglob)
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
+    if (!js.isUndefined(dot)) __obj.updateDynamic("dot")(dot.asInstanceOf[js.Any])
+    if (!js.isUndefined(dotglob)) __obj.updateDynamic("dotglob")(dotglob.asInstanceOf[js.Any])
+    if (!js.isUndefined(extglob)) __obj.updateDynamic("extglob")(extglob.asInstanceOf[js.Any])
+    if (!js.isUndefined(failglob)) __obj.updateDynamic("failglob")(failglob.asInstanceOf[js.Any])
+    if (!js.isUndefined(globstar)) __obj.updateDynamic("globstar")(globstar.asInstanceOf[js.Any])
+    if (!js.isUndefined(nocase)) __obj.updateDynamic("nocase")(nocase.asInstanceOf[js.Any])
+    if (!js.isUndefined(nocaseglob)) __obj.updateDynamic("nocaseglob")(nocaseglob.asInstanceOf[js.Any])
+    if (!js.isUndefined(nullglob)) __obj.updateDynamic("nullglob")(nullglob.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

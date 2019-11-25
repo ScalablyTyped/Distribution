@@ -18,8 +18,8 @@ object Anon_Labels {
     labels: SVGEdgeLabels,
     StringDictionary: /* renderType */ StringDictionary[SVGObject[Edge] | SVGEdgeLabels] = null
   ): Anon_Labels = {
-    val __obj = js.Dynamic.literal(labels = labels)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(labels = labels.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_Labels]
   }
 }

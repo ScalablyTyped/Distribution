@@ -26,11 +26,11 @@ object XmlAST {
     style: Styles = null,
     styles: String = null
   ): XmlAST = {
-    val __obj = js.Dynamic.literal(Tag = Tag.asInstanceOf[js.Any], children = children, props = props, tag = tag)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
-    if (priority != null) __obj.updateDynamic("priority")(priority)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (styles != null) __obj.updateDynamic("styles")(styles)
+    val __obj = js.Dynamic.literal(Tag = Tag.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[XmlAST]
   }
 }

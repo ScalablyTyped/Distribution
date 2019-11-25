@@ -12,7 +12,7 @@ trait Anon_Filter extends js.Object {
 object Anon_Filter {
   @scala.inline
   def apply(filter: Filter): Anon_Filter = {
-    val __obj = js.Dynamic.literal(filter = filter)
+    val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Filter]
   }

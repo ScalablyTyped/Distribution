@@ -14,8 +14,8 @@ trait PackageMeta
 object PackageMeta {
   @scala.inline
   def apply(name: String, version: String, StringDictionary: /* key */ StringDictionary[js.Any] = null): PackageMeta = {
-    val __obj = js.Dynamic.literal(name = name, version = version)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[PackageMeta]
   }
 }

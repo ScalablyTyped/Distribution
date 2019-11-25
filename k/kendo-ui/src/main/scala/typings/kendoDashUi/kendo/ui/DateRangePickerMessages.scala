@@ -13,8 +13,8 @@ object DateRangePickerMessages {
   @scala.inline
   def apply(endLabel: String = null, startLabel: String = null): DateRangePickerMessages = {
     val __obj = js.Dynamic.literal()
-    if (endLabel != null) __obj.updateDynamic("endLabel")(endLabel)
-    if (startLabel != null) __obj.updateDynamic("startLabel")(startLabel)
+    if (endLabel != null) __obj.updateDynamic("endLabel")(endLabel.asInstanceOf[js.Any])
+    if (startLabel != null) __obj.updateDynamic("startLabel")(startLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateRangePickerMessages]
   }
 }

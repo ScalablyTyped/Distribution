@@ -30,7 +30,7 @@ object GeoSearchProvided {
     position: Anon_Lat,
     refine: NESW => Unit
   ): GeoSearchProvided[THit] = {
-    val __obj = js.Dynamic.literal(createURL = js.Any.fromFunction1(createURL), currentRefinement = currentRefinement, hits = hits, isRefinedWithMap = isRefinedWithMap, position = position, refine = js.Any.fromFunction1(refine))
+    val __obj = js.Dynamic.literal(createURL = js.Any.fromFunction1(createURL), currentRefinement = currentRefinement.asInstanceOf[js.Any], hits = hits.asInstanceOf[js.Any], isRefinedWithMap = isRefinedWithMap.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], refine = js.Any.fromFunction1(refine))
   
     __obj.asInstanceOf[GeoSearchProvided[THit]]
   }

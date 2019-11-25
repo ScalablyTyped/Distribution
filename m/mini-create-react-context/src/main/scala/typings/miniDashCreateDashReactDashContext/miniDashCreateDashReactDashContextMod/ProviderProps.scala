@@ -16,7 +16,7 @@ object ProviderProps {
   def apply[T](value: T, children: ReactNode = null, observedBits: js.Any = null): ProviderProps[T] = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (observedBits != null) __obj.updateDynamic("observedBits")(observedBits)
+    if (observedBits != null) __obj.updateDynamic("observedBits")(observedBits.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProviderProps[T]]
   }
 }

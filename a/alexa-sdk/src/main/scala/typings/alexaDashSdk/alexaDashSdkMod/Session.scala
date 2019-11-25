@@ -22,8 +22,8 @@ object Session {
     sessionId: String,
     user: SessionUser
   ): Session = {
-    val __obj = js.Dynamic.literal(application = application, attributes = attributes, sessionId = sessionId, user = user)
-    __obj.updateDynamic("new")(`new`)
+    val __obj = js.Dynamic.literal(application = application.asInstanceOf[js.Any], attributes = attributes.asInstanceOf[js.Any], sessionId = sessionId.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
+    __obj.updateDynamic("new")(`new`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Session]
   }
 }

@@ -12,8 +12,8 @@ trait PivotDataSourceMeasureOptions extends js.Object {
 object PivotDataSourceMeasureOptions {
   @scala.inline
   def apply(values: js.Array[String], axis: String = null): PivotDataSourceMeasureOptions = {
-    val __obj = js.Dynamic.literal(values = values)
-    if (axis != null) __obj.updateDynamic("axis")(axis)
+    val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
+    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotDataSourceMeasureOptions]
   }
 }

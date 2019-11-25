@@ -14,8 +14,8 @@ object FlightInfo {
   @scala.inline
   def apply(carrier: String = null, number: String = null): FlightInfo = {
     val __obj = js.Dynamic.literal()
-    if (carrier != null) __obj.updateDynamic("carrier")(carrier)
-    if (number != null) __obj.updateDynamic("number")(number)
+    if (carrier != null) __obj.updateDynamic("carrier")(carrier.asInstanceOf[js.Any])
+    if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlightInfo]
   }
 }

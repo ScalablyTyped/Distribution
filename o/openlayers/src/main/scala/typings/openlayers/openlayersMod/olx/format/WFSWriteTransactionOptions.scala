@@ -26,10 +26,10 @@ object WFSWriteTransactionOptions {
     handle: String = null,
     srsName: String = null
   ): WFSWriteTransactionOptions = {
-    val __obj = js.Dynamic.literal(featureNS = featureNS, featurePrefix = featurePrefix, featureType = featureType, nativeElements = nativeElements)
-    if (gmlOptions != null) __obj.updateDynamic("gmlOptions")(gmlOptions)
-    if (handle != null) __obj.updateDynamic("handle")(handle)
-    if (srsName != null) __obj.updateDynamic("srsName")(srsName)
+    val __obj = js.Dynamic.literal(featureNS = featureNS.asInstanceOf[js.Any], featurePrefix = featurePrefix.asInstanceOf[js.Any], featureType = featureType.asInstanceOf[js.Any], nativeElements = nativeElements.asInstanceOf[js.Any])
+    if (gmlOptions != null) __obj.updateDynamic("gmlOptions")(gmlOptions.asInstanceOf[js.Any])
+    if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
+    if (srsName != null) __obj.updateDynamic("srsName")(srsName.asInstanceOf[js.Any])
     __obj.asInstanceOf[WFSWriteTransactionOptions]
   }
 }

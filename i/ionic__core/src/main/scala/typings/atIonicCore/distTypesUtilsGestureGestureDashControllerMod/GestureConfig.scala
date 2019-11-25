@@ -13,8 +13,8 @@ trait GestureConfig extends js.Object {
 object GestureConfig {
   @scala.inline
   def apply(name: String, disableScroll: js.UndefOr[Boolean] = js.undefined, priority: Int | Double = null): GestureConfig = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (!js.isUndefined(disableScroll)) __obj.updateDynamic("disableScroll")(disableScroll)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableScroll)) __obj.updateDynamic("disableScroll")(disableScroll.asInstanceOf[js.Any])
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     __obj.asInstanceOf[GestureConfig]
   }

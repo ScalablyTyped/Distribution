@@ -14,9 +14,9 @@ object AllResults {
   @scala.inline
   def apply(anonymityLevel: AnonymityLevel = null, protocols: ProtocolResult = null, tunnel: Result = null): AllResults = {
     val __obj = js.Dynamic.literal()
-    if (anonymityLevel != null) __obj.updateDynamic("anonymityLevel")(anonymityLevel)
-    if (protocols != null) __obj.updateDynamic("protocols")(protocols)
-    if (tunnel != null) __obj.updateDynamic("tunnel")(tunnel)
+    if (anonymityLevel != null) __obj.updateDynamic("anonymityLevel")(anonymityLevel.asInstanceOf[js.Any])
+    if (protocols != null) __obj.updateDynamic("protocols")(protocols.asInstanceOf[js.Any])
+    if (tunnel != null) __obj.updateDynamic("tunnel")(tunnel.asInstanceOf[js.Any])
     __obj.asInstanceOf[AllResults]
   }
 }

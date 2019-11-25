@@ -18,9 +18,9 @@ object Options {
     globstar: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(extended)) __obj.updateDynamic("extended")(extended)
-    if (flags != null) __obj.updateDynamic("flags")(flags)
-    if (!js.isUndefined(globstar)) __obj.updateDynamic("globstar")(globstar)
+    if (!js.isUndefined(extended)) __obj.updateDynamic("extended")(extended.asInstanceOf[js.Any])
+    if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
+    if (!js.isUndefined(globstar)) __obj.updateDynamic("globstar")(globstar.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

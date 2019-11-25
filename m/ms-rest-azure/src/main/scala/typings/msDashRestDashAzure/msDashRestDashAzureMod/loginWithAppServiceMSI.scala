@@ -1,6 +1,6 @@
 package typings.msDashRestDashAzure.msDashRestDashAzureMod
 
-import typings.msDashRestDashAzure.Fn_CredentialsErrErrorMSIAppServiceTokenCredentials
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,8 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object loginWithAppServiceMSI extends js.Object {
   def apply(): js.Promise[MSIAppServiceTokenCredentials] = js.native
-  def apply(callback: Fn_CredentialsErrErrorMSIAppServiceTokenCredentials): Unit = js.native
+  def apply(callback: js.Function2[/* err */ Error, /* credentials */ MSIAppServiceTokenCredentials, Unit]): Unit = js.native
   def apply(options: MSIAppServiceOptions): js.Promise[MSIAppServiceTokenCredentials] = js.native
-  def apply(options: MSIAppServiceOptions, callback: Fn_CredentialsErrErrorMSIAppServiceTokenCredentials): Unit = js.native
+  def apply(
+    options: MSIAppServiceOptions,
+    callback: js.Function2[/* err */ Error, /* credentials */ MSIAppServiceTokenCredentials, Unit]
+  ): Unit = js.native
 }
 

@@ -46,8 +46,8 @@ object TaskState {
     error: js.Any = null,
     result: WithoutPromise[R] = null
   ): TaskState[A, R] = {
-    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], pending = pending, rejected = rejected, resolved = resolved, state = state)
-    if (error != null) __obj.updateDynamic("error")(error)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], pending = pending.asInstanceOf[js.Any], rejected = rejected.asInstanceOf[js.Any], resolved = resolved.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskState[A, R]]
   }

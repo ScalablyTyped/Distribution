@@ -34,8 +34,8 @@ object AnimateOptions {
     zoom: Int | Double = null
   ): AnimateOptions = {
     val __obj = js.Dynamic.literal()
-    if (anchor != null) __obj.updateDynamic("anchor")(anchor)
-    if (center != null) __obj.updateDynamic("center")(center)
+    if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
+    if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(js.Any.fromFunction1(easing))
     if (resolution != null) __obj.updateDynamic("resolution")(resolution.asInstanceOf[js.Any])

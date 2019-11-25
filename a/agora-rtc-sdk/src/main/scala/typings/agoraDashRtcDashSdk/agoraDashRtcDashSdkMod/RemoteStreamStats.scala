@@ -68,9 +68,9 @@ object RemoteStreamStats {
     videoReceivedResolutionHeight: String = null,
     videoReceivedResolutionWidth: String = null
   ): RemoteStreamStats = {
-    val __obj = js.Dynamic.literal(accessDelay = accessDelay, audioReceiveBytes = audioReceiveBytes, audioReceiveDelay = audioReceiveDelay, audioReceivePackets = audioReceivePackets, audioReceivePacketsLost = audioReceivePacketsLost, endToEndDelay = endToEndDelay, videoReceiveBytes = videoReceiveBytes, videoReceiveDecodeFrameRate = videoReceiveDecodeFrameRate, videoReceiveDelay = videoReceiveDelay, videoReceiveFrameRate = videoReceiveFrameRate, videoReceivePackets = videoReceivePackets, videoReceivePacketsLost = videoReceivePacketsLost)
-    if (videoReceivedResolutionHeight != null) __obj.updateDynamic("videoReceivedResolutionHeight")(videoReceivedResolutionHeight)
-    if (videoReceivedResolutionWidth != null) __obj.updateDynamic("videoReceivedResolutionWidth")(videoReceivedResolutionWidth)
+    val __obj = js.Dynamic.literal(accessDelay = accessDelay.asInstanceOf[js.Any], audioReceiveBytes = audioReceiveBytes.asInstanceOf[js.Any], audioReceiveDelay = audioReceiveDelay.asInstanceOf[js.Any], audioReceivePackets = audioReceivePackets.asInstanceOf[js.Any], audioReceivePacketsLost = audioReceivePacketsLost.asInstanceOf[js.Any], endToEndDelay = endToEndDelay.asInstanceOf[js.Any], videoReceiveBytes = videoReceiveBytes.asInstanceOf[js.Any], videoReceiveDecodeFrameRate = videoReceiveDecodeFrameRate.asInstanceOf[js.Any], videoReceiveDelay = videoReceiveDelay.asInstanceOf[js.Any], videoReceiveFrameRate = videoReceiveFrameRate.asInstanceOf[js.Any], videoReceivePackets = videoReceivePackets.asInstanceOf[js.Any], videoReceivePacketsLost = videoReceivePacketsLost.asInstanceOf[js.Any])
+    if (videoReceivedResolutionHeight != null) __obj.updateDynamic("videoReceivedResolutionHeight")(videoReceivedResolutionHeight.asInstanceOf[js.Any])
+    if (videoReceivedResolutionWidth != null) __obj.updateDynamic("videoReceivedResolutionWidth")(videoReceivedResolutionWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteStreamStats]
   }
 }

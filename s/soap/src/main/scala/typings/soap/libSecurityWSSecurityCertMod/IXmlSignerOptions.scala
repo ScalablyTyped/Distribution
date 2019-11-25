@@ -13,7 +13,7 @@ object IXmlSignerOptions {
   @scala.inline
   def apply(existingPrefixes: StringDictionary[String] = null): IXmlSignerOptions = {
     val __obj = js.Dynamic.literal()
-    if (existingPrefixes != null) __obj.updateDynamic("existingPrefixes")(existingPrefixes)
+    if (existingPrefixes != null) __obj.updateDynamic("existingPrefixes")(existingPrefixes.asInstanceOf[js.Any])
     __obj.asInstanceOf[IXmlSignerOptions]
   }
 }

@@ -23,10 +23,10 @@ object Anon_ArgsColor {
     onClick: /* repeated */ js.Any => _ = null,
     onHover: /* repeated */ js.Any => _ = null
   ): Anon_ArgsColor = {
-    val __obj = js.Dynamic.literal(value = value)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight)
-    if (label != null) __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (onHover != null) __obj.updateDynamic("onHover")(js.Any.fromFunction1(onHover))
     __obj.asInstanceOf[Anon_ArgsColor]

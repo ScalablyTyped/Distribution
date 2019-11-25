@@ -11,7 +11,7 @@ trait Anon_EnumValuesAnonAssigned extends js.Object {
 object Anon_EnumValuesAnonAssigned {
   @scala.inline
   def apply(enumValues: Anon_Assigned): Anon_EnumValuesAnonAssigned = {
-    val __obj = js.Dynamic.literal(enumValues = enumValues)
+    val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EnumValuesAnonAssigned]
   }

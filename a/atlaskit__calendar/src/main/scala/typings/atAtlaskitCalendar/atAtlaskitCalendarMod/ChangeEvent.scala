@@ -24,7 +24,7 @@ object ChangeEvent {
     `type`: left | up | right | down | prev | next,
     year: Double
   ): ChangeEvent = {
-    val __obj = js.Dynamic.literal(day = day, iso = iso, month = month, year = year)
+    val __obj = js.Dynamic.literal(day = day.asInstanceOf[js.Any], iso = iso.asInstanceOf[js.Any], month = month.asInstanceOf[js.Any], year = year.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangeEvent]
   }

@@ -130,18 +130,18 @@ object TokenPayload {
     picture: String = null,
     profile: String = null
   ): TokenPayload = {
-    val __obj = js.Dynamic.literal(aud = aud, exp = exp, iat = iat, iss = iss, sub = sub)
-    if (at_hash != null) __obj.updateDynamic("at_hash")(at_hash)
-    if (azp != null) __obj.updateDynamic("azp")(azp)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (!js.isUndefined(email_verified)) __obj.updateDynamic("email_verified")(email_verified)
-    if (family_name != null) __obj.updateDynamic("family_name")(family_name)
-    if (given_name != null) __obj.updateDynamic("given_name")(given_name)
-    if (hd != null) __obj.updateDynamic("hd")(hd)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (nonce != null) __obj.updateDynamic("nonce")(nonce)
-    if (picture != null) __obj.updateDynamic("picture")(picture)
-    if (profile != null) __obj.updateDynamic("profile")(profile)
+    val __obj = js.Dynamic.literal(aud = aud.asInstanceOf[js.Any], exp = exp.asInstanceOf[js.Any], iat = iat.asInstanceOf[js.Any], iss = iss.asInstanceOf[js.Any], sub = sub.asInstanceOf[js.Any])
+    if (at_hash != null) __obj.updateDynamic("at_hash")(at_hash.asInstanceOf[js.Any])
+    if (azp != null) __obj.updateDynamic("azp")(azp.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (!js.isUndefined(email_verified)) __obj.updateDynamic("email_verified")(email_verified.asInstanceOf[js.Any])
+    if (family_name != null) __obj.updateDynamic("family_name")(family_name.asInstanceOf[js.Any])
+    if (given_name != null) __obj.updateDynamic("given_name")(given_name.asInstanceOf[js.Any])
+    if (hd != null) __obj.updateDynamic("hd")(hd.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
+    if (picture != null) __obj.updateDynamic("picture")(picture.asInstanceOf[js.Any])
+    if (profile != null) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
     __obj.asInstanceOf[TokenPayload]
   }
 }

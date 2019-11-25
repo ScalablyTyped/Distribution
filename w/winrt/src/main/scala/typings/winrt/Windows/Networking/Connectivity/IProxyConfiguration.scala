@@ -14,7 +14,7 @@ trait IProxyConfiguration extends js.Object {
 object IProxyConfiguration {
   @scala.inline
   def apply(canConnectDirectly: Boolean, proxyUris: IVectorView[Uri]): IProxyConfiguration = {
-    val __obj = js.Dynamic.literal(canConnectDirectly = canConnectDirectly, proxyUris = proxyUris)
+    val __obj = js.Dynamic.literal(canConnectDirectly = canConnectDirectly.asInstanceOf[js.Any], proxyUris = proxyUris.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IProxyConfiguration]
   }

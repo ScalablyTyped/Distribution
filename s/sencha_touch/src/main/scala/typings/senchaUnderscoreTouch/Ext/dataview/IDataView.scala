@@ -4,7 +4,6 @@ import typings.senchaUnderscoreTouch.Ext.Array
 import typings.senchaUnderscoreTouch.Ext.IContainer
 import typings.senchaUnderscoreTouch.Ext.data.IModel
 import typings.senchaUnderscoreTouch.Ext.data.IRecord
-import typings.senchaUnderscoreTouch.Ext.scroll.IView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -383,29 +382,24 @@ object IDataView {
   def apply(
     IContainer: IContainer = null,
     allowDeselect: js.UndefOr[Boolean] = js.undefined,
-    baseCls: java.lang.String = null,
     bindStore: () => Unit = null,
     blockRefresh: js.UndefOr[Boolean] = js.undefined,
     clearSelections: () => Unit = null,
     collectData: () => Unit = null,
     data: Array = null,
-    defaultType: java.lang.String = null,
     deferEmptyText: js.UndefOr[Boolean] = js.undefined,
-    deselect: (/* records */ js.UndefOr[js.Any], /* suppressEvent */ js.UndefOr[Boolean]) => Unit = null,
-    deselectAll: /* supress */ js.UndefOr[js.Any] => Unit = null,
+    deselect: (js.UndefOr[js.Any], js.UndefOr[Boolean]) => Unit = null,
+    deselectAll: js.UndefOr[js.Any] => Unit = null,
     deselectOnContainerClick: js.UndefOr[Boolean] = js.undefined,
-    destroy: () => Unit = null,
     disableSelection: js.UndefOr[Boolean] = js.undefined,
-    doDeselect: (/* records */ js.UndefOr[js.Any], /* suppressEvent */ js.UndefOr[Boolean]) => Unit = null,
-    doSelect: (/* records */ js.UndefOr[js.Any], /* keepExisting */ js.UndefOr[Boolean], /* suppressEvent */ js.UndefOr[Boolean]) => Unit = null,
+    doDeselect: (js.UndefOr[js.Any], js.UndefOr[Boolean]) => Unit = null,
+    doSelect: (js.UndefOr[js.Any], js.UndefOr[Boolean], js.UndefOr[Boolean]) => Unit = null,
     emptyText: java.lang.String = null,
     findItemByChild: () => Unit = null,
     findTargetByEvent: () => Unit = null,
     getAllowDeselect: () => Boolean = null,
-    getBaseCls: () => java.lang.String = null,
     getCount: () => Double = null,
     getData: () => Array = null,
-    getDefaultType: () => java.lang.String = null,
     getDeferEmptyText: () => Boolean = null,
     getDeselectOnContainerClick: () => Boolean = null,
     getDisableSelection: () => Boolean = null,
@@ -426,7 +420,6 @@ object IDataView {
     getPressedDelay: () => Double = null,
     getRecords: () => Unit = null,
     getScrollToTopOnRefresh: () => Boolean = null,
-    getScrollable: () => IView = null,
     getSelectedCls: () => java.lang.String = null,
     getSelectedNodes: () => Unit = null,
     getSelectedRecords: () => Unit = null,
@@ -441,10 +434,9 @@ object IDataView {
     handleException: () => Unit = null,
     hasSelection: () => Boolean = null,
     indexOf: () => Unit = null,
-    initialize: () => Unit = null,
     `inline`: js.Any = null,
     isLocked: () => Boolean = null,
-    isSelected: /* record */ js.UndefOr[js.Any] => Boolean = null,
+    isSelected: js.UndefOr[js.Any] => Boolean = null,
     itemCls: java.lang.String = null,
     itemConfig: js.Any = null,
     itemSelector: js.UndefOr[Boolean] = js.undefined,
@@ -461,19 +453,16 @@ object IDataView {
     refresh: () => Unit = null,
     refreshNode: () => Unit = null,
     scrollToTopOnRefresh: js.UndefOr[Boolean] = js.undefined,
-    scrollable: js.Any = null,
-    select: (/* records */ js.UndefOr[js.Any], /* keepExisting */ js.UndefOr[Boolean], /* suppressEvent */ js.UndefOr[Boolean]) => Unit = null,
-    selectAll: /* silent */ js.UndefOr[Boolean] => Unit = null,
-    selectRange: (/* startRecord */ js.UndefOr[Double], /* endRecord */ js.UndefOr[Double], /* keepExisting */ js.UndefOr[Boolean]) => Unit = null,
+    select: (js.UndefOr[js.Any], js.UndefOr[Boolean], js.UndefOr[Boolean]) => Unit = null,
+    selectAll: js.UndefOr[Boolean] => Unit = null,
+    selectRange: (js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Boolean]) => Unit = null,
     selectedCls: java.lang.String = null,
     selectedItemCls: js.UndefOr[Boolean] = js.undefined,
-    setAllowDeselect: /* allowDeselect */ js.UndefOr[Boolean] => Unit = null,
-    setBaseCls: /* baseCls */ js.UndefOr[java.lang.String] => Unit = null,
+    setAllowDeselect: js.UndefOr[Boolean] => Unit = null,
     setData: /* data */ js.UndefOr[Array] => Unit = null,
-    setDefaultType: /* defaultType */ js.UndefOr[java.lang.String] => Unit = null,
     setDeferEmptyText: /* deferEmptyText */ js.UndefOr[Boolean] => Unit = null,
-    setDeselectOnContainerClick: /* deselectOnContainerClick */ js.UndefOr[Boolean] => Unit = null,
-    setDisableSelection: /* disableSelection */ js.UndefOr[Boolean] => Unit = null,
+    setDeselectOnContainerClick: js.UndefOr[Boolean] => Unit = null,
+    setDisableSelection: js.UndefOr[Boolean] => Unit = null,
     setEmptyText: /* emptyText */ js.UndefOr[java.lang.String] => Unit = null,
     setInline: /* inline */ js.UndefOr[js.Any] => Unit = null,
     setItemCls: /* itemCls */ js.UndefOr[java.lang.String] => Unit = null,
@@ -482,7 +471,7 @@ object IDataView {
     setLastFocused: () => Unit = null,
     setLoadingText: /* loadingText */ js.UndefOr[js.Any] => Unit = null,
     setMaxItemCache: /* maxItemCache */ js.UndefOr[Double] => Unit = null,
-    setMode: /* mode */ js.UndefOr[java.lang.String] => Unit = null,
+    setMode: js.UndefOr[java.lang.String] => Unit = null,
     setPressedCls: /* pressedCls */ js.UndefOr[java.lang.String] => Unit = null,
     setPressedDelay: /* pressedDelay */ js.UndefOr[Double] => Unit = null,
     setScrollToTopOnRefresh: /* scrollToTopOnRefresh */ js.UndefOr[Boolean] => Unit = null,
@@ -497,35 +486,30 @@ object IDataView {
     trackOver: js.UndefOr[Boolean] = js.undefined,
     triggerCtEvent: java.lang.String = null,
     triggerEvent: java.lang.String = null,
-    updateLastFocused: (/* newRecord */ js.UndefOr[IRecord], /* oldRecord */ js.UndefOr[IRecord]) => Unit = null,
+    updateLastFocused: (js.UndefOr[IRecord], js.UndefOr[IRecord]) => Unit = null,
     useComponents: js.UndefOr[Boolean] = js.undefined
   ): IDataView = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IContainer)
-    if (!js.isUndefined(allowDeselect)) __obj.updateDynamic("allowDeselect")(allowDeselect)
-    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
+    if (IContainer != null) js.Dynamic.global.Object.assign(__obj, IContainer)
+    if (!js.isUndefined(allowDeselect)) __obj.updateDynamic("allowDeselect")(allowDeselect.asInstanceOf[js.Any])
     if (bindStore != null) __obj.updateDynamic("bindStore")(js.Any.fromFunction0(bindStore))
-    if (!js.isUndefined(blockRefresh)) __obj.updateDynamic("blockRefresh")(blockRefresh)
+    if (!js.isUndefined(blockRefresh)) __obj.updateDynamic("blockRefresh")(blockRefresh.asInstanceOf[js.Any])
     if (clearSelections != null) __obj.updateDynamic("clearSelections")(js.Any.fromFunction0(clearSelections))
     if (collectData != null) __obj.updateDynamic("collectData")(js.Any.fromFunction0(collectData))
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (defaultType != null) __obj.updateDynamic("defaultType")(defaultType)
-    if (!js.isUndefined(deferEmptyText)) __obj.updateDynamic("deferEmptyText")(deferEmptyText)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (!js.isUndefined(deferEmptyText)) __obj.updateDynamic("deferEmptyText")(deferEmptyText.asInstanceOf[js.Any])
     if (deselect != null) __obj.updateDynamic("deselect")(js.Any.fromFunction2(deselect))
     if (deselectAll != null) __obj.updateDynamic("deselectAll")(js.Any.fromFunction1(deselectAll))
-    if (!js.isUndefined(deselectOnContainerClick)) __obj.updateDynamic("deselectOnContainerClick")(deselectOnContainerClick)
-    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (!js.isUndefined(disableSelection)) __obj.updateDynamic("disableSelection")(disableSelection)
+    if (!js.isUndefined(deselectOnContainerClick)) __obj.updateDynamic("deselectOnContainerClick")(deselectOnContainerClick.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableSelection)) __obj.updateDynamic("disableSelection")(disableSelection.asInstanceOf[js.Any])
     if (doDeselect != null) __obj.updateDynamic("doDeselect")(js.Any.fromFunction2(doDeselect))
     if (doSelect != null) __obj.updateDynamic("doSelect")(js.Any.fromFunction3(doSelect))
-    if (emptyText != null) __obj.updateDynamic("emptyText")(emptyText)
+    if (emptyText != null) __obj.updateDynamic("emptyText")(emptyText.asInstanceOf[js.Any])
     if (findItemByChild != null) __obj.updateDynamic("findItemByChild")(js.Any.fromFunction0(findItemByChild))
     if (findTargetByEvent != null) __obj.updateDynamic("findTargetByEvent")(js.Any.fromFunction0(findTargetByEvent))
     if (getAllowDeselect != null) __obj.updateDynamic("getAllowDeselect")(js.Any.fromFunction0(getAllowDeselect))
-    if (getBaseCls != null) __obj.updateDynamic("getBaseCls")(js.Any.fromFunction0(getBaseCls))
     if (getCount != null) __obj.updateDynamic("getCount")(js.Any.fromFunction0(getCount))
     if (getData != null) __obj.updateDynamic("getData")(js.Any.fromFunction0(getData))
-    if (getDefaultType != null) __obj.updateDynamic("getDefaultType")(js.Any.fromFunction0(getDefaultType))
     if (getDeferEmptyText != null) __obj.updateDynamic("getDeferEmptyText")(js.Any.fromFunction0(getDeferEmptyText))
     if (getDeselectOnContainerClick != null) __obj.updateDynamic("getDeselectOnContainerClick")(js.Any.fromFunction0(getDeselectOnContainerClick))
     if (getDisableSelection != null) __obj.updateDynamic("getDisableSelection")(js.Any.fromFunction0(getDisableSelection))
@@ -546,7 +530,6 @@ object IDataView {
     if (getPressedDelay != null) __obj.updateDynamic("getPressedDelay")(js.Any.fromFunction0(getPressedDelay))
     if (getRecords != null) __obj.updateDynamic("getRecords")(js.Any.fromFunction0(getRecords))
     if (getScrollToTopOnRefresh != null) __obj.updateDynamic("getScrollToTopOnRefresh")(js.Any.fromFunction0(getScrollToTopOnRefresh))
-    if (getScrollable != null) __obj.updateDynamic("getScrollable")(js.Any.fromFunction0(getScrollable))
     if (getSelectedCls != null) __obj.updateDynamic("getSelectedCls")(js.Any.fromFunction0(getSelectedCls))
     if (getSelectedNodes != null) __obj.updateDynamic("getSelectedNodes")(js.Any.fromFunction0(getSelectedNodes))
     if (getSelectedRecords != null) __obj.updateDynamic("getSelectedRecords")(js.Any.fromFunction0(getSelectedRecords))
@@ -561,36 +544,32 @@ object IDataView {
     if (handleException != null) __obj.updateDynamic("handleException")(js.Any.fromFunction0(handleException))
     if (hasSelection != null) __obj.updateDynamic("hasSelection")(js.Any.fromFunction0(hasSelection))
     if (indexOf != null) __obj.updateDynamic("indexOf")(js.Any.fromFunction0(indexOf))
-    if (initialize != null) __obj.updateDynamic("initialize")(js.Any.fromFunction0(initialize))
-    if (`inline` != null) __obj.updateDynamic("inline")(`inline`)
+    if (`inline` != null) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
     if (isLocked != null) __obj.updateDynamic("isLocked")(js.Any.fromFunction0(isLocked))
     if (isSelected != null) __obj.updateDynamic("isSelected")(js.Any.fromFunction1(isSelected))
-    if (itemCls != null) __obj.updateDynamic("itemCls")(itemCls)
-    if (itemConfig != null) __obj.updateDynamic("itemConfig")(itemConfig)
-    if (!js.isUndefined(itemSelector)) __obj.updateDynamic("itemSelector")(itemSelector)
-    if (itemTpl != null) __obj.updateDynamic("itemTpl")(itemTpl)
-    if (loadingText != null) __obj.updateDynamic("loadingText")(loadingText)
-    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked)
+    if (itemCls != null) __obj.updateDynamic("itemCls")(itemCls.asInstanceOf[js.Any])
+    if (itemConfig != null) __obj.updateDynamic("itemConfig")(itemConfig.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemSelector)) __obj.updateDynamic("itemSelector")(itemSelector.asInstanceOf[js.Any])
+    if (itemTpl != null) __obj.updateDynamic("itemTpl")(itemTpl.asInstanceOf[js.Any])
+    if (loadingText != null) __obj.updateDynamic("loadingText")(loadingText.asInstanceOf[js.Any])
+    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked.asInstanceOf[js.Any])
     if (maxItemCache != null) __obj.updateDynamic("maxItemCache")(maxItemCache.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode)
-    if (!js.isUndefined(multiSelect)) __obj.updateDynamic("multiSelect")(multiSelect)
-    if (!js.isUndefined(overItemCls)) __obj.updateDynamic("overItemCls")(overItemCls)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiSelect)) __obj.updateDynamic("multiSelect")(multiSelect.asInstanceOf[js.Any])
+    if (!js.isUndefined(overItemCls)) __obj.updateDynamic("overItemCls")(overItemCls.asInstanceOf[js.Any])
     if (prepareData != null) __obj.updateDynamic("prepareData")(js.Any.fromFunction3(prepareData))
-    if (pressedCls != null) __obj.updateDynamic("pressedCls")(pressedCls)
+    if (pressedCls != null) __obj.updateDynamic("pressedCls")(pressedCls.asInstanceOf[js.Any])
     if (pressedDelay != null) __obj.updateDynamic("pressedDelay")(pressedDelay.asInstanceOf[js.Any])
     if (refresh != null) __obj.updateDynamic("refresh")(js.Any.fromFunction0(refresh))
     if (refreshNode != null) __obj.updateDynamic("refreshNode")(js.Any.fromFunction0(refreshNode))
-    if (!js.isUndefined(scrollToTopOnRefresh)) __obj.updateDynamic("scrollToTopOnRefresh")(scrollToTopOnRefresh)
-    if (scrollable != null) __obj.updateDynamic("scrollable")(scrollable)
+    if (!js.isUndefined(scrollToTopOnRefresh)) __obj.updateDynamic("scrollToTopOnRefresh")(scrollToTopOnRefresh.asInstanceOf[js.Any])
     if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction3(select))
     if (selectAll != null) __obj.updateDynamic("selectAll")(js.Any.fromFunction1(selectAll))
     if (selectRange != null) __obj.updateDynamic("selectRange")(js.Any.fromFunction3(selectRange))
-    if (selectedCls != null) __obj.updateDynamic("selectedCls")(selectedCls)
-    if (!js.isUndefined(selectedItemCls)) __obj.updateDynamic("selectedItemCls")(selectedItemCls)
+    if (selectedCls != null) __obj.updateDynamic("selectedCls")(selectedCls.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectedItemCls)) __obj.updateDynamic("selectedItemCls")(selectedItemCls.asInstanceOf[js.Any])
     if (setAllowDeselect != null) __obj.updateDynamic("setAllowDeselect")(js.Any.fromFunction1(setAllowDeselect))
-    if (setBaseCls != null) __obj.updateDynamic("setBaseCls")(js.Any.fromFunction1(setBaseCls))
     if (setData != null) __obj.updateDynamic("setData")(js.Any.fromFunction1(setData))
-    if (setDefaultType != null) __obj.updateDynamic("setDefaultType")(js.Any.fromFunction1(setDefaultType))
     if (setDeferEmptyText != null) __obj.updateDynamic("setDeferEmptyText")(js.Any.fromFunction1(setDeferEmptyText))
     if (setDeselectOnContainerClick != null) __obj.updateDynamic("setDeselectOnContainerClick")(js.Any.fromFunction1(setDeselectOnContainerClick))
     if (setDisableSelection != null) __obj.updateDynamic("setDisableSelection")(js.Any.fromFunction1(setDisableSelection))
@@ -611,14 +590,14 @@ object IDataView {
     if (setTriggerCtEvent != null) __obj.updateDynamic("setTriggerCtEvent")(js.Any.fromFunction1(setTriggerCtEvent))
     if (setTriggerEvent != null) __obj.updateDynamic("setTriggerEvent")(js.Any.fromFunction1(setTriggerEvent))
     if (setUseComponents != null) __obj.updateDynamic("setUseComponents")(js.Any.fromFunction1(setUseComponents))
-    if (!js.isUndefined(simpleSelect)) __obj.updateDynamic("simpleSelect")(simpleSelect)
-    if (!js.isUndefined(singleSelect)) __obj.updateDynamic("singleSelect")(singleSelect)
-    if (store != null) __obj.updateDynamic("store")(store)
-    if (!js.isUndefined(trackOver)) __obj.updateDynamic("trackOver")(trackOver)
-    if (triggerCtEvent != null) __obj.updateDynamic("triggerCtEvent")(triggerCtEvent)
-    if (triggerEvent != null) __obj.updateDynamic("triggerEvent")(triggerEvent)
+    if (!js.isUndefined(simpleSelect)) __obj.updateDynamic("simpleSelect")(simpleSelect.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleSelect)) __obj.updateDynamic("singleSelect")(singleSelect.asInstanceOf[js.Any])
+    if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
+    if (!js.isUndefined(trackOver)) __obj.updateDynamic("trackOver")(trackOver.asInstanceOf[js.Any])
+    if (triggerCtEvent != null) __obj.updateDynamic("triggerCtEvent")(triggerCtEvent.asInstanceOf[js.Any])
+    if (triggerEvent != null) __obj.updateDynamic("triggerEvent")(triggerEvent.asInstanceOf[js.Any])
     if (updateLastFocused != null) __obj.updateDynamic("updateLastFocused")(js.Any.fromFunction2(updateLastFocused))
-    if (!js.isUndefined(useComponents)) __obj.updateDynamic("useComponents")(useComponents)
+    if (!js.isUndefined(useComponents)) __obj.updateDynamic("useComponents")(useComponents.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDataView]
   }
 }

@@ -32,7 +32,7 @@ object ImageInfo {
     size: Double,
     width: Double
   ): ImageInfo = {
-    val __obj = js.Dynamic.literal(colorModel = colorModel, format = format.asInstanceOf[js.Any], frameNumber = frameNumber, height = height, size = size, width = width)
+    val __obj = js.Dynamic.literal(colorModel = colorModel.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], frameNumber = frameNumber.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ImageInfo]
   }

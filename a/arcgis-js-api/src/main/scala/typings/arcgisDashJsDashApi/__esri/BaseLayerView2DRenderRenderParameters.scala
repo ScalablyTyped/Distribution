@@ -38,7 +38,7 @@ object BaseLayerView2DRenderRenderParameters {
     state: ViewState,
     stationary: Boolean
   ): BaseLayerView2DRenderRenderParameters = {
-    val __obj = js.Dynamic.literal(constructor = constructor, context = context, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), state = state, stationary = stationary)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), state = state.asInstanceOf[js.Any], stationary = stationary.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BaseLayerView2DRenderRenderParameters]
   }

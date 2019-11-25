@@ -16,9 +16,9 @@ trait Anon_FiltersSortColumn[T] extends js.Object {
 object Anon_FiltersSortColumn {
   @scala.inline
   def apply[T](filters: TableStateFilters, sortColumn: ColumnProps[T] = null, sortOrder: SortOrder = null): Anon_FiltersSortColumn[T] = {
-    val __obj = js.Dynamic.literal(filters = filters)
-    if (sortColumn != null) __obj.updateDynamic("sortColumn")(sortColumn)
-    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder)
+    val __obj = js.Dynamic.literal(filters = filters.asInstanceOf[js.Any])
+    if (sortColumn != null) __obj.updateDynamic("sortColumn")(sortColumn.asInstanceOf[js.Any])
+    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FiltersSortColumn[T]]
   }
 }

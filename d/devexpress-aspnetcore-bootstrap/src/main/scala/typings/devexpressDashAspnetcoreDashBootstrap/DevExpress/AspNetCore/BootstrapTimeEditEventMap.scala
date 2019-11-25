@@ -30,7 +30,7 @@ object BootstrapTimeEditEventMap {
     validation: EditValidationEventArgs,
     valueChanged: ProcessingModeEventArgs
   ): BootstrapTimeEditEventMap = {
-    val __obj = js.Dynamic.literal(buttonClick = buttonClick, dateChanged = dateChanged, gotFocus = gotFocus, init = init, keyDown = keyDown, keyPress = keyPress, keyUp = keyUp, lostFocus = lostFocus, textChanged = textChanged, userInput = userInput, validation = validation, valueChanged = valueChanged)
+    val __obj = js.Dynamic.literal(buttonClick = buttonClick.asInstanceOf[js.Any], dateChanged = dateChanged.asInstanceOf[js.Any], gotFocus = gotFocus.asInstanceOf[js.Any], init = init.asInstanceOf[js.Any], keyDown = keyDown.asInstanceOf[js.Any], keyPress = keyPress.asInstanceOf[js.Any], keyUp = keyUp.asInstanceOf[js.Any], lostFocus = lostFocus.asInstanceOf[js.Any], textChanged = textChanged.asInstanceOf[js.Any], userInput = userInput.asInstanceOf[js.Any], validation = validation.asInstanceOf[js.Any], valueChanged = valueChanged.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BootstrapTimeEditEventMap]
   }

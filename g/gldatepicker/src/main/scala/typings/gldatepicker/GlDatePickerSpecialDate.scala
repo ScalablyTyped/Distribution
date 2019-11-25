@@ -19,11 +19,11 @@ object GlDatePickerSpecialDate {
     repeatMonth: js.UndefOr[Boolean] = js.undefined,
     repeatYear: js.UndefOr[Boolean] = js.undefined
   ): GlDatePickerSpecialDate = {
-    val __obj = js.Dynamic.literal(date = date)
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (!js.isUndefined(repeatMonth)) __obj.updateDynamic("repeatMonth")(repeatMonth)
-    if (!js.isUndefined(repeatYear)) __obj.updateDynamic("repeatYear")(repeatYear)
+    val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any])
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (!js.isUndefined(repeatMonth)) __obj.updateDynamic("repeatMonth")(repeatMonth.asInstanceOf[js.Any])
+    if (!js.isUndefined(repeatYear)) __obj.updateDynamic("repeatYear")(repeatYear.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlDatePickerSpecialDate]
   }
 }

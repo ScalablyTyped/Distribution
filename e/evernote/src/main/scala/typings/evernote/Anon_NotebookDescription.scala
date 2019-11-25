@@ -19,9 +19,9 @@ object Anon_NotebookDescription {
     recommended: js.UndefOr[Boolean] = js.undefined
   ): Anon_NotebookDescription = {
     val __obj = js.Dynamic.literal()
-    if (notebookDescription != null) __obj.updateDynamic("notebookDescription")(notebookDescription)
-    if (privilege != null) __obj.updateDynamic("privilege")(privilege)
-    if (!js.isUndefined(recommended)) __obj.updateDynamic("recommended")(recommended)
+    if (notebookDescription != null) __obj.updateDynamic("notebookDescription")(notebookDescription.asInstanceOf[js.Any])
+    if (privilege != null) __obj.updateDynamic("privilege")(privilege.asInstanceOf[js.Any])
+    if (!js.isUndefined(recommended)) __obj.updateDynamic("recommended")(recommended.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_NotebookDescription]
   }
 }

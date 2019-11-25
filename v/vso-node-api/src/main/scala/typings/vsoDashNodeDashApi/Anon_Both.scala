@@ -14,7 +14,7 @@ trait Anon_Both extends js.Object {
 object Anon_Both {
   @scala.inline
   def apply(both: Double, none: Double, team: Double, user: Double): Anon_Both = {
-    val __obj = js.Dynamic.literal(both = both, none = none, team = team, user = user)
+    val __obj = js.Dynamic.literal(both = both.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any], team = team.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Both]
   }

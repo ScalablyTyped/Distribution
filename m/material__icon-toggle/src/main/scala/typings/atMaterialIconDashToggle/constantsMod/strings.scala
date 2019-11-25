@@ -32,8 +32,8 @@ object strings {
     DATA_TOGGLE_ON: `data-toggle-on`,
     StringDictionary: StringDictionary[String] = null
   ): strings = {
-    val __obj = js.Dynamic.literal(ARIA_DISABLED = ARIA_DISABLED, ARIA_LABEL = ARIA_LABEL, ARIA_PRESSED = ARIA_PRESSED, CHANGE_EVENT = CHANGE_EVENT, DATA_TOGGLE_OFF = DATA_TOGGLE_OFF, DATA_TOGGLE_ON = DATA_TOGGLE_ON)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(ARIA_DISABLED = ARIA_DISABLED.asInstanceOf[js.Any], ARIA_LABEL = ARIA_LABEL.asInstanceOf[js.Any], ARIA_PRESSED = ARIA_PRESSED.asInstanceOf[js.Any], CHANGE_EVENT = CHANGE_EVENT.asInstanceOf[js.Any], DATA_TOGGLE_OFF = DATA_TOGGLE_OFF.asInstanceOf[js.Any], DATA_TOGGLE_ON = DATA_TOGGLE_ON.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[strings]
   }
 }

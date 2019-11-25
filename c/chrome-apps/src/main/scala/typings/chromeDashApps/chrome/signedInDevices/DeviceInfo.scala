@@ -28,8 +28,8 @@ trait DeviceInfo extends js.Object {
 object DeviceInfo {
   @scala.inline
   def apply(chromeVersion: String, id: String, name: String, os: OS, `type`: DeviceType): DeviceInfo = {
-    val __obj = js.Dynamic.literal(chromeVersion = chromeVersion, id = id, name = name, os = os)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(chromeVersion = chromeVersion.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], os = os.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceInfo]
   }
 }

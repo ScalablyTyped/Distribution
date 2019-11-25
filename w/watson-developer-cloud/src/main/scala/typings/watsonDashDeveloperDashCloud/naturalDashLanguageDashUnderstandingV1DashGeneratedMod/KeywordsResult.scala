@@ -29,10 +29,10 @@ object KeywordsResult {
   ): KeywordsResult = {
     val __obj = js.Dynamic.literal()
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (emotion != null) __obj.updateDynamic("emotion")(emotion)
+    if (emotion != null) __obj.updateDynamic("emotion")(emotion.asInstanceOf[js.Any])
     if (relevance != null) __obj.updateDynamic("relevance")(relevance.asInstanceOf[js.Any])
-    if (sentiment != null) __obj.updateDynamic("sentiment")(sentiment)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (sentiment != null) __obj.updateDynamic("sentiment")(sentiment.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeywordsResult]
   }
 }

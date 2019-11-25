@@ -18,8 +18,8 @@ object CloudWorkspaceSourceContext {
   @scala.inline
   def apply(snapshotId: String = null, workspaceId: CloudWorkspaceId = null): CloudWorkspaceSourceContext = {
     val __obj = js.Dynamic.literal()
-    if (snapshotId != null) __obj.updateDynamic("snapshotId")(snapshotId)
-    if (workspaceId != null) __obj.updateDynamic("workspaceId")(workspaceId)
+    if (snapshotId != null) __obj.updateDynamic("snapshotId")(snapshotId.asInstanceOf[js.Any])
+    if (workspaceId != null) __obj.updateDynamic("workspaceId")(workspaceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloudWorkspaceSourceContext]
   }
 }

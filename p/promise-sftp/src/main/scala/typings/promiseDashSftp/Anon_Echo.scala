@@ -14,7 +14,7 @@ trait Anon_Echo extends js.Object {
 object Anon_Echo {
   @scala.inline
   def apply(echo: Boolean, prompt: String): Anon_Echo = {
-    val __obj = js.Dynamic.literal(echo = echo, prompt = prompt)
+    val __obj = js.Dynamic.literal(echo = echo.asInstanceOf[js.Any], prompt = prompt.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Echo]
   }

@@ -35,9 +35,9 @@ object DebugConfiguration {
   		 */
   /* key */ StringDictionary[js.Any] = null
   ): DebugConfiguration = {
-    val __obj = js.Dynamic.literal(name = name, request = request)
-    __obj.updateDynamic("type")(`type`)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[DebugConfiguration]
   }
 }

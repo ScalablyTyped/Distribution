@@ -25,8 +25,8 @@ object ISuggestionsHeaderFooterItemProps {
     componentRef: IRefObject[js.Object] = null,
     onExecute: () => Unit = null
   ): ISuggestionsHeaderFooterItemProps = {
-    val __obj = js.Dynamic.literal(id = id, isSelected = isSelected, renderItem = js.Any.fromFunction0(renderItem))
-    if (className != null) __obj.updateDynamic("className")(className)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], isSelected = isSelected.asInstanceOf[js.Any], renderItem = js.Any.fromFunction0(renderItem))
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
     if (onExecute != null) __obj.updateDynamic("onExecute")(js.Any.fromFunction0(onExecute))
     __obj.asInstanceOf[ISuggestionsHeaderFooterItemProps]

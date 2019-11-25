@@ -39,10 +39,10 @@ object IgSchedulerDayViewSettings {
     workingHoursDisplayMode: String = null
   ): IgSchedulerDayViewSettings = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (dayViewNumberOfDays != null) __obj.updateDynamic("dayViewNumberOfDays")(dayViewNumberOfDays.asInstanceOf[js.Any])
-    if (timeSlotInterval != null) __obj.updateDynamic("timeSlotInterval")(timeSlotInterval)
-    if (workingHoursDisplayMode != null) __obj.updateDynamic("workingHoursDisplayMode")(workingHoursDisplayMode)
+    if (timeSlotInterval != null) __obj.updateDynamic("timeSlotInterval")(timeSlotInterval.asInstanceOf[js.Any])
+    if (workingHoursDisplayMode != null) __obj.updateDynamic("workingHoursDisplayMode")(workingHoursDisplayMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgSchedulerDayViewSettings]
   }
 }

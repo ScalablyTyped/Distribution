@@ -24,10 +24,10 @@ object MapOptions {
     minZoom: Int | Double = null
   ): MapOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableAutoResize)) __obj.updateDynamic("enableAutoResize")(enableAutoResize)
-    if (!js.isUndefined(enableHighResolution)) __obj.updateDynamic("enableHighResolution")(enableHighResolution)
-    if (!js.isUndefined(enableMapClick)) __obj.updateDynamic("enableMapClick")(enableMapClick)
-    if (mapType != null) __obj.updateDynamic("mapType")(mapType)
+    if (!js.isUndefined(enableAutoResize)) __obj.updateDynamic("enableAutoResize")(enableAutoResize.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableHighResolution)) __obj.updateDynamic("enableHighResolution")(enableHighResolution.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableMapClick)) __obj.updateDynamic("enableMapClick")(enableMapClick.asInstanceOf[js.Any])
+    if (mapType != null) __obj.updateDynamic("mapType")(mapType.asInstanceOf[js.Any])
     if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
     if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapOptions]

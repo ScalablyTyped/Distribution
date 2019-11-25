@@ -12,7 +12,7 @@ trait SqlNative extends js.Object {
 object SqlNative {
   @scala.inline
   def apply(bindings: js.Array[Value], sql: String): SqlNative = {
-    val __obj = js.Dynamic.literal(bindings = bindings, sql = sql)
+    val __obj = js.Dynamic.literal(bindings = bindings.asInstanceOf[js.Any], sql = sql.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SqlNative]
   }

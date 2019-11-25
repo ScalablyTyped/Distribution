@@ -14,7 +14,7 @@ trait ToastContainerProps extends js.Object {
 object ToastContainerProps {
   @scala.inline
   def apply(hasToasts: Boolean, placement: Placement, children: ReactNode = null): ToastContainerProps = {
-    val __obj = js.Dynamic.literal(hasToasts = hasToasts, placement = placement)
+    val __obj = js.Dynamic.literal(hasToasts = hasToasts.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToastContainerProps]
   }

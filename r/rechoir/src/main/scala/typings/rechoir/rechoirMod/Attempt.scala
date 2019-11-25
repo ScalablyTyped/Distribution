@@ -14,8 +14,8 @@ trait Attempt extends js.Object {
 object Attempt {
   @scala.inline
   def apply(module: js.Any, moduleName: String, error: Error = null): Attempt = {
-    val __obj = js.Dynamic.literal(module = module, moduleName = moduleName)
-    if (error != null) __obj.updateDynamic("error")(error)
+    val __obj = js.Dynamic.literal(module = module.asInstanceOf[js.Any], moduleName = moduleName.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attempt]
   }
 }

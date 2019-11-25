@@ -22,11 +22,11 @@ object ZoomOptions {
     zoomedSlideClass: String = null
   ): ZoomOptions = {
     val __obj = js.Dynamic.literal()
-    if (containerClass != null) __obj.updateDynamic("containerClass")(containerClass)
+    if (containerClass != null) __obj.updateDynamic("containerClass")(containerClass.asInstanceOf[js.Any])
     if (maxRatio != null) __obj.updateDynamic("maxRatio")(maxRatio.asInstanceOf[js.Any])
     if (minRatio != null) __obj.updateDynamic("minRatio")(minRatio.asInstanceOf[js.Any])
-    if (!js.isUndefined(toggle)) __obj.updateDynamic("toggle")(toggle)
-    if (zoomedSlideClass != null) __obj.updateDynamic("zoomedSlideClass")(zoomedSlideClass)
+    if (!js.isUndefined(toggle)) __obj.updateDynamic("toggle")(toggle.asInstanceOf[js.Any])
+    if (zoomedSlideClass != null) __obj.updateDynamic("zoomedSlideClass")(zoomedSlideClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZoomOptions]
   }
 }

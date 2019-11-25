@@ -15,7 +15,7 @@ object DeploymentExtendedFilter {
   @scala.inline
   def apply(provisioningState: String = null): DeploymentExtendedFilter = {
     val __obj = js.Dynamic.literal()
-    if (provisioningState != null) __obj.updateDynamic("provisioningState")(provisioningState)
+    if (provisioningState != null) __obj.updateDynamic("provisioningState")(provisioningState.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeploymentExtendedFilter]
   }
 }

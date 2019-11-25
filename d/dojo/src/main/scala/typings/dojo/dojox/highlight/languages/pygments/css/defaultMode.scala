@@ -27,7 +27,7 @@ trait defaultMode extends js.Object {
 object defaultMode {
   @scala.inline
   def apply(contains: js.Array[_], keywords: js.Object, lexems: js.Array[_]): defaultMode = {
-    val __obj = js.Dynamic.literal(contains = contains, keywords = keywords, lexems = lexems)
+    val __obj = js.Dynamic.literal(contains = contains.asInstanceOf[js.Any], keywords = keywords.asInstanceOf[js.Any], lexems = lexems.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[defaultMode]
   }

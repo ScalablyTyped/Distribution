@@ -22,11 +22,11 @@ object CursorProps {
     show: js.UndefOr[Boolean] = js.undefined
   ): CursorProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(blink)) __obj.updateDynamic("blink")(blink)
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (!js.isUndefined(hideWhenDone)) __obj.updateDynamic("hideWhenDone")(hideWhenDone)
+    if (!js.isUndefined(blink)) __obj.updateDynamic("blink")(blink.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideWhenDone)) __obj.updateDynamic("hideWhenDone")(hideWhenDone.asInstanceOf[js.Any])
     if (hideWhenDoneDelay != null) __obj.updateDynamic("hideWhenDoneDelay")(hideWhenDoneDelay.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     __obj.asInstanceOf[CursorProps]
   }
 }

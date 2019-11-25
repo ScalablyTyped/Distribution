@@ -19,8 +19,8 @@ object IYYYYMMDDHHmmssStaticOptions {
   @scala.inline
   def apply(dateSep: String = null, timeSep: String = null): IYYYYMMDDHHmmssStaticOptions = {
     val __obj = js.Dynamic.literal()
-    if (dateSep != null) __obj.updateDynamic("dateSep")(dateSep)
-    if (timeSep != null) __obj.updateDynamic("timeSep")(timeSep)
+    if (dateSep != null) __obj.updateDynamic("dateSep")(dateSep.asInstanceOf[js.Any])
+    if (timeSep != null) __obj.updateDynamic("timeSep")(timeSep.asInstanceOf[js.Any])
     __obj.asInstanceOf[IYYYYMMDDHHmmssStaticOptions]
   }
 }

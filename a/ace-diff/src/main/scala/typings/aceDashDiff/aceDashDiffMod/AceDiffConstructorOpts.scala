@@ -30,14 +30,14 @@ object AceDiffConstructorOpts {
     showDiffs: js.UndefOr[Boolean] = js.undefined,
     theme: String = null
   ): AceDiffConstructorOpts = {
-    val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], left = left, right = right)
-    if (classes != null) __obj.updateDynamic("classes")(classes)
+    val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
+    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
     if (diffGranularity != null) __obj.updateDynamic("diffGranularity")(diffGranularity.asInstanceOf[js.Any])
     if (maxDiffs != null) __obj.updateDynamic("maxDiffs")(maxDiffs.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode)
-    if (!js.isUndefined(showConnectors)) __obj.updateDynamic("showConnectors")(showConnectors)
-    if (!js.isUndefined(showDiffs)) __obj.updateDynamic("showDiffs")(showDiffs)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (!js.isUndefined(showConnectors)) __obj.updateDynamic("showConnectors")(showConnectors.asInstanceOf[js.Any])
+    if (!js.isUndefined(showDiffs)) __obj.updateDynamic("showDiffs")(showDiffs.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[AceDiffConstructorOpts]
   }
 }

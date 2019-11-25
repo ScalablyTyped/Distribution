@@ -51,12 +51,12 @@ object ChunkingOptions {
     success: SuccessOptions = null
   ): ChunkingOptions = {
     val __obj = js.Dynamic.literal()
-    if (concurrent != null) __obj.updateDynamic("concurrent")(concurrent)
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (!js.isUndefined(mandatory)) __obj.updateDynamic("mandatory")(mandatory)
-    if (paramNames != null) __obj.updateDynamic("paramNames")(paramNames)
+    if (concurrent != null) __obj.updateDynamic("concurrent")(concurrent.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(mandatory)) __obj.updateDynamic("mandatory")(mandatory.asInstanceOf[js.Any])
+    if (paramNames != null) __obj.updateDynamic("paramNames")(paramNames.asInstanceOf[js.Any])
     if (partSize != null) __obj.updateDynamic("partSize")(partSize.asInstanceOf[js.Any])
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (success != null) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChunkingOptions]
   }
 }

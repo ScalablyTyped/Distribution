@@ -16,8 +16,8 @@ object ActionChannelEffectDescriptor {
     pattern: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ActionPattern */ js.Any,
     buffer: Buffer = null
   ): ActionChannelEffectDescriptor = {
-    val __obj = js.Dynamic.literal(pattern = pattern)
-    if (buffer != null) __obj.updateDynamic("buffer")(buffer)
+    val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any])
+    if (buffer != null) __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionChannelEffectDescriptor]
   }
 }

@@ -12,7 +12,7 @@ trait Callback extends js.Object {
 object Callback {
   @scala.inline
   def apply(lineNumber: Double, traceLine: js.Object | js.Any): Callback = {
-    val __obj = js.Dynamic.literal(lineNumber = lineNumber, traceLine = traceLine.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(lineNumber = lineNumber.asInstanceOf[js.Any], traceLine = traceLine.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Callback]
   }

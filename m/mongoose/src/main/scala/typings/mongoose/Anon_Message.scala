@@ -21,11 +21,11 @@ object Anon_Message {
     `type`: String = null,
     value: js.Any = null
   ): Anon_Message = {
-    val __obj = js.Dynamic.literal(message = message)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (reason != null) __obj.updateDynamic("reason")(reason)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (value != null) __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Message]
   }
 }

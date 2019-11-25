@@ -28,9 +28,9 @@ object DocumentStatus {
     status: ADDED | REPLACED | DELETED | ERROR = null
   ): DocumentStatus = {
     val __obj = js.Dynamic.literal()
-    if (_collection != null) __obj.updateDynamic("_collection")(_collection)
-    if (_id != null) __obj.updateDynamic("_id")(_id)
-    if (error != null) __obj.updateDynamic("error")(error)
+    if (_collection != null) __obj.updateDynamic("_collection")(_collection.asInstanceOf[js.Any])
+    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentStatus]
   }

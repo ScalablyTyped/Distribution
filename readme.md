@@ -16,7 +16,7 @@ Expect the first stable release soon.
 
 ## About
 
-This is the home of Scala.js typings for **8149** Javascript libraries,
+This is the home of Scala.js typings for **8138** Javascript libraries,
  which should span more or less the entire set of modern and popular libraries.
 
 This should make it one of the biggest Scala repos on the planet:
@@ -25,13 +25,13 @@ This should make it one of the biggest Scala repos on the planet:
 --------------------------------------------------------------------------------
  Language             Files        Lines        Blank      Comment         Code
 --------------------------------------------------------------------------------
- Scala               319573     13943373      1330569      3548302      9064502
- Markdown              8286       294970        97950            0       197020
+ Scala               320698     14313274      1339223      3553060      9420991
+ Markdown              8286       294903        97949            0       196954
  JSON                     9           90            0            0           90
  Makefile                 3           45           10            0           35
  HTML                     1            6            0            0            6
 --------------------------------------------------------------------------------
- Total               327872     14238484      1428529      3548302      9261653
+ Total               328997     14608318      1437182      3553060      9618076
 --------------------------------------------------------------------------------
 
 ```
@@ -100,7 +100,7 @@ These should be the main steps you would have to follow:
 ScalablyTyped is hosted at bintray, so make sure to include the resolver
 ```scala
   resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "201911230336")
+  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "201911250844")
 ```
 
 ### `build.sbt`
@@ -136,10 +136,7 @@ As you can imagine with all this casting and other nonsense,
 a more scala-like facade will often be a better way.
 
 For now we have the following facades:
-- [antd-slinky](facades/antd-slinky)
-- [react-router-native-slinky](facades/react-router-native-slinky)
 - [antd-native-slinky](facades/antd-native-slinky)
-- [react-router-dom-slinky](facades/react-router-dom-slinky)
 - [react](facades/react)
 - [react-redux](facades/react-redux)
 - [react-slinky](facades/react-slinky)

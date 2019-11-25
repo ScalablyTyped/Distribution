@@ -22,7 +22,7 @@ trait GetCampaignVersionOutput extends OutputTypesUnion {
 object GetCampaignVersionOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, CampaignResponse: _UnmarshalledCampaignResponse): GetCampaignVersionOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata, CampaignResponse = CampaignResponse)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], CampaignResponse = CampaignResponse.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetCampaignVersionOutput]
   }

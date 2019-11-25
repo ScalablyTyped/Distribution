@@ -22,8 +22,8 @@ object ZoomAnimEvent {
     `type`: String,
     zoom: Double
   ): ZoomAnimEvent = {
-    val __obj = js.Dynamic.literal(center = center, layer = layer, noUpdate = noUpdate, propagatedFrom = propagatedFrom, sourceTarget = sourceTarget, target = target, zoom = zoom)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], noUpdate = noUpdate.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZoomAnimEvent]
   }
 }

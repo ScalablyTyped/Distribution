@@ -18,7 +18,7 @@ trait WorkItemFieldUpdate extends js.Object {
 object WorkItemFieldUpdate {
   @scala.inline
   def apply(newValue: js.Any, oldValue: js.Any): WorkItemFieldUpdate = {
-    val __obj = js.Dynamic.literal(newValue = newValue, oldValue = oldValue)
+    val __obj = js.Dynamic.literal(newValue = newValue.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WorkItemFieldUpdate]
   }

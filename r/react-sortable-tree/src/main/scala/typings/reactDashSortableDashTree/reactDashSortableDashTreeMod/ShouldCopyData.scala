@@ -14,7 +14,7 @@ trait ShouldCopyData extends js.Object {
 object ShouldCopyData {
   @scala.inline
   def apply(node: TreeNode, prevPath: NumberOrStringArray, prevTreeIndex: Double): ShouldCopyData = {
-    val __obj = js.Dynamic.literal(node = node, prevPath = prevPath, prevTreeIndex = prevTreeIndex)
+    val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], prevPath = prevPath.asInstanceOf[js.Any], prevTreeIndex = prevTreeIndex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ShouldCopyData]
   }

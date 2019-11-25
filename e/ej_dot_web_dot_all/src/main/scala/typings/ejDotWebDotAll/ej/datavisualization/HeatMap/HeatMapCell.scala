@@ -19,7 +19,7 @@ object HeatMapCell {
   @scala.inline
   def apply(showColor: js.UndefOr[Boolean] = js.undefined, showContent: CellVisibility | String = null): HeatMapCell = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(showColor)) __obj.updateDynamic("showColor")(showColor)
+    if (!js.isUndefined(showColor)) __obj.updateDynamic("showColor")(showColor.asInstanceOf[js.Any])
     if (showContent != null) __obj.updateDynamic("showContent")(showContent.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeatMapCell]
   }

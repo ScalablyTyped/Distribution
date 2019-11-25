@@ -62,12 +62,12 @@ object OrgPolicy {
     version: Int | Double = null
   ): OrgPolicy = {
     val __obj = js.Dynamic.literal()
-    if (booleanPolicy != null) __obj.updateDynamic("booleanPolicy")(booleanPolicy)
-    if (constraint != null) __obj.updateDynamic("constraint")(constraint)
-    if (etag != null) __obj.updateDynamic("etag")(etag)
-    if (listPolicy != null) __obj.updateDynamic("listPolicy")(listPolicy)
-    if (restoreDefault != null) __obj.updateDynamic("restoreDefault")(restoreDefault)
-    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime)
+    if (booleanPolicy != null) __obj.updateDynamic("booleanPolicy")(booleanPolicy.asInstanceOf[js.Any])
+    if (constraint != null) __obj.updateDynamic("constraint")(constraint.asInstanceOf[js.Any])
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (listPolicy != null) __obj.updateDynamic("listPolicy")(listPolicy.asInstanceOf[js.Any])
+    if (restoreDefault != null) __obj.updateDynamic("restoreDefault")(restoreDefault.asInstanceOf[js.Any])
+    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrgPolicy]
   }

@@ -26,7 +26,7 @@ object RepeatOptions {
     val __obj = js.Dynamic.literal()
     if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (tz != null) __obj.updateDynamic("tz")(tz)
+    if (tz != null) __obj.updateDynamic("tz")(tz.asInstanceOf[js.Any])
     __obj.asInstanceOf[RepeatOptions]
   }
 }

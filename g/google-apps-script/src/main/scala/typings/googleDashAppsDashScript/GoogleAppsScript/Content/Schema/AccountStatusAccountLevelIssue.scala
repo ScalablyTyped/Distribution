@@ -26,13 +26,13 @@ object AccountStatusAccountLevelIssue {
     title: String = null
   ): AccountStatusAccountLevelIssue = {
     val __obj = js.Dynamic.literal()
-    if (country != null) __obj.updateDynamic("country")(country)
-    if (destination != null) __obj.updateDynamic("destination")(destination)
-    if (detail != null) __obj.updateDynamic("detail")(detail)
-    if (documentation != null) __obj.updateDynamic("documentation")(documentation)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (severity != null) __obj.updateDynamic("severity")(severity)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
+    if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
+    if (detail != null) __obj.updateDynamic("detail")(detail.asInstanceOf[js.Any])
+    if (documentation != null) __obj.updateDynamic("documentation")(documentation.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (severity != null) __obj.updateDynamic("severity")(severity.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountStatusAccountLevelIssue]
   }
 }

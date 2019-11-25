@@ -25,22 +25,22 @@ object bytesStrings {
   sealed trait TB extends Unit
   
   @js.native
-  sealed trait b extends Unit
+  sealed trait b_ extends Unit
   
   @js.native
-  sealed trait gb extends Unit
+  sealed trait gb_ extends Unit
   
   @js.native
-  sealed trait kb extends Unit
+  sealed trait kb_ extends Unit
   
   @js.native
-  sealed trait mb extends Unit
+  sealed trait mb_ extends Unit
   
   @js.native
-  sealed trait pb extends Unit
+  sealed trait pb_ extends Unit
   
   @js.native
-  sealed trait tb extends Unit
+  sealed trait tb_ extends Unit
   
   @scala.inline
   def B: B = "B".asInstanceOf[B]
@@ -55,16 +55,16 @@ object bytesStrings {
   @scala.inline
   def TB: TB = "TB".asInstanceOf[TB]
   @scala.inline
-  def b: b = "b".asInstanceOf[b]
+  def b_ : b_ = "b".asInstanceOf[b_]
   @scala.inline
-  def gb: gb = "gb".asInstanceOf[gb]
+  def gb_ : gb_ = "gb".asInstanceOf[gb_]
   @scala.inline
-  def kb: kb = "kb".asInstanceOf[kb]
+  def kb_ : kb_ = "kb".asInstanceOf[kb_]
   @scala.inline
-  def mb: mb = "mb".asInstanceOf[mb]
+  def mb_ : mb_ = "mb".asInstanceOf[mb_]
   @scala.inline
-  def pb: pb = "pb".asInstanceOf[pb]
+  def pb_ : pb_ = "pb".asInstanceOf[pb_]
   @scala.inline
-  def tb: tb = "tb".asInstanceOf[tb]
+  def tb_ : tb_ = "tb".asInstanceOf[tb_]
 }
 

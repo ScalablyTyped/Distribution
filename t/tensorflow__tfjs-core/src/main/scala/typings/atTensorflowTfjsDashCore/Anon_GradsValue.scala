@@ -14,7 +14,7 @@ trait Anon_GradsValue extends js.Object {
 object Anon_GradsValue {
   @scala.inline
   def apply(grads: NamedTensorMap, value: Scalar): Anon_GradsValue = {
-    val __obj = js.Dynamic.literal(grads = grads, value = value)
+    val __obj = js.Dynamic.literal(grads = grads.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_GradsValue]
   }

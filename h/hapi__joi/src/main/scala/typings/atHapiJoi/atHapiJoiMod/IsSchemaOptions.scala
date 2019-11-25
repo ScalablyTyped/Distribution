@@ -16,7 +16,7 @@ trait IsSchemaOptions extends js.Object {
 object IsSchemaOptions {
   @scala.inline
   def apply(legacy: Boolean): IsSchemaOptions = {
-    val __obj = js.Dynamic.literal(legacy = legacy)
+    val __obj = js.Dynamic.literal(legacy = legacy.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IsSchemaOptions]
   }

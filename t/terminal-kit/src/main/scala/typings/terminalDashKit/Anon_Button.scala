@@ -17,7 +17,7 @@ object Anon_Button {
   def apply(mouse: button | drag | motion = null, safe: js.UndefOr[Boolean] = js.undefined): Anon_Button = {
     val __obj = js.Dynamic.literal()
     if (mouse != null) __obj.updateDynamic("mouse")(mouse.asInstanceOf[js.Any])
-    if (!js.isUndefined(safe)) __obj.updateDynamic("safe")(safe)
+    if (!js.isUndefined(safe)) __obj.updateDynamic("safe")(safe.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Button]
   }
 }

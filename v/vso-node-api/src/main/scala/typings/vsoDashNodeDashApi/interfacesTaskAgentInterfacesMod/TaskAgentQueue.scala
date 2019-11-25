@@ -23,7 +23,7 @@ object TaskAgentQueue {
     projectId: String,
     provisioned: Boolean
   ): TaskAgentQueue = {
-    val __obj = js.Dynamic.literal(groupScopeId = groupScopeId, id = id, name = name, pool = pool, projectId = projectId, provisioned = provisioned)
+    val __obj = js.Dynamic.literal(groupScopeId = groupScopeId.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pool = pool.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], provisioned = provisioned.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TaskAgentQueue]
   }

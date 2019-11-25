@@ -13,7 +13,7 @@ trait ModuleNameMapperConfig extends js.Object {
 object ModuleNameMapperConfig {
   @scala.inline
   def apply(moduleName: String, regex: RegExp): ModuleNameMapperConfig = {
-    val __obj = js.Dynamic.literal(moduleName = moduleName, regex = regex)
+    val __obj = js.Dynamic.literal(moduleName = moduleName.asInstanceOf[js.Any], regex = regex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ModuleNameMapperConfig]
   }

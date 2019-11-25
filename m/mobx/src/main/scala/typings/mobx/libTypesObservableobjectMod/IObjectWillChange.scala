@@ -8,26 +8,25 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IObjectWillChange extends js.Object {
-  var name: js.UndefOr[PropertyKey] = js.undefined
-  var newValue: js.UndefOr[js.Any] = js.undefined
-  var `object`: js.UndefOr[js.Any] = js.undefined
-  var `type`: js.UndefOr[add | remove | update] = js.undefined
-}
+/* Rewritten from type alias, can be one of: 
+  - typings.mobx.Anon_AddNameNewValue
+  - typings.mobx.Anon_NameObjectRemove
+*/
+trait IObjectWillChange extends js.Object
 
 object IObjectWillChange {
   @scala.inline
-  def apply(
-    name: PropertyKey = null,
-    newValue: js.Any = null,
-    `object`: js.Any = null,
-    `type`: update | add = null
-  ): IObjectWillChange = {
-    val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (newValue != null) __obj.updateDynamic("newValue")(newValue)
-    if (`object` != null) __obj.updateDynamic("object")(`object`)
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def Anon_AddNameNewValue(name: PropertyKey, newValue: js.Any, `object`: js.Any, `type`: update | add): IObjectWillChange = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IObjectWillChange]
+  }
+  @scala.inline
+  def Anon_NameObjectRemove(name: PropertyKey, `object`: js.Any, `type`: remove): IObjectWillChange = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IObjectWillChange]
   }
 }

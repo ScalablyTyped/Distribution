@@ -12,7 +12,7 @@ trait Anon_STYLETRON extends js.Object {
 object Anon_STYLETRON {
   @scala.inline
   def apply(__STYLETRON__ : Styletron): Anon_STYLETRON = {
-    val __obj = js.Dynamic.literal(__STYLETRON__ = __STYLETRON__)
+    val __obj = js.Dynamic.literal(__STYLETRON__ = __STYLETRON__.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_STYLETRON]
   }

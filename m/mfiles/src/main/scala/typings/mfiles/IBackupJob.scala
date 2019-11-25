@@ -26,7 +26,7 @@ object IBackupJob {
     TargetFile: String,
     VaultGUID: String
   ): IBackupJob = {
-    val __obj = js.Dynamic.literal(BackupType = BackupType, Clone = js.Any.fromFunction0(Clone), FileSizeLimitInMB = FileSizeLimitInMB, Impersonation = Impersonation, OverwriteExistingFiles = OverwriteExistingFiles, TargetFile = TargetFile, VaultGUID = VaultGUID)
+    val __obj = js.Dynamic.literal(BackupType = BackupType.asInstanceOf[js.Any], Clone = js.Any.fromFunction0(Clone), FileSizeLimitInMB = FileSizeLimitInMB.asInstanceOf[js.Any], Impersonation = Impersonation.asInstanceOf[js.Any], OverwriteExistingFiles = OverwriteExistingFiles.asInstanceOf[js.Any], TargetFile = TargetFile.asInstanceOf[js.Any], VaultGUID = VaultGUID.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IBackupJob]
   }

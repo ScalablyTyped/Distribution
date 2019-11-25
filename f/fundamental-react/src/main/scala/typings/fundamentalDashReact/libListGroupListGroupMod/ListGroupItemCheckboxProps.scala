@@ -21,10 +21,10 @@ object ListGroupItemCheckboxProps {
     labelProps: StringDictionary[js.Any] = null
   ): ListGroupItemCheckboxProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps)
-    if (labelProps != null) __obj.updateDynamic("labelProps")(labelProps)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps.asInstanceOf[js.Any])
+    if (labelProps != null) __obj.updateDynamic("labelProps")(labelProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListGroupItemCheckboxProps]
   }
 }

@@ -13,7 +13,7 @@ trait SubtypeOp extends Op {
 object SubtypeOp {
   @scala.inline
   def apply(o: js.Any, p: Path, t: String): SubtypeOp = {
-    val __obj = js.Dynamic.literal(o = o, p = p, t = t)
+    val __obj = js.Dynamic.literal(o = o.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any], t = t.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SubtypeOp]
   }

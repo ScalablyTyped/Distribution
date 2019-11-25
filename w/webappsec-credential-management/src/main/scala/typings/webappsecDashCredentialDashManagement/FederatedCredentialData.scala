@@ -15,10 +15,10 @@ trait FederatedCredentialData extends SiteBoundCredentialData {
 object FederatedCredentialData {
   @scala.inline
   def apply(id: String, provider: String, iconURL: String = null, name: String = null, protocol: String = null): FederatedCredentialData = {
-    val __obj = js.Dynamic.literal(id = id, provider = provider)
-    if (iconURL != null) __obj.updateDynamic("iconURL")(iconURL)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any])
+    if (iconURL != null) __obj.updateDynamic("iconURL")(iconURL.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[FederatedCredentialData]
   }
 }

@@ -23,9 +23,9 @@ object SignInStatus {
   @scala.inline
   def apply(additionalDetails: String = null, errorCode: Int | Double = null, failureReason: String = null): SignInStatus = {
     val __obj = js.Dynamic.literal()
-    if (additionalDetails != null) __obj.updateDynamic("additionalDetails")(additionalDetails)
+    if (additionalDetails != null) __obj.updateDynamic("additionalDetails")(additionalDetails.asInstanceOf[js.Any])
     if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode.asInstanceOf[js.Any])
-    if (failureReason != null) __obj.updateDynamic("failureReason")(failureReason)
+    if (failureReason != null) __obj.updateDynamic("failureReason")(failureReason.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignInStatus]
   }
 }

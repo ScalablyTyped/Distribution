@@ -14,9 +14,9 @@ object DefaultRendererFactoryOptions {
   @scala.inline
   def apply(colorOptions: js.Any = null, props: js.Any = null, tagRenderer: js.Function = null): DefaultRendererFactoryOptions = {
     val __obj = js.Dynamic.literal()
-    if (colorOptions != null) __obj.updateDynamic("colorOptions")(colorOptions)
-    if (props != null) __obj.updateDynamic("props")(props)
-    if (tagRenderer != null) __obj.updateDynamic("tagRenderer")(tagRenderer)
+    if (colorOptions != null) __obj.updateDynamic("colorOptions")(colorOptions.asInstanceOf[js.Any])
+    if (props != null) __obj.updateDynamic("props")(props.asInstanceOf[js.Any])
+    if (tagRenderer != null) __obj.updateDynamic("tagRenderer")(tagRenderer.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultRendererFactoryOptions]
   }
 }

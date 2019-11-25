@@ -4,17 +4,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SynthesisInput extends js.Object {
-  var ssml: js.UndefOr[String] = js.undefined
-  var text: js.UndefOr[String] = js.undefined
-}
+/* Rewritten from type alias, can be one of: 
+  - typings.atGoogleDashCloudTextDashToDashSpeech.Anon_Text
+  - typings.atGoogleDashCloudTextDashToDashSpeech.Anon_Ssml
+*/
+trait SynthesisInput extends js.Object
 
 object SynthesisInput {
   @scala.inline
-  def apply(ssml: String = null, text: String = null): SynthesisInput = {
-    val __obj = js.Dynamic.literal()
-    if (ssml != null) __obj.updateDynamic("ssml")(ssml)
-    if (text != null) __obj.updateDynamic("text")(text)
+  def Anon_Text(text: String): SynthesisInput = {
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[SynthesisInput]
+  }
+  @scala.inline
+  def Anon_Ssml(ssml: String): SynthesisInput = {
+    val __obj = js.Dynamic.literal(ssml = ssml.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[SynthesisInput]
   }
 }

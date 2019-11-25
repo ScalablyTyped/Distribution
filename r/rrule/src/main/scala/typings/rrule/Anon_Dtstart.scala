@@ -26,9 +26,9 @@ object Anon_Dtstart {
     dtstart: Date = null,
     tzid: String = null
   ): Anon_Dtstart = {
-    val __obj = js.Dynamic.literal(exdatevals = exdatevals, exrulevals = exrulevals, rdatevals = rdatevals, rrulevals = rrulevals)
-    if (dtstart != null) __obj.updateDynamic("dtstart")(dtstart)
-    if (tzid != null) __obj.updateDynamic("tzid")(tzid)
+    val __obj = js.Dynamic.literal(exdatevals = exdatevals.asInstanceOf[js.Any], exrulevals = exrulevals.asInstanceOf[js.Any], rdatevals = rdatevals.asInstanceOf[js.Any], rrulevals = rrulevals.asInstanceOf[js.Any])
+    if (dtstart != null) __obj.updateDynamic("dtstart")(dtstart.asInstanceOf[js.Any])
+    if (tzid != null) __obj.updateDynamic("tzid")(tzid.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Dtstart]
   }
 }

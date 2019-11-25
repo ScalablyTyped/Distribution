@@ -27,8 +27,8 @@ trait defaultTriangles extends js.Object {
 object defaultTriangles {
   @scala.inline
   def apply(points: js.Array[_], style: Object, `type`: String): defaultTriangles = {
-    val __obj = js.Dynamic.literal(points = points, style = style)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(points = points.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[defaultTriangles]
   }
 }

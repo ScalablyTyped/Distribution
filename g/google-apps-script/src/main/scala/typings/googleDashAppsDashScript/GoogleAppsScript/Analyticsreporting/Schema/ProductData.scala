@@ -21,9 +21,9 @@ object ProductData {
   ): ProductData = {
     val __obj = js.Dynamic.literal()
     if (itemRevenue != null) __obj.updateDynamic("itemRevenue")(itemRevenue.asInstanceOf[js.Any])
-    if (productName != null) __obj.updateDynamic("productName")(productName)
-    if (productQuantity != null) __obj.updateDynamic("productQuantity")(productQuantity)
-    if (productSku != null) __obj.updateDynamic("productSku")(productSku)
+    if (productName != null) __obj.updateDynamic("productName")(productName.asInstanceOf[js.Any])
+    if (productQuantity != null) __obj.updateDynamic("productQuantity")(productQuantity.asInstanceOf[js.Any])
+    if (productSku != null) __obj.updateDynamic("productSku")(productSku.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProductData]
   }
 }

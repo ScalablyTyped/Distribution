@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait NotificationLevel extends js.Object
 
+object NotificationLevel {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def error: typings.reactDashNotificationDashSystemDashRedux.reactDashNotificationDashSystemDashReduxStrings.error = this.cast("error")
+  @scala.inline
+  def info: typings.reactDashNotificationDashSystemDashRedux.reactDashNotificationDashSystemDashReduxStrings.info = this.cast("info")
+  @scala.inline
+  def success: typings.reactDashNotificationDashSystemDashRedux.reactDashNotificationDashSystemDashReduxStrings.success = this.cast("success")
+  @scala.inline
+  def warning: typings.reactDashNotificationDashSystemDashRedux.reactDashNotificationDashSystemDashReduxStrings.warning = this.cast("warning")
+}
+

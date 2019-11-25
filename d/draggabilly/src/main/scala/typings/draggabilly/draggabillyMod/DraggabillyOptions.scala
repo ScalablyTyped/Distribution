@@ -25,8 +25,8 @@ object DraggabillyOptions {
     val __obj = js.Dynamic.literal()
     if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
     if (containment != null) __obj.updateDynamic("containment")(containment.asInstanceOf[js.Any])
-    if (grid != null) __obj.updateDynamic("grid")(grid)
-    if (handle != null) __obj.updateDynamic("handle")(handle)
+    if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
+    if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
     __obj.asInstanceOf[DraggabillyOptions]
   }
 }

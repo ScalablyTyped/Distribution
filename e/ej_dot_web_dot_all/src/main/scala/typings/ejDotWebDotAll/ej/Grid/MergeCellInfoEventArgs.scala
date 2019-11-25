@@ -56,17 +56,17 @@ object MergeCellInfoEventArgs {
     `type`: String = null
   ): MergeCellInfoEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (cell != null) __obj.updateDynamic("cell")(cell)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (cell != null) __obj.updateDynamic("cell")(cell.asInstanceOf[js.Any])
     if (colMerge != null) __obj.updateDynamic("colMerge")(js.Any.fromFunction0(colMerge))
-    if (column != null) __obj.updateDynamic("column")(column)
-    if (data != null) __obj.updateDynamic("data")(data)
+    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (merge != null) __obj.updateDynamic("merge")(js.Any.fromFunction0(merge))
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (rowData != null) __obj.updateDynamic("rowData")(rowData)
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (rowData != null) __obj.updateDynamic("rowData")(rowData.asInstanceOf[js.Any])
     if (rowMerge != null) __obj.updateDynamic("rowMerge")(js.Any.fromFunction0(rowMerge))
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MergeCellInfoEventArgs]
   }
 }

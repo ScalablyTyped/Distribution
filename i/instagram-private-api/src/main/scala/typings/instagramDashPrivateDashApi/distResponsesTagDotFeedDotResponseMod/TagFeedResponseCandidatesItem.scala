@@ -13,7 +13,7 @@ trait TagFeedResponseCandidatesItem extends js.Object {
 object TagFeedResponseCandidatesItem {
   @scala.inline
   def apply(height: Double, url: String, width: Double): TagFeedResponseCandidatesItem = {
-    val __obj = js.Dynamic.literal(height = height, url = url, width = width)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TagFeedResponseCandidatesItem]
   }

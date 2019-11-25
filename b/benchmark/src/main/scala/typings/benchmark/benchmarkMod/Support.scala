@@ -36,8 +36,8 @@ object Support {
     nodeClass: Boolean,
     timeout: Boolean
   ): Support = {
-    val __obj = js.Dynamic.literal(air = air, argumentsClass = argumentsClass, browser = browser, charByIndex = charByIndex, charByOwnIndex = charByOwnIndex, decompilation = decompilation, descriptors = descriptors, getAllKeys = getAllKeys, iteratesOwnFirst = iteratesOwnFirst, nodeClass = nodeClass, timeout = timeout)
-    __obj.updateDynamic("java")(java_)
+    val __obj = js.Dynamic.literal(air = air.asInstanceOf[js.Any], argumentsClass = argumentsClass.asInstanceOf[js.Any], browser = browser.asInstanceOf[js.Any], charByIndex = charByIndex.asInstanceOf[js.Any], charByOwnIndex = charByOwnIndex.asInstanceOf[js.Any], decompilation = decompilation.asInstanceOf[js.Any], descriptors = descriptors.asInstanceOf[js.Any], getAllKeys = getAllKeys.asInstanceOf[js.Any], iteratesOwnFirst = iteratesOwnFirst.asInstanceOf[js.Any], nodeClass = nodeClass.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
+    __obj.updateDynamic("java")(java_.asInstanceOf[js.Any])
     __obj.asInstanceOf[Support]
   }
 }

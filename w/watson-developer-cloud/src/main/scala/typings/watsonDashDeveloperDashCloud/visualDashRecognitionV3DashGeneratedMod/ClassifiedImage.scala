@@ -27,11 +27,11 @@ object ClassifiedImage {
     resolved_url: String = null,
     source_url: String = null
   ): ClassifiedImage = {
-    val __obj = js.Dynamic.literal(classifiers = classifiers)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (resolved_url != null) __obj.updateDynamic("resolved_url")(resolved_url)
-    if (source_url != null) __obj.updateDynamic("source_url")(source_url)
+    val __obj = js.Dynamic.literal(classifiers = classifiers.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (resolved_url != null) __obj.updateDynamic("resolved_url")(resolved_url.asInstanceOf[js.Any])
+    if (source_url != null) __obj.updateDynamic("source_url")(source_url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassifiedImage]
   }
 }

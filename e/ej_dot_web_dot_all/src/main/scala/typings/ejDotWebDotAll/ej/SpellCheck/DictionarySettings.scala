@@ -17,8 +17,8 @@ object DictionarySettings {
   @scala.inline
   def apply(customDictionaryUrl: String = null, dictionaryUrl: String = null): DictionarySettings = {
     val __obj = js.Dynamic.literal()
-    if (customDictionaryUrl != null) __obj.updateDynamic("customDictionaryUrl")(customDictionaryUrl)
-    if (dictionaryUrl != null) __obj.updateDynamic("dictionaryUrl")(dictionaryUrl)
+    if (customDictionaryUrl != null) __obj.updateDynamic("customDictionaryUrl")(customDictionaryUrl.asInstanceOf[js.Any])
+    if (dictionaryUrl != null) __obj.updateDynamic("dictionaryUrl")(dictionaryUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[DictionarySettings]
   }
 }

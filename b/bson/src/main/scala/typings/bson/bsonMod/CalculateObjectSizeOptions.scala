@@ -18,8 +18,8 @@ object CalculateObjectSizeOptions {
     serializeFunctions: js.UndefOr[Boolean] = js.undefined
   ): CalculateObjectSizeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ignoreUndefined)) __obj.updateDynamic("ignoreUndefined")(ignoreUndefined)
-    if (!js.isUndefined(serializeFunctions)) __obj.updateDynamic("serializeFunctions")(serializeFunctions)
+    if (!js.isUndefined(ignoreUndefined)) __obj.updateDynamic("ignoreUndefined")(ignoreUndefined.asInstanceOf[js.Any])
+    if (!js.isUndefined(serializeFunctions)) __obj.updateDynamic("serializeFunctions")(serializeFunctions.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalculateObjectSizeOptions]
   }
 }

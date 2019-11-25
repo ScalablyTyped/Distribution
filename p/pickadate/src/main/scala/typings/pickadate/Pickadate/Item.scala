@@ -14,7 +14,7 @@ trait Item extends js.Object {
 object Item {
   @scala.inline
   def apply(pick: Double): Item = {
-    val __obj = js.Dynamic.literal(pick = pick)
+    val __obj = js.Dynamic.literal(pick = pick.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Item]
   }

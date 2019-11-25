@@ -42,17 +42,17 @@ object Anon_Double {
     `type`: single | double = null
   ): Anon_Double = {
     val __obj = js.Dynamic.literal()
-    if (event != null) __obj.updateDynamic("event")(event)
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (orient != null) __obj.updateDynamic("orient")(orient.asInstanceOf[js.Any])
-    if (!js.isUndefined(progress)) __obj.updateDynamic("progress")(progress)
+    if (!js.isUndefined(progress)) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
-    if (!js.isUndefined(tooltip)) __obj.updateDynamic("tooltip")(tooltip)
-    if (tpl != null) __obj.updateDynamic("tpl")(tpl)
+    if (!js.isUndefined(tooltip)) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
+    if (tpl != null) __obj.updateDynamic("tpl")(tpl.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Double]
   }

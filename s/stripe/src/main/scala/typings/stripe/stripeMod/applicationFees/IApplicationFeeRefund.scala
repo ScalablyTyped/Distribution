@@ -44,8 +44,8 @@ object IApplicationFeeRefund {
     metadata: IMetadata,
     `object`: String
   ): IApplicationFeeRefund = {
-    val __obj = js.Dynamic.literal(amount = amount, balance_transaction = balance_transaction.asInstanceOf[js.Any], created = created, currency = currency, fee = fee.asInstanceOf[js.Any], id = id, metadata = metadata)
-    __obj.updateDynamic("object")(`object`)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], balance_transaction = balance_transaction.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], fee = fee.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IApplicationFeeRefund]
   }
 }

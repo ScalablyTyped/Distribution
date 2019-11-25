@@ -54,18 +54,18 @@ object Datafeed {
     targets: js.Array[DatafeedTarget] = null
   ): Datafeed = {
     val __obj = js.Dynamic.literal()
-    if (attributeLanguage != null) __obj.updateDynamic("attributeLanguage")(attributeLanguage)
-    if (contentLanguage != null) __obj.updateDynamic("contentLanguage")(contentLanguage)
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
-    if (fetchSchedule != null) __obj.updateDynamic("fetchSchedule")(fetchSchedule)
-    if (fileName != null) __obj.updateDynamic("fileName")(fileName)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (intendedDestinations != null) __obj.updateDynamic("intendedDestinations")(intendedDestinations)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (targetCountry != null) __obj.updateDynamic("targetCountry")(targetCountry)
-    if (targets != null) __obj.updateDynamic("targets")(targets)
+    if (attributeLanguage != null) __obj.updateDynamic("attributeLanguage")(attributeLanguage.asInstanceOf[js.Any])
+    if (contentLanguage != null) __obj.updateDynamic("contentLanguage")(contentLanguage.asInstanceOf[js.Any])
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
+    if (fetchSchedule != null) __obj.updateDynamic("fetchSchedule")(fetchSchedule.asInstanceOf[js.Any])
+    if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (intendedDestinations != null) __obj.updateDynamic("intendedDestinations")(intendedDestinations.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (targetCountry != null) __obj.updateDynamic("targetCountry")(targetCountry.asInstanceOf[js.Any])
+    if (targets != null) __obj.updateDynamic("targets")(targets.asInstanceOf[js.Any])
     __obj.asInstanceOf[Datafeed]
   }
 }

@@ -12,7 +12,7 @@ trait Anon_AriaDisplay extends js.Object {
 object Anon_AriaDisplay {
   @scala.inline
   def apply(aria: String, display: String): Anon_AriaDisplay = {
-    val __obj = js.Dynamic.literal(aria = aria, display = display)
+    val __obj = js.Dynamic.literal(aria = aria.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AriaDisplay]
   }

@@ -49,13 +49,13 @@ object Sku {
     skuId: String = null
   ): Sku = {
     val __obj = js.Dynamic.literal()
-    if (category != null) __obj.updateDynamic("category")(category)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (pricingInfo != null) __obj.updateDynamic("pricingInfo")(pricingInfo)
-    if (serviceProviderName != null) __obj.updateDynamic("serviceProviderName")(serviceProviderName)
-    if (serviceRegions != null) __obj.updateDynamic("serviceRegions")(serviceRegions)
-    if (skuId != null) __obj.updateDynamic("skuId")(skuId)
+    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (pricingInfo != null) __obj.updateDynamic("pricingInfo")(pricingInfo.asInstanceOf[js.Any])
+    if (serviceProviderName != null) __obj.updateDynamic("serviceProviderName")(serviceProviderName.asInstanceOf[js.Any])
+    if (serviceRegions != null) __obj.updateDynamic("serviceRegions")(serviceRegions.asInstanceOf[js.Any])
+    if (skuId != null) __obj.updateDynamic("skuId")(skuId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Sku]
   }
 }

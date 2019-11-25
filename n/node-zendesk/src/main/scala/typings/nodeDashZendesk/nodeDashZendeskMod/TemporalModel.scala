@@ -11,7 +11,7 @@ trait TemporalModel extends PersistableModel {
 object TemporalModel {
   @scala.inline
   def apply(created_at: String, id: ZendeskID): TemporalModel = {
-    val __obj = js.Dynamic.literal(created_at = created_at, id = id)
+    val __obj = js.Dynamic.literal(created_at = created_at.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TemporalModel]
   }

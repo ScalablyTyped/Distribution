@@ -47,8 +47,8 @@ object SavedFeedResponseProduct {
     thumbnail_image: SavedFeedResponseThumbnail_image,
     variant_values: js.Array[SavedFeedResponseVariantValuesItem] = null
   ): SavedFeedResponseProduct = {
-    val __obj = js.Dynamic.literal(can_share_to_story = can_share_to_story, checkout_style = checkout_style, current_price = current_price, current_price_stripped = current_price_stripped, description = description, external_url = external_url, full_price = full_price, full_price_stripped = full_price_stripped, has_viewer_saved = has_viewer_saved, main_image = main_image, merchant = merchant, name = name, price = price, product_id = product_id, retailer_id = retailer_id, review_status = review_status, thumbnail_image = thumbnail_image)
-    if (variant_values != null) __obj.updateDynamic("variant_values")(variant_values)
+    val __obj = js.Dynamic.literal(can_share_to_story = can_share_to_story.asInstanceOf[js.Any], checkout_style = checkout_style.asInstanceOf[js.Any], current_price = current_price.asInstanceOf[js.Any], current_price_stripped = current_price_stripped.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], external_url = external_url.asInstanceOf[js.Any], full_price = full_price.asInstanceOf[js.Any], full_price_stripped = full_price_stripped.asInstanceOf[js.Any], has_viewer_saved = has_viewer_saved.asInstanceOf[js.Any], main_image = main_image.asInstanceOf[js.Any], merchant = merchant.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], price = price.asInstanceOf[js.Any], product_id = product_id.asInstanceOf[js.Any], retailer_id = retailer_id.asInstanceOf[js.Any], review_status = review_status.asInstanceOf[js.Any], thumbnail_image = thumbnail_image.asInstanceOf[js.Any])
+    if (variant_values != null) __obj.updateDynamic("variant_values")(variant_values.asInstanceOf[js.Any])
     __obj.asInstanceOf[SavedFeedResponseProduct]
   }
 }

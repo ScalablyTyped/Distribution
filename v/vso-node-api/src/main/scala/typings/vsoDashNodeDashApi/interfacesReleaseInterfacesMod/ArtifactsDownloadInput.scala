@@ -11,7 +11,7 @@ trait ArtifactsDownloadInput extends js.Object {
 object ArtifactsDownloadInput {
   @scala.inline
   def apply(downloadInputs: js.Array[ArtifactDownloadInputBase]): ArtifactsDownloadInput = {
-    val __obj = js.Dynamic.literal(downloadInputs = downloadInputs)
+    val __obj = js.Dynamic.literal(downloadInputs = downloadInputs.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ArtifactsDownloadInput]
   }

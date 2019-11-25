@@ -12,8 +12,8 @@ trait ColumnOption extends js.Object {
 object ColumnOption {
   @scala.inline
   def apply(key: String, header: String = null): ColumnOption = {
-    val __obj = js.Dynamic.literal(key = key)
-    if (header != null) __obj.updateDynamic("header")(header)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnOption]
   }
 }

@@ -46,10 +46,10 @@ object BaseCharge {
     metadata: KeyVal = null,
     redirect_url: String = null
   ): BaseCharge = {
-    val __obj = js.Dynamic.literal(description = description, name = name, pricing_type = pricing_type)
-    if (cancel_url != null) __obj.updateDynamic("cancel_url")(cancel_url)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (redirect_url != null) __obj.updateDynamic("redirect_url")(redirect_url)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pricing_type = pricing_type.asInstanceOf[js.Any])
+    if (cancel_url != null) __obj.updateDynamic("cancel_url")(cancel_url.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (redirect_url != null) __obj.updateDynamic("redirect_url")(redirect_url.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseCharge]
   }
 }

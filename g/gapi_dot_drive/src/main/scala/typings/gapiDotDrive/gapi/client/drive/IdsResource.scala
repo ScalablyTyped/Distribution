@@ -14,7 +14,7 @@ trait IdsResource extends js.Object {
 object IdsResource {
   @scala.inline
   def apply(ids: js.Array[String], kind: `drive#generatedIds`, space: String): IdsResource = {
-    val __obj = js.Dynamic.literal(ids = ids, kind = kind, space = space)
+    val __obj = js.Dynamic.literal(ids = ids.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], space = space.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IdsResource]
   }

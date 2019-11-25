@@ -20,13 +20,11 @@ object IWindowsPhone {
   def apply(
     IDefault: IDefault = null,
     getTranslatable: () => _ = null,
-    initialize: () => Unit = null,
     setTranslatable: /* translatable */ js.UndefOr[js.Any] => Unit = null
   ): IWindowsPhone = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IDefault)
+    if (IDefault != null) js.Dynamic.global.Object.assign(__obj, IDefault)
     if (getTranslatable != null) __obj.updateDynamic("getTranslatable")(js.Any.fromFunction0(getTranslatable))
-    if (initialize != null) __obj.updateDynamic("initialize")(js.Any.fromFunction0(initialize))
     if (setTranslatable != null) __obj.updateDynamic("setTranslatable")(js.Any.fromFunction1(setTranslatable))
     __obj.asInstanceOf[IWindowsPhone]
   }

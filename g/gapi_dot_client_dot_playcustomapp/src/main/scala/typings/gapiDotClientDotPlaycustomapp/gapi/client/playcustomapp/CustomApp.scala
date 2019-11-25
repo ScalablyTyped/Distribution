@@ -15,8 +15,8 @@ object CustomApp {
   @scala.inline
   def apply(languageCode: String = null, title: String = null): CustomApp = {
     val __obj = js.Dynamic.literal()
-    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomApp]
   }
 }

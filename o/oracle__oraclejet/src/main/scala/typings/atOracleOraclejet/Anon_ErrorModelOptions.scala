@@ -22,7 +22,7 @@ object Anon_ErrorModelOptions {
     success: (/* model */ Model, /* response */ js.Any, /* options */ js.Object) => Unit = null
   ): Anon_ErrorModelOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction3(error))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction3(success))
     __obj.asInstanceOf[Anon_ErrorModelOptions]

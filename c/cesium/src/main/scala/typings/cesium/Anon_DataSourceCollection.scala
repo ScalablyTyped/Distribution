@@ -22,7 +22,7 @@ object Anon_DataSourceCollection {
     scene: Scene,
     visualizersCallback: (/* scene */ Scene, /* dataSource */ DataSource) => js.Array[Visualizer] = null
   ): Anon_DataSourceCollection = {
-    val __obj = js.Dynamic.literal(dataSourceCollection = dataSourceCollection, scene = scene)
+    val __obj = js.Dynamic.literal(dataSourceCollection = dataSourceCollection.asInstanceOf[js.Any], scene = scene.asInstanceOf[js.Any])
     if (visualizersCallback != null) __obj.updateDynamic("visualizersCallback")(js.Any.fromFunction2(visualizersCallback))
     __obj.asInstanceOf[Anon_DataSourceCollection]
   }

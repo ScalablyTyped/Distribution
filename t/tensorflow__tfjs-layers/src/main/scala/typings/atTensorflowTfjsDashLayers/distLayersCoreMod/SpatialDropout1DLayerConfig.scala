@@ -27,15 +27,15 @@ object SpatialDropout1DLayerConfig {
     seed: Int | Double = null,
     trainable: js.UndefOr[Boolean] = js.undefined
   ): SpatialDropout1DLayerConfig = {
-    val __obj = js.Dynamic.literal(rate = rate)
-    if (batch_input_shape != null) __obj.updateDynamic("batch_input_shape")(batch_input_shape)
+    val __obj = js.Dynamic.literal(rate = rate.asInstanceOf[js.Any])
+    if (batch_input_shape != null) __obj.updateDynamic("batch_input_shape")(batch_input_shape.asInstanceOf[js.Any])
     if (batch_size != null) __obj.updateDynamic("batch_size")(batch_size.asInstanceOf[js.Any])
-    if (dtype != null) __obj.updateDynamic("dtype")(dtype)
-    if (input_dtype != null) __obj.updateDynamic("input_dtype")(input_dtype)
-    if (input_shape != null) __obj.updateDynamic("input_shape")(input_shape)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (dtype != null) __obj.updateDynamic("dtype")(dtype.asInstanceOf[js.Any])
+    if (input_dtype != null) __obj.updateDynamic("input_dtype")(input_dtype.asInstanceOf[js.Any])
+    if (input_shape != null) __obj.updateDynamic("input_shape")(input_shape.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (seed != null) __obj.updateDynamic("seed")(seed.asInstanceOf[js.Any])
-    if (!js.isUndefined(trainable)) __obj.updateDynamic("trainable")(trainable)
+    if (!js.isUndefined(trainable)) __obj.updateDynamic("trainable")(trainable.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpatialDropout1DLayerConfig]
   }
 }

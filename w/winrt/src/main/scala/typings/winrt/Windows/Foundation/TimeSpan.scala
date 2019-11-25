@@ -11,7 +11,7 @@ trait TimeSpan extends js.Object {
 object TimeSpan {
   @scala.inline
   def apply(duration: Double): TimeSpan = {
-    val __obj = js.Dynamic.literal(duration = duration)
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TimeSpan]
   }

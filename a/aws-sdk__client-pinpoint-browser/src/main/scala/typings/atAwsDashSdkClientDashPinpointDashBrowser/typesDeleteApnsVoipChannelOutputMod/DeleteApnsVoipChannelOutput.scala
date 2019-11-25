@@ -22,7 +22,7 @@ trait DeleteApnsVoipChannelOutput extends OutputTypesUnion {
 object DeleteApnsVoipChannelOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, APNSVoipChannelResponse: _UnmarshalledAPNSVoipChannelResponse): DeleteApnsVoipChannelOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata, APNSVoipChannelResponse = APNSVoipChannelResponse)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], APNSVoipChannelResponse = APNSVoipChannelResponse.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeleteApnsVoipChannelOutput]
   }

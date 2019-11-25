@@ -32,13 +32,13 @@ object CustomPanel {
     pre_render: /* req */ Request[ParamsDictionary] => Unit = null,
     standalone: js.UndefOr[Boolean] = js.undefined
   ): CustomPanel = {
-    val __obj = js.Dynamic.literal(name = name, process = js.Any.fromFunction1(process), template = template)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], process = js.Any.fromFunction1(process), template = template.asInstanceOf[js.Any])
     if (finalize != null) __obj.updateDynamic("finalize")(js.Any.fromFunction1(finalize))
     if (initialize != null) __obj.updateDynamic("initialize")(js.Any.fromFunction1(initialize))
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (post_render != null) __obj.updateDynamic("post_render")(js.Any.fromFunction1(post_render))
     if (pre_render != null) __obj.updateDynamic("pre_render")(js.Any.fromFunction1(pre_render))
-    if (!js.isUndefined(standalone)) __obj.updateDynamic("standalone")(standalone)
+    if (!js.isUndefined(standalone)) __obj.updateDynamic("standalone")(standalone.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomPanel]
   }
 }

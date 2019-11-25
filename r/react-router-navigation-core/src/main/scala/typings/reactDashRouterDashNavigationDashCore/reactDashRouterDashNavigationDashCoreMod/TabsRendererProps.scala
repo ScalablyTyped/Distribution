@@ -20,7 +20,7 @@ object TabsRendererProps {
     onIndexChange: Double => Unit,
     tabs: js.Array[Tab]
   ): TabsRendererProps = {
-    val __obj = js.Dynamic.literal(loadedTabs = loadedTabs, navigationState = navigationState, onIndexChange = js.Any.fromFunction1(onIndexChange), tabs = tabs)
+    val __obj = js.Dynamic.literal(loadedTabs = loadedTabs.asInstanceOf[js.Any], navigationState = navigationState.asInstanceOf[js.Any], onIndexChange = js.Any.fromFunction1(onIndexChange), tabs = tabs.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TabsRendererProps]
   }

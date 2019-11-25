@@ -14,7 +14,7 @@ trait Anon_ShWb extends js.Object {
 object Anon_ShWb {
   @scala.inline
   def apply(Sh: Worksheet, Wb: Workbook): Anon_ShWb = {
-    val __obj = js.Dynamic.literal(Sh = Sh, Wb = Wb)
+    val __obj = js.Dynamic.literal(Sh = Sh.asInstanceOf[js.Any], Wb = Wb.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ShWb]
   }

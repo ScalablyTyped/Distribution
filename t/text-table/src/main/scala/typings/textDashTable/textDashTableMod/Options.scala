@@ -25,8 +25,8 @@ object Options {
     stringLength: /* str */ String => Double = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align)
-    if (hsep != null) __obj.updateDynamic("hsep")(hsep)
+    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
+    if (hsep != null) __obj.updateDynamic("hsep")(hsep.asInstanceOf[js.Any])
     if (stringLength != null) __obj.updateDynamic("stringLength")(js.Any.fromFunction1(stringLength))
     __obj.asInstanceOf[Options]
   }

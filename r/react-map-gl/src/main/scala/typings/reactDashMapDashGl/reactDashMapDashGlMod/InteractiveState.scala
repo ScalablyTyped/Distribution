@@ -23,10 +23,10 @@ object InteractiveState {
   ): InteractiveState = {
     val __obj = js.Dynamic.literal()
     if (startBearing != null) __obj.updateDynamic("startBearing")(startBearing.asInstanceOf[js.Any])
-    if (startPanLngLat != null) __obj.updateDynamic("startPanLngLat")(startPanLngLat)
+    if (startPanLngLat != null) __obj.updateDynamic("startPanLngLat")(startPanLngLat.asInstanceOf[js.Any])
     if (startPitch != null) __obj.updateDynamic("startPitch")(startPitch.asInstanceOf[js.Any])
     if (startZoom != null) __obj.updateDynamic("startZoom")(startZoom.asInstanceOf[js.Any])
-    if (startZoomLngLat != null) __obj.updateDynamic("startZoomLngLat")(startZoomLngLat)
+    if (startZoomLngLat != null) __obj.updateDynamic("startZoomLngLat")(startZoomLngLat.asInstanceOf[js.Any])
     __obj.asInstanceOf[InteractiveState]
   }
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "node-gettext"
-version := "2.0-dt-20190226Z-d1b69b"
+version := "2.0-dt-20190226Z-98bb63"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

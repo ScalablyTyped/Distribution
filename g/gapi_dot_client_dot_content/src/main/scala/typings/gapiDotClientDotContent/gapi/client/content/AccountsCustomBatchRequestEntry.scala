@@ -32,13 +32,13 @@ object AccountsCustomBatchRequestEntry {
     overwrite: js.UndefOr[Boolean] = js.undefined
   ): AccountsCustomBatchRequestEntry = {
     val __obj = js.Dynamic.literal()
-    if (account != null) __obj.updateDynamic("account")(account)
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId)
+    if (account != null) __obj.updateDynamic("account")(account.asInstanceOf[js.Any])
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
     if (batchId != null) __obj.updateDynamic("batchId")(batchId.asInstanceOf[js.Any])
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
-    if (merchantId != null) __obj.updateDynamic("merchantId")(merchantId)
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite)
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
+    if (merchantId != null) __obj.updateDynamic("merchantId")(merchantId.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountsCustomBatchRequestEntry]
   }
 }

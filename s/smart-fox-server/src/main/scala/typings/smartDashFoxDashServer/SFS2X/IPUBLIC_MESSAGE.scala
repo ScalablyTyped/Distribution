@@ -16,7 +16,7 @@ trait IPUBLIC_MESSAGE extends js.Object {
 object IPUBLIC_MESSAGE {
   @scala.inline
   def apply(data: js.Object, message: String, room: SFSRoom, sender: SFSUser): IPUBLIC_MESSAGE = {
-    val __obj = js.Dynamic.literal(data = data, message = message, room = room, sender = sender)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], room = room.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IPUBLIC_MESSAGE]
   }

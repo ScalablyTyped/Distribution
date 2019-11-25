@@ -18,8 +18,8 @@ object CompositeFilter {
   @scala.inline
   def apply(filters: js.Array[Filter] = null, op: String = null): CompositeFilter = {
     val __obj = js.Dynamic.literal()
-    if (filters != null) __obj.updateDynamic("filters")(filters)
-    if (op != null) __obj.updateDynamic("op")(op)
+    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
+    if (op != null) __obj.updateDynamic("op")(op.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompositeFilter]
   }
 }

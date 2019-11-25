@@ -45,7 +45,7 @@ object ReposGetDeploymentResponse {
     updated_at: String,
     url: String
   ): ReposGetDeploymentResponse = {
-    val __obj = js.Dynamic.literal(created_at = created_at, creator = creator, description = description, environment = environment, id = id, node_id = node_id, original_environment = original_environment, payload = payload, production_environment = production_environment, ref = ref, repository_url = repository_url, sha = sha, statuses_url = statuses_url, task = task, transient_environment = transient_environment, updated_at = updated_at, url = url)
+    val __obj = js.Dynamic.literal(created_at = created_at.asInstanceOf[js.Any], creator = creator.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], environment = environment.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], original_environment = original_environment.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], production_environment = production_environment.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], repository_url = repository_url.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any], statuses_url = statuses_url.asInstanceOf[js.Any], task = task.asInstanceOf[js.Any], transient_environment = transient_environment.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReposGetDeploymentResponse]
   }

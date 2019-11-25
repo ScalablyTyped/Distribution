@@ -43,11 +43,11 @@ object Sku {
   ): Sku = {
     val __obj = js.Dynamic.literal()
     if (capacity != null) __obj.updateDynamic("capacity")(capacity.asInstanceOf[js.Any])
-    if (family != null) __obj.updateDynamic("family")(family)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (tier != null) __obj.updateDynamic("tier")(tier)
+    if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (tier != null) __obj.updateDynamic("tier")(tier.asInstanceOf[js.Any])
     __obj.asInstanceOf[Sku]
   }
 }

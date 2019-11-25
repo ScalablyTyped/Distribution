@@ -26,9 +26,9 @@ object CartesianMarkerProps {
     textStyle: PartialCSSProperties = null
   ): CartesianMarkerProps = {
     val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    if (legend != null) __obj.updateDynamic("legend")(legend)
-    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle)
-    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle)
+    if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
+    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
+    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[CartesianMarkerProps]
   }
 }

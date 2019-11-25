@@ -12,7 +12,7 @@ object HostBinding {
   @scala.inline
   def apply(hostPropertyName: String = null): HostBinding = {
     val __obj = js.Dynamic.literal()
-    if (hostPropertyName != null) __obj.updateDynamic("hostPropertyName")(hostPropertyName)
+    if (hostPropertyName != null) __obj.updateDynamic("hostPropertyName")(hostPropertyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[HostBinding]
   }
 }

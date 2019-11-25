@@ -24,12 +24,12 @@ object Spreadsheet {
     spreadsheetUrl: String = null
   ): Spreadsheet = {
     val __obj = js.Dynamic.literal()
-    if (developerMetadata != null) __obj.updateDynamic("developerMetadata")(developerMetadata)
-    if (namedRanges != null) __obj.updateDynamic("namedRanges")(namedRanges)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (sheets != null) __obj.updateDynamic("sheets")(sheets)
-    if (spreadsheetId != null) __obj.updateDynamic("spreadsheetId")(spreadsheetId)
-    if (spreadsheetUrl != null) __obj.updateDynamic("spreadsheetUrl")(spreadsheetUrl)
+    if (developerMetadata != null) __obj.updateDynamic("developerMetadata")(developerMetadata.asInstanceOf[js.Any])
+    if (namedRanges != null) __obj.updateDynamic("namedRanges")(namedRanges.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (sheets != null) __obj.updateDynamic("sheets")(sheets.asInstanceOf[js.Any])
+    if (spreadsheetId != null) __obj.updateDynamic("spreadsheetId")(spreadsheetId.asInstanceOf[js.Any])
+    if (spreadsheetUrl != null) __obj.updateDynamic("spreadsheetUrl")(spreadsheetUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Spreadsheet]
   }
 }

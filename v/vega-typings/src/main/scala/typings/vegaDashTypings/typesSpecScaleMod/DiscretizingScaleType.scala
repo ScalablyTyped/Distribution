@@ -10,5 +10,18 @@ import scala.scalajs.js.annotation._
   - typings.vegaDashTypings.vegaDashTypingsStrings.threshold
   - typings.vegaDashTypings.vegaDashTypingsStrings.`bin-ordinal`
 */
-trait DiscretizingScaleType extends ScaleType
+trait DiscretizingScaleType extends js.Object
+
+object DiscretizingScaleType {
+  @scala.inline
+  def `bin-ordinal`: typings.vegaDashTypings.vegaDashTypingsStrings.`bin-ordinal` = this.cast("bin-ordinal")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def quantile: typings.vegaDashTypings.vegaDashTypingsStrings.quantile = this.cast("quantile")
+  @scala.inline
+  def quantize: typings.vegaDashTypings.vegaDashTypingsStrings.quantize = this.cast("quantize")
+  @scala.inline
+  def threshold: typings.vegaDashTypings.vegaDashTypingsStrings.threshold = this.cast("threshold")
+}
 

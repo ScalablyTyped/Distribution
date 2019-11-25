@@ -17,9 +17,9 @@ object ControlBarOptions {
     volumePanel: VolumePanelOptions = null
   ): ControlBarOptions = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (!js.isUndefined(fullscreenToggle)) __obj.updateDynamic("fullscreenToggle")(fullscreenToggle)
-    if (volumePanel != null) __obj.updateDynamic("volumePanel")(volumePanel)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullscreenToggle)) __obj.updateDynamic("fullscreenToggle")(fullscreenToggle.asInstanceOf[js.Any])
+    if (volumePanel != null) __obj.updateDynamic("volumePanel")(volumePanel.asInstanceOf[js.Any])
     __obj.asInstanceOf[ControlBarOptions]
   }
 }

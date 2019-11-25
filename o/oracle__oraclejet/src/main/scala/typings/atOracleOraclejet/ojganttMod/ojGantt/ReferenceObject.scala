@@ -15,9 +15,9 @@ object ReferenceObject {
   @scala.inline
   def apply(svgClassName: String = null, svgStyle: js.Object = null, value: String = null): ReferenceObject = {
     val __obj = js.Dynamic.literal()
-    if (svgClassName != null) __obj.updateDynamic("svgClassName")(svgClassName)
-    if (svgStyle != null) __obj.updateDynamic("svgStyle")(svgStyle)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (svgClassName != null) __obj.updateDynamic("svgClassName")(svgClassName.asInstanceOf[js.Any])
+    if (svgStyle != null) __obj.updateDynamic("svgStyle")(svgStyle.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReferenceObject]
   }
 }

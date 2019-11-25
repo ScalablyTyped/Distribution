@@ -21,7 +21,7 @@ object Anon_DefaultValue {
     workspaceFolderValue: T = null,
     workspaceValue: T = null
   ): Anon_DefaultValue[T] = {
-    val __obj = js.Dynamic.literal(key = key)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (globalValue != null) __obj.updateDynamic("globalValue")(globalValue.asInstanceOf[js.Any])
     if (workspaceFolderValue != null) __obj.updateDynamic("workspaceFolderValue")(workspaceFolderValue.asInstanceOf[js.Any])

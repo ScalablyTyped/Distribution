@@ -24,11 +24,11 @@ object ProjCRSOptions {
     transformation: Transformation = null
   ): ProjCRSOptions = {
     val __obj = js.Dynamic.literal()
-    if (bounds != null) __obj.updateDynamic("bounds")(bounds)
-    if (origin != null) __obj.updateDynamic("origin")(origin)
-    if (resolutions != null) __obj.updateDynamic("resolutions")(resolutions)
-    if (scales != null) __obj.updateDynamic("scales")(scales)
-    if (transformation != null) __obj.updateDynamic("transformation")(transformation)
+    if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
+    if (resolutions != null) __obj.updateDynamic("resolutions")(resolutions.asInstanceOf[js.Any])
+    if (scales != null) __obj.updateDynamic("scales")(scales.asInstanceOf[js.Any])
+    if (transformation != null) __obj.updateDynamic("transformation")(transformation.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjCRSOptions]
   }
 }

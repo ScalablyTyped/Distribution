@@ -13,7 +13,7 @@ trait Anon_ReturnValueTransferCodingHeaderValue extends js.Object {
 object Anon_ReturnValueTransferCodingHeaderValue {
   @scala.inline
   def apply(returnValue: Boolean, transferCodingHeaderValue: HttpTransferCodingHeaderValue): Anon_ReturnValueTransferCodingHeaderValue = {
-    val __obj = js.Dynamic.literal(returnValue = returnValue, transferCodingHeaderValue = transferCodingHeaderValue)
+    val __obj = js.Dynamic.literal(returnValue = returnValue.asInstanceOf[js.Any], transferCodingHeaderValue = transferCodingHeaderValue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ReturnValueTransferCodingHeaderValue]
   }

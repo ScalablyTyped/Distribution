@@ -29,8 +29,8 @@ object ConstantMemberType {
     `type`: const,
     value: ValueDescription
   ): ConstantMemberType = {
-    val __obj = js.Dynamic.literal(extAttrs = extAttrs, idlType = idlType, name = name, nullable = nullable, value = value)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nullable = nullable.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConstantMemberType]
   }
 }

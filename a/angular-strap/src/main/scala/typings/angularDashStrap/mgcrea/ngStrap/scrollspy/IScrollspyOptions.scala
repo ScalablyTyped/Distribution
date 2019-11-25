@@ -14,7 +14,7 @@ object IScrollspyOptions {
   def apply(offset: Int | Double = null, target: String = null): IScrollspyOptions = {
     val __obj = js.Dynamic.literal()
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[IScrollspyOptions]
   }
 }

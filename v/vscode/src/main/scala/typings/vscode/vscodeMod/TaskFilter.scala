@@ -20,8 +20,8 @@ object TaskFilter {
   @scala.inline
   def apply(`type`: String = null, version: String = null): TaskFilter = {
     val __obj = js.Dynamic.literal()
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskFilter]
   }
 }

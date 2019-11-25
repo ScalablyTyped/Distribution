@@ -57,11 +57,11 @@ object IGetFocusStylesOptions {
     width: Int | Double = null
   ): IGetFocusStylesOptions = {
     val __obj = js.Dynamic.literal()
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
-    if (highContrastStyle != null) __obj.updateDynamic("highContrastStyle")(highContrastStyle)
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
+    if (highContrastStyle != null) __obj.updateDynamic("highContrastStyle")(highContrastStyle.asInstanceOf[js.Any])
     if (inset != null) __obj.updateDynamic("inset")(inset.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFocusedOnly)) __obj.updateDynamic("isFocusedOnly")(isFocusedOnly)
-    if (outlineColor != null) __obj.updateDynamic("outlineColor")(outlineColor)
+    if (!js.isUndefined(isFocusedOnly)) __obj.updateDynamic("isFocusedOnly")(isFocusedOnly.asInstanceOf[js.Any])
+    if (outlineColor != null) __obj.updateDynamic("outlineColor")(outlineColor.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGetFocusStylesOptions]

@@ -9,15 +9,9 @@ trait IRowEditorButtons
 
 object IRowEditorButtons {
   @scala.inline
-  def apply(
-    IContainer: typings.extjs.Ext.container.IContainer = null,
-    frame: js.UndefOr[Boolean] = js.undefined,
-    shrinkWrap: js.Any = null
-  ): IRowEditorButtons = {
+  def apply(IContainer: typings.extjs.Ext.container.IContainer = null): IRowEditorButtons = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IContainer)
-    if (!js.isUndefined(frame)) __obj.updateDynamic("frame")(frame)
-    if (shrinkWrap != null) __obj.updateDynamic("shrinkWrap")(shrinkWrap)
+    if (IContainer != null) js.Dynamic.global.Object.assign(__obj, IContainer)
     __obj.asInstanceOf[IRowEditorButtons]
   }
 }

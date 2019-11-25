@@ -13,7 +13,7 @@ trait IConditionObject extends js.Object {
 object IConditionObject {
   @scala.inline
   def apply(name: String, question: Question, text: String): IConditionObject = {
-    val __obj = js.Dynamic.literal(name = name, question = question, text = text)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], question = question.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IConditionObject]
   }

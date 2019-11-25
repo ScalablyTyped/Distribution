@@ -20,10 +20,10 @@ object WebhookOptions {
     validate: js.UndefOr[Boolean] = js.undefined
   ): WebhookOptions = {
     val __obj = js.Dynamic.literal()
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (!js.isUndefined(includeHelpers)) __obj.updateDynamic("includeHelpers")(includeHelpers)
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
-    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate)
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeHelpers)) __obj.updateDynamic("includeHelpers")(includeHelpers.asInstanceOf[js.Any])
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
+    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebhookOptions]
   }
 }

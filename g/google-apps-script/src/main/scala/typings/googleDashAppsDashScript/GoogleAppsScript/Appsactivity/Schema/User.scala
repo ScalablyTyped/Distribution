@@ -22,11 +22,11 @@ object User {
     photo: Photo = null
   ): User = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isDeleted)) __obj.updateDynamic("isDeleted")(isDeleted)
-    if (!js.isUndefined(isMe)) __obj.updateDynamic("isMe")(isMe)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (permissionId != null) __obj.updateDynamic("permissionId")(permissionId)
-    if (photo != null) __obj.updateDynamic("photo")(photo)
+    if (!js.isUndefined(isDeleted)) __obj.updateDynamic("isDeleted")(isDeleted.asInstanceOf[js.Any])
+    if (!js.isUndefined(isMe)) __obj.updateDynamic("isMe")(isMe.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (permissionId != null) __obj.updateDynamic("permissionId")(permissionId.asInstanceOf[js.Any])
+    if (photo != null) __obj.updateDynamic("photo")(photo.asInstanceOf[js.Any])
     __obj.asInstanceOf[User]
   }
 }

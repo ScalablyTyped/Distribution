@@ -30,14 +30,14 @@ object InstantSearchBaseProps {
     searchState: js.Any = null,
     stalledSearchDelay: Int | Double = null
   ): InstantSearchBaseProps = {
-    val __obj = js.Dynamic.literal(indexName = indexName)
+    val __obj = js.Dynamic.literal(indexName = indexName.asInstanceOf[js.Any])
     if (createURL != null) __obj.updateDynamic("createURL")(js.Any.fromFunction1(createURL))
     if (onSearchParameters != null) __obj.updateDynamic("onSearchParameters")(js.Any.fromFunction1(onSearchParameters))
     if (onSearchStateChange != null) __obj.updateDynamic("onSearchStateChange")(js.Any.fromFunction1(onSearchStateChange))
-    if (!js.isUndefined(refresh)) __obj.updateDynamic("refresh")(refresh)
-    if (resultsState != null) __obj.updateDynamic("resultsState")(resultsState)
-    if (root != null) __obj.updateDynamic("root")(root)
-    if (searchState != null) __obj.updateDynamic("searchState")(searchState)
+    if (!js.isUndefined(refresh)) __obj.updateDynamic("refresh")(refresh.asInstanceOf[js.Any])
+    if (resultsState != null) __obj.updateDynamic("resultsState")(resultsState.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (searchState != null) __obj.updateDynamic("searchState")(searchState.asInstanceOf[js.Any])
     if (stalledSearchDelay != null) __obj.updateDynamic("stalledSearchDelay")(stalledSearchDelay.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstantSearchBaseProps]
   }

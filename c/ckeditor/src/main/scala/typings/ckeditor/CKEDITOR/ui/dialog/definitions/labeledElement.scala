@@ -23,11 +23,11 @@ object labeledElement {
     role: String = null,
     widths: js.Tuple2[String, String] = null
   ): labeledElement = {
-    val __obj = js.Dynamic.literal(label = label)
-    if (!js.isUndefined(includeLabel)) __obj.updateDynamic("includeLabel")(includeLabel)
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeLabel)) __obj.updateDynamic("includeLabel")(includeLabel.asInstanceOf[js.Any])
     if (labelLayout != null) __obj.updateDynamic("labelLayout")(labelLayout.asInstanceOf[js.Any])
-    if (role != null) __obj.updateDynamic("role")(role)
-    if (widths != null) __obj.updateDynamic("widths")(widths)
+    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
+    if (widths != null) __obj.updateDynamic("widths")(widths.asInstanceOf[js.Any])
     __obj.asInstanceOf[labeledElement]
   }
 }

@@ -31,7 +31,7 @@ object ReposCreateOrUpdateFileResponseCommit {
     url: String,
     verification: ReposCreateOrUpdateFileResponseCommitVerification
   ): ReposCreateOrUpdateFileResponseCommit = {
-    val __obj = js.Dynamic.literal(author = author, committer = committer, html_url = html_url, message = message, node_id = node_id, parents = parents, sha = sha, tree = tree, url = url, verification = verification)
+    val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], committer = committer.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], parents = parents.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any], tree = tree.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], verification = verification.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReposCreateOrUpdateFileResponseCommit]
   }

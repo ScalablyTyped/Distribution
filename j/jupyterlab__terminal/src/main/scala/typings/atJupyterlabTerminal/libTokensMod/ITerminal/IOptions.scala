@@ -67,8 +67,8 @@ object IOptions {
     lineHeight: Int | Double = null,
     scrollback: Int | Double = null
   ): IOptions = {
-    val __obj = js.Dynamic.literal(cursorBlink = cursorBlink, fontSize = fontSize, initialCommand = initialCommand, pasteWithCtrlV = pasteWithCtrlV, screenReaderMode = screenReaderMode, shutdownOnClose = shutdownOnClose, theme = theme)
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
+    val __obj = js.Dynamic.literal(cursorBlink = cursorBlink.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], initialCommand = initialCommand.asInstanceOf[js.Any], pasteWithCtrlV = pasteWithCtrlV.asInstanceOf[js.Any], screenReaderMode = screenReaderMode.asInstanceOf[js.Any], shutdownOnClose = shutdownOnClose.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
+    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
     if (lineHeight != null) __obj.updateDynamic("lineHeight")(lineHeight.asInstanceOf[js.Any])
     if (scrollback != null) __obj.updateDynamic("scrollback")(scrollback.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]

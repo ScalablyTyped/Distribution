@@ -30,12 +30,12 @@ object List {
     spread: js.UndefOr[Boolean] = js.undefined,
     start: Int | Double = null
   ): List = {
-    val __obj = js.Dynamic.literal(children = children)
-    __obj.updateDynamic("type")(`type`)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (!js.isUndefined(ordered)) __obj.updateDynamic("ordered")(ordered)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (!js.isUndefined(spread)) __obj.updateDynamic("spread")(spread)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (!js.isUndefined(ordered)) __obj.updateDynamic("ordered")(ordered.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(spread)) __obj.updateDynamic("spread")(spread.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[List]
   }

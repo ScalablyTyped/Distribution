@@ -12,7 +12,7 @@ object Anon_Center {
   @scala.inline
   def apply(center: js.UndefOr[Boolean] = js.undefined): Anon_Center = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(center)) __obj.updateDynamic("center")(center)
+    if (!js.isUndefined(center)) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Center]
   }
 }

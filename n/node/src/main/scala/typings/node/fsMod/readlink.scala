@@ -6,7 +6,7 @@ import typings.node.Anon_EncodingNull
 import typings.node.Buffer
 import typings.node.BufferEncoding
 import typings.node.NodeJS.ErrnoException
-import typings.node.nodeStrings.buffer
+import typings.node.nodeStrings.buffer_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -75,7 +75,7 @@ object readlink extends js.Object {
   ): Unit = js.native
   def apply(
     path: PathLike,
-    options: buffer,
+    options: buffer_,
     callback: js.Function2[/* err */ ErrnoException | Null, /* linkString */ Buffer, Unit]
   ): Unit = js.native
   /**
@@ -95,6 +95,6 @@ object readlink extends js.Object {
   def __promisify__(path: PathLike, options: Anon_EncodingNull): js.Promise[java.lang.String | Buffer] = js.native
   def __promisify__(path: PathLike, options: BufferEncoding): js.Promise[java.lang.String] = js.native
   @JSName("__promisify__")
-  def __promisify___buffer(path: PathLike, options: buffer): js.Promise[Buffer] = js.native
+  def __promisify___buffer(path: PathLike, options: buffer_): js.Promise[Buffer] = js.native
 }
 

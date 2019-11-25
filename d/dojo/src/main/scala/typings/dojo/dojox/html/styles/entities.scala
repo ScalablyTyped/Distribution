@@ -42,7 +42,7 @@ object entities {
     html: js.Array[_],
     latin: js.Array[_]
   ): entities = {
-    val __obj = js.Dynamic.literal(decode = js.Any.fromFunction2(decode), encode = js.Any.fromFunction2(encode), html = html, latin = latin)
+    val __obj = js.Dynamic.literal(decode = js.Any.fromFunction2(decode), encode = js.Any.fromFunction2(encode), html = html.asInstanceOf[js.Any], latin = latin.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[entities]
   }

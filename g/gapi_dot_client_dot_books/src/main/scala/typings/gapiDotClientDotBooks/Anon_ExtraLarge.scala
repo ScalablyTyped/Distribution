@@ -30,12 +30,12 @@ object Anon_ExtraLarge {
     thumbnail: String = null
   ): Anon_ExtraLarge = {
     val __obj = js.Dynamic.literal()
-    if (extraLarge != null) __obj.updateDynamic("extraLarge")(extraLarge)
-    if (large != null) __obj.updateDynamic("large")(large)
-    if (medium != null) __obj.updateDynamic("medium")(medium)
-    if (small != null) __obj.updateDynamic("small")(small)
-    if (smallThumbnail != null) __obj.updateDynamic("smallThumbnail")(smallThumbnail)
-    if (thumbnail != null) __obj.updateDynamic("thumbnail")(thumbnail)
+    if (extraLarge != null) __obj.updateDynamic("extraLarge")(extraLarge.asInstanceOf[js.Any])
+    if (large != null) __obj.updateDynamic("large")(large.asInstanceOf[js.Any])
+    if (medium != null) __obj.updateDynamic("medium")(medium.asInstanceOf[js.Any])
+    if (small != null) __obj.updateDynamic("small")(small.asInstanceOf[js.Any])
+    if (smallThumbnail != null) __obj.updateDynamic("smallThumbnail")(smallThumbnail.asInstanceOf[js.Any])
+    if (thumbnail != null) __obj.updateDynamic("thumbnail")(thumbnail.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ExtraLarge]
   }
 }

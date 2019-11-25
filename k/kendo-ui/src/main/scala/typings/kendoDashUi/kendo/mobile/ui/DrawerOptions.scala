@@ -39,16 +39,16 @@ object DrawerOptions {
     val __obj = js.Dynamic.literal()
     if (afterHide != null) __obj.updateDynamic("afterHide")(js.Any.fromFunction1(afterHide))
     if (beforeShow != null) __obj.updateDynamic("beforeShow")(js.Any.fromFunction1(beforeShow))
-    if (container != null) __obj.updateDynamic("container")(container)
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (hide != null) __obj.updateDynamic("hide")(js.Any.fromFunction1(hide))
     if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction1(init))
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (position != null) __obj.updateDynamic("position")(position)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction1(show))
-    if (!js.isUndefined(swipeToOpen)) __obj.updateDynamic("swipeToOpen")(swipeToOpen)
-    if (swipeToOpenViews != null) __obj.updateDynamic("swipeToOpenViews")(swipeToOpenViews)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (views != null) __obj.updateDynamic("views")(views)
+    if (!js.isUndefined(swipeToOpen)) __obj.updateDynamic("swipeToOpen")(swipeToOpen.asInstanceOf[js.Any])
+    if (swipeToOpenViews != null) __obj.updateDynamic("swipeToOpenViews")(swipeToOpenViews.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (views != null) __obj.updateDynamic("views")(views.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawerOptions]
   }
 }

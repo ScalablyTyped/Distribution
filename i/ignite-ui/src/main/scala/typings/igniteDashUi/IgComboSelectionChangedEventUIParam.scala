@@ -23,9 +23,9 @@ object IgComboSelectionChangedEventUIParam {
   @scala.inline
   def apply(items: js.Any = null, oldItems: js.Any = null, owner: js.Any = null): IgComboSelectionChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (oldItems != null) __obj.updateDynamic("oldItems")(oldItems)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (oldItems != null) __obj.updateDynamic("oldItems")(oldItems.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgComboSelectionChangedEventUIParam]
   }
 }

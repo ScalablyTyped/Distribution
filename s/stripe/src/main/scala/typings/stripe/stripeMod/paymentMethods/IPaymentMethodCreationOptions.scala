@@ -35,10 +35,10 @@ object IPaymentMethodCreationOptions {
     metadata: IMetadata = null
   ): IPaymentMethodCreationOptions = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (billing_details != null) __obj.updateDynamic("billing_details")(billing_details)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (billing_details != null) __obj.updateDynamic("billing_details")(billing_details.asInstanceOf[js.Any])
     if (card != null) __obj.updateDynamic("card")(card.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPaymentMethodCreationOptions]
   }
 }

@@ -22,7 +22,7 @@ trait Anon_AvatarUrl extends js.Object {
 object Anon_AvatarUrl {
   @scala.inline
   def apply(avatarUrl: String, nickname: String, openid: String): Anon_AvatarUrl = {
-    val __obj = js.Dynamic.literal(avatarUrl = avatarUrl, nickname = nickname, openid = openid)
+    val __obj = js.Dynamic.literal(avatarUrl = avatarUrl.asInstanceOf[js.Any], nickname = nickname.asInstanceOf[js.Any], openid = openid.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AvatarUrl]
   }

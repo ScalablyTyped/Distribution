@@ -14,9 +14,9 @@ trait FinalizeHandlerOptions extends HandlerOptions {
 object FinalizeHandlerOptions {
   @scala.inline
   def apply(step: finalize, priority: Int | Double = null, tags: StringDictionary[js.Any] = null): FinalizeHandlerOptions = {
-    val __obj = js.Dynamic.literal(step = step)
+    val __obj = js.Dynamic.literal(step = step.asInstanceOf[js.Any])
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[FinalizeHandlerOptions]
   }
 }

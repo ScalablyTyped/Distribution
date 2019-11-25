@@ -19,7 +19,7 @@ trait TargetConfiguration extends js.Object {
 object TargetConfiguration {
   @scala.inline
   def apply(target: String, arch: js.Array[ArchType] | ArchType = null): TargetConfiguration = {
-    val __obj = js.Dynamic.literal(target = target)
+    val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
     if (arch != null) __obj.updateDynamic("arch")(arch.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetConfiguration]
   }

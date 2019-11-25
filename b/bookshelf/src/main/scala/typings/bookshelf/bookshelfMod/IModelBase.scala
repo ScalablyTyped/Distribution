@@ -16,7 +16,7 @@ object IModelBase {
   def apply(hasTimestamps: Boolean | js.Array[String] = null, tableName: String = null): IModelBase = {
     val __obj = js.Dynamic.literal()
     if (hasTimestamps != null) __obj.updateDynamic("hasTimestamps")(hasTimestamps.asInstanceOf[js.Any])
-    if (tableName != null) __obj.updateDynamic("tableName")(tableName)
+    if (tableName != null) __obj.updateDynamic("tableName")(tableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[IModelBase]
   }
 }

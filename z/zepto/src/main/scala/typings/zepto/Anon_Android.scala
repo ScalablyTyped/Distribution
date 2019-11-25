@@ -49,7 +49,7 @@ object Anon_Android {
     version: String,
     webos: Boolean
   ): Anon_Android = {
-    val __obj = js.Dynamic.literal(android = android, bb10 = bb10, blackberry = blackberry, ios = ios, ipad = ipad, iphone = iphone, kindle = kindle, phone = phone, rimtabletos = rimtabletos, tablet = tablet, touchpad = touchpad, version = version, webos = webos)
+    val __obj = js.Dynamic.literal(android = android.asInstanceOf[js.Any], bb10 = bb10.asInstanceOf[js.Any], blackberry = blackberry.asInstanceOf[js.Any], ios = ios.asInstanceOf[js.Any], ipad = ipad.asInstanceOf[js.Any], iphone = iphone.asInstanceOf[js.Any], kindle = kindle.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any], rimtabletos = rimtabletos.asInstanceOf[js.Any], tablet = tablet.asInstanceOf[js.Any], touchpad = touchpad.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], webos = webos.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Android]
   }

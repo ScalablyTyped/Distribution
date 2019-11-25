@@ -32,8 +32,8 @@ object RuleSetLoader {
     query: RuleSetQuery = null
   ): RuleSetLoader = {
     val __obj = js.Dynamic.literal()
-    if (ident != null) __obj.updateDynamic("ident")(ident)
-    if (loader != null) __obj.updateDynamic("loader")(loader)
+    if (ident != null) __obj.updateDynamic("ident")(ident.asInstanceOf[js.Any])
+    if (loader != null) __obj.updateDynamic("loader")(loader.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleSetLoader]

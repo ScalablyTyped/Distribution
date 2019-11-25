@@ -14,8 +14,8 @@ object Styles {
   @scala.inline
   def apply(content: StringDictionary[js.Any] = null, overlay: StringDictionary[js.Any] = null): Styles = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (overlay != null) __obj.updateDynamic("overlay")(overlay)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (overlay != null) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
     __obj.asInstanceOf[Styles]
   }
 }

@@ -14,8 +14,8 @@ object SubheaderProps {
   @scala.inline
   def apply(inset: js.UndefOr[Boolean] = js.undefined, style: CSSProperties = null): SubheaderProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(inset)) __obj.updateDynamic("inset")(inset)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (!js.isUndefined(inset)) __obj.updateDynamic("inset")(inset.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubheaderProps]
   }
 }

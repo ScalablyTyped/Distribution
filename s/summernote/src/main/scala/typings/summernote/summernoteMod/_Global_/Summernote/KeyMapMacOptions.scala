@@ -12,7 +12,7 @@ object KeyMapMacOptions {
   @scala.inline
   def apply(options: js.Any = null): KeyMapMacOptions = {
     val __obj = js.Dynamic.literal()
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyMapMacOptions]
   }
 }

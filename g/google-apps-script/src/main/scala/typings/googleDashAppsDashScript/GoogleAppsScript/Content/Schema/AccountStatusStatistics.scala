@@ -15,10 +15,10 @@ object AccountStatusStatistics {
   @scala.inline
   def apply(active: String = null, disapproved: String = null, expiring: String = null, pending: String = null): AccountStatusStatistics = {
     val __obj = js.Dynamic.literal()
-    if (active != null) __obj.updateDynamic("active")(active)
-    if (disapproved != null) __obj.updateDynamic("disapproved")(disapproved)
-    if (expiring != null) __obj.updateDynamic("expiring")(expiring)
-    if (pending != null) __obj.updateDynamic("pending")(pending)
+    if (active != null) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (disapproved != null) __obj.updateDynamic("disapproved")(disapproved.asInstanceOf[js.Any])
+    if (expiring != null) __obj.updateDynamic("expiring")(expiring.asInstanceOf[js.Any])
+    if (pending != null) __obj.updateDynamic("pending")(pending.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountStatusStatistics]
   }
 }

@@ -31,7 +31,7 @@ object FileInfo {
     uploadId: String,
     wrote: Double
   ): FileInfo = {
-    val __obj = js.Dynamic.literal(data = data, estimated = estimated, mime = mime, name = name, originalFileName = originalFileName, path = path, size = size, uploadDir = uploadDir, uploadId = uploadId, wrote = wrote)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], estimated = estimated.asInstanceOf[js.Any], mime = mime.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], originalFileName = originalFileName.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], uploadDir = uploadDir.asInstanceOf[js.Any], uploadId = uploadId.asInstanceOf[js.Any], wrote = wrote.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FileInfo]
   }

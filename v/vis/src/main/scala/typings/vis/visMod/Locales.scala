@@ -31,15 +31,15 @@ object Locales {
     ru: LocaleMessages = null
   ): Locales = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (cn != null) __obj.updateDynamic("cn")(cn)
-    if (de != null) __obj.updateDynamic("de")(de)
-    if (en != null) __obj.updateDynamic("en")(en)
-    if (es != null) __obj.updateDynamic("es")(es)
-    if (it != null) __obj.updateDynamic("it")(it)
-    if (nl != null) __obj.updateDynamic("nl")(nl)
-    if (`pt-br` != null) __obj.updateDynamic("pt-br")(`pt-br`)
-    if (ru != null) __obj.updateDynamic("ru")(ru)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (cn != null) __obj.updateDynamic("cn")(cn.asInstanceOf[js.Any])
+    if (de != null) __obj.updateDynamic("de")(de.asInstanceOf[js.Any])
+    if (en != null) __obj.updateDynamic("en")(en.asInstanceOf[js.Any])
+    if (es != null) __obj.updateDynamic("es")(es.asInstanceOf[js.Any])
+    if (it != null) __obj.updateDynamic("it")(it.asInstanceOf[js.Any])
+    if (nl != null) __obj.updateDynamic("nl")(nl.asInstanceOf[js.Any])
+    if (`pt-br` != null) __obj.updateDynamic("pt-br")(`pt-br`.asInstanceOf[js.Any])
+    if (ru != null) __obj.updateDynamic("ru")(ru.asInstanceOf[js.Any])
     __obj.asInstanceOf[Locales]
   }
 }

@@ -18,7 +18,7 @@ trait IEntityCreatedEventData extends js.Object {
 object IEntityCreatedEventData {
   @scala.inline
   def apply(entity: IEntity): IEntityCreatedEventData = {
-    val __obj = js.Dynamic.literal(entity = entity)
+    val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IEntityCreatedEventData]
   }

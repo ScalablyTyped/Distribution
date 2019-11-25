@@ -30,14 +30,14 @@ object CreateMergeRequestOptions {
     target_project_id: Int | Double = null
   ): CreateMergeRequestOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allow_collaboration)) __obj.updateDynamic("allow_collaboration")(allow_collaboration)
-    if (!js.isUndefined(allow_maintainer_to_push)) __obj.updateDynamic("allow_maintainer_to_push")(allow_maintainer_to_push)
+    if (!js.isUndefined(allow_collaboration)) __obj.updateDynamic("allow_collaboration")(allow_collaboration.asInstanceOf[js.Any])
+    if (!js.isUndefined(allow_maintainer_to_push)) __obj.updateDynamic("allow_maintainer_to_push")(allow_maintainer_to_push.asInstanceOf[js.Any])
     if (assignee_id != null) __obj.updateDynamic("assignee_id")(assignee_id.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     if (milestone_id != null) __obj.updateDynamic("milestone_id")(milestone_id.asInstanceOf[js.Any])
-    if (!js.isUndefined(remove_source_branch)) __obj.updateDynamic("remove_source_branch")(remove_source_branch)
-    if (!js.isUndefined(squash)) __obj.updateDynamic("squash")(squash)
+    if (!js.isUndefined(remove_source_branch)) __obj.updateDynamic("remove_source_branch")(remove_source_branch.asInstanceOf[js.Any])
+    if (!js.isUndefined(squash)) __obj.updateDynamic("squash")(squash.asInstanceOf[js.Any])
     if (target_project_id != null) __obj.updateDynamic("target_project_id")(target_project_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateMergeRequestOptions]
   }

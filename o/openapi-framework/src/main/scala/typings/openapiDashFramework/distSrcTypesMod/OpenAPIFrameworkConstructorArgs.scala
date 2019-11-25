@@ -36,21 +36,21 @@ object OpenAPIFrameworkConstructorArgs {
     securityHandlers: SecurityHandlers = null,
     validateApiDoc: js.UndefOr[Boolean] = js.undefined
   ): OpenAPIFrameworkConstructorArgs = {
-    val __obj = js.Dynamic.literal(apiDoc = apiDoc.asInstanceOf[js.Any], featureType = featureType, name = name)
-    if (customFormats != null) __obj.updateDynamic("customFormats")(customFormats)
-    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies)
-    if (!js.isUndefined(enableObjectCoercion)) __obj.updateDynamic("enableObjectCoercion")(enableObjectCoercion)
+    val __obj = js.Dynamic.literal(apiDoc = apiDoc.asInstanceOf[js.Any], featureType = featureType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (customFormats != null) __obj.updateDynamic("customFormats")(customFormats.asInstanceOf[js.Any])
+    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableObjectCoercion)) __obj.updateDynamic("enableObjectCoercion")(enableObjectCoercion.asInstanceOf[js.Any])
     if (errorTransformer != null) __obj.updateDynamic("errorTransformer")(js.Any.fromFunction2(errorTransformer))
-    if (externalSchemas != null) __obj.updateDynamic("externalSchemas")(externalSchemas)
-    if (logger != null) __obj.updateDynamic("logger")(logger)
-    if (operations != null) __obj.updateDynamic("operations")(operations)
-    if (pathSecurity != null) __obj.updateDynamic("pathSecurity")(pathSecurity)
+    if (externalSchemas != null) __obj.updateDynamic("externalSchemas")(externalSchemas.asInstanceOf[js.Any])
+    if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
+    if (operations != null) __obj.updateDynamic("operations")(operations.asInstanceOf[js.Any])
+    if (pathSecurity != null) __obj.updateDynamic("pathSecurity")(pathSecurity.asInstanceOf[js.Any])
     if (paths != null) __obj.updateDynamic("paths")(paths.asInstanceOf[js.Any])
-    if (pathsIgnore != null) __obj.updateDynamic("pathsIgnore")(pathsIgnore)
-    if (routesGlob != null) __obj.updateDynamic("routesGlob")(routesGlob)
-    if (routesIndexFileRegExp != null) __obj.updateDynamic("routesIndexFileRegExp")(routesIndexFileRegExp)
-    if (securityHandlers != null) __obj.updateDynamic("securityHandlers")(securityHandlers)
-    if (!js.isUndefined(validateApiDoc)) __obj.updateDynamic("validateApiDoc")(validateApiDoc)
+    if (pathsIgnore != null) __obj.updateDynamic("pathsIgnore")(pathsIgnore.asInstanceOf[js.Any])
+    if (routesGlob != null) __obj.updateDynamic("routesGlob")(routesGlob.asInstanceOf[js.Any])
+    if (routesIndexFileRegExp != null) __obj.updateDynamic("routesIndexFileRegExp")(routesIndexFileRegExp.asInstanceOf[js.Any])
+    if (securityHandlers != null) __obj.updateDynamic("securityHandlers")(securityHandlers.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateApiDoc)) __obj.updateDynamic("validateApiDoc")(validateApiDoc.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenAPIFrameworkConstructorArgs]
   }
 }

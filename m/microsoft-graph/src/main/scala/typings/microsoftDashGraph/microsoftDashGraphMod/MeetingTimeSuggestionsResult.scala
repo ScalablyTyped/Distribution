@@ -22,8 +22,8 @@ object MeetingTimeSuggestionsResult {
     meetingTimeSuggestions: js.Array[MeetingTimeSuggestion] = null
   ): MeetingTimeSuggestionsResult = {
     val __obj = js.Dynamic.literal()
-    if (emptySuggestionsReason != null) __obj.updateDynamic("emptySuggestionsReason")(emptySuggestionsReason)
-    if (meetingTimeSuggestions != null) __obj.updateDynamic("meetingTimeSuggestions")(meetingTimeSuggestions)
+    if (emptySuggestionsReason != null) __obj.updateDynamic("emptySuggestionsReason")(emptySuggestionsReason.asInstanceOf[js.Any])
+    if (meetingTimeSuggestions != null) __obj.updateDynamic("meetingTimeSuggestions")(meetingTimeSuggestions.asInstanceOf[js.Any])
     __obj.asInstanceOf[MeetingTimeSuggestionsResult]
   }
 }

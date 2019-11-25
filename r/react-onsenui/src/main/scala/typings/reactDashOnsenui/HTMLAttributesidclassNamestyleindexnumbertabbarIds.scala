@@ -28,13 +28,13 @@ object HTMLAttributesidclassNamestyleindexnumbertabbarIds {
     tabbarId: String = null
   ): HTMLAttributesidclassNamestyleindexnumbertabbarIds = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (modifier != null) __obj.updateDynamic("modifier")(modifier)
+    if (modifier != null) __obj.updateDynamic("modifier")(modifier.asInstanceOf[js.Any])
     if (onPostChange != null) __obj.updateDynamic("onPostChange")(js.Any.fromFunction0(onPostChange))
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (tabbarId != null) __obj.updateDynamic("tabbarId")(tabbarId)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (tabbarId != null) __obj.updateDynamic("tabbarId")(tabbarId.asInstanceOf[js.Any])
     __obj.asInstanceOf[HTMLAttributesidclassNamestyleindexnumbertabbarIds]
   }
 }

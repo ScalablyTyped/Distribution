@@ -21,9 +21,9 @@ object DynamicSegment {
     userSegment: SegmentDefinition = null
   ): DynamicSegment = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (sessionSegment != null) __obj.updateDynamic("sessionSegment")(sessionSegment)
-    if (userSegment != null) __obj.updateDynamic("userSegment")(userSegment)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (sessionSegment != null) __obj.updateDynamic("sessionSegment")(sessionSegment.asInstanceOf[js.Any])
+    if (userSegment != null) __obj.updateDynamic("userSegment")(userSegment.asInstanceOf[js.Any])
     __obj.asInstanceOf[DynamicSegment]
   }
 }

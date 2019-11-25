@@ -12,7 +12,7 @@ trait Anon_Crossorigin extends js.Object {
 object Anon_Crossorigin {
   @scala.inline
   def apply(crossorigin: String, integrity: String): Anon_Crossorigin = {
-    val __obj = js.Dynamic.literal(crossorigin = crossorigin, integrity = integrity)
+    val __obj = js.Dynamic.literal(crossorigin = crossorigin.asInstanceOf[js.Any], integrity = integrity.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Crossorigin]
   }

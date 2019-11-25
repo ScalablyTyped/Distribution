@@ -14,9 +14,9 @@ trait ThreadRowAttachmentIconUrlDescriptor
 object ThreadRowAttachmentIconUrlDescriptor {
   @scala.inline
   def apply(iconUrl: String, iconClass: String = null, tooltip: String = null): ThreadRowAttachmentIconUrlDescriptor = {
-    val __obj = js.Dynamic.literal(iconUrl = iconUrl)
-    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    val __obj = js.Dynamic.literal(iconUrl = iconUrl.asInstanceOf[js.Any])
+    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass.asInstanceOf[js.Any])
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThreadRowAttachmentIconUrlDescriptor]
   }
 }

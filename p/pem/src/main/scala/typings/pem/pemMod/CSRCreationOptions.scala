@@ -74,19 +74,19 @@ object CSRCreationOptions {
     state: String = null
   ): CSRCreationOptions = {
     val __obj = js.Dynamic.literal()
-    if (altNames != null) __obj.updateDynamic("altNames")(altNames)
-    if (clientKey != null) __obj.updateDynamic("clientKey")(clientKey)
-    if (clientKeyPassword != null) __obj.updateDynamic("clientKeyPassword")(clientKeyPassword)
-    if (commonName != null) __obj.updateDynamic("commonName")(commonName)
-    if (country != null) __obj.updateDynamic("country")(country)
-    if (csrConfigFile != null) __obj.updateDynamic("csrConfigFile")(csrConfigFile)
-    if (emailAddress != null) __obj.updateDynamic("emailAddress")(emailAddress)
+    if (altNames != null) __obj.updateDynamic("altNames")(altNames.asInstanceOf[js.Any])
+    if (clientKey != null) __obj.updateDynamic("clientKey")(clientKey.asInstanceOf[js.Any])
+    if (clientKeyPassword != null) __obj.updateDynamic("clientKeyPassword")(clientKeyPassword.asInstanceOf[js.Any])
+    if (commonName != null) __obj.updateDynamic("commonName")(commonName.asInstanceOf[js.Any])
+    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
+    if (csrConfigFile != null) __obj.updateDynamic("csrConfigFile")(csrConfigFile.asInstanceOf[js.Any])
+    if (emailAddress != null) __obj.updateDynamic("emailAddress")(emailAddress.asInstanceOf[js.Any])
     if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
     if (keyBitsize != null) __obj.updateDynamic("keyBitsize")(keyBitsize.asInstanceOf[js.Any])
-    if (locality != null) __obj.updateDynamic("locality")(locality)
-    if (organization != null) __obj.updateDynamic("organization")(organization)
-    if (organizationUnit != null) __obj.updateDynamic("organizationUnit")(organizationUnit)
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (locality != null) __obj.updateDynamic("locality")(locality.asInstanceOf[js.Any])
+    if (organization != null) __obj.updateDynamic("organization")(organization.asInstanceOf[js.Any])
+    if (organizationUnit != null) __obj.updateDynamic("organizationUnit")(organizationUnit.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[CSRCreationOptions]
   }
 }

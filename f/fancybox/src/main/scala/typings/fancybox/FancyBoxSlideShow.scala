@@ -35,8 +35,8 @@ object FancyBoxSlideShow {
     $button: JQuery = null,
     timer: Int | Double = null
   ): FancyBoxSlideShow = {
-    val __obj = js.Dynamic.literal($progress = $progress, clear = js.Any.fromFunction0(clear), init = js.Any.fromFunction0(init), instance = instance, isActive = isActive, set = js.Any.fromFunction1(set), start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop), toggle = js.Any.fromFunction0(toggle))
-    if ($button != null) __obj.updateDynamic("$button")($button)
+    val __obj = js.Dynamic.literal($progress = $progress.asInstanceOf[js.Any], clear = js.Any.fromFunction0(clear), init = js.Any.fromFunction0(init), instance = instance.asInstanceOf[js.Any], isActive = isActive.asInstanceOf[js.Any], set = js.Any.fromFunction1(set), start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop), toggle = js.Any.fromFunction0(toggle))
+    if ($button != null) __obj.updateDynamic("$button")($button.asInstanceOf[js.Any])
     if (timer != null) __obj.updateDynamic("timer")(timer.asInstanceOf[js.Any])
     __obj.asInstanceOf[FancyBoxSlideShow]
   }

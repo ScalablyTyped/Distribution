@@ -22,10 +22,10 @@ object TrainAcousticModelParams {
     headers: js.Object = null,
     return_response: js.UndefOr[Boolean] = js.undefined
   ): TrainAcousticModelParams = {
-    val __obj = js.Dynamic.literal(customization_id = customization_id)
-    if (custom_language_model_id != null) __obj.updateDynamic("custom_language_model_id")(custom_language_model_id)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response)
+    val __obj = js.Dynamic.literal(customization_id = customization_id.asInstanceOf[js.Any])
+    if (custom_language_model_id != null) __obj.updateDynamic("custom_language_model_id")(custom_language_model_id.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrainAcousticModelParams]
   }
 }

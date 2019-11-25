@@ -21,11 +21,11 @@ object CameraRollFetchParams {
     groupName: String = null,
     groupTypes: CameraRollGroupType = null
   ): CameraRollFetchParams = {
-    val __obj = js.Dynamic.literal(first = first)
-    if (after != null) __obj.updateDynamic("after")(after)
-    if (assetType != null) __obj.updateDynamic("assetType")(assetType)
-    if (groupName != null) __obj.updateDynamic("groupName")(groupName)
-    if (groupTypes != null) __obj.updateDynamic("groupTypes")(groupTypes)
+    val __obj = js.Dynamic.literal(first = first.asInstanceOf[js.Any])
+    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
+    if (assetType != null) __obj.updateDynamic("assetType")(assetType.asInstanceOf[js.Any])
+    if (groupName != null) __obj.updateDynamic("groupName")(groupName.asInstanceOf[js.Any])
+    if (groupTypes != null) __obj.updateDynamic("groupTypes")(groupTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[CameraRollFetchParams]
   }
 }

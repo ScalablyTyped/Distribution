@@ -24,10 +24,10 @@ object OperationPerDevice {
     updateMetadata: UpdateMetadataArguments = null
   ): OperationPerDevice = {
     val __obj = js.Dynamic.literal()
-    if (claim != null) __obj.updateDynamic("claim")(claim)
-    if (result != null) __obj.updateDynamic("result")(result)
-    if (unclaim != null) __obj.updateDynamic("unclaim")(unclaim)
-    if (updateMetadata != null) __obj.updateDynamic("updateMetadata")(updateMetadata)
+    if (claim != null) __obj.updateDynamic("claim")(claim.asInstanceOf[js.Any])
+    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
+    if (unclaim != null) __obj.updateDynamic("unclaim")(unclaim.asInstanceOf[js.Any])
+    if (updateMetadata != null) __obj.updateDynamic("updateMetadata")(updateMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[OperationPerDevice]
   }
 }

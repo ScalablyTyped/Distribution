@@ -25,11 +25,11 @@ object ISavedColumn {
     visible: js.UndefOr[Boolean] = js.undefined,
     width: Int | Double = null
   ): ISavedColumn = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (filters != null) __obj.updateDynamic("filters")(filters)
-    if (pinned != null) __obj.updateDynamic("pinned")(pinned)
-    if (sort != null) __obj.updateDynamic("sort")(sort)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
+    if (pinned != null) __obj.updateDynamic("pinned")(pinned.asInstanceOf[js.Any])
+    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISavedColumn]
   }

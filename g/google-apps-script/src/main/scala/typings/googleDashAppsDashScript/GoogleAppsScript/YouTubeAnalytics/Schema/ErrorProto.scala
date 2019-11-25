@@ -26,13 +26,13 @@ object ErrorProto {
     locationType: String = null
   ): ErrorProto = {
     val __obj = js.Dynamic.literal()
-    if (argument != null) __obj.updateDynamic("argument")(argument)
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (debugInfo != null) __obj.updateDynamic("debugInfo")(debugInfo)
-    if (domain != null) __obj.updateDynamic("domain")(domain)
-    if (externalErrorMessage != null) __obj.updateDynamic("externalErrorMessage")(externalErrorMessage)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (locationType != null) __obj.updateDynamic("locationType")(locationType)
+    if (argument != null) __obj.updateDynamic("argument")(argument.asInstanceOf[js.Any])
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (debugInfo != null) __obj.updateDynamic("debugInfo")(debugInfo.asInstanceOf[js.Any])
+    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
+    if (externalErrorMessage != null) __obj.updateDynamic("externalErrorMessage")(externalErrorMessage.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (locationType != null) __obj.updateDynamic("locationType")(locationType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorProto]
   }
 }

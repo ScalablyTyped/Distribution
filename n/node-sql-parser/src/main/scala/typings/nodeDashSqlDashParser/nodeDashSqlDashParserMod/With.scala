@@ -13,8 +13,8 @@ trait With extends js.Object {
 object With {
   @scala.inline
   def apply(name: String, stmt: js.Array[_], columns: js.Array[_] = null): With = {
-    val __obj = js.Dynamic.literal(name = name, stmt = stmt)
-    if (columns != null) __obj.updateDynamic("columns")(columns)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], stmt = stmt.asInstanceOf[js.Any])
+    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
     __obj.asInstanceOf[With]
   }
 }

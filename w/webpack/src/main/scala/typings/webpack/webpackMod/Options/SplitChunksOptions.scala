@@ -48,7 +48,7 @@ object SplitChunksOptions {
     name: Boolean | String | (js.Function1[/* repeated */ js.Any, _]) = null
   ): SplitChunksOptions = {
     val __obj = js.Dynamic.literal()
-    if (automaticNameDelimiter != null) __obj.updateDynamic("automaticNameDelimiter")(automaticNameDelimiter)
+    if (automaticNameDelimiter != null) __obj.updateDynamic("automaticNameDelimiter")(automaticNameDelimiter.asInstanceOf[js.Any])
     if (cacheGroups != null) __obj.updateDynamic("cacheGroups")(cacheGroups.asInstanceOf[js.Any])
     if (chunks != null) __obj.updateDynamic("chunks")(chunks.asInstanceOf[js.Any])
     if (maxAsyncRequests != null) __obj.updateDynamic("maxAsyncRequests")(maxAsyncRequests.asInstanceOf[js.Any])

@@ -45,8 +45,8 @@ object KnockoutValidationRuleDefinitions {
     unique: KnockoutValidationRuleDefinition,
     StringDictionary: /* ruleName */ StringDictionary[KnockoutValidationRuleDefinition | KnockoutValidationAsyncRuleDefinition] = null
   ): KnockoutValidationRuleDefinitions = {
-    val __obj = js.Dynamic.literal(date = date, dateISO = dateISO, digit = digit, email = email, equal = equal, max = max, maxLength = maxLength, min = min, minLength = minLength, notEqual = notEqual, number = number, pattern = pattern, phoneUS = phoneUS, required = required, step = step, unique = unique)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], dateISO = dateISO.asInstanceOf[js.Any], digit = digit.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], equal = equal.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], maxLength = maxLength.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], minLength = minLength.asInstanceOf[js.Any], notEqual = notEqual.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], phoneUS = phoneUS.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any], unique = unique.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[KnockoutValidationRuleDefinitions]
   }
 }

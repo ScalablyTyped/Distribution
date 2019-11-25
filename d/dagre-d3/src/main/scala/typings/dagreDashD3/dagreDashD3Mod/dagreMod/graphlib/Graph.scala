@@ -54,7 +54,7 @@ object Graph {
       /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
     ] = null
   ): Graph = {
-    val __obj = js.Dynamic.literal(graph = js.Any.fromFunction0(graph), height = height, predecessors = js.Any.fromFunction1(predecessors), successors = js.Any.fromFunction1(successors), width = width)
+    val __obj = js.Dynamic.literal(graph = js.Any.fromFunction0(graph), height = height.asInstanceOf[js.Any], predecessors = js.Any.fromFunction1(predecessors), successors = js.Any.fromFunction1(successors), width = width.asInstanceOf[js.Any])
     if (transition != null) __obj.updateDynamic("transition")(js.Any.fromFunction1(transition))
     __obj.asInstanceOf[Graph]
   }

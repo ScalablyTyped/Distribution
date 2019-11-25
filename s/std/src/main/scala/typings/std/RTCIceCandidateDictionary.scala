@@ -32,16 +32,16 @@ object RTCIceCandidateDictionary {
     `type`: RTCIceCandidateType = null
   ): RTCIceCandidateDictionary = {
     val __obj = js.Dynamic.literal()
-    if (foundation != null) __obj.updateDynamic("foundation")(foundation)
-    if (ip != null) __obj.updateDynamic("ip")(ip)
-    if (msMTurnSessionId != null) __obj.updateDynamic("msMTurnSessionId")(msMTurnSessionId)
+    if (foundation != null) __obj.updateDynamic("foundation")(foundation.asInstanceOf[js.Any])
+    if (ip != null) __obj.updateDynamic("ip")(ip.asInstanceOf[js.Any])
+    if (msMTurnSessionId != null) __obj.updateDynamic("msMTurnSessionId")(msMTurnSessionId.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
-    if (relatedAddress != null) __obj.updateDynamic("relatedAddress")(relatedAddress)
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
+    if (relatedAddress != null) __obj.updateDynamic("relatedAddress")(relatedAddress.asInstanceOf[js.Any])
     if (relatedPort != null) __obj.updateDynamic("relatedPort")(relatedPort.asInstanceOf[js.Any])
-    if (tcpType != null) __obj.updateDynamic("tcpType")(tcpType)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (tcpType != null) __obj.updateDynamic("tcpType")(tcpType.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCIceCandidateDictionary]
   }
 }

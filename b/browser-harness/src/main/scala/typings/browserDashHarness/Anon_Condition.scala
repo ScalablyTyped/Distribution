@@ -13,8 +13,8 @@ trait Anon_Condition extends js.Object {
 object Anon_Condition {
   @scala.inline
   def apply(condition: js.Function, exec: js.Function = null, timeoutMS: Int | Double = null): Anon_Condition = {
-    val __obj = js.Dynamic.literal(condition = condition)
-    if (exec != null) __obj.updateDynamic("exec")(exec)
+    val __obj = js.Dynamic.literal(condition = condition.asInstanceOf[js.Any])
+    if (exec != null) __obj.updateDynamic("exec")(exec.asInstanceOf[js.Any])
     if (timeoutMS != null) __obj.updateDynamic("timeoutMS")(timeoutMS.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Condition]
   }

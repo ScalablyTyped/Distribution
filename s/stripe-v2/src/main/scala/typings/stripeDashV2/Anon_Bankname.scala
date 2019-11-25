@@ -15,8 +15,8 @@ trait Anon_Bankname extends js.Object {
 object Anon_Bankname {
   @scala.inline
   def apply(bank_name: String, country: String, last4: Double, `object`: String, validated: Boolean): Anon_Bankname = {
-    val __obj = js.Dynamic.literal(bank_name = bank_name, country = country, last4 = last4, validated = validated)
-    __obj.updateDynamic("object")(`object`)
+    val __obj = js.Dynamic.literal(bank_name = bank_name.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], last4 = last4.asInstanceOf[js.Any], validated = validated.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Bankname]
   }
 }

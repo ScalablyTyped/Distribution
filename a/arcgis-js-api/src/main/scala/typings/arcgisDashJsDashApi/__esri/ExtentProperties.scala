@@ -89,11 +89,11 @@ object ExtentProperties {
     zmin: Int | Double = null
   ): ExtentProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hasM)) __obj.updateDynamic("hasM")(hasM)
-    if (!js.isUndefined(hasZ)) __obj.updateDynamic("hasZ")(hasZ)
+    if (!js.isUndefined(hasM)) __obj.updateDynamic("hasM")(hasM.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasZ)) __obj.updateDynamic("hasZ")(hasZ.asInstanceOf[js.Any])
     if (mmax != null) __obj.updateDynamic("mmax")(mmax.asInstanceOf[js.Any])
     if (mmin != null) __obj.updateDynamic("mmin")(mmin.asInstanceOf[js.Any])
-    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)
+    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference.asInstanceOf[js.Any])
     if (xmax != null) __obj.updateDynamic("xmax")(xmax.asInstanceOf[js.Any])
     if (xmin != null) __obj.updateDynamic("xmin")(xmin.asInstanceOf[js.Any])
     if (ymax != null) __obj.updateDynamic("ymax")(ymax.asInstanceOf[js.Any])

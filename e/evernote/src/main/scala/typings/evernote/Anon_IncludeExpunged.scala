@@ -38,19 +38,19 @@ object Anon_IncludeExpunged {
     requireNoteContentClass: String = null
   ): Anon_IncludeExpunged = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeExpunged)) __obj.updateDynamic("includeExpunged")(includeExpunged)
-    if (!js.isUndefined(includeLinkedNotebooks)) __obj.updateDynamic("includeLinkedNotebooks")(includeLinkedNotebooks)
-    if (!js.isUndefined(includeNoteApplicationDataFullMap)) __obj.updateDynamic("includeNoteApplicationDataFullMap")(includeNoteApplicationDataFullMap)
-    if (!js.isUndefined(includeNoteAttributes)) __obj.updateDynamic("includeNoteAttributes")(includeNoteAttributes)
-    if (!js.isUndefined(includeNoteResourceApplicationDataFullMap)) __obj.updateDynamic("includeNoteResourceApplicationDataFullMap")(includeNoteResourceApplicationDataFullMap)
-    if (!js.isUndefined(includeNoteResources)) __obj.updateDynamic("includeNoteResources")(includeNoteResources)
-    if (!js.isUndefined(includeNotebooks)) __obj.updateDynamic("includeNotebooks")(includeNotebooks)
-    if (!js.isUndefined(includeNotes)) __obj.updateDynamic("includeNotes")(includeNotes)
-    if (!js.isUndefined(includeResourceApplicationDataFullMap)) __obj.updateDynamic("includeResourceApplicationDataFullMap")(includeResourceApplicationDataFullMap)
-    if (!js.isUndefined(includeResources)) __obj.updateDynamic("includeResources")(includeResources)
-    if (!js.isUndefined(includeSearches)) __obj.updateDynamic("includeSearches")(includeSearches)
-    if (!js.isUndefined(includeTags)) __obj.updateDynamic("includeTags")(includeTags)
-    if (requireNoteContentClass != null) __obj.updateDynamic("requireNoteContentClass")(requireNoteContentClass)
+    if (!js.isUndefined(includeExpunged)) __obj.updateDynamic("includeExpunged")(includeExpunged.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeLinkedNotebooks)) __obj.updateDynamic("includeLinkedNotebooks")(includeLinkedNotebooks.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeNoteApplicationDataFullMap)) __obj.updateDynamic("includeNoteApplicationDataFullMap")(includeNoteApplicationDataFullMap.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeNoteAttributes)) __obj.updateDynamic("includeNoteAttributes")(includeNoteAttributes.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeNoteResourceApplicationDataFullMap)) __obj.updateDynamic("includeNoteResourceApplicationDataFullMap")(includeNoteResourceApplicationDataFullMap.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeNoteResources)) __obj.updateDynamic("includeNoteResources")(includeNoteResources.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeNotebooks)) __obj.updateDynamic("includeNotebooks")(includeNotebooks.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeNotes)) __obj.updateDynamic("includeNotes")(includeNotes.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeResourceApplicationDataFullMap)) __obj.updateDynamic("includeResourceApplicationDataFullMap")(includeResourceApplicationDataFullMap.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeResources)) __obj.updateDynamic("includeResources")(includeResources.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeSearches)) __obj.updateDynamic("includeSearches")(includeSearches.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeTags)) __obj.updateDynamic("includeTags")(includeTags.asInstanceOf[js.Any])
+    if (requireNoteContentClass != null) __obj.updateDynamic("requireNoteContentClass")(requireNoteContentClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IncludeExpunged]
   }
 }

@@ -51,13 +51,13 @@ object KeyOptions {
     passphrase: String = null,
     subkeys: js.Array[Anon_Passphrase] = null
   ): KeyOptions = {
-    val __obj = js.Dynamic.literal(userIds = userIds)
-    if (curve != null) __obj.updateDynamic("curve")(curve)
-    if (date != null) __obj.updateDynamic("date")(date)
+    val __obj = js.Dynamic.literal(userIds = userIds.asInstanceOf[js.Any])
+    if (curve != null) __obj.updateDynamic("curve")(curve.asInstanceOf[js.Any])
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
     if (keyExpirationTime != null) __obj.updateDynamic("keyExpirationTime")(keyExpirationTime.asInstanceOf[js.Any])
     if (numBits != null) __obj.updateDynamic("numBits")(numBits.asInstanceOf[js.Any])
-    if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase)
-    if (subkeys != null) __obj.updateDynamic("subkeys")(subkeys)
+    if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase.asInstanceOf[js.Any])
+    if (subkeys != null) __obj.updateDynamic("subkeys")(subkeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyOptions]
   }
 }

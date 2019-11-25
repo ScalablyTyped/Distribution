@@ -26,7 +26,7 @@ trait CreateProcessModel extends js.Object {
 object CreateProcessModel {
   @scala.inline
   def apply(description: String, name: String, parentProcessTypeId: String, referenceName: String): CreateProcessModel = {
-    val __obj = js.Dynamic.literal(description = description, name = name, parentProcessTypeId = parentProcessTypeId, referenceName = referenceName)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parentProcessTypeId = parentProcessTypeId.asInstanceOf[js.Any], referenceName = referenceName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CreateProcessModel]
   }

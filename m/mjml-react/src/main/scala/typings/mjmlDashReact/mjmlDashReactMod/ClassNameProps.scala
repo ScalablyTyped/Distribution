@@ -12,7 +12,7 @@ object ClassNameProps {
   @scala.inline
   def apply(cssClass: String = null): ClassNameProps = {
     val __obj = js.Dynamic.literal()
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassNameProps]
   }
 }

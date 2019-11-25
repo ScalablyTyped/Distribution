@@ -14,7 +14,7 @@ trait NotWorkingResult extends Result {
 object NotWorkingResult {
   @scala.inline
   def apply(error: Anon_Code, ok: `false`): NotWorkingResult = {
-    val __obj = js.Dynamic.literal(error = error, ok = ok)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NotWorkingResult]
   }

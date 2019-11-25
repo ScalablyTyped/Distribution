@@ -29,9 +29,9 @@ object XDeath {
     time: Anon_,
     `original-expiration`: js.Any = null
   ): XDeath = {
-    val __obj = js.Dynamic.literal(count = count, exchange = exchange, queue = queue, reason = reason.asInstanceOf[js.Any], time = time)
-    __obj.updateDynamic("routing-keys")(`routing-keys`)
-    if (`original-expiration` != null) __obj.updateDynamic("original-expiration")(`original-expiration`)
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], exchange = exchange.asInstanceOf[js.Any], queue = queue.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
+    __obj.updateDynamic("routing-keys")(`routing-keys`.asInstanceOf[js.Any])
+    if (`original-expiration` != null) __obj.updateDynamic("original-expiration")(`original-expiration`.asInstanceOf[js.Any])
     __obj.asInstanceOf[XDeath]
   }
 }

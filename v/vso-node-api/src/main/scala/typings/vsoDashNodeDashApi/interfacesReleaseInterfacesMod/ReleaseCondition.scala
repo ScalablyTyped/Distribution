@@ -11,7 +11,7 @@ trait ReleaseCondition extends Condition {
 object ReleaseCondition {
   @scala.inline
   def apply(conditionType: ConditionType, name: String, result: Boolean, value: String): ReleaseCondition = {
-    val __obj = js.Dynamic.literal(conditionType = conditionType, name = name, result = result, value = value)
+    val __obj = js.Dynamic.literal(conditionType = conditionType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReleaseCondition]
   }

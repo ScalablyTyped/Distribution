@@ -78,7 +78,7 @@ object d3DashFormatStrings {
   sealed trait s extends js.Object
   
   @js.native
-  sealed trait x extends js.Object
+  sealed trait x_ extends js.Object
   
   @scala.inline
   def ` `: ` ` = " ".asInstanceOf[` `]
@@ -129,6 +129,6 @@ object d3DashFormatStrings {
   @scala.inline
   def s: s = "s".asInstanceOf[s]
   @scala.inline
-  def x: x = "x".asInstanceOf[x]
+  def x_ : x_ = "x".asInstanceOf[x_]
 }
 

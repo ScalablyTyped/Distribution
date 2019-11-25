@@ -21,8 +21,8 @@ object Anon_Destination {
     originName: String = null
   ): Anon_Destination = {
     val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any])
-    if (destinationName != null) __obj.updateDynamic("destinationName")(destinationName)
-    if (originName != null) __obj.updateDynamic("originName")(originName)
+    if (destinationName != null) __obj.updateDynamic("destinationName")(destinationName.asInstanceOf[js.Any])
+    if (originName != null) __obj.updateDynamic("originName")(originName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Destination]
   }
 }

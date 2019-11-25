@@ -22,7 +22,7 @@ object Anon_CompleteFailRes {
     fail: () => Unit = null,
     success: /* res */ Anon_Result => Unit = null
   ): Anon_CompleteFailRes = {
-    val __obj = js.Dynamic.literal(todayPlayedTime = todayPlayedTime)
+    val __obj = js.Dynamic.literal(todayPlayedTime = todayPlayedTime.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))

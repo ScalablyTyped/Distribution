@@ -37,9 +37,9 @@ object SpawnProcessOptions {
     uid: Int | Double = null
   ): SpawnProcessOptions = {
     val __obj = js.Dynamic.literal()
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
-    if (!js.isUndefined(detached)) __obj.updateDynamic("detached")(detached)
-    if (env != null) __obj.updateDynamic("env")(env)
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
+    if (!js.isUndefined(detached)) __obj.updateDynamic("detached")(detached.asInstanceOf[js.Any])
+    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
     if (gid != null) __obj.updateDynamic("gid")(gid.asInstanceOf[js.Any])
     if (shell != null) __obj.updateDynamic("shell")(shell.asInstanceOf[js.Any])
     if (stdio != null) __obj.updateDynamic("stdio")(stdio.asInstanceOf[js.Any])

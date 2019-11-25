@@ -16,7 +16,7 @@ trait PlacesOptions extends js.Object {
 object PlacesOptions {
   @scala.inline
   def apply(apiKey: String, appId: String, container: String | HTMLInputElement | NodeList | Element): PlacesOptions = {
-    val __obj = js.Dynamic.literal(apiKey = apiKey, appId = appId, container = container.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any], appId = appId.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PlacesOptions]
   }

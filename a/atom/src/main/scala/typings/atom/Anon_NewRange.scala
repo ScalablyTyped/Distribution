@@ -18,7 +18,7 @@ trait Anon_NewRange extends js.Object {
 object Anon_NewRange {
   @scala.inline
   def apply(newRange: Range, oldRange: Range): Anon_NewRange = {
-    val __obj = js.Dynamic.literal(newRange = newRange, oldRange = oldRange)
+    val __obj = js.Dynamic.literal(newRange = newRange.asInstanceOf[js.Any], oldRange = oldRange.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_NewRange]
   }

@@ -42,11 +42,11 @@ object PlayerOptions {
     width: String | Double = null
   ): PlayerOptions = {
     val __obj = js.Dynamic.literal()
-    if (events != null) __obj.updateDynamic("events")(events)
+    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (playerVars != null) __obj.updateDynamic("playerVars")(playerVars)
-    if (videoId != null) __obj.updateDynamic("videoId")(videoId)
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (playerVars != null) __obj.updateDynamic("playerVars")(playerVars.asInstanceOf[js.Any])
+    if (videoId != null) __obj.updateDynamic("videoId")(videoId.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlayerOptions]
   }

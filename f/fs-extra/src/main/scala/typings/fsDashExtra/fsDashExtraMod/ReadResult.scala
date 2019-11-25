@@ -13,7 +13,7 @@ trait ReadResult extends js.Object {
 object ReadResult {
   @scala.inline
   def apply(buffer: Buffer, bytesRead: Double): ReadResult = {
-    val __obj = js.Dynamic.literal(buffer = buffer, bytesRead = bytesRead)
+    val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], bytesRead = bytesRead.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReadResult]
   }

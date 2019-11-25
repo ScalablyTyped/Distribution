@@ -59,7 +59,7 @@ object DataSelectionOptions {
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
     if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     if (returnType != null) __obj.updateDynamic("returnType")(returnType.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSelectionOptions[T]]
   }
 }

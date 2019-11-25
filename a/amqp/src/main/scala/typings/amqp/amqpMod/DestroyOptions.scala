@@ -23,8 +23,8 @@ object DestroyOptions {
   @scala.inline
   def apply(ifEmpty: js.UndefOr[Boolean] = js.undefined, ifUnused: js.UndefOr[Boolean] = js.undefined): DestroyOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ifEmpty)) __obj.updateDynamic("ifEmpty")(ifEmpty)
-    if (!js.isUndefined(ifUnused)) __obj.updateDynamic("ifUnused")(ifUnused)
+    if (!js.isUndefined(ifEmpty)) __obj.updateDynamic("ifEmpty")(ifEmpty.asInstanceOf[js.Any])
+    if (!js.isUndefined(ifUnused)) __obj.updateDynamic("ifUnused")(ifUnused.asInstanceOf[js.Any])
     __obj.asInstanceOf[DestroyOptions]
   }
 }

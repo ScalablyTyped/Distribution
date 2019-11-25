@@ -15,9 +15,9 @@ object ManagedMobileApp {
   @scala.inline
   def apply(id: String = null, mobileAppIdentifier: MobileAppIdentifier = null, version: String = null): ManagedMobileApp = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (mobileAppIdentifier != null) __obj.updateDynamic("mobileAppIdentifier")(mobileAppIdentifier)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (mobileAppIdentifier != null) __obj.updateDynamic("mobileAppIdentifier")(mobileAppIdentifier.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagedMobileApp]
   }
 }

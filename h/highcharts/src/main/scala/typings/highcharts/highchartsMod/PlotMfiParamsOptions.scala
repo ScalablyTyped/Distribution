@@ -29,7 +29,7 @@ object PlotMfiParamsOptions {
     val __obj = js.Dynamic.literal()
     if (decimals != null) __obj.updateDynamic("decimals")(decimals.asInstanceOf[js.Any])
     if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
-    if (volumeSeriesID != null) __obj.updateDynamic("volumeSeriesID")(volumeSeriesID)
+    if (volumeSeriesID != null) __obj.updateDynamic("volumeSeriesID")(volumeSeriesID.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotMfiParamsOptions]
   }
 }

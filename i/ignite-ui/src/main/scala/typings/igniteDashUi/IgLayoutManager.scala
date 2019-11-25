@@ -121,17 +121,17 @@ object IgLayoutManager {
     width: String | Double = null
   ): IgLayoutManager = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (borderLayout != null) __obj.updateDynamic("borderLayout")(borderLayout)
-    if (gridLayout != null) __obj.updateDynamic("gridLayout")(gridLayout)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (borderLayout != null) __obj.updateDynamic("borderLayout")(borderLayout.asInstanceOf[js.Any])
+    if (gridLayout != null) __obj.updateDynamic("gridLayout")(gridLayout.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (internalResized != null) __obj.updateDynamic("internalResized")(js.Any.fromFunction2(internalResized))
     if (internalResizing != null) __obj.updateDynamic("internalResizing")(js.Any.fromFunction2(internalResizing))
     if (itemCount != null) __obj.updateDynamic("itemCount")(itemCount.asInstanceOf[js.Any])
     if (itemRendered != null) __obj.updateDynamic("itemRendered")(js.Any.fromFunction2(itemRendered))
     if (itemRendering != null) __obj.updateDynamic("itemRendering")(js.Any.fromFunction2(itemRendering))
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (layoutMode != null) __obj.updateDynamic("layoutMode")(layoutMode)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (layoutMode != null) __obj.updateDynamic("layoutMode")(layoutMode.asInstanceOf[js.Any])
     if (rendered != null) __obj.updateDynamic("rendered")(js.Any.fromFunction2(rendered))
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgLayoutManager]

@@ -25,8 +25,8 @@ object Anon_BoxSizing {
     visibility: String,
     width: String = null
   ): Anon_BoxSizing = {
-    val __obj = js.Dynamic.literal(MozBoxSizing = MozBoxSizing, boxSizing = boxSizing, display = display, height = height, position = position, visibility = visibility)
-    if (width != null) __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(MozBoxSizing = MozBoxSizing.asInstanceOf[js.Any], boxSizing = boxSizing.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], visibility = visibility.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BoxSizing]
   }
 }

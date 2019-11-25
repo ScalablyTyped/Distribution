@@ -28,7 +28,7 @@ object OptionsDownload {
   ): OptionsDownload = {
     val __obj = js.Dynamic.literal()
     if (downloadComplete != null) __obj.updateDynamic("downloadComplete")(js.Any.fromFunction0(downloadComplete))
-    if (downloadConfig != null) __obj.updateDynamic("downloadConfig")(downloadConfig)
+    if (downloadConfig != null) __obj.updateDynamic("downloadConfig")(downloadConfig.asInstanceOf[js.Any])
     if (downloadDataFormatter != null) __obj.updateDynamic("downloadDataFormatter")(js.Any.fromFunction1(downloadDataFormatter))
     if (downloadReady != null) __obj.updateDynamic("downloadReady")(js.Any.fromFunction2(downloadReady))
     __obj.asInstanceOf[OptionsDownload]

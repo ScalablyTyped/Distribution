@@ -19,9 +19,9 @@ object MapMarkerCreatedEvent {
     layer: Marker = null,
     marker: Marker = null
   ): MapMarkerCreatedEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (layer != null) __obj.updateDynamic("layer")(layer)
-    if (marker != null) __obj.updateDynamic("marker")(marker)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (layer != null) __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
+    if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapMarkerCreatedEvent]
   }
 }

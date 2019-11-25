@@ -28,7 +28,7 @@ object IGesturePayload {
     status: String,
     time: Double
   ): IGesturePayload = {
-    val __obj = js.Dynamic.literal(center = center, centerDelta = centerDelta, centerVelocity = centerVelocity, current = current, pointers = pointers, points = points, status = status, time = time)
+    val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], centerDelta = centerDelta.asInstanceOf[js.Any], centerVelocity = centerVelocity.asInstanceOf[js.Any], current = current.asInstanceOf[js.Any], pointers = pointers.asInstanceOf[js.Any], points = points.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IGesturePayload]
   }

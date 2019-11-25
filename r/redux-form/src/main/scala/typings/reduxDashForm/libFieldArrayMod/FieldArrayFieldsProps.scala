@@ -41,7 +41,7 @@ object FieldArrayFieldsProps {
     swap: (Double, Double) => Unit,
     unshift: FieldValue => Unit
   ): FieldArrayFieldsProps[FieldValue] = {
-    val __obj = js.Dynamic.literal(forEach = js.Any.fromFunction1(forEach), get = js.Any.fromFunction1(get), getAll = js.Any.fromFunction0(getAll), insert = js.Any.fromFunction2(insert), length = length, map = js.Any.fromFunction1(map), move = js.Any.fromFunction2(move), name = name, pop = js.Any.fromFunction0(pop), push = js.Any.fromFunction1(push), remove = js.Any.fromFunction1(remove), removeAll = js.Any.fromFunction0(removeAll), shift = js.Any.fromFunction0(shift), swap = js.Any.fromFunction2(swap), unshift = js.Any.fromFunction1(unshift))
+    val __obj = js.Dynamic.literal(forEach = js.Any.fromFunction1(forEach), get = js.Any.fromFunction1(get), getAll = js.Any.fromFunction0(getAll), insert = js.Any.fromFunction2(insert), length = length.asInstanceOf[js.Any], map = js.Any.fromFunction1(map), move = js.Any.fromFunction2(move), name = name.asInstanceOf[js.Any], pop = js.Any.fromFunction0(pop), push = js.Any.fromFunction1(push), remove = js.Any.fromFunction1(remove), removeAll = js.Any.fromFunction0(removeAll), shift = js.Any.fromFunction0(shift), swap = js.Any.fromFunction2(swap), unshift = js.Any.fromFunction1(unshift))
   
     __obj.asInstanceOf[FieldArrayFieldsProps[FieldValue]]
   }

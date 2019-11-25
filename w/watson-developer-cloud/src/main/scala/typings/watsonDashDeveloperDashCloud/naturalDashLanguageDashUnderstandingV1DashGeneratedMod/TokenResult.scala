@@ -25,10 +25,10 @@ object TokenResult {
     text: String = null
   ): TokenResult = {
     val __obj = js.Dynamic.literal()
-    if (lemma != null) __obj.updateDynamic("lemma")(lemma)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (part_of_speech != null) __obj.updateDynamic("part_of_speech")(part_of_speech)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (lemma != null) __obj.updateDynamic("lemma")(lemma.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (part_of_speech != null) __obj.updateDynamic("part_of_speech")(part_of_speech.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[TokenResult]
   }
 }

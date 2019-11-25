@@ -20,8 +20,8 @@ trait ProjectsCreateForRepoParams extends js.Object {
 object ProjectsCreateForRepoParams {
   @scala.inline
   def apply(name: String, owner: String, repo: String, body: String = null): ProjectsCreateForRepoParams = {
-    val __obj = js.Dynamic.literal(name = name, owner = owner, repo = repo)
-    if (body != null) __obj.updateDynamic("body")(body)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectsCreateForRepoParams]
   }
 }

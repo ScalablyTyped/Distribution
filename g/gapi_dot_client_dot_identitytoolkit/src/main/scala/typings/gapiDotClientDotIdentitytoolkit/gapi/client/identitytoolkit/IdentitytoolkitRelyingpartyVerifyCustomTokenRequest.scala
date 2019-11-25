@@ -24,10 +24,10 @@ object IdentitytoolkitRelyingpartyVerifyCustomTokenRequest {
     token: String = null
   ): IdentitytoolkitRelyingpartyVerifyCustomTokenRequest = {
     val __obj = js.Dynamic.literal()
-    if (delegatedProjectNumber != null) __obj.updateDynamic("delegatedProjectNumber")(delegatedProjectNumber)
-    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId)
-    if (!js.isUndefined(returnSecureToken)) __obj.updateDynamic("returnSecureToken")(returnSecureToken)
-    if (token != null) __obj.updateDynamic("token")(token)
+    if (delegatedProjectNumber != null) __obj.updateDynamic("delegatedProjectNumber")(delegatedProjectNumber.asInstanceOf[js.Any])
+    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnSecureToken)) __obj.updateDynamic("returnSecureToken")(returnSecureToken.asInstanceOf[js.Any])
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentitytoolkitRelyingpartyVerifyCustomTokenRequest]
   }
 }

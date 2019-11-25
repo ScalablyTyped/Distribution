@@ -20,9 +20,9 @@ object AdministratorWebTokenSpec {
   @scala.inline
   def apply(kind: String = null, parent: String = null, permission: js.Array[String] = null): AdministratorWebTokenSpec = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
-    if (permission != null) __obj.updateDynamic("permission")(permission)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (permission != null) __obj.updateDynamic("permission")(permission.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdministratorWebTokenSpec]
   }
 }

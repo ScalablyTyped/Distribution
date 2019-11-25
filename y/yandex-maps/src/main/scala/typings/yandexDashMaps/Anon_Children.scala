@@ -21,7 +21,7 @@ object Anon_Children {
     properties: IDataManager | js.Object = null
   ): Anon_Children = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (geometry != null) __obj.updateDynamic("geometry")(geometry.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Children]

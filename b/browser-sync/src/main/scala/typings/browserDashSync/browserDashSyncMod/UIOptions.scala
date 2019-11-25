@@ -17,7 +17,7 @@ object UIOptions {
   def apply(port: Int | Double = null, weinre: Anon_Port = null): UIOptions = {
     val __obj = js.Dynamic.literal()
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (weinre != null) __obj.updateDynamic("weinre")(weinre)
+    if (weinre != null) __obj.updateDynamic("weinre")(weinre.asInstanceOf[js.Any])
     __obj.asInstanceOf[UIOptions]
   }
 }

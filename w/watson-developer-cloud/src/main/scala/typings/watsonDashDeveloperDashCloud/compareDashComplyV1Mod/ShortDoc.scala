@@ -16,8 +16,8 @@ object ShortDoc {
   @scala.inline
   def apply(hash: String = null, title: String = null): ShortDoc = {
     val __obj = js.Dynamic.literal()
-    if (hash != null) __obj.updateDynamic("hash")(hash)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShortDoc]
   }
 }

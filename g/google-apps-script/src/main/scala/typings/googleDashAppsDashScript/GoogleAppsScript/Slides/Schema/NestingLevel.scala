@@ -12,7 +12,7 @@ object NestingLevel {
   @scala.inline
   def apply(bulletStyle: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.Schema.TextStyle = null): NestingLevel = {
     val __obj = js.Dynamic.literal()
-    if (bulletStyle != null) __obj.updateDynamic("bulletStyle")(bulletStyle)
+    if (bulletStyle != null) __obj.updateDynamic("bulletStyle")(bulletStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[NestingLevel]
   }
 }

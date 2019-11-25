@@ -33,9 +33,9 @@ object IgGridGroupBySummarySettings {
     summaryFormat: String = null
   ): IgGridGroupBySummarySettings = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (multiSummaryDelimiter != null) __obj.updateDynamic("multiSummaryDelimiter")(multiSummaryDelimiter)
-    if (summaryFormat != null) __obj.updateDynamic("summaryFormat")(summaryFormat)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (multiSummaryDelimiter != null) __obj.updateDynamic("multiSummaryDelimiter")(multiSummaryDelimiter.asInstanceOf[js.Any])
+    if (summaryFormat != null) __obj.updateDynamic("summaryFormat")(summaryFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridGroupBySummarySettings]
   }
 }

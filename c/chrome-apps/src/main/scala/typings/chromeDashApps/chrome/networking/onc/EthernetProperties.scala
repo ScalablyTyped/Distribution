@@ -23,7 +23,7 @@ object EthernetProperties {
     val __obj = js.Dynamic.literal()
     if (Authentication != null) __obj.updateDynamic("Authentication")(Authentication.asInstanceOf[js.Any])
     if (AutoConnect != null) __obj.updateDynamic("AutoConnect")(AutoConnect.asInstanceOf[js.Any])
-    if (EAP != null) __obj.updateDynamic("EAP")(EAP)
+    if (EAP != null) __obj.updateDynamic("EAP")(EAP.asInstanceOf[js.Any])
     __obj.asInstanceOf[EthernetProperties[M]]
   }
 }

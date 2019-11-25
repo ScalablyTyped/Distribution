@@ -13,8 +13,8 @@ object ObservableObjectEvent {
   @scala.inline
   def apply(field: String = null, sender: ObservableObject = null): ObservableObjectEvent = {
     val __obj = js.Dynamic.literal()
-    if (field != null) __obj.updateDynamic("field")(field)
-    if (sender != null) __obj.updateDynamic("sender")(sender)
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    if (sender != null) __obj.updateDynamic("sender")(sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObservableObjectEvent]
   }
 }

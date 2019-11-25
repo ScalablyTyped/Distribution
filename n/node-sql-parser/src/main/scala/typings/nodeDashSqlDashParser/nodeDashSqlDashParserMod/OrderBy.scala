@@ -14,7 +14,7 @@ trait OrderBy extends js.Object {
 object OrderBy {
   @scala.inline
   def apply(expr: js.Any, `type`: ASC | DESC): OrderBy = {
-    val __obj = js.Dynamic.literal(expr = expr)
+    val __obj = js.Dynamic.literal(expr = expr.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderBy]
   }

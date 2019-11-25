@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 object MapOverlayProps {
   @scala.inline
   def apply(bounds: js.Tuple2[Coordinate, Coordinate], image: ImageURISource | ImageRequireSource = null): MapOverlayProps = {
-    val __obj = js.Dynamic.literal(bounds = bounds)
+    val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any])
     if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapOverlayProps]
   }

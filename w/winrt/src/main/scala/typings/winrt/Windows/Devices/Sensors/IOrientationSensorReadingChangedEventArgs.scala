@@ -11,7 +11,7 @@ trait IOrientationSensorReadingChangedEventArgs extends js.Object {
 object IOrientationSensorReadingChangedEventArgs {
   @scala.inline
   def apply(reading: OrientationSensorReading): IOrientationSensorReadingChangedEventArgs = {
-    val __obj = js.Dynamic.literal(reading = reading)
+    val __obj = js.Dynamic.literal(reading = reading.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IOrientationSensorReadingChangedEventArgs]
   }

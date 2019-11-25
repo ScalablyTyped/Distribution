@@ -18,8 +18,8 @@ trait Anon_Bounds extends js.Object {
 object Anon_Bounds {
   @scala.inline
   def apply(bounds: Bounds, height: Double, width: Double, offset: Coordinates = null, padding: Padding = null): Anon_Bounds = {
-    val __obj = js.Dynamic.literal(bounds = bounds, height = height, width = width)
-    if (offset != null) __obj.updateDynamic("offset")(offset)
+    val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Bounds]
   }

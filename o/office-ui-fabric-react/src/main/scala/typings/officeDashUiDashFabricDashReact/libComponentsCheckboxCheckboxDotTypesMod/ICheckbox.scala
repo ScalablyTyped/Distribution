@@ -16,7 +16,7 @@ trait ICheckbox extends js.Object {
 object ICheckbox {
   @scala.inline
   def apply(checked: Boolean, focus: () => Unit, indeterminate: Boolean): ICheckbox = {
-    val __obj = js.Dynamic.literal(checked = checked, focus = js.Any.fromFunction0(focus), indeterminate = indeterminate)
+    val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any], focus = js.Any.fromFunction0(focus), indeterminate = indeterminate.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ICheckbox]
   }

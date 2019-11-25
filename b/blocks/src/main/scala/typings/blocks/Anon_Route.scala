@@ -13,8 +13,8 @@ object Anon_Route {
   @scala.inline
   def apply(route: js.Any = null, url: String = null): Anon_Route = {
     val __obj = js.Dynamic.literal()
-    if (route != null) __obj.updateDynamic("route")(route)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (route != null) __obj.updateDynamic("route")(route.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Route]
   }
 }

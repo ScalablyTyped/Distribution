@@ -48,12 +48,12 @@ object EditCellStartingEventUIParam {
   ): EditCellStartingEventUIParam = {
     val __obj = js.Dynamic.literal()
     if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
-    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey)
-    if (editor != null) __obj.updateDynamic("editor")(editor)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (!js.isUndefined(rowAdding)) __obj.updateDynamic("rowAdding")(rowAdding)
-    if (rowID != null) __obj.updateDynamic("rowID")(rowID)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey.asInstanceOf[js.Any])
+    if (editor != null) __obj.updateDynamic("editor")(editor.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowAdding)) __obj.updateDynamic("rowAdding")(rowAdding.asInstanceOf[js.Any])
+    if (rowID != null) __obj.updateDynamic("rowID")(rowID.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditCellStartingEventUIParam]
   }
 }

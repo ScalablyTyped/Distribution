@@ -33,7 +33,7 @@ object ListReelMediaViewerFeedResponseReelMentionsItem {
     y: Double,
     z: Double
   ): ListReelMediaViewerFeedResponseReelMentionsItem = {
-    val __obj = js.Dynamic.literal(display_type = display_type, height = height, is_hidden = is_hidden, is_pinned = is_pinned, is_sticker = is_sticker, rotation = rotation, user = user, width = width, x = x, y = y, z = z)
+    val __obj = js.Dynamic.literal(display_type = display_type.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], is_hidden = is_hidden.asInstanceOf[js.Any], is_pinned = is_pinned.asInstanceOf[js.Any], is_sticker = is_sticker.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ListReelMediaViewerFeedResponseReelMentionsItem]
   }

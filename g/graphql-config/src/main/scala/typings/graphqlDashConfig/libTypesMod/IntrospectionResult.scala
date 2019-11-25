@@ -14,9 +14,9 @@ trait IntrospectionResult extends js.Object {
 object IntrospectionResult {
   @scala.inline
   def apply(data: IntrospectionQuery, errors: js.Any = null, extensions: js.Object = null): IntrospectionResult = {
-    val __obj = js.Dynamic.literal(data = data)
-    if (errors != null) __obj.updateDynamic("errors")(errors)
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrospectionResult]
   }
 }

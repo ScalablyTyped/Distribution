@@ -23,9 +23,9 @@ object TabsGroupsContentGroupsCustomToolTip {
   @scala.inline
   def apply(content: String = null, prefixIcon: String = null, title: String = null): TabsGroupsContentGroupsCustomToolTip = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (prefixIcon != null) __obj.updateDynamic("prefixIcon")(prefixIcon)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (prefixIcon != null) __obj.updateDynamic("prefixIcon")(prefixIcon.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabsGroupsContentGroupsCustomToolTip]
   }
 }

@@ -15,7 +15,7 @@ class Keystone[ListNames /* <: String */] protected () extends js.Object {
   def createAuthStrategy(options: Anon_Config[ListNames]): js.Any = js.native
   // tslint:disable-next-line:no-unnecessary-generics
   def createItems[ItemType](
-    items: /* import warning: ImportType.apply c Unsupported type mapping: 
+    items: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in ListNames ]: std.Array<ItemType>}
     */ typings.atKeystonejsKeystone.atKeystonejsKeystoneStrings.Keystone with js.Any
   ): js.Promise[Unit] = js.native

@@ -23,7 +23,7 @@ object TaskOrchestrationQueuedPlanGroup {
     project: ProjectReference,
     queuePosition: Double
   ): TaskOrchestrationQueuedPlanGroup = {
-    val __obj = js.Dynamic.literal(definition = definition, owner = owner, planGroup = planGroup, plans = plans, project = project, queuePosition = queuePosition)
+    val __obj = js.Dynamic.literal(definition = definition.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], planGroup = planGroup.asInstanceOf[js.Any], plans = plans.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], queuePosition = queuePosition.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TaskOrchestrationQueuedPlanGroup]
   }

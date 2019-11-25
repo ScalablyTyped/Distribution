@@ -26,9 +26,9 @@ trait INewFolder extends js.Object {
 object INewFolder {
   @scala.inline
   def apply(name: String, description: String = null, sort_by: String = null): INewFolder = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (sort_by != null) __obj.updateDynamic("sort_by")(sort_by)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (sort_by != null) __obj.updateDynamic("sort_by")(sort_by.asInstanceOf[js.Any])
     __obj.asInstanceOf[INewFolder]
   }
 }

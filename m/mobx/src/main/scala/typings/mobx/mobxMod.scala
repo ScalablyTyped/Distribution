@@ -129,13 +129,13 @@ object mobxMod extends js.Object {
   ): IAtom = js.native
   def decorate[T](
     clazz: Instantiable1[/* args (repeated) */ js.Any, T],
-    decorators: /* import warning: ImportType.apply c Unsupported type mapping: 
+    decorators: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? std.MethodDecorator | std.PropertyDecorator | std.Array<std.MethodDecorator> | std.Array<std.PropertyDecorator>}
     */ typings.mobx.mobxStrings.decorate with js.Any
   ): Unit = js.native
   def decorate[T](
     `object`: T,
-    decorators: /* import warning: ImportType.apply c Unsupported type mapping: 
+    decorators: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? std.MethodDecorator | std.PropertyDecorator | std.Array<std.MethodDecorator> | std.Array<std.PropertyDecorator>}
     */ typings.mobx.mobxStrings.decorate with js.Any
   ): T = js.native
@@ -143,7 +143,7 @@ object mobxMod extends js.Object {
   def entries[T](obj: T): js.Array[
     js.Tuple2[
       String, 
-      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
     ]
   ] = js.native
   def entries[T](set: typings.mobx.libInternalMod.ObservableSet[T]): js.Array[js.Tuple2[T, T]] = js.native
@@ -153,14 +153,14 @@ object mobxMod extends js.Object {
   def extendObservable[A /* <: js.Object */, B /* <: js.Object */](
     target: A,
     properties: B,
-    decorators: /* import warning: ImportType.apply c Unsupported type mapping: 
+    decorators: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof B ]:? std.Function}
     */ typings.mobx.mobxStrings.extendObservable with js.Any
   ): A with B = js.native
   def extendObservable[A /* <: js.Object */, B /* <: js.Object */](
     target: A,
     properties: B,
-    decorators: /* import warning: ImportType.apply c Unsupported type mapping: 
+    decorators: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof B ]:? std.Function}
     */ typings.mobx.mobxStrings.extendObservable with js.Any,
     options: CreateObservableOptions
@@ -257,7 +257,9 @@ object mobxMod extends js.Object {
     `object`: T,
     property: K,
     listener: js.Function1[
-      /* change */ IValueDidChange[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any], 
+      /* change */ IValueDidChange[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+      ], 
       Unit
     ]
   ): Lambda = js.native
@@ -265,7 +267,9 @@ object mobxMod extends js.Object {
     `object`: T,
     property: K,
     listener: js.Function1[
-      /* change */ IValueDidChange[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any], 
+      /* change */ IValueDidChange[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+      ], 
       Unit
     ],
     fireImmediately: Boolean
@@ -340,7 +344,9 @@ object mobxMod extends js.Object {
   def transaction[T](action: js.Function0[T]): T = js.native
   def untracked[T](action: js.Function0[T]): T = js.native
   def values[T](ar: IObservableArray[T]): js.Array[T] = js.native
-  def values[T](obj: T): js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
+  def values[T](obj: T): js.Array[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+  ] = js.native
   def values[T](set: typings.mobx.libInternalMod.ObservableSet[T]): js.Array[T] = js.native
   def values[K, T](map: typings.mobx.libInternalMod.ObservableMap[K, T]): js.Array[T] = js.native
   def when(predicate: js.Function0[Boolean]): js.Promise[Unit] with Anon_Cancel = js.native

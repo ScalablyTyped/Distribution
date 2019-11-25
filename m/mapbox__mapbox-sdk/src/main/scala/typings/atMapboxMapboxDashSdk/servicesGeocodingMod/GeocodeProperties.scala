@@ -57,15 +57,15 @@ object GeocodeProperties {
     tel: String = null,
     wikidata: String = null
   ): GeocodeProperties = {
-    val __obj = js.Dynamic.literal(center = center, context = context, geometry = geometry, id = id, language = language, matching_place_name = matching_place_name, matching_text = matching_text, place_name = place_name, place_type = place_type, properties = properties, relevance = relevance, short_code = short_code, text = text)
-    __obj.updateDynamic("type")(`type`)
-    if (address != null) __obj.updateDynamic("address")(address)
-    if (bbox != null) __obj.updateDynamic("bbox")(bbox)
-    if (category != null) __obj.updateDynamic("category")(category)
-    if (!js.isUndefined(landmark)) __obj.updateDynamic("landmark")(landmark)
-    if (maki != null) __obj.updateDynamic("maki")(maki)
-    if (tel != null) __obj.updateDynamic("tel")(tel)
-    if (wikidata != null) __obj.updateDynamic("wikidata")(wikidata)
+    val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], geometry = geometry.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], matching_place_name = matching_place_name.asInstanceOf[js.Any], matching_text = matching_text.asInstanceOf[js.Any], place_name = place_name.asInstanceOf[js.Any], place_type = place_type.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], relevance = relevance.asInstanceOf[js.Any], short_code = short_code.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    if (bbox != null) __obj.updateDynamic("bbox")(bbox.asInstanceOf[js.Any])
+    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
+    if (!js.isUndefined(landmark)) __obj.updateDynamic("landmark")(landmark.asInstanceOf[js.Any])
+    if (maki != null) __obj.updateDynamic("maki")(maki.asInstanceOf[js.Any])
+    if (tel != null) __obj.updateDynamic("tel")(tel.asInstanceOf[js.Any])
+    if (wikidata != null) __obj.updateDynamic("wikidata")(wikidata.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeocodeProperties]
   }
 }

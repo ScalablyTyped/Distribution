@@ -22,8 +22,8 @@ object Node {
     y: Double,
     StringDictionary: /* key */ StringDictionary[js.Any] = null
   ): Node = {
-    val __obj = js.Dynamic.literal(height = height, width = width, x = x, y = y)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Node]
   }
 }

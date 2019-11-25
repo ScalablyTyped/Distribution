@@ -26,13 +26,13 @@ object URIOptions {
     unicodeSupport: js.UndefOr[Boolean] = js.undefined
   ): URIOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(absolutePath)) __obj.updateDynamic("absolutePath")(absolutePath)
-    if (!js.isUndefined(domainHost)) __obj.updateDynamic("domainHost")(domainHost)
-    if (!js.isUndefined(iri)) __obj.updateDynamic("iri")(iri)
-    if (reference != null) __obj.updateDynamic("reference")(reference)
-    if (scheme != null) __obj.updateDynamic("scheme")(scheme)
-    if (!js.isUndefined(tolerant)) __obj.updateDynamic("tolerant")(tolerant)
-    if (!js.isUndefined(unicodeSupport)) __obj.updateDynamic("unicodeSupport")(unicodeSupport)
+    if (!js.isUndefined(absolutePath)) __obj.updateDynamic("absolutePath")(absolutePath.asInstanceOf[js.Any])
+    if (!js.isUndefined(domainHost)) __obj.updateDynamic("domainHost")(domainHost.asInstanceOf[js.Any])
+    if (!js.isUndefined(iri)) __obj.updateDynamic("iri")(iri.asInstanceOf[js.Any])
+    if (reference != null) __obj.updateDynamic("reference")(reference.asInstanceOf[js.Any])
+    if (scheme != null) __obj.updateDynamic("scheme")(scheme.asInstanceOf[js.Any])
+    if (!js.isUndefined(tolerant)) __obj.updateDynamic("tolerant")(tolerant.asInstanceOf[js.Any])
+    if (!js.isUndefined(unicodeSupport)) __obj.updateDynamic("unicodeSupport")(unicodeSupport.asInstanceOf[js.Any])
     __obj.asInstanceOf[URIOptions]
   }
 }

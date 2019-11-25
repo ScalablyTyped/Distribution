@@ -75,7 +75,7 @@ object GaugeBand {
     startValue: Double,
     url: String
   ): GaugeBand = {
-    val __obj = js.Dynamic.literal(alpha = alpha, balloonText = balloonText, color = color, endValue = endValue, gradientRatio = gradientRatio, id = id, innerRadius = innerRadius, radius = radius, setEndValue = js.Any.fromFunction1(setEndValue), setStartValue = js.Any.fromFunction1(setStartValue), startValue = startValue, url = url)
+    val __obj = js.Dynamic.literal(alpha = alpha.asInstanceOf[js.Any], balloonText = balloonText.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], endValue = endValue.asInstanceOf[js.Any], gradientRatio = gradientRatio.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], innerRadius = innerRadius.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], setEndValue = js.Any.fromFunction1(setEndValue), setStartValue = js.Any.fromFunction1(setStartValue), startValue = startValue.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GaugeBand]
   }

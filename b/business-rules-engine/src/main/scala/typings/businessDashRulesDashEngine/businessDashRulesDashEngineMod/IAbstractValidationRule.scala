@@ -29,7 +29,7 @@ object IAbstractValidationRule {
     ValidationResult: IValidationResult,
     Validators: StringDictionary[IValidator]
   ): IAbstractValidationRule[T] = {
-    val __obj = js.Dynamic.literal(Children = Children, Rules = Rules, Validate = js.Any.fromFunction1(Validate), ValidateAll = js.Any.fromFunction1(ValidateAll), ValidateAsync = js.Any.fromFunction1(ValidateAsync), ValidateProperty = js.Any.fromFunction2(ValidateProperty), ValidationResult = ValidationResult, Validators = Validators)
+    val __obj = js.Dynamic.literal(Children = Children.asInstanceOf[js.Any], Rules = Rules.asInstanceOf[js.Any], Validate = js.Any.fromFunction1(Validate), ValidateAll = js.Any.fromFunction1(ValidateAll), ValidateAsync = js.Any.fromFunction1(ValidateAsync), ValidateProperty = js.Any.fromFunction2(ValidateProperty), ValidationResult = ValidationResult.asInstanceOf[js.Any], Validators = Validators.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IAbstractValidationRule[T]]
   }

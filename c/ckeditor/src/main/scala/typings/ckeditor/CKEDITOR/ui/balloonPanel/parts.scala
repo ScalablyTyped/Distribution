@@ -27,13 +27,13 @@ object parts {
     triangleOuter: element = null
   ): parts = {
     val __obj = js.Dynamic.literal()
-    if (close != null) __obj.updateDynamic("close")(close)
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (panel != null) __obj.updateDynamic("panel")(panel)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (triangle != null) __obj.updateDynamic("triangle")(triangle)
-    if (triangleInner != null) __obj.updateDynamic("triangleInner")(triangleInner)
-    if (triangleOuter != null) __obj.updateDynamic("triangleOuter")(triangleOuter)
+    if (close != null) __obj.updateDynamic("close")(close.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (panel != null) __obj.updateDynamic("panel")(panel.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (triangle != null) __obj.updateDynamic("triangle")(triangle.asInstanceOf[js.Any])
+    if (triangleInner != null) __obj.updateDynamic("triangleInner")(triangleInner.asInstanceOf[js.Any])
+    if (triangleOuter != null) __obj.updateDynamic("triangleOuter")(triangleOuter.asInstanceOf[js.Any])
     __obj.asInstanceOf[parts]
   }
 }

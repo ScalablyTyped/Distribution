@@ -32,10 +32,10 @@ object Token {
     signature: Buffer = null,
     signed: String = null
   ): Token = {
-    val __obj = js.Dynamic.literal(clientId = clientId, content = content, hasApplicationRole = js.Any.fromFunction2(hasApplicationRole), hasRealmRole = js.Any.fromFunction1(hasRealmRole), hasRole = js.Any.fromFunction1(hasRole), isExpired = js.Any.fromFunction0(isExpired), token = token)
-    if (header != null) __obj.updateDynamic("header")(header)
-    if (signature != null) __obj.updateDynamic("signature")(signature)
-    if (signed != null) __obj.updateDynamic("signed")(signed)
+    val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], hasApplicationRole = js.Any.fromFunction2(hasApplicationRole), hasRealmRole = js.Any.fromFunction1(hasRealmRole), hasRole = js.Any.fromFunction1(hasRole), isExpired = js.Any.fromFunction0(isExpired), token = token.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (signature != null) __obj.updateDynamic("signature")(signature.asInstanceOf[js.Any])
+    if (signed != null) __obj.updateDynamic("signed")(signed.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
 }

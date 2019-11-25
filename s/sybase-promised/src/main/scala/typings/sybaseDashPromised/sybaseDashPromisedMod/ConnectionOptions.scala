@@ -25,9 +25,9 @@ object ConnectionOptions {
     logTiming: js.UndefOr[Boolean] = js.undefined,
     pathToJavaBtidge: String = null
   ): ConnectionOptions = {
-    val __obj = js.Dynamic.literal(dbname = dbname, host = host, password = password, port = port, username = username)
-    if (!js.isUndefined(logTiming)) __obj.updateDynamic("logTiming")(logTiming)
-    if (pathToJavaBtidge != null) __obj.updateDynamic("pathToJavaBtidge")(pathToJavaBtidge)
+    val __obj = js.Dynamic.literal(dbname = dbname.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
+    if (!js.isUndefined(logTiming)) __obj.updateDynamic("logTiming")(logTiming.asInstanceOf[js.Any])
+    if (pathToJavaBtidge != null) __obj.updateDynamic("pathToJavaBtidge")(pathToJavaBtidge.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionOptions]
   }
 }

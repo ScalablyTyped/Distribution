@@ -15,8 +15,8 @@ object MetricDescriptorLabelDescriptor {
   @scala.inline
   def apply(description: String = null, key: String = null): MetricDescriptorLabelDescriptor = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (key != null) __obj.updateDynamic("key")(key)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricDescriptorLabelDescriptor]
   }
 }

@@ -21,8 +21,8 @@ object AsObject {
     startEventSeqNum: String,
     accessPath: typings.libraDashCore.libAtGeneratedAccessUnderscorePathUnderscorePbMod.AccessPath.AsObject = null
   ): AsObject = {
-    val __obj = js.Dynamic.literal(ascending = ascending, limit = limit, startEventSeqNum = startEventSeqNum)
-    if (accessPath != null) __obj.updateDynamic("accessPath")(accessPath)
+    val __obj = js.Dynamic.literal(ascending = ascending.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], startEventSeqNum = startEventSeqNum.asInstanceOf[js.Any])
+    if (accessPath != null) __obj.updateDynamic("accessPath")(accessPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsObject]
   }
 }

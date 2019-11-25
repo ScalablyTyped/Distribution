@@ -31,15 +31,15 @@ object GraticuleProps {
     style: CSSProperties = null
   ): GraticuleProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Globe)) __obj.updateDynamic("Globe")(Globe)
-    if (!js.isUndefined(disableOptimization)) __obj.updateDynamic("disableOptimization")(disableOptimization)
-    if (fill != null) __obj.updateDynamic("fill")(fill)
-    if (!js.isUndefined(outline)) __obj.updateDynamic("outline")(outline)
+    if (!js.isUndefined(Globe)) __obj.updateDynamic("Globe")(Globe.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableOptimization)) __obj.updateDynamic("disableOptimization")(disableOptimization.asInstanceOf[js.Any])
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    if (!js.isUndefined(outline)) __obj.updateDynamic("outline")(outline.asInstanceOf[js.Any])
     if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
-    if (!js.isUndefined(round)) __obj.updateDynamic("round")(round)
-    if (step != null) __obj.updateDynamic("step")(step)
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (!js.isUndefined(round)) __obj.updateDynamic("round")(round.asInstanceOf[js.Any])
+    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraticuleProps]
   }
 }

@@ -16,26 +16,26 @@ import typings.svgDashPathDashParser.svgDashPathDashParserStrings.`quadratic cur
 import typings.svgDashPathDashParser.svgDashPathDashParserStrings.`smooth curveto`
 import typings.svgDashPathDashParser.svgDashPathDashParserStrings.`smooth quadratic curveto`
 import typings.svgDashPathDashParser.svgDashPathDashParserStrings.`vertical lineto`
-import typings.svgDashPathDashParser.svgDashPathDashParserStrings.a
-import typings.svgDashPathDashParser.svgDashPathDashParserStrings.c
+import typings.svgDashPathDashParser.svgDashPathDashParserStrings.a_
+import typings.svgDashPathDashParser.svgDashPathDashParserStrings.c_
 import typings.svgDashPathDashParser.svgDashPathDashParserStrings.closepath
 import typings.svgDashPathDashParser.svgDashPathDashParserStrings.curveto
-import typings.svgDashPathDashParser.svgDashPathDashParserStrings.h
-import typings.svgDashPathDashParser.svgDashPathDashParserStrings.l
+import typings.svgDashPathDashParser.svgDashPathDashParserStrings.h_
+import typings.svgDashPathDashParser.svgDashPathDashParserStrings.l_
 import typings.svgDashPathDashParser.svgDashPathDashParserStrings.lineto
-import typings.svgDashPathDashParser.svgDashPathDashParserStrings.m
+import typings.svgDashPathDashParser.svgDashPathDashParserStrings.m_
 import typings.svgDashPathDashParser.svgDashPathDashParserStrings.moveto
-import typings.svgDashPathDashParser.svgDashPathDashParserStrings.q
-import typings.svgDashPathDashParser.svgDashPathDashParserStrings.s
-import typings.svgDashPathDashParser.svgDashPathDashParserStrings.t
-import typings.svgDashPathDashParser.svgDashPathDashParserStrings.v
-import typings.svgDashPathDashParser.svgDashPathDashParserStrings.z
+import typings.svgDashPathDashParser.svgDashPathDashParserStrings.q_
+import typings.svgDashPathDashParser.svgDashPathDashParserStrings.s_
+import typings.svgDashPathDashParser.svgDashPathDashParserStrings.t_
+import typings.svgDashPathDashParser.svgDashPathDashParserStrings.v_
+import typings.svgDashPathDashParser.svgDashPathDashParserStrings.z_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Command extends js.Object {
-  var code: m | M | l | L | h | H | v | V | c | C | s | S | q | Q | t | T | a | A | z | Z
+  var code: m_ | M | l_ | L | h_ | H | v_ | V | c_ | C | s_ | S | q_ | Q | t_ | T | a_ | A | z_ | Z
   var command: moveto | lineto | (`horizontal lineto`) | (`vertical lineto`) | curveto | (`smooth curveto`) | (`quadratic curveto`) | (`smooth quadratic curveto`) | (`elliptical arc`) | closepath
   var relative: js.UndefOr[Boolean] = js.undefined
 }
@@ -43,12 +43,12 @@ trait Command extends js.Object {
 object Command {
   @scala.inline
   def apply(
-    code: m | M | l | L | h | H | v | V | c | C | s | S | q | Q | t | T | a | A | z | Z,
+    code: m_ | M | l_ | L | h_ | H | v_ | V | c_ | C | s_ | S | q_ | Q | t_ | T | a_ | A | z_ | Z,
     command: moveto | lineto | (`horizontal lineto`) | (`vertical lineto`) | curveto | (`smooth curveto`) | (`quadratic curveto`) | (`smooth quadratic curveto`) | (`elliptical arc`) | closepath,
     relative: js.UndefOr[Boolean] = js.undefined
   ): Command = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any])
-    if (!js.isUndefined(relative)) __obj.updateDynamic("relative")(relative)
+    if (!js.isUndefined(relative)) __obj.updateDynamic("relative")(relative.asInstanceOf[js.Any])
     __obj.asInstanceOf[Command]
   }
 }

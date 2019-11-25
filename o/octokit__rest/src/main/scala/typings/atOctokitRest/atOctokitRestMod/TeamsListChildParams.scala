@@ -19,7 +19,7 @@ trait TeamsListChildParams extends js.Object {
 object TeamsListChildParams {
   @scala.inline
   def apply(team_id: Double, page: Int | Double = null, per_page: Int | Double = null): TeamsListChildParams = {
-    val __obj = js.Dynamic.literal(team_id = team_id)
+    val __obj = js.Dynamic.literal(team_id = team_id.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (per_page != null) __obj.updateDynamic("per_page")(per_page.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamsListChildParams]

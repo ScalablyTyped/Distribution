@@ -105,23 +105,23 @@ object KiiThingFields {
     _thingType: String = null,
     _vendor: String = null
   ): KiiThingFields = {
-    val __obj = js.Dynamic.literal(_password = _password, _vendorThingID = _vendorThingID)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (_firmwareVersion != null) __obj.updateDynamic("_firmwareVersion")(_firmwareVersion)
-    if (_lot != null) __obj.updateDynamic("_lot")(_lot)
+    val __obj = js.Dynamic.literal(_password = _password.asInstanceOf[js.Any], _vendorThingID = _vendorThingID.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (_firmwareVersion != null) __obj.updateDynamic("_firmwareVersion")(_firmwareVersion.asInstanceOf[js.Any])
+    if (_lot != null) __obj.updateDynamic("_lot")(_lot.asInstanceOf[js.Any])
     if (_numberField1 != null) __obj.updateDynamic("_numberField1")(_numberField1.asInstanceOf[js.Any])
     if (_numberField2 != null) __obj.updateDynamic("_numberField2")(_numberField2.asInstanceOf[js.Any])
     if (_numberField3 != null) __obj.updateDynamic("_numberField3")(_numberField3.asInstanceOf[js.Any])
     if (_numberField4 != null) __obj.updateDynamic("_numberField4")(_numberField4.asInstanceOf[js.Any])
     if (_numberField5 != null) __obj.updateDynamic("_numberField5")(_numberField5.asInstanceOf[js.Any])
-    if (_productName != null) __obj.updateDynamic("_productName")(_productName)
-    if (_stringField1 != null) __obj.updateDynamic("_stringField1")(_stringField1)
-    if (_stringField2 != null) __obj.updateDynamic("_stringField2")(_stringField2)
-    if (_stringField3 != null) __obj.updateDynamic("_stringField3")(_stringField3)
-    if (_stringField4 != null) __obj.updateDynamic("_stringField4")(_stringField4)
-    if (_stringField5 != null) __obj.updateDynamic("_stringField5")(_stringField5)
-    if (_thingType != null) __obj.updateDynamic("_thingType")(_thingType)
-    if (_vendor != null) __obj.updateDynamic("_vendor")(_vendor)
+    if (_productName != null) __obj.updateDynamic("_productName")(_productName.asInstanceOf[js.Any])
+    if (_stringField1 != null) __obj.updateDynamic("_stringField1")(_stringField1.asInstanceOf[js.Any])
+    if (_stringField2 != null) __obj.updateDynamic("_stringField2")(_stringField2.asInstanceOf[js.Any])
+    if (_stringField3 != null) __obj.updateDynamic("_stringField3")(_stringField3.asInstanceOf[js.Any])
+    if (_stringField4 != null) __obj.updateDynamic("_stringField4")(_stringField4.asInstanceOf[js.Any])
+    if (_stringField5 != null) __obj.updateDynamic("_stringField5")(_stringField5.asInstanceOf[js.Any])
+    if (_thingType != null) __obj.updateDynamic("_thingType")(_thingType.asInstanceOf[js.Any])
+    if (_vendor != null) __obj.updateDynamic("_vendor")(_vendor.asInstanceOf[js.Any])
     __obj.asInstanceOf[KiiThingFields]
   }
 }

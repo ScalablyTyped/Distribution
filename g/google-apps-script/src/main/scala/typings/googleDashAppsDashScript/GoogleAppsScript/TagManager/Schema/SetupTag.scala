@@ -13,8 +13,8 @@ object SetupTag {
   @scala.inline
   def apply(stopOnSetupFailure: js.UndefOr[Boolean] = js.undefined, tagName: String = null): SetupTag = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(stopOnSetupFailure)) __obj.updateDynamic("stopOnSetupFailure")(stopOnSetupFailure)
-    if (tagName != null) __obj.updateDynamic("tagName")(tagName)
+    if (!js.isUndefined(stopOnSetupFailure)) __obj.updateDynamic("stopOnSetupFailure")(stopOnSetupFailure.asInstanceOf[js.Any])
+    if (tagName != null) __obj.updateDynamic("tagName")(tagName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetupTag]
   }
 }

@@ -27,9 +27,9 @@ object ImapMessageAttributes {
     size: Int | Double = null,
     struct: js.Array[_] = null
   ): ImapMessageAttributes = {
-    val __obj = js.Dynamic.literal(date = date, flags = flags, uid = uid)
+    val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (struct != null) __obj.updateDynamic("struct")(struct)
+    if (struct != null) __obj.updateDynamic("struct")(struct.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImapMessageAttributes]
   }
 }

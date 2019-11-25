@@ -41,22 +41,22 @@ object AutocompleteOptions {
     source: js.Any = null
   ): AutocompleteOptions = {
     val __obj = js.Dynamic.literal()
-    if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo)
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
+    if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction2(change))
-    if (classes != null) __obj.updateDynamic("classes")(classes)
+    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
     if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction2(close))
     if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2(create))
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (focus != null) __obj.updateDynamic("focus")(js.Any.fromFunction2(focus))
     if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
     if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction2(open))
-    if (position != null) __obj.updateDynamic("position")(position)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (response != null) __obj.updateDynamic("response")(js.Any.fromFunction2(response))
     if (search != null) __obj.updateDynamic("search")(js.Any.fromFunction2(search))
     if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction2(select))
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutocompleteOptions]
   }
 }

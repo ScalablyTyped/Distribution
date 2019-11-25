@@ -14,7 +14,7 @@ trait Anon_SelfCertification extends js.Object {
 object Anon_SelfCertification {
   @scala.inline
   def apply(selfCertification: Signature, user: User): Anon_SelfCertification = {
-    val __obj = js.Dynamic.literal(selfCertification = selfCertification, user = user)
+    val __obj = js.Dynamic.literal(selfCertification = selfCertification.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_SelfCertification]
   }

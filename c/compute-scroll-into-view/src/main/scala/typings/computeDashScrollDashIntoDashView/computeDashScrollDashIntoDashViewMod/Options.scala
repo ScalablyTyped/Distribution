@@ -23,11 +23,11 @@ object Options {
     skipOverflowHiddenElements: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (block != null) __obj.updateDynamic("block")(block)
+    if (block != null) __obj.updateDynamic("block")(block.asInstanceOf[js.Any])
     if (boundary != null) __obj.updateDynamic("boundary")(boundary.asInstanceOf[js.Any])
-    if (`inline` != null) __obj.updateDynamic("inline")(`inline`)
-    if (scrollMode != null) __obj.updateDynamic("scrollMode")(scrollMode)
-    if (!js.isUndefined(skipOverflowHiddenElements)) __obj.updateDynamic("skipOverflowHiddenElements")(skipOverflowHiddenElements)
+    if (`inline` != null) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
+    if (scrollMode != null) __obj.updateDynamic("scrollMode")(scrollMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipOverflowHiddenElements)) __obj.updateDynamic("skipOverflowHiddenElements")(skipOverflowHiddenElements.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

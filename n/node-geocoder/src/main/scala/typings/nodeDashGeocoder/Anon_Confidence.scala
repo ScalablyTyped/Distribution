@@ -14,7 +14,7 @@ object Anon_Confidence {
   def apply(confidence: Int | Double = null, googlePlaceId: String = null): Anon_Confidence = {
     val __obj = js.Dynamic.literal()
     if (confidence != null) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
-    if (googlePlaceId != null) __obj.updateDynamic("googlePlaceId")(googlePlaceId)
+    if (googlePlaceId != null) __obj.updateDynamic("googlePlaceId")(googlePlaceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Confidence]
   }
 }

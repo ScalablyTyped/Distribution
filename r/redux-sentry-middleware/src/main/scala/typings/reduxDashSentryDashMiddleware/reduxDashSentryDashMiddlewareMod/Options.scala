@@ -13,7 +13,7 @@ trait Options[T] extends js.Object {
   var getTags: js.UndefOr[
     js.Function1[
       /* state */ T, 
-      /* import warning: ImportType.apply Failed type conversion: / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Sentry.Event * / any['tags'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Sentry.Event * / any['tags'] */ js.Any
     ]
   ] = js.undefined
   var getUserContext: js.UndefOr[
@@ -32,13 +32,13 @@ object Options {
     breadcrumbCategory: String = null,
     breadcrumbDataFromAction: /* action */ Action[_] => _ = null,
     filterBreadcrumbActions: /* action */ Action[_] => Boolean = null,
-    getTags: /* state */ T => /* import warning: ImportType.apply Failed type conversion: / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Sentry.Event * / any['tags'] */ js.Any = null,
+    getTags: /* state */ T => /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Sentry.Event * / any['tags'] */ js.Any = null,
     getUserContext: /* state */ T => /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Sentry.User */ _ = null,
     stateTransformer: /* state */ T => _ = null
   ): Options[T] = {
     val __obj = js.Dynamic.literal()
     if (actionTransformer != null) __obj.updateDynamic("actionTransformer")(js.Any.fromFunction1(actionTransformer))
-    if (breadcrumbCategory != null) __obj.updateDynamic("breadcrumbCategory")(breadcrumbCategory)
+    if (breadcrumbCategory != null) __obj.updateDynamic("breadcrumbCategory")(breadcrumbCategory.asInstanceOf[js.Any])
     if (breadcrumbDataFromAction != null) __obj.updateDynamic("breadcrumbDataFromAction")(js.Any.fromFunction1(breadcrumbDataFromAction))
     if (filterBreadcrumbActions != null) __obj.updateDynamic("filterBreadcrumbActions")(js.Any.fromFunction1(filterBreadcrumbActions))
     if (getTags != null) __obj.updateDynamic("getTags")(js.Any.fromFunction1(getTags))

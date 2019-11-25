@@ -17,7 +17,7 @@ object GooglePrivacyDlpV2beta1InspectOperationResult {
   @scala.inline
   def apply(name: String = null): GooglePrivacyDlpV2beta1InspectOperationResult = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1InspectOperationResult]
   }
 }

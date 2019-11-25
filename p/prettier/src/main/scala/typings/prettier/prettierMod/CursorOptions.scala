@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 object CursorOptions {
   @scala.inline
   def apply(cursorOffset: Double): CursorOptions = {
-    val __obj = js.Dynamic.literal(cursorOffset = cursorOffset)
+    val __obj = js.Dynamic.literal(cursorOffset = cursorOffset.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CursorOptions]
   }

@@ -15,8 +15,8 @@ object ListItemCenterElement {
   @scala.inline
   def apply(primaryText: String | Element, secondaryText: String = null, tertiaryText: String = null): ListItemCenterElement = {
     val __obj = js.Dynamic.literal(primaryText = primaryText.asInstanceOf[js.Any])
-    if (secondaryText != null) __obj.updateDynamic("secondaryText")(secondaryText)
-    if (tertiaryText != null) __obj.updateDynamic("tertiaryText")(tertiaryText)
+    if (secondaryText != null) __obj.updateDynamic("secondaryText")(secondaryText.asInstanceOf[js.Any])
+    if (tertiaryText != null) __obj.updateDynamic("tertiaryText")(tertiaryText.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListItemCenterElement]
   }
 }

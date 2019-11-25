@@ -88,13 +88,13 @@ object Project {
     projectNumber: String = null
   ): Project = {
     val __obj = js.Dynamic.literal()
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
-    if (labels != null) __obj.updateDynamic("labels")(labels)
-    if (lifecycleState != null) __obj.updateDynamic("lifecycleState")(lifecycleState)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
-    if (projectNumber != null) __obj.updateDynamic("projectNumber")(projectNumber)
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (lifecycleState != null) __obj.updateDynamic("lifecycleState")(lifecycleState.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
+    if (projectNumber != null) __obj.updateDynamic("projectNumber")(projectNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[Project]
   }
 }

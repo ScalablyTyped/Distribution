@@ -27,8 +27,8 @@ object HighlightsRepositoryHighlightsTrayResponseTv_channel {
     `type`: String,
     user_dict: HighlightsRepositoryHighlightsTrayResponseUser_dict
   ): HighlightsRepositoryHighlightsTrayResponseTv_channel = {
-    val __obj = js.Dynamic.literal(id = id, items = items, max_id = max_id, more_available = more_available, seen_state = seen_state, title = title, user_dict = user_dict)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], max_id = max_id.asInstanceOf[js.Any], more_available = more_available.asInstanceOf[js.Any], seen_state = seen_state.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], user_dict = user_dict.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HighlightsRepositoryHighlightsTrayResponseTv_channel]
   }
 }

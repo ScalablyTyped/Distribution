@@ -27,7 +27,7 @@ object Anon_Bad {
     tag: Double,
     tree: Double
   ): Anon_Bad = {
-    val __obj = js.Dynamic.literal(bad = bad, blob = blob, commit = commit, ext2 = ext2, ofsDelta = ofsDelta, refDelta = refDelta, tag = tag, tree = tree)
+    val __obj = js.Dynamic.literal(bad = bad.asInstanceOf[js.Any], blob = blob.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], ext2 = ext2.asInstanceOf[js.Any], ofsDelta = ofsDelta.asInstanceOf[js.Any], refDelta = refDelta.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], tree = tree.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Bad]
   }

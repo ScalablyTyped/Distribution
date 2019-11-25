@@ -11,7 +11,7 @@ trait Anon_EnumValuesAnonDelayRangeStart extends js.Object {
 object Anon_EnumValuesAnonDelayRangeStart {
   @scala.inline
   def apply(enumValues: Anon_DelayRangeStart): Anon_EnumValuesAnonDelayRangeStart = {
-    val __obj = js.Dynamic.literal(enumValues = enumValues)
+    val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EnumValuesAnonDelayRangeStart]
   }

@@ -21,10 +21,10 @@ object PopoverAnimationVerticalProps {
     targetOrigin: origin = null,
     zDepth: Int | Double = null
   ): PopoverAnimationVerticalProps = {
-    val __obj = js.Dynamic.literal(open = open)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (targetOrigin != null) __obj.updateDynamic("targetOrigin")(targetOrigin)
+    val __obj = js.Dynamic.literal(open = open.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (targetOrigin != null) __obj.updateDynamic("targetOrigin")(targetOrigin.asInstanceOf[js.Any])
     if (zDepth != null) __obj.updateDynamic("zDepth")(zDepth.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopoverAnimationVerticalProps]
   }

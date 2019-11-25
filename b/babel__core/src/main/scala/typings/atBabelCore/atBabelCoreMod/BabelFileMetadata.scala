@@ -14,7 +14,7 @@ trait BabelFileMetadata extends js.Object {
 object BabelFileMetadata {
   @scala.inline
   def apply(marked: js.Array[Anon_Loc], modules: BabelFileModulesMetadata, usedHelpers: js.Array[String]): BabelFileMetadata = {
-    val __obj = js.Dynamic.literal(marked = marked, modules = modules, usedHelpers = usedHelpers)
+    val __obj = js.Dynamic.literal(marked = marked.asInstanceOf[js.Any], modules = modules.asInstanceOf[js.Any], usedHelpers = usedHelpers.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BabelFileMetadata]
   }

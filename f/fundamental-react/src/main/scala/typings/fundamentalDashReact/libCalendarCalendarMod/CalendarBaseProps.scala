@@ -37,14 +37,14 @@ object CalendarBaseProps {
     disabledDates: js.Array[Date] = null
   ): CalendarBaseProps = {
     val __obj = js.Dynamic.literal()
-    if (blockedDates != null) __obj.updateDynamic("blockedDates")(blockedDates)
-    if (disableAfterDate != null) __obj.updateDynamic("disableAfterDate")(disableAfterDate)
-    if (disableBeforeDate != null) __obj.updateDynamic("disableBeforeDate")(disableBeforeDate)
-    if (!js.isUndefined(disableFutureDates)) __obj.updateDynamic("disableFutureDates")(disableFutureDates)
-    if (!js.isUndefined(disablePastDates)) __obj.updateDynamic("disablePastDates")(disablePastDates)
-    if (disableWeekday != null) __obj.updateDynamic("disableWeekday")(disableWeekday)
-    if (!js.isUndefined(disableWeekends)) __obj.updateDynamic("disableWeekends")(disableWeekends)
-    if (disabledDates != null) __obj.updateDynamic("disabledDates")(disabledDates)
+    if (blockedDates != null) __obj.updateDynamic("blockedDates")(blockedDates.asInstanceOf[js.Any])
+    if (disableAfterDate != null) __obj.updateDynamic("disableAfterDate")(disableAfterDate.asInstanceOf[js.Any])
+    if (disableBeforeDate != null) __obj.updateDynamic("disableBeforeDate")(disableBeforeDate.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableFutureDates)) __obj.updateDynamic("disableFutureDates")(disableFutureDates.asInstanceOf[js.Any])
+    if (!js.isUndefined(disablePastDates)) __obj.updateDynamic("disablePastDates")(disablePastDates.asInstanceOf[js.Any])
+    if (disableWeekday != null) __obj.updateDynamic("disableWeekday")(disableWeekday.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableWeekends)) __obj.updateDynamic("disableWeekends")(disableWeekends.asInstanceOf[js.Any])
+    if (disabledDates != null) __obj.updateDynamic("disabledDates")(disabledDates.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalendarBaseProps]
   }
 }

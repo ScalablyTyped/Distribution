@@ -13,7 +13,7 @@ trait BlankOutput extends OpenOutput {
 object BlankOutput {
   @scala.inline
   def apply(script: Buffer, valueBuffer: Buffer): BlankOutput = {
-    val __obj = js.Dynamic.literal(script = script, valueBuffer = valueBuffer)
+    val __obj = js.Dynamic.literal(script = script.asInstanceOf[js.Any], valueBuffer = valueBuffer.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BlankOutput]
   }

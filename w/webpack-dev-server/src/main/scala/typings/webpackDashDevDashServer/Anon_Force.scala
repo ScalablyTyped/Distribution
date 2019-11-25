@@ -13,8 +13,8 @@ trait Anon_Force
 object Anon_Force {
   @scala.inline
   def apply(force: Boolean, StringDictionary: /* key */ StringDictionary[js.Array[String]] = null): Anon_Force = {
-    val __obj = js.Dynamic.literal(force = force)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(force = force.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_Force]
   }
 }

@@ -13,7 +13,7 @@ object Anon_Id {
   @scala.inline
   def apply(Id: SalesforceId = null): Anon_Id = {
     val __obj = js.Dynamic.literal()
-    if (Id != null) __obj.updateDynamic("Id")(Id)
+    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Id]
   }
 }

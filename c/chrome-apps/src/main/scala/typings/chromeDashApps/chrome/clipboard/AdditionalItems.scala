@@ -30,7 +30,7 @@ object AdditionalItems {
     data: String,
     `type`: ToStringLiteral[Anon_TEXTHTML, String, Exclude[String, textPlain | textHtml]]
   ): AdditionalItems = {
-    val __obj = js.Dynamic.literal(data = data)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdditionalItems]
   }

@@ -13,8 +13,8 @@ object AboutAdditionalRoleInfo {
   @scala.inline
   def apply(roleSets: js.Array[AboutAdditionalRoleInfoRoleSets] = null, `type`: String = null): AboutAdditionalRoleInfo = {
     val __obj = js.Dynamic.literal()
-    if (roleSets != null) __obj.updateDynamic("roleSets")(roleSets)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (roleSets != null) __obj.updateDynamic("roleSets")(roleSets.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AboutAdditionalRoleInfo]
   }
 }

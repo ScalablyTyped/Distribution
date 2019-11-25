@@ -20,9 +20,9 @@ object PlannerAssignment {
   @scala.inline
   def apply(assignedBy: IdentitySet = null, assignedDateTime: String = null, orderHint: String = null): PlannerAssignment = {
     val __obj = js.Dynamic.literal()
-    if (assignedBy != null) __obj.updateDynamic("assignedBy")(assignedBy)
-    if (assignedDateTime != null) __obj.updateDynamic("assignedDateTime")(assignedDateTime)
-    if (orderHint != null) __obj.updateDynamic("orderHint")(orderHint)
+    if (assignedBy != null) __obj.updateDynamic("assignedBy")(assignedBy.asInstanceOf[js.Any])
+    if (assignedDateTime != null) __obj.updateDynamic("assignedDateTime")(assignedDateTime.asInstanceOf[js.Any])
+    if (orderHint != null) __obj.updateDynamic("orderHint")(orderHint.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlannerAssignment]
   }
 }

@@ -25,10 +25,10 @@ object Options {
     transformPath: /* filePath */ String => Unit = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (additionalStreams != null) __obj.updateDynamic("additionalStreams")(additionalStreams)
-    if (base != null) __obj.updateDynamic("base")(base)
-    if (!js.isUndefined(noAssets)) __obj.updateDynamic("noAssets")(noAssets)
-    if (!js.isUndefined(noconcat)) __obj.updateDynamic("noconcat")(noconcat)
+    if (additionalStreams != null) __obj.updateDynamic("additionalStreams")(additionalStreams.asInstanceOf[js.Any])
+    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
+    if (!js.isUndefined(noAssets)) __obj.updateDynamic("noAssets")(noAssets.asInstanceOf[js.Any])
+    if (!js.isUndefined(noconcat)) __obj.updateDynamic("noconcat")(noconcat.asInstanceOf[js.Any])
     if (searchPath != null) __obj.updateDynamic("searchPath")(searchPath.asInstanceOf[js.Any])
     if (transformPath != null) __obj.updateDynamic("transformPath")(js.Any.fromFunction1(transformPath))
     __obj.asInstanceOf[Options]

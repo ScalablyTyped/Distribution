@@ -24,8 +24,8 @@ trait _AnalyticsConfiguration extends js.Object {
 object _AnalyticsConfiguration {
   @scala.inline
   def apply(Id: String, StorageClassAnalysis: _StorageClassAnalysis, Filter: _AnalyticsFilter = null): _AnalyticsConfiguration = {
-    val __obj = js.Dynamic.literal(Id = Id, StorageClassAnalysis = StorageClassAnalysis)
-    if (Filter != null) __obj.updateDynamic("Filter")(Filter)
+    val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], StorageClassAnalysis = StorageClassAnalysis.asInstanceOf[js.Any])
+    if (Filter != null) __obj.updateDynamic("Filter")(Filter.asInstanceOf[js.Any])
     __obj.asInstanceOf[_AnalyticsConfiguration]
   }
 }

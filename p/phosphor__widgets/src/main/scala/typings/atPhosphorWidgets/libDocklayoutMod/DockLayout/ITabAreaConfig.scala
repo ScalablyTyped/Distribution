@@ -27,8 +27,8 @@ trait ITabAreaConfig extends AreaConfig {
 object ITabAreaConfig {
   @scala.inline
   def apply(currentIndex: Double, `type`: `tab-area`, widgets: js.Array[Widget]): ITabAreaConfig = {
-    val __obj = js.Dynamic.literal(currentIndex = currentIndex, widgets = widgets)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(currentIndex = currentIndex.asInstanceOf[js.Any], widgets = widgets.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITabAreaConfig]
   }
 }

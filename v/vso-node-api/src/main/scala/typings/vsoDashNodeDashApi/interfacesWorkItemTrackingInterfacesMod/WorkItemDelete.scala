@@ -25,8 +25,8 @@ object WorkItemDelete {
     `type`: String,
     url: String
   ): WorkItemDelete = {
-    val __obj = js.Dynamic.literal(code = code, deletedBy = deletedBy, deletedDate = deletedDate, id = id, message = message, name = name, project = project, resource = resource, url = url)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], deletedBy = deletedBy.asInstanceOf[js.Any], deletedDate = deletedDate.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkItemDelete]
   }
 }

@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait billingAddressCollectionType extends js.Object
 
+object billingAddressCollectionType {
+  @scala.inline
+  def Empty: typings.stripeDashV3.stripeDashV3Strings.Empty = this.cast("")
+  @scala.inline
+  def auto: typings.stripeDashV3.stripeDashV3Strings.auto = this.cast("auto")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def required: typings.stripeDashV3.stripeDashV3Strings.required = this.cast("required")
+}
+

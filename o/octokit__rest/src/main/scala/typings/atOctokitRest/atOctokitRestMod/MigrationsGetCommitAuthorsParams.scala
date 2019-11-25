@@ -16,8 +16,8 @@ trait MigrationsGetCommitAuthorsParams extends js.Object {
 object MigrationsGetCommitAuthorsParams {
   @scala.inline
   def apply(owner: String, repo: String, since: String = null): MigrationsGetCommitAuthorsParams = {
-    val __obj = js.Dynamic.literal(owner = owner, repo = repo)
-    if (since != null) __obj.updateDynamic("since")(since)
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
+    if (since != null) __obj.updateDynamic("since")(since.asInstanceOf[js.Any])
     __obj.asInstanceOf[MigrationsGetCommitAuthorsParams]
   }
 }

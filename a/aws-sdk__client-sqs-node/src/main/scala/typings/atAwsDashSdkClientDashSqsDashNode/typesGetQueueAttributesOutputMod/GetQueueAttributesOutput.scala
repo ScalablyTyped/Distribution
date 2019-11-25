@@ -16,7 +16,7 @@ trait GetQueueAttributesOutput extends OutputTypesUnion {
     * <p>A map of attributes to their respective values.</p>
     */
   var Attributes: js.UndefOr[
-    /* import warning: ImportType.apply c Unsupported type mapping: 
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in 'All' | 'Policy' | 'VisibilityTimeout' | 'MaximumMessageSize' | 'MessageRetentionPeriod' | 'ApproximateNumberOfMessages' | 'ApproximateNumberOfMessagesNotVisible' | 'CreatedTimestamp' | 'LastModifiedTimestamp' | 'QueueArn' | 'ApproximateNumberOfMessagesDelayed' | 'DelaySeconds' | 'ReceiveMessageWaitTimeSeconds' | 'RedrivePolicy' | 'FifoQueue' | 'ContentBasedDeduplication' | 'KmsMasterKeyId' | 'KmsDataKeyReusePeriodSeconds' | string ]: string}
     */ typings.atAwsDashSdkClientDashSqsDashNode.atAwsDashSdkClientDashSqsDashNodeStrings.GetQueueAttributesOutput with js.Any
   ] = js.undefined
@@ -26,12 +26,12 @@ object GetQueueAttributesOutput {
   @scala.inline
   def apply(
     $metadata: ResponseMetadata,
-    Attributes: /* import warning: ImportType.apply c Unsupported type mapping: 
+    Attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in 'All' | 'Policy' | 'VisibilityTimeout' | 'MaximumMessageSize' | 'MessageRetentionPeriod' | 'ApproximateNumberOfMessages' | 'ApproximateNumberOfMessagesNotVisible' | 'CreatedTimestamp' | 'LastModifiedTimestamp' | 'QueueArn' | 'ApproximateNumberOfMessagesDelayed' | 'DelaySeconds' | 'ReceiveMessageWaitTimeSeconds' | 'RedrivePolicy' | 'FifoQueue' | 'ContentBasedDeduplication' | 'KmsMasterKeyId' | 'KmsDataKeyReusePeriodSeconds' | string ]: string}
     */ typings.atAwsDashSdkClientDashSqsDashNode.atAwsDashSdkClientDashSqsDashNodeStrings.GetQueueAttributesOutput with js.Any = null
   ): GetQueueAttributesOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (Attributes != null) __obj.updateDynamic("Attributes")(Attributes)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (Attributes != null) __obj.updateDynamic("Attributes")(Attributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetQueueAttributesOutput]
   }
 }

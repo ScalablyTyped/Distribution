@@ -12,8 +12,8 @@ trait Anon_LengthXNumberTResult[TResult] extends /* x */ NumberDictionary[TResul
 object Anon_LengthXNumberTResult {
   @scala.inline
   def apply[TResult](length: Double, NumberDictionary: /* x */ NumberDictionary[TResult] = null): Anon_LengthXNumberTResult[TResult] = {
-    val __obj = js.Dynamic.literal(length = length)
-    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
+    if (NumberDictionary != null) js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[Anon_LengthXNumberTResult[TResult]]
   }
 }

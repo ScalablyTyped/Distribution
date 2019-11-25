@@ -12,8 +12,8 @@ trait FieldMask extends js.Object {
 object FieldMask {
   @scala.inline
   def apply(input_path: js.Array[String], mask: FieldMaskMask = null): FieldMask = {
-    val __obj = js.Dynamic.literal(input_path = input_path)
-    if (mask != null) __obj.updateDynamic("mask")(mask)
+    val __obj = js.Dynamic.literal(input_path = input_path.asInstanceOf[js.Any])
+    if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldMask]
   }
 }

@@ -21,11 +21,11 @@ object InstanceChainContext {
     property: js.UndefOr[Boolean] = js.undefined,
     setter: js.UndefOr[Boolean] = js.undefined
   ): InstanceChainContext = {
-    val __obj = js.Dynamic.literal(value = value)
-    if (!js.isUndefined(getter)) __obj.updateDynamic("getter")(getter)
-    if (!js.isUndefined(method)) __obj.updateDynamic("method")(method)
-    if (!js.isUndefined(property)) __obj.updateDynamic("property")(property)
-    if (!js.isUndefined(setter)) __obj.updateDynamic("setter")(setter)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    if (!js.isUndefined(getter)) __obj.updateDynamic("getter")(getter.asInstanceOf[js.Any])
+    if (!js.isUndefined(method)) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (!js.isUndefined(property)) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
+    if (!js.isUndefined(setter)) __obj.updateDynamic("setter")(setter.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceChainContext]
   }
 }

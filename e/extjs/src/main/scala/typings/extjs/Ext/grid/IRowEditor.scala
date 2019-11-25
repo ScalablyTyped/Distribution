@@ -30,26 +30,14 @@ object IRowEditor {
   @scala.inline
   def apply(
     IPanel: typings.extjs.Ext.form.IPanel = null,
-    afterRender: () => Unit = null,
-    border: js.Any = null,
     getRefItems: () => Unit = null,
-    hideMode: java.lang.String = null,
-    isDirty: () => Boolean = null,
     loadRecord: /* record */ js.UndefOr[js.Any] => IBasic = null,
-    onHide: () => Unit = null,
-    onShow: () => Unit = null,
     startEdit: (/* record */ js.UndefOr[IModel], /* columnHeader */ js.UndefOr[IModel]) => Unit = null
   ): IRowEditor = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IPanel)
-    if (afterRender != null) __obj.updateDynamic("afterRender")(js.Any.fromFunction0(afterRender))
-    if (border != null) __obj.updateDynamic("border")(border)
+    if (IPanel != null) js.Dynamic.global.Object.assign(__obj, IPanel)
     if (getRefItems != null) __obj.updateDynamic("getRefItems")(js.Any.fromFunction0(getRefItems))
-    if (hideMode != null) __obj.updateDynamic("hideMode")(hideMode)
-    if (isDirty != null) __obj.updateDynamic("isDirty")(js.Any.fromFunction0(isDirty))
     if (loadRecord != null) __obj.updateDynamic("loadRecord")(js.Any.fromFunction1(loadRecord))
-    if (onHide != null) __obj.updateDynamic("onHide")(js.Any.fromFunction0(onHide))
-    if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction0(onShow))
     if (startEdit != null) __obj.updateDynamic("startEdit")(js.Any.fromFunction2(startEdit))
     __obj.asInstanceOf[IRowEditor]
   }

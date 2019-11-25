@@ -14,7 +14,7 @@ object Space {
   @scala.inline
   def apply(`type`: space): Space = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Space]
   }
 }

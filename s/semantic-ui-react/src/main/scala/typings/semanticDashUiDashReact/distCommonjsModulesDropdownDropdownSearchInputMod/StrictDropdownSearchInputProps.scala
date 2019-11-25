@@ -30,11 +30,11 @@ object StrictDropdownSearchInputProps {
     value: Double | String = null
   ): StrictDropdownSearchInputProps = {
     val __obj = js.Dynamic.literal()
-    if (as != null) __obj.updateDynamic("as")(as)
-    if (autoComplete != null) __obj.updateDynamic("autoComplete")(autoComplete)
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
+    if (autoComplete != null) __obj.updateDynamic("autoComplete")(autoComplete.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrictDropdownSearchInputProps]
   }

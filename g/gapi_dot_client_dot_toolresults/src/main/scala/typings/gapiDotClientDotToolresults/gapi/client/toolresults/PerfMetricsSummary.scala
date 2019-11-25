@@ -35,14 +35,14 @@ object PerfMetricsSummary {
     stepId: String = null
   ): PerfMetricsSummary = {
     val __obj = js.Dynamic.literal()
-    if (appStartTime != null) __obj.updateDynamic("appStartTime")(appStartTime)
-    if (executionId != null) __obj.updateDynamic("executionId")(executionId)
-    if (graphicsStats != null) __obj.updateDynamic("graphicsStats")(graphicsStats)
-    if (historyId != null) __obj.updateDynamic("historyId")(historyId)
-    if (perfEnvironment != null) __obj.updateDynamic("perfEnvironment")(perfEnvironment)
-    if (perfMetrics != null) __obj.updateDynamic("perfMetrics")(perfMetrics)
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
-    if (stepId != null) __obj.updateDynamic("stepId")(stepId)
+    if (appStartTime != null) __obj.updateDynamic("appStartTime")(appStartTime.asInstanceOf[js.Any])
+    if (executionId != null) __obj.updateDynamic("executionId")(executionId.asInstanceOf[js.Any])
+    if (graphicsStats != null) __obj.updateDynamic("graphicsStats")(graphicsStats.asInstanceOf[js.Any])
+    if (historyId != null) __obj.updateDynamic("historyId")(historyId.asInstanceOf[js.Any])
+    if (perfEnvironment != null) __obj.updateDynamic("perfEnvironment")(perfEnvironment.asInstanceOf[js.Any])
+    if (perfMetrics != null) __obj.updateDynamic("perfMetrics")(perfMetrics.asInstanceOf[js.Any])
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
+    if (stepId != null) __obj.updateDynamic("stepId")(stepId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PerfMetricsSummary]
   }
 }

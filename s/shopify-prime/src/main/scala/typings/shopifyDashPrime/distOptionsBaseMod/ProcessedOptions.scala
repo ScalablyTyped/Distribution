@@ -19,8 +19,8 @@ object ProcessedOptions {
   @scala.inline
   def apply(processed_at_max: String = null, processed_at_min: String = null): ProcessedOptions = {
     val __obj = js.Dynamic.literal()
-    if (processed_at_max != null) __obj.updateDynamic("processed_at_max")(processed_at_max)
-    if (processed_at_min != null) __obj.updateDynamic("processed_at_min")(processed_at_min)
+    if (processed_at_max != null) __obj.updateDynamic("processed_at_max")(processed_at_max.asInstanceOf[js.Any])
+    if (processed_at_min != null) __obj.updateDynamic("processed_at_min")(processed_at_min.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProcessedOptions]
   }
 }

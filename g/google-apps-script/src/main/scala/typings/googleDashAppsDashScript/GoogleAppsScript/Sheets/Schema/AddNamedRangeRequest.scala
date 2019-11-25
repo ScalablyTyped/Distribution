@@ -12,7 +12,7 @@ object AddNamedRangeRequest {
   @scala.inline
   def apply(namedRange: NamedRange = null): AddNamedRangeRequest = {
     val __obj = js.Dynamic.literal()
-    if (namedRange != null) __obj.updateDynamic("namedRange")(namedRange)
+    if (namedRange != null) __obj.updateDynamic("namedRange")(namedRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddNamedRangeRequest]
   }
 }

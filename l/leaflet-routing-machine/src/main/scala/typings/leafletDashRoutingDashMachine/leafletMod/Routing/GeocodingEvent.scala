@@ -12,7 +12,7 @@ trait GeocodingEvent extends js.Object {
 object GeocodingEvent {
   @scala.inline
   def apply(waypoint: Waypoint, waypointIndex: Double): GeocodingEvent = {
-    val __obj = js.Dynamic.literal(waypoint = waypoint, waypointIndex = waypointIndex)
+    val __obj = js.Dynamic.literal(waypoint = waypoint.asInstanceOf[js.Any], waypointIndex = waypointIndex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GeocodingEvent]
   }

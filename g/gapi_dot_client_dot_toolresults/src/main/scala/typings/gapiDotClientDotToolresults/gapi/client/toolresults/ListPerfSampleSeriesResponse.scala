@@ -13,7 +13,7 @@ object ListPerfSampleSeriesResponse {
   @scala.inline
   def apply(perfSampleSeries: js.Array[PerfSampleSeries] = null): ListPerfSampleSeriesResponse = {
     val __obj = js.Dynamic.literal()
-    if (perfSampleSeries != null) __obj.updateDynamic("perfSampleSeries")(perfSampleSeries)
+    if (perfSampleSeries != null) __obj.updateDynamic("perfSampleSeries")(perfSampleSeries.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPerfSampleSeriesResponse]
   }
 }

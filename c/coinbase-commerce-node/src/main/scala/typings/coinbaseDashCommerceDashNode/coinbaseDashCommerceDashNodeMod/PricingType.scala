@@ -13,3 +13,12 @@ import scala.scalajs.js.annotation._
 */
 trait PricingType extends js.Object
 
+object PricingType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def fixed_price: typings.coinbaseDashCommerceDashNode.coinbaseDashCommerceDashNodeStrings.fixed_price = this.cast("fixed_price")
+  @scala.inline
+  def no_price: typings.coinbaseDashCommerceDashNode.coinbaseDashCommerceDashNodeStrings.no_price = this.cast("no_price")
+}
+

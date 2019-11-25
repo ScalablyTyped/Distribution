@@ -18,7 +18,7 @@ object PullResponse {
   @scala.inline
   def apply(receivedMessages: js.Array[ReceivedMessage] = null): PullResponse = {
     val __obj = js.Dynamic.literal()
-    if (receivedMessages != null) __obj.updateDynamic("receivedMessages")(receivedMessages)
+    if (receivedMessages != null) __obj.updateDynamic("receivedMessages")(receivedMessages.asInstanceOf[js.Any])
     __obj.asInstanceOf[PullResponse]
   }
 }

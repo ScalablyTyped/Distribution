@@ -1,6 +1,5 @@
 package typings.atIonicCore.distTypesComponentsMod.Components
 
-import typings.atIonicCore.distTypesComponentsAlertAlertDashInterfaceMod.AlertOptions
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonAlertElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +11,9 @@ trait IonAlertController extends js.Object {
     * Create an alert overlay with alert options.
     * @param options The options to use to create the alert.
     */
-  def create(options: AlertOptions): js.Promise[HTMLIonAlertElement] = js.native
+  def create(
+    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AlertOptions */ js.Any
+  ): js.Promise[HTMLIonAlertElement] = js.native
   /**
     * Dismiss the open alert overlay.
     * @param data Any data to emit in the dismiss events.

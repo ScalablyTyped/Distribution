@@ -81,7 +81,7 @@ object PerformanceNodeTiming {
     v8Start: Double,
     kind: Int | Double = null
   ): PerformanceNodeTiming = {
-    val __obj = js.Dynamic.literal(bootstrapComplete = bootstrapComplete, clusterSetupEnd = clusterSetupEnd, clusterSetupStart = clusterSetupStart, duration = duration, entryType = entryType, loopExit = loopExit, loopStart = loopStart, moduleLoadEnd = moduleLoadEnd, moduleLoadStart = moduleLoadStart, name = name, nodeStart = nodeStart, preloadModuleLoadEnd = preloadModuleLoadEnd, preloadModuleLoadStart = preloadModuleLoadStart, startTime = startTime, thirdPartyMainEnd = thirdPartyMainEnd, thirdPartyMainStart = thirdPartyMainStart, v8Start = v8Start)
+    val __obj = js.Dynamic.literal(bootstrapComplete = bootstrapComplete.asInstanceOf[js.Any], clusterSetupEnd = clusterSetupEnd.asInstanceOf[js.Any], clusterSetupStart = clusterSetupStart.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], entryType = entryType.asInstanceOf[js.Any], loopExit = loopExit.asInstanceOf[js.Any], loopStart = loopStart.asInstanceOf[js.Any], moduleLoadEnd = moduleLoadEnd.asInstanceOf[js.Any], moduleLoadStart = moduleLoadStart.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nodeStart = nodeStart.asInstanceOf[js.Any], preloadModuleLoadEnd = preloadModuleLoadEnd.asInstanceOf[js.Any], preloadModuleLoadStart = preloadModuleLoadStart.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], thirdPartyMainEnd = thirdPartyMainEnd.asInstanceOf[js.Any], thirdPartyMainStart = thirdPartyMainStart.asInstanceOf[js.Any], v8Start = v8Start.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[PerformanceNodeTiming]
   }

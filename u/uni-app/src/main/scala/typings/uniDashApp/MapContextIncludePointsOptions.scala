@@ -19,8 +19,8 @@ object MapContextIncludePointsOptions {
   @scala.inline
   def apply(padding: js.Array[Double] = null, points: js.Array[LocationObject] = null): MapContextIncludePointsOptions = {
     val __obj = js.Dynamic.literal()
-    if (padding != null) __obj.updateDynamic("padding")(padding)
-    if (points != null) __obj.updateDynamic("points")(points)
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (points != null) __obj.updateDynamic("points")(points.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapContextIncludePointsOptions]
   }
 }

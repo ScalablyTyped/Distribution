@@ -13,8 +13,8 @@ trait Anon_EncodingTrue extends js.Object {
 object Anon_EncodingTrue {
   @scala.inline
   def apply(withFileTypes: `true`, encoding: java.lang.String = null): Anon_EncodingTrue = {
-    val __obj = js.Dynamic.literal(withFileTypes = withFileTypes)
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    val __obj = js.Dynamic.literal(withFileTypes = withFileTypes.asInstanceOf[js.Any])
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_EncodingTrue]
   }
 }

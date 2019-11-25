@@ -14,8 +14,8 @@ object Options {
   @scala.inline
   def apply(leaveRouterUntouched: js.UndefOr[Boolean] = js.undefined, wsOptions: ServerOptions = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(leaveRouterUntouched)) __obj.updateDynamic("leaveRouterUntouched")(leaveRouterUntouched)
-    if (wsOptions != null) __obj.updateDynamic("wsOptions")(wsOptions)
+    if (!js.isUndefined(leaveRouterUntouched)) __obj.updateDynamic("leaveRouterUntouched")(leaveRouterUntouched.asInstanceOf[js.Any])
+    if (wsOptions != null) __obj.updateDynamic("wsOptions")(wsOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -43,18 +43,18 @@ object ReprojectImageOptions {
     srcBands: js.Array[Double] = null,
     srcNodata: Int | Double = null
   ): ReprojectImageOptions = {
-    val __obj = js.Dynamic.literal(dst = dst, s_srs = s_srs, src = src, t_srs = t_srs)
-    if (cutline != null) __obj.updateDynamic("cutline")(cutline)
+    val __obj = js.Dynamic.literal(dst = dst.asInstanceOf[js.Any], s_srs = s_srs.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], t_srs = t_srs.asInstanceOf[js.Any])
+    if (cutline != null) __obj.updateDynamic("cutline")(cutline.asInstanceOf[js.Any])
     if (dstAlphaBand != null) __obj.updateDynamic("dstAlphaBand")(dstAlphaBand.asInstanceOf[js.Any])
-    if (dstBands != null) __obj.updateDynamic("dstBands")(dstBands)
+    if (dstBands != null) __obj.updateDynamic("dstBands")(dstBands.asInstanceOf[js.Any])
     if (dstNodata != null) __obj.updateDynamic("dstNodata")(dstNodata.asInstanceOf[js.Any])
     if (maxError != null) __obj.updateDynamic("maxError")(maxError.asInstanceOf[js.Any])
     if (memoryLimit != null) __obj.updateDynamic("memoryLimit")(memoryLimit.asInstanceOf[js.Any])
-    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi)
+    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (resampling != null) __obj.updateDynamic("resampling")(resampling)
+    if (resampling != null) __obj.updateDynamic("resampling")(resampling.asInstanceOf[js.Any])
     if (srcAlphaBand != null) __obj.updateDynamic("srcAlphaBand")(srcAlphaBand.asInstanceOf[js.Any])
-    if (srcBands != null) __obj.updateDynamic("srcBands")(srcBands)
+    if (srcBands != null) __obj.updateDynamic("srcBands")(srcBands.asInstanceOf[js.Any])
     if (srcNodata != null) __obj.updateDynamic("srcNodata")(srcNodata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReprojectImageOptions]
   }

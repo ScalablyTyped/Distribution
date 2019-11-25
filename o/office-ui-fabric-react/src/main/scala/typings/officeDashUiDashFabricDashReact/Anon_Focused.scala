@@ -24,10 +24,10 @@ object Anon_Focused {
     hasLabel: js.UndefOr[Boolean] = js.undefined
   ): Anon_Focused = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(focused)) __obj.updateDynamic("focused")(focused)
-    if (!js.isUndefined(hasErrorMessage)) __obj.updateDynamic("hasErrorMessage")(hasErrorMessage)
-    if (!js.isUndefined(hasIcon)) __obj.updateDynamic("hasIcon")(hasIcon)
-    if (!js.isUndefined(hasLabel)) __obj.updateDynamic("hasLabel")(hasLabel)
+    if (!js.isUndefined(focused)) __obj.updateDynamic("focused")(focused.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasErrorMessage)) __obj.updateDynamic("hasErrorMessage")(hasErrorMessage.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasIcon)) __obj.updateDynamic("hasIcon")(hasIcon.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasLabel)) __obj.updateDynamic("hasLabel")(hasLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Focused]
   }
 }

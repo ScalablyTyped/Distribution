@@ -26,9 +26,9 @@ trait ListTagsOfResourceOutput extends OutputTypesUnion {
 object ListTagsOfResourceOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, NextToken: String = null, Tags: js.Array[_UnmarshalledTag] = null): ListTagsOfResourceOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTagsOfResourceOutput]
   }
 }

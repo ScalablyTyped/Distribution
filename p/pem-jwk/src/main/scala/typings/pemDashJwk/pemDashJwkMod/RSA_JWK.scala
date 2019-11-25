@@ -29,13 +29,13 @@ object RSA_JWK {
     q: String = null,
     qi: String = null
   ): RSA_JWK = {
-    val __obj = js.Dynamic.literal(e = e, kty = kty, n = n)
-    if (d != null) __obj.updateDynamic("d")(d)
-    if (dp != null) __obj.updateDynamic("dp")(dp)
-    if (dq != null) __obj.updateDynamic("dq")(dq)
-    if (p != null) __obj.updateDynamic("p")(p)
-    if (q != null) __obj.updateDynamic("q")(q)
-    if (qi != null) __obj.updateDynamic("qi")(qi)
+    val __obj = js.Dynamic.literal(e = e.asInstanceOf[js.Any], kty = kty.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any])
+    if (d != null) __obj.updateDynamic("d")(d.asInstanceOf[js.Any])
+    if (dp != null) __obj.updateDynamic("dp")(dp.asInstanceOf[js.Any])
+    if (dq != null) __obj.updateDynamic("dq")(dq.asInstanceOf[js.Any])
+    if (p != null) __obj.updateDynamic("p")(p.asInstanceOf[js.Any])
+    if (q != null) __obj.updateDynamic("q")(q.asInstanceOf[js.Any])
+    if (qi != null) __obj.updateDynamic("qi")(qi.asInstanceOf[js.Any])
     __obj.asInstanceOf[RSA_JWK]
   }
 }

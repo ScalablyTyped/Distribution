@@ -25,8 +25,8 @@ object MEMO_STATICS {
     propTypes: `true`,
     `type`: `true`
   ): MEMO_STATICS = {
-    val __obj = js.Dynamic.literal($$typeof = $$typeof, compare = compare, defaultProps = defaultProps, displayName = displayName, propTypes = propTypes)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal($$typeof = $$typeof.asInstanceOf[js.Any], compare = compare.asInstanceOf[js.Any], defaultProps = defaultProps.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], propTypes = propTypes.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MEMO_STATICS]
   }
 }

@@ -21,7 +21,7 @@ object SelectInputComponentProps {
     row: js.Any,
     selectType: SelectType
   ): SelectInputComponentProps = {
-    val __obj = js.Dynamic.literal(checked = checked, id = id, onClick = js.Any.fromFunction3(onClick), row = row, selectType = selectType)
+    val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], onClick = js.Any.fromFunction3(onClick), row = row.asInstanceOf[js.Any], selectType = selectType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SelectInputComponentProps]
   }

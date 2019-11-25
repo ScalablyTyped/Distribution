@@ -14,7 +14,7 @@ trait WebviewPanelOnDidChangeViewStateEvent extends js.Object {
 object WebviewPanelOnDidChangeViewStateEvent {
   @scala.inline
   def apply(webviewPanel: WebviewPanel): WebviewPanelOnDidChangeViewStateEvent = {
-    val __obj = js.Dynamic.literal(webviewPanel = webviewPanel)
+    val __obj = js.Dynamic.literal(webviewPanel = webviewPanel.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WebviewPanelOnDidChangeViewStateEvent]
   }

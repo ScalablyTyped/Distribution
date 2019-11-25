@@ -5,9 +5,32 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.csstype.csstypeMod.Globals
   - typings.csstype.csstypeStrings.alpha
   - typings.csstype.csstypeStrings.luminance
+  - typings.csstype.csstypeStrings.`-moz-initial`
+  - typings.csstype.csstypeStrings.inherit
+  - typings.csstype.csstypeStrings.initial
+  - typings.csstype.csstypeStrings.revert
+  - typings.csstype.csstypeStrings.unset
 */
 trait MaskTypeProperty extends js.Object
+
+object MaskTypeProperty {
+  @scala.inline
+  def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = this.cast("-moz-initial")
+  @scala.inline
+  def alpha: typings.csstype.csstypeStrings.alpha = this.cast("alpha")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def inherit: typings.csstype.csstypeStrings.inherit = this.cast("inherit")
+  @scala.inline
+  def initial: typings.csstype.csstypeStrings.initial = this.cast("initial")
+  @scala.inline
+  def luminance: typings.csstype.csstypeStrings.luminance = this.cast("luminance")
+  @scala.inline
+  def revert: typings.csstype.csstypeStrings.revert = this.cast("revert")
+  @scala.inline
+  def unset: typings.csstype.csstypeStrings.unset = this.cast("unset")
+}
 

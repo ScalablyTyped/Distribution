@@ -95,18 +95,18 @@ object InfiniteScrollProps {
     useWindow: js.UndefOr[Boolean] = js.undefined
   ): InfiniteScrollProps = {
     val __obj = js.Dynamic.literal(loadMore = js.Any.fromFunction1(loadMore))
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (element != null) __obj.updateDynamic("element")(element)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
     if (getScrollParent != null) __obj.updateDynamic("getScrollParent")(js.Any.fromFunction0(getScrollParent))
-    if (!js.isUndefined(hasMore)) __obj.updateDynamic("hasMore")(hasMore)
-    if (!js.isUndefined(initialLoad)) __obj.updateDynamic("initialLoad")(initialLoad)
-    if (!js.isUndefined(isReverse)) __obj.updateDynamic("isReverse")(isReverse)
-    if (loader != null) __obj.updateDynamic("loader")(loader)
+    if (!js.isUndefined(hasMore)) __obj.updateDynamic("hasMore")(hasMore.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialLoad)) __obj.updateDynamic("initialLoad")(initialLoad.asInstanceOf[js.Any])
+    if (!js.isUndefined(isReverse)) __obj.updateDynamic("isReverse")(isReverse.asInstanceOf[js.Any])
+    if (loader != null) __obj.updateDynamic("loader")(loader.asInstanceOf[js.Any])
     if (pageStart != null) __obj.updateDynamic("pageStart")(pageStart.asInstanceOf[js.Any])
     if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
-    if (!js.isUndefined(useCapture)) __obj.updateDynamic("useCapture")(useCapture)
-    if (!js.isUndefined(useWindow)) __obj.updateDynamic("useWindow")(useWindow)
+    if (!js.isUndefined(useCapture)) __obj.updateDynamic("useCapture")(useCapture.asInstanceOf[js.Any])
+    if (!js.isUndefined(useWindow)) __obj.updateDynamic("useWindow")(useWindow.asInstanceOf[js.Any])
     __obj.asInstanceOf[InfiniteScrollProps]
   }
 }

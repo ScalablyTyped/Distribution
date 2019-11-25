@@ -46,8 +46,8 @@ object SerializedRequest {
     url: String,
     id: String = null
   ): SerializedRequest = {
-    val __obj = js.Dynamic.literal(headers = headers, method = method, raw = raw, remoteAddress = remoteAddress, remotePort = remotePort, url = url)
-    if (id != null) __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], remoteAddress = remoteAddress.asInstanceOf[js.Any], remotePort = remotePort.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[SerializedRequest]
   }
 }

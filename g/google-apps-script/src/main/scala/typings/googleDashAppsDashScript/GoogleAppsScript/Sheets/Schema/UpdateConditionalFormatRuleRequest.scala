@@ -22,7 +22,7 @@ object UpdateConditionalFormatRuleRequest {
     val __obj = js.Dynamic.literal()
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (newIndex != null) __obj.updateDynamic("newIndex")(newIndex.asInstanceOf[js.Any])
-    if (rule != null) __obj.updateDynamic("rule")(rule)
+    if (rule != null) __obj.updateDynamic("rule")(rule.asInstanceOf[js.Any])
     if (sheetId != null) __obj.updateDynamic("sheetId")(sheetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateConditionalFormatRuleRequest]
   }

@@ -19,8 +19,8 @@ object BaseEvent {
   @scala.inline
   def apply(`type`: String, sourceEvent: js.Any = null): BaseEvent = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (sourceEvent != null) __obj.updateDynamic("sourceEvent")(sourceEvent)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (sourceEvent != null) __obj.updateDynamic("sourceEvent")(sourceEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseEvent]
   }
 }

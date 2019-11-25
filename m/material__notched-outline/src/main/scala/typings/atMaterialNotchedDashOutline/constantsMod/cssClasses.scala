@@ -14,8 +14,8 @@ trait cssClasses extends MDCStrings {
 object cssClasses {
   @scala.inline
   def apply(OUTLINE_NOTCHED: `mdc-notched-outline--notched`, StringDictionary: StringDictionary[String] = null): cssClasses = {
-    val __obj = js.Dynamic.literal(OUTLINE_NOTCHED = OUTLINE_NOTCHED)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(OUTLINE_NOTCHED = OUTLINE_NOTCHED.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[cssClasses]
   }
 }

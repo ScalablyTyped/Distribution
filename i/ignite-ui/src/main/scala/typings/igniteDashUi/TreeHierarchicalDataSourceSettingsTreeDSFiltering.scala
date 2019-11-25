@@ -41,10 +41,10 @@ object TreeHierarchicalDataSourceSettingsTreeDSFiltering {
     toLevel: Int | Double = null
   ): TreeHierarchicalDataSourceSettingsTreeDSFiltering = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (displayMode != null) __obj.updateDynamic("displayMode")(displayMode)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (displayMode != null) __obj.updateDynamic("displayMode")(displayMode.asInstanceOf[js.Any])
     if (fromLevel != null) __obj.updateDynamic("fromLevel")(fromLevel.asInstanceOf[js.Any])
-    if (matchFiltering != null) __obj.updateDynamic("matchFiltering")(matchFiltering)
+    if (matchFiltering != null) __obj.updateDynamic("matchFiltering")(matchFiltering.asInstanceOf[js.Any])
     if (toLevel != null) __obj.updateDynamic("toLevel")(toLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeHierarchicalDataSourceSettingsTreeDSFiltering]
   }

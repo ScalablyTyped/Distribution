@@ -22,7 +22,7 @@ object MockContext {
     invocationCallOrder: js.Array[Double],
     results: js.Array[MockResult[T]]
   ): MockContext[T, Y] = {
-    val __obj = js.Dynamic.literal(calls = calls, instances = instances, invocationCallOrder = invocationCallOrder, results = results)
+    val __obj = js.Dynamic.literal(calls = calls.asInstanceOf[js.Any], instances = instances.asInstanceOf[js.Any], invocationCallOrder = invocationCallOrder.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MockContext[T, Y]]
   }

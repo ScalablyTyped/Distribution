@@ -12,7 +12,7 @@ trait TrainingScheduleOptions extends js.Object {
 object TrainingScheduleOptions {
   @scala.inline
   def apply(`do`: TrainingScheduleDoData => Boolean | Unit, every: Double): TrainingScheduleOptions = {
-    val __obj = js.Dynamic.literal(every = every)
+    val __obj = js.Dynamic.literal(every = every.asInstanceOf[js.Any])
     __obj.updateDynamic("do")(js.Any.fromFunction1(`do`))
     __obj.asInstanceOf[TrainingScheduleOptions]
   }

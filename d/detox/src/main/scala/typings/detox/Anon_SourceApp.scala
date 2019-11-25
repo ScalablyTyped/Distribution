@@ -12,8 +12,8 @@ trait Anon_SourceApp extends js.Object {
 object Anon_SourceApp {
   @scala.inline
   def apply(url: String, sourceApp: String = null): Anon_SourceApp = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (sourceApp != null) __obj.updateDynamic("sourceApp")(sourceApp)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (sourceApp != null) __obj.updateDynamic("sourceApp")(sourceApp.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_SourceApp]
   }
 }

@@ -16,8 +16,8 @@ object CreateEventResponse {
   @scala.inline
   def apply(data: EventData = null, `type`: String = null): CreateEventResponse = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateEventResponse]
   }
 }

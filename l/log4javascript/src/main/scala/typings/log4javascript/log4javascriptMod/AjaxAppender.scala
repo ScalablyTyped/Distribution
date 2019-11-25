@@ -1,8 +1,7 @@
 package typings.log4javascript.log4javascriptMod
 
 import typings.log4javascript.Anon_Name
-import typings.log4javascript.Fn_Message
-import typings.log4javascript.Fn_XmlHttp
+import typings.std.XMLHttpRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -70,7 +69,7 @@ class AjaxAppender protected () extends Appender {
   	 * AjaxAppender-specific errors.
   	 * A single parameter, message, is passed to the callback function. This is the error-specific message that caused the failure.
   	 */
-  def setFailCallback(failCallback: Fn_Message): Unit = js.native
+  def setFailCallback(failCallback: js.Function1[/* message */ String, Unit]): Unit = js.native
   /**
   	 * Sets the post variable name whose value will the formatted log message(s) for each request.
   	 * Default value is data.
@@ -82,7 +81,7 @@ class AjaxAppender protected () extends Appender {
   	 * A single parameter, xmlHttp, is passed to the callback function. This is the XMLHttpRequest object that performed the
   	 * request.
   	 */
-  def setRequestSuccessCallback(requestSuccessCallback: Fn_XmlHttp): Unit = js.native
+  def setRequestSuccessCallback(requestSuccessCallback: js.Function1[/* xmlHttp */ XMLHttpRequest, Unit]): Unit = js.native
   /**
   	 * Whether to send all remaining unsent log messages to the server when the page unloads.
   	 * Since version 1.4.3, the default value is false. Previously the default was true.

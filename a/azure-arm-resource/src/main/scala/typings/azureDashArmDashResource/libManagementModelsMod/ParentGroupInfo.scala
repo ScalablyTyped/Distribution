@@ -13,8 +13,8 @@ object ParentGroupInfo {
   @scala.inline
   def apply(displayName: String = null, parentId: String = null): ParentGroupInfo = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (parentId != null) __obj.updateDynamic("parentId")(parentId)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (parentId != null) __obj.updateDynamic("parentId")(parentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParentGroupInfo]
   }
 }

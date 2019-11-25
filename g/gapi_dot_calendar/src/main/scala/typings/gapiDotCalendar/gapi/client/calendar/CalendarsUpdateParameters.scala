@@ -23,11 +23,11 @@ object CalendarsUpdateParameters {
     summary: String = null,
     timeZone: String = null
   ): CalendarsUpdateParameters = {
-    val __obj = js.Dynamic.literal(calendarId = calendarId)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (summary != null) __obj.updateDynamic("summary")(summary)
-    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone)
+    val __obj = js.Dynamic.literal(calendarId = calendarId.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (summary != null) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
+    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalendarsUpdateParameters]
   }
 }

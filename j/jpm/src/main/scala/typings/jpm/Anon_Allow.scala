@@ -32,12 +32,12 @@ object Anon_Allow {
     onMessage: /* message */ String => _ = null
   ): Anon_Allow = {
     val __obj = js.Dynamic.literal()
-    if (allow != null) __obj.updateDynamic("allow")(allow)
+    if (allow != null) __obj.updateDynamic("allow")(allow.asInstanceOf[js.Any])
     if (contentScript != null) __obj.updateDynamic("contentScript")(contentScript.asInstanceOf[js.Any])
     if (contentScriptFile != null) __obj.updateDynamic("contentScriptFile")(contentScriptFile.asInstanceOf[js.Any])
-    if (contentScriptOptions != null) __obj.updateDynamic("contentScriptOptions")(contentScriptOptions)
+    if (contentScriptOptions != null) __obj.updateDynamic("contentScriptOptions")(contentScriptOptions.asInstanceOf[js.Any])
     if (contentScriptWhen != null) __obj.updateDynamic("contentScriptWhen")(contentScriptWhen.asInstanceOf[js.Any])
-    if (contentURL != null) __obj.updateDynamic("contentURL")(contentURL)
+    if (contentURL != null) __obj.updateDynamic("contentURL")(contentURL.asInstanceOf[js.Any])
     if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     if (onMessage != null) __obj.updateDynamic("onMessage")(js.Any.fromFunction1(onMessage))
     __obj.asInstanceOf[Anon_Allow]

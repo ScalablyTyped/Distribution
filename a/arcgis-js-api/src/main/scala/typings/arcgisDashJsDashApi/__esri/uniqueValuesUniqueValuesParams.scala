@@ -72,14 +72,14 @@ object uniqueValuesUniqueValuesParams {
     valueExpression: String = null,
     view: View = null
   ): uniqueValuesUniqueValuesParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (features != null) __obj.updateDynamic("features")(features)
-    if (field != null) __obj.updateDynamic("field")(field)
-    if (!js.isUndefined(returnAllCodedValues)) __obj.updateDynamic("returnAllCodedValues")(returnAllCodedValues)
-    if (sqlExpression != null) __obj.updateDynamic("sqlExpression")(sqlExpression)
-    if (sqlWhere != null) __obj.updateDynamic("sqlWhere")(sqlWhere)
-    if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression)
-    if (view != null) __obj.updateDynamic("view")(view)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnAllCodedValues)) __obj.updateDynamic("returnAllCodedValues")(returnAllCodedValues.asInstanceOf[js.Any])
+    if (sqlExpression != null) __obj.updateDynamic("sqlExpression")(sqlExpression.asInstanceOf[js.Any])
+    if (sqlWhere != null) __obj.updateDynamic("sqlWhere")(sqlWhere.asInstanceOf[js.Any])
+    if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression.asInstanceOf[js.Any])
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[uniqueValuesUniqueValuesParams]
   }
 }

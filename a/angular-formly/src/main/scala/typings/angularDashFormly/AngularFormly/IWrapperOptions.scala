@@ -34,16 +34,16 @@ object IWrapperOptions {
     validateOptions: js.Function = null
   ): IWrapperOptions = {
     val __obj = js.Dynamic.literal()
-    if (apiCheck != null) __obj.updateDynamic("apiCheck")(apiCheck)
-    if (apiCheckFunction != null) __obj.updateDynamic("apiCheckFunction")(apiCheckFunction)
-    if (apiCheckInstance != null) __obj.updateDynamic("apiCheckInstance")(apiCheckInstance)
-    if (apiCheckOptions != null) __obj.updateDynamic("apiCheckOptions")(apiCheckOptions)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(overwriteOk)) __obj.updateDynamic("overwriteOk")(overwriteOk)
-    if (template != null) __obj.updateDynamic("template")(template)
-    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl)
-    if (types != null) __obj.updateDynamic("types")(types)
-    if (validateOptions != null) __obj.updateDynamic("validateOptions")(validateOptions)
+    if (apiCheck != null) __obj.updateDynamic("apiCheck")(apiCheck.asInstanceOf[js.Any])
+    if (apiCheckFunction != null) __obj.updateDynamic("apiCheckFunction")(apiCheckFunction.asInstanceOf[js.Any])
+    if (apiCheckInstance != null) __obj.updateDynamic("apiCheckInstance")(apiCheckInstance.asInstanceOf[js.Any])
+    if (apiCheckOptions != null) __obj.updateDynamic("apiCheckOptions")(apiCheckOptions.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(overwriteOk)) __obj.updateDynamic("overwriteOk")(overwriteOk.asInstanceOf[js.Any])
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
+    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl.asInstanceOf[js.Any])
+    if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
+    if (validateOptions != null) __obj.updateDynamic("validateOptions")(validateOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWrapperOptions]
   }
 }

@@ -16,7 +16,7 @@ trait Anon_IdentityKindNameProps extends js.Object {
 object Anon_IdentityKindNameProps {
   @scala.inline
   def apply(identity: Boolean, kind: String, name: String, props: StructProps, strict: Boolean): Anon_IdentityKindNameProps = {
-    val __obj = js.Dynamic.literal(identity = identity, kind = kind, name = name, props = props, strict = strict)
+    val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], strict = strict.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IdentityKindNameProps]
   }

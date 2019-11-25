@@ -24,12 +24,12 @@ object DatasetListDatasets {
     location: String = null
   ): DatasetListDatasets = {
     val __obj = js.Dynamic.literal()
-    if (datasetReference != null) __obj.updateDynamic("datasetReference")(datasetReference)
-    if (friendlyName != null) __obj.updateDynamic("friendlyName")(friendlyName)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (labels != null) __obj.updateDynamic("labels")(labels)
-    if (location != null) __obj.updateDynamic("location")(location)
+    if (datasetReference != null) __obj.updateDynamic("datasetReference")(datasetReference.asInstanceOf[js.Any])
+    if (friendlyName != null) __obj.updateDynamic("friendlyName")(friendlyName.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatasetListDatasets]
   }
 }

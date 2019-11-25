@@ -22,11 +22,11 @@ object Player {
     team: String = null
   ): Player = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (ping != null) __obj.updateDynamic("ping")(ping.asInstanceOf[js.Any])
     if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
-    if (team != null) __obj.updateDynamic("team")(team)
+    if (team != null) __obj.updateDynamic("team")(team.asInstanceOf[js.Any])
     __obj.asInstanceOf[Player]
   }
 }

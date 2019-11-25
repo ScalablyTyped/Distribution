@@ -40,11 +40,11 @@ object _ApplicationSettingsResource {
     QuietTime: _QuietTime = null
   ): _ApplicationSettingsResource = {
     val __obj = js.Dynamic.literal()
-    if (ApplicationId != null) __obj.updateDynamic("ApplicationId")(ApplicationId)
-    if (CampaignHook != null) __obj.updateDynamic("CampaignHook")(CampaignHook)
-    if (LastModifiedDate != null) __obj.updateDynamic("LastModifiedDate")(LastModifiedDate)
-    if (Limits != null) __obj.updateDynamic("Limits")(Limits)
-    if (QuietTime != null) __obj.updateDynamic("QuietTime")(QuietTime)
+    if (ApplicationId != null) __obj.updateDynamic("ApplicationId")(ApplicationId.asInstanceOf[js.Any])
+    if (CampaignHook != null) __obj.updateDynamic("CampaignHook")(CampaignHook.asInstanceOf[js.Any])
+    if (LastModifiedDate != null) __obj.updateDynamic("LastModifiedDate")(LastModifiedDate.asInstanceOf[js.Any])
+    if (Limits != null) __obj.updateDynamic("Limits")(Limits.asInstanceOf[js.Any])
+    if (QuietTime != null) __obj.updateDynamic("QuietTime")(QuietTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[_ApplicationSettingsResource]
   }
 }

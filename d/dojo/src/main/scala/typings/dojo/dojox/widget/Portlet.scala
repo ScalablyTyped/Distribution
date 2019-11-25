@@ -1,7 +1,6 @@
 package typings.dojo.dojox.widget
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
 import typings.dojo.dijit.TitlePane
 import typings.dojo.dojoStrings.closable
 import typings.dojo.dojoStrings.dragRestriction
@@ -81,10 +80,34 @@ class Portlet () extends TitlePane {
   @JSName("set")
   def set_resizeChildren(property: resizeChildren, value: Boolean): Unit = js.native
   @JSName("watch")
-  def watch_closable(property: closable, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_closable(
+    property: closable,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_dragRestriction(property: dragRestriction, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_dragRestriction(
+    property: dragRestriction,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_resizeChildren(property: resizeChildren, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_resizeChildren(
+    property: resizeChildren,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

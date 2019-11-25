@@ -81,7 +81,7 @@ object JobSpec {
     template: PodTemplateSpec,
     ttlSecondsAfterFinished: Double
   ): JobSpec = {
-    val __obj = js.Dynamic.literal(activeDeadlineSeconds = activeDeadlineSeconds, backoffLimit = backoffLimit, completions = completions, manualSelector = manualSelector, parallelism = parallelism, selector = selector, template = template, ttlSecondsAfterFinished = ttlSecondsAfterFinished)
+    val __obj = js.Dynamic.literal(activeDeadlineSeconds = activeDeadlineSeconds.asInstanceOf[js.Any], backoffLimit = backoffLimit.asInstanceOf[js.Any], completions = completions.asInstanceOf[js.Any], manualSelector = manualSelector.asInstanceOf[js.Any], parallelism = parallelism.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], ttlSecondsAfterFinished = ttlSecondsAfterFinished.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[JobSpec]
   }

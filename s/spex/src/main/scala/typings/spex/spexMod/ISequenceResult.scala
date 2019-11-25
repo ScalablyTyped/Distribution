@@ -12,7 +12,7 @@ trait ISequenceResult extends js.Object {
 object ISequenceResult {
   @scala.inline
   def apply(duration: Double, total: Double): ISequenceResult = {
-    val __obj = js.Dynamic.literal(duration = duration, total = total)
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISequenceResult]
   }

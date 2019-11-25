@@ -14,7 +14,7 @@ trait Anon_DayMonth extends js.Object {
 object Anon_DayMonth {
   @scala.inline
   def apply(day: String, month: String, weekday: String, year: String): Anon_DayMonth = {
-    val __obj = js.Dynamic.literal(day = day, month = month, weekday = weekday, year = year)
+    val __obj = js.Dynamic.literal(day = day.asInstanceOf[js.Any], month = month.asInstanceOf[js.Any], weekday = weekday.asInstanceOf[js.Any], year = year.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DayMonth]
   }

@@ -12,7 +12,7 @@ trait Anon_Flatten extends js.Object {
 object Anon_Flatten {
   @scala.inline
   def apply(flatten: `true`): Anon_Flatten = {
-    val __obj = js.Dynamic.literal(flatten = flatten)
+    val __obj = js.Dynamic.literal(flatten = flatten.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Flatten]
   }

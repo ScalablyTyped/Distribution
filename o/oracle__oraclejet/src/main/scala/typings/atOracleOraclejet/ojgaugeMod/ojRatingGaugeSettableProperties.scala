@@ -2,7 +2,7 @@ package typings.atOracleOraclejet.ojgaugeMod
 
 import typings.atOracleOraclejet.Anon_BorderColorCircle
 import typings.atOracleOraclejet.Anon_ComponentNameLabelAndValue
-import typings.atOracleOraclejet.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_593287912
+import typings.atOracleOraclejet.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_656598965
 import typings.atOracleOraclejet.atOracleOraclejetNumbers.`0DOT5`
 import typings.atOracleOraclejet.atOracleOraclejetNumbers.`1`
 import typings.atOracleOraclejet.atOracleOraclejetStrings.auto
@@ -29,7 +29,7 @@ trait ojRatingGaugeSettableProperties extends dvtBaseGaugeSettableProperties {
   var selectedState: Anon_BorderColorCircle
   var step: `0DOT5` | `1`
   var thresholds: js.Array[Threshold]
-  var tooltip: Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_593287912
+  var tooltip: Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_656598965
   val transientValue: Double | Null
   var unselectedState: Anon_BorderColorCircle
   var value: Double | Null
@@ -50,7 +50,7 @@ object ojRatingGaugeSettableProperties {
     selectedState: Anon_BorderColorCircle,
     step: `0DOT5` | `1`,
     thresholds: js.Array[Threshold],
-    tooltip: Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_593287912,
+    tooltip: Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_656598965,
     trackResize: on | off,
     translations: Anon_ComponentNameLabelAndValue,
     unselectedState: Anon_BorderColorCircle,
@@ -58,7 +58,7 @@ object ojRatingGaugeSettableProperties {
     transientValue: Int | Double = null,
     value: Int | Double = null
   ): ojRatingGaugeSettableProperties = {
-    val __obj = js.Dynamic.literal(changed = changed, changedState = changedState, hoverState = hoverState, max = max, min = min, orientation = orientation.asInstanceOf[js.Any], preserveAspectRatio = preserveAspectRatio.asInstanceOf[js.Any], readonly = readonly, selectedState = selectedState, step = step.asInstanceOf[js.Any], thresholds = thresholds, tooltip = tooltip, trackResize = trackResize.asInstanceOf[js.Any], translations = translations, unselectedState = unselectedState, visualEffects = visualEffects.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(changed = changed.asInstanceOf[js.Any], changedState = changedState.asInstanceOf[js.Any], hoverState = hoverState.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], preserveAspectRatio = preserveAspectRatio.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any], selectedState = selectedState.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any], thresholds = thresholds.asInstanceOf[js.Any], tooltip = tooltip.asInstanceOf[js.Any], trackResize = trackResize.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], unselectedState = unselectedState.asInstanceOf[js.Any], visualEffects = visualEffects.asInstanceOf[js.Any])
     if (transientValue != null) __obj.updateDynamic("transientValue")(transientValue.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojRatingGaugeSettableProperties]

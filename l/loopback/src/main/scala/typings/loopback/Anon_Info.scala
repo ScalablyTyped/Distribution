@@ -12,7 +12,7 @@ trait Anon_Info extends js.Object {
 object Anon_Info {
   @scala.inline
   def apply(info: js.Any, infoCount: Double): Anon_Info = {
-    val __obj = js.Dynamic.literal(info = info, infoCount = infoCount)
+    val __obj = js.Dynamic.literal(info = info.asInstanceOf[js.Any], infoCount = infoCount.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Info]
   }

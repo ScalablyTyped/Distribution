@@ -14,7 +14,7 @@ object Array {
   @scala.inline
   def apply[T](`_`: BlissBindedArray[T] with BlissCollectionArray[T]): Array[T] = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_")(`_`)
+    __obj.updateDynamic("_")(`_`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Array[T]]
   }
 }

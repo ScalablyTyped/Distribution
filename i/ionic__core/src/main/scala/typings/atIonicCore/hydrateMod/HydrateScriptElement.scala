@@ -18,9 +18,9 @@ object HydrateScriptElement {
     `type`: String = null
   ): HydrateScriptElement = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (src != null) __obj.updateDynamic("src")(src)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HydrateScriptElement]
   }
 }

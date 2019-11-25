@@ -54,8 +54,8 @@ object TrimExtendParametersProperties {
   ): TrimExtendParametersProperties = {
     val __obj = js.Dynamic.literal()
     if (extendHow != null) __obj.updateDynamic("extendHow")(extendHow.asInstanceOf[js.Any])
-    if (polylines != null) __obj.updateDynamic("polylines")(polylines)
-    if (trimExtendTo != null) __obj.updateDynamic("trimExtendTo")(trimExtendTo)
+    if (polylines != null) __obj.updateDynamic("polylines")(polylines.asInstanceOf[js.Any])
+    if (trimExtendTo != null) __obj.updateDynamic("trimExtendTo")(trimExtendTo.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrimExtendParametersProperties]
   }
 }

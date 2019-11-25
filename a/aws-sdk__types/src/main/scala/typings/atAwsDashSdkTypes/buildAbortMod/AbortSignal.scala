@@ -19,7 +19,7 @@ trait AbortSignal extends js.Object {
 object AbortSignal {
   @scala.inline
   def apply(aborted: Boolean, onabort: () => Unit = null): AbortSignal = {
-    val __obj = js.Dynamic.literal(aborted = aborted)
+    val __obj = js.Dynamic.literal(aborted = aborted.asInstanceOf[js.Any])
     if (onabort != null) __obj.updateDynamic("onabort")(js.Any.fromFunction0(onabort))
     __obj.asInstanceOf[AbortSignal]
   }

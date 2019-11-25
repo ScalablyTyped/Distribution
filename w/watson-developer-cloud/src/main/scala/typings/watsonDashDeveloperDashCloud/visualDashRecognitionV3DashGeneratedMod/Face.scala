@@ -18,9 +18,9 @@ object Face {
   @scala.inline
   def apply(age: FaceAge = null, face_location: FaceLocation = null, gender: FaceGender = null): Face = {
     val __obj = js.Dynamic.literal()
-    if (age != null) __obj.updateDynamic("age")(age)
-    if (face_location != null) __obj.updateDynamic("face_location")(face_location)
-    if (gender != null) __obj.updateDynamic("gender")(gender)
+    if (age != null) __obj.updateDynamic("age")(age.asInstanceOf[js.Any])
+    if (face_location != null) __obj.updateDynamic("face_location")(face_location.asInstanceOf[js.Any])
+    if (gender != null) __obj.updateDynamic("gender")(gender.asInstanceOf[js.Any])
     __obj.asInstanceOf[Face]
   }
 }

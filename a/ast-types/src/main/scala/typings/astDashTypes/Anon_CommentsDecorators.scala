@@ -36,10 +36,10 @@ object Anon_CommentsDecorators {
     loc: SourceLocationKind = null,
     typeAnnotation: TypeAnnotationKind | TSTypeAnnotationKind = null
   ): Anon_CommentsDecorators = {
-    val __obj = js.Dynamic.literal(properties = properties)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (decorators != null) __obj.updateDynamic("decorators")(decorators)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (decorators != null) __obj.updateDynamic("decorators")(decorators.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CommentsDecorators]
   }

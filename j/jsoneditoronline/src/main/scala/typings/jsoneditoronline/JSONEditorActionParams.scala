@@ -37,18 +37,18 @@ object JSONEditorActionParams {
     startParent: JSONEditorNode = null
   ): JSONEditorActionParams = {
     val __obj = js.Dynamic.literal()
-    if (clone != null) __obj.updateDynamic("clone")(clone)
+    if (clone != null) __obj.updateDynamic("clone")(clone.asInstanceOf[js.Any])
     if (endIndex != null) __obj.updateDynamic("endIndex")(endIndex.asInstanceOf[js.Any])
-    if (endParent != null) __obj.updateDynamic("endParent")(endParent)
+    if (endParent != null) __obj.updateDynamic("endParent")(endParent.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (newType != null) __obj.updateDynamic("newType")(newType)
-    if (newValue != null) __obj.updateDynamic("newValue")(newValue)
-    if (node != null) __obj.updateDynamic("node")(node)
-    if (oldType != null) __obj.updateDynamic("oldType")(oldType)
-    if (oldValue != null) __obj.updateDynamic("oldValue")(oldValue)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (newType != null) __obj.updateDynamic("newType")(newType.asInstanceOf[js.Any])
+    if (newValue != null) __obj.updateDynamic("newValue")(newValue.asInstanceOf[js.Any])
+    if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
+    if (oldType != null) __obj.updateDynamic("oldType")(oldType.asInstanceOf[js.Any])
+    if (oldValue != null) __obj.updateDynamic("oldValue")(oldValue.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
-    if (startParent != null) __obj.updateDynamic("startParent")(startParent)
+    if (startParent != null) __obj.updateDynamic("startParent")(startParent.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSONEditorActionParams]
   }
 }

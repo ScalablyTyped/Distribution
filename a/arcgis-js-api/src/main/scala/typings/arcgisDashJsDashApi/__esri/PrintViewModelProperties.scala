@@ -44,10 +44,10 @@ object PrintViewModelProperties {
     view: MapViewProperties = null
   ): PrintViewModelProperties = {
     val __obj = js.Dynamic.literal()
-    if (printServiceUrl != null) __obj.updateDynamic("printServiceUrl")(printServiceUrl)
-    if (!js.isUndefined(scaleEnabled)) __obj.updateDynamic("scaleEnabled")(scaleEnabled)
+    if (printServiceUrl != null) __obj.updateDynamic("printServiceUrl")(printServiceUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(scaleEnabled)) __obj.updateDynamic("scaleEnabled")(scaleEnabled.asInstanceOf[js.Any])
     if (updateDelay != null) __obj.updateDynamic("updateDelay")(updateDelay.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view)
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrintViewModelProperties]
   }
 }

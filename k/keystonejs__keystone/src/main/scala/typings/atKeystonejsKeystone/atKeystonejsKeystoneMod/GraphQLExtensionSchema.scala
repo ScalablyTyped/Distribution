@@ -19,9 +19,9 @@ object GraphQLExtensionSchema {
     types: js.Array[Anon_Type] = null
   ): GraphQLExtensionSchema = {
     val __obj = js.Dynamic.literal()
-    if (mutations != null) __obj.updateDynamic("mutations")(mutations)
-    if (queries != null) __obj.updateDynamic("queries")(queries)
-    if (types != null) __obj.updateDynamic("types")(types)
+    if (mutations != null) __obj.updateDynamic("mutations")(mutations.asInstanceOf[js.Any])
+    if (queries != null) __obj.updateDynamic("queries")(queries.asInstanceOf[js.Any])
+    if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLExtensionSchema]
   }
 }

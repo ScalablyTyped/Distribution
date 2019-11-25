@@ -12,7 +12,7 @@ trait ExtensionAuthorization extends js.Object {
 object ExtensionAuthorization {
   @scala.inline
   def apply(id: String, scopes: js.Array[String]): ExtensionAuthorization = {
-    val __obj = js.Dynamic.literal(id = id, scopes = scopes)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], scopes = scopes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExtensionAuthorization]
   }

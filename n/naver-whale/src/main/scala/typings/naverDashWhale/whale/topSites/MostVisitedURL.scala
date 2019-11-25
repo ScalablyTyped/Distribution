@@ -19,7 +19,7 @@ trait MostVisitedURL extends js.Object {
 object MostVisitedURL {
   @scala.inline
   def apply(from_history: Boolean, title: String, url: String): MostVisitedURL = {
-    val __obj = js.Dynamic.literal(from_history = from_history, title = title, url = url)
+    val __obj = js.Dynamic.literal(from_history = from_history.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MostVisitedURL]
   }

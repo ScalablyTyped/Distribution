@@ -12,7 +12,7 @@ trait NormalizedReadResult extends js.Object {
 object NormalizedReadResult {
   @scala.inline
   def apply(packageJson: NormalizedPackageJson, path: String): NormalizedReadResult = {
-    val __obj = js.Dynamic.literal(packageJson = packageJson, path = path)
+    val __obj = js.Dynamic.literal(packageJson = packageJson.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NormalizedReadResult]
   }

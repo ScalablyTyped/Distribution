@@ -27,8 +27,8 @@ object IEphemeralKey {
     `object`: ephemeral_key,
     secret: String
   ): IEphemeralKey = {
-    val __obj = js.Dynamic.literal(associated_objects = associated_objects, created = created, expires = expires, id = id, livemode = livemode, secret = secret)
-    __obj.updateDynamic("object")(`object`)
+    val __obj = js.Dynamic.literal(associated_objects = associated_objects.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], expires = expires.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEphemeralKey]
   }
 }

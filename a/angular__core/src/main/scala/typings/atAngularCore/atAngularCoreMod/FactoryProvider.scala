@@ -27,9 +27,9 @@ object FactoryProvider {
     deps: js.Array[_] = null,
     multi: js.UndefOr[Boolean] = js.undefined
   ): FactoryProvider = {
-    val __obj = js.Dynamic.literal(provide = provide, useFactory = useFactory)
-    if (deps != null) __obj.updateDynamic("deps")(deps)
-    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi)
+    val __obj = js.Dynamic.literal(provide = provide.asInstanceOf[js.Any], useFactory = useFactory.asInstanceOf[js.Any])
+    if (deps != null) __obj.updateDynamic("deps")(deps.asInstanceOf[js.Any])
+    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi.asInstanceOf[js.Any])
     __obj.asInstanceOf[FactoryProvider]
   }
 }

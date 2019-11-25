@@ -40,10 +40,10 @@ object DeviceStates {
     SIMPresent: js.UndefOr[Boolean] = js.undefined,
     Scanning: js.UndefOr[Boolean] = js.undefined
   ): DeviceStates = {
-    val __obj = js.Dynamic.literal(State = State, Type = Type)
-    if (SIMLockStatus != null) __obj.updateDynamic("SIMLockStatus")(SIMLockStatus)
-    if (!js.isUndefined(SIMPresent)) __obj.updateDynamic("SIMPresent")(SIMPresent)
-    if (!js.isUndefined(Scanning)) __obj.updateDynamic("Scanning")(Scanning)
+    val __obj = js.Dynamic.literal(State = State.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
+    if (SIMLockStatus != null) __obj.updateDynamic("SIMLockStatus")(SIMLockStatus.asInstanceOf[js.Any])
+    if (!js.isUndefined(SIMPresent)) __obj.updateDynamic("SIMPresent")(SIMPresent.asInstanceOf[js.Any])
+    if (!js.isUndefined(Scanning)) __obj.updateDynamic("Scanning")(Scanning.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceStates]
   }
 }

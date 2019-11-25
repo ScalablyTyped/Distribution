@@ -14,8 +14,8 @@ trait strings extends MDCStrings {
 object strings {
   @scala.inline
   def apply(SELECTED_EVENT: `MDCTab:selected`, StringDictionary: StringDictionary[String] = null): strings = {
-    val __obj = js.Dynamic.literal(SELECTED_EVENT = SELECTED_EVENT)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(SELECTED_EVENT = SELECTED_EVENT.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[strings]
   }
 }

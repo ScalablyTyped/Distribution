@@ -12,7 +12,7 @@ object Anon_Selected {
   @scala.inline
   def apply(selected: js.UndefOr[Boolean] = js.undefined): Anon_Selected = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Selected]
   }
 }

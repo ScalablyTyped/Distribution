@@ -30,9 +30,9 @@ object SlideVisibleLayersProperties {
     id: String = null,
     sublayerIds: js.Array[Double] = null
   ): SlideVisibleLayersProperties = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (sublayerIds != null) __obj.updateDynamic("sublayerIds")(sublayerIds)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (sublayerIds != null) __obj.updateDynamic("sublayerIds")(sublayerIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[SlideVisibleLayersProperties]
   }
 }

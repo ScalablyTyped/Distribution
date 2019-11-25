@@ -31,13 +31,13 @@ object Anon_AssumeImmutableResults {
     queryDeduplication: js.UndefOr[Boolean] = js.undefined,
     ssrMode: js.UndefOr[Boolean] = js.undefined
   ): Anon_AssumeImmutableResults[TStore] = {
-    val __obj = js.Dynamic.literal(link = link, store = store)
-    if (!js.isUndefined(assumeImmutableResults)) __obj.updateDynamic("assumeImmutableResults")(assumeImmutableResults)
-    if (clientAwareness != null) __obj.updateDynamic("clientAwareness")(clientAwareness)
-    if (localState != null) __obj.updateDynamic("localState")(localState)
+    val __obj = js.Dynamic.literal(link = link.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any])
+    if (!js.isUndefined(assumeImmutableResults)) __obj.updateDynamic("assumeImmutableResults")(assumeImmutableResults.asInstanceOf[js.Any])
+    if (clientAwareness != null) __obj.updateDynamic("clientAwareness")(clientAwareness.asInstanceOf[js.Any])
+    if (localState != null) __obj.updateDynamic("localState")(localState.asInstanceOf[js.Any])
     if (onBroadcast != null) __obj.updateDynamic("onBroadcast")(js.Any.fromFunction0(onBroadcast))
-    if (!js.isUndefined(queryDeduplication)) __obj.updateDynamic("queryDeduplication")(queryDeduplication)
-    if (!js.isUndefined(ssrMode)) __obj.updateDynamic("ssrMode")(ssrMode)
+    if (!js.isUndefined(queryDeduplication)) __obj.updateDynamic("queryDeduplication")(queryDeduplication.asInstanceOf[js.Any])
+    if (!js.isUndefined(ssrMode)) __obj.updateDynamic("ssrMode")(ssrMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AssumeImmutableResults[TStore]]
   }
 }

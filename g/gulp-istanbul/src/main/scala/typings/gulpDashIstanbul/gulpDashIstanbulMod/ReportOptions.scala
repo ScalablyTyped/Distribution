@@ -21,10 +21,10 @@ object ReportOptions {
     reporters: js.Array[String] = null
   ): ReportOptions = {
     val __obj = js.Dynamic.literal()
-    if (coverageVariable != null) __obj.updateDynamic("coverageVariable")(coverageVariable)
-    if (dir != null) __obj.updateDynamic("dir")(dir)
-    if (reportOpts != null) __obj.updateDynamic("reportOpts")(reportOpts)
-    if (reporters != null) __obj.updateDynamic("reporters")(reporters)
+    if (coverageVariable != null) __obj.updateDynamic("coverageVariable")(coverageVariable.asInstanceOf[js.Any])
+    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
+    if (reportOpts != null) __obj.updateDynamic("reportOpts")(reportOpts.asInstanceOf[js.Any])
+    if (reporters != null) __obj.updateDynamic("reporters")(reporters.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportOptions]
   }
 }

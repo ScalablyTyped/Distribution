@@ -13,7 +13,7 @@ object ListCustomersResponse {
   @scala.inline
   def apply(customers: js.Array[Company] = null): ListCustomersResponse = {
     val __obj = js.Dynamic.literal()
-    if (customers != null) __obj.updateDynamic("customers")(customers)
+    if (customers != null) __obj.updateDynamic("customers")(customers.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListCustomersResponse]
   }
 }

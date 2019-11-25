@@ -39,14 +39,14 @@ object CreateClientOptions {
     retryOptions: RetryOptions = null,
     timeout: Int | Double = null
   ): CreateClientOptions = {
-    val __obj = js.Dynamic.literal(key = key)
-    if (Promise != null) __obj.updateDynamic("Promise")(Promise)
-    if (channel != null) __obj.updateDynamic("channel")(channel)
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId)
-    if (clientSecret != null) __obj.updateDynamic("clientSecret")(clientSecret)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (rate != null) __obj.updateDynamic("rate")(rate)
-    if (retryOptions != null) __obj.updateDynamic("retryOptions")(retryOptions)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+    if (Promise != null) __obj.updateDynamic("Promise")(Promise.asInstanceOf[js.Any])
+    if (channel != null) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
+    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
+    if (clientSecret != null) __obj.updateDynamic("clientSecret")(clientSecret.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (rate != null) __obj.updateDynamic("rate")(rate.asInstanceOf[js.Any])
+    if (retryOptions != null) __obj.updateDynamic("retryOptions")(retryOptions.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateClientOptions]
   }

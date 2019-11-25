@@ -13,7 +13,7 @@ trait TeamsAddOrUpdateMembershipResponse extends js.Object {
 object TeamsAddOrUpdateMembershipResponse {
   @scala.inline
   def apply(role: String, state: String, url: String): TeamsAddOrUpdateMembershipResponse = {
-    val __obj = js.Dynamic.literal(role = role, state = state, url = url)
+    val __obj = js.Dynamic.literal(role = role.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TeamsAddOrUpdateMembershipResponse]
   }

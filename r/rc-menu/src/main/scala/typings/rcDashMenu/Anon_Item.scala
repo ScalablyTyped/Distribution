@@ -16,7 +16,7 @@ trait Anon_Item extends js.Object {
 object Anon_Item {
   @scala.inline
   def apply(item: ReactInstance, key: Key, open: Boolean, trigger: String): Anon_Item = {
-    val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], open = open, trigger = trigger)
+    val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any], trigger = trigger.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Item]
   }

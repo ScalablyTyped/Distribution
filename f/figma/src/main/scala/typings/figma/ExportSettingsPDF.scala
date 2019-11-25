@@ -15,9 +15,9 @@ trait ExportSettingsPDF extends ExportSettings {
 object ExportSettingsPDF {
   @scala.inline
   def apply(format: PDF, contentsOnly: js.UndefOr[Boolean] = js.undefined, suffix: String = null): ExportSettingsPDF = {
-    val __obj = js.Dynamic.literal(format = format)
-    if (!js.isUndefined(contentsOnly)) __obj.updateDynamic("contentsOnly")(contentsOnly)
-    if (suffix != null) __obj.updateDynamic("suffix")(suffix)
+    val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
+    if (!js.isUndefined(contentsOnly)) __obj.updateDynamic("contentsOnly")(contentsOnly.asInstanceOf[js.Any])
+    if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportSettingsPDF]
   }
 }

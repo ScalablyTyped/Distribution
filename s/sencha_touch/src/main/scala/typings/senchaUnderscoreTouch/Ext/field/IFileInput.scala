@@ -65,40 +65,30 @@ object IFileInput {
     getCapture: () => _ = null,
     getFiles: () => FileList = null,
     getMultiple: () => Boolean = null,
-    getType: () => java.lang.String = null,
     getValue: () => java.lang.String = null,
     me: js.Any = null,
-    name: java.lang.String = null,
     newValue: js.Any = null,
     setAccept: /* accept */ js.UndefOr[js.Any] => Unit = null,
     setCapture: /* capture */ js.UndefOr[js.Any] => Unit = null,
     setMultiple: /* multiple */ js.UndefOr[Boolean] => Unit = null,
     setName: /* name */ js.UndefOr[js.Any] => Unit = null,
-    setType: /* type */ js.UndefOr[java.lang.String] => Unit = null,
-    `type`: java.lang.String = null,
-    updateMultiple: () => Unit = null,
-    value: js.Any = null
+    updateMultiple: () => Unit = null
   ): IFileInput = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IInput)
+    if (IInput != null) js.Dynamic.global.Object.assign(__obj, IInput)
     if (applyCapture != null) __obj.updateDynamic("applyCapture")(js.Any.fromFunction1(applyCapture))
     if (getAccept != null) __obj.updateDynamic("getAccept")(js.Any.fromFunction0(getAccept))
     if (getCapture != null) __obj.updateDynamic("getCapture")(js.Any.fromFunction0(getCapture))
     if (getFiles != null) __obj.updateDynamic("getFiles")(js.Any.fromFunction0(getFiles))
     if (getMultiple != null) __obj.updateDynamic("getMultiple")(js.Any.fromFunction0(getMultiple))
-    if (getType != null) __obj.updateDynamic("getType")(js.Any.fromFunction0(getType))
     if (getValue != null) __obj.updateDynamic("getValue")(js.Any.fromFunction0(getValue))
-    if (me != null) __obj.updateDynamic("me")(me)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (newValue != null) __obj.updateDynamic("newValue")(newValue)
+    if (me != null) __obj.updateDynamic("me")(me.asInstanceOf[js.Any])
+    if (newValue != null) __obj.updateDynamic("newValue")(newValue.asInstanceOf[js.Any])
     if (setAccept != null) __obj.updateDynamic("setAccept")(js.Any.fromFunction1(setAccept))
     if (setCapture != null) __obj.updateDynamic("setCapture")(js.Any.fromFunction1(setCapture))
     if (setMultiple != null) __obj.updateDynamic("setMultiple")(js.Any.fromFunction1(setMultiple))
     if (setName != null) __obj.updateDynamic("setName")(js.Any.fromFunction1(setName))
-    if (setType != null) __obj.updateDynamic("setType")(js.Any.fromFunction1(setType))
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
     if (updateMultiple != null) __obj.updateDynamic("updateMultiple")(js.Any.fromFunction0(updateMultiple))
-    if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[IFileInput]
   }
 }

@@ -13,8 +13,8 @@ trait ClientContext extends js.Object {
 object ClientContext {
   @scala.inline
   def apply(client: ClientContextClient, env: ClientContextEnv, Custom: js.Any = null): ClientContext = {
-    val __obj = js.Dynamic.literal(client = client, env = env)
-    if (Custom != null) __obj.updateDynamic("Custom")(Custom)
+    val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any])
+    if (Custom != null) __obj.updateDynamic("Custom")(Custom.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientContext]
   }
 }

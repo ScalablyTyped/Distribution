@@ -1,6 +1,5 @@
 package typings.asana.asanaMod.auth
 
-import typings.bluebird.bluebirdMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,7 +39,7 @@ class OauthAuthenticatorCls protected () extends OauthAuthenticator {
     * @return
     */
   /* CompleteClass */
-  override def establishCredentials(): ^[Unit] = js.native
+  override def establishCredentials(): typings.bluebird.bluebirdMod.^[Unit] = js.native
   /**
     * Attempts to refresh credentials, if possible, given the current credentials.
     *
@@ -50,6 +49,6 @@ class OauthAuthenticatorCls protected () extends OauthAuthenticator {
     * @return
     */
   /* CompleteClass */
-  override def refreshCredentials(): ^[Boolean] = js.native
+  override def refreshCredentials(): typings.bluebird.bluebirdMod.^[Boolean] = js.native
 }
 

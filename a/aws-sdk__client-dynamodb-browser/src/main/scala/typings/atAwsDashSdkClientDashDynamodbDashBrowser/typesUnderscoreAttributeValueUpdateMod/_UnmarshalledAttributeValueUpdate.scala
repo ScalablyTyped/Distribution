@@ -21,7 +21,7 @@ object _UnmarshalledAttributeValueUpdate {
   def apply(Action: ADD | PUT | DELETE | String = null, Value: _UnmarshalledAttributeValue = null): _UnmarshalledAttributeValueUpdate = {
     val __obj = js.Dynamic.literal()
     if (Action != null) __obj.updateDynamic("Action")(Action.asInstanceOf[js.Any])
-    if (Value != null) __obj.updateDynamic("Value")(Value)
+    if (Value != null) __obj.updateDynamic("Value")(Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledAttributeValueUpdate]
   }
 }

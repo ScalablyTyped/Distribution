@@ -26,9 +26,9 @@ object FingerprintOptions {
   @scala.inline
   def apply(delimiter: String = null, encoding: hex | binary = null, md: MessageDigest = null): FingerprintOptions = {
     val __obj = js.Dynamic.literal()
-    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
+    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (md != null) __obj.updateDynamic("md")(md)
+    if (md != null) __obj.updateDynamic("md")(md.asInstanceOf[js.Any])
     __obj.asInstanceOf[FingerprintOptions]
   }
 }

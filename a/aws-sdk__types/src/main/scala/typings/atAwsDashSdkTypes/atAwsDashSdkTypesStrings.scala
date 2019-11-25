@@ -36,7 +36,7 @@ object atAwsDashSdkTypesStrings {
   sealed trait ec2 extends SupportedProtocol
   
   @js.native
-  sealed trait error extends LogLevel
+  sealed trait error_ extends LogLevel
   
   @js.native
   sealed trait finalize extends Step
@@ -145,7 +145,7 @@ object atAwsDashSdkTypesStrings {
   @scala.inline
   def ec2: ec2 = "ec2".asInstanceOf[ec2]
   @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  def error_ : error_ = "error".asInstanceOf[error_]
   @scala.inline
   def float: float = "float".asInstanceOf[float]
   @scala.inline

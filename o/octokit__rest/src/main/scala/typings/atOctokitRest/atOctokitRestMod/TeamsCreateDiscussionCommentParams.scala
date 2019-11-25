@@ -16,7 +16,7 @@ trait TeamsCreateDiscussionCommentParams extends js.Object {
 object TeamsCreateDiscussionCommentParams {
   @scala.inline
   def apply(body: String, discussion_number: Double, team_id: Double): TeamsCreateDiscussionCommentParams = {
-    val __obj = js.Dynamic.literal(body = body, discussion_number = discussion_number, team_id = team_id)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], discussion_number = discussion_number.asInstanceOf[js.Any], team_id = team_id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TeamsCreateDiscussionCommentParams]
   }

@@ -11,7 +11,7 @@ trait Request extends js.Object {
 object Request {
   @scala.inline
   def apply(body: js.Any): Request = {
-    val __obj = js.Dynamic.literal(body = body)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Request]
   }

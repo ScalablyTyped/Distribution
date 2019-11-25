@@ -44,9 +44,9 @@ object SubprocessBashifyOptions {
     shiftArgv0: js.UndefOr[Boolean] = js.undefined
   ): SubprocessBashifyOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(maskArgv0)) __obj.updateDynamic("maskArgv0")(maskArgv0)
-    if (!js.isUndefined(maskArgv1)) __obj.updateDynamic("maskArgv1")(maskArgv1)
-    if (!js.isUndefined(shiftArgv0)) __obj.updateDynamic("shiftArgv0")(shiftArgv0)
+    if (!js.isUndefined(maskArgv0)) __obj.updateDynamic("maskArgv0")(maskArgv0.asInstanceOf[js.Any])
+    if (!js.isUndefined(maskArgv1)) __obj.updateDynamic("maskArgv1")(maskArgv1.asInstanceOf[js.Any])
+    if (!js.isUndefined(shiftArgv0)) __obj.updateDynamic("shiftArgv0")(shiftArgv0.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubprocessBashifyOptions]
   }
 }

@@ -41,11 +41,11 @@ object SegmentMetricFilter {
     scope: String = null
   ): SegmentMetricFilter = {
     val __obj = js.Dynamic.literal()
-    if (comparisonValue != null) __obj.updateDynamic("comparisonValue")(comparisonValue)
-    if (maxComparisonValue != null) __obj.updateDynamic("maxComparisonValue")(maxComparisonValue)
-    if (metricName != null) __obj.updateDynamic("metricName")(metricName)
-    if (operator != null) __obj.updateDynamic("operator")(operator)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (comparisonValue != null) __obj.updateDynamic("comparisonValue")(comparisonValue.asInstanceOf[js.Any])
+    if (maxComparisonValue != null) __obj.updateDynamic("maxComparisonValue")(maxComparisonValue.asInstanceOf[js.Any])
+    if (metricName != null) __obj.updateDynamic("metricName")(metricName.asInstanceOf[js.Any])
+    if (operator != null) __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[SegmentMetricFilter]
   }
 }

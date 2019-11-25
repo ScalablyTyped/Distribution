@@ -24,7 +24,7 @@ object IPreparedParsed {
     text: String,
     values: js.Array[_]
   ): IPreparedParsed = {
-    val __obj = js.Dynamic.literal(binary = binary, name = name, rowMode = rowMode.asInstanceOf[js.Any], rows = rows, text = text, values = values)
+    val __obj = js.Dynamic.literal(binary = binary.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], rowMode = rowMode.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IPreparedParsed]
   }

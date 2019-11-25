@@ -20,7 +20,7 @@ object ExpirationPluginConfig {
     val __obj = js.Dynamic.literal()
     if (maxAgeSeconds != null) __obj.updateDynamic("maxAgeSeconds")(maxAgeSeconds.asInstanceOf[js.Any])
     if (maxEntries != null) __obj.updateDynamic("maxEntries")(maxEntries.asInstanceOf[js.Any])
-    if (!js.isUndefined(purgeOnQuotaError)) __obj.updateDynamic("purgeOnQuotaError")(purgeOnQuotaError)
+    if (!js.isUndefined(purgeOnQuotaError)) __obj.updateDynamic("purgeOnQuotaError")(purgeOnQuotaError.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExpirationPluginConfig]
   }
 }

@@ -59,20 +59,20 @@ object CollectionAggregationOptions {
     session: ClientSession = null
   ): CollectionAggregationOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowDiskUse)) __obj.updateDynamic("allowDiskUse")(allowDiskUse)
-    if (!js.isUndefined(bypassDocumentValidation)) __obj.updateDynamic("bypassDocumentValidation")(bypassDocumentValidation)
-    if (collation != null) __obj.updateDynamic("collation")(collation)
-    if (comment != null) __obj.updateDynamic("comment")(comment)
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor)
-    if (!js.isUndefined(explain)) __obj.updateDynamic("explain")(explain)
+    if (!js.isUndefined(allowDiskUse)) __obj.updateDynamic("allowDiskUse")(allowDiskUse.asInstanceOf[js.Any])
+    if (!js.isUndefined(bypassDocumentValidation)) __obj.updateDynamic("bypassDocumentValidation")(bypassDocumentValidation.asInstanceOf[js.Any])
+    if (collation != null) __obj.updateDynamic("collation")(collation.asInstanceOf[js.Any])
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
+    if (!js.isUndefined(explain)) __obj.updateDynamic("explain")(explain.asInstanceOf[js.Any])
     if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
     if (maxTimeMS != null) __obj.updateDynamic("maxTimeMS")(maxTimeMS.asInstanceOf[js.Any])
-    if (!js.isUndefined(promoteBuffers)) __obj.updateDynamic("promoteBuffers")(promoteBuffers)
-    if (!js.isUndefined(promoteLongs)) __obj.updateDynamic("promoteLongs")(promoteLongs)
-    if (!js.isUndefined(promoteValues)) __obj.updateDynamic("promoteValues")(promoteValues)
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw)
-    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference)
-    if (session != null) __obj.updateDynamic("session")(session)
+    if (!js.isUndefined(promoteBuffers)) __obj.updateDynamic("promoteBuffers")(promoteBuffers.asInstanceOf[js.Any])
+    if (!js.isUndefined(promoteLongs)) __obj.updateDynamic("promoteLongs")(promoteLongs.asInstanceOf[js.Any])
+    if (!js.isUndefined(promoteValues)) __obj.updateDynamic("promoteValues")(promoteValues.asInstanceOf[js.Any])
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
+    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])
+    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectionAggregationOptions]
   }
 }

@@ -31,14 +31,8 @@ trait RootPath extends js.Object {
 
 object RootPath {
   @scala.inline
-  def apply(
-    path: String,
-    require: String => js.Any,
-    resolve: String => String,
-    setPath: String => Unit,
-    toString: () => String
-  ): RootPath = {
-    val __obj = js.Dynamic.literal(path = path, require = js.Any.fromFunction1(require), resolve = js.Any.fromFunction1(resolve), setPath = js.Any.fromFunction1(setPath), toString = js.Any.fromFunction0(toString))
+  def apply(path: String, require: String => js.Any, resolve: String => String, setPath: String => Unit): RootPath = {
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], require = js.Any.fromFunction1(require), resolve = js.Any.fromFunction1(resolve), setPath = js.Any.fromFunction1(setPath))
   
     __obj.asInstanceOf[RootPath]
   }

@@ -12,8 +12,8 @@ trait ColumnInfo extends js.Object {
 object ColumnInfo {
   @scala.inline
   def apply(name: String, `type`: DataTypeInfo): ColumnInfo = {
-    val __obj = js.Dynamic.literal(name = name)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnInfo]
   }
 }

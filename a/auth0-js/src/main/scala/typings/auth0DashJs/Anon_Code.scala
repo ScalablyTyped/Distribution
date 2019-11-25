@@ -28,10 +28,10 @@ object Anon_Code {
     scope: String = null
   ): Anon_Code = {
     val __obj = js.Dynamic.literal()
-    if (redirectUri != null) __obj.updateDynamic("redirectUri")(redirectUri)
+    if (redirectUri != null) __obj.updateDynamic("redirectUri")(redirectUri.asInstanceOf[js.Any])
     if (responseMode != null) __obj.updateDynamic("responseMode")(responseMode.asInstanceOf[js.Any])
     if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
-    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Code]
   }
 }

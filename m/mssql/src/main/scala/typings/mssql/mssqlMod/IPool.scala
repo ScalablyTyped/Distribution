@@ -24,25 +24,25 @@ object IPool {
   @scala.inline
   def apply(
     Promise: js.Any = null,
-    acquireTimeoutMillis: Int | Double = null,
+    acquireTimeoutMillis: scala.Int | Double = null,
     autostart: js.UndefOr[Boolean] = js.undefined,
-    evictionRunIntervalMillis: Int | Double = null,
+    evictionRunIntervalMillis: scala.Int | Double = null,
     fifo: js.UndefOr[Boolean] = js.undefined,
-    idleTimeoutMillis: Int | Double = null,
-    max: Int | Double = null,
-    maxWaitingClients: Int | Double = null,
-    min: Int | Double = null,
-    numTestsPerRun: Int | Double = null,
-    priorityRange: Int | Double = null,
-    softIdleTimeoutMillis: Int | Double = null,
+    idleTimeoutMillis: scala.Int | Double = null,
+    max: scala.Int | Double = null,
+    maxWaitingClients: scala.Int | Double = null,
+    min: scala.Int | Double = null,
+    numTestsPerRun: scala.Int | Double = null,
+    priorityRange: scala.Int | Double = null,
+    softIdleTimeoutMillis: scala.Int | Double = null,
     testOnBorrow: js.UndefOr[Boolean] = js.undefined
   ): IPool = {
     val __obj = js.Dynamic.literal()
-    if (Promise != null) __obj.updateDynamic("Promise")(Promise)
+    if (Promise != null) __obj.updateDynamic("Promise")(Promise.asInstanceOf[js.Any])
     if (acquireTimeoutMillis != null) __obj.updateDynamic("acquireTimeoutMillis")(acquireTimeoutMillis.asInstanceOf[js.Any])
-    if (!js.isUndefined(autostart)) __obj.updateDynamic("autostart")(autostart)
+    if (!js.isUndefined(autostart)) __obj.updateDynamic("autostart")(autostart.asInstanceOf[js.Any])
     if (evictionRunIntervalMillis != null) __obj.updateDynamic("evictionRunIntervalMillis")(evictionRunIntervalMillis.asInstanceOf[js.Any])
-    if (!js.isUndefined(fifo)) __obj.updateDynamic("fifo")(fifo)
+    if (!js.isUndefined(fifo)) __obj.updateDynamic("fifo")(fifo.asInstanceOf[js.Any])
     if (idleTimeoutMillis != null) __obj.updateDynamic("idleTimeoutMillis")(idleTimeoutMillis.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (maxWaitingClients != null) __obj.updateDynamic("maxWaitingClients")(maxWaitingClients.asInstanceOf[js.Any])
@@ -50,7 +50,7 @@ object IPool {
     if (numTestsPerRun != null) __obj.updateDynamic("numTestsPerRun")(numTestsPerRun.asInstanceOf[js.Any])
     if (priorityRange != null) __obj.updateDynamic("priorityRange")(priorityRange.asInstanceOf[js.Any])
     if (softIdleTimeoutMillis != null) __obj.updateDynamic("softIdleTimeoutMillis")(softIdleTimeoutMillis.asInstanceOf[js.Any])
-    if (!js.isUndefined(testOnBorrow)) __obj.updateDynamic("testOnBorrow")(testOnBorrow)
+    if (!js.isUndefined(testOnBorrow)) __obj.updateDynamic("testOnBorrow")(testOnBorrow.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPool]
   }
 }

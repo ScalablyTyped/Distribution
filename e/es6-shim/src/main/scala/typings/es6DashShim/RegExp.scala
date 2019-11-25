@@ -23,7 +23,7 @@ trait RegExp extends js.Object {
 object RegExp {
   @scala.inline
   def apply(flags: java.lang.String): RegExp = {
-    val __obj = js.Dynamic.literal(flags = flags)
+    val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RegExp]
   }

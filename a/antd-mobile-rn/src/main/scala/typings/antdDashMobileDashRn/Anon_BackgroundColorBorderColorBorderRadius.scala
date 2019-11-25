@@ -23,7 +23,7 @@ object Anon_BackgroundColorBorderColorBorderRadius {
     flexDirection: String,
     paddingBottom: Double
   ): Anon_BackgroundColorBorderColorBorderRadius = {
-    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, borderColor = borderColor, borderRadius = borderRadius, borderWidth = borderWidth, flexDirection = flexDirection, paddingBottom = paddingBottom)
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], borderColor = borderColor.asInstanceOf[js.Any], borderRadius = borderRadius.asInstanceOf[js.Any], borderWidth = borderWidth.asInstanceOf[js.Any], flexDirection = flexDirection.asInstanceOf[js.Any], paddingBottom = paddingBottom.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BackgroundColorBorderColorBorderRadius]
   }

@@ -18,8 +18,8 @@ object OmnitureSettings {
     omnitureIntegrationEnabled: js.UndefOr[Boolean] = js.undefined
   ): OmnitureSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(omnitureCostDataEnabled)) __obj.updateDynamic("omnitureCostDataEnabled")(omnitureCostDataEnabled)
-    if (!js.isUndefined(omnitureIntegrationEnabled)) __obj.updateDynamic("omnitureIntegrationEnabled")(omnitureIntegrationEnabled)
+    if (!js.isUndefined(omnitureCostDataEnabled)) __obj.updateDynamic("omnitureCostDataEnabled")(omnitureCostDataEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(omnitureIntegrationEnabled)) __obj.updateDynamic("omnitureIntegrationEnabled")(omnitureIntegrationEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[OmnitureSettings]
   }
 }

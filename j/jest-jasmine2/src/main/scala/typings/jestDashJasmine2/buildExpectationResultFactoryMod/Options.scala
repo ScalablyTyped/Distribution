@@ -23,11 +23,11 @@ object Options {
     expected: js.Any = null,
     message: String = null
   ): Options = {
-    val __obj = js.Dynamic.literal(matcherName = matcherName, passed = passed)
-    if (actual != null) __obj.updateDynamic("actual")(actual)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (expected != null) __obj.updateDynamic("expected")(expected)
-    if (message != null) __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(matcherName = matcherName.asInstanceOf[js.Any], passed = passed.asInstanceOf[js.Any])
+    if (actual != null) __obj.updateDynamic("actual")(actual.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (expected != null) __obj.updateDynamic("expected")(expected.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

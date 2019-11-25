@@ -28,11 +28,11 @@ object Configuration {
     useFakeTimers: js.UndefOr[Boolean] = js.undefined
   ): Configuration = {
     val __obj = js.Dynamic.literal()
-    if (injectInto != null) __obj.updateDynamic("injectInto")(injectInto)
-    if (!js.isUndefined(injectIntoThis)) __obj.updateDynamic("injectIntoThis")(injectIntoThis)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (!js.isUndefined(useFakeServer)) __obj.updateDynamic("useFakeServer")(useFakeServer)
-    if (!js.isUndefined(useFakeTimers)) __obj.updateDynamic("useFakeTimers")(useFakeTimers)
+    if (injectInto != null) __obj.updateDynamic("injectInto")(injectInto.asInstanceOf[js.Any])
+    if (!js.isUndefined(injectIntoThis)) __obj.updateDynamic("injectIntoThis")(injectIntoThis.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (!js.isUndefined(useFakeServer)) __obj.updateDynamic("useFakeServer")(useFakeServer.asInstanceOf[js.Any])
+    if (!js.isUndefined(useFakeTimers)) __obj.updateDynamic("useFakeTimers")(useFakeTimers.asInstanceOf[js.Any])
     __obj.asInstanceOf[Configuration]
   }
 }

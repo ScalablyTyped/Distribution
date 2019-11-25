@@ -23,7 +23,7 @@ object Collection {
     direct: Anon_CallbackDoc[T],
     hookOptions: GlobalHookOptions
   ): Collection[T] = {
-    val __obj = js.Dynamic.literal(after = after, before = before, direct = direct, hookOptions = hookOptions)
+    val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any], direct = direct.asInstanceOf[js.Any], hookOptions = hookOptions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Collection[T]]
   }

@@ -15,7 +15,7 @@ trait TemplateCreatedMessageEvent extends MessageEvent {
 object TemplateCreatedMessageEvent {
   @scala.inline
   def apply(event: template_created, template_id: String, template_info: Anon_Ccroles): TemplateCreatedMessageEvent = {
-    val __obj = js.Dynamic.literal(event = event, template_id = template_id, template_info = template_info)
+    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], template_id = template_id.asInstanceOf[js.Any], template_info = template_info.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TemplateCreatedMessageEvent]
   }

@@ -25,11 +25,11 @@ object EventMap {
     `compiler-warning`: Anon_CompilerStatsAny,
     listening: Anon_Options
   ): EventMap = {
-    val __obj = js.Dynamic.literal(listening = listening)
-    __obj.updateDynamic("build-finished")(`build-finished`)
-    __obj.updateDynamic("build-started")(`build-started`)
-    __obj.updateDynamic("compiler-error")(`compiler-error`)
-    __obj.updateDynamic("compiler-warning")(`compiler-warning`)
+    val __obj = js.Dynamic.literal(listening = listening.asInstanceOf[js.Any])
+    __obj.updateDynamic("build-finished")(`build-finished`.asInstanceOf[js.Any])
+    __obj.updateDynamic("build-started")(`build-started`.asInstanceOf[js.Any])
+    __obj.updateDynamic("compiler-error")(`compiler-error`.asInstanceOf[js.Any])
+    __obj.updateDynamic("compiler-warning")(`compiler-warning`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventMap]
   }
 }

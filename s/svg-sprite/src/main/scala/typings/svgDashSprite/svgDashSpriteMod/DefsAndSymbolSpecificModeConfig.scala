@@ -28,15 +28,15 @@ object DefsAndSymbolSpecificModeConfig {
     sprite: String = null
   ): DefsAndSymbolSpecificModeConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bust)) __obj.updateDynamic("bust")(bust)
-    if (dest != null) __obj.updateDynamic("dest")(dest)
+    if (!js.isUndefined(bust)) __obj.updateDynamic("bust")(bust.asInstanceOf[js.Any])
+    if (dest != null) __obj.updateDynamic("dest")(dest.asInstanceOf[js.Any])
     if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions.asInstanceOf[js.Any])
     if (example != null) __obj.updateDynamic("example")(example.asInstanceOf[js.Any])
-    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`)
-    if (mode != null) __obj.updateDynamic("mode")(mode)
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
-    if (render != null) __obj.updateDynamic("render")(render)
-    if (sprite != null) __obj.updateDynamic("sprite")(sprite)
+    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    if (render != null) __obj.updateDynamic("render")(render.asInstanceOf[js.Any])
+    if (sprite != null) __obj.updateDynamic("sprite")(sprite.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefsAndSymbolSpecificModeConfig]
   }
 }

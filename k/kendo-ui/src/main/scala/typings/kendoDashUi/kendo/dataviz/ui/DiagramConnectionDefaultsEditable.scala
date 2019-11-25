@@ -18,9 +18,9 @@ object DiagramConnectionDefaultsEditable {
     tools: js.Array[DiagramConnectionDefaultsEditableTool] = null
   ): DiagramConnectionDefaultsEditable = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(drag)) __obj.updateDynamic("drag")(drag)
-    if (!js.isUndefined(remove)) __obj.updateDynamic("remove")(remove)
-    if (tools != null) __obj.updateDynamic("tools")(tools)
+    if (!js.isUndefined(drag)) __obj.updateDynamic("drag")(drag.asInstanceOf[js.Any])
+    if (!js.isUndefined(remove)) __obj.updateDynamic("remove")(remove.asInstanceOf[js.Any])
+    if (tools != null) __obj.updateDynamic("tools")(tools.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagramConnectionDefaultsEditable]
   }
 }

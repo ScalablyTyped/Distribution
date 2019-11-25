@@ -29,7 +29,7 @@ object ChecksListAnnotationsResponseItem {
     start_line: Double,
     title: String
   ): ChecksListAnnotationsResponseItem = {
-    val __obj = js.Dynamic.literal(annotation_level = annotation_level, end_column = end_column, end_line = end_line, message = message, path = path, raw_details = raw_details, start_column = start_column, start_line = start_line, title = title)
+    val __obj = js.Dynamic.literal(annotation_level = annotation_level.asInstanceOf[js.Any], end_column = end_column.asInstanceOf[js.Any], end_line = end_line.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], raw_details = raw_details.asInstanceOf[js.Any], start_column = start_column.asInstanceOf[js.Any], start_line = start_line.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChecksListAnnotationsResponseItem]
   }

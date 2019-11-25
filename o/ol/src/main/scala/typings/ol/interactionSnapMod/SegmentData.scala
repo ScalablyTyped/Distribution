@@ -13,7 +13,7 @@ trait SegmentData extends js.Object {
 object SegmentData {
   @scala.inline
   def apply(feature: typings.ol.featureMod.default, segment: js.Array[Coordinate]): SegmentData = {
-    val __obj = js.Dynamic.literal(feature = feature, segment = segment)
+    val __obj = js.Dynamic.literal(feature = feature.asInstanceOf[js.Any], segment = segment.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SegmentData]
   }

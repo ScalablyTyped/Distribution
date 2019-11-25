@@ -29,13 +29,13 @@ object HeightfieldOptions {
     if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
     if (collisionGroup != null) __obj.updateDynamic("collisionGroup")(collisionGroup.asInstanceOf[js.Any])
     if (collisionMask != null) __obj.updateDynamic("collisionMask")(collisionMask.asInstanceOf[js.Any])
-    if (!js.isUndefined(collisionResponse)) __obj.updateDynamic("collisionResponse")(collisionResponse)
+    if (!js.isUndefined(collisionResponse)) __obj.updateDynamic("collisionResponse")(collisionResponse.asInstanceOf[js.Any])
     if (elementWidth != null) __obj.updateDynamic("elementWidth")(elementWidth.asInstanceOf[js.Any])
-    if (heights != null) __obj.updateDynamic("heights")(heights)
+    if (heights != null) __obj.updateDynamic("heights")(heights.asInstanceOf[js.Any])
     if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
     if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (!js.isUndefined(sensor)) __obj.updateDynamic("sensor")(sensor)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(sensor)) __obj.updateDynamic("sensor")(sensor.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeightfieldOptions]
   }
 }

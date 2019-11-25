@@ -32,8 +32,8 @@ object IGraphQLToolsResolveInfo {
     variableValues: StringDictionary[js.Any],
     mergeInfo: MergeInfo = null
   ): IGraphQLToolsResolveInfo = {
-    val __obj = js.Dynamic.literal(fieldName = fieldName, fieldNodes = fieldNodes, fragments = fragments, operation = operation, parentType = parentType, path = path, returnType = returnType.asInstanceOf[js.Any], rootValue = rootValue, schema = schema, variableValues = variableValues)
-    if (mergeInfo != null) __obj.updateDynamic("mergeInfo")(mergeInfo)
+    val __obj = js.Dynamic.literal(fieldName = fieldName.asInstanceOf[js.Any], fieldNodes = fieldNodes.asInstanceOf[js.Any], fragments = fragments.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any], parentType = parentType.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any], rootValue = rootValue.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any], variableValues = variableValues.asInstanceOf[js.Any])
+    if (mergeInfo != null) __obj.updateDynamic("mergeInfo")(mergeInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGraphQLToolsResolveInfo]
   }
 }

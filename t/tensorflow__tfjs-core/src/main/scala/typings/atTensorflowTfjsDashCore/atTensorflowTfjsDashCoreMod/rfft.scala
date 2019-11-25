@@ -1,7 +1,6 @@
 package typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atTensorflowTfjsDashCore.distTypesMod.Rank
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,9 +10,9 @@ import scala.scalajs.js.annotation._
 object rfft
   extends TopLevel[
       js.Function2[
-        /* input */ typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank], 
+        /* input */ typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank], 
         /* fftLength */ js.UndefOr[Double], 
-        typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank]
+        typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
       ]
     ]
 

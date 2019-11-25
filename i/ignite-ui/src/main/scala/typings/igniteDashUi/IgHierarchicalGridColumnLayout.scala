@@ -36,10 +36,10 @@ object IgHierarchicalGridColumnLayout {
     primaryKey: String = null
   ): IgHierarchicalGridColumnLayout = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (foreignKey != null) __obj.updateDynamic("foreignKey")(foreignKey)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (primaryKey != null) __obj.updateDynamic("primaryKey")(primaryKey)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (foreignKey != null) __obj.updateDynamic("foreignKey")(foreignKey.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (primaryKey != null) __obj.updateDynamic("primaryKey")(primaryKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgHierarchicalGridColumnLayout]
   }
 }

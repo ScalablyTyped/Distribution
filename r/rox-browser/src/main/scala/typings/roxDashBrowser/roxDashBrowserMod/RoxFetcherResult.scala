@@ -20,8 +20,8 @@ object RoxFetcherResult {
     hasChanges: Boolean,
     errorDetails: String = null
   ): RoxFetcherResult = {
-    val __obj = js.Dynamic.literal(creationDate = creationDate, fetcherStatus = fetcherStatus, hasChanges = hasChanges)
-    if (errorDetails != null) __obj.updateDynamic("errorDetails")(errorDetails)
+    val __obj = js.Dynamic.literal(creationDate = creationDate.asInstanceOf[js.Any], fetcherStatus = fetcherStatus.asInstanceOf[js.Any], hasChanges = hasChanges.asInstanceOf[js.Any])
+    if (errorDetails != null) __obj.updateDynamic("errorDetails")(errorDetails.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoxFetcherResult]
   }
 }

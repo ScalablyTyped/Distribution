@@ -30,8 +30,8 @@ trait DecodeStringDict extends js.Object {
 object DecodeStringDict {
   @scala.inline
   def apply(source: Buffer, charset: String = null, length: Int | Double = null, position: Int | Double = null): DecodeStringDict = {
-    val __obj = js.Dynamic.literal(source = source)
-    if (charset != null) __obj.updateDynamic("charset")(charset)
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
+    if (charset != null) __obj.updateDynamic("charset")(charset.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecodeStringDict]

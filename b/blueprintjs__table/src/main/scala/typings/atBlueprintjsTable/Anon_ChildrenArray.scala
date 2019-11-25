@@ -31,7 +31,7 @@ object Anon_ChildrenArray {
     rowHeights: js.Array[Double],
     selectedRegions: js.Array[IRegion]
   ): Anon_ChildrenArray = {
-    val __obj = js.Dynamic.literal(childrenArray = childrenArray, columnIdToIndex = columnIdToIndex, columnWidths = columnWidths, focusedCell = focusedCell, numFrozenColumnsClamped = numFrozenColumnsClamped, numFrozenRowsClamped = numFrozenRowsClamped, rowHeights = rowHeights, selectedRegions = selectedRegions)
+    val __obj = js.Dynamic.literal(childrenArray = childrenArray.asInstanceOf[js.Any], columnIdToIndex = columnIdToIndex.asInstanceOf[js.Any], columnWidths = columnWidths.asInstanceOf[js.Any], focusedCell = focusedCell.asInstanceOf[js.Any], numFrozenColumnsClamped = numFrozenColumnsClamped.asInstanceOf[js.Any], numFrozenRowsClamped = numFrozenRowsClamped.asInstanceOf[js.Any], rowHeights = rowHeights.asInstanceOf[js.Any], selectedRegions = selectedRegions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ChildrenArray]
   }

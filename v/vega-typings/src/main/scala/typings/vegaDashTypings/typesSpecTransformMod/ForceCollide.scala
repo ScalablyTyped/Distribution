@@ -22,7 +22,7 @@ object ForceCollide {
     radius: Double | SignalRef | ExprRef = null,
     strength: Double | SignalRef = null
   ): ForceCollide = {
-    val __obj = js.Dynamic.literal(force = force)
+    val __obj = js.Dynamic.literal(force = force.asInstanceOf[js.Any])
     if (iterations != null) __obj.updateDynamic("iterations")(iterations.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
     if (strength != null) __obj.updateDynamic("strength")(strength.asInstanceOf[js.Any])

@@ -23,7 +23,7 @@ object UnderlyingSource {
     if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction1(cancel))
     if (pull != null) __obj.updateDynamic("pull")(js.Any.fromFunction1(pull))
     if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction1(start))
-    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnderlyingSource[R]]
   }
 }

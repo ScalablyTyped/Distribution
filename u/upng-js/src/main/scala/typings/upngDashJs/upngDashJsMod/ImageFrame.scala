@@ -14,7 +14,7 @@ trait ImageFrame extends js.Object {
 object ImageFrame {
   @scala.inline
   def apply(blend: Double, delay: Double, dispose: Double, rect: ImageFrameRect): ImageFrame = {
-    val __obj = js.Dynamic.literal(blend = blend, delay = delay, dispose = dispose, rect = rect)
+    val __obj = js.Dynamic.literal(blend = blend.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], dispose = dispose.asInstanceOf[js.Any], rect = rect.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ImageFrame]
   }

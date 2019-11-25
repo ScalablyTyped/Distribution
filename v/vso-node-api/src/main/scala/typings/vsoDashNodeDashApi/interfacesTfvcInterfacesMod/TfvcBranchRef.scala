@@ -44,7 +44,7 @@ object TfvcBranchRef {
     path: String,
     url: String
   ): TfvcBranchRef = {
-    val __obj = js.Dynamic.literal(_links = _links, createdDate = createdDate, description = description, isDeleted = isDeleted, owner = owner, path = path, url = url)
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], createdDate = createdDate.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], isDeleted = isDeleted.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TfvcBranchRef]
   }

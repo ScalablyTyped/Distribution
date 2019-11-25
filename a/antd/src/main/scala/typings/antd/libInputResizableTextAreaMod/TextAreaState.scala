@@ -15,8 +15,8 @@ object TextAreaState {
   @scala.inline
   def apply(resizing: js.UndefOr[Boolean] = js.undefined, textareaStyles: CSSProperties = null): TextAreaState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(resizing)) __obj.updateDynamic("resizing")(resizing)
-    if (textareaStyles != null) __obj.updateDynamic("textareaStyles")(textareaStyles)
+    if (!js.isUndefined(resizing)) __obj.updateDynamic("resizing")(resizing.asInstanceOf[js.Any])
+    if (textareaStyles != null) __obj.updateDynamic("textareaStyles")(textareaStyles.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextAreaState]
   }
 }

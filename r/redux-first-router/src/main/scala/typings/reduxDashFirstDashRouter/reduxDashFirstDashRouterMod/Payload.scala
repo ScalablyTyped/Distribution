@@ -14,8 +14,8 @@ object Payload {
   @scala.inline
   def apply(StringDictionary: /* key */ StringDictionary[js.Any] = null, query: Query = null): Payload = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (query != null) __obj.updateDynamic("query")(query)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     __obj.asInstanceOf[Payload]
   }
 }

@@ -17,8 +17,8 @@ object ZoomedInEventArgs {
   @scala.inline
   def apply(originalEvent: js.Any = null, zoomLevel: js.Any = null): ZoomedInEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent)
-    if (zoomLevel != null) __obj.updateDynamic("zoomLevel")(zoomLevel)
+    if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent.asInstanceOf[js.Any])
+    if (zoomLevel != null) __obj.updateDynamic("zoomLevel")(zoomLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZoomedInEventArgs]
   }
 }

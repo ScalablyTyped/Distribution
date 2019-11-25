@@ -15,7 +15,7 @@ trait Anon_BstrJobIdPFaxAccount extends js.Object {
 object Anon_BstrJobIdPFaxAccount {
   @scala.inline
   def apply(bstrJobId: String, pFaxAccount: FaxAccount, pJobStatus: FaxJobStatus): Anon_BstrJobIdPFaxAccount = {
-    val __obj = js.Dynamic.literal(bstrJobId = bstrJobId, pFaxAccount = pFaxAccount, pJobStatus = pJobStatus)
+    val __obj = js.Dynamic.literal(bstrJobId = bstrJobId.asInstanceOf[js.Any], pFaxAccount = pFaxAccount.asInstanceOf[js.Any], pJobStatus = pJobStatus.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BstrJobIdPFaxAccount]
   }

@@ -16,8 +16,8 @@ object AcceleratorTypesScopedList {
   @scala.inline
   def apply(acceleratorTypes: js.Array[AcceleratorType] = null, warning: Anon_Code = null): AcceleratorTypesScopedList = {
     val __obj = js.Dynamic.literal()
-    if (acceleratorTypes != null) __obj.updateDynamic("acceleratorTypes")(acceleratorTypes)
-    if (warning != null) __obj.updateDynamic("warning")(warning)
+    if (acceleratorTypes != null) __obj.updateDynamic("acceleratorTypes")(acceleratorTypes.asInstanceOf[js.Any])
+    if (warning != null) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
     __obj.asInstanceOf[AcceleratorTypesScopedList]
   }
 }

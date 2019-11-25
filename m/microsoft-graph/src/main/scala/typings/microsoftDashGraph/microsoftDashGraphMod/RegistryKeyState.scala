@@ -53,16 +53,16 @@ object RegistryKeyState {
     valueType: RegistryValueType = null
   ): RegistryKeyState = {
     val __obj = js.Dynamic.literal()
-    if (hive != null) __obj.updateDynamic("hive")(hive)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (oldKey != null) __obj.updateDynamic("oldKey")(oldKey)
-    if (oldValueData != null) __obj.updateDynamic("oldValueData")(oldValueData)
-    if (oldValueName != null) __obj.updateDynamic("oldValueName")(oldValueName)
-    if (operation != null) __obj.updateDynamic("operation")(operation)
+    if (hive != null) __obj.updateDynamic("hive")(hive.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (oldKey != null) __obj.updateDynamic("oldKey")(oldKey.asInstanceOf[js.Any])
+    if (oldValueData != null) __obj.updateDynamic("oldValueData")(oldValueData.asInstanceOf[js.Any])
+    if (oldValueName != null) __obj.updateDynamic("oldValueName")(oldValueName.asInstanceOf[js.Any])
+    if (operation != null) __obj.updateDynamic("operation")(operation.asInstanceOf[js.Any])
     if (processId != null) __obj.updateDynamic("processId")(processId.asInstanceOf[js.Any])
-    if (valueData != null) __obj.updateDynamic("valueData")(valueData)
-    if (valueName != null) __obj.updateDynamic("valueName")(valueName)
-    if (valueType != null) __obj.updateDynamic("valueType")(valueType)
+    if (valueData != null) __obj.updateDynamic("valueData")(valueData.asInstanceOf[js.Any])
+    if (valueName != null) __obj.updateDynamic("valueName")(valueName.asInstanceOf[js.Any])
+    if (valueType != null) __obj.updateDynamic("valueType")(valueType.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegistryKeyState]
   }
 }

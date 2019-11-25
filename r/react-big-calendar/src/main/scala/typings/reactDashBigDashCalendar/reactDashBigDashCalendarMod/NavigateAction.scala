@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait NavigateAction extends js.Object
 
+object NavigateAction {
+  @scala.inline
+  def DATE: typings.reactDashBigDashCalendar.reactDashBigDashCalendarStrings.DATE = this.cast("DATE")
+  @scala.inline
+  def NEXT: typings.reactDashBigDashCalendar.reactDashBigDashCalendarStrings.NEXT = this.cast("NEXT")
+  @scala.inline
+  def PREV: typings.reactDashBigDashCalendar.reactDashBigDashCalendarStrings.PREV = this.cast("PREV")
+  @scala.inline
+  def TODAY: typings.reactDashBigDashCalendar.reactDashBigDashCalendarStrings.TODAY = this.cast("TODAY")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

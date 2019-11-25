@@ -32,14 +32,14 @@ object ConsumerOptions {
     keyEncoding: buffer | utf8 = null
   ): ConsumerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoCommit)) __obj.updateDynamic("autoCommit")(autoCommit)
+    if (!js.isUndefined(autoCommit)) __obj.updateDynamic("autoCommit")(autoCommit.asInstanceOf[js.Any])
     if (autoCommitIntervalMs != null) __obj.updateDynamic("autoCommitIntervalMs")(autoCommitIntervalMs.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (fetchMaxBytes != null) __obj.updateDynamic("fetchMaxBytes")(fetchMaxBytes.asInstanceOf[js.Any])
     if (fetchMaxWaitMs != null) __obj.updateDynamic("fetchMaxWaitMs")(fetchMaxWaitMs.asInstanceOf[js.Any])
     if (fetchMinBytes != null) __obj.updateDynamic("fetchMinBytes")(fetchMinBytes.asInstanceOf[js.Any])
-    if (!js.isUndefined(fromOffset)) __obj.updateDynamic("fromOffset")(fromOffset)
-    if (groupId != null) __obj.updateDynamic("groupId")(groupId)
+    if (!js.isUndefined(fromOffset)) __obj.updateDynamic("fromOffset")(fromOffset.asInstanceOf[js.Any])
+    if (groupId != null) __obj.updateDynamic("groupId")(groupId.asInstanceOf[js.Any])
     if (keyEncoding != null) __obj.updateDynamic("keyEncoding")(keyEncoding.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConsumerOptions]
   }

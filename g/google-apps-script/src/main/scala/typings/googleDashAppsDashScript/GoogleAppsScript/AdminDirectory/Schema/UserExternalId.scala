@@ -14,9 +14,9 @@ object UserExternalId {
   @scala.inline
   def apply(customType: String = null, `type`: String = null, value: String = null): UserExternalId = {
     val __obj = js.Dynamic.literal()
-    if (customType != null) __obj.updateDynamic("customType")(customType)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (customType != null) __obj.updateDynamic("customType")(customType.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserExternalId]
   }
 }

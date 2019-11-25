@@ -29,9 +29,9 @@ object RasterDataProperties {
   @scala.inline
   def apply(format: String = null, itemId: String = null, url: String = null): RasterDataProperties = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (itemId != null) __obj.updateDynamic("itemId")(itemId)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (itemId != null) __obj.updateDynamic("itemId")(itemId.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[RasterDataProperties]
   }
 }

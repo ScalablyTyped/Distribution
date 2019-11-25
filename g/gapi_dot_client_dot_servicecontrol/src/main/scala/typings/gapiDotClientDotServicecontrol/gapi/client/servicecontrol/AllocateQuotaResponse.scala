@@ -41,11 +41,11 @@ object AllocateQuotaResponse {
     serviceConfigId: String = null
   ): AllocateQuotaResponse = {
     val __obj = js.Dynamic.literal()
-    if (allocateErrors != null) __obj.updateDynamic("allocateErrors")(allocateErrors)
-    if (allocateInfo != null) __obj.updateDynamic("allocateInfo")(allocateInfo)
-    if (operationId != null) __obj.updateDynamic("operationId")(operationId)
-    if (quotaMetrics != null) __obj.updateDynamic("quotaMetrics")(quotaMetrics)
-    if (serviceConfigId != null) __obj.updateDynamic("serviceConfigId")(serviceConfigId)
+    if (allocateErrors != null) __obj.updateDynamic("allocateErrors")(allocateErrors.asInstanceOf[js.Any])
+    if (allocateInfo != null) __obj.updateDynamic("allocateInfo")(allocateInfo.asInstanceOf[js.Any])
+    if (operationId != null) __obj.updateDynamic("operationId")(operationId.asInstanceOf[js.Any])
+    if (quotaMetrics != null) __obj.updateDynamic("quotaMetrics")(quotaMetrics.asInstanceOf[js.Any])
+    if (serviceConfigId != null) __obj.updateDynamic("serviceConfigId")(serviceConfigId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AllocateQuotaResponse]
   }
 }

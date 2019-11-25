@@ -15,8 +15,8 @@ trait Tap extends js.Object {
 object Tap {
   @scala.inline
   def apply(context: Boolean, fn: js.Function, name: String, stage: Double, `type`: TapType): Tap = {
-    val __obj = js.Dynamic.literal(context = context, fn = fn, name = name, stage = stage)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], stage = stage.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tap]
   }
 }

@@ -22,11 +22,11 @@ object SolidPaint {
     opacity: Int | Double = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): SolidPaint = {
-    val __obj = js.Dynamic.literal(color = color)
-    __obj.updateDynamic("type")(`type`)
-    if (blendMode != null) __obj.updateDynamic("blendMode")(blendMode)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (blendMode != null) __obj.updateDynamic("blendMode")(blendMode.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[SolidPaint]
   }
 }

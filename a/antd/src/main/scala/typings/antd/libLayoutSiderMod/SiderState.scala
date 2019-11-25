@@ -17,9 +17,9 @@ object SiderState {
     belowShow: js.UndefOr[Boolean] = js.undefined,
     collapsed: js.UndefOr[Boolean] = js.undefined
   ): SiderState = {
-    val __obj = js.Dynamic.literal(below = below)
-    if (!js.isUndefined(belowShow)) __obj.updateDynamic("belowShow")(belowShow)
-    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed)
+    val __obj = js.Dynamic.literal(below = below.asInstanceOf[js.Any])
+    if (!js.isUndefined(belowShow)) __obj.updateDynamic("belowShow")(belowShow.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.asInstanceOf[js.Any])
     __obj.asInstanceOf[SiderState]
   }
 }

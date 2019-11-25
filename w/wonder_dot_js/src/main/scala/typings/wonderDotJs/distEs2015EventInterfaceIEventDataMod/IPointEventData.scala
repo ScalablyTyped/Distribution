@@ -44,9 +44,9 @@ object IPointEventData {
     webkitMovementY: Int | Double = null,
     wheelDelta: Int | Double = null
   ): IPointEventData = {
-    val __obj = js.Dynamic.literal(clientX = clientX, clientY = clientY, pageX = pageX, pageY = pageY, preventDefault = js.Any.fromFunction0(preventDefault), returnValue = returnValue, target = target)
+    val __obj = js.Dynamic.literal(clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), returnValue = returnValue.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
-    if (currentTarget != null) __obj.updateDynamic("currentTarget")(currentTarget)
+    if (currentTarget != null) __obj.updateDynamic("currentTarget")(currentTarget.asInstanceOf[js.Any])
     if (detail != null) __obj.updateDynamic("detail")(detail.asInstanceOf[js.Any])
     if (movementX != null) __obj.updateDynamic("movementX")(movementX.asInstanceOf[js.Any])
     if (movementY != null) __obj.updateDynamic("movementY")(movementY.asInstanceOf[js.Any])

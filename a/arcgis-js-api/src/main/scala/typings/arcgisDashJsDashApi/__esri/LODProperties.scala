@@ -41,7 +41,7 @@ object LODProperties {
   ): LODProperties = {
     val __obj = js.Dynamic.literal()
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (levelValue != null) __obj.updateDynamic("levelValue")(levelValue)
+    if (levelValue != null) __obj.updateDynamic("levelValue")(levelValue.asInstanceOf[js.Any])
     if (resolution != null) __obj.updateDynamic("resolution")(resolution.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     __obj.asInstanceOf[LODProperties]

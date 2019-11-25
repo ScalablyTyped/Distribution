@@ -17,8 +17,8 @@ object ParserOptions {
     system: js.UndefOr[Boolean] = js.undefined
   ): ParserOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(system)) __obj.updateDynamic("system")(system)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(system)) __obj.updateDynamic("system")(system.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParserOptions]
   }
 }

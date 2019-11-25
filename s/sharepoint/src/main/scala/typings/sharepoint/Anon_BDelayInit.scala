@@ -13,7 +13,7 @@ trait Anon_BDelayInit extends js.Object {
 object Anon_BDelayInit {
   @scala.inline
   def apply(bDelayInit: Boolean, separatorChar: String, singleValuePropTypeID: String): Anon_BDelayInit = {
-    val __obj = js.Dynamic.literal(bDelayInit = bDelayInit, separatorChar = separatorChar, singleValuePropTypeID = singleValuePropTypeID)
+    val __obj = js.Dynamic.literal(bDelayInit = bDelayInit.asInstanceOf[js.Any], separatorChar = separatorChar.asInstanceOf[js.Any], singleValuePropTypeID = singleValuePropTypeID.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BDelayInit]
   }

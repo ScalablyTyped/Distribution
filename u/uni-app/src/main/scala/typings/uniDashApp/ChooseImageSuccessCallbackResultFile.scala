@@ -19,7 +19,7 @@ object ChooseImageSuccessCallbackResultFile {
   @scala.inline
   def apply(path: String = null, size: Int | Double = null): ChooseImageSuccessCallbackResultFile = {
     val __obj = js.Dynamic.literal()
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChooseImageSuccessCallbackResultFile]
   }

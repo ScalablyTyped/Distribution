@@ -20,7 +20,7 @@ trait CertificateVerifyProcRequest extends js.Object {
 object CertificateVerifyProcRequest {
   @scala.inline
   def apply(certificate: Certificate, errorCode: Double, hostname: String, verificationResult: String): CertificateVerifyProcRequest = {
-    val __obj = js.Dynamic.literal(certificate = certificate, errorCode = errorCode, hostname = hostname, verificationResult = verificationResult)
+    val __obj = js.Dynamic.literal(certificate = certificate.asInstanceOf[js.Any], errorCode = errorCode.asInstanceOf[js.Any], hostname = hostname.asInstanceOf[js.Any], verificationResult = verificationResult.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CertificateVerifyProcRequest]
   }

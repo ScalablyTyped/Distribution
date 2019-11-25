@@ -102,14 +102,14 @@ object WaitMeOptions {
     textPos: vertical | horizontal = null
   ): WaitMeOptions = {
     val __obj = js.Dynamic.literal()
-    if (bg != null) __obj.updateDynamic("bg")(bg)
+    if (bg != null) __obj.updateDynamic("bg")(bg.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (effect != null) __obj.updateDynamic("effect")(effect.asInstanceOf[js.Any])
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize)
+    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
     if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction0(onClose))
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (textPos != null) __obj.updateDynamic("textPos")(textPos.asInstanceOf[js.Any])
     __obj.asInstanceOf[WaitMeOptions]
   }

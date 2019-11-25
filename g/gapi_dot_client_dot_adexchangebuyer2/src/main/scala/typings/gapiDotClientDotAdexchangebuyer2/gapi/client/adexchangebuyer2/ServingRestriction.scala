@@ -30,9 +30,9 @@ object ServingRestriction {
     status: String = null
   ): ServingRestriction = {
     val __obj = js.Dynamic.literal()
-    if (contexts != null) __obj.updateDynamic("contexts")(contexts)
-    if (disapprovalReasons != null) __obj.updateDynamic("disapprovalReasons")(disapprovalReasons)
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (contexts != null) __obj.updateDynamic("contexts")(contexts.asInstanceOf[js.Any])
+    if (disapprovalReasons != null) __obj.updateDynamic("disapprovalReasons")(disapprovalReasons.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServingRestriction]
   }
 }

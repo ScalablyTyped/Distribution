@@ -29,12 +29,12 @@ object URLRecord {
     port: Int | Double = null,
     query: String = null
   ): URLRecord = {
-    val __obj = js.Dynamic.literal(password = password, path = path, scheme = scheme, username = username)
-    if (!js.isUndefined(cannotBeABaseURL)) __obj.updateDynamic("cannotBeABaseURL")(cannotBeABaseURL)
-    if (fragment != null) __obj.updateDynamic("fragment")(fragment)
+    val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], scheme = scheme.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
+    if (!js.isUndefined(cannotBeABaseURL)) __obj.updateDynamic("cannotBeABaseURL")(cannotBeABaseURL.asInstanceOf[js.Any])
+    if (fragment != null) __obj.updateDynamic("fragment")(fragment.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query)
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     __obj.asInstanceOf[URLRecord]
   }
 }

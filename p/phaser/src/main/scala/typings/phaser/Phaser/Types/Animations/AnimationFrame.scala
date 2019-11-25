@@ -31,9 +31,9 @@ object AnimationFrame {
     duration: Int | Double = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): AnimationFrame = {
-    val __obj = js.Dynamic.literal(frame = frame.asInstanceOf[js.Any], key = key)
+    val __obj = js.Dynamic.literal(frame = frame.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationFrame]
   }
 }

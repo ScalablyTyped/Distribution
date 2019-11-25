@@ -41,13 +41,10 @@ object ISpinner {
   @scala.inline
   def apply(
     ITrigger: typings.extjs.Ext.form.field.ITrigger = null,
-    getTriggerWidth: () => Double = null,
-    initComponent: () => Unit = null,
     keyNavEnabled: js.UndefOr[Boolean] = js.undefined,
     mouseWheelEnabled: js.UndefOr[Boolean] = js.undefined,
     onSpinDown: () => Unit = null,
     onSpinUp: () => Unit = null,
-    repeatTriggerClick: js.UndefOr[Boolean] = js.undefined,
     setSpinDownEnabled: /* enabled */ js.UndefOr[Boolean] => Unit = null,
     setSpinUpEnabled: /* enabled */ js.UndefOr[Boolean] => Unit = null,
     spinDown: () => Unit = null,
@@ -58,22 +55,19 @@ object ISpinner {
     spinUpEnabled: js.UndefOr[Boolean] = js.undefined
   ): ISpinner = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, ITrigger)
-    if (getTriggerWidth != null) __obj.updateDynamic("getTriggerWidth")(js.Any.fromFunction0(getTriggerWidth))
-    if (initComponent != null) __obj.updateDynamic("initComponent")(js.Any.fromFunction0(initComponent))
-    if (!js.isUndefined(keyNavEnabled)) __obj.updateDynamic("keyNavEnabled")(keyNavEnabled)
-    if (!js.isUndefined(mouseWheelEnabled)) __obj.updateDynamic("mouseWheelEnabled")(mouseWheelEnabled)
+    if (ITrigger != null) js.Dynamic.global.Object.assign(__obj, ITrigger)
+    if (!js.isUndefined(keyNavEnabled)) __obj.updateDynamic("keyNavEnabled")(keyNavEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(mouseWheelEnabled)) __obj.updateDynamic("mouseWheelEnabled")(mouseWheelEnabled.asInstanceOf[js.Any])
     if (onSpinDown != null) __obj.updateDynamic("onSpinDown")(js.Any.fromFunction0(onSpinDown))
     if (onSpinUp != null) __obj.updateDynamic("onSpinUp")(js.Any.fromFunction0(onSpinUp))
-    if (!js.isUndefined(repeatTriggerClick)) __obj.updateDynamic("repeatTriggerClick")(repeatTriggerClick)
     if (setSpinDownEnabled != null) __obj.updateDynamic("setSpinDownEnabled")(js.Any.fromFunction1(setSpinDownEnabled))
     if (setSpinUpEnabled != null) __obj.updateDynamic("setSpinUpEnabled")(js.Any.fromFunction1(setSpinUpEnabled))
     if (spinDown != null) __obj.updateDynamic("spinDown")(js.Any.fromFunction0(spinDown))
-    if (spinDownEl != null) __obj.updateDynamic("spinDownEl")(spinDownEl)
-    if (!js.isUndefined(spinDownEnabled)) __obj.updateDynamic("spinDownEnabled")(spinDownEnabled)
+    if (spinDownEl != null) __obj.updateDynamic("spinDownEl")(spinDownEl.asInstanceOf[js.Any])
+    if (!js.isUndefined(spinDownEnabled)) __obj.updateDynamic("spinDownEnabled")(spinDownEnabled.asInstanceOf[js.Any])
     if (spinUp != null) __obj.updateDynamic("spinUp")(js.Any.fromFunction0(spinUp))
-    if (spinUpEl != null) __obj.updateDynamic("spinUpEl")(spinUpEl)
-    if (!js.isUndefined(spinUpEnabled)) __obj.updateDynamic("spinUpEnabled")(spinUpEnabled)
+    if (spinUpEl != null) __obj.updateDynamic("spinUpEl")(spinUpEl.asInstanceOf[js.Any])
+    if (!js.isUndefined(spinUpEnabled)) __obj.updateDynamic("spinUpEnabled")(spinUpEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISpinner]
   }
 }

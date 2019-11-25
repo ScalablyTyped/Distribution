@@ -40,19 +40,19 @@ object EndpointSettings {
     NetworkID: String = null
   ): EndpointSettings = {
     val __obj = js.Dynamic.literal()
-    if (Aliases != null) __obj.updateDynamic("Aliases")(Aliases)
-    if (DriverOpts != null) __obj.updateDynamic("DriverOpts")(DriverOpts)
-    if (EndpointID != null) __obj.updateDynamic("EndpointID")(EndpointID)
-    if (Gateway != null) __obj.updateDynamic("Gateway")(Gateway)
+    if (Aliases != null) __obj.updateDynamic("Aliases")(Aliases.asInstanceOf[js.Any])
+    if (DriverOpts != null) __obj.updateDynamic("DriverOpts")(DriverOpts.asInstanceOf[js.Any])
+    if (EndpointID != null) __obj.updateDynamic("EndpointID")(EndpointID.asInstanceOf[js.Any])
+    if (Gateway != null) __obj.updateDynamic("Gateway")(Gateway.asInstanceOf[js.Any])
     if (GlobalIPV6PrefixLen != null) __obj.updateDynamic("GlobalIPV6PrefixLen")(GlobalIPV6PrefixLen.asInstanceOf[js.Any])
-    if (GlobalIPv6Address != null) __obj.updateDynamic("GlobalIPv6Address")(GlobalIPv6Address)
-    if (IPAMConfig != null) __obj.updateDynamic("IPAMConfig")(IPAMConfig)
-    if (IPAddress != null) __obj.updateDynamic("IPAddress")(IPAddress)
+    if (GlobalIPv6Address != null) __obj.updateDynamic("GlobalIPv6Address")(GlobalIPv6Address.asInstanceOf[js.Any])
+    if (IPAMConfig != null) __obj.updateDynamic("IPAMConfig")(IPAMConfig.asInstanceOf[js.Any])
+    if (IPAddress != null) __obj.updateDynamic("IPAddress")(IPAddress.asInstanceOf[js.Any])
     if (IPPrefixLen != null) __obj.updateDynamic("IPPrefixLen")(IPPrefixLen.asInstanceOf[js.Any])
-    if (IPv6Gateway != null) __obj.updateDynamic("IPv6Gateway")(IPv6Gateway)
-    if (Links != null) __obj.updateDynamic("Links")(Links)
-    if (MacAddress != null) __obj.updateDynamic("MacAddress")(MacAddress)
-    if (NetworkID != null) __obj.updateDynamic("NetworkID")(NetworkID)
+    if (IPv6Gateway != null) __obj.updateDynamic("IPv6Gateway")(IPv6Gateway.asInstanceOf[js.Any])
+    if (Links != null) __obj.updateDynamic("Links")(Links.asInstanceOf[js.Any])
+    if (MacAddress != null) __obj.updateDynamic("MacAddress")(MacAddress.asInstanceOf[js.Any])
+    if (NetworkID != null) __obj.updateDynamic("NetworkID")(NetworkID.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndpointSettings]
   }
 }

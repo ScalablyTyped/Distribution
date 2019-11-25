@@ -12,7 +12,7 @@ object ResultsGetRequest {
   @scala.inline
   def apply(resultMask: ResultsMask = null): ResultsGetRequest = {
     val __obj = js.Dynamic.literal()
-    if (resultMask != null) __obj.updateDynamic("resultMask")(resultMask)
+    if (resultMask != null) __obj.updateDynamic("resultMask")(resultMask.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResultsGetRequest]
   }
 }

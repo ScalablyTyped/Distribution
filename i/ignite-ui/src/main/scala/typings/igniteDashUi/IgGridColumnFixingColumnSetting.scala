@@ -45,11 +45,11 @@ object IgGridColumnFixingColumnSetting {
     isFixed: js.UndefOr[Boolean] = js.undefined
   ): IgGridColumnFixingColumnSetting = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(allowFixing)) __obj.updateDynamic("allowFixing")(allowFixing)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(allowFixing)) __obj.updateDynamic("allowFixing")(allowFixing.asInstanceOf[js.Any])
     if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
-    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey)
-    if (!js.isUndefined(isFixed)) __obj.updateDynamic("isFixed")(isFixed)
+    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFixed)) __obj.updateDynamic("isFixed")(isFixed.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridColumnFixingColumnSetting]
   }
 }

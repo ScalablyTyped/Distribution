@@ -20,10 +20,10 @@ object Anon_Html {
     svgFilters: js.UndefOr[Boolean] = js.undefined
   ): Anon_Html = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html)
-    if (!js.isUndefined(mathMl)) __obj.updateDynamic("mathMl")(mathMl)
-    if (!js.isUndefined(svg)) __obj.updateDynamic("svg")(svg)
-    if (!js.isUndefined(svgFilters)) __obj.updateDynamic("svgFilters")(svgFilters)
+    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
+    if (!js.isUndefined(mathMl)) __obj.updateDynamic("mathMl")(mathMl.asInstanceOf[js.Any])
+    if (!js.isUndefined(svg)) __obj.updateDynamic("svg")(svg.asInstanceOf[js.Any])
+    if (!js.isUndefined(svgFilters)) __obj.updateDynamic("svgFilters")(svgFilters.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Html]
   }
 }

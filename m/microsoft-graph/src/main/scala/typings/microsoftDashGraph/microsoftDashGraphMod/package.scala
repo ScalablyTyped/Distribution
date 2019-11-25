@@ -17,7 +17,7 @@ package object microsoftDashGraphMod {
   type IosCertificateProfile = DeviceConfiguration
   type IosManagedAppRegistration = ManagedAppRegistration
   type IosVppEBookAssignment = ManagedEBookAssignment
-  type MacOSDeviceFeaturesConfiguration = DeviceConfiguration
+  type MacOSDeviceFeaturesConfiguration = AppleDeviceFeaturesConfigurationBase
   type MacOSOfficeSuiteApp = MobileApp
   type MdmWindowsInformationProtectionPolicy = WindowsInformationProtection
   type MuteParticipantOperation = CommsOperation

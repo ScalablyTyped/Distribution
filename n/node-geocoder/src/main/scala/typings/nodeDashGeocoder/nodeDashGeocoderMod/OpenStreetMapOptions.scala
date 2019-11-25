@@ -22,11 +22,11 @@ object OpenStreetMapOptions {
     language: String = null,
     osmServer: String = null
   ): OpenStreetMapOptions = {
-    val __obj = js.Dynamic.literal(provider = provider)
-    if (apiKey != null) __obj.updateDynamic("apiKey")(apiKey)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (osmServer != null) __obj.updateDynamic("osmServer")(osmServer)
+    val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any])
+    if (apiKey != null) __obj.updateDynamic("apiKey")(apiKey.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (osmServer != null) __obj.updateDynamic("osmServer")(osmServer.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenStreetMapOptions]
   }
 }

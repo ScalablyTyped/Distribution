@@ -19,8 +19,8 @@ object _Initiator {
   @scala.inline
   def apply(DisplayName: String = null, ID: String = null): _Initiator = {
     val __obj = js.Dynamic.literal()
-    if (DisplayName != null) __obj.updateDynamic("DisplayName")(DisplayName)
-    if (ID != null) __obj.updateDynamic("ID")(ID)
+    if (DisplayName != null) __obj.updateDynamic("DisplayName")(DisplayName.asInstanceOf[js.Any])
+    if (ID != null) __obj.updateDynamic("ID")(ID.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Initiator]
   }
 }

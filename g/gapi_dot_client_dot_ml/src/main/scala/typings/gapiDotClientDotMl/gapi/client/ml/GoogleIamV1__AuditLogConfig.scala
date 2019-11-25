@@ -19,8 +19,8 @@ object GoogleIamV1__AuditLogConfig {
   @scala.inline
   def apply(exemptedMembers: js.Array[String] = null, logType: String = null): GoogleIamV1__AuditLogConfig = {
     val __obj = js.Dynamic.literal()
-    if (exemptedMembers != null) __obj.updateDynamic("exemptedMembers")(exemptedMembers)
-    if (logType != null) __obj.updateDynamic("logType")(logType)
+    if (exemptedMembers != null) __obj.updateDynamic("exemptedMembers")(exemptedMembers.asInstanceOf[js.Any])
+    if (logType != null) __obj.updateDynamic("logType")(logType.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleIamV1__AuditLogConfig]
   }
 }

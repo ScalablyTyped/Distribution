@@ -46,15 +46,15 @@ object UIDeleteFileOptions {
     params: js.Any = null
   ): UIDeleteFileOptions = {
     val __obj = js.Dynamic.literal()
-    if (confirmMessage != null) __obj.updateDynamic("confirmMessage")(confirmMessage)
-    if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders)
-    if (deletingFailedText != null) __obj.updateDynamic("deletingFailedText")(deletingFailedText)
-    if (deletingStatusText != null) __obj.updateDynamic("deletingStatusText")(deletingStatusText)
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint)
-    if (!js.isUndefined(forceConfirm)) __obj.updateDynamic("forceConfirm")(forceConfirm)
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (params != null) __obj.updateDynamic("params")(params)
+    if (confirmMessage != null) __obj.updateDynamic("confirmMessage")(confirmMessage.asInstanceOf[js.Any])
+    if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders.asInstanceOf[js.Any])
+    if (deletingFailedText != null) __obj.updateDynamic("deletingFailedText")(deletingFailedText.asInstanceOf[js.Any])
+    if (deletingStatusText != null) __obj.updateDynamic("deletingStatusText")(deletingStatusText.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceConfirm)) __obj.updateDynamic("forceConfirm")(forceConfirm.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[UIDeleteFileOptions]
   }
 }

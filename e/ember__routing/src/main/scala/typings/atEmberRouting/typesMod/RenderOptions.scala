@@ -22,11 +22,11 @@ object RenderOptions {
     view: String = null
   ): RenderOptions = {
     val __obj = js.Dynamic.literal()
-    if (controller != null) __obj.updateDynamic("controller")(controller)
-    if (into != null) __obj.updateDynamic("into")(into)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (outlet != null) __obj.updateDynamic("outlet")(outlet)
-    if (view != null) __obj.updateDynamic("view")(view)
+    if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
+    if (into != null) __obj.updateDynamic("into")(into.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (outlet != null) __obj.updateDynamic("outlet")(outlet.asInstanceOf[js.Any])
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderOptions]
   }
 }

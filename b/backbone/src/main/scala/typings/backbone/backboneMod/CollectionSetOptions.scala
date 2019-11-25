@@ -19,10 +19,10 @@ object CollectionSetOptions {
     silent: js.UndefOr[Boolean] = js.undefined
   ): CollectionSetOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(add)) __obj.updateDynamic("add")(add)
-    if (!js.isUndefined(merge)) __obj.updateDynamic("merge")(merge)
-    if (!js.isUndefined(remove)) __obj.updateDynamic("remove")(remove)
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    if (!js.isUndefined(add)) __obj.updateDynamic("add")(add.asInstanceOf[js.Any])
+    if (!js.isUndefined(merge)) __obj.updateDynamic("merge")(merge.asInstanceOf[js.Any])
+    if (!js.isUndefined(remove)) __obj.updateDynamic("remove")(remove.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectionSetOptions]
   }
 }

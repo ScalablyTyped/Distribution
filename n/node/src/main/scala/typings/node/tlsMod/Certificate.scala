@@ -41,7 +41,7 @@ object Certificate {
     OU: java.lang.String,
     ST: java.lang.String
   ): Certificate = {
-    val __obj = js.Dynamic.literal(C = C, CN = CN, L = L, O = O, OU = OU, ST = ST)
+    val __obj = js.Dynamic.literal(C = C.asInstanceOf[js.Any], CN = CN.asInstanceOf[js.Any], L = L.asInstanceOf[js.Any], O = O.asInstanceOf[js.Any], OU = OU.asInstanceOf[js.Any], ST = ST.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Certificate]
   }

@@ -25,8 +25,8 @@ object ReportOptions {
   @scala.inline
   def apply(flatten: js.UndefOr[Boolean] = js.undefined, separator: String = null): ReportOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(flatten)) __obj.updateDynamic("flatten")(flatten)
-    if (separator != null) __obj.updateDynamic("separator")(separator)
+    if (!js.isUndefined(flatten)) __obj.updateDynamic("flatten")(flatten.asInstanceOf[js.Any])
+    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportOptions]
   }
 }

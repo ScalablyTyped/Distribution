@@ -14,7 +14,7 @@ trait FindMatchingRouteReturn[MatchReturn] extends js.Object {
 object FindMatchingRouteReturn {
   @scala.inline
   def apply[MatchReturn](params: js.Any, route: Route[MatchReturn]): FindMatchingRouteReturn[MatchReturn] = {
-    val __obj = js.Dynamic.literal(params = params, route = route)
+    val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FindMatchingRouteReturn[MatchReturn]]
   }

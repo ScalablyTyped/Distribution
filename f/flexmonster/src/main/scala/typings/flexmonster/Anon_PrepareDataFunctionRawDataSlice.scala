@@ -26,11 +26,11 @@ object Anon_PrepareDataFunctionRawDataSlice {
   ): Anon_PrepareDataFunctionRawDataSlice = {
     val __obj = js.Dynamic.literal()
     if (prepareDataFunction != null) __obj.updateDynamic("prepareDataFunction")(js.Any.fromFunction1(prepareDataFunction))
-    if (slice != null) __obj.updateDynamic("slice")(slice)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(valuesOnly)) __obj.updateDynamic("valuesOnly")(valuesOnly)
-    if (!js.isUndefined(withDrilldown)) __obj.updateDynamic("withDrilldown")(withDrilldown)
-    if (xAxisType != null) __obj.updateDynamic("xAxisType")(xAxisType)
+    if (slice != null) __obj.updateDynamic("slice")(slice.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(valuesOnly)) __obj.updateDynamic("valuesOnly")(valuesOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(withDrilldown)) __obj.updateDynamic("withDrilldown")(withDrilldown.asInstanceOf[js.Any])
+    if (xAxisType != null) __obj.updateDynamic("xAxisType")(xAxisType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_PrepareDataFunctionRawDataSlice]
   }
 }

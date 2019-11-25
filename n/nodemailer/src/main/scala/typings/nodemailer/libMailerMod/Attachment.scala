@@ -47,12 +47,12 @@ object Attachment {
     raw: String | Buffer | Readable | AttachmentLike = null
   ): Attachment = {
     val __obj = js.Dynamic.literal()
-    if (cid != null) __obj.updateDynamic("cid")(cid)
+    if (cid != null) __obj.updateDynamic("cid")(cid.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (contentDisposition != null) __obj.updateDynamic("contentDisposition")(contentDisposition.asInstanceOf[js.Any])
     if (contentTransferEncoding != null) __obj.updateDynamic("contentTransferEncoding")(contentTransferEncoding.asInstanceOf[js.Any])
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])

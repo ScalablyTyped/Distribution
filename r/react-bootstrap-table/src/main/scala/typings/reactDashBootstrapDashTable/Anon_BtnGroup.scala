@@ -34,7 +34,7 @@ object Anon_BtnGroup {
     searchField: ReactElement,
     searchPanel: ReactElement
   ): Anon_BtnGroup = {
-    val __obj = js.Dynamic.literal(btnGroup = btnGroup, clearBtn = clearBtn, searchField = searchField, searchPanel = searchPanel)
+    val __obj = js.Dynamic.literal(btnGroup = btnGroup.asInstanceOf[js.Any], clearBtn = clearBtn.asInstanceOf[js.Any], searchField = searchField.asInstanceOf[js.Any], searchPanel = searchPanel.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BtnGroup]
   }

@@ -21,10 +21,10 @@ object Anon_Cached {
     verbose: js.UndefOr[Boolean] = js.undefined
   ): Anon_Cached = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cached)) __obj.updateDynamic("cached")(cached)
+    if (!js.isUndefined(cached)) __obj.updateDynamic("cached")(cached.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (promise != null) __obj.updateDynamic("promise")(promise)
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
+    if (promise != null) __obj.updateDynamic("promise")(promise.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Cached]
   }
 }

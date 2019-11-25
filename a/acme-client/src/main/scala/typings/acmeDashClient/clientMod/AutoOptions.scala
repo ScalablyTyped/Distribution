@@ -40,11 +40,11 @@ object AutoOptions {
   ): AutoOptions = {
     val __obj = js.Dynamic.literal()
     if (challengeCreateFn != null) __obj.updateDynamic("challengeCreateFn")(js.Any.fromFunction3(challengeCreateFn))
-    if (challengePriority != null) __obj.updateDynamic("challengePriority")(challengePriority)
+    if (challengePriority != null) __obj.updateDynamic("challengePriority")(challengePriority.asInstanceOf[js.Any])
     if (challengeRemoveFn != null) __obj.updateDynamic("challengeRemoveFn")(js.Any.fromFunction3(challengeRemoveFn))
     if (csr != null) __obj.updateDynamic("csr")(csr.asInstanceOf[js.Any])
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (!js.isUndefined(termsOfServiceAgreed)) __obj.updateDynamic("termsOfServiceAgreed")(termsOfServiceAgreed)
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (!js.isUndefined(termsOfServiceAgreed)) __obj.updateDynamic("termsOfServiceAgreed")(termsOfServiceAgreed.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoOptions]
   }
 }

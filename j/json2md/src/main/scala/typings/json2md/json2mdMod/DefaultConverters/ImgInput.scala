@@ -12,7 +12,7 @@ trait ImgInput extends js.Object {
 object ImgInput {
   @scala.inline
   def apply(source: String, title: String): ImgInput = {
-    val __obj = js.Dynamic.literal(source = source, title = title)
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ImgInput]
   }

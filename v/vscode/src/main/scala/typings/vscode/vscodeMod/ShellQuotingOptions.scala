@@ -27,8 +27,8 @@ object ShellQuotingOptions {
   def apply(escape: String | Anon_CharsToEscape = null, strong: String = null, weak: String = null): ShellQuotingOptions = {
     val __obj = js.Dynamic.literal()
     if (escape != null) __obj.updateDynamic("escape")(escape.asInstanceOf[js.Any])
-    if (strong != null) __obj.updateDynamic("strong")(strong)
-    if (weak != null) __obj.updateDynamic("weak")(weak)
+    if (strong != null) __obj.updateDynamic("strong")(strong.asInstanceOf[js.Any])
+    if (weak != null) __obj.updateDynamic("weak")(weak.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShellQuotingOptions]
   }
 }

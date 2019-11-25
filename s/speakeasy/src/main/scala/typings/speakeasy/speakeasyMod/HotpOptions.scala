@@ -32,12 +32,12 @@ object HotpOptions {
     key: String = null,
     length: Int | Double = null
   ): HotpOptions = {
-    val __obj = js.Dynamic.literal(counter = counter, secret = secret)
-    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm)
-    if (digest != null) __obj.updateDynamic("digest")(digest)
+    val __obj = js.Dynamic.literal(counter = counter.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any])
+    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
+    if (digest != null) __obj.updateDynamic("digest")(digest.asInstanceOf[js.Any])
     if (digits != null) __obj.updateDynamic("digits")(digits.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
-    if (key != null) __obj.updateDynamic("key")(key)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     __obj.asInstanceOf[HotpOptions]
   }

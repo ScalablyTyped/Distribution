@@ -13,8 +13,8 @@ object Anon_Format {
   @scala.inline
   def apply(format: String = null, quality: String = null): Anon_Format = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (quality != null) __obj.updateDynamic("quality")(quality)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Format]
   }
 }

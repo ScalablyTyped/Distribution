@@ -28,9 +28,9 @@ object FieldMetadata {
     verified: js.UndefOr[Boolean] = js.undefined
   ): FieldMetadata = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (!js.isUndefined(verified)) __obj.updateDynamic("verified")(verified)
+    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (!js.isUndefined(verified)) __obj.updateDynamic("verified")(verified.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldMetadata]
   }
 }

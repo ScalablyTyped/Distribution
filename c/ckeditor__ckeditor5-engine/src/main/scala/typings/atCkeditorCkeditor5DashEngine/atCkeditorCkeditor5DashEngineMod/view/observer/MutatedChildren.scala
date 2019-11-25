@@ -16,8 +16,8 @@ trait MutatedChildren extends js.Object {
 object MutatedChildren {
   @scala.inline
   def apply(newChildren: js.Array[Node], node: Element, oldChildren: js.Array[Node], `type`: String): MutatedChildren = {
-    val __obj = js.Dynamic.literal(newChildren = newChildren, node = node, oldChildren = oldChildren)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(newChildren = newChildren.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], oldChildren = oldChildren.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MutatedChildren]
   }
 }

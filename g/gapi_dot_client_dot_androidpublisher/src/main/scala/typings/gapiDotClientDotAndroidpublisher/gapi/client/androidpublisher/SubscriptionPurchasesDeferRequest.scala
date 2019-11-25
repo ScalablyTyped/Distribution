@@ -13,7 +13,7 @@ object SubscriptionPurchasesDeferRequest {
   @scala.inline
   def apply(deferralInfo: SubscriptionDeferralInfo = null): SubscriptionPurchasesDeferRequest = {
     val __obj = js.Dynamic.literal()
-    if (deferralInfo != null) __obj.updateDynamic("deferralInfo")(deferralInfo)
+    if (deferralInfo != null) __obj.updateDynamic("deferralInfo")(deferralInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscriptionPurchasesDeferRequest]
   }
 }

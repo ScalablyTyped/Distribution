@@ -13,8 +13,8 @@ trait RouterAction extends js.Object {
 object RouterAction {
   @scala.inline
   def apply(payload: LocationActionPayload, `type`: `@@router/CALL_HISTORY_METHOD`): RouterAction = {
-    val __obj = js.Dynamic.literal(payload = payload)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouterAction]
   }
 }

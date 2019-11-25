@@ -38,10 +38,10 @@ object UpdateCellsRequest {
     start: GridCoordinate = null
   ): UpdateCellsRequest = {
     val __obj = js.Dynamic.literal()
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (range != null) __obj.updateDynamic("range")(range)
-    if (rows != null) __obj.updateDynamic("rows")(rows)
-    if (start != null) __obj.updateDynamic("start")(start)
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateCellsRequest]
   }
 }

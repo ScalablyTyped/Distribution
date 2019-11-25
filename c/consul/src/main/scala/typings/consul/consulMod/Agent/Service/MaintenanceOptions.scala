@@ -27,16 +27,16 @@ object MaintenanceOptions {
     wait: String = null,
     wan: js.UndefOr[Boolean] = js.undefined
   ): MaintenanceOptions = {
-    val __obj = js.Dynamic.literal(enable = enable, id = id)
-    if (!js.isUndefined(consistent)) __obj.updateDynamic("consistent")(consistent)
-    if (ctx != null) __obj.updateDynamic("ctx")(ctx)
-    if (dc != null) __obj.updateDynamic("dc")(dc)
-    if (reason != null) __obj.updateDynamic("reason")(reason)
-    if (!js.isUndefined(stale)) __obj.updateDynamic("stale")(stale)
+    val __obj = js.Dynamic.literal(enable = enable.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
+    if (!js.isUndefined(consistent)) __obj.updateDynamic("consistent")(consistent.asInstanceOf[js.Any])
+    if (ctx != null) __obj.updateDynamic("ctx")(ctx.asInstanceOf[js.Any])
+    if (dc != null) __obj.updateDynamic("dc")(dc.asInstanceOf[js.Any])
+    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
+    if (!js.isUndefined(stale)) __obj.updateDynamic("stale")(stale.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (token != null) __obj.updateDynamic("token")(token)
-    if (wait != null) __obj.updateDynamic("wait")(wait)
-    if (!js.isUndefined(wan)) __obj.updateDynamic("wan")(wan)
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
+    if (wait != null) __obj.updateDynamic("wait")(wait.asInstanceOf[js.Any])
+    if (!js.isUndefined(wan)) __obj.updateDynamic("wan")(wan.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaintenanceOptions]
   }
 }

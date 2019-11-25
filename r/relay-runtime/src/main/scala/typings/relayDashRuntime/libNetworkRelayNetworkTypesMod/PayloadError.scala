@@ -21,8 +21,8 @@ object PayloadError {
     locations: js.Array[Anon_Column] = null,
     severity: CRITICAL | ERROR | WARNING = null
   ): PayloadError = {
-    val __obj = js.Dynamic.literal(message = message)
-    if (locations != null) __obj.updateDynamic("locations")(locations)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
+    if (locations != null) __obj.updateDynamic("locations")(locations.asInstanceOf[js.Any])
     if (severity != null) __obj.updateDynamic("severity")(severity.asInstanceOf[js.Any])
     __obj.asInstanceOf[PayloadError]
   }

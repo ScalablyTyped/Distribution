@@ -20,10 +20,10 @@ object RTCOfferOptions {
     voiceActivityDetection: js.UndefOr[Boolean] = js.undefined
   ): RTCOfferOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(iceRestart)) __obj.updateDynamic("iceRestart")(iceRestart)
+    if (!js.isUndefined(iceRestart)) __obj.updateDynamic("iceRestart")(iceRestart.asInstanceOf[js.Any])
     if (offerToReceiveAudio != null) __obj.updateDynamic("offerToReceiveAudio")(offerToReceiveAudio.asInstanceOf[js.Any])
     if (offerToReceiveVideo != null) __obj.updateDynamic("offerToReceiveVideo")(offerToReceiveVideo.asInstanceOf[js.Any])
-    if (!js.isUndefined(voiceActivityDetection)) __obj.updateDynamic("voiceActivityDetection")(voiceActivityDetection)
+    if (!js.isUndefined(voiceActivityDetection)) __obj.updateDynamic("voiceActivityDetection")(voiceActivityDetection.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCOfferOptions]
   }
 }

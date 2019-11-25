@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait PaletteType extends js.Object
 
+object PaletteType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def dark: typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.dark = this.cast("dark")
+  @scala.inline
+  def light: typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.light = this.cast("light")
+}
+

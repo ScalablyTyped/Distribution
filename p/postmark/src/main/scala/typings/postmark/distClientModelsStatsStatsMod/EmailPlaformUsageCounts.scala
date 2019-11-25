@@ -22,7 +22,7 @@ object EmailPlaformUsageCounts {
     Unknown: Int | Double = null,
     WebMail: Int | Double = null
   ): EmailPlaformUsageCounts = {
-    val __obj = js.Dynamic.literal(Days = Days)
+    val __obj = js.Dynamic.literal(Days = Days.asInstanceOf[js.Any])
     if (Desktop != null) __obj.updateDynamic("Desktop")(Desktop.asInstanceOf[js.Any])
     if (Mobile != null) __obj.updateDynamic("Mobile")(Mobile.asInstanceOf[js.Any])
     if (Unknown != null) __obj.updateDynamic("Unknown")(Unknown.asInstanceOf[js.Any])

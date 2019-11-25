@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait MemberIndexFormat extends js.Object
 
+object MemberIndexFormat {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def grouped: typings.jsdocDashToDashMarkdown.jsdocDashToDashMarkdownStrings.grouped = this.cast("grouped")
+  @scala.inline
+  def list: typings.jsdocDashToDashMarkdown.jsdocDashToDashMarkdownStrings.list = this.cast("list")
+}
+

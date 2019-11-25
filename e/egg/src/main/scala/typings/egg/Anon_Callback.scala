@@ -20,7 +20,7 @@ object Anon_Callback {
     limit: Double,
     whiteList: String | RegExp | (js.Array[String | RegExp])
   ): Anon_Callback = {
-    val __obj = js.Dynamic.literal(callback = callback, csrf = csrf, limit = limit, whiteList = whiteList.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(callback = callback.asInstanceOf[js.Any], csrf = csrf.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], whiteList = whiteList.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Callback]
   }

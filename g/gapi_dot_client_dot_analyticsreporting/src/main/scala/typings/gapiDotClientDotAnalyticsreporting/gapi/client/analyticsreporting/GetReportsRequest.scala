@@ -17,7 +17,7 @@ object GetReportsRequest {
   @scala.inline
   def apply(reportRequests: js.Array[ReportRequest] = null): GetReportsRequest = {
     val __obj = js.Dynamic.literal()
-    if (reportRequests != null) __obj.updateDynamic("reportRequests")(reportRequests)
+    if (reportRequests != null) __obj.updateDynamic("reportRequests")(reportRequests.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetReportsRequest]
   }
 }

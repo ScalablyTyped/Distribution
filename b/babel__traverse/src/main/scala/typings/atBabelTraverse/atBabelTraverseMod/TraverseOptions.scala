@@ -20,10 +20,10 @@ object TraverseOptions {
     scope: Scope = null
   ): TraverseOptions[S] = {
     val __obj = js.Dynamic.literal()
-    if (enter != null) __obj.updateDynamic("enter")(enter)
-    if (exit != null) __obj.updateDynamic("exit")(exit)
-    if (!js.isUndefined(noScope)) __obj.updateDynamic("noScope")(noScope)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (enter != null) __obj.updateDynamic("enter")(enter.asInstanceOf[js.Any])
+    if (exit != null) __obj.updateDynamic("exit")(exit.asInstanceOf[js.Any])
+    if (!js.isUndefined(noScope)) __obj.updateDynamic("noScope")(noScope.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[TraverseOptions[S]]
   }
 }

@@ -47,7 +47,7 @@ object Anon_AUTH {
     XHTML: String,
     XHTML_IM: String
   ): Anon_AUTH = {
-    val __obj = js.Dynamic.literal(AUTH = AUTH, BIND = BIND, BOSH = BOSH, CLIENT = CLIENT, DISCO_INFO = DISCO_INFO, DISCO_ITEMS = DISCO_ITEMS, FRAMING = FRAMING, HTTPBIND = HTTPBIND, MUC = MUC, PROFILE = PROFILE, ROSTER = ROSTER, SASL = SASL, SESSION = SESSION, STANZAS = STANZAS, STREAM = STREAM, VERSION = VERSION, XHTML = XHTML, XHTML_IM = XHTML_IM)
+    val __obj = js.Dynamic.literal(AUTH = AUTH.asInstanceOf[js.Any], BIND = BIND.asInstanceOf[js.Any], BOSH = BOSH.asInstanceOf[js.Any], CLIENT = CLIENT.asInstanceOf[js.Any], DISCO_INFO = DISCO_INFO.asInstanceOf[js.Any], DISCO_ITEMS = DISCO_ITEMS.asInstanceOf[js.Any], FRAMING = FRAMING.asInstanceOf[js.Any], HTTPBIND = HTTPBIND.asInstanceOf[js.Any], MUC = MUC.asInstanceOf[js.Any], PROFILE = PROFILE.asInstanceOf[js.Any], ROSTER = ROSTER.asInstanceOf[js.Any], SASL = SASL.asInstanceOf[js.Any], SESSION = SESSION.asInstanceOf[js.Any], STANZAS = STANZAS.asInstanceOf[js.Any], STREAM = STREAM.asInstanceOf[js.Any], VERSION = VERSION.asInstanceOf[js.Any], XHTML = XHTML.asInstanceOf[js.Any], XHTML_IM = XHTML_IM.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AUTH]
   }

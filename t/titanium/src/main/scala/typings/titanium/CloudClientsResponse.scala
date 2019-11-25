@@ -51,12 +51,12 @@ object CloudClientsResponse {
   ): CloudClientsResponse = {
     val __obj = js.Dynamic.literal()
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error)
-    if (ip_address != null) __obj.updateDynamic("ip_address")(ip_address)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (meta != null) __obj.updateDynamic("meta")(meta)
-    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success)
+    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (ip_address != null) __obj.updateDynamic("ip_address")(ip_address.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
+    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloudClientsResponse]
   }
 }

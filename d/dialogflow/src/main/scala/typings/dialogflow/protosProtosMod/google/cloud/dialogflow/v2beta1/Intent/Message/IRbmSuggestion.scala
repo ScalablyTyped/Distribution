@@ -16,8 +16,8 @@ object IRbmSuggestion {
   @scala.inline
   def apply(action: IRbmSuggestedAction = null, reply: IRbmSuggestedReply = null): IRbmSuggestion = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action)
-    if (reply != null) __obj.updateDynamic("reply")(reply)
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (reply != null) __obj.updateDynamic("reply")(reply.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRbmSuggestion]
   }
 }

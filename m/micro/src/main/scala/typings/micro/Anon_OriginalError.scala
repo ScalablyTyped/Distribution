@@ -13,8 +13,8 @@ trait Anon_OriginalError extends js.Object {
 object Anon_OriginalError {
   @scala.inline
   def apply(statusCode: Double, originalError: Error = null): Anon_OriginalError = {
-    val __obj = js.Dynamic.literal(statusCode = statusCode)
-    if (originalError != null) __obj.updateDynamic("originalError")(originalError)
+    val __obj = js.Dynamic.literal(statusCode = statusCode.asInstanceOf[js.Any])
+    if (originalError != null) __obj.updateDynamic("originalError")(originalError.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_OriginalError]
   }
 }

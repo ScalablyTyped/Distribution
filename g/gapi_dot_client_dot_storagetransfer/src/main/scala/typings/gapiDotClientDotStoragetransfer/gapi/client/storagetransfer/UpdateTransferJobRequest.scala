@@ -37,9 +37,9 @@ object UpdateTransferJobRequest {
     updateTransferJobFieldMask: String = null
   ): UpdateTransferJobRequest = {
     val __obj = js.Dynamic.literal()
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
-    if (transferJob != null) __obj.updateDynamic("transferJob")(transferJob)
-    if (updateTransferJobFieldMask != null) __obj.updateDynamic("updateTransferJobFieldMask")(updateTransferJobFieldMask)
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
+    if (transferJob != null) __obj.updateDynamic("transferJob")(transferJob.asInstanceOf[js.Any])
+    if (updateTransferJobFieldMask != null) __obj.updateDynamic("updateTransferJobFieldMask")(updateTransferJobFieldMask.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateTransferJobRequest]
   }
 }

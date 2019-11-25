@@ -13,7 +13,7 @@ trait Anon_DragDropReorderAnonColumns[K, D] extends js.Object {
 object Anon_DragDropReorderAnonColumns {
   @scala.inline
   def apply[K, D](drag: Anon_Rows[K, D], drop: Anon_Columns, reorder: Anon_ColumnsDisabled): Anon_DragDropReorderAnonColumns[K, D] = {
-    val __obj = js.Dynamic.literal(drag = drag, drop = drop, reorder = reorder)
+    val __obj = js.Dynamic.literal(drag = drag.asInstanceOf[js.Any], drop = drop.asInstanceOf[js.Any], reorder = reorder.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DragDropReorderAnonColumns[K, D]]
   }

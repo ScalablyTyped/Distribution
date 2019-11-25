@@ -61,49 +61,29 @@ object IBoundList {
   @scala.inline
   def apply(
     IView: IView = null,
-    baseCls: java.lang.String = null,
     bindStore: (/* store */ js.UndefOr[js.Any], /* initial */ js.UndefOr[js.Any]) => Unit = null,
-    child: /* selector */ js.UndefOr[js.Any] => _ = null,
-    componentLayout: js.Any = null,
-    deferInitialRefresh: js.UndefOr[Boolean] = js.undefined,
+    child: js.UndefOr[js.Any] => _ = null,
     displayField: java.lang.String = null,
-    down: /* selector */ js.UndefOr[js.Any] => _ = null,
+    down: js.UndefOr[js.Any] => _ = null,
     getInnerTpl: /* displayField */ js.UndefOr[java.lang.String] => java.lang.String = null,
-    itemCls: java.lang.String = null,
-    onDestroy: () => Unit = null,
     pageSize: Int | Double = null,
     pagingToolbar: IPaging = null,
-    query: /* selector */ js.UndefOr[java.lang.String] => Array = null,
-    queryBy: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Array = null,
-    queryById: /* id */ js.UndefOr[java.lang.String] => IComponent = null,
-    refresh: () => Unit = null,
-    renderTpl: js.Any = null,
-    shadow: js.Any = null,
-    tpl: js.Any = null,
-    trackOver: js.UndefOr[Boolean] = js.undefined
+    query: js.UndefOr[java.lang.String] => Array = null,
+    queryBy: (js.UndefOr[js.Any], js.UndefOr[js.Any]) => Array = null,
+    queryById: js.UndefOr[java.lang.String] => IComponent = null
   ): IBoundList = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IView)
-    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
+    if (IView != null) js.Dynamic.global.Object.assign(__obj, IView)
     if (bindStore != null) __obj.updateDynamic("bindStore")(js.Any.fromFunction2(bindStore))
     if (child != null) __obj.updateDynamic("child")(js.Any.fromFunction1(child))
-    if (componentLayout != null) __obj.updateDynamic("componentLayout")(componentLayout)
-    if (!js.isUndefined(deferInitialRefresh)) __obj.updateDynamic("deferInitialRefresh")(deferInitialRefresh)
-    if (displayField != null) __obj.updateDynamic("displayField")(displayField)
+    if (displayField != null) __obj.updateDynamic("displayField")(displayField.asInstanceOf[js.Any])
     if (down != null) __obj.updateDynamic("down")(js.Any.fromFunction1(down))
     if (getInnerTpl != null) __obj.updateDynamic("getInnerTpl")(js.Any.fromFunction1(getInnerTpl))
-    if (itemCls != null) __obj.updateDynamic("itemCls")(itemCls)
-    if (onDestroy != null) __obj.updateDynamic("onDestroy")(js.Any.fromFunction0(onDestroy))
     if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
-    if (pagingToolbar != null) __obj.updateDynamic("pagingToolbar")(pagingToolbar)
+    if (pagingToolbar != null) __obj.updateDynamic("pagingToolbar")(pagingToolbar.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(js.Any.fromFunction1(query))
     if (queryBy != null) __obj.updateDynamic("queryBy")(js.Any.fromFunction2(queryBy))
     if (queryById != null) __obj.updateDynamic("queryById")(js.Any.fromFunction1(queryById))
-    if (refresh != null) __obj.updateDynamic("refresh")(js.Any.fromFunction0(refresh))
-    if (renderTpl != null) __obj.updateDynamic("renderTpl")(renderTpl)
-    if (shadow != null) __obj.updateDynamic("shadow")(shadow)
-    if (tpl != null) __obj.updateDynamic("tpl")(tpl)
-    if (!js.isUndefined(trackOver)) __obj.updateDynamic("trackOver")(trackOver)
     __obj.asInstanceOf[IBoundList]
   }
 }

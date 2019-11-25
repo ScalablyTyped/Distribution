@@ -63,7 +63,7 @@ object EventLoopDelayMonitor {
     reset: () => Unit,
     stddev: Double
   ): EventLoopDelayMonitor = {
-    val __obj = js.Dynamic.literal(disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction0(enable), exceeds = exceeds, max = max, mean = mean, min = min, percentile = js.Any.fromFunction1(percentile), percentiles = percentiles, reset = js.Any.fromFunction0(reset), stddev = stddev)
+    val __obj = js.Dynamic.literal(disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction0(enable), exceeds = exceeds.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], mean = mean.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], percentile = js.Any.fromFunction1(percentile), percentiles = percentiles.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset), stddev = stddev.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EventLoopDelayMonitor]
   }

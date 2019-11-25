@@ -11,7 +11,7 @@ trait Anon_SecureEndpoint extends js.Object {
 object Anon_SecureEndpoint {
   @scala.inline
   def apply(secureEndpoint: Boolean): Anon_SecureEndpoint = {
-    val __obj = js.Dynamic.literal(secureEndpoint = secureEndpoint)
+    val __obj = js.Dynamic.literal(secureEndpoint = secureEndpoint.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_SecureEndpoint]
   }

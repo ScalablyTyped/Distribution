@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait reactDashNativeDashSortableDashGridProps {
   @scala.inline
-  def DefaultClsProps: SortableGridProps.type = typings.reactDashNativeDashSortableDashGrid.reactDashNativeDashSortableDashGridMod.SortableGridProps
-  type DefaultClsProps = SortableGridProps
+  def DefaultProps: SortableGridProps.type = typings.reactDashNativeDashSortableDashGrid.reactDashNativeDashSortableDashGridMod.SortableGridProps
+  type DefaultProps = SortableGridProps
   @scala.inline
   def ReactDashNativeDashSortableDashGridProps: SortableGridProps.type = typings.reactDashNativeDashSortableDashGrid.reactDashNativeDashSortableDashGridMod.SortableGridProps
   type ReactDashNativeDashSortableDashGridProps = SortableGridProps

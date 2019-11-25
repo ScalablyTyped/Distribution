@@ -33,12 +33,12 @@ object GriddleInitialState {
     textProperties: Anon_FilterPlaceholder = null
   ): GriddleInitialState = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(enableSettings)) __obj.updateDynamic("enableSettings")(enableSettings)
-    if (pageProperties != null) __obj.updateDynamic("pageProperties")(pageProperties)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(enableSettings)) __obj.updateDynamic("enableSettings")(enableSettings.asInstanceOf[js.Any])
+    if (pageProperties != null) __obj.updateDynamic("pageProperties")(pageProperties.asInstanceOf[js.Any])
     if (sortMethod != null) __obj.updateDynamic("sortMethod")(js.Any.fromFunction3(sortMethod))
-    if (sortProperties != null) __obj.updateDynamic("sortProperties")(sortProperties)
-    if (textProperties != null) __obj.updateDynamic("textProperties")(textProperties)
+    if (sortProperties != null) __obj.updateDynamic("sortProperties")(sortProperties.asInstanceOf[js.Any])
+    if (textProperties != null) __obj.updateDynamic("textProperties")(textProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[GriddleInitialState]
   }
 }

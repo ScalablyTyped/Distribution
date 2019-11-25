@@ -36,11 +36,11 @@ object DownfileParams {
     header: StringDictionary[String] = null,
     success: /* res */ Anon_StatusCode => Unit = null
   ): DownfileParams = {
-    val __obj = js.Dynamic.literal(url = url)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (filePath != null) __obj.updateDynamic("filePath")(filePath)
-    if (header != null) __obj.updateDynamic("header")(header)
+    if (filePath != null) __obj.updateDynamic("filePath")(filePath.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[DownfileParams]
   }

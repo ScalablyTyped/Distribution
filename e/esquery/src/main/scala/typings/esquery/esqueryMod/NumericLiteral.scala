@@ -13,8 +13,8 @@ trait NumericLiteral extends Literal {
 object NumericLiteral {
   @scala.inline
   def apply(`type`: literal, value: Double): NumericLiteral = {
-    val __obj = js.Dynamic.literal(value = value)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NumericLiteral]
   }
 }

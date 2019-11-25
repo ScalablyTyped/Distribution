@@ -29,8 +29,8 @@ object AgentPoolQueueTarget {
     queue: AgentPoolQueue,
     `type`: Double
   ): AgentPoolQueueTarget = {
-    val __obj = js.Dynamic.literal(allowScriptsAuthAccessOption = allowScriptsAuthAccessOption, demands = demands, executionOptions = executionOptions, queue = queue)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(allowScriptsAuthAccessOption = allowScriptsAuthAccessOption.asInstanceOf[js.Any], demands = demands.asInstanceOf[js.Any], executionOptions = executionOptions.asInstanceOf[js.Any], queue = queue.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AgentPoolQueueTarget]
   }
 }

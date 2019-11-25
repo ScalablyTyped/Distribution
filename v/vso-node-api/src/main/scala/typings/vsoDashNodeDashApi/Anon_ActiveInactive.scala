@@ -12,7 +12,7 @@ trait Anon_ActiveInactive extends js.Object {
 object Anon_ActiveInactive {
   @scala.inline
   def apply(active: Double, inactive: Double): Anon_ActiveInactive = {
-    val __obj = js.Dynamic.literal(active = active, inactive = inactive)
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], inactive = inactive.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ActiveInactive]
   }

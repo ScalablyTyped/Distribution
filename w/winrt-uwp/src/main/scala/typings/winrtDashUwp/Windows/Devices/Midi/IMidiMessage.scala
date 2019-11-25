@@ -18,8 +18,8 @@ trait IMidiMessage extends js.Object {
 object IMidiMessage {
   @scala.inline
   def apply(rawData: IBuffer, timestamp: Double, `type`: MidiMessageType): IMidiMessage = {
-    val __obj = js.Dynamic.literal(rawData = rawData, timestamp = timestamp)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(rawData = rawData.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMidiMessage]
   }
 }

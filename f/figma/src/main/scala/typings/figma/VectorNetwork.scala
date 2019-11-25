@@ -17,8 +17,8 @@ object VectorNetwork {
     vertices: js.Array[VectorVertex],
     regions: js.Array[VectorRegion] = null
   ): VectorNetwork = {
-    val __obj = js.Dynamic.literal(segments = segments, vertices = vertices)
-    if (regions != null) __obj.updateDynamic("regions")(regions)
+    val __obj = js.Dynamic.literal(segments = segments.asInstanceOf[js.Any], vertices = vertices.asInstanceOf[js.Any])
+    if (regions != null) __obj.updateDynamic("regions")(regions.asInstanceOf[js.Any])
     __obj.asInstanceOf[VectorNetwork]
   }
 }

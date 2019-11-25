@@ -19,9 +19,9 @@ object GridExcelExportEvent {
     data: js.Any = null,
     workbook: Workbook = null
   ): GridExcelExportEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (workbook != null) __obj.updateDynamic("workbook")(workbook)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (workbook != null) __obj.updateDynamic("workbook")(workbook.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridExcelExportEvent]
   }
 }

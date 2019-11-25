@@ -36,7 +36,7 @@ object Action {
     title: String = null
   ): Action = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Action]
   }
 }

@@ -15,8 +15,8 @@ object GoogleCloudMlV1__GetConfigResponse {
   @scala.inline
   def apply(serviceAccount: String = null, serviceAccountProject: String = null): GoogleCloudMlV1__GetConfigResponse = {
     val __obj = js.Dynamic.literal()
-    if (serviceAccount != null) __obj.updateDynamic("serviceAccount")(serviceAccount)
-    if (serviceAccountProject != null) __obj.updateDynamic("serviceAccountProject")(serviceAccountProject)
+    if (serviceAccount != null) __obj.updateDynamic("serviceAccount")(serviceAccount.asInstanceOf[js.Any])
+    if (serviceAccountProject != null) __obj.updateDynamic("serviceAccountProject")(serviceAccountProject.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudMlV1__GetConfigResponse]
   }
 }

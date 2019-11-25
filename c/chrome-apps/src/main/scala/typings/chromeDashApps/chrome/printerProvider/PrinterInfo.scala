@@ -16,8 +16,8 @@ trait PrinterInfo extends js.Object {
 object PrinterInfo {
   @scala.inline
   def apply(id: String, name: String, description: String = null): PrinterInfo = {
-    val __obj = js.Dynamic.literal(id = id, name = name)
-    if (description != null) __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrinterInfo]
   }
 }

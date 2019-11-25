@@ -37,7 +37,7 @@ object MarkerOptions {
   ): MarkerOptions = {
     val __obj = js.Dynamic.literal()
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (!js.isUndefined(repeatMode)) __obj.updateDynamic("repeatMode")(repeatMode)
+    if (!js.isUndefined(repeatMode)) __obj.updateDynamic("repeatMode")(repeatMode.asInstanceOf[js.Any])
     if (zIndexOffset != null) __obj.updateDynamic("zIndexOffset")(zIndexOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkerOptions]
   }

@@ -30,8 +30,8 @@ object ErrorReport {
     value: js.Any,
     stack: String = null
   ): ErrorReport = {
-    val __obj = js.Dynamic.literal(code = code, flags = flags, message = message, messages = messages, name = name, path = path, prefs = prefs, state = state, value = value)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], prefs = prefs.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorReport]
   }
 }

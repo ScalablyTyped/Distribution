@@ -28,7 +28,7 @@ object HeaderProps {
     if (headerNumberOfLines != null) __obj.updateDynamic("headerNumberOfLines")(headerNumberOfLines.asInstanceOf[js.Any])
     if (headerRef != null) __obj.updateDynamic("headerRef")(js.Any.fromFunction0(headerRef))
     if (headerStyle != null) __obj.updateDynamic("headerStyle")(headerStyle.asInstanceOf[js.Any])
-    if (headerText != null) __obj.updateDynamic("headerText")(headerText)
+    if (headerText != null) __obj.updateDynamic("headerText")(headerText.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeaderProps]
   }
 }

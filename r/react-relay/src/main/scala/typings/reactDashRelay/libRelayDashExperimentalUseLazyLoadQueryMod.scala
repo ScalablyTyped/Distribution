@@ -12,13 +12,13 @@ object libRelayDashExperimentalUseLazyLoadQueryMod extends js.Object {
   @JSName("useLazyLoadQuery")
   def useLazyLoadQuery_variables[TQuery /* <: OperationType */](
     gqlQuery: GraphQLTaggedNode,
-    variables: /* import warning: ImportType.apply Failed type conversion: TQuery['variables'] */ js.Any
-  ): /* import warning: ImportType.apply Failed type conversion: TQuery['response'] */ js.Any = js.native
+    variables: /* import warning: importer.ImportType#apply Failed type conversion: TQuery['variables'] */ js.Any
+  ): /* import warning: importer.ImportType#apply Failed type conversion: TQuery['response'] */ js.Any = js.native
   @JSName("useLazyLoadQuery")
   def useLazyLoadQuery_variables[TQuery /* <: OperationType */](
     gqlQuery: GraphQLTaggedNode,
-    variables: /* import warning: ImportType.apply Failed type conversion: TQuery['variables'] */ js.Any,
+    variables: /* import warning: importer.ImportType#apply Failed type conversion: TQuery['variables'] */ js.Any,
     options: Anon_FetchKey
-  ): /* import warning: ImportType.apply Failed type conversion: TQuery['response'] */ js.Any = js.native
+  ): /* import warning: importer.ImportType#apply Failed type conversion: TQuery['response'] */ js.Any = js.native
 }
 

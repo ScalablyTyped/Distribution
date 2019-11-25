@@ -34,11 +34,11 @@ trait TypeofstorageCallback extends js.Object {
     id: String,
     callback: js.Function1[
       /* result */ ToStringLiteral[
-        /* import warning: ImportType.apply Failed type conversion: typeof EjectDeviceResultCode */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: typeof EjectDeviceResultCode */ js.Any, 
         String, 
         Exclude[
           String, 
-          /* import warning: ImportType.apply Failed type conversion: typeof EjectDeviceResultCode[keyof typeof EjectDeviceResultCode] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: typeof EjectDeviceResultCode[keyof typeof EjectDeviceResultCode] */ js.Any
         ]
       ], 
       Unit
@@ -60,11 +60,11 @@ object TypeofstorageCallback {
     StorageUnitType: Anon_FIXED,
     ejectDevice: (String, js.Function1[
       /* result */ ToStringLiteral[
-        /* import warning: ImportType.apply Failed type conversion: typeof EjectDeviceResultCode */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: typeof EjectDeviceResultCode */ js.Any, 
         String, 
         Exclude[
           String, 
-          /* import warning: ImportType.apply Failed type conversion: typeof EjectDeviceResultCode[keyof typeof EjectDeviceResultCode] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: typeof EjectDeviceResultCode[keyof typeof EjectDeviceResultCode] */ js.Any
         ]
       ], 
       Unit
@@ -74,7 +74,7 @@ object TypeofstorageCallback {
     onAttached: Event[js.Function1[/* info */ StorageUnitInfo, Unit]],
     onDetached: Event[js.Function1[/* id */ String, Unit]]
   ): TypeofstorageCallback = {
-    val __obj = js.Dynamic.literal(EjectDeviceResultCode = EjectDeviceResultCode, StorageUnitType = StorageUnitType, ejectDevice = js.Any.fromFunction2(ejectDevice), getAvailableCapacity = js.Any.fromFunction2(getAvailableCapacity), getInfo = js.Any.fromFunction1(getInfo), onAttached = onAttached, onDetached = onDetached)
+    val __obj = js.Dynamic.literal(EjectDeviceResultCode = EjectDeviceResultCode.asInstanceOf[js.Any], StorageUnitType = StorageUnitType.asInstanceOf[js.Any], ejectDevice = js.Any.fromFunction2(ejectDevice), getAvailableCapacity = js.Any.fromFunction2(getAvailableCapacity), getInfo = js.Any.fromFunction1(getInfo), onAttached = onAttached.asInstanceOf[js.Any], onDetached = onDetached.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeofstorageCallback]
   }

@@ -16,9 +16,9 @@ trait EventTimeInfo extends js.Object {
 object EventTimeInfo {
   @scala.inline
   def apply(field: String, format: String = null, time_zone: String = null): EventTimeInfo = {
-    val __obj = js.Dynamic.literal(field = field)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (time_zone != null) __obj.updateDynamic("time_zone")(time_zone)
+    val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (time_zone != null) __obj.updateDynamic("time_zone")(time_zone.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventTimeInfo]
   }
 }

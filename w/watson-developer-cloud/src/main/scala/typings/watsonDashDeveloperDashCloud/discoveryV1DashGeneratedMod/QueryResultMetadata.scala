@@ -15,7 +15,7 @@ trait QueryResultMetadata extends js.Object {
 object QueryResultMetadata {
   @scala.inline
   def apply(score: Double, confidence: Int | Double = null): QueryResultMetadata = {
-    val __obj = js.Dynamic.literal(score = score)
+    val __obj = js.Dynamic.literal(score = score.asInstanceOf[js.Any])
     if (confidence != null) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryResultMetadata]
   }

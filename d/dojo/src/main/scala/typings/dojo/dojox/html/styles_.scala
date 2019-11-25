@@ -133,8 +133,8 @@ object styles_ {
     modifyCssRule: (js.Any, js.Any, js.Any) => Unit,
     removeCssRule: (String, String, String) => Unit
   ): styles_ = {
-    val __obj = js.Dynamic.literal(activeStyleSheet = js.Any.fromFunction1(activeStyleSheet), disableStyleSheet = js.Any.fromFunction1(disableStyleSheet), enableStyleSheet = js.Any.fromFunction1(enableStyleSheet), entities = entities, getDynamicStyleSheet = js.Any.fromFunction1(getDynamicStyleSheet), getPreferredStyleSheet = js.Any.fromFunction0(getPreferredStyleSheet), getStyleSheet = js.Any.fromFunction1(getStyleSheet), getStyleSheets = js.Any.fromFunction0(getStyleSheets), getToggledStyleSheets = js.Any.fromFunction0(getToggledStyleSheets), insertCssRule = js.Any.fromFunction3(insertCssRule), metrics = metrics, modifyCssRule = js.Any.fromFunction3(modifyCssRule), removeCssRule = js.Any.fromFunction3(removeCssRule))
-    __obj.updateDynamic("ext-dojo")(`ext-dojo`)
+    val __obj = js.Dynamic.literal(activeStyleSheet = js.Any.fromFunction1(activeStyleSheet), disableStyleSheet = js.Any.fromFunction1(disableStyleSheet), enableStyleSheet = js.Any.fromFunction1(enableStyleSheet), entities = entities.asInstanceOf[js.Any], getDynamicStyleSheet = js.Any.fromFunction1(getDynamicStyleSheet), getPreferredStyleSheet = js.Any.fromFunction0(getPreferredStyleSheet), getStyleSheet = js.Any.fromFunction1(getStyleSheet), getStyleSheets = js.Any.fromFunction0(getStyleSheets), getToggledStyleSheets = js.Any.fromFunction0(getToggledStyleSheets), insertCssRule = js.Any.fromFunction3(insertCssRule), metrics = metrics.asInstanceOf[js.Any], modifyCssRule = js.Any.fromFunction3(modifyCssRule), removeCssRule = js.Any.fromFunction3(removeCssRule))
+    __obj.updateDynamic("ext-dojo")(`ext-dojo`.asInstanceOf[js.Any])
     __obj.asInstanceOf[styles_]
   }
 }

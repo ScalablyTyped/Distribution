@@ -63,8 +63,8 @@ object DefinitionReference {
     uri: String,
     url: String
   ): DefinitionReference = {
-    val __obj = js.Dynamic.literal(createdDate = createdDate, id = id, name = name, path = path, project = project, queueStatus = queueStatus, revision = revision, uri = uri, url = url)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(createdDate = createdDate.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], queueStatus = queueStatus.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefinitionReference]
   }
 }

@@ -13,7 +13,7 @@ object TargetTcpProxiesSetProxyHeaderRequest {
   @scala.inline
   def apply(proxyHeader: String = null): TargetTcpProxiesSetProxyHeaderRequest = {
     val __obj = js.Dynamic.literal()
-    if (proxyHeader != null) __obj.updateDynamic("proxyHeader")(proxyHeader)
+    if (proxyHeader != null) __obj.updateDynamic("proxyHeader")(proxyHeader.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetTcpProxiesSetProxyHeaderRequest]
   }
 }

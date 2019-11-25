@@ -11,7 +11,7 @@ trait Anon_IsWatchMode extends js.Object {
 object Anon_IsWatchMode {
   @scala.inline
   def apply(isWatchMode: Boolean): Anon_IsWatchMode = {
-    val __obj = js.Dynamic.literal(isWatchMode = isWatchMode)
+    val __obj = js.Dynamic.literal(isWatchMode = isWatchMode.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IsWatchMode]
   }

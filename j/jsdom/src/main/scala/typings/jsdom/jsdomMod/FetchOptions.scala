@@ -24,10 +24,10 @@ object FetchOptions {
     referrer: String = null
   ): FetchOptions = {
     val __obj = js.Dynamic.literal()
-    if (accept != null) __obj.updateDynamic("accept")(accept)
-    if (cookieJar != null) __obj.updateDynamic("cookieJar")(cookieJar)
+    if (accept != null) __obj.updateDynamic("accept")(accept.asInstanceOf[js.Any])
+    if (cookieJar != null) __obj.updateDynamic("cookieJar")(cookieJar.asInstanceOf[js.Any])
     if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
-    if (referrer != null) __obj.updateDynamic("referrer")(referrer)
+    if (referrer != null) __obj.updateDynamic("referrer")(referrer.asInstanceOf[js.Any])
     __obj.asInstanceOf[FetchOptions]
   }
 }

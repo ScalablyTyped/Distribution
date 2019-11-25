@@ -25,7 +25,7 @@ object Anon_Alt {
     poster: String,
     title: String
   ): Anon_Alt = {
-    val __obj = js.Dynamic.literal(alt = alt, autoPlay = autoPlay, controls = controls, id = id, loop = loop, poster = poster, title = title)
+    val __obj = js.Dynamic.literal(alt = alt.asInstanceOf[js.Any], autoPlay = autoPlay.asInstanceOf[js.Any], controls = controls.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], loop = loop.asInstanceOf[js.Any], poster = poster.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Alt]
   }

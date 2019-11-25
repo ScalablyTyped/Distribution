@@ -79,14 +79,14 @@ object NavigationAnnotationsOptions {
   ): NavigationAnnotationsOptions = {
     val __obj = js.Dynamic.literal()
     if (controlPointOptions != null) __obj.updateDynamic("controlPointOptions")(controlPointOptions.asInstanceOf[js.Any])
-    if (draggable != null) __obj.updateDynamic("draggable")(draggable)
-    if (events != null) __obj.updateDynamic("events")(events)
+    if (draggable != null) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
+    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (labelOptions != null) __obj.updateDynamic("labelOptions")(labelOptions)
-    if (labels != null) __obj.updateDynamic("labels")(labels)
-    if (shapeOptions != null) __obj.updateDynamic("shapeOptions")(shapeOptions)
-    if (shapes != null) __obj.updateDynamic("shapes")(shapes)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (labelOptions != null) __obj.updateDynamic("labelOptions")(labelOptions.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (shapeOptions != null) __obj.updateDynamic("shapeOptions")(shapeOptions.asInstanceOf[js.Any])
+    if (shapes != null) __obj.updateDynamic("shapes")(shapes.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationAnnotationsOptions]
   }

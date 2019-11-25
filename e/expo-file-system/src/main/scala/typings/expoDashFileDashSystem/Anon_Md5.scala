@@ -13,8 +13,8 @@ object Anon_Md5 {
   @scala.inline
   def apply(md5: js.UndefOr[Boolean] = js.undefined, size: js.UndefOr[Boolean] = js.undefined): Anon_Md5 = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(md5)) __obj.updateDynamic("md5")(md5)
-    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size)
+    if (!js.isUndefined(md5)) __obj.updateDynamic("md5")(md5.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Md5]
   }
 }

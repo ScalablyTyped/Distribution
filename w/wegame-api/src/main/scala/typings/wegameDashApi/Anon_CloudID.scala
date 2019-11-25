@@ -18,7 +18,7 @@ trait Anon_CloudID extends js.Object {
 object Anon_CloudID {
   @scala.inline
   def apply(cloudID: String, encryptedData: String): Anon_CloudID = {
-    val __obj = js.Dynamic.literal(cloudID = cloudID, encryptedData = encryptedData)
+    val __obj = js.Dynamic.literal(cloudID = cloudID.asInstanceOf[js.Any], encryptedData = encryptedData.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CloudID]
   }

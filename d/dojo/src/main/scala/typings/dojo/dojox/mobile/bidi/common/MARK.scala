@@ -27,7 +27,7 @@ trait MARK extends js.Object {
 object MARK {
   @scala.inline
   def apply(LRE: String, PDF: String, RLE: String): MARK = {
-    val __obj = js.Dynamic.literal(LRE = LRE, PDF = PDF, RLE = RLE)
+    val __obj = js.Dynamic.literal(LRE = LRE.asInstanceOf[js.Any], PDF = PDF.asInstanceOf[js.Any], RLE = RLE.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MARK]
   }

@@ -19,7 +19,7 @@ trait Unregistration extends js.Object {
 object Unregistration {
   @scala.inline
   def apply(id: String, method: String): Unregistration = {
-    val __obj = js.Dynamic.literal(id = id, method = method)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Unregistration]
   }

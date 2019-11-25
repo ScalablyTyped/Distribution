@@ -18,9 +18,9 @@ object SurfaceTooltipOpenEvent {
     element: typings.kendoDashUi.kendo.drawing.Element = null,
     target: typings.kendoDashUi.kendo.drawing.Element = null
   ): SurfaceTooltipOpenEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (target != null) __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[SurfaceTooltipOpenEvent]
   }
 }

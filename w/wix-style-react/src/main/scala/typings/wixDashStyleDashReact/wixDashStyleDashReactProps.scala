@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 trait wixDashStyleDashReactProps {
   @scala.inline
+  def BaseComponentsProps: typings.wixDashStyleDashReact.baseComponentsMod.WixComponentProps.type = typings.wixDashStyleDashReact.baseComponentsMod.WixComponentProps
+  type BaseComponentsProps = typings.wixDashStyleDashReact.baseComponentsMod.WixComponentProps
+  @scala.inline
   def ButtonProps: typings.wixDashStyleDashReact.buttonMod.ButtonProps.type = typings.wixDashStyleDashReact.buttonMod.ButtonProps
   type ButtonProps = typings.wixDashStyleDashReact.buttonMod.ButtonProps
   @scala.inline
@@ -14,5 +17,8 @@ trait wixDashStyleDashReactProps {
   @scala.inline
   def TextProps: typings.wixDashStyleDashReact.textMod.TextProps.type = typings.wixDashStyleDashReact.textMod.TextProps
   type TextProps = typings.wixDashStyleDashReact.textMod.TextProps
+  @scala.inline
+  def WixComponentProps: typings.wixDashStyleDashReact.baseComponentsMod.WixComponentProps.type = typings.wixDashStyleDashReact.baseComponentsMod.WixComponentProps
+  type WixComponentProps = typings.wixDashStyleDashReact.baseComponentsMod.WixComponentProps
 }
 

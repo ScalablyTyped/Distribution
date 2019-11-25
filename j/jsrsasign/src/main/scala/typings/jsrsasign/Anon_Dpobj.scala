@@ -12,7 +12,7 @@ trait Anon_Dpobj extends js.Object {
 object Anon_Dpobj {
   @scala.inline
   def apply(dpobj: ASN1Object): Anon_Dpobj = {
-    val __obj = js.Dynamic.literal(dpobj = dpobj)
+    val __obj = js.Dynamic.literal(dpobj = dpobj.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Dpobj]
   }

@@ -28,7 +28,7 @@ object Anon_Length {
     if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
     if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top)
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Length]
   }

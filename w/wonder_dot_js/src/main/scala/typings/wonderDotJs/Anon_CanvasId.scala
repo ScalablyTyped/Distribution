@@ -23,11 +23,11 @@ object Anon_CanvasId {
     useDevicePixelRatio: js.UndefOr[Boolean] = js.undefined
   ): Anon_CanvasId = {
     val __obj = js.Dynamic.literal()
-    if (canvasId != null) __obj.updateDynamic("canvasId")(canvasId)
-    if (contextConfig != null) __obj.updateDynamic("contextConfig")(contextConfig)
-    if (!js.isUndefined(isTest)) __obj.updateDynamic("isTest")(isTest)
-    if (screenSize != null) __obj.updateDynamic("screenSize")(screenSize)
-    if (!js.isUndefined(useDevicePixelRatio)) __obj.updateDynamic("useDevicePixelRatio")(useDevicePixelRatio)
+    if (canvasId != null) __obj.updateDynamic("canvasId")(canvasId.asInstanceOf[js.Any])
+    if (contextConfig != null) __obj.updateDynamic("contextConfig")(contextConfig.asInstanceOf[js.Any])
+    if (!js.isUndefined(isTest)) __obj.updateDynamic("isTest")(isTest.asInstanceOf[js.Any])
+    if (screenSize != null) __obj.updateDynamic("screenSize")(screenSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(useDevicePixelRatio)) __obj.updateDynamic("useDevicePixelRatio")(useDevicePixelRatio.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CanvasId]
   }
 }

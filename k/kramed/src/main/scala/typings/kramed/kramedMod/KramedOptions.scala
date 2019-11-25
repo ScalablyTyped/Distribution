@@ -76,17 +76,17 @@ object KramedOptions {
     tables: js.UndefOr[Boolean] = js.undefined
   ): KramedOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(breaks)) __obj.updateDynamic("breaks")(breaks)
-    if (!js.isUndefined(gfm)) __obj.updateDynamic("gfm")(gfm)
+    if (!js.isUndefined(breaks)) __obj.updateDynamic("breaks")(breaks.asInstanceOf[js.Any])
+    if (!js.isUndefined(gfm)) __obj.updateDynamic("gfm")(gfm.asInstanceOf[js.Any])
     if (highlight != null) __obj.updateDynamic("highlight")(js.Any.fromFunction3(highlight))
-    if (langPrefix != null) __obj.updateDynamic("langPrefix")(langPrefix)
-    if (!js.isUndefined(pedantic)) __obj.updateDynamic("pedantic")(pedantic)
-    if (renderer != null) __obj.updateDynamic("renderer")(renderer)
-    if (!js.isUndefined(sanitize)) __obj.updateDynamic("sanitize")(sanitize)
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
-    if (!js.isUndefined(smartLists)) __obj.updateDynamic("smartLists")(smartLists)
-    if (!js.isUndefined(smartypants)) __obj.updateDynamic("smartypants")(smartypants)
-    if (!js.isUndefined(tables)) __obj.updateDynamic("tables")(tables)
+    if (langPrefix != null) __obj.updateDynamic("langPrefix")(langPrefix.asInstanceOf[js.Any])
+    if (!js.isUndefined(pedantic)) __obj.updateDynamic("pedantic")(pedantic.asInstanceOf[js.Any])
+    if (renderer != null) __obj.updateDynamic("renderer")(renderer.asInstanceOf[js.Any])
+    if (!js.isUndefined(sanitize)) __obj.updateDynamic("sanitize")(sanitize.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
+    if (!js.isUndefined(smartLists)) __obj.updateDynamic("smartLists")(smartLists.asInstanceOf[js.Any])
+    if (!js.isUndefined(smartypants)) __obj.updateDynamic("smartypants")(smartypants.asInstanceOf[js.Any])
+    if (!js.isUndefined(tables)) __obj.updateDynamic("tables")(tables.asInstanceOf[js.Any])
     __obj.asInstanceOf[KramedOptions]
   }
 }

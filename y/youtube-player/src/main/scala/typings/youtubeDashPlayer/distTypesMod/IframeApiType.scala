@@ -12,7 +12,7 @@ trait IframeApiType extends js.Object {
 object IframeApiType {
   @scala.inline
   def apply(Player: Anon_ElementId): IframeApiType = {
-    val __obj = js.Dynamic.literal(Player = Player)
+    val __obj = js.Dynamic.literal(Player = Player.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IframeApiType]
   }

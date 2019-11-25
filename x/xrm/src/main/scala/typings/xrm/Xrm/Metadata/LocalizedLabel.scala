@@ -15,7 +15,7 @@ trait LocalizedLabel extends js.Object {
 object LocalizedLabel {
   @scala.inline
   def apply(Label: String, LanguageCode: Double): LocalizedLabel = {
-    val __obj = js.Dynamic.literal(Label = Label, LanguageCode = LanguageCode)
+    val __obj = js.Dynamic.literal(Label = Label.asInstanceOf[js.Any], LanguageCode = LanguageCode.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LocalizedLabel]
   }

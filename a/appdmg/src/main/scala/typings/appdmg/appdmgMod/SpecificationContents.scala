@@ -18,9 +18,9 @@ trait SpecificationContents extends js.Object {
 object SpecificationContents {
   @scala.inline
   def apply(path: String, `type`: link | file | position, x: Double, y: Double, name: String = null): SpecificationContents = {
-    val __obj = js.Dynamic.literal(path = path, x = x, y = y)
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpecificationContents]
   }
 }

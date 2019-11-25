@@ -13,7 +13,7 @@ object Anon_UpdateOn {
   @scala.inline
   def apply(updateOn: FormHooks = null): Anon_UpdateOn = {
     val __obj = js.Dynamic.literal()
-    if (updateOn != null) __obj.updateDynamic("updateOn")(updateOn)
+    if (updateOn != null) __obj.updateDynamic("updateOn")(updateOn.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_UpdateOn]
   }
 }

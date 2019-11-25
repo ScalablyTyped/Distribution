@@ -17,8 +17,8 @@ object Anon_PropNameSilentAny {
     silent: js.UndefOr[Boolean] = js.undefined
   ): Anon_PropNameSilentAny = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_PropNameSilentAny]
   }
 }

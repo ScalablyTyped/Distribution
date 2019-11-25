@@ -13,7 +13,7 @@ object UrlCrawlErrorsSamplesListResponse {
   @scala.inline
   def apply(urlCrawlErrorSample: js.Array[UrlCrawlErrorsSample] = null): UrlCrawlErrorsSamplesListResponse = {
     val __obj = js.Dynamic.literal()
-    if (urlCrawlErrorSample != null) __obj.updateDynamic("urlCrawlErrorSample")(urlCrawlErrorSample)
+    if (urlCrawlErrorSample != null) __obj.updateDynamic("urlCrawlErrorSample")(urlCrawlErrorSample.asInstanceOf[js.Any])
     __obj.asInstanceOf[UrlCrawlErrorsSamplesListResponse]
   }
 }

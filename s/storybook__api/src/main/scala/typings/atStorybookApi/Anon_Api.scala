@@ -19,7 +19,7 @@ object Anon_Api {
     provider: Provider,
     store: default
   ): Anon_Api = {
-    val __obj = js.Dynamic.literal(api = api, provider = provider, store = store)
+    val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Api]
   }

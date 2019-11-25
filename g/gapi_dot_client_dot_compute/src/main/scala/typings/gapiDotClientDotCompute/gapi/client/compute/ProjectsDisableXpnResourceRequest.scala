@@ -13,7 +13,7 @@ object ProjectsDisableXpnResourceRequest {
   @scala.inline
   def apply(xpnResource: XpnResourceId = null): ProjectsDisableXpnResourceRequest = {
     val __obj = js.Dynamic.literal()
-    if (xpnResource != null) __obj.updateDynamic("xpnResource")(xpnResource)
+    if (xpnResource != null) __obj.updateDynamic("xpnResource")(xpnResource.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectsDisableXpnResourceRequest]
   }
 }

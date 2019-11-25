@@ -12,7 +12,7 @@ object Navigator {
   @scala.inline
   def apply(mediaSession: MediaSession = null): Navigator = {
     val __obj = js.Dynamic.literal()
-    if (mediaSession != null) __obj.updateDynamic("mediaSession")(mediaSession)
+    if (mediaSession != null) __obj.updateDynamic("mediaSession")(mediaSession.asInstanceOf[js.Any])
     __obj.asInstanceOf[Navigator]
   }
 }

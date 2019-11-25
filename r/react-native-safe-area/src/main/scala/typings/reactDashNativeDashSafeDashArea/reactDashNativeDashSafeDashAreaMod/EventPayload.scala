@@ -11,7 +11,7 @@ trait EventPayload extends js.Object {
 object EventPayload {
   @scala.inline
   def apply(safeAreaInsets: SafeAreaInsets): EventPayload = {
-    val __obj = js.Dynamic.literal(safeAreaInsets = safeAreaInsets)
+    val __obj = js.Dynamic.literal(safeAreaInsets = safeAreaInsets.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EventPayload]
   }

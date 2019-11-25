@@ -20,7 +20,7 @@ object Anon_Child {
     children: ReactElement | js.Array[ReactElement] = null
   ): Anon_Child = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (childFactory != null) __obj.updateDynamic("childFactory")(js.Any.fromFunction1(childFactory))
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Child]

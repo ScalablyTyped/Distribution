@@ -13,7 +13,7 @@ object Anon_Abort {
   @scala.inline
   def apply(abort: () => Unit, promise: js.Promise[Boolean] = null): Anon_Abort = {
     val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort))
-    if (promise != null) __obj.updateDynamic("promise")(promise)
+    if (promise != null) __obj.updateDynamic("promise")(promise.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Abort]
   }
 }

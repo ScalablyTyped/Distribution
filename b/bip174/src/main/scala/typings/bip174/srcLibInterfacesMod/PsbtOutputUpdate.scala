@@ -18,9 +18,9 @@ object PsbtOutputUpdate {
     witnessScript: WitnessScript = null
   ): PsbtOutputUpdate = {
     val __obj = js.Dynamic.literal()
-    if (bip32Derivation != null) __obj.updateDynamic("bip32Derivation")(bip32Derivation)
-    if (redeemScript != null) __obj.updateDynamic("redeemScript")(redeemScript)
-    if (witnessScript != null) __obj.updateDynamic("witnessScript")(witnessScript)
+    if (bip32Derivation != null) __obj.updateDynamic("bip32Derivation")(bip32Derivation.asInstanceOf[js.Any])
+    if (redeemScript != null) __obj.updateDynamic("redeemScript")(redeemScript.asInstanceOf[js.Any])
+    if (witnessScript != null) __obj.updateDynamic("witnessScript")(witnessScript.asInstanceOf[js.Any])
     __obj.asInstanceOf[PsbtOutputUpdate]
   }
 }

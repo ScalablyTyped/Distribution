@@ -30,7 +30,7 @@ object RedomComponent {
     onunmount: () => Unit = null,
     update: (/* item */ js.Any, /* index */ Double, /* data */ js.Any, /* context */ js.UndefOr[js.Any]) => Unit = null
   ): RedomComponent = {
-    val __obj = js.Dynamic.literal(el = el)
+    val __obj = js.Dynamic.literal(el = el.asInstanceOf[js.Any])
     if (onmount != null) __obj.updateDynamic("onmount")(js.Any.fromFunction0(onmount))
     if (onremount != null) __obj.updateDynamic("onremount")(js.Any.fromFunction0(onremount))
     if (onunmount != null) __obj.updateDynamic("onunmount")(js.Any.fromFunction0(onunmount))

@@ -13,7 +13,7 @@ object MetaFalseOptions {
   @scala.inline
   def apply(meta: `false` = null): MetaFalseOptions = {
     val __obj = js.Dynamic.literal()
-    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetaFalseOptions]
   }
 }

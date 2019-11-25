@@ -15,9 +15,9 @@ trait Relationship[ResourceType] extends js.Object {
 object Relationship {
   @scala.inline
   def apply[ResourceType](data: js.Array[ResourceType], href: String, meta: js.Any = null, next: String = null): Relationship[ResourceType] = {
-    val __obj = js.Dynamic.literal(data = data, href = href)
-    if (meta != null) __obj.updateDynamic("meta")(meta)
-    if (next != null) __obj.updateDynamic("next")(next)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any])
+    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
+    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
     __obj.asInstanceOf[Relationship[ResourceType]]
   }
 }

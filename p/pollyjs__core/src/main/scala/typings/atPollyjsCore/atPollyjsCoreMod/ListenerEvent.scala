@@ -13,7 +13,7 @@ object ListenerEvent {
   @scala.inline
   def apply(stopPropagation: () => Unit, `type`: String): ListenerEvent = {
     val __obj = js.Dynamic.literal(stopPropagation = js.Any.fromFunction0(stopPropagation))
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListenerEvent]
   }
 }

@@ -30,8 +30,8 @@ object BrowserOptions {
     slowMo: Int | Double = null
   ): BrowserOptions = {
     val __obj = js.Dynamic.literal()
-    if (defaultViewport != null) __obj.updateDynamic("defaultViewport")(defaultViewport)
-    if (!js.isUndefined(ignoreHTTPSErrors)) __obj.updateDynamic("ignoreHTTPSErrors")(ignoreHTTPSErrors)
+    if (defaultViewport != null) __obj.updateDynamic("defaultViewport")(defaultViewport.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreHTTPSErrors)) __obj.updateDynamic("ignoreHTTPSErrors")(ignoreHTTPSErrors.asInstanceOf[js.Any])
     if (slowMo != null) __obj.updateDynamic("slowMo")(slowMo.asInstanceOf[js.Any])
     __obj.asInstanceOf[BrowserOptions]
   }

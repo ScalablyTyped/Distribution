@@ -12,7 +12,7 @@ trait Anon_IncludeFields extends js.Object {
 object Anon_IncludeFields {
   @scala.inline
   def apply(includeFields: Double, none: Double): Anon_IncludeFields = {
-    val __obj = js.Dynamic.literal(includeFields = includeFields, none = none)
+    val __obj = js.Dynamic.literal(includeFields = includeFields.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IncludeFields]
   }

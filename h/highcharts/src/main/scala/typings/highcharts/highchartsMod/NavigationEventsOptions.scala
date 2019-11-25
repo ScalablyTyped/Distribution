@@ -35,10 +35,10 @@ object NavigationEventsOptions {
     showPopup: js.Function = null
   ): NavigationEventsOptions = {
     val __obj = js.Dynamic.literal()
-    if (deselectButton != null) __obj.updateDynamic("deselectButton")(deselectButton)
-    if (hidePopup != null) __obj.updateDynamic("hidePopup")(hidePopup)
-    if (selectButton != null) __obj.updateDynamic("selectButton")(selectButton)
-    if (showPopup != null) __obj.updateDynamic("showPopup")(showPopup)
+    if (deselectButton != null) __obj.updateDynamic("deselectButton")(deselectButton.asInstanceOf[js.Any])
+    if (hidePopup != null) __obj.updateDynamic("hidePopup")(hidePopup.asInstanceOf[js.Any])
+    if (selectButton != null) __obj.updateDynamic("selectButton")(selectButton.asInstanceOf[js.Any])
+    if (showPopup != null) __obj.updateDynamic("showPopup")(showPopup.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationEventsOptions]
   }
 }

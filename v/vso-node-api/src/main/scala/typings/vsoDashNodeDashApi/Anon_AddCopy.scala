@@ -16,7 +16,7 @@ trait Anon_AddCopy extends js.Object {
 object Anon_AddCopy {
   @scala.inline
   def apply(add: Double, copy: Double, move: Double, remove: Double, replace: Double, test: Double): Anon_AddCopy = {
-    val __obj = js.Dynamic.literal(add = add, copy = copy, move = move, remove = remove, replace = replace, test = test)
+    val __obj = js.Dynamic.literal(add = add.asInstanceOf[js.Any], copy = copy.asInstanceOf[js.Any], move = move.asInstanceOf[js.Any], remove = remove.asInstanceOf[js.Any], replace = replace.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AddCopy]
   }

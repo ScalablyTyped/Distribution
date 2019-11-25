@@ -16,8 +16,8 @@ object Anon_InsertId {
   @scala.inline
   def apply(insertId: String = null, json: JsonObject = null): Anon_InsertId = {
     val __obj = js.Dynamic.literal()
-    if (insertId != null) __obj.updateDynamic("insertId")(insertId)
-    if (json != null) __obj.updateDynamic("json")(json)
+    if (insertId != null) __obj.updateDynamic("insertId")(insertId.asInstanceOf[js.Any])
+    if (json != null) __obj.updateDynamic("json")(json.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_InsertId]
   }
 }

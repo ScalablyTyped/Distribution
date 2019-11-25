@@ -59,13 +59,13 @@ object ExtensionRule {
     validate: (/* value */ js.Any, /* helpers */ js.Any, /* args */ Record[String, _], /* options */ js.Any) => _ = null
   ): ExtensionRule = {
     val __obj = js.Dynamic.literal()
-    if (alias != null) __obj.updateDynamic("alias")(alias)
-    if (args != null) __obj.updateDynamic("args")(args)
-    if (!js.isUndefined(convert)) __obj.updateDynamic("convert")(convert)
-    if (!js.isUndefined(manifest)) __obj.updateDynamic("manifest")(manifest)
+    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (!js.isUndefined(convert)) __obj.updateDynamic("convert")(convert.asInstanceOf[js.Any])
+    if (!js.isUndefined(manifest)) __obj.updateDynamic("manifest")(manifest.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi)
-    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority)
+    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi.asInstanceOf[js.Any])
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction4(validate))
     __obj.asInstanceOf[ExtensionRule]
   }

@@ -23,7 +23,7 @@ object HDNode {
     publicKey: Buffer,
     toJSON: () => Anon_Xpriv
   ): HDNode = {
-    val __obj = js.Dynamic.literal(chainCode = chainCode, derive = js.Any.fromFunction1(derive), privateKey = privateKey, publicKey = publicKey, toJSON = js.Any.fromFunction0(toJSON))
+    val __obj = js.Dynamic.literal(chainCode = chainCode.asInstanceOf[js.Any], derive = js.Any.fromFunction1(derive), privateKey = privateKey.asInstanceOf[js.Any], publicKey = publicKey.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[HDNode]
   }

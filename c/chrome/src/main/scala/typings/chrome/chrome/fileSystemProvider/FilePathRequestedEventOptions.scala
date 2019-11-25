@@ -12,7 +12,7 @@ trait FilePathRequestedEventOptions extends RequestedEventOptions {
 object FilePathRequestedEventOptions {
   @scala.inline
   def apply(filePath: String, fileSystemId: String, requestId: Double): FilePathRequestedEventOptions = {
-    val __obj = js.Dynamic.literal(filePath = filePath, fileSystemId = fileSystemId, requestId = requestId)
+    val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any], fileSystemId = fileSystemId.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FilePathRequestedEventOptions]
   }

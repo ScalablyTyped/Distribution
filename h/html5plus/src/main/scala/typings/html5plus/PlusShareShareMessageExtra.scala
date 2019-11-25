@@ -28,7 +28,7 @@ object PlusShareShareMessageExtra {
   @scala.inline
   def apply(scene: String = null): PlusShareShareMessageExtra = {
     val __obj = js.Dynamic.literal()
-    if (scene != null) __obj.updateDynamic("scene")(scene)
+    if (scene != null) __obj.updateDynamic("scene")(scene.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusShareShareMessageExtra]
   }
 }

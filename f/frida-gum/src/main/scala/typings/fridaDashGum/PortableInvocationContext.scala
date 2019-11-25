@@ -41,8 +41,8 @@ object PortableInvocationContext {
     */
   /* x */ StringDictionary[js.Any] = null
   ): PortableInvocationContext = {
-    val __obj = js.Dynamic.literal(context = context, depth = depth, returnAddress = returnAddress, threadId = threadId)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any], returnAddress = returnAddress.asInstanceOf[js.Any], threadId = threadId.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[PortableInvocationContext]
   }
 }

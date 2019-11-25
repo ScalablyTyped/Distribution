@@ -24,10 +24,10 @@ object FindDevicesByOwnerRequest {
     sectionType: String = null
   ): FindDevicesByOwnerRequest = {
     val __obj = js.Dynamic.literal()
-    if (customerId != null) __obj.updateDynamic("customerId")(customerId)
-    if (limit != null) __obj.updateDynamic("limit")(limit)
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
-    if (sectionType != null) __obj.updateDynamic("sectionType")(sectionType)
+    if (customerId != null) __obj.updateDynamic("customerId")(customerId.asInstanceOf[js.Any])
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
+    if (sectionType != null) __obj.updateDynamic("sectionType")(sectionType.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindDevicesByOwnerRequest]
   }
 }

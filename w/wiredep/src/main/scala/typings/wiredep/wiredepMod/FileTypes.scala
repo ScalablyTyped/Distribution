@@ -31,7 +31,7 @@ object FileTypes {
     styl: Anon_BlockDetectReplaceAnonCssStyl,
     yaml: Anon_BlockDetect
   ): FileTypes = {
-    val __obj = js.Dynamic.literal(fileExtension = fileExtension, html = html, jade = jade, less = less, scss = scss, styl = styl, yaml = yaml)
+    val __obj = js.Dynamic.literal(fileExtension = fileExtension.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], jade = jade.asInstanceOf[js.Any], less = less.asInstanceOf[js.Any], scss = scss.asInstanceOf[js.Any], styl = styl.asInstanceOf[js.Any], yaml = yaml.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FileTypes]
   }

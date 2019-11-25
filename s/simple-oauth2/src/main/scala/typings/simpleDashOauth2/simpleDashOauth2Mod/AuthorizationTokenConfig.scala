@@ -16,7 +16,7 @@ trait AuthorizationTokenConfig extends js.Object {
 object AuthorizationTokenConfig {
   @scala.inline
   def apply(code: AuthorizationCode, redirect_uri: String, scope: String | js.Array[String] = null): AuthorizationTokenConfig = {
-    val __obj = js.Dynamic.literal(code = code, redirect_uri = redirect_uri)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], redirect_uri = redirect_uri.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthorizationTokenConfig]
   }

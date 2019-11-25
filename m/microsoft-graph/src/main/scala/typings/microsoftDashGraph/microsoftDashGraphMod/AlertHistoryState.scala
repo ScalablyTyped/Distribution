@@ -26,13 +26,13 @@ object AlertHistoryState {
     user: String = null
   ): AlertHistoryState = {
     val __obj = js.Dynamic.literal()
-    if (appId != null) __obj.updateDynamic("appId")(appId)
-    if (assignedTo != null) __obj.updateDynamic("assignedTo")(assignedTo)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (feedback != null) __obj.updateDynamic("feedback")(feedback)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (updatedDateTime != null) __obj.updateDynamic("updatedDateTime")(updatedDateTime)
-    if (user != null) __obj.updateDynamic("user")(user)
+    if (appId != null) __obj.updateDynamic("appId")(appId.asInstanceOf[js.Any])
+    if (assignedTo != null) __obj.updateDynamic("assignedTo")(assignedTo.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (feedback != null) __obj.updateDynamic("feedback")(feedback.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (updatedDateTime != null) __obj.updateDynamic("updatedDateTime")(updatedDateTime.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlertHistoryState]
   }
 }

@@ -17,7 +17,7 @@ object GcsData {
   @scala.inline
   def apply(bucketName: String = null): GcsData = {
     val __obj = js.Dynamic.literal()
-    if (bucketName != null) __obj.updateDynamic("bucketName")(bucketName)
+    if (bucketName != null) __obj.updateDynamic("bucketName")(bucketName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GcsData]
   }
 }

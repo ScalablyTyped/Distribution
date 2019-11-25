@@ -23,8 +23,8 @@ object _UnmarshalledReplicaUpdate {
   @scala.inline
   def apply(Create: _UnmarshalledCreateReplicaAction = null, Delete: _UnmarshalledDeleteReplicaAction = null): _UnmarshalledReplicaUpdate = {
     val __obj = js.Dynamic.literal()
-    if (Create != null) __obj.updateDynamic("Create")(Create)
-    if (Delete != null) __obj.updateDynamic("Delete")(Delete)
+    if (Create != null) __obj.updateDynamic("Create")(Create.asInstanceOf[js.Any])
+    if (Delete != null) __obj.updateDynamic("Delete")(Delete.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledReplicaUpdate]
   }
 }

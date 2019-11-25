@@ -14,8 +14,8 @@ trait Action extends js.Object {
 object Action {
   @scala.inline
   def apply(id: String, title: String = null): Action = {
-    val __obj = js.Dynamic.literal(id = id)
-    if (title != null) __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Action]
   }
 }

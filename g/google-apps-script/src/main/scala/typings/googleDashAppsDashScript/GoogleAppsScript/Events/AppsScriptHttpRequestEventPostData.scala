@@ -14,8 +14,8 @@ trait AppsScriptHttpRequestEventPostData extends js.Object {
 object AppsScriptHttpRequestEventPostData {
   @scala.inline
   def apply(contents: String, length: Double, name: String, `type`: String): AppsScriptHttpRequestEventPostData = {
-    val __obj = js.Dynamic.literal(contents = contents, length = length, name = name)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppsScriptHttpRequestEventPostData]
   }
 }

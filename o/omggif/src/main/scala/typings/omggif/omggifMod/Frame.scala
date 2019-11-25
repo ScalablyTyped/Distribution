@@ -37,7 +37,7 @@ object Frame {
     palette_size: Int | Double = null,
     transparent_index: Int | Double = null
   ): Frame = {
-    val __obj = js.Dynamic.literal(data_length = data_length, data_offset = data_offset, delay = delay, disposal = disposal, has_local_palette = has_local_palette, height = height, interlaced = interlaced, width = width, x = x, y = y)
+    val __obj = js.Dynamic.literal(data_length = data_length.asInstanceOf[js.Any], data_offset = data_offset.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], disposal = disposal.asInstanceOf[js.Any], has_local_palette = has_local_palette.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], interlaced = interlaced.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     if (palette_offset != null) __obj.updateDynamic("palette_offset")(palette_offset.asInstanceOf[js.Any])
     if (palette_size != null) __obj.updateDynamic("palette_size")(palette_size.asInstanceOf[js.Any])
     if (transparent_index != null) __obj.updateDynamic("transparent_index")(transparent_index.asInstanceOf[js.Any])

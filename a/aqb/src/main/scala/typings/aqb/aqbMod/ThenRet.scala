@@ -17,7 +17,7 @@ object ThenRet {
     else_ : TernaryOperation,
     otherwise: js.Any => TernaryOperation
   ): ThenRet = {
-    val __obj = js.Dynamic.literal(else_ = else_, otherwise = js.Any.fromFunction1(otherwise))
+    val __obj = js.Dynamic.literal(else_ = else_.asInstanceOf[js.Any], otherwise = js.Any.fromFunction1(otherwise))
     __obj.updateDynamic("else")(js.Any.fromFunction1(`else`))
     __obj.asInstanceOf[ThenRet]
   }

@@ -60,13 +60,13 @@ object PrintTemplateLayoutOptions {
     scalebarUnit: String = null,
     titleText: String = null
   ): PrintTemplateLayoutOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (authorText != null) __obj.updateDynamic("authorText")(authorText)
-    if (copyrightText != null) __obj.updateDynamic("copyrightText")(copyrightText)
-    if (customTextElements != null) __obj.updateDynamic("customTextElements")(customTextElements)
-    if (legendLayers != null) __obj.updateDynamic("legendLayers")(legendLayers)
-    if (scalebarUnit != null) __obj.updateDynamic("scalebarUnit")(scalebarUnit)
-    if (titleText != null) __obj.updateDynamic("titleText")(titleText)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (authorText != null) __obj.updateDynamic("authorText")(authorText.asInstanceOf[js.Any])
+    if (copyrightText != null) __obj.updateDynamic("copyrightText")(copyrightText.asInstanceOf[js.Any])
+    if (customTextElements != null) __obj.updateDynamic("customTextElements")(customTextElements.asInstanceOf[js.Any])
+    if (legendLayers != null) __obj.updateDynamic("legendLayers")(legendLayers.asInstanceOf[js.Any])
+    if (scalebarUnit != null) __obj.updateDynamic("scalebarUnit")(scalebarUnit.asInstanceOf[js.Any])
+    if (titleText != null) __obj.updateDynamic("titleText")(titleText.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrintTemplateLayoutOptions]
   }
 }

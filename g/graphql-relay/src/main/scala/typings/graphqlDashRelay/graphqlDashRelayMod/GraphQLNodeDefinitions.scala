@@ -20,7 +20,7 @@ object GraphQLNodeDefinitions {
     nodeInterface: GraphQLInterfaceType,
     nodesField: GraphQLFieldConfig[_, _, StringDictionary[_]]
   ): GraphQLNodeDefinitions = {
-    val __obj = js.Dynamic.literal(nodeField = nodeField, nodeInterface = nodeInterface, nodesField = nodesField)
+    val __obj = js.Dynamic.literal(nodeField = nodeField.asInstanceOf[js.Any], nodeInterface = nodeInterface.asInstanceOf[js.Any], nodesField = nodesField.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GraphQLNodeDefinitions]
   }

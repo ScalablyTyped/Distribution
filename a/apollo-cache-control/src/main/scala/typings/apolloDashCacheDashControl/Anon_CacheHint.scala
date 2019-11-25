@@ -13,7 +13,7 @@ trait Anon_CacheHint extends js.Object {
 object Anon_CacheHint {
   @scala.inline
   def apply(cacheHint: CacheHint, setCacheHint: CacheHint => Unit): Anon_CacheHint = {
-    val __obj = js.Dynamic.literal(cacheHint = cacheHint, setCacheHint = js.Any.fromFunction1(setCacheHint))
+    val __obj = js.Dynamic.literal(cacheHint = cacheHint.asInstanceOf[js.Any], setCacheHint = js.Any.fromFunction1(setCacheHint))
   
     __obj.asInstanceOf[Anon_CacheHint]
   }

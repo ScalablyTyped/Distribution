@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait AlertType extends js.Object
 
+object AlertType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def error: typings.fundamentalDashReact.fundamentalDashReactStrings.error = this.cast("error")
+  @scala.inline
+  def information: typings.fundamentalDashReact.fundamentalDashReactStrings.information = this.cast("information")
+  @scala.inline
+  def success: typings.fundamentalDashReact.fundamentalDashReactStrings.success = this.cast("success")
+  @scala.inline
+  def warning: typings.fundamentalDashReact.fundamentalDashReactStrings.warning = this.cast("warning")
+}
+

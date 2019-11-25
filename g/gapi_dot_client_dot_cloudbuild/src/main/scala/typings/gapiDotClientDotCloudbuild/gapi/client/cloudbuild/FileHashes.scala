@@ -13,7 +13,7 @@ object FileHashes {
   @scala.inline
   def apply(fileHash: js.Array[Hash] = null): FileHashes = {
     val __obj = js.Dynamic.literal()
-    if (fileHash != null) __obj.updateDynamic("fileHash")(fileHash)
+    if (fileHash != null) __obj.updateDynamic("fileHash")(fileHash.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileHashes]
   }
 }

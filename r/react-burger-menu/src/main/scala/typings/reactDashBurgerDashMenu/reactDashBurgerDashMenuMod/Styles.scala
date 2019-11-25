@@ -31,7 +31,7 @@ object Styles {
     bmMorphShape: Partial[CSSStyleDeclaration],
     bmOverlay: Partial[CSSStyleDeclaration]
   ): Styles = {
-    val __obj = js.Dynamic.literal(bmBurgerBars = bmBurgerBars, bmBurgerButton = bmBurgerButton, bmCross = bmCross, bmCrossButton = bmCrossButton, bmItemList = bmItemList, bmMenu = bmMenu, bmMenuWrap = bmMenuWrap, bmMorphShape = bmMorphShape, bmOverlay = bmOverlay)
+    val __obj = js.Dynamic.literal(bmBurgerBars = bmBurgerBars.asInstanceOf[js.Any], bmBurgerButton = bmBurgerButton.asInstanceOf[js.Any], bmCross = bmCross.asInstanceOf[js.Any], bmCrossButton = bmCrossButton.asInstanceOf[js.Any], bmItemList = bmItemList.asInstanceOf[js.Any], bmMenu = bmMenu.asInstanceOf[js.Any], bmMenuWrap = bmMenuWrap.asInstanceOf[js.Any], bmMorphShape = bmMorphShape.asInstanceOf[js.Any], bmOverlay = bmOverlay.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Styles]
   }

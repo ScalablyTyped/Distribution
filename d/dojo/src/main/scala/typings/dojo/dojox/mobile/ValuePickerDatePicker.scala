@@ -1,8 +1,6 @@
 package typings.dojo.dojox.mobile
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValueProperty
 import typings.dojo.dojoStrings.dayMinusBtnLabel
 import typings.dojo.dojoStrings.dayMinusBtnLabelRef
 import typings.dojo.dojoStrings.dayPattern
@@ -235,38 +233,174 @@ class ValuePickerDatePicker () extends ValuePicker {
   @JSName("set")
   def set_yearPlusBtnLabelRef(property: yearPlusBtnLabelRef, value: String): Unit = js.native
   @JSName("watch")
-  def watch_dayMinusBtnLabel(property: dayMinusBtnLabel, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_dayMinusBtnLabel(
+    property: dayMinusBtnLabel,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_dayMinusBtnLabelRef(property: dayMinusBtnLabelRef, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_dayMinusBtnLabelRef(
+    property: dayMinusBtnLabelRef,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_dayPattern(property: dayPattern, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_dayPattern(
+    property: dayPattern,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_dayPlusBtnLabel(property: dayPlusBtnLabel, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_dayPlusBtnLabel(
+    property: dayPlusBtnLabel,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_dayPlusBtnLabelRef(property: dayPlusBtnLabelRef, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_dayPlusBtnLabelRef(
+    property: dayPlusBtnLabelRef,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_monthMinusBtnLabel(property: monthMinusBtnLabel, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_monthMinusBtnLabel(
+    property: monthMinusBtnLabel,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_monthMinusBtnLabelRef(property: monthMinusBtnLabelRef, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_monthMinusBtnLabelRef(
+    property: monthMinusBtnLabelRef,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_monthPattern(property: monthPattern, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_monthPattern(
+    property: monthPattern,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_monthPlusBtnLabel(property: monthPlusBtnLabel, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_monthPlusBtnLabel(
+    property: monthPlusBtnLabel,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_monthPlusBtnLabelRef(property: monthPlusBtnLabelRef, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_monthPlusBtnLabelRef(
+    property: monthPlusBtnLabelRef,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_readOnly(property: readOnly, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_readOnly(
+    property: readOnly,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_value(property: value, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_value(
+    property: value,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_yearMinusBtnLabel(property: yearMinusBtnLabel, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_yearMinusBtnLabel(
+    property: yearMinusBtnLabel,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_yearMinusBtnLabelRef(property: yearMinusBtnLabelRef, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_yearMinusBtnLabelRef(
+    property: yearMinusBtnLabelRef,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_yearPattern(property: yearPattern, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_yearPattern(
+    property: yearPattern,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_yearPlusBtnLabel(property: yearPlusBtnLabel, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_yearPlusBtnLabel(
+    property: yearPlusBtnLabel,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_yearPlusBtnLabelRef(property: yearPlusBtnLabelRef, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_yearPlusBtnLabelRef(
+    property: yearPlusBtnLabelRef,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

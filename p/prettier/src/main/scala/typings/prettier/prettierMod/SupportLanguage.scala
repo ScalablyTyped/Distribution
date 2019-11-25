@@ -37,18 +37,18 @@ object SupportLanguage {
     tmScope: String = null,
     vscodeLanguageIds: js.Array[String] = null
   ): SupportLanguage = {
-    val __obj = js.Dynamic.literal(name = name, parsers = parsers)
-    if (aceMode != null) __obj.updateDynamic("aceMode")(aceMode)
-    if (aliases != null) __obj.updateDynamic("aliases")(aliases)
-    if (codemirrorMimeType != null) __obj.updateDynamic("codemirrorMimeType")(codemirrorMimeType)
-    if (codemirrorMode != null) __obj.updateDynamic("codemirrorMode")(codemirrorMode)
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
-    if (filenames != null) __obj.updateDynamic("filenames")(filenames)
-    if (group != null) __obj.updateDynamic("group")(group)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], parsers = parsers.asInstanceOf[js.Any])
+    if (aceMode != null) __obj.updateDynamic("aceMode")(aceMode.asInstanceOf[js.Any])
+    if (aliases != null) __obj.updateDynamic("aliases")(aliases.asInstanceOf[js.Any])
+    if (codemirrorMimeType != null) __obj.updateDynamic("codemirrorMimeType")(codemirrorMimeType.asInstanceOf[js.Any])
+    if (codemirrorMode != null) __obj.updateDynamic("codemirrorMode")(codemirrorMode.asInstanceOf[js.Any])
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
+    if (filenames != null) __obj.updateDynamic("filenames")(filenames.asInstanceOf[js.Any])
+    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
     if (linguistLanguageId != null) __obj.updateDynamic("linguistLanguageId")(linguistLanguageId.asInstanceOf[js.Any])
-    if (since != null) __obj.updateDynamic("since")(since)
-    if (tmScope != null) __obj.updateDynamic("tmScope")(tmScope)
-    if (vscodeLanguageIds != null) __obj.updateDynamic("vscodeLanguageIds")(vscodeLanguageIds)
+    if (since != null) __obj.updateDynamic("since")(since.asInstanceOf[js.Any])
+    if (tmScope != null) __obj.updateDynamic("tmScope")(tmScope.asInstanceOf[js.Any])
+    if (vscodeLanguageIds != null) __obj.updateDynamic("vscodeLanguageIds")(vscodeLanguageIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[SupportLanguage]
   }
 }

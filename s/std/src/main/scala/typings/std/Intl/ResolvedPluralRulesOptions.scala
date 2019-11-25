@@ -29,7 +29,7 @@ object ResolvedPluralRulesOptions {
     pluralCategories: js.Array[java.lang.String],
     `type`: cardinal | ordinal
   ): ResolvedPluralRulesOptions = {
-    val __obj = js.Dynamic.literal(locale = locale, maximumFractionDigits = maximumFractionDigits, maximumSignificantDigits = maximumSignificantDigits, minimumFractionDigits = minimumFractionDigits, minimumIntegerDigits = minimumIntegerDigits, minimumSignificantDigits = minimumSignificantDigits, pluralCategories = pluralCategories)
+    val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any], maximumFractionDigits = maximumFractionDigits.asInstanceOf[js.Any], maximumSignificantDigits = maximumSignificantDigits.asInstanceOf[js.Any], minimumFractionDigits = minimumFractionDigits.asInstanceOf[js.Any], minimumIntegerDigits = minimumIntegerDigits.asInstanceOf[js.Any], minimumSignificantDigits = minimumSignificantDigits.asInstanceOf[js.Any], pluralCategories = pluralCategories.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolvedPluralRulesOptions]
   }

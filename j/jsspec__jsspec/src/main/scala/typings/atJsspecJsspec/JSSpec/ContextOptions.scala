@@ -21,7 +21,7 @@ object ContextOptions {
   @scala.inline
   def apply(random: js.UndefOr[Boolean] = js.undefined, timeout: Int | Double = null): ContextOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(random)) __obj.updateDynamic("random")(random)
+    if (!js.isUndefined(random)) __obj.updateDynamic("random")(random.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextOptions]
   }

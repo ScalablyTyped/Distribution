@@ -22,11 +22,11 @@ object InitOptions {
     projectId: String = null
   ): InitOptions = {
     val __obj = js.Dynamic.literal()
-    if (apiEndpoint != null) __obj.updateDynamic("apiEndpoint")(apiEndpoint)
-    if (credentials != null) __obj.updateDynamic("credentials")(credentials)
-    if (keyFilename != null) __obj.updateDynamic("keyFilename")(keyFilename)
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace)
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
+    if (apiEndpoint != null) __obj.updateDynamic("apiEndpoint")(apiEndpoint.asInstanceOf[js.Any])
+    if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
+    if (keyFilename != null) __obj.updateDynamic("keyFilename")(keyFilename.asInstanceOf[js.Any])
+    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitOptions]
   }
 }

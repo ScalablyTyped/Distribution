@@ -32,9 +32,9 @@ object GridFSBucketWriteStreamOptions {
   ): GridFSBucketWriteStreamOptions = {
     val __obj = js.Dynamic.literal()
     if (chunkSizeBytes != null) __obj.updateDynamic("chunkSizeBytes")(chunkSizeBytes.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableMD5)) __obj.updateDynamic("disableMD5")(disableMD5)
+    if (!js.isUndefined(disableMD5)) __obj.updateDynamic("disableMD5")(disableMD5.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(j)) __obj.updateDynamic("j")(j)
+    if (!js.isUndefined(j)) __obj.updateDynamic("j")(j.asInstanceOf[js.Any])
     if (w != null) __obj.updateDynamic("w")(w.asInstanceOf[js.Any])
     if (wtimeout != null) __obj.updateDynamic("wtimeout")(wtimeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridFSBucketWriteStreamOptions]

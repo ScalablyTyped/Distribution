@@ -29,7 +29,7 @@ object Format {
     sampleRate: Double,
     signed: Boolean
   ): Format = {
-    val __obj = js.Dynamic.literal(audioFormat = audioFormat, bitDepth = bitDepth, blockAlign = blockAlign, byteRate = byteRate, channels = channels, endianness = endianness.asInstanceOf[js.Any], sampleRate = sampleRate, signed = signed)
+    val __obj = js.Dynamic.literal(audioFormat = audioFormat.asInstanceOf[js.Any], bitDepth = bitDepth.asInstanceOf[js.Any], blockAlign = blockAlign.asInstanceOf[js.Any], byteRate = byteRate.asInstanceOf[js.Any], channels = channels.asInstanceOf[js.Any], endianness = endianness.asInstanceOf[js.Any], sampleRate = sampleRate.asInstanceOf[js.Any], signed = signed.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Format]
   }

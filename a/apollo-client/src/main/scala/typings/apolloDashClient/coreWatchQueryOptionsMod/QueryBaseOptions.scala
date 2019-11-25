@@ -24,11 +24,11 @@ object QueryBaseOptions {
     metadata: js.Any = null,
     variables: TVariables = null
   ): QueryBaseOptions[TVariables] = {
-    val __obj = js.Dynamic.literal(query = query)
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (errorPolicy != null) __obj.updateDynamic("errorPolicy")(errorPolicy)
-    if (!js.isUndefined(fetchResults)) __obj.updateDynamic("fetchResults")(fetchResults)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (errorPolicy != null) __obj.updateDynamic("errorPolicy")(errorPolicy.asInstanceOf[js.Any])
+    if (!js.isUndefined(fetchResults)) __obj.updateDynamic("fetchResults")(fetchResults.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryBaseOptions[TVariables]]
   }

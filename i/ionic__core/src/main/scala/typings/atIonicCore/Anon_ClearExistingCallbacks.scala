@@ -16,8 +16,8 @@ object Anon_ClearExistingCallbacks {
     oneTimeCallback: js.UndefOr[Boolean] = js.undefined
   ): Anon_ClearExistingCallbacks = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(clearExistingCallbacks)) __obj.updateDynamic("clearExistingCallbacks")(clearExistingCallbacks)
-    if (!js.isUndefined(oneTimeCallback)) __obj.updateDynamic("oneTimeCallback")(oneTimeCallback)
+    if (!js.isUndefined(clearExistingCallbacks)) __obj.updateDynamic("clearExistingCallbacks")(clearExistingCallbacks.asInstanceOf[js.Any])
+    if (!js.isUndefined(oneTimeCallback)) __obj.updateDynamic("oneTimeCallback")(oneTimeCallback.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ClearExistingCallbacks]
   }
 }

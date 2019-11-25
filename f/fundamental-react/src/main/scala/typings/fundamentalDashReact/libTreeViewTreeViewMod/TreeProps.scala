@@ -24,9 +24,9 @@ object TreeProps {
     onExpandClick: /* repeated */ js.Any => Unit = null
   ): TreeProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (expandData != null) __obj.updateDynamic("expandData")(expandData)
-    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (expandData != null) __obj.updateDynamic("expandData")(expandData.asInstanceOf[js.Any])
+    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded.asInstanceOf[js.Any])
     if (onExpandClick != null) __obj.updateDynamic("onExpandClick")(js.Any.fromFunction1(onExpandClick))
     __obj.asInstanceOf[TreeProps]
   }

@@ -43,8 +43,8 @@ object ScrollingEventUIParam {
   ): ScrollingEventUIParam = {
     val __obj = js.Dynamic.literal()
     if (bigIncrement != null) __obj.updateDynamic("bigIncrement")(bigIncrement.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     if (smallIncrement != null) __obj.updateDynamic("smallIncrement")(smallIncrement.asInstanceOf[js.Any])
     if (stepX != null) __obj.updateDynamic("stepX")(stepX.asInstanceOf[js.Any])
     if (stepY != null) __obj.updateDynamic("stepY")(stepY.asInstanceOf[js.Any])

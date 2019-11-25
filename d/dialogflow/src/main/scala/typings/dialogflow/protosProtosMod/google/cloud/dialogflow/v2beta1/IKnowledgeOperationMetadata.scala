@@ -15,7 +15,7 @@ object IKnowledgeOperationMetadata {
   @scala.inline
   def apply(state: State = null): IKnowledgeOperationMetadata = {
     val __obj = js.Dynamic.literal()
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[IKnowledgeOperationMetadata]
   }
 }

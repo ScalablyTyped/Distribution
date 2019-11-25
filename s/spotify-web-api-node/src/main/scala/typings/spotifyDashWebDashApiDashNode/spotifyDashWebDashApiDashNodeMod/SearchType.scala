@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait SearchType extends js.Object
 
+object SearchType {
+  @scala.inline
+  def album: typings.spotifyDashWebDashApiDashNode.spotifyDashWebDashApiDashNodeStrings.album = this.cast("album")
+  @scala.inline
+  def artist: typings.spotifyDashWebDashApiDashNode.spotifyDashWebDashApiDashNodeStrings.artist = this.cast("artist")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def playlist: typings.spotifyDashWebDashApiDashNode.spotifyDashWebDashApiDashNodeStrings.playlist = this.cast("playlist")
+  @scala.inline
+  def track: typings.spotifyDashWebDashApiDashNode.spotifyDashWebDashApiDashNodeStrings.track = this.cast("track")
+}
+

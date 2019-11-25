@@ -13,8 +13,8 @@ object ClearValuesResponse {
   @scala.inline
   def apply(clearedRange: String = null, spreadsheetId: String = null): ClearValuesResponse = {
     val __obj = js.Dynamic.literal()
-    if (clearedRange != null) __obj.updateDynamic("clearedRange")(clearedRange)
-    if (spreadsheetId != null) __obj.updateDynamic("spreadsheetId")(spreadsheetId)
+    if (clearedRange != null) __obj.updateDynamic("clearedRange")(clearedRange.asInstanceOf[js.Any])
+    if (spreadsheetId != null) __obj.updateDynamic("spreadsheetId")(spreadsheetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClearValuesResponse]
   }
 }

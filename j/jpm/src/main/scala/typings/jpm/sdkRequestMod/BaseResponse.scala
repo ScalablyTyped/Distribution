@@ -23,7 +23,7 @@ object BaseResponse {
     text: String,
     url: String
   ): BaseResponse = {
-    val __obj = js.Dynamic.literal(anonymous = anonymous, headers = headers, status = status, statusText = statusText, text = text, url = url)
+    val __obj = js.Dynamic.literal(anonymous = anonymous.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BaseResponse]
   }

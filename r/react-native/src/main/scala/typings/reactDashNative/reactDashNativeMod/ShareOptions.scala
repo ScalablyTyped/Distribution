@@ -20,10 +20,10 @@ object ShareOptions {
     tintColor: String = null
   ): ShareOptions = {
     val __obj = js.Dynamic.literal()
-    if (dialogTitle != null) __obj.updateDynamic("dialogTitle")(dialogTitle)
-    if (excludedActivityTypes != null) __obj.updateDynamic("excludedActivityTypes")(excludedActivityTypes)
-    if (subject != null) __obj.updateDynamic("subject")(subject)
-    if (tintColor != null) __obj.updateDynamic("tintColor")(tintColor)
+    if (dialogTitle != null) __obj.updateDynamic("dialogTitle")(dialogTitle.asInstanceOf[js.Any])
+    if (excludedActivityTypes != null) __obj.updateDynamic("excludedActivityTypes")(excludedActivityTypes.asInstanceOf[js.Any])
+    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
+    if (tintColor != null) __obj.updateDynamic("tintColor")(tintColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShareOptions]
   }
 }

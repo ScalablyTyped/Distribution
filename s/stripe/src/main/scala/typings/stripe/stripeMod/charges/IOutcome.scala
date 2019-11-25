@@ -68,10 +68,10 @@ object IOutcome {
     risk_score: Int | Double = null,
     rule: String | js.Array[String] = null
   ): IOutcome = {
-    val __obj = js.Dynamic.literal(network_status = network_status.asInstanceOf[js.Any], seller_message = seller_message)
+    val __obj = js.Dynamic.literal(network_status = network_status.asInstanceOf[js.Any], seller_message = seller_message.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (reason != null) __obj.updateDynamic("reason")(reason)
-    if (risk_level != null) __obj.updateDynamic("risk_level")(risk_level)
+    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
+    if (risk_level != null) __obj.updateDynamic("risk_level")(risk_level.asInstanceOf[js.Any])
     if (risk_score != null) __obj.updateDynamic("risk_score")(risk_score.asInstanceOf[js.Any])
     if (rule != null) __obj.updateDynamic("rule")(rule.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOutcome]

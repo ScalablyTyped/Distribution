@@ -37,19 +37,19 @@ object TabInstance {
     url: String = null,
     websiteUrl: String = null
   ): TabInstance = {
-    val __obj = js.Dynamic.literal(tabName = tabName)
-    if (channelId != null) __obj.updateDynamic("channelId")(channelId)
-    if (!js.isUndefined(channelIsFavorite)) __obj.updateDynamic("channelIsFavorite")(channelIsFavorite)
-    if (channelName != null) __obj.updateDynamic("channelName")(channelName)
-    if (entityId != null) __obj.updateDynamic("entityId")(entityId)
-    if (groupId != null) __obj.updateDynamic("groupId")(groupId)
-    if (internalTabInstanceId != null) __obj.updateDynamic("internalTabInstanceId")(internalTabInstanceId)
-    if (lastViewUnixEpochTime != null) __obj.updateDynamic("lastViewUnixEpochTime")(lastViewUnixEpochTime)
-    if (teamId != null) __obj.updateDynamic("teamId")(teamId)
-    if (!js.isUndefined(teamIsFavorite)) __obj.updateDynamic("teamIsFavorite")(teamIsFavorite)
-    if (teamName != null) __obj.updateDynamic("teamName")(teamName)
-    if (url != null) __obj.updateDynamic("url")(url)
-    if (websiteUrl != null) __obj.updateDynamic("websiteUrl")(websiteUrl)
+    val __obj = js.Dynamic.literal(tabName = tabName.asInstanceOf[js.Any])
+    if (channelId != null) __obj.updateDynamic("channelId")(channelId.asInstanceOf[js.Any])
+    if (!js.isUndefined(channelIsFavorite)) __obj.updateDynamic("channelIsFavorite")(channelIsFavorite.asInstanceOf[js.Any])
+    if (channelName != null) __obj.updateDynamic("channelName")(channelName.asInstanceOf[js.Any])
+    if (entityId != null) __obj.updateDynamic("entityId")(entityId.asInstanceOf[js.Any])
+    if (groupId != null) __obj.updateDynamic("groupId")(groupId.asInstanceOf[js.Any])
+    if (internalTabInstanceId != null) __obj.updateDynamic("internalTabInstanceId")(internalTabInstanceId.asInstanceOf[js.Any])
+    if (lastViewUnixEpochTime != null) __obj.updateDynamic("lastViewUnixEpochTime")(lastViewUnixEpochTime.asInstanceOf[js.Any])
+    if (teamId != null) __obj.updateDynamic("teamId")(teamId.asInstanceOf[js.Any])
+    if (!js.isUndefined(teamIsFavorite)) __obj.updateDynamic("teamIsFavorite")(teamIsFavorite.asInstanceOf[js.Any])
+    if (teamName != null) __obj.updateDynamic("teamName")(teamName.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (websiteUrl != null) __obj.updateDynamic("websiteUrl")(websiteUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabInstance]
   }
 }

@@ -27,9 +27,9 @@ trait _AnalyticsS3BucketDestination extends js.Object {
 object _AnalyticsS3BucketDestination {
   @scala.inline
   def apply(Bucket: String, Format: CSV | String, BucketAccountId: String = null, Prefix: String = null): _AnalyticsS3BucketDestination = {
-    val __obj = js.Dynamic.literal(Bucket = Bucket, Format = Format.asInstanceOf[js.Any])
-    if (BucketAccountId != null) __obj.updateDynamic("BucketAccountId")(BucketAccountId)
-    if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix)
+    val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Format = Format.asInstanceOf[js.Any])
+    if (BucketAccountId != null) __obj.updateDynamic("BucketAccountId")(BucketAccountId.asInstanceOf[js.Any])
+    if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[_AnalyticsS3BucketDestination]
   }
 }

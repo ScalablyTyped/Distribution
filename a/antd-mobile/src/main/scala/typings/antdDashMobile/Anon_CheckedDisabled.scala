@@ -25,7 +25,7 @@ object Anon_CheckedDisabled {
     platform: String,
     prefixCls: String
   ): Anon_CheckedDisabled = {
-    val __obj = js.Dynamic.literal(checked = checked, disabled = disabled, name = name, onChange = js.Any.fromFunction0(onChange), onClick = js.Any.fromFunction0(onClick), platform = platform, prefixCls = prefixCls)
+    val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], onChange = js.Any.fromFunction0(onChange), onClick = js.Any.fromFunction0(onClick), platform = platform.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CheckedDisabled]
   }

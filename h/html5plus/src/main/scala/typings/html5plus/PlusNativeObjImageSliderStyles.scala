@@ -67,11 +67,11 @@ object PlusNativeObjImageSliderStyles {
     loop: js.UndefOr[Boolean] = js.undefined
   ): PlusNativeObjImageSliderStyles = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay)
-    if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen)
-    if (images != null) __obj.updateDynamic("images")(images)
+    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen.asInstanceOf[js.Any])
+    if (images != null) __obj.updateDynamic("images")(images.asInstanceOf[js.Any])
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusNativeObjImageSliderStyles]
   }
 }

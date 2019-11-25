@@ -38,7 +38,7 @@ object AllLookAtTypes {
     terrain: Terrain,
     tombstone: Tombstone
   ): AllLookAtTypes = {
-    val __obj = js.Dynamic.literal(constructionSite = constructionSite, creep = creep, energy = energy, exit = exit, flag = flag, mineral = mineral, nuke = nuke, powerCreep = powerCreep, resource = resource, source = source, structure = structure, terrain = terrain, tombstone = tombstone)
+    val __obj = js.Dynamic.literal(constructionSite = constructionSite.asInstanceOf[js.Any], creep = creep.asInstanceOf[js.Any], energy = energy.asInstanceOf[js.Any], exit = exit.asInstanceOf[js.Any], flag = flag.asInstanceOf[js.Any], mineral = mineral.asInstanceOf[js.Any], nuke = nuke.asInstanceOf[js.Any], powerCreep = powerCreep.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], structure = structure.asInstanceOf[js.Any], terrain = terrain.asInstanceOf[js.Any], tombstone = tombstone.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AllLookAtTypes]
   }

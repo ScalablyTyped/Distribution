@@ -13,7 +13,7 @@ trait Props extends js.Object {
 object Props {
   @scala.inline
   def apply(addonSelected: String, panels: Collection): Props = {
-    val __obj = js.Dynamic.literal(addonSelected = addonSelected, panels = panels)
+    val __obj = js.Dynamic.literal(addonSelected = addonSelected.asInstanceOf[js.Any], panels = panels.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Props]
   }

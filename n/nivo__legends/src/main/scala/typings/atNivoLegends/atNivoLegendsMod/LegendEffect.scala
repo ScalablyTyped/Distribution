@@ -14,7 +14,7 @@ trait LegendEffect extends js.Object {
 object LegendEffect {
   @scala.inline
   def apply(on: hover, style: PartialitemTextColorstringitemBackgroundstringitem): LegendEffect = {
-    val __obj = js.Dynamic.literal(on = on, style = style)
+    val __obj = js.Dynamic.literal(on = on.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LegendEffect]
   }

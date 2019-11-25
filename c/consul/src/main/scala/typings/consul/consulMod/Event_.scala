@@ -1,7 +1,5 @@
 package typings.consul.consulMod
 
-import typings.consul.Fn_CallbackNameOpts
-import typings.consul.Fn_CallbackNameOptsListOptions
 import typings.consul.consulMod.Event.FireOptions
 import typings.consul.consulMod.Event.ListOptions
 import typings.node.Buffer
@@ -13,16 +11,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Event_ extends js.Object {
   var consul: Consul = js.native
-  /**
-    * Fires a new user event
-    */
-  @JSName("fire")
-  var fire_Original: Fn_CallbackNameOpts = js.native
-  /**
-    * Lists the most recent events an agent has seen
-    */
-  @JSName("list")
-  var list_Original: Fn_CallbackNameOptsListOptions = js.native
   /**
     * Fires a new user event
     */

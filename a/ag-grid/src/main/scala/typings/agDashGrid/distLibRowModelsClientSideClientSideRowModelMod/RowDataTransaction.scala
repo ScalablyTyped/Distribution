@@ -20,10 +20,10 @@ object RowDataTransaction {
     update: js.Array[_] = null
   ): RowDataTransaction = {
     val __obj = js.Dynamic.literal()
-    if (add != null) __obj.updateDynamic("add")(add)
+    if (add != null) __obj.updateDynamic("add")(add.asInstanceOf[js.Any])
     if (addIndex != null) __obj.updateDynamic("addIndex")(addIndex.asInstanceOf[js.Any])
-    if (remove != null) __obj.updateDynamic("remove")(remove)
-    if (update != null) __obj.updateDynamic("update")(update)
+    if (remove != null) __obj.updateDynamic("remove")(remove.asInstanceOf[js.Any])
+    if (update != null) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowDataTransaction]
   }
 }

@@ -18,9 +18,9 @@ object SparklineDragStartEvent {
     axisRanges: js.Any = null,
     originalEvent: js.Any = null
   ): SparklineDragStartEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (axisRanges != null) __obj.updateDynamic("axisRanges")(axisRanges)
-    if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (axisRanges != null) __obj.updateDynamic("axisRanges")(axisRanges.asInstanceOf[js.Any])
+    if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[SparklineDragStartEvent]
   }
 }

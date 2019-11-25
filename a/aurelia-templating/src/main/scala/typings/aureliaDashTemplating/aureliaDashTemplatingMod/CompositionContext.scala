@@ -79,16 +79,16 @@ object CompositionContext {
     viewModel: js.Any = null,
     viewModelResource: HtmlBehaviorResource = null
   ): CompositionContext = {
-    val __obj = js.Dynamic.literal(bindingContext = bindingContext, container = container, viewResources = viewResources, viewSlot = viewSlot)
-    if (childContainer != null) __obj.updateDynamic("childContainer")(childContainer)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (overrideContext != null) __obj.updateDynamic("overrideContext")(overrideContext)
-    if (owningView != null) __obj.updateDynamic("owningView")(owningView)
-    if (!js.isUndefined(skipActivation)) __obj.updateDynamic("skipActivation")(skipActivation)
+    val __obj = js.Dynamic.literal(bindingContext = bindingContext.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], viewResources = viewResources.asInstanceOf[js.Any], viewSlot = viewSlot.asInstanceOf[js.Any])
+    if (childContainer != null) __obj.updateDynamic("childContainer")(childContainer.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (overrideContext != null) __obj.updateDynamic("overrideContext")(overrideContext.asInstanceOf[js.Any])
+    if (owningView != null) __obj.updateDynamic("owningView")(owningView.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipActivation)) __obj.updateDynamic("skipActivation")(skipActivation.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
-    if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel)
-    if (viewModelResource != null) __obj.updateDynamic("viewModelResource")(viewModelResource)
+    if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel.asInstanceOf[js.Any])
+    if (viewModelResource != null) __obj.updateDynamic("viewModelResource")(viewModelResource.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompositionContext]
   }
 }

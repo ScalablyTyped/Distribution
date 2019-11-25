@@ -12,7 +12,7 @@ trait Anon_ValueArray extends js.Object {
 object Anon_ValueArray {
   @scala.inline
   def apply(value: js.Array[ReactNode]): Anon_ValueArray = {
-    val __obj = js.Dynamic.literal(value = value)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ValueArray]
   }

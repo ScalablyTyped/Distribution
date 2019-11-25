@@ -11,7 +11,7 @@ trait Anon_PDispAny extends js.Object {
 object Anon_PDispAny {
   @scala.inline
   def apply(pDisp: js.Any): Anon_PDispAny = {
-    val __obj = js.Dynamic.literal(pDisp = pDisp)
+    val __obj = js.Dynamic.literal(pDisp = pDisp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_PDispAny]
   }

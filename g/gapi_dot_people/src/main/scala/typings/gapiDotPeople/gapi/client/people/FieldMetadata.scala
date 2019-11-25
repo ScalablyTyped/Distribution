@@ -13,7 +13,7 @@ trait FieldMetadata extends js.Object {
 object FieldMetadata {
   @scala.inline
   def apply(primary: Boolean, source: Source, verified: Boolean): FieldMetadata = {
-    val __obj = js.Dynamic.literal(primary = primary, source = source, verified = verified)
+    val __obj = js.Dynamic.literal(primary = primary.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], verified = verified.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FieldMetadata]
   }

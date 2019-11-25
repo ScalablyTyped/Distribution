@@ -15,7 +15,7 @@ object LocaleMessageArray {
     NumberDictionary: /* index */ NumberDictionary[typings.vueDashI18n.vueDashI18nMod.VueI18n.LocaleMessage] = null
   ): LocaleMessageArray = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    if (NumberDictionary != null) js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[LocaleMessageArray]
   }
 }

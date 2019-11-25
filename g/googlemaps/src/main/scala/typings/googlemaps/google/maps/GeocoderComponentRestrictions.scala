@@ -22,11 +22,11 @@ object GeocoderComponentRestrictions {
     route: String = null
   ): GeocoderComponentRestrictions = {
     val __obj = js.Dynamic.literal()
-    if (administrativeArea != null) __obj.updateDynamic("administrativeArea")(administrativeArea)
+    if (administrativeArea != null) __obj.updateDynamic("administrativeArea")(administrativeArea.asInstanceOf[js.Any])
     if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
-    if (locality != null) __obj.updateDynamic("locality")(locality)
-    if (postalCode != null) __obj.updateDynamic("postalCode")(postalCode)
-    if (route != null) __obj.updateDynamic("route")(route)
+    if (locality != null) __obj.updateDynamic("locality")(locality.asInstanceOf[js.Any])
+    if (postalCode != null) __obj.updateDynamic("postalCode")(postalCode.asInstanceOf[js.Any])
+    if (route != null) __obj.updateDynamic("route")(route.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeocoderComponentRestrictions]
   }
 }

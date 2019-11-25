@@ -20,7 +20,7 @@ object ChoiceOptions {
     defaultChoice: typings.binaryDashParser.binaryDashParserMod.Parser[_] | String = null,
     formatter: /* value */ Data => _ = null
   ): ChoiceOptions = {
-    val __obj = js.Dynamic.literal(choices = choices, tag = tag.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(choices = choices.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
     if (assert != null) __obj.updateDynamic("assert")(assert.asInstanceOf[js.Any])
     if (defaultChoice != null) __obj.updateDynamic("defaultChoice")(defaultChoice.asInstanceOf[js.Any])
     if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction1(formatter))

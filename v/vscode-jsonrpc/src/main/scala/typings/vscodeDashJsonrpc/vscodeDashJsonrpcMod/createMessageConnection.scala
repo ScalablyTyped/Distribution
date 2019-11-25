@@ -2,8 +2,6 @@ package typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod
 
 import typings.node.NodeJS.ReadableStream
 import typings.node.NodeJS.WritableStream
-import typings.vscodeDashJsonrpc.libMessageReaderMod.MessageReader
-import typings.vscodeDashJsonrpc.libMessageWriterMod.MessageWriter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,8 +17,20 @@ object createMessageConnection extends js.Object {
     logger: Logger,
     strategy: ConnectionStrategy
   ): MessageConnection = js.native
-  def apply(reader: MessageReader, writer: MessageWriter): MessageConnection = js.native
-  def apply(reader: MessageReader, writer: MessageWriter, logger: Logger): MessageConnection = js.native
-  def apply(reader: MessageReader, writer: MessageWriter, logger: Logger, strategy: ConnectionStrategy): MessageConnection = js.native
+  def apply(
+    reader: typings.vscodeDashJsonrpc.libMessageReaderMod.MessageReader,
+    writer: typings.vscodeDashJsonrpc.libMessageWriterMod.MessageWriter
+  ): MessageConnection = js.native
+  def apply(
+    reader: typings.vscodeDashJsonrpc.libMessageReaderMod.MessageReader,
+    writer: typings.vscodeDashJsonrpc.libMessageWriterMod.MessageWriter,
+    logger: Logger
+  ): MessageConnection = js.native
+  def apply(
+    reader: typings.vscodeDashJsonrpc.libMessageReaderMod.MessageReader,
+    writer: typings.vscodeDashJsonrpc.libMessageWriterMod.MessageWriter,
+    logger: Logger,
+    strategy: ConnectionStrategy
+  ): MessageConnection = js.native
 }
 

@@ -43,15 +43,15 @@ object Anon_Department {
     `type`: String = null
   ): Anon_Department = {
     val __obj = js.Dynamic.literal()
-    if (department != null) __obj.updateDynamic("department")(department)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (endDate != null) __obj.updateDynamic("endDate")(endDate)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary)
-    if (startDate != null) __obj.updateDynamic("startDate")(startDate)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (department != null) __obj.updateDynamic("department")(department.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
+    if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Department]
   }
 }

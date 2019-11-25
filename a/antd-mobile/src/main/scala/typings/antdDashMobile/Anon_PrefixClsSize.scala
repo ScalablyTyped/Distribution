@@ -12,7 +12,7 @@ trait Anon_PrefixClsSize extends js.Object {
 object Anon_PrefixClsSize {
   @scala.inline
   def apply(prefixCls: String, size: String): Anon_PrefixClsSize = {
-    val __obj = js.Dynamic.literal(prefixCls = prefixCls, size = size)
+    val __obj = js.Dynamic.literal(prefixCls = prefixCls.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_PrefixClsSize]
   }

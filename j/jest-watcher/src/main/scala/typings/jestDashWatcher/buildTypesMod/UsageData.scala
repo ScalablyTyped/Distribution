@@ -12,7 +12,7 @@ trait UsageData extends js.Object {
 object UsageData {
   @scala.inline
   def apply(key: String, prompt: String): UsageData = {
-    val __obj = js.Dynamic.literal(key = key, prompt = prompt)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], prompt = prompt.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UsageData]
   }

@@ -18,7 +18,7 @@ trait Anon_CHECKBOX extends js.Object {
 object Anon_CHECKBOX {
   @scala.inline
   def apply(CHECKBOX: checkbox, NORMAL: normal, RADIO: radio, SEPARATOR: separator): Anon_CHECKBOX = {
-    val __obj = js.Dynamic.literal(CHECKBOX = CHECKBOX, NORMAL = NORMAL, RADIO = RADIO, SEPARATOR = SEPARATOR)
+    val __obj = js.Dynamic.literal(CHECKBOX = CHECKBOX.asInstanceOf[js.Any], NORMAL = NORMAL.asInstanceOf[js.Any], RADIO = RADIO.asInstanceOf[js.Any], SEPARATOR = SEPARATOR.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CHECKBOX]
   }

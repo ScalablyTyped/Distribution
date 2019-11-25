@@ -20,7 +20,7 @@ object ExtendedAttribute {
     name: String,
     rhs: ExtendedAttributeRightHandSideIdentifier | ExtendedAttributeRightHandSideIdentifierList = null
   ): ExtendedAttribute = {
-    val __obj = js.Dynamic.literal(arguments = arguments, name = name)
+    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (rhs != null) __obj.updateDynamic("rhs")(rhs.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtendedAttribute]
   }

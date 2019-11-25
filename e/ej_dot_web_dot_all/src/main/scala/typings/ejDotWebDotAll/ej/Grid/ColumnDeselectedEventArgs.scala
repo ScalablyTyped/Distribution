@@ -32,11 +32,11 @@ object ColumnDeselectedEventArgs {
     `type`: String = null
   ): ColumnDeselectedEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (column != null) __obj.updateDynamic("column")(column)
+    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
     if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
-    if (headerCell != null) __obj.updateDynamic("headerCell")(headerCell)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (headerCell != null) __obj.updateDynamic("headerCell")(headerCell.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnDeselectedEventArgs]
   }
 }

@@ -11,7 +11,7 @@ trait Anon_TooltipAnonText extends js.Object {
 object Anon_TooltipAnonText {
   @scala.inline
   def apply(tooltip: Anon_Text): Anon_TooltipAnonText = {
-    val __obj = js.Dynamic.literal(tooltip = tooltip)
+    val __obj = js.Dynamic.literal(tooltip = tooltip.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_TooltipAnonText]
   }

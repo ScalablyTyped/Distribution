@@ -70,19 +70,19 @@ object OpenOptions {
     xon: js.UndefOr[Boolean] = js.undefined
   ): OpenOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoOpen)) __obj.updateDynamic("autoOpen")(autoOpen)
+    if (!js.isUndefined(autoOpen)) __obj.updateDynamic("autoOpen")(autoOpen.asInstanceOf[js.Any])
     if (baudRate != null) __obj.updateDynamic("baudRate")(baudRate.asInstanceOf[js.Any])
-    if (binding != null) __obj.updateDynamic("binding")(binding)
-    if (bindingOptions != null) __obj.updateDynamic("bindingOptions")(bindingOptions)
+    if (binding != null) __obj.updateDynamic("binding")(binding.asInstanceOf[js.Any])
+    if (bindingOptions != null) __obj.updateDynamic("bindingOptions")(bindingOptions.asInstanceOf[js.Any])
     if (dataBits != null) __obj.updateDynamic("dataBits")(dataBits.asInstanceOf[js.Any])
     if (highWaterMark != null) __obj.updateDynamic("highWaterMark")(highWaterMark.asInstanceOf[js.Any])
-    if (!js.isUndefined(lock)) __obj.updateDynamic("lock")(lock)
+    if (!js.isUndefined(lock)) __obj.updateDynamic("lock")(lock.asInstanceOf[js.Any])
     if (parity != null) __obj.updateDynamic("parity")(parity.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtscts)) __obj.updateDynamic("rtscts")(rtscts)
+    if (!js.isUndefined(rtscts)) __obj.updateDynamic("rtscts")(rtscts.asInstanceOf[js.Any])
     if (stopBits != null) __obj.updateDynamic("stopBits")(stopBits.asInstanceOf[js.Any])
-    if (!js.isUndefined(xany)) __obj.updateDynamic("xany")(xany)
-    if (!js.isUndefined(xoff)) __obj.updateDynamic("xoff")(xoff)
-    if (!js.isUndefined(xon)) __obj.updateDynamic("xon")(xon)
+    if (!js.isUndefined(xany)) __obj.updateDynamic("xany")(xany.asInstanceOf[js.Any])
+    if (!js.isUndefined(xoff)) __obj.updateDynamic("xoff")(xoff.asInstanceOf[js.Any])
+    if (!js.isUndefined(xon)) __obj.updateDynamic("xon")(xon.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenOptions]
   }
 }

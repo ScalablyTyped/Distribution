@@ -12,7 +12,7 @@ trait CpuUsage extends js.Object {
 object CpuUsage {
   @scala.inline
   def apply(system: Double, user: Double): CpuUsage = {
-    val __obj = js.Dynamic.literal(system = system, user = user)
+    val __obj = js.Dynamic.literal(system = system.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CpuUsage]
   }

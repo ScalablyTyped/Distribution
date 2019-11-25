@@ -13,7 +13,7 @@ trait LabelOptions extends js.Object {
 object LabelOptions {
   @scala.inline
   def apply(side: TAlign, text: String): LabelOptions = {
-    val __obj = js.Dynamic.literal(side = side, text = text)
+    val __obj = js.Dynamic.literal(side = side.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LabelOptions]
   }

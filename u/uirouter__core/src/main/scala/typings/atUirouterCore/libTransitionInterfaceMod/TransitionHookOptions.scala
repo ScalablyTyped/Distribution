@@ -27,13 +27,13 @@ object TransitionHookOptions {
     transition: Transition = null
   ): TransitionHookOptions = {
     val __obj = js.Dynamic.literal()
-    if (bind != null) __obj.updateDynamic("bind")(bind)
+    if (bind != null) __obj.updateDynamic("bind")(bind.asInstanceOf[js.Any])
     if (current != null) __obj.updateDynamic("current")(js.Any.fromFunction0(current))
-    if (hookType != null) __obj.updateDynamic("hookType")(hookType)
-    if (!js.isUndefined(stateHook)) __obj.updateDynamic("stateHook")(stateHook)
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (traceData != null) __obj.updateDynamic("traceData")(traceData)
-    if (transition != null) __obj.updateDynamic("transition")(transition)
+    if (hookType != null) __obj.updateDynamic("hookType")(hookType.asInstanceOf[js.Any])
+    if (!js.isUndefined(stateHook)) __obj.updateDynamic("stateHook")(stateHook.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (traceData != null) __obj.updateDynamic("traceData")(traceData.asInstanceOf[js.Any])
+    if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransitionHookOptions]
   }
 }

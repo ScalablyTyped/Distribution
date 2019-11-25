@@ -13,7 +13,7 @@ package object sinonMod {
     *
     * @template TType Object type being stubbed.
     */
-  type SinonStubbedInstance[TType] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type SinonStubbedInstance[TType] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof TType ]: sinon.sinon.SinonStubbedMember<TType[P]>}
     */ typings.sinon.sinonStrings.SinonStubbedInstance with TType
   /**

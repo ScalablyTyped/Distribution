@@ -15,7 +15,7 @@ object AjvConfig {
   @scala.inline
   def apply(onCreateAjv: Ajv => Unit, options: Options = null): AjvConfig = {
     val __obj = js.Dynamic.literal(onCreateAjv = js.Any.fromFunction1(onCreateAjv))
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[AjvConfig]
   }
 }

@@ -24,12 +24,12 @@ object Anon_LoginStyle {
     userEmail: String = null
   ): Anon_LoginStyle = {
     val __obj = js.Dynamic.literal()
-    if (loginStyle != null) __obj.updateDynamic("loginStyle")(loginStyle)
-    if (loginUrlParameters != null) __obj.updateDynamic("loginUrlParameters")(loginUrlParameters)
-    if (redirectUrl != null) __obj.updateDynamic("redirectUrl")(redirectUrl)
-    if (!js.isUndefined(requestOfflineToken)) __obj.updateDynamic("requestOfflineToken")(requestOfflineToken)
-    if (requestPermissions != null) __obj.updateDynamic("requestPermissions")(requestPermissions)
-    if (userEmail != null) __obj.updateDynamic("userEmail")(userEmail)
+    if (loginStyle != null) __obj.updateDynamic("loginStyle")(loginStyle.asInstanceOf[js.Any])
+    if (loginUrlParameters != null) __obj.updateDynamic("loginUrlParameters")(loginUrlParameters.asInstanceOf[js.Any])
+    if (redirectUrl != null) __obj.updateDynamic("redirectUrl")(redirectUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestOfflineToken)) __obj.updateDynamic("requestOfflineToken")(requestOfflineToken.asInstanceOf[js.Any])
+    if (requestPermissions != null) __obj.updateDynamic("requestPermissions")(requestPermissions.asInstanceOf[js.Any])
+    if (userEmail != null) __obj.updateDynamic("userEmail")(userEmail.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_LoginStyle]
   }
 }

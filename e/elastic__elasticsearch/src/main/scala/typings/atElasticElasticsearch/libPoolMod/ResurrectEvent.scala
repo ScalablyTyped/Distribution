@@ -17,7 +17,7 @@ trait ResurrectEvent extends js.Object {
 object ResurrectEvent {
   @scala.inline
   def apply(connection: default, isAlive: Boolean, name: String, request: Anon_IdAny, strategy: String): ResurrectEvent = {
-    val __obj = js.Dynamic.literal(connection = connection, isAlive = isAlive, name = name, request = request, strategy = strategy)
+    val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], isAlive = isAlive.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], strategy = strategy.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ResurrectEvent]
   }

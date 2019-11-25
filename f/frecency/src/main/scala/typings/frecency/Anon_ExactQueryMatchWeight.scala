@@ -28,12 +28,12 @@ object Anon_ExactQueryMatchWeight {
     subQueryMatchWeight: Int | Double = null,
     timeStampsLimit: Int | Double = null
   ): Anon_ExactQueryMatchWeight = {
-    val __obj = js.Dynamic.literal(key = key)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     if (exactQueryMatchWeight != null) __obj.updateDynamic("exactQueryMatchWeight")(exactQueryMatchWeight.asInstanceOf[js.Any])
     if (idAttribute != null) __obj.updateDynamic("idAttribute")(idAttribute.asInstanceOf[js.Any])
     if (recentSelectionsLimit != null) __obj.updateDynamic("recentSelectionsLimit")(recentSelectionsLimit.asInstanceOf[js.Any])
     if (recentSelectionsMatchWeight != null) __obj.updateDynamic("recentSelectionsMatchWeight")(recentSelectionsMatchWeight.asInstanceOf[js.Any])
-    if (storageProvider != null) __obj.updateDynamic("storageProvider")(storageProvider)
+    if (storageProvider != null) __obj.updateDynamic("storageProvider")(storageProvider.asInstanceOf[js.Any])
     if (subQueryMatchWeight != null) __obj.updateDynamic("subQueryMatchWeight")(subQueryMatchWeight.asInstanceOf[js.Any])
     if (timeStampsLimit != null) __obj.updateDynamic("timeStampsLimit")(timeStampsLimit.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ExactQueryMatchWeight]

@@ -13,7 +13,7 @@ object ListBuildTriggersResponse {
   @scala.inline
   def apply(triggers: js.Array[BuildTrigger] = null): ListBuildTriggersResponse = {
     val __obj = js.Dynamic.literal()
-    if (triggers != null) __obj.updateDynamic("triggers")(triggers)
+    if (triggers != null) __obj.updateDynamic("triggers")(triggers.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBuildTriggersResponse]
   }
 }

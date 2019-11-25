@@ -1,6 +1,5 @@
 package typings.vscodeDashLanguageserver.vscodeDashLanguageserverMod
 
-import typings.vscodeDashJsonrpc.libCancellationMod.CancellationToken
 import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.GenericNotificationHandler
 import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.GenericRequestHandler
 import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.NotificationHandler
@@ -28,7 +27,6 @@ import typings.vscodeDashLanguageserverDashProtocol.libProtocolMod.DocumentLinkP
 import typings.vscodeDashLanguageserverDashProtocol.libProtocolMod.DocumentOnTypeFormattingParams
 import typings.vscodeDashLanguageserverDashProtocol.libProtocolMod.DocumentRangeFormattingParams
 import typings.vscodeDashLanguageserverDashProtocol.libProtocolMod.ExecuteCommandParams
-import typings.vscodeDashLanguageserverDashProtocol.libProtocolMod.InitializeError
 import typings.vscodeDashLanguageserverDashProtocol.libProtocolMod.InitializeParams
 import typings.vscodeDashLanguageserverDashProtocol.libProtocolMod.InitializeResult
 import typings.vscodeDashLanguageserverDashProtocol.libProtocolMod.InitializedParams
@@ -37,27 +35,12 @@ import typings.vscodeDashLanguageserverDashProtocol.libProtocolMod.ReferencePara
 import typings.vscodeDashLanguageserverDashProtocol.libProtocolMod.RenameParams
 import typings.vscodeDashLanguageserverDashProtocol.libProtocolMod.TextDocumentPositionParams
 import typings.vscodeDashLanguageserverDashProtocol.libProtocolMod.WillSaveTextDocumentParams
-import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.CodeAction
-import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.CodeLens
-import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.ColorInformation
-import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.ColorPresentation
-import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Command
-import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.CompletionItem
-import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.CompletionList
 import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Declaration
 import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.DeclarationLink
 import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Definition
 import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.DefinitionLink
-import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.DocumentHighlight
 import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.DocumentSymbolParams
-import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.FoldingRange
-import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Hover
-import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Location
-import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Range
 import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.SignatureHelp
-import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.SymbolInformation
-import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.TextEdit
-import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.WorkspaceEdit
 import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.WorkspaceSymbolParams
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -104,7 +87,15 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] ex
     * @param handler The corresponding handler.
     */
   def onCodeAction(
-    handler: RequestHandler[CodeActionParams, js.UndefOr[(js.Array[Command | CodeAction]) | Null], Unit]
+    handler: RequestHandler[
+      CodeActionParams, 
+      js.UndefOr[
+        (js.Array[
+          typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Command | typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.CodeAction
+        ]) | Null
+      ], 
+      Unit
+    ]
   ): Unit = js.native
   /**
     * Compute a list of [lenses](#CodeLens). This call should return as fast as possible and if
@@ -113,21 +104,45 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] ex
     *
     * @param handler The corresponding handler.
     */
-  def onCodeLens(handler: RequestHandler[CodeLensParams, js.UndefOr[js.Array[CodeLens] | Null], Unit]): Unit = js.native
+  def onCodeLens(
+    handler: RequestHandler[
+      CodeLensParams, 
+      js.UndefOr[
+        (js.Array[
+          typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.CodeLens
+        ]) | Null
+      ], 
+      Unit
+    ]
+  ): Unit = js.native
   /**
     * This function will be called for each visible code lens, usually when scrolling and after
     * the onCodeLens has been called.
     *
     * @param handler The corresponding handler.
     */
-  def onCodeLensResolve(handler: RequestHandler[CodeLens, CodeLens, Unit]): Unit = js.native
+  def onCodeLensResolve(
+    handler: RequestHandler[
+      typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.CodeLens, 
+      typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.CodeLens, 
+      Unit
+    ]
+  ): Unit = js.native
   /**
     * Installs a handler for the document color request.
     *
     * @param handler The corresponding handler.
     */
   def onColorPresentation(
-    handler: RequestHandler[ColorPresentationParams, js.UndefOr[js.Array[ColorPresentation] | Null], Unit]
+    handler: RequestHandler[
+      ColorPresentationParams, 
+      js.UndefOr[
+        (js.Array[
+          typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.ColorPresentation
+        ]) | Null
+      ], 
+      Unit
+    ]
   ): Unit = js.native
   /**
     * Installs a handler for the `Completion` request.
@@ -135,14 +150,28 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] ex
     * @param handler The corresponding handler.
     */
   def onCompletion(
-    handler: RequestHandler[CompletionParams, js.UndefOr[js.Array[CompletionItem] | CompletionList | Null], Unit]
+    handler: RequestHandler[
+      CompletionParams, 
+      js.UndefOr[
+        (js.Array[
+          typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.CompletionItem
+        ]) | typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.CompletionList | Null
+      ], 
+      Unit
+    ]
   ): Unit = js.native
   /**
     * Installs a handler for the `CompletionResolve` request.
     *
     * @param handler The corresponding handler.
     */
-  def onCompletionResolve(handler: RequestHandler[CompletionItem, CompletionItem, Unit]): Unit = js.native
+  def onCompletionResolve(
+    handler: RequestHandler[
+      typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.CompletionItem, 
+      typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.CompletionItem, 
+      Unit
+    ]
+  ): Unit = js.native
   /**
     * Installs a handler for the `Declaration` request.
     *
@@ -208,20 +237,48 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] ex
     *
     * @param handler The corresponding handler.
     */
-  def onDocumentColor(handler: RequestHandler[DocumentColorParams, js.UndefOr[js.Array[ColorInformation] | Null], Unit]): Unit = js.native
+  def onDocumentColor(
+    handler: RequestHandler[
+      DocumentColorParams, 
+      js.UndefOr[
+        (js.Array[
+          typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.ColorInformation
+        ]) | Null
+      ], 
+      Unit
+    ]
+  ): Unit = js.native
   /**
     * Installs a handler for the document formatting request.
     *
     * @param handler The corresponding handler.
     */
-  def onDocumentFormatting(handler: RequestHandler[DocumentFormattingParams, js.UndefOr[js.Array[TextEdit] | Null], Unit]): Unit = js.native
+  def onDocumentFormatting(
+    handler: RequestHandler[
+      DocumentFormattingParams, 
+      js.UndefOr[
+        (js.Array[
+          typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.TextEdit
+        ]) | Null
+      ], 
+      Unit
+    ]
+  ): Unit = js.native
   /**
     * Installs a handler for the `DocumentHighlight` request.
     *
     * @param handler The corresponding handler.
     */
   def onDocumentHighlight(
-    handler: RequestHandler[TextDocumentPositionParams, js.UndefOr[js.Array[DocumentHighlight] | Null], Unit]
+    handler: RequestHandler[
+      TextDocumentPositionParams, 
+      js.UndefOr[
+        (js.Array[
+          typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.DocumentHighlight
+        ]) | Null
+      ], 
+      Unit
+    ]
   ): Unit = js.native
   /**
     * Installs a handler for the document links resolve request.
@@ -259,7 +316,15 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] ex
     * @param handler The corresponding handler.
     */
   def onDocumentOnTypeFormatting(
-    handler: RequestHandler[DocumentOnTypeFormattingParams, js.UndefOr[js.Array[TextEdit] | Null], Unit]
+    handler: RequestHandler[
+      DocumentOnTypeFormattingParams, 
+      js.UndefOr[
+        (js.Array[
+          typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.TextEdit
+        ]) | Null
+      ], 
+      Unit
+    ]
   ): Unit = js.native
   /**
     * Installs a handler for the document range formatting request.
@@ -267,7 +332,15 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] ex
     * @param handler The corresponding handler.
     */
   def onDocumentRangeFormatting(
-    handler: RequestHandler[DocumentRangeFormattingParams, js.UndefOr[js.Array[TextEdit] | Null], Unit]
+    handler: RequestHandler[
+      DocumentRangeFormattingParams, 
+      js.UndefOr[
+        (js.Array[
+          typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.TextEdit
+        ]) | Null
+      ], 
+      Unit
+    ]
   ): Unit = js.native
   /**
     * Installs a handler for the `DocumentSymbol` request.
@@ -279,7 +352,7 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] ex
       DocumentSymbolParams, 
       js.UndefOr[
         (js.Array[
-          typings.vscodeDashLanguageserverDashProtocol.vscodeDashLanguageserverDashProtocolMod.DocumentSymbol | SymbolInformation
+          typings.vscodeDashLanguageserverDashProtocol.vscodeDashLanguageserverDashProtocolMod.DocumentSymbol | typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.SymbolInformation
         ]) | Null
       ], 
       Unit
@@ -302,13 +375,31 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] ex
     *
     * @param handler The corresponding handler.
     */
-  def onFoldingRanges(handler: RequestHandler[FoldingRangeParams, js.UndefOr[js.Array[FoldingRange] | Null], Unit]): Unit = js.native
+  def onFoldingRanges(
+    handler: RequestHandler[
+      FoldingRangeParams, 
+      js.UndefOr[
+        (js.Array[
+          typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.FoldingRange
+        ]) | Null
+      ], 
+      Unit
+    ]
+  ): Unit = js.native
   /**
     * Installs a handler for the `Hover` request.
     *
     * @param handler The corresponding handler.
     */
-  def onHover(handler: RequestHandler[TextDocumentPositionParams, js.UndefOr[Hover | Null], Unit]): Unit = js.native
+  def onHover(
+    handler: RequestHandler[
+      TextDocumentPositionParams, 
+      js.UndefOr[
+        typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Hover | Null
+      ], 
+      Unit
+    ]
+  ): Unit = js.native
   /**
     * Installs a handler for the `Implementation` request.
     *
@@ -320,7 +411,13 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] ex
     *
     * @param handler The initialize handler.
     */
-  def onInitialize(handler: RequestHandler[InitializeParams, InitializeResult, InitializeError]): Unit = js.native
+  def onInitialize(
+    handler: RequestHandler[
+      InitializeParams, 
+      InitializeResult, 
+      typings.vscodeDashLanguageserverDashProtocol.libProtocolMod.InitializeError
+    ]
+  ): Unit = js.native
   /**
     * Installs a handler for the initialized notification.
     *
@@ -360,20 +457,44 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] ex
     * @param handler The corresponding handler.
     */
   def onPrepareRename(
-    handler: RequestHandler[TextDocumentPositionParams, js.UndefOr[Range | Anon_Placeholder | Null], Unit]
+    handler: RequestHandler[
+      TextDocumentPositionParams, 
+      js.UndefOr[
+        typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Range | Anon_Placeholder | Null
+      ], 
+      Unit
+    ]
   ): Unit = js.native
   /**
     * Installs a handler for the `References` request.
     *
     * @param handler The corresponding handler.
     */
-  def onReferences(handler: RequestHandler[ReferenceParams, js.UndefOr[js.Array[Location] | Null], Unit]): Unit = js.native
+  def onReferences(
+    handler: RequestHandler[
+      ReferenceParams, 
+      js.UndefOr[
+        (js.Array[
+          typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Location
+        ]) | Null
+      ], 
+      Unit
+    ]
+  ): Unit = js.native
   /**
     * Installs a handler for the rename request.
     *
     * @param handler The corresponding handler.
     */
-  def onRenameRequest(handler: RequestHandler[RenameParams, js.UndefOr[WorkspaceEdit | Null], Unit]): Unit = js.native
+  def onRenameRequest(
+    handler: RequestHandler[
+      RenameParams, 
+      js.UndefOr[
+        typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.WorkspaceEdit | Null
+      ], 
+      Unit
+    ]
+  ): Unit = js.native
   /**
     * Installs a request handler that is invoked if no specific request handler can be found.
     *
@@ -439,14 +560,32 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] ex
     *
     * @param handler The corresponding handler.
     */
-  def onWillSaveTextDocumentWaitUntil(handler: RequestHandler[WillSaveTextDocumentParams, js.UndefOr[js.Array[TextEdit] | Null], Unit]): Unit = js.native
+  def onWillSaveTextDocumentWaitUntil(
+    handler: RequestHandler[
+      WillSaveTextDocumentParams, 
+      js.UndefOr[
+        (js.Array[
+          typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.TextEdit
+        ]) | Null
+      ], 
+      Unit
+    ]
+  ): Unit = js.native
   /**
     * Installs a handler for the `WorkspaceSymbol` request.
     *
     * @param handler The corresponding handler.
     */
   def onWorkspaceSymbol(
-    handler: RequestHandler[WorkspaceSymbolParams, js.UndefOr[js.Array[SymbolInformation] | Null], Unit]
+    handler: RequestHandler[
+      WorkspaceSymbolParams, 
+      js.UndefOr[
+        (js.Array[
+          typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.SymbolInformation
+        ]) | Null
+      ], 
+      Unit
+    ]
   ): Unit = js.native
   /**
     * Sends diagnostics computed for a given document to VSCode to render them in the
@@ -484,8 +623,12 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] ex
     */
   def sendRequest[R](method: String): Thenable[R] = js.native
   def sendRequest[R](method: String, params: js.Any): Thenable[R] = js.native
-  def sendRequest[R](method: String, params: js.Any, token: CancellationToken): Thenable[R] = js.native
-  def sendRequest[R](method: String, token: CancellationToken): Thenable[R] = js.native
+  def sendRequest[R](
+    method: String,
+    params: js.Any,
+    token: typings.vscodeDashJsonrpc.libCancellationMod.CancellationToken
+  ): Thenable[R] = js.native
+  def sendRequest[R](method: String, token: typings.vscodeDashJsonrpc.libCancellationMod.CancellationToken): Thenable[R] = js.native
   /**
     * Send a request to the client.
     *
@@ -497,7 +640,7 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] ex
   ): Thenable[R] = js.native
   def sendRequest[R, E, RO](
     `type`: typings.vscodeDashLanguageserverDashProtocol.vscodeDashLanguageserverDashProtocolMod.RequestType0[R, E, RO],
-    token: CancellationToken
+    token: typings.vscodeDashJsonrpc.libCancellationMod.CancellationToken
   ): Thenable[R] = js.native
   def sendRequest[P, R, E, RO](
     `type`: typings.vscodeDashLanguageserverDashProtocol.vscodeDashLanguageserverDashProtocolMod.RequestType[P, R, E, RO],
@@ -506,7 +649,7 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] ex
   def sendRequest[P, R, E, RO](
     `type`: typings.vscodeDashLanguageserverDashProtocol.vscodeDashLanguageserverDashProtocolMod.RequestType[P, R, E, RO],
     params: P,
-    token: CancellationToken
+    token: typings.vscodeDashJsonrpc.libCancellationMod.CancellationToken
   ): Thenable[R] = js.native
 }
 

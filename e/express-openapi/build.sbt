@@ -1,28 +1,28 @@
 organization := "org.scalablytyped"
 name := "express-openapi"
-version := "5.0.0-ad3070"
+version := "5.0.0-0bff06"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "ajv" % "6.10.2-52b713",
-  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20190819Z-b36108",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-a0f3dc",
-  "org.scalablytyped" %%% "express" % "4.17-dt-20191101Z-24df32",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.17-dt-20191115Z-4dd221",
-  "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-301fe0",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191123Z-304e79",
-  "org.scalablytyped" %%% "openapi-default-setter" % "2.1.0-4412ea",
-  "org.scalablytyped" %%% "openapi-framework" % "0.25.0-ed592f",
-  "org.scalablytyped" %%% "openapi-request-coercer" % "2.3.0-9a3207",
-  "org.scalablytyped" %%% "openapi-request-validator" % "4.1.0-af956b",
-  "org.scalablytyped" %%% "openapi-response-validator" % "4.0.0-ea86ad",
-  "org.scalablytyped" %%% "openapi-security-handler" % "2.0.4-842a9b",
-  "org.scalablytyped" %%% "openapi-types" % "1.3.5-47c407",
-  "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-6ebcbf",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190819Z-37db83",
-  "org.scalablytyped" %%% "std" % "3.7-1c17cf",
-  "org.scalablytyped" %%% "ts-log" % "2.1.4-8a79a7")
+  "org.scalablytyped" %%% "ajv" % "6.10.2-3573c2",
+  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20190819Z-95873a",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-21f8e2",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20191101Z-a64687",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.17-dt-20191115Z-102985",
+  "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-e84c0f",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191123Z-382692",
+  "org.scalablytyped" %%% "openapi-default-setter" % "2.1.0-a669fe",
+  "org.scalablytyped" %%% "openapi-framework" % "0.25.0-1deb92",
+  "org.scalablytyped" %%% "openapi-request-coercer" % "2.3.0-c31e33",
+  "org.scalablytyped" %%% "openapi-request-validator" % "4.1.0-84310e",
+  "org.scalablytyped" %%% "openapi-response-validator" % "4.0.0-e47519",
+  "org.scalablytyped" %%% "openapi-security-handler" % "2.0.4-e6ebd1",
+  "org.scalablytyped" %%% "openapi-types" % "1.3.5-559860",
+  "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-1b75dd",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190819Z-c3e43f",
+  "org.scalablytyped" %%% "std" % "3.7-1d724d",
+  "org.scalablytyped" %%% "ts-log" % "2.1.4-3dd486")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

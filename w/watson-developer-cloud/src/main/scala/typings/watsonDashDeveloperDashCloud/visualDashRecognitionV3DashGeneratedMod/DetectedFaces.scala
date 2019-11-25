@@ -17,8 +17,8 @@ trait DetectedFaces extends js.Object {
 object DetectedFaces {
   @scala.inline
   def apply(images: js.Array[ImageWithFaces], images_processed: Double, warnings: js.Array[WarningInfo] = null): DetectedFaces = {
-    val __obj = js.Dynamic.literal(images = images, images_processed = images_processed)
-    if (warnings != null) __obj.updateDynamic("warnings")(warnings)
+    val __obj = js.Dynamic.literal(images = images.asInstanceOf[js.Any], images_processed = images_processed.asInstanceOf[js.Any])
+    if (warnings != null) __obj.updateDynamic("warnings")(warnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectedFaces]
   }
 }

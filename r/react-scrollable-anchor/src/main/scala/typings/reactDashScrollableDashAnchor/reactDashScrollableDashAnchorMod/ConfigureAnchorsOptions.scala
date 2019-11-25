@@ -18,7 +18,7 @@ object ConfigureAnchorsOptions {
     scrollDuration: Int | Double = null
   ): ConfigureAnchorsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(keepLastAnchorHash)) __obj.updateDynamic("keepLastAnchorHash")(keepLastAnchorHash)
+    if (!js.isUndefined(keepLastAnchorHash)) __obj.updateDynamic("keepLastAnchorHash")(keepLastAnchorHash.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (scrollDuration != null) __obj.updateDynamic("scrollDuration")(scrollDuration.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigureAnchorsOptions]

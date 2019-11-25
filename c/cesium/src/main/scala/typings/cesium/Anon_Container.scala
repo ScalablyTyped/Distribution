@@ -23,10 +23,10 @@ object Anon_Container {
     key: String = null,
     url: String = null
   ): Anon_Container = {
-    val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], scene = scene)
+    val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], scene = scene.asInstanceOf[js.Any])
     if (flightDuration != null) __obj.updateDynamic("flightDuration")(flightDuration.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Container]
   }
 }

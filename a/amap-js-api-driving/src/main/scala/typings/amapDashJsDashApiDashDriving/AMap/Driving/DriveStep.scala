@@ -89,10 +89,10 @@ object DriveStep {
     tmcs: js.Array[TMC] = null,
     tmcsPaths: js.Array[TMCsPath] = null
   ): DriveStep = {
-    val __obj = js.Dynamic.literal(action = action, assistant_action = assistant_action, distance = distance, end_location = end_location, instruction = instruction, orientation = orientation, path = path, road = road, start_location = start_location, time = time, toll_distance = toll_distance, toll_road = toll_road, tolls = tolls)
-    if (cities != null) __obj.updateDynamic("cities")(cities)
-    if (tmcs != null) __obj.updateDynamic("tmcs")(tmcs)
-    if (tmcsPaths != null) __obj.updateDynamic("tmcsPaths")(tmcsPaths)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], assistant_action = assistant_action.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], end_location = end_location.asInstanceOf[js.Any], instruction = instruction.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], road = road.asInstanceOf[js.Any], start_location = start_location.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], toll_distance = toll_distance.asInstanceOf[js.Any], toll_road = toll_road.asInstanceOf[js.Any], tolls = tolls.asInstanceOf[js.Any])
+    if (cities != null) __obj.updateDynamic("cities")(cities.asInstanceOf[js.Any])
+    if (tmcs != null) __obj.updateDynamic("tmcs")(tmcs.asInstanceOf[js.Any])
+    if (tmcsPaths != null) __obj.updateDynamic("tmcsPaths")(tmcsPaths.asInstanceOf[js.Any])
     __obj.asInstanceOf[DriveStep]
   }
 }

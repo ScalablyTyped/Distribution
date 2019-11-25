@@ -30,15 +30,15 @@ object URIComponents {
     userinfo: String = null
   ): URIComponents = {
     val __obj = js.Dynamic.literal()
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (fragment != null) __obj.updateDynamic("fragment")(fragment)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (fragment != null) __obj.updateDynamic("fragment")(fragment.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query)
-    if (reference != null) __obj.updateDynamic("reference")(reference)
-    if (scheme != null) __obj.updateDynamic("scheme")(scheme)
-    if (userinfo != null) __obj.updateDynamic("userinfo")(userinfo)
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    if (reference != null) __obj.updateDynamic("reference")(reference.asInstanceOf[js.Any])
+    if (scheme != null) __obj.updateDynamic("scheme")(scheme.asInstanceOf[js.Any])
+    if (userinfo != null) __obj.updateDynamic("userinfo")(userinfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[URIComponents]
   }
 }

@@ -11,7 +11,7 @@ trait NavigationButtonPressedEvent extends ComponentEvent {
 object NavigationButtonPressedEvent {
   @scala.inline
   def apply(buttonId: String, componentId: String): NavigationButtonPressedEvent = {
-    val __obj = js.Dynamic.literal(buttonId = buttonId, componentId = componentId)
+    val __obj = js.Dynamic.literal(buttonId = buttonId.asInstanceOf[js.Any], componentId = componentId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NavigationButtonPressedEvent]
   }

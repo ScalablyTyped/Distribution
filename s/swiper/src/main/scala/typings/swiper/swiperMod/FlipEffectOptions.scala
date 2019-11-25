@@ -16,8 +16,8 @@ object FlipEffectOptions {
     slideShadows: js.UndefOr[Boolean] = js.undefined
   ): FlipEffectOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(limitRotation)) __obj.updateDynamic("limitRotation")(limitRotation)
-    if (!js.isUndefined(slideShadows)) __obj.updateDynamic("slideShadows")(slideShadows)
+    if (!js.isUndefined(limitRotation)) __obj.updateDynamic("limitRotation")(limitRotation.asInstanceOf[js.Any])
+    if (!js.isUndefined(slideShadows)) __obj.updateDynamic("slideShadows")(slideShadows.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlipEffectOptions]
   }
 }

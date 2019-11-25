@@ -24,9 +24,9 @@ object DocumentFilter {
   @scala.inline
   def apply(language: String = null, pattern: GlobPattern = null, scheme: String = null): DocumentFilter = {
     val __obj = js.Dynamic.literal()
-    if (language != null) __obj.updateDynamic("language")(language)
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
-    if (scheme != null) __obj.updateDynamic("scheme")(scheme)
+    if (scheme != null) __obj.updateDynamic("scheme")(scheme.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentFilter]
   }
 }

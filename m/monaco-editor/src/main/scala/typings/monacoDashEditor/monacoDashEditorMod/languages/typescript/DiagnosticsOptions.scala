@@ -16,8 +16,8 @@ object DiagnosticsOptions {
     noSyntaxValidation: js.UndefOr[Boolean] = js.undefined
   ): DiagnosticsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(noSemanticValidation)) __obj.updateDynamic("noSemanticValidation")(noSemanticValidation)
-    if (!js.isUndefined(noSyntaxValidation)) __obj.updateDynamic("noSyntaxValidation")(noSyntaxValidation)
+    if (!js.isUndefined(noSemanticValidation)) __obj.updateDynamic("noSemanticValidation")(noSemanticValidation.asInstanceOf[js.Any])
+    if (!js.isUndefined(noSyntaxValidation)) __obj.updateDynamic("noSyntaxValidation")(noSyntaxValidation.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagnosticsOptions]
   }
 }

@@ -30,3 +30,52 @@ import scala.scalajs.js.annotation._
 */
 trait hintEventName extends js.Object
 
+object hintEventName {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def onAfterScroll: typings.webix.webixStrings.onAfterScroll = this.cast("onAfterScroll")
+  @scala.inline
+  def onAfterStart: typings.webix.webixStrings.onAfterStart = this.cast("onAfterStart")
+  @scala.inline
+  def onBeforeStart: typings.webix.webixStrings.onBeforeStart = this.cast("onBeforeStart")
+  @scala.inline
+  def onBindRequest: typings.webix.webixStrings.onBindRequest = this.cast("onBindRequest")
+  @scala.inline
+  def onBlur: typings.webix.webixStrings.onBlur = this.cast("onBlur")
+  @scala.inline
+  def onDestruct: typings.webix.webixStrings.onDestruct = this.cast("onDestruct")
+  @scala.inline
+  def onEnd: typings.webix.webixStrings.onEnd = this.cast("onEnd")
+  @scala.inline
+  def onEnter: typings.webix.webixStrings.onEnter = this.cast("onEnter")
+  @scala.inline
+  def onFocus: typings.webix.webixStrings.onFocus = this.cast("onFocus")
+  @scala.inline
+  def onKeyPress: typings.webix.webixStrings.onKeyPress = this.cast("onKeyPress")
+  @scala.inline
+  def onLongTouch: typings.webix.webixStrings.onLongTouch = this.cast("onLongTouch")
+  @scala.inline
+  def onNext: typings.webix.webixStrings.onNext = this.cast("onNext")
+  @scala.inline
+  def onPrevious: typings.webix.webixStrings.onPrevious = this.cast("onPrevious")
+  @scala.inline
+  def onSkip: typings.webix.webixStrings.onSkip = this.cast("onSkip")
+  @scala.inline
+  def onSwipeX: typings.webix.webixStrings.onSwipeX = this.cast("onSwipeX")
+  @scala.inline
+  def onSwipeY: typings.webix.webixStrings.onSwipeY = this.cast("onSwipeY")
+  @scala.inline
+  def onTimedKeyPress: typings.webix.webixStrings.onTimedKeyPress = this.cast("onTimedKeyPress")
+  @scala.inline
+  def onTouchEnd: typings.webix.webixStrings.onTouchEnd = this.cast("onTouchEnd")
+  @scala.inline
+  def onTouchMove: typings.webix.webixStrings.onTouchMove = this.cast("onTouchMove")
+  @scala.inline
+  def onTouchStart: typings.webix.webixStrings.onTouchStart = this.cast("onTouchStart")
+  @scala.inline
+  def onViewResize: typings.webix.webixStrings.onViewResize = this.cast("onViewResize")
+  @scala.inline
+  def onViewShow: typings.webix.webixStrings.onViewShow = this.cast("onViewShow")
+}
+

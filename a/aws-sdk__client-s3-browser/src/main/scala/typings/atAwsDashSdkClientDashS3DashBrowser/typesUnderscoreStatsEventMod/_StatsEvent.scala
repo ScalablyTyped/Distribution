@@ -16,7 +16,7 @@ object _StatsEvent {
   @scala.inline
   def apply(Details: _Stats = null): _StatsEvent = {
     val __obj = js.Dynamic.literal()
-    if (Details != null) __obj.updateDynamic("Details")(Details)
+    if (Details != null) __obj.updateDynamic("Details")(Details.asInstanceOf[js.Any])
     __obj.asInstanceOf[_StatsEvent]
   }
 }

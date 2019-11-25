@@ -20,9 +20,9 @@ object IListState {
     pages: js.Array[IPage[T]] = null
   ): IListState[T] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isScrolling)) __obj.updateDynamic("isScrolling")(isScrolling)
+    if (!js.isUndefined(isScrolling)) __obj.updateDynamic("isScrolling")(isScrolling.asInstanceOf[js.Any])
     if (measureVersion != null) __obj.updateDynamic("measureVersion")(measureVersion.asInstanceOf[js.Any])
-    if (pages != null) __obj.updateDynamic("pages")(pages)
+    if (pages != null) __obj.updateDynamic("pages")(pages.asInstanceOf[js.Any])
     __obj.asInstanceOf[IListState[T]]
   }
 }

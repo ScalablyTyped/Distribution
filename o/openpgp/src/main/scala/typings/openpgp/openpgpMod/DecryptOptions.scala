@@ -66,14 +66,14 @@ object DecryptOptions {
     signature: Signature = null,
     streaming: web | node | `false` = null
   ): DecryptOptions = {
-    val __obj = js.Dynamic.literal(message = message)
-    if (date != null) __obj.updateDynamic("date")(date)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (passwords != null) __obj.updateDynamic("passwords")(passwords.asInstanceOf[js.Any])
     if (privateKeys != null) __obj.updateDynamic("privateKeys")(privateKeys.asInstanceOf[js.Any])
     if (publicKeys != null) __obj.updateDynamic("publicKeys")(publicKeys.asInstanceOf[js.Any])
     if (sessionKeys != null) __obj.updateDynamic("sessionKeys")(sessionKeys.asInstanceOf[js.Any])
-    if (signature != null) __obj.updateDynamic("signature")(signature)
+    if (signature != null) __obj.updateDynamic("signature")(signature.asInstanceOf[js.Any])
     if (streaming != null) __obj.updateDynamic("streaming")(streaming.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecryptOptions]
   }

@@ -16,9 +16,9 @@ object TriggerActionOptions {
   @scala.inline
   def apply(action: String = null, actionContext: default = null, target: default = null): TriggerActionOptions = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action)
-    if (actionContext != null) __obj.updateDynamic("actionContext")(actionContext)
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (actionContext != null) __obj.updateDynamic("actionContext")(actionContext.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[TriggerActionOptions]
   }
 }

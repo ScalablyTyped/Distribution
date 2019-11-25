@@ -28,9 +28,9 @@ object RefreshToken {
     refreshTokenExpiresAt: Date = null,
     scope: String | js.Array[String] = null
   ): RefreshToken = {
-    val __obj = js.Dynamic.literal(client = client, refreshToken = refreshToken, user = user)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (refreshTokenExpiresAt != null) __obj.updateDynamic("refreshTokenExpiresAt")(refreshTokenExpiresAt)
+    val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], refreshToken = refreshToken.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (refreshTokenExpiresAt != null) __obj.updateDynamic("refreshTokenExpiresAt")(refreshTokenExpiresAt.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[RefreshToken]
   }

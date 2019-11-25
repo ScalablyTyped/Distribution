@@ -11,7 +11,7 @@ trait Anon_PayloadAnonParam extends js.Object {
 object Anon_PayloadAnonParam {
   @scala.inline
   def apply(payload: Anon_Param): Anon_PayloadAnonParam = {
-    val __obj = js.Dynamic.literal(payload = payload)
+    val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_PayloadAnonParam]
   }

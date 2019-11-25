@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait ExceptionsBehavior extends js.Object
 
+object ExceptionsBehavior {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def propagate: typings.fridaDashGum.fridaDashGumStrings.propagate = this.cast("propagate")
+  @scala.inline
+  def steal: typings.fridaDashGum.fridaDashGumStrings.steal = this.cast("steal")
+}
+

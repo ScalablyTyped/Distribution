@@ -14,8 +14,8 @@ trait ICodeExample extends js.Object {
 object ICodeExample {
   @scala.inline
   def apply(config: String, description: String, pass: String, fail: String = null): ICodeExample = {
-    val __obj = js.Dynamic.literal(config = config, description = description, pass = pass)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
+    val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], pass = pass.asInstanceOf[js.Any])
+    if (fail != null) __obj.updateDynamic("fail")(fail.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICodeExample]
   }
 }

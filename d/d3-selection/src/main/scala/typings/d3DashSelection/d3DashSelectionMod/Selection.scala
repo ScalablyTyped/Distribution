@@ -95,13 +95,11 @@ import typings.d3DashSelection.d3DashSelectionStrings.s
 import typings.d3DashSelection.d3DashSelectionStrings.samp
 import typings.d3DashSelection.d3DashSelectionStrings.script
 import typings.d3DashSelection.d3DashSelectionStrings.section
-import typings.d3DashSelection.d3DashSelectionStrings.select
 import typings.d3DashSelection.d3DashSelectionStrings.slot
 import typings.d3DashSelection.d3DashSelectionStrings.small
 import typings.d3DashSelection.d3DashSelectionStrings.source
 import typings.d3DashSelection.d3DashSelectionStrings.span
 import typings.d3DashSelection.d3DashSelectionStrings.strong
-import typings.d3DashSelection.d3DashSelectionStrings.style
 import typings.d3DashSelection.d3DashSelectionStrings.sub
 import typings.d3DashSelection.d3DashSelectionStrings.summary
 import typings.d3DashSelection.d3DashSelectionStrings.sup
@@ -431,7 +429,7 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
   @JSName("append")
   def append_section(`type`: section): Selection[HTMLElement, Datum, PElement, PDatum] = js.native
   @JSName("append")
-  def append_select(`type`: select): Selection[HTMLSelectElement, Datum, PElement, PDatum] = js.native
+  def append_select(`type`: typings.d3DashSelection.d3DashSelectionStrings.select): Selection[HTMLSelectElement, Datum, PElement, PDatum] = js.native
   @JSName("append")
   def append_slot(`type`: slot): Selection[HTMLSlotElement, Datum, PElement, PDatum] = js.native
   @JSName("append")
@@ -443,7 +441,7 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
   @JSName("append")
   def append_strong(`type`: strong): Selection[HTMLElement, Datum, PElement, PDatum] = js.native
   @JSName("append")
-  def append_style(`type`: style): Selection[HTMLStyleElement, Datum, PElement, PDatum] = js.native
+  def append_style(`type`: typings.d3DashSelection.d3DashSelectionStrings.style): Selection[HTMLStyleElement, Datum, PElement, PDatum] = js.native
   @JSName("append")
   def append_sub(`type`: sub): Selection[HTMLElement, Datum, PElement, PDatum] = js.native
   @JSName("append")
@@ -1384,11 +1382,14 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
   @JSName("insert")
   def insert_section(`type`: section, before: ValueFn[GElement, Datum, BaseType]): Selection[HTMLElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
-  def insert_select(`type`: select): Selection[HTMLSelectElement, Datum, PElement, PDatum] = js.native
+  def insert_select(`type`: typings.d3DashSelection.d3DashSelectionStrings.select): Selection[HTMLSelectElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
-  def insert_select(`type`: select, before: String): Selection[HTMLSelectElement, Datum, PElement, PDatum] = js.native
+  def insert_select(`type`: typings.d3DashSelection.d3DashSelectionStrings.select, before: String): Selection[HTMLSelectElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
-  def insert_select(`type`: select, before: ValueFn[GElement, Datum, BaseType]): Selection[HTMLSelectElement, Datum, PElement, PDatum] = js.native
+  def insert_select(
+    `type`: typings.d3DashSelection.d3DashSelectionStrings.select,
+    before: ValueFn[GElement, Datum, BaseType]
+  ): Selection[HTMLSelectElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
   def insert_slot(`type`: slot): Selection[HTMLSlotElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
@@ -1420,11 +1421,14 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
   @JSName("insert")
   def insert_strong(`type`: strong, before: ValueFn[GElement, Datum, BaseType]): Selection[HTMLElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
-  def insert_style(`type`: style): Selection[HTMLStyleElement, Datum, PElement, PDatum] = js.native
+  def insert_style(`type`: typings.d3DashSelection.d3DashSelectionStrings.style): Selection[HTMLStyleElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
-  def insert_style(`type`: style, before: String): Selection[HTMLStyleElement, Datum, PElement, PDatum] = js.native
+  def insert_style(`type`: typings.d3DashSelection.d3DashSelectionStrings.style, before: String): Selection[HTMLStyleElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
-  def insert_style(`type`: style, before: ValueFn[GElement, Datum, BaseType]): Selection[HTMLStyleElement, Datum, PElement, PDatum] = js.native
+  def insert_style(
+    `type`: typings.d3DashSelection.d3DashSelectionStrings.style,
+    before: ValueFn[GElement, Datum, BaseType]
+  ): Selection[HTMLStyleElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
   def insert_sub(`type`: sub): Selection[HTMLElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
@@ -3355,10 +3359,10 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
     exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], Unit]
   ): Selection[GElement | HTMLElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
-  def join_select[OldDatum](enter: select): Selection[GElement | HTMLSelectElement, Datum, PElement, PDatum] = js.native
+  def join_select[OldDatum](enter: typings.d3DashSelection.d3DashSelectionStrings.select): Selection[GElement | HTMLSelectElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
   def join_select[OldDatum](
-    enter: select,
+    enter: typings.d3DashSelection.d3DashSelectionStrings.select,
     update: js.Function1[
       /* elem */ Selection[GElement, Datum, PElement, PDatum], 
       js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
@@ -3366,7 +3370,7 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
   ): Selection[GElement | HTMLSelectElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
   def join_select[OldDatum](
-    enter: select,
+    enter: typings.d3DashSelection.d3DashSelectionStrings.select,
     update: js.Function1[
       /* elem */ Selection[GElement, Datum, PElement, PDatum], 
       js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
@@ -3469,10 +3473,10 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
     exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], Unit]
   ): Selection[GElement | HTMLElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
-  def join_style[OldDatum](enter: style): Selection[GElement | HTMLStyleElement, Datum, PElement, PDatum] = js.native
+  def join_style[OldDatum](enter: typings.d3DashSelection.d3DashSelectionStrings.style): Selection[GElement | HTMLStyleElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
   def join_style[OldDatum](
-    enter: style,
+    enter: typings.d3DashSelection.d3DashSelectionStrings.style,
     update: js.Function1[
       /* elem */ Selection[GElement, Datum, PElement, PDatum], 
       js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
@@ -3480,7 +3484,7 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
   ): Selection[GElement | HTMLStyleElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
   def join_style[OldDatum](
-    enter: style,
+    enter: typings.d3DashSelection.d3DashSelectionStrings.style,
     update: js.Function1[
       /* elem */ Selection[GElement, Datum, PElement, PDatum], 
       js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]

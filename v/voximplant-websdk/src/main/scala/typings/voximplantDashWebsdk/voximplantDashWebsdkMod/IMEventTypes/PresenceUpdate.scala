@@ -31,8 +31,8 @@ trait PresenceUpdate extends VoxImplantIMEvent {
 object PresenceUpdate {
   @scala.inline
   def apply(id: String, message: String, presence: UserStatuses, resource: String = null): PresenceUpdate = {
-    val __obj = js.Dynamic.literal(id = id, message = message, presence = presence)
-    if (resource != null) __obj.updateDynamic("resource")(resource)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], presence = presence.asInstanceOf[js.Any])
+    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[PresenceUpdate]
   }
 }

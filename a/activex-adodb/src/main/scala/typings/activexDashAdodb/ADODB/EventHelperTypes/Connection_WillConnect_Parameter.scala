@@ -25,7 +25,7 @@ object Connection_WillConnect_Parameter {
     adStatus: EventStatusEnum,
     pConnection: Connection
   ): Connection_WillConnect_Parameter = {
-    val __obj = js.Dynamic.literal(ConnectionString = ConnectionString, Options = Options, Password = Password, UserID = UserID, adStatus = adStatus, pConnection = pConnection)
+    val __obj = js.Dynamic.literal(ConnectionString = ConnectionString.asInstanceOf[js.Any], Options = Options.asInstanceOf[js.Any], Password = Password.asInstanceOf[js.Any], UserID = UserID.asInstanceOf[js.Any], adStatus = adStatus.asInstanceOf[js.Any], pConnection = pConnection.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Connection_WillConnect_Parameter]
   }

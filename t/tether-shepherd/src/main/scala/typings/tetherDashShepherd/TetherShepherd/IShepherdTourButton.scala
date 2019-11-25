@@ -19,10 +19,10 @@ object IShepherdTourButton {
     classes: String = null,
     events: IShepherdTourButtonEventHash = null
   ): IShepherdTourButton = {
-    val __obj = js.Dynamic.literal(text = text)
-    if (action != null) __obj.updateDynamic("action")(action)
-    if (classes != null) __obj.updateDynamic("classes")(classes)
-    if (events != null) __obj.updateDynamic("events")(events)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
+    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     __obj.asInstanceOf[IShepherdTourButton]
   }
 }

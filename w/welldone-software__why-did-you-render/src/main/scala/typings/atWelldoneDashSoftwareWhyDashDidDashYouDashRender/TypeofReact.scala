@@ -11,7 +11,7 @@ trait TypeofReact extends js.Object {
 object TypeofReact {
   @scala.inline
   def apply(Component: TypeofComponent): TypeofReact = {
-    val __obj = js.Dynamic.literal(Component = Component)
+    val __obj = js.Dynamic.literal(Component = Component.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeofReact]
   }

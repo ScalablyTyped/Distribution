@@ -44,8 +44,8 @@ object Anon_File {
     */
   /* key */ StringDictionary[js.Any] = null
   ): Anon_File = {
-    val __obj = js.Dynamic.literal(file = file, localStorage = localStorage, peers = peers, radisk = radisk, s3 = s3, uuid = js.Any.fromFunction0(uuid), web = web)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], localStorage = localStorage.asInstanceOf[js.Any], peers = peers.asInstanceOf[js.Any], radisk = radisk.asInstanceOf[js.Any], s3 = s3.asInstanceOf[js.Any], uuid = js.Any.fromFunction0(uuid), web = web.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_File]
   }
 }

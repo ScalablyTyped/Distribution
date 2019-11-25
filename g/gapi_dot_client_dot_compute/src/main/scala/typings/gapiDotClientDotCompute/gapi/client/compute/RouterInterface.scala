@@ -23,9 +23,9 @@ object RouterInterface {
   @scala.inline
   def apply(ipRange: String = null, linkedVpnTunnel: String = null, name: String = null): RouterInterface = {
     val __obj = js.Dynamic.literal()
-    if (ipRange != null) __obj.updateDynamic("ipRange")(ipRange)
-    if (linkedVpnTunnel != null) __obj.updateDynamic("linkedVpnTunnel")(linkedVpnTunnel)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (ipRange != null) __obj.updateDynamic("ipRange")(ipRange.asInstanceOf[js.Any])
+    if (linkedVpnTunnel != null) __obj.updateDynamic("linkedVpnTunnel")(linkedVpnTunnel.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouterInterface]
   }
 }

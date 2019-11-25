@@ -35,9 +35,9 @@ object Anon_Array {
     string: Type[String],
     undefined: Type[js.UndefOr[scala.Nothing]]
   ): Anon_Array = {
-    val __obj = js.Dynamic.literal(Date = Date, RegExp = RegExp, array = array, boolean = boolean, function = function, number = number, string = string, undefined = undefined)
-    __obj.updateDynamic("null")(`null`)
-    __obj.updateDynamic("object")(`object`)
+    val __obj = js.Dynamic.literal(Date = Date.asInstanceOf[js.Any], RegExp = RegExp.asInstanceOf[js.Any], array = array.asInstanceOf[js.Any], boolean = boolean.asInstanceOf[js.Any], function = function.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], string = string.asInstanceOf[js.Any], undefined = undefined.asInstanceOf[js.Any])
+    __obj.updateDynamic("null")(`null`.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Array]
   }
 }

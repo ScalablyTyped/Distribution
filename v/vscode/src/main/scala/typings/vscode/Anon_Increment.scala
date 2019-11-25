@@ -14,7 +14,7 @@ object Anon_Increment {
   def apply(increment: Int | Double = null, message: String = null): Anon_Increment = {
     val __obj = js.Dynamic.literal()
     if (increment != null) __obj.updateDynamic("increment")(increment.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Increment]
   }
 }

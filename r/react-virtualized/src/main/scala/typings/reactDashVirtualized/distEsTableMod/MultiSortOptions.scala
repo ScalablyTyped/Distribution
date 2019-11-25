@@ -13,8 +13,8 @@ object MultiSortOptions {
   @scala.inline
   def apply(defaultSortBy: js.Array[String] = null, defaultSortDirection: SortDirectionMap = null): MultiSortOptions = {
     val __obj = js.Dynamic.literal()
-    if (defaultSortBy != null) __obj.updateDynamic("defaultSortBy")(defaultSortBy)
-    if (defaultSortDirection != null) __obj.updateDynamic("defaultSortDirection")(defaultSortDirection)
+    if (defaultSortBy != null) __obj.updateDynamic("defaultSortBy")(defaultSortBy.asInstanceOf[js.Any])
+    if (defaultSortDirection != null) __obj.updateDynamic("defaultSortDirection")(defaultSortDirection.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiSortOptions]
   }
 }

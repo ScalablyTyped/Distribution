@@ -14,7 +14,7 @@ object BusinessHoursInput {
   @scala.inline
   def apply(dow: js.Array[Double] = null, end: MomentInput = null, start: MomentInput = null): BusinessHoursInput = {
     val __obj = js.Dynamic.literal()
-    if (dow != null) __obj.updateDynamic("dow")(dow)
+    if (dow != null) __obj.updateDynamic("dow")(dow.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[BusinessHoursInput]

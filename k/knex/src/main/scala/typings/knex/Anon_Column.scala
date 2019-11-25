@@ -12,8 +12,8 @@ trait Anon_Column extends js.Object {
 object Anon_Column {
   @scala.inline
   def apply(column: String, order: String = null): Anon_Column = {
-    val __obj = js.Dynamic.literal(column = column)
-    if (order != null) __obj.updateDynamic("order")(order)
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any])
+    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Column]
   }
 }

@@ -35,8 +35,8 @@ object CancelLeaseRequest {
   @scala.inline
   def apply(responseView: String = null, scheduleTime: String = null): CancelLeaseRequest = {
     val __obj = js.Dynamic.literal()
-    if (responseView != null) __obj.updateDynamic("responseView")(responseView)
-    if (scheduleTime != null) __obj.updateDynamic("scheduleTime")(scheduleTime)
+    if (responseView != null) __obj.updateDynamic("responseView")(responseView.asInstanceOf[js.Any])
+    if (scheduleTime != null) __obj.updateDynamic("scheduleTime")(scheduleTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelLeaseRequest]
   }
 }

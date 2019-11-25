@@ -12,7 +12,7 @@ trait ReposGetContributorsStatsParams extends js.Object {
 object ReposGetContributorsStatsParams {
   @scala.inline
   def apply(owner: String, repo: String): ReposGetContributorsStatsParams = {
-    val __obj = js.Dynamic.literal(owner = owner, repo = repo)
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReposGetContributorsStatsParams]
   }

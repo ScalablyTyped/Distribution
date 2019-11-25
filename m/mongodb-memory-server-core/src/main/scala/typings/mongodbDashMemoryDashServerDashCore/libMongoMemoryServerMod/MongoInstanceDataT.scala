@@ -34,9 +34,9 @@ object MongoInstanceDataT {
     replSet: String = null,
     tmpDir: Anon_Name = null
   ): MongoInstanceDataT = {
-    val __obj = js.Dynamic.literal(childProcess = childProcess, dbName = dbName, dbPath = dbPath, instance = instance, ip = ip, port = port, storageEngine = storageEngine, uri = uri)
-    if (replSet != null) __obj.updateDynamic("replSet")(replSet)
-    if (tmpDir != null) __obj.updateDynamic("tmpDir")(tmpDir)
+    val __obj = js.Dynamic.literal(childProcess = childProcess.asInstanceOf[js.Any], dbName = dbName.asInstanceOf[js.Any], dbPath = dbPath.asInstanceOf[js.Any], instance = instance.asInstanceOf[js.Any], ip = ip.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], storageEngine = storageEngine.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
+    if (replSet != null) __obj.updateDynamic("replSet")(replSet.asInstanceOf[js.Any])
+    if (tmpDir != null) __obj.updateDynamic("tmpDir")(tmpDir.asInstanceOf[js.Any])
     __obj.asInstanceOf[MongoInstanceDataT]
   }
 }

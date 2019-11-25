@@ -25,8 +25,8 @@ object GetResponse {
     found: Boolean,
     _routing: String = null
   ): GetResponse[T] = {
-    val __obj = js.Dynamic.literal(_id = _id, _index = _index, _source = _source.asInstanceOf[js.Any], _type = _type, _version = _version, found = found)
-    if (_routing != null) __obj.updateDynamic("_routing")(_routing)
+    val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], _index = _index.asInstanceOf[js.Any], _source = _source.asInstanceOf[js.Any], _type = _type.asInstanceOf[js.Any], _version = _version.asInstanceOf[js.Any], found = found.asInstanceOf[js.Any])
+    if (_routing != null) __obj.updateDynamic("_routing")(_routing.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResponse[T]]
   }
 }

@@ -48,11 +48,11 @@ object GraphTraversal {
     runGraphIndex: Int | Double = null
   ): GraphTraversal = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (edgeTraversals != null) __obj.updateDynamic("edgeTraversals")(edgeTraversals)
-    if (immutableState != null) __obj.updateDynamic("immutableState")(immutableState)
-    if (initialState != null) __obj.updateDynamic("initialState")(initialState)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (edgeTraversals != null) __obj.updateDynamic("edgeTraversals")(edgeTraversals.asInstanceOf[js.Any])
+    if (immutableState != null) __obj.updateDynamic("immutableState")(immutableState.asInstanceOf[js.Any])
+    if (initialState != null) __obj.updateDynamic("initialState")(initialState.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     if (resultGraphIndex != null) __obj.updateDynamic("resultGraphIndex")(resultGraphIndex.asInstanceOf[js.Any])
     if (runGraphIndex != null) __obj.updateDynamic("runGraphIndex")(runGraphIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphTraversal]

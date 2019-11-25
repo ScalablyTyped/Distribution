@@ -41,7 +41,7 @@ object ISearchAssociationResult {
     qSearchTermsMatched: js.Array[ISearchMatchCombinations],
     qTotalSearchResults: Double
   ): ISearchAssociationResult = {
-    val __obj = js.Dynamic.literal(qFieldDictionaries = qFieldDictionaries, qFieldNames = qFieldNames, qSearchTerms = qSearchTerms, qSearchTermsMatched = qSearchTermsMatched, qTotalSearchResults = qTotalSearchResults)
+    val __obj = js.Dynamic.literal(qFieldDictionaries = qFieldDictionaries.asInstanceOf[js.Any], qFieldNames = qFieldNames.asInstanceOf[js.Any], qSearchTerms = qSearchTerms.asInstanceOf[js.Any], qSearchTermsMatched = qSearchTermsMatched.asInstanceOf[js.Any], qTotalSearchResults = qTotalSearchResults.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISearchAssociationResult]
   }

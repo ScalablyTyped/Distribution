@@ -12,5 +12,22 @@ import scala.scalajs.js.annotation._
   - typings.pino.pinoStrings.debug
   - typings.pino.pinoStrings.trace
 */
-trait Level extends LevelWithSilent
+trait Level extends js.Object
+
+object Level {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def debug: typings.pino.pinoStrings.debug = this.cast("debug")
+  @scala.inline
+  def error: typings.pino.pinoStrings.error = this.cast("error")
+  @scala.inline
+  def fatal: typings.pino.pinoStrings.fatal = this.cast("fatal")
+  @scala.inline
+  def info: typings.pino.pinoStrings.info = this.cast("info")
+  @scala.inline
+  def trace: typings.pino.pinoStrings.trace = this.cast("trace")
+  @scala.inline
+  def warn: typings.pino.pinoStrings.warn = this.cast("warn")
+}
 

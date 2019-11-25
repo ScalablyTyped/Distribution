@@ -33,10 +33,10 @@ object IonRoute {
     onIonRouteDataChanged: /* event */ CustomEvent[_] => Unit = null,
     url: String = null
   ): IonRoute = {
-    val __obj = js.Dynamic.literal(component = component)
-    if (componentProps != null) __obj.updateDynamic("componentProps")(componentProps)
+    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
+    if (componentProps != null) __obj.updateDynamic("componentProps")(componentProps.asInstanceOf[js.Any])
     if (onIonRouteDataChanged != null) __obj.updateDynamic("onIonRouteDataChanged")(js.Any.fromFunction1(onIonRouteDataChanged))
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonRoute]
   }
 }

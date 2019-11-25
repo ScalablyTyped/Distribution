@@ -32,9 +32,9 @@ object SignerInfo {
     signedAttrs: typings.pkijs.srcSignedAndUnsignedAttributesMod.default = null,
     unsignedAttrs: typings.pkijs.srcSignedAndUnsignedAttributesMod.default = null
   ): SignerInfo = {
-    val __obj = js.Dynamic.literal(digestAlgorithm = digestAlgorithm, fromSchema = js.Any.fromFunction1(fromSchema), sid = sid, signature = signature, signatureAlgorithm = signatureAlgorithm, toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema), version = version)
-    if (signedAttrs != null) __obj.updateDynamic("signedAttrs")(signedAttrs)
-    if (unsignedAttrs != null) __obj.updateDynamic("unsignedAttrs")(unsignedAttrs)
+    val __obj = js.Dynamic.literal(digestAlgorithm = digestAlgorithm.asInstanceOf[js.Any], fromSchema = js.Any.fromFunction1(fromSchema), sid = sid.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any], signatureAlgorithm = signatureAlgorithm.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema), version = version.asInstanceOf[js.Any])
+    if (signedAttrs != null) __obj.updateDynamic("signedAttrs")(signedAttrs.asInstanceOf[js.Any])
+    if (unsignedAttrs != null) __obj.updateDynamic("unsignedAttrs")(unsignedAttrs.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignerInfo]
   }
 }

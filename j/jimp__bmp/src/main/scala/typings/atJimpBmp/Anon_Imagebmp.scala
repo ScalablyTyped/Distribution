@@ -14,7 +14,7 @@ trait Anon_Imagebmp extends js.Object {
 object Anon_Imagebmp {
   @scala.inline
   def apply(MIME_BMP: `image/bmp`, MIME_X_MS_BMP: `image/x-ms-bmp`): Anon_Imagebmp = {
-    val __obj = js.Dynamic.literal(MIME_BMP = MIME_BMP, MIME_X_MS_BMP = MIME_X_MS_BMP)
+    val __obj = js.Dynamic.literal(MIME_BMP = MIME_BMP.asInstanceOf[js.Any], MIME_X_MS_BMP = MIME_X_MS_BMP.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Imagebmp]
   }

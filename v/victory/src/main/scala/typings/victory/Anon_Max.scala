@@ -33,16 +33,16 @@ object Anon_Max {
     q3Labels: CSSProperties = null
   ): Anon_Max = {
     val __obj = js.Dynamic.literal()
-    if (max != null) __obj.updateDynamic("max")(max)
-    if (maxLabels != null) __obj.updateDynamic("maxLabels")(maxLabels)
-    if (median != null) __obj.updateDynamic("median")(median)
-    if (medianLabels != null) __obj.updateDynamic("medianLabels")(medianLabels)
-    if (min != null) __obj.updateDynamic("min")(min)
-    if (minLabels != null) __obj.updateDynamic("minLabels")(minLabels)
-    if (q1 != null) __obj.updateDynamic("q1")(q1)
-    if (q1Labels != null) __obj.updateDynamic("q1Labels")(q1Labels)
-    if (q3 != null) __obj.updateDynamic("q3")(q3)
-    if (q3Labels != null) __obj.updateDynamic("q3Labels")(q3Labels)
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (maxLabels != null) __obj.updateDynamic("maxLabels")(maxLabels.asInstanceOf[js.Any])
+    if (median != null) __obj.updateDynamic("median")(median.asInstanceOf[js.Any])
+    if (medianLabels != null) __obj.updateDynamic("medianLabels")(medianLabels.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (minLabels != null) __obj.updateDynamic("minLabels")(minLabels.asInstanceOf[js.Any])
+    if (q1 != null) __obj.updateDynamic("q1")(q1.asInstanceOf[js.Any])
+    if (q1Labels != null) __obj.updateDynamic("q1Labels")(q1Labels.asInstanceOf[js.Any])
+    if (q3 != null) __obj.updateDynamic("q3")(q3.asInstanceOf[js.Any])
+    if (q3Labels != null) __obj.updateDynamic("q3Labels")(q3Labels.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Max]
   }
 }

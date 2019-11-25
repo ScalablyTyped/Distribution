@@ -23,8 +23,8 @@ object Anon_DynamicRegistrationPrepareSupport {
     prepareSupport: js.UndefOr[Boolean] = js.undefined
   ): Anon_DynamicRegistrationPrepareSupport = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dynamicRegistration)) __obj.updateDynamic("dynamicRegistration")(dynamicRegistration)
-    if (!js.isUndefined(prepareSupport)) __obj.updateDynamic("prepareSupport")(prepareSupport)
+    if (!js.isUndefined(dynamicRegistration)) __obj.updateDynamic("dynamicRegistration")(dynamicRegistration.asInstanceOf[js.Any])
+    if (!js.isUndefined(prepareSupport)) __obj.updateDynamic("prepareSupport")(prepareSupport.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DynamicRegistrationPrepareSupport]
   }
 }

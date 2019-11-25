@@ -12,7 +12,7 @@ trait IVaultCore extends js.Object {
 object IVaultCore {
   @scala.inline
   def apply(Events: IVaultCoreEvents, ServerVault: IVault): IVaultCore = {
-    val __obj = js.Dynamic.literal(Events = Events, ServerVault = ServerVault)
+    val __obj = js.Dynamic.literal(Events = Events.asInstanceOf[js.Any], ServerVault = ServerVault.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IVaultCore]
   }

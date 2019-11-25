@@ -15,8 +15,8 @@ trait Node extends js.Object {
 object Node {
   @scala.inline
   def apply(TEXT_NODE: `3`, nodeType: Double, textContext: String, localName: String = null): Node = {
-    val __obj = js.Dynamic.literal(TEXT_NODE = TEXT_NODE, nodeType = nodeType, textContext = textContext)
-    if (localName != null) __obj.updateDynamic("localName")(localName)
+    val __obj = js.Dynamic.literal(TEXT_NODE = TEXT_NODE.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], textContext = textContext.asInstanceOf[js.Any])
+    if (localName != null) __obj.updateDynamic("localName")(localName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
 }

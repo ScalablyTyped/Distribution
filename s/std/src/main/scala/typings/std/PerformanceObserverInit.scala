@@ -18,9 +18,9 @@ object PerformanceObserverInit {
     `type`: java.lang.String = null
   ): PerformanceObserverInit = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(buffered)) __obj.updateDynamic("buffered")(buffered)
-    if (entryTypes != null) __obj.updateDynamic("entryTypes")(entryTypes)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(buffered)) __obj.updateDynamic("buffered")(buffered.asInstanceOf[js.Any])
+    if (entryTypes != null) __obj.updateDynamic("entryTypes")(entryTypes.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PerformanceObserverInit]
   }
 }

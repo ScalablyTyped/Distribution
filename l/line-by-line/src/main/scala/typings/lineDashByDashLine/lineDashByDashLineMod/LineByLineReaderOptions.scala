@@ -19,7 +19,7 @@ object LineByLineReaderOptions {
   def apply(encoding: ascii | base64 | utf8 = null, skipEmptyLines: js.UndefOr[Boolean] = js.undefined): LineByLineReaderOptions = {
     val __obj = js.Dynamic.literal()
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipEmptyLines)) __obj.updateDynamic("skipEmptyLines")(skipEmptyLines)
+    if (!js.isUndefined(skipEmptyLines)) __obj.updateDynamic("skipEmptyLines")(skipEmptyLines.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineByLineReaderOptions]
   }
 }

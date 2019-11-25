@@ -35,17 +35,17 @@ object AllDocsWithinRangeOptions {
     skip: Int | Double = null,
     update_seq: js.UndefOr[Boolean] = js.undefined
   ): AllDocsWithinRangeOptions = {
-    val __obj = js.Dynamic.literal(endkey = endkey, startkey = startkey)
-    if (!js.isUndefined(attachments)) __obj.updateDynamic("attachments")(attachments)
-    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary)
-    if (!js.isUndefined(conflicts)) __obj.updateDynamic("conflicts")(conflicts)
-    if (!js.isUndefined(descending)) __obj.updateDynamic("descending")(descending)
+    val __obj = js.Dynamic.literal(endkey = endkey.asInstanceOf[js.Any], startkey = startkey.asInstanceOf[js.Any])
+    if (!js.isUndefined(attachments)) __obj.updateDynamic("attachments")(attachments.asInstanceOf[js.Any])
+    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary.asInstanceOf[js.Any])
+    if (!js.isUndefined(conflicts)) __obj.updateDynamic("conflicts")(conflicts.asInstanceOf[js.Any])
+    if (!js.isUndefined(descending)) __obj.updateDynamic("descending")(descending.asInstanceOf[js.Any])
     if (fetch != null) __obj.updateDynamic("fetch")(js.Any.fromFunction2(fetch))
-    if (!js.isUndefined(include_docs)) __obj.updateDynamic("include_docs")(include_docs)
-    if (!js.isUndefined(inclusive_end)) __obj.updateDynamic("inclusive_end")(inclusive_end)
+    if (!js.isUndefined(include_docs)) __obj.updateDynamic("include_docs")(include_docs.asInstanceOf[js.Any])
+    if (!js.isUndefined(inclusive_end)) __obj.updateDynamic("inclusive_end")(inclusive_end.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
-    if (!js.isUndefined(update_seq)) __obj.updateDynamic("update_seq")(update_seq)
+    if (!js.isUndefined(update_seq)) __obj.updateDynamic("update_seq")(update_seq.asInstanceOf[js.Any])
     __obj.asInstanceOf[AllDocsWithinRangeOptions]
   }
 }

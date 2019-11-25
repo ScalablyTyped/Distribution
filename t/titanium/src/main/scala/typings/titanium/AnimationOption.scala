@@ -14,6 +14,15 @@ trait AnimationOption extends js.Object {
   var animated: js.UndefOr[Boolean] = js.undefined
 }
 
+object AnimationOption {
+  @scala.inline
+  def apply(animated: js.UndefOr[Boolean] = js.undefined): AnimationOption = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AnimationOption]
+  }
+}
+
 /**
   * Optional parameter for [setShowMasterInPortrait](Titanium.UI.iOS.SplitWindow.setShowMasterInPortrait) and
   * [setMasterIsOverlayed](Titanium.UI.iOS.SplitWindow.setMasterIsOverlayed) methods.
@@ -25,20 +34,11 @@ trait animationOption extends js.Object {
   var animated: js.UndefOr[Boolean] = js.undefined
 }
 
-object AnimationOption {
-  @scala.inline
-  def apply(animated: js.UndefOr[Boolean] = js.undefined): AnimationOption = {
-    val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
-    __obj.asInstanceOf[AnimationOption]
-  }
-}
-
 object animationOption {
   @scala.inline
   def apply(animated: js.UndefOr[Boolean] = js.undefined): animationOption = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
+    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
     __obj.asInstanceOf[animationOption]
   }
 }

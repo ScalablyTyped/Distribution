@@ -14,7 +14,7 @@ trait Anon_LastModel extends js.Object {
 object Anon_LastModel {
   @scala.inline
   def apply(lastModel: ILogOutputModel, value: ILogOutput): Anon_LastModel = {
-    val __obj = js.Dynamic.literal(lastModel = lastModel, value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(lastModel = lastModel.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_LastModel]
   }

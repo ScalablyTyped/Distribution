@@ -300,7 +300,6 @@
 | 925 | [helmet](./h/helmet) | help secure Express/Connect apps with various HTTP
 | 917 | [http-proxy-middleware](./h/http-proxy-middleware) | The one-liner node.js proxy middleware for connect
 | 917 | [should](./s/should) | test framework agnostic BDD-style assertions
-| 913 | [react-select](./r/react-select) | A Select control built with and for ReactJS
 | 907 | [mqtt](./m/mqtt) | A library for the MQTT protocol
 | 893 | [koa-bodyparser](./k/koa-bodyparser) | a body parser for koa
 | 893 | [material-ui__core](./m/material-ui__core) | React components that implement Google's Material 
@@ -310,7 +309,6 @@
 | 883 | [gulp-plumber](./g/gulp-plumber) | Prevent pipe breaking caused by errors from gulp p
 | 882 | [redux-logger](./r/redux-logger) | Logger for Redux
 | 880 | [lodash_dot_clonedeep](./l/lodash_dot_clonedeep) | The lodash method _.cloneDeep exported as a module
-| 879 | [typescript-eslint__parser](./t/typescript-eslint__parser) | An ESLint custom parser which leverages TypeScript
 | 878 | [graphql-tag](./g/graphql-tag) | A JavaScript template literal tag that parses Grap
 | 874 | [hapi](./h/hapi) | HTTP Server framework
 | 872 | [filesize](./f/filesize) | JavaScript library to generate a human readable St
@@ -634,7 +632,6 @@
 | 377 | [passport-oauth2](./p/passport-oauth2) | OAuth 2.0 authentication strategy for Passport.
 | 377 | [showdown](./s/showdown) | A Markdown to HTML converter written in Javascript
 | 376 | [hogan_dot_js](./h/hogan_dot_js) | A mustache compiler.
-| 375 | [immutability-helper](./i/immutability-helper) | mutate a copy of data without changing the origina
 | 375 | [pretty-error](./p/pretty-error) | See nodejs errors with less clutter
 | 374 | [component-emitter](./c/component-emitter) | Event emitter
 | 374 | [lodash_dot_foreach](./l/lodash_dot_foreach) | The lodash method _.forEach exported as a module.
@@ -1656,6 +1653,7 @@
 | 106 | [simple-peer](./s/simple-peer) | Simple one-to-one WebRTC video/voice and data chan
 | 106 | [uri-js](./u/uri-js) | An RFC 3986/3987 compliant, scheme extendable URI/
 | 105 | [connect-timeout](./c/connect-timeout) | Request timeout middleware for Connect/Express
+| 105 | [google-cloud__pubsub](./g/google-cloud__pubsub) | Cloud Pub/Sub Client Library for Node.js
 | 105 | [jsonic](./j/jsonic) | A JSON parser that isn't strict.
 | 105 | [page](./p/page) | Tiny client-side router
 | 105 | [through2-map](./t/through2-map) | A through2 to create an Array.prototype.map analog
@@ -1931,6 +1929,7 @@
 | 80 | [minilog](./m/minilog) | Lightweight client & server-side logging with Stre
 | 80 | [path-parse](./p/path-parse) | Node.js path.parse() ponyfill
 | 80 | [reactcss](./r/reactcss) | Bringing Classes to Inline Styles
+| 80 | [storybook__addon-knobs](./s/storybook__addon-knobs) | Storybook Addon Prop Editor Component
 | 80 | [winreg](./w/winreg) | provides access to the windows registry through th
 | 79 | [bunyan-prettystream](./b/bunyan-prettystream) | A stream implementation of the bunyan cli tool's p
 | 79 | [d3-time](./d/d3-time) | A calculator for humanity’s peculiar conventions o
@@ -2783,6 +2782,7 @@
 | 40 | [ajv-errors](./a/ajv-errors) | Custom error messages in JSON-Schema for Ajv valid
 | 40 | [emoji-js](./e/emoji-js) | A JS Emoji conversion library
 | 40 | [firebase-token-generator](./f/firebase-token-generator) | A utility to generate signed Firebase Authenticati
+| 40 | [google-gax](./g/google-gax) | Google API Extensions
 | 40 | [http-assert](./h/http-assert) | assert with status codes
 | 40 | [isomorphic-form-data](./i/isomorphic-form-data) | A library to create readable "multipart/form-data"
 | 40 | [jenkins](./j/jenkins) | Jenkins client
@@ -3630,7 +3630,6 @@
 | 21 | [synaptic](./s/synaptic) | architecture-free neural network library
 | 21 | [topo](./t/topo) | Topological sorting with grouping support
 | 21 | [tus-js-client](./t/tus-js-client) | A pure JavaScript client for the tus resumable upl
-| 21 | [typescript-eslint__typesc](./t/typescript-eslint__typescript-estree) | A parser that converts TypeScript source code into
 | 21 | [uifabric__icons](./u/uifabric__icons) | Office UI Fabric icon set.
 | 21 | [universal-router](./u/universal-router) | Isomorphic router for JavaScript web applications
 | 21 | [webpack-validator](./w/webpack-validator) | Validate your webpack config with joi
@@ -3754,7 +3753,6 @@
 | 19 | [tedious-connection-pool](./t/tedious-connection-pool) | Connection Pool for tedious.
 | 19 | [textract](./t/textract) | Extracting text from files of various type includi
 | 19 | [tough-cookie-file-store](./t/tough-cookie-file-store) | Another file store for tough-cookie module
-| 19 | [typescript-eslint__experi](./t/typescript-eslint__experimental-utils) | (Experimental) Utilities for working with TypeScri
 | 19 | [vscode](./v/vscode) | The vscode NPM module provides VS Code extension a
 | 19 | [web3-eth-personal](./w/web3-eth-personal) | Web3 module to interact with the Ethereum blockcha
 | 19 | [xmlserializer](./x/xmlserializer) | Serializes a document to XML/XHTML
@@ -3783,6 +3781,7 @@
 | 18 | [grapheme-splitter](./g/grapheme-splitter) | A JavaScript library that breaks strings into thei
 | 18 | [graphql-extensions](./g/graphql-extensions) | Add extensions to GraphQL servers
 | 18 | [graphql-playground-html](./g/graphql-playground-html) | GraphQL IDE for better development workflows (Grap
+| 18 | [grpc__grpc-js](./g/grpc__grpc-js) | gRPC Library for Node - pure JS implementation
 | 18 | [gulp-modernizr](./g/gulp-modernizr) | Gulp wrapper for custom Modernizr builds
 | 18 | [gulp-typedoc](./g/gulp-typedoc) | Gulp plugin for the TypeDoc typescript documentati
 | 18 | [holderjs](./h/holderjs) | Holder uses SVG to render image placeholders entir
@@ -6193,7 +6192,6 @@
 | 2 | [react-fns](./r/react-fns) | Modern React components, hoc's, and utilities func
 | 2 | [react-from-dom](./r/react-from-dom) | Convert HTML/XML source code or DOM nodes to React
 | 2 | [react-howler](./r/react-howler) | A React.js wrapper for howler.js (audio player)
-| 2 | [react-mosaic-component](./r/react-mosaic-component) | A React Tiling Window Manager
 | 2 | [react-native-auth0](./r/react-native-auth0) | React Native toolkit for Auth0 API
 | 2 | [react-native-awesome-card](./r/react-native-awesome-card-io) | A complete and cross-platform React Native compone
 | 2 | [react-native-draggable-fl](./r/react-native-draggable-flatlist) | A drag-and-drop-enabled FlatList component for Rea
@@ -7194,7 +7192,6 @@
 | 0 | [jquery-loading-overlay](./j/jquery-loading-overlay) | jQuery Loading Overlay Plugin
 | 0 | [jquery-slugify](./j/jquery-slugify) | Just another another (another) url slug plugin for
 | 0 | [jquery-tags-input](./j/jquery-tags-input) | Do you use tags to organize content on your site? 
-| 0 | [jquery_dot_ajaxfile](./j/jquery_dot_ajaxfile) | Allow to upload file with old browser
 | 0 | [jquery_dot_are-you-sure](./j/jquery_dot_are-you-sure) | A light-weight jQuery "dirty forms" Plugin - it mo
 | 0 | [jquery_dot_cycle2](./j/jquery_dot_cycle2) | A wrapper for jQuery Cycle 2
 | 0 | [jquery_dot_finger](./j/jquery_dot_finger) | jQuery Finger unifies click and touch events by re
@@ -7345,7 +7342,6 @@
 | 0 | [oblo-util](./o/oblo-util) | Utilities module suitable for both Node.js and cli
 | 0 | [octokit__request-error](./o/octokit__request-error) | Error class for Octokit request errors
 | 0 | [ofe](./o/ofe) | Overwrite OnFatalError to produce heapdump
-| 0 | [office-js](./o/office-js) | Utility for office cloud services.
 | 0 | [okta__okta-vue](./o/okta__okta-vue) | Vue support for Okta
 | 0 | [on-wake-up](./o/on-wake-up) | Small module that calls a function when your compu
 | 0 | [onfleet__node-onfleet](./o/onfleet__node-onfleet) | Official client library for accessing the Onfleet 
@@ -7614,7 +7610,6 @@
 | 0 | [waitme](./w/waitme) | waitMe ======
 | 0 | [weapp-api](./w/weapp-api) | wechat api
 | 0 | [web-bluetooth](./w/web-bluetooth) | Library for interacting with Bluetooth 4.0 devices
-| 0 | [webcl](./w/webcl) | OpenCL bindings for Node.js
 | 0 | [webicon](./w/webicon) | Icon library
 | 0 | [webpack-env](./w/webpack-env) | read variables from a .env.js file and make them a
 | 0 | [webprogbase-console-view](./w/webprogbase-console-view) | Console browser and server app module with simplif

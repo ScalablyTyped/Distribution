@@ -24,12 +24,12 @@ object Alert {
     `type`: String = null
   ): Alert = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(isDismissible)) __obj.updateDynamic("isDismissible")(isDismissible)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (severity != null) __obj.updateDynamic("severity")(severity)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDismissible)) __obj.updateDynamic("isDismissible")(isDismissible.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (severity != null) __obj.updateDynamic("severity")(severity.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Alert]
   }
 }

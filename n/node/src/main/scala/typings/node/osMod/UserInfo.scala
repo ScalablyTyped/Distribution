@@ -18,7 +18,7 @@ trait UserInfo[T] extends js.Object {
 object UserInfo {
   @scala.inline
   def apply[T](gid: Double, homedir: T, shell: T, uid: Double, username: T): UserInfo[T] = {
-    val __obj = js.Dynamic.literal(gid = gid, homedir = homedir.asInstanceOf[js.Any], shell = shell.asInstanceOf[js.Any], uid = uid, username = username.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(gid = gid.asInstanceOf[js.Any], homedir = homedir.asInstanceOf[js.Any], shell = shell.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UserInfo[T]]
   }

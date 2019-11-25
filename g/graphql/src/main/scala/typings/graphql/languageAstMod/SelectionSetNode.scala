@@ -14,8 +14,8 @@ trait SelectionSetNode extends ASTNode {
 object SelectionSetNode {
   @scala.inline
   def apply(kind: SelectionSet, selections: js.Array[SelectionNode], loc: Location = null): SelectionSetNode = {
-    val __obj = js.Dynamic.literal(kind = kind, selections = selections)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectionSetNode]
   }
 }

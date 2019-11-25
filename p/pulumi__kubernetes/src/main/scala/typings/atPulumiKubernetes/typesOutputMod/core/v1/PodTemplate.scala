@@ -43,7 +43,7 @@ object PodTemplate {
     metadata: ObjectMeta,
     template: PodTemplateSpec
   ): PodTemplate = {
-    val __obj = js.Dynamic.literal(apiVersion = apiVersion, kind = kind, metadata = metadata, template = template)
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PodTemplate]
   }

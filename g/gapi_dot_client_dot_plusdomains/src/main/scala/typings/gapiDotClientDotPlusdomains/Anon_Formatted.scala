@@ -13,7 +13,7 @@ object Anon_Formatted {
   @scala.inline
   def apply(formatted: String = null): Anon_Formatted = {
     val __obj = js.Dynamic.literal()
-    if (formatted != null) __obj.updateDynamic("formatted")(formatted)
+    if (formatted != null) __obj.updateDynamic("formatted")(formatted.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Formatted]
   }
 }

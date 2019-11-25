@@ -22,7 +22,7 @@ object Reason {
   @scala.inline
   def apply(count: String = null, status: Int | Double = null): Reason = {
     val __obj = js.Dynamic.literal()
-    if (count != null) __obj.updateDynamic("count")(count)
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[Reason]
   }

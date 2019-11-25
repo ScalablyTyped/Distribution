@@ -39,15 +39,15 @@ object TabsProps {
   ): TabsProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultFocus)) __obj.updateDynamic("defaultFocus")(defaultFocus)
+    if (!js.isUndefined(defaultFocus)) __obj.updateDynamic("defaultFocus")(defaultFocus.asInstanceOf[js.Any])
     if (defaultIndex != null) __obj.updateDynamic("defaultIndex")(defaultIndex.asInstanceOf[js.Any])
-    if (disabledTabClassName != null) __obj.updateDynamic("disabledTabClassName")(disabledTabClassName)
+    if (disabledTabClassName != null) __obj.updateDynamic("disabledTabClassName")(disabledTabClassName.asInstanceOf[js.Any])
     if (domRef != null) __obj.updateDynamic("domRef")(js.Any.fromFunction1(domRef))
-    if (!js.isUndefined(forceRenderTabPanel)) __obj.updateDynamic("forceRenderTabPanel")(forceRenderTabPanel)
+    if (!js.isUndefined(forceRenderTabPanel)) __obj.updateDynamic("forceRenderTabPanel")(forceRenderTabPanel.asInstanceOf[js.Any])
     if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction3(onSelect))
     if (selectedIndex != null) __obj.updateDynamic("selectedIndex")(selectedIndex.asInstanceOf[js.Any])
-    if (selectedTabClassName != null) __obj.updateDynamic("selectedTabClassName")(selectedTabClassName)
-    if (selectedTabPanelClassName != null) __obj.updateDynamic("selectedTabPanelClassName")(selectedTabPanelClassName)
+    if (selectedTabClassName != null) __obj.updateDynamic("selectedTabClassName")(selectedTabClassName.asInstanceOf[js.Any])
+    if (selectedTabPanelClassName != null) __obj.updateDynamic("selectedTabPanelClassName")(selectedTabPanelClassName.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabsProps]
   }
 }

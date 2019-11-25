@@ -13,8 +13,8 @@ object IWallabyEnvironmentParameters {
   @scala.inline
   def apply(env: String = null, runner: String = null): IWallabyEnvironmentParameters = {
     val __obj = js.Dynamic.literal()
-    if (env != null) __obj.updateDynamic("env")(env)
-    if (runner != null) __obj.updateDynamic("runner")(runner)
+    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
+    if (runner != null) __obj.updateDynamic("runner")(runner.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWallabyEnvironmentParameters]
   }
 }

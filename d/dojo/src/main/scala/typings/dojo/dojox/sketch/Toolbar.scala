@@ -1,7 +1,6 @@
 package typings.dojo.dojox.sketch
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValueOldValue
 import typings.dojo.dojoStrings.figure
 import typings.dojo.dojoStrings.plugins
 import typings.std.HTMLElement
@@ -54,8 +53,24 @@ class Toolbar ()
   @JSName("set")
   def set_plugins(property: plugins, value: js.Object): Unit = js.native
   @JSName("watch")
-  def watch_figure(property: figure, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_figure(
+    property: figure,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_plugins(property: plugins, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_plugins(
+    property: plugins,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

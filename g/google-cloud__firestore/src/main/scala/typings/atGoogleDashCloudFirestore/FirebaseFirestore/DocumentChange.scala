@@ -41,8 +41,8 @@ object DocumentChange {
     oldIndex: Double,
     `type`: DocumentChangeType
   ): DocumentChange = {
-    val __obj = js.Dynamic.literal(doc = doc, isEqual = js.Any.fromFunction1(isEqual), newIndex = newIndex, oldIndex = oldIndex)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(doc = doc.asInstanceOf[js.Any], isEqual = js.Any.fromFunction1(isEqual), newIndex = newIndex.asInstanceOf[js.Any], oldIndex = oldIndex.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentChange]
   }
 }

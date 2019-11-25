@@ -22,10 +22,10 @@ object SnapshotMatchOptions {
     inlineSnapshot: String = null,
     key: String = null
   ): SnapshotMatchOptions = {
-    val __obj = js.Dynamic.literal(received = received, testName = testName)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (inlineSnapshot != null) __obj.updateDynamic("inlineSnapshot")(inlineSnapshot)
-    if (key != null) __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(received = received.asInstanceOf[js.Any], testName = testName.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (inlineSnapshot != null) __obj.updateDynamic("inlineSnapshot")(inlineSnapshot.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnapshotMatchOptions]
   }
 }

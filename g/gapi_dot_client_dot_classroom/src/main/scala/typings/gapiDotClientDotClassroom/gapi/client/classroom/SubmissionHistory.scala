@@ -15,8 +15,8 @@ object SubmissionHistory {
   @scala.inline
   def apply(gradeHistory: GradeHistory = null, stateHistory: StateHistory = null): SubmissionHistory = {
     val __obj = js.Dynamic.literal()
-    if (gradeHistory != null) __obj.updateDynamic("gradeHistory")(gradeHistory)
-    if (stateHistory != null) __obj.updateDynamic("stateHistory")(stateHistory)
+    if (gradeHistory != null) __obj.updateDynamic("gradeHistory")(gradeHistory.asInstanceOf[js.Any])
+    if (stateHistory != null) __obj.updateDynamic("stateHistory")(stateHistory.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubmissionHistory]
   }
 }

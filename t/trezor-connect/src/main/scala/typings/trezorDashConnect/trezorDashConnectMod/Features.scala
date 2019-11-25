@@ -67,11 +67,11 @@ object Features {
     label: String = null,
     language: String = null
   ): Features = {
-    val __obj = js.Dynamic.literal(bootloader_hash = bootloader_hash, device_id = device_id, flags = flags, fw_major = fw_major, fw_minor = fw_minor, fw_patch = fw_patch, fw_vendor = fw_vendor, fw_vendor_keys = fw_vendor_keys, imported = imported, initialized = initialized, major_version = major_version, minor_version = minor_version, model = model, needs_backup = needs_backup, no_backup = no_backup, passphrase_cached = passphrase_cached, passphrase_protection = passphrase_protection, patch_version = patch_version, pin_cached = pin_cached, pin_protection = pin_protection, revision = revision, unfinished_backup = unfinished_backup, vendor = vendor)
-    if (!js.isUndefined(bootloader_mode)) __obj.updateDynamic("bootloader_mode")(bootloader_mode)
-    if (!js.isUndefined(firmware_present)) __obj.updateDynamic("firmware_present")(firmware_present)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (language != null) __obj.updateDynamic("language")(language)
+    val __obj = js.Dynamic.literal(bootloader_hash = bootloader_hash.asInstanceOf[js.Any], device_id = device_id.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], fw_major = fw_major.asInstanceOf[js.Any], fw_minor = fw_minor.asInstanceOf[js.Any], fw_patch = fw_patch.asInstanceOf[js.Any], fw_vendor = fw_vendor.asInstanceOf[js.Any], fw_vendor_keys = fw_vendor_keys.asInstanceOf[js.Any], imported = imported.asInstanceOf[js.Any], initialized = initialized.asInstanceOf[js.Any], major_version = major_version.asInstanceOf[js.Any], minor_version = minor_version.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any], needs_backup = needs_backup.asInstanceOf[js.Any], no_backup = no_backup.asInstanceOf[js.Any], passphrase_cached = passphrase_cached.asInstanceOf[js.Any], passphrase_protection = passphrase_protection.asInstanceOf[js.Any], patch_version = patch_version.asInstanceOf[js.Any], pin_cached = pin_cached.asInstanceOf[js.Any], pin_protection = pin_protection.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any], unfinished_backup = unfinished_backup.asInstanceOf[js.Any], vendor = vendor.asInstanceOf[js.Any])
+    if (!js.isUndefined(bootloader_mode)) __obj.updateDynamic("bootloader_mode")(bootloader_mode.asInstanceOf[js.Any])
+    if (!js.isUndefined(firmware_present)) __obj.updateDynamic("firmware_present")(firmware_present.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     __obj.asInstanceOf[Features]
   }
 }

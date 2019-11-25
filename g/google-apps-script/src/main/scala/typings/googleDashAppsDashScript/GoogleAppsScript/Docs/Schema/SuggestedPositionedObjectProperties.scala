@@ -16,8 +16,8 @@ object SuggestedPositionedObjectProperties {
     positionedObjectPropertiesSuggestionState: PositionedObjectPropertiesSuggestionState = null
   ): SuggestedPositionedObjectProperties = {
     val __obj = js.Dynamic.literal()
-    if (positionedObjectProperties != null) __obj.updateDynamic("positionedObjectProperties")(positionedObjectProperties)
-    if (positionedObjectPropertiesSuggestionState != null) __obj.updateDynamic("positionedObjectPropertiesSuggestionState")(positionedObjectPropertiesSuggestionState)
+    if (positionedObjectProperties != null) __obj.updateDynamic("positionedObjectProperties")(positionedObjectProperties.asInstanceOf[js.Any])
+    if (positionedObjectPropertiesSuggestionState != null) __obj.updateDynamic("positionedObjectPropertiesSuggestionState")(positionedObjectPropertiesSuggestionState.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuggestedPositionedObjectProperties]
   }
 }

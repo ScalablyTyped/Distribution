@@ -20,9 +20,9 @@ object UserOptions {
     persist: js.UndefOr[Boolean] = js.undefined
   ): UserOptions = {
     val __obj = js.Dynamic.literal()
-    if (cookie != null) __obj.updateDynamic("cookie")(cookie)
-    if (localStorage != null) __obj.updateDynamic("localStorage")(localStorage)
-    if (!js.isUndefined(persist)) __obj.updateDynamic("persist")(persist)
+    if (cookie != null) __obj.updateDynamic("cookie")(cookie.asInstanceOf[js.Any])
+    if (localStorage != null) __obj.updateDynamic("localStorage")(localStorage.asInstanceOf[js.Any])
+    if (!js.isUndefined(persist)) __obj.updateDynamic("persist")(persist.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserOptions]
   }
 }

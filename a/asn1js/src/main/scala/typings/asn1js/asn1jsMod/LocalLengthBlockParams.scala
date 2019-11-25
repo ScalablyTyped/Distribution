@@ -13,7 +13,7 @@ object LocalLengthBlockParams {
   @scala.inline
   def apply(lenBlock: Anon_IsIndefiniteForm = null): LocalLengthBlockParams = {
     val __obj = js.Dynamic.literal()
-    if (lenBlock != null) __obj.updateDynamic("lenBlock")(lenBlock)
+    if (lenBlock != null) __obj.updateDynamic("lenBlock")(lenBlock.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalLengthBlockParams]
   }
 }

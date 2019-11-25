@@ -13,7 +13,7 @@ trait PinInfo extends js.Object {
 object PinInfo {
   @scala.inline
   def apply(gpio: Double, peripherals: js.Array[String], pins: js.Array[String]): PinInfo = {
-    val __obj = js.Dynamic.literal(gpio = gpio, peripherals = peripherals, pins = pins)
+    val __obj = js.Dynamic.literal(gpio = gpio.asInstanceOf[js.Any], peripherals = peripherals.asInstanceOf[js.Any], pins = pins.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PinInfo]
   }

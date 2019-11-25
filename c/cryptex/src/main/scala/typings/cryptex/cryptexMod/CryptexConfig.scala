@@ -22,10 +22,10 @@ object CryptexConfig {
     keySourceOpts: Anon_DataKey = null,
     secretEncoding: String = null
   ): CryptexConfig = {
-    val __obj = js.Dynamic.literal(keySource = keySource, secrets = secrets)
-    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm)
-    if (keySourceOpts != null) __obj.updateDynamic("keySourceOpts")(keySourceOpts)
-    if (secretEncoding != null) __obj.updateDynamic("secretEncoding")(secretEncoding)
+    val __obj = js.Dynamic.literal(keySource = keySource.asInstanceOf[js.Any], secrets = secrets.asInstanceOf[js.Any])
+    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
+    if (keySourceOpts != null) __obj.updateDynamic("keySourceOpts")(keySourceOpts.asInstanceOf[js.Any])
+    if (secretEncoding != null) __obj.updateDynamic("secretEncoding")(secretEncoding.asInstanceOf[js.Any])
     __obj.asInstanceOf[CryptexConfig]
   }
 }

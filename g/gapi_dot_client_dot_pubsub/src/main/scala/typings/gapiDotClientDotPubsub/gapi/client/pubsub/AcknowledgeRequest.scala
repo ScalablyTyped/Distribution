@@ -16,7 +16,7 @@ object AcknowledgeRequest {
   @scala.inline
   def apply(ackIds: js.Array[String] = null): AcknowledgeRequest = {
     val __obj = js.Dynamic.literal()
-    if (ackIds != null) __obj.updateDynamic("ackIds")(ackIds)
+    if (ackIds != null) __obj.updateDynamic("ackIds")(ackIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[AcknowledgeRequest]
   }
 }

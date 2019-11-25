@@ -45,7 +45,7 @@ object IMimeModel_ {
     setData: ISetDataOptions => Unit,
     trusted: Boolean
   ): IMimeModel_ = {
-    val __obj = js.Dynamic.literal(data = data, metadata = metadata, setData = js.Any.fromFunction1(setData), trusted = trusted)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], setData = js.Any.fromFunction1(setData), trusted = trusted.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IMimeModel_]
   }

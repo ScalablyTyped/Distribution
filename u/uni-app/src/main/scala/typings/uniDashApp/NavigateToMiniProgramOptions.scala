@@ -47,12 +47,12 @@ object NavigateToMiniProgramOptions {
     success: () => Unit = null
   ): NavigateToMiniProgramOptions = {
     val __obj = js.Dynamic.literal()
-    if (appId != null) __obj.updateDynamic("appId")(appId)
+    if (appId != null) __obj.updateDynamic("appId")(appId.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
-    if (envVersion != null) __obj.updateDynamic("envVersion")(envVersion)
-    if (extraData != null) __obj.updateDynamic("extraData")(extraData)
+    if (envVersion != null) __obj.updateDynamic("envVersion")(envVersion.asInstanceOf[js.Any])
+    if (extraData != null) __obj.updateDynamic("extraData")(extraData.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))
     __obj.asInstanceOf[NavigateToMiniProgramOptions]
   }

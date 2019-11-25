@@ -49,7 +49,7 @@ object CameraProperties {
     val __obj = js.Dynamic.literal()
     if (fov != null) __obj.updateDynamic("fov")(fov.asInstanceOf[js.Any])
     if (heading != null) __obj.updateDynamic("heading")(heading.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (tilt != null) __obj.updateDynamic("tilt")(tilt.asInstanceOf[js.Any])
     __obj.asInstanceOf[CameraProperties]
   }

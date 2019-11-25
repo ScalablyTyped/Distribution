@@ -16,8 +16,8 @@ object IListKnowledgeBasesResponse {
   @scala.inline
   def apply(knowledgeBases: js.Array[IKnowledgeBase] = null, nextPageToken: String = null): IListKnowledgeBasesResponse = {
     val __obj = js.Dynamic.literal()
-    if (knowledgeBases != null) __obj.updateDynamic("knowledgeBases")(knowledgeBases)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (knowledgeBases != null) __obj.updateDynamic("knowledgeBases")(knowledgeBases.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[IListKnowledgeBasesResponse]
   }
 }

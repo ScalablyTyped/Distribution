@@ -16,7 +16,7 @@ trait CommitResult extends js.Object {
 object CommitResult {
   @scala.inline
   def apply(hash: CommitHash, status: SYNCED | FORKED | CANCELED = null): CommitResult = {
-    val __obj = js.Dynamic.literal(hash = hash)
+    val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommitResult]
   }

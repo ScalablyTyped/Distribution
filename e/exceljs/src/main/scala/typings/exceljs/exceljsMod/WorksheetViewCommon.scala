@@ -48,7 +48,7 @@ object WorksheetViewCommon {
     zoomScale: Double,
     zoomScaleNormal: Double
   ): WorksheetViewCommon = {
-    val __obj = js.Dynamic.literal(activeCell = activeCell, rightToLeft = rightToLeft, showGridLines = showGridLines, showRowColHeaders = showRowColHeaders, showRuler = showRuler, zoomScale = zoomScale, zoomScaleNormal = zoomScaleNormal)
+    val __obj = js.Dynamic.literal(activeCell = activeCell.asInstanceOf[js.Any], rightToLeft = rightToLeft.asInstanceOf[js.Any], showGridLines = showGridLines.asInstanceOf[js.Any], showRowColHeaders = showRowColHeaders.asInstanceOf[js.Any], showRuler = showRuler.asInstanceOf[js.Any], zoomScale = zoomScale.asInstanceOf[js.Any], zoomScaleNormal = zoomScaleNormal.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WorksheetViewCommon]
   }

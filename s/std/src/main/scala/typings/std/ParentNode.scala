@@ -142,7 +142,6 @@ import typings.std.stdStrings.slot
 import typings.std.stdStrings.small
 import typings.std.stdStrings.source
 import typings.std.stdStrings.span
-import typings.std.stdStrings.stop
 import typings.std.stdStrings.strong
 import typings.std.stdStrings.style
 import typings.std.stdStrings.sub
@@ -491,7 +490,7 @@ trait ParentNode extends js.Object {
   @JSName("querySelectorAll")
   def querySelectorAll_span(selectors: span): NodeListOf[HTMLSpanElement] = js.native
   @JSName("querySelectorAll")
-  def querySelectorAll_stop(selectors: stop): NodeListOf[SVGStopElement] = js.native
+  def querySelectorAll_stop(selectors: typings.std.stdStrings.stop): NodeListOf[SVGStopElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_strong(selectors: strong): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
@@ -838,7 +837,7 @@ trait ParentNode extends js.Object {
   @JSName("querySelector")
   def querySelector_span(selectors: span): HTMLSpanElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_stop(selectors: stop): SVGStopElement | Null = js.native
+  def querySelector_stop(selectors: typings.std.stdStrings.stop): SVGStopElement | Null = js.native
   @JSName("querySelector")
   def querySelector_strong(selectors: strong): HTMLElement | Null = js.native
   @JSName("querySelector")

@@ -26,11 +26,11 @@ object IParserResult {
     syntax: String = null,
     weakImports: js.Array[String] = null
   ): IParserResult = {
-    val __obj = js.Dynamic.literal(root = root)
-    if (imports != null) __obj.updateDynamic("imports")(imports)
-    if (`package` != null) __obj.updateDynamic("package")(`package`)
-    if (syntax != null) __obj.updateDynamic("syntax")(syntax)
-    if (weakImports != null) __obj.updateDynamic("weakImports")(weakImports)
+    val __obj = js.Dynamic.literal(root = root.asInstanceOf[js.Any])
+    if (imports != null) __obj.updateDynamic("imports")(imports.asInstanceOf[js.Any])
+    if (`package` != null) __obj.updateDynamic("package")(`package`.asInstanceOf[js.Any])
+    if (syntax != null) __obj.updateDynamic("syntax")(syntax.asInstanceOf[js.Any])
+    if (weakImports != null) __obj.updateDynamic("weakImports")(weakImports.asInstanceOf[js.Any])
     __obj.asInstanceOf[IParserResult]
   }
 }

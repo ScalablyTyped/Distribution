@@ -12,7 +12,7 @@ object Anon_UseDeprecatedLogic {
   @scala.inline
   def apply(useDeprecatedLogic: js.UndefOr[Boolean] = js.undefined): Anon_UseDeprecatedLogic = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(useDeprecatedLogic)) __obj.updateDynamic("useDeprecatedLogic")(useDeprecatedLogic)
+    if (!js.isUndefined(useDeprecatedLogic)) __obj.updateDynamic("useDeprecatedLogic")(useDeprecatedLogic.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_UseDeprecatedLogic]
   }
 }

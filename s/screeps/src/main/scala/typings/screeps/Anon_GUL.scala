@@ -12,7 +12,7 @@ trait Anon_GUL extends js.Object {
 object Anon_GUL {
   @scala.inline
   def apply(UL: G): Anon_GUL = {
-    val __obj = js.Dynamic.literal(UL = UL)
+    val __obj = js.Dynamic.literal(UL = UL.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_GUL]
   }

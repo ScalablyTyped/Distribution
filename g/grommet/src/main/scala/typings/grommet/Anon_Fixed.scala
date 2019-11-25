@@ -22,11 +22,11 @@ object Anon_Fixed {
     regexp: js.Object = null
   ): Anon_Fixed = {
     val __obj = js.Dynamic.literal()
-    if (fixed != null) __obj.updateDynamic("fixed")(fixed)
+    if (fixed != null) __obj.updateDynamic("fixed")(fixed.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
-    if (regexp != null) __obj.updateDynamic("regexp")(regexp)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
+    if (regexp != null) __obj.updateDynamic("regexp")(regexp.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Fixed]
   }
 }

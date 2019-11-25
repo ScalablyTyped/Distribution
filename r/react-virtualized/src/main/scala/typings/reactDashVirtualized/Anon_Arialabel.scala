@@ -28,8 +28,8 @@ object Anon_Arialabel {
     cellSizeAndPositionGetter: Validator[CollectionCellSizeAndPositionGetter],
     sectionSize: Requireable[Double]
   ): Anon_Arialabel = {
-    val __obj = js.Dynamic.literal(cellCount = cellCount, cellGroupRenderer = cellGroupRenderer, cellRenderer = cellRenderer, cellSizeAndPositionGetter = cellSizeAndPositionGetter, sectionSize = sectionSize)
-    __obj.updateDynamic("aria-label")(`aria-label`)
+    val __obj = js.Dynamic.literal(cellCount = cellCount.asInstanceOf[js.Any], cellGroupRenderer = cellGroupRenderer.asInstanceOf[js.Any], cellRenderer = cellRenderer.asInstanceOf[js.Any], cellSizeAndPositionGetter = cellSizeAndPositionGetter.asInstanceOf[js.Any], sectionSize = sectionSize.asInstanceOf[js.Any])
+    __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Arialabel]
   }
 }

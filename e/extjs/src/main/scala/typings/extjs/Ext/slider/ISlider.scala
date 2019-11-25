@@ -28,7 +28,7 @@ object ISlider {
     setValue: (/* value */ js.UndefOr[Double], /* animate */ js.UndefOr[Boolean]) => Unit = null
   ): ISlider = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IMulti)
+    if (IMulti != null) js.Dynamic.global.Object.assign(__obj, IMulti)
     if (getValue != null) __obj.updateDynamic("getValue")(js.Any.fromFunction0(getValue))
     if (setValue != null) __obj.updateDynamic("setValue")(js.Any.fromFunction2(setValue))
     __obj.asInstanceOf[ISlider]

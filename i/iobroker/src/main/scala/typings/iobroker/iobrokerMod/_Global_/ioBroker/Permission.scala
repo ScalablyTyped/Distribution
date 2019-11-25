@@ -14,8 +14,8 @@ trait Permission extends js.Object {
 object Permission {
   @scala.inline
   def apply(operation: String, `type`: String): Permission = {
-    val __obj = js.Dynamic.literal(operation = operation)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(operation = operation.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Permission]
   }
 }

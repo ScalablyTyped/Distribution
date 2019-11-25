@@ -11,7 +11,7 @@ trait Anon_PreventRender extends js.Object {
 object Anon_PreventRender {
   @scala.inline
   def apply(preventRender: Boolean): Anon_PreventRender = {
-    val __obj = js.Dynamic.literal(preventRender = preventRender)
+    val __obj = js.Dynamic.literal(preventRender = preventRender.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_PreventRender]
   }

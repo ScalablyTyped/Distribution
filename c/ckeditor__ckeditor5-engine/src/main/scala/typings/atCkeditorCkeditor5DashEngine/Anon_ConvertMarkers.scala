@@ -18,9 +18,9 @@ object Anon_ConvertMarkers {
     withoutSelection: js.UndefOr[Boolean] = js.undefined
   ): Anon_ConvertMarkers = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(convertMarkers)) __obj.updateDynamic("convertMarkers")(convertMarkers)
-    if (rootName != null) __obj.updateDynamic("rootName")(rootName)
-    if (!js.isUndefined(withoutSelection)) __obj.updateDynamic("withoutSelection")(withoutSelection)
+    if (!js.isUndefined(convertMarkers)) __obj.updateDynamic("convertMarkers")(convertMarkers.asInstanceOf[js.Any])
+    if (rootName != null) __obj.updateDynamic("rootName")(rootName.asInstanceOf[js.Any])
+    if (!js.isUndefined(withoutSelection)) __obj.updateDynamic("withoutSelection")(withoutSelection.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ConvertMarkers]
   }
 }

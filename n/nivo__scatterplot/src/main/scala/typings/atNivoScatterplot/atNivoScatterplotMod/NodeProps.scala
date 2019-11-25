@@ -33,7 +33,7 @@ object NodeProps {
     onMouseLeave: () => Unit = null,
     onMouseMove: () => Unit = null
   ): NodeProps = {
-    val __obj = js.Dynamic.literal(blendMode = blendMode, color = color, node = node, size = size, x = x, y = y)
+    val __obj = js.Dynamic.literal(blendMode = blendMode.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction0(onClick))
     if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction0(onMouseEnter))
     if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction0(onMouseLeave))

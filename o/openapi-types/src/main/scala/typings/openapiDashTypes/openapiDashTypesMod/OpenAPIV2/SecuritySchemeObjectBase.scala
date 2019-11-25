@@ -17,7 +17,7 @@ object SecuritySchemeObjectBase {
   def apply(`type`: basic | apiKey | oauth2, description: String = null): SecuritySchemeObjectBase = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecuritySchemeObjectBase]
   }
 }

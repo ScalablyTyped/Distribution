@@ -19,7 +19,7 @@ trait OrgsListInstallationsParams extends js.Object {
 object OrgsListInstallationsParams {
   @scala.inline
   def apply(org: String, page: Int | Double = null, per_page: Int | Double = null): OrgsListInstallationsParams = {
-    val __obj = js.Dynamic.literal(org = org)
+    val __obj = js.Dynamic.literal(org = org.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (per_page != null) __obj.updateDynamic("per_page")(per_page.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrgsListInstallationsParams]

@@ -27,7 +27,7 @@ trait _validNodes extends js.Object {
 object _validNodes {
   @scala.inline
   def apply(div: Double, p: Double, td: Double): _validNodes = {
-    val __obj = js.Dynamic.literal(div = div, p = p, td = td)
+    val __obj = js.Dynamic.literal(div = div.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any], td = td.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_validNodes]
   }

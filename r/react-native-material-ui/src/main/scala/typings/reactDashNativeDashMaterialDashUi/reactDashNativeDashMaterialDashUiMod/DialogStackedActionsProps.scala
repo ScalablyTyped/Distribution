@@ -18,8 +18,8 @@ object DialogStackedActionsProps {
     onActionPress: String => Unit,
     style: Anon_StackedActionsContainer = null
   ): DialogStackedActionsProps = {
-    val __obj = js.Dynamic.literal(actions = actions, onActionPress = js.Any.fromFunction1(onActionPress))
-    if (style != null) __obj.updateDynamic("style")(style)
+    val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], onActionPress = js.Any.fromFunction1(onActionPress))
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogStackedActionsProps]
   }
 }

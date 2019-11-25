@@ -23,8 +23,8 @@ trait defaultPath3d extends js.Object {
 object defaultPath3d {
   @scala.inline
   def apply(path: js.Array[_], `type`: String): defaultPath3d = {
-    val __obj = js.Dynamic.literal(path = path)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[defaultPath3d]
   }
 }

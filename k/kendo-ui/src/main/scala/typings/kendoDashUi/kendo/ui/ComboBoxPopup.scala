@@ -14,9 +14,9 @@ object ComboBoxPopup {
   @scala.inline
   def apply(appendTo: String = null, origin: String = null, position: String = null): ComboBoxPopup = {
     val __obj = js.Dynamic.literal()
-    if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo)
-    if (origin != null) __obj.updateDynamic("origin")(origin)
-    if (position != null) __obj.updateDynamic("position")(position)
+    if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo.asInstanceOf[js.Any])
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComboBoxPopup]
   }
 }

@@ -19,7 +19,7 @@ object Anon_ExcludedpermissionsFeatures {
     interactions: Anon_FollowingBoolean,
     permissions: js.Array[_]
   ): Anon_ExcludedpermissionsFeatures = {
-    val __obj = js.Dynamic.literal(excluded_permissions = excluded_permissions, features = features, interactions = interactions, permissions = permissions)
+    val __obj = js.Dynamic.literal(excluded_permissions = excluded_permissions.asInstanceOf[js.Any], features = features.asInstanceOf[js.Any], interactions = interactions.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ExcludedpermissionsFeatures]
   }

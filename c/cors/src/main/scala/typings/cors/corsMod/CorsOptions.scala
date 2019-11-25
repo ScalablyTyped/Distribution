@@ -30,13 +30,13 @@ object CorsOptions {
   ): CorsOptions = {
     val __obj = js.Dynamic.literal()
     if (allowedHeaders != null) __obj.updateDynamic("allowedHeaders")(allowedHeaders.asInstanceOf[js.Any])
-    if (!js.isUndefined(credentials)) __obj.updateDynamic("credentials")(credentials)
+    if (!js.isUndefined(credentials)) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
     if (exposedHeaders != null) __obj.updateDynamic("exposedHeaders")(exposedHeaders.asInstanceOf[js.Any])
     if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
     if (methods != null) __obj.updateDynamic("methods")(methods.asInstanceOf[js.Any])
     if (optionsSuccessStatus != null) __obj.updateDynamic("optionsSuccessStatus")(optionsSuccessStatus.asInstanceOf[js.Any])
     if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
-    if (!js.isUndefined(preflightContinue)) __obj.updateDynamic("preflightContinue")(preflightContinue)
+    if (!js.isUndefined(preflightContinue)) __obj.updateDynamic("preflightContinue")(preflightContinue.asInstanceOf[js.Any])
     __obj.asInstanceOf[CorsOptions]
   }
 }

@@ -56,17 +56,17 @@ object ContextMenuClickEventArgs {
     text: String = null
   ): ContextMenuClickEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(canExecute)) __obj.updateDynamic("canExecute")(canExecute)
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId)
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (events != null) __obj.updateDynamic("events")(events)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (parentId != null) __obj.updateDynamic("parentId")(parentId)
-    if (parentText != null) __obj.updateDynamic("parentText")(parentText)
-    if (selectedItem != null) __obj.updateDynamic("selectedItem")(selectedItem)
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (!js.isUndefined(canExecute)) __obj.updateDynamic("canExecute")(canExecute.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (parentId != null) __obj.updateDynamic("parentId")(parentId.asInstanceOf[js.Any])
+    if (parentText != null) __obj.updateDynamic("parentText")(parentText.asInstanceOf[js.Any])
+    if (selectedItem != null) __obj.updateDynamic("selectedItem")(selectedItem.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextMenuClickEventArgs]
   }
 }

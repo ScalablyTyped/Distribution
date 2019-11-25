@@ -20,7 +20,7 @@ object ConnectionEndCap {
     val __obj = js.Dynamic.literal()
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionEndCap]
   }
 }

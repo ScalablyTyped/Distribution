@@ -28,9 +28,9 @@ object SaveResult {
     errors: js.Array[js.Object | String] = null,
     responses: js.Array[Response] = null
   ): SaveResult = {
-    val __obj = js.Dynamic.literal(modelArtifactsInfo = modelArtifactsInfo)
-    if (errors != null) __obj.updateDynamic("errors")(errors)
-    if (responses != null) __obj.updateDynamic("responses")(responses)
+    val __obj = js.Dynamic.literal(modelArtifactsInfo = modelArtifactsInfo.asInstanceOf[js.Any])
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
+    if (responses != null) __obj.updateDynamic("responses")(responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[SaveResult]
   }
 }

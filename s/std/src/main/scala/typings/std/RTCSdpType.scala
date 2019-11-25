@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait RTCSdpType extends js.Object
 
+object RTCSdpType {
+  @scala.inline
+  def answer: typings.std.stdStrings.answer = this.cast("answer")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def offer: typings.std.stdStrings.offer = this.cast("offer")
+  @scala.inline
+  def pranswer: typings.std.stdStrings.pranswer = this.cast("pranswer")
+  @scala.inline
+  def rollback: typings.std.stdStrings.rollback = this.cast("rollback")
+}
+

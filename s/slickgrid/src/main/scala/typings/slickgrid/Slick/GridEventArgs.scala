@@ -11,7 +11,7 @@ trait GridEventArgs[T /* <: SlickData */] extends js.Object {
 object GridEventArgs {
   @scala.inline
   def apply[T /* <: SlickData */](grid: Grid[T]): GridEventArgs[T] = {
-    val __obj = js.Dynamic.literal(grid = grid)
+    val __obj = js.Dynamic.literal(grid = grid.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GridEventArgs[T]]
   }

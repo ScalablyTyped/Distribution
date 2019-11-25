@@ -18,10 +18,10 @@ object SerializeWithBufferAndIndexOptions {
     serializeFunctions: js.UndefOr[Boolean] = js.undefined
   ): SerializeWithBufferAndIndexOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(checkKeys)) __obj.updateDynamic("checkKeys")(checkKeys)
-    if (!js.isUndefined(ignoreUndefined)) __obj.updateDynamic("ignoreUndefined")(ignoreUndefined)
+    if (!js.isUndefined(checkKeys)) __obj.updateDynamic("checkKeys")(checkKeys.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreUndefined)) __obj.updateDynamic("ignoreUndefined")(ignoreUndefined.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(serializeFunctions)) __obj.updateDynamic("serializeFunctions")(serializeFunctions)
+    if (!js.isUndefined(serializeFunctions)) __obj.updateDynamic("serializeFunctions")(serializeFunctions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SerializeWithBufferAndIndexOptions]
   }
 }

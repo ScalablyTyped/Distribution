@@ -16,8 +16,8 @@ object Anon_Index {
   def apply[T](index: Int | Double = null, name: String = null, theming: Theming[T] = null): Anon_Index[T] = {
     val __obj = js.Dynamic.literal()
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (theming != null) __obj.updateDynamic("theming")(theming)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (theming != null) __obj.updateDynamic("theming")(theming.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Index[T]]
   }
 }

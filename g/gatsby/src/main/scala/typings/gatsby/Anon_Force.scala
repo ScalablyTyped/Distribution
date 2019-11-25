@@ -26,11 +26,11 @@ object Anon_Force {
     redirectInBrowser: js.UndefOr[Boolean] = js.undefined,
     statusCode: Int | Double = null
   ): Anon_Force = {
-    val __obj = js.Dynamic.literal(fromPath = fromPath, toPath = toPath)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
-    if (!js.isUndefined(isPermanent)) __obj.updateDynamic("isPermanent")(isPermanent)
-    if (!js.isUndefined(redirectInBrowser)) __obj.updateDynamic("redirectInBrowser")(redirectInBrowser)
+    val __obj = js.Dynamic.literal(fromPath = fromPath.asInstanceOf[js.Any], toPath = toPath.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPermanent)) __obj.updateDynamic("isPermanent")(isPermanent.asInstanceOf[js.Any])
+    if (!js.isUndefined(redirectInBrowser)) __obj.updateDynamic("redirectInBrowser")(redirectInBrowser.asInstanceOf[js.Any])
     if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Force]
   }

@@ -130,7 +130,6 @@ object ITreePanel {
     animate: js.UndefOr[Boolean] = js.undefined,
     collapseAll: (/* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     collapseNode: (/* record */ js.UndefOr[IModel], /* deep */ js.UndefOr[Boolean], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    deferRowRender: js.UndefOr[Boolean] = js.undefined,
     displayField: java.lang.String = null,
     expandAll: (/* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     expandNode: (/* record */ js.UndefOr[IModel], /* deep */ js.UndefOr[Boolean], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
@@ -138,44 +137,35 @@ object ITreePanel {
     folderSort: js.UndefOr[Boolean] = js.undefined,
     getChecked: () => Array = null,
     getRootNode: () => INodeInterface = null,
-    hideHeaders: js.UndefOr[Boolean] = js.undefined,
     lines: js.UndefOr[Boolean] = js.undefined,
     root: js.Any = null,
     rootVisible: js.UndefOr[Boolean] = js.undefined,
-    rowLines: js.UndefOr[Boolean] = js.undefined,
-    selType: java.lang.String = null,
     selectPath: (/* path */ js.UndefOr[java.lang.String], /* field */ js.UndefOr[java.lang.String], /* separator */ js.UndefOr[java.lang.String], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     setRootNode: /* root */ js.UndefOr[js.Any] => INodeInterface = null,
     singleExpand: js.UndefOr[Boolean] = js.undefined,
     store: ITreeStore = null,
-    useArrows: js.UndefOr[Boolean] = js.undefined,
-    viewType: java.lang.String = null
+    useArrows: js.UndefOr[Boolean] = js.undefined
   ): ITreePanel = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, ITable)
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
+    if (ITable != null) js.Dynamic.global.Object.assign(__obj, ITable)
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
     if (collapseAll != null) __obj.updateDynamic("collapseAll")(js.Any.fromFunction2(collapseAll))
     if (collapseNode != null) __obj.updateDynamic("collapseNode")(js.Any.fromFunction4(collapseNode))
-    if (!js.isUndefined(deferRowRender)) __obj.updateDynamic("deferRowRender")(deferRowRender)
-    if (displayField != null) __obj.updateDynamic("displayField")(displayField)
+    if (displayField != null) __obj.updateDynamic("displayField")(displayField.asInstanceOf[js.Any])
     if (expandAll != null) __obj.updateDynamic("expandAll")(js.Any.fromFunction2(expandAll))
     if (expandNode != null) __obj.updateDynamic("expandNode")(js.Any.fromFunction4(expandNode))
     if (expandPath != null) __obj.updateDynamic("expandPath")(js.Any.fromFunction5(expandPath))
-    if (!js.isUndefined(folderSort)) __obj.updateDynamic("folderSort")(folderSort)
+    if (!js.isUndefined(folderSort)) __obj.updateDynamic("folderSort")(folderSort.asInstanceOf[js.Any])
     if (getChecked != null) __obj.updateDynamic("getChecked")(js.Any.fromFunction0(getChecked))
     if (getRootNode != null) __obj.updateDynamic("getRootNode")(js.Any.fromFunction0(getRootNode))
-    if (!js.isUndefined(hideHeaders)) __obj.updateDynamic("hideHeaders")(hideHeaders)
-    if (!js.isUndefined(lines)) __obj.updateDynamic("lines")(lines)
-    if (root != null) __obj.updateDynamic("root")(root)
-    if (!js.isUndefined(rootVisible)) __obj.updateDynamic("rootVisible")(rootVisible)
-    if (!js.isUndefined(rowLines)) __obj.updateDynamic("rowLines")(rowLines)
-    if (selType != null) __obj.updateDynamic("selType")(selType)
+    if (!js.isUndefined(lines)) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(rootVisible)) __obj.updateDynamic("rootVisible")(rootVisible.asInstanceOf[js.Any])
     if (selectPath != null) __obj.updateDynamic("selectPath")(js.Any.fromFunction5(selectPath))
     if (setRootNode != null) __obj.updateDynamic("setRootNode")(js.Any.fromFunction1(setRootNode))
-    if (!js.isUndefined(singleExpand)) __obj.updateDynamic("singleExpand")(singleExpand)
-    if (store != null) __obj.updateDynamic("store")(store)
-    if (!js.isUndefined(useArrows)) __obj.updateDynamic("useArrows")(useArrows)
-    if (viewType != null) __obj.updateDynamic("viewType")(viewType)
+    if (!js.isUndefined(singleExpand)) __obj.updateDynamic("singleExpand")(singleExpand.asInstanceOf[js.Any])
+    if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
+    if (!js.isUndefined(useArrows)) __obj.updateDynamic("useArrows")(useArrows.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITreePanel]
   }
 }

@@ -22,10 +22,10 @@ object EducationOrganization {
     id: String = null
   ): EducationOrganization = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (externalSource != null) __obj.updateDynamic("externalSource")(externalSource)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (externalSource != null) __obj.updateDynamic("externalSource")(externalSource.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[EducationOrganization]
   }
 }

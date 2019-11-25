@@ -24,9 +24,9 @@ object TreeViewProps {
     onExpandChange: /* expandData */ StringDictionary[Boolean] => Unit = null
   ): TreeViewProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (expandData != null) __obj.updateDynamic("expandData")(expandData)
-    if (!js.isUndefined(isExpandAll)) __obj.updateDynamic("isExpandAll")(isExpandAll)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (expandData != null) __obj.updateDynamic("expandData")(expandData.asInstanceOf[js.Any])
+    if (!js.isUndefined(isExpandAll)) __obj.updateDynamic("isExpandAll")(isExpandAll.asInstanceOf[js.Any])
     if (onExpandChange != null) __obj.updateDynamic("onExpandChange")(js.Any.fromFunction1(onExpandChange))
     __obj.asInstanceOf[TreeViewProps]
   }

@@ -23,9 +23,9 @@ object GroupCollapsedEventUIParam {
   @scala.inline
   def apply(column: js.Any = null, element: String = null, owner: js.Any = null): GroupCollapsedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (column != null) __obj.updateDynamic("column")(column)
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupCollapsedEventUIParam]
   }
 }

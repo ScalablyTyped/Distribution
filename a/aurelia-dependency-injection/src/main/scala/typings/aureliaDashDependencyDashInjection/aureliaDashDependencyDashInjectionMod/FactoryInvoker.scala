@@ -14,10 +14,10 @@ class FactoryInvoker[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] 
     container: Container,
     fn: DependencyCtorOrFunctor[TBase, TImpl, TArgs],
     staticDependencies: js.Array[
-      /* import warning: ImportType.apply Failed type conversion: TArgs[number] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: TArgs[number] */ js.Any
     ],
     dynamicDependencies: js.Array[
-      /* import warning: ImportType.apply Failed type conversion: TArgs[number] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: TArgs[number] */ js.Any
     ]
   ): ImplOrAny[TImpl] = js.native
 }

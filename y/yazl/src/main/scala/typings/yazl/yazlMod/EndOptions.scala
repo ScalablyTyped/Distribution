@@ -11,7 +11,7 @@ trait EndOptions extends js.Object {
 object EndOptions {
   @scala.inline
   def apply(forceZip64Format: Boolean): EndOptions = {
-    val __obj = js.Dynamic.literal(forceZip64Format = forceZip64Format)
+    val __obj = js.Dynamic.literal(forceZip64Format = forceZip64Format.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EndOptions]
   }

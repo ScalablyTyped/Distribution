@@ -12,7 +12,7 @@ trait PortableCpuContext extends CpuContext {
 object PortableCpuContext {
   @scala.inline
   def apply(pc: NativePointer, sp: NativePointer): PortableCpuContext = {
-    val __obj = js.Dynamic.literal(pc = pc, sp = sp)
+    val __obj = js.Dynamic.literal(pc = pc.asInstanceOf[js.Any], sp = sp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PortableCpuContext]
   }

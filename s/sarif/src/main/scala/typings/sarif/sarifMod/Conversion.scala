@@ -31,10 +31,10 @@ object Conversion {
     invocation: Invocation = null,
     properties: PropertyBag = null
   ): Conversion = {
-    val __obj = js.Dynamic.literal(tool = tool)
-    if (analysisToolLogFiles != null) __obj.updateDynamic("analysisToolLogFiles")(analysisToolLogFiles)
-    if (invocation != null) __obj.updateDynamic("invocation")(invocation)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
+    val __obj = js.Dynamic.literal(tool = tool.asInstanceOf[js.Any])
+    if (analysisToolLogFiles != null) __obj.updateDynamic("analysisToolLogFiles")(analysisToolLogFiles.asInstanceOf[js.Any])
+    if (invocation != null) __obj.updateDynamic("invocation")(invocation.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[Conversion]
   }
 }

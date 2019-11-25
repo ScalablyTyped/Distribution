@@ -24,7 +24,7 @@ object IopenProductSpecificView {
     fail: /* repeated */ js.Any => Unit = null,
     success: /* repeated */ js.Any => Unit = null
   ): IopenProductSpecificView = {
-    val __obj = js.Dynamic.literal(productId = productId, viewType = viewType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(productId = productId.asInstanceOf[js.Any], viewType = viewType.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))

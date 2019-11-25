@@ -23,8 +23,8 @@ trait IOptions extends js.Object {
 object IOptions {
   @scala.inline
   def apply(model: IAttachmentsModel, parent: IResolver = null): IOptions = {
-    val __obj = js.Dynamic.literal(model = model)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
+    val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

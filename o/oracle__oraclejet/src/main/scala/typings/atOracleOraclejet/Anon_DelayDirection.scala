@@ -26,13 +26,13 @@ object Anon_DelayDirection {
     timingFunction: String = null
   ): Anon_DelayDirection = {
     val __obj = js.Dynamic.literal()
-    if (delay != null) __obj.updateDynamic("delay")(delay)
-    if (direction != null) __obj.updateDynamic("direction")(direction)
-    if (duration != null) __obj.updateDynamic("duration")(duration)
-    if (offsetX != null) __obj.updateDynamic("offsetX")(offsetX)
-    if (offsetY != null) __obj.updateDynamic("offsetY")(offsetY)
-    if (persist != null) __obj.updateDynamic("persist")(persist)
-    if (timingFunction != null) __obj.updateDynamic("timingFunction")(timingFunction)
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (offsetX != null) __obj.updateDynamic("offsetX")(offsetX.asInstanceOf[js.Any])
+    if (offsetY != null) __obj.updateDynamic("offsetY")(offsetY.asInstanceOf[js.Any])
+    if (persist != null) __obj.updateDynamic("persist")(persist.asInstanceOf[js.Any])
+    if (timingFunction != null) __obj.updateDynamic("timingFunction")(timingFunction.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DelayDirection]
   }
 }

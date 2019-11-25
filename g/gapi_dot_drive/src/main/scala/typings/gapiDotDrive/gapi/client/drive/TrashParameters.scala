@@ -12,8 +12,8 @@ trait TrashParameters extends js.Object {
 object TrashParameters {
   @scala.inline
   def apply(fileId: String, supportsTeamDrives: js.UndefOr[Boolean] = js.undefined): TrashParameters = {
-    val __obj = js.Dynamic.literal(fileId = fileId)
-    if (!js.isUndefined(supportsTeamDrives)) __obj.updateDynamic("supportsTeamDrives")(supportsTeamDrives)
+    val __obj = js.Dynamic.literal(fileId = fileId.asInstanceOf[js.Any])
+    if (!js.isUndefined(supportsTeamDrives)) __obj.updateDynamic("supportsTeamDrives")(supportsTeamDrives.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrashParameters]
   }
 }

@@ -37,9 +37,9 @@ object VProperties {
     style: js.Any = null
   ): VProperties = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[VProperties]
   }
 }

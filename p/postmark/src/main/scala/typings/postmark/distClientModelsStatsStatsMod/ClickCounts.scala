@@ -14,7 +14,7 @@ trait ClickCounts extends js.Object {
 object ClickCounts {
   @scala.inline
   def apply(Clicks: Double, Days: js.Array[Anon_Clicks], Unique: Double): ClickCounts = {
-    val __obj = js.Dynamic.literal(Clicks = Clicks, Days = Days, Unique = Unique)
+    val __obj = js.Dynamic.literal(Clicks = Clicks.asInstanceOf[js.Any], Days = Days.asInstanceOf[js.Any], Unique = Unique.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ClickCounts]
   }

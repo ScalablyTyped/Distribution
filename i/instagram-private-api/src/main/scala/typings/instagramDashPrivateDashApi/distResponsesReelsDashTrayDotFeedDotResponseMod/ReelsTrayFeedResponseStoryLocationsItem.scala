@@ -31,7 +31,7 @@ object ReelsTrayFeedResponseStoryLocationsItem {
     y: Double,
     z: Double
   ): ReelsTrayFeedResponseStoryLocationsItem = {
-    val __obj = js.Dynamic.literal(height = height, is_hidden = is_hidden, is_pinned = is_pinned, is_sticker = is_sticker, location = location, rotation = rotation, width = width, x = x, y = y, z = z)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], is_hidden = is_hidden.asInstanceOf[js.Any], is_pinned = is_pinned.asInstanceOf[js.Any], is_sticker = is_sticker.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReelsTrayFeedResponseStoryLocationsItem]
   }

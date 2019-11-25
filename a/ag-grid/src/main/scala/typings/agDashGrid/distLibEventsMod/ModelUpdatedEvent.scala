@@ -31,8 +31,8 @@ object ModelUpdatedEvent {
     newPage: Boolean,
     `type`: String
   ): ModelUpdatedEvent = {
-    val __obj = js.Dynamic.literal(animate = animate, api = api, columnApi = columnApi, keepRenderedRows = keepRenderedRows, newData = newData, newPage = newPage)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(animate = animate.asInstanceOf[js.Any], api = api.asInstanceOf[js.Any], columnApi = columnApi.asInstanceOf[js.Any], keepRenderedRows = keepRenderedRows.asInstanceOf[js.Any], newData = newData.asInstanceOf[js.Any], newPage = newPage.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelUpdatedEvent]
   }
 }

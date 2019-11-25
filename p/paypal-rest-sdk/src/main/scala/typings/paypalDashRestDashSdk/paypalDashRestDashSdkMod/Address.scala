@@ -31,12 +31,12 @@ object Address {
     recipient_name: String = null,
     `type`: String = null
   ): Address = {
-    val __obj = js.Dynamic.literal(city = city, country_code = country_code, line1 = line1, postal_code = postal_code, state = state)
-    if (line2 != null) __obj.updateDynamic("line2")(line2)
-    if (normalization_status != null) __obj.updateDynamic("normalization_status")(normalization_status)
-    if (phone != null) __obj.updateDynamic("phone")(phone)
-    if (recipient_name != null) __obj.updateDynamic("recipient_name")(recipient_name)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(city = city.asInstanceOf[js.Any], country_code = country_code.asInstanceOf[js.Any], line1 = line1.asInstanceOf[js.Any], postal_code = postal_code.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+    if (line2 != null) __obj.updateDynamic("line2")(line2.asInstanceOf[js.Any])
+    if (normalization_status != null) __obj.updateDynamic("normalization_status")(normalization_status.asInstanceOf[js.Any])
+    if (phone != null) __obj.updateDynamic("phone")(phone.asInstanceOf[js.Any])
+    if (recipient_name != null) __obj.updateDynamic("recipient_name")(recipient_name.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Address]
   }
 }

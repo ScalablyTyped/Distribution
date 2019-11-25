@@ -12,7 +12,7 @@ trait Anon_RectList extends js.Object {
 object Anon_RectList {
   @scala.inline
   def apply(rectList: js.Array[Anon_Bottom], textList: js.Array[String]): Anon_RectList = {
-    val __obj = js.Dynamic.literal(rectList = rectList, textList = textList)
+    val __obj = js.Dynamic.literal(rectList = rectList.asInstanceOf[js.Any], textList = textList.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_RectList]
   }

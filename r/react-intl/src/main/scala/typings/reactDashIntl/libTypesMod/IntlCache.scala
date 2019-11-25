@@ -34,7 +34,7 @@ object IntlCache {
       typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.default
     ]
   ): IntlCache = {
-    val __obj = js.Dynamic.literal(dateTime = dateTime, list = list, message = message, number = number, pluralRules = pluralRules, relativeTime = relativeTime)
+    val __obj = js.Dynamic.literal(dateTime = dateTime.asInstanceOf[js.Any], list = list.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], pluralRules = pluralRules.asInstanceOf[js.Any], relativeTime = relativeTime.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IntlCache]
   }

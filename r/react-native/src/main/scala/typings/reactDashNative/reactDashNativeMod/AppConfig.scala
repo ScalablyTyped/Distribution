@@ -18,7 +18,7 @@ object AppConfig {
     component: () => ComponentType[js.Any] = null,
     run: /* appParameters */ js.Any => Unit = null
   ): AppConfig = {
-    val __obj = js.Dynamic.literal(appKey = appKey)
+    val __obj = js.Dynamic.literal(appKey = appKey.asInstanceOf[js.Any])
     if (component != null) __obj.updateDynamic("component")(js.Any.fromFunction0(component))
     if (run != null) __obj.updateDynamic("run")(js.Any.fromFunction1(run))
     __obj.asInstanceOf[AppConfig]

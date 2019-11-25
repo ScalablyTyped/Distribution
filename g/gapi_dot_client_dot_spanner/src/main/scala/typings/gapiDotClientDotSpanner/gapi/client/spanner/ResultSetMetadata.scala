@@ -27,8 +27,8 @@ object ResultSetMetadata {
   @scala.inline
   def apply(rowType: StructType = null, transaction: Transaction = null): ResultSetMetadata = {
     val __obj = js.Dynamic.literal()
-    if (rowType != null) __obj.updateDynamic("rowType")(rowType)
-    if (transaction != null) __obj.updateDynamic("transaction")(transaction)
+    if (rowType != null) __obj.updateDynamic("rowType")(rowType.asInstanceOf[js.Any])
+    if (transaction != null) __obj.updateDynamic("transaction")(transaction.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResultSetMetadata]
   }
 }

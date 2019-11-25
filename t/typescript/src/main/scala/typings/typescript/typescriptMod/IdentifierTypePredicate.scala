@@ -23,8 +23,8 @@ object IdentifierTypePredicate {
     parameterName: String,
     `type`: Type
   ): IdentifierTypePredicate = {
-    val __obj = js.Dynamic.literal(kind = kind, parameterIndex = parameterIndex, parameterName = parameterName)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], parameterIndex = parameterIndex.asInstanceOf[js.Any], parameterName = parameterName.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentifierTypePredicate]
   }
 }

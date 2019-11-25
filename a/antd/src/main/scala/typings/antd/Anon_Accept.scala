@@ -33,8 +33,8 @@ object Anon_Accept {
     supportServerRender: Boolean,
     `type`: UploadType
   ): Anon_Accept = {
-    val __obj = js.Dynamic.literal(accept = accept, action = action, beforeUpload = js.Any.fromFunction0(beforeUpload), className = className, disabled = disabled, listType = listType, multiple = multiple, showUploadList = showUploadList, supportServerRender = supportServerRender)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(accept = accept.asInstanceOf[js.Any], action = action.asInstanceOf[js.Any], beforeUpload = js.Any.fromFunction0(beforeUpload), className = className.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], listType = listType.asInstanceOf[js.Any], multiple = multiple.asInstanceOf[js.Any], showUploadList = showUploadList.asInstanceOf[js.Any], supportServerRender = supportServerRender.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Accept]
   }
 }

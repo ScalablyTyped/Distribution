@@ -18,9 +18,9 @@ object QueryRelationsEntity {
   @scala.inline
   def apply(exact: js.UndefOr[Boolean] = js.undefined, text: String = null, `type`: String = null): QueryRelationsEntity = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(exact)) __obj.updateDynamic("exact")(exact)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(exact)) __obj.updateDynamic("exact")(exact.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryRelationsEntity]
   }
 }

@@ -11,7 +11,7 @@ trait IOperationCompletedEventArgs extends js.Object {
 object IOperationCompletedEventArgs {
   @scala.inline
   def apply(operation: DataPackageOperation): IOperationCompletedEventArgs = {
-    val __obj = js.Dynamic.literal(operation = operation)
+    val __obj = js.Dynamic.literal(operation = operation.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IOperationCompletedEventArgs]
   }

@@ -21,7 +21,7 @@ object StateChangeData {
     authToken: AuthToken = null
   ): StateChangeData = {
     val __obj = js.Dynamic.literal(newState = newState.asInstanceOf[js.Any], oldState = oldState.asInstanceOf[js.Any])
-    if (authToken != null) __obj.updateDynamic("authToken")(authToken)
+    if (authToken != null) __obj.updateDynamic("authToken")(authToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[StateChangeData]
   }
 }

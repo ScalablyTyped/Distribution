@@ -13,7 +13,7 @@ object IdentitytoolkitRelyingpartySendVerificationCodeResponse {
   @scala.inline
   def apply(sessionInfo: String = null): IdentitytoolkitRelyingpartySendVerificationCodeResponse = {
     val __obj = js.Dynamic.literal()
-    if (sessionInfo != null) __obj.updateDynamic("sessionInfo")(sessionInfo)
+    if (sessionInfo != null) __obj.updateDynamic("sessionInfo")(sessionInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentitytoolkitRelyingpartySendVerificationCodeResponse]
   }
 }

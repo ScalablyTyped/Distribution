@@ -19,7 +19,7 @@ object ILocaleNumberFormatDescriptor {
     GROUP_SEP: String,
     PATTERNS: js.Array[ILocaleNumberPatternDescriptor]
   ): ILocaleNumberFormatDescriptor = {
-    val __obj = js.Dynamic.literal(CURRENCY_SYM = CURRENCY_SYM, DECIMAL_SEP = DECIMAL_SEP, GROUP_SEP = GROUP_SEP, PATTERNS = PATTERNS)
+    val __obj = js.Dynamic.literal(CURRENCY_SYM = CURRENCY_SYM.asInstanceOf[js.Any], DECIMAL_SEP = DECIMAL_SEP.asInstanceOf[js.Any], GROUP_SEP = GROUP_SEP.asInstanceOf[js.Any], PATTERNS = PATTERNS.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ILocaleNumberFormatDescriptor]
   }

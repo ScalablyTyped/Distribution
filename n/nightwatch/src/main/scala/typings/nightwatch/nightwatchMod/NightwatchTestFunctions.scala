@@ -28,9 +28,9 @@ object NightwatchTestFunctions {
     beforeEach: NightwatchTestHook = null
   ): NightwatchTestFunctions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(`@disabled`)) __obj.updateDynamic("@disabled")(`@disabled`)
+    if (!js.isUndefined(`@disabled`)) __obj.updateDynamic("@disabled")(`@disabled`.asInstanceOf[js.Any])
     if (`@tags` != null) __obj.updateDynamic("@tags")(`@tags`.asInstanceOf[js.Any])
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
     if (afterEach != null) __obj.updateDynamic("afterEach")(afterEach.asInstanceOf[js.Any])
     if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])

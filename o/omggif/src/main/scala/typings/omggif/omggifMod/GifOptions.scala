@@ -16,7 +16,7 @@ object GifOptions {
     val __obj = js.Dynamic.literal()
     if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
     if (loop != null) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
-    if (palette != null) __obj.updateDynamic("palette")(palette)
+    if (palette != null) __obj.updateDynamic("palette")(palette.asInstanceOf[js.Any])
     __obj.asInstanceOf[GifOptions]
   }
 }

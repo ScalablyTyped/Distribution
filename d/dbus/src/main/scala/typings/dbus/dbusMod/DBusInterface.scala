@@ -31,7 +31,7 @@ object DBusInterface {
   /* methodName */ StringDictionary[js.Function1[/* repeated */ js.Any, Unit]] = null
   ): DBusInterface = {
     val __obj = js.Dynamic.literal(getProperties = js.Any.fromFunction1(getProperties), getProperty = js.Any.fromFunction2(getProperty), setProperty = js.Any.fromFunction3(setProperty))
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[DBusInterface]
   }
 }

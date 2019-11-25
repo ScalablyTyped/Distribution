@@ -25,7 +25,7 @@ trait DecodeAudioConfig extends js.Object {
 object DecodeAudioConfig {
   @scala.inline
   def apply(data: ArrayBuffer | String, key: String): DecodeAudioConfig = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], key = key)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DecodeAudioConfig]
   }

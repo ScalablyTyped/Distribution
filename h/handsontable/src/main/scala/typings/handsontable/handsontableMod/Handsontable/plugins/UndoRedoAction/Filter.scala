@@ -14,7 +14,7 @@ trait Filter extends js.Object {
 object Filter {
   @scala.inline
   def apply(actionType: filter, conditionsStack: js.Array[ColumnConditions]): Filter = {
-    val __obj = js.Dynamic.literal(actionType = actionType, conditionsStack = conditionsStack)
+    val __obj = js.Dynamic.literal(actionType = actionType.asInstanceOf[js.Any], conditionsStack = conditionsStack.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Filter]
   }

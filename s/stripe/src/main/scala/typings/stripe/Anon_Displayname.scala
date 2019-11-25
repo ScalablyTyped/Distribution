@@ -21,8 +21,8 @@ object Anon_Displayname {
   @scala.inline
   def apply(display_name: String = null, timezone: String = null): Anon_Displayname = {
     val __obj = js.Dynamic.literal()
-    if (display_name != null) __obj.updateDynamic("display_name")(display_name)
-    if (timezone != null) __obj.updateDynamic("timezone")(timezone)
+    if (display_name != null) __obj.updateDynamic("display_name")(display_name.asInstanceOf[js.Any])
+    if (timezone != null) __obj.updateDynamic("timezone")(timezone.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Displayname]
   }
 }

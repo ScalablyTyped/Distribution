@@ -22,7 +22,7 @@ object ModelEvaluateDatasetArgs {
   def apply(batches: Int | Double = null, verbose: ModelLoggingVerbosity = null): ModelEvaluateDatasetArgs = {
     val __obj = js.Dynamic.literal()
     if (batches != null) __obj.updateDynamic("batches")(batches.asInstanceOf[js.Any])
-    if (verbose != null) __obj.updateDynamic("verbose")(verbose)
+    if (verbose != null) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelEvaluateDatasetArgs]
   }
 }

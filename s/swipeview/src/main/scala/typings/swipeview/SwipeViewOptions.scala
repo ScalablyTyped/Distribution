@@ -22,11 +22,11 @@ object SwipeViewOptions {
     text: String = null
   ): SwipeViewOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hastyPageFlip)) __obj.updateDynamic("hastyPageFlip")(hastyPageFlip)
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
+    if (!js.isUndefined(hastyPageFlip)) __obj.updateDynamic("hastyPageFlip")(hastyPageFlip.asInstanceOf[js.Any])
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
     if (numberOfPages != null) __obj.updateDynamic("numberOfPages")(numberOfPages.asInstanceOf[js.Any])
     if (snapThreshold != null) __obj.updateDynamic("snapThreshold")(snapThreshold.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwipeViewOptions]
   }
 }

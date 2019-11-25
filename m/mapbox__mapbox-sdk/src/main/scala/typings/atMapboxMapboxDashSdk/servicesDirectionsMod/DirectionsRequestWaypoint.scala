@@ -38,7 +38,7 @@ object DirectionsRequestWaypoint {
     radius: String | unlimited = null
   ): DirectionsRequestWaypoint = {
     val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
-    if (approach != null) __obj.updateDynamic("approach")(approach)
+    if (approach != null) __obj.updateDynamic("approach")(approach.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectionsRequestWaypoint]
   }

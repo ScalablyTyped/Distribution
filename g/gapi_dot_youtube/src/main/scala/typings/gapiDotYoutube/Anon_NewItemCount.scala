@@ -18,7 +18,7 @@ trait Anon_NewItemCount extends js.Object {
 object Anon_NewItemCount {
   @scala.inline
   def apply(newItemCount: Double, totalItemCount: Double): Anon_NewItemCount = {
-    val __obj = js.Dynamic.literal(newItemCount = newItemCount, totalItemCount = totalItemCount)
+    val __obj = js.Dynamic.literal(newItemCount = newItemCount.asInstanceOf[js.Any], totalItemCount = totalItemCount.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_NewItemCount]
   }

@@ -29,13 +29,13 @@ object TransitionProps {
     runOnMount: js.UndefOr[Boolean] = js.undefined
   ): TransitionProps = {
     val __obj = js.Dynamic.literal()
-    if (appear != null) __obj.updateDynamic("appear")(appear)
+    if (appear != null) __obj.updateDynamic("appear")(appear.asInstanceOf[js.Any])
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (enter != null) __obj.updateDynamic("enter")(enter)
-    if (leave != null) __obj.updateDynamic("leave")(leave)
+    if (enter != null) __obj.updateDynamic("enter")(enter.asInstanceOf[js.Any])
+    if (leave != null) __obj.updateDynamic("leave")(leave.asInstanceOf[js.Any])
     if (onEnter != null) __obj.updateDynamic("onEnter")(js.Any.fromFunction1(onEnter))
     if (onLeave != null) __obj.updateDynamic("onLeave")(js.Any.fromFunction1(onLeave))
-    if (!js.isUndefined(runOnMount)) __obj.updateDynamic("runOnMount")(runOnMount)
+    if (!js.isUndefined(runOnMount)) __obj.updateDynamic("runOnMount")(runOnMount.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransitionProps]
   }
 }

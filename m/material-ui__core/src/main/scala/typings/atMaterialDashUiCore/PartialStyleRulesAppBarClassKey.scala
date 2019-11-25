@@ -32,15 +32,15 @@ object PartialStyleRulesAppBarClassKey {
     root: CSSProperties = null
   ): PartialStyleRulesAppBarClassKey = {
     val __obj = js.Dynamic.literal()
-    if (colorDefault != null) __obj.updateDynamic("colorDefault")(colorDefault)
-    if (colorPrimary != null) __obj.updateDynamic("colorPrimary")(colorPrimary)
-    if (colorSecondary != null) __obj.updateDynamic("colorSecondary")(colorSecondary)
-    if (positionAbsolute != null) __obj.updateDynamic("positionAbsolute")(positionAbsolute)
-    if (positionFixed != null) __obj.updateDynamic("positionFixed")(positionFixed)
-    if (positionRelative != null) __obj.updateDynamic("positionRelative")(positionRelative)
-    if (positionStatic != null) __obj.updateDynamic("positionStatic")(positionStatic)
-    if (positionSticky != null) __obj.updateDynamic("positionSticky")(positionSticky)
-    if (root != null) __obj.updateDynamic("root")(root)
+    if (colorDefault != null) __obj.updateDynamic("colorDefault")(colorDefault.asInstanceOf[js.Any])
+    if (colorPrimary != null) __obj.updateDynamic("colorPrimary")(colorPrimary.asInstanceOf[js.Any])
+    if (colorSecondary != null) __obj.updateDynamic("colorSecondary")(colorSecondary.asInstanceOf[js.Any])
+    if (positionAbsolute != null) __obj.updateDynamic("positionAbsolute")(positionAbsolute.asInstanceOf[js.Any])
+    if (positionFixed != null) __obj.updateDynamic("positionFixed")(positionFixed.asInstanceOf[js.Any])
+    if (positionRelative != null) __obj.updateDynamic("positionRelative")(positionRelative.asInstanceOf[js.Any])
+    if (positionStatic != null) __obj.updateDynamic("positionStatic")(positionStatic.asInstanceOf[js.Any])
+    if (positionSticky != null) __obj.updateDynamic("positionSticky")(positionSticky.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyleRulesAppBarClassKey]
   }
 }

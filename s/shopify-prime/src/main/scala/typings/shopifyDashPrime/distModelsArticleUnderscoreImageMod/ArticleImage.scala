@@ -23,9 +23,9 @@ object ArticleImage {
   @scala.inline
   def apply(attachment: String = null, created_at: String = null, src: String = null): ArticleImage = {
     val __obj = js.Dynamic.literal()
-    if (attachment != null) __obj.updateDynamic("attachment")(attachment)
-    if (created_at != null) __obj.updateDynamic("created_at")(created_at)
-    if (src != null) __obj.updateDynamic("src")(src)
+    if (attachment != null) __obj.updateDynamic("attachment")(attachment.asInstanceOf[js.Any])
+    if (created_at != null) __obj.updateDynamic("created_at")(created_at.asInstanceOf[js.Any])
+    if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArticleImage]
   }
 }

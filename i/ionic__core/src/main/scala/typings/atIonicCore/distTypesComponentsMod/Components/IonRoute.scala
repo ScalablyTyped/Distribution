@@ -23,8 +23,8 @@ trait IonRoute extends js.Object {
 object IonRoute {
   @scala.inline
   def apply(component: String, url: String, componentProps: StringDictionary[js.Any] = null): IonRoute = {
-    val __obj = js.Dynamic.literal(component = component, url = url)
-    if (componentProps != null) __obj.updateDynamic("componentProps")(componentProps)
+    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (componentProps != null) __obj.updateDynamic("componentProps")(componentProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonRoute]
   }
 }

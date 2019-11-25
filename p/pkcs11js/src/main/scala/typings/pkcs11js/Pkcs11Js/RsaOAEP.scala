@@ -15,9 +15,9 @@ trait RsaOAEP extends IParams {
 object RsaOAEP {
   @scala.inline
   def apply(hashAlg: Double, mgf: Double, source: Double, `type`: Double, sourceData: Buffer = null): RsaOAEP = {
-    val __obj = js.Dynamic.literal(hashAlg = hashAlg, mgf = mgf, source = source)
-    __obj.updateDynamic("type")(`type`)
-    if (sourceData != null) __obj.updateDynamic("sourceData")(sourceData)
+    val __obj = js.Dynamic.literal(hashAlg = hashAlg.asInstanceOf[js.Any], mgf = mgf.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (sourceData != null) __obj.updateDynamic("sourceData")(sourceData.asInstanceOf[js.Any])
     __obj.asInstanceOf[RsaOAEP]
   }
 }

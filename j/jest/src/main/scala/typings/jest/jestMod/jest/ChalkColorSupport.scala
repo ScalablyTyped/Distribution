@@ -18,7 +18,7 @@ trait ChalkColorSupport extends js.Object {
 object ChalkColorSupport {
   @scala.inline
   def apply(has16m: Boolean, has256: Boolean, hasBasic: Boolean, level: `0` | `1` | `2` | `3`): ChalkColorSupport = {
-    val __obj = js.Dynamic.literal(has16m = has16m, has256 = has256, hasBasic = hasBasic, level = level.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(has16m = has16m.asInstanceOf[js.Any], has256 = has256.asInstanceOf[js.Any], hasBasic = hasBasic.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChalkColorSupport]
   }

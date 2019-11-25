@@ -11,7 +11,7 @@ trait JenkinsArtifactDownloadInput extends ArtifactDownloadInputBase {
 object JenkinsArtifactDownloadInput {
   @scala.inline
   def apply(alias: String, artifactDownloadMode: String, artifactItems: js.Array[String], artifactType: String): JenkinsArtifactDownloadInput = {
-    val __obj = js.Dynamic.literal(alias = alias, artifactDownloadMode = artifactDownloadMode, artifactItems = artifactItems, artifactType = artifactType)
+    val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any], artifactDownloadMode = artifactDownloadMode.asInstanceOf[js.Any], artifactItems = artifactItems.asInstanceOf[js.Any], artifactType = artifactType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[JenkinsArtifactDownloadInput]
   }

@@ -12,7 +12,7 @@ trait WithStyles[T /* <: String | StyleRules[String] | StyleRulesCallback[String
 object WithStyles {
   @scala.inline
   def apply[T /* <: String | StyleRules[String] | StyleRulesCallback[String] */, IncludeTheme /* <: js.UndefOr[Boolean] */](classes: ClassNameMap[_ | T]): WithStyles[T, IncludeTheme] = {
-    val __obj = js.Dynamic.literal(classes = classes)
+    val __obj = js.Dynamic.literal(classes = classes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WithStyles[T, IncludeTheme]]
   }

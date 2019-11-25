@@ -19,8 +19,8 @@ object _QuietTime {
   @scala.inline
   def apply(End: String = null, Start: String = null): _QuietTime = {
     val __obj = js.Dynamic.literal()
-    if (End != null) __obj.updateDynamic("End")(End)
-    if (Start != null) __obj.updateDynamic("Start")(Start)
+    if (End != null) __obj.updateDynamic("End")(End.asInstanceOf[js.Any])
+    if (Start != null) __obj.updateDynamic("Start")(Start.asInstanceOf[js.Any])
     __obj.asInstanceOf[_QuietTime]
   }
 }

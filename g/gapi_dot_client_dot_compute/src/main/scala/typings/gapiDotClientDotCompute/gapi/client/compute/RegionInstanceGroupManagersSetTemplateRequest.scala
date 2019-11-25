@@ -13,7 +13,7 @@ object RegionInstanceGroupManagersSetTemplateRequest {
   @scala.inline
   def apply(instanceTemplate: String = null): RegionInstanceGroupManagersSetTemplateRequest = {
     val __obj = js.Dynamic.literal()
-    if (instanceTemplate != null) __obj.updateDynamic("instanceTemplate")(instanceTemplate)
+    if (instanceTemplate != null) __obj.updateDynamic("instanceTemplate")(instanceTemplate.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegionInstanceGroupManagersSetTemplateRequest]
   }
 }

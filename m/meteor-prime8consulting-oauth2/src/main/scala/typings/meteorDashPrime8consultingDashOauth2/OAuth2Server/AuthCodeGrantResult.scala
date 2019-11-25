@@ -14,7 +14,7 @@ trait AuthCodeGrantResult extends js.Object {
 object AuthCodeGrantResult {
   @scala.inline
   def apply(authorizationCode: String, error: js.Any, redirectToUri: String, success: Boolean): AuthCodeGrantResult = {
-    val __obj = js.Dynamic.literal(authorizationCode = authorizationCode, error = error, redirectToUri = redirectToUri, success = success)
+    val __obj = js.Dynamic.literal(authorizationCode = authorizationCode.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], redirectToUri = redirectToUri.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AuthCodeGrantResult]
   }

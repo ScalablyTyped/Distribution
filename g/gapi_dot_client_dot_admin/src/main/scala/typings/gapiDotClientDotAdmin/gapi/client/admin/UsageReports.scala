@@ -28,11 +28,11 @@ object UsageReports {
     warnings: js.Array[Anon_Code] = null
   ): UsageReports = {
     val __obj = js.Dynamic.literal()
-    if (etag != null) __obj.updateDynamic("etag")(etag)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (usageReports != null) __obj.updateDynamic("usageReports")(usageReports)
-    if (warnings != null) __obj.updateDynamic("warnings")(warnings)
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (usageReports != null) __obj.updateDynamic("usageReports")(usageReports.asInstanceOf[js.Any])
+    if (warnings != null) __obj.updateDynamic("warnings")(warnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsageReports]
   }
 }

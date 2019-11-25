@@ -51,11 +51,11 @@ object ExtraButtonsOptions {
     multiple: js.UndefOr[Boolean] = js.undefined,
     validation: js.Any = null
   ): ExtraButtonsOptions = {
-    val __obj = js.Dynamic.literal(element = element)
-    if (fileInputTitle != null) __obj.updateDynamic("fileInputTitle")(fileInputTitle)
-    if (!js.isUndefined(folders)) __obj.updateDynamic("folders")(folders)
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
-    if (validation != null) __obj.updateDynamic("validation")(validation)
+    val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any])
+    if (fileInputTitle != null) __obj.updateDynamic("fileInputTitle")(fileInputTitle.asInstanceOf[js.Any])
+    if (!js.isUndefined(folders)) __obj.updateDynamic("folders")(folders.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
+    if (validation != null) __obj.updateDynamic("validation")(validation.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtraButtonsOptions]
   }
 }

@@ -12,7 +12,7 @@ object DecoratorsPluginOptions {
   @scala.inline
   def apply(decoratorsBeforeExport: js.UndefOr[Boolean] = js.undefined): DecoratorsPluginOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(decoratorsBeforeExport)) __obj.updateDynamic("decoratorsBeforeExport")(decoratorsBeforeExport)
+    if (!js.isUndefined(decoratorsBeforeExport)) __obj.updateDynamic("decoratorsBeforeExport")(decoratorsBeforeExport.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecoratorsPluginOptions]
   }
 }

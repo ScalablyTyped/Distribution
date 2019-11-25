@@ -12,7 +12,7 @@ object FullscreenOptions {
   @scala.inline
   def apply(navigationUI: FullscreenNavigationUI = null): FullscreenOptions = {
     val __obj = js.Dynamic.literal()
-    if (navigationUI != null) __obj.updateDynamic("navigationUI")(navigationUI)
+    if (navigationUI != null) __obj.updateDynamic("navigationUI")(navigationUI.asInstanceOf[js.Any])
     __obj.asInstanceOf[FullscreenOptions]
   }
 }

@@ -18,8 +18,8 @@ object ParseOptions {
     out: Instantiable1[/* size */ Double, NumberDictionary[Double]] = null
   ): ParseOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(loose)) __obj.updateDynamic("loose")(loose)
-    if (out != null) __obj.updateDynamic("out")(out)
+    if (!js.isUndefined(loose)) __obj.updateDynamic("loose")(loose.asInstanceOf[js.Any])
+    if (out != null) __obj.updateDynamic("out")(out.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParseOptions]
   }
 }

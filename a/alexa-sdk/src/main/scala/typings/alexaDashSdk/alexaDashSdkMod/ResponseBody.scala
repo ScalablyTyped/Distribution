@@ -13,8 +13,8 @@ trait ResponseBody extends js.Object {
 object ResponseBody {
   @scala.inline
   def apply(response: Response, version: String, sessionAttributes: js.Any = null): ResponseBody = {
-    val __obj = js.Dynamic.literal(response = response, version = version)
-    if (sessionAttributes != null) __obj.updateDynamic("sessionAttributes")(sessionAttributes)
+    val __obj = js.Dynamic.literal(response = response.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    if (sessionAttributes != null) __obj.updateDynamic("sessionAttributes")(sessionAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseBody]
   }
 }

@@ -32,10 +32,10 @@ object Anon_AcceptedDate {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (ip != null) __obj.updateDynamic("ip")(ip)
-    if (offline != null) __obj.updateDynamic("offline")(offline)
-    if (online != null) __obj.updateDynamic("online")(online)
-    if (user_agent != null) __obj.updateDynamic("user_agent")(user_agent)
+    if (ip != null) __obj.updateDynamic("ip")(ip.asInstanceOf[js.Any])
+    if (offline != null) __obj.updateDynamic("offline")(offline.asInstanceOf[js.Any])
+    if (online != null) __obj.updateDynamic("online")(online.asInstanceOf[js.Any])
+    if (user_agent != null) __obj.updateDynamic("user_agent")(user_agent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AcceptedDate]
   }
 }

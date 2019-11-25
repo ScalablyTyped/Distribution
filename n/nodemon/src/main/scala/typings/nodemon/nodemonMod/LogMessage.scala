@@ -13,8 +13,8 @@ trait LogMessage extends js.Object {
 object LogMessage {
   @scala.inline
   def apply(colour: String, message: String, `type`: String): LogMessage = {
-    val __obj = js.Dynamic.literal(colour = colour, message = message)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(colour = colour.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogMessage]
   }
 }

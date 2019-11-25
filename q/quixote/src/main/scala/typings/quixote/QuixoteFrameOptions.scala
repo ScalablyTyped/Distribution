@@ -25,8 +25,8 @@ object QuixoteFrameOptions {
   ): QuixoteFrameOptions = {
     val __obj = js.Dynamic.literal()
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (src != null) __obj.updateDynamic("src")(src)
-    if (stylesheet != null) __obj.updateDynamic("stylesheet")(stylesheet)
+    if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
+    if (stylesheet != null) __obj.updateDynamic("stylesheet")(stylesheet.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuixoteFrameOptions]
   }

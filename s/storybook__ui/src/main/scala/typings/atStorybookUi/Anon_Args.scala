@@ -33,7 +33,7 @@ object Anon_Args {
     onKeyUp: Validator[js.Function1[/* repeated */ _, _]],
     prefix: Validator[String]
   ): Anon_Args = {
-    val __obj = js.Dynamic.literal(childIds = childIds, children = children, id = id, isExpanded = isExpanded, isLeaf = isLeaf, name = name, onClick = onClick, onKeyUp = onKeyUp, prefix = prefix)
+    val __obj = js.Dynamic.literal(childIds = childIds.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isExpanded = isExpanded.asInstanceOf[js.Any], isLeaf = isLeaf.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], onClick = onClick.asInstanceOf[js.Any], onKeyUp = onKeyUp.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Args]
   }

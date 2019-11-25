@@ -25,8 +25,8 @@ object ErrorPayload {
     worker: String,
     backtrace: js.Array[String] = null
   ): ErrorPayload = {
-    val __obj = js.Dynamic.literal(error = error, exception = exception, failed_at = failed_at, payload = payload, queue = queue, worker = worker)
-    if (backtrace != null) __obj.updateDynamic("backtrace")(backtrace)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], exception = exception.asInstanceOf[js.Any], failed_at = failed_at.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], queue = queue.asInstanceOf[js.Any], worker = worker.asInstanceOf[js.Any])
+    if (backtrace != null) __obj.updateDynamic("backtrace")(backtrace.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorPayload]
   }
 }

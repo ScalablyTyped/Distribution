@@ -59,13 +59,13 @@ object ApplePayPaymentRequest {
     shippingMethods: js.Any = null,
     shippingType: js.Any = null
   ): ApplePayPaymentRequest = {
-    val __obj = js.Dynamic.literal(countryCode = countryCode, currencyCode = currencyCode, merchantCapabilities = merchantCapabilities, supportedNetworks = supportedNetworks, total = total)
-    if (billingContact != null) __obj.updateDynamic("billingContact")(billingContact)
-    if (requiredBillingContactFields != null) __obj.updateDynamic("requiredBillingContactFields")(requiredBillingContactFields)
-    if (requiredShippingContactFields != null) __obj.updateDynamic("requiredShippingContactFields")(requiredShippingContactFields)
-    if (shippingContact != null) __obj.updateDynamic("shippingContact")(shippingContact)
-    if (shippingMethods != null) __obj.updateDynamic("shippingMethods")(shippingMethods)
-    if (shippingType != null) __obj.updateDynamic("shippingType")(shippingType)
+    val __obj = js.Dynamic.literal(countryCode = countryCode.asInstanceOf[js.Any], currencyCode = currencyCode.asInstanceOf[js.Any], merchantCapabilities = merchantCapabilities.asInstanceOf[js.Any], supportedNetworks = supportedNetworks.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
+    if (billingContact != null) __obj.updateDynamic("billingContact")(billingContact.asInstanceOf[js.Any])
+    if (requiredBillingContactFields != null) __obj.updateDynamic("requiredBillingContactFields")(requiredBillingContactFields.asInstanceOf[js.Any])
+    if (requiredShippingContactFields != null) __obj.updateDynamic("requiredShippingContactFields")(requiredShippingContactFields.asInstanceOf[js.Any])
+    if (shippingContact != null) __obj.updateDynamic("shippingContact")(shippingContact.asInstanceOf[js.Any])
+    if (shippingMethods != null) __obj.updateDynamic("shippingMethods")(shippingMethods.asInstanceOf[js.Any])
+    if (shippingType != null) __obj.updateDynamic("shippingType")(shippingType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplePayPaymentRequest]
   }
 }

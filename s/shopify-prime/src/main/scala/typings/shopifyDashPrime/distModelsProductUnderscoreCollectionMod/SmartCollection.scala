@@ -72,19 +72,19 @@ object SmartCollection {
     updated_at: String = null
   ): SmartCollection = {
     val __obj = js.Dynamic.literal()
-    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
-    if (body_html != null) __obj.updateDynamic("body_html")(body_html)
-    if (!js.isUndefined(disjunctive)) __obj.updateDynamic("disjunctive")(disjunctive)
-    if (handle != null) __obj.updateDynamic("handle")(handle)
+    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id.asInstanceOf[js.Any])
+    if (body_html != null) __obj.updateDynamic("body_html")(body_html.asInstanceOf[js.Any])
+    if (!js.isUndefined(disjunctive)) __obj.updateDynamic("disjunctive")(disjunctive.asInstanceOf[js.Any])
+    if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (published_at != null) __obj.updateDynamic("published_at")(published_at)
-    if (published_scope != null) __obj.updateDynamic("published_scope")(published_scope)
-    if (rules != null) __obj.updateDynamic("rules")(rules)
-    if (sort_order != null) __obj.updateDynamic("sort_order")(sort_order)
-    if (template_suffix != null) __obj.updateDynamic("template_suffix")(template_suffix)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at)
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (published_at != null) __obj.updateDynamic("published_at")(published_at.asInstanceOf[js.Any])
+    if (published_scope != null) __obj.updateDynamic("published_scope")(published_scope.asInstanceOf[js.Any])
+    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
+    if (sort_order != null) __obj.updateDynamic("sort_order")(sort_order.asInstanceOf[js.Any])
+    if (template_suffix != null) __obj.updateDynamic("template_suffix")(template_suffix.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at.asInstanceOf[js.Any])
     __obj.asInstanceOf[SmartCollection]
   }
 }

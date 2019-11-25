@@ -59,10 +59,10 @@ object PullsListParams {
     sort: created | updated | popularity | `long-running` = null,
     state: open | closed | all = null
   ): PullsListParams = {
-    val __obj = js.Dynamic.literal(owner = owner, repo = repo)
-    if (base != null) __obj.updateDynamic("base")(base)
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
+    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (head != null) __obj.updateDynamic("head")(head)
+    if (head != null) __obj.updateDynamic("head")(head.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (per_page != null) __obj.updateDynamic("per_page")(per_page.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])

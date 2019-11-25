@@ -13,9 +13,9 @@ trait PushChannelSubscription extends js.Object {
 object PushChannelSubscription {
   @scala.inline
   def apply(channel: String, clientId: String = null, deviceId: String = null): PushChannelSubscription = {
-    val __obj = js.Dynamic.literal(channel = channel)
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId)
-    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId)
+    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any])
+    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
+    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PushChannelSubscription]
   }
 }

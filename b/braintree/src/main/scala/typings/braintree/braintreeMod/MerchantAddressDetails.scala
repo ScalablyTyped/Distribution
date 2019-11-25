@@ -14,7 +14,7 @@ trait MerchantAddressDetails extends js.Object {
 object MerchantAddressDetails {
   @scala.inline
   def apply(locality: String, postalCode: String, region: String, streetAddress: String): MerchantAddressDetails = {
-    val __obj = js.Dynamic.literal(locality = locality, postalCode = postalCode, region = region, streetAddress = streetAddress)
+    val __obj = js.Dynamic.literal(locality = locality.asInstanceOf[js.Any], postalCode = postalCode.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], streetAddress = streetAddress.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MerchantAddressDetails]
   }

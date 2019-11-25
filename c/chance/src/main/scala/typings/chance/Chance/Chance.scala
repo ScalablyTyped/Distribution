@@ -73,7 +73,7 @@ trait Chance extends Seeded {
   def character(
     opts: AtLeastOneKey[
       CharacterOptions, 
-      /* import warning: ImportType.apply c Unsupported type mapping: 
+      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in 'casing' | 'pool' | 'alpha' | 'numeric' | 'symbols' ]: std.Pick<chance.Chance.CharacterOptions, K>}
     */ typings.chance.chanceStrings.Chance with js.Any
     ]
@@ -111,7 +111,7 @@ trait Chance extends Seeded {
   def email(
     opts: AtLeastOneKey[
       EmailOptions, 
-      /* import warning: ImportType.apply c Unsupported type mapping: 
+      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in 'length' | 'domain' ]: std.Pick<chance.Chance.EmailOptions, K>}
     */ typings.chance.chanceStrings.Chance with js.Any
     ]
@@ -129,7 +129,7 @@ trait Chance extends Seeded {
   def first(
     opts: AtLeastOneKey[
       FirstNameOptions, 
-      /* import warning: ImportType.apply c Unsupported type mapping: 
+      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in 'gender' | 'nationality' ]: std.Pick<chance.Chance.FirstNameOptions, K>}
     */ typings.chance.chanceStrings.Chance with js.Any
     ]
@@ -152,7 +152,7 @@ trait Chance extends Seeded {
   def integer(
     opts: AtLeastOneKey[
       IntegerOptions, 
-      /* import warning: ImportType.apply c Unsupported type mapping: 
+      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in 'min' | 'max' ]: std.Pick<chance.Chance.IntegerOptions, K>}
     */ typings.chance.chanceStrings.Chance with js.Any
     ]
@@ -187,7 +187,7 @@ trait Chance extends Seeded {
   def name(
     opts: AtLeastOneKey[
       NameOptions, 
-      /* import warning: ImportType.apply c Unsupported type mapping: 
+      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof chance.Chance.NameOptions ]: std.Pick<chance.Chance.NameOptions, K>}
     */ typings.chance.chanceStrings.Chance with js.Any
     ]
@@ -196,7 +196,7 @@ trait Chance extends Seeded {
   def name_prefix(
     opts: AtLeastOneKey[
       PrefixOptions, 
-      /* import warning: ImportType.apply c Unsupported type mapping: 
+      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof chance.Chance.PrefixOptions ]: std.Pick<chance.Chance.PrefixOptions, K>}
     */ typings.chance.chanceStrings.Chance with js.Any
     ]
@@ -232,7 +232,7 @@ trait Chance extends Seeded {
   def prefix(
     opts: AtLeastOneKey[
       PrefixOptions, 
-      /* import warning: ImportType.apply c Unsupported type mapping: 
+      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof chance.Chance.PrefixOptions ]: std.Pick<chance.Chance.PrefixOptions, K>}
     */ typings.chance.chanceStrings.Chance with js.Any
     ]
@@ -253,7 +253,7 @@ trait Chance extends Seeded {
   def sentence(
     opts: AtLeastOneKey[
       SentenceOptions, 
-      /* import warning: ImportType.apply c Unsupported type mapping: 
+      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in 'words' | 'punctuation' ]: std.Pick<chance.Chance.SentenceOptions, K>}
     */ typings.chance.chanceStrings.Chance with js.Any
     ]
@@ -293,7 +293,7 @@ trait Chance extends Seeded {
   def string(
     opts: AtLeastOneKey[
       StringOptions, 
-      /* import warning: ImportType.apply c Unsupported type mapping: 
+      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof chance.Chance.StringOptions ]: std.Pick<chance.Chance.StringOptions, K>}
     */ typings.chance.chanceStrings.Chance with js.Any
     ]
@@ -314,7 +314,7 @@ trait Chance extends Seeded {
   def url(
     opts: AtLeastOneKey[
       UrlOptions, 
-      /* import warning: ImportType.apply c Unsupported type mapping: 
+      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in 'protocol' | 'domain' | 'domain_prefix' | 'path' | 'extensions' ]: std.Pick<chance.Chance.UrlOptions, K>}
     */ typings.chance.chanceStrings.Chance with js.Any
     ]
@@ -325,7 +325,7 @@ trait Chance extends Seeded {
   def word(
     opts: AtLeastOneKey[
       WordOptions, 
-      /* import warning: ImportType.apply c Unsupported type mapping: 
+      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in 'length' | 'syllables' | 'capitalize' ]: std.Pick<chance.Chance.WordOptions, K>}
     */ typings.chance.chanceStrings.Chance with js.Any
     ]

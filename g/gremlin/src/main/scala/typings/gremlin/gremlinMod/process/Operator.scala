@@ -34,7 +34,7 @@ object Operator {
     sum: EnumValue,
     sumlong: EnumValue
   ): Operator = {
-    val __obj = js.Dynamic.literal(addall = addall, and = and, assign = assign, div = div, max = max, min = min, minus = minus, mult = mult, or = or, sum = sum, sumlong = sumlong)
+    val __obj = js.Dynamic.literal(addall = addall.asInstanceOf[js.Any], and = and.asInstanceOf[js.Any], assign = assign.asInstanceOf[js.Any], div = div.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], minus = minus.asInstanceOf[js.Any], mult = mult.asInstanceOf[js.Any], or = or.asInstanceOf[js.Any], sum = sum.asInstanceOf[js.Any], sumlong = sumlong.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Operator]
   }

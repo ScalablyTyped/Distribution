@@ -13,7 +13,7 @@ object Anon_Errors {
   @scala.inline
   def apply(errors: js.Array[Anon_Code] = null): Anon_Errors = {
     val __obj = js.Dynamic.literal()
-    if (errors != null) __obj.updateDynamic("errors")(errors)
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Errors]
   }
 }

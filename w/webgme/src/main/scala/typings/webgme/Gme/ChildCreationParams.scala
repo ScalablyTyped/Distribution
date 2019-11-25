@@ -12,7 +12,7 @@ trait ChildCreationParams extends js.Object {
 object ChildCreationParams {
   @scala.inline
   def apply(baseId: String, parentId: String): ChildCreationParams = {
-    val __obj = js.Dynamic.literal(baseId = baseId, parentId = parentId)
+    val __obj = js.Dynamic.literal(baseId = baseId.asInstanceOf[js.Any], parentId = parentId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChildCreationParams]
   }

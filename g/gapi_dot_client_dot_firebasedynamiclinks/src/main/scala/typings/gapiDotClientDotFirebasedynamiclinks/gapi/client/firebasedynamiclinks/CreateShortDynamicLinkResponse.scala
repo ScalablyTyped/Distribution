@@ -17,9 +17,9 @@ object CreateShortDynamicLinkResponse {
   @scala.inline
   def apply(previewLink: String = null, shortLink: String = null, warning: js.Array[DynamicLinkWarning] = null): CreateShortDynamicLinkResponse = {
     val __obj = js.Dynamic.literal()
-    if (previewLink != null) __obj.updateDynamic("previewLink")(previewLink)
-    if (shortLink != null) __obj.updateDynamic("shortLink")(shortLink)
-    if (warning != null) __obj.updateDynamic("warning")(warning)
+    if (previewLink != null) __obj.updateDynamic("previewLink")(previewLink.asInstanceOf[js.Any])
+    if (shortLink != null) __obj.updateDynamic("shortLink")(shortLink.asInstanceOf[js.Any])
+    if (warning != null) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateShortDynamicLinkResponse]
   }
 }

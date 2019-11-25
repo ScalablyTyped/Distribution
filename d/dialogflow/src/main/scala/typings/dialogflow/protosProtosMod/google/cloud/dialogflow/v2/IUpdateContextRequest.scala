@@ -17,8 +17,8 @@ object IUpdateContextRequest {
   @scala.inline
   def apply(context: IContext = null, updateMask: IFieldMask = null): IUpdateContextRequest = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (updateMask != null) __obj.updateDynamic("updateMask")(updateMask)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (updateMask != null) __obj.updateDynamic("updateMask")(updateMask.asInstanceOf[js.Any])
     __obj.asInstanceOf[IUpdateContextRequest]
   }
 }

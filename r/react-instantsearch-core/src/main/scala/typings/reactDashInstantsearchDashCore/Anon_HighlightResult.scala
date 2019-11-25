@@ -19,7 +19,7 @@ trait Anon_HighlightResult[TDoc] extends js.Object {
 object Anon_HighlightResult {
   @scala.inline
   def apply[TDoc](_highlightResult: HighlightResult[TDoc], objectID: String): Anon_HighlightResult[TDoc] = {
-    val __obj = js.Dynamic.literal(_highlightResult = _highlightResult, objectID = objectID)
+    val __obj = js.Dynamic.literal(_highlightResult = _highlightResult.asInstanceOf[js.Any], objectID = objectID.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_HighlightResult[TDoc]]
   }

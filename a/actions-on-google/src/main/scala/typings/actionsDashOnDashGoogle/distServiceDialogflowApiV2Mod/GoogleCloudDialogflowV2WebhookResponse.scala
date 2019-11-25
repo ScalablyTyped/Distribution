@@ -25,12 +25,12 @@ object GoogleCloudDialogflowV2WebhookResponse {
     source: String = null
   ): GoogleCloudDialogflowV2WebhookResponse = {
     val __obj = js.Dynamic.literal()
-    if (followupEventInput != null) __obj.updateDynamic("followupEventInput")(followupEventInput)
-    if (fulfillmentMessages != null) __obj.updateDynamic("fulfillmentMessages")(fulfillmentMessages)
-    if (fulfillmentText != null) __obj.updateDynamic("fulfillmentText")(fulfillmentText)
-    if (outputContexts != null) __obj.updateDynamic("outputContexts")(outputContexts)
-    if (payload != null) __obj.updateDynamic("payload")(payload)
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (followupEventInput != null) __obj.updateDynamic("followupEventInput")(followupEventInput.asInstanceOf[js.Any])
+    if (fulfillmentMessages != null) __obj.updateDynamic("fulfillmentMessages")(fulfillmentMessages.asInstanceOf[js.Any])
+    if (fulfillmentText != null) __obj.updateDynamic("fulfillmentText")(fulfillmentText.asInstanceOf[js.Any])
+    if (outputContexts != null) __obj.updateDynamic("outputContexts")(outputContexts.asInstanceOf[js.Any])
+    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudDialogflowV2WebhookResponse]
   }
 }

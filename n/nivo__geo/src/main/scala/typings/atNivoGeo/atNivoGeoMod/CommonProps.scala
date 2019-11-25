@@ -35,17 +35,17 @@ object CommonProps {
     projectionType: GeoProjectionType = null,
     theme: PartialTheme = null
   ): CommonProps = {
-    val __obj = js.Dynamic.literal(features = features)
-    if (!js.isUndefined(enableGraticule)) __obj.updateDynamic("enableGraticule")(enableGraticule)
-    if (graticuleLineColor != null) __obj.updateDynamic("graticuleLineColor")(graticuleLineColor)
+    val __obj = js.Dynamic.literal(features = features.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableGraticule)) __obj.updateDynamic("enableGraticule")(enableGraticule.asInstanceOf[js.Any])
+    if (graticuleLineColor != null) __obj.updateDynamic("graticuleLineColor")(graticuleLineColor.asInstanceOf[js.Any])
     if (graticuleLineWidth != null) __obj.updateDynamic("graticuleLineWidth")(graticuleLineWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(isInteractive)) __obj.updateDynamic("isInteractive")(isInteractive)
-    if (margin != null) __obj.updateDynamic("margin")(margin)
-    if (projectionRotation != null) __obj.updateDynamic("projectionRotation")(projectionRotation)
+    if (!js.isUndefined(isInteractive)) __obj.updateDynamic("isInteractive")(isInteractive.asInstanceOf[js.Any])
+    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
+    if (projectionRotation != null) __obj.updateDynamic("projectionRotation")(projectionRotation.asInstanceOf[js.Any])
     if (projectionScale != null) __obj.updateDynamic("projectionScale")(projectionScale.asInstanceOf[js.Any])
-    if (projectionTranslation != null) __obj.updateDynamic("projectionTranslation")(projectionTranslation)
-    if (projectionType != null) __obj.updateDynamic("projectionType")(projectionType)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (projectionTranslation != null) __obj.updateDynamic("projectionTranslation")(projectionTranslation.asInstanceOf[js.Any])
+    if (projectionType != null) __obj.updateDynamic("projectionType")(projectionType.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommonProps]
   }
 }

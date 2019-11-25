@@ -19,10 +19,10 @@ object ScriptTagOptions {
   @scala.inline
   def apply(content: String = null, path: String = null, `type`: String = null, url: String = null): ScriptTagOptions = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScriptTagOptions]
   }
 }

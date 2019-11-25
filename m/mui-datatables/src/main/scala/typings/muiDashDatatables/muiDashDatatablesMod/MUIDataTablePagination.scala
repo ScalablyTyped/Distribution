@@ -23,7 +23,7 @@ object MUIDataTablePagination {
     page: Double,
     rowsPerPage: Double
   ): MUIDataTablePagination = {
-    val __obj = js.Dynamic.literal(changeRowsPerPage = js.Any.fromFunction1(changeRowsPerPage), count = count, options = options, page = page, rowsPerPage = rowsPerPage)
+    val __obj = js.Dynamic.literal(changeRowsPerPage = js.Any.fromFunction1(changeRowsPerPage), count = count.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], rowsPerPage = rowsPerPage.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MUIDataTablePagination]
   }

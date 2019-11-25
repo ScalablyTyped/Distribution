@@ -24,10 +24,10 @@ object Anon_Attachments {
     views: StringDictionary[Anon_Map] = null
   ): Anon_Attachments = {
     val __obj = js.Dynamic.literal()
-    if (_attachments != null) __obj.updateDynamic("_attachments")(_attachments)
-    if (_rev != null) __obj.updateDynamic("_rev")(_rev)
-    if (filters != null) __obj.updateDynamic("filters")(filters)
-    if (views != null) __obj.updateDynamic("views")(views)
+    if (_attachments != null) __obj.updateDynamic("_attachments")(_attachments.asInstanceOf[js.Any])
+    if (_rev != null) __obj.updateDynamic("_rev")(_rev.asInstanceOf[js.Any])
+    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
+    if (views != null) __obj.updateDynamic("views")(views.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Attachments]
   }
 }

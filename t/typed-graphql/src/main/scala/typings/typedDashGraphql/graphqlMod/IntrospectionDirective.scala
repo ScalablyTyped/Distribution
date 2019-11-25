@@ -19,8 +19,8 @@ object IntrospectionDirective {
     name: String,
     description: String = null
   ): IntrospectionDirective = {
-    val __obj = js.Dynamic.literal(args = args, locations = locations, name = name)
-    if (description != null) __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], locations = locations.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrospectionDirective]
   }
 }

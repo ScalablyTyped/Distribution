@@ -44,7 +44,7 @@ object CurrentNode {
     text: String | (js.Array[Content | String]),
     ul: js.Array[Content]
   ): CurrentNode = {
-    val __obj = js.Dynamic.literal(canvas = canvas, columns = columns, headlineLevel = headlineLevel, id = id, image = image, ol = ol, pageNumbers = pageNumbers, pageOrientation = pageOrientation, pages = pages, qr = qr, stack = stack, startPosition = startPosition, style = style.asInstanceOf[js.Any], table = table, text = text.asInstanceOf[js.Any], ul = ul)
+    val __obj = js.Dynamic.literal(canvas = canvas.asInstanceOf[js.Any], columns = columns.asInstanceOf[js.Any], headlineLevel = headlineLevel.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], ol = ol.asInstanceOf[js.Any], pageNumbers = pageNumbers.asInstanceOf[js.Any], pageOrientation = pageOrientation.asInstanceOf[js.Any], pages = pages.asInstanceOf[js.Any], qr = qr.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any], startPosition = startPosition.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], ul = ul.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CurrentNode]
   }

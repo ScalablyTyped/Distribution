@@ -29,9 +29,9 @@ object EXCEPINFO {
     pfnDeferredFillIn: js.UndefOr[scala.Nothing] = js.undefined,
     pvReserved: js.UndefOr[scala.Nothing] = js.undefined
   ): EXCEPINFO = {
-    val __obj = js.Dynamic.literal(bstrDescription = bstrDescription, bstrHelpFile = bstrHelpFile, bstrSource = bstrSource, dwHelpContext = dwHelpContext, scode = scode, wCode = wCode, wReserved = wReserved)
-    if (!js.isUndefined(pfnDeferredFillIn)) __obj.updateDynamic("pfnDeferredFillIn")(pfnDeferredFillIn)
-    if (!js.isUndefined(pvReserved)) __obj.updateDynamic("pvReserved")(pvReserved)
+    val __obj = js.Dynamic.literal(bstrDescription = bstrDescription.asInstanceOf[js.Any], bstrHelpFile = bstrHelpFile.asInstanceOf[js.Any], bstrSource = bstrSource.asInstanceOf[js.Any], dwHelpContext = dwHelpContext.asInstanceOf[js.Any], scode = scode.asInstanceOf[js.Any], wCode = wCode.asInstanceOf[js.Any], wReserved = wReserved.asInstanceOf[js.Any])
+    if (!js.isUndefined(pfnDeferredFillIn)) __obj.updateDynamic("pfnDeferredFillIn")(pfnDeferredFillIn.asInstanceOf[js.Any])
+    if (!js.isUndefined(pvReserved)) __obj.updateDynamic("pvReserved")(pvReserved.asInstanceOf[js.Any])
     __obj.asInstanceOf[EXCEPINFO]
   }
 }

@@ -14,3 +14,20 @@ import scala.scalajs.js.annotation._
 */
 trait CustomLayerId extends js.Object
 
+object CustomLayerId {
+  @scala.inline
+  def axes: typings.atNivoScatterplot.atNivoScatterplotStrings.axes = this.cast("axes")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def grid: typings.atNivoScatterplot.atNivoScatterplotStrings.grid = this.cast("grid")
+  @scala.inline
+  def legends: typings.atNivoScatterplot.atNivoScatterplotStrings.legends = this.cast("legends")
+  @scala.inline
+  def markers: typings.atNivoScatterplot.atNivoScatterplotStrings.markers = this.cast("markers")
+  @scala.inline
+  def mesh: typings.atNivoScatterplot.atNivoScatterplotStrings.mesh = this.cast("mesh")
+  @scala.inline
+  def nodes: typings.atNivoScatterplot.atNivoScatterplotStrings.nodes = this.cast("nodes")
+}
+

@@ -17,7 +17,7 @@ trait Window extends js.Object {
 object Window {
   @scala.inline
   def apply(Worker: Worker, requestFileSystem: js.Any, webkitRequestFileSystem: js.Any, webkitURL: URL): Window = {
-    val __obj = js.Dynamic.literal(Worker = Worker, requestFileSystem = requestFileSystem, webkitRequestFileSystem = webkitRequestFileSystem, webkitURL = webkitURL)
+    val __obj = js.Dynamic.literal(Worker = Worker.asInstanceOf[js.Any], requestFileSystem = requestFileSystem.asInstanceOf[js.Any], webkitRequestFileSystem = webkitRequestFileSystem.asInstanceOf[js.Any], webkitURL = webkitURL.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Window]
   }

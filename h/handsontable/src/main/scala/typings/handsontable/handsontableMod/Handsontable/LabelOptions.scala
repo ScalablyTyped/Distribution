@@ -21,7 +21,7 @@ object LabelOptions {
   ): LabelOptions = {
     val __obj = js.Dynamic.literal()
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (property != null) __obj.updateDynamic("property")(property)
+    if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelOptions]
   }

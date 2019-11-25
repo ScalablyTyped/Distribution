@@ -23,8 +23,8 @@ object Account {
     `type`: String,
     verification_status: VerificationStatus
   ): Account = {
-    val __obj = js.Dynamic.literal(id = id, mask = mask, name = name, subtype = subtype, verification_status = verification_status)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], mask = mask.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], subtype = subtype.asInstanceOf[js.Any], verification_status = verification_status.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Account]
   }
 }

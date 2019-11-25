@@ -14,7 +14,7 @@ object Anon_Notifications {
   @scala.inline
   def apply(notifications: js.Array[CalendarNotification] = null): Anon_Notifications = {
     val __obj = js.Dynamic.literal()
-    if (notifications != null) __obj.updateDynamic("notifications")(notifications)
+    if (notifications != null) __obj.updateDynamic("notifications")(notifications.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Notifications]
   }
 }

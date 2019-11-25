@@ -13,7 +13,7 @@ trait Anon_ChallengeHeaderValue extends js.Object {
 object Anon_ChallengeHeaderValue {
   @scala.inline
   def apply(challengeHeaderValue: HttpChallengeHeaderValue, returnValue: Boolean): Anon_ChallengeHeaderValue = {
-    val __obj = js.Dynamic.literal(challengeHeaderValue = challengeHeaderValue, returnValue = returnValue)
+    val __obj = js.Dynamic.literal(challengeHeaderValue = challengeHeaderValue.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ChallengeHeaderValue]
   }

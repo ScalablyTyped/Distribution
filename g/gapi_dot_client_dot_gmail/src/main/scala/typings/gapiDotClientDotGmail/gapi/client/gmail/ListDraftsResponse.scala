@@ -21,8 +21,8 @@ object ListDraftsResponse {
     resultSizeEstimate: Int | Double = null
   ): ListDraftsResponse = {
     val __obj = js.Dynamic.literal()
-    if (drafts != null) __obj.updateDynamic("drafts")(drafts)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (drafts != null) __obj.updateDynamic("drafts")(drafts.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     if (resultSizeEstimate != null) __obj.updateDynamic("resultSizeEstimate")(resultSizeEstimate.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDraftsResponse]
   }

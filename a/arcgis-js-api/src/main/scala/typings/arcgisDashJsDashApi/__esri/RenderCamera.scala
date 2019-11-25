@@ -87,7 +87,7 @@ object RenderCamera {
     viewInverseTransposeMatrix: ArrayLike[Double],
     viewMatrix: ArrayLike[Double]
   ): RenderCamera = {
-    val __obj = js.Dynamic.literal(center = center, constructor = constructor, eye = eye, far = far, fovX = fovX, fovY = fovY, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), near = near, projectionMatrix = projectionMatrix, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), up = up, viewInverseTransposeMatrix = viewInverseTransposeMatrix, viewMatrix = viewMatrix)
+    val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], eye = eye.asInstanceOf[js.Any], far = far.asInstanceOf[js.Any], fovX = fovX.asInstanceOf[js.Any], fovY = fovY.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), near = near.asInstanceOf[js.Any], projectionMatrix = projectionMatrix.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), up = up.asInstanceOf[js.Any], viewInverseTransposeMatrix = viewInverseTransposeMatrix.asInstanceOf[js.Any], viewMatrix = viewMatrix.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RenderCamera]
   }

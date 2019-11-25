@@ -22,8 +22,8 @@ object IntrospectionObjectType {
     name: String,
     description: String = null
   ): IntrospectionObjectType = {
-    val __obj = js.Dynamic.literal(fields = fields, interfaces = interfaces, kind = kind, name = name)
-    if (description != null) __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], interfaces = interfaces.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrospectionObjectType]
   }
 }

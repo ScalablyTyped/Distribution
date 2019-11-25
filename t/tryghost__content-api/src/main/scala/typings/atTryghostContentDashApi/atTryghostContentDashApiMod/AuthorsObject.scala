@@ -13,7 +13,7 @@ trait AuthorsObject extends js.Object {
 object AuthorsObject {
   @scala.inline
   def apply(authors: js.Array[Author], meta: Anon_Pagination): AuthorsObject = {
-    val __obj = js.Dynamic.literal(authors = authors, meta = meta)
+    val __obj = js.Dynamic.literal(authors = authors.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AuthorsObject]
   }

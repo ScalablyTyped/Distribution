@@ -13,7 +13,7 @@ trait TSet extends js.Object {
 object TSet {
   @scala.inline
   def apply(etype: Type, size: Double): TSet = {
-    val __obj = js.Dynamic.literal(etype = etype, size = size)
+    val __obj = js.Dynamic.literal(etype = etype.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TSet]
   }

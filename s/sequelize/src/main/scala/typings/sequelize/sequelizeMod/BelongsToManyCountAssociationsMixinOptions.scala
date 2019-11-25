@@ -24,7 +24,7 @@ object BelongsToManyCountAssociationsMixinOptions {
   def apply(scope: String | Boolean = null, where: AnyWhereOptions = null): BelongsToManyCountAssociationsMixinOptions = {
     val __obj = js.Dynamic.literal()
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    if (where != null) __obj.updateDynamic("where")(where)
+    if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])
     __obj.asInstanceOf[BelongsToManyCountAssociationsMixinOptions]
   }
 }

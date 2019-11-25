@@ -80,11 +80,11 @@ object GoogleActionsV2OrdersGoogleProvidedPaymentOptions {
     tokenizationParameters: GoogleActionsV2OrdersPaymentMethodTokenizationParameters = null
   ): GoogleActionsV2OrdersGoogleProvidedPaymentOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(billingAddressRequired)) __obj.updateDynamic("billingAddressRequired")(billingAddressRequired)
-    if (facilitationSpecification != null) __obj.updateDynamic("facilitationSpecification")(facilitationSpecification)
-    if (!js.isUndefined(prepaidCardDisallowed)) __obj.updateDynamic("prepaidCardDisallowed")(prepaidCardDisallowed)
-    if (supportedCardNetworks != null) __obj.updateDynamic("supportedCardNetworks")(supportedCardNetworks)
-    if (tokenizationParameters != null) __obj.updateDynamic("tokenizationParameters")(tokenizationParameters)
+    if (!js.isUndefined(billingAddressRequired)) __obj.updateDynamic("billingAddressRequired")(billingAddressRequired.asInstanceOf[js.Any])
+    if (facilitationSpecification != null) __obj.updateDynamic("facilitationSpecification")(facilitationSpecification.asInstanceOf[js.Any])
+    if (!js.isUndefined(prepaidCardDisallowed)) __obj.updateDynamic("prepaidCardDisallowed")(prepaidCardDisallowed.asInstanceOf[js.Any])
+    if (supportedCardNetworks != null) __obj.updateDynamic("supportedCardNetworks")(supportedCardNetworks.asInstanceOf[js.Any])
+    if (tokenizationParameters != null) __obj.updateDynamic("tokenizationParameters")(tokenizationParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2OrdersGoogleProvidedPaymentOptions]
   }
 }

@@ -41,7 +41,7 @@ object Anon_ActivateViews {
     updateGlobals: js.Function,
     updateUrl: js.Function
   ): Anon_ActivateViews = {
-    val __obj = js.Dynamic.literal(activateViews = activateViews, addCoreResolves = addCoreResolves, eagerResolve = eagerResolve, ignored = ignored, invalid = invalid, lazyLoad = lazyLoad, lazyResolve = lazyResolve, loadViews = loadViews, onEnter = onEnter, onExit = onExit, onRetain = onRetain, redirectTo = redirectTo, resolveAll = resolveAll, updateGlobals = updateGlobals, updateUrl = updateUrl)
+    val __obj = js.Dynamic.literal(activateViews = activateViews.asInstanceOf[js.Any], addCoreResolves = addCoreResolves.asInstanceOf[js.Any], eagerResolve = eagerResolve.asInstanceOf[js.Any], ignored = ignored.asInstanceOf[js.Any], invalid = invalid.asInstanceOf[js.Any], lazyLoad = lazyLoad.asInstanceOf[js.Any], lazyResolve = lazyResolve.asInstanceOf[js.Any], loadViews = loadViews.asInstanceOf[js.Any], onEnter = onEnter.asInstanceOf[js.Any], onExit = onExit.asInstanceOf[js.Any], onRetain = onRetain.asInstanceOf[js.Any], redirectTo = redirectTo.asInstanceOf[js.Any], resolveAll = resolveAll.asInstanceOf[js.Any], updateGlobals = updateGlobals.asInstanceOf[js.Any], updateUrl = updateUrl.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ActivateViews]
   }

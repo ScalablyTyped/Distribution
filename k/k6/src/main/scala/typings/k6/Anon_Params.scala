@@ -15,8 +15,8 @@ object Anon_Params {
   @scala.inline
   def apply[RT /* <: js.UndefOr[ResponseType] */](params: RefinedParams[RT] = null, selector: String = null): Anon_Params[RT] = {
     val __obj = js.Dynamic.literal()
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (selector != null) __obj.updateDynamic("selector")(selector)
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Params[RT]]
   }
 }

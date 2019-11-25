@@ -16,8 +16,8 @@ object Anon_Private {
   @scala.inline
   def apply(`private`: Record[String, String] = null, shared: Record[String, String] = null): Anon_Private = {
     val __obj = js.Dynamic.literal()
-    if (`private` != null) __obj.updateDynamic("private")(`private`)
-    if (shared != null) __obj.updateDynamic("shared")(shared)
+    if (`private` != null) __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
+    if (shared != null) __obj.updateDynamic("shared")(shared.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Private]
   }
 }

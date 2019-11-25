@@ -20,7 +20,7 @@ object _GPSPointDimension {
   @scala.inline
   def apply(Coordinates: _GPSCoordinates = null, RangeInKilometers: Int | Double = null): _GPSPointDimension = {
     val __obj = js.Dynamic.literal()
-    if (Coordinates != null) __obj.updateDynamic("Coordinates")(Coordinates)
+    if (Coordinates != null) __obj.updateDynamic("Coordinates")(Coordinates.asInstanceOf[js.Any])
     if (RangeInKilometers != null) __obj.updateDynamic("RangeInKilometers")(RangeInKilometers.asInstanceOf[js.Any])
     __obj.asInstanceOf[_GPSPointDimension]
   }

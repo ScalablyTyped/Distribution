@@ -43,10 +43,10 @@ object HotpVerifyOptions {
     encoding: Encoding = null,
     window: Int | Double = null
   ): HotpVerifyOptions = {
-    val __obj = js.Dynamic.literal(counter = counter, secret = secret, token = token)
-    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm)
+    val __obj = js.Dynamic.literal(counter = counter.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
+    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
     if (digits != null) __obj.updateDynamic("digits")(digits.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (window != null) __obj.updateDynamic("window")(window.asInstanceOf[js.Any])
     __obj.asInstanceOf[HotpVerifyOptions]
   }

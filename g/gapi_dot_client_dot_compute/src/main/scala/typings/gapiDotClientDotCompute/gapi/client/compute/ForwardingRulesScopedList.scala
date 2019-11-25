@@ -16,8 +16,8 @@ object ForwardingRulesScopedList {
   @scala.inline
   def apply(forwardingRules: js.Array[ForwardingRule] = null, warning: Anon_Code = null): ForwardingRulesScopedList = {
     val __obj = js.Dynamic.literal()
-    if (forwardingRules != null) __obj.updateDynamic("forwardingRules")(forwardingRules)
-    if (warning != null) __obj.updateDynamic("warning")(warning)
+    if (forwardingRules != null) __obj.updateDynamic("forwardingRules")(forwardingRules.asInstanceOf[js.Any])
+    if (warning != null) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
     __obj.asInstanceOf[ForwardingRulesScopedList]
   }
 }

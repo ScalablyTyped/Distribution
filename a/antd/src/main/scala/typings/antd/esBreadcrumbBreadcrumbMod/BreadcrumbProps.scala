@@ -36,13 +36,13 @@ object BreadcrumbProps {
     style: CSSProperties = null
   ): BreadcrumbProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (itemRender != null) __obj.updateDynamic("itemRender")(js.Any.fromFunction4(itemRender))
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
-    if (routes != null) __obj.updateDynamic("routes")(routes)
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
+    if (routes != null) __obj.updateDynamic("routes")(routes.asInstanceOf[js.Any])
     if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[BreadcrumbProps]
   }
 }

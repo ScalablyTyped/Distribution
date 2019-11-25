@@ -14,9 +14,9 @@ object ITimeSeriesPresentationOptions {
   @scala.inline
   def apply(fillStyle: String = null, lineWidth: Int | Double = null, strokeStyle: String = null): ITimeSeriesPresentationOptions = {
     val __obj = js.Dynamic.literal()
-    if (fillStyle != null) __obj.updateDynamic("fillStyle")(fillStyle)
+    if (fillStyle != null) __obj.updateDynamic("fillStyle")(fillStyle.asInstanceOf[js.Any])
     if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
-    if (strokeStyle != null) __obj.updateDynamic("strokeStyle")(strokeStyle)
+    if (strokeStyle != null) __obj.updateDynamic("strokeStyle")(strokeStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITimeSeriesPresentationOptions]
   }
 }

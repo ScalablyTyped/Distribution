@@ -32,7 +32,7 @@ trait Argv[T] extends js.Object {
     * it will ignore the first parameter since it expects it to be the script name. In order to override
     * this behavior, use `.parse(process.argv.slice(1))` instead of .argv and the first parameter won't be ignored.
     */
-  var argv: /* import warning: ImportType.apply c Unsupported type mapping: 
+  var argv: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof yargs.yargs.Arguments<T> ]: yargs.yargs.Arguments<T>[key]}
     */ typings.yargs.yargsStrings.Argv with Arguments[T] = js.native
   /**
@@ -41,7 +41,7 @@ trait Argv[T] extends js.Object {
     * If the arguments have been parsed, this contain detailed parsed arguments.
     */
   var parsed: DetailedArguments | `false` = js.native
-  def apply(): /* import warning: ImportType.apply c Unsupported type mapping: 
+  def apply(): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof yargs.yargs.Arguments<T> ]: yargs.yargs.Arguments<T>[key]}
     */ typings.yargs.yargsStrings.Argv with Arguments[T] = js.native
   def apply(args: js.Array[String]): Argv[T] = js.native
@@ -499,25 +499,25 @@ trait Argv[T] extends js.Object {
     * Note: Providing a callback to parse() disables the `exitProcess` setting until after the callback is invoked.
     * @param [context]  Provides a useful mechanism for passing state information to commands
     */
-  def parse(): /* import warning: ImportType.apply c Unsupported type mapping: 
+  def parse(): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof yargs.yargs.Arguments<T> ]: yargs.yargs.Arguments<T>[key]}
     */ typings.yargs.yargsStrings.Argv with Arguments[T] = js.native
-  def parse(arg: String): /* import warning: ImportType.apply c Unsupported type mapping: 
+  def parse(arg: String): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof yargs.yargs.Arguments<T> ]: yargs.yargs.Arguments<T>[key]}
     */ typings.yargs.yargsStrings.Argv with Arguments[T] = js.native
-  def parse(arg: String, context: js.Object): /* import warning: ImportType.apply c Unsupported type mapping: 
+  def parse(arg: String, context: js.Object): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof yargs.yargs.Arguments<T> ]: yargs.yargs.Arguments<T>[key]}
     */ typings.yargs.yargsStrings.Argv with Arguments[T] = js.native
-  def parse(arg: String, context: js.Object, parseCallback: ParseCallback[T]): /* import warning: ImportType.apply c Unsupported type mapping: 
+  def parse(arg: String, context: js.Object, parseCallback: ParseCallback[T]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof yargs.yargs.Arguments<T> ]: yargs.yargs.Arguments<T>[key]}
     */ typings.yargs.yargsStrings.Argv with Arguments[T] = js.native
-  def parse(arg: js.Array[String]): /* import warning: ImportType.apply c Unsupported type mapping: 
+  def parse(arg: js.Array[String]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof yargs.yargs.Arguments<T> ]: yargs.yargs.Arguments<T>[key]}
     */ typings.yargs.yargsStrings.Argv with Arguments[T] = js.native
-  def parse(arg: js.Array[String], context: js.Object): /* import warning: ImportType.apply c Unsupported type mapping: 
+  def parse(arg: js.Array[String], context: js.Object): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof yargs.yargs.Arguments<T> ]: yargs.yargs.Arguments<T>[key]}
     */ typings.yargs.yargsStrings.Argv with Arguments[T] = js.native
-  def parse(arg: js.Array[String], context: js.Object, parseCallback: ParseCallback[T]): /* import warning: ImportType.apply c Unsupported type mapping: 
+  def parse(arg: js.Array[String], context: js.Object, parseCallback: ParseCallback[T]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof yargs.yargs.Arguments<T> ]: yargs.yargs.Arguments<T>[key]}
     */ typings.yargs.yargsStrings.Argv with Arguments[T] = js.native
   /** Allows to configure advanced yargs features. */

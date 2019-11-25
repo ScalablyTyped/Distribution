@@ -13,8 +13,8 @@ trait RequestParams extends js.Object {
 object RequestParams {
   @scala.inline
   def apply(method: String, url: String, body: String = null): RequestParams = {
-    val __obj = js.Dynamic.literal(method = method, url = url)
-    if (body != null) __obj.updateDynamic("body")(body)
+    val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestParams]
   }
 }

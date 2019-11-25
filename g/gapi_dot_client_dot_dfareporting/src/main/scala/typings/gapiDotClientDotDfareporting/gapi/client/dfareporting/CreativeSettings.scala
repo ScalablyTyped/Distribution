@@ -15,8 +15,8 @@ object CreativeSettings {
   @scala.inline
   def apply(iFrameFooter: String = null, iFrameHeader: String = null): CreativeSettings = {
     val __obj = js.Dynamic.literal()
-    if (iFrameFooter != null) __obj.updateDynamic("iFrameFooter")(iFrameFooter)
-    if (iFrameHeader != null) __obj.updateDynamic("iFrameHeader")(iFrameHeader)
+    if (iFrameFooter != null) __obj.updateDynamic("iFrameFooter")(iFrameFooter.asInstanceOf[js.Any])
+    if (iFrameHeader != null) __obj.updateDynamic("iFrameHeader")(iFrameHeader.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreativeSettings]
   }
 }

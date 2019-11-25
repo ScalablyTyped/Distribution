@@ -18,7 +18,7 @@ object CloudPushNotificationSuccessArg {
   @scala.inline
   def apply(deviceToken: String = null): CloudPushNotificationSuccessArg = {
     val __obj = js.Dynamic.literal()
-    if (deviceToken != null) __obj.updateDynamic("deviceToken")(deviceToken)
+    if (deviceToken != null) __obj.updateDynamic("deviceToken")(deviceToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloudPushNotificationSuccessArg]
   }
 }

@@ -26,13 +26,13 @@ object DocMarkdownConfig {
     tables: js.UndefOr[Boolean] = js.undefined
   ): DocMarkdownConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(breaks)) __obj.updateDynamic("breaks")(breaks)
-    if (!js.isUndefined(gfm)) __obj.updateDynamic("gfm")(gfm)
-    if (!js.isUndefined(pedantic)) __obj.updateDynamic("pedantic")(pedantic)
-    if (!js.isUndefined(sanitize)) __obj.updateDynamic("sanitize")(sanitize)
-    if (!js.isUndefined(smartLists)) __obj.updateDynamic("smartLists")(smartLists)
-    if (!js.isUndefined(smartypants)) __obj.updateDynamic("smartypants")(smartypants)
-    if (!js.isUndefined(tables)) __obj.updateDynamic("tables")(tables)
+    if (!js.isUndefined(breaks)) __obj.updateDynamic("breaks")(breaks.asInstanceOf[js.Any])
+    if (!js.isUndefined(gfm)) __obj.updateDynamic("gfm")(gfm.asInstanceOf[js.Any])
+    if (!js.isUndefined(pedantic)) __obj.updateDynamic("pedantic")(pedantic.asInstanceOf[js.Any])
+    if (!js.isUndefined(sanitize)) __obj.updateDynamic("sanitize")(sanitize.asInstanceOf[js.Any])
+    if (!js.isUndefined(smartLists)) __obj.updateDynamic("smartLists")(smartLists.asInstanceOf[js.Any])
+    if (!js.isUndefined(smartypants)) __obj.updateDynamic("smartypants")(smartypants.asInstanceOf[js.Any])
+    if (!js.isUndefined(tables)) __obj.updateDynamic("tables")(tables.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocMarkdownConfig]
   }
 }

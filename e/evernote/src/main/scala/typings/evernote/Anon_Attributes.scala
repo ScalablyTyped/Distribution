@@ -36,16 +36,16 @@ object Anon_Attributes {
     updateSequenceNum: Int | Double = null,
     updated: Int | Double = null
   ): Anon_Attributes = {
-    val __obj = js.Dynamic.literal(guid = guid)
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
+    val __obj = js.Dynamic.literal(guid = guid.asInstanceOf[js.Any])
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
     if (contentLength != null) __obj.updateDynamic("contentLength")(contentLength.asInstanceOf[js.Any])
     if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
     if (deleted != null) __obj.updateDynamic("deleted")(deleted.asInstanceOf[js.Any])
-    if (largestResourceMime != null) __obj.updateDynamic("largestResourceMime")(largestResourceMime)
+    if (largestResourceMime != null) __obj.updateDynamic("largestResourceMime")(largestResourceMime.asInstanceOf[js.Any])
     if (largestResourceSize != null) __obj.updateDynamic("largestResourceSize")(largestResourceSize.asInstanceOf[js.Any])
-    if (notebookGuid != null) __obj.updateDynamic("notebookGuid")(notebookGuid)
-    if (tagGuids != null) __obj.updateDynamic("tagGuids")(tagGuids)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (notebookGuid != null) __obj.updateDynamic("notebookGuid")(notebookGuid.asInstanceOf[js.Any])
+    if (tagGuids != null) __obj.updateDynamic("tagGuids")(tagGuids.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (updateSequenceNum != null) __obj.updateDynamic("updateSequenceNum")(updateSequenceNum.asInstanceOf[js.Any])
     if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Attributes]

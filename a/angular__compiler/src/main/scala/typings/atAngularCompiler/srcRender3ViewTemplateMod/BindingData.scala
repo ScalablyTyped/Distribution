@@ -39,7 +39,7 @@ object BindingData {
     retrievalLevel: Double,
     declareLocalCallback: (/* scope */ BindingScope, /* relativeLevel */ Double) => js.Array[Statement] = null
   ): BindingData = {
-    val __obj = js.Dynamic.literal(declare = declare, lhs = lhs, localRef = localRef, priority = priority, retrievalLevel = retrievalLevel)
+    val __obj = js.Dynamic.literal(declare = declare.asInstanceOf[js.Any], lhs = lhs.asInstanceOf[js.Any], localRef = localRef.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], retrievalLevel = retrievalLevel.asInstanceOf[js.Any])
     if (declareLocalCallback != null) __obj.updateDynamic("declareLocalCallback")(js.Any.fromFunction2(declareLocalCallback))
     __obj.asInstanceOf[BindingData]
   }

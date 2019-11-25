@@ -18,9 +18,9 @@ object Anon_HintMessageDetail {
     messageSummary: Anon_RangeOverflow = null
   ): Anon_HintMessageDetail = {
     val __obj = js.Dynamic.literal()
-    if (hint != null) __obj.updateDynamic("hint")(hint)
-    if (messageDetail != null) __obj.updateDynamic("messageDetail")(messageDetail)
-    if (messageSummary != null) __obj.updateDynamic("messageSummary")(messageSummary)
+    if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
+    if (messageDetail != null) __obj.updateDynamic("messageDetail")(messageDetail.asInstanceOf[js.Any])
+    if (messageSummary != null) __obj.updateDynamic("messageSummary")(messageSummary.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_HintMessageDetail]
   }
 }

@@ -23,9 +23,9 @@ object Anon_Label {
   @scala.inline
   def apply(label: String = null, `type`: String = null, value: String = null): Anon_Label = {
     val __obj = js.Dynamic.literal()
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Label]
   }
 }

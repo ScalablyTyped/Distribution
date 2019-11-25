@@ -11,7 +11,7 @@ trait InsightsServiceAccountResponseFollowers_top_countries_graph extends js.Obj
 object InsightsServiceAccountResponseFollowers_top_countries_graph {
   @scala.inline
   def apply(data_points: js.Array[InsightsServiceAccountResponseDataPointsItem]): InsightsServiceAccountResponseFollowers_top_countries_graph = {
-    val __obj = js.Dynamic.literal(data_points = data_points)
+    val __obj = js.Dynamic.literal(data_points = data_points.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InsightsServiceAccountResponseFollowers_top_countries_graph]
   }

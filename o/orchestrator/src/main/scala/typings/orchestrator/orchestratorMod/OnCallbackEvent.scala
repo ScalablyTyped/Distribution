@@ -14,7 +14,7 @@ trait OnCallbackEvent extends js.Object {
 object OnCallbackEvent {
   @scala.inline
   def apply(err: js.Any, message: String, task: String, duration: Int | Double = null): OnCallbackEvent = {
-    val __obj = js.Dynamic.literal(err = err, message = message, task = task)
+    val __obj = js.Dynamic.literal(err = err.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], task = task.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnCallbackEvent]
   }

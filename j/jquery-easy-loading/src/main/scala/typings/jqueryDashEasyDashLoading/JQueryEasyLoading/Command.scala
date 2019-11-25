@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait Command extends js.Object
 
+object Command {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def resize: typings.jqueryDashEasyDashLoading.jqueryDashEasyDashLoadingStrings.resize = this.cast("resize")
+  @scala.inline
+  def start: typings.jqueryDashEasyDashLoading.jqueryDashEasyDashLoadingStrings.start = this.cast("start")
+  @scala.inline
+  def stop: typings.jqueryDashEasyDashLoading.jqueryDashEasyDashLoadingStrings.stop = this.cast("stop")
+  @scala.inline
+  def toggle: typings.jqueryDashEasyDashLoading.jqueryDashEasyDashLoadingStrings.toggle = this.cast("toggle")
+}
+

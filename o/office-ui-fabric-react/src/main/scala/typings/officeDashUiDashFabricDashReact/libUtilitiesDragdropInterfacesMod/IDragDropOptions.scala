@@ -89,11 +89,11 @@ object IDragDropOptions {
     onDragStart: (/* item */ js.UndefOr[js.Any], /* itemIndex */ js.UndefOr[Double], /* selectedItems */ js.UndefOr[js.Array[_]], /* event */ js.UndefOr[MouseEvent]) => Unit = null,
     onDrop: (/* item */ js.UndefOr[js.Any], /* event */ js.UndefOr[DragEvent]) => Unit = null
   ): IDragDropOptions = {
-    val __obj = js.Dynamic.literal(context = context, selectionIndex = selectionIndex, updateDropState = js.Any.fromFunction2(updateDropState))
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], selectionIndex = selectionIndex.asInstanceOf[js.Any], updateDropState = js.Any.fromFunction2(updateDropState))
     if (canDrag != null) __obj.updateDynamic("canDrag")(js.Any.fromFunction1(canDrag))
     if (canDrop != null) __obj.updateDynamic("canDrop")(js.Any.fromFunction2(canDrop))
-    if (eventMap != null) __obj.updateDynamic("eventMap")(eventMap)
-    if (key != null) __obj.updateDynamic("key")(key)
+    if (eventMap != null) __obj.updateDynamic("eventMap")(eventMap.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(js.Any.fromFunction2(onDragEnd))
     if (onDragOver != null) __obj.updateDynamic("onDragOver")(js.Any.fromFunction2(onDragOver))
     if (onDragStart != null) __obj.updateDynamic("onDragStart")(js.Any.fromFunction4(onDragStart))

@@ -12,7 +12,7 @@ trait Lookup extends js.Object {
 object Lookup {
   @scala.inline
   def apply(node: FSNode, path: String): Lookup = {
-    val __obj = js.Dynamic.literal(node = node, path = path)
+    val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Lookup]
   }

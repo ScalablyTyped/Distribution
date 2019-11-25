@@ -50,17 +50,17 @@ object Anon_Address {
     returnAllAvailableData: js.UndefOr[Boolean] = js.undefined,
     userIp: String = null
   ): Anon_Address = {
-    val __obj = js.Dynamic.literal(address = address)
-    if (alt != null) __obj.updateDynamic("alt")(alt)
-    if (electionId != null) __obj.updateDynamic("electionId")(electionId)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
-    if (!js.isUndefined(officialOnly)) __obj.updateDynamic("officialOnly")(officialOnly)
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
-    if (!js.isUndefined(returnAllAvailableData)) __obj.updateDynamic("returnAllAvailableData")(returnAllAvailableData)
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any])
+    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
+    if (electionId != null) __obj.updateDynamic("electionId")(electionId.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
+    if (!js.isUndefined(officialOnly)) __obj.updateDynamic("officialOnly")(officialOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnAllAvailableData)) __obj.updateDynamic("returnAllAvailableData")(returnAllAvailableData.asInstanceOf[js.Any])
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Address]
   }
 }

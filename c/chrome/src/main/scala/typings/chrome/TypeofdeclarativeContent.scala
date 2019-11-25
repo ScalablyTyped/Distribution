@@ -28,7 +28,7 @@ object TypeofdeclarativeContent {
     ShowPageAction: Instantiable0[ShowPageAction],
     onPageChanged: PageChangedEvent
   ): TypeofdeclarativeContent = {
-    val __obj = js.Dynamic.literal(PageStateMatcher = PageStateMatcher, PageStateMatcherProperties = PageStateMatcherProperties, ShowPageAction = ShowPageAction, onPageChanged = onPageChanged)
+    val __obj = js.Dynamic.literal(PageStateMatcher = PageStateMatcher.asInstanceOf[js.Any], PageStateMatcherProperties = PageStateMatcherProperties.asInstanceOf[js.Any], ShowPageAction = ShowPageAction.asInstanceOf[js.Any], onPageChanged = onPageChanged.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeofdeclarativeContent]
   }

@@ -23,9 +23,9 @@ object Anon_Additionalbackgrounds {
     theme_frame: ImageDataOrExtensionURL = null
   ): Anon_Additionalbackgrounds = {
     val __obj = js.Dynamic.literal()
-    if (additional_backgrounds != null) __obj.updateDynamic("additional_backgrounds")(additional_backgrounds)
-    if (headerURL != null) __obj.updateDynamic("headerURL")(headerURL)
-    if (theme_frame != null) __obj.updateDynamic("theme_frame")(theme_frame)
+    if (additional_backgrounds != null) __obj.updateDynamic("additional_backgrounds")(additional_backgrounds.asInstanceOf[js.Any])
+    if (headerURL != null) __obj.updateDynamic("headerURL")(headerURL.asInstanceOf[js.Any])
+    if (theme_frame != null) __obj.updateDynamic("theme_frame")(theme_frame.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Additionalbackgrounds]
   }
 }

@@ -68,14 +68,14 @@ object _UnmarshalledDirectMessageConfiguration {
     SMSMessage: _UnmarshalledSMSMessage = null
   ): _UnmarshalledDirectMessageConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (ADMMessage != null) __obj.updateDynamic("ADMMessage")(ADMMessage)
-    if (APNSMessage != null) __obj.updateDynamic("APNSMessage")(APNSMessage)
-    if (BaiduMessage != null) __obj.updateDynamic("BaiduMessage")(BaiduMessage)
-    if (DefaultMessage != null) __obj.updateDynamic("DefaultMessage")(DefaultMessage)
-    if (DefaultPushNotificationMessage != null) __obj.updateDynamic("DefaultPushNotificationMessage")(DefaultPushNotificationMessage)
-    if (EmailMessage != null) __obj.updateDynamic("EmailMessage")(EmailMessage)
-    if (GCMMessage != null) __obj.updateDynamic("GCMMessage")(GCMMessage)
-    if (SMSMessage != null) __obj.updateDynamic("SMSMessage")(SMSMessage)
+    if (ADMMessage != null) __obj.updateDynamic("ADMMessage")(ADMMessage.asInstanceOf[js.Any])
+    if (APNSMessage != null) __obj.updateDynamic("APNSMessage")(APNSMessage.asInstanceOf[js.Any])
+    if (BaiduMessage != null) __obj.updateDynamic("BaiduMessage")(BaiduMessage.asInstanceOf[js.Any])
+    if (DefaultMessage != null) __obj.updateDynamic("DefaultMessage")(DefaultMessage.asInstanceOf[js.Any])
+    if (DefaultPushNotificationMessage != null) __obj.updateDynamic("DefaultPushNotificationMessage")(DefaultPushNotificationMessage.asInstanceOf[js.Any])
+    if (EmailMessage != null) __obj.updateDynamic("EmailMessage")(EmailMessage.asInstanceOf[js.Any])
+    if (GCMMessage != null) __obj.updateDynamic("GCMMessage")(GCMMessage.asInstanceOf[js.Any])
+    if (SMSMessage != null) __obj.updateDynamic("SMSMessage")(SMSMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledDirectMessageConfiguration]
   }
 }

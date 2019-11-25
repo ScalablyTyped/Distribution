@@ -55,12 +55,12 @@ object ParsedOptions {
     tzid: String = null,
     until: Date = null
   ): ParsedOptions = {
-    val __obj = js.Dynamic.literal(byhour = byhour, byminute = byminute, bymonth = bymonth, bymonthday = bymonthday, bynmonthday = bynmonthday, bysecond = bysecond, bysetpos = bysetpos, byweekday = byweekday, byweekno = byweekno, byyearday = byyearday, dtstart = dtstart, freq = freq, interval = interval, wkst = wkst)
+    val __obj = js.Dynamic.literal(byhour = byhour.asInstanceOf[js.Any], byminute = byminute.asInstanceOf[js.Any], bymonth = bymonth.asInstanceOf[js.Any], bymonthday = bymonthday.asInstanceOf[js.Any], bynmonthday = bynmonthday.asInstanceOf[js.Any], bysecond = bysecond.asInstanceOf[js.Any], bysetpos = bysetpos.asInstanceOf[js.Any], byweekday = byweekday.asInstanceOf[js.Any], byweekno = byweekno.asInstanceOf[js.Any], byyearday = byyearday.asInstanceOf[js.Any], dtstart = dtstart.asInstanceOf[js.Any], freq = freq.asInstanceOf[js.Any], interval = interval.asInstanceOf[js.Any], wkst = wkst.asInstanceOf[js.Any])
     if (byeaster != null) __obj.updateDynamic("byeaster")(byeaster.asInstanceOf[js.Any])
-    if (bynweekday != null) __obj.updateDynamic("bynweekday")(bynweekday)
+    if (bynweekday != null) __obj.updateDynamic("bynweekday")(bynweekday.asInstanceOf[js.Any])
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (tzid != null) __obj.updateDynamic("tzid")(tzid)
-    if (until != null) __obj.updateDynamic("until")(until)
+    if (tzid != null) __obj.updateDynamic("tzid")(tzid.asInstanceOf[js.Any])
+    if (until != null) __obj.updateDynamic("until")(until.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParsedOptions]
   }
 }

@@ -37,8 +37,8 @@ object RNFetchBlobFetchRepsonse {
     text: () => js.Promise[String],
     `type`: String
   ): RNFetchBlobFetchRepsonse = {
-    val __obj = js.Dynamic.literal(arrayBuffer = js.Any.fromFunction0(arrayBuffer), blob = js.Any.fromFunction0(blob), bodyUsed = bodyUsed, headers = headers, json = js.Any.fromFunction0(json), ok = ok, rawResp = js.Any.fromFunction0(rawResp), resp = resp, rnfbResp = rnfbResp, rnfbRespInfo = rnfbRespInfo, status = status, text = js.Any.fromFunction0(text))
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(arrayBuffer = js.Any.fromFunction0(arrayBuffer), blob = js.Any.fromFunction0(blob), bodyUsed = bodyUsed.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], json = js.Any.fromFunction0(json), ok = ok.asInstanceOf[js.Any], rawResp = js.Any.fromFunction0(rawResp), resp = resp.asInstanceOf[js.Any], rnfbResp = rnfbResp.asInstanceOf[js.Any], rnfbRespInfo = rnfbRespInfo.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], text = js.Any.fromFunction0(text))
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RNFetchBlobFetchRepsonse]
   }
 }

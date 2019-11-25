@@ -13,8 +13,8 @@ object Anon_Connection {
   @scala.inline
   def apply(_connection: Anon_Config = null, sql: String = null): Anon_Connection = {
     val __obj = js.Dynamic.literal()
-    if (_connection != null) __obj.updateDynamic("_connection")(_connection)
-    if (sql != null) __obj.updateDynamic("sql")(sql)
+    if (_connection != null) __obj.updateDynamic("_connection")(_connection.asInstanceOf[js.Any])
+    if (sql != null) __obj.updateDynamic("sql")(sql.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Connection]
   }
 }

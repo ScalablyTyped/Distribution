@@ -56,16 +56,16 @@ object CreateNotificationOptions {
     priority: Int | Double = null,
     progress: Int | Double = null
   ): CreateNotificationOptions = {
-    val __obj = js.Dynamic.literal(message = message, title = title)
-    __obj.updateDynamic("type")(`type`)
-    if (appIconMaskUrl != null) __obj.updateDynamic("appIconMaskUrl")(appIconMaskUrl)
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons)
-    if (contextMessage != null) __obj.updateDynamic("contextMessage")(contextMessage)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (appIconMaskUrl != null) __obj.updateDynamic("appIconMaskUrl")(appIconMaskUrl.asInstanceOf[js.Any])
+    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
+    if (contextMessage != null) __obj.updateDynamic("contextMessage")(contextMessage.asInstanceOf[js.Any])
     if (eventTime != null) __obj.updateDynamic("eventTime")(eventTime.asInstanceOf[js.Any])
-    if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl)
-    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
-    if (!js.isUndefined(isClickable)) __obj.updateDynamic("isClickable")(isClickable)
-    if (items != null) __obj.updateDynamic("items")(items)
+    if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl.asInstanceOf[js.Any])
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(isClickable)) __obj.updateDynamic("isClickable")(isClickable.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     if (progress != null) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateNotificationOptions]

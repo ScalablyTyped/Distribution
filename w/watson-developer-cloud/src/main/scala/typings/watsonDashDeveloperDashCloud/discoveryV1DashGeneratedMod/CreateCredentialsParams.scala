@@ -26,10 +26,10 @@ object CreateCredentialsParams {
     return_response: js.UndefOr[Boolean] = js.undefined,
     source_type: SourceType | String = null
   ): CreateCredentialsParams = {
-    val __obj = js.Dynamic.literal(environment_id = environment_id)
-    if (credential_details != null) __obj.updateDynamic("credential_details")(credential_details)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response)
+    val __obj = js.Dynamic.literal(environment_id = environment_id.asInstanceOf[js.Any])
+    if (credential_details != null) __obj.updateDynamic("credential_details")(credential_details.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
     if (source_type != null) __obj.updateDynamic("source_type")(source_type.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCredentialsParams]
   }

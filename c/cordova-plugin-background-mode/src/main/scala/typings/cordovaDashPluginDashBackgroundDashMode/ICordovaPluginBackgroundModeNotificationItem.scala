@@ -37,11 +37,11 @@ object ICordovaPluginBackgroundModeNotificationItem {
     title: String = null
   ): ICordovaPluginBackgroundModeNotificationItem = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(resume)) __obj.updateDynamic("resume")(resume)
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (ticker != null) __obj.updateDynamic("ticker")(ticker)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(resume)) __obj.updateDynamic("resume")(resume.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (ticker != null) __obj.updateDynamic("ticker")(ticker.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICordovaPluginBackgroundModeNotificationItem]
   }
 }

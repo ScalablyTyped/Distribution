@@ -25,8 +25,8 @@ object Anon_CompiledCloudFormationTemplate {
     runtime: String = null,
     timeout: Int | Double = null
   ): Anon_CompiledCloudFormationTemplate = {
-    val __obj = js.Dynamic.literal(compiledCloudFormationTemplate = compiledCloudFormationTemplate, name = name, region = region, stage = stage, versionFunctions = versionFunctions)
-    if (runtime != null) __obj.updateDynamic("runtime")(runtime)
+    val __obj = js.Dynamic.literal(compiledCloudFormationTemplate = compiledCloudFormationTemplate.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], stage = stage.asInstanceOf[js.Any], versionFunctions = versionFunctions.asInstanceOf[js.Any])
+    if (runtime != null) __obj.updateDynamic("runtime")(runtime.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CompiledCloudFormationTemplate]
   }

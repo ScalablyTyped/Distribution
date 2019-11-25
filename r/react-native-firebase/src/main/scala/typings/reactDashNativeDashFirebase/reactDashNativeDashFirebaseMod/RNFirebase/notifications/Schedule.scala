@@ -16,7 +16,7 @@ trait Schedule extends js.Object {
 object Schedule {
   @scala.inline
   def apply(fireDate: Double, repeatInterval: minute | hour | day | week = null): Schedule = {
-    val __obj = js.Dynamic.literal(fireDate = fireDate)
+    val __obj = js.Dynamic.literal(fireDate = fireDate.asInstanceOf[js.Any])
     if (repeatInterval != null) __obj.updateDynamic("repeatInterval")(repeatInterval.asInstanceOf[js.Any])
     __obj.asInstanceOf[Schedule]
   }

@@ -28,14 +28,14 @@ object JwtToken {
     unique_name: String = null
   ): JwtToken = {
     val __obj = js.Dynamic.literal()
-    if (aud != null) __obj.updateDynamic("aud")(aud)
+    if (aud != null) __obj.updateDynamic("aud")(aud.asInstanceOf[js.Any])
     if (exp != null) __obj.updateDynamic("exp")(exp.asInstanceOf[js.Any])
     if (iat != null) __obj.updateDynamic("iat")(iat.asInstanceOf[js.Any])
-    if (iss != null) __obj.updateDynamic("iss")(iss)
-    if (jti != null) __obj.updateDynamic("jti")(jti)
+    if (iss != null) __obj.updateDynamic("iss")(iss.asInstanceOf[js.Any])
+    if (jti != null) __obj.updateDynamic("jti")(jti.asInstanceOf[js.Any])
     if (nbf != null) __obj.updateDynamic("nbf")(nbf.asInstanceOf[js.Any])
-    if (sub != null) __obj.updateDynamic("sub")(sub)
-    if (unique_name != null) __obj.updateDynamic("unique_name")(unique_name)
+    if (sub != null) __obj.updateDynamic("sub")(sub.asInstanceOf[js.Any])
+    if (unique_name != null) __obj.updateDynamic("unique_name")(unique_name.asInstanceOf[js.Any])
     __obj.asInstanceOf[JwtToken]
   }
 }

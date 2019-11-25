@@ -13,7 +13,7 @@ trait AsObject extends js.Object {
 object AsObject {
   @scala.inline
   def apply(fetchEvents: Boolean, limit: String, startVersion: String): AsObject = {
-    val __obj = js.Dynamic.literal(fetchEvents = fetchEvents, limit = limit, startVersion = startVersion)
+    val __obj = js.Dynamic.literal(fetchEvents = fetchEvents.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], startVersion = startVersion.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AsObject]
   }

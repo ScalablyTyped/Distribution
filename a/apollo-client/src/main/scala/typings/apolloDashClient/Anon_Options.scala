@@ -19,8 +19,8 @@ object Anon_Options {
     queryManager: QueryManager[_],
     shouldSubscribe: js.UndefOr[Boolean] = js.undefined
   ): Anon_Options[TVariables] = {
-    val __obj = js.Dynamic.literal(options = options, queryManager = queryManager)
-    if (!js.isUndefined(shouldSubscribe)) __obj.updateDynamic("shouldSubscribe")(shouldSubscribe)
+    val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], queryManager = queryManager.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldSubscribe)) __obj.updateDynamic("shouldSubscribe")(shouldSubscribe.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Options[TVariables]]
   }
 }

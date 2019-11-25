@@ -23,7 +23,7 @@ object FieldRuleModel {
     isDisabled: Boolean,
     isSystem: Boolean
   ): FieldRuleModel = {
-    val __obj = js.Dynamic.literal(actions = actions, conditions = conditions, friendlyName = friendlyName, id = id, isDisabled = isDisabled, isSystem = isSystem)
+    val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], conditions = conditions.asInstanceOf[js.Any], friendlyName = friendlyName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isDisabled = isDisabled.asInstanceOf[js.Any], isSystem = isSystem.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FieldRuleModel]
   }

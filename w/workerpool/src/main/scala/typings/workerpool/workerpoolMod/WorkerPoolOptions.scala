@@ -54,8 +54,8 @@ object WorkerPoolOptions {
     workerType: auto | web | process | thread = null
   ): WorkerPoolOptions = {
     val __obj = js.Dynamic.literal()
-    if (forkArgs != null) __obj.updateDynamic("forkArgs")(forkArgs)
-    if (forkOpts != null) __obj.updateDynamic("forkOpts")(forkOpts)
+    if (forkArgs != null) __obj.updateDynamic("forkArgs")(forkArgs.asInstanceOf[js.Any])
+    if (forkOpts != null) __obj.updateDynamic("forkOpts")(forkOpts.asInstanceOf[js.Any])
     if (maxWorkers != null) __obj.updateDynamic("maxWorkers")(maxWorkers.asInstanceOf[js.Any])
     if (minWorkers != null) __obj.updateDynamic("minWorkers")(minWorkers.asInstanceOf[js.Any])
     if (nodeWorker != null) __obj.updateDynamic("nodeWorker")(nodeWorker.asInstanceOf[js.Any])

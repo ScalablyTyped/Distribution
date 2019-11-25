@@ -18,7 +18,7 @@ object Validation {
     messages: StringDictionary[String],
     overrideMessages: Boolean
   ): Validation = {
-    val __obj = js.Dynamic.literal(errorFilter = js.Any.fromFunction3(errorFilter), messages = messages, overrideMessages = overrideMessages)
+    val __obj = js.Dynamic.literal(errorFilter = js.Any.fromFunction3(errorFilter), messages = messages.asInstanceOf[js.Any], overrideMessages = overrideMessages.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Validation]
   }

@@ -22,8 +22,8 @@ object Anon_LabelLineStyle {
     lineStyle: Anon_ColorOpacityShadowBlur = null
   ): Anon_LabelLineStyle = {
     val __obj = js.Dynamic.literal()
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_LabelLineStyle]
   }
 }

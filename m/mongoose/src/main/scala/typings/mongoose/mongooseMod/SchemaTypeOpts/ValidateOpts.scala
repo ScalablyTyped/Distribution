@@ -22,10 +22,10 @@ object ValidateOpts {
     validator: RegExp | ValidateFn[_] = null
   ): ValidateOpts = {
     val __obj = js.Dynamic.literal()
-    if (isAsync != null) __obj.updateDynamic("isAsync")(isAsync)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (msg != null) __obj.updateDynamic("msg")(msg)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (isAsync != null) __obj.updateDynamic("isAsync")(isAsync.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (msg != null) __obj.updateDynamic("msg")(msg.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (validator != null) __obj.updateDynamic("validator")(validator.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidateOpts]
   }

@@ -14,7 +14,7 @@ trait Anon_Options extends js.Object {
 object Anon_Options {
   @scala.inline
   def apply(SSL: Instantiable1[js.UndefOr[/* options */ ForeverAgentOptions], ForeverAgentSSL]): Anon_Options = {
-    val __obj = js.Dynamic.literal(SSL = SSL)
+    val __obj = js.Dynamic.literal(SSL = SSL.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Options]
   }

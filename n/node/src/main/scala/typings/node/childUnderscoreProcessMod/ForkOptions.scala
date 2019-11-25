@@ -29,16 +29,16 @@ object ForkOptions {
     windowsVerbatimArguments: js.UndefOr[Boolean] = js.undefined
   ): ForkOptions = {
     val __obj = js.Dynamic.literal()
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
-    if (!js.isUndefined(detached)) __obj.updateDynamic("detached")(detached)
-    if (env != null) __obj.updateDynamic("env")(env)
-    if (execArgv != null) __obj.updateDynamic("execArgv")(execArgv)
-    if (execPath != null) __obj.updateDynamic("execPath")(execPath)
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
+    if (!js.isUndefined(detached)) __obj.updateDynamic("detached")(detached.asInstanceOf[js.Any])
+    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
+    if (execArgv != null) __obj.updateDynamic("execArgv")(execArgv.asInstanceOf[js.Any])
+    if (execPath != null) __obj.updateDynamic("execPath")(execPath.asInstanceOf[js.Any])
     if (gid != null) __obj.updateDynamic("gid")(gid.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
     if (stdio != null) __obj.updateDynamic("stdio")(stdio.asInstanceOf[js.Any])
     if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])
-    if (!js.isUndefined(windowsVerbatimArguments)) __obj.updateDynamic("windowsVerbatimArguments")(windowsVerbatimArguments)
+    if (!js.isUndefined(windowsVerbatimArguments)) __obj.updateDynamic("windowsVerbatimArguments")(windowsVerbatimArguments.asInstanceOf[js.Any])
     __obj.asInstanceOf[ForkOptions]
   }
 }

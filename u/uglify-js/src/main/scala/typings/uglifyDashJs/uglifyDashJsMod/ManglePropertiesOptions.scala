@@ -28,11 +28,11 @@ object ManglePropertiesOptions {
     reserved: js.Array[String] = null
   ): ManglePropertiesOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(builtins)) __obj.updateDynamic("builtins")(builtins)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (!js.isUndefined(keep_quoted)) __obj.updateDynamic("keep_quoted")(keep_quoted)
-    if (regex != null) __obj.updateDynamic("regex")(regex)
-    if (reserved != null) __obj.updateDynamic("reserved")(reserved)
+    if (!js.isUndefined(builtins)) __obj.updateDynamic("builtins")(builtins.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (!js.isUndefined(keep_quoted)) __obj.updateDynamic("keep_quoted")(keep_quoted.asInstanceOf[js.Any])
+    if (regex != null) __obj.updateDynamic("regex")(regex.asInstanceOf[js.Any])
+    if (reserved != null) __obj.updateDynamic("reserved")(reserved.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManglePropertiesOptions]
   }
 }

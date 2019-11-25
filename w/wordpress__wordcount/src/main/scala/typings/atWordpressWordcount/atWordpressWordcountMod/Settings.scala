@@ -36,7 +36,7 @@ object Settings {
     spaceRegExp: RegExp,
     wordsRegExp: RegExp
   ): Settings = {
-    val __obj = js.Dynamic.literal(HTMLEntityRegExp = HTMLEntityRegExp, HTMLRegExp = HTMLRegExp, HTMLcommentRegExp = HTMLcommentRegExp, astralRegExp = astralRegExp, characters_excluding_spacesRegExp = characters_excluding_spacesRegExp, characters_including_spacesRegExp = characters_including_spacesRegExp, connectorRegExp = connectorRegExp, l10n = l10n, removeRegExp = removeRegExp, spaceRegExp = spaceRegExp, wordsRegExp = wordsRegExp)
+    val __obj = js.Dynamic.literal(HTMLEntityRegExp = HTMLEntityRegExp.asInstanceOf[js.Any], HTMLRegExp = HTMLRegExp.asInstanceOf[js.Any], HTMLcommentRegExp = HTMLcommentRegExp.asInstanceOf[js.Any], astralRegExp = astralRegExp.asInstanceOf[js.Any], characters_excluding_spacesRegExp = characters_excluding_spacesRegExp.asInstanceOf[js.Any], characters_including_spacesRegExp = characters_including_spacesRegExp.asInstanceOf[js.Any], connectorRegExp = connectorRegExp.asInstanceOf[js.Any], l10n = l10n.asInstanceOf[js.Any], removeRegExp = removeRegExp.asInstanceOf[js.Any], spaceRegExp = spaceRegExp.asInstanceOf[js.Any], wordsRegExp = wordsRegExp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Settings]
   }

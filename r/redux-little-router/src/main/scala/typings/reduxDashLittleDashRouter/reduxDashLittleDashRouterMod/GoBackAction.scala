@@ -13,7 +13,7 @@ object GoBackAction {
   @scala.inline
   def apply(`type`: ROUTER_GO_BACK): GoBackAction = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoBackAction]
   }
 }

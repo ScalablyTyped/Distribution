@@ -15,7 +15,7 @@ trait ResourceFileEdit extends js.Object {
 object ResourceFileEdit {
   @scala.inline
   def apply(newUri: Uri, oldUri: Uri, options: Anon_IgnoreIfExists): ResourceFileEdit = {
-    val __obj = js.Dynamic.literal(newUri = newUri, oldUri = oldUri, options = options)
+    val __obj = js.Dynamic.literal(newUri = newUri.asInstanceOf[js.Any], oldUri = oldUri.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ResourceFileEdit]
   }

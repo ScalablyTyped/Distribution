@@ -15,9 +15,9 @@ object IRouteEditorParameters {
   @scala.inline
   def apply(data: Anon_Image = null, options: IBaseButtonParametersOptions = null, state: js.Object = null): IRouteEditorParameters = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRouteEditorParameters]
   }
 }

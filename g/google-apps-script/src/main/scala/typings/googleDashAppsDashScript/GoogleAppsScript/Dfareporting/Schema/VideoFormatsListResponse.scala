@@ -13,8 +13,8 @@ object VideoFormatsListResponse {
   @scala.inline
   def apply(kind: String = null, videoFormats: js.Array[VideoFormat] = null): VideoFormatsListResponse = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (videoFormats != null) __obj.updateDynamic("videoFormats")(videoFormats)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (videoFormats != null) __obj.updateDynamic("videoFormats")(videoFormats.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoFormatsListResponse]
   }
 }

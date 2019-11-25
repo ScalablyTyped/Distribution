@@ -52,15 +52,15 @@ object MetricValue {
     stringValue: String = null
   ): MetricValue = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(boolValue)) __obj.updateDynamic("boolValue")(boolValue)
-    if (distributionValue != null) __obj.updateDynamic("distributionValue")(distributionValue)
+    if (!js.isUndefined(boolValue)) __obj.updateDynamic("boolValue")(boolValue.asInstanceOf[js.Any])
+    if (distributionValue != null) __obj.updateDynamic("distributionValue")(distributionValue.asInstanceOf[js.Any])
     if (doubleValue != null) __obj.updateDynamic("doubleValue")(doubleValue.asInstanceOf[js.Any])
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
-    if (int64Value != null) __obj.updateDynamic("int64Value")(int64Value)
-    if (labels != null) __obj.updateDynamic("labels")(labels)
-    if (moneyValue != null) __obj.updateDynamic("moneyValue")(moneyValue)
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
-    if (stringValue != null) __obj.updateDynamic("stringValue")(stringValue)
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
+    if (int64Value != null) __obj.updateDynamic("int64Value")(int64Value.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (moneyValue != null) __obj.updateDynamic("moneyValue")(moneyValue.asInstanceOf[js.Any])
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
+    if (stringValue != null) __obj.updateDynamic("stringValue")(stringValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricValue]
   }
 }

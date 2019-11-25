@@ -11,7 +11,7 @@ trait BootstrapHyperLinkEventMap extends ControlEventMap {
 object BootstrapHyperLinkEventMap {
   @scala.inline
   def apply(click: EditClickEventArgs, init: EventArgs): BootstrapHyperLinkEventMap = {
-    val __obj = js.Dynamic.literal(click = click, init = init)
+    val __obj = js.Dynamic.literal(click = click.asInstanceOf[js.Any], init = init.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BootstrapHyperLinkEventMap]
   }

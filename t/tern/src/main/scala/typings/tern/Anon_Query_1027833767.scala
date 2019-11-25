@@ -12,7 +12,7 @@ trait Anon_Query_1027833767 extends js.Object {
 object Anon_Query_1027833767 {
   @scala.inline
   def apply(query: Query): Anon_Query_1027833767 = {
-    val __obj = js.Dynamic.literal(query = query)
+    val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Query_1027833767]
   }

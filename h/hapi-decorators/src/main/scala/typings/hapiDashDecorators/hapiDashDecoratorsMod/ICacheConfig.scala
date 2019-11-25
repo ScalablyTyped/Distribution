@@ -16,7 +16,7 @@ object ICacheConfig {
     val __obj = js.Dynamic.literal()
     if (expiresAt != null) __obj.updateDynamic("expiresAt")(expiresAt.asInstanceOf[js.Any])
     if (expiresIn != null) __obj.updateDynamic("expiresIn")(expiresIn.asInstanceOf[js.Any])
-    if (privacy != null) __obj.updateDynamic("privacy")(privacy)
+    if (privacy != null) __obj.updateDynamic("privacy")(privacy.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICacheConfig]
   }
 }

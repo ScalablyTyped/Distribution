@@ -14,9 +14,9 @@ object SurveyQuestionImage {
   @scala.inline
   def apply(altText: String = null, data: String = null, url: String = null): SurveyQuestionImage = {
     val __obj = js.Dynamic.literal()
-    if (altText != null) __obj.updateDynamic("altText")(altText)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (altText != null) __obj.updateDynamic("altText")(altText.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[SurveyQuestionImage]
   }
 }

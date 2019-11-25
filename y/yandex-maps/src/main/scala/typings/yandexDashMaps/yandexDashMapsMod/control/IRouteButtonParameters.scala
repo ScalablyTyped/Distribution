@@ -15,8 +15,8 @@ object IRouteButtonParameters {
   @scala.inline
   def apply(options: Anon_AdjustMapMargin = null, state: Anon_Expanded = null): IRouteButtonParameters = {
     val __obj = js.Dynamic.literal()
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRouteButtonParameters]
   }
 }

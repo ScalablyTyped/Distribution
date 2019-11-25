@@ -30,7 +30,7 @@ object Window {
       MediaRecorderErrorEvent
     ]
   ): Window = {
-    val __obj = js.Dynamic.literal(BlobEvent = BlobEvent, MediaRecorder = MediaRecorder, MediaRecorderErrorEvent = MediaRecorderErrorEvent)
+    val __obj = js.Dynamic.literal(BlobEvent = BlobEvent.asInstanceOf[js.Any], MediaRecorder = MediaRecorder.asInstanceOf[js.Any], MediaRecorderErrorEvent = MediaRecorderErrorEvent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Window]
   }

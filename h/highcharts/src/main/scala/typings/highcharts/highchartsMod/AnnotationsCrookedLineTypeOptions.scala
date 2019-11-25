@@ -31,8 +31,8 @@ object AnnotationsCrookedLineTypeOptions {
     yAxis: Int | Double = null
   ): AnnotationsCrookedLineTypeOptions = {
     val __obj = js.Dynamic.literal()
-    if (line != null) __obj.updateDynamic("line")(line)
-    if (points != null) __obj.updateDynamic("points")(points)
+    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
+    if (points != null) __obj.updateDynamic("points")(points.asInstanceOf[js.Any])
     if (xAxis != null) __obj.updateDynamic("xAxis")(xAxis.asInstanceOf[js.Any])
     if (yAxis != null) __obj.updateDynamic("yAxis")(yAxis.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotationsCrookedLineTypeOptions]

@@ -12,7 +12,7 @@ object Settings {
   @scala.inline
   def apply(grid: js.Tuple2[Double, Double] = null): Settings = {
     val __obj = js.Dynamic.literal()
-    if (grid != null) __obj.updateDynamic("grid")(grid)
+    if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
     __obj.asInstanceOf[Settings]
   }
 }

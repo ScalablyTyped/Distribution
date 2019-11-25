@@ -23,8 +23,8 @@ object Value {
     end: Int | Double = null,
     start: Int | Double = null
   ): Value = {
-    val __obj = js.Dynamic.literal(formats = formats, replacements = replacements, text = text)
-    if (activeFormats != null) __obj.updateDynamic("activeFormats")(activeFormats)
+    val __obj = js.Dynamic.literal(formats = formats.asInstanceOf[js.Any], replacements = replacements.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+    if (activeFormats != null) __obj.updateDynamic("activeFormats")(activeFormats.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[Value]

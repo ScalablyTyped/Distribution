@@ -13,8 +13,8 @@ object ThreadDescriptor {
   @scala.inline
   def apply(gmailThreadId: String = null, rfcMessageId: String = null): ThreadDescriptor = {
     val __obj = js.Dynamic.literal()
-    if (gmailThreadId != null) __obj.updateDynamic("gmailThreadId")(gmailThreadId)
-    if (rfcMessageId != null) __obj.updateDynamic("rfcMessageId")(rfcMessageId)
+    if (gmailThreadId != null) __obj.updateDynamic("gmailThreadId")(gmailThreadId.asInstanceOf[js.Any])
+    if (rfcMessageId != null) __obj.updateDynamic("rfcMessageId")(rfcMessageId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThreadDescriptor]
   }
 }

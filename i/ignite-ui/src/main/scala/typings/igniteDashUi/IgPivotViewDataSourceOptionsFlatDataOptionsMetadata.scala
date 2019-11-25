@@ -26,8 +26,8 @@ object IgPivotViewDataSourceOptionsFlatDataOptionsMetadata {
     cube: IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCube = null
   ): IgPivotViewDataSourceOptionsFlatDataOptionsMetadata = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (cube != null) __obj.updateDynamic("cube")(cube)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (cube != null) __obj.updateDynamic("cube")(cube.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgPivotViewDataSourceOptionsFlatDataOptionsMetadata]
   }
 }

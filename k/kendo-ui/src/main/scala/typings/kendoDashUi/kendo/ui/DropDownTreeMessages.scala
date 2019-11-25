@@ -14,9 +14,9 @@ object DropDownTreeMessages {
   @scala.inline
   def apply(clear: String = null, deleteTag: String = null, singleTag: String = null): DropDownTreeMessages = {
     val __obj = js.Dynamic.literal()
-    if (clear != null) __obj.updateDynamic("clear")(clear)
-    if (deleteTag != null) __obj.updateDynamic("deleteTag")(deleteTag)
-    if (singleTag != null) __obj.updateDynamic("singleTag")(singleTag)
+    if (clear != null) __obj.updateDynamic("clear")(clear.asInstanceOf[js.Any])
+    if (deleteTag != null) __obj.updateDynamic("deleteTag")(deleteTag.asInstanceOf[js.Any])
+    if (singleTag != null) __obj.updateDynamic("singleTag")(singleTag.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropDownTreeMessages]
   }
 }

@@ -43,7 +43,7 @@ object PriorityClassList {
     kind: typings.atPulumiKubernetes.atPulumiKubernetesStrings.PriorityClassList,
     metadata: ListMeta
   ): PriorityClassList = {
-    val __obj = js.Dynamic.literal(apiVersion = apiVersion, items = items, kind = kind, metadata = metadata)
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PriorityClassList]
   }

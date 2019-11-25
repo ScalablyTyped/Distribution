@@ -16,8 +16,8 @@ object IListIntentsResponse {
   @scala.inline
   def apply(intents: js.Array[IIntent] = null, nextPageToken: String = null): IListIntentsResponse = {
     val __obj = js.Dynamic.literal()
-    if (intents != null) __obj.updateDynamic("intents")(intents)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (intents != null) __obj.updateDynamic("intents")(intents.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[IListIntentsResponse]
   }
 }

@@ -16,7 +16,7 @@ object ConsumerInfo {
   @scala.inline
   def apply(projectNumber: String = null): ConsumerInfo = {
     val __obj = js.Dynamic.literal()
-    if (projectNumber != null) __obj.updateDynamic("projectNumber")(projectNumber)
+    if (projectNumber != null) __obj.updateDynamic("projectNumber")(projectNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConsumerInfo]
   }
 }

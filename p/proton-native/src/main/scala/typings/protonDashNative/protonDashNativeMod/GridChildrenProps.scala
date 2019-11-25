@@ -39,11 +39,11 @@ object GridChildrenProps {
     span: Anon_X = null
   ): GridChildrenProps = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align)
+    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
-    if (expand != null) __obj.updateDynamic("expand")(expand)
+    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
     if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
-    if (span != null) __obj.updateDynamic("span")(span)
+    if (span != null) __obj.updateDynamic("span")(span.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridChildrenProps]
   }
 }

@@ -61,7 +61,7 @@ object CaptureOptions {
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
     if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
-    if (!js.isUndefined(snapshotContentContainer)) __obj.updateDynamic("snapshotContentContainer")(snapshotContentContainer)
+    if (!js.isUndefined(snapshotContentContainer)) __obj.updateDynamic("snapshotContentContainer")(snapshotContentContainer.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[CaptureOptions]
   }

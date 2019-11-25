@@ -12,7 +12,7 @@ trait Anon_IndexPercent extends js.Object {
 object Anon_IndexPercent {
   @scala.inline
   def apply(Index: Double, Percent: Double): Anon_IndexPercent = {
-    val __obj = js.Dynamic.literal(Index = Index, Percent = Percent)
+    val __obj = js.Dynamic.literal(Index = Index.asInstanceOf[js.Any], Percent = Percent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IndexPercent]
   }

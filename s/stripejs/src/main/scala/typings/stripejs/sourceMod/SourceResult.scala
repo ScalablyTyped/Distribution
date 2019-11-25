@@ -19,8 +19,8 @@ trait SourceResult extends js.Object {
 object SourceResult {
   @scala.inline
   def apply(source: Source, error: StripeError = null): SourceResult = {
-    val __obj = js.Dynamic.literal(source = source)
-    if (error != null) __obj.updateDynamic("error")(error)
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceResult]
   }
 }

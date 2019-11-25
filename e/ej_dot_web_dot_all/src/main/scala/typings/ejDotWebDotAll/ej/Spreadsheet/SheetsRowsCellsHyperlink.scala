@@ -21,9 +21,9 @@ object SheetsRowsCellsHyperlink {
   @scala.inline
   def apply(cellAddr: String = null, sheetIndex: Int | Double = null, webAddr: String = null): SheetsRowsCellsHyperlink = {
     val __obj = js.Dynamic.literal()
-    if (cellAddr != null) __obj.updateDynamic("cellAddr")(cellAddr)
+    if (cellAddr != null) __obj.updateDynamic("cellAddr")(cellAddr.asInstanceOf[js.Any])
     if (sheetIndex != null) __obj.updateDynamic("sheetIndex")(sheetIndex.asInstanceOf[js.Any])
-    if (webAddr != null) __obj.updateDynamic("webAddr")(webAddr)
+    if (webAddr != null) __obj.updateDynamic("webAddr")(webAddr.asInstanceOf[js.Any])
     __obj.asInstanceOf[SheetsRowsCellsHyperlink]
   }
 }

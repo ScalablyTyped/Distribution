@@ -17,7 +17,7 @@ trait ImageObject extends js.Object {
 object ImageObject {
   @scala.inline
   def apply(url: String, height: Int | Double = null, width: Int | Double = null): ImageObject = {
-    val __obj = js.Dynamic.literal(url = url)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageObject]

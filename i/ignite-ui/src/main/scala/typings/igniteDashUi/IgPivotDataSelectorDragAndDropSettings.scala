@@ -37,8 +37,8 @@ object IgPivotDataSelectorDragAndDropSettings {
     zIndex: Int | Double = null
   ): IgPivotDataSelectorDragAndDropSettings = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo.asInstanceOf[js.Any])
     if (containment != null) __obj.updateDynamic("containment")(containment.asInstanceOf[js.Any])
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgPivotDataSelectorDragAndDropSettings]

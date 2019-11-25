@@ -12,8 +12,8 @@ trait Anon_DefaultTypeAnyNumber extends js.Object {
 object Anon_DefaultTypeAnyNumber {
   @scala.inline
   def apply(default: Double, `type`: js.Any): Anon_DefaultTypeAnyNumber = {
-    val __obj = js.Dynamic.literal(default = default)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DefaultTypeAnyNumber]
   }
 }

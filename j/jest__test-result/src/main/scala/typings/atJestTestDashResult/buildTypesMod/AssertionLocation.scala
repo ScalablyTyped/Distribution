@@ -12,7 +12,7 @@ trait AssertionLocation extends js.Object {
 object AssertionLocation {
   @scala.inline
   def apply(fullName: String, path: String): AssertionLocation = {
-    val __obj = js.Dynamic.literal(fullName = fullName, path = path)
+    val __obj = js.Dynamic.literal(fullName = fullName.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AssertionLocation]
   }

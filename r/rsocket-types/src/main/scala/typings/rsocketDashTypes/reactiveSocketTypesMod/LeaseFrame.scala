@@ -27,8 +27,8 @@ object LeaseFrame {
     length: Int | Double = null,
     metadata: Encodable = null
   ): LeaseFrame = {
-    val __obj = js.Dynamic.literal(flags = flags, requestCount = requestCount, streamId = streamId, ttl = ttl)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], requestCount = requestCount.asInstanceOf[js.Any], streamId = streamId.asInstanceOf[js.Any], ttl = ttl.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[LeaseFrame]

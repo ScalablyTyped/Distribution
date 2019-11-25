@@ -13,8 +13,8 @@ object WrapperProps {
   @scala.inline
   def apply(absolute: js.UndefOr[Boolean] = js.undefined, bordered: js.UndefOr[Boolean] = js.undefined): WrapperProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(absolute)) __obj.updateDynamic("absolute")(absolute)
-    if (!js.isUndefined(bordered)) __obj.updateDynamic("bordered")(bordered)
+    if (!js.isUndefined(absolute)) __obj.updateDynamic("absolute")(absolute.asInstanceOf[js.Any])
+    if (!js.isUndefined(bordered)) __obj.updateDynamic("bordered")(bordered.asInstanceOf[js.Any])
     __obj.asInstanceOf[WrapperProps]
   }
 }

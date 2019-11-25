@@ -31,7 +31,7 @@ object Anon_Control {
     slider: String,
     switch: String
   ): Anon_Control = {
-    val __obj = js.Dynamic.literal(control = control, disabledLabel = disabledLabel, item = item, itemChecked = itemChecked, itemDisabled = itemDisabled, itemIndeterminate = itemIndeterminate, label = label, root = root, slider = slider, switch = switch)
+    val __obj = js.Dynamic.literal(control = control.asInstanceOf[js.Any], disabledLabel = disabledLabel.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], itemChecked = itemChecked.asInstanceOf[js.Any], itemDisabled = itemDisabled.asInstanceOf[js.Any], itemIndeterminate = itemIndeterminate.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], slider = slider.asInstanceOf[js.Any], switch = switch.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Control]
   }

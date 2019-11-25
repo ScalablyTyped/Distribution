@@ -33,12 +33,12 @@ object Anon_0 {
     unknown: Double,
     valid: Double
   ): Anon_0 = {
-    val __obj = js.Dynamic.literal(catchall = catchall, disposable = disposable, flags = flags, invalid = invalid, unknown = unknown, valid = valid)
-    __obj.updateDynamic("0")(`0`)
-    __obj.updateDynamic("1")(`1`)
-    __obj.updateDynamic("2")(`2`)
-    __obj.updateDynamic("3")(`3`)
-    __obj.updateDynamic("4")(`4`)
+    val __obj = js.Dynamic.literal(catchall = catchall.asInstanceOf[js.Any], disposable = disposable.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], invalid = invalid.asInstanceOf[js.Any], unknown = unknown.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any])
+    __obj.updateDynamic("0")(`0`.asInstanceOf[js.Any])
+    __obj.updateDynamic("1")(`1`.asInstanceOf[js.Any])
+    __obj.updateDynamic("2")(`2`.asInstanceOf[js.Any])
+    __obj.updateDynamic("3")(`3`.asInstanceOf[js.Any])
+    __obj.updateDynamic("4")(`4`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_0]
   }
 }

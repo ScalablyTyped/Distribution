@@ -19,8 +19,8 @@ object InjectionItems {
   @scala.inline
   def apply(code: String = null, files: js.Array[_] = null): InjectionItems = {
     val __obj = js.Dynamic.literal()
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (files != null) __obj.updateDynamic("files")(files)
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
     __obj.asInstanceOf[InjectionItems]
   }
 }

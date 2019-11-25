@@ -15,8 +15,8 @@ object BrowsersListResponse {
   @scala.inline
   def apply(browsers: js.Array[Browser] = null, kind: String = null): BrowsersListResponse = {
     val __obj = js.Dynamic.literal()
-    if (browsers != null) __obj.updateDynamic("browsers")(browsers)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (browsers != null) __obj.updateDynamic("browsers")(browsers.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[BrowsersListResponse]
   }
 }

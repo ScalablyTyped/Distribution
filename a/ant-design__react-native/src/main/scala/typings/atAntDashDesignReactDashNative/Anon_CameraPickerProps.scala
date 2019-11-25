@@ -12,7 +12,7 @@ trait Anon_CameraPickerProps extends js.Object {
 object Anon_CameraPickerProps {
   @scala.inline
   def apply(cancelText: String, title: String): Anon_CameraPickerProps = {
-    val __obj = js.Dynamic.literal(cancelText = cancelText, title = title)
+    val __obj = js.Dynamic.literal(cancelText = cancelText.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CameraPickerProps]
   }

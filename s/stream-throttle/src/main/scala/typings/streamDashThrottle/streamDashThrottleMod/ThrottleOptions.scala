@@ -12,7 +12,7 @@ trait ThrottleOptions extends js.Object {
 object ThrottleOptions {
   @scala.inline
   def apply(rate: Double, chunksize: Int | Double = null): ThrottleOptions = {
-    val __obj = js.Dynamic.literal(rate = rate)
+    val __obj = js.Dynamic.literal(rate = rate.asInstanceOf[js.Any])
     if (chunksize != null) __obj.updateDynamic("chunksize")(chunksize.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThrottleOptions]
   }

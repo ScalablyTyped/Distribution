@@ -16,8 +16,8 @@ object EntityMention {
   @scala.inline
   def apply(location: js.Array[Double] = null, text: String = null): EntityMention = {
     val __obj = js.Dynamic.literal()
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntityMention]
   }
 }

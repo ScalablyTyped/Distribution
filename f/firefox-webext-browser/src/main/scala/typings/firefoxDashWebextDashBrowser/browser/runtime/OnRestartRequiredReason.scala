@@ -17,3 +17,14 @@ import scala.scalajs.js.annotation._
 */
 trait OnRestartRequiredReason extends js.Object
 
+object OnRestartRequiredReason {
+  @scala.inline
+  def app_update: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.app_update = this.cast("app_update")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def os_update: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.os_update = this.cast("os_update")
+  @scala.inline
+  def periodic: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.periodic = this.cast("periodic")
+}
+

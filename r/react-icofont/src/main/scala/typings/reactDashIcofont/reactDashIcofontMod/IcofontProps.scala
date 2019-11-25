@@ -38,12 +38,12 @@ object IcofontProps {
     size: `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` = null,
     spin: js.UndefOr[Boolean] = js.undefined
   ): IcofontProps = {
-    val __obj = js.Dynamic.literal(icon = icon)
-    if (className != null) __obj.updateDynamic("className")(className)
+    val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (flip != null) __obj.updateDynamic("flip")(flip.asInstanceOf[js.Any])
     if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(spin)) __obj.updateDynamic("spin")(spin)
+    if (!js.isUndefined(spin)) __obj.updateDynamic("spin")(spin.asInstanceOf[js.Any])
     __obj.asInstanceOf[IcofontProps]
   }
 }

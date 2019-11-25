@@ -19,8 +19,8 @@ trait Import extends js.Object {
 object Import {
   @scala.inline
   def apply(`package`: String, version: String): Import = {
-    val __obj = js.Dynamic.literal(version = version)
-    __obj.updateDynamic("package")(`package`)
+    val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
+    __obj.updateDynamic("package")(`package`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Import]
   }
 }

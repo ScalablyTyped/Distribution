@@ -39,7 +39,7 @@ object Env {
     transparentSrc: Boolean,
     webKit: Boolean
   ): Env = {
-    val __obj = js.Dynamic.literal(android = android, ceFalse = ceFalse, contentEditable = contentEditable, documentMode = documentMode, fileApi = fileApi, gecko = gecko, iOS = iOS, ie = ie, mac = mac, noCaretAfter = noCaretAfter, opera = opera, range = range, transparentSrc = transparentSrc, webKit = webKit)
+    val __obj = js.Dynamic.literal(android = android.asInstanceOf[js.Any], ceFalse = ceFalse.asInstanceOf[js.Any], contentEditable = contentEditable.asInstanceOf[js.Any], documentMode = documentMode.asInstanceOf[js.Any], fileApi = fileApi.asInstanceOf[js.Any], gecko = gecko.asInstanceOf[js.Any], iOS = iOS.asInstanceOf[js.Any], ie = ie.asInstanceOf[js.Any], mac = mac.asInstanceOf[js.Any], noCaretAfter = noCaretAfter.asInstanceOf[js.Any], opera = opera.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any], transparentSrc = transparentSrc.asInstanceOf[js.Any], webKit = webKit.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Env]
   }

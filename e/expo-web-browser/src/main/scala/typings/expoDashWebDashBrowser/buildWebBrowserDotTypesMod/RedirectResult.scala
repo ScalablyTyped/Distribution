@@ -13,8 +13,8 @@ trait RedirectResult extends AuthSessionResult {
 object RedirectResult {
   @scala.inline
   def apply(`type`: success, url: String): RedirectResult = {
-    val __obj = js.Dynamic.literal(url = url)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedirectResult]
   }
 }

@@ -17,7 +17,7 @@ trait CustomEditor[TRow /* <: js.Object */, K /* <: String */] extends js.Object
   	 */
   def getElement(
     onUpdate: js.Function1[
-      /* import warning: ImportType.apply Failed type conversion: TRow[K] */ /* updatedCell */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: TRow[K] */ /* updatedCell */ js.Any, 
       Unit
     ],
     props: CustomEditorProps[TRow, K]
@@ -28,13 +28,13 @@ object CustomEditor {
   @scala.inline
   def apply[TRow /* <: js.Object */, K /* <: String */](
     getElement: (js.Function1[
-      /* import warning: ImportType.apply Failed type conversion: TRow[K] */ /* updatedCell */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: TRow[K] */ /* updatedCell */ js.Any, 
       Unit
     ], CustomEditorProps[TRow, K]) => ReactElement,
     customEditorParameters: js.Object = null
   ): CustomEditor[TRow, K] = {
     val __obj = js.Dynamic.literal(getElement = js.Any.fromFunction2(getElement))
-    if (customEditorParameters != null) __obj.updateDynamic("customEditorParameters")(customEditorParameters)
+    if (customEditorParameters != null) __obj.updateDynamic("customEditorParameters")(customEditorParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomEditor[TRow, K]]
   }
 }

@@ -14,7 +14,7 @@ object QueryRelationsArgument {
   @scala.inline
   def apply(entities: js.Array[QueryEntitiesEntity] = null): QueryRelationsArgument = {
     val __obj = js.Dynamic.literal()
-    if (entities != null) __obj.updateDynamic("entities")(entities)
+    if (entities != null) __obj.updateDynamic("entities")(entities.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryRelationsArgument]
   }
 }

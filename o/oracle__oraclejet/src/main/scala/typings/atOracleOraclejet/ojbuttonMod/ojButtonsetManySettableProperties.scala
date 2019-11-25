@@ -30,9 +30,9 @@ object ojButtonsetManySettableProperties {
     translations: js.Object = null,
     value: js.Array[_] = null
   ): ojButtonsetManySettableProperties = {
-    val __obj = js.Dynamic.literal(chroming = chroming.asInstanceOf[js.Any], disabled = disabled, display = display.asInstanceOf[js.Any], focusManagement = focusManagement.asInstanceOf[js.Any])
-    if (translations != null) __obj.updateDynamic("translations")(translations)
-    if (value != null) __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(chroming = chroming.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], focusManagement = focusManagement.asInstanceOf[js.Any])
+    if (translations != null) __obj.updateDynamic("translations")(translations.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojButtonsetManySettableProperties]
   }
 }

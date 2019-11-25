@@ -31,12 +31,12 @@ object Aps {
     val __obj = js.Dynamic.literal()
     if (alert != null) __obj.updateDynamic("alert")(alert.asInstanceOf[js.Any])
     if (badge != null) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
-    if (category != null) __obj.updateDynamic("category")(category)
-    if (`content-available` != null) __obj.updateDynamic("content-available")(`content-available`)
-    if (`launch-image` != null) __obj.updateDynamic("launch-image")(`launch-image`)
-    if (`mutable-content` != null) __obj.updateDynamic("mutable-content")(`mutable-content`)
-    if (sound != null) __obj.updateDynamic("sound")(sound)
-    if (`url-args` != null) __obj.updateDynamic("url-args")(`url-args`)
+    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
+    if (`content-available` != null) __obj.updateDynamic("content-available")(`content-available`.asInstanceOf[js.Any])
+    if (`launch-image` != null) __obj.updateDynamic("launch-image")(`launch-image`.asInstanceOf[js.Any])
+    if (`mutable-content` != null) __obj.updateDynamic("mutable-content")(`mutable-content`.asInstanceOf[js.Any])
+    if (sound != null) __obj.updateDynamic("sound")(sound.asInstanceOf[js.Any])
+    if (`url-args` != null) __obj.updateDynamic("url-args")(`url-args`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Aps]
   }
 }

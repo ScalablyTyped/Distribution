@@ -64,14 +64,14 @@ object IFinalConfig {
     sessionEndpoint: String = null,
     user: js.Object = null
   ): IFinalConfig = {
-    val __obj = js.Dynamic.literal(apiKey = apiKey, autoBreadcrumbs = autoBreadcrumbs, autoCaptureSessions = autoCaptureSessions, autoNotify = autoNotify, beforeSend = beforeSend, collectUserIp = collectUserIp, consoleBreadcrumbsEnabled = consoleBreadcrumbsEnabled, endpoints = endpoints, interactionBreadcrumbsEnabled = interactionBreadcrumbsEnabled, maxBreadcrumbs = maxBreadcrumbs, maxEvents = maxEvents, navigationBreadcrumbsEnabled = navigationBreadcrumbsEnabled, notifyReleaseStages = notifyReleaseStages, releaseStage = releaseStage)
-    if (appVersion != null) __obj.updateDynamic("appVersion")(appVersion)
-    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint)
-    if (logger != null) __obj.updateDynamic("logger")(logger)
-    if (metaData != null) __obj.updateDynamic("metaData")(metaData)
-    if (!js.isUndefined(networkBreadcrumbsEnabled)) __obj.updateDynamic("networkBreadcrumbsEnabled")(networkBreadcrumbsEnabled)
-    if (sessionEndpoint != null) __obj.updateDynamic("sessionEndpoint")(sessionEndpoint)
-    if (user != null) __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any], autoBreadcrumbs = autoBreadcrumbs.asInstanceOf[js.Any], autoCaptureSessions = autoCaptureSessions.asInstanceOf[js.Any], autoNotify = autoNotify.asInstanceOf[js.Any], beforeSend = beforeSend.asInstanceOf[js.Any], collectUserIp = collectUserIp.asInstanceOf[js.Any], consoleBreadcrumbsEnabled = consoleBreadcrumbsEnabled.asInstanceOf[js.Any], endpoints = endpoints.asInstanceOf[js.Any], interactionBreadcrumbsEnabled = interactionBreadcrumbsEnabled.asInstanceOf[js.Any], maxBreadcrumbs = maxBreadcrumbs.asInstanceOf[js.Any], maxEvents = maxEvents.asInstanceOf[js.Any], navigationBreadcrumbsEnabled = navigationBreadcrumbsEnabled.asInstanceOf[js.Any], notifyReleaseStages = notifyReleaseStages.asInstanceOf[js.Any], releaseStage = releaseStage.asInstanceOf[js.Any])
+    if (appVersion != null) __obj.updateDynamic("appVersion")(appVersion.asInstanceOf[js.Any])
+    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
+    if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
+    if (metaData != null) __obj.updateDynamic("metaData")(metaData.asInstanceOf[js.Any])
+    if (!js.isUndefined(networkBreadcrumbsEnabled)) __obj.updateDynamic("networkBreadcrumbsEnabled")(networkBreadcrumbsEnabled.asInstanceOf[js.Any])
+    if (sessionEndpoint != null) __obj.updateDynamic("sessionEndpoint")(sessionEndpoint.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFinalConfig]
   }
 }

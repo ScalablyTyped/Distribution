@@ -25,9 +25,9 @@ object WorkbookFormatProtection {
     locked: js.UndefOr[Boolean] = js.undefined
   ): WorkbookFormatProtection = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(formulaHidden)) __obj.updateDynamic("formulaHidden")(formulaHidden)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked)
+    if (!js.isUndefined(formulaHidden)) __obj.updateDynamic("formulaHidden")(formulaHidden.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookFormatProtection]
   }
 }

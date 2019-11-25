@@ -51,14 +51,14 @@ object ListUpdateResponse {
     threatType: String = null
   ): ListUpdateResponse = {
     val __obj = js.Dynamic.literal()
-    if (additions != null) __obj.updateDynamic("additions")(additions)
-    if (checksum != null) __obj.updateDynamic("checksum")(checksum)
-    if (newClientState != null) __obj.updateDynamic("newClientState")(newClientState)
-    if (platformType != null) __obj.updateDynamic("platformType")(platformType)
-    if (removals != null) __obj.updateDynamic("removals")(removals)
-    if (responseType != null) __obj.updateDynamic("responseType")(responseType)
-    if (threatEntryType != null) __obj.updateDynamic("threatEntryType")(threatEntryType)
-    if (threatType != null) __obj.updateDynamic("threatType")(threatType)
+    if (additions != null) __obj.updateDynamic("additions")(additions.asInstanceOf[js.Any])
+    if (checksum != null) __obj.updateDynamic("checksum")(checksum.asInstanceOf[js.Any])
+    if (newClientState != null) __obj.updateDynamic("newClientState")(newClientState.asInstanceOf[js.Any])
+    if (platformType != null) __obj.updateDynamic("platformType")(platformType.asInstanceOf[js.Any])
+    if (removals != null) __obj.updateDynamic("removals")(removals.asInstanceOf[js.Any])
+    if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
+    if (threatEntryType != null) __obj.updateDynamic("threatEntryType")(threatEntryType.asInstanceOf[js.Any])
+    if (threatType != null) __obj.updateDynamic("threatType")(threatType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListUpdateResponse]
   }
 }

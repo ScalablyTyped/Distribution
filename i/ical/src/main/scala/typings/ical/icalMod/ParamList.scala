@@ -13,8 +13,8 @@ trait ParamList extends js.Object {
 object ParamList {
   @scala.inline
   def apply(params: StringDictionary[String], `val`: String): ParamList = {
-    val __obj = js.Dynamic.literal(params = params)
-    __obj.updateDynamic("val")(`val`)
+    val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any])
+    __obj.updateDynamic("val")(`val`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamList]
   }
 }

@@ -11,7 +11,7 @@ trait GroupsContainer[T] extends js.Object {
 object GroupsContainer {
   @scala.inline
   def apply[T](groups: js.Array[T]): GroupsContainer[T] = {
-    val __obj = js.Dynamic.literal(groups = groups)
+    val __obj = js.Dynamic.literal(groups = groups.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GroupsContainer[T]]
   }

@@ -41,7 +41,7 @@ object ReportingWorkItemRevisionsFilter {
     includeTagRef: Boolean,
     types: js.Array[String]
   ): ReportingWorkItemRevisionsFilter = {
-    val __obj = js.Dynamic.literal(fields = fields, includeDeleted = includeDeleted, includeIdentityRef = includeIdentityRef, includeLatestOnly = includeLatestOnly, includeTagRef = includeTagRef, types = types)
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], includeDeleted = includeDeleted.asInstanceOf[js.Any], includeIdentityRef = includeIdentityRef.asInstanceOf[js.Any], includeLatestOnly = includeLatestOnly.asInstanceOf[js.Any], includeTagRef = includeTagRef.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReportingWorkItemRevisionsFilter]
   }

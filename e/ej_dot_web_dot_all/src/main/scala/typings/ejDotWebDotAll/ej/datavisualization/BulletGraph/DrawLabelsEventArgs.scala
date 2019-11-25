@@ -29,10 +29,10 @@ object DrawLabelsEventArgs {
     tickElement: HTMLElement = null
   ): DrawLabelsEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (Object != null) __obj.updateDynamic("Object")(Object)
-    if (labelType != null) __obj.updateDynamic("labelType")(labelType)
-    if (scaleElement != null) __obj.updateDynamic("scaleElement")(scaleElement)
-    if (tickElement != null) __obj.updateDynamic("tickElement")(tickElement)
+    if (Object != null) __obj.updateDynamic("Object")(Object.asInstanceOf[js.Any])
+    if (labelType != null) __obj.updateDynamic("labelType")(labelType.asInstanceOf[js.Any])
+    if (scaleElement != null) __obj.updateDynamic("scaleElement")(scaleElement.asInstanceOf[js.Any])
+    if (tickElement != null) __obj.updateDynamic("tickElement")(tickElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawLabelsEventArgs]
   }
 }

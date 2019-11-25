@@ -47,13 +47,13 @@ object Anon_Children {
     reason: String = null,
     recorded: js.UndefOr[Boolean] = js.undefined
   ): Anon_Children = {
-    val __obj = js.Dynamic.literal(children = children, childrenByOrder = childrenByOrder, entry = entry, files = files, id = id.asInstanceOf[js.Any], initial = initial, names = names, parents = parents, rendered = rendered, siblings = siblings, size = size)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], childrenByOrder = childrenByOrder.asInstanceOf[js.Any], entry = entry.asInstanceOf[js.Any], files = files.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], initial = initial.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any], parents = parents.asInstanceOf[js.Any], rendered = rendered.asInstanceOf[js.Any], siblings = siblings.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     if (filteredModules != null) __obj.updateDynamic("filteredModules")(filteredModules.asInstanceOf[js.Any])
-    if (hash != null) __obj.updateDynamic("hash")(hash)
-    if (modules != null) __obj.updateDynamic("modules")(modules)
-    if (origins != null) __obj.updateDynamic("origins")(origins)
-    if (reason != null) __obj.updateDynamic("reason")(reason)
-    if (!js.isUndefined(recorded)) __obj.updateDynamic("recorded")(recorded)
+    if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
+    if (modules != null) __obj.updateDynamic("modules")(modules.asInstanceOf[js.Any])
+    if (origins != null) __obj.updateDynamic("origins")(origins.asInstanceOf[js.Any])
+    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
+    if (!js.isUndefined(recorded)) __obj.updateDynamic("recorded")(recorded.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Children]
   }
 }

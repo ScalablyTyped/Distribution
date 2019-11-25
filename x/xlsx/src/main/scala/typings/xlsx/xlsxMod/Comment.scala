@@ -14,8 +14,8 @@ trait Comment extends js.Object {
 object Comment {
   @scala.inline
   def apply(t: String, a: String = null): Comment = {
-    val __obj = js.Dynamic.literal(t = t)
-    if (a != null) __obj.updateDynamic("a")(a)
+    val __obj = js.Dynamic.literal(t = t.asInstanceOf[js.Any])
+    if (a != null) __obj.updateDynamic("a")(a.asInstanceOf[js.Any])
     __obj.asInstanceOf[Comment]
   }
 }

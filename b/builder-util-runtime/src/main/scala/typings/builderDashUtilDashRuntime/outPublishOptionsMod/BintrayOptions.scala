@@ -57,17 +57,17 @@ object BintrayOptions {
     updaterCacheDirName: String = null,
     user: String = null
   ): BintrayOptions = {
-    val __obj = js.Dynamic.literal(provider = provider)
-    if (component != null) __obj.updateDynamic("component")(component)
-    if (distribution != null) __obj.updateDynamic("distribution")(distribution)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (`package` != null) __obj.updateDynamic("package")(`package`)
-    if (!js.isUndefined(publishAutoUpdate)) __obj.updateDynamic("publishAutoUpdate")(publishAutoUpdate)
-    if (publisherName != null) __obj.updateDynamic("publisherName")(publisherName)
-    if (repo != null) __obj.updateDynamic("repo")(repo)
-    if (token != null) __obj.updateDynamic("token")(token)
-    if (updaterCacheDirName != null) __obj.updateDynamic("updaterCacheDirName")(updaterCacheDirName)
-    if (user != null) __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any])
+    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
+    if (distribution != null) __obj.updateDynamic("distribution")(distribution.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (`package` != null) __obj.updateDynamic("package")(`package`.asInstanceOf[js.Any])
+    if (!js.isUndefined(publishAutoUpdate)) __obj.updateDynamic("publishAutoUpdate")(publishAutoUpdate.asInstanceOf[js.Any])
+    if (publisherName != null) __obj.updateDynamic("publisherName")(publisherName.asInstanceOf[js.Any])
+    if (repo != null) __obj.updateDynamic("repo")(repo.asInstanceOf[js.Any])
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
+    if (updaterCacheDirName != null) __obj.updateDynamic("updaterCacheDirName")(updaterCacheDirName.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[BintrayOptions]
   }
 }

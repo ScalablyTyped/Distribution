@@ -26,7 +26,7 @@ trait IViewportRangePosition extends js.Object {
 object IViewportRangePosition {
   @scala.inline
   def apply(x: Double, y: Double): IViewportRangePosition = {
-    val __obj = js.Dynamic.literal(x = x, y = y)
+    val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IViewportRangePosition]
   }

@@ -2,6 +2,8 @@ package typings.atIonicReact
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
+import typings.atIonicCore.atIonicCoreMod.ComponentRef
+import typings.atIonicCore.atIonicCoreMod.Config
 import typings.atIonicCore.distTypesComponentsActionDashSheetActionDashSheetDashInterfaceMod.ActionSheetOptions
 import typings.atIonicCore.distTypesComponentsAlertAlertDashInterfaceMod.AlertOptions
 import typings.atIonicCore.distTypesComponentsLoadingLoadingDashInterfaceMod.LoadingOptions
@@ -82,8 +84,6 @@ import typings.atIonicCore.distTypesComponentsModalModalDashInterfaceMod.ModalOp
 import typings.atIonicCore.distTypesComponentsPickerPickerDashInterfaceMod.PickerOptions
 import typings.atIonicCore.distTypesComponentsPopoverPopoverDashInterfaceMod.PopoverOptions
 import typings.atIonicCore.distTypesComponentsToastToastDashInterfaceMod.ToastOptions
-import typings.atIonicCore.distTypesInterfaceMod.ComponentRef
-import typings.atIonicCore.distTypesInterfaceMod.Config
 import typings.atIonicCore.distTypesUtilsConfigMod.IonicConfig
 import typings.atIonicReact.atIonicReactStrings.`type`
 import typings.atIonicReact.atIonicReactStrings.activated

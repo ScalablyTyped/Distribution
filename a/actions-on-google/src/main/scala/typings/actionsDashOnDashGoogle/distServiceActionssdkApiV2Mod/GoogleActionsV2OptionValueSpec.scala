@@ -32,10 +32,10 @@ object GoogleActionsV2OptionValueSpec {
     simpleSelect: GoogleActionsV2SimpleSelect = null
   ): GoogleActionsV2OptionValueSpec = {
     val __obj = js.Dynamic.literal()
-    if (carouselSelect != null) __obj.updateDynamic("carouselSelect")(carouselSelect)
-    if (collectionSelect != null) __obj.updateDynamic("collectionSelect")(collectionSelect)
-    if (listSelect != null) __obj.updateDynamic("listSelect")(listSelect)
-    if (simpleSelect != null) __obj.updateDynamic("simpleSelect")(simpleSelect)
+    if (carouselSelect != null) __obj.updateDynamic("carouselSelect")(carouselSelect.asInstanceOf[js.Any])
+    if (collectionSelect != null) __obj.updateDynamic("collectionSelect")(collectionSelect.asInstanceOf[js.Any])
+    if (listSelect != null) __obj.updateDynamic("listSelect")(listSelect.asInstanceOf[js.Any])
+    if (simpleSelect != null) __obj.updateDynamic("simpleSelect")(simpleSelect.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2OptionValueSpec]
   }
 }

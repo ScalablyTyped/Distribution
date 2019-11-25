@@ -12,7 +12,7 @@ object Anon_TabContents {
   @scala.inline
   def apply(tabContents: String = null): Anon_TabContents = {
     val __obj = js.Dynamic.literal()
-    if (tabContents != null) __obj.updateDynamic("tabContents")(tabContents)
+    if (tabContents != null) __obj.updateDynamic("tabContents")(tabContents.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_TabContents]
   }
 }

@@ -22,9 +22,9 @@ object Record {
     version: ProtocolVersion,
     ready: js.UndefOr[Boolean] = js.undefined
   ): Record = {
-    val __obj = js.Dynamic.literal(fragment = fragment, length = length, version = version)
-    __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(ready)) __obj.updateDynamic("ready")(ready)
+    val __obj = js.Dynamic.literal(fragment = fragment.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(ready)) __obj.updateDynamic("ready")(ready.asInstanceOf[js.Any])
     __obj.asInstanceOf[Record]
   }
 }

@@ -31,8 +31,8 @@ object AccessTokenMap {
     userID: String,
     accessTokenSource: String = null
   ): AccessTokenMap = {
-    val __obj = js.Dynamic.literal(accessToken = accessToken, applicationID = applicationID, dataAccessExpirationTime = dataAccessExpirationTime, declinedPermissions = declinedPermissions, expirationTime = expirationTime, expiredPermissions = expiredPermissions, lastRefreshTime = lastRefreshTime, permissions = permissions, userID = userID)
-    if (accessTokenSource != null) __obj.updateDynamic("accessTokenSource")(accessTokenSource)
+    val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any], applicationID = applicationID.asInstanceOf[js.Any], dataAccessExpirationTime = dataAccessExpirationTime.asInstanceOf[js.Any], declinedPermissions = declinedPermissions.asInstanceOf[js.Any], expirationTime = expirationTime.asInstanceOf[js.Any], expiredPermissions = expiredPermissions.asInstanceOf[js.Any], lastRefreshTime = lastRefreshTime.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any], userID = userID.asInstanceOf[js.Any])
+    if (accessTokenSource != null) __obj.updateDynamic("accessTokenSource")(accessTokenSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessTokenMap]
   }
 }

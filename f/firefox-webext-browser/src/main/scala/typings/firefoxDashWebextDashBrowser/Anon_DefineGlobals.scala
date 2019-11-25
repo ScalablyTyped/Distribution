@@ -24,7 +24,7 @@ trait Anon_DefineGlobals extends js.Object {
 object Anon_DefineGlobals {
   @scala.inline
   def apply(defineGlobals: js.Object => Unit, export: js.Any => js.Any, global: js.Any, metadata: js.Any): Anon_DefineGlobals = {
-    val __obj = js.Dynamic.literal(defineGlobals = js.Any.fromFunction1(defineGlobals), export = js.Any.fromFunction1(export), global = global, metadata = metadata)
+    val __obj = js.Dynamic.literal(defineGlobals = js.Any.fromFunction1(defineGlobals), export = js.Any.fromFunction1(export), global = global.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DefineGlobals]
   }

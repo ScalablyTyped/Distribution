@@ -1,6 +1,5 @@
 package typings.nodeDashMysqlDashWrapper.nodeDashMysqlDashWrapperMod
 
-import typings.bluebird.bluebirdMod.^
 import typings.mysql.mysqlMod.ConnectionConfig
 import typings.mysql.mysqlMod.MysqlError
 import typings.node.eventsMod.EventEmitter
@@ -42,7 +41,7 @@ class Connection protected () extends EventEmitter {
     * When finish returns a promise, use it with .then(function(){});
     * @return Promise
     */
-  def clearBinaryLogs(): ^[Unit] = js.native
+  def clearBinaryLogs(): typings.bluebird.bluebirdMod.^[Unit] = js.native
   /**
     * Creates the MysqlConnection from the connection url or the real connection object.
     * @param {string | Mysql.Connection |  Mysql.ConnectionConfig} connection the connection url or the real connection object.
@@ -77,15 +76,15 @@ class Connection protected () extends EventEmitter {
     * @returnType {Promise}
     * @return {Promise}
     */
-  def fetchDatabaseInformation(): ^[Unit] = js.native
+  def fetchDatabaseInformation(): typings.bluebird.bluebirdMod.^[Unit] = js.native
   /**
     * Link the real connection with this MysqlConnection object.
     * @param {function} readyCallback when the link operation is done this callback is executed.
     * @returnType {Promise}
     * @return {Promise}
     */
-  def link(): ^[Unit] = js.native
-  def link(readyCallback: js.Function0[Unit]): ^[Unit] = js.native
+  def link(): typings.bluebird.bluebirdMod.^[Unit] = js.native
+  def link(readyCallback: js.Function0[Unit]): typings.bluebird.bluebirdMod.^[Unit] = js.native
   /**
     * Call when must notify the Database events, SAVE(INSERT,UPDATE), REMOVE(DELETE).
     * @param {string} tableWhichCalled the table name which event is coming from.

@@ -11,7 +11,7 @@ trait ClusterWorker extends ClusterMaster {
 object ClusterWorker {
   @scala.inline
   def apply(id: Double, pid: Double, startTime: Double, setSize: Int | Double = null): ClusterWorker = {
-    val __obj = js.Dynamic.literal(id = id, pid = pid, startTime = startTime)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
     if (setSize != null) __obj.updateDynamic("setSize")(setSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterWorker]
   }

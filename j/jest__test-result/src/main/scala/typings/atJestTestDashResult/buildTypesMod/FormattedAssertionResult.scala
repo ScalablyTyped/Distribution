@@ -23,9 +23,9 @@ object FormattedAssertionResult {
     failureMessages: js.Array[String] = null,
     location: Callsite = null
   ): FormattedAssertionResult = {
-    val __obj = js.Dynamic.literal(ancestorTitles = ancestorTitles, fullName = fullName, status = status, title = title)
-    if (failureMessages != null) __obj.updateDynamic("failureMessages")(failureMessages)
-    if (location != null) __obj.updateDynamic("location")(location)
+    val __obj = js.Dynamic.literal(ancestorTitles = ancestorTitles.asInstanceOf[js.Any], fullName = fullName.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    if (failureMessages != null) __obj.updateDynamic("failureMessages")(failureMessages.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormattedAssertionResult]
   }
 }

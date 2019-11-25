@@ -24,7 +24,7 @@ object ExceptionDocumentQuickPulse {
     Version: String,
     __type: String
   ): ExceptionDocumentQuickPulse = {
-    val __obj = js.Dynamic.literal(DocumentType = DocumentType, Exception = Exception, ExceptionMessage = ExceptionMessage, ExceptionType = ExceptionType, OperationId = OperationId, Properties = Properties, Version = Version, __type = __type)
+    val __obj = js.Dynamic.literal(DocumentType = DocumentType.asInstanceOf[js.Any], Exception = Exception.asInstanceOf[js.Any], ExceptionMessage = ExceptionMessage.asInstanceOf[js.Any], ExceptionType = ExceptionType.asInstanceOf[js.Any], OperationId = OperationId.asInstanceOf[js.Any], Properties = Properties.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any], __type = __type.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExceptionDocumentQuickPulse]
   }

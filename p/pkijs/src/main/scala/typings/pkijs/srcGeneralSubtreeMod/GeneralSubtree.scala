@@ -24,7 +24,7 @@ object GeneralSubtree {
     toSchema: () => js.Any,
     maximum: Double | Integer = null
   ): GeneralSubtree = {
-    val __obj = js.Dynamic.literal(base = base, fromSchema = js.Any.fromFunction1(fromSchema), minimum = minimum.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
+    val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], fromSchema = js.Any.fromFunction1(fromSchema), minimum = minimum.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
     if (maximum != null) __obj.updateDynamic("maximum")(maximum.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeneralSubtree]
   }

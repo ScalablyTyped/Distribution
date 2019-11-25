@@ -20,7 +20,7 @@ trait ExecuteActionRequestedOptions extends js.Object {
 object ExecuteActionRequestedOptions {
   @scala.inline
   def apply(actionId: String, entryPath: String, fileSystemId: String, requestId: integer): ExecuteActionRequestedOptions = {
-    val __obj = js.Dynamic.literal(actionId = actionId, entryPath = entryPath, fileSystemId = fileSystemId, requestId = requestId)
+    val __obj = js.Dynamic.literal(actionId = actionId.asInstanceOf[js.Any], entryPath = entryPath.asInstanceOf[js.Any], fileSystemId = fileSystemId.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExecuteActionRequestedOptions]
   }

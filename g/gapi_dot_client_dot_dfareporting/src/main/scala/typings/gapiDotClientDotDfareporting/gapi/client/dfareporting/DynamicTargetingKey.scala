@@ -22,10 +22,10 @@ object DynamicTargetingKey {
   @scala.inline
   def apply(kind: String = null, name: String = null, objectId: String = null, objectType: String = null): DynamicTargetingKey = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (objectId != null) __obj.updateDynamic("objectId")(objectId)
-    if (objectType != null) __obj.updateDynamic("objectType")(objectType)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (objectId != null) __obj.updateDynamic("objectId")(objectId.asInstanceOf[js.Any])
+    if (objectType != null) __obj.updateDynamic("objectType")(objectType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DynamicTargetingKey]
   }
 }

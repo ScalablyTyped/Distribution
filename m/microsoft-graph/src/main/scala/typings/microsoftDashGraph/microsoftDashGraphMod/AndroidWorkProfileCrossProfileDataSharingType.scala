@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait AndroidWorkProfileCrossProfileDataSharingType extends js.Object
 
+object AndroidWorkProfileCrossProfileDataSharingType {
+  @scala.inline
+  def allowPersonalToWork: typings.microsoftDashGraph.microsoftDashGraphStrings.allowPersonalToWork = this.cast("allowPersonalToWork")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def deviceDefault: typings.microsoftDashGraph.microsoftDashGraphStrings.deviceDefault = this.cast("deviceDefault")
+  @scala.inline
+  def noRestrictions: typings.microsoftDashGraph.microsoftDashGraphStrings.noRestrictions = this.cast("noRestrictions")
+  @scala.inline
+  def preventAny: typings.microsoftDashGraph.microsoftDashGraphStrings.preventAny = this.cast("preventAny")
+}
+

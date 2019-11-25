@@ -12,8 +12,8 @@ trait ReplyKeyboardRemove extends js.Object {
 object ReplyKeyboardRemove {
   @scala.inline
   def apply(remove_keyboard: Boolean, selective: js.UndefOr[Boolean] = js.undefined): ReplyKeyboardRemove = {
-    val __obj = js.Dynamic.literal(remove_keyboard = remove_keyboard)
-    if (!js.isUndefined(selective)) __obj.updateDynamic("selective")(selective)
+    val __obj = js.Dynamic.literal(remove_keyboard = remove_keyboard.asInstanceOf[js.Any])
+    if (!js.isUndefined(selective)) __obj.updateDynamic("selective")(selective.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplyKeyboardRemove]
   }
 }

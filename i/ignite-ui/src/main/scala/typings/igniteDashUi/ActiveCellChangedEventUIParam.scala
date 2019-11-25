@@ -19,8 +19,8 @@ object ActiveCellChangedEventUIParam {
   @scala.inline
   def apply(cell: js.Any = null, owner: js.Any = null): ActiveCellChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (cell != null) __obj.updateDynamic("cell")(cell)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (cell != null) __obj.updateDynamic("cell")(cell.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveCellChangedEventUIParam]
   }
 }

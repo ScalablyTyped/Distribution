@@ -25,8 +25,8 @@ object AsObject {
     gasUsed: String,
     signedTxn: typings.libraDashCore.libAtGeneratedTransactionUnderscorePbMod.SignedTransaction.AsObject = null
   ): AsObject = {
-    val __obj = js.Dynamic.literal(accountStatesList = accountStatesList, eventsList = eventsList, gasUsed = gasUsed)
-    if (signedTxn != null) __obj.updateDynamic("signedTxn")(signedTxn)
+    val __obj = js.Dynamic.literal(accountStatesList = accountStatesList.asInstanceOf[js.Any], eventsList = eventsList.asInstanceOf[js.Any], gasUsed = gasUsed.asInstanceOf[js.Any])
+    if (signedTxn != null) __obj.updateDynamic("signedTxn")(signedTxn.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsObject]
   }
 }

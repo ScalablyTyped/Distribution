@@ -12,7 +12,7 @@ object Anon_Persistent {
   @scala.inline
   def apply(persistent: js.UndefOr[Boolean] = js.undefined): Anon_Persistent = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(persistent)) __obj.updateDynamic("persistent")(persistent)
+    if (!js.isUndefined(persistent)) __obj.updateDynamic("persistent")(persistent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Persistent]
   }
 }

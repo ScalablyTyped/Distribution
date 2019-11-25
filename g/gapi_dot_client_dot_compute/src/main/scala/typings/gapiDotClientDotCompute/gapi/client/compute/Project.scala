@@ -51,18 +51,18 @@ object Project {
     xpnProjectStatus: String = null
   ): Project = {
     val __obj = js.Dynamic.literal()
-    if (commonInstanceMetadata != null) __obj.updateDynamic("commonInstanceMetadata")(commonInstanceMetadata)
-    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp)
-    if (defaultServiceAccount != null) __obj.updateDynamic("defaultServiceAccount")(defaultServiceAccount)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (enabledFeatures != null) __obj.updateDynamic("enabledFeatures")(enabledFeatures)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (quotas != null) __obj.updateDynamic("quotas")(quotas)
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
-    if (usageExportLocation != null) __obj.updateDynamic("usageExportLocation")(usageExportLocation)
-    if (xpnProjectStatus != null) __obj.updateDynamic("xpnProjectStatus")(xpnProjectStatus)
+    if (commonInstanceMetadata != null) __obj.updateDynamic("commonInstanceMetadata")(commonInstanceMetadata.asInstanceOf[js.Any])
+    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp.asInstanceOf[js.Any])
+    if (defaultServiceAccount != null) __obj.updateDynamic("defaultServiceAccount")(defaultServiceAccount.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (enabledFeatures != null) __obj.updateDynamic("enabledFeatures")(enabledFeatures.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (quotas != null) __obj.updateDynamic("quotas")(quotas.asInstanceOf[js.Any])
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
+    if (usageExportLocation != null) __obj.updateDynamic("usageExportLocation")(usageExportLocation.asInstanceOf[js.Any])
+    if (xpnProjectStatus != null) __obj.updateDynamic("xpnProjectStatus")(xpnProjectStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[Project]
   }
 }

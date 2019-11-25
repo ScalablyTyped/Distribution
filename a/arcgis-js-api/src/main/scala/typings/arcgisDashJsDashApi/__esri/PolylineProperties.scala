@@ -30,10 +30,10 @@ object PolylineProperties {
     spatialReference: SpatialReferenceProperties = null
   ): PolylineProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hasM)) __obj.updateDynamic("hasM")(hasM)
-    if (!js.isUndefined(hasZ)) __obj.updateDynamic("hasZ")(hasZ)
-    if (paths != null) __obj.updateDynamic("paths")(paths)
-    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)
+    if (!js.isUndefined(hasM)) __obj.updateDynamic("hasM")(hasM.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasZ)) __obj.updateDynamic("hasZ")(hasZ.asInstanceOf[js.Any])
+    if (paths != null) __obj.updateDynamic("paths")(paths.asInstanceOf[js.Any])
+    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolylineProperties]
   }
 }

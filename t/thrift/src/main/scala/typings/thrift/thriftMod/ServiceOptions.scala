@@ -22,9 +22,9 @@ object ServiceOptions {
   ): ServiceOptions[TProcessor, THandler] = {
     val __obj = js.Dynamic.literal()
     if (handler != null) __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
-    if (processor != null) __obj.updateDynamic("processor")(processor)
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
-    if (transport != null) __obj.updateDynamic("transport")(transport)
+    if (processor != null) __obj.updateDynamic("processor")(processor.asInstanceOf[js.Any])
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
+    if (transport != null) __obj.updateDynamic("transport")(transport.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceOptions[TProcessor, THandler]]
   }
 }

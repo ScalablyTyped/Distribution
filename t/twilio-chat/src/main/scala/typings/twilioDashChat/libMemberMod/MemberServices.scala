@@ -14,7 +14,7 @@ trait MemberServices extends js.Object {
 object MemberServices {
   @scala.inline
   def apply(session: Session, users: Users): MemberServices = {
-    val __obj = js.Dynamic.literal(session = session, users = users)
+    val __obj = js.Dynamic.literal(session = session.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MemberServices]
   }

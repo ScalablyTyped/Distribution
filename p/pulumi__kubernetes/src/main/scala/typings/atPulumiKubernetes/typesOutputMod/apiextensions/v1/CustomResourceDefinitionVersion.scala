@@ -50,7 +50,7 @@ object CustomResourceDefinitionVersion {
     storage: Boolean,
     subresources: CustomResourceSubresources
   ): CustomResourceDefinitionVersion = {
-    val __obj = js.Dynamic.literal(additionalPrinterColumns = additionalPrinterColumns, name = name, schema = schema, served = served, storage = storage, subresources = subresources)
+    val __obj = js.Dynamic.literal(additionalPrinterColumns = additionalPrinterColumns.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any], served = served.asInstanceOf[js.Any], storage = storage.asInstanceOf[js.Any], subresources = subresources.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CustomResourceDefinitionVersion]
   }

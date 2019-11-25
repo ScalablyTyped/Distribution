@@ -22,11 +22,11 @@ object OrdersUpdateLineItemShippingDetailsRequest {
     shipByDate: String = null
   ): OrdersUpdateLineItemShippingDetailsRequest = {
     val __obj = js.Dynamic.literal()
-    if (deliverByDate != null) __obj.updateDynamic("deliverByDate")(deliverByDate)
-    if (lineItemId != null) __obj.updateDynamic("lineItemId")(lineItemId)
-    if (operationId != null) __obj.updateDynamic("operationId")(operationId)
-    if (productId != null) __obj.updateDynamic("productId")(productId)
-    if (shipByDate != null) __obj.updateDynamic("shipByDate")(shipByDate)
+    if (deliverByDate != null) __obj.updateDynamic("deliverByDate")(deliverByDate.asInstanceOf[js.Any])
+    if (lineItemId != null) __obj.updateDynamic("lineItemId")(lineItemId.asInstanceOf[js.Any])
+    if (operationId != null) __obj.updateDynamic("operationId")(operationId.asInstanceOf[js.Any])
+    if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
+    if (shipByDate != null) __obj.updateDynamic("shipByDate")(shipByDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrdersUpdateLineItemShippingDetailsRequest]
   }
 }

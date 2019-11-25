@@ -39,10 +39,10 @@ object GeoprocessorWaitForJobCompletionOptions {
     signal: js.Any = null,
     statusCallback: js.Any = null
   ): GeoprocessorWaitForJobCompletionOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (interval != null) __obj.updateDynamic("interval")(interval)
-    if (signal != null) __obj.updateDynamic("signal")(signal)
-    if (statusCallback != null) __obj.updateDynamic("statusCallback")(statusCallback)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
+    if (statusCallback != null) __obj.updateDynamic("statusCallback")(statusCallback.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoprocessorWaitForJobCompletionOptions]
   }
 }

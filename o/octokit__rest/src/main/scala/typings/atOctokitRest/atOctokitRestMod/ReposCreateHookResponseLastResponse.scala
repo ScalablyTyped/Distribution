@@ -13,7 +13,7 @@ trait ReposCreateHookResponseLastResponse extends js.Object {
 object ReposCreateHookResponseLastResponse {
   @scala.inline
   def apply(code: Null, message: Null, status: String): ReposCreateHookResponseLastResponse = {
-    val __obj = js.Dynamic.literal(code = code, message = message, status = status)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReposCreateHookResponseLastResponse]
   }

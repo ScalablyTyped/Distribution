@@ -12,9 +12,3 @@ class Volta protected ()
   def this(`type`: `type`, number: Double, x: Double, y_shift: Double) = this()
 }
 
-@JSImport("vexflow", "Flow.Volta")
-@js.native
-object Volta extends js.Object {
-  type `type` = typings.vexflow.Vex.Flow.Volta.`type`
-}
-

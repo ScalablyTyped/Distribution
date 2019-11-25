@@ -15,8 +15,8 @@ trait GroupPattern
 object GroupPattern {
   @scala.inline
   def apply(patterns: js.Array[Pattern], `type`: group): GroupPattern = {
-    val __obj = js.Dynamic.literal(patterns = patterns)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(patterns = patterns.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupPattern]
   }
 }

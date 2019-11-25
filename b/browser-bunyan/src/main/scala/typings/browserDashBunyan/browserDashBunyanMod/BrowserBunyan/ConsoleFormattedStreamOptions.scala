@@ -14,8 +14,8 @@ object ConsoleFormattedStreamOptions {
   @scala.inline
   def apply(css: Partial[ConsoleFormattedStreamStyle] = null, logByLevel: js.UndefOr[Boolean] = js.undefined): ConsoleFormattedStreamOptions = {
     val __obj = js.Dynamic.literal()
-    if (css != null) __obj.updateDynamic("css")(css)
-    if (!js.isUndefined(logByLevel)) __obj.updateDynamic("logByLevel")(logByLevel)
+    if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
+    if (!js.isUndefined(logByLevel)) __obj.updateDynamic("logByLevel")(logByLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConsoleFormattedStreamOptions]
   }
 }

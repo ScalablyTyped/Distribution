@@ -5,8 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libFetchMod {
-  import typings.nodemailer.libFetchCookiesMod.^
-
-  type Cookies = ^
+  type Cookies = typings.nodemailer.libFetchCookiesMod.^
   type ms = Double
 }

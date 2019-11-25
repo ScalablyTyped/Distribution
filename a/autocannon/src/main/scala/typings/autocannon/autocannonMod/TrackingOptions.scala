@@ -43,11 +43,11 @@ object TrackingOptions {
     renderResultsTable: js.UndefOr[Boolean] = js.undefined
   ): TrackingOptions = {
     val __obj = js.Dynamic.literal()
-    if (outputStream != null) __obj.updateDynamic("outputStream")(outputStream)
-    if (progressBarString != null) __obj.updateDynamic("progressBarString")(progressBarString)
-    if (!js.isUndefined(renderLatencyTable)) __obj.updateDynamic("renderLatencyTable")(renderLatencyTable)
-    if (!js.isUndefined(renderProgressBar)) __obj.updateDynamic("renderProgressBar")(renderProgressBar)
-    if (!js.isUndefined(renderResultsTable)) __obj.updateDynamic("renderResultsTable")(renderResultsTable)
+    if (outputStream != null) __obj.updateDynamic("outputStream")(outputStream.asInstanceOf[js.Any])
+    if (progressBarString != null) __obj.updateDynamic("progressBarString")(progressBarString.asInstanceOf[js.Any])
+    if (!js.isUndefined(renderLatencyTable)) __obj.updateDynamic("renderLatencyTable")(renderLatencyTable.asInstanceOf[js.Any])
+    if (!js.isUndefined(renderProgressBar)) __obj.updateDynamic("renderProgressBar")(renderProgressBar.asInstanceOf[js.Any])
+    if (!js.isUndefined(renderResultsTable)) __obj.updateDynamic("renderResultsTable")(renderResultsTable.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrackingOptions]
   }
 }

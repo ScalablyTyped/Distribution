@@ -13,7 +13,7 @@ object Anon_ClientApolloClient {
   @scala.inline
   def apply(client: ApolloClient[js.Object] = null): Anon_ClientApolloClient = {
     val __obj = js.Dynamic.literal()
-    if (client != null) __obj.updateDynamic("client")(client)
+    if (client != null) __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ClientApolloClient]
   }
 }

@@ -20,7 +20,7 @@ object createCellPositionerParams {
     columnWidth: Double,
     spacer: Int | Double = null
   ): createCellPositionerParams = {
-    val __obj = js.Dynamic.literal(cellMeasurerCache = cellMeasurerCache, columnCount = columnCount, columnWidth = columnWidth)
+    val __obj = js.Dynamic.literal(cellMeasurerCache = cellMeasurerCache.asInstanceOf[js.Any], columnCount = columnCount.asInstanceOf[js.Any], columnWidth = columnWidth.asInstanceOf[js.Any])
     if (spacer != null) __obj.updateDynamic("spacer")(spacer.asInstanceOf[js.Any])
     __obj.asInstanceOf[createCellPositionerParams]
   }

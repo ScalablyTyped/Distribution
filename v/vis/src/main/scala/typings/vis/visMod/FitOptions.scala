@@ -20,7 +20,7 @@ object FitOptions {
   @scala.inline
   def apply(animation: TimelineAnimationType, nodes: js.Array[String] = null): FitOptions = {
     val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any])
-    if (nodes != null) __obj.updateDynamic("nodes")(nodes)
+    if (nodes != null) __obj.updateDynamic("nodes")(nodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[FitOptions]
   }
 }

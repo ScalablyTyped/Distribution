@@ -29,12 +29,12 @@ object ToolbarOptions {
     rectangle: RectangleOptions = null
   ): ToolbarOptions = {
     val __obj = js.Dynamic.literal()
-    if (circle != null) __obj.updateDynamic("circle")(circle)
-    if (circlemarker != null) __obj.updateDynamic("circlemarker")(circlemarker)
-    if (marker != null) __obj.updateDynamic("marker")(marker)
-    if (polygon != null) __obj.updateDynamic("polygon")(polygon)
-    if (polyline != null) __obj.updateDynamic("polyline")(polyline)
-    if (rectangle != null) __obj.updateDynamic("rectangle")(rectangle)
+    if (circle != null) __obj.updateDynamic("circle")(circle.asInstanceOf[js.Any])
+    if (circlemarker != null) __obj.updateDynamic("circlemarker")(circlemarker.asInstanceOf[js.Any])
+    if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
+    if (polygon != null) __obj.updateDynamic("polygon")(polygon.asInstanceOf[js.Any])
+    if (polyline != null) __obj.updateDynamic("polyline")(polyline.asInstanceOf[js.Any])
+    if (rectangle != null) __obj.updateDynamic("rectangle")(rectangle.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolbarOptions]
   }
 }

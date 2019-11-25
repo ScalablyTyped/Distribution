@@ -20,8 +20,8 @@ trait FactorySansProvider extends InjectableProvider {
 object FactorySansProvider {
   @scala.inline
   def apply(useFactory: js.Function, deps: js.Array[_] = null): FactorySansProvider = {
-    val __obj = js.Dynamic.literal(useFactory = useFactory)
-    if (deps != null) __obj.updateDynamic("deps")(deps)
+    val __obj = js.Dynamic.literal(useFactory = useFactory.asInstanceOf[js.Any])
+    if (deps != null) __obj.updateDynamic("deps")(deps.asInstanceOf[js.Any])
     __obj.asInstanceOf[FactorySansProvider]
   }
 }

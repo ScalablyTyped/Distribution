@@ -17,7 +17,7 @@ trait Typeofservices extends js.Object {
 object Typeofservices {
   @scala.inline
   def apply(passwordSavingEnabled: Setting): Typeofservices = {
-    val __obj = js.Dynamic.literal(passwordSavingEnabled = passwordSavingEnabled)
+    val __obj = js.Dynamic.literal(passwordSavingEnabled = passwordSavingEnabled.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Typeofservices]
   }

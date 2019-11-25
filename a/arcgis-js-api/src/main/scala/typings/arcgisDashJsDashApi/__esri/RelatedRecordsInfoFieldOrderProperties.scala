@@ -25,7 +25,7 @@ object RelatedRecordsInfoFieldOrderProperties {
   @scala.inline
   def apply(field: String = null, order: asc | desc = null): RelatedRecordsInfoFieldOrderProperties = {
     val __obj = js.Dynamic.literal()
-    if (field != null) __obj.updateDynamic("field")(field)
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelatedRecordsInfoFieldOrderProperties]
   }

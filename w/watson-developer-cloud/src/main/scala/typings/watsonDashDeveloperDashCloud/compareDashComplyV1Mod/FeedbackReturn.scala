@@ -28,11 +28,11 @@ object FeedbackReturn {
     user_id: String = null
   ): FeedbackReturn = {
     val __obj = js.Dynamic.literal()
-    if (comment != null) __obj.updateDynamic("comment")(comment)
-    if (created != null) __obj.updateDynamic("created")(created)
-    if (feedback_data != null) __obj.updateDynamic("feedback_data")(feedback_data)
-    if (feedback_id != null) __obj.updateDynamic("feedback_id")(feedback_id)
-    if (user_id != null) __obj.updateDynamic("user_id")(user_id)
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
+    if (feedback_data != null) __obj.updateDynamic("feedback_data")(feedback_data.asInstanceOf[js.Any])
+    if (feedback_id != null) __obj.updateDynamic("feedback_id")(feedback_id.asInstanceOf[js.Any])
+    if (user_id != null) __obj.updateDynamic("user_id")(user_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeedbackReturn]
   }
 }

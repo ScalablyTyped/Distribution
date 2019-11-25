@@ -12,7 +12,7 @@ trait LevelsParam extends js.Object {
 object LevelsParam {
   @scala.inline
   def apply(levels: js.Array[_], width: Double): LevelsParam = {
-    val __obj = js.Dynamic.literal(levels = levels, width = width)
+    val __obj = js.Dynamic.literal(levels = levels.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LevelsParam]
   }

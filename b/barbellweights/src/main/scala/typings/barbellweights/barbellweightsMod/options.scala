@@ -21,8 +21,8 @@ object options {
   ): options = {
     val __obj = js.Dynamic.literal()
     if (bar != null) __obj.updateDynamic("bar")(bar.asInstanceOf[js.Any])
-    if (plates != null) __obj.updateDynamic("plates")(plates)
-    if (program != null) __obj.updateDynamic("program")(program)
+    if (plates != null) __obj.updateDynamic("plates")(plates.asInstanceOf[js.Any])
+    if (program != null) __obj.updateDynamic("program")(program.asInstanceOf[js.Any])
     if (warmup_round_to != null) __obj.updateDynamic("warmup_round_to")(warmup_round_to.asInstanceOf[js.Any])
     __obj.asInstanceOf[options]
   }

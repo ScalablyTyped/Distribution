@@ -15,9 +15,9 @@ object GetStateParameters {
   @scala.inline
   def apply(channelGroups: js.Array[String] = null, channels: js.Array[String] = null, uuid: String = null): GetStateParameters = {
     val __obj = js.Dynamic.literal()
-    if (channelGroups != null) __obj.updateDynamic("channelGroups")(channelGroups)
-    if (channels != null) __obj.updateDynamic("channels")(channels)
-    if (uuid != null) __obj.updateDynamic("uuid")(uuid)
+    if (channelGroups != null) __obj.updateDynamic("channelGroups")(channelGroups.asInstanceOf[js.Any])
+    if (channels != null) __obj.updateDynamic("channels")(channels.asInstanceOf[js.Any])
+    if (uuid != null) __obj.updateDynamic("uuid")(uuid.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetStateParameters]
   }
 }

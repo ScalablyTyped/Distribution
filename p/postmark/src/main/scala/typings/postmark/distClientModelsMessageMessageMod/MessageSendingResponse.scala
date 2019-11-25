@@ -24,10 +24,10 @@ object MessageSendingResponse {
     Cc: String = null,
     To: String = null
   ): MessageSendingResponse = {
-    val __obj = js.Dynamic.literal(ErrorCode = ErrorCode, Message = Message, MessageID = MessageID, SubmittedAt = SubmittedAt)
-    if (Bcc != null) __obj.updateDynamic("Bcc")(Bcc)
-    if (Cc != null) __obj.updateDynamic("Cc")(Cc)
-    if (To != null) __obj.updateDynamic("To")(To)
+    val __obj = js.Dynamic.literal(ErrorCode = ErrorCode.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], MessageID = MessageID.asInstanceOf[js.Any], SubmittedAt = SubmittedAt.asInstanceOf[js.Any])
+    if (Bcc != null) __obj.updateDynamic("Bcc")(Bcc.asInstanceOf[js.Any])
+    if (Cc != null) __obj.updateDynamic("Cc")(Cc.asInstanceOf[js.Any])
+    if (To != null) __obj.updateDynamic("To")(To.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageSendingResponse]
   }
 }

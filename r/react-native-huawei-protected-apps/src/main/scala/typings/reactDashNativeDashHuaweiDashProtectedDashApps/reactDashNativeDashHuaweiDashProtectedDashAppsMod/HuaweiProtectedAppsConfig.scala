@@ -21,7 +21,7 @@ object HuaweiProtectedAppsConfig {
     text: String,
     title: String
   ): HuaweiProtectedAppsConfig = {
-    val __obj = js.Dynamic.literal(doNotShowAgainText = doNotShowAgainText, negativeText = negativeText, positiveText = positiveText, text = text, title = title)
+    val __obj = js.Dynamic.literal(doNotShowAgainText = doNotShowAgainText.asInstanceOf[js.Any], negativeText = negativeText.asInstanceOf[js.Any], positiveText = positiveText.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HuaweiProtectedAppsConfig]
   }

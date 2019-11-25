@@ -51,12 +51,12 @@ object CompressOptions {
     usage: Usage = null
   ): CompressOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(clone)) __obj.updateDynamic("clone")(clone)
+    if (!js.isUndefined(clone)) __obj.updateDynamic("clone")(clone.asInstanceOf[js.Any])
     if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceMediaMerge)) __obj.updateDynamic("forceMediaMerge")(forceMediaMerge)
+    if (!js.isUndefined(forceMediaMerge)) __obj.updateDynamic("forceMediaMerge")(forceMediaMerge.asInstanceOf[js.Any])
     if (logger != null) __obj.updateDynamic("logger")(js.Any.fromFunction0(logger))
-    if (!js.isUndefined(restructure)) __obj.updateDynamic("restructure")(restructure)
-    if (usage != null) __obj.updateDynamic("usage")(usage)
+    if (!js.isUndefined(restructure)) __obj.updateDynamic("restructure")(restructure.asInstanceOf[js.Any])
+    if (usage != null) __obj.updateDynamic("usage")(usage.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompressOptions]
   }
 }

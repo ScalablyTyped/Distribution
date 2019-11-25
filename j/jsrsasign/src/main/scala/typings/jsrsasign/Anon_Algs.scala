@@ -25,7 +25,7 @@ object Anon_Algs {
     si: js.Array[SignerInfo],
     version: String
   ): Anon_Algs = {
-    val __obj = js.Dynamic.literal(algs = algs, certs = certs, obj = obj, revs = revs, si = si, version = version)
+    val __obj = js.Dynamic.literal(algs = algs.asInstanceOf[js.Any], certs = certs.asInstanceOf[js.Any], obj = obj.asInstanceOf[js.Any], revs = revs.asInstanceOf[js.Any], si = si.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Algs]
   }

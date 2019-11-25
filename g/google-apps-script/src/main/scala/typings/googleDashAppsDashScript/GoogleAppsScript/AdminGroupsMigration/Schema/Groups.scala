@@ -13,8 +13,8 @@ object Groups {
   @scala.inline
   def apply(kind: String = null, responseCode: String = null): Groups = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (responseCode != null) __obj.updateDynamic("responseCode")(responseCode)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (responseCode != null) __obj.updateDynamic("responseCode")(responseCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Groups]
   }
 }

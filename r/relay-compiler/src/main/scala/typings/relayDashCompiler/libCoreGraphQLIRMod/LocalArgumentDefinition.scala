@@ -28,7 +28,7 @@ object LocalArgumentDefinition {
     `type`: GraphQLInputType,
     metadata: Metadata = null
   ): LocalArgumentDefinition = {
-    val __obj = js.Dynamic.literal(defaultValue = defaultValue, kind = kind, loc = loc, name = name)
+    val __obj = js.Dynamic.literal(defaultValue = defaultValue.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalArgumentDefinition]

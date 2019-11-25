@@ -47,22 +47,22 @@ object IOptions {
     transformTags: StringDictionary[String | Transformer] = null
   ): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowIframeRelativeUrls)) __obj.updateDynamic("allowIframeRelativeUrls")(allowIframeRelativeUrls)
-    if (!js.isUndefined(allowProtocolRelative)) __obj.updateDynamic("allowProtocolRelative")(allowProtocolRelative)
+    if (!js.isUndefined(allowIframeRelativeUrls)) __obj.updateDynamic("allowIframeRelativeUrls")(allowIframeRelativeUrls.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowProtocolRelative)) __obj.updateDynamic("allowProtocolRelative")(allowProtocolRelative.asInstanceOf[js.Any])
     if (allowedAttributes != null) __obj.updateDynamic("allowedAttributes")(allowedAttributes.asInstanceOf[js.Any])
     if (allowedClasses != null) __obj.updateDynamic("allowedClasses")(allowedClasses.asInstanceOf[js.Any])
-    if (allowedIframeHostnames != null) __obj.updateDynamic("allowedIframeHostnames")(allowedIframeHostnames)
+    if (allowedIframeHostnames != null) __obj.updateDynamic("allowedIframeHostnames")(allowedIframeHostnames.asInstanceOf[js.Any])
     if (allowedSchemes != null) __obj.updateDynamic("allowedSchemes")(allowedSchemes.asInstanceOf[js.Any])
-    if (allowedSchemesAppliedToAttributes != null) __obj.updateDynamic("allowedSchemesAppliedToAttributes")(allowedSchemesAppliedToAttributes)
+    if (allowedSchemesAppliedToAttributes != null) __obj.updateDynamic("allowedSchemesAppliedToAttributes")(allowedSchemesAppliedToAttributes.asInstanceOf[js.Any])
     if (allowedSchemesByTag != null) __obj.updateDynamic("allowedSchemesByTag")(allowedSchemesByTag.asInstanceOf[js.Any])
-    if (allowedStyles != null) __obj.updateDynamic("allowedStyles")(allowedStyles)
+    if (allowedStyles != null) __obj.updateDynamic("allowedStyles")(allowedStyles.asInstanceOf[js.Any])
     if (allowedTags != null) __obj.updateDynamic("allowedTags")(allowedTags.asInstanceOf[js.Any])
     if (exclusiveFilter != null) __obj.updateDynamic("exclusiveFilter")(js.Any.fromFunction1(exclusiveFilter))
-    if (nonTextTags != null) __obj.updateDynamic("nonTextTags")(nonTextTags)
-    if (parser != null) __obj.updateDynamic("parser")(parser)
-    if (selfClosing != null) __obj.updateDynamic("selfClosing")(selfClosing)
+    if (nonTextTags != null) __obj.updateDynamic("nonTextTags")(nonTextTags.asInstanceOf[js.Any])
+    if (parser != null) __obj.updateDynamic("parser")(parser.asInstanceOf[js.Any])
+    if (selfClosing != null) __obj.updateDynamic("selfClosing")(selfClosing.asInstanceOf[js.Any])
     if (textFilter != null) __obj.updateDynamic("textFilter")(js.Any.fromFunction1(textFilter))
-    if (transformTags != null) __obj.updateDynamic("transformTags")(transformTags)
+    if (transformTags != null) __obj.updateDynamic("transformTags")(transformTags.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

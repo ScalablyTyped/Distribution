@@ -12,7 +12,7 @@ trait Anon_DragDropManager extends js.Object {
 object Anon_DragDropManager {
   @scala.inline
   def apply(dragDropManager: DragDropManager): Anon_DragDropManager = {
-    val __obj = js.Dynamic.literal(dragDropManager = dragDropManager)
+    val __obj = js.Dynamic.literal(dragDropManager = dragDropManager.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DragDropManager]
   }

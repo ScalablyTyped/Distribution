@@ -20,8 +20,8 @@ object VerticalTimelineProps {
     layout: `1-column` | `2-columns` = null
   ): VerticalTimelineProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
     __obj.asInstanceOf[VerticalTimelineProps]
   }

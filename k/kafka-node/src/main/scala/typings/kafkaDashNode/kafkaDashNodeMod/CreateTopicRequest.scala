@@ -23,9 +23,9 @@ object CreateTopicRequest {
     configEntries: js.Array[Anon_Name] = null,
     replicaAssignment: js.Array[Anon_Partition] = null
   ): CreateTopicRequest = {
-    val __obj = js.Dynamic.literal(partitions = partitions, replicationFactor = replicationFactor, topic = topic)
-    if (configEntries != null) __obj.updateDynamic("configEntries")(configEntries)
-    if (replicaAssignment != null) __obj.updateDynamic("replicaAssignment")(replicaAssignment)
+    val __obj = js.Dynamic.literal(partitions = partitions.asInstanceOf[js.Any], replicationFactor = replicationFactor.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
+    if (configEntries != null) __obj.updateDynamic("configEntries")(configEntries.asInstanceOf[js.Any])
+    if (replicaAssignment != null) __obj.updateDynamic("replicaAssignment")(replicaAssignment.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTopicRequest]
   }
 }

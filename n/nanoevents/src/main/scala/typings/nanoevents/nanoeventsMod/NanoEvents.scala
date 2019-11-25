@@ -5,11 +5,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait NanoEvents[T /* <: js.Object */] extends js.Object {
-  def emit[U /* <: String */](name: U, value: /* import warning: ImportType.apply Failed type conversion: T[U] */ js.Any): Unit
+  def emit[U /* <: String */](
+    name: U,
+    value: /* import warning: importer.ImportType#apply Failed type conversion: T[U] */ js.Any
+  ): Unit
   def on[U /* <: String */](
     name: U,
     callBack: js.Function1[
-      /* import warning: ImportType.apply Failed type conversion: T[U] */ /* arg */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: T[U] */ /* arg */ js.Any, 
       _
     ]
   ): js.Function0[Unit]
@@ -18,9 +21,9 @@ trait NanoEvents[T /* <: js.Object */] extends js.Object {
 object NanoEvents {
   @scala.inline
   def apply[T /* <: js.Object */](
-    emit: (js.Any, /* import warning: ImportType.apply Failed type conversion: T[U] */ js.Any) => Unit,
+    emit: (js.Any, /* import warning: importer.ImportType#apply Failed type conversion: T[U] */ js.Any) => Unit,
     on: (js.Any, js.Function1[
-      /* import warning: ImportType.apply Failed type conversion: T[U] */ /* arg */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: T[U] */ /* arg */ js.Any, 
       _
     ]) => js.Function0[Unit]
   ): NanoEvents[T] = {

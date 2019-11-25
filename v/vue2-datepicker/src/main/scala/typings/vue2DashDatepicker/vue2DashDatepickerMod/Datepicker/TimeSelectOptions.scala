@@ -13,7 +13,7 @@ trait TimeSelectOptions extends js.Object {
 object TimeSelectOptions {
   @scala.inline
   def apply(hours: js.Array[Double], minutes: js.Array[Double], seconds: js.Array[Double]): TimeSelectOptions = {
-    val __obj = js.Dynamic.literal(hours = hours, minutes = minutes, seconds = seconds)
+    val __obj = js.Dynamic.literal(hours = hours.asInstanceOf[js.Any], minutes = minutes.asInstanceOf[js.Any], seconds = seconds.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TimeSelectOptions]
   }

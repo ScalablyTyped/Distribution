@@ -41,10 +41,10 @@ object IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeMeasuresDimension 
     name: String = null
   ): IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeMeasuresDimension = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (caption != null) __obj.updateDynamic("caption")(caption)
-    if (measures != null) __obj.updateDynamic("measures")(measures)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
+    if (measures != null) __obj.updateDynamic("measures")(measures.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeMeasuresDimension]
   }
 }

@@ -15,8 +15,8 @@ trait WatchResource extends js.Object {
 object WatchResource {
   @scala.inline
   def apply(address: String, expiration: Double, id: String, token: String, `type`: String): WatchResource = {
-    val __obj = js.Dynamic.literal(address = address, expiration = expiration, id = id, token = token)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], expiration = expiration.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WatchResource]
   }
 }

@@ -13,7 +13,7 @@ trait Anon_Commit extends js.Object {
 object Anon_Commit {
   @scala.inline
   def apply(commit: Double, lastMergeCommit: Double, notSet: Double): Anon_Commit = {
-    val __obj = js.Dynamic.literal(commit = commit, lastMergeCommit = lastMergeCommit, notSet = notSet)
+    val __obj = js.Dynamic.literal(commit = commit.asInstanceOf[js.Any], lastMergeCommit = lastMergeCommit.asInstanceOf[js.Any], notSet = notSet.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Commit]
   }

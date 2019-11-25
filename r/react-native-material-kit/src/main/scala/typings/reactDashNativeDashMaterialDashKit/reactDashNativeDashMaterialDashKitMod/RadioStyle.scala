@@ -22,11 +22,11 @@ object RadioStyle {
     rippleColor: String = null
   ): RadioStyle = {
     val __obj = js.Dynamic.literal()
-    if (borderOffColor != null) __obj.updateDynamic("borderOffColor")(borderOffColor)
-    if (borderOnColor != null) __obj.updateDynamic("borderOnColor")(borderOnColor)
+    if (borderOffColor != null) __obj.updateDynamic("borderOffColor")(borderOffColor.asInstanceOf[js.Any])
+    if (borderOnColor != null) __obj.updateDynamic("borderOnColor")(borderOnColor.asInstanceOf[js.Any])
     if (extraRippleRadius != null) __obj.updateDynamic("extraRippleRadius")(extraRippleRadius.asInstanceOf[js.Any])
-    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor)
-    if (rippleColor != null) __obj.updateDynamic("rippleColor")(rippleColor)
+    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
+    if (rippleColor != null) __obj.updateDynamic("rippleColor")(rippleColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[RadioStyle]
   }
 }

@@ -14,7 +14,7 @@ trait Anon_Data extends js.Object {
 object Anon_Data {
   @scala.inline
   def apply(data: js.Any, endpoint: String, method: String, timeout: Int | Double = null): Anon_Data = {
-    val __obj = js.Dynamic.literal(data = data, endpoint = endpoint, method = method)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], endpoint = endpoint.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Data]
   }

@@ -23,10 +23,10 @@ object SimpleFillSymbol {
     style: SimpleFillSymbolStyle = null
   ): SimpleFillSymbol = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (outline != null) __obj.updateDynamic("outline")(outline)
-    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (outline != null) __obj.updateDynamic("outline")(outline.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimpleFillSymbol]
   }
 }

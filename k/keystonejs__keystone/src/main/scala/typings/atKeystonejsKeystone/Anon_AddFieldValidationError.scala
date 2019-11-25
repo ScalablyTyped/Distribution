@@ -44,18 +44,17 @@ object Anon_AddFieldValidationError {
       updatedItem | existingItem | originalInput | context | list
     ] => Unit,
     afterDelete: Pick[ResolveInputHooksOptions[_], existingItem | context | list] => Unit,
-    beforeChange_addFieldValidationError: Omit[ResolveInputHooksOptions[_], addFieldValidationError] => Unit,
+    beforeChange: Omit[ResolveInputHooksOptions[_], addFieldValidationError] => Unit,
     beforeDelete: Pick[ResolveInputHooksOptions[_], existingItem | context | list] => Unit,
     resolveInput: Omit[ResolveInputHooksOptions[_], addFieldValidationError | updatedItem] => js.Any,
     validateDelete: Pick[
       ResolveInputHooksOptions[_], 
       existingItem | context | list | addFieldValidationError
     ] => Unit,
-    validateInput_updatedItem: Omit[ResolveInputHooksOptions[_], updatedItem] => Unit
+    validateInput: Omit[ResolveInputHooksOptions[_], updatedItem] => Unit
   ): Anon_AddFieldValidationError = {
-    val __obj = js.Dynamic.literal(afterChange = js.Any.fromFunction1(afterChange), afterDelete = js.Any.fromFunction1(afterDelete), beforeDelete = js.Any.fromFunction1(beforeDelete), resolveInput = js.Any.fromFunction1(resolveInput), validateDelete = js.Any.fromFunction1(validateDelete))
-    __obj.updateDynamic("beforeChange")(js.Any.fromFunction1(beforeChange_addFieldValidationError))
-    __obj.updateDynamic("validateInput")(js.Any.fromFunction1(validateInput_updatedItem))
+    val __obj = js.Dynamic.literal(afterChange = js.Any.fromFunction1(afterChange), afterDelete = js.Any.fromFunction1(afterDelete), beforeChange = js.Any.fromFunction1(beforeChange), beforeDelete = js.Any.fromFunction1(beforeDelete), resolveInput = js.Any.fromFunction1(resolveInput), validateDelete = js.Any.fromFunction1(validateDelete), validateInput = js.Any.fromFunction1(validateInput))
+  
     __obj.asInstanceOf[Anon_AddFieldValidationError]
   }
 }

@@ -38,10 +38,10 @@ object HTMLAttributesidclassNamestylecontentStyleanymodif {
     style: CSSProperties = null
   ): HTMLAttributesidclassNamestylecontentStyleanymodif = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (contentStyle != null) __obj.updateDynamic("contentStyle")(contentStyle)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (modifier != null) __obj.updateDynamic("modifier")(modifier)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (contentStyle != null) __obj.updateDynamic("contentStyle")(contentStyle.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (modifier != null) __obj.updateDynamic("modifier")(modifier.asInstanceOf[js.Any])
     if (onHide != null) __obj.updateDynamic("onHide")(js.Any.fromFunction0(onHide))
     if (onInit != null) __obj.updateDynamic("onInit")(js.Any.fromFunction0(onInit))
     if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction0(onShow))
@@ -49,7 +49,7 @@ object HTMLAttributesidclassNamestylecontentStyleanymodif {
     if (renderFixed != null) __obj.updateDynamic("renderFixed")(js.Any.fromFunction0(renderFixed))
     if (renderModal != null) __obj.updateDynamic("renderModal")(js.Any.fromFunction0(renderModal))
     if (renderToolbar != null) __obj.updateDynamic("renderToolbar")(js.Any.fromFunction0(renderToolbar))
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[HTMLAttributesidclassNamestylecontentStyleanymodif]
   }
 }

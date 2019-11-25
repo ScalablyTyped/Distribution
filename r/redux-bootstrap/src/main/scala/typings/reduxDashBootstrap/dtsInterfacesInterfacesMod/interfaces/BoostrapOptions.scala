@@ -42,16 +42,16 @@ object BoostrapOptions {
     render: js.Function = null,
     routerProps: RouterProps = null
   ): BoostrapOptions = {
-    val __obj = js.Dynamic.literal(reducers = reducers, routes = routes)
-    if (container != null) __obj.updateDynamic("container")(container)
-    if (createHistory != null) __obj.updateDynamic("createHistory")(createHistory)
-    if (devToolsOptions != null) __obj.updateDynamic("devToolsOptions")(devToolsOptions)
-    if (enhancers != null) __obj.updateDynamic("enhancers")(enhancers)
-    if (historyOptions != null) __obj.updateDynamic("historyOptions")(historyOptions)
-    if (initialState != null) __obj.updateDynamic("initialState")(initialState)
-    if (middlewares != null) __obj.updateDynamic("middlewares")(middlewares)
-    if (render != null) __obj.updateDynamic("render")(render)
-    if (routerProps != null) __obj.updateDynamic("routerProps")(routerProps)
+    val __obj = js.Dynamic.literal(reducers = reducers.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any])
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (createHistory != null) __obj.updateDynamic("createHistory")(createHistory.asInstanceOf[js.Any])
+    if (devToolsOptions != null) __obj.updateDynamic("devToolsOptions")(devToolsOptions.asInstanceOf[js.Any])
+    if (enhancers != null) __obj.updateDynamic("enhancers")(enhancers.asInstanceOf[js.Any])
+    if (historyOptions != null) __obj.updateDynamic("historyOptions")(historyOptions.asInstanceOf[js.Any])
+    if (initialState != null) __obj.updateDynamic("initialState")(initialState.asInstanceOf[js.Any])
+    if (middlewares != null) __obj.updateDynamic("middlewares")(middlewares.asInstanceOf[js.Any])
+    if (render != null) __obj.updateDynamic("render")(render.asInstanceOf[js.Any])
+    if (routerProps != null) __obj.updateDynamic("routerProps")(routerProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[BoostrapOptions]
   }
 }

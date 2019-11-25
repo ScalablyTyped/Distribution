@@ -17,9 +17,9 @@ object BinLogCoordinates {
   @scala.inline
   def apply(binLogFileName: String = null, binLogPosition: String = null, kind: String = null): BinLogCoordinates = {
     val __obj = js.Dynamic.literal()
-    if (binLogFileName != null) __obj.updateDynamic("binLogFileName")(binLogFileName)
-    if (binLogPosition != null) __obj.updateDynamic("binLogPosition")(binLogPosition)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (binLogFileName != null) __obj.updateDynamic("binLogFileName")(binLogFileName.asInstanceOf[js.Any])
+    if (binLogPosition != null) __obj.updateDynamic("binLogPosition")(binLogPosition.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[BinLogCoordinates]
   }
 }

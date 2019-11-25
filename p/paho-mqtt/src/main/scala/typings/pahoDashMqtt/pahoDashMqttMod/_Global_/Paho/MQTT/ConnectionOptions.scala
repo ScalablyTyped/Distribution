@@ -82,19 +82,19 @@ object ConnectionOptions {
     willMessage: typings.pahoDashMqtt.pahoDashMqttMod._Global_.Paho.MQTT.Message = null
   ): ConnectionOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cleanSession)) __obj.updateDynamic("cleanSession")(cleanSession)
-    if (hosts != null) __obj.updateDynamic("hosts")(hosts)
-    if (invocationContext != null) __obj.updateDynamic("invocationContext")(invocationContext)
+    if (!js.isUndefined(cleanSession)) __obj.updateDynamic("cleanSession")(cleanSession.asInstanceOf[js.Any])
+    if (hosts != null) __obj.updateDynamic("hosts")(hosts.asInstanceOf[js.Any])
+    if (invocationContext != null) __obj.updateDynamic("invocationContext")(invocationContext.asInstanceOf[js.Any])
     if (keepAliveInterval != null) __obj.updateDynamic("keepAliveInterval")(keepAliveInterval.asInstanceOf[js.Any])
     if (mqttVersion != null) __obj.updateDynamic("mqttVersion")(mqttVersion.asInstanceOf[js.Any])
     if (onFailure != null) __obj.updateDynamic("onFailure")(js.Any.fromFunction1(onFailure))
     if (onSuccess != null) __obj.updateDynamic("onSuccess")(js.Any.fromFunction1(onSuccess))
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (ports != null) __obj.updateDynamic("ports")(ports)
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (ports != null) __obj.updateDynamic("ports")(ports.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(useSSL)) __obj.updateDynamic("useSSL")(useSSL)
-    if (userName != null) __obj.updateDynamic("userName")(userName)
-    if (willMessage != null) __obj.updateDynamic("willMessage")(willMessage)
+    if (!js.isUndefined(useSSL)) __obj.updateDynamic("useSSL")(useSSL.asInstanceOf[js.Any])
+    if (userName != null) __obj.updateDynamic("userName")(userName.asInstanceOf[js.Any])
+    if (willMessage != null) __obj.updateDynamic("willMessage")(willMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionOptions]
   }
 }

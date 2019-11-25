@@ -14,7 +14,7 @@ object Entry {
   @scala.inline
   def apply[D](data: D, next: Entry[D] = null): Entry[D] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-    if (next != null) __obj.updateDynamic("next")(next)
+    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
     __obj.asInstanceOf[Entry[D]]
   }
 }

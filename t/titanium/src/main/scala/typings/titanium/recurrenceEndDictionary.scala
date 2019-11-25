@@ -23,7 +23,7 @@ object recurrenceEndDictionary {
   @scala.inline
   def apply(endDate: Date = null, occurrenceCount: Int | Double = null): recurrenceEndDictionary = {
     val __obj = js.Dynamic.literal()
-    if (endDate != null) __obj.updateDynamic("endDate")(endDate)
+    if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
     if (occurrenceCount != null) __obj.updateDynamic("occurrenceCount")(occurrenceCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[recurrenceEndDictionary]
   }

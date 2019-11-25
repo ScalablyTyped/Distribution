@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait RegressionTransform extends Transforms {
+trait RegressionTransform extends _Transforms {
   var as: js.UndefOr[(Vector2[String | SignalRef]) | SignalRef] = js.undefined
   var extent: js.UndefOr[(js.Tuple2[Double, Double]) | SignalRef] = js.undefined
   var groupby: js.UndefOr[js.Array[FieldRef] | SignalRef] = js.undefined
@@ -33,7 +33,7 @@ object RegressionTransform {
     params: Boolean | SignalRef = null
   ): RegressionTransform = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
     if (groupby != null) __obj.updateDynamic("groupby")(groupby.asInstanceOf[js.Any])

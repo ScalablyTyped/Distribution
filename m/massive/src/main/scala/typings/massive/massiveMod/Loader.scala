@@ -31,7 +31,7 @@ object Loader {
     if (exceptions != null) __obj.updateDynamic("exceptions")(exceptions.asInstanceOf[js.Any])
     if (functionBlacklist != null) __obj.updateDynamic("functionBlacklist")(functionBlacklist.asInstanceOf[js.Any])
     if (functionWhitelist != null) __obj.updateDynamic("functionWhitelist")(functionWhitelist.asInstanceOf[js.Any])
-    if (scripts != null) __obj.updateDynamic("scripts")(scripts)
+    if (scripts != null) __obj.updateDynamic("scripts")(scripts.asInstanceOf[js.Any])
     if (whitelist != null) __obj.updateDynamic("whitelist")(whitelist.asInstanceOf[js.Any])
     __obj.asInstanceOf[Loader]
   }

@@ -27,9 +27,9 @@ object SecuritySchemeObject {
     `type`: String,
     description: String = null
   ): SecuritySchemeObject = {
-    val __obj = js.Dynamic.literal(authorizationUrl = authorizationUrl, flow = flow, in = in, name = name, scopes = scopes, tokenUrl = tokenUrl)
-    __obj.updateDynamic("type")(`type`)
-    if (description != null) __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(authorizationUrl = authorizationUrl.asInstanceOf[js.Any], flow = flow.asInstanceOf[js.Any], in = in.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], scopes = scopes.asInstanceOf[js.Any], tokenUrl = tokenUrl.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecuritySchemeObject]
   }
 }

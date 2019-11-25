@@ -15,7 +15,7 @@ object UpdateResult {
   @scala.inline
   def apply(outs: js.Any = null): UpdateResult = {
     val __obj = js.Dynamic.literal()
-    if (outs != null) __obj.updateDynamic("outs")(outs)
+    if (outs != null) __obj.updateDynamic("outs")(outs.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateResult]
   }
 }

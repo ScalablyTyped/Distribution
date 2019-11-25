@@ -21,8 +21,8 @@ object AuditConfig {
   @scala.inline
   def apply(exemptedMembers: js.Array[String] = null, service: String = null): AuditConfig = {
     val __obj = js.Dynamic.literal()
-    if (exemptedMembers != null) __obj.updateDynamic("exemptedMembers")(exemptedMembers)
-    if (service != null) __obj.updateDynamic("service")(service)
+    if (exemptedMembers != null) __obj.updateDynamic("exemptedMembers")(exemptedMembers.asInstanceOf[js.Any])
+    if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuditConfig]
   }
 }

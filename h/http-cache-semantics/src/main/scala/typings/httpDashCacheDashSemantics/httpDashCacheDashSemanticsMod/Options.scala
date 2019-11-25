@@ -53,10 +53,10 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (cacheHeuristic != null) __obj.updateDynamic("cacheHeuristic")(cacheHeuristic.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreCargoCult)) __obj.updateDynamic("ignoreCargoCult")(ignoreCargoCult)
+    if (!js.isUndefined(ignoreCargoCult)) __obj.updateDynamic("ignoreCargoCult")(ignoreCargoCult.asInstanceOf[js.Any])
     if (immutableMinTimeToLive != null) __obj.updateDynamic("immutableMinTimeToLive")(immutableMinTimeToLive.asInstanceOf[js.Any])
-    if (!js.isUndefined(shared)) __obj.updateDynamic("shared")(shared)
-    if (!js.isUndefined(trustServerDate)) __obj.updateDynamic("trustServerDate")(trustServerDate)
+    if (!js.isUndefined(shared)) __obj.updateDynamic("shared")(shared.asInstanceOf[js.Any])
+    if (!js.isUndefined(trustServerDate)) __obj.updateDynamic("trustServerDate")(trustServerDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

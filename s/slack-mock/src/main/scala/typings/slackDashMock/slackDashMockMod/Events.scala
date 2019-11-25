@@ -13,7 +13,7 @@ trait Events[T] extends js.Object {
 object Events {
   @scala.inline
   def apply[T](calls: js.Array[EventCall[T]], reset: () => Unit, send: (EventUrl, T) => js.Promise[Unit]): Events[T] = {
-    val __obj = js.Dynamic.literal(calls = calls, reset = js.Any.fromFunction0(reset), send = js.Any.fromFunction2(send))
+    val __obj = js.Dynamic.literal(calls = calls.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset), send = js.Any.fromFunction2(send))
   
     __obj.asInstanceOf[Events[T]]
   }

@@ -29,8 +29,8 @@ object DefaultTreeTextNode {
     value: String,
     sourceCodeLocation: Location = null
   ): DefaultTreeTextNode = {
-    val __obj = js.Dynamic.literal(nodeName = nodeName, parentNode = parentNode, value = value)
-    if (sourceCodeLocation != null) __obj.updateDynamic("sourceCodeLocation")(sourceCodeLocation)
+    val __obj = js.Dynamic.literal(nodeName = nodeName.asInstanceOf[js.Any], parentNode = parentNode.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (sourceCodeLocation != null) __obj.updateDynamic("sourceCodeLocation")(sourceCodeLocation.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultTreeTextNode]
   }
 }

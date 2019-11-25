@@ -34,16 +34,16 @@ object AsObject {
     typeName: String = null
   ): AsObject = {
     val __obj = js.Dynamic.literal()
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
-    if (extendee != null) __obj.updateDynamic("extendee")(extendee)
-    if (jsonName != null) __obj.updateDynamic("jsonName")(jsonName)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (extendee != null) __obj.updateDynamic("extendee")(extendee.asInstanceOf[js.Any])
+    if (jsonName != null) __obj.updateDynamic("jsonName")(jsonName.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
     if (oneofIndex != null) __obj.updateDynamic("oneofIndex")(oneofIndex.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (typeName != null) __obj.updateDynamic("typeName")(typeName)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (typeName != null) __obj.updateDynamic("typeName")(typeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsObject]
   }
 }

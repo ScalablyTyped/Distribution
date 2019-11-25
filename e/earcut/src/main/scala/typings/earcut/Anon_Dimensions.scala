@@ -13,7 +13,7 @@ trait Anon_Dimensions extends js.Object {
 object Anon_Dimensions {
   @scala.inline
   def apply(dimensions: Double, holes: js.Array[Double], vertices: js.Array[Double]): Anon_Dimensions = {
-    val __obj = js.Dynamic.literal(dimensions = dimensions, holes = holes, vertices = vertices)
+    val __obj = js.Dynamic.literal(dimensions = dimensions.asInstanceOf[js.Any], holes = holes.asInstanceOf[js.Any], vertices = vertices.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Dimensions]
   }

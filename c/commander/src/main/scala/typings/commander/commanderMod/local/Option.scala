@@ -25,8 +25,8 @@ object Option {
     required: Boolean,
     short: String = null
   ): Option = {
-    val __obj = js.Dynamic.literal(bool = bool, description = description, flags = flags, long = long, optional = optional, required = required)
-    if (short != null) __obj.updateDynamic("short")(short)
+    val __obj = js.Dynamic.literal(bool = bool.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], long = long.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any])
+    if (short != null) __obj.updateDynamic("short")(short.asInstanceOf[js.Any])
     __obj.asInstanceOf[Option]
   }
 }

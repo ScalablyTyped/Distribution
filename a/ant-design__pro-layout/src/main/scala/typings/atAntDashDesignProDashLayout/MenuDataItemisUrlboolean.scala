@@ -34,15 +34,15 @@ object MenuDataItemisUrlboolean {
     locale: String = null,
     name: String = null
   ): MenuDataItemisUrlboolean = {
-    val __obj = js.Dynamic.literal(isUrl = isUrl, path = path)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(isUrl = isUrl.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (authority != null) __obj.updateDynamic("authority")(authority.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (!js.isUndefined(hideChildrenInMenu)) __obj.updateDynamic("hideChildrenInMenu")(hideChildrenInMenu)
-    if (!js.isUndefined(hideInMenu)) __obj.updateDynamic("hideInMenu")(hideInMenu)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideChildrenInMenu)) __obj.updateDynamic("hideChildrenInMenu")(hideChildrenInMenu.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideInMenu)) __obj.updateDynamic("hideInMenu")(hideInMenu.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuDataItemisUrlboolean]
   }
 }

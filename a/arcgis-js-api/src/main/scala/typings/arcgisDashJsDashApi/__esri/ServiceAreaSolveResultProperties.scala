@@ -61,13 +61,13 @@ object ServiceAreaSolveResultProperties {
     serviceAreaPolylines: js.Array[GraphicProperties] = null
   ): ServiceAreaSolveResultProperties = {
     val __obj = js.Dynamic.literal()
-    if (facilities != null) __obj.updateDynamic("facilities")(facilities)
-    if (messages != null) __obj.updateDynamic("messages")(messages)
-    if (pointBarriers != null) __obj.updateDynamic("pointBarriers")(pointBarriers)
-    if (polygonBarriers != null) __obj.updateDynamic("polygonBarriers")(polygonBarriers)
-    if (polylineBarriers != null) __obj.updateDynamic("polylineBarriers")(polylineBarriers)
-    if (serviceAreaPolygons != null) __obj.updateDynamic("serviceAreaPolygons")(serviceAreaPolygons)
-    if (serviceAreaPolylines != null) __obj.updateDynamic("serviceAreaPolylines")(serviceAreaPolylines)
+    if (facilities != null) __obj.updateDynamic("facilities")(facilities.asInstanceOf[js.Any])
+    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
+    if (pointBarriers != null) __obj.updateDynamic("pointBarriers")(pointBarriers.asInstanceOf[js.Any])
+    if (polygonBarriers != null) __obj.updateDynamic("polygonBarriers")(polygonBarriers.asInstanceOf[js.Any])
+    if (polylineBarriers != null) __obj.updateDynamic("polylineBarriers")(polylineBarriers.asInstanceOf[js.Any])
+    if (serviceAreaPolygons != null) __obj.updateDynamic("serviceAreaPolygons")(serviceAreaPolygons.asInstanceOf[js.Any])
+    if (serviceAreaPolylines != null) __obj.updateDynamic("serviceAreaPolylines")(serviceAreaPolylines.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceAreaSolveResultProperties]
   }
 }

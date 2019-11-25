@@ -14,7 +14,7 @@ trait Anon_GetHeight extends js.Object {
 object Anon_GetHeight {
   @scala.inline
   def apply(getHeight: () => Double, getWidth: () => Double, height: Double, width: Double): Anon_GetHeight = {
-    val __obj = js.Dynamic.literal(getHeight = js.Any.fromFunction0(getHeight), getWidth = js.Any.fromFunction0(getWidth), height = height, width = width)
+    val __obj = js.Dynamic.literal(getHeight = js.Any.fromFunction0(getHeight), getWidth = js.Any.fromFunction0(getWidth), height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_GetHeight]
   }

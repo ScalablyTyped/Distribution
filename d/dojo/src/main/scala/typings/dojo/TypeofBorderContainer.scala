@@ -47,7 +47,7 @@ object TypeofBorderContainer {
     ],
     _Splitter: Instantiable0[_Splitter]
   ): TypeofBorderContainer = {
-    val __obj = js.Dynamic.literal(_Gutter = _Gutter, _Splitter = _Splitter)
+    val __obj = js.Dynamic.literal(_Gutter = _Gutter.asInstanceOf[js.Any], _Splitter = _Splitter.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeofBorderContainer]
   }

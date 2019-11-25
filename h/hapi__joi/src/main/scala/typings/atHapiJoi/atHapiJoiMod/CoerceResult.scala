@@ -13,8 +13,8 @@ object CoerceResult {
   @scala.inline
   def apply(errors: js.Array[ErrorReport] = null, value: js.Any = null): CoerceResult = {
     val __obj = js.Dynamic.literal()
-    if (errors != null) __obj.updateDynamic("errors")(errors)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CoerceResult]
   }
 }

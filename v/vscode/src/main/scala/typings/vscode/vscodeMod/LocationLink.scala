@@ -34,9 +34,9 @@ object LocationLink {
     originSelectionRange: Range = null,
     targetSelectionRange: Range = null
   ): LocationLink = {
-    val __obj = js.Dynamic.literal(targetRange = targetRange, targetUri = targetUri)
-    if (originSelectionRange != null) __obj.updateDynamic("originSelectionRange")(originSelectionRange)
-    if (targetSelectionRange != null) __obj.updateDynamic("targetSelectionRange")(targetSelectionRange)
+    val __obj = js.Dynamic.literal(targetRange = targetRange.asInstanceOf[js.Any], targetUri = targetUri.asInstanceOf[js.Any])
+    if (originSelectionRange != null) __obj.updateDynamic("originSelectionRange")(originSelectionRange.asInstanceOf[js.Any])
+    if (targetSelectionRange != null) __obj.updateDynamic("targetSelectionRange")(targetSelectionRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationLink]
   }
 }

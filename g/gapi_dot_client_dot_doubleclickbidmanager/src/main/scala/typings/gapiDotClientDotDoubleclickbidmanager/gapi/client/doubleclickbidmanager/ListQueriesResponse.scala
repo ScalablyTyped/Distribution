@@ -15,8 +15,8 @@ object ListQueriesResponse {
   @scala.inline
   def apply(kind: String = null, queries: js.Array[Query] = null): ListQueriesResponse = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (queries != null) __obj.updateDynamic("queries")(queries)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (queries != null) __obj.updateDynamic("queries")(queries.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListQueriesResponse]
   }
 }

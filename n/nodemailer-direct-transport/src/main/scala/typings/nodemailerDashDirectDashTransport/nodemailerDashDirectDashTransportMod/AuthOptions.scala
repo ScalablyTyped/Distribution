@@ -14,9 +14,9 @@ object AuthOptions {
   @scala.inline
   def apply(pass: String = null, user: String = null, xoauth2: js.Any = null): AuthOptions = {
     val __obj = js.Dynamic.literal()
-    if (pass != null) __obj.updateDynamic("pass")(pass)
-    if (user != null) __obj.updateDynamic("user")(user)
-    if (xoauth2 != null) __obj.updateDynamic("xoauth2")(xoauth2)
+    if (pass != null) __obj.updateDynamic("pass")(pass.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
+    if (xoauth2 != null) __obj.updateDynamic("xoauth2")(xoauth2.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthOptions]
   }
 }

@@ -85,18 +85,18 @@ object Context {
     tid: String = null,
     upn: String = null
   ): Context = {
-    val __obj = js.Dynamic.literal(entityId = entityId, locale = locale)
-    if (channelId != null) __obj.updateDynamic("channelId")(channelId)
-    if (channelName != null) __obj.updateDynamic("channelName")(channelName)
-    if (groupId != null) __obj.updateDynamic("groupId")(groupId)
-    if (!js.isUndefined(isFullScreen)) __obj.updateDynamic("isFullScreen")(isFullScreen)
-    if (subEntityId != null) __obj.updateDynamic("subEntityId")(subEntityId)
-    if (teamId != null) __obj.updateDynamic("teamId")(teamId)
-    if (teamName != null) __obj.updateDynamic("teamName")(teamName)
-    if (teamType != null) __obj.updateDynamic("teamType")(teamType)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
-    if (tid != null) __obj.updateDynamic("tid")(tid)
-    if (upn != null) __obj.updateDynamic("upn")(upn)
+    val __obj = js.Dynamic.literal(entityId = entityId.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any])
+    if (channelId != null) __obj.updateDynamic("channelId")(channelId.asInstanceOf[js.Any])
+    if (channelName != null) __obj.updateDynamic("channelName")(channelName.asInstanceOf[js.Any])
+    if (groupId != null) __obj.updateDynamic("groupId")(groupId.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFullScreen)) __obj.updateDynamic("isFullScreen")(isFullScreen.asInstanceOf[js.Any])
+    if (subEntityId != null) __obj.updateDynamic("subEntityId")(subEntityId.asInstanceOf[js.Any])
+    if (teamId != null) __obj.updateDynamic("teamId")(teamId.asInstanceOf[js.Any])
+    if (teamName != null) __obj.updateDynamic("teamName")(teamName.asInstanceOf[js.Any])
+    if (teamType != null) __obj.updateDynamic("teamType")(teamType.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    if (tid != null) __obj.updateDynamic("tid")(tid.asInstanceOf[js.Any])
+    if (upn != null) __obj.updateDynamic("upn")(upn.asInstanceOf[js.Any])
     __obj.asInstanceOf[Context]
   }
 }

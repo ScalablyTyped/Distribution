@@ -104,7 +104,7 @@ object PlotArearangeDragDropOptions {
     liveRedraw: js.UndefOr[Boolean] = js.undefined
   ): PlotArearangeDragDropOptions = {
     val __obj = js.Dynamic.literal()
-    if (dragHandle != null) __obj.updateDynamic("dragHandle")(dragHandle)
+    if (dragHandle != null) __obj.updateDynamic("dragHandle")(dragHandle.asInstanceOf[js.Any])
     if (dragMaxX != null) __obj.updateDynamic("dragMaxX")(dragMaxX.asInstanceOf[js.Any])
     if (dragMaxY != null) __obj.updateDynamic("dragMaxY")(dragMaxY.asInstanceOf[js.Any])
     if (dragMinX != null) __obj.updateDynamic("dragMinX")(dragMinX.asInstanceOf[js.Any])
@@ -112,13 +112,13 @@ object PlotArearangeDragDropOptions {
     if (dragPrecisionX != null) __obj.updateDynamic("dragPrecisionX")(dragPrecisionX.asInstanceOf[js.Any])
     if (dragPrecisionY != null) __obj.updateDynamic("dragPrecisionY")(dragPrecisionY.asInstanceOf[js.Any])
     if (dragSensitivity != null) __obj.updateDynamic("dragSensitivity")(dragSensitivity.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggableHigh)) __obj.updateDynamic("draggableHigh")(draggableHigh)
-    if (!js.isUndefined(draggableLow)) __obj.updateDynamic("draggableLow")(draggableLow)
-    if (!js.isUndefined(draggableX)) __obj.updateDynamic("draggableX")(draggableX)
-    if (!js.isUndefined(draggableY)) __obj.updateDynamic("draggableY")(draggableY)
-    if (groupBy != null) __obj.updateDynamic("groupBy")(groupBy)
+    if (!js.isUndefined(draggableHigh)) __obj.updateDynamic("draggableHigh")(draggableHigh.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggableLow)) __obj.updateDynamic("draggableLow")(draggableLow.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggableX)) __obj.updateDynamic("draggableX")(draggableX.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggableY)) __obj.updateDynamic("draggableY")(draggableY.asInstanceOf[js.Any])
+    if (groupBy != null) __obj.updateDynamic("groupBy")(groupBy.asInstanceOf[js.Any])
     if (guideBox != null) __obj.updateDynamic("guideBox")(guideBox.asInstanceOf[js.Any])
-    if (!js.isUndefined(liveRedraw)) __obj.updateDynamic("liveRedraw")(liveRedraw)
+    if (!js.isUndefined(liveRedraw)) __obj.updateDynamic("liveRedraw")(liveRedraw.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotArearangeDragDropOptions]
   }
 }

@@ -21,8 +21,8 @@ trait ListQueuesOutput extends OutputTypesUnion {
 object ListQueuesOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, QueueUrls: js.Array[String] = null): ListQueuesOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (QueueUrls != null) __obj.updateDynamic("QueueUrls")(QueueUrls)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (QueueUrls != null) __obj.updateDynamic("QueueUrls")(QueueUrls.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListQueuesOutput]
   }
 }

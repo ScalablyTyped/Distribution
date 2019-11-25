@@ -22,8 +22,8 @@ trait RequestMessage extends Message {
 object RequestMessage {
   @scala.inline
   def apply(id: Double | String, jsonrpc: String, method: String, params: js.Any = null): RequestMessage = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], jsonrpc = jsonrpc, method = method)
-    if (params != null) __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], jsonrpc = jsonrpc.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestMessage]
   }
 }

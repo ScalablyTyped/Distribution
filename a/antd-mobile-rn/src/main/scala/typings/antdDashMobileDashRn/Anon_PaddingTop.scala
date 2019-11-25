@@ -11,7 +11,7 @@ trait Anon_PaddingTop extends js.Object {
 object Anon_PaddingTop {
   @scala.inline
   def apply(paddingTop: Double): Anon_PaddingTop = {
-    val __obj = js.Dynamic.literal(paddingTop = paddingTop)
+    val __obj = js.Dynamic.literal(paddingTop = paddingTop.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_PaddingTop]
   }

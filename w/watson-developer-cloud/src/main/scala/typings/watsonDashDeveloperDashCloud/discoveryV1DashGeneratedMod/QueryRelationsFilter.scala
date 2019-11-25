@@ -20,9 +20,9 @@ object QueryRelationsFilter {
     relation_types: QueryFilterType = null
   ): QueryRelationsFilter = {
     val __obj = js.Dynamic.literal()
-    if (document_ids != null) __obj.updateDynamic("document_ids")(document_ids)
-    if (entity_types != null) __obj.updateDynamic("entity_types")(entity_types)
-    if (relation_types != null) __obj.updateDynamic("relation_types")(relation_types)
+    if (document_ids != null) __obj.updateDynamic("document_ids")(document_ids.asInstanceOf[js.Any])
+    if (entity_types != null) __obj.updateDynamic("entity_types")(entity_types.asInstanceOf[js.Any])
+    if (relation_types != null) __obj.updateDynamic("relation_types")(relation_types.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryRelationsFilter]
   }
 }

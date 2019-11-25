@@ -1,260 +1,6 @@
 package typings.underscore.underscoreMod
 
 import typings.std.Pick
-import typings.underscore.Fn_P1
-import typings.underscore.Fn_P1P2
-import typings.underscore.Fn_P1P2P3
-import typings.underscore.Fn_P1P2P3P4
-import typings.underscore.Fn_P1P2P3P4P5
-import typings.underscore.Fn_P1P2P3P4P5P6
-import typings.underscore.Fn_P1P2P3P4P5P6P7
-import typings.underscore.Fn_P1P2P3P4P5P6T1
-import typings.underscore.Fn_P1P2P3P4P5P7
-import typings.underscore.Fn_P1P2P3P4P5T1
-import typings.underscore.Fn_P1P2P3P4P5T1T2
-import typings.underscore.Fn_P1P2P3P4P6
-import typings.underscore.Fn_P1P2P3P4P6P7
-import typings.underscore.Fn_P1P2P3P4P6T1
-import typings.underscore.Fn_P1P2P3P4P7
-import typings.underscore.Fn_P1P2P3P4T1
-import typings.underscore.Fn_P1P2P3P4T1T2
-import typings.underscore.Fn_P1P2P3P4T1T2T3
-import typings.underscore.Fn_P1P2P3P5
-import typings.underscore.Fn_P1P2P3P5P6
-import typings.underscore.Fn_P1P2P3P5P6P7
-import typings.underscore.Fn_P1P2P3P5P6T1
-import typings.underscore.Fn_P1P2P3P5P7
-import typings.underscore.Fn_P1P2P3P5T1
-import typings.underscore.Fn_P1P2P3P5T1T2
-import typings.underscore.Fn_P1P2P3P6
-import typings.underscore.Fn_P1P2P3P6P7
-import typings.underscore.Fn_P1P2P3P6T1
-import typings.underscore.Fn_P1P2P3P7
-import typings.underscore.Fn_P1P2P3T1
-import typings.underscore.Fn_P1P2P3T1T2
-import typings.underscore.Fn_P1P2P3T1T2T3
-import typings.underscore.Fn_P1P2P3T1T2T3T8
-import typings.underscore.Fn_P1P2P4
-import typings.underscore.Fn_P1P2P4P5
-import typings.underscore.Fn_P1P2P4P5P6
-import typings.underscore.Fn_P1P2P4P5P6P7
-import typings.underscore.Fn_P1P2P4P5P6T1
-import typings.underscore.Fn_P1P2P4P5P7
-import typings.underscore.Fn_P1P2P4P5T1
-import typings.underscore.Fn_P1P2P4P5T1T2
-import typings.underscore.Fn_P1P2P4P6
-import typings.underscore.Fn_P1P2P4P6P7
-import typings.underscore.Fn_P1P2P4P6T1
-import typings.underscore.Fn_P1P2P4P7
-import typings.underscore.Fn_P1P2P4T1
-import typings.underscore.Fn_P1P2P4T1T2
-import typings.underscore.Fn_P1P2P4T1T2T4
-import typings.underscore.Fn_P1P2P5
-import typings.underscore.Fn_P1P2P5P6
-import typings.underscore.Fn_P1P2P5P6P7
-import typings.underscore.Fn_P1P2P5P6T1
-import typings.underscore.Fn_P1P2P5P7
-import typings.underscore.Fn_P1P2P5T1
-import typings.underscore.Fn_P1P2P5T1T2
-import typings.underscore.Fn_P1P2P6
-import typings.underscore.Fn_P1P2P6P7
-import typings.underscore.Fn_P1P2P6T1
-import typings.underscore.Fn_P1P2P7
-import typings.underscore.Fn_P1P2T1
-import typings.underscore.Fn_P1P2T1T2
-import typings.underscore.Fn_P1P2T1T2T6
-import typings.underscore.Fn_P1P2T1T2T7
-import typings.underscore.Fn_P1P2T1T2T8
-import typings.underscore.Fn_P1P3
-import typings.underscore.Fn_P1P3P4
-import typings.underscore.Fn_P1P3P4P5
-import typings.underscore.Fn_P1P3P4P5P6
-import typings.underscore.Fn_P1P3P4P5P6P7
-import typings.underscore.Fn_P1P3P4P5P6T1
-import typings.underscore.Fn_P1P3P4P5P7
-import typings.underscore.Fn_P1P3P4P5T1
-import typings.underscore.Fn_P1P3P4P5T1T3
-import typings.underscore.Fn_P1P3P4P6
-import typings.underscore.Fn_P1P3P4P6P7
-import typings.underscore.Fn_P1P3P4P6T1
-import typings.underscore.Fn_P1P3P4P7
-import typings.underscore.Fn_P1P3P4T1
-import typings.underscore.Fn_P1P3P4T1T3
-import typings.underscore.Fn_P1P3P4T1T3T4
-import typings.underscore.Fn_P1P3P5
-import typings.underscore.Fn_P1P3P5P6
-import typings.underscore.Fn_P1P3P5P6P7
-import typings.underscore.Fn_P1P3P5P6T1
-import typings.underscore.Fn_P1P3P5P7
-import typings.underscore.Fn_P1P3P5T1
-import typings.underscore.Fn_P1P3P5T1T3
-import typings.underscore.Fn_P1P3P6
-import typings.underscore.Fn_P1P3P6P7
-import typings.underscore.Fn_P1P3P6T1
-import typings.underscore.Fn_P1P3P7
-import typings.underscore.Fn_P1P3T1
-import typings.underscore.Fn_P1P3T1T3
-import typings.underscore.Fn_P1P3T1T3T7
-import typings.underscore.Fn_P1P3T1T3T8
-import typings.underscore.Fn_P1P4
-import typings.underscore.Fn_P1P4P5
-import typings.underscore.Fn_P1P4P5P6
-import typings.underscore.Fn_P1P4P5P6P7
-import typings.underscore.Fn_P1P4P5P6T1
-import typings.underscore.Fn_P1P4P5P7
-import typings.underscore.Fn_P1P4P5T1
-import typings.underscore.Fn_P1P4P5T1T4
-import typings.underscore.Fn_P1P4P6
-import typings.underscore.Fn_P1P4P6P7
-import typings.underscore.Fn_P1P4P6T1
-import typings.underscore.Fn_P1P4P7
-import typings.underscore.Fn_P1P4T1
-import typings.underscore.Fn_P1P4T1T4
-import typings.underscore.Fn_P1P4T1T4T8
-import typings.underscore.Fn_P1P5
-import typings.underscore.Fn_P1P5P6
-import typings.underscore.Fn_P1P5P6P7
-import typings.underscore.Fn_P1P5P6T1
-import typings.underscore.Fn_P1P5P7
-import typings.underscore.Fn_P1P5T1
-import typings.underscore.Fn_P1P5T1T5
-import typings.underscore.Fn_P1P6
-import typings.underscore.Fn_P1P6P7
-import typings.underscore.Fn_P1P6T1
-import typings.underscore.Fn_P1P7
-import typings.underscore.Fn_P1T1
-import typings.underscore.Fn_P1T1T4
-import typings.underscore.Fn_P1T1T5
-import typings.underscore.Fn_P1T1T6
-import typings.underscore.Fn_P1T1T7
-import typings.underscore.Fn_P1T1T8
-import typings.underscore.Fn_P2
-import typings.underscore.Fn_P2P3
-import typings.underscore.Fn_P2P3P4
-import typings.underscore.Fn_P2P3P4P5
-import typings.underscore.Fn_P2P3P4P5P6
-import typings.underscore.Fn_P2P3P4P5P6P7
-import typings.underscore.Fn_P2P3P4P5P6T2
-import typings.underscore.Fn_P2P3P4P5P7
-import typings.underscore.Fn_P2P3P4P5T2
-import typings.underscore.Fn_P2P3P4P5T2T3
-import typings.underscore.Fn_P2P3P4P6
-import typings.underscore.Fn_P2P3P4P6P7
-import typings.underscore.Fn_P2P3P4P6T2
-import typings.underscore.Fn_P2P3P4P7
-import typings.underscore.Fn_P2P3P4T2
-import typings.underscore.Fn_P2P3P4T2T3
-import typings.underscore.Fn_P2P3P4T2T3T4
-import typings.underscore.Fn_P2P3P5
-import typings.underscore.Fn_P2P3P5P6
-import typings.underscore.Fn_P2P3P5P6P7
-import typings.underscore.Fn_P2P3P5P6T2
-import typings.underscore.Fn_P2P3P5P7
-import typings.underscore.Fn_P2P3P5T2
-import typings.underscore.Fn_P2P3P5T2T3
-import typings.underscore.Fn_P2P3P6
-import typings.underscore.Fn_P2P3P6P7
-import typings.underscore.Fn_P2P3P6T2
-import typings.underscore.Fn_P2P3P7
-import typings.underscore.Fn_P2P3T2
-import typings.underscore.Fn_P2P3T2T3
-import typings.underscore.Fn_P2P3T2T3T7
-import typings.underscore.Fn_P2P3T2T3T8
-import typings.underscore.Fn_P2P4
-import typings.underscore.Fn_P2P4P5
-import typings.underscore.Fn_P2P4P5P6
-import typings.underscore.Fn_P2P4P5P6P7
-import typings.underscore.Fn_P2P4P5P6T2
-import typings.underscore.Fn_P2P4P5P7
-import typings.underscore.Fn_P2P4P5T2
-import typings.underscore.Fn_P2P4P5T2T4
-import typings.underscore.Fn_P2P4P6
-import typings.underscore.Fn_P2P4P6P7
-import typings.underscore.Fn_P2P4P6T2
-import typings.underscore.Fn_P2P4P7
-import typings.underscore.Fn_P2P4T2
-import typings.underscore.Fn_P2P4T2T4
-import typings.underscore.Fn_P2P4T2T4T8
-import typings.underscore.Fn_P2P5
-import typings.underscore.Fn_P2P5P6
-import typings.underscore.Fn_P2P5P6P7
-import typings.underscore.Fn_P2P5P6T2
-import typings.underscore.Fn_P2P5P7
-import typings.underscore.Fn_P2P5T2
-import typings.underscore.Fn_P2P5T2T5
-import typings.underscore.Fn_P2P6
-import typings.underscore.Fn_P2P6P7
-import typings.underscore.Fn_P2P6T2
-import typings.underscore.Fn_P2P7
-import typings.underscore.Fn_P2T2
-import typings.underscore.Fn_P2T2T5
-import typings.underscore.Fn_P2T2T6
-import typings.underscore.Fn_P2T2T7
-import typings.underscore.Fn_P2T2T8
-import typings.underscore.Fn_P3
-import typings.underscore.Fn_P3P4
-import typings.underscore.Fn_P3P4P5
-import typings.underscore.Fn_P3P4P5P6
-import typings.underscore.Fn_P3P4P5P6P7
-import typings.underscore.Fn_P3P4P5P6T3
-import typings.underscore.Fn_P3P4P5P7
-import typings.underscore.Fn_P3P4P5T3
-import typings.underscore.Fn_P3P4P5T3T4
-import typings.underscore.Fn_P3P4P6
-import typings.underscore.Fn_P3P4P6P7
-import typings.underscore.Fn_P3P4P6T3
-import typings.underscore.Fn_P3P4P7
-import typings.underscore.Fn_P3P4T3
-import typings.underscore.Fn_P3P4T3T4
-import typings.underscore.Fn_P3P4T3T4T8
-import typings.underscore.Fn_P3P5
-import typings.underscore.Fn_P3P5P6
-import typings.underscore.Fn_P3P5P6P7
-import typings.underscore.Fn_P3P5P6T3
-import typings.underscore.Fn_P3P5P7
-import typings.underscore.Fn_P3P5T3
-import typings.underscore.Fn_P3P5T3T5
-import typings.underscore.Fn_P3P6
-import typings.underscore.Fn_P3P6P7
-import typings.underscore.Fn_P3P6T3
-import typings.underscore.Fn_P3P7
-import typings.underscore.Fn_P3T3
-import typings.underscore.Fn_P3T3T6
-import typings.underscore.Fn_P3T3T7
-import typings.underscore.Fn_P3T3T8
-import typings.underscore.Fn_P4
-import typings.underscore.Fn_P4P5
-import typings.underscore.Fn_P4P5P6
-import typings.underscore.Fn_P4P5P6P7
-import typings.underscore.Fn_P4P5P6T4
-import typings.underscore.Fn_P4P5P7
-import typings.underscore.Fn_P4P5T4
-import typings.underscore.Fn_P4P5T4T5
-import typings.underscore.Fn_P4P6
-import typings.underscore.Fn_P4P6P7
-import typings.underscore.Fn_P4P6T4
-import typings.underscore.Fn_P4P7
-import typings.underscore.Fn_P4T4
-import typings.underscore.Fn_P4T4T7
-import typings.underscore.Fn_P4T4T8
-import typings.underscore.Fn_P5
-import typings.underscore.Fn_P5P6
-import typings.underscore.Fn_P5P6P7
-import typings.underscore.Fn_P5P6T5
-import typings.underscore.Fn_P5P7
-import typings.underscore.Fn_P5T5
-import typings.underscore.Fn_P5T5T8
-import typings.underscore.Fn_P6
-import typings.underscore.Fn_P6P7
-import typings.underscore.Fn_P6T6
-import typings.underscore.Fn_P7
-import typings.underscore.Fn_T2
-import typings.underscore.Fn_T3
-import typings.underscore.Fn_T4
-import typings.underscore.Fn_T5
-import typings.underscore.Fn_T6
-import typings.underscore.Fn_T7
-import typings.underscore.Fn_T8
 import typings.underscore.underscoreNumbers.`0`
 import typings.underscore.underscoreNumbers.`false`
 import typings.underscore.underscoreStrings.Empty
@@ -1243,1702 +989,1946 @@ trait UnderscoreStatic extends js.Object {
     * @param arguments The partial arguments.
     * @return `fn` with partially filled in arguments.
     **/
-  def partial[T1, T2](fn: Fn_P1[T1, T2], p1: T1): Fn_T2[T2] = js.native
-  def partial[T1, T2, T3](fn: Fn_P1P2[T1, T2, T3], p1: T1): Fn_P2[T2, T3] = js.native
-  def partial[T1, T2, T3](fn: Fn_P1P2[T1, T2, T3], p1: T1, p2: T2): Fn_T3[T3] = js.native
-  def partial[T1, T2, T3](fn: Fn_P1P2[T1, T2, T3], stub1: UnderscoreStatic, p2: T2): Fn_P1T1[T1, T3] = js.native
-  def partial[T1, T2, T3, T4](fn: Fn_P1P2P3[T1, T2, T3, T4], p1: T1): Fn_P2P3[T2, T3, T4] = js.native
-  def partial[T1, T2, T3, T4](fn: Fn_P1P2P3[T1, T2, T3, T4], p1: T1, p2: T2): Fn_P3[T3, T4] = js.native
-  def partial[T1, T2, T3, T4](fn: Fn_P1P2P3[T1, T2, T3, T4], p1: T1, p2: T2, p3: T3): Fn_T4[T4] = js.native
-  def partial[T1, T2, T3, T4](fn: Fn_P1P2P3[T1, T2, T3, T4], p1: T1, stub2: UnderscoreStatic, p3: T3): Fn_P2T2[T2, T4] = js.native
-  def partial[T1, T2, T3, T4](fn: Fn_P1P2P3[T1, T2, T3, T4], stub1: UnderscoreStatic, p2: T2): Fn_P1P3[T1, T3, T4] = js.native
-  def partial[T1, T2, T3, T4](fn: Fn_P1P2P3[T1, T2, T3, T4], stub1: UnderscoreStatic, p2: T2, p3: T3): Fn_P1T1T4[T1, T4] = js.native
-  def partial[T1, T2, T3, T4](fn: Fn_P1P2P3[T1, T2, T3, T4], stub1: UnderscoreStatic, stub2: UnderscoreStatic, p3: T3): Fn_P1P2T1[T1, T2, T4] = js.native
-  def partial[T1, T2, T3, T4, T5](fn: Fn_P1P2P3P4[T4, T1, T2, T5, T3], p1: T1): Fn_P2P3P4[T2, T3, T4, T5] = js.native
-  def partial[T1, T2, T3, T4, T5](fn: Fn_P1P2P3P4[T4, T1, T2, T5, T3], p1: T1, p2: T2): Fn_P3P4[T3, T4, T5] = js.native
-  def partial[T1, T2, T3, T4, T5](fn: Fn_P1P2P3P4[T4, T1, T2, T5, T3], p1: T1, p2: T2, p3: T3): Fn_P4[T4, T5] = js.native
-  def partial[T1, T2, T3, T4, T5](fn: Fn_P1P2P3P4[T4, T1, T2, T5, T3], p1: T1, p2: T2, p3: T3, p4: T4): Fn_T5[T5] = js.native
-  def partial[T1, T2, T3, T4, T5](fn: Fn_P1P2P3P4[T4, T1, T2, T5, T3], p1: T1, p2: T2, stub3: UnderscoreStatic, p4: T4): Fn_P3T3[T3, T5] = js.native
-  def partial[T1, T2, T3, T4, T5](fn: Fn_P1P2P3P4[T4, T1, T2, T5, T3], p1: T1, stub2: UnderscoreStatic, p3: T3): Fn_P2P4[T2, T4, T5] = js.native
-  def partial[T1, T2, T3, T4, T5](fn: Fn_P1P2P3P4[T4, T1, T2, T5, T3], p1: T1, stub2: UnderscoreStatic, p3: T3, p4: T4): Fn_P2T2T5[T2, T5] = js.native
-  def partial[T1, T2, T3, T4, T5](
-    fn: Fn_P1P2P3P4[T4, T1, T2, T5, T3],
+  def partial[T1, T2](fn: js.Function1[/* p1 */ T1, T2], p1: T1): js.Function0[T2] = js.native
+  def partial[T1, T2, T3](fn: js.Function2[/* p1 */ T1, /* p2 */ T2, T3], p1: T1): js.Function1[/* p2 */ T2, T3] = js.native
+  def partial[T1, T2, T3](fn: js.Function2[/* p1 */ T1, /* p2 */ T2, T3], p1: T1, p2: T2): js.Function0[T3] = js.native
+  def partial[T1, T2, T3](fn: js.Function2[/* p1 */ T1, /* p2 */ T2, T3], stub1: UnderscoreStatic, p2: T2): js.Function1[/* p1 */ T1, T3] = js.native
+  def partial[T1, T2, T3, T4](fn: js.Function3[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, T4], p1: T1): js.Function2[/* p2 */ T2, /* p3 */ T3, T4] = js.native
+  def partial[T1, T2, T3, T4](fn: js.Function3[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, T4], p1: T1, p2: T2): js.Function1[/* p3 */ T3, T4] = js.native
+  def partial[T1, T2, T3, T4](fn: js.Function3[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, T4], p1: T1, p2: T2, p3: T3): js.Function0[T4] = js.native
+  def partial[T1, T2, T3, T4](
+    fn: js.Function3[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, T4],
     p1: T1,
     stub2: UnderscoreStatic,
-    stub3: UnderscoreStatic,
-    p4: T4
-  ): Fn_P2P3T2[T2, T3, T5] = js.native
-  def partial[T1, T2, T3, T4, T5](fn: Fn_P1P2P3P4[T4, T1, T2, T5, T3], stub1: UnderscoreStatic, p2: T2): Fn_P1P3P4[T1, T3, T4, T5] = js.native
-  def partial[T1, T2, T3, T4, T5](fn: Fn_P1P2P3P4[T4, T1, T2, T5, T3], stub1: UnderscoreStatic, p2: T2, p3: T3): Fn_P1P4[T1, T4, T5] = js.native
-  def partial[T1, T2, T3, T4, T5](fn: Fn_P1P2P3P4[T4, T1, T2, T5, T3], stub1: UnderscoreStatic, p2: T2, p3: T3, p4: T4): Fn_P1T1T5[T1, T5] = js.native
-  def partial[T1, T2, T3, T4, T5](
-    fn: Fn_P1P2P3P4[T4, T1, T2, T5, T3],
+    p3: T3
+  ): js.Function1[/* p2 */ T2, T4] = js.native
+  def partial[T1, T2, T3, T4](fn: js.Function3[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, T4], stub1: UnderscoreStatic, p2: T2): js.Function2[/* p1 */ T1, /* p3 */ T3, T4] = js.native
+  def partial[T1, T2, T3, T4](
+    fn: js.Function3[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, T4],
     stub1: UnderscoreStatic,
     p2: T2,
-    stub3: UnderscoreStatic,
-    p4: T4
-  ): Fn_P1P3T1[T1, T3, T5] = js.native
-  def partial[T1, T2, T3, T4, T5](fn: Fn_P1P2P3P4[T4, T1, T2, T5, T3], stub1: UnderscoreStatic, stub2: UnderscoreStatic, p3: T3): Fn_P1P2P4[T1, T2, T4, T5] = js.native
-  def partial[T1, T2, T3, T4, T5](
-    fn: Fn_P1P2P3P4[T4, T1, T2, T5, T3],
-    stub1: UnderscoreStatic,
-    stub2: UnderscoreStatic,
-    p3: T3,
-    p4: T4
-  ): Fn_P1P2T1T2[T1, T2, T5] = js.native
-  def partial[T1, T2, T3, T4, T5](
-    fn: Fn_P1P2P3P4[T4, T1, T2, T5, T3],
-    stub1: UnderscoreStatic,
-    stub2: UnderscoreStatic,
-    stub3: UnderscoreStatic,
-    p4: T4
-  ): Fn_P1P2P3T1[T1, T2, T3, T5] = js.native
-  def partial[T1, T2, T3, T4, T5, T6](fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3], p1: T1): Fn_P2P3P4P5[T4, T6, T2, T5, T3] = js.native
-  def partial[T1, T2, T3, T4, T5, T6](fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3], p1: T1, p2: T2): Fn_P3P4P5[T3, T4, T5, T6] = js.native
-  def partial[T1, T2, T3, T4, T5, T6](fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3], p1: T1, p2: T2, p3: T3): Fn_P4P5[T4, T5, T6] = js.native
-  def partial[T1, T2, T3, T4, T5, T6](fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3], p1: T1, p2: T2, p3: T3, p4: T4): Fn_P5[T5, T6] = js.native
-  def partial[T1, T2, T3, T4, T5, T6](fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3], p1: T1, p2: T2, p3: T3, p4: T4, p5: T5): Fn_T6[T6] = js.native
-  def partial[T1, T2, T3, T4, T5, T6](fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3], p1: T1, p2: T2, p3: T3, stub4: UnderscoreStatic, p5: T5): Fn_P4T4[T4, T6] = js.native
-  def partial[T1, T2, T3, T4, T5, T6](fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3], p1: T1, p2: T2, stub3: UnderscoreStatic, p4: T4): Fn_P3P5[T3, T5, T6] = js.native
-  def partial[T1, T2, T3, T4, T5, T6](fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3], p1: T1, p2: T2, stub3: UnderscoreStatic, p4: T4, p5: T5): Fn_P3T3T6[T3, T6] = js.native
-  def partial[T1, T2, T3, T4, T5, T6](
-    fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3],
-    p1: T1,
-    p2: T2,
-    stub3: UnderscoreStatic,
-    stub4: UnderscoreStatic,
-    p5: T5
-  ): Fn_P3P4T3[T3, T4, T6] = js.native
-  def partial[T1, T2, T3, T4, T5, T6](fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3], p1: T1, stub2: UnderscoreStatic, p3: T3): Fn_P2P4P5[T2, T4, T5, T6] = js.native
-  def partial[T1, T2, T3, T4, T5, T6](fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3], p1: T1, stub2: UnderscoreStatic, p3: T3, p4: T4): Fn_P2P5[T2, T5, T6] = js.native
-  def partial[T1, T2, T3, T4, T5, T6](fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3], p1: T1, stub2: UnderscoreStatic, p3: T3, p4: T4, p5: T5): Fn_P2T2T6[T2, T6] = js.native
-  def partial[T1, T2, T3, T4, T5, T6](
-    fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3],
-    p1: T1,
-    stub2: UnderscoreStatic,
-    p3: T3,
-    stub4: UnderscoreStatic,
-    p5: T5
-  ): Fn_P2P4T2[T2, T4, T6] = js.native
-  def partial[T1, T2, T3, T4, T5, T6](
-    fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3],
-    p1: T1,
-    stub2: UnderscoreStatic,
-    stub3: UnderscoreStatic,
-    p4: T4
-  ): Fn_P2P3P5[T2, T3, T5, T6] = js.native
-  def partial[T1, T2, T3, T4, T5, T6](
-    fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3],
-    p1: T1,
-    stub2: UnderscoreStatic,
-    stub3: UnderscoreStatic,
-    p4: T4,
-    p5: T5
-  ): Fn_P2P3T2T3[T2, T3, T6] = js.native
-  def partial[T1, T2, T3, T4, T5, T6](
-    fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3],
-    p1: T1,
-    stub2: UnderscoreStatic,
-    stub3: UnderscoreStatic,
-    stub4: UnderscoreStatic,
-    p5: T5
-  ): Fn_P2P3P4T2[T2, T3, T4, T6] = js.native
-  def partial[T1, T2, T3, T4, T5, T6](fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3], stub1: UnderscoreStatic, p2: T2): Fn_P1P3P4P5[T4, T6, T1, T5, T3] = js.native
-  def partial[T1, T2, T3, T4, T5, T6](fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3], stub1: UnderscoreStatic, p2: T2, p3: T3): Fn_P1P4P5[T1, T4, T5, T6] = js.native
-  def partial[T1, T2, T3, T4, T5, T6](fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3], stub1: UnderscoreStatic, p2: T2, p3: T3, p4: T4): Fn_P1P5[T1, T5, T6] = js.native
-  def partial[T1, T2, T3, T4, T5, T6](fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3], stub1: UnderscoreStatic, p2: T2, p3: T3, p4: T4, p5: T5): Fn_P1T1T6[T1, T6] = js.native
-  def partial[T1, T2, T3, T4, T5, T6](
-    fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3],
-    stub1: UnderscoreStatic,
-    p2: T2,
-    p3: T3,
-    stub4: UnderscoreStatic,
-    p5: T5
-  ): Fn_P1P4T1[T1, T4, T6] = js.native
-  def partial[T1, T2, T3, T4, T5, T6](
-    fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3],
-    stub1: UnderscoreStatic,
-    p2: T2,
-    stub3: UnderscoreStatic,
-    p4: T4
-  ): Fn_P1P3P5[T1, T3, T5, T6] = js.native
-  def partial[T1, T2, T3, T4, T5, T6](
-    fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3],
-    stub1: UnderscoreStatic,
-    p2: T2,
-    stub3: UnderscoreStatic,
-    p4: T4,
-    p5: T5
-  ): Fn_P1P3T1T3[T1, T3, T6] = js.native
-  def partial[T1, T2, T3, T4, T5, T6](
-    fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3],
-    stub1: UnderscoreStatic,
-    p2: T2,
-    stub3: UnderscoreStatic,
-    stub4: UnderscoreStatic,
-    p5: T5
-  ): Fn_P1P3P4T1[T1, T3, T4, T6] = js.native
-  def partial[T1, T2, T3, T4, T5, T6](
-    fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3],
+    p3: T3
+  ): js.Function1[/* p1 */ T1, T4] = js.native
+  def partial[T1, T2, T3, T4](
+    fn: js.Function3[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, T4],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     p3: T3
-  ): Fn_P1P2P4P5[T4, T6, T1, T2, T5] = js.native
-  def partial[T1, T2, T3, T4, T5, T6](
-    fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3],
-    stub1: UnderscoreStatic,
+  ): js.Function2[/* p1 */ T1, /* p2 */ T2, T4] = js.native
+  def partial[T1, T2, T3, T4, T5](fn: js.Function4[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, T5], p1: T1): js.Function3[/* p2 */ T2, /* p3 */ T3, /* p4 */ T4, T5] = js.native
+  def partial[T1, T2, T3, T4, T5](fn: js.Function4[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, T5], p1: T1, p2: T2): js.Function2[/* p3 */ T3, /* p4 */ T4, T5] = js.native
+  def partial[T1, T2, T3, T4, T5](fn: js.Function4[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, T5], p1: T1, p2: T2, p3: T3): js.Function1[/* p4 */ T4, T5] = js.native
+  def partial[T1, T2, T3, T4, T5](
+    fn: js.Function4[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, T5],
+    p1: T1,
+    p2: T2,
+    p3: T3,
+    p4: T4
+  ): js.Function0[T5] = js.native
+  def partial[T1, T2, T3, T4, T5](
+    fn: js.Function4[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, T5],
+    p1: T1,
+    p2: T2,
+    stub3: UnderscoreStatic,
+    p4: T4
+  ): js.Function1[/* p3 */ T3, T5] = js.native
+  def partial[T1, T2, T3, T4, T5](
+    fn: js.Function4[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, T5],
+    p1: T1,
+    stub2: UnderscoreStatic,
+    p3: T3
+  ): js.Function2[/* p2 */ T2, /* p4 */ T4, T5] = js.native
+  def partial[T1, T2, T3, T4, T5](
+    fn: js.Function4[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, T5],
+    p1: T1,
     stub2: UnderscoreStatic,
     p3: T3,
     p4: T4
-  ): Fn_P1P2P5[T1, T2, T5, T6] = js.native
-  def partial[T1, T2, T3, T4, T5, T6](
-    fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3],
-    stub1: UnderscoreStatic,
-    stub2: UnderscoreStatic,
-    p3: T3,
-    p4: T4,
-    p5: T5
-  ): Fn_P1P2T1T2T6[T1, T2, T6] = js.native
-  def partial[T1, T2, T3, T4, T5, T6](
-    fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3],
-    stub1: UnderscoreStatic,
-    stub2: UnderscoreStatic,
-    p3: T3,
-    stub4: UnderscoreStatic,
-    p5: T5
-  ): Fn_P1P2P4T1[T1, T2, T4, T6] = js.native
-  def partial[T1, T2, T3, T4, T5, T6](
-    fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3],
-    stub1: UnderscoreStatic,
-    stub2: UnderscoreStatic,
-    stub3: UnderscoreStatic,
-    p4: T4
-  ): Fn_P1P2P3P5[T6, T1, T2, T5, T3] = js.native
-  def partial[T1, T2, T3, T4, T5, T6](
-    fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3],
-    stub1: UnderscoreStatic,
-    stub2: UnderscoreStatic,
-    stub3: UnderscoreStatic,
-    p4: T4,
-    p5: T5
-  ): Fn_P1P2P3T1T2[T1, T2, T3, T6] = js.native
-  def partial[T1, T2, T3, T4, T5, T6](
-    fn: Fn_P1P2P3P4P5[T4, T6, T1, T2, T5, T3],
-    stub1: UnderscoreStatic,
-    stub2: UnderscoreStatic,
-    stub3: UnderscoreStatic,
-    stub4: UnderscoreStatic,
-    p5: T5
-  ): Fn_P1P2P3P4T1[T4, T6, T1, T2, T3] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7], p1: T1): Fn_P2P3P4P5P6[T4, T6, T2, T5, T3, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7], p1: T1, p2: T2): Fn_P3P4P5P6[T4, T6, T5, T3, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7], p1: T1, p2: T2, p3: T3): Fn_P4P5P6[T4, T5, T6, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7], p1: T1, p2: T2, p3: T3, p4: T4): Fn_P5P6[T5, T6, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7], p1: T1, p2: T2, p3: T3, p4: T4, p5: T5): Fn_P6[T6, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7], p1: T1, p2: T2, p3: T3, p4: T4, p5: T5, p6: T6): Fn_T7[T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
-    p1: T1,
-    p2: T2,
-    p3: T3,
-    p4: T4,
-    stub5: UnderscoreStatic,
-    p6: T6
-  ): Fn_P5T5[T5, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
-    p1: T1,
-    p2: T2,
-    p3: T3,
-    stub4: UnderscoreStatic,
-    p5: T5
-  ): Fn_P4P6[T4, T6, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
-    p1: T1,
-    p2: T2,
-    p3: T3,
-    stub4: UnderscoreStatic,
-    p5: T5,
-    p6: T6
-  ): Fn_P4T4T7[T4, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
-    p1: T1,
-    p2: T2,
-    p3: T3,
-    stub4: UnderscoreStatic,
-    stub5: UnderscoreStatic,
-    p6: T6
-  ): Fn_P4P5T4[T4, T5, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7], p1: T1, p2: T2, stub3: UnderscoreStatic, p4: T4): Fn_P3P5P6[T3, T5, T6, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
-    p1: T1,
-    p2: T2,
-    stub3: UnderscoreStatic,
-    p4: T4,
-    p5: T5
-  ): Fn_P3P6[T3, T6, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
-    p1: T1,
-    p2: T2,
-    stub3: UnderscoreStatic,
-    p4: T4,
-    p5: T5,
-    p6: T6
-  ): Fn_P3T3T7[T3, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
-    p1: T1,
-    p2: T2,
-    stub3: UnderscoreStatic,
-    p4: T4,
-    stub5: UnderscoreStatic,
-    p6: T6
-  ): Fn_P3P5T3[T3, T5, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
-    p1: T1,
-    p2: T2,
-    stub3: UnderscoreStatic,
-    stub4: UnderscoreStatic,
-    p5: T5
-  ): Fn_P3P4P6[T3, T4, T6, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
-    p1: T1,
-    p2: T2,
-    stub3: UnderscoreStatic,
-    stub4: UnderscoreStatic,
-    p5: T5,
-    p6: T6
-  ): Fn_P3P4T3T4[T3, T4, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
-    p1: T1,
-    p2: T2,
-    stub3: UnderscoreStatic,
-    stub4: UnderscoreStatic,
-    stub5: UnderscoreStatic,
-    p6: T6
-  ): Fn_P3P4P5T3[T3, T4, T5, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7], p1: T1, stub2: UnderscoreStatic, p3: T3): Fn_P2P4P5P6[T4, T6, T2, T5, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7], p1: T1, stub2: UnderscoreStatic, p3: T3, p4: T4): Fn_P2P5P6[T2, T5, T6, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
-    p1: T1,
-    stub2: UnderscoreStatic,
-    p3: T3,
-    p4: T4,
-    p5: T5
-  ): Fn_P2P6[T2, T6, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
-    p1: T1,
-    stub2: UnderscoreStatic,
-    p3: T3,
-    p4: T4,
-    p5: T5,
-    p6: T6
-  ): Fn_P2T2T7[T2, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
-    p1: T1,
-    stub2: UnderscoreStatic,
-    p3: T3,
-    p4: T4,
-    stub5: UnderscoreStatic,
-    p6: T6
-  ): Fn_P2P5T2[T2, T5, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
-    p1: T1,
-    stub2: UnderscoreStatic,
-    p3: T3,
-    stub4: UnderscoreStatic,
-    p5: T5
-  ): Fn_P2P4P6[T2, T4, T6, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
-    p1: T1,
-    stub2: UnderscoreStatic,
-    p3: T3,
-    stub4: UnderscoreStatic,
-    p5: T5,
-    p6: T6
-  ): Fn_P2P4T2T4[T2, T4, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
-    p1: T1,
-    stub2: UnderscoreStatic,
-    p3: T3,
-    stub4: UnderscoreStatic,
-    stub5: UnderscoreStatic,
-    p6: T6
-  ): Fn_P2P4P5T2[T2, T4, T5, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
+  ): js.Function1[/* p2 */ T2, T5] = js.native
+  def partial[T1, T2, T3, T4, T5](
+    fn: js.Function4[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, T5],
     p1: T1,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
     p4: T4
-  ): Fn_P2P3P5P6[T6, T2, T5, T3, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
-    p1: T1,
-    stub2: UnderscoreStatic,
-    stub3: UnderscoreStatic,
-    p4: T4,
-    p5: T5
-  ): Fn_P2P3P6[T2, T3, T6, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
-    p1: T1,
-    stub2: UnderscoreStatic,
-    stub3: UnderscoreStatic,
-    p4: T4,
-    p5: T5,
-    p6: T6
-  ): Fn_P2P3T2T3T7[T2, T3, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
-    p1: T1,
-    stub2: UnderscoreStatic,
-    stub3: UnderscoreStatic,
-    p4: T4,
-    stub5: UnderscoreStatic,
-    p6: T6
-  ): Fn_P2P3P5T2[T2, T3, T5, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
-    p1: T1,
-    stub2: UnderscoreStatic,
-    stub3: UnderscoreStatic,
-    stub4: UnderscoreStatic,
-    p5: T5
-  ): Fn_P2P3P4P6[T4, T6, T2, T3, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
-    p1: T1,
-    stub2: UnderscoreStatic,
-    stub3: UnderscoreStatic,
-    stub4: UnderscoreStatic,
-    p5: T5,
-    p6: T6
-  ): Fn_P2P3P4T2T3[T2, T3, T4, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
-    p1: T1,
-    stub2: UnderscoreStatic,
-    stub3: UnderscoreStatic,
-    stub4: UnderscoreStatic,
-    stub5: UnderscoreStatic,
-    p6: T6
-  ): Fn_P2P3P4P5T2[T4, T2, T5, T3, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7], stub1: UnderscoreStatic, p2: T2): Fn_P1P3P4P5P6[T4, T6, T1, T5, T3, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7], stub1: UnderscoreStatic, p2: T2, p3: T3): Fn_P1P4P5P6[T4, T6, T1, T5, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7], stub1: UnderscoreStatic, p2: T2, p3: T3, p4: T4): Fn_P1P5P6[T1, T5, T6, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
+  ): js.Function2[/* p2 */ T2, /* p3 */ T3, T5] = js.native
+  def partial[T1, T2, T3, T4, T5](
+    fn: js.Function4[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, T5],
+    stub1: UnderscoreStatic,
+    p2: T2
+  ): js.Function3[/* p1 */ T1, /* p3 */ T3, /* p4 */ T4, T5] = js.native
+  def partial[T1, T2, T3, T4, T5](
+    fn: js.Function4[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, T5],
+    stub1: UnderscoreStatic,
+    p2: T2,
+    p3: T3
+  ): js.Function2[/* p1 */ T1, /* p4 */ T4, T5] = js.native
+  def partial[T1, T2, T3, T4, T5](
+    fn: js.Function4[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, T5],
     stub1: UnderscoreStatic,
     p2: T2,
     p3: T3,
-    p4: T4,
-    p5: T5
-  ): Fn_P1P6[T1, T6, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
-    stub1: UnderscoreStatic,
-    p2: T2,
-    p3: T3,
-    p4: T4,
-    p5: T5,
-    p6: T6
-  ): Fn_P1T1T7[T1, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
-    stub1: UnderscoreStatic,
-    p2: T2,
-    p3: T3,
-    p4: T4,
-    stub5: UnderscoreStatic,
-    p6: T6
-  ): Fn_P1P5T1[T1, T5, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
-    stub1: UnderscoreStatic,
-    p2: T2,
-    p3: T3,
-    stub4: UnderscoreStatic,
-    p5: T5
-  ): Fn_P1P4P6[T1, T4, T6, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
-    stub1: UnderscoreStatic,
-    p2: T2,
-    p3: T3,
-    stub4: UnderscoreStatic,
-    p5: T5,
-    p6: T6
-  ): Fn_P1P4T1T4[T1, T4, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
-    stub1: UnderscoreStatic,
-    p2: T2,
-    p3: T3,
-    stub4: UnderscoreStatic,
-    stub5: UnderscoreStatic,
-    p6: T6
-  ): Fn_P1P4P5T1[T1, T4, T5, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
+    p4: T4
+  ): js.Function1[/* p1 */ T1, T5] = js.native
+  def partial[T1, T2, T3, T4, T5](
+    fn: js.Function4[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, T5],
     stub1: UnderscoreStatic,
     p2: T2,
     stub3: UnderscoreStatic,
     p4: T4
-  ): Fn_P1P3P5P6[T6, T1, T5, T3, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
-    stub1: UnderscoreStatic,
-    p2: T2,
-    stub3: UnderscoreStatic,
-    p4: T4,
-    p5: T5
-  ): Fn_P1P3P6[T1, T3, T6, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
-    stub1: UnderscoreStatic,
-    p2: T2,
-    stub3: UnderscoreStatic,
-    p4: T4,
-    p5: T5,
-    p6: T6
-  ): Fn_P1P3T1T3T7[T1, T3, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
-    stub1: UnderscoreStatic,
-    p2: T2,
-    stub3: UnderscoreStatic,
-    p4: T4,
-    stub5: UnderscoreStatic,
-    p6: T6
-  ): Fn_P1P3P5T1[T1, T3, T5, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
-    stub1: UnderscoreStatic,
-    p2: T2,
-    stub3: UnderscoreStatic,
-    stub4: UnderscoreStatic,
-    p5: T5
-  ): Fn_P1P3P4P6[T4, T6, T1, T3, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
-    stub1: UnderscoreStatic,
-    p2: T2,
-    stub3: UnderscoreStatic,
-    stub4: UnderscoreStatic,
-    p5: T5,
-    p6: T6
-  ): Fn_P1P3P4T1T3[T1, T3, T4, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
-    stub1: UnderscoreStatic,
-    p2: T2,
-    stub3: UnderscoreStatic,
-    stub4: UnderscoreStatic,
-    stub5: UnderscoreStatic,
-    p6: T6
-  ): Fn_P1P3P4P5T1[T4, T1, T5, T3, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
+  ): js.Function2[/* p1 */ T1, /* p3 */ T3, T5] = js.native
+  def partial[T1, T2, T3, T4, T5](
+    fn: js.Function4[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, T5],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     p3: T3
-  ): Fn_P1P2P4P5P6[T4, T6, T1, T2, T5, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
+  ): js.Function3[/* p1 */ T1, /* p2 */ T2, /* p4 */ T4, T5] = js.native
+  def partial[T1, T2, T3, T4, T5](
+    fn: js.Function4[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, T5],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     p3: T3,
     p4: T4
-  ): Fn_P1P2P5P6[T6, T1, T2, T5, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
-    stub1: UnderscoreStatic,
-    stub2: UnderscoreStatic,
-    p3: T3,
-    p4: T4,
-    p5: T5
-  ): Fn_P1P2P6[T1, T2, T6, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
-    stub1: UnderscoreStatic,
-    stub2: UnderscoreStatic,
-    p3: T3,
-    p4: T4,
-    p5: T5,
-    p6: T6
-  ): Fn_P1P2T1T2T7[T1, T2, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
-    stub1: UnderscoreStatic,
-    stub2: UnderscoreStatic,
-    p3: T3,
-    p4: T4,
-    stub5: UnderscoreStatic,
-    p6: T6
-  ): Fn_P1P2P5T1[T1, T2, T5, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
-    stub1: UnderscoreStatic,
-    stub2: UnderscoreStatic,
-    p3: T3,
-    stub4: UnderscoreStatic,
-    p5: T5
-  ): Fn_P1P2P4P6[T4, T6, T1, T2, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
-    stub1: UnderscoreStatic,
-    stub2: UnderscoreStatic,
-    p3: T3,
-    stub4: UnderscoreStatic,
-    p5: T5,
-    p6: T6
-  ): Fn_P1P2P4T1T2[T1, T2, T4, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
-    stub1: UnderscoreStatic,
-    stub2: UnderscoreStatic,
-    p3: T3,
-    stub4: UnderscoreStatic,
-    stub5: UnderscoreStatic,
-    p6: T6
-  ): Fn_P1P2P4P5T1[T4, T1, T2, T5, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
+  ): js.Function2[/* p1 */ T1, /* p2 */ T2, T5] = js.native
+  def partial[T1, T2, T3, T4, T5](
+    fn: js.Function4[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, T5],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
     p4: T4
-  ): Fn_P1P2P3P5P6[T6, T1, T2, T5, T3, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
-    stub1: UnderscoreStatic,
-    stub2: UnderscoreStatic,
-    stub3: UnderscoreStatic,
+  ): js.Function3[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, T5] = js.native
+  def partial[T1, T2, T3, T4, T5, T6](fn: js.Function5[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, T6], p1: T1): js.Function4[/* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, T6] = js.native
+  def partial[T1, T2, T3, T4, T5, T6](
+    fn: js.Function5[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, T6],
+    p1: T1,
+    p2: T2
+  ): js.Function3[/* p3 */ T3, /* p4 */ T4, /* p5 */ T5, T6] = js.native
+  def partial[T1, T2, T3, T4, T5, T6](
+    fn: js.Function5[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, T6],
+    p1: T1,
+    p2: T2,
+    p3: T3
+  ): js.Function2[/* p4 */ T4, /* p5 */ T5, T6] = js.native
+  def partial[T1, T2, T3, T4, T5, T6](
+    fn: js.Function5[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, T6],
+    p1: T1,
+    p2: T2,
+    p3: T3,
+    p4: T4
+  ): js.Function1[/* p5 */ T5, T6] = js.native
+  def partial[T1, T2, T3, T4, T5, T6](
+    fn: js.Function5[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, T6],
+    p1: T1,
+    p2: T2,
+    p3: T3,
     p4: T4,
     p5: T5
-  ): Fn_P1P2P3P6[T6, T1, T2, T3, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
-    stub1: UnderscoreStatic,
-    stub2: UnderscoreStatic,
-    stub3: UnderscoreStatic,
-    p4: T4,
-    p5: T5,
-    p6: T6
-  ): Fn_P1P2P3T1T2T3[T1, T2, T3, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
-    stub1: UnderscoreStatic,
-    stub2: UnderscoreStatic,
-    stub3: UnderscoreStatic,
-    p4: T4,
-    stub5: UnderscoreStatic,
-    p6: T6
-  ): Fn_P1P2P3P5T1[T1, T2, T5, T3, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
-    stub1: UnderscoreStatic,
-    stub2: UnderscoreStatic,
-    stub3: UnderscoreStatic,
-    stub4: UnderscoreStatic,
-    p5: T5
-  ): Fn_P1P2P3P4P6[T4, T6, T1, T2, T3, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
-    stub1: UnderscoreStatic,
-    stub2: UnderscoreStatic,
-    stub3: UnderscoreStatic,
-    stub4: UnderscoreStatic,
-    p5: T5,
-    p6: T6
-  ): Fn_P1P2P3P4T1T2[T4, T1, T2, T3, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7](
-    fn: Fn_P1P2P3P4P5P6[T4, T6, T1, T2, T5, T3, T7],
-    stub1: UnderscoreStatic,
-    stub2: UnderscoreStatic,
-    stub3: UnderscoreStatic,
-    stub4: UnderscoreStatic,
-    stub5: UnderscoreStatic,
-    p6: T6
-  ): Fn_P1P2P3P4P5T1[T4, T1, T2, T5, T3, T7] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8], p1: T1): Fn_P2P3P4P5P6P7[T4, T6, T2, T5, T3, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8], p1: T1, p2: T2): Fn_P3P4P5P6P7[T4, T6, T5, T3, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8], p1: T1, p2: T2, p3: T3): Fn_P4P5P6P7[T4, T6, T5, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8], p1: T1, p2: T2, p3: T3, p4: T4): Fn_P5P6P7[T5, T6, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8], p1: T1, p2: T2, p3: T3, p4: T4, p5: T5): Fn_P6P7[T6, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    p1: T1,
-    p2: T2,
-    p3: T3,
-    p4: T4,
-    p5: T5,
-    p6: T6
-  ): Fn_P7[T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    p1: T1,
-    p2: T2,
-    p3: T3,
-    p4: T4,
-    p5: T5,
-    p6: T6,
-    p7: T7
-  ): Fn_T8[T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    p1: T1,
-    p2: T2,
-    p3: T3,
-    p4: T4,
-    p5: T5,
-    stub6: UnderscoreStatic,
-    p7: T7
-  ): Fn_P6T6[T6, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    p1: T1,
-    p2: T2,
-    p3: T3,
-    p4: T4,
-    stub5: UnderscoreStatic,
-    p6: T6
-  ): Fn_P5P7[T5, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    p1: T1,
-    p2: T2,
-    p3: T3,
-    p4: T4,
-    stub5: UnderscoreStatic,
-    p6: T6,
-    p7: T7
-  ): Fn_P5T5T8[T5, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    p1: T1,
-    p2: T2,
-    p3: T3,
-    p4: T4,
-    stub5: UnderscoreStatic,
-    stub6: UnderscoreStatic,
-    p7: T7
-  ): Fn_P5P6T5[T5, T6, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
+  ): js.Function0[T6] = js.native
+  def partial[T1, T2, T3, T4, T5, T6](
+    fn: js.Function5[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, T6],
     p1: T1,
     p2: T2,
     p3: T3,
     stub4: UnderscoreStatic,
     p5: T5
-  ): Fn_P4P6P7[T4, T6, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    p1: T1,
-    p2: T2,
-    p3: T3,
-    stub4: UnderscoreStatic,
-    p5: T5,
-    p6: T6
-  ): Fn_P4P7[T4, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    p1: T1,
-    p2: T2,
-    p3: T3,
-    stub4: UnderscoreStatic,
-    p5: T5,
-    p6: T6,
-    p7: T7
-  ): Fn_P4T4T8[T4, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    p1: T1,
-    p2: T2,
-    p3: T3,
-    stub4: UnderscoreStatic,
-    p5: T5,
-    stub6: UnderscoreStatic,
-    p7: T7
-  ): Fn_P4P6T4[T4, T6, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    p1: T1,
-    p2: T2,
-    p3: T3,
-    stub4: UnderscoreStatic,
-    stub5: UnderscoreStatic,
-    p6: T6
-  ): Fn_P4P5P7[T4, T5, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    p1: T1,
-    p2: T2,
-    p3: T3,
-    stub4: UnderscoreStatic,
-    stub5: UnderscoreStatic,
-    p6: T6,
-    p7: T7
-  ): Fn_P4P5T4T5[T4, T5, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    p1: T1,
-    p2: T2,
-    p3: T3,
-    stub4: UnderscoreStatic,
-    stub5: UnderscoreStatic,
-    stub6: UnderscoreStatic,
-    p7: T7
-  ): Fn_P4P5P6T4[T4, T5, T6, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
+  ): js.Function1[/* p4 */ T4, T6] = js.native
+  def partial[T1, T2, T3, T4, T5, T6](
+    fn: js.Function5[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, T6],
     p1: T1,
     p2: T2,
     stub3: UnderscoreStatic,
     p4: T4
-  ): Fn_P3P5P6P7[T6, T5, T3, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
+  ): js.Function2[/* p3 */ T3, /* p5 */ T5, T6] = js.native
+  def partial[T1, T2, T3, T4, T5, T6](
+    fn: js.Function5[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, T6],
     p1: T1,
     p2: T2,
     stub3: UnderscoreStatic,
     p4: T4,
     p5: T5
-  ): Fn_P3P6P7[T3, T6, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    p1: T1,
-    p2: T2,
-    stub3: UnderscoreStatic,
-    p4: T4,
-    p5: T5,
-    p6: T6
-  ): Fn_P3P7[T3, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    p1: T1,
-    p2: T2,
-    stub3: UnderscoreStatic,
-    p4: T4,
-    p5: T5,
-    p6: T6,
-    p7: T7
-  ): Fn_P3T3T8[T3, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    p1: T1,
-    p2: T2,
-    stub3: UnderscoreStatic,
-    p4: T4,
-    p5: T5,
-    stub6: UnderscoreStatic,
-    p7: T7
-  ): Fn_P3P6T3[T3, T6, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    p1: T1,
-    p2: T2,
-    stub3: UnderscoreStatic,
-    p4: T4,
-    stub5: UnderscoreStatic,
-    p6: T6
-  ): Fn_P3P5P7[T3, T5, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    p1: T1,
-    p2: T2,
-    stub3: UnderscoreStatic,
-    p4: T4,
-    stub5: UnderscoreStatic,
-    p6: T6,
-    p7: T7
-  ): Fn_P3P5T3T5[T3, T5, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    p1: T1,
-    p2: T2,
-    stub3: UnderscoreStatic,
-    p4: T4,
-    stub5: UnderscoreStatic,
-    stub6: UnderscoreStatic,
-    p7: T7
-  ): Fn_P3P5P6T3[T3, T5, T6, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
+  ): js.Function1[/* p3 */ T3, T6] = js.native
+  def partial[T1, T2, T3, T4, T5, T6](
+    fn: js.Function5[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, T6],
     p1: T1,
     p2: T2,
     stub3: UnderscoreStatic,
     stub4: UnderscoreStatic,
     p5: T5
-  ): Fn_P3P4P6P7[T4, T6, T3, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
+  ): js.Function2[/* p3 */ T3, /* p4 */ T4, T6] = js.native
+  def partial[T1, T2, T3, T4, T5, T6](
+    fn: js.Function5[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, T6],
     p1: T1,
-    p2: T2,
-    stub3: UnderscoreStatic,
-    stub4: UnderscoreStatic,
-    p5: T5,
-    p6: T6
-  ): Fn_P3P4P7[T3, T4, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    p1: T1,
-    p2: T2,
-    stub3: UnderscoreStatic,
-    stub4: UnderscoreStatic,
-    p5: T5,
-    p6: T6,
-    p7: T7
-  ): Fn_P3P4T3T4T8[T3, T4, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    p1: T1,
-    p2: T2,
-    stub3: UnderscoreStatic,
-    stub4: UnderscoreStatic,
-    p5: T5,
-    stub6: UnderscoreStatic,
-    p7: T7
-  ): Fn_P3P4P6T3[T3, T4, T6, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    p1: T1,
-    p2: T2,
-    stub3: UnderscoreStatic,
-    stub4: UnderscoreStatic,
-    stub5: UnderscoreStatic,
-    p6: T6
-  ): Fn_P3P4P5P7[T4, T5, T3, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    p1: T1,
-    p2: T2,
-    stub3: UnderscoreStatic,
-    stub4: UnderscoreStatic,
-    stub5: UnderscoreStatic,
-    p6: T6,
-    p7: T7
-  ): Fn_P3P4P5T3T4[T3, T4, T5, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    p1: T1,
-    p2: T2,
-    stub3: UnderscoreStatic,
-    stub4: UnderscoreStatic,
-    stub5: UnderscoreStatic,
-    stub6: UnderscoreStatic,
-    p7: T7
-  ): Fn_P3P4P5P6T3[T4, T6, T5, T3, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8], p1: T1, stub2: UnderscoreStatic, p3: T3): Fn_P2P4P5P6P7[T4, T6, T2, T5, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
+    stub2: UnderscoreStatic,
+    p3: T3
+  ): js.Function3[/* p2 */ T2, /* p4 */ T4, /* p5 */ T5, T6] = js.native
+  def partial[T1, T2, T3, T4, T5, T6](
+    fn: js.Function5[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, T6],
     p1: T1,
     stub2: UnderscoreStatic,
     p3: T3,
     p4: T4
-  ): Fn_P2P5P6P7[T6, T2, T5, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
+  ): js.Function2[/* p2 */ T2, /* p5 */ T5, T6] = js.native
+  def partial[T1, T2, T3, T4, T5, T6](
+    fn: js.Function5[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, T6],
     p1: T1,
     stub2: UnderscoreStatic,
     p3: T3,
     p4: T4,
     p5: T5
-  ): Fn_P2P6P7[T2, T6, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    p1: T1,
-    stub2: UnderscoreStatic,
-    p3: T3,
-    p4: T4,
-    p5: T5,
-    p6: T6
-  ): Fn_P2P7[T2, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    p1: T1,
-    stub2: UnderscoreStatic,
-    p3: T3,
-    p4: T4,
-    p5: T5,
-    p6: T6,
-    p7: T7
-  ): Fn_P2T2T8[T2, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    p1: T1,
-    stub2: UnderscoreStatic,
-    p3: T3,
-    p4: T4,
-    p5: T5,
-    stub6: UnderscoreStatic,
-    p7: T7
-  ): Fn_P2P6T2[T2, T6, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    p1: T1,
-    stub2: UnderscoreStatic,
-    p3: T3,
-    p4: T4,
-    stub5: UnderscoreStatic,
-    p6: T6
-  ): Fn_P2P5P7[T2, T5, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    p1: T1,
-    stub2: UnderscoreStatic,
-    p3: T3,
-    p4: T4,
-    stub5: UnderscoreStatic,
-    p6: T6,
-    p7: T7
-  ): Fn_P2P5T2T5[T2, T5, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    p1: T1,
-    stub2: UnderscoreStatic,
-    p3: T3,
-    p4: T4,
-    stub5: UnderscoreStatic,
-    stub6: UnderscoreStatic,
-    p7: T7
-  ): Fn_P2P5P6T2[T2, T5, T6, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
+  ): js.Function1[/* p2 */ T2, T6] = js.native
+  def partial[T1, T2, T3, T4, T5, T6](
+    fn: js.Function5[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, T6],
     p1: T1,
     stub2: UnderscoreStatic,
     p3: T3,
     stub4: UnderscoreStatic,
     p5: T5
-  ): Fn_P2P4P6P7[T4, T6, T2, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    p1: T1,
-    stub2: UnderscoreStatic,
-    p3: T3,
-    stub4: UnderscoreStatic,
-    p5: T5,
-    p6: T6
-  ): Fn_P2P4P7[T2, T4, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    p1: T1,
-    stub2: UnderscoreStatic,
-    p3: T3,
-    stub4: UnderscoreStatic,
-    p5: T5,
-    p6: T6,
-    p7: T7
-  ): Fn_P2P4T2T4T8[T2, T4, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    p1: T1,
-    stub2: UnderscoreStatic,
-    p3: T3,
-    stub4: UnderscoreStatic,
-    p5: T5,
-    stub6: UnderscoreStatic,
-    p7: T7
-  ): Fn_P2P4P6T2[T2, T4, T6, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    p1: T1,
-    stub2: UnderscoreStatic,
-    p3: T3,
-    stub4: UnderscoreStatic,
-    stub5: UnderscoreStatic,
-    p6: T6
-  ): Fn_P2P4P5P7[T4, T2, T5, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    p1: T1,
-    stub2: UnderscoreStatic,
-    p3: T3,
-    stub4: UnderscoreStatic,
-    stub5: UnderscoreStatic,
-    p6: T6,
-    p7: T7
-  ): Fn_P2P4P5T2T4[T2, T4, T5, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    p1: T1,
-    stub2: UnderscoreStatic,
-    p3: T3,
-    stub4: UnderscoreStatic,
-    stub5: UnderscoreStatic,
-    stub6: UnderscoreStatic,
-    p7: T7
-  ): Fn_P2P4P5P6T2[T4, T6, T2, T5, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
+  ): js.Function2[/* p2 */ T2, /* p4 */ T4, T6] = js.native
+  def partial[T1, T2, T3, T4, T5, T6](
+    fn: js.Function5[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, T6],
     p1: T1,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
     p4: T4
-  ): Fn_P2P3P5P6P7[T6, T2, T5, T3, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
+  ): js.Function3[/* p2 */ T2, /* p3 */ T3, /* p5 */ T5, T6] = js.native
+  def partial[T1, T2, T3, T4, T5, T6](
+    fn: js.Function5[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, T6],
     p1: T1,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
     p4: T4,
     p5: T5
-  ): Fn_P2P3P6P7[T6, T2, T3, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    p1: T1,
-    stub2: UnderscoreStatic,
-    stub3: UnderscoreStatic,
-    p4: T4,
-    p5: T5,
-    p6: T6
-  ): Fn_P2P3P7[T2, T3, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    p1: T1,
-    stub2: UnderscoreStatic,
-    stub3: UnderscoreStatic,
-    p4: T4,
-    p5: T5,
-    p6: T6,
-    p7: T7
-  ): Fn_P2P3T2T3T8[T2, T3, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    p1: T1,
-    stub2: UnderscoreStatic,
-    stub3: UnderscoreStatic,
-    p4: T4,
-    p5: T5,
-    stub6: UnderscoreStatic,
-    p7: T7
-  ): Fn_P2P3P6T2[T2, T3, T6, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    p1: T1,
-    stub2: UnderscoreStatic,
-    stub3: UnderscoreStatic,
-    p4: T4,
-    stub5: UnderscoreStatic,
-    p6: T6
-  ): Fn_P2P3P5P7[T2, T5, T3, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    p1: T1,
-    stub2: UnderscoreStatic,
-    stub3: UnderscoreStatic,
-    p4: T4,
-    stub5: UnderscoreStatic,
-    p6: T6,
-    p7: T7
-  ): Fn_P2P3P5T2T3[T2, T3, T5, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    p1: T1,
-    stub2: UnderscoreStatic,
-    stub3: UnderscoreStatic,
-    p4: T4,
-    stub5: UnderscoreStatic,
-    stub6: UnderscoreStatic,
-    p7: T7
-  ): Fn_P2P3P5P6T2[T6, T2, T5, T3, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
+  ): js.Function2[/* p2 */ T2, /* p3 */ T3, T6] = js.native
+  def partial[T1, T2, T3, T4, T5, T6](
+    fn: js.Function5[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, T6],
     p1: T1,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
     stub4: UnderscoreStatic,
     p5: T5
-  ): Fn_P2P3P4P6P7[T4, T6, T2, T3, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    p1: T1,
-    stub2: UnderscoreStatic,
-    stub3: UnderscoreStatic,
-    stub4: UnderscoreStatic,
-    p5: T5,
-    p6: T6
-  ): Fn_P2P3P4P7[T4, T2, T3, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    p1: T1,
-    stub2: UnderscoreStatic,
-    stub3: UnderscoreStatic,
-    stub4: UnderscoreStatic,
-    p5: T5,
-    p6: T6,
-    p7: T7
-  ): Fn_P2P3P4T2T3T4[T2, T3, T4, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    p1: T1,
-    stub2: UnderscoreStatic,
-    stub3: UnderscoreStatic,
-    stub4: UnderscoreStatic,
-    p5: T5,
-    stub6: UnderscoreStatic,
-    p7: T7
-  ): Fn_P2P3P4P6T2[T4, T6, T2, T3, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    p1: T1,
-    stub2: UnderscoreStatic,
-    stub3: UnderscoreStatic,
-    stub4: UnderscoreStatic,
-    stub5: UnderscoreStatic,
-    p6: T6
-  ): Fn_P2P3P4P5P7[T4, T2, T5, T3, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    p1: T1,
-    stub2: UnderscoreStatic,
-    stub3: UnderscoreStatic,
-    stub4: UnderscoreStatic,
-    stub5: UnderscoreStatic,
-    p6: T6,
-    p7: T7
-  ): Fn_P2P3P4P5T2T3[T4, T2, T5, T3, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    p1: T1,
-    stub2: UnderscoreStatic,
-    stub3: UnderscoreStatic,
-    stub4: UnderscoreStatic,
-    stub5: UnderscoreStatic,
-    stub6: UnderscoreStatic,
-    p7: T7
-  ): Fn_P2P3P4P5P6T2[T4, T6, T2, T5, T3, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8], stub1: UnderscoreStatic, p2: T2): Fn_P1P3P4P5P6P7[T4, T6, T1, T5, T3, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8], stub1: UnderscoreStatic, p2: T2, p3: T3): Fn_P1P4P5P6P7[T4, T6, T1, T5, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
+  ): js.Function3[/* p2 */ T2, /* p3 */ T3, /* p4 */ T4, T6] = js.native
+  def partial[T1, T2, T3, T4, T5, T6](
+    fn: js.Function5[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, T6],
+    stub1: UnderscoreStatic,
+    p2: T2
+  ): js.Function4[/* p1 */ T1, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, T6] = js.native
+  def partial[T1, T2, T3, T4, T5, T6](
+    fn: js.Function5[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, T6],
+    stub1: UnderscoreStatic,
+    p2: T2,
+    p3: T3
+  ): js.Function3[/* p1 */ T1, /* p4 */ T4, /* p5 */ T5, T6] = js.native
+  def partial[T1, T2, T3, T4, T5, T6](
+    fn: js.Function5[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, T6],
     stub1: UnderscoreStatic,
     p2: T2,
     p3: T3,
     p4: T4
-  ): Fn_P1P5P6P7[T6, T1, T5, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
+  ): js.Function2[/* p1 */ T1, /* p5 */ T5, T6] = js.native
+  def partial[T1, T2, T3, T4, T5, T6](
+    fn: js.Function5[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, T6],
     stub1: UnderscoreStatic,
     p2: T2,
     p3: T3,
     p4: T4,
     p5: T5
-  ): Fn_P1P6P7[T1, T6, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    stub1: UnderscoreStatic,
-    p2: T2,
-    p3: T3,
-    p4: T4,
-    p5: T5,
-    p6: T6
-  ): Fn_P1P7[T1, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    stub1: UnderscoreStatic,
-    p2: T2,
-    p3: T3,
-    p4: T4,
-    p5: T5,
-    p6: T6,
-    p7: T7
-  ): Fn_P1T1T8[T1, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    stub1: UnderscoreStatic,
-    p2: T2,
-    p3: T3,
-    p4: T4,
-    p5: T5,
-    stub6: UnderscoreStatic,
-    p7: T7
-  ): Fn_P1P6T1[T1, T6, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    stub1: UnderscoreStatic,
-    p2: T2,
-    p3: T3,
-    p4: T4,
-    stub5: UnderscoreStatic,
-    p6: T6
-  ): Fn_P1P5P7[T1, T5, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    stub1: UnderscoreStatic,
-    p2: T2,
-    p3: T3,
-    p4: T4,
-    stub5: UnderscoreStatic,
-    p6: T6,
-    p7: T7
-  ): Fn_P1P5T1T5[T1, T5, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    stub1: UnderscoreStatic,
-    p2: T2,
-    p3: T3,
-    p4: T4,
-    stub5: UnderscoreStatic,
-    stub6: UnderscoreStatic,
-    p7: T7
-  ): Fn_P1P5P6T1[T1, T5, T6, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
+  ): js.Function1[/* p1 */ T1, T6] = js.native
+  def partial[T1, T2, T3, T4, T5, T6](
+    fn: js.Function5[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, T6],
     stub1: UnderscoreStatic,
     p2: T2,
     p3: T3,
     stub4: UnderscoreStatic,
     p5: T5
-  ): Fn_P1P4P6P7[T4, T6, T1, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    stub1: UnderscoreStatic,
-    p2: T2,
-    p3: T3,
-    stub4: UnderscoreStatic,
-    p5: T5,
-    p6: T6
-  ): Fn_P1P4P7[T1, T4, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    stub1: UnderscoreStatic,
-    p2: T2,
-    p3: T3,
-    stub4: UnderscoreStatic,
-    p5: T5,
-    p6: T6,
-    p7: T7
-  ): Fn_P1P4T1T4T8[T1, T4, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    stub1: UnderscoreStatic,
-    p2: T2,
-    p3: T3,
-    stub4: UnderscoreStatic,
-    p5: T5,
-    stub6: UnderscoreStatic,
-    p7: T7
-  ): Fn_P1P4P6T1[T1, T4, T6, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    stub1: UnderscoreStatic,
-    p2: T2,
-    p3: T3,
-    stub4: UnderscoreStatic,
-    stub5: UnderscoreStatic,
-    p6: T6
-  ): Fn_P1P4P5P7[T4, T1, T5, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    stub1: UnderscoreStatic,
-    p2: T2,
-    p3: T3,
-    stub4: UnderscoreStatic,
-    stub5: UnderscoreStatic,
-    p6: T6,
-    p7: T7
-  ): Fn_P1P4P5T1T4[T1, T4, T5, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    stub1: UnderscoreStatic,
-    p2: T2,
-    p3: T3,
-    stub4: UnderscoreStatic,
-    stub5: UnderscoreStatic,
-    stub6: UnderscoreStatic,
-    p7: T7
-  ): Fn_P1P4P5P6T1[T4, T6, T1, T5, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
+  ): js.Function2[/* p1 */ T1, /* p4 */ T4, T6] = js.native
+  def partial[T1, T2, T3, T4, T5, T6](
+    fn: js.Function5[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, T6],
     stub1: UnderscoreStatic,
     p2: T2,
     stub3: UnderscoreStatic,
     p4: T4
-  ): Fn_P1P3P5P6P7[T6, T1, T5, T3, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
+  ): js.Function3[/* p1 */ T1, /* p3 */ T3, /* p5 */ T5, T6] = js.native
+  def partial[T1, T2, T3, T4, T5, T6](
+    fn: js.Function5[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, T6],
     stub1: UnderscoreStatic,
     p2: T2,
     stub3: UnderscoreStatic,
     p4: T4,
     p5: T5
-  ): Fn_P1P3P6P7[T6, T1, T3, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    stub1: UnderscoreStatic,
-    p2: T2,
-    stub3: UnderscoreStatic,
-    p4: T4,
-    p5: T5,
-    p6: T6
-  ): Fn_P1P3P7[T1, T3, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    stub1: UnderscoreStatic,
-    p2: T2,
-    stub3: UnderscoreStatic,
-    p4: T4,
-    p5: T5,
-    p6: T6,
-    p7: T7
-  ): Fn_P1P3T1T3T8[T1, T3, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    stub1: UnderscoreStatic,
-    p2: T2,
-    stub3: UnderscoreStatic,
-    p4: T4,
-    p5: T5,
-    stub6: UnderscoreStatic,
-    p7: T7
-  ): Fn_P1P3P6T1[T1, T3, T6, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    stub1: UnderscoreStatic,
-    p2: T2,
-    stub3: UnderscoreStatic,
-    p4: T4,
-    stub5: UnderscoreStatic,
-    p6: T6
-  ): Fn_P1P3P5P7[T1, T5, T3, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    stub1: UnderscoreStatic,
-    p2: T2,
-    stub3: UnderscoreStatic,
-    p4: T4,
-    stub5: UnderscoreStatic,
-    p6: T6,
-    p7: T7
-  ): Fn_P1P3P5T1T3[T1, T3, T5, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    stub1: UnderscoreStatic,
-    p2: T2,
-    stub3: UnderscoreStatic,
-    p4: T4,
-    stub5: UnderscoreStatic,
-    stub6: UnderscoreStatic,
-    p7: T7
-  ): Fn_P1P3P5P6T1[T6, T1, T5, T3, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
+  ): js.Function2[/* p1 */ T1, /* p3 */ T3, T6] = js.native
+  def partial[T1, T2, T3, T4, T5, T6](
+    fn: js.Function5[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, T6],
     stub1: UnderscoreStatic,
     p2: T2,
     stub3: UnderscoreStatic,
     stub4: UnderscoreStatic,
     p5: T5
-  ): Fn_P1P3P4P6P7[T4, T6, T1, T3, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    stub1: UnderscoreStatic,
-    p2: T2,
-    stub3: UnderscoreStatic,
-    stub4: UnderscoreStatic,
-    p5: T5,
-    p6: T6
-  ): Fn_P1P3P4P7[T4, T1, T3, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    stub1: UnderscoreStatic,
-    p2: T2,
-    stub3: UnderscoreStatic,
-    stub4: UnderscoreStatic,
-    p5: T5,
-    p6: T6,
-    p7: T7
-  ): Fn_P1P3P4T1T3T4[T1, T3, T4, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    stub1: UnderscoreStatic,
-    p2: T2,
-    stub3: UnderscoreStatic,
-    stub4: UnderscoreStatic,
-    p5: T5,
-    stub6: UnderscoreStatic,
-    p7: T7
-  ): Fn_P1P3P4P6T1[T4, T6, T1, T3, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    stub1: UnderscoreStatic,
-    p2: T2,
-    stub3: UnderscoreStatic,
-    stub4: UnderscoreStatic,
-    stub5: UnderscoreStatic,
-    p6: T6
-  ): Fn_P1P3P4P5P7[T4, T1, T5, T3, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    stub1: UnderscoreStatic,
-    p2: T2,
-    stub3: UnderscoreStatic,
-    stub4: UnderscoreStatic,
-    stub5: UnderscoreStatic,
-    p6: T6,
-    p7: T7
-  ): Fn_P1P3P4P5T1T3[T4, T1, T5, T3, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    stub1: UnderscoreStatic,
-    p2: T2,
-    stub3: UnderscoreStatic,
-    stub4: UnderscoreStatic,
-    stub5: UnderscoreStatic,
-    stub6: UnderscoreStatic,
-    p7: T7
-  ): Fn_P1P3P4P5P6T1[T4, T6, T1, T5, T3, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
+  ): js.Function3[/* p1 */ T1, /* p3 */ T3, /* p4 */ T4, T6] = js.native
+  def partial[T1, T2, T3, T4, T5, T6](
+    fn: js.Function5[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, T6],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     p3: T3
-  ): Fn_P1P2P4P5P6P7[T4, T6, T1, T2, T5, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
+  ): js.Function4[/* p1 */ T1, /* p2 */ T2, /* p4 */ T4, /* p5 */ T5, T6] = js.native
+  def partial[T1, T2, T3, T4, T5, T6](
+    fn: js.Function5[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, T6],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     p3: T3,
     p4: T4
-  ): Fn_P1P2P5P6P7[T6, T1, T2, T5, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
+  ): js.Function3[/* p1 */ T1, /* p2 */ T2, /* p5 */ T5, T6] = js.native
+  def partial[T1, T2, T3, T4, T5, T6](
+    fn: js.Function5[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, T6],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     p3: T3,
     p4: T4,
     p5: T5
-  ): Fn_P1P2P6P7[T6, T1, T2, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    stub1: UnderscoreStatic,
-    stub2: UnderscoreStatic,
-    p3: T3,
-    p4: T4,
-    p5: T5,
-    p6: T6
-  ): Fn_P1P2P7[T1, T2, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    stub1: UnderscoreStatic,
-    stub2: UnderscoreStatic,
-    p3: T3,
-    p4: T4,
-    p5: T5,
-    p6: T6,
-    p7: T7
-  ): Fn_P1P2T1T2T8[T1, T2, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    stub1: UnderscoreStatic,
-    stub2: UnderscoreStatic,
-    p3: T3,
-    p4: T4,
-    p5: T5,
-    stub6: UnderscoreStatic,
-    p7: T7
-  ): Fn_P1P2P6T1[T1, T2, T6, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    stub1: UnderscoreStatic,
-    stub2: UnderscoreStatic,
-    p3: T3,
-    p4: T4,
-    stub5: UnderscoreStatic,
-    p6: T6
-  ): Fn_P1P2P5P7[T1, T2, T5, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    stub1: UnderscoreStatic,
-    stub2: UnderscoreStatic,
-    p3: T3,
-    p4: T4,
-    stub5: UnderscoreStatic,
-    p6: T6,
-    p7: T7
-  ): Fn_P1P2P5T1T2[T1, T2, T5, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    stub1: UnderscoreStatic,
-    stub2: UnderscoreStatic,
-    p3: T3,
-    p4: T4,
-    stub5: UnderscoreStatic,
-    stub6: UnderscoreStatic,
-    p7: T7
-  ): Fn_P1P2P5P6T1[T6, T1, T2, T5, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
+  ): js.Function2[/* p1 */ T1, /* p2 */ T2, T6] = js.native
+  def partial[T1, T2, T3, T4, T5, T6](
+    fn: js.Function5[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, T6],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     p3: T3,
     stub4: UnderscoreStatic,
     p5: T5
-  ): Fn_P1P2P4P6P7[T4, T6, T1, T2, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    stub1: UnderscoreStatic,
-    stub2: UnderscoreStatic,
-    p3: T3,
-    stub4: UnderscoreStatic,
-    p5: T5,
-    p6: T6
-  ): Fn_P1P2P4P7[T4, T1, T2, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    stub1: UnderscoreStatic,
-    stub2: UnderscoreStatic,
-    p3: T3,
-    stub4: UnderscoreStatic,
-    p5: T5,
-    p6: T6,
-    p7: T7
-  ): Fn_P1P2P4T1T2T4[T1, T2, T4, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    stub1: UnderscoreStatic,
-    stub2: UnderscoreStatic,
-    p3: T3,
-    stub4: UnderscoreStatic,
-    p5: T5,
-    stub6: UnderscoreStatic,
-    p7: T7
-  ): Fn_P1P2P4P6T1[T4, T6, T1, T2, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    stub1: UnderscoreStatic,
-    stub2: UnderscoreStatic,
-    p3: T3,
-    stub4: UnderscoreStatic,
-    stub5: UnderscoreStatic,
-    p6: T6
-  ): Fn_P1P2P4P5P7[T4, T1, T2, T5, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    stub1: UnderscoreStatic,
-    stub2: UnderscoreStatic,
-    p3: T3,
-    stub4: UnderscoreStatic,
-    stub5: UnderscoreStatic,
-    p6: T6,
-    p7: T7
-  ): Fn_P1P2P4P5T1T2[T4, T1, T2, T5, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    stub1: UnderscoreStatic,
-    stub2: UnderscoreStatic,
-    p3: T3,
-    stub4: UnderscoreStatic,
-    stub5: UnderscoreStatic,
-    stub6: UnderscoreStatic,
-    p7: T7
-  ): Fn_P1P2P4P5P6T1[T4, T6, T1, T2, T5, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
+  ): js.Function3[/* p1 */ T1, /* p2 */ T2, /* p4 */ T4, T6] = js.native
+  def partial[T1, T2, T3, T4, T5, T6](
+    fn: js.Function5[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, T6],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
     p4: T4
-  ): Fn_P1P2P3P5P6P7[T6, T1, T2, T5, T3, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
+  ): js.Function4[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p5 */ T5, T6] = js.native
+  def partial[T1, T2, T3, T4, T5, T6](
+    fn: js.Function5[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, T6],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
     p4: T4,
     p5: T5
-  ): Fn_P1P2P3P6P7[T6, T1, T2, T3, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    stub1: UnderscoreStatic,
-    stub2: UnderscoreStatic,
-    stub3: UnderscoreStatic,
-    p4: T4,
-    p5: T5,
-    p6: T6
-  ): Fn_P1P2P3P7[T1, T2, T3, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    stub1: UnderscoreStatic,
-    stub2: UnderscoreStatic,
-    stub3: UnderscoreStatic,
-    p4: T4,
-    p5: T5,
-    p6: T6,
-    p7: T7
-  ): Fn_P1P2P3T1T2T3T8[T1, T2, T3, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    stub1: UnderscoreStatic,
-    stub2: UnderscoreStatic,
-    stub3: UnderscoreStatic,
-    p4: T4,
-    p5: T5,
-    stub6: UnderscoreStatic,
-    p7: T7
-  ): Fn_P1P2P3P6T1[T6, T1, T2, T3, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    stub1: UnderscoreStatic,
-    stub2: UnderscoreStatic,
-    stub3: UnderscoreStatic,
-    p4: T4,
-    stub5: UnderscoreStatic,
-    p6: T6
-  ): Fn_P1P2P3P5P7[T1, T2, T5, T3, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    stub1: UnderscoreStatic,
-    stub2: UnderscoreStatic,
-    stub3: UnderscoreStatic,
-    p4: T4,
-    stub5: UnderscoreStatic,
-    p6: T6,
-    p7: T7
-  ): Fn_P1P2P3P5T1T2[T1, T2, T5, T3, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
-    stub1: UnderscoreStatic,
-    stub2: UnderscoreStatic,
-    stub3: UnderscoreStatic,
-    p4: T4,
-    stub5: UnderscoreStatic,
-    stub6: UnderscoreStatic,
-    p7: T7
-  ): Fn_P1P2P3P5P6T1[T6, T1, T2, T5, T3, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
+  ): js.Function3[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, T6] = js.native
+  def partial[T1, T2, T3, T4, T5, T6](
+    fn: js.Function5[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, T6],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
     stub4: UnderscoreStatic,
     p5: T5
-  ): Fn_P1P2P3P4P6P7[T4, T6, T1, T2, T3, T7, T8] = js.native
-  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
+  ): js.Function4[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, T6] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    p1: T1
+  ): js.Function5[/* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    p1: T1,
+    p2: T2
+  ): js.Function4[/* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    p1: T1,
+    p2: T2,
+    p3: T3
+  ): js.Function3[/* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    p1: T1,
+    p2: T2,
+    p3: T3,
+    p4: T4
+  ): js.Function2[/* p5 */ T5, /* p6 */ T6, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    p1: T1,
+    p2: T2,
+    p3: T3,
+    p4: T4,
+    p5: T5
+  ): js.Function1[/* p6 */ T6, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    p1: T1,
+    p2: T2,
+    p3: T3,
+    p4: T4,
+    p5: T5,
+    p6: T6
+  ): js.Function0[T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    p1: T1,
+    p2: T2,
+    p3: T3,
+    p4: T4,
+    stub5: UnderscoreStatic,
+    p6: T6
+  ): js.Function1[/* p5 */ T5, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    p1: T1,
+    p2: T2,
+    p3: T3,
+    stub4: UnderscoreStatic,
+    p5: T5
+  ): js.Function2[/* p4 */ T4, /* p6 */ T6, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    p1: T1,
+    p2: T2,
+    p3: T3,
+    stub4: UnderscoreStatic,
+    p5: T5,
+    p6: T6
+  ): js.Function1[/* p4 */ T4, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    p1: T1,
+    p2: T2,
+    p3: T3,
+    stub4: UnderscoreStatic,
+    stub5: UnderscoreStatic,
+    p6: T6
+  ): js.Function2[/* p4 */ T4, /* p5 */ T5, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    p1: T1,
+    p2: T2,
+    stub3: UnderscoreStatic,
+    p4: T4
+  ): js.Function3[/* p3 */ T3, /* p5 */ T5, /* p6 */ T6, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    p1: T1,
+    p2: T2,
+    stub3: UnderscoreStatic,
+    p4: T4,
+    p5: T5
+  ): js.Function2[/* p3 */ T3, /* p6 */ T6, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    p1: T1,
+    p2: T2,
+    stub3: UnderscoreStatic,
+    p4: T4,
+    p5: T5,
+    p6: T6
+  ): js.Function1[/* p3 */ T3, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    p1: T1,
+    p2: T2,
+    stub3: UnderscoreStatic,
+    p4: T4,
+    stub5: UnderscoreStatic,
+    p6: T6
+  ): js.Function2[/* p3 */ T3, /* p5 */ T5, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    p1: T1,
+    p2: T2,
+    stub3: UnderscoreStatic,
+    stub4: UnderscoreStatic,
+    p5: T5
+  ): js.Function3[/* p3 */ T3, /* p4 */ T4, /* p6 */ T6, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    p1: T1,
+    p2: T2,
+    stub3: UnderscoreStatic,
+    stub4: UnderscoreStatic,
+    p5: T5,
+    p6: T6
+  ): js.Function2[/* p3 */ T3, /* p4 */ T4, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    p1: T1,
+    p2: T2,
+    stub3: UnderscoreStatic,
+    stub4: UnderscoreStatic,
+    stub5: UnderscoreStatic,
+    p6: T6
+  ): js.Function3[/* p3 */ T3, /* p4 */ T4, /* p5 */ T5, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    p1: T1,
+    stub2: UnderscoreStatic,
+    p3: T3
+  ): js.Function4[/* p2 */ T2, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    p1: T1,
+    stub2: UnderscoreStatic,
+    p3: T3,
+    p4: T4
+  ): js.Function3[/* p2 */ T2, /* p5 */ T5, /* p6 */ T6, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    p1: T1,
+    stub2: UnderscoreStatic,
+    p3: T3,
+    p4: T4,
+    p5: T5
+  ): js.Function2[/* p2 */ T2, /* p6 */ T6, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    p1: T1,
+    stub2: UnderscoreStatic,
+    p3: T3,
+    p4: T4,
+    p5: T5,
+    p6: T6
+  ): js.Function1[/* p2 */ T2, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    p1: T1,
+    stub2: UnderscoreStatic,
+    p3: T3,
+    p4: T4,
+    stub5: UnderscoreStatic,
+    p6: T6
+  ): js.Function2[/* p2 */ T2, /* p5 */ T5, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    p1: T1,
+    stub2: UnderscoreStatic,
+    p3: T3,
+    stub4: UnderscoreStatic,
+    p5: T5
+  ): js.Function3[/* p2 */ T2, /* p4 */ T4, /* p6 */ T6, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    p1: T1,
+    stub2: UnderscoreStatic,
+    p3: T3,
+    stub4: UnderscoreStatic,
+    p5: T5,
+    p6: T6
+  ): js.Function2[/* p2 */ T2, /* p4 */ T4, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    p1: T1,
+    stub2: UnderscoreStatic,
+    p3: T3,
+    stub4: UnderscoreStatic,
+    stub5: UnderscoreStatic,
+    p6: T6
+  ): js.Function3[/* p2 */ T2, /* p4 */ T4, /* p5 */ T5, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    p1: T1,
+    stub2: UnderscoreStatic,
+    stub3: UnderscoreStatic,
+    p4: T4
+  ): js.Function4[/* p2 */ T2, /* p3 */ T3, /* p5 */ T5, /* p6 */ T6, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    p1: T1,
+    stub2: UnderscoreStatic,
+    stub3: UnderscoreStatic,
+    p4: T4,
+    p5: T5
+  ): js.Function3[/* p2 */ T2, /* p3 */ T3, /* p6 */ T6, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    p1: T1,
+    stub2: UnderscoreStatic,
+    stub3: UnderscoreStatic,
+    p4: T4,
+    p5: T5,
+    p6: T6
+  ): js.Function2[/* p2 */ T2, /* p3 */ T3, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    p1: T1,
+    stub2: UnderscoreStatic,
+    stub3: UnderscoreStatic,
+    p4: T4,
+    stub5: UnderscoreStatic,
+    p6: T6
+  ): js.Function3[/* p2 */ T2, /* p3 */ T3, /* p5 */ T5, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    p1: T1,
+    stub2: UnderscoreStatic,
+    stub3: UnderscoreStatic,
+    stub4: UnderscoreStatic,
+    p5: T5
+  ): js.Function4[/* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p6 */ T6, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    p1: T1,
+    stub2: UnderscoreStatic,
+    stub3: UnderscoreStatic,
+    stub4: UnderscoreStatic,
+    p5: T5,
+    p6: T6
+  ): js.Function3[/* p2 */ T2, /* p3 */ T3, /* p4 */ T4, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    p1: T1,
+    stub2: UnderscoreStatic,
+    stub3: UnderscoreStatic,
+    stub4: UnderscoreStatic,
+    stub5: UnderscoreStatic,
+    p6: T6
+  ): js.Function4[/* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    stub1: UnderscoreStatic,
+    p2: T2
+  ): js.Function5[/* p1 */ T1, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    stub1: UnderscoreStatic,
+    p2: T2,
+    p3: T3
+  ): js.Function4[/* p1 */ T1, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    stub1: UnderscoreStatic,
+    p2: T2,
+    p3: T3,
+    p4: T4
+  ): js.Function3[/* p1 */ T1, /* p5 */ T5, /* p6 */ T6, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    stub1: UnderscoreStatic,
+    p2: T2,
+    p3: T3,
+    p4: T4,
+    p5: T5
+  ): js.Function2[/* p1 */ T1, /* p6 */ T6, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    stub1: UnderscoreStatic,
+    p2: T2,
+    p3: T3,
+    p4: T4,
+    p5: T5,
+    p6: T6
+  ): js.Function1[/* p1 */ T1, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    stub1: UnderscoreStatic,
+    p2: T2,
+    p3: T3,
+    p4: T4,
+    stub5: UnderscoreStatic,
+    p6: T6
+  ): js.Function2[/* p1 */ T1, /* p5 */ T5, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    stub1: UnderscoreStatic,
+    p2: T2,
+    p3: T3,
+    stub4: UnderscoreStatic,
+    p5: T5
+  ): js.Function3[/* p1 */ T1, /* p4 */ T4, /* p6 */ T6, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    stub1: UnderscoreStatic,
+    p2: T2,
+    p3: T3,
+    stub4: UnderscoreStatic,
+    p5: T5,
+    p6: T6
+  ): js.Function2[/* p1 */ T1, /* p4 */ T4, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    stub1: UnderscoreStatic,
+    p2: T2,
+    p3: T3,
+    stub4: UnderscoreStatic,
+    stub5: UnderscoreStatic,
+    p6: T6
+  ): js.Function3[/* p1 */ T1, /* p4 */ T4, /* p5 */ T5, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    stub1: UnderscoreStatic,
+    p2: T2,
+    stub3: UnderscoreStatic,
+    p4: T4
+  ): js.Function4[/* p1 */ T1, /* p3 */ T3, /* p5 */ T5, /* p6 */ T6, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    stub1: UnderscoreStatic,
+    p2: T2,
+    stub3: UnderscoreStatic,
+    p4: T4,
+    p5: T5
+  ): js.Function3[/* p1 */ T1, /* p3 */ T3, /* p6 */ T6, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    stub1: UnderscoreStatic,
+    p2: T2,
+    stub3: UnderscoreStatic,
+    p4: T4,
+    p5: T5,
+    p6: T6
+  ): js.Function2[/* p1 */ T1, /* p3 */ T3, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    stub1: UnderscoreStatic,
+    p2: T2,
+    stub3: UnderscoreStatic,
+    p4: T4,
+    stub5: UnderscoreStatic,
+    p6: T6
+  ): js.Function3[/* p1 */ T1, /* p3 */ T3, /* p5 */ T5, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    stub1: UnderscoreStatic,
+    p2: T2,
+    stub3: UnderscoreStatic,
+    stub4: UnderscoreStatic,
+    p5: T5
+  ): js.Function4[/* p1 */ T1, /* p3 */ T3, /* p4 */ T4, /* p6 */ T6, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    stub1: UnderscoreStatic,
+    p2: T2,
+    stub3: UnderscoreStatic,
+    stub4: UnderscoreStatic,
+    p5: T5,
+    p6: T6
+  ): js.Function3[/* p1 */ T1, /* p3 */ T3, /* p4 */ T4, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    stub1: UnderscoreStatic,
+    p2: T2,
+    stub3: UnderscoreStatic,
+    stub4: UnderscoreStatic,
+    stub5: UnderscoreStatic,
+    p6: T6
+  ): js.Function4[/* p1 */ T1, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    stub1: UnderscoreStatic,
+    stub2: UnderscoreStatic,
+    p3: T3
+  ): js.Function5[/* p1 */ T1, /* p2 */ T2, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    stub1: UnderscoreStatic,
+    stub2: UnderscoreStatic,
+    p3: T3,
+    p4: T4
+  ): js.Function4[/* p1 */ T1, /* p2 */ T2, /* p5 */ T5, /* p6 */ T6, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    stub1: UnderscoreStatic,
+    stub2: UnderscoreStatic,
+    p3: T3,
+    p4: T4,
+    p5: T5
+  ): js.Function3[/* p1 */ T1, /* p2 */ T2, /* p6 */ T6, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    stub1: UnderscoreStatic,
+    stub2: UnderscoreStatic,
+    p3: T3,
+    p4: T4,
+    p5: T5,
+    p6: T6
+  ): js.Function2[/* p1 */ T1, /* p2 */ T2, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    stub1: UnderscoreStatic,
+    stub2: UnderscoreStatic,
+    p3: T3,
+    p4: T4,
+    stub5: UnderscoreStatic,
+    p6: T6
+  ): js.Function3[/* p1 */ T1, /* p2 */ T2, /* p5 */ T5, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    stub1: UnderscoreStatic,
+    stub2: UnderscoreStatic,
+    p3: T3,
+    stub4: UnderscoreStatic,
+    p5: T5
+  ): js.Function4[/* p1 */ T1, /* p2 */ T2, /* p4 */ T4, /* p6 */ T6, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    stub1: UnderscoreStatic,
+    stub2: UnderscoreStatic,
+    p3: T3,
+    stub4: UnderscoreStatic,
+    p5: T5,
+    p6: T6
+  ): js.Function3[/* p1 */ T1, /* p2 */ T2, /* p4 */ T4, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    stub1: UnderscoreStatic,
+    stub2: UnderscoreStatic,
+    p3: T3,
+    stub4: UnderscoreStatic,
+    stub5: UnderscoreStatic,
+    p6: T6
+  ): js.Function4[/* p1 */ T1, /* p2 */ T2, /* p4 */ T4, /* p5 */ T5, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    stub1: UnderscoreStatic,
+    stub2: UnderscoreStatic,
+    stub3: UnderscoreStatic,
+    p4: T4
+  ): js.Function5[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p5 */ T5, /* p6 */ T6, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    stub1: UnderscoreStatic,
+    stub2: UnderscoreStatic,
+    stub3: UnderscoreStatic,
+    p4: T4,
+    p5: T5
+  ): js.Function4[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p6 */ T6, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    stub1: UnderscoreStatic,
+    stub2: UnderscoreStatic,
+    stub3: UnderscoreStatic,
+    p4: T4,
+    p5: T5,
+    p6: T6
+  ): js.Function3[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    stub1: UnderscoreStatic,
+    stub2: UnderscoreStatic,
+    stub3: UnderscoreStatic,
+    p4: T4,
+    stub5: UnderscoreStatic,
+    p6: T6
+  ): js.Function4[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p5 */ T5, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    stub1: UnderscoreStatic,
+    stub2: UnderscoreStatic,
+    stub3: UnderscoreStatic,
+    stub4: UnderscoreStatic,
+    p5: T5
+  ): js.Function5[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p6 */ T6, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
     stub4: UnderscoreStatic,
     p5: T5,
     p6: T6
-  ): Fn_P1P2P3P4P7[T4, T1, T2, T3, T7, T8] = js.native
+  ): js.Function4[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, T7] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7](
+    fn: js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T7],
+    stub1: UnderscoreStatic,
+    stub2: UnderscoreStatic,
+    stub3: UnderscoreStatic,
+    stub4: UnderscoreStatic,
+    stub5: UnderscoreStatic,
+    p6: T6
+  ): js.Function5[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, T7] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1
+  ): js.Function6[/* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    p2: T2
+  ): js.Function5[/* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    p2: T2,
+    p3: T3
+  ): js.Function4[/* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    p2: T2,
+    p3: T3,
+    p4: T4
+  ): js.Function3[/* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    p2: T2,
+    p3: T3,
+    p4: T4,
+    p5: T5
+  ): js.Function2[/* p6 */ T6, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    p2: T2,
+    p3: T3,
+    p4: T4,
+    p5: T5,
+    p6: T6
+  ): js.Function1[/* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    p2: T2,
+    p3: T3,
+    p4: T4,
+    p5: T5,
+    p6: T6,
+    p7: T7
+  ): js.Function0[T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    p2: T2,
+    p3: T3,
+    p4: T4,
+    p5: T5,
+    stub6: UnderscoreStatic,
+    p7: T7
+  ): js.Function1[/* p6 */ T6, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    p2: T2,
+    p3: T3,
+    p4: T4,
+    stub5: UnderscoreStatic,
+    p6: T6
+  ): js.Function2[/* p5 */ T5, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    p2: T2,
+    p3: T3,
+    p4: T4,
+    stub5: UnderscoreStatic,
+    p6: T6,
+    p7: T7
+  ): js.Function1[/* p5 */ T5, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    p2: T2,
+    p3: T3,
+    p4: T4,
+    stub5: UnderscoreStatic,
+    stub6: UnderscoreStatic,
+    p7: T7
+  ): js.Function2[/* p5 */ T5, /* p6 */ T6, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    p2: T2,
+    p3: T3,
+    stub4: UnderscoreStatic,
+    p5: T5
+  ): js.Function3[/* p4 */ T4, /* p6 */ T6, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    p2: T2,
+    p3: T3,
+    stub4: UnderscoreStatic,
+    p5: T5,
+    p6: T6
+  ): js.Function2[/* p4 */ T4, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    p2: T2,
+    p3: T3,
+    stub4: UnderscoreStatic,
+    p5: T5,
+    p6: T6,
+    p7: T7
+  ): js.Function1[/* p4 */ T4, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    p2: T2,
+    p3: T3,
+    stub4: UnderscoreStatic,
+    p5: T5,
+    stub6: UnderscoreStatic,
+    p7: T7
+  ): js.Function2[/* p4 */ T4, /* p6 */ T6, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    p2: T2,
+    p3: T3,
+    stub4: UnderscoreStatic,
+    stub5: UnderscoreStatic,
+    p6: T6
+  ): js.Function3[/* p4 */ T4, /* p5 */ T5, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    p2: T2,
+    p3: T3,
+    stub4: UnderscoreStatic,
+    stub5: UnderscoreStatic,
+    p6: T6,
+    p7: T7
+  ): js.Function2[/* p4 */ T4, /* p5 */ T5, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    p2: T2,
+    p3: T3,
+    stub4: UnderscoreStatic,
+    stub5: UnderscoreStatic,
+    stub6: UnderscoreStatic,
+    p7: T7
+  ): js.Function3[/* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    p2: T2,
+    stub3: UnderscoreStatic,
+    p4: T4
+  ): js.Function4[/* p3 */ T3, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    p2: T2,
+    stub3: UnderscoreStatic,
+    p4: T4,
+    p5: T5
+  ): js.Function3[/* p3 */ T3, /* p6 */ T6, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    p2: T2,
+    stub3: UnderscoreStatic,
+    p4: T4,
+    p5: T5,
+    p6: T6
+  ): js.Function2[/* p3 */ T3, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    p2: T2,
+    stub3: UnderscoreStatic,
+    p4: T4,
+    p5: T5,
+    p6: T6,
+    p7: T7
+  ): js.Function1[/* p3 */ T3, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    p2: T2,
+    stub3: UnderscoreStatic,
+    p4: T4,
+    p5: T5,
+    stub6: UnderscoreStatic,
+    p7: T7
+  ): js.Function2[/* p3 */ T3, /* p6 */ T6, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    p2: T2,
+    stub3: UnderscoreStatic,
+    p4: T4,
+    stub5: UnderscoreStatic,
+    p6: T6
+  ): js.Function3[/* p3 */ T3, /* p5 */ T5, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    p2: T2,
+    stub3: UnderscoreStatic,
+    p4: T4,
+    stub5: UnderscoreStatic,
+    p6: T6,
+    p7: T7
+  ): js.Function2[/* p3 */ T3, /* p5 */ T5, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    p2: T2,
+    stub3: UnderscoreStatic,
+    p4: T4,
+    stub5: UnderscoreStatic,
+    stub6: UnderscoreStatic,
+    p7: T7
+  ): js.Function3[/* p3 */ T3, /* p5 */ T5, /* p6 */ T6, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    p2: T2,
+    stub3: UnderscoreStatic,
+    stub4: UnderscoreStatic,
+    p5: T5
+  ): js.Function4[/* p3 */ T3, /* p4 */ T4, /* p6 */ T6, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    p2: T2,
+    stub3: UnderscoreStatic,
+    stub4: UnderscoreStatic,
+    p5: T5,
+    p6: T6
+  ): js.Function3[/* p3 */ T3, /* p4 */ T4, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    p2: T2,
+    stub3: UnderscoreStatic,
+    stub4: UnderscoreStatic,
+    p5: T5,
+    p6: T6,
+    p7: T7
+  ): js.Function2[/* p3 */ T3, /* p4 */ T4, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    p2: T2,
+    stub3: UnderscoreStatic,
+    stub4: UnderscoreStatic,
+    p5: T5,
+    stub6: UnderscoreStatic,
+    p7: T7
+  ): js.Function3[/* p3 */ T3, /* p4 */ T4, /* p6 */ T6, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    p2: T2,
+    stub3: UnderscoreStatic,
+    stub4: UnderscoreStatic,
+    stub5: UnderscoreStatic,
+    p6: T6
+  ): js.Function4[/* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    p2: T2,
+    stub3: UnderscoreStatic,
+    stub4: UnderscoreStatic,
+    stub5: UnderscoreStatic,
+    p6: T6,
+    p7: T7
+  ): js.Function3[/* p3 */ T3, /* p4 */ T4, /* p5 */ T5, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    p2: T2,
+    stub3: UnderscoreStatic,
+    stub4: UnderscoreStatic,
+    stub5: UnderscoreStatic,
+    stub6: UnderscoreStatic,
+    p7: T7
+  ): js.Function4[/* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    stub2: UnderscoreStatic,
+    p3: T3
+  ): js.Function5[/* p2 */ T2, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    stub2: UnderscoreStatic,
+    p3: T3,
+    p4: T4
+  ): js.Function4[/* p2 */ T2, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    stub2: UnderscoreStatic,
+    p3: T3,
+    p4: T4,
+    p5: T5
+  ): js.Function3[/* p2 */ T2, /* p6 */ T6, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    stub2: UnderscoreStatic,
+    p3: T3,
+    p4: T4,
+    p5: T5,
+    p6: T6
+  ): js.Function2[/* p2 */ T2, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    stub2: UnderscoreStatic,
+    p3: T3,
+    p4: T4,
+    p5: T5,
+    p6: T6,
+    p7: T7
+  ): js.Function1[/* p2 */ T2, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    stub2: UnderscoreStatic,
+    p3: T3,
+    p4: T4,
+    p5: T5,
+    stub6: UnderscoreStatic,
+    p7: T7
+  ): js.Function2[/* p2 */ T2, /* p6 */ T6, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    stub2: UnderscoreStatic,
+    p3: T3,
+    p4: T4,
+    stub5: UnderscoreStatic,
+    p6: T6
+  ): js.Function3[/* p2 */ T2, /* p5 */ T5, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    stub2: UnderscoreStatic,
+    p3: T3,
+    p4: T4,
+    stub5: UnderscoreStatic,
+    p6: T6,
+    p7: T7
+  ): js.Function2[/* p2 */ T2, /* p5 */ T5, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    stub2: UnderscoreStatic,
+    p3: T3,
+    p4: T4,
+    stub5: UnderscoreStatic,
+    stub6: UnderscoreStatic,
+    p7: T7
+  ): js.Function3[/* p2 */ T2, /* p5 */ T5, /* p6 */ T6, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    stub2: UnderscoreStatic,
+    p3: T3,
+    stub4: UnderscoreStatic,
+    p5: T5
+  ): js.Function4[/* p2 */ T2, /* p4 */ T4, /* p6 */ T6, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    stub2: UnderscoreStatic,
+    p3: T3,
+    stub4: UnderscoreStatic,
+    p5: T5,
+    p6: T6
+  ): js.Function3[/* p2 */ T2, /* p4 */ T4, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    stub2: UnderscoreStatic,
+    p3: T3,
+    stub4: UnderscoreStatic,
+    p5: T5,
+    p6: T6,
+    p7: T7
+  ): js.Function2[/* p2 */ T2, /* p4 */ T4, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    stub2: UnderscoreStatic,
+    p3: T3,
+    stub4: UnderscoreStatic,
+    p5: T5,
+    stub6: UnderscoreStatic,
+    p7: T7
+  ): js.Function3[/* p2 */ T2, /* p4 */ T4, /* p6 */ T6, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    stub2: UnderscoreStatic,
+    p3: T3,
+    stub4: UnderscoreStatic,
+    stub5: UnderscoreStatic,
+    p6: T6
+  ): js.Function4[/* p2 */ T2, /* p4 */ T4, /* p5 */ T5, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    stub2: UnderscoreStatic,
+    p3: T3,
+    stub4: UnderscoreStatic,
+    stub5: UnderscoreStatic,
+    p6: T6,
+    p7: T7
+  ): js.Function3[/* p2 */ T2, /* p4 */ T4, /* p5 */ T5, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    stub2: UnderscoreStatic,
+    p3: T3,
+    stub4: UnderscoreStatic,
+    stub5: UnderscoreStatic,
+    stub6: UnderscoreStatic,
+    p7: T7
+  ): js.Function4[/* p2 */ T2, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    stub2: UnderscoreStatic,
+    stub3: UnderscoreStatic,
+    p4: T4
+  ): js.Function5[/* p2 */ T2, /* p3 */ T3, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    stub2: UnderscoreStatic,
+    stub3: UnderscoreStatic,
+    p4: T4,
+    p5: T5
+  ): js.Function4[/* p2 */ T2, /* p3 */ T3, /* p6 */ T6, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    stub2: UnderscoreStatic,
+    stub3: UnderscoreStatic,
+    p4: T4,
+    p5: T5,
+    p6: T6
+  ): js.Function3[/* p2 */ T2, /* p3 */ T3, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    stub2: UnderscoreStatic,
+    stub3: UnderscoreStatic,
+    p4: T4,
+    p5: T5,
+    p6: T6,
+    p7: T7
+  ): js.Function2[/* p2 */ T2, /* p3 */ T3, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    stub2: UnderscoreStatic,
+    stub3: UnderscoreStatic,
+    p4: T4,
+    p5: T5,
+    stub6: UnderscoreStatic,
+    p7: T7
+  ): js.Function3[/* p2 */ T2, /* p3 */ T3, /* p6 */ T6, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    stub2: UnderscoreStatic,
+    stub3: UnderscoreStatic,
+    p4: T4,
+    stub5: UnderscoreStatic,
+    p6: T6
+  ): js.Function4[/* p2 */ T2, /* p3 */ T3, /* p5 */ T5, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    stub2: UnderscoreStatic,
+    stub3: UnderscoreStatic,
+    p4: T4,
+    stub5: UnderscoreStatic,
+    p6: T6,
+    p7: T7
+  ): js.Function3[/* p2 */ T2, /* p3 */ T3, /* p5 */ T5, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    stub2: UnderscoreStatic,
+    stub3: UnderscoreStatic,
+    p4: T4,
+    stub5: UnderscoreStatic,
+    stub6: UnderscoreStatic,
+    p7: T7
+  ): js.Function4[/* p2 */ T2, /* p3 */ T3, /* p5 */ T5, /* p6 */ T6, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    stub2: UnderscoreStatic,
+    stub3: UnderscoreStatic,
+    stub4: UnderscoreStatic,
+    p5: T5
+  ): js.Function5[/* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p6 */ T6, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    stub2: UnderscoreStatic,
+    stub3: UnderscoreStatic,
+    stub4: UnderscoreStatic,
+    p5: T5,
+    p6: T6
+  ): js.Function4[/* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    stub2: UnderscoreStatic,
+    stub3: UnderscoreStatic,
+    stub4: UnderscoreStatic,
+    p5: T5,
+    p6: T6,
+    p7: T7
+  ): js.Function3[/* p2 */ T2, /* p3 */ T3, /* p4 */ T4, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    stub2: UnderscoreStatic,
+    stub3: UnderscoreStatic,
+    stub4: UnderscoreStatic,
+    p5: T5,
+    stub6: UnderscoreStatic,
+    p7: T7
+  ): js.Function4[/* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p6 */ T6, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    stub2: UnderscoreStatic,
+    stub3: UnderscoreStatic,
+    stub4: UnderscoreStatic,
+    stub5: UnderscoreStatic,
+    p6: T6
+  ): js.Function5[/* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    stub2: UnderscoreStatic,
+    stub3: UnderscoreStatic,
+    stub4: UnderscoreStatic,
+    stub5: UnderscoreStatic,
+    p6: T6,
+    p7: T7
+  ): js.Function4[/* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    p1: T1,
+    stub2: UnderscoreStatic,
+    stub3: UnderscoreStatic,
+    stub4: UnderscoreStatic,
+    stub5: UnderscoreStatic,
+    stub6: UnderscoreStatic,
+    p7: T7
+  ): js.Function5[/* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    p2: T2
+  ): js.Function6[/* p1 */ T1, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    p2: T2,
+    p3: T3
+  ): js.Function5[/* p1 */ T1, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    p2: T2,
+    p3: T3,
+    p4: T4
+  ): js.Function4[/* p1 */ T1, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    p2: T2,
+    p3: T3,
+    p4: T4,
+    p5: T5
+  ): js.Function3[/* p1 */ T1, /* p6 */ T6, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    p2: T2,
+    p3: T3,
+    p4: T4,
+    p5: T5,
+    p6: T6
+  ): js.Function2[/* p1 */ T1, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    p2: T2,
+    p3: T3,
+    p4: T4,
+    p5: T5,
+    p6: T6,
+    p7: T7
+  ): js.Function1[/* p1 */ T1, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    p2: T2,
+    p3: T3,
+    p4: T4,
+    p5: T5,
+    stub6: UnderscoreStatic,
+    p7: T7
+  ): js.Function2[/* p1 */ T1, /* p6 */ T6, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    p2: T2,
+    p3: T3,
+    p4: T4,
+    stub5: UnderscoreStatic,
+    p6: T6
+  ): js.Function3[/* p1 */ T1, /* p5 */ T5, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    p2: T2,
+    p3: T3,
+    p4: T4,
+    stub5: UnderscoreStatic,
+    p6: T6,
+    p7: T7
+  ): js.Function2[/* p1 */ T1, /* p5 */ T5, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    p2: T2,
+    p3: T3,
+    p4: T4,
+    stub5: UnderscoreStatic,
+    stub6: UnderscoreStatic,
+    p7: T7
+  ): js.Function3[/* p1 */ T1, /* p5 */ T5, /* p6 */ T6, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    p2: T2,
+    p3: T3,
+    stub4: UnderscoreStatic,
+    p5: T5
+  ): js.Function4[/* p1 */ T1, /* p4 */ T4, /* p6 */ T6, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    p2: T2,
+    p3: T3,
+    stub4: UnderscoreStatic,
+    p5: T5,
+    p6: T6
+  ): js.Function3[/* p1 */ T1, /* p4 */ T4, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    p2: T2,
+    p3: T3,
+    stub4: UnderscoreStatic,
+    p5: T5,
+    p6: T6,
+    p7: T7
+  ): js.Function2[/* p1 */ T1, /* p4 */ T4, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    p2: T2,
+    p3: T3,
+    stub4: UnderscoreStatic,
+    p5: T5,
+    stub6: UnderscoreStatic,
+    p7: T7
+  ): js.Function3[/* p1 */ T1, /* p4 */ T4, /* p6 */ T6, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    p2: T2,
+    p3: T3,
+    stub4: UnderscoreStatic,
+    stub5: UnderscoreStatic,
+    p6: T6
+  ): js.Function4[/* p1 */ T1, /* p4 */ T4, /* p5 */ T5, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    p2: T2,
+    p3: T3,
+    stub4: UnderscoreStatic,
+    stub5: UnderscoreStatic,
+    p6: T6,
+    p7: T7
+  ): js.Function3[/* p1 */ T1, /* p4 */ T4, /* p5 */ T5, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    p2: T2,
+    p3: T3,
+    stub4: UnderscoreStatic,
+    stub5: UnderscoreStatic,
+    stub6: UnderscoreStatic,
+    p7: T7
+  ): js.Function4[/* p1 */ T1, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    p2: T2,
+    stub3: UnderscoreStatic,
+    p4: T4
+  ): js.Function5[/* p1 */ T1, /* p3 */ T3, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    p2: T2,
+    stub3: UnderscoreStatic,
+    p4: T4,
+    p5: T5
+  ): js.Function4[/* p1 */ T1, /* p3 */ T3, /* p6 */ T6, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    p2: T2,
+    stub3: UnderscoreStatic,
+    p4: T4,
+    p5: T5,
+    p6: T6
+  ): js.Function3[/* p1 */ T1, /* p3 */ T3, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    p2: T2,
+    stub3: UnderscoreStatic,
+    p4: T4,
+    p5: T5,
+    p6: T6,
+    p7: T7
+  ): js.Function2[/* p1 */ T1, /* p3 */ T3, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    p2: T2,
+    stub3: UnderscoreStatic,
+    p4: T4,
+    p5: T5,
+    stub6: UnderscoreStatic,
+    p7: T7
+  ): js.Function3[/* p1 */ T1, /* p3 */ T3, /* p6 */ T6, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    p2: T2,
+    stub3: UnderscoreStatic,
+    p4: T4,
+    stub5: UnderscoreStatic,
+    p6: T6
+  ): js.Function4[/* p1 */ T1, /* p3 */ T3, /* p5 */ T5, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    p2: T2,
+    stub3: UnderscoreStatic,
+    p4: T4,
+    stub5: UnderscoreStatic,
+    p6: T6,
+    p7: T7
+  ): js.Function3[/* p1 */ T1, /* p3 */ T3, /* p5 */ T5, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    p2: T2,
+    stub3: UnderscoreStatic,
+    p4: T4,
+    stub5: UnderscoreStatic,
+    stub6: UnderscoreStatic,
+    p7: T7
+  ): js.Function4[/* p1 */ T1, /* p3 */ T3, /* p5 */ T5, /* p6 */ T6, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    p2: T2,
+    stub3: UnderscoreStatic,
+    stub4: UnderscoreStatic,
+    p5: T5
+  ): js.Function5[/* p1 */ T1, /* p3 */ T3, /* p4 */ T4, /* p6 */ T6, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    p2: T2,
+    stub3: UnderscoreStatic,
+    stub4: UnderscoreStatic,
+    p5: T5,
+    p6: T6
+  ): js.Function4[/* p1 */ T1, /* p3 */ T3, /* p4 */ T4, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    p2: T2,
+    stub3: UnderscoreStatic,
+    stub4: UnderscoreStatic,
+    p5: T5,
+    p6: T6,
+    p7: T7
+  ): js.Function3[/* p1 */ T1, /* p3 */ T3, /* p4 */ T4, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    p2: T2,
+    stub3: UnderscoreStatic,
+    stub4: UnderscoreStatic,
+    p5: T5,
+    stub6: UnderscoreStatic,
+    p7: T7
+  ): js.Function4[/* p1 */ T1, /* p3 */ T3, /* p4 */ T4, /* p6 */ T6, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    p2: T2,
+    stub3: UnderscoreStatic,
+    stub4: UnderscoreStatic,
+    stub5: UnderscoreStatic,
+    p6: T6
+  ): js.Function5[/* p1 */ T1, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    p2: T2,
+    stub3: UnderscoreStatic,
+    stub4: UnderscoreStatic,
+    stub5: UnderscoreStatic,
+    p6: T6,
+    p7: T7
+  ): js.Function4[/* p1 */ T1, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    p2: T2,
+    stub3: UnderscoreStatic,
+    stub4: UnderscoreStatic,
+    stub5: UnderscoreStatic,
+    stub6: UnderscoreStatic,
+    p7: T7
+  ): js.Function5[/* p1 */ T1, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    stub2: UnderscoreStatic,
+    p3: T3
+  ): js.Function6[/* p1 */ T1, /* p2 */ T2, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    stub2: UnderscoreStatic,
+    p3: T3,
+    p4: T4
+  ): js.Function5[/* p1 */ T1, /* p2 */ T2, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    stub2: UnderscoreStatic,
+    p3: T3,
+    p4: T4,
+    p5: T5
+  ): js.Function4[/* p1 */ T1, /* p2 */ T2, /* p6 */ T6, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    stub2: UnderscoreStatic,
+    p3: T3,
+    p4: T4,
+    p5: T5,
+    p6: T6
+  ): js.Function3[/* p1 */ T1, /* p2 */ T2, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    stub2: UnderscoreStatic,
+    p3: T3,
+    p4: T4,
+    p5: T5,
+    p6: T6,
+    p7: T7
+  ): js.Function2[/* p1 */ T1, /* p2 */ T2, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    stub2: UnderscoreStatic,
+    p3: T3,
+    p4: T4,
+    p5: T5,
+    stub6: UnderscoreStatic,
+    p7: T7
+  ): js.Function3[/* p1 */ T1, /* p2 */ T2, /* p6 */ T6, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    stub2: UnderscoreStatic,
+    p3: T3,
+    p4: T4,
+    stub5: UnderscoreStatic,
+    p6: T6
+  ): js.Function4[/* p1 */ T1, /* p2 */ T2, /* p5 */ T5, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    stub2: UnderscoreStatic,
+    p3: T3,
+    p4: T4,
+    stub5: UnderscoreStatic,
+    p6: T6,
+    p7: T7
+  ): js.Function3[/* p1 */ T1, /* p2 */ T2, /* p5 */ T5, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    stub2: UnderscoreStatic,
+    p3: T3,
+    p4: T4,
+    stub5: UnderscoreStatic,
+    stub6: UnderscoreStatic,
+    p7: T7
+  ): js.Function4[/* p1 */ T1, /* p2 */ T2, /* p5 */ T5, /* p6 */ T6, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    stub2: UnderscoreStatic,
+    p3: T3,
+    stub4: UnderscoreStatic,
+    p5: T5
+  ): js.Function5[/* p1 */ T1, /* p2 */ T2, /* p4 */ T4, /* p6 */ T6, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    stub2: UnderscoreStatic,
+    p3: T3,
+    stub4: UnderscoreStatic,
+    p5: T5,
+    p6: T6
+  ): js.Function4[/* p1 */ T1, /* p2 */ T2, /* p4 */ T4, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    stub2: UnderscoreStatic,
+    p3: T3,
+    stub4: UnderscoreStatic,
+    p5: T5,
+    p6: T6,
+    p7: T7
+  ): js.Function3[/* p1 */ T1, /* p2 */ T2, /* p4 */ T4, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    stub2: UnderscoreStatic,
+    p3: T3,
+    stub4: UnderscoreStatic,
+    p5: T5,
+    stub6: UnderscoreStatic,
+    p7: T7
+  ): js.Function4[/* p1 */ T1, /* p2 */ T2, /* p4 */ T4, /* p6 */ T6, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    stub2: UnderscoreStatic,
+    p3: T3,
+    stub4: UnderscoreStatic,
+    stub5: UnderscoreStatic,
+    p6: T6
+  ): js.Function5[/* p1 */ T1, /* p2 */ T2, /* p4 */ T4, /* p5 */ T5, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    stub2: UnderscoreStatic,
+    p3: T3,
+    stub4: UnderscoreStatic,
+    stub5: UnderscoreStatic,
+    p6: T6,
+    p7: T7
+  ): js.Function4[/* p1 */ T1, /* p2 */ T2, /* p4 */ T4, /* p5 */ T5, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    stub2: UnderscoreStatic,
+    p3: T3,
+    stub4: UnderscoreStatic,
+    stub5: UnderscoreStatic,
+    stub6: UnderscoreStatic,
+    p7: T7
+  ): js.Function5[/* p1 */ T1, /* p2 */ T2, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    stub2: UnderscoreStatic,
+    stub3: UnderscoreStatic,
+    p4: T4
+  ): js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    stub2: UnderscoreStatic,
+    stub3: UnderscoreStatic,
+    p4: T4,
+    p5: T5
+  ): js.Function5[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p6 */ T6, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    stub2: UnderscoreStatic,
+    stub3: UnderscoreStatic,
+    p4: T4,
+    p5: T5,
+    p6: T6
+  ): js.Function4[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    stub2: UnderscoreStatic,
+    stub3: UnderscoreStatic,
+    p4: T4,
+    p5: T5,
+    p6: T6,
+    p7: T7
+  ): js.Function3[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    stub2: UnderscoreStatic,
+    stub3: UnderscoreStatic,
+    p4: T4,
+    p5: T5,
+    stub6: UnderscoreStatic,
+    p7: T7
+  ): js.Function4[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p6 */ T6, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    stub2: UnderscoreStatic,
+    stub3: UnderscoreStatic,
+    p4: T4,
+    stub5: UnderscoreStatic,
+    p6: T6
+  ): js.Function5[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p5 */ T5, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    stub2: UnderscoreStatic,
+    stub3: UnderscoreStatic,
+    p4: T4,
+    stub5: UnderscoreStatic,
+    p6: T6,
+    p7: T7
+  ): js.Function4[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p5 */ T5, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    stub2: UnderscoreStatic,
+    stub3: UnderscoreStatic,
+    p4: T4,
+    stub5: UnderscoreStatic,
+    stub6: UnderscoreStatic,
+    p7: T7
+  ): js.Function5[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p5 */ T5, /* p6 */ T6, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    stub2: UnderscoreStatic,
+    stub3: UnderscoreStatic,
+    stub4: UnderscoreStatic,
+    p5: T5
+  ): js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p6 */ T6, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
+    stub1: UnderscoreStatic,
+    stub2: UnderscoreStatic,
+    stub3: UnderscoreStatic,
+    stub4: UnderscoreStatic,
+    p5: T5,
+    p6: T6
+  ): js.Function5[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p7 */ T7, T8] = js.native
+  def partial[T1, T2, T3, T4, T5, T6, T7, T8](
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
@@ -2946,9 +2936,9 @@ trait UnderscoreStatic extends js.Object {
     p5: T5,
     p6: T6,
     p7: T7
-  ): Fn_P1P2P3P4T1T2T3[T4, T1, T2, T3, T8] = js.native
+  ): js.Function4[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
@@ -2956,18 +2946,18 @@ trait UnderscoreStatic extends js.Object {
     p5: T5,
     stub6: UnderscoreStatic,
     p7: T7
-  ): Fn_P1P2P3P4P6T1[T4, T6, T1, T2, T3, T8] = js.native
+  ): js.Function5[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p6 */ T6, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
     stub4: UnderscoreStatic,
     stub5: UnderscoreStatic,
     p6: T6
-  ): Fn_P1P2P3P4P5P7[T4, T1, T2, T5, T3, T7, T8] = js.native
+  ): js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p7 */ T7, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
@@ -2975,9 +2965,9 @@ trait UnderscoreStatic extends js.Object {
     stub5: UnderscoreStatic,
     p6: T6,
     p7: T7
-  ): Fn_P1P2P3P4P5T1T2[T4, T1, T2, T5, T3, T8] = js.native
+  ): js.Function5[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, T8] = js.native
   def partial[T1, T2, T3, T4, T5, T6, T7, T8](
-    fn: Fn_P1P2P3P4P5P6P7[T4, T6, T1, T2, T5, T3, T7, T8],
+    fn: js.Function7[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, /* p7 */ T7, T8],
     stub1: UnderscoreStatic,
     stub2: UnderscoreStatic,
     stub3: UnderscoreStatic,
@@ -2985,7 +2975,7 @@ trait UnderscoreStatic extends js.Object {
     stub5: UnderscoreStatic,
     stub6: UnderscoreStatic,
     p7: T7
-  ): Fn_P1P2P3P4P5P6T1[T4, T6, T1, T2, T5, T3, T8] = js.native
+  ): js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T8] = js.native
   /**
     * Split array into two arrays:
     * one whose elements all satisfy predicate and one whose elements all do not satisfy predicate.
@@ -3008,7 +2998,7 @@ trait UnderscoreStatic extends js.Object {
   def pick[T, K /* <: String */](
     obj: T,
     predicate: ObjectIterator[
-      /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any, 
       Boolean
     ]
   ): Pick[T, K] = js.native
@@ -3020,7 +3010,9 @@ trait UnderscoreStatic extends js.Object {
     * @param propertyName The property to look for on each element within `list`.
     * @return The list of elements within `list` that have the property `propertyName`.
     **/
-  def pluck[T /* <: js.Object */, K /* <: String */](list: List[T], propertyName: K): js.Array[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any] = js.native
+  def pluck[T /* <: js.Object */, K /* <: String */](list: List[T], propertyName: K): js.Array[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+  ] = js.native
   /**
     * Returns a function that will itself return the key property of any passed-in object.
     * @param key Property of the object.

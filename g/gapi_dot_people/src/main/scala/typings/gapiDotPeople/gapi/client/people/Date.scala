@@ -13,7 +13,7 @@ trait Date extends js.Object {
 object Date {
   @scala.inline
   def apply(day: Double, month: Double, year: Double): Date = {
-    val __obj = js.Dynamic.literal(day = day, month = month, year = year)
+    val __obj = js.Dynamic.literal(day = day.asInstanceOf[js.Any], month = month.asInstanceOf[js.Any], year = year.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Date]
   }

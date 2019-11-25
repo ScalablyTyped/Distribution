@@ -14,7 +14,7 @@ trait Anon_Counties extends js.Object {
 object Anon_Counties {
   @scala.inline
   def apply(counties: Anon_Geometries, nation: GeometryCollection[js.Object], states: Anon_Geometries): Anon_Counties = {
-    val __obj = js.Dynamic.literal(counties = counties, nation = nation, states = states)
+    val __obj = js.Dynamic.literal(counties = counties.asInstanceOf[js.Any], nation = nation.asInstanceOf[js.Any], states = states.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Counties]
   }

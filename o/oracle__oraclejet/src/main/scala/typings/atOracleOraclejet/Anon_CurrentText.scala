@@ -36,18 +36,18 @@ object Anon_CurrentText {
     weekHeader: String = null
   ): Anon_CurrentText = {
     val __obj = js.Dynamic.literal()
-    if (currentText != null) __obj.updateDynamic("currentText")(currentText)
-    if (dateRestriction != null) __obj.updateDynamic("dateRestriction")(dateRestriction)
-    if (dateTimeRange != null) __obj.updateDynamic("dateTimeRange")(dateTimeRange)
-    if (nextText != null) __obj.updateDynamic("nextText")(nextText)
-    if (prevText != null) __obj.updateDynamic("prevText")(prevText)
-    if (regexp != null) __obj.updateDynamic("regexp")(regexp)
-    if (required != null) __obj.updateDynamic("required")(required)
-    if (tooltipCalendar != null) __obj.updateDynamic("tooltipCalendar")(tooltipCalendar)
-    if (tooltipCalendarDisabled != null) __obj.updateDynamic("tooltipCalendarDisabled")(tooltipCalendarDisabled)
-    if (tooltipCalendarTime != null) __obj.updateDynamic("tooltipCalendarTime")(tooltipCalendarTime)
-    if (tooltipCalendarTimeDisabled != null) __obj.updateDynamic("tooltipCalendarTimeDisabled")(tooltipCalendarTimeDisabled)
-    if (weekHeader != null) __obj.updateDynamic("weekHeader")(weekHeader)
+    if (currentText != null) __obj.updateDynamic("currentText")(currentText.asInstanceOf[js.Any])
+    if (dateRestriction != null) __obj.updateDynamic("dateRestriction")(dateRestriction.asInstanceOf[js.Any])
+    if (dateTimeRange != null) __obj.updateDynamic("dateTimeRange")(dateTimeRange.asInstanceOf[js.Any])
+    if (nextText != null) __obj.updateDynamic("nextText")(nextText.asInstanceOf[js.Any])
+    if (prevText != null) __obj.updateDynamic("prevText")(prevText.asInstanceOf[js.Any])
+    if (regexp != null) __obj.updateDynamic("regexp")(regexp.asInstanceOf[js.Any])
+    if (required != null) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
+    if (tooltipCalendar != null) __obj.updateDynamic("tooltipCalendar")(tooltipCalendar.asInstanceOf[js.Any])
+    if (tooltipCalendarDisabled != null) __obj.updateDynamic("tooltipCalendarDisabled")(tooltipCalendarDisabled.asInstanceOf[js.Any])
+    if (tooltipCalendarTime != null) __obj.updateDynamic("tooltipCalendarTime")(tooltipCalendarTime.asInstanceOf[js.Any])
+    if (tooltipCalendarTimeDisabled != null) __obj.updateDynamic("tooltipCalendarTimeDisabled")(tooltipCalendarTimeDisabled.asInstanceOf[js.Any])
+    if (weekHeader != null) __obj.updateDynamic("weekHeader")(weekHeader.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CurrentText]
   }
 }

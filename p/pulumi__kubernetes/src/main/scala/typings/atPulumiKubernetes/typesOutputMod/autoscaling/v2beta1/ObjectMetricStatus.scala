@@ -45,7 +45,7 @@ object ObjectMetricStatus {
     selector: LabelSelector,
     target: CrossVersionObjectReference
   ): ObjectMetricStatus = {
-    val __obj = js.Dynamic.literal(averageValue = averageValue, currentValue = currentValue, metricName = metricName, selector = selector, target = target)
+    val __obj = js.Dynamic.literal(averageValue = averageValue.asInstanceOf[js.Any], currentValue = currentValue.asInstanceOf[js.Any], metricName = metricName.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ObjectMetricStatus]
   }

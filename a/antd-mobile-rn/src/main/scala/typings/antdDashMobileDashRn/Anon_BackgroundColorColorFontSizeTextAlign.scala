@@ -14,7 +14,7 @@ trait Anon_BackgroundColorColorFontSizeTextAlign extends js.Object {
 object Anon_BackgroundColorColorFontSizeTextAlign {
   @scala.inline
   def apply(backgroundColor: String, color: String, fontSize: Double, textAlign: String): Anon_BackgroundColorColorFontSizeTextAlign = {
-    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, color = color, fontSize = fontSize, textAlign = textAlign)
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], textAlign = textAlign.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BackgroundColorColorFontSizeTextAlign]
   }

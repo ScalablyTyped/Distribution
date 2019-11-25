@@ -35,17 +35,17 @@ object DropdownBaseProps {
     pullRight: js.UndefOr[Boolean] = js.undefined,
     role: String = null
   ): DropdownBaseProps = {
-    val __obj = js.Dynamic.literal(id = id)
-    if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass.asInstanceOf[js.Any])
     if (componentClass != null) __obj.updateDynamic("componentClass")(componentClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (!js.isUndefined(dropup)) __obj.updateDynamic("dropup")(dropup)
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
-    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(dropup)) __obj.updateDynamic("dropup")(dropup.asInstanceOf[js.Any])
+    if (onClose != null) __obj.updateDynamic("onClose")(onClose.asInstanceOf[js.Any])
+    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect.asInstanceOf[js.Any])
     if (onToggle != null) __obj.updateDynamic("onToggle")(js.Any.fromFunction1(onToggle))
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
-    if (!js.isUndefined(pullRight)) __obj.updateDynamic("pullRight")(pullRight)
-    if (role != null) __obj.updateDynamic("role")(role)
+    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
+    if (!js.isUndefined(pullRight)) __obj.updateDynamic("pullRight")(pullRight.asInstanceOf[js.Any])
+    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropdownBaseProps]
   }
 }

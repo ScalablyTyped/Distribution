@@ -14,7 +14,7 @@ trait MasteryPageDto extends js.Object {
 object MasteryPageDto {
   @scala.inline
   def apply(current: Boolean, id: Double, masteries: js.Array[MasteryDto], name: String): MasteryPageDto = {
-    val __obj = js.Dynamic.literal(current = current, id = id, masteries = masteries, name = name)
+    val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], masteries = masteries.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MasteryPageDto]
   }

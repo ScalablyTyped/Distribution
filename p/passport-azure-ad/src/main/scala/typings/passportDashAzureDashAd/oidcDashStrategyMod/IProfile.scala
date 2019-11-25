@@ -29,14 +29,14 @@ object IProfile {
     upn: String = null
   ): IProfile = {
     val __obj = js.Dynamic.literal()
-    if (_json != null) __obj.updateDynamic("_json")(_json)
-    if (_raw != null) __obj.updateDynamic("_raw")(_raw)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (emails != null) __obj.updateDynamic("emails")(emails)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (oid != null) __obj.updateDynamic("oid")(oid)
-    if (sub != null) __obj.updateDynamic("sub")(sub)
-    if (upn != null) __obj.updateDynamic("upn")(upn)
+    if (_json != null) __obj.updateDynamic("_json")(_json.asInstanceOf[js.Any])
+    if (_raw != null) __obj.updateDynamic("_raw")(_raw.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (emails != null) __obj.updateDynamic("emails")(emails.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (oid != null) __obj.updateDynamic("oid")(oid.asInstanceOf[js.Any])
+    if (sub != null) __obj.updateDynamic("sub")(sub.asInstanceOf[js.Any])
+    if (upn != null) __obj.updateDynamic("upn")(upn.asInstanceOf[js.Any])
     __obj.asInstanceOf[IProfile]
   }
 }

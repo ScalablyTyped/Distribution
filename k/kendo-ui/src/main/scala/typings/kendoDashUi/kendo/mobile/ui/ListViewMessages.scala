@@ -20,10 +20,10 @@ object ListViewMessages {
     releaseTemplate: String = null
   ): ListViewMessages = {
     val __obj = js.Dynamic.literal()
-    if (loadMoreText != null) __obj.updateDynamic("loadMoreText")(loadMoreText)
-    if (pullTemplate != null) __obj.updateDynamic("pullTemplate")(pullTemplate)
-    if (refreshTemplate != null) __obj.updateDynamic("refreshTemplate")(refreshTemplate)
-    if (releaseTemplate != null) __obj.updateDynamic("releaseTemplate")(releaseTemplate)
+    if (loadMoreText != null) __obj.updateDynamic("loadMoreText")(loadMoreText.asInstanceOf[js.Any])
+    if (pullTemplate != null) __obj.updateDynamic("pullTemplate")(pullTemplate.asInstanceOf[js.Any])
+    if (refreshTemplate != null) __obj.updateDynamic("refreshTemplate")(refreshTemplate.asInstanceOf[js.Any])
+    if (releaseTemplate != null) __obj.updateDynamic("releaseTemplate")(releaseTemplate.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListViewMessages]
   }
 }

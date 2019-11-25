@@ -15,7 +15,7 @@ trait NullLayoutOptions extends LayoutOptions {
 object NullLayoutOptions {
   @scala.inline
   def apply(name: `null`): NullLayoutOptions = {
-    val __obj = js.Dynamic.literal(name = name)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NullLayoutOptions]
   }

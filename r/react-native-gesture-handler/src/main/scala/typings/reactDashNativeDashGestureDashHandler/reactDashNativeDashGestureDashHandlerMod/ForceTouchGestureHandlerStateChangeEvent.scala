@@ -12,7 +12,7 @@ trait ForceTouchGestureHandlerStateChangeEvent extends GestureHandlerStateChange
 object ForceTouchGestureHandlerStateChangeEvent {
   @scala.inline
   def apply(nativeEvent: GestureHandlerStateChangeNativeEvent with ForceTouchGestureHandlerEventExtra): ForceTouchGestureHandlerStateChangeEvent = {
-    val __obj = js.Dynamic.literal(nativeEvent = nativeEvent)
+    val __obj = js.Dynamic.literal(nativeEvent = nativeEvent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ForceTouchGestureHandlerStateChangeEvent]
   }

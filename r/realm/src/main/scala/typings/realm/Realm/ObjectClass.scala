@@ -15,7 +15,7 @@ trait ObjectClass extends js.Object {
 object ObjectClass {
   @scala.inline
   def apply(schema: ObjectSchema): ObjectClass = {
-    val __obj = js.Dynamic.literal(schema = schema)
+    val __obj = js.Dynamic.literal(schema = schema.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ObjectClass]
   }

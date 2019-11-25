@@ -27,9 +27,9 @@ object CommitSummary {
     author: UserSummary = null,
     committer: UserSummary = null
   ): CommitSummary = {
-    val __obj = js.Dynamic.literal(gitCommit = gitCommit, htmlUri = htmlUri, loadAsync = js.Any.fromFunction0(loadAsync), loadGitAsync = js.Any.fromFunction0(loadGitAsync), parents = parents, repository = repository, sha = sha)
-    if (author != null) __obj.updateDynamic("author")(author)
-    if (committer != null) __obj.updateDynamic("committer")(committer)
+    val __obj = js.Dynamic.literal(gitCommit = gitCommit.asInstanceOf[js.Any], htmlUri = htmlUri.asInstanceOf[js.Any], loadAsync = js.Any.fromFunction0(loadAsync), loadGitAsync = js.Any.fromFunction0(loadGitAsync), parents = parents.asInstanceOf[js.Any], repository = repository.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any])
+    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
+    if (committer != null) __obj.updateDynamic("committer")(committer.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommitSummary]
   }
 }

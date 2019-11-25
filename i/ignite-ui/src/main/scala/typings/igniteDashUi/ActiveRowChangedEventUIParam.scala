@@ -19,8 +19,8 @@ object ActiveRowChangedEventUIParam {
   @scala.inline
   def apply(owner: js.Any = null, row: js.Any = null): ActiveRowChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (row != null) __obj.updateDynamic("row")(row)
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveRowChangedEventUIParam]
   }
 }

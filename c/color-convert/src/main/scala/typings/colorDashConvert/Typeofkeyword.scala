@@ -17,7 +17,7 @@ trait Typeofkeyword extends js.Object {
 object Typeofkeyword {
   @scala.inline
   def apply(channels: `1`, labels: js.Array[keyword], rgb: KEYWORD => RGB): Typeofkeyword = {
-    val __obj = js.Dynamic.literal(channels = channels, labels = labels, rgb = js.Any.fromFunction1(rgb))
+    val __obj = js.Dynamic.literal(channels = channels.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], rgb = js.Any.fromFunction1(rgb))
   
     __obj.asInstanceOf[Typeofkeyword]
   }

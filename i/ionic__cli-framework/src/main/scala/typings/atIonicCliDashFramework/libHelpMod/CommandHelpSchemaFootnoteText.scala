@@ -14,8 +14,8 @@ trait CommandHelpSchemaFootnoteText extends CommandHelpSchemaFootnote {
 object CommandHelpSchemaFootnoteText {
   @scala.inline
   def apply(id: String | Double, text: String, `type`: text): CommandHelpSchemaFootnoteText = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], text = text)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommandHelpSchemaFootnoteText]
   }
 }

@@ -41,7 +41,7 @@ object Anon_Clang {
     v8_use_snapshot: Boolean,
     visibility: java.lang.String
   ): Anon_Clang = {
-    val __obj = js.Dynamic.literal(clang = clang, host_arch = host_arch, node_install_npm = node_install_npm, node_install_waf = node_install_waf, node_prefix = node_prefix, node_shared_openssl = node_shared_openssl, node_shared_v8 = node_shared_v8, node_shared_zlib = node_shared_zlib, node_use_dtrace = node_use_dtrace, node_use_etw = node_use_etw, node_use_openssl = node_use_openssl, target_arch = target_arch, v8_no_strict_aliasing = v8_no_strict_aliasing, v8_use_snapshot = v8_use_snapshot, visibility = visibility)
+    val __obj = js.Dynamic.literal(clang = clang.asInstanceOf[js.Any], host_arch = host_arch.asInstanceOf[js.Any], node_install_npm = node_install_npm.asInstanceOf[js.Any], node_install_waf = node_install_waf.asInstanceOf[js.Any], node_prefix = node_prefix.asInstanceOf[js.Any], node_shared_openssl = node_shared_openssl.asInstanceOf[js.Any], node_shared_v8 = node_shared_v8.asInstanceOf[js.Any], node_shared_zlib = node_shared_zlib.asInstanceOf[js.Any], node_use_dtrace = node_use_dtrace.asInstanceOf[js.Any], node_use_etw = node_use_etw.asInstanceOf[js.Any], node_use_openssl = node_use_openssl.asInstanceOf[js.Any], target_arch = target_arch.asInstanceOf[js.Any], v8_no_strict_aliasing = v8_no_strict_aliasing.asInstanceOf[js.Any], v8_use_snapshot = v8_use_snapshot.asInstanceOf[js.Any], visibility = visibility.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Clang]
   }

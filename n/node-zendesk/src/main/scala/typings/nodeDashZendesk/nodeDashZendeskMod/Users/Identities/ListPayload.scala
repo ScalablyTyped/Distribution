@@ -17,7 +17,7 @@ object ListPayload {
     next_page: Int | Double = null,
     previous_page: Int | Double = null
   ): ListPayload = {
-    val __obj = js.Dynamic.literal(count = count, identities = identities)
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], identities = identities.asInstanceOf[js.Any])
     if (next_page != null) __obj.updateDynamic("next_page")(next_page.asInstanceOf[js.Any])
     if (previous_page != null) __obj.updateDynamic("previous_page")(previous_page.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPayload]

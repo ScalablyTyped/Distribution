@@ -20,8 +20,8 @@ trait GetBucketMetricsConfigurationOutput
 object GetBucketMetricsConfigurationOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, MetricsConfiguration: _UnmarshalledMetricsConfiguration = null): GetBucketMetricsConfigurationOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (MetricsConfiguration != null) __obj.updateDynamic("MetricsConfiguration")(MetricsConfiguration)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (MetricsConfiguration != null) __obj.updateDynamic("MetricsConfiguration")(MetricsConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketMetricsConfigurationOutput]
   }
 }

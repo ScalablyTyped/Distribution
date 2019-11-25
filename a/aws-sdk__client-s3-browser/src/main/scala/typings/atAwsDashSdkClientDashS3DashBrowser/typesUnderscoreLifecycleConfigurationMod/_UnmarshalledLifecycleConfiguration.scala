@@ -16,7 +16,7 @@ trait _UnmarshalledLifecycleConfiguration extends _LifecycleConfiguration {
 object _UnmarshalledLifecycleConfiguration {
   @scala.inline
   def apply(Rules: js.Array[_UnmarshalledRule]): _UnmarshalledLifecycleConfiguration = {
-    val __obj = js.Dynamic.literal(Rules = Rules)
+    val __obj = js.Dynamic.literal(Rules = Rules.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_UnmarshalledLifecycleConfiguration]
   }

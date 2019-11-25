@@ -27,7 +27,7 @@ object Anon_A3 {
   ): Anon_A3 = {
     val __obj = js.Dynamic.literal()
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin)
+    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_A3]
   }

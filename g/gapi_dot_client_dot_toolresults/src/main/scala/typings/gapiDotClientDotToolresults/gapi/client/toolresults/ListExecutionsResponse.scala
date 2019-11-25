@@ -23,8 +23,8 @@ object ListExecutionsResponse {
   @scala.inline
   def apply(executions: js.Array[Execution] = null, nextPageToken: String = null): ListExecutionsResponse = {
     val __obj = js.Dynamic.literal()
-    if (executions != null) __obj.updateDynamic("executions")(executions)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (executions != null) __obj.updateDynamic("executions")(executions.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListExecutionsResponse]
   }
 }

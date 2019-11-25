@@ -45,11 +45,11 @@ object CFB$Entry {
     mt: Date = null,
     storage: String = null
   ): CFB$Entry = {
-    val __obj = js.Dynamic.literal(clsid = clsid, color = color, content = content.asInstanceOf[js.Any], name = name, size = size, start = start, state = state)
-    __obj.updateDynamic("type")(`type`)
-    if (ct != null) __obj.updateDynamic("ct")(ct)
-    if (mt != null) __obj.updateDynamic("mt")(mt)
-    if (storage != null) __obj.updateDynamic("storage")(storage)
+    val __obj = js.Dynamic.literal(clsid = clsid.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (ct != null) __obj.updateDynamic("ct")(ct.asInstanceOf[js.Any])
+    if (mt != null) __obj.updateDynamic("mt")(mt.asInstanceOf[js.Any])
+    if (storage != null) __obj.updateDynamic("storage")(storage.asInstanceOf[js.Any])
     __obj.asInstanceOf[CFB$Entry]
   }
 }

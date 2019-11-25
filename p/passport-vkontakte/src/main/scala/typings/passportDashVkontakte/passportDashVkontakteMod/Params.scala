@@ -14,8 +14,8 @@ trait Params extends js.Object {
 object Params {
   @scala.inline
   def apply(accessToken: String, expires_in: Double, user_id: Double, email: String = null): Params = {
-    val __obj = js.Dynamic.literal(accessToken = accessToken, expires_in = expires_in, user_id = user_id)
-    if (email != null) __obj.updateDynamic("email")(email)
+    val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any], expires_in = expires_in.asInstanceOf[js.Any], user_id = user_id.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
     __obj.asInstanceOf[Params]
   }
 }

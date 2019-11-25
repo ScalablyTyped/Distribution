@@ -13,7 +13,7 @@ trait Anon_AllBuild extends js.Object {
 object Anon_AllBuild {
   @scala.inline
   def apply(all: Double, build: Double, release: Double): Anon_AllBuild = {
-    val __obj = js.Dynamic.literal(all = all, build = build, release = release)
+    val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], release = release.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AllBuild]
   }

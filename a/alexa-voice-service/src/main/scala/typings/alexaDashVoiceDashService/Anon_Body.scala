@@ -29,7 +29,7 @@ object Anon_Body {
     statusMessage: String,
     url: String
   ): Anon_Body = {
-    val __obj = js.Dynamic.literal(body = body, boundary = boundary, headers = headers, httpVersion = httpVersion, method = method, multipart = multipart, statusCode = statusCode, statusMessage = statusMessage, url = url)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], boundary = boundary.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], httpVersion = httpVersion.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], multipart = multipart.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], statusMessage = statusMessage.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Body]
   }

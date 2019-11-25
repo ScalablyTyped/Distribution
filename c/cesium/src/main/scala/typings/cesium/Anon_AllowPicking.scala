@@ -35,17 +35,17 @@ object Anon_AllowPicking {
     show: js.UndefOr[Boolean] = js.undefined
   ): Anon_AllowPicking = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowPicking)) __obj.updateDynamic("allowPicking")(allowPicking)
-    if (!js.isUndefined(asynchronous)) __obj.updateDynamic("asynchronous")(asynchronous)
-    if (basePath != null) __obj.updateDynamic("basePath")(basePath)
-    if (!js.isUndefined(debugShowBoundingVolume)) __obj.updateDynamic("debugShowBoundingVolume")(debugShowBoundingVolume)
-    if (!js.isUndefined(debugWireframe)) __obj.updateDynamic("debugWireframe")(debugWireframe)
-    if (gltf != null) __obj.updateDynamic("gltf")(gltf)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(allowPicking)) __obj.updateDynamic("allowPicking")(allowPicking.asInstanceOf[js.Any])
+    if (!js.isUndefined(asynchronous)) __obj.updateDynamic("asynchronous")(asynchronous.asInstanceOf[js.Any])
+    if (basePath != null) __obj.updateDynamic("basePath")(basePath.asInstanceOf[js.Any])
+    if (!js.isUndefined(debugShowBoundingVolume)) __obj.updateDynamic("debugShowBoundingVolume")(debugShowBoundingVolume.asInstanceOf[js.Any])
+    if (!js.isUndefined(debugWireframe)) __obj.updateDynamic("debugWireframe")(debugWireframe.asInstanceOf[js.Any])
+    if (gltf != null) __obj.updateDynamic("gltf")(gltf.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (minimumPixelSize != null) __obj.updateDynamic("minimumPixelSize")(minimumPixelSize.asInstanceOf[js.Any])
-    if (modelMatrix != null) __obj.updateDynamic("modelMatrix")(modelMatrix)
+    if (modelMatrix != null) __obj.updateDynamic("modelMatrix")(modelMatrix.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AllowPicking]
   }
 }

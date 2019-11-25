@@ -36,12 +36,12 @@ object Options {
     lambda: String = null,
     prime: String = null
   ): Options = {
-    val __obj = js.Dynamic.literal(a = a, b = b, g = g, gRed = gRed, hash = hash, n = n, p = p)
-    __obj.updateDynamic("type")(`type`)
-    if (basis != null) __obj.updateDynamic("basis")(basis)
-    if (beta != null) __obj.updateDynamic("beta")(beta)
-    if (lambda != null) __obj.updateDynamic("lambda")(lambda)
-    if (prime != null) __obj.updateDynamic("prime")(prime)
+    val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], gRed = gRed.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (basis != null) __obj.updateDynamic("basis")(basis.asInstanceOf[js.Any])
+    if (beta != null) __obj.updateDynamic("beta")(beta.asInstanceOf[js.Any])
+    if (lambda != null) __obj.updateDynamic("lambda")(lambda.asInstanceOf[js.Any])
+    if (prime != null) __obj.updateDynamic("prime")(prime.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -13,10 +13,10 @@ package object parsimmonMod {
   type Rule = StringDictionary[js.Function1[/* r */ Language, Parser[js.Any]]]
   type StreamType = String
   type SuccessFunctionType[U] = js.Function2[/* index */ Double, /* result */ U, Reply[U]]
-  type TypedLanguage[TLanguageSpec] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type TypedLanguage[TLanguageSpec] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof TLanguageSpec ]: parsimmon.parsimmon.Parser<TLanguageSpec[P]>}
     */ typings.parsimmon.parsimmonStrings.TypedLanguage with TLanguageSpec
-  type TypedRule[TLanguageSpec] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type TypedRule[TLanguageSpec] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof TLanguageSpec ]: (r : parsimmon.parsimmon.TypedLanguage<TLanguageSpec>): parsimmon.parsimmon.Parser<TLanguageSpec[P]>}
     */ typings.parsimmon.parsimmonStrings.TypedRule with TLanguageSpec
 }

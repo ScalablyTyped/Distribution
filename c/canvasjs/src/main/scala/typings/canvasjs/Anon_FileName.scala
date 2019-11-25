@@ -16,8 +16,8 @@ object Anon_FileName {
   @scala.inline
   def apply(format: jpg | png, fileName: String = null, toDataURL: js.UndefOr[Boolean] = js.undefined): Anon_FileName = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
-    if (fileName != null) __obj.updateDynamic("fileName")(fileName)
-    if (!js.isUndefined(toDataURL)) __obj.updateDynamic("toDataURL")(toDataURL)
+    if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
+    if (!js.isUndefined(toDataURL)) __obj.updateDynamic("toDataURL")(toDataURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FileName]
   }
 }

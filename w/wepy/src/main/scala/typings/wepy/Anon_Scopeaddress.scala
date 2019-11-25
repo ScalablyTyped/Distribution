@@ -28,14 +28,14 @@ object Anon_Scopeaddress {
     `scope.writePhotosAlbum`: Boolean
   ): Anon_Scopeaddress = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("scope.address")(`scope.address`)
-    __obj.updateDynamic("scope.camera")(`scope.camera`)
-    __obj.updateDynamic("scope.invoiceTitle")(`scope.invoiceTitle`)
-    __obj.updateDynamic("scope.record")(`scope.record`)
-    __obj.updateDynamic("scope.userInfo")(`scope.userInfo`)
-    __obj.updateDynamic("scope.userLocation")(`scope.userLocation`)
-    __obj.updateDynamic("scope.werun")(`scope.werun`)
-    __obj.updateDynamic("scope.writePhotosAlbum")(`scope.writePhotosAlbum`)
+    __obj.updateDynamic("scope.address")(`scope.address`.asInstanceOf[js.Any])
+    __obj.updateDynamic("scope.camera")(`scope.camera`.asInstanceOf[js.Any])
+    __obj.updateDynamic("scope.invoiceTitle")(`scope.invoiceTitle`.asInstanceOf[js.Any])
+    __obj.updateDynamic("scope.record")(`scope.record`.asInstanceOf[js.Any])
+    __obj.updateDynamic("scope.userInfo")(`scope.userInfo`.asInstanceOf[js.Any])
+    __obj.updateDynamic("scope.userLocation")(`scope.userLocation`.asInstanceOf[js.Any])
+    __obj.updateDynamic("scope.werun")(`scope.werun`.asInstanceOf[js.Any])
+    __obj.updateDynamic("scope.writePhotosAlbum")(`scope.writePhotosAlbum`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Scopeaddress]
   }
 }

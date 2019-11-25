@@ -21,8 +21,8 @@ trait RTCRtpEncodingParameters extends js.Object {
 object RTCRtpEncodingParameters {
   @scala.inline
   def apply(rid: String, dtx: RTCDtxStatus = null, scaleResolutionDownBy: Int | Double = null): RTCRtpEncodingParameters = {
-    val __obj = js.Dynamic.literal(rid = rid)
-    if (dtx != null) __obj.updateDynamic("dtx")(dtx)
+    val __obj = js.Dynamic.literal(rid = rid.asInstanceOf[js.Any])
+    if (dtx != null) __obj.updateDynamic("dtx")(dtx.asInstanceOf[js.Any])
     if (scaleResolutionDownBy != null) __obj.updateDynamic("scaleResolutionDownBy")(scaleResolutionDownBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCRtpEncodingParameters]
   }

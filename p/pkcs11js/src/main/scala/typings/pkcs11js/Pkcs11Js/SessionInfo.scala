@@ -15,7 +15,7 @@ trait SessionInfo extends js.Object {
 object SessionInfo {
   @scala.inline
   def apply(deviceError: Double, flags: Double, slotID: Buffer, state: Double): SessionInfo = {
-    val __obj = js.Dynamic.literal(deviceError = deviceError, flags = flags, slotID = slotID, state = state)
+    val __obj = js.Dynamic.literal(deviceError = deviceError.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], slotID = slotID.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SessionInfo]
   }

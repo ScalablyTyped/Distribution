@@ -21,9 +21,9 @@ object SuperError {
     StringDictionary: /* k */ StringDictionary[js.Any] = null,
     stack: String = null
   ): SuperError = {
-    val __obj = js.Dynamic.literal(causedBy = js.Any.fromFunction1(causedBy), message = message, name = name)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    val __obj = js.Dynamic.literal(causedBy = js.Any.fromFunction1(causedBy), message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuperError]
   }
 }

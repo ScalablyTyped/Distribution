@@ -21,7 +21,7 @@ trait TradeAggregationRecord
 object TradeAggregationRecord {
   @scala.inline
   def apply(
-    _links: /* import warning: ImportType.apply c Unsupported type mapping: 
+    _links: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in T | 'self' ]: stellar-sdk.stellar-sdk/lib/horizon_api.Horizon.ResponseLink}
     */ typings.stellarDashSdk.stellarDashSdkStrings.BaseResponse with js.Any,
     avg: String,
@@ -34,7 +34,7 @@ object TradeAggregationRecord {
     timestamp: Double | String,
     trade_count: Double | String
   ): TradeAggregationRecord = {
-    val __obj = js.Dynamic.literal(_links = _links, avg = avg, base_volume = base_volume, close = close, counter_volume = counter_volume, high = high, low = low, open = open, timestamp = timestamp.asInstanceOf[js.Any], trade_count = trade_count.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], avg = avg.asInstanceOf[js.Any], base_volume = base_volume.asInstanceOf[js.Any], close = close.asInstanceOf[js.Any], counter_volume = counter_volume.asInstanceOf[js.Any], high = high.asInstanceOf[js.Any], low = low.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], trade_count = trade_count.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TradeAggregationRecord]
   }

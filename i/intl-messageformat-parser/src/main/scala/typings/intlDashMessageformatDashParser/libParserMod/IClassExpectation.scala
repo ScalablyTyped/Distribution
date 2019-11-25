@@ -15,8 +15,8 @@ trait IClassExpectation extends Expectation {
 object IClassExpectation {
   @scala.inline
   def apply(ignoreCase: Boolean, inverted: Boolean, parts: IClassParts, `type`: `class`): IClassExpectation = {
-    val __obj = js.Dynamic.literal(ignoreCase = ignoreCase, inverted = inverted, parts = parts)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(ignoreCase = ignoreCase.asInstanceOf[js.Any], inverted = inverted.asInstanceOf[js.Any], parts = parts.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IClassExpectation]
   }
 }

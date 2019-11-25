@@ -36,8 +36,8 @@ object MouseWrapper {
     stop: (/* event */ Event, /* ui */ StopEventUIParam) => Unit = null
   ): MouseWrapper = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (cancel != null) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
     if (capture != null) __obj.updateDynamic("capture")(js.Any.fromFunction2(capture))
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])

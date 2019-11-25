@@ -1,9 +1,6 @@
 package typings.dojo.dojox.mvc
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValueOldValue
-import typings.dojo.Fn_NewValueOldValueProperty
-import typings.dojo.Fn_NewValueOldValuePropertyNumber
 import typings.dojo.dojoStrings.cursor
 import typings.dojo.dojoStrings.cursorId
 import typings.dojo.dojoStrings.cursorIndex
@@ -59,12 +56,44 @@ class ListController () extends ModelRefController {
   @JSName("set")
   def set_idProperty(property: idProperty, value: String): Unit = js.native
   @JSName("watch")
-  def watch_cursor(property: cursor, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_cursor(
+    property: cursor,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_cursorId(property: cursorId, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_cursorId(
+    property: cursorId,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_cursorIndex(property: cursorIndex, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_cursorIndex(
+    property: cursorIndex,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_idProperty(property: idProperty, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_idProperty(
+    property: idProperty,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

@@ -12,7 +12,7 @@ trait Anon_ElementStyler extends js.Object {
 object Anon_ElementStyler {
   @scala.inline
   def apply(elementStyler: Styler): Anon_ElementStyler = {
-    val __obj = js.Dynamic.literal(elementStyler = elementStyler)
+    val __obj = js.Dynamic.literal(elementStyler = elementStyler.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ElementStyler]
   }

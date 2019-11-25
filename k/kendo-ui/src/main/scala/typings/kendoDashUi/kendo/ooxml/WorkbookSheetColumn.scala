@@ -18,7 +18,7 @@ object WorkbookSheetColumn {
     width: Int | Double = null
   ): WorkbookSheetColumn = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoWidth)) __obj.updateDynamic("autoWidth")(autoWidth)
+    if (!js.isUndefined(autoWidth)) __obj.updateDynamic("autoWidth")(autoWidth.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookSheetColumn]

@@ -25,10 +25,10 @@ object PaymentDataRequest {
     shippingAddressParameters: ShippingAddressParameters = null,
     shippingAddressRequired: js.UndefOr[Boolean] = js.undefined
   ): PaymentDataRequest = {
-    val __obj = js.Dynamic.literal(allowedPaymentMethods = allowedPaymentMethods, apiVersion = apiVersion, apiVersionMinor = apiVersionMinor, merchantInfo = merchantInfo, transactionInfo = transactionInfo)
-    if (!js.isUndefined(emailRequired)) __obj.updateDynamic("emailRequired")(emailRequired)
-    if (shippingAddressParameters != null) __obj.updateDynamic("shippingAddressParameters")(shippingAddressParameters)
-    if (!js.isUndefined(shippingAddressRequired)) __obj.updateDynamic("shippingAddressRequired")(shippingAddressRequired)
+    val __obj = js.Dynamic.literal(allowedPaymentMethods = allowedPaymentMethods.asInstanceOf[js.Any], apiVersion = apiVersion.asInstanceOf[js.Any], apiVersionMinor = apiVersionMinor.asInstanceOf[js.Any], merchantInfo = merchantInfo.asInstanceOf[js.Any], transactionInfo = transactionInfo.asInstanceOf[js.Any])
+    if (!js.isUndefined(emailRequired)) __obj.updateDynamic("emailRequired")(emailRequired.asInstanceOf[js.Any])
+    if (shippingAddressParameters != null) __obj.updateDynamic("shippingAddressParameters")(shippingAddressParameters.asInstanceOf[js.Any])
+    if (!js.isUndefined(shippingAddressRequired)) __obj.updateDynamic("shippingAddressRequired")(shippingAddressRequired.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentDataRequest]
   }
 }

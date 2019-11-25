@@ -15,7 +15,7 @@ trait SjclModes extends js.Object {
 object SjclModes {
   @scala.inline
   def apply(cbc: SjclCBCMode, ccm: SjclCCMMode, gcm: SjclGCMMode, ocb2: SjclOCB2Mode): SjclModes = {
-    val __obj = js.Dynamic.literal(cbc = cbc, ccm = ccm, gcm = gcm, ocb2 = ocb2)
+    val __obj = js.Dynamic.literal(cbc = cbc.asInstanceOf[js.Any], ccm = ccm.asInstanceOf[js.Any], gcm = gcm.asInstanceOf[js.Any], ocb2 = ocb2.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SjclModes]
   }

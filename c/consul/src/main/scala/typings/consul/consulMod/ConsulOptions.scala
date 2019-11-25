@@ -24,12 +24,12 @@ object ConsulOptions {
     secure: js.UndefOr[Boolean] = js.undefined
   ): ConsulOptions = {
     val __obj = js.Dynamic.literal()
-    if (ca != null) __obj.updateDynamic("ca")(ca)
-    if (defaults != null) __obj.updateDynamic("defaults")(defaults)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (port != null) __obj.updateDynamic("port")(port)
+    if (ca != null) __obj.updateDynamic("ca")(ca.asInstanceOf[js.Any])
+    if (defaults != null) __obj.updateDynamic("defaults")(defaults.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (promisify != null) __obj.updateDynamic("promisify")(promisify.asInstanceOf[js.Any])
-    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure)
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConsulOptions]
   }
 }

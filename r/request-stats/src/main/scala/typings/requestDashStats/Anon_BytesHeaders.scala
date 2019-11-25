@@ -28,7 +28,7 @@ trait Anon_BytesHeaders extends js.Object {
 object Anon_BytesHeaders {
   @scala.inline
   def apply(bytes: Double, headers: OutgoingHttpHeaders, raw: ServerResponse, status: Double): Anon_BytesHeaders = {
-    val __obj = js.Dynamic.literal(bytes = bytes, headers = headers, raw = raw, status = status)
+    val __obj = js.Dynamic.literal(bytes = bytes.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BytesHeaders]
   }

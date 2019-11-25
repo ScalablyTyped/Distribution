@@ -31,9 +31,9 @@ object ListCreativeStatusBreakdownByDetailResponse {
     nextPageToken: String = null
   ): ListCreativeStatusBreakdownByDetailResponse = {
     val __obj = js.Dynamic.literal()
-    if (detailType != null) __obj.updateDynamic("detailType")(detailType)
-    if (filteredBidDetailRows != null) __obj.updateDynamic("filteredBidDetailRows")(filteredBidDetailRows)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (detailType != null) __obj.updateDynamic("detailType")(detailType.asInstanceOf[js.Any])
+    if (filteredBidDetailRows != null) __obj.updateDynamic("filteredBidDetailRows")(filteredBidDetailRows.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListCreativeStatusBreakdownByDetailResponse]
   }
 }

@@ -119,17 +119,17 @@ object PlusStreamStreamOptions {
     title: String = null
   ): PlusStreamStreamOptions = {
     val __obj = js.Dynamic.literal()
-    if (appid != null) __obj.updateDynamic("appid")(appid)
-    if (appmode != null) __obj.updateDynamic("appmode")(appmode)
-    if (direct_page != null) __obj.updateDynamic("direct_page")(direct_page)
-    if (extras != null) __obj.updateDynamic("extras")(extras)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (launcher != null) __obj.updateDynamic("launcher")(launcher)
-    if (shortcut != null) __obj.updateDynamic("shortcut")(shortcut)
-    if (shortcutQuit != null) __obj.updateDynamic("shortcutQuit")(shortcutQuit)
-    if (splash != null) __obj.updateDynamic("splash")(splash)
-    if (styles != null) __obj.updateDynamic("styles")(styles)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (appid != null) __obj.updateDynamic("appid")(appid.asInstanceOf[js.Any])
+    if (appmode != null) __obj.updateDynamic("appmode")(appmode.asInstanceOf[js.Any])
+    if (direct_page != null) __obj.updateDynamic("direct_page")(direct_page.asInstanceOf[js.Any])
+    if (extras != null) __obj.updateDynamic("extras")(extras.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (launcher != null) __obj.updateDynamic("launcher")(launcher.asInstanceOf[js.Any])
+    if (shortcut != null) __obj.updateDynamic("shortcut")(shortcut.asInstanceOf[js.Any])
+    if (shortcutQuit != null) __obj.updateDynamic("shortcutQuit")(shortcutQuit.asInstanceOf[js.Any])
+    if (splash != null) __obj.updateDynamic("splash")(splash.asInstanceOf[js.Any])
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusStreamStreamOptions]
   }
 }

@@ -18,9 +18,9 @@ object IGetIntentRequest {
   @scala.inline
   def apply(intentView: IntentView = null, languageCode: String = null, name: String = null): IGetIntentRequest = {
     val __obj = js.Dynamic.literal()
-    if (intentView != null) __obj.updateDynamic("intentView")(intentView)
-    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (intentView != null) __obj.updateDynamic("intentView")(intentView.asInstanceOf[js.Any])
+    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGetIntentRequest]
   }
 }

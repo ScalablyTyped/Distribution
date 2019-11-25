@@ -41,7 +41,7 @@ object Anon_Copyright {
     vendor_url: String,
     version_string: String
   ): Anon_Copyright = {
-    val __obj = js.Dynamic.literal(copyright = copyright, description = description, designer = designer, designer_url = designer_url, font_family_name = font_family_name, font_sub_family_name = font_sub_family_name, full_font_name = full_font_name, license_description = license_description, license_url = license_url, manufacturer_name = manufacturer_name, postscript_name = postscript_name, trademark = trademark, unique_font_identifier = unique_font_identifier, vendor_url = vendor_url, version_string = version_string)
+    val __obj = js.Dynamic.literal(copyright = copyright.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], designer = designer.asInstanceOf[js.Any], designer_url = designer_url.asInstanceOf[js.Any], font_family_name = font_family_name.asInstanceOf[js.Any], font_sub_family_name = font_sub_family_name.asInstanceOf[js.Any], full_font_name = full_font_name.asInstanceOf[js.Any], license_description = license_description.asInstanceOf[js.Any], license_url = license_url.asInstanceOf[js.Any], manufacturer_name = manufacturer_name.asInstanceOf[js.Any], postscript_name = postscript_name.asInstanceOf[js.Any], trademark = trademark.asInstanceOf[js.Any], unique_font_identifier = unique_font_identifier.asInstanceOf[js.Any], vendor_url = vendor_url.asInstanceOf[js.Any], version_string = version_string.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Copyright]
   }

@@ -22,11 +22,11 @@ object PieChartSpec {
     threeDimensional: js.UndefOr[Boolean] = js.undefined
   ): PieChartSpec = {
     val __obj = js.Dynamic.literal()
-    if (domain != null) __obj.updateDynamic("domain")(domain)
-    if (legendPosition != null) __obj.updateDynamic("legendPosition")(legendPosition)
+    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
+    if (legendPosition != null) __obj.updateDynamic("legendPosition")(legendPosition.asInstanceOf[js.Any])
     if (pieHole != null) __obj.updateDynamic("pieHole")(pieHole.asInstanceOf[js.Any])
-    if (series != null) __obj.updateDynamic("series")(series)
-    if (!js.isUndefined(threeDimensional)) __obj.updateDynamic("threeDimensional")(threeDimensional)
+    if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
+    if (!js.isUndefined(threeDimensional)) __obj.updateDynamic("threeDimensional")(threeDimensional.asInstanceOf[js.Any])
     __obj.asInstanceOf[PieChartSpec]
   }
 }

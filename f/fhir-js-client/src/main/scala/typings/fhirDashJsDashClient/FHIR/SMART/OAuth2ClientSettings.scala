@@ -39,11 +39,11 @@ object OAuth2ClientSettings {
     secret: String = null,
     state: String = null
   ): OAuth2ClientSettings = {
-    val __obj = js.Dynamic.literal(client_id = client_id)
-    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
-    if (secret != null) __obj.updateDynamic("secret")(secret)
-    if (state != null) __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(client_id = client_id.asInstanceOf[js.Any])
+    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (secret != null) __obj.updateDynamic("secret")(secret.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[OAuth2ClientSettings]
   }
 }

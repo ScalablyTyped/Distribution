@@ -34,12 +34,12 @@ object TimeBaseProps {
     time: Anon_0 = null
   ): TimeBaseProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(format12Hours)) __obj.updateDynamic("format12Hours")(format12Hours)
-    if (!js.isUndefined(showHour)) __obj.updateDynamic("showHour")(showHour)
-    if (!js.isUndefined(showMinute)) __obj.updateDynamic("showMinute")(showMinute)
-    if (!js.isUndefined(showSecond)) __obj.updateDynamic("showSecond")(showSecond)
-    if (!js.isUndefined(spinners)) __obj.updateDynamic("spinners")(spinners)
-    if (time != null) __obj.updateDynamic("time")(time)
+    if (!js.isUndefined(format12Hours)) __obj.updateDynamic("format12Hours")(format12Hours.asInstanceOf[js.Any])
+    if (!js.isUndefined(showHour)) __obj.updateDynamic("showHour")(showHour.asInstanceOf[js.Any])
+    if (!js.isUndefined(showMinute)) __obj.updateDynamic("showMinute")(showMinute.asInstanceOf[js.Any])
+    if (!js.isUndefined(showSecond)) __obj.updateDynamic("showSecond")(showSecond.asInstanceOf[js.Any])
+    if (!js.isUndefined(spinners)) __obj.updateDynamic("spinners")(spinners.asInstanceOf[js.Any])
+    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeBaseProps]
   }
 }

@@ -28,10 +28,10 @@ object EjPredicate {
     ignoreCase: js.UndefOr[Boolean] = js.undefined
   ): EjPredicate = {
     val __obj = js.Dynamic.literal()
-    if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName)
-    if (filterOperator != null) __obj.updateDynamic("filterOperator")(filterOperator)
-    if (filterValue != null) __obj.updateDynamic("filterValue")(filterValue)
-    if (!js.isUndefined(ignoreCase)) __obj.updateDynamic("ignoreCase")(ignoreCase)
+    if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName.asInstanceOf[js.Any])
+    if (filterOperator != null) __obj.updateDynamic("filterOperator")(filterOperator.asInstanceOf[js.Any])
+    if (filterValue != null) __obj.updateDynamic("filterValue")(filterValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreCase)) __obj.updateDynamic("ignoreCase")(ignoreCase.asInstanceOf[js.Any])
     __obj.asInstanceOf[EjPredicate]
   }
 }

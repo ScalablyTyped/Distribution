@@ -13,7 +13,7 @@ trait Anon_CCW extends js.Object {
 object Anon_CCW {
   @scala.inline
   def apply(CCW: STEPPER_DIRECTION, CW: STEPPER_DIRECTION): Anon_CCW = {
-    val __obj = js.Dynamic.literal(CCW = CCW, CW = CW)
+    val __obj = js.Dynamic.literal(CCW = CCW.asInstanceOf[js.Any], CW = CW.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CCW]
   }

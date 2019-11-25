@@ -80,12 +80,12 @@ object Options {
     if (decoder != null) __obj.updateDynamic("decoder")(js.Any.fromFunction1(decoder))
     if (edit != null) __obj.updateDynamic("edit")(js.Any.fromFunction1(edit))
     if (encoder != null) __obj.updateDynamic("encoder")(js.Any.fromFunction1(encoder))
-    if (mark != null) __obj.updateDynamic("mark")(mark)
-    if (negative != null) __obj.updateDynamic("negative")(negative)
-    if (negativeBefore != null) __obj.updateDynamic("negativeBefore")(negativeBefore)
-    if (postfix != null) __obj.updateDynamic("postfix")(postfix)
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
-    if (thousand != null) __obj.updateDynamic("thousand")(thousand)
+    if (mark != null) __obj.updateDynamic("mark")(mark.asInstanceOf[js.Any])
+    if (negative != null) __obj.updateDynamic("negative")(negative.asInstanceOf[js.Any])
+    if (negativeBefore != null) __obj.updateDynamic("negativeBefore")(negativeBefore.asInstanceOf[js.Any])
+    if (postfix != null) __obj.updateDynamic("postfix")(postfix.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    if (thousand != null) __obj.updateDynamic("thousand")(thousand.asInstanceOf[js.Any])
     if (undo != null) __obj.updateDynamic("undo")(js.Any.fromFunction1(undo))
     __obj.asInstanceOf[Options]
   }

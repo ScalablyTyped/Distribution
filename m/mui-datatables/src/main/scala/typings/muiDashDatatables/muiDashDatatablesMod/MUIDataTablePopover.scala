@@ -33,13 +33,13 @@ object MUIDataTablePopover {
     val __obj = js.Dynamic.literal()
     if (action != null) __obj.updateDynamic("action")(js.Any.fromFunction1(action))
     if (anchorEl != null) __obj.updateDynamic("anchorEl")(anchorEl.asInstanceOf[js.Any])
-    if (anchorOrigin != null) __obj.updateDynamic("anchorOrigin")(anchorOrigin)
+    if (anchorOrigin != null) __obj.updateDynamic("anchorOrigin")(anchorOrigin.asInstanceOf[js.Any])
     if (elevation != null) __obj.updateDynamic("elevation")(elevation.asInstanceOf[js.Any])
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
     if (onExited != null) __obj.updateDynamic("onExited")(js.Any.fromFunction1(onExited))
-    if (!js.isUndefined(option)) __obj.updateDynamic("option")(option)
-    if (ref != null) __obj.updateDynamic("ref")(ref)
-    if (transformOrigin != null) __obj.updateDynamic("transformOrigin")(transformOrigin)
+    if (!js.isUndefined(option)) __obj.updateDynamic("option")(option.asInstanceOf[js.Any])
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (transformOrigin != null) __obj.updateDynamic("transformOrigin")(transformOrigin.asInstanceOf[js.Any])
     __obj.asInstanceOf[MUIDataTablePopover]
   }
 }

@@ -24,12 +24,12 @@ object CertificateProperties {
     x5u: String = null
   ): CertificateProperties = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (kid != null) __obj.updateDynamic("kid")(kid)
-    if (x5c != null) __obj.updateDynamic("x5c")(x5c)
-    if (x5t != null) __obj.updateDynamic("x5t")(x5t)
-    if (`x5t#S256` != null) __obj.updateDynamic("x5t#S256")(`x5t#S256`)
-    if (x5u != null) __obj.updateDynamic("x5u")(x5u)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (kid != null) __obj.updateDynamic("kid")(kid.asInstanceOf[js.Any])
+    if (x5c != null) __obj.updateDynamic("x5c")(x5c.asInstanceOf[js.Any])
+    if (x5t != null) __obj.updateDynamic("x5t")(x5t.asInstanceOf[js.Any])
+    if (`x5t#S256` != null) __obj.updateDynamic("x5t#S256")(`x5t#S256`.asInstanceOf[js.Any])
+    if (x5u != null) __obj.updateDynamic("x5u")(x5u.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertificateProperties]
   }
 }

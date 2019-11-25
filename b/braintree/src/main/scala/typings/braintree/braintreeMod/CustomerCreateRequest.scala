@@ -38,19 +38,19 @@ object CustomerCreateRequest {
     website: String = null
   ): CustomerCreateRequest = {
     val __obj = js.Dynamic.literal()
-    if (company != null) __obj.updateDynamic("company")(company)
-    if (creditCard != null) __obj.updateDynamic("creditCard")(creditCard)
-    if (customFields != null) __obj.updateDynamic("customFields")(customFields)
-    if (deviceData != null) __obj.updateDynamic("deviceData")(deviceData)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (fax != null) __obj.updateDynamic("fax")(fax)
-    if (firstName != null) __obj.updateDynamic("firstName")(firstName)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (lastName != null) __obj.updateDynamic("lastName")(lastName)
-    if (paymentMethodNonce != null) __obj.updateDynamic("paymentMethodNonce")(paymentMethodNonce)
-    if (phone != null) __obj.updateDynamic("phone")(phone)
-    if (riskData != null) __obj.updateDynamic("riskData")(riskData)
-    if (website != null) __obj.updateDynamic("website")(website)
+    if (company != null) __obj.updateDynamic("company")(company.asInstanceOf[js.Any])
+    if (creditCard != null) __obj.updateDynamic("creditCard")(creditCard.asInstanceOf[js.Any])
+    if (customFields != null) __obj.updateDynamic("customFields")(customFields.asInstanceOf[js.Any])
+    if (deviceData != null) __obj.updateDynamic("deviceData")(deviceData.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (fax != null) __obj.updateDynamic("fax")(fax.asInstanceOf[js.Any])
+    if (firstName != null) __obj.updateDynamic("firstName")(firstName.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (lastName != null) __obj.updateDynamic("lastName")(lastName.asInstanceOf[js.Any])
+    if (paymentMethodNonce != null) __obj.updateDynamic("paymentMethodNonce")(paymentMethodNonce.asInstanceOf[js.Any])
+    if (phone != null) __obj.updateDynamic("phone")(phone.asInstanceOf[js.Any])
+    if (riskData != null) __obj.updateDynamic("riskData")(riskData.asInstanceOf[js.Any])
+    if (website != null) __obj.updateDynamic("website")(website.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomerCreateRequest]
   }
 }

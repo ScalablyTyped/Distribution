@@ -12,7 +12,7 @@ trait InternalParameterHintOptions extends js.Object {
 object InternalParameterHintOptions {
   @scala.inline
   def apply(cycle: Boolean, enabled: Boolean): InternalParameterHintOptions = {
-    val __obj = js.Dynamic.literal(cycle = cycle, enabled = enabled)
+    val __obj = js.Dynamic.literal(cycle = cycle.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InternalParameterHintOptions]
   }

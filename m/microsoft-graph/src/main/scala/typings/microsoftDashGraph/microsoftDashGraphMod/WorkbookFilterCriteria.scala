@@ -28,14 +28,14 @@ object WorkbookFilterCriteria {
     values: js.Any = null
   ): WorkbookFilterCriteria = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (criterion1 != null) __obj.updateDynamic("criterion1")(criterion1)
-    if (criterion2 != null) __obj.updateDynamic("criterion2")(criterion2)
-    if (dynamicCriteria != null) __obj.updateDynamic("dynamicCriteria")(dynamicCriteria)
-    if (filterOn != null) __obj.updateDynamic("filterOn")(filterOn)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (operator != null) __obj.updateDynamic("operator")(operator)
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (criterion1 != null) __obj.updateDynamic("criterion1")(criterion1.asInstanceOf[js.Any])
+    if (criterion2 != null) __obj.updateDynamic("criterion2")(criterion2.asInstanceOf[js.Any])
+    if (dynamicCriteria != null) __obj.updateDynamic("dynamicCriteria")(dynamicCriteria.asInstanceOf[js.Any])
+    if (filterOn != null) __obj.updateDynamic("filterOn")(filterOn.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (operator != null) __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookFilterCriteria]
   }
 }

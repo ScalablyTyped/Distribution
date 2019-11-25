@@ -20,9 +20,9 @@ object ImapSettings {
     maxFolderSize: Int | Double = null
   ): ImapSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoExpunge)) __obj.updateDynamic("autoExpunge")(autoExpunge)
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (expungeBehavior != null) __obj.updateDynamic("expungeBehavior")(expungeBehavior)
+    if (!js.isUndefined(autoExpunge)) __obj.updateDynamic("autoExpunge")(autoExpunge.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (expungeBehavior != null) __obj.updateDynamic("expungeBehavior")(expungeBehavior.asInstanceOf[js.Any])
     if (maxFolderSize != null) __obj.updateDynamic("maxFolderSize")(maxFolderSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImapSettings]
   }

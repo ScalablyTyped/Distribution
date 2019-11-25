@@ -30,15 +30,15 @@ object SiJedecBits {
     b: String = null
   ): SiJedecBits = {
     val __obj = js.Dynamic.literal()
-    if (Eb != null) __obj.updateDynamic("Eb")(Eb)
-    if (Gb != null) __obj.updateDynamic("Gb")(Gb)
-    if (Kb != null) __obj.updateDynamic("Kb")(Kb)
-    if (Mb != null) __obj.updateDynamic("Mb")(Mb)
-    if (Pb != null) __obj.updateDynamic("Pb")(Pb)
-    if (Tb != null) __obj.updateDynamic("Tb")(Tb)
-    if (Yb != null) __obj.updateDynamic("Yb")(Yb)
-    if (Zb != null) __obj.updateDynamic("Zb")(Zb)
-    if (b != null) __obj.updateDynamic("b")(b)
+    if (Eb != null) __obj.updateDynamic("Eb")(Eb.asInstanceOf[js.Any])
+    if (Gb != null) __obj.updateDynamic("Gb")(Gb.asInstanceOf[js.Any])
+    if (Kb != null) __obj.updateDynamic("Kb")(Kb.asInstanceOf[js.Any])
+    if (Mb != null) __obj.updateDynamic("Mb")(Mb.asInstanceOf[js.Any])
+    if (Pb != null) __obj.updateDynamic("Pb")(Pb.asInstanceOf[js.Any])
+    if (Tb != null) __obj.updateDynamic("Tb")(Tb.asInstanceOf[js.Any])
+    if (Yb != null) __obj.updateDynamic("Yb")(Yb.asInstanceOf[js.Any])
+    if (Zb != null) __obj.updateDynamic("Zb")(Zb.asInstanceOf[js.Any])
+    if (b != null) __obj.updateDynamic("b")(b.asInstanceOf[js.Any])
     __obj.asInstanceOf[SiJedecBits]
   }
 }

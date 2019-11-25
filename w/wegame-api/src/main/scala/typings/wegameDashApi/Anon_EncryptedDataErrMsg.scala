@@ -22,7 +22,7 @@ trait Anon_EncryptedDataErrMsg extends js.Object {
 object Anon_EncryptedDataErrMsg {
   @scala.inline
   def apply(encryptedData: String, errMsg: String, iv: String): Anon_EncryptedDataErrMsg = {
-    val __obj = js.Dynamic.literal(encryptedData = encryptedData, errMsg = errMsg, iv = iv)
+    val __obj = js.Dynamic.literal(encryptedData = encryptedData.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any], iv = iv.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EncryptedDataErrMsg]
   }

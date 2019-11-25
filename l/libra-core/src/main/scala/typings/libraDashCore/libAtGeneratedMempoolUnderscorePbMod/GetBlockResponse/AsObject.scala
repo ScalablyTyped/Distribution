@@ -16,7 +16,7 @@ object AsObject {
     block: typings.libraDashCore.libAtGeneratedTransactionUnderscorePbMod.SignedTransactionsBlock.AsObject = null
   ): AsObject = {
     val __obj = js.Dynamic.literal()
-    if (block != null) __obj.updateDynamic("block")(block)
+    if (block != null) __obj.updateDynamic("block")(block.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsObject]
   }
 }

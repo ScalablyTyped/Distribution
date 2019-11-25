@@ -30,7 +30,7 @@ object Typeofhsv {
     labels: hsv,
     rgb: HSV => RGB
   ): Typeofhsv = {
-    val __obj = js.Dynamic.literal(ansi16 = js.Any.fromFunction1(ansi16), channels = channels, hcg = js.Any.fromFunction1(hcg), hsl = js.Any.fromFunction1(hsl), labels = labels, rgb = js.Any.fromFunction1(rgb))
+    val __obj = js.Dynamic.literal(ansi16 = js.Any.fromFunction1(ansi16), channels = channels.asInstanceOf[js.Any], hcg = js.Any.fromFunction1(hcg), hsl = js.Any.fromFunction1(hsl), labels = labels.asInstanceOf[js.Any], rgb = js.Any.fromFunction1(rgb))
   
     __obj.asInstanceOf[Typeofhsv]
   }

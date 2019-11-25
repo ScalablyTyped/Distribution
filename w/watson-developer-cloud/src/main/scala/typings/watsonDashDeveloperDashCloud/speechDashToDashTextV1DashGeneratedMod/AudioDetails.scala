@@ -25,10 +25,10 @@ object AudioDetails {
     `type`: String = null
   ): AudioDetails = {
     val __obj = js.Dynamic.literal()
-    if (codec != null) __obj.updateDynamic("codec")(codec)
-    if (compression != null) __obj.updateDynamic("compression")(compression)
+    if (codec != null) __obj.updateDynamic("codec")(codec.asInstanceOf[js.Any])
+    if (compression != null) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
     if (frequency != null) __obj.updateDynamic("frequency")(frequency.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioDetails]
   }
 }

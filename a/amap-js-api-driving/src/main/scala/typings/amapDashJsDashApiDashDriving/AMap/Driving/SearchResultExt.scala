@@ -46,7 +46,7 @@ object SearchResultExt {
     waypoints: js.Array[PoiExt with Anon_IsWaypoint],
     taxi_cost: Int | Double = null
   ): SearchResultExt = {
-    val __obj = js.Dynamic.literal(destination = destination, destinationName = destinationName, end = end, info = info, origin = origin, originName = originName, routes = routes, start = start, waypoints = waypoints)
+    val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], destinationName = destinationName.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], originName = originName.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], waypoints = waypoints.asInstanceOf[js.Any])
     if (taxi_cost != null) __obj.updateDynamic("taxi_cost")(taxi_cost.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchResultExt]
   }

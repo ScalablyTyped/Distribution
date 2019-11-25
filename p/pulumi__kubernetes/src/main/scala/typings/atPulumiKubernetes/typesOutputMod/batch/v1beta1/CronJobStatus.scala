@@ -22,7 +22,7 @@ trait CronJobStatus extends js.Object {
 object CronJobStatus {
   @scala.inline
   def apply(active: js.Array[ObjectReference], lastScheduleTime: String): CronJobStatus = {
-    val __obj = js.Dynamic.literal(active = active, lastScheduleTime = lastScheduleTime)
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], lastScheduleTime = lastScheduleTime.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CronJobStatus]
   }

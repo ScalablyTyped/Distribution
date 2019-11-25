@@ -14,7 +14,7 @@ trait RaygunPayload extends js.Object {
 object RaygunPayload {
   @scala.inline
   def apply(details: Anon_Client, occurredOn: Date): RaygunPayload = {
-    val __obj = js.Dynamic.literal(details = details, occurredOn = occurredOn)
+    val __obj = js.Dynamic.literal(details = details.asInstanceOf[js.Any], occurredOn = occurredOn.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RaygunPayload]
   }

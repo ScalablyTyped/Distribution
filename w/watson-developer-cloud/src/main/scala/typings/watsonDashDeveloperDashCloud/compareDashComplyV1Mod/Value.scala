@@ -18,9 +18,9 @@ object Value {
   @scala.inline
   def apply(cell_id: String = null, location: Location = null, text: String = null): Value = {
     val __obj = js.Dynamic.literal()
-    if (cell_id != null) __obj.updateDynamic("cell_id")(cell_id)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (cell_id != null) __obj.updateDynamic("cell_id")(cell_id.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Value]
   }
 }

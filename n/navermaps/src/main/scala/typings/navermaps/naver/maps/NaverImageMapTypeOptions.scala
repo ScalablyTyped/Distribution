@@ -22,11 +22,11 @@ object NaverImageMapTypeOptions {
     tileSize: Size = null
   ): NaverImageMapTypeOptions = {
     val __obj = js.Dynamic.literal()
-    if (hd != null) __obj.updateDynamic("hd")(hd)
+    if (hd != null) __obj.updateDynamic("hd")(hd.asInstanceOf[js.Any])
     if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
     if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
-    if (projection != null) __obj.updateDynamic("projection")(projection)
-    if (tileSize != null) __obj.updateDynamic("tileSize")(tileSize)
+    if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
+    if (tileSize != null) __obj.updateDynamic("tileSize")(tileSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[NaverImageMapTypeOptions]
   }
 }

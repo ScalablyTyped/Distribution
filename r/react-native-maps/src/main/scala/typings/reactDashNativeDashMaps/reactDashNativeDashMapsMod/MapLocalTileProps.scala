@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 object MapLocalTileProps {
   @scala.inline
   def apply(pathTemplate: String, tileSize: Int | Double = null, zIndex: Int | Double = null): MapLocalTileProps = {
-    val __obj = js.Dynamic.literal(pathTemplate = pathTemplate)
+    val __obj = js.Dynamic.literal(pathTemplate = pathTemplate.asInstanceOf[js.Any])
     if (tileSize != null) __obj.updateDynamic("tileSize")(tileSize.asInstanceOf[js.Any])
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapLocalTileProps]

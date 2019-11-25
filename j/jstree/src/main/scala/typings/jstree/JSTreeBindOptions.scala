@@ -15,10 +15,10 @@ object JSTreeBindOptions {
   @scala.inline
   def apply(args: js.Any = null, inst: js.Any = null, rlbk: js.Any = null, rslt: js.Any = null): JSTreeBindOptions = {
     val __obj = js.Dynamic.literal()
-    if (args != null) __obj.updateDynamic("args")(args)
-    if (inst != null) __obj.updateDynamic("inst")(inst)
-    if (rlbk != null) __obj.updateDynamic("rlbk")(rlbk)
-    if (rslt != null) __obj.updateDynamic("rslt")(rslt)
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (inst != null) __obj.updateDynamic("inst")(inst.asInstanceOf[js.Any])
+    if (rlbk != null) __obj.updateDynamic("rlbk")(rlbk.asInstanceOf[js.Any])
+    if (rslt != null) __obj.updateDynamic("rslt")(rslt.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSTreeBindOptions]
   }
 }

@@ -32,10 +32,10 @@ object IDocumentCardStyleProps {
     className: String = null,
     compact: js.UndefOr[Boolean] = js.undefined
   ): IDocumentCardStyleProps = {
-    val __obj = js.Dynamic.literal(theme = theme)
-    if (!js.isUndefined(actionable)) __obj.updateDynamic("actionable")(actionable)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact)
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
+    if (!js.isUndefined(actionable)) __obj.updateDynamic("actionable")(actionable.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDocumentCardStyleProps]
   }
 }

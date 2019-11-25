@@ -15,7 +15,7 @@ object GoogleActionsV2RegisterUpdateValue {
   @scala.inline
   def apply(status: GoogleActionsV2RegisterUpdateValueStatus = null): GoogleActionsV2RegisterUpdateValue = {
     val __obj = js.Dynamic.literal()
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2RegisterUpdateValue]
   }
 }

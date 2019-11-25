@@ -24,11 +24,11 @@ object Anon_GET {
     queryString: js.Object = null,
     regex: js.UndefOr[Boolean] = js.undefined
   ): Anon_GET = {
-    val __obj = js.Dynamic.literal(method = method, path = path)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (queryString != null) __obj.updateDynamic("queryString")(queryString)
-    if (!js.isUndefined(regex)) __obj.updateDynamic("regex")(regex)
+    val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (queryString != null) __obj.updateDynamic("queryString")(queryString.asInstanceOf[js.Any])
+    if (!js.isUndefined(regex)) __obj.updateDynamic("regex")(regex.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_GET]
   }
 }

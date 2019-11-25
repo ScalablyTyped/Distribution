@@ -15,7 +15,7 @@ trait SingleValueMap extends js.Object {
 object SingleValueMap {
   @scala.inline
   def apply(bool: Boolean, complex64: Double, float32: Double, int32: Double, string: String): SingleValueMap = {
-    val __obj = js.Dynamic.literal(bool = bool, complex64 = complex64, float32 = float32, int32 = int32, string = string)
+    val __obj = js.Dynamic.literal(bool = bool.asInstanceOf[js.Any], complex64 = complex64.asInstanceOf[js.Any], float32 = float32.asInstanceOf[js.Any], int32 = int32.asInstanceOf[js.Any], string = string.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SingleValueMap]
   }

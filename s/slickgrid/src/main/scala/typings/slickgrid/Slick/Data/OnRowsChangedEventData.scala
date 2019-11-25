@@ -11,7 +11,7 @@ trait OnRowsChangedEventData extends js.Object {
 object OnRowsChangedEventData {
   @scala.inline
   def apply(rows: js.Array[Double]): OnRowsChangedEventData = {
-    val __obj = js.Dynamic.literal(rows = rows)
+    val __obj = js.Dynamic.literal(rows = rows.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OnRowsChangedEventData]
   }

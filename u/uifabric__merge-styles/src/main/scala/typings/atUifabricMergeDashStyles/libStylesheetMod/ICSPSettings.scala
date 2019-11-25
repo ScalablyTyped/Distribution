@@ -15,7 +15,7 @@ object ICSPSettings {
   @scala.inline
   def apply(nonce: String = null): ICSPSettings = {
     val __obj = js.Dynamic.literal()
-    if (nonce != null) __obj.updateDynamic("nonce")(nonce)
+    if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICSPSettings]
   }
 }

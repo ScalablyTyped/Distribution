@@ -29,7 +29,7 @@ object INxBookmark {
     qUtcModifyTime: Double,
     qVariableItems: js.Array[IBookmarkVariableItem]
   ): INxBookmark = {
-    val __obj = js.Dynamic.literal(qStateData = qStateData, qUtcModifyTime = qUtcModifyTime, qVariableItems = qVariableItems)
+    val __obj = js.Dynamic.literal(qStateData = qStateData.asInstanceOf[js.Any], qUtcModifyTime = qUtcModifyTime.asInstanceOf[js.Any], qVariableItems = qVariableItems.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[INxBookmark]
   }

@@ -13,7 +13,7 @@ object Monotype {
   @scala.inline
   def apply(projectId: String = null, version: Int | Double = null): Monotype = {
     val __obj = js.Dynamic.literal()
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Monotype]
   }

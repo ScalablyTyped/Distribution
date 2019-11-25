@@ -15,7 +15,7 @@ trait DatepickerViewDate extends js.Object {
 object DatepickerViewDate {
   @scala.inline
   def apply(day: Double, month: Double, year: Double): DatepickerViewDate = {
-    val __obj = js.Dynamic.literal(day = day, month = month, year = year)
+    val __obj = js.Dynamic.literal(day = day.asInstanceOf[js.Any], month = month.asInstanceOf[js.Any], year = year.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DatepickerViewDate]
   }

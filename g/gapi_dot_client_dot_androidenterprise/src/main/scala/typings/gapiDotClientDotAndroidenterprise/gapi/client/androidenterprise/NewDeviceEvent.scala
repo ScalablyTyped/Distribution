@@ -23,9 +23,9 @@ object NewDeviceEvent {
   @scala.inline
   def apply(deviceId: String = null, managementType: String = null, userId: String = null): NewDeviceEvent = {
     val __obj = js.Dynamic.literal()
-    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId)
-    if (managementType != null) __obj.updateDynamic("managementType")(managementType)
-    if (userId != null) __obj.updateDynamic("userId")(userId)
+    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId.asInstanceOf[js.Any])
+    if (managementType != null) __obj.updateDynamic("managementType")(managementType.asInstanceOf[js.Any])
+    if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewDeviceEvent]
   }
 }

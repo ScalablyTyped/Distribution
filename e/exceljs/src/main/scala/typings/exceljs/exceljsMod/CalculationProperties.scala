@@ -14,7 +14,7 @@ trait CalculationProperties extends js.Object {
 object CalculationProperties {
   @scala.inline
   def apply(fullCalcOnLoad: Boolean): CalculationProperties = {
-    val __obj = js.Dynamic.literal(fullCalcOnLoad = fullCalcOnLoad)
+    val __obj = js.Dynamic.literal(fullCalcOnLoad = fullCalcOnLoad.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CalculationProperties]
   }

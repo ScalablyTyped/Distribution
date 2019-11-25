@@ -16,7 +16,7 @@ object _SegmentBehaviors {
   @scala.inline
   def apply(Recency: _RecencyDimension = null): _SegmentBehaviors = {
     val __obj = js.Dynamic.literal()
-    if (Recency != null) __obj.updateDynamic("Recency")(Recency)
+    if (Recency != null) __obj.updateDynamic("Recency")(Recency.asInstanceOf[js.Any])
     __obj.asInstanceOf[_SegmentBehaviors]
   }
 }

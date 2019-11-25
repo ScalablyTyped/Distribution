@@ -23,9 +23,9 @@ object EditRowStartingEventUIParam {
   @scala.inline
   def apply(owner: js.Any = null, rowAdding: js.UndefOr[Boolean] = js.undefined, rowID: js.Any = null): EditRowStartingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (!js.isUndefined(rowAdding)) __obj.updateDynamic("rowAdding")(rowAdding)
-    if (rowID != null) __obj.updateDynamic("rowID")(rowID)
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowAdding)) __obj.updateDynamic("rowAdding")(rowAdding.asInstanceOf[js.Any])
+    if (rowID != null) __obj.updateDynamic("rowID")(rowID.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditRowStartingEventUIParam]
   }
 }

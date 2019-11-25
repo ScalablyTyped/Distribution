@@ -12,7 +12,7 @@ object IndexedDBFileSystemOptions {
   @scala.inline
   def apply(storeName: String = null): IndexedDBFileSystemOptions = {
     val __obj = js.Dynamic.literal()
-    if (storeName != null) __obj.updateDynamic("storeName")(storeName)
+    if (storeName != null) __obj.updateDynamic("storeName")(storeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndexedDBFileSystemOptions]
   }
 }

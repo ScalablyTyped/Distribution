@@ -23,7 +23,7 @@ object RawHashes {
   def apply(prefixSize: Int | Double = null, rawHashes: String = null): RawHashes = {
     val __obj = js.Dynamic.literal()
     if (prefixSize != null) __obj.updateDynamic("prefixSize")(prefixSize.asInstanceOf[js.Any])
-    if (rawHashes != null) __obj.updateDynamic("rawHashes")(rawHashes)
+    if (rawHashes != null) __obj.updateDynamic("rawHashes")(rawHashes.asInstanceOf[js.Any])
     __obj.asInstanceOf[RawHashes]
   }
 }

@@ -12,7 +12,7 @@ trait Connection extends js.Object {
 object Connection {
   @scala.inline
   def apply(connection: Socket): Connection = {
-    val __obj = js.Dynamic.literal(connection = connection)
+    val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Connection]
   }

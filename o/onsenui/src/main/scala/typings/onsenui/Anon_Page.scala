@@ -14,8 +14,8 @@ trait Anon_Page extends js.Object {
 object Anon_Page {
   @scala.inline
   def apply(page: js.Any, parent: Element, params: js.Object = null): Anon_Page = {
-    val __obj = js.Dynamic.literal(page = page, parent = parent)
-    if (params != null) __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(page = page.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Page]
   }
 }

@@ -12,7 +12,7 @@ trait IntegratedMeshLayerLayerviewCreateErrorEvent extends js.Object {
 object IntegratedMeshLayerLayerviewCreateErrorEvent {
   @scala.inline
   def apply(error: Error, view: View): IntegratedMeshLayerLayerviewCreateErrorEvent = {
-    val __obj = js.Dynamic.literal(error = error, view = view)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IntegratedMeshLayerLayerviewCreateErrorEvent]
   }

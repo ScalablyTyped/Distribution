@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait RouterMode extends js.Object
 
+object RouterMode {
+  @scala.inline
+  def `abstract`: typings.vueDashRouter.vueDashRouterStrings.`abstract` = this.cast("abstract")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def hash: typings.vueDashRouter.vueDashRouterStrings.hash = this.cast("hash")
+  @scala.inline
+  def history: typings.vueDashRouter.vueDashRouterStrings.history = this.cast("history")
+}
+

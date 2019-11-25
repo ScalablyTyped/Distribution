@@ -38,7 +38,7 @@ object StaticData {
     version: String,
     versions: VersionData
   ): StaticData = {
-    val __obj = js.Dynamic.literal(baseboard = baseboard, bios = bios, chassis = chassis, cpu = cpu, diskLayout = diskLayout, graphics = graphics, memLayout = memLayout, net = net, os = os, system = system, uuid = uuid, version = version, versions = versions)
+    val __obj = js.Dynamic.literal(baseboard = baseboard.asInstanceOf[js.Any], bios = bios.asInstanceOf[js.Any], chassis = chassis.asInstanceOf[js.Any], cpu = cpu.asInstanceOf[js.Any], diskLayout = diskLayout.asInstanceOf[js.Any], graphics = graphics.asInstanceOf[js.Any], memLayout = memLayout.asInstanceOf[js.Any], net = net.asInstanceOf[js.Any], os = os.asInstanceOf[js.Any], system = system.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], versions = versions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StaticData]
   }

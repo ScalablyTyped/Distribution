@@ -15,7 +15,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(registryUrl: String): Options = {
-    val __obj = js.Dynamic.literal(registryUrl = registryUrl)
+    val __obj = js.Dynamic.literal(registryUrl = registryUrl.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Options]
   }

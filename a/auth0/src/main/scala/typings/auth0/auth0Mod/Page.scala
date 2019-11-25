@@ -14,7 +14,7 @@ trait Page extends js.Object {
 object Page {
   @scala.inline
   def apply(length: Double, limit: Double, start: Double, total: Double): Page = {
-    val __obj = js.Dynamic.literal(length = length, limit = limit, start = start, total = total)
+    val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Page]
   }

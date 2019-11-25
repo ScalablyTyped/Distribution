@@ -19,7 +19,7 @@ object Options {
   @scala.inline
   def apply(markers: js.Array[String] = null, maxDepth: Int | Double = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (markers != null) __obj.updateDynamic("markers")(markers)
+    if (markers != null) __obj.updateDynamic("markers")(markers.asInstanceOf[js.Any])
     if (maxDepth != null) __obj.updateDynamic("maxDepth")(maxDepth.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

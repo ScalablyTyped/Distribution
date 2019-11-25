@@ -44,14 +44,14 @@ object KeydownEventArgs {
     `type`: String = null
   ): KeydownEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(altKey)) __obj.updateDynamic("altKey")(altKey)
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (!js.isUndefined(ctrlKey)) __obj.updateDynamic("ctrlKey")(ctrlKey)
+    if (!js.isUndefined(altKey)) __obj.updateDynamic("altKey")(altKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(ctrlKey)) __obj.updateDynamic("ctrlKey")(ctrlKey.asInstanceOf[js.Any])
     if (keyCode != null) __obj.updateDynamic("keyCode")(keyCode.asInstanceOf[js.Any])
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (originalArgs != null) __obj.updateDynamic("originalArgs")(originalArgs)
-    if (!js.isUndefined(shiftKey)) __obj.updateDynamic("shiftKey")(shiftKey)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (originalArgs != null) __obj.updateDynamic("originalArgs")(originalArgs.asInstanceOf[js.Any])
+    if (!js.isUndefined(shiftKey)) __obj.updateDynamic("shiftKey")(shiftKey.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeydownEventArgs]
   }
 }

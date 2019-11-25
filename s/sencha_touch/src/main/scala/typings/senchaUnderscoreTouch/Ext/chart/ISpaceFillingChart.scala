@@ -8,10 +8,9 @@ trait ISpaceFillingChart extends IAbstractChart
 
 object ISpaceFillingChart {
   @scala.inline
-  def apply(IAbstractChart: IAbstractChart = null, redraw: () => Unit = null): ISpaceFillingChart = {
+  def apply(IAbstractChart: IAbstractChart = null): ISpaceFillingChart = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IAbstractChart)
-    if (redraw != null) __obj.updateDynamic("redraw")(js.Any.fromFunction0(redraw))
+    if (IAbstractChart != null) js.Dynamic.global.Object.assign(__obj, IAbstractChart)
     __obj.asInstanceOf[ISpaceFillingChart]
   }
 }

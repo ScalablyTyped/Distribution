@@ -28,14 +28,14 @@ object NestingLevel {
     textStyle: TextStyle = null
   ): NestingLevel = {
     val __obj = js.Dynamic.literal()
-    if (bulletAlignment != null) __obj.updateDynamic("bulletAlignment")(bulletAlignment)
-    if (glyphFormat != null) __obj.updateDynamic("glyphFormat")(glyphFormat)
-    if (glyphSymbol != null) __obj.updateDynamic("glyphSymbol")(glyphSymbol)
-    if (glyphType != null) __obj.updateDynamic("glyphType")(glyphType)
-    if (indentFirstLine != null) __obj.updateDynamic("indentFirstLine")(indentFirstLine)
-    if (indentStart != null) __obj.updateDynamic("indentStart")(indentStart)
+    if (bulletAlignment != null) __obj.updateDynamic("bulletAlignment")(bulletAlignment.asInstanceOf[js.Any])
+    if (glyphFormat != null) __obj.updateDynamic("glyphFormat")(glyphFormat.asInstanceOf[js.Any])
+    if (glyphSymbol != null) __obj.updateDynamic("glyphSymbol")(glyphSymbol.asInstanceOf[js.Any])
+    if (glyphType != null) __obj.updateDynamic("glyphType")(glyphType.asInstanceOf[js.Any])
+    if (indentFirstLine != null) __obj.updateDynamic("indentFirstLine")(indentFirstLine.asInstanceOf[js.Any])
+    if (indentStart != null) __obj.updateDynamic("indentStart")(indentStart.asInstanceOf[js.Any])
     if (startNumber != null) __obj.updateDynamic("startNumber")(startNumber.asInstanceOf[js.Any])
-    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle)
+    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[NestingLevel]
   }
 }

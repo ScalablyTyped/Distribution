@@ -11,7 +11,7 @@ trait Anon_VisibleBoolean extends js.Object {
 object Anon_VisibleBoolean {
   @scala.inline
   def apply(visible: Boolean): Anon_VisibleBoolean = {
-    val __obj = js.Dynamic.literal(visible = visible)
+    val __obj = js.Dynamic.literal(visible = visible.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_VisibleBoolean]
   }

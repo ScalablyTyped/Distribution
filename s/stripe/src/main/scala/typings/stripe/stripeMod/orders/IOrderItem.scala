@@ -56,8 +56,8 @@ object IOrderItem {
     quantity: Double,
     `type`: sku | tax | shipping | discount
   ): IOrderItem = {
-    val __obj = js.Dynamic.literal(amount = amount, currency = currency, description = description, parent = parent.asInstanceOf[js.Any], quantity = quantity)
-    __obj.updateDynamic("object")(`object`)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], quantity = quantity.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOrderItem]
   }

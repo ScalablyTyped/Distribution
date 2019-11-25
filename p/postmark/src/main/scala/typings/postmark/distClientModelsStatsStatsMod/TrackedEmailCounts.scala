@@ -13,7 +13,7 @@ trait TrackedEmailCounts extends js.Object {
 object TrackedEmailCounts {
   @scala.inline
   def apply(Days: js.Array[Anon_DateTracked], Tracked: Double): TrackedEmailCounts = {
-    val __obj = js.Dynamic.literal(Days = Days, Tracked = Tracked)
+    val __obj = js.Dynamic.literal(Days = Days.asInstanceOf[js.Any], Tracked = Tracked.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TrackedEmailCounts]
   }

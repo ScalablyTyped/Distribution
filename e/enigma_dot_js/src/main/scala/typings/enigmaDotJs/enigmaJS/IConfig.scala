@@ -66,14 +66,14 @@ object IConfig {
     responseInterceptors: js.Array[IResponseInterceptors] = null,
     suspendOnClose: js.UndefOr[Boolean] = js.undefined
   ): IConfig = {
-    val __obj = js.Dynamic.literal(schema = schema, url = url)
-    if (Promise != null) __obj.updateDynamic("Promise")(Promise)
-    if (createSocket != null) __obj.updateDynamic("createSocket")(createSocket)
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins)
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
-    if (requestInterceptors != null) __obj.updateDynamic("requestInterceptors")(requestInterceptors)
-    if (responseInterceptors != null) __obj.updateDynamic("responseInterceptors")(responseInterceptors)
-    if (!js.isUndefined(suspendOnClose)) __obj.updateDynamic("suspendOnClose")(suspendOnClose)
+    val __obj = js.Dynamic.literal(schema = schema.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (Promise != null) __obj.updateDynamic("Promise")(Promise.asInstanceOf[js.Any])
+    if (createSocket != null) __obj.updateDynamic("createSocket")(createSocket.asInstanceOf[js.Any])
+    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
+    if (requestInterceptors != null) __obj.updateDynamic("requestInterceptors")(requestInterceptors.asInstanceOf[js.Any])
+    if (responseInterceptors != null) __obj.updateDynamic("responseInterceptors")(responseInterceptors.asInstanceOf[js.Any])
+    if (!js.isUndefined(suspendOnClose)) __obj.updateDynamic("suspendOnClose")(suspendOnClose.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConfig]
   }
 }

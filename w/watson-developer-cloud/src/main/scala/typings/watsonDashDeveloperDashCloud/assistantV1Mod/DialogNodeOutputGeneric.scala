@@ -48,18 +48,18 @@ object DialogNodeOutputGeneric {
     typing: js.UndefOr[Boolean] = js.undefined,
     values: js.Array[DialogNodeOutputTextValuesElement] = null
   ): DialogNodeOutputGeneric = {
-    val __obj = js.Dynamic.literal(response_type = response_type)
-    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (message_to_human_agent != null) __obj.updateDynamic("message_to_human_agent")(message_to_human_agent)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (preference != null) __obj.updateDynamic("preference")(preference)
-    if (selection_policy != null) __obj.updateDynamic("selection_policy")(selection_policy)
-    if (source != null) __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(response_type = response_type.asInstanceOf[js.Any])
+    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (message_to_human_agent != null) __obj.updateDynamic("message_to_human_agent")(message_to_human_agent.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (preference != null) __obj.updateDynamic("preference")(preference.asInstanceOf[js.Any])
+    if (selection_policy != null) __obj.updateDynamic("selection_policy")(selection_policy.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (!js.isUndefined(typing)) __obj.updateDynamic("typing")(typing)
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (!js.isUndefined(typing)) __obj.updateDynamic("typing")(typing.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogNodeOutputGeneric]
   }
 }

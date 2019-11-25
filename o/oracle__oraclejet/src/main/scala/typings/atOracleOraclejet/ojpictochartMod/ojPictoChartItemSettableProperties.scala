@@ -61,7 +61,7 @@ object ojPictoChartItemSettableProperties {
     svgStyle: js.Object,
     shape: circle | diamond | human | plus | rectangle | square | star | triangleDown | triangleUp | none | String = null
   ): ojPictoChartItemSettableProperties = {
-    val __obj = js.Dynamic.literal(borderColor = borderColor, borderWidth = borderWidth, categories = categories, color = color, columnSpan = columnSpan, count = count, drilling = drilling.asInstanceOf[js.Any], name = name, rowSpan = rowSpan, shortDesc = shortDesc, source = source, sourceHover = sourceHover, sourceHoverSelected = sourceHoverSelected, sourceSelected = sourceSelected, svgClassName = svgClassName, svgStyle = svgStyle)
+    val __obj = js.Dynamic.literal(borderColor = borderColor.asInstanceOf[js.Any], borderWidth = borderWidth.asInstanceOf[js.Any], categories = categories.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], columnSpan = columnSpan.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], drilling = drilling.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], rowSpan = rowSpan.asInstanceOf[js.Any], shortDesc = shortDesc.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], sourceHover = sourceHover.asInstanceOf[js.Any], sourceHoverSelected = sourceHoverSelected.asInstanceOf[js.Any], sourceSelected = sourceSelected.asInstanceOf[js.Any], svgClassName = svgClassName.asInstanceOf[js.Any], svgStyle = svgStyle.asInstanceOf[js.Any])
     if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojPictoChartItemSettableProperties]
   }

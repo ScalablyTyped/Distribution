@@ -24,7 +24,7 @@ object DataTypeMap {
     int32: Int32Array,
     string: js.Array[String]
   ): DataTypeMap = {
-    val __obj = js.Dynamic.literal(bool = bool, complex64 = complex64, float32 = float32, int32 = int32, string = string)
+    val __obj = js.Dynamic.literal(bool = bool.asInstanceOf[js.Any], complex64 = complex64.asInstanceOf[js.Any], float32 = float32.asInstanceOf[js.Any], int32 = int32.asInstanceOf[js.Any], string = string.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DataTypeMap]
   }

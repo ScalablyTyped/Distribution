@@ -13,7 +13,7 @@ trait AdvancedSigningSchemePKCS1 extends AdvancedSigningScheme {
 object AdvancedSigningSchemePKCS1 {
   @scala.inline
   def apply(hash: HashingAlgorithm, scheme: pkcs1): AdvancedSigningSchemePKCS1 = {
-    val __obj = js.Dynamic.literal(hash = hash, scheme = scheme)
+    val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], scheme = scheme.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AdvancedSigningSchemePKCS1]
   }

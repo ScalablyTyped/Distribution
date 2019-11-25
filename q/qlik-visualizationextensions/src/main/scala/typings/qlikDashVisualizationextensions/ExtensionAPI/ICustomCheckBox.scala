@@ -13,8 +13,8 @@ trait ICustomCheckBox extends ICustomControl {
 object ICustomCheckBox {
   @scala.inline
   def apply(component: checkbox, defaultValue: Boolean, label: String, ref: String, `type`: String): ICustomCheckBox = {
-    val __obj = js.Dynamic.literal(component = component, defaultValue = defaultValue, label = label, ref = ref)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], defaultValue = defaultValue.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICustomCheckBox]
   }
 }

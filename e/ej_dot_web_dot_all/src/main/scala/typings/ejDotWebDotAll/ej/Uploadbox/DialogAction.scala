@@ -28,10 +28,10 @@ object DialogAction {
     modal: js.UndefOr[Boolean] = js.undefined
   ): DialogAction = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(closeOnComplete)) __obj.updateDynamic("closeOnComplete")(closeOnComplete)
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (!js.isUndefined(drag)) __obj.updateDynamic("drag")(drag)
-    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal)
+    if (!js.isUndefined(closeOnComplete)) __obj.updateDynamic("closeOnComplete")(closeOnComplete.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (!js.isUndefined(drag)) __obj.updateDynamic("drag")(drag.asInstanceOf[js.Any])
+    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogAction]
   }
 }

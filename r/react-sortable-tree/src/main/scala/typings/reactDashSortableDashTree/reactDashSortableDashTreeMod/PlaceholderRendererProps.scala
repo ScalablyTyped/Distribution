@@ -13,7 +13,7 @@ trait PlaceholderRendererProps extends js.Object {
 object PlaceholderRendererProps {
   @scala.inline
   def apply(canDrop: Boolean, draggedNode: TreeItem, isOver: Boolean): PlaceholderRendererProps = {
-    val __obj = js.Dynamic.literal(canDrop = canDrop, draggedNode = draggedNode, isOver = isOver)
+    val __obj = js.Dynamic.literal(canDrop = canDrop.asInstanceOf[js.Any], draggedNode = draggedNode.asInstanceOf[js.Any], isOver = isOver.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PlaceholderRendererProps]
   }

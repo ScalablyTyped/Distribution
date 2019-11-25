@@ -11,7 +11,7 @@ trait Anon_Framerate extends js.Object {
 object Anon_Framerate {
   @scala.inline
   def apply(framerate: Double): Anon_Framerate = {
-    val __obj = js.Dynamic.literal(framerate = framerate)
+    val __obj = js.Dynamic.literal(framerate = framerate.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Framerate]
   }

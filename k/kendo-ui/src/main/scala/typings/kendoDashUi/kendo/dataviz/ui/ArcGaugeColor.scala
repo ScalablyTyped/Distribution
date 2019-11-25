@@ -14,7 +14,7 @@ object ArcGaugeColor {
   @scala.inline
   def apply(color: String = null, from: Int | Double = null, to: Int | Double = null): ArcGaugeColor = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
     if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArcGaugeColor]

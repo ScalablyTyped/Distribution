@@ -39,10 +39,10 @@ object IgGridColumnMovingColumnSetting {
     columnKey: String = null
   ): IgGridColumnMovingColumnSetting = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(allowMoving)) __obj.updateDynamic("allowMoving")(allowMoving)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(allowMoving)) __obj.updateDynamic("allowMoving")(allowMoving.asInstanceOf[js.Any])
     if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
-    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey)
+    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridColumnMovingColumnSetting]
   }
 }

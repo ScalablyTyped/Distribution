@@ -12,7 +12,7 @@ trait Anon_OHUHO2 extends js.Object {
 object Anon_OHUHO2 {
   @scala.inline
   def apply(OH: UHO2): Anon_OHUHO2 = {
-    val __obj = js.Dynamic.literal(OH = OH)
+    val __obj = js.Dynamic.literal(OH = OH.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_OHUHO2]
   }

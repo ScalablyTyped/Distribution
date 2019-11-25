@@ -32,10 +32,10 @@ object ValueChangedEventUIParam {
     owner: js.Any = null
   ): ValueChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (editorInput != null) __obj.updateDynamic("editorInput")(editorInput)
-    if (newValue != null) __obj.updateDynamic("newValue")(newValue)
-    if (originalValue != null) __obj.updateDynamic("originalValue")(originalValue)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (editorInput != null) __obj.updateDynamic("editorInput")(editorInput.asInstanceOf[js.Any])
+    if (newValue != null) __obj.updateDynamic("newValue")(newValue.asInstanceOf[js.Any])
+    if (originalValue != null) __obj.updateDynamic("originalValue")(originalValue.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValueChangedEventUIParam]
   }
 }

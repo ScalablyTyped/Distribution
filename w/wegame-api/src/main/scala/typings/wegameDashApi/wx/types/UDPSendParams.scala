@@ -37,7 +37,7 @@ object UDPSendParams {
     length: Int | Double = null,
     offset: Int | Double = null
   ): UDPSendParams = {
-    val __obj = js.Dynamic.literal(address = address, message = message.asInstanceOf[js.Any], port = port)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[UDPSendParams]

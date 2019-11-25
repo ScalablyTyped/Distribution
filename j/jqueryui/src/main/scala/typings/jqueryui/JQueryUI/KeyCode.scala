@@ -55,7 +55,7 @@ object KeyCode {
     TAB: Double,
     UP: Double
   ): KeyCode = {
-    val __obj = js.Dynamic.literal(BACKSPACE = BACKSPACE, COMMA = COMMA, DELETE = DELETE, DOWN = DOWN, END = END, ENTER = ENTER, ESCAPE = ESCAPE, HOME = HOME, LEFT = LEFT, NUMPAD_ADD = NUMPAD_ADD, NUMPAD_DECIMAL = NUMPAD_DECIMAL, NUMPAD_DIVIDE = NUMPAD_DIVIDE, NUMPAD_ENTER = NUMPAD_ENTER, NUMPAD_MULTIPLY = NUMPAD_MULTIPLY, NUMPAD_SUBTRACT = NUMPAD_SUBTRACT, PAGE_DOWN = PAGE_DOWN, PAGE_UP = PAGE_UP, PERIOD = PERIOD, RIGHT = RIGHT, SPACE = SPACE, TAB = TAB, UP = UP)
+    val __obj = js.Dynamic.literal(BACKSPACE = BACKSPACE.asInstanceOf[js.Any], COMMA = COMMA.asInstanceOf[js.Any], DELETE = DELETE.asInstanceOf[js.Any], DOWN = DOWN.asInstanceOf[js.Any], END = END.asInstanceOf[js.Any], ENTER = ENTER.asInstanceOf[js.Any], ESCAPE = ESCAPE.asInstanceOf[js.Any], HOME = HOME.asInstanceOf[js.Any], LEFT = LEFT.asInstanceOf[js.Any], NUMPAD_ADD = NUMPAD_ADD.asInstanceOf[js.Any], NUMPAD_DECIMAL = NUMPAD_DECIMAL.asInstanceOf[js.Any], NUMPAD_DIVIDE = NUMPAD_DIVIDE.asInstanceOf[js.Any], NUMPAD_ENTER = NUMPAD_ENTER.asInstanceOf[js.Any], NUMPAD_MULTIPLY = NUMPAD_MULTIPLY.asInstanceOf[js.Any], NUMPAD_SUBTRACT = NUMPAD_SUBTRACT.asInstanceOf[js.Any], PAGE_DOWN = PAGE_DOWN.asInstanceOf[js.Any], PAGE_UP = PAGE_UP.asInstanceOf[js.Any], PERIOD = PERIOD.asInstanceOf[js.Any], RIGHT = RIGHT.asInstanceOf[js.Any], SPACE = SPACE.asInstanceOf[js.Any], TAB = TAB.asInstanceOf[js.Any], UP = UP.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[KeyCode]
   }

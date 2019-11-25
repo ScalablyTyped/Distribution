@@ -18,8 +18,8 @@ trait DevTools extends js.Object {
 object DevTools {
   @scala.inline
   def apply(isOpen: Boolean, orientation: Orientation = null): DevTools = {
-    val __obj = js.Dynamic.literal(isOpen = isOpen)
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation)
+    val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any])
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     __obj.asInstanceOf[DevTools]
   }
 }

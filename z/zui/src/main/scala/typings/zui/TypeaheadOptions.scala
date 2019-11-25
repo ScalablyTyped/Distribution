@@ -31,7 +31,7 @@ object TypeaheadOptions {
     if (matcher != null) __obj.updateDynamic("matcher")(js.Any.fromFunction1(matcher))
     if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
     if (sorter != null) __obj.updateDynamic("sorter")(js.Any.fromFunction1(sorter))
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (updater != null) __obj.updateDynamic("updater")(js.Any.fromFunction1(updater))
     __obj.asInstanceOf[TypeaheadOptions]
   }

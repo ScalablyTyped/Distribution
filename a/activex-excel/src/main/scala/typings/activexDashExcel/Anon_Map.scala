@@ -17,7 +17,7 @@ trait Anon_Map extends js.Object {
 object Anon_Map {
   @scala.inline
   def apply(Map: XmlMap, Result: XlXmlExportResult, Url: String, Wb: Workbook): Anon_Map = {
-    val __obj = js.Dynamic.literal(Map = Map, Result = Result, Url = Url, Wb = Wb)
+    val __obj = js.Dynamic.literal(Map = Map.asInstanceOf[js.Any], Result = Result.asInstanceOf[js.Any], Url = Url.asInstanceOf[js.Any], Wb = Wb.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Map]
   }

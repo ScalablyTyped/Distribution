@@ -17,9 +17,9 @@ object ActivityContentDetailsRecommendation {
   @scala.inline
   def apply(reason: String = null, resourceId: ResourceId = null, seedResourceId: ResourceId = null): ActivityContentDetailsRecommendation = {
     val __obj = js.Dynamic.literal()
-    if (reason != null) __obj.updateDynamic("reason")(reason)
-    if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId)
-    if (seedResourceId != null) __obj.updateDynamic("seedResourceId")(seedResourceId)
+    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
+    if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId.asInstanceOf[js.Any])
+    if (seedResourceId != null) __obj.updateDynamic("seedResourceId")(seedResourceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivityContentDetailsRecommendation]
   }
 }

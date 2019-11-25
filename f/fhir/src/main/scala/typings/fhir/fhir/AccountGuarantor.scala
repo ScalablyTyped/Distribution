@@ -40,16 +40,16 @@ object AccountGuarantor {
     onHold: js.UndefOr[Boolean] = js.undefined,
     period: Period = null
   ): AccountGuarantor = {
-    val __obj = js.Dynamic.literal(party = party)
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
-    if (_id != null) __obj.updateDynamic("_id")(_id)
-    if (_onHold != null) __obj.updateDynamic("_onHold")(_onHold)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
-    if (!js.isUndefined(onHold)) __obj.updateDynamic("onHold")(onHold)
-    if (period != null) __obj.updateDynamic("period")(period)
+    val __obj = js.Dynamic.literal(party = party.asInstanceOf[js.Any])
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
+    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
+    if (_onHold != null) __obj.updateDynamic("_onHold")(_onHold.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
+    if (!js.isUndefined(onHold)) __obj.updateDynamic("onHold")(onHold.asInstanceOf[js.Any])
+    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountGuarantor]
   }
 }

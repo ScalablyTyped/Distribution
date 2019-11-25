@@ -25,7 +25,7 @@ object IndexSpec {
     src: String,
     unique: Boolean
   ): IndexSpec = {
-    val __obj = js.Dynamic.literal(auto = auto, compound = compound, keyPath = keyPath.asInstanceOf[js.Any], multi = multi, name = name, src = src, unique = unique)
+    val __obj = js.Dynamic.literal(auto = auto.asInstanceOf[js.Any], compound = compound.asInstanceOf[js.Any], keyPath = keyPath.asInstanceOf[js.Any], multi = multi.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], unique = unique.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IndexSpec]
   }

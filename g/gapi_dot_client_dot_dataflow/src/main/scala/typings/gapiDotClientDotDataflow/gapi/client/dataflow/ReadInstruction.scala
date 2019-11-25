@@ -13,7 +13,7 @@ object ReadInstruction {
   @scala.inline
   def apply(source: Source = null): ReadInstruction = {
     val __obj = js.Dynamic.literal()
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadInstruction]
   }
 }

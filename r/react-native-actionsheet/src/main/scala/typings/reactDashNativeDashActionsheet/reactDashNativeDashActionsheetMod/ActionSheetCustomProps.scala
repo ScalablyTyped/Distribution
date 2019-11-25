@@ -30,13 +30,13 @@ object ActionSheetCustomProps {
     tintColor: String = null,
     title: ReactNode = null
   ): ActionSheetCustomProps = {
-    val __obj = js.Dynamic.literal(onPress = js.Any.fromFunction1(onPress), options = options)
-    if (buttonUnderlayColor != null) __obj.updateDynamic("buttonUnderlayColor")(buttonUnderlayColor)
+    val __obj = js.Dynamic.literal(onPress = js.Any.fromFunction1(onPress), options = options.asInstanceOf[js.Any])
+    if (buttonUnderlayColor != null) __obj.updateDynamic("buttonUnderlayColor")(buttonUnderlayColor.asInstanceOf[js.Any])
     if (cancelButtonIndex != null) __obj.updateDynamic("cancelButtonIndex")(cancelButtonIndex.asInstanceOf[js.Any])
     if (destructiveButtonIndex != null) __obj.updateDynamic("destructiveButtonIndex")(destructiveButtonIndex.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (styles != null) __obj.updateDynamic("styles")(styles)
-    if (tintColor != null) __obj.updateDynamic("tintColor")(tintColor)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
+    if (tintColor != null) __obj.updateDynamic("tintColor")(tintColor.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionSheetCustomProps]
   }

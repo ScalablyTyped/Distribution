@@ -14,7 +14,7 @@ trait DigestValidateOptions extends js.Object {
 object DigestValidateOptions {
   @scala.inline
   def apply(cnonce: String, nc: Double, nonce: String, opaque: String): DigestValidateOptions = {
-    val __obj = js.Dynamic.literal(cnonce = cnonce, nc = nc, nonce = nonce, opaque = opaque)
+    val __obj = js.Dynamic.literal(cnonce = cnonce.asInstanceOf[js.Any], nc = nc.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any], opaque = opaque.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DigestValidateOptions]
   }

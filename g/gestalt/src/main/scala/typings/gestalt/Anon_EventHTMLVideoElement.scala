@@ -14,7 +14,7 @@ trait Anon_EventHTMLVideoElement extends js.Object {
 object Anon_EventHTMLVideoElement {
   @scala.inline
   def apply(event: SyntheticEvent[HTMLVideoElement, Event]): Anon_EventHTMLVideoElement = {
-    val __obj = js.Dynamic.literal(event = event)
+    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EventHTMLVideoElement]
   }

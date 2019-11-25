@@ -23,7 +23,7 @@ object MetricsProperties {
     statisticalWindowNumberOfBuckets: Int | Double = null,
     statisticalWindowTimeInMilliSeconds: Int | Double = null
   ): MetricsProperties = {
-    val __obj = js.Dynamic.literal(commandGroup = commandGroup, commandKey = commandKey)
+    val __obj = js.Dynamic.literal(commandGroup = commandGroup.asInstanceOf[js.Any], commandKey = commandKey.asInstanceOf[js.Any])
     if (percentileWindowNumberOfBuckets != null) __obj.updateDynamic("percentileWindowNumberOfBuckets")(percentileWindowNumberOfBuckets.asInstanceOf[js.Any])
     if (percentileWindowTimeInMilliSeconds != null) __obj.updateDynamic("percentileWindowTimeInMilliSeconds")(percentileWindowTimeInMilliSeconds.asInstanceOf[js.Any])
     if (statisticalWindowNumberOfBuckets != null) __obj.updateDynamic("statisticalWindowNumberOfBuckets")(statisticalWindowNumberOfBuckets.asInstanceOf[js.Any])

@@ -16,7 +16,7 @@ object Row {
   @scala.inline
   def apply(cells: js.Array[Value] = null): Row = {
     val __obj = js.Dynamic.literal()
-    if (cells != null) __obj.updateDynamic("cells")(cells)
+    if (cells != null) __obj.updateDynamic("cells")(cells.asInstanceOf[js.Any])
     __obj.asInstanceOf[Row]
   }
 }

@@ -13,7 +13,7 @@ trait ArtifactDownloadInputBase extends js.Object {
 object ArtifactDownloadInputBase {
   @scala.inline
   def apply(alias: String, artifactDownloadMode: String, artifactType: String): ArtifactDownloadInputBase = {
-    val __obj = js.Dynamic.literal(alias = alias, artifactDownloadMode = artifactDownloadMode, artifactType = artifactType)
+    val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any], artifactDownloadMode = artifactDownloadMode.asInstanceOf[js.Any], artifactType = artifactType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ArtifactDownloadInputBase]
   }

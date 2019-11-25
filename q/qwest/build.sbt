@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "qwest"
-version := "v1.7.0-dt-20190322Z-463c8e"
+version := "v1.7.0-dt-20190322Z-e8ffb3"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

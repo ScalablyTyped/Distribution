@@ -12,7 +12,7 @@ object CSPConfig {
   @scala.inline
   def apply(nonce: String = null): CSPConfig = {
     val __obj = js.Dynamic.literal()
-    if (nonce != null) __obj.updateDynamic("nonce")(nonce)
+    if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
     __obj.asInstanceOf[CSPConfig]
   }
 }

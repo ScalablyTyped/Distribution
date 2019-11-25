@@ -12,8 +12,8 @@ trait StrategyOptionsWithRequest extends _BaseBnetOptions {
 object StrategyOptionsWithRequest {
   @scala.inline
   def apply(clientID: String, clientSecret: String, passReqToCallback: `true`, region: String = null): StrategyOptionsWithRequest = {
-    val __obj = js.Dynamic.literal(clientID = clientID, clientSecret = clientSecret, passReqToCallback = passReqToCallback)
-    if (region != null) __obj.updateDynamic("region")(region)
+    val __obj = js.Dynamic.literal(clientID = clientID.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any], passReqToCallback = passReqToCallback.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrategyOptionsWithRequest]
   }
 }

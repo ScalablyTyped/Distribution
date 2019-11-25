@@ -34,9 +34,9 @@ object UpdateConditionalFormatRuleResponse {
   ): UpdateConditionalFormatRuleResponse = {
     val __obj = js.Dynamic.literal()
     if (newIndex != null) __obj.updateDynamic("newIndex")(newIndex.asInstanceOf[js.Any])
-    if (newRule != null) __obj.updateDynamic("newRule")(newRule)
+    if (newRule != null) __obj.updateDynamic("newRule")(newRule.asInstanceOf[js.Any])
     if (oldIndex != null) __obj.updateDynamic("oldIndex")(oldIndex.asInstanceOf[js.Any])
-    if (oldRule != null) __obj.updateDynamic("oldRule")(oldRule)
+    if (oldRule != null) __obj.updateDynamic("oldRule")(oldRule.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateConditionalFormatRuleResponse]
   }
 }

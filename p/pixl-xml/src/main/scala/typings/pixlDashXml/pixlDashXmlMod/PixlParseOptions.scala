@@ -22,11 +22,11 @@ object PixlParseOptions {
     preserveWhitespace: js.UndefOr[Boolean] = js.undefined
   ): PixlParseOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(forceArrays)) __obj.updateDynamic("forceArrays")(forceArrays)
-    if (!js.isUndefined(lowerCase)) __obj.updateDynamic("lowerCase")(lowerCase)
-    if (!js.isUndefined(preserveAttributes)) __obj.updateDynamic("preserveAttributes")(preserveAttributes)
-    if (!js.isUndefined(preserveDocumentNode)) __obj.updateDynamic("preserveDocumentNode")(preserveDocumentNode)
-    if (!js.isUndefined(preserveWhitespace)) __obj.updateDynamic("preserveWhitespace")(preserveWhitespace)
+    if (!js.isUndefined(forceArrays)) __obj.updateDynamic("forceArrays")(forceArrays.asInstanceOf[js.Any])
+    if (!js.isUndefined(lowerCase)) __obj.updateDynamic("lowerCase")(lowerCase.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveAttributes)) __obj.updateDynamic("preserveAttributes")(preserveAttributes.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveDocumentNode)) __obj.updateDynamic("preserveDocumentNode")(preserveDocumentNode.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveWhitespace)) __obj.updateDynamic("preserveWhitespace")(preserveWhitespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[PixlParseOptions]
   }
 }

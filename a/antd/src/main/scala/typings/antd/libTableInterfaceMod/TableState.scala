@@ -28,10 +28,10 @@ object TableState {
     sortColumn: ColumnProps[T] = null,
     sortOrder: SortOrder = null
   ): TableState[T] = {
-    val __obj = js.Dynamic.literal(columns = columns, components = components, filters = filters, pagination = pagination, prevProps = prevProps)
+    val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], components = components.asInstanceOf[js.Any], filters = filters.asInstanceOf[js.Any], pagination = pagination.asInstanceOf[js.Any], prevProps = prevProps.asInstanceOf[js.Any])
     if (pivot != null) __obj.updateDynamic("pivot")(pivot.asInstanceOf[js.Any])
-    if (sortColumn != null) __obj.updateDynamic("sortColumn")(sortColumn)
-    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder)
+    if (sortColumn != null) __obj.updateDynamic("sortColumn")(sortColumn.asInstanceOf[js.Any])
+    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableState[T]]
   }
 }

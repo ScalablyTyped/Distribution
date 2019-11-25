@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait SuspenseListRevealOrder extends js.Object
 
+object SuspenseListRevealOrder {
+  @scala.inline
+  def backwards: typings.react.reactStrings.backwards = this.cast("backwards")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def forwards: typings.react.reactStrings.forwards = this.cast("forwards")
+  @scala.inline
+  def together: typings.react.reactStrings.together = this.cast("together")
+}
+

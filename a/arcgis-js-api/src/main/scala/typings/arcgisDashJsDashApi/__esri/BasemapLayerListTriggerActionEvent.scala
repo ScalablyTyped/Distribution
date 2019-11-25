@@ -12,7 +12,7 @@ trait BasemapLayerListTriggerActionEvent extends js.Object {
 object BasemapLayerListTriggerActionEvent {
   @scala.inline
   def apply(action: ActionButton | ActionToggle, item: ListItem): BasemapLayerListTriggerActionEvent = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], item = item)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BasemapLayerListTriggerActionEvent]
   }

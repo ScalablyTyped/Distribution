@@ -26,8 +26,8 @@ object TokenOpts {
   @scala.inline
   def apply(customFlags: String = null, scope: String = null, trigger: () => Boolean = null): TokenOpts = {
     val __obj = js.Dynamic.literal()
-    if (customFlags != null) __obj.updateDynamic("customFlags")(customFlags)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (customFlags != null) __obj.updateDynamic("customFlags")(customFlags.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     if (trigger != null) __obj.updateDynamic("trigger")(js.Any.fromFunction0(trigger))
     __obj.asInstanceOf[TokenOpts]
   }

@@ -18,8 +18,8 @@ object Options {
     rightPlaceholderChar: String,
     language: typings.yadda.libLocalisationLanguageMod.^[Library] = null
   ): Options = {
-    val __obj = js.Dynamic.literal(leftPlaceholderChar = leftPlaceholderChar, rightPlaceholderChar = rightPlaceholderChar)
-    if (language != null) __obj.updateDynamic("language")(language)
+    val __obj = js.Dynamic.literal(leftPlaceholderChar = leftPlaceholderChar.asInstanceOf[js.Any], rightPlaceholderChar = rightPlaceholderChar.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

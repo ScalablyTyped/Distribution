@@ -24,11 +24,11 @@ object EffectProperty {
     to: EffectState = null,
     wc: String = null
   ): EffectProperty = {
-    val __obj = js.Dynamic.literal(effectName = effectName, trans = trans)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (from != null) __obj.updateDynamic("from")(from)
-    if (to != null) __obj.updateDynamic("to")(to)
-    if (wc != null) __obj.updateDynamic("wc")(wc)
+    val __obj = js.Dynamic.literal(effectName = effectName.asInstanceOf[js.Any], trans = trans.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    if (wc != null) __obj.updateDynamic("wc")(wc.asInstanceOf[js.Any])
     __obj.asInstanceOf[EffectProperty]
   }
 }

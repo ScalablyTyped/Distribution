@@ -11,7 +11,7 @@ trait Anon_Accesstoken extends js.Object {
 object Anon_Accesstoken {
   @scala.inline
   def apply(access_token: String): Anon_Accesstoken = {
-    val __obj = js.Dynamic.literal(access_token = access_token)
+    val __obj = js.Dynamic.literal(access_token = access_token.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Accesstoken]
   }

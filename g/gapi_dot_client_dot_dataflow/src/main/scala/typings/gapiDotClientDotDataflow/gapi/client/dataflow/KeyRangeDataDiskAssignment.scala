@@ -22,9 +22,9 @@ object KeyRangeDataDiskAssignment {
   @scala.inline
   def apply(dataDisk: String = null, end: String = null, start: String = null): KeyRangeDataDiskAssignment = {
     val __obj = js.Dynamic.literal()
-    if (dataDisk != null) __obj.updateDynamic("dataDisk")(dataDisk)
-    if (end != null) __obj.updateDynamic("end")(end)
-    if (start != null) __obj.updateDynamic("start")(start)
+    if (dataDisk != null) __obj.updateDynamic("dataDisk")(dataDisk.asInstanceOf[js.Any])
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyRangeDataDiskAssignment]
   }
 }

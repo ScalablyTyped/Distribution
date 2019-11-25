@@ -30,11 +30,11 @@ object ComposeInputFieldConfigAsObject {
   ): ComposeInputFieldConfigAsObject = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (astNode != null) __obj.updateDynamic("astNode")(astNode)
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (astNode != null) __obj.updateDynamic("astNode")(astNode.asInstanceOf[js.Any])
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComposeInputFieldConfigAsObject]
   }
 }

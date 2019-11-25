@@ -19,8 +19,8 @@ object MessageAttachmentIconHtmlDescriptor {
     iconClass: String = null,
     onClick: () => Unit = null
   ): MessageAttachmentIconHtmlDescriptor = {
-    val __obj = js.Dynamic.literal(iconHtml = iconHtml, tooltip = tooltip.asInstanceOf[js.Any])
-    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)
+    val __obj = js.Dynamic.literal(iconHtml = iconHtml.asInstanceOf[js.Any], tooltip = tooltip.asInstanceOf[js.Any])
+    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction0(onClick))
     __obj.asInstanceOf[MessageAttachmentIconHtmlDescriptor]
   }

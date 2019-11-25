@@ -12,7 +12,7 @@ object Anon_100 {
   @scala.inline
   def apply(`100`: String): Anon_100 = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("100")(`100`)
+    __obj.updateDynamic("100")(`100`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_100]
   }
 }

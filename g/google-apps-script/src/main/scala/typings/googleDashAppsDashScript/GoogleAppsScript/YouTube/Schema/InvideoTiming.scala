@@ -14,9 +14,9 @@ object InvideoTiming {
   @scala.inline
   def apply(durationMs: String = null, offsetMs: String = null, `type`: String = null): InvideoTiming = {
     val __obj = js.Dynamic.literal()
-    if (durationMs != null) __obj.updateDynamic("durationMs")(durationMs)
-    if (offsetMs != null) __obj.updateDynamic("offsetMs")(offsetMs)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (durationMs != null) __obj.updateDynamic("durationMs")(durationMs.asInstanceOf[js.Any])
+    if (offsetMs != null) __obj.updateDynamic("offsetMs")(offsetMs.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvideoTiming]
   }
 }

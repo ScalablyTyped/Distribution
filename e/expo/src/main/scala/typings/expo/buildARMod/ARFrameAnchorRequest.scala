@@ -13,7 +13,7 @@ object ARFrameAnchorRequest {
   @scala.inline
   def apply(ARFaceTrackingConfiguration: Anon_BlendShapesGeometry = null): ARFrameAnchorRequest = {
     val __obj = js.Dynamic.literal()
-    if (ARFaceTrackingConfiguration != null) __obj.updateDynamic("ARFaceTrackingConfiguration")(ARFaceTrackingConfiguration)
+    if (ARFaceTrackingConfiguration != null) __obj.updateDynamic("ARFaceTrackingConfiguration")(ARFaceTrackingConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[ARFrameAnchorRequest]
   }
 }

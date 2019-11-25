@@ -12,7 +12,7 @@ trait Anon_Paths extends js.Object {
 object Anon_Paths {
   @scala.inline
   def apply(paths: js.Array[String], seqments: js.Array[String]): Anon_Paths = {
-    val __obj = js.Dynamic.literal(paths = paths, seqments = seqments)
+    val __obj = js.Dynamic.literal(paths = paths.asInstanceOf[js.Any], seqments = seqments.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Paths]
   }

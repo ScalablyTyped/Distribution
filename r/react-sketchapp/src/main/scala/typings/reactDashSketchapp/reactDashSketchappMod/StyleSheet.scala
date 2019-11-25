@@ -15,7 +15,7 @@ object StyleSheet extends js.Object {
   /**
     * Create an optimized `StyleSheet` reference from a style object.
     */
-  def create[T /* <: StringDictionary[Style | TextStyle] */](t: T): /* import warning: ImportType.apply c Unsupported type mapping: 
+  def create[T /* <: StringDictionary[Style | TextStyle] */](t: T): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: react-sketchapp.react-sketchapp.StyleReference}
     */ typings.reactDashSketchapp.reactDashSketchappStrings.StyleSheet with js.Any = js.native
   def flatten(): Style | TextStyle = js.native

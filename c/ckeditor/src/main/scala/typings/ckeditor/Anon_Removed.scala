@@ -13,7 +13,7 @@ trait Anon_Removed extends js.Object {
 object Anon_Removed {
   @scala.inline
   def apply(removed: js.Array[String], set: StringDictionary[String]): Anon_Removed = {
-    val __obj = js.Dynamic.literal(removed = removed, set = set)
+    val __obj = js.Dynamic.literal(removed = removed.asInstanceOf[js.Any], set = set.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Removed]
   }

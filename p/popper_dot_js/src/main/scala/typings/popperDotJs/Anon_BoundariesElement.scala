@@ -25,9 +25,9 @@ object Anon_BoundariesElement {
   ): Anon_BoundariesElement = {
     val __obj = js.Dynamic.literal()
     if (boundariesElement != null) __obj.updateDynamic("boundariesElement")(boundariesElement.asInstanceOf[js.Any])
-    if (!js.isUndefined(escapeWithReference)) __obj.updateDynamic("escapeWithReference")(escapeWithReference)
+    if (!js.isUndefined(escapeWithReference)) __obj.updateDynamic("escapeWithReference")(escapeWithReference.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority)
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BoundariesElement]
   }
 }

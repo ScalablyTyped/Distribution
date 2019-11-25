@@ -52,13 +52,13 @@ object Rollout {
     trafficPercentStrategy: TrafficPercentStrategy = null
   ): Rollout = {
     val __obj = js.Dynamic.literal()
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
-    if (createdBy != null) __obj.updateDynamic("createdBy")(createdBy)
-    if (deleteServiceStrategy != null) __obj.updateDynamic("deleteServiceStrategy")(deleteServiceStrategy)
-    if (rolloutId != null) __obj.updateDynamic("rolloutId")(rolloutId)
-    if (serviceName != null) __obj.updateDynamic("serviceName")(serviceName)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (trafficPercentStrategy != null) __obj.updateDynamic("trafficPercentStrategy")(trafficPercentStrategy)
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
+    if (createdBy != null) __obj.updateDynamic("createdBy")(createdBy.asInstanceOf[js.Any])
+    if (deleteServiceStrategy != null) __obj.updateDynamic("deleteServiceStrategy")(deleteServiceStrategy.asInstanceOf[js.Any])
+    if (rolloutId != null) __obj.updateDynamic("rolloutId")(rolloutId.asInstanceOf[js.Any])
+    if (serviceName != null) __obj.updateDynamic("serviceName")(serviceName.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (trafficPercentStrategy != null) __obj.updateDynamic("trafficPercentStrategy")(trafficPercentStrategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[Rollout]
   }
 }

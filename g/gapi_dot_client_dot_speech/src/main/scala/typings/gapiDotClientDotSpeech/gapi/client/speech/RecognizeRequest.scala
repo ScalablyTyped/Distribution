@@ -18,8 +18,8 @@ object RecognizeRequest {
   @scala.inline
   def apply(audio: RecognitionAudio = null, config: RecognitionConfig = null): RecognizeRequest = {
     val __obj = js.Dynamic.literal()
-    if (audio != null) __obj.updateDynamic("audio")(audio)
-    if (config != null) __obj.updateDynamic("config")(config)
+    if (audio != null) __obj.updateDynamic("audio")(audio.asInstanceOf[js.Any])
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecognizeRequest]
   }
 }

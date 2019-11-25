@@ -37,9 +37,9 @@ object ManagedSchema {
     ] = null
   ): ManagedSchema = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if ($ref != null) __obj.updateDynamic("$ref")($ref)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if ($ref != null) __obj.updateDynamic("$ref")($ref.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagedSchema]
   }
 }

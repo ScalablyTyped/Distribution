@@ -25,13 +25,13 @@ object GridControlOptions {
     touchTeaser: js.UndefOr[Boolean] = js.undefined
   ): GridControlOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(follow)) __obj.updateDynamic("follow")(follow)
-    if (!js.isUndefined(location)) __obj.updateDynamic("location")(location)
-    if (!js.isUndefined(pinnable)) __obj.updateDynamic("pinnable")(pinnable)
-    if (position != null) __obj.updateDynamic("position")(position)
+    if (!js.isUndefined(follow)) __obj.updateDynamic("follow")(follow.asInstanceOf[js.Any])
+    if (!js.isUndefined(location)) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (!js.isUndefined(pinnable)) __obj.updateDynamic("pinnable")(pinnable.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (sanitizer != null) __obj.updateDynamic("sanitizer")(js.Any.fromFunction1(sanitizer))
-    if (template != null) __obj.updateDynamic("template")(template)
-    if (!js.isUndefined(touchTeaser)) __obj.updateDynamic("touchTeaser")(touchTeaser)
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
+    if (!js.isUndefined(touchTeaser)) __obj.updateDynamic("touchTeaser")(touchTeaser.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridControlOptions]
   }
 }

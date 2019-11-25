@@ -35,7 +35,7 @@ object SnapshotSummary {
     unmatched: Double,
     updated: Double
   ): SnapshotSummary = {
-    val __obj = js.Dynamic.literal(added = added, didUpdate = didUpdate, failure = failure, filesAdded = filesAdded, filesRemoved = filesRemoved, filesUnmatched = filesUnmatched, filesUpdated = filesUpdated, matched = matched, total = total, unchecked = unchecked, unmatched = unmatched, updated = updated)
+    val __obj = js.Dynamic.literal(added = added.asInstanceOf[js.Any], didUpdate = didUpdate.asInstanceOf[js.Any], failure = failure.asInstanceOf[js.Any], filesAdded = filesAdded.asInstanceOf[js.Any], filesRemoved = filesRemoved.asInstanceOf[js.Any], filesUnmatched = filesUnmatched.asInstanceOf[js.Any], filesUpdated = filesUpdated.asInstanceOf[js.Any], matched = matched.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any], unchecked = unchecked.asInstanceOf[js.Any], unmatched = unmatched.asInstanceOf[js.Any], updated = updated.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SnapshotSummary]
   }

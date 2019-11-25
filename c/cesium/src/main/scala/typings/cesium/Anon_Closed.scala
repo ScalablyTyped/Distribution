@@ -26,12 +26,12 @@ object Anon_Closed {
     vertexShaderSource: String = null
   ): Anon_Closed = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(closed)) __obj.updateDynamic("closed")(closed)
-    if (fragmentShaderSource != null) __obj.updateDynamic("fragmentShaderSource")(fragmentShaderSource)
-    if (material != null) __obj.updateDynamic("material")(material)
-    if (renderState != null) __obj.updateDynamic("renderState")(renderState)
-    if (!js.isUndefined(translucent)) __obj.updateDynamic("translucent")(translucent)
-    if (vertexShaderSource != null) __obj.updateDynamic("vertexShaderSource")(vertexShaderSource)
+    if (!js.isUndefined(closed)) __obj.updateDynamic("closed")(closed.asInstanceOf[js.Any])
+    if (fragmentShaderSource != null) __obj.updateDynamic("fragmentShaderSource")(fragmentShaderSource.asInstanceOf[js.Any])
+    if (material != null) __obj.updateDynamic("material")(material.asInstanceOf[js.Any])
+    if (renderState != null) __obj.updateDynamic("renderState")(renderState.asInstanceOf[js.Any])
+    if (!js.isUndefined(translucent)) __obj.updateDynamic("translucent")(translucent.asInstanceOf[js.Any])
+    if (vertexShaderSource != null) __obj.updateDynamic("vertexShaderSource")(vertexShaderSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Closed]
   }
 }

@@ -19,7 +19,7 @@ trait ext_dojo extends js.Object {
 object ext_dojo {
   @scala.inline
   def apply(style: js.Object): ext_dojo = {
-    val __obj = js.Dynamic.literal(style = style)
+    val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ext_dojo]
   }

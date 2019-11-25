@@ -14,9 +14,9 @@ object Anon_Stroke {
   @scala.inline
   def apply(stroke: String = null, `stroke-width`: Int | Double = null, `text-anchor`: String = null): Anon_Stroke = {
     val __obj = js.Dynamic.literal()
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     if (`stroke-width` != null) __obj.updateDynamic("stroke-width")(`stroke-width`.asInstanceOf[js.Any])
-    if (`text-anchor` != null) __obj.updateDynamic("text-anchor")(`text-anchor`)
+    if (`text-anchor` != null) __obj.updateDynamic("text-anchor")(`text-anchor`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Stroke]
   }
 }

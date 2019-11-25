@@ -34,7 +34,7 @@ object ProjectsResource {
     operations: OperationsResource,
     predict: Anon_Accesstoken => Request[GoogleApi__HttpBody]
   ): ProjectsResource = {
-    val __obj = js.Dynamic.literal(getConfig = js.Any.fromFunction1(getConfig), jobs = jobs, models = models, operations = operations, predict = js.Any.fromFunction1(predict))
+    val __obj = js.Dynamic.literal(getConfig = js.Any.fromFunction1(getConfig), jobs = jobs.asInstanceOf[js.Any], models = models.asInstanceOf[js.Any], operations = operations.asInstanceOf[js.Any], predict = js.Any.fromFunction1(predict))
   
     __obj.asInstanceOf[ProjectsResource]
   }

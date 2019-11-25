@@ -64,9 +64,9 @@ object AdditionalOptions {
   ): AdditionalOptions = {
     val __obj = js.Dynamic.literal()
     if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (hashEnabled != null) __obj.updateDynamic("hashEnabled")(hashEnabled)
+    if (hashEnabled != null) __obj.updateDynamic("hashEnabled")(hashEnabled.asInstanceOf[js.Any])
     if (hashingMethod != null) __obj.updateDynamic("hashingMethod")(hashingMethod.asInstanceOf[js.Any])
-    if (nonceEnabled != null) __obj.updateDynamic("nonceEnabled")(nonceEnabled)
+    if (nonceEnabled != null) __obj.updateDynamic("nonceEnabled")(nonceEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdditionalOptions]
   }
 }

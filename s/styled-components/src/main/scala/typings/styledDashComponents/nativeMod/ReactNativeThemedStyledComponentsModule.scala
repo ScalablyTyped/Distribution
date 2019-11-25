@@ -39,7 +39,7 @@ object ReactNativeThemedStyledComponentsModule {
       WithOptionalThemeComponentPropsWithRefCT[typings.styledDashComponents.styledDashComponentsMod.AnyIfEmpty[T]]
     ]
   ): ReactNativeThemedStyledComponentsModule[T, U] = {
-    val __obj = js.Dynamic.literal(ThemeConsumer = ThemeConsumer, ThemeContext = ThemeContext, ThemeProvider = ThemeProvider, css = css, default = default, isStyledComponent = js.Any.fromFunction1(isStyledComponent), withTheme = js.Any.fromFunction1(withTheme))
+    val __obj = js.Dynamic.literal(ThemeConsumer = ThemeConsumer.asInstanceOf[js.Any], ThemeContext = ThemeContext.asInstanceOf[js.Any], ThemeProvider = ThemeProvider.asInstanceOf[js.Any], css = css.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any], isStyledComponent = js.Any.fromFunction1(isStyledComponent), withTheme = js.Any.fromFunction1(withTheme))
   
     __obj.asInstanceOf[ReactNativeThemedStyledComponentsModule[T, U]]
   }

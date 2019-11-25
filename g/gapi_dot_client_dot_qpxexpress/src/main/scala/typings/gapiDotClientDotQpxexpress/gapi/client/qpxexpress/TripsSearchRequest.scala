@@ -13,7 +13,7 @@ object TripsSearchRequest {
   @scala.inline
   def apply(request: TripOptionsRequest = null): TripsSearchRequest = {
     val __obj = js.Dynamic.literal()
-    if (request != null) __obj.updateDynamic("request")(request)
+    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
     __obj.asInstanceOf[TripsSearchRequest]
   }
 }

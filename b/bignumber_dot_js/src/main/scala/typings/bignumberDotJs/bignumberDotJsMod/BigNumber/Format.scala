@@ -37,14 +37,14 @@ object Format {
     suffix: String = null
   ): Format = {
     val __obj = js.Dynamic.literal()
-    if (decimalSeparator != null) __obj.updateDynamic("decimalSeparator")(decimalSeparator)
-    if (fractionGroupSeparator != null) __obj.updateDynamic("fractionGroupSeparator")(fractionGroupSeparator)
+    if (decimalSeparator != null) __obj.updateDynamic("decimalSeparator")(decimalSeparator.asInstanceOf[js.Any])
+    if (fractionGroupSeparator != null) __obj.updateDynamic("fractionGroupSeparator")(fractionGroupSeparator.asInstanceOf[js.Any])
     if (fractionGroupSize != null) __obj.updateDynamic("fractionGroupSize")(fractionGroupSize.asInstanceOf[js.Any])
-    if (groupSeparator != null) __obj.updateDynamic("groupSeparator")(groupSeparator)
+    if (groupSeparator != null) __obj.updateDynamic("groupSeparator")(groupSeparator.asInstanceOf[js.Any])
     if (groupSize != null) __obj.updateDynamic("groupSize")(groupSize.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (secondaryGroupSize != null) __obj.updateDynamic("secondaryGroupSize")(secondaryGroupSize.asInstanceOf[js.Any])
-    if (suffix != null) __obj.updateDynamic("suffix")(suffix)
+    if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
     __obj.asInstanceOf[Format]
   }
 }

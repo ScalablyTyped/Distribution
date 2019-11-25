@@ -12,7 +12,7 @@ object MultipleChoiceSubmission {
   @scala.inline
   def apply(answer: String = null): MultipleChoiceSubmission = {
     val __obj = js.Dynamic.literal()
-    if (answer != null) __obj.updateDynamic("answer")(answer)
+    if (answer != null) __obj.updateDynamic("answer")(answer.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultipleChoiceSubmission]
   }
 }

@@ -33,8 +33,8 @@ object SetNavigationBarColorOptions {
     fail: js.Any => Unit = null,
     success: js.Any => Unit = null
   ): SetNavigationBarColorOptions = {
-    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, frontColor = frontColor.asInstanceOf[js.Any])
-    if (animation != null) __obj.updateDynamic("animation")(animation)
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], frontColor = frontColor.asInstanceOf[js.Any])
+    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))

@@ -30,13 +30,13 @@ object Anon_Cancel {
     query_params: js.Any = null
   ): Anon_Cancel = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (!js.isUndefined(continuous)) __obj.updateDynamic("continuous")(continuous)
-    if (!js.isUndefined(create_target)) __obj.updateDynamic("create_target")(create_target)
-    if (doc_ids != null) __obj.updateDynamic("doc_ids")(doc_ids)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
-    if (proxy != null) __obj.updateDynamic("proxy")(proxy)
-    if (query_params != null) __obj.updateDynamic("query_params")(query_params)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(continuous)) __obj.updateDynamic("continuous")(continuous.asInstanceOf[js.Any])
+    if (!js.isUndefined(create_target)) __obj.updateDynamic("create_target")(create_target.asInstanceOf[js.Any])
+    if (doc_ids != null) __obj.updateDynamic("doc_ids")(doc_ids.asInstanceOf[js.Any])
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
+    if (query_params != null) __obj.updateDynamic("query_params")(query_params.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Cancel]
   }
 }

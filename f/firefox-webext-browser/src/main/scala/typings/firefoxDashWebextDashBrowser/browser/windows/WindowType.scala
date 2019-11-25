@@ -18,3 +18,18 @@ import scala.scalajs.js.annotation._
 */
 trait WindowType extends js.Object
 
+object WindowType {
+  @scala.inline
+  def app: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.app = this.cast("app")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def devtools: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.devtools = this.cast("devtools")
+  @scala.inline
+  def normal: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.normal = this.cast("normal")
+  @scala.inline
+  def panel: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.panel = this.cast("panel")
+  @scala.inline
+  def popup: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.popup = this.cast("popup")
+}
+

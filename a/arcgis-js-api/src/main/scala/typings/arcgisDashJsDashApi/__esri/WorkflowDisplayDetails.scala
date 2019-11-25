@@ -37,7 +37,7 @@ object WorkflowDisplayDetails {
     propertyIsEnumerable: PropertyKey => Boolean,
     steps: js.Array[WorkflowStepDisplayDetails]
   ): WorkflowDisplayDetails = {
-    val __obj = js.Dynamic.literal(annotations = annotations, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), paths = paths, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), steps = steps)
+    val __obj = js.Dynamic.literal(annotations = annotations.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), paths = paths.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), steps = steps.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WorkflowDisplayDetails]
   }

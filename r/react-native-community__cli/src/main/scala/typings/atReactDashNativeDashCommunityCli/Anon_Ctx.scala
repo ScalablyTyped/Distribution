@@ -22,9 +22,9 @@ object Anon_Ctx {
     description: String = null,
     parse: /* val */ String => _ = null
   ): Anon_Ctx = {
-    val __obj = js.Dynamic.literal(name = name)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (parse != null) __obj.updateDynamic("parse")(js.Any.fromFunction1(parse))
     __obj.asInstanceOf[Anon_Ctx]
   }

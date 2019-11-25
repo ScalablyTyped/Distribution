@@ -31,8 +31,8 @@ trait ClassFactory extends js.Object {
 object ClassFactory {
   @scala.inline
   def apply(cacheDir: String, tempFileNaming: TempFileNaming, loader: Wrapper = null): ClassFactory = {
-    val __obj = js.Dynamic.literal(cacheDir = cacheDir, tempFileNaming = tempFileNaming)
-    if (loader != null) __obj.updateDynamic("loader")(loader)
+    val __obj = js.Dynamic.literal(cacheDir = cacheDir.asInstanceOf[js.Any], tempFileNaming = tempFileNaming.asInstanceOf[js.Any])
+    if (loader != null) __obj.updateDynamic("loader")(loader.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassFactory]
   }
 }

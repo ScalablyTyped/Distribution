@@ -14,8 +14,8 @@ trait EmailReadTimesCounts
 object EmailReadTimesCounts {
   @scala.inline
   def apply(Days: js.Array[Anon_DateKey], StringDictionary: /* key */ StringDictionary[js.Any] = null): EmailReadTimesCounts = {
-    val __obj = js.Dynamic.literal(Days = Days)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(Days = Days.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[EmailReadTimesCounts]
   }
 }

@@ -19,9 +19,9 @@ object Anon_Except {
     rooms: js.Array[String] = null
   ): Anon_Except = {
     val __obj = js.Dynamic.literal()
-    if (except != null) __obj.updateDynamic("except")(except)
-    if (flags != null) __obj.updateDynamic("flags")(flags)
-    if (rooms != null) __obj.updateDynamic("rooms")(rooms)
+    if (except != null) __obj.updateDynamic("except")(except.asInstanceOf[js.Any])
+    if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
+    if (rooms != null) __obj.updateDynamic("rooms")(rooms.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Except]
   }
 }

@@ -12,7 +12,7 @@ trait SQL extends js.Object {
 object SQL {
   @scala.inline
   def apply(functions: Anon_C): SQL = {
-    val __obj = js.Dynamic.literal(functions = functions)
+    val __obj = js.Dynamic.literal(functions = functions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SQL]
   }

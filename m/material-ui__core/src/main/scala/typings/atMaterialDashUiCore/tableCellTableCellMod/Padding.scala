@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait Padding extends js.Object
 
+object Padding {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def checkbox: typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.checkbox = this.cast("checkbox")
+  @scala.inline
+  def default: typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.default = this.cast("default")
+  @scala.inline
+  def dense: typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.dense = this.cast("dense")
+  @scala.inline
+  def none: typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.none = this.cast("none")
+}
+

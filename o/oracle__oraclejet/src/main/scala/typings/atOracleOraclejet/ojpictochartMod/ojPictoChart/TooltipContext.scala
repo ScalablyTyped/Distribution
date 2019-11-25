@@ -25,7 +25,7 @@ object TooltipContext {
     name: String,
     parentElement: Element
   ): TooltipContext[K] = {
-    val __obj = js.Dynamic.literal(color = color, componentElement = componentElement, count = count, id = id.asInstanceOf[js.Any], name = name, parentElement = parentElement)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], componentElement = componentElement.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parentElement = parentElement.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TooltipContext[K]]
   }

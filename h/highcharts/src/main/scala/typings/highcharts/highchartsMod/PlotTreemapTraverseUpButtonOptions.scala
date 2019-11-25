@@ -15,7 +15,7 @@ object PlotTreemapTraverseUpButtonOptions {
   @scala.inline
   def apply(position: PlotTreemapTraverseUpButtonPositionOptions = null): PlotTreemapTraverseUpButtonOptions = {
     val __obj = js.Dynamic.literal()
-    if (position != null) __obj.updateDynamic("position")(position)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotTreemapTraverseUpButtonOptions]
   }
 }

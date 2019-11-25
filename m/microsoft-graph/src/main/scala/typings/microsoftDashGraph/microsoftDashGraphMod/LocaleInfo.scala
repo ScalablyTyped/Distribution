@@ -19,8 +19,8 @@ object LocaleInfo {
   @scala.inline
   def apply(displayName: String = null, locale: String = null): LocaleInfo = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocaleInfo]
   }
 }

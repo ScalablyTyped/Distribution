@@ -27,11 +27,11 @@ object ISupports {
     VML: js.Any = null
   ): ISupports = {
     val __obj = js.Dynamic.literal()
-    if (AudioTag != null) __obj.updateDynamic("AudioTag")(AudioTag)
-    if (GeoLocation != null) __obj.updateDynamic("GeoLocation")(GeoLocation)
-    if (SVG != null) __obj.updateDynamic("SVG")(SVG)
-    if (Transitions != null) __obj.updateDynamic("Transitions")(Transitions)
-    if (VML != null) __obj.updateDynamic("VML")(VML)
+    if (AudioTag != null) __obj.updateDynamic("AudioTag")(AudioTag.asInstanceOf[js.Any])
+    if (GeoLocation != null) __obj.updateDynamic("GeoLocation")(GeoLocation.asInstanceOf[js.Any])
+    if (SVG != null) __obj.updateDynamic("SVG")(SVG.asInstanceOf[js.Any])
+    if (Transitions != null) __obj.updateDynamic("Transitions")(Transitions.asInstanceOf[js.Any])
+    if (VML != null) __obj.updateDynamic("VML")(VML.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISupports]
   }
 }

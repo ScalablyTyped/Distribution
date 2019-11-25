@@ -14,7 +14,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(format: String, mergeMultiline: Boolean, tag: String, timeStamp: Boolean): Options = {
-    val __obj = js.Dynamic.literal(format = format, mergeMultiline = mergeMultiline, tag = tag, timeStamp = timeStamp)
+    val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], mergeMultiline = mergeMultiline.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Options]
   }

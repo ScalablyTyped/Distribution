@@ -30,7 +30,7 @@ object ReactionsCreateForTeamDiscussionCommentParams {
     discussion_number: Double,
     team_id: Double
   ): ReactionsCreateForTeamDiscussionCommentParams = {
-    val __obj = js.Dynamic.literal(comment_number = comment_number, content = content.asInstanceOf[js.Any], discussion_number = discussion_number, team_id = team_id)
+    val __obj = js.Dynamic.literal(comment_number = comment_number.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], discussion_number = discussion_number.asInstanceOf[js.Any], team_id = team_id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReactionsCreateForTeamDiscussionCommentParams]
   }

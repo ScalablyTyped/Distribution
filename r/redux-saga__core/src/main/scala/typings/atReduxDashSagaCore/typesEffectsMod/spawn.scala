@@ -14,11 +14,13 @@ object spawn extends js.Object {
     fn: Fn,
     /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type Parameters<Fn> is not an array type */ args: Parameters[Fn]
   ): ForkEffect = js.native
-  def apply[Ctx /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  def apply[Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in Name ]: (this : Ctx, args : ...any): any}
     */ typings.atReduxDashSagaCore.atReduxDashSagaCoreStrings.spawn with js.Any */, Name /* <: String */](
     ctxAndFnName: Anon_Context[Ctx, Name],
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type Parameters<Ctx[Name]> is not an array type */ args: Parameters[/* import warning: ImportType.apply Failed type conversion: Ctx[Name] */ js.Any]
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type Parameters<Ctx[Name]> is not an array type */ args: Parameters[
+      /* import warning: importer.ImportType#apply Failed type conversion: Ctx[Name] */ js.Any
+    ]
   ): ForkEffect = js.native
   def apply[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, _] */](
     ctxAndFn: js.Tuple2[Ctx, Fn],

@@ -23,8 +23,8 @@ object Anon_ItemKeyPreviousItemPreviousKey {
     previousKey: js.Any,
     StringDictionary: /* propName */ StringDictionary[js.Any] = null
   ): Anon_ItemKeyPreviousItemPreviousKey = {
-    val __obj = js.Dynamic.literal(item = item, key = key, previousItem = previousItem, previousKey = previousKey)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], previousItem = previousItem.asInstanceOf[js.Any], previousKey = previousKey.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_ItemKeyPreviousItemPreviousKey]
   }
 }

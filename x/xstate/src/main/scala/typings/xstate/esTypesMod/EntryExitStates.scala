@@ -17,7 +17,7 @@ object EntryExitStates {
     entry: Set[StateNode[TContext, _, OmniEventObject[EventObject]]],
     exit: Set[StateNode[TContext, _, OmniEventObject[EventObject]]]
   ): EntryExitStates[TContext] = {
-    val __obj = js.Dynamic.literal(entry = entry, exit = exit)
+    val __obj = js.Dynamic.literal(entry = entry.asInstanceOf[js.Any], exit = exit.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EntryExitStates[TContext]]
   }

@@ -30,7 +30,7 @@ trait ScrollSpyOptions extends js.Object {
 object ScrollSpyOptions {
   @scala.inline
   def apply(activeClass: String, getActiveElement: String => String, scrollOffset: Double, throttle: Double): ScrollSpyOptions = {
-    val __obj = js.Dynamic.literal(activeClass = activeClass, getActiveElement = js.Any.fromFunction1(getActiveElement), scrollOffset = scrollOffset, throttle = throttle)
+    val __obj = js.Dynamic.literal(activeClass = activeClass.asInstanceOf[js.Any], getActiveElement = js.Any.fromFunction1(getActiveElement), scrollOffset = scrollOffset.asInstanceOf[js.Any], throttle = throttle.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ScrollSpyOptions]
   }

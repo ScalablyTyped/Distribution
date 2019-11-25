@@ -20,10 +20,10 @@ object DefaultMetricsCollectorConfiguration {
     timestamps: js.UndefOr[Boolean] = js.undefined
   ): DefaultMetricsCollectorConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
-    if (register != null) __obj.updateDynamic("register")(register)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    if (register != null) __obj.updateDynamic("register")(register.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(timestamps)) __obj.updateDynamic("timestamps")(timestamps)
+    if (!js.isUndefined(timestamps)) __obj.updateDynamic("timestamps")(timestamps.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultMetricsCollectorConfiguration]
   }
 }

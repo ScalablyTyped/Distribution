@@ -27,9 +27,9 @@ object Anon_AroundSelectorRelation {
     beforeValue: js.UndefOr[Boolean] = js.undefined
   ): Anon_AroundSelectorRelation = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(aroundSelectorRelation)) __obj.updateDynamic("aroundSelectorRelation")(aroundSelectorRelation)
-    if (!js.isUndefined(beforeBlockBegins)) __obj.updateDynamic("beforeBlockBegins")(beforeBlockBegins)
-    if (!js.isUndefined(beforeValue)) __obj.updateDynamic("beforeValue")(beforeValue)
+    if (!js.isUndefined(aroundSelectorRelation)) __obj.updateDynamic("aroundSelectorRelation")(aroundSelectorRelation.asInstanceOf[js.Any])
+    if (!js.isUndefined(beforeBlockBegins)) __obj.updateDynamic("beforeBlockBegins")(beforeBlockBegins.asInstanceOf[js.Any])
+    if (!js.isUndefined(beforeValue)) __obj.updateDynamic("beforeValue")(beforeValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AroundSelectorRelation]
   }
 }

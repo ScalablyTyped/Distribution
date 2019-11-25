@@ -17,7 +17,7 @@ trait EntityMention extends js.Object {
 object EntityMention {
   @scala.inline
   def apply(intent: String, location: js.Array[Double], text: String): EntityMention = {
-    val __obj = js.Dynamic.literal(intent = intent, location = location, text = text)
+    val __obj = js.Dynamic.literal(intent = intent.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EntityMention]
   }

@@ -44,7 +44,7 @@ object TextSupport {
     onEvent: String,
     triggerAction: TriggerActionOptions => Boolean
   ): TextSupport = {
-    val __obj = js.Dynamic.literal(action = action, bubbles = bubbles, cancel = js.Any.fromFunction1(cancel), focusIn = js.Any.fromFunction1(focusIn), focusOut = js.Any.fromFunction1(focusOut), insertNewLine = js.Any.fromFunction1(insertNewLine), keyPress = js.Any.fromFunction1(keyPress), onEvent = onEvent, triggerAction = js.Any.fromFunction1(triggerAction))
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], cancel = js.Any.fromFunction1(cancel), focusIn = js.Any.fromFunction1(focusIn), focusOut = js.Any.fromFunction1(focusOut), insertNewLine = js.Any.fromFunction1(insertNewLine), keyPress = js.Any.fromFunction1(keyPress), onEvent = onEvent.asInstanceOf[js.Any], triggerAction = js.Any.fromFunction1(triggerAction))
   
     __obj.asInstanceOf[TextSupport]
   }

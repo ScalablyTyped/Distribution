@@ -15,7 +15,7 @@ object Anon_C {
     C: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any,
     V: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any
   ): Anon_C = {
-    val __obj = js.Dynamic.literal(C = C, V = V)
+    val __obj = js.Dynamic.literal(C = C.asInstanceOf[js.Any], V = V.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_C]
   }

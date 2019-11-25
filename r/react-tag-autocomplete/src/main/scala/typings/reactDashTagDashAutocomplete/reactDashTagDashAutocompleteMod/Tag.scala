@@ -13,8 +13,8 @@ trait Tag extends js.Object {
 object Tag {
   @scala.inline
   def apply(id: String | Double, name: String, disabled: js.UndefOr[Boolean] = js.undefined): Tag = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tag]
   }
 }

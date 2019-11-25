@@ -26,7 +26,7 @@ object IHeaderGroupParams {
     displayName: String,
     setExpanded: Boolean => Unit
   ): IHeaderGroupParams = {
-    val __obj = js.Dynamic.literal(api = api, columnApi = columnApi, columnGroup = columnGroup, context = context, displayName = displayName, setExpanded = js.Any.fromFunction1(setExpanded))
+    val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], columnApi = columnApi.asInstanceOf[js.Any], columnGroup = columnGroup.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], setExpanded = js.Any.fromFunction1(setExpanded))
   
     __obj.asInstanceOf[IHeaderGroupParams]
   }

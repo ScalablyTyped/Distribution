@@ -17,8 +17,8 @@ object ColorOptions {
   @scala.inline
   def apply(backgroundColor: String = null, color: String = null): ColorOptions = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
-    if (color != null) __obj.updateDynamic("color")(color)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColorOptions]
   }
 }

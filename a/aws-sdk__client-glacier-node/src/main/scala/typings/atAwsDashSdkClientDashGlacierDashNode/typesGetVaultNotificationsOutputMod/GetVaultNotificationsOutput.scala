@@ -22,8 +22,8 @@ trait GetVaultNotificationsOutput extends _OutputTypesUnion {
 object GetVaultNotificationsOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, vaultNotificationConfig: _UnmarshalledVaultNotificationConfig = null): GetVaultNotificationsOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (vaultNotificationConfig != null) __obj.updateDynamic("vaultNotificationConfig")(vaultNotificationConfig)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (vaultNotificationConfig != null) __obj.updateDynamic("vaultNotificationConfig")(vaultNotificationConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetVaultNotificationsOutput]
   }
 }

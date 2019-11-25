@@ -14,7 +14,7 @@ trait Anon_Module extends js.Object {
 object Anon_Module {
   @scala.inline
   def apply(module: CompileIdentifierMetadata, provider: CompileProviderMetadata): Anon_Module = {
-    val __obj = js.Dynamic.literal(module = module, provider = provider)
+    val __obj = js.Dynamic.literal(module = module.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Module]
   }

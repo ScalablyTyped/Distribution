@@ -13,10 +13,14 @@ trait RecordProxy[T] extends js.Object {
   def getDataID(): DataID = js.native
   // If a parent type is provided, provide the child type
   def getLinkedRecord[K /* <: String */](name: K): RecordProxy[
-    NonNullable[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any]
+    NonNullable[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+    ]
   ] = js.native
   def getLinkedRecord[K /* <: String */](name: K, args: Variables): RecordProxy[
-    NonNullable[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any]
+    NonNullable[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+    ]
   ] = js.native
   // If a hint is provided, the return value is guaranteed to be the hint type
   def getLinkedRecord[H](name: String): (RecordProxy[H | js.Object]) | Null = js.native
@@ -24,14 +28,18 @@ trait RecordProxy[T] extends js.Object {
   def getLinkedRecords[K /* <: String */](name: K): js.Array[
     RecordProxy[
       Unarray[
-        NonNullable[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any]
+        NonNullable[
+          /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+        ]
       ]
     ]
   ] = js.native
   def getLinkedRecords[K /* <: String */](name: K, args: Variables): js.Array[
     RecordProxy[
       Unarray[
-        NonNullable[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any]
+        NonNullable[
+          /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+        ]
       ]
     ]
   ] = js.native
@@ -42,8 +50,8 @@ trait RecordProxy[T] extends js.Object {
   def getType(): String = js.native
   def getValue(name: String): Primitive | js.Array[Primitive] = js.native
   def getValue(name: String, args: Variables): Primitive | js.Array[Primitive] = js.native
-  def getValue[K /* <: String */](name: K): /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any = js.native
-  def getValue[K /* <: String */](name: K, args: Variables): /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any = js.native
+  def getValue[K /* <: String */](name: K): /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any = js.native
+  def getValue[K /* <: String */](name: K, args: Variables): /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any = js.native
   def setLinkedRecord(record: Null, name: String): RecordProxy[js.Object] = js.native
   def setLinkedRecord(record: Null, name: String, args: Variables): RecordProxy[js.Object] = js.native
   def setLinkedRecord(record: RecordProxy[js.Object], name: String): RecordProxy[js.Object] = js.native
@@ -51,11 +59,15 @@ trait RecordProxy[T] extends js.Object {
   def setLinkedRecord[K /* <: String */](record: Null, name: K): RecordProxy[T] = js.native
   def setLinkedRecord[K /* <: String */](record: Null, name: K, args: Variables): RecordProxy[T] = js.native
   def setLinkedRecord[K /* <: String */](
-    record: RecordProxy[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any],
+    record: RecordProxy[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+    ],
     name: K
   ): RecordProxy[T] = js.native
   def setLinkedRecord[K /* <: String */](
-    record: RecordProxy[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any],
+    record: RecordProxy[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+    ],
     name: K,
     args: Variables
   ): RecordProxy[T] = js.native
@@ -70,7 +82,9 @@ trait RecordProxy[T] extends js.Object {
   def setLinkedRecords[K /* <: String */](
     records: js.Array[
       (RecordProxy[
-        Unarray[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any]
+        Unarray[
+          /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+        ]
       ]) | Null
     ],
     name: K
@@ -78,7 +92,9 @@ trait RecordProxy[T] extends js.Object {
   def setLinkedRecords[K /* <: String */](
     records: js.Array[
       (RecordProxy[
-        Unarray[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any]
+        Unarray[
+          /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+        ]
       ]) | Null
     ],
     name: K,
@@ -90,9 +106,12 @@ trait RecordProxy[T] extends js.Object {
   def setValue(value: js.Array[Primitive], name: String, args: Variables): RecordProxy[js.Object] = js.native
   def setValue(value: Primitive, name: String): RecordProxy[js.Object] = js.native
   def setValue(value: Primitive, name: String, args: Variables): RecordProxy[js.Object] = js.native
-  def setValue[K /* <: String */](value: /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any, name: K): RecordProxy[T] = js.native
   def setValue[K /* <: String */](
-    value: /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any,
+    value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any,
+    name: K
+  ): RecordProxy[T] = js.native
+  def setValue[K /* <: String */](
+    value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any,
     name: K,
     args: Variables
   ): RecordProxy[T] = js.native

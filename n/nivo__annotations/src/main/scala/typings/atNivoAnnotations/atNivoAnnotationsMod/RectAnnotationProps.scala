@@ -7,7 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined @nivo/annotations.@nivo/annotations.CommonAnnotationProps & {  type  :'rect',   width  :number,   height  :number} */
-trait RectAnnotationProps extends js.Object {
+trait RectAnnotationProps extends AnnotationProps {
   var animate: js.UndefOr[Boolean] = js.undefined
   var containerHeight: Double
   var containerWidth: Double
@@ -44,9 +44,9 @@ object RectAnnotationProps {
     noteTextOffset: Int | Double = null,
     noteWidth: Int | Double = null
   ): RectAnnotationProps = {
-    val __obj = js.Dynamic.literal(containerHeight = containerHeight, containerWidth = containerWidth, height = height, noteX = noteX.asInstanceOf[js.Any], noteY = noteY.asInstanceOf[js.Any], width = width, x = x, y = y)
-    __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
+    val __obj = js.Dynamic.literal(containerHeight = containerHeight.asInstanceOf[js.Any], containerWidth = containerWidth.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], noteX = noteX.asInstanceOf[js.Any], noteY = noteY.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
     if (motionDamping != null) __obj.updateDynamic("motionDamping")(motionDamping.asInstanceOf[js.Any])
     if (motionStiffness != null) __obj.updateDynamic("motionStiffness")(motionStiffness.asInstanceOf[js.Any])
     if (note != null) __obj.updateDynamic("note")(note.asInstanceOf[js.Any])

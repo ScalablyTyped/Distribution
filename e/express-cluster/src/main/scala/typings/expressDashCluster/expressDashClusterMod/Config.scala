@@ -24,9 +24,9 @@ object Config {
   ): Config = {
     val __obj = js.Dynamic.literal()
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (outputStream != null) __obj.updateDynamic("outputStream")(outputStream)
-    if (!js.isUndefined(respawn)) __obj.updateDynamic("respawn")(respawn)
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
+    if (outputStream != null) __obj.updateDynamic("outputStream")(outputStream.asInstanceOf[js.Any])
+    if (!js.isUndefined(respawn)) __obj.updateDynamic("respawn")(respawn.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
     if (workerListener != null) __obj.updateDynamic("workerListener")(js.Any.fromFunction0(workerListener))
     __obj.asInstanceOf[Config]
   }

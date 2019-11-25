@@ -64,14 +64,14 @@ object Address {
   ): Address = {
     val __obj = js.Dynamic.literal()
     if (absoluteAddress != null) __obj.updateDynamic("absoluteAddress")(absoluteAddress.asInstanceOf[js.Any])
-    if (fullyQualifiedName != null) __obj.updateDynamic("fullyQualifiedName")(fullyQualifiedName)
+    if (fullyQualifiedName != null) __obj.updateDynamic("fullyQualifiedName")(fullyQualifiedName.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (offsetFromParent != null) __obj.updateDynamic("offsetFromParent")(offsetFromParent.asInstanceOf[js.Any])
     if (parentIndex != null) __obj.updateDynamic("parentIndex")(parentIndex.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     if (relativeAddress != null) __obj.updateDynamic("relativeAddress")(relativeAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[Address]
   }

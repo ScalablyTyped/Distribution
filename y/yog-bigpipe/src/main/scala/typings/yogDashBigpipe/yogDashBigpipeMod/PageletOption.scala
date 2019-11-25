@@ -30,13 +30,13 @@ object PageletOption {
     locals: js.Object = null,
     mode: mode = null
   ): PageletOption = {
-    val __obj = js.Dynamic.literal(id = id, reqID = reqID, skipAnalysis = skipAnalysis)
-    if (!js.isUndefined(compiled)) __obj.updateDynamic("compiled")(compiled)
-    if (container != null) __obj.updateDynamic("container")(container)
-    if (`for` != null) __obj.updateDynamic("for")(`for`)
-    if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`)
-    if (locals != null) __obj.updateDynamic("locals")(locals)
-    if (mode != null) __obj.updateDynamic("mode")(mode)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], reqID = reqID.asInstanceOf[js.Any], skipAnalysis = skipAnalysis.asInstanceOf[js.Any])
+    if (!js.isUndefined(compiled)) __obj.updateDynamic("compiled")(compiled.asInstanceOf[js.Any])
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (`for` != null) __obj.updateDynamic("for")(`for`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`.asInstanceOf[js.Any])
+    if (locals != null) __obj.updateDynamic("locals")(locals.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageletOption]
   }
 }

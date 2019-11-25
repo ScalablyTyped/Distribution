@@ -20,10 +20,10 @@ object SVGBoundingBoxOptions {
     stroke: js.UndefOr[scala.Boolean] = js.undefined
   ): SVGBoundingBoxOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(clipped)) __obj.updateDynamic("clipped")(clipped)
-    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill)
-    if (!js.isUndefined(markers)) __obj.updateDynamic("markers")(markers)
-    if (!js.isUndefined(stroke)) __obj.updateDynamic("stroke")(stroke)
+    if (!js.isUndefined(clipped)) __obj.updateDynamic("clipped")(clipped.asInstanceOf[js.Any])
+    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    if (!js.isUndefined(markers)) __obj.updateDynamic("markers")(markers.asInstanceOf[js.Any])
+    if (!js.isUndefined(stroke)) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     __obj.asInstanceOf[SVGBoundingBoxOptions]
   }
 }

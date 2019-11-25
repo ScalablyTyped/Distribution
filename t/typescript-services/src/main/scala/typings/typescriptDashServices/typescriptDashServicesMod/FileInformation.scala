@@ -1,6 +1,5 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
-import typings.typescriptDashServices.TypeScript.ByteOrderMark
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class FileInformation protected ()
   extends typings.typescriptDashServices.TypeScript.FileInformation {
-  def this(contents: String, byteOrderMark: ByteOrderMark) = this()
+  def this(contents: String, byteOrderMark: typings.typescriptDashServices.TypeScript.ByteOrderMark) = this()
 }
 

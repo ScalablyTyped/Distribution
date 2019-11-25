@@ -11,7 +11,11 @@ package object chrome {
     * String enums are a combination of 'enum type' and string literal type.
     */
   type IDict[T, K, F] = F
-  type ToStringLiteral[C /* <: js.Object */, K, V] = IDict[C, V, /* import warning: ImportType.apply Failed type conversion: C[V] */ js.Any]
+  type ToStringLiteral[C /* <: js.Object */, K, V] = IDict[
+    C, 
+    V, 
+    /* import warning: importer.ImportType#apply Failed type conversion: C[V] */ js.Any
+  ]
   /** @deprecated Should never be used, used to guide migrations. */
   type deprecated = scala.Nothing
   // #region internal

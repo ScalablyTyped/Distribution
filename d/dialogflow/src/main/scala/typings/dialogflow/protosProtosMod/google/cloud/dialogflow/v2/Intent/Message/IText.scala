@@ -14,7 +14,7 @@ object IText {
   @scala.inline
   def apply(text: js.Array[String] = null): IText = {
     val __obj = js.Dynamic.literal()
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[IText]
   }
 }

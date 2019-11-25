@@ -16,8 +16,8 @@ trait IntValueNode
 object IntValueNode {
   @scala.inline
   def apply(kind: IntValue, value: String, loc: Location = null): IntValueNode = {
-    val __obj = js.Dynamic.literal(kind = kind, value = value)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntValueNode]
   }
 }

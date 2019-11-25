@@ -32,10 +32,10 @@ object _PullRequestSourceReferenceUpdatedEventMetadata {
     repositoryName: String = null
   ): _PullRequestSourceReferenceUpdatedEventMetadata = {
     val __obj = js.Dynamic.literal()
-    if (afterCommitId != null) __obj.updateDynamic("afterCommitId")(afterCommitId)
-    if (beforeCommitId != null) __obj.updateDynamic("beforeCommitId")(beforeCommitId)
-    if (mergeBase != null) __obj.updateDynamic("mergeBase")(mergeBase)
-    if (repositoryName != null) __obj.updateDynamic("repositoryName")(repositoryName)
+    if (afterCommitId != null) __obj.updateDynamic("afterCommitId")(afterCommitId.asInstanceOf[js.Any])
+    if (beforeCommitId != null) __obj.updateDynamic("beforeCommitId")(beforeCommitId.asInstanceOf[js.Any])
+    if (mergeBase != null) __obj.updateDynamic("mergeBase")(mergeBase.asInstanceOf[js.Any])
+    if (repositoryName != null) __obj.updateDynamic("repositoryName")(repositoryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[_PullRequestSourceReferenceUpdatedEventMetadata]
   }
 }

@@ -49,18 +49,18 @@ object AnalyzeParams {
     url: String = null,
     xpath: String = null
   ): AnalyzeParams = {
-    val __obj = js.Dynamic.literal(features = features)
-    if (!js.isUndefined(clean)) __obj.updateDynamic("clean")(clean)
-    if (!js.isUndefined(fallback_to_raw)) __obj.updateDynamic("fallback_to_raw")(fallback_to_raw)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (html != null) __obj.updateDynamic("html")(html)
-    if (language != null) __obj.updateDynamic("language")(language)
+    val __obj = js.Dynamic.literal(features = features.asInstanceOf[js.Any])
+    if (!js.isUndefined(clean)) __obj.updateDynamic("clean")(clean.asInstanceOf[js.Any])
+    if (!js.isUndefined(fallback_to_raw)) __obj.updateDynamic("fallback_to_raw")(fallback_to_raw.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (limit_text_characters != null) __obj.updateDynamic("limit_text_characters")(limit_text_characters.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_analyzed_text)) __obj.updateDynamic("return_analyzed_text")(return_analyzed_text)
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (url != null) __obj.updateDynamic("url")(url)
-    if (xpath != null) __obj.updateDynamic("xpath")(xpath)
+    if (!js.isUndefined(return_analyzed_text)) __obj.updateDynamic("return_analyzed_text")(return_analyzed_text.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (xpath != null) __obj.updateDynamic("xpath")(xpath.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyzeParams]
   }
 }

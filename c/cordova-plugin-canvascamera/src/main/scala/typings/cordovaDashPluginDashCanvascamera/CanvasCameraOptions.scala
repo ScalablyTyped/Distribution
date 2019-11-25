@@ -68,9 +68,9 @@ object CanvasCameraOptions {
   ): CanvasCameraOptions = {
     val __obj = js.Dynamic.literal()
     if (cameraFacing != null) __obj.updateDynamic("cameraFacing")(cameraFacing.asInstanceOf[js.Any])
-    if (canvas != null) __obj.updateDynamic("canvas")(canvas)
-    if (capture != null) __obj.updateDynamic("capture")(capture)
-    if (!js.isUndefined(flashMode)) __obj.updateDynamic("flashMode")(flashMode)
+    if (canvas != null) __obj.updateDynamic("canvas")(canvas.asInstanceOf[js.Any])
+    if (capture != null) __obj.updateDynamic("capture")(capture.asInstanceOf[js.Any])
+    if (!js.isUndefined(flashMode)) __obj.updateDynamic("flashMode")(flashMode.asInstanceOf[js.Any])
     if (fps != null) __obj.updateDynamic("fps")(fps.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (onAfterDraw != null) __obj.updateDynamic("onAfterDraw")(js.Any.fromFunction1(onAfterDraw))

@@ -22,11 +22,11 @@ object SceneOptions {
     resources: js.Array[Res] = null
   ): SceneOptions = {
     val __obj = js.Dynamic.literal()
-    if (hudScene != null) __obj.updateDynamic("hudScene")(hudScene)
+    if (hudScene != null) __obj.updateDynamic("hudScene")(hudScene.asInstanceOf[js.Any])
     if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (resources != null) __obj.updateDynamic("resources")(resources)
+    if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
     __obj.asInstanceOf[SceneOptions]
   }
 }

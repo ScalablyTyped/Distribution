@@ -59,22 +59,22 @@ object DynaTreeDataModel {
     tooltip: String = null,
     unselectable: js.UndefOr[Boolean] = js.undefined
   ): DynaTreeDataModel = {
-    val __obj = js.Dynamic.literal(title = title)
-    if (!js.isUndefined(activate)) __obj.updateDynamic("activate")(activate)
-    if (addClass != null) __obj.updateDynamic("addClass")(addClass)
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (!js.isUndefined(expand)) __obj.updateDynamic("expand")(expand)
-    if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus)
-    if (!js.isUndefined(hideCheckbox)) __obj.updateDynamic("hideCheckbox")(hideCheckbox)
-    if (href != null) __obj.updateDynamic("href")(href)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (!js.isUndefined(isFolder)) __obj.updateDynamic("isFolder")(isFolder)
-    if (!js.isUndefined(isLazy)) __obj.updateDynamic("isLazy")(isLazy)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (!js.isUndefined(noLink)) __obj.updateDynamic("noLink")(noLink)
-    if (!js.isUndefined(select)) __obj.updateDynamic("select")(select)
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
-    if (!js.isUndefined(unselectable)) __obj.updateDynamic("unselectable")(unselectable)
+    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
+    if (!js.isUndefined(activate)) __obj.updateDynamic("activate")(activate.asInstanceOf[js.Any])
+    if (addClass != null) __obj.updateDynamic("addClass")(addClass.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (!js.isUndefined(expand)) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
+    if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideCheckbox)) __obj.updateDynamic("hideCheckbox")(hideCheckbox.asInstanceOf[js.Any])
+    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFolder)) __obj.updateDynamic("isFolder")(isFolder.asInstanceOf[js.Any])
+    if (!js.isUndefined(isLazy)) __obj.updateDynamic("isLazy")(isLazy.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (!js.isUndefined(noLink)) __obj.updateDynamic("noLink")(noLink.asInstanceOf[js.Any])
+    if (!js.isUndefined(select)) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
+    if (!js.isUndefined(unselectable)) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])
     __obj.asInstanceOf[DynaTreeDataModel]
   }
 }

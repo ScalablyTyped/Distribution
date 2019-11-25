@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 trait SerialisedIndexData[T] extends js.Object {
   var documentStore: SerialisedDocumentStore[T]
   var fields: js.Array[String]
-  var index: /* import warning: ImportType.apply c Unsupported type mapping: 
+  var index: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]:? elasticlunr.elasticlunr.InvertedIndexNode}
     */ typings.elasticlunr.elasticlunrStrings.SerialisedIndexData with js.Any
   var pipeline: SerialisedPipeline
@@ -20,14 +20,14 @@ object SerialisedIndexData {
   def apply[T](
     documentStore: SerialisedDocumentStore[T],
     fields: js.Array[String],
-    index: /* import warning: ImportType.apply c Unsupported type mapping: 
+    index: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]:? elasticlunr.elasticlunr.InvertedIndexNode}
     */ typings.elasticlunr.elasticlunrStrings.SerialisedIndexData with js.Any,
     pipeline: SerialisedPipeline,
     ref: String,
     version: String
   ): SerialisedIndexData[T] = {
-    val __obj = js.Dynamic.literal(documentStore = documentStore, fields = fields, index = index, pipeline = pipeline, ref = ref, version = version)
+    val __obj = js.Dynamic.literal(documentStore = documentStore.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], pipeline = pipeline.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SerialisedIndexData[T]]
   }

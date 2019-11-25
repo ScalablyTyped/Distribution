@@ -11,7 +11,7 @@ trait ILogCall extends js.Object {
 object ILogCall {
   @scala.inline
   def apply(logs: js.Array[String]): ILogCall = {
-    val __obj = js.Dynamic.literal(logs = logs)
+    val __obj = js.Dynamic.literal(logs = logs.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ILogCall]
   }

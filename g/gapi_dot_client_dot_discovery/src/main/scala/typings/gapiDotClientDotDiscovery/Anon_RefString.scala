@@ -14,7 +14,7 @@ object Anon_RefString {
   @scala.inline
   def apply($ref: String = null): Anon_RefString = {
     val __obj = js.Dynamic.literal()
-    if ($ref != null) __obj.updateDynamic("$ref")($ref)
+    if ($ref != null) __obj.updateDynamic("$ref")($ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_RefString]
   }
 }

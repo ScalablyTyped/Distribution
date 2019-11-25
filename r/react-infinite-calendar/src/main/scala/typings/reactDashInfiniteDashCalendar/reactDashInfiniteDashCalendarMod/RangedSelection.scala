@@ -14,7 +14,7 @@ trait RangedSelection extends js.Object {
 object RangedSelection {
   @scala.inline
   def apply(end: Date, eventType: EVENT_TYPE, start: Date): RangedSelection = {
-    val __obj = js.Dynamic.literal(end = end, eventType = eventType, start = start)
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], eventType = eventType.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RangedSelection]
   }

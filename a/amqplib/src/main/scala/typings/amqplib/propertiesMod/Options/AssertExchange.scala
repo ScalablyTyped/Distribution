@@ -22,11 +22,11 @@ object AssertExchange {
     internal: js.UndefOr[Boolean] = js.undefined
   ): AssertExchange = {
     val __obj = js.Dynamic.literal()
-    if (alternateExchange != null) __obj.updateDynamic("alternateExchange")(alternateExchange)
-    if (arguments != null) __obj.updateDynamic("arguments")(arguments)
-    if (!js.isUndefined(autoDelete)) __obj.updateDynamic("autoDelete")(autoDelete)
-    if (!js.isUndefined(durable)) __obj.updateDynamic("durable")(durable)
-    if (!js.isUndefined(internal)) __obj.updateDynamic("internal")(internal)
+    if (alternateExchange != null) __obj.updateDynamic("alternateExchange")(alternateExchange.asInstanceOf[js.Any])
+    if (arguments != null) __obj.updateDynamic("arguments")(arguments.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoDelete)) __obj.updateDynamic("autoDelete")(autoDelete.asInstanceOf[js.Any])
+    if (!js.isUndefined(durable)) __obj.updateDynamic("durable")(durable.asInstanceOf[js.Any])
+    if (!js.isUndefined(internal)) __obj.updateDynamic("internal")(internal.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssertExchange]
   }
 }

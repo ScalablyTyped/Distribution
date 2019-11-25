@@ -30,7 +30,7 @@ object Dopri {
     ymid: Vector,
     events: Boolean | VectorBoolean = null
   ): Dopri = {
-    val __obj = js.Dynamic.literal(at = js.Any.fromFunction1(at), f = f, iterations = iterations, msg = msg, x = x, y = y, ymid = ymid)
+    val __obj = js.Dynamic.literal(at = js.Any.fromFunction1(at), f = f.asInstanceOf[js.Any], iterations = iterations.asInstanceOf[js.Any], msg = msg.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], ymid = ymid.asInstanceOf[js.Any])
     if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dopri]
   }

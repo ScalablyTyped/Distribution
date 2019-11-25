@@ -13,8 +13,8 @@ object Anon_BaseURL {
   @scala.inline
   def apply(baseURL: String = null, encodingOverride: String = null): Anon_BaseURL = {
     val __obj = js.Dynamic.literal()
-    if (baseURL != null) __obj.updateDynamic("baseURL")(baseURL)
-    if (encodingOverride != null) __obj.updateDynamic("encodingOverride")(encodingOverride)
+    if (baseURL != null) __obj.updateDynamic("baseURL")(baseURL.asInstanceOf[js.Any])
+    if (encodingOverride != null) __obj.updateDynamic("encodingOverride")(encodingOverride.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BaseURL]
   }
 }

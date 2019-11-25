@@ -1,6 +1,6 @@
 package typings.atAwsDashSdkClientDashS3DashNode.typesGetObjectAclOutputMod
 
-import typings.atAwsDashSdkClientDashS3DashNode.atAwsDashSdkClientDashS3DashNodeStrings.requester
+import typings.atAwsDashSdkClientDashS3DashNode.atAwsDashSdkClientDashS3DashNodeStrings.requester_
 import typings.atAwsDashSdkClientDashS3DashNode.typesOutputTypesUnionMod._OutputTypesUnion
 import typings.atAwsDashSdkClientDashS3DashNode.typesUnderscoreGrantMod._UnmarshalledGrant
 import typings.atAwsDashSdkClientDashS3DashNode.typesUnderscoreOwnerMod._UnmarshalledOwner
@@ -24,7 +24,7 @@ trait GetObjectAclOutput
   /**
     * <p>If present, indicates that the requester was successfully charged for the request.</p>
     */
-  var RequestCharged: js.UndefOr[requester | String] = js.undefined
+  var RequestCharged: js.UndefOr[requester_ | String] = js.undefined
 }
 
 object GetObjectAclOutput {
@@ -33,11 +33,11 @@ object GetObjectAclOutput {
     $metadata: ResponseMetadata,
     Grants: js.Array[_UnmarshalledGrant] = null,
     Owner: _UnmarshalledOwner = null,
-    RequestCharged: requester | String = null
+    RequestCharged: requester_ | String = null
   ): GetObjectAclOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (Grants != null) __obj.updateDynamic("Grants")(Grants)
-    if (Owner != null) __obj.updateDynamic("Owner")(Owner)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (Grants != null) __obj.updateDynamic("Grants")(Grants.asInstanceOf[js.Any])
+    if (Owner != null) __obj.updateDynamic("Owner")(Owner.asInstanceOf[js.Any])
     if (RequestCharged != null) __obj.updateDynamic("RequestCharged")(RequestCharged.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetObjectAclOutput]
   }

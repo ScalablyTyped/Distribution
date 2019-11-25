@@ -37,14 +37,14 @@ object ImagePaint {
     visible: js.UndefOr[Boolean] = js.undefined
   ): ImagePaint = {
     val __obj = js.Dynamic.literal(scaleMode = scaleMode.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
-    if (blendMode != null) __obj.updateDynamic("blendMode")(blendMode)
-    if (filters != null) __obj.updateDynamic("filters")(filters)
-    if (imageHash != null) __obj.updateDynamic("imageHash")(imageHash)
-    if (imageTransform != null) __obj.updateDynamic("imageTransform")(imageTransform)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (blendMode != null) __obj.updateDynamic("blendMode")(blendMode.asInstanceOf[js.Any])
+    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
+    if (imageHash != null) __obj.updateDynamic("imageHash")(imageHash.asInstanceOf[js.Any])
+    if (imageTransform != null) __obj.updateDynamic("imageTransform")(imageTransform.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (scalingFactor != null) __obj.updateDynamic("scalingFactor")(scalingFactor.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImagePaint]
   }
 }

@@ -12,7 +12,7 @@ trait Anon_ChildrenElement extends js.Object {
 object Anon_ChildrenElement {
   @scala.inline
   def apply(children: Element): Anon_ChildrenElement = {
-    val __obj = js.Dynamic.literal(children = children)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ChildrenElement]
   }

@@ -12,7 +12,7 @@ trait ExtensionTermManifest extends js.Object {
 object ExtensionTermManifest {
   @scala.inline
   def apply(mapped: Anon_From): ExtensionTermManifest = {
-    val __obj = js.Dynamic.literal(mapped = mapped)
+    val __obj = js.Dynamic.literal(mapped = mapped.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExtensionTermManifest]
   }

@@ -20,10 +20,10 @@ object RepeatedParams {
     value: Any = null
   ): RepeatedParams = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(local)) __obj.updateDynamic("local")(local)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (!js.isUndefined(local)) __obj.updateDynamic("local")(local.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[RepeatedParams]
   }
 }

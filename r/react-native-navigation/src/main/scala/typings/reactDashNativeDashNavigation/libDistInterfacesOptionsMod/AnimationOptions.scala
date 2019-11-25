@@ -37,11 +37,11 @@ object AnimationOptions {
     showModal: ScreenAnimationOptions = null
   ): AnimationOptions = {
     val __obj = js.Dynamic.literal()
-    if (dismissModal != null) __obj.updateDynamic("dismissModal")(dismissModal)
-    if (pop != null) __obj.updateDynamic("pop")(pop)
-    if (push != null) __obj.updateDynamic("push")(push)
-    if (setRoot != null) __obj.updateDynamic("setRoot")(setRoot)
-    if (showModal != null) __obj.updateDynamic("showModal")(showModal)
+    if (dismissModal != null) __obj.updateDynamic("dismissModal")(dismissModal.asInstanceOf[js.Any])
+    if (pop != null) __obj.updateDynamic("pop")(pop.asInstanceOf[js.Any])
+    if (push != null) __obj.updateDynamic("push")(push.asInstanceOf[js.Any])
+    if (setRoot != null) __obj.updateDynamic("setRoot")(setRoot.asInstanceOf[js.Any])
+    if (showModal != null) __obj.updateDynamic("showModal")(showModal.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationOptions]
   }
 }

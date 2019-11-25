@@ -41,14 +41,14 @@ object WebExtensionLangpackManifest {
     short_name: String = null,
     sources: StringDictionary[Anon_Basepath] = null
   ): WebExtensionLangpackManifest = {
-    val __obj = js.Dynamic.literal(langpack_id = langpack_id, languages = languages, manifest_version = manifest_version, name = name, version = version)
-    if (applications != null) __obj.updateDynamic("applications")(applications)
-    if (author != null) __obj.updateDynamic("author")(author)
-    if (browser_specific_settings != null) __obj.updateDynamic("browser_specific_settings")(browser_specific_settings)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (homepage_url != null) __obj.updateDynamic("homepage_url")(homepage_url)
-    if (short_name != null) __obj.updateDynamic("short_name")(short_name)
-    if (sources != null) __obj.updateDynamic("sources")(sources)
+    val __obj = js.Dynamic.literal(langpack_id = langpack_id.asInstanceOf[js.Any], languages = languages.asInstanceOf[js.Any], manifest_version = manifest_version.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    if (applications != null) __obj.updateDynamic("applications")(applications.asInstanceOf[js.Any])
+    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
+    if (browser_specific_settings != null) __obj.updateDynamic("browser_specific_settings")(browser_specific_settings.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (homepage_url != null) __obj.updateDynamic("homepage_url")(homepage_url.asInstanceOf[js.Any])
+    if (short_name != null) __obj.updateDynamic("short_name")(short_name.asInstanceOf[js.Any])
+    if (sources != null) __obj.updateDynamic("sources")(sources.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebExtensionLangpackManifest]
   }
 }

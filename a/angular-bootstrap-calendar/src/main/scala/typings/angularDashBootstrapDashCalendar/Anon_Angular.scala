@@ -13,7 +13,7 @@ trait Anon_Angular extends js.Object {
 object Anon_Angular {
   @scala.inline
   def apply(angular: IFormats, moment: IFormats): Anon_Angular = {
-    val __obj = js.Dynamic.literal(angular = angular, moment = moment)
+    val __obj = js.Dynamic.literal(angular = angular.asInstanceOf[js.Any], moment = moment.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Angular]
   }

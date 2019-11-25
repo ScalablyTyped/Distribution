@@ -37,11 +37,11 @@ object Service {
     rawTxtRecord: Buffer = null,
     txtRecord: js.Any = null
   ): Service = {
-    val __obj = js.Dynamic.literal(addresses = addresses, flags = flags, fullname = fullname, host = host, interfaceIndex = interfaceIndex, networkInterface = networkInterface, port = port, replyDomain = replyDomain)
-    __obj.updateDynamic("type")(`type`)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (rawTxtRecord != null) __obj.updateDynamic("rawTxtRecord")(rawTxtRecord)
-    if (txtRecord != null) __obj.updateDynamic("txtRecord")(txtRecord)
+    val __obj = js.Dynamic.literal(addresses = addresses.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], fullname = fullname.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], interfaceIndex = interfaceIndex.asInstanceOf[js.Any], networkInterface = networkInterface.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], replyDomain = replyDomain.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (rawTxtRecord != null) __obj.updateDynamic("rawTxtRecord")(rawTxtRecord.asInstanceOf[js.Any])
+    if (txtRecord != null) __obj.updateDynamic("txtRecord")(txtRecord.asInstanceOf[js.Any])
     __obj.asInstanceOf[Service]
   }
 }

@@ -63,10 +63,10 @@ object TimelineEventPropertiesResult {
     item: IdType = null,
     what: TimelineEventPropertiesResultWhatType = null
   ): TimelineEventPropertiesResult = {
-    val __obj = js.Dynamic.literal(event = event, pageX = pageX, pageY = pageY, snappedTime = snappedTime, time = time, x = x, y = y)
+    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], snappedTime = snappedTime.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
     if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
-    if (what != null) __obj.updateDynamic("what")(what)
+    if (what != null) __obj.updateDynamic("what")(what.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineEventPropertiesResult]
   }
 }

@@ -13,7 +13,7 @@ object Anon_Blob {
   @scala.inline
   def apply(`type`: Blob): Anon_Blob = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Blob]
   }
 }

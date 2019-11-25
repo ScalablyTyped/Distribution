@@ -31,11 +31,11 @@ object HTMLSnippets {
     webfonts: String = null
   ): HTMLSnippets = {
     val __obj = js.Dynamic.literal()
-    if (STIXfonts != null) __obj.updateDynamic("STIXfonts")(STIXfonts)
-    if (TeXfonts != null) __obj.updateDynamic("TeXfonts")(TeXfonts)
-    if (closeBox != null) __obj.updateDynamic("closeBox")(closeBox)
-    if (fonts != null) __obj.updateDynamic("fonts")(fonts)
-    if (webfonts != null) __obj.updateDynamic("webfonts")(webfonts)
+    if (STIXfonts != null) __obj.updateDynamic("STIXfonts")(STIXfonts.asInstanceOf[js.Any])
+    if (TeXfonts != null) __obj.updateDynamic("TeXfonts")(TeXfonts.asInstanceOf[js.Any])
+    if (closeBox != null) __obj.updateDynamic("closeBox")(closeBox.asInstanceOf[js.Any])
+    if (fonts != null) __obj.updateDynamic("fonts")(fonts.asInstanceOf[js.Any])
+    if (webfonts != null) __obj.updateDynamic("webfonts")(webfonts.asInstanceOf[js.Any])
     __obj.asInstanceOf[HTMLSnippets]
   }
 }

@@ -141,20 +141,20 @@ object PlotNetworkgraphLayoutAlgorithmOptions {
     `type`: `reingold-fruchterman` = null
   ): PlotNetworkgraphLayoutAlgorithmOptions = {
     val __obj = js.Dynamic.literal()
-    if (approximation != null) __obj.updateDynamic("approximation")(approximation)
-    if (attractiveForce != null) __obj.updateDynamic("attractiveForce")(attractiveForce)
-    if (!js.isUndefined(enableSimulation)) __obj.updateDynamic("enableSimulation")(enableSimulation)
+    if (approximation != null) __obj.updateDynamic("approximation")(approximation.asInstanceOf[js.Any])
+    if (attractiveForce != null) __obj.updateDynamic("attractiveForce")(attractiveForce.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableSimulation)) __obj.updateDynamic("enableSimulation")(enableSimulation.asInstanceOf[js.Any])
     if (friction != null) __obj.updateDynamic("friction")(friction.asInstanceOf[js.Any])
     if (gravitationalConstant != null) __obj.updateDynamic("gravitationalConstant")(gravitationalConstant.asInstanceOf[js.Any])
     if (initialPositionRadius != null) __obj.updateDynamic("initialPositionRadius")(initialPositionRadius.asInstanceOf[js.Any])
     if (initialPositions != null) __obj.updateDynamic("initialPositions")(initialPositions.asInstanceOf[js.Any])
-    if (integration != null) __obj.updateDynamic("integration")(integration)
+    if (integration != null) __obj.updateDynamic("integration")(integration.asInstanceOf[js.Any])
     if (linkLength != null) __obj.updateDynamic("linkLength")(linkLength.asInstanceOf[js.Any])
     if (maxIterations != null) __obj.updateDynamic("maxIterations")(maxIterations.asInstanceOf[js.Any])
     if (maxSpeed != null) __obj.updateDynamic("maxSpeed")(maxSpeed.asInstanceOf[js.Any])
-    if (repulsiveForce != null) __obj.updateDynamic("repulsiveForce")(repulsiveForce)
+    if (repulsiveForce != null) __obj.updateDynamic("repulsiveForce")(repulsiveForce.asInstanceOf[js.Any])
     if (theta != null) __obj.updateDynamic("theta")(theta.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotNetworkgraphLayoutAlgorithmOptions]
   }
 }

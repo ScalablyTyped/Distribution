@@ -41,8 +41,8 @@ object ConfigDescriptor {
     selfPowered: Boolean,
     description: String = null
   ): ConfigDescriptor = {
-    val __obj = js.Dynamic.literal(active = active, configurationValue = configurationValue, extra_data = extra_data, interfaces = interfaces, maxPower = maxPower, remoteWakeup = remoteWakeup, selfPowered = selfPowered)
-    if (description != null) __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], configurationValue = configurationValue.asInstanceOf[js.Any], extra_data = extra_data.asInstanceOf[js.Any], interfaces = interfaces.asInstanceOf[js.Any], maxPower = maxPower.asInstanceOf[js.Any], remoteWakeup = remoteWakeup.asInstanceOf[js.Any], selfPowered = selfPowered.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigDescriptor]
   }
 }

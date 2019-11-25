@@ -22,7 +22,7 @@ trait IProps extends js.Object {
 object IProps {
   @scala.inline
   def apply(children: js.Array[Element], spacing: Double): IProps = {
-    val __obj = js.Dynamic.literal(children = children, spacing = spacing)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], spacing = spacing.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IProps]
   }

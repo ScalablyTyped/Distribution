@@ -13,9 +13,9 @@ trait DataItem extends js.Object {
 object DataItem {
   @scala.inline
   def apply(name: String, `type`: String, components: js.Array[DataItem] = null): DataItem = {
-    val __obj = js.Dynamic.literal(name = name)
-    __obj.updateDynamic("type")(`type`)
-    if (components != null) __obj.updateDynamic("components")(components)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (components != null) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataItem]
   }
 }

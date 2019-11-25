@@ -15,7 +15,7 @@ trait ILayerMouseEventArgs extends js.Object {
 object ILayerMouseEventArgs {
   @scala.inline
   def apply(primitive: IPrimitive): ILayerMouseEventArgs = {
-    val __obj = js.Dynamic.literal(primitive = primitive)
+    val __obj = js.Dynamic.literal(primitive = primitive.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ILayerMouseEventArgs]
   }

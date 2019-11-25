@@ -36,9 +36,9 @@ object ColumnOptions {
   @scala.inline
   def apply(allowNull: js.UndefOr[Boolean] = js.undefined, defaultValue: js.Any = null, field: String = null): ColumnOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowNull)) __obj.updateDynamic("allowNull")(allowNull)
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
-    if (field != null) __obj.updateDynamic("field")(field)
+    if (!js.isUndefined(allowNull)) __obj.updateDynamic("allowNull")(allowNull.asInstanceOf[js.Any])
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnOptions]
   }
 }

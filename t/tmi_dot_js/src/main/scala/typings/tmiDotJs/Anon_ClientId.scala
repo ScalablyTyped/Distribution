@@ -13,8 +13,8 @@ object Anon_ClientId {
   @scala.inline
   def apply(clientId: String = null, debug: js.UndefOr[Boolean] = js.undefined): Anon_ClientId = {
     val __obj = js.Dynamic.literal()
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ClientId]
   }
 }

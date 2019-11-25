@@ -30,10 +30,10 @@ object SimpleRendererProperties {
     visualVariables: js.Array[VisualVariableProperties] = null
   ): SimpleRendererProperties = {
     val __obj = js.Dynamic.literal()
-    if (authoringInfo != null) __obj.updateDynamic("authoringInfo")(authoringInfo)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (symbol != null) __obj.updateDynamic("symbol")(symbol)
-    if (visualVariables != null) __obj.updateDynamic("visualVariables")(visualVariables)
+    if (authoringInfo != null) __obj.updateDynamic("authoringInfo")(authoringInfo.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
+    if (visualVariables != null) __obj.updateDynamic("visualVariables")(visualVariables.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimpleRendererProperties]
   }
 }

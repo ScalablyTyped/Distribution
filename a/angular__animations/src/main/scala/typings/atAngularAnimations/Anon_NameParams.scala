@@ -13,7 +13,7 @@ object Anon_NameParams {
   @scala.inline
   def apply(params: StringDictionary[js.Any] = null): Anon_NameParams = {
     val __obj = js.Dynamic.literal()
-    if (params != null) __obj.updateDynamic("params")(params)
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_NameParams]
   }
 }

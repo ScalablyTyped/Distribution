@@ -17,7 +17,7 @@ trait DroppableEventUIParam extends js.Object {
 object DroppableEventUIParam {
   @scala.inline
   def apply(draggable: JQuery, helper: JQuery, offset: Anon_Left, position: Anon_Left): DroppableEventUIParam = {
-    val __obj = js.Dynamic.literal(draggable = draggable, helper = helper, offset = offset, position = position)
+    val __obj = js.Dynamic.literal(draggable = draggable.asInstanceOf[js.Any], helper = helper.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DroppableEventUIParam]
   }

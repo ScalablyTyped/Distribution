@@ -22,7 +22,7 @@ object WorkItemComment {
     text: String,
     url: String
   ): WorkItemComment = {
-    val __obj = js.Dynamic.literal(_links = _links, revisedBy = revisedBy, revisedDate = revisedDate, revision = revision, text = text, url = url)
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], revisedBy = revisedBy.asInstanceOf[js.Any], revisedDate = revisedDate.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WorkItemComment]
   }

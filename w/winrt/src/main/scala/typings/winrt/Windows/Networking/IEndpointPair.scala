@@ -19,7 +19,7 @@ object IEndpointPair {
     remoteHostName: HostName,
     remoteServiceName: String
   ): IEndpointPair = {
-    val __obj = js.Dynamic.literal(localHostName = localHostName, localServiceName = localServiceName, remoteHostName = remoteHostName, remoteServiceName = remoteServiceName)
+    val __obj = js.Dynamic.literal(localHostName = localHostName.asInstanceOf[js.Any], localServiceName = localServiceName.asInstanceOf[js.Any], remoteHostName = remoteHostName.asInstanceOf[js.Any], remoteServiceName = remoteServiceName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IEndpointPair]
   }

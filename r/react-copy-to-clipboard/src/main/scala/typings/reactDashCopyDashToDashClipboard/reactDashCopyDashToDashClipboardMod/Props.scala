@@ -20,10 +20,10 @@ object Props {
     onCopy: (/* text */ String, /* result */ Boolean) => Unit = null,
     options: Options = null
   ): Props = {
-    val __obj = js.Dynamic.literal(text = text)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (onCopy != null) __obj.updateDynamic("onCopy")(js.Any.fromFunction2(onCopy))
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }
 }

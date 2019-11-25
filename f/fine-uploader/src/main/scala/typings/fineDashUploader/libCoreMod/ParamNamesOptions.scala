@@ -54,12 +54,12 @@ object ParamNamesOptions {
     totalParts: String = null
   ): ParamNamesOptions = {
     val __obj = js.Dynamic.literal()
-    if (chunkSize != null) __obj.updateDynamic("chunkSize")(chunkSize)
-    if (partByteOffset != null) __obj.updateDynamic("partByteOffset")(partByteOffset)
-    if (partIndex != null) __obj.updateDynamic("partIndex")(partIndex)
-    if (resuming != null) __obj.updateDynamic("resuming")(resuming)
-    if (totalFileSize != null) __obj.updateDynamic("totalFileSize")(totalFileSize)
-    if (totalParts != null) __obj.updateDynamic("totalParts")(totalParts)
+    if (chunkSize != null) __obj.updateDynamic("chunkSize")(chunkSize.asInstanceOf[js.Any])
+    if (partByteOffset != null) __obj.updateDynamic("partByteOffset")(partByteOffset.asInstanceOf[js.Any])
+    if (partIndex != null) __obj.updateDynamic("partIndex")(partIndex.asInstanceOf[js.Any])
+    if (resuming != null) __obj.updateDynamic("resuming")(resuming.asInstanceOf[js.Any])
+    if (totalFileSize != null) __obj.updateDynamic("totalFileSize")(totalFileSize.asInstanceOf[js.Any])
+    if (totalParts != null) __obj.updateDynamic("totalParts")(totalParts.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamNamesOptions]
   }
 }

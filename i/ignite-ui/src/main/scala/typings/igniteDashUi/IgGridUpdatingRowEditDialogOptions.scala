@@ -124,19 +124,19 @@ object IgGridUpdatingRowEditDialogOptions {
     width: String | Double = null
   ): IgGridUpdatingRowEditDialogOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
-    if (containment != null) __obj.updateDynamic("containment")(containment)
-    if (dialogTemplate != null) __obj.updateDynamic("dialogTemplate")(dialogTemplate)
-    if (dialogTemplateSelector != null) __obj.updateDynamic("dialogTemplateSelector")(dialogTemplateSelector)
+    if (containment != null) __obj.updateDynamic("containment")(containment.asInstanceOf[js.Any])
+    if (dialogTemplate != null) __obj.updateDynamic("dialogTemplate")(dialogTemplate.asInstanceOf[js.Any])
+    if (dialogTemplateSelector != null) __obj.updateDynamic("dialogTemplateSelector")(dialogTemplateSelector.asInstanceOf[js.Any])
     if (editorsColumnWidth != null) __obj.updateDynamic("editorsColumnWidth")(editorsColumnWidth.asInstanceOf[js.Any])
-    if (editorsTemplate != null) __obj.updateDynamic("editorsTemplate")(editorsTemplate)
-    if (editorsTemplateSelector != null) __obj.updateDynamic("editorsTemplateSelector")(editorsTemplateSelector)
+    if (editorsTemplate != null) __obj.updateDynamic("editorsTemplate")(editorsTemplate.asInstanceOf[js.Any])
+    if (editorsTemplateSelector != null) __obj.updateDynamic("editorsTemplateSelector")(editorsTemplateSelector.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (namesColumnWidth != null) __obj.updateDynamic("namesColumnWidth")(namesColumnWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(showDoneCancelButtons)) __obj.updateDynamic("showDoneCancelButtons")(showDoneCancelButtons)
-    if (!js.isUndefined(showEditorsForHiddenColumns)) __obj.updateDynamic("showEditorsForHiddenColumns")(showEditorsForHiddenColumns)
-    if (!js.isUndefined(showReadonlyEditors)) __obj.updateDynamic("showReadonlyEditors")(showReadonlyEditors)
+    if (!js.isUndefined(showDoneCancelButtons)) __obj.updateDynamic("showDoneCancelButtons")(showDoneCancelButtons.asInstanceOf[js.Any])
+    if (!js.isUndefined(showEditorsForHiddenColumns)) __obj.updateDynamic("showEditorsForHiddenColumns")(showEditorsForHiddenColumns.asInstanceOf[js.Any])
+    if (!js.isUndefined(showReadonlyEditors)) __obj.updateDynamic("showReadonlyEditors")(showReadonlyEditors.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridUpdatingRowEditDialogOptions]
   }

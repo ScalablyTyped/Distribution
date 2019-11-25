@@ -15,7 +15,7 @@ trait Anon_FailedInProgress extends js.Object {
 object Anon_FailedInProgress {
   @scala.inline
   def apply(failed: Double, inProgress: Double, none: Double, pending: Double, succeeded: Double): Anon_FailedInProgress = {
-    val __obj = js.Dynamic.literal(failed = failed, inProgress = inProgress, none = none, pending = pending, succeeded = succeeded)
+    val __obj = js.Dynamic.literal(failed = failed.asInstanceOf[js.Any], inProgress = inProgress.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any], pending = pending.asInstanceOf[js.Any], succeeded = succeeded.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FailedInProgress]
   }

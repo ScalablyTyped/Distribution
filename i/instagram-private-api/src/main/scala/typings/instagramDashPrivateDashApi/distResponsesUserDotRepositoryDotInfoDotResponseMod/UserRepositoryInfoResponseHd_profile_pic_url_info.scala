@@ -13,7 +13,7 @@ trait UserRepositoryInfoResponseHd_profile_pic_url_info extends js.Object {
 object UserRepositoryInfoResponseHd_profile_pic_url_info {
   @scala.inline
   def apply(height: Double, url: String, width: Double): UserRepositoryInfoResponseHd_profile_pic_url_info = {
-    val __obj = js.Dynamic.literal(height = height, url = url, width = width)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UserRepositoryInfoResponseHd_profile_pic_url_info]
   }

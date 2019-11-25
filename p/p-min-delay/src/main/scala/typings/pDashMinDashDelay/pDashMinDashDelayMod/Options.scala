@@ -17,7 +17,7 @@ object Options {
   @scala.inline
   def apply(delayRejection: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(delayRejection)) __obj.updateDynamic("delayRejection")(delayRejection)
+    if (!js.isUndefined(delayRejection)) __obj.updateDynamic("delayRejection")(delayRejection.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

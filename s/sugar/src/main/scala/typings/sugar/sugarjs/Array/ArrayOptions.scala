@@ -10,7 +10,7 @@ trait ArrayOptions extends js.Object {
   var sortIgnore: js.UndefOr[typings.std.RegExp] = js.undefined
   var sortIgnoreCase: js.UndefOr[Boolean] = js.undefined
   var sortNatural: js.UndefOr[Boolean] = js.undefined
-  var sortOrder: js.UndefOr[String] = js.undefined
+  var sortOrder: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object ArrayOptions {
@@ -21,15 +21,15 @@ object ArrayOptions {
     sortIgnore: typings.std.RegExp = null,
     sortIgnoreCase: js.UndefOr[Boolean] = js.undefined,
     sortNatural: js.UndefOr[Boolean] = js.undefined,
-    sortOrder: String = null
+    sortOrder: java.lang.String = null
   ): ArrayOptions = {
     val __obj = js.Dynamic.literal()
-    if (sortCollate != null) __obj.updateDynamic("sortCollate")(sortCollate)
-    if (sortEquivalents != null) __obj.updateDynamic("sortEquivalents")(sortEquivalents)
-    if (sortIgnore != null) __obj.updateDynamic("sortIgnore")(sortIgnore)
-    if (!js.isUndefined(sortIgnoreCase)) __obj.updateDynamic("sortIgnoreCase")(sortIgnoreCase)
-    if (!js.isUndefined(sortNatural)) __obj.updateDynamic("sortNatural")(sortNatural)
-    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder)
+    if (sortCollate != null) __obj.updateDynamic("sortCollate")(sortCollate.asInstanceOf[js.Any])
+    if (sortEquivalents != null) __obj.updateDynamic("sortEquivalents")(sortEquivalents.asInstanceOf[js.Any])
+    if (sortIgnore != null) __obj.updateDynamic("sortIgnore")(sortIgnore.asInstanceOf[js.Any])
+    if (!js.isUndefined(sortIgnoreCase)) __obj.updateDynamic("sortIgnoreCase")(sortIgnoreCase.asInstanceOf[js.Any])
+    if (!js.isUndefined(sortNatural)) __obj.updateDynamic("sortNatural")(sortNatural.asInstanceOf[js.Any])
+    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArrayOptions]
   }
 }

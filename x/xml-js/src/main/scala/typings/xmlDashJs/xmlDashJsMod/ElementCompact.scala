@@ -30,13 +30,13 @@ object ElementCompact {
     _text: String | Double = null
   ): ElementCompact = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (_attributes != null) __obj.updateDynamic("_attributes")(_attributes)
-    if (_cdata != null) __obj.updateDynamic("_cdata")(_cdata)
-    if (_comment != null) __obj.updateDynamic("_comment")(_comment)
-    if (_declaration != null) __obj.updateDynamic("_declaration")(_declaration)
-    if (_doctype != null) __obj.updateDynamic("_doctype")(_doctype)
-    if (_instruction != null) __obj.updateDynamic("_instruction")(_instruction)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (_attributes != null) __obj.updateDynamic("_attributes")(_attributes.asInstanceOf[js.Any])
+    if (_cdata != null) __obj.updateDynamic("_cdata")(_cdata.asInstanceOf[js.Any])
+    if (_comment != null) __obj.updateDynamic("_comment")(_comment.asInstanceOf[js.Any])
+    if (_declaration != null) __obj.updateDynamic("_declaration")(_declaration.asInstanceOf[js.Any])
+    if (_doctype != null) __obj.updateDynamic("_doctype")(_doctype.asInstanceOf[js.Any])
+    if (_instruction != null) __obj.updateDynamic("_instruction")(_instruction.asInstanceOf[js.Any])
     if (_text != null) __obj.updateDynamic("_text")(_text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementCompact]
   }

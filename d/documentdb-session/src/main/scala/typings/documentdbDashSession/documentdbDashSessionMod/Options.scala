@@ -60,10 +60,10 @@ object Options {
     discriminator: js.Object = null,
     ttl: Int | Double = null
   ): Options = {
-    val __obj = js.Dynamic.literal(host = host, key = key)
-    if (collection != null) __obj.updateDynamic("collection")(collection)
-    if (database != null) __obj.updateDynamic("database")(database)
-    if (discriminator != null) __obj.updateDynamic("discriminator")(discriminator)
+    val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
+    if (collection != null) __obj.updateDynamic("collection")(collection.asInstanceOf[js.Any])
+    if (database != null) __obj.updateDynamic("database")(database.asInstanceOf[js.Any])
+    if (discriminator != null) __obj.updateDynamic("discriminator")(discriminator.asInstanceOf[js.Any])
     if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

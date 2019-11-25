@@ -88,13 +88,13 @@ object _KeyMetadata {
     Origin: AWS_KMS | EXTERNAL | String = null,
     ValidTo: Date | String | Double = null
   ): _KeyMetadata = {
-    val __obj = js.Dynamic.literal(KeyId = KeyId)
-    if (AWSAccountId != null) __obj.updateDynamic("AWSAccountId")(AWSAccountId)
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn)
+    val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any])
+    if (AWSAccountId != null) __obj.updateDynamic("AWSAccountId")(AWSAccountId.asInstanceOf[js.Any])
+    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
     if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
     if (DeletionDate != null) __obj.updateDynamic("DeletionDate")(DeletionDate.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description)
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled)
+    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.asInstanceOf[js.Any])
     if (ExpirationModel != null) __obj.updateDynamic("ExpirationModel")(ExpirationModel.asInstanceOf[js.Any])
     if (KeyManager != null) __obj.updateDynamic("KeyManager")(KeyManager.asInstanceOf[js.Any])
     if (KeyState != null) __obj.updateDynamic("KeyState")(KeyState.asInstanceOf[js.Any])

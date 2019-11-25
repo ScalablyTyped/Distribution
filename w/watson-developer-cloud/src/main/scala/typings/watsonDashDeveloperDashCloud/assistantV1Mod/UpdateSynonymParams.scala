@@ -31,10 +31,10 @@ object UpdateSynonymParams {
     new_synonym: String = null,
     return_response: js.UndefOr[Boolean] = js.undefined
   ): UpdateSynonymParams = {
-    val __obj = js.Dynamic.literal(entity = entity, synonym = synonym, value = value, workspace_id = workspace_id)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (new_synonym != null) __obj.updateDynamic("new_synonym")(new_synonym)
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response)
+    val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any], synonym = synonym.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], workspace_id = workspace_id.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (new_synonym != null) __obj.updateDynamic("new_synonym")(new_synonym.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateSynonymParams]
   }
 }

@@ -13,8 +13,8 @@ trait Anon_MethodType extends js.Object {
 object Anon_MethodType {
   @scala.inline
   def apply(method: String, `type`: NotificationType): Anon_MethodType = {
-    val __obj = js.Dynamic.literal(method = method)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_MethodType]
   }
 }

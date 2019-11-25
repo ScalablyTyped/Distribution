@@ -42,7 +42,7 @@ object Framework {
     getExcludedDependencies: /* platform */ Platform => js.Array[String] | Null = null,
     getMainFile: /* platform */ Platform => String | Null = null
   ): Framework = {
-    val __obj = js.Dynamic.literal(defaultAppIdPrefix = defaultAppIdPrefix, distMacOsAppName = distMacOsAppName, isCopyElevateHelper = isCopyElevateHelper, isNpmRebuildRequired = isNpmRebuildRequired, macOsDefaultTargets = macOsDefaultTargets, name = name, prepareApplicationStageDirectory = js.Any.fromFunction1(prepareApplicationStageDirectory), version = version)
+    val __obj = js.Dynamic.literal(defaultAppIdPrefix = defaultAppIdPrefix.asInstanceOf[js.Any], distMacOsAppName = distMacOsAppName.asInstanceOf[js.Any], isCopyElevateHelper = isCopyElevateHelper.asInstanceOf[js.Any], isNpmRebuildRequired = isNpmRebuildRequired.asInstanceOf[js.Any], macOsDefaultTargets = macOsDefaultTargets.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], prepareApplicationStageDirectory = js.Any.fromFunction1(prepareApplicationStageDirectory), version = version.asInstanceOf[js.Any])
     if (afterPack != null) __obj.updateDynamic("afterPack")(js.Any.fromFunction1(afterPack))
     if (beforeCopyExtraFiles != null) __obj.updateDynamic("beforeCopyExtraFiles")(js.Any.fromFunction1(beforeCopyExtraFiles))
     if (createTransformer != null) __obj.updateDynamic("createTransformer")(js.Any.fromFunction0(createTransformer))

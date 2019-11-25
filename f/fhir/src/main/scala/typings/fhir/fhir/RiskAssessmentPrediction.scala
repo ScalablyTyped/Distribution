@@ -75,23 +75,23 @@ object RiskAssessmentPrediction {
     whenPeriod: Period = null,
     whenRange: Range = null
   ): RiskAssessmentPrediction = {
-    val __obj = js.Dynamic.literal(outcome = outcome)
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
-    if (_id != null) __obj.updateDynamic("_id")(_id)
-    if (_probabilityDecimal != null) __obj.updateDynamic("_probabilityDecimal")(_probabilityDecimal)
-    if (_rationale != null) __obj.updateDynamic("_rationale")(_rationale)
-    if (_relativeRisk != null) __obj.updateDynamic("_relativeRisk")(_relativeRisk)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    val __obj = js.Dynamic.literal(outcome = outcome.asInstanceOf[js.Any])
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
+    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
+    if (_probabilityDecimal != null) __obj.updateDynamic("_probabilityDecimal")(_probabilityDecimal.asInstanceOf[js.Any])
+    if (_rationale != null) __obj.updateDynamic("_rationale")(_rationale.asInstanceOf[js.Any])
+    if (_relativeRisk != null) __obj.updateDynamic("_relativeRisk")(_relativeRisk.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
     if (probabilityDecimal != null) __obj.updateDynamic("probabilityDecimal")(probabilityDecimal.asInstanceOf[js.Any])
-    if (probabilityRange != null) __obj.updateDynamic("probabilityRange")(probabilityRange)
-    if (qualitativeRisk != null) __obj.updateDynamic("qualitativeRisk")(qualitativeRisk)
-    if (rationale != null) __obj.updateDynamic("rationale")(rationale)
+    if (probabilityRange != null) __obj.updateDynamic("probabilityRange")(probabilityRange.asInstanceOf[js.Any])
+    if (qualitativeRisk != null) __obj.updateDynamic("qualitativeRisk")(qualitativeRisk.asInstanceOf[js.Any])
+    if (rationale != null) __obj.updateDynamic("rationale")(rationale.asInstanceOf[js.Any])
     if (relativeRisk != null) __obj.updateDynamic("relativeRisk")(relativeRisk.asInstanceOf[js.Any])
-    if (whenPeriod != null) __obj.updateDynamic("whenPeriod")(whenPeriod)
-    if (whenRange != null) __obj.updateDynamic("whenRange")(whenRange)
+    if (whenPeriod != null) __obj.updateDynamic("whenPeriod")(whenPeriod.asInstanceOf[js.Any])
+    if (whenRange != null) __obj.updateDynamic("whenRange")(whenRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[RiskAssessmentPrediction]
   }
 }

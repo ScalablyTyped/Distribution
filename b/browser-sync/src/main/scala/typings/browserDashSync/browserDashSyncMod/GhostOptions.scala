@@ -18,9 +18,9 @@ object GhostOptions {
     scroll: js.UndefOr[Boolean] = js.undefined
   ): GhostOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(clicks)) __obj.updateDynamic("clicks")(clicks)
+    if (!js.isUndefined(clicks)) __obj.updateDynamic("clicks")(clicks.asInstanceOf[js.Any])
     if (forms != null) __obj.updateDynamic("forms")(forms.asInstanceOf[js.Any])
-    if (!js.isUndefined(scroll)) __obj.updateDynamic("scroll")(scroll)
+    if (!js.isUndefined(scroll)) __obj.updateDynamic("scroll")(scroll.asInstanceOf[js.Any])
     __obj.asInstanceOf[GhostOptions]
   }
 }

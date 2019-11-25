@@ -23,8 +23,8 @@ object AxesMinorGridLines {
   @scala.inline
   def apply(dashArray: String = null, visible: js.UndefOr[Boolean] = js.undefined, width: Int | Double = null): AxesMinorGridLines = {
     val __obj = js.Dynamic.literal()
-    if (dashArray != null) __obj.updateDynamic("dashArray")(dashArray)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (dashArray != null) __obj.updateDynamic("dashArray")(dashArray.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[AxesMinorGridLines]
   }

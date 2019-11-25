@@ -12,7 +12,7 @@ trait Anon_RowData extends js.Object {
 object Anon_RowData {
   @scala.inline
   def apply(rowData: js.Array[String | ReactNode]): Anon_RowData = {
-    val __obj = js.Dynamic.literal(rowData = rowData)
+    val __obj = js.Dynamic.literal(rowData = rowData.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_RowData]
   }

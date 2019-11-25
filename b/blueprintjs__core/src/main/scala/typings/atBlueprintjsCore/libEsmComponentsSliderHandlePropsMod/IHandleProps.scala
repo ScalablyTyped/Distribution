@@ -45,14 +45,14 @@ object IHandleProps {
     onRelease: /* newValue */ Double => Unit = null,
     `type`: HandleType = null
   ): IHandleProps = {
-    val __obj = js.Dynamic.literal(value = value)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (intentAfter != null) __obj.updateDynamic("intentAfter")(intentAfter)
-    if (intentBefore != null) __obj.updateDynamic("intentBefore")(intentBefore)
-    if (interactionKind != null) __obj.updateDynamic("interactionKind")(interactionKind)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (intentAfter != null) __obj.updateDynamic("intentAfter")(intentAfter.asInstanceOf[js.Any])
+    if (intentBefore != null) __obj.updateDynamic("intentBefore")(intentBefore.asInstanceOf[js.Any])
+    if (interactionKind != null) __obj.updateDynamic("interactionKind")(interactionKind.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onRelease != null) __obj.updateDynamic("onRelease")(js.Any.fromFunction1(onRelease))
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHandleProps]
   }
 }

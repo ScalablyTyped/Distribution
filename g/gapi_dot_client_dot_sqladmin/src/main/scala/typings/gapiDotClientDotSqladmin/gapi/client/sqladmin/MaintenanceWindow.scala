@@ -25,8 +25,8 @@ object MaintenanceWindow {
     val __obj = js.Dynamic.literal()
     if (day != null) __obj.updateDynamic("day")(day.asInstanceOf[js.Any])
     if (hour != null) __obj.updateDynamic("hour")(hour.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (updateTrack != null) __obj.updateDynamic("updateTrack")(updateTrack)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (updateTrack != null) __obj.updateDynamic("updateTrack")(updateTrack.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaintenanceWindow]
   }
 }

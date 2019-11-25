@@ -24,7 +24,7 @@ trait EnvironmentVars extends js.Object {
 object EnvironmentVars {
   @scala.inline
   def apply(slot: HTMLElement, videoSlot: HTMLVideoElement, videoSlotCanAutoPlay: Boolean): EnvironmentVars = {
-    val __obj = js.Dynamic.literal(slot = slot, videoSlot = videoSlot, videoSlotCanAutoPlay = videoSlotCanAutoPlay)
+    val __obj = js.Dynamic.literal(slot = slot.asInstanceOf[js.Any], videoSlot = videoSlot.asInstanceOf[js.Any], videoSlotCanAutoPlay = videoSlotCanAutoPlay.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EnvironmentVars]
   }

@@ -14,7 +14,7 @@ trait Anon_Horizontal extends js.Object {
 object Anon_Horizontal {
   @scala.inline
   def apply(horizontal: horizontal, vertical: vertical): Anon_Horizontal = {
-    val __obj = js.Dynamic.literal(horizontal = horizontal, vertical = vertical)
+    val __obj = js.Dynamic.literal(horizontal = horizontal.asInstanceOf[js.Any], vertical = vertical.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Horizontal]
   }

@@ -15,7 +15,7 @@ object Anon_CutOffNumber {
   def apply(cutOffNumber: Int | Double = null, exclude: js.Array[unit] = null): Anon_CutOffNumber = {
     val __obj = js.Dynamic.literal()
     if (cutOffNumber != null) __obj.updateDynamic("cutOffNumber")(cutOffNumber.asInstanceOf[js.Any])
-    if (exclude != null) __obj.updateDynamic("exclude")(exclude)
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CutOffNumber]
   }
 }

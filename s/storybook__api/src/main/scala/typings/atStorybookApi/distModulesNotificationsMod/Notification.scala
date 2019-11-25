@@ -12,7 +12,7 @@ trait Notification extends js.Object {
 object Notification {
   @scala.inline
   def apply(id: String, onClear: () => Unit = null): Notification = {
-    val __obj = js.Dynamic.literal(id = id)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     if (onClear != null) __obj.updateDynamic("onClear")(js.Any.fromFunction0(onClear))
     __obj.asInstanceOf[Notification]
   }

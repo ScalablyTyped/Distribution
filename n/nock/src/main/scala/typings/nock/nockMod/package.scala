@@ -6,8 +6,6 @@ import scala.scalajs.js.annotation._
 
 package object nockMod {
   import typings.nock.Anon_Proto
-  import typings.nock.Fn_FieldValue
-  import typings.nock.Fn_Uri
   import typings.node.Buffer
   import typings.node.fsMod.ReadStream
   import typings.node.httpMod.ClientRequest
@@ -34,7 +32,7 @@ package object nockMod {
   */
   type DataMatcher = js.UndefOr[_DataMatcher | Boolean | Double | String | Null | RegExp]
   type InterceptFunction = js.Function3[
-    /* uri */ String | RegExp | Fn_Uri, 
+    /* uri */ String | RegExp | (js.Function1[/* uri */ String, Boolean]), 
     /* requestBody */ js.UndefOr[RequestBodyMatcher], 
     /* interceptorOptions */ js.UndefOr[Options], 
     Interceptor
@@ -57,9 +55,9 @@ package object nockMod {
     - typings.std.RegExp
     - typings.nock.nockMod.DataMatcherArray
     - typings.nock.nockMod.DataMatcherMap
-    - typings.nock.Fn_Body
+    - js.Function1[/ * body * / js.Any, scala.Boolean]
   */
-  type RequestBodyMatcher = _RequestBodyMatcher | String | Buffer | RegExp
-  type RequestHeaderMatcher = String | RegExp | Fn_FieldValue
+  type RequestBodyMatcher = _RequestBodyMatcher | (js.Function1[/* body */ js.Any, Boolean]) | String | Buffer | RegExp
+  type RequestHeaderMatcher = String | RegExp | (js.Function1[/* fieldValue */ String, Boolean])
   type StatusCode = Double
 }

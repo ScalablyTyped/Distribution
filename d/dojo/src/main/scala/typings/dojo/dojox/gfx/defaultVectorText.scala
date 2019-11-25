@@ -66,8 +66,8 @@ object defaultVectorText {
     x: Double,
     y: Double
   ): defaultVectorText = {
-    val __obj = js.Dynamic.literal(align = align, decoration = decoration, fitting = fitting, height = height, leading = leading, text = text, width = width, x = x, y = y)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], decoration = decoration.asInstanceOf[js.Any], fitting = fitting.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], leading = leading.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[defaultVectorText]
   }
 }

@@ -56,10 +56,10 @@ object SignatureV4Init {
     sha256: HashConstructor = null,
     uriEscapePath: js.UndefOr[Boolean] = js.undefined
   ): SignatureV4Init = {
-    val __obj = js.Dynamic.literal(credentials = credentials.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], service = service)
-    if (!js.isUndefined(applyChecksum)) __obj.updateDynamic("applyChecksum")(applyChecksum)
-    if (sha256 != null) __obj.updateDynamic("sha256")(sha256)
-    if (!js.isUndefined(uriEscapePath)) __obj.updateDynamic("uriEscapePath")(uriEscapePath)
+    val __obj = js.Dynamic.literal(credentials = credentials.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any])
+    if (!js.isUndefined(applyChecksum)) __obj.updateDynamic("applyChecksum")(applyChecksum.asInstanceOf[js.Any])
+    if (sha256 != null) __obj.updateDynamic("sha256")(sha256.asInstanceOf[js.Any])
+    if (!js.isUndefined(uriEscapePath)) __obj.updateDynamic("uriEscapePath")(uriEscapePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignatureV4Init]
   }
 }

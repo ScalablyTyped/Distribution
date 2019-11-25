@@ -23,7 +23,7 @@ object ResourceUsage {
     scripts: MemoryUsageDetails,
     xslStyleSheets: MemoryUsageDetails
   ): ResourceUsage = {
-    val __obj = js.Dynamic.literal(cssStyleSheets = cssStyleSheets, fonts = fonts, images = images, other = other, scripts = scripts, xslStyleSheets = xslStyleSheets)
+    val __obj = js.Dynamic.literal(cssStyleSheets = cssStyleSheets.asInstanceOf[js.Any], fonts = fonts.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any], other = other.asInstanceOf[js.Any], scripts = scripts.asInstanceOf[js.Any], xslStyleSheets = xslStyleSheets.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ResourceUsage]
   }

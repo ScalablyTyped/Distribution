@@ -35,9 +35,9 @@ object ContainerPort {
     protocol: ContainerProtocol = null,
     targetPort: Int | Double = null
   ): ContainerPort = {
-    val __obj = js.Dynamic.literal(port = port)
-    if (!js.isUndefined(external)) __obj.updateDynamic("external")(external)
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
+    val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any])
+    if (!js.isUndefined(external)) __obj.updateDynamic("external")(external.asInstanceOf[js.Any])
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     if (targetPort != null) __obj.updateDynamic("targetPort")(targetPort.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContainerPort]
   }

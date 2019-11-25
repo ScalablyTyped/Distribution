@@ -13,8 +13,8 @@ object Anon_Content {
   @scala.inline
   def apply(content: String = null, language: String = null): Anon_Content = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (language != null) __obj.updateDynamic("language")(language)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Content]
   }
 }

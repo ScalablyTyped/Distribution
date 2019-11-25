@@ -14,7 +14,7 @@ object Input {
   @scala.inline
   def apply(input: Anon_CsvInstance = null): Input = {
     val __obj = js.Dynamic.literal()
-    if (input != null) __obj.updateDynamic("input")(input)
+    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
     __obj.asInstanceOf[Input]
   }
 }

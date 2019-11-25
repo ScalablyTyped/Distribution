@@ -22,7 +22,7 @@ trait Anon_4000 extends js.Object {
 object Anon_4000 {
   @scala.inline
   def apply(result: Anon_Admitstate, resultStatus: `6001` | `6002` | `9000` | `4000` | String): Anon_4000 = {
-    val __obj = js.Dynamic.literal(result = result, resultStatus = resultStatus.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any], resultStatus = resultStatus.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_4000]
   }

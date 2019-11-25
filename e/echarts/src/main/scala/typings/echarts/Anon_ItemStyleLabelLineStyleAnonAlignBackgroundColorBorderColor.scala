@@ -27,9 +27,9 @@ object Anon_ItemStyleLabelLineStyleAnonAlignBackgroundColorBorderColor {
     lineStyle: Anon_ColorCurvenessShadowBlur = null
   ): Anon_ItemStyleLabelLineStyleAnonAlignBackgroundColorBorderColor = {
     val __obj = js.Dynamic.literal()
-    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle)
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ItemStyleLabelLineStyleAnonAlignBackgroundColorBorderColor]
   }
 }

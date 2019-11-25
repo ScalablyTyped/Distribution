@@ -46,11 +46,11 @@ object PlaceDetailsRequest {
     region: String = null,
     sessiontoken: String = null
   ): PlaceDetailsRequest = {
-    val __obj = js.Dynamic.literal(placeid = placeid)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (region != null) __obj.updateDynamic("region")(region)
-    if (sessiontoken != null) __obj.updateDynamic("sessiontoken")(sessiontoken)
+    val __obj = js.Dynamic.literal(placeid = placeid.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    if (sessiontoken != null) __obj.updateDynamic("sessiontoken")(sessiontoken.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaceDetailsRequest]
   }
 }

@@ -12,8 +12,8 @@ trait ProvidedProps extends js.Object {
 object ProvidedProps {
   @scala.inline
   def apply(google: GoogleAPI, loaded: js.UndefOr[Boolean] = js.undefined): ProvidedProps = {
-    val __obj = js.Dynamic.literal(google = google)
-    if (!js.isUndefined(loaded)) __obj.updateDynamic("loaded")(loaded)
+    val __obj = js.Dynamic.literal(google = google.asInstanceOf[js.Any])
+    if (!js.isUndefined(loaded)) __obj.updateDynamic("loaded")(loaded.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProvidedProps]
   }
 }

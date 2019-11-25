@@ -14,7 +14,7 @@ object PlayOptions {
   def apply(duration: Int | Double = null, promise: js.UndefOr[Boolean] = js.undefined): PlayOptions = {
     val __obj = js.Dynamic.literal()
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (!js.isUndefined(promise)) __obj.updateDynamic("promise")(promise)
+    if (!js.isUndefined(promise)) __obj.updateDynamic("promise")(promise.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlayOptions]
   }
 }

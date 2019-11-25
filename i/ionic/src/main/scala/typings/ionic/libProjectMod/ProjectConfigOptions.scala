@@ -14,8 +14,8 @@ object ProjectConfigOptions {
   @scala.inline
   def apply(pathPrefix: js.Array[String] = null, `type`: ProjectType = null): ProjectConfigOptions = {
     val __obj = js.Dynamic.literal()
-    if (pathPrefix != null) __obj.updateDynamic("pathPrefix")(pathPrefix)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (pathPrefix != null) __obj.updateDynamic("pathPrefix")(pathPrefix.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectConfigOptions]
   }
 }

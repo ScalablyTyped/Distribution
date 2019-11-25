@@ -20,10 +20,10 @@ object Options {
     wrapContent: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoHide)) __obj.updateDynamic("autoHide")(autoHide)
-    if (classNames != null) __obj.updateDynamic("classNames")(classNames)
+    if (!js.isUndefined(autoHide)) __obj.updateDynamic("autoHide")(autoHide.asInstanceOf[js.Any])
+    if (classNames != null) __obj.updateDynamic("classNames")(classNames.asInstanceOf[js.Any])
     if (scrollbarMinSize != null) __obj.updateDynamic("scrollbarMinSize")(scrollbarMinSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapContent)) __obj.updateDynamic("wrapContent")(wrapContent)
+    if (!js.isUndefined(wrapContent)) __obj.updateDynamic("wrapContent")(wrapContent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

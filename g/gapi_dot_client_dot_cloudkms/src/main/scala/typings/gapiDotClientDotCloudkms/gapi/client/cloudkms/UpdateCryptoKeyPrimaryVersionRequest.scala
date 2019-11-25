@@ -13,7 +13,7 @@ object UpdateCryptoKeyPrimaryVersionRequest {
   @scala.inline
   def apply(cryptoKeyVersionId: String = null): UpdateCryptoKeyPrimaryVersionRequest = {
     val __obj = js.Dynamic.literal()
-    if (cryptoKeyVersionId != null) __obj.updateDynamic("cryptoKeyVersionId")(cryptoKeyVersionId)
+    if (cryptoKeyVersionId != null) __obj.updateDynamic("cryptoKeyVersionId")(cryptoKeyVersionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateCryptoKeyPrimaryVersionRequest]
   }
 }

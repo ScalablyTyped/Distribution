@@ -13,7 +13,7 @@ object OrganizationOwner {
   @scala.inline
   def apply(directoryCustomerId: String = null): OrganizationOwner = {
     val __obj = js.Dynamic.literal()
-    if (directoryCustomerId != null) __obj.updateDynamic("directoryCustomerId")(directoryCustomerId)
+    if (directoryCustomerId != null) __obj.updateDynamic("directoryCustomerId")(directoryCustomerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrganizationOwner]
   }
 }

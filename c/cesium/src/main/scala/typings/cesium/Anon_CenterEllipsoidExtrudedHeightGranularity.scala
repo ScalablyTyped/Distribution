@@ -31,8 +31,8 @@ object Anon_CenterEllipsoidExtrudedHeightGranularity {
     numberOfVerticalLines: Int | Double = null,
     rotation: Int | Double = null
   ): Anon_CenterEllipsoidExtrudedHeightGranularity = {
-    val __obj = js.Dynamic.literal(center = center, semiMajorAxis = semiMajorAxis, semiMinorAxis = semiMinorAxis)
-    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
+    val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], semiMajorAxis = semiMajorAxis.asInstanceOf[js.Any], semiMinorAxis = semiMinorAxis.asInstanceOf[js.Any])
+    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid.asInstanceOf[js.Any])
     if (extrudedHeight != null) __obj.updateDynamic("extrudedHeight")(extrudedHeight.asInstanceOf[js.Any])
     if (granularity != null) __obj.updateDynamic("granularity")(granularity.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])

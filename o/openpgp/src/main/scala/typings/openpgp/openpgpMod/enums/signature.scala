@@ -17,7 +17,8 @@ object signature extends js.Object {
     * 0x00: Signature of a binary document.
     */
   @js.native
-  sealed trait binary extends signature
+  sealed trait binary
+    extends typings.openpgp.openpgpMod.enums.signature
   
   /**
     * 0x12: Casual certification of a User ID and Public-Key packet.
@@ -25,7 +26,8 @@ object signature extends js.Object {
     * verification of the claim of identity.
     */
   @js.native
-  sealed trait cert_casual extends signature
+  sealed trait cert_casual
+    extends typings.openpgp.openpgpMod.enums.signature
   
   /**
     * 0x10: Generic certification of a User ID and Public-Key packet.
@@ -34,7 +36,8 @@ object signature extends js.Object {
     * of the key is in fact the person described by the User ID.
     */
   @js.native
-  sealed trait cert_generic extends signature
+  sealed trait cert_generic
+    extends typings.openpgp.openpgpMod.enums.signature
   
   /**
     * 0x11: Persona certification of a User ID and Public-Key packet.
@@ -42,7 +45,8 @@ object signature extends js.Object {
     * the claim that the owner of this key is the User ID specified.
     */
   @js.native
-  sealed trait cert_persona extends signature
+  sealed trait cert_persona
+    extends typings.openpgp.openpgpMod.enums.signature
   
   /**
     * 0x13: Positive certification of a User ID and Public-Key packet.
@@ -53,7 +57,8 @@ object signature extends js.Object {
     * certifications, but few differentiate between the types.
     */
   @js.native
-  sealed trait cert_positive extends signature
+  sealed trait cert_positive
+    extends typings.openpgp.openpgpMod.enums.signature
   
   /**
     * 0x30: Certification revocation signature
@@ -66,7 +71,8 @@ object signature extends js.Object {
     * certificate.
     */
   @js.native
-  sealed trait cert_revocation extends signature
+  sealed trait cert_revocation
+    extends typings.openpgp.openpgpMod.enums.signature
   
   /**
     * 0x1F: Signature directly on a key
@@ -79,7 +85,8 @@ object signature extends js.Object {
     * name.
     */
   @js.native
-  sealed trait key extends signature
+  sealed trait key
+    extends typings.openpgp.openpgpMod.enums.signature
   
   /**
     * 0x19: Primary Key Binding Signature
@@ -96,7 +103,8 @@ object signature extends js.Object {
     * the first octet).
     */
   @js.native
-  sealed trait key_binding extends signature
+  sealed trait key_binding
+    extends typings.openpgp.openpgpMod.enums.signature
   
   /**
     * 0x20: Key revocation signature
@@ -106,7 +114,8 @@ object signature extends js.Object {
     * considered valid revocation signatures.a
     */
   @js.native
-  sealed trait key_revocation extends signature
+  sealed trait key_revocation
+    extends typings.openpgp.openpgpMod.enums.signature
   
   /**
     * 0x02: Standalone signature.
@@ -116,7 +125,8 @@ object signature extends js.Object {
     * standalone signature.
     */
   @js.native
-  sealed trait standalone extends signature
+  sealed trait standalone
+    extends typings.openpgp.openpgpMod.enums.signature
   
   /**
     * 0x18: Subkey Binding Signature
@@ -129,7 +139,8 @@ object signature extends js.Object {
     * primary key and subkey.
     */
   @js.native
-  sealed trait subkey_binding extends signature
+  sealed trait subkey_binding
+    extends typings.openpgp.openpgpMod.enums.signature
   
   /**
     * 0x28: Subkey revocation signature
@@ -142,14 +153,16 @@ object signature extends js.Object {
     * hash only the key being revoked.
     */
   @js.native
-  sealed trait subkey_revocation extends signature
+  sealed trait subkey_revocation
+    extends typings.openpgp.openpgpMod.enums.signature
   
   /**
     * 0x01: Signature of a canonical text document.
     * Canonicalyzing the document by converting line endings.
     */
   @js.native
-  sealed trait text extends signature
+  sealed trait text
+    extends typings.openpgp.openpgpMod.enums.signature
   
   /**
     * 0x50: Third-Party Confirmation signature.
@@ -162,7 +175,8 @@ object signature extends js.Object {
     * document) that cannot include a target subpacket.
     */
   @js.native
-  sealed trait third_party extends signature
+  sealed trait third_party
+    extends typings.openpgp.openpgpMod.enums.signature
   
   /**
     * 0x40: Timestamp signature.
@@ -170,7 +184,8 @@ object signature extends js.Object {
     * it.
     */
   @js.native
-  sealed trait timestamp extends signature
+  sealed trait timestamp
+    extends typings.openpgp.openpgpMod.enums.signature
   
   /* 0 */ val binary: typings.openpgp.openpgpMod.enums.signature.binary with Double = js.native
   /* 18 */ val cert_casual: typings.openpgp.openpgpMod.enums.signature.cert_casual with Double = js.native
@@ -188,6 +203,6 @@ object signature extends js.Object {
   /* 80 */ val third_party: typings.openpgp.openpgpMod.enums.signature.third_party with Double = js.native
   /* 64 */ val timestamp: typings.openpgp.openpgpMod.enums.signature.timestamp with Double = js.native
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[signature with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.openpgp.openpgpMod.enums.signature with Double] = js.native
 }
 

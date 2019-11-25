@@ -28,7 +28,7 @@ object BuildCompletedEvent {
     buildWarnings: js.Array[BuildRequestValidationResult],
     changes: js.Array[Change]
   ): BuildCompletedEvent = {
-    val __obj = js.Dynamic.literal(build = build, buildErrors = buildErrors, buildId = buildId, buildWarnings = buildWarnings, changes = changes)
+    val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], buildErrors = buildErrors.asInstanceOf[js.Any], buildId = buildId.asInstanceOf[js.Any], buildWarnings = buildWarnings.asInstanceOf[js.Any], changes = changes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BuildCompletedEvent]
   }

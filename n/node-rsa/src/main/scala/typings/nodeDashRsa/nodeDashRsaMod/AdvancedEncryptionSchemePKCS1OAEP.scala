@@ -24,7 +24,7 @@ object AdvancedEncryptionSchemePKCS1OAEP {
     scheme: pkcs1_oaep,
     mgf: (/* data */ Buffer, /* length */ Double, /* hash */ HashingAlgorithm) => Buffer = null
   ): AdvancedEncryptionSchemePKCS1OAEP = {
-    val __obj = js.Dynamic.literal(hash = hash, scheme = scheme)
+    val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], scheme = scheme.asInstanceOf[js.Any])
     if (mgf != null) __obj.updateDynamic("mgf")(js.Any.fromFunction3(mgf))
     __obj.asInstanceOf[AdvancedEncryptionSchemePKCS1OAEP]
   }

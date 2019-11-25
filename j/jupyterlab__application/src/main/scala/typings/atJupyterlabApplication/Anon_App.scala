@@ -35,12 +35,12 @@ object Anon_App {
     hubUser: String = null,
     notFound: String = null
   ): Anon_App = {
-    val __obj = js.Dynamic.literal(app = app, base = base, settings = settings, static = static, themes = themes, tree = tree, workspaces = workspaces)
-    if (hubHost != null) __obj.updateDynamic("hubHost")(hubHost)
-    if (hubPrefix != null) __obj.updateDynamic("hubPrefix")(hubPrefix)
-    if (hubServerName != null) __obj.updateDynamic("hubServerName")(hubServerName)
-    if (hubUser != null) __obj.updateDynamic("hubUser")(hubUser)
-    if (notFound != null) __obj.updateDynamic("notFound")(notFound)
+    val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any], themes = themes.asInstanceOf[js.Any], tree = tree.asInstanceOf[js.Any], workspaces = workspaces.asInstanceOf[js.Any])
+    if (hubHost != null) __obj.updateDynamic("hubHost")(hubHost.asInstanceOf[js.Any])
+    if (hubPrefix != null) __obj.updateDynamic("hubPrefix")(hubPrefix.asInstanceOf[js.Any])
+    if (hubServerName != null) __obj.updateDynamic("hubServerName")(hubServerName.asInstanceOf[js.Any])
+    if (hubUser != null) __obj.updateDynamic("hubUser")(hubUser.asInstanceOf[js.Any])
+    if (notFound != null) __obj.updateDynamic("notFound")(notFound.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_App]
   }
 }

@@ -12,8 +12,8 @@ trait MenuContextProps extends js.Object {
 object MenuContextProps {
   @scala.inline
   def apply(inlineCollapsed: Boolean, antdMenuTheme: MenuTheme = null): MenuContextProps = {
-    val __obj = js.Dynamic.literal(inlineCollapsed = inlineCollapsed)
-    if (antdMenuTheme != null) __obj.updateDynamic("antdMenuTheme")(antdMenuTheme)
+    val __obj = js.Dynamic.literal(inlineCollapsed = inlineCollapsed.asInstanceOf[js.Any])
+    if (antdMenuTheme != null) __obj.updateDynamic("antdMenuTheme")(antdMenuTheme.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuContextProps]
   }
 }

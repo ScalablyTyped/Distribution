@@ -19,9 +19,9 @@ object Anon_AllowEmptyValue {
     allowEmptyValue: js.UndefOr[Boolean] = js.undefined,
     collectionFormat: ParameterCollectionFormat = null
   ): Anon_AllowEmptyValue = {
-    val __obj = js.Dynamic.literal(in = in)
-    if (!js.isUndefined(allowEmptyValue)) __obj.updateDynamic("allowEmptyValue")(allowEmptyValue)
-    if (collectionFormat != null) __obj.updateDynamic("collectionFormat")(collectionFormat)
+    val __obj = js.Dynamic.literal(in = in.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowEmptyValue)) __obj.updateDynamic("allowEmptyValue")(allowEmptyValue.asInstanceOf[js.Any])
+    if (collectionFormat != null) __obj.updateDynamic("collectionFormat")(collectionFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AllowEmptyValue]
   }
 }

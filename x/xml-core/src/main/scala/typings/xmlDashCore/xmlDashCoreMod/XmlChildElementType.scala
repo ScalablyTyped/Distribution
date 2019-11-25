@@ -45,16 +45,16 @@ object XmlChildElementType {
     required: js.UndefOr[Boolean] = js.undefined
   ): XmlChildElementType[T] = {
     val __obj = js.Dynamic.literal()
-    if (converter != null) __obj.updateDynamic("converter")(converter)
+    if (converter != null) __obj.updateDynamic("converter")(converter.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (localName != null) __obj.updateDynamic("localName")(localName)
+    if (localName != null) __obj.updateDynamic("localName")(localName.asInstanceOf[js.Any])
     if (maxOccurs != null) __obj.updateDynamic("maxOccurs")(maxOccurs.asInstanceOf[js.Any])
     if (minOccurs != null) __obj.updateDynamic("minOccurs")(minOccurs.asInstanceOf[js.Any])
-    if (namespaceURI != null) __obj.updateDynamic("namespaceURI")(namespaceURI)
-    if (!js.isUndefined(noRoot)) __obj.updateDynamic("noRoot")(noRoot)
-    if (parser != null) __obj.updateDynamic("parser")(parser)
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
+    if (namespaceURI != null) __obj.updateDynamic("namespaceURI")(namespaceURI.asInstanceOf[js.Any])
+    if (!js.isUndefined(noRoot)) __obj.updateDynamic("noRoot")(noRoot.asInstanceOf[js.Any])
+    if (parser != null) __obj.updateDynamic("parser")(parser.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
     __obj.asInstanceOf[XmlChildElementType[T]]
   }
 }

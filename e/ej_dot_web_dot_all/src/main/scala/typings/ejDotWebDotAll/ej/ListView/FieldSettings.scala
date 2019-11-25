@@ -64,19 +64,19 @@ object FieldSettings {
     text: String = null
   ): FieldSettings = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (imageClass != null) __obj.updateDynamic("imageClass")(imageClass)
-    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
-    if (mouseDown != null) __obj.updateDynamic("mouseDown")(mouseDown)
-    if (mouseUP != null) __obj.updateDynamic("mouseUP")(mouseUP)
-    if (navigateUrl != null) __obj.updateDynamic("navigateUrl")(navigateUrl)
-    if (parentPrimaryKey != null) __obj.updateDynamic("parentPrimaryKey")(parentPrimaryKey)
-    if (!js.isUndefined(persistSelection)) __obj.updateDynamic("persistSelection")(persistSelection)
-    if (!js.isUndefined(preventSelection)) __obj.updateDynamic("preventSelection")(preventSelection)
-    if (primaryKey != null) __obj.updateDynamic("primaryKey")(primaryKey)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (imageClass != null) __obj.updateDynamic("imageClass")(imageClass.asInstanceOf[js.Any])
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
+    if (mouseDown != null) __obj.updateDynamic("mouseDown")(mouseDown.asInstanceOf[js.Any])
+    if (mouseUP != null) __obj.updateDynamic("mouseUP")(mouseUP.asInstanceOf[js.Any])
+    if (navigateUrl != null) __obj.updateDynamic("navigateUrl")(navigateUrl.asInstanceOf[js.Any])
+    if (parentPrimaryKey != null) __obj.updateDynamic("parentPrimaryKey")(parentPrimaryKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(persistSelection)) __obj.updateDynamic("persistSelection")(persistSelection.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventSelection)) __obj.updateDynamic("preventSelection")(preventSelection.asInstanceOf[js.Any])
+    if (primaryKey != null) __obj.updateDynamic("primaryKey")(primaryKey.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldSettings]
   }
 }

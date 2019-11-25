@@ -14,7 +14,7 @@ trait MPrime extends js.Object {
 object MPrime {
   @scala.inline
   def apply(k: BN, n: Double, name: String, p: BN): MPrime = {
-    val __obj = js.Dynamic.literal(k = k, n = n, name = name, p = p)
+    val __obj = js.Dynamic.literal(k = k.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MPrime]
   }

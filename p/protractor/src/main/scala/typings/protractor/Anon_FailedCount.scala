@@ -13,7 +13,7 @@ trait Anon_FailedCount extends js.Object {
 object Anon_FailedCount {
   @scala.inline
   def apply(failedCount: Double, specResults: js.Array[SpecResult]): Anon_FailedCount = {
-    val __obj = js.Dynamic.literal(failedCount = failedCount, specResults = specResults)
+    val __obj = js.Dynamic.literal(failedCount = failedCount.asInstanceOf[js.Any], specResults = specResults.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FailedCount]
   }

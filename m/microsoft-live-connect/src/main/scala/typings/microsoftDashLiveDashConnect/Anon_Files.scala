@@ -21,8 +21,8 @@ object Anon_Files {
   @scala.inline
   def apply(files: js.Array[IFile] = null, folders: js.Array[IFolder] = null): Anon_Files = {
     val __obj = js.Dynamic.literal()
-    if (files != null) __obj.updateDynamic("files")(files)
-    if (folders != null) __obj.updateDynamic("folders")(folders)
+    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
+    if (folders != null) __obj.updateDynamic("folders")(folders.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Files]
   }
 }

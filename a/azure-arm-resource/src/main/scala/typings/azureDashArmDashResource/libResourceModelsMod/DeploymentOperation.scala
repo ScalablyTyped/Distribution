@@ -23,9 +23,9 @@ object DeploymentOperation {
   @scala.inline
   def apply(id: String = null, operationId: String = null, properties: DeploymentOperationProperties = null): DeploymentOperation = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (operationId != null) __obj.updateDynamic("operationId")(operationId)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (operationId != null) __obj.updateDynamic("operationId")(operationId.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeploymentOperation]
   }
 }

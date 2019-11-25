@@ -23,10 +23,10 @@ object Anon_Hosts {
     timeout: Int | Double = null
   ): Anon_Hosts = {
     val __obj = js.Dynamic.literal()
-    if (hosts != null) __obj.updateDynamic("hosts")(hosts)
+    if (hosts != null) __obj.updateDynamic("hosts")(hosts.asInstanceOf[js.Any])
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (!js.isUndefined(`multiple-clients`)) __obj.updateDynamic("multiple-clients")(`multiple-clients`)
-    if (reconnect != null) __obj.updateDynamic("reconnect")(reconnect)
+    if (!js.isUndefined(`multiple-clients`)) __obj.updateDynamic("multiple-clients")(`multiple-clients`.asInstanceOf[js.Any])
+    if (reconnect != null) __obj.updateDynamic("reconnect")(reconnect.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Hosts]
   }

@@ -62,9 +62,9 @@ object AdminReseller_ {
     Subscriptions: SubscriptionsCollection = null
   ): AdminReseller_ = {
     val __obj = js.Dynamic.literal(newAddress = js.Any.fromFunction0(newAddress), newChangePlanRequest = js.Any.fromFunction0(newChangePlanRequest), newCustomer = js.Any.fromFunction0(newCustomer), newRenewalSettings = js.Any.fromFunction0(newRenewalSettings), newSeats = js.Any.fromFunction0(newSeats), newSubscription = js.Any.fromFunction0(newSubscription), newSubscriptionPlan = js.Any.fromFunction0(newSubscriptionPlan), newSubscriptionPlanCommitmentInterval = js.Any.fromFunction0(newSubscriptionPlanCommitmentInterval), newSubscriptionTransferInfo = js.Any.fromFunction0(newSubscriptionTransferInfo), newSubscriptionTrialSettings = js.Any.fromFunction0(newSubscriptionTrialSettings))
-    if (Customers != null) __obj.updateDynamic("Customers")(Customers)
-    if (Resellernotify != null) __obj.updateDynamic("Resellernotify")(Resellernotify)
-    if (Subscriptions != null) __obj.updateDynamic("Subscriptions")(Subscriptions)
+    if (Customers != null) __obj.updateDynamic("Customers")(Customers.asInstanceOf[js.Any])
+    if (Resellernotify != null) __obj.updateDynamic("Resellernotify")(Resellernotify.asInstanceOf[js.Any])
+    if (Subscriptions != null) __obj.updateDynamic("Subscriptions")(Subscriptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdminReseller_]
   }
 }

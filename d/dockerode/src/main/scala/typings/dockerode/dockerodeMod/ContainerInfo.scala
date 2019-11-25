@@ -41,7 +41,7 @@ object ContainerInfo {
     State: String,
     Status: String
   ): ContainerInfo = {
-    val __obj = js.Dynamic.literal(Command = Command, Created = Created, HostConfig = HostConfig, Id = Id, Image = Image, ImageID = ImageID, Labels = Labels, Mounts = Mounts, Names = Names, NetworkSettings = NetworkSettings, Ports = Ports, State = State, Status = Status)
+    val __obj = js.Dynamic.literal(Command = Command.asInstanceOf[js.Any], Created = Created.asInstanceOf[js.Any], HostConfig = HostConfig.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Image = Image.asInstanceOf[js.Any], ImageID = ImageID.asInstanceOf[js.Any], Labels = Labels.asInstanceOf[js.Any], Mounts = Mounts.asInstanceOf[js.Any], Names = Names.asInstanceOf[js.Any], NetworkSettings = NetworkSettings.asInstanceOf[js.Any], Ports = Ports.asInstanceOf[js.Any], State = State.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ContainerInfo]
   }

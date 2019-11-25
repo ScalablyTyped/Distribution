@@ -13,7 +13,7 @@ object AppContext {
   @scala.inline
   def apply(appTypes: js.Array[String] = null): AppContext = {
     val __obj = js.Dynamic.literal()
-    if (appTypes != null) __obj.updateDynamic("appTypes")(appTypes)
+    if (appTypes != null) __obj.updateDynamic("appTypes")(appTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppContext]
   }
 }

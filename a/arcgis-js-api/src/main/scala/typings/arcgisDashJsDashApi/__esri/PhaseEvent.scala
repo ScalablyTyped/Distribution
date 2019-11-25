@@ -37,7 +37,7 @@ object PhaseEvent {
     propertyIsEnumerable: PropertyKey => Boolean,
     time: Double
   ): PhaseEvent = {
-    val __obj = js.Dynamic.literal(constructor = constructor, deltaTime = deltaTime, elapsedFrameTime = elapsedFrameTime, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), time = time)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], deltaTime = deltaTime.asInstanceOf[js.Any], elapsedFrameTime = elapsedFrameTime.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), time = time.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PhaseEvent]
   }

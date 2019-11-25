@@ -31,13 +31,13 @@ object FunctionOptions {
     returns: String = null,
     window: js.UndefOr[Boolean] = js.undefined
   ): FunctionOptions = {
-    val __obj = js.Dynamic.literal(language = language)
+    val __obj = js.Dynamic.literal(language = language.asInstanceOf[js.Any])
     if (behavior != null) __obj.updateDynamic("behavior")(behavior.asInstanceOf[js.Any])
-    if (!js.isUndefined(onNull)) __obj.updateDynamic("onNull")(onNull)
+    if (!js.isUndefined(onNull)) __obj.updateDynamic("onNull")(onNull.asInstanceOf[js.Any])
     if (parallel != null) __obj.updateDynamic("parallel")(parallel.asInstanceOf[js.Any])
-    if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace)
-    if (returns != null) __obj.updateDynamic("returns")(returns)
-    if (!js.isUndefined(window)) __obj.updateDynamic("window")(window)
+    if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace.asInstanceOf[js.Any])
+    if (returns != null) __obj.updateDynamic("returns")(returns.asInstanceOf[js.Any])
+    if (!js.isUndefined(window)) __obj.updateDynamic("window")(window.asInstanceOf[js.Any])
     __obj.asInstanceOf[FunctionOptions]
   }
 }

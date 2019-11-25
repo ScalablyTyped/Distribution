@@ -15,7 +15,7 @@ trait IMongoData extends js.Object {
 object IMongoData {
   @scala.inline
   def apply(event: Anon_CommandName, startedData: Anon_Command, succeeded: Boolean): IMongoData = {
-    val __obj = js.Dynamic.literal(event = event, startedData = startedData, succeeded = succeeded)
+    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], startedData = startedData.asInstanceOf[js.Any], succeeded = succeeded.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IMongoData]
   }

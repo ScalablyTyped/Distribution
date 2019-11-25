@@ -90,12 +90,24 @@ object ^ extends js.Object {
     Observable[_, _]
   ] */](obss: T): Stream[
     js.Tuple6[
-      ValueOfAnObservable[/* import warning: ImportType.apply Failed type conversion: T[0] */ js.Any], 
-      ValueOfAnObservable[/* import warning: ImportType.apply Failed type conversion: T[1] */ js.Any], 
-      ValueOfAnObservable[/* import warning: ImportType.apply Failed type conversion: T[2] */ js.Any], 
-      ValueOfAnObservable[/* import warning: ImportType.apply Failed type conversion: T[3] */ js.Any], 
-      ValueOfAnObservable[/* import warning: ImportType.apply Failed type conversion: T[4] */ js.Any], 
-      ValueOfAnObservable[/* import warning: ImportType.apply Failed type conversion: T[5] */ js.Any]
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[2] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[3] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[4] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[5] */ js.Any
+      ]
     ], 
     _
   ] = js.native
@@ -111,8 +123,8 @@ object ^ extends js.Object {
     obss: T,
     obssP: P,
     combinator: js.Function2[
-      /* import warning: ImportType.apply Failed type conversion: T[0][''] */ /* a */ js.Any, 
-      /* import warning: ImportType.apply Failed type conversion: P[0][''] */ /* b */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: T[0][''] */ /* a */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: P[0][''] */ /* b */ js.Any, 
       K
     ]
   ): Observable[K, _] = js.native
@@ -121,20 +133,24 @@ object ^ extends js.Object {
   @JSName("combine")
   def combine_T_ArrayObservableWildcardWildcard[T /* <: js.Array[Observable[_, _]] */](obss: T): Stream[
     js.Array[
-      ValueOfAnObservable[/* import warning: ImportType.apply Failed type conversion: T[0] */ js.Any]
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
+      ]
     ], 
     _
   ] = js.native
   @JSName("combine")
   def combine_T_ArrayObservableWildcardWildcardP_String[T /* <: js.Array[Observable[_, _]] */, P /* <: String */](obss: T): Stream[
     js.Array[
-      ValueOfAnObservable[/* import warning: ImportType.apply Failed type conversion: T[0] */ js.Any]
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
+      ]
     ], 
     _
   ] = js.native
   @JSName("combine")
   def combine_T_StringDictionaryObservableWildcardWildcard[T /* <: StringDictionary[Observable[_, _]] */](obss: T): Stream[
-    /* import warning: ImportType.apply c Unsupported type mapping: 
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: kefir.kefir.ValueOfAnObservable<T[P]>}
     */ `_backtick^_backtick` with T, 
     _
@@ -142,38 +158,66 @@ object ^ extends js.Object {
   @JSName("combine")
   def combine_T_Tuple2ObservableWildcardWildcardObservableWildcardWildcard[T /* <: js.Tuple2[Observable[_, _], Observable[_, _]] */](obss: T): Stream[
     js.Tuple2[
-      ValueOfAnObservable[/* import warning: ImportType.apply Failed type conversion: T[0] */ js.Any], 
-      ValueOfAnObservable[/* import warning: ImportType.apply Failed type conversion: T[1] */ js.Any]
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any
+      ]
     ], 
     _
   ] = js.native
   @JSName("combine")
   def combine_T_Tuple3ObservableWildcardWildcardObservableWildcardWildcardObservableWildcardWildcard[T /* <: js.Tuple3[Observable[_, _], Observable[_, _], Observable[_, _]] */](obss: T): Stream[
     js.Tuple3[
-      ValueOfAnObservable[/* import warning: ImportType.apply Failed type conversion: T[0] */ js.Any], 
-      ValueOfAnObservable[/* import warning: ImportType.apply Failed type conversion: T[1] */ js.Any], 
-      ValueOfAnObservable[/* import warning: ImportType.apply Failed type conversion: T[2] */ js.Any]
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[2] */ js.Any
+      ]
     ], 
     _
   ] = js.native
   @JSName("combine")
   def combine_T_Tuple4ObservableWildcardWildcardObservableWildcardWildcardObservableWildcardWildcardObservableWildcardWildcard[T /* <: js.Tuple4[Observable[_, _], Observable[_, _], Observable[_, _], Observable[_, _]] */](obss: T): Stream[
     js.Tuple4[
-      ValueOfAnObservable[/* import warning: ImportType.apply Failed type conversion: T[0] */ js.Any], 
-      ValueOfAnObservable[/* import warning: ImportType.apply Failed type conversion: T[1] */ js.Any], 
-      ValueOfAnObservable[/* import warning: ImportType.apply Failed type conversion: T[2] */ js.Any], 
-      ValueOfAnObservable[/* import warning: ImportType.apply Failed type conversion: T[3] */ js.Any]
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[2] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[3] */ js.Any
+      ]
     ], 
     _
   ] = js.native
   @JSName("combine")
   def combine_T_Tuple5ObservableWildcardWildcardObservableWildcardWildcardObservableWildcardWildcardObservableWildcardWildcardObservableWildcardWildcard[T /* <: js.Tuple5[Observable[_, _], Observable[_, _], Observable[_, _], Observable[_, _], Observable[_, _]] */](obss: T): Stream[
     js.Tuple5[
-      ValueOfAnObservable[/* import warning: ImportType.apply Failed type conversion: T[0] */ js.Any], 
-      ValueOfAnObservable[/* import warning: ImportType.apply Failed type conversion: T[1] */ js.Any], 
-      ValueOfAnObservable[/* import warning: ImportType.apply Failed type conversion: T[2] */ js.Any], 
-      ValueOfAnObservable[/* import warning: ImportType.apply Failed type conversion: T[3] */ js.Any], 
-      ValueOfAnObservable[/* import warning: ImportType.apply Failed type conversion: T[4] */ js.Any]
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[2] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[3] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[4] */ js.Any
+      ]
     ], 
     _
   ] = js.native
@@ -188,13 +232,27 @@ object ^ extends js.Object {
     Observable[_, _]
   ] */](obss: T): Stream[
     js.Tuple7[
-      ValueOfAnObservable[/* import warning: ImportType.apply Failed type conversion: T[0] */ js.Any], 
-      ValueOfAnObservable[/* import warning: ImportType.apply Failed type conversion: T[1] */ js.Any], 
-      ValueOfAnObservable[/* import warning: ImportType.apply Failed type conversion: T[2] */ js.Any], 
-      ValueOfAnObservable[/* import warning: ImportType.apply Failed type conversion: T[3] */ js.Any], 
-      ValueOfAnObservable[/* import warning: ImportType.apply Failed type conversion: T[4] */ js.Any], 
-      ValueOfAnObservable[/* import warning: ImportType.apply Failed type conversion: T[5] */ js.Any], 
-      ValueOfAnObservable[/* import warning: ImportType.apply Failed type conversion: T[6] */ js.Any]
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[2] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[3] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[4] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[5] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[6] */ js.Any
+      ]
     ], 
     _
   ] = js.native
@@ -210,14 +268,30 @@ object ^ extends js.Object {
     Observable[_, _]
   ] */](obss: T): Stream[
     js.Tuple8[
-      ValueOfAnObservable[/* import warning: ImportType.apply Failed type conversion: T[0] */ js.Any], 
-      ValueOfAnObservable[/* import warning: ImportType.apply Failed type conversion: T[1] */ js.Any], 
-      ValueOfAnObservable[/* import warning: ImportType.apply Failed type conversion: T[2] */ js.Any], 
-      ValueOfAnObservable[/* import warning: ImportType.apply Failed type conversion: T[3] */ js.Any], 
-      ValueOfAnObservable[/* import warning: ImportType.apply Failed type conversion: T[4] */ js.Any], 
-      ValueOfAnObservable[/* import warning: ImportType.apply Failed type conversion: T[5] */ js.Any], 
-      ValueOfAnObservable[/* import warning: ImportType.apply Failed type conversion: T[6] */ js.Any], 
-      ValueOfAnObservable[/* import warning: ImportType.apply Failed type conversion: T[7] */ js.Any]
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[2] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[3] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[4] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[5] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[6] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[7] */ js.Any
+      ]
     ], 
     _
   ] = js.native

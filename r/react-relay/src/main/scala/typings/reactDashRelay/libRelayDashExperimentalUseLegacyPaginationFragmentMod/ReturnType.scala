@@ -33,7 +33,7 @@ object ReturnType {
     loadPrevious: (/* count */ Double, /* options */ js.UndefOr[Anon_Arg]) => Disposable,
     refetch: RefetchFnDynamic[TQuery, TKey, Options]
   ): ReturnType[TQuery, TKey, TFragmentData] = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], hasNext = hasNext, hasPrevious = hasPrevious, isLoadingNext = isLoadingNext, isLoadingPrevious = isLoadingPrevious, loadNext = js.Any.fromFunction2(loadNext), loadPrevious = js.Any.fromFunction2(loadPrevious), refetch = refetch)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], hasNext = hasNext.asInstanceOf[js.Any], hasPrevious = hasPrevious.asInstanceOf[js.Any], isLoadingNext = isLoadingNext.asInstanceOf[js.Any], isLoadingPrevious = isLoadingPrevious.asInstanceOf[js.Any], loadNext = js.Any.fromFunction2(loadNext), loadPrevious = js.Any.fromFunction2(loadPrevious), refetch = refetch.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReturnType[TQuery, TKey, TFragmentData]]
   }

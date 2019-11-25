@@ -32,16 +32,16 @@ object IPublishOptions {
     retain: js.UndefOr[Boolean] = js.undefined
   ): IPublishOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(acknowledge)) __obj.updateDynamic("acknowledge")(acknowledge)
-    if (!js.isUndefined(disclose_me)) __obj.updateDynamic("disclose_me")(disclose_me)
-    if (eligible != null) __obj.updateDynamic("eligible")(eligible)
-    if (eligible_authid != null) __obj.updateDynamic("eligible_authid")(eligible_authid)
-    if (eligible_authrole != null) __obj.updateDynamic("eligible_authrole")(eligible_authrole)
-    if (exclude != null) __obj.updateDynamic("exclude")(exclude)
-    if (exclude_authid != null) __obj.updateDynamic("exclude_authid")(exclude_authid)
-    if (exclude_authrole != null) __obj.updateDynamic("exclude_authrole")(exclude_authrole)
-    if (!js.isUndefined(exclude_me)) __obj.updateDynamic("exclude_me")(exclude_me)
-    if (!js.isUndefined(retain)) __obj.updateDynamic("retain")(retain)
+    if (!js.isUndefined(acknowledge)) __obj.updateDynamic("acknowledge")(acknowledge.asInstanceOf[js.Any])
+    if (!js.isUndefined(disclose_me)) __obj.updateDynamic("disclose_me")(disclose_me.asInstanceOf[js.Any])
+    if (eligible != null) __obj.updateDynamic("eligible")(eligible.asInstanceOf[js.Any])
+    if (eligible_authid != null) __obj.updateDynamic("eligible_authid")(eligible_authid.asInstanceOf[js.Any])
+    if (eligible_authrole != null) __obj.updateDynamic("eligible_authrole")(eligible_authrole.asInstanceOf[js.Any])
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
+    if (exclude_authid != null) __obj.updateDynamic("exclude_authid")(exclude_authid.asInstanceOf[js.Any])
+    if (exclude_authrole != null) __obj.updateDynamic("exclude_authrole")(exclude_authrole.asInstanceOf[js.Any])
+    if (!js.isUndefined(exclude_me)) __obj.updateDynamic("exclude_me")(exclude_me.asInstanceOf[js.Any])
+    if (!js.isUndefined(retain)) __obj.updateDynamic("retain")(retain.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPublishOptions]
   }
 }

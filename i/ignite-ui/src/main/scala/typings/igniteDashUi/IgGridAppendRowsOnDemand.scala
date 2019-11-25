@@ -97,19 +97,19 @@ object IgGridAppendRowsOnDemand {
     `type`: String = null
   ): IgGridAppendRowsOnDemand = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (chunkIndexUrlKey != null) __obj.updateDynamic("chunkIndexUrlKey")(chunkIndexUrlKey)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (chunkIndexUrlKey != null) __obj.updateDynamic("chunkIndexUrlKey")(chunkIndexUrlKey.asInstanceOf[js.Any])
     if (chunkSize != null) __obj.updateDynamic("chunkSize")(chunkSize.asInstanceOf[js.Any])
-    if (chunkSizeUrlKey != null) __obj.updateDynamic("chunkSizeUrlKey")(chunkSizeUrlKey)
+    if (chunkSizeUrlKey != null) __obj.updateDynamic("chunkSizeUrlKey")(chunkSizeUrlKey.asInstanceOf[js.Any])
     if (currentChunkIndex != null) __obj.updateDynamic("currentChunkIndex")(currentChunkIndex.asInstanceOf[js.Any])
     if (defaultChunkIndex != null) __obj.updateDynamic("defaultChunkIndex")(defaultChunkIndex.asInstanceOf[js.Any])
-    if (loadMoreDataButtonText != null) __obj.updateDynamic("loadMoreDataButtonText")(loadMoreDataButtonText)
-    if (loadTrigger != null) __obj.updateDynamic("loadTrigger")(loadTrigger)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (recordCountKey != null) __obj.updateDynamic("recordCountKey")(recordCountKey)
+    if (loadMoreDataButtonText != null) __obj.updateDynamic("loadMoreDataButtonText")(loadMoreDataButtonText.asInstanceOf[js.Any])
+    if (loadTrigger != null) __obj.updateDynamic("loadTrigger")(loadTrigger.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
+    if (recordCountKey != null) __obj.updateDynamic("recordCountKey")(recordCountKey.asInstanceOf[js.Any])
     if (rowsRequested != null) __obj.updateDynamic("rowsRequested")(js.Any.fromFunction2(rowsRequested))
     if (rowsRequesting != null) __obj.updateDynamic("rowsRequesting")(js.Any.fromFunction2(rowsRequesting))
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridAppendRowsOnDemand]
   }
 }

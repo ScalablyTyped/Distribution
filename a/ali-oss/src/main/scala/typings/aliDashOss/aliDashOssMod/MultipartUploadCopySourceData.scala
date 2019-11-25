@@ -17,7 +17,7 @@ trait MultipartUploadCopySourceData extends js.Object {
 object MultipartUploadCopySourceData {
   @scala.inline
   def apply(endOffset: Double, sourceBucketName: String, sourceKey: String, startOffset: Double): MultipartUploadCopySourceData = {
-    val __obj = js.Dynamic.literal(endOffset = endOffset, sourceBucketName = sourceBucketName, sourceKey = sourceKey, startOffset = startOffset)
+    val __obj = js.Dynamic.literal(endOffset = endOffset.asInstanceOf[js.Any], sourceBucketName = sourceBucketName.asInstanceOf[js.Any], sourceKey = sourceKey.asInstanceOf[js.Any], startOffset = startOffset.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MultipartUploadCopySourceData]
   }

@@ -39,11 +39,11 @@ object EnvironmentForkedConfigurationPropertyDefinition {
     internal: js.UndefOr[Boolean] = js.undefined,
     resolvedType: String = null
   ): EnvironmentForkedConfigurationPropertyDefinition = {
-    val __obj = js.Dynamic.literal(browser = browser, documentation = documentation, inputType = inputType, node = node, universal = universal)
-    __obj.updateDynamic("type")(`type`)
-    if (imports != null) __obj.updateDynamic("imports")(imports)
-    if (!js.isUndefined(internal)) __obj.updateDynamic("internal")(internal)
-    if (resolvedType != null) __obj.updateDynamic("resolvedType")(resolvedType)
+    val __obj = js.Dynamic.literal(browser = browser.asInstanceOf[js.Any], documentation = documentation.asInstanceOf[js.Any], inputType = inputType.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], universal = universal.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (imports != null) __obj.updateDynamic("imports")(imports.asInstanceOf[js.Any])
+    if (!js.isUndefined(internal)) __obj.updateDynamic("internal")(internal.asInstanceOf[js.Any])
+    if (resolvedType != null) __obj.updateDynamic("resolvedType")(resolvedType.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnvironmentForkedConfigurationPropertyDefinition]
   }
 }

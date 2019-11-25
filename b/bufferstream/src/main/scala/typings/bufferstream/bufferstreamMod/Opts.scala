@@ -39,11 +39,11 @@ object Opts {
     split: js.Any = null
   ): Opts = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(blocking)) __obj.updateDynamic("blocking")(blocking)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (split != null) __obj.updateDynamic("split")(split)
+    if (!js.isUndefined(blocking)) __obj.updateDynamic("blocking")(blocking.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (split != null) __obj.updateDynamic("split")(split.asInstanceOf[js.Any])
     __obj.asInstanceOf[Opts]
   }
 }

@@ -30,7 +30,7 @@ object ICalendarCell {
     isWeekend: Boolean,
     label: Double
   ): ICalendarCell = {
-    val __obj = js.Dynamic.literal(badgeTotal = badgeTotal, date = date, events = events, inMonth = inMonth, isFuture = isFuture, isPast = isPast, isToday = isToday, isWeekend = isWeekend, label = label)
+    val __obj = js.Dynamic.literal(badgeTotal = badgeTotal.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], inMonth = inMonth.asInstanceOf[js.Any], isFuture = isFuture.asInstanceOf[js.Any], isPast = isPast.asInstanceOf[js.Any], isToday = isToday.asInstanceOf[js.Any], isWeekend = isWeekend.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ICalendarCell]
   }

@@ -23,12 +23,12 @@ object JWKOctKey {
     kid: String = null,
     use: use = null
   ): JWKOctKey = {
-    val __obj = js.Dynamic.literal(kty = kty)
-    if (alg != null) __obj.updateDynamic("alg")(alg)
-    if (k != null) __obj.updateDynamic("k")(k)
-    if (key_ops != null) __obj.updateDynamic("key_ops")(key_ops)
-    if (kid != null) __obj.updateDynamic("kid")(kid)
-    if (use != null) __obj.updateDynamic("use")(use)
+    val __obj = js.Dynamic.literal(kty = kty.asInstanceOf[js.Any])
+    if (alg != null) __obj.updateDynamic("alg")(alg.asInstanceOf[js.Any])
+    if (k != null) __obj.updateDynamic("k")(k.asInstanceOf[js.Any])
+    if (key_ops != null) __obj.updateDynamic("key_ops")(key_ops.asInstanceOf[js.Any])
+    if (kid != null) __obj.updateDynamic("kid")(kid.asInstanceOf[js.Any])
+    if (use != null) __obj.updateDynamic("use")(use.asInstanceOf[js.Any])
     __obj.asInstanceOf[JWKOctKey]
   }
 }

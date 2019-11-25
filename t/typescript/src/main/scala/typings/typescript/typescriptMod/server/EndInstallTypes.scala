@@ -20,7 +20,7 @@ object EndInstallTypes {
     projectName: String,
     typingsInstallerVersion: String
   ): EndInstallTypes = {
-    val __obj = js.Dynamic.literal(eventId = eventId, installSuccess = installSuccess, kind = kind, packagesToInstall = packagesToInstall, projectName = projectName, typingsInstallerVersion = typingsInstallerVersion)
+    val __obj = js.Dynamic.literal(eventId = eventId.asInstanceOf[js.Any], installSuccess = installSuccess.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], packagesToInstall = packagesToInstall.asInstanceOf[js.Any], projectName = projectName.asInstanceOf[js.Any], typingsInstallerVersion = typingsInstallerVersion.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EndInstallTypes]
   }

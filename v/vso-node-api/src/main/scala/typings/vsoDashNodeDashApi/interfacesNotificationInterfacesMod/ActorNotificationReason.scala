@@ -16,7 +16,7 @@ object ActorNotificationReason {
     notificationReasonType: NotificationReasonType,
     targetIdentities: js.Array[IdentityRef]
   ): ActorNotificationReason = {
-    val __obj = js.Dynamic.literal(matchedRoles = matchedRoles, notificationReasonType = notificationReasonType, targetIdentities = targetIdentities)
+    val __obj = js.Dynamic.literal(matchedRoles = matchedRoles.asInstanceOf[js.Any], notificationReasonType = notificationReasonType.asInstanceOf[js.Any], targetIdentities = targetIdentities.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ActorNotificationReason]
   }

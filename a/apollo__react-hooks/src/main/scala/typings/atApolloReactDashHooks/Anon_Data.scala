@@ -15,9 +15,9 @@ trait Anon_Data[TVariables, TData] extends js.Object {
 object Anon_Data {
   @scala.inline
   def apply[TVariables, TData](loading: Boolean, data: TData = null, error: ApolloError = null, variables: TVariables = null): Anon_Data[TVariables, TData] = {
-    val __obj = js.Dynamic.literal(loading = loading)
+    val __obj = js.Dynamic.literal(loading = loading.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Data[TVariables, TData]]
   }

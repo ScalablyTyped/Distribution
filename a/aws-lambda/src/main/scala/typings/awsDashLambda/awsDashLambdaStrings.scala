@@ -58,7 +58,7 @@ object awsDashLambdaStrings {
   sealed trait ConfirmIntent extends js.Object
   
   @js.native
-  sealed trait Confirmed extends js.Object
+  sealed trait Confirmed_ extends js.Object
   
   @js.native
   sealed trait Create extends js.Object
@@ -136,7 +136,7 @@ object awsDashLambdaStrings {
        with CodePipelineState
   
   @js.native
-  sealed trait Failed extends js.Object
+  sealed trait Failed_ extends js.Object
   
   @js.native
   sealed trait Fulfilled extends js.Object
@@ -261,7 +261,7 @@ object awsDashLambdaStrings {
   sealed trait String extends _SQSMessageAttributeDataType
   
   @js.native
-  sealed trait Succeeded extends S3BatchResultResultCode
+  sealed trait Succeeded_ extends S3BatchResultResultCode
   
   @js.native
   sealed trait TemporaryFailure extends S3BatchResultResultCode
@@ -333,7 +333,7 @@ object awsDashLambdaStrings {
   sealed trait method extends js.Object
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none_ extends js.Object
   
   @js.native
   sealed trait origin extends js.Object
@@ -357,7 +357,7 @@ object awsDashLambdaStrings {
   sealed trait replace extends js.Object
   
   @js.native
-  sealed trait text extends js.Object
+  sealed trait text_ extends js.Object
   
   @js.native
   sealed trait uri extends js.Object
@@ -397,7 +397,7 @@ object awsDashLambdaStrings {
   @scala.inline
   def ConfirmIntent: ConfirmIntent = "ConfirmIntent".asInstanceOf[ConfirmIntent]
   @scala.inline
-  def Confirmed: Confirmed = "Confirmed".asInstanceOf[Confirmed]
+  def Confirmed_ : Confirmed_ = "Confirmed".asInstanceOf[Confirmed_]
   @scala.inline
   def Create: Create = "Create".asInstanceOf[Create]
   @scala.inline
@@ -447,7 +447,7 @@ object awsDashLambdaStrings {
   @scala.inline
   def FAILED: FAILED = "FAILED".asInstanceOf[FAILED]
   @scala.inline
-  def Failed: Failed = "Failed".asInstanceOf[Failed]
+  def Failed_ : Failed_ = "Failed".asInstanceOf[Failed_]
   @scala.inline
   def Fulfilled: Fulfilled = "Fulfilled".asInstanceOf[Fulfilled]
   @scala.inline
@@ -525,7 +525,7 @@ object awsDashLambdaStrings {
   @scala.inline
   def String: String = "String".asInstanceOf[String]
   @scala.inline
-  def Succeeded: Succeeded = "Succeeded".asInstanceOf[Succeeded]
+  def Succeeded_ : Succeeded_ = "Succeeded".asInstanceOf[Succeeded_]
   @scala.inline
   def TemporaryFailure: TemporaryFailure = "TemporaryFailure".asInstanceOf[TemporaryFailure]
   @scala.inline
@@ -573,7 +573,7 @@ object awsDashLambdaStrings {
   @scala.inline
   def method: method = "method".asInstanceOf[method]
   @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  def none_ : none_ = "none".asInstanceOf[none_]
   @scala.inline
   def origin: origin = "origin".asInstanceOf[origin]
   @scala.inline
@@ -589,7 +589,7 @@ object awsDashLambdaStrings {
   @scala.inline
   def replace: replace = "replace".asInstanceOf[replace]
   @scala.inline
-  def text: text = "text".asInstanceOf[text]
+  def text_ : text_ = "text".asInstanceOf[text_]
   @scala.inline
   def uri: uri = "uri".asInstanceOf[uri]
   @scala.inline

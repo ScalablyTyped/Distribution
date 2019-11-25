@@ -29,7 +29,7 @@ object Stat {
     provideBufLen: Double,
     wantlist: js.Array[WantListItem]
   ): Stat = {
-    val __obj = js.Dynamic.literal(blocksReceived = blocksReceived, blocksSent = blocksSent, dataReceived = dataReceived, dataSent = dataSent, dupBlksReceived = dupBlksReceived, dupDataReceived = dupDataReceived, peers = peers, provideBufLen = provideBufLen, wantlist = wantlist)
+    val __obj = js.Dynamic.literal(blocksReceived = blocksReceived.asInstanceOf[js.Any], blocksSent = blocksSent.asInstanceOf[js.Any], dataReceived = dataReceived.asInstanceOf[js.Any], dataSent = dataSent.asInstanceOf[js.Any], dupBlksReceived = dupBlksReceived.asInstanceOf[js.Any], dupDataReceived = dupDataReceived.asInstanceOf[js.Any], peers = peers.asInstanceOf[js.Any], provideBufLen = provideBufLen.asInstanceOf[js.Any], wantlist = wantlist.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Stat]
   }

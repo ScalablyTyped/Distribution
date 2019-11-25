@@ -14,7 +14,7 @@ trait Anon_DocSyncEventType extends js.Object {
 object Anon_DocSyncEventType {
   @scala.inline
   def apply(Doc: Document, SyncEventType: MsoSyncEventType): Anon_DocSyncEventType = {
-    val __obj = js.Dynamic.literal(Doc = Doc, SyncEventType = SyncEventType)
+    val __obj = js.Dynamic.literal(Doc = Doc.asInstanceOf[js.Any], SyncEventType = SyncEventType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DocSyncEventType]
   }

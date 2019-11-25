@@ -37,8 +37,8 @@ object ImageMogr2Options {
     strip: Boolean,
     thumbnail: String
   ): ImageMogr2Options = {
-    val __obj = js.Dynamic.literal(blur = blur, crop = crop, format = format, gravity = gravity, quality = quality, rotate = rotate, strip = strip, thumbnail = thumbnail)
-    __obj.updateDynamic("auto-orient")(`auto-orient`)
+    val __obj = js.Dynamic.literal(blur = blur.asInstanceOf[js.Any], crop = crop.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], gravity = gravity.asInstanceOf[js.Any], quality = quality.asInstanceOf[js.Any], rotate = rotate.asInstanceOf[js.Any], strip = strip.asInstanceOf[js.Any], thumbnail = thumbnail.asInstanceOf[js.Any])
+    __obj.updateDynamic("auto-orient")(`auto-orient`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageMogr2Options]
   }
 }

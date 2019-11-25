@@ -32,9 +32,9 @@ object Write {
   @scala.inline
   def apply(columns: js.Array[String] = null, table: String = null, values: js.Array[js.Array[_]] = null): Write = {
     val __obj = js.Dynamic.literal()
-    if (columns != null) __obj.updateDynamic("columns")(columns)
-    if (table != null) __obj.updateDynamic("table")(table)
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[Write]
   }
 }

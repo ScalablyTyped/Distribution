@@ -79,15 +79,15 @@ object GridExcelExporterSettings {
     worksheetName: String = null
   ): GridExcelExporterSettings = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (columnsToSkip != null) __obj.updateDynamic("columnsToSkip")(columnsToSkip)
-    if (dataExportMode != null) __obj.updateDynamic("dataExportMode")(dataExportMode)
-    if (fileName != null) __obj.updateDynamic("fileName")(fileName)
-    if (gridFeatureOptions != null) __obj.updateDynamic("gridFeatureOptions")(gridFeatureOptions)
-    if (gridStyling != null) __obj.updateDynamic("gridStyling")(gridStyling)
-    if (skipFilteringOn != null) __obj.updateDynamic("skipFilteringOn")(skipFilteringOn)
-    if (tableStyle != null) __obj.updateDynamic("tableStyle")(tableStyle)
-    if (worksheetName != null) __obj.updateDynamic("worksheetName")(worksheetName)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (columnsToSkip != null) __obj.updateDynamic("columnsToSkip")(columnsToSkip.asInstanceOf[js.Any])
+    if (dataExportMode != null) __obj.updateDynamic("dataExportMode")(dataExportMode.asInstanceOf[js.Any])
+    if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
+    if (gridFeatureOptions != null) __obj.updateDynamic("gridFeatureOptions")(gridFeatureOptions.asInstanceOf[js.Any])
+    if (gridStyling != null) __obj.updateDynamic("gridStyling")(gridStyling.asInstanceOf[js.Any])
+    if (skipFilteringOn != null) __obj.updateDynamic("skipFilteringOn")(skipFilteringOn.asInstanceOf[js.Any])
+    if (tableStyle != null) __obj.updateDynamic("tableStyle")(tableStyle.asInstanceOf[js.Any])
+    if (worksheetName != null) __obj.updateDynamic("worksheetName")(worksheetName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridExcelExporterSettings]
   }
 }

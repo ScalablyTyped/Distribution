@@ -15,9 +15,9 @@ object Anon_Lower {
   @scala.inline
   def apply(lower: js.UndefOr[Boolean] = js.undefined, remove: RegExp = null, replacement: String = null): Anon_Lower = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(lower)) __obj.updateDynamic("lower")(lower)
-    if (remove != null) __obj.updateDynamic("remove")(remove)
-    if (replacement != null) __obj.updateDynamic("replacement")(replacement)
+    if (!js.isUndefined(lower)) __obj.updateDynamic("lower")(lower.asInstanceOf[js.Any])
+    if (remove != null) __obj.updateDynamic("remove")(remove.asInstanceOf[js.Any])
+    if (replacement != null) __obj.updateDynamic("replacement")(replacement.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Lower]
   }
 }

@@ -28,11 +28,11 @@ object OpenstackProviderOptions {
     tenantId: String = null,
     version: String = null
   ): OpenstackProviderOptions = {
-    val __obj = js.Dynamic.literal(authUrl = authUrl, password = password, provider = provider, username = username)
-    if (keystoneAuthVersion != null) __obj.updateDynamic("keystoneAuthVersion")(keystoneAuthVersion)
-    if (region != null) __obj.updateDynamic("region")(region)
-    if (tenantId != null) __obj.updateDynamic("tenantId")(tenantId)
-    if (version != null) __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(authUrl = authUrl.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
+    if (keystoneAuthVersion != null) __obj.updateDynamic("keystoneAuthVersion")(keystoneAuthVersion.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    if (tenantId != null) __obj.updateDynamic("tenantId")(tenantId.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenstackProviderOptions]
   }
 }

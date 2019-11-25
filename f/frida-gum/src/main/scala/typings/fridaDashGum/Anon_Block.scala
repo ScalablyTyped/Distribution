@@ -43,11 +43,11 @@ object Anon_Block {
     ret: js.UndefOr[Boolean] = js.undefined
   ): Anon_Block = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(block)) __obj.updateDynamic("block")(block)
-    if (!js.isUndefined(call)) __obj.updateDynamic("call")(call)
-    if (!js.isUndefined(compile)) __obj.updateDynamic("compile")(compile)
-    if (!js.isUndefined(exec)) __obj.updateDynamic("exec")(exec)
-    if (!js.isUndefined(ret)) __obj.updateDynamic("ret")(ret)
+    if (!js.isUndefined(block)) __obj.updateDynamic("block")(block.asInstanceOf[js.Any])
+    if (!js.isUndefined(call)) __obj.updateDynamic("call")(call.asInstanceOf[js.Any])
+    if (!js.isUndefined(compile)) __obj.updateDynamic("compile")(compile.asInstanceOf[js.Any])
+    if (!js.isUndefined(exec)) __obj.updateDynamic("exec")(exec.asInstanceOf[js.Any])
+    if (!js.isUndefined(ret)) __obj.updateDynamic("ret")(ret.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Block]
   }
 }

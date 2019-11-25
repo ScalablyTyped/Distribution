@@ -15,8 +15,8 @@ object Anon_DialogMessage {
   @scala.inline
   def apply(dialogMessage: String = null, showConfirmDialog: js.UndefOr[Boolean] = js.undefined): Anon_DialogMessage = {
     val __obj = js.Dynamic.literal()
-    if (dialogMessage != null) __obj.updateDynamic("dialogMessage")(dialogMessage)
-    if (!js.isUndefined(showConfirmDialog)) __obj.updateDynamic("showConfirmDialog")(showConfirmDialog)
+    if (dialogMessage != null) __obj.updateDynamic("dialogMessage")(dialogMessage.asInstanceOf[js.Any])
+    if (!js.isUndefined(showConfirmDialog)) __obj.updateDynamic("showConfirmDialog")(showConfirmDialog.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DialogMessage]
   }
 }

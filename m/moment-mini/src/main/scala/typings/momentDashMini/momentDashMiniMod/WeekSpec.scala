@@ -12,7 +12,7 @@ trait WeekSpec extends js.Object {
 object WeekSpec {
   @scala.inline
   def apply(dow: Double, doy: Double): WeekSpec = {
-    val __obj = js.Dynamic.literal(dow = dow, doy = doy)
+    val __obj = js.Dynamic.literal(dow = dow.asInstanceOf[js.Any], doy = doy.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WeekSpec]
   }

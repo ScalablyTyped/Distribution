@@ -19,7 +19,7 @@ trait InteractionsAddOrUpdateRestrictionsForRepoParams extends js.Object {
 object InteractionsAddOrUpdateRestrictionsForRepoParams {
   @scala.inline
   def apply(limit: existing_users | contributors_only | collaborators_only, owner: String, repo: String): InteractionsAddOrUpdateRestrictionsForRepoParams = {
-    val __obj = js.Dynamic.literal(limit = limit.asInstanceOf[js.Any], owner = owner, repo = repo)
+    val __obj = js.Dynamic.literal(limit = limit.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InteractionsAddOrUpdateRestrictionsForRepoParams]
   }

@@ -37,7 +37,7 @@ object MsgPackDownloadOption {
     if (after != null) __obj.updateDynamic("after")(js.Any.fromFunction3(after))
     if (before != null) __obj.updateDynamic("before")(js.Any.fromFunction2(before))
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(worker)) __obj.updateDynamic("worker")(worker)
+    if (!js.isUndefined(worker)) __obj.updateDynamic("worker")(worker.asInstanceOf[js.Any])
     __obj.asInstanceOf[MsgPackDownloadOption]
   }
 }

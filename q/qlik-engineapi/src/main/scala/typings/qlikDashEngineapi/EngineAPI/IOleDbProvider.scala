@@ -26,8 +26,8 @@ trait IOleDbProvider extends js.Object {
 object IOleDbProvider {
   @scala.inline
   def apply(qDescription: String, qName: String, qBit32: js.UndefOr[Boolean] = js.undefined): IOleDbProvider = {
-    val __obj = js.Dynamic.literal(qDescription = qDescription, qName = qName)
-    if (!js.isUndefined(qBit32)) __obj.updateDynamic("qBit32")(qBit32)
+    val __obj = js.Dynamic.literal(qDescription = qDescription.asInstanceOf[js.Any], qName = qName.asInstanceOf[js.Any])
+    if (!js.isUndefined(qBit32)) __obj.updateDynamic("qBit32")(qBit32.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOleDbProvider]
   }
 }

@@ -49,11 +49,11 @@ object GenerateFrameNames {
   ): GenerateFrameNames = {
     val __obj = js.Dynamic.literal()
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (!js.isUndefined(frames)) __obj.updateDynamic("frames")(frames)
-    if (outputArray != null) __obj.updateDynamic("outputArray")(outputArray)
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (!js.isUndefined(frames)) __obj.updateDynamic("frames")(frames.asInstanceOf[js.Any])
+    if (outputArray != null) __obj.updateDynamic("outputArray")(outputArray.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (suffix != null) __obj.updateDynamic("suffix")(suffix)
+    if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
     if (zeroPad != null) __obj.updateDynamic("zeroPad")(zeroPad.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenerateFrameNames]
   }

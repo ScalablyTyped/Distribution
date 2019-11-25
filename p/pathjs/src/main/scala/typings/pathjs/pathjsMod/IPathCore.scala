@@ -11,7 +11,7 @@ trait IPathCore extends js.Object {
 object IPathCore {
   @scala.inline
   def apply(route: IPathRouteConstructor): IPathCore = {
-    val __obj = js.Dynamic.literal(route = route)
+    val __obj = js.Dynamic.literal(route = route.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IPathCore]
   }

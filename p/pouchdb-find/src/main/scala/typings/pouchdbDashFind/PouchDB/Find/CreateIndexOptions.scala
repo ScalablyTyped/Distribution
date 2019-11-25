@@ -12,7 +12,7 @@ trait CreateIndexOptions extends js.Object {
 object CreateIndexOptions {
   @scala.inline
   def apply(index: Anon_Ddoc): CreateIndexOptions = {
-    val __obj = js.Dynamic.literal(index = index)
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CreateIndexOptions]
   }

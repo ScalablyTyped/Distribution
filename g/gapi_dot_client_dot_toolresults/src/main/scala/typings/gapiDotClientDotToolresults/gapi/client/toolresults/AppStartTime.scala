@@ -21,8 +21,8 @@ object AppStartTime {
   @scala.inline
   def apply(fullyDrawnTime: Duration = null, initialDisplayTime: Duration = null): AppStartTime = {
     val __obj = js.Dynamic.literal()
-    if (fullyDrawnTime != null) __obj.updateDynamic("fullyDrawnTime")(fullyDrawnTime)
-    if (initialDisplayTime != null) __obj.updateDynamic("initialDisplayTime")(initialDisplayTime)
+    if (fullyDrawnTime != null) __obj.updateDynamic("fullyDrawnTime")(fullyDrawnTime.asInstanceOf[js.Any])
+    if (initialDisplayTime != null) __obj.updateDynamic("initialDisplayTime")(initialDisplayTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppStartTime]
   }
 }

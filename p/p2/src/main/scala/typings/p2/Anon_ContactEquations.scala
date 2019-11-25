@@ -19,8 +19,8 @@ object Anon_ContactEquations {
     frictionEquations: js.Array[FrictionEquation],
     `type`: String
   ): Anon_ContactEquations = {
-    val __obj = js.Dynamic.literal(contactEquations = contactEquations, frictionEquations = frictionEquations)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(contactEquations = contactEquations.asInstanceOf[js.Any], frictionEquations = frictionEquations.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ContactEquations]
   }
 }

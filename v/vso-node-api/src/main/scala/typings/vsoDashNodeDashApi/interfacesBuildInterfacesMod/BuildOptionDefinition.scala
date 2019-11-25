@@ -37,7 +37,7 @@ object BuildOptionDefinition {
     name: String,
     ordinal: Double
   ): BuildOptionDefinition = {
-    val __obj = js.Dynamic.literal(description = description, groups = groups, id = id, inputs = inputs, name = name, ordinal = ordinal)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], groups = groups.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], ordinal = ordinal.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BuildOptionDefinition]
   }

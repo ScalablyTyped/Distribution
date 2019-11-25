@@ -17,7 +17,7 @@ object PeriodicWaveOptions {
     real: js.Array[Double] | Float32Array = null
   ): PeriodicWaveOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disableNormalization)) __obj.updateDynamic("disableNormalization")(disableNormalization)
+    if (!js.isUndefined(disableNormalization)) __obj.updateDynamic("disableNormalization")(disableNormalization.asInstanceOf[js.Any])
     if (imag != null) __obj.updateDynamic("imag")(imag.asInstanceOf[js.Any])
     if (real != null) __obj.updateDynamic("real")(real.asInstanceOf[js.Any])
     __obj.asInstanceOf[PeriodicWaveOptions]

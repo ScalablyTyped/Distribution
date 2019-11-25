@@ -16,8 +16,8 @@ trait RelativeTimeFormatNumberPart
 object RelativeTimeFormatNumberPart {
   @scala.inline
   def apply(`type`: NumberFormatPartTypes, unit: Unit, value: String): RelativeTimeFormatNumberPart = {
-    val __obj = js.Dynamic.literal(unit = unit, value = value)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelativeTimeFormatNumberPart]
   }
 }

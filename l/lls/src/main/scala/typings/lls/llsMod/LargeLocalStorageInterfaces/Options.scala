@@ -22,9 +22,9 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(size: Double, forceProvider: String = null, name: String = null): Options = {
-    val __obj = js.Dynamic.literal(size = size)
-    if (forceProvider != null) __obj.updateDynamic("forceProvider")(forceProvider)
-    if (name != null) __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
+    if (forceProvider != null) __obj.updateDynamic("forceProvider")(forceProvider.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -27,8 +27,8 @@ object ProjectSettings {
   @scala.inline
   def apply(defaultBucket: String = null, name: String = null): ProjectSettings = {
     val __obj = js.Dynamic.literal()
-    if (defaultBucket != null) __obj.updateDynamic("defaultBucket")(defaultBucket)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (defaultBucket != null) __obj.updateDynamic("defaultBucket")(defaultBucket.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectSettings]
   }
 }

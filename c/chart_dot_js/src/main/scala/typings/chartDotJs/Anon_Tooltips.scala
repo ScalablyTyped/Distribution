@@ -12,7 +12,7 @@ trait Anon_Tooltips extends js.Object {
 object Anon_Tooltips {
   @scala.inline
   def apply(tooltips: ChartTooltipOptions): Anon_Tooltips = {
-    val __obj = js.Dynamic.literal(tooltips = tooltips)
+    val __obj = js.Dynamic.literal(tooltips = tooltips.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Tooltips]
   }

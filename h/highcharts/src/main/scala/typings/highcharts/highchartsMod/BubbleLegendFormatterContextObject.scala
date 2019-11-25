@@ -22,7 +22,7 @@ trait BubbleLegendFormatterContextObject extends js.Object {
 object BubbleLegendFormatterContextObject {
   @scala.inline
   def apply(center: Double, radius: Double, value: Double): BubbleLegendFormatterContextObject = {
-    val __obj = js.Dynamic.literal(center = center, radius = radius, value = value)
+    val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BubbleLegendFormatterContextObject]
   }

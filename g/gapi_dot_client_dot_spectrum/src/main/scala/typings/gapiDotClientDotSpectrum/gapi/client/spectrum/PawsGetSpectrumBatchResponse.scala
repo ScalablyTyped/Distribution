@@ -86,17 +86,17 @@ object PawsGetSpectrumBatchResponse {
     version: String = null
   ): PawsGetSpectrumBatchResponse = {
     val __obj = js.Dynamic.literal()
-    if (databaseChange != null) __obj.updateDynamic("databaseChange")(databaseChange)
-    if (deviceDesc != null) __obj.updateDynamic("deviceDesc")(deviceDesc)
-    if (geoSpectrumSchedules != null) __obj.updateDynamic("geoSpectrumSchedules")(geoSpectrumSchedules)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (databaseChange != null) __obj.updateDynamic("databaseChange")(databaseChange.asInstanceOf[js.Any])
+    if (deviceDesc != null) __obj.updateDynamic("deviceDesc")(deviceDesc.asInstanceOf[js.Any])
+    if (geoSpectrumSchedules != null) __obj.updateDynamic("geoSpectrumSchedules")(geoSpectrumSchedules.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (maxContiguousBwHz != null) __obj.updateDynamic("maxContiguousBwHz")(maxContiguousBwHz.asInstanceOf[js.Any])
     if (maxTotalBwHz != null) __obj.updateDynamic("maxTotalBwHz")(maxTotalBwHz.asInstanceOf[js.Any])
-    if (!js.isUndefined(needsSpectrumReport)) __obj.updateDynamic("needsSpectrumReport")(needsSpectrumReport)
-    if (rulesetInfo != null) __obj.updateDynamic("rulesetInfo")(rulesetInfo)
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (!js.isUndefined(needsSpectrumReport)) __obj.updateDynamic("needsSpectrumReport")(needsSpectrumReport.asInstanceOf[js.Any])
+    if (rulesetInfo != null) __obj.updateDynamic("rulesetInfo")(rulesetInfo.asInstanceOf[js.Any])
+    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[PawsGetSpectrumBatchResponse]
   }
 }

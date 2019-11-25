@@ -13,22 +13,22 @@ import scala.scalajs.js.annotation._
 @JSImport("p-props", JSImport.Namespace)
 @js.native
 object pDashPropsMod extends js.Object {
-  def apply[InputType /* <: StringDictionary[js.Any] */, ValueType /* <: /* import warning: ImportType.apply Failed type conversion: InputType[keyof InputType] */ js.Any */, MappedValueType](map: InputType): js.Promise[
-    /* import warning: ImportType.apply c Unsupported type mapping: 
+  def apply[InputType /* <: StringDictionary[js.Any] */, ValueType /* <: /* import warning: importer.ImportType#apply Failed type conversion: InputType[keyof InputType] */ js.Any */, MappedValueType](map: InputType): js.Promise[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof InputType ]: MappedValueType}
     */ `_backtick^_backtick` with js.Any
   ] = js.native
-  def apply[InputType /* <: StringDictionary[js.Any] */, ValueType /* <: /* import warning: ImportType.apply Failed type conversion: InputType[keyof InputType] */ js.Any */, MappedValueType](map: InputType, mapper: Mapper[PromiseResult[ValueType], String, MappedValueType]): js.Promise[
-    /* import warning: ImportType.apply c Unsupported type mapping: 
+  def apply[InputType /* <: StringDictionary[js.Any] */, ValueType /* <: /* import warning: importer.ImportType#apply Failed type conversion: InputType[keyof InputType] */ js.Any */, MappedValueType](map: InputType, mapper: Mapper[PromiseResult[ValueType], String, MappedValueType]): js.Promise[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof InputType ]: MappedValueType}
     */ `_backtick^_backtick` with js.Any
   ] = js.native
-  def apply[InputType /* <: StringDictionary[js.Any] */, ValueType /* <: /* import warning: ImportType.apply Failed type conversion: InputType[keyof InputType] */ js.Any */, MappedValueType](
+  def apply[InputType /* <: StringDictionary[js.Any] */, ValueType /* <: /* import warning: importer.ImportType#apply Failed type conversion: InputType[keyof InputType] */ js.Any */, MappedValueType](
     map: InputType,
     mapper: Mapper[PromiseResult[ValueType], String, MappedValueType],
     options: Options
   ): js.Promise[
-    /* import warning: ImportType.apply c Unsupported type mapping: 
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof InputType ]: MappedValueType}
     */ `_backtick^_backtick` with js.Any
   ] = js.native

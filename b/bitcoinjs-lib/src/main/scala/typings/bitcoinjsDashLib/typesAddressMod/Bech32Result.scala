@@ -14,7 +14,7 @@ trait Bech32Result extends js.Object {
 object Bech32Result {
   @scala.inline
   def apply(data: Buffer, prefix: String, version: Double): Bech32Result = {
-    val __obj = js.Dynamic.literal(data = data, prefix = prefix, version = version)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Bech32Result]
   }

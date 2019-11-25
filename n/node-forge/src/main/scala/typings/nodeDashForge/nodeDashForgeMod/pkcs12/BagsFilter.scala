@@ -20,10 +20,10 @@ object BagsFilter {
     localKeyIdHex: String = null
   ): BagsFilter = {
     val __obj = js.Dynamic.literal()
-    if (bagType != null) __obj.updateDynamic("bagType")(bagType)
-    if (friendlyName != null) __obj.updateDynamic("friendlyName")(friendlyName)
-    if (localKeyId != null) __obj.updateDynamic("localKeyId")(localKeyId)
-    if (localKeyIdHex != null) __obj.updateDynamic("localKeyIdHex")(localKeyIdHex)
+    if (bagType != null) __obj.updateDynamic("bagType")(bagType.asInstanceOf[js.Any])
+    if (friendlyName != null) __obj.updateDynamic("friendlyName")(friendlyName.asInstanceOf[js.Any])
+    if (localKeyId != null) __obj.updateDynamic("localKeyId")(localKeyId.asInstanceOf[js.Any])
+    if (localKeyIdHex != null) __obj.updateDynamic("localKeyIdHex")(localKeyIdHex.asInstanceOf[js.Any])
     __obj.asInstanceOf[BagsFilter]
   }
 }

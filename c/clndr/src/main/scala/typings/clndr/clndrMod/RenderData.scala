@@ -38,11 +38,11 @@ object RenderData {
     intervalEnd: Moment = null,
     intervalStart: Moment = null
   ): RenderData = {
-    val __obj = js.Dynamic.literal(days = days, daysOfTheWeek = daysOfTheWeek, eventsLastMonth = eventsLastMonth, eventsNextMonth = eventsNextMonth, eventsThisMonth = eventsThisMonth, month = month, months = months, numberOfRows = numberOfRows, year = year)
-    if (eventsThisInterval != null) __obj.updateDynamic("eventsThisInterval")(eventsThisInterval)
-    if (extras != null) __obj.updateDynamic("extras")(extras)
-    if (intervalEnd != null) __obj.updateDynamic("intervalEnd")(intervalEnd)
-    if (intervalStart != null) __obj.updateDynamic("intervalStart")(intervalStart)
+    val __obj = js.Dynamic.literal(days = days.asInstanceOf[js.Any], daysOfTheWeek = daysOfTheWeek.asInstanceOf[js.Any], eventsLastMonth = eventsLastMonth.asInstanceOf[js.Any], eventsNextMonth = eventsNextMonth.asInstanceOf[js.Any], eventsThisMonth = eventsThisMonth.asInstanceOf[js.Any], month = month.asInstanceOf[js.Any], months = months.asInstanceOf[js.Any], numberOfRows = numberOfRows.asInstanceOf[js.Any], year = year.asInstanceOf[js.Any])
+    if (eventsThisInterval != null) __obj.updateDynamic("eventsThisInterval")(eventsThisInterval.asInstanceOf[js.Any])
+    if (extras != null) __obj.updateDynamic("extras")(extras.asInstanceOf[js.Any])
+    if (intervalEnd != null) __obj.updateDynamic("intervalEnd")(intervalEnd.asInstanceOf[js.Any])
+    if (intervalStart != null) __obj.updateDynamic("intervalStart")(intervalStart.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderData]
   }
 }

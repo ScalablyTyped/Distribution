@@ -15,7 +15,7 @@ trait Anon_Crypto extends js.Object {
 object Anon_Crypto {
   @scala.inline
   def apply(crypto: Price[CryptoCurrency], local: Price[FiatCurrency]): Anon_Crypto = {
-    val __obj = js.Dynamic.literal(crypto = crypto, local = local)
+    val __obj = js.Dynamic.literal(crypto = crypto.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Crypto]
   }

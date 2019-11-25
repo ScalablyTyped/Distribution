@@ -58,7 +58,7 @@ object SankeyLinkMinimal {
     y0: Int | Double = null,
     y1: Int | Double = null
   ): SankeyLinkMinimal[N, L] = {
-    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], value = value)
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (y0 != null) __obj.updateDynamic("y0")(y0.asInstanceOf[js.Any])

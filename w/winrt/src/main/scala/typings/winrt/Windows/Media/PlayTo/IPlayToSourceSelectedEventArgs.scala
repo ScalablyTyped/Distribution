@@ -22,7 +22,7 @@ object IPlayToSourceSelectedEventArgs {
     supportsImage: Boolean,
     supportsVideo: Boolean
   ): IPlayToSourceSelectedEventArgs = {
-    val __obj = js.Dynamic.literal(friendlyName = friendlyName, icon = icon, supportsAudio = supportsAudio, supportsImage = supportsImage, supportsVideo = supportsVideo)
+    val __obj = js.Dynamic.literal(friendlyName = friendlyName.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], supportsAudio = supportsAudio.asInstanceOf[js.Any], supportsImage = supportsImage.asInstanceOf[js.Any], supportsVideo = supportsVideo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IPlayToSourceSelectedEventArgs]
   }

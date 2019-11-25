@@ -11,7 +11,7 @@ trait TagsFeedResponseLayout_content extends js.Object {
 object TagsFeedResponseLayout_content {
   @scala.inline
   def apply(medias: js.Array[TagsFeedResponseMediasItem]): TagsFeedResponseLayout_content = {
-    val __obj = js.Dynamic.literal(medias = medias)
+    val __obj = js.Dynamic.literal(medias = medias.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TagsFeedResponseLayout_content]
   }

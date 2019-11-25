@@ -17,7 +17,7 @@ object distModelMod extends js.Object {
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
   - typings.mendixmodelsdk.distSdkInternalAbstractModelMod.IAbstractModel because Already inherited
   - typings.mendixmodelsdk.distGenBaseDashModelMod.IBaseModel because Already inherited
-  - typings.mendixmodelsdk.distModelMod.IModel because var conflicts: id, metaModelVersion, mxVersionForModel, root, workingCopy. Inlined findModuleByQualifiedName */ @js.native
+  - typings.mendixmodelsdk.distGenBaseDashModelMod.IModel because var conflicts: id, metaModelVersion, mxVersionForModel, root, workingCopy. Inlined findModuleByQualifiedName */ @js.native
   class Model () extends BaseModel {
     var allModelClasses: js.Any = js.native
     /**

@@ -12,7 +12,7 @@ object EventActionCall {
   @scala.inline
   def apply(functionName: String = null): EventActionCall = {
     val __obj = js.Dynamic.literal()
-    if (functionName != null) __obj.updateDynamic("functionName")(functionName)
+    if (functionName != null) __obj.updateDynamic("functionName")(functionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventActionCall]
   }
 }

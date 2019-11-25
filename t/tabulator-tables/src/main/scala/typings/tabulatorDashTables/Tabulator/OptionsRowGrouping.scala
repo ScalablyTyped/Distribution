@@ -104,7 +104,7 @@ object OptionsRowGrouping {
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(js.Any.fromFunction0(dataGrouping))
     if (groupBy != null) __obj.updateDynamic("groupBy")(groupBy.asInstanceOf[js.Any])
     if (groupClick != null) __obj.updateDynamic("groupClick")(js.Any.fromFunction2(groupClick))
-    if (!js.isUndefined(groupClosedShowCalcs)) __obj.updateDynamic("groupClosedShowCalcs")(groupClosedShowCalcs)
+    if (!js.isUndefined(groupClosedShowCalcs)) __obj.updateDynamic("groupClosedShowCalcs")(groupClosedShowCalcs.asInstanceOf[js.Any])
     if (groupContext != null) __obj.updateDynamic("groupContext")(js.Any.fromFunction2(groupContext))
     if (groupDblClick != null) __obj.updateDynamic("groupDblClick")(js.Any.fromFunction2(groupDblClick))
     if (groupDblTap != null) __obj.updateDynamic("groupDblTap")(js.Any.fromFunction2(groupDblTap))
@@ -113,7 +113,7 @@ object OptionsRowGrouping {
     if (groupTap != null) __obj.updateDynamic("groupTap")(js.Any.fromFunction2(groupTap))
     if (groupTapHold != null) __obj.updateDynamic("groupTapHold")(js.Any.fromFunction2(groupTapHold))
     if (groupToggleElement != null) __obj.updateDynamic("groupToggleElement")(groupToggleElement.asInstanceOf[js.Any])
-    if (groupValues != null) __obj.updateDynamic("groupValues")(groupValues)
+    if (groupValues != null) __obj.updateDynamic("groupValues")(groupValues.asInstanceOf[js.Any])
     if (groupVisibilityChanged != null) __obj.updateDynamic("groupVisibilityChanged")(js.Any.fromFunction2(groupVisibilityChanged))
     __obj.asInstanceOf[OptionsRowGrouping]
   }

@@ -21,8 +21,8 @@ object CellSharedFormulaValue {
     formula: String = null,
     result: Double | String | Date | Anon_Error = null
   ): CellSharedFormulaValue = {
-    val __obj = js.Dynamic.literal(date1904 = date1904, sharedFormula = sharedFormula)
-    if (formula != null) __obj.updateDynamic("formula")(formula)
+    val __obj = js.Dynamic.literal(date1904 = date1904.asInstanceOf[js.Any], sharedFormula = sharedFormula.asInstanceOf[js.Any])
+    if (formula != null) __obj.updateDynamic("formula")(formula.asInstanceOf[js.Any])
     if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellSharedFormulaValue]
   }

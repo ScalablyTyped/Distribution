@@ -32,11 +32,11 @@ object StripLine {
     lineWidth: String = null
   ): StripLine = {
     val __obj = js.Dynamic.literal()
-    if (day != null) __obj.updateDynamic("day")(day)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor)
-    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle)
-    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth)
+    if (day != null) __obj.updateDynamic("day")(day.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor.asInstanceOf[js.Any])
+    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
+    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[StripLine]
   }
 }

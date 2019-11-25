@@ -40,7 +40,7 @@ object IBackgroundTaskInstance {
     task: BackgroundTaskRegistration,
     triggerDetails: js.Any
   ): IBackgroundTaskInstance = {
-    val __obj = js.Dynamic.literal(getDeferral = js.Any.fromFunction0(getDeferral), getThrottleCount = js.Any.fromFunction1(getThrottleCount), instanceId = instanceId, progress = progress, suspendedCount = suspendedCount, task = task, triggerDetails = triggerDetails)
+    val __obj = js.Dynamic.literal(getDeferral = js.Any.fromFunction0(getDeferral), getThrottleCount = js.Any.fromFunction1(getThrottleCount), instanceId = instanceId.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], suspendedCount = suspendedCount.asInstanceOf[js.Any], task = task.asInstanceOf[js.Any], triggerDetails = triggerDetails.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IBackgroundTaskInstance]
   }

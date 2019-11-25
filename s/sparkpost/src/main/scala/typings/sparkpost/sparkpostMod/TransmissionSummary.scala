@@ -31,7 +31,7 @@ object TransmissionSummary {
     id: String,
     state: submitted | Generating | Success | Canceled
   ): TransmissionSummary = {
-    val __obj = js.Dynamic.literal(campaign_id = campaign_id, content = content, description = description, id = id, state = state.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(campaign_id = campaign_id.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TransmissionSummary]
   }

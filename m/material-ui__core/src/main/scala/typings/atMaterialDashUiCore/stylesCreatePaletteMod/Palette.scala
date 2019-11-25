@@ -1,6 +1,5 @@
 package typings.atMaterialDashUiCore.stylesCreatePaletteMod
 
-import typings.atMaterialDashUiCore.Fn_Color
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreMod.Color
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreMod.PaletteType
 import typings.atMaterialDashUiCore.colorsCommonMod.CommonColors
@@ -8,44 +7,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Palette extends js.Object {
-  var action: TypeAction
-  var augmentColor: Fn_Color
-  var background: TypeBackground
-  var common: CommonColors
-  var contrastThreshold: Double
-  var divider: TypeDivider
-  var error: PaletteColor
-  var grey: Color
-  var primary: PaletteColor
-  var secondary: PaletteColor
-  var text: TypeText
-  var tonalOffset: Double
-  var `type`: PaletteType
-  def getContrastText(background: String): String
-}
-
-object Palette {
-  @scala.inline
-  def apply(
-    action: TypeAction,
-    augmentColor: Fn_Color,
-    background: TypeBackground,
-    common: CommonColors,
-    contrastThreshold: Double,
-    divider: TypeDivider,
-    error: PaletteColor,
-    getContrastText: String => String,
-    grey: Color,
-    primary: PaletteColor,
-    secondary: PaletteColor,
-    text: TypeText,
-    tonalOffset: Double,
-    `type`: PaletteType
-  ): Palette = {
-    val __obj = js.Dynamic.literal(action = action, augmentColor = augmentColor, background = background, common = common, contrastThreshold = contrastThreshold, divider = divider, error = error, getContrastText = js.Any.fromFunction1(getContrastText), grey = grey, primary = primary, secondary = secondary, text = text, tonalOffset = tonalOffset)
-    __obj.updateDynamic("type")(`type`)
-    __obj.asInstanceOf[Palette]
-  }
+  var action: TypeAction = js.native
+  var background: TypeBackground = js.native
+  var common: CommonColors = js.native
+  var contrastThreshold: Double = js.native
+  var divider: TypeDivider = js.native
+  var error: PaletteColor = js.native
+  var grey: Color = js.native
+  var primary: PaletteColor = js.native
+  var secondary: PaletteColor = js.native
+  var text: TypeText = js.native
+  var tonalOffset: Double = js.native
+  var `type`: PaletteType = js.native
+  def augmentColor(color: ColorPartial): Unit = js.native
+  def augmentColor(color: ColorPartial, mainShade: String): Unit = js.native
+  def augmentColor(color: ColorPartial, mainShade: String, lightShade: String): Unit = js.native
+  def augmentColor(color: ColorPartial, mainShade: String, lightShade: String, darkShade: String): Unit = js.native
+  def augmentColor(color: ColorPartial, mainShade: String, lightShade: String, darkShade: Double): Unit = js.native
+  def augmentColor(color: ColorPartial, mainShade: String, lightShade: Double): Unit = js.native
+  def augmentColor(color: ColorPartial, mainShade: String, lightShade: Double, darkShade: String): Unit = js.native
+  def augmentColor(color: ColorPartial, mainShade: String, lightShade: Double, darkShade: Double): Unit = js.native
+  def augmentColor(color: ColorPartial, mainShade: Double): Unit = js.native
+  def augmentColor(color: ColorPartial, mainShade: Double, lightShade: String): Unit = js.native
+  def augmentColor(color: ColorPartial, mainShade: Double, lightShade: String, darkShade: String): Unit = js.native
+  def augmentColor(color: ColorPartial, mainShade: Double, lightShade: String, darkShade: Double): Unit = js.native
+  def augmentColor(color: ColorPartial, mainShade: Double, lightShade: Double): Unit = js.native
+  def augmentColor(color: ColorPartial, mainShade: Double, lightShade: Double, darkShade: String): Unit = js.native
+  def augmentColor(color: ColorPartial, mainShade: Double, lightShade: Double, darkShade: Double): Unit = js.native
+  def augmentColor(color: PaletteColorOptions): Unit = js.native
+  def getContrastText(background: String): String = js.native
 }
 

@@ -16,8 +16,8 @@ trait Anon_Critical extends js.Object {
 object Anon_Critical {
   @scala.inline
   def apply(issuer: StringParam, kid: HexParam, sn: HexParam, critical: js.UndefOr[Boolean] = js.undefined): Anon_Critical = {
-    val __obj = js.Dynamic.literal(issuer = issuer, kid = kid, sn = sn)
-    if (!js.isUndefined(critical)) __obj.updateDynamic("critical")(critical)
+    val __obj = js.Dynamic.literal(issuer = issuer.asInstanceOf[js.Any], kid = kid.asInstanceOf[js.Any], sn = sn.asInstanceOf[js.Any])
+    if (!js.isUndefined(critical)) __obj.updateDynamic("critical")(critical.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Critical]
   }
 }

@@ -22,10 +22,10 @@ object setupI18nProps {
     missing: String | (js.Function2[/* language */ String, /* id */ String, String]) = null
   ): setupI18nProps = {
     val __obj = js.Dynamic.literal()
-    if (catalogs != null) __obj.updateDynamic("catalogs")(catalogs)
-    if (development != null) __obj.updateDynamic("development")(development)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (locales != null) __obj.updateDynamic("locales")(locales)
+    if (catalogs != null) __obj.updateDynamic("catalogs")(catalogs.asInstanceOf[js.Any])
+    if (development != null) __obj.updateDynamic("development")(development.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (locales != null) __obj.updateDynamic("locales")(locales.asInstanceOf[js.Any])
     if (missing != null) __obj.updateDynamic("missing")(missing.asInstanceOf[js.Any])
     __obj.asInstanceOf[setupI18nProps]
   }

@@ -18,9 +18,9 @@ object IDetailsRowState {
     columnMeasureInfo: Anon_Column = null,
     isDropping: js.UndefOr[Boolean] = js.undefined
   ): IDetailsRowState = {
-    val __obj = js.Dynamic.literal(selectionState = selectionState)
-    if (columnMeasureInfo != null) __obj.updateDynamic("columnMeasureInfo")(columnMeasureInfo)
-    if (!js.isUndefined(isDropping)) __obj.updateDynamic("isDropping")(isDropping)
+    val __obj = js.Dynamic.literal(selectionState = selectionState.asInstanceOf[js.Any])
+    if (columnMeasureInfo != null) __obj.updateDynamic("columnMeasureInfo")(columnMeasureInfo.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDropping)) __obj.updateDynamic("isDropping")(isDropping.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDetailsRowState]
   }
 }

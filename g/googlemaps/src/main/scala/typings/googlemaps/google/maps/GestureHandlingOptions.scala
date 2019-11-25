@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait GestureHandlingOptions extends js.Object
 
+object GestureHandlingOptions {
+  @scala.inline
+  def auto: typings.googlemaps.googlemapsStrings.auto = this.cast("auto")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def cooperative: typings.googlemaps.googlemapsStrings.cooperative = this.cast("cooperative")
+  @scala.inline
+  def greedy: typings.googlemaps.googlemapsStrings.greedy = this.cast("greedy")
+  @scala.inline
+  def none: typings.googlemaps.googlemapsStrings.none = this.cast("none")
+}
+

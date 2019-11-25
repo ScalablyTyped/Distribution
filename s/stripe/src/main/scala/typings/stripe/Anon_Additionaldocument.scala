@@ -40,7 +40,7 @@ object Anon_Additionaldocument {
     document: IPersonDocument,
     status: String
   ): Anon_Additionaldocument = {
-    val __obj = js.Dynamic.literal(additional_document = additional_document, details = details, details_code = details_code, document = document, status = status)
+    val __obj = js.Dynamic.literal(additional_document = additional_document.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], details_code = details_code.asInstanceOf[js.Any], document = document.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Additionaldocument]
   }

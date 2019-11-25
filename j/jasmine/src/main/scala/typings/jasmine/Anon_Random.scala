@@ -12,7 +12,7 @@ trait Anon_Random extends js.Object {
 object Anon_Random {
   @scala.inline
   def apply(random: Boolean, seed: String): Anon_Random = {
-    val __obj = js.Dynamic.literal(random = random, seed = seed)
+    val __obj = js.Dynamic.literal(random = random.asInstanceOf[js.Any], seed = seed.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Random]
   }

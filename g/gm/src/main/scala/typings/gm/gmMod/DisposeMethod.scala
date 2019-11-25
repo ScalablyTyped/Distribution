@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait DisposeMethod extends js.Object
 
+object DisposeMethod {
+  @scala.inline
+  def Background: typings.gm.gmStrings.Background = this.cast("Background")
+  @scala.inline
+  def None: typings.gm.gmStrings.None = this.cast("None")
+  @scala.inline
+  def Previous: typings.gm.gmStrings.Previous = this.cast("Previous")
+  @scala.inline
+  def Undefined: typings.gm.gmStrings.Undefined = this.cast("Undefined")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

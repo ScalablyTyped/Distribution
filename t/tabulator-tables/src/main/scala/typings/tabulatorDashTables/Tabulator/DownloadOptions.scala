@@ -27,15 +27,15 @@ object DownloadOptions {
   ): DownloadOptions = {
     val __obj = js.Dynamic.literal()
     if (autoTable != null) __obj.updateDynamic("autoTable")(autoTable.asInstanceOf[js.Any])
-    if (!js.isUndefined(bom)) __obj.updateDynamic("bom")(bom)
-    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
+    if (!js.isUndefined(bom)) __obj.updateDynamic("bom")(bom.asInstanceOf[js.Any])
+    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
     if (documentProcessing != null) __obj.updateDynamic("documentProcessing")(js.Any.fromFunction1(documentProcessing))
-    if (jsPDF != null) __obj.updateDynamic("jsPDF")(jsPDF)
+    if (jsPDF != null) __obj.updateDynamic("jsPDF")(jsPDF.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (rowCalcStyles != null) __obj.updateDynamic("rowCalcStyles")(rowCalcStyles)
-    if (rowGroupStyles != null) __obj.updateDynamic("rowGroupStyles")(rowGroupStyles)
-    if (sheetName != null) __obj.updateDynamic("sheetName")(sheetName)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (rowCalcStyles != null) __obj.updateDynamic("rowCalcStyles")(rowCalcStyles.asInstanceOf[js.Any])
+    if (rowGroupStyles != null) __obj.updateDynamic("rowGroupStyles")(rowGroupStyles.asInstanceOf[js.Any])
+    if (sheetName != null) __obj.updateDynamic("sheetName")(sheetName.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownloadOptions]
   }
 }

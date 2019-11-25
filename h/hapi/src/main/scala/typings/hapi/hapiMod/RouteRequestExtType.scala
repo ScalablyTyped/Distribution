@@ -12,5 +12,22 @@ import scala.scalajs.js.annotation._
   - typings.hapi.hapiStrings.onPostHandler
   - typings.hapi.hapiStrings.onPreResponse
 */
-trait RouteRequestExtType extends ServerRequestExtType
+trait RouteRequestExtType extends js.Object
+
+object RouteRequestExtType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def onCredentials: typings.hapi.hapiStrings.onCredentials = this.cast("onCredentials")
+  @scala.inline
+  def onPostAuth: typings.hapi.hapiStrings.onPostAuth = this.cast("onPostAuth")
+  @scala.inline
+  def onPostHandler: typings.hapi.hapiStrings.onPostHandler = this.cast("onPostHandler")
+  @scala.inline
+  def onPreAuth: typings.hapi.hapiStrings.onPreAuth = this.cast("onPreAuth")
+  @scala.inline
+  def onPreHandler: typings.hapi.hapiStrings.onPreHandler = this.cast("onPreHandler")
+  @scala.inline
+  def onPreResponse: typings.hapi.hapiStrings.onPreResponse = this.cast("onPreResponse")
+}
 

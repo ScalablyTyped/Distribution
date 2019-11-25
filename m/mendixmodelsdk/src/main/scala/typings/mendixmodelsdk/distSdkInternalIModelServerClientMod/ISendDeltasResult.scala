@@ -11,7 +11,7 @@ trait ISendDeltasResult extends js.Object {
 object ISendDeltasResult {
   @scala.inline
   def apply(firstError: js.Any): ISendDeltasResult = {
-    val __obj = js.Dynamic.literal(firstError = firstError)
+    val __obj = js.Dynamic.literal(firstError = firstError.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISendDeltasResult]
   }

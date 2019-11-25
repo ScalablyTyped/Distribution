@@ -16,9 +16,9 @@ trait Anon_Failinfo extends js.Object {
 object Anon_Failinfo {
   @scala.inline
   def apply(status: NameParam, failinfo: NameParam | IntegerParam = null, statstr: ArrayParam[String] = null): Anon_Failinfo = {
-    val __obj = js.Dynamic.literal(status = status)
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
     if (failinfo != null) __obj.updateDynamic("failinfo")(failinfo.asInstanceOf[js.Any])
-    if (statstr != null) __obj.updateDynamic("statstr")(statstr)
+    if (statstr != null) __obj.updateDynamic("statstr")(statstr.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Failinfo]
   }
 }

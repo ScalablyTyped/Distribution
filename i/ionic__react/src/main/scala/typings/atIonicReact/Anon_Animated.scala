@@ -1,9 +1,9 @@
 package typings.atIonicReact
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.atIonicCore.atIonicCoreMod.ComponentRef
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonModalElement
 import typings.atIonicCore.distTypesComponentsModalModalDashInterfaceMod.ModalOptions
-import typings.atIonicCore.distTypesInterfaceMod.ComponentRef
 import typings.atIonicReact.atIonicReactStrings.animated
 import typings.atIonicReact.atIonicReactStrings.backdropDismiss
 import typings.atIonicReact.atIonicReactStrings.cssClass

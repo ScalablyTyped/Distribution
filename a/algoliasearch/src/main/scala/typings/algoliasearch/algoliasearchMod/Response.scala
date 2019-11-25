@@ -163,22 +163,22 @@ object Response {
     serverUsed: String = null,
     userData: js.Array[StringDictionary[_]] = null
   ): Response[T] = {
-    val __obj = js.Dynamic.literal(exhaustiveFacetsCount = exhaustiveFacetsCount, exhaustiveNbHits = exhaustiveNbHits, hits = hits, hitsPerPage = hitsPerPage, nbHits = nbHits, nbPages = nbPages, page = page, params = params, processingTimeMS = processingTimeMS, query = query)
+    val __obj = js.Dynamic.literal(exhaustiveFacetsCount = exhaustiveFacetsCount.asInstanceOf[js.Any], exhaustiveNbHits = exhaustiveNbHits.asInstanceOf[js.Any], hits = hits.asInstanceOf[js.Any], hitsPerPage = hitsPerPage.asInstanceOf[js.Any], nbHits = nbHits.asInstanceOf[js.Any], nbPages = nbPages.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], processingTimeMS = processingTimeMS.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
     if (abTestVariantID != null) __obj.updateDynamic("abTestVariantID")(abTestVariantID.asInstanceOf[js.Any])
-    if (aroundLatLng != null) __obj.updateDynamic("aroundLatLng")(aroundLatLng)
-    if (automaticRadius != null) __obj.updateDynamic("automaticRadius")(automaticRadius)
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor)
-    if (facets != null) __obj.updateDynamic("facets")(facets)
-    if (facets_stats != null) __obj.updateDynamic("facets_stats")(facets_stats)
-    if (index != null) __obj.updateDynamic("index")(index)
-    if (indexUsed != null) __obj.updateDynamic("indexUsed")(indexUsed)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (parsedQuery != null) __obj.updateDynamic("parsedQuery")(parsedQuery)
-    if (!js.isUndefined(processed)) __obj.updateDynamic("processed")(processed)
-    if (queryAfterRemoval != null) __obj.updateDynamic("queryAfterRemoval")(queryAfterRemoval)
-    if (queryID != null) __obj.updateDynamic("queryID")(queryID)
-    if (serverUsed != null) __obj.updateDynamic("serverUsed")(serverUsed)
-    if (userData != null) __obj.updateDynamic("userData")(userData)
+    if (aroundLatLng != null) __obj.updateDynamic("aroundLatLng")(aroundLatLng.asInstanceOf[js.Any])
+    if (automaticRadius != null) __obj.updateDynamic("automaticRadius")(automaticRadius.asInstanceOf[js.Any])
+    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
+    if (facets != null) __obj.updateDynamic("facets")(facets.asInstanceOf[js.Any])
+    if (facets_stats != null) __obj.updateDynamic("facets_stats")(facets_stats.asInstanceOf[js.Any])
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (indexUsed != null) __obj.updateDynamic("indexUsed")(indexUsed.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (parsedQuery != null) __obj.updateDynamic("parsedQuery")(parsedQuery.asInstanceOf[js.Any])
+    if (!js.isUndefined(processed)) __obj.updateDynamic("processed")(processed.asInstanceOf[js.Any])
+    if (queryAfterRemoval != null) __obj.updateDynamic("queryAfterRemoval")(queryAfterRemoval.asInstanceOf[js.Any])
+    if (queryID != null) __obj.updateDynamic("queryID")(queryID.asInstanceOf[js.Any])
+    if (serverUsed != null) __obj.updateDynamic("serverUsed")(serverUsed.asInstanceOf[js.Any])
+    if (userData != null) __obj.updateDynamic("userData")(userData.asInstanceOf[js.Any])
     __obj.asInstanceOf[Response[T]]
   }
 }

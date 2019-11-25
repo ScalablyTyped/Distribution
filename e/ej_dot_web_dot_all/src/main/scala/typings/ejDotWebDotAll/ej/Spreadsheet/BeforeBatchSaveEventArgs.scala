@@ -20,8 +20,8 @@ object BeforeBatchSaveEventArgs {
   @scala.inline
   def apply(batchChanges: js.Any = null, dataSetting: js.Any = null, sheetIdx: Int | Double = null): BeforeBatchSaveEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (batchChanges != null) __obj.updateDynamic("batchChanges")(batchChanges)
-    if (dataSetting != null) __obj.updateDynamic("dataSetting")(dataSetting)
+    if (batchChanges != null) __obj.updateDynamic("batchChanges")(batchChanges.asInstanceOf[js.Any])
+    if (dataSetting != null) __obj.updateDynamic("dataSetting")(dataSetting.asInstanceOf[js.Any])
     if (sheetIdx != null) __obj.updateDynamic("sheetIdx")(sheetIdx.asInstanceOf[js.Any])
     __obj.asInstanceOf[BeforeBatchSaveEventArgs]
   }

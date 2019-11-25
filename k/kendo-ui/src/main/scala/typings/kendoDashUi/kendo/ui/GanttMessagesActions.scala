@@ -22,11 +22,11 @@ object GanttMessagesActions {
     pdf: String = null
   ): GanttMessagesActions = {
     val __obj = js.Dynamic.literal()
-    if (addChild != null) __obj.updateDynamic("addChild")(addChild)
-    if (append != null) __obj.updateDynamic("append")(append)
-    if (insertAfter != null) __obj.updateDynamic("insertAfter")(insertAfter)
-    if (insertBefore != null) __obj.updateDynamic("insertBefore")(insertBefore)
-    if (pdf != null) __obj.updateDynamic("pdf")(pdf)
+    if (addChild != null) __obj.updateDynamic("addChild")(addChild.asInstanceOf[js.Any])
+    if (append != null) __obj.updateDynamic("append")(append.asInstanceOf[js.Any])
+    if (insertAfter != null) __obj.updateDynamic("insertAfter")(insertAfter.asInstanceOf[js.Any])
+    if (insertBefore != null) __obj.updateDynamic("insertBefore")(insertBefore.asInstanceOf[js.Any])
+    if (pdf != null) __obj.updateDynamic("pdf")(pdf.asInstanceOf[js.Any])
     __obj.asInstanceOf[GanttMessagesActions]
   }
 }

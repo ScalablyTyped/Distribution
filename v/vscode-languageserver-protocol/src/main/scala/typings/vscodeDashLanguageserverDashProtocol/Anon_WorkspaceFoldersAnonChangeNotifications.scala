@@ -12,7 +12,7 @@ object Anon_WorkspaceFoldersAnonChangeNotifications {
   @scala.inline
   def apply(workspaceFolders: Anon_ChangeNotifications = null): Anon_WorkspaceFoldersAnonChangeNotifications = {
     val __obj = js.Dynamic.literal()
-    if (workspaceFolders != null) __obj.updateDynamic("workspaceFolders")(workspaceFolders)
+    if (workspaceFolders != null) __obj.updateDynamic("workspaceFolders")(workspaceFolders.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_WorkspaceFoldersAnonChangeNotifications]
   }
 }

@@ -15,7 +15,7 @@ trait PickListStyleBriefBriefText extends js.Object {
 object PickListStyleBriefBriefText {
   @scala.inline
   def apply(Brief: ViewStyle, BriefText: TextStyle): PickListStyleBriefBriefText = {
-    val __obj = js.Dynamic.literal(Brief = Brief, BriefText = BriefText)
+    val __obj = js.Dynamic.literal(Brief = Brief.asInstanceOf[js.Any], BriefText = BriefText.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PickListStyleBriefBriefText]
   }

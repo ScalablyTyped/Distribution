@@ -40,7 +40,7 @@ object HorizontalPodAutoscalerSpec {
     scaleTargetRef: CrossVersionObjectReference,
     targetCPUUtilizationPercentage: Double
   ): HorizontalPodAutoscalerSpec = {
-    val __obj = js.Dynamic.literal(maxReplicas = maxReplicas, minReplicas = minReplicas, scaleTargetRef = scaleTargetRef, targetCPUUtilizationPercentage = targetCPUUtilizationPercentage)
+    val __obj = js.Dynamic.literal(maxReplicas = maxReplicas.asInstanceOf[js.Any], minReplicas = minReplicas.asInstanceOf[js.Any], scaleTargetRef = scaleTargetRef.asInstanceOf[js.Any], targetCPUUtilizationPercentage = targetCPUUtilizationPercentage.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HorizontalPodAutoscalerSpec]
   }

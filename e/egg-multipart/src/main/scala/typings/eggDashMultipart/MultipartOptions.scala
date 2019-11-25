@@ -32,9 +32,9 @@ object MultipartOptions {
   ): MultipartOptions = {
     val __obj = js.Dynamic.literal()
     if (checkFile != null) __obj.updateDynamic("checkFile")(js.Any.fromFunction5(checkFile))
-    if (defCharset != null) __obj.updateDynamic("defCharset")(defCharset)
-    if (limits != null) __obj.updateDynamic("limits")(limits)
-    if (!js.isUndefined(requireFile)) __obj.updateDynamic("requireFile")(requireFile)
+    if (defCharset != null) __obj.updateDynamic("defCharset")(defCharset.asInstanceOf[js.Any])
+    if (limits != null) __obj.updateDynamic("limits")(limits.asInstanceOf[js.Any])
+    if (!js.isUndefined(requireFile)) __obj.updateDynamic("requireFile")(requireFile.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultipartOptions]
   }
 }

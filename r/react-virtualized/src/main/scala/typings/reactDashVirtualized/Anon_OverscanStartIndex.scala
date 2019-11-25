@@ -14,7 +14,7 @@ trait Anon_OverscanStartIndex extends js.Object {
 object Anon_OverscanStartIndex {
   @scala.inline
   def apply(overscanStartIndex: Double, overscanStopIndex: Double, startIndex: Double, stopIndex: Double): Anon_OverscanStartIndex = {
-    val __obj = js.Dynamic.literal(overscanStartIndex = overscanStartIndex, overscanStopIndex = overscanStopIndex, startIndex = startIndex, stopIndex = stopIndex)
+    val __obj = js.Dynamic.literal(overscanStartIndex = overscanStartIndex.asInstanceOf[js.Any], overscanStopIndex = overscanStopIndex.asInstanceOf[js.Any], startIndex = startIndex.asInstanceOf[js.Any], stopIndex = stopIndex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_OverscanStartIndex]
   }

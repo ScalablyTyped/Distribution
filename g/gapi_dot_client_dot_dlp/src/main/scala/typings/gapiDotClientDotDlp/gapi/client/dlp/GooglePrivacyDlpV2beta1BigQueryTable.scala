@@ -20,9 +20,9 @@ object GooglePrivacyDlpV2beta1BigQueryTable {
   @scala.inline
   def apply(datasetId: String = null, projectId: String = null, tableId: String = null): GooglePrivacyDlpV2beta1BigQueryTable = {
     val __obj = js.Dynamic.literal()
-    if (datasetId != null) __obj.updateDynamic("datasetId")(datasetId)
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
-    if (tableId != null) __obj.updateDynamic("tableId")(tableId)
+    if (datasetId != null) __obj.updateDynamic("datasetId")(datasetId.asInstanceOf[js.Any])
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
+    if (tableId != null) __obj.updateDynamic("tableId")(tableId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1BigQueryTable]
   }
 }

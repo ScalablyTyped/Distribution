@@ -41,12 +41,12 @@ object SubscriptionMessage {
     queueName: String = null,
     tables: js.Array[SubscriptionTables] = null
   ): SubscriptionMessage = {
-    val __obj = js.Dynamic.literal(registered = registered, txId = txId)
-    __obj.updateDynamic("type")(`type`)
-    if (dbName != null) __obj.updateDynamic("dbName")(dbName)
-    if (queries != null) __obj.updateDynamic("queries")(queries)
-    if (queueName != null) __obj.updateDynamic("queueName")(queueName)
-    if (tables != null) __obj.updateDynamic("tables")(tables)
+    val __obj = js.Dynamic.literal(registered = registered.asInstanceOf[js.Any], txId = txId.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (dbName != null) __obj.updateDynamic("dbName")(dbName.asInstanceOf[js.Any])
+    if (queries != null) __obj.updateDynamic("queries")(queries.asInstanceOf[js.Any])
+    if (queueName != null) __obj.updateDynamic("queueName")(queueName.asInstanceOf[js.Any])
+    if (tables != null) __obj.updateDynamic("tables")(tables.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscriptionMessage]
   }
 }

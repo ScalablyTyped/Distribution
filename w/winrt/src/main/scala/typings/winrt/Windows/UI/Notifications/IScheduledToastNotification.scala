@@ -23,7 +23,7 @@ object IScheduledToastNotification {
     maximumSnoozeCount: Double,
     snoozeInterval: Double
   ): IScheduledToastNotification = {
-    val __obj = js.Dynamic.literal(content = content, deliveryTime = deliveryTime, id = id, maximumSnoozeCount = maximumSnoozeCount, snoozeInterval = snoozeInterval)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], deliveryTime = deliveryTime.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], maximumSnoozeCount = maximumSnoozeCount.asInstanceOf[js.Any], snoozeInterval = snoozeInterval.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IScheduledToastNotification]
   }

@@ -28,10 +28,10 @@ object RowDefinitionProps {
     rowKey: String = null
   ): RowDefinitionProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (childColumnName != null) __obj.updateDynamic("childColumnName")(childColumnName)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (childColumnName != null) __obj.updateDynamic("childColumnName")(childColumnName.asInstanceOf[js.Any])
     if (cssClassName != null) __obj.updateDynamic("cssClassName")(cssClassName.asInstanceOf[js.Any])
-    if (rowKey != null) __obj.updateDynamic("rowKey")(rowKey)
+    if (rowKey != null) __obj.updateDynamic("rowKey")(rowKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowDefinitionProps]
   }
 }

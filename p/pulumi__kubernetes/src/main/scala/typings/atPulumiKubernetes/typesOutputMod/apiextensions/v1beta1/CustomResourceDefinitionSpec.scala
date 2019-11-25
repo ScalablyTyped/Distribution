@@ -95,7 +95,7 @@ object CustomResourceDefinitionSpec {
     version: String,
     versions: js.Array[CustomResourceDefinitionVersion]
   ): CustomResourceDefinitionSpec = {
-    val __obj = js.Dynamic.literal(additionalPrinterColumns = additionalPrinterColumns, conversion = conversion, group = group, names = names, preserveUnknownFields = preserveUnknownFields, scope = scope, subresources = subresources, validation = validation, version = version, versions = versions)
+    val __obj = js.Dynamic.literal(additionalPrinterColumns = additionalPrinterColumns.asInstanceOf[js.Any], conversion = conversion.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any], preserveUnknownFields = preserveUnknownFields.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], subresources = subresources.asInstanceOf[js.Any], validation = validation.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], versions = versions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CustomResourceDefinitionSpec]
   }

@@ -24,7 +24,7 @@ object LoadPersianOptions {
   def apply(dialect: persian | `persian-modern` = null, usePersianDigits: js.UndefOr[Boolean] = js.undefined): LoadPersianOptions = {
     val __obj = js.Dynamic.literal()
     if (dialect != null) __obj.updateDynamic("dialect")(dialect.asInstanceOf[js.Any])
-    if (!js.isUndefined(usePersianDigits)) __obj.updateDynamic("usePersianDigits")(usePersianDigits)
+    if (!js.isUndefined(usePersianDigits)) __obj.updateDynamic("usePersianDigits")(usePersianDigits.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadPersianOptions]
   }
 }

@@ -59,15 +59,15 @@ object Anon_Add {
     title: String = null,
     toUser: String = null
   ): Anon_Add = {
-    val __obj = js.Dynamic.literal(key = key, opNum = opNum, operation = operation)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], opNum = opNum.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
-    if (imageUrlId != null) __obj.updateDynamic("imageUrlId")(imageUrlId)
-    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet)
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
+    if (imageUrlId != null) __obj.updateDynamic("imageUrlId")(imageUrlId.asInstanceOf[js.Any])
+    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (toUser != null) __obj.updateDynamic("toUser")(toUser)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (toUser != null) __obj.updateDynamic("toUser")(toUser.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Add]
   }
 }

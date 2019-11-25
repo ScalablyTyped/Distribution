@@ -34,8 +34,8 @@ object HtmlTagObject {
     voidTag: Boolean,
     innerHTML: String = null
   ): HtmlTagObject = {
-    val __obj = js.Dynamic.literal(attributes = attributes, tagName = tagName, voidTag = voidTag)
-    if (innerHTML != null) __obj.updateDynamic("innerHTML")(innerHTML)
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any], voidTag = voidTag.asInstanceOf[js.Any])
+    if (innerHTML != null) __obj.updateDynamic("innerHTML")(innerHTML.asInstanceOf[js.Any])
     __obj.asInstanceOf[HtmlTagObject]
   }
 }

@@ -90,16 +90,16 @@ object Product {
     uploadedAttributes: Attributes = null
   ): Product = {
     val __obj = js.Dynamic.literal()
-    if (contentLanguage != null) __obj.updateDynamic("contentLanguage")(contentLanguage)
-    if (finalAttributes != null) __obj.updateDynamic("finalAttributes")(finalAttributes)
-    if (issues != null) __obj.updateDynamic("issues")(issues)
-    if (manuallyDeletedAttributes != null) __obj.updateDynamic("manuallyDeletedAttributes")(manuallyDeletedAttributes)
-    if (manuallyProvidedAttributes != null) __obj.updateDynamic("manuallyProvidedAttributes")(manuallyProvidedAttributes)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
-    if (productId != null) __obj.updateDynamic("productId")(productId)
-    if (targetCountry != null) __obj.updateDynamic("targetCountry")(targetCountry)
-    if (uploadedAttributes != null) __obj.updateDynamic("uploadedAttributes")(uploadedAttributes)
+    if (contentLanguage != null) __obj.updateDynamic("contentLanguage")(contentLanguage.asInstanceOf[js.Any])
+    if (finalAttributes != null) __obj.updateDynamic("finalAttributes")(finalAttributes.asInstanceOf[js.Any])
+    if (issues != null) __obj.updateDynamic("issues")(issues.asInstanceOf[js.Any])
+    if (manuallyDeletedAttributes != null) __obj.updateDynamic("manuallyDeletedAttributes")(manuallyDeletedAttributes.asInstanceOf[js.Any])
+    if (manuallyProvidedAttributes != null) __obj.updateDynamic("manuallyProvidedAttributes")(manuallyProvidedAttributes.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
+    if (targetCountry != null) __obj.updateDynamic("targetCountry")(targetCountry.asInstanceOf[js.Any])
+    if (uploadedAttributes != null) __obj.updateDynamic("uploadedAttributes")(uploadedAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Product]
   }
 }

@@ -15,7 +15,7 @@ trait Anon_FinishTime extends js.Object {
 object Anon_FinishTime {
   @scala.inline
   def apply(finishTime: String, messages: js.Array[Message], pluginName: String, success: Boolean): Anon_FinishTime = {
-    val __obj = js.Dynamic.literal(finishTime = finishTime, messages = messages, pluginName = pluginName, success = success)
+    val __obj = js.Dynamic.literal(finishTime = finishTime.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any], pluginName = pluginName.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FinishTime]
   }

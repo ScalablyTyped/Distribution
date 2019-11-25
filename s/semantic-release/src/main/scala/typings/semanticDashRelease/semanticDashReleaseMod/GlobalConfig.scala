@@ -48,9 +48,9 @@ object GlobalConfig {
     ci: js.UndefOr[Boolean] = js.undefined,
     dryRun: js.UndefOr[Boolean] = js.undefined
   ): GlobalConfig = {
-    val __obj = js.Dynamic.literal(branch = branch, plugins = plugins, repositoryUrl = repositoryUrl, tagFormat = tagFormat)
-    if (!js.isUndefined(ci)) __obj.updateDynamic("ci")(ci)
-    if (!js.isUndefined(dryRun)) __obj.updateDynamic("dryRun")(dryRun)
+    val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any], repositoryUrl = repositoryUrl.asInstanceOf[js.Any], tagFormat = tagFormat.asInstanceOf[js.Any])
+    if (!js.isUndefined(ci)) __obj.updateDynamic("ci")(ci.asInstanceOf[js.Any])
+    if (!js.isUndefined(dryRun)) __obj.updateDynamic("dryRun")(dryRun.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalConfig]
   }
 }

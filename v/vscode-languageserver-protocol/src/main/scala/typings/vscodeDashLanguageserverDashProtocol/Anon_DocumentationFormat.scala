@@ -24,8 +24,8 @@ object Anon_DocumentationFormat {
     parameterInformation: Anon_LabelOffsetSupport = null
   ): Anon_DocumentationFormat = {
     val __obj = js.Dynamic.literal()
-    if (documentationFormat != null) __obj.updateDynamic("documentationFormat")(documentationFormat)
-    if (parameterInformation != null) __obj.updateDynamic("parameterInformation")(parameterInformation)
+    if (documentationFormat != null) __obj.updateDynamic("documentationFormat")(documentationFormat.asInstanceOf[js.Any])
+    if (parameterInformation != null) __obj.updateDynamic("parameterInformation")(parameterInformation.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DocumentationFormat]
   }
 }

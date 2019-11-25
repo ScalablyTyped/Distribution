@@ -37,8 +37,8 @@ object IonFab {
     vertical: top | bottom | center = null
   ): IonFab = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(activated)) __obj.updateDynamic("activated")(activated)
-    if (!js.isUndefined(edge)) __obj.updateDynamic("edge")(edge)
+    if (!js.isUndefined(activated)) __obj.updateDynamic("activated")(activated.asInstanceOf[js.Any])
+    if (!js.isUndefined(edge)) __obj.updateDynamic("edge")(edge.asInstanceOf[js.Any])
     if (horizontal != null) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
     if (vertical != null) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonFab]

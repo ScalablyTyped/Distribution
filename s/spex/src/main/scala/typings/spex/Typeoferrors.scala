@@ -24,7 +24,7 @@ object Typeoferrors {
     PageError: Instantiable0[PageError],
     SequenceError: Instantiable0[SequenceError]
   ): Typeoferrors = {
-    val __obj = js.Dynamic.literal(BatchError = BatchError, PageError = PageError, SequenceError = SequenceError)
+    val __obj = js.Dynamic.literal(BatchError = BatchError.asInstanceOf[js.Any], PageError = PageError.asInstanceOf[js.Any], SequenceError = SequenceError.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Typeoferrors]
   }

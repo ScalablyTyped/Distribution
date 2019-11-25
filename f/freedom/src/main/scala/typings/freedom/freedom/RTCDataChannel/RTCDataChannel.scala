@@ -3,7 +3,7 @@ package typings.freedom.freedom.RTCDataChannel
 import typings.freedom.freedom.Method1
 import typings.freedom.freedomStrings.onclose
 import typings.freedom.freedomStrings.onerror
-import typings.freedom.freedomStrings.onmessage
+import typings.freedom.freedomStrings.onmessage_
 import typings.freedom.freedomStrings.onopen
 import typings.std.ArrayBuffer
 import scala.scalajs.js
@@ -35,7 +35,7 @@ trait RTCDataChannel extends js.Object {
   @JSName("on")
   def on_onerror(t: onerror, f: js.Function0[Unit]): Unit = js.native
   @JSName("on")
-  def on_onmessage(t: onmessage, f: js.Function1[/* m */ Message, Unit]): Unit = js.native
+  def on_onmessage(t: onmessage_, f: js.Function1[/* m */ Message, Unit]): Unit = js.native
   @JSName("on")
   def on_onopen(t: onopen, f: js.Function0[Unit]): Unit = js.native
   def send(a: String): js.Promise[Unit] = js.native

@@ -66,13 +66,13 @@ object Options {
     tagFormat: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (branch != null) __obj.updateDynamic("branch")(branch)
-    if (!js.isUndefined(ci)) __obj.updateDynamic("ci")(ci)
-    if (!js.isUndefined(dryRun)) __obj.updateDynamic("dryRun")(dryRun)
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
-    if (repositoryUrl != null) __obj.updateDynamic("repositoryUrl")(repositoryUrl)
-    if (tagFormat != null) __obj.updateDynamic("tagFormat")(tagFormat)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (branch != null) __obj.updateDynamic("branch")(branch.asInstanceOf[js.Any])
+    if (!js.isUndefined(ci)) __obj.updateDynamic("ci")(ci.asInstanceOf[js.Any])
+    if (!js.isUndefined(dryRun)) __obj.updateDynamic("dryRun")(dryRun.asInstanceOf[js.Any])
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
+    if (repositoryUrl != null) __obj.updateDynamic("repositoryUrl")(repositoryUrl.asInstanceOf[js.Any])
+    if (tagFormat != null) __obj.updateDynamic("tagFormat")(tagFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

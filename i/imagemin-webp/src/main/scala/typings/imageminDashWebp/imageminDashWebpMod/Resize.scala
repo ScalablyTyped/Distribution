@@ -12,7 +12,7 @@ trait Resize extends js.Object {
 object Resize {
   @scala.inline
   def apply(height: Double, width: Double): Resize = {
-    val __obj = js.Dynamic.literal(height = height, width = width)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Resize]
   }

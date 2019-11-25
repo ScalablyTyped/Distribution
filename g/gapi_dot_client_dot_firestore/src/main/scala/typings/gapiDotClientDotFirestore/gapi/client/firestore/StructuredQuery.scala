@@ -65,14 +65,14 @@ object StructuredQuery {
     where: Filter = null
   ): StructuredQuery = {
     val __obj = js.Dynamic.literal()
-    if (endAt != null) __obj.updateDynamic("endAt")(endAt)
-    if (from != null) __obj.updateDynamic("from")(from)
+    if (endAt != null) __obj.updateDynamic("endAt")(endAt.asInstanceOf[js.Any])
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy)
-    if (select != null) __obj.updateDynamic("select")(select)
-    if (startAt != null) __obj.updateDynamic("startAt")(startAt)
-    if (where != null) __obj.updateDynamic("where")(where)
+    if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy.asInstanceOf[js.Any])
+    if (select != null) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
+    if (startAt != null) __obj.updateDynamic("startAt")(startAt.asInstanceOf[js.Any])
+    if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])
     __obj.asInstanceOf[StructuredQuery]
   }
 }

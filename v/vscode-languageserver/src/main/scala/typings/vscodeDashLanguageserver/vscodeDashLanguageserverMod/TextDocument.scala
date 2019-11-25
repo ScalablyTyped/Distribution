@@ -1,6 +1,5 @@
 package typings.vscodeDashLanguageserver.vscodeDashLanguageserverMod
 
-import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.TextEdit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +9,9 @@ import scala.scalajs.js.annotation._
 object TextDocument extends js.Object {
   def applyEdits(
     document: typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.TextDocument,
-    edits: js.Array[TextEdit]
+    edits: js.Array[
+      typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.TextEdit
+    ]
   ): String = js.native
   /**
     * Creates a new ITextDocument literal from the given uri and content.

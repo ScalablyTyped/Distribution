@@ -12,8 +12,8 @@ trait ResolvedGlobalId extends js.Object {
 object ResolvedGlobalId {
   @scala.inline
   def apply(id: String, `type`: String): ResolvedGlobalId = {
-    val __obj = js.Dynamic.literal(id = id)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolvedGlobalId]
   }
 }

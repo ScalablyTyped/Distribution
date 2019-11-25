@@ -12,7 +12,7 @@ object LoadableReadyOptions {
   @scala.inline
   def apply(namespace: String = null): LoadableReadyOptions = {
     val __obj = js.Dynamic.literal()
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace)
+    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadableReadyOptions]
   }
 }

@@ -1,5 +1,6 @@
 package typings.eslint
 
+import typings.eslint.eslintMod.Linter.RuleLevel
 import typings.eslint.eslintMod.Linter.Severity
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -7,10 +8,14 @@ import scala.scalajs.js.annotation._
 
 object eslintNumbers {
   @js.native
-  sealed trait `0` extends Severity
+  sealed trait `0`
+    extends RuleLevel
+       with Severity
   
   @js.native
-  sealed trait `1` extends Severity
+  sealed trait `1`
+    extends RuleLevel
+       with Severity
   
   @js.native
   sealed trait `10` extends js.Object
@@ -19,7 +24,9 @@ object eslintNumbers {
   sealed trait `11` extends js.Object
   
   @js.native
-  sealed trait `2` extends Severity
+  sealed trait `2`
+    extends RuleLevel
+       with Severity
   
   @js.native
   sealed trait `2015` extends js.Object

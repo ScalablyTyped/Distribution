@@ -12,7 +12,7 @@ trait Foundation extends js.Object {
 object Foundation {
   @scala.inline
   def apply(base: Base, palette: Palette): Foundation = {
-    val __obj = js.Dynamic.literal(base = base, palette = palette)
+    val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], palette = palette.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Foundation]
   }

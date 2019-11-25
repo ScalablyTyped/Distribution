@@ -41,23 +41,23 @@ object IndicesAnalyzeParams {
     tokenizer: String = null
   ): IndicesAnalyzeParams = {
     val __obj = js.Dynamic.literal()
-    if (analyzer != null) __obj.updateDynamic("analyzer")(analyzer)
+    if (analyzer != null) __obj.updateDynamic("analyzer")(analyzer.asInstanceOf[js.Any])
     if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body)
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (charFilter != null) __obj.updateDynamic("charFilter")(charFilter.asInstanceOf[js.Any])
-    if (!js.isUndefined(explain)) __obj.updateDynamic("explain")(explain)
-    if (field != null) __obj.updateDynamic("field")(field)
+    if (!js.isUndefined(explain)) __obj.updateDynamic("explain")(explain.asInstanceOf[js.Any])
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (!js.isUndefined(perferLocal)) __obj.updateDynamic("perferLocal")(perferLocal)
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (!js.isUndefined(perferLocal)) __obj.updateDynamic("perferLocal")(perferLocal.asInstanceOf[js.Any])
     if (requestTimeout != null) __obj.updateDynamic("requestTimeout")(requestTimeout.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (tokenizer != null) __obj.updateDynamic("tokenizer")(tokenizer)
+    if (tokenizer != null) __obj.updateDynamic("tokenizer")(tokenizer.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndicesAnalyzeParams]
   }
 }

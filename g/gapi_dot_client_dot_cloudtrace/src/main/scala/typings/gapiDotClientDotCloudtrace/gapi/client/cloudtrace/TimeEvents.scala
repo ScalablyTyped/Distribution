@@ -29,7 +29,7 @@ object TimeEvents {
     val __obj = js.Dynamic.literal()
     if (droppedAnnotationsCount != null) __obj.updateDynamic("droppedAnnotationsCount")(droppedAnnotationsCount.asInstanceOf[js.Any])
     if (droppedNetworkEventsCount != null) __obj.updateDynamic("droppedNetworkEventsCount")(droppedNetworkEventsCount.asInstanceOf[js.Any])
-    if (timeEvent != null) __obj.updateDynamic("timeEvent")(timeEvent)
+    if (timeEvent != null) __obj.updateDynamic("timeEvent")(timeEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeEvents]
   }
 }

@@ -30,9 +30,9 @@ object ExecutionError {
     scriptStackTraceElements: js.Array[ScriptStackTraceElement] = null
   ): ExecutionError = {
     val __obj = js.Dynamic.literal()
-    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage)
-    if (errorType != null) __obj.updateDynamic("errorType")(errorType)
-    if (scriptStackTraceElements != null) __obj.updateDynamic("scriptStackTraceElements")(scriptStackTraceElements)
+    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
+    if (errorType != null) __obj.updateDynamic("errorType")(errorType.asInstanceOf[js.Any])
+    if (scriptStackTraceElements != null) __obj.updateDynamic("scriptStackTraceElements")(scriptStackTraceElements.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecutionError]
   }
 }

@@ -12,7 +12,7 @@ trait JQueryStatic extends js.Object {
 object JQueryStatic {
   @scala.inline
   def apply(browser: Matchs): JQueryStatic = {
-    val __obj = js.Dynamic.literal(browser = browser)
+    val __obj = js.Dynamic.literal(browser = browser.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[JQueryStatic]
   }

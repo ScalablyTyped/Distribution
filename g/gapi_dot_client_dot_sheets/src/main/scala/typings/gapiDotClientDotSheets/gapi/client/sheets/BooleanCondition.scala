@@ -20,8 +20,8 @@ object BooleanCondition {
   @scala.inline
   def apply(`type`: String = null, values: js.Array[ConditionValue] = null): BooleanCondition = {
     val __obj = js.Dynamic.literal()
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[BooleanCondition]
   }
 }

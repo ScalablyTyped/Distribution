@@ -31,7 +31,7 @@ object connectFailureArgs {
     reconnect: Boolean,
     timestamp: Date
   ): connectFailureArgs = {
-    val __obj = js.Dynamic.literal(client = client, clientId = clientId, error = error, isReconnect = isReconnect, meta = meta, reconnect = reconnect, timestamp = timestamp)
+    val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], isReconnect = isReconnect.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], reconnect = reconnect.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[connectFailureArgs]
   }

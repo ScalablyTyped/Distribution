@@ -15,7 +15,7 @@ trait Anon_E extends js.Object {
 object Anon_E {
   @scala.inline
   def apply(name: String, onBlur: js.Any => Unit, onChange: ChangeEvent[_] => Unit, value: js.Any): Anon_E = {
-    val __obj = js.Dynamic.literal(name = name, onBlur = js.Any.fromFunction1(onBlur), onChange = js.Any.fromFunction1(onChange), value = value)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], onBlur = js.Any.fromFunction1(onBlur), onChange = js.Any.fromFunction1(onChange), value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_E]
   }

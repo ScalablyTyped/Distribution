@@ -15,7 +15,7 @@ object ArticleListOptions {
   @scala.inline
   def apply(handle: String = null): ArticleListOptions = {
     val __obj = js.Dynamic.literal()
-    if (handle != null) __obj.updateDynamic("handle")(handle)
+    if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArticleListOptions]
   }
 }

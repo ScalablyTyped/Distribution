@@ -139,17 +139,17 @@ object DistanceMatrixRequest {
     transit_routing_preference: TransitRoutingPreference = null,
     units: UnitSystem = null
   ): DistanceMatrixRequest = {
-    val __obj = js.Dynamic.literal(destinations = destinations, origins = origins)
+    val __obj = js.Dynamic.literal(destinations = destinations.asInstanceOf[js.Any], origins = origins.asInstanceOf[js.Any])
     if (arrival_time != null) __obj.updateDynamic("arrival_time")(arrival_time.asInstanceOf[js.Any])
-    if (avoid != null) __obj.updateDynamic("avoid")(avoid)
+    if (avoid != null) __obj.updateDynamic("avoid")(avoid.asInstanceOf[js.Any])
     if (departure_time != null) __obj.updateDynamic("departure_time")(departure_time.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (mode != null) __obj.updateDynamic("mode")(mode)
-    if (region != null) __obj.updateDynamic("region")(region)
-    if (traffic_model != null) __obj.updateDynamic("traffic_model")(traffic_model)
-    if (transit_mode != null) __obj.updateDynamic("transit_mode")(transit_mode)
-    if (transit_routing_preference != null) __obj.updateDynamic("transit_routing_preference")(transit_routing_preference)
-    if (units != null) __obj.updateDynamic("units")(units)
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    if (traffic_model != null) __obj.updateDynamic("traffic_model")(traffic_model.asInstanceOf[js.Any])
+    if (transit_mode != null) __obj.updateDynamic("transit_mode")(transit_mode.asInstanceOf[js.Any])
+    if (transit_routing_preference != null) __obj.updateDynamic("transit_routing_preference")(transit_routing_preference.asInstanceOf[js.Any])
+    if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistanceMatrixRequest]
   }
 }

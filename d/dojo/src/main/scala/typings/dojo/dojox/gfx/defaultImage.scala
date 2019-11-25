@@ -46,8 +46,8 @@ trait defaultImage extends js.Object {
 object defaultImage {
   @scala.inline
   def apply(height: Double, src: String, `type`: String, width: Double, x: Double, y: Double): defaultImage = {
-    val __obj = js.Dynamic.literal(height = height, src = src, width = width, x = x, y = y)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[defaultImage]
   }
 }

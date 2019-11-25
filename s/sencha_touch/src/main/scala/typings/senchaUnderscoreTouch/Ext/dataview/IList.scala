@@ -176,21 +176,14 @@ object IList {
   @scala.inline
   def apply(
     IDataView: typings.senchaUnderscoreTouch.Ext.dataview.IDataView = null,
-    baseCls: java.lang.String = null,
     bufferSize: Int | Double = null,
-    defaultType: java.lang.String = null,
-    destroy: () => Unit = null,
     disclosureProperty: java.lang.String = null,
-    getBaseCls: () => java.lang.String = null,
-    getDefaultType: () => java.lang.String = null,
     getDisclosureProperty: () => java.lang.String = null,
     getGrouped: () => Boolean = null,
     getIcon: () => _ = null,
     getIndexBar: () => _ = null,
     getInfinite: () => Boolean = null,
-    getItemAt: /* index */ js.UndefOr[Double] => _ = null,
     getItemHeight: () => Double = null,
-    getItemIndex: /* item */ js.UndefOr[Double] => Double = null,
     getMinimumBufferDistance: () => Double = null,
     getOnItemDisclosure: () => _ = null,
     getPinHeaders: () => Boolean = null,
@@ -198,23 +191,18 @@ object IList {
     getRefreshHeightOnUpdate: () => Boolean = null,
     getScrollDockedItems: () => Array = null,
     getStriped: () => Boolean = null,
-    getUi: () => java.lang.String = null,
     getUseHeaders: () => Boolean = null,
     getUseSimpleItems: () => Boolean = null,
     getVariableHeights: () => Boolean = null,
-    getViewItems: () => _ = null,
     grouped: js.UndefOr[Boolean] = js.undefined,
     indexBar: js.Any = null,
     infinite: js.UndefOr[Boolean] = js.undefined,
-    initialize: () => Unit = null,
     itemHeight: Int | Double = null,
     onItemDisclosure: js.Any = null,
     pinHeaders: js.UndefOr[Boolean] = js.undefined,
     preventSelectionOnDisclose: js.UndefOr[Boolean] = js.undefined,
     refreshHeightOnUpdate: js.UndefOr[Boolean] = js.undefined,
     scrollToRecord: (/* record */ js.UndefOr[js.Any], /* animate */ js.UndefOr[js.Any], /* overscroll */ js.UndefOr[js.Any]) => Unit = null,
-    setBaseCls: /* baseCls */ js.UndefOr[java.lang.String] => Unit = null,
-    setDefaultType: /* defaultType */ js.UndefOr[java.lang.String] => Unit = null,
     setDisclosureProperty: /* disclosureProperty */ js.UndefOr[java.lang.String] => Unit = null,
     setGrouped: /* grouped */ js.UndefOr[Boolean] => Unit = null,
     setIcon: /* icon */ js.UndefOr[js.Any] => Unit = null,
@@ -227,32 +215,23 @@ object IList {
     setPreventSelectionOnDisclose: /* preventSelectionOnDisclose */ js.UndefOr[Boolean] => Unit = null,
     setRefreshHeightOnUpdate: /* refreshHeightOnUpdate */ js.UndefOr[Boolean] => Unit = null,
     setStriped: /* striped */ js.UndefOr[Boolean] => Unit = null,
-    setUi: /* ui */ js.UndefOr[java.lang.String] => Unit = null,
     setUseHeaders: /* useHeaders */ js.UndefOr[Boolean] => Unit = null,
     setUseSimpleItems: /* useSimpleItems */ js.UndefOr[Boolean] => Unit = null,
     setVariableHeights: /* variableHeights */ js.UndefOr[Boolean] => Unit = null,
     striped: js.UndefOr[Boolean] = js.undefined,
-    ui: java.lang.String = null,
     useSimpleItems: js.UndefOr[Boolean] = js.undefined,
     variableHeights: js.UndefOr[Boolean] = js.undefined
   ): IList = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IDataView)
-    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
+    if (IDataView != null) js.Dynamic.global.Object.assign(__obj, IDataView)
     if (bufferSize != null) __obj.updateDynamic("bufferSize")(bufferSize.asInstanceOf[js.Any])
-    if (defaultType != null) __obj.updateDynamic("defaultType")(defaultType)
-    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (disclosureProperty != null) __obj.updateDynamic("disclosureProperty")(disclosureProperty)
-    if (getBaseCls != null) __obj.updateDynamic("getBaseCls")(js.Any.fromFunction0(getBaseCls))
-    if (getDefaultType != null) __obj.updateDynamic("getDefaultType")(js.Any.fromFunction0(getDefaultType))
+    if (disclosureProperty != null) __obj.updateDynamic("disclosureProperty")(disclosureProperty.asInstanceOf[js.Any])
     if (getDisclosureProperty != null) __obj.updateDynamic("getDisclosureProperty")(js.Any.fromFunction0(getDisclosureProperty))
     if (getGrouped != null) __obj.updateDynamic("getGrouped")(js.Any.fromFunction0(getGrouped))
     if (getIcon != null) __obj.updateDynamic("getIcon")(js.Any.fromFunction0(getIcon))
     if (getIndexBar != null) __obj.updateDynamic("getIndexBar")(js.Any.fromFunction0(getIndexBar))
     if (getInfinite != null) __obj.updateDynamic("getInfinite")(js.Any.fromFunction0(getInfinite))
-    if (getItemAt != null) __obj.updateDynamic("getItemAt")(js.Any.fromFunction1(getItemAt))
     if (getItemHeight != null) __obj.updateDynamic("getItemHeight")(js.Any.fromFunction0(getItemHeight))
-    if (getItemIndex != null) __obj.updateDynamic("getItemIndex")(js.Any.fromFunction1(getItemIndex))
     if (getMinimumBufferDistance != null) __obj.updateDynamic("getMinimumBufferDistance")(js.Any.fromFunction0(getMinimumBufferDistance))
     if (getOnItemDisclosure != null) __obj.updateDynamic("getOnItemDisclosure")(js.Any.fromFunction0(getOnItemDisclosure))
     if (getPinHeaders != null) __obj.updateDynamic("getPinHeaders")(js.Any.fromFunction0(getPinHeaders))
@@ -260,23 +239,18 @@ object IList {
     if (getRefreshHeightOnUpdate != null) __obj.updateDynamic("getRefreshHeightOnUpdate")(js.Any.fromFunction0(getRefreshHeightOnUpdate))
     if (getScrollDockedItems != null) __obj.updateDynamic("getScrollDockedItems")(js.Any.fromFunction0(getScrollDockedItems))
     if (getStriped != null) __obj.updateDynamic("getStriped")(js.Any.fromFunction0(getStriped))
-    if (getUi != null) __obj.updateDynamic("getUi")(js.Any.fromFunction0(getUi))
     if (getUseHeaders != null) __obj.updateDynamic("getUseHeaders")(js.Any.fromFunction0(getUseHeaders))
     if (getUseSimpleItems != null) __obj.updateDynamic("getUseSimpleItems")(js.Any.fromFunction0(getUseSimpleItems))
     if (getVariableHeights != null) __obj.updateDynamic("getVariableHeights")(js.Any.fromFunction0(getVariableHeights))
-    if (getViewItems != null) __obj.updateDynamic("getViewItems")(js.Any.fromFunction0(getViewItems))
-    if (!js.isUndefined(grouped)) __obj.updateDynamic("grouped")(grouped)
-    if (indexBar != null) __obj.updateDynamic("indexBar")(indexBar)
-    if (!js.isUndefined(infinite)) __obj.updateDynamic("infinite")(infinite)
-    if (initialize != null) __obj.updateDynamic("initialize")(js.Any.fromFunction0(initialize))
+    if (!js.isUndefined(grouped)) __obj.updateDynamic("grouped")(grouped.asInstanceOf[js.Any])
+    if (indexBar != null) __obj.updateDynamic("indexBar")(indexBar.asInstanceOf[js.Any])
+    if (!js.isUndefined(infinite)) __obj.updateDynamic("infinite")(infinite.asInstanceOf[js.Any])
     if (itemHeight != null) __obj.updateDynamic("itemHeight")(itemHeight.asInstanceOf[js.Any])
-    if (onItemDisclosure != null) __obj.updateDynamic("onItemDisclosure")(onItemDisclosure)
-    if (!js.isUndefined(pinHeaders)) __obj.updateDynamic("pinHeaders")(pinHeaders)
-    if (!js.isUndefined(preventSelectionOnDisclose)) __obj.updateDynamic("preventSelectionOnDisclose")(preventSelectionOnDisclose)
-    if (!js.isUndefined(refreshHeightOnUpdate)) __obj.updateDynamic("refreshHeightOnUpdate")(refreshHeightOnUpdate)
+    if (onItemDisclosure != null) __obj.updateDynamic("onItemDisclosure")(onItemDisclosure.asInstanceOf[js.Any])
+    if (!js.isUndefined(pinHeaders)) __obj.updateDynamic("pinHeaders")(pinHeaders.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventSelectionOnDisclose)) __obj.updateDynamic("preventSelectionOnDisclose")(preventSelectionOnDisclose.asInstanceOf[js.Any])
+    if (!js.isUndefined(refreshHeightOnUpdate)) __obj.updateDynamic("refreshHeightOnUpdate")(refreshHeightOnUpdate.asInstanceOf[js.Any])
     if (scrollToRecord != null) __obj.updateDynamic("scrollToRecord")(js.Any.fromFunction3(scrollToRecord))
-    if (setBaseCls != null) __obj.updateDynamic("setBaseCls")(js.Any.fromFunction1(setBaseCls))
-    if (setDefaultType != null) __obj.updateDynamic("setDefaultType")(js.Any.fromFunction1(setDefaultType))
     if (setDisclosureProperty != null) __obj.updateDynamic("setDisclosureProperty")(js.Any.fromFunction1(setDisclosureProperty))
     if (setGrouped != null) __obj.updateDynamic("setGrouped")(js.Any.fromFunction1(setGrouped))
     if (setIcon != null) __obj.updateDynamic("setIcon")(js.Any.fromFunction1(setIcon))
@@ -289,14 +263,12 @@ object IList {
     if (setPreventSelectionOnDisclose != null) __obj.updateDynamic("setPreventSelectionOnDisclose")(js.Any.fromFunction1(setPreventSelectionOnDisclose))
     if (setRefreshHeightOnUpdate != null) __obj.updateDynamic("setRefreshHeightOnUpdate")(js.Any.fromFunction1(setRefreshHeightOnUpdate))
     if (setStriped != null) __obj.updateDynamic("setStriped")(js.Any.fromFunction1(setStriped))
-    if (setUi != null) __obj.updateDynamic("setUi")(js.Any.fromFunction1(setUi))
     if (setUseHeaders != null) __obj.updateDynamic("setUseHeaders")(js.Any.fromFunction1(setUseHeaders))
     if (setUseSimpleItems != null) __obj.updateDynamic("setUseSimpleItems")(js.Any.fromFunction1(setUseSimpleItems))
     if (setVariableHeights != null) __obj.updateDynamic("setVariableHeights")(js.Any.fromFunction1(setVariableHeights))
-    if (!js.isUndefined(striped)) __obj.updateDynamic("striped")(striped)
-    if (ui != null) __obj.updateDynamic("ui")(ui)
-    if (!js.isUndefined(useSimpleItems)) __obj.updateDynamic("useSimpleItems")(useSimpleItems)
-    if (!js.isUndefined(variableHeights)) __obj.updateDynamic("variableHeights")(variableHeights)
+    if (!js.isUndefined(striped)) __obj.updateDynamic("striped")(striped.asInstanceOf[js.Any])
+    if (!js.isUndefined(useSimpleItems)) __obj.updateDynamic("useSimpleItems")(useSimpleItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(variableHeights)) __obj.updateDynamic("variableHeights")(variableHeights.asInstanceOf[js.Any])
     __obj.asInstanceOf[IList]
   }
 }

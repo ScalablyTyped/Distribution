@@ -29,7 +29,7 @@ object LevelDownClearOptions {
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (lt != null) __obj.updateDynamic("lt")(lt.asInstanceOf[js.Any])
     if (lte != null) __obj.updateDynamic("lte")(lte.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse)
+    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
     __obj.asInstanceOf[LevelDownClearOptions]
   }
 }

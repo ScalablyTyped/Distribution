@@ -36,13 +36,13 @@ object StyleSetting {
     tableId: String = null
   ): StyleSetting = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (markerOptions != null) __obj.updateDynamic("markerOptions")(markerOptions)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (polygonOptions != null) __obj.updateDynamic("polygonOptions")(polygonOptions)
-    if (polylineOptions != null) __obj.updateDynamic("polylineOptions")(polylineOptions)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (markerOptions != null) __obj.updateDynamic("markerOptions")(markerOptions.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (polygonOptions != null) __obj.updateDynamic("polygonOptions")(polygonOptions.asInstanceOf[js.Any])
+    if (polylineOptions != null) __obj.updateDynamic("polylineOptions")(polylineOptions.asInstanceOf[js.Any])
     if (styleId != null) __obj.updateDynamic("styleId")(styleId.asInstanceOf[js.Any])
-    if (tableId != null) __obj.updateDynamic("tableId")(tableId)
+    if (tableId != null) __obj.updateDynamic("tableId")(tableId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StyleSetting]
   }
 }

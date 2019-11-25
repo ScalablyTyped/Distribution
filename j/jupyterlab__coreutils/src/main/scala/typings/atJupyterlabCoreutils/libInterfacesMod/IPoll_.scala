@@ -55,7 +55,7 @@ object IPoll_ {
     tick: js.Promise[IPoll[T, U, V]],
     ticked: ISignal[IPoll[T, U, V], State[T, U, V]]
   ): IPoll_[T, U, V] = {
-    val __obj = js.Dynamic.literal(disposed = disposed, frequency = frequency, isDisposed = isDisposed, name = name, state = state, tick = tick, ticked = ticked)
+    val __obj = js.Dynamic.literal(disposed = disposed.asInstanceOf[js.Any], frequency = frequency.asInstanceOf[js.Any], isDisposed = isDisposed.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], tick = tick.asInstanceOf[js.Any], ticked = ticked.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IPoll_[T, U, V]]
   }

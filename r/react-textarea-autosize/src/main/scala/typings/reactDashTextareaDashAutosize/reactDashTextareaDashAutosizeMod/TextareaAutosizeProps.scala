@@ -63,21 +63,19 @@ object TextareaAutosizeProps {
     minRows: Int | Double = null,
     onChange: /* event */ ChangeEvent[HTMLTextAreaElement] => Unit = null,
     onHeightChange: /* height */ Double => Unit = null,
-    rows: Int | Double = null,
     useCacheForDOMMeasurements: js.UndefOr[Boolean] = js.undefined,
     value: String = null
   ): TextareaAutosizeProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef.asInstanceOf[js.Any])
     if (maxRows != null) __obj.updateDynamic("maxRows")(maxRows.asInstanceOf[js.Any])
     if (minRows != null) __obj.updateDynamic("minRows")(minRows.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onHeightChange != null) __obj.updateDynamic("onHeightChange")(js.Any.fromFunction1(onHeightChange))
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
-    if (!js.isUndefined(useCacheForDOMMeasurements)) __obj.updateDynamic("useCacheForDOMMeasurements")(useCacheForDOMMeasurements)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (!js.isUndefined(useCacheForDOMMeasurements)) __obj.updateDynamic("useCacheForDOMMeasurements")(useCacheForDOMMeasurements.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextareaAutosizeProps]
   }
 }

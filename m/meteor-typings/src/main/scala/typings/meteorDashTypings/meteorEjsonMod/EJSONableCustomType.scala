@@ -13,12 +13,11 @@ trait EJSONableCustomType extends js.Object {
 object EJSONableCustomType {
   @scala.inline
   def apply(
-    clone: () => typings.meteorDashTypings.meteorEjsonMod.EJSONableCustomType,
     equals: js.Object => Boolean,
     toJSONValue: () => typings.meteorDashTypings.meteorEjsonMod.JSONable,
     typeName: () => String
   ): EJSONableCustomType = {
-    val __obj = js.Dynamic.literal(clone = js.Any.fromFunction0(clone), equals = js.Any.fromFunction1(equals), toJSONValue = js.Any.fromFunction0(toJSONValue), typeName = js.Any.fromFunction0(typeName))
+    val __obj = js.Dynamic.literal(equals = js.Any.fromFunction1(equals), toJSONValue = js.Any.fromFunction0(toJSONValue), typeName = js.Any.fromFunction0(typeName))
   
     __obj.asInstanceOf[EJSONableCustomType]
   }

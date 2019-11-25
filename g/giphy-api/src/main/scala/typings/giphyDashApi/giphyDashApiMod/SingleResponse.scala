@@ -13,7 +13,7 @@ trait SingleResponse extends BaseResponse {
 object SingleResponse {
   @scala.inline
   def apply(data: GIFObject, meta: Anon_Msg, pagination: Anon_Count): SingleResponse = {
-    val __obj = js.Dynamic.literal(data = data, meta = meta, pagination = pagination)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], pagination = pagination.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SingleResponse]
   }

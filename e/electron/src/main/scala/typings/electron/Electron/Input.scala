@@ -51,8 +51,8 @@ object Input {
     shift: Boolean,
     `type`: String
   ): Input = {
-    val __obj = js.Dynamic.literal(alt = alt, code = code, control = control, isAutoRepeat = isAutoRepeat, key = key, meta = meta, shift = shift)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(alt = alt.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], control = control.asInstanceOf[js.Any], isAutoRepeat = isAutoRepeat.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], shift = shift.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Input]
   }
 }

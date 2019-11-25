@@ -25,7 +25,7 @@ object Anon_ContainerContent {
     title: String,
     titleExpandable: String
   ): Anon_ContainerContent = {
-    val __obj = js.Dynamic.literal(container = container, content = content, description = description, icon = icon, iconExpanded = iconExpanded, title = title, titleExpandable = titleExpandable)
+    val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], iconExpanded = iconExpanded.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], titleExpandable = titleExpandable.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ContainerContent]
   }

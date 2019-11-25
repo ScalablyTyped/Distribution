@@ -12,7 +12,6 @@ import typings.atPulumiPulumi.atPulumiPulumiStrings.c44067f5952c0a294b673a41bacd
 import typings.atPulumiPulumi.invokeMod.InvokeOptions
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Inputs
-import typings.atPulumiPulumi.outputMod.Output
 import typings.atPulumiPulumi.queryableMod.ResolvedResource
 import typings.atPulumiPulumi.resourceMod.ResourceOptions
 import typings.atPulumiPulumi.resourceMod.ResourceTransformation
@@ -97,7 +96,10 @@ object runtime extends js.Object {
   ): Unit = js.native
   def registerResourceOutputs(res: typings.atPulumiPulumi.resourceMod.Resource, outputs: js.Promise[Inputs]): Unit = js.native
   def registerResourceOutputs(res: typings.atPulumiPulumi.resourceMod.Resource, outputs: Inputs): Unit = js.native
-  def registerResourceOutputs(res: typings.atPulumiPulumi.resourceMod.Resource, outputs: Output[Inputs]): Unit = js.native
+  def registerResourceOutputs(
+    res: typings.atPulumiPulumi.resourceMod.Resource,
+    outputs: typings.atPulumiPulumi.outputMod.Output[Inputs]
+  ): Unit = js.native
   def registerStackTransformation(t: ResourceTransformation): Unit = js.native
   def resolveProperties(
     res: typings.atPulumiPulumi.resourceMod.Resource,

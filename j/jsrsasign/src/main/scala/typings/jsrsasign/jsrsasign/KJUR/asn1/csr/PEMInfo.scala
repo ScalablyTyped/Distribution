@@ -14,7 +14,7 @@ trait PEMInfo extends js.Object {
 object PEMInfo {
   @scala.inline
   def apply(pubkey: Anon_HexObj, subject: Anon_HexName): PEMInfo = {
-    val __obj = js.Dynamic.literal(pubkey = pubkey, subject = subject)
+    val __obj = js.Dynamic.literal(pubkey = pubkey.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PEMInfo]
   }

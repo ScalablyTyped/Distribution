@@ -42,11 +42,11 @@ object Company {
     ownerEmails: js.Array[String] = null
   ): Company = {
     val __obj = js.Dynamic.literal()
-    if (adminEmails != null) __obj.updateDynamic("adminEmails")(adminEmails)
-    if (companyId != null) __obj.updateDynamic("companyId")(companyId)
-    if (companyName != null) __obj.updateDynamic("companyName")(companyName)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (ownerEmails != null) __obj.updateDynamic("ownerEmails")(ownerEmails)
+    if (adminEmails != null) __obj.updateDynamic("adminEmails")(adminEmails.asInstanceOf[js.Any])
+    if (companyId != null) __obj.updateDynamic("companyId")(companyId.asInstanceOf[js.Any])
+    if (companyName != null) __obj.updateDynamic("companyName")(companyName.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (ownerEmails != null) __obj.updateDynamic("ownerEmails")(ownerEmails.asInstanceOf[js.Any])
     __obj.asInstanceOf[Company]
   }
 }

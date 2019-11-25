@@ -23,7 +23,7 @@ object Viewport {
     isMobile: Boolean,
     width: Double
   ): Viewport = {
-    val __obj = js.Dynamic.literal(deviceScaleFactor = deviceScaleFactor, hasTouch = hasTouch, height = height, isLandscape = isLandscape, isMobile = isMobile, width = width)
+    val __obj = js.Dynamic.literal(deviceScaleFactor = deviceScaleFactor.asInstanceOf[js.Any], hasTouch = hasTouch.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], isLandscape = isLandscape.asInstanceOf[js.Any], isMobile = isMobile.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Viewport]
   }

@@ -48,10 +48,10 @@ object MultiColumnSettingsColumn {
     `type`: Type | String = null
   ): MultiColumnSettingsColumn = {
     val __obj = js.Dynamic.literal()
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
-    if (field != null) __obj.updateDynamic("field")(field)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     if (filterType != null) __obj.updateDynamic("filterType")(filterType.asInstanceOf[js.Any])
-    if (headerText != null) __obj.updateDynamic("headerText")(headerText)
+    if (headerText != null) __obj.updateDynamic("headerText")(headerText.asInstanceOf[js.Any])
     if (headerTextAlign != null) __obj.updateDynamic("headerTextAlign")(headerTextAlign.asInstanceOf[js.Any])
     if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

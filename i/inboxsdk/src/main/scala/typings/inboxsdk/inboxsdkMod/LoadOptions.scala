@@ -22,9 +22,9 @@ object LoadOptions {
   @scala.inline
   def apply(appIconUrl: String = null, appName: String = null, suppressAddonTitle: String = null): LoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (appIconUrl != null) __obj.updateDynamic("appIconUrl")(appIconUrl)
-    if (appName != null) __obj.updateDynamic("appName")(appName)
-    if (suppressAddonTitle != null) __obj.updateDynamic("suppressAddonTitle")(suppressAddonTitle)
+    if (appIconUrl != null) __obj.updateDynamic("appIconUrl")(appIconUrl.asInstanceOf[js.Any])
+    if (appName != null) __obj.updateDynamic("appName")(appName.asInstanceOf[js.Any])
+    if (suppressAddonTitle != null) __obj.updateDynamic("suppressAddonTitle")(suppressAddonTitle.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadOptions]
   }
 }

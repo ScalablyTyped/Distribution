@@ -12,7 +12,7 @@ object Anon_AliasTarget {
   @scala.inline
   def apply(AliasTarget: Anon_HostedZoneId = null): Anon_AliasTarget = {
     val __obj = js.Dynamic.literal()
-    if (AliasTarget != null) __obj.updateDynamic("AliasTarget")(AliasTarget)
+    if (AliasTarget != null) __obj.updateDynamic("AliasTarget")(AliasTarget.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AliasTarget]
   }
 }

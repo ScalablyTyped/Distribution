@@ -15,7 +15,7 @@ trait GitGetBlobResponse extends js.Object {
 object GitGetBlobResponse {
   @scala.inline
   def apply(content: String, encoding: String, sha: String, size: Double, url: String): GitGetBlobResponse = {
-    val __obj = js.Dynamic.literal(content = content, encoding = encoding, sha = sha, size = size, url = url)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GitGetBlobResponse]
   }

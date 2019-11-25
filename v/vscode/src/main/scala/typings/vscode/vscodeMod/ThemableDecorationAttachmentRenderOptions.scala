@@ -74,17 +74,17 @@ object ThemableDecorationAttachmentRenderOptions {
   ): ThemableDecorationAttachmentRenderOptions = {
     val __obj = js.Dynamic.literal()
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (border != null) __obj.updateDynamic("border")(border)
+    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (contentIconPath != null) __obj.updateDynamic("contentIconPath")(contentIconPath.asInstanceOf[js.Any])
-    if (contentText != null) __obj.updateDynamic("contentText")(contentText)
-    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle)
-    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight)
-    if (height != null) __obj.updateDynamic("height")(height)
-    if (margin != null) __obj.updateDynamic("margin")(margin)
-    if (textDecoration != null) __obj.updateDynamic("textDecoration")(textDecoration)
-    if (width != null) __obj.updateDynamic("width")(width)
+    if (contentText != null) __obj.updateDynamic("contentText")(contentText.asInstanceOf[js.Any])
+    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
+    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
+    if (textDecoration != null) __obj.updateDynamic("textDecoration")(textDecoration.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThemableDecorationAttachmentRenderOptions]
   }
 }

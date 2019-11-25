@@ -13,7 +13,7 @@ trait Anon_Mode extends js.Object {
 object Anon_Mode {
   @scala.inline
   def apply(mode: String, onLeftClick: () => Unit, prefixCls: String): Anon_Mode = {
-    val __obj = js.Dynamic.literal(mode = mode, onLeftClick = js.Any.fromFunction0(onLeftClick), prefixCls = prefixCls)
+    val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], onLeftClick = js.Any.fromFunction0(onLeftClick), prefixCls = prefixCls.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Mode]
   }

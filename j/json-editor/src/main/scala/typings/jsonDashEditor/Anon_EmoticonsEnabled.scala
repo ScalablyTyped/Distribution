@@ -11,7 +11,7 @@ trait Anon_EmoticonsEnabled extends js.Object {
 object Anon_EmoticonsEnabled {
   @scala.inline
   def apply(emoticonsEnabled: Boolean): Anon_EmoticonsEnabled = {
-    val __obj = js.Dynamic.literal(emoticonsEnabled = emoticonsEnabled)
+    val __obj = js.Dynamic.literal(emoticonsEnabled = emoticonsEnabled.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EmoticonsEnabled]
   }

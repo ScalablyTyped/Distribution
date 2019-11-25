@@ -20,10 +20,10 @@ object Anon_NavigationFromKeyboard {
     newMessage: String = null
   ): Anon_NavigationFromKeyboard = {
     val __obj = js.Dynamic.literal()
-    if (navigationFromKeyboard != null) __obj.updateDynamic("navigationFromKeyboard")(navigationFromKeyboard)
-    if (navigationToKeyboard != null) __obj.updateDynamic("navigationToKeyboard")(navigationToKeyboard)
-    if (navigationToTouch != null) __obj.updateDynamic("navigationToTouch")(navigationToTouch)
-    if (newMessage != null) __obj.updateDynamic("newMessage")(newMessage)
+    if (navigationFromKeyboard != null) __obj.updateDynamic("navigationFromKeyboard")(navigationFromKeyboard.asInstanceOf[js.Any])
+    if (navigationToKeyboard != null) __obj.updateDynamic("navigationToKeyboard")(navigationToKeyboard.asInstanceOf[js.Any])
+    if (navigationToTouch != null) __obj.updateDynamic("navigationToTouch")(navigationToTouch.asInstanceOf[js.Any])
+    if (newMessage != null) __obj.updateDynamic("newMessage")(newMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_NavigationFromKeyboard]
   }
 }

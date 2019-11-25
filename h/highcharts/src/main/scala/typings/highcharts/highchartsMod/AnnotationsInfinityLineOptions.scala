@@ -33,10 +33,10 @@ object AnnotationsInfinityLineOptions {
     typeOptions: AnnotationsInfinityLineTypeOptions = null
   ): AnnotationsInfinityLineOptions = {
     val __obj = js.Dynamic.literal()
-    if (controlPointOptions != null) __obj.updateDynamic("controlPointOptions")(controlPointOptions)
-    if (labelOptions != null) __obj.updateDynamic("labelOptions")(labelOptions)
-    if (shapeOptions != null) __obj.updateDynamic("shapeOptions")(shapeOptions)
-    if (typeOptions != null) __obj.updateDynamic("typeOptions")(typeOptions)
+    if (controlPointOptions != null) __obj.updateDynamic("controlPointOptions")(controlPointOptions.asInstanceOf[js.Any])
+    if (labelOptions != null) __obj.updateDynamic("labelOptions")(labelOptions.asInstanceOf[js.Any])
+    if (shapeOptions != null) __obj.updateDynamic("shapeOptions")(shapeOptions.asInstanceOf[js.Any])
+    if (typeOptions != null) __obj.updateDynamic("typeOptions")(typeOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotationsInfinityLineOptions]
   }
 }

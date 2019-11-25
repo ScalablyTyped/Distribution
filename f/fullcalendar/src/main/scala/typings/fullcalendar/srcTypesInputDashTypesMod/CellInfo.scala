@@ -23,7 +23,7 @@ object CellInfo {
     moreEl: JQuery,
     segs: js.Array[EventSegment]
   ): CellInfo = {
-    val __obj = js.Dynamic.literal(date = date, dayEl = dayEl, hiddenSegs = hiddenSegs, moreEl = moreEl, segs = segs)
+    val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], dayEl = dayEl.asInstanceOf[js.Any], hiddenSegs = hiddenSegs.asInstanceOf[js.Any], moreEl = moreEl.asInstanceOf[js.Any], segs = segs.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CellInfo]
   }

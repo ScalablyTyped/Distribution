@@ -22,10 +22,10 @@ object TransferItem {
     description: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined
   ): TransferItem = {
-    val __obj = js.Dynamic.literal(key = key, title = title)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransferItem]
   }
 }

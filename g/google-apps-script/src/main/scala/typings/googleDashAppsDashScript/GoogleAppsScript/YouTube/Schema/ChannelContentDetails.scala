@@ -12,7 +12,7 @@ object ChannelContentDetails {
   @scala.inline
   def apply(relatedPlaylists: ChannelContentDetailsRelatedPlaylists = null): ChannelContentDetails = {
     val __obj = js.Dynamic.literal()
-    if (relatedPlaylists != null) __obj.updateDynamic("relatedPlaylists")(relatedPlaylists)
+    if (relatedPlaylists != null) __obj.updateDynamic("relatedPlaylists")(relatedPlaylists.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelContentDetails]
   }
 }

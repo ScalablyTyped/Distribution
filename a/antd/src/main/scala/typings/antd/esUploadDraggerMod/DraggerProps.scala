@@ -2,8 +2,8 @@ package typings.antd.esUploadDraggerMod
 
 import typings.antd.antdStrings.POST
 import typings.antd.antdStrings.PUT
-import typings.antd.antdStrings.post
-import typings.antd.antdStrings.put
+import typings.antd.antdStrings.post_
+import typings.antd.antdStrings.put_
 import typings.antd.esUploadInterfaceMod.HttpRequestHeader
 import typings.antd.esUploadInterfaceMod.PreviewFileHandler
 import typings.antd.esUploadInterfaceMod.RcCustomRequestOptions
@@ -41,7 +41,7 @@ trait DraggerProps extends js.Object {
   var id: js.UndefOr[String] = js.undefined
   var listType: js.UndefOr[UploadListType] = js.undefined
   var locale: js.UndefOr[UploadLocale] = js.undefined
-  var method: js.UndefOr[POST | PUT | post | put] = js.undefined
+  var method: js.UndefOr[POST | PUT | post_ | put_] = js.undefined
   var multiple: js.UndefOr[Boolean] = js.undefined
   var name: js.UndefOr[String] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* info */ UploadChangeParam[UploadFile[_]], Unit]] = js.undefined
@@ -79,7 +79,7 @@ object DraggerProps {
     id: String = null,
     listType: UploadListType = null,
     locale: UploadLocale = null,
-    method: POST | PUT | post | put = null,
+    method: POST | PUT | post_ | put_ = null,
     multiple: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
     onChange: /* info */ UploadChangeParam[UploadFile[_]] => Unit = null,
@@ -97,37 +97,37 @@ object DraggerProps {
     withCredentials: js.UndefOr[Boolean] = js.undefined
   ): DraggerProps = {
     val __obj = js.Dynamic.literal()
-    if (accept != null) __obj.updateDynamic("accept")(accept)
+    if (accept != null) __obj.updateDynamic("accept")(accept.asInstanceOf[js.Any])
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
     if (beforeUpload != null) __obj.updateDynamic("beforeUpload")(js.Any.fromFunction2(beforeUpload))
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (customRequest != null) __obj.updateDynamic("customRequest")(js.Any.fromFunction1(customRequest))
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (defaultFileList != null) __obj.updateDynamic("defaultFileList")(defaultFileList)
-    if (!js.isUndefined(directory)) __obj.updateDynamic("directory")(directory)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (fileList != null) __obj.updateDynamic("fileList")(fileList)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (defaultFileList != null) __obj.updateDynamic("defaultFileList")(defaultFileList.asInstanceOf[js.Any])
+    if (!js.isUndefined(directory)) __obj.updateDynamic("directory")(directory.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (fileList != null) __obj.updateDynamic("fileList")(fileList.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (listType != null) __obj.updateDynamic("listType")(listType)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (listType != null) __obj.updateDynamic("listType")(listType.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onDownload != null) __obj.updateDynamic("onDownload")(js.Any.fromFunction1(onDownload))
     if (onPreview != null) __obj.updateDynamic("onPreview")(js.Any.fromFunction1(onPreview))
     if (onRemove != null) __obj.updateDynamic("onRemove")(js.Any.fromFunction1(onRemove))
-    if (!js.isUndefined(openFileDialogOnClick)) __obj.updateDynamic("openFileDialogOnClick")(openFileDialogOnClick)
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
+    if (!js.isUndefined(openFileDialogOnClick)) __obj.updateDynamic("openFileDialogOnClick")(openFileDialogOnClick.asInstanceOf[js.Any])
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (previewFile != null) __obj.updateDynamic("previewFile")(js.Any.fromFunction1(previewFile))
     if (showUploadList != null) __obj.updateDynamic("showUploadList")(showUploadList.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (!js.isUndefined(supportServerRender)) __obj.updateDynamic("supportServerRender")(supportServerRender)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(supportServerRender)) __obj.updateDynamic("supportServerRender")(supportServerRender.asInstanceOf[js.Any])
     if (transformFile != null) __obj.updateDynamic("transformFile")(js.Any.fromFunction1(transformFile))
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials.asInstanceOf[js.Any])
     __obj.asInstanceOf[DraggerProps]
   }
 }

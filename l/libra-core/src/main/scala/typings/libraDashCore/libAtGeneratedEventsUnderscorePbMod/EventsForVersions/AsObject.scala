@@ -13,7 +13,7 @@ object AsObject {
   def apply(
     eventsForVersionList: js.Array[typings.libraDashCore.libAtGeneratedEventsUnderscorePbMod.EventsList.AsObject]
   ): AsObject = {
-    val __obj = js.Dynamic.literal(eventsForVersionList = eventsForVersionList)
+    val __obj = js.Dynamic.literal(eventsForVersionList = eventsForVersionList.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AsObject]
   }

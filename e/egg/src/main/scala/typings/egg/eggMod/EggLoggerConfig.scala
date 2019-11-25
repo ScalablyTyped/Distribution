@@ -24,9 +24,9 @@ object EggLoggerConfig {
     disableConsoleAfterReady: js.UndefOr[Boolean] = js.undefined
   ): EggLoggerConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowDebugAtProd)) __obj.updateDynamic("allowDebugAtProd")(allowDebugAtProd)
-    if (coreLogger != null) __obj.updateDynamic("coreLogger")(coreLogger)
-    if (!js.isUndefined(disableConsoleAfterReady)) __obj.updateDynamic("disableConsoleAfterReady")(disableConsoleAfterReady)
+    if (!js.isUndefined(allowDebugAtProd)) __obj.updateDynamic("allowDebugAtProd")(allowDebugAtProd.asInstanceOf[js.Any])
+    if (coreLogger != null) __obj.updateDynamic("coreLogger")(coreLogger.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableConsoleAfterReady)) __obj.updateDynamic("disableConsoleAfterReady")(disableConsoleAfterReady.asInstanceOf[js.Any])
     __obj.asInstanceOf[EggLoggerConfig]
   }
 }

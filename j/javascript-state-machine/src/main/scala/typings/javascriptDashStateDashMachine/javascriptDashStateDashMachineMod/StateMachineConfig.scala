@@ -1,7 +1,6 @@
 package typings.javascriptDashStateDashMachine.javascriptDashStateDashMachineMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,17 +36,17 @@ object StateMachineConfig {
         _
       ]
     ] = null,
-    error: (/* eventName */ js.UndefOr[String], /* from */ js.UndefOr[String], /* to */ js.UndefOr[String], /* args */ js.UndefOr[js.Array[js.Any]], /* errorCode */ js.UndefOr[Double], /* errorMessage */ js.UndefOr[String], /* ex */ js.UndefOr[Error]) => Unit = null,
+    error: (/* eventName */ js.UndefOr[String], /* from */ js.UndefOr[String], /* to */ js.UndefOr[String], /* args */ js.UndefOr[js.Array[js.Any]], /* errorCode */ js.UndefOr[Double], /* errorMessage */ js.UndefOr[String], /* ex */ js.UndefOr[typings.std.Error]) => Unit = null,
     events: js.Array[StateMachineEventDef] = null,
     initial: js.Any = null,
     target: StateMachine = null
   ): StateMachineConfig = {
     val __obj = js.Dynamic.literal()
-    if (callbacks != null) __obj.updateDynamic("callbacks")(callbacks)
+    if (callbacks != null) __obj.updateDynamic("callbacks")(callbacks.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction7(error))
-    if (events != null) __obj.updateDynamic("events")(events)
-    if (initial != null) __obj.updateDynamic("initial")(initial)
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
+    if (initial != null) __obj.updateDynamic("initial")(initial.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[StateMachineConfig]
   }
 }

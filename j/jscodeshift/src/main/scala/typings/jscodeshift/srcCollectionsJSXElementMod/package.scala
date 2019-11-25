@@ -9,5 +9,5 @@ package object srcCollectionsJSXElementMod {
   type Defined[T] = T
   type Filter = js.Function1[/* path */ ASTPath[js.Any], Boolean]
   type JSXElement = /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify nodes.JSXElement */ js.Any
-  type JSXElementChild = /* import warning: ImportType.apply Failed type conversion: jscodeshift.jscodeshift/src/collections/JSXElement.Defined<jscodeshift.jscodeshift/src/collections/JSXElement.JSXElement['children']>[0] */ js.Any
+  type JSXElementChild = /* import warning: importer.ImportType#apply Failed type conversion: jscodeshift.jscodeshift/src/collections/JSXElement.Defined<jscodeshift.jscodeshift/src/collections/JSXElement.JSXElement['children']>[0] */ js.Any
 }

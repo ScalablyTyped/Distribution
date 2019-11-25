@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait BuiltinCompositors extends js.Object
 
+object BuiltinCompositors {
+  @scala.inline
+  def canvas: typings.nodeDashSpriteDashGenerator.nodeDashSpriteDashGeneratorStrings.canvas = this.cast("canvas")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def gm: typings.nodeDashSpriteDashGenerator.nodeDashSpriteDashGeneratorStrings.gm = this.cast("gm")
+  @scala.inline
+  def jimp: typings.nodeDashSpriteDashGenerator.nodeDashSpriteDashGeneratorStrings.jimp = this.cast("jimp")
+}
+

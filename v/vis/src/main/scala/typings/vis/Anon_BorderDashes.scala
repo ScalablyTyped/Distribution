@@ -28,9 +28,9 @@ object Anon_BorderDashes {
     val __obj = js.Dynamic.literal()
     if (borderDashes != null) __obj.updateDynamic("borderDashes")(borderDashes.asInstanceOf[js.Any])
     if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
-    if (!js.isUndefined(interpolation)) __obj.updateDynamic("interpolation")(interpolation)
-    if (!js.isUndefined(useBorderWithImage)) __obj.updateDynamic("useBorderWithImage")(useBorderWithImage)
-    if (!js.isUndefined(useImageSize)) __obj.updateDynamic("useImageSize")(useImageSize)
+    if (!js.isUndefined(interpolation)) __obj.updateDynamic("interpolation")(interpolation.asInstanceOf[js.Any])
+    if (!js.isUndefined(useBorderWithImage)) __obj.updateDynamic("useBorderWithImage")(useBorderWithImage.asInstanceOf[js.Any])
+    if (!js.isUndefined(useImageSize)) __obj.updateDynamic("useImageSize")(useImageSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BorderDashes]
   }
 }

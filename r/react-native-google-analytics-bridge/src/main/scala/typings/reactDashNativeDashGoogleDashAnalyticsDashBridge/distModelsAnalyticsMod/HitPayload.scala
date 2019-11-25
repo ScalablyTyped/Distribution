@@ -36,14 +36,14 @@ object HitPayload {
   ): HitPayload = {
     val __obj = js.Dynamic.literal()
     if (customDimensions != null) __obj.updateDynamic("customDimensions")(customDimensions.asInstanceOf[js.Any])
-    if (customMetrics != null) __obj.updateDynamic("customMetrics")(customMetrics)
-    if (impressionList != null) __obj.updateDynamic("impressionList")(impressionList)
-    if (impressionProducts != null) __obj.updateDynamic("impressionProducts")(impressionProducts)
-    if (impressionSource != null) __obj.updateDynamic("impressionSource")(impressionSource)
-    if (productAction != null) __obj.updateDynamic("productAction")(productAction)
-    if (products != null) __obj.updateDynamic("products")(products)
-    if (session != null) __obj.updateDynamic("session")(session)
-    if (utmCampaignUrl != null) __obj.updateDynamic("utmCampaignUrl")(utmCampaignUrl)
+    if (customMetrics != null) __obj.updateDynamic("customMetrics")(customMetrics.asInstanceOf[js.Any])
+    if (impressionList != null) __obj.updateDynamic("impressionList")(impressionList.asInstanceOf[js.Any])
+    if (impressionProducts != null) __obj.updateDynamic("impressionProducts")(impressionProducts.asInstanceOf[js.Any])
+    if (impressionSource != null) __obj.updateDynamic("impressionSource")(impressionSource.asInstanceOf[js.Any])
+    if (productAction != null) __obj.updateDynamic("productAction")(productAction.asInstanceOf[js.Any])
+    if (products != null) __obj.updateDynamic("products")(products.asInstanceOf[js.Any])
+    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
+    if (utmCampaignUrl != null) __obj.updateDynamic("utmCampaignUrl")(utmCampaignUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[HitPayload]
   }
 }

@@ -1,15 +1,15 @@
 package typings.winstonDashMail.winstonDashMailMod
 
+import typings.std.Transport
 import typings.winstonDashMail.Anon_Level
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped 'usb' | 'nfc' | 'ble'
 - Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify winston.TransportInstance * / any */ @JSImport("winston-mail", "Mail")
 @js.native
-class Mail protected () extends js.Object {
+class Mail protected () extends Transport {
   def this(options: MailTransportOptions) = this()
   var from: String = js.native
   var html: Boolean = js.native

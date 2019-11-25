@@ -31,8 +31,8 @@ object Anon_Index {
   @scala.inline
   def apply(index: String = null, name: String = null): Anon_Index = {
     val __obj = js.Dynamic.literal()
-    if (index != null) __obj.updateDynamic("index")(index)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Index]
   }
 }

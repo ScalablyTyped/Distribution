@@ -21,10 +21,10 @@ object SchedulerNavigateEvent {
     date: Date = null,
     view: String = null
   ): SchedulerNavigateEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (action != null) __obj.updateDynamic("action")(action)
-    if (date != null) __obj.updateDynamic("date")(date)
-    if (view != null) __obj.updateDynamic("view")(view)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchedulerNavigateEvent]
   }
 }

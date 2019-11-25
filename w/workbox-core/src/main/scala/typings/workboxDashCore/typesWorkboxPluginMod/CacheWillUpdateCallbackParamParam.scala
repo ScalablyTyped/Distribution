@@ -21,8 +21,8 @@ object CacheWillUpdateCallbackParamParam {
     response: Response,
     event: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ExtendableEvent */ js.Any = null
   ): CacheWillUpdateCallbackParamParam = {
-    val __obj = js.Dynamic.literal(request = request, response = response)
-    if (event != null) __obj.updateDynamic("event")(event)
+    val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
     __obj.asInstanceOf[CacheWillUpdateCallbackParamParam]
   }
 }

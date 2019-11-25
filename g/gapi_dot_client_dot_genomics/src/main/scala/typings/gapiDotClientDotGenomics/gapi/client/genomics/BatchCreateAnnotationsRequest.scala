@@ -26,8 +26,8 @@ object BatchCreateAnnotationsRequest {
   @scala.inline
   def apply(annotations: js.Array[Annotation] = null, requestId: String = null): BatchCreateAnnotationsRequest = {
     val __obj = js.Dynamic.literal()
-    if (annotations != null) __obj.updateDynamic("annotations")(annotations)
-    if (requestId != null) __obj.updateDynamic("requestId")(requestId)
+    if (annotations != null) __obj.updateDynamic("annotations")(annotations.asInstanceOf[js.Any])
+    if (requestId != null) __obj.updateDynamic("requestId")(requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchCreateAnnotationsRequest]
   }
 }

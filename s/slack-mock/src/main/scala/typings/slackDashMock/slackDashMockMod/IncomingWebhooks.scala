@@ -17,7 +17,7 @@ object IncomingWebhooks {
     calls: js.Array[IncomingWebhookCall[T]],
     reset: () => Unit
   ): IncomingWebhooks[T] = {
-    val __obj = js.Dynamic.literal(addResponse = js.Any.fromFunction1(addResponse), calls = calls, reset = js.Any.fromFunction0(reset))
+    val __obj = js.Dynamic.literal(addResponse = js.Any.fromFunction1(addResponse), calls = calls.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset))
   
     __obj.asInstanceOf[IncomingWebhooks[T]]
   }

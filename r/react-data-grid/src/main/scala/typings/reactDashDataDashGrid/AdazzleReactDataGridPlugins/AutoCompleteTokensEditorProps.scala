@@ -15,9 +15,9 @@ trait AutoCompleteTokensEditorProps extends js.Object {
 object AutoCompleteTokensEditorProps {
   @scala.inline
   def apply(options: js.Array[String | Anon_Caption], column: ExcelColumn = null, value: js.Array[_] = null): AutoCompleteTokensEditorProps = {
-    val __obj = js.Dynamic.literal(options = options)
-    if (column != null) __obj.updateDynamic("column")(column)
-    if (value != null) __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
+    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoCompleteTokensEditorProps]
   }
 }

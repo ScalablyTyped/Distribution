@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   * `EventEmitter` interface.
   */
 @js.native
-trait EventEmitter[EventTypes /* <: String | js.Symbol | (/* import warning: ImportType.apply c Unsupported type mapping: 
+trait EventEmitter[EventTypes /* <: String | js.Symbol | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ K in keyof EventTypes ]: std.Array<any>}
   */ typings.eventemitter3.eventemitter3Strings.EventEmitter with js.Any) */] extends js.Object {
   def addListener[T /* <: EventNames[EventTypes] */](event: T, fn: ListenerFn[EventArgs[EventTypes, T]]): this.type = js.native

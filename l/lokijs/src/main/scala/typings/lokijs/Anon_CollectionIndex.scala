@@ -19,8 +19,8 @@ object Anon_CollectionIndex {
   ): Anon_CollectionIndex = {
     val __obj = js.Dynamic.literal()
     if (collectionIndex != null) __obj.updateDynamic("collectionIndex")(collectionIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(delimited)) __obj.updateDynamic("delimited")(delimited)
-    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
+    if (!js.isUndefined(delimited)) __obj.updateDynamic("delimited")(delimited.asInstanceOf[js.Any])
+    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CollectionIndex]
   }
 }

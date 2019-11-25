@@ -12,10 +12,3 @@ class StaveLine protected ()
   def this(notes: Anon_Firstindices) = this()
 }
 
-@JSImport("vexflow", "Flow.StaveLine")
-@js.native
-object StaveLine extends js.Object {
-  type TextJustification = typings.vexflow.Vex.Flow.StaveLine.TextJustification
-  type TextVerticalPosition = typings.vexflow.Vex.Flow.StaveLine.TextVerticalPosition
-}
-

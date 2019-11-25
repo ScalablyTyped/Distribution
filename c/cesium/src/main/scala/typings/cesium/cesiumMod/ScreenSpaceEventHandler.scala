@@ -13,11 +13,11 @@ class ScreenSpaceEventHandler () extends js.Object {
   def getInputAction(`type`: ScreenSpaceEventType): js.Function0[Unit] = js.native
   def getInputAction(`type`: ScreenSpaceEventType, modifier: Double): js.Function0[Unit] = js.native
   def getInputAction[K /* <: String */](`type`: K): js.Function1[
-    /* import warning: ImportType.apply Failed type conversion: cesium.cesium.ScreenSpaceEventMap[K] */ /* event */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: cesium.cesium.ScreenSpaceEventMap[K] */ /* event */ js.Any, 
     Unit
   ] = js.native
   def getInputAction[K /* <: String */](`type`: K, modifier: Double): js.Function1[
-    /* import warning: ImportType.apply Failed type conversion: cesium.cesium.ScreenSpaceEventMap[K] */ /* event */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: cesium.cesium.ScreenSpaceEventMap[K] */ /* event */ js.Any, 
     Unit
   ] = js.native
   def isDestroyed(): Boolean = js.native
@@ -27,14 +27,14 @@ class ScreenSpaceEventHandler () extends js.Object {
   def setInputAction(action: js.Function0[Unit], `type`: ScreenSpaceEventType, modifier: Double): Unit = js.native
   def setInputAction[K /* <: String */](
     action: js.Function1[
-      /* import warning: ImportType.apply Failed type conversion: cesium.cesium.ScreenSpaceEventMap[K] */ /* event */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: cesium.cesium.ScreenSpaceEventMap[K] */ /* event */ js.Any, 
       Unit
     ],
     `type`: K
   ): Unit = js.native
   def setInputAction[K /* <: String */](
     action: js.Function1[
-      /* import warning: ImportType.apply Failed type conversion: cesium.cesium.ScreenSpaceEventMap[K] */ /* event */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: cesium.cesium.ScreenSpaceEventMap[K] */ /* event */ js.Any, 
       Unit
     ],
     `type`: K,

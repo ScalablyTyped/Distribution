@@ -25,11 +25,11 @@ object NetworkFirstOptions {
     plugins: js.Array[WorkboxPlugin] = null
   ): NetworkFirstOptions = {
     val __obj = js.Dynamic.literal()
-    if (cacheName != null) __obj.updateDynamic("cacheName")(cacheName)
-    if (fetchOptions != null) __obj.updateDynamic("fetchOptions")(fetchOptions)
-    if (matchOptions != null) __obj.updateDynamic("matchOptions")(matchOptions)
+    if (cacheName != null) __obj.updateDynamic("cacheName")(cacheName.asInstanceOf[js.Any])
+    if (fetchOptions != null) __obj.updateDynamic("fetchOptions")(fetchOptions.asInstanceOf[js.Any])
+    if (matchOptions != null) __obj.updateDynamic("matchOptions")(matchOptions.asInstanceOf[js.Any])
     if (networkTimeoutSeconds != null) __obj.updateDynamic("networkTimeoutSeconds")(networkTimeoutSeconds.asInstanceOf[js.Any])
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkFirstOptions]
   }
 }

@@ -17,7 +17,7 @@ object GoogleActionsOrdersV3Time {
   @scala.inline
   def apply(timeIso8601: String = null): GoogleActionsOrdersV3Time = {
     val __obj = js.Dynamic.literal()
-    if (timeIso8601 != null) __obj.updateDynamic("timeIso8601")(timeIso8601)
+    if (timeIso8601 != null) __obj.updateDynamic("timeIso8601")(timeIso8601.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsOrdersV3Time]
   }
 }

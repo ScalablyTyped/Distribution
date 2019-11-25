@@ -17,7 +17,7 @@ trait AbortMultipartUploadOutput extends _OutputTypesUnion {
 object AbortMultipartUploadOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata): AbortMultipartUploadOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AbortMultipartUploadOutput]
   }

@@ -13,8 +13,8 @@ object Anon_EmailAddress {
   @scala.inline
   def apply(emailAddress: String = null, legalName: String = null): Anon_EmailAddress = {
     val __obj = js.Dynamic.literal()
-    if (emailAddress != null) __obj.updateDynamic("emailAddress")(emailAddress)
-    if (legalName != null) __obj.updateDynamic("legalName")(legalName)
+    if (emailAddress != null) __obj.updateDynamic("emailAddress")(emailAddress.asInstanceOf[js.Any])
+    if (legalName != null) __obj.updateDynamic("legalName")(legalName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_EmailAddress]
   }
 }

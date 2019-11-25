@@ -19,7 +19,7 @@ object InfoAccess {
     toJSON: () => js.Any,
     toSchema: () => js.Any
   ): InfoAccess = {
-    val __obj = js.Dynamic.literal(accessDescriptions = accessDescriptions, fromSchema = js.Any.fromFunction1(fromSchema), toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
+    val __obj = js.Dynamic.literal(accessDescriptions = accessDescriptions.asInstanceOf[js.Any], fromSchema = js.Any.fromFunction1(fromSchema), toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
   
     __obj.asInstanceOf[InfoAccess]
   }

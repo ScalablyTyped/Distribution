@@ -29,8 +29,8 @@ object Anon_ {
     ] = null
   ): Anon_ = {
     val __obj = js.Dynamic.literal()
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
-    if (types != null) __obj.updateDynamic("types")(types)
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
+    if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_]
   }
 }

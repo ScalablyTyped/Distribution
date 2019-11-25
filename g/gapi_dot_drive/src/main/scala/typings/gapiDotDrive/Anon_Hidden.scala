@@ -23,7 +23,7 @@ object Anon_Hidden {
     trashed: Boolean,
     viewed: Boolean
   ): Anon_Hidden = {
-    val __obj = js.Dynamic.literal(hidden = hidden, modified = modified, restricted = restricted, starred = starred, trashed = trashed, viewed = viewed)
+    val __obj = js.Dynamic.literal(hidden = hidden.asInstanceOf[js.Any], modified = modified.asInstanceOf[js.Any], restricted = restricted.asInstanceOf[js.Any], starred = starred.asInstanceOf[js.Any], trashed = trashed.asInstanceOf[js.Any], viewed = viewed.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Hidden]
   }

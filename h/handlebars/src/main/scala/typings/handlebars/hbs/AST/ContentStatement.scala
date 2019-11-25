@@ -19,8 +19,8 @@ object ContentStatement {
     `type`: typings.handlebars.handlebarsStrings.ContentStatement,
     value: String
   ): ContentStatement = {
-    val __obj = js.Dynamic.literal(loc = loc, original = original, value = value)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(loc = loc.asInstanceOf[js.Any], original = original.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentStatement]
   }
 }

@@ -49,14 +49,14 @@ object RawBodyError {
     received: Int | Double = null,
     stack: String = null
   ): RawBodyError = {
-    val __obj = js.Dynamic.literal(message = message, name = name, status = status, statusCode = statusCode)
-    __obj.updateDynamic("type")(`type`)
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (expected != null) __obj.updateDynamic("expected")(expected.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (received != null) __obj.updateDynamic("received")(received.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[RawBodyError]
   }
 }

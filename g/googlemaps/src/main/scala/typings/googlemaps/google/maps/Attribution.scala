@@ -15,9 +15,9 @@ object Attribution {
   @scala.inline
   def apply(iosDeepLinkId: String = null, source: String = null, webUrl: String = null): Attribution = {
     val __obj = js.Dynamic.literal()
-    if (iosDeepLinkId != null) __obj.updateDynamic("iosDeepLinkId")(iosDeepLinkId)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (webUrl != null) __obj.updateDynamic("webUrl")(webUrl)
+    if (iosDeepLinkId != null) __obj.updateDynamic("iosDeepLinkId")(iosDeepLinkId.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (webUrl != null) __obj.updateDynamic("webUrl")(webUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attribution]
   }
 }

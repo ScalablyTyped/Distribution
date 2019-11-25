@@ -99,7 +99,7 @@ object Anon_AutoMerge {
     options: String,
     requireHashesToMatch: Boolean
   ): Anon_AutoMerge = {
-    val __obj = js.Dynamic.literal(autoMerge = autoMerge, broadcastProjectEvents = broadcastProjectEvents, cache = cache, clientCache = clientCache, database = database, disableHashChecks = disableHashChecks, keyType = keyType.asInstanceOf[js.Any], loadBucketSize = loadBucketSize, loadBucketTimer = loadBucketTimer, maxEmittedCoreObjects = maxEmittedCoreObjects, options = options, requireHashesToMatch = requireHashesToMatch)
+    val __obj = js.Dynamic.literal(autoMerge = autoMerge.asInstanceOf[js.Any], broadcastProjectEvents = broadcastProjectEvents.asInstanceOf[js.Any], cache = cache.asInstanceOf[js.Any], clientCache = clientCache.asInstanceOf[js.Any], database = database.asInstanceOf[js.Any], disableHashChecks = disableHashChecks.asInstanceOf[js.Any], keyType = keyType.asInstanceOf[js.Any], loadBucketSize = loadBucketSize.asInstanceOf[js.Any], loadBucketTimer = loadBucketTimer.asInstanceOf[js.Any], maxEmittedCoreObjects = maxEmittedCoreObjects.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], requireHashesToMatch = requireHashesToMatch.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AutoMerge]
   }

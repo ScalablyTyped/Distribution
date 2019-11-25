@@ -1,6 +1,5 @@
 package typings.atAngularCompiler.atAngularCompilerMod
 
-import typings.atAngularCompiler.srcUrlUnderscoreResolverMod.UrlResolver
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +10,7 @@ class DirectiveNormalizer protected ()
   extends typings.atAngularCompiler.publicUnderscoreApiMod.DirectiveNormalizer {
   def this(
     _resourceLoader: typings.atAngularCompiler.srcResourceUnderscoreLoaderMod.ResourceLoader,
-    _urlResolver: UrlResolver,
+    _urlResolver: typings.atAngularCompiler.srcUrlUnderscoreResolverMod.UrlResolver,
     _htmlParser: typings.atAngularCompiler.srcMlUnderscoreParserHtmlUnderscoreParserMod.HtmlParser,
     _config: typings.atAngularCompiler.srcConfigMod.CompilerConfig
   ) = this()

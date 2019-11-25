@@ -13,7 +13,7 @@ object PivotHeader {
   @scala.inline
   def apply(pivotHeaderEntries: js.Array[PivotHeaderEntry] = null, totalPivotGroupsCount: Int | Double = null): PivotHeader = {
     val __obj = js.Dynamic.literal()
-    if (pivotHeaderEntries != null) __obj.updateDynamic("pivotHeaderEntries")(pivotHeaderEntries)
+    if (pivotHeaderEntries != null) __obj.updateDynamic("pivotHeaderEntries")(pivotHeaderEntries.asInstanceOf[js.Any])
     if (totalPivotGroupsCount != null) __obj.updateDynamic("totalPivotGroupsCount")(totalPivotGroupsCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotHeader]
   }

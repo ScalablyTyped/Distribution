@@ -23,9 +23,9 @@ object ActiveTableChangedEventUIParam {
   @scala.inline
   def apply(newActiveTable: js.Any = null, oldActiveTable: js.Any = null, owner: js.Any = null): ActiveTableChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (newActiveTable != null) __obj.updateDynamic("newActiveTable")(newActiveTable)
-    if (oldActiveTable != null) __obj.updateDynamic("oldActiveTable")(oldActiveTable)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (newActiveTable != null) __obj.updateDynamic("newActiveTable")(newActiveTable.asInstanceOf[js.Any])
+    if (oldActiveTable != null) __obj.updateDynamic("oldActiveTable")(oldActiveTable.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveTableChangedEventUIParam]
   }
 }

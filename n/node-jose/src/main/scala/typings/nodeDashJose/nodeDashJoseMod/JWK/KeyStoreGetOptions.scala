@@ -11,10 +11,10 @@ trait KeyStoreGetOptions extends KeyStoreGetFilter {
 object KeyStoreGetOptions {
   @scala.inline
   def apply(kid: String, alg: String = null, kty: String = null, use: KeyUse = null): KeyStoreGetOptions = {
-    val __obj = js.Dynamic.literal(kid = kid)
-    if (alg != null) __obj.updateDynamic("alg")(alg)
-    if (kty != null) __obj.updateDynamic("kty")(kty)
-    if (use != null) __obj.updateDynamic("use")(use)
+    val __obj = js.Dynamic.literal(kid = kid.asInstanceOf[js.Any])
+    if (alg != null) __obj.updateDynamic("alg")(alg.asInstanceOf[js.Any])
+    if (kty != null) __obj.updateDynamic("kty")(kty.asInstanceOf[js.Any])
+    if (use != null) __obj.updateDynamic("use")(use.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyStoreGetOptions]
   }
 }

@@ -31,7 +31,7 @@ object ElementInfo {
     x: Double,
     y: Double
   ): ElementInfo = {
-    val __obj = js.Dynamic.literal(attributes = attributes, height = height, html = html, nodeName = nodeName, tag = tag, text = text, visible = visible, width = width, x = x, y = y)
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], nodeName = nodeName.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ElementInfo]
   }

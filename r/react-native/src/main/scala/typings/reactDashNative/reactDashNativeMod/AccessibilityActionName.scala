@@ -14,3 +14,20 @@ import scala.scalajs.js.annotation._
 */
 trait AccessibilityActionName extends js.Object
 
+object AccessibilityActionName {
+  @scala.inline
+  def activate: typings.reactDashNative.reactDashNativeStrings.activate = this.cast("activate")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def decrement: typings.reactDashNative.reactDashNativeStrings.decrement = this.cast("decrement")
+  @scala.inline
+  def escape: typings.reactDashNative.reactDashNativeStrings.escape = this.cast("escape")
+  @scala.inline
+  def increment: typings.reactDashNative.reactDashNativeStrings.increment = this.cast("increment")
+  @scala.inline
+  def longpress: typings.reactDashNative.reactDashNativeStrings.longpress = this.cast("longpress")
+  @scala.inline
+  def magicTap: typings.reactDashNative.reactDashNativeStrings.magicTap = this.cast("magicTap")
+}
+

@@ -3,7 +3,7 @@ package typings.ldapjs.ldapjsMod
 import typings.ldapjs.ldapjsStrings.end
 import typings.ldapjs.ldapjsStrings.error
 import typings.ldapjs.ldapjsStrings.page
-import typings.ldapjs.ldapjsStrings.searchEntry
+import typings.ldapjs.ldapjsStrings.searchEntry_
 import typings.ldapjs.ldapjsStrings.searchReference
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
@@ -22,7 +22,7 @@ trait SearchCallbackResponse extends EventEmitter {
     listener: js.Function2[/* res */ LDAPResult, /* cb */ js.Function1[/* repeated */ js.Any, Unit], Unit]
   ): this.type = js.native
   @JSName("on")
-  def on_searchEntry(event: searchEntry, listener: js.Function1[/* entry */ SearchEntry, Unit]): this.type = js.native
+  def on_searchEntry(event: searchEntry_, listener: js.Function1[/* entry */ SearchEntry, Unit]): this.type = js.native
   @JSName("on")
   def on_searchReference(event: searchReference, listener: js.Function1[/* referral */ SearchReference, Unit]): this.type = js.native
 }

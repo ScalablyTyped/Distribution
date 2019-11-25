@@ -74,8 +74,8 @@ object relationshipUpdateRendererParams {
     renderer: UniqueValueRenderer,
     focus: String = null
   ): relationshipUpdateRendererParams = {
-    val __obj = js.Dynamic.literal(colors = colors, constructor = constructor, field1 = field1, field2 = field2, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), numClasses = numClasses, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), renderer = renderer)
-    if (focus != null) __obj.updateDynamic("focus")(focus)
+    val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], field1 = field1.asInstanceOf[js.Any], field2 = field2.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), numClasses = numClasses.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), renderer = renderer.asInstanceOf[js.Any])
+    if (focus != null) __obj.updateDynamic("focus")(focus.asInstanceOf[js.Any])
     __obj.asInstanceOf[relationshipUpdateRendererParams]
   }
 }

@@ -15,8 +15,8 @@ object FunctionCall {
   @scala.inline
   def apply(args: js.Array[_] = null, function: String = null): FunctionCall = {
     val __obj = js.Dynamic.literal()
-    if (args != null) __obj.updateDynamic("args")(args)
-    if (function != null) __obj.updateDynamic("function")(function)
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (function != null) __obj.updateDynamic("function")(function.asInstanceOf[js.Any])
     __obj.asInstanceOf[FunctionCall]
   }
 }

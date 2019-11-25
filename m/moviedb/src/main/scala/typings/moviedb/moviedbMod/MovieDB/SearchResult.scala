@@ -32,7 +32,7 @@ object SearchResult {
     vote_average: Double,
     vote_count: Double
   ): SearchResult = {
-    val __obj = js.Dynamic.literal(adult = adult, backdrop_path = backdrop_path, id = id, original_title = original_title, popularity = popularity, poster_path = poster_path, release_date = release_date, title = title, vote_average = vote_average, vote_count = vote_count)
+    val __obj = js.Dynamic.literal(adult = adult.asInstanceOf[js.Any], backdrop_path = backdrop_path.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], original_title = original_title.asInstanceOf[js.Any], popularity = popularity.asInstanceOf[js.Any], poster_path = poster_path.asInstanceOf[js.Any], release_date = release_date.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], vote_average = vote_average.asInstanceOf[js.Any], vote_count = vote_count.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SearchResult]
   }

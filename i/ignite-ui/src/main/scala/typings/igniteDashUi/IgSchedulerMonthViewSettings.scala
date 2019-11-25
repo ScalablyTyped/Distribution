@@ -89,17 +89,17 @@ object IgSchedulerMonthViewSettings {
     viewSplitOrientation: String = null
   ): IgSchedulerMonthViewSettings = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (agendaVisibilityType != null) __obj.updateDynamic("agendaVisibilityType")(agendaVisibilityType)
-    if (appointmentMode != null) __obj.updateDynamic("appointmentMode")(appointmentMode)
-    if (!js.isUndefined(isAgendaVisible)) __obj.updateDynamic("isAgendaVisible")(isAgendaVisible)
-    if (!js.isUndefined(isHorizontalSeparatorVisibile)) __obj.updateDynamic("isHorizontalSeparatorVisibile")(isHorizontalSeparatorVisibile)
-    if (!js.isUndefined(isNextMonthShown)) __obj.updateDynamic("isNextMonthShown")(isNextMonthShown)
-    if (!js.isUndefined(isPreviousMonthShown)) __obj.updateDynamic("isPreviousMonthShown")(isPreviousMonthShown)
-    if (!js.isUndefined(isVerticalSeparatorVisibile)) __obj.updateDynamic("isVerticalSeparatorVisibile")(isVerticalSeparatorVisibile)
-    if (!js.isUndefined(isWeekNumberVisible)) __obj.updateDynamic("isWeekNumberVisible")(isWeekNumberVisible)
-    if (!js.isUndefined(isWeekdayVisible)) __obj.updateDynamic("isWeekdayVisible")(isWeekdayVisible)
-    if (viewSplitOrientation != null) __obj.updateDynamic("viewSplitOrientation")(viewSplitOrientation)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (agendaVisibilityType != null) __obj.updateDynamic("agendaVisibilityType")(agendaVisibilityType.asInstanceOf[js.Any])
+    if (appointmentMode != null) __obj.updateDynamic("appointmentMode")(appointmentMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAgendaVisible)) __obj.updateDynamic("isAgendaVisible")(isAgendaVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(isHorizontalSeparatorVisibile)) __obj.updateDynamic("isHorizontalSeparatorVisibile")(isHorizontalSeparatorVisibile.asInstanceOf[js.Any])
+    if (!js.isUndefined(isNextMonthShown)) __obj.updateDynamic("isNextMonthShown")(isNextMonthShown.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPreviousMonthShown)) __obj.updateDynamic("isPreviousMonthShown")(isPreviousMonthShown.asInstanceOf[js.Any])
+    if (!js.isUndefined(isVerticalSeparatorVisibile)) __obj.updateDynamic("isVerticalSeparatorVisibile")(isVerticalSeparatorVisibile.asInstanceOf[js.Any])
+    if (!js.isUndefined(isWeekNumberVisible)) __obj.updateDynamic("isWeekNumberVisible")(isWeekNumberVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(isWeekdayVisible)) __obj.updateDynamic("isWeekdayVisible")(isWeekdayVisible.asInstanceOf[js.Any])
+    if (viewSplitOrientation != null) __obj.updateDynamic("viewSplitOrientation")(viewSplitOrientation.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgSchedulerMonthViewSettings]
   }
 }

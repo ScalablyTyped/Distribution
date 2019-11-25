@@ -4,7 +4,6 @@ import typings.react.reactMod.ClassAttributes
 import typings.react.reactMod.Key
 import typings.react.reactMod.LegacyRef
 import typings.react.reactMod.ReactElement
-import typings.reactDashBootstrap.Fn_String
 import typings.reactDashBootstrap.reactDashBootstrapMod.TransitionCallbacks
 import typings.reactDashBootstrap.reactDashBootstrapStrings.height
 import typings.reactDashBootstrap.reactDashBootstrapStrings.width
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation._
 trait CollapseProps
   extends ClassAttributes[Collapse]
      with TransitionCallbacks {
-  var dimension: js.UndefOr[height | width | Fn_String] = js.undefined
+  var dimension: js.UndefOr[height | width | js.Function0[String]] = js.undefined
   var getDimensionValue: js.UndefOr[js.Function2[/* dimension */ Double, /* element */ ReactElement, Double]] = js.undefined
   var in: js.UndefOr[Boolean] = js.undefined
   var timeout: js.UndefOr[Double] = js.undefined
@@ -27,7 +26,7 @@ trait CollapseProps
 object CollapseProps {
   @scala.inline
   def apply(
-    dimension: height | width | Fn_String = null,
+    dimension: height | width | js.Function0[String] = null,
     getDimensionValue: (/* dimension */ Double, /* element */ ReactElement) => Double = null,
     in: js.UndefOr[Boolean] = js.undefined,
     key: Key = null,
@@ -45,7 +44,7 @@ object CollapseProps {
     val __obj = js.Dynamic.literal()
     if (dimension != null) __obj.updateDynamic("dimension")(dimension.asInstanceOf[js.Any])
     if (getDimensionValue != null) __obj.updateDynamic("getDimensionValue")(js.Any.fromFunction2(getDimensionValue))
-    if (!js.isUndefined(in)) __obj.updateDynamic("in")(in)
+    if (!js.isUndefined(in)) __obj.updateDynamic("in")(in.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (onEnter != null) __obj.updateDynamic("onEnter")(js.Any.fromFunction1(onEnter))
     if (onEntered != null) __obj.updateDynamic("onEntered")(js.Any.fromFunction1(onEntered))
@@ -55,8 +54,8 @@ object CollapseProps {
     if (onExiting != null) __obj.updateDynamic("onExiting")(js.Any.fromFunction1(onExiting))
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(transitionAppear)) __obj.updateDynamic("transitionAppear")(transitionAppear)
-    if (!js.isUndefined(unmountOnExit)) __obj.updateDynamic("unmountOnExit")(unmountOnExit)
+    if (!js.isUndefined(transitionAppear)) __obj.updateDynamic("transitionAppear")(transitionAppear.asInstanceOf[js.Any])
+    if (!js.isUndefined(unmountOnExit)) __obj.updateDynamic("unmountOnExit")(unmountOnExit.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollapseProps]
   }
 }

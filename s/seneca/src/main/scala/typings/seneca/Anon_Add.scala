@@ -21,9 +21,9 @@ object Anon_Add {
     result: js.UndefOr[Boolean] = js.undefined
   ): Anon_Add = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(add)) __obj.updateDynamic("add")(add)
-    if (!js.isUndefined(fixedargs)) __obj.updateDynamic("fixedargs")(fixedargs)
-    if (!js.isUndefined(result)) __obj.updateDynamic("result")(result)
+    if (!js.isUndefined(add)) __obj.updateDynamic("add")(add.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixedargs)) __obj.updateDynamic("fixedargs")(fixedargs.asInstanceOf[js.Any])
+    if (!js.isUndefined(result)) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Add]
   }
 }

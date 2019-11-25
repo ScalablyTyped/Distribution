@@ -20,7 +20,7 @@ object Anon_InTangents {
     points: js.Array[Cartesian3],
     times: js.Array[Double]
   ): Anon_InTangents = {
-    val __obj = js.Dynamic.literal(inTangents = inTangents, outTangents = outTangents, points = points, times = times)
+    val __obj = js.Dynamic.literal(inTangents = inTangents.asInstanceOf[js.Any], outTangents = outTangents.asInstanceOf[js.Any], points = points.asInstanceOf[js.Any], times = times.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_InTangents]
   }

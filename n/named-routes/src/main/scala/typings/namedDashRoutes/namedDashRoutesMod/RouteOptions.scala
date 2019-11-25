@@ -14,7 +14,7 @@ trait RouteOptions extends js.Object {
 object RouteOptions {
   @scala.inline
   def apply(caseSensitive: Boolean, name: String, recursiveWildcard: Boolean, wildcardInPairs: Boolean): RouteOptions = {
-    val __obj = js.Dynamic.literal(caseSensitive = caseSensitive, name = name, recursiveWildcard = recursiveWildcard, wildcardInPairs = wildcardInPairs)
+    val __obj = js.Dynamic.literal(caseSensitive = caseSensitive.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], recursiveWildcard = recursiveWildcard.asInstanceOf[js.Any], wildcardInPairs = wildcardInPairs.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RouteOptions]
   }

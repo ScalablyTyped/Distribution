@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait Badge extends js.Object
 
+object Badge {
+  @scala.inline
+  def bottomleft: typings.grecaptcha.grecaptchaStrings.bottomleft = this.cast("bottomleft")
+  @scala.inline
+  def bottomright: typings.grecaptcha.grecaptchaStrings.bottomright = this.cast("bottomright")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def `inline`: typings.grecaptcha.grecaptchaStrings.`inline` = this.cast("inline")
+}
+

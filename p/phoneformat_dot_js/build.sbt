@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "phoneformat_dot_js"
-version := "1.0-dt-20190731Z-99a929"
+version := "1.0-dt-20190731Z-ca1744"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

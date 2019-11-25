@@ -30,15 +30,15 @@ object Anon_Confirm {
     window: String = null
   ): Anon_Confirm = {
     val __obj = js.Dynamic.literal()
-    if (confirm != null) __obj.updateDynamic("confirm")(confirm)
-    if (default != null) __obj.updateDynamic("default")(default)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (info != null) __obj.updateDynamic("info")(info)
-    if (progress != null) __obj.updateDynamic("progress")(progress)
-    if (prompt != null) __obj.updateDynamic("prompt")(prompt)
-    if (success != null) __obj.updateDynamic("success")(success)
-    if (warning != null) __obj.updateDynamic("warning")(warning)
-    if (window != null) __obj.updateDynamic("window")(window)
+    if (confirm != null) __obj.updateDynamic("confirm")(confirm.asInstanceOf[js.Any])
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
+    if (progress != null) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
+    if (prompt != null) __obj.updateDynamic("prompt")(prompt.asInstanceOf[js.Any])
+    if (success != null) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
+    if (warning != null) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
+    if (window != null) __obj.updateDynamic("window")(window.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Confirm]
   }
 }

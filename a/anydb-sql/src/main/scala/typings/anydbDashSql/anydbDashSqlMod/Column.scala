@@ -1,6 +1,5 @@
 package typings.anydbDashSql.anydbDashSqlMod
 
-import typings.anydbDashSql.Fn_N
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,8 +10,6 @@ trait Column[T] extends js.Object {
   var ascending: OrderByValueNode = js.native
   var desc: OrderByValueNode = js.native
   var descending: OrderByValueNode = js.native
-  @JSName("multiply")
-  var multiply_Original: Fn_N[T] = js.native
   var name: String = js.native
   var table: Table[_] = js.native
   def as(name: String): Column[T] = js.native

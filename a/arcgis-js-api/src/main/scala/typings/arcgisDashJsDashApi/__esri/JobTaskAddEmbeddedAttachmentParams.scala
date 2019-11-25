@@ -37,7 +37,7 @@ object JobTaskAddEmbeddedAttachmentParams {
     propertyIsEnumerable: PropertyKey => Boolean,
     user: String
   ): JobTaskAddEmbeddedAttachmentParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, form = form, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), jobId = jobId, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), user = user)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], form = form.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), jobId = jobId.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), user = user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[JobTaskAddEmbeddedAttachmentParams]
   }

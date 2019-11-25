@@ -56,11 +56,11 @@ object WriteCallbackArgs {
     val __obj = js.Dynamic.literal()
     if (bytesProcessed != null) __obj.updateDynamic("bytesProcessed")(bytesProcessed.asInstanceOf[js.Any])
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (errorDescription != null) __obj.updateDynamic("errorDescription")(errorDescription)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (errorDescription != null) __obj.updateDynamic("errorDescription")(errorDescription.asInstanceOf[js.Any])
     if (errorState != null) __obj.updateDynamic("errorState")(errorState.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
     __obj.asInstanceOf[WriteCallbackArgs]
   }
 }

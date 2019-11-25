@@ -12,7 +12,7 @@ trait AccountRepositoryLoginBadPasswordResponseButtonsItem extends js.Object {
 object AccountRepositoryLoginBadPasswordResponseButtonsItem {
   @scala.inline
   def apply(action: String, title: String): AccountRepositoryLoginBadPasswordResponseButtonsItem = {
-    val __obj = js.Dynamic.literal(action = action, title = title)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AccountRepositoryLoginBadPasswordResponseButtonsItem]
   }

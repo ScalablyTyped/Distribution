@@ -14,7 +14,7 @@ trait NavigationBarSearchInputEvent extends js.Object {
 object NavigationBarSearchInputEvent {
   @scala.inline
   def apply(text: String): NavigationBarSearchInputEvent = {
-    val __obj = js.Dynamic.literal(text = text)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NavigationBarSearchInputEvent]
   }

@@ -21,9 +21,9 @@ object OriginTypes {
     unprotectedWeb: js.UndefOr[Boolean] = js.undefined
   ): OriginTypes = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(extension)) __obj.updateDynamic("extension")(extension)
-    if (!js.isUndefined(protectedWeb)) __obj.updateDynamic("protectedWeb")(protectedWeb)
-    if (!js.isUndefined(unprotectedWeb)) __obj.updateDynamic("unprotectedWeb")(unprotectedWeb)
+    if (!js.isUndefined(extension)) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (!js.isUndefined(protectedWeb)) __obj.updateDynamic("protectedWeb")(protectedWeb.asInstanceOf[js.Any])
+    if (!js.isUndefined(unprotectedWeb)) __obj.updateDynamic("unprotectedWeb")(unprotectedWeb.asInstanceOf[js.Any])
     __obj.asInstanceOf[OriginTypes]
   }
 }

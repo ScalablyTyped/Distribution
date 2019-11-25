@@ -15,8 +15,8 @@ trait ViewportParameters extends js.Object {
 object ViewportParameters {
   @scala.inline
   def apply(scale: Double, dontFlip: js.UndefOr[Boolean] = js.undefined, rotation: Int | Double = null): ViewportParameters = {
-    val __obj = js.Dynamic.literal(scale = scale)
-    if (!js.isUndefined(dontFlip)) __obj.updateDynamic("dontFlip")(dontFlip)
+    val __obj = js.Dynamic.literal(scale = scale.asInstanceOf[js.Any])
+    if (!js.isUndefined(dontFlip)) __obj.updateDynamic("dontFlip")(dontFlip.asInstanceOf[js.Any])
     if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewportParameters]
   }

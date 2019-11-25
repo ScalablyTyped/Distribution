@@ -27,7 +27,7 @@ object MetricAggregationResult {
     val __obj = js.Dynamic.literal()
     if (event_rate != null) __obj.updateDynamic("event_rate")(event_rate.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (key_as_string != null) __obj.updateDynamic("key_as_string")(key_as_string)
+    if (key_as_string != null) __obj.updateDynamic("key_as_string")(key_as_string.asInstanceOf[js.Any])
     if (matching_results != null) __obj.updateDynamic("matching_results")(matching_results.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricAggregationResult]
   }

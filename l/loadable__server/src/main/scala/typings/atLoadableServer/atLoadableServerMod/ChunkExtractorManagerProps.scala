@@ -11,7 +11,7 @@ trait ChunkExtractorManagerProps extends js.Object {
 object ChunkExtractorManagerProps {
   @scala.inline
   def apply(extractor: ChunkExtractor): ChunkExtractorManagerProps = {
-    val __obj = js.Dynamic.literal(extractor = extractor)
+    val __obj = js.Dynamic.literal(extractor = extractor.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChunkExtractorManagerProps]
   }

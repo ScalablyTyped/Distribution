@@ -12,7 +12,7 @@ trait PlanViewData extends js.Object {
 object PlanViewData {
   @scala.inline
   def apply(id: String, revision: Double): PlanViewData = {
-    val __obj = js.Dynamic.literal(id = id, revision = revision)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PlanViewData]
   }

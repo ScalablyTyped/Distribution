@@ -35,14 +35,14 @@ object TcpSocketConnectOpts {
     ]) => Unit = null,
     onread: OnReadOpts = null
   ): TcpSocketConnectOpts = {
-    val __obj = js.Dynamic.literal(port = port)
+    val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any])
     if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
     if (hints != null) __obj.updateDynamic("hints")(hints.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress)
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress.asInstanceOf[js.Any])
     if (localPort != null) __obj.updateDynamic("localPort")(localPort.asInstanceOf[js.Any])
     if (lookup != null) __obj.updateDynamic("lookup")(js.Any.fromFunction3(lookup))
-    if (onread != null) __obj.updateDynamic("onread")(onread)
+    if (onread != null) __obj.updateDynamic("onread")(onread.asInstanceOf[js.Any])
     __obj.asInstanceOf[TcpSocketConnectOpts]
   }
 }

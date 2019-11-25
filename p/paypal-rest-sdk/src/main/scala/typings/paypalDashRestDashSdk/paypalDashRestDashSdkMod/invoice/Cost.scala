@@ -14,7 +14,7 @@ object Cost {
   @scala.inline
   def apply(amount: Currency = null, percent: Int | Double = null): Cost = {
     val __obj = js.Dynamic.literal()
-    if (amount != null) __obj.updateDynamic("amount")(amount)
+    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
     if (percent != null) __obj.updateDynamic("percent")(percent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cost]
   }

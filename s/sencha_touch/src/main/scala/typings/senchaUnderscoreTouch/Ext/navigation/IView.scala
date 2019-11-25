@@ -65,53 +65,37 @@ object IView {
   @scala.inline
   def apply(
     IContainer: IContainer = null,
-    baseCls: java.lang.String = null,
     defaultBackButtonText: java.lang.String = null,
-    getBaseCls: () => java.lang.String = null,
     getDefaultBackButtonText: () => java.lang.String = null,
-    getItems: () => _ = null,
     getLayout: () => _ = null,
     getNavigationBar: () => _ = null,
     getPreviousItem: () => _ = null,
     getUseTitleForBackButtonText: () => Boolean = null,
-    items: js.Any = null,
-    layout: js.Any = null,
     navigationBar: js.Any = null,
     pop: /* count */ js.UndefOr[js.Any] => IComponent = null,
     push: /* view */ js.UndefOr[js.Any] => IComponent = null,
     reset: () => IComponent = null,
-    setBaseCls: /* baseCls */ js.UndefOr[java.lang.String] => Unit = null,
     setDefaultBackButtonText: /* defaultBackButtonText */ js.UndefOr[java.lang.String] => Unit = null,
-    setItems: /* items */ js.UndefOr[js.Any] => Unit = null,
-    setLayout: /* layout */ js.UndefOr[js.Any] => Unit = null,
     setNavigationBar: /* navigationBar */ js.UndefOr[js.Any] => Unit = null,
     setUseTitleForBackButtonText: /* useTitleForBackButtonText */ js.UndefOr[Boolean] => Unit = null,
     useTitleForBackButtonText: js.UndefOr[Boolean] = js.undefined
   ): IView = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IContainer)
-    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
-    if (defaultBackButtonText != null) __obj.updateDynamic("defaultBackButtonText")(defaultBackButtonText)
-    if (getBaseCls != null) __obj.updateDynamic("getBaseCls")(js.Any.fromFunction0(getBaseCls))
+    if (IContainer != null) js.Dynamic.global.Object.assign(__obj, IContainer)
+    if (defaultBackButtonText != null) __obj.updateDynamic("defaultBackButtonText")(defaultBackButtonText.asInstanceOf[js.Any])
     if (getDefaultBackButtonText != null) __obj.updateDynamic("getDefaultBackButtonText")(js.Any.fromFunction0(getDefaultBackButtonText))
-    if (getItems != null) __obj.updateDynamic("getItems")(js.Any.fromFunction0(getItems))
     if (getLayout != null) __obj.updateDynamic("getLayout")(js.Any.fromFunction0(getLayout))
     if (getNavigationBar != null) __obj.updateDynamic("getNavigationBar")(js.Any.fromFunction0(getNavigationBar))
     if (getPreviousItem != null) __obj.updateDynamic("getPreviousItem")(js.Any.fromFunction0(getPreviousItem))
     if (getUseTitleForBackButtonText != null) __obj.updateDynamic("getUseTitleForBackButtonText")(js.Any.fromFunction0(getUseTitleForBackButtonText))
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (layout != null) __obj.updateDynamic("layout")(layout)
-    if (navigationBar != null) __obj.updateDynamic("navigationBar")(navigationBar)
+    if (navigationBar != null) __obj.updateDynamic("navigationBar")(navigationBar.asInstanceOf[js.Any])
     if (pop != null) __obj.updateDynamic("pop")(js.Any.fromFunction1(pop))
     if (push != null) __obj.updateDynamic("push")(js.Any.fromFunction1(push))
     if (reset != null) __obj.updateDynamic("reset")(js.Any.fromFunction0(reset))
-    if (setBaseCls != null) __obj.updateDynamic("setBaseCls")(js.Any.fromFunction1(setBaseCls))
     if (setDefaultBackButtonText != null) __obj.updateDynamic("setDefaultBackButtonText")(js.Any.fromFunction1(setDefaultBackButtonText))
-    if (setItems != null) __obj.updateDynamic("setItems")(js.Any.fromFunction1(setItems))
-    if (setLayout != null) __obj.updateDynamic("setLayout")(js.Any.fromFunction1(setLayout))
     if (setNavigationBar != null) __obj.updateDynamic("setNavigationBar")(js.Any.fromFunction1(setNavigationBar))
     if (setUseTitleForBackButtonText != null) __obj.updateDynamic("setUseTitleForBackButtonText")(js.Any.fromFunction1(setUseTitleForBackButtonText))
-    if (!js.isUndefined(useTitleForBackButtonText)) __obj.updateDynamic("useTitleForBackButtonText")(useTitleForBackButtonText)
+    if (!js.isUndefined(useTitleForBackButtonText)) __obj.updateDynamic("useTitleForBackButtonText")(useTitleForBackButtonText.asInstanceOf[js.Any])
     __obj.asInstanceOf[IView]
   }
 }

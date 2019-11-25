@@ -15,7 +15,7 @@ trait Anon_Expanded extends js.Object {
 object Anon_Expanded {
   @scala.inline
   def apply(expanded: Boolean, focused: Boolean, hovered: Boolean, selected: Boolean, zoom: Double): Anon_Expanded = {
-    val __obj = js.Dynamic.literal(expanded = expanded, focused = focused, hovered = hovered, selected = selected, zoom = zoom)
+    val __obj = js.Dynamic.literal(expanded = expanded.asInstanceOf[js.Any], focused = focused.asInstanceOf[js.Any], hovered = hovered.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Expanded]
   }

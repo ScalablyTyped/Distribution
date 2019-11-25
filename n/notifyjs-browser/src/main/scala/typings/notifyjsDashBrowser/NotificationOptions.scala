@@ -55,7 +55,7 @@ object NotificationOptions {
     showDuration: Double,
     style: String
   ): NotificationOptions = {
-    val __obj = js.Dynamic.literal(arrowShow = arrowShow, arrowSize = arrowSize, autoHide = autoHide, autoHideDelay = autoHideDelay, className = className, clickToHide = clickToHide, elementPosition = elementPosition, gap = gap, globalPosition = globalPosition, hideAnimation = hideAnimation, hideDuration = hideDuration, position = position, showAnimation = showAnimation, showDuration = showDuration, style = style)
+    val __obj = js.Dynamic.literal(arrowShow = arrowShow.asInstanceOf[js.Any], arrowSize = arrowSize.asInstanceOf[js.Any], autoHide = autoHide.asInstanceOf[js.Any], autoHideDelay = autoHideDelay.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], clickToHide = clickToHide.asInstanceOf[js.Any], elementPosition = elementPosition.asInstanceOf[js.Any], gap = gap.asInstanceOf[js.Any], globalPosition = globalPosition.asInstanceOf[js.Any], hideAnimation = hideAnimation.asInstanceOf[js.Any], hideDuration = hideDuration.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], showAnimation = showAnimation.asInstanceOf[js.Any], showDuration = showDuration.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NotificationOptions]
   }

@@ -47,14 +47,14 @@ object DataPoint {
     value: js.Array[Value] = null
   ): DataPoint = {
     val __obj = js.Dynamic.literal()
-    if (computationTimeMillis != null) __obj.updateDynamic("computationTimeMillis")(computationTimeMillis)
-    if (dataTypeName != null) __obj.updateDynamic("dataTypeName")(dataTypeName)
-    if (endTimeNanos != null) __obj.updateDynamic("endTimeNanos")(endTimeNanos)
-    if (modifiedTimeMillis != null) __obj.updateDynamic("modifiedTimeMillis")(modifiedTimeMillis)
-    if (originDataSourceId != null) __obj.updateDynamic("originDataSourceId")(originDataSourceId)
-    if (rawTimestampNanos != null) __obj.updateDynamic("rawTimestampNanos")(rawTimestampNanos)
-    if (startTimeNanos != null) __obj.updateDynamic("startTimeNanos")(startTimeNanos)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (computationTimeMillis != null) __obj.updateDynamic("computationTimeMillis")(computationTimeMillis.asInstanceOf[js.Any])
+    if (dataTypeName != null) __obj.updateDynamic("dataTypeName")(dataTypeName.asInstanceOf[js.Any])
+    if (endTimeNanos != null) __obj.updateDynamic("endTimeNanos")(endTimeNanos.asInstanceOf[js.Any])
+    if (modifiedTimeMillis != null) __obj.updateDynamic("modifiedTimeMillis")(modifiedTimeMillis.asInstanceOf[js.Any])
+    if (originDataSourceId != null) __obj.updateDynamic("originDataSourceId")(originDataSourceId.asInstanceOf[js.Any])
+    if (rawTimestampNanos != null) __obj.updateDynamic("rawTimestampNanos")(rawTimestampNanos.asInstanceOf[js.Any])
+    if (startTimeNanos != null) __obj.updateDynamic("startTimeNanos")(startTimeNanos.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataPoint]
   }
 }

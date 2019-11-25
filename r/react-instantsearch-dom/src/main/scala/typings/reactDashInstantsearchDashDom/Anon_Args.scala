@@ -13,7 +13,7 @@ object Anon_Args {
   @scala.inline
   def apply(Root: String | (js.Function1[/* repeated */ js.Any, _]), props: js.Object = null): Anon_Args = {
     val __obj = js.Dynamic.literal(Root = Root.asInstanceOf[js.Any])
-    if (props != null) __obj.updateDynamic("props")(props)
+    if (props != null) __obj.updateDynamic("props")(props.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Args]
   }
 }

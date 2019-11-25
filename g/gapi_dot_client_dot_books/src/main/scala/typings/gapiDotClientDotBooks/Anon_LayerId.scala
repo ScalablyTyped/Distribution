@@ -18,8 +18,8 @@ object Anon_LayerId {
   @scala.inline
   def apply(layerId: String = null, volumeAnnotationsVersion: String = null): Anon_LayerId = {
     val __obj = js.Dynamic.literal()
-    if (layerId != null) __obj.updateDynamic("layerId")(layerId)
-    if (volumeAnnotationsVersion != null) __obj.updateDynamic("volumeAnnotationsVersion")(volumeAnnotationsVersion)
+    if (layerId != null) __obj.updateDynamic("layerId")(layerId.asInstanceOf[js.Any])
+    if (volumeAnnotationsVersion != null) __obj.updateDynamic("volumeAnnotationsVersion")(volumeAnnotationsVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_LayerId]
   }
 }

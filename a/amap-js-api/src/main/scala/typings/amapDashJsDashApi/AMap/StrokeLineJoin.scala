@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait StrokeLineJoin extends js.Object
 
+object StrokeLineJoin {
+  @scala.inline
+  def bevel: typings.amapDashJsDashApi.amapDashJsDashApiStrings.bevel = this.cast("bevel")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def miter: typings.amapDashJsDashApi.amapDashJsDashApiStrings.miter = this.cast("miter")
+  @scala.inline
+  def round: typings.amapDashJsDashApi.amapDashJsDashApiStrings.round = this.cast("round")
+}
+

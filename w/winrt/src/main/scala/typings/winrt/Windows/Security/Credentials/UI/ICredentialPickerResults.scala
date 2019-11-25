@@ -26,7 +26,7 @@ object ICredentialPickerResults {
     credentialUserName: String,
     errorCode: Double
   ): ICredentialPickerResults = {
-    val __obj = js.Dynamic.literal(credential = credential, credentialDomainName = credentialDomainName, credentialPassword = credentialPassword, credentialSaveOption = credentialSaveOption, credentialSaved = credentialSaved, credentialUserName = credentialUserName, errorCode = errorCode)
+    val __obj = js.Dynamic.literal(credential = credential.asInstanceOf[js.Any], credentialDomainName = credentialDomainName.asInstanceOf[js.Any], credentialPassword = credentialPassword.asInstanceOf[js.Any], credentialSaveOption = credentialSaveOption.asInstanceOf[js.Any], credentialSaved = credentialSaved.asInstanceOf[js.Any], credentialUserName = credentialUserName.asInstanceOf[js.Any], errorCode = errorCode.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ICredentialPickerResults]
   }

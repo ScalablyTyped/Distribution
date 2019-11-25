@@ -13,7 +13,7 @@ trait InputClassNames extends js.Object {
 object InputClassNames {
   @scala.inline
   def apply(container: String, overlay: String, overlayWrapper: String): InputClassNames = {
-    val __obj = js.Dynamic.literal(container = container, overlay = overlay, overlayWrapper = overlayWrapper)
+    val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], overlay = overlay.asInstanceOf[js.Any], overlayWrapper = overlayWrapper.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InputClassNames]
   }

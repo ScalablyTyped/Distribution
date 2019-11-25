@@ -15,8 +15,8 @@ object GenerateKeyOptions {
   @scala.inline
   def apply(iv: String = null, salt: String = null, saltBits: Int | Double = null): GenerateKeyOptions = {
     val __obj = js.Dynamic.literal()
-    if (iv != null) __obj.updateDynamic("iv")(iv)
-    if (salt != null) __obj.updateDynamic("salt")(salt)
+    if (iv != null) __obj.updateDynamic("iv")(iv.asInstanceOf[js.Any])
+    if (salt != null) __obj.updateDynamic("salt")(salt.asInstanceOf[js.Any])
     if (saltBits != null) __obj.updateDynamic("saltBits")(saltBits.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenerateKeyOptions]
   }

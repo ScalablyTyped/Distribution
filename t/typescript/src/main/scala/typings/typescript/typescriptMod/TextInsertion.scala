@@ -13,7 +13,7 @@ trait TextInsertion extends js.Object {
 object TextInsertion {
   @scala.inline
   def apply(caretOffset: Double, newText: String): TextInsertion = {
-    val __obj = js.Dynamic.literal(caretOffset = caretOffset, newText = newText)
+    val __obj = js.Dynamic.literal(caretOffset = caretOffset.asInstanceOf[js.Any], newText = newText.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TextInsertion]
   }

@@ -26,11 +26,11 @@ object Anon_ExtendLarge {
   ): Anon_ExtendLarge = {
     val __obj = js.Dynamic.literal()
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (large != null) __obj.updateDynamic("large")(large)
-    if (medium != null) __obj.updateDynamic("medium")(medium)
-    if (small != null) __obj.updateDynamic("small")(small)
-    if (xlarge != null) __obj.updateDynamic("xlarge")(xlarge)
-    if (xxlarge != null) __obj.updateDynamic("xxlarge")(xxlarge)
+    if (large != null) __obj.updateDynamic("large")(large.asInstanceOf[js.Any])
+    if (medium != null) __obj.updateDynamic("medium")(medium.asInstanceOf[js.Any])
+    if (small != null) __obj.updateDynamic("small")(small.asInstanceOf[js.Any])
+    if (xlarge != null) __obj.updateDynamic("xlarge")(xlarge.asInstanceOf[js.Any])
+    if (xxlarge != null) __obj.updateDynamic("xxlarge")(xxlarge.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ExtendLarge]
   }
 }

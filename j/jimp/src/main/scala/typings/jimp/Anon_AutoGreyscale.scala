@@ -13,8 +13,8 @@ trait Anon_AutoGreyscale extends js.Object {
 object Anon_AutoGreyscale {
   @scala.inline
   def apply(max: Double, autoGreyscale: js.UndefOr[Boolean] = js.undefined, replace: Int | Double = null): Anon_AutoGreyscale = {
-    val __obj = js.Dynamic.literal(max = max)
-    if (!js.isUndefined(autoGreyscale)) __obj.updateDynamic("autoGreyscale")(autoGreyscale)
+    val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoGreyscale)) __obj.updateDynamic("autoGreyscale")(autoGreyscale.asInstanceOf[js.Any])
     if (replace != null) __obj.updateDynamic("replace")(replace.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AutoGreyscale]
   }

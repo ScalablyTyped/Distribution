@@ -48,15 +48,15 @@ object VideoFileDetails {
     videoStreams: js.Array[VideoFileDetailsVideoStream] = null
   ): VideoFileDetails = {
     val __obj = js.Dynamic.literal()
-    if (audioStreams != null) __obj.updateDynamic("audioStreams")(audioStreams)
-    if (bitrateBps != null) __obj.updateDynamic("bitrateBps")(bitrateBps)
-    if (container != null) __obj.updateDynamic("container")(container)
-    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime)
-    if (durationMs != null) __obj.updateDynamic("durationMs")(durationMs)
-    if (fileName != null) __obj.updateDynamic("fileName")(fileName)
-    if (fileSize != null) __obj.updateDynamic("fileSize")(fileSize)
-    if (fileType != null) __obj.updateDynamic("fileType")(fileType)
-    if (videoStreams != null) __obj.updateDynamic("videoStreams")(videoStreams)
+    if (audioStreams != null) __obj.updateDynamic("audioStreams")(audioStreams.asInstanceOf[js.Any])
+    if (bitrateBps != null) __obj.updateDynamic("bitrateBps")(bitrateBps.asInstanceOf[js.Any])
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
+    if (durationMs != null) __obj.updateDynamic("durationMs")(durationMs.asInstanceOf[js.Any])
+    if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
+    if (fileSize != null) __obj.updateDynamic("fileSize")(fileSize.asInstanceOf[js.Any])
+    if (fileType != null) __obj.updateDynamic("fileType")(fileType.asInstanceOf[js.Any])
+    if (videoStreams != null) __obj.updateDynamic("videoStreams")(videoStreams.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoFileDetails]
   }
 }

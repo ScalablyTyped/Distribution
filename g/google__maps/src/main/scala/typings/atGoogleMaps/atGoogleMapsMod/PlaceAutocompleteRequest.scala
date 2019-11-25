@@ -74,14 +74,14 @@ object PlaceAutocompleteRequest {
     strictbounds: js.UndefOr[Boolean] = js.undefined,
     types: PlaceAutocompleteType = null
   ): PlaceAutocompleteRequest = {
-    val __obj = js.Dynamic.literal(input = input, sessiontoken = sessiontoken)
-    if (components != null) __obj.updateDynamic("components")(components)
-    if (language != null) __obj.updateDynamic("language")(language)
+    val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any], sessiontoken = sessiontoken.asInstanceOf[js.Any])
+    if (components != null) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
-    if (!js.isUndefined(strictbounds)) __obj.updateDynamic("strictbounds")(strictbounds)
-    if (types != null) __obj.updateDynamic("types")(types)
+    if (!js.isUndefined(strictbounds)) __obj.updateDynamic("strictbounds")(strictbounds.asInstanceOf[js.Any])
+    if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaceAutocompleteRequest]
   }
 }

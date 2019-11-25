@@ -13,7 +13,7 @@ trait ParseRequestLineResult extends js.Object {
 object ParseRequestLineResult {
   @scala.inline
   def apply(method: String, protocol: String, uri: String): ParseRequestLineResult = {
-    val __obj = js.Dynamic.literal(method = method, protocol = protocol, uri = uri)
+    val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ParseRequestLineResult]
   }

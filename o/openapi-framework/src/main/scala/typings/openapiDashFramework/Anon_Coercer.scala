@@ -27,11 +27,11 @@ object Anon_Coercer {
     securityHandler: IOpenAPISecurityHandler = null
   ): Anon_Coercer = {
     val __obj = js.Dynamic.literal()
-    if (coercer != null) __obj.updateDynamic("coercer")(coercer)
-    if (defaultSetter != null) __obj.updateDynamic("defaultSetter")(defaultSetter)
-    if (requestValidator != null) __obj.updateDynamic("requestValidator")(requestValidator)
-    if (responseValidator != null) __obj.updateDynamic("responseValidator")(responseValidator)
-    if (securityHandler != null) __obj.updateDynamic("securityHandler")(securityHandler)
+    if (coercer != null) __obj.updateDynamic("coercer")(coercer.asInstanceOf[js.Any])
+    if (defaultSetter != null) __obj.updateDynamic("defaultSetter")(defaultSetter.asInstanceOf[js.Any])
+    if (requestValidator != null) __obj.updateDynamic("requestValidator")(requestValidator.asInstanceOf[js.Any])
+    if (responseValidator != null) __obj.updateDynamic("responseValidator")(responseValidator.asInstanceOf[js.Any])
+    if (securityHandler != null) __obj.updateDynamic("securityHandler")(securityHandler.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Coercer]
   }
 }

@@ -11,7 +11,7 @@ trait Anon_PlaybackRate extends js.Object {
 object Anon_PlaybackRate {
   @scala.inline
   def apply(playbackRate: Double): Anon_PlaybackRate = {
-    val __obj = js.Dynamic.literal(playbackRate = playbackRate)
+    val __obj = js.Dynamic.literal(playbackRate = playbackRate.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_PlaybackRate]
   }

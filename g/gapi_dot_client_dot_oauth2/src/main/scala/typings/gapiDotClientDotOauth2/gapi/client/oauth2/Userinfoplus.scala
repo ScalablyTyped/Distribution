@@ -45,17 +45,17 @@ object Userinfoplus {
     verified_email: js.UndefOr[Boolean] = js.undefined
   ): Userinfoplus = {
     val __obj = js.Dynamic.literal()
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (family_name != null) __obj.updateDynamic("family_name")(family_name)
-    if (gender != null) __obj.updateDynamic("gender")(gender)
-    if (given_name != null) __obj.updateDynamic("given_name")(given_name)
-    if (hd != null) __obj.updateDynamic("hd")(hd)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (link != null) __obj.updateDynamic("link")(link)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (picture != null) __obj.updateDynamic("picture")(picture)
-    if (!js.isUndefined(verified_email)) __obj.updateDynamic("verified_email")(verified_email)
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (family_name != null) __obj.updateDynamic("family_name")(family_name.asInstanceOf[js.Any])
+    if (gender != null) __obj.updateDynamic("gender")(gender.asInstanceOf[js.Any])
+    if (given_name != null) __obj.updateDynamic("given_name")(given_name.asInstanceOf[js.Any])
+    if (hd != null) __obj.updateDynamic("hd")(hd.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (picture != null) __obj.updateDynamic("picture")(picture.asInstanceOf[js.Any])
+    if (!js.isUndefined(verified_email)) __obj.updateDynamic("verified_email")(verified_email.asInstanceOf[js.Any])
     __obj.asInstanceOf[Userinfoplus]
   }
 }

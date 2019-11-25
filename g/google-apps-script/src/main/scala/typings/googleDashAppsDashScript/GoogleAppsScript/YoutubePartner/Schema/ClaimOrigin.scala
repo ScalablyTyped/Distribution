@@ -12,7 +12,7 @@ object ClaimOrigin {
   @scala.inline
   def apply(source: String = null): ClaimOrigin = {
     val __obj = js.Dynamic.literal()
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClaimOrigin]
   }
 }

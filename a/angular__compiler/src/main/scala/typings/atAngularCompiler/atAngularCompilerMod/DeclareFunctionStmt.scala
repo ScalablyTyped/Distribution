@@ -1,7 +1,6 @@
 package typings.atAngularCompiler.atAngularCompilerMod
 
 import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.FnParam
-import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.StmtModifier
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,21 +25,21 @@ class DeclareFunctionStmt protected ()
     params: js.Array[FnParam],
     statements: js.Array[typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Statement],
     `type`: Null,
-    modifiers: js.Array[StmtModifier]
+    modifiers: js.Array[typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.StmtModifier]
   ) = this()
   def this(
     name: String,
     params: js.Array[FnParam],
     statements: js.Array[typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Statement],
     `type`: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Type,
-    modifiers: js.Array[StmtModifier]
+    modifiers: js.Array[typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.StmtModifier]
   ) = this()
   def this(
     name: String,
     params: js.Array[FnParam],
     statements: js.Array[typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Statement],
     `type`: Null,
-    modifiers: js.Array[StmtModifier],
+    modifiers: js.Array[typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.StmtModifier],
     sourceSpan: typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseSourceSpan
   ) = this()
   def this(
@@ -56,7 +55,7 @@ class DeclareFunctionStmt protected ()
     params: js.Array[FnParam],
     statements: js.Array[typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Statement],
     `type`: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.Type,
-    modifiers: js.Array[StmtModifier],
+    modifiers: js.Array[typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.StmtModifier],
     sourceSpan: typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseSourceSpan
   ) = this()
   def this(

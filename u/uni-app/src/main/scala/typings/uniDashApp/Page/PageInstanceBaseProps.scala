@@ -16,7 +16,7 @@ object PageInstanceBaseProps {
   @scala.inline
   def apply[D /* <: AnyObject */](route: String = null): PageInstanceBaseProps[D] = {
     val __obj = js.Dynamic.literal()
-    if (route != null) __obj.updateDynamic("route")(route)
+    if (route != null) __obj.updateDynamic("route")(route.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageInstanceBaseProps[D]]
   }
 }

@@ -16,8 +16,8 @@ object Options {
   @scala.inline
   def apply(caseSensitive: js.UndefOr[Boolean] = js.undefined, direction: desc = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive)
-    if (direction != null) __obj.updateDynamic("direction")(direction)
+    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive.asInstanceOf[js.Any])
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

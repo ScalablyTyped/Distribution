@@ -19,8 +19,8 @@ object FieldsOptions {
   @scala.inline
   def apply(fields: js.Array[String] = null, validate: js.UndefOr[Boolean] = js.undefined): FieldsOptions = {
     val __obj = js.Dynamic.literal()
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate)
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldsOptions]
   }
 }

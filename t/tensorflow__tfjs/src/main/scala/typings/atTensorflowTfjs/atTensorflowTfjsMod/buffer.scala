@@ -1,7 +1,6 @@
 package typings.atTensorflowTfjs.atTensorflowTfjsMod
 
 import typings.atTensorflowTfjs.atTensorflowTfjsStrings.float32
-import typings.atTensorflowTfjsDashCore.distTypesMod.Rank
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,8 +33,8 @@ object buffer extends js.Object {
     * zeros.
     */
   /** @doc {heading: 'Tensors', subheading: 'Creation'} */
-  def apply[R /* <: Rank */](
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
+  def apply[R /* <: typings.atTensorflowTfjsDashCore.distTypesMod.Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
   ): typings.atTensorflowTfjsDashCore.distTensorMod.TensorBuffer[R, float32] = js.native
 }
 

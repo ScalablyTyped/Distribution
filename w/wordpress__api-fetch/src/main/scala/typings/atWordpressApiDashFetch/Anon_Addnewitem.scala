@@ -57,13 +57,13 @@ object Anon_Addnewitem {
     popular_items: String = null,
     separate_items_with_commas: String = null
   ): Anon_Addnewitem = {
-    val __obj = js.Dynamic.literal(add_new_item = add_new_item, all_items = all_items, back_to_items = back_to_items, edit_item = edit_item, items_list = items_list, items_list_navigation = items_list_navigation, menu_name = menu_name, most_used = most_used, name = name, name_admin_bar = name_admin_bar, new_item_name = new_item_name, no_terms = no_terms, not_found = not_found, search_items = search_items, singular_name = singular_name, update_item = update_item, view_item = view_item)
-    if (add_or_remove_items != null) __obj.updateDynamic("add_or_remove_items")(add_or_remove_items)
-    if (choose_from_most_used != null) __obj.updateDynamic("choose_from_most_used")(choose_from_most_used)
-    if (parent_item != null) __obj.updateDynamic("parent_item")(parent_item)
-    if (parent_item_colon != null) __obj.updateDynamic("parent_item_colon")(parent_item_colon)
-    if (popular_items != null) __obj.updateDynamic("popular_items")(popular_items)
-    if (separate_items_with_commas != null) __obj.updateDynamic("separate_items_with_commas")(separate_items_with_commas)
+    val __obj = js.Dynamic.literal(add_new_item = add_new_item.asInstanceOf[js.Any], all_items = all_items.asInstanceOf[js.Any], back_to_items = back_to_items.asInstanceOf[js.Any], edit_item = edit_item.asInstanceOf[js.Any], items_list = items_list.asInstanceOf[js.Any], items_list_navigation = items_list_navigation.asInstanceOf[js.Any], menu_name = menu_name.asInstanceOf[js.Any], most_used = most_used.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], name_admin_bar = name_admin_bar.asInstanceOf[js.Any], new_item_name = new_item_name.asInstanceOf[js.Any], no_terms = no_terms.asInstanceOf[js.Any], not_found = not_found.asInstanceOf[js.Any], search_items = search_items.asInstanceOf[js.Any], singular_name = singular_name.asInstanceOf[js.Any], update_item = update_item.asInstanceOf[js.Any], view_item = view_item.asInstanceOf[js.Any])
+    if (add_or_remove_items != null) __obj.updateDynamic("add_or_remove_items")(add_or_remove_items.asInstanceOf[js.Any])
+    if (choose_from_most_used != null) __obj.updateDynamic("choose_from_most_used")(choose_from_most_used.asInstanceOf[js.Any])
+    if (parent_item != null) __obj.updateDynamic("parent_item")(parent_item.asInstanceOf[js.Any])
+    if (parent_item_colon != null) __obj.updateDynamic("parent_item_colon")(parent_item_colon.asInstanceOf[js.Any])
+    if (popular_items != null) __obj.updateDynamic("popular_items")(popular_items.asInstanceOf[js.Any])
+    if (separate_items_with_commas != null) __obj.updateDynamic("separate_items_with_commas")(separate_items_with_commas.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Addnewitem]
   }
 }

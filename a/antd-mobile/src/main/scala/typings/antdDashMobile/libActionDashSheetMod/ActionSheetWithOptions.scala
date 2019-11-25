@@ -24,16 +24,16 @@ object ActionSheetWithOptions {
     title: ReactNode = null,
     transitionName: String = null
   ): ActionSheetWithOptions = {
-    val __obj = js.Dynamic.literal(options = options)
-    if (badges != null) __obj.updateDynamic("badges")(badges)
+    val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
+    if (badges != null) __obj.updateDynamic("badges")(badges.asInstanceOf[js.Any])
     if (cancelButtonIndex != null) __obj.updateDynamic("cancelButtonIndex")(cancelButtonIndex.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (destructiveButtonIndex != null) __obj.updateDynamic("destructiveButtonIndex")(destructiveButtonIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(maskClosable)) __obj.updateDynamic("maskClosable")(maskClosable)
-    if (maskTransitionName != null) __obj.updateDynamic("maskTransitionName")(maskTransitionName)
+    if (!js.isUndefined(maskClosable)) __obj.updateDynamic("maskClosable")(maskClosable.asInstanceOf[js.Any])
+    if (maskTransitionName != null) __obj.updateDynamic("maskTransitionName")(maskTransitionName.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (transitionName != null) __obj.updateDynamic("transitionName")(transitionName)
+    if (transitionName != null) __obj.updateDynamic("transitionName")(transitionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionSheetWithOptions]
   }
 }

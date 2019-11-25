@@ -14,8 +14,8 @@ trait Text extends Token {
 object Text {
   @scala.inline
   def apply(text: String, `type`: text): Text = {
-    val __obj = js.Dynamic.literal(text = text)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Text]
   }
 }

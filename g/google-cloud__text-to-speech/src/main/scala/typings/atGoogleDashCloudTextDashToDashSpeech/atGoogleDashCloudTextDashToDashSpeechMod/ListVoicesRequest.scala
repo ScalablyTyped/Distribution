@@ -12,7 +12,7 @@ object ListVoicesRequest {
   @scala.inline
   def apply(languageCode: String = null): ListVoicesRequest = {
     val __obj = js.Dynamic.literal()
-    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode)
+    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListVoicesRequest]
   }
 }

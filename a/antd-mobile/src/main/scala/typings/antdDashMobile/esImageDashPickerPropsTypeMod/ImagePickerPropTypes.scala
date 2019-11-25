@@ -45,18 +45,18 @@ object ImagePickerPropTypes {
     style: js.Object = null
   ): ImagePickerPropTypes = {
     val __obj = js.Dynamic.literal()
-    if (accept != null) __obj.updateDynamic("accept")(accept)
-    if (capture != null) __obj.updateDynamic("capture")(capture)
-    if (!js.isUndefined(disableDelete)) __obj.updateDynamic("disableDelete")(disableDelete)
-    if (files != null) __obj.updateDynamic("files")(files)
+    if (accept != null) __obj.updateDynamic("accept")(accept.asInstanceOf[js.Any])
+    if (capture != null) __obj.updateDynamic("capture")(capture.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableDelete)) __obj.updateDynamic("disableDelete")(disableDelete.asInstanceOf[js.Any])
+    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
     if (onAddImageClick != null) __obj.updateDynamic("onAddImageClick")(js.Any.fromFunction0(onAddImageClick))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction3(onChange))
     if (onFail != null) __obj.updateDynamic("onFail")(js.Any.fromFunction1(onFail))
     if (onImageClick != null) __obj.updateDynamic("onImageClick")(js.Any.fromFunction2(onImageClick))
-    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImagePickerPropTypes]
   }
 }

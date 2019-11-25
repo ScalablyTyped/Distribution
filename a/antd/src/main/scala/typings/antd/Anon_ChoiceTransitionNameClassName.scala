@@ -33,7 +33,7 @@ object Anon_ChoiceTransitionNameClassName {
     size: Requireable[small | default | large],
     transitionName: Requireable[String]
   ): Anon_ChoiceTransitionNameClassName = {
-    val __obj = js.Dynamic.literal(choiceTransitionName = choiceTransitionName, className = className, id = id, notFoundContent = notFoundContent, optionLabelProp = optionLabelProp, prefixCls = prefixCls, showSearch = showSearch, size = size, transitionName = transitionName)
+    val __obj = js.Dynamic.literal(choiceTransitionName = choiceTransitionName.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], notFoundContent = notFoundContent.asInstanceOf[js.Any], optionLabelProp = optionLabelProp.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], showSearch = showSearch.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], transitionName = transitionName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ChoiceTransitionNameClassName]
   }

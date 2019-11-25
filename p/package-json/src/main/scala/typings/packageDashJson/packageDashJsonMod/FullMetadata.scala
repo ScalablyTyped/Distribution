@@ -43,20 +43,20 @@ object FullMetadata {
     repository: Anon_Type = null,
     users: StringDictionary[Boolean] = null
   ): FullMetadata = {
-    val __obj = js.Dynamic.literal(_id = _id, _rev = _rev, modified = modified, name = name, time = time, versions = versions)
-    __obj.updateDynamic("dist-tags")(`dist-tags`)
-    if (author != null) __obj.updateDynamic("author")(author)
+    val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], _rev = _rev.asInstanceOf[js.Any], modified = modified.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], versions = versions.asInstanceOf[js.Any])
+    __obj.updateDynamic("dist-tags")(`dist-tags`.asInstanceOf[js.Any])
+    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
     if (bugs != null) __obj.updateDynamic("bugs")(bugs.asInstanceOf[js.Any])
-    if (contributors != null) __obj.updateDynamic("contributors")(contributors)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (homepage != null) __obj.updateDynamic("homepage")(homepage)
-    if (keywords != null) __obj.updateDynamic("keywords")(keywords)
-    if (license != null) __obj.updateDynamic("license")(license)
-    if (maintainers != null) __obj.updateDynamic("maintainers")(maintainers)
-    if (readme != null) __obj.updateDynamic("readme")(readme)
-    if (readmeFilename != null) __obj.updateDynamic("readmeFilename")(readmeFilename)
-    if (repository != null) __obj.updateDynamic("repository")(repository)
-    if (users != null) __obj.updateDynamic("users")(users)
+    if (contributors != null) __obj.updateDynamic("contributors")(contributors.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (homepage != null) __obj.updateDynamic("homepage")(homepage.asInstanceOf[js.Any])
+    if (keywords != null) __obj.updateDynamic("keywords")(keywords.asInstanceOf[js.Any])
+    if (license != null) __obj.updateDynamic("license")(license.asInstanceOf[js.Any])
+    if (maintainers != null) __obj.updateDynamic("maintainers")(maintainers.asInstanceOf[js.Any])
+    if (readme != null) __obj.updateDynamic("readme")(readme.asInstanceOf[js.Any])
+    if (readmeFilename != null) __obj.updateDynamic("readmeFilename")(readmeFilename.asInstanceOf[js.Any])
+    if (repository != null) __obj.updateDynamic("repository")(repository.asInstanceOf[js.Any])
+    if (users != null) __obj.updateDynamic("users")(users.asInstanceOf[js.Any])
     __obj.asInstanceOf[FullMetadata]
   }
 }

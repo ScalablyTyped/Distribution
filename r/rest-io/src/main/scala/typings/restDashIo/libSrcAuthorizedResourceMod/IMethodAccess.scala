@@ -21,7 +21,7 @@ object IMethodAccess {
     getById: js.Array[String],
     update: js.Array[String]
   ): IMethodAccess = {
-    val __obj = js.Dynamic.literal(create = create, del = del, getAll = getAll, getById = getById, update = update)
+    val __obj = js.Dynamic.literal(create = create.asInstanceOf[js.Any], del = del.asInstanceOf[js.Any], getAll = getAll.asInstanceOf[js.Any], getById = getById.asInstanceOf[js.Any], update = update.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IMethodAccess]
   }

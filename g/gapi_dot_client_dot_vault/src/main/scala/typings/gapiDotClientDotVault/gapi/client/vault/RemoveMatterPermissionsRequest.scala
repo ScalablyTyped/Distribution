@@ -13,7 +13,7 @@ object RemoveMatterPermissionsRequest {
   @scala.inline
   def apply(accountId: String = null): RemoveMatterPermissionsRequest = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId)
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveMatterPermissionsRequest]
   }
 }

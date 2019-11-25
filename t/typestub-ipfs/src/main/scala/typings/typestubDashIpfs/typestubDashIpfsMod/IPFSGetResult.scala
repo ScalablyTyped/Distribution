@@ -27,7 +27,7 @@ object IPFSGetResult {
     size: Double,
     `type`: file | String
   ): IPFSGetResult = {
-    val __obj = js.Dynamic.literal(content = content, depth = depth, hash = hash, name = name, path = path, size = size)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPFSGetResult]
   }

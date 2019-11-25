@@ -42,12 +42,12 @@ object UploadSettings {
     showFileDetails: js.UndefOr[Boolean] = js.undefined
   ): UploadSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowMultipleFile)) __obj.updateDynamic("allowMultipleFile")(allowMultipleFile)
-    if (!js.isUndefined(autoUpload)) __obj.updateDynamic("autoUpload")(autoUpload)
-    if (dialogAction != null) __obj.updateDynamic("dialogAction")(dialogAction)
-    if (dialogPosition != null) __obj.updateDynamic("dialogPosition")(dialogPosition)
+    if (!js.isUndefined(allowMultipleFile)) __obj.updateDynamic("allowMultipleFile")(allowMultipleFile.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoUpload)) __obj.updateDynamic("autoUpload")(autoUpload.asInstanceOf[js.Any])
+    if (dialogAction != null) __obj.updateDynamic("dialogAction")(dialogAction.asInstanceOf[js.Any])
+    if (dialogPosition != null) __obj.updateDynamic("dialogPosition")(dialogPosition.asInstanceOf[js.Any])
     if (maxFileSize != null) __obj.updateDynamic("maxFileSize")(maxFileSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(showFileDetails)) __obj.updateDynamic("showFileDetails")(showFileDetails)
+    if (!js.isUndefined(showFileDetails)) __obj.updateDynamic("showFileDetails")(showFileDetails.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadSettings]
   }
 }

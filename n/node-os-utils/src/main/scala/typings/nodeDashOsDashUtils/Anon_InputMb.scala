@@ -12,7 +12,7 @@ trait Anon_InputMb extends js.Object {
 object Anon_InputMb {
   @scala.inline
   def apply(inputMb: Double, outputMb: Double): Anon_InputMb = {
-    val __obj = js.Dynamic.literal(inputMb = inputMb, outputMb = outputMb)
+    val __obj = js.Dynamic.literal(inputMb = inputMb.asInstanceOf[js.Any], outputMb = outputMb.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_InputMb]
   }

@@ -32,11 +32,11 @@ object ThumbStartEventArgs {
     `type`: String = null
   ): ThumbStartEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent)
-    if (scrollData != null) __obj.updateDynamic("scrollData")(scrollData)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent.asInstanceOf[js.Any])
+    if (scrollData != null) __obj.updateDynamic("scrollData")(scrollData.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThumbStartEventArgs]
   }
 }

@@ -37,10 +37,10 @@ object INewContact {
     work: js.Array[Anon_Employer] = null
   ): INewContact = {
     val __obj = js.Dynamic.literal()
-    if (emails != null) __obj.updateDynamic("emails")(emails)
-    if (first_name != null) __obj.updateDynamic("first_name")(first_name)
-    if (last_name != null) __obj.updateDynamic("last_name")(last_name)
-    if (work != null) __obj.updateDynamic("work")(work)
+    if (emails != null) __obj.updateDynamic("emails")(emails.asInstanceOf[js.Any])
+    if (first_name != null) __obj.updateDynamic("first_name")(first_name.asInstanceOf[js.Any])
+    if (last_name != null) __obj.updateDynamic("last_name")(last_name.asInstanceOf[js.Any])
+    if (work != null) __obj.updateDynamic("work")(work.asInstanceOf[js.Any])
     __obj.asInstanceOf[INewContact]
   }
 }

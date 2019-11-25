@@ -15,9 +15,9 @@ trait DirectExchange extends Exchange {
 object DirectExchange {
   @scala.inline
   def apply(bindings: js.Array[DirectBinding], exchange: String, `type`: direct, options: js.Object = null): DirectExchange = {
-    val __obj = js.Dynamic.literal(bindings = bindings, exchange = exchange)
-    __obj.updateDynamic("type")(`type`)
-    if (options != null) __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(bindings = bindings.asInstanceOf[js.Any], exchange = exchange.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectExchange]
   }
 }

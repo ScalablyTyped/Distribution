@@ -15,8 +15,8 @@ object ILinkProps {
   @scala.inline
   def apply(href: String = null, target: String = null): ILinkProps = {
     val __obj = js.Dynamic.literal()
-    if (href != null) __obj.updateDynamic("href")(href)
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILinkProps]
   }
 }

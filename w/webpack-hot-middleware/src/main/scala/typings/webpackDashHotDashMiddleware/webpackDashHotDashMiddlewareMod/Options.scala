@@ -23,8 +23,8 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (heartbeat != null) __obj.updateDynamic("heartbeat")(heartbeat.asInstanceOf[js.Any])
     if (log != null) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (!js.isUndefined(reload)) __obj.updateDynamic("reload")(reload)
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (!js.isUndefined(reload)) __obj.updateDynamic("reload")(reload.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

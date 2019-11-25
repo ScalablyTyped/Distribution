@@ -35,15 +35,15 @@ object VastCompanionAd {
     staticResource: String = null,
     `type`: String = null
   ): VastCompanionAd = {
-    val __obj = js.Dynamic.literal(companionClickTrackingURLTemplates = companionClickTrackingURLTemplates, height = height, trackingEvents = trackingEvents, width = width)
-    if (altText != null) __obj.updateDynamic("altText")(altText)
-    if (companionClickThroughURLTemplate != null) __obj.updateDynamic("companionClickThroughURLTemplate")(companionClickThroughURLTemplate)
-    if (companionClickTrackingURLTemplate != null) __obj.updateDynamic("companionClickTrackingURLTemplate")(companionClickTrackingURLTemplate)
-    if (htmlResource != null) __obj.updateDynamic("htmlResource")(htmlResource)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (iframeResource != null) __obj.updateDynamic("iframeResource")(iframeResource)
-    if (staticResource != null) __obj.updateDynamic("staticResource")(staticResource)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(companionClickTrackingURLTemplates = companionClickTrackingURLTemplates.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], trackingEvents = trackingEvents.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    if (altText != null) __obj.updateDynamic("altText")(altText.asInstanceOf[js.Any])
+    if (companionClickThroughURLTemplate != null) __obj.updateDynamic("companionClickThroughURLTemplate")(companionClickThroughURLTemplate.asInstanceOf[js.Any])
+    if (companionClickTrackingURLTemplate != null) __obj.updateDynamic("companionClickTrackingURLTemplate")(companionClickTrackingURLTemplate.asInstanceOf[js.Any])
+    if (htmlResource != null) __obj.updateDynamic("htmlResource")(htmlResource.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (iframeResource != null) __obj.updateDynamic("iframeResource")(iframeResource.asInstanceOf[js.Any])
+    if (staticResource != null) __obj.updateDynamic("staticResource")(staticResource.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[VastCompanionAd]
   }
 }

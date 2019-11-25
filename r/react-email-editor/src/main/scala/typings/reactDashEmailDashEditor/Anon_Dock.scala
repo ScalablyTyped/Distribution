@@ -12,7 +12,7 @@ trait Anon_Dock extends js.Object {
 object Anon_Dock {
   @scala.inline
   def apply(dock: DockPosition): Anon_Dock = {
-    val __obj = js.Dynamic.literal(dock = dock)
+    val __obj = js.Dynamic.literal(dock = dock.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Dock]
   }

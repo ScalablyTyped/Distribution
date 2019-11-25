@@ -13,7 +13,7 @@ object HistoryOptions {
   @scala.inline
   def apply(httpCache: js.UndefOr[Boolean] = js.undefined, limit: Int | Double = null): HistoryOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(httpCache)) __obj.updateDynamic("httpCache")(httpCache)
+    if (!js.isUndefined(httpCache)) __obj.updateDynamic("httpCache")(httpCache.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistoryOptions]
   }

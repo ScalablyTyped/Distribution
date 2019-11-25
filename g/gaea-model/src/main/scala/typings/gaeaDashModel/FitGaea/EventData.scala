@@ -26,10 +26,10 @@ object EventData {
     eventData: EventActionJumpUrl | EventActionCall | EventActionEvent = null,
     typeData: EventTriggerEvent = null
   ): EventData = {
-    val __obj = js.Dynamic.literal(event = event, eventIndex = eventIndex, typeIndex = typeIndex)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], eventIndex = eventIndex.asInstanceOf[js.Any], typeIndex = typeIndex.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (eventData != null) __obj.updateDynamic("eventData")(eventData.asInstanceOf[js.Any])
-    if (typeData != null) __obj.updateDynamic("typeData")(typeData)
+    if (typeData != null) __obj.updateDynamic("typeData")(typeData.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventData]
   }
 }

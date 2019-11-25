@@ -51,10 +51,10 @@ object ValidationOptions {
     ]) = null
   ): ValidationOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(always)) __obj.updateDynamic("always")(always)
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (!js.isUndefined(each)) __obj.updateDynamic("each")(each)
-    if (groups != null) __obj.updateDynamic("groups")(groups)
+    if (!js.isUndefined(always)) __obj.updateDynamic("always")(always.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (!js.isUndefined(each)) __obj.updateDynamic("each")(each.asInstanceOf[js.Any])
+    if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidationOptions]
   }

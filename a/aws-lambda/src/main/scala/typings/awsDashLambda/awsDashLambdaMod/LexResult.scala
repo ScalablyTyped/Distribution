@@ -13,8 +13,8 @@ trait LexResult extends js.Object {
 object LexResult {
   @scala.inline
   def apply(dialogAction: LexDialogAction, sessionAttributes: StringDictionary[String] = null): LexResult = {
-    val __obj = js.Dynamic.literal(dialogAction = dialogAction)
-    if (sessionAttributes != null) __obj.updateDynamic("sessionAttributes")(sessionAttributes)
+    val __obj = js.Dynamic.literal(dialogAction = dialogAction.asInstanceOf[js.Any])
+    if (sessionAttributes != null) __obj.updateDynamic("sessionAttributes")(sessionAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[LexResult]
   }
 }

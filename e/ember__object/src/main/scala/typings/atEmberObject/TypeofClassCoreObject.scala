@@ -22,14 +22,14 @@ trait TypeofClassCoreObject
      with Instantiable1[/* properties */ js.Object, CoreObject] {
   var isClass: Boolean = js.native
   var isMethod: Boolean = js.native
-  def create[Class /* <: /* import warning: ImportType.apply Failed type conversion: typeof CoreObject */ js.Any */](`this`: Class): InstanceType[Class] = js.native
-  def create[Class /* <: /* import warning: ImportType.apply Failed type conversion: typeof CoreObject */ js.Any */, T1 /* <: EmberInstanceArguments[UnwrapComputedPropertySetters[InstanceType[Class]]] */](`this`: Class, arg1: T1 with (ThisType[T1 with InstanceType[Class]])): InstanceType[Class] with T1 = js.native
-  def create[Class /* <: /* import warning: ImportType.apply Failed type conversion: typeof CoreObject */ js.Any */, T1 /* <: EmberInstanceArguments[UnwrapComputedPropertySetters[InstanceType[Class]]] */, T2 /* <: EmberInstanceArguments[UnwrapComputedPropertySetters[InstanceType[Class]]] */](
+  def create[Class /* <: /* import warning: importer.ImportType#apply Failed type conversion: typeof CoreObject */ js.Any */](`this`: Class): InstanceType[Class] = js.native
+  def create[Class /* <: /* import warning: importer.ImportType#apply Failed type conversion: typeof CoreObject */ js.Any */, T1 /* <: EmberInstanceArguments[UnwrapComputedPropertySetters[InstanceType[Class]]] */](`this`: Class, arg1: T1 with (ThisType[T1 with InstanceType[Class]])): InstanceType[Class] with T1 = js.native
+  def create[Class /* <: /* import warning: importer.ImportType#apply Failed type conversion: typeof CoreObject */ js.Any */, T1 /* <: EmberInstanceArguments[UnwrapComputedPropertySetters[InstanceType[Class]]] */, T2 /* <: EmberInstanceArguments[UnwrapComputedPropertySetters[InstanceType[Class]]] */](
     `this`: Class,
     arg1: T1 with (ThisType[T1 with InstanceType[Class]]),
     arg2: T2 with (ThisType[T2 with InstanceType[Class]])
   ): InstanceType[Class] with T1 with T2 = js.native
-  def create[Class /* <: /* import warning: ImportType.apply Failed type conversion: typeof CoreObject */ js.Any */, T1 /* <: EmberInstanceArguments[UnwrapComputedPropertySetters[InstanceType[Class]]] */, T2 /* <: EmberInstanceArguments[UnwrapComputedPropertySetters[InstanceType[Class]]] */, T3 /* <: EmberInstanceArguments[UnwrapComputedPropertySetters[InstanceType[Class]]] */](
+  def create[Class /* <: /* import warning: importer.ImportType#apply Failed type conversion: typeof CoreObject */ js.Any */, T1 /* <: EmberInstanceArguments[UnwrapComputedPropertySetters[InstanceType[Class]]] */, T2 /* <: EmberInstanceArguments[UnwrapComputedPropertySetters[InstanceType[Class]]] */, T3 /* <: EmberInstanceArguments[UnwrapComputedPropertySetters[InstanceType[Class]]] */](
     `this`: Class,
     arg1: T1 with (ThisType[T1 with InstanceType[Class]]),
     arg2: T2 with (ThisType[T2 with InstanceType[Class]]),

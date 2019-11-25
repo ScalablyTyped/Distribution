@@ -32,9 +32,9 @@ object GetItemOutput {
     ConsumedCapacity: _UnmarshalledConsumedCapacity = null,
     Item: StringDictionary[_UnmarshalledAttributeValue] = null
   ): GetItemOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (ConsumedCapacity != null) __obj.updateDynamic("ConsumedCapacity")(ConsumedCapacity)
-    if (Item != null) __obj.updateDynamic("Item")(Item)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (ConsumedCapacity != null) __obj.updateDynamic("ConsumedCapacity")(ConsumedCapacity.asInstanceOf[js.Any])
+    if (Item != null) __obj.updateDynamic("Item")(Item.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetItemOutput]
   }
 }

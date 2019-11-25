@@ -106,23 +106,23 @@ object Request {
     upload: Anon_Onabort[TContext] = null,
     user: String = null
   ): Request[TContext] = {
-    val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], url = url)
-    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary)
+    val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (onabort != null) __obj.updateDynamic("onabort")(js.Any.fromFunction1(onabort))
     if (onerror != null) __obj.updateDynamic("onerror")(js.Any.fromFunction1(onerror))
     if (onload != null) __obj.updateDynamic("onload")(js.Any.fromFunction1(onload))
     if (onprogress != null) __obj.updateDynamic("onprogress")(js.Any.fromFunction1(onprogress))
     if (onreadystatechange != null) __obj.updateDynamic("onreadystatechange")(js.Any.fromFunction1(onreadystatechange))
     if (ontimeout != null) __obj.updateDynamic("ontimeout")(js.Any.fromFunction1(ontimeout))
-    if (overrideMimeType != null) __obj.updateDynamic("overrideMimeType")(overrideMimeType)
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (!js.isUndefined(synchronous)) __obj.updateDynamic("synchronous")(synchronous)
+    if (overrideMimeType != null) __obj.updateDynamic("overrideMimeType")(overrideMimeType.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (!js.isUndefined(synchronous)) __obj.updateDynamic("synchronous")(synchronous.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (upload != null) __obj.updateDynamic("upload")(upload)
-    if (user != null) __obj.updateDynamic("user")(user)
+    if (upload != null) __obj.updateDynamic("upload")(upload.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[Request[TContext]]
   }
 }

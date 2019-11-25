@@ -31,7 +31,7 @@ object Color {
     rgb: js.Tuple3[Double, Double, Double],
     rgba: js.Tuple4[Double, Double, Double, Double]
   ): Color = {
-    val __obj = js.Dynamic.literal(cmyk = cmyk, cmyka = cmyka, hex = hex, hsl = hsl, hsla = hsla, hsv = hsv, hsva = hsva, keyword = keyword, rgb = rgb, rgba = rgba)
+    val __obj = js.Dynamic.literal(cmyk = cmyk.asInstanceOf[js.Any], cmyka = cmyka.asInstanceOf[js.Any], hex = hex.asInstanceOf[js.Any], hsl = hsl.asInstanceOf[js.Any], hsla = hsla.asInstanceOf[js.Any], hsv = hsv.asInstanceOf[js.Any], hsva = hsva.asInstanceOf[js.Any], keyword = keyword.asInstanceOf[js.Any], rgb = rgb.asInstanceOf[js.Any], rgba = rgba.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Color]
   }

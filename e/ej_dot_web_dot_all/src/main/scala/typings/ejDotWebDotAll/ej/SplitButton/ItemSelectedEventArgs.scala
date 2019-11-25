@@ -40,13 +40,13 @@ object ItemSelectedEventArgs {
     `type`: String = null
   ): ItemSelectedEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (menuId != null) __obj.updateDynamic("menuId")(menuId)
-    if (menuText != null) __obj.updateDynamic("menuText")(menuText)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (selectedItem != null) __obj.updateDynamic("selectedItem")(selectedItem)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (menuId != null) __obj.updateDynamic("menuId")(menuId.asInstanceOf[js.Any])
+    if (menuText != null) __obj.updateDynamic("menuText")(menuText.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (selectedItem != null) __obj.updateDynamic("selectedItem")(selectedItem.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemSelectedEventArgs]
   }
 }

@@ -26,13 +26,13 @@ object Anon_AbortTransactionOnError {
     useUTC: js.UndefOr[Boolean] = js.undefined
   ): Anon_AbortTransactionOnError = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(abortTransactionOnError)) __obj.updateDynamic("abortTransactionOnError")(abortTransactionOnError)
-    if (appName != null) __obj.updateDynamic("appName")(appName)
-    if (!js.isUndefined(encrypt)) __obj.updateDynamic("encrypt")(encrypt)
-    if (instanceName != null) __obj.updateDynamic("instanceName")(instanceName)
-    if (tdsVersion != null) __obj.updateDynamic("tdsVersion")(tdsVersion)
-    if (!js.isUndefined(trustedConnection)) __obj.updateDynamic("trustedConnection")(trustedConnection)
-    if (!js.isUndefined(useUTC)) __obj.updateDynamic("useUTC")(useUTC)
+    if (!js.isUndefined(abortTransactionOnError)) __obj.updateDynamic("abortTransactionOnError")(abortTransactionOnError.asInstanceOf[js.Any])
+    if (appName != null) __obj.updateDynamic("appName")(appName.asInstanceOf[js.Any])
+    if (!js.isUndefined(encrypt)) __obj.updateDynamic("encrypt")(encrypt.asInstanceOf[js.Any])
+    if (instanceName != null) __obj.updateDynamic("instanceName")(instanceName.asInstanceOf[js.Any])
+    if (tdsVersion != null) __obj.updateDynamic("tdsVersion")(tdsVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(trustedConnection)) __obj.updateDynamic("trustedConnection")(trustedConnection.asInstanceOf[js.Any])
+    if (!js.isUndefined(useUTC)) __obj.updateDynamic("useUTC")(useUTC.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AbortTransactionOnError]
   }
 }

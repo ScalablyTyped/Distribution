@@ -16,8 +16,8 @@ object ElementDataDefinition {
   @scala.inline
   def apply(id: String = null, position: Position = null): ElementDataDefinition = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (position != null) __obj.updateDynamic("position")(position)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementDataDefinition]
   }
 }

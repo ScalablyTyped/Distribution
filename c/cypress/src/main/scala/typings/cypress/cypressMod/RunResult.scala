@@ -49,9 +49,9 @@ object RunResult {
     error: String = null,
     video: String = null
   ): RunResult = {
-    val __obj = js.Dynamic.literal(hooks = hooks, reporter = reporter, reporterStats = reporterStats, screenshots = screenshots, shouldUploadVideo = shouldUploadVideo, spec = spec, stats = stats, tests = tests)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (video != null) __obj.updateDynamic("video")(video)
+    val __obj = js.Dynamic.literal(hooks = hooks.asInstanceOf[js.Any], reporter = reporter.asInstanceOf[js.Any], reporterStats = reporterStats.asInstanceOf[js.Any], screenshots = screenshots.asInstanceOf[js.Any], shouldUploadVideo = shouldUploadVideo.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any], tests = tests.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (video != null) __obj.updateDynamic("video")(video.asInstanceOf[js.Any])
     __obj.asInstanceOf[RunResult]
   }
 }

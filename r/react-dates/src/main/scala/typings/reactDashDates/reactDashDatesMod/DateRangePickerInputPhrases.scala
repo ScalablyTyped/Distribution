@@ -19,9 +19,9 @@ object DateRangePickerInputPhrases {
     keyboardNavigationInstructions: String = null
   ): DateRangePickerInputPhrases = {
     val __obj = js.Dynamic.literal()
-    if (clearDates != null) __obj.updateDynamic("clearDates")(clearDates)
-    if (focusStartDate != null) __obj.updateDynamic("focusStartDate")(focusStartDate)
-    if (keyboardNavigationInstructions != null) __obj.updateDynamic("keyboardNavigationInstructions")(keyboardNavigationInstructions)
+    if (clearDates != null) __obj.updateDynamic("clearDates")(clearDates.asInstanceOf[js.Any])
+    if (focusStartDate != null) __obj.updateDynamic("focusStartDate")(focusStartDate.asInstanceOf[js.Any])
+    if (keyboardNavigationInstructions != null) __obj.updateDynamic("keyboardNavigationInstructions")(keyboardNavigationInstructions.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateRangePickerInputPhrases]
   }
 }

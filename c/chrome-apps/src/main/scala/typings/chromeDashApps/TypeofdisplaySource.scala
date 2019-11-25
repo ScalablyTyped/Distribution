@@ -75,7 +75,7 @@ object TypeofdisplaySource {
     startSession: js.Function,
     terminateSession: js.Function
   ): TypeofdisplaySource = {
-    val __obj = js.Dynamic.literal(AuthenticationMethod = AuthenticationMethod, ErrorType = ErrorType, SinkState = SinkState, getAvailableSinks = getAvailableSinks, onSessionErrorOccured = onSessionErrorOccured, onSessionTerminated = onSessionTerminated, onSinksUpdated = onSinksUpdated, requestAuthentication = requestAuthentication, startSession = startSession, terminateSession = terminateSession)
+    val __obj = js.Dynamic.literal(AuthenticationMethod = AuthenticationMethod.asInstanceOf[js.Any], ErrorType = ErrorType.asInstanceOf[js.Any], SinkState = SinkState.asInstanceOf[js.Any], getAvailableSinks = getAvailableSinks.asInstanceOf[js.Any], onSessionErrorOccured = onSessionErrorOccured.asInstanceOf[js.Any], onSessionTerminated = onSessionTerminated.asInstanceOf[js.Any], onSinksUpdated = onSinksUpdated.asInstanceOf[js.Any], requestAuthentication = requestAuthentication.asInstanceOf[js.Any], startSession = startSession.asInstanceOf[js.Any], terminateSession = terminateSession.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeofdisplaySource]
   }

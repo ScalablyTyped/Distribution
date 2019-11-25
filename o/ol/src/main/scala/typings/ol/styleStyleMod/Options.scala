@@ -28,12 +28,12 @@ object Options {
     zIndex: Int | Double = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (geometry != null) __obj.updateDynamic("geometry")(geometry.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image)
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
     if (renderer != null) __obj.updateDynamic("renderer")(js.Any.fromFunction2(renderer))
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

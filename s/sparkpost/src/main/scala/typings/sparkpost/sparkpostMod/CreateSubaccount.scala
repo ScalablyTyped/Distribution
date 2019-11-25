@@ -26,9 +26,9 @@ object CreateSubaccount {
     ip_pool: String = null,
     key_valid_ips: js.Array[String] = null
   ): CreateSubaccount = {
-    val __obj = js.Dynamic.literal(key_grants = key_grants, key_label = key_label, name = name)
-    if (ip_pool != null) __obj.updateDynamic("ip_pool")(ip_pool)
-    if (key_valid_ips != null) __obj.updateDynamic("key_valid_ips")(key_valid_ips)
+    val __obj = js.Dynamic.literal(key_grants = key_grants.asInstanceOf[js.Any], key_label = key_label.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (ip_pool != null) __obj.updateDynamic("ip_pool")(ip_pool.asInstanceOf[js.Any])
+    if (key_valid_ips != null) __obj.updateDynamic("key_valid_ips")(key_valid_ips.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSubaccount]
   }
 }

@@ -20,9 +20,9 @@ object Anon_Common {
   /* envName */ StringDictionary[js.Any] = null,
     forceEnv: String = null
   ): Anon_Common = {
-    val __obj = js.Dynamic.literal(common = common)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (forceEnv != null) __obj.updateDynamic("forceEnv")(forceEnv)
+    val __obj = js.Dynamic.literal(common = common.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (forceEnv != null) __obj.updateDynamic("forceEnv")(forceEnv.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Common]
   }
 }

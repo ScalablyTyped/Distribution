@@ -16,7 +16,7 @@ object EdgeSearchEngineCustom {
   @scala.inline
   def apply(edgeSearchEngineOpenSearchXmlUrl: String = null): EdgeSearchEngineCustom = {
     val __obj = js.Dynamic.literal()
-    if (edgeSearchEngineOpenSearchXmlUrl != null) __obj.updateDynamic("edgeSearchEngineOpenSearchXmlUrl")(edgeSearchEngineOpenSearchXmlUrl)
+    if (edgeSearchEngineOpenSearchXmlUrl != null) __obj.updateDynamic("edgeSearchEngineOpenSearchXmlUrl")(edgeSearchEngineOpenSearchXmlUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[EdgeSearchEngineCustom]
   }
 }

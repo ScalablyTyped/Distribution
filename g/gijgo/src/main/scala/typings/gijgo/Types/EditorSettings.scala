@@ -31,9 +31,9 @@ object EditorSettings {
     if (changed != null) __obj.updateDynamic("changed")(js.Any.fromFunction1(changed))
     if (changing != null) __obj.updateDynamic("changing")(js.Any.fromFunction1(changing))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (iconsLibrary != null) __obj.updateDynamic("iconsLibrary")(iconsLibrary)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (uiLibrary != null) __obj.updateDynamic("uiLibrary")(uiLibrary)
+    if (iconsLibrary != null) __obj.updateDynamic("iconsLibrary")(iconsLibrary.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
+    if (uiLibrary != null) __obj.updateDynamic("uiLibrary")(uiLibrary.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorSettings]
   }

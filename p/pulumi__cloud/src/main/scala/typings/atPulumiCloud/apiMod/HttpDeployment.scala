@@ -21,7 +21,7 @@ trait HttpDeployment extends js.Object {
 object HttpDeployment {
   @scala.inline
   def apply(customDomainNames: js.Array[Output[String]], url: Output[String]): HttpDeployment = {
-    val __obj = js.Dynamic.literal(customDomainNames = customDomainNames, url = url)
+    val __obj = js.Dynamic.literal(customDomainNames = customDomainNames.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HttpDeployment]
   }

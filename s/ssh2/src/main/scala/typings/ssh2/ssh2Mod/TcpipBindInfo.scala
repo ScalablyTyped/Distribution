@@ -14,7 +14,7 @@ trait TcpipBindInfo extends js.Object {
 object TcpipBindInfo {
   @scala.inline
   def apply(bindAddr: String, bindPort: Double): TcpipBindInfo = {
-    val __obj = js.Dynamic.literal(bindAddr = bindAddr, bindPort = bindPort)
+    val __obj = js.Dynamic.literal(bindAddr = bindAddr.asInstanceOf[js.Any], bindPort = bindPort.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TcpipBindInfo]
   }

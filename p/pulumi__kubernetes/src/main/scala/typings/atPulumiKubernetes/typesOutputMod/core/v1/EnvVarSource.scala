@@ -37,7 +37,7 @@ object EnvVarSource {
     resourceFieldRef: ResourceFieldSelector,
     secretKeyRef: SecretKeySelector
   ): EnvVarSource = {
-    val __obj = js.Dynamic.literal(configMapKeyRef = configMapKeyRef, fieldRef = fieldRef, resourceFieldRef = resourceFieldRef, secretKeyRef = secretKeyRef)
+    val __obj = js.Dynamic.literal(configMapKeyRef = configMapKeyRef.asInstanceOf[js.Any], fieldRef = fieldRef.asInstanceOf[js.Any], resourceFieldRef = resourceFieldRef.asInstanceOf[js.Any], secretKeyRef = secretKeyRef.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EnvVarSource]
   }

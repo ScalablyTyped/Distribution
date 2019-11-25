@@ -13,8 +13,8 @@ trait Score extends js.Object {
 object Score {
   @scala.inline
   def apply(detail: Anon_Maintenance, `final`: Double): Score = {
-    val __obj = js.Dynamic.literal(detail = detail)
-    __obj.updateDynamic("final")(`final`)
+    val __obj = js.Dynamic.literal(detail = detail.asInstanceOf[js.Any])
+    __obj.updateDynamic("final")(`final`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Score]
   }
 }

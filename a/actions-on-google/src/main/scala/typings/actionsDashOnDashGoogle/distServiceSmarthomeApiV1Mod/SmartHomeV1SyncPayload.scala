@@ -19,10 +19,10 @@ object SmartHomeV1SyncPayload {
     debugString: String = null,
     errorCode: String = null
   ): SmartHomeV1SyncPayload = {
-    val __obj = js.Dynamic.literal(devices = devices)
-    if (agentUserId != null) __obj.updateDynamic("agentUserId")(agentUserId)
-    if (debugString != null) __obj.updateDynamic("debugString")(debugString)
-    if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode)
+    val __obj = js.Dynamic.literal(devices = devices.asInstanceOf[js.Any])
+    if (agentUserId != null) __obj.updateDynamic("agentUserId")(agentUserId.asInstanceOf[js.Any])
+    if (debugString != null) __obj.updateDynamic("debugString")(debugString.asInstanceOf[js.Any])
+    if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SmartHomeV1SyncPayload]
   }
 }

@@ -34,16 +34,16 @@ object PokemonVariation {
     weight_eu: String = null,
     weight_us: String = null
   ): PokemonVariation = {
-    val __obj = js.Dynamic.literal(names = names, types = types)
-    if (abilities != null) __obj.updateDynamic("abilities")(abilities)
-    if (base_stats != null) __obj.updateDynamic("base_stats")(base_stats)
-    if (condition != null) __obj.updateDynamic("condition")(condition)
-    if (height_eu != null) __obj.updateDynamic("height_eu")(height_eu)
-    if (height_us != null) __obj.updateDynamic("height_us")(height_us)
-    if (image_suffix != null) __obj.updateDynamic("image_suffix")(image_suffix)
-    if (pokeathlon_stats != null) __obj.updateDynamic("pokeathlon_stats")(pokeathlon_stats)
-    if (weight_eu != null) __obj.updateDynamic("weight_eu")(weight_eu)
-    if (weight_us != null) __obj.updateDynamic("weight_us")(weight_us)
+    val __obj = js.Dynamic.literal(names = names.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
+    if (abilities != null) __obj.updateDynamic("abilities")(abilities.asInstanceOf[js.Any])
+    if (base_stats != null) __obj.updateDynamic("base_stats")(base_stats.asInstanceOf[js.Any])
+    if (condition != null) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
+    if (height_eu != null) __obj.updateDynamic("height_eu")(height_eu.asInstanceOf[js.Any])
+    if (height_us != null) __obj.updateDynamic("height_us")(height_us.asInstanceOf[js.Any])
+    if (image_suffix != null) __obj.updateDynamic("image_suffix")(image_suffix.asInstanceOf[js.Any])
+    if (pokeathlon_stats != null) __obj.updateDynamic("pokeathlon_stats")(pokeathlon_stats.asInstanceOf[js.Any])
+    if (weight_eu != null) __obj.updateDynamic("weight_eu")(weight_eu.asInstanceOf[js.Any])
+    if (weight_us != null) __obj.updateDynamic("weight_us")(weight_us.asInstanceOf[js.Any])
     __obj.asInstanceOf[PokemonVariation]
   }
 }

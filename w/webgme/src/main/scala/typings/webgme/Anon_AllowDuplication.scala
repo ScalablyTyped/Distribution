@@ -32,7 +32,7 @@ trait Anon_AllowDuplication extends js.Object {
 object Anon_AllowDuplication {
   @scala.inline
   def apply(allowDuplication: Boolean, basePaths: js.Array[String], defaultProject: String, enable: Boolean): Anon_AllowDuplication = {
-    val __obj = js.Dynamic.literal(allowDuplication = allowDuplication, basePaths = basePaths, defaultProject = defaultProject, enable = enable)
+    val __obj = js.Dynamic.literal(allowDuplication = allowDuplication.asInstanceOf[js.Any], basePaths = basePaths.asInstanceOf[js.Any], defaultProject = defaultProject.asInstanceOf[js.Any], enable = enable.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AllowDuplication]
   }

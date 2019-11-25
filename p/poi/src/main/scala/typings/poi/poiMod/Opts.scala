@@ -14,9 +14,9 @@ trait Opts
 object Opts {
   @scala.inline
   def apply(mode: Mode, `type`: String, StringDictionary: /* k */ StringDictionary[js.Any] = null): Opts = {
-    val __obj = js.Dynamic.literal(mode = mode)
-    __obj.updateDynamic("type")(`type`)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Opts]
   }
 }

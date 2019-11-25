@@ -16,7 +16,7 @@ object ListDeviceStatesResponse {
   @scala.inline
   def apply(deviceStates: js.Array[DeviceState] = null): ListDeviceStatesResponse = {
     val __obj = js.Dynamic.literal()
-    if (deviceStates != null) __obj.updateDynamic("deviceStates")(deviceStates)
+    if (deviceStates != null) __obj.updateDynamic("deviceStates")(deviceStates.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDeviceStatesResponse]
   }
 }

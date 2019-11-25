@@ -17,8 +17,8 @@ object SplitterSettings {
   @scala.inline
   def apply(index: String = null, position: String = null): SplitterSettings = {
     val __obj = js.Dynamic.literal()
-    if (index != null) __obj.updateDynamic("index")(index)
-    if (position != null) __obj.updateDynamic("position")(position)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[SplitterSettings]
   }
 }

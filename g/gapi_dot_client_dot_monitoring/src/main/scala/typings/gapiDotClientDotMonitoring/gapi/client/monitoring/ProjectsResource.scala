@@ -21,7 +21,7 @@ object ProjectsResource {
     monitoredResourceDescriptors: MonitoredResourceDescriptorsResource,
     timeSeries: TimeSeriesResource
   ): ProjectsResource = {
-    val __obj = js.Dynamic.literal(collectdTimeSeries = collectdTimeSeries, groups = groups, metricDescriptors = metricDescriptors, monitoredResourceDescriptors = monitoredResourceDescriptors, timeSeries = timeSeries)
+    val __obj = js.Dynamic.literal(collectdTimeSeries = collectdTimeSeries.asInstanceOf[js.Any], groups = groups.asInstanceOf[js.Any], metricDescriptors = metricDescriptors.asInstanceOf[js.Any], monitoredResourceDescriptors = monitoredResourceDescriptors.asInstanceOf[js.Any], timeSeries = timeSeries.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ProjectsResource]
   }

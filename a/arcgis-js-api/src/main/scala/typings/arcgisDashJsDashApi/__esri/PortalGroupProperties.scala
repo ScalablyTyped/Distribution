@@ -95,15 +95,15 @@ object PortalGroupProperties {
     val __obj = js.Dynamic.literal()
     if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
     if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(isInvitationOnly)) __obj.updateDynamic("isInvitationOnly")(isInvitationOnly)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(isInvitationOnly)) __obj.updateDynamic("isInvitationOnly")(isInvitationOnly.asInstanceOf[js.Any])
     if (modified != null) __obj.updateDynamic("modified")(modified.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (portal != null) __obj.updateDynamic("portal")(portal)
-    if (snippet != null) __obj.updateDynamic("snippet")(snippet)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (portal != null) __obj.updateDynamic("portal")(portal.asInstanceOf[js.Any])
+    if (snippet != null) __obj.updateDynamic("snippet")(snippet.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[PortalGroupProperties]
   }
 }

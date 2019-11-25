@@ -14,9 +14,9 @@ object ValidateOptsBase {
   @scala.inline
   def apply(message: String = null, msg: String = null, `type`: String = null): ValidateOptsBase = {
     val __obj = js.Dynamic.literal()
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (msg != null) __obj.updateDynamic("msg")(msg)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (msg != null) __obj.updateDynamic("msg")(msg.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidateOptsBase]
   }
 }

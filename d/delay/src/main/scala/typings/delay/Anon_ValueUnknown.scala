@@ -15,7 +15,7 @@ object Anon_ValueUnknown {
   @scala.inline
   def apply(value: js.Any = null): Anon_ValueUnknown = {
     val __obj = js.Dynamic.literal()
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ValueUnknown]
   }
 }

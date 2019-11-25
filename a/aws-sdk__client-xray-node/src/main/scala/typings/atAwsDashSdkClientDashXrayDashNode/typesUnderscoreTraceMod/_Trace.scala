@@ -30,7 +30,7 @@ object _Trace {
   ): _Trace = {
     val __obj = js.Dynamic.literal()
     if (Duration != null) __obj.updateDynamic("Duration")(Duration.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id)
+    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
     if (Segments != null) __obj.updateDynamic("Segments")(Segments.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Trace]
   }

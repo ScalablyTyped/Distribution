@@ -21,8 +21,8 @@ object PutSecretOptions {
     digest: String = null,
     version: Int | Double = null
   ): PutSecretOptions = {
-    val __obj = js.Dynamic.literal(context = context, name = name, secret = secret)
-    if (digest != null) __obj.updateDynamic("digest")(digest)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any])
+    if (digest != null) __obj.updateDynamic("digest")(digest.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutSecretOptions]
   }

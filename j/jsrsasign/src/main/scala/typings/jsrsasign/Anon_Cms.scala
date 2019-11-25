@@ -11,7 +11,7 @@ trait Anon_Cms extends js.Object {
 object Anon_Cms {
   @scala.inline
   def apply(cms: String): Anon_Cms = {
-    val __obj = js.Dynamic.literal(cms = cms)
+    val __obj = js.Dynamic.literal(cms = cms.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Cms]
   }

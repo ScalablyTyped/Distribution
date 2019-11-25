@@ -15,9 +15,9 @@ trait PublicKeyAuthMethodData extends _AuthMethodData {
 object PublicKeyAuthMethodData {
   @scala.inline
   def apply(key: Buffer, keyAlgo: String, blob: Buffer = null, signature: Buffer = null): PublicKeyAuthMethodData = {
-    val __obj = js.Dynamic.literal(key = key, keyAlgo = keyAlgo)
-    if (blob != null) __obj.updateDynamic("blob")(blob)
-    if (signature != null) __obj.updateDynamic("signature")(signature)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], keyAlgo = keyAlgo.asInstanceOf[js.Any])
+    if (blob != null) __obj.updateDynamic("blob")(blob.asInstanceOf[js.Any])
+    if (signature != null) __obj.updateDynamic("signature")(signature.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublicKeyAuthMethodData]
   }
 }

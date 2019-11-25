@@ -16,8 +16,8 @@ trait SchemaDescription extends js.Object {
 object SchemaDescription {
   @scala.inline
   def apply(fields: js.Object, label: String, meta: js.Object, tests: js.Array[Anon_Name], `type`: String): SchemaDescription = {
-    val __obj = js.Dynamic.literal(fields = fields, label = label, meta = meta, tests = tests)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], tests = tests.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDescription]
   }
 }

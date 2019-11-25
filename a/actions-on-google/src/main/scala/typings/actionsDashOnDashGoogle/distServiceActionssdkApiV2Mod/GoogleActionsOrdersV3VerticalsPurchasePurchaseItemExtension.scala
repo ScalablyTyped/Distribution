@@ -73,17 +73,17 @@ object GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtension {
     userVisibleStatusLabel: String = null
   ): GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtension = {
     val __obj = js.Dynamic.literal()
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (fulfillmentInfo != null) __obj.updateDynamic("fulfillmentInfo")(fulfillmentInfo)
-    if (itemOptions != null) __obj.updateDynamic("itemOptions")(itemOptions)
-    if (productDetails != null) __obj.updateDynamic("productDetails")(productDetails)
-    if (productId != null) __obj.updateDynamic("productId")(productId)
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (fulfillmentInfo != null) __obj.updateDynamic("fulfillmentInfo")(fulfillmentInfo.asInstanceOf[js.Any])
+    if (itemOptions != null) __obj.updateDynamic("itemOptions")(itemOptions.asInstanceOf[js.Any])
+    if (productDetails != null) __obj.updateDynamic("productDetails")(productDetails.asInstanceOf[js.Any])
+    if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
     if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
-    if (returnsInfo != null) __obj.updateDynamic("returnsInfo")(returnsInfo)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (unitMeasure != null) __obj.updateDynamic("unitMeasure")(unitMeasure)
-    if (userVisibleStatusLabel != null) __obj.updateDynamic("userVisibleStatusLabel")(userVisibleStatusLabel)
+    if (returnsInfo != null) __obj.updateDynamic("returnsInfo")(returnsInfo.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (unitMeasure != null) __obj.updateDynamic("unitMeasure")(unitMeasure.asInstanceOf[js.Any])
+    if (userVisibleStatusLabel != null) __obj.updateDynamic("userVisibleStatusLabel")(userVisibleStatusLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtension]
   }
 }

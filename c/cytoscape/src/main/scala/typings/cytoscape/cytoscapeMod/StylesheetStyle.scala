@@ -14,7 +14,7 @@ trait StylesheetStyle extends Stylesheet {
 object StylesheetStyle {
   @scala.inline
   def apply(selector: String, style: Node | Edge | typings.cytoscape.cytoscapeMod.Css.Core): StylesheetStyle = {
-    val __obj = js.Dynamic.literal(selector = selector, style = style.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(selector = selector.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StylesheetStyle]
   }

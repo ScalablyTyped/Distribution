@@ -20,10 +20,10 @@ object DrawerSectionProps {
     style: Anon_ContainerIconItem = null,
     title: String = null
   ): DrawerSectionProps = {
-    val __obj = js.Dynamic.literal(items = items)
-    if (!js.isUndefined(divider)) __obj.updateDynamic("divider")(divider)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (title != null) __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
+    if (!js.isUndefined(divider)) __obj.updateDynamic("divider")(divider.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawerSectionProps]
   }
 }

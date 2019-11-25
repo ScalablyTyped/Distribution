@@ -33,7 +33,7 @@ object DirectionsWaypoint {
   def apply(location: String | LatLng | Place = null, stopover: js.UndefOr[Boolean] = js.undefined): DirectionsWaypoint = {
     val __obj = js.Dynamic.literal()
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (!js.isUndefined(stopover)) __obj.updateDynamic("stopover")(stopover)
+    if (!js.isUndefined(stopover)) __obj.updateDynamic("stopover")(stopover.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectionsWaypoint]
   }
 }

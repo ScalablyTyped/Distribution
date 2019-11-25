@@ -13,7 +13,7 @@ object Anon_Searchset {
   @scala.inline
   def apply(`type`: searchset): Anon_Searchset = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Searchset]
   }
 }

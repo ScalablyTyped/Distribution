@@ -16,8 +16,8 @@ trait RateLimitExceeded extends Base {
 object RateLimitExceeded {
   @scala.inline
   def apply(details: String, instance: String, status: `429`, title: `Rate Limit Exceeded`, `type`: String): RateLimitExceeded = {
-    val __obj = js.Dynamic.literal(details = details, instance = instance, status = status, title = title)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(details = details.asInstanceOf[js.Any], instance = instance.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RateLimitExceeded]
   }
 }

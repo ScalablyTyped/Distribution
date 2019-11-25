@@ -21,11 +21,11 @@ object Anon_Ca {
     host: String = null,
     key: String = null
   ): Anon_Ca = {
-    val __obj = js.Dynamic.literal(rejectUnauthorized = rejectUnauthorized)
-    if (ca != null) __obj.updateDynamic("ca")(ca)
-    if (cert != null) __obj.updateDynamic("cert")(cert)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (key != null) __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(rejectUnauthorized = rejectUnauthorized.asInstanceOf[js.Any])
+    if (ca != null) __obj.updateDynamic("ca")(ca.asInstanceOf[js.Any])
+    if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Ca]
   }
 }

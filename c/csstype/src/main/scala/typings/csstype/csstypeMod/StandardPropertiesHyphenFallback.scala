@@ -15,8 +15,8 @@ object StandardPropertiesHyphenFallback {
     StandardShorthandPropertiesHyphenFallback: StandardShorthandPropertiesHyphenFallback[TLength] = null
   ): StandardPropertiesHyphenFallback[TLength] = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StandardLonghandPropertiesHyphenFallback)
-    js.Dynamic.global.Object.assign(__obj, StandardShorthandPropertiesHyphenFallback)
+    if (StandardLonghandPropertiesHyphenFallback != null) js.Dynamic.global.Object.assign(__obj, StandardLonghandPropertiesHyphenFallback)
+    if (StandardShorthandPropertiesHyphenFallback != null) js.Dynamic.global.Object.assign(__obj, StandardShorthandPropertiesHyphenFallback)
     __obj.asInstanceOf[StandardPropertiesHyphenFallback[TLength]]
   }
 }

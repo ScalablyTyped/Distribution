@@ -14,7 +14,7 @@ trait CalendarEventUpdated extends AppsScriptEvent {
 object CalendarEventUpdated {
   @scala.inline
   def apply(authMode: AuthMode, calendarId: String, triggerUid: String, user: User): CalendarEventUpdated = {
-    val __obj = js.Dynamic.literal(authMode = authMode, calendarId = calendarId, triggerUid = triggerUid, user = user)
+    val __obj = js.Dynamic.literal(authMode = authMode.asInstanceOf[js.Any], calendarId = calendarId.asInstanceOf[js.Any], triggerUid = triggerUid.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CalendarEventUpdated]
   }

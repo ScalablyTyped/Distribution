@@ -13,15 +13,16 @@ object SuccessPayloadObject {
   @scala.inline
   def apply(
     id: String | Double,
-    result: js.Any,
     error: SerializerError = null,
     method: String = null,
-    params: js.Any = null
+    params: js.Any = null,
+    result: js.Any = null
   ): SuccessPayloadObject = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], result = result)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (params != null) __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuccessPayloadObject]
   }
 }

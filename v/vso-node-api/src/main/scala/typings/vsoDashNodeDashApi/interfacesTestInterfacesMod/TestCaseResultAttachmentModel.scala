@@ -15,7 +15,7 @@ trait TestCaseResultAttachmentModel extends js.Object {
 object TestCaseResultAttachmentModel {
   @scala.inline
   def apply(id: Double, iterationId: Double, name: String, size: Double, url: String): TestCaseResultAttachmentModel = {
-    val __obj = js.Dynamic.literal(id = id, iterationId = iterationId, name = name, size = size, url = url)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], iterationId = iterationId.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TestCaseResultAttachmentModel]
   }

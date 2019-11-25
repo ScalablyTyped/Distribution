@@ -1,5 +1,6 @@
 package typings.actionsDashOnDashGoogle.distServiceSmarthomeApiV1Mod
 
+import typings.actionsDashOnDashGoogle.Anon_ActiondevicesDISCONNECT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,4 +12,31 @@ import scala.scalajs.js.annotation._
   - typings.actionsDashOnDashGoogle.distServiceSmarthomeApiV1Mod.SmartHomeV1DisconnectRequest
 */
 trait SmartHomeV1Request extends js.Object
+
+object SmartHomeV1Request {
+  @scala.inline
+  def SmartHomeV1SyncRequest(inputs: js.Array[SmartHomeV1SyncRequestInputs], requestId: String): SmartHomeV1Request = {
+    val __obj = js.Dynamic.literal(inputs = inputs.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[SmartHomeV1Request]
+  }
+  @scala.inline
+  def SmartHomeV1QueryRequest(inputs: js.Array[SmartHomeV1QueryRequestInputs], requestId: String): SmartHomeV1Request = {
+    val __obj = js.Dynamic.literal(inputs = inputs.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[SmartHomeV1Request]
+  }
+  @scala.inline
+  def SmartHomeV1ExecuteRequest(inputs: js.Array[SmartHomeV1ExecuteRequestInputs], requestId: String): SmartHomeV1Request = {
+    val __obj = js.Dynamic.literal(inputs = inputs.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[SmartHomeV1Request]
+  }
+  @scala.inline
+  def SmartHomeV1DisconnectRequest(inputs: js.Array[Anon_ActiondevicesDISCONNECT], requestId: String): SmartHomeV1Request = {
+    val __obj = js.Dynamic.literal(inputs = inputs.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[SmartHomeV1Request]
+  }
+}
 

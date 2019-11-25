@@ -61,14 +61,14 @@ object Anon_Dimensions {
     sort: String = null,
     `start-index`: Int | Double = null
   ): Anon_Dimensions = {
-    val __obj = js.Dynamic.literal(ids = ids, metrics = metrics)
-    __obj.updateDynamic("end-date")(`end-date`)
-    __obj.updateDynamic("start-date")(`start-date`)
-    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (filters != null) __obj.updateDynamic("filters")(filters)
+    val __obj = js.Dynamic.literal(ids = ids.asInstanceOf[js.Any], metrics = metrics.asInstanceOf[js.Any])
+    __obj.updateDynamic("end-date")(`end-date`.asInstanceOf[js.Any])
+    __obj.updateDynamic("start-date")(`start-date`.asInstanceOf[js.Any])
+    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
     if (`max-results` != null) __obj.updateDynamic("max-results")(`max-results`.asInstanceOf[js.Any])
-    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     if (`start-index` != null) __obj.updateDynamic("start-index")(`start-index`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Dimensions]
   }

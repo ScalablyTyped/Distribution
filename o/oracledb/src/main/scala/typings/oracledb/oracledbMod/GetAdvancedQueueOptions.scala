@@ -19,7 +19,7 @@ object GetAdvancedQueueOptions {
   @scala.inline
   def apply(payloadType: String = null): GetAdvancedQueueOptions = {
     val __obj = js.Dynamic.literal()
-    if (payloadType != null) __obj.updateDynamic("payloadType")(payloadType)
+    if (payloadType != null) __obj.updateDynamic("payloadType")(payloadType.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAdvancedQueueOptions]
   }
 }

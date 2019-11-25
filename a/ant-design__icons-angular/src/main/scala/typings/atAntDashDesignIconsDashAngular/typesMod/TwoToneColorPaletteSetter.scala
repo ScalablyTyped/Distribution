@@ -12,8 +12,8 @@ trait TwoToneColorPaletteSetter extends js.Object {
 object TwoToneColorPaletteSetter {
   @scala.inline
   def apply(primaryColor: String, secondaryColor: String = null): TwoToneColorPaletteSetter = {
-    val __obj = js.Dynamic.literal(primaryColor = primaryColor)
-    if (secondaryColor != null) __obj.updateDynamic("secondaryColor")(secondaryColor)
+    val __obj = js.Dynamic.literal(primaryColor = primaryColor.asInstanceOf[js.Any])
+    if (secondaryColor != null) __obj.updateDynamic("secondaryColor")(secondaryColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[TwoToneColorPaletteSetter]
   }
 }

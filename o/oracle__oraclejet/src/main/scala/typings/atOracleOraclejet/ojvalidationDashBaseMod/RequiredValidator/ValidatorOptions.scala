@@ -15,9 +15,9 @@ object ValidatorOptions {
   @scala.inline
   def apply(hint: String = null, messageDetail: String = null, messageSummary: String = null): ValidatorOptions = {
     val __obj = js.Dynamic.literal()
-    if (hint != null) __obj.updateDynamic("hint")(hint)
-    if (messageDetail != null) __obj.updateDynamic("messageDetail")(messageDetail)
-    if (messageSummary != null) __obj.updateDynamic("messageSummary")(messageSummary)
+    if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
+    if (messageDetail != null) __obj.updateDynamic("messageDetail")(messageDetail.asInstanceOf[js.Any])
+    if (messageSummary != null) __obj.updateDynamic("messageSummary")(messageSummary.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidatorOptions]
   }
 }

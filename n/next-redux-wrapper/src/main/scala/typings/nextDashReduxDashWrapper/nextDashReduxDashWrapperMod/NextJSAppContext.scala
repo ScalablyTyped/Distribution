@@ -23,7 +23,7 @@ object NextJSAppContext {
     ctx: NextJSContext[_, AnyAction],
     router: Router
   ): NextJSAppContext = {
-    val __obj = js.Dynamic.literal(AppTree = AppTree.asInstanceOf[js.Any], Component = Component.asInstanceOf[js.Any], ctx = ctx, router = router)
+    val __obj = js.Dynamic.literal(AppTree = AppTree.asInstanceOf[js.Any], Component = Component.asInstanceOf[js.Any], ctx = ctx.asInstanceOf[js.Any], router = router.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NextJSAppContext]
   }

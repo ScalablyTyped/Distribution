@@ -12,7 +12,7 @@ trait Anon_Chunk extends js.Object {
 object Anon_Chunk {
   @scala.inline
   def apply(chunk: js.Any, encoding: java.lang.String): Anon_Chunk = {
-    val __obj = js.Dynamic.literal(chunk = chunk, encoding = encoding)
+    val __obj = js.Dynamic.literal(chunk = chunk.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Chunk]
   }

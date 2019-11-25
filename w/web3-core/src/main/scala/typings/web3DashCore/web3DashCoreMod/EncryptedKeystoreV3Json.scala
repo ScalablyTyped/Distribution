@@ -15,7 +15,7 @@ trait EncryptedKeystoreV3Json extends js.Object {
 object EncryptedKeystoreV3Json {
   @scala.inline
   def apply(address: String, crypto: Anon_Cipher, id: String, version: Double): EncryptedKeystoreV3Json = {
-    val __obj = js.Dynamic.literal(address = address, crypto = crypto, id = id, version = version)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], crypto = crypto.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EncryptedKeystoreV3Json]
   }

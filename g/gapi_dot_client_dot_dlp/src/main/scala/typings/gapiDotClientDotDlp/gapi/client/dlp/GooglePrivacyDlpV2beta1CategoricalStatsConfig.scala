@@ -18,7 +18,7 @@ object GooglePrivacyDlpV2beta1CategoricalStatsConfig {
   @scala.inline
   def apply(field: GooglePrivacyDlpV2beta1FieldId = null): GooglePrivacyDlpV2beta1CategoricalStatsConfig = {
     val __obj = js.Dynamic.literal()
-    if (field != null) __obj.updateDynamic("field")(field)
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1CategoricalStatsConfig]
   }
 }

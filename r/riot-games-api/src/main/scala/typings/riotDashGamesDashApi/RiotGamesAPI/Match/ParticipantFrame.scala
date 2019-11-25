@@ -31,7 +31,7 @@ object ParticipantFrame {
     totalGold: Double,
     xp: Double
   ): ParticipantFrame = {
-    val __obj = js.Dynamic.literal(currentGold = currentGold, dominionScore = dominionScore, jungleMinionsKilled = jungleMinionsKilled, level = level, minionsKilled = minionsKilled, participantId = participantId, position = position, teamScore = teamScore, totalGold = totalGold, xp = xp)
+    val __obj = js.Dynamic.literal(currentGold = currentGold.asInstanceOf[js.Any], dominionScore = dominionScore.asInstanceOf[js.Any], jungleMinionsKilled = jungleMinionsKilled.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], minionsKilled = minionsKilled.asInstanceOf[js.Any], participantId = participantId.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], teamScore = teamScore.asInstanceOf[js.Any], totalGold = totalGold.asInstanceOf[js.Any], xp = xp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ParticipantFrame]
   }

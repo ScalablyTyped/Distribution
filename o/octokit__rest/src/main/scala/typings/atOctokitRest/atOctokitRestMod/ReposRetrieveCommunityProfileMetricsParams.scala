@@ -12,7 +12,7 @@ trait ReposRetrieveCommunityProfileMetricsParams extends js.Object {
 object ReposRetrieveCommunityProfileMetricsParams {
   @scala.inline
   def apply(owner: String, repo: String): ReposRetrieveCommunityProfileMetricsParams = {
-    val __obj = js.Dynamic.literal(owner = owner, repo = repo)
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReposRetrieveCommunityProfileMetricsParams]
   }

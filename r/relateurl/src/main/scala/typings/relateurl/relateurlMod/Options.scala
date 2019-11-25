@@ -113,18 +113,18 @@ object Options {
     slashesDenoteHost: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (defaultPorts != null) __obj.updateDynamic("defaultPorts")(defaultPorts)
-    if (directoryIndexes != null) __obj.updateDynamic("directoryIndexes")(directoryIndexes)
-    if (!js.isUndefined(ignore_www)) __obj.updateDynamic("ignore_www")(ignore_www)
-    if (output != null) __obj.updateDynamic("output")(output)
-    if (rejectedSchemes != null) __obj.updateDynamic("rejectedSchemes")(rejectedSchemes)
-    if (!js.isUndefined(removeAuth)) __obj.updateDynamic("removeAuth")(removeAuth)
-    if (!js.isUndefined(removeDirectoryIndexes)) __obj.updateDynamic("removeDirectoryIndexes")(removeDirectoryIndexes)
-    if (!js.isUndefined(removeEmptyQueries)) __obj.updateDynamic("removeEmptyQueries")(removeEmptyQueries)
-    if (!js.isUndefined(removeRootTrailingSlash)) __obj.updateDynamic("removeRootTrailingSlash")(removeRootTrailingSlash)
-    if (!js.isUndefined(schemeRelative)) __obj.updateDynamic("schemeRelative")(schemeRelative)
-    if (site != null) __obj.updateDynamic("site")(site)
-    if (!js.isUndefined(slashesDenoteHost)) __obj.updateDynamic("slashesDenoteHost")(slashesDenoteHost)
+    if (defaultPorts != null) __obj.updateDynamic("defaultPorts")(defaultPorts.asInstanceOf[js.Any])
+    if (directoryIndexes != null) __obj.updateDynamic("directoryIndexes")(directoryIndexes.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignore_www)) __obj.updateDynamic("ignore_www")(ignore_www.asInstanceOf[js.Any])
+    if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
+    if (rejectedSchemes != null) __obj.updateDynamic("rejectedSchemes")(rejectedSchemes.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeAuth)) __obj.updateDynamic("removeAuth")(removeAuth.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeDirectoryIndexes)) __obj.updateDynamic("removeDirectoryIndexes")(removeDirectoryIndexes.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeEmptyQueries)) __obj.updateDynamic("removeEmptyQueries")(removeEmptyQueries.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeRootTrailingSlash)) __obj.updateDynamic("removeRootTrailingSlash")(removeRootTrailingSlash.asInstanceOf[js.Any])
+    if (!js.isUndefined(schemeRelative)) __obj.updateDynamic("schemeRelative")(schemeRelative.asInstanceOf[js.Any])
+    if (site != null) __obj.updateDynamic("site")(site.asInstanceOf[js.Any])
+    if (!js.isUndefined(slashesDenoteHost)) __obj.updateDynamic("slashesDenoteHost")(slashesDenoteHost.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

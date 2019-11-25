@@ -30,7 +30,7 @@ trait Anon_Align extends js.Object {
 object Anon_Align {
   @scala.inline
   def apply(align: integer, font: String, fontSize: Double, letterSpacing: Double, text: String): Anon_Align = {
-    val __obj = js.Dynamic.literal(align = align, font = font, fontSize = fontSize, letterSpacing = letterSpacing, text = text)
+    val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], font = font.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], letterSpacing = letterSpacing.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Align]
   }

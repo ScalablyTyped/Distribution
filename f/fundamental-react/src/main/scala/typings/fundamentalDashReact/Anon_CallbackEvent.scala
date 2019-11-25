@@ -26,9 +26,9 @@ object Anon_CallbackEvent {
     label: String = null,
     menu: ReactNode = null
   ): Anon_CallbackEvent = {
-    val __obj = js.Dynamic.literal(glyph = glyph, notificationCount = notificationCount)
+    val __obj = js.Dynamic.literal(glyph = glyph.asInstanceOf[js.Any], notificationCount = notificationCount.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))
-    if (label != null) __obj.updateDynamic("label")(label)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (menu != null) __obj.updateDynamic("menu")(menu.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CallbackEvent]
   }

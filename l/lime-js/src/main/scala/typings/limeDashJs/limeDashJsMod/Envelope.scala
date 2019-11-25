@@ -22,11 +22,11 @@ object Envelope {
     to: String = null
   ): Envelope = {
     val __obj = js.Dynamic.literal()
-    if (from != null) __obj.updateDynamic("from")(from)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (pp != null) __obj.updateDynamic("pp")(pp)
-    if (to != null) __obj.updateDynamic("to")(to)
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (pp != null) __obj.updateDynamic("pp")(pp.asInstanceOf[js.Any])
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[Envelope]
   }
 }

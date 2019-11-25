@@ -30,15 +30,15 @@ object Subscription {
     verifyToken: String = null
   ): Subscription = {
     val __obj = js.Dynamic.literal()
-    if (callbackUrl != null) __obj.updateDynamic("callbackUrl")(callbackUrl)
-    if (collection != null) __obj.updateDynamic("collection")(collection)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (notification != null) __obj.updateDynamic("notification")(notification)
-    if (operation != null) __obj.updateDynamic("operation")(operation)
-    if (updated != null) __obj.updateDynamic("updated")(updated)
-    if (userToken != null) __obj.updateDynamic("userToken")(userToken)
-    if (verifyToken != null) __obj.updateDynamic("verifyToken")(verifyToken)
+    if (callbackUrl != null) __obj.updateDynamic("callbackUrl")(callbackUrl.asInstanceOf[js.Any])
+    if (collection != null) __obj.updateDynamic("collection")(collection.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (notification != null) __obj.updateDynamic("notification")(notification.asInstanceOf[js.Any])
+    if (operation != null) __obj.updateDynamic("operation")(operation.asInstanceOf[js.Any])
+    if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
+    if (userToken != null) __obj.updateDynamic("userToken")(userToken.asInstanceOf[js.Any])
+    if (verifyToken != null) __obj.updateDynamic("verifyToken")(verifyToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[Subscription]
   }
 }

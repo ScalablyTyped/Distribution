@@ -12,7 +12,7 @@ trait JQueryStatic extends js.Object {
 object JQueryStatic {
   @scala.inline
   def apply(seamless: Static): JQueryStatic = {
-    val __obj = js.Dynamic.literal(seamless = seamless)
+    val __obj = js.Dynamic.literal(seamless = seamless.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[JQueryStatic]
   }

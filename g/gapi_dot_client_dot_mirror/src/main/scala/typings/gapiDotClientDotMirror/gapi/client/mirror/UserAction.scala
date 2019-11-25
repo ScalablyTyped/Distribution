@@ -29,8 +29,8 @@ object UserAction {
   @scala.inline
   def apply(payload: String = null, `type`: String = null): UserAction = {
     val __obj = js.Dynamic.literal()
-    if (payload != null) __obj.updateDynamic("payload")(payload)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserAction]
   }
 }

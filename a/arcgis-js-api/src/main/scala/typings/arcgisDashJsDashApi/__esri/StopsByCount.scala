@@ -30,8 +30,8 @@ object StopsByCount {
     propertyIsEnumerable: PropertyKey => Boolean,
     timeExtent: TimeExtent = null
   ): StopsByCount = {
-    val __obj = js.Dynamic.literal(constructor = constructor, count = count, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (timeExtent != null) __obj.updateDynamic("timeExtent")(timeExtent)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (timeExtent != null) __obj.updateDynamic("timeExtent")(timeExtent.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopsByCount]
   }
 }

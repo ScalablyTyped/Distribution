@@ -15,7 +15,7 @@ trait Anon_ButtonIndex extends js.Object {
 object Anon_ButtonIndex {
   @scala.inline
   def apply(Button: Double, Index: Double, Shift: Double, X: Double, Y: Double): Anon_ButtonIndex = {
-    val __obj = js.Dynamic.literal(Button = Button, Index = Index, Shift = Shift, X = X, Y = Y)
+    val __obj = js.Dynamic.literal(Button = Button.asInstanceOf[js.Any], Index = Index.asInstanceOf[js.Any], Shift = Shift.asInstanceOf[js.Any], X = X.asInstanceOf[js.Any], Y = Y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ButtonIndex]
   }

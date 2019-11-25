@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Fn_TypeAny extends js.Object {
   def apply[T](`type`: Validator[T]): Requireable[
-    /* import warning: ImportType.apply c Unsupported type mapping: 
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof any ]: T}
     */ typings.react.reactStrings.Fn_TypeAny with js.Any
   ] = js.native

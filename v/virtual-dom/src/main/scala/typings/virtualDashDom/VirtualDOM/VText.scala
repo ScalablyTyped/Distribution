@@ -13,8 +13,8 @@ trait VText extends VTree {
 object VText {
   @scala.inline
   def apply(text: String, `type`: String, version: String): VText = {
-    val __obj = js.Dynamic.literal(text = text, version = version)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[VText]
   }
 }

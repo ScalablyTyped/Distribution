@@ -25,13 +25,13 @@ object _UnmarshalledPullRequestTarget {
     sourceReference: String = null
   ): _UnmarshalledPullRequestTarget = {
     val __obj = js.Dynamic.literal()
-    if (destinationCommit != null) __obj.updateDynamic("destinationCommit")(destinationCommit)
-    if (destinationReference != null) __obj.updateDynamic("destinationReference")(destinationReference)
-    if (mergeBase != null) __obj.updateDynamic("mergeBase")(mergeBase)
-    if (mergeMetadata != null) __obj.updateDynamic("mergeMetadata")(mergeMetadata)
-    if (repositoryName != null) __obj.updateDynamic("repositoryName")(repositoryName)
-    if (sourceCommit != null) __obj.updateDynamic("sourceCommit")(sourceCommit)
-    if (sourceReference != null) __obj.updateDynamic("sourceReference")(sourceReference)
+    if (destinationCommit != null) __obj.updateDynamic("destinationCommit")(destinationCommit.asInstanceOf[js.Any])
+    if (destinationReference != null) __obj.updateDynamic("destinationReference")(destinationReference.asInstanceOf[js.Any])
+    if (mergeBase != null) __obj.updateDynamic("mergeBase")(mergeBase.asInstanceOf[js.Any])
+    if (mergeMetadata != null) __obj.updateDynamic("mergeMetadata")(mergeMetadata.asInstanceOf[js.Any])
+    if (repositoryName != null) __obj.updateDynamic("repositoryName")(repositoryName.asInstanceOf[js.Any])
+    if (sourceCommit != null) __obj.updateDynamic("sourceCommit")(sourceCommit.asInstanceOf[js.Any])
+    if (sourceReference != null) __obj.updateDynamic("sourceReference")(sourceReference.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledPullRequestTarget]
   }
 }

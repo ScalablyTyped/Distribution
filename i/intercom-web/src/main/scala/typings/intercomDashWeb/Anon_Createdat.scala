@@ -29,14 +29,14 @@ object Anon_Createdat {
     user_count: Int | Double = null,
     website: String = null
   ): Anon_Createdat = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (created_at != null) __obj.updateDynamic("created_at")(created_at.asInstanceOf[js.Any])
-    if (industry != null) __obj.updateDynamic("industry")(industry)
+    if (industry != null) __obj.updateDynamic("industry")(industry.asInstanceOf[js.Any])
     if (monthly_spend != null) __obj.updateDynamic("monthly_spend")(monthly_spend.asInstanceOf[js.Any])
-    if (plan != null) __obj.updateDynamic("plan")(plan)
+    if (plan != null) __obj.updateDynamic("plan")(plan.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (user_count != null) __obj.updateDynamic("user_count")(user_count.asInstanceOf[js.Any])
-    if (website != null) __obj.updateDynamic("website")(website)
+    if (website != null) __obj.updateDynamic("website")(website.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Createdat]
   }
 }

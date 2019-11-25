@@ -16,9 +16,9 @@ trait Anon_CleanupMode extends js.Object {
 object Anon_CleanupMode {
   @scala.inline
   def apply(view: js.Array[Node], cleanupMode: onDisconnect | none = null, viewModel: js.Object = null): Anon_CleanupMode = {
-    val __obj = js.Dynamic.literal(view = view)
+    val __obj = js.Dynamic.literal(view = view.asInstanceOf[js.Any])
     if (cleanupMode != null) __obj.updateDynamic("cleanupMode")(cleanupMode.asInstanceOf[js.Any])
-    if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel)
+    if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CleanupMode]
   }
 }

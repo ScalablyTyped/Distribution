@@ -38,7 +38,7 @@ object DraggableCoreProps {
     onStop: (/* e */ DraggableEvent, /* data */ DraggableData) => Unit | `false`,
     scale: Double
   ): DraggableCoreProps = {
-    val __obj = js.Dynamic.literal(allowAnyClick = allowAnyClick, cancel = cancel, disabled = disabled, enableUserSelectHack = enableUserSelectHack, grid = grid, handle = handle, offsetParent = offsetParent, onDrag = js.Any.fromFunction2(onDrag), onMouseDown = js.Any.fromFunction1(onMouseDown), onStart = js.Any.fromFunction2(onStart), onStop = js.Any.fromFunction2(onStop), scale = scale)
+    val __obj = js.Dynamic.literal(allowAnyClick = allowAnyClick.asInstanceOf[js.Any], cancel = cancel.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], enableUserSelectHack = enableUserSelectHack.asInstanceOf[js.Any], grid = grid.asInstanceOf[js.Any], handle = handle.asInstanceOf[js.Any], offsetParent = offsetParent.asInstanceOf[js.Any], onDrag = js.Any.fromFunction2(onDrag), onMouseDown = js.Any.fromFunction1(onMouseDown), onStart = js.Any.fromFunction2(onStart), onStop = js.Any.fromFunction2(onStop), scale = scale.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DraggableCoreProps]
   }

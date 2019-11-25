@@ -12,7 +12,7 @@ trait StoryContext extends js.Object {
 object StoryContext {
   @scala.inline
   def apply(kind: String, story: String): StoryContext = {
-    val __obj = js.Dynamic.literal(kind = kind, story = story)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], story = story.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StoryContext]
   }

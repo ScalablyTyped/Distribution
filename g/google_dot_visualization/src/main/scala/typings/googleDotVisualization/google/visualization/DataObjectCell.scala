@@ -14,9 +14,9 @@ object DataObjectCell {
   @scala.inline
   def apply(f: String = null, p: js.Any = null, v: js.Any = null): DataObjectCell = {
     val __obj = js.Dynamic.literal()
-    if (f != null) __obj.updateDynamic("f")(f)
-    if (p != null) __obj.updateDynamic("p")(p)
-    if (v != null) __obj.updateDynamic("v")(v)
+    if (f != null) __obj.updateDynamic("f")(f.asInstanceOf[js.Any])
+    if (p != null) __obj.updateDynamic("p")(p.asInstanceOf[js.Any])
+    if (v != null) __obj.updateDynamic("v")(v.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataObjectCell]
   }
 }

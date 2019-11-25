@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait EventEmitterStatic
   extends Instantiable0[
       EventEmitter[
-        String | js.Symbol | (/* import warning: ImportType.apply c Unsupported type mapping: 
+        String | js.Symbol | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ K in keyof EventTypes ]: std.Array<any>}
   */ typings.eventemitter3.eventemitter3Strings.EventEmitterStatic with js.Any)
       ]

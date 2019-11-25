@@ -28,12 +28,12 @@ object SignatureUrlOptions {
     response: ResponseHeaderType = null
   ): SignatureUrlOptions = {
     val __obj = js.Dynamic.literal()
-    if (`Content-Type` != null) __obj.updateDynamic("Content-Type")(`Content-Type`)
-    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (`Content-Type` != null) __obj.updateDynamic("Content-Type")(`Content-Type`.asInstanceOf[js.Any])
+    if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
     if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (process != null) __obj.updateDynamic("process")(process)
-    if (response != null) __obj.updateDynamic("response")(response)
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (process != null) __obj.updateDynamic("process")(process.asInstanceOf[js.Any])
+    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignatureUrlOptions]
   }
 }

@@ -11,7 +11,7 @@ trait Anon_Fd extends js.Object {
 object Anon_Fd {
   @scala.inline
   def apply(_fd: Double): Anon_Fd = {
-    val __obj = js.Dynamic.literal(_fd = _fd)
+    val __obj = js.Dynamic.literal(_fd = _fd.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Fd]
   }

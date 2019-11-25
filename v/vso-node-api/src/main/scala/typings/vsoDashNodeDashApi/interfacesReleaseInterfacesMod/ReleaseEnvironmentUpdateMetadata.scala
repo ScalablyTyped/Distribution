@@ -23,7 +23,7 @@ trait ReleaseEnvironmentUpdateMetadata extends js.Object {
 object ReleaseEnvironmentUpdateMetadata {
   @scala.inline
   def apply(comment: String, scheduledDeploymentTime: Date, status: EnvironmentStatus): ReleaseEnvironmentUpdateMetadata = {
-    val __obj = js.Dynamic.literal(comment = comment, scheduledDeploymentTime = scheduledDeploymentTime, status = status)
+    val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any], scheduledDeploymentTime = scheduledDeploymentTime.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReleaseEnvironmentUpdateMetadata]
   }

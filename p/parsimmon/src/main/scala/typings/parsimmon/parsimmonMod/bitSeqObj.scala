@@ -14,7 +14,7 @@ object bitSeqObj extends js.Object {
   	 * it will be parsed but discarded from the returned value.
   	 */
   def apply[Key /* <: String */](namedAlignments: js.Array[(js.Tuple2[Key, Double]) | Double]): Parser[
-    /* import warning: ImportType.apply c Unsupported type mapping: 
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in Key ]: number}
     */ typings.parsimmon.parsimmonStrings.bitSeqObj with js.Any
   ] = js.native

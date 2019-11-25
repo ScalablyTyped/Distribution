@@ -24,8 +24,8 @@ object GoogleActionsTransactionsV3PaymentResult {
   @scala.inline
   def apply(googlePaymentData: String = null, merchantPaymentMethodId: String = null): GoogleActionsTransactionsV3PaymentResult = {
     val __obj = js.Dynamic.literal()
-    if (googlePaymentData != null) __obj.updateDynamic("googlePaymentData")(googlePaymentData)
-    if (merchantPaymentMethodId != null) __obj.updateDynamic("merchantPaymentMethodId")(merchantPaymentMethodId)
+    if (googlePaymentData != null) __obj.updateDynamic("googlePaymentData")(googlePaymentData.asInstanceOf[js.Any])
+    if (merchantPaymentMethodId != null) __obj.updateDynamic("merchantPaymentMethodId")(merchantPaymentMethodId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsTransactionsV3PaymentResult]
   }
 }

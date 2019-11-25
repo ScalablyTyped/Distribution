@@ -13,7 +13,7 @@ trait Anon_XZHO2 extends js.Object {
 object Anon_XZHO2 {
   @scala.inline
   def apply(XZHO2: Anon_4Fatigue, ZHO2: Anon_3Fatigue, ZO: Anon_2Fatigue): Anon_XZHO2 = {
-    val __obj = js.Dynamic.literal(XZHO2 = XZHO2, ZHO2 = ZHO2, ZO = ZO)
+    val __obj = js.Dynamic.literal(XZHO2 = XZHO2.asInstanceOf[js.Any], ZHO2 = ZHO2.asInstanceOf[js.Any], ZO = ZO.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_XZHO2]
   }

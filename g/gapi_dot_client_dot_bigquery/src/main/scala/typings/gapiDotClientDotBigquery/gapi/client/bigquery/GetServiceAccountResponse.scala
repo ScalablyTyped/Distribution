@@ -15,8 +15,8 @@ object GetServiceAccountResponse {
   @scala.inline
   def apply(email: String = null, kind: String = null): GetServiceAccountResponse = {
     val __obj = js.Dynamic.literal()
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetServiceAccountResponse]
   }
 }

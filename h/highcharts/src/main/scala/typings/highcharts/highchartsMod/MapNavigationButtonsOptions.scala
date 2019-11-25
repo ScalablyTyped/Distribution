@@ -28,8 +28,8 @@ object MapNavigationButtonsOptions {
     zoomOut: MapNavigationButtonsZoomOutOptions = null
   ): MapNavigationButtonsOptions = {
     val __obj = js.Dynamic.literal()
-    if (zoomIn != null) __obj.updateDynamic("zoomIn")(zoomIn)
-    if (zoomOut != null) __obj.updateDynamic("zoomOut")(zoomOut)
+    if (zoomIn != null) __obj.updateDynamic("zoomIn")(zoomIn.asInstanceOf[js.Any])
+    if (zoomOut != null) __obj.updateDynamic("zoomOut")(zoomOut.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapNavigationButtonsOptions]
   }
 }

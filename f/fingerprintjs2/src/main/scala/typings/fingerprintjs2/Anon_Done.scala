@@ -18,8 +18,8 @@ object Anon_Done {
     key: String,
     pauseBefore: js.UndefOr[Boolean] = js.undefined
   ): Anon_Done = {
-    val __obj = js.Dynamic.literal(getData = js.Any.fromFunction2(getData), key = key)
-    if (!js.isUndefined(pauseBefore)) __obj.updateDynamic("pauseBefore")(pauseBefore)
+    val __obj = js.Dynamic.literal(getData = js.Any.fromFunction2(getData), key = key.asInstanceOf[js.Any])
+    if (!js.isUndefined(pauseBefore)) __obj.updateDynamic("pauseBefore")(pauseBefore.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Done]
   }
 }

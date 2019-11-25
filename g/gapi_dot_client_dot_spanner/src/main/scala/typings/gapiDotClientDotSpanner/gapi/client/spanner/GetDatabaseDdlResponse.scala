@@ -16,7 +16,7 @@ object GetDatabaseDdlResponse {
   @scala.inline
   def apply(statements: js.Array[String] = null): GetDatabaseDdlResponse = {
     val __obj = js.Dynamic.literal()
-    if (statements != null) __obj.updateDynamic("statements")(statements)
+    if (statements != null) __obj.updateDynamic("statements")(statements.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDatabaseDdlResponse]
   }
 }

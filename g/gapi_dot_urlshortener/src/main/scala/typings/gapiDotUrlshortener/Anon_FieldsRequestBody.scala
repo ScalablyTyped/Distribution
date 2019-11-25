@@ -19,8 +19,8 @@ object Anon_FieldsRequestBody {
   @scala.inline
   def apply(RequestBody: String = null, fields: String = null): Anon_FieldsRequestBody = {
     val __obj = js.Dynamic.literal()
-    if (RequestBody != null) __obj.updateDynamic("RequestBody")(RequestBody)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (RequestBody != null) __obj.updateDynamic("RequestBody")(RequestBody.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FieldsRequestBody]
   }
 }

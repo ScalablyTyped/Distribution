@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait GeometriesTypes extends js.Object
 
+object GeometriesTypes {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def geojson: typings.osrm.osrmStrings.geojson = this.cast("geojson")
+  @scala.inline
+  def polyline: typings.osrm.osrmStrings.polyline = this.cast("polyline")
+  @scala.inline
+  def polyline6: typings.osrm.osrmStrings.polyline6 = this.cast("polyline6")
+}
+

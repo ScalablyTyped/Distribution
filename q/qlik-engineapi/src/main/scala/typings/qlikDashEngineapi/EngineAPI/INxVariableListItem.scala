@@ -72,10 +72,10 @@ object INxVariableListItem {
     qIsReserved: js.UndefOr[Boolean] = js.undefined,
     qMeta: INxMeta = null
   ): INxVariableListItem = {
-    val __obj = js.Dynamic.literal(qData = qData, qDefinition = qDefinition, qDescription = qDescription, qInfo = qInfo, qIsScriptCreated = qIsScriptCreated, qName = qName)
-    if (!js.isUndefined(qIsConfig)) __obj.updateDynamic("qIsConfig")(qIsConfig)
-    if (!js.isUndefined(qIsReserved)) __obj.updateDynamic("qIsReserved")(qIsReserved)
-    if (qMeta != null) __obj.updateDynamic("qMeta")(qMeta)
+    val __obj = js.Dynamic.literal(qData = qData.asInstanceOf[js.Any], qDefinition = qDefinition.asInstanceOf[js.Any], qDescription = qDescription.asInstanceOf[js.Any], qInfo = qInfo.asInstanceOf[js.Any], qIsScriptCreated = qIsScriptCreated.asInstanceOf[js.Any], qName = qName.asInstanceOf[js.Any])
+    if (!js.isUndefined(qIsConfig)) __obj.updateDynamic("qIsConfig")(qIsConfig.asInstanceOf[js.Any])
+    if (!js.isUndefined(qIsReserved)) __obj.updateDynamic("qIsReserved")(qIsReserved.asInstanceOf[js.Any])
+    if (qMeta != null) __obj.updateDynamic("qMeta")(qMeta.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxVariableListItem]
   }
 }

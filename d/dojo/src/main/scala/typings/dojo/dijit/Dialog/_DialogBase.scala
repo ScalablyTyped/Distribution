@@ -1,6 +1,5 @@
 package typings.dojo.dijit.Dialog
 
-import typings.dojo.Fn_Boolean
 import typings.dojo.dijit._TemplatedMixin
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -17,7 +16,7 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - typings.dojo.dijit._CssStateMixin because Inheritance from two classes. Inlined active, cssStateNodes, hovering
 - typings.dojo.dijit._DialogMixin because Inheritance from two classes. Inlined execute, onCancel, onExecute
-- typings.dojo.dijit.form._FormMixin because Inheritance from two classes. Inlined state, connectChildren, destroy, disconnectChildren, getValues, isValid, isValid_Original, reset, setValues, startup, validate, onValidStateChange */ @JSGlobal("dijit.Dialog._DialogBase")
+- typings.dojo.dijit.form._FormMixin because Inheritance from two classes. Inlined state, connectChildren, destroy, disconnectChildren, getValues, isValid, reset, setValues, startup, validate, onValidStateChange */ @JSGlobal("dijit.Dialog._DialogBase")
 @js.native
 class _DialogBase () extends _TemplatedMixin {
   def this(params: js.Object) = this()
@@ -72,13 +71,6 @@ class _DialogBase () extends _TemplatedMixin {
     * 
     */
   var hovering: Boolean = js.native
-  /**
-    * Returns true if all of the widgets are valid.
-    * Deprecated, will be removed in 2.0.  Use get("state") instead.
-    * 
-    */
-  @JSName("isValid")
-  var isValid_Original: Fn_Boolean = js.native
   /**
     * Maximum size to allow the dialog to expand to, relative to viewport size
     * 

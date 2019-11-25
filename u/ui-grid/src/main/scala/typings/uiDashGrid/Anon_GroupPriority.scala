@@ -14,7 +14,7 @@ trait Anon_GroupPriority extends js.Object {
 object Anon_GroupPriority {
   @scala.inline
   def apply(groupPriority: Double): Anon_GroupPriority = {
-    val __obj = js.Dynamic.literal(groupPriority = groupPriority)
+    val __obj = js.Dynamic.literal(groupPriority = groupPriority.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_GroupPriority]
   }

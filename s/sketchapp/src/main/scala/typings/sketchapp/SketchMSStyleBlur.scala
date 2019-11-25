@@ -24,8 +24,8 @@ object SketchMSStyleBlur {
     radius: Double,
     `type`: Double
   ): SketchMSStyleBlur = {
-    val __obj = js.Dynamic.literal(_class = _class, center = center, isEnabled = isEnabled, motionAngle = motionAngle, radius = radius)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], center = center.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], motionAngle = motionAngle.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSStyleBlur]
   }
 }

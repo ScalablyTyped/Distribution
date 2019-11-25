@@ -18,11 +18,11 @@ object TransformSourceDescription {
     map: SourceMapInput = null,
     moduleSideEffects: js.UndefOr[Boolean] = js.undefined
   ): TransformSourceDescription = {
-    val __obj = js.Dynamic.literal(code = code)
-    if (ast != null) __obj.updateDynamic("ast")(ast)
-    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
+    if (ast != null) __obj.updateDynamic("ast")(ast.asInstanceOf[js.Any])
+    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
     if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
-    if (!js.isUndefined(moduleSideEffects)) __obj.updateDynamic("moduleSideEffects")(moduleSideEffects)
+    if (!js.isUndefined(moduleSideEffects)) __obj.updateDynamic("moduleSideEffects")(moduleSideEffects.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransformSourceDescription]
   }
 }

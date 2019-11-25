@@ -12,7 +12,7 @@ trait TypeofAST extends js.Object {
 object TypeofAST {
   @scala.inline
   def apply(helpers: helpers): TypeofAST = {
-    val __obj = js.Dynamic.literal(helpers = helpers)
+    val __obj = js.Dynamic.literal(helpers = helpers.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeofAST]
   }

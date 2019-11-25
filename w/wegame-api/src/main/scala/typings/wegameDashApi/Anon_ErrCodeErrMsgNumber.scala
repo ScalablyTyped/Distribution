@@ -18,7 +18,7 @@ trait Anon_ErrCodeErrMsgNumber extends js.Object {
 object Anon_ErrCodeErrMsgNumber {
   @scala.inline
   def apply(errCode: Double, errMsg: String): Anon_ErrCodeErrMsgNumber = {
-    val __obj = js.Dynamic.literal(errCode = errCode, errMsg = errMsg)
+    val __obj = js.Dynamic.literal(errCode = errCode.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ErrCodeErrMsgNumber]
   }

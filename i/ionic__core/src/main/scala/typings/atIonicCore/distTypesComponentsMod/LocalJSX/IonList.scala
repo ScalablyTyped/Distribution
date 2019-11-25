@@ -32,7 +32,7 @@ object IonList {
     mode: ios | md = null
   ): IonList = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(inset)) __obj.updateDynamic("inset")(inset)
+    if (!js.isUndefined(inset)) __obj.updateDynamic("inset")(inset.asInstanceOf[js.Any])
     if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonList]

@@ -37,11 +37,11 @@ object Message {
     text: String = null
   ): Message = {
     val __obj = js.Dynamic.literal()
-    if (arguments != null) __obj.updateDynamic("arguments")(arguments)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (markdown != null) __obj.updateDynamic("markdown")(markdown)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (arguments != null) __obj.updateDynamic("arguments")(arguments.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (markdown != null) __obj.updateDynamic("markdown")(markdown.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Message]
   }
 }

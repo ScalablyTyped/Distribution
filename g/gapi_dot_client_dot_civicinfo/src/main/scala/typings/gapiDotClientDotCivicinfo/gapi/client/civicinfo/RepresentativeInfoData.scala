@@ -22,9 +22,9 @@ object RepresentativeInfoData {
     officials: js.Array[Official] = null
   ): RepresentativeInfoData = {
     val __obj = js.Dynamic.literal()
-    if (divisions != null) __obj.updateDynamic("divisions")(divisions)
-    if (offices != null) __obj.updateDynamic("offices")(offices)
-    if (officials != null) __obj.updateDynamic("officials")(officials)
+    if (divisions != null) __obj.updateDynamic("divisions")(divisions.asInstanceOf[js.Any])
+    if (offices != null) __obj.updateDynamic("offices")(offices.asInstanceOf[js.Any])
+    if (officials != null) __obj.updateDynamic("officials")(officials.asInstanceOf[js.Any])
     __obj.asInstanceOf[RepresentativeInfoData]
   }
 }

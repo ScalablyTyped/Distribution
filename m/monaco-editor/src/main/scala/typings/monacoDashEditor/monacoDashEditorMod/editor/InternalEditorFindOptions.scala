@@ -13,7 +13,7 @@ trait InternalEditorFindOptions extends js.Object {
 object InternalEditorFindOptions {
   @scala.inline
   def apply(addExtraSpaceOnTop: Boolean, autoFindInSelection: Boolean, seedSearchStringFromSelection: Boolean): InternalEditorFindOptions = {
-    val __obj = js.Dynamic.literal(addExtraSpaceOnTop = addExtraSpaceOnTop, autoFindInSelection = autoFindInSelection, seedSearchStringFromSelection = seedSearchStringFromSelection)
+    val __obj = js.Dynamic.literal(addExtraSpaceOnTop = addExtraSpaceOnTop.asInstanceOf[js.Any], autoFindInSelection = autoFindInSelection.asInstanceOf[js.Any], seedSearchStringFromSelection = seedSearchStringFromSelection.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InternalEditorFindOptions]
   }

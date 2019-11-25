@@ -20,7 +20,7 @@ object TransferListBodyProps {
     filteredRenderItems: js.Array[RenderedItem],
     selectedKeys: js.Array[String]
   ): TransferListBodyProps = {
-    val __obj = js.Dynamic.literal(filteredItems = filteredItems, filteredRenderItems = filteredRenderItems, selectedKeys = selectedKeys)
+    val __obj = js.Dynamic.literal(filteredItems = filteredItems.asInstanceOf[js.Any], filteredRenderItems = filteredRenderItems.asInstanceOf[js.Any], selectedKeys = selectedKeys.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TransferListBodyProps]
   }

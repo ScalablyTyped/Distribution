@@ -13,8 +13,8 @@ object UniversalAdId {
   @scala.inline
   def apply(registry: String = null, value: String = null): UniversalAdId = {
     val __obj = js.Dynamic.literal()
-    if (registry != null) __obj.updateDynamic("registry")(registry)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (registry != null) __obj.updateDynamic("registry")(registry.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[UniversalAdId]
   }
 }

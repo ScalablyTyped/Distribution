@@ -45,9 +45,9 @@ object ITimelineDate {
     month: Int | Double = null,
     second: Int | Double = null
   ): ITimelineDate = {
-    val __obj = js.Dynamic.literal(year = year)
+    val __obj = js.Dynamic.literal(year = year.asInstanceOf[js.Any])
     if (day != null) __obj.updateDynamic("day")(day.asInstanceOf[js.Any])
-    if (display_date != null) __obj.updateDynamic("display_date")(display_date)
+    if (display_date != null) __obj.updateDynamic("display_date")(display_date.asInstanceOf[js.Any])
     if (hour != null) __obj.updateDynamic("hour")(hour.asInstanceOf[js.Any])
     if (millisecond != null) __obj.updateDynamic("millisecond")(millisecond.asInstanceOf[js.Any])
     if (minute != null) __obj.updateDynamic("minute")(minute.asInstanceOf[js.Any])

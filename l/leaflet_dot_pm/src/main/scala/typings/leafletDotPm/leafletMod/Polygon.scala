@@ -12,7 +12,7 @@ trait Polygon extends js.Object {
 object Polygon {
   @scala.inline
   def apply(pm: Line): Polygon = {
-    val __obj = js.Dynamic.literal(pm = pm)
+    val __obj = js.Dynamic.literal(pm = pm.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Polygon]
   }

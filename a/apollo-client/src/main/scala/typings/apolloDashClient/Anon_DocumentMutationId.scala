@@ -27,7 +27,7 @@ object Anon_DocumentMutationId {
     optimisticResponse: js.Object | js.Function = null,
     update: (/* proxy */ DataProxy, /* mutationResult */ js.Object) => Unit = null
   ): Anon_DocumentMutationId = {
-    val __obj = js.Dynamic.literal(document = document, mutationId = mutationId, updateQueries = updateQueries, variables = variables)
+    val __obj = js.Dynamic.literal(document = document.asInstanceOf[js.Any], mutationId = mutationId.asInstanceOf[js.Any], updateQueries = updateQueries.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
     if (optimisticResponse != null) __obj.updateDynamic("optimisticResponse")(optimisticResponse.asInstanceOf[js.Any])
     if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction2(update))
     __obj.asInstanceOf[Anon_DocumentMutationId]

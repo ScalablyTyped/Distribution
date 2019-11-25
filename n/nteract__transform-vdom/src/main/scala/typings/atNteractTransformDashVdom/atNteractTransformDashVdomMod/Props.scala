@@ -20,7 +20,7 @@ object Props {
     mediaType: `application/vdomDOTv1+json`,
     onVDOMEvent: (String, SerializedEvent[_]) => Unit
   ): Props = {
-    val __obj = js.Dynamic.literal(data = data, mediaType = mediaType, onVDOMEvent = js.Any.fromFunction2(onVDOMEvent))
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], mediaType = mediaType.asInstanceOf[js.Any], onVDOMEvent = js.Any.fromFunction2(onVDOMEvent))
   
     __obj.asInstanceOf[Props]
   }

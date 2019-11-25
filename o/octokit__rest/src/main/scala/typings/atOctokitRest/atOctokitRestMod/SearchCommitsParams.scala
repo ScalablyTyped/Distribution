@@ -40,7 +40,7 @@ object SearchCommitsParams {
     per_page: Int | Double = null,
     sort: `author-date` | `committer-date` = null
   ): SearchCommitsParams = {
-    val __obj = js.Dynamic.literal(q = q)
+    val __obj = js.Dynamic.literal(q = q.asInstanceOf[js.Any])
     if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (per_page != null) __obj.updateDynamic("per_page")(per_page.asInstanceOf[js.Any])

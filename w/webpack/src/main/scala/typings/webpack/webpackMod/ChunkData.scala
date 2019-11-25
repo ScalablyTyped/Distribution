@@ -12,7 +12,7 @@ trait ChunkData extends js.Object {
 object ChunkData {
   @scala.inline
   def apply(chunk: Chunk): ChunkData = {
-    val __obj = js.Dynamic.literal(chunk = chunk)
+    val __obj = js.Dynamic.literal(chunk = chunk.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChunkData]
   }

@@ -33,9 +33,9 @@ object RoboDirective {
   @scala.inline
   def apply(actionType: String = null, inputText: String = null, resourceName: String = null): RoboDirective = {
     val __obj = js.Dynamic.literal()
-    if (actionType != null) __obj.updateDynamic("actionType")(actionType)
-    if (inputText != null) __obj.updateDynamic("inputText")(inputText)
-    if (resourceName != null) __obj.updateDynamic("resourceName")(resourceName)
+    if (actionType != null) __obj.updateDynamic("actionType")(actionType.asInstanceOf[js.Any])
+    if (inputText != null) __obj.updateDynamic("inputText")(inputText.asInstanceOf[js.Any])
+    if (resourceName != null) __obj.updateDynamic("resourceName")(resourceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoboDirective]
   }
 }

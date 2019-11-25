@@ -19,7 +19,7 @@ object SourceMapSource {
     text: String,
     skipTrivia: /* pos */ Double => Double = null
   ): SourceMapSource = {
-    val __obj = js.Dynamic.literal(fileName = fileName, getLineAndCharacterOfPosition = js.Any.fromFunction1(getLineAndCharacterOfPosition), text = text)
+    val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], getLineAndCharacterOfPosition = js.Any.fromFunction1(getLineAndCharacterOfPosition), text = text.asInstanceOf[js.Any])
     if (skipTrivia != null) __obj.updateDynamic("skipTrivia")(js.Any.fromFunction1(skipTrivia))
     __obj.asInstanceOf[SourceMapSource]
   }

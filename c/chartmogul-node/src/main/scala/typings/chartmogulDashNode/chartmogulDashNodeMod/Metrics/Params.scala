@@ -18,11 +18,11 @@ object Params {
     plans: String = null
   ): Params = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("end-date")(`end-date`)
-    __obj.updateDynamic("start-date")(`start-date`)
-    if (geo != null) __obj.updateDynamic("geo")(geo)
-    if (interval != null) __obj.updateDynamic("interval")(interval)
-    if (plans != null) __obj.updateDynamic("plans")(plans)
+    __obj.updateDynamic("end-date")(`end-date`.asInstanceOf[js.Any])
+    __obj.updateDynamic("start-date")(`start-date`.asInstanceOf[js.Any])
+    if (geo != null) __obj.updateDynamic("geo")(geo.asInstanceOf[js.Any])
+    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (plans != null) __obj.updateDynamic("plans")(plans.asInstanceOf[js.Any])
     __obj.asInstanceOf[Params]
   }
 }

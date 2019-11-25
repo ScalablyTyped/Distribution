@@ -33,15 +33,15 @@ object ContentBody {
   ): ContentBody = {
     val __obj = js.Dynamic.literal()
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (dictionary != null) __obj.updateDynamic("dictionary")(dictionary)
-    if (goToAction != null) __obj.updateDynamic("goToAction")(goToAction)
-    if (greeting != null) __obj.updateDynamic("greeting")(greeting)
+    if (dictionary != null) __obj.updateDynamic("dictionary")(dictionary.asInstanceOf[js.Any])
+    if (goToAction != null) __obj.updateDynamic("goToAction")(goToAction.asInstanceOf[js.Any])
+    if (greeting != null) __obj.updateDynamic("greeting")(greeting.asInstanceOf[js.Any])
     if (intro != null) __obj.updateDynamic("intro")(intro.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (outro != null) __obj.updateDynamic("outro")(outro.asInstanceOf[js.Any])
-    if (signature != null) __obj.updateDynamic("signature")(signature)
-    if (table != null) __obj.updateDynamic("table")(table)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (signature != null) __obj.updateDynamic("signature")(signature.asInstanceOf[js.Any])
+    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentBody]
   }
 }

@@ -26,10 +26,10 @@ object Anon_BodyCommand {
     body: js.Any = null,
     message: String = null
   ): Anon_BodyCommand = {
-    val __obj = js.Dynamic.literal(command = command, request_seq = request_seq, seq = seq, success = success)
-    __obj.updateDynamic("type")(`type`)
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (message != null) __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], request_seq = request_seq.asInstanceOf[js.Any], seq = seq.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BodyCommand]
   }
 }

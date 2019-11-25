@@ -18,9 +18,9 @@ object OrdersCustomBatchRequestEntrySetLineItemMetadata {
     productId: String = null
   ): OrdersCustomBatchRequestEntrySetLineItemMetadata = {
     val __obj = js.Dynamic.literal()
-    if (annotations != null) __obj.updateDynamic("annotations")(annotations)
-    if (lineItemId != null) __obj.updateDynamic("lineItemId")(lineItemId)
-    if (productId != null) __obj.updateDynamic("productId")(productId)
+    if (annotations != null) __obj.updateDynamic("annotations")(annotations.asInstanceOf[js.Any])
+    if (lineItemId != null) __obj.updateDynamic("lineItemId")(lineItemId.asInstanceOf[js.Any])
+    if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrdersCustomBatchRequestEntrySetLineItemMetadata]
   }
 }

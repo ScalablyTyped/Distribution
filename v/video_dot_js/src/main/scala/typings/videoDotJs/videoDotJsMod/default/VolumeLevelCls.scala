@@ -2,15 +2,14 @@ package typings.videoDotJs.videoDotJsMod.default
 
 import typings.videoDotJs.videoDotJsMod.videojs.Component.ReadyCallback
 import typings.videoDotJs.videoDotJsMod.videojs.ComponentOptions
-import typings.videoDotJs.videoDotJsMod.videojs.Player
-import typings.videoDotJs.videoDotJsMod.videojs.VolumeLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("video.js", "VolumeLevel")
 @js.native
-class VolumeLevelCls protected () extends VolumeLevel {
+class VolumeLevelCls protected ()
+  extends typings.videoDotJs.videoDotJsMod.videojs.VolumeLevel {
   /**
     * Creates an instance of this class.
     *
@@ -28,8 +27,12 @@ class VolumeLevelCls protected () extends VolumeLevel {
     * @param [ready]
     *        Function that gets called when the `Component` is ready.
     */
-  def this(player: Player) = this()
-  def this(player: Player, options: ComponentOptions) = this()
-  def this(player: Player, options: ComponentOptions, ready: ReadyCallback) = this()
+  def this(player: typings.videoDotJs.videoDotJsMod.videojs.Player) = this()
+  def this(player: typings.videoDotJs.videoDotJsMod.videojs.Player, options: ComponentOptions) = this()
+  def this(
+    player: typings.videoDotJs.videoDotJsMod.videojs.Player,
+    options: ComponentOptions,
+    ready: ReadyCallback
+  ) = this()
 }
 

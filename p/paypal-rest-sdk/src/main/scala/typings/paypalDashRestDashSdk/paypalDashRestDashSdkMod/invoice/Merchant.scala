@@ -29,17 +29,17 @@ object Merchant {
     website: String = null
   ): Merchant = {
     val __obj = js.Dynamic.literal()
-    if (additional_info != null) __obj.updateDynamic("additional_info")(additional_info)
-    if (additional_info_label != null) __obj.updateDynamic("additional_info_label")(additional_info_label)
-    if (address != null) __obj.updateDynamic("address")(address)
-    if (business_name != null) __obj.updateDynamic("business_name")(business_name)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (fax != null) __obj.updateDynamic("fax")(fax)
-    if (first_name != null) __obj.updateDynamic("first_name")(first_name)
-    if (last_name != null) __obj.updateDynamic("last_name")(last_name)
-    if (phone != null) __obj.updateDynamic("phone")(phone)
-    if (tax_id != null) __obj.updateDynamic("tax_id")(tax_id)
-    if (website != null) __obj.updateDynamic("website")(website)
+    if (additional_info != null) __obj.updateDynamic("additional_info")(additional_info.asInstanceOf[js.Any])
+    if (additional_info_label != null) __obj.updateDynamic("additional_info_label")(additional_info_label.asInstanceOf[js.Any])
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    if (business_name != null) __obj.updateDynamic("business_name")(business_name.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (fax != null) __obj.updateDynamic("fax")(fax.asInstanceOf[js.Any])
+    if (first_name != null) __obj.updateDynamic("first_name")(first_name.asInstanceOf[js.Any])
+    if (last_name != null) __obj.updateDynamic("last_name")(last_name.asInstanceOf[js.Any])
+    if (phone != null) __obj.updateDynamic("phone")(phone.asInstanceOf[js.Any])
+    if (tax_id != null) __obj.updateDynamic("tax_id")(tax_id.asInstanceOf[js.Any])
+    if (website != null) __obj.updateDynamic("website")(website.asInstanceOf[js.Any])
     __obj.asInstanceOf[Merchant]
   }
 }

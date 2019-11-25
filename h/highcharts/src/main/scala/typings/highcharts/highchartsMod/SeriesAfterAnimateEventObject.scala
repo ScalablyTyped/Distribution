@@ -19,8 +19,8 @@ trait SeriesAfterAnimateEventObject extends js.Object {
 object SeriesAfterAnimateEventObject {
   @scala.inline
   def apply(target: Series, `type`: afterAnimate): SeriesAfterAnimateEventObject = {
-    val __obj = js.Dynamic.literal(target = target)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesAfterAnimateEventObject]
   }
 }

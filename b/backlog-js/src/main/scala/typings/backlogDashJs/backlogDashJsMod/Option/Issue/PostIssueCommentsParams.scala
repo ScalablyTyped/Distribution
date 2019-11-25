@@ -13,9 +13,9 @@ trait PostIssueCommentsParams extends js.Object {
 object PostIssueCommentsParams {
   @scala.inline
   def apply(content: String, attachmentId: js.Array[Double] = null, notifiedUserId: js.Array[Double] = null): PostIssueCommentsParams = {
-    val __obj = js.Dynamic.literal(content = content)
-    if (attachmentId != null) __obj.updateDynamic("attachmentId")(attachmentId)
-    if (notifiedUserId != null) __obj.updateDynamic("notifiedUserId")(notifiedUserId)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
+    if (attachmentId != null) __obj.updateDynamic("attachmentId")(attachmentId.asInstanceOf[js.Any])
+    if (notifiedUserId != null) __obj.updateDynamic("notifiedUserId")(notifiedUserId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostIssueCommentsParams]
   }
 }

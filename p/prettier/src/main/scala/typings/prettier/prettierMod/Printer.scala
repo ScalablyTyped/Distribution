@@ -54,7 +54,7 @@ object Printer {
     val __obj = js.Dynamic.literal(print = js.Any.fromFunction3(print))
     if (canAttachComment != null) __obj.updateDynamic("canAttachComment")(js.Any.fromFunction1(canAttachComment))
     if (embed != null) __obj.updateDynamic("embed")(js.Any.fromFunction4(embed))
-    if (handleComments != null) __obj.updateDynamic("handleComments")(handleComments)
+    if (handleComments != null) __obj.updateDynamic("handleComments")(handleComments.asInstanceOf[js.Any])
     if (hasPrettierIgnore != null) __obj.updateDynamic("hasPrettierIgnore")(js.Any.fromFunction1(hasPrettierIgnore))
     if (insertPragma != null) __obj.updateDynamic("insertPragma")(js.Any.fromFunction1(insertPragma))
     if (massageAstNode != null) __obj.updateDynamic("massageAstNode")(js.Any.fromFunction3(massageAstNode))

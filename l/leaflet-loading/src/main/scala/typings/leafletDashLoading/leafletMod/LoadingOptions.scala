@@ -28,11 +28,11 @@ object LoadingOptions {
   ): LoadingOptions = {
     val __obj = js.Dynamic.literal()
     if (delayIndicator != null) __obj.updateDynamic("delayIndicator")(delayIndicator.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (!js.isUndefined(separate)) __obj.updateDynamic("separate")(separate)
-    if (spin != null) __obj.updateDynamic("spin")(spin)
-    if (!js.isUndefined(spinjs)) __obj.updateDynamic("spinjs")(spinjs)
-    if (zoomControl != null) __obj.updateDynamic("zoomControl")(zoomControl)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(separate)) __obj.updateDynamic("separate")(separate.asInstanceOf[js.Any])
+    if (spin != null) __obj.updateDynamic("spin")(spin.asInstanceOf[js.Any])
+    if (!js.isUndefined(spinjs)) __obj.updateDynamic("spinjs")(spinjs.asInstanceOf[js.Any])
+    if (zoomControl != null) __obj.updateDynamic("zoomControl")(zoomControl.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadingOptions]
   }
 }

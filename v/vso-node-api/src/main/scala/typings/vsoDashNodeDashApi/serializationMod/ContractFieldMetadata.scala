@@ -34,17 +34,17 @@ object ContractFieldMetadata {
     typeInfo: ContractMetadata = null
   ): ContractFieldMetadata = {
     val __obj = js.Dynamic.literal()
-    if (dictionaryKeyEnumType != null) __obj.updateDynamic("dictionaryKeyEnumType")(dictionaryKeyEnumType)
-    if (!js.isUndefined(dictionaryKeyIsDate)) __obj.updateDynamic("dictionaryKeyIsDate")(dictionaryKeyIsDate)
-    if (dictionaryValueEnumType != null) __obj.updateDynamic("dictionaryValueEnumType")(dictionaryValueEnumType)
-    if (dictionaryValueFieldInfo != null) __obj.updateDynamic("dictionaryValueFieldInfo")(dictionaryValueFieldInfo)
-    if (!js.isUndefined(dictionaryValueIsDate)) __obj.updateDynamic("dictionaryValueIsDate")(dictionaryValueIsDate)
-    if (dictionaryValueTypeInfo != null) __obj.updateDynamic("dictionaryValueTypeInfo")(dictionaryValueTypeInfo)
-    if (enumType != null) __obj.updateDynamic("enumType")(enumType)
-    if (!js.isUndefined(isArray)) __obj.updateDynamic("isArray")(isArray)
-    if (!js.isUndefined(isDate)) __obj.updateDynamic("isDate")(isDate)
-    if (!js.isUndefined(isDictionary)) __obj.updateDynamic("isDictionary")(isDictionary)
-    if (typeInfo != null) __obj.updateDynamic("typeInfo")(typeInfo)
+    if (dictionaryKeyEnumType != null) __obj.updateDynamic("dictionaryKeyEnumType")(dictionaryKeyEnumType.asInstanceOf[js.Any])
+    if (!js.isUndefined(dictionaryKeyIsDate)) __obj.updateDynamic("dictionaryKeyIsDate")(dictionaryKeyIsDate.asInstanceOf[js.Any])
+    if (dictionaryValueEnumType != null) __obj.updateDynamic("dictionaryValueEnumType")(dictionaryValueEnumType.asInstanceOf[js.Any])
+    if (dictionaryValueFieldInfo != null) __obj.updateDynamic("dictionaryValueFieldInfo")(dictionaryValueFieldInfo.asInstanceOf[js.Any])
+    if (!js.isUndefined(dictionaryValueIsDate)) __obj.updateDynamic("dictionaryValueIsDate")(dictionaryValueIsDate.asInstanceOf[js.Any])
+    if (dictionaryValueTypeInfo != null) __obj.updateDynamic("dictionaryValueTypeInfo")(dictionaryValueTypeInfo.asInstanceOf[js.Any])
+    if (enumType != null) __obj.updateDynamic("enumType")(enumType.asInstanceOf[js.Any])
+    if (!js.isUndefined(isArray)) __obj.updateDynamic("isArray")(isArray.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDate)) __obj.updateDynamic("isDate")(isDate.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDictionary)) __obj.updateDynamic("isDictionary")(isDictionary.asInstanceOf[js.Any])
+    if (typeInfo != null) __obj.updateDynamic("typeInfo")(typeInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContractFieldMetadata]
   }
 }

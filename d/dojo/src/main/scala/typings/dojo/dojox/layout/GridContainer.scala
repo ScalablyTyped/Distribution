@@ -1,9 +1,6 @@
 package typings.dojo.dojox.layout
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValueProperty
-import typings.dojo.Fn_NewValueOldValuePropertyNumber
 import typings.dojo.dojoStrings.hasResizableColumns
 import typings.dojo.dojoStrings.isLeftFixed
 import typings.dojo.dojoStrings.isRightFixed
@@ -111,18 +108,74 @@ class GridContainer protected () extends GridContainerLite {
   @JSName("set")
   def set_mode(property: mode, value: String): Unit = js.native
   @JSName("watch")
-  def watch_hasResizableColumns(property: hasResizableColumns, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_hasResizableColumns(
+    property: hasResizableColumns,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_isLeftFixed(property: isLeftFixed, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_isLeftFixed(
+    property: isLeftFixed,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_isRightFixed(property: isRightFixed, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_isRightFixed(
+    property: isRightFixed,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_liveResizeColumns(property: liveResizeColumns, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_liveResizeColumns(
+    property: liveResizeColumns,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_minChildWidth(property: minChildWidth, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_minChildWidth(
+    property: minChildWidth,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_minColWidth(property: minColWidth, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_minColWidth(
+    property: minColWidth,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_mode(property: mode, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_mode(
+    property: mode,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

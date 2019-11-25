@@ -16,7 +16,7 @@ trait Certificate extends js.Object {
 object Certificate {
   @scala.inline
   def apply(cert: String, domains: js.Array[String], key: String): Certificate = {
-    val __obj = js.Dynamic.literal(cert = cert, domains = domains, key = key)
+    val __obj = js.Dynamic.literal(cert = cert.asInstanceOf[js.Any], domains = domains.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Certificate]
   }

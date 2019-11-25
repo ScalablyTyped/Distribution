@@ -26,9 +26,9 @@ object ItemTemplate {
   @scala.inline
   def apply(childTemplates: js.Array[ViewTemplate] = null, events: js.Any = null, properties: js.Any = null): ItemTemplate = {
     val __obj = js.Dynamic.literal()
-    if (childTemplates != null) __obj.updateDynamic("childTemplates")(childTemplates)
-    if (events != null) __obj.updateDynamic("events")(events)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (childTemplates != null) __obj.updateDynamic("childTemplates")(childTemplates.asInstanceOf[js.Any])
+    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemTemplate]
   }
 }

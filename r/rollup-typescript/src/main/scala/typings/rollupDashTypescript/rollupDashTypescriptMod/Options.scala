@@ -25,9 +25,9 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
     if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
-    if (module != null) __obj.updateDynamic("module")(module)
-    if (!js.isUndefined(tsconfig)) __obj.updateDynamic("tsconfig")(tsconfig)
-    if (typescript != null) __obj.updateDynamic("typescript")(typescript)
+    if (module != null) __obj.updateDynamic("module")(module.asInstanceOf[js.Any])
+    if (!js.isUndefined(tsconfig)) __obj.updateDynamic("tsconfig")(tsconfig.asInstanceOf[js.Any])
+    if (typescript != null) __obj.updateDynamic("typescript")(typescript.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

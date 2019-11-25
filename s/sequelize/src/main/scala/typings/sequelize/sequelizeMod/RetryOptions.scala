@@ -26,7 +26,7 @@ object RetryOptions {
   @scala.inline
   def apply(`match`: js.Array[String | RegExp | Error] = null, max: Int | Double = null): RetryOptions = {
     val __obj = js.Dynamic.literal()
-    if (`match` != null) __obj.updateDynamic("match")(`match`)
+    if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     __obj.asInstanceOf[RetryOptions]
   }

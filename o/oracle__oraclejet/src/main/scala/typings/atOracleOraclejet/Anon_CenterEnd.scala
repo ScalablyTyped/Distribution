@@ -24,7 +24,7 @@ object Anon_CenterEnd {
     titleHalign: center | end | start,
     titleStyle: js.Object
   ): Anon_CenterEnd = {
-    val __obj = js.Dynamic.literal(items = items, sections = sections, title = title, titleHalign = titleHalign.asInstanceOf[js.Any], titleStyle = titleStyle)
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], sections = sections.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], titleHalign = titleHalign.asInstanceOf[js.Any], titleStyle = titleStyle.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CenterEnd]
   }

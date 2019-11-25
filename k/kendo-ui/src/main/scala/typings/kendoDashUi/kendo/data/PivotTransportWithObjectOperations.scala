@@ -19,9 +19,9 @@ object PivotTransportWithObjectOperations {
     discover: PivotTransportDiscover = null,
     read: DataSourceTransportRead = null
   ): PivotTransportWithObjectOperations = {
-    val __obj = js.Dynamic.literal(connection = connection)
-    if (discover != null) __obj.updateDynamic("discover")(discover)
-    if (read != null) __obj.updateDynamic("read")(read)
+    val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any])
+    if (discover != null) __obj.updateDynamic("discover")(discover.asInstanceOf[js.Any])
+    if (read != null) __obj.updateDynamic("read")(read.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotTransportWithObjectOperations]
   }
 }

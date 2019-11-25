@@ -11,7 +11,7 @@ trait Anon_PhoneNumber extends js.Object {
 object Anon_PhoneNumber {
   @scala.inline
   def apply(phoneNumber: String): Anon_PhoneNumber = {
-    val __obj = js.Dynamic.literal(phoneNumber = phoneNumber)
+    val __obj = js.Dynamic.literal(phoneNumber = phoneNumber.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_PhoneNumber]
   }

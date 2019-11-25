@@ -80,15 +80,15 @@ object ICalendarStrings {
     prevYearRangeAriaLabel: String = null,
     weekNumberFormatString: String = null
   ): ICalendarStrings = {
-    val __obj = js.Dynamic.literal(days = days, goToToday = goToToday, months = months, shortDays = shortDays, shortMonths = shortMonths)
-    if (closeButtonAriaLabel != null) __obj.updateDynamic("closeButtonAriaLabel")(closeButtonAriaLabel)
-    if (nextMonthAriaLabel != null) __obj.updateDynamic("nextMonthAriaLabel")(nextMonthAriaLabel)
-    if (nextYearAriaLabel != null) __obj.updateDynamic("nextYearAriaLabel")(nextYearAriaLabel)
-    if (nextYearRangeAriaLabel != null) __obj.updateDynamic("nextYearRangeAriaLabel")(nextYearRangeAriaLabel)
-    if (prevMonthAriaLabel != null) __obj.updateDynamic("prevMonthAriaLabel")(prevMonthAriaLabel)
-    if (prevYearAriaLabel != null) __obj.updateDynamic("prevYearAriaLabel")(prevYearAriaLabel)
-    if (prevYearRangeAriaLabel != null) __obj.updateDynamic("prevYearRangeAriaLabel")(prevYearRangeAriaLabel)
-    if (weekNumberFormatString != null) __obj.updateDynamic("weekNumberFormatString")(weekNumberFormatString)
+    val __obj = js.Dynamic.literal(days = days.asInstanceOf[js.Any], goToToday = goToToday.asInstanceOf[js.Any], months = months.asInstanceOf[js.Any], shortDays = shortDays.asInstanceOf[js.Any], shortMonths = shortMonths.asInstanceOf[js.Any])
+    if (closeButtonAriaLabel != null) __obj.updateDynamic("closeButtonAriaLabel")(closeButtonAriaLabel.asInstanceOf[js.Any])
+    if (nextMonthAriaLabel != null) __obj.updateDynamic("nextMonthAriaLabel")(nextMonthAriaLabel.asInstanceOf[js.Any])
+    if (nextYearAriaLabel != null) __obj.updateDynamic("nextYearAriaLabel")(nextYearAriaLabel.asInstanceOf[js.Any])
+    if (nextYearRangeAriaLabel != null) __obj.updateDynamic("nextYearRangeAriaLabel")(nextYearRangeAriaLabel.asInstanceOf[js.Any])
+    if (prevMonthAriaLabel != null) __obj.updateDynamic("prevMonthAriaLabel")(prevMonthAriaLabel.asInstanceOf[js.Any])
+    if (prevYearAriaLabel != null) __obj.updateDynamic("prevYearAriaLabel")(prevYearAriaLabel.asInstanceOf[js.Any])
+    if (prevYearRangeAriaLabel != null) __obj.updateDynamic("prevYearRangeAriaLabel")(prevYearRangeAriaLabel.asInstanceOf[js.Any])
+    if (weekNumberFormatString != null) __obj.updateDynamic("weekNumberFormatString")(weekNumberFormatString.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICalendarStrings]
   }
 }

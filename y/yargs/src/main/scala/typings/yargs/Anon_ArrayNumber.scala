@@ -14,8 +14,8 @@ trait Anon_ArrayNumber extends js.Object {
 object Anon_ArrayNumber {
   @scala.inline
   def apply(number: `true`, `type`: array): Anon_ArrayNumber = {
-    val __obj = js.Dynamic.literal(number = number)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(number = number.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ArrayNumber]
   }
 }

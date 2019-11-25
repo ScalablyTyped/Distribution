@@ -14,7 +14,7 @@ object PreloadOptions {
   def apply(fetchKey: String | Double = null, fetchPolicy: PreloadFetchPolicy = null): PreloadOptions = {
     val __obj = js.Dynamic.literal()
     if (fetchKey != null) __obj.updateDynamic("fetchKey")(fetchKey.asInstanceOf[js.Any])
-    if (fetchPolicy != null) __obj.updateDynamic("fetchPolicy")(fetchPolicy)
+    if (fetchPolicy != null) __obj.updateDynamic("fetchPolicy")(fetchPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[PreloadOptions]
   }
 }

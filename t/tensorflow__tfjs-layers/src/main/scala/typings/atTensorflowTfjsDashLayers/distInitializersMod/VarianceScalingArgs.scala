@@ -26,8 +26,8 @@ object VarianceScalingArgs {
     seed: Int | Double = null
   ): VarianceScalingArgs = {
     val __obj = js.Dynamic.literal()
-    if (distribution != null) __obj.updateDynamic("distribution")(distribution)
-    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (distribution != null) __obj.updateDynamic("distribution")(distribution.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     if (seed != null) __obj.updateDynamic("seed")(seed.asInstanceOf[js.Any])
     __obj.asInstanceOf[VarianceScalingArgs]

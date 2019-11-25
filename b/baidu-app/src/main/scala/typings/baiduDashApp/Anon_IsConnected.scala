@@ -13,7 +13,7 @@ trait Anon_IsConnected extends js.Object {
 object Anon_IsConnected {
   @scala.inline
   def apply(isConnected: Boolean, networkType: networkType): Anon_IsConnected = {
-    val __obj = js.Dynamic.literal(isConnected = isConnected, networkType = networkType)
+    val __obj = js.Dynamic.literal(isConnected = isConnected.asInstanceOf[js.Any], networkType = networkType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IsConnected]
   }

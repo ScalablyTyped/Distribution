@@ -18,8 +18,8 @@ object HasteMap {
     moduleMap: typings.jestDashHasteDashMap.buildModuleMapMod.default,
     __hasteMapForTest: InternalHasteMap = null
   ): HasteMap = {
-    val __obj = js.Dynamic.literal(hasteFS = hasteFS, moduleMap = moduleMap)
-    if (__hasteMapForTest != null) __obj.updateDynamic("__hasteMapForTest")(__hasteMapForTest)
+    val __obj = js.Dynamic.literal(hasteFS = hasteFS.asInstanceOf[js.Any], moduleMap = moduleMap.asInstanceOf[js.Any])
+    if (__hasteMapForTest != null) __obj.updateDynamic("__hasteMapForTest")(__hasteMapForTest.asInstanceOf[js.Any])
     __obj.asInstanceOf[HasteMap]
   }
 }

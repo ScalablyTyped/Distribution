@@ -12,8 +12,8 @@ trait ThProperties extends js.Object {
 object ThProperties {
   @scala.inline
   def apply(column: String, className: String = null): ThProperties = {
-    val __obj = js.Dynamic.literal(column = column)
-    if (className != null) __obj.updateDynamic("className")(className)
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThProperties]
   }
 }

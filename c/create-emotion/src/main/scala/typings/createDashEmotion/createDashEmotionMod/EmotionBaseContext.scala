@@ -12,7 +12,7 @@ object EmotionBaseContext {
   @scala.inline
   def apply(__SECRET_EMOTION__ : Emotion = null): EmotionBaseContext = {
     val __obj = js.Dynamic.literal()
-    if (__SECRET_EMOTION__ != null) __obj.updateDynamic("__SECRET_EMOTION__")(__SECRET_EMOTION__)
+    if (__SECRET_EMOTION__ != null) __obj.updateDynamic("__SECRET_EMOTION__")(__SECRET_EMOTION__.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmotionBaseContext]
   }
 }

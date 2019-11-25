@@ -29,12 +29,12 @@ object SingleKeyOptions {
     headerFieldNames: String = null,
     skipFields: String = null
   ): SingleKeyOptions = {
-    val __obj = js.Dynamic.literal(domainName = domainName, keySelector = keySelector, privateKey = privateKey.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(domainName = domainName.asInstanceOf[js.Any], keySelector = keySelector.asInstanceOf[js.Any], privateKey = privateKey.asInstanceOf[js.Any])
     if (cacheDir != null) __obj.updateDynamic("cacheDir")(cacheDir.asInstanceOf[js.Any])
     if (cacheTreshold != null) __obj.updateDynamic("cacheTreshold")(cacheTreshold.asInstanceOf[js.Any])
-    if (hashAlgo != null) __obj.updateDynamic("hashAlgo")(hashAlgo)
-    if (headerFieldNames != null) __obj.updateDynamic("headerFieldNames")(headerFieldNames)
-    if (skipFields != null) __obj.updateDynamic("skipFields")(skipFields)
+    if (hashAlgo != null) __obj.updateDynamic("hashAlgo")(hashAlgo.asInstanceOf[js.Any])
+    if (headerFieldNames != null) __obj.updateDynamic("headerFieldNames")(headerFieldNames.asInstanceOf[js.Any])
+    if (skipFields != null) __obj.updateDynamic("skipFields")(skipFields.asInstanceOf[js.Any])
     __obj.asInstanceOf[SingleKeyOptions]
   }
 }

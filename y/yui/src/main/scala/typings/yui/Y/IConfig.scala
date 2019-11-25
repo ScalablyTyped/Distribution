@@ -13,7 +13,7 @@ trait IConfig extends js.Object {
 object IConfig {
   @scala.inline
   def apply(optional: js.Array[String], requires: js.Array[String], use: js.Array[String]): IConfig = {
-    val __obj = js.Dynamic.literal(optional = optional, requires = requires, use = use)
+    val __obj = js.Dynamic.literal(optional = optional.asInstanceOf[js.Any], requires = requires.asInstanceOf[js.Any], use = use.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IConfig]
   }

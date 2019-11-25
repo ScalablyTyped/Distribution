@@ -16,7 +16,7 @@ trait Mute extends js.Object {
 object Mute {
   @scala.inline
   def apply(LONG: l, MEDIUM: m, SHORT: s): Mute = {
-    val __obj = js.Dynamic.literal(LONG = LONG, MEDIUM = MEDIUM, SHORT = SHORT)
+    val __obj = js.Dynamic.literal(LONG = LONG.asInstanceOf[js.Any], MEDIUM = MEDIUM.asInstanceOf[js.Any], SHORT = SHORT.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Mute]
   }

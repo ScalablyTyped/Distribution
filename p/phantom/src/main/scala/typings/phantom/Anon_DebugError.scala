@@ -25,9 +25,9 @@ object Anon_DebugError {
   ): Anon_DebugError = {
     val __obj = js.Dynamic.literal()
     if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
-    if (logger != null) __obj.updateDynamic("logger")(logger)
-    if (phantomPath != null) __obj.updateDynamic("phantomPath")(phantomPath)
-    if (shimPath != null) __obj.updateDynamic("shimPath")(shimPath)
+    if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
+    if (phantomPath != null) __obj.updateDynamic("phantomPath")(phantomPath.asInstanceOf[js.Any])
+    if (shimPath != null) __obj.updateDynamic("shimPath")(shimPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DebugError]
   }
 }

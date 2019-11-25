@@ -65,7 +65,7 @@ object StepperOptions {
     steps: Int | Double = null,
     style: single | double | interleaved | microstep = null
   ): StepperOptions = {
-    val __obj = js.Dynamic.literal(pins = pins, pwm = pwm)
+    val __obj = js.Dynamic.literal(pins = pins.asInstanceOf[js.Any], pwm = pwm.asInstanceOf[js.Any])
     if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
     if (frequency != null) __obj.updateDynamic("frequency")(frequency.asInstanceOf[js.Any])
     if (microsteps != null) __obj.updateDynamic("microsteps")(microsteps.asInstanceOf[js.Any])

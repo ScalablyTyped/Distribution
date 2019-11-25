@@ -17,7 +17,7 @@ trait ITableRow extends js.Object {
 object ITableRow {
   @scala.inline
   def apply(vqValue: js.Array[IFieldValue]): ITableRow = {
-    val __obj = js.Dynamic.literal(vqValue = vqValue)
+    val __obj = js.Dynamic.literal(vqValue = vqValue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ITableRow]
   }

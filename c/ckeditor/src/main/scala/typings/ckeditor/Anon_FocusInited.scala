@@ -13,8 +13,8 @@ object Anon_FocusInited {
   @scala.inline
   def apply(focusInited: js.UndefOr[Boolean] = js.undefined, initOnlyNew: js.UndefOr[Boolean] = js.undefined): Anon_FocusInited = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(focusInited)) __obj.updateDynamic("focusInited")(focusInited)
-    if (!js.isUndefined(initOnlyNew)) __obj.updateDynamic("initOnlyNew")(initOnlyNew)
+    if (!js.isUndefined(focusInited)) __obj.updateDynamic("focusInited")(focusInited.asInstanceOf[js.Any])
+    if (!js.isUndefined(initOnlyNew)) __obj.updateDynamic("initOnlyNew")(initOnlyNew.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FocusInited]
   }
 }

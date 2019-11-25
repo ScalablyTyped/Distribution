@@ -24,7 +24,7 @@ import typings.ssh2DashStreams.ssh2DashStreamsStrings.SETSTAT
 import typings.ssh2DashStreams.ssh2DashStreamsStrings.STAT
 import typings.ssh2DashStreams.ssh2DashStreamsStrings.SYMLINK
 import typings.ssh2DashStreams.ssh2DashStreamsStrings.WRITE
-import typings.ssh2DashStreams.ssh2DashStreamsStrings.close
+import typings.ssh2DashStreams.ssh2DashStreamsStrings.close_
 import typings.ssh2DashStreams.ssh2DashStreamsStrings.continue
 import typings.ssh2DashStreams.ssh2DashStreamsStrings.end
 import typings.ssh2DashStreams.ssh2DashStreamsStrings.error
@@ -449,7 +449,7 @@ class SFTPStream () extends Transform {
     * Emitted when the client socket was closed.
     */
   @JSName("on")
-  def on_close(event: close, listener: js.Function0[Unit]): this.type = js.native
+  def on_close(event: close_, listener: js.Function0[Unit]): this.type = js.native
   /**
     * Emitted when more requests/data can be sent to the stream.
     */

@@ -19,7 +19,7 @@ trait Anon_Ele[T] extends js.Object {
 object Anon_Ele {
   @scala.inline
   def apply[T](ele: SingularElementReturnValue, value: T): Anon_Ele[T] = {
-    val __obj = js.Dynamic.literal(ele = ele, value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(ele = ele.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Ele[T]]
   }

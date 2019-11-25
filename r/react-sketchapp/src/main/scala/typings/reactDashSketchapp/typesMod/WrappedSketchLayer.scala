@@ -11,7 +11,7 @@ trait WrappedSketchLayer extends js.Object {
 object WrappedSketchLayer {
   @scala.inline
   def apply(sketchObject: SketchLayer): WrappedSketchLayer = {
-    val __obj = js.Dynamic.literal(sketchObject = sketchObject)
+    val __obj = js.Dynamic.literal(sketchObject = sketchObject.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WrappedSketchLayer]
   }

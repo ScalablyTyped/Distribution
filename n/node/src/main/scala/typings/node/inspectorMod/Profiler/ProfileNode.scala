@@ -45,11 +45,11 @@ object ProfileNode {
     hitCount: Int | Double = null,
     positionTicks: js.Array[PositionTickInfo] = null
   ): ProfileNode = {
-    val __obj = js.Dynamic.literal(callFrame = callFrame, id = id)
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (deoptReason != null) __obj.updateDynamic("deoptReason")(deoptReason)
+    val __obj = js.Dynamic.literal(callFrame = callFrame.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (deoptReason != null) __obj.updateDynamic("deoptReason")(deoptReason.asInstanceOf[js.Any])
     if (hitCount != null) __obj.updateDynamic("hitCount")(hitCount.asInstanceOf[js.Any])
-    if (positionTicks != null) __obj.updateDynamic("positionTicks")(positionTicks)
+    if (positionTicks != null) __obj.updateDynamic("positionTicks")(positionTicks.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProfileNode]
   }
 }

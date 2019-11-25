@@ -11,7 +11,7 @@ trait RefObject extends js.Object {
 object RefObject {
   @scala.inline
   def apply(current: js.Any): RefObject = {
-    val __obj = js.Dynamic.literal(current = current)
+    val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RefObject]
   }

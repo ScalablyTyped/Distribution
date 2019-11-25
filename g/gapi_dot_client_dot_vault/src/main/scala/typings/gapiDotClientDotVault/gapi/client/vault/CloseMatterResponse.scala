@@ -13,7 +13,7 @@ object CloseMatterResponse {
   @scala.inline
   def apply(matter: Matter = null): CloseMatterResponse = {
     val __obj = js.Dynamic.literal()
-    if (matter != null) __obj.updateDynamic("matter")(matter)
+    if (matter != null) __obj.updateDynamic("matter")(matter.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloseMatterResponse]
   }
 }

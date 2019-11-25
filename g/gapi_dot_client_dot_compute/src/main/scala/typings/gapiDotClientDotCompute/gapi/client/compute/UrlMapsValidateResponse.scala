@@ -12,7 +12,7 @@ object UrlMapsValidateResponse {
   @scala.inline
   def apply(result: UrlMapValidationResult = null): UrlMapsValidateResponse = {
     val __obj = js.Dynamic.literal()
-    if (result != null) __obj.updateDynamic("result")(result)
+    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
     __obj.asInstanceOf[UrlMapsValidateResponse]
   }
 }

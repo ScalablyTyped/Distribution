@@ -26,7 +26,7 @@ trait ReleaseDefinitionShallowReference extends js.Object {
 object ReleaseDefinitionShallowReference {
   @scala.inline
   def apply(_links: js.Any, id: Double, name: String, url: String): ReleaseDefinitionShallowReference = {
-    val __obj = js.Dynamic.literal(_links = _links, id = id, name = name, url = url)
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReleaseDefinitionShallowReference]
   }

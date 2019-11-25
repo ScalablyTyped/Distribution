@@ -1,6 +1,5 @@
 package typings.atIonicCore.distTypesComponentsMod._Global_
 
-import typings.atIonicCore.distTypesComponentsRangeRangeDashInterfaceMod.RangeValue
 import typings.std.CSSStyleDeclaration
 import typings.std.Element
 import typings.std.HTMLSlotElement
@@ -87,6 +86,6 @@ class HTMLIonRangeElementCls () extends HTMLIonRangeElement {
     * the value of the range.
     */
   /* CompleteClass */
-  override var value: RangeValue = js.native
+  override var value: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RangeValue */ js.Any = js.native
 }
 

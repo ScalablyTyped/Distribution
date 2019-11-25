@@ -14,7 +14,7 @@ trait Anon_CreditCard extends js.Object {
 object Anon_CreditCard {
   @scala.inline
   def apply(paymentMethodIsSelected: Boolean, `type`: CreditCard | PayPalAccount): Anon_CreditCard = {
-    val __obj = js.Dynamic.literal(paymentMethodIsSelected = paymentMethodIsSelected)
+    val __obj = js.Dynamic.literal(paymentMethodIsSelected = paymentMethodIsSelected.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CreditCard]
   }

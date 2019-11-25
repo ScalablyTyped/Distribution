@@ -62,8 +62,8 @@ object ServerInfo {
     uri: String,
     address: String = null
   ): ServerInfo = {
-    val __obj = js.Dynamic.literal(created = created, host = host, id = id, port = port.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], started = started, uri = uri)
-    if (address != null) __obj.updateDynamic("address")(address)
+    val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], started = started.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerInfo]
   }
 }

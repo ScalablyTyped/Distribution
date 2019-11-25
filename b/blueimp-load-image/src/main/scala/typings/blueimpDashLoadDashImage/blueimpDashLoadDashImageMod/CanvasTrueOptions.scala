@@ -36,9 +36,9 @@ object CanvasTrueOptions {
     sourceWidth: Int | Double = null,
     top: Int | Double = null
   ): CanvasTrueOptions = {
-    val __obj = js.Dynamic.literal(canvas = canvas)
+    val __obj = js.Dynamic.literal(canvas = canvas.asInstanceOf[js.Any])
     if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
-    if (!js.isUndefined(crop)) __obj.updateDynamic("crop")(crop)
+    if (!js.isUndefined(crop)) __obj.updateDynamic("crop")(crop.asInstanceOf[js.Any])
     if (downsamplingRatio != null) __obj.updateDynamic("downsamplingRatio")(downsamplingRatio.asInstanceOf[js.Any])
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])

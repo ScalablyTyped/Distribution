@@ -18,9 +18,9 @@ object TargetLoggerSettings {
     serviceIdentifier: js.UndefOr[Boolean] = js.undefined
   ): TargetLoggerSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(metadata)) __obj.updateDynamic("metadata")(metadata)
-    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(serviceIdentifier)) __obj.updateDynamic("serviceIdentifier")(serviceIdentifier)
+    if (!js.isUndefined(metadata)) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(serviceIdentifier)) __obj.updateDynamic("serviceIdentifier")(serviceIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetLoggerSettings]
   }
 }

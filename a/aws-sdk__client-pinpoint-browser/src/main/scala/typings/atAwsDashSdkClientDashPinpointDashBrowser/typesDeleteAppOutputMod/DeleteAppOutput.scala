@@ -22,7 +22,7 @@ trait DeleteAppOutput extends OutputTypesUnion {
 object DeleteAppOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, ApplicationResponse: _UnmarshalledApplicationResponse): DeleteAppOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata, ApplicationResponse = ApplicationResponse)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], ApplicationResponse = ApplicationResponse.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeleteAppOutput]
   }

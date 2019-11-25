@@ -12,7 +12,7 @@ trait Maintainer extends js.Object {
 object Maintainer {
   @scala.inline
   def apply(email: String, username: String): Maintainer = {
-    val __obj = js.Dynamic.literal(email = email, username = username)
+    val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Maintainer]
   }

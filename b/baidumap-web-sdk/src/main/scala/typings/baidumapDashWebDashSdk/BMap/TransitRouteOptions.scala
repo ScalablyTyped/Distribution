@@ -38,7 +38,7 @@ object TransitRouteOptions {
     if (onSearchComplete != null) __obj.updateDynamic("onSearchComplete")(js.Any.fromFunction1(onSearchComplete))
     if (pageCapacity != null) __obj.updateDynamic("pageCapacity")(pageCapacity.asInstanceOf[js.Any])
     if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
-    if (renderOptions != null) __obj.updateDynamic("renderOptions")(renderOptions)
+    if (renderOptions != null) __obj.updateDynamic("renderOptions")(renderOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransitRouteOptions]
   }
 }

@@ -16,8 +16,8 @@ object Sink {
   @scala.inline
   def apply(codec: Record[String, _] = null, spec: Record[String, _] = null): Sink = {
     val __obj = js.Dynamic.literal()
-    if (codec != null) __obj.updateDynamic("codec")(codec)
-    if (spec != null) __obj.updateDynamic("spec")(spec)
+    if (codec != null) __obj.updateDynamic("codec")(codec.asInstanceOf[js.Any])
+    if (spec != null) __obj.updateDynamic("spec")(spec.asInstanceOf[js.Any])
     __obj.asInstanceOf[Sink]
   }
 }

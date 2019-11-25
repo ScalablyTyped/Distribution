@@ -35,10 +35,10 @@ object IPlanCreationOptionsProductHash {
     metadata: IOptionsMetadata = null,
     statement_descriptor: String = null
   ): IPlanCreationOptionsProductHash = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPlanCreationOptionsProductHash]
   }
 }

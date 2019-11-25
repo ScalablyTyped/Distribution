@@ -24,9 +24,9 @@ object DuplicateHasteCandidatesError {
     platform: String = null,
     stack: String = null
   ): DuplicateHasteCandidatesError = {
-    val __obj = js.Dynamic.literal(duplicatesSet = duplicatesSet, hasteName = hasteName, message = message, name = name, supportsNativePlatform = supportsNativePlatform)
-    if (platform != null) __obj.updateDynamic("platform")(platform)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    val __obj = js.Dynamic.literal(duplicatesSet = duplicatesSet.asInstanceOf[js.Any], hasteName = hasteName.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], supportsNativePlatform = supportsNativePlatform.asInstanceOf[js.Any])
+    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[DuplicateHasteCandidatesError]
   }
 }

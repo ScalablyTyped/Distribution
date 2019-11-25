@@ -14,3 +14,14 @@ import scala.scalajs.js.annotation._
 */
 trait HorizontalAlignment extends js.Object
 
+object HorizontalAlignment {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def center: typings.atPhosphorDatagrid.atPhosphorDatagridStrings.center = this.cast("center")
+  @scala.inline
+  def left: typings.atPhosphorDatagrid.atPhosphorDatagridStrings.left = this.cast("left")
+  @scala.inline
+  def right: typings.atPhosphorDatagrid.atPhosphorDatagridStrings.right = this.cast("right")
+}
+

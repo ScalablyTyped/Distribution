@@ -43,7 +43,7 @@ object ICellNavApi {
     rowColSelectIndex: IRowCol[TEntity] => Double,
     scrollToFocus: (TEntity, typings.uiDashGrid.uiDashGridMod.cellNav.IColumnDef) => IPromise[_]
   ): ICellNavApi[TEntity] = {
-    val __obj = js.Dynamic.literal(getCurrentSelection = js.Any.fromFunction0(getCurrentSelection), getFocusedCell = js.Any.fromFunction0(getFocusedCell), on = on, rowColSelectIndex = js.Any.fromFunction1(rowColSelectIndex), scrollToFocus = js.Any.fromFunction2(scrollToFocus))
+    val __obj = js.Dynamic.literal(getCurrentSelection = js.Any.fromFunction0(getCurrentSelection), getFocusedCell = js.Any.fromFunction0(getFocusedCell), on = on.asInstanceOf[js.Any], rowColSelectIndex = js.Any.fromFunction1(rowColSelectIndex), scrollToFocus = js.Any.fromFunction2(scrollToFocus))
   
     __obj.asInstanceOf[ICellNavApi[TEntity]]
   }

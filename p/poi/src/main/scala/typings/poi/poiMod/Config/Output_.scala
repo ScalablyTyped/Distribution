@@ -48,15 +48,15 @@ object Output_ {
     target: web | electron | `electron-renderer` | `electron-main` | node | `node-webkit` | `async-node` | webworker = null
   ): Output_ = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(clean)) __obj.updateDynamic("clean")(clean)
-    if (dir != null) __obj.updateDynamic("dir")(dir)
-    if (fileNames != null) __obj.updateDynamic("fileNames")(fileNames)
+    if (!js.isUndefined(clean)) __obj.updateDynamic("clean")(clean.asInstanceOf[js.Any])
+    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
+    if (fileNames != null) __obj.updateDynamic("fileNames")(fileNames.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
-    if (!js.isUndefined(minimize)) __obj.updateDynamic("minimize")(minimize)
-    if (moduleName != null) __obj.updateDynamic("moduleName")(moduleName)
-    if (publicUrl != null) __obj.updateDynamic("publicUrl")(publicUrl)
-    if (!js.isUndefined(sourceMap)) __obj.updateDynamic("sourceMap")(sourceMap)
+    if (!js.isUndefined(minimize)) __obj.updateDynamic("minimize")(minimize.asInstanceOf[js.Any])
+    if (moduleName != null) __obj.updateDynamic("moduleName")(moduleName.asInstanceOf[js.Any])
+    if (publicUrl != null) __obj.updateDynamic("publicUrl")(publicUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourceMap)) __obj.updateDynamic("sourceMap")(sourceMap.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[Output_]
   }

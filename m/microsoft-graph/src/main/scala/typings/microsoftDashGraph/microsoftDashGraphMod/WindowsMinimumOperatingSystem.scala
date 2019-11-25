@@ -21,9 +21,9 @@ object WindowsMinimumOperatingSystem {
     v8_1: js.UndefOr[Boolean] = js.undefined
   ): WindowsMinimumOperatingSystem = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(v10_0)) __obj.updateDynamic("v10_0")(v10_0)
-    if (!js.isUndefined(v8_0)) __obj.updateDynamic("v8_0")(v8_0)
-    if (!js.isUndefined(v8_1)) __obj.updateDynamic("v8_1")(v8_1)
+    if (!js.isUndefined(v10_0)) __obj.updateDynamic("v10_0")(v10_0.asInstanceOf[js.Any])
+    if (!js.isUndefined(v8_0)) __obj.updateDynamic("v8_0")(v8_0.asInstanceOf[js.Any])
+    if (!js.isUndefined(v8_1)) __obj.updateDynamic("v8_1")(v8_1.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowsMinimumOperatingSystem]
   }
 }

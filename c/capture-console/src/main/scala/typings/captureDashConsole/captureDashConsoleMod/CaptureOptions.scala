@@ -15,7 +15,7 @@ object CaptureOptions {
   @scala.inline
   def apply(quiet: js.UndefOr[Boolean] = js.undefined): CaptureOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet)
+    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet.asInstanceOf[js.Any])
     __obj.asInstanceOf[CaptureOptions]
   }
 }

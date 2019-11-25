@@ -39,15 +39,15 @@ object IosNotificationSettings {
     soundsEnabled: js.UndefOr[Boolean] = js.undefined
   ): IosNotificationSettings = {
     val __obj = js.Dynamic.literal()
-    if (alertType != null) __obj.updateDynamic("alertType")(alertType)
-    if (appName != null) __obj.updateDynamic("appName")(appName)
-    if (!js.isUndefined(badgesEnabled)) __obj.updateDynamic("badgesEnabled")(badgesEnabled)
-    if (bundleID != null) __obj.updateDynamic("bundleID")(bundleID)
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (publisher != null) __obj.updateDynamic("publisher")(publisher)
-    if (!js.isUndefined(showInNotificationCenter)) __obj.updateDynamic("showInNotificationCenter")(showInNotificationCenter)
-    if (!js.isUndefined(showOnLockScreen)) __obj.updateDynamic("showOnLockScreen")(showOnLockScreen)
-    if (!js.isUndefined(soundsEnabled)) __obj.updateDynamic("soundsEnabled")(soundsEnabled)
+    if (alertType != null) __obj.updateDynamic("alertType")(alertType.asInstanceOf[js.Any])
+    if (appName != null) __obj.updateDynamic("appName")(appName.asInstanceOf[js.Any])
+    if (!js.isUndefined(badgesEnabled)) __obj.updateDynamic("badgesEnabled")(badgesEnabled.asInstanceOf[js.Any])
+    if (bundleID != null) __obj.updateDynamic("bundleID")(bundleID.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (publisher != null) __obj.updateDynamic("publisher")(publisher.asInstanceOf[js.Any])
+    if (!js.isUndefined(showInNotificationCenter)) __obj.updateDynamic("showInNotificationCenter")(showInNotificationCenter.asInstanceOf[js.Any])
+    if (!js.isUndefined(showOnLockScreen)) __obj.updateDynamic("showOnLockScreen")(showOnLockScreen.asInstanceOf[js.Any])
+    if (!js.isUndefined(soundsEnabled)) __obj.updateDynamic("soundsEnabled")(soundsEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[IosNotificationSettings]
   }
 }

@@ -12,7 +12,7 @@ trait RunDetails extends js.Object {
 object RunDetails {
   @scala.inline
   def apply(failedExpectations: js.Array[ExpectationResult], order: Order): RunDetails = {
-    val __obj = js.Dynamic.literal(failedExpectations = failedExpectations, order = order)
+    val __obj = js.Dynamic.literal(failedExpectations = failedExpectations.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RunDetails]
   }

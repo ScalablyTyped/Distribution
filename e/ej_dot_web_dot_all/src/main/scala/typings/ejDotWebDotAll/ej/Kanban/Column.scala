@@ -67,16 +67,16 @@ object Column {
     width: String | Double = null
   ): Column = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowDrag)) __obj.updateDynamic("allowDrag")(allowDrag)
-    if (!js.isUndefined(allowDrop)) __obj.updateDynamic("allowDrop")(allowDrop)
-    if (constraints != null) __obj.updateDynamic("constraints")(constraints)
-    if (headerTemplate != null) __obj.updateDynamic("headerTemplate")(headerTemplate)
-    if (headerText != null) __obj.updateDynamic("headerText")(headerText)
-    if (!js.isUndefined(isCollapsed)) __obj.updateDynamic("isCollapsed")(isCollapsed)
+    if (!js.isUndefined(allowDrag)) __obj.updateDynamic("allowDrag")(allowDrag.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowDrop)) __obj.updateDynamic("allowDrop")(allowDrop.asInstanceOf[js.Any])
+    if (constraints != null) __obj.updateDynamic("constraints")(constraints.asInstanceOf[js.Any])
+    if (headerTemplate != null) __obj.updateDynamic("headerTemplate")(headerTemplate.asInstanceOf[js.Any])
+    if (headerText != null) __obj.updateDynamic("headerText")(headerText.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCollapsed)) __obj.updateDynamic("isCollapsed")(isCollapsed.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(showAddButton)) __obj.updateDynamic("showAddButton")(showAddButton)
-    if (totalCount != null) __obj.updateDynamic("totalCount")(totalCount)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (!js.isUndefined(showAddButton)) __obj.updateDynamic("showAddButton")(showAddButton.asInstanceOf[js.Any])
+    if (totalCount != null) __obj.updateDynamic("totalCount")(totalCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Column]
   }

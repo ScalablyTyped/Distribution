@@ -29,7 +29,7 @@ object Anon_CompressedSize {
     versionsNeededToExtract: Double,
     signature: Int | Double = null
   ): Anon_CompressedSize = {
-    val __obj = js.Dynamic.literal(compressedSize = compressedSize, compressionMethod = compressionMethod, crc32 = crc32, extraFieldLength = extraFieldLength, fileNameLength = fileNameLength, flags = flags, lastModifiedTime = lastModifiedTime, versionsNeededToExtract = versionsNeededToExtract)
+    val __obj = js.Dynamic.literal(compressedSize = compressedSize.asInstanceOf[js.Any], compressionMethod = compressionMethod.asInstanceOf[js.Any], crc32 = crc32.asInstanceOf[js.Any], extraFieldLength = extraFieldLength.asInstanceOf[js.Any], fileNameLength = fileNameLength.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], lastModifiedTime = lastModifiedTime.asInstanceOf[js.Any], versionsNeededToExtract = versionsNeededToExtract.asInstanceOf[js.Any])
     if (signature != null) __obj.updateDynamic("signature")(signature.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CompressedSize]
   }

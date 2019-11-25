@@ -21,10 +21,10 @@ object SpreadsheetChangingEvent {
     data: js.Any = null,
     range: Range = null
   ): SpreadsheetChangingEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (changeType != null) __obj.updateDynamic("changeType")(changeType)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (range != null) __obj.updateDynamic("range")(range)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (changeType != null) __obj.updateDynamic("changeType")(changeType.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpreadsheetChangingEvent]
   }
 }

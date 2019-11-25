@@ -32,8 +32,8 @@ object CertificateInfo {
     validity: Anon_End,
     rawDER: js.Array[Double] = null
   ): CertificateInfo = {
-    val __obj = js.Dynamic.literal(fingerprint = fingerprint, isBuiltInRoot = isBuiltInRoot, issuer = issuer, serialNumber = serialNumber, subject = subject, subjectPublicKeyInfoDigest = subjectPublicKeyInfoDigest, validity = validity)
-    if (rawDER != null) __obj.updateDynamic("rawDER")(rawDER)
+    val __obj = js.Dynamic.literal(fingerprint = fingerprint.asInstanceOf[js.Any], isBuiltInRoot = isBuiltInRoot.asInstanceOf[js.Any], issuer = issuer.asInstanceOf[js.Any], serialNumber = serialNumber.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any], subjectPublicKeyInfoDigest = subjectPublicKeyInfoDigest.asInstanceOf[js.Any], validity = validity.asInstanceOf[js.Any])
+    if (rawDER != null) __obj.updateDynamic("rawDER")(rawDER.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertificateInfo]
   }
 }

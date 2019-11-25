@@ -12,7 +12,7 @@ trait ItemDescription extends js.Object {
 object ItemDescription {
   @scala.inline
   def apply(games: js.Array[String], translations: Translations): ItemDescription = {
-    val __obj = js.Dynamic.literal(games = games, translations = translations)
+    val __obj = js.Dynamic.literal(games = games.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ItemDescription]
   }

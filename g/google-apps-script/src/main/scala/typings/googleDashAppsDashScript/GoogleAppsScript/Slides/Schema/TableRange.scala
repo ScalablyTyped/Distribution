@@ -15,7 +15,7 @@ object TableRange {
   def apply(columnSpan: Int | Double = null, location: TableCellLocation = null, rowSpan: Int | Double = null): TableRange = {
     val __obj = js.Dynamic.literal()
     if (columnSpan != null) __obj.updateDynamic("columnSpan")(columnSpan.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location)
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (rowSpan != null) __obj.updateDynamic("rowSpan")(rowSpan.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableRange]
   }

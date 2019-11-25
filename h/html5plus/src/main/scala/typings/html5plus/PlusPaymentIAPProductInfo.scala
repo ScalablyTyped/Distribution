@@ -29,8 +29,8 @@ object PlusPaymentIAPProductInfo {
   @scala.inline
   def apply(productIdentifier: String = null, quantity: String = null): PlusPaymentIAPProductInfo = {
     val __obj = js.Dynamic.literal()
-    if (productIdentifier != null) __obj.updateDynamic("productIdentifier")(productIdentifier)
-    if (quantity != null) __obj.updateDynamic("quantity")(quantity)
+    if (productIdentifier != null) __obj.updateDynamic("productIdentifier")(productIdentifier.asInstanceOf[js.Any])
+    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusPaymentIAPProductInfo]
   }
 }

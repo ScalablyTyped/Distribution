@@ -15,7 +15,7 @@ object FeatureOptions {
     roomHeight: js.Tuple2[Double, Double],
     roomWidth: js.Tuple2[Double, Double]
   ): FeatureOptions = {
-    val __obj = js.Dynamic.literal(corridorLength = corridorLength, roomHeight = roomHeight, roomWidth = roomWidth)
+    val __obj = js.Dynamic.literal(corridorLength = corridorLength.asInstanceOf[js.Any], roomHeight = roomHeight.asInstanceOf[js.Any], roomWidth = roomWidth.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FeatureOptions]
   }

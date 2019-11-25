@@ -14,9 +14,9 @@ object TypeaheadParams {
   @scala.inline
   def apply(`type`: String, count: Int | Double = null, query: String = null): TypeaheadParams = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query)
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeaheadParams]
   }
 }

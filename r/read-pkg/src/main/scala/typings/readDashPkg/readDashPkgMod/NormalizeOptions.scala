@@ -14,8 +14,8 @@ object NormalizeOptions {
   @scala.inline
   def apply(cwd: String = null, normalize: `true` = null): NormalizeOptions = {
     val __obj = js.Dynamic.literal()
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
-    if (normalize != null) __obj.updateDynamic("normalize")(normalize)
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
+    if (normalize != null) __obj.updateDynamic("normalize")(normalize.asInstanceOf[js.Any])
     __obj.asInstanceOf[NormalizeOptions]
   }
 }

@@ -24,10 +24,10 @@ object SearchResult {
     stats: Stats = null,
     total: Int | Double = null
   ): SearchResult = {
-    val __obj = js.Dynamic.literal(tests = tests)
-    if (collectCoverageFrom != null) __obj.updateDynamic("collectCoverageFrom")(collectCoverageFrom)
-    if (!js.isUndefined(noSCM)) __obj.updateDynamic("noSCM")(noSCM)
-    if (stats != null) __obj.updateDynamic("stats")(stats)
+    val __obj = js.Dynamic.literal(tests = tests.asInstanceOf[js.Any])
+    if (collectCoverageFrom != null) __obj.updateDynamic("collectCoverageFrom")(collectCoverageFrom.asInstanceOf[js.Any])
+    if (!js.isUndefined(noSCM)) __obj.updateDynamic("noSCM")(noSCM.asInstanceOf[js.Any])
+    if (stats != null) __obj.updateDynamic("stats")(stats.asInstanceOf[js.Any])
     if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchResult]
   }

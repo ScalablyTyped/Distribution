@@ -14,7 +14,7 @@ object DialogSuggestionValue {
   @scala.inline
   def apply(input: MessageInput = null): DialogSuggestionValue = {
     val __obj = js.Dynamic.literal()
-    if (input != null) __obj.updateDynamic("input")(input)
+    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogSuggestionValue]
   }
 }

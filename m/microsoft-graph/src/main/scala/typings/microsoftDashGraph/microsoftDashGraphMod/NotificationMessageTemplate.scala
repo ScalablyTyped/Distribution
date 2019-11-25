@@ -31,12 +31,12 @@ object NotificationMessageTemplate {
     localizedNotificationMessages: js.Array[LocalizedNotificationMessage] = null
   ): NotificationMessageTemplate = {
     val __obj = js.Dynamic.literal()
-    if (brandingOptions != null) __obj.updateDynamic("brandingOptions")(brandingOptions)
-    if (defaultLocale != null) __obj.updateDynamic("defaultLocale")(defaultLocale)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime)
-    if (localizedNotificationMessages != null) __obj.updateDynamic("localizedNotificationMessages")(localizedNotificationMessages)
+    if (brandingOptions != null) __obj.updateDynamic("brandingOptions")(brandingOptions.asInstanceOf[js.Any])
+    if (defaultLocale != null) __obj.updateDynamic("defaultLocale")(defaultLocale.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
+    if (localizedNotificationMessages != null) __obj.updateDynamic("localizedNotificationMessages")(localizedNotificationMessages.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationMessageTemplate]
   }
 }

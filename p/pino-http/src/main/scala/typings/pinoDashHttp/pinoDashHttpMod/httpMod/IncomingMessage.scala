@@ -14,7 +14,7 @@ trait IncomingMessage extends js.Object {
 object IncomingMessage {
   @scala.inline
   def apply(id: ReqId, log: Logger): IncomingMessage = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], log = log)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IncomingMessage]
   }

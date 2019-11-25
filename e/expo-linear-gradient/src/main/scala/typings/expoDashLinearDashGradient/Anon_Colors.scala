@@ -20,9 +20,9 @@ object Anon_Colors {
     locations: js.Array[Double] = null,
     start: Point = null
   ): Anon_Colors = {
-    val __obj = js.Dynamic.literal(colors = colors)
+    val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (locations != null) __obj.updateDynamic("locations")(locations)
+    if (locations != null) __obj.updateDynamic("locations")(locations.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Colors]
   }

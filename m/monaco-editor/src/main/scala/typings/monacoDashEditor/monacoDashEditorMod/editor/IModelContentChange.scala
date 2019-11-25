@@ -27,7 +27,7 @@ trait IModelContentChange extends js.Object {
 object IModelContentChange {
   @scala.inline
   def apply(range: IRange, rangeLength: Double, rangeOffset: Double, text: String): IModelContentChange = {
-    val __obj = js.Dynamic.literal(range = range, rangeLength = rangeLength, rangeOffset = rangeOffset, text = text)
+    val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any], rangeLength = rangeLength.asInstanceOf[js.Any], rangeOffset = rangeOffset.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IModelContentChange]
   }

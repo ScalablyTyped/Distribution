@@ -28,12 +28,12 @@ object MenuObject {
   ): MenuObject = {
     val __obj = js.Dynamic.literal()
     if (action != null) __obj.updateDynamic("action")(js.Any.fromFunction1(action))
-    if (!js.isUndefined(divider)) __obj.updateDynamic("divider")(divider)
-    if (header != null) __obj.updateDynamic("header")(header)
-    if (href != null) __obj.updateDynamic("href")(href)
-    if (subMenu != null) __obj.updateDynamic("subMenu")(subMenu)
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (!js.isUndefined(divider)) __obj.updateDynamic("divider")(divider.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
+    if (subMenu != null) __obj.updateDynamic("subMenu")(subMenu.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuObject]
   }
 }

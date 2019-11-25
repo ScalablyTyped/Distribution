@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait IntervalUnit extends js.Object
 
+object IntervalUnit {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def day: typings.stripe.stripeStrings.day = this.cast("day")
+  @scala.inline
+  def month: typings.stripe.stripeStrings.month = this.cast("month")
+  @scala.inline
+  def week: typings.stripe.stripeStrings.week = this.cast("week")
+  @scala.inline
+  def year: typings.stripe.stripeStrings.year = this.cast("year")
+}
+

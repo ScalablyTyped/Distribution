@@ -16,7 +16,7 @@ object DeleteDeveloperMetadataRequest {
   @scala.inline
   def apply(dataFilter: DataFilter = null): DeleteDeveloperMetadataRequest = {
     val __obj = js.Dynamic.literal()
-    if (dataFilter != null) __obj.updateDynamic("dataFilter")(dataFilter)
+    if (dataFilter != null) __obj.updateDynamic("dataFilter")(dataFilter.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDeveloperMetadataRequest]
   }
 }

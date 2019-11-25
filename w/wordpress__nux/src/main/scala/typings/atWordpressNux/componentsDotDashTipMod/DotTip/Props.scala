@@ -23,7 +23,7 @@ object Props {
     children: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ReactNode */ js.Any,
     tipId: String
   ): Props = {
-    val __obj = js.Dynamic.literal(children = children, tipId = tipId)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], tipId = tipId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Props]
   }

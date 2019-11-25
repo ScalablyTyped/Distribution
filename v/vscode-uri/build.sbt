@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vscode-uri"
-version := "1.0.8-34239b"
+version := "1.0.8-f894d0"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

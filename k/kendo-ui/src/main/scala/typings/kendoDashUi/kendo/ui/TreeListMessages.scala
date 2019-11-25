@@ -22,11 +22,11 @@ object TreeListMessages {
     retry: String = null
   ): TreeListMessages = {
     val __obj = js.Dynamic.literal()
-    if (commands != null) __obj.updateDynamic("commands")(commands)
-    if (loading != null) __obj.updateDynamic("loading")(loading)
-    if (noRows != null) __obj.updateDynamic("noRows")(noRows)
-    if (requestFailed != null) __obj.updateDynamic("requestFailed")(requestFailed)
-    if (retry != null) __obj.updateDynamic("retry")(retry)
+    if (commands != null) __obj.updateDynamic("commands")(commands.asInstanceOf[js.Any])
+    if (loading != null) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
+    if (noRows != null) __obj.updateDynamic("noRows")(noRows.asInstanceOf[js.Any])
+    if (requestFailed != null) __obj.updateDynamic("requestFailed")(requestFailed.asInstanceOf[js.Any])
+    if (retry != null) __obj.updateDynamic("retry")(retry.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeListMessages]
   }
 }

@@ -14,8 +14,8 @@ trait BindPattern extends Pattern {
 object BindPattern {
   @scala.inline
   def apply(expression: Expression, `type`: bind, variable: Term): BindPattern = {
-    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], variable = variable)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], variable = variable.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BindPattern]
   }
 }

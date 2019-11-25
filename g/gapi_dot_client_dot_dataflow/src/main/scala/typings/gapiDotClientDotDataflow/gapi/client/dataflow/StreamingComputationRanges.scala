@@ -15,8 +15,8 @@ object StreamingComputationRanges {
   @scala.inline
   def apply(computationId: String = null, rangeAssignments: js.Array[KeyRangeDataDiskAssignment] = null): StreamingComputationRanges = {
     val __obj = js.Dynamic.literal()
-    if (computationId != null) __obj.updateDynamic("computationId")(computationId)
-    if (rangeAssignments != null) __obj.updateDynamic("rangeAssignments")(rangeAssignments)
+    if (computationId != null) __obj.updateDynamic("computationId")(computationId.asInstanceOf[js.Any])
+    if (rangeAssignments != null) __obj.updateDynamic("rangeAssignments")(rangeAssignments.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamingComputationRanges]
   }
 }

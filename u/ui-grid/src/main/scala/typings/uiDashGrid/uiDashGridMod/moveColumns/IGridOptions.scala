@@ -18,7 +18,7 @@ object IGridOptions {
   @scala.inline
   def apply(enableColumnMoving: js.UndefOr[Boolean] = js.undefined): IGridOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableColumnMoving)) __obj.updateDynamic("enableColumnMoving")(enableColumnMoving)
+    if (!js.isUndefined(enableColumnMoving)) __obj.updateDynamic("enableColumnMoving")(enableColumnMoving.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGridOptions]
   }
 }

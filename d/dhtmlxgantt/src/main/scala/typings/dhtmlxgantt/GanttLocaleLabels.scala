@@ -53,7 +53,7 @@ object GanttLocaleLabels {
     weeks: String,
     years: String
   ): GanttLocaleLabels = {
-    val __obj = js.Dynamic.literal(confirm_closing = confirm_closing, confirm_deleting = confirm_deleting, confirm_link_deleting = confirm_link_deleting, days = days, hours = hours, icon_cancel = icon_cancel, icon_delete = icon_delete, icon_details = icon_details, icon_edit = icon_edit, icon_save = icon_save, link_end = link_end, link_from = link_from, link_start = link_start, link_to = link_to, minutes = minutes, months = months, new_task = new_task, section_description = section_description, section_time = section_time, weeks = weeks, years = years)
+    val __obj = js.Dynamic.literal(confirm_closing = confirm_closing.asInstanceOf[js.Any], confirm_deleting = confirm_deleting.asInstanceOf[js.Any], confirm_link_deleting = confirm_link_deleting.asInstanceOf[js.Any], days = days.asInstanceOf[js.Any], hours = hours.asInstanceOf[js.Any], icon_cancel = icon_cancel.asInstanceOf[js.Any], icon_delete = icon_delete.asInstanceOf[js.Any], icon_details = icon_details.asInstanceOf[js.Any], icon_edit = icon_edit.asInstanceOf[js.Any], icon_save = icon_save.asInstanceOf[js.Any], link_end = link_end.asInstanceOf[js.Any], link_from = link_from.asInstanceOf[js.Any], link_start = link_start.asInstanceOf[js.Any], link_to = link_to.asInstanceOf[js.Any], minutes = minutes.asInstanceOf[js.Any], months = months.asInstanceOf[js.Any], new_task = new_task.asInstanceOf[js.Any], section_description = section_description.asInstanceOf[js.Any], section_time = section_time.asInstanceOf[js.Any], weeks = weeks.asInstanceOf[js.Any], years = years.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GanttLocaleLabels]
   }

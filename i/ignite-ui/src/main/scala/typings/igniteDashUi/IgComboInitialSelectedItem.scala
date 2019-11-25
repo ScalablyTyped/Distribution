@@ -33,9 +33,9 @@ object IgComboInitialSelectedItem {
     value: js.Any = null
   ): IgComboInitialSelectedItem = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgComboInitialSelectedItem]
   }
 }

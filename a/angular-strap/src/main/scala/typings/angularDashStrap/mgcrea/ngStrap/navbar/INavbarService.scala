@@ -11,7 +11,7 @@ trait INavbarService extends js.Object {
 object INavbarService {
   @scala.inline
   def apply(defaults: INavbarOptions): INavbarService = {
-    val __obj = js.Dynamic.literal(defaults = defaults)
+    val __obj = js.Dynamic.literal(defaults = defaults.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[INavbarService]
   }

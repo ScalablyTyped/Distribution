@@ -65,9 +65,9 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
-    if (colors != null) __obj.updateDynamic("colors")(colors)
+    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
     if (decay != null) __obj.updateDynamic("decay")(decay.asInstanceOf[js.Any])
-    if (origin != null) __obj.updateDynamic("origin")(origin)
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
     if (particleCount != null) __obj.updateDynamic("particleCount")(particleCount.asInstanceOf[js.Any])
     if (spread != null) __obj.updateDynamic("spread")(spread.asInstanceOf[js.Any])
     if (startVelocity != null) __obj.updateDynamic("startVelocity")(startVelocity.asInstanceOf[js.Any])

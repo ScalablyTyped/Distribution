@@ -50,13 +50,13 @@ object GetAliasOutput {
     RevisionId: String = null,
     RoutingConfig: _UnmarshalledAliasRoutingConfiguration = null
   ): GetAliasOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (AliasArn != null) __obj.updateDynamic("AliasArn")(AliasArn)
-    if (Description != null) __obj.updateDynamic("Description")(Description)
-    if (FunctionVersion != null) __obj.updateDynamic("FunctionVersion")(FunctionVersion)
-    if (Name != null) __obj.updateDynamic("Name")(Name)
-    if (RevisionId != null) __obj.updateDynamic("RevisionId")(RevisionId)
-    if (RoutingConfig != null) __obj.updateDynamic("RoutingConfig")(RoutingConfig)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (AliasArn != null) __obj.updateDynamic("AliasArn")(AliasArn.asInstanceOf[js.Any])
+    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
+    if (FunctionVersion != null) __obj.updateDynamic("FunctionVersion")(FunctionVersion.asInstanceOf[js.Any])
+    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
+    if (RevisionId != null) __obj.updateDynamic("RevisionId")(RevisionId.asInstanceOf[js.Any])
+    if (RoutingConfig != null) __obj.updateDynamic("RoutingConfig")(RoutingConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAliasOutput]
   }
 }

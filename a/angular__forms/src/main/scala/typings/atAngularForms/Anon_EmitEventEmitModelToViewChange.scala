@@ -20,10 +20,10 @@ object Anon_EmitEventEmitModelToViewChange {
     onlySelf: js.UndefOr[Boolean] = js.undefined
   ): Anon_EmitEventEmitModelToViewChange = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(emitEvent)) __obj.updateDynamic("emitEvent")(emitEvent)
-    if (!js.isUndefined(emitModelToViewChange)) __obj.updateDynamic("emitModelToViewChange")(emitModelToViewChange)
-    if (!js.isUndefined(emitViewToModelChange)) __obj.updateDynamic("emitViewToModelChange")(emitViewToModelChange)
-    if (!js.isUndefined(onlySelf)) __obj.updateDynamic("onlySelf")(onlySelf)
+    if (!js.isUndefined(emitEvent)) __obj.updateDynamic("emitEvent")(emitEvent.asInstanceOf[js.Any])
+    if (!js.isUndefined(emitModelToViewChange)) __obj.updateDynamic("emitModelToViewChange")(emitModelToViewChange.asInstanceOf[js.Any])
+    if (!js.isUndefined(emitViewToModelChange)) __obj.updateDynamic("emitViewToModelChange")(emitViewToModelChange.asInstanceOf[js.Any])
+    if (!js.isUndefined(onlySelf)) __obj.updateDynamic("onlySelf")(onlySelf.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_EmitEventEmitModelToViewChange]
   }
 }

@@ -25,11 +25,11 @@ object PatchPullRequestParams {
   ): PatchPullRequestParams = {
     val __obj = js.Dynamic.literal()
     if (assigneeId != null) __obj.updateDynamic("assigneeId")(assigneeId.asInstanceOf[js.Any])
-    if (comment != null) __obj.updateDynamic("comment")(comment)
-    if (description != null) __obj.updateDynamic("description")(description)
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (issueId != null) __obj.updateDynamic("issueId")(issueId.asInstanceOf[js.Any])
-    if (notifiedUserId != null) __obj.updateDynamic("notifiedUserId")(notifiedUserId)
-    if (summary != null) __obj.updateDynamic("summary")(summary)
+    if (notifiedUserId != null) __obj.updateDynamic("notifiedUserId")(notifiedUserId.asInstanceOf[js.Any])
+    if (summary != null) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
     __obj.asInstanceOf[PatchPullRequestParams]
   }
 }

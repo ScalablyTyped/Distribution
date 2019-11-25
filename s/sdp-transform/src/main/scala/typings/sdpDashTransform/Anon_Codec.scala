@@ -14,7 +14,7 @@ trait Anon_Codec extends js.Object {
 object Anon_Codec {
   @scala.inline
   def apply(codec: String, payload: Double, encoding: Int | Double = null, rate: Int | Double = null): Anon_Codec = {
-    val __obj = js.Dynamic.literal(codec = codec, payload = payload)
+    val __obj = js.Dynamic.literal(codec = codec.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (rate != null) __obj.updateDynamic("rate")(rate.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Codec]

@@ -12,7 +12,7 @@ trait IPlayToConnectionErrorEventArgs extends js.Object {
 object IPlayToConnectionErrorEventArgs {
   @scala.inline
   def apply(code: PlayToConnectionError, message: String): IPlayToConnectionErrorEventArgs = {
-    val __obj = js.Dynamic.literal(code = code, message = message)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IPlayToConnectionErrorEventArgs]
   }

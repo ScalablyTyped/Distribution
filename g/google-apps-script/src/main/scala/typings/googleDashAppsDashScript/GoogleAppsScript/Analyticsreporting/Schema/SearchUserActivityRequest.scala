@@ -24,12 +24,12 @@ object SearchUserActivityRequest {
     viewId: String = null
   ): SearchUserActivityRequest = {
     val __obj = js.Dynamic.literal()
-    if (activityTypes != null) __obj.updateDynamic("activityTypes")(activityTypes)
-    if (dateRange != null) __obj.updateDynamic("dateRange")(dateRange)
+    if (activityTypes != null) __obj.updateDynamic("activityTypes")(activityTypes.asInstanceOf[js.Any])
+    if (dateRange != null) __obj.updateDynamic("dateRange")(dateRange.asInstanceOf[js.Any])
     if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
-    if (user != null) __obj.updateDynamic("user")(user)
-    if (viewId != null) __obj.updateDynamic("viewId")(viewId)
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
+    if (viewId != null) __obj.updateDynamic("viewId")(viewId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchUserActivityRequest]
   }
 }

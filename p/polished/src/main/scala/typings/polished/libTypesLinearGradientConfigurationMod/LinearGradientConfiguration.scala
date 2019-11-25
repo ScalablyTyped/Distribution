@@ -13,9 +13,9 @@ trait LinearGradientConfiguration extends js.Object {
 object LinearGradientConfiguration {
   @scala.inline
   def apply(colorStops: js.Array[String], fallback: String = null, toDirection: String = null): LinearGradientConfiguration = {
-    val __obj = js.Dynamic.literal(colorStops = colorStops)
-    if (fallback != null) __obj.updateDynamic("fallback")(fallback)
-    if (toDirection != null) __obj.updateDynamic("toDirection")(toDirection)
+    val __obj = js.Dynamic.literal(colorStops = colorStops.asInstanceOf[js.Any])
+    if (fallback != null) __obj.updateDynamic("fallback")(fallback.asInstanceOf[js.Any])
+    if (toDirection != null) __obj.updateDynamic("toDirection")(toDirection.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinearGradientConfiguration]
   }
 }

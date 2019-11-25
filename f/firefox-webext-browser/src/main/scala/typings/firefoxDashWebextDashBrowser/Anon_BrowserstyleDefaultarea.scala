@@ -29,12 +29,12 @@ object Anon_BrowserstyleDefaultarea {
     theme_icons: js.Array[ThemeIcons] = null
   ): Anon_BrowserstyleDefaultarea = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(browser_style)) __obj.updateDynamic("browser_style")(browser_style)
-    if (default_area != null) __obj.updateDynamic("default_area")(default_area)
+    if (!js.isUndefined(browser_style)) __obj.updateDynamic("browser_style")(browser_style.asInstanceOf[js.Any])
+    if (default_area != null) __obj.updateDynamic("default_area")(default_area.asInstanceOf[js.Any])
     if (default_icon != null) __obj.updateDynamic("default_icon")(default_icon.asInstanceOf[js.Any])
-    if (default_popup != null) __obj.updateDynamic("default_popup")(default_popup)
-    if (default_title != null) __obj.updateDynamic("default_title")(default_title)
-    if (theme_icons != null) __obj.updateDynamic("theme_icons")(theme_icons)
+    if (default_popup != null) __obj.updateDynamic("default_popup")(default_popup.asInstanceOf[js.Any])
+    if (default_title != null) __obj.updateDynamic("default_title")(default_title.asInstanceOf[js.Any])
+    if (theme_icons != null) __obj.updateDynamic("theme_icons")(theme_icons.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BrowserstyleDefaultarea]
   }
 }

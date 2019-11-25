@@ -12,8 +12,8 @@ trait AWSOptions extends js.Object {
 object AWSOptions {
   @scala.inline
   def apply(secret: String, bucket: String = null): AWSOptions = {
-    val __obj = js.Dynamic.literal(secret = secret)
-    if (bucket != null) __obj.updateDynamic("bucket")(bucket)
+    val __obj = js.Dynamic.literal(secret = secret.asInstanceOf[js.Any])
+    if (bucket != null) __obj.updateDynamic("bucket")(bucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[AWSOptions]
   }
 }

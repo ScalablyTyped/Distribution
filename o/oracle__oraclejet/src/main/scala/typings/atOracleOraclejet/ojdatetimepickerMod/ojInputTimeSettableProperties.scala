@@ -68,11 +68,11 @@ object ojInputTimeSettableProperties {
     min: String = null,
     validators: js.Array[Validator[String] | RegisteredValidator] = null
   ): ojInputTimeSettableProperties = {
-    val __obj = js.Dynamic.literal(asyncValidators = asyncValidators, autocomplete = autocomplete.asInstanceOf[js.Any], autofocus = autofocus, converter = converter.asInstanceOf[js.Any], disabled = disabled, displayOptions = displayOptions, help = help, helpHints = helpHints, keyboardEdit = keyboardEdit.asInstanceOf[js.Any], labelHint = labelHint, messagesCustom = messagesCustom, pickerAttributes = pickerAttributes, placeholder = placeholder, rawValue = rawValue, readonly = readonly, renderMode = renderMode.asInstanceOf[js.Any], required = required, timePicker = timePicker, translations = translations, valid = valid.asInstanceOf[js.Any], value = value)
-    if (describedBy != null) __obj.updateDynamic("describedBy")(describedBy)
-    if (max != null) __obj.updateDynamic("max")(max)
-    if (min != null) __obj.updateDynamic("min")(min)
-    if (validators != null) __obj.updateDynamic("validators")(validators)
+    val __obj = js.Dynamic.literal(asyncValidators = asyncValidators.asInstanceOf[js.Any], autocomplete = autocomplete.asInstanceOf[js.Any], autofocus = autofocus.asInstanceOf[js.Any], converter = converter.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], displayOptions = displayOptions.asInstanceOf[js.Any], help = help.asInstanceOf[js.Any], helpHints = helpHints.asInstanceOf[js.Any], keyboardEdit = keyboardEdit.asInstanceOf[js.Any], labelHint = labelHint.asInstanceOf[js.Any], messagesCustom = messagesCustom.asInstanceOf[js.Any], pickerAttributes = pickerAttributes.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any], rawValue = rawValue.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any], renderMode = renderMode.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], timePicker = timePicker.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (describedBy != null) __obj.updateDynamic("describedBy")(describedBy.asInstanceOf[js.Any])
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (validators != null) __obj.updateDynamic("validators")(validators.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojInputTimeSettableProperties]
   }
 }

@@ -19,8 +19,8 @@ object DataBindingEventUIParam {
   @scala.inline
   def apply(dataSource: js.Any = null, owner: js.Any = null): DataBindingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataBindingEventUIParam]
   }
 }

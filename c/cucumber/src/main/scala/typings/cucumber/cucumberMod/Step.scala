@@ -27,7 +27,7 @@ object Step {
     scenario: Scenario,
     uri: String
   ): Step = {
-    val __obj = js.Dynamic.literal(arguments = arguments, isBackground = isBackground, keyword = keyword, keywordType = keywordType, line = line, name = name, scenario = scenario, uri = uri)
+    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], isBackground = isBackground.asInstanceOf[js.Any], keyword = keyword.asInstanceOf[js.Any], keywordType = keywordType.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], scenario = scenario.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Step]
   }

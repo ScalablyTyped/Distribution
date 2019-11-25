@@ -13,7 +13,7 @@ trait TestSuiteCloneRequest extends js.Object {
 object TestSuiteCloneRequest {
   @scala.inline
   def apply(cloneOptions: CloneOptions, destinationSuiteId: Double, destinationSuiteProjectName: String): TestSuiteCloneRequest = {
-    val __obj = js.Dynamic.literal(cloneOptions = cloneOptions, destinationSuiteId = destinationSuiteId, destinationSuiteProjectName = destinationSuiteProjectName)
+    val __obj = js.Dynamic.literal(cloneOptions = cloneOptions.asInstanceOf[js.Any], destinationSuiteId = destinationSuiteId.asInstanceOf[js.Any], destinationSuiteProjectName = destinationSuiteProjectName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TestSuiteCloneRequest]
   }

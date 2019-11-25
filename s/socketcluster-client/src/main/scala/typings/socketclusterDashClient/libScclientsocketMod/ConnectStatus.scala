@@ -22,9 +22,9 @@ object ConnectStatus {
     authError: Error = null,
     authToken: js.Object = null
   ): ConnectStatus = {
-    val __obj = js.Dynamic.literal(id = id, isAuthenticated = isAuthenticated, pingTimeout = pingTimeout)
-    if (authError != null) __obj.updateDynamic("authError")(authError)
-    if (authToken != null) __obj.updateDynamic("authToken")(authToken)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], isAuthenticated = isAuthenticated.asInstanceOf[js.Any], pingTimeout = pingTimeout.asInstanceOf[js.Any])
+    if (authError != null) __obj.updateDynamic("authError")(authError.asInstanceOf[js.Any])
+    if (authToken != null) __obj.updateDynamic("authToken")(authToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectStatus]
   }
 }

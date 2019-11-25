@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait FilterTransform extends Transforms {
+trait FilterTransform extends _Transforms {
   var expr: ExprString
   var `type`: filter
 }
@@ -13,8 +13,8 @@ trait FilterTransform extends Transforms {
 object FilterTransform {
   @scala.inline
   def apply(expr: ExprString, `type`: filter): FilterTransform = {
-    val __obj = js.Dynamic.literal(expr = expr)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(expr = expr.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterTransform]
   }
 }

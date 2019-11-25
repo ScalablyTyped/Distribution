@@ -12,7 +12,7 @@ object AddLifecycleRuleOptions {
   @scala.inline
   def apply(append: js.UndefOr[Boolean] = js.undefined): AddLifecycleRuleOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(append)) __obj.updateDynamic("append")(append)
+    if (!js.isUndefined(append)) __obj.updateDynamic("append")(append.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddLifecycleRuleOptions]
   }
 }

@@ -30,11 +30,11 @@ object IHelmetHstsConfiguration {
     setIf: (/* req */ Request[ParamsDictionary], /* res */ Response) => Boolean = null
   ): IHelmetHstsConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
-    if (!js.isUndefined(includeSubDomains)) __obj.updateDynamic("includeSubDomains")(includeSubDomains)
-    if (!js.isUndefined(includeSubdomains)) __obj.updateDynamic("includeSubdomains")(includeSubdomains)
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeSubDomains)) __obj.updateDynamic("includeSubDomains")(includeSubDomains.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeSubdomains)) __obj.updateDynamic("includeSubdomains")(includeSubdomains.asInstanceOf[js.Any])
     if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
-    if (!js.isUndefined(preload)) __obj.updateDynamic("preload")(preload)
+    if (!js.isUndefined(preload)) __obj.updateDynamic("preload")(preload.asInstanceOf[js.Any])
     if (setIf != null) __obj.updateDynamic("setIf")(js.Any.fromFunction2(setIf))
     __obj.asInstanceOf[IHelmetHstsConfiguration]
   }

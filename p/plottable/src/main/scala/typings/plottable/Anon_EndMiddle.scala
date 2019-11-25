@@ -16,7 +16,7 @@ trait Anon_EndMiddle extends js.Object {
 object Anon_EndMiddle {
   @scala.inline
   def apply(end: end, middle: middle, start: start): Anon_EndMiddle = {
-    val __obj = js.Dynamic.literal(end = end, middle = middle, start = start)
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], middle = middle.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EndMiddle]
   }

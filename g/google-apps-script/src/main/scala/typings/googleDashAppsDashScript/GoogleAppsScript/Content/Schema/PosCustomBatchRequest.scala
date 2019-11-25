@@ -12,7 +12,7 @@ object PosCustomBatchRequest {
   @scala.inline
   def apply(entries: js.Array[PosCustomBatchRequestEntry] = null): PosCustomBatchRequest = {
     val __obj = js.Dynamic.literal()
-    if (entries != null) __obj.updateDynamic("entries")(entries)
+    if (entries != null) __obj.updateDynamic("entries")(entries.asInstanceOf[js.Any])
     __obj.asInstanceOf[PosCustomBatchRequest]
   }
 }

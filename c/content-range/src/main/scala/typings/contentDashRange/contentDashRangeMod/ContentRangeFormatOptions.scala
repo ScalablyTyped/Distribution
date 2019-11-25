@@ -21,7 +21,7 @@ object ContentRangeFormatOptions {
     length: Int | Double = null,
     limit: Int | Double = null
   ): ContentRangeFormatOptions = {
-    val __obj = js.Dynamic.literal(unit = unit)
+    val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any])
     if (first != null) __obj.updateDynamic("first")(first.asInstanceOf[js.Any])
     if (last != null) __obj.updateDynamic("last")(last.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])

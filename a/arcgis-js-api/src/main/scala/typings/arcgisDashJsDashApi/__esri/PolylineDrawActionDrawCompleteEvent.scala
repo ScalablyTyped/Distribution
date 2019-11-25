@@ -19,8 +19,8 @@ object PolylineDrawActionDrawCompleteEvent {
     `type`: String,
     vertices: js.Array[js.Array[Double]]
   ): PolylineDrawActionDrawCompleteEvent = {
-    val __obj = js.Dynamic.literal(defaultPrevented = defaultPrevented, preventDefault = preventDefault, vertices = vertices)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(defaultPrevented = defaultPrevented.asInstanceOf[js.Any], preventDefault = preventDefault.asInstanceOf[js.Any], vertices = vertices.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolylineDrawActionDrawCompleteEvent]
   }
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PartitionTransform extends Transforms {
+trait PartitionTransform extends _Transforms {
   var as: js.UndefOr[(Vector6[String | SignalRef]) | SignalRef] = js.undefined
   var field: js.UndefOr[FieldRef] = js.undefined
   var padding: js.UndefOr[Double | SignalRef] = js.undefined
@@ -31,13 +31,13 @@ object PartitionTransform {
     sort: Compare = null
   ): PartitionTransform = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (round != null) __obj.updateDynamic("round")(round.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartitionTransform]
   }
 }

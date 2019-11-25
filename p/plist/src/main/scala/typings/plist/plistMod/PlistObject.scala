@@ -13,7 +13,7 @@ object PlistObject {
   @scala.inline
   def apply(StringDictionary: /* x */ StringDictionary[PlistValue] = null): PlistObject = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[PlistObject]
   }
 }

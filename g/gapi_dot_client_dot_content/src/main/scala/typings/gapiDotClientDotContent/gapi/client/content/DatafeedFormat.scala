@@ -20,9 +20,9 @@ object DatafeedFormat {
   @scala.inline
   def apply(columnDelimiter: String = null, fileEncoding: String = null, quotingMode: String = null): DatafeedFormat = {
     val __obj = js.Dynamic.literal()
-    if (columnDelimiter != null) __obj.updateDynamic("columnDelimiter")(columnDelimiter)
-    if (fileEncoding != null) __obj.updateDynamic("fileEncoding")(fileEncoding)
-    if (quotingMode != null) __obj.updateDynamic("quotingMode")(quotingMode)
+    if (columnDelimiter != null) __obj.updateDynamic("columnDelimiter")(columnDelimiter.asInstanceOf[js.Any])
+    if (fileEncoding != null) __obj.updateDynamic("fileEncoding")(fileEncoding.asInstanceOf[js.Any])
+    if (quotingMode != null) __obj.updateDynamic("quotingMode")(quotingMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatafeedFormat]
   }
 }

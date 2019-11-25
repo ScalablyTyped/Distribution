@@ -41,15 +41,15 @@ object User {
     url: String = null
   ): User = {
     val __obj = js.Dynamic.literal()
-    if (about != null) __obj.updateDynamic("about")(about)
-    if (blogs != null) __obj.updateDynamic("blogs")(blogs)
-    if (created != null) __obj.updateDynamic("created")(created)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
+    if (blogs != null) __obj.updateDynamic("blogs")(blogs.asInstanceOf[js.Any])
+    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[User]
   }
 }

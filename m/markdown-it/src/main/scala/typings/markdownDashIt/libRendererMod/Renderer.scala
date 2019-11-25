@@ -23,7 +23,7 @@ object Renderer {
     renderToken: (js.Array[typings.markdownDashIt.libTokenMod.^], Double, js.Any) => String,
     rules: StringDictionary[TokenRender]
   ): Renderer = {
-    val __obj = js.Dynamic.literal(render = js.Any.fromFunction3(render), renderAttrs = js.Any.fromFunction1(renderAttrs), renderInline = js.Any.fromFunction3(renderInline), renderToken = js.Any.fromFunction3(renderToken), rules = rules)
+    val __obj = js.Dynamic.literal(render = js.Any.fromFunction3(render), renderAttrs = js.Any.fromFunction1(renderAttrs), renderInline = js.Any.fromFunction3(renderInline), renderToken = js.Any.fromFunction3(renderToken), rules = rules.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Renderer]
   }

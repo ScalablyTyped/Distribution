@@ -71,7 +71,7 @@ object Typeofconvert {
     rgb: Typeofrgb with rgb with typings.color.colorStrings.Typeofconvert,
     xyz: Typeofxyz with xyz with typings.color.colorStrings.Typeofconvert
   ): Typeofconvert = {
-    val __obj = js.Dynamic.literal(ansi16 = ansi16, ansi256 = ansi256, apple = apple, cmyk = cmyk, gray = gray, hcg = hcg, hex = hex, hsl = hsl, hsv = hsv, hwb = hwb, keyword = keyword, lab = lab, lch = lch, rgb = rgb, xyz = xyz)
+    val __obj = js.Dynamic.literal(ansi16 = ansi16.asInstanceOf[js.Any], ansi256 = ansi256.asInstanceOf[js.Any], apple = apple.asInstanceOf[js.Any], cmyk = cmyk.asInstanceOf[js.Any], gray = gray.asInstanceOf[js.Any], hcg = hcg.asInstanceOf[js.Any], hex = hex.asInstanceOf[js.Any], hsl = hsl.asInstanceOf[js.Any], hsv = hsv.asInstanceOf[js.Any], hwb = hwb.asInstanceOf[js.Any], keyword = keyword.asInstanceOf[js.Any], lab = lab.asInstanceOf[js.Any], lch = lch.asInstanceOf[js.Any], rgb = rgb.asInstanceOf[js.Any], xyz = xyz.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Typeofconvert]
   }

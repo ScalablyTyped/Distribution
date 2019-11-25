@@ -34,15 +34,15 @@ object Anon_HideYearsOnSelect {
     todayHelperRowOffset: Int | Double = null
   ): Anon_HideYearsOnSelect = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hideYearsOnSelect)) __obj.updateDynamic("hideYearsOnSelect")(hideYearsOnSelect)
+    if (!js.isUndefined(hideYearsOnSelect)) __obj.updateDynamic("hideYearsOnSelect")(hideYearsOnSelect.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
     if (overscanMonthCount != null) __obj.updateDynamic("overscanMonthCount")(overscanMonthCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldHeaderAnimate)) __obj.updateDynamic("shouldHeaderAnimate")(shouldHeaderAnimate)
-    if (!js.isUndefined(showHeader)) __obj.updateDynamic("showHeader")(showHeader)
-    if (!js.isUndefined(showMonthsForYears)) __obj.updateDynamic("showMonthsForYears")(showMonthsForYears)
-    if (!js.isUndefined(showOverlay)) __obj.updateDynamic("showOverlay")(showOverlay)
-    if (!js.isUndefined(showTodayHelper)) __obj.updateDynamic("showTodayHelper")(showTodayHelper)
-    if (!js.isUndefined(showWeekdays)) __obj.updateDynamic("showWeekdays")(showWeekdays)
+    if (!js.isUndefined(shouldHeaderAnimate)) __obj.updateDynamic("shouldHeaderAnimate")(shouldHeaderAnimate.asInstanceOf[js.Any])
+    if (!js.isUndefined(showHeader)) __obj.updateDynamic("showHeader")(showHeader.asInstanceOf[js.Any])
+    if (!js.isUndefined(showMonthsForYears)) __obj.updateDynamic("showMonthsForYears")(showMonthsForYears.asInstanceOf[js.Any])
+    if (!js.isUndefined(showOverlay)) __obj.updateDynamic("showOverlay")(showOverlay.asInstanceOf[js.Any])
+    if (!js.isUndefined(showTodayHelper)) __obj.updateDynamic("showTodayHelper")(showTodayHelper.asInstanceOf[js.Any])
+    if (!js.isUndefined(showWeekdays)) __obj.updateDynamic("showWeekdays")(showWeekdays.asInstanceOf[js.Any])
     if (todayHelperRowOffset != null) __obj.updateDynamic("todayHelperRowOffset")(todayHelperRowOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_HideYearsOnSelect]
   }

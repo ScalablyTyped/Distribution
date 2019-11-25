@@ -22,7 +22,7 @@ object OverlayPosition {
     widthPixels: Int | Double = null
   ): OverlayPosition = {
     val __obj = js.Dynamic.literal()
-    if (anchorCell != null) __obj.updateDynamic("anchorCell")(anchorCell)
+    if (anchorCell != null) __obj.updateDynamic("anchorCell")(anchorCell.asInstanceOf[js.Any])
     if (heightPixels != null) __obj.updateDynamic("heightPixels")(heightPixels.asInstanceOf[js.Any])
     if (offsetXPixels != null) __obj.updateDynamic("offsetXPixels")(offsetXPixels.asInstanceOf[js.Any])
     if (offsetYPixels != null) __obj.updateDynamic("offsetYPixels")(offsetYPixels.asInstanceOf[js.Any])

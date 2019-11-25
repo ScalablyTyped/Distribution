@@ -34,13 +34,13 @@ object Options {
     stream: WriteStream = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (!js.isUndefined(compiledIn)) __obj.updateDynamic("compiledIn")(compiledIn)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (!js.isUndefined(compiledIn)) __obj.updateDynamic("compiledIn")(compiledIn.asInstanceOf[js.Any])
     if (done != null) __obj.updateDynamic("done")(js.Any.fromFunction2(done))
-    if (!js.isUndefined(minimal)) __obj.updateDynamic("minimal")(minimal)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(profile)) __obj.updateDynamic("profile")(profile)
-    if (stream != null) __obj.updateDynamic("stream")(stream)
+    if (!js.isUndefined(minimal)) __obj.updateDynamic("minimal")(minimal.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(profile)) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
+    if (stream != null) __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

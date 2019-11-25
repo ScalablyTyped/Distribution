@@ -22,11 +22,11 @@ object CypherOptions {
     query: js.Object = null
   ): CypherOptions = {
     val __obj = js.Dynamic.literal()
-    if (commit != null) __obj.updateDynamic("commit")(commit)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (lean != null) __obj.updateDynamic("lean")(lean)
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (query != null) __obj.updateDynamic("query")(query)
+    if (commit != null) __obj.updateDynamic("commit")(commit.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (lean != null) __obj.updateDynamic("lean")(lean.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     __obj.asInstanceOf[CypherOptions]
   }
 }

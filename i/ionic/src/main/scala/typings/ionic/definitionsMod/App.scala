@@ -23,10 +23,10 @@ object App {
     org: Org = null,
     repo_url: String = null
   ): App = {
-    val __obj = js.Dynamic.literal(id = id, name = name, slug = slug)
-    if (association != null) __obj.updateDynamic("association")(association)
-    if (org != null) __obj.updateDynamic("org")(org)
-    if (repo_url != null) __obj.updateDynamic("repo_url")(repo_url)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
+    if (association != null) __obj.updateDynamic("association")(association.asInstanceOf[js.Any])
+    if (org != null) __obj.updateDynamic("org")(org.asInstanceOf[js.Any])
+    if (repo_url != null) __obj.updateDynamic("repo_url")(repo_url.asInstanceOf[js.Any])
     __obj.asInstanceOf[App]
   }
 }

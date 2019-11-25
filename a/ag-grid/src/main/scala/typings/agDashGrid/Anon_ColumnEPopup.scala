@@ -32,14 +32,14 @@ object Anon_ColumnEPopup {
     nudgeY: Int | Double = null,
     rowNode: RowNode = null
   ): Anon_ColumnEPopup = {
-    val __obj = js.Dynamic.literal(ePopup = ePopup, eventSource = eventSource)
-    __obj.updateDynamic("type")(`type`)
-    if (column != null) __obj.updateDynamic("column")(column)
-    if (!js.isUndefined(keepWithinBounds)) __obj.updateDynamic("keepWithinBounds")(keepWithinBounds)
+    val __obj = js.Dynamic.literal(ePopup = ePopup.asInstanceOf[js.Any], eventSource = eventSource.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepWithinBounds)) __obj.updateDynamic("keepWithinBounds")(keepWithinBounds.asInstanceOf[js.Any])
     if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
     if (nudgeX != null) __obj.updateDynamic("nudgeX")(nudgeX.asInstanceOf[js.Any])
     if (nudgeY != null) __obj.updateDynamic("nudgeY")(nudgeY.asInstanceOf[js.Any])
-    if (rowNode != null) __obj.updateDynamic("rowNode")(rowNode)
+    if (rowNode != null) __obj.updateDynamic("rowNode")(rowNode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ColumnEPopup]
   }
 }

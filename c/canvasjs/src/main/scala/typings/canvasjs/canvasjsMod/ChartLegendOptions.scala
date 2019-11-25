@@ -165,18 +165,18 @@ object ChartLegendOptions {
     verticalAlign: String = null
   ): ChartLegendOptions = {
     val __obj = js.Dynamic.literal()
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor)
-    if (!js.isUndefined(dockInsidePlotArea)) __obj.updateDynamic("dockInsidePlotArea")(dockInsidePlotArea)
-    if (fontColor != null) __obj.updateDynamic("fontColor")(fontColor)
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
+    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
+    if (!js.isUndefined(dockInsidePlotArea)) __obj.updateDynamic("dockInsidePlotArea")(dockInsidePlotArea.asInstanceOf[js.Any])
+    if (fontColor != null) __obj.updateDynamic("fontColor")(fontColor.asInstanceOf[js.Any])
+    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
-    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle)
-    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight)
-    if (horizontalAlign != null) __obj.updateDynamic("horizontalAlign")(horizontalAlign)
+    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
+    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
+    if (horizontalAlign != null) __obj.updateDynamic("horizontalAlign")(horizontalAlign.asInstanceOf[js.Any])
     if (itemMaxWidth != null) __obj.updateDynamic("itemMaxWidth")(itemMaxWidth.asInstanceOf[js.Any])
     if (itemTextFormatter != null) __obj.updateDynamic("itemTextFormatter")(js.Any.fromFunction1(itemTextFormatter))
     if (itemWidth != null) __obj.updateDynamic("itemWidth")(itemWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(itemWrap)) __obj.updateDynamic("itemWrap")(itemWrap)
+    if (!js.isUndefined(itemWrap)) __obj.updateDynamic("itemWrap")(itemWrap.asInstanceOf[js.Any])
     if (itemclick != null) __obj.updateDynamic("itemclick")(js.Any.fromFunction1(itemclick))
     if (itemmousemove != null) __obj.updateDynamic("itemmousemove")(js.Any.fromFunction1(itemmousemove))
     if (itemmouseout != null) __obj.updateDynamic("itemmouseout")(js.Any.fromFunction1(itemmouseout))
@@ -184,8 +184,8 @@ object ChartLegendOptions {
     if (markerMargin != null) __obj.updateDynamic("markerMargin")(markerMargin.asInstanceOf[js.Any])
     if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
     if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed)
-    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign)
+    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed.asInstanceOf[js.Any])
+    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartLegendOptions]
   }
 }

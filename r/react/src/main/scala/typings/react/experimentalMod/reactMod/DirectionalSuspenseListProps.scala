@@ -34,7 +34,7 @@ object DirectionalSuspenseListProps {
     tail: SuspenseListTailMode = null
   ): DirectionalSuspenseListProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], revealOrder = revealOrder.asInstanceOf[js.Any])
-    if (tail != null) __obj.updateDynamic("tail")(tail)
+    if (tail != null) __obj.updateDynamic("tail")(tail.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectionalSuspenseListProps]
   }
 }

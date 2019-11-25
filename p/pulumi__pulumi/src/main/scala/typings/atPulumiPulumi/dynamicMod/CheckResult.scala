@@ -19,8 +19,8 @@ object CheckResult {
   @scala.inline
   def apply(failures: js.Array[CheckFailure] = null, inputs: js.Any = null): CheckResult = {
     val __obj = js.Dynamic.literal()
-    if (failures != null) __obj.updateDynamic("failures")(failures)
-    if (inputs != null) __obj.updateDynamic("inputs")(inputs)
+    if (failures != null) __obj.updateDynamic("failures")(failures.asInstanceOf[js.Any])
+    if (inputs != null) __obj.updateDynamic("inputs")(inputs.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckResult]
   }
 }

@@ -100,20 +100,20 @@ object Discount {
     usage_limit: Int | Double = null,
     value: String = null
   ): Discount = {
-    val __obj = js.Dynamic.literal(code = code, discount_type = discount_type.asInstanceOf[js.Any])
-    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
-    if (!js.isUndefined(applies_once)) __obj.updateDynamic("applies_once")(applies_once)
-    if (!js.isUndefined(applies_once_per_customer)) __obj.updateDynamic("applies_once_per_customer")(applies_once_per_customer)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], discount_type = discount_type.asInstanceOf[js.Any])
+    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(applies_once)) __obj.updateDynamic("applies_once")(applies_once.asInstanceOf[js.Any])
+    if (!js.isUndefined(applies_once_per_customer)) __obj.updateDynamic("applies_once_per_customer")(applies_once_per_customer.asInstanceOf[js.Any])
     if (applies_to_id != null) __obj.updateDynamic("applies_to_id")(applies_to_id.asInstanceOf[js.Any])
     if (applies_to_resource != null) __obj.updateDynamic("applies_to_resource")(applies_to_resource.asInstanceOf[js.Any])
-    if (ends_at != null) __obj.updateDynamic("ends_at")(ends_at)
+    if (ends_at != null) __obj.updateDynamic("ends_at")(ends_at.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (minimum_order_amount != null) __obj.updateDynamic("minimum_order_amount")(minimum_order_amount)
-    if (starts_at != null) __obj.updateDynamic("starts_at")(starts_at)
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (minimum_order_amount != null) __obj.updateDynamic("minimum_order_amount")(minimum_order_amount.asInstanceOf[js.Any])
+    if (starts_at != null) __obj.updateDynamic("starts_at")(starts_at.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (times_used != null) __obj.updateDynamic("times_used")(times_used.asInstanceOf[js.Any])
     if (usage_limit != null) __obj.updateDynamic("usage_limit")(usage_limit.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Discount]
   }
 }

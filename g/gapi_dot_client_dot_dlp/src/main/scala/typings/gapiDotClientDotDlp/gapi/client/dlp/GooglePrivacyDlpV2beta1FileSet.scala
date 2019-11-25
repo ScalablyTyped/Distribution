@@ -16,7 +16,7 @@ object GooglePrivacyDlpV2beta1FileSet {
   @scala.inline
   def apply(url: String = null): GooglePrivacyDlpV2beta1FileSet = {
     val __obj = js.Dynamic.literal()
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1FileSet]
   }
 }

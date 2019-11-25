@@ -29,11 +29,11 @@ object UpdateEnvironmentParams {
     return_response: js.UndefOr[Boolean] = js.undefined,
     size: Size | String = null
   ): UpdateEnvironmentParams = {
-    val __obj = js.Dynamic.literal(environment_id = environment_id)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response)
+    val __obj = js.Dynamic.literal(environment_id = environment_id.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateEnvironmentParams]
   }

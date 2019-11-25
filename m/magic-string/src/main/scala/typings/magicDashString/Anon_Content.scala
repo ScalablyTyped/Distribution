@@ -13,8 +13,8 @@ trait Anon_Content extends js.Object {
 object Anon_Content {
   @scala.inline
   def apply(content: MagicString, filename: String = null): Anon_Content = {
-    val __obj = js.Dynamic.literal(content = content)
-    if (filename != null) __obj.updateDynamic("filename")(filename)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Content]
   }
 }

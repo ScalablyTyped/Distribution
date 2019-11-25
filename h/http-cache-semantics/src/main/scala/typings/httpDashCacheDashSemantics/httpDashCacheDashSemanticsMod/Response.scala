@@ -12,7 +12,7 @@ trait Response extends js.Object {
 object Response {
   @scala.inline
   def apply(headers: Headers, status: Int | Double = null): Response = {
-    val __obj = js.Dynamic.literal(headers = headers)
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[Response]
   }

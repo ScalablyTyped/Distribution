@@ -14,9 +14,9 @@ object AlertOptions {
   @scala.inline
   def apply(message: String = null, ok: String = null, title: String = null): AlertOptions = {
     val __obj = js.Dynamic.literal()
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (ok != null) __obj.updateDynamic("ok")(ok)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (ok != null) __obj.updateDynamic("ok")(ok.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlertOptions]
   }
 }

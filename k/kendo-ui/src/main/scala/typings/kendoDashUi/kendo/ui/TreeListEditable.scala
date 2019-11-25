@@ -20,10 +20,10 @@ object TreeListEditable {
     window: js.Any = null
   ): TreeListEditable = {
     val __obj = js.Dynamic.literal()
-    if (mode != null) __obj.updateDynamic("mode")(mode)
-    if (!js.isUndefined(move)) __obj.updateDynamic("move")(move)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (!js.isUndefined(move)) __obj.updateDynamic("move")(move.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (window != null) __obj.updateDynamic("window")(window)
+    if (window != null) __obj.updateDynamic("window")(window.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeListEditable]
   }
 }

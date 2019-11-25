@@ -11,7 +11,7 @@ trait Data extends js.Object {
 object Data {
   @scala.inline
   def apply(data: js.Array[PieDatum]): Data = {
-    val __obj = js.Dynamic.literal(data = data)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Data]
   }

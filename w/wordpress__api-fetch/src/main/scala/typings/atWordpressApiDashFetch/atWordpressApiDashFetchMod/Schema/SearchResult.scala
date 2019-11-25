@@ -25,9 +25,9 @@ object SearchResult {
     url: String,
     _embedded: Record[String, js.Array[_]] = null
   ): SearchResult = {
-    val __obj = js.Dynamic.literal(_links = _links, id = id, subtype = subtype, title = title, url = url)
-    __obj.updateDynamic("type")(`type`)
-    if (_embedded != null) __obj.updateDynamic("_embedded")(_embedded)
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], subtype = subtype.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (_embedded != null) __obj.updateDynamic("_embedded")(_embedded.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchResult]
   }
 }

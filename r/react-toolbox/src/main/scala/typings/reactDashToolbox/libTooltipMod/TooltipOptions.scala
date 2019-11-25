@@ -30,12 +30,12 @@ object TooltipOptions {
     showOnClick: js.UndefOr[Boolean] = js.undefined
   ): TooltipOptions = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideOnClick)) __obj.updateDynamic("hideOnClick")(hideOnClick)
-    if (!js.isUndefined(passthrough)) __obj.updateDynamic("passthrough")(passthrough)
+    if (!js.isUndefined(hideOnClick)) __obj.updateDynamic("hideOnClick")(hideOnClick.asInstanceOf[js.Any])
+    if (!js.isUndefined(passthrough)) __obj.updateDynamic("passthrough")(passthrough.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(showOnClick)) __obj.updateDynamic("showOnClick")(showOnClick)
+    if (!js.isUndefined(showOnClick)) __obj.updateDynamic("showOnClick")(showOnClick.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipOptions]
   }
 }

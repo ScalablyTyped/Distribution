@@ -25,11 +25,11 @@ object WindowsInformationProtectionAppLockerFile {
     version: String = null
   ): WindowsInformationProtectionAppLockerFile = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
-    if (fileHash != null) __obj.updateDynamic("fileHash")(fileHash)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (fileHash != null) __obj.updateDynamic("fileHash")(fileHash.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowsInformationProtectionAppLockerFile]
   }
 }

@@ -21,9 +21,9 @@ object ItemsMappingHeaderMapping {
   @scala.inline
   def apply(columnStyle: js.Any = null, displayName: String = null, propertyName: String = null): ItemsMappingHeaderMapping = {
     val __obj = js.Dynamic.literal()
-    if (columnStyle != null) __obj.updateDynamic("columnStyle")(columnStyle)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (propertyName != null) __obj.updateDynamic("propertyName")(propertyName)
+    if (columnStyle != null) __obj.updateDynamic("columnStyle")(columnStyle.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (propertyName != null) __obj.updateDynamic("propertyName")(propertyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemsMappingHeaderMapping]
   }
 }

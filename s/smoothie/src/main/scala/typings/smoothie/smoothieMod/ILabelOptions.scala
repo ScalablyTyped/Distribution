@@ -29,13 +29,13 @@ object ILabelOptions {
     showIntermediateLabels: js.UndefOr[Boolean] = js.undefined
   ): ILabelOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (fillStyle != null) __obj.updateDynamic("fillStyle")(fillStyle)
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (fillStyle != null) __obj.updateDynamic("fillStyle")(fillStyle.asInstanceOf[js.Any])
+    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(intermediateLabelSameAxis)) __obj.updateDynamic("intermediateLabelSameAxis")(intermediateLabelSameAxis)
+    if (!js.isUndefined(intermediateLabelSameAxis)) __obj.updateDynamic("intermediateLabelSameAxis")(intermediateLabelSameAxis.asInstanceOf[js.Any])
     if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
-    if (!js.isUndefined(showIntermediateLabels)) __obj.updateDynamic("showIntermediateLabels")(showIntermediateLabels)
+    if (!js.isUndefined(showIntermediateLabels)) __obj.updateDynamic("showIntermediateLabels")(showIntermediateLabels.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILabelOptions]
   }
 }

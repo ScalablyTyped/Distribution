@@ -39,11 +39,11 @@ object QuickPickItem {
     detail: String = null,
     picked: js.UndefOr[Boolean] = js.undefined
   ): QuickPickItem = {
-    val __obj = js.Dynamic.literal(label = label)
-    if (!js.isUndefined(alwaysShow)) __obj.updateDynamic("alwaysShow")(alwaysShow)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (detail != null) __obj.updateDynamic("detail")(detail)
-    if (!js.isUndefined(picked)) __obj.updateDynamic("picked")(picked)
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
+    if (!js.isUndefined(alwaysShow)) __obj.updateDynamic("alwaysShow")(alwaysShow.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (detail != null) __obj.updateDynamic("detail")(detail.asInstanceOf[js.Any])
+    if (!js.isUndefined(picked)) __obj.updateDynamic("picked")(picked.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuickPickItem]
   }
 }

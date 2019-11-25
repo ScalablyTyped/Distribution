@@ -36,14 +36,14 @@ object ListBoxItem {
     text: String = null
   ): ListBoxItem = {
     val __obj = js.Dynamic.literal()
-    if (childItems != null) __obj.updateDynamic("childItems")(childItems)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (!js.isUndefined(groupHeader)) __obj.updateDynamic("groupHeader")(groupHeader)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (childItems != null) __obj.updateDynamic("childItems")(childItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(groupHeader)) __obj.updateDynamic("groupHeader")(groupHeader.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (parentGroupId != null) __obj.updateDynamic("parentGroupId")(parentGroupId)
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (parentGroupId != null) __obj.updateDynamic("parentGroupId")(parentGroupId.asInstanceOf[js.Any])
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBoxItem]
   }
 }

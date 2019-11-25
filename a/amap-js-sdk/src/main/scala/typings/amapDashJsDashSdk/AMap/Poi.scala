@@ -51,8 +51,8 @@ object Poi {
     `type`: String,
     website: String
   ): Poi = {
-    val __obj = js.Dynamic.literal(adcode = adcode, address = address, adname = adname, citycode = citycode, cityname = cityname, discount = discount, distance = distance, email = email, entr_location = entr_location, exit_location = exit_location, groupbuy = groupbuy, id = id, location = location, name = name, pcode = pcode, pname = pname, postcode = postcode, tel = tel, website = website)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(adcode = adcode.asInstanceOf[js.Any], address = address.asInstanceOf[js.Any], adname = adname.asInstanceOf[js.Any], citycode = citycode.asInstanceOf[js.Any], cityname = cityname.asInstanceOf[js.Any], discount = discount.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], entr_location = entr_location.asInstanceOf[js.Any], exit_location = exit_location.asInstanceOf[js.Any], groupbuy = groupbuy.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pcode = pcode.asInstanceOf[js.Any], pname = pname.asInstanceOf[js.Any], postcode = postcode.asInstanceOf[js.Any], tel = tel.asInstanceOf[js.Any], website = website.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Poi]
   }
 }

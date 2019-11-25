@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait TileLayout extends js.Object
 
+object TileLayout {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def dz: typings.sharp.sharpStrings.dz = this.cast("dz")
+  @scala.inline
+  def google: typings.sharp.sharpStrings.google = this.cast("google")
+  @scala.inline
+  def zoomify: typings.sharp.sharpStrings.zoomify = this.cast("zoomify")
+}
+

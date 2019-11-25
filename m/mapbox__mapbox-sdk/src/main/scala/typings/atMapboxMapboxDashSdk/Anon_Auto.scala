@@ -21,7 +21,7 @@ object Anon_Auto {
     bearing: Int | Double = null,
     pitch: Int | Double = null
   ): Anon_Auto = {
-    val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any], zoom = zoom)
+    val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
     if (bearing != null) __obj.updateDynamic("bearing")(bearing.asInstanceOf[js.Any])
     if (pitch != null) __obj.updateDynamic("pitch")(pitch.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Auto]

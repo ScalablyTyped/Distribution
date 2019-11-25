@@ -38,7 +38,7 @@ object NumberConstructor {
     NaN: Double,
     POSITIVE_INFINITY: Double
   ): NumberConstructor = {
-    val __obj = js.Dynamic.literal(MAX_VALUE = MAX_VALUE, MIN_VALUE = MIN_VALUE, NEGATIVE_INFINITY = NEGATIVE_INFINITY, NaN = NaN, POSITIVE_INFINITY = POSITIVE_INFINITY)
+    val __obj = js.Dynamic.literal(MAX_VALUE = MAX_VALUE.asInstanceOf[js.Any], MIN_VALUE = MIN_VALUE.asInstanceOf[js.Any], NEGATIVE_INFINITY = NEGATIVE_INFINITY.asInstanceOf[js.Any], NaN = NaN.asInstanceOf[js.Any], POSITIVE_INFINITY = POSITIVE_INFINITY.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NumberConstructor]
   }

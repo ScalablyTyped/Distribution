@@ -18,7 +18,7 @@ object AddScopeOptions {
   @scala.inline
   def apply(`override`: Boolean): AddScopeOptions = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("override")(`override`)
+    __obj.updateDynamic("override")(`override`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddScopeOptions]
   }
 }

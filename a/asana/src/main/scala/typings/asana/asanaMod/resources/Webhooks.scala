@@ -1,7 +1,6 @@
 package typings.asana.asanaMod.resources
 
 import typings.asana.asanaMod.Dispatcher
-import typings.bluebird.bluebirdMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -90,8 +89,8 @@ class Webhooks protected () extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def create(resource: Double, target: String, data: js.Any): ^[_] = js.native
-  def create(resource: Double, target: String, data: js.Any, dispatchOptions: js.Any): ^[_] = js.native
+  def create(resource: Double, target: String, data: js.Any): typings.bluebird.bluebirdMod.^[_] = js.native
+  def create(resource: Double, target: String, data: js.Any, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[_] = js.native
   /**
     * * This method permanently removes a webhook. Note that it may be possible
     * * to receive a request that was already in flight after deleting the
@@ -103,8 +102,8 @@ class Webhooks protected () extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def deleteById(webhook: String): ^[_] = js.native
-  def deleteById(webhook: String, dispatchOptions: js.Any): ^[_] = js.native
+  def deleteById(webhook: String): typings.bluebird.bluebirdMod.^[_] = js.native
+  def deleteById(webhook: String, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[_] = js.native
   /**
     * * Returns the compact representation of all webhooks your app has
     * * registered for the authenticated user in the given workspace.
@@ -118,9 +117,9 @@ class Webhooks protected () extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def getAll(workspace: Double): ^[_] = js.native
-  def getAll(workspace: Double, params: js.Any): ^[_] = js.native
-  def getAll(workspace: Double, params: js.Any, dispatchOptions: js.Any): ^[_] = js.native
+  def getAll(workspace: Double): typings.bluebird.bluebirdMod.^[_] = js.native
+  def getAll(workspace: Double, params: js.Any): typings.bluebird.bluebirdMod.^[_] = js.native
+  def getAll(workspace: Double, params: js.Any, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[_] = js.native
   /**
     * * Returns the full record for the given webhook.
     *   * @param {String} webhook The webhook to get.
@@ -132,8 +131,8 @@ class Webhooks protected () extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def getById(webhook: String): ^[_] = js.native
-  def getById(webhook: String, params: js.Any): ^[_] = js.native
-  def getById(webhook: String, params: js.Any, dispatchOptions: js.Any): ^[_] = js.native
+  def getById(webhook: String): typings.bluebird.bluebirdMod.^[_] = js.native
+  def getById(webhook: String, params: js.Any): typings.bluebird.bluebirdMod.^[_] = js.native
+  def getById(webhook: String, params: js.Any, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[_] = js.native
 }
 

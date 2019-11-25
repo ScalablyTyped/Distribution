@@ -11,7 +11,7 @@ trait Anon_Daily extends js.Object {
 object Anon_Daily {
   @scala.inline
   def apply(daily: Double): Anon_Daily = {
-    val __obj = js.Dynamic.literal(daily = daily)
+    val __obj = js.Dynamic.literal(daily = daily.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Daily]
   }

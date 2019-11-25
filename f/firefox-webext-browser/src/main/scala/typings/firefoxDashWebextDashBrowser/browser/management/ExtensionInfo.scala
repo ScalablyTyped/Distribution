@@ -68,16 +68,16 @@ object ExtensionInfo {
     updateUrl: String = null,
     versionName: String = null
   ): ExtensionInfo = {
-    val __obj = js.Dynamic.literal(description = description, enabled = enabled, id = id, installType = installType, mayDisable = mayDisable, name = name, optionsUrl = optionsUrl, version = version)
-    __obj.updateDynamic("type")(`type`)
-    if (disabledReason != null) __obj.updateDynamic("disabledReason")(disabledReason)
-    if (homepageUrl != null) __obj.updateDynamic("homepageUrl")(homepageUrl)
-    if (hostPermissions != null) __obj.updateDynamic("hostPermissions")(hostPermissions)
-    if (icons != null) __obj.updateDynamic("icons")(icons)
-    if (permissions != null) __obj.updateDynamic("permissions")(permissions)
-    if (shortName != null) __obj.updateDynamic("shortName")(shortName)
-    if (updateUrl != null) __obj.updateDynamic("updateUrl")(updateUrl)
-    if (versionName != null) __obj.updateDynamic("versionName")(versionName)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], installType = installType.asInstanceOf[js.Any], mayDisable = mayDisable.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], optionsUrl = optionsUrl.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (disabledReason != null) __obj.updateDynamic("disabledReason")(disabledReason.asInstanceOf[js.Any])
+    if (homepageUrl != null) __obj.updateDynamic("homepageUrl")(homepageUrl.asInstanceOf[js.Any])
+    if (hostPermissions != null) __obj.updateDynamic("hostPermissions")(hostPermissions.asInstanceOf[js.Any])
+    if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
+    if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
+    if (shortName != null) __obj.updateDynamic("shortName")(shortName.asInstanceOf[js.Any])
+    if (updateUrl != null) __obj.updateDynamic("updateUrl")(updateUrl.asInstanceOf[js.Any])
+    if (versionName != null) __obj.updateDynamic("versionName")(versionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtensionInfo]
   }
 }

@@ -11,7 +11,7 @@ trait Anon_EnumValuesAnonRegex extends js.Object {
 object Anon_EnumValuesAnonRegex {
   @scala.inline
   def apply(enumValues: Anon_Regex): Anon_EnumValuesAnonRegex = {
-    val __obj = js.Dynamic.literal(enumValues = enumValues)
+    val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EnumValuesAnonRegex]
   }

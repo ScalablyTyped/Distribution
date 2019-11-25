@@ -12,7 +12,7 @@ trait HighlightsRepositoryHighlightsTrayResponseBiography_with_entities extends 
 object HighlightsRepositoryHighlightsTrayResponseBiography_with_entities {
   @scala.inline
   def apply(entities: js.Array[_], raw_text: String): HighlightsRepositoryHighlightsTrayResponseBiography_with_entities = {
-    val __obj = js.Dynamic.literal(entities = entities, raw_text = raw_text)
+    val __obj = js.Dynamic.literal(entities = entities.asInstanceOf[js.Any], raw_text = raw_text.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HighlightsRepositoryHighlightsTrayResponseBiography_with_entities]
   }

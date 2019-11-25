@@ -18,9 +18,9 @@ object ShipmentInvoice {
     shipmentGroupId: String = null
   ): ShipmentInvoice = {
     val __obj = js.Dynamic.literal()
-    if (invoiceSummary != null) __obj.updateDynamic("invoiceSummary")(invoiceSummary)
-    if (lineItemInvoices != null) __obj.updateDynamic("lineItemInvoices")(lineItemInvoices)
-    if (shipmentGroupId != null) __obj.updateDynamic("shipmentGroupId")(shipmentGroupId)
+    if (invoiceSummary != null) __obj.updateDynamic("invoiceSummary")(invoiceSummary.asInstanceOf[js.Any])
+    if (lineItemInvoices != null) __obj.updateDynamic("lineItemInvoices")(lineItemInvoices.asInstanceOf[js.Any])
+    if (shipmentGroupId != null) __obj.updateDynamic("shipmentGroupId")(shipmentGroupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShipmentInvoice]
   }
 }

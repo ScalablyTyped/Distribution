@@ -27,11 +27,11 @@ object MetricDescriptor {
     typeDescriptor: MetricDescriptorTypeDescriptor = null
   ): MetricDescriptor = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (labels != null) __obj.updateDynamic("labels")(labels)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (project != null) __obj.updateDynamic("project")(project)
-    if (typeDescriptor != null) __obj.updateDynamic("typeDescriptor")(typeDescriptor)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (project != null) __obj.updateDynamic("project")(project.asInstanceOf[js.Any])
+    if (typeDescriptor != null) __obj.updateDynamic("typeDescriptor")(typeDescriptor.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricDescriptor]
   }
 }

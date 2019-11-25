@@ -39,7 +39,7 @@ object Anon_Args {
     popoverStyle: Requireable[_],
     visible: Requireable[Boolean]
   ): Anon_Args = {
-    val __obj = js.Dynamic.literal(arrowSize = arrowSize, arrowStyle = arrowStyle, backgroundStyle = backgroundStyle, contentStyle = contentStyle, displayArea = displayArea, duration = duration, easing = easing, fromRect = fromRect, onClose = onClose, onDismiss = onDismiss, placement = placement, popoverStyle = popoverStyle, visible = visible)
+    val __obj = js.Dynamic.literal(arrowSize = arrowSize.asInstanceOf[js.Any], arrowStyle = arrowStyle.asInstanceOf[js.Any], backgroundStyle = backgroundStyle.asInstanceOf[js.Any], contentStyle = contentStyle.asInstanceOf[js.Any], displayArea = displayArea.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], easing = easing.asInstanceOf[js.Any], fromRect = fromRect.asInstanceOf[js.Any], onClose = onClose.asInstanceOf[js.Any], onDismiss = onDismiss.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any], popoverStyle = popoverStyle.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Args]
   }

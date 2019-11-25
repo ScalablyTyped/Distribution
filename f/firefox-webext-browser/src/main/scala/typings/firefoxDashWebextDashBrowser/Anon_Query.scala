@@ -17,9 +17,9 @@ object Anon_Query {
   @scala.inline
   def apply(query: String = null, title: String = null, url: String = null): Anon_Query = {
     val __obj = js.Dynamic.literal()
-    if (query != null) __obj.updateDynamic("query")(query)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Query]
   }
 }

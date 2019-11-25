@@ -56,7 +56,7 @@ object Anon_BlurButton {
     touchEnd: touchEnd,
     unknown: unknown
   ): Anon_BlurButton = {
-    val __obj = js.Dynamic.literal(blurButton = blurButton, blurInput = blurInput, changeInput = changeInput, clickButton = clickButton, clickItem = clickItem, controlledPropUpdatedSelectedItem = controlledPropUpdatedSelectedItem, itemMouseEnter = itemMouseEnter, keyDownArrowDown = keyDownArrowDown, keyDownArrowUp = keyDownArrowUp, keyDownEnter = keyDownEnter, keyDownEscape = keyDownEscape, keyDownSpaceButton = keyDownSpaceButton, mouseUp = mouseUp, touchEnd = touchEnd, unknown = unknown)
+    val __obj = js.Dynamic.literal(blurButton = blurButton.asInstanceOf[js.Any], blurInput = blurInput.asInstanceOf[js.Any], changeInput = changeInput.asInstanceOf[js.Any], clickButton = clickButton.asInstanceOf[js.Any], clickItem = clickItem.asInstanceOf[js.Any], controlledPropUpdatedSelectedItem = controlledPropUpdatedSelectedItem.asInstanceOf[js.Any], itemMouseEnter = itemMouseEnter.asInstanceOf[js.Any], keyDownArrowDown = keyDownArrowDown.asInstanceOf[js.Any], keyDownArrowUp = keyDownArrowUp.asInstanceOf[js.Any], keyDownEnter = keyDownEnter.asInstanceOf[js.Any], keyDownEscape = keyDownEscape.asInstanceOf[js.Any], keyDownSpaceButton = keyDownSpaceButton.asInstanceOf[js.Any], mouseUp = mouseUp.asInstanceOf[js.Any], touchEnd = touchEnd.asInstanceOf[js.Any], unknown = unknown.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BlurButton]
   }

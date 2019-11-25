@@ -31,7 +31,7 @@ object Anon_FocusOnUpDown {
     step: Double,
     useTouch: Boolean
   ): Anon_FocusOnUpDown = {
-    val __obj = js.Dynamic.literal(focusOnUpDown = focusOnUpDown, max = max, min = min, onBlur = js.Any.fromFunction0(onBlur), onChange = js.Any.fromFunction0(onChange), onFocus = js.Any.fromFunction0(onFocus), parser = js.Any.fromFunction1(parser), prefixCls = prefixCls, step = step, useTouch = useTouch)
+    val __obj = js.Dynamic.literal(focusOnUpDown = focusOnUpDown.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], onBlur = js.Any.fromFunction0(onBlur), onChange = js.Any.fromFunction0(onChange), onFocus = js.Any.fromFunction0(onFocus), parser = js.Any.fromFunction1(parser), prefixCls = prefixCls.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any], useTouch = useTouch.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FocusOnUpDown]
   }

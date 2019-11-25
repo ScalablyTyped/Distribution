@@ -18,7 +18,7 @@ trait RSAPrivateKey extends js.Object {
 object RSAPrivateKey {
   @scala.inline
   def apply(co: String, d: String, dp: String, dq: String, e: String, n: String, p: String, q: String): RSAPrivateKey = {
-    val __obj = js.Dynamic.literal(co = co, d = d, dp = dp, dq = dq, e = e, n = n, p = p, q = q)
+    val __obj = js.Dynamic.literal(co = co.asInstanceOf[js.Any], d = d.asInstanceOf[js.Any], dp = dp.asInstanceOf[js.Any], dq = dq.asInstanceOf[js.Any], e = e.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any], q = q.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RSAPrivateKey]
   }

@@ -42,7 +42,7 @@ package object inquirerMod {
     * @template TChoiceMap
     * The choice-types to provide.
     */
-  type DistinctChoice[TChoiceMap] = String | (/* import warning: ImportType.apply Failed type conversion: TChoiceMap[keyof TChoiceMap] */ js.Any)
+  type DistinctChoice[TChoiceMap] = String | (/* import warning: importer.ImportType#apply Failed type conversion: TChoiceMap[keyof TChoiceMap] */ js.Any)
   /**
     * Represents a dynamic property for a question.
     */
@@ -105,7 +105,7 @@ package object inquirerMod {
     * @template T
     * The type of the answers.
     */
-  type RawListQuestionOptions[T /* <: Answers */] = ListQuestionOptionsBase[T, ListChoiceMap[T]]
+  type RawListQuestionOptions[T /* <: Answers */] = ListQuestionOptions[T]
   /**
     * Provides the functionality to transform an answer.
     *

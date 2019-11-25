@@ -14,7 +14,7 @@ trait Anon_Results extends js.Object {
 object Anon_Results {
   @scala.inline
   def apply(results: Vector3, returnValue: IPromiseWithIAsyncAction): Anon_Results = {
-    val __obj = js.Dynamic.literal(results = results, returnValue = returnValue)
+    val __obj = js.Dynamic.literal(results = results.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Results]
   }

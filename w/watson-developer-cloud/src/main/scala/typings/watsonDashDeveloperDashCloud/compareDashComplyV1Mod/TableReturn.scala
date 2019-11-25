@@ -25,10 +25,10 @@ object TableReturn {
     tables: js.Array[Tables] = null
   ): TableReturn = {
     val __obj = js.Dynamic.literal()
-    if (document != null) __obj.updateDynamic("document")(document)
-    if (model_id != null) __obj.updateDynamic("model_id")(model_id)
-    if (model_version != null) __obj.updateDynamic("model_version")(model_version)
-    if (tables != null) __obj.updateDynamic("tables")(tables)
+    if (document != null) __obj.updateDynamic("document")(document.asInstanceOf[js.Any])
+    if (model_id != null) __obj.updateDynamic("model_id")(model_id.asInstanceOf[js.Any])
+    if (model_version != null) __obj.updateDynamic("model_version")(model_version.asInstanceOf[js.Any])
+    if (tables != null) __obj.updateDynamic("tables")(tables.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableReturn]
   }
 }

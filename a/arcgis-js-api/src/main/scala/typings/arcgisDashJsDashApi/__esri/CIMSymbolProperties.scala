@@ -18,7 +18,7 @@ object CIMSymbolProperties {
   def apply(color: Color | js.Array[Double] | String = null, data: js.Any = null): CIMSymbolProperties = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     __obj.asInstanceOf[CIMSymbolProperties]
   }
 }

@@ -19,8 +19,8 @@ object LoginItemSettingsOptions {
   @scala.inline
   def apply(args: js.Array[String] = null, path: String = null): LoginItemSettingsOptions = {
     val __obj = js.Dynamic.literal()
-    if (args != null) __obj.updateDynamic("args")(args)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoginItemSettingsOptions]
   }
 }

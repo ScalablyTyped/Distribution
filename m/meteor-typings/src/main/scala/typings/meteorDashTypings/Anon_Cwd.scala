@@ -22,11 +22,11 @@ object Anon_Cwd {
     waitForClose: String = null
   ): Anon_Cwd = {
     val __obj = js.Dynamic.literal()
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
-    if (destination != null) __obj.updateDynamic("destination")(destination)
-    if (env != null) __obj.updateDynamic("env")(env)
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
+    if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
+    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
     if (stdio != null) __obj.updateDynamic("stdio")(stdio.asInstanceOf[js.Any])
-    if (waitForClose != null) __obj.updateDynamic("waitForClose")(waitForClose)
+    if (waitForClose != null) __obj.updateDynamic("waitForClose")(waitForClose.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Cwd]
   }
 }

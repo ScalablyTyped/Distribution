@@ -24,7 +24,7 @@ object IListingInformation {
     name: String,
     productListings: IMapView[String, ProductListing]
   ): IListingInformation = {
-    val __obj = js.Dynamic.literal(ageRating = ageRating, currentMarket = currentMarket, description = description, formattedPrice = formattedPrice, name = name, productListings = productListings)
+    val __obj = js.Dynamic.literal(ageRating = ageRating.asInstanceOf[js.Any], currentMarket = currentMarket.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], formattedPrice = formattedPrice.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], productListings = productListings.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IListingInformation]
   }

@@ -24,12 +24,12 @@ object Anon_FillColorArgb {
     textColorArgb: String = null
   ): Anon_FillColorArgb = {
     val __obj = js.Dynamic.literal()
-    if (fillColorArgb != null) __obj.updateDynamic("fillColorArgb")(fillColorArgb)
-    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
-    if (maskColorArgb != null) __obj.updateDynamic("maskColorArgb")(maskColorArgb)
-    if (moreButtonText != null) __obj.updateDynamic("moreButtonText")(moreButtonText)
-    if (moreButtonUrl != null) __obj.updateDynamic("moreButtonUrl")(moreButtonUrl)
-    if (textColorArgb != null) __obj.updateDynamic("textColorArgb")(textColorArgb)
+    if (fillColorArgb != null) __obj.updateDynamic("fillColorArgb")(fillColorArgb.asInstanceOf[js.Any])
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
+    if (maskColorArgb != null) __obj.updateDynamic("maskColorArgb")(maskColorArgb.asInstanceOf[js.Any])
+    if (moreButtonText != null) __obj.updateDynamic("moreButtonText")(moreButtonText.asInstanceOf[js.Any])
+    if (moreButtonUrl != null) __obj.updateDynamic("moreButtonUrl")(moreButtonUrl.asInstanceOf[js.Any])
+    if (textColorArgb != null) __obj.updateDynamic("textColorArgb")(textColorArgb.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FillColorArgb]
   }
 }

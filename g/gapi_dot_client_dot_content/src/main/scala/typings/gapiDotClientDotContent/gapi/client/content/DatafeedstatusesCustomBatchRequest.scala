@@ -13,7 +13,7 @@ object DatafeedstatusesCustomBatchRequest {
   @scala.inline
   def apply(entries: js.Array[DatafeedstatusesCustomBatchRequestEntry] = null): DatafeedstatusesCustomBatchRequest = {
     val __obj = js.Dynamic.literal()
-    if (entries != null) __obj.updateDynamic("entries")(entries)
+    if (entries != null) __obj.updateDynamic("entries")(entries.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatafeedstatusesCustomBatchRequest]
   }
 }

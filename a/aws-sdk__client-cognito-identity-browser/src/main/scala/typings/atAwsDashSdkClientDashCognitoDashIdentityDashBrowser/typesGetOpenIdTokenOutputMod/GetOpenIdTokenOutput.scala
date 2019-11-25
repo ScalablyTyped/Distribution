@@ -25,9 +25,9 @@ trait GetOpenIdTokenOutput extends OutputTypesUnion {
 object GetOpenIdTokenOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, IdentityId: String = null, Token: String = null): GetOpenIdTokenOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (IdentityId != null) __obj.updateDynamic("IdentityId")(IdentityId)
-    if (Token != null) __obj.updateDynamic("Token")(Token)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (IdentityId != null) __obj.updateDynamic("IdentityId")(IdentityId.asInstanceOf[js.Any])
+    if (Token != null) __obj.updateDynamic("Token")(Token.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetOpenIdTokenOutput]
   }
 }

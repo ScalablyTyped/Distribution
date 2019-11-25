@@ -158,9 +158,9 @@ object IClientSession_ {
     unhandledMessage: ISignal[IClientSession_, IMessage[MessageType]],
     kernel: IKernelConnection = null
   ): IClientSession_ = {
-    val __obj = js.Dynamic.literal(changeKernel = js.Any.fromFunction1(changeKernel), dispose = js.Any.fromFunction0(dispose), iopubMessage = iopubMessage, isDisposed = isDisposed, isReady = isReady, kernelChanged = kernelChanged, kernelDisplayName = kernelDisplayName, kernelPreference = kernelPreference, name = name, path = path, propertyChanged = propertyChanged, ready = ready, restart = js.Any.fromFunction0(restart), selectKernel = js.Any.fromFunction0(selectKernel), setName = js.Any.fromFunction1(setName), setPath = js.Any.fromFunction1(setPath), setType = js.Any.fromFunction1(setType), shutdown = js.Any.fromFunction0(shutdown), status = status, statusChanged = statusChanged, terminated = terminated, unhandledMessage = unhandledMessage)
-    __obj.updateDynamic("type")(`type`)
-    if (kernel != null) __obj.updateDynamic("kernel")(kernel)
+    val __obj = js.Dynamic.literal(changeKernel = js.Any.fromFunction1(changeKernel), dispose = js.Any.fromFunction0(dispose), iopubMessage = iopubMessage.asInstanceOf[js.Any], isDisposed = isDisposed.asInstanceOf[js.Any], isReady = isReady.asInstanceOf[js.Any], kernelChanged = kernelChanged.asInstanceOf[js.Any], kernelDisplayName = kernelDisplayName.asInstanceOf[js.Any], kernelPreference = kernelPreference.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], propertyChanged = propertyChanged.asInstanceOf[js.Any], ready = ready.asInstanceOf[js.Any], restart = js.Any.fromFunction0(restart), selectKernel = js.Any.fromFunction0(selectKernel), setName = js.Any.fromFunction1(setName), setPath = js.Any.fromFunction1(setPath), setType = js.Any.fromFunction1(setType), shutdown = js.Any.fromFunction0(shutdown), status = status.asInstanceOf[js.Any], statusChanged = statusChanged.asInstanceOf[js.Any], terminated = terminated.asInstanceOf[js.Any], unhandledMessage = unhandledMessage.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (kernel != null) __obj.updateDynamic("kernel")(kernel.asInstanceOf[js.Any])
     __obj.asInstanceOf[IClientSession_]
   }
 }

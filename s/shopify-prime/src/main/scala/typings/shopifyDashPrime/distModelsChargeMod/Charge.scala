@@ -60,16 +60,16 @@ object Charge {
     test: js.UndefOr[Boolean] = js.undefined,
     updated_at: String = null
   ): Charge = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
-    if (confirmation_url != null) __obj.updateDynamic("confirmation_url")(confirmation_url)
-    if (created_at != null) __obj.updateDynamic("created_at")(created_at)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id.asInstanceOf[js.Any])
+    if (confirmation_url != null) __obj.updateDynamic("confirmation_url")(confirmation_url.asInstanceOf[js.Any])
+    if (created_at != null) __obj.updateDynamic("created_at")(created_at.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (price != null) __obj.updateDynamic("price")(price.asInstanceOf[js.Any])
-    if (return_url != null) __obj.updateDynamic("return_url")(return_url)
+    if (return_url != null) __obj.updateDynamic("return_url")(return_url.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (!js.isUndefined(test)) __obj.updateDynamic("test")(test)
-    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at)
+    if (!js.isUndefined(test)) __obj.updateDynamic("test")(test.asInstanceOf[js.Any])
+    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at.asInstanceOf[js.Any])
     __obj.asInstanceOf[Charge]
   }
 }

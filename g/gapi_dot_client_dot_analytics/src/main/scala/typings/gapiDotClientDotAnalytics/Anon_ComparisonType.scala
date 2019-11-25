@@ -27,11 +27,11 @@ object Anon_ComparisonType {
     `type`: String = null
   ): Anon_ComparisonType = {
     val __obj = js.Dynamic.literal()
-    if (comparisonType != null) __obj.updateDynamic("comparisonType")(comparisonType)
-    if (comparisonValue != null) __obj.updateDynamic("comparisonValue")(comparisonValue)
-    if (expression != null) __obj.updateDynamic("expression")(expression)
-    if (matchType != null) __obj.updateDynamic("matchType")(matchType)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (comparisonType != null) __obj.updateDynamic("comparisonType")(comparisonType.asInstanceOf[js.Any])
+    if (comparisonValue != null) __obj.updateDynamic("comparisonValue")(comparisonValue.asInstanceOf[js.Any])
+    if (expression != null) __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
+    if (matchType != null) __obj.updateDynamic("matchType")(matchType.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ComparisonType]
   }
 }

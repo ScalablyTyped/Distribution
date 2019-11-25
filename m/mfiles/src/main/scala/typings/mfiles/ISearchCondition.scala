@@ -22,7 +22,7 @@ object ISearchCondition {
     Set: (IExpression, MFConditionType, ITypedValue) => Unit,
     TypedValue: ITypedValue
   ): ISearchCondition = {
-    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), ConditionType = ConditionType, Expression = Expression, Set = js.Any.fromFunction3(Set), TypedValue = TypedValue)
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), ConditionType = ConditionType.asInstanceOf[js.Any], Expression = Expression.asInstanceOf[js.Any], Set = js.Any.fromFunction3(Set), TypedValue = TypedValue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISearchCondition]
   }

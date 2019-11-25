@@ -19,8 +19,8 @@ object Anon_IgnoreErrors {
   @scala.inline
   def apply(ignoreErrors: js.UndefOr[Boolean] = js.undefined, packageName: String = null): Anon_IgnoreErrors = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ignoreErrors)) __obj.updateDynamic("ignoreErrors")(ignoreErrors)
-    if (packageName != null) __obj.updateDynamic("packageName")(packageName)
+    if (!js.isUndefined(ignoreErrors)) __obj.updateDynamic("ignoreErrors")(ignoreErrors.asInstanceOf[js.Any])
+    if (packageName != null) __obj.updateDynamic("packageName")(packageName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IgnoreErrors]
   }
 }

@@ -12,7 +12,7 @@ trait KeypressSelector extends js.Object {
 object KeypressSelector {
   @scala.inline
   def apply(keyPress: String, selector: String): KeypressSelector = {
-    val __obj = js.Dynamic.literal(keyPress = keyPress, selector = selector)
+    val __obj = js.Dynamic.literal(keyPress = keyPress.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[KeypressSelector]
   }

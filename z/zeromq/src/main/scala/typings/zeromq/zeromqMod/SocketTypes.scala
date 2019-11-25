@@ -39,7 +39,7 @@ object SocketTypes {
     xreq: Double,
     xsub: Double
   ): SocketTypes = {
-    val __obj = js.Dynamic.literal(dealer = dealer, pair = pair, pub = pub, pull = pull, push = push, rep = rep, req = req, router = router, stream = stream, sub = sub, xpub = xpub, xrep = xrep, xreq = xreq, xsub = xsub)
+    val __obj = js.Dynamic.literal(dealer = dealer.asInstanceOf[js.Any], pair = pair.asInstanceOf[js.Any], pub = pub.asInstanceOf[js.Any], pull = pull.asInstanceOf[js.Any], push = push.asInstanceOf[js.Any], rep = rep.asInstanceOf[js.Any], req = req.asInstanceOf[js.Any], router = router.asInstanceOf[js.Any], stream = stream.asInstanceOf[js.Any], sub = sub.asInstanceOf[js.Any], xpub = xpub.asInstanceOf[js.Any], xrep = xrep.asInstanceOf[js.Any], xreq = xreq.asInstanceOf[js.Any], xsub = xsub.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SocketTypes]
   }

@@ -12,7 +12,7 @@ trait ReposRequestPageBuildResponse extends js.Object {
 object ReposRequestPageBuildResponse {
   @scala.inline
   def apply(status: String, url: String): ReposRequestPageBuildResponse = {
-    val __obj = js.Dynamic.literal(status = status, url = url)
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReposRequestPageBuildResponse]
   }

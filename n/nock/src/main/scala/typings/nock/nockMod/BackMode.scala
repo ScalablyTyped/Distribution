@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait BackMode extends js.Object
 
+object BackMode {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def dryrun: typings.nock.nockStrings.dryrun = this.cast("dryrun")
+  @scala.inline
+  def lockdown: typings.nock.nockStrings.lockdown = this.cast("lockdown")
+  @scala.inline
+  def record: typings.nock.nockStrings.record = this.cast("record")
+  @scala.inline
+  def wild: typings.nock.nockStrings.wild = this.cast("wild")
+}
+

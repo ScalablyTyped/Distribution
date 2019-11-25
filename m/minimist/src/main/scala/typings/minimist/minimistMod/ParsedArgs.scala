@@ -25,9 +25,9 @@ object ParsedArgs {
     StringDictionary: /* arg */ StringDictionary[js.Any] = null
   ): ParsedArgs = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_")(`_`)
-    if (`--` != null) __obj.updateDynamic("--")(`--`)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.updateDynamic("_")(`_`.asInstanceOf[js.Any])
+    if (`--` != null) __obj.updateDynamic("--")(`--`.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ParsedArgs]
   }
 }

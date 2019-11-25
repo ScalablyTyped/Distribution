@@ -18,9 +18,9 @@ object ScopedCredentialDescriptor {
     transports: js.Array[Transport] = null
   ): ScopedCredentialDescriptor = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (transports != null) __obj.updateDynamic("transports")(transports)
+    if (transports != null) __obj.updateDynamic("transports")(transports.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScopedCredentialDescriptor]
   }
 }

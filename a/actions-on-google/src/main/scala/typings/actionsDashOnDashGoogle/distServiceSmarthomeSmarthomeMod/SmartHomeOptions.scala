@@ -26,9 +26,9 @@ object SmartHomeOptions {
   @scala.inline
   def apply(debug: js.UndefOr[Boolean] = js.undefined, jwt: SmartHomeJwt = null, key: String = null): SmartHomeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (jwt != null) __obj.updateDynamic("jwt")(jwt)
-    if (key != null) __obj.updateDynamic("key")(key)
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (jwt != null) __obj.updateDynamic("jwt")(jwt.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[SmartHomeOptions]
   }
 }

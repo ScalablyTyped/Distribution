@@ -20,9 +20,9 @@ object NumericLiteral {
     value: Double,
     loc: Anon_End = null
   ): NumericLiteral = {
-    val __obj = js.Dynamic.literal(raw = raw, value = value)
-    __obj.updateDynamic("type")(`type`)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[NumericLiteral]
   }
 }

@@ -18,9 +18,9 @@ object Settings {
     historyRules: js.UndefOr[Boolean] = js.undefined
   ): Settings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(binaries)) __obj.updateDynamic("binaries")(binaries)
-    if (!js.isUndefined(customIcons)) __obj.updateDynamic("customIcons")(customIcons)
-    if (!js.isUndefined(historyRules)) __obj.updateDynamic("historyRules")(historyRules)
+    if (!js.isUndefined(binaries)) __obj.updateDynamic("binaries")(binaries.asInstanceOf[js.Any])
+    if (!js.isUndefined(customIcons)) __obj.updateDynamic("customIcons")(customIcons.asInstanceOf[js.Any])
+    if (!js.isUndefined(historyRules)) __obj.updateDynamic("historyRules")(historyRules.asInstanceOf[js.Any])
     __obj.asInstanceOf[Settings]
   }
 }

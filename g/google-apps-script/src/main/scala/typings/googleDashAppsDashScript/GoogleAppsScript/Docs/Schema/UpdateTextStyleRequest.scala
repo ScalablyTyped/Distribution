@@ -14,9 +14,9 @@ object UpdateTextStyleRequest {
   @scala.inline
   def apply(fields: String = null, range: Range = null, textStyle: TextStyle = null): UpdateTextStyleRequest = {
     val __obj = js.Dynamic.literal()
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (range != null) __obj.updateDynamic("range")(range)
-    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle)
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateTextStyleRequest]
   }
 }

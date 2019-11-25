@@ -14,8 +14,8 @@ trait Anon_Marker extends js.Object {
 object Anon_Marker {
   @scala.inline
   def apply(marker: Marker, target: js.Any, `type`: String): Anon_Marker = {
-    val __obj = js.Dynamic.literal(marker = marker, target = target)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(marker = marker.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Marker]
   }
 }

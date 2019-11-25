@@ -36,18 +36,18 @@ object TableCellStyleSuggestionState {
     rowSpanSuggested: js.UndefOr[Boolean] = js.undefined
   ): TableCellStyleSuggestionState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(backgroundColorSuggested)) __obj.updateDynamic("backgroundColorSuggested")(backgroundColorSuggested)
-    if (!js.isUndefined(borderBottomSuggested)) __obj.updateDynamic("borderBottomSuggested")(borderBottomSuggested)
-    if (!js.isUndefined(borderLeftSuggested)) __obj.updateDynamic("borderLeftSuggested")(borderLeftSuggested)
-    if (!js.isUndefined(borderRightSuggested)) __obj.updateDynamic("borderRightSuggested")(borderRightSuggested)
-    if (!js.isUndefined(borderTopSuggested)) __obj.updateDynamic("borderTopSuggested")(borderTopSuggested)
-    if (!js.isUndefined(columnSpanSuggested)) __obj.updateDynamic("columnSpanSuggested")(columnSpanSuggested)
-    if (!js.isUndefined(contentAlignmentSuggested)) __obj.updateDynamic("contentAlignmentSuggested")(contentAlignmentSuggested)
-    if (!js.isUndefined(paddingBottomSuggested)) __obj.updateDynamic("paddingBottomSuggested")(paddingBottomSuggested)
-    if (!js.isUndefined(paddingLeftSuggested)) __obj.updateDynamic("paddingLeftSuggested")(paddingLeftSuggested)
-    if (!js.isUndefined(paddingRightSuggested)) __obj.updateDynamic("paddingRightSuggested")(paddingRightSuggested)
-    if (!js.isUndefined(paddingTopSuggested)) __obj.updateDynamic("paddingTopSuggested")(paddingTopSuggested)
-    if (!js.isUndefined(rowSpanSuggested)) __obj.updateDynamic("rowSpanSuggested")(rowSpanSuggested)
+    if (!js.isUndefined(backgroundColorSuggested)) __obj.updateDynamic("backgroundColorSuggested")(backgroundColorSuggested.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderBottomSuggested)) __obj.updateDynamic("borderBottomSuggested")(borderBottomSuggested.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderLeftSuggested)) __obj.updateDynamic("borderLeftSuggested")(borderLeftSuggested.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderRightSuggested)) __obj.updateDynamic("borderRightSuggested")(borderRightSuggested.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderTopSuggested)) __obj.updateDynamic("borderTopSuggested")(borderTopSuggested.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnSpanSuggested)) __obj.updateDynamic("columnSpanSuggested")(columnSpanSuggested.asInstanceOf[js.Any])
+    if (!js.isUndefined(contentAlignmentSuggested)) __obj.updateDynamic("contentAlignmentSuggested")(contentAlignmentSuggested.asInstanceOf[js.Any])
+    if (!js.isUndefined(paddingBottomSuggested)) __obj.updateDynamic("paddingBottomSuggested")(paddingBottomSuggested.asInstanceOf[js.Any])
+    if (!js.isUndefined(paddingLeftSuggested)) __obj.updateDynamic("paddingLeftSuggested")(paddingLeftSuggested.asInstanceOf[js.Any])
+    if (!js.isUndefined(paddingRightSuggested)) __obj.updateDynamic("paddingRightSuggested")(paddingRightSuggested.asInstanceOf[js.Any])
+    if (!js.isUndefined(paddingTopSuggested)) __obj.updateDynamic("paddingTopSuggested")(paddingTopSuggested.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowSpanSuggested)) __obj.updateDynamic("rowSpanSuggested")(rowSpanSuggested.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableCellStyleSuggestionState]
   }
 }

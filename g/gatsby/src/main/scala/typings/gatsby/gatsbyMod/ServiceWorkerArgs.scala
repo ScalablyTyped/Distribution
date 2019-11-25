@@ -17,7 +17,7 @@ object ServiceWorkerArgs {
     getResourcesForPathnameSync: js.Function,
     serviceWorker: ServiceWorkerRegistration
   ): ServiceWorkerArgs = {
-    val __obj = js.Dynamic.literal(getResourceURLsForPathname = getResourceURLsForPathname, getResourcesForPathname = getResourcesForPathname, getResourcesForPathnameSync = getResourcesForPathnameSync, serviceWorker = serviceWorker)
+    val __obj = js.Dynamic.literal(getResourceURLsForPathname = getResourceURLsForPathname.asInstanceOf[js.Any], getResourcesForPathname = getResourcesForPathname.asInstanceOf[js.Any], getResourcesForPathnameSync = getResourcesForPathnameSync.asInstanceOf[js.Any], serviceWorker = serviceWorker.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ServiceWorkerArgs]
   }

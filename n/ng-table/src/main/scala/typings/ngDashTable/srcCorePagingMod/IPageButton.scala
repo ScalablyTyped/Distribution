@@ -19,9 +19,9 @@ object IPageButton {
     current: js.UndefOr[Boolean] = js.undefined,
     number: Int | Double = null
   ): IPageButton = {
-    val __obj = js.Dynamic.literal(active = active)
-    __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(current)) __obj.updateDynamic("current")(current)
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(current)) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
     if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPageButton]
   }

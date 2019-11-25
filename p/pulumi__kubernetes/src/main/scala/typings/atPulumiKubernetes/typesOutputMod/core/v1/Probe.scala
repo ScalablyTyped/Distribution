@@ -61,7 +61,7 @@ object Probe {
     tcpSocket: TCPSocketAction,
     timeoutSeconds: Double
   ): Probe = {
-    val __obj = js.Dynamic.literal(exec = exec, failureThreshold = failureThreshold, httpGet = httpGet, initialDelaySeconds = initialDelaySeconds, periodSeconds = periodSeconds, successThreshold = successThreshold, tcpSocket = tcpSocket, timeoutSeconds = timeoutSeconds)
+    val __obj = js.Dynamic.literal(exec = exec.asInstanceOf[js.Any], failureThreshold = failureThreshold.asInstanceOf[js.Any], httpGet = httpGet.asInstanceOf[js.Any], initialDelaySeconds = initialDelaySeconds.asInstanceOf[js.Any], periodSeconds = periodSeconds.asInstanceOf[js.Any], successThreshold = successThreshold.asInstanceOf[js.Any], tcpSocket = tcpSocket.asInstanceOf[js.Any], timeoutSeconds = timeoutSeconds.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Probe]
   }

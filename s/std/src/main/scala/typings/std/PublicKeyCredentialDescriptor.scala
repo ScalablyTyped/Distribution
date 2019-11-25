@@ -17,9 +17,9 @@ object PublicKeyCredentialDescriptor {
     `type`: PublicKeyCredentialType,
     transports: js.Array[AuthenticatorTransport] = null
   ): PublicKeyCredentialDescriptor = {
-    val __obj = js.Dynamic.literal(id = id)
-    __obj.updateDynamic("type")(`type`)
-    if (transports != null) __obj.updateDynamic("transports")(transports)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (transports != null) __obj.updateDynamic("transports")(transports.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublicKeyCredentialDescriptor]
   }
 }

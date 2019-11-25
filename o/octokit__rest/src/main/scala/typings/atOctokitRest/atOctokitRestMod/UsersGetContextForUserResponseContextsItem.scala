@@ -12,7 +12,7 @@ trait UsersGetContextForUserResponseContextsItem extends js.Object {
 object UsersGetContextForUserResponseContextsItem {
   @scala.inline
   def apply(message: String, octicon: String): UsersGetContextForUserResponseContextsItem = {
-    val __obj = js.Dynamic.literal(message = message, octicon = octicon)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], octicon = octicon.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UsersGetContextForUserResponseContextsItem]
   }

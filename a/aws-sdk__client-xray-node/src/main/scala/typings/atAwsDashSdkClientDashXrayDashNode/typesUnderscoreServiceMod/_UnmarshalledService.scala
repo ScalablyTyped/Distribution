@@ -64,19 +64,19 @@ object _UnmarshalledService {
     Type: String = null
   ): _UnmarshalledService = {
     val __obj = js.Dynamic.literal()
-    if (AccountId != null) __obj.updateDynamic("AccountId")(AccountId)
-    if (DurationHistogram != null) __obj.updateDynamic("DurationHistogram")(DurationHistogram)
-    if (Edges != null) __obj.updateDynamic("Edges")(Edges)
-    if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime)
-    if (Name != null) __obj.updateDynamic("Name")(Name)
-    if (Names != null) __obj.updateDynamic("Names")(Names)
+    if (AccountId != null) __obj.updateDynamic("AccountId")(AccountId.asInstanceOf[js.Any])
+    if (DurationHistogram != null) __obj.updateDynamic("DurationHistogram")(DurationHistogram.asInstanceOf[js.Any])
+    if (Edges != null) __obj.updateDynamic("Edges")(Edges.asInstanceOf[js.Any])
+    if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime.asInstanceOf[js.Any])
+    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
+    if (Names != null) __obj.updateDynamic("Names")(Names.asInstanceOf[js.Any])
     if (ReferenceId != null) __obj.updateDynamic("ReferenceId")(ReferenceId.asInstanceOf[js.Any])
-    if (ResponseTimeHistogram != null) __obj.updateDynamic("ResponseTimeHistogram")(ResponseTimeHistogram)
-    if (!js.isUndefined(Root)) __obj.updateDynamic("Root")(Root)
-    if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime)
-    if (State != null) __obj.updateDynamic("State")(State)
-    if (SummaryStatistics != null) __obj.updateDynamic("SummaryStatistics")(SummaryStatistics)
-    if (Type != null) __obj.updateDynamic("Type")(Type)
+    if (ResponseTimeHistogram != null) __obj.updateDynamic("ResponseTimeHistogram")(ResponseTimeHistogram.asInstanceOf[js.Any])
+    if (!js.isUndefined(Root)) __obj.updateDynamic("Root")(Root.asInstanceOf[js.Any])
+    if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])
+    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
+    if (SummaryStatistics != null) __obj.updateDynamic("SummaryStatistics")(SummaryStatistics.asInstanceOf[js.Any])
+    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledService]
   }
 }

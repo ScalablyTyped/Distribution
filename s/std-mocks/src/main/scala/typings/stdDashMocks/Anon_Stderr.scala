@@ -11,7 +11,7 @@ trait Anon_Stderr extends js.Object {
 object Anon_Stderr {
   @scala.inline
   def apply(stderr: js.Array[String]): Anon_Stderr = {
-    val __obj = js.Dynamic.literal(stderr = stderr)
+    val __obj = js.Dynamic.literal(stderr = stderr.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Stderr]
   }

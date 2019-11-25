@@ -12,7 +12,7 @@ trait PointWorkItemProperty extends js.Object {
 object PointWorkItemProperty {
   @scala.inline
   def apply(workItem: Anon_KeyValueAny): PointWorkItemProperty = {
-    val __obj = js.Dynamic.literal(workItem = workItem)
+    val __obj = js.Dynamic.literal(workItem = workItem.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PointWorkItemProperty]
   }

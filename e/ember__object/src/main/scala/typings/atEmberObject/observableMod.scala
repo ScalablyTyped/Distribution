@@ -30,7 +30,9 @@ object observableMod extends js.Object {
       * generated lazily.
       */
     def cacheFor[K /* <: String */](key: K): js.UndefOr[
-        UnwrapComputedPropertyGetter[/* import warning: ImportType.apply Failed type conversion: this[K] */ js.Any]
+        UnwrapComputedPropertyGetter[
+          /* import warning: importer.ImportType#apply Failed type conversion: this[K] */ js.Any
+        ]
       ] = js.native
     /**
       * Set the value of a property to the current value minus some amount.
@@ -40,7 +42,9 @@ object observableMod extends js.Object {
     /**
       * Retrieves the value of a property from the object.
       */
-    def get[K /* <: String */](key: K): UnwrapComputedPropertyGetter[/* import warning: ImportType.apply Failed type conversion: this[K] */ js.Any] = js.native
+    def get[K /* <: String */](key: K): UnwrapComputedPropertyGetter[
+        /* import warning: importer.ImportType#apply Failed type conversion: this[K] */ js.Any
+      ] = js.native
     def getProperties[K /* <: String */](list: K*): Pick[UnwrapComputedPropertyGetters[this.type], K] = js.native
     /**
       * To get the values of multiple properties at once, call `getProperties`
@@ -53,8 +57,12 @@ object observableMod extends js.Object {
       */
     def getWithDefault[K /* <: String */](
       key: K,
-      defaultValue: UnwrapComputedPropertyGetter[/* import warning: ImportType.apply Failed type conversion: this[K] */ js.Any]
-    ): UnwrapComputedPropertyGetter[/* import warning: ImportType.apply Failed type conversion: this[K] */ js.Any] = js.native
+      defaultValue: UnwrapComputedPropertyGetter[
+          /* import warning: importer.ImportType#apply Failed type conversion: this[K] */ js.Any
+        ]
+    ): UnwrapComputedPropertyGetter[
+        /* import warning: importer.ImportType#apply Failed type conversion: this[K] */ js.Any
+      ] = js.native
     /**
       * Set the value of a property to the current value plus some amount.
       */
@@ -75,11 +83,14 @@ object observableMod extends js.Object {
     /**
       * Sets the provided key or path to the value.
       */
-    def set[K /* <: String */](key: K, value: /* import warning: ImportType.apply Failed type conversion: this[K] */ js.Any): /* import warning: ImportType.apply Failed type conversion: this[K] */ js.Any = js.native
+    def set[K /* <: String */](
+      key: K,
+      value: /* import warning: importer.ImportType#apply Failed type conversion: this[K] */ js.Any
+    ): /* import warning: importer.ImportType#apply Failed type conversion: this[K] */ js.Any = js.native
     def set[T](key: String, value: T): T = js.native
     def setProperties[K /* <: String */](
       // tslint:disable-next-line:unified-signatures
-    hash: /* import warning: ImportType.apply c Unsupported type mapping: 
+    hash: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ KK in K ]: any}
       */ typings.atEmberObject.atEmberObjectStrings.Observable with js.Any
     ): Pick[UnwrapComputedPropertySetters[this.type], K] = js.native

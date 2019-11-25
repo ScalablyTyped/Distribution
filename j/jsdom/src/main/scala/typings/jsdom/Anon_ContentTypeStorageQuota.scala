@@ -29,9 +29,9 @@ object Anon_ContentTypeStorageQuota {
   @scala.inline
   def apply(contentType: String = null, storageQuota: Int | Double = null, url: String = null): Anon_ContentTypeStorageQuota = {
     val __obj = js.Dynamic.literal()
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
     if (storageQuota != null) __obj.updateDynamic("storageQuota")(storageQuota.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ContentTypeStorageQuota]
   }
 }

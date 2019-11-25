@@ -1,6 +1,5 @@
 package typings.atIonicCore.distTypesComponentsMod.Components
 
-import typings.atIonicCore.distTypesComponentsActionDashSheetActionDashSheetDashInterfaceMod.ActionSheetOptions
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonActionSheetElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +11,9 @@ trait IonActionSheetController extends js.Object {
     * Create an action sheet overlay with action sheet options.
     * @param options The options to use to create the action sheet.
     */
-  def create(options: ActionSheetOptions): js.Promise[HTMLIonActionSheetElement] = js.native
+  def create(
+    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ActionSheetOptions */ js.Any
+  ): js.Promise[HTMLIonActionSheetElement] = js.native
   /**
     * Dismiss the open action sheet overlay.
     * @param data Any data to emit in the dismiss events.

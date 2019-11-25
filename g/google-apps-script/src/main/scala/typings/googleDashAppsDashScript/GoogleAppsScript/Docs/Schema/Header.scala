@@ -13,8 +13,8 @@ object Header {
   @scala.inline
   def apply(content: js.Array[StructuralElement] = null, headerId: String = null): Header = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (headerId != null) __obj.updateDynamic("headerId")(headerId)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (headerId != null) __obj.updateDynamic("headerId")(headerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Header]
   }
 }

@@ -16,8 +16,8 @@ object TargetPoolsScopedList {
   @scala.inline
   def apply(targetPools: js.Array[TargetPool] = null, warning: Anon_Code = null): TargetPoolsScopedList = {
     val __obj = js.Dynamic.literal()
-    if (targetPools != null) __obj.updateDynamic("targetPools")(targetPools)
-    if (warning != null) __obj.updateDynamic("warning")(warning)
+    if (targetPools != null) __obj.updateDynamic("targetPools")(targetPools.asInstanceOf[js.Any])
+    if (warning != null) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetPoolsScopedList]
   }
 }

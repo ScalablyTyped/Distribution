@@ -22,7 +22,7 @@ trait Anon_ErrCodeErrMsg extends js.Object {
 object Anon_ErrCodeErrMsg {
   @scala.inline
   def apply(errCode: Double, errMsg: String, openIdList: js.Array[String]): Anon_ErrCodeErrMsg = {
-    val __obj = js.Dynamic.literal(errCode = errCode, errMsg = errMsg, openIdList = openIdList)
+    val __obj = js.Dynamic.literal(errCode = errCode.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any], openIdList = openIdList.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ErrCodeErrMsg]
   }

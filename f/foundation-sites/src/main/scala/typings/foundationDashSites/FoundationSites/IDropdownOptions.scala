@@ -30,14 +30,14 @@ object IDropdownOptions {
     vOffset: Int | Double = null
   ): IDropdownOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
-    if (!js.isUndefined(closeOnClick)) __obj.updateDynamic("closeOnClick")(closeOnClick)
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeOnClick)) __obj.updateDynamic("closeOnClick")(closeOnClick.asInstanceOf[js.Any])
     if (hOffset != null) __obj.updateDynamic("hOffset")(hOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(hover)) __obj.updateDynamic("hover")(hover)
+    if (!js.isUndefined(hover)) __obj.updateDynamic("hover")(hover.asInstanceOf[js.Any])
     if (hoverDelay != null) __obj.updateDynamic("hoverDelay")(hoverDelay.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverPane)) __obj.updateDynamic("hoverPane")(hoverPane)
-    if (positionClass != null) __obj.updateDynamic("positionClass")(positionClass)
-    if (!js.isUndefined(trapFocus)) __obj.updateDynamic("trapFocus")(trapFocus)
+    if (!js.isUndefined(hoverPane)) __obj.updateDynamic("hoverPane")(hoverPane.asInstanceOf[js.Any])
+    if (positionClass != null) __obj.updateDynamic("positionClass")(positionClass.asInstanceOf[js.Any])
+    if (!js.isUndefined(trapFocus)) __obj.updateDynamic("trapFocus")(trapFocus.asInstanceOf[js.Any])
     if (vOffset != null) __obj.updateDynamic("vOffset")(vOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDropdownOptions]
   }

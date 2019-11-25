@@ -24,9 +24,9 @@ object DefaultOptions {
     watchQuery: Partial[WatchQueryOptions[OperationVariables]] = null
   ): DefaultOptions = {
     val __obj = js.Dynamic.literal()
-    if (mutate != null) __obj.updateDynamic("mutate")(mutate)
-    if (query != null) __obj.updateDynamic("query")(query)
-    if (watchQuery != null) __obj.updateDynamic("watchQuery")(watchQuery)
+    if (mutate != null) __obj.updateDynamic("mutate")(mutate.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    if (watchQuery != null) __obj.updateDynamic("watchQuery")(watchQuery.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultOptions]
   }
 }

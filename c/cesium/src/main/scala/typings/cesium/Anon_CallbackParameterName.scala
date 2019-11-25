@@ -14,9 +14,9 @@ object Anon_CallbackParameterName {
   @scala.inline
   def apply(callbackParameterName: String = null, parameters: js.Any = null, proxy: js.Any = null): Anon_CallbackParameterName = {
     val __obj = js.Dynamic.literal()
-    if (callbackParameterName != null) __obj.updateDynamic("callbackParameterName")(callbackParameterName)
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
-    if (proxy != null) __obj.updateDynamic("proxy")(proxy)
+    if (callbackParameterName != null) __obj.updateDynamic("callbackParameterName")(callbackParameterName.asInstanceOf[js.Any])
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
+    if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CallbackParameterName]
   }
 }

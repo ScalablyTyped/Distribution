@@ -25,8 +25,8 @@ object IWorkingCopyMetaData {
     teamServerBaseBranch: String = null,
     teamServerBaseRevision: Int | Double = null
   ): IWorkingCopyMetaData = {
-    val __obj = js.Dynamic.literal(avatarUrl = avatarUrl, description = description, metaModelVersion = metaModelVersion, name = name, projectId = projectId)
-    if (teamServerBaseBranch != null) __obj.updateDynamic("teamServerBaseBranch")(teamServerBaseBranch)
+    val __obj = js.Dynamic.literal(avatarUrl = avatarUrl.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], metaModelVersion = metaModelVersion.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any])
+    if (teamServerBaseBranch != null) __obj.updateDynamic("teamServerBaseBranch")(teamServerBaseBranch.asInstanceOf[js.Any])
     if (teamServerBaseRevision != null) __obj.updateDynamic("teamServerBaseRevision")(teamServerBaseRevision.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWorkingCopyMetaData]
   }

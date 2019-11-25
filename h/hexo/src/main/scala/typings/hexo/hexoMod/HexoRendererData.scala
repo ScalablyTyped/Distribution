@@ -18,8 +18,8 @@ trait HexoRendererData extends js.Object {
 object HexoRendererData {
   @scala.inline
   def apply(text: String, path: String = null): HexoRendererData = {
-    val __obj = js.Dynamic.literal(text = text)
-    if (path != null) __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[HexoRendererData]
   }
 }

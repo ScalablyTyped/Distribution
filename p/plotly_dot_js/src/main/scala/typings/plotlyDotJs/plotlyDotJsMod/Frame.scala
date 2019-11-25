@@ -48,7 +48,7 @@ object Frame {
     name: String,
     traces: js.Array[Double]
   ): Frame = {
-    val __obj = js.Dynamic.literal(baseframe = baseframe, data = data, group = group, layout = layout, name = name, traces = traces)
+    val __obj = js.Dynamic.literal(baseframe = baseframe.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], traces = traces.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Frame]
   }

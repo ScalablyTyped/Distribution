@@ -27,9 +27,9 @@ object FormikState {
     error: js.Any = null,
     status: js.Any = null
   ): FormikState[Values] = {
-    val __obj = js.Dynamic.literal(errors = errors, isSubmitting = isSubmitting, isValidating = isValidating, submitCount = submitCount, touched = touched, values = values.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (status != null) __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], isSubmitting = isSubmitting.asInstanceOf[js.Any], isValidating = isValidating.asInstanceOf[js.Any], submitCount = submitCount.asInstanceOf[js.Any], touched = touched.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormikState[Values]]
   }
 }

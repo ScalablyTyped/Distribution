@@ -12,7 +12,7 @@ trait ServerValue extends js.Object {
 object ServerValue {
   @scala.inline
   def apply(TIMESTAMP: Anon_Sv): ServerValue = {
-    val __obj = js.Dynamic.literal(TIMESTAMP = TIMESTAMP)
+    val __obj = js.Dynamic.literal(TIMESTAMP = TIMESTAMP.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ServerValue]
   }

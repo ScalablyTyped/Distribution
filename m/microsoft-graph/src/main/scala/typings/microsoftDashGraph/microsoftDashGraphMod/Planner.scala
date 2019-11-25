@@ -22,10 +22,10 @@ object Planner {
     tasks: js.Array[PlannerTask] = null
   ): Planner = {
     val __obj = js.Dynamic.literal()
-    if (buckets != null) __obj.updateDynamic("buckets")(buckets)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (plans != null) __obj.updateDynamic("plans")(plans)
-    if (tasks != null) __obj.updateDynamic("tasks")(tasks)
+    if (buckets != null) __obj.updateDynamic("buckets")(buckets.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (plans != null) __obj.updateDynamic("plans")(plans.asInstanceOf[js.Any])
+    if (tasks != null) __obj.updateDynamic("tasks")(tasks.asInstanceOf[js.Any])
     __obj.asInstanceOf[Planner]
   }
 }

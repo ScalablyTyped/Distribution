@@ -38,17 +38,17 @@ object IComboBoxOption {
     title: String = null,
     useAriaLabelAsText: js.UndefOr[Boolean] = js.undefined
   ): IComboBoxOption = {
-    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], text = text)
-    if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+    if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (itemType != null) __obj.updateDynamic("itemType")(itemType)
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
-    if (styles != null) __obj.updateDynamic("styles")(styles)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (!js.isUndefined(useAriaLabelAsText)) __obj.updateDynamic("useAriaLabelAsText")(useAriaLabelAsText)
+    if (itemType != null) __obj.updateDynamic("itemType")(itemType.asInstanceOf[js.Any])
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (!js.isUndefined(useAriaLabelAsText)) __obj.updateDynamic("useAriaLabelAsText")(useAriaLabelAsText.asInstanceOf[js.Any])
     __obj.asInstanceOf[IComboBoxOption]
   }
 }

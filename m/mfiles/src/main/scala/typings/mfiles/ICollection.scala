@@ -29,7 +29,7 @@ object ICollection {
     PutTo: (Double, Boolean, js.Any) => Unit,
     RemoveAt: Double => Unit
   ): ICollection = {
-    val __obj = js.Dynamic.literal(Clear = js.Any.fromFunction0(Clear), Count = Count, Events = Events, Find = js.Any.fromFunction1(Find), GetAt = js.Any.fromFunction1(GetAt), MoveTo = js.Any.fromFunction2(MoveTo), NewTo = js.Any.fromFunction2(NewTo), PutTo = js.Any.fromFunction3(PutTo), RemoveAt = js.Any.fromFunction1(RemoveAt))
+    val __obj = js.Dynamic.literal(Clear = js.Any.fromFunction0(Clear), Count = Count.asInstanceOf[js.Any], Events = Events.asInstanceOf[js.Any], Find = js.Any.fromFunction1(Find), GetAt = js.Any.fromFunction1(GetAt), MoveTo = js.Any.fromFunction2(MoveTo), NewTo = js.Any.fromFunction2(NewTo), PutTo = js.Any.fromFunction3(PutTo), RemoveAt = js.Any.fromFunction1(RemoveAt))
   
     __obj.asInstanceOf[ICollection]
   }

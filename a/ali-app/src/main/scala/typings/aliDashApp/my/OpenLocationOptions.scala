@@ -30,7 +30,7 @@ object OpenLocationOptions {
     scale: Int | Double = null,
     success: js.Any => Unit = null
   ): OpenLocationOptions = {
-    val __obj = js.Dynamic.literal(address = address, latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], name = name)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])

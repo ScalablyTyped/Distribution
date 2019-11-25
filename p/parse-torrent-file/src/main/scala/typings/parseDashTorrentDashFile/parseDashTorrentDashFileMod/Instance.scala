@@ -48,22 +48,22 @@ object Instance {
     `private`: js.UndefOr[Boolean] = js.undefined,
     urlList: js.Array[String] = null
   ): Instance = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (announce != null) __obj.updateDynamic("announce")(announce)
-    if (created != null) __obj.updateDynamic("created")(created)
-    if (createdBy != null) __obj.updateDynamic("createdBy")(createdBy)
-    if (files != null) __obj.updateDynamic("files")(files)
-    if (info != null) __obj.updateDynamic("info")(info)
-    if (infoBuffer != null) __obj.updateDynamic("infoBuffer")(infoBuffer)
-    if (infoHash != null) __obj.updateDynamic("infoHash")(infoHash)
-    if (infoHashBuffer != null) __obj.updateDynamic("infoHashBuffer")(infoHashBuffer)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (announce != null) __obj.updateDynamic("announce")(announce.asInstanceOf[js.Any])
+    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
+    if (createdBy != null) __obj.updateDynamic("createdBy")(createdBy.asInstanceOf[js.Any])
+    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
+    if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
+    if (infoBuffer != null) __obj.updateDynamic("infoBuffer")(infoBuffer.asInstanceOf[js.Any])
+    if (infoHash != null) __obj.updateDynamic("infoHash")(infoHash.asInstanceOf[js.Any])
+    if (infoHashBuffer != null) __obj.updateDynamic("infoHashBuffer")(infoHashBuffer.asInstanceOf[js.Any])
     if (lastPieceLength != null) __obj.updateDynamic("lastPieceLength")(lastPieceLength.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (pieceLength != null) __obj.updateDynamic("pieceLength")(pieceLength.asInstanceOf[js.Any])
-    if (pieces != null) __obj.updateDynamic("pieces")(pieces)
-    if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`)
-    if (urlList != null) __obj.updateDynamic("urlList")(urlList)
+    if (pieces != null) __obj.updateDynamic("pieces")(pieces.asInstanceOf[js.Any])
+    if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
+    if (urlList != null) __obj.updateDynamic("urlList")(urlList.asInstanceOf[js.Any])
     __obj.asInstanceOf[Instance]
   }
 }

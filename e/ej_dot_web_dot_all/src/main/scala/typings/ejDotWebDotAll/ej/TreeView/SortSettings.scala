@@ -20,7 +20,7 @@ object SortSettings {
   @scala.inline
   def apply(allowSorting: js.UndefOr[Boolean] = js.undefined, sortOrder: sortOrder | String = null): SortSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowSorting)) __obj.updateDynamic("allowSorting")(allowSorting)
+    if (!js.isUndefined(allowSorting)) __obj.updateDynamic("allowSorting")(allowSorting.asInstanceOf[js.Any])
     if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
     __obj.asInstanceOf[SortSettings]
   }

@@ -28,11 +28,11 @@ object CalendarOptions {
     noDataPattern: js.Object = null,
     width: Int | Double = null
   ): CalendarOptions = {
-    val __obj = js.Dynamic.literal(calendar = calendar, tooltip = tooltip)
-    if (colorAxis != null) __obj.updateDynamic("colorAxis")(colorAxis)
-    if (!js.isUndefined(forceIFrame)) __obj.updateDynamic("forceIFrame")(forceIFrame)
+    val __obj = js.Dynamic.literal(calendar = calendar.asInstanceOf[js.Any], tooltip = tooltip.asInstanceOf[js.Any])
+    if (colorAxis != null) __obj.updateDynamic("colorAxis")(colorAxis.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceIFrame)) __obj.updateDynamic("forceIFrame")(forceIFrame.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (noDataPattern != null) __obj.updateDynamic("noDataPattern")(noDataPattern)
+    if (noDataPattern != null) __obj.updateDynamic("noDataPattern")(noDataPattern.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalendarOptions]
   }

@@ -13,8 +13,8 @@ trait Anon_KeepScores[T] extends js.Object {
 object Anon_KeepScores {
   @scala.inline
   def apply[T](searchQuery: T, searchResults: js.Array[T], keepScores: js.UndefOr[Boolean] = js.undefined): Anon_KeepScores[T] = {
-    val __obj = js.Dynamic.literal(searchQuery = searchQuery.asInstanceOf[js.Any], searchResults = searchResults)
-    if (!js.isUndefined(keepScores)) __obj.updateDynamic("keepScores")(keepScores)
+    val __obj = js.Dynamic.literal(searchQuery = searchQuery.asInstanceOf[js.Any], searchResults = searchResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepScores)) __obj.updateDynamic("keepScores")(keepScores.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_KeepScores[T]]
   }
 }

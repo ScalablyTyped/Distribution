@@ -18,9 +18,9 @@ object CreativeClickThroughUrl {
     landingPageId: String = null
   ): CreativeClickThroughUrl = {
     val __obj = js.Dynamic.literal()
-    if (computedClickThroughUrl != null) __obj.updateDynamic("computedClickThroughUrl")(computedClickThroughUrl)
-    if (customClickThroughUrl != null) __obj.updateDynamic("customClickThroughUrl")(customClickThroughUrl)
-    if (landingPageId != null) __obj.updateDynamic("landingPageId")(landingPageId)
+    if (computedClickThroughUrl != null) __obj.updateDynamic("computedClickThroughUrl")(computedClickThroughUrl.asInstanceOf[js.Any])
+    if (customClickThroughUrl != null) __obj.updateDynamic("customClickThroughUrl")(customClickThroughUrl.asInstanceOf[js.Any])
+    if (landingPageId != null) __obj.updateDynamic("landingPageId")(landingPageId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreativeClickThroughUrl]
   }
 }

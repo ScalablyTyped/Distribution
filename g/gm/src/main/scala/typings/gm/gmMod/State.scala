@@ -6,7 +6,7 @@ import typings.gm.gmStrings.`+`
 import typings.gm.gmStrings.`<`
 import typings.gm.gmStrings.`>`
 import typings.gm.gmStrings.`private`
-import typings.gm.gmStrings.center
+import typings.gm.gmStrings.center_
 import typings.gm.gmStrings.shared
 import typings.gm.gmStrings.topleft
 import typings.node.Buffer
@@ -323,7 +323,7 @@ trait State extends js.Object {
     height: Double,
     outName: String,
     quality: Double,
-    align: center,
+    align: center_,
     callback: WriteCallback
   ): State = js.native
   @JSName("thumb")

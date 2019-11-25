@@ -26,8 +26,8 @@ object _UnmarshalledSamplingTargetDocument {
     if (FixedRate != null) __obj.updateDynamic("FixedRate")(FixedRate.asInstanceOf[js.Any])
     if (Interval != null) __obj.updateDynamic("Interval")(Interval.asInstanceOf[js.Any])
     if (ReservoirQuota != null) __obj.updateDynamic("ReservoirQuota")(ReservoirQuota.asInstanceOf[js.Any])
-    if (ReservoirQuotaTTL != null) __obj.updateDynamic("ReservoirQuotaTTL")(ReservoirQuotaTTL)
-    if (RuleName != null) __obj.updateDynamic("RuleName")(RuleName)
+    if (ReservoirQuotaTTL != null) __obj.updateDynamic("ReservoirQuotaTTL")(ReservoirQuotaTTL.asInstanceOf[js.Any])
+    if (RuleName != null) __obj.updateDynamic("RuleName")(RuleName.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledSamplingTargetDocument]
   }
 }

@@ -17,8 +17,8 @@ trait SoftDeleteInterface extends js.Object {
 object SoftDeleteInterface {
   @scala.inline
   def apply(deleted: Boolean, deleteAt: Date = null, deletedBy: ObjectId | String | Document = null): SoftDeleteInterface = {
-    val __obj = js.Dynamic.literal(deleted = deleted)
-    if (deleteAt != null) __obj.updateDynamic("deleteAt")(deleteAt)
+    val __obj = js.Dynamic.literal(deleted = deleted.asInstanceOf[js.Any])
+    if (deleteAt != null) __obj.updateDynamic("deleteAt")(deleteAt.asInstanceOf[js.Any])
     if (deletedBy != null) __obj.updateDynamic("deletedBy")(deletedBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[SoftDeleteInterface]
   }

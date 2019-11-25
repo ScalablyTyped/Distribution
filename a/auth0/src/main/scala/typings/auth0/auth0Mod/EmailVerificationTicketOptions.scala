@@ -12,7 +12,7 @@ trait EmailVerificationTicketOptions extends js.Object {
 object EmailVerificationTicketOptions {
   @scala.inline
   def apply(result_url: String, user_id: String): EmailVerificationTicketOptions = {
-    val __obj = js.Dynamic.literal(result_url = result_url, user_id = user_id)
+    val __obj = js.Dynamic.literal(result_url = result_url.asInstanceOf[js.Any], user_id = user_id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EmailVerificationTicketOptions]
   }

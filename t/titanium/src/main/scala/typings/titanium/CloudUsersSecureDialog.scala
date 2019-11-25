@@ -18,7 +18,7 @@ object CloudUsersSecureDialog {
   @scala.inline
   def apply(title: String = null): CloudUsersSecureDialog = {
     val __obj = js.Dynamic.literal()
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloudUsersSecureDialog]
   }
 }

@@ -27,10 +27,10 @@ object _CampaignEmailMessage {
   @scala.inline
   def apply(Body: String = null, FromAddress: String = null, HtmlBody: String = null, Title: String = null): _CampaignEmailMessage = {
     val __obj = js.Dynamic.literal()
-    if (Body != null) __obj.updateDynamic("Body")(Body)
-    if (FromAddress != null) __obj.updateDynamic("FromAddress")(FromAddress)
-    if (HtmlBody != null) __obj.updateDynamic("HtmlBody")(HtmlBody)
-    if (Title != null) __obj.updateDynamic("Title")(Title)
+    if (Body != null) __obj.updateDynamic("Body")(Body.asInstanceOf[js.Any])
+    if (FromAddress != null) __obj.updateDynamic("FromAddress")(FromAddress.asInstanceOf[js.Any])
+    if (HtmlBody != null) __obj.updateDynamic("HtmlBody")(HtmlBody.asInstanceOf[js.Any])
+    if (Title != null) __obj.updateDynamic("Title")(Title.asInstanceOf[js.Any])
     __obj.asInstanceOf[_CampaignEmailMessage]
   }
 }

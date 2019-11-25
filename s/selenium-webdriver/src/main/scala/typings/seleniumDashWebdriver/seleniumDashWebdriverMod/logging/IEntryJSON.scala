@@ -14,8 +14,8 @@ trait IEntryJSON extends js.Object {
 object IEntryJSON {
   @scala.inline
   def apply(level: String, message: String, timestamp: Double, `type`: String): IEntryJSON = {
-    val __obj = js.Dynamic.literal(level = level, message = message, timestamp = timestamp)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEntryJSON]
   }
 }

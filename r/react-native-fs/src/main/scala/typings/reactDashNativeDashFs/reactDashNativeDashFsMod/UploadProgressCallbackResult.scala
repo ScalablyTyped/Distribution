@@ -15,7 +15,7 @@ trait UploadProgressCallbackResult extends js.Object {
 object UploadProgressCallbackResult {
   @scala.inline
   def apply(jobId: Double, totalBytesExpectedToSend: Double, totalBytesSent: Double): UploadProgressCallbackResult = {
-    val __obj = js.Dynamic.literal(jobId = jobId, totalBytesExpectedToSend = totalBytesExpectedToSend, totalBytesSent = totalBytesSent)
+    val __obj = js.Dynamic.literal(jobId = jobId.asInstanceOf[js.Any], totalBytesExpectedToSend = totalBytesExpectedToSend.asInstanceOf[js.Any], totalBytesSent = totalBytesSent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UploadProgressCallbackResult]
   }

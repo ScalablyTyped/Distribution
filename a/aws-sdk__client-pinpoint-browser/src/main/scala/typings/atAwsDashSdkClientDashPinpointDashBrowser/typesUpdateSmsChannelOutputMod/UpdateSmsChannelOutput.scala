@@ -22,7 +22,7 @@ trait UpdateSmsChannelOutput extends OutputTypesUnion {
 object UpdateSmsChannelOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, SMSChannelResponse: _UnmarshalledSMSChannelResponse): UpdateSmsChannelOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata, SMSChannelResponse = SMSChannelResponse)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], SMSChannelResponse = SMSChannelResponse.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UpdateSmsChannelOutput]
   }

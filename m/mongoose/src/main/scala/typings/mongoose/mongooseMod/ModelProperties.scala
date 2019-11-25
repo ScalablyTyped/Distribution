@@ -36,8 +36,8 @@ object ModelProperties {
     schema: Schema[_],
     baseModelName: String = null
   ): ModelProperties = {
-    val __obj = js.Dynamic.literal(base = base, collection = collection, db = db, discriminators = discriminators, modelName = modelName, schema = schema)
-    if (baseModelName != null) __obj.updateDynamic("baseModelName")(baseModelName)
+    val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], collection = collection.asInstanceOf[js.Any], db = db.asInstanceOf[js.Any], discriminators = discriminators.asInstanceOf[js.Any], modelName = modelName.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
+    if (baseModelName != null) __obj.updateDynamic("baseModelName")(baseModelName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelProperties]
   }
 }

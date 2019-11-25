@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait GoogleActionsV2UiElementsTableCardColumnPropertiesHorizontalAlignment extends js.Object
 
+object GoogleActionsV2UiElementsTableCardColumnPropertiesHorizontalAlignment {
+  @scala.inline
+  def CENTER: typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.CENTER = this.cast("CENTER")
+  @scala.inline
+  def LEADING: typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.LEADING = this.cast("LEADING")
+  @scala.inline
+  def TRAILING: typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.TRAILING = this.cast("TRAILING")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

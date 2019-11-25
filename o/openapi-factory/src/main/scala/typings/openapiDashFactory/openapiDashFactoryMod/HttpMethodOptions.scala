@@ -12,7 +12,7 @@ object HttpMethodOptions {
   @scala.inline
   def apply(rawBody: js.UndefOr[Boolean] = js.undefined): HttpMethodOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(rawBody)) __obj.updateDynamic("rawBody")(rawBody)
+    if (!js.isUndefined(rawBody)) __obj.updateDynamic("rawBody")(rawBody.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpMethodOptions]
   }
 }

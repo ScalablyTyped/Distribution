@@ -28,7 +28,7 @@ object UploadControlUploadingProgressChangedEventArgs {
     totalContentLength: Double,
     uploadedContentLength: Double
   ): UploadControlUploadingProgressChangedEventArgs = {
-    val __obj = js.Dynamic.literal(currentFileContentLength = currentFileContentLength, currentFileName = currentFileName, currentFileProgress = currentFileProgress, currentFileUploadedContentLength = currentFileUploadedContentLength, fileCount = fileCount, progress = progress, sender = sender, totalContentLength = totalContentLength, uploadedContentLength = uploadedContentLength)
+    val __obj = js.Dynamic.literal(currentFileContentLength = currentFileContentLength.asInstanceOf[js.Any], currentFileName = currentFileName.asInstanceOf[js.Any], currentFileProgress = currentFileProgress.asInstanceOf[js.Any], currentFileUploadedContentLength = currentFileUploadedContentLength.asInstanceOf[js.Any], fileCount = fileCount.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], totalContentLength = totalContentLength.asInstanceOf[js.Any], uploadedContentLength = uploadedContentLength.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UploadControlUploadingProgressChangedEventArgs]
   }

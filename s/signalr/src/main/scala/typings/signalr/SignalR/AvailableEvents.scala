@@ -27,7 +27,7 @@ object AvailableEvents {
     onStarting: String,
     onStateChanged: String
   ): AvailableEvents = {
-    val __obj = js.Dynamic.literal(onConnectionSlow = onConnectionSlow, onDisconnect = onDisconnect, onError = onError, onReceived = onReceived, onReconnect = onReconnect, onStart = onStart, onStarting = onStarting, onStateChanged = onStateChanged)
+    val __obj = js.Dynamic.literal(onConnectionSlow = onConnectionSlow.asInstanceOf[js.Any], onDisconnect = onDisconnect.asInstanceOf[js.Any], onError = onError.asInstanceOf[js.Any], onReceived = onReceived.asInstanceOf[js.Any], onReconnect = onReconnect.asInstanceOf[js.Any], onStart = onStart.asInstanceOf[js.Any], onStarting = onStarting.asInstanceOf[js.Any], onStateChanged = onStateChanged.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AvailableEvents]
   }

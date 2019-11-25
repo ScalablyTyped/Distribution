@@ -18,8 +18,8 @@ object MetricHeader {
     pivotHeaders: js.Array[PivotHeader] = null
   ): MetricHeader = {
     val __obj = js.Dynamic.literal()
-    if (metricHeaderEntries != null) __obj.updateDynamic("metricHeaderEntries")(metricHeaderEntries)
-    if (pivotHeaders != null) __obj.updateDynamic("pivotHeaders")(pivotHeaders)
+    if (metricHeaderEntries != null) __obj.updateDynamic("metricHeaderEntries")(metricHeaderEntries.asInstanceOf[js.Any])
+    if (pivotHeaders != null) __obj.updateDynamic("pivotHeaders")(pivotHeaders.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricHeader]
   }
 }

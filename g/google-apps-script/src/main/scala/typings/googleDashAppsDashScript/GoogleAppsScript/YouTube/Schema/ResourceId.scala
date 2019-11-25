@@ -15,10 +15,10 @@ object ResourceId {
   @scala.inline
   def apply(channelId: String = null, kind: String = null, playlistId: String = null, videoId: String = null): ResourceId = {
     val __obj = js.Dynamic.literal()
-    if (channelId != null) __obj.updateDynamic("channelId")(channelId)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (playlistId != null) __obj.updateDynamic("playlistId")(playlistId)
-    if (videoId != null) __obj.updateDynamic("videoId")(videoId)
+    if (channelId != null) __obj.updateDynamic("channelId")(channelId.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (playlistId != null) __obj.updateDynamic("playlistId")(playlistId.asInstanceOf[js.Any])
+    if (videoId != null) __obj.updateDynamic("videoId")(videoId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceId]
   }
 }

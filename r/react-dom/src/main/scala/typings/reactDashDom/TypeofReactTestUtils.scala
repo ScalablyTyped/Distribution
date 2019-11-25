@@ -40,8 +40,8 @@ trait TypeofReactTestUtils extends js.Object {
   def isElementOfType[P, T /* <: Component[P, js.Object, _] */, C /* <: ComponentClass[P, ComponentState] */](element: ReactElement, `type`: ClassType[P, T, C]): /* is react.react.CElement<P, T> */ Boolean = js.native
   @JSName("isElementOfType")
   def isElementOfType_P_DOMAttributesObjectT_Element[P /* <: DOMAttributes[js.Object] */, T /* <: Element */](element: ReactElement, `type`: String): /* is react.react.DOMElement<P, T> */ Boolean = js.native
-  def mockComponent(mocked: MockedComponentClass): /* import warning: ImportType.apply Failed type conversion: typeof ReactTestUtils */ js.Any = js.native
-  def mockComponent(mocked: MockedComponentClass, mockTagName: String): /* import warning: ImportType.apply Failed type conversion: typeof ReactTestUtils */ js.Any = js.native
+  def mockComponent(mocked: MockedComponentClass): /* import warning: importer.ImportType#apply Failed type conversion: typeof ReactTestUtils */ js.Any = js.native
+  def mockComponent(mocked: MockedComponentClass, mockTagName: String): /* import warning: importer.ImportType#apply Failed type conversion: typeof ReactTestUtils */ js.Any = js.native
   def renderIntoDocument(element: SFCElement[_]): Unit = js.native
   def renderIntoDocument[T /* <: Element */](element: DOMElement[_, T]): T = js.native
   def renderIntoDocument[P](element: ReactElement): (Component[P, js.Object, _]) | Element | Unit = js.native

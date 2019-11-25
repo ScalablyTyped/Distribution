@@ -48,15 +48,15 @@ object MetricTelemetry {
     tagOverrides: StringDictionary[String] = null,
     time: Date = null
   ): MetricTelemetry = {
-    val __obj = js.Dynamic.literal(name = name, value = value)
-    if (contextObjects != null) __obj.updateDynamic("contextObjects")(contextObjects)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (contextObjects != null) __obj.updateDynamic("contextObjects")(contextObjects.asInstanceOf[js.Any])
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     if (stdDev != null) __obj.updateDynamic("stdDev")(stdDev.asInstanceOf[js.Any])
-    if (tagOverrides != null) __obj.updateDynamic("tagOverrides")(tagOverrides)
-    if (time != null) __obj.updateDynamic("time")(time)
+    if (tagOverrides != null) __obj.updateDynamic("tagOverrides")(tagOverrides.asInstanceOf[js.Any])
+    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricTelemetry]
   }
 }

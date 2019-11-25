@@ -14,7 +14,7 @@ trait WebSocketEventMap extends js.Object {
 object WebSocketEventMap {
   @scala.inline
   def apply(close: CloseEvent, error: Event, message: MessageEvent, open: Event): WebSocketEventMap = {
-    val __obj = js.Dynamic.literal(close = close, error = error, message = message, open = open)
+    val __obj = js.Dynamic.literal(close = close.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WebSocketEventMap]
   }

@@ -56,12 +56,12 @@ object DataSchemaSchemaFields {
     xpath: String = null
   ): DataSchemaSchemaFields = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (formatter != null) __obj.updateDynamic("formatter")(formatter)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
     if (mapper != null) __obj.updateDynamic("mapper")(mapper.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (xpath != null) __obj.updateDynamic("xpath")(xpath)
+    if (xpath != null) __obj.updateDynamic("xpath")(xpath.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSchemaSchemaFields]
   }
 }

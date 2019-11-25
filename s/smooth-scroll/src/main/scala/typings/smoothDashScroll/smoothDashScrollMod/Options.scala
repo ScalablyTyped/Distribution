@@ -55,20 +55,20 @@ object Options {
     updateURL: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(clip)) __obj.updateDynamic("clip")(clip)
+    if (!js.isUndefined(clip)) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])
     if (customEasing != null) __obj.updateDynamic("customEasing")(js.Any.fromFunction1(customEasing))
     if (durationMax != null) __obj.updateDynamic("durationMax")(durationMax.asInstanceOf[js.Any])
     if (durationMin != null) __obj.updateDynamic("durationMin")(durationMin.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(easing)
-    if (!js.isUndefined(emitEvents)) __obj.updateDynamic("emitEvents")(emitEvents)
-    if (header != null) __obj.updateDynamic("header")(header)
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore)
+    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
+    if (!js.isUndefined(emitEvents)) __obj.updateDynamic("emitEvents")(emitEvents.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (!js.isUndefined(popstate)) __obj.updateDynamic("popstate")(popstate)
+    if (!js.isUndefined(popstate)) __obj.updateDynamic("popstate")(popstate.asInstanceOf[js.Any])
     if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
-    if (!js.isUndefined(speedAsDuration)) __obj.updateDynamic("speedAsDuration")(speedAsDuration)
-    if (!js.isUndefined(topOnEmptyHash)) __obj.updateDynamic("topOnEmptyHash")(topOnEmptyHash)
-    if (!js.isUndefined(updateURL)) __obj.updateDynamic("updateURL")(updateURL)
+    if (!js.isUndefined(speedAsDuration)) __obj.updateDynamic("speedAsDuration")(speedAsDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(topOnEmptyHash)) __obj.updateDynamic("topOnEmptyHash")(topOnEmptyHash.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateURL)) __obj.updateDynamic("updateURL")(updateURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

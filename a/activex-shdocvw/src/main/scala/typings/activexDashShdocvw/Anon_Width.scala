@@ -11,7 +11,7 @@ trait Anon_Width extends js.Object {
 object Anon_Width {
   @scala.inline
   def apply(Width: Double): Anon_Width = {
-    val __obj = js.Dynamic.literal(Width = Width)
+    val __obj = js.Dynamic.literal(Width = Width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Width]
   }

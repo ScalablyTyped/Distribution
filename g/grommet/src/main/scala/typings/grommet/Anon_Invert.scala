@@ -12,7 +12,7 @@ object Anon_Invert {
   @scala.inline
   def apply(invert: Anon_ColorColorType = null): Anon_Invert = {
     val __obj = js.Dynamic.literal()
-    if (invert != null) __obj.updateDynamic("invert")(invert)
+    if (invert != null) __obj.updateDynamic("invert")(invert.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Invert]
   }
 }

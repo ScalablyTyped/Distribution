@@ -39,16 +39,16 @@ object TransProps {
   ): TransProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (components != null) __obj.updateDynamic("components")(components)
+    if (components != null) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (defaults != null) __obj.updateDynamic("defaults")(defaults)
-    if (i18n != null) __obj.updateDynamic("i18n")(i18n)
-    if (i18nKey != null) __obj.updateDynamic("i18nKey")(i18nKey)
+    if (defaults != null) __obj.updateDynamic("defaults")(defaults.asInstanceOf[js.Any])
+    if (i18n != null) __obj.updateDynamic("i18n")(i18n.asInstanceOf[js.Any])
+    if (i18nKey != null) __obj.updateDynamic("i18nKey")(i18nKey.asInstanceOf[js.Any])
     if (ns != null) __obj.updateDynamic("ns")(ns.asInstanceOf[js.Any])
     if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (t != null) __obj.updateDynamic("t")(t)
-    if (tOptions != null) __obj.updateDynamic("tOptions")(tOptions)
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (t != null) __obj.updateDynamic("t")(t.asInstanceOf[js.Any])
+    if (tOptions != null) __obj.updateDynamic("tOptions")(tOptions.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransProps]
   }
 }

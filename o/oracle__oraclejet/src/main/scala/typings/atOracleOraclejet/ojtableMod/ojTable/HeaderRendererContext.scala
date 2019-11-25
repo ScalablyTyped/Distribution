@@ -40,7 +40,7 @@ object HeaderRendererContext {
     columnHeaderDefaultRenderer: (/* param0 */ js.Object, /* param1 */ js.Function1[/* param0 */ js.Object, Unit]) => Unit = null,
     columnHeaderSortableIconRenderer: (/* param0 */ js.Object, /* param1 */ js.Function1[/* param0 */ js.Object, Unit]) => Unit = null
   ): HeaderRendererContext[K, D] = {
-    val __obj = js.Dynamic.literal(columnIndex = columnIndex, componentElement = componentElement, data = data, headerContext = headerContext, parentElement = parentElement)
+    val __obj = js.Dynamic.literal(columnIndex = columnIndex.asInstanceOf[js.Any], componentElement = componentElement.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], headerContext = headerContext.asInstanceOf[js.Any], parentElement = parentElement.asInstanceOf[js.Any])
     if (columnHeaderDefaultRenderer != null) __obj.updateDynamic("columnHeaderDefaultRenderer")(js.Any.fromFunction2(columnHeaderDefaultRenderer))
     if (columnHeaderSortableIconRenderer != null) __obj.updateDynamic("columnHeaderSortableIconRenderer")(js.Any.fromFunction2(columnHeaderSortableIconRenderer))
     __obj.asInstanceOf[HeaderRendererContext[K, D]]

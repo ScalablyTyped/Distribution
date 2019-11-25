@@ -15,8 +15,8 @@ object UserOverrides {
   @scala.inline
   def apply(ipAddress: String = null, userId: String = null): UserOverrides = {
     val __obj = js.Dynamic.literal()
-    if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress)
-    if (userId != null) __obj.updateDynamic("userId")(userId)
+    if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress.asInstanceOf[js.Any])
+    if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserOverrides]
   }
 }

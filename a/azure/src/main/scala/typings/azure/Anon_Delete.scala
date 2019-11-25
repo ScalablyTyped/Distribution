@@ -15,7 +15,7 @@ trait Anon_Delete extends js.Object {
 object Anon_Delete {
   @scala.inline
   def apply(Delete: Boolean, Read: Boolean, RetentionPolicy: Anon_Days, Version: Double, Write: Boolean): Anon_Delete = {
-    val __obj = js.Dynamic.literal(Delete = Delete, Read = Read, RetentionPolicy = RetentionPolicy, Version = Version, Write = Write)
+    val __obj = js.Dynamic.literal(Delete = Delete.asInstanceOf[js.Any], Read = Read.asInstanceOf[js.Any], RetentionPolicy = RetentionPolicy.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any], Write = Write.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Delete]
   }

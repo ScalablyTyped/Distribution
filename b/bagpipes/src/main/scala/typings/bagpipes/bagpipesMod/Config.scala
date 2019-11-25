@@ -25,10 +25,10 @@ object Config {
     userViewsDirs: js.Array[String] = null
   ): Config = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (connectMiddlewareDirs != null) __obj.updateDynamic("connectMiddlewareDirs")(connectMiddlewareDirs)
-    if (userFittingsDirs != null) __obj.updateDynamic("userFittingsDirs")(userFittingsDirs)
-    if (userViewsDirs != null) __obj.updateDynamic("userViewsDirs")(userViewsDirs)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (connectMiddlewareDirs != null) __obj.updateDynamic("connectMiddlewareDirs")(connectMiddlewareDirs.asInstanceOf[js.Any])
+    if (userFittingsDirs != null) __obj.updateDynamic("userFittingsDirs")(userFittingsDirs.asInstanceOf[js.Any])
+    if (userViewsDirs != null) __obj.updateDynamic("userViewsDirs")(userViewsDirs.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

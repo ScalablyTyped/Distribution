@@ -22,8 +22,8 @@ trait MergePullRequestByFastForwardOutput extends OutputTypesUnion {
 object MergePullRequestByFastForwardOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, pullRequest: _UnmarshalledPullRequest = null): MergePullRequestByFastForwardOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (pullRequest != null) __obj.updateDynamic("pullRequest")(pullRequest)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (pullRequest != null) __obj.updateDynamic("pullRequest")(pullRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[MergePullRequestByFastForwardOutput]
   }
 }

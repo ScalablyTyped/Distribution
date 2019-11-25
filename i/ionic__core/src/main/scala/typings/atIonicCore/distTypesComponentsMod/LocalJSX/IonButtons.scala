@@ -15,7 +15,7 @@ object IonButtons {
   @scala.inline
   def apply(collapse: js.UndefOr[Boolean] = js.undefined): IonButtons = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(collapse)) __obj.updateDynamic("collapse")(collapse)
+    if (!js.isUndefined(collapse)) __obj.updateDynamic("collapse")(collapse.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonButtons]
   }
 }

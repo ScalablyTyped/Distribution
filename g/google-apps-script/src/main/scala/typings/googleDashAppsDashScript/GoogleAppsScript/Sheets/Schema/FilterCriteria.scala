@@ -13,8 +13,8 @@ object FilterCriteria {
   @scala.inline
   def apply(condition: BooleanCondition = null, hiddenValues: js.Array[String] = null): FilterCriteria = {
     val __obj = js.Dynamic.literal()
-    if (condition != null) __obj.updateDynamic("condition")(condition)
-    if (hiddenValues != null) __obj.updateDynamic("hiddenValues")(hiddenValues)
+    if (condition != null) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
+    if (hiddenValues != null) __obj.updateDynamic("hiddenValues")(hiddenValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterCriteria]
   }
 }

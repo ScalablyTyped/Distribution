@@ -32,8 +32,8 @@ object IosAppMetadata {
     resourceName: String,
     displayName: String = null
   ): IosAppMetadata = {
-    val __obj = js.Dynamic.literal(appId = appId, bundleId = bundleId, platform = platform, projectId = projectId, resourceName = resourceName)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], bundleId = bundleId.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], resourceName = resourceName.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     __obj.asInstanceOf[IosAppMetadata]
   }
 }

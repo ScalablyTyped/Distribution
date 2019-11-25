@@ -30,15 +30,15 @@ object SendAs {
     verificationStatus: String = null
   ): SendAs = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (!js.isUndefined(isDefault)) __obj.updateDynamic("isDefault")(isDefault)
-    if (!js.isUndefined(isPrimary)) __obj.updateDynamic("isPrimary")(isPrimary)
-    if (replyToAddress != null) __obj.updateDynamic("replyToAddress")(replyToAddress)
-    if (sendAsEmail != null) __obj.updateDynamic("sendAsEmail")(sendAsEmail)
-    if (signature != null) __obj.updateDynamic("signature")(signature)
-    if (smtpMsa != null) __obj.updateDynamic("smtpMsa")(smtpMsa)
-    if (!js.isUndefined(treatAsAlias)) __obj.updateDynamic("treatAsAlias")(treatAsAlias)
-    if (verificationStatus != null) __obj.updateDynamic("verificationStatus")(verificationStatus)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDefault)) __obj.updateDynamic("isDefault")(isDefault.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPrimary)) __obj.updateDynamic("isPrimary")(isPrimary.asInstanceOf[js.Any])
+    if (replyToAddress != null) __obj.updateDynamic("replyToAddress")(replyToAddress.asInstanceOf[js.Any])
+    if (sendAsEmail != null) __obj.updateDynamic("sendAsEmail")(sendAsEmail.asInstanceOf[js.Any])
+    if (signature != null) __obj.updateDynamic("signature")(signature.asInstanceOf[js.Any])
+    if (smtpMsa != null) __obj.updateDynamic("smtpMsa")(smtpMsa.asInstanceOf[js.Any])
+    if (!js.isUndefined(treatAsAlias)) __obj.updateDynamic("treatAsAlias")(treatAsAlias.asInstanceOf[js.Any])
+    if (verificationStatus != null) __obj.updateDynamic("verificationStatus")(verificationStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendAs]
   }
 }

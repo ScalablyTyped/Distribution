@@ -20,9 +20,9 @@ object AmpUrl {
   @scala.inline
   def apply(ampUrl: String = null, cdnAmpUrl: String = null, originalUrl: String = null): AmpUrl = {
     val __obj = js.Dynamic.literal()
-    if (ampUrl != null) __obj.updateDynamic("ampUrl")(ampUrl)
-    if (cdnAmpUrl != null) __obj.updateDynamic("cdnAmpUrl")(cdnAmpUrl)
-    if (originalUrl != null) __obj.updateDynamic("originalUrl")(originalUrl)
+    if (ampUrl != null) __obj.updateDynamic("ampUrl")(ampUrl.asInstanceOf[js.Any])
+    if (cdnAmpUrl != null) __obj.updateDynamic("cdnAmpUrl")(cdnAmpUrl.asInstanceOf[js.Any])
+    if (originalUrl != null) __obj.updateDynamic("originalUrl")(originalUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[AmpUrl]
   }
 }

@@ -20,10 +20,10 @@ object Security {
     secureScores: js.Array[SecureScore] = null
   ): Security = {
     val __obj = js.Dynamic.literal()
-    if (alerts != null) __obj.updateDynamic("alerts")(alerts)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (secureScoreControlProfiles != null) __obj.updateDynamic("secureScoreControlProfiles")(secureScoreControlProfiles)
-    if (secureScores != null) __obj.updateDynamic("secureScores")(secureScores)
+    if (alerts != null) __obj.updateDynamic("alerts")(alerts.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (secureScoreControlProfiles != null) __obj.updateDynamic("secureScoreControlProfiles")(secureScoreControlProfiles.asInstanceOf[js.Any])
+    if (secureScores != null) __obj.updateDynamic("secureScores")(secureScores.asInstanceOf[js.Any])
     __obj.asInstanceOf[Security]
   }
 }

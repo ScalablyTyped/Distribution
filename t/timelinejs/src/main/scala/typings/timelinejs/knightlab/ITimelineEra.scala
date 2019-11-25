@@ -21,8 +21,8 @@ trait ITimelineEra extends js.Object {
 object ITimelineEra {
   @scala.inline
   def apply(endDate: String, headline: String, startDate: String, text: String, tag: String = null): ITimelineEra = {
-    val __obj = js.Dynamic.literal(endDate = endDate, headline = headline, startDate = startDate, text = text)
-    if (tag != null) __obj.updateDynamic("tag")(tag)
+    val __obj = js.Dynamic.literal(endDate = endDate.asInstanceOf[js.Any], headline = headline.asInstanceOf[js.Any], startDate = startDate.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITimelineEra]
   }
 }

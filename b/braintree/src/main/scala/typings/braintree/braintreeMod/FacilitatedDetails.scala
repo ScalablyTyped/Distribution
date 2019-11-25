@@ -13,7 +13,7 @@ trait FacilitatedDetails extends js.Object {
 object FacilitatedDetails {
   @scala.inline
   def apply(merchantId: String, merchantName: String, paymentMethodNonce: String): FacilitatedDetails = {
-    val __obj = js.Dynamic.literal(merchantId = merchantId, merchantName = merchantName, paymentMethodNonce = paymentMethodNonce)
+    val __obj = js.Dynamic.literal(merchantId = merchantId.asInstanceOf[js.Any], merchantName = merchantName.asInstanceOf[js.Any], paymentMethodNonce = paymentMethodNonce.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FacilitatedDetails]
   }

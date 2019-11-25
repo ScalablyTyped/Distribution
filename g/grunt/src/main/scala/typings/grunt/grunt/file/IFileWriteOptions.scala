@@ -25,8 +25,8 @@ trait IFileWriteOptions extends IFileEncodedOption {
 object IFileWriteOptions {
   @scala.inline
   def apply(encoding: java.lang.String, noProcess: js.Any = null): IFileWriteOptions = {
-    val __obj = js.Dynamic.literal(encoding = encoding)
-    if (noProcess != null) __obj.updateDynamic("noProcess")(noProcess)
+    val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
+    if (noProcess != null) __obj.updateDynamic("noProcess")(noProcess.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFileWriteOptions]
   }
 }

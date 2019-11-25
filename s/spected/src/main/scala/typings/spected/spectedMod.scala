@@ -21,7 +21,7 @@ object spectedMod extends js.Object {
     String | Double | Boolean | js.Symbol | Null | js.Object | (js.Function2[/* value */ INPUT, /* field */ String, js.Any])
   ]
   type Predicate[INPUT, ROOTINPUT] = js.Function2[/* value */ INPUT, /* inputs */ ROOTINPUT, Boolean]
-  type Result[INPUT, SPEC] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type Result[INPUT, SPEC] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof INPUT ]: true | std.Array<any> | / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias spected.spected.Result<INPUT[key], any> * / object}
     */ typings.spected.spectedStrings.Result with js.Any
   type Spec[INPUT, ROOTINPUT] = js.Tuple2[Predicate[INPUT, ROOTINPUT], ErrorMsg[INPUT]]
@@ -31,7 +31,7 @@ object spectedMod extends js.Object {
     (js.Array[SpecArray[js.Any, ROOTINPUT]]) | (SpecArray[INPUT, ROOTINPUT]) | (SpecObject[INPUT, ROOTINPUT])
   ]
   type SpecObject[INPUT, ROOTINPUT] = Partial[
-    /* import warning: ImportType.apply c Unsupported type mapping: 
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof INPUT ]: spected.spected.SpecValue<INPUT[key], ROOTINPUT>}
     */ typings.spected.spectedStrings.SpecObject with INPUT
   ]

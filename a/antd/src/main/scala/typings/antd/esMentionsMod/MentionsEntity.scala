@@ -12,7 +12,7 @@ trait MentionsEntity extends js.Object {
 object MentionsEntity {
   @scala.inline
   def apply(prefix: String, value: String): MentionsEntity = {
-    val __obj = js.Dynamic.literal(prefix = prefix, value = value)
+    val __obj = js.Dynamic.literal(prefix = prefix.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MentionsEntity]
   }

@@ -25,7 +25,7 @@ object ChannelPoolOptions {
     requestChannelTimeout: Int | Double = null
   ): ChannelPoolOptions = {
     val __obj = js.Dynamic.literal()
-    if (channelOptions != null) __obj.updateDynamic("channelOptions")(channelOptions)
+    if (channelOptions != null) __obj.updateDynamic("channelOptions")(channelOptions.asInstanceOf[js.Any])
     if (freeExcessTimeout != null) __obj.updateDynamic("freeExcessTimeout")(freeExcessTimeout.asInstanceOf[js.Any])
     if (maxChannels != null) __obj.updateDynamic("maxChannels")(maxChannels.asInstanceOf[js.Any])
     if (minChannels != null) __obj.updateDynamic("minChannels")(minChannels.asInstanceOf[js.Any])

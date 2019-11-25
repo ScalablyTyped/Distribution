@@ -25,9 +25,9 @@ object LayoutStack {
   @scala.inline
   def apply(children: js.Array[LayoutStackChildren] = null, id: String = null, options: Options = null): LayoutStack = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayoutStack]
   }
 }

@@ -79,19 +79,19 @@ object Anon_BackgroundClipMerging {
     zeroUnits: js.UndefOr[Boolean] = js.undefined
   ): Anon_BackgroundClipMerging = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(backgroundClipMerging)) __obj.updateDynamic("backgroundClipMerging")(backgroundClipMerging)
-    if (!js.isUndefined(backgroundOriginMerging)) __obj.updateDynamic("backgroundOriginMerging")(backgroundOriginMerging)
-    if (!js.isUndefined(backgroundSizeMerging)) __obj.updateDynamic("backgroundSizeMerging")(backgroundSizeMerging)
-    if (!js.isUndefined(colors)) __obj.updateDynamic("colors")(colors)
-    if (!js.isUndefined(ieBangHack)) __obj.updateDynamic("ieBangHack")(ieBangHack)
-    if (!js.isUndefined(ieFilters)) __obj.updateDynamic("ieFilters")(ieFilters)
-    if (!js.isUndefined(iePrefixHack)) __obj.updateDynamic("iePrefixHack")(iePrefixHack)
-    if (!js.isUndefined(ieSuffixHack)) __obj.updateDynamic("ieSuffixHack")(ieSuffixHack)
-    if (!js.isUndefined(merging)) __obj.updateDynamic("merging")(merging)
-    if (shorterLengthUnits != null) __obj.updateDynamic("shorterLengthUnits")(shorterLengthUnits)
-    if (spaceAfterClosingBrace != null) __obj.updateDynamic("spaceAfterClosingBrace")(spaceAfterClosingBrace)
-    if (!js.isUndefined(urlQuotes)) __obj.updateDynamic("urlQuotes")(urlQuotes)
-    if (!js.isUndefined(zeroUnits)) __obj.updateDynamic("zeroUnits")(zeroUnits)
+    if (!js.isUndefined(backgroundClipMerging)) __obj.updateDynamic("backgroundClipMerging")(backgroundClipMerging.asInstanceOf[js.Any])
+    if (!js.isUndefined(backgroundOriginMerging)) __obj.updateDynamic("backgroundOriginMerging")(backgroundOriginMerging.asInstanceOf[js.Any])
+    if (!js.isUndefined(backgroundSizeMerging)) __obj.updateDynamic("backgroundSizeMerging")(backgroundSizeMerging.asInstanceOf[js.Any])
+    if (!js.isUndefined(colors)) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
+    if (!js.isUndefined(ieBangHack)) __obj.updateDynamic("ieBangHack")(ieBangHack.asInstanceOf[js.Any])
+    if (!js.isUndefined(ieFilters)) __obj.updateDynamic("ieFilters")(ieFilters.asInstanceOf[js.Any])
+    if (!js.isUndefined(iePrefixHack)) __obj.updateDynamic("iePrefixHack")(iePrefixHack.asInstanceOf[js.Any])
+    if (!js.isUndefined(ieSuffixHack)) __obj.updateDynamic("ieSuffixHack")(ieSuffixHack.asInstanceOf[js.Any])
+    if (!js.isUndefined(merging)) __obj.updateDynamic("merging")(merging.asInstanceOf[js.Any])
+    if (shorterLengthUnits != null) __obj.updateDynamic("shorterLengthUnits")(shorterLengthUnits.asInstanceOf[js.Any])
+    if (spaceAfterClosingBrace != null) __obj.updateDynamic("spaceAfterClosingBrace")(spaceAfterClosingBrace.asInstanceOf[js.Any])
+    if (!js.isUndefined(urlQuotes)) __obj.updateDynamic("urlQuotes")(urlQuotes.asInstanceOf[js.Any])
+    if (!js.isUndefined(zeroUnits)) __obj.updateDynamic("zeroUnits")(zeroUnits.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BackgroundClipMerging]
   }
 }

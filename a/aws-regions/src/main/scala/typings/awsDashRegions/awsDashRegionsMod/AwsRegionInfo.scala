@@ -15,7 +15,7 @@ trait AwsRegionInfo extends js.Object {
 object AwsRegionInfo {
   @scala.inline
   def apply(code: String, full_name: String, name: String, public: Boolean, zones: js.Array[String]): AwsRegionInfo = {
-    val __obj = js.Dynamic.literal(code = code, full_name = full_name, name = name, public = public, zones = zones)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], full_name = full_name.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], public = public.asInstanceOf[js.Any], zones = zones.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AwsRegionInfo]
   }

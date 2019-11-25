@@ -36,12 +36,12 @@ object BeforeUploadEventArgs {
     uploadItemDetails: js.Any = null
   ): BeforeUploadEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (selectedItems != null) __obj.updateDynamic("selectedItems")(selectedItems)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (uploadItemDetails != null) __obj.updateDynamic("uploadItemDetails")(uploadItemDetails)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (selectedItems != null) __obj.updateDynamic("selectedItems")(selectedItems.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (uploadItemDetails != null) __obj.updateDynamic("uploadItemDetails")(uploadItemDetails.asInstanceOf[js.Any])
     __obj.asInstanceOf[BeforeUploadEventArgs]
   }
 }

@@ -66,8 +66,8 @@ object ExtSettings {
     selector: js.Object,
     `type`: ExtTypeSettings
   ): ExtSettings = {
-    val __obj = js.Dynamic.literal(aTypes = aTypes, afnFiltering = afnFiltering, afnSortData = afnSortData, aoFeatures = aoFeatures, builder = builder, classes = classes, errMode = errMode, feature = feature, fnVersionCheck = js.Any.fromFunction1(fnVersionCheck), iApiIndex = iApiIndex, internal = internal, legacy = legacy, oApi = oApi, oJUIClasses = oJUIClasses, oPagination = oPagination, oSort = oSort, oStdClasses = oStdClasses, ofnSearch = ofnSearch, order = order, pager = pager, renderer = renderer, sVersion = sVersion, search = search, selector = selector)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(aTypes = aTypes.asInstanceOf[js.Any], afnFiltering = afnFiltering.asInstanceOf[js.Any], afnSortData = afnSortData.asInstanceOf[js.Any], aoFeatures = aoFeatures.asInstanceOf[js.Any], builder = builder.asInstanceOf[js.Any], classes = classes.asInstanceOf[js.Any], errMode = errMode.asInstanceOf[js.Any], feature = feature.asInstanceOf[js.Any], fnVersionCheck = js.Any.fromFunction1(fnVersionCheck), iApiIndex = iApiIndex.asInstanceOf[js.Any], internal = internal.asInstanceOf[js.Any], legacy = legacy.asInstanceOf[js.Any], oApi = oApi.asInstanceOf[js.Any], oJUIClasses = oJUIClasses.asInstanceOf[js.Any], oPagination = oPagination.asInstanceOf[js.Any], oSort = oSort.asInstanceOf[js.Any], oStdClasses = oStdClasses.asInstanceOf[js.Any], ofnSearch = ofnSearch.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any], pager = pager.asInstanceOf[js.Any], renderer = renderer.asInstanceOf[js.Any], sVersion = sVersion.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtSettings]
   }
 }

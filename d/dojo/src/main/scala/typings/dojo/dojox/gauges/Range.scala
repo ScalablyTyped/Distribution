@@ -1,9 +1,6 @@
 package typings.dojo.dojox.gauges
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValueOldValue
-import typings.dojo.Fn_NewValueOldValueProperty
-import typings.dojo.Fn_NewValueOldValuePropertyNumber
 import typings.dojo.dijit._Widget
 import typings.dojo.dojoStrings.high
 import typings.dojo.dojoStrings.hover
@@ -87,16 +84,54 @@ class Range () extends _Widget {
   @JSName("set")
   def set_style(property: style, value: String): Unit = js.native
   @JSName("watch")
-  def watch_color(property: typings.dojo.dojoStrings.color, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_color(
+    property: typings.dojo.dojoStrings.color,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_high(property: high, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_high(
+    property: high,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_hover(property: hover, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_hover(
+    property: hover,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_low(property: low, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_low(
+    property: low,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_size(property: size, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
-  @JSName("watch")
-  def watch_style(property: style, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_size(
+    property: size,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

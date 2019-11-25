@@ -36,7 +36,7 @@ object Anon_00204 {
     ops: `2`,
     range: `3`
   ): Anon_00204 = {
-    val __obj = js.Dynamic.literal(className = className, cooldown = cooldown, effect = effect, level = level, ops = ops, range = range)
+    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], cooldown = cooldown.asInstanceOf[js.Any], effect = effect.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], ops = ops.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_00204]
   }

@@ -37,9 +37,9 @@ object ReverseGeocodeResponse {
   ): ReverseGeocodeResponse = {
     val __obj = js.Dynamic.literal()
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (places != null) __obj.updateDynamic("places")(places)
-    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (places != null) __obj.updateDynamic("places")(places.asInstanceOf[js.Any])
+    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReverseGeocodeResponse]
   }
 }

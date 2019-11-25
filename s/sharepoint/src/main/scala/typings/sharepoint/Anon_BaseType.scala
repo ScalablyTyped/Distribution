@@ -15,7 +15,7 @@ trait Anon_BaseType extends js.Object {
 object Anon_BaseType {
   @scala.inline
   def apply(BaseType: Double, DefaultItemOpen: Double, Direction: String, EnableVesioning: Boolean, Id: String): Anon_BaseType = {
-    val __obj = js.Dynamic.literal(BaseType = BaseType, DefaultItemOpen = DefaultItemOpen, Direction = Direction, EnableVesioning = EnableVesioning, Id = Id)
+    val __obj = js.Dynamic.literal(BaseType = BaseType.asInstanceOf[js.Any], DefaultItemOpen = DefaultItemOpen.asInstanceOf[js.Any], Direction = Direction.asInstanceOf[js.Any], EnableVesioning = EnableVesioning.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BaseType]
   }

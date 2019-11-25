@@ -14,7 +14,7 @@ object I18nFormatModule {
   @scala.inline
   def apply(`type`: i18nFormat): I18nFormatModule = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[I18nFormatModule]
   }
 }

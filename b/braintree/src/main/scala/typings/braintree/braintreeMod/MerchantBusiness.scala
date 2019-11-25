@@ -22,11 +22,11 @@ object MerchantBusiness {
     taxId: String = null
   ): MerchantBusiness = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address)
-    if (addressDetails != null) __obj.updateDynamic("addressDetails")(addressDetails)
-    if (dbaName != null) __obj.updateDynamic("dbaName")(dbaName)
-    if (legalName != null) __obj.updateDynamic("legalName")(legalName)
-    if (taxId != null) __obj.updateDynamic("taxId")(taxId)
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    if (addressDetails != null) __obj.updateDynamic("addressDetails")(addressDetails.asInstanceOf[js.Any])
+    if (dbaName != null) __obj.updateDynamic("dbaName")(dbaName.asInstanceOf[js.Any])
+    if (legalName != null) __obj.updateDynamic("legalName")(legalName.asInstanceOf[js.Any])
+    if (taxId != null) __obj.updateDynamic("taxId")(taxId.asInstanceOf[js.Any])
     __obj.asInstanceOf[MerchantBusiness]
   }
 }

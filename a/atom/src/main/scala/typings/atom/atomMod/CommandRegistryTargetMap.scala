@@ -18,8 +18,8 @@ object CommandRegistryTargetMap {
     StringDictionary: /* key */ StringDictionary[EventTarget] = null
   ): CommandRegistryTargetMap = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("atom-text-editor")(`atom-text-editor`)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.updateDynamic("atom-text-editor")(`atom-text-editor`.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[CommandRegistryTargetMap]
   }
 }

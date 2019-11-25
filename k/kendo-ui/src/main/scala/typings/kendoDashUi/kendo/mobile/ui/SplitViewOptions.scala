@@ -21,9 +21,9 @@ object SplitViewOptions {
   ): SplitViewOptions = {
     val __obj = js.Dynamic.literal()
     if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction1(init))
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction1(show))
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[SplitViewOptions]
   }
 }

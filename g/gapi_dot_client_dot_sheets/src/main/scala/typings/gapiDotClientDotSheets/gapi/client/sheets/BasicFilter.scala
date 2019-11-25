@@ -29,9 +29,9 @@ object BasicFilter {
     sortSpecs: js.Array[SortSpec] = null
   ): BasicFilter = {
     val __obj = js.Dynamic.literal()
-    if (criteria != null) __obj.updateDynamic("criteria")(criteria)
-    if (range != null) __obj.updateDynamic("range")(range)
-    if (sortSpecs != null) __obj.updateDynamic("sortSpecs")(sortSpecs)
+    if (criteria != null) __obj.updateDynamic("criteria")(criteria.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (sortSpecs != null) __obj.updateDynamic("sortSpecs")(sortSpecs.asInstanceOf[js.Any])
     __obj.asInstanceOf[BasicFilter]
   }
 }

@@ -13,8 +13,8 @@ object ListWorkspacesResponse {
   @scala.inline
   def apply(nextPageToken: String = null, workspace: js.Array[Workspace] = null): ListWorkspacesResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (workspace != null) __obj.updateDynamic("workspace")(workspace)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (workspace != null) __obj.updateDynamic("workspace")(workspace.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListWorkspacesResponse]
   }
 }

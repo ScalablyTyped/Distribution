@@ -22,8 +22,8 @@ object ContextMenuSettings {
     showContextMenu: js.UndefOr[Boolean] = js.undefined
   ): ContextMenuSettings = {
     val __obj = js.Dynamic.literal()
-    if (contextMenuItems != null) __obj.updateDynamic("contextMenuItems")(contextMenuItems)
-    if (!js.isUndefined(showContextMenu)) __obj.updateDynamic("showContextMenu")(showContextMenu)
+    if (contextMenuItems != null) __obj.updateDynamic("contextMenuItems")(contextMenuItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(showContextMenu)) __obj.updateDynamic("showContextMenu")(showContextMenu.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextMenuSettings]
   }
 }

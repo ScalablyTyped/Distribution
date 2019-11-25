@@ -38,7 +38,7 @@ object GMapProps {
     style: js.Object = null
   ): GMapProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (onMapClick != null) __obj.updateDynamic("onMapClick")(js.Any.fromFunction1(onMapClick))
     if (onMapDragEnd != null) __obj.updateDynamic("onMapDragEnd")(js.Any.fromFunction0(onMapDragEnd))
     if (onMapReady != null) __obj.updateDynamic("onMapReady")(js.Any.fromFunction1(onMapReady))
@@ -47,9 +47,9 @@ object GMapProps {
     if (onOverlayDragEnd != null) __obj.updateDynamic("onOverlayDragEnd")(js.Any.fromFunction1(onOverlayDragEnd))
     if (onOverlayDragStart != null) __obj.updateDynamic("onOverlayDragStart")(js.Any.fromFunction1(onOverlayDragStart))
     if (onZoomChanged != null) __obj.updateDynamic("onZoomChanged")(js.Any.fromFunction0(onZoomChanged))
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (overlays != null) __obj.updateDynamic("overlays")(overlays)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (overlays != null) __obj.updateDynamic("overlays")(overlays.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[GMapProps]
   }
 }

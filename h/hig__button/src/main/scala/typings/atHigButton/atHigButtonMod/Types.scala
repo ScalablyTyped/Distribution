@@ -23,7 +23,7 @@ trait Types extends js.Object {
 object Types {
   @scala.inline
   def apply(FLAT: flat, OUTLINE: outline, PRIMARY: primary, SECONDARY: secondary, SOLID: solid): Types = {
-    val __obj = js.Dynamic.literal(FLAT = FLAT, OUTLINE = OUTLINE, PRIMARY = PRIMARY, SECONDARY = SECONDARY, SOLID = SOLID)
+    val __obj = js.Dynamic.literal(FLAT = FLAT.asInstanceOf[js.Any], OUTLINE = OUTLINE.asInstanceOf[js.Any], PRIMARY = PRIMARY.asInstanceOf[js.Any], SECONDARY = SECONDARY.asInstanceOf[js.Any], SOLID = SOLID.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Types]
   }

@@ -21,7 +21,7 @@ object Wordlist {
     locale: String,
     split: String => js.Array[String]
   ): Wordlist = {
-    val __obj = js.Dynamic.literal(getWord = js.Any.fromFunction1(getWord), getWordIndex = js.Any.fromFunction1(getWordIndex), join = js.Any.fromFunction1(join), locale = locale, split = js.Any.fromFunction1(split))
+    val __obj = js.Dynamic.literal(getWord = js.Any.fromFunction1(getWord), getWordIndex = js.Any.fromFunction1(getWordIndex), join = js.Any.fromFunction1(join), locale = locale.asInstanceOf[js.Any], split = js.Any.fromFunction1(split))
   
     __obj.asInstanceOf[Wordlist]
   }

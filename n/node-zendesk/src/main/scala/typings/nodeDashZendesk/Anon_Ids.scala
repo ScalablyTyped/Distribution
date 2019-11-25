@@ -13,7 +13,7 @@ trait Anon_Ids extends _UpdateIdPayload {
 object Anon_Ids {
   @scala.inline
   def apply(ids: js.Array[ZendeskID]): Anon_Ids = {
-    val __obj = js.Dynamic.literal(ids = ids)
+    val __obj = js.Dynamic.literal(ids = ids.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Ids]
   }

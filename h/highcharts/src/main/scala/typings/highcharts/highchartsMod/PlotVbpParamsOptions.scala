@@ -22,7 +22,7 @@ object PlotVbpParamsOptions {
   def apply(ranges: Int | Double = null, volumeSeriesID: String = null): PlotVbpParamsOptions = {
     val __obj = js.Dynamic.literal()
     if (ranges != null) __obj.updateDynamic("ranges")(ranges.asInstanceOf[js.Any])
-    if (volumeSeriesID != null) __obj.updateDynamic("volumeSeriesID")(volumeSeriesID)
+    if (volumeSeriesID != null) __obj.updateDynamic("volumeSeriesID")(volumeSeriesID.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotVbpParamsOptions]
   }
 }

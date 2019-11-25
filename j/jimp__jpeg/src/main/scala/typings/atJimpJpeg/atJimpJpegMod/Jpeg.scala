@@ -25,8 +25,8 @@ object Jpeg {
     encoders: Anon_ImagejpegEncoderFn,
     mime: Anon_Imagejpeg
   ): Jpeg = {
-    val __obj = js.Dynamic.literal(constants = constants, decoders = decoders, encoders = encoders, mime = mime)
-    __obj.updateDynamic("class")(`class`)
+    val __obj = js.Dynamic.literal(constants = constants.asInstanceOf[js.Any], decoders = decoders.asInstanceOf[js.Any], encoders = encoders.asInstanceOf[js.Any], mime = mime.asInstanceOf[js.Any])
+    __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Jpeg]
   }
 }

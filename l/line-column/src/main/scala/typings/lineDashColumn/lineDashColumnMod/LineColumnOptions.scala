@@ -14,7 +14,7 @@ trait LineColumnOptions extends js.Object {
 object LineColumnOptions {
   @scala.inline
   def apply(origin: Double): LineColumnOptions = {
-    val __obj = js.Dynamic.literal(origin = origin)
+    val __obj = js.Dynamic.literal(origin = origin.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LineColumnOptions]
   }

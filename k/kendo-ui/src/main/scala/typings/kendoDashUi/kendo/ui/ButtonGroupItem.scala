@@ -30,15 +30,15 @@ object ButtonGroupItem {
     text: String = null
   ): ButtonGroupItem = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
-    if (badge != null) __obj.updateDynamic("badge")(badge)
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (!js.isUndefined(encoded)) __obj.updateDynamic("encoded")(encoded)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)
-    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (badge != null) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(encoded)) __obj.updateDynamic("encoded")(encoded.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass.asInstanceOf[js.Any])
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonGroupItem]
   }
 }

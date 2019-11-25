@@ -24,9 +24,9 @@ object IRequestMultipartBinaryFileUploadOptions {
     body: js.Object = null,
     headers: js.Object = null
   ): IRequestMultipartBinaryFileUploadOptions = {
-    val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], fileParameterName = fileParameterName, method = method, url = url)
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], fileParameterName = fileParameterName.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRequestMultipartBinaryFileUploadOptions]
   }
 }

@@ -20,9 +20,9 @@ object Anon_BlankTarget {
     key: String = null,
     title: ReactNode = null
   ): Anon_BlankTarget = {
-    val __obj = js.Dynamic.literal(href = href)
-    if (!js.isUndefined(blankTarget)) __obj.updateDynamic("blankTarget")(blankTarget)
-    if (key != null) __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
+    if (!js.isUndefined(blankTarget)) __obj.updateDynamic("blankTarget")(blankTarget.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BlankTarget]
   }

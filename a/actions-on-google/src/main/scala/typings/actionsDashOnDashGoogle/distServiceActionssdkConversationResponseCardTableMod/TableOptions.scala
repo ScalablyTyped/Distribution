@@ -81,14 +81,14 @@ object TableOptions {
     subtitle: String = null,
     title: String = null
   ): TableOptions = {
-    val __obj = js.Dynamic.literal(rows = rows)
+    val __obj = js.Dynamic.literal(rows = rows.asInstanceOf[js.Any])
     if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
-    if (columnProperties != null) __obj.updateDynamic("columnProperties")(columnProperties)
+    if (columnProperties != null) __obj.updateDynamic("columnProperties")(columnProperties.asInstanceOf[js.Any])
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (!js.isUndefined(dividers)) __obj.updateDynamic("dividers")(dividers)
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(dividers)) __obj.updateDynamic("dividers")(dividers.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableOptions]
   }
 }

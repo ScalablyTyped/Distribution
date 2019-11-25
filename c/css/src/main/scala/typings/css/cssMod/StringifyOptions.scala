@@ -32,10 +32,10 @@ object StringifyOptions {
     sourcemap: String = null
   ): StringifyOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress)
-    if (indent != null) __obj.updateDynamic("indent")(indent)
-    if (!js.isUndefined(inputSourcemaps)) __obj.updateDynamic("inputSourcemaps")(inputSourcemaps)
-    if (sourcemap != null) __obj.updateDynamic("sourcemap")(sourcemap)
+    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress.asInstanceOf[js.Any])
+    if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
+    if (!js.isUndefined(inputSourcemaps)) __obj.updateDynamic("inputSourcemaps")(inputSourcemaps.asInstanceOf[js.Any])
+    if (sourcemap != null) __obj.updateDynamic("sourcemap")(sourcemap.asInstanceOf[js.Any])
     __obj.asInstanceOf[StringifyOptions]
   }
 }

@@ -11,7 +11,7 @@ trait Anon_BasePath extends js.Object {
 object Anon_BasePath {
   @scala.inline
   def apply(basePath: String): Anon_BasePath = {
-    val __obj = js.Dynamic.literal(basePath = basePath)
+    val __obj = js.Dynamic.literal(basePath = basePath.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BasePath]
   }

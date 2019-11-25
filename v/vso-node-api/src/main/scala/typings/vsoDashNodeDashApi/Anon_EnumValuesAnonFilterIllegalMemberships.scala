@@ -11,7 +11,7 @@ trait Anon_EnumValuesAnonFilterIllegalMemberships extends js.Object {
 object Anon_EnumValuesAnonFilterIllegalMemberships {
   @scala.inline
   def apply(enumValues: Anon_FilterIllegalMemberships): Anon_EnumValuesAnonFilterIllegalMemberships = {
-    val __obj = js.Dynamic.literal(enumValues = enumValues)
+    val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EnumValuesAnonFilterIllegalMemberships]
   }

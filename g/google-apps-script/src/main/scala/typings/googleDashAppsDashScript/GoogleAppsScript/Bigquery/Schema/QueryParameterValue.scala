@@ -18,9 +18,9 @@ object QueryParameterValue {
     value: String = null
   ): QueryParameterValue = {
     val __obj = js.Dynamic.literal()
-    if (arrayValues != null) __obj.updateDynamic("arrayValues")(arrayValues)
-    if (structValues != null) __obj.updateDynamic("structValues")(structValues)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (arrayValues != null) __obj.updateDynamic("arrayValues")(arrayValues.asInstanceOf[js.Any])
+    if (structValues != null) __obj.updateDynamic("structValues")(structValues.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryParameterValue]
   }
 }

@@ -28,8 +28,8 @@ object AuthResponse {
     grantedScopes: String = null,
     reauthorize_required_in: Int | Double = null
   ): AuthResponse = {
-    val __obj = js.Dynamic.literal(accessToken = accessToken, expiresIn = expiresIn, signedRequest = signedRequest, userID = userID)
-    if (grantedScopes != null) __obj.updateDynamic("grantedScopes")(grantedScopes)
+    val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any], expiresIn = expiresIn.asInstanceOf[js.Any], signedRequest = signedRequest.asInstanceOf[js.Any], userID = userID.asInstanceOf[js.Any])
+    if (grantedScopes != null) __obj.updateDynamic("grantedScopes")(grantedScopes.asInstanceOf[js.Any])
     if (reauthorize_required_in != null) __obj.updateDynamic("reauthorize_required_in")(reauthorize_required_in.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthResponse]
   }

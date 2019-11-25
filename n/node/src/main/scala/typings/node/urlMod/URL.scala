@@ -59,18 +59,18 @@ object Url {
     search: java.lang.String = null,
     slashes: js.UndefOr[Boolean] = js.undefined
   ): Url = {
-    val __obj = js.Dynamic.literal(href = href)
-    if (auth != null) __obj.updateDynamic("auth")(auth)
-    if (hash != null) __obj.updateDynamic("hash")(hash)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (hostname != null) __obj.updateDynamic("hostname")(hostname)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (pathname != null) __obj.updateDynamic("pathname")(pathname)
-    if (port != null) __obj.updateDynamic("port")(port)
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
+    val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
+    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
+    if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (pathname != null) __obj.updateDynamic("pathname")(pathname.asInstanceOf[js.Any])
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (search != null) __obj.updateDynamic("search")(search)
-    if (!js.isUndefined(slashes)) __obj.updateDynamic("slashes")(slashes)
+    if (search != null) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
+    if (!js.isUndefined(slashes)) __obj.updateDynamic("slashes")(slashes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Url]
   }
 }

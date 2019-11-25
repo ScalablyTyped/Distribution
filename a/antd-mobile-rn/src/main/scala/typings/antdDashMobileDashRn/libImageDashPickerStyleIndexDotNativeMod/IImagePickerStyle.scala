@@ -34,7 +34,7 @@ object IImagePickerStyle {
     plusWrapNormal: ViewStyle,
     size: ViewStyle
   ): IImagePickerStyle = {
-    val __obj = js.Dynamic.literal(closeText = closeText, closeWrap = closeWrap, container = container, image = image, item = item, plusText = plusText, plusWrap = plusWrap, plusWrapHighlight = plusWrapHighlight, plusWrapNormal = plusWrapNormal, size = size)
+    val __obj = js.Dynamic.literal(closeText = closeText.asInstanceOf[js.Any], closeWrap = closeWrap.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], plusText = plusText.asInstanceOf[js.Any], plusWrap = plusWrap.asInstanceOf[js.Any], plusWrapHighlight = plusWrapHighlight.asInstanceOf[js.Any], plusWrapNormal = plusWrapNormal.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IImagePickerStyle]
   }

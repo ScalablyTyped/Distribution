@@ -13,7 +13,7 @@ trait FragmentResponse extends js.Object {
 object FragmentResponse {
   @scala.inline
   def apply(codeFragment: StringDictionary[Anon_Fragment]): FragmentResponse = {
-    val __obj = js.Dynamic.literal(codeFragment = codeFragment)
+    val __obj = js.Dynamic.literal(codeFragment = codeFragment.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FragmentResponse]
   }

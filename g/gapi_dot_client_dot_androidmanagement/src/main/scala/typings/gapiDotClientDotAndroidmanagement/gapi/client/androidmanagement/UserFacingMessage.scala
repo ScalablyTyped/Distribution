@@ -19,8 +19,8 @@ object UserFacingMessage {
   @scala.inline
   def apply(defaultMessage: String = null, localizedMessages: Record[String, String] = null): UserFacingMessage = {
     val __obj = js.Dynamic.literal()
-    if (defaultMessage != null) __obj.updateDynamic("defaultMessage")(defaultMessage)
-    if (localizedMessages != null) __obj.updateDynamic("localizedMessages")(localizedMessages)
+    if (defaultMessage != null) __obj.updateDynamic("defaultMessage")(defaultMessage.asInstanceOf[js.Any])
+    if (localizedMessages != null) __obj.updateDynamic("localizedMessages")(localizedMessages.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserFacingMessage]
   }
 }

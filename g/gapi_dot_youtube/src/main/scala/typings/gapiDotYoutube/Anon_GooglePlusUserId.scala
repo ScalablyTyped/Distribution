@@ -18,7 +18,7 @@ trait Anon_GooglePlusUserId extends js.Object {
 object Anon_GooglePlusUserId {
   @scala.inline
   def apply(googlePlusUserId: String, relatedPlaylists: Anon_Favorites): Anon_GooglePlusUserId = {
-    val __obj = js.Dynamic.literal(googlePlusUserId = googlePlusUserId, relatedPlaylists = relatedPlaylists)
+    val __obj = js.Dynamic.literal(googlePlusUserId = googlePlusUserId.asInstanceOf[js.Any], relatedPlaylists = relatedPlaylists.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_GooglePlusUserId]
   }

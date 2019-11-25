@@ -22,13 +22,13 @@ object CommandMetadata {
     inputs: js.Array[I] = null,
     options: js.Array[O] = null
   ): CommandMetadata[I, O] = {
-    val __obj = js.Dynamic.literal(name = name, summary = summary)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (exampleCommands != null) __obj.updateDynamic("exampleCommands")(exampleCommands)
-    if (footnotes != null) __obj.updateDynamic("footnotes")(footnotes)
-    if (groups != null) __obj.updateDynamic("groups")(groups)
-    if (inputs != null) __obj.updateDynamic("inputs")(inputs)
-    if (options != null) __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (exampleCommands != null) __obj.updateDynamic("exampleCommands")(exampleCommands.asInstanceOf[js.Any])
+    if (footnotes != null) __obj.updateDynamic("footnotes")(footnotes.asInstanceOf[js.Any])
+    if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
+    if (inputs != null) __obj.updateDynamic("inputs")(inputs.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommandMetadata[I, O]]
   }
 }

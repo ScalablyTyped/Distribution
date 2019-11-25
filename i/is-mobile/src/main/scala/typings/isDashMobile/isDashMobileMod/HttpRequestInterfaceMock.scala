@@ -16,8 +16,8 @@ object HttpRequestInterfaceMock {
     headers: HttpRequestHeadersInterfaceMock,
     StringDictionary: /* id */ StringDictionary[js.Any] = null
   ): HttpRequestInterfaceMock = {
-    val __obj = js.Dynamic.literal(headers = headers)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[HttpRequestInterfaceMock]
   }
 }

@@ -24,9 +24,9 @@ object ConditionalFormatRule {
     ranges: js.Array[GridRange] = null
   ): ConditionalFormatRule = {
     val __obj = js.Dynamic.literal()
-    if (booleanRule != null) __obj.updateDynamic("booleanRule")(booleanRule)
-    if (gradientRule != null) __obj.updateDynamic("gradientRule")(gradientRule)
-    if (ranges != null) __obj.updateDynamic("ranges")(ranges)
+    if (booleanRule != null) __obj.updateDynamic("booleanRule")(booleanRule.asInstanceOf[js.Any])
+    if (gradientRule != null) __obj.updateDynamic("gradientRule")(gradientRule.asInstanceOf[js.Any])
+    if (ranges != null) __obj.updateDynamic("ranges")(ranges.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionalFormatRule]
   }
 }

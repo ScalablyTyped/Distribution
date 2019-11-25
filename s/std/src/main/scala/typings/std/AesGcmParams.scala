@@ -20,7 +20,7 @@ object AesGcmParams {
     additionalData: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer = null,
     tagLength: Int | Double = null
   ): AesGcmParams = {
-    val __obj = js.Dynamic.literal(iv = iv.asInstanceOf[js.Any], name = name)
+    val __obj = js.Dynamic.literal(iv = iv.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (additionalData != null) __obj.updateDynamic("additionalData")(additionalData.asInstanceOf[js.Any])
     if (tagLength != null) __obj.updateDynamic("tagLength")(tagLength.asInstanceOf[js.Any])
     __obj.asInstanceOf[AesGcmParams]

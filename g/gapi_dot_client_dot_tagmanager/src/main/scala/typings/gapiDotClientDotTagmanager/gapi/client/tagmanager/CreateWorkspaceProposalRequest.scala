@@ -18,8 +18,8 @@ object CreateWorkspaceProposalRequest {
     reviewers: js.Array[WorkspaceProposalUser] = null
   ): CreateWorkspaceProposalRequest = {
     val __obj = js.Dynamic.literal()
-    if (initialComment != null) __obj.updateDynamic("initialComment")(initialComment)
-    if (reviewers != null) __obj.updateDynamic("reviewers")(reviewers)
+    if (initialComment != null) __obj.updateDynamic("initialComment")(initialComment.asInstanceOf[js.Any])
+    if (reviewers != null) __obj.updateDynamic("reviewers")(reviewers.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateWorkspaceProposalRequest]
   }
 }

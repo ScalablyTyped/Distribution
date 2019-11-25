@@ -13,7 +13,7 @@ trait Anon_Bucket extends js.Object {
 object Anon_Bucket {
   @scala.inline
   def apply(bucket: js.Any, key: js.Any, secret: js.Any): Anon_Bucket = {
-    val __obj = js.Dynamic.literal(bucket = bucket, key = key, secret = secret)
+    val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Bucket]
   }

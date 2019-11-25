@@ -50,7 +50,7 @@ object IEditorViewer {
     toggleWordWrap: /* widget */ T => Unit = null,
     wordWrapToggled: /* widget */ T => Boolean = null
   ): IEditorViewer[T] = {
-    val __obj = js.Dynamic.literal(tracker = tracker)
+    val __obj = js.Dynamic.literal(tracker = tracker.asInstanceOf[js.Any])
     if (isEnabled != null) __obj.updateDynamic("isEnabled")(js.Any.fromFunction1(isEnabled))
     if (lineNumbersToggled != null) __obj.updateDynamic("lineNumbersToggled")(js.Any.fromFunction1(lineNumbersToggled))
     if (matchBracketsToggled != null) __obj.updateDynamic("matchBracketsToggled")(js.Any.fromFunction1(matchBracketsToggled))

@@ -27,13 +27,13 @@ object TreeViewDropEvent {
     sourceNode: Element = null,
     valid: js.UndefOr[Boolean] = js.undefined
   ): TreeViewDropEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (destinationNode != null) __obj.updateDynamic("destinationNode")(destinationNode)
-    if (dropPosition != null) __obj.updateDynamic("dropPosition")(dropPosition)
-    if (dropTarget != null) __obj.updateDynamic("dropTarget")(dropTarget)
-    if (setValid != null) __obj.updateDynamic("setValid")(setValid)
-    if (sourceNode != null) __obj.updateDynamic("sourceNode")(sourceNode)
-    if (!js.isUndefined(valid)) __obj.updateDynamic("valid")(valid)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (destinationNode != null) __obj.updateDynamic("destinationNode")(destinationNode.asInstanceOf[js.Any])
+    if (dropPosition != null) __obj.updateDynamic("dropPosition")(dropPosition.asInstanceOf[js.Any])
+    if (dropTarget != null) __obj.updateDynamic("dropTarget")(dropTarget.asInstanceOf[js.Any])
+    if (setValid != null) __obj.updateDynamic("setValid")(setValid.asInstanceOf[js.Any])
+    if (sourceNode != null) __obj.updateDynamic("sourceNode")(sourceNode.asInstanceOf[js.Any])
+    if (!js.isUndefined(valid)) __obj.updateDynamic("valid")(valid.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeViewDropEvent]
   }
 }

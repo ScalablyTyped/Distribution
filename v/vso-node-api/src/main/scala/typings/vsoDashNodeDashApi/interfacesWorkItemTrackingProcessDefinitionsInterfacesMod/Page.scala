@@ -66,7 +66,7 @@ object Page {
     sections: js.Array[Section],
     visible: Boolean
   ): Page = {
-    val __obj = js.Dynamic.literal(contribution = contribution, id = id, inherited = inherited, isContribution = isContribution, label = label, locked = locked, order = order, overridden = overridden, pageType = pageType, sections = sections, visible = visible)
+    val __obj = js.Dynamic.literal(contribution = contribution.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], inherited = inherited.asInstanceOf[js.Any], isContribution = isContribution.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], locked = locked.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any], overridden = overridden.asInstanceOf[js.Any], pageType = pageType.asInstanceOf[js.Any], sections = sections.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Page]
   }

@@ -13,7 +13,7 @@ trait IPacket extends js.Object {
 object IPacket {
   @scala.inline
   def apply(cmd: PacketCmd, length: Int | Double = null, messageId: Int | Double = null): IPacket = {
-    val __obj = js.Dynamic.literal(cmd = cmd)
+    val __obj = js.Dynamic.literal(cmd = cmd.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPacket]

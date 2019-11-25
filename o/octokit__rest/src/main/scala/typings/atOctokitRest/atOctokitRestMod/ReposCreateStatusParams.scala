@@ -43,10 +43,10 @@ object ReposCreateStatusParams {
     description: String = null,
     target_url: String = null
   ): ReposCreateStatusParams = {
-    val __obj = js.Dynamic.literal(owner = owner, repo = repo, sha = sha, state = state.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (target_url != null) __obj.updateDynamic("target_url")(target_url)
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (target_url != null) __obj.updateDynamic("target_url")(target_url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposCreateStatusParams]
   }
 }

@@ -22,7 +22,7 @@ trait BreakpointsChangeEvent extends js.Object {
 object BreakpointsChangeEvent {
   @scala.inline
   def apply(added: js.Array[Breakpoint], changed: js.Array[Breakpoint], removed: js.Array[Breakpoint]): BreakpointsChangeEvent = {
-    val __obj = js.Dynamic.literal(added = added, changed = changed, removed = removed)
+    val __obj = js.Dynamic.literal(added = added.asInstanceOf[js.Any], changed = changed.asInstanceOf[js.Any], removed = removed.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BreakpointsChangeEvent]
   }

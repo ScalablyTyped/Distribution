@@ -4,7 +4,6 @@ import typings.asana.Anon_Name
 import typings.asana.asanaMod.resources.Users.Type
 import typings.asana.asanaMod.resources.Workspaces.ShortType
 import typings.asana.asanaMod.resources.Workspaces.TypeaheadParams
-import typings.bluebird.bluebirdMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -45,8 +44,8 @@ trait Workspaces_ extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def addUser(workspace: Double, data: UserParams): ^[Type] = js.native
-  def addUser(workspace: Double, data: UserParams, dispatchOptions: js.Any): ^[Type] = js.native
+  def addUser(workspace: Double, data: UserParams): typings.bluebird.bluebirdMod.^[Type] = js.native
+  def addUser(workspace: Double, data: UserParams, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[Type] = js.native
   /**
     * * Returns the compact records for all workspaces visible to the authorized user.
     *   * @param {Object} [params] Parameters for the request
@@ -56,9 +55,9 @@ trait Workspaces_ extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def findAll(): ^[ResourceList[ShortType]] = js.native
-  def findAll(params: PaginationParams): ^[ResourceList[ShortType]] = js.native
-  def findAll(params: PaginationParams, dispatchOptions: js.Any): ^[ResourceList[ShortType]] = js.native
+  def findAll(): typings.bluebird.bluebirdMod.^[ResourceList[ShortType]] = js.native
+  def findAll(params: PaginationParams): typings.bluebird.bluebirdMod.^[ResourceList[ShortType]] = js.native
+  def findAll(params: PaginationParams, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[ResourceList[ShortType]] = js.native
   /**
     * * Returns the full workspace record for a single workspace.
     *   * @param {Number} workspace Globally unique identifier for the workspace or organization.
@@ -70,9 +69,9 @@ trait Workspaces_ extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def findById(workspace: Double): ^[typings.asana.asanaMod.resources.Workspaces.Type] = js.native
-  def findById(workspace: Double, params: Params): ^[typings.asana.asanaMod.resources.Workspaces.Type] = js.native
-  def findById(workspace: Double, params: Params, dispatchOptions: js.Any): ^[typings.asana.asanaMod.resources.Workspaces.Type] = js.native
+  def findById(workspace: Double): typings.bluebird.bluebirdMod.^[typings.asana.asanaMod.resources.Workspaces.Type] = js.native
+  def findById(workspace: Double, params: Params): typings.bluebird.bluebirdMod.^[typings.asana.asanaMod.resources.Workspaces.Type] = js.native
+  def findById(workspace: Double, params: Params, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[typings.asana.asanaMod.resources.Workspaces.Type] = js.native
   /**
     * * The user making this call must be an admin in the workspace.
     * * Returns an empty data record.
@@ -88,8 +87,8 @@ trait Workspaces_ extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def removeUser(workspace: Double, data: UserParams): ^[_] = js.native
-  def removeUser(workspace: Double, data: UserParams, dispatchOptions: js.Any): ^[_] = js.native
+  def removeUser(workspace: Double, data: UserParams): typings.bluebird.bluebirdMod.^[_] = js.native
+  def removeUser(workspace: Double, data: UserParams, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[_] = js.native
   /**
     * * Retrieves objects in the workspace based on an auto-completion/typeahead
     * * search algorithm. This feature is meant to provide results quickly, so do
@@ -114,9 +113,9 @@ trait Workspaces_ extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def typeahead(workspace: Double): ^[SimpleResourceList] = js.native
-  def typeahead(workspace: Double, params: TypeaheadParams): ^[SimpleResourceList] = js.native
-  def typeahead(workspace: Double, params: TypeaheadParams, dispatchOptions: js.Any): ^[SimpleResourceList] = js.native
+  def typeahead(workspace: Double): typings.bluebird.bluebirdMod.^[SimpleResourceList] = js.native
+  def typeahead(workspace: Double, params: TypeaheadParams): typings.bluebird.bluebirdMod.^[SimpleResourceList] = js.native
+  def typeahead(workspace: Double, params: TypeaheadParams, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[SimpleResourceList] = js.native
   /**
     * * A specific, existing workspace can be updated by making a PUT request on
     * * the URL for that workspace. Only the fields provided in the data block
@@ -134,7 +133,7 @@ trait Workspaces_ extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def update(workspace: Double, data: Anon_Name): ^[typings.asana.asanaMod.resources.Workspaces.Type] = js.native
-  def update(workspace: Double, data: Anon_Name, dispatchOptions: js.Any): ^[typings.asana.asanaMod.resources.Workspaces.Type] = js.native
+  def update(workspace: Double, data: Anon_Name): typings.bluebird.bluebirdMod.^[typings.asana.asanaMod.resources.Workspaces.Type] = js.native
+  def update(workspace: Double, data: Anon_Name, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[typings.asana.asanaMod.resources.Workspaces.Type] = js.native
 }
 

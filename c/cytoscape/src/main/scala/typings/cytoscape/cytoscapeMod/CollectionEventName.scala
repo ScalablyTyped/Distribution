@@ -26,3 +26,36 @@ import scala.scalajs.js.annotation._
 */
 trait CollectionEventName extends js.Object
 
+object CollectionEventName {
+  @scala.inline
+  def add: typings.cytoscape.cytoscapeStrings.add = this.cast("add")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def data: typings.cytoscape.cytoscapeStrings.data = this.cast("data")
+  @scala.inline
+  def drag: typings.cytoscape.cytoscapeStrings.drag = this.cast("drag")
+  @scala.inline
+  def free: typings.cytoscape.cytoscapeStrings.free = this.cast("free")
+  @scala.inline
+  def grab: typings.cytoscape.cytoscapeStrings.grab = this.cast("grab")
+  @scala.inline
+  def grabon: typings.cytoscape.cytoscapeStrings.grabon = this.cast("grabon")
+  @scala.inline
+  def lock: typings.cytoscape.cytoscapeStrings.lock = this.cast("lock")
+  @scala.inline
+  def position: typings.cytoscape.cytoscapeStrings.position = this.cast("position")
+  @scala.inline
+  def remove: typings.cytoscape.cytoscapeStrings.remove = this.cast("remove")
+  @scala.inline
+  def scratch: typings.cytoscape.cytoscapeStrings.scratch = this.cast("scratch")
+  @scala.inline
+  def select: typings.cytoscape.cytoscapeStrings.select = this.cast("select")
+  @scala.inline
+  def style: typings.cytoscape.cytoscapeStrings.style = this.cast("style")
+  @scala.inline
+  def unlock: typings.cytoscape.cytoscapeStrings.unlock = this.cast("unlock")
+  @scala.inline
+  def unselect: typings.cytoscape.cytoscapeStrings.unselect = this.cast("unselect")
+}
+

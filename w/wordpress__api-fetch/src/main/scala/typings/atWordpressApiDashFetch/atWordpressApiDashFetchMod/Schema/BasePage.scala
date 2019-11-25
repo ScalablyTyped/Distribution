@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 object BasePage {
   @scala.inline
   def apply[T /* <: Context */](menu_order: Double, parent: Double): BasePage[T] = {
-    val __obj = js.Dynamic.literal(menu_order = menu_order, parent = parent)
+    val __obj = js.Dynamic.literal(menu_order = menu_order.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BasePage[T]]
   }

@@ -17,7 +17,7 @@ object Anon_NavigationOptionsRouter {
     router: NavigationRouter[Options, js.Object],
     navigationOptions: NavigationScreenConfig[Options, NavigationPropType, _] = null
   ): Anon_NavigationOptionsRouter[Options, NavigationPropType] = {
-    val __obj = js.Dynamic.literal(router = router)
+    val __obj = js.Dynamic.literal(router = router.asInstanceOf[js.Any])
     if (navigationOptions != null) __obj.updateDynamic("navigationOptions")(navigationOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_NavigationOptionsRouter[Options, NavigationPropType]]
   }

@@ -25,7 +25,7 @@ object ListReelMediaViewerFeedResponseChat_sticker {
     text: String,
     thread_id: String
   ): ListReelMediaViewerFeedResponseChat_sticker = {
-    val __obj = js.Dynamic.literal(end_background_color = end_background_color, has_started_chat = has_started_chat, start_background_color = start_background_color, status = status, story_chat_id = story_chat_id, text = text, thread_id = thread_id)
+    val __obj = js.Dynamic.literal(end_background_color = end_background_color.asInstanceOf[js.Any], has_started_chat = has_started_chat.asInstanceOf[js.Any], start_background_color = start_background_color.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], story_chat_id = story_chat_id.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], thread_id = thread_id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ListReelMediaViewerFeedResponseChat_sticker]
   }

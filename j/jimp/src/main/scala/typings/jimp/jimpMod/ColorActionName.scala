@@ -16,3 +16,24 @@ import scala.scalajs.js.annotation._
 */
 trait ColorActionName extends js.Object
 
+object ColorActionName {
+  @scala.inline
+  def blue: typings.jimp.jimpStrings.blue = this.cast("blue")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def green: typings.jimp.jimpStrings.green = this.cast("green")
+  @scala.inline
+  def hue: typings.jimp.jimpStrings.hue = this.cast("hue")
+  @scala.inline
+  def mix: typings.jimp.jimpStrings.mix = this.cast("mix")
+  @scala.inline
+  def red: typings.jimp.jimpStrings.red = this.cast("red")
+  @scala.inline
+  def shade: typings.jimp.jimpStrings.shade = this.cast("shade")
+  @scala.inline
+  def tint: typings.jimp.jimpStrings.tint = this.cast("tint")
+  @scala.inline
+  def xor: typings.jimp.jimpStrings.xor = this.cast("xor")
+}
+

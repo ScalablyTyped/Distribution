@@ -21,7 +21,7 @@ object GetMarkupFromTreeOptions {
     tree: ReactNode = null
   ): GetMarkupFromTreeOptions = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (renderFunction != null) __obj.updateDynamic("renderFunction")(js.Any.fromFunction1(renderFunction))
     if (tree != null) __obj.updateDynamic("tree")(tree.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMarkupFromTreeOptions]

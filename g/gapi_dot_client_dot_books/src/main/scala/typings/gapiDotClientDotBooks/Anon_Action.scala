@@ -56,18 +56,18 @@ object Anon_Action {
     source: String = null,
     userIp: String = null
   ): Anon_Action = {
-    val __obj = js.Dynamic.literal(position = position, timestamp = timestamp, volumeId = volumeId)
-    if (action != null) __obj.updateDynamic("action")(action)
-    if (alt != null) __obj.updateDynamic("alt")(alt)
-    if (contentVersion != null) __obj.updateDynamic("contentVersion")(contentVersion)
-    if (deviceCookie != null) __obj.updateDynamic("deviceCookie")(deviceCookie)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], volumeId = volumeId.asInstanceOf[js.Any])
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
+    if (contentVersion != null) __obj.updateDynamic("contentVersion")(contentVersion.asInstanceOf[js.Any])
+    if (deviceCookie != null) __obj.updateDynamic("deviceCookie")(deviceCookie.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Action]
   }
 }

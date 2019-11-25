@@ -42,7 +42,7 @@ object SearchReposParams {
     per_page: Int | Double = null,
     sort: stars | forks | `help-wanted-issues` | updated = null
   ): SearchReposParams = {
-    val __obj = js.Dynamic.literal(q = q)
+    val __obj = js.Dynamic.literal(q = q.asInstanceOf[js.Any])
     if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (per_page != null) __obj.updateDynamic("per_page")(per_page.asInstanceOf[js.Any])

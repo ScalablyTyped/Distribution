@@ -27,11 +27,11 @@ object ServerConfig {
     validNodeVersions: js.Array[String] = null
   ): ServerConfig = {
     val __obj = js.Dynamic.literal()
-    if (defaultClusterVersion != null) __obj.updateDynamic("defaultClusterVersion")(defaultClusterVersion)
-    if (defaultImageType != null) __obj.updateDynamic("defaultImageType")(defaultImageType)
-    if (validImageTypes != null) __obj.updateDynamic("validImageTypes")(validImageTypes)
-    if (validMasterVersions != null) __obj.updateDynamic("validMasterVersions")(validMasterVersions)
-    if (validNodeVersions != null) __obj.updateDynamic("validNodeVersions")(validNodeVersions)
+    if (defaultClusterVersion != null) __obj.updateDynamic("defaultClusterVersion")(defaultClusterVersion.asInstanceOf[js.Any])
+    if (defaultImageType != null) __obj.updateDynamic("defaultImageType")(defaultImageType.asInstanceOf[js.Any])
+    if (validImageTypes != null) __obj.updateDynamic("validImageTypes")(validImageTypes.asInstanceOf[js.Any])
+    if (validMasterVersions != null) __obj.updateDynamic("validMasterVersions")(validMasterVersions.asInstanceOf[js.Any])
+    if (validNodeVersions != null) __obj.updateDynamic("validNodeVersions")(validNodeVersions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerConfig]
   }
 }

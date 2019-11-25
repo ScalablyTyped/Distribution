@@ -48,13 +48,13 @@ object GoogleCloudVideointelligenceV1beta2_VideoAnnotationResults {
     shotLabelAnnotations: js.Array[GoogleCloudVideointelligenceV1beta2_LabelAnnotation] = null
   ): GoogleCloudVideointelligenceV1beta2_VideoAnnotationResults = {
     val __obj = js.Dynamic.literal()
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (explicitAnnotation != null) __obj.updateDynamic("explicitAnnotation")(explicitAnnotation)
-    if (frameLabelAnnotations != null) __obj.updateDynamic("frameLabelAnnotations")(frameLabelAnnotations)
-    if (inputUri != null) __obj.updateDynamic("inputUri")(inputUri)
-    if (segmentLabelAnnotations != null) __obj.updateDynamic("segmentLabelAnnotations")(segmentLabelAnnotations)
-    if (shotAnnotations != null) __obj.updateDynamic("shotAnnotations")(shotAnnotations)
-    if (shotLabelAnnotations != null) __obj.updateDynamic("shotLabelAnnotations")(shotLabelAnnotations)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (explicitAnnotation != null) __obj.updateDynamic("explicitAnnotation")(explicitAnnotation.asInstanceOf[js.Any])
+    if (frameLabelAnnotations != null) __obj.updateDynamic("frameLabelAnnotations")(frameLabelAnnotations.asInstanceOf[js.Any])
+    if (inputUri != null) __obj.updateDynamic("inputUri")(inputUri.asInstanceOf[js.Any])
+    if (segmentLabelAnnotations != null) __obj.updateDynamic("segmentLabelAnnotations")(segmentLabelAnnotations.asInstanceOf[js.Any])
+    if (shotAnnotations != null) __obj.updateDynamic("shotAnnotations")(shotAnnotations.asInstanceOf[js.Any])
+    if (shotLabelAnnotations != null) __obj.updateDynamic("shotLabelAnnotations")(shotLabelAnnotations.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1beta2_VideoAnnotationResults]
   }
 }

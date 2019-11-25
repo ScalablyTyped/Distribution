@@ -51,11 +51,11 @@ object IOptions {
     width: Int | Double = null
   ): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cut)) __obj.updateDynamic("cut")(cut)
+    if (!js.isUndefined(cut)) __obj.updateDynamic("cut")(cut.asInstanceOf[js.Any])
     if (escape != null) __obj.updateDynamic("escape")(js.Any.fromFunction1(escape))
-    if (indent != null) __obj.updateDynamic("indent")(indent)
-    if (newline != null) __obj.updateDynamic("newline")(newline)
-    if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim)
+    if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
+    if (newline != null) __obj.updateDynamic("newline")(newline.asInstanceOf[js.Any])
+    if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }

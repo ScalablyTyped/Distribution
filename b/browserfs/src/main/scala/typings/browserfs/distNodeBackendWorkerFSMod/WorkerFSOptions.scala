@@ -12,7 +12,7 @@ trait WorkerFSOptions extends js.Object {
 object WorkerFSOptions {
   @scala.inline
   def apply(worker: Worker): WorkerFSOptions = {
-    val __obj = js.Dynamic.literal(worker = worker)
+    val __obj = js.Dynamic.literal(worker = worker.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WorkerFSOptions]
   }

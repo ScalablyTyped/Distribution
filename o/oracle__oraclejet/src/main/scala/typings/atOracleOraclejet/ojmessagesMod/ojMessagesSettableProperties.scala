@@ -29,9 +29,9 @@ object ojMessagesSettableProperties {
     messages: js.Array[Message] | (DataProvider[_, Message]) = null,
     position: Position = null
   ): ojMessagesSettableProperties = {
-    val __obj = js.Dynamic.literal(display = display.asInstanceOf[js.Any], displayOptions = displayOptions, translations = translations)
+    val __obj = js.Dynamic.literal(display = display.asInstanceOf[js.Any], displayOptions = displayOptions.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any])
     if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojMessagesSettableProperties]
   }
 }

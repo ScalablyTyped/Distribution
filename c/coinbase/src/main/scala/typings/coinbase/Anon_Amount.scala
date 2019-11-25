@@ -22,7 +22,7 @@ trait Anon_Amount extends js.Object {
 object Anon_Amount {
   @scala.inline
   def apply(amount: String, base: String, currency: String): Anon_Amount = {
-    val __obj = js.Dynamic.literal(amount = amount, base = base, currency = currency)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Amount]
   }

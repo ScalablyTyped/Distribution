@@ -12,7 +12,7 @@ object _Global_ extends js.Object {
     @JSName("hash")
     var hash_Original: PromiseHash = js.native
     def hash[T](
-      promiseHash: /* import warning: ImportType.apply c Unsupported type mapping: 
+      promiseHash: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof T ]: std.PromiseLike<T[P]> | T[P]}
       */ typings.promiseDashHash.promiseDashHashStrings.PromiseConstructor with js.Any
     ): js.Promise[T] = js.native

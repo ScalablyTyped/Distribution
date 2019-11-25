@@ -12,8 +12,8 @@ trait RefreshTokenParams extends js.Object {
 object RefreshTokenParams {
   @scala.inline
   def apply(refreshToken: String, scope: String = null): RefreshTokenParams = {
-    val __obj = js.Dynamic.literal(refreshToken = refreshToken)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
+    val __obj = js.Dynamic.literal(refreshToken = refreshToken.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[RefreshTokenParams]
   }
 }

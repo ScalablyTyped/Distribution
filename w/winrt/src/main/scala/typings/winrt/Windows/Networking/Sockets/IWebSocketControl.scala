@@ -21,7 +21,7 @@ object IWebSocketControl {
     serverCredential: PasswordCredential,
     supportedProtocols: IVector[String]
   ): IWebSocketControl = {
-    val __obj = js.Dynamic.literal(outboundBufferSizeInBytes = outboundBufferSizeInBytes, proxyCredential = proxyCredential, serverCredential = serverCredential, supportedProtocols = supportedProtocols)
+    val __obj = js.Dynamic.literal(outboundBufferSizeInBytes = outboundBufferSizeInBytes.asInstanceOf[js.Any], proxyCredential = proxyCredential.asInstanceOf[js.Any], serverCredential = serverCredential.asInstanceOf[js.Any], supportedProtocols = supportedProtocols.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IWebSocketControl]
   }

@@ -14,7 +14,7 @@ trait ExecutionContextCreatedEventDataType extends js.Object {
 object ExecutionContextCreatedEventDataType {
   @scala.inline
   def apply(context: ExecutionContextDescription): ExecutionContextCreatedEventDataType = {
-    val __obj = js.Dynamic.literal(context = context)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExecutionContextCreatedEventDataType]
   }

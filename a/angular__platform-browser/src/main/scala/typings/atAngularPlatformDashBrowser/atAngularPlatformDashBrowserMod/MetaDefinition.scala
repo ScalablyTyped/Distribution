@@ -32,16 +32,16 @@ object MetaDefinition {
     url: String = null
   ): MetaDefinition = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (charset != null) __obj.updateDynamic("charset")(charset)
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (httpEquiv != null) __obj.updateDynamic("httpEquiv")(httpEquiv)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (itemprop != null) __obj.updateDynamic("itemprop")(itemprop)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (property != null) __obj.updateDynamic("property")(property)
-    if (scheme != null) __obj.updateDynamic("scheme")(scheme)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (charset != null) __obj.updateDynamic("charset")(charset.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (httpEquiv != null) __obj.updateDynamic("httpEquiv")(httpEquiv.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (itemprop != null) __obj.updateDynamic("itemprop")(itemprop.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
+    if (scheme != null) __obj.updateDynamic("scheme")(scheme.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetaDefinition]
   }
 }

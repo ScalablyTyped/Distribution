@@ -34,7 +34,7 @@ object Anon_Domain {
     WeakDomain: RegExp,
     ZipCode: RegExp
   ): Anon_Domain = {
-    val __obj = js.Dynamic.literal(Domain = Domain, Email = Email, EmailWithTLD = EmailWithTLD, IP = IP, IPv4 = IPv4, IPv6 = IPv6, Id = Id, Phone = Phone, Url = Url, WeakDomain = WeakDomain, ZipCode = ZipCode)
+    val __obj = js.Dynamic.literal(Domain = Domain.asInstanceOf[js.Any], Email = Email.asInstanceOf[js.Any], EmailWithTLD = EmailWithTLD.asInstanceOf[js.Any], IP = IP.asInstanceOf[js.Any], IPv4 = IPv4.asInstanceOf[js.Any], IPv6 = IPv6.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Phone = Phone.asInstanceOf[js.Any], Url = Url.asInstanceOf[js.Any], WeakDomain = WeakDomain.asInstanceOf[js.Any], ZipCode = ZipCode.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Domain]
   }

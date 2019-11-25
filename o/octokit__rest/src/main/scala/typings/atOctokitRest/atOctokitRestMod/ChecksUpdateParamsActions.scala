@@ -13,7 +13,7 @@ trait ChecksUpdateParamsActions extends js.Object {
 object ChecksUpdateParamsActions {
   @scala.inline
   def apply(description: String, identifier: String, label: String): ChecksUpdateParamsActions = {
-    val __obj = js.Dynamic.literal(description = description, identifier = identifier, label = label)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], identifier = identifier.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChecksUpdateParamsActions]
   }

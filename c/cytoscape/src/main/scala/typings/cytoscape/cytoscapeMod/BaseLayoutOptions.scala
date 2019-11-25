@@ -19,7 +19,7 @@ object BaseLayoutOptions {
     ready: /* e */ LayoutEventObject => Unit = null,
     stop: /* e */ LayoutEventObject => Unit = null
   ): BaseLayoutOptions = {
-    val __obj = js.Dynamic.literal(name = name)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (ready != null) __obj.updateDynamic("ready")(js.Any.fromFunction1(ready))
     if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction1(stop))
     __obj.asInstanceOf[BaseLayoutOptions]

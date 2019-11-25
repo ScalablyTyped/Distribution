@@ -25,7 +25,7 @@ object Anon_Artifacts {
     triggers: Double,
     variables: Double
   ): Anon_Artifacts = {
-    val __obj = js.Dynamic.literal(artifacts = artifacts, environments = environments, lastRelease = lastRelease, none = none, tags = tags, triggers = triggers, variables = variables)
+    val __obj = js.Dynamic.literal(artifacts = artifacts.asInstanceOf[js.Any], environments = environments.asInstanceOf[js.Any], lastRelease = lastRelease.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], triggers = triggers.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Artifacts]
   }

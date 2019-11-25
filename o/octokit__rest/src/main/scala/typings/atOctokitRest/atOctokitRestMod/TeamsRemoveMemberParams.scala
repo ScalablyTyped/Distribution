@@ -12,7 +12,7 @@ trait TeamsRemoveMemberParams extends js.Object {
 object TeamsRemoveMemberParams {
   @scala.inline
   def apply(team_id: Double, username: String): TeamsRemoveMemberParams = {
-    val __obj = js.Dynamic.literal(team_id = team_id, username = username)
+    val __obj = js.Dynamic.literal(team_id = team_id.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TeamsRemoveMemberParams]
   }

@@ -15,10 +15,10 @@ object Anon_Label {
   @scala.inline
   def apply(label: String = null, name: String = null, plan: String = null, tag: String = null): Anon_Label = {
     val __obj = js.Dynamic.literal()
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (plan != null) __obj.updateDynamic("plan")(plan)
-    if (tag != null) __obj.updateDynamic("tag")(tag)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (plan != null) __obj.updateDynamic("plan")(plan.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Label]
   }
 }

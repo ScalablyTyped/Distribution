@@ -37,10 +37,10 @@ object IWebhookUpdateOptions {
     url: String = null
   ): IWebhookUpdateOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (enabled_events != null) __obj.updateDynamic("enabled_events")(enabled_events)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (enabled_events != null) __obj.updateDynamic("enabled_events")(enabled_events.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWebhookUpdateOptions]
   }
 }

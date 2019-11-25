@@ -14,7 +14,7 @@ trait Anon_Tokeninfodictionary extends js.Object {
 object Anon_Tokeninfodictionary {
   @scala.inline
   def apply(token_info_dictionary: TokenInfoDictionary, trie: DoubleArray): Anon_Tokeninfodictionary = {
-    val __obj = js.Dynamic.literal(token_info_dictionary = token_info_dictionary, trie = trie)
+    val __obj = js.Dynamic.literal(token_info_dictionary = token_info_dictionary.asInstanceOf[js.Any], trie = trie.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Tokeninfodictionary]
   }

@@ -35,7 +35,7 @@ object TableRowProps {
     onRowMouseOver: /* params */ RowMouseEventHandlerParams => Unit = null,
     onRowRightClick: /* params */ RowMouseEventHandlerParams => Unit = null
   ): TableRowProps = {
-    val __obj = js.Dynamic.literal(className = className, columns = columns, index = index, isScrolling = isScrolling, key = key, rowData = rowData, style = style)
+    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], columns = columns.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], isScrolling = isScrolling.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], rowData = rowData.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
     if (onRowClick != null) __obj.updateDynamic("onRowClick")(js.Any.fromFunction1(onRowClick))
     if (onRowDoubleClick != null) __obj.updateDynamic("onRowDoubleClick")(js.Any.fromFunction1(onRowDoubleClick))
     if (onRowMouseOut != null) __obj.updateDynamic("onRowMouseOut")(js.Any.fromFunction1(onRowMouseOut))

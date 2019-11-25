@@ -11,7 +11,7 @@ trait DeleteQueue extends js.Object {
 object DeleteQueue {
   @scala.inline
   def apply(messageCount: Double): DeleteQueue = {
-    val __obj = js.Dynamic.literal(messageCount = messageCount)
+    val __obj = js.Dynamic.literal(messageCount = messageCount.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeleteQueue]
   }

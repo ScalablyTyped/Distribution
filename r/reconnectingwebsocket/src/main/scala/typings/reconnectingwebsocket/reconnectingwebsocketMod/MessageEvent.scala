@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait MessageEvent
   extends CustomEvent[js.Any] {
-  var data: /* import warning: ImportType.apply Failed type conversion: reconnectingwebsocket.GlobalMessageEvent['data'] */ js.Any = js.native
+  var data: /* import warning: importer.ImportType#apply Failed type conversion: reconnectingwebsocket.GlobalMessageEvent['data'] */ js.Any = js.native
   @JSName("type")
   var type_MessageEvent: message = js.native
 }

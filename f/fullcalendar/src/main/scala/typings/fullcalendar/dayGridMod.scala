@@ -17,9 +17,9 @@ object dayGridMod extends js.Object {
     var bottomCoordPadding: Double = js.native
     var cellEls: js.Any = js.native
     var cellWeekNumbersVisible: Boolean = js.native
-    var colCnt: /* import warning: ImportType.apply Failed type conversion: fullcalendar.fullcalendar/DayTableMixin.DayTableInterface['colCnt'] */ js.Any = js.native
+    var colCnt: /* import warning: importer.ImportType#apply Failed type conversion: fullcalendar.fullcalendar/DayTableMixin.DayTableInterface['colCnt'] */ js.Any = js.native
     var colCoordCache: js.Any = js.native
-    var daysPerRow: /* import warning: ImportType.apply Failed type conversion: fullcalendar.fullcalendar/DayTableMixin.DayTableInterface['daysPerRow'] */ js.Any = js.native
+    var daysPerRow: /* import warning: importer.ImportType#apply Failed type conversion: fullcalendar.fullcalendar/DayTableMixin.DayTableInterface['daysPerRow'] */ js.Any = js.native
     @JSName("getCellDate")
     var getCellDate_Original: js.Function2[/* row */ js.Any, /* col */ js.Any, _] = js.native
     @JSName("getCellRange")
@@ -33,7 +33,7 @@ object dayGridMod extends js.Object {
     var renderHeadHtml_Original: js.Function0[_] = js.native
     @JSName("renderIntroHtml")
     var renderIntroHtml_Original: js.Function0[_] = js.native
-    var rowCnt: /* import warning: ImportType.apply Failed type conversion: fullcalendar.fullcalendar/DayTableMixin.DayTableInterface['rowCnt'] */ js.Any = js.native
+    var rowCnt: /* import warning: importer.ImportType#apply Failed type conversion: fullcalendar.fullcalendar/DayTableMixin.DayTableInterface['rowCnt'] */ js.Any = js.native
     var rowCoordCache: js.Any = js.native
     var rowEls: js.Any = js.native
     var segPopover: js.Any = js.native

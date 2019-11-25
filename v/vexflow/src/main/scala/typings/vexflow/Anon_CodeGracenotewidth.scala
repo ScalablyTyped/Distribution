@@ -15,7 +15,7 @@ trait Anon_CodeGracenotewidth extends js.Object {
 object Anon_CodeGracenotewidth {
   @scala.inline
   def apply(code: String, gracenote_width: Double, shift_down: Double, shift_right: Double, width: Double): Anon_CodeGracenotewidth = {
-    val __obj = js.Dynamic.literal(code = code, gracenote_width = gracenote_width, shift_down = shift_down, shift_right = shift_right, width = width)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], gracenote_width = gracenote_width.asInstanceOf[js.Any], shift_down = shift_down.asInstanceOf[js.Any], shift_right = shift_right.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CodeGracenotewidth]
   }

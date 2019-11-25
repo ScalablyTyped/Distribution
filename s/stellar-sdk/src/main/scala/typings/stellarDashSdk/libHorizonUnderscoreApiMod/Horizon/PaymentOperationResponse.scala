@@ -22,7 +22,7 @@ trait PaymentOperationResponse
 object PaymentOperationResponse {
   @scala.inline
   def apply(
-    _links: /* import warning: ImportType.apply c Unsupported type mapping: 
+    _links: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in T | 'self' ]: stellar-sdk.stellar-sdk/lib/horizon_api.Horizon.ResponseLink}
     */ typings.stellarDashSdk.stellarDashSdkStrings.BaseResponse with js.Any,
     amount: String,
@@ -39,10 +39,10 @@ object PaymentOperationResponse {
     asset_code: String = null,
     asset_issuer: String = null
   ): PaymentOperationResponse = {
-    val __obj = js.Dynamic.literal(_links = _links, amount = amount, asset_type = asset_type.asInstanceOf[js.Any], created_at = created_at, from = from, id = id, paging_token = paging_token, source_account = source_account, to = to, transaction_hash = transaction_hash, type_i = type_i)
-    __obj.updateDynamic("type")(`type`)
-    if (asset_code != null) __obj.updateDynamic("asset_code")(asset_code)
-    if (asset_issuer != null) __obj.updateDynamic("asset_issuer")(asset_issuer)
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], amount = amount.asInstanceOf[js.Any], asset_type = asset_type.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], paging_token = paging_token.asInstanceOf[js.Any], source_account = source_account.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any], transaction_hash = transaction_hash.asInstanceOf[js.Any], type_i = type_i.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (asset_code != null) __obj.updateDynamic("asset_code")(asset_code.asInstanceOf[js.Any])
+    if (asset_issuer != null) __obj.updateDynamic("asset_issuer")(asset_issuer.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentOperationResponse]
   }
 }

@@ -95,15 +95,15 @@ object PlusOauthUserInfo {
     sex: String = null
   ): PlusOauthUserInfo = {
     val __obj = js.Dynamic.literal()
-    if (city != null) __obj.updateDynamic("city")(city)
-    if (country != null) __obj.updateDynamic("country")(country)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (headimgurl != null) __obj.updateDynamic("headimgurl")(headimgurl)
-    if (nickname != null) __obj.updateDynamic("nickname")(nickname)
-    if (openid != null) __obj.updateDynamic("openid")(openid)
-    if (phonenumber != null) __obj.updateDynamic("phonenumber")(phonenumber)
-    if (province != null) __obj.updateDynamic("province")(province)
-    if (sex != null) __obj.updateDynamic("sex")(sex)
+    if (city != null) __obj.updateDynamic("city")(city.asInstanceOf[js.Any])
+    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (headimgurl != null) __obj.updateDynamic("headimgurl")(headimgurl.asInstanceOf[js.Any])
+    if (nickname != null) __obj.updateDynamic("nickname")(nickname.asInstanceOf[js.Any])
+    if (openid != null) __obj.updateDynamic("openid")(openid.asInstanceOf[js.Any])
+    if (phonenumber != null) __obj.updateDynamic("phonenumber")(phonenumber.asInstanceOf[js.Any])
+    if (province != null) __obj.updateDynamic("province")(province.asInstanceOf[js.Any])
+    if (sex != null) __obj.updateDynamic("sex")(sex.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusOauthUserInfo]
   }
 }

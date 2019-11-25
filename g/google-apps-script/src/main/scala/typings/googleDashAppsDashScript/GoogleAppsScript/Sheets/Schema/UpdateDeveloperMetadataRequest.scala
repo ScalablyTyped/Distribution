@@ -18,9 +18,9 @@ object UpdateDeveloperMetadataRequest {
     fields: String = null
   ): UpdateDeveloperMetadataRequest = {
     val __obj = js.Dynamic.literal()
-    if (dataFilters != null) __obj.updateDynamic("dataFilters")(dataFilters)
-    if (developerMetadata != null) __obj.updateDynamic("developerMetadata")(developerMetadata)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (dataFilters != null) __obj.updateDynamic("dataFilters")(dataFilters.asInstanceOf[js.Any])
+    if (developerMetadata != null) __obj.updateDynamic("developerMetadata")(developerMetadata.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDeveloperMetadataRequest]
   }
 }

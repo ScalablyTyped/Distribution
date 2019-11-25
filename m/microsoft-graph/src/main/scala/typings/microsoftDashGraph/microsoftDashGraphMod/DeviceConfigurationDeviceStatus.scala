@@ -37,14 +37,14 @@ object DeviceConfigurationDeviceStatus {
     userPrincipalName: String = null
   ): DeviceConfigurationDeviceStatus = {
     val __obj = js.Dynamic.literal()
-    if (complianceGracePeriodExpirationDateTime != null) __obj.updateDynamic("complianceGracePeriodExpirationDateTime")(complianceGracePeriodExpirationDateTime)
-    if (deviceDisplayName != null) __obj.updateDynamic("deviceDisplayName")(deviceDisplayName)
-    if (deviceModel != null) __obj.updateDynamic("deviceModel")(deviceModel)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (lastReportedDateTime != null) __obj.updateDynamic("lastReportedDateTime")(lastReportedDateTime)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (userName != null) __obj.updateDynamic("userName")(userName)
-    if (userPrincipalName != null) __obj.updateDynamic("userPrincipalName")(userPrincipalName)
+    if (complianceGracePeriodExpirationDateTime != null) __obj.updateDynamic("complianceGracePeriodExpirationDateTime")(complianceGracePeriodExpirationDateTime.asInstanceOf[js.Any])
+    if (deviceDisplayName != null) __obj.updateDynamic("deviceDisplayName")(deviceDisplayName.asInstanceOf[js.Any])
+    if (deviceModel != null) __obj.updateDynamic("deviceModel")(deviceModel.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (lastReportedDateTime != null) __obj.updateDynamic("lastReportedDateTime")(lastReportedDateTime.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (userName != null) __obj.updateDynamic("userName")(userName.asInstanceOf[js.Any])
+    if (userPrincipalName != null) __obj.updateDynamic("userPrincipalName")(userPrincipalName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceConfigurationDeviceStatus]
   }
 }

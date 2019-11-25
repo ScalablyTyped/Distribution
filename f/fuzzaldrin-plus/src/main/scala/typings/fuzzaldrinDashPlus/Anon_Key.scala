@@ -14,7 +14,7 @@ object Anon_Key {
   @scala.inline
   def apply(key: String = null, maxInners: Int | Double = null, maxResults: Int | Double = null): Anon_Key = {
     val __obj = js.Dynamic.literal()
-    if (key != null) __obj.updateDynamic("key")(key)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (maxInners != null) __obj.updateDynamic("maxInners")(maxInners.asInstanceOf[js.Any])
     if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Key]

@@ -31,10 +31,10 @@ object Thumbnail {
   ): Thumbnail = {
     val __obj = js.Dynamic.literal()
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (pipe != null) __obj.updateDynamic("pipe")(pipe)
-    if (!js.isUndefined(smartCropping)) __obj.updateDynamic("smartCropping")(smartCropping)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (pipe != null) __obj.updateDynamic("pipe")(pipe.asInstanceOf[js.Any])
+    if (!js.isUndefined(smartCropping)) __obj.updateDynamic("smartCropping")(smartCropping.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Thumbnail]
   }

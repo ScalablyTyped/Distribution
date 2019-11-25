@@ -45,10 +45,10 @@ object LDEvaluationReason {
     ruleId: String = null,
     ruleIndex: Int | Double = null
   ): LDEvaluationReason = {
-    val __obj = js.Dynamic.literal(kind = kind)
-    if (errorKind != null) __obj.updateDynamic("errorKind")(errorKind)
-    if (prerequisiteKey != null) __obj.updateDynamic("prerequisiteKey")(prerequisiteKey)
-    if (ruleId != null) __obj.updateDynamic("ruleId")(ruleId)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
+    if (errorKind != null) __obj.updateDynamic("errorKind")(errorKind.asInstanceOf[js.Any])
+    if (prerequisiteKey != null) __obj.updateDynamic("prerequisiteKey")(prerequisiteKey.asInstanceOf[js.Any])
+    if (ruleId != null) __obj.updateDynamic("ruleId")(ruleId.asInstanceOf[js.Any])
     if (ruleIndex != null) __obj.updateDynamic("ruleIndex")(ruleIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[LDEvaluationReason]
   }

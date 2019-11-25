@@ -18,7 +18,7 @@ object OpenStreetMapProviderOptionsOther {
     val __obj = js.Dynamic.literal()
     if (debug != null) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
     if (dedupe != null) __obj.updateDynamic("dedupe")(dedupe.asInstanceOf[js.Any])
-    if (email != null) __obj.updateDynamic("email")(email)
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenStreetMapProviderOptionsOther]
   }
 }

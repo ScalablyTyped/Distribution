@@ -23,9 +23,9 @@ object PartiallineColorstringlineStrokeWidthnumbertextCol {
   ): PartiallineColorstringlineStrokeWidthnumbertextCol = {
     val __obj = js.Dynamic.literal()
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
-    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor)
+    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor.asInstanceOf[js.Any])
     if (lineStrokeWidth != null) __obj.updateDynamic("lineStrokeWidth")(lineStrokeWidth.asInstanceOf[js.Any])
-    if (textColor != null) __obj.updateDynamic("textColor")(textColor)
+    if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartiallineColorstringlineStrokeWidthnumbertextCol]
   }
 }

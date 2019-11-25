@@ -51,14 +51,14 @@ object ConnectorsSegment {
     vector2: js.Any = null
   ): ConnectorsSegment = {
     val __obj = js.Dynamic.literal()
-    if (direction != null) __obj.updateDynamic("direction")(direction)
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (point != null) __obj.updateDynamic("point")(point)
-    if (point1 != null) __obj.updateDynamic("point1")(point1)
-    if (point2 != null) __obj.updateDynamic("point2")(point2)
+    if (point != null) __obj.updateDynamic("point")(point.asInstanceOf[js.Any])
+    if (point1 != null) __obj.updateDynamic("point1")(point1.asInstanceOf[js.Any])
+    if (point2 != null) __obj.updateDynamic("point2")(point2.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (vector1 != null) __obj.updateDynamic("vector1")(vector1)
-    if (vector2 != null) __obj.updateDynamic("vector2")(vector2)
+    if (vector1 != null) __obj.updateDynamic("vector1")(vector1.asInstanceOf[js.Any])
+    if (vector2 != null) __obj.updateDynamic("vector2")(vector2.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectorsSegment]
   }
 }

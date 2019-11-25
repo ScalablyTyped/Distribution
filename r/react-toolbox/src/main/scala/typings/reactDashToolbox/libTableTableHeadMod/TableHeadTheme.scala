@@ -15,7 +15,7 @@ object TableHeadTheme {
   @scala.inline
   def apply(checkboxCell: String = null): TableHeadTheme = {
     val __obj = js.Dynamic.literal()
-    if (checkboxCell != null) __obj.updateDynamic("checkboxCell")(checkboxCell)
+    if (checkboxCell != null) __obj.updateDynamic("checkboxCell")(checkboxCell.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableHeadTheme]
   }
 }

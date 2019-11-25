@@ -56,7 +56,7 @@ object Anon_Aomap {
     roughnessmap: Anon_RoughnessMap,
     specularmap: Anon_SpecularMap
   ): Anon_Aomap = {
-    val __obj = js.Dynamic.literal(aomap = aomap, bumpmap = bumpmap, common = common, displacementmap = displacementmap, emissivemap = emissivemap, envmap = envmap, fog = fog, gradientmap = gradientmap, lightmap = lightmap, lights = lights, metalnessmap = metalnessmap, normalmap = normalmap, points = points, roughnessmap = roughnessmap, specularmap = specularmap)
+    val __obj = js.Dynamic.literal(aomap = aomap.asInstanceOf[js.Any], bumpmap = bumpmap.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], displacementmap = displacementmap.asInstanceOf[js.Any], emissivemap = emissivemap.asInstanceOf[js.Any], envmap = envmap.asInstanceOf[js.Any], fog = fog.asInstanceOf[js.Any], gradientmap = gradientmap.asInstanceOf[js.Any], lightmap = lightmap.asInstanceOf[js.Any], lights = lights.asInstanceOf[js.Any], metalnessmap = metalnessmap.asInstanceOf[js.Any], normalmap = normalmap.asInstanceOf[js.Any], points = points.asInstanceOf[js.Any], roughnessmap = roughnessmap.asInstanceOf[js.Any], specularmap = specularmap.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Aomap]
   }

@@ -12,7 +12,7 @@ trait Anon_CompetitiveQuickplay extends js.Object {
 object Anon_CompetitiveQuickplay {
   @scala.inline
   def apply(competitive: String, quickplay: String): Anon_CompetitiveQuickplay = {
-    val __obj = js.Dynamic.literal(competitive = competitive, quickplay = quickplay)
+    val __obj = js.Dynamic.literal(competitive = competitive.asInstanceOf[js.Any], quickplay = quickplay.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CompetitiveQuickplay]
   }

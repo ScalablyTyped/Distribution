@@ -22,11 +22,11 @@ object SharingDetail {
     sharingType: String = null
   ): SharingDetail = {
     val __obj = js.Dynamic.literal()
-    if (sharedBy != null) __obj.updateDynamic("sharedBy")(sharedBy)
-    if (sharedDateTime != null) __obj.updateDynamic("sharedDateTime")(sharedDateTime)
-    if (sharingReference != null) __obj.updateDynamic("sharingReference")(sharingReference)
-    if (sharingSubject != null) __obj.updateDynamic("sharingSubject")(sharingSubject)
-    if (sharingType != null) __obj.updateDynamic("sharingType")(sharingType)
+    if (sharedBy != null) __obj.updateDynamic("sharedBy")(sharedBy.asInstanceOf[js.Any])
+    if (sharedDateTime != null) __obj.updateDynamic("sharedDateTime")(sharedDateTime.asInstanceOf[js.Any])
+    if (sharingReference != null) __obj.updateDynamic("sharingReference")(sharingReference.asInstanceOf[js.Any])
+    if (sharingSubject != null) __obj.updateDynamic("sharingSubject")(sharingSubject.asInstanceOf[js.Any])
+    if (sharingType != null) __obj.updateDynamic("sharingType")(sharingType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharingDetail]
   }
 }

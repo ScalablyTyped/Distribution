@@ -16,7 +16,7 @@ trait Anon_AttrMisc extends js.Object {
 object Anon_AttrMisc {
   @scala.inline
   def apply(attr: Double, misc: js.Any, offset: Double, text: String, x: Double, y: Double): Anon_AttrMisc = {
-    val __obj = js.Dynamic.literal(attr = attr, misc = misc, offset = offset, text = text, x = x, y = y)
+    val __obj = js.Dynamic.literal(attr = attr.asInstanceOf[js.Any], misc = misc.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AttrMisc]
   }

@@ -23,10 +23,10 @@ object FormItemProps {
     isInline: js.UndefOr[Boolean] = js.undefined
   ): FormItemProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(isCheck)) __obj.updateDynamic("isCheck")(isCheck)
-    if (!js.isUndefined(isInline)) __obj.updateDynamic("isInline")(isInline)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCheck)) __obj.updateDynamic("isCheck")(isCheck.asInstanceOf[js.Any])
+    if (!js.isUndefined(isInline)) __obj.updateDynamic("isInline")(isInline.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormItemProps]
   }
 }

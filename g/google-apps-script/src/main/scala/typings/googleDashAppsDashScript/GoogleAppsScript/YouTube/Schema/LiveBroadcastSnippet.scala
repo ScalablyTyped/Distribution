@@ -34,17 +34,17 @@ object LiveBroadcastSnippet {
     title: String = null
   ): LiveBroadcastSnippet = {
     val __obj = js.Dynamic.literal()
-    if (actualEndTime != null) __obj.updateDynamic("actualEndTime")(actualEndTime)
-    if (actualStartTime != null) __obj.updateDynamic("actualStartTime")(actualStartTime)
-    if (channelId != null) __obj.updateDynamic("channelId")(channelId)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (!js.isUndefined(isDefaultBroadcast)) __obj.updateDynamic("isDefaultBroadcast")(isDefaultBroadcast)
-    if (liveChatId != null) __obj.updateDynamic("liveChatId")(liveChatId)
-    if (publishedAt != null) __obj.updateDynamic("publishedAt")(publishedAt)
-    if (scheduledEndTime != null) __obj.updateDynamic("scheduledEndTime")(scheduledEndTime)
-    if (scheduledStartTime != null) __obj.updateDynamic("scheduledStartTime")(scheduledStartTime)
-    if (thumbnails != null) __obj.updateDynamic("thumbnails")(thumbnails)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (actualEndTime != null) __obj.updateDynamic("actualEndTime")(actualEndTime.asInstanceOf[js.Any])
+    if (actualStartTime != null) __obj.updateDynamic("actualStartTime")(actualStartTime.asInstanceOf[js.Any])
+    if (channelId != null) __obj.updateDynamic("channelId")(channelId.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDefaultBroadcast)) __obj.updateDynamic("isDefaultBroadcast")(isDefaultBroadcast.asInstanceOf[js.Any])
+    if (liveChatId != null) __obj.updateDynamic("liveChatId")(liveChatId.asInstanceOf[js.Any])
+    if (publishedAt != null) __obj.updateDynamic("publishedAt")(publishedAt.asInstanceOf[js.Any])
+    if (scheduledEndTime != null) __obj.updateDynamic("scheduledEndTime")(scheduledEndTime.asInstanceOf[js.Any])
+    if (scheduledStartTime != null) __obj.updateDynamic("scheduledStartTime")(scheduledStartTime.asInstanceOf[js.Any])
+    if (thumbnails != null) __obj.updateDynamic("thumbnails")(thumbnails.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[LiveBroadcastSnippet]
   }
 }

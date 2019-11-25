@@ -19,9 +19,9 @@ object GridFilterMenuOpenEvent {
     container: JQuery = null,
     field: String = null
   ): GridFilterMenuOpenEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (container != null) __obj.updateDynamic("container")(container)
-    if (field != null) __obj.updateDynamic("field")(field)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridFilterMenuOpenEvent]
   }
 }

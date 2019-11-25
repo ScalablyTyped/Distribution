@@ -46,15 +46,15 @@ object SharedAttributes {
     sourceFilter: Anon_AddressTypes = null
   ): SharedAttributes = {
     val __obj = js.Dynamic.literal()
-    if (control != null) __obj.updateDynamic("control")(control)
+    if (control != null) __obj.updateDynamic("control")(control.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (ext != null) __obj.updateDynamic("ext")(ext)
-    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint)
-    if (icePwd != null) __obj.updateDynamic("icePwd")(icePwd)
-    if (iceUfrag != null) __obj.updateDynamic("iceUfrag")(iceUfrag)
-    if (invalid != null) __obj.updateDynamic("invalid")(invalid)
-    if (setup != null) __obj.updateDynamic("setup")(setup)
-    if (sourceFilter != null) __obj.updateDynamic("sourceFilter")(sourceFilter)
+    if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
+    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint.asInstanceOf[js.Any])
+    if (icePwd != null) __obj.updateDynamic("icePwd")(icePwd.asInstanceOf[js.Any])
+    if (iceUfrag != null) __obj.updateDynamic("iceUfrag")(iceUfrag.asInstanceOf[js.Any])
+    if (invalid != null) __obj.updateDynamic("invalid")(invalid.asInstanceOf[js.Any])
+    if (setup != null) __obj.updateDynamic("setup")(setup.asInstanceOf[js.Any])
+    if (sourceFilter != null) __obj.updateDynamic("sourceFilter")(sourceFilter.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharedAttributes]
   }
 }

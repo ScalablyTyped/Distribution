@@ -20,7 +20,7 @@ object MapUrlTileProps {
     tileSize: Int | Double = null,
     zIndex: Int | Double = null
   ): MapUrlTileProps = {
-    val __obj = js.Dynamic.literal(urlTemplate = urlTemplate)
+    val __obj = js.Dynamic.literal(urlTemplate = urlTemplate.asInstanceOf[js.Any])
     if (maximumZ != null) __obj.updateDynamic("maximumZ")(maximumZ.asInstanceOf[js.Any])
     if (tileSize != null) __obj.updateDynamic("tileSize")(tileSize.asInstanceOf[js.Any])
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])

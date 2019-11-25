@@ -13,8 +13,8 @@ trait GoAction extends RouterActions {
 object GoAction {
   @scala.inline
   def apply(payload: Double, `type`: ROUTER_GO): GoAction = {
-    val __obj = js.Dynamic.literal(payload = payload)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoAction]
   }
 }

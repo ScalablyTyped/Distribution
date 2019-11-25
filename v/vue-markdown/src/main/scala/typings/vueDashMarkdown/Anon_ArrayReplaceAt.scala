@@ -43,7 +43,7 @@ object Anon_ArrayReplaceAt {
     unescapeAll: js.Any,
     unescapeMd: js.Any
   ): Anon_ArrayReplaceAt = {
-    val __obj = js.Dynamic.literal(arrayReplaceAt = arrayReplaceAt, assign = assign, escapeHtml = escapeHtml, escapeRE = escapeRE, fromCodePoint = fromCodePoint, has = has, isMdAsciiPunct = isMdAsciiPunct, isPunctChar = isPunctChar, isSpace = isSpace, isString = isString, isValidEntityCode = isValidEntityCode, isWhiteSpace = isWhiteSpace, lib = lib, normalizeReference = normalizeReference, unescapeAll = unescapeAll, unescapeMd = unescapeMd)
+    val __obj = js.Dynamic.literal(arrayReplaceAt = arrayReplaceAt.asInstanceOf[js.Any], assign = assign.asInstanceOf[js.Any], escapeHtml = escapeHtml.asInstanceOf[js.Any], escapeRE = escapeRE.asInstanceOf[js.Any], fromCodePoint = fromCodePoint.asInstanceOf[js.Any], has = has.asInstanceOf[js.Any], isMdAsciiPunct = isMdAsciiPunct.asInstanceOf[js.Any], isPunctChar = isPunctChar.asInstanceOf[js.Any], isSpace = isSpace.asInstanceOf[js.Any], isString = isString.asInstanceOf[js.Any], isValidEntityCode = isValidEntityCode.asInstanceOf[js.Any], isWhiteSpace = isWhiteSpace.asInstanceOf[js.Any], lib = lib.asInstanceOf[js.Any], normalizeReference = normalizeReference.asInstanceOf[js.Any], unescapeAll = unescapeAll.asInstanceOf[js.Any], unescapeMd = unescapeMd.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ArrayReplaceAt]
   }

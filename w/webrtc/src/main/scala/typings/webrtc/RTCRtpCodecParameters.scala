@@ -17,9 +17,9 @@ trait RTCRtpCodecParameters extends js.Object {
 object RTCRtpCodecParameters {
   @scala.inline
   def apply(mimeType: String, channels: Int | Double = null, sdpFmtpLine: String = null): RTCRtpCodecParameters = {
-    val __obj = js.Dynamic.literal(mimeType = mimeType)
+    val __obj = js.Dynamic.literal(mimeType = mimeType.asInstanceOf[js.Any])
     if (channels != null) __obj.updateDynamic("channels")(channels.asInstanceOf[js.Any])
-    if (sdpFmtpLine != null) __obj.updateDynamic("sdpFmtpLine")(sdpFmtpLine)
+    if (sdpFmtpLine != null) __obj.updateDynamic("sdpFmtpLine")(sdpFmtpLine.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCRtpCodecParameters]
   }
 }

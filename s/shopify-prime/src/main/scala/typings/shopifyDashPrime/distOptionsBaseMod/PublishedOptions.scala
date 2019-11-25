@@ -28,8 +28,8 @@ object PublishedOptions {
     published_status: PublishedStatus = null
   ): PublishedOptions = {
     val __obj = js.Dynamic.literal()
-    if (published_at_max != null) __obj.updateDynamic("published_at_max")(published_at_max)
-    if (published_at_min != null) __obj.updateDynamic("published_at_min")(published_at_min)
+    if (published_at_max != null) __obj.updateDynamic("published_at_max")(published_at_max.asInstanceOf[js.Any])
+    if (published_at_min != null) __obj.updateDynamic("published_at_min")(published_at_min.asInstanceOf[js.Any])
     if (published_status != null) __obj.updateDynamic("published_status")(published_status.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublishedOptions]
   }

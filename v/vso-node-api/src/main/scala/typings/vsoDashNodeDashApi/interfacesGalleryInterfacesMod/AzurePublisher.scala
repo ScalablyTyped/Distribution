@@ -12,7 +12,7 @@ trait AzurePublisher extends js.Object {
 object AzurePublisher {
   @scala.inline
   def apply(azurePublisherId: String, publisherName: String): AzurePublisher = {
-    val __obj = js.Dynamic.literal(azurePublisherId = azurePublisherId, publisherName = publisherName)
+    val __obj = js.Dynamic.literal(azurePublisherId = azurePublisherId.asInstanceOf[js.Any], publisherName = publisherName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AzurePublisher]
   }

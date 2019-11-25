@@ -20,10 +20,10 @@ object InvideoPromotion {
     useSmartTiming: js.UndefOr[Boolean] = js.undefined
   ): InvideoPromotion = {
     val __obj = js.Dynamic.literal()
-    if (defaultTiming != null) __obj.updateDynamic("defaultTiming")(defaultTiming)
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (!js.isUndefined(useSmartTiming)) __obj.updateDynamic("useSmartTiming")(useSmartTiming)
+    if (defaultTiming != null) __obj.updateDynamic("defaultTiming")(defaultTiming.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(useSmartTiming)) __obj.updateDynamic("useSmartTiming")(useSmartTiming.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvideoPromotion]
   }
 }

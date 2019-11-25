@@ -15,8 +15,8 @@ object WindowsUpdateActiveHoursInstall {
   @scala.inline
   def apply(activeHoursEnd: String = null, activeHoursStart: String = null): WindowsUpdateActiveHoursInstall = {
     val __obj = js.Dynamic.literal()
-    if (activeHoursEnd != null) __obj.updateDynamic("activeHoursEnd")(activeHoursEnd)
-    if (activeHoursStart != null) __obj.updateDynamic("activeHoursStart")(activeHoursStart)
+    if (activeHoursEnd != null) __obj.updateDynamic("activeHoursEnd")(activeHoursEnd.asInstanceOf[js.Any])
+    if (activeHoursStart != null) __obj.updateDynamic("activeHoursStart")(activeHoursStart.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowsUpdateActiveHoursInstall]
   }
 }

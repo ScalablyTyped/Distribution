@@ -16,9 +16,9 @@ trait options extends js.Object {
 object options {
   @scala.inline
   def apply(dest: String, src: String, gz: ZlibOptions = null, tar: ExtractOptions = null): options = {
-    val __obj = js.Dynamic.literal(dest = dest, src = src)
-    if (gz != null) __obj.updateDynamic("gz")(gz)
-    if (tar != null) __obj.updateDynamic("tar")(tar)
+    val __obj = js.Dynamic.literal(dest = dest.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
+    if (gz != null) __obj.updateDynamic("gz")(gz.asInstanceOf[js.Any])
+    if (tar != null) __obj.updateDynamic("tar")(tar.asInstanceOf[js.Any])
     __obj.asInstanceOf[options]
   }
 }

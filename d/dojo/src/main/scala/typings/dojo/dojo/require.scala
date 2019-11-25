@@ -28,7 +28,7 @@ trait require extends js.Object {
 object require {
   @scala.inline
   def apply(dynamic: Double, load: js.Object, normalize: js.Any => js.Any): require = {
-    val __obj = js.Dynamic.literal(dynamic = dynamic, load = load, normalize = js.Any.fromFunction1(normalize))
+    val __obj = js.Dynamic.literal(dynamic = dynamic.asInstanceOf[js.Any], load = load.asInstanceOf[js.Any], normalize = js.Any.fromFunction1(normalize))
   
     __obj.asInstanceOf[require]
   }

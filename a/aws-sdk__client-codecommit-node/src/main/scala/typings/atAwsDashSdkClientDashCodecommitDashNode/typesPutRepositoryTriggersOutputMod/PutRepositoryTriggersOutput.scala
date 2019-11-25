@@ -21,8 +21,8 @@ trait PutRepositoryTriggersOutput extends OutputTypesUnion {
 object PutRepositoryTriggersOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, configurationId: String = null): PutRepositoryTriggersOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (configurationId != null) __obj.updateDynamic("configurationId")(configurationId)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (configurationId != null) __obj.updateDynamic("configurationId")(configurationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutRepositoryTriggersOutput]
   }
 }

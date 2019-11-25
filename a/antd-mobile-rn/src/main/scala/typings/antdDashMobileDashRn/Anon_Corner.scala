@@ -23,7 +23,7 @@ object Anon_Corner {
     size: String,
     styles: StringDictionary[RegisteredStyle[_]]
   ): Anon_Corner = {
-    val __obj = js.Dynamic.literal(corner = corner, dot = dot, overflowCount = overflowCount, size = size, styles = styles)
+    val __obj = js.Dynamic.literal(corner = corner.asInstanceOf[js.Any], dot = dot.asInstanceOf[js.Any], overflowCount = overflowCount.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Corner]
   }

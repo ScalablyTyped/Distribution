@@ -20,7 +20,7 @@ object Observer {
     patches: js.Array[Operation],
     unobserve: () => Unit
   ): Observer[T] = {
-    val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback), patches = patches, unobserve = js.Any.fromFunction0(unobserve))
+    val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback), patches = patches.asInstanceOf[js.Any], unobserve = js.Any.fromFunction0(unobserve))
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Observer[T]]
   }

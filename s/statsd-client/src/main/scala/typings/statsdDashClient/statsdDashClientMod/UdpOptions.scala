@@ -27,13 +27,13 @@ object UdpOptions {
     tcp: js.UndefOr[Boolean] = js.undefined
   ): UdpOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (host != null) __obj.updateDynamic("host")(host)
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (socketTimeout != null) __obj.updateDynamic("socketTimeout")(socketTimeout.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags)
-    if (!js.isUndefined(tcp)) __obj.updateDynamic("tcp")(tcp)
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (!js.isUndefined(tcp)) __obj.updateDynamic("tcp")(tcp.asInstanceOf[js.Any])
     __obj.asInstanceOf[UdpOptions]
   }
 }

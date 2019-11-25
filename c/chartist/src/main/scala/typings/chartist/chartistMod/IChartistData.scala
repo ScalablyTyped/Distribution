@@ -23,8 +23,8 @@ object IChartistData {
     ],
     labels: js.Array[Date | Double | String] = null
   ): IChartistData = {
-    val __obj = js.Dynamic.literal(series = series)
-    if (labels != null) __obj.updateDynamic("labels")(labels)
+    val __obj = js.Dynamic.literal(series = series.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     __obj.asInstanceOf[IChartistData]
   }
 }

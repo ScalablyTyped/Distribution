@@ -49,8 +49,8 @@ object BaseUser {
     username: String,
     _embedded: Record[String, js.Array[_]] = null
   ): BaseUser[T] = {
-    val __obj = js.Dynamic.literal(_links = _links, avatar_urls = avatar_urls, capabilities = capabilities, description = description, email = email, extra_capabilities = extra_capabilities, first_name = first_name, id = id, last_name = last_name, link = link, meta = meta, name = name, nickname = nickname, registered_date = registered_date, roles = roles, slug = slug, url = url, username = username)
-    if (_embedded != null) __obj.updateDynamic("_embedded")(_embedded)
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], avatar_urls = avatar_urls.asInstanceOf[js.Any], capabilities = capabilities.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], extra_capabilities = extra_capabilities.asInstanceOf[js.Any], first_name = first_name.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], last_name = last_name.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nickname = nickname.asInstanceOf[js.Any], registered_date = registered_date.asInstanceOf[js.Any], roles = roles.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
+    if (_embedded != null) __obj.updateDynamic("_embedded")(_embedded.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseUser[T]]
   }
 }

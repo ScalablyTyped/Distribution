@@ -28,14 +28,14 @@ object Building {
     kind: String = null
   ): Building = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address)
-    if (buildingId != null) __obj.updateDynamic("buildingId")(buildingId)
-    if (buildingName != null) __obj.updateDynamic("buildingName")(buildingName)
-    if (coordinates != null) __obj.updateDynamic("coordinates")(coordinates)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (etags != null) __obj.updateDynamic("etags")(etags)
-    if (floorNames != null) __obj.updateDynamic("floorNames")(floorNames)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    if (buildingId != null) __obj.updateDynamic("buildingId")(buildingId.asInstanceOf[js.Any])
+    if (buildingName != null) __obj.updateDynamic("buildingName")(buildingName.asInstanceOf[js.Any])
+    if (coordinates != null) __obj.updateDynamic("coordinates")(coordinates.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (etags != null) __obj.updateDynamic("etags")(etags.asInstanceOf[js.Any])
+    if (floorNames != null) __obj.updateDynamic("floorNames")(floorNames.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[Building]
   }
 }

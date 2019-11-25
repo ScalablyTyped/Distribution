@@ -14,7 +14,7 @@ trait ReferenceFrame extends js.Object {
 object ReferenceFrame {
   @scala.inline
   def apply(ellipsoid: Ellipsoid, epoch: Double, name: String): ReferenceFrame = {
-    val __obj = js.Dynamic.literal(ellipsoid = ellipsoid, epoch = epoch, name = name)
+    val __obj = js.Dynamic.literal(ellipsoid = ellipsoid.asInstanceOf[js.Any], epoch = epoch.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReferenceFrame]
   }

@@ -20,8 +20,8 @@ object ComponentNode {
     `type`: Component[P],
     key: Key = null
   ): ComponentNode[P] = {
-    val __obj = js.Dynamic.literal(content = content, isSVG = isSVG, props = props.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], isSVG = isSVG.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentNode[P]]
   }

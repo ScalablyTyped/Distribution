@@ -13,8 +13,8 @@ object ProductDestination {
   @scala.inline
   def apply(destinationName: String = null, intention: String = null): ProductDestination = {
     val __obj = js.Dynamic.literal()
-    if (destinationName != null) __obj.updateDynamic("destinationName")(destinationName)
-    if (intention != null) __obj.updateDynamic("intention")(intention)
+    if (destinationName != null) __obj.updateDynamic("destinationName")(destinationName.asInstanceOf[js.Any])
+    if (intention != null) __obj.updateDynamic("intention")(intention.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProductDestination]
   }
 }

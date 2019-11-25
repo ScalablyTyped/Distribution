@@ -11,7 +11,7 @@ trait Anon_CoordinateAnonAccuracy extends js.Object {
 object Anon_CoordinateAnonAccuracy {
   @scala.inline
   def apply(coordinate: Anon_Accuracy): Anon_CoordinateAnonAccuracy = {
-    val __obj = js.Dynamic.literal(coordinate = coordinate)
+    val __obj = js.Dynamic.literal(coordinate = coordinate.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CoordinateAnonAccuracy]
   }

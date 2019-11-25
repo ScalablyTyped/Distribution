@@ -1,7 +1,6 @@
 package typings.kendoDashUi.kendo.data
 
 import typings.kendoDashUi.kendoDashUiStrings.create
-import typings.kendoDashUi.kendoDashUiStrings.destroy
 import typings.kendoDashUi.kendoDashUiStrings.read
 import typings.kendoDashUi.kendoDashUiStrings.update
 import scala.scalajs.js
@@ -24,7 +23,7 @@ object DataSourceTransportWithObjectOperations {
   def apply(
     create: DataSourceTransportCreate = null,
     destroy: DataSourceTransportDestroy = null,
-    parameterMap: (/* data */ DataSourceTransportParameterMapData, /* type */ create | destroy | read | update) => _ = null,
+    parameterMap: (/* data */ DataSourceTransportParameterMapData, /* type */ create | typings.kendoDashUi.kendoDashUiStrings.destroy | read | update) => _ = null,
     push: js.Function = null,
     read: DataSourceTransportRead = null,
     signalr: DataSourceTransportSignalr | (js.Function1[/* options */ DataSourceTransportOptions, Unit]) = null,
@@ -32,14 +31,14 @@ object DataSourceTransportWithObjectOperations {
     update: DataSourceTransportUpdate = null
   ): DataSourceTransportWithObjectOperations = {
     val __obj = js.Dynamic.literal()
-    if (create != null) __obj.updateDynamic("create")(create)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (create != null) __obj.updateDynamic("create")(create.asInstanceOf[js.Any])
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy.asInstanceOf[js.Any])
     if (parameterMap != null) __obj.updateDynamic("parameterMap")(js.Any.fromFunction2(parameterMap))
-    if (push != null) __obj.updateDynamic("push")(push)
-    if (read != null) __obj.updateDynamic("read")(read)
+    if (push != null) __obj.updateDynamic("push")(push.asInstanceOf[js.Any])
+    if (read != null) __obj.updateDynamic("read")(read.asInstanceOf[js.Any])
     if (signalr != null) __obj.updateDynamic("signalr")(signalr.asInstanceOf[js.Any])
-    if (submit != null) __obj.updateDynamic("submit")(submit)
-    if (update != null) __obj.updateDynamic("update")(update)
+    if (submit != null) __obj.updateDynamic("submit")(submit.asInstanceOf[js.Any])
+    if (update != null) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceTransportWithObjectOperations]
   }
 }

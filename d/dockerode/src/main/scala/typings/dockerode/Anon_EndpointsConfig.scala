@@ -13,7 +13,7 @@ object Anon_EndpointsConfig {
   @scala.inline
   def apply(EndpointsConfig: EndpointsConfig = null): Anon_EndpointsConfig = {
     val __obj = js.Dynamic.literal()
-    if (EndpointsConfig != null) __obj.updateDynamic("EndpointsConfig")(EndpointsConfig)
+    if (EndpointsConfig != null) __obj.updateDynamic("EndpointsConfig")(EndpointsConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_EndpointsConfig]
   }
 }

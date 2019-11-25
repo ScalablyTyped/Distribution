@@ -32,7 +32,7 @@ trait Anon_Cycle extends js.Object {
 object Anon_Cycle {
   @scala.inline
   def apply(filePath: String, soundId: Double, cycle: Int | Double = null): Anon_Cycle = {
-    val __obj = js.Dynamic.literal(filePath = filePath, soundId = soundId)
+    val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any], soundId = soundId.asInstanceOf[js.Any])
     if (cycle != null) __obj.updateDynamic("cycle")(cycle.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Cycle]
   }

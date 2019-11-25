@@ -1,9 +1,6 @@
 package typings.dojo.dijit.form
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValueOldValue
-import typings.dojo.Fn_NewValueOldValueProperty
-import typings.dojo.Fn_NewValueOldValuePropertyNumber
 import typings.dojo.dojoStrings.constraints
 import typings.dojo.dojoStrings.labelStyle
 import typings.dojo.dojoStrings.labels
@@ -88,16 +85,64 @@ class HorizontalRuleLabels () extends HorizontalRule {
   @JSName("set")
   def set_numericMargin(property: numericMargin, value: Double): Unit = js.native
   @JSName("watch")
-  def watch_constraints(property: constraints, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_constraints(
+    property: constraints,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_labelStyle(property: labelStyle, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_labelStyle(
+    property: labelStyle,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_labels(property: labels, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_labels(
+    property: labels,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_maximum(property: maximum, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_maximum(
+    property: maximum,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_minimum(property: minimum, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_minimum(
+    property: minimum,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_numericMargin(property: numericMargin, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_numericMargin(
+    property: numericMargin,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

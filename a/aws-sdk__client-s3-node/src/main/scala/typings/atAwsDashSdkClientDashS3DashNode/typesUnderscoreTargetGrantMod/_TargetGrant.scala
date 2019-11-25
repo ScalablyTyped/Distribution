@@ -23,7 +23,7 @@ object _TargetGrant {
   @scala.inline
   def apply(Grantee: _Grantee = null, Permission: FULL_CONTROL | READ | WRITE | String = null): _TargetGrant = {
     val __obj = js.Dynamic.literal()
-    if (Grantee != null) __obj.updateDynamic("Grantee")(Grantee)
+    if (Grantee != null) __obj.updateDynamic("Grantee")(Grantee.asInstanceOf[js.Any])
     if (Permission != null) __obj.updateDynamic("Permission")(Permission.asInstanceOf[js.Any])
     __obj.asInstanceOf[_TargetGrant]
   }

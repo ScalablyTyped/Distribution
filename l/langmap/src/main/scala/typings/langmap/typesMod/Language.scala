@@ -12,7 +12,7 @@ trait Language extends js.Object {
 object Language {
   @scala.inline
   def apply(englishName: String, nativeName: String): Language = {
-    val __obj = js.Dynamic.literal(englishName = englishName, nativeName = nativeName)
+    val __obj = js.Dynamic.literal(englishName = englishName.asInstanceOf[js.Any], nativeName = nativeName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Language]
   }

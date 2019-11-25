@@ -25,12 +25,12 @@ object KnockoutMappingStandardOptions {
     observe: js.Array[String] = null
   ): KnockoutMappingStandardOptions = {
     val __obj = js.Dynamic.literal()
-    if (copy != null) __obj.updateDynamic("copy")(copy)
-    if (!js.isUndefined(deferEvaluation)) __obj.updateDynamic("deferEvaluation")(deferEvaluation)
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore)
-    if (include != null) __obj.updateDynamic("include")(include)
-    if (mappedProperties != null) __obj.updateDynamic("mappedProperties")(mappedProperties)
-    if (observe != null) __obj.updateDynamic("observe")(observe)
+    if (copy != null) __obj.updateDynamic("copy")(copy.asInstanceOf[js.Any])
+    if (!js.isUndefined(deferEvaluation)) __obj.updateDynamic("deferEvaluation")(deferEvaluation.asInstanceOf[js.Any])
+    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    if (mappedProperties != null) __obj.updateDynamic("mappedProperties")(mappedProperties.asInstanceOf[js.Any])
+    if (observe != null) __obj.updateDynamic("observe")(observe.asInstanceOf[js.Any])
     __obj.asInstanceOf[KnockoutMappingStandardOptions]
   }
 }

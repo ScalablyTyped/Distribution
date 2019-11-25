@@ -31,8 +31,8 @@ object numbers {
     TAP_DELAY_MS: `300`,
     StringDictionary: StringDictionary[Double] = null
   ): numbers = {
-    val __obj = js.Dynamic.literal(DEACTIVATION_TIMEOUT_MS = DEACTIVATION_TIMEOUT_MS, FG_DEACTIVATION_MS = FG_DEACTIVATION_MS, INITIAL_ORIGIN_SCALE = INITIAL_ORIGIN_SCALE, PADDING = PADDING, TAP_DELAY_MS = TAP_DELAY_MS)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(DEACTIVATION_TIMEOUT_MS = DEACTIVATION_TIMEOUT_MS.asInstanceOf[js.Any], FG_DEACTIVATION_MS = FG_DEACTIVATION_MS.asInstanceOf[js.Any], INITIAL_ORIGIN_SCALE = INITIAL_ORIGIN_SCALE.asInstanceOf[js.Any], PADDING = PADDING.asInstanceOf[js.Any], TAP_DELAY_MS = TAP_DELAY_MS.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[numbers]
   }
 }

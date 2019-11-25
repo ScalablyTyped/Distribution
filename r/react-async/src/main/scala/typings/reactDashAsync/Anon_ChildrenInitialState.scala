@@ -21,7 +21,7 @@ object Anon_ChildrenInitialState {
   ): Anon_ChildrenInitialState[T] = {
     val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(initial)) __obj.updateDynamic("initial")(initial)
+    if (!js.isUndefined(initial)) __obj.updateDynamic("initial")(initial.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ChildrenInitialState[T]]
   }
 }

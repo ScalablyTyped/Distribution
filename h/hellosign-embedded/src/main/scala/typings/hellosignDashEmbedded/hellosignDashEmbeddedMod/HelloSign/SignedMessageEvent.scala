@@ -13,7 +13,7 @@ trait SignedMessageEvent extends MessageEvent {
 object SignedMessageEvent {
   @scala.inline
   def apply(event: signature_request_signed, signature_id: String): SignedMessageEvent = {
-    val __obj = js.Dynamic.literal(event = event, signature_id = signature_id)
+    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], signature_id = signature_id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SignedMessageEvent]
   }

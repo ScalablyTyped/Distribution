@@ -35,7 +35,7 @@ object _Consumer {
     ConsumerName: String,
     ConsumerStatus: CREATING | DELETING | ACTIVE | String
   ): _Consumer = {
-    val __obj = js.Dynamic.literal(ConsumerARN = ConsumerARN, ConsumerCreationTimestamp = ConsumerCreationTimestamp.asInstanceOf[js.Any], ConsumerName = ConsumerName, ConsumerStatus = ConsumerStatus.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(ConsumerARN = ConsumerARN.asInstanceOf[js.Any], ConsumerCreationTimestamp = ConsumerCreationTimestamp.asInstanceOf[js.Any], ConsumerName = ConsumerName.asInstanceOf[js.Any], ConsumerStatus = ConsumerStatus.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_Consumer]
   }

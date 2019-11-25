@@ -17,10 +17,9 @@ object Moji {
     convert: (Mojisyu, Mojisyu) => Moji,
     filter: Mojisyu => Moji,
     reject: Mojisyu => Moji,
-    toString: () => String,
     trim: () => Moji
   ): Moji = {
-    val __obj = js.Dynamic.literal(convert = js.Any.fromFunction2(convert), filter = js.Any.fromFunction1(filter), reject = js.Any.fromFunction1(reject), toString = js.Any.fromFunction0(toString), trim = js.Any.fromFunction0(trim))
+    val __obj = js.Dynamic.literal(convert = js.Any.fromFunction2(convert), filter = js.Any.fromFunction1(filter), reject = js.Any.fromFunction1(reject), trim = js.Any.fromFunction0(trim))
   
     __obj.asInstanceOf[Moji]
   }

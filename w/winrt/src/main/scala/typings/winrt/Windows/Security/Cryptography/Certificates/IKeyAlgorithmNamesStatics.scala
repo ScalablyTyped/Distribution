@@ -27,7 +27,7 @@ object IKeyAlgorithmNamesStatics {
     ecdsa521: String,
     rsa: String
   ): IKeyAlgorithmNamesStatics = {
-    val __obj = js.Dynamic.literal(dsa = dsa, ecdh256 = ecdh256, ecdh384 = ecdh384, ecdh521 = ecdh521, ecdsa256 = ecdsa256, ecdsa384 = ecdsa384, ecdsa521 = ecdsa521, rsa = rsa)
+    val __obj = js.Dynamic.literal(dsa = dsa.asInstanceOf[js.Any], ecdh256 = ecdh256.asInstanceOf[js.Any], ecdh384 = ecdh384.asInstanceOf[js.Any], ecdh521 = ecdh521.asInstanceOf[js.Any], ecdsa256 = ecdsa256.asInstanceOf[js.Any], ecdsa384 = ecdsa384.asInstanceOf[js.Any], ecdsa521 = ecdsa521.asInstanceOf[js.Any], rsa = rsa.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IKeyAlgorithmNamesStatics]
   }

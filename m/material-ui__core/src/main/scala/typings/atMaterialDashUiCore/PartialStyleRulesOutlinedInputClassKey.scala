@@ -40,19 +40,19 @@ object PartialStyleRulesOutlinedInputClassKey {
     root: CSSProperties = null
   ): PartialStyleRulesOutlinedInputClassKey = {
     val __obj = js.Dynamic.literal()
-    if (adornedEnd != null) __obj.updateDynamic("adornedEnd")(adornedEnd)
-    if (adornedStart != null) __obj.updateDynamic("adornedStart")(adornedStart)
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (focused != null) __obj.updateDynamic("focused")(focused)
-    if (input != null) __obj.updateDynamic("input")(input)
-    if (inputAdornedEnd != null) __obj.updateDynamic("inputAdornedEnd")(inputAdornedEnd)
-    if (inputAdornedStart != null) __obj.updateDynamic("inputAdornedStart")(inputAdornedStart)
-    if (inputMarginDense != null) __obj.updateDynamic("inputMarginDense")(inputMarginDense)
-    if (inputMultiline != null) __obj.updateDynamic("inputMultiline")(inputMultiline)
-    if (multiline != null) __obj.updateDynamic("multiline")(multiline)
-    if (notchedOutline != null) __obj.updateDynamic("notchedOutline")(notchedOutline)
-    if (root != null) __obj.updateDynamic("root")(root)
+    if (adornedEnd != null) __obj.updateDynamic("adornedEnd")(adornedEnd.asInstanceOf[js.Any])
+    if (adornedStart != null) __obj.updateDynamic("adornedStart")(adornedStart.asInstanceOf[js.Any])
+    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (focused != null) __obj.updateDynamic("focused")(focused.asInstanceOf[js.Any])
+    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
+    if (inputAdornedEnd != null) __obj.updateDynamic("inputAdornedEnd")(inputAdornedEnd.asInstanceOf[js.Any])
+    if (inputAdornedStart != null) __obj.updateDynamic("inputAdornedStart")(inputAdornedStart.asInstanceOf[js.Any])
+    if (inputMarginDense != null) __obj.updateDynamic("inputMarginDense")(inputMarginDense.asInstanceOf[js.Any])
+    if (inputMultiline != null) __obj.updateDynamic("inputMultiline")(inputMultiline.asInstanceOf[js.Any])
+    if (multiline != null) __obj.updateDynamic("multiline")(multiline.asInstanceOf[js.Any])
+    if (notchedOutline != null) __obj.updateDynamic("notchedOutline")(notchedOutline.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyleRulesOutlinedInputClassKey]
   }
 }

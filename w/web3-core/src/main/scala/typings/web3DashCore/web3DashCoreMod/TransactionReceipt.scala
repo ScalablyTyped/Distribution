@@ -38,9 +38,9 @@ object TransactionReceipt {
     contractAddress: String = null,
     events: StringDictionary[EventLog] = null
   ): TransactionReceipt = {
-    val __obj = js.Dynamic.literal(blockHash = blockHash, blockNumber = blockNumber, cumulativeGasUsed = cumulativeGasUsed, from = from, gasUsed = gasUsed, logs = logs, logsBloom = logsBloom, status = status, to = to, transactionHash = transactionHash, transactionIndex = transactionIndex)
-    if (contractAddress != null) __obj.updateDynamic("contractAddress")(contractAddress)
-    if (events != null) __obj.updateDynamic("events")(events)
+    val __obj = js.Dynamic.literal(blockHash = blockHash.asInstanceOf[js.Any], blockNumber = blockNumber.asInstanceOf[js.Any], cumulativeGasUsed = cumulativeGasUsed.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], gasUsed = gasUsed.asInstanceOf[js.Any], logs = logs.asInstanceOf[js.Any], logsBloom = logsBloom.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any], transactionHash = transactionHash.asInstanceOf[js.Any], transactionIndex = transactionIndex.asInstanceOf[js.Any])
+    if (contractAddress != null) __obj.updateDynamic("contractAddress")(contractAddress.asInstanceOf[js.Any])
+    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransactionReceipt]
   }
 }

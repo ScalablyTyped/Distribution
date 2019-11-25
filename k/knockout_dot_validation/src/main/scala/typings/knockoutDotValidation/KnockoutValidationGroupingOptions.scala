@@ -30,9 +30,9 @@ object KnockoutValidationGroupingOptions {
     observable: js.UndefOr[Boolean] = js.undefined
   ): KnockoutValidationGroupingOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deep)) __obj.updateDynamic("deep")(deep)
-    if (!js.isUndefined(live)) __obj.updateDynamic("live")(live)
-    if (!js.isUndefined(observable)) __obj.updateDynamic("observable")(observable)
+    if (!js.isUndefined(deep)) __obj.updateDynamic("deep")(deep.asInstanceOf[js.Any])
+    if (!js.isUndefined(live)) __obj.updateDynamic("live")(live.asInstanceOf[js.Any])
+    if (!js.isUndefined(observable)) __obj.updateDynamic("observable")(observable.asInstanceOf[js.Any])
     __obj.asInstanceOf[KnockoutValidationGroupingOptions]
   }
 }

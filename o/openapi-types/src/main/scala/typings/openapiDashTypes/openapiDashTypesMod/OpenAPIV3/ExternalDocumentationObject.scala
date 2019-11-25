@@ -12,8 +12,8 @@ trait ExternalDocumentationObject extends js.Object {
 object ExternalDocumentationObject {
   @scala.inline
   def apply(url: String, description: String = null): ExternalDocumentationObject = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (description != null) __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExternalDocumentationObject]
   }
 }

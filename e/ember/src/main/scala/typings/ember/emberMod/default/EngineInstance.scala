@@ -18,6 +18,6 @@ class EngineInstance ()
     * Unregister a factory.
     */
   /* CompleteClass */
-  override def unregister(fullName: String): js.Any = js.native
+  override def unregister(fullName: java.lang.String): js.Any = js.native
 }
 

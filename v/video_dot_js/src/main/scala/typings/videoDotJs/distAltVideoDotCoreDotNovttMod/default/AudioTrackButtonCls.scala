@@ -1,7 +1,5 @@
 package typings.videoDotJs.distAltVideoDotCoreDotNovttMod.default
 
-import typings.videoDotJs.videoDotJsMod.videojs.AudioTrackButton
-import typings.videoDotJs.videoDotJsMod.videojs.Player
 import typings.videoDotJs.videoDotJsMod.videojs.TrackButtonOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("video.js/dist/alt/video.core.novtt", "AudioTrackButton")
 @js.native
-class AudioTrackButtonCls protected () extends AudioTrackButton {
+class AudioTrackButtonCls protected ()
+  extends typings.videoDotJs.videoDotJsMod.videojs.AudioTrackButton {
   /**
     * Creates an instance of this class.
     *
@@ -19,7 +18,7 @@ class AudioTrackButtonCls protected () extends AudioTrackButton {
     * @param [options={}]
     *        The key/value store of player options.
     */
-  def this(player: Player) = this()
-  def this(player: Player, options: TrackButtonOptions) = this()
+  def this(player: typings.videoDotJs.videoDotJsMod.videojs.Player) = this()
+  def this(player: typings.videoDotJs.videoDotJsMod.videojs.Player, options: TrackButtonOptions) = this()
 }
 

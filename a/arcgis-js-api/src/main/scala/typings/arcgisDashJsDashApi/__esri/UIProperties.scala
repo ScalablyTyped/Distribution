@@ -36,7 +36,7 @@ object UIProperties {
     view: MapViewProperties | SceneViewProperties = null
   ): UIProperties = {
     val __obj = js.Dynamic.literal()
-    if (container != null) __obj.updateDynamic("container")(container)
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[UIProperties]

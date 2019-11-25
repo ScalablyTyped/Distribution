@@ -11,7 +11,7 @@ trait ClientToken extends js.Object {
 object ClientToken {
   @scala.inline
   def apply(clientToken: String): ClientToken = {
-    val __obj = js.Dynamic.literal(clientToken = clientToken)
+    val __obj = js.Dynamic.literal(clientToken = clientToken.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ClientToken]
   }

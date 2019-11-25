@@ -22,9 +22,9 @@ object MobxApolloQuery {
     data: T = null,
     error: ApolloError = null
   ): MobxApolloQuery[T] = {
-    val __obj = js.Dynamic.literal(loading = loading, ref = ref)
+    val __obj = js.Dynamic.literal(loading = loading.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     __obj.asInstanceOf[MobxApolloQuery[T]]
   }
 }

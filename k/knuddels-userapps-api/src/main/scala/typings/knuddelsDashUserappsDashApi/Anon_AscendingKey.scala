@@ -24,7 +24,7 @@ object Anon_AscendingKey {
     onStart: (/* totalCount */ Double, /* key */ String) => Unit = null
   ): Anon_AscendingKey = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ascending)) __obj.updateDynamic("ascending")(ascending)
+    if (!js.isUndefined(ascending)) __obj.updateDynamic("ascending")(ascending.asInstanceOf[js.Any])
     if (maximumCount != null) __obj.updateDynamic("maximumCount")(maximumCount.asInstanceOf[js.Any])
     if (maximumValue != null) __obj.updateDynamic("maximumValue")(maximumValue.asInstanceOf[js.Any])
     if (minimumValue != null) __obj.updateDynamic("minimumValue")(minimumValue.asInstanceOf[js.Any])

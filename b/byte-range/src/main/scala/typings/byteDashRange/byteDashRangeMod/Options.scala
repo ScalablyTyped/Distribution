@@ -15,7 +15,7 @@ object Options {
   @scala.inline
   def apply(signed: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(signed)) __obj.updateDynamic("signed")(signed)
+    if (!js.isUndefined(signed)) __obj.updateDynamic("signed")(signed.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

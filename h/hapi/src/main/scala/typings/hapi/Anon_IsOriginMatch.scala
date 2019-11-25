@@ -16,7 +16,7 @@ object Anon_IsOriginMatch {
   @scala.inline
   def apply(isOriginMatch: js.UndefOr[Boolean] = js.undefined): Anon_IsOriginMatch = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isOriginMatch)) __obj.updateDynamic("isOriginMatch")(isOriginMatch)
+    if (!js.isUndefined(isOriginMatch)) __obj.updateDynamic("isOriginMatch")(isOriginMatch.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IsOriginMatch]
   }
 }

@@ -22,10 +22,10 @@ object MaterialOptions {
     specularExponent: Int | Double = null
   ): MaterialOptions = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (!js.isUndefined(metallic)) __obj.updateDynamic("metallic")(metallic)
-    if (shader != null) __obj.updateDynamic("shader")(shader)
-    if (specularColor != null) __obj.updateDynamic("specularColor")(specularColor)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (!js.isUndefined(metallic)) __obj.updateDynamic("metallic")(metallic.asInstanceOf[js.Any])
+    if (shader != null) __obj.updateDynamic("shader")(shader.asInstanceOf[js.Any])
+    if (specularColor != null) __obj.updateDynamic("specularColor")(specularColor.asInstanceOf[js.Any])
     if (specularExponent != null) __obj.updateDynamic("specularExponent")(specularExponent.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaterialOptions]
   }

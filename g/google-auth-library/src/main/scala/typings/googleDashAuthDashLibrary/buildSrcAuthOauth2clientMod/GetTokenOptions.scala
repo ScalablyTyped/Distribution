@@ -25,10 +25,10 @@ trait GetTokenOptions extends js.Object {
 object GetTokenOptions {
   @scala.inline
   def apply(code: String, client_id: String = null, codeVerifier: String = null, redirect_uri: String = null): GetTokenOptions = {
-    val __obj = js.Dynamic.literal(code = code)
-    if (client_id != null) __obj.updateDynamic("client_id")(client_id)
-    if (codeVerifier != null) __obj.updateDynamic("codeVerifier")(codeVerifier)
-    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
+    if (client_id != null) __obj.updateDynamic("client_id")(client_id.asInstanceOf[js.Any])
+    if (codeVerifier != null) __obj.updateDynamic("codeVerifier")(codeVerifier.asInstanceOf[js.Any])
+    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTokenOptions]
   }
 }

@@ -21,7 +21,7 @@ object CreateMixin {
     received: /* obj */ js.Any => Unit = null
   ): CreateMixin = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (connected != null) __obj.updateDynamic("connected")(js.Any.fromFunction0(connected))
     if (disconnected != null) __obj.updateDynamic("disconnected")(js.Any.fromFunction0(disconnected))
     if (received != null) __obj.updateDynamic("received")(js.Any.fromFunction1(received))

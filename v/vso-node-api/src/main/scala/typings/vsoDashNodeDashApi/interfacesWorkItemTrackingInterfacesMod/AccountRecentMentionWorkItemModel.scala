@@ -47,7 +47,7 @@ object AccountRecentMentionWorkItemModel {
     title: String,
     workItemType: String
   ): AccountRecentMentionWorkItemModel = {
-    val __obj = js.Dynamic.literal(assignedTo = assignedTo, id = id, mentionedDateField = mentionedDateField, state = state, teamProject = teamProject, title = title, workItemType = workItemType)
+    val __obj = js.Dynamic.literal(assignedTo = assignedTo.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], mentionedDateField = mentionedDateField.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], teamProject = teamProject.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], workItemType = workItemType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AccountRecentMentionWorkItemModel]
   }

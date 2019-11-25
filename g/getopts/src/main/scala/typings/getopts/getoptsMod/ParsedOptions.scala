@@ -14,8 +14,8 @@ object ParsedOptions {
   @scala.inline
   def apply(`_`: js.Array[String], StringDictionary: /* key */ StringDictionary[js.Any] = null): ParsedOptions = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_")(`_`)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.updateDynamic("_")(`_`.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ParsedOptions]
   }
 }

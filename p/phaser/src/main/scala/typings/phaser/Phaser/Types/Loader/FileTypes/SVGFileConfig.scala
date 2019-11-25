@@ -37,11 +37,11 @@ object SVGFileConfig {
     url: String = null,
     xhrSettings: XHRSettingsObject = null
   ): SVGFileConfig = {
-    val __obj = js.Dynamic.literal(key = key)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (svgConfig != null) __obj.updateDynamic("svgConfig")(svgConfig)
-    if (url != null) __obj.updateDynamic("url")(url)
-    if (xhrSettings != null) __obj.updateDynamic("xhrSettings")(xhrSettings)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (svgConfig != null) __obj.updateDynamic("svgConfig")(svgConfig.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (xhrSettings != null) __obj.updateDynamic("xhrSettings")(xhrSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[SVGFileConfig]
   }
 }

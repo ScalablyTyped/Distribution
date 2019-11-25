@@ -14,8 +14,8 @@ trait ShippingOption extends js.Object {
 object ShippingOption {
   @scala.inline
   def apply(amount: Double, id: String, label: String, detail: String = null): ShippingOption = {
-    val __obj = js.Dynamic.literal(amount = amount, id = id, label = label)
-    if (detail != null) __obj.updateDynamic("detail")(detail)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
+    if (detail != null) __obj.updateDynamic("detail")(detail.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShippingOption]
   }
 }

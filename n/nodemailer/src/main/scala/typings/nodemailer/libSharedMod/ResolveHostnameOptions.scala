@@ -14,7 +14,7 @@ object ResolveHostnameOptions {
   @scala.inline
   def apply(host: String = null, servername: String | `false` = null): ResolveHostnameOptions = {
     val __obj = js.Dynamic.literal()
-    if (host != null) __obj.updateDynamic("host")(host)
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (servername != null) __obj.updateDynamic("servername")(servername.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolveHostnameOptions]
   }

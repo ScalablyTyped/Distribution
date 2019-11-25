@@ -22,7 +22,7 @@ object EncapsulatedContentInfo {
     toJSON: () => js.Any,
     toSchema: () => js.Any
   ): EncapsulatedContentInfo = {
-    val __obj = js.Dynamic.literal(eContent = eContent, eContentType = eContentType, fromSchema = js.Any.fromFunction1(fromSchema), toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
+    val __obj = js.Dynamic.literal(eContent = eContent.asInstanceOf[js.Any], eContentType = eContentType.asInstanceOf[js.Any], fromSchema = js.Any.fromFunction1(fromSchema), toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
   
     __obj.asInstanceOf[EncapsulatedContentInfo]
   }

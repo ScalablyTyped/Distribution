@@ -18,8 +18,8 @@ object ProductSigningCertificate {
   @scala.inline
   def apply(certificateHashSha1: String = null, certificateHashSha256: String = null): ProductSigningCertificate = {
     val __obj = js.Dynamic.literal()
-    if (certificateHashSha1 != null) __obj.updateDynamic("certificateHashSha1")(certificateHashSha1)
-    if (certificateHashSha256 != null) __obj.updateDynamic("certificateHashSha256")(certificateHashSha256)
+    if (certificateHashSha1 != null) __obj.updateDynamic("certificateHashSha1")(certificateHashSha1.asInstanceOf[js.Any])
+    if (certificateHashSha256 != null) __obj.updateDynamic("certificateHashSha256")(certificateHashSha256.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProductSigningCertificate]
   }
 }

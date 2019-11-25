@@ -27,8 +27,8 @@ trait ChartAddSeriesEventObject extends js.Object {
 object ChartAddSeriesEventObject {
   @scala.inline
   def apply(options: SeriesOptionsType, preventDefault: js.Function, target: Chart, `type`: addSeries): ChartAddSeriesEventObject = {
-    val __obj = js.Dynamic.literal(options = options, preventDefault = preventDefault, target = target)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], preventDefault = preventDefault.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartAddSeriesEventObject]
   }
 }

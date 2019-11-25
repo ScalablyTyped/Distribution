@@ -22,8 +22,8 @@ object ReadOptions {
   @scala.inline
   def apply(readConsistency: String = null, transaction: String = null): ReadOptions = {
     val __obj = js.Dynamic.literal()
-    if (readConsistency != null) __obj.updateDynamic("readConsistency")(readConsistency)
-    if (transaction != null) __obj.updateDynamic("transaction")(transaction)
+    if (readConsistency != null) __obj.updateDynamic("readConsistency")(readConsistency.asInstanceOf[js.Any])
+    if (transaction != null) __obj.updateDynamic("transaction")(transaction.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadOptions]
   }
 }

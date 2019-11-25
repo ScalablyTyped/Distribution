@@ -26,7 +26,7 @@ trait Problem extends js.Object {
 object Problem {
   @scala.inline
   def apply(path: js.Array[String], predicate: js.Any => Boolean, value: js.Any, via: js.Array[String]): Problem = {
-    val __obj = js.Dynamic.literal(path = path, predicate = js.Any.fromFunction1(predicate), value = value, via = via)
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], predicate = js.Any.fromFunction1(predicate), value = value.asInstanceOf[js.Any], via = via.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Problem]
   }

@@ -20,10 +20,10 @@ object Anon_Basic {
     web: js.UndefOr[Boolean] = js.undefined
   ): Anon_Basic = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(basic)) __obj.updateDynamic("basic")(basic)
-    if (!js.isUndefined(`mem-store`)) __obj.updateDynamic("mem-store")(`mem-store`)
-    if (!js.isUndefined(transport)) __obj.updateDynamic("transport")(transport)
-    if (!js.isUndefined(web)) __obj.updateDynamic("web")(web)
+    if (!js.isUndefined(basic)) __obj.updateDynamic("basic")(basic.asInstanceOf[js.Any])
+    if (!js.isUndefined(`mem-store`)) __obj.updateDynamic("mem-store")(`mem-store`.asInstanceOf[js.Any])
+    if (!js.isUndefined(transport)) __obj.updateDynamic("transport")(transport.asInstanceOf[js.Any])
+    if (!js.isUndefined(web)) __obj.updateDynamic("web")(web.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Basic]
   }
 }

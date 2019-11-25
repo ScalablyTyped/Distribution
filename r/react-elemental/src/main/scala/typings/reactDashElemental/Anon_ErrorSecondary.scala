@@ -21,10 +21,10 @@ object Anon_ErrorSecondary {
     textarea: js.UndefOr[Boolean] = js.undefined
   ): Anon_ErrorSecondary = {
     val __obj = js.Dynamic.literal()
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (!js.isUndefined(secondary)) __obj.updateDynamic("secondary")(secondary)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (!js.isUndefined(textarea)) __obj.updateDynamic("textarea")(textarea)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (!js.isUndefined(secondary)) __obj.updateDynamic("secondary")(secondary.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(textarea)) __obj.updateDynamic("textarea")(textarea.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ErrorSecondary]
   }
 }

@@ -37,9 +37,9 @@ object Anon_At {
     _format: String = null
   ): Anon_At = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (_at != null) __obj.updateDynamic("_at")(_at)
-    if (_format != null) __obj.updateDynamic("_format")(_format)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (_at != null) __obj.updateDynamic("_at")(_at.asInstanceOf[js.Any])
+    if (_format != null) __obj.updateDynamic("_format")(_format.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_At]
   }
 }

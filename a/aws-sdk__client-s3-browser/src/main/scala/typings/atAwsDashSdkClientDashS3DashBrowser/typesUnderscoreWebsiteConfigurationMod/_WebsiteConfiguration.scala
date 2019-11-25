@@ -37,9 +37,9 @@ object _WebsiteConfiguration {
     RoutingRules: js.Array[_RoutingRule] | Iterable[_RoutingRule] = null
   ): _WebsiteConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (ErrorDocument != null) __obj.updateDynamic("ErrorDocument")(ErrorDocument)
-    if (IndexDocument != null) __obj.updateDynamic("IndexDocument")(IndexDocument)
-    if (RedirectAllRequestsTo != null) __obj.updateDynamic("RedirectAllRequestsTo")(RedirectAllRequestsTo)
+    if (ErrorDocument != null) __obj.updateDynamic("ErrorDocument")(ErrorDocument.asInstanceOf[js.Any])
+    if (IndexDocument != null) __obj.updateDynamic("IndexDocument")(IndexDocument.asInstanceOf[js.Any])
+    if (RedirectAllRequestsTo != null) __obj.updateDynamic("RedirectAllRequestsTo")(RedirectAllRequestsTo.asInstanceOf[js.Any])
     if (RoutingRules != null) __obj.updateDynamic("RoutingRules")(RoutingRules.asInstanceOf[js.Any])
     __obj.asInstanceOf[_WebsiteConfiguration]
   }

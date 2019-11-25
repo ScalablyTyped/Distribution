@@ -29,7 +29,7 @@ trait ISlope extends js.Object {
 object ISlope {
   @scala.inline
   def apply(hasSlope: Boolean, line: IPathLine, slope: Int | Double = null, yIntercept: Int | Double = null): ISlope = {
-    val __obj = js.Dynamic.literal(hasSlope = hasSlope, line = line)
+    val __obj = js.Dynamic.literal(hasSlope = hasSlope.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
     if (slope != null) __obj.updateDynamic("slope")(slope.asInstanceOf[js.Any])
     if (yIntercept != null) __obj.updateDynamic("yIntercept")(yIntercept.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISlope]

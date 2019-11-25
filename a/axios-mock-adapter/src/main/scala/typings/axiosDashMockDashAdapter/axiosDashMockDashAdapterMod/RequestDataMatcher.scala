@@ -17,8 +17,8 @@ object RequestDataMatcher {
     params: StringDictionary[js.Any] = null
   ): RequestDataMatcher = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (params != null) __obj.updateDynamic("params")(params)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestDataMatcher]
   }
 }

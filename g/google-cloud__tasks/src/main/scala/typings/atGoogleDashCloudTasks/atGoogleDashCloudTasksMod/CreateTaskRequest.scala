@@ -14,8 +14,8 @@ trait CreateTaskRequest extends js.Object {
 object CreateTaskRequest {
   @scala.inline
   def apply(parent: String, task: Partial[Task], responseView: View = null): CreateTaskRequest = {
-    val __obj = js.Dynamic.literal(parent = parent, task = task)
-    if (responseView != null) __obj.updateDynamic("responseView")(responseView)
+    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], task = task.asInstanceOf[js.Any])
+    if (responseView != null) __obj.updateDynamic("responseView")(responseView.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTaskRequest]
   }
 }

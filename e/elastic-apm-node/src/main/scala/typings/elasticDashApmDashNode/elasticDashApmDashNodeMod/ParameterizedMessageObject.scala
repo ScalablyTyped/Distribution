@@ -12,7 +12,7 @@ trait ParameterizedMessageObject extends js.Object {
 object ParameterizedMessageObject {
   @scala.inline
   def apply(message: String, params: js.Array[_]): ParameterizedMessageObject = {
-    val __obj = js.Dynamic.literal(message = message, params = params)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ParameterizedMessageObject]
   }

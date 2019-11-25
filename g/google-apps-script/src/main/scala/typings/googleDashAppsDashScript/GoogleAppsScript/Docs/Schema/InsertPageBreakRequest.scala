@@ -13,8 +13,8 @@ object InsertPageBreakRequest {
   @scala.inline
   def apply(endOfSegmentLocation: EndOfSegmentLocation = null, location: Location = null): InsertPageBreakRequest = {
     val __obj = js.Dynamic.literal()
-    if (endOfSegmentLocation != null) __obj.updateDynamic("endOfSegmentLocation")(endOfSegmentLocation)
-    if (location != null) __obj.updateDynamic("location")(location)
+    if (endOfSegmentLocation != null) __obj.updateDynamic("endOfSegmentLocation")(endOfSegmentLocation.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsertPageBreakRequest]
   }
 }

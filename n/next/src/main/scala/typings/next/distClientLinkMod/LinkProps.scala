@@ -27,11 +27,11 @@ object LinkProps {
   ): LinkProps = {
     val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (!js.isUndefined(passHref)) __obj.updateDynamic("passHref")(passHref)
-    if (!js.isUndefined(prefetch)) __obj.updateDynamic("prefetch")(prefetch)
-    if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace)
-    if (!js.isUndefined(scroll)) __obj.updateDynamic("scroll")(scroll)
-    if (!js.isUndefined(shallow)) __obj.updateDynamic("shallow")(shallow)
+    if (!js.isUndefined(passHref)) __obj.updateDynamic("passHref")(passHref.asInstanceOf[js.Any])
+    if (!js.isUndefined(prefetch)) __obj.updateDynamic("prefetch")(prefetch.asInstanceOf[js.Any])
+    if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace.asInstanceOf[js.Any])
+    if (!js.isUndefined(scroll)) __obj.updateDynamic("scroll")(scroll.asInstanceOf[js.Any])
+    if (!js.isUndefined(shallow)) __obj.updateDynamic("shallow")(shallow.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinkProps]
   }
 }

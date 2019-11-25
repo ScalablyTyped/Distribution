@@ -27,8 +27,8 @@ trait SeriesCheckboxClickEventObject extends js.Object {
 object SeriesCheckboxClickEventObject {
   @scala.inline
   def apply(checked: Boolean, item: Series, target: Series, `type`: checkboxClick): SeriesCheckboxClickEventObject = {
-    val __obj = js.Dynamic.literal(checked = checked, item = item, target = target)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesCheckboxClickEventObject]
   }
 }

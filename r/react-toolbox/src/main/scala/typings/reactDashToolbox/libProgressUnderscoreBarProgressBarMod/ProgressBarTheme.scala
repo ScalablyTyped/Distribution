@@ -52,14 +52,14 @@ object ProgressBarTheme {
     value: String = null
   ): ProgressBarTheme = {
     val __obj = js.Dynamic.literal()
-    if (buffer != null) __obj.updateDynamic("buffer")(buffer)
-    if (circle != null) __obj.updateDynamic("circle")(circle)
-    if (circular != null) __obj.updateDynamic("circular")(circular)
-    if (indeterminate != null) __obj.updateDynamic("indeterminate")(indeterminate)
-    if (linear != null) __obj.updateDynamic("linear")(linear)
-    if (multicolor != null) __obj.updateDynamic("multicolor")(multicolor)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (buffer != null) __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
+    if (circle != null) __obj.updateDynamic("circle")(circle.asInstanceOf[js.Any])
+    if (circular != null) __obj.updateDynamic("circular")(circular.asInstanceOf[js.Any])
+    if (indeterminate != null) __obj.updateDynamic("indeterminate")(indeterminate.asInstanceOf[js.Any])
+    if (linear != null) __obj.updateDynamic("linear")(linear.asInstanceOf[js.Any])
+    if (multicolor != null) __obj.updateDynamic("multicolor")(multicolor.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProgressBarTheme]
   }
 }

@@ -13,8 +13,8 @@ object Anon_AlgProv {
   @scala.inline
   def apply(alg: String = null, prov: String = null): Anon_AlgProv = {
     val __obj = js.Dynamic.literal()
-    if (alg != null) __obj.updateDynamic("alg")(alg)
-    if (prov != null) __obj.updateDynamic("prov")(prov)
+    if (alg != null) __obj.updateDynamic("alg")(alg.asInstanceOf[js.Any])
+    if (prov != null) __obj.updateDynamic("prov")(prov.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AlgProv]
   }
 }

@@ -12,7 +12,7 @@ trait RenderOptionState extends js.Object {
 object RenderOptionState {
   @scala.inline
   def apply(inputValue: String, selected: Boolean): RenderOptionState = {
-    val __obj = js.Dynamic.literal(inputValue = inputValue, selected = selected)
+    val __obj = js.Dynamic.literal(inputValue = inputValue.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RenderOptionState]
   }

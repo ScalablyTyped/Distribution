@@ -20,10 +20,10 @@ object Anon_Category {
     url: String = null
   ): Anon_Category = {
     val __obj = js.Dynamic.literal()
-    if (category != null) __obj.updateDynamic("category")(category)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (!js.isUndefined(recommended)) __obj.updateDynamic("recommended")(recommended)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(recommended)) __obj.updateDynamic("recommended")(recommended.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Category]
   }
 }

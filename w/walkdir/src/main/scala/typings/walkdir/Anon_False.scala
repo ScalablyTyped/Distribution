@@ -14,8 +14,8 @@ trait Anon_False extends js.Object {
 object Anon_False {
   @scala.inline
   def apply(sync: `true`, return_object: `false` = null): Anon_False = {
-    val __obj = js.Dynamic.literal(sync = sync)
-    if (return_object != null) __obj.updateDynamic("return_object")(return_object)
+    val __obj = js.Dynamic.literal(sync = sync.asInstanceOf[js.Any])
+    if (return_object != null) __obj.updateDynamic("return_object")(return_object.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_False]
   }
 }

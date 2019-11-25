@@ -33,9 +33,9 @@ object _UnmarshalledNotificationConfiguration {
     TopicConfigurations: js.Array[_UnmarshalledTopicConfiguration] = null
   ): _UnmarshalledNotificationConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (LambdaFunctionConfigurations != null) __obj.updateDynamic("LambdaFunctionConfigurations")(LambdaFunctionConfigurations)
-    if (QueueConfigurations != null) __obj.updateDynamic("QueueConfigurations")(QueueConfigurations)
-    if (TopicConfigurations != null) __obj.updateDynamic("TopicConfigurations")(TopicConfigurations)
+    if (LambdaFunctionConfigurations != null) __obj.updateDynamic("LambdaFunctionConfigurations")(LambdaFunctionConfigurations.asInstanceOf[js.Any])
+    if (QueueConfigurations != null) __obj.updateDynamic("QueueConfigurations")(QueueConfigurations.asInstanceOf[js.Any])
+    if (TopicConfigurations != null) __obj.updateDynamic("TopicConfigurations")(TopicConfigurations.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledNotificationConfiguration]
   }
 }

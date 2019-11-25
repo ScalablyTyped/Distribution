@@ -98,15 +98,15 @@ object IgGridUpdatingColumnSetting {
     validation: js.UndefOr[Boolean] = js.undefined
   ): IgGridUpdatingColumnSetting = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey)
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
-    if (editorOptions != null) __obj.updateDynamic("editorOptions")(editorOptions)
-    if (editorProvider != null) __obj.updateDynamic("editorProvider")(editorProvider)
-    if (editorType != null) __obj.updateDynamic("editorType")(editorType)
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
-    if (!js.isUndefined(validation)) __obj.updateDynamic("validation")(validation)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey.asInstanceOf[js.Any])
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (editorOptions != null) __obj.updateDynamic("editorOptions")(editorOptions.asInstanceOf[js.Any])
+    if (editorProvider != null) __obj.updateDynamic("editorProvider")(editorProvider.asInstanceOf[js.Any])
+    if (editorType != null) __obj.updateDynamic("editorType")(editorType.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
+    if (!js.isUndefined(validation)) __obj.updateDynamic("validation")(validation.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridUpdatingColumnSetting]
   }
 }

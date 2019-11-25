@@ -21,8 +21,8 @@ object ServerRegisterOptions {
   @scala.inline
   def apply(once: js.UndefOr[Boolean] = js.undefined, routes: Anon_PrefixVhost = null): ServerRegisterOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(once)) __obj.updateDynamic("once")(once)
-    if (routes != null) __obj.updateDynamic("routes")(routes)
+    if (!js.isUndefined(once)) __obj.updateDynamic("once")(once.asInstanceOf[js.Any])
+    if (routes != null) __obj.updateDynamic("routes")(routes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerRegisterOptions]
   }
 }

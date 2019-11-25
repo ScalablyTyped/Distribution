@@ -15,7 +15,7 @@ object ContentTypeOrder {
   @scala.inline
   def apply(default: js.UndefOr[Boolean] = js.undefined, position: Int | Double = null): ContentTypeOrder = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default)
+    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentTypeOrder]
   }

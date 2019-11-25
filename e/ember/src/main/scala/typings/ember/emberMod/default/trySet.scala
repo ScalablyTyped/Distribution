@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object trySet
   extends TopLevel[
-      js.Function3[/* root */ js.Object, /* path */ String, /* value */ js.Any, js.Any]
+      js.Function3[/* root */ js.Object, /* path */ java.lang.String, /* value */ js.Any, js.Any]
     ]
 

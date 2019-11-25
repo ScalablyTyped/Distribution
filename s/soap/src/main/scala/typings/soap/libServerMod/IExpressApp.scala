@@ -12,7 +12,7 @@ trait IExpressApp extends js.Object {
 object IExpressApp {
   @scala.inline
   def apply(route: js.Any, use: js.Any): IExpressApp = {
-    val __obj = js.Dynamic.literal(route = route, use = use)
+    val __obj = js.Dynamic.literal(route = route.asInstanceOf[js.Any], use = use.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IExpressApp]
   }

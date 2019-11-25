@@ -31,7 +31,7 @@ object Anon_Animated {
     prefixCls: String,
     transparent: Boolean
   ): Anon_Animated = {
-    val __obj = js.Dynamic.literal(animated = animated, animationType = animationType, closable = closable, footer = footer, onShow = js.Any.fromFunction0(onShow), operation = operation, platform = platform, popup = popup, prefixCls = prefixCls, transparent = transparent)
+    val __obj = js.Dynamic.literal(animated = animated.asInstanceOf[js.Any], animationType = animationType.asInstanceOf[js.Any], closable = closable.asInstanceOf[js.Any], footer = footer.asInstanceOf[js.Any], onShow = js.Any.fromFunction0(onShow), operation = operation.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], popup = popup.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], transparent = transparent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Animated]
   }

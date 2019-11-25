@@ -13,7 +13,7 @@ object ApolloServerHttpResponse {
   @scala.inline
   def apply(headers: Record[String, String] = null): ApolloServerHttpResponse = {
     val __obj = js.Dynamic.literal()
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApolloServerHttpResponse]
   }
 }

@@ -46,9 +46,9 @@ object WeightsManifestEntry {
     group: WeightGroup = null,
     quantization: Anon_Dtype = null
   ): WeightsManifestEntry = {
-    val __obj = js.Dynamic.literal(dtype = dtype.asInstanceOf[js.Any], name = name, shape = shape)
-    if (group != null) __obj.updateDynamic("group")(group)
-    if (quantization != null) __obj.updateDynamic("quantization")(quantization)
+    val __obj = js.Dynamic.literal(dtype = dtype.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any])
+    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
+    if (quantization != null) __obj.updateDynamic("quantization")(quantization.asInstanceOf[js.Any])
     __obj.asInstanceOf[WeightsManifestEntry]
   }
 }

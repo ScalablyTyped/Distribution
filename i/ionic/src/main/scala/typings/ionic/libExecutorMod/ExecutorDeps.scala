@@ -12,7 +12,7 @@ trait ExecutorDeps extends js.Object {
 object ExecutorDeps {
   @scala.inline
   def apply(namespace: INamespace): ExecutorDeps = {
-    val __obj = js.Dynamic.literal(namespace = namespace)
+    val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExecutorDeps]
   }

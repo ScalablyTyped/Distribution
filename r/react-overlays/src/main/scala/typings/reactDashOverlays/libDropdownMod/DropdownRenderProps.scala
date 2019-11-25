@@ -12,7 +12,7 @@ trait DropdownRenderProps extends js.Object {
 object DropdownRenderProps {
   @scala.inline
   def apply(props: Anon_Event): DropdownRenderProps = {
-    val __obj = js.Dynamic.literal(props = props)
+    val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DropdownRenderProps]
   }

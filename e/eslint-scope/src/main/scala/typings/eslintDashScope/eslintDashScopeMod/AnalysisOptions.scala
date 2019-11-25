@@ -30,13 +30,13 @@ object AnalysisOptions {
     sourceType: script | module = null
   ): AnalysisOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(directive)) __obj.updateDynamic("directive")(directive)
+    if (!js.isUndefined(directive)) __obj.updateDynamic("directive")(directive.asInstanceOf[js.Any])
     if (ecmaVersion != null) __obj.updateDynamic("ecmaVersion")(ecmaVersion.asInstanceOf[js.Any])
     if (fallback != null) __obj.updateDynamic("fallback")(fallback.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreEval)) __obj.updateDynamic("ignoreEval")(ignoreEval)
-    if (!js.isUndefined(impliedStrict)) __obj.updateDynamic("impliedStrict")(impliedStrict)
-    if (!js.isUndefined(nodejsScope)) __obj.updateDynamic("nodejsScope")(nodejsScope)
-    if (!js.isUndefined(optimistic)) __obj.updateDynamic("optimistic")(optimistic)
+    if (!js.isUndefined(ignoreEval)) __obj.updateDynamic("ignoreEval")(ignoreEval.asInstanceOf[js.Any])
+    if (!js.isUndefined(impliedStrict)) __obj.updateDynamic("impliedStrict")(impliedStrict.asInstanceOf[js.Any])
+    if (!js.isUndefined(nodejsScope)) __obj.updateDynamic("nodejsScope")(nodejsScope.asInstanceOf[js.Any])
+    if (!js.isUndefined(optimistic)) __obj.updateDynamic("optimistic")(optimistic.asInstanceOf[js.Any])
     if (sourceType != null) __obj.updateDynamic("sourceType")(sourceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalysisOptions]
   }

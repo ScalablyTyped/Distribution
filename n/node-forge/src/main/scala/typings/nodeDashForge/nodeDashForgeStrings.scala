@@ -82,7 +82,7 @@ object nodeDashForgeStrings {
     extends typings.nodeDashForge.nodeDashForgeMod.hmac.Algorithm
   
   @js.native
-  sealed trait raw extends Encoding
+  sealed trait raw_ extends Encoding
   
   @js.native
   sealed trait server extends js.Object
@@ -154,7 +154,7 @@ object nodeDashForgeStrings {
   @scala.inline
   def md5: md5 = "md5".asInstanceOf[md5]
   @scala.inline
-  def raw: raw = "raw".asInstanceOf[raw]
+  def raw_ : raw_ = "raw".asInstanceOf[raw_]
   @scala.inline
   def server: server = "server".asInstanceOf[server]
   @scala.inline

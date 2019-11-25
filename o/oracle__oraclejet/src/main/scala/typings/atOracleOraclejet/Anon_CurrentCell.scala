@@ -19,8 +19,8 @@ object Anon_CurrentCell {
     previousCurrentCell: CurrentCell[K],
     StringDictionary: /* propName */ StringDictionary[js.Any] = null
   ): Anon_CurrentCell[K] = {
-    val __obj = js.Dynamic.literal(currentCell = currentCell, previousCurrentCell = previousCurrentCell)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(currentCell = currentCell.asInstanceOf[js.Any], previousCurrentCell = previousCurrentCell.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_CurrentCell[K]]
   }
 }

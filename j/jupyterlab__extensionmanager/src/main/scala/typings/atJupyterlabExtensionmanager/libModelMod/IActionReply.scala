@@ -22,7 +22,7 @@ object IActionReply {
   @scala.inline
   def apply(message: String = null, status: ok | warning | error = null): IActionReply = {
     val __obj = js.Dynamic.literal()
-    if (message != null) __obj.updateDynamic("message")(message)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[IActionReply]
   }

@@ -39,7 +39,7 @@ object OpenAddressResponse {
     telNumber: String,
     userName: String
   ): OpenAddressResponse = {
-    val __obj = js.Dynamic.literal(cityName = cityName, countryName = countryName, detailInfo = detailInfo, errMsg = errMsg, nationalCode = nationalCode, postalCode = postalCode, provinceName = provinceName, telNumber = telNumber, userName = userName)
+    val __obj = js.Dynamic.literal(cityName = cityName.asInstanceOf[js.Any], countryName = countryName.asInstanceOf[js.Any], detailInfo = detailInfo.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any], nationalCode = nationalCode.asInstanceOf[js.Any], postalCode = postalCode.asInstanceOf[js.Any], provinceName = provinceName.asInstanceOf[js.Any], telNumber = telNumber.asInstanceOf[js.Any], userName = userName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OpenAddressResponse]
   }

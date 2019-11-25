@@ -12,7 +12,7 @@ object KeyValueTargetingExpression {
   @scala.inline
   def apply(expression: String = null): KeyValueTargetingExpression = {
     val __obj = js.Dynamic.literal()
-    if (expression != null) __obj.updateDynamic("expression")(expression)
+    if (expression != null) __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyValueTargetingExpression]
   }
 }

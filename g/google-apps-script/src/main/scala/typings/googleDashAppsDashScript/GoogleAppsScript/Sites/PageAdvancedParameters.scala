@@ -31,12 +31,12 @@ object PageAdvancedParameters {
     `type`: js.Array[PageType] = null
   ): PageAdvancedParameters = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeDeleted)) __obj.updateDynamic("includeDeleted")(includeDeleted)
-    if (!js.isUndefined(includeDrafts)) __obj.updateDynamic("includeDrafts")(includeDrafts)
+    if (!js.isUndefined(includeDeleted)) __obj.updateDynamic("includeDeleted")(includeDeleted.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeDrafts)) __obj.updateDynamic("includeDrafts")(includeDrafts.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (search != null) __obj.updateDynamic("search")(search)
+    if (search != null) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageAdvancedParameters]
   }
 }

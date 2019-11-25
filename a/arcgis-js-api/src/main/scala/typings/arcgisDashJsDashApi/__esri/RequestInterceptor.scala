@@ -68,12 +68,12 @@ object RequestInterceptor {
     responseData: js.Any = null,
     urls: String | RegExp | (js.Array[String | RegExp]) = null
   ): RequestInterceptor = {
-    val __obj = js.Dynamic.literal(constructor = constructor, error = js.Any.fromFunction0(error), hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], error = js.Any.fromFunction0(error), hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (after != null) __obj.updateDynamic("after")(js.Any.fromFunction1(after))
     if (before != null) __obj.updateDynamic("before")(js.Any.fromFunction1(before))
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (query != null) __obj.updateDynamic("query")(query)
-    if (responseData != null) __obj.updateDynamic("responseData")(responseData)
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    if (responseData != null) __obj.updateDynamic("responseData")(responseData.asInstanceOf[js.Any])
     if (urls != null) __obj.updateDynamic("urls")(urls.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestInterceptor]
   }

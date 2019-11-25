@@ -13,7 +13,7 @@ trait ClientDisconnect extends js.Object {
 object ClientDisconnect {
   @scala.inline
   def apply(client: ClientList, event: js.Any): ClientDisconnect = {
-    val __obj = js.Dynamic.literal(client = client, event = event)
+    val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ClientDisconnect]
   }

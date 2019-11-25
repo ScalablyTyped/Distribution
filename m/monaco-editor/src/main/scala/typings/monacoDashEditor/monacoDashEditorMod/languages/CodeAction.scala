@@ -24,12 +24,12 @@ object CodeAction {
     isPreferred: js.UndefOr[Boolean] = js.undefined,
     kind: String = null
   ): CodeAction = {
-    val __obj = js.Dynamic.literal(title = title)
-    if (command != null) __obj.updateDynamic("command")(command)
-    if (diagnostics != null) __obj.updateDynamic("diagnostics")(diagnostics)
-    if (edit != null) __obj.updateDynamic("edit")(edit)
-    if (!js.isUndefined(isPreferred)) __obj.updateDynamic("isPreferred")(isPreferred)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
+    if (command != null) __obj.updateDynamic("command")(command.asInstanceOf[js.Any])
+    if (diagnostics != null) __obj.updateDynamic("diagnostics")(diagnostics.asInstanceOf[js.Any])
+    if (edit != null) __obj.updateDynamic("edit")(edit.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPreferred)) __obj.updateDynamic("isPreferred")(isPreferred.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeAction]
   }
 }

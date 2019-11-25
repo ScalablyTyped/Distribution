@@ -16,3 +16,14 @@ import scala.scalajs.js.annotation._
 */
 trait TextAlign extends js.Object
 
+object TextAlign {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def center: typings.zfont.zfontStrings.center = this.cast("center")
+  @scala.inline
+  def left: typings.zfont.zfontStrings.left = this.cast("left")
+  @scala.inline
+  def right: typings.zfont.zfontStrings.right = this.cast("right")
+}
+

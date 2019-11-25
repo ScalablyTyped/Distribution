@@ -14,51 +14,51 @@ trait N3Writer[Q /* <: typings.rdfDashJs.rdfDashJsMod.BaseQuad */] extends js.Ob
   def addPrefixes(prefixes: Prefixes[typings.rdfDashJs.rdfDashJsMod.NamedNode | String], done: js.Function0[Unit]): Unit = js.native
   def addQuad(quad: typings.rdfDashJs.rdfDashJsMod.Quad): Unit = js.native
   def addQuad(
-    subject: /* import warning: ImportType.apply Failed type conversion: Q['subject'] */ js.Any,
-    predicate: /* import warning: ImportType.apply Failed type conversion: Q['predicate'] */ js.Any,
-    `object`: /* import warning: ImportType.apply Failed type conversion: Q['object'] */ js.Any
+    subject: /* import warning: importer.ImportType#apply Failed type conversion: Q['subject'] */ js.Any,
+    predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q['predicate'] */ js.Any,
+    `object`: /* import warning: importer.ImportType#apply Failed type conversion: Q['object'] */ js.Any
   ): Unit = js.native
   def addQuad(
-    subject: /* import warning: ImportType.apply Failed type conversion: Q['subject'] */ js.Any,
-    predicate: /* import warning: ImportType.apply Failed type conversion: Q['predicate'] */ js.Any,
-    `object`: /* import warning: ImportType.apply Failed type conversion: Q['object'] */ js.Any,
-    graph: /* import warning: ImportType.apply Failed type conversion: Q['graph'] */ js.Any
+    subject: /* import warning: importer.ImportType#apply Failed type conversion: Q['subject'] */ js.Any,
+    predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q['predicate'] */ js.Any,
+    `object`: /* import warning: importer.ImportType#apply Failed type conversion: Q['object'] */ js.Any,
+    graph: /* import warning: importer.ImportType#apply Failed type conversion: Q['graph'] */ js.Any
   ): Unit = js.native
   def addQuad(
-    subject: /* import warning: ImportType.apply Failed type conversion: Q['subject'] */ js.Any,
-    predicate: /* import warning: ImportType.apply Failed type conversion: Q['predicate'] */ js.Any,
-    `object`: /* import warning: ImportType.apply Failed type conversion: Q['object'] */ js.Any,
-    graph: /* import warning: ImportType.apply Failed type conversion: Q['graph'] */ js.Any,
+    subject: /* import warning: importer.ImportType#apply Failed type conversion: Q['subject'] */ js.Any,
+    predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q['predicate'] */ js.Any,
+    `object`: /* import warning: importer.ImportType#apply Failed type conversion: Q['object'] */ js.Any,
+    graph: /* import warning: importer.ImportType#apply Failed type conversion: Q['graph'] */ js.Any,
     done: js.Function0[Unit]
   ): Unit = js.native
   def addQuad(
-    subject: /* import warning: ImportType.apply Failed type conversion: Q['subject'] */ js.Any,
-    predicate: /* import warning: ImportType.apply Failed type conversion: Q['predicate'] */ js.Any,
+    subject: /* import warning: importer.ImportType#apply Failed type conversion: Q['subject'] */ js.Any,
+    predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q['predicate'] */ js.Any,
     `object`: js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Q['object'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Q['object'] */ js.Any
     ]
   ): Unit = js.native
   def addQuad(
-    subject: /* import warning: ImportType.apply Failed type conversion: Q['subject'] */ js.Any,
-    predicate: /* import warning: ImportType.apply Failed type conversion: Q['predicate'] */ js.Any,
+    subject: /* import warning: importer.ImportType#apply Failed type conversion: Q['subject'] */ js.Any,
+    predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q['predicate'] */ js.Any,
     `object`: js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Q['object'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Q['object'] */ js.Any
     ],
-    graph: /* import warning: ImportType.apply Failed type conversion: Q['graph'] */ js.Any
+    graph: /* import warning: importer.ImportType#apply Failed type conversion: Q['graph'] */ js.Any
   ): Unit = js.native
   def addQuad(
-    subject: /* import warning: ImportType.apply Failed type conversion: Q['subject'] */ js.Any,
-    predicate: /* import warning: ImportType.apply Failed type conversion: Q['predicate'] */ js.Any,
+    subject: /* import warning: importer.ImportType#apply Failed type conversion: Q['subject'] */ js.Any,
+    predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q['predicate'] */ js.Any,
     `object`: js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Q['object'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Q['object'] */ js.Any
     ],
-    graph: /* import warning: ImportType.apply Failed type conversion: Q['graph'] */ js.Any,
+    graph: /* import warning: importer.ImportType#apply Failed type conversion: Q['graph'] */ js.Any,
     done: js.Function0[Unit]
   ): Unit = js.native
   def addQuads(quads: js.Array[typings.rdfDashJs.rdfDashJsMod.Quad]): Unit = js.native
   def blank(
-    predicate: /* import warning: ImportType.apply Failed type conversion: Q['predicate'] */ js.Any,
-    `object`: /* import warning: ImportType.apply Failed type conversion: Q['object'] */ js.Any
+    predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q['predicate'] */ js.Any,
+    `object`: /* import warning: importer.ImportType#apply Failed type conversion: Q['object'] */ js.Any
   ): BlankNode = js.native
   def blank(
     triple: js.Array[
@@ -73,19 +73,19 @@ trait N3Writer[Q /* <: typings.rdfDashJs.rdfDashJsMod.BaseQuad */] extends js.Ob
   @JSName("list")
   def list_object(
     triple: js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Q['object'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Q['object'] */ js.Any
     ]
   ): js.Array[Quad_Object] = js.native
   def quadToString(
-    subject: /* import warning: ImportType.apply Failed type conversion: Q['subject'] */ js.Any,
-    predicate: /* import warning: ImportType.apply Failed type conversion: Q['predicate'] */ js.Any,
-    `object`: /* import warning: ImportType.apply Failed type conversion: Q['object'] */ js.Any
+    subject: /* import warning: importer.ImportType#apply Failed type conversion: Q['subject'] */ js.Any,
+    predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q['predicate'] */ js.Any,
+    `object`: /* import warning: importer.ImportType#apply Failed type conversion: Q['object'] */ js.Any
   ): String = js.native
   def quadToString(
-    subject: /* import warning: ImportType.apply Failed type conversion: Q['subject'] */ js.Any,
-    predicate: /* import warning: ImportType.apply Failed type conversion: Q['predicate'] */ js.Any,
-    `object`: /* import warning: ImportType.apply Failed type conversion: Q['object'] */ js.Any,
-    graph: /* import warning: ImportType.apply Failed type conversion: Q['graph'] */ js.Any
+    subject: /* import warning: importer.ImportType#apply Failed type conversion: Q['subject'] */ js.Any,
+    predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q['predicate'] */ js.Any,
+    `object`: /* import warning: importer.ImportType#apply Failed type conversion: Q['object'] */ js.Any,
+    graph: /* import warning: importer.ImportType#apply Failed type conversion: Q['graph'] */ js.Any
   ): String = js.native
   def quadsToString(quads: js.Array[typings.rdfDashJs.rdfDashJsMod.Quad]): String = js.native
 }

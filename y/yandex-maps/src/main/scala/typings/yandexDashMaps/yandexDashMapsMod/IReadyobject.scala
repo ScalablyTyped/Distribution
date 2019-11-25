@@ -20,9 +20,9 @@ object IReadyobject {
     successCallback: () => Unit = null
   ): IReadyobject = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (errorCallback != null) __obj.updateDynamic("errorCallback")(js.Any.fromFunction0(errorCallback))
-    if (require != null) __obj.updateDynamic("require")(require)
+    if (require != null) __obj.updateDynamic("require")(require.asInstanceOf[js.Any])
     if (successCallback != null) __obj.updateDynamic("successCallback")(js.Any.fromFunction0(successCallback))
     __obj.asInstanceOf[IReadyobject]
   }

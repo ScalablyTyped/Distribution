@@ -80,19 +80,19 @@ object ListMultipartUploadsOutput {
     UploadIdMarker: String = null,
     Uploads: js.Array[_UnmarshalledMultipartUpload] = null
   ): ListMultipartUploadsOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (Bucket != null) __obj.updateDynamic("Bucket")(Bucket)
-    if (CommonPrefixes != null) __obj.updateDynamic("CommonPrefixes")(CommonPrefixes)
-    if (Delimiter != null) __obj.updateDynamic("Delimiter")(Delimiter)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (Bucket != null) __obj.updateDynamic("Bucket")(Bucket.asInstanceOf[js.Any])
+    if (CommonPrefixes != null) __obj.updateDynamic("CommonPrefixes")(CommonPrefixes.asInstanceOf[js.Any])
+    if (Delimiter != null) __obj.updateDynamic("Delimiter")(Delimiter.asInstanceOf[js.Any])
     if (EncodingType != null) __obj.updateDynamic("EncodingType")(EncodingType.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated)
-    if (KeyMarker != null) __obj.updateDynamic("KeyMarker")(KeyMarker)
+    if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated.asInstanceOf[js.Any])
+    if (KeyMarker != null) __obj.updateDynamic("KeyMarker")(KeyMarker.asInstanceOf[js.Any])
     if (MaxUploads != null) __obj.updateDynamic("MaxUploads")(MaxUploads.asInstanceOf[js.Any])
-    if (NextKeyMarker != null) __obj.updateDynamic("NextKeyMarker")(NextKeyMarker)
-    if (NextUploadIdMarker != null) __obj.updateDynamic("NextUploadIdMarker")(NextUploadIdMarker)
-    if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix)
-    if (UploadIdMarker != null) __obj.updateDynamic("UploadIdMarker")(UploadIdMarker)
-    if (Uploads != null) __obj.updateDynamic("Uploads")(Uploads)
+    if (NextKeyMarker != null) __obj.updateDynamic("NextKeyMarker")(NextKeyMarker.asInstanceOf[js.Any])
+    if (NextUploadIdMarker != null) __obj.updateDynamic("NextUploadIdMarker")(NextUploadIdMarker.asInstanceOf[js.Any])
+    if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix.asInstanceOf[js.Any])
+    if (UploadIdMarker != null) __obj.updateDynamic("UploadIdMarker")(UploadIdMarker.asInstanceOf[js.Any])
+    if (Uploads != null) __obj.updateDynamic("Uploads")(Uploads.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListMultipartUploadsOutput]
   }
 }

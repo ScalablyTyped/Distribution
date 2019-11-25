@@ -15,8 +15,8 @@ object PartialStateObject {
   @scala.inline
   def apply(acl: Partial[StateACL] = null, common: Partial[StateCommon] = null): PartialStateObject = {
     val __obj = js.Dynamic.literal()
-    if (acl != null) __obj.updateDynamic("acl")(acl)
-    if (common != null) __obj.updateDynamic("common")(common)
+    if (acl != null) __obj.updateDynamic("acl")(acl.asInstanceOf[js.Any])
+    if (common != null) __obj.updateDynamic("common")(common.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStateObject]
   }
 }

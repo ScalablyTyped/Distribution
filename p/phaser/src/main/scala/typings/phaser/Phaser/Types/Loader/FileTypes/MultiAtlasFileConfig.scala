@@ -47,13 +47,13 @@ object MultiAtlasFileConfig {
     path: String = null,
     textureXhrSettings: XHRSettingsObject = null
   ): MultiAtlasFileConfig = {
-    val __obj = js.Dynamic.literal(key = key)
-    if (atlasExtension != null) __obj.updateDynamic("atlasExtension")(atlasExtension)
-    if (atlasURL != null) __obj.updateDynamic("atlasURL")(atlasURL)
-    if (atlasXhrSettings != null) __obj.updateDynamic("atlasXhrSettings")(atlasXhrSettings)
-    if (baseURL != null) __obj.updateDynamic("baseURL")(baseURL)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (textureXhrSettings != null) __obj.updateDynamic("textureXhrSettings")(textureXhrSettings)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+    if (atlasExtension != null) __obj.updateDynamic("atlasExtension")(atlasExtension.asInstanceOf[js.Any])
+    if (atlasURL != null) __obj.updateDynamic("atlasURL")(atlasURL.asInstanceOf[js.Any])
+    if (atlasXhrSettings != null) __obj.updateDynamic("atlasXhrSettings")(atlasXhrSettings.asInstanceOf[js.Any])
+    if (baseURL != null) __obj.updateDynamic("baseURL")(baseURL.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (textureXhrSettings != null) __obj.updateDynamic("textureXhrSettings")(textureXhrSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiAtlasFileConfig]
   }
 }

@@ -70,14 +70,14 @@ object Anon_AlignBottom {
   ): Anon_AlignBottom = {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (event != null) __obj.updateDynamic("event")(event)
-    if (hideType != null) __obj.updateDynamic("hideType")(hideType)
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
+    if (hideType != null) __obj.updateDynamic("hideType")(hideType.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (showType != null) __obj.updateDynamic("showType")(showType)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (tpl != null) __obj.updateDynamic("tpl")(tpl)
+    if (showType != null) __obj.updateDynamic("showType")(showType.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (tpl != null) __obj.updateDynamic("tpl")(tpl.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AlignBottom]
   }

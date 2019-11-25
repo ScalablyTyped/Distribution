@@ -29,9 +29,9 @@ object IEditableTextState {
     val __obj = js.Dynamic.literal()
     if (inputHeight != null) __obj.updateDynamic("inputHeight")(inputHeight.asInstanceOf[js.Any])
     if (inputWidth != null) __obj.updateDynamic("inputWidth")(inputWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(isEditing)) __obj.updateDynamic("isEditing")(isEditing)
-    if (lastValue != null) __obj.updateDynamic("lastValue")(lastValue)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (!js.isUndefined(isEditing)) __obj.updateDynamic("isEditing")(isEditing.asInstanceOf[js.Any])
+    if (lastValue != null) __obj.updateDynamic("lastValue")(lastValue.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEditableTextState]
   }
 }

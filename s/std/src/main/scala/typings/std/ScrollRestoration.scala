@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait ScrollRestoration extends js.Object
 
+object ScrollRestoration {
+  @scala.inline
+  def auto: typings.std.stdStrings.auto = this.cast("auto")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def manual: typings.std.stdStrings.manual = this.cast("manual")
+}
+

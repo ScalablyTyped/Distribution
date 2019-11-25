@@ -15,7 +15,7 @@ trait ForwardConnectionArgs extends js.Object {
 object ForwardConnectionArgs {
   @scala.inline
   def apply(after: Anon_Type, first: Anon_Type): ForwardConnectionArgs = {
-    val __obj = js.Dynamic.literal(after = after, first = first)
+    val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], first = first.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ForwardConnectionArgs]
   }

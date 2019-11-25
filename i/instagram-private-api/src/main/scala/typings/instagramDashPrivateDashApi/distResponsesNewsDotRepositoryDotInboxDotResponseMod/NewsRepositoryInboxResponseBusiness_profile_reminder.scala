@@ -12,7 +12,7 @@ trait NewsRepositoryInboxResponseBusiness_profile_reminder extends js.Object {
 object NewsRepositoryInboxResponseBusiness_profile_reminder {
   @scala.inline
   def apply(subtitle: String, title: String): NewsRepositoryInboxResponseBusiness_profile_reminder = {
-    val __obj = js.Dynamic.literal(subtitle = subtitle, title = title)
+    val __obj = js.Dynamic.literal(subtitle = subtitle.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NewsRepositoryInboxResponseBusiness_profile_reminder]
   }

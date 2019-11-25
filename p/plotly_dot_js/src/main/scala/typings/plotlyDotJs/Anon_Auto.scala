@@ -41,7 +41,7 @@ object Anon_Auto {
     yanchor: auto | top | middle | bottom,
     yref: container | paper
   ): Anon_Auto = {
-    val __obj = js.Dynamic.literal(font = font, pad = pad, text = text, x = x, xanchor = xanchor.asInstanceOf[js.Any], xref = xref.asInstanceOf[js.Any], y = y, yanchor = yanchor.asInstanceOf[js.Any], yref = yref.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(font = font.asInstanceOf[js.Any], pad = pad.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], xanchor = xanchor.asInstanceOf[js.Any], xref = xref.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], yanchor = yanchor.asInstanceOf[js.Any], yref = yref.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Auto]
   }

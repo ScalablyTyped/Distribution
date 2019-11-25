@@ -62,7 +62,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Schema[T] extends EventEmitter {
   /** Object of currently defined methods on this schema. */
-  var methods: /* import warning: ImportType.apply c Unsupported type mapping: 
+  var methods: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ F in keyof T ]: T[F]}
     */ typings.mongoose.mongooseStrings.Schema with T = js.native
   /** The original object passed to the schema constructor */
@@ -101,7 +101,7 @@ trait Schema[T] extends EventEmitter {
     */
   def loadClass(model: js.Function): this.type = js.native
   def method(
-    methodObj: /* import warning: ImportType.apply c Unsupported type mapping: 
+    methodObj: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ F in keyof T ]: T[F]}
     */ typings.mongoose.mongooseStrings.Schema with T
   ): this.type = js.native
@@ -109,7 +109,7 @@ trait Schema[T] extends EventEmitter {
     * Adds an instance method to documents constructed from Models compiled from this schema.
     * If a hash of name/fn pairs is passed as the only argument, each name/fn pair will be added as methods.
     */
-  def method[F /* <: String */](method: F, fn: /* import warning: ImportType.apply Failed type conversion: T[F] */ js.Any): this.type = js.native
+  def method[F /* <: String */](method: F, fn: /* import warning: importer.ImportType#apply Failed type conversion: T[F] */ js.Any): this.type = js.native
   /**
     * Gets/sets schema paths.
     * Sets a path (if arity 2)

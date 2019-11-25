@@ -20,10 +20,10 @@ object RemarketingListShare {
     sharedAdvertiserIds: js.Array[String] = null
   ): RemarketingListShare = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (remarketingListId != null) __obj.updateDynamic("remarketingListId")(remarketingListId)
-    if (sharedAccountIds != null) __obj.updateDynamic("sharedAccountIds")(sharedAccountIds)
-    if (sharedAdvertiserIds != null) __obj.updateDynamic("sharedAdvertiserIds")(sharedAdvertiserIds)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (remarketingListId != null) __obj.updateDynamic("remarketingListId")(remarketingListId.asInstanceOf[js.Any])
+    if (sharedAccountIds != null) __obj.updateDynamic("sharedAccountIds")(sharedAccountIds.asInstanceOf[js.Any])
+    if (sharedAdvertiserIds != null) __obj.updateDynamic("sharedAdvertiserIds")(sharedAdvertiserIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemarketingListShare]
   }
 }

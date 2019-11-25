@@ -29,13 +29,13 @@ object Options {
     width: Int | Double = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (bgcolor != null) __obj.updateDynamic("bgcolor")(bgcolor)
-    if (!js.isUndefined(cachebust)) __obj.updateDynamic("cachebust")(cachebust)
+    if (bgcolor != null) __obj.updateDynamic("bgcolor")(bgcolor.asInstanceOf[js.Any])
+    if (!js.isUndefined(cachebust)) __obj.updateDynamic("cachebust")(cachebust.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (imagePlaceholder != null) __obj.updateDynamic("imagePlaceholder")(imagePlaceholder)
+    if (imagePlaceholder != null) __obj.updateDynamic("imagePlaceholder")(imagePlaceholder.asInstanceOf[js.Any])
     if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

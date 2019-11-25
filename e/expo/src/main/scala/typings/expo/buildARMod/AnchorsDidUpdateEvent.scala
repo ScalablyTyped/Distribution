@@ -12,7 +12,7 @@ trait AnchorsDidUpdateEvent extends js.Object {
 object AnchorsDidUpdateEvent {
   @scala.inline
   def apply(anchors: js.Array[Anchor], eventType: AnchorEventType): AnchorsDidUpdateEvent = {
-    val __obj = js.Dynamic.literal(anchors = anchors, eventType = eventType)
+    val __obj = js.Dynamic.literal(anchors = anchors.asInstanceOf[js.Any], eventType = eventType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AnchorsDidUpdateEvent]
   }

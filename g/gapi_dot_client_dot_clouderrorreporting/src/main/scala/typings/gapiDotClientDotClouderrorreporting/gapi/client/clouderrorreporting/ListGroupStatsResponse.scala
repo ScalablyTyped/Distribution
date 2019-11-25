@@ -30,9 +30,9 @@ object ListGroupStatsResponse {
     timeRangeBegin: String = null
   ): ListGroupStatsResponse = {
     val __obj = js.Dynamic.literal()
-    if (errorGroupStats != null) __obj.updateDynamic("errorGroupStats")(errorGroupStats)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (timeRangeBegin != null) __obj.updateDynamic("timeRangeBegin")(timeRangeBegin)
+    if (errorGroupStats != null) __obj.updateDynamic("errorGroupStats")(errorGroupStats.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (timeRangeBegin != null) __obj.updateDynamic("timeRangeBegin")(timeRangeBegin.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListGroupStatsResponse]
   }
 }

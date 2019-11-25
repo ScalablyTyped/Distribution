@@ -22,11 +22,11 @@ object Arm64CimmOperand {
     vas: Arm64Vas = null,
     vectorIndex: Int | Double = null
   ): Arm64CimmOperand = {
-    val __obj = js.Dynamic.literal(value = value)
-    __obj.updateDynamic("type")(`type`)
-    if (ext != null) __obj.updateDynamic("ext")(ext)
-    if (shift != null) __obj.updateDynamic("shift")(shift)
-    if (vas != null) __obj.updateDynamic("vas")(vas)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
+    if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
+    if (vas != null) __obj.updateDynamic("vas")(vas.asInstanceOf[js.Any])
     if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[Arm64CimmOperand]
   }

@@ -11,7 +11,7 @@ trait IDailyTrigger extends js.Object {
 object IDailyTrigger {
   @scala.inline
   def apply(DaysInterval: Double): IDailyTrigger = {
-    val __obj = js.Dynamic.literal(DaysInterval = DaysInterval)
+    val __obj = js.Dynamic.literal(DaysInterval = DaysInterval.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IDailyTrigger]
   }

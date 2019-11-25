@@ -23,7 +23,7 @@ object AsObject {
       ]
     ]
   ): AsObject = {
-    val __obj = js.Dynamic.literal(fieldsMap = fieldsMap)
+    val __obj = js.Dynamic.literal(fieldsMap = fieldsMap.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AsObject]
   }

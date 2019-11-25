@@ -25,12 +25,12 @@ object RequestMatcher {
     url: UrlFilter = null
   ): RequestMatcher = {
     val __obj = js.Dynamic.literal()
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
-    if (excludeContentType != null) __obj.updateDynamic("excludeContentType")(excludeContentType)
-    if (excludeResponseHeader != null) __obj.updateDynamic("excludeResponseHeader")(excludeResponseHeader)
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType)
-    if (responseHeaders != null) __obj.updateDynamic("responseHeaders")(responseHeaders)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
+    if (excludeContentType != null) __obj.updateDynamic("excludeContentType")(excludeContentType.asInstanceOf[js.Any])
+    if (excludeResponseHeader != null) __obj.updateDynamic("excludeResponseHeader")(excludeResponseHeader.asInstanceOf[js.Any])
+    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
+    if (responseHeaders != null) __obj.updateDynamic("responseHeaders")(responseHeaders.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestMatcher]
   }
 }

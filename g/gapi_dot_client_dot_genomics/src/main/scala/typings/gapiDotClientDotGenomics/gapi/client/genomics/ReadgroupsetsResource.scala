@@ -94,7 +94,7 @@ object ReadgroupsetsResource {
     patch: Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPp => Request[ReadGroupSet],
     search: Anon_Accesstoken => Request[SearchReadGroupSetsResponse]
   ): ReadgroupsetsResource = {
-    val __obj = js.Dynamic.literal(coveragebuckets = coveragebuckets, delete = js.Any.fromFunction1(delete), export = js.Any.fromFunction1(export), get = js.Any.fromFunction1(get), patch = js.Any.fromFunction1(patch), search = js.Any.fromFunction1(search))
+    val __obj = js.Dynamic.literal(coveragebuckets = coveragebuckets.asInstanceOf[js.Any], delete = js.Any.fromFunction1(delete), export = js.Any.fromFunction1(export), get = js.Any.fromFunction1(get), patch = js.Any.fromFunction1(patch), search = js.Any.fromFunction1(search))
     __obj.updateDynamic("import")(js.Any.fromFunction1(`import`))
     __obj.asInstanceOf[ReadgroupsetsResource]
   }

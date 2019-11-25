@@ -14,9 +14,9 @@ object Anon_DisplayName {
   @scala.inline
   def apply(displayName: String = null, label_with_op: String = null, name: String = null): Anon_DisplayName = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (label_with_op != null) __obj.updateDynamic("label_with_op")(label_with_op)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (label_with_op != null) __obj.updateDynamic("label_with_op")(label_with_op.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DisplayName]
   }
 }

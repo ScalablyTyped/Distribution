@@ -12,8 +12,8 @@ trait UndefinedLiteral extends Node {
 object UndefinedLiteral {
   @scala.inline
   def apply(loc: SourceLocation, `type`: typings.handlebars.handlebarsStrings.UndefinedLiteral): UndefinedLiteral = {
-    val __obj = js.Dynamic.literal(loc = loc)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(loc = loc.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UndefinedLiteral]
   }
 }

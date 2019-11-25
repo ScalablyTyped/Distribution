@@ -30,11 +30,11 @@ object AuthenticationMiddlewareOptions {
     onNotAuthenticatedHandler: (/* request */ Request[ParamsDictionary], /* resonse */ Response, /* next */ NextFunction, /* logger */ Logger) => Unit = null,
     publicEndpoints: js.Array[String] = null
   ): AuthenticationMiddlewareOptions = {
-    val __obj = js.Dynamic.literal(tokenInfoEndpoint = tokenInfoEndpoint)
+    val __obj = js.Dynamic.literal(tokenInfoEndpoint = tokenInfoEndpoint.asInstanceOf[js.Any])
     if (getTokenInfo != null) __obj.updateDynamic("getTokenInfo")(js.Any.fromFunction3(getTokenInfo))
-    if (logger != null) __obj.updateDynamic("logger")(logger)
+    if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
     if (onNotAuthenticatedHandler != null) __obj.updateDynamic("onNotAuthenticatedHandler")(js.Any.fromFunction4(onNotAuthenticatedHandler))
-    if (publicEndpoints != null) __obj.updateDynamic("publicEndpoints")(publicEndpoints)
+    if (publicEndpoints != null) __obj.updateDynamic("publicEndpoints")(publicEndpoints.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthenticationMiddlewareOptions]
   }
 }

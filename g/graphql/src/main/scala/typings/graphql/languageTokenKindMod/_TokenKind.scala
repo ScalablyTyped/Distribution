@@ -76,7 +76,7 @@ object _TokenKind {
     SPREAD: DOTDOTDOT,
     STRING: String
   ): _TokenKind = {
-    val __obj = js.Dynamic.literal(AMP = AMP, AT = AT, BANG = BANG, BLOCK_STRING = BLOCK_STRING, BRACE_L = BRACE_L, BRACE_R = BRACE_R, BRACKET_L = BRACKET_L, BRACKET_R = BRACKET_R, COLON = COLON, COMMENT = COMMENT, DOLLAR = DOLLAR, EOF = EOF, EQUALS = EQUALS, FLOAT = FLOAT, INT = INT, NAME = NAME, PAREN_L = PAREN_L, PAREN_R = PAREN_R, PIPE = PIPE, SOF = SOF, SPREAD = SPREAD, STRING = STRING)
+    val __obj = js.Dynamic.literal(AMP = AMP.asInstanceOf[js.Any], AT = AT.asInstanceOf[js.Any], BANG = BANG.asInstanceOf[js.Any], BLOCK_STRING = BLOCK_STRING.asInstanceOf[js.Any], BRACE_L = BRACE_L.asInstanceOf[js.Any], BRACE_R = BRACE_R.asInstanceOf[js.Any], BRACKET_L = BRACKET_L.asInstanceOf[js.Any], BRACKET_R = BRACKET_R.asInstanceOf[js.Any], COLON = COLON.asInstanceOf[js.Any], COMMENT = COMMENT.asInstanceOf[js.Any], DOLLAR = DOLLAR.asInstanceOf[js.Any], EOF = EOF.asInstanceOf[js.Any], EQUALS = EQUALS.asInstanceOf[js.Any], FLOAT = FLOAT.asInstanceOf[js.Any], INT = INT.asInstanceOf[js.Any], NAME = NAME.asInstanceOf[js.Any], PAREN_L = PAREN_L.asInstanceOf[js.Any], PAREN_R = PAREN_R.asInstanceOf[js.Any], PIPE = PIPE.asInstanceOf[js.Any], SOF = SOF.asInstanceOf[js.Any], SPREAD = SPREAD.asInstanceOf[js.Any], STRING = STRING.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_TokenKind]
   }

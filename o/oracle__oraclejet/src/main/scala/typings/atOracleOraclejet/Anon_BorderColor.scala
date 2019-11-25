@@ -72,7 +72,7 @@ object Anon_BorderColor {
     text: String,
     markerShape: circle | diamond | human | plus | rectangle | square | star | triangleDown | triangleUp | String = null
   ): Anon_BorderColor = {
-    val __obj = js.Dynamic.literal(borderColor = borderColor, categories = categories, categoryVisibility = categoryVisibility.asInstanceOf[js.Any], color = color, id = id, lineStyle = lineStyle.asInstanceOf[js.Any], lineWidth = lineWidth, markerColor = markerColor, pattern = pattern.asInstanceOf[js.Any], shortDesc = shortDesc, source = source, symbolType = symbolType.asInstanceOf[js.Any], text = text)
+    val __obj = js.Dynamic.literal(borderColor = borderColor.asInstanceOf[js.Any], categories = categories.asInstanceOf[js.Any], categoryVisibility = categoryVisibility.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], lineStyle = lineStyle.asInstanceOf[js.Any], lineWidth = lineWidth.asInstanceOf[js.Any], markerColor = markerColor.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], shortDesc = shortDesc.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], symbolType = symbolType.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     if (markerShape != null) __obj.updateDynamic("markerShape")(markerShape.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BorderColor]
   }

@@ -12,7 +12,7 @@ trait MusicRepositoryMoodsResponseRootObject extends js.Object {
 object MusicRepositoryMoodsResponseRootObject {
   @scala.inline
   def apply(items: js.Array[MusicRepositoryMoodsResponseItemsItem], status: String): MusicRepositoryMoodsResponseRootObject = {
-    val __obj = js.Dynamic.literal(items = items, status = status)
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MusicRepositoryMoodsResponseRootObject]
   }

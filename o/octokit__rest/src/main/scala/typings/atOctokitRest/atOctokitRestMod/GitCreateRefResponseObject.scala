@@ -13,8 +13,8 @@ trait GitCreateRefResponseObject extends js.Object {
 object GitCreateRefResponseObject {
   @scala.inline
   def apply(sha: String, `type`: String, url: String): GitCreateRefResponseObject = {
-    val __obj = js.Dynamic.literal(sha = sha, url = url)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(sha = sha.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitCreateRefResponseObject]
   }
 }

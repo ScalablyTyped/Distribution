@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "light-sdk"
-version := "1.0-dt-20191029Z-1771a6"
+version := "1.0-dt-20191029Z-5eda15"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

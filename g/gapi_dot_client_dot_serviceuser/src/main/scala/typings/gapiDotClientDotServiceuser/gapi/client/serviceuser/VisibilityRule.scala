@@ -35,8 +35,8 @@ object VisibilityRule {
   @scala.inline
   def apply(restriction: String = null, selector: String = null): VisibilityRule = {
     val __obj = js.Dynamic.literal()
-    if (restriction != null) __obj.updateDynamic("restriction")(restriction)
-    if (selector != null) __obj.updateDynamic("selector")(selector)
+    if (restriction != null) __obj.updateDynamic("restriction")(restriction.asInstanceOf[js.Any])
+    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
     __obj.asInstanceOf[VisibilityRule]
   }
 }

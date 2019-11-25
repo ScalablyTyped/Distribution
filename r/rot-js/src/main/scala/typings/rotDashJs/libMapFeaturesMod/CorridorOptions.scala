@@ -11,7 +11,7 @@ trait CorridorOptions extends js.Object {
 object CorridorOptions {
   @scala.inline
   def apply(corridorLength: js.Tuple2[Double, Double]): CorridorOptions = {
-    val __obj = js.Dynamic.literal(corridorLength = corridorLength)
+    val __obj = js.Dynamic.literal(corridorLength = corridorLength.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CorridorOptions]
   }

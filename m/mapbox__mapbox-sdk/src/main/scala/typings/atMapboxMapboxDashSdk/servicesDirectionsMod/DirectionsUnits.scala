@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait DirectionsUnits extends js.Object
 
+object DirectionsUnits {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def imperial: typings.atMapboxMapboxDashSdk.atMapboxMapboxDashSdkStrings.imperial = this.cast("imperial")
+  @scala.inline
+  def metric: typings.atMapboxMapboxDashSdk.atMapboxMapboxDashSdkStrings.metric = this.cast("metric")
+}
+

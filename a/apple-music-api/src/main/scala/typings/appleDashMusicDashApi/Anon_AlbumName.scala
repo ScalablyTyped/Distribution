@@ -57,16 +57,16 @@ object Anon_AlbumName {
     playParams: PlayParameters = null,
     workName: String = null
   ): Anon_AlbumName = {
-    val __obj = js.Dynamic.literal(albumName = albumName, artistName = artistName, discNumber = discNumber, durationInMillis = durationInMillis, genreNames = genreNames, hasLyrics = hasLyrics, isrc = isrc, name = name, previews = previews, releaseDate = releaseDate, trackNumber = trackNumber, url = url)
-    if (artwork != null) __obj.updateDynamic("artwork")(artwork)
-    if (composerName != null) __obj.updateDynamic("composerName")(composerName)
-    if (contentRating != null) __obj.updateDynamic("contentRating")(contentRating)
-    if (editorialNotes != null) __obj.updateDynamic("editorialNotes")(editorialNotes)
+    val __obj = js.Dynamic.literal(albumName = albumName.asInstanceOf[js.Any], artistName = artistName.asInstanceOf[js.Any], discNumber = discNumber.asInstanceOf[js.Any], durationInMillis = durationInMillis.asInstanceOf[js.Any], genreNames = genreNames.asInstanceOf[js.Any], hasLyrics = hasLyrics.asInstanceOf[js.Any], isrc = isrc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], previews = previews.asInstanceOf[js.Any], releaseDate = releaseDate.asInstanceOf[js.Any], trackNumber = trackNumber.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (artwork != null) __obj.updateDynamic("artwork")(artwork.asInstanceOf[js.Any])
+    if (composerName != null) __obj.updateDynamic("composerName")(composerName.asInstanceOf[js.Any])
+    if (contentRating != null) __obj.updateDynamic("contentRating")(contentRating.asInstanceOf[js.Any])
+    if (editorialNotes != null) __obj.updateDynamic("editorialNotes")(editorialNotes.asInstanceOf[js.Any])
     if (movementCount != null) __obj.updateDynamic("movementCount")(movementCount.asInstanceOf[js.Any])
-    if (movementName != null) __obj.updateDynamic("movementName")(movementName)
-    if (movementNumber != null) __obj.updateDynamic("movementNumber")(movementNumber)
-    if (playParams != null) __obj.updateDynamic("playParams")(playParams)
-    if (workName != null) __obj.updateDynamic("workName")(workName)
+    if (movementName != null) __obj.updateDynamic("movementName")(movementName.asInstanceOf[js.Any])
+    if (movementNumber != null) __obj.updateDynamic("movementNumber")(movementNumber.asInstanceOf[js.Any])
+    if (playParams != null) __obj.updateDynamic("playParams")(playParams.asInstanceOf[js.Any])
+    if (workName != null) __obj.updateDynamic("workName")(workName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AlbumName]
   }
 }

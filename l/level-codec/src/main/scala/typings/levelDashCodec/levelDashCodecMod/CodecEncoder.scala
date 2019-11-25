@@ -14,8 +14,8 @@ trait CodecEncoder extends js.Object {
 object CodecEncoder {
   @scala.inline
   def apply(buffer: Boolean, decode: js.Any => js.Any, encode: js.Any => js.Any, `type`: String): CodecEncoder = {
-    val __obj = js.Dynamic.literal(buffer = buffer, decode = js.Any.fromFunction1(decode), encode = js.Any.fromFunction1(encode))
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], decode = js.Any.fromFunction1(decode), encode = js.Any.fromFunction1(encode))
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodecEncoder]
   }
 }

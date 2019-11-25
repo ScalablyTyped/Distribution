@@ -21,11 +21,11 @@ object NotifyOptions {
     title: String = null,
     url: String = null
   ): NotifyOptions = {
-    val __obj = js.Dynamic.literal(message = message)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (url != null) __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotifyOptions]
   }
 }

@@ -34,6 +34,6 @@ object bitcoinjsDashLibNumbers {
   @scala.inline
   def `3`: `3` = 3.asInstanceOf[`3`]
   @scala.inline
-  def _4294967295: _4294967295 = _4294967295.asInstanceOf[_4294967295]
+  def _4294967295: _4294967295 = 4294967295.0.asInstanceOf[_4294967295]
 }
 

@@ -73,7 +73,7 @@ object DaemonSetStatus {
     observedGeneration: Double,
     updatedNumberScheduled: Double
   ): DaemonSetStatus = {
-    val __obj = js.Dynamic.literal(collisionCount = collisionCount, conditions = conditions, currentNumberScheduled = currentNumberScheduled, desiredNumberScheduled = desiredNumberScheduled, numberAvailable = numberAvailable, numberMisscheduled = numberMisscheduled, numberReady = numberReady, numberUnavailable = numberUnavailable, observedGeneration = observedGeneration, updatedNumberScheduled = updatedNumberScheduled)
+    val __obj = js.Dynamic.literal(collisionCount = collisionCount.asInstanceOf[js.Any], conditions = conditions.asInstanceOf[js.Any], currentNumberScheduled = currentNumberScheduled.asInstanceOf[js.Any], desiredNumberScheduled = desiredNumberScheduled.asInstanceOf[js.Any], numberAvailable = numberAvailable.asInstanceOf[js.Any], numberMisscheduled = numberMisscheduled.asInstanceOf[js.Any], numberReady = numberReady.asInstanceOf[js.Any], numberUnavailable = numberUnavailable.asInstanceOf[js.Any], observedGeneration = observedGeneration.asInstanceOf[js.Any], updatedNumberScheduled = updatedNumberScheduled.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DaemonSetStatus]
   }

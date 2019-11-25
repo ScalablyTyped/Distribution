@@ -20,10 +20,10 @@ object IHrefOptions {
     relative: typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IState = null
   ): IHrefOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(absolute)) __obj.updateDynamic("absolute")(absolute)
-    if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit)
-    if (!js.isUndefined(lossy)) __obj.updateDynamic("lossy")(lossy)
-    if (relative != null) __obj.updateDynamic("relative")(relative)
+    if (!js.isUndefined(absolute)) __obj.updateDynamic("absolute")(absolute.asInstanceOf[js.Any])
+    if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit.asInstanceOf[js.Any])
+    if (!js.isUndefined(lossy)) __obj.updateDynamic("lossy")(lossy.asInstanceOf[js.Any])
+    if (relative != null) __obj.updateDynamic("relative")(relative.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHrefOptions]
   }
 }

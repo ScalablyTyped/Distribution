@@ -12,8 +12,8 @@ trait FeedItunesCategory extends js.Object {
 object FeedItunesCategory {
   @scala.inline
   def apply(text: String, subcats: js.Array[FeedItunesCategory] = null): FeedItunesCategory = {
-    val __obj = js.Dynamic.literal(text = text)
-    if (subcats != null) __obj.updateDynamic("subcats")(subcats)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
+    if (subcats != null) __obj.updateDynamic("subcats")(subcats.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeedItunesCategory]
   }
 }

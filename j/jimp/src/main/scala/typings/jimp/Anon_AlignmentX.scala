@@ -13,7 +13,7 @@ trait Anon_AlignmentX extends js.Object {
 object Anon_AlignmentX {
   @scala.inline
   def apply(alignmentX: Double, alignmentY: Double, text: String): Anon_AlignmentX = {
-    val __obj = js.Dynamic.literal(alignmentX = alignmentX, alignmentY = alignmentY, text = text)
+    val __obj = js.Dynamic.literal(alignmentX = alignmentX.asInstanceOf[js.Any], alignmentY = alignmentY.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AlignmentX]
   }

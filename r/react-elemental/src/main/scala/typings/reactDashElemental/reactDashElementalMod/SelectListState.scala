@@ -22,7 +22,7 @@ object SelectListState {
     selectedOption: Anon_LabelValue,
     highlightedIdx: Int | Double = null
   ): SelectListState = {
-    val __obj = js.Dynamic.literal(isExpanded = isExpanded, isFocused = isFocused, isHovered = isHovered, selectedOption = selectedOption)
+    val __obj = js.Dynamic.literal(isExpanded = isExpanded.asInstanceOf[js.Any], isFocused = isFocused.asInstanceOf[js.Any], isHovered = isHovered.asInstanceOf[js.Any], selectedOption = selectedOption.asInstanceOf[js.Any])
     if (highlightedIdx != null) __obj.updateDynamic("highlightedIdx")(highlightedIdx.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectListState]
   }

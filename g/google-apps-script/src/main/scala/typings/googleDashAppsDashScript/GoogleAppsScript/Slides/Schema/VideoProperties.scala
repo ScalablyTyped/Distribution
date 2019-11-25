@@ -22,10 +22,10 @@ object VideoProperties {
     start: Int | Double = null
   ): VideoProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoPlay)) __obj.updateDynamic("autoPlay")(autoPlay)
+    if (!js.isUndefined(autoPlay)) __obj.updateDynamic("autoPlay")(autoPlay.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (!js.isUndefined(mute)) __obj.updateDynamic("mute")(mute)
-    if (outline != null) __obj.updateDynamic("outline")(outline)
+    if (!js.isUndefined(mute)) __obj.updateDynamic("mute")(mute.asInstanceOf[js.Any])
+    if (outline != null) __obj.updateDynamic("outline")(outline.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoProperties]
   }

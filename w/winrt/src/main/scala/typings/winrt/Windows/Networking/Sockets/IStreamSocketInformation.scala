@@ -33,7 +33,7 @@ object IStreamSocketInformation {
     roundTripTimeStatistics: RoundTripTimeStatistics,
     sessionKey: IBuffer
   ): IStreamSocketInformation = {
-    val __obj = js.Dynamic.literal(bandwidthStatistics = bandwidthStatistics, localAddress = localAddress, localPort = localPort, protectionLevel = protectionLevel, remoteAddress = remoteAddress, remoteHostName = remoteHostName, remotePort = remotePort, remoteServiceName = remoteServiceName, roundTripTimeStatistics = roundTripTimeStatistics, sessionKey = sessionKey)
+    val __obj = js.Dynamic.literal(bandwidthStatistics = bandwidthStatistics.asInstanceOf[js.Any], localAddress = localAddress.asInstanceOf[js.Any], localPort = localPort.asInstanceOf[js.Any], protectionLevel = protectionLevel.asInstanceOf[js.Any], remoteAddress = remoteAddress.asInstanceOf[js.Any], remoteHostName = remoteHostName.asInstanceOf[js.Any], remotePort = remotePort.asInstanceOf[js.Any], remoteServiceName = remoteServiceName.asInstanceOf[js.Any], roundTripTimeStatistics = roundTripTimeStatistics.asInstanceOf[js.Any], sessionKey = sessionKey.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IStreamSocketInformation]
   }

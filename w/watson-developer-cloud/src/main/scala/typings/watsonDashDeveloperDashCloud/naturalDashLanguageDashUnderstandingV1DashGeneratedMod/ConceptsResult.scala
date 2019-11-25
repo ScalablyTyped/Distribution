@@ -18,9 +18,9 @@ object ConceptsResult {
   @scala.inline
   def apply(dbpedia_resource: String = null, relevance: Int | Double = null, text: String = null): ConceptsResult = {
     val __obj = js.Dynamic.literal()
-    if (dbpedia_resource != null) __obj.updateDynamic("dbpedia_resource")(dbpedia_resource)
+    if (dbpedia_resource != null) __obj.updateDynamic("dbpedia_resource")(dbpedia_resource.asInstanceOf[js.Any])
     if (relevance != null) __obj.updateDynamic("relevance")(relevance.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConceptsResult]
   }
 }

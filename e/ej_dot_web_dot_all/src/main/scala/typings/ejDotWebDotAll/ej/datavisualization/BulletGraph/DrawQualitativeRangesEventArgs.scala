@@ -28,10 +28,10 @@ object DrawQualitativeRangesEventArgs {
     rangeOptions: js.Any = null
   ): DrawQualitativeRangesEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (Object != null) __obj.updateDynamic("Object")(Object)
+    if (Object != null) __obj.updateDynamic("Object")(Object.asInstanceOf[js.Any])
     if (rangeEndValue != null) __obj.updateDynamic("rangeEndValue")(rangeEndValue.asInstanceOf[js.Any])
     if (rangeIndex != null) __obj.updateDynamic("rangeIndex")(rangeIndex.asInstanceOf[js.Any])
-    if (rangeOptions != null) __obj.updateDynamic("rangeOptions")(rangeOptions)
+    if (rangeOptions != null) __obj.updateDynamic("rangeOptions")(rangeOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawQualitativeRangesEventArgs]
   }
 }

@@ -18,13 +18,12 @@ object IInkStroke {
   @scala.inline
   def apply(
     boundingRect: Rect,
-    clone: () => InkStroke,
     drawingAttributes: InkDrawingAttributes,
     getRenderingSegments: () => IVectorView[InkStrokeRenderingSegment],
     recognized: Boolean,
     selected: Boolean
   ): IInkStroke = {
-    val __obj = js.Dynamic.literal(boundingRect = boundingRect, clone = js.Any.fromFunction0(clone), drawingAttributes = drawingAttributes, getRenderingSegments = js.Any.fromFunction0(getRenderingSegments), recognized = recognized, selected = selected)
+    val __obj = js.Dynamic.literal(boundingRect = boundingRect.asInstanceOf[js.Any], drawingAttributes = drawingAttributes.asInstanceOf[js.Any], getRenderingSegments = js.Any.fromFunction0(getRenderingSegments), recognized = recognized.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IInkStroke]
   }

@@ -28,14 +28,14 @@ object UserProfile {
     userName: String = null
   ): UserProfile = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId)
-    if (accountName != null) __obj.updateDynamic("accountName")(accountName)
-    if (etag != null) __obj.updateDynamic("etag")(etag)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (profileId != null) __obj.updateDynamic("profileId")(profileId)
-    if (subAccountId != null) __obj.updateDynamic("subAccountId")(subAccountId)
-    if (subAccountName != null) __obj.updateDynamic("subAccountName")(subAccountName)
-    if (userName != null) __obj.updateDynamic("userName")(userName)
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
+    if (accountName != null) __obj.updateDynamic("accountName")(accountName.asInstanceOf[js.Any])
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (profileId != null) __obj.updateDynamic("profileId")(profileId.asInstanceOf[js.Any])
+    if (subAccountId != null) __obj.updateDynamic("subAccountId")(subAccountId.asInstanceOf[js.Any])
+    if (subAccountName != null) __obj.updateDynamic("subAccountName")(subAccountName.asInstanceOf[js.Any])
+    if (userName != null) __obj.updateDynamic("userName")(userName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserProfile]
   }
 }

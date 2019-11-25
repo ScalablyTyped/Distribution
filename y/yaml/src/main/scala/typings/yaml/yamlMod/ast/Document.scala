@@ -85,12 +85,11 @@ object Document {
     anchors: Anchors,
     errors: js.Array[YAMLError],
     listNonDefaultTags: () => js.Array[String],
-    parse: typings.yaml.yamlMod.cst.Document => Document,
+    parse: typings.yaml.yamlMod.cst.Document => typings.yaml.yamlMod.ast.Document,
     schema: Schema,
     setTagPrefix: (String, String) => Unit,
     tagPrefixes: js.Array[Prefix],
     toJSON: () => js.Any,
-    toString: () => String,
     `type`: DOCUMENT,
     warnings: js.Array[YAMLWarning],
     comment: String = null,
@@ -101,15 +100,15 @@ object Document {
     spaceBefore: js.UndefOr[Boolean] = js.undefined,
     version: String = null
   ): Document = {
-    val __obj = js.Dynamic.literal(anchors = anchors, errors = errors, listNonDefaultTags = js.Any.fromFunction0(listNonDefaultTags), parse = js.Any.fromFunction1(parse), schema = schema, setTagPrefix = js.Any.fromFunction2(setTagPrefix), tagPrefixes = tagPrefixes, toJSON = js.Any.fromFunction0(toJSON), toString = js.Any.fromFunction0(toString), warnings = warnings)
-    __obj.updateDynamic("type")(`type`)
-    if (comment != null) __obj.updateDynamic("comment")(comment)
-    if (commentBefore != null) __obj.updateDynamic("commentBefore")(commentBefore)
-    if (contents != null) __obj.updateDynamic("contents")(contents)
-    if (cstNode != null) __obj.updateDynamic("cstNode")(cstNode)
-    if (range != null) __obj.updateDynamic("range")(range)
-    if (!js.isUndefined(spaceBefore)) __obj.updateDynamic("spaceBefore")(spaceBefore)
-    if (version != null) __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(anchors = anchors.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any], listNonDefaultTags = js.Any.fromFunction0(listNonDefaultTags), parse = js.Any.fromFunction1(parse), schema = schema.asInstanceOf[js.Any], setTagPrefix = js.Any.fromFunction2(setTagPrefix), tagPrefixes = tagPrefixes.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), warnings = warnings.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (commentBefore != null) __obj.updateDynamic("commentBefore")(commentBefore.asInstanceOf[js.Any])
+    if (contents != null) __obj.updateDynamic("contents")(contents.asInstanceOf[js.Any])
+    if (cstNode != null) __obj.updateDynamic("cstNode")(cstNode.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (!js.isUndefined(spaceBefore)) __obj.updateDynamic("spaceBefore")(spaceBefore.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Document]
   }
 }

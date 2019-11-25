@@ -25,10 +25,10 @@ object OptionConfig {
     `type`: BooleanConstructor | StringConstructor | NumberConstructor = null
   ): OptionConfig = {
     val __obj = js.Dynamic.literal()
-    if (alias != null) __obj.updateDynamic("alias")(alias)
-    if (default != null) __obj.updateDynamic("default")(default)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (!js.isUndefined(hide)) __obj.updateDynamic("hide")(hide)
+    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(hide)) __obj.updateDynamic("hide")(hide.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionConfig]
   }

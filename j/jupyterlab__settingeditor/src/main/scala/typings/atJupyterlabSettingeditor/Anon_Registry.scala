@@ -23,7 +23,7 @@ trait Anon_Registry extends js.Object {
 object Anon_Registry {
   @scala.inline
   def apply(registry: CommandRegistry, revert: String, save: String): Anon_Registry = {
-    val __obj = js.Dynamic.literal(registry = registry, revert = revert, save = save)
+    val __obj = js.Dynamic.literal(registry = registry.asInstanceOf[js.Any], revert = revert.asInstanceOf[js.Any], save = save.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Registry]
   }

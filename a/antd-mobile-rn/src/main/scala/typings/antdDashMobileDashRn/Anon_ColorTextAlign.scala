@@ -12,7 +12,7 @@ trait Anon_ColorTextAlign extends js.Object {
 object Anon_ColorTextAlign {
   @scala.inline
   def apply(color: String, textAlign: String): Anon_ColorTextAlign = {
-    val __obj = js.Dynamic.literal(color = color, textAlign = textAlign)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], textAlign = textAlign.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ColorTextAlign]
   }

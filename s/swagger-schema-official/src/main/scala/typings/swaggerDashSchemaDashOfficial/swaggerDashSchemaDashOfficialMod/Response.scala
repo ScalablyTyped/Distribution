@@ -20,10 +20,10 @@ object Response {
     headers: StringDictionary[Header] = null,
     schema: Schema = null
   ): Response = {
-    val __obj = js.Dynamic.literal(description = description)
-    if (examples != null) __obj.updateDynamic("examples")(examples)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (schema != null) __obj.updateDynamic("schema")(schema)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any])
+    if (examples != null) __obj.updateDynamic("examples")(examples.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
     __obj.asInstanceOf[Response]
   }
 }

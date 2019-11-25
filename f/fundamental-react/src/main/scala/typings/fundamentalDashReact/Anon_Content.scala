@@ -18,7 +18,7 @@ object Anon_Content {
     Content: FunctionComponent[ProductTileContentProps],
     Media: FunctionComponent[ProductTileMediaProps]
   ): Anon_Content = {
-    val __obj = js.Dynamic.literal(Content = Content, Media = Media)
+    val __obj = js.Dynamic.literal(Content = Content.asInstanceOf[js.Any], Media = Media.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Content]
   }

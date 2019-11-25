@@ -44,11 +44,11 @@ object ISpawnOptions {
     opts: Anon_Custom = null
   ): ISpawnOptions = {
     val __obj = js.Dynamic.literal()
-    if (args != null) __obj.updateDynamic("args")(args)
-    if (cmd != null) __obj.updateDynamic("cmd")(cmd)
-    if (fallback != null) __obj.updateDynamic("fallback")(fallback)
-    if (!js.isUndefined(grunt)) __obj.updateDynamic("grunt")(grunt)
-    if (opts != null) __obj.updateDynamic("opts")(opts)
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (cmd != null) __obj.updateDynamic("cmd")(cmd.asInstanceOf[js.Any])
+    if (fallback != null) __obj.updateDynamic("fallback")(fallback.asInstanceOf[js.Any])
+    if (!js.isUndefined(grunt)) __obj.updateDynamic("grunt")(grunt.asInstanceOf[js.Any])
+    if (opts != null) __obj.updateDynamic("opts")(opts.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISpawnOptions]
   }
 }

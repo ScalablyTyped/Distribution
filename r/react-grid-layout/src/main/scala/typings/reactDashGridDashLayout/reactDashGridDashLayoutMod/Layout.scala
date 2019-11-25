@@ -77,16 +77,16 @@ object Layout {
     moved: js.UndefOr[Boolean] = js.undefined,
     static: js.UndefOr[Boolean] = js.undefined
   ): Layout = {
-    val __obj = js.Dynamic.literal(h = h, w = w, x = x, y = y)
-    if (i != null) __obj.updateDynamic("i")(i)
-    if (!js.isUndefined(isDraggable)) __obj.updateDynamic("isDraggable")(isDraggable)
-    if (!js.isUndefined(isResizable)) __obj.updateDynamic("isResizable")(isResizable)
+    val __obj = js.Dynamic.literal(h = h.asInstanceOf[js.Any], w = w.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    if (i != null) __obj.updateDynamic("i")(i.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDraggable)) __obj.updateDynamic("isDraggable")(isDraggable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isResizable)) __obj.updateDynamic("isResizable")(isResizable.asInstanceOf[js.Any])
     if (maxH != null) __obj.updateDynamic("maxH")(maxH.asInstanceOf[js.Any])
     if (maxW != null) __obj.updateDynamic("maxW")(maxW.asInstanceOf[js.Any])
     if (minH != null) __obj.updateDynamic("minH")(minH.asInstanceOf[js.Any])
     if (minW != null) __obj.updateDynamic("minW")(minW.asInstanceOf[js.Any])
-    if (!js.isUndefined(moved)) __obj.updateDynamic("moved")(moved)
-    if (!js.isUndefined(static)) __obj.updateDynamic("static")(static)
+    if (!js.isUndefined(moved)) __obj.updateDynamic("moved")(moved.asInstanceOf[js.Any])
+    if (!js.isUndefined(static)) __obj.updateDynamic("static")(static.asInstanceOf[js.Any])
     __obj.asInstanceOf[Layout]
   }
 }

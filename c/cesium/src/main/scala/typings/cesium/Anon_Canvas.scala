@@ -39,17 +39,17 @@ object Anon_Canvas {
     shadows: js.UndefOr[Boolean] = js.undefined,
     terrainExaggeration: Int | Double = null
   ): Anon_Canvas = {
-    val __obj = js.Dynamic.literal(canvas = canvas)
-    if (contextOptions != null) __obj.updateDynamic("contextOptions")(contextOptions)
-    if (creditContainer != null) __obj.updateDynamic("creditContainer")(creditContainer)
-    if (creditViewport != null) __obj.updateDynamic("creditViewport")(creditViewport)
-    if (mapMode2D != null) __obj.updateDynamic("mapMode2D")(mapMode2D)
-    if (mapProjection != null) __obj.updateDynamic("mapProjection")(mapProjection)
+    val __obj = js.Dynamic.literal(canvas = canvas.asInstanceOf[js.Any])
+    if (contextOptions != null) __obj.updateDynamic("contextOptions")(contextOptions.asInstanceOf[js.Any])
+    if (creditContainer != null) __obj.updateDynamic("creditContainer")(creditContainer.asInstanceOf[js.Any])
+    if (creditViewport != null) __obj.updateDynamic("creditViewport")(creditViewport.asInstanceOf[js.Any])
+    if (mapMode2D != null) __obj.updateDynamic("mapMode2D")(mapMode2D.asInstanceOf[js.Any])
+    if (mapProjection != null) __obj.updateDynamic("mapProjection")(mapProjection.asInstanceOf[js.Any])
     if (maximumRenderTimeChange != null) __obj.updateDynamic("maximumRenderTimeChange")(maximumRenderTimeChange.asInstanceOf[js.Any])
-    if (!js.isUndefined(orderIndependentTranslucency)) __obj.updateDynamic("orderIndependentTranslucency")(orderIndependentTranslucency)
-    if (!js.isUndefined(requestRenderMode)) __obj.updateDynamic("requestRenderMode")(requestRenderMode)
-    if (!js.isUndefined(scene3DOnly)) __obj.updateDynamic("scene3DOnly")(scene3DOnly)
-    if (!js.isUndefined(shadows)) __obj.updateDynamic("shadows")(shadows)
+    if (!js.isUndefined(orderIndependentTranslucency)) __obj.updateDynamic("orderIndependentTranslucency")(orderIndependentTranslucency.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestRenderMode)) __obj.updateDynamic("requestRenderMode")(requestRenderMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(scene3DOnly)) __obj.updateDynamic("scene3DOnly")(scene3DOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(shadows)) __obj.updateDynamic("shadows")(shadows.asInstanceOf[js.Any])
     if (terrainExaggeration != null) __obj.updateDynamic("terrainExaggeration")(terrainExaggeration.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Canvas]
   }

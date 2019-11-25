@@ -14,7 +14,7 @@ trait VariableGroupReference extends js.Object {
 object VariableGroupReference {
   @scala.inline
   def apply(id: Double): VariableGroupReference = {
-    val __obj = js.Dynamic.literal(id = id)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[VariableGroupReference]
   }

@@ -16,7 +16,7 @@ object HttpConfig {
   @scala.inline
   def apply(httpEnabledState: String = null): HttpConfig = {
     val __obj = js.Dynamic.literal()
-    if (httpEnabledState != null) __obj.updateDynamic("httpEnabledState")(httpEnabledState)
+    if (httpEnabledState != null) __obj.updateDynamic("httpEnabledState")(httpEnabledState.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpConfig]
   }
 }

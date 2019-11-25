@@ -49,12 +49,12 @@ object Anon_AutoBracketing {
     if (FocusWarning != null) __obj.updateDynamic("FocusWarning")(FocusWarning.asInstanceOf[js.Any])
     if (FujiFlashMode != null) __obj.updateDynamic("FujiFlashMode")(FujiFlashMode.asInstanceOf[js.Any])
     if (Macro != null) __obj.updateDynamic("Macro")(Macro.asInstanceOf[js.Any])
-    if (Quality != null) __obj.updateDynamic("Quality")(Quality)
+    if (Quality != null) __obj.updateDynamic("Quality")(Quality.asInstanceOf[js.Any])
     if (Sharpness != null) __obj.updateDynamic("Sharpness")(Sharpness.asInstanceOf[js.Any])
     if (SlowSync != null) __obj.updateDynamic("SlowSync")(SlowSync.asInstanceOf[js.Any])
-    if (Version != null) __obj.updateDynamic("Version")(Version)
+    if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
     if (WhiteBalance != null) __obj.updateDynamic("WhiteBalance")(WhiteBalance.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AutoBracketing]
   }
 }

@@ -12,7 +12,7 @@ trait Anon_AdjustXAdjustY extends js.Object {
 object Anon_AdjustXAdjustY {
   @scala.inline
   def apply(adjustX: Boolean, adjustY: Boolean): Anon_AdjustXAdjustY = {
-    val __obj = js.Dynamic.literal(adjustX = adjustX, adjustY = adjustY)
+    val __obj = js.Dynamic.literal(adjustX = adjustX.asInstanceOf[js.Any], adjustY = adjustY.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AdjustXAdjustY]
   }

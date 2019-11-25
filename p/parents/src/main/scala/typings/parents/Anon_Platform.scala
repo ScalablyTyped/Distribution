@@ -12,7 +12,7 @@ object Anon_Platform {
   @scala.inline
   def apply(platform: String = null): Anon_Platform = {
     val __obj = js.Dynamic.literal()
-    if (platform != null) __obj.updateDynamic("platform")(platform)
+    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Platform]
   }
 }

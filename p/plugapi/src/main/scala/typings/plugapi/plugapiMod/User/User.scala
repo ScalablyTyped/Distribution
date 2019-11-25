@@ -26,7 +26,7 @@ object User {
     sub: Double,
     username: String
   ): User = {
-    val __obj = js.Dynamic.literal(avatarID = avatarID, badge = badge, gRole = gRole, guest = guest, id = id, joined = joined, language = language, level = level, role = role, silver = silver, slug = slug, sub = sub, username = username)
+    val __obj = js.Dynamic.literal(avatarID = avatarID.asInstanceOf[js.Any], badge = badge.asInstanceOf[js.Any], gRole = gRole.asInstanceOf[js.Any], guest = guest.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], joined = joined.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any], silver = silver.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any], sub = sub.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[User]
   }

@@ -12,7 +12,7 @@ trait ɵPlayerFactory extends js.Object {
 object ɵPlayerFactory {
   @scala.inline
   def apply(__brand__ : `Brand for PlayerFactory that nothing will match`): ɵPlayerFactory = {
-    val __obj = js.Dynamic.literal(__brand__ = __brand__)
+    val __obj = js.Dynamic.literal(__brand__ = __brand__.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ɵPlayerFactory]
   }

@@ -13,8 +13,8 @@ object MessageConfig {
   @scala.inline
   def apply(`type`: String, name: String = null): MessageConfig = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageConfig]
   }
 }

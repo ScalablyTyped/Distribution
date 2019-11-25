@@ -31,9 +31,9 @@ object VinylFile {
     contents: Buffer | ReadableStream = null,
     sourceMap: js.Any = null
   ): VinylFile = {
-    val __obj = js.Dynamic.literal(base = base, basename = basename, cwd = cwd, dirname = dirname, extname = extname, path = path, stem = stem)
+    val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], basename = basename.asInstanceOf[js.Any], cwd = cwd.asInstanceOf[js.Any], dirname = dirname.asInstanceOf[js.Any], extname = extname.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], stem = stem.asInstanceOf[js.Any])
     if (contents != null) __obj.updateDynamic("contents")(contents.asInstanceOf[js.Any])
-    if (sourceMap != null) __obj.updateDynamic("sourceMap")(sourceMap)
+    if (sourceMap != null) __obj.updateDynamic("sourceMap")(sourceMap.asInstanceOf[js.Any])
     __obj.asInstanceOf[VinylFile]
   }
 }

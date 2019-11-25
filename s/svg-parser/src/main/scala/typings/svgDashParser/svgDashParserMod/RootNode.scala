@@ -13,8 +13,8 @@ trait RootNode extends js.Object {
 object RootNode {
   @scala.inline
   def apply(children: js.Array[Node], `type`: root): RootNode = {
-    val __obj = js.Dynamic.literal(children = children)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RootNode]
   }
 }

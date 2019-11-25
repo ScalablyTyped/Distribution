@@ -25,7 +25,7 @@ object Room {
     x: Double,
     y: Double
   ): Room = {
-    val __obj = js.Dynamic.literal(cellx = cellx, celly = celly, connections = connections, height = height, width = width, x = x, y = y)
+    val __obj = js.Dynamic.literal(cellx = cellx.asInstanceOf[js.Any], celly = celly.asInstanceOf[js.Any], connections = connections.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Room]
   }

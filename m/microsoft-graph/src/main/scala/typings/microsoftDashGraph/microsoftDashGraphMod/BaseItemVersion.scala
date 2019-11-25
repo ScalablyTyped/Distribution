@@ -22,10 +22,10 @@ object BaseItemVersion {
     publication: PublicationFacet = null
   ): BaseItemVersion = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (lastModifiedBy != null) __obj.updateDynamic("lastModifiedBy")(lastModifiedBy)
-    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime)
-    if (publication != null) __obj.updateDynamic("publication")(publication)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (lastModifiedBy != null) __obj.updateDynamic("lastModifiedBy")(lastModifiedBy.asInstanceOf[js.Any])
+    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
+    if (publication != null) __obj.updateDynamic("publication")(publication.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseItemVersion]
   }
 }

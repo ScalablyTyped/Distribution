@@ -28,10 +28,10 @@ object RenderingTicksEventArgs {
     valueType: String = null
   ): RenderingTicksEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (tick != null) __obj.updateDynamic("tick")(tick)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (tick != null) __obj.updateDynamic("tick")(tick.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (valueType != null) __obj.updateDynamic("valueType")(valueType)
+    if (valueType != null) __obj.updateDynamic("valueType")(valueType.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderingTicksEventArgs]
   }
 }

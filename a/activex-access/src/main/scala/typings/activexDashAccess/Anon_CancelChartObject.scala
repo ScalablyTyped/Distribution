@@ -13,7 +13,7 @@ trait Anon_CancelChartObject extends js.Object {
 object Anon_CancelChartObject {
   @scala.inline
   def apply(Cancel: js.Any, chartObject: js.Any, drawObject: js.Any): Anon_CancelChartObject = {
-    val __obj = js.Dynamic.literal(Cancel = Cancel, chartObject = chartObject, drawObject = drawObject)
+    val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], chartObject = chartObject.asInstanceOf[js.Any], drawObject = drawObject.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CancelChartObject]
   }

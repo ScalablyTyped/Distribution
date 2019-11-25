@@ -29,10 +29,10 @@ object Anon_CoalescingThreshold {
     if (coalescingThreshold != null) __obj.updateDynamic("coalescingThreshold")(coalescingThreshold.asInstanceOf[js.Any])
     if (connectTimeout != null) __obj.updateDynamic("connectTimeout")(connectTimeout.asInstanceOf[js.Any])
     if (defunctReadTimeoutThreshold != null) __obj.updateDynamic("defunctReadTimeoutThreshold")(defunctReadTimeoutThreshold.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepAlive)) __obj.updateDynamic("keepAlive")(keepAlive)
+    if (!js.isUndefined(keepAlive)) __obj.updateDynamic("keepAlive")(keepAlive.asInstanceOf[js.Any])
     if (keepAliveDelay != null) __obj.updateDynamic("keepAliveDelay")(keepAliveDelay.asInstanceOf[js.Any])
     if (readTimeout != null) __obj.updateDynamic("readTimeout")(readTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(tcpNoDelay)) __obj.updateDynamic("tcpNoDelay")(tcpNoDelay)
+    if (!js.isUndefined(tcpNoDelay)) __obj.updateDynamic("tcpNoDelay")(tcpNoDelay.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CoalescingThreshold]
   }
 }

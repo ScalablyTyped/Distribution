@@ -15,10 +15,10 @@ object ImageZoom_ZoomImage {
   @scala.inline
   def apply(alt: String = null, className: String = null, src: String = null, style: js.Object = null): ImageZoom_ZoomImage = {
     val __obj = js.Dynamic.literal()
-    if (alt != null) __obj.updateDynamic("alt")(alt)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (src != null) __obj.updateDynamic("src")(src)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageZoom_ZoomImage]
   }
 }

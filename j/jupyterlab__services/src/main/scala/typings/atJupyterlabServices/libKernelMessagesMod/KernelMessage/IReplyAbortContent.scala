@@ -19,7 +19,7 @@ trait IReplyAbortContent
 object IReplyAbortContent {
   @scala.inline
   def apply(status: abort): IReplyAbortContent = {
-    val __obj = js.Dynamic.literal(status = status)
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IReplyAbortContent]
   }

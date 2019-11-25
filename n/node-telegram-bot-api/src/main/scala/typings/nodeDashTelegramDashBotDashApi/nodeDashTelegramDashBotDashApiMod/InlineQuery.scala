@@ -15,8 +15,8 @@ trait InlineQuery extends js.Object {
 object InlineQuery {
   @scala.inline
   def apply(from: User, id: String, offset: String, query: String, location: Location = null): InlineQuery = {
-    val __obj = js.Dynamic.literal(from = from, id = id, offset = offset, query = query)
-    if (location != null) __obj.updateDynamic("location")(location)
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[InlineQuery]
   }
 }

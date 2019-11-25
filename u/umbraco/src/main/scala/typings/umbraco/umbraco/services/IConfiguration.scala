@@ -22,7 +22,7 @@ object IConfiguration {
     stylesheets: js.Array[String],
     toolbar: js.Array[String]
   ): IConfiguration = {
-    val __obj = js.Dynamic.literal(dimensions = dimensions, maxImageSize = maxImageSize, stylesheets = stylesheets, toolbar = toolbar)
+    val __obj = js.Dynamic.literal(dimensions = dimensions.asInstanceOf[js.Any], maxImageSize = maxImageSize.asInstanceOf[js.Any], stylesheets = stylesheets.asInstanceOf[js.Any], toolbar = toolbar.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IConfiguration]
   }

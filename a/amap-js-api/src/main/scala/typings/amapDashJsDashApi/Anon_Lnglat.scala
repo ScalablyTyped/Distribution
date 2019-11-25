@@ -24,7 +24,7 @@ trait Anon_Lnglat[I] extends js.Object {
 object Anon_Lnglat {
   @scala.inline
   def apply[I](lnglat: LngLat, pixel: Pixel, target: I): Anon_Lnglat[I] = {
-    val __obj = js.Dynamic.literal(lnglat = lnglat, pixel = pixel, target = target.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(lnglat = lnglat.asInstanceOf[js.Any], pixel = pixel.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Lnglat[I]]
   }

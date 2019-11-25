@@ -25,7 +25,7 @@ object bookmark2 {
     start: js.Array[Double],
     startOffset: Double
   ): bookmark2 = {
-    val __obj = js.Dynamic.literal(collapsed = collapsed, end = end, endOffset = endOffset, is2 = is2, normalized = normalized, start = start, startOffset = startOffset)
+    val __obj = js.Dynamic.literal(collapsed = collapsed.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], endOffset = endOffset.asInstanceOf[js.Any], is2 = is2.asInstanceOf[js.Any], normalized = normalized.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], startOffset = startOffset.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[bookmark2]
   }

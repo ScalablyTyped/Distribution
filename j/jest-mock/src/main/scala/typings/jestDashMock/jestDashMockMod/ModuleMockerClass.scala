@@ -47,18 +47,24 @@ trait ModuleMockerClass extends js.Object {
   def resetAllMocks(): Unit = js.native
   def restoreAllMocks(): Unit = js.native
   def spyOn[T /* <: js.Object */, M /* <: FunctionPropertyNames[T] */](`object`: T, methodName: M): SpyInstance[
-    ReturnType[/* import warning: ImportType.apply Failed type conversion: T[M] */ js.Any], 
-    Parameters[/* import warning: ImportType.apply Failed type conversion: T[M] */ js.Any]
+    ReturnType[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[M] */ js.Any
+    ], 
+    Parameters[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[M] */ js.Any
+    ]
   ] = js.native
   @JSName("spyOn")
   def spyOn_get[T /* <: js.Object */, M /* <: NonFunctionPropertyNames[T] */](`object`: T, methodName: M, accessType: get): SpyInstance[
-    /* import warning: ImportType.apply Failed type conversion: T[M] */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: T[M] */ js.Any, 
     js.Array[js.Any]
   ] = js.native
   @JSName("spyOn")
   def spyOn_set[T /* <: js.Object */, M /* <: NonFunctionPropertyNames[T] */](`object`: T, methodName: M, accessType: set): SpyInstance[
     Unit, 
-    js.Array[/* import warning: ImportType.apply Failed type conversion: T[M] */ js.Any]
+    js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[M] */ js.Any
+    ]
   ] = js.native
 }
 

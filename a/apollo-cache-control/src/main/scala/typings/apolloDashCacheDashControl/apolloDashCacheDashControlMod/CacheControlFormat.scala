@@ -14,7 +14,7 @@ trait CacheControlFormat extends js.Object {
 object CacheControlFormat {
   @scala.inline
   def apply(hints: js.Array[Anon_Path with CacheHint], version: `1`): CacheControlFormat = {
-    val __obj = js.Dynamic.literal(hints = hints, version = version)
+    val __obj = js.Dynamic.literal(hints = hints.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CacheControlFormat]
   }

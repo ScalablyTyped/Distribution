@@ -13,7 +13,7 @@ trait Anon_HierarchyRootSeparator extends js.Object {
 object Anon_HierarchyRootSeparator {
   @scala.inline
   def apply(hierarchyRootSeparator: String, hierarchySeparator: RegExp): Anon_HierarchyRootSeparator = {
-    val __obj = js.Dynamic.literal(hierarchyRootSeparator = hierarchyRootSeparator, hierarchySeparator = hierarchySeparator)
+    val __obj = js.Dynamic.literal(hierarchyRootSeparator = hierarchyRootSeparator.asInstanceOf[js.Any], hierarchySeparator = hierarchySeparator.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_HierarchyRootSeparator]
   }

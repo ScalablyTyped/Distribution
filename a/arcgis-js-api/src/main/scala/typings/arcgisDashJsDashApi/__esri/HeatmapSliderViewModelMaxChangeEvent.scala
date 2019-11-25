@@ -13,8 +13,8 @@ trait HeatmapSliderViewModelMaxChangeEvent extends js.Object {
 object HeatmapSliderViewModelMaxChangeEvent {
   @scala.inline
   def apply(oldValue: Double, `type`: String, value: Double): HeatmapSliderViewModelMaxChangeEvent = {
-    val __obj = js.Dynamic.literal(oldValue = oldValue, value = value)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(oldValue = oldValue.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeatmapSliderViewModelMaxChangeEvent]
   }
 }

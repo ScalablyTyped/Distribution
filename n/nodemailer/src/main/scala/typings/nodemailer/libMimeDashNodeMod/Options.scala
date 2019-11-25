@@ -35,12 +35,12 @@ object Options {
     textEncoding: B | Q = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (baseBoundary != null) __obj.updateDynamic("baseBoundary")(baseBoundary)
-    if (filename != null) __obj.updateDynamic("filename")(filename)
-    if (!js.isUndefined(keepBcc)) __obj.updateDynamic("keepBcc")(keepBcc)
+    if (baseBoundary != null) __obj.updateDynamic("baseBoundary")(baseBoundary.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepBcc)) __obj.updateDynamic("keepBcc")(keepBcc.asInstanceOf[js.Any])
     if (normalizeHeaderKey != null) __obj.updateDynamic("normalizeHeaderKey")(js.Any.fromFunction1(normalizeHeaderKey))
-    if (parentNode != null) __obj.updateDynamic("parentNode")(parentNode)
-    if (rootNode != null) __obj.updateDynamic("rootNode")(rootNode)
+    if (parentNode != null) __obj.updateDynamic("parentNode")(parentNode.asInstanceOf[js.Any])
+    if (rootNode != null) __obj.updateDynamic("rootNode")(rootNode.asInstanceOf[js.Any])
     if (textEncoding != null) __obj.updateDynamic("textEncoding")(textEncoding.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

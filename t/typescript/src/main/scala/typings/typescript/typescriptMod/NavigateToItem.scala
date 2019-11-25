@@ -33,7 +33,7 @@ object NavigateToItem {
     name: String,
     textSpan: TextSpan
   ): NavigateToItem = {
-    val __obj = js.Dynamic.literal(containerKind = containerKind, containerName = containerName, fileName = fileName, isCaseSensitive = isCaseSensitive, kind = kind, kindModifiers = kindModifiers, matchKind = matchKind.asInstanceOf[js.Any], name = name, textSpan = textSpan)
+    val __obj = js.Dynamic.literal(containerKind = containerKind.asInstanceOf[js.Any], containerName = containerName.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], isCaseSensitive = isCaseSensitive.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], kindModifiers = kindModifiers.asInstanceOf[js.Any], matchKind = matchKind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], textSpan = textSpan.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NavigateToItem]
   }

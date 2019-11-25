@@ -30,9 +30,9 @@ object MockFunctionMetadata {
   ): MockFunctionMetadata[T, Y, Type] = {
     val __obj = js.Dynamic.literal()
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (members != null) __obj.updateDynamic("members")(members)
+    if (members != null) __obj.updateDynamic("members")(members.asInstanceOf[js.Any])
     if (mockImpl != null) __obj.updateDynamic("mockImpl")(js.Any.fromFunction1(mockImpl))
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (refID != null) __obj.updateDynamic("refID")(refID.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

@@ -12,6 +12,15 @@ trait Anon_AVG extends js.Object {
   var SUM: String
 }
 
+object Anon_AVG {
+  @scala.inline
+  def apply(AVG: String, COUNT: String, MAX: String, MIN: String, SUM: String): Anon_AVG = {
+    val __obj = js.Dynamic.literal(AVG = AVG.asInstanceOf[js.Any], COUNT = COUNT.asInstanceOf[js.Any], MAX = MAX.asInstanceOf[js.Any], MIN = MIN.asInstanceOf[js.Any], SUM = SUM.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Anon_AVG]
+  }
+}
+
 trait Anon_Avg extends js.Object {
   var avg: Double
   var count: Double
@@ -20,19 +29,10 @@ trait Anon_Avg extends js.Object {
   var sum: Double
 }
 
-object Anon_AVG {
-  @scala.inline
-  def apply(AVG: String, COUNT: String, MAX: String, MIN: String, SUM: String): Anon_AVG = {
-    val __obj = js.Dynamic.literal(AVG = AVG, COUNT = COUNT, MAX = MAX, MIN = MIN, SUM = SUM)
-  
-    __obj.asInstanceOf[Anon_AVG]
-  }
-}
-
 object Anon_Avg {
   @scala.inline
   def apply(avg: Double, count: Double, max: Double, min: Double, sum: Double): Anon_Avg = {
-    val __obj = js.Dynamic.literal(avg = avg, count = count, max = max, min = min, sum = sum)
+    val __obj = js.Dynamic.literal(avg = avg.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], sum = sum.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Avg]
   }

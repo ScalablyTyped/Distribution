@@ -12,7 +12,7 @@ object Assignment {
   @scala.inline
   def apply(studentWorkFolder: DriveFolder = null): Assignment = {
     val __obj = js.Dynamic.literal()
-    if (studentWorkFolder != null) __obj.updateDynamic("studentWorkFolder")(studentWorkFolder)
+    if (studentWorkFolder != null) __obj.updateDynamic("studentWorkFolder")(studentWorkFolder.asInstanceOf[js.Any])
     __obj.asInstanceOf[Assignment]
   }
 }

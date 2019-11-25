@@ -12,7 +12,7 @@ object DialogModal {
   @scala.inline
   def apply(preventScroll: String = null): DialogModal = {
     val __obj = js.Dynamic.literal()
-    if (preventScroll != null) __obj.updateDynamic("preventScroll")(preventScroll)
+    if (preventScroll != null) __obj.updateDynamic("preventScroll")(preventScroll.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogModal]
   }
 }

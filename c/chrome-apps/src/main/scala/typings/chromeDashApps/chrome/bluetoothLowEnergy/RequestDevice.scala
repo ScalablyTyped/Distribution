@@ -19,9 +19,9 @@ trait RequestDevice extends js.Object {
 object RequestDevice {
   @scala.inline
   def apply(address: String, deviceClass: Int | Double = null, name: String = null): RequestDevice = {
-    val __obj = js.Dynamic.literal(address = address)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any])
     if (deviceClass != null) __obj.updateDynamic("deviceClass")(deviceClass.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestDevice]
   }
 }

@@ -26,9 +26,9 @@ object Anon_CallbackEventLabel {
     noNotificationsBody: ReactNode = null,
     notificationsBody: ReactNode = null
   ): Anon_CallbackEventLabel = {
-    val __obj = js.Dynamic.literal(notificationCount = notificationCount)
+    val __obj = js.Dynamic.literal(notificationCount = notificationCount.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))
-    if (label != null) __obj.updateDynamic("label")(label)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (noNotificationsBody != null) __obj.updateDynamic("noNotificationsBody")(noNotificationsBody.asInstanceOf[js.Any])
     if (notificationsBody != null) __obj.updateDynamic("notificationsBody")(notificationsBody.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CallbackEventLabel]

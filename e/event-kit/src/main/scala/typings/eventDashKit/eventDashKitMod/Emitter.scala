@@ -18,7 +18,7 @@ class Emitter[OptionalEmissions, RequiredEmissions] () extends DisposableLike {
   def emit[T /* <: String */](eventName: T): Unit = js.native
   def emit[T /* <: String */](
     eventName: T,
-    value: /* import warning: ImportType.apply Failed type conversion: OptionalEmissions[T] */ js.Any
+    value: /* import warning: importer.ImportType#apply Failed type conversion: OptionalEmissions[T] */ js.Any
   ): Unit = js.native
   /**
     *  Asynchronously invoke the handlers registered via ::on for the given event name.
@@ -27,7 +27,7 @@ class Emitter[OptionalEmissions, RequiredEmissions] () extends DisposableLike {
   def emitAsync[T /* <: String */](eventName: T): js.Promise[Unit] = js.native
   def emitAsync[T /* <: String */](
     eventName: T,
-    value: /* import warning: ImportType.apply Failed type conversion: OptionalEmissions[T] */ js.Any
+    value: /* import warning: importer.ImportType#apply Failed type conversion: OptionalEmissions[T] */ js.Any
   ): js.Promise[Unit] = js.native
   // Event Subscription
   /** Registers a handler to be invoked whenever the given event is emitted. */
@@ -35,7 +35,7 @@ class Emitter[OptionalEmissions, RequiredEmissions] () extends DisposableLike {
     eventName: T,
     handler: js.Function1[
       js.UndefOr[
-        /* import warning: ImportType.apply Failed type conversion: RequiredEmissions[T] */ /* value */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: RequiredEmissions[T] */ /* value */ js.Any
       ], 
       Unit
     ]
@@ -48,7 +48,7 @@ class Emitter[OptionalEmissions, RequiredEmissions] () extends DisposableLike {
     eventName: T,
     handler: js.Function1[
       js.UndefOr[
-        /* import warning: ImportType.apply Failed type conversion: RequiredEmissions[T] */ /* value */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: RequiredEmissions[T] */ /* value */ js.Any
       ], 
       Unit
     ]
@@ -62,7 +62,7 @@ class Emitter[OptionalEmissions, RequiredEmissions] () extends DisposableLike {
     eventName: T,
     handler: js.Function1[
       js.UndefOr[
-        /* import warning: ImportType.apply Failed type conversion: RequiredEmissions[T] */ /* value */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: RequiredEmissions[T] */ /* value */ js.Any
       ], 
       Unit
     ]

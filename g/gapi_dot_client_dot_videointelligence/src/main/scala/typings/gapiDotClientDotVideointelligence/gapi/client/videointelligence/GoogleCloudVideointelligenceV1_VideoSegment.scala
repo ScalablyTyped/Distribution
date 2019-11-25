@@ -21,8 +21,8 @@ object GoogleCloudVideointelligenceV1_VideoSegment {
   @scala.inline
   def apply(endTime: String = null, startTime: String = null): GoogleCloudVideointelligenceV1_VideoSegment = {
     val __obj = js.Dynamic.literal()
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1_VideoSegment]
   }
 }

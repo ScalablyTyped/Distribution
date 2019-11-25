@@ -16,8 +16,8 @@ object CanvasRenderingContext2DSettings {
     desynchronized: js.UndefOr[scala.Boolean] = js.undefined
   ): CanvasRenderingContext2DSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alpha)) __obj.updateDynamic("alpha")(alpha)
-    if (!js.isUndefined(desynchronized)) __obj.updateDynamic("desynchronized")(desynchronized)
+    if (!js.isUndefined(alpha)) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
+    if (!js.isUndefined(desynchronized)) __obj.updateDynamic("desynchronized")(desynchronized.asInstanceOf[js.Any])
     __obj.asInstanceOf[CanvasRenderingContext2DSettings]
   }
 }

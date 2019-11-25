@@ -13,8 +13,8 @@ object AlertOptions {
   @scala.inline
   def apply(messages: AlertMessages = null, name: String = null): AlertOptions = {
     val __obj = js.Dynamic.literal()
-    if (messages != null) __obj.updateDynamic("messages")(messages)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlertOptions]
   }
 }

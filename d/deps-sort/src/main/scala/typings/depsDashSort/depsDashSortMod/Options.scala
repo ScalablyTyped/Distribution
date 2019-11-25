@@ -36,10 +36,10 @@ object Options {
     index: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(dedupe)) __obj.updateDynamic("dedupe")(dedupe)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(dedupe)) __obj.updateDynamic("dedupe")(dedupe.asInstanceOf[js.Any])
     if (expose != null) __obj.updateDynamic("expose")(expose.asInstanceOf[js.Any])
-    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index)
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

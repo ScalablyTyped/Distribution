@@ -16,7 +16,7 @@ trait Anon_Context extends js.Object {
 object Anon_Context {
   @scala.inline
   def apply(reference: String, context: Bundle | DomainResource = null, options: Options = null): Anon_Context = {
-    val __obj = js.Dynamic.literal(reference = reference)
+    val __obj = js.Dynamic.literal(reference = reference.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Context]

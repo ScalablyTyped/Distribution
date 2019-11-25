@@ -11,7 +11,7 @@ trait Anon_Transient extends js.Object {
 object Anon_Transient {
   @scala.inline
   def apply(transient: Anon_DisplayidString): Anon_Transient = {
-    val __obj = js.Dynamic.literal(transient = transient)
+    val __obj = js.Dynamic.literal(transient = transient.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Transient]
   }

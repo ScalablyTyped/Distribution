@@ -15,7 +15,7 @@ trait Anon_Canceled extends js.Object {
 object Anon_Canceled {
   @scala.inline
   def apply(canceled: Double, failed: Double, none: Double, partiallySucceeded: Double, succeeded: Double): Anon_Canceled = {
-    val __obj = js.Dynamic.literal(canceled = canceled, failed = failed, none = none, partiallySucceeded = partiallySucceeded, succeeded = succeeded)
+    val __obj = js.Dynamic.literal(canceled = canceled.asInstanceOf[js.Any], failed = failed.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any], partiallySucceeded = partiallySucceeded.asInstanceOf[js.Any], succeeded = succeeded.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Canceled]
   }

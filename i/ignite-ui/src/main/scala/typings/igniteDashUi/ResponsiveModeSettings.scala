@@ -29,9 +29,9 @@ object ResponsiveModeSettings {
     minWidth: Int | Double = null
   ): ResponsiveModeSettings = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight)
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
+    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
     if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
     if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponsiveModeSettings]

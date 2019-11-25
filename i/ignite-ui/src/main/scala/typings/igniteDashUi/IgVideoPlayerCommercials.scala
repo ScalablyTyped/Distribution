@@ -51,12 +51,12 @@ object IgVideoPlayerCommercials {
     showBookmarks: js.UndefOr[Boolean] = js.undefined
   ): IgVideoPlayerCommercials = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (adMessage != null) __obj.updateDynamic("adMessage")(adMessage)
-    if (!js.isUndefined(alwaysPlayCommercials)) __obj.updateDynamic("alwaysPlayCommercials")(alwaysPlayCommercials)
-    if (embeddedCommercials != null) __obj.updateDynamic("embeddedCommercials")(embeddedCommercials)
-    if (linkedCommercials != null) __obj.updateDynamic("linkedCommercials")(linkedCommercials)
-    if (!js.isUndefined(showBookmarks)) __obj.updateDynamic("showBookmarks")(showBookmarks)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (adMessage != null) __obj.updateDynamic("adMessage")(adMessage.asInstanceOf[js.Any])
+    if (!js.isUndefined(alwaysPlayCommercials)) __obj.updateDynamic("alwaysPlayCommercials")(alwaysPlayCommercials.asInstanceOf[js.Any])
+    if (embeddedCommercials != null) __obj.updateDynamic("embeddedCommercials")(embeddedCommercials.asInstanceOf[js.Any])
+    if (linkedCommercials != null) __obj.updateDynamic("linkedCommercials")(linkedCommercials.asInstanceOf[js.Any])
+    if (!js.isUndefined(showBookmarks)) __obj.updateDynamic("showBookmarks")(showBookmarks.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgVideoPlayerCommercials]
   }
 }

@@ -52,7 +52,7 @@ object IView {
     ViewType: MFViewType,
     Visible: Boolean
   ): IView = {
-    val __obj = js.Dynamic.literal(AccessControlList = AccessControlList, Clone = js.Any.fromFunction0(Clone), CloneFrom = js.Any.fromFunction1(CloneFrom), Common = Common, GUID = GUID, HasParent = HasParent, ID = ID, Levels = Levels, LookInAllVersions = LookInAllVersions, Name = Name, Parent = Parent, ReturnLatestVisibleVersion = ReturnLatestVisibleVersion, SearchConditions = SearchConditions, SearchDef = SearchDef, SearchFlags = SearchFlags, ViewFlags = ViewFlags, ViewLocation = ViewLocation, ViewType = ViewType, Visible = Visible)
+    val __obj = js.Dynamic.literal(AccessControlList = AccessControlList.asInstanceOf[js.Any], Clone = js.Any.fromFunction0(Clone), CloneFrom = js.Any.fromFunction1(CloneFrom), Common = Common.asInstanceOf[js.Any], GUID = GUID.asInstanceOf[js.Any], HasParent = HasParent.asInstanceOf[js.Any], ID = ID.asInstanceOf[js.Any], Levels = Levels.asInstanceOf[js.Any], LookInAllVersions = LookInAllVersions.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], ReturnLatestVisibleVersion = ReturnLatestVisibleVersion.asInstanceOf[js.Any], SearchConditions = SearchConditions.asInstanceOf[js.Any], SearchDef = SearchDef.asInstanceOf[js.Any], SearchFlags = SearchFlags.asInstanceOf[js.Any], ViewFlags = ViewFlags.asInstanceOf[js.Any], ViewLocation = ViewLocation.asInstanceOf[js.Any], ViewType = ViewType.asInstanceOf[js.Any], Visible = Visible.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IView]
   }

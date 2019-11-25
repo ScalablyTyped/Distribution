@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait checkStatus extends js.Object
 
+object checkStatus {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def fail: typings.stripejs.stripejsStrings.fail = this.cast("fail")
+  @scala.inline
+  def pass: typings.stripejs.stripejsStrings.pass = this.cast("pass")
+  @scala.inline
+  def unavailable: typings.stripejs.stripejsStrings.unavailable = this.cast("unavailable")
+  @scala.inline
+  def unchecked: typings.stripejs.stripejsStrings.unchecked = this.cast("unchecked")
+}
+

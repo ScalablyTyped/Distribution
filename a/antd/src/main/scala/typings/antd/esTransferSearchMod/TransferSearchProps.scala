@@ -28,12 +28,12 @@ object TransferSearchProps {
     value: String = null
   ): TransferSearchProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (handleClear != null) __obj.updateDynamic("handleClear")(js.Any.fromFunction1(handleClear))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransferSearchProps]
   }
 }

@@ -29,11 +29,11 @@ object UsageReport {
     parameters: js.Array[Anon_BoolValueDatetimeValue] = null
   ): UsageReport = {
     val __obj = js.Dynamic.literal()
-    if (date != null) __obj.updateDynamic("date")(date)
-    if (entity != null) __obj.updateDynamic("entity")(entity)
-    if (etag != null) __obj.updateDynamic("etag")(etag)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (entity != null) __obj.updateDynamic("entity")(entity.asInstanceOf[js.Any])
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsageReport]
   }
 }

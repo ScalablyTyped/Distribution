@@ -32,10 +32,10 @@ object ModalDialogSortingChangedEventUIParam {
     owner: js.Any = null
   ): ModalDialogSortingChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey)
-    if (!js.isUndefined(isAsc)) __obj.updateDynamic("isAsc")(isAsc)
-    if (modalDialogElement != null) __obj.updateDynamic("modalDialogElement")(modalDialogElement)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAsc)) __obj.updateDynamic("isAsc")(isAsc.asInstanceOf[js.Any])
+    if (modalDialogElement != null) __obj.updateDynamic("modalDialogElement")(modalDialogElement.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModalDialogSortingChangedEventUIParam]
   }
 }

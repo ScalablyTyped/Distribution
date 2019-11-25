@@ -12,7 +12,7 @@ object Anon_RemoveNonSerializable {
   @scala.inline
   def apply(removeNonSerializable: js.UndefOr[Boolean] = js.undefined): Anon_RemoveNonSerializable = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(removeNonSerializable)) __obj.updateDynamic("removeNonSerializable")(removeNonSerializable)
+    if (!js.isUndefined(removeNonSerializable)) __obj.updateDynamic("removeNonSerializable")(removeNonSerializable.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_RemoveNonSerializable]
   }
 }

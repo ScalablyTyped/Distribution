@@ -18,7 +18,7 @@ trait DetailedMethodSpec[I] extends MethodSpec[I] {
 object DetailedMethodSpec {
   @scala.inline
   def apply[I](implementation: I, types: String): DetailedMethodSpec[I] = {
-    val __obj = js.Dynamic.literal(implementation = implementation.asInstanceOf[js.Any], types = types)
+    val __obj = js.Dynamic.literal(implementation = implementation.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DetailedMethodSpec[I]]
   }

@@ -30,7 +30,7 @@ object Anon_0 {
     effect: js.Tuple5[`1`, `2`, `4`, `6`, `8`],
     level: js.Tuple5[`0`, `2`, `7`, `14`, `22`]
   ): Anon_0 = {
-    val __obj = js.Dynamic.literal(className = className, cooldown = cooldown, effect = effect, level = level)
+    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], cooldown = cooldown.asInstanceOf[js.Any], effect = effect.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_0]
   }

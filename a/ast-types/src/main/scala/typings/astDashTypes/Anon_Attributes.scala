@@ -47,14 +47,14 @@ object Anon_Attributes {
     name: JSXIdentifierKind | JSXNamespacedNameKind | JSXMemberExpressionKind = null,
     selfClosing: js.UndefOr[Boolean] = js.undefined
   ): Anon_Attributes = {
-    val __obj = js.Dynamic.literal(openingElement = openingElement)
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (closingElement != null) __obj.updateDynamic("closingElement")(closingElement)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(openingElement = openingElement.asInstanceOf[js.Any])
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (closingElement != null) __obj.updateDynamic("closingElement")(closingElement.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(selfClosing)) __obj.updateDynamic("selfClosing")(selfClosing)
+    if (!js.isUndefined(selfClosing)) __obj.updateDynamic("selfClosing")(selfClosing.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Attributes]
   }
 }

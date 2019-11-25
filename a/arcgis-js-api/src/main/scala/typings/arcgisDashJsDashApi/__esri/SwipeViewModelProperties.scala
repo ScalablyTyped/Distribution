@@ -62,7 +62,7 @@ object SwipeViewModelProperties {
     if (leadingLayers != null) __obj.updateDynamic("leadingLayers")(leadingLayers.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (trailingLayers != null) __obj.updateDynamic("trailingLayers")(trailingLayers.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view)
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwipeViewModelProperties]
   }
 }

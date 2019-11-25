@@ -12,7 +12,7 @@ trait IViews extends js.Object {
 object IViews {
   @scala.inline
   def apply(Count: Double, Item: Double => IView): IViews = {
-    val __obj = js.Dynamic.literal(Count = Count, Item = js.Any.fromFunction1(Item))
+    val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item))
   
     __obj.asInstanceOf[IViews]
   }

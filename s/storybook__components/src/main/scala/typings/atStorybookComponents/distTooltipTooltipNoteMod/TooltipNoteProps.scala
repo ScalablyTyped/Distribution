@@ -11,7 +11,7 @@ trait TooltipNoteProps extends js.Object {
 object TooltipNoteProps {
   @scala.inline
   def apply(note: String): TooltipNoteProps = {
-    val __obj = js.Dynamic.literal(note = note)
+    val __obj = js.Dynamic.literal(note = note.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TooltipNoteProps]
   }

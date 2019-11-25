@@ -25,7 +25,7 @@ object InitializeClientOptions {
     val __obj = js.Dynamic.literal()
     if (gssFlag != null) __obj.updateDynamic("gssFlag")(gssFlag.asInstanceOf[js.Any])
     if (mechOID != null) __obj.updateDynamic("mechOID")(mechOID.asInstanceOf[js.Any])
-    if (principal != null) __obj.updateDynamic("principal")(principal)
+    if (principal != null) __obj.updateDynamic("principal")(principal.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitializeClientOptions]
   }
 }

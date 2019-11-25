@@ -23,10 +23,10 @@ object IOptions {
     reveal: js.Promise[_] = null,
     toolbar: Toolbar[Widget] = null
   ): IOptions[T, U] = {
-    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], context = context)
-    if (node != null) __obj.updateDynamic("node")(node)
-    if (reveal != null) __obj.updateDynamic("reveal")(reveal)
-    if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any])
+    if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
+    if (reveal != null) __obj.updateDynamic("reveal")(reveal.asInstanceOf[js.Any])
+    if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions[T, U]]
   }
 }

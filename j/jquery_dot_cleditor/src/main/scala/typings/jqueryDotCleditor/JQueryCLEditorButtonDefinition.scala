@@ -40,16 +40,16 @@ object JQueryCLEditorButtonDefinition {
     popupName: String = null,
     stripIndex: Int | Double = null
   ): JQueryCLEditorButtonDefinition = {
-    val __obj = js.Dynamic.literal(name = name, title = title)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     if (buttonClick != null) __obj.updateDynamic("buttonClick")(js.Any.fromFunction2(buttonClick))
-    if (command != null) __obj.updateDynamic("command")(command)
-    if (css != null) __obj.updateDynamic("css")(css)
+    if (command != null) __obj.updateDynamic("command")(command.asInstanceOf[js.Any])
+    if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
     if (getEnabled != null) __obj.updateDynamic("getEnabled")(js.Any.fromFunction1(getEnabled))
     if (getPressed != null) __obj.updateDynamic("getPressed")(js.Any.fromFunction1(getPressed))
-    if (image != null) __obj.updateDynamic("image")(image)
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
     if (popupClick != null) __obj.updateDynamic("popupClick")(js.Any.fromFunction2(popupClick))
-    if (popupContent != null) __obj.updateDynamic("popupContent")(popupContent)
-    if (popupName != null) __obj.updateDynamic("popupName")(popupName)
+    if (popupContent != null) __obj.updateDynamic("popupContent")(popupContent.asInstanceOf[js.Any])
+    if (popupName != null) __obj.updateDynamic("popupName")(popupName.asInstanceOf[js.Any])
     if (stripIndex != null) __obj.updateDynamic("stripIndex")(stripIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryCLEditorButtonDefinition]
   }

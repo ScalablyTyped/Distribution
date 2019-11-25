@@ -25,7 +25,7 @@ trait INxAxisTicks extends js.Object {
 object INxAxisTicks {
   @scala.inline
   def apply(qName: String, qTags: js.Array[String], qTicks: js.Array[INxTickCell]): INxAxisTicks = {
-    val __obj = js.Dynamic.literal(qName = qName, qTags = qTags, qTicks = qTicks)
+    val __obj = js.Dynamic.literal(qName = qName.asInstanceOf[js.Any], qTags = qTags.asInstanceOf[js.Any], qTicks = qTicks.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[INxAxisTicks]
   }

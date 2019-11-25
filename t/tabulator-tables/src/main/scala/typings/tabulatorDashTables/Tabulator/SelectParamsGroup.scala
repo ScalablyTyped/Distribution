@@ -13,8 +13,8 @@ trait SelectParamsGroup extends js.Object {
 object SelectParamsGroup {
   @scala.inline
   def apply(label: String, options: js.Array[SelectLabelValue] = null, value: String | Double | Boolean = null): SelectParamsGroup = {
-    val __obj = js.Dynamic.literal(label = label)
-    if (options != null) __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectParamsGroup]
   }

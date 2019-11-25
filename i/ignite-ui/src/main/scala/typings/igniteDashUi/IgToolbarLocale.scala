@@ -33,9 +33,9 @@ object IgToolbarLocale {
     expandButtonTitle: js.Any = null
   ): IgToolbarLocale = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (collapseButtonTitle != null) __obj.updateDynamic("collapseButtonTitle")(collapseButtonTitle)
-    if (expandButtonTitle != null) __obj.updateDynamic("expandButtonTitle")(expandButtonTitle)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (collapseButtonTitle != null) __obj.updateDynamic("collapseButtonTitle")(collapseButtonTitle.asInstanceOf[js.Any])
+    if (expandButtonTitle != null) __obj.updateDynamic("expandButtonTitle")(expandButtonTitle.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgToolbarLocale]
   }
 }

@@ -18,8 +18,8 @@ trait IncludesType extends IDLRootType {
 object IncludesType {
   @scala.inline
   def apply(extAttrs: js.Array[ExtendedAttribute], includes: String, target: String, `type`: includes): IncludesType = {
-    val __obj = js.Dynamic.literal(extAttrs = extAttrs, includes = includes, target = target)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], includes = includes.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IncludesType]
   }
 }

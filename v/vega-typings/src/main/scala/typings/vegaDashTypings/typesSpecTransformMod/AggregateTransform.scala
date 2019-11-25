@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AggregateTransform extends Transforms {
+trait AggregateTransform extends _Transforms {
   var as: js.UndefOr[(js.Array[String | SignalRef | Null]) | SignalRef] = js.undefined
   var cross: js.UndefOr[Boolean | SignalRef] = js.undefined
   var drop: js.UndefOr[Boolean | SignalRef] = js.undefined
@@ -32,7 +32,7 @@ object AggregateTransform {
     signal: String = null
   ): AggregateTransform = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (cross != null) __obj.updateDynamic("cross")(cross.asInstanceOf[js.Any])
     if (drop != null) __obj.updateDynamic("drop")(drop.asInstanceOf[js.Any])
@@ -40,7 +40,7 @@ object AggregateTransform {
     if (groupby != null) __obj.updateDynamic("groupby")(groupby.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (ops != null) __obj.updateDynamic("ops")(ops.asInstanceOf[js.Any])
-    if (signal != null) __obj.updateDynamic("signal")(signal)
+    if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
     __obj.asInstanceOf[AggregateTransform]
   }
 }

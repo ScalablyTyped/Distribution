@@ -12,7 +12,7 @@ object Anon_Attr {
   @scala.inline
   def apply(attr: js.Object = null): Anon_Attr = {
     val __obj = js.Dynamic.literal()
-    if (attr != null) __obj.updateDynamic("attr")(attr)
+    if (attr != null) __obj.updateDynamic("attr")(attr.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Attr]
   }
 }

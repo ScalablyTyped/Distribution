@@ -14,7 +14,7 @@ object Anon_Brspaces {
   def apply(br_spaces: Int | Double = null, list_item_empty_lines: js.UndefOr[Boolean] = js.undefined): Anon_Brspaces = {
     val __obj = js.Dynamic.literal()
     if (br_spaces != null) __obj.updateDynamic("br_spaces")(br_spaces.asInstanceOf[js.Any])
-    if (!js.isUndefined(list_item_empty_lines)) __obj.updateDynamic("list_item_empty_lines")(list_item_empty_lines)
+    if (!js.isUndefined(list_item_empty_lines)) __obj.updateDynamic("list_item_empty_lines")(list_item_empty_lines.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Brspaces]
   }
 }

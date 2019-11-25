@@ -10,6 +10,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object deprecate
   extends TopLevel[
-      js.Function3[/* message */ String, /* test */ Boolean, /* options */ DeprecationOptions, js.Any]
+      js.Function3[
+        /* message */ java.lang.String, 
+        /* test */ Boolean, 
+        /* options */ DeprecationOptions, 
+        js.Any
+      ]
     ]
 

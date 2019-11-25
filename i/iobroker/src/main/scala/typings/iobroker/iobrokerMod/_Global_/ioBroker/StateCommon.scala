@@ -65,18 +65,18 @@ object StateCommon {
     unit: String = null,
     workingID: String = null
   ): StateCommon = {
-    val __obj = js.Dynamic.literal(name = name, read = read, role = role, write = write)
-    if (custom != null) __obj.updateDynamic("custom")(custom)
-    if (`def` != null) __obj.updateDynamic("def")(`def`)
-    if (desc != null) __obj.updateDynamic("desc")(desc)
-    if (history != null) __obj.updateDynamic("history")(history)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], read = read.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any], write = write.asInstanceOf[js.Any])
+    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
+    if (`def` != null) __obj.updateDynamic("def")(`def`.asInstanceOf[js.Any])
+    if (desc != null) __obj.updateDynamic("desc")(desc.asInstanceOf[js.Any])
+    if (history != null) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (states != null) __obj.updateDynamic("states")(states.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (unit != null) __obj.updateDynamic("unit")(unit)
-    if (workingID != null) __obj.updateDynamic("workingID")(workingID)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
+    if (workingID != null) __obj.updateDynamic("workingID")(workingID.asInstanceOf[js.Any])
     __obj.asInstanceOf[StateCommon]
   }
 }

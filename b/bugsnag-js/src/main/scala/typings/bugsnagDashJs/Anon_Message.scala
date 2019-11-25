@@ -13,7 +13,7 @@ trait Anon_Message extends _NotifiableError {
 object Anon_Message {
   @scala.inline
   def apply(message: String, name: String): Anon_Message = {
-    val __obj = js.Dynamic.literal(message = message, name = name)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Message]
   }

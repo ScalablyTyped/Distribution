@@ -12,7 +12,7 @@ trait IResponse extends js.Object {
 object IResponse {
   @scala.inline
   def apply(headers: StringDictionary[js.Any]): IResponse = {
-    val __obj = js.Dynamic.literal(headers = headers)
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IResponse]
   }

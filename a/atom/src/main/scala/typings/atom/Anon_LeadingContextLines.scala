@@ -23,7 +23,7 @@ object Anon_LeadingContextLines {
     range: js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]],
     trailingContextLines: js.Array[String]
   ): Anon_LeadingContextLines = {
-    val __obj = js.Dynamic.literal(leadingContextLines = leadingContextLines, lineText = lineText, lineTextOffset = lineTextOffset, matchText = matchText, range = range, trailingContextLines = trailingContextLines)
+    val __obj = js.Dynamic.literal(leadingContextLines = leadingContextLines.asInstanceOf[js.Any], lineText = lineText.asInstanceOf[js.Any], lineTextOffset = lineTextOffset.asInstanceOf[js.Any], matchText = matchText.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any], trailingContextLines = trailingContextLines.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_LeadingContextLines]
   }

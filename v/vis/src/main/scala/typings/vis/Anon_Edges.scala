@@ -13,7 +13,7 @@ trait Anon_Edges extends js.Object {
 object Anon_Edges {
   @scala.inline
   def apply(edges: js.Array[IdType], nodes: js.Array[IdType]): Anon_Edges = {
-    val __obj = js.Dynamic.literal(edges = edges, nodes = nodes)
+    val __obj = js.Dynamic.literal(edges = edges.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Edges]
   }

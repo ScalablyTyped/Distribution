@@ -13,8 +13,8 @@ object MapMarkerTooltipAnimation {
   @scala.inline
   def apply(close: MapMarkerTooltipAnimationClose = null, open: MapMarkerTooltipAnimationOpen = null): MapMarkerTooltipAnimation = {
     val __obj = js.Dynamic.literal()
-    if (close != null) __obj.updateDynamic("close")(close)
-    if (open != null) __obj.updateDynamic("open")(open)
+    if (close != null) __obj.updateDynamic("close")(close.asInstanceOf[js.Any])
+    if (open != null) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapMarkerTooltipAnimation]
   }
 }

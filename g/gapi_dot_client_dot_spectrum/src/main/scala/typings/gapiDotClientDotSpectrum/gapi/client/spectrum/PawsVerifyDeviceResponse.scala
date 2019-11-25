@@ -42,11 +42,11 @@ object PawsVerifyDeviceResponse {
     version: String = null
   ): PawsVerifyDeviceResponse = {
     val __obj = js.Dynamic.literal()
-    if (databaseChange != null) __obj.updateDynamic("databaseChange")(databaseChange)
-    if (deviceValidities != null) __obj.updateDynamic("deviceValidities")(deviceValidities)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (databaseChange != null) __obj.updateDynamic("databaseChange")(databaseChange.asInstanceOf[js.Any])
+    if (deviceValidities != null) __obj.updateDynamic("deviceValidities")(deviceValidities.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[PawsVerifyDeviceResponse]
   }
 }

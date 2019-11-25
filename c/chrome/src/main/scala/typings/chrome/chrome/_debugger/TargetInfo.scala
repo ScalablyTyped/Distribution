@@ -43,10 +43,10 @@ object TargetInfo {
     faviconUrl: String = null,
     tabId: Int | Double = null
   ): TargetInfo = {
-    val __obj = js.Dynamic.literal(attached = attached, id = id, title = title, url = url)
-    __obj.updateDynamic("type")(`type`)
-    if (extensionId != null) __obj.updateDynamic("extensionId")(extensionId)
-    if (faviconUrl != null) __obj.updateDynamic("faviconUrl")(faviconUrl)
+    val __obj = js.Dynamic.literal(attached = attached.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (extensionId != null) __obj.updateDynamic("extensionId")(extensionId.asInstanceOf[js.Any])
+    if (faviconUrl != null) __obj.updateDynamic("faviconUrl")(faviconUrl.asInstanceOf[js.Any])
     if (tabId != null) __obj.updateDynamic("tabId")(tabId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetInfo]
   }

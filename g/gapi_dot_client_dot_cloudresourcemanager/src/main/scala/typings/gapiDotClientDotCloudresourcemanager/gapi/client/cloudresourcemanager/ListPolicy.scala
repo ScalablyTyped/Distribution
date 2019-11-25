@@ -123,11 +123,11 @@ object ListPolicy {
     suggestedValue: String = null
   ): ListPolicy = {
     val __obj = js.Dynamic.literal()
-    if (allValues != null) __obj.updateDynamic("allValues")(allValues)
-    if (allowedValues != null) __obj.updateDynamic("allowedValues")(allowedValues)
-    if (deniedValues != null) __obj.updateDynamic("deniedValues")(deniedValues)
-    if (!js.isUndefined(inheritFromParent)) __obj.updateDynamic("inheritFromParent")(inheritFromParent)
-    if (suggestedValue != null) __obj.updateDynamic("suggestedValue")(suggestedValue)
+    if (allValues != null) __obj.updateDynamic("allValues")(allValues.asInstanceOf[js.Any])
+    if (allowedValues != null) __obj.updateDynamic("allowedValues")(allowedValues.asInstanceOf[js.Any])
+    if (deniedValues != null) __obj.updateDynamic("deniedValues")(deniedValues.asInstanceOf[js.Any])
+    if (!js.isUndefined(inheritFromParent)) __obj.updateDynamic("inheritFromParent")(inheritFromParent.asInstanceOf[js.Any])
+    if (suggestedValue != null) __obj.updateDynamic("suggestedValue")(suggestedValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPolicy]
   }
 }

@@ -57,11 +57,11 @@ object TokenizeOptions {
     tokenizeExpansionForms: js.UndefOr[Boolean] = js.undefined
   ): TokenizeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(escapedString)) __obj.updateDynamic("escapedString")(escapedString)
-    if (interpolationConfig != null) __obj.updateDynamic("interpolationConfig")(interpolationConfig)
-    if (leadingTriviaChars != null) __obj.updateDynamic("leadingTriviaChars")(leadingTriviaChars)
-    if (range != null) __obj.updateDynamic("range")(range)
-    if (!js.isUndefined(tokenizeExpansionForms)) __obj.updateDynamic("tokenizeExpansionForms")(tokenizeExpansionForms)
+    if (!js.isUndefined(escapedString)) __obj.updateDynamic("escapedString")(escapedString.asInstanceOf[js.Any])
+    if (interpolationConfig != null) __obj.updateDynamic("interpolationConfig")(interpolationConfig.asInstanceOf[js.Any])
+    if (leadingTriviaChars != null) __obj.updateDynamic("leadingTriviaChars")(leadingTriviaChars.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (!js.isUndefined(tokenizeExpansionForms)) __obj.updateDynamic("tokenizeExpansionForms")(tokenizeExpansionForms.asInstanceOf[js.Any])
     __obj.asInstanceOf[TokenizeOptions]
   }
 }

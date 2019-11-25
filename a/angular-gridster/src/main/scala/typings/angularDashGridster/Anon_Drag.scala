@@ -42,8 +42,8 @@ object Anon_Drag {
   ): Anon_Drag = {
     val __obj = js.Dynamic.literal()
     if (drag != null) __obj.updateDynamic("drag")(js.Any.fromFunction3(drag))
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (handle != null) __obj.updateDynamic("handle")(handle)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
     if (scrollSensitivity != null) __obj.updateDynamic("scrollSensitivity")(scrollSensitivity.asInstanceOf[js.Any])
     if (scrollSpeed != null) __obj.updateDynamic("scrollSpeed")(scrollSpeed.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction3(start))

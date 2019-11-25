@@ -20,10 +20,10 @@ object Anon_ColorOverlayContentBackground {
     titleColor: String = null
   ): Anon_ColorOverlayContentBackground = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (overlayContentBackground != null) __obj.updateDynamic("overlayContentBackground")(overlayContentBackground)
-    if (subtitleColor != null) __obj.updateDynamic("subtitleColor")(subtitleColor)
-    if (titleColor != null) __obj.updateDynamic("titleColor")(titleColor)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (overlayContentBackground != null) __obj.updateDynamic("overlayContentBackground")(overlayContentBackground.asInstanceOf[js.Any])
+    if (subtitleColor != null) __obj.updateDynamic("subtitleColor")(subtitleColor.asInstanceOf[js.Any])
+    if (titleColor != null) __obj.updateDynamic("titleColor")(titleColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ColorOverlayContentBackground]
   }
 }

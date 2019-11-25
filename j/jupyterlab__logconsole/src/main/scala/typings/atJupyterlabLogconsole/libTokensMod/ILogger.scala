@@ -78,7 +78,7 @@ object ILogger {
     stateChanged: ISignal[ILogger, IStateChange],
     version: Double
   ): ILogger = {
-    val __obj = js.Dynamic.literal(checkpoint = js.Any.fromFunction0(checkpoint), clear = js.Any.fromFunction0(clear), contentChanged = contentChanged, dispose = js.Any.fromFunction0(dispose), isDisposed = isDisposed, length = length, level = level, log = js.Any.fromFunction1(log), maxLength = maxLength, outputAreaModel = outputAreaModel, rendermime = rendermime, source = source, stateChanged = stateChanged, version = version)
+    val __obj = js.Dynamic.literal(checkpoint = js.Any.fromFunction0(checkpoint), clear = js.Any.fromFunction0(clear), contentChanged = contentChanged.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), isDisposed = isDisposed.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], log = js.Any.fromFunction1(log), maxLength = maxLength.asInstanceOf[js.Any], outputAreaModel = outputAreaModel.asInstanceOf[js.Any], rendermime = rendermime.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], stateChanged = stateChanged.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ILogger]
   }

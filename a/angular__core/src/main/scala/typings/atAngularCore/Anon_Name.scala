@@ -15,9 +15,9 @@ trait Anon_Name extends js.Object {
 object Anon_Name {
   @scala.inline
   def apply(providers: js.Array[StaticProvider], name: String = null, parent: Injector = null): Anon_Name = {
-    val __obj = js.Dynamic.literal(providers = providers)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
+    val __obj = js.Dynamic.literal(providers = providers.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Name]
   }
 }

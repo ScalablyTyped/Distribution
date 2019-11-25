@@ -12,7 +12,7 @@ trait Anon_Blending extends js.Object {
 object Anon_Blending {
   @scala.inline
   def apply(blending: IsBlending): Anon_Blending = {
-    val __obj = js.Dynamic.literal(blending = blending)
+    val __obj = js.Dynamic.literal(blending = blending.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Blending]
   }

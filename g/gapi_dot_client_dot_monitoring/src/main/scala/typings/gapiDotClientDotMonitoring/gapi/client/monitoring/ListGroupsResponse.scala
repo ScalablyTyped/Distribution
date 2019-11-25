@@ -18,8 +18,8 @@ object ListGroupsResponse {
   @scala.inline
   def apply(group: js.Array[Group] = null, nextPageToken: String = null): ListGroupsResponse = {
     val __obj = js.Dynamic.literal()
-    if (group != null) __obj.updateDynamic("group")(group)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListGroupsResponse]
   }
 }

@@ -63,12 +63,12 @@ object Anon_110 {
     SELECT: `8`,
     START: `9`
   ): Anon_110 = {
-    val __obj = js.Dynamic.literal(FACE_0 = FACE_0, FACE_3 = FACE_3, FACE_4 = FACE_4, LEFT_ANALOGUE_STICK = LEFT_ANALOGUE_STICK, LEFT_SHOULDER = LEFT_SHOULDER, LEFT_SHOULDER_BOTTOM = LEFT_SHOULDER_BOTTOM, RIGHT_ANALOGUE_STICK = RIGHT_ANALOGUE_STICK, RIGHT_SHOULDER = RIGHT_SHOULDER, RIGHT_SHOULDER_BOTTOM = RIGHT_SHOULDER_BOTTOM, SELECT = SELECT, START = START)
-    __obj.updateDynamic("32")(`32`)
-    __obj.updateDynamic("37")(`37`)
-    __obj.updateDynamic("38")(`38`)
-    __obj.updateDynamic("39")(`39`)
-    __obj.updateDynamic("40")(`40`)
+    val __obj = js.Dynamic.literal(FACE_0 = FACE_0.asInstanceOf[js.Any], FACE_3 = FACE_3.asInstanceOf[js.Any], FACE_4 = FACE_4.asInstanceOf[js.Any], LEFT_ANALOGUE_STICK = LEFT_ANALOGUE_STICK.asInstanceOf[js.Any], LEFT_SHOULDER = LEFT_SHOULDER.asInstanceOf[js.Any], LEFT_SHOULDER_BOTTOM = LEFT_SHOULDER_BOTTOM.asInstanceOf[js.Any], RIGHT_ANALOGUE_STICK = RIGHT_ANALOGUE_STICK.asInstanceOf[js.Any], RIGHT_SHOULDER = RIGHT_SHOULDER.asInstanceOf[js.Any], RIGHT_SHOULDER_BOTTOM = RIGHT_SHOULDER_BOTTOM.asInstanceOf[js.Any], SELECT = SELECT.asInstanceOf[js.Any], START = START.asInstanceOf[js.Any])
+    __obj.updateDynamic("32")(`32`.asInstanceOf[js.Any])
+    __obj.updateDynamic("37")(`37`.asInstanceOf[js.Any])
+    __obj.updateDynamic("38")(`38`.asInstanceOf[js.Any])
+    __obj.updateDynamic("39")(`39`.asInstanceOf[js.Any])
+    __obj.updateDynamic("40")(`40`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_110]
   }
 }

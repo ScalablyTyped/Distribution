@@ -16,7 +16,7 @@ trait Anon_EventValueElement extends js.Object {
 object Anon_EventValueElement {
   @scala.inline
   def apply(event: SyntheticEvent[FocusEvent[Element], Event], value: String): Anon_EventValueElement = {
-    val __obj = js.Dynamic.literal(event = event, value = value)
+    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EventValueElement]
   }

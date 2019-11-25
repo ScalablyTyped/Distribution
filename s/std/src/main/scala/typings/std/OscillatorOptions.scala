@@ -24,12 +24,12 @@ object OscillatorOptions {
   ): OscillatorOptions = {
     val __obj = js.Dynamic.literal()
     if (channelCount != null) __obj.updateDynamic("channelCount")(channelCount.asInstanceOf[js.Any])
-    if (channelCountMode != null) __obj.updateDynamic("channelCountMode")(channelCountMode)
-    if (channelInterpretation != null) __obj.updateDynamic("channelInterpretation")(channelInterpretation)
+    if (channelCountMode != null) __obj.updateDynamic("channelCountMode")(channelCountMode.asInstanceOf[js.Any])
+    if (channelInterpretation != null) __obj.updateDynamic("channelInterpretation")(channelInterpretation.asInstanceOf[js.Any])
     if (detune != null) __obj.updateDynamic("detune")(detune.asInstanceOf[js.Any])
     if (frequency != null) __obj.updateDynamic("frequency")(frequency.asInstanceOf[js.Any])
-    if (periodicWave != null) __obj.updateDynamic("periodicWave")(periodicWave)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (periodicWave != null) __obj.updateDynamic("periodicWave")(periodicWave.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[OscillatorOptions]
   }
 }

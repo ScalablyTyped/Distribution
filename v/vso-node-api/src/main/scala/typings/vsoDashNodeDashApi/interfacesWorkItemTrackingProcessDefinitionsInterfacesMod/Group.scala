@@ -61,7 +61,7 @@ object Group {
     overridden: Boolean,
     visible: Boolean
   ): Group = {
-    val __obj = js.Dynamic.literal(contribution = contribution, controls = controls, height = height, id = id, inherited = inherited, isContribution = isContribution, label = label, order = order, overridden = overridden, visible = visible)
+    val __obj = js.Dynamic.literal(contribution = contribution.asInstanceOf[js.Any], controls = controls.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], inherited = inherited.asInstanceOf[js.Any], isContribution = isContribution.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any], overridden = overridden.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Group]
   }

@@ -58,10 +58,10 @@ object Anon_ChildrenLink {
     tooltip: Anon_BackgroundColorBorderColor = null
   ): Anon_ChildrenLink = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (link != null) __obj.updateDynamic("link")(link)
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ChildrenLink]
   }
 }

@@ -12,7 +12,7 @@ trait Argon2Error extends js.Object {
 object Argon2Error {
   @scala.inline
   def apply(code: Double, message: String): Argon2Error = {
-    val __obj = js.Dynamic.literal(code = code, message = message)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Argon2Error]
   }

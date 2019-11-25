@@ -30,7 +30,7 @@ object LayoutMixin {
     x: Double,
     y: Double
   ): LayoutMixin = {
-    val __obj = js.Dynamic.literal(absoluteTransform = absoluteTransform, height = height, relativeTransform = relativeTransform, resize = js.Any.fromFunction2(resize), resizeWithoutConstraints = js.Any.fromFunction2(resizeWithoutConstraints), rotation = rotation, width = width, x = x, y = y)
+    val __obj = js.Dynamic.literal(absoluteTransform = absoluteTransform.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], relativeTransform = relativeTransform.asInstanceOf[js.Any], resize = js.Any.fromFunction2(resize), resizeWithoutConstraints = js.Any.fromFunction2(resizeWithoutConstraints), rotation = rotation.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LayoutMixin]
   }

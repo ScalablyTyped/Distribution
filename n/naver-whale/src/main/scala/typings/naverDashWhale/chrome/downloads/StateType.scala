@@ -13,7 +13,7 @@ trait StateType extends js.Object {
 object StateType {
   @scala.inline
   def apply(COMPLETE: String, INTERRUPTED: String, IN_PROGRESS: String): StateType = {
-    val __obj = js.Dynamic.literal(COMPLETE = COMPLETE, INTERRUPTED = INTERRUPTED, IN_PROGRESS = IN_PROGRESS)
+    val __obj = js.Dynamic.literal(COMPLETE = COMPLETE.asInstanceOf[js.Any], INTERRUPTED = INTERRUPTED.asInstanceOf[js.Any], IN_PROGRESS = IN_PROGRESS.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StateType]
   }

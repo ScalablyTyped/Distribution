@@ -26,8 +26,8 @@ object GoogleActionsOrdersV3VerticalsPurchasePickupInfoCurbsideInfo {
     userVehicle: GoogleActionsOrdersV3VerticalsCommonVehicle = null
   ): GoogleActionsOrdersV3VerticalsPurchasePickupInfoCurbsideInfo = {
     val __obj = js.Dynamic.literal()
-    if (curbsideFulfillmentType != null) __obj.updateDynamic("curbsideFulfillmentType")(curbsideFulfillmentType)
-    if (userVehicle != null) __obj.updateDynamic("userVehicle")(userVehicle)
+    if (curbsideFulfillmentType != null) __obj.updateDynamic("curbsideFulfillmentType")(curbsideFulfillmentType.asInstanceOf[js.Any])
+    if (userVehicle != null) __obj.updateDynamic("userVehicle")(userVehicle.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsOrdersV3VerticalsPurchasePickupInfoCurbsideInfo]
   }
 }

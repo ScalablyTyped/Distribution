@@ -19,9 +19,9 @@ object IEventInput {
   @scala.inline
   def apply(languageCode: String = null, name: String = null, parameters: IStruct = null): IEventInput = {
     val __obj = js.Dynamic.literal()
-    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
+    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEventInput]
   }
 }

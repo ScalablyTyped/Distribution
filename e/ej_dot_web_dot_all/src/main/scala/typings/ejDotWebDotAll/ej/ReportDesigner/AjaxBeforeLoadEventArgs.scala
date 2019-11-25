@@ -32,11 +32,11 @@ object AjaxBeforeLoadEventArgs {
     serviceAuthorizationToken: String = null
   ): AjaxBeforeLoadEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (actionType != null) __obj.updateDynamic("actionType")(actionType)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (reportDesignerToken != null) __obj.updateDynamic("reportDesignerToken")(reportDesignerToken)
-    if (serviceAuthorizationToken != null) __obj.updateDynamic("serviceAuthorizationToken")(serviceAuthorizationToken)
+    if (actionType != null) __obj.updateDynamic("actionType")(actionType.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (reportDesignerToken != null) __obj.updateDynamic("reportDesignerToken")(reportDesignerToken.asInstanceOf[js.Any])
+    if (serviceAuthorizationToken != null) __obj.updateDynamic("serviceAuthorizationToken")(serviceAuthorizationToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[AjaxBeforeLoadEventArgs]
   }
 }

@@ -44,11 +44,11 @@ object MigrationsStartImportParams {
     vcs_password: String = null,
     vcs_username: String = null
   ): MigrationsStartImportParams = {
-    val __obj = js.Dynamic.literal(owner = owner, repo = repo, vcs_url = vcs_url)
-    if (tfvc_project != null) __obj.updateDynamic("tfvc_project")(tfvc_project)
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], vcs_url = vcs_url.asInstanceOf[js.Any])
+    if (tfvc_project != null) __obj.updateDynamic("tfvc_project")(tfvc_project.asInstanceOf[js.Any])
     if (vcs != null) __obj.updateDynamic("vcs")(vcs.asInstanceOf[js.Any])
-    if (vcs_password != null) __obj.updateDynamic("vcs_password")(vcs_password)
-    if (vcs_username != null) __obj.updateDynamic("vcs_username")(vcs_username)
+    if (vcs_password != null) __obj.updateDynamic("vcs_password")(vcs_password.asInstanceOf[js.Any])
+    if (vcs_username != null) __obj.updateDynamic("vcs_username")(vcs_username.asInstanceOf[js.Any])
     __obj.asInstanceOf[MigrationsStartImportParams]
   }
 }

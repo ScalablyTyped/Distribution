@@ -65,14 +65,14 @@ object UpdateAliasInput {
     RevisionId: String = null,
     RoutingConfig: _AliasRoutingConfiguration = null
   ): UpdateAliasInput = {
-    val __obj = js.Dynamic.literal(FunctionName = FunctionName, Name = Name)
-    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal)
-    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions)
+    val __obj = js.Dynamic.literal(FunctionName = FunctionName.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
+    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal.asInstanceOf[js.Any])
+    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions.asInstanceOf[js.Any])
     if ($maxRetries != null) __obj.updateDynamic("$maxRetries")($maxRetries.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description)
-    if (FunctionVersion != null) __obj.updateDynamic("FunctionVersion")(FunctionVersion)
-    if (RevisionId != null) __obj.updateDynamic("RevisionId")(RevisionId)
-    if (RoutingConfig != null) __obj.updateDynamic("RoutingConfig")(RoutingConfig)
+    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
+    if (FunctionVersion != null) __obj.updateDynamic("FunctionVersion")(FunctionVersion.asInstanceOf[js.Any])
+    if (RevisionId != null) __obj.updateDynamic("RevisionId")(RevisionId.asInstanceOf[js.Any])
+    if (RoutingConfig != null) __obj.updateDynamic("RoutingConfig")(RoutingConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateAliasInput]
   }
 }

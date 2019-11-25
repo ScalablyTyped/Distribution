@@ -23,10 +23,10 @@ object Anon_BodyCommentsExtends {
     `extends`: js.Array[InterfaceExtendsKind] = null,
     loc: SourceLocationKind = null
   ): Anon_BodyCommentsExtends = {
-    val __obj = js.Dynamic.literal(body = body)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (`extends` != null) __obj.updateDynamic("extends")(`extends`)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (`extends` != null) __obj.updateDynamic("extends")(`extends`.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BodyCommentsExtends]
   }
 }

@@ -34,17 +34,17 @@ object ExternalDataConfiguration {
     sourceUris: js.Array[String] = null
   ): ExternalDataConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autodetect)) __obj.updateDynamic("autodetect")(autodetect)
-    if (bigtableOptions != null) __obj.updateDynamic("bigtableOptions")(bigtableOptions)
-    if (compression != null) __obj.updateDynamic("compression")(compression)
-    if (csvOptions != null) __obj.updateDynamic("csvOptions")(csvOptions)
-    if (googleSheetsOptions != null) __obj.updateDynamic("googleSheetsOptions")(googleSheetsOptions)
-    if (hivePartitioningMode != null) __obj.updateDynamic("hivePartitioningMode")(hivePartitioningMode)
-    if (!js.isUndefined(ignoreUnknownValues)) __obj.updateDynamic("ignoreUnknownValues")(ignoreUnknownValues)
+    if (!js.isUndefined(autodetect)) __obj.updateDynamic("autodetect")(autodetect.asInstanceOf[js.Any])
+    if (bigtableOptions != null) __obj.updateDynamic("bigtableOptions")(bigtableOptions.asInstanceOf[js.Any])
+    if (compression != null) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
+    if (csvOptions != null) __obj.updateDynamic("csvOptions")(csvOptions.asInstanceOf[js.Any])
+    if (googleSheetsOptions != null) __obj.updateDynamic("googleSheetsOptions")(googleSheetsOptions.asInstanceOf[js.Any])
+    if (hivePartitioningMode != null) __obj.updateDynamic("hivePartitioningMode")(hivePartitioningMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreUnknownValues)) __obj.updateDynamic("ignoreUnknownValues")(ignoreUnknownValues.asInstanceOf[js.Any])
     if (maxBadRecords != null) __obj.updateDynamic("maxBadRecords")(maxBadRecords.asInstanceOf[js.Any])
-    if (schema != null) __obj.updateDynamic("schema")(schema)
-    if (sourceFormat != null) __obj.updateDynamic("sourceFormat")(sourceFormat)
-    if (sourceUris != null) __obj.updateDynamic("sourceUris")(sourceUris)
+    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
+    if (sourceFormat != null) __obj.updateDynamic("sourceFormat")(sourceFormat.asInstanceOf[js.Any])
+    if (sourceUris != null) __obj.updateDynamic("sourceUris")(sourceUris.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExternalDataConfiguration]
   }
 }

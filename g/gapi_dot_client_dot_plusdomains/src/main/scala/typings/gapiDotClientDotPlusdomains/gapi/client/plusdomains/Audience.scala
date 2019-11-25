@@ -33,11 +33,11 @@ object Audience {
     visibility: String = null
   ): Audience = {
     val __obj = js.Dynamic.literal()
-    if (etag != null) __obj.updateDynamic("etag")(etag)
-    if (item != null) __obj.updateDynamic("item")(item)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (memberCount != null) __obj.updateDynamic("memberCount")(memberCount.asInstanceOf[js.Any])
-    if (visibility != null) __obj.updateDynamic("visibility")(visibility)
+    if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[Audience]
   }
 }

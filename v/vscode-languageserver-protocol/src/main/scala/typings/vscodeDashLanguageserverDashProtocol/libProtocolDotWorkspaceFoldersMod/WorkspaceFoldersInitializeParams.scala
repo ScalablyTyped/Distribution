@@ -15,7 +15,7 @@ object WorkspaceFoldersInitializeParams {
   @scala.inline
   def apply(workspaceFolders: js.Array[WorkspaceFolder] = null): WorkspaceFoldersInitializeParams = {
     val __obj = js.Dynamic.literal()
-    if (workspaceFolders != null) __obj.updateDynamic("workspaceFolders")(workspaceFolders)
+    if (workspaceFolders != null) __obj.updateDynamic("workspaceFolders")(workspaceFolders.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkspaceFoldersInitializeParams]
   }
 }

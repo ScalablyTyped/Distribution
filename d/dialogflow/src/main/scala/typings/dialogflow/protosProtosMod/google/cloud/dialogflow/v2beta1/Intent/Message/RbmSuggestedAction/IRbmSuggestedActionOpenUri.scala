@@ -14,7 +14,7 @@ object IRbmSuggestedActionOpenUri {
   @scala.inline
   def apply(uri: String = null): IRbmSuggestedActionOpenUri = {
     val __obj = js.Dynamic.literal()
-    if (uri != null) __obj.updateDynamic("uri")(uri)
+    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRbmSuggestedActionOpenUri]
   }
 }

@@ -91,17 +91,17 @@ object Palette {
     E: String,
     F: String
   ): Palette = {
-    val __obj = js.Dynamic.literal(A = A, B = B, C = C, D = D, E = E, F = F)
-    __obj.updateDynamic("0")(`0`)
-    __obj.updateDynamic("1")(`1`)
-    __obj.updateDynamic("2")(`2`)
-    __obj.updateDynamic("3")(`3`)
-    __obj.updateDynamic("4")(`4`)
-    __obj.updateDynamic("5")(`5`)
-    __obj.updateDynamic("6")(`6`)
-    __obj.updateDynamic("7")(`7`)
-    __obj.updateDynamic("8")(`8`)
-    __obj.updateDynamic("9")(`9`)
+    val __obj = js.Dynamic.literal(A = A.asInstanceOf[js.Any], B = B.asInstanceOf[js.Any], C = C.asInstanceOf[js.Any], D = D.asInstanceOf[js.Any], E = E.asInstanceOf[js.Any], F = F.asInstanceOf[js.Any])
+    __obj.updateDynamic("0")(`0`.asInstanceOf[js.Any])
+    __obj.updateDynamic("1")(`1`.asInstanceOf[js.Any])
+    __obj.updateDynamic("2")(`2`.asInstanceOf[js.Any])
+    __obj.updateDynamic("3")(`3`.asInstanceOf[js.Any])
+    __obj.updateDynamic("4")(`4`.asInstanceOf[js.Any])
+    __obj.updateDynamic("5")(`5`.asInstanceOf[js.Any])
+    __obj.updateDynamic("6")(`6`.asInstanceOf[js.Any])
+    __obj.updateDynamic("7")(`7`.asInstanceOf[js.Any])
+    __obj.updateDynamic("8")(`8`.asInstanceOf[js.Any])
+    __obj.updateDynamic("9")(`9`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Palette]
   }
 }

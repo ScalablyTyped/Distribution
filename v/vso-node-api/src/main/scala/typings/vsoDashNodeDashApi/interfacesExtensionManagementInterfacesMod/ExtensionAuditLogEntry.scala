@@ -28,7 +28,7 @@ trait ExtensionAuditLogEntry extends js.Object {
 object ExtensionAuditLogEntry {
   @scala.inline
   def apply(auditAction: String, auditDate: Date, comment: String, updatedBy: IdentityRef): ExtensionAuditLogEntry = {
-    val __obj = js.Dynamic.literal(auditAction = auditAction, auditDate = auditDate, comment = comment, updatedBy = updatedBy)
+    val __obj = js.Dynamic.literal(auditAction = auditAction.asInstanceOf[js.Any], auditDate = auditDate.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], updatedBy = updatedBy.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExtensionAuditLogEntry]
   }

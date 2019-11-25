@@ -41,7 +41,7 @@ object IGenericDimensionInfo {
     qIsSemantic: Boolean,
     qTags: js.Array[String]
   ): IGenericDimensionInfo = {
-    val __obj = js.Dynamic.literal(qAndMode = qAndMode, qApprMaxGlyphCount = qApprMaxGlyphCount, qCardinal = qCardinal, qIsSemantic = qIsSemantic, qTags = qTags)
+    val __obj = js.Dynamic.literal(qAndMode = qAndMode.asInstanceOf[js.Any], qApprMaxGlyphCount = qApprMaxGlyphCount.asInstanceOf[js.Any], qCardinal = qCardinal.asInstanceOf[js.Any], qIsSemantic = qIsSemantic.asInstanceOf[js.Any], qTags = qTags.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IGenericDimensionInfo]
   }

@@ -12,7 +12,7 @@ object InlineObjectPropertiesSuggestionState {
   @scala.inline
   def apply(embeddedObjectSuggestionState: EmbeddedObjectSuggestionState = null): InlineObjectPropertiesSuggestionState = {
     val __obj = js.Dynamic.literal()
-    if (embeddedObjectSuggestionState != null) __obj.updateDynamic("embeddedObjectSuggestionState")(embeddedObjectSuggestionState)
+    if (embeddedObjectSuggestionState != null) __obj.updateDynamic("embeddedObjectSuggestionState")(embeddedObjectSuggestionState.asInstanceOf[js.Any])
     __obj.asInstanceOf[InlineObjectPropertiesSuggestionState]
   }
 }

@@ -16,7 +16,7 @@ object X11Options {
   def apply(screen: Int | Double = null, single: js.UndefOr[Boolean] = js.undefined): X11Options = {
     val __obj = js.Dynamic.literal()
     if (screen != null) __obj.updateDynamic("screen")(screen.asInstanceOf[js.Any])
-    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single)
+    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single.asInstanceOf[js.Any])
     __obj.asInstanceOf[X11Options]
   }
 }

@@ -17,8 +17,8 @@ object Anon_JsonpScript {
     requireExtensions: SyncWaterfallHook[String, Chunk, String],
     jsonpScript: SyncWaterfallHook[String, Chunk, String] = null
   ): Anon_JsonpScript = {
-    val __obj = js.Dynamic.literal(requireExtensions = requireExtensions)
-    if (jsonpScript != null) __obj.updateDynamic("jsonpScript")(jsonpScript)
+    val __obj = js.Dynamic.literal(requireExtensions = requireExtensions.asInstanceOf[js.Any])
+    if (jsonpScript != null) __obj.updateDynamic("jsonpScript")(jsonpScript.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_JsonpScript]
   }
 }

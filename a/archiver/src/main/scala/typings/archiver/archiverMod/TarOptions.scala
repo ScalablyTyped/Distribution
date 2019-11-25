@@ -14,8 +14,8 @@ object TarOptions {
   @scala.inline
   def apply(gzip: js.UndefOr[Boolean] = js.undefined, gzipOptions: ZlibOptions = null): TarOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(gzip)) __obj.updateDynamic("gzip")(gzip)
-    if (gzipOptions != null) __obj.updateDynamic("gzipOptions")(gzipOptions)
+    if (!js.isUndefined(gzip)) __obj.updateDynamic("gzip")(gzip.asInstanceOf[js.Any])
+    if (gzipOptions != null) __obj.updateDynamic("gzipOptions")(gzipOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[TarOptions]
   }
 }

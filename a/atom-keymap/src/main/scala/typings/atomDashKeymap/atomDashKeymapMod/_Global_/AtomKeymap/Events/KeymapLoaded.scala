@@ -12,7 +12,7 @@ trait KeymapLoaded extends js.Object {
 object KeymapLoaded {
   @scala.inline
   def apply(path: String): KeymapLoaded = {
-    val __obj = js.Dynamic.literal(path = path)
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[KeymapLoaded]
   }

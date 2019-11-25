@@ -17,7 +17,7 @@ trait Stats extends js.Object {
 object Stats {
   @scala.inline
   def apply(downloaded: Double, progress: Double, speed: Double, total: Double): Stats = {
-    val __obj = js.Dynamic.literal(downloaded = downloaded, progress = progress, speed = speed, total = total)
+    val __obj = js.Dynamic.literal(downloaded = downloaded.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], speed = speed.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Stats]
   }

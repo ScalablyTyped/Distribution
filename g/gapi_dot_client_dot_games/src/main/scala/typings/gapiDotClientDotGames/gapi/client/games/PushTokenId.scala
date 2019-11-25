@@ -16,8 +16,8 @@ object PushTokenId {
   @scala.inline
   def apply(ios: Anon_Apnsdevicetoken = null, kind: String = null): PushTokenId = {
     val __obj = js.Dynamic.literal()
-    if (ios != null) __obj.updateDynamic("ios")(ios)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (ios != null) __obj.updateDynamic("ios")(ios.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[PushTokenId]
   }
 }

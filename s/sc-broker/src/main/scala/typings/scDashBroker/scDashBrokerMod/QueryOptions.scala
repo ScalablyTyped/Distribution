@@ -15,9 +15,9 @@ object QueryOptions {
   @scala.inline
   def apply(baseKey: KeyChain = null, data: js.Any = null, noAck: js.UndefOr[Boolean] = js.undefined): QueryOptions = {
     val __obj = js.Dynamic.literal()
-    if (baseKey != null) __obj.updateDynamic("baseKey")(baseKey)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (!js.isUndefined(noAck)) __obj.updateDynamic("noAck")(noAck)
+    if (baseKey != null) __obj.updateDynamic("baseKey")(baseKey.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (!js.isUndefined(noAck)) __obj.updateDynamic("noAck")(noAck.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryOptions]
   }
 }

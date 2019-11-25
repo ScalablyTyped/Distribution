@@ -24,8 +24,8 @@ object GoogleActionsV2SignedData {
   @scala.inline
   def apply(inAppDataSignature: String = null, inAppPurchaseData: ApiClientObjectMap[_] = null): GoogleActionsV2SignedData = {
     val __obj = js.Dynamic.literal()
-    if (inAppDataSignature != null) __obj.updateDynamic("inAppDataSignature")(inAppDataSignature)
-    if (inAppPurchaseData != null) __obj.updateDynamic("inAppPurchaseData")(inAppPurchaseData)
+    if (inAppDataSignature != null) __obj.updateDynamic("inAppDataSignature")(inAppDataSignature.asInstanceOf[js.Any])
+    if (inAppPurchaseData != null) __obj.updateDynamic("inAppPurchaseData")(inAppPurchaseData.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2SignedData]
   }
 }

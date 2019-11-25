@@ -12,8 +12,8 @@ trait QueryType extends js.Object {
 object QueryType {
   @scala.inline
   def apply(sql: String, values: js.Array[PrimitiveValueExpressionType] = null): QueryType = {
-    val __obj = js.Dynamic.literal(sql = sql)
-    if (values != null) __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(sql = sql.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryType]
   }
 }

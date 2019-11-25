@@ -15,7 +15,7 @@ trait Anon_FocusOnUpDown extends js.Object {
 object Anon_FocusOnUpDown {
   @scala.inline
   def apply(focusOnUpDown: Boolean, prefixCls: String, readOnly: Boolean, showNumber: Boolean, step: Double): Anon_FocusOnUpDown = {
-    val __obj = js.Dynamic.literal(focusOnUpDown = focusOnUpDown, prefixCls = prefixCls, readOnly = readOnly, showNumber = showNumber, step = step)
+    val __obj = js.Dynamic.literal(focusOnUpDown = focusOnUpDown.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], readOnly = readOnly.asInstanceOf[js.Any], showNumber = showNumber.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FocusOnUpDown]
   }

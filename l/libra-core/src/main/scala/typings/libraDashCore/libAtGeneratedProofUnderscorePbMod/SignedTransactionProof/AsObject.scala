@@ -20,8 +20,8 @@ object AsObject {
     transactionInfo: typings.libraDashCore.libAtGeneratedTransactionUnderscoreInfoUnderscorePbMod.TransactionInfo.AsObject = null
   ): AsObject = {
     val __obj = js.Dynamic.literal()
-    if (ledgerInfoToTransactionInfoProof != null) __obj.updateDynamic("ledgerInfoToTransactionInfoProof")(ledgerInfoToTransactionInfoProof)
-    if (transactionInfo != null) __obj.updateDynamic("transactionInfo")(transactionInfo)
+    if (ledgerInfoToTransactionInfoProof != null) __obj.updateDynamic("ledgerInfoToTransactionInfoProof")(ledgerInfoToTransactionInfoProof.asInstanceOf[js.Any])
+    if (transactionInfo != null) __obj.updateDynamic("transactionInfo")(transactionInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsObject]
   }
 }

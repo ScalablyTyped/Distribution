@@ -21,8 +21,8 @@ object DateTimePickerMessages {
   @scala.inline
   def apply(dateButton: String = null, timeButton: String = null): DateTimePickerMessages = {
     val __obj = js.Dynamic.literal()
-    if (dateButton != null) __obj.updateDynamic("dateButton")(dateButton)
-    if (timeButton != null) __obj.updateDynamic("timeButton")(timeButton)
+    if (dateButton != null) __obj.updateDynamic("dateButton")(dateButton.asInstanceOf[js.Any])
+    if (timeButton != null) __obj.updateDynamic("timeButton")(timeButton.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateTimePickerMessages]
   }
 }

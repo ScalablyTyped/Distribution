@@ -18,7 +18,7 @@ object CloudPushNotificationErrorArg {
   @scala.inline
   def apply(error: String = null): CloudPushNotificationErrorArg = {
     val __obj = js.Dynamic.literal()
-    if (error != null) __obj.updateDynamic("error")(error)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloudPushNotificationErrorArg]
   }
 }

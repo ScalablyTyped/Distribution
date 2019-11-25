@@ -28,9 +28,9 @@ object FileDescriptor {
     chunk: Chunk = null,
     name: String = null
   ): FileDescriptor = {
-    val __obj = js.Dynamic.literal(isAsset = isAsset, isChunk = isChunk, isInitial = isInitial, isModuleAsset = isModuleAsset, path = path)
-    if (chunk != null) __obj.updateDynamic("chunk")(chunk)
-    if (name != null) __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(isAsset = isAsset.asInstanceOf[js.Any], isChunk = isChunk.asInstanceOf[js.Any], isInitial = isInitial.asInstanceOf[js.Any], isModuleAsset = isModuleAsset.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    if (chunk != null) __obj.updateDynamic("chunk")(chunk.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileDescriptor]
   }
 }

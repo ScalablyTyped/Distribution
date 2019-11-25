@@ -15,8 +15,8 @@ object Anon_Config {
   @scala.inline
   def apply[ListNames /* <: String */](list: ListNames, `type`: BaseAuthStrategy, config: js.Any = null): Anon_Config[ListNames] = {
     val __obj = js.Dynamic.literal(list = list.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
-    if (config != null) __obj.updateDynamic("config")(config)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Config[ListNames]]
   }
 }

@@ -39,11 +39,11 @@ object GetVaultLockOutput {
     Policy: String = null,
     State: String = null
   ): GetVaultLockOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate)
-    if (ExpirationDate != null) __obj.updateDynamic("ExpirationDate")(ExpirationDate)
-    if (Policy != null) __obj.updateDynamic("Policy")(Policy)
-    if (State != null) __obj.updateDynamic("State")(State)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
+    if (ExpirationDate != null) __obj.updateDynamic("ExpirationDate")(ExpirationDate.asInstanceOf[js.Any])
+    if (Policy != null) __obj.updateDynamic("Policy")(Policy.asInstanceOf[js.Any])
+    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetVaultLockOutput]
   }
 }

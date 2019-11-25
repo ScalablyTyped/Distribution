@@ -13,7 +13,7 @@ object RollbackRequest {
   @scala.inline
   def apply(transactionId: String = null): RollbackRequest = {
     val __obj = js.Dynamic.literal()
-    if (transactionId != null) __obj.updateDynamic("transactionId")(transactionId)
+    if (transactionId != null) __obj.updateDynamic("transactionId")(transactionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RollbackRequest]
   }
 }

@@ -11,7 +11,7 @@ trait CreatePayload extends js.Object {
 object CreatePayload {
   @scala.inline
   def apply(identity: typings.nodeDashZendesk.nodeDashZendeskMod.Users.Identities.CreateModel): CreatePayload = {
-    val __obj = js.Dynamic.literal(identity = identity)
+    val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CreatePayload]
   }

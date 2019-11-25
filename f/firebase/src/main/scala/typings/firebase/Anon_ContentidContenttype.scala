@@ -21,10 +21,10 @@ object Anon_ContentidContenttype {
     method: String = null
   ): Anon_ContentidContenttype = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (content_id != null) __obj.updateDynamic("content_id")(content_id)
-    if (content_type != null) __obj.updateDynamic("content_type")(content_type)
-    if (method != null) __obj.updateDynamic("method")(method)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (content_id != null) __obj.updateDynamic("content_id")(content_id.asInstanceOf[js.Any])
+    if (content_type != null) __obj.updateDynamic("content_type")(content_type.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ContentidContenttype]
   }
 }

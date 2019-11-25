@@ -13,7 +13,7 @@ trait Anon_Query extends js.Object {
 object Anon_Query {
   @scala.inline
   def apply(query: String, result: SearchResult[js.Object]): Anon_Query = {
-    val __obj = js.Dynamic.literal(query = query, result = result)
+    val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Query]
   }

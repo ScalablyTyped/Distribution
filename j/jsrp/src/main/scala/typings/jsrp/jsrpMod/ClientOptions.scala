@@ -15,7 +15,7 @@ trait ClientOptions extends js.Object {
 object ClientOptions {
   @scala.inline
   def apply(password: String, username: String, length: `2048` | `4096` = null): ClientOptions = {
-    val __obj = js.Dynamic.literal(password = password, username = username)
+    val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientOptions]
   }

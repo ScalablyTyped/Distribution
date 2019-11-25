@@ -22,11 +22,11 @@ object PoolOptions {
     systemNaming: js.Any = null
   ): PoolOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoCleanIdle)) __obj.updateDynamic("autoCleanIdle")(autoCleanIdle)
+    if (!js.isUndefined(autoCleanIdle)) __obj.updateDynamic("autoCleanIdle")(autoCleanIdle.asInstanceOf[js.Any])
     if (connectTimeout != null) __obj.updateDynamic("connectTimeout")(connectTimeout.asInstanceOf[js.Any])
     if (idleTimeout != null) __obj.updateDynamic("idleTimeout")(idleTimeout.asInstanceOf[js.Any])
     if (maxPoolSize != null) __obj.updateDynamic("maxPoolSize")(maxPoolSize.asInstanceOf[js.Any])
-    if (systemNaming != null) __obj.updateDynamic("systemNaming")(systemNaming)
+    if (systemNaming != null) __obj.updateDynamic("systemNaming")(systemNaming.asInstanceOf[js.Any])
     __obj.asInstanceOf[PoolOptions]
   }
 }

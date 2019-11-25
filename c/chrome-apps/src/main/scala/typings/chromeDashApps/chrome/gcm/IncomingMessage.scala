@@ -23,9 +23,9 @@ trait IncomingMessage extends js.Object {
 object IncomingMessage {
   @scala.inline
   def apply(data: IGCMDataReceive, collapseKey: String = null, from: String = null): IncomingMessage = {
-    val __obj = js.Dynamic.literal(data = data)
-    if (collapseKey != null) __obj.updateDynamic("collapseKey")(collapseKey)
-    if (from != null) __obj.updateDynamic("from")(from)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
+    if (collapseKey != null) __obj.updateDynamic("collapseKey")(collapseKey.asInstanceOf[js.Any])
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
     __obj.asInstanceOf[IncomingMessage]
   }
 }

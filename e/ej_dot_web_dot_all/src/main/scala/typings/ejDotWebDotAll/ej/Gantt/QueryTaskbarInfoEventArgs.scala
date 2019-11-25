@@ -64,19 +64,19 @@ object QueryTaskbarInfoEventArgs {
     taskbarTextColor: String = null
   ): QueryTaskbarInfoEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (baselineBackground != null) __obj.updateDynamic("baselineBackground")(baselineBackground)
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (milestoneBackground != null) __obj.updateDynamic("milestoneBackground")(milestoneBackground)
-    if (parentProgressbarBackground != null) __obj.updateDynamic("parentProgressbarBackground")(parentProgressbarBackground)
-    if (parentProgressbarBorder != null) __obj.updateDynamic("parentProgressbarBorder")(parentProgressbarBorder)
-    if (parentTaskbarBackground != null) __obj.updateDynamic("parentTaskbarBackground")(parentTaskbarBackground)
-    if (parentTaskbarBorder != null) __obj.updateDynamic("parentTaskbarBorder")(parentTaskbarBorder)
-    if (progressbarBackground != null) __obj.updateDynamic("progressbarBackground")(progressbarBackground)
-    if (progressbarBorder != null) __obj.updateDynamic("progressbarBorder")(progressbarBorder)
-    if (taskbarBackground != null) __obj.updateDynamic("taskbarBackground")(taskbarBackground)
-    if (taskbarBorder != null) __obj.updateDynamic("taskbarBorder")(taskbarBorder)
-    if (taskbarTextColor != null) __obj.updateDynamic("taskbarTextColor")(taskbarTextColor)
+    if (baselineBackground != null) __obj.updateDynamic("baselineBackground")(baselineBackground.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (milestoneBackground != null) __obj.updateDynamic("milestoneBackground")(milestoneBackground.asInstanceOf[js.Any])
+    if (parentProgressbarBackground != null) __obj.updateDynamic("parentProgressbarBackground")(parentProgressbarBackground.asInstanceOf[js.Any])
+    if (parentProgressbarBorder != null) __obj.updateDynamic("parentProgressbarBorder")(parentProgressbarBorder.asInstanceOf[js.Any])
+    if (parentTaskbarBackground != null) __obj.updateDynamic("parentTaskbarBackground")(parentTaskbarBackground.asInstanceOf[js.Any])
+    if (parentTaskbarBorder != null) __obj.updateDynamic("parentTaskbarBorder")(parentTaskbarBorder.asInstanceOf[js.Any])
+    if (progressbarBackground != null) __obj.updateDynamic("progressbarBackground")(progressbarBackground.asInstanceOf[js.Any])
+    if (progressbarBorder != null) __obj.updateDynamic("progressbarBorder")(progressbarBorder.asInstanceOf[js.Any])
+    if (taskbarBackground != null) __obj.updateDynamic("taskbarBackground")(taskbarBackground.asInstanceOf[js.Any])
+    if (taskbarBorder != null) __obj.updateDynamic("taskbarBorder")(taskbarBorder.asInstanceOf[js.Any])
+    if (taskbarTextColor != null) __obj.updateDynamic("taskbarTextColor")(taskbarTextColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryTaskbarInfoEventArgs]
   }
 }

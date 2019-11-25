@@ -16,7 +16,7 @@ trait _UnmarshalledAnalyticsExportDestination extends _AnalyticsExportDestinatio
 object _UnmarshalledAnalyticsExportDestination {
   @scala.inline
   def apply(S3BucketDestination: _UnmarshalledAnalyticsS3BucketDestination): _UnmarshalledAnalyticsExportDestination = {
-    val __obj = js.Dynamic.literal(S3BucketDestination = S3BucketDestination)
+    val __obj = js.Dynamic.literal(S3BucketDestination = S3BucketDestination.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_UnmarshalledAnalyticsExportDestination]
   }

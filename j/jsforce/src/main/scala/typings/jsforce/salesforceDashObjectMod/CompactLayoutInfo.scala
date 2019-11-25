@@ -17,7 +17,7 @@ object CompactLayoutInfo {
     defaultCompactLayoutId: String,
     recordTypeCompactLayoutMappings: js.Array[js.Object]
   ): CompactLayoutInfo = {
-    val __obj = js.Dynamic.literal(compactLayouts = compactLayouts, defaultCompactLayoutId = defaultCompactLayoutId, recordTypeCompactLayoutMappings = recordTypeCompactLayoutMappings)
+    val __obj = js.Dynamic.literal(compactLayouts = compactLayouts.asInstanceOf[js.Any], defaultCompactLayoutId = defaultCompactLayoutId.asInstanceOf[js.Any], recordTypeCompactLayoutMappings = recordTypeCompactLayoutMappings.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CompactLayoutInfo]
   }

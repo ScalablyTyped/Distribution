@@ -38,14 +38,14 @@ object ResourceUpdate {
     warnings: js.Array[Anon_CodeData] = null
   ): ResourceUpdate = {
     val __obj = js.Dynamic.literal()
-    if (accessControl != null) __obj.updateDynamic("accessControl")(accessControl)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (finalProperties != null) __obj.updateDynamic("finalProperties")(finalProperties)
-    if (intent != null) __obj.updateDynamic("intent")(intent)
-    if (manifest != null) __obj.updateDynamic("manifest")(manifest)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (warnings != null) __obj.updateDynamic("warnings")(warnings)
+    if (accessControl != null) __obj.updateDynamic("accessControl")(accessControl.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (finalProperties != null) __obj.updateDynamic("finalProperties")(finalProperties.asInstanceOf[js.Any])
+    if (intent != null) __obj.updateDynamic("intent")(intent.asInstanceOf[js.Any])
+    if (manifest != null) __obj.updateDynamic("manifest")(manifest.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (warnings != null) __obj.updateDynamic("warnings")(warnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceUpdate]
   }
 }

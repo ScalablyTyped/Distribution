@@ -36,14 +36,14 @@ object Anon_Explanation {
     matched_queries: js.Array[String] = null,
     sort: js.Array[String] = null
   ): Anon_Explanation[T] = {
-    val __obj = js.Dynamic.literal(_id = _id, _index = _index, _score = _score, _source = _source.asInstanceOf[js.Any], _type = _type)
-    if (_explanation != null) __obj.updateDynamic("_explanation")(_explanation)
+    val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], _index = _index.asInstanceOf[js.Any], _score = _score.asInstanceOf[js.Any], _source = _source.asInstanceOf[js.Any], _type = _type.asInstanceOf[js.Any])
+    if (_explanation != null) __obj.updateDynamic("_explanation")(_explanation.asInstanceOf[js.Any])
     if (_version != null) __obj.updateDynamic("_version")(_version.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (highlight != null) __obj.updateDynamic("highlight")(highlight)
-    if (inner_hits != null) __obj.updateDynamic("inner_hits")(inner_hits)
-    if (matched_queries != null) __obj.updateDynamic("matched_queries")(matched_queries)
-    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (highlight != null) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
+    if (inner_hits != null) __obj.updateDynamic("inner_hits")(inner_hits.asInstanceOf[js.Any])
+    if (matched_queries != null) __obj.updateDynamic("matched_queries")(matched_queries.asInstanceOf[js.Any])
+    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Explanation[T]]
   }
 }

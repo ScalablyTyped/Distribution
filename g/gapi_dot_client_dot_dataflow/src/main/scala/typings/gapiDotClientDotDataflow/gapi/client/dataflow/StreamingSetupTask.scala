@@ -30,9 +30,9 @@ object StreamingSetupTask {
     workerHarnessPort: Int | Double = null
   ): StreamingSetupTask = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(drain)) __obj.updateDynamic("drain")(drain)
+    if (!js.isUndefined(drain)) __obj.updateDynamic("drain")(drain.asInstanceOf[js.Any])
     if (receiveWorkPort != null) __obj.updateDynamic("receiveWorkPort")(receiveWorkPort.asInstanceOf[js.Any])
-    if (streamingComputationTopology != null) __obj.updateDynamic("streamingComputationTopology")(streamingComputationTopology)
+    if (streamingComputationTopology != null) __obj.updateDynamic("streamingComputationTopology")(streamingComputationTopology.asInstanceOf[js.Any])
     if (workerHarnessPort != null) __obj.updateDynamic("workerHarnessPort")(workerHarnessPort.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamingSetupTask]
   }

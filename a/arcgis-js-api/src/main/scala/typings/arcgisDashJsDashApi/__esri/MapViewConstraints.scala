@@ -104,19 +104,19 @@ object MapViewConstraints {
     rotationEnabled: js.UndefOr[Boolean] = js.undefined,
     snapToZoom: js.UndefOr[Boolean] = js.undefined
   ): MapViewConstraints = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (effectiveLODs != null) __obj.updateDynamic("effectiveLODs")(effectiveLODs)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (effectiveLODs != null) __obj.updateDynamic("effectiveLODs")(effectiveLODs.asInstanceOf[js.Any])
     if (effectiveMaxScale != null) __obj.updateDynamic("effectiveMaxScale")(effectiveMaxScale.asInstanceOf[js.Any])
     if (effectiveMaxZoom != null) __obj.updateDynamic("effectiveMaxZoom")(effectiveMaxZoom.asInstanceOf[js.Any])
     if (effectiveMinScale != null) __obj.updateDynamic("effectiveMinScale")(effectiveMinScale.asInstanceOf[js.Any])
     if (effectiveMinZoom != null) __obj.updateDynamic("effectiveMinZoom")(effectiveMinZoom.asInstanceOf[js.Any])
-    if (lods != null) __obj.updateDynamic("lods")(lods)
+    if (lods != null) __obj.updateDynamic("lods")(lods.asInstanceOf[js.Any])
     if (maxScale != null) __obj.updateDynamic("maxScale")(maxScale.asInstanceOf[js.Any])
     if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
     if (minScale != null) __obj.updateDynamic("minScale")(minScale.asInstanceOf[js.Any])
     if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
-    if (!js.isUndefined(rotationEnabled)) __obj.updateDynamic("rotationEnabled")(rotationEnabled)
-    if (!js.isUndefined(snapToZoom)) __obj.updateDynamic("snapToZoom")(snapToZoom)
+    if (!js.isUndefined(rotationEnabled)) __obj.updateDynamic("rotationEnabled")(rotationEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(snapToZoom)) __obj.updateDynamic("snapToZoom")(snapToZoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapViewConstraints]
   }
 }

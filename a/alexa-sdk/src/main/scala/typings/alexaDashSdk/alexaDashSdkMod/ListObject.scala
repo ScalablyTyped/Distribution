@@ -54,10 +54,10 @@ object ListObject {
     status: String = null,
     version: Int | Double = null
   ): ListObject = {
-    val __obj = js.Dynamic.literal(items = items, listId = listId, name = name, statusMap = statusMap)
-    if (next != null) __obj.updateDynamic("next")(next)
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (status != null) __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], listId = listId.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], statusMap = statusMap.asInstanceOf[js.Any])
+    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListObject]
   }

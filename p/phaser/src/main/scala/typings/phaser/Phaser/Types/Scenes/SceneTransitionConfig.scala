@@ -57,15 +57,15 @@ object SceneTransitionConfig {
     onUpdateScope: js.Any = null,
     sleep: js.UndefOr[Boolean] = js.undefined
   ): SceneTransitionConfig = {
-    val __obj = js.Dynamic.literal(target = target)
-    if (!js.isUndefined(allowInput)) __obj.updateDynamic("allowInput")(allowInput)
-    if (data != null) __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowInput)) __obj.updateDynamic("allowInput")(allowInput.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (!js.isUndefined(moveAbove)) __obj.updateDynamic("moveAbove")(moveAbove)
-    if (!js.isUndefined(moveBelow)) __obj.updateDynamic("moveBelow")(moveBelow)
-    if (onUpdate != null) __obj.updateDynamic("onUpdate")(onUpdate)
-    if (onUpdateScope != null) __obj.updateDynamic("onUpdateScope")(onUpdateScope)
-    if (!js.isUndefined(sleep)) __obj.updateDynamic("sleep")(sleep)
+    if (!js.isUndefined(moveAbove)) __obj.updateDynamic("moveAbove")(moveAbove.asInstanceOf[js.Any])
+    if (!js.isUndefined(moveBelow)) __obj.updateDynamic("moveBelow")(moveBelow.asInstanceOf[js.Any])
+    if (onUpdate != null) __obj.updateDynamic("onUpdate")(onUpdate.asInstanceOf[js.Any])
+    if (onUpdateScope != null) __obj.updateDynamic("onUpdateScope")(onUpdateScope.asInstanceOf[js.Any])
+    if (!js.isUndefined(sleep)) __obj.updateDynamic("sleep")(sleep.asInstanceOf[js.Any])
     __obj.asInstanceOf[SceneTransitionConfig]
   }
 }

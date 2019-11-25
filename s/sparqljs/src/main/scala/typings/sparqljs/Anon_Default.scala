@@ -12,7 +12,7 @@ trait Anon_Default extends js.Object {
 object Anon_Default {
   @scala.inline
   def apply(default: js.Array[String], named: js.Array[String]): Anon_Default = {
-    val __obj = js.Dynamic.literal(default = default, named = named)
+    val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], named = named.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Default]
   }

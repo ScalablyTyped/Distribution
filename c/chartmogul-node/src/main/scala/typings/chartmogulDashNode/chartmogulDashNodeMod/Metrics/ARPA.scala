@@ -14,7 +14,7 @@ trait ARPA extends js.Object {
 object ARPA {
   @scala.inline
   def apply(arpa: Double, date: String): ARPA = {
-    val __obj = js.Dynamic.literal(arpa = arpa, date = date)
+    val __obj = js.Dynamic.literal(arpa = arpa.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ARPA]
   }

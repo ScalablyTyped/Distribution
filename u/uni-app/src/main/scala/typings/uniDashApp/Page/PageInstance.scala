@@ -138,7 +138,7 @@ object PageInstance {
     if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction0(onShow))
     if (onTabItemTap != null) __obj.updateDynamic("onTabItemTap")(js.Any.fromFunction1(onTabItemTap))
     if (onUnload != null) __obj.updateDynamic("onUnload")(js.Any.fromFunction0(onUnload))
-    if (route != null) __obj.updateDynamic("route")(route)
+    if (route != null) __obj.updateDynamic("route")(route.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageInstance[D, T]]
   }
 }

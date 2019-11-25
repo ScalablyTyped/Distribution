@@ -25,9 +25,9 @@ object RecipientKeyIdentifier {
     date: GeneralizedTime = null,
     other: typings.pkijs.srcOtherKeyAttributeMod.default = null
   ): RecipientKeyIdentifier = {
-    val __obj = js.Dynamic.literal(fromSchema = js.Any.fromFunction1(fromSchema), subjectKeyIdentifier = subjectKeyIdentifier, toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
-    if (date != null) __obj.updateDynamic("date")(date)
-    if (other != null) __obj.updateDynamic("other")(other)
+    val __obj = js.Dynamic.literal(fromSchema = js.Any.fromFunction1(fromSchema), subjectKeyIdentifier = subjectKeyIdentifier.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (other != null) __obj.updateDynamic("other")(other.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecipientKeyIdentifier]
   }
 }

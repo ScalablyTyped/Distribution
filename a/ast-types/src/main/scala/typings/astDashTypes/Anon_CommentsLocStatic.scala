@@ -22,10 +22,10 @@ object Anon_CommentsLocStatic {
     loc: SourceLocationKind = null,
     static: js.UndefOr[Boolean] = js.undefined
   ): Anon_CommentsLocStatic = {
-    val __obj = js.Dynamic.literal(value = value)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (!js.isUndefined(static)) __obj.updateDynamic("static")(static)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (!js.isUndefined(static)) __obj.updateDynamic("static")(static.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CommentsLocStatic]
   }
 }

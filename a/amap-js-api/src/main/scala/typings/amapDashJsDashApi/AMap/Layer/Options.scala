@@ -16,7 +16,7 @@ object Options {
   @scala.inline
   def apply(map: Map = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (map != null) __obj.updateDynamic("map")(map)
+    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

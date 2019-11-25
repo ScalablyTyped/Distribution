@@ -38,13 +38,13 @@ object TextInsertionOptions {
     undo: skip = null
   ): TextInsertionOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoDecreaseIndent)) __obj.updateDynamic("autoDecreaseIndent")(autoDecreaseIndent)
-    if (!js.isUndefined(autoIndent)) __obj.updateDynamic("autoIndent")(autoIndent)
-    if (!js.isUndefined(autoIndentNewline)) __obj.updateDynamic("autoIndentNewline")(autoIndentNewline)
-    if (!js.isUndefined(normalizeLineEndings)) __obj.updateDynamic("normalizeLineEndings")(normalizeLineEndings)
-    if (!js.isUndefined(preserveTrailingLineIndentation)) __obj.updateDynamic("preserveTrailingLineIndentation")(preserveTrailingLineIndentation)
-    if (!js.isUndefined(select)) __obj.updateDynamic("select")(select)
-    if (undo != null) __obj.updateDynamic("undo")(undo)
+    if (!js.isUndefined(autoDecreaseIndent)) __obj.updateDynamic("autoDecreaseIndent")(autoDecreaseIndent.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoIndent)) __obj.updateDynamic("autoIndent")(autoIndent.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoIndentNewline)) __obj.updateDynamic("autoIndentNewline")(autoIndentNewline.asInstanceOf[js.Any])
+    if (!js.isUndefined(normalizeLineEndings)) __obj.updateDynamic("normalizeLineEndings")(normalizeLineEndings.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveTrailingLineIndentation)) __obj.updateDynamic("preserveTrailingLineIndentation")(preserveTrailingLineIndentation.asInstanceOf[js.Any])
+    if (!js.isUndefined(select)) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
+    if (undo != null) __obj.updateDynamic("undo")(undo.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextInsertionOptions]
   }
 }

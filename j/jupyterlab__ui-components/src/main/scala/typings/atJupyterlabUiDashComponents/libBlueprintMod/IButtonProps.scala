@@ -17,7 +17,7 @@ object IButtonProps {
   @scala.inline
   def apply(title: String = null, `type`: button | submit | reset = null): IButtonProps = {
     val __obj = js.Dynamic.literal()
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IButtonProps]
   }

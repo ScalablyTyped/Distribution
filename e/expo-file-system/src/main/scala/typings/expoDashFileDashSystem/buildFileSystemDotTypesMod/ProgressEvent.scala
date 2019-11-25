@@ -13,7 +13,7 @@ trait ProgressEvent extends js.Object {
 object ProgressEvent {
   @scala.inline
   def apply(data: Anon_TotalBytesExpectedToWrite, uuid: String): ProgressEvent = {
-    val __obj = js.Dynamic.literal(data = data, uuid = uuid)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ProgressEvent]
   }

@@ -44,7 +44,7 @@ object DirectLineMeasurement3DViewModelMeasurement {
     propertyIsEnumerable: PropertyKey => Boolean,
     verticalDistance: DirectLineMeasurement3DViewModelMeasurementValue
   ): DirectLineMeasurement3DViewModelMeasurement = {
-    val __obj = js.Dynamic.literal(constructor = constructor, directDistance = directDistance, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), horizontalDistance = horizontalDistance, measurementMode = measurementMode, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), verticalDistance = verticalDistance)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], directDistance = directDistance.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), horizontalDistance = horizontalDistance.asInstanceOf[js.Any], measurementMode = measurementMode.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), verticalDistance = verticalDistance.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DirectLineMeasurement3DViewModelMeasurement]
   }

@@ -26,11 +26,11 @@ object FunctionDefinition {
     runtime: String = null,
     timeout: Int | Double = null
   ): FunctionDefinition = {
-    val __obj = js.Dynamic.literal(handler = handler, name = name)
-    __obj.updateDynamic("package")(`package`)
-    if (environment != null) __obj.updateDynamic("environment")(environment)
+    val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("package")(`package`.asInstanceOf[js.Any])
+    if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
     if (memorySize != null) __obj.updateDynamic("memorySize")(memorySize.asInstanceOf[js.Any])
-    if (runtime != null) __obj.updateDynamic("runtime")(runtime)
+    if (runtime != null) __obj.updateDynamic("runtime")(runtime.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[FunctionDefinition]
   }

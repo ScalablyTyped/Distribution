@@ -23,7 +23,7 @@ object ActionButtonState {
     id: String,
     label: String
   ): ActionButtonState = {
-    val __obj = js.Dynamic.literal(badge = badge.asInstanceOf[js.Any], badgeColor = badgeColor, disabled = disabled, icon = icon.asInstanceOf[js.Any], id = id, label = label)
+    val __obj = js.Dynamic.literal(badge = badge.asInstanceOf[js.Any], badgeColor = badgeColor.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ActionButtonState]
   }

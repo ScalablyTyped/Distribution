@@ -16,9 +16,9 @@ object Anon_EvenColor {
   @scala.inline
   def apply(evenColor: Color = null, oddColor: Color = null, repeat: Property = null): Anon_EvenColor = {
     val __obj = js.Dynamic.literal()
-    if (evenColor != null) __obj.updateDynamic("evenColor")(evenColor)
-    if (oddColor != null) __obj.updateDynamic("oddColor")(oddColor)
-    if (repeat != null) __obj.updateDynamic("repeat")(repeat)
+    if (evenColor != null) __obj.updateDynamic("evenColor")(evenColor.asInstanceOf[js.Any])
+    if (oddColor != null) __obj.updateDynamic("oddColor")(oddColor.asInstanceOf[js.Any])
+    if (repeat != null) __obj.updateDynamic("repeat")(repeat.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_EvenColor]
   }
 }

@@ -22,10 +22,10 @@ object Anon_Addons {
     indexedDB: IDBFactory = null
   ): Anon_Addons = {
     val __obj = js.Dynamic.literal()
-    if (IDBKeyRange != null) __obj.updateDynamic("IDBKeyRange")(IDBKeyRange)
-    if (addons != null) __obj.updateDynamic("addons")(addons)
-    if (!js.isUndefined(autoOpen)) __obj.updateDynamic("autoOpen")(autoOpen)
-    if (indexedDB != null) __obj.updateDynamic("indexedDB")(indexedDB)
+    if (IDBKeyRange != null) __obj.updateDynamic("IDBKeyRange")(IDBKeyRange.asInstanceOf[js.Any])
+    if (addons != null) __obj.updateDynamic("addons")(addons.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoOpen)) __obj.updateDynamic("autoOpen")(autoOpen.asInstanceOf[js.Any])
+    if (indexedDB != null) __obj.updateDynamic("indexedDB")(indexedDB.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Addons]
   }
 }

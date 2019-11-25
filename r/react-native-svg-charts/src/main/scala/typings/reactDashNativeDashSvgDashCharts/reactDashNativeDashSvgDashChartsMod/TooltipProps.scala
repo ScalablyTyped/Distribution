@@ -23,11 +23,11 @@ object TooltipProps {
     stroke: String = null,
     value: Int | Double = null
   ): TooltipProps = {
-    val __obj = js.Dynamic.literal(text = text)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (pointStroke != null) __obj.updateDynamic("pointStroke")(pointStroke)
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
+    if (pointStroke != null) __obj.updateDynamic("pointStroke")(pointStroke.asInstanceOf[js.Any])
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipProps]
   }

@@ -20,8 +20,8 @@ trait GetBucketInventoryConfigurationOutput
 object GetBucketInventoryConfigurationOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, InventoryConfiguration: _UnmarshalledInventoryConfiguration = null): GetBucketInventoryConfigurationOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (InventoryConfiguration != null) __obj.updateDynamic("InventoryConfiguration")(InventoryConfiguration)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (InventoryConfiguration != null) __obj.updateDynamic("InventoryConfiguration")(InventoryConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketInventoryConfigurationOutput]
   }
 }

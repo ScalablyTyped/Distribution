@@ -18,7 +18,7 @@ trait IRGB extends js.Object {
 object IRGB {
   @scala.inline
   def apply(b: Double, g: Double, r: Double, a: Int | Double = null): IRGB = {
-    val __obj = js.Dynamic.literal(b = b, g = g, r = r)
+    val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
     if (a != null) __obj.updateDynamic("a")(a.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRGB]
   }

@@ -61,23 +61,23 @@ object Metadata {
     width: Int | Double = null,
     xmp: Buffer = null
   ): Metadata = {
-    val __obj = js.Dynamic.literal(chromaSubsampling = chromaSubsampling)
-    if (channels != null) __obj.updateDynamic("channels")(channels)
+    val __obj = js.Dynamic.literal(chromaSubsampling = chromaSubsampling.asInstanceOf[js.Any])
+    if (channels != null) __obj.updateDynamic("channels")(channels.asInstanceOf[js.Any])
     if (density != null) __obj.updateDynamic("density")(density.asInstanceOf[js.Any])
-    if (depth != null) __obj.updateDynamic("depth")(depth)
-    if (exif != null) __obj.updateDynamic("exif")(exif)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (!js.isUndefined(hasAlpha)) __obj.updateDynamic("hasAlpha")(hasAlpha)
-    if (!js.isUndefined(hasProfile)) __obj.updateDynamic("hasProfile")(hasProfile)
+    if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
+    if (exif != null) __obj.updateDynamic("exif")(exif.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasAlpha)) __obj.updateDynamic("hasAlpha")(hasAlpha.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasProfile)) __obj.updateDynamic("hasProfile")(hasProfile.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (icc != null) __obj.updateDynamic("icc")(icc)
-    if (iptc != null) __obj.updateDynamic("iptc")(iptc)
-    if (!js.isUndefined(isProgressive)) __obj.updateDynamic("isProgressive")(isProgressive)
+    if (icc != null) __obj.updateDynamic("icc")(icc.asInstanceOf[js.Any])
+    if (iptc != null) __obj.updateDynamic("iptc")(iptc.asInstanceOf[js.Any])
+    if (!js.isUndefined(isProgressive)) __obj.updateDynamic("isProgressive")(isProgressive.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (space != null) __obj.updateDynamic("space")(space)
+    if (space != null) __obj.updateDynamic("space")(space.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (xmp != null) __obj.updateDynamic("xmp")(xmp)
+    if (xmp != null) __obj.updateDynamic("xmp")(xmp.asInstanceOf[js.Any])
     __obj.asInstanceOf[Metadata]
   }
 }

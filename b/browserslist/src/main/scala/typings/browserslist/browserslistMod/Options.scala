@@ -24,12 +24,12 @@ object Options {
     stats: Stats = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (config != null) __obj.updateDynamic("config")(config)
-    if (!js.isUndefined(dangerousExtend)) __obj.updateDynamic("dangerousExtend")(dangerousExtend)
-    if (env != null) __obj.updateDynamic("env")(env)
-    if (!js.isUndefined(ignoreUnknownVersions)) __obj.updateDynamic("ignoreUnknownVersions")(ignoreUnknownVersions)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (stats != null) __obj.updateDynamic("stats")(stats)
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
+    if (!js.isUndefined(dangerousExtend)) __obj.updateDynamic("dangerousExtend")(dangerousExtend.asInstanceOf[js.Any])
+    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreUnknownVersions)) __obj.updateDynamic("ignoreUnknownVersions")(ignoreUnknownVersions.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (stats != null) __obj.updateDynamic("stats")(stats.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

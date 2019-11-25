@@ -34,9 +34,9 @@ object LayzrOptions {
     threshold: Int | Double = null
   ): LayzrOptions = {
     val __obj = js.Dynamic.literal()
-    if (normal != null) __obj.updateDynamic("normal")(normal)
-    if (retina != null) __obj.updateDynamic("retina")(retina)
-    if (srcset != null) __obj.updateDynamic("srcset")(srcset)
+    if (normal != null) __obj.updateDynamic("normal")(normal.asInstanceOf[js.Any])
+    if (retina != null) __obj.updateDynamic("retina")(retina.asInstanceOf[js.Any])
+    if (srcset != null) __obj.updateDynamic("srcset")(srcset.asInstanceOf[js.Any])
     if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayzrOptions]
   }

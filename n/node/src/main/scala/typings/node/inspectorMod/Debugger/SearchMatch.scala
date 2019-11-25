@@ -21,7 +21,7 @@ trait SearchMatch extends js.Object {
 object SearchMatch {
   @scala.inline
   def apply(lineContent: java.lang.String, lineNumber: Double): SearchMatch = {
-    val __obj = js.Dynamic.literal(lineContent = lineContent, lineNumber = lineNumber)
+    val __obj = js.Dynamic.literal(lineContent = lineContent.asInstanceOf[js.Any], lineNumber = lineNumber.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SearchMatch]
   }

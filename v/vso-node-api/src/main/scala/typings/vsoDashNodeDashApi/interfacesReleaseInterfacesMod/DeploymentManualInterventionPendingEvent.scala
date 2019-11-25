@@ -24,7 +24,7 @@ object DeploymentManualInterventionPendingEvent {
     project: ProjectReference,
     release: Release
   ): DeploymentManualInterventionPendingEvent = {
-    val __obj = js.Dynamic.literal(deployment = deployment, emailRecipients = emailRecipients, environmentOwner = environmentOwner, manualIntervention = manualIntervention, project = project, release = release)
+    val __obj = js.Dynamic.literal(deployment = deployment.asInstanceOf[js.Any], emailRecipients = emailRecipients.asInstanceOf[js.Any], environmentOwner = environmentOwner.asInstanceOf[js.Any], manualIntervention = manualIntervention.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], release = release.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeploymentManualInterventionPendingEvent]
   }

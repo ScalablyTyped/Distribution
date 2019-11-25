@@ -13,8 +13,8 @@ trait IntrospectionNonNullTypeRef extends IntrospectionTypeRef {
 object IntrospectionNonNullTypeRef {
   @scala.inline
   def apply(kind: NON_NULL, ofType: IntrospectionTypeRef = null): IntrospectionNonNullTypeRef = {
-    val __obj = js.Dynamic.literal(kind = kind)
-    if (ofType != null) __obj.updateDynamic("ofType")(ofType)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
+    if (ofType != null) __obj.updateDynamic("ofType")(ofType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrospectionNonNullTypeRef]
   }
 }

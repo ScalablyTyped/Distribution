@@ -14,9 +14,9 @@ trait UrlParts extends js.Object {
 object UrlParts {
   @scala.inline
   def apply(path: String, hash: String = null, search: StringDictionary[js.Any] = null): UrlParts = {
-    val __obj = js.Dynamic.literal(path = path)
-    if (hash != null) __obj.updateDynamic("hash")(hash)
-    if (search != null) __obj.updateDynamic("search")(search)
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
+    if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
+    if (search != null) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
     __obj.asInstanceOf[UrlParts]
   }
 }

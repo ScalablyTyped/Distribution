@@ -15,8 +15,8 @@ trait Anon_AutoDectect extends js.Object {
 object Anon_AutoDectect {
   @scala.inline
   def apply(autoDectect: Boolean, buttons: js.Array[_], show: Boolean, title: String, `type`: String): Anon_AutoDectect = {
-    val __obj = js.Dynamic.literal(autoDectect = autoDectect, buttons = buttons, show = show, title = title)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(autoDectect = autoDectect.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AutoDectect]
   }
 }

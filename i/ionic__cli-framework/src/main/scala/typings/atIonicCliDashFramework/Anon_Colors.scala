@@ -13,7 +13,7 @@ object Anon_Colors {
   @scala.inline
   def apply(colors: Colors = null): Anon_Colors = {
     val __obj = js.Dynamic.literal()
-    if (colors != null) __obj.updateDynamic("colors")(colors)
+    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Colors]
   }
 }

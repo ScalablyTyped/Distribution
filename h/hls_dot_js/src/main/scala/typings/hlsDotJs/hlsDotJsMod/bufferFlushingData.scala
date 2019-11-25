@@ -13,7 +13,7 @@ trait bufferFlushingData extends js.Object {
 object bufferFlushingData {
   @scala.inline
   def apply(endOffset: Double, startOffset: Double): bufferFlushingData = {
-    val __obj = js.Dynamic.literal(endOffset = endOffset, startOffset = startOffset)
+    val __obj = js.Dynamic.literal(endOffset = endOffset.asInstanceOf[js.Any], startOffset = startOffset.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[bufferFlushingData]
   }

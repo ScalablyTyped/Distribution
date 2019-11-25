@@ -19,9 +19,9 @@ object Styles {
     suggests: Record[String, _] = null
   ): Styles = {
     val __obj = js.Dynamic.literal()
-    if (input != null) __obj.updateDynamic("input")(input)
-    if (suggestItem != null) __obj.updateDynamic("suggestItem")(suggestItem)
-    if (suggests != null) __obj.updateDynamic("suggests")(suggests)
+    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
+    if (suggestItem != null) __obj.updateDynamic("suggestItem")(suggestItem.asInstanceOf[js.Any])
+    if (suggests != null) __obj.updateDynamic("suggests")(suggests.asInstanceOf[js.Any])
     __obj.asInstanceOf[Styles]
   }
 }

@@ -19,9 +19,9 @@ object IValidationError {
   @scala.inline
   def apply(entries: js.Array[String] = null, errorMessage: String = null, severity: Severity = null): IValidationError = {
     val __obj = js.Dynamic.literal()
-    if (entries != null) __obj.updateDynamic("entries")(entries)
-    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage)
-    if (severity != null) __obj.updateDynamic("severity")(severity)
+    if (entries != null) __obj.updateDynamic("entries")(entries.asInstanceOf[js.Any])
+    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
+    if (severity != null) __obj.updateDynamic("severity")(severity.asInstanceOf[js.Any])
     __obj.asInstanceOf[IValidationError]
   }
 }

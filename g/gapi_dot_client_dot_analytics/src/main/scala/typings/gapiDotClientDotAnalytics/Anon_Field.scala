@@ -15,7 +15,7 @@ object Anon_Field {
   @scala.inline
   def apply(field: String = null, fieldIndex: Int | Double = null): Anon_Field = {
     val __obj = js.Dynamic.literal()
-    if (field != null) __obj.updateDynamic("field")(field)
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     if (fieldIndex != null) __obj.updateDynamic("fieldIndex")(fieldIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Field]
   }

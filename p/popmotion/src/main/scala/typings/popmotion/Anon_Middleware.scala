@@ -14,8 +14,8 @@ object Anon_Middleware {
   @scala.inline
   def apply(middleware: js.Array[Middleware] = null, onComplete: js.Function = null): Anon_Middleware = {
     val __obj = js.Dynamic.literal()
-    if (middleware != null) __obj.updateDynamic("middleware")(middleware)
-    if (onComplete != null) __obj.updateDynamic("onComplete")(onComplete)
+    if (middleware != null) __obj.updateDynamic("middleware")(middleware.asInstanceOf[js.Any])
+    if (onComplete != null) __obj.updateDynamic("onComplete")(onComplete.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Middleware]
   }
 }

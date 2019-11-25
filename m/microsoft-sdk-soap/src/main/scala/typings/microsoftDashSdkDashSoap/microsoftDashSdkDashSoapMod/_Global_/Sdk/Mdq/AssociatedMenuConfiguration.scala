@@ -14,7 +14,7 @@ trait AssociatedMenuConfiguration extends js.Object {
 object AssociatedMenuConfiguration {
   @scala.inline
   def apply(Behavior: AssociatedMenuBehavior, Group: AssociatedMenuGroup, Label: Label, Order: scala.Double): AssociatedMenuConfiguration = {
-    val __obj = js.Dynamic.literal(Behavior = Behavior, Group = Group, Label = Label, Order = Order)
+    val __obj = js.Dynamic.literal(Behavior = Behavior.asInstanceOf[js.Any], Group = Group.asInstanceOf[js.Any], Label = Label.asInstanceOf[js.Any], Order = Order.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AssociatedMenuConfiguration]
   }

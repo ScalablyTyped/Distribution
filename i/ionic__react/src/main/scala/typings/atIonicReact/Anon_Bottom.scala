@@ -23,7 +23,7 @@ object Anon_Bottom {
     slot: bottom | top = null
   ): Anon_Bottom = {
     val __obj = js.Dynamic.literal()
-    if (currentPath != null) __obj.updateDynamic("currentPath")(currentPath)
+    if (currentPath != null) __obj.updateDynamic("currentPath")(currentPath.asInstanceOf[js.Any])
     if (onIonTabsDidChange != null) __obj.updateDynamic("onIonTabsDidChange")(js.Any.fromFunction1(onIonTabsDidChange))
     if (onIonTabsWillChange != null) __obj.updateDynamic("onIonTabsWillChange")(js.Any.fromFunction1(onIonTabsWillChange))
     if (slot != null) __obj.updateDynamic("slot")(slot.asInstanceOf[js.Any])

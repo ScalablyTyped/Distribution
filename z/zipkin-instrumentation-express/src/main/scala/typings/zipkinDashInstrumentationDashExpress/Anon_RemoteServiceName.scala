@@ -13,8 +13,8 @@ trait Anon_RemoteServiceName extends js.Object {
 object Anon_RemoteServiceName {
   @scala.inline
   def apply(tracer: Tracer, remoteServiceName: String = null): Anon_RemoteServiceName = {
-    val __obj = js.Dynamic.literal(tracer = tracer)
-    if (remoteServiceName != null) __obj.updateDynamic("remoteServiceName")(remoteServiceName)
+    val __obj = js.Dynamic.literal(tracer = tracer.asInstanceOf[js.Any])
+    if (remoteServiceName != null) __obj.updateDynamic("remoteServiceName")(remoteServiceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_RemoteServiceName]
   }
 }

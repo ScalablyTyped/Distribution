@@ -15,8 +15,8 @@ trait TocElement extends js.Object {
 object TocElement {
   @scala.inline
   def apply(id: String, level: Double, order: Double, title: String, href: String = null): TocElement = {
-    val __obj = js.Dynamic.literal(id = id, level = level, order = order, title = title)
-    if (href != null) __obj.updateDynamic("href")(href)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
     __obj.asInstanceOf[TocElement]
   }
 }

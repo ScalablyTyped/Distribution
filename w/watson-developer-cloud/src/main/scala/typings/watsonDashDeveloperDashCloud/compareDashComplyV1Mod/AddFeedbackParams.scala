@@ -25,11 +25,11 @@ object AddFeedbackParams {
     return_response: js.UndefOr[Boolean] = js.undefined,
     user_id: String = null
   ): AddFeedbackParams = {
-    val __obj = js.Dynamic.literal(feedback_data = feedback_data)
-    if (comment != null) __obj.updateDynamic("comment")(comment)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response)
-    if (user_id != null) __obj.updateDynamic("user_id")(user_id)
+    val __obj = js.Dynamic.literal(feedback_data = feedback_data.asInstanceOf[js.Any])
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
+    if (user_id != null) __obj.updateDynamic("user_id")(user_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddFeedbackParams]
   }
 }

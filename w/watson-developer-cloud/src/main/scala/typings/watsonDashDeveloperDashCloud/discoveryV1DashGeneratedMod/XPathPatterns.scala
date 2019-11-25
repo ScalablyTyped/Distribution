@@ -14,7 +14,7 @@ object XPathPatterns {
   @scala.inline
   def apply(xpaths: js.Array[String] = null): XPathPatterns = {
     val __obj = js.Dynamic.literal()
-    if (xpaths != null) __obj.updateDynamic("xpaths")(xpaths)
+    if (xpaths != null) __obj.updateDynamic("xpaths")(xpaths.asInstanceOf[js.Any])
     __obj.asInstanceOf[XPathPatterns]
   }
 }

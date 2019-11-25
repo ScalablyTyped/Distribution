@@ -41,7 +41,7 @@ object StopRequestPinDetails {
       Exclude[String, INVALID_PIN | INVALID_PUK | MAX_ATTEMPTS_EXCEEDED | UNKNOWN_ERROR]
     ] = null
   ): StopRequestPinDetails = {
-    val __obj = js.Dynamic.literal(signRequestId = signRequestId)
+    val __obj = js.Dynamic.literal(signRequestId = signRequestId.asInstanceOf[js.Any])
     if (errorType != null) __obj.updateDynamic("errorType")(errorType.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopRequestPinDetails]
   }

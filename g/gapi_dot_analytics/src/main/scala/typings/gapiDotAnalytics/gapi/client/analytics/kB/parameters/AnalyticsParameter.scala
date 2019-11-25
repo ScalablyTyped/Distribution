@@ -24,12 +24,12 @@ object AnalyticsParameter {
     `type`: String = null
   ): AnalyticsParameter = {
     val __obj = js.Dynamic.literal()
-    if (default != null) __obj.updateDynamic("default")(default)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (enum != null) __obj.updateDynamic("enum")(enum)
-    if (enumDescriptions != null) __obj.updateDynamic("enumDescriptions")(enumDescriptions)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (enum != null) __obj.updateDynamic("enum")(enum.asInstanceOf[js.Any])
+    if (enumDescriptions != null) __obj.updateDynamic("enumDescriptions")(enumDescriptions.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyticsParameter]
   }
 }

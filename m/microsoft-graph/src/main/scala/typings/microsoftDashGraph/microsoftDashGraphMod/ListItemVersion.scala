@@ -19,11 +19,11 @@ object ListItemVersion {
     publication: PublicationFacet = null
   ): ListItemVersion = {
     val __obj = js.Dynamic.literal()
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (lastModifiedBy != null) __obj.updateDynamic("lastModifiedBy")(lastModifiedBy)
-    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime)
-    if (publication != null) __obj.updateDynamic("publication")(publication)
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (lastModifiedBy != null) __obj.updateDynamic("lastModifiedBy")(lastModifiedBy.asInstanceOf[js.Any])
+    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
+    if (publication != null) __obj.updateDynamic("publication")(publication.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListItemVersion]
   }
 }

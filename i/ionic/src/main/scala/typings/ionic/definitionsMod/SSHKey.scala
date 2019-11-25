@@ -25,7 +25,7 @@ object SSHKey {
     pubkey: String,
     updated: String
   ): SSHKey = {
-    val __obj = js.Dynamic.literal(annotation = annotation, created = created, fingerprint = fingerprint, id = id, name = name, pubkey = pubkey, updated = updated)
+    val __obj = js.Dynamic.literal(annotation = annotation.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], fingerprint = fingerprint.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pubkey = pubkey.asInstanceOf[js.Any], updated = updated.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SSHKey]
   }

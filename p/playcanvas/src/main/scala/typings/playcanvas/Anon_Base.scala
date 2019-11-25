@@ -14,9 +14,9 @@ trait Anon_Base extends js.Object {
 object Anon_Base {
   @scala.inline
   def apply(base: Double, count: Double, `type`: Double, indexed: js.UndefOr[Boolean] = js.undefined): Anon_Base = {
-    val __obj = js.Dynamic.literal(base = base, count = count)
-    __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(indexed)) __obj.updateDynamic("indexed")(indexed)
+    val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(indexed)) __obj.updateDynamic("indexed")(indexed.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Base]
   }
 }

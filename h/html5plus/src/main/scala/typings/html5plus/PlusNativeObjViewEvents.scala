@@ -62,11 +62,11 @@ object PlusNativeObjViewEvents {
     touchstart: String = null
   ): PlusNativeObjViewEvents = {
     val __obj = js.Dynamic.literal()
-    if (click != null) __obj.updateDynamic("click")(click)
-    if (doubleclick != null) __obj.updateDynamic("doubleclick")(doubleclick)
-    if (touchend != null) __obj.updateDynamic("touchend")(touchend)
-    if (touchmove != null) __obj.updateDynamic("touchmove")(touchmove)
-    if (touchstart != null) __obj.updateDynamic("touchstart")(touchstart)
+    if (click != null) __obj.updateDynamic("click")(click.asInstanceOf[js.Any])
+    if (doubleclick != null) __obj.updateDynamic("doubleclick")(doubleclick.asInstanceOf[js.Any])
+    if (touchend != null) __obj.updateDynamic("touchend")(touchend.asInstanceOf[js.Any])
+    if (touchmove != null) __obj.updateDynamic("touchmove")(touchmove.asInstanceOf[js.Any])
+    if (touchstart != null) __obj.updateDynamic("touchstart")(touchstart.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusNativeObjViewEvents]
   }
 }

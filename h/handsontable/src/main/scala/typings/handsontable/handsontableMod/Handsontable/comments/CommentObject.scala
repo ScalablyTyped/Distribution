@@ -15,9 +15,9 @@ object CommentObject {
   @scala.inline
   def apply(readOnly: js.UndefOr[Boolean] = js.undefined, style: Anon_Height = null, value: String = null): CommentObject = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentObject]
   }
 }

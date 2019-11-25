@@ -26,7 +26,7 @@ object Anon_ChangeMonth {
     nextMonthButtonDisabled: Boolean,
     prevMonthButtonDisabled: Boolean
   ): Anon_ChangeMonth = {
-    val __obj = js.Dynamic.literal(changeMonth = js.Any.fromFunction1(changeMonth), changeYear = js.Any.fromFunction1(changeYear), date = date, decreaseMonth = js.Any.fromFunction0(decreaseMonth), increaseMonth = js.Any.fromFunction0(increaseMonth), nextMonthButtonDisabled = nextMonthButtonDisabled, prevMonthButtonDisabled = prevMonthButtonDisabled)
+    val __obj = js.Dynamic.literal(changeMonth = js.Any.fromFunction1(changeMonth), changeYear = js.Any.fromFunction1(changeYear), date = date.asInstanceOf[js.Any], decreaseMonth = js.Any.fromFunction0(decreaseMonth), increaseMonth = js.Any.fromFunction0(increaseMonth), nextMonthButtonDisabled = nextMonthButtonDisabled.asInstanceOf[js.Any], prevMonthButtonDisabled = prevMonthButtonDisabled.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ChangeMonth]
   }

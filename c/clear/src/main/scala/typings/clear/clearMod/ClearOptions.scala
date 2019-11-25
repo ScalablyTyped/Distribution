@@ -19,7 +19,7 @@ object ClearOptions {
   @scala.inline
   def apply(fullClear: js.UndefOr[Boolean] = js.undefined): ClearOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(fullClear)) __obj.updateDynamic("fullClear")(fullClear)
+    if (!js.isUndefined(fullClear)) __obj.updateDynamic("fullClear")(fullClear.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClearOptions]
   }
 }

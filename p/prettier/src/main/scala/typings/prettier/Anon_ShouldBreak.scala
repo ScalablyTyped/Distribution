@@ -11,7 +11,7 @@ trait Anon_ShouldBreak extends js.Object {
 object Anon_ShouldBreak {
   @scala.inline
   def apply(shouldBreak: Boolean): Anon_ShouldBreak = {
-    val __obj = js.Dynamic.literal(shouldBreak = shouldBreak)
+    val __obj = js.Dynamic.literal(shouldBreak = shouldBreak.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ShouldBreak]
   }

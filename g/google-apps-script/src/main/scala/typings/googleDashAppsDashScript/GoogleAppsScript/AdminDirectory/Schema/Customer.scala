@@ -30,15 +30,15 @@ object Customer {
     postalAddress: CustomerPostalAddress = null
   ): Customer = {
     val __obj = js.Dynamic.literal()
-    if (alternateEmail != null) __obj.updateDynamic("alternateEmail")(alternateEmail)
-    if (customerCreationTime != null) __obj.updateDynamic("customerCreationTime")(customerCreationTime)
-    if (customerDomain != null) __obj.updateDynamic("customerDomain")(customerDomain)
-    if (etag != null) __obj.updateDynamic("etag")(etag)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber)
-    if (postalAddress != null) __obj.updateDynamic("postalAddress")(postalAddress)
+    if (alternateEmail != null) __obj.updateDynamic("alternateEmail")(alternateEmail.asInstanceOf[js.Any])
+    if (customerCreationTime != null) __obj.updateDynamic("customerCreationTime")(customerCreationTime.asInstanceOf[js.Any])
+    if (customerDomain != null) __obj.updateDynamic("customerDomain")(customerDomain.asInstanceOf[js.Any])
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber.asInstanceOf[js.Any])
+    if (postalAddress != null) __obj.updateDynamic("postalAddress")(postalAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[Customer]
   }
 }

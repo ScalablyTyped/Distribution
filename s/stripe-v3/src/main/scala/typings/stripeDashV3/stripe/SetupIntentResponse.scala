@@ -14,8 +14,8 @@ object SetupIntentResponse {
   @scala.inline
   def apply(error: Error = null, setupIntent: SetupIntent = null): SetupIntentResponse = {
     val __obj = js.Dynamic.literal()
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (setupIntent != null) __obj.updateDynamic("setupIntent")(setupIntent)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (setupIntent != null) __obj.updateDynamic("setupIntent")(setupIntent.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetupIntentResponse]
   }
 }

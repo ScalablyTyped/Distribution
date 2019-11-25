@@ -12,7 +12,7 @@ trait RemoveCollectionResult extends js.Object {
 object RemoveCollectionResult {
   @scala.inline
   def apply(stats: Anon_Removed): RemoveCollectionResult = {
-    val __obj = js.Dynamic.literal(stats = stats)
+    val __obj = js.Dynamic.literal(stats = stats.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RemoveCollectionResult]
   }

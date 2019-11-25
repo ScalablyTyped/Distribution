@@ -15,7 +15,7 @@ trait Anon_Brightness extends js.Object {
 object Anon_Brightness {
   @scala.inline
   def apply(brightness: Double): Anon_Brightness = {
-    val __obj = js.Dynamic.literal(brightness = brightness)
+    val __obj = js.Dynamic.literal(brightness = brightness.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Brightness]
   }

@@ -36,8 +36,8 @@ trait defaultCircle extends js.Object {
 object defaultCircle {
   @scala.inline
   def apply(cx: Double, cy: Double, r: Double, `type`: String): defaultCircle = {
-    val __obj = js.Dynamic.literal(cx = cx, cy = cy, r = r)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(cx = cx.asInstanceOf[js.Any], cy = cy.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[defaultCircle]
   }
 }

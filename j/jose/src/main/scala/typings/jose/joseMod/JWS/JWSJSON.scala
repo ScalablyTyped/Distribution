@@ -11,7 +11,7 @@ trait JWSJSON extends js.Object {
 object JWSJSON {
   @scala.inline
   def apply(payload: String): JWSJSON = {
-    val __obj = js.Dynamic.literal(payload = payload)
+    val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[JWSJSON]
   }

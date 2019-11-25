@@ -25,8 +25,8 @@ object Anon_ExtrasId {
     x: Double,
     y: Double
   ): Anon_ExtrasId = {
-    val __obj = js.Dynamic.literal(extras = extras, id = id, ports = ports, selected = selected, x = x, y = y)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(extras = extras.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], ports = ports.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ExtrasId]
   }
 }

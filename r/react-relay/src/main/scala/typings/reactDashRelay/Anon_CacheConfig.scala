@@ -15,8 +15,8 @@ object Anon_CacheConfig {
   @scala.inline
   def apply(cacheConfig: CacheConfig = null, fetchPolicy: FetchPolicy = null): Anon_CacheConfig = {
     val __obj = js.Dynamic.literal()
-    if (cacheConfig != null) __obj.updateDynamic("cacheConfig")(cacheConfig)
-    if (fetchPolicy != null) __obj.updateDynamic("fetchPolicy")(fetchPolicy)
+    if (cacheConfig != null) __obj.updateDynamic("cacheConfig")(cacheConfig.asInstanceOf[js.Any])
+    if (fetchPolicy != null) __obj.updateDynamic("fetchPolicy")(fetchPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CacheConfig]
   }
 }

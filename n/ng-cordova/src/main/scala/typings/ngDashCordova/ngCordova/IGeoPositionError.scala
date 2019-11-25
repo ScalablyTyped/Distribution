@@ -12,7 +12,7 @@ trait IGeoPositionError extends js.Object {
 object IGeoPositionError {
   @scala.inline
   def apply(code: Double, message: String): IGeoPositionError = {
-    val __obj = js.Dynamic.literal(code = code, message = message)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IGeoPositionError]
   }

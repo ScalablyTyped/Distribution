@@ -23,11 +23,11 @@ object Anon_Entry {
     noparse: js.UndefOr[Boolean] = js.undefined,
     source: String = null
   ): Anon_Entry = {
-    val __obj = js.Dynamic.literal(file = file, id = id)
-    if (!js.isUndefined(entry)) __obj.updateDynamic("entry")(entry)
-    if (expose != null) __obj.updateDynamic("expose")(expose)
-    if (!js.isUndefined(noparse)) __obj.updateDynamic("noparse")(noparse)
-    if (source != null) __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
+    if (!js.isUndefined(entry)) __obj.updateDynamic("entry")(entry.asInstanceOf[js.Any])
+    if (expose != null) __obj.updateDynamic("expose")(expose.asInstanceOf[js.Any])
+    if (!js.isUndefined(noparse)) __obj.updateDynamic("noparse")(noparse.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Entry]
   }
 }

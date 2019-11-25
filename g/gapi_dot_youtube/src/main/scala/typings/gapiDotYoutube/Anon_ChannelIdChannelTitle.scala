@@ -51,8 +51,8 @@ object Anon_ChannelIdChannelTitle {
     title: String,
     `type`: String
   ): Anon_ChannelIdChannelTitle = {
-    val __obj = js.Dynamic.literal(channelId = channelId, channelTitle = channelTitle, description = description, groupId = groupId, publishedAt = publishedAt, thumbnails = thumbnails, title = title)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(channelId = channelId.asInstanceOf[js.Any], channelTitle = channelTitle.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], groupId = groupId.asInstanceOf[js.Any], publishedAt = publishedAt.asInstanceOf[js.Any], thumbnails = thumbnails.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ChannelIdChannelTitle]
   }
 }

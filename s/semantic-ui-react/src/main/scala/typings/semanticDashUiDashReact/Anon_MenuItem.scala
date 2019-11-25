@@ -21,7 +21,7 @@ object Anon_MenuItem {
     render: () => ReactNode = null
   ): Anon_MenuItem = {
     val __obj = js.Dynamic.literal()
-    if (menuItem != null) __obj.updateDynamic("menuItem")(menuItem)
+    if (menuItem != null) __obj.updateDynamic("menuItem")(menuItem.asInstanceOf[js.Any])
     if (pane != null) __obj.updateDynamic("pane")(pane.asInstanceOf[js.Any])
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction0(render))
     __obj.asInstanceOf[Anon_MenuItem]

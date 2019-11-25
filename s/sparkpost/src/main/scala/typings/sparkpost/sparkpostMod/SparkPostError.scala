@@ -21,8 +21,8 @@ object SparkPostError {
     statusCode: Double,
     stack: String = null
   ): SparkPostError = {
-    val __obj = js.Dynamic.literal(errors = errors, message = message, name = name, statusCode = statusCode)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[SparkPostError]
   }
 }

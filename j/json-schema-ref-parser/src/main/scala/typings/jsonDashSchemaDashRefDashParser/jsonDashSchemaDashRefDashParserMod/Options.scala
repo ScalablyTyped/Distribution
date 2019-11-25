@@ -30,9 +30,9 @@ object Options {
   @scala.inline
   def apply(dereference: Anon_Circular = null, parse: Anon_Json = null, resolve: Anon_External = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (dereference != null) __obj.updateDynamic("dereference")(dereference)
-    if (parse != null) __obj.updateDynamic("parse")(parse)
-    if (resolve != null) __obj.updateDynamic("resolve")(resolve)
+    if (dereference != null) __obj.updateDynamic("dereference")(dereference.asInstanceOf[js.Any])
+    if (parse != null) __obj.updateDynamic("parse")(parse.asInstanceOf[js.Any])
+    if (resolve != null) __obj.updateDynamic("resolve")(resolve.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

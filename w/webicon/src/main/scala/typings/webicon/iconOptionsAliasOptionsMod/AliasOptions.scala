@@ -14,7 +14,7 @@ trait AliasOptions extends js.Object {
 object AliasOptions {
   @scala.inline
   def apply(alias: String): AliasOptions = {
-    val __obj = js.Dynamic.literal(alias = alias)
+    val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AliasOptions]
   }

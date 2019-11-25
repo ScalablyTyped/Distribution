@@ -27,10 +27,10 @@ object Link {
     `type`: String = null
   ): Link = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
-    if (spanId != null) __obj.updateDynamic("spanId")(spanId)
-    if (traceId != null) __obj.updateDynamic("traceId")(traceId)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (spanId != null) __obj.updateDynamic("spanId")(spanId.asInstanceOf[js.Any])
+    if (traceId != null) __obj.updateDynamic("traceId")(traceId.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Link]
   }
 }

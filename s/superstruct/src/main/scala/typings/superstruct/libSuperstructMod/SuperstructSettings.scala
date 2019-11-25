@@ -15,7 +15,7 @@ trait SuperstructSettings extends js.Object {
 object SuperstructSettings {
   @scala.inline
   def apply(error: Anon_Failures, types: Record[String, Validator]): SuperstructSettings = {
-    val __obj = js.Dynamic.literal(error = error, types = types)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SuperstructSettings]
   }

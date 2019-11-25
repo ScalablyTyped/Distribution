@@ -15,8 +15,8 @@ object IosVppAppAssignmentSettings {
   @scala.inline
   def apply(useDeviceLicensing: js.UndefOr[Boolean] = js.undefined, vpnConfigurationId: String = null): IosVppAppAssignmentSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(useDeviceLicensing)) __obj.updateDynamic("useDeviceLicensing")(useDeviceLicensing)
-    if (vpnConfigurationId != null) __obj.updateDynamic("vpnConfigurationId")(vpnConfigurationId)
+    if (!js.isUndefined(useDeviceLicensing)) __obj.updateDynamic("useDeviceLicensing")(useDeviceLicensing.asInstanceOf[js.Any])
+    if (vpnConfigurationId != null) __obj.updateDynamic("vpnConfigurationId")(vpnConfigurationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IosVppAppAssignmentSettings]
   }
 }

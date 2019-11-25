@@ -23,7 +23,7 @@ object _UnmarshalledSamplingStatisticsDocument {
     Timestamp: Date,
     BorrowCount: Int | Double = null
   ): _UnmarshalledSamplingStatisticsDocument = {
-    val __obj = js.Dynamic.literal(ClientID = ClientID, RequestCount = RequestCount, RuleName = RuleName, SampledCount = SampledCount, Timestamp = Timestamp)
+    val __obj = js.Dynamic.literal(ClientID = ClientID.asInstanceOf[js.Any], RequestCount = RequestCount.asInstanceOf[js.Any], RuleName = RuleName.asInstanceOf[js.Any], SampledCount = SampledCount.asInstanceOf[js.Any], Timestamp = Timestamp.asInstanceOf[js.Any])
     if (BorrowCount != null) __obj.updateDynamic("BorrowCount")(BorrowCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledSamplingStatisticsDocument]
   }

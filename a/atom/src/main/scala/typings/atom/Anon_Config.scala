@@ -20,9 +20,9 @@ object Anon_Config {
     refreshOnWindowFocus: js.UndefOr[Boolean] = js.undefined
   ): Anon_Config = {
     val __obj = js.Dynamic.literal()
-    if (config != null) __obj.updateDynamic("config")(config)
-    if (project != null) __obj.updateDynamic("project")(project)
-    if (!js.isUndefined(refreshOnWindowFocus)) __obj.updateDynamic("refreshOnWindowFocus")(refreshOnWindowFocus)
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
+    if (project != null) __obj.updateDynamic("project")(project.asInstanceOf[js.Any])
+    if (!js.isUndefined(refreshOnWindowFocus)) __obj.updateDynamic("refreshOnWindowFocus")(refreshOnWindowFocus.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Config]
   }
 }

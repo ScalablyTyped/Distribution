@@ -11,7 +11,7 @@ object ErrorSchema {
   @scala.inline
   def apply(StringDictionary: /* k */ StringDictionary[ErrorSchema] = null): ErrorSchema = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ErrorSchema]
   }
 }

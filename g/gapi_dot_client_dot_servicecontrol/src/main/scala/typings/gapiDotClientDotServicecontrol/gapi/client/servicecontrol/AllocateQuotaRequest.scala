@@ -19,8 +19,8 @@ object AllocateQuotaRequest {
   @scala.inline
   def apply(allocateOperation: QuotaOperation = null, serviceConfigId: String = null): AllocateQuotaRequest = {
     val __obj = js.Dynamic.literal()
-    if (allocateOperation != null) __obj.updateDynamic("allocateOperation")(allocateOperation)
-    if (serviceConfigId != null) __obj.updateDynamic("serviceConfigId")(serviceConfigId)
+    if (allocateOperation != null) __obj.updateDynamic("allocateOperation")(allocateOperation.asInstanceOf[js.Any])
+    if (serviceConfigId != null) __obj.updateDynamic("serviceConfigId")(serviceConfigId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AllocateQuotaRequest]
   }
 }

@@ -42,11 +42,8 @@ object IPicker {
     alignPicker: () => Unit = null,
     collapse: () => Unit = null,
     createPicker: () => Unit = null,
-    editable: js.UndefOr[Boolean] = js.undefined,
     expand: () => Unit = null,
     getPicker: () => IComponent = null,
-    initComponent: () => Unit = null,
-    initEvents: () => Unit = null,
     isExpanded: js.UndefOr[Boolean] = js.undefined,
     matchFieldWidth: js.UndefOr[Boolean] = js.undefined,
     onTriggerClick: () => Unit = null,
@@ -55,21 +52,18 @@ object IPicker {
     pickerOffset: Array = null
   ): IPicker = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, ITrigger)
+    if (ITrigger != null) js.Dynamic.global.Object.assign(__obj, ITrigger)
     if (alignPicker != null) __obj.updateDynamic("alignPicker")(js.Any.fromFunction0(alignPicker))
     if (collapse != null) __obj.updateDynamic("collapse")(js.Any.fromFunction0(collapse))
     if (createPicker != null) __obj.updateDynamic("createPicker")(js.Any.fromFunction0(createPicker))
-    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable)
     if (expand != null) __obj.updateDynamic("expand")(js.Any.fromFunction0(expand))
     if (getPicker != null) __obj.updateDynamic("getPicker")(js.Any.fromFunction0(getPicker))
-    if (initComponent != null) __obj.updateDynamic("initComponent")(js.Any.fromFunction0(initComponent))
-    if (initEvents != null) __obj.updateDynamic("initEvents")(js.Any.fromFunction0(initEvents))
-    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded)
-    if (!js.isUndefined(matchFieldWidth)) __obj.updateDynamic("matchFieldWidth")(matchFieldWidth)
+    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded.asInstanceOf[js.Any])
+    if (!js.isUndefined(matchFieldWidth)) __obj.updateDynamic("matchFieldWidth")(matchFieldWidth.asInstanceOf[js.Any])
     if (onTriggerClick != null) __obj.updateDynamic("onTriggerClick")(js.Any.fromFunction0(onTriggerClick))
-    if (openCls != null) __obj.updateDynamic("openCls")(openCls)
-    if (pickerAlign != null) __obj.updateDynamic("pickerAlign")(pickerAlign)
-    if (pickerOffset != null) __obj.updateDynamic("pickerOffset")(pickerOffset)
+    if (openCls != null) __obj.updateDynamic("openCls")(openCls.asInstanceOf[js.Any])
+    if (pickerAlign != null) __obj.updateDynamic("pickerAlign")(pickerAlign.asInstanceOf[js.Any])
+    if (pickerOffset != null) __obj.updateDynamic("pickerOffset")(pickerOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPicker]
   }
 }

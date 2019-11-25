@@ -25,12 +25,12 @@ object Anon_Colors {
     uvs1: js.Array[Number] = null
   ): Anon_Colors = {
     val __obj = js.Dynamic.literal()
-    if (colors != null) __obj.updateDynamic("colors")(colors)
-    if (indices != null) __obj.updateDynamic("indices")(indices)
-    if (normals != null) __obj.updateDynamic("normals")(normals)
-    if (tangents != null) __obj.updateDynamic("tangents")(tangents)
-    if (uvs != null) __obj.updateDynamic("uvs")(uvs)
-    if (uvs1 != null) __obj.updateDynamic("uvs1")(uvs1)
+    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
+    if (indices != null) __obj.updateDynamic("indices")(indices.asInstanceOf[js.Any])
+    if (normals != null) __obj.updateDynamic("normals")(normals.asInstanceOf[js.Any])
+    if (tangents != null) __obj.updateDynamic("tangents")(tangents.asInstanceOf[js.Any])
+    if (uvs != null) __obj.updateDynamic("uvs")(uvs.asInstanceOf[js.Any])
+    if (uvs1 != null) __obj.updateDynamic("uvs1")(uvs1.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Colors]
   }
 }

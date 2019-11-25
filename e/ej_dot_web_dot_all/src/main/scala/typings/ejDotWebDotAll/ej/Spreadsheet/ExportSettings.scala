@@ -43,12 +43,12 @@ object ExportSettings {
     pdfUrl: String = null
   ): ExportSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowExporting)) __obj.updateDynamic("allowExporting")(allowExporting)
-    if (csvUrl != null) __obj.updateDynamic("csvUrl")(csvUrl)
-    if (!js.isUndefined(enableFormulaCalculation)) __obj.updateDynamic("enableFormulaCalculation")(enableFormulaCalculation)
-    if (excelUrl != null) __obj.updateDynamic("excelUrl")(excelUrl)
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (pdfUrl != null) __obj.updateDynamic("pdfUrl")(pdfUrl)
+    if (!js.isUndefined(allowExporting)) __obj.updateDynamic("allowExporting")(allowExporting.asInstanceOf[js.Any])
+    if (csvUrl != null) __obj.updateDynamic("csvUrl")(csvUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableFormulaCalculation)) __obj.updateDynamic("enableFormulaCalculation")(enableFormulaCalculation.asInstanceOf[js.Any])
+    if (excelUrl != null) __obj.updateDynamic("excelUrl")(excelUrl.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (pdfUrl != null) __obj.updateDynamic("pdfUrl")(pdfUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportSettings]
   }
 }

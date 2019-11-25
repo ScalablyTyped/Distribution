@@ -22,9 +22,9 @@ object ListConnectionsResponse {
     totalPeople: Int | Double = null
   ): ListConnectionsResponse = {
     val __obj = js.Dynamic.literal()
-    if (connections != null) __obj.updateDynamic("connections")(connections)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (nextSyncToken != null) __obj.updateDynamic("nextSyncToken")(nextSyncToken)
+    if (connections != null) __obj.updateDynamic("connections")(connections.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (nextSyncToken != null) __obj.updateDynamic("nextSyncToken")(nextSyncToken.asInstanceOf[js.Any])
     if (totalItems != null) __obj.updateDynamic("totalItems")(totalItems.asInstanceOf[js.Any])
     if (totalPeople != null) __obj.updateDynamic("totalPeople")(totalPeople.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListConnectionsResponse]

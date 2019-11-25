@@ -28,13 +28,13 @@ object StringProperty {
     raw: String = null,
     security: SecurityValues = null
   ): StringProperty = {
-    val __obj = js.Dynamic.literal(error = error, errorMessage = errorMessage)
-    __obj.updateDynamic("type")(`type`)
-    if (attribute != null) __obj.updateDynamic("attribute")(attribute)
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
-    if (formatted != null) __obj.updateDynamic("formatted")(formatted)
-    if (raw != null) __obj.updateDynamic("raw")(raw)
-    if (security != null) __obj.updateDynamic("security")(security)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (attribute != null) __obj.updateDynamic("attribute")(attribute.asInstanceOf[js.Any])
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (formatted != null) __obj.updateDynamic("formatted")(formatted.asInstanceOf[js.Any])
+    if (raw != null) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
+    if (security != null) __obj.updateDynamic("security")(security.asInstanceOf[js.Any])
     __obj.asInstanceOf[StringProperty]
   }
 }

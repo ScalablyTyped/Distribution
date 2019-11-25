@@ -12,7 +12,7 @@ trait ReposCompareCommitsResponseCommitsItemParentsItem extends js.Object {
 object ReposCompareCommitsResponseCommitsItemParentsItem {
   @scala.inline
   def apply(sha: String, url: String): ReposCompareCommitsResponseCommitsItemParentsItem = {
-    val __obj = js.Dynamic.literal(sha = sha, url = url)
+    val __obj = js.Dynamic.literal(sha = sha.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReposCompareCommitsResponseCommitsItemParentsItem]
   }

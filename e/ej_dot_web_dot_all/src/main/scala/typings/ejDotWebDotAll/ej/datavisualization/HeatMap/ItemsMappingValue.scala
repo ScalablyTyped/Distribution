@@ -17,8 +17,8 @@ object ItemsMappingValue {
   @scala.inline
   def apply(displayName: String = null, propertyName: String = null): ItemsMappingValue = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (propertyName != null) __obj.updateDynamic("propertyName")(propertyName)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (propertyName != null) __obj.updateDynamic("propertyName")(propertyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemsMappingValue]
   }
 }

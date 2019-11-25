@@ -13,7 +13,7 @@ trait AddressInterface extends js.Object {
 object AddressInterface {
   @scala.inline
   def apply(address: String, family: String, port: Double): AddressInterface = {
-    val __obj = js.Dynamic.literal(address = address, family = family, port = port)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], family = family.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AddressInterface]
   }

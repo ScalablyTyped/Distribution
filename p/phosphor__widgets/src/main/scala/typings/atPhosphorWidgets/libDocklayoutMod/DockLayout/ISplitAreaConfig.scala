@@ -37,8 +37,8 @@ object ISplitAreaConfig {
     sizes: js.Array[Double],
     `type`: `split-area`
   ): ISplitAreaConfig = {
-    val __obj = js.Dynamic.literal(children = children, orientation = orientation.asInstanceOf[js.Any], sizes = sizes)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], sizes = sizes.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISplitAreaConfig]
   }
 }

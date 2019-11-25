@@ -17,7 +17,7 @@ object RegisterDebuggeeRequest {
   @scala.inline
   def apply(debuggee: Debuggee = null): RegisterDebuggeeRequest = {
     val __obj = js.Dynamic.literal()
-    if (debuggee != null) __obj.updateDynamic("debuggee")(debuggee)
+    if (debuggee != null) __obj.updateDynamic("debuggee")(debuggee.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterDebuggeeRequest]
   }
 }

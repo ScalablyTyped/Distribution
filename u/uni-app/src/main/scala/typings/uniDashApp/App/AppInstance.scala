@@ -64,7 +64,7 @@ object AppInstance {
     onUniNViewMessage: /* options */ AnyObject => Unit = null
   ): AppInstance[T] = {
     val __obj = js.Dynamic.literal()
-    if (globalData != null) __obj.updateDynamic("globalData")(globalData)
+    if (globalData != null) __obj.updateDynamic("globalData")(globalData.asInstanceOf[js.Any])
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     if (onHide != null) __obj.updateDynamic("onHide")(js.Any.fromFunction0(onHide))
     if (onLaunch != null) __obj.updateDynamic("onLaunch")(js.Any.fromFunction1(onLaunch))

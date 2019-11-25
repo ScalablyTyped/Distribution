@@ -12,7 +12,7 @@ trait SidebarPageDetail extends js.Object {
 object SidebarPageDetail {
   @scala.inline
   def apply(page: String): SidebarPageDetail = {
-    val __obj = js.Dynamic.literal(page = page)
+    val __obj = js.Dynamic.literal(page = page.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SidebarPageDetail]
   }

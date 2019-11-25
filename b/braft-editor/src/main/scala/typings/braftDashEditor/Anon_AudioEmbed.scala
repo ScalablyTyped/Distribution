@@ -20,10 +20,10 @@ object Anon_AudioEmbed {
     video: js.UndefOr[Boolean] = js.undefined
   ): Anon_AudioEmbed = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(audio)) __obj.updateDynamic("audio")(audio)
-    if (!js.isUndefined(embed)) __obj.updateDynamic("embed")(embed)
-    if (!js.isUndefined(image)) __obj.updateDynamic("image")(image)
-    if (!js.isUndefined(video)) __obj.updateDynamic("video")(video)
+    if (!js.isUndefined(audio)) __obj.updateDynamic("audio")(audio.asInstanceOf[js.Any])
+    if (!js.isUndefined(embed)) __obj.updateDynamic("embed")(embed.asInstanceOf[js.Any])
+    if (!js.isUndefined(image)) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (!js.isUndefined(video)) __obj.updateDynamic("video")(video.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AudioEmbed]
   }
 }

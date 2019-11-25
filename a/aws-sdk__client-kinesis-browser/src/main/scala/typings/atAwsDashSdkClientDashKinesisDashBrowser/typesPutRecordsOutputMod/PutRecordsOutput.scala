@@ -37,7 +37,7 @@ object PutRecordsOutput {
     EncryptionType: NONE | KMS | String = null,
     FailedRecordCount: Int | Double = null
   ): PutRecordsOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata, Records = Records)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], Records = Records.asInstanceOf[js.Any])
     if (EncryptionType != null) __obj.updateDynamic("EncryptionType")(EncryptionType.asInstanceOf[js.Any])
     if (FailedRecordCount != null) __obj.updateDynamic("FailedRecordCount")(FailedRecordCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutRecordsOutput]

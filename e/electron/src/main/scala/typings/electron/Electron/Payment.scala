@@ -18,7 +18,7 @@ trait Payment extends js.Object {
 object Payment {
   @scala.inline
   def apply(productIdentifier: String, quantity: Double): Payment = {
-    val __obj = js.Dynamic.literal(productIdentifier = productIdentifier, quantity = quantity)
+    val __obj = js.Dynamic.literal(productIdentifier = productIdentifier.asInstanceOf[js.Any], quantity = quantity.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Payment]
   }

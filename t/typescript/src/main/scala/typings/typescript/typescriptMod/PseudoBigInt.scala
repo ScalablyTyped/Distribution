@@ -12,7 +12,7 @@ trait PseudoBigInt extends js.Object {
 object PseudoBigInt {
   @scala.inline
   def apply(base10Value: String, negative: Boolean): PseudoBigInt = {
-    val __obj = js.Dynamic.literal(base10Value = base10Value, negative = negative)
+    val __obj = js.Dynamic.literal(base10Value = base10Value.asInstanceOf[js.Any], negative = negative.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PseudoBigInt]
   }

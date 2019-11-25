@@ -12,9 +12,9 @@ trait InstantExperiencesAdsDialogResponse extends DialogResponse {
 object InstantExperiencesAdsDialogResponse {
   @scala.inline
   def apply(id: String, success: Boolean, error_code: Int | Double = null, error_message: String = null): InstantExperiencesAdsDialogResponse = {
-    val __obj = js.Dynamic.literal(id = id, success = success)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
     if (error_code != null) __obj.updateDynamic("error_code")(error_code.asInstanceOf[js.Any])
-    if (error_message != null) __obj.updateDynamic("error_message")(error_message)
+    if (error_message != null) __obj.updateDynamic("error_message")(error_message.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstantExperiencesAdsDialogResponse]
   }
 }

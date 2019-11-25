@@ -12,7 +12,7 @@ object Anon_TightLists {
   @scala.inline
   def apply(tightLists: js.UndefOr[Boolean] = js.undefined): Anon_TightLists = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(tightLists)) __obj.updateDynamic("tightLists")(tightLists)
+    if (!js.isUndefined(tightLists)) __obj.updateDynamic("tightLists")(tightLists.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_TightLists]
   }
 }

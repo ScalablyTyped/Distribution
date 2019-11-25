@@ -43,10 +43,10 @@ object OptionsSign {
     x509: js.Array[String] = null
   ): OptionsSign = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (keyValue != null) __obj.updateDynamic("keyValue")(keyValue)
-    if (references != null) __obj.updateDynamic("references")(references)
-    if (x509 != null) __obj.updateDynamic("x509")(x509)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (keyValue != null) __obj.updateDynamic("keyValue")(keyValue.asInstanceOf[js.Any])
+    if (references != null) __obj.updateDynamic("references")(references.asInstanceOf[js.Any])
+    if (x509 != null) __obj.updateDynamic("x509")(x509.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsSign]
   }
 }

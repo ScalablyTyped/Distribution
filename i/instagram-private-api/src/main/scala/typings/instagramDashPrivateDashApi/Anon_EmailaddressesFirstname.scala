@@ -19,9 +19,9 @@ object Anon_EmailaddressesFirstname {
     first_name: String = null,
     last_name: String = null
   ): Anon_EmailaddressesFirstname = {
-    val __obj = js.Dynamic.literal(email_addresses = email_addresses, phone_numbers = phone_numbers)
-    if (first_name != null) __obj.updateDynamic("first_name")(first_name)
-    if (last_name != null) __obj.updateDynamic("last_name")(last_name)
+    val __obj = js.Dynamic.literal(email_addresses = email_addresses.asInstanceOf[js.Any], phone_numbers = phone_numbers.asInstanceOf[js.Any])
+    if (first_name != null) __obj.updateDynamic("first_name")(first_name.asInstanceOf[js.Any])
+    if (last_name != null) __obj.updateDynamic("last_name")(last_name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_EmailaddressesFirstname]
   }
 }

@@ -17,7 +17,7 @@ trait DeleteMessageOptions extends BaseOptions {
 object DeleteMessageOptions {
   @scala.inline
   def apply(id: String, qname: String): DeleteMessageOptions = {
-    val __obj = js.Dynamic.literal(id = id, qname = qname)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], qname = qname.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeleteMessageOptions]
   }

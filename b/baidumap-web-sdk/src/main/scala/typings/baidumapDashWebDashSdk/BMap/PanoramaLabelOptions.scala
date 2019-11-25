@@ -14,7 +14,7 @@ object PanoramaLabelOptions {
   def apply(altitude: Int | Double = null, position: Point = null): PanoramaLabelOptions = {
     val __obj = js.Dynamic.literal()
     if (altitude != null) __obj.updateDynamic("altitude")(altitude.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[PanoramaLabelOptions]
   }
 }

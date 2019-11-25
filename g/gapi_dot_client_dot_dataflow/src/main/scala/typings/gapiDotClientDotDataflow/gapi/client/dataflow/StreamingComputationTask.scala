@@ -21,9 +21,9 @@ object StreamingComputationTask {
     taskType: String = null
   ): StreamingComputationTask = {
     val __obj = js.Dynamic.literal()
-    if (computationRanges != null) __obj.updateDynamic("computationRanges")(computationRanges)
-    if (dataDisks != null) __obj.updateDynamic("dataDisks")(dataDisks)
-    if (taskType != null) __obj.updateDynamic("taskType")(taskType)
+    if (computationRanges != null) __obj.updateDynamic("computationRanges")(computationRanges.asInstanceOf[js.Any])
+    if (dataDisks != null) __obj.updateDynamic("dataDisks")(dataDisks.asInstanceOf[js.Any])
+    if (taskType != null) __obj.updateDynamic("taskType")(taskType.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamingComputationTask]
   }
 }

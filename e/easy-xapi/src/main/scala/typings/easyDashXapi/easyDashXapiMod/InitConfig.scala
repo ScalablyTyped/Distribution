@@ -13,7 +13,7 @@ object InitConfig {
   @scala.inline
   def apply(jSend: Anon_Partial = null): InitConfig = {
     val __obj = js.Dynamic.literal()
-    if (jSend != null) __obj.updateDynamic("jSend")(jSend)
+    if (jSend != null) __obj.updateDynamic("jSend")(jSend.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitConfig]
   }
 }

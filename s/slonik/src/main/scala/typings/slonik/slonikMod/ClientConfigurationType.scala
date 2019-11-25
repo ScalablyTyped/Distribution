@@ -37,13 +37,13 @@ object ClientConfigurationType {
     typeParsers: js.Array[TypeParserType[_]] = null
   ): ClientConfigurationType = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(captureStackTrace)) __obj.updateDynamic("captureStackTrace")(captureStackTrace)
+    if (!js.isUndefined(captureStackTrace)) __obj.updateDynamic("captureStackTrace")(captureStackTrace.asInstanceOf[js.Any])
     if (connectionTimeout != null) __obj.updateDynamic("connectionTimeout")(connectionTimeout.asInstanceOf[js.Any])
     if (idleTimeout != null) __obj.updateDynamic("idleTimeout")(idleTimeout.asInstanceOf[js.Any])
-    if (interceptors != null) __obj.updateDynamic("interceptors")(interceptors)
+    if (interceptors != null) __obj.updateDynamic("interceptors")(interceptors.asInstanceOf[js.Any])
     if (maximumPoolSize != null) __obj.updateDynamic("maximumPoolSize")(maximumPoolSize.asInstanceOf[js.Any])
     if (minimumPoolSize != null) __obj.updateDynamic("minimumPoolSize")(minimumPoolSize.asInstanceOf[js.Any])
-    if (typeParsers != null) __obj.updateDynamic("typeParsers")(typeParsers)
+    if (typeParsers != null) __obj.updateDynamic("typeParsers")(typeParsers.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientConfigurationType]
   }
 }

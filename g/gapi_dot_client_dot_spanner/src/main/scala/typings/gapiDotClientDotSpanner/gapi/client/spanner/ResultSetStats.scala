@@ -26,8 +26,8 @@ object ResultSetStats {
   @scala.inline
   def apply(queryPlan: QueryPlan = null, queryStats: Record[String, _] = null): ResultSetStats = {
     val __obj = js.Dynamic.literal()
-    if (queryPlan != null) __obj.updateDynamic("queryPlan")(queryPlan)
-    if (queryStats != null) __obj.updateDynamic("queryStats")(queryStats)
+    if (queryPlan != null) __obj.updateDynamic("queryPlan")(queryPlan.asInstanceOf[js.Any])
+    if (queryStats != null) __obj.updateDynamic("queryStats")(queryStats.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResultSetStats]
   }
 }

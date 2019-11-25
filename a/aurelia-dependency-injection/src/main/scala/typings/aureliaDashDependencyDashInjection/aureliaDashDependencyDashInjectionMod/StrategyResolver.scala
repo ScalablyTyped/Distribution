@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 class StrategyResolver[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */, TStrategyKey /* <: String */] protected () extends js.Object {
   def this(
     strategy: TStrategyKey,
-    state: /* import warning: ImportType.apply Failed type conversion: aurelia-dependency-injection.aurelia-dependency-injection.StrategyState<TBase, TImpl, TArgs>[TStrategyKey] */ js.Any
+    state: /* import warning: importer.ImportType#apply Failed type conversion: aurelia-dependency-injection.aurelia-dependency-injection.StrategyState<TBase, TImpl, TArgs>[TStrategyKey] */ js.Any
   ) = this()
   var state: TImpl = js.native
   var strategy: String = js.native

@@ -13,7 +13,7 @@ trait ElementApi extends js.Object {
 object ElementApi {
   @scala.inline
   def apply(sourceElement: HTMLElement, updateSourceElement: () => Unit): ElementApi = {
-    val __obj = js.Dynamic.literal(sourceElement = sourceElement, updateSourceElement = js.Any.fromFunction0(updateSourceElement))
+    val __obj = js.Dynamic.literal(sourceElement = sourceElement.asInstanceOf[js.Any], updateSourceElement = js.Any.fromFunction0(updateSourceElement))
   
     __obj.asInstanceOf[ElementApi]
   }

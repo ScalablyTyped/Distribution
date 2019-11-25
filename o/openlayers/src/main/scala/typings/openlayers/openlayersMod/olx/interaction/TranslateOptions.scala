@@ -19,7 +19,7 @@ object TranslateOptions {
     layers: js.Array[Layer] | (js.Function1[/* layer */ Layer, Boolean]) = null
   ): TranslateOptions = {
     val __obj = js.Dynamic.literal()
-    if (features != null) __obj.updateDynamic("features")(features)
+    if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
     if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
     __obj.asInstanceOf[TranslateOptions]
   }

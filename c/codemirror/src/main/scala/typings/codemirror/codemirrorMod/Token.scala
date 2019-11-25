@@ -20,8 +20,8 @@ trait Token extends js.Object {
 object Token {
   @scala.inline
   def apply(end: Double, start: Double, state: js.Any, string: String, `type`: String = null): Token = {
-    val __obj = js.Dynamic.literal(end = end, start = start, state = state, string = string)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], string = string.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
 }

@@ -1,6 +1,5 @@
 package typings.atIonicCore.distTypesComponentsMod.Components
 
-import typings.atIonicCore.distTypesComponentsSelectDashPopoverSelectDashPopoverDashInterfaceMod.SelectPopoverOption
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +16,9 @@ trait IonSelectPopover extends js.Object {
   /**
     * Array of options for the popover
     */
-  var options: js.Array[SelectPopoverOption]
+  var options: js.Array[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SelectPopoverOption */ _
+  ]
   /**
     * Subheader text for the popover
     */
@@ -27,15 +28,17 @@ trait IonSelectPopover extends js.Object {
 object IonSelectPopover {
   @scala.inline
   def apply(
-    options: js.Array[SelectPopoverOption],
+    options: js.Array[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SelectPopoverOption */ _
+    ],
     header: String = null,
     message: String = null,
     subHeader: String = null
   ): IonSelectPopover = {
-    val __obj = js.Dynamic.literal(options = options)
-    if (header != null) __obj.updateDynamic("header")(header)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (subHeader != null) __obj.updateDynamic("subHeader")(subHeader)
+    val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (subHeader != null) __obj.updateDynamic("subHeader")(subHeader.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonSelectPopover]
   }
 }

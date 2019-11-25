@@ -15,7 +15,7 @@ trait Anon_EventLoaded extends js.Object {
 object Anon_EventLoaded {
   @scala.inline
   def apply(event: SyntheticEvent[HTMLVideoElement, Event], loaded: Double): Anon_EventLoaded = {
-    val __obj = js.Dynamic.literal(event = event, loaded = loaded)
+    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], loaded = loaded.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EventLoaded]
   }

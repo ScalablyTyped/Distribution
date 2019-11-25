@@ -13,7 +13,7 @@ trait Anon_CellHeaderCell extends js.Object {
 object Anon_CellHeaderCell {
   @scala.inline
   def apply(cell: String, headerCell: String, root: String): Anon_CellHeaderCell = {
-    val __obj = js.Dynamic.literal(cell = cell, headerCell = headerCell, root = root)
+    val __obj = js.Dynamic.literal(cell = cell.asInstanceOf[js.Any], headerCell = headerCell.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CellHeaderCell]
   }

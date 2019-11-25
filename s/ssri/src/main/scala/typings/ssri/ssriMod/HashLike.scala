@@ -13,8 +13,8 @@ trait HashLike extends js.Object {
 object HashLike {
   @scala.inline
   def apply(algorithm: String, digest: String, options: js.Array[String] = null): HashLike = {
-    val __obj = js.Dynamic.literal(algorithm = algorithm, digest = digest)
-    if (options != null) __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(algorithm = algorithm.asInstanceOf[js.Any], digest = digest.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[HashLike]
   }
 }

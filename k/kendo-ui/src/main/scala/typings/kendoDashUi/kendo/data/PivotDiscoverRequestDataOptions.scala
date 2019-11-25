@@ -12,7 +12,7 @@ trait PivotDiscoverRequestDataOptions extends js.Object {
 object PivotDiscoverRequestDataOptions {
   @scala.inline
   def apply(command: String, restrictions: PivotDiscoverRequestRestrictionOptions): PivotDiscoverRequestDataOptions = {
-    val __obj = js.Dynamic.literal(command = command, restrictions = restrictions)
+    val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], restrictions = restrictions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PivotDiscoverRequestDataOptions]
   }

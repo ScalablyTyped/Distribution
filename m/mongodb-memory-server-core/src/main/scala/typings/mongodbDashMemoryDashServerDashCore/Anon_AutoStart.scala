@@ -25,8 +25,8 @@ object Anon_AutoStart {
     replSet: Required[ReplSetOpts],
     autoStart: js.UndefOr[Boolean] = js.undefined
   ): Anon_AutoStart = {
-    val __obj = js.Dynamic.literal(binary = binary, debug = debug, instanceOpts = instanceOpts, replSet = replSet)
-    if (!js.isUndefined(autoStart)) __obj.updateDynamic("autoStart")(autoStart)
+    val __obj = js.Dynamic.literal(binary = binary.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], instanceOpts = instanceOpts.asInstanceOf[js.Any], replSet = replSet.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoStart)) __obj.updateDynamic("autoStart")(autoStart.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AutoStart]
   }
 }

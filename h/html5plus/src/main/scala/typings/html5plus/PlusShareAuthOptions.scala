@@ -49,10 +49,10 @@ object PlusShareAuthOptions {
   @scala.inline
   def apply(appid: String = null, appkey: String = null, appsecret: String = null, redirect_url: String = null): PlusShareAuthOptions = {
     val __obj = js.Dynamic.literal()
-    if (appid != null) __obj.updateDynamic("appid")(appid)
-    if (appkey != null) __obj.updateDynamic("appkey")(appkey)
-    if (appsecret != null) __obj.updateDynamic("appsecret")(appsecret)
-    if (redirect_url != null) __obj.updateDynamic("redirect_url")(redirect_url)
+    if (appid != null) __obj.updateDynamic("appid")(appid.asInstanceOf[js.Any])
+    if (appkey != null) __obj.updateDynamic("appkey")(appkey.asInstanceOf[js.Any])
+    if (appsecret != null) __obj.updateDynamic("appsecret")(appsecret.asInstanceOf[js.Any])
+    if (redirect_url != null) __obj.updateDynamic("redirect_url")(redirect_url.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusShareAuthOptions]
   }
 }

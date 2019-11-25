@@ -23,7 +23,7 @@ object TfvcItemRequestData {
     includeLinks: Boolean,
     itemDescriptors: js.Array[TfvcItemDescriptor]
   ): TfvcItemRequestData = {
-    val __obj = js.Dynamic.literal(includeContentMetadata = includeContentMetadata, includeLinks = includeLinks, itemDescriptors = itemDescriptors)
+    val __obj = js.Dynamic.literal(includeContentMetadata = includeContentMetadata.asInstanceOf[js.Any], includeLinks = includeLinks.asInstanceOf[js.Any], itemDescriptors = itemDescriptors.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TfvcItemRequestData]
   }

@@ -104,7 +104,7 @@ object NotificationSubscription {
     url: String,
     userSettings: SubscriptionUserSettings
   ): NotificationSubscription = {
-    val __obj = js.Dynamic.literal(_links = _links, adminSettings = adminSettings, channel = channel, description = description, diagnostics = diagnostics, extendedProperties = extendedProperties, filter = filter, flags = flags, id = id, lastModifiedBy = lastModifiedBy, modifiedDate = modifiedDate, permissions = permissions, scope = scope, status = status, statusMessage = statusMessage, subscriber = subscriber, url = url, userSettings = userSettings)
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], adminSettings = adminSettings.asInstanceOf[js.Any], channel = channel.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], diagnostics = diagnostics.asInstanceOf[js.Any], extendedProperties = extendedProperties.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], lastModifiedBy = lastModifiedBy.asInstanceOf[js.Any], modifiedDate = modifiedDate.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusMessage = statusMessage.asInstanceOf[js.Any], subscriber = subscriber.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], userSettings = userSettings.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NotificationSubscription]
   }

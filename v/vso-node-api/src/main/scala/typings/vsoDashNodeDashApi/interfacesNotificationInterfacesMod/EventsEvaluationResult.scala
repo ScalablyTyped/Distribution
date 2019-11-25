@@ -18,7 +18,7 @@ trait EventsEvaluationResult extends js.Object {
 object EventsEvaluationResult {
   @scala.inline
   def apply(count: Double, matchedCount: Double): EventsEvaluationResult = {
-    val __obj = js.Dynamic.literal(count = count, matchedCount = matchedCount)
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], matchedCount = matchedCount.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EventsEvaluationResult]
   }

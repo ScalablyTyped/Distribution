@@ -52,14 +52,14 @@ object Chart3dFrameOptions {
     visible: String = null
   ): Chart3dFrameOptions = {
     val __obj = js.Dynamic.literal()
-    if (back != null) __obj.updateDynamic("back")(back)
-    if (bottom != null) __obj.updateDynamic("bottom")(bottom)
-    if (front != null) __obj.updateDynamic("front")(front)
-    if (left != null) __obj.updateDynamic("left")(left)
-    if (right != null) __obj.updateDynamic("right")(right)
+    if (back != null) __obj.updateDynamic("back")(back.asInstanceOf[js.Any])
+    if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
+    if (front != null) __obj.updateDynamic("front")(front.asInstanceOf[js.Any])
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top)
-    if (visible != null) __obj.updateDynamic("visible")(visible)
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (visible != null) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[Chart3dFrameOptions]
   }
 }

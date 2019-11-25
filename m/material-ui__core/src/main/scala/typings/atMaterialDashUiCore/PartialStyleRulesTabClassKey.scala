@@ -38,18 +38,18 @@ object PartialStyleRulesTabClassKey {
     wrapper: CSSProperties = null
   ): PartialStyleRulesTabClassKey = {
     val __obj = js.Dynamic.literal()
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled)
-    if (fullWidth != null) __obj.updateDynamic("fullWidth")(fullWidth)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (labelContainer != null) __obj.updateDynamic("labelContainer")(labelContainer)
-    if (labelIcon != null) __obj.updateDynamic("labelIcon")(labelIcon)
-    if (labelWrapped != null) __obj.updateDynamic("labelWrapped")(labelWrapped)
-    if (root != null) __obj.updateDynamic("root")(root)
-    if (selected != null) __obj.updateDynamic("selected")(selected)
-    if (textColorInherit != null) __obj.updateDynamic("textColorInherit")(textColorInherit)
-    if (textColorPrimary != null) __obj.updateDynamic("textColorPrimary")(textColorPrimary)
-    if (textColorSecondary != null) __obj.updateDynamic("textColorSecondary")(textColorSecondary)
-    if (wrapper != null) __obj.updateDynamic("wrapper")(wrapper)
+    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (fullWidth != null) __obj.updateDynamic("fullWidth")(fullWidth.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (labelContainer != null) __obj.updateDynamic("labelContainer")(labelContainer.asInstanceOf[js.Any])
+    if (labelIcon != null) __obj.updateDynamic("labelIcon")(labelIcon.asInstanceOf[js.Any])
+    if (labelWrapped != null) __obj.updateDynamic("labelWrapped")(labelWrapped.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
+    if (textColorInherit != null) __obj.updateDynamic("textColorInherit")(textColorInherit.asInstanceOf[js.Any])
+    if (textColorPrimary != null) __obj.updateDynamic("textColorPrimary")(textColorPrimary.asInstanceOf[js.Any])
+    if (textColorSecondary != null) __obj.updateDynamic("textColorSecondary")(textColorSecondary.asInstanceOf[js.Any])
+    if (wrapper != null) __obj.updateDynamic("wrapper")(wrapper.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyleRulesTabClassKey]
   }
 }

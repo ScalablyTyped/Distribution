@@ -23,7 +23,7 @@ object Anon_Details {
     testResults: Double,
     workItems: Double
   ): Anon_Details = {
-    val __obj = js.Dynamic.literal(details = details, environments = environments, issues = issues, releaseInfo = releaseInfo, testResults = testResults, workItems = workItems)
+    val __obj = js.Dynamic.literal(details = details.asInstanceOf[js.Any], environments = environments.asInstanceOf[js.Any], issues = issues.asInstanceOf[js.Any], releaseInfo = releaseInfo.asInstanceOf[js.Any], testResults = testResults.asInstanceOf[js.Any], workItems = workItems.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Details]
   }

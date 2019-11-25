@@ -19,7 +19,7 @@ object IFolderNameListing {
     MoreValues: Boolean,
     SortWithExpression: (IExpression, Double) => Unit
   ): IFolderNameListing = {
-    val __obj = js.Dynamic.literal(Count = Count, Item = js.Any.fromFunction1(Item), MoreValues = MoreValues, SortWithExpression = js.Any.fromFunction2(SortWithExpression))
+    val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), MoreValues = MoreValues.asInstanceOf[js.Any], SortWithExpression = js.Any.fromFunction2(SortWithExpression))
   
     __obj.asInstanceOf[IFolderNameListing]
   }

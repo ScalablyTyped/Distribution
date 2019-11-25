@@ -12,8 +12,8 @@ trait Anon_IsInline extends js.Object {
 object Anon_IsInline {
   @scala.inline
   def apply(isInline: Boolean, templateUrl: String = null): Anon_IsInline = {
-    val __obj = js.Dynamic.literal(isInline = isInline)
-    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl)
+    val __obj = js.Dynamic.literal(isInline = isInline.asInstanceOf[js.Any])
+    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IsInline]
   }
 }

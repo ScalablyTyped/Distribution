@@ -16,8 +16,8 @@ trait FieldModel extends js.Object {
 object FieldModel {
   @scala.inline
   def apply(description: String, id: String, isIdentity: Boolean, name: String, `type`: FieldType, url: String): FieldModel = {
-    val __obj = js.Dynamic.literal(description = description, id = id, isIdentity = isIdentity, name = name, url = url)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isIdentity = isIdentity.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldModel]
   }
 }

@@ -41,8 +41,8 @@ object LazyRepeatOptions {
     if (calculateItemHeight != null) __obj.updateDynamic("calculateItemHeight")(calculateItemHeight.asInstanceOf[js.Any])
     if (configureItemScope != null) __obj.updateDynamic("configureItemScope")(configureItemScope.asInstanceOf[js.Any])
     if (countItems != null) __obj.updateDynamic("countItems")(countItems.asInstanceOf[js.Any])
-    if (createItemContent != null) __obj.updateDynamic("createItemContent")(createItemContent)
-    if (destroyItem != null) __obj.updateDynamic("destroyItem")(destroyItem)
+    if (createItemContent != null) __obj.updateDynamic("createItemContent")(createItemContent.asInstanceOf[js.Any])
+    if (destroyItem != null) __obj.updateDynamic("destroyItem")(destroyItem.asInstanceOf[js.Any])
     __obj.asInstanceOf[LazyRepeatOptions]
   }
 }

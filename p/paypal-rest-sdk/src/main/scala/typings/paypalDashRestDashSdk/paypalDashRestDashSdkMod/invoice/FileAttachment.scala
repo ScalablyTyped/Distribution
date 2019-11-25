@@ -12,7 +12,7 @@ trait FileAttachment extends js.Object {
 object FileAttachment {
   @scala.inline
   def apply(name: String, url: String): FileAttachment = {
-    val __obj = js.Dynamic.literal(name = name, url = url)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FileAttachment]
   }

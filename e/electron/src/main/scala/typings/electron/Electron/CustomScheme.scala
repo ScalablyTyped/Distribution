@@ -16,8 +16,8 @@ trait CustomScheme extends js.Object {
 object CustomScheme {
   @scala.inline
   def apply(scheme: String, privileges: Privileges = null): CustomScheme = {
-    val __obj = js.Dynamic.literal(scheme = scheme)
-    if (privileges != null) __obj.updateDynamic("privileges")(privileges)
+    val __obj = js.Dynamic.literal(scheme = scheme.asInstanceOf[js.Any])
+    if (privileges != null) __obj.updateDynamic("privileges")(privileges.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomScheme]
   }
 }

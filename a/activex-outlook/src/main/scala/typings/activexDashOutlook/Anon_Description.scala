@@ -15,7 +15,7 @@ trait Anon_Description extends js.Object {
 object Anon_Description {
   @scala.inline
   def apply(Description: String, Max: Double, State: OlSyncState, Value: Double): Anon_Description = {
-    val __obj = js.Dynamic.literal(Description = Description, Max = Max, State = State, Value = Value)
+    val __obj = js.Dynamic.literal(Description = Description.asInstanceOf[js.Any], Max = Max.asInstanceOf[js.Any], State = State.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Description]
   }

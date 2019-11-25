@@ -12,7 +12,7 @@ trait Anon_PointIndex extends js.Object {
 object Anon_PointIndex {
   @scala.inline
   def apply(PointIndex: Double, SeriesIndex: Double): Anon_PointIndex = {
-    val __obj = js.Dynamic.literal(PointIndex = PointIndex, SeriesIndex = SeriesIndex)
+    val __obj = js.Dynamic.literal(PointIndex = PointIndex.asInstanceOf[js.Any], SeriesIndex = SeriesIndex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_PointIndex]
   }

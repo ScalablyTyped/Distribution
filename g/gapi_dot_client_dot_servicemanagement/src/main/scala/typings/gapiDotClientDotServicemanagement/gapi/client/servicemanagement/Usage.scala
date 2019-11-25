@@ -38,9 +38,9 @@ object Usage {
     rules: js.Array[UsageRule] = null
   ): Usage = {
     val __obj = js.Dynamic.literal()
-    if (producerNotificationChannel != null) __obj.updateDynamic("producerNotificationChannel")(producerNotificationChannel)
-    if (requirements != null) __obj.updateDynamic("requirements")(requirements)
-    if (rules != null) __obj.updateDynamic("rules")(rules)
+    if (producerNotificationChannel != null) __obj.updateDynamic("producerNotificationChannel")(producerNotificationChannel.asInstanceOf[js.Any])
+    if (requirements != null) __obj.updateDynamic("requirements")(requirements.asInstanceOf[js.Any])
+    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[Usage]
   }
 }

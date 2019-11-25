@@ -20,8 +20,8 @@ trait SharingState extends js.Object {
 object SharingState {
   @scala.inline
   def apply(camera: Boolean, microphone: Boolean, screen: String = null): SharingState = {
-    val __obj = js.Dynamic.literal(camera = camera, microphone = microphone)
-    if (screen != null) __obj.updateDynamic("screen")(screen)
+    val __obj = js.Dynamic.literal(camera = camera.asInstanceOf[js.Any], microphone = microphone.asInstanceOf[js.Any])
+    if (screen != null) __obj.updateDynamic("screen")(screen.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharingState]
   }
 }

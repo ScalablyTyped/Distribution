@@ -18,7 +18,7 @@ trait IOptions extends js.Object {
 object IOptions {
   @scala.inline
   def apply(model: FileBrowserModel): IOptions = {
-    val __obj = js.Dynamic.literal(model = model)
+    val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IOptions]
   }

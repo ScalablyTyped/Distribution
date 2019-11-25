@@ -14,7 +14,7 @@ trait WatchOptions extends js.Object {
 object WatchOptions {
   @scala.inline
   def apply(loggedInUser: String, onlogin: String => Unit, onlogout: () => Unit, onready: () => Unit = null): WatchOptions = {
-    val __obj = js.Dynamic.literal(loggedInUser = loggedInUser, onlogin = js.Any.fromFunction1(onlogin), onlogout = js.Any.fromFunction0(onlogout))
+    val __obj = js.Dynamic.literal(loggedInUser = loggedInUser.asInstanceOf[js.Any], onlogin = js.Any.fromFunction1(onlogin), onlogout = js.Any.fromFunction0(onlogout))
     if (onready != null) __obj.updateDynamic("onready")(js.Any.fromFunction0(onready))
     __obj.asInstanceOf[WatchOptions]
   }

@@ -14,9 +14,9 @@ object Anon_BadgeUrl {
   @scala.inline
   def apply(badgeUrl: String = null, categoryId: String = null, name: String = null): Anon_BadgeUrl = {
     val __obj = js.Dynamic.literal()
-    if (badgeUrl != null) __obj.updateDynamic("badgeUrl")(badgeUrl)
-    if (categoryId != null) __obj.updateDynamic("categoryId")(categoryId)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (badgeUrl != null) __obj.updateDynamic("badgeUrl")(badgeUrl.asInstanceOf[js.Any])
+    if (categoryId != null) __obj.updateDynamic("categoryId")(categoryId.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BadgeUrl]
   }
 }

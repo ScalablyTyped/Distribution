@@ -20,10 +20,10 @@ object BatchUpdateSpreadsheetRequest {
     responseRanges: js.Array[String] = null
   ): BatchUpdateSpreadsheetRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeSpreadsheetInResponse)) __obj.updateDynamic("includeSpreadsheetInResponse")(includeSpreadsheetInResponse)
-    if (requests != null) __obj.updateDynamic("requests")(requests)
-    if (!js.isUndefined(responseIncludeGridData)) __obj.updateDynamic("responseIncludeGridData")(responseIncludeGridData)
-    if (responseRanges != null) __obj.updateDynamic("responseRanges")(responseRanges)
+    if (!js.isUndefined(includeSpreadsheetInResponse)) __obj.updateDynamic("includeSpreadsheetInResponse")(includeSpreadsheetInResponse.asInstanceOf[js.Any])
+    if (requests != null) __obj.updateDynamic("requests")(requests.asInstanceOf[js.Any])
+    if (!js.isUndefined(responseIncludeGridData)) __obj.updateDynamic("responseIncludeGridData")(responseIncludeGridData.asInstanceOf[js.Any])
+    if (responseRanges != null) __obj.updateDynamic("responseRanges")(responseRanges.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchUpdateSpreadsheetRequest]
   }
 }

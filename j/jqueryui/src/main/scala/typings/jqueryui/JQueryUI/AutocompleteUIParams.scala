@@ -16,8 +16,8 @@ object AutocompleteUIParams {
   @scala.inline
   def apply(content: js.Any = null, item: js.Any = null): AutocompleteUIParams = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (item != null) __obj.updateDynamic("item")(item)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutocompleteUIParams]
   }
 }

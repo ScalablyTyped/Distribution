@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait UnitType extends js.Object
 
+object UnitType {
+  @scala.inline
+  def PixelsPerCentimeter: typings.gm.gmStrings.PixelsPerCentimeter = this.cast("PixelsPerCentimeter")
+  @scala.inline
+  def PixelsPerInch: typings.gm.gmStrings.PixelsPerInch = this.cast("PixelsPerInch")
+  @scala.inline
+  def Undefined: typings.gm.gmStrings.Undefined = this.cast("Undefined")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

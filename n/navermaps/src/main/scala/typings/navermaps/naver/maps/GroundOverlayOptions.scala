@@ -14,8 +14,8 @@ object GroundOverlayOptions {
   @scala.inline
   def apply(clickable: js.UndefOr[Boolean] = js.undefined, map: Map = null, opacity: Int | Double = null): GroundOverlayOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable)
-    if (map != null) __obj.updateDynamic("map")(map)
+    if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable.asInstanceOf[js.Any])
+    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroundOverlayOptions]
   }

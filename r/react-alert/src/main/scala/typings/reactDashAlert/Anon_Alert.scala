@@ -12,7 +12,7 @@ trait Anon_Alert extends js.Object {
 object Anon_Alert {
   @scala.inline
   def apply(alert: AlertManager): Anon_Alert = {
-    val __obj = js.Dynamic.literal(alert = alert)
+    val __obj = js.Dynamic.literal(alert = alert.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Alert]
   }

@@ -18,8 +18,8 @@ trait Anon_Square extends js.Object {
 object Anon_Square {
   @scala.inline
   def apply(verbose: `true`, square: String = null): Anon_Square = {
-    val __obj = js.Dynamic.literal(verbose = verbose)
-    if (square != null) __obj.updateDynamic("square")(square)
+    val __obj = js.Dynamic.literal(verbose = verbose.asInstanceOf[js.Any])
+    if (square != null) __obj.updateDynamic("square")(square.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Square]
   }
 }

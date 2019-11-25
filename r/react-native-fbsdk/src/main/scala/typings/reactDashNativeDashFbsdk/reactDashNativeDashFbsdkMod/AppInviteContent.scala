@@ -36,10 +36,10 @@ object AppInviteContent {
     promotionCode: String = null,
     promotionText: String = null
   ): AppInviteContent = {
-    val __obj = js.Dynamic.literal(applinkUrl = applinkUrl)
-    if (previewImageUrl != null) __obj.updateDynamic("previewImageUrl")(previewImageUrl)
-    if (promotionCode != null) __obj.updateDynamic("promotionCode")(promotionCode)
-    if (promotionText != null) __obj.updateDynamic("promotionText")(promotionText)
+    val __obj = js.Dynamic.literal(applinkUrl = applinkUrl.asInstanceOf[js.Any])
+    if (previewImageUrl != null) __obj.updateDynamic("previewImageUrl")(previewImageUrl.asInstanceOf[js.Any])
+    if (promotionCode != null) __obj.updateDynamic("promotionCode")(promotionCode.asInstanceOf[js.Any])
+    if (promotionText != null) __obj.updateDynamic("promotionText")(promotionText.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppInviteContent]
   }
 }

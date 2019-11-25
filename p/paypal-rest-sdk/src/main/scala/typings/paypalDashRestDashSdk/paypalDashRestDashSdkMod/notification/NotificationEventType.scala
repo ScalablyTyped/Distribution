@@ -13,9 +13,9 @@ trait NotificationEventType extends js.Object {
 object NotificationEventType {
   @scala.inline
   def apply(name: String, description: String = null, status: String = null): NotificationEventType = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (status != null) __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationEventType]
   }
 }

@@ -70,7 +70,7 @@ object ISession {
     shutdown: () => js.Promise[Unit],
     terminated: ISignal[ISession, Unit]
   ): ISession = {
-    val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), isDisposed = isDisposed, isReady = isReady, messageReceived = messageReceived, model = model, name = name, ready = ready, reconnect = js.Any.fromFunction0(reconnect), send = js.Any.fromFunction1(send), serverSettings = serverSettings, shutdown = js.Any.fromFunction0(shutdown), terminated = terminated)
+    val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), isDisposed = isDisposed.asInstanceOf[js.Any], isReady = isReady.asInstanceOf[js.Any], messageReceived = messageReceived.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], ready = ready.asInstanceOf[js.Any], reconnect = js.Any.fromFunction0(reconnect), send = js.Any.fromFunction1(send), serverSettings = serverSettings.asInstanceOf[js.Any], shutdown = js.Any.fromFunction0(shutdown), terminated = terminated.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISession]
   }

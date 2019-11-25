@@ -15,8 +15,8 @@ object CommandLineSwitches {
   @scala.inline
   def apply(StringDictionary: /* key */ StringDictionary[js.Any] = null, raw: js.Array[String] = null): CommandLineSwitches = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (raw != null) __obj.updateDynamic("raw")(raw)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (raw != null) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommandLineSwitches]
   }
 }

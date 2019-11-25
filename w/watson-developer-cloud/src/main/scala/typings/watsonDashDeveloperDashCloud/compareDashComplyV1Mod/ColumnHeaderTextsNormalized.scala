@@ -14,7 +14,7 @@ object ColumnHeaderTextsNormalized {
   @scala.inline
   def apply(text_normalized: String = null): ColumnHeaderTextsNormalized = {
     val __obj = js.Dynamic.literal()
-    if (text_normalized != null) __obj.updateDynamic("text_normalized")(text_normalized)
+    if (text_normalized != null) __obj.updateDynamic("text_normalized")(text_normalized.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnHeaderTextsNormalized]
   }
 }

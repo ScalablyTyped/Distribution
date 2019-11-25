@@ -11,7 +11,7 @@ trait UrlParam extends js.Object {
 object UrlParam {
   @scala.inline
   def apply(url: String): UrlParam = {
-    val __obj = js.Dynamic.literal(url = url)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UrlParam]
   }

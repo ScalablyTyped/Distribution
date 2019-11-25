@@ -13,7 +13,7 @@ object SqlExpression {
   @scala.inline
   def apply(sql: String = null): SqlExpression = {
     val __obj = js.Dynamic.literal()
-    if (sql != null) __obj.updateDynamic("sql")(sql)
+    if (sql != null) __obj.updateDynamic("sql")(sql.asInstanceOf[js.Any])
     __obj.asInstanceOf[SqlExpression]
   }
 }

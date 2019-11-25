@@ -34,16 +34,16 @@ object CardTitleProps {
     titleStyle: CSSProperties = null
   ): CardTitleProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(actAsExpander)) __obj.updateDynamic("actAsExpander")(actAsExpander)
-    if (!js.isUndefined(expandable)) __obj.updateDynamic("expandable")(expandable)
-    if (!js.isUndefined(showExpandableButton)) __obj.updateDynamic("showExpandableButton")(showExpandableButton)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (!js.isUndefined(actAsExpander)) __obj.updateDynamic("actAsExpander")(actAsExpander.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandable)) __obj.updateDynamic("expandable")(expandable.asInstanceOf[js.Any])
+    if (!js.isUndefined(showExpandableButton)) __obj.updateDynamic("showExpandableButton")(showExpandableButton.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle.asInstanceOf[js.Any])
-    if (subtitleColor != null) __obj.updateDynamic("subtitleColor")(subtitleColor)
-    if (subtitleStyle != null) __obj.updateDynamic("subtitleStyle")(subtitleStyle)
+    if (subtitleColor != null) __obj.updateDynamic("subtitleColor")(subtitleColor.asInstanceOf[js.Any])
+    if (subtitleStyle != null) __obj.updateDynamic("subtitleStyle")(subtitleStyle.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (titleColor != null) __obj.updateDynamic("titleColor")(titleColor)
-    if (titleStyle != null) __obj.updateDynamic("titleStyle")(titleStyle)
+    if (titleColor != null) __obj.updateDynamic("titleColor")(titleColor.asInstanceOf[js.Any])
+    if (titleStyle != null) __obj.updateDynamic("titleStyle")(titleStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardTitleProps]
   }
 }

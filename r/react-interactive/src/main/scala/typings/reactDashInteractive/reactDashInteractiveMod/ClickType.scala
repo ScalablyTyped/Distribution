@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait ClickType extends js.Object
 
+object ClickType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def keyClick: typings.reactDashInteractive.reactDashInteractiveStrings.keyClick = this.cast("keyClick")
+  @scala.inline
+  def mouseClick: typings.reactDashInteractive.reactDashInteractiveStrings.mouseClick = this.cast("mouseClick")
+  @scala.inline
+  def tapClick: typings.reactDashInteractive.reactDashInteractiveStrings.tapClick = this.cast("tapClick")
+}
+

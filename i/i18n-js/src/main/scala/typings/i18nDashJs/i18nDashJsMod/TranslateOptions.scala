@@ -24,10 +24,10 @@ object TranslateOptions {
     scope: Scope = null
   ): TranslateOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
-    if (defaults != null) __obj.updateDynamic("defaults")(defaults)
-    if (message != null) __obj.updateDynamic("message")(message)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (defaults != null) __obj.updateDynamic("defaults")(defaults.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[TranslateOptions]
   }

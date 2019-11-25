@@ -25,7 +25,7 @@ object ServerTempPasswordList {
     tcid: Double,
     uid: String
   ): ServerTempPasswordList = {
-    val __obj = js.Dynamic.literal(desc = desc, end = end, nickname = nickname, pw_clear = pw_clear, start = start, tcid = tcid, uid = uid)
+    val __obj = js.Dynamic.literal(desc = desc.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], nickname = nickname.asInstanceOf[js.Any], pw_clear = pw_clear.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], tcid = tcid.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ServerTempPasswordList]
   }

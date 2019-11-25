@@ -22,11 +22,11 @@ object UsageReportEntity {
     userEmail: String = null
   ): UsageReportEntity = {
     val __obj = js.Dynamic.literal()
-    if (customerId != null) __obj.updateDynamic("customerId")(customerId)
-    if (entityId != null) __obj.updateDynamic("entityId")(entityId)
-    if (profileId != null) __obj.updateDynamic("profileId")(profileId)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (userEmail != null) __obj.updateDynamic("userEmail")(userEmail)
+    if (customerId != null) __obj.updateDynamic("customerId")(customerId.asInstanceOf[js.Any])
+    if (entityId != null) __obj.updateDynamic("entityId")(entityId.asInstanceOf[js.Any])
+    if (profileId != null) __obj.updateDynamic("profileId")(profileId.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (userEmail != null) __obj.updateDynamic("userEmail")(userEmail.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsageReportEntity]
   }
 }

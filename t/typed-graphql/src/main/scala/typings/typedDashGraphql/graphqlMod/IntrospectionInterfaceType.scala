@@ -22,8 +22,8 @@ object IntrospectionInterfaceType {
     possibleTypes: js.Array[IntrospectionNamedTypeRef],
     description: String = null
   ): IntrospectionInterfaceType = {
-    val __obj = js.Dynamic.literal(fields = fields, kind = kind, name = name, possibleTypes = possibleTypes)
-    if (description != null) __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], possibleTypes = possibleTypes.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrospectionInterfaceType]
   }
 }

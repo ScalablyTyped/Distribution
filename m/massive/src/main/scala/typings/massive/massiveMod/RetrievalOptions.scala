@@ -24,11 +24,11 @@ object RetrievalOptions {
     pageLength: Int | Double = null
   ): RetrievalOptions = {
     val __obj = js.Dynamic.literal()
-    if (exprs != null) __obj.updateDynamic("exprs")(exprs)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (exprs != null) __obj.updateDynamic("exprs")(exprs.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (order != null) __obj.updateDynamic("order")(order)
+    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     if (pageLength != null) __obj.updateDynamic("pageLength")(pageLength.asInstanceOf[js.Any])
     __obj.asInstanceOf[RetrievalOptions]
   }

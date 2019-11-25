@@ -21,10 +21,10 @@ object List {
     table: Table = null
   ): List = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (dnd5 != null) __obj.updateDynamic("dnd5")(dnd5)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
-    if (table != null) __obj.updateDynamic("table")(table)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (dnd5 != null) __obj.updateDynamic("dnd5")(dnd5.asInstanceOf[js.Any])
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
     __obj.asInstanceOf[List]
   }
 }

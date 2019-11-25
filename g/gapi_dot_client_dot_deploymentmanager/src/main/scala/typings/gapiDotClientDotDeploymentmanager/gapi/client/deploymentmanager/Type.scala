@@ -27,11 +27,11 @@ object Type {
     selfLink: String = null
   ): Type = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (insertTime != null) __obj.updateDynamic("insertTime")(insertTime)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (operation != null) __obj.updateDynamic("operation")(operation)
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (insertTime != null) __obj.updateDynamic("insertTime")(insertTime.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (operation != null) __obj.updateDynamic("operation")(operation.asInstanceOf[js.Any])
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
     __obj.asInstanceOf[Type]
   }
 }

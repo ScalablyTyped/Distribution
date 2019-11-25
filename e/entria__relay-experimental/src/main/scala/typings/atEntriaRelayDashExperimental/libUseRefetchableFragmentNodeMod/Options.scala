@@ -15,7 +15,7 @@ object Options {
   @scala.inline
   def apply(fetchPolicy: FetchPolicy = null, onComplete: /* arg */ Error | Null => Unit = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (fetchPolicy != null) __obj.updateDynamic("fetchPolicy")(fetchPolicy)
+    if (fetchPolicy != null) __obj.updateDynamic("fetchPolicy")(fetchPolicy.asInstanceOf[js.Any])
     if (onComplete != null) __obj.updateDynamic("onComplete")(js.Any.fromFunction1(onComplete))
     __obj.asInstanceOf[Options]
   }

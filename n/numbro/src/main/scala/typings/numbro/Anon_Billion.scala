@@ -21,8 +21,8 @@ object Anon_Billion {
     trillion: String,
     spaced: js.UndefOr[Boolean] = js.undefined
   ): Anon_Billion = {
-    val __obj = js.Dynamic.literal(billion = billion, million = million, thousand = thousand, trillion = trillion)
-    if (!js.isUndefined(spaced)) __obj.updateDynamic("spaced")(spaced)
+    val __obj = js.Dynamic.literal(billion = billion.asInstanceOf[js.Any], million = million.asInstanceOf[js.Any], thousand = thousand.asInstanceOf[js.Any], trillion = trillion.asInstanceOf[js.Any])
+    if (!js.isUndefined(spaced)) __obj.updateDynamic("spaced")(spaced.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Billion]
   }
 }

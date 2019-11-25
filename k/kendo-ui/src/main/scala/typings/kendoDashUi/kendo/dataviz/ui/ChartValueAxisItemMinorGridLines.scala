@@ -26,12 +26,12 @@ object ChartValueAxisItemMinorGridLines {
     width: Int | Double = null
   ): ChartValueAxisItemMinorGridLines = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (dashType != null) __obj.updateDynamic("dashType")(dashType)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (dashType != null) __obj.updateDynamic("dashType")(dashType.asInstanceOf[js.Any])
     if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartValueAxisItemMinorGridLines]
   }

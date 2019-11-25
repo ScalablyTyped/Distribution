@@ -36,12 +36,12 @@ object SignatureAddEventArgs {
     `type`: String = null
   ): SignatureAddEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (model != null) __obj.updateDynamic("model")(model)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (pageNumber != null) __obj.updateDynamic("pageNumber")(pageNumber.asInstanceOf[js.Any])
-    if (signatureBound != null) __obj.updateDynamic("signatureBound")(signatureBound)
-    if (signatureSettings != null) __obj.updateDynamic("signatureSettings")(signatureSettings)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (signatureBound != null) __obj.updateDynamic("signatureBound")(signatureBound.asInstanceOf[js.Any])
+    if (signatureSettings != null) __obj.updateDynamic("signatureSettings")(signatureSettings.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignatureAddEventArgs]
   }
 }

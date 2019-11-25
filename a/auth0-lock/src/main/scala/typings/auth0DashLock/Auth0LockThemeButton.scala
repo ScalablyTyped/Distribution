@@ -19,10 +19,10 @@ object Auth0LockThemeButton {
     icon: String = null,
     primaryColor: String = null
   ): Auth0LockThemeButton = {
-    val __obj = js.Dynamic.literal(displayName = displayName)
-    if (foregroundColor != null) __obj.updateDynamic("foregroundColor")(foregroundColor)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (primaryColor != null) __obj.updateDynamic("primaryColor")(primaryColor)
+    val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any])
+    if (foregroundColor != null) __obj.updateDynamic("foregroundColor")(foregroundColor.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (primaryColor != null) __obj.updateDynamic("primaryColor")(primaryColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Auth0LockThemeButton]
   }
 }

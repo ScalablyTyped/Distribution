@@ -27,9 +27,9 @@ object PrintSettings {
     allowPrinting: js.UndefOr[Boolean] = js.undefined
   ): PrintSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowPageSetup)) __obj.updateDynamic("allowPageSetup")(allowPageSetup)
-    if (!js.isUndefined(allowPageSize)) __obj.updateDynamic("allowPageSize")(allowPageSize)
-    if (!js.isUndefined(allowPrinting)) __obj.updateDynamic("allowPrinting")(allowPrinting)
+    if (!js.isUndefined(allowPageSetup)) __obj.updateDynamic("allowPageSetup")(allowPageSetup.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowPageSize)) __obj.updateDynamic("allowPageSize")(allowPageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowPrinting)) __obj.updateDynamic("allowPrinting")(allowPrinting.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrintSettings]
   }
 }

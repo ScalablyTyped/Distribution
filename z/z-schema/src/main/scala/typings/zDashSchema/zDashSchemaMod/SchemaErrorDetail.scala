@@ -47,7 +47,7 @@ object SchemaErrorDetail {
     params: js.Array[String],
     path: String
   ): SchemaErrorDetail = {
-    val __obj = js.Dynamic.literal(code = code, description = description, inner = inner, message = message, params = params, path = path)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], inner = inner.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SchemaErrorDetail]
   }

@@ -14,7 +14,7 @@ trait SortParams extends js.Object {
 object SortParams {
   @scala.inline
   def apply(defaultSortDirection: SortDirectionType, event: MouseEvent, sortBy: String): SortParams = {
-    val __obj = js.Dynamic.literal(defaultSortDirection = defaultSortDirection, event = event, sortBy = sortBy)
+    val __obj = js.Dynamic.literal(defaultSortDirection = defaultSortDirection.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], sortBy = sortBy.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SortParams]
   }

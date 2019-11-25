@@ -13,8 +13,8 @@ object Anon_Regexp {
   @scala.inline
   def apply(regexp: Anon_MessageDetail = null, required: Anon_Hint = null): Anon_Regexp = {
     val __obj = js.Dynamic.literal()
-    if (regexp != null) __obj.updateDynamic("regexp")(regexp)
-    if (required != null) __obj.updateDynamic("required")(required)
+    if (regexp != null) __obj.updateDynamic("regexp")(regexp.asInstanceOf[js.Any])
+    if (required != null) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Regexp]
   }
 }

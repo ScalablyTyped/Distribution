@@ -34,9 +34,9 @@ object OptionData {
     default: String | Double | Boolean | js.Array[_] = null,
     prompt: always | never | `if-no-arg` | `if-empty` = null
   ): OptionData = {
-    val __obj = js.Dynamic.literal(describe = describe)
+    val __obj = js.Dynamic.literal(describe = describe.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (choices != null) __obj.updateDynamic("choices")(choices)
+    if (choices != null) __obj.updateDynamic("choices")(choices.asInstanceOf[js.Any])
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     if (prompt != null) __obj.updateDynamic("prompt")(prompt.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionData]

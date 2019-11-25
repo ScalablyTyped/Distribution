@@ -33,9 +33,9 @@ object IKernelSearch {
     sessions: IterableOrArrayLike[IModel] = null,
     specs: ISpecModels = null
   ): IKernelSearch = {
-    val __obj = js.Dynamic.literal(preference = preference)
+    val __obj = js.Dynamic.literal(preference = preference.asInstanceOf[js.Any])
     if (sessions != null) __obj.updateDynamic("sessions")(sessions.asInstanceOf[js.Any])
-    if (specs != null) __obj.updateDynamic("specs")(specs)
+    if (specs != null) __obj.updateDynamic("specs")(specs.asInstanceOf[js.Any])
     __obj.asInstanceOf[IKernelSearch]
   }
 }

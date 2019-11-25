@@ -16,7 +16,7 @@ trait RoomRole extends js.Object {
 object RoomRole {
   @scala.inline
   def apply(BOUNCER: Double, COHOST: Double, HOST: Double, MANAGER: Double, NONE: Double, RESIDENTDJ: Double): RoomRole = {
-    val __obj = js.Dynamic.literal(BOUNCER = BOUNCER, COHOST = COHOST, HOST = HOST, MANAGER = MANAGER, NONE = NONE, RESIDENTDJ = RESIDENTDJ)
+    val __obj = js.Dynamic.literal(BOUNCER = BOUNCER.asInstanceOf[js.Any], COHOST = COHOST.asInstanceOf[js.Any], HOST = HOST.asInstanceOf[js.Any], MANAGER = MANAGER.asInstanceOf[js.Any], NONE = NONE.asInstanceOf[js.Any], RESIDENTDJ = RESIDENTDJ.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RoomRole]
   }

@@ -23,7 +23,7 @@ object IMediaDeviceControl {
     trySetAuto: Boolean => Boolean,
     trySetValue: Double => Boolean
   ): IMediaDeviceControl = {
-    val __obj = js.Dynamic.literal(capabilities = capabilities, tryGetAuto = js.Any.fromFunction0(tryGetAuto), tryGetValue = js.Any.fromFunction0(tryGetValue), trySetAuto = js.Any.fromFunction1(trySetAuto), trySetValue = js.Any.fromFunction1(trySetValue))
+    val __obj = js.Dynamic.literal(capabilities = capabilities.asInstanceOf[js.Any], tryGetAuto = js.Any.fromFunction0(tryGetAuto), tryGetValue = js.Any.fromFunction0(tryGetValue), trySetAuto = js.Any.fromFunction1(trySetAuto), trySetValue = js.Any.fromFunction1(trySetValue))
   
     __obj.asInstanceOf[IMediaDeviceControl]
   }

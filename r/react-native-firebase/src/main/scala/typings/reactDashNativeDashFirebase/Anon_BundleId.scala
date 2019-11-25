@@ -12,7 +12,7 @@ object Anon_BundleId {
   @scala.inline
   def apply(bundleId: String = null): Anon_BundleId = {
     val __obj = js.Dynamic.literal()
-    if (bundleId != null) __obj.updateDynamic("bundleId")(bundleId)
+    if (bundleId != null) __obj.updateDynamic("bundleId")(bundleId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BundleId]
   }
 }

@@ -14,7 +14,7 @@ trait Anon_DriverConfig extends js.Object {
 object Anon_DriverConfig {
   @scala.inline
   def apply(DriverConfig: Anon_Name, Labels: StringDictionary[String], NoCopy: Boolean): Anon_DriverConfig = {
-    val __obj = js.Dynamic.literal(DriverConfig = DriverConfig, Labels = Labels, NoCopy = NoCopy)
+    val __obj = js.Dynamic.literal(DriverConfig = DriverConfig.asInstanceOf[js.Any], Labels = Labels.asInstanceOf[js.Any], NoCopy = NoCopy.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DriverConfig]
   }

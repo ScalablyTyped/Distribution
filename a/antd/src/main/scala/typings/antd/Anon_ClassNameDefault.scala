@@ -20,7 +20,7 @@ object Anon_ClassNameDefault {
     prefixCls: Requireable[String],
     size: Requireable[js.UndefOr[small | default]]
   ): Anon_ClassNameDefault = {
-    val __obj = js.Dynamic.literal(className = className, prefixCls = prefixCls, size = size)
+    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ClassNameDefault]
   }

@@ -26,8 +26,8 @@ trait MarkdownRenderParams extends js.Object {
 object MarkdownRenderParams {
   @scala.inline
   def apply(text: String, context: String = null, mode: markdown | gfm = null): MarkdownRenderParams = {
-    val __obj = js.Dynamic.literal(text = text)
-    if (context != null) __obj.updateDynamic("context")(context)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkdownRenderParams]
   }

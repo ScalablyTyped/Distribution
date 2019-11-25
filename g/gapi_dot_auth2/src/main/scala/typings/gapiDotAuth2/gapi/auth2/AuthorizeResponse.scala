@@ -32,7 +32,7 @@ object AuthorizeResponse {
     id_token: String,
     scope: String
   ): AuthorizeResponse = {
-    val __obj = js.Dynamic.literal(access_token = access_token, code = code, error = error, error_subtype = error_subtype, expires_at = expires_at, expires_in = expires_in, first_issued_at = first_issued_at, id_token = id_token, scope = scope)
+    val __obj = js.Dynamic.literal(access_token = access_token.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], error_subtype = error_subtype.asInstanceOf[js.Any], expires_at = expires_at.asInstanceOf[js.Any], expires_in = expires_in.asInstanceOf[js.Any], first_issued_at = first_issued_at.asInstanceOf[js.Any], id_token = id_token.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AuthorizeResponse]
   }

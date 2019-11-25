@@ -51,13 +51,13 @@ object AxesTitle {
   ): AxesTitle = {
     val __obj = js.Dynamic.literal()
     if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableTrim)) __obj.updateDynamic("enableTrim")(enableTrim)
-    if (font != null) __obj.updateDynamic("font")(font)
+    if (!js.isUndefined(enableTrim)) __obj.updateDynamic("enableTrim")(enableTrim.asInstanceOf[js.Any])
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     if (maximumTitleWidth != null) __obj.updateDynamic("maximumTitleWidth")(maximumTitleWidth.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[AxesTitle]
   }
 }

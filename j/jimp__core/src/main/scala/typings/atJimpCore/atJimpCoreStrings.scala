@@ -11,7 +11,9 @@ object atJimpCoreStrings {
   sealed trait any extends ListenableName
   
   @js.native
-  sealed trait background extends ChangeName
+  sealed trait background
+    extends ChangeName
+       with ListenableName
   
   @js.native
   sealed trait `before-change` extends ListenableName
@@ -38,7 +40,9 @@ object atJimpCoreStrings {
   sealed trait constructor extends js.Object
   
   @js.native
-  sealed trait crop extends ChangeName
+  sealed trait crop
+    extends ChangeName
+       with ListenableName
   
   @js.native
   sealed trait initialized extends ListenableName
@@ -47,7 +51,9 @@ object atJimpCoreStrings {
   sealed trait mime extends js.Object
   
   @js.native
-  sealed trait scan extends ChangeName
+  sealed trait scan
+    extends ChangeName
+       with ListenableName
   
   @scala.inline
   def any: any = "any".asInstanceOf[any]

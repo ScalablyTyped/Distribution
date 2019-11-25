@@ -23,10 +23,10 @@ object EventArgs {
     transport: String = null,
     value: Int | Double = null
   ): EventArgs = {
-    val __obj = js.Dynamic.literal(action = action, category = category)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (!js.isUndefined(nonInteraction)) __obj.updateDynamic("nonInteraction")(nonInteraction)
-    if (transport != null) __obj.updateDynamic("transport")(transport)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], category = category.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (!js.isUndefined(nonInteraction)) __obj.updateDynamic("nonInteraction")(nonInteraction.asInstanceOf[js.Any])
+    if (transport != null) __obj.updateDynamic("transport")(transport.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventArgs]
   }

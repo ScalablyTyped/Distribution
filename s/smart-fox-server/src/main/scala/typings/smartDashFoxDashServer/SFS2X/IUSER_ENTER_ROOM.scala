@@ -14,7 +14,7 @@ trait IUSER_ENTER_ROOM extends js.Object {
 object IUSER_ENTER_ROOM {
   @scala.inline
   def apply(room: SFSRoom, user: SFSUser): IUSER_ENTER_ROOM = {
-    val __obj = js.Dynamic.literal(room = room, user = user)
+    val __obj = js.Dynamic.literal(room = room.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IUSER_ENTER_ROOM]
   }

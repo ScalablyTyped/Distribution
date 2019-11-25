@@ -17,9 +17,9 @@ object Website {
   @scala.inline
   def apply(address: String = null, displayName: String = null, `type`: WebsiteType = null): Website = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Website]
   }
 }

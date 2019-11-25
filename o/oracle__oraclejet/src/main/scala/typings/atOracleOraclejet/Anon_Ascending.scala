@@ -20,8 +20,8 @@ object Anon_Ascending {
     header: js.Any,
     StringDictionary: /* propName */ StringDictionary[js.Any] = null
   ): Anon_Ascending = {
-    val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], header = header)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_Ascending]
   }
 }

@@ -14,7 +14,7 @@ trait Anon_Counter extends js.Object {
 object Anon_Counter {
   @scala.inline
   def apply(counter: Double, currentTestName: String, defaultIdentifier: String, testPath: String): Anon_Counter = {
-    val __obj = js.Dynamic.literal(counter = counter, currentTestName = currentTestName, defaultIdentifier = defaultIdentifier, testPath = testPath)
+    val __obj = js.Dynamic.literal(counter = counter.asInstanceOf[js.Any], currentTestName = currentTestName.asInstanceOf[js.Any], defaultIdentifier = defaultIdentifier.asInstanceOf[js.Any], testPath = testPath.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Counter]
   }

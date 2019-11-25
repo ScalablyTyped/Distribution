@@ -14,7 +14,7 @@ trait Anon_KeyScopeDescriptor extends js.Object {
 object Anon_KeyScopeDescriptor {
   @scala.inline
   def apply(scopeDescriptor: ScopeDescriptor, value: StringDictionary[js.Array[String]]): Anon_KeyScopeDescriptor = {
-    val __obj = js.Dynamic.literal(scopeDescriptor = scopeDescriptor, value = value)
+    val __obj = js.Dynamic.literal(scopeDescriptor = scopeDescriptor.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_KeyScopeDescriptor]
   }

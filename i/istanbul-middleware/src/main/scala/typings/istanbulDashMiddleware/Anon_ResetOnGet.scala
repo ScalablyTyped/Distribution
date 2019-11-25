@@ -12,7 +12,7 @@ object Anon_ResetOnGet {
   @scala.inline
   def apply(resetOnGet: js.UndefOr[Boolean] = js.undefined): Anon_ResetOnGet = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(resetOnGet)) __obj.updateDynamic("resetOnGet")(resetOnGet)
+    if (!js.isUndefined(resetOnGet)) __obj.updateDynamic("resetOnGet")(resetOnGet.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ResetOnGet]
   }
 }

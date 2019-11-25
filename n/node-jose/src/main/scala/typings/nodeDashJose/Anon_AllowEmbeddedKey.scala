@@ -12,7 +12,7 @@ object Anon_AllowEmbeddedKey {
   @scala.inline
   def apply(allowEmbeddedKey: js.UndefOr[Boolean] = js.undefined): Anon_AllowEmbeddedKey = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowEmbeddedKey)) __obj.updateDynamic("allowEmbeddedKey")(allowEmbeddedKey)
+    if (!js.isUndefined(allowEmbeddedKey)) __obj.updateDynamic("allowEmbeddedKey")(allowEmbeddedKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AllowEmbeddedKey]
   }
 }

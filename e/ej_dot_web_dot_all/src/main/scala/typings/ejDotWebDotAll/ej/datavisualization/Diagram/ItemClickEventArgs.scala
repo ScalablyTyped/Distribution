@@ -32,11 +32,11 @@ object ItemClickEventArgs {
     selectedObject: js.Any = null
   ): ItemClickEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (actualObject != null) __obj.updateDynamic("actualObject")(actualObject)
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId)
-    if (event != null) __obj.updateDynamic("event")(event)
-    if (selectedObject != null) __obj.updateDynamic("selectedObject")(selectedObject)
+    if (actualObject != null) __obj.updateDynamic("actualObject")(actualObject.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId.asInstanceOf[js.Any])
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
+    if (selectedObject != null) __obj.updateDynamic("selectedObject")(selectedObject.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemClickEventArgs]
   }
 }

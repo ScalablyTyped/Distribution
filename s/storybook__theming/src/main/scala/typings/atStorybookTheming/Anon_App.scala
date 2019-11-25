@@ -29,7 +29,7 @@ object Anon_App {
     positive: String,
     warning: String
   ): Anon_App = {
-    val __obj = js.Dynamic.literal(app = app, bar = bar, content = content, critical = critical, gridCellSize = gridCellSize, hoverable = hoverable, negative = negative, positive = positive, warning = warning)
+    val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], bar = bar.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], critical = critical.asInstanceOf[js.Any], gridCellSize = gridCellSize.asInstanceOf[js.Any], hoverable = hoverable.asInstanceOf[js.Any], negative = negative.asInstanceOf[js.Any], positive = positive.asInstanceOf[js.Any], warning = warning.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_App]
   }

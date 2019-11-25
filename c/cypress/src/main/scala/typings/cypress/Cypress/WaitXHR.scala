@@ -39,7 +39,7 @@ object WaitXHR {
     url: String,
     xhr: XMLHttpRequest
   ): WaitXHR = {
-    val __obj = js.Dynamic.literal(duration = duration, id = id, method = method, request = request, requestBody = requestBody.asInstanceOf[js.Any], requestHeaders = requestHeaders, response = response, responseBody = responseBody.asInstanceOf[js.Any], responseHeaders = responseHeaders, status = status, statusMessage = statusMessage, url = url, xhr = xhr)
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], requestHeaders = requestHeaders.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], responseBody = responseBody.asInstanceOf[js.Any], responseHeaders = responseHeaders.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusMessage = statusMessage.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], xhr = xhr.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WaitXHR]
   }

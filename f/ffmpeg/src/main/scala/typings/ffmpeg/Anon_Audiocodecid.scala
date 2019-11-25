@@ -33,7 +33,7 @@ object Anon_Audiocodecid {
     videodatarate: Double,
     width: Double
   ): Anon_Audiocodecid = {
-    val __obj = js.Dynamic.literal(audiocodecid = audiocodecid, audiodatarate = audiodatarate, audiosamplerate = audiosamplerate, duration = duration, encoder = encoder, filesize = filesize, height = height, stereo = stereo, videocodecid = videocodecid, videodatarate = videodatarate, width = width)
+    val __obj = js.Dynamic.literal(audiocodecid = audiocodecid.asInstanceOf[js.Any], audiodatarate = audiodatarate.asInstanceOf[js.Any], audiosamplerate = audiosamplerate.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], encoder = encoder.asInstanceOf[js.Any], filesize = filesize.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], stereo = stereo.asInstanceOf[js.Any], videocodecid = videocodecid.asInstanceOf[js.Any], videodatarate = videodatarate.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Audiocodecid]
   }

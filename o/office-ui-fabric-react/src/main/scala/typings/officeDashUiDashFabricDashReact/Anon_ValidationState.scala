@@ -12,7 +12,7 @@ trait Anon_ValidationState extends js.Object {
 object Anon_ValidationState {
   @scala.inline
   def apply(ValidationState: ValidationState): Anon_ValidationState = {
-    val __obj = js.Dynamic.literal(ValidationState = ValidationState)
+    val __obj = js.Dynamic.literal(ValidationState = ValidationState.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ValidationState]
   }

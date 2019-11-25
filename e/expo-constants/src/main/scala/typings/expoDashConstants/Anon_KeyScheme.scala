@@ -14,8 +14,8 @@ object Anon_KeyScheme {
   @scala.inline
   def apply(StringDictionary: /* key */ StringDictionary[js.Any] = null, scheme: String = null): Anon_KeyScheme = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (scheme != null) __obj.updateDynamic("scheme")(scheme)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (scheme != null) __obj.updateDynamic("scheme")(scheme.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_KeyScheme]
   }
 }

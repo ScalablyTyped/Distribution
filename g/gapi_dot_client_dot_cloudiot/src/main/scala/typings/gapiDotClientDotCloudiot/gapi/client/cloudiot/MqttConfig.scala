@@ -16,7 +16,7 @@ object MqttConfig {
   @scala.inline
   def apply(mqttEnabledState: String = null): MqttConfig = {
     val __obj = js.Dynamic.literal()
-    if (mqttEnabledState != null) __obj.updateDynamic("mqttEnabledState")(mqttEnabledState)
+    if (mqttEnabledState != null) __obj.updateDynamic("mqttEnabledState")(mqttEnabledState.asInstanceOf[js.Any])
     __obj.asInstanceOf[MqttConfig]
   }
 }

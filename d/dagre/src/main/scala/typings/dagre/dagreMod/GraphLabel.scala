@@ -36,16 +36,16 @@ object GraphLabel {
     width: Int | Double = null
   ): GraphLabel = {
     val __obj = js.Dynamic.literal()
-    if (acyclicer != null) __obj.updateDynamic("acyclicer")(acyclicer)
-    if (align != null) __obj.updateDynamic("align")(align)
-    if (!js.isUndefined(compound)) __obj.updateDynamic("compound")(compound)
+    if (acyclicer != null) __obj.updateDynamic("acyclicer")(acyclicer.asInstanceOf[js.Any])
+    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
+    if (!js.isUndefined(compound)) __obj.updateDynamic("compound")(compound.asInstanceOf[js.Any])
     if (edgesep != null) __obj.updateDynamic("edgesep")(edgesep.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (marginx != null) __obj.updateDynamic("marginx")(marginx.asInstanceOf[js.Any])
     if (marginy != null) __obj.updateDynamic("marginy")(marginy.asInstanceOf[js.Any])
     if (nodesep != null) __obj.updateDynamic("nodesep")(nodesep.asInstanceOf[js.Any])
-    if (rankdir != null) __obj.updateDynamic("rankdir")(rankdir)
-    if (ranker != null) __obj.updateDynamic("ranker")(ranker)
+    if (rankdir != null) __obj.updateDynamic("rankdir")(rankdir.asInstanceOf[js.Any])
+    if (ranker != null) __obj.updateDynamic("ranker")(ranker.asInstanceOf[js.Any])
     if (ranksep != null) __obj.updateDynamic("ranksep")(ranksep.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphLabel]

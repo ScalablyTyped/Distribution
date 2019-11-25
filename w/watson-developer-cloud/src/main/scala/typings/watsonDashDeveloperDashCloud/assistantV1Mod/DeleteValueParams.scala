@@ -25,9 +25,9 @@ object DeleteValueParams {
     headers: js.Object = null,
     return_response: js.UndefOr[Boolean] = js.undefined
   ): DeleteValueParams = {
-    val __obj = js.Dynamic.literal(entity = entity, value = value, workspace_id = workspace_id)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response)
+    val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], workspace_id = workspace_id.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteValueParams]
   }
 }

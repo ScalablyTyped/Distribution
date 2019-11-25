@@ -30,7 +30,7 @@ object BufferChangedEvent {
     oldRange: Range,
     oldText: String
   ): BufferChangedEvent = {
-    val __obj = js.Dynamic.literal(changes = changes, newRange = newRange, newText = newText, oldRange = oldRange, oldText = oldText)
+    val __obj = js.Dynamic.literal(changes = changes.asInstanceOf[js.Any], newRange = newRange.asInstanceOf[js.Any], newText = newText.asInstanceOf[js.Any], oldRange = oldRange.asInstanceOf[js.Any], oldText = oldText.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BufferChangedEvent]
   }

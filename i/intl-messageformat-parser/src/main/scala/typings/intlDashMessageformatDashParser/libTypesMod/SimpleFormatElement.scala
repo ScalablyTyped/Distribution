@@ -11,9 +11,9 @@ trait SimpleFormatElement[T /* <: TYPE */, S /* <: Skeleton */] extends BaseElem
 object SimpleFormatElement {
   @scala.inline
   def apply[T /* <: TYPE */, S /* <: Skeleton */](`type`: T, value: String, location: Location = null, style: String | S = null): SimpleFormatElement[T, S] = {
-    val __obj = js.Dynamic.literal(value = value)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location)
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimpleFormatElement[T, S]]
   }

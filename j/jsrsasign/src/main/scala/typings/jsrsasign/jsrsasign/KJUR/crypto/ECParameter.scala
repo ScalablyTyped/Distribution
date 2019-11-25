@@ -30,9 +30,9 @@ object ECParameter {
     info: String = null,
     oid: String = null
   ): ECParameter = {
-    val __obj = js.Dynamic.literal(G = G, curve = curve, h = h, keylen = keylen, n = n, name = name)
-    if (info != null) __obj.updateDynamic("info")(info)
-    if (oid != null) __obj.updateDynamic("oid")(oid)
+    val __obj = js.Dynamic.literal(G = G.asInstanceOf[js.Any], curve = curve.asInstanceOf[js.Any], h = h.asInstanceOf[js.Any], keylen = keylen.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
+    if (oid != null) __obj.updateDynamic("oid")(oid.asInstanceOf[js.Any])
     __obj.asInstanceOf[ECParameter]
   }
 }

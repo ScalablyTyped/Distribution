@@ -22,13 +22,17 @@ trait LodashOrderBy extends js.Object {
   def apply[T /* <: js.Object */](
     iteratees: Many[
       (js.Function1[
-        /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
         NotVoid
-      ]) | (ValueIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any])
+      ]) | (ValueIteratee[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+      ])
     ],
     orders: Many[Boolean | asc | desc],
     collection: T
-  ): js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
+  ): js.Array[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+  ] = js.native
   def apply[T](
     iteratees: Many[(js.Function1[/* value */ T, NotVoid]) | ValueIteratee[T]],
     orders: Many[Boolean | asc | desc],
@@ -37,7 +41,9 @@ trait LodashOrderBy extends js.Object {
   def apply[T](iteratees: Many[ValueIteratee[T]], orders: __): LodashOrderBy2x5[T] = js.native
   def apply[T /* <: js.Object */](
     iteratees: Many[
-      ValueIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
+      ValueIteratee[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+      ]
     ],
     orders: __,
     collection: T

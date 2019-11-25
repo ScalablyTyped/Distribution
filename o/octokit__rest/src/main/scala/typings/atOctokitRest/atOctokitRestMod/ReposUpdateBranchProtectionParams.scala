@@ -37,11 +37,11 @@ object ReposUpdateBranchProtectionParams {
     required_status_checks: ReposUpdateBranchProtectionParamsRequiredStatusChecks = null,
     restrictions: ReposUpdateBranchProtectionParamsRestrictions = null
   ): ReposUpdateBranchProtectionParams = {
-    val __obj = js.Dynamic.literal(branch = branch, owner = owner, repo = repo)
-    if (!js.isUndefined(enforce_admins)) __obj.updateDynamic("enforce_admins")(enforce_admins)
-    if (required_pull_request_reviews != null) __obj.updateDynamic("required_pull_request_reviews")(required_pull_request_reviews)
-    if (required_status_checks != null) __obj.updateDynamic("required_status_checks")(required_status_checks)
-    if (restrictions != null) __obj.updateDynamic("restrictions")(restrictions)
+    val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
+    if (!js.isUndefined(enforce_admins)) __obj.updateDynamic("enforce_admins")(enforce_admins.asInstanceOf[js.Any])
+    if (required_pull_request_reviews != null) __obj.updateDynamic("required_pull_request_reviews")(required_pull_request_reviews.asInstanceOf[js.Any])
+    if (required_status_checks != null) __obj.updateDynamic("required_status_checks")(required_status_checks.asInstanceOf[js.Any])
+    if (restrictions != null) __obj.updateDynamic("restrictions")(restrictions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposUpdateBranchProtectionParams]
   }
 }

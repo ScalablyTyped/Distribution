@@ -25,7 +25,7 @@ trait ResourceRequirements extends js.Object {
 object ResourceRequirements {
   @scala.inline
   def apply(limits: js.Object, requests: js.Object): ResourceRequirements = {
-    val __obj = js.Dynamic.literal(limits = limits, requests = requests)
+    val __obj = js.Dynamic.literal(limits = limits.asInstanceOf[js.Any], requests = requests.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ResourceRequirements]
   }

@@ -43,7 +43,7 @@ object Cookies {
     parse: String => Cookie,
     set: (String, String) => Boolean
   ): Cookies = {
-    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), compare = js.Any.fromFunction2(compare), cookies = cookies, get = js.Any.fromFunction1(get), getPath = js.Any.fromFunction1(getPath), isExpired = js.Any.fromFunction1(isExpired), list = js.Any.fromFunction1(list), options = options, parse = js.Any.fromFunction1(parse), set = js.Any.fromFunction2(set))
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), compare = js.Any.fromFunction2(compare), cookies = cookies.asInstanceOf[js.Any], get = js.Any.fromFunction1(get), getPath = js.Any.fromFunction1(getPath), isExpired = js.Any.fromFunction1(isExpired), list = js.Any.fromFunction1(list), options = options.asInstanceOf[js.Any], parse = js.Any.fromFunction1(parse), set = js.Any.fromFunction2(set))
     __obj.updateDynamic("match")(js.Any.fromFunction2(`match`))
     __obj.asInstanceOf[Cookies]
   }

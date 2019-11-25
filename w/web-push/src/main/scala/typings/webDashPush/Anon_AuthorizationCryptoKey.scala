@@ -12,8 +12,8 @@ trait Anon_AuthorizationCryptoKey extends js.Object {
 object Anon_AuthorizationCryptoKey {
   @scala.inline
   def apply(Authorization: String, `Crypto-Key`: String): Anon_AuthorizationCryptoKey = {
-    val __obj = js.Dynamic.literal(Authorization = Authorization)
-    __obj.updateDynamic("Crypto-Key")(`Crypto-Key`)
+    val __obj = js.Dynamic.literal(Authorization = Authorization.asInstanceOf[js.Any])
+    __obj.updateDynamic("Crypto-Key")(`Crypto-Key`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AuthorizationCryptoKey]
   }
 }

@@ -1,6 +1,5 @@
 package typings.atIonicCore.distTypesComponentsMod.Components
 
-import typings.atIonicCore.distTypesInterfaceMod.Side
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +25,7 @@ trait IonMenu extends js.Object {
   /**
     * Which side of the view the menu should be placed.
     */
-  var side: Side = js.native
+  var side: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Side */ js.Any = js.native
   /**
     * If `true`, swiping the menu is enabled.
     */

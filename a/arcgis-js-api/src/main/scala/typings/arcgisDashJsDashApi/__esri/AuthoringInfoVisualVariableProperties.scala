@@ -91,7 +91,7 @@ object AuthoringInfoVisualVariableProperties {
   ): AuthoringInfoVisualVariableProperties = {
     val __obj = js.Dynamic.literal()
     if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (field != null) __obj.updateDynamic("field")(field)
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     if (maxSliderValue != null) __obj.updateDynamic("maxSliderValue")(maxSliderValue.asInstanceOf[js.Any])
     if (minSliderValue != null) __obj.updateDynamic("minSliderValue")(minSliderValue.asInstanceOf[js.Any])
     if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])

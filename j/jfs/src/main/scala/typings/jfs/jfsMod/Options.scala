@@ -20,7 +20,7 @@ object Options {
     `type`: single | memory = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty)
+    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.asInstanceOf[js.Any])
     if (saveId != null) __obj.updateDynamic("saveId")(saveId.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

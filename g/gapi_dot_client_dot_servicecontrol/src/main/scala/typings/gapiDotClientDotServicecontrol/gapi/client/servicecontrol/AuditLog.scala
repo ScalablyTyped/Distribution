@@ -94,18 +94,18 @@ object AuditLog {
     status: Status = null
   ): AuditLog = {
     val __obj = js.Dynamic.literal()
-    if (authenticationInfo != null) __obj.updateDynamic("authenticationInfo")(authenticationInfo)
-    if (authorizationInfo != null) __obj.updateDynamic("authorizationInfo")(authorizationInfo)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (methodName != null) __obj.updateDynamic("methodName")(methodName)
-    if (numResponseItems != null) __obj.updateDynamic("numResponseItems")(numResponseItems)
-    if (request != null) __obj.updateDynamic("request")(request)
-    if (requestMetadata != null) __obj.updateDynamic("requestMetadata")(requestMetadata)
-    if (resourceName != null) __obj.updateDynamic("resourceName")(resourceName)
-    if (response != null) __obj.updateDynamic("response")(response)
-    if (serviceData != null) __obj.updateDynamic("serviceData")(serviceData)
-    if (serviceName != null) __obj.updateDynamic("serviceName")(serviceName)
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (authenticationInfo != null) __obj.updateDynamic("authenticationInfo")(authenticationInfo.asInstanceOf[js.Any])
+    if (authorizationInfo != null) __obj.updateDynamic("authorizationInfo")(authorizationInfo.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (methodName != null) __obj.updateDynamic("methodName")(methodName.asInstanceOf[js.Any])
+    if (numResponseItems != null) __obj.updateDynamic("numResponseItems")(numResponseItems.asInstanceOf[js.Any])
+    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
+    if (requestMetadata != null) __obj.updateDynamic("requestMetadata")(requestMetadata.asInstanceOf[js.Any])
+    if (resourceName != null) __obj.updateDynamic("resourceName")(resourceName.asInstanceOf[js.Any])
+    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
+    if (serviceData != null) __obj.updateDynamic("serviceData")(serviceData.asInstanceOf[js.Any])
+    if (serviceName != null) __obj.updateDynamic("serviceName")(serviceName.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuditLog]
   }
 }

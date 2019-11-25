@@ -29,10 +29,10 @@ object TabOptions {
     text: String = null
   ): TabOptions = {
     val __obj = js.Dynamic.literal()
-    if (alignType != null) __obj.updateDynamic("alignType")(alignType)
-    if (contents != null) __obj.updateDynamic("contents")(contents)
-    if (defaults != null) __obj.updateDynamic("defaults")(defaults)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (alignType != null) __obj.updateDynamic("alignType")(alignType.asInstanceOf[js.Any])
+    if (contents != null) __obj.updateDynamic("contents")(contents.asInstanceOf[js.Any])
+    if (defaults != null) __obj.updateDynamic("defaults")(defaults.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabOptions]
   }
 }

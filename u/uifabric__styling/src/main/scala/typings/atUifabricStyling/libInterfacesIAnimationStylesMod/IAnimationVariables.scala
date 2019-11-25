@@ -23,7 +23,7 @@ object IAnimationVariables {
     easeFunction1: String,
     easeFunction2: String
   ): IAnimationVariables = {
-    val __obj = js.Dynamic.literal(durationValue1 = durationValue1, durationValue2 = durationValue2, durationValue3 = durationValue3, durationValue4 = durationValue4, easeFunction1 = easeFunction1, easeFunction2 = easeFunction2)
+    val __obj = js.Dynamic.literal(durationValue1 = durationValue1.asInstanceOf[js.Any], durationValue2 = durationValue2.asInstanceOf[js.Any], durationValue3 = durationValue3.asInstanceOf[js.Any], durationValue4 = durationValue4.asInstanceOf[js.Any], easeFunction1 = easeFunction1.asInstanceOf[js.Any], easeFunction2 = easeFunction2.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IAnimationVariables]
   }

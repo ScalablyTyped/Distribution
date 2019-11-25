@@ -50,13 +50,13 @@ object PointCloudStretchRendererProperties {
     stops: js.Array[PointCloudStretchRendererStops] = null
   ): PointCloudStretchRendererProperties = {
     val __obj = js.Dynamic.literal()
-    if (colorModulation != null) __obj.updateDynamic("colorModulation")(colorModulation)
-    if (field != null) __obj.updateDynamic("field")(field)
+    if (colorModulation != null) __obj.updateDynamic("colorModulation")(colorModulation.asInstanceOf[js.Any])
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     if (fieldTransformType != null) __obj.updateDynamic("fieldTransformType")(fieldTransformType.asInstanceOf[js.Any])
-    if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions)
-    if (pointSizeAlgorithm != null) __obj.updateDynamic("pointSizeAlgorithm")(pointSizeAlgorithm)
+    if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions.asInstanceOf[js.Any])
+    if (pointSizeAlgorithm != null) __obj.updateDynamic("pointSizeAlgorithm")(pointSizeAlgorithm.asInstanceOf[js.Any])
     if (pointsPerInch != null) __obj.updateDynamic("pointsPerInch")(pointsPerInch.asInstanceOf[js.Any])
-    if (stops != null) __obj.updateDynamic("stops")(stops)
+    if (stops != null) __obj.updateDynamic("stops")(stops.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointCloudStretchRendererProperties]
   }
 }

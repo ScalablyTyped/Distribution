@@ -39,9 +39,9 @@ object QueryResult {
     data: TData = null,
     error: ApolloError = null
   ): QueryResult[TData, TVariables] = {
-    val __obj = js.Dynamic.literal(called = called, client = client, fetchMore = fetchMore, loading = loading, networkStatus = networkStatus)
+    val __obj = js.Dynamic.literal(called = called.asInstanceOf[js.Any], client = client.asInstanceOf[js.Any], fetchMore = fetchMore.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any], networkStatus = networkStatus.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryResult[TData, TVariables]]
   }
 }

@@ -15,8 +15,8 @@ object WorkbookSessionInfo {
   @scala.inline
   def apply(id: String = null, persistChanges: js.UndefOr[Boolean] = js.undefined): WorkbookSessionInfo = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(persistChanges)) __obj.updateDynamic("persistChanges")(persistChanges)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(persistChanges)) __obj.updateDynamic("persistChanges")(persistChanges.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookSessionInfo]
   }
 }

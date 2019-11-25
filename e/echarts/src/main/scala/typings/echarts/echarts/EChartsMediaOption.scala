@@ -14,7 +14,7 @@ trait EChartsMediaOption extends js.Object {
 object EChartsMediaOption {
   @scala.inline
   def apply(option: EChartOption[Series], query: Anon_AspectRatio): EChartsMediaOption = {
-    val __obj = js.Dynamic.literal(option = option, query = query)
+    val __obj = js.Dynamic.literal(option = option.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EChartsMediaOption]
   }

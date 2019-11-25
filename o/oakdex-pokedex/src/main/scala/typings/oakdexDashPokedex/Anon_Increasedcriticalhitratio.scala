@@ -17,8 +17,8 @@ object Anon_Increasedcriticalhitratio {
     status_conditions: js.Array[MoveStatusCondition] = null
   ): Anon_Increasedcriticalhitratio = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(increased_critical_hit_ratio)) __obj.updateDynamic("increased_critical_hit_ratio")(increased_critical_hit_ratio)
-    if (status_conditions != null) __obj.updateDynamic("status_conditions")(status_conditions)
+    if (!js.isUndefined(increased_critical_hit_ratio)) __obj.updateDynamic("increased_critical_hit_ratio")(increased_critical_hit_ratio.asInstanceOf[js.Any])
+    if (status_conditions != null) __obj.updateDynamic("status_conditions")(status_conditions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Increasedcriticalhitratio]
   }
 }

@@ -13,8 +13,8 @@ object EditorImageBrowserSchemaModel {
   @scala.inline
   def apply(fields: EditorImageBrowserSchemaModelFields = null, id: String = null): EditorImageBrowserSchemaModel = {
     val __obj = js.Dynamic.literal()
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorImageBrowserSchemaModel]
   }
 }

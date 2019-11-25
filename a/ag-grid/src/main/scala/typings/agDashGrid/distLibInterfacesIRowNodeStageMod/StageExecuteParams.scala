@@ -23,10 +23,10 @@ object StageExecuteParams {
     rowNodeOrder: StringDictionary[Double] = null,
     rowNodeTransaction: RowNodeTransaction = null
   ): StageExecuteParams = {
-    val __obj = js.Dynamic.literal(rowNode = rowNode)
-    if (changedPath != null) __obj.updateDynamic("changedPath")(changedPath)
-    if (rowNodeOrder != null) __obj.updateDynamic("rowNodeOrder")(rowNodeOrder)
-    if (rowNodeTransaction != null) __obj.updateDynamic("rowNodeTransaction")(rowNodeTransaction)
+    val __obj = js.Dynamic.literal(rowNode = rowNode.asInstanceOf[js.Any])
+    if (changedPath != null) __obj.updateDynamic("changedPath")(changedPath.asInstanceOf[js.Any])
+    if (rowNodeOrder != null) __obj.updateDynamic("rowNodeOrder")(rowNodeOrder.asInstanceOf[js.Any])
+    if (rowNodeTransaction != null) __obj.updateDynamic("rowNodeTransaction")(rowNodeTransaction.asInstanceOf[js.Any])
     __obj.asInstanceOf[StageExecuteParams]
   }
 }

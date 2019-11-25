@@ -26,7 +26,7 @@ object Checkpoint {
     partSize: Double,
     uploadId: String
   ): Checkpoint = {
-    val __obj = js.Dynamic.literal(doneParts = doneParts, file = file, fileSize = fileSize, name = name, partSize = partSize, uploadId = uploadId)
+    val __obj = js.Dynamic.literal(doneParts = doneParts.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], fileSize = fileSize.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], partSize = partSize.asInstanceOf[js.Any], uploadId = uploadId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Checkpoint]
   }

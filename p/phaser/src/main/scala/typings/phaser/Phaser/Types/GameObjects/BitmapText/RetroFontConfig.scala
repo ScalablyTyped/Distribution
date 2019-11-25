@@ -61,11 +61,11 @@ object RetroFontConfig {
     `spacing.y`: Double,
     width: Double
   ): RetroFontConfig = {
-    val __obj = js.Dynamic.literal(chars = chars, charsPerRow = charsPerRow, height = height, image = image, lineSpacing = lineSpacing, width = width)
-    __obj.updateDynamic("offset.x")(`offset.x`)
-    __obj.updateDynamic("offset.y")(`offset.y`)
-    __obj.updateDynamic("spacing.x")(`spacing.x`)
-    __obj.updateDynamic("spacing.y")(`spacing.y`)
+    val __obj = js.Dynamic.literal(chars = chars.asInstanceOf[js.Any], charsPerRow = charsPerRow.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], lineSpacing = lineSpacing.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    __obj.updateDynamic("offset.x")(`offset.x`.asInstanceOf[js.Any])
+    __obj.updateDynamic("offset.y")(`offset.y`.asInstanceOf[js.Any])
+    __obj.updateDynamic("spacing.x")(`spacing.x`.asInstanceOf[js.Any])
+    __obj.updateDynamic("spacing.y")(`spacing.y`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RetroFontConfig]
   }
 }

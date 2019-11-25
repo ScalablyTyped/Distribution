@@ -49,16 +49,16 @@ object Page {
     raw: String = null,
     updated: Moment = null
   ): Page = {
-    val __obj = js.Dynamic.literal(comments = comments, content = content, date = date, full_source = full_source, layout = layout, path = path, permalink = permalink, source = source, title = title)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (excerpt != null) __obj.updateDynamic("excerpt")(excerpt)
-    if (link != null) __obj.updateDynamic("link")(link)
-    if (more != null) __obj.updateDynamic("more")(more)
-    if (next != null) __obj.updateDynamic("next")(next)
-    if (photos != null) __obj.updateDynamic("photos")(photos)
-    if (prev != null) __obj.updateDynamic("prev")(prev)
-    if (raw != null) __obj.updateDynamic("raw")(raw)
-    if (updated != null) __obj.updateDynamic("updated")(updated)
+    val __obj = js.Dynamic.literal(comments = comments.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], full_source = full_source.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], permalink = permalink.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (excerpt != null) __obj.updateDynamic("excerpt")(excerpt.asInstanceOf[js.Any])
+    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
+    if (more != null) __obj.updateDynamic("more")(more.asInstanceOf[js.Any])
+    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
+    if (photos != null) __obj.updateDynamic("photos")(photos.asInstanceOf[js.Any])
+    if (prev != null) __obj.updateDynamic("prev")(prev.asInstanceOf[js.Any])
+    if (raw != null) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
+    if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
     __obj.asInstanceOf[Page]
   }
 }

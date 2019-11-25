@@ -56,17 +56,17 @@ object SVGInlineProps {
     height: String = null,
     width: String = null
   ): SVGInlineProps = {
-    val __obj = js.Dynamic.literal(svg = svg)
-    if (accessibilityDesc != null) __obj.updateDynamic("accessibilityDesc")(accessibilityDesc)
-    if (accessibilityLabel != null) __obj.updateDynamic("accessibilityLabel")(accessibilityLabel)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (classSuffix != null) __obj.updateDynamic("classSuffix")(classSuffix)
+    val __obj = js.Dynamic.literal(svg = svg.asInstanceOf[js.Any])
+    if (accessibilityDesc != null) __obj.updateDynamic("accessibilityDesc")(accessibilityDesc.asInstanceOf[js.Any])
+    if (accessibilityLabel != null) __obj.updateDynamic("accessibilityLabel")(accessibilityLabel.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (classSuffix != null) __obj.updateDynamic("classSuffix")(classSuffix.asInstanceOf[js.Any])
     if (cleanup != null) __obj.updateDynamic("cleanup")(cleanup.asInstanceOf[js.Any])
-    if (cleanupExceptions != null) __obj.updateDynamic("cleanupExceptions")(cleanupExceptions)
+    if (cleanupExceptions != null) __obj.updateDynamic("cleanupExceptions")(cleanupExceptions.asInstanceOf[js.Any])
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (fill != null) __obj.updateDynamic("fill")(fill)
-    if (height != null) __obj.updateDynamic("height")(height)
-    if (width != null) __obj.updateDynamic("width")(width)
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[SVGInlineProps]
   }
 }

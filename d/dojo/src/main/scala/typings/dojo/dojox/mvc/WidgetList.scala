@@ -1,10 +1,6 @@
 package typings.dojo.dojox.mvc
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValue
-import typings.dojo.Fn_NewValueOldValueProperty
-import typings.dojo.Fn_NewValueOldValuePropertyFunction
 import typings.dojo.dijit._WidgetBase
 import typings.dojo.dojoStrings.`data-mvc-child-bindings`
 import typings.dojo.dojoStrings.`data-mvc-child-mixins`
@@ -232,30 +228,124 @@ class WidgetList () extends _WidgetBase {
   @JSName("set")
   def set_templateString(property: templateString, value: String): Unit = js.native
   @JSName("watch")
-  def watch_childBindings(property: childBindings, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_childBindings(
+    property: childBindings,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_childClz(property: childClz, callback: Fn_NewValueOldValuePropertyFunction): Anon_Unwatch = js.native
+  def watch_childClz(
+    property: childClz,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Function], 
+      /* newValue */ js.UndefOr[js.Function], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_childMixins(property: childMixins, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_childMixins(
+    property: childMixins,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_childParams(property: childParams, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_childParams(
+    property: childParams,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_childType(property: childType, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_childType(
+    property: childType,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_children(property: children, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_children(
+    property: children,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_datamvcchildbindings(property: `data-mvc-child-bindings`, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_datamvcchildbindings(
+    property: `data-mvc-child-bindings`,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_datamvcchildmixins(property: `data-mvc-child-mixins`, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_datamvcchildmixins(
+    property: `data-mvc-child-mixins`,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_datamvcchildprops(property: `data-mvc-child-props`, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_datamvcchildprops(
+    property: `data-mvc-child-props`,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_datamvcchildtype(property: `data-mvc-child-type`, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_datamvcchildtype(
+    property: `data-mvc-child-type`,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_partialRebuild(property: partialRebuild, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_partialRebuild(
+    property: partialRebuild,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_style(property: style, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
-  @JSName("watch")
-  def watch_templateString(property: templateString, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_templateString(
+    property: templateString,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

@@ -13,7 +13,7 @@ object ActiveXObjectNameMap {
   @scala.inline
   def apply(`Microsoft.DiskQuota`: DiskQuotaControl): ActiveXObjectNameMap = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Microsoft.DiskQuota")(`Microsoft.DiskQuota`)
+    __obj.updateDynamic("Microsoft.DiskQuota")(`Microsoft.DiskQuota`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
 }

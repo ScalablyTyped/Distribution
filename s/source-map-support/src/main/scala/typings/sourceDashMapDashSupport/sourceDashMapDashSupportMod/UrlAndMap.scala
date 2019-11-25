@@ -13,7 +13,7 @@ trait UrlAndMap extends js.Object {
 object UrlAndMap {
   @scala.inline
   def apply(map: String | Buffer, url: String): UrlAndMap = {
-    val __obj = js.Dynamic.literal(map = map.asInstanceOf[js.Any], url = url)
+    val __obj = js.Dynamic.literal(map = map.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UrlAndMap]
   }

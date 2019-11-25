@@ -15,7 +15,7 @@ trait NativeInputType extends js.Object {
 object NativeInputType {
   @scala.inline
   def apply(badInput: Boolean, disabled: Boolean, validity: Anon_BadInput, value: String): NativeInputType = {
-    val __obj = js.Dynamic.literal(badInput = badInput, disabled = disabled, validity = validity, value = value)
+    val __obj = js.Dynamic.literal(badInput = badInput.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], validity = validity.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NativeInputType]
   }

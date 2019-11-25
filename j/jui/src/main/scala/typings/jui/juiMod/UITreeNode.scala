@@ -36,14 +36,14 @@ object UITreeNode {
     `type`: String = null
   ): UITreeNode = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (data != null) __obj.updateDynamic("data")(data)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
-    if (element != null) __obj.updateDynamic("element")(element)
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (nodenum != null) __obj.updateDynamic("nodenum")(nodenum.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UITreeNode]
   }
 }

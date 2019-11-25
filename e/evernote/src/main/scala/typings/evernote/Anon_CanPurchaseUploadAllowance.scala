@@ -34,11 +34,11 @@ object Anon_CanPurchaseUploadAllowance {
     sponsoredGroupName: String = null,
     sponsoredGroupRole: SponsoredGroupRole = null
   ): Anon_CanPurchaseUploadAllowance = {
-    val __obj = js.Dynamic.literal(canPurchaseUploadAllowance = canPurchaseUploadAllowance, currentTime = currentTime, premium = premium, premiumCancellationPending = premiumCancellationPending, premiumExtendable = premiumExtendable, premiumPending = premiumPending, premiumRecurring = premiumRecurring)
+    val __obj = js.Dynamic.literal(canPurchaseUploadAllowance = canPurchaseUploadAllowance.asInstanceOf[js.Any], currentTime = currentTime.asInstanceOf[js.Any], premium = premium.asInstanceOf[js.Any], premiumCancellationPending = premiumCancellationPending.asInstanceOf[js.Any], premiumExtendable = premiumExtendable.asInstanceOf[js.Any], premiumPending = premiumPending.asInstanceOf[js.Any], premiumRecurring = premiumRecurring.asInstanceOf[js.Any])
     if (premiumExpirationDate != null) __obj.updateDynamic("premiumExpirationDate")(premiumExpirationDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(premiumUpgradable)) __obj.updateDynamic("premiumUpgradable")(premiumUpgradable)
-    if (sponsoredGroupName != null) __obj.updateDynamic("sponsoredGroupName")(sponsoredGroupName)
-    if (sponsoredGroupRole != null) __obj.updateDynamic("sponsoredGroupRole")(sponsoredGroupRole)
+    if (!js.isUndefined(premiumUpgradable)) __obj.updateDynamic("premiumUpgradable")(premiumUpgradable.asInstanceOf[js.Any])
+    if (sponsoredGroupName != null) __obj.updateDynamic("sponsoredGroupName")(sponsoredGroupName.asInstanceOf[js.Any])
+    if (sponsoredGroupRole != null) __obj.updateDynamic("sponsoredGroupRole")(sponsoredGroupRole.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CanPurchaseUploadAllowance]
   }
 }

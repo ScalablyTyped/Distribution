@@ -14,7 +14,7 @@ trait ResponseArgs extends js.Object {
 object ResponseArgs {
   @scala.inline
   def apply(message: String, status: success | error): ResponseArgs = {
-    val __obj = js.Dynamic.literal(message = message, status = status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ResponseArgs]
   }

@@ -11,7 +11,7 @@ import typings.stripeDashV3.stripeDashV3Strings.pending
 import typings.stripeDashV3.stripeDashV3Strings.refund
 import typings.stripeDashV3.stripeDashV3Strings.requested_by_customer
 import typings.stripeDashV3.stripeDashV3Strings.succeeded
-import typings.stripeDashV3.stripeDashV3Strings.unknown
+import typings.stripeDashV3.stripeDashV3Strings.unknown_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -51,7 +51,7 @@ trait Refund extends js.Object {
   /**
     * If the refund failed, the reason for refund failure if known
     */
-  var failure_reason: js.UndefOr[lost_or_stolen_card | expired_or_canceled_card | unknown] = js.undefined
+  var failure_reason: js.UndefOr[lost_or_stolen_card | expired_or_canceled_card | unknown_] = js.undefined
   /**
     * Unique identifier for the object.
     */
@@ -104,22 +104,22 @@ object Refund {
     balance_transaction: String = null,
     description: String = null,
     failure_balance_transaction: String = null,
-    failure_reason: lost_or_stolen_card | expired_or_canceled_card | unknown = null,
+    failure_reason: lost_or_stolen_card | expired_or_canceled_card | unknown_ = null,
     reason: duplicate | fraudulent | requested_by_customer = null,
     receipt_number: String = null,
     source_transfer_reversal: String = null,
     transfer_reversal: String = null
   ): Refund = {
-    val __obj = js.Dynamic.literal(amount = amount, charge = charge, created = created, currency = currency, id = id, metadata = metadata, status = status.asInstanceOf[js.Any])
-    __obj.updateDynamic("object")(`object`)
-    if (balance_transaction != null) __obj.updateDynamic("balance_transaction")(balance_transaction)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (failure_balance_transaction != null) __obj.updateDynamic("failure_balance_transaction")(failure_balance_transaction)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], charge = charge.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    if (balance_transaction != null) __obj.updateDynamic("balance_transaction")(balance_transaction.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (failure_balance_transaction != null) __obj.updateDynamic("failure_balance_transaction")(failure_balance_transaction.asInstanceOf[js.Any])
     if (failure_reason != null) __obj.updateDynamic("failure_reason")(failure_reason.asInstanceOf[js.Any])
     if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
-    if (receipt_number != null) __obj.updateDynamic("receipt_number")(receipt_number)
-    if (source_transfer_reversal != null) __obj.updateDynamic("source_transfer_reversal")(source_transfer_reversal)
-    if (transfer_reversal != null) __obj.updateDynamic("transfer_reversal")(transfer_reversal)
+    if (receipt_number != null) __obj.updateDynamic("receipt_number")(receipt_number.asInstanceOf[js.Any])
+    if (source_transfer_reversal != null) __obj.updateDynamic("source_transfer_reversal")(source_transfer_reversal.asInstanceOf[js.Any])
+    if (transfer_reversal != null) __obj.updateDynamic("transfer_reversal")(transfer_reversal.asInstanceOf[js.Any])
     __obj.asInstanceOf[Refund]
   }
 }

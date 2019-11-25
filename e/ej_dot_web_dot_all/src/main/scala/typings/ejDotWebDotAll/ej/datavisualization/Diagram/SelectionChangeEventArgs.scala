@@ -49,15 +49,15 @@ object SelectionChangeEventArgs {
     state: String = null
   ): SelectionChangeEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (cause != null) __obj.updateDynamic("cause")(cause)
-    if (changeType != null) __obj.updateDynamic("changeType")(changeType)
-    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId)
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (newItems != null) __obj.updateDynamic("newItems")(newItems)
-    if (oldItems != null) __obj.updateDynamic("oldItems")(oldItems)
-    if (selectedItems != null) __obj.updateDynamic("selectedItems")(selectedItems)
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (cause != null) __obj.updateDynamic("cause")(cause.asInstanceOf[js.Any])
+    if (changeType != null) __obj.updateDynamic("changeType")(changeType.asInstanceOf[js.Any])
+    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (newItems != null) __obj.updateDynamic("newItems")(newItems.asInstanceOf[js.Any])
+    if (oldItems != null) __obj.updateDynamic("oldItems")(oldItems.asInstanceOf[js.Any])
+    if (selectedItems != null) __obj.updateDynamic("selectedItems")(selectedItems.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectionChangeEventArgs]
   }
 }

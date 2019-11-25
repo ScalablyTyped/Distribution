@@ -15,8 +15,8 @@ object DeveloperComment {
   @scala.inline
   def apply(lastModified: Timestamp = null, text: String = null): DeveloperComment = {
     val __obj = js.Dynamic.literal()
-    if (lastModified != null) __obj.updateDynamic("lastModified")(lastModified)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (lastModified != null) __obj.updateDynamic("lastModified")(lastModified.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeveloperComment]
   }
 }

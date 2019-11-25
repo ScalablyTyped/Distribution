@@ -21,7 +21,7 @@ trait INxRange extends js.Object {
 object INxRange {
   @scala.inline
   def apply(qCount: Double, qFrom: Double): INxRange = {
-    val __obj = js.Dynamic.literal(qCount = qCount, qFrom = qFrom)
+    val __obj = js.Dynamic.literal(qCount = qCount.asInstanceOf[js.Any], qFrom = qFrom.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[INxRange]
   }

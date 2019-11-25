@@ -20,9 +20,9 @@ object ExternalIdObject {
   @scala.inline
   def apply(ean: String = null, isrc: String = null, upc: String = null): ExternalIdObject = {
     val __obj = js.Dynamic.literal()
-    if (ean != null) __obj.updateDynamic("ean")(ean)
-    if (isrc != null) __obj.updateDynamic("isrc")(isrc)
-    if (upc != null) __obj.updateDynamic("upc")(upc)
+    if (ean != null) __obj.updateDynamic("ean")(ean.asInstanceOf[js.Any])
+    if (isrc != null) __obj.updateDynamic("isrc")(isrc.asInstanceOf[js.Any])
+    if (upc != null) __obj.updateDynamic("upc")(upc.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExternalIdObject]
   }
 }

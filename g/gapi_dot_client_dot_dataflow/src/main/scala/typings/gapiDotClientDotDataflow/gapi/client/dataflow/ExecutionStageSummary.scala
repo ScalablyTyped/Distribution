@@ -33,13 +33,13 @@ object ExecutionStageSummary {
     outputSource: js.Array[StageSource] = null
   ): ExecutionStageSummary = {
     val __obj = js.Dynamic.literal()
-    if (componentSource != null) __obj.updateDynamic("componentSource")(componentSource)
-    if (componentTransform != null) __obj.updateDynamic("componentTransform")(componentTransform)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (inputSource != null) __obj.updateDynamic("inputSource")(inputSource)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (outputSource != null) __obj.updateDynamic("outputSource")(outputSource)
+    if (componentSource != null) __obj.updateDynamic("componentSource")(componentSource.asInstanceOf[js.Any])
+    if (componentTransform != null) __obj.updateDynamic("componentTransform")(componentTransform.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (inputSource != null) __obj.updateDynamic("inputSource")(inputSource.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (outputSource != null) __obj.updateDynamic("outputSource")(outputSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecutionStageSummary]
   }
 }

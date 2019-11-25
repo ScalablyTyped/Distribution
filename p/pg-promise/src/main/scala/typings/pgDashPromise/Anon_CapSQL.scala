@@ -12,7 +12,7 @@ object Anon_CapSQL {
   @scala.inline
   def apply(capSQL: js.UndefOr[Boolean] = js.undefined): Anon_CapSQL = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(capSQL)) __obj.updateDynamic("capSQL")(capSQL)
+    if (!js.isUndefined(capSQL)) __obj.updateDynamic("capSQL")(capSQL.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CapSQL]
   }
 }

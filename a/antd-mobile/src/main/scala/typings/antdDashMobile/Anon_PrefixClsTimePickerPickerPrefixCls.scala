@@ -13,7 +13,7 @@ trait Anon_PrefixClsTimePickerPickerPrefixCls extends js.Object {
 object Anon_PrefixClsTimePickerPickerPrefixCls {
   @scala.inline
   def apply(prefixCls: String, timePickerPickerPrefixCls: String, timePickerPrefixCls: String): Anon_PrefixClsTimePickerPickerPrefixCls = {
-    val __obj = js.Dynamic.literal(prefixCls = prefixCls, timePickerPickerPrefixCls = timePickerPickerPrefixCls, timePickerPrefixCls = timePickerPrefixCls)
+    val __obj = js.Dynamic.literal(prefixCls = prefixCls.asInstanceOf[js.Any], timePickerPickerPrefixCls = timePickerPickerPrefixCls.asInstanceOf[js.Any], timePickerPrefixCls = timePickerPrefixCls.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_PrefixClsTimePickerPickerPrefixCls]
   }

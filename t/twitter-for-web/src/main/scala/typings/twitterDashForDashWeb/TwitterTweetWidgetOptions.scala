@@ -57,16 +57,16 @@ object TwitterTweetWidgetOptions {
     width: Double | auto = null
   ): TwitterTweetWidgetOptions = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align)
+    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (cards != null) __obj.updateDynamic("cards")(cards.asInstanceOf[js.Any])
     if (conversation != null) __obj.updateDynamic("conversation")(conversation.asInstanceOf[js.Any])
-    if (!js.isUndefined(dnt)) __obj.updateDynamic("dnt")(dnt)
-    if (hashtags != null) __obj.updateDynamic("hashtags")(hashtags)
-    if (lang != null) __obj.updateDynamic("lang")(lang)
-    if (linkColor != null) __obj.updateDynamic("linkColor")(linkColor)
-    if (related != null) __obj.updateDynamic("related")(related)
+    if (!js.isUndefined(dnt)) __obj.updateDynamic("dnt")(dnt.asInstanceOf[js.Any])
+    if (hashtags != null) __obj.updateDynamic("hashtags")(hashtags.asInstanceOf[js.Any])
+    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
+    if (linkColor != null) __obj.updateDynamic("linkColor")(linkColor.asInstanceOf[js.Any])
+    if (related != null) __obj.updateDynamic("related")(related.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (via != null) __obj.updateDynamic("via")(via)
+    if (via != null) __obj.updateDynamic("via")(via.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[TwitterTweetWidgetOptions]
   }

@@ -14,7 +14,7 @@ trait NotificationEventMap extends js.Object {
 object NotificationEventMap {
   @scala.inline
   def apply(click: Event, close: Event, error: Event, show: Event): NotificationEventMap = {
-    val __obj = js.Dynamic.literal(click = click, close = close, error = error, show = show)
+    val __obj = js.Dynamic.literal(click = click.asInstanceOf[js.Any], close = close.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NotificationEventMap]
   }

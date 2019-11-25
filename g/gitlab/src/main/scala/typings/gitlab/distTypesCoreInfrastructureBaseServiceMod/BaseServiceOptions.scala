@@ -42,18 +42,18 @@ object BaseServiceOptions {
     version: `3` | `4` = null
   ): BaseServiceOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(camelize)) __obj.updateDynamic("camelize")(camelize)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (jobToken != null) __obj.updateDynamic("jobToken")(jobToken)
-    if (oauthToken != null) __obj.updateDynamic("oauthToken")(oauthToken)
+    if (!js.isUndefined(camelize)) __obj.updateDynamic("camelize")(camelize.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (jobToken != null) __obj.updateDynamic("jobToken")(jobToken.asInstanceOf[js.Any])
+    if (oauthToken != null) __obj.updateDynamic("oauthToken")(oauthToken.asInstanceOf[js.Any])
     if (profileMode != null) __obj.updateDynamic("profileMode")(profileMode.asInstanceOf[js.Any])
-    if (profileToken != null) __obj.updateDynamic("profileToken")(profileToken)
-    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized)
+    if (profileToken != null) __obj.updateDynamic("profileToken")(profileToken.asInstanceOf[js.Any])
+    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized.asInstanceOf[js.Any])
     if (requestTimeout != null) __obj.updateDynamic("requestTimeout")(requestTimeout.asInstanceOf[js.Any])
-    if (requester != null) __obj.updateDynamic("requester")(requester)
+    if (requester != null) __obj.updateDynamic("requester")(requester.asInstanceOf[js.Any])
     if (sudo != null) __obj.updateDynamic("sudo")(sudo.asInstanceOf[js.Any])
-    if (token != null) __obj.updateDynamic("token")(token)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseServiceOptions]
   }

@@ -15,7 +15,7 @@ object GoogleActionsOrdersV3VerticalsTicketTicketOrderExtension {
   @scala.inline
   def apply(ticketEvent: GoogleActionsOrdersV3VerticalsTicketTicketEvent = null): GoogleActionsOrdersV3VerticalsTicketTicketOrderExtension = {
     val __obj = js.Dynamic.literal()
-    if (ticketEvent != null) __obj.updateDynamic("ticketEvent")(ticketEvent)
+    if (ticketEvent != null) __obj.updateDynamic("ticketEvent")(ticketEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsOrdersV3VerticalsTicketTicketOrderExtension]
   }
 }

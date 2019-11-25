@@ -58,12 +58,12 @@ object IDialogOptions {
     windowClass: String = null
   ): IDialogOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation)
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (backdrop != null) __obj.updateDynamic("backdrop")(backdrop.asInstanceOf[js.Any])
-    if (backdropClass != null) __obj.updateDynamic("backdropClass")(backdropClass)
-    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard)
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (windowClass != null) __obj.updateDynamic("windowClass")(windowClass)
+    if (backdropClass != null) __obj.updateDynamic("backdropClass")(backdropClass.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (windowClass != null) __obj.updateDynamic("windowClass")(windowClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDialogOptions]
   }
 }

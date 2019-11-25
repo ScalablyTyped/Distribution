@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait PresenceSubscriptionType extends js.Object
 
+object PresenceSubscriptionType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def subscribe: typings.strophejsDashPluginDashRoster.strophejsDashPluginDashRosterStrings.subscribe = this.cast("subscribe")
+  @scala.inline
+  def subscribed: typings.strophejsDashPluginDashRoster.strophejsDashPluginDashRosterStrings.subscribed = this.cast("subscribed")
+  @scala.inline
+  def unsubscribe: typings.strophejsDashPluginDashRoster.strophejsDashPluginDashRosterStrings.unsubscribe = this.cast("unsubscribe")
+  @scala.inline
+  def unsubscribed: typings.strophejsDashPluginDashRoster.strophejsDashPluginDashRosterStrings.unsubscribed = this.cast("unsubscribed")
+}
+

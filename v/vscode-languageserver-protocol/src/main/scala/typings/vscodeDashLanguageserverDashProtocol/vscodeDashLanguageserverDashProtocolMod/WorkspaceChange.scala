@@ -1,6 +1,5 @@
 package typings.vscodeDashLanguageserverDashProtocol.vscodeDashLanguageserverDashProtocolMod
 
-import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.WorkspaceEdit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class WorkspaceChange ()
   extends typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.WorkspaceChange {
-  def this(workspaceEdit: WorkspaceEdit) = this()
+  def this(workspaceEdit: typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.WorkspaceEdit) = this()
 }
 

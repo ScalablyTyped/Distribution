@@ -22,7 +22,7 @@ object Anon_Json {
     yaml: ParserOptions | Boolean = null
   ): Anon_Json = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (json != null) __obj.updateDynamic("json")(json.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (yaml != null) __obj.updateDynamic("yaml")(yaml.asInstanceOf[js.Any])

@@ -39,11 +39,11 @@ object NetworkInspectInfo {
     Labels: StringDictionary[String] = null,
     Options: StringDictionary[String] = null
   ): NetworkInspectInfo = {
-    val __obj = js.Dynamic.literal(Attachable = Attachable, Created = Created, Driver = Driver, EnableIPv6 = EnableIPv6, Id = Id, Ingress = Ingress, Internal = Internal, Name = Name, Scope = Scope)
-    if (Containers != null) __obj.updateDynamic("Containers")(Containers)
-    if (IPAM != null) __obj.updateDynamic("IPAM")(IPAM)
-    if (Labels != null) __obj.updateDynamic("Labels")(Labels)
-    if (Options != null) __obj.updateDynamic("Options")(Options)
+    val __obj = js.Dynamic.literal(Attachable = Attachable.asInstanceOf[js.Any], Created = Created.asInstanceOf[js.Any], Driver = Driver.asInstanceOf[js.Any], EnableIPv6 = EnableIPv6.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Ingress = Ingress.asInstanceOf[js.Any], Internal = Internal.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Scope = Scope.asInstanceOf[js.Any])
+    if (Containers != null) __obj.updateDynamic("Containers")(Containers.asInstanceOf[js.Any])
+    if (IPAM != null) __obj.updateDynamic("IPAM")(IPAM.asInstanceOf[js.Any])
+    if (Labels != null) __obj.updateDynamic("Labels")(Labels.asInstanceOf[js.Any])
+    if (Options != null) __obj.updateDynamic("Options")(Options.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkInspectInfo]
   }
 }

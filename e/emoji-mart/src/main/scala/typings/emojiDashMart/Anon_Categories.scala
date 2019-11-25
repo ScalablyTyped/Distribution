@@ -14,7 +14,7 @@ trait Anon_Categories extends js.Object {
 object Anon_Categories {
   @scala.inline
   def apply(categories: Partial[Record[CategoryName, String]]): Anon_Categories = {
-    val __obj = js.Dynamic.literal(categories = categories)
+    val __obj = js.Dynamic.literal(categories = categories.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Categories]
   }

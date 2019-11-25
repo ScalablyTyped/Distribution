@@ -27,7 +27,7 @@ object Anon_AutoBillion {
     tooltipDisplay: off | auto,
     tooltipLabel: String
   ): Anon_AutoBillion = {
-    val __obj = js.Dynamic.literal(converter = converter, scaling = scaling.asInstanceOf[js.Any], tooltipDisplay = tooltipDisplay.asInstanceOf[js.Any], tooltipLabel = tooltipLabel)
+    val __obj = js.Dynamic.literal(converter = converter.asInstanceOf[js.Any], scaling = scaling.asInstanceOf[js.Any], tooltipDisplay = tooltipDisplay.asInstanceOf[js.Any], tooltipLabel = tooltipLabel.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AutoBillion]
   }

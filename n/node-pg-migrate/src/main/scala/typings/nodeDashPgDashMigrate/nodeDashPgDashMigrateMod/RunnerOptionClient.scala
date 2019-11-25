@@ -12,7 +12,7 @@ trait RunnerOptionClient extends js.Object {
 object RunnerOptionClient {
   @scala.inline
   def apply(dbClient: Client): RunnerOptionClient = {
-    val __obj = js.Dynamic.literal(dbClient = dbClient)
+    val __obj = js.Dynamic.literal(dbClient = dbClient.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RunnerOptionClient]
   }

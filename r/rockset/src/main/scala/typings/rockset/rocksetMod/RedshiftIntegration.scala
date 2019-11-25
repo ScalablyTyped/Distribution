@@ -29,8 +29,8 @@ object RedshiftIntegration {
     username: String,
     aws_access_key: AwsAccessKey = null
   ): RedshiftIntegration = {
-    val __obj = js.Dynamic.literal(host = host, password = password, port = port, s3_bucket_path = s3_bucket_path, username = username)
-    if (aws_access_key != null) __obj.updateDynamic("aws_access_key")(aws_access_key)
+    val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], s3_bucket_path = s3_bucket_path.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
+    if (aws_access_key != null) __obj.updateDynamic("aws_access_key")(aws_access_key.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedshiftIntegration]
   }
 }

@@ -12,7 +12,7 @@ object BiBreadthFirstFinderOptions {
   @scala.inline
   def apply(diagonalMovement: DiagonalMovement = null): BiBreadthFirstFinderOptions = {
     val __obj = js.Dynamic.literal()
-    if (diagonalMovement != null) __obj.updateDynamic("diagonalMovement")(diagonalMovement)
+    if (diagonalMovement != null) __obj.updateDynamic("diagonalMovement")(diagonalMovement.asInstanceOf[js.Any])
     __obj.asInstanceOf[BiBreadthFirstFinderOptions]
   }
 }

@@ -33,8 +33,8 @@ object ImageSource {
   @scala.inline
   def apply(gcsImageUri: String = null, imageUri: String = null): ImageSource = {
     val __obj = js.Dynamic.literal()
-    if (gcsImageUri != null) __obj.updateDynamic("gcsImageUri")(gcsImageUri)
-    if (imageUri != null) __obj.updateDynamic("imageUri")(imageUri)
+    if (gcsImageUri != null) __obj.updateDynamic("gcsImageUri")(gcsImageUri.asInstanceOf[js.Any])
+    if (imageUri != null) __obj.updateDynamic("imageUri")(imageUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageSource]
   }
 }

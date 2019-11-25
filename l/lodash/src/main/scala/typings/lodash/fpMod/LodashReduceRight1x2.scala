@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation._
 trait LodashReduceRight1x2[TResult] extends js.Object {
   def apply[T /* <: js.Object */](
     callback: MemoIteratorCappedRight[
-      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 
       TResult
     ]
   ): LodashReduceRight3x3[T, TResult] = js.native
   def apply[T /* <: js.Object */](
     callback: MemoIteratorCappedRight[
-      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 
       TResult
     ],
     collection: T

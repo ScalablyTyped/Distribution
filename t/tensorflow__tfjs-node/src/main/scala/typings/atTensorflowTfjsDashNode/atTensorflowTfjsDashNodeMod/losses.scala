@@ -1,7 +1,5 @@
 package typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeMod
 
-import typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
-import typings.atTensorflowTfjsDashCore.distTypesMod.Rank
 import typings.atTensorflowTfjsDashCore.distTypesMod.TensorLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -24,669 +22,833 @@ object losses extends js.Object {
   
   @js.native
   object absoluteDifference extends js.Object {
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: T, predictions: T): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: T, predictions: T, weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank]): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: T, predictions: T): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: T,
       predictions: T,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
-      reduction: Reduction
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: T, predictions: T, weights: TensorLike): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: T, predictions: T, weights: TensorLike, reduction: Reduction): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: T, predictions: TensorLike): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
+      labels: T,
+      predictions: T,
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
+    ): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: T, predictions: T, weights: TensorLike): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
+      labels: T,
+      predictions: T,
+      weights: TensorLike,
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
+    ): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: T, predictions: TensorLike): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: T,
       predictions: TensorLike,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank]
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: T,
       predictions: TensorLike,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
-      reduction: Reduction
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: T, predictions: TensorLike, weights: TensorLike): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: T, predictions: TensorLike, weights: TensorLike, reduction: Reduction): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: TensorLike, predictions: T): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: T, predictions: TensorLike, weights: TensorLike): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
+      labels: T,
+      predictions: TensorLike,
+      weights: TensorLike,
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
+    ): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: TensorLike, predictions: T): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: TensorLike,
       predictions: T,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank]
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: TensorLike,
       predictions: T,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
-      reduction: Reduction
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: TensorLike, predictions: T, weights: TensorLike): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: TensorLike, predictions: T, weights: TensorLike, reduction: Reduction): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: TensorLike, predictions: TensorLike): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: TensorLike, predictions: T, weights: TensorLike): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
+      labels: TensorLike,
+      predictions: T,
+      weights: TensorLike,
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
+    ): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: TensorLike, predictions: TensorLike): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: TensorLike,
       predictions: TensorLike,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank]
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: TensorLike,
       predictions: TensorLike,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
-      reduction: Reduction
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: TensorLike, predictions: TensorLike, weights: TensorLike): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: TensorLike, predictions: TensorLike, weights: TensorLike, reduction: Reduction): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: TensorLike, predictions: TensorLike, weights: TensorLike): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
+      labels: TensorLike,
+      predictions: TensorLike,
+      weights: TensorLike,
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
+    ): O = js.native
   }
   
   @js.native
   object computeWeightedLoss extends js.Object {
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](losses: T): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](losses: T, weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank]): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](losses: T): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       losses: T,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
-      reduction: Reduction
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](losses: T, weights: TensorLike): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](losses: T, weights: TensorLike, reduction: Reduction): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](losses: TensorLike): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](losses: TensorLike, weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank]): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
+      losses: T,
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
+    ): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](losses: T, weights: TensorLike): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
+      losses: T,
+      weights: TensorLike,
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
+    ): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](losses: TensorLike): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       losses: TensorLike,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
-      reduction: Reduction
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](losses: TensorLike, weights: TensorLike): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](losses: TensorLike, weights: TensorLike, reduction: Reduction): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
+      losses: TensorLike,
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
+    ): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](losses: TensorLike, weights: TensorLike): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
+      losses: TensorLike,
+      weights: TensorLike,
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
+    ): O = js.native
   }
   
   @js.native
   object cosineDistance extends js.Object {
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: T, predictions: T, axis: Double): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: T, predictions: T, axis: Double): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: T,
       predictions: T,
       axis: Double,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank]
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: T,
       predictions: T,
       axis: Double,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
-      reduction: Reduction
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: T, predictions: T, axis: Double, weights: TensorLike): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: T, predictions: T, axis: Double, weights: TensorLike, reduction: Reduction): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: T, predictions: TensorLike, axis: Double): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: T, predictions: T, axis: Double, weights: TensorLike): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
+      labels: T,
+      predictions: T,
+      axis: Double,
+      weights: TensorLike,
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
+    ): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: T, predictions: TensorLike, axis: Double): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: T,
       predictions: TensorLike,
       axis: Double,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank]
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: T,
       predictions: TensorLike,
       axis: Double,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
-      reduction: Reduction
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: T, predictions: TensorLike, axis: Double, weights: TensorLike): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: T, predictions: TensorLike, axis: Double, weights: TensorLike, reduction: Reduction): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: TensorLike, predictions: T, axis: Double): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: T, predictions: TensorLike, axis: Double, weights: TensorLike): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
+      labels: T,
+      predictions: TensorLike,
+      axis: Double,
+      weights: TensorLike,
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
+    ): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: TensorLike, predictions: T, axis: Double): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: TensorLike,
       predictions: T,
       axis: Double,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank]
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: TensorLike,
       predictions: T,
       axis: Double,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
-      reduction: Reduction
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: TensorLike, predictions: T, axis: Double, weights: TensorLike): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: TensorLike, predictions: T, axis: Double, weights: TensorLike, reduction: Reduction): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: TensorLike, predictions: TensorLike, axis: Double): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: TensorLike, predictions: T, axis: Double, weights: TensorLike): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
+      labels: TensorLike,
+      predictions: T,
+      axis: Double,
+      weights: TensorLike,
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
+    ): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: TensorLike, predictions: TensorLike, axis: Double): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: TensorLike,
       predictions: TensorLike,
       axis: Double,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank]
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: TensorLike,
       predictions: TensorLike,
       axis: Double,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
-      reduction: Reduction
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: TensorLike, predictions: TensorLike, axis: Double, weights: TensorLike): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: TensorLike, predictions: TensorLike, axis: Double, weights: TensorLike): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: TensorLike,
       predictions: TensorLike,
       axis: Double,
       weights: TensorLike,
-      reduction: Reduction
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
     ): O = js.native
   }
   
   @js.native
   object hingeLoss extends js.Object {
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: T, predictions: T): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: T, predictions: T, weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank]): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: T, predictions: T): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: T,
       predictions: T,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
-      reduction: Reduction
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: T, predictions: T, weights: TensorLike): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: T, predictions: T, weights: TensorLike, reduction: Reduction): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: T, predictions: TensorLike): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
+      labels: T,
+      predictions: T,
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
+    ): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: T, predictions: T, weights: TensorLike): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
+      labels: T,
+      predictions: T,
+      weights: TensorLike,
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
+    ): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: T, predictions: TensorLike): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: T,
       predictions: TensorLike,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank]
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: T,
       predictions: TensorLike,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
-      reduction: Reduction
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: T, predictions: TensorLike, weights: TensorLike): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: T, predictions: TensorLike, weights: TensorLike, reduction: Reduction): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: TensorLike, predictions: T): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: T, predictions: TensorLike, weights: TensorLike): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
+      labels: T,
+      predictions: TensorLike,
+      weights: TensorLike,
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
+    ): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: TensorLike, predictions: T): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: TensorLike,
       predictions: T,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank]
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: TensorLike,
       predictions: T,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
-      reduction: Reduction
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: TensorLike, predictions: T, weights: TensorLike): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: TensorLike, predictions: T, weights: TensorLike, reduction: Reduction): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: TensorLike, predictions: TensorLike): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: TensorLike, predictions: T, weights: TensorLike): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
+      labels: TensorLike,
+      predictions: T,
+      weights: TensorLike,
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
+    ): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: TensorLike, predictions: TensorLike): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: TensorLike,
       predictions: TensorLike,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank]
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: TensorLike,
       predictions: TensorLike,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
-      reduction: Reduction
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: TensorLike, predictions: TensorLike, weights: TensorLike): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: TensorLike, predictions: TensorLike, weights: TensorLike, reduction: Reduction): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: TensorLike, predictions: TensorLike, weights: TensorLike): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
+      labels: TensorLike,
+      predictions: TensorLike,
+      weights: TensorLike,
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
+    ): O = js.native
   }
   
   @js.native
   object huberLoss extends js.Object {
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: T, predictions: T): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: T, predictions: T, weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank]): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: T, predictions: T): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: T,
       predictions: T,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
+    ): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
+      labels: T,
+      predictions: T,
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
       delta: Double
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: T,
       predictions: T,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
       delta: Double,
-      reduction: Reduction
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: T, predictions: T, weights: TensorLike): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: T, predictions: T, weights: TensorLike, delta: Double): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: T, predictions: T, weights: TensorLike, delta: Double, reduction: Reduction): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: T, predictions: TensorLike): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: T, predictions: T, weights: TensorLike): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: T, predictions: T, weights: TensorLike, delta: Double): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
+      labels: T,
+      predictions: T,
+      weights: TensorLike,
+      delta: Double,
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
+    ): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: T, predictions: TensorLike): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: T,
       predictions: TensorLike,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank]
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: T,
       predictions: TensorLike,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
       delta: Double
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: T,
       predictions: TensorLike,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
       delta: Double,
-      reduction: Reduction
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: T, predictions: TensorLike, weights: TensorLike): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: T, predictions: TensorLike, weights: TensorLike, delta: Double): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: T, predictions: TensorLike, weights: TensorLike, delta: Double, reduction: Reduction): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: TensorLike, predictions: T): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: T, predictions: TensorLike, weights: TensorLike): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: T, predictions: TensorLike, weights: TensorLike, delta: Double): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
+      labels: T,
+      predictions: TensorLike,
+      weights: TensorLike,
+      delta: Double,
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
+    ): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: TensorLike, predictions: T): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: TensorLike,
       predictions: T,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank]
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: TensorLike,
       predictions: T,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
       delta: Double
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: TensorLike,
       predictions: T,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
       delta: Double,
-      reduction: Reduction
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: TensorLike, predictions: T, weights: TensorLike): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: TensorLike, predictions: T, weights: TensorLike, delta: Double): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: TensorLike, predictions: T, weights: TensorLike, delta: Double, reduction: Reduction): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: TensorLike, predictions: TensorLike): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: TensorLike, predictions: T, weights: TensorLike): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: TensorLike, predictions: T, weights: TensorLike, delta: Double): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
+      labels: TensorLike,
+      predictions: T,
+      weights: TensorLike,
+      delta: Double,
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
+    ): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: TensorLike, predictions: TensorLike): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: TensorLike,
       predictions: TensorLike,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank]
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: TensorLike,
       predictions: TensorLike,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
       delta: Double
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: TensorLike,
       predictions: TensorLike,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
       delta: Double,
-      reduction: Reduction
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: TensorLike, predictions: TensorLike, weights: TensorLike): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: TensorLike, predictions: TensorLike, weights: TensorLike, delta: Double): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: TensorLike, predictions: TensorLike, weights: TensorLike): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: TensorLike, predictions: TensorLike, weights: TensorLike, delta: Double): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: TensorLike,
       predictions: TensorLike,
       weights: TensorLike,
       delta: Double,
-      reduction: Reduction
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
     ): O = js.native
   }
   
   @js.native
   object logLoss extends js.Object {
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: T, predictions: T): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: T, predictions: T, weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank]): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: T, predictions: T): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: T,
       predictions: T,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
+    ): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
+      labels: T,
+      predictions: T,
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
       epsilon: Double
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: T,
       predictions: T,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
       epsilon: Double,
-      reduction: Reduction
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: T, predictions: T, weights: TensorLike): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: T, predictions: T, weights: TensorLike, epsilon: Double): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: T, predictions: T, weights: TensorLike, epsilon: Double, reduction: Reduction): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: T, predictions: TensorLike): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: T, predictions: T, weights: TensorLike): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: T, predictions: T, weights: TensorLike, epsilon: Double): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
+      labels: T,
+      predictions: T,
+      weights: TensorLike,
+      epsilon: Double,
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
+    ): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: T, predictions: TensorLike): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: T,
       predictions: TensorLike,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank]
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: T,
       predictions: TensorLike,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
       epsilon: Double
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: T,
       predictions: TensorLike,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
       epsilon: Double,
-      reduction: Reduction
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: T, predictions: TensorLike, weights: TensorLike): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: T, predictions: TensorLike, weights: TensorLike, epsilon: Double): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: T, predictions: TensorLike, weights: TensorLike, epsilon: Double, reduction: Reduction): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: TensorLike, predictions: T): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: T, predictions: TensorLike, weights: TensorLike): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: T, predictions: TensorLike, weights: TensorLike, epsilon: Double): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
+      labels: T,
+      predictions: TensorLike,
+      weights: TensorLike,
+      epsilon: Double,
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
+    ): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: TensorLike, predictions: T): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: TensorLike,
       predictions: T,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank]
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: TensorLike,
       predictions: T,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
       epsilon: Double
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: TensorLike,
       predictions: T,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
       epsilon: Double,
-      reduction: Reduction
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: TensorLike, predictions: T, weights: TensorLike): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: TensorLike, predictions: T, weights: TensorLike, epsilon: Double): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: TensorLike, predictions: T, weights: TensorLike, epsilon: Double, reduction: Reduction): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: TensorLike, predictions: TensorLike): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: TensorLike, predictions: T, weights: TensorLike): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: TensorLike, predictions: T, weights: TensorLike, epsilon: Double): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
+      labels: TensorLike,
+      predictions: T,
+      weights: TensorLike,
+      epsilon: Double,
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
+    ): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: TensorLike, predictions: TensorLike): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: TensorLike,
       predictions: TensorLike,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank]
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: TensorLike,
       predictions: TensorLike,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
       epsilon: Double
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: TensorLike,
       predictions: TensorLike,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
       epsilon: Double,
-      reduction: Reduction
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: TensorLike, predictions: TensorLike, weights: TensorLike): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: TensorLike, predictions: TensorLike, weights: TensorLike, epsilon: Double): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: TensorLike, predictions: TensorLike, weights: TensorLike): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: TensorLike, predictions: TensorLike, weights: TensorLike, epsilon: Double): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: TensorLike,
       predictions: TensorLike,
       weights: TensorLike,
       epsilon: Double,
-      reduction: Reduction
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
     ): O = js.native
   }
   
   @js.native
   object meanSquaredError extends js.Object {
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: T, predictions: T): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: T, predictions: T, weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank]): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: T, predictions: T): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: T,
       predictions: T,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
-      reduction: Reduction
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: T, predictions: T, weights: TensorLike): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: T, predictions: T, weights: TensorLike, reduction: Reduction): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: T, predictions: TensorLike): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
+      labels: T,
+      predictions: T,
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
+    ): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: T, predictions: T, weights: TensorLike): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
+      labels: T,
+      predictions: T,
+      weights: TensorLike,
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
+    ): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: T, predictions: TensorLike): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: T,
       predictions: TensorLike,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank]
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: T,
       predictions: TensorLike,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
-      reduction: Reduction
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: T, predictions: TensorLike, weights: TensorLike): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: T, predictions: TensorLike, weights: TensorLike, reduction: Reduction): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: TensorLike, predictions: T): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: T, predictions: TensorLike, weights: TensorLike): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
+      labels: T,
+      predictions: TensorLike,
+      weights: TensorLike,
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
+    ): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: TensorLike, predictions: T): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: TensorLike,
       predictions: T,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank]
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: TensorLike,
       predictions: T,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
-      reduction: Reduction
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: TensorLike, predictions: T, weights: TensorLike): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: TensorLike, predictions: T, weights: TensorLike, reduction: Reduction): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: TensorLike, predictions: TensorLike): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: TensorLike, predictions: T, weights: TensorLike): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
+      labels: TensorLike,
+      predictions: T,
+      weights: TensorLike,
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
+    ): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: TensorLike, predictions: TensorLike): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: TensorLike,
       predictions: TensorLike,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank]
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       labels: TensorLike,
       predictions: TensorLike,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
-      reduction: Reduction
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: TensorLike, predictions: TensorLike, weights: TensorLike): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](labels: TensorLike, predictions: TensorLike, weights: TensorLike, reduction: Reduction): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](labels: TensorLike, predictions: TensorLike, weights: TensorLike): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
+      labels: TensorLike,
+      predictions: TensorLike,
+      weights: TensorLike,
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
+    ): O = js.native
   }
   
   @js.native
   object sigmoidCrossEntropy extends js.Object {
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](multiClassLabels: T, logits: T): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](multiClassLabels: T, logits: T): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       multiClassLabels: T,
       logits: T,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank]
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       multiClassLabels: T,
       logits: T,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
       labelSmoothing: Double
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       multiClassLabels: T,
       logits: T,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
       labelSmoothing: Double,
-      reduction: Reduction
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](multiClassLabels: T, logits: T, weights: TensorLike): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](multiClassLabels: T, logits: T, weights: TensorLike, labelSmoothing: Double): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](multiClassLabels: T, logits: T, weights: TensorLike, labelSmoothing: Double, reduction: Reduction): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](multiClassLabels: T, logits: TensorLike): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](multiClassLabels: T, logits: T, weights: TensorLike): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](multiClassLabels: T, logits: T, weights: TensorLike, labelSmoothing: Double): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
+      multiClassLabels: T,
+      logits: T,
+      weights: TensorLike,
+      labelSmoothing: Double,
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
+    ): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](multiClassLabels: T, logits: TensorLike): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       multiClassLabels: T,
       logits: TensorLike,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank]
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       multiClassLabels: T,
       logits: TensorLike,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
       labelSmoothing: Double
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       multiClassLabels: T,
       logits: TensorLike,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
       labelSmoothing: Double,
-      reduction: Reduction
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](multiClassLabels: T, logits: TensorLike, weights: TensorLike): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](multiClassLabels: T, logits: TensorLike, weights: TensorLike, labelSmoothing: Double): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](multiClassLabels: T, logits: TensorLike, weights: TensorLike): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](multiClassLabels: T, logits: TensorLike, weights: TensorLike, labelSmoothing: Double): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       multiClassLabels: T,
       logits: TensorLike,
       weights: TensorLike,
       labelSmoothing: Double,
-      reduction: Reduction
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](multiClassLabels: TensorLike, logits: T): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](multiClassLabels: TensorLike, logits: T): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       multiClassLabels: TensorLike,
       logits: T,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank]
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       multiClassLabels: TensorLike,
       logits: T,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
       labelSmoothing: Double
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       multiClassLabels: TensorLike,
       logits: T,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
       labelSmoothing: Double,
-      reduction: Reduction
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](multiClassLabels: TensorLike, logits: T, weights: TensorLike): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](multiClassLabels: TensorLike, logits: T, weights: TensorLike, labelSmoothing: Double): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](multiClassLabels: TensorLike, logits: T, weights: TensorLike): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](multiClassLabels: TensorLike, logits: T, weights: TensorLike, labelSmoothing: Double): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       multiClassLabels: TensorLike,
       logits: T,
       weights: TensorLike,
       labelSmoothing: Double,
-      reduction: Reduction
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](multiClassLabels: TensorLike, logits: TensorLike): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](multiClassLabels: TensorLike, logits: TensorLike): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       multiClassLabels: TensorLike,
       logits: TensorLike,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank]
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       multiClassLabels: TensorLike,
       logits: TensorLike,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
       labelSmoothing: Double
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       multiClassLabels: TensorLike,
       logits: TensorLike,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
       labelSmoothing: Double,
-      reduction: Reduction
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](multiClassLabels: TensorLike, logits: TensorLike, weights: TensorLike): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](multiClassLabels: TensorLike, logits: TensorLike, weights: TensorLike, labelSmoothing: Double): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](multiClassLabels: TensorLike, logits: TensorLike, weights: TensorLike): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](multiClassLabels: TensorLike, logits: TensorLike, weights: TensorLike, labelSmoothing: Double): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       multiClassLabels: TensorLike,
       logits: TensorLike,
       weights: TensorLike,
       labelSmoothing: Double,
-      reduction: Reduction
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
     ): O = js.native
   }
   
   @js.native
   object softmaxCrossEntropy extends js.Object {
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](onehotLabels: T, logits: T): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](onehotLabels: T, logits: T, weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank]): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](onehotLabels: T, logits: T): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       onehotLabels: T,
       logits: T,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
-      labelSmoothing: Double
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       onehotLabels: T,
       logits: T,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
-      labelSmoothing: Double,
-      reduction: Reduction
-    ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](onehotLabels: T, logits: T, weights: TensorLike): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](onehotLabels: T, logits: T, weights: TensorLike, labelSmoothing: Double): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](onehotLabels: T, logits: T, weights: TensorLike, labelSmoothing: Double, reduction: Reduction): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](onehotLabels: T, logits: TensorLike): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
-      onehotLabels: T,
-      logits: TensorLike,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank]
-    ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
-      onehotLabels: T,
-      logits: TensorLike,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
       labelSmoothing: Double
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
+      onehotLabels: T,
+      logits: T,
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
+      labelSmoothing: Double,
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
+    ): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](onehotLabels: T, logits: T, weights: TensorLike): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](onehotLabels: T, logits: T, weights: TensorLike, labelSmoothing: Double): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
+      onehotLabels: T,
+      logits: T,
+      weights: TensorLike,
+      labelSmoothing: Double,
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
+    ): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](onehotLabels: T, logits: TensorLike): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       onehotLabels: T,
       logits: TensorLike,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
-      labelSmoothing: Double,
-      reduction: Reduction
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](onehotLabels: T, logits: TensorLike, weights: TensorLike): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](onehotLabels: T, logits: TensorLike, weights: TensorLike, labelSmoothing: Double): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
+      onehotLabels: T,
+      logits: TensorLike,
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
+      labelSmoothing: Double
+    ): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
+      onehotLabels: T,
+      logits: TensorLike,
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
+      labelSmoothing: Double,
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
+    ): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](onehotLabels: T, logits: TensorLike, weights: TensorLike): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](onehotLabels: T, logits: TensorLike, weights: TensorLike, labelSmoothing: Double): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       onehotLabels: T,
       logits: TensorLike,
       weights: TensorLike,
       labelSmoothing: Double,
-      reduction: Reduction
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](onehotLabels: TensorLike, logits: T): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](onehotLabels: TensorLike, logits: T): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       onehotLabels: TensorLike,
       logits: T,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank]
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       onehotLabels: TensorLike,
       logits: T,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
       labelSmoothing: Double
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       onehotLabels: TensorLike,
       logits: T,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
       labelSmoothing: Double,
-      reduction: Reduction
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](onehotLabels: TensorLike, logits: T, weights: TensorLike): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](onehotLabels: TensorLike, logits: T, weights: TensorLike, labelSmoothing: Double): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](onehotLabels: TensorLike, logits: T, weights: TensorLike): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](onehotLabels: TensorLike, logits: T, weights: TensorLike, labelSmoothing: Double): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       onehotLabels: TensorLike,
       logits: T,
       weights: TensorLike,
       labelSmoothing: Double,
-      reduction: Reduction
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](onehotLabels: TensorLike, logits: TensorLike): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](onehotLabels: TensorLike, logits: TensorLike): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       onehotLabels: TensorLike,
       logits: TensorLike,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank]
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       onehotLabels: TensorLike,
       logits: TensorLike,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
       labelSmoothing: Double
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       onehotLabels: TensorLike,
       logits: TensorLike,
-      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
+      weights: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
       labelSmoothing: Double,
-      reduction: Reduction
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
     ): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](onehotLabels: TensorLike, logits: TensorLike, weights: TensorLike): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](onehotLabels: TensorLike, logits: TensorLike, weights: TensorLike, labelSmoothing: Double): O = js.native
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](onehotLabels: TensorLike, logits: TensorLike, weights: TensorLike): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](onehotLabels: TensorLike, logits: TensorLike, weights: TensorLike, labelSmoothing: Double): O = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
       onehotLabels: TensorLike,
       logits: TensorLike,
       weights: TensorLike,
       labelSmoothing: Double,
-      reduction: Reduction
+      reduction: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
     ): O = js.native
   }
   

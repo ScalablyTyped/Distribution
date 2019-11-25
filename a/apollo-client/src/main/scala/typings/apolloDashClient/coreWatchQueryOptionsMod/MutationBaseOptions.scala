@@ -33,12 +33,12 @@ object MutationBaseOptions {
     variables: TVariables = null
   ): MutationBaseOptions[T, TVariables] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(awaitRefetchQueries)) __obj.updateDynamic("awaitRefetchQueries")(awaitRefetchQueries)
-    if (errorPolicy != null) __obj.updateDynamic("errorPolicy")(errorPolicy)
+    if (!js.isUndefined(awaitRefetchQueries)) __obj.updateDynamic("awaitRefetchQueries")(awaitRefetchQueries.asInstanceOf[js.Any])
+    if (errorPolicy != null) __obj.updateDynamic("errorPolicy")(errorPolicy.asInstanceOf[js.Any])
     if (optimisticResponse != null) __obj.updateDynamic("optimisticResponse")(optimisticResponse.asInstanceOf[js.Any])
     if (refetchQueries != null) __obj.updateDynamic("refetchQueries")(refetchQueries.asInstanceOf[js.Any])
     if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction2(update))
-    if (updateQueries != null) __obj.updateDynamic("updateQueries")(updateQueries)
+    if (updateQueries != null) __obj.updateDynamic("updateQueries")(updateQueries.asInstanceOf[js.Any])
     if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[MutationBaseOptions[T, TVariables]]
   }

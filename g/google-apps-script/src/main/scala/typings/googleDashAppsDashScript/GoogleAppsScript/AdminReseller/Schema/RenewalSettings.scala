@@ -13,8 +13,8 @@ object RenewalSettings {
   @scala.inline
   def apply(kind: String = null, renewalType: String = null): RenewalSettings = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (renewalType != null) __obj.updateDynamic("renewalType")(renewalType)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (renewalType != null) __obj.updateDynamic("renewalType")(renewalType.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenewalSettings]
   }
 }

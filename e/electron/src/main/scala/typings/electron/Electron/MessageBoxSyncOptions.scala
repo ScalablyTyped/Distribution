@@ -85,18 +85,18 @@ object MessageBoxSyncOptions {
     title: String = null,
     `type`: String = null
   ): MessageBoxSyncOptions = {
-    val __obj = js.Dynamic.literal(message = message)
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
+    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
     if (cancelId != null) __obj.updateDynamic("cancelId")(cancelId.asInstanceOf[js.Any])
-    if (!js.isUndefined(checkboxChecked)) __obj.updateDynamic("checkboxChecked")(checkboxChecked)
-    if (checkboxLabel != null) __obj.updateDynamic("checkboxLabel")(checkboxLabel)
+    if (!js.isUndefined(checkboxChecked)) __obj.updateDynamic("checkboxChecked")(checkboxChecked.asInstanceOf[js.Any])
+    if (checkboxLabel != null) __obj.updateDynamic("checkboxLabel")(checkboxLabel.asInstanceOf[js.Any])
     if (defaultId != null) __obj.updateDynamic("defaultId")(defaultId.asInstanceOf[js.Any])
-    if (detail != null) __obj.updateDynamic("detail")(detail)
+    if (detail != null) __obj.updateDynamic("detail")(detail.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (!js.isUndefined(noLink)) __obj.updateDynamic("noLink")(noLink)
-    if (!js.isUndefined(normalizeAccessKeys)) __obj.updateDynamic("normalizeAccessKeys")(normalizeAccessKeys)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(noLink)) __obj.updateDynamic("noLink")(noLink.asInstanceOf[js.Any])
+    if (!js.isUndefined(normalizeAccessKeys)) __obj.updateDynamic("normalizeAccessKeys")(normalizeAccessKeys.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageBoxSyncOptions]
   }
 }

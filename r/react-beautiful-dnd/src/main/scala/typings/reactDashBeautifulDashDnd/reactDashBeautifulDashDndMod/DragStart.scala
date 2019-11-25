@@ -14,8 +14,8 @@ trait DragStart extends js.Object {
 object DragStart {
   @scala.inline
   def apply(draggableId: DraggableId, mode: MovementMode, source: DraggableLocation, `type`: TypeId): DragStart = {
-    val __obj = js.Dynamic.literal(draggableId = draggableId, mode = mode, source = source)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(draggableId = draggableId.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DragStart]
   }
 }

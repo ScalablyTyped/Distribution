@@ -16,7 +16,7 @@ object LanguageNegotiationOptions {
   @scala.inline
   def apply(defaultLocale: String = null, strategy: filtering | matching | lookup = null): LanguageNegotiationOptions = {
     val __obj = js.Dynamic.literal()
-    if (defaultLocale != null) __obj.updateDynamic("defaultLocale")(defaultLocale)
+    if (defaultLocale != null) __obj.updateDynamic("defaultLocale")(defaultLocale.asInstanceOf[js.Any])
     if (strategy != null) __obj.updateDynamic("strategy")(strategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[LanguageNegotiationOptions]
   }

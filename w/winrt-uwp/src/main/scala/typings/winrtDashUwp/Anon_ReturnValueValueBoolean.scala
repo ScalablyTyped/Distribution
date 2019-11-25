@@ -13,7 +13,7 @@ trait Anon_ReturnValueValueBoolean extends js.Object {
 object Anon_ReturnValueValueBoolean {
   @scala.inline
   def apply(returnValue: Boolean, value: PowerlineFrequency): Anon_ReturnValueValueBoolean = {
-    val __obj = js.Dynamic.literal(returnValue = returnValue, value = value)
+    val __obj = js.Dynamic.literal(returnValue = returnValue.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ReturnValueValueBoolean]
   }

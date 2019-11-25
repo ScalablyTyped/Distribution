@@ -22,9 +22,9 @@ object SettingDrawerProps {
     onCollapseChange: /* collapse */ Boolean => Unit = null,
     onSettingChange: /* settings */ MergerSettingsTypeSettings => Unit = null
   ): SettingDrawerProps = {
-    val __obj = js.Dynamic.literal(settings = settings)
-    if (!js.isUndefined(collapse)) __obj.updateDynamic("collapse")(collapse)
-    if (getContainer != null) __obj.updateDynamic("getContainer")(getContainer)
+    val __obj = js.Dynamic.literal(settings = settings.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapse)) __obj.updateDynamic("collapse")(collapse.asInstanceOf[js.Any])
+    if (getContainer != null) __obj.updateDynamic("getContainer")(getContainer.asInstanceOf[js.Any])
     if (onCollapseChange != null) __obj.updateDynamic("onCollapseChange")(js.Any.fromFunction1(onCollapseChange))
     if (onSettingChange != null) __obj.updateDynamic("onSettingChange")(js.Any.fromFunction1(onSettingChange))
     __obj.asInstanceOf[SettingDrawerProps]

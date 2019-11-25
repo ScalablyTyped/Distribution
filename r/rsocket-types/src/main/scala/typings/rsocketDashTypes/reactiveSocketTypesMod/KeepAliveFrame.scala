@@ -25,8 +25,8 @@ object KeepAliveFrame {
     data: Encodable = null,
     length: Int | Double = null
   ): KeepAliveFrame = {
-    val __obj = js.Dynamic.literal(flags = flags, lastReceivedPosition = lastReceivedPosition, streamId = streamId)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], lastReceivedPosition = lastReceivedPosition.asInstanceOf[js.Any], streamId = streamId.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeepAliveFrame]

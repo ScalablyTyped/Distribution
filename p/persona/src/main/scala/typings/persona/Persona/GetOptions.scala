@@ -22,11 +22,11 @@ object GetOptions {
     termsOfService: String = null
   ): GetOptions = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
-    if (privacyPolicy != null) __obj.updateDynamic("privacyPolicy")(privacyPolicy)
-    if (siteLogo != null) __obj.updateDynamic("siteLogo")(siteLogo)
-    if (siteName != null) __obj.updateDynamic("siteName")(siteName)
-    if (termsOfService != null) __obj.updateDynamic("termsOfService")(termsOfService)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (privacyPolicy != null) __obj.updateDynamic("privacyPolicy")(privacyPolicy.asInstanceOf[js.Any])
+    if (siteLogo != null) __obj.updateDynamic("siteLogo")(siteLogo.asInstanceOf[js.Any])
+    if (siteName != null) __obj.updateDynamic("siteName")(siteName.asInstanceOf[js.Any])
+    if (termsOfService != null) __obj.updateDynamic("termsOfService")(termsOfService.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetOptions]
   }
 }

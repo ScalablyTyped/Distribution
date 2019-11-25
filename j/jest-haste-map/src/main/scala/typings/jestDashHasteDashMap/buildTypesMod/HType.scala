@@ -46,7 +46,7 @@ object HType {
     TYPE: `1`,
     VISITED: `3`
   ): HType = {
-    val __obj = js.Dynamic.literal(DEPENDENCIES = DEPENDENCIES, DEPENDENCY_DELIM = DEPENDENCY_DELIM, GENERIC_PLATFORM = GENERIC_PLATFORM, ID = ID, MODULE = MODULE, MTIME = MTIME, NATIVE_PLATFORM = NATIVE_PLATFORM, PACKAGE = PACKAGE, PATH = PATH, SHA1 = SHA1, SIZE = SIZE, TYPE = TYPE, VISITED = VISITED)
+    val __obj = js.Dynamic.literal(DEPENDENCIES = DEPENDENCIES.asInstanceOf[js.Any], DEPENDENCY_DELIM = DEPENDENCY_DELIM.asInstanceOf[js.Any], GENERIC_PLATFORM = GENERIC_PLATFORM.asInstanceOf[js.Any], ID = ID.asInstanceOf[js.Any], MODULE = MODULE.asInstanceOf[js.Any], MTIME = MTIME.asInstanceOf[js.Any], NATIVE_PLATFORM = NATIVE_PLATFORM.asInstanceOf[js.Any], PACKAGE = PACKAGE.asInstanceOf[js.Any], PATH = PATH.asInstanceOf[js.Any], SHA1 = SHA1.asInstanceOf[js.Any], SIZE = SIZE.asInstanceOf[js.Any], TYPE = TYPE.asInstanceOf[js.Any], VISITED = VISITED.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HType]
   }

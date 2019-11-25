@@ -38,17 +38,17 @@ object PopupOptions {
   ): PopupOptions = {
     val __obj = js.Dynamic.literal()
     if (activate != null) __obj.updateDynamic("activate")(js.Any.fromFunction1(activate))
-    if (adjustSize != null) __obj.updateDynamic("adjustSize")(adjustSize)
+    if (adjustSize != null) __obj.updateDynamic("adjustSize")(adjustSize.asInstanceOf[js.Any])
     if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo.asInstanceOf[js.Any])
     if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction1(close))
-    if (collision != null) __obj.updateDynamic("collision")(collision)
+    if (collision != null) __obj.updateDynamic("collision")(collision.asInstanceOf[js.Any])
     if (deactivate != null) __obj.updateDynamic("deactivate")(js.Any.fromFunction1(deactivate))
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction1(open))
-    if (origin != null) __obj.updateDynamic("origin")(origin)
-    if (position != null) __obj.updateDynamic("position")(position)
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopupOptions]
   }
 }

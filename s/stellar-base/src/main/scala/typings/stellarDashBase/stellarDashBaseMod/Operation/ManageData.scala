@@ -19,9 +19,9 @@ object ManageData {
     value: Buffer,
     source: String = null
   ): ManageData = {
-    val __obj = js.Dynamic.literal(name = name, value = value)
-    __obj.updateDynamic("type")(`type`)
-    if (source != null) __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManageData]
   }
 }

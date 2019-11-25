@@ -25,7 +25,7 @@ object Anon_Bools {
     numbers: js.Any,
     strings: js.Any
   ): Anon_Bools = {
-    val __obj = js.Dynamic.literal(bools = bools, desc = desc, header = header, name = name, names = names, numbers = numbers, strings = strings)
+    val __obj = js.Dynamic.literal(bools = bools.asInstanceOf[js.Any], desc = desc.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any], numbers = numbers.asInstanceOf[js.Any], strings = strings.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Bools]
   }

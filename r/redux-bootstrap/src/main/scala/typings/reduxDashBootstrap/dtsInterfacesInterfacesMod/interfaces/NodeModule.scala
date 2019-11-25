@@ -12,7 +12,7 @@ trait NodeModule extends js.Object {
 object NodeModule {
   @scala.inline
   def apply(hot: Anon_Accept): NodeModule = {
-    val __obj = js.Dynamic.literal(hot = hot)
+    val __obj = js.Dynamic.literal(hot = hot.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NodeModule]
   }

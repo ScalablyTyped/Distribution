@@ -12,7 +12,7 @@ trait OrgsPublicizeMembershipParams extends js.Object {
 object OrgsPublicizeMembershipParams {
   @scala.inline
   def apply(org: String, username: String): OrgsPublicizeMembershipParams = {
-    val __obj = js.Dynamic.literal(org = org, username = username)
+    val __obj = js.Dynamic.literal(org = org.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OrgsPublicizeMembershipParams]
   }

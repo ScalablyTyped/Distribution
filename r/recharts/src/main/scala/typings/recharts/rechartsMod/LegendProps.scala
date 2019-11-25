@@ -42,7 +42,7 @@ object LegendProps {
     chartWidth: Int | Double = null,
     content: ReactElement | ContentRenderer[LegendProps] = null,
     formatter: (/* value */ js.UndefOr[
-      /* import warning: ImportType.apply Failed type conversion: recharts.recharts.LegendPayload['value'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: recharts.recharts.LegendPayload['value'] */ js.Any
     ], /* entry */ js.UndefOr[LegendPayload], /* i */ js.UndefOr[Double]) => js.Any = null,
     height: Int | Double = null,
     iconSize: Int | Double = null,
@@ -66,17 +66,17 @@ object LegendProps {
     if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction3(formatter))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (iconSize != null) __obj.updateDynamic("iconSize")(iconSize.asInstanceOf[js.Any])
-    if (iconType != null) __obj.updateDynamic("iconType")(iconType)
-    if (layout != null) __obj.updateDynamic("layout")(layout)
-    if (margin != null) __obj.updateDynamic("margin")(margin)
+    if (iconType != null) __obj.updateDynamic("iconType")(iconType.asInstanceOf[js.Any])
+    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
+    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (onBBoxUpdate != null) __obj.updateDynamic("onBBoxUpdate")(js.Any.fromFunction1(onBBoxUpdate))
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))
     if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))
-    if (payload != null) __obj.updateDynamic("payload")(payload)
+    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
     if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (wrapperStyle != null) __obj.updateDynamic("wrapperStyle")(wrapperStyle)
+    if (wrapperStyle != null) __obj.updateDynamic("wrapperStyle")(wrapperStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[LegendProps]
   }
 }

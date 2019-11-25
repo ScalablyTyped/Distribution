@@ -2,7 +2,6 @@ package typings.asana.asanaMod.resources
 
 import org.scalablytyped.runtime.Instantiable1
 import typings.asana.asanaMod.Dispatcher
-import typings.bluebird.bluebirdMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,9 +29,9 @@ Instantiable1[/* dispatcher */ Dispatcher, Resource] {
     * @param query?
     * @param dispatchOptions?
     */
-  def getCollection(dispatcher: js.Any, path: String): ^[_] = js.native
-  def getCollection(dispatcher: js.Any, path: String, query: js.Any): ^[_] = js.native
-  def getCollection(dispatcher: js.Any, path: String, query: js.Any, dispatchOptions: js.Any): ^[_] = js.native
+  def getCollection(dispatcher: js.Any, path: String): typings.bluebird.bluebirdMod.^[_] = js.native
+  def getCollection(dispatcher: js.Any, path: String, query: js.Any): typings.bluebird.bluebirdMod.^[_] = js.native
+  def getCollection(dispatcher: js.Any, path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[_] = js.native
   /**
     * Helper method for any request Promise from the Dispatcher, unwraps the `data`
     * value from the payload.
@@ -41,6 +40,6 @@ Instantiable1[/* dispatcher */ Dispatcher, Resource] {
     * @param promise
     * @return
     */
-  def unwrap(promise: js.Any): ^[_] = js.native
+  def unwrap(promise: js.Any): typings.bluebird.bluebirdMod.^[_] = js.native
 }
 

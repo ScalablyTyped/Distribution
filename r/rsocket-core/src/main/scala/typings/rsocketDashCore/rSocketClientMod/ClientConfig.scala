@@ -30,11 +30,11 @@ object ClientConfig {
     responder: Partial[Responder[D, M]] = null,
     serializers: PayloadSerializers[D, M] = null
   ): ClientConfig[D, M] = {
-    val __obj = js.Dynamic.literal(setup = setup, transport = transport)
+    val __obj = js.Dynamic.literal(setup = setup.asInstanceOf[js.Any], transport = transport.asInstanceOf[js.Any])
     if (errorHandler != null) __obj.updateDynamic("errorHandler")(js.Any.fromFunction1(errorHandler))
     if (leases != null) __obj.updateDynamic("leases")(js.Any.fromFunction0(leases))
-    if (responder != null) __obj.updateDynamic("responder")(responder)
-    if (serializers != null) __obj.updateDynamic("serializers")(serializers)
+    if (responder != null) __obj.updateDynamic("responder")(responder.asInstanceOf[js.Any])
+    if (serializers != null) __obj.updateDynamic("serializers")(serializers.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientConfig[D, M]]
   }
 }

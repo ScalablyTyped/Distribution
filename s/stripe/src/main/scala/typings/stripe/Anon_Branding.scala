@@ -38,11 +38,11 @@ object Anon_Branding {
     payouts: Anon_Debitnegativebalances = null
   ): Anon_Branding = {
     val __obj = js.Dynamic.literal()
-    if (branding != null) __obj.updateDynamic("branding")(branding)
-    if (card_payments != null) __obj.updateDynamic("card_payments")(card_payments)
-    if (dashboard != null) __obj.updateDynamic("dashboard")(dashboard)
-    if (payments != null) __obj.updateDynamic("payments")(payments)
-    if (payouts != null) __obj.updateDynamic("payouts")(payouts)
+    if (branding != null) __obj.updateDynamic("branding")(branding.asInstanceOf[js.Any])
+    if (card_payments != null) __obj.updateDynamic("card_payments")(card_payments.asInstanceOf[js.Any])
+    if (dashboard != null) __obj.updateDynamic("dashboard")(dashboard.asInstanceOf[js.Any])
+    if (payments != null) __obj.updateDynamic("payments")(payments.asInstanceOf[js.Any])
+    if (payouts != null) __obj.updateDynamic("payouts")(payouts.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Branding]
   }
 }

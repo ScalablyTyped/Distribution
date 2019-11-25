@@ -22,7 +22,7 @@ object ECKeyPairOptions {
     privateKeyEncoding: BasePrivateKeyEncodingOptions[PrivF] with Anon_Pkcs8Sec1,
     publicKeyEncoding: Anon_Format[PubF]
   ): ECKeyPairOptions[PubF, PrivF] = {
-    val __obj = js.Dynamic.literal(namedCurve = namedCurve, privateKeyEncoding = privateKeyEncoding, publicKeyEncoding = publicKeyEncoding)
+    val __obj = js.Dynamic.literal(namedCurve = namedCurve.asInstanceOf[js.Any], privateKeyEncoding = privateKeyEncoding.asInstanceOf[js.Any], publicKeyEncoding = publicKeyEncoding.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ECKeyPairOptions[PubF, PrivF]]
   }

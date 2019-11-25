@@ -132,18 +132,18 @@ object PlusNativeUIWaitingOptions {
   ): PlusNativeUIWaitingOptions = {
     val __obj = js.Dynamic.literal()
     if (back != null) __obj.updateDynamic("back")(back.asInstanceOf[js.Any])
-    if (background != null) __obj.updateDynamic("background")(background)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (height != null) __obj.updateDynamic("height")(height)
-    if (loading != null) __obj.updateDynamic("loading")(loading)
-    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal)
-    if (padding != null) __obj.updateDynamic("padding")(padding)
-    if (!js.isUndefined(padlock)) __obj.updateDynamic("padlock")(padlock)
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (loading != null) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
+    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.asInstanceOf[js.Any])
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (!js.isUndefined(padlock)) __obj.updateDynamic("padlock")(padlock.asInstanceOf[js.Any])
     if (round != null) __obj.updateDynamic("round")(round.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (textalign != null) __obj.updateDynamic("textalign")(textalign)
-    if (width != null) __obj.updateDynamic("width")(width)
+    if (textalign != null) __obj.updateDynamic("textalign")(textalign.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusNativeUIWaitingOptions]
   }
 }

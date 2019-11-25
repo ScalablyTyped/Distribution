@@ -30,7 +30,7 @@ object DriveActivity_ {
     Activity: ActivityCollection = null
   ): DriveActivity_ = {
     val __obj = js.Dynamic.literal(newConsolidationStrategy = js.Any.fromFunction0(newConsolidationStrategy), newLegacy = js.Any.fromFunction0(newLegacy), newNoConsolidation = js.Any.fromFunction0(newNoConsolidation), newQueryDriveActivityRequest = js.Any.fromFunction0(newQueryDriveActivityRequest))
-    if (Activity != null) __obj.updateDynamic("Activity")(Activity)
+    if (Activity != null) __obj.updateDynamic("Activity")(Activity.asInstanceOf[js.Any])
     __obj.asInstanceOf[DriveActivity_]
   }
 }

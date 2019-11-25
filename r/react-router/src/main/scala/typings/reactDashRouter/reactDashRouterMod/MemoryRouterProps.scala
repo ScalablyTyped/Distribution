@@ -25,7 +25,7 @@ object MemoryRouterProps {
   ): MemoryRouterProps = {
     val __obj = js.Dynamic.literal()
     if (getUserConfirmation != null) __obj.updateDynamic("getUserConfirmation")(js.Any.fromFunction2(getUserConfirmation))
-    if (initialEntries != null) __obj.updateDynamic("initialEntries")(initialEntries)
+    if (initialEntries != null) __obj.updateDynamic("initialEntries")(initialEntries.asInstanceOf[js.Any])
     if (initialIndex != null) __obj.updateDynamic("initialIndex")(initialIndex.asInstanceOf[js.Any])
     if (keyLength != null) __obj.updateDynamic("keyLength")(keyLength.asInstanceOf[js.Any])
     __obj.asInstanceOf[MemoryRouterProps]

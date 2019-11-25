@@ -23,9 +23,9 @@ object LoadFontFaceOptionsDesc {
   @scala.inline
   def apply(style: String = null, variant: String = null, weight: String = null): LoadFontFaceOptionsDesc = {
     val __obj = js.Dynamic.literal()
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (variant != null) __obj.updateDynamic("variant")(variant)
-    if (weight != null) __obj.updateDynamic("weight")(weight)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (variant != null) __obj.updateDynamic("variant")(variant.asInstanceOf[js.Any])
+    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadFontFaceOptionsDesc]
   }
 }

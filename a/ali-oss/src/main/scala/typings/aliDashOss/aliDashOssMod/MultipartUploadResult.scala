@@ -15,7 +15,7 @@ trait MultipartUploadResult extends js.Object {
 object MultipartUploadResult {
   @scala.inline
   def apply(bucket: String, data: js.Object, etag: String, name: String, res: NormalSuccessResponse): MultipartUploadResult = {
-    val __obj = js.Dynamic.literal(bucket = bucket, data = data, etag = etag, name = name, res = res)
+    val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], etag = etag.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MultipartUploadResult]
   }

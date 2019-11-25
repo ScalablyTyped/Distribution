@@ -18,9 +18,9 @@ object DialogNodesVisited {
   @scala.inline
   def apply(conditions: String = null, dialog_node: String = null, title: String = null): DialogNodesVisited = {
     val __obj = js.Dynamic.literal()
-    if (conditions != null) __obj.updateDynamic("conditions")(conditions)
-    if (dialog_node != null) __obj.updateDynamic("dialog_node")(dialog_node)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (conditions != null) __obj.updateDynamic("conditions")(conditions.asInstanceOf[js.Any])
+    if (dialog_node != null) __obj.updateDynamic("dialog_node")(dialog_node.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogNodesVisited]
   }
 }

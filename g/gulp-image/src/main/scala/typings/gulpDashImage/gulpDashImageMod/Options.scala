@@ -39,7 +39,7 @@ object Options {
     if (mozjpeg != null) __obj.updateDynamic("mozjpeg")(mozjpeg.asInstanceOf[js.Any])
     if (optipng != null) __obj.updateDynamic("optipng")(optipng.asInstanceOf[js.Any])
     if (pngquant != null) __obj.updateDynamic("pngquant")(pngquant.asInstanceOf[js.Any])
-    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet)
+    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet.asInstanceOf[js.Any])
     if (svgo != null) __obj.updateDynamic("svgo")(svgo.asInstanceOf[js.Any])
     if (zopflipng != null) __obj.updateDynamic("zopflipng")(zopflipng.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

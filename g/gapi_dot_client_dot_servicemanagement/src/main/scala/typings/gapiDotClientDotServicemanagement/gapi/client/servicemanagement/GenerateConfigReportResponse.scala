@@ -31,10 +31,10 @@ object GenerateConfigReportResponse {
     serviceName: String = null
   ): GenerateConfigReportResponse = {
     val __obj = js.Dynamic.literal()
-    if (changeReports != null) __obj.updateDynamic("changeReports")(changeReports)
-    if (diagnostics != null) __obj.updateDynamic("diagnostics")(diagnostics)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (serviceName != null) __obj.updateDynamic("serviceName")(serviceName)
+    if (changeReports != null) __obj.updateDynamic("changeReports")(changeReports.asInstanceOf[js.Any])
+    if (diagnostics != null) __obj.updateDynamic("diagnostics")(diagnostics.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (serviceName != null) __obj.updateDynamic("serviceName")(serviceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenerateConfigReportResponse]
   }
 }

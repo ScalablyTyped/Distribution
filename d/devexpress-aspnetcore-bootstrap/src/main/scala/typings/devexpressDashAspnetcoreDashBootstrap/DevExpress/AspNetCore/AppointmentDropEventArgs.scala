@@ -18,7 +18,7 @@ object AppointmentDropEventArgs {
     operation: BootstrapSchedulerAppointmentOperation,
     sender: Control
   ): AppointmentDropEventArgs = {
-    val __obj = js.Dynamic.literal(dragInformation = dragInformation, handled = handled, operation = operation, sender = sender)
+    val __obj = js.Dynamic.literal(dragInformation = dragInformation.asInstanceOf[js.Any], handled = handled.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AppointmentDropEventArgs]
   }

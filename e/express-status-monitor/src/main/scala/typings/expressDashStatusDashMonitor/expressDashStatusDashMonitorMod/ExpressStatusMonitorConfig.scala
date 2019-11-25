@@ -33,15 +33,15 @@ object ExpressStatusMonitorConfig {
     websocket: Server = null
   ): ExpressStatusMonitorConfig = {
     val __obj = js.Dynamic.literal()
-    if (chartVisibility != null) __obj.updateDynamic("chartVisibility")(chartVisibility)
-    if (healthChecks != null) __obj.updateDynamic("healthChecks")(healthChecks)
-    if (ignoreStartsWith != null) __obj.updateDynamic("ignoreStartsWith")(ignoreStartsWith)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (socketPath != null) __obj.updateDynamic("socketPath")(socketPath)
-    if (spans != null) __obj.updateDynamic("spans")(spans)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (websocket != null) __obj.updateDynamic("websocket")(websocket)
+    if (chartVisibility != null) __obj.updateDynamic("chartVisibility")(chartVisibility.asInstanceOf[js.Any])
+    if (healthChecks != null) __obj.updateDynamic("healthChecks")(healthChecks.asInstanceOf[js.Any])
+    if (ignoreStartsWith != null) __obj.updateDynamic("ignoreStartsWith")(ignoreStartsWith.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (socketPath != null) __obj.updateDynamic("socketPath")(socketPath.asInstanceOf[js.Any])
+    if (spans != null) __obj.updateDynamic("spans")(spans.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (websocket != null) __obj.updateDynamic("websocket")(websocket.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExpressStatusMonitorConfig]
   }
 }

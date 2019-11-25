@@ -51,11 +51,11 @@ object ClientOptions {
     useIframe: js.UndefOr[Boolean] = js.undefined
   ): ClientOptions = {
     val __obj = js.Dynamic.literal()
-    if (args != null) __obj.updateDynamic("args")(args)
-    if (!js.isUndefined(captureConsole)) __obj.updateDynamic("captureConsole")(captureConsole)
-    if (!js.isUndefined(clearContext)) __obj.updateDynamic("clearContext")(clearContext)
-    if (!js.isUndefined(runInParent)) __obj.updateDynamic("runInParent")(runInParent)
-    if (!js.isUndefined(useIframe)) __obj.updateDynamic("useIframe")(useIframe)
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (!js.isUndefined(captureConsole)) __obj.updateDynamic("captureConsole")(captureConsole.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearContext)) __obj.updateDynamic("clearContext")(clearContext.asInstanceOf[js.Any])
+    if (!js.isUndefined(runInParent)) __obj.updateDynamic("runInParent")(runInParent.asInstanceOf[js.Any])
+    if (!js.isUndefined(useIframe)) __obj.updateDynamic("useIframe")(useIframe.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientOptions]
   }
 }

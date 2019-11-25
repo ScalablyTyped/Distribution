@@ -173,7 +173,7 @@ object ObjectMeta {
     selfLink: String,
     uid: String
   ): ObjectMeta = {
-    val __obj = js.Dynamic.literal(annotations = annotations, clusterName = clusterName, creationTimestamp = creationTimestamp, deletionGracePeriodSeconds = deletionGracePeriodSeconds, deletionTimestamp = deletionTimestamp, finalizers = finalizers, generateName = generateName, generation = generation, labels = labels, managedFields = managedFields, name = name, namespace = namespace, ownerReferences = ownerReferences, resourceVersion = resourceVersion, selfLink = selfLink, uid = uid)
+    val __obj = js.Dynamic.literal(annotations = annotations.asInstanceOf[js.Any], clusterName = clusterName.asInstanceOf[js.Any], creationTimestamp = creationTimestamp.asInstanceOf[js.Any], deletionGracePeriodSeconds = deletionGracePeriodSeconds.asInstanceOf[js.Any], deletionTimestamp = deletionTimestamp.asInstanceOf[js.Any], finalizers = finalizers.asInstanceOf[js.Any], generateName = generateName.asInstanceOf[js.Any], generation = generation.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], managedFields = managedFields.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], ownerReferences = ownerReferences.asInstanceOf[js.Any], resourceVersion = resourceVersion.asInstanceOf[js.Any], selfLink = selfLink.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ObjectMeta]
   }

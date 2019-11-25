@@ -21,7 +21,7 @@ object DocumentSymbolProvider {
     displayName: String = null
   ): DocumentSymbolProvider = {
     val __obj = js.Dynamic.literal(provideDocumentSymbols = js.Any.fromFunction2(provideDocumentSymbols))
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentSymbolProvider]
   }
 }

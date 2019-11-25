@@ -22,10 +22,10 @@ object ParsedTsconfig {
     options: CompilerOptions = null,
     typeAcquisition: TypeAcquisition = null
   ): ParsedTsconfig = {
-    val __obj = js.Dynamic.literal(raw = raw)
-    if (extendedConfigPath != null) __obj.updateDynamic("extendedConfigPath")(extendedConfigPath)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (typeAcquisition != null) __obj.updateDynamic("typeAcquisition")(typeAcquisition)
+    val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any])
+    if (extendedConfigPath != null) __obj.updateDynamic("extendedConfigPath")(extendedConfigPath.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (typeAcquisition != null) __obj.updateDynamic("typeAcquisition")(typeAcquisition.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParsedTsconfig]
   }
 }

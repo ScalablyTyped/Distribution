@@ -12,8 +12,8 @@ trait SourceProps extends js.Object {
 object SourceProps {
   @scala.inline
   def apply(src: String, `type`: String): SourceProps = {
-    val __obj = js.Dynamic.literal(src = src)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceProps]
   }
 }

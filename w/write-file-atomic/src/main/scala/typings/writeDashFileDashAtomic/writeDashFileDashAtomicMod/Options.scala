@@ -21,9 +21,9 @@ object Options {
     mode: Int | Double = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (chown != null) __obj.updateDynamic("chown")(chown)
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
-    if (!js.isUndefined(fsync)) __obj.updateDynamic("fsync")(fsync)
+    if (chown != null) __obj.updateDynamic("chown")(chown.asInstanceOf[js.Any])
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    if (!js.isUndefined(fsync)) __obj.updateDynamic("fsync")(fsync.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

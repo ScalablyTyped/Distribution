@@ -1,6 +1,6 @@
 package typings.chromeDashApps.chrome.vpnProvider
 
-import typings.chromeDashApps.chromeDashAppsStrings.connected
+import typings.chromeDashApps.chromeDashAppsStrings.connected_
 import typings.chromeDashApps.chromeDashAppsStrings.failure
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.vpnProvider.VpnConnectionState")
 @js.native
 object VpnConnectionState extends js.Object {
-  var CONNECTED: connected = js.native
+  var CONNECTED: connected_ = js.native
   var FAILURE: failure = js.native
 }
 

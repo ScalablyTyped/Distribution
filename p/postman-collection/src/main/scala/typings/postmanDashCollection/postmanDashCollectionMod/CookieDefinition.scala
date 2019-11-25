@@ -35,16 +35,16 @@ object CookieDefinition {
     session: js.UndefOr[Boolean] = js.undefined,
     value: String = null
   ): CookieDefinition = {
-    val __obj = js.Dynamic.literal(domain = domain, path = path)
+    val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
-    if (!js.isUndefined(hostOnly)) __obj.updateDynamic("hostOnly")(hostOnly)
-    if (!js.isUndefined(httpOnly)) __obj.updateDynamic("httpOnly")(httpOnly)
-    if (key != null) __obj.updateDynamic("key")(key)
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
+    if (!js.isUndefined(hostOnly)) __obj.updateDynamic("hostOnly")(hostOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(httpOnly)) __obj.updateDynamic("httpOnly")(httpOnly.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
-    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure)
-    if (!js.isUndefined(session)) __obj.updateDynamic("session")(session)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
+    if (!js.isUndefined(session)) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CookieDefinition]
   }
 }

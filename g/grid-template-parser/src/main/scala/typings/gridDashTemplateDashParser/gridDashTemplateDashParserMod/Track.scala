@@ -13,7 +13,7 @@ trait Track extends js.Object {
 object Track {
   @scala.inline
   def apply(end: Double, span: Double, start: Double): Track = {
-    val __obj = js.Dynamic.literal(end = end, span = span, start = start)
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Track]
   }

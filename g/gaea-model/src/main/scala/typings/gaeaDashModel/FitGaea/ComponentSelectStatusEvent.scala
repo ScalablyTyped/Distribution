@@ -12,7 +12,7 @@ trait ComponentSelectStatusEvent extends js.Object {
 object ComponentSelectStatusEvent {
   @scala.inline
   def apply(mapUniqueKey: String, selected: Boolean): ComponentSelectStatusEvent = {
-    val __obj = js.Dynamic.literal(mapUniqueKey = mapUniqueKey, selected = selected)
+    val __obj = js.Dynamic.literal(mapUniqueKey = mapUniqueKey.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ComponentSelectStatusEvent]
   }

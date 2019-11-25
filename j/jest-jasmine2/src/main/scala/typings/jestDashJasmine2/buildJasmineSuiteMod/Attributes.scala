@@ -22,9 +22,9 @@ object Attributes {
     parentSuite: Suite = null,
     throwOnExpectationFailure: js.UndefOr[Boolean] = js.undefined
   ): Attributes = {
-    val __obj = js.Dynamic.literal(description = description, getTestPath = js.Any.fromFunction0(getTestPath), id = id)
-    if (parentSuite != null) __obj.updateDynamic("parentSuite")(parentSuite)
-    if (!js.isUndefined(throwOnExpectationFailure)) __obj.updateDynamic("throwOnExpectationFailure")(throwOnExpectationFailure)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], getTestPath = js.Any.fromFunction0(getTestPath), id = id.asInstanceOf[js.Any])
+    if (parentSuite != null) __obj.updateDynamic("parentSuite")(parentSuite.asInstanceOf[js.Any])
+    if (!js.isUndefined(throwOnExpectationFailure)) __obj.updateDynamic("throwOnExpectationFailure")(throwOnExpectationFailure.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attributes]
   }
 }

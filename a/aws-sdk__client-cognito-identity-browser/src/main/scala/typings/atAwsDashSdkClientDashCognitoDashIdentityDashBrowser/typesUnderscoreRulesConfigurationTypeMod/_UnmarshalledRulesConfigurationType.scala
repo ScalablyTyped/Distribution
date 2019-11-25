@@ -16,7 +16,7 @@ trait _UnmarshalledRulesConfigurationType extends _RulesConfigurationType {
 object _UnmarshalledRulesConfigurationType {
   @scala.inline
   def apply(Rules: js.Array[_UnmarshalledMappingRule]): _UnmarshalledRulesConfigurationType = {
-    val __obj = js.Dynamic.literal(Rules = Rules)
+    val __obj = js.Dynamic.literal(Rules = Rules.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_UnmarshalledRulesConfigurationType]
   }

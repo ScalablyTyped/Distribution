@@ -76,7 +76,7 @@ object distUtilMod extends js.Object {
   def getArrayFromDType_int32(dtype: int32, size: Double): Int32Array = js.native
   @JSName("getArrayFromDType")
   def getArrayFromDType_string(dtype: string, size: Double): js.Array[String] = js.native
-  def getTypedArrayFromDType[D /* <: NumericDataType */](dtype: D, size: Double): /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.DataTypeMap[D] */ js.Any = js.native
+  def getTypedArrayFromDType[D /* <: NumericDataType */](dtype: D, size: Double): /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.DataTypeMap[D] */ js.Any = js.native
   def hasEncodingLoss(oldType: DataType, newType: DataType): Boolean = js.native
   def inferDtype(values: TensorLike): DataType = js.native
   def inferFromImplicitShape(shape: js.Array[Double], size: Double): js.Array[Double] = js.native

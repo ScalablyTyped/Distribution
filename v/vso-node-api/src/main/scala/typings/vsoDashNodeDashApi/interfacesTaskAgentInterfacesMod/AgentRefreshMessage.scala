@@ -13,7 +13,7 @@ trait AgentRefreshMessage extends js.Object {
 object AgentRefreshMessage {
   @scala.inline
   def apply(agentId: Double, targetVersion: String, timeout: js.Any): AgentRefreshMessage = {
-    val __obj = js.Dynamic.literal(agentId = agentId, targetVersion = targetVersion, timeout = timeout)
+    val __obj = js.Dynamic.literal(agentId = agentId.asInstanceOf[js.Any], targetVersion = targetVersion.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AgentRefreshMessage]
   }

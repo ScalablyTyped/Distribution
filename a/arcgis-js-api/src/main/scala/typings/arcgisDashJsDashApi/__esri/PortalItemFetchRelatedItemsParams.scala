@@ -30,8 +30,8 @@ object PortalItemFetchRelatedItemsParams {
     relationshipType: String,
     direction: String = null
   ): PortalItemFetchRelatedItemsParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), relationshipType = relationshipType)
-    if (direction != null) __obj.updateDynamic("direction")(direction)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), relationshipType = relationshipType.asInstanceOf[js.Any])
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     __obj.asInstanceOf[PortalItemFetchRelatedItemsParams]
   }
 }

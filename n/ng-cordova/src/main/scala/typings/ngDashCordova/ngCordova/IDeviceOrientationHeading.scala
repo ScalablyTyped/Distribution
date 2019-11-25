@@ -19,7 +19,7 @@ object IDeviceOrientationHeading {
     timestamp: Int | Double = null,
     trueHeading: Int | Double = null
   ): IDeviceOrientationHeading = {
-    val __obj = js.Dynamic.literal(magneticHeading = magneticHeading)
+    val __obj = js.Dynamic.literal(magneticHeading = magneticHeading.asInstanceOf[js.Any])
     if (headingAccuracy != null) __obj.updateDynamic("headingAccuracy")(headingAccuracy.asInstanceOf[js.Any])
     if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
     if (trueHeading != null) __obj.updateDynamic("trueHeading")(trueHeading.asInstanceOf[js.Any])

@@ -12,7 +12,7 @@ trait Anon_DeferUpdates extends js.Object {
 object Anon_DeferUpdates {
   @scala.inline
   def apply(deferUpdates: Boolean, useOnlyNativeEvents: Boolean): Anon_DeferUpdates = {
-    val __obj = js.Dynamic.literal(deferUpdates = deferUpdates, useOnlyNativeEvents = useOnlyNativeEvents)
+    val __obj = js.Dynamic.literal(deferUpdates = deferUpdates.asInstanceOf[js.Any], useOnlyNativeEvents = useOnlyNativeEvents.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DeferUpdates]
   }

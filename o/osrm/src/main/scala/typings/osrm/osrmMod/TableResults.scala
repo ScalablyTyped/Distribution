@@ -17,7 +17,7 @@ object TableResults {
     durations: js.Array[js.Array[Duration]],
     sources: js.Array[Waypoint]
   ): TableResults = {
-    val __obj = js.Dynamic.literal(destinations = destinations, durations = durations, sources = sources)
+    val __obj = js.Dynamic.literal(destinations = destinations.asInstanceOf[js.Any], durations = durations.asInstanceOf[js.Any], sources = sources.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TableResults]
   }

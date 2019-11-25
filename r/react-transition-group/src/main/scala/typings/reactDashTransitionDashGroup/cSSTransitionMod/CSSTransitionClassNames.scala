@@ -30,15 +30,15 @@ object CSSTransitionClassNames {
     exitDone: String = null
   ): CSSTransitionClassNames = {
     val __obj = js.Dynamic.literal()
-    if (appear != null) __obj.updateDynamic("appear")(appear)
-    if (appearActive != null) __obj.updateDynamic("appearActive")(appearActive)
-    if (appearDone != null) __obj.updateDynamic("appearDone")(appearDone)
-    if (enter != null) __obj.updateDynamic("enter")(enter)
-    if (enterActive != null) __obj.updateDynamic("enterActive")(enterActive)
-    if (enterDone != null) __obj.updateDynamic("enterDone")(enterDone)
-    if (exit != null) __obj.updateDynamic("exit")(exit)
-    if (exitActive != null) __obj.updateDynamic("exitActive")(exitActive)
-    if (exitDone != null) __obj.updateDynamic("exitDone")(exitDone)
+    if (appear != null) __obj.updateDynamic("appear")(appear.asInstanceOf[js.Any])
+    if (appearActive != null) __obj.updateDynamic("appearActive")(appearActive.asInstanceOf[js.Any])
+    if (appearDone != null) __obj.updateDynamic("appearDone")(appearDone.asInstanceOf[js.Any])
+    if (enter != null) __obj.updateDynamic("enter")(enter.asInstanceOf[js.Any])
+    if (enterActive != null) __obj.updateDynamic("enterActive")(enterActive.asInstanceOf[js.Any])
+    if (enterDone != null) __obj.updateDynamic("enterDone")(enterDone.asInstanceOf[js.Any])
+    if (exit != null) __obj.updateDynamic("exit")(exit.asInstanceOf[js.Any])
+    if (exitActive != null) __obj.updateDynamic("exitActive")(exitActive.asInstanceOf[js.Any])
+    if (exitDone != null) __obj.updateDynamic("exitDone")(exitDone.asInstanceOf[js.Any])
     __obj.asInstanceOf[CSSTransitionClassNames]
   }
 }

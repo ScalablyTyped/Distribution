@@ -441,7 +441,7 @@ package object sequelizeMod {
     *
     * @see Sequelize.define
     */
-  type DefineModelAttributes[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type DefineModelAttributes[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: string | sequelize.sequelize.DataTypeAbstract | sequelize.sequelize.DefineAttributeColumnOptions}
     */ typings.sequelize.sequelizeStrings.DefineModelAttributes with js.Any
   /**
@@ -872,7 +872,7 @@ package object sequelizeMod {
     * Logic of where statement
     */
   type WhereLogic = Partial[Anon_]
-  type WhereOptions[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type WhereOptions[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? sequelize.sequelize.Primitives | std.Array<sequelize.sequelize.Primitives> | sequelize.sequelize.WhereLogic | T[P] extends sequelize.sequelize.Primitives? null : / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias sequelize.sequelize.WhereOptions<T[P]> * / object | sequelize.sequelize.col | sequelize.sequelize.and | sequelize.sequelize.or | sequelize.sequelize.WhereGeometryOptions | sequelize.sequelize.WhereNested | sequelize.sequelize.where | null}
     */ typings.sequelize.sequelizeStrings.WhereOptions with T
 }

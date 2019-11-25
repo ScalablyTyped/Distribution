@@ -32,14 +32,14 @@ object PromptQuestionCheckbox {
     validate: (/* input */ js.Any, /* answers */ js.UndefOr[Answers]) => Boolean | String | (js.Promise[Boolean | String]) = null,
     when: AsyncDynamicQuestionProperty[Boolean, Answers] = null
   ): PromptQuestionCheckbox = {
-    val __obj = js.Dynamic.literal(message = message)
-    __obj.updateDynamic("type")(`type`)
-    if (default != null) __obj.updateDynamic("default")(default)
-    if (fallback != null) __obj.updateDynamic("fallback")(fallback)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (fallback != null) __obj.updateDynamic("fallback")(fallback.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
-    if (suffix != null) __obj.updateDynamic("suffix")(suffix)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
     if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction2(validate))
     if (when != null) __obj.updateDynamic("when")(when.asInstanceOf[js.Any])
     __obj.asInstanceOf[PromptQuestionCheckbox]

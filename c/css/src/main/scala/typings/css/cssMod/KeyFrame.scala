@@ -22,11 +22,11 @@ object KeyFrame {
     values: js.Array[String] = null
   ): KeyFrame = {
     val __obj = js.Dynamic.literal()
-    if (declarations != null) __obj.updateDynamic("declarations")(declarations)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (declarations != null) __obj.updateDynamic("declarations")(declarations.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyFrame]
   }
 }

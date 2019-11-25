@@ -18,9 +18,9 @@ object Anon_LeadingMaxWait {
     trailing: js.UndefOr[Boolean] = js.undefined
   ): Anon_LeadingMaxWait = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(leading)) __obj.updateDynamic("leading")(leading)
+    if (!js.isUndefined(leading)) __obj.updateDynamic("leading")(leading.asInstanceOf[js.Any])
     if (maxWait != null) __obj.updateDynamic("maxWait")(maxWait.asInstanceOf[js.Any])
-    if (!js.isUndefined(trailing)) __obj.updateDynamic("trailing")(trailing)
+    if (!js.isUndefined(trailing)) __obj.updateDynamic("trailing")(trailing.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_LeadingMaxWait]
   }
 }

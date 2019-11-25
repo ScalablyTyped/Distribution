@@ -22,8 +22,8 @@ object MetagameConfig {
   ): MetagameConfig = {
     val __obj = js.Dynamic.literal()
     if (currentVersion != null) __obj.updateDynamic("currentVersion")(currentVersion.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (playerLevels != null) __obj.updateDynamic("playerLevels")(playerLevels)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (playerLevels != null) __obj.updateDynamic("playerLevels")(playerLevels.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetagameConfig]
   }
 }

@@ -37,11 +37,11 @@ object QuestMilestone {
     state: String = null
   ): QuestMilestone = {
     val __obj = js.Dynamic.literal()
-    if (completionRewardData != null) __obj.updateDynamic("completionRewardData")(completionRewardData)
-    if (criteria != null) __obj.updateDynamic("criteria")(criteria)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (completionRewardData != null) __obj.updateDynamic("completionRewardData")(completionRewardData.asInstanceOf[js.Any])
+    if (criteria != null) __obj.updateDynamic("criteria")(criteria.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuestMilestone]
   }
 }

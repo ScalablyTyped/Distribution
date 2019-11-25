@@ -26,7 +26,7 @@ object Anon_ColumnFilenameLeft {
     op: String,
     right: Expression
   ): Anon_ColumnFilenameLeft = {
-    val __obj = js.Dynamic.literal(__type = __type, column = column, filename = filename, left = left, lineno = lineno, op = op, right = right)
+    val __obj = js.Dynamic.literal(__type = __type.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], lineno = lineno.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ColumnFilenameLeft]
   }

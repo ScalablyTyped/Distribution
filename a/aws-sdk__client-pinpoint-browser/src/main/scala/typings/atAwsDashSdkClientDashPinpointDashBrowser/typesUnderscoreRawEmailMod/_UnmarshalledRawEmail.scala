@@ -17,7 +17,7 @@ object _UnmarshalledRawEmail {
   @scala.inline
   def apply(Data: Uint8Array = null): _UnmarshalledRawEmail = {
     val __obj = js.Dynamic.literal()
-    if (Data != null) __obj.updateDynamic("Data")(Data)
+    if (Data != null) __obj.updateDynamic("Data")(Data.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledRawEmail]
   }
 }

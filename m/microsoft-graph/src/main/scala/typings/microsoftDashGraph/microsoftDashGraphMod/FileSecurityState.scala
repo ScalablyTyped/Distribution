@@ -22,10 +22,10 @@ object FileSecurityState {
   @scala.inline
   def apply(fileHash: FileHash = null, name: String = null, path: String = null, riskScore: String = null): FileSecurityState = {
     val __obj = js.Dynamic.literal()
-    if (fileHash != null) __obj.updateDynamic("fileHash")(fileHash)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (riskScore != null) __obj.updateDynamic("riskScore")(riskScore)
+    if (fileHash != null) __obj.updateDynamic("fileHash")(fileHash.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (riskScore != null) __obj.updateDynamic("riskScore")(riskScore.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileSecurityState]
   }
 }

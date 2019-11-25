@@ -13,7 +13,7 @@ trait Anon_1EmptyInfiniteNonEmptyAny[Holder /* <: js.Array[js.Array[_]] */, Type
 object Anon_1EmptyInfiniteNonEmptyAny {
   @scala.inline
   def apply[Holder /* <: js.Array[js.Array[_]] */, Types /* <: js.Array[_] */](empty: Holder, infinite: js.Any, nonEmpty: js.Any): Anon_1EmptyInfiniteNonEmptyAny[Holder, Types] = {
-    val __obj = js.Dynamic.literal(empty = empty.asInstanceOf[js.Any], infinite = infinite, nonEmpty = nonEmpty)
+    val __obj = js.Dynamic.literal(empty = empty.asInstanceOf[js.Any], infinite = infinite.asInstanceOf[js.Any], nonEmpty = nonEmpty.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_1EmptyInfiniteNonEmptyAny[Holder, Types]]
   }

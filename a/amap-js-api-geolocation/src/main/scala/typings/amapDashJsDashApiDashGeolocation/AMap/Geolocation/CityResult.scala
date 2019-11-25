@@ -67,7 +67,7 @@ object CityResult {
     province: String,
     status: `1`
   ): CityResult = {
-    val __obj = js.Dynamic.literal(adcode = adcode, bounds = bounds, center = center, city = city, citycode = citycode, country = country, info = info, isConverted = isConverted, message = message, province = province, status = status)
+    val __obj = js.Dynamic.literal(adcode = adcode.asInstanceOf[js.Any], bounds = bounds.asInstanceOf[js.Any], center = center.asInstanceOf[js.Any], city = city.asInstanceOf[js.Any], citycode = citycode.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], isConverted = isConverted.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], province = province.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CityResult]
   }

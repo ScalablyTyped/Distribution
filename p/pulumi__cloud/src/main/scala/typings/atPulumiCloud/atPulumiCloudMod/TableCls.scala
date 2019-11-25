@@ -1,7 +1,6 @@
 package typings.atPulumiCloud.atPulumiCloudMod
 
 import typings.atPulumiCloud.tableMod.PrimaryKeyType
-import typings.atPulumiCloud.tableMod.Table
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.resourceMod.ResourceOptions
 import scala.scalajs.js
@@ -10,7 +9,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@pulumi/cloud", "Table")
 @js.native
-class TableCls protected () extends Table {
+class TableCls protected ()
+  extends typings.atPulumiCloud.tableMod.Table {
   /**
     * Creates a new Table.
     *

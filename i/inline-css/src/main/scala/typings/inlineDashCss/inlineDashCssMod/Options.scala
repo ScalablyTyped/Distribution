@@ -29,15 +29,15 @@ object Options {
     removeLinkTags: js.UndefOr[Boolean] = js.undefined,
     removeStyleTags: js.UndefOr[Boolean] = js.undefined
   ): Options = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (!js.isUndefined(applyLinkTags)) __obj.updateDynamic("applyLinkTags")(applyLinkTags)
-    if (!js.isUndefined(applyStyleTags)) __obj.updateDynamic("applyStyleTags")(applyStyleTags)
-    if (!js.isUndefined(applyTableAttributes)) __obj.updateDynamic("applyTableAttributes")(applyTableAttributes)
-    if (!js.isUndefined(applyWidthAttributes)) __obj.updateDynamic("applyWidthAttributes")(applyWidthAttributes)
-    if (extraCss != null) __obj.updateDynamic("extraCss")(extraCss)
-    if (!js.isUndefined(preserveMediaQueries)) __obj.updateDynamic("preserveMediaQueries")(preserveMediaQueries)
-    if (!js.isUndefined(removeLinkTags)) __obj.updateDynamic("removeLinkTags")(removeLinkTags)
-    if (!js.isUndefined(removeStyleTags)) __obj.updateDynamic("removeStyleTags")(removeStyleTags)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (!js.isUndefined(applyLinkTags)) __obj.updateDynamic("applyLinkTags")(applyLinkTags.asInstanceOf[js.Any])
+    if (!js.isUndefined(applyStyleTags)) __obj.updateDynamic("applyStyleTags")(applyStyleTags.asInstanceOf[js.Any])
+    if (!js.isUndefined(applyTableAttributes)) __obj.updateDynamic("applyTableAttributes")(applyTableAttributes.asInstanceOf[js.Any])
+    if (!js.isUndefined(applyWidthAttributes)) __obj.updateDynamic("applyWidthAttributes")(applyWidthAttributes.asInstanceOf[js.Any])
+    if (extraCss != null) __obj.updateDynamic("extraCss")(extraCss.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveMediaQueries)) __obj.updateDynamic("preserveMediaQueries")(preserveMediaQueries.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeLinkTags)) __obj.updateDynamic("removeLinkTags")(removeLinkTags.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeStyleTags)) __obj.updateDynamic("removeStyleTags")(removeStyleTags.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

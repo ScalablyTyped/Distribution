@@ -20,10 +20,10 @@ object CreateLineRequest {
     objectId: String = null
   ): CreateLineRequest = {
     val __obj = js.Dynamic.literal()
-    if (category != null) __obj.updateDynamic("category")(category)
-    if (elementProperties != null) __obj.updateDynamic("elementProperties")(elementProperties)
-    if (lineCategory != null) __obj.updateDynamic("lineCategory")(lineCategory)
-    if (objectId != null) __obj.updateDynamic("objectId")(objectId)
+    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
+    if (elementProperties != null) __obj.updateDynamic("elementProperties")(elementProperties.asInstanceOf[js.Any])
+    if (lineCategory != null) __obj.updateDynamic("lineCategory")(lineCategory.asInstanceOf[js.Any])
+    if (objectId != null) __obj.updateDynamic("objectId")(objectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateLineRequest]
   }
 }

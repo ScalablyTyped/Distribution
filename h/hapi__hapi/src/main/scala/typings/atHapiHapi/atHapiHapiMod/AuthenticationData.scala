@@ -12,8 +12,8 @@ trait AuthenticationData extends js.Object {
 object AuthenticationData {
   @scala.inline
   def apply(credentials: AuthCredentials, artifacts: js.Object = null): AuthenticationData = {
-    val __obj = js.Dynamic.literal(credentials = credentials)
-    if (artifacts != null) __obj.updateDynamic("artifacts")(artifacts)
+    val __obj = js.Dynamic.literal(credentials = credentials.asInstanceOf[js.Any])
+    if (artifacts != null) __obj.updateDynamic("artifacts")(artifacts.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthenticationData]
   }
 }

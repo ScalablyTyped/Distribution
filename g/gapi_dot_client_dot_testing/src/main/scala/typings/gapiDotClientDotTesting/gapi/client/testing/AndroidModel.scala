@@ -96,18 +96,18 @@ object AndroidModel {
     tags: js.Array[String] = null
   ): AndroidModel = {
     val __obj = js.Dynamic.literal()
-    if (brand != null) __obj.updateDynamic("brand")(brand)
-    if (codename != null) __obj.updateDynamic("codename")(codename)
-    if (form != null) __obj.updateDynamic("form")(form)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (manufacturer != null) __obj.updateDynamic("manufacturer")(manufacturer)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (brand != null) __obj.updateDynamic("brand")(brand.asInstanceOf[js.Any])
+    if (codename != null) __obj.updateDynamic("codename")(codename.asInstanceOf[js.Any])
+    if (form != null) __obj.updateDynamic("form")(form.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (manufacturer != null) __obj.updateDynamic("manufacturer")(manufacturer.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (screenDensity != null) __obj.updateDynamic("screenDensity")(screenDensity.asInstanceOf[js.Any])
     if (screenX != null) __obj.updateDynamic("screenX")(screenX.asInstanceOf[js.Any])
     if (screenY != null) __obj.updateDynamic("screenY")(screenY.asInstanceOf[js.Any])
-    if (supportedAbis != null) __obj.updateDynamic("supportedAbis")(supportedAbis)
-    if (supportedVersionIds != null) __obj.updateDynamic("supportedVersionIds")(supportedVersionIds)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (supportedAbis != null) __obj.updateDynamic("supportedAbis")(supportedAbis.asInstanceOf[js.Any])
+    if (supportedVersionIds != null) __obj.updateDynamic("supportedVersionIds")(supportedVersionIds.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[AndroidModel]
   }
 }

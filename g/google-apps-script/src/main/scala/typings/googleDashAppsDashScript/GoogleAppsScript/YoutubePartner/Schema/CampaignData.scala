@@ -22,11 +22,11 @@ object CampaignData {
     startTime: String = null
   ): CampaignData = {
     val __obj = js.Dynamic.literal()
-    if (campaignSource != null) __obj.updateDynamic("campaignSource")(campaignSource)
-    if (expireTime != null) __obj.updateDynamic("expireTime")(expireTime)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (promotedContent != null) __obj.updateDynamic("promotedContent")(promotedContent)
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
+    if (campaignSource != null) __obj.updateDynamic("campaignSource")(campaignSource.asInstanceOf[js.Any])
+    if (expireTime != null) __obj.updateDynamic("expireTime")(expireTime.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (promotedContent != null) __obj.updateDynamic("promotedContent")(promotedContent.asInstanceOf[js.Any])
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[CampaignData]
   }
 }

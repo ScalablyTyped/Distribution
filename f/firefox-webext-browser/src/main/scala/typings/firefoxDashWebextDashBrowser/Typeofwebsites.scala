@@ -70,9 +70,9 @@ object Typeofwebsites {
     protectedContentEnabled: Setting = null,
     thirdPartyCookiesAllowed: Setting = null
   ): Typeofwebsites = {
-    val __obj = js.Dynamic.literal(cookieConfig = cookieConfig, firstPartyIsolate = firstPartyIsolate, hyperlinkAuditingEnabled = hyperlinkAuditingEnabled, referrersEnabled = referrersEnabled, resistFingerprinting = resistFingerprinting, trackingProtectionMode = trackingProtectionMode)
-    if (protectedContentEnabled != null) __obj.updateDynamic("protectedContentEnabled")(protectedContentEnabled)
-    if (thirdPartyCookiesAllowed != null) __obj.updateDynamic("thirdPartyCookiesAllowed")(thirdPartyCookiesAllowed)
+    val __obj = js.Dynamic.literal(cookieConfig = cookieConfig.asInstanceOf[js.Any], firstPartyIsolate = firstPartyIsolate.asInstanceOf[js.Any], hyperlinkAuditingEnabled = hyperlinkAuditingEnabled.asInstanceOf[js.Any], referrersEnabled = referrersEnabled.asInstanceOf[js.Any], resistFingerprinting = resistFingerprinting.asInstanceOf[js.Any], trackingProtectionMode = trackingProtectionMode.asInstanceOf[js.Any])
+    if (protectedContentEnabled != null) __obj.updateDynamic("protectedContentEnabled")(protectedContentEnabled.asInstanceOf[js.Any])
+    if (thirdPartyCookiesAllowed != null) __obj.updateDynamic("thirdPartyCookiesAllowed")(thirdPartyCookiesAllowed.asInstanceOf[js.Any])
     __obj.asInstanceOf[Typeofwebsites]
   }
 }

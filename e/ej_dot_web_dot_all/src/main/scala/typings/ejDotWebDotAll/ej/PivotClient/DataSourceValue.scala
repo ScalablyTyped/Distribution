@@ -57,15 +57,15 @@ object DataSourceValue {
     summaryType: SummaryType | String = null
   ): DataSourceValue = {
     val __obj = js.Dynamic.literal()
-    if (axis != null) __obj.updateDynamic("axis")(axis)
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
-    if (fieldCaption != null) __obj.updateDynamic("fieldCaption")(fieldCaption)
-    if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (formatString != null) __obj.updateDynamic("formatString")(formatString)
-    if (formula != null) __obj.updateDynamic("formula")(formula)
-    if (!js.isUndefined(isCalculatedField)) __obj.updateDynamic("isCalculatedField")(isCalculatedField)
-    if (measures != null) __obj.updateDynamic("measures")(measures)
+    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
+    if (fieldCaption != null) __obj.updateDynamic("fieldCaption")(fieldCaption.asInstanceOf[js.Any])
+    if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (formatString != null) __obj.updateDynamic("formatString")(formatString.asInstanceOf[js.Any])
+    if (formula != null) __obj.updateDynamic("formula")(formula.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCalculatedField)) __obj.updateDynamic("isCalculatedField")(isCalculatedField.asInstanceOf[js.Any])
+    if (measures != null) __obj.updateDynamic("measures")(measures.asInstanceOf[js.Any])
     if (summaryType != null) __obj.updateDynamic("summaryType")(summaryType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceValue]
   }

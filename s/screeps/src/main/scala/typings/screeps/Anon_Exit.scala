@@ -12,7 +12,7 @@ trait Anon_Exit extends js.Object {
 object Anon_Exit {
   @scala.inline
   def apply(exit: ExitConstant, room: String): Anon_Exit = {
-    val __obj = js.Dynamic.literal(exit = exit.asInstanceOf[js.Any], room = room)
+    val __obj = js.Dynamic.literal(exit = exit.asInstanceOf[js.Any], room = room.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Exit]
   }

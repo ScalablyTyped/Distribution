@@ -51,7 +51,7 @@ object PublisherLinks {
     support: Link,
     twitter: Link
   ): PublisherLinks = {
-    val __obj = js.Dynamic.literal(company = company, fallbackLogo = fallbackLogo, linkedIn = linkedIn, logo = logo, profile = profile, sourceCode = sourceCode, support = support, twitter = twitter)
+    val __obj = js.Dynamic.literal(company = company.asInstanceOf[js.Any], fallbackLogo = fallbackLogo.asInstanceOf[js.Any], linkedIn = linkedIn.asInstanceOf[js.Any], logo = logo.asInstanceOf[js.Any], profile = profile.asInstanceOf[js.Any], sourceCode = sourceCode.asInstanceOf[js.Any], support = support.asInstanceOf[js.Any], twitter = twitter.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PublisherLinks]
   }

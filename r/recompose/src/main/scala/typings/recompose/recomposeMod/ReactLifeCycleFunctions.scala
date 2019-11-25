@@ -125,17 +125,17 @@ object ReactLifeCycleFunctions {
     ] = null
   ): ReactLifeCycleFunctions[TProps, TState, TInstance] = {
     val __obj = js.Dynamic.literal()
-    if (UNSAFE_componentWillMount != null) __obj.updateDynamic("UNSAFE_componentWillMount")(UNSAFE_componentWillMount)
-    if (UNSAFE_componentWillReceiveProps != null) __obj.updateDynamic("UNSAFE_componentWillReceiveProps")(UNSAFE_componentWillReceiveProps)
-    if (UNSAFE_componentWillUpdate != null) __obj.updateDynamic("UNSAFE_componentWillUpdate")(UNSAFE_componentWillUpdate)
-    if (componentDidCatch != null) __obj.updateDynamic("componentDidCatch")(componentDidCatch)
-    if (componentDidMount != null) __obj.updateDynamic("componentDidMount")(componentDidMount)
-    if (componentDidUpdate != null) __obj.updateDynamic("componentDidUpdate")(componentDidUpdate)
-    if (componentWillMount != null) __obj.updateDynamic("componentWillMount")(componentWillMount)
-    if (componentWillReceiveProps != null) __obj.updateDynamic("componentWillReceiveProps")(componentWillReceiveProps)
-    if (componentWillUnmount != null) __obj.updateDynamic("componentWillUnmount")(componentWillUnmount)
-    if (componentWillUpdate != null) __obj.updateDynamic("componentWillUpdate")(componentWillUpdate)
-    if (shouldComponentUpdate != null) __obj.updateDynamic("shouldComponentUpdate")(shouldComponentUpdate)
+    if (UNSAFE_componentWillMount != null) __obj.updateDynamic("UNSAFE_componentWillMount")(UNSAFE_componentWillMount.asInstanceOf[js.Any])
+    if (UNSAFE_componentWillReceiveProps != null) __obj.updateDynamic("UNSAFE_componentWillReceiveProps")(UNSAFE_componentWillReceiveProps.asInstanceOf[js.Any])
+    if (UNSAFE_componentWillUpdate != null) __obj.updateDynamic("UNSAFE_componentWillUpdate")(UNSAFE_componentWillUpdate.asInstanceOf[js.Any])
+    if (componentDidCatch != null) __obj.updateDynamic("componentDidCatch")(componentDidCatch.asInstanceOf[js.Any])
+    if (componentDidMount != null) __obj.updateDynamic("componentDidMount")(componentDidMount.asInstanceOf[js.Any])
+    if (componentDidUpdate != null) __obj.updateDynamic("componentDidUpdate")(componentDidUpdate.asInstanceOf[js.Any])
+    if (componentWillMount != null) __obj.updateDynamic("componentWillMount")(componentWillMount.asInstanceOf[js.Any])
+    if (componentWillReceiveProps != null) __obj.updateDynamic("componentWillReceiveProps")(componentWillReceiveProps.asInstanceOf[js.Any])
+    if (componentWillUnmount != null) __obj.updateDynamic("componentWillUnmount")(componentWillUnmount.asInstanceOf[js.Any])
+    if (componentWillUpdate != null) __obj.updateDynamic("componentWillUpdate")(componentWillUpdate.asInstanceOf[js.Any])
+    if (shouldComponentUpdate != null) __obj.updateDynamic("shouldComponentUpdate")(shouldComponentUpdate.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactLifeCycleFunctions[TProps, TState, TInstance]]
   }
 }

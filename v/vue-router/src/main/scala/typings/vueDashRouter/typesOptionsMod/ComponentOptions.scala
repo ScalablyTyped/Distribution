@@ -38,7 +38,7 @@ object ComponentOptions {
     if (beforeRouteEnter != null) __obj.updateDynamic("beforeRouteEnter")(js.Any.fromFunction3(beforeRouteEnter))
     if (beforeRouteLeave != null) __obj.updateDynamic("beforeRouteLeave")(js.Any.fromFunction3(beforeRouteLeave))
     if (beforeRouteUpdate != null) __obj.updateDynamic("beforeRouteUpdate")(js.Any.fromFunction3(beforeRouteUpdate))
-    if (router != null) __obj.updateDynamic("router")(router)
+    if (router != null) __obj.updateDynamic("router")(router.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentOptions[V]]
   }
 }

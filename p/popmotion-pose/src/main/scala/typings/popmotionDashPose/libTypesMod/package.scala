@@ -23,12 +23,12 @@ package object libTypesMod {
   import typings.tsDashEssentials.distTypesMod.Merge
 
   type AnimationDef = TransitionDefinition
-  type BoundingBox = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type BoundingBox = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in popmotion-pose.popmotion-pose/lib/types.BoundingBoxDimension ]: number}
     */ typings.popmotionDashPose.popmotionDashPoseStrings.BoundingBox with js.Any
   type CubicBezierArgs = js.Tuple4[Double, Double, Double, Double]
   type DecayDefinition = Anon_Decay with TransitionDefinitionCommonProps with DecayProps with NoEase
-  type DragBounds = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type DragBounds = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in popmotion-pose.popmotion-pose/lib/types.BoundingBoxDimension ]:? number | string}
     */ typings.popmotionDashPose.popmotionDashPoseStrings.DragBounds with js.Any
   /* Rewritten from type alias, can be one of: 

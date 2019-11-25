@@ -29,8 +29,8 @@ object ProcessCellForExportParams {
     `type`: String,
     value: js.Any
   ): ProcessCellForExportParams = {
-    val __obj = js.Dynamic.literal(api = api, column = column, columnApi = columnApi, context = context, node = node, value = value)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], columnApi = columnApi.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProcessCellForExportParams]
   }
 }

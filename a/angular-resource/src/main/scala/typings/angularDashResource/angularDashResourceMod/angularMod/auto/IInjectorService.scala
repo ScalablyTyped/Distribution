@@ -13,9 +13,9 @@ trait IInjectorService extends js.Object {
 
 object IInjectorService {
   @scala.inline
-  def apply(get_resource: DOLLARresource => IResourceService): IInjectorService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(js.Any.fromFunction1(get_resource))
+  def apply(get: DOLLARresource => IResourceService): IInjectorService = {
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
+  
     __obj.asInstanceOf[IInjectorService]
   }
 }

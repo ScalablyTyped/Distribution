@@ -14,8 +14,8 @@ trait DocumentChange extends js.Object {
 object DocumentChange {
   @scala.inline
   def apply(doc: QueryDocumentSnapshot, newIndex: Double, oldIndex: Double, `type`: DocumentChangeType): DocumentChange = {
-    val __obj = js.Dynamic.literal(doc = doc, newIndex = newIndex, oldIndex = oldIndex)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(doc = doc.asInstanceOf[js.Any], newIndex = newIndex.asInstanceOf[js.Any], oldIndex = oldIndex.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentChange]
   }
 }

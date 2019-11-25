@@ -26,7 +26,7 @@ object Progress {
     total: Double,
     `type`: `step-begin` | `step-end`
   ): Progress = {
-    val __obj = js.Dynamic.literal(current = current, status = status.asInstanceOf[js.Any], title = title, total = total)
+    val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Progress]
   }

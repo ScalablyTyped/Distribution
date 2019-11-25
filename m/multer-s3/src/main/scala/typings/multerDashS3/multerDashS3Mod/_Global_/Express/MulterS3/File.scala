@@ -41,7 +41,7 @@ object File {
     size: Double,
     storageClass: String
   ): File = {
-    val __obj = js.Dynamic.literal(acl = acl, bucket = bucket, buffer = buffer, contentDisposition = contentDisposition, contentType = contentType, destination = destination, encoding = encoding, etag = etag, fieldname = fieldname, filename = filename, key = key, location = location, metadata = metadata, mimetype = mimetype, originalname = originalname, path = path, serverSideEncryption = serverSideEncryption, size = size, storageClass = storageClass)
+    val __obj = js.Dynamic.literal(acl = acl.asInstanceOf[js.Any], bucket = bucket.asInstanceOf[js.Any], buffer = buffer.asInstanceOf[js.Any], contentDisposition = contentDisposition.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any], destination = destination.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any], etag = etag.asInstanceOf[js.Any], fieldname = fieldname.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], mimetype = mimetype.asInstanceOf[js.Any], originalname = originalname.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], serverSideEncryption = serverSideEncryption.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], storageClass = storageClass.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[File]
   }

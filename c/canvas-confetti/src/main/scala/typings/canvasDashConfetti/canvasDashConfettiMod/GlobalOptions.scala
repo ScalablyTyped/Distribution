@@ -11,7 +11,7 @@ trait GlobalOptions extends js.Object {
 object GlobalOptions {
   @scala.inline
   def apply(resize: Boolean): GlobalOptions = {
-    val __obj = js.Dynamic.literal(resize = resize)
+    val __obj = js.Dynamic.literal(resize = resize.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GlobalOptions]
   }

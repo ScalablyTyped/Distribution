@@ -19,8 +19,8 @@ object SearchVariantsResponse {
   @scala.inline
   def apply(nextPageToken: String = null, variants: js.Array[Variant] = null): SearchVariantsResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (variants != null) __obj.updateDynamic("variants")(variants)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (variants != null) __obj.updateDynamic("variants")(variants.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchVariantsResponse]
   }
 }

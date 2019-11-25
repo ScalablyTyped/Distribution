@@ -36,12 +36,12 @@ object SubTappConfig {
     isExclusiveView: js.UndefOr[Boolean] = js.undefined,
     replaceParent: js.UndefOr[Boolean] = js.undefined
   ): SubTappConfig = {
-    val __obj = js.Dynamic.literal(buttonName = buttonName, color = color, icon = icon, name = name, sortID = sortID, tappID = tappID, url = url)
-    if (!js.isUndefined(boldText)) __obj.updateDynamic("boldText")(boldText)
+    val __obj = js.Dynamic.literal(buttonName = buttonName.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], sortID = sortID.asInstanceOf[js.Any], tappID = tappID.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (!js.isUndefined(boldText)) __obj.updateDynamic("boldText")(boldText.asInstanceOf[js.Any])
     if (callbackURL != null) __obj.updateDynamic("callbackURL")(js.Any.fromFunction1(callbackURL))
-    if (colorText != null) __obj.updateDynamic("colorText")(colorText)
-    if (!js.isUndefined(isExclusiveView)) __obj.updateDynamic("isExclusiveView")(isExclusiveView)
-    if (!js.isUndefined(replaceParent)) __obj.updateDynamic("replaceParent")(replaceParent)
+    if (colorText != null) __obj.updateDynamic("colorText")(colorText.asInstanceOf[js.Any])
+    if (!js.isUndefined(isExclusiveView)) __obj.updateDynamic("isExclusiveView")(isExclusiveView.asInstanceOf[js.Any])
+    if (!js.isUndefined(replaceParent)) __obj.updateDynamic("replaceParent")(replaceParent.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubTappConfig]
   }
 }

@@ -22,14 +22,14 @@ import scala.scalajs.js.annotation._
 object IPeoplePickerItemSelectedProps {
   @scala.inline
   def apply(
-    IPickerItemProps: IPickerItemProps[IPersonaProps with Anon_ValidationState] = null,
+    IPickerItemProps: IPickerItemProps[IPersonaProps with Anon_ValidationState],
     styles: IStyleFunctionOrObject[IPeoplePickerItemSelectedStyleProps, IPeoplePickerItemSelectedStyles] = null,
     theme: ITheme = null
   ): IPeoplePickerItemSelectedProps = {
     val __obj = js.Dynamic.literal()
-    if (__obj != null) js.Dynamic.global.Object.assign(__obj, IPickerItemProps)
+    js.Dynamic.global.Object.assign(__obj, IPickerItemProps)
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPeoplePickerItemSelectedProps]
   }
 }

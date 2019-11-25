@@ -41,9 +41,9 @@ object IRatingConfig {
   ): IRatingConfig = {
     val __obj = js.Dynamic.literal()
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (stateOff != null) __obj.updateDynamic("stateOff")(stateOff)
-    if (stateOn != null) __obj.updateDynamic("stateOn")(stateOn)
-    if (titles != null) __obj.updateDynamic("titles")(titles)
+    if (stateOff != null) __obj.updateDynamic("stateOff")(stateOff.asInstanceOf[js.Any])
+    if (stateOn != null) __obj.updateDynamic("stateOn")(stateOn.asInstanceOf[js.Any])
+    if (titles != null) __obj.updateDynamic("titles")(titles.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRatingConfig]
   }
 }

@@ -15,7 +15,7 @@ object SeriesPieDataDragDropGuideBoxOptions {
   @scala.inline
   def apply(default: SeriesPieDataDragDropGuideBoxDefaultOptions = null): SeriesPieDataDragDropGuideBoxOptions = {
     val __obj = js.Dynamic.literal()
-    if (default != null) __obj.updateDynamic("default")(default)
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesPieDataDragDropGuideBoxOptions]
   }
 }

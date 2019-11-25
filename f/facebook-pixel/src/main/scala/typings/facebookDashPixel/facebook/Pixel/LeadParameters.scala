@@ -20,9 +20,9 @@ object LeadParameters {
     value: Int | Double = null
   ): LeadParameters = {
     val __obj = js.Dynamic.literal()
-    if (content_category != null) __obj.updateDynamic("content_category")(content_category)
-    if (content_name != null) __obj.updateDynamic("content_name")(content_name)
-    if (currency != null) __obj.updateDynamic("currency")(currency)
+    if (content_category != null) __obj.updateDynamic("content_category")(content_category.asInstanceOf[js.Any])
+    if (content_name != null) __obj.updateDynamic("content_name")(content_name.asInstanceOf[js.Any])
+    if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[LeadParameters]
   }

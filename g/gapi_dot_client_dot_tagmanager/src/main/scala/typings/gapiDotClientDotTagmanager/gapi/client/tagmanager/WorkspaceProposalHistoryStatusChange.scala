@@ -15,8 +15,8 @@ object WorkspaceProposalHistoryStatusChange {
   @scala.inline
   def apply(newStatus: String = null, oldStatus: String = null): WorkspaceProposalHistoryStatusChange = {
     val __obj = js.Dynamic.literal()
-    if (newStatus != null) __obj.updateDynamic("newStatus")(newStatus)
-    if (oldStatus != null) __obj.updateDynamic("oldStatus")(oldStatus)
+    if (newStatus != null) __obj.updateDynamic("newStatus")(newStatus.asInstanceOf[js.Any])
+    if (oldStatus != null) __obj.updateDynamic("oldStatus")(oldStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkspaceProposalHistoryStatusChange]
   }
 }

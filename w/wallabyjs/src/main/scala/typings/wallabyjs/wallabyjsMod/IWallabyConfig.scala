@@ -29,14 +29,14 @@ object IWallabyConfig {
     testFramework: String = null,
     workers: IWallabyWorkers = null
   ): IWallabyConfig = {
-    val __obj = js.Dynamic.literal(files = files, tests = tests)
-    if (compilers != null) __obj.updateDynamic("compilers")(compilers)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (env != null) __obj.updateDynamic("env")(env)
-    if (postprocessor != null) __obj.updateDynamic("postprocessor")(postprocessor)
-    if (preprocessors != null) __obj.updateDynamic("preprocessors")(preprocessors)
-    if (testFramework != null) __obj.updateDynamic("testFramework")(testFramework)
-    if (workers != null) __obj.updateDynamic("workers")(workers)
+    val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any], tests = tests.asInstanceOf[js.Any])
+    if (compilers != null) __obj.updateDynamic("compilers")(compilers.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
+    if (postprocessor != null) __obj.updateDynamic("postprocessor")(postprocessor.asInstanceOf[js.Any])
+    if (preprocessors != null) __obj.updateDynamic("preprocessors")(preprocessors.asInstanceOf[js.Any])
+    if (testFramework != null) __obj.updateDynamic("testFramework")(testFramework.asInstanceOf[js.Any])
+    if (workers != null) __obj.updateDynamic("workers")(workers.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWallabyConfig]
   }
 }

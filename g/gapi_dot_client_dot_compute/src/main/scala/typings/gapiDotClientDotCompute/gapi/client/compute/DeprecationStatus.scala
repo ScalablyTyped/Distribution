@@ -43,11 +43,11 @@ object DeprecationStatus {
     state: String = null
   ): DeprecationStatus = {
     val __obj = js.Dynamic.literal()
-    if (deleted != null) __obj.updateDynamic("deleted")(deleted)
-    if (deprecated != null) __obj.updateDynamic("deprecated")(deprecated)
-    if (obsolete != null) __obj.updateDynamic("obsolete")(obsolete)
-    if (replacement != null) __obj.updateDynamic("replacement")(replacement)
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (deleted != null) __obj.updateDynamic("deleted")(deleted.asInstanceOf[js.Any])
+    if (deprecated != null) __obj.updateDynamic("deprecated")(deprecated.asInstanceOf[js.Any])
+    if (obsolete != null) __obj.updateDynamic("obsolete")(obsolete.asInstanceOf[js.Any])
+    if (replacement != null) __obj.updateDynamic("replacement")(replacement.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeprecationStatus]
   }
 }

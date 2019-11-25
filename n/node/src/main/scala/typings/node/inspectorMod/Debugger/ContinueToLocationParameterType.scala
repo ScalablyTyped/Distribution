@@ -15,8 +15,8 @@ trait ContinueToLocationParameterType extends js.Object {
 object ContinueToLocationParameterType {
   @scala.inline
   def apply(location: Location, targetCallFrames: java.lang.String = null): ContinueToLocationParameterType = {
-    val __obj = js.Dynamic.literal(location = location)
-    if (targetCallFrames != null) __obj.updateDynamic("targetCallFrames")(targetCallFrames)
+    val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any])
+    if (targetCallFrames != null) __obj.updateDynamic("targetCallFrames")(targetCallFrames.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContinueToLocationParameterType]
   }
 }

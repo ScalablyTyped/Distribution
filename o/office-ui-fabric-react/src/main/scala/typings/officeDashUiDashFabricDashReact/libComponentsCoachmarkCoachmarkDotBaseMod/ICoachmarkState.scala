@@ -85,15 +85,15 @@ object ICoachmarkState {
     targetPosition: RectangleEdge = null,
     transformOrigin: String = null
   ): ICoachmarkState = {
-    val __obj = js.Dynamic.literal(entityInnerHostRect = entityInnerHostRect, isBeaconAnimating = isBeaconAnimating, isCollapsed = isCollapsed, isMeasured = isMeasured, isMeasuring = isMeasuring, isMouseInProximity = isMouseInProximity)
-    if (alertText != null) __obj.updateDynamic("alertText")(alertText)
-    if (beakBottom != null) __obj.updateDynamic("beakBottom")(beakBottom)
-    if (beakLeft != null) __obj.updateDynamic("beakLeft")(beakLeft)
-    if (beakRight != null) __obj.updateDynamic("beakRight")(beakRight)
-    if (beakTop != null) __obj.updateDynamic("beakTop")(beakTop)
-    if (targetAlignment != null) __obj.updateDynamic("targetAlignment")(targetAlignment)
-    if (targetPosition != null) __obj.updateDynamic("targetPosition")(targetPosition)
-    if (transformOrigin != null) __obj.updateDynamic("transformOrigin")(transformOrigin)
+    val __obj = js.Dynamic.literal(entityInnerHostRect = entityInnerHostRect.asInstanceOf[js.Any], isBeaconAnimating = isBeaconAnimating.asInstanceOf[js.Any], isCollapsed = isCollapsed.asInstanceOf[js.Any], isMeasured = isMeasured.asInstanceOf[js.Any], isMeasuring = isMeasuring.asInstanceOf[js.Any], isMouseInProximity = isMouseInProximity.asInstanceOf[js.Any])
+    if (alertText != null) __obj.updateDynamic("alertText")(alertText.asInstanceOf[js.Any])
+    if (beakBottom != null) __obj.updateDynamic("beakBottom")(beakBottom.asInstanceOf[js.Any])
+    if (beakLeft != null) __obj.updateDynamic("beakLeft")(beakLeft.asInstanceOf[js.Any])
+    if (beakRight != null) __obj.updateDynamic("beakRight")(beakRight.asInstanceOf[js.Any])
+    if (beakTop != null) __obj.updateDynamic("beakTop")(beakTop.asInstanceOf[js.Any])
+    if (targetAlignment != null) __obj.updateDynamic("targetAlignment")(targetAlignment.asInstanceOf[js.Any])
+    if (targetPosition != null) __obj.updateDynamic("targetPosition")(targetPosition.asInstanceOf[js.Any])
+    if (transformOrigin != null) __obj.updateDynamic("transformOrigin")(transformOrigin.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICoachmarkState]
   }
 }

@@ -26,9 +26,9 @@ object AltConfig {
     val __obj = js.Dynamic.literal()
     if (batchingFunction != null) __obj.updateDynamic("batchingFunction")(js.Any.fromFunction1(batchingFunction))
     if (deserialize != null) __obj.updateDynamic("deserialize")(js.Any.fromFunction1(deserialize))
-    if (dispatcher != null) __obj.updateDynamic("dispatcher")(dispatcher)
+    if (dispatcher != null) __obj.updateDynamic("dispatcher")(dispatcher.asInstanceOf[js.Any])
     if (serialize != null) __obj.updateDynamic("serialize")(js.Any.fromFunction1(serialize))
-    if (storeTransforms != null) __obj.updateDynamic("storeTransforms")(storeTransforms)
+    if (storeTransforms != null) __obj.updateDynamic("storeTransforms")(storeTransforms.asInstanceOf[js.Any])
     __obj.asInstanceOf[AltConfig]
   }
 }

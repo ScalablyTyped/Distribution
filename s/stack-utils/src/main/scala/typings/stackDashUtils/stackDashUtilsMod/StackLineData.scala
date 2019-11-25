@@ -27,16 +27,16 @@ object StackLineData {
   ): StackLineData = {
     val __obj = js.Dynamic.literal()
     if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
-    if (!js.isUndefined(constructor)) __obj.updateDynamic("constructor")(constructor)
+    if (!js.isUndefined(constructor)) __obj.updateDynamic("constructor")(constructor.asInstanceOf[js.Any])
     if (evalColumn != null) __obj.updateDynamic("evalColumn")(evalColumn.asInstanceOf[js.Any])
-    if (evalFile != null) __obj.updateDynamic("evalFile")(evalFile)
+    if (evalFile != null) __obj.updateDynamic("evalFile")(evalFile.asInstanceOf[js.Any])
     if (evalLine != null) __obj.updateDynamic("evalLine")(evalLine.asInstanceOf[js.Any])
-    if (evalOrigin != null) __obj.updateDynamic("evalOrigin")(evalOrigin)
-    if (file != null) __obj.updateDynamic("file")(file)
-    if (function != null) __obj.updateDynamic("function")(function)
+    if (evalOrigin != null) __obj.updateDynamic("evalOrigin")(evalOrigin.asInstanceOf[js.Any])
+    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
+    if (function != null) __obj.updateDynamic("function")(function.asInstanceOf[js.Any])
     if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (!js.isUndefined(native)) __obj.updateDynamic("native")(native)
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (!js.isUndefined(native)) __obj.updateDynamic("native")(native.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackLineData]
   }
 }

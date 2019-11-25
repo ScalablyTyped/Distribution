@@ -18,7 +18,7 @@ object HttpData {
   @scala.inline
   def apply(listUrl: String = null): HttpData = {
     val __obj = js.Dynamic.literal()
-    if (listUrl != null) __obj.updateDynamic("listUrl")(listUrl)
+    if (listUrl != null) __obj.updateDynamic("listUrl")(listUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpData]
   }
 }

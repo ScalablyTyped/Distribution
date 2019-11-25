@@ -38,8 +38,8 @@ object BaseCheckout {
     pricing_type: PricingType,
     requested_info: js.Array[email | name] = null
   ): BaseCheckout = {
-    val __obj = js.Dynamic.literal(description = description, name = name, pricing_type = pricing_type)
-    if (requested_info != null) __obj.updateDynamic("requested_info")(requested_info)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pricing_type = pricing_type.asInstanceOf[js.Any])
+    if (requested_info != null) __obj.updateDynamic("requested_info")(requested_info.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseCheckout]
   }
 }

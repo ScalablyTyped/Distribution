@@ -20,10 +20,10 @@ object SourceDescription {
     map: SourceMapInput = null,
     moduleSideEffects: js.UndefOr[Boolean] = js.undefined
   ): SourceDescription = {
-    val __obj = js.Dynamic.literal(code = code)
-    if (ast != null) __obj.updateDynamic("ast")(ast)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
+    if (ast != null) __obj.updateDynamic("ast")(ast.asInstanceOf[js.Any])
     if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
-    if (!js.isUndefined(moduleSideEffects)) __obj.updateDynamic("moduleSideEffects")(moduleSideEffects)
+    if (!js.isUndefined(moduleSideEffects)) __obj.updateDynamic("moduleSideEffects")(moduleSideEffects.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceDescription]
   }
 }

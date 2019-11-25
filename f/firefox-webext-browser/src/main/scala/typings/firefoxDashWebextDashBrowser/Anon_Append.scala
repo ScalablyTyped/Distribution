@@ -21,8 +21,8 @@ object Anon_Append {
   @scala.inline
   def apply(append: js.UndefOr[Boolean] = js.undefined, insert: js.UndefOr[Boolean] = js.undefined): Anon_Append = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(append)) __obj.updateDynamic("append")(append)
-    if (!js.isUndefined(insert)) __obj.updateDynamic("insert")(insert)
+    if (!js.isUndefined(append)) __obj.updateDynamic("append")(append.asInstanceOf[js.Any])
+    if (!js.isUndefined(insert)) __obj.updateDynamic("insert")(insert.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Append]
   }
 }

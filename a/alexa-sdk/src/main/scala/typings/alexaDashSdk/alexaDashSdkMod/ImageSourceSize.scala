@@ -13,3 +13,18 @@ import scala.scalajs.js.annotation._
 */
 trait ImageSourceSize extends js.Object
 
+object ImageSourceSize {
+  @scala.inline
+  def LARGE: typings.alexaDashSdk.alexaDashSdkStrings.LARGE = this.cast("LARGE")
+  @scala.inline
+  def MEDIUM: typings.alexaDashSdk.alexaDashSdkStrings.MEDIUM = this.cast("MEDIUM")
+  @scala.inline
+  def SMALL: typings.alexaDashSdk.alexaDashSdkStrings.SMALL = this.cast("SMALL")
+  @scala.inline
+  def X_LARGE: typings.alexaDashSdk.alexaDashSdkStrings.X_LARGE = this.cast("X_LARGE")
+  @scala.inline
+  def X_SMALL: typings.alexaDashSdk.alexaDashSdkStrings.X_SMALL = this.cast("X_SMALL")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

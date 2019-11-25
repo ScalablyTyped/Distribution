@@ -37,7 +37,7 @@ object Anon_Commercial {
     Prepaid: String,
     Unknown: String
   ): Anon_Commercial = {
-    val __obj = js.Dynamic.literal(Commercial = Commercial, CountryOfIssuance = CountryOfIssuance, Debit = Debit, DurbinRegulated = DurbinRegulated, Fraud = Fraud, Healthcare = Healthcare, Hiper = Hiper, HiperCard = HiperCard, IssuingBank = IssuingBank, No = No, Payroll = Payroll, Prepaid = Prepaid, Unknown = Unknown)
+    val __obj = js.Dynamic.literal(Commercial = Commercial.asInstanceOf[js.Any], CountryOfIssuance = CountryOfIssuance.asInstanceOf[js.Any], Debit = Debit.asInstanceOf[js.Any], DurbinRegulated = DurbinRegulated.asInstanceOf[js.Any], Fraud = Fraud.asInstanceOf[js.Any], Healthcare = Healthcare.asInstanceOf[js.Any], Hiper = Hiper.asInstanceOf[js.Any], HiperCard = HiperCard.asInstanceOf[js.Any], IssuingBank = IssuingBank.asInstanceOf[js.Any], No = No.asInstanceOf[js.Any], Payroll = Payroll.asInstanceOf[js.Any], Prepaid = Prepaid.asInstanceOf[js.Any], Unknown = Unknown.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Commercial]
   }

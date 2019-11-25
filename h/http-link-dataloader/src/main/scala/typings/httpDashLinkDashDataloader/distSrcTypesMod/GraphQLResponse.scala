@@ -20,10 +20,10 @@ object GraphQLResponse {
     data: js.Any = null,
     errors: js.Array[GraphQLError] = null
   ): GraphQLResponse = {
-    val __obj = js.Dynamic.literal(status = status)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (errors != null) __obj.updateDynamic("errors")(errors)
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLResponse]
   }
 }

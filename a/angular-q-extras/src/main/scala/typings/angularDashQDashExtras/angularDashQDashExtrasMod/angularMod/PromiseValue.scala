@@ -13,8 +13,8 @@ trait PromiseValue[T] extends js.Object {
 object PromiseValue {
   @scala.inline
   def apply[T](state: PromiseState, reason: js.Any = null, value: T = null): PromiseValue[T] = {
-    val __obj = js.Dynamic.literal(state = state)
-    if (reason != null) __obj.updateDynamic("reason")(reason)
+    val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
+    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PromiseValue[T]]
   }

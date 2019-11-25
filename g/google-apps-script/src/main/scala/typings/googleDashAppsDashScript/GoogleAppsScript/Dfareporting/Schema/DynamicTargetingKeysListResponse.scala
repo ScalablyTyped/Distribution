@@ -13,8 +13,8 @@ object DynamicTargetingKeysListResponse {
   @scala.inline
   def apply(dynamicTargetingKeys: js.Array[DynamicTargetingKey] = null, kind: String = null): DynamicTargetingKeysListResponse = {
     val __obj = js.Dynamic.literal()
-    if (dynamicTargetingKeys != null) __obj.updateDynamic("dynamicTargetingKeys")(dynamicTargetingKeys)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (dynamicTargetingKeys != null) __obj.updateDynamic("dynamicTargetingKeys")(dynamicTargetingKeys.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[DynamicTargetingKeysListResponse]
   }
 }

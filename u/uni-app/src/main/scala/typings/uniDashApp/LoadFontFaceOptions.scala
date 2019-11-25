@@ -43,10 +43,10 @@ object LoadFontFaceOptions {
   ): LoadFontFaceOptions = {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
-    if (desc != null) __obj.updateDynamic("desc")(desc)
+    if (desc != null) __obj.updateDynamic("desc")(desc.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
-    if (family != null) __obj.updateDynamic("family")(family)
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))
     __obj.asInstanceOf[LoadFontFaceOptions]
   }

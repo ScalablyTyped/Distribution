@@ -13,8 +13,8 @@ object NamedRanges {
   @scala.inline
   def apply(name: String = null, namedRanges: js.Array[NamedRange] = null): NamedRanges = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (namedRanges != null) __obj.updateDynamic("namedRanges")(namedRanges)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (namedRanges != null) __obj.updateDynamic("namedRanges")(namedRanges.asInstanceOf[js.Any])
     __obj.asInstanceOf[NamedRanges]
   }
 }

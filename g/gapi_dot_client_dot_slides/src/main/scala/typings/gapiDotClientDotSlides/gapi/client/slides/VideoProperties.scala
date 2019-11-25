@@ -16,7 +16,7 @@ object VideoProperties {
   @scala.inline
   def apply(outline: Outline = null): VideoProperties = {
     val __obj = js.Dynamic.literal()
-    if (outline != null) __obj.updateDynamic("outline")(outline)
+    if (outline != null) __obj.updateDynamic("outline")(outline.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoProperties]
   }
 }

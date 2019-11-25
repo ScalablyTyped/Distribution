@@ -16,7 +16,7 @@ object SetAddonsConfigRequest {
   @scala.inline
   def apply(addonsConfig: AddonsConfig = null): SetAddonsConfigRequest = {
     val __obj = js.Dynamic.literal()
-    if (addonsConfig != null) __obj.updateDynamic("addonsConfig")(addonsConfig)
+    if (addonsConfig != null) __obj.updateDynamic("addonsConfig")(addonsConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetAddonsConfigRequest]
   }
 }

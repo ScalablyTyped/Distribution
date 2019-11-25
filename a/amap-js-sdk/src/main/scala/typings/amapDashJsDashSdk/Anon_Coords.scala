@@ -27,8 +27,8 @@ object Anon_Coords {
   @scala.inline
   def apply(coords: js.Array[Double] = null, `type`: String = null): Anon_Coords = {
     val __obj = js.Dynamic.literal()
-    if (coords != null) __obj.updateDynamic("coords")(coords)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (coords != null) __obj.updateDynamic("coords")(coords.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Coords]
   }
 }

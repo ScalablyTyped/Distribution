@@ -34,7 +34,7 @@ object Font {
   ): Font = {
     val __obj = js.Dynamic.literal()
     if (decoration != null) __obj.updateDynamic("decoration")(decoration.asInstanceOf[js.Any])
-    if (family != null) __obj.updateDynamic("family")(family)
+    if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])

@@ -17,9 +17,9 @@ object BlogList {
   @scala.inline
   def apply(blogUserInfos: js.Array[BlogUserInfo] = null, items: js.Array[Blog] = null, kind: String = null): BlogList = {
     val __obj = js.Dynamic.literal()
-    if (blogUserInfos != null) __obj.updateDynamic("blogUserInfos")(blogUserInfos)
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (blogUserInfos != null) __obj.updateDynamic("blogUserInfos")(blogUserInfos.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlogList]
   }
 }

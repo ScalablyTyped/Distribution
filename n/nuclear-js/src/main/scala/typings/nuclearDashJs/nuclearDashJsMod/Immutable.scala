@@ -37,8 +37,8 @@ object Immutable extends js.Object {
   def get[V, NSV](collection: js.Array[V], key: Double, notSetValue: NSV): V | NSV = js.native
   def get[V, NSV](collection: StringDictionary[V], key: String, notSetValue: NSV): V | NSV = js.native
   def get[K, V](collection: Collection[K, V], key: K): js.UndefOr[V] = js.native
-  def get[C /* <: js.Object */, K /* <: String */](`object`: C, key: K, notSetValue: js.Any): /* import warning: ImportType.apply Failed type conversion: C[K] */ js.Any = js.native
-  def get[TProps, K /* <: String */](record: Record[TProps], key: K, notSetValue: js.Any): /* import warning: ImportType.apply Failed type conversion: TProps[K] */ js.Any = js.native
+  def get[C /* <: js.Object */, K /* <: String */](`object`: C, key: K, notSetValue: js.Any): /* import warning: importer.ImportType#apply Failed type conversion: C[K] */ js.Any = js.native
+  def get[TProps, K /* <: String */](record: Record[TProps], key: K, notSetValue: js.Any): /* import warning: importer.ImportType#apply Failed type conversion: TProps[K] */ js.Any = js.native
   def get[K, V, NSV](collection: Collection[K, V], key: K, notSetValue: NSV): V | NSV = js.native
   def getIn(collection: js.Any, keyPath: Iterable[_], notSetValue: js.Any): js.Any = js.native
   def has(collection: js.Object, key: js.Any): Boolean = js.native
@@ -86,7 +86,7 @@ object Immutable extends js.Object {
   def set[C, K /* <: String */](
     `object`: C,
     key: K,
-    value: /* import warning: ImportType.apply Failed type conversion: C[K] */ js.Any
+    value: /* import warning: importer.ImportType#apply Failed type conversion: C[K] */ js.Any
   ): C = js.native
   def set[K, V, C /* <: Collection[K, V] */](collection: C, key: K, value: V): C = js.native
   def setIn[C](collection: C, keyPath: Iterable[_], value: js.Any): C = js.native
@@ -94,7 +94,7 @@ object Immutable extends js.Object {
   def set_TPropsC_RecordTPropsK_String[TProps, C /* <: Record[TProps] */, K /* <: String */](
     record: C,
     key: K,
-    value: /* import warning: ImportType.apply Failed type conversion: TProps[K] */ js.Any
+    value: /* import warning: importer.ImportType#apply Failed type conversion: TProps[K] */ js.Any
   ): C = js.native
   def update[V](collection: js.Array[V], key: Double, updater: js.Function1[/* value */ V, V]): js.Array[V] = js.native
   def update[V, NSV](
@@ -107,8 +107,8 @@ object Immutable extends js.Object {
     `object`: C,
     key: K,
     updater: js.Function1[
-      /* import warning: ImportType.apply Failed type conversion: C[K] */ /* value */ js.Any, 
-      /* import warning: ImportType.apply Failed type conversion: C[K] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: C[K] */ /* value */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: C[K] */ js.Any
     ]
   ): C = js.native
   def update[C, K /* <: String */, NSV](
@@ -116,8 +116,8 @@ object Immutable extends js.Object {
     key: K,
     notSetValue: NSV,
     updater: js.Function1[
-      /* value */ (/* import warning: ImportType.apply Failed type conversion: C[K] */ js.Any) | NSV, 
-      /* import warning: ImportType.apply Failed type conversion: C[K] */ js.Any
+      /* value */ (/* import warning: importer.ImportType#apply Failed type conversion: C[K] */ js.Any) | NSV, 
+      /* import warning: importer.ImportType#apply Failed type conversion: C[K] */ js.Any
     ]
   ): C = js.native
   def updateIn[C](
@@ -136,8 +136,8 @@ object Immutable extends js.Object {
     record: C,
     key: K,
     updater: js.Function1[
-      /* import warning: ImportType.apply Failed type conversion: TProps[K] */ /* value */ js.Any, 
-      /* import warning: ImportType.apply Failed type conversion: TProps[K] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: TProps[K] */ /* value */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: TProps[K] */ js.Any
     ]
   ): C = js.native
   @JSName("update")
@@ -146,8 +146,8 @@ object Immutable extends js.Object {
     key: K,
     notSetValue: NSV,
     updater: js.Function1[
-      /* value */ (/* import warning: ImportType.apply Failed type conversion: TProps[K] */ js.Any) | NSV, 
-      /* import warning: ImportType.apply Failed type conversion: TProps[K] */ js.Any
+      /* value */ (/* import warning: importer.ImportType#apply Failed type conversion: TProps[K] */ js.Any) | NSV, 
+      /* import warning: importer.ImportType#apply Failed type conversion: TProps[K] */ js.Any
     ]
   ): C = js.native
   @JSName("update")

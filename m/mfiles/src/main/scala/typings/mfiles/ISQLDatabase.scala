@@ -24,7 +24,7 @@ object ISQLDatabase {
     Name: String,
     Server: String
   ): ISQLDatabase = {
-    val __obj = js.Dynamic.literal(AdminUser = AdminUser, BasicUser = BasicUser, Clone = js.Any.fromFunction0(Clone), Engine = Engine, Name = Name, Server = Server)
+    val __obj = js.Dynamic.literal(AdminUser = AdminUser.asInstanceOf[js.Any], BasicUser = BasicUser.asInstanceOf[js.Any], Clone = js.Any.fromFunction0(Clone), Engine = Engine.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Server = Server.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISQLDatabase]
   }

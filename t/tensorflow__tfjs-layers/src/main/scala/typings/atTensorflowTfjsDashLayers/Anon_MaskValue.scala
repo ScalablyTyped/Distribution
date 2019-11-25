@@ -11,7 +11,7 @@ trait Anon_MaskValue extends js.Object {
 object Anon_MaskValue {
   @scala.inline
   def apply(maskValue: Double): Anon_MaskValue = {
-    val __obj = js.Dynamic.literal(maskValue = maskValue)
+    val __obj = js.Dynamic.literal(maskValue = maskValue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_MaskValue]
   }

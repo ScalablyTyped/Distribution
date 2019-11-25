@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait Renderers extends js.Object
 
+object Renderers {
+  @scala.inline
+  def canvas: typings.vegaDashTypings.vegaDashTypingsStrings.canvas = this.cast("canvas")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def none: typings.vegaDashTypings.vegaDashTypingsStrings.none = this.cast("none")
+  @scala.inline
+  def svg: typings.vegaDashTypings.vegaDashTypingsStrings.svg = this.cast("svg")
+}
+

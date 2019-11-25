@@ -13,7 +13,7 @@ object ReadWrite {
   @scala.inline
   def apply(previousTransaction: String = null): ReadWrite = {
     val __obj = js.Dynamic.literal()
-    if (previousTransaction != null) __obj.updateDynamic("previousTransaction")(previousTransaction)
+    if (previousTransaction != null) __obj.updateDynamic("previousTransaction")(previousTransaction.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadWrite]
   }
 }

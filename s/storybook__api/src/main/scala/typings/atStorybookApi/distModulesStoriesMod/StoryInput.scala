@@ -24,7 +24,7 @@ object StoryInput {
     name: String,
     parameters: Anon_Filename
   ): StoryInput = {
-    val __obj = js.Dynamic.literal(children = children, id = id, isLeaf = isLeaf, kind = kind, name = name, parameters = parameters)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isLeaf = isLeaf.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StoryInput]
   }

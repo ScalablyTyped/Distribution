@@ -17,7 +17,7 @@ object TooltipMessageProps {
   def apply(desc: ReactNode = null, links: js.Array[Anon_Href] = null, title: ReactNode = null): TooltipMessageProps = {
     val __obj = js.Dynamic.literal()
     if (desc != null) __obj.updateDynamic("desc")(desc.asInstanceOf[js.Any])
-    if (links != null) __obj.updateDynamic("links")(links)
+    if (links != null) __obj.updateDynamic("links")(links.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipMessageProps]
   }

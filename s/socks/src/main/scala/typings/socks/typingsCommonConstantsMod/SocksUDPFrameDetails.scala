@@ -14,7 +14,7 @@ trait SocksUDPFrameDetails extends js.Object {
 object SocksUDPFrameDetails {
   @scala.inline
   def apply(data: Buffer, remoteHost: SocksRemoteHost, frameNumber: Int | Double = null): SocksUDPFrameDetails = {
-    val __obj = js.Dynamic.literal(data = data, remoteHost = remoteHost)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], remoteHost = remoteHost.asInstanceOf[js.Any])
     if (frameNumber != null) __obj.updateDynamic("frameNumber")(frameNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[SocksUDPFrameDetails]
   }

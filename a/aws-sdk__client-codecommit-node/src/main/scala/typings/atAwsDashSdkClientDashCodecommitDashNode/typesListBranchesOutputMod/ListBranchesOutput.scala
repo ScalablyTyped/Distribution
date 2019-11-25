@@ -25,9 +25,9 @@ trait ListBranchesOutput extends OutputTypesUnion {
 object ListBranchesOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, branches: js.Array[String] = null, nextToken: String = null): ListBranchesOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (branches != null) __obj.updateDynamic("branches")(branches)
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (branches != null) __obj.updateDynamic("branches")(branches.asInstanceOf[js.Any])
+    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBranchesOutput]
   }
 }

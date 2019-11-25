@@ -27,9 +27,9 @@ object Device {
   @scala.inline
   def apply(androidId: String = null, kind: String = null, managementType: String = null): Device = {
     val __obj = js.Dynamic.literal()
-    if (androidId != null) __obj.updateDynamic("androidId")(androidId)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (managementType != null) __obj.updateDynamic("managementType")(managementType)
+    if (androidId != null) __obj.updateDynamic("androidId")(androidId.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (managementType != null) __obj.updateDynamic("managementType")(managementType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Device]
   }
 }

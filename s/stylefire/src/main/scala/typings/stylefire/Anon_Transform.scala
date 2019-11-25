@@ -13,8 +13,8 @@ object Anon_Transform {
   @scala.inline
   def apply(transform: String = null, transformOrigin: String = null): Anon_Transform = {
     val __obj = js.Dynamic.literal()
-    if (transform != null) __obj.updateDynamic("transform")(transform)
-    if (transformOrigin != null) __obj.updateDynamic("transformOrigin")(transformOrigin)
+    if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
+    if (transformOrigin != null) __obj.updateDynamic("transformOrigin")(transformOrigin.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Transform]
   }
 }

@@ -25,7 +25,7 @@ object Anon_Architecture {
     utcOffset: Double,
     processorCount: Int | Double = null
   ): Anon_Architecture = {
-    val __obj = js.Dynamic.literal(architecture = architecture, availablePhysicalMemory = availablePhysicalMemory, cpu = cpu, osVersion = osVersion, totalPhysicalMemory = totalPhysicalMemory, utcOffset = utcOffset)
+    val __obj = js.Dynamic.literal(architecture = architecture.asInstanceOf[js.Any], availablePhysicalMemory = availablePhysicalMemory.asInstanceOf[js.Any], cpu = cpu.asInstanceOf[js.Any], osVersion = osVersion.asInstanceOf[js.Any], totalPhysicalMemory = totalPhysicalMemory.asInstanceOf[js.Any], utcOffset = utcOffset.asInstanceOf[js.Any])
     if (processorCount != null) __obj.updateDynamic("processorCount")(processorCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Architecture]
   }

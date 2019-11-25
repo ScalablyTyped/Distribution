@@ -16,8 +16,8 @@ object IUpsertOptions {
   @scala.inline
   def apply(disableAutomaticIdGeneration: String = null, indexAction: String = null): IUpsertOptions = {
     val __obj = js.Dynamic.literal()
-    if (disableAutomaticIdGeneration != null) __obj.updateDynamic("disableAutomaticIdGeneration")(disableAutomaticIdGeneration)
-    if (indexAction != null) __obj.updateDynamic("indexAction")(indexAction)
+    if (disableAutomaticIdGeneration != null) __obj.updateDynamic("disableAutomaticIdGeneration")(disableAutomaticIdGeneration.asInstanceOf[js.Any])
+    if (indexAction != null) __obj.updateDynamic("indexAction")(indexAction.asInstanceOf[js.Any])
     __obj.asInstanceOf[IUpsertOptions]
   }
 }

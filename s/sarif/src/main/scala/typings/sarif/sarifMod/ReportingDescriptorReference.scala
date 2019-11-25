@@ -38,11 +38,11 @@ object ReportingDescriptorReference {
     toolComponent: ToolComponentReference = null
   ): ReportingDescriptorReference = {
     val __obj = js.Dynamic.literal()
-    if (guid != null) __obj.updateDynamic("guid")(guid)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (guid != null) __obj.updateDynamic("guid")(guid.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (toolComponent != null) __obj.updateDynamic("toolComponent")(toolComponent)
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (toolComponent != null) __obj.updateDynamic("toolComponent")(toolComponent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportingDescriptorReference]
   }
 }

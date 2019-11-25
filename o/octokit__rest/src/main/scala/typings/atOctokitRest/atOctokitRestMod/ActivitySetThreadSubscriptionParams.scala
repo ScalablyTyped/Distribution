@@ -15,8 +15,8 @@ trait ActivitySetThreadSubscriptionParams extends js.Object {
 object ActivitySetThreadSubscriptionParams {
   @scala.inline
   def apply(thread_id: Double, ignored: js.UndefOr[Boolean] = js.undefined): ActivitySetThreadSubscriptionParams = {
-    val __obj = js.Dynamic.literal(thread_id = thread_id)
-    if (!js.isUndefined(ignored)) __obj.updateDynamic("ignored")(ignored)
+    val __obj = js.Dynamic.literal(thread_id = thread_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignored)) __obj.updateDynamic("ignored")(ignored.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivitySetThreadSubscriptionParams]
   }
 }

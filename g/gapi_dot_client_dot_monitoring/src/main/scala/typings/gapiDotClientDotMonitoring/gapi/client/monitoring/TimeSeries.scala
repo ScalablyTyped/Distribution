@@ -41,11 +41,11 @@ object TimeSeries {
     valueType: String = null
   ): TimeSeries = {
     val __obj = js.Dynamic.literal()
-    if (metric != null) __obj.updateDynamic("metric")(metric)
-    if (metricKind != null) __obj.updateDynamic("metricKind")(metricKind)
-    if (points != null) __obj.updateDynamic("points")(points)
-    if (resource != null) __obj.updateDynamic("resource")(resource)
-    if (valueType != null) __obj.updateDynamic("valueType")(valueType)
+    if (metric != null) __obj.updateDynamic("metric")(metric.asInstanceOf[js.Any])
+    if (metricKind != null) __obj.updateDynamic("metricKind")(metricKind.asInstanceOf[js.Any])
+    if (points != null) __obj.updateDynamic("points")(points.asInstanceOf[js.Any])
+    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
+    if (valueType != null) __obj.updateDynamic("valueType")(valueType.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeSeries]
   }
 }

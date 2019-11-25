@@ -12,7 +12,7 @@ object Anon_CustomFields {
   @scala.inline
   def apply(customFields: js.UndefOr[Boolean] = js.undefined): Anon_CustomFields = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(customFields)) __obj.updateDynamic("customFields")(customFields)
+    if (!js.isUndefined(customFields)) __obj.updateDynamic("customFields")(customFields.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CustomFields]
   }
 }

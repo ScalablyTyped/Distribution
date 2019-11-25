@@ -21,8 +21,8 @@ object RMSPropOptimizerConfig {
     epsilon: Int | Double = null,
     momentum: Int | Double = null
   ): RMSPropOptimizerConfig = {
-    val __obj = js.Dynamic.literal(learning_rate = learning_rate)
-    if (!js.isUndefined(centered)) __obj.updateDynamic("centered")(centered)
+    val __obj = js.Dynamic.literal(learning_rate = learning_rate.asInstanceOf[js.Any])
+    if (!js.isUndefined(centered)) __obj.updateDynamic("centered")(centered.asInstanceOf[js.Any])
     if (decay != null) __obj.updateDynamic("decay")(decay.asInstanceOf[js.Any])
     if (epsilon != null) __obj.updateDynamic("epsilon")(epsilon.asInstanceOf[js.Any])
     if (momentum != null) __obj.updateDynamic("momentum")(momentum.asInstanceOf[js.Any])

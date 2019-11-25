@@ -41,11 +41,11 @@ object OptionsTopBarBackground {
     translucent: js.UndefOr[Boolean] = js.undefined
   ): OptionsTopBarBackground = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(blur)) __obj.updateDynamic("blur")(blur)
-    if (!js.isUndefined(clipToBounds)) __obj.updateDynamic("clipToBounds")(clipToBounds)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (component != null) __obj.updateDynamic("component")(component)
-    if (!js.isUndefined(translucent)) __obj.updateDynamic("translucent")(translucent)
+    if (!js.isUndefined(blur)) __obj.updateDynamic("blur")(blur.asInstanceOf[js.Any])
+    if (!js.isUndefined(clipToBounds)) __obj.updateDynamic("clipToBounds")(clipToBounds.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
+    if (!js.isUndefined(translucent)) __obj.updateDynamic("translucent")(translucent.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsTopBarBackground]
   }
 }

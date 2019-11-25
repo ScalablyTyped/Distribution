@@ -27,9 +27,9 @@ object Options {
     zoomSpeed: Int | Double = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (alignment != null) __obj.updateDynamic("alignment")(alignment)
-    if (!js.isUndefined(slider)) __obj.updateDynamic("slider")(slider)
-    if (!js.isUndefined(sliderSnaps)) __obj.updateDynamic("sliderSnaps")(sliderSnaps)
+    if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
+    if (!js.isUndefined(slider)) __obj.updateDynamic("slider")(slider.asInstanceOf[js.Any])
+    if (!js.isUndefined(sliderSnaps)) __obj.updateDynamic("sliderSnaps")(sliderSnaps.asInstanceOf[js.Any])
     if (zoomSpeed != null) __obj.updateDynamic("zoomSpeed")(zoomSpeed.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

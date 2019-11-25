@@ -20,9 +20,9 @@ object ChartYAxisItemLine {
     width: Int | Double = null
   ): ChartYAxisItemLine = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (dashType != null) __obj.updateDynamic("dashType")(dashType)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (dashType != null) __obj.updateDynamic("dashType")(dashType.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartYAxisItemLine]
   }

@@ -27,13 +27,13 @@ object PeerJSOption {
     secure: js.UndefOr[Boolean] = js.undefined
   ): PeerJSOption = {
     val __obj = js.Dynamic.literal()
-    if (config != null) __obj.updateDynamic("config")(config)
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
     if (debug != null) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure)
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
     __obj.asInstanceOf[PeerJSOption]
   }
 }

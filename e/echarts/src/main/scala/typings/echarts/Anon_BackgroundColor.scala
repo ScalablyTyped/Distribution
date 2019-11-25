@@ -25,10 +25,10 @@ object Anon_BackgroundColor {
     `type`: String = null
   ): Anon_BackgroundColor = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
-    if (excludeComponents != null) __obj.updateDynamic("excludeComponents")(excludeComponents)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (excludeComponents != null) __obj.updateDynamic("excludeComponents")(excludeComponents.asInstanceOf[js.Any])
     if (pixelRatio != null) __obj.updateDynamic("pixelRatio")(pixelRatio.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BackgroundColor]
   }
 }

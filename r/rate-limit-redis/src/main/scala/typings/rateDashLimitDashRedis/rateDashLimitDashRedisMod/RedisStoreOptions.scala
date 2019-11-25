@@ -21,10 +21,10 @@ object RedisStoreOptions {
     resetExpiryOnChange: js.UndefOr[Boolean] = js.undefined
   ): RedisStoreOptions = {
     val __obj = js.Dynamic.literal()
-    if (client != null) __obj.updateDynamic("client")(client)
+    if (client != null) __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
     if (expiry != null) __obj.updateDynamic("expiry")(expiry.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
-    if (!js.isUndefined(resetExpiryOnChange)) __obj.updateDynamic("resetExpiryOnChange")(resetExpiryOnChange)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    if (!js.isUndefined(resetExpiryOnChange)) __obj.updateDynamic("resetExpiryOnChange")(resetExpiryOnChange.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedisStoreOptions]
   }
 }

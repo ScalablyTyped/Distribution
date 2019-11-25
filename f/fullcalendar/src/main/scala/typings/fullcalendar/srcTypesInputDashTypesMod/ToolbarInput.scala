@@ -14,9 +14,9 @@ object ToolbarInput {
   @scala.inline
   def apply(center: String = null, left: String = null, right: String = null): ToolbarInput = {
     val __obj = js.Dynamic.literal()
-    if (center != null) __obj.updateDynamic("center")(center)
-    if (left != null) __obj.updateDynamic("left")(left)
-    if (right != null) __obj.updateDynamic("right")(right)
+    if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolbarInput]
   }
 }

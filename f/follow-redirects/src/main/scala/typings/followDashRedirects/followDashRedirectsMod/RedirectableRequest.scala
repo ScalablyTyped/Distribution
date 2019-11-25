@@ -10,14 +10,14 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait RedirectableRequest[Request /* <: WrappableRequest */, Response] extends Writable {
-  var abort: /* import warning: ImportType.apply Failed type conversion: Request['abort'] */ js.Any = js.native
-  var flushHeaders: /* import warning: ImportType.apply Failed type conversion: Request['flushHeaders'] */ js.Any = js.native
-  var getHeader: /* import warning: ImportType.apply Failed type conversion: Request['getHeader'] */ js.Any = js.native
-  var removeHeader: /* import warning: ImportType.apply Failed type conversion: Request['removeHeader'] */ js.Any = js.native
-  var setHeader: /* import warning: ImportType.apply Failed type conversion: Request['setHeader'] */ js.Any = js.native
-  var setNoDelay: /* import warning: ImportType.apply Failed type conversion: Request['setNoDelay'] */ js.Any = js.native
-  var setSocketKeepAlive: /* import warning: ImportType.apply Failed type conversion: Request['setSocketKeepAlive'] */ js.Any = js.native
-  var setTimeout: /* import warning: ImportType.apply Failed type conversion: Request['setTimeout'] */ js.Any = js.native
+  var abort: /* import warning: importer.ImportType#apply Failed type conversion: Request['abort'] */ js.Any = js.native
+  var flushHeaders: /* import warning: importer.ImportType#apply Failed type conversion: Request['flushHeaders'] */ js.Any = js.native
+  var getHeader: /* import warning: importer.ImportType#apply Failed type conversion: Request['getHeader'] */ js.Any = js.native
+  var removeHeader: /* import warning: importer.ImportType#apply Failed type conversion: Request['removeHeader'] */ js.Any = js.native
+  var setHeader: /* import warning: importer.ImportType#apply Failed type conversion: Request['setHeader'] */ js.Any = js.native
+  var setNoDelay: /* import warning: importer.ImportType#apply Failed type conversion: Request['setNoDelay'] */ js.Any = js.native
+  var setSocketKeepAlive: /* import warning: importer.ImportType#apply Failed type conversion: Request['setSocketKeepAlive'] */ js.Any = js.native
+  var setTimeout: /* import warning: importer.ImportType#apply Failed type conversion: Request['setTimeout'] */ js.Any = js.native
   @JSName("addListener")
   def addListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
   @JSName("addListener")

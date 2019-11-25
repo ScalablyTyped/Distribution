@@ -12,7 +12,7 @@ trait DatabasesResource extends js.Object {
 object DatabasesResource {
   @scala.inline
   def apply(documents: DocumentsResource, indexes: IndexesResource): DatabasesResource = {
-    val __obj = js.Dynamic.literal(documents = documents, indexes = indexes)
+    val __obj = js.Dynamic.literal(documents = documents.asInstanceOf[js.Any], indexes = indexes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DatabasesResource]
   }

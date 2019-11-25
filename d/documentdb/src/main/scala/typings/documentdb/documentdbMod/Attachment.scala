@@ -22,8 +22,8 @@ object Attachment {
     StringDictionary: /** Other properties */
   /* name */ StringDictionary[js.Any] = null
   ): Attachment = {
-    val __obj = js.Dynamic.literal(contentType = contentType, media = media)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], media = media.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Attachment]
   }
 }

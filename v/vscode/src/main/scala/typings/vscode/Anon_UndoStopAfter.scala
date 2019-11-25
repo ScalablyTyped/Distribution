@@ -12,7 +12,7 @@ trait Anon_UndoStopAfter extends js.Object {
 object Anon_UndoStopAfter {
   @scala.inline
   def apply(undoStopAfter: Boolean, undoStopBefore: Boolean): Anon_UndoStopAfter = {
-    val __obj = js.Dynamic.literal(undoStopAfter = undoStopAfter, undoStopBefore = undoStopBefore)
+    val __obj = js.Dynamic.literal(undoStopAfter = undoStopAfter.asInstanceOf[js.Any], undoStopBefore = undoStopBefore.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_UndoStopAfter]
   }

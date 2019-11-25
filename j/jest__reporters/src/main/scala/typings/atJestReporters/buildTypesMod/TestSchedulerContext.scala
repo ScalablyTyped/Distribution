@@ -15,8 +15,8 @@ trait TestSchedulerContext extends js.Object {
 object TestSchedulerContext {
   @scala.inline
   def apply(firstRun: Boolean, previousSuccess: Boolean, changedFiles: Set[Path] = null): TestSchedulerContext = {
-    val __obj = js.Dynamic.literal(firstRun = firstRun, previousSuccess = previousSuccess)
-    if (changedFiles != null) __obj.updateDynamic("changedFiles")(changedFiles)
+    val __obj = js.Dynamic.literal(firstRun = firstRun.asInstanceOf[js.Any], previousSuccess = previousSuccess.asInstanceOf[js.Any])
+    if (changedFiles != null) __obj.updateDynamic("changedFiles")(changedFiles.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestSchedulerContext]
   }
 }

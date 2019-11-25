@@ -73,7 +73,7 @@ object RelationMapping {
       ]
     ]) | String | js.Object = null
   ): RelationMapping = {
-    val __obj = js.Dynamic.literal(join = join, modelClass = modelClass.asInstanceOf[js.Any], relation = relation)
+    val __obj = js.Dynamic.literal(join = join.asInstanceOf[js.Any], modelClass = modelClass.asInstanceOf[js.Any], relation = relation.asInstanceOf[js.Any])
     if (beforeInsert != null) __obj.updateDynamic("beforeInsert")(js.Any.fromFunction2(beforeInsert))
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (modify != null) __obj.updateDynamic("modify")(modify.asInstanceOf[js.Any])

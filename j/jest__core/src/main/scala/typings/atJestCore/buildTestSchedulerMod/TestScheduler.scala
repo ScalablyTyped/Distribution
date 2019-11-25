@@ -46,7 +46,7 @@ object TestScheduler {
     removeReporter: js.Function => Unit,
     scheduleTests: (js.Array[Test], typings.atJestCore.buildTestWatcherMod.default) => js.Promise[AggregatedResult]
   ): TestScheduler = {
-    val __obj = js.Dynamic.literal(_addCustomReporters = _addCustomReporters, _bailIfNeeded = _bailIfNeeded, _context = _context, _dispatcher = _dispatcher, _getReporterProps = _getReporterProps, _globalConfig = _globalConfig, _options = _options, _partitionTests = _partitionTests, _setupDefaultReporters = _setupDefaultReporters, _setupReporters = _setupReporters, _shouldAddDefaultReporters = _shouldAddDefaultReporters, addReporter = js.Any.fromFunction1(addReporter), removeReporter = js.Any.fromFunction1(removeReporter), scheduleTests = js.Any.fromFunction2(scheduleTests))
+    val __obj = js.Dynamic.literal(_addCustomReporters = _addCustomReporters.asInstanceOf[js.Any], _bailIfNeeded = _bailIfNeeded.asInstanceOf[js.Any], _context = _context.asInstanceOf[js.Any], _dispatcher = _dispatcher.asInstanceOf[js.Any], _getReporterProps = _getReporterProps.asInstanceOf[js.Any], _globalConfig = _globalConfig.asInstanceOf[js.Any], _options = _options.asInstanceOf[js.Any], _partitionTests = _partitionTests.asInstanceOf[js.Any], _setupDefaultReporters = _setupDefaultReporters.asInstanceOf[js.Any], _setupReporters = _setupReporters.asInstanceOf[js.Any], _shouldAddDefaultReporters = _shouldAddDefaultReporters.asInstanceOf[js.Any], addReporter = js.Any.fromFunction1(addReporter), removeReporter = js.Any.fromFunction1(removeReporter), scheduleTests = js.Any.fromFunction2(scheduleTests))
   
     __obj.asInstanceOf[TestScheduler]
   }

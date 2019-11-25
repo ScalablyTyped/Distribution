@@ -13,7 +13,7 @@ trait DynamicSizeSpec extends js.Object {
 object DynamicSizeSpec {
   @scala.inline
   def apply(key: String, sizes: js.Tuple2[Double, Double], values: js.Tuple2[Double, Double]): DynamicSizeSpec = {
-    val __obj = js.Dynamic.literal(key = key, sizes = sizes, values = values)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], sizes = sizes.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DynamicSizeSpec]
   }

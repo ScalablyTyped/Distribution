@@ -19,7 +19,7 @@ object GridViewBatchEditStartEditingEventArgs {
     sender: Control,
     visibleIndex: Double
   ): GridViewBatchEditStartEditingEventArgs = {
-    val __obj = js.Dynamic.literal(cancel = cancel, focusedColumn = focusedColumn, rowValues = rowValues, sender = sender, visibleIndex = visibleIndex)
+    val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], focusedColumn = focusedColumn.asInstanceOf[js.Any], rowValues = rowValues.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], visibleIndex = visibleIndex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GridViewBatchEditStartEditingEventArgs]
   }

@@ -43,7 +43,7 @@ object ResourceUsage {
     userCPUTime: Double,
     voluntaryContextSwitches: Double
   ): ResourceUsage = {
-    val __obj = js.Dynamic.literal(fsRead = fsRead, fsWrite = fsWrite, involuntaryContextSwitches = involuntaryContextSwitches, ipcReceived = ipcReceived, ipcSent = ipcSent, majorPageFault = majorPageFault, maxRSS = maxRSS, minorPageFault = minorPageFault, sharedMemorySize = sharedMemorySize, signalsCount = signalsCount, swappedOut = swappedOut, systemCPUTime = systemCPUTime, unsharedDataSize = unsharedDataSize, unsharedStackSize = unsharedStackSize, userCPUTime = userCPUTime, voluntaryContextSwitches = voluntaryContextSwitches)
+    val __obj = js.Dynamic.literal(fsRead = fsRead.asInstanceOf[js.Any], fsWrite = fsWrite.asInstanceOf[js.Any], involuntaryContextSwitches = involuntaryContextSwitches.asInstanceOf[js.Any], ipcReceived = ipcReceived.asInstanceOf[js.Any], ipcSent = ipcSent.asInstanceOf[js.Any], majorPageFault = majorPageFault.asInstanceOf[js.Any], maxRSS = maxRSS.asInstanceOf[js.Any], minorPageFault = minorPageFault.asInstanceOf[js.Any], sharedMemorySize = sharedMemorySize.asInstanceOf[js.Any], signalsCount = signalsCount.asInstanceOf[js.Any], swappedOut = swappedOut.asInstanceOf[js.Any], systemCPUTime = systemCPUTime.asInstanceOf[js.Any], unsharedDataSize = unsharedDataSize.asInstanceOf[js.Any], unsharedStackSize = unsharedStackSize.asInstanceOf[js.Any], userCPUTime = userCPUTime.asInstanceOf[js.Any], voluntaryContextSwitches = voluntaryContextSwitches.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ResourceUsage]
   }

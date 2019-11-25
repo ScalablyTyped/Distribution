@@ -21,9 +21,9 @@ object LogEntrySourceLocation {
   @scala.inline
   def apply(file: String = null, function: String = null, line: String = null): LogEntrySourceLocation = {
     val __obj = js.Dynamic.literal()
-    if (file != null) __obj.updateDynamic("file")(file)
-    if (function != null) __obj.updateDynamic("function")(function)
-    if (line != null) __obj.updateDynamic("line")(line)
+    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
+    if (function != null) __obj.updateDynamic("function")(function.asInstanceOf[js.Any])
+    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogEntrySourceLocation]
   }
 }

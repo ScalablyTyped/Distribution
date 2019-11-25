@@ -22,7 +22,7 @@ trait RegisterStreamConsumerOutput extends OutputTypesUnion {
 object RegisterStreamConsumerOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, Consumer: _UnmarshalledConsumer): RegisterStreamConsumerOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata, Consumer = Consumer)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], Consumer = Consumer.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RegisterStreamConsumerOutput]
   }

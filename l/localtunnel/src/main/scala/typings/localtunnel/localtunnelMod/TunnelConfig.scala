@@ -20,10 +20,10 @@ object TunnelConfig {
     subdomain: String = null
   ): TunnelConfig = {
     val __obj = js.Dynamic.literal()
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (local_host != null) __obj.updateDynamic("local_host")(local_host)
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (local_host != null) __obj.updateDynamic("local_host")(local_host.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (subdomain != null) __obj.updateDynamic("subdomain")(subdomain)
+    if (subdomain != null) __obj.updateDynamic("subdomain")(subdomain.asInstanceOf[js.Any])
     __obj.asInstanceOf[TunnelConfig]
   }
 }

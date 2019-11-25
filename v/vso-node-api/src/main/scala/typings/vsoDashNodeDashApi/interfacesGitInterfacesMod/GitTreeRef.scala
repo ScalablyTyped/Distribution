@@ -33,7 +33,7 @@ object GitTreeRef {
     treeEntries: js.Array[GitTreeEntryRef],
     url: String
   ): GitTreeRef = {
-    val __obj = js.Dynamic.literal(_links = _links, objectId = objectId, size = size, treeEntries = treeEntries, url = url)
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], treeEntries = treeEntries.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GitTreeRef]
   }

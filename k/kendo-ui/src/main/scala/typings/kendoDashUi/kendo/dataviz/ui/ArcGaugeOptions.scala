@@ -35,15 +35,15 @@ object ArcGaugeOptions {
   ): ArcGaugeOptions = {
     val __obj = js.Dynamic.literal()
     if (centerTemplate != null) __obj.updateDynamic("centerTemplate")(centerTemplate.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (colors != null) __obj.updateDynamic("colors")(colors)
-    if (gaugeArea != null) __obj.updateDynamic("gaugeArea")(gaugeArea)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
+    if (gaugeArea != null) __obj.updateDynamic("gaugeArea")(gaugeArea.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (renderAs != null) __obj.updateDynamic("renderAs")(renderAs)
-    if (scale != null) __obj.updateDynamic("scale")(scale)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
-    if (!js.isUndefined(transitions)) __obj.updateDynamic("transitions")(transitions)
+    if (renderAs != null) __obj.updateDynamic("renderAs")(renderAs.asInstanceOf[js.Any])
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    if (!js.isUndefined(transitions)) __obj.updateDynamic("transitions")(transitions.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArcGaugeOptions]
   }

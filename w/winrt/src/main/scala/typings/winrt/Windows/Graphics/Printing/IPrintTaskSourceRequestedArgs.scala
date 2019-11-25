@@ -18,7 +18,7 @@ object IPrintTaskSourceRequestedArgs {
     getDeferral: () => PrintTaskSourceRequestedDeferral,
     setSource: IPrintDocumentSource => Unit
   ): IPrintTaskSourceRequestedArgs = {
-    val __obj = js.Dynamic.literal(deadline = deadline, getDeferral = js.Any.fromFunction0(getDeferral), setSource = js.Any.fromFunction1(setSource))
+    val __obj = js.Dynamic.literal(deadline = deadline.asInstanceOf[js.Any], getDeferral = js.Any.fromFunction0(getDeferral), setSource = js.Any.fromFunction1(setSource))
   
     __obj.asInstanceOf[IPrintTaskSourceRequestedArgs]
   }

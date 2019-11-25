@@ -14,7 +14,7 @@ trait SharpCounters extends js.Object {
 object SharpCounters {
   @scala.inline
   def apply(process: Double, queue: Double): SharpCounters = {
-    val __obj = js.Dynamic.literal(process = process, queue = queue)
+    val __obj = js.Dynamic.literal(process = process.asInstanceOf[js.Any], queue = queue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SharpCounters]
   }

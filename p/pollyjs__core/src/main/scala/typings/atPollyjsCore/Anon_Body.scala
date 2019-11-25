@@ -27,8 +27,8 @@ object Anon_Body {
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (!js.isUndefined(order)) __obj.updateDynamic("order")(order)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (!js.isUndefined(order)) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Body]
   }
 }

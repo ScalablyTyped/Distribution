@@ -82,15 +82,15 @@ object IRuleMetadata {
     rationale: String = null,
     requiresTypeInfo: js.UndefOr[Boolean] = js.undefined
   ): IRuleMetadata = {
-    val __obj = js.Dynamic.literal(description = description, options = options, optionsDescription = optionsDescription, ruleName = ruleName, typescriptOnly = typescriptOnly)
-    __obj.updateDynamic("type")(`type`)
-    if (codeExamples != null) __obj.updateDynamic("codeExamples")(codeExamples)
-    if (deprecationMessage != null) __obj.updateDynamic("deprecationMessage")(deprecationMessage)
-    if (descriptionDetails != null) __obj.updateDynamic("descriptionDetails")(descriptionDetails)
-    if (!js.isUndefined(hasFix)) __obj.updateDynamic("hasFix")(hasFix)
-    if (optionExamples != null) __obj.updateDynamic("optionExamples")(optionExamples)
-    if (rationale != null) __obj.updateDynamic("rationale")(rationale)
-    if (!js.isUndefined(requiresTypeInfo)) __obj.updateDynamic("requiresTypeInfo")(requiresTypeInfo)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], optionsDescription = optionsDescription.asInstanceOf[js.Any], ruleName = ruleName.asInstanceOf[js.Any], typescriptOnly = typescriptOnly.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (codeExamples != null) __obj.updateDynamic("codeExamples")(codeExamples.asInstanceOf[js.Any])
+    if (deprecationMessage != null) __obj.updateDynamic("deprecationMessage")(deprecationMessage.asInstanceOf[js.Any])
+    if (descriptionDetails != null) __obj.updateDynamic("descriptionDetails")(descriptionDetails.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasFix)) __obj.updateDynamic("hasFix")(hasFix.asInstanceOf[js.Any])
+    if (optionExamples != null) __obj.updateDynamic("optionExamples")(optionExamples.asInstanceOf[js.Any])
+    if (rationale != null) __obj.updateDynamic("rationale")(rationale.asInstanceOf[js.Any])
+    if (!js.isUndefined(requiresTypeInfo)) __obj.updateDynamic("requiresTypeInfo")(requiresTypeInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRuleMetadata]
   }
 }

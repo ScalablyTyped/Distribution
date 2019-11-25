@@ -14,7 +14,7 @@ trait ReactControllerProps extends js.Object {
 object ReactControllerProps {
   @scala.inline
   def apply(isOpen: Boolean, onDidDismiss: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit = null): ReactControllerProps = {
-    val __obj = js.Dynamic.literal(isOpen = isOpen)
+    val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any])
     if (onDidDismiss != null) __obj.updateDynamic("onDidDismiss")(js.Any.fromFunction1(onDidDismiss))
     __obj.asInstanceOf[ReactControllerProps]
   }

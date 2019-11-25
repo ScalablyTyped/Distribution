@@ -25,7 +25,7 @@ object WorkbookView {
     x: Double,
     y: Double
   ): WorkbookView = {
-    val __obj = js.Dynamic.literal(activeTab = activeTab, firstSheet = firstSheet, height = height, visibility = visibility, width = width, x = x, y = y)
+    val __obj = js.Dynamic.literal(activeTab = activeTab.asInstanceOf[js.Any], firstSheet = firstSheet.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], visibility = visibility.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WorkbookView]
   }

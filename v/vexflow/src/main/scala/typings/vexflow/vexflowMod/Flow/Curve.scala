@@ -18,6 +18,5 @@ class Curve protected ()
 @js.native
 object Curve extends js.Object {
   var DEBUG: Boolean = js.native
-  type Position = typings.vexflow.Vex.Flow.Curve.Position
 }
 

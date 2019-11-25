@@ -22,10 +22,10 @@ object TouchSwipeEvent {
     event: JQueryEventObject = null,
     touch: TouchEventOptions = null
   ): TouchSwipeEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (direction != null) __obj.updateDynamic("direction")(direction)
-    if (event != null) __obj.updateDynamic("event")(event)
-    if (touch != null) __obj.updateDynamic("touch")(touch)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
+    if (touch != null) __obj.updateDynamic("touch")(touch.asInstanceOf[js.Any])
     __obj.asInstanceOf[TouchSwipeEvent]
   }
 }

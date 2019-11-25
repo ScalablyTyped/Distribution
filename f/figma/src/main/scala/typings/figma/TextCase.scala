@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait TextCase extends js.Object
 
+object TextCase {
+  @scala.inline
+  def LOWER: typings.figma.figmaStrings.LOWER = this.cast("LOWER")
+  @scala.inline
+  def ORIGINAL: typings.figma.figmaStrings.ORIGINAL = this.cast("ORIGINAL")
+  @scala.inline
+  def TITLE: typings.figma.figmaStrings.TITLE = this.cast("TITLE")
+  @scala.inline
+  def UPPER: typings.figma.figmaStrings.UPPER = this.cast("UPPER")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

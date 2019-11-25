@@ -57,7 +57,7 @@ object collectionsjsMod extends js.Object {
     def unique(callback: js.Function1[/* item */ T, _]): Collection[T] = js.native
     def values(): Collection[T] = js.native
     def where(callback: js.Function1[/* item */ T, Boolean]): Collection[T] = js.native
-    def where[K /* <: String */](key: K, value: /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any): Collection[T] = js.native
+    def where[K /* <: String */](key: K, value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any): Collection[T] = js.native
     def zip(array: js.Array[T]): Collection[T] = js.native
     def zip(array: Collection[T]): Collection[T] = js.native
   }

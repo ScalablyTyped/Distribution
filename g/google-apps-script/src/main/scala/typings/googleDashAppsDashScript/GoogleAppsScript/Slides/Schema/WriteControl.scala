@@ -12,7 +12,7 @@ object WriteControl {
   @scala.inline
   def apply(requiredRevisionId: String = null): WriteControl = {
     val __obj = js.Dynamic.literal()
-    if (requiredRevisionId != null) __obj.updateDynamic("requiredRevisionId")(requiredRevisionId)
+    if (requiredRevisionId != null) __obj.updateDynamic("requiredRevisionId")(requiredRevisionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[WriteControl]
   }
 }

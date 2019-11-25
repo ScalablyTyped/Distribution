@@ -26,9 +26,9 @@ trait ListShardsOutput extends OutputTypesUnion {
 object ListShardsOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, NextToken: String = null, Shards: js.Array[_UnmarshalledShard] = null): ListShardsOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
-    if (Shards != null) __obj.updateDynamic("Shards")(Shards)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
+    if (Shards != null) __obj.updateDynamic("Shards")(Shards.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListShardsOutput]
   }
 }

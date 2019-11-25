@@ -36,9 +36,9 @@ object _ExportJobResource {
     SegmentVersion: Int | Double = null
   ): _ExportJobResource = {
     val __obj = js.Dynamic.literal()
-    if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn)
-    if (S3UrlPrefix != null) __obj.updateDynamic("S3UrlPrefix")(S3UrlPrefix)
-    if (SegmentId != null) __obj.updateDynamic("SegmentId")(SegmentId)
+    if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn.asInstanceOf[js.Any])
+    if (S3UrlPrefix != null) __obj.updateDynamic("S3UrlPrefix")(S3UrlPrefix.asInstanceOf[js.Any])
+    if (SegmentId != null) __obj.updateDynamic("SegmentId")(SegmentId.asInstanceOf[js.Any])
     if (SegmentVersion != null) __obj.updateDynamic("SegmentVersion")(SegmentVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[_ExportJobResource]
   }

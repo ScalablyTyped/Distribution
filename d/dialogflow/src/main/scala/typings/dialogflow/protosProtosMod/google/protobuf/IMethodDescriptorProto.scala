@@ -31,12 +31,12 @@ object IMethodDescriptorProto {
     serverStreaming: js.UndefOr[Boolean] = js.undefined
   ): IMethodDescriptorProto = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(clientStreaming)) __obj.updateDynamic("clientStreaming")(clientStreaming)
-    if (inputType != null) __obj.updateDynamic("inputType")(inputType)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (outputType != null) __obj.updateDynamic("outputType")(outputType)
-    if (!js.isUndefined(serverStreaming)) __obj.updateDynamic("serverStreaming")(serverStreaming)
+    if (!js.isUndefined(clientStreaming)) __obj.updateDynamic("clientStreaming")(clientStreaming.asInstanceOf[js.Any])
+    if (inputType != null) __obj.updateDynamic("inputType")(inputType.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (outputType != null) __obj.updateDynamic("outputType")(outputType.asInstanceOf[js.Any])
+    if (!js.isUndefined(serverStreaming)) __obj.updateDynamic("serverStreaming")(serverStreaming.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMethodDescriptorProto]
   }
 }

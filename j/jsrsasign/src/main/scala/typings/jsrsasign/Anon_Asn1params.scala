@@ -14,9 +14,9 @@ trait Anon_Asn1params extends js.Object {
 object Anon_Asn1params {
   @scala.inline
   def apply(name: String, asn1params: ASN1Object = null, paramempty: js.UndefOr[Boolean] = js.undefined): Anon_Asn1params = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (asn1params != null) __obj.updateDynamic("asn1params")(asn1params)
-    if (!js.isUndefined(paramempty)) __obj.updateDynamic("paramempty")(paramempty)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (asn1params != null) __obj.updateDynamic("asn1params")(asn1params.asInstanceOf[js.Any])
+    if (!js.isUndefined(paramempty)) __obj.updateDynamic("paramempty")(paramempty.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Asn1params]
   }
 }

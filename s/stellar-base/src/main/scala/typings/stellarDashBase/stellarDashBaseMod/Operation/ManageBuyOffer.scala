@@ -25,9 +25,9 @@ object ManageBuyOffer {
     `type`: typings.stellarDashBase.stellarDashBaseMod.OperationType.ManageBuyOffer,
     source: String = null
   ): ManageBuyOffer = {
-    val __obj = js.Dynamic.literal(buyAmount = buyAmount, buying = buying, offerId = offerId, price = price, selling = selling)
-    __obj.updateDynamic("type")(`type`)
-    if (source != null) __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(buyAmount = buyAmount.asInstanceOf[js.Any], buying = buying.asInstanceOf[js.Any], offerId = offerId.asInstanceOf[js.Any], price = price.asInstanceOf[js.Any], selling = selling.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManageBuyOffer]
   }
 }

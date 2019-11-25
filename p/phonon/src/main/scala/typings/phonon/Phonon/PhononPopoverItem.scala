@@ -12,7 +12,7 @@ trait PhononPopoverItem extends js.Object {
 object PhononPopoverItem {
   @scala.inline
   def apply(text: String, value: String): PhononPopoverItem = {
-    val __obj = js.Dynamic.literal(text = text, value = value)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PhononPopoverItem]
   }

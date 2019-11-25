@@ -24,7 +24,7 @@ trait ILegendItem extends ICompositeSprite {
 object ILegendItem {
   @scala.inline
   def apply(
-    add: (/* key */ js.UndefOr[js.Any], /* o */ js.UndefOr[js.Any]) => _ = null,
+    add: (/* key */ js.UndefOr[js.Any], /* obj */ js.UndefOr[js.Any]) => _ = null,
     addAll: /* objs */ js.UndefOr[js.Any] => Unit = null,
     addCls: /* cls */ js.UndefOr[java.lang.String] => Unit = null,
     addEvents: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
@@ -33,7 +33,7 @@ object ILegendItem {
     alias: Array = null,
     allowFunctions: js.UndefOr[Boolean] = js.undefined,
     alternateClassName: js.Any = null,
-    animate: /* config */ js.UndefOr[js.Any] => _ = null,
+    animate: js.Any | (js.Function1[/* config */ js.UndefOr[js.Any], _]) = null,
     callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
     callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
@@ -113,7 +113,7 @@ object ILegendItem {
     setStyle: /* style */ js.UndefOr[java.lang.String] => Unit = null,
     show: /* redraw */ js.UndefOr[Boolean] => ILegendItem = null,
     singleton: js.UndefOr[Boolean] = js.undefined,
-    sort: (/* sorters */ js.UndefOr[js.Any], /* direction */ js.UndefOr[java.lang.String]) => Array = null,
+    sort: (js.UndefOr[js.Any], js.UndefOr[java.lang.String]) => Array = null,
     sortBy: /* sorterFn */ js.UndefOr[js.Any] => Unit = null,
     sortByKey: (/* direction */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any]) => Unit = null,
     sortRoot: java.lang.String = null,
@@ -137,10 +137,10 @@ object ILegendItem {
     if (addEvents != null) __obj.updateDynamic("addEvents")(js.Any.fromFunction1(addEvents))
     if (addListener != null) __obj.updateDynamic("addListener")(js.Any.fromFunction4(addListener))
     if (addManagedListener != null) __obj.updateDynamic("addManagedListener")(js.Any.fromFunction5(addManagedListener))
-    if (alias != null) __obj.updateDynamic("alias")(alias)
-    if (!js.isUndefined(allowFunctions)) __obj.updateDynamic("allowFunctions")(allowFunctions)
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
-    if (animate != null) __obj.updateDynamic("animate")(js.Any.fromFunction1(animate))
+    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowFunctions)) __obj.updateDynamic("allowFunctions")(allowFunctions.asInstanceOf[js.Any])
+    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
+    if (animate != null) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
     if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
     if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
     if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
@@ -149,16 +149,16 @@ object ILegendItem {
     if (clearManagedListeners != null) __obj.updateDynamic("clearManagedListeners")(js.Any.fromFunction0(clearManagedListeners))
     if (clone != null) __obj.updateDynamic("clone")(js.Any.fromFunction0(clone))
     if (collect != null) __obj.updateDynamic("collect")(js.Any.fromFunction3(collect))
-    if (config != null) __obj.updateDynamic("config")(config)
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
     if (contains != null) __obj.updateDynamic("contains")(js.Any.fromFunction1(contains))
     if (containsKey != null) __obj.updateDynamic("containsKey")(js.Any.fromFunction1(containsKey))
     if (createLegend != null) __obj.updateDynamic("createLegend")(js.Any.fromFunction1(createLegend))
-    if (defaultSortDirection != null) __obj.updateDynamic("defaultSortDirection")(defaultSortDirection)
+    if (defaultSortDirection != null) __obj.updateDynamic("defaultSortDirection")(defaultSortDirection.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     if (each != null) __obj.updateDynamic("each")(js.Any.fromFunction2(each))
     if (eachKey != null) __obj.updateDynamic("eachKey")(js.Any.fromFunction2(eachKey))
     if (enableBubble != null) __obj.updateDynamic("enableBubble")(js.Any.fromFunction1(enableBubble))
-    if (extend != null) __obj.updateDynamic("extend")(extend)
+    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction4(filter))
     if (filterBy != null) __obj.updateDynamic("filterBy")(js.Any.fromFunction2(filterBy))
     if (find != null) __obj.updateDynamic("find")(js.Any.fromFunction0(find))
@@ -182,20 +182,20 @@ object ILegendItem {
     if (getRange != null) __obj.updateDynamic("getRange")(js.Any.fromFunction2(getRange))
     if (hasActiveFx != null) __obj.updateDynamic("hasActiveFx")(js.Any.fromFunction0(hasActiveFx))
     if (hasListener != null) __obj.updateDynamic("hasListener")(js.Any.fromFunction1(hasListener))
-    if (hasListeners != null) __obj.updateDynamic("hasListeners")(hasListeners)
+    if (hasListeners != null) __obj.updateDynamic("hasListeners")(hasListeners.asInstanceOf[js.Any])
     if (hide != null) __obj.updateDynamic("hide")(js.Any.fromFunction1(hide))
     if (indexOf != null) __obj.updateDynamic("indexOf")(js.Any.fromFunction1(indexOf))
     if (indexOfKey != null) __obj.updateDynamic("indexOfKey")(js.Any.fromFunction1(indexOfKey))
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
+    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (initSortable != null) __obj.updateDynamic("initSortable")(js.Any.fromFunction0(initSortable))
     if (insert != null) __obj.updateDynamic("insert")(js.Any.fromFunction3(insert))
-    if (!js.isUndefined(isMixedCollection)) __obj.updateDynamic("isMixedCollection")(isMixedCollection)
-    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable)
-    if (!js.isUndefined(isSortable)) __obj.updateDynamic("isSortable")(isSortable)
+    if (!js.isUndefined(isMixedCollection)) __obj.updateDynamic("isMixedCollection")(isMixedCollection.asInstanceOf[js.Any])
+    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSortable)) __obj.updateDynamic("isSortable")(isSortable.asInstanceOf[js.Any])
     if (last != null) __obj.updateDynamic("last")(js.Any.fromFunction0(last))
-    if (listeners != null) __obj.updateDynamic("listeners")(listeners)
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins)
+    if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
+    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5(mon))
     if (mun != null) __obj.updateDynamic("mun")(js.Any.fromFunction4(mun))
     if (on != null) __obj.updateDynamic("on")(js.Any.fromFunction4(on))
@@ -211,21 +211,21 @@ object ILegendItem {
     if (removeRange != null) __obj.updateDynamic("removeRange")(js.Any.fromFunction2(removeRange))
     if (reorder != null) __obj.updateDynamic("reorder")(js.Any.fromFunction1(reorder))
     if (replace != null) __obj.updateDynamic("replace")(js.Any.fromFunction2(replace))
-    if (requires != null) __obj.updateDynamic("requires")(requires)
+    if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
     if (resumeEvent != null) __obj.updateDynamic("resumeEvent")(js.Any.fromFunction1(resumeEvent))
     if (resumeEvents != null) __obj.updateDynamic("resumeEvents")(js.Any.fromFunction0(resumeEvents))
-    if (self != null) __obj.updateDynamic("self")(self)
+    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (sequenceFx != null) __obj.updateDynamic("sequenceFx")(js.Any.fromFunction0(sequenceFx))
     if (setAttributes != null) __obj.updateDynamic("setAttributes")(js.Any.fromFunction2(setAttributes))
     if (setStyle != null) __obj.updateDynamic("setStyle")(js.Any.fromFunction1(setStyle))
     if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction1(show))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(js.Any.fromFunction2(sort))
     if (sortBy != null) __obj.updateDynamic("sortBy")(js.Any.fromFunction1(sortBy))
     if (sortByKey != null) __obj.updateDynamic("sortByKey")(js.Any.fromFunction2(sortByKey))
-    if (sortRoot != null) __obj.updateDynamic("sortRoot")(sortRoot)
-    if (sorters != null) __obj.updateDynamic("sorters")(sorters)
-    if (statics != null) __obj.updateDynamic("statics")(statics)
+    if (sortRoot != null) __obj.updateDynamic("sortRoot")(sortRoot.asInstanceOf[js.Any])
+    if (sorters != null) __obj.updateDynamic("sorters")(sorters.asInstanceOf[js.Any])
+    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (stopAnimation != null) __obj.updateDynamic("stopAnimation")(js.Any.fromFunction0(stopAnimation))
     if (stopFx != null) __obj.updateDynamic("stopFx")(js.Any.fromFunction0(stopFx))
     if (sum != null) __obj.updateDynamic("sum")(js.Any.fromFunction4(sum))
@@ -235,7 +235,7 @@ object ILegendItem {
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction3(un))
     if (updateKey != null) __obj.updateDynamic("updateKey")(js.Any.fromFunction2(updateKey))
     if (updatePosition != null) __obj.updateDynamic("updatePosition")(js.Any.fromFunction1(updatePosition))
-    if (uses != null) __obj.updateDynamic("uses")(uses)
+    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILegendItem]
   }
 }

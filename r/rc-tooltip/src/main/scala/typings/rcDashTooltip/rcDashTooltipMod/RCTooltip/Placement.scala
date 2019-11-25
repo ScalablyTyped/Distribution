@@ -16,3 +16,24 @@ import scala.scalajs.js.annotation._
 */
 trait Placement extends js.Object
 
+object Placement {
+  @scala.inline
+  def bottom: typings.rcDashTooltip.rcDashTooltipStrings.bottom = this.cast("bottom")
+  @scala.inline
+  def bottomLeft: typings.rcDashTooltip.rcDashTooltipStrings.bottomLeft = this.cast("bottomLeft")
+  @scala.inline
+  def bottomRight: typings.rcDashTooltip.rcDashTooltipStrings.bottomRight = this.cast("bottomRight")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def left: typings.rcDashTooltip.rcDashTooltipStrings.left = this.cast("left")
+  @scala.inline
+  def right: typings.rcDashTooltip.rcDashTooltipStrings.right = this.cast("right")
+  @scala.inline
+  def top: typings.rcDashTooltip.rcDashTooltipStrings.top = this.cast("top")
+  @scala.inline
+  def topLeft: typings.rcDashTooltip.rcDashTooltipStrings.topLeft = this.cast("topLeft")
+  @scala.inline
+  def topRight: typings.rcDashTooltip.rcDashTooltipStrings.topRight = this.cast("topRight")
+}
+

@@ -25,11 +25,11 @@ object CustomReporterResult {
     pendingReason: String = null,
     status: String = null
   ): CustomReporterResult = {
-    val __obj = js.Dynamic.literal(description = description, fullName = fullName, id = id)
-    if (failedExpectations != null) __obj.updateDynamic("failedExpectations")(failedExpectations)
-    if (passedExpectations != null) __obj.updateDynamic("passedExpectations")(passedExpectations)
-    if (pendingReason != null) __obj.updateDynamic("pendingReason")(pendingReason)
-    if (status != null) __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], fullName = fullName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
+    if (failedExpectations != null) __obj.updateDynamic("failedExpectations")(failedExpectations.asInstanceOf[js.Any])
+    if (passedExpectations != null) __obj.updateDynamic("passedExpectations")(passedExpectations.asInstanceOf[js.Any])
+    if (pendingReason != null) __obj.updateDynamic("pendingReason")(pendingReason.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomReporterResult]
   }
 }

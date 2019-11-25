@@ -24,8 +24,8 @@ object ListLogEntriesResponse {
   @scala.inline
   def apply(entries: js.Array[LogEntry] = null, nextPageToken: String = null): ListLogEntriesResponse = {
     val __obj = js.Dynamic.literal()
-    if (entries != null) __obj.updateDynamic("entries")(entries)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (entries != null) __obj.updateDynamic("entries")(entries.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListLogEntriesResponse]
   }
 }

@@ -11,7 +11,7 @@ trait Anon_EnumValuesAnonAscendingDescendingNumber extends js.Object {
 object Anon_EnumValuesAnonAscendingDescendingNumber {
   @scala.inline
   def apply(enumValues: Anon_AscendingDescendingNumber): Anon_EnumValuesAnonAscendingDescendingNumber = {
-    val __obj = js.Dynamic.literal(enumValues = enumValues)
+    val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EnumValuesAnonAscendingDescendingNumber]
   }

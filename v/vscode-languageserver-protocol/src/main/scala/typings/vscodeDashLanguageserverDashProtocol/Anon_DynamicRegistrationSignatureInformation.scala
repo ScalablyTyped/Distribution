@@ -23,8 +23,8 @@ object Anon_DynamicRegistrationSignatureInformation {
     signatureInformation: Anon_DocumentationFormat = null
   ): Anon_DynamicRegistrationSignatureInformation = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dynamicRegistration)) __obj.updateDynamic("dynamicRegistration")(dynamicRegistration)
-    if (signatureInformation != null) __obj.updateDynamic("signatureInformation")(signatureInformation)
+    if (!js.isUndefined(dynamicRegistration)) __obj.updateDynamic("dynamicRegistration")(dynamicRegistration.asInstanceOf[js.Any])
+    if (signatureInformation != null) __obj.updateDynamic("signatureInformation")(signatureInformation.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DynamicRegistrationSignatureInformation]
   }
 }

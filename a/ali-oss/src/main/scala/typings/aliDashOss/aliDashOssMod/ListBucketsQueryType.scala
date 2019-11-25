@@ -17,9 +17,9 @@ object ListBucketsQueryType {
   @scala.inline
   def apply(marker: String = null, `max-keys`: String | Double = null, prefix: String = null): ListBucketsQueryType = {
     val __obj = js.Dynamic.literal()
-    if (marker != null) __obj.updateDynamic("marker")(marker)
+    if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
     if (`max-keys` != null) __obj.updateDynamic("max-keys")(`max-keys`.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBucketsQueryType]
   }
 }

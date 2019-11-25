@@ -26,10 +26,10 @@ object ApolloCurrentResult {
     errors: js.Array[GraphQLError] = null,
     partial: js.UndefOr[Boolean] = js.undefined
   ): ApolloCurrentResult[T] = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], loading = loading, networkStatus = networkStatus)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (errors != null) __obj.updateDynamic("errors")(errors)
-    if (!js.isUndefined(partial)) __obj.updateDynamic("partial")(partial)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any], networkStatus = networkStatus.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
+    if (!js.isUndefined(partial)) __obj.updateDynamic("partial")(partial.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApolloCurrentResult[T]]
   }
 }

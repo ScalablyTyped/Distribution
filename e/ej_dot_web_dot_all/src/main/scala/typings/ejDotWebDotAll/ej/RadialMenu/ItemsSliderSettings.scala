@@ -22,7 +22,7 @@ object ItemsSliderSettings {
     val __obj = js.Dynamic.literal()
     if (labelSpace != null) __obj.updateDynamic("labelSpace")(labelSpace.asInstanceOf[js.Any])
     if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
-    if (ticks != null) __obj.updateDynamic("ticks")(ticks)
+    if (ticks != null) __obj.updateDynamic("ticks")(ticks.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemsSliderSettings]
   }
 }

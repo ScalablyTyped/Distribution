@@ -13,7 +13,7 @@ object GoogleCloudMlV1__PredictRequest {
   @scala.inline
   def apply(httpBody: GoogleApi__HttpBody = null): GoogleCloudMlV1__PredictRequest = {
     val __obj = js.Dynamic.literal()
-    if (httpBody != null) __obj.updateDynamic("httpBody")(httpBody)
+    if (httpBody != null) __obj.updateDynamic("httpBody")(httpBody.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudMlV1__PredictRequest]
   }
 }

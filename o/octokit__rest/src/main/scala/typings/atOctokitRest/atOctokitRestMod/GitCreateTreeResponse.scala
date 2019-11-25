@@ -13,7 +13,7 @@ trait GitCreateTreeResponse extends js.Object {
 object GitCreateTreeResponse {
   @scala.inline
   def apply(sha: String, tree: js.Array[GitCreateTreeResponseTreeItem], url: String): GitCreateTreeResponse = {
-    val __obj = js.Dynamic.literal(sha = sha, tree = tree, url = url)
+    val __obj = js.Dynamic.literal(sha = sha.asInstanceOf[js.Any], tree = tree.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GitCreateTreeResponse]
   }

@@ -55,7 +55,7 @@ object NodeSpec {
     taints: js.Array[Taint],
     unschedulable: Boolean
   ): NodeSpec = {
-    val __obj = js.Dynamic.literal(configSource = configSource, externalID = externalID, podCIDR = podCIDR, podCIDRs = podCIDRs, providerID = providerID, taints = taints, unschedulable = unschedulable)
+    val __obj = js.Dynamic.literal(configSource = configSource.asInstanceOf[js.Any], externalID = externalID.asInstanceOf[js.Any], podCIDR = podCIDR.asInstanceOf[js.Any], podCIDRs = podCIDRs.asInstanceOf[js.Any], providerID = providerID.asInstanceOf[js.Any], taints = taints.asInstanceOf[js.Any], unschedulable = unschedulable.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NodeSpec]
   }

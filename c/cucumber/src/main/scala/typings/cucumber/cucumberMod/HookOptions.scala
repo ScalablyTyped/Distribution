@@ -13,7 +13,7 @@ object HookOptions {
   @scala.inline
   def apply(tags: js.Any = null, timeout: Int | Double = null): HookOptions = {
     val __obj = js.Dynamic.literal()
-    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[HookOptions]
   }

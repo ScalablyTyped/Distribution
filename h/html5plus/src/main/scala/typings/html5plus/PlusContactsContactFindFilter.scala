@@ -35,9 +35,9 @@ object PlusContactsContactFindFilter {
   @scala.inline
   def apply(field: String = null, logic: String = null, value: String = null): PlusContactsContactFindFilter = {
     val __obj = js.Dynamic.literal()
-    if (field != null) __obj.updateDynamic("field")(field)
-    if (logic != null) __obj.updateDynamic("logic")(logic)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    if (logic != null) __obj.updateDynamic("logic")(logic.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusContactsContactFindFilter]
   }
 }

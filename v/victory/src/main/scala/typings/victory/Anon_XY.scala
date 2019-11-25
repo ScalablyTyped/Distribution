@@ -14,8 +14,8 @@ trait Anon_XY extends _DomainPropType {
 object Anon_XY {
   @scala.inline
   def apply(y: DomainTuple, x: DomainTuple = null): Anon_XY = {
-    val __obj = js.Dynamic.literal(y = y)
-    if (x != null) __obj.updateDynamic("x")(x)
+    val __obj = js.Dynamic.literal(y = y.asInstanceOf[js.Any])
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_XY]
   }
 }

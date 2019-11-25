@@ -12,7 +12,7 @@ object IConnectFlashOptions {
   @scala.inline
   def apply(unsafe: js.UndefOr[Boolean] = js.undefined): IConnectFlashOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(unsafe)) __obj.updateDynamic("unsafe")(unsafe)
+    if (!js.isUndefined(unsafe)) __obj.updateDynamic("unsafe")(unsafe.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConnectFlashOptions]
   }
 }

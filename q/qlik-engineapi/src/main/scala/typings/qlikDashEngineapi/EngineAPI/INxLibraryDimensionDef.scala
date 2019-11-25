@@ -34,7 +34,7 @@ object INxLibraryDimensionDef {
     qGrouping: NxGrpType,
     qLabelExpression: String
   ): INxLibraryDimensionDef = {
-    val __obj = js.Dynamic.literal(qFieldDefs = qFieldDefs, qFieldLabels = qFieldLabels, qGrouping = qGrouping.asInstanceOf[js.Any], qLabelExpression = qLabelExpression)
+    val __obj = js.Dynamic.literal(qFieldDefs = qFieldDefs.asInstanceOf[js.Any], qFieldLabels = qFieldLabels.asInstanceOf[js.Any], qGrouping = qGrouping.asInstanceOf[js.Any], qLabelExpression = qLabelExpression.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[INxLibraryDimensionDef]
   }

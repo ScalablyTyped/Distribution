@@ -56,19 +56,19 @@ object SpecimenProcessing {
     timePeriod: Period = null
   ): SpecimenProcessing = {
     val __obj = js.Dynamic.literal()
-    if (_description != null) __obj.updateDynamic("_description")(_description)
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
-    if (_id != null) __obj.updateDynamic("_id")(_id)
-    if (_timeDateTime != null) __obj.updateDynamic("_timeDateTime")(_timeDateTime)
-    if (additive != null) __obj.updateDynamic("additive")(additive)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
-    if (procedure != null) __obj.updateDynamic("procedure")(procedure)
-    if (timeDateTime != null) __obj.updateDynamic("timeDateTime")(timeDateTime)
-    if (timePeriod != null) __obj.updateDynamic("timePeriod")(timePeriod)
+    if (_description != null) __obj.updateDynamic("_description")(_description.asInstanceOf[js.Any])
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
+    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
+    if (_timeDateTime != null) __obj.updateDynamic("_timeDateTime")(_timeDateTime.asInstanceOf[js.Any])
+    if (additive != null) __obj.updateDynamic("additive")(additive.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
+    if (procedure != null) __obj.updateDynamic("procedure")(procedure.asInstanceOf[js.Any])
+    if (timeDateTime != null) __obj.updateDynamic("timeDateTime")(timeDateTime.asInstanceOf[js.Any])
+    if (timePeriod != null) __obj.updateDynamic("timePeriod")(timePeriod.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpecimenProcessing]
   }
 }

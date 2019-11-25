@@ -11,7 +11,7 @@ trait Anon_Likelihood extends js.Object {
 object Anon_Likelihood {
   @scala.inline
   def apply(likelihood: Double): Anon_Likelihood = {
-    val __obj = js.Dynamic.literal(likelihood = likelihood)
+    val __obj = js.Dynamic.literal(likelihood = likelihood.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Likelihood]
   }

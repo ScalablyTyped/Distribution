@@ -25,9 +25,9 @@ object BootstrapModeSettings {
     visibilityTester: js.Any = null
   ): BootstrapModeSettings = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (visibilityTester != null) __obj.updateDynamic("visibilityTester")(visibilityTester)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (visibilityTester != null) __obj.updateDynamic("visibilityTester")(visibilityTester.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootstrapModeSettings]
   }
 }

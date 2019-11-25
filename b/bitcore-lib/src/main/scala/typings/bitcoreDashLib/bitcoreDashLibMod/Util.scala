@@ -12,7 +12,7 @@ trait Util extends js.Object {
 object Util {
   @scala.inline
   def apply(buffer: Anon_A): Util = {
-    val __obj = js.Dynamic.literal(buffer = buffer)
+    val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Util]
   }

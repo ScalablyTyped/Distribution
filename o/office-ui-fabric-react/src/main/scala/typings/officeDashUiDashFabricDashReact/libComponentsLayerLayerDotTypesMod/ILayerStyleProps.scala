@@ -23,9 +23,9 @@ trait ILayerStyleProps extends js.Object {
 object ILayerStyleProps {
   @scala.inline
   def apply(theme: ITheme, className: String = null, isNotHost: js.UndefOr[Boolean] = js.undefined): ILayerStyleProps = {
-    val __obj = js.Dynamic.literal(theme = theme)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(isNotHost)) __obj.updateDynamic("isNotHost")(isNotHost)
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(isNotHost)) __obj.updateDynamic("isNotHost")(isNotHost.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILayerStyleProps]
   }
 }

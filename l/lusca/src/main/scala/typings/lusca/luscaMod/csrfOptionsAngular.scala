@@ -14,7 +14,7 @@ trait csrfOptionsAngular extends csrfOptionsAngularOrNonAngular {
 object csrfOptionsAngular {
   @scala.inline
   def apply(angular: `true`, cookie: String | Anon_Options = null): csrfOptionsAngular = {
-    val __obj = js.Dynamic.literal(angular = angular)
+    val __obj = js.Dynamic.literal(angular = angular.asInstanceOf[js.Any])
     if (cookie != null) __obj.updateDynamic("cookie")(cookie.asInstanceOf[js.Any])
     __obj.asInstanceOf[csrfOptionsAngular]
   }

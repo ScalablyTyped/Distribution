@@ -15,7 +15,7 @@ object BaseOperation {
   def apply[T /* <: OperationType */](`type`: T, source: String = null): BaseOperation[T] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseOperation[T]]
   }
 }

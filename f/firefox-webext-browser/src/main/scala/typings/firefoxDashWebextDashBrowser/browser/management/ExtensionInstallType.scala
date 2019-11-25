@@ -19,3 +19,16 @@ import scala.scalajs.js.annotation._
 */
 trait ExtensionInstallType extends js.Object
 
+object ExtensionInstallType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def development: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.development = this.cast("development")
+  @scala.inline
+  def normal: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.normal = this.cast("normal")
+  @scala.inline
+  def other: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.other = this.cast("other")
+  @scala.inline
+  def sideload: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.sideload = this.cast("sideload")
+}
+

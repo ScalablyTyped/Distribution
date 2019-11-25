@@ -20,9 +20,9 @@ trait ReposTransferParams extends js.Object {
 object ReposTransferParams {
   @scala.inline
   def apply(owner: String, repo: String, new_owner: String = null, team_ids: js.Array[Double] = null): ReposTransferParams = {
-    val __obj = js.Dynamic.literal(owner = owner, repo = repo)
-    if (new_owner != null) __obj.updateDynamic("new_owner")(new_owner)
-    if (team_ids != null) __obj.updateDynamic("team_ids")(team_ids)
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
+    if (new_owner != null) __obj.updateDynamic("new_owner")(new_owner.asInstanceOf[js.Any])
+    if (team_ids != null) __obj.updateDynamic("team_ids")(team_ids.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposTransferParams]
   }
 }

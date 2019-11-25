@@ -35,7 +35,7 @@ object Anon_AliasMemberGroupRole {
     subscriptionAlias: Double,
     unknown: Double
   ): Anon_AliasMemberGroupRole = {
-    val __obj = js.Dynamic.literal(aliasMemberGroupRole = aliasMemberGroupRole, directMember = directMember, directMemberGroupRole = directMemberGroupRole, follows = follows, groupAlias = groupAlias, inDirectMemberGroupRole = inDirectMemberGroupRole, indirectMember = indirectMember, personal = personal, personalAlias = personalAlias, singleRole = singleRole, subscriptionAlias = subscriptionAlias, unknown = unknown)
+    val __obj = js.Dynamic.literal(aliasMemberGroupRole = aliasMemberGroupRole.asInstanceOf[js.Any], directMember = directMember.asInstanceOf[js.Any], directMemberGroupRole = directMemberGroupRole.asInstanceOf[js.Any], follows = follows.asInstanceOf[js.Any], groupAlias = groupAlias.asInstanceOf[js.Any], inDirectMemberGroupRole = inDirectMemberGroupRole.asInstanceOf[js.Any], indirectMember = indirectMember.asInstanceOf[js.Any], personal = personal.asInstanceOf[js.Any], personalAlias = personalAlias.asInstanceOf[js.Any], singleRole = singleRole.asInstanceOf[js.Any], subscriptionAlias = subscriptionAlias.asInstanceOf[js.Any], unknown = unknown.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AliasMemberGroupRole]
   }

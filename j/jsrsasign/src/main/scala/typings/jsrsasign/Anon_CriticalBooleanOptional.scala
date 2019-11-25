@@ -12,7 +12,7 @@ object Anon_CriticalBooleanOptional {
   @scala.inline
   def apply(critical: js.UndefOr[Boolean] = js.undefined): Anon_CriticalBooleanOptional = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(critical)) __obj.updateDynamic("critical")(critical)
+    if (!js.isUndefined(critical)) __obj.updateDynamic("critical")(critical.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CriticalBooleanOptional]
   }
 }

@@ -32,11 +32,11 @@ object HistoryChangeEventArgs {
     diagramId: String = null
   ): HistoryChangeEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (Source != null) __obj.updateDynamic("Source")(Source)
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (!js.isUndefined(cause)) __obj.updateDynamic("cause")(cause)
-    if (changes != null) __obj.updateDynamic("changes")(changes)
-    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId)
+    if (Source != null) __obj.updateDynamic("Source")(Source.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(cause)) __obj.updateDynamic("cause")(cause.asInstanceOf[js.Any])
+    if (changes != null) __obj.updateDynamic("changes")(changes.asInstanceOf[js.Any])
+    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistoryChangeEventArgs]
   }
 }

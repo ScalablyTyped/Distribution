@@ -34,9 +34,9 @@ object GoogleActionsV2UiElementsLinkOutSuggestion {
     url: String = null
   ): GoogleActionsV2UiElementsLinkOutSuggestion = {
     val __obj = js.Dynamic.literal()
-    if (destinationName != null) __obj.updateDynamic("destinationName")(destinationName)
-    if (openUrlAction != null) __obj.updateDynamic("openUrlAction")(openUrlAction)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (destinationName != null) __obj.updateDynamic("destinationName")(destinationName.asInstanceOf[js.Any])
+    if (openUrlAction != null) __obj.updateDynamic("openUrlAction")(openUrlAction.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2UiElementsLinkOutSuggestion]
   }
 }

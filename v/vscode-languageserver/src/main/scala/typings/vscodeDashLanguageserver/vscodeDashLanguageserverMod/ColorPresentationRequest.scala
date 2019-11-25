@@ -2,7 +2,6 @@ package typings.vscodeDashLanguageserver.vscodeDashLanguageserverMod
 
 import typings.vscodeDashLanguageserverDashProtocol.libProtocolDotColorProviderMod.ColorPresentationParams
 import typings.vscodeDashLanguageserverDashProtocol.libProtocolMod.TextDocumentRegistrationOptions
-import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.ColorPresentation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +11,9 @@ import scala.scalajs.js.annotation._
 object ColorPresentationRequest extends js.Object {
   val `type`: typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.RequestType[
     ColorPresentationParams, 
-    js.Array[ColorPresentation], 
+    js.Array[
+      typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.ColorPresentation
+    ], 
     Unit, 
     TextDocumentRegistrationOptions
   ] = js.native

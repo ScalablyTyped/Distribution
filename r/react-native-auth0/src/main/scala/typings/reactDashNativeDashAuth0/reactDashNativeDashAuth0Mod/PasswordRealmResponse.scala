@@ -24,8 +24,8 @@ object PasswordRealmResponse {
     tokenType: Bearer,
     refreshToken: String = null
   ): PasswordRealmResponse = {
-    val __obj = js.Dynamic.literal(accessToken = accessToken, expiresIn = expiresIn, idToken = idToken, scope = scope, tokenType = tokenType)
-    if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken)
+    val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any], expiresIn = expiresIn.asInstanceOf[js.Any], idToken = idToken.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], tokenType = tokenType.asInstanceOf[js.Any])
+    if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[PasswordRealmResponse]
   }
 }

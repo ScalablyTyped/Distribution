@@ -31,15 +31,15 @@ object ICookie {
     session: js.UndefOr[Boolean] = js.undefined,
     url: String = null
   ): ICookie = {
-    val __obj = js.Dynamic.literal(name = name, value = value)
-    if (domain != null) __obj.updateDynamic("domain")(domain)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
     if (expirationDate != null) __obj.updateDynamic("expirationDate")(expirationDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(hostOnly)) __obj.updateDynamic("hostOnly")(hostOnly)
-    if (!js.isUndefined(httpOnly)) __obj.updateDynamic("httpOnly")(httpOnly)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure)
-    if (!js.isUndefined(session)) __obj.updateDynamic("session")(session)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (!js.isUndefined(hostOnly)) __obj.updateDynamic("hostOnly")(hostOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(httpOnly)) __obj.updateDynamic("httpOnly")(httpOnly.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
+    if (!js.isUndefined(session)) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICookie]
   }
 }

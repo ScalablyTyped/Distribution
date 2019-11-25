@@ -33,12 +33,12 @@ object GoogleCloudVideointelligenceV1beta1_SafeSearchAnnotation {
     violent: String = null
   ): GoogleCloudVideointelligenceV1beta1_SafeSearchAnnotation = {
     val __obj = js.Dynamic.literal()
-    if (adult != null) __obj.updateDynamic("adult")(adult)
-    if (medical != null) __obj.updateDynamic("medical")(medical)
-    if (racy != null) __obj.updateDynamic("racy")(racy)
-    if (spoof != null) __obj.updateDynamic("spoof")(spoof)
-    if (timeOffset != null) __obj.updateDynamic("timeOffset")(timeOffset)
-    if (violent != null) __obj.updateDynamic("violent")(violent)
+    if (adult != null) __obj.updateDynamic("adult")(adult.asInstanceOf[js.Any])
+    if (medical != null) __obj.updateDynamic("medical")(medical.asInstanceOf[js.Any])
+    if (racy != null) __obj.updateDynamic("racy")(racy.asInstanceOf[js.Any])
+    if (spoof != null) __obj.updateDynamic("spoof")(spoof.asInstanceOf[js.Any])
+    if (timeOffset != null) __obj.updateDynamic("timeOffset")(timeOffset.asInstanceOf[js.Any])
+    if (violent != null) __obj.updateDynamic("violent")(violent.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1beta1_SafeSearchAnnotation]
   }
 }

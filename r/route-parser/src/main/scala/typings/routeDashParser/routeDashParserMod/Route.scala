@@ -16,7 +16,7 @@ trait Route[TParams /* <: js.Object */] extends js.Object {
     * var route = new Route('/:one/:two')
     * route.match('/foo/bar/') // -> {one: 'foo', two: 'bar'}
     */
-  def `match`(pathname: String): (/* import warning: ImportType.apply c Unsupported type mapping: 
+  def `match`(pathname: String): (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in keyof TParams ]: string}
     */ typings.routeDashParser.routeDashParserStrings.Route with js.Any) | `false`
   /**
@@ -32,7 +32,7 @@ trait Route[TParams /* <: js.Object */] extends js.Object {
 object Route {
   @scala.inline
   def apply[TParams /* <: js.Object */](
-    `match`: String => (/* import warning: ImportType.apply c Unsupported type mapping: 
+    `match`: String => (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in keyof TParams ]: string}
     */ typings.routeDashParser.routeDashParserStrings.Route with js.Any) | `false`,
     reverse: TParams => String | `false`

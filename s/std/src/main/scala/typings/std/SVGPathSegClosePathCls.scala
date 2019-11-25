@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("SVGPathSegClosePath")
 @js.native
-class SVGPathSegClosePathCls () extends SVGPathSegClosePath {
+class SVGPathSegClosePathCls () extends SVGPathSeg {
   /* CompleteClass */
   override val PATHSEG_ARC_ABS: Double = js.native
   /* CompleteClass */

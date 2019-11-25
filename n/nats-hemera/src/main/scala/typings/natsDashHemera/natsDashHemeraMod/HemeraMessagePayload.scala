@@ -16,8 +16,8 @@ trait HemeraMessagePayload extends js.Object {
 object HemeraMessagePayload {
   @scala.inline
   def apply(meta: js.Any, request: Request$, result: js.Any, trace: Trace$, error: Error = null): HemeraMessagePayload = {
-    val __obj = js.Dynamic.literal(meta = meta, request = request, result = result, trace = trace)
-    if (error != null) __obj.updateDynamic("error")(error)
+    val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], trace = trace.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     __obj.asInstanceOf[HemeraMessagePayload]
   }
 }

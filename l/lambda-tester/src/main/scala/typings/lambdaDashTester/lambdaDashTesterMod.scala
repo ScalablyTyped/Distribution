@@ -43,7 +43,7 @@ object lambdaDashTesterMod extends js.Object {
   
   def apply[T /* <: Handler[_, _] */](handler: T): LambdaTester[T] = js.native
   type HandlerError[T /* <: Handler[_, _] */] = NonNullable[
-    /* import warning: ImportType.apply Failed type conversion: std.Parameters<aws-lambda.aws-lambda.Callback<any>>['0'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<aws-lambda.aws-lambda.Callback<any>>['0'] */ js.Any
   ]
   type HandlerEvent[T /* <: Handler[_, _] */] = js.Any
   type HandlerResult[T /* <: Handler[_, _] */] = js.Any

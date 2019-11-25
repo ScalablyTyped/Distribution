@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait KDETransform extends Transforms {
+trait KDETransform extends _Transforms {
   var as: js.UndefOr[(Vector2[String | SignalRef]) | SignalRef] = js.undefined
   var bandwidth: js.UndefOr[Double | SignalRef] = js.undefined
   var counts: js.UndefOr[Boolean | SignalRef] = js.undefined
@@ -39,7 +39,7 @@ object KDETransform {
     steps: Double | SignalRef = null
   ): KDETransform = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (bandwidth != null) __obj.updateDynamic("bandwidth")(bandwidth.asInstanceOf[js.Any])
     if (counts != null) __obj.updateDynamic("counts")(counts.asInstanceOf[js.Any])

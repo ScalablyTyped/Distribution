@@ -21,9 +21,9 @@ object Anon_Contexts {
     reason: String = null
   ): Anon_Contexts = {
     val __obj = js.Dynamic.literal()
-    if (contexts != null) __obj.updateDynamic("contexts")(contexts)
-    if (details != null) __obj.updateDynamic("details")(details)
-    if (reason != null) __obj.updateDynamic("reason")(reason)
+    if (contexts != null) __obj.updateDynamic("contexts")(contexts.asInstanceOf[js.Any])
+    if (details != null) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
+    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Contexts]
   }
 }

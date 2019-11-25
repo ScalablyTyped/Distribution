@@ -39,8 +39,8 @@ object TransformationResult {
     transformed: js.Array[T],
     diagnostics: js.Array[DiagnosticWithLocation] = null
   ): TransformationResult[T] = {
-    val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), emitNodeWithNotification = js.Any.fromFunction3(emitNodeWithNotification), substituteNode = js.Any.fromFunction2(substituteNode), transformed = transformed)
-    if (diagnostics != null) __obj.updateDynamic("diagnostics")(diagnostics)
+    val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), emitNodeWithNotification = js.Any.fromFunction3(emitNodeWithNotification), substituteNode = js.Any.fromFunction2(substituteNode), transformed = transformed.asInstanceOf[js.Any])
+    if (diagnostics != null) __obj.updateDynamic("diagnostics")(diagnostics.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransformationResult[T]]
   }
 }

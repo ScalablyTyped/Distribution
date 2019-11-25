@@ -25,7 +25,7 @@ object Anon_App {
     variant: String,
     version: Double
   ): Anon_App = {
-    val __obj = js.Dynamic.literal(app = app, appVersion = appVersion, build = build, commit = commit, compatibilityVersion = compatibilityVersion, variant = variant, version = version)
+    val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], appVersion = appVersion.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], compatibilityVersion = compatibilityVersion.asInstanceOf[js.Any], variant = variant.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_App]
   }

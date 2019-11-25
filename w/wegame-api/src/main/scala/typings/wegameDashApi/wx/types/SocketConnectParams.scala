@@ -26,12 +26,12 @@ object SocketConnectParams {
     protocols: js.Array[String] = null,
     success: () => Unit = null
   ): SocketConnectParams = {
-    val __obj = js.Dynamic.literal(url = url)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
-    if (header != null) __obj.updateDynamic("header")(header)
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (protocols != null) __obj.updateDynamic("protocols")(protocols)
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (protocols != null) __obj.updateDynamic("protocols")(protocols.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))
     __obj.asInstanceOf[SocketConnectParams]
   }

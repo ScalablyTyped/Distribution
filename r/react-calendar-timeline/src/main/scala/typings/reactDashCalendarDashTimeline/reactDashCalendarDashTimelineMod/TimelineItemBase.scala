@@ -40,13 +40,13 @@ object TimelineItemBase {
     style: CSSProperties = null,
     title: ReactNode = null
   ): TimelineItemBase[DateType] = {
-    val __obj = js.Dynamic.literal(end_time = end_time.asInstanceOf[js.Any], group = group, id = id, start_time = start_time.asInstanceOf[js.Any])
-    if (!js.isUndefined(canChangeGroup)) __obj.updateDynamic("canChangeGroup")(canChangeGroup)
-    if (!js.isUndefined(canMove)) __obj.updateDynamic("canMove")(canMove)
+    val __obj = js.Dynamic.literal(end_time = end_time.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], start_time = start_time.asInstanceOf[js.Any])
+    if (!js.isUndefined(canChangeGroup)) __obj.updateDynamic("canChangeGroup")(canChangeGroup.asInstanceOf[js.Any])
+    if (!js.isUndefined(canMove)) __obj.updateDynamic("canMove")(canMove.asInstanceOf[js.Any])
     if (canResize != null) __obj.updateDynamic("canResize")(canResize.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (itemProps != null) __obj.updateDynamic("itemProps")(itemProps)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (itemProps != null) __obj.updateDynamic("itemProps")(itemProps.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineItemBase[DateType]]
   }

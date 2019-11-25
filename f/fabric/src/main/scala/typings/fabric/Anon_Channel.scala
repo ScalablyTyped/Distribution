@@ -18,8 +18,8 @@ trait Anon_Channel extends js.Object {
 object Anon_Channel {
   @scala.inline
   def apply(channel: Double, mask: Image = null): Anon_Channel = {
-    val __obj = js.Dynamic.literal(channel = channel)
-    if (mask != null) __obj.updateDynamic("mask")(mask)
+    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any])
+    if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Channel]
   }
 }

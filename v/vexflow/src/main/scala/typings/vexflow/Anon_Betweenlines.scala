@@ -23,7 +23,7 @@ object Anon_Betweenlines {
     shift_up: Double,
     width: Double
   ): Anon_Betweenlines = {
-    val __obj = js.Dynamic.literal(between_lines = between_lines, code = code, shift_down = shift_down, shift_right = shift_right, shift_up = shift_up, width = width)
+    val __obj = js.Dynamic.literal(between_lines = between_lines.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], shift_down = shift_down.asInstanceOf[js.Any], shift_right = shift_right.asInstanceOf[js.Any], shift_up = shift_up.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Betweenlines]
   }

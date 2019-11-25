@@ -19,8 +19,8 @@ object RibbonSettingsApplicationTabMenuSettings {
   @scala.inline
   def apply(dataSource: js.Array[_] = null, isAppend: js.UndefOr[Boolean] = js.undefined): RibbonSettingsApplicationTabMenuSettings = {
     val __obj = js.Dynamic.literal()
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
-    if (!js.isUndefined(isAppend)) __obj.updateDynamic("isAppend")(isAppend)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAppend)) __obj.updateDynamic("isAppend")(isAppend.asInstanceOf[js.Any])
     __obj.asInstanceOf[RibbonSettingsApplicationTabMenuSettings]
   }
 }

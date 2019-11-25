@@ -13,8 +13,8 @@ trait FieldMaskMask extends js.Object {
 object FieldMaskMask {
   @scala.inline
   def apply(name: String, args: js.Object = null): FieldMaskMask = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (args != null) __obj.updateDynamic("args")(args)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldMaskMask]
   }
 }

@@ -14,7 +14,7 @@ object FuseResult {
   @scala.inline
   def apply[T](item: T, matches: js.Any = null, score: Int | Double = null): FuseResult[T] = {
     val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any])
-    if (matches != null) __obj.updateDynamic("matches")(matches)
+    if (matches != null) __obj.updateDynamic("matches")(matches.asInstanceOf[js.Any])
     if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
     __obj.asInstanceOf[FuseResult[T]]
   }

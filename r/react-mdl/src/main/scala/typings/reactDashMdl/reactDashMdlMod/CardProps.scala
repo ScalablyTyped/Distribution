@@ -19,9 +19,9 @@ object CardProps {
     ShadowedComponent: ShadowedComponent = null
   ): CardProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    js.Dynamic.global.Object.assign(__obj, ShadowedComponent)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (ShadowedComponent != null) js.Dynamic.global.Object.assign(__obj, ShadowedComponent)
     __obj.asInstanceOf[CardProps]
   }
 }

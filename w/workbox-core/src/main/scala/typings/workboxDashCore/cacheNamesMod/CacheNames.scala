@@ -16,7 +16,7 @@ trait CacheNames extends js.Object {
 object CacheNames {
   @scala.inline
   def apply(googleAnalytics: String, precache: String, prefix: String, runtime: String, suffix: String): CacheNames = {
-    val __obj = js.Dynamic.literal(googleAnalytics = googleAnalytics, precache = precache, prefix = prefix, runtime = runtime, suffix = suffix)
+    val __obj = js.Dynamic.literal(googleAnalytics = googleAnalytics.asInstanceOf[js.Any], precache = precache.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], runtime = runtime.asInstanceOf[js.Any], suffix = suffix.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CacheNames]
   }

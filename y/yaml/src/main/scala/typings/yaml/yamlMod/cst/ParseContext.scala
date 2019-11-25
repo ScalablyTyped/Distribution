@@ -32,7 +32,7 @@ object ParseContext {
     parent: Node,
     src: String
   ): ParseContext = {
-    val __obj = js.Dynamic.literal(atLineStart = atLineStart, inCollection = inCollection, inFlow = inFlow, indent = indent, lineStart = lineStart, parent = parent, src = src)
+    val __obj = js.Dynamic.literal(atLineStart = atLineStart.asInstanceOf[js.Any], inCollection = inCollection.asInstanceOf[js.Any], inFlow = inFlow.asInstanceOf[js.Any], indent = indent.asInstanceOf[js.Any], lineStart = lineStart.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ParseContext]
   }

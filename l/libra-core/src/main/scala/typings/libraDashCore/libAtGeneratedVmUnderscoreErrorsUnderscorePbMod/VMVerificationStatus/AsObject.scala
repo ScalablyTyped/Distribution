@@ -24,8 +24,8 @@ object AsObject {
     statusKind: StatusKind,
     dependencyId: typings.libraDashCore.libAtGeneratedLanguageUnderscoreStorageUnderscorePbMod.ModuleId.AsObject = null
   ): AsObject = {
-    val __obj = js.Dynamic.literal(errorKind = errorKind, message = message, moduleIdx = moduleIdx, statusKind = statusKind)
-    if (dependencyId != null) __obj.updateDynamic("dependencyId")(dependencyId)
+    val __obj = js.Dynamic.literal(errorKind = errorKind.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], moduleIdx = moduleIdx.asInstanceOf[js.Any], statusKind = statusKind.asInstanceOf[js.Any])
+    if (dependencyId != null) __obj.updateDynamic("dependencyId")(dependencyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsObject]
   }
 }

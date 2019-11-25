@@ -34,9 +34,9 @@ object BuildSchemaOptions {
   ): BuildSchemaOptions = {
     val __obj = js.Dynamic.literal()
     if (allowedLegacyNames != null) __obj.updateDynamic("allowedLegacyNames")(allowedLegacyNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(assumeValid)) __obj.updateDynamic("assumeValid")(assumeValid)
-    if (!js.isUndefined(assumeValidSDL)) __obj.updateDynamic("assumeValidSDL")(assumeValidSDL)
-    if (!js.isUndefined(commentDescriptions)) __obj.updateDynamic("commentDescriptions")(commentDescriptions)
+    if (!js.isUndefined(assumeValid)) __obj.updateDynamic("assumeValid")(assumeValid.asInstanceOf[js.Any])
+    if (!js.isUndefined(assumeValidSDL)) __obj.updateDynamic("assumeValidSDL")(assumeValidSDL.asInstanceOf[js.Any])
+    if (!js.isUndefined(commentDescriptions)) __obj.updateDynamic("commentDescriptions")(commentDescriptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildSchemaOptions]
   }
 }

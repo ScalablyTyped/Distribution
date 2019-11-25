@@ -28,7 +28,7 @@ trait KeyToPath extends js.Object {
 object KeyToPath {
   @scala.inline
   def apply(key: String, mode: Double, path: String): KeyToPath = {
-    val __obj = js.Dynamic.literal(key = key, mode = mode, path = path)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[KeyToPath]
   }

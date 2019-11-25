@@ -23,7 +23,7 @@ object Hunk {
     oldLines: Double,
     oldStart: Double
   ): Hunk = {
-    val __obj = js.Dynamic.literal(linedelimiters = linedelimiters, lines = lines, newLines = newLines, newStart = newStart, oldLines = oldLines, oldStart = oldStart)
+    val __obj = js.Dynamic.literal(linedelimiters = linedelimiters.asInstanceOf[js.Any], lines = lines.asInstanceOf[js.Any], newLines = newLines.asInstanceOf[js.Any], newStart = newStart.asInstanceOf[js.Any], oldLines = oldLines.asInstanceOf[js.Any], oldStart = oldStart.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Hunk]
   }

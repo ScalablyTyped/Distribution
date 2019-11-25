@@ -11,7 +11,7 @@ trait ExtButtonsSettings extends js.Object {
 object ExtButtonsSettings {
   @scala.inline
   def apply(collection: ExtButtonsCollectionSettings): ExtButtonsSettings = {
-    val __obj = js.Dynamic.literal(collection = collection)
+    val __obj = js.Dynamic.literal(collection = collection.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExtButtonsSettings]
   }

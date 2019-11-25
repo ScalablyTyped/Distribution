@@ -16,7 +16,7 @@ trait Constraint extends js.Object {
 object Constraint {
   @scala.inline
   def apply(info: String, priority: Double, script: String): Constraint = {
-    val __obj = js.Dynamic.literal(info = info, priority = priority, script = script)
+    val __obj = js.Dynamic.literal(info = info.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], script = script.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Constraint]
   }

@@ -13,7 +13,7 @@ trait Anon_Bridge extends js.Object {
 object Anon_Bridge {
   @scala.inline
   def apply(bridge: Boolean, lights: js.Array[String], sensors: js.Array[String]): Anon_Bridge = {
-    val __obj = js.Dynamic.literal(bridge = bridge, lights = lights, sensors = sensors)
+    val __obj = js.Dynamic.literal(bridge = bridge.asInstanceOf[js.Any], lights = lights.asInstanceOf[js.Any], sensors = sensors.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Bridge]
   }

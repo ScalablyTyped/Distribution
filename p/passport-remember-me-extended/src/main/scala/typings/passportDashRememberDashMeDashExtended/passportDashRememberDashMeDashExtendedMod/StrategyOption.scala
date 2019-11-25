@@ -14,8 +14,8 @@ object StrategyOption {
   @scala.inline
   def apply(cookie: CookieOptions = null, key: String = null): StrategyOption = {
     val __obj = js.Dynamic.literal()
-    if (cookie != null) __obj.updateDynamic("cookie")(cookie)
-    if (key != null) __obj.updateDynamic("key")(key)
+    if (cookie != null) __obj.updateDynamic("cookie")(cookie.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrategyOption]
   }
 }

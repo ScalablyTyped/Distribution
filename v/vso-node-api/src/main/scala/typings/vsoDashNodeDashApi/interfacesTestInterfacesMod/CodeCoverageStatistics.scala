@@ -41,7 +41,7 @@ object CodeCoverageStatistics {
     position: Double,
     total: Double
   ): CodeCoverageStatistics = {
-    val __obj = js.Dynamic.literal(covered = covered, delta = delta, isDeltaAvailable = isDeltaAvailable, label = label, position = position, total = total)
+    val __obj = js.Dynamic.literal(covered = covered.asInstanceOf[js.Any], delta = delta.asInstanceOf[js.Any], isDeltaAvailable = isDeltaAvailable.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CodeCoverageStatistics]
   }

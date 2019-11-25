@@ -19,7 +19,7 @@ object Logger {
     enableDebugLog: Boolean,
     warn: String => Unit
   ): Logger = {
-    val __obj = js.Dynamic.literal(debug = js.Any.fromFunction1(debug), deprecate = js.Any.fromFunction2(deprecate), enableDebugLog = enableDebugLog, warn = js.Any.fromFunction1(warn))
+    val __obj = js.Dynamic.literal(debug = js.Any.fromFunction1(debug), deprecate = js.Any.fromFunction2(deprecate), enableDebugLog = enableDebugLog.asInstanceOf[js.Any], warn = js.Any.fromFunction1(warn))
   
     __obj.asInstanceOf[Logger]
   }

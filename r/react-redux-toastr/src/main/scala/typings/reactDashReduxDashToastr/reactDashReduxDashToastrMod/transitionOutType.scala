@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait transitionOutType extends js.Object
 
+object transitionOutType {
+  @scala.inline
+  def bounceOut: typings.reactDashReduxDashToastr.reactDashReduxDashToastrStrings.bounceOut = this.cast("bounceOut")
+  @scala.inline
+  def bounceOutUp: typings.reactDashReduxDashToastr.reactDashReduxDashToastrStrings.bounceOutUp = this.cast("bounceOutUp")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def fadeOut: typings.reactDashReduxDashToastr.reactDashReduxDashToastrStrings.fadeOut = this.cast("fadeOut")
+}
+

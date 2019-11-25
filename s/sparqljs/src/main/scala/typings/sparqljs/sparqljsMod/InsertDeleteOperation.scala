@@ -26,10 +26,10 @@ object InsertDeleteOperation {
     where: js.Array[Pattern] = null
   ): InsertDeleteOperation = {
     val __obj = js.Dynamic.literal(updateType = updateType.asInstanceOf[js.Any])
-    if (delete != null) __obj.updateDynamic("delete")(delete)
-    if (graph != null) __obj.updateDynamic("graph")(graph)
-    if (insert != null) __obj.updateDynamic("insert")(insert)
-    if (where != null) __obj.updateDynamic("where")(where)
+    if (delete != null) __obj.updateDynamic("delete")(delete.asInstanceOf[js.Any])
+    if (graph != null) __obj.updateDynamic("graph")(graph.asInstanceOf[js.Any])
+    if (insert != null) __obj.updateDynamic("insert")(insert.asInstanceOf[js.Any])
+    if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsertDeleteOperation]
   }
 }

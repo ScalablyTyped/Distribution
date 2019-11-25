@@ -15,7 +15,7 @@ trait Anon_IdOptions extends js.Object {
 object Anon_IdOptions {
   @scala.inline
   def apply(id: js.Any, options: TransportRequestOptions, params: TransportRequestParams): Anon_IdOptions = {
-    val __obj = js.Dynamic.literal(id = id, options = options, params = params)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IdOptions]
   }

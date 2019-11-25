@@ -22,7 +22,7 @@ object NavigationDescriptor {
     options: Options,
     state: NavigationLeafRoute[Params] | NavigationStateRoute[Params]
   ): NavigationDescriptor[Params, Options, NavigationScreenPropType] = {
-    val __obj = js.Dynamic.literal(getComponent = js.Any.fromFunction0(getComponent), key = key, navigation = navigation.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(getComponent = js.Any.fromFunction0(getComponent), key = key.asInstanceOf[js.Any], navigation = navigation.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NavigationDescriptor[Params, Options, NavigationScreenPropType]]
   }

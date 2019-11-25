@@ -36,7 +36,7 @@ object Typeofplaces {
     PlacesService: Instantiable1[/* attrContainer */ HTMLDivElement, PlacesService],
     SearchBox: Instantiable1[/* inputField */ HTMLInputElement, SearchBox]
   ): Typeofplaces = {
-    val __obj = js.Dynamic.literal(Autocomplete = Autocomplete, AutocompleteService = AutocompleteService, AutocompleteSessionToken = AutocompleteSessionToken, PlacesService = PlacesService, SearchBox = SearchBox)
+    val __obj = js.Dynamic.literal(Autocomplete = Autocomplete.asInstanceOf[js.Any], AutocompleteService = AutocompleteService.asInstanceOf[js.Any], AutocompleteSessionToken = AutocompleteSessionToken.asInstanceOf[js.Any], PlacesService = PlacesService.asInstanceOf[js.Any], SearchBox = SearchBox.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Typeofplaces]
   }

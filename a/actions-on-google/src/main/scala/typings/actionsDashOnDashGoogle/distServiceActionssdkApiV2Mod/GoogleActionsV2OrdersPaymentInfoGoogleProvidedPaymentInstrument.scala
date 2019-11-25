@@ -20,8 +20,8 @@ object GoogleActionsV2OrdersPaymentInfoGoogleProvidedPaymentInstrument {
   @scala.inline
   def apply(billingAddress: GoogleTypePostalAddress = null, instrumentToken: String = null): GoogleActionsV2OrdersPaymentInfoGoogleProvidedPaymentInstrument = {
     val __obj = js.Dynamic.literal()
-    if (billingAddress != null) __obj.updateDynamic("billingAddress")(billingAddress)
-    if (instrumentToken != null) __obj.updateDynamic("instrumentToken")(instrumentToken)
+    if (billingAddress != null) __obj.updateDynamic("billingAddress")(billingAddress.asInstanceOf[js.Any])
+    if (instrumentToken != null) __obj.updateDynamic("instrumentToken")(instrumentToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2OrdersPaymentInfoGoogleProvidedPaymentInstrument]
   }
 }

@@ -15,7 +15,7 @@ trait IObj extends js.Object {
 object IObj {
   @scala.inline
   def apply(fields: js.Array[IField], name: String, options: IObjOptions, plural: String, singular: String): IObj = {
-    val __obj = js.Dynamic.literal(fields = fields, name = name, options = options, plural = plural, singular = singular)
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], plural = plural.asInstanceOf[js.Any], singular = singular.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IObj]
   }

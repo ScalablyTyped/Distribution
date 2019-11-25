@@ -23,9 +23,9 @@ object PlayerScoreResetResponse {
   @scala.inline
   def apply(definitionId: String = null, kind: String = null, resetScoreTimeSpans: js.Array[String] = null): PlayerScoreResetResponse = {
     val __obj = js.Dynamic.literal()
-    if (definitionId != null) __obj.updateDynamic("definitionId")(definitionId)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (resetScoreTimeSpans != null) __obj.updateDynamic("resetScoreTimeSpans")(resetScoreTimeSpans)
+    if (definitionId != null) __obj.updateDynamic("definitionId")(definitionId.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (resetScoreTimeSpans != null) __obj.updateDynamic("resetScoreTimeSpans")(resetScoreTimeSpans.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlayerScoreResetResponse]
   }
 }

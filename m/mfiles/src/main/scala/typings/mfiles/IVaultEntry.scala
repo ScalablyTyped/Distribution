@@ -21,7 +21,7 @@ object IVaultEntry {
     VaultCore: IVaultCore,
     VaultUI: IVaultUI
   ): IVaultEntry = {
-    val __obj = js.Dynamic.literal(Events = Events, NotifyVaultEntry = js.Any.fromFunction3(NotifyVaultEntry), Vault = Vault, VaultCore = VaultCore, VaultUI = VaultUI)
+    val __obj = js.Dynamic.literal(Events = Events.asInstanceOf[js.Any], NotifyVaultEntry = js.Any.fromFunction3(NotifyVaultEntry), Vault = Vault.asInstanceOf[js.Any], VaultCore = VaultCore.asInstanceOf[js.Any], VaultUI = VaultUI.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IVaultEntry]
   }

@@ -25,7 +25,7 @@ trait DataLabelsFilterOptionsObject extends js.Object {
 object DataLabelsFilterOptionsObject {
   @scala.inline
   def apply(operator: DataLabelsFilterOperatorValue, property: String, value: Int | Double = null): DataLabelsFilterOptionsObject = {
-    val __obj = js.Dynamic.literal(operator = operator, property = property)
+    val __obj = js.Dynamic.literal(operator = operator.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataLabelsFilterOptionsObject]
   }

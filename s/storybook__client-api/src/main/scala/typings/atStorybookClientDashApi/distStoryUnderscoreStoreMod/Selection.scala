@@ -12,7 +12,7 @@ trait Selection extends js.Object {
 object Selection {
   @scala.inline
   def apply(storyId: String, viewMode: String): Selection = {
-    val __obj = js.Dynamic.literal(storyId = storyId, viewMode = viewMode)
+    val __obj = js.Dynamic.literal(storyId = storyId.asInstanceOf[js.Any], viewMode = viewMode.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Selection]
   }

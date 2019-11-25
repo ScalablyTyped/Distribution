@@ -62,16 +62,16 @@ object RoomParticipant {
     status: String = null
   ): RoomParticipant = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoMatched)) __obj.updateDynamic("autoMatched")(autoMatched)
-    if (autoMatchedPlayer != null) __obj.updateDynamic("autoMatchedPlayer")(autoMatchedPlayer)
-    if (capabilities != null) __obj.updateDynamic("capabilities")(capabilities)
-    if (clientAddress != null) __obj.updateDynamic("clientAddress")(clientAddress)
-    if (!js.isUndefined(connected)) __obj.updateDynamic("connected")(connected)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (leaveReason != null) __obj.updateDynamic("leaveReason")(leaveReason)
-    if (player != null) __obj.updateDynamic("player")(player)
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (!js.isUndefined(autoMatched)) __obj.updateDynamic("autoMatched")(autoMatched.asInstanceOf[js.Any])
+    if (autoMatchedPlayer != null) __obj.updateDynamic("autoMatchedPlayer")(autoMatchedPlayer.asInstanceOf[js.Any])
+    if (capabilities != null) __obj.updateDynamic("capabilities")(capabilities.asInstanceOf[js.Any])
+    if (clientAddress != null) __obj.updateDynamic("clientAddress")(clientAddress.asInstanceOf[js.Any])
+    if (!js.isUndefined(connected)) __obj.updateDynamic("connected")(connected.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (leaveReason != null) __obj.updateDynamic("leaveReason")(leaveReason.asInstanceOf[js.Any])
+    if (player != null) __obj.updateDynamic("player")(player.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoomParticipant]
   }
 }

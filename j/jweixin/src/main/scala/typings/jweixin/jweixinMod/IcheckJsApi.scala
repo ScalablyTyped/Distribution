@@ -22,7 +22,7 @@ object IcheckJsApi {
     complete: /* repeated */ js.Any => Unit = null,
     fail: /* repeated */ js.Any => Unit = null
   ): IcheckJsApi = {
-    val __obj = js.Dynamic.literal(jsApiList = jsApiList, success = js.Any.fromFunction1(success))
+    val __obj = js.Dynamic.literal(jsApiList = jsApiList.asInstanceOf[js.Any], success = js.Any.fromFunction1(success))
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     __obj.asInstanceOf[IcheckJsApi]

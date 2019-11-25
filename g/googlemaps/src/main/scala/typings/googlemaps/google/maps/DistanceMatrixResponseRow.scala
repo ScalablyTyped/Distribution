@@ -11,7 +11,7 @@ trait DistanceMatrixResponseRow extends js.Object {
 object DistanceMatrixResponseRow {
   @scala.inline
   def apply(elements: js.Array[DistanceMatrixResponseElement]): DistanceMatrixResponseRow = {
-    val __obj = js.Dynamic.literal(elements = elements)
+    val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DistanceMatrixResponseRow]
   }

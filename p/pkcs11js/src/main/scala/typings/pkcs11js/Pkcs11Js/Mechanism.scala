@@ -13,7 +13,7 @@ trait Mechanism extends js.Object {
 object Mechanism {
   @scala.inline
   def apply(mechanism: Double, parameter: Buffer | IParams = null): Mechanism = {
-    val __obj = js.Dynamic.literal(mechanism = mechanism)
+    val __obj = js.Dynamic.literal(mechanism = mechanism.asInstanceOf[js.Any])
     if (parameter != null) __obj.updateDynamic("parameter")(parameter.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mechanism]
   }

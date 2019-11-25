@@ -12,7 +12,7 @@ trait TeamsGetMemberParams extends js.Object {
 object TeamsGetMemberParams {
   @scala.inline
   def apply(team_id: Double, username: String): TeamsGetMemberParams = {
-    val __obj = js.Dynamic.literal(team_id = team_id, username = username)
+    val __obj = js.Dynamic.literal(team_id = team_id.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TeamsGetMemberParams]
   }

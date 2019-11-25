@@ -26,9 +26,9 @@ object CreateViewOptions {
     val __obj = js.Dynamic.literal()
     if (checkOption != null) __obj.updateDynamic("checkOption")(checkOption.asInstanceOf[js.Any])
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive)
-    if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace)
-    if (!js.isUndefined(temporary)) __obj.updateDynamic("temporary")(temporary)
+    if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive.asInstanceOf[js.Any])
+    if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace.asInstanceOf[js.Any])
+    if (!js.isUndefined(temporary)) __obj.updateDynamic("temporary")(temporary.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateViewOptions]
   }
 }

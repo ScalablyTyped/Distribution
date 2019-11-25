@@ -22,10 +22,10 @@ object Result {
     pass: js.UndefOr[Boolean] = js.undefined,
     testError: Error = null
   ): Result = {
-    val __obj = js.Dynamic.literal(context = context, message = message)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (!js.isUndefined(pass)) __obj.updateDynamic("pass")(pass)
-    if (testError != null) __obj.updateDynamic("testError")(testError)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (!js.isUndefined(pass)) __obj.updateDynamic("pass")(pass.asInstanceOf[js.Any])
+    if (testError != null) __obj.updateDynamic("testError")(testError.asInstanceOf[js.Any])
     __obj.asInstanceOf[Result]
   }
 }

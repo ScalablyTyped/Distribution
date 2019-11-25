@@ -26,12 +26,12 @@ object ContextOptions {
     timeout: Int | Double = null
   ): ContextOptions = {
     val __obj = js.Dynamic.literal()
-    if (account != null) __obj.updateDynamic("account")(account)
-    if (alias != null) __obj.updateDynamic("alias")(alias)
-    if (functionName != null) __obj.updateDynamic("functionName")(functionName)
-    if (functionVersion != null) __obj.updateDynamic("functionVersion")(functionVersion)
-    if (memoryLimitInMB != null) __obj.updateDynamic("memoryLimitInMB")(memoryLimitInMB)
-    if (region != null) __obj.updateDynamic("region")(region)
+    if (account != null) __obj.updateDynamic("account")(account.asInstanceOf[js.Any])
+    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
+    if (functionName != null) __obj.updateDynamic("functionName")(functionName.asInstanceOf[js.Any])
+    if (functionVersion != null) __obj.updateDynamic("functionVersion")(functionVersion.asInstanceOf[js.Any])
+    if (memoryLimitInMB != null) __obj.updateDynamic("memoryLimitInMB")(memoryLimitInMB.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextOptions]
   }

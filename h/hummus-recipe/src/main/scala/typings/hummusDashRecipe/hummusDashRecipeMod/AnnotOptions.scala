@@ -26,12 +26,12 @@ object AnnotOptions {
     width: Int | Double = null
   ): AnnotOptions = {
     val __obj = js.Dynamic.literal()
-    if (flag != null) __obj.updateDynamic("flag")(flag)
+    if (flag != null) __obj.updateDynamic("flag")(flag.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
-    if (!js.isUndefined(richText)) __obj.updateDynamic("richText")(richText)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
+    if (!js.isUndefined(richText)) __obj.updateDynamic("richText")(richText.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotOptions]
   }

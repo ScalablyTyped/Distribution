@@ -75,7 +75,7 @@ object TypeofData {
     Point: Instantiable1[/* latLng */ LatLng, Point],
     Polygon: Instantiable1[/* elements */ js.Array[LinearRing | (js.Array[LatLng | LatLngLiteral])], Polygon]
   ): TypeofData = {
-    val __obj = js.Dynamic.literal(Feature = Feature, Geometry = Geometry, GeometryCollection = GeometryCollection, LineString = LineString, LinearRing = LinearRing, MultiLineString = MultiLineString, MultiPoint = MultiPoint, MultiPolygon = MultiPolygon, Point = Point, Polygon = Polygon)
+    val __obj = js.Dynamic.literal(Feature = Feature.asInstanceOf[js.Any], Geometry = Geometry.asInstanceOf[js.Any], GeometryCollection = GeometryCollection.asInstanceOf[js.Any], LineString = LineString.asInstanceOf[js.Any], LinearRing = LinearRing.asInstanceOf[js.Any], MultiLineString = MultiLineString.asInstanceOf[js.Any], MultiPoint = MultiPoint.asInstanceOf[js.Any], MultiPolygon = MultiPolygon.asInstanceOf[js.Any], Point = Point.asInstanceOf[js.Any], Polygon = Polygon.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeofData]
   }

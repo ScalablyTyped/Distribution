@@ -18,7 +18,7 @@ trait TextEditorOptionsChangeEvent extends js.Object {
 object TextEditorOptionsChangeEvent {
   @scala.inline
   def apply(options: TextEditorOptions, textEditor: TextEditor): TextEditorOptionsChangeEvent = {
-    val __obj = js.Dynamic.literal(options = options, textEditor = textEditor)
+    val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], textEditor = textEditor.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TextEditorOptionsChangeEvent]
   }

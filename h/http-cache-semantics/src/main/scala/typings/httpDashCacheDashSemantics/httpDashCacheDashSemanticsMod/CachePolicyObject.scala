@@ -40,10 +40,10 @@ object CachePolicyObject {
     reqh: Headers = null,
     u: String = null
   ): CachePolicyObject = {
-    val __obj = js.Dynamic.literal(a = a, ch = ch, imm = imm, m = m, reqcc = reqcc, rescc = rescc, resh = resh, sh = sh, st = st, t = t, v = v)
-    if (h != null) __obj.updateDynamic("h")(h)
-    if (reqh != null) __obj.updateDynamic("reqh")(reqh)
-    if (u != null) __obj.updateDynamic("u")(u)
+    val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], ch = ch.asInstanceOf[js.Any], imm = imm.asInstanceOf[js.Any], m = m.asInstanceOf[js.Any], reqcc = reqcc.asInstanceOf[js.Any], rescc = rescc.asInstanceOf[js.Any], resh = resh.asInstanceOf[js.Any], sh = sh.asInstanceOf[js.Any], st = st.asInstanceOf[js.Any], t = t.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
+    if (h != null) __obj.updateDynamic("h")(h.asInstanceOf[js.Any])
+    if (reqh != null) __obj.updateDynamic("reqh")(reqh.asInstanceOf[js.Any])
+    if (u != null) __obj.updateDynamic("u")(u.asInstanceOf[js.Any])
     __obj.asInstanceOf[CachePolicyObject]
   }
 }

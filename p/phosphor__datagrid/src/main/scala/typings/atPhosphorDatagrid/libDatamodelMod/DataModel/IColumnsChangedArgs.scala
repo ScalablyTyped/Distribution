@@ -35,7 +35,7 @@ trait IColumnsChangedArgs extends ChangedArgs {
 object IColumnsChangedArgs {
   @scala.inline
   def apply(index: Double, region: ColumnRegion, span: Double, `type`: `columns-inserted` | `columns-removed`): IColumnsChangedArgs = {
-    val __obj = js.Dynamic.literal(index = index, region = region, span = span)
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IColumnsChangedArgs]
   }

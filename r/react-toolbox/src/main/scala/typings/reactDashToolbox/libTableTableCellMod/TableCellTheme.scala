@@ -47,13 +47,13 @@ object TableCellTheme {
     tableCell: String = null
   ): TableCellTheme = {
     val __obj = js.Dynamic.literal()
-    if (asc != null) __obj.updateDynamic("asc")(asc)
-    if (headCell != null) __obj.updateDynamic("headCell")(headCell)
-    if (numeric != null) __obj.updateDynamic("numeric")(numeric)
-    if (rowCell != null) __obj.updateDynamic("rowCell")(rowCell)
-    if (sortIcon != null) __obj.updateDynamic("sortIcon")(sortIcon)
-    if (sorted != null) __obj.updateDynamic("sorted")(sorted)
-    if (tableCell != null) __obj.updateDynamic("tableCell")(tableCell)
+    if (asc != null) __obj.updateDynamic("asc")(asc.asInstanceOf[js.Any])
+    if (headCell != null) __obj.updateDynamic("headCell")(headCell.asInstanceOf[js.Any])
+    if (numeric != null) __obj.updateDynamic("numeric")(numeric.asInstanceOf[js.Any])
+    if (rowCell != null) __obj.updateDynamic("rowCell")(rowCell.asInstanceOf[js.Any])
+    if (sortIcon != null) __obj.updateDynamic("sortIcon")(sortIcon.asInstanceOf[js.Any])
+    if (sorted != null) __obj.updateDynamic("sorted")(sorted.asInstanceOf[js.Any])
+    if (tableCell != null) __obj.updateDynamic("tableCell")(tableCell.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableCellTheme]
   }
 }

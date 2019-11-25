@@ -12,7 +12,7 @@ trait Anon_Rank extends js.Object {
 object Anon_Rank {
   @scala.inline
   def apply(rank: Double, rank_img: String): Anon_Rank = {
-    val __obj = js.Dynamic.literal(rank = rank, rank_img = rank_img)
+    val __obj = js.Dynamic.literal(rank = rank.asInstanceOf[js.Any], rank_img = rank_img.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Rank]
   }

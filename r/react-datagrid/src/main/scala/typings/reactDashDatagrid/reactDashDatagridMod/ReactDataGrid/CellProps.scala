@@ -27,7 +27,7 @@ trait CellProps extends js.Object {
 object CellProps {
   @scala.inline
   def apply(className: String, index: Double, rowIndex: Double, style: CSSProperties): CellProps = {
-    val __obj = js.Dynamic.literal(className = className, index = index, rowIndex = rowIndex, style = style)
+    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], rowIndex = rowIndex.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CellProps]
   }

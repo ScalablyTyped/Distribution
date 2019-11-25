@@ -12,3 +12,12 @@ import scala.scalajs.js.annotation._
 */
 trait VREye_dt_alias extends js.Object
 
+object VREye_dt_alias {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def left: typings.webvrDashApi.webvrDashApiStrings.left = this.cast("left")
+  @scala.inline
+  def right: typings.webvrDashApi.webvrDashApiStrings.right = this.cast("right")
+}
+

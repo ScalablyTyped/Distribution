@@ -33,11 +33,11 @@ object CouchbaseError {
     responseBody: js.Any = null,
     stack: String = null
   ): CouchbaseError = {
-    val __obj = js.Dynamic.literal(message = message, name = name)
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (innerError != null) __obj.updateDynamic("innerError")(innerError)
-    if (responseBody != null) __obj.updateDynamic("responseBody")(responseBody)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (innerError != null) __obj.updateDynamic("innerError")(innerError.asInstanceOf[js.Any])
+    if (responseBody != null) __obj.updateDynamic("responseBody")(responseBody.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[CouchbaseError]
   }
 }

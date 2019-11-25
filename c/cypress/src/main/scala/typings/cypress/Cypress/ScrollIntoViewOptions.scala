@@ -18,7 +18,7 @@ trait ScrollIntoViewOptions extends ScrollToOptions {
 object ScrollIntoViewOptions {
   @scala.inline
   def apply(duration: Double, easing: swing | linear, log: Boolean, offset: Offset, timeout: Double): ScrollIntoViewOptions = {
-    val __obj = js.Dynamic.literal(duration = duration, easing = easing.asInstanceOf[js.Any], log = log, offset = offset, timeout = timeout)
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], easing = easing.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ScrollIntoViewOptions]
   }

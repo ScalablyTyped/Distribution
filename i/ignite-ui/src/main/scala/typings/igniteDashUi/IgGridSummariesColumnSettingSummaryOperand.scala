@@ -68,13 +68,13 @@ object IgGridSummariesColumnSettingSummaryOperand {
     `type`: String = null
   ): IgGridSummariesColumnSettingSummaryOperand = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
-    if (rowDisplayLabel != null) __obj.updateDynamic("rowDisplayLabel")(rowDisplayLabel)
-    if (summaryCalculator != null) __obj.updateDynamic("summaryCalculator")(summaryCalculator)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (rowDisplayLabel != null) __obj.updateDynamic("rowDisplayLabel")(rowDisplayLabel.asInstanceOf[js.Any])
+    if (summaryCalculator != null) __obj.updateDynamic("summaryCalculator")(summaryCalculator.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridSummariesColumnSettingSummaryOperand]
   }
 }

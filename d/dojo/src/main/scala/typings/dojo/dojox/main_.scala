@@ -124,7 +124,7 @@ object main_ {
     utils: js.Object,
     validate: js.Object
   ): main_ = {
-    val __obj = js.Dynamic.literal(buddhist = buddhist, charting = charting, data = data, functional = functional, gesture = gesture, grid = grid, hebrew = hebrew, highlight = highlight, image = image, islamic = islamic, json = json, languages = languages, math = math, persian = persian, regexp = regexp, relative = relative, rpc = rpc, umalqura = umalqura, util = util, utils = utils, validate = validate)
+    val __obj = js.Dynamic.literal(buddhist = buddhist.asInstanceOf[js.Any], charting = charting.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], functional = functional.asInstanceOf[js.Any], gesture = gesture.asInstanceOf[js.Any], grid = grid.asInstanceOf[js.Any], hebrew = hebrew.asInstanceOf[js.Any], highlight = highlight.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], islamic = islamic.asInstanceOf[js.Any], json = json.asInstanceOf[js.Any], languages = languages.asInstanceOf[js.Any], math = math.asInstanceOf[js.Any], persian = persian.asInstanceOf[js.Any], regexp = regexp.asInstanceOf[js.Any], relative = relative.asInstanceOf[js.Any], rpc = rpc.asInstanceOf[js.Any], umalqura = umalqura.asInstanceOf[js.Any], util = util.asInstanceOf[js.Any], utils = utils.asInstanceOf[js.Any], validate = validate.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[main_]
   }

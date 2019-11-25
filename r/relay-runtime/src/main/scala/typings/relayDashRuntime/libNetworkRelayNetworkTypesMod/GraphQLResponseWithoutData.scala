@@ -21,11 +21,11 @@ object GraphQLResponseWithoutData {
     label: String = null,
     path: js.Array[String | Double] = null
   ): GraphQLResponseWithoutData = {
-    val __obj = js.Dynamic.literal(errors = errors)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (path != null) __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLResponseWithoutData]
   }
 }

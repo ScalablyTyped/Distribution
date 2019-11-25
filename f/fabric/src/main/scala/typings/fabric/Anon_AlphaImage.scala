@@ -16,8 +16,8 @@ object Anon_AlphaImage {
   def apply(alpha: Int | Double = null, image: Image = null, mode: String = null): Anon_AlphaImage = {
     val __obj = js.Dynamic.literal()
     if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AlphaImage]
   }
 }

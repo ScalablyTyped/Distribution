@@ -35,15 +35,15 @@ object HillshadePaint {
   ): HillshadePaint = {
     val __obj = js.Dynamic.literal()
     if (`hillshade-accent-color` != null) __obj.updateDynamic("hillshade-accent-color")(`hillshade-accent-color`.asInstanceOf[js.Any])
-    if (`hillshade-accent-color-transition` != null) __obj.updateDynamic("hillshade-accent-color-transition")(`hillshade-accent-color-transition`)
+    if (`hillshade-accent-color-transition` != null) __obj.updateDynamic("hillshade-accent-color-transition")(`hillshade-accent-color-transition`.asInstanceOf[js.Any])
     if (`hillshade-exaggeration` != null) __obj.updateDynamic("hillshade-exaggeration")(`hillshade-exaggeration`.asInstanceOf[js.Any])
-    if (`hillshade-exaggeration-transition` != null) __obj.updateDynamic("hillshade-exaggeration-transition")(`hillshade-exaggeration-transition`)
+    if (`hillshade-exaggeration-transition` != null) __obj.updateDynamic("hillshade-exaggeration-transition")(`hillshade-exaggeration-transition`.asInstanceOf[js.Any])
     if (`hillshade-highlight-color` != null) __obj.updateDynamic("hillshade-highlight-color")(`hillshade-highlight-color`.asInstanceOf[js.Any])
-    if (`hillshade-highlight-color-transition` != null) __obj.updateDynamic("hillshade-highlight-color-transition")(`hillshade-highlight-color-transition`)
+    if (`hillshade-highlight-color-transition` != null) __obj.updateDynamic("hillshade-highlight-color-transition")(`hillshade-highlight-color-transition`.asInstanceOf[js.Any])
     if (`hillshade-illumination-anchor` != null) __obj.updateDynamic("hillshade-illumination-anchor")(`hillshade-illumination-anchor`.asInstanceOf[js.Any])
     if (`hillshade-illumination-direction` != null) __obj.updateDynamic("hillshade-illumination-direction")(`hillshade-illumination-direction`.asInstanceOf[js.Any])
     if (`hillshade-shadow-color` != null) __obj.updateDynamic("hillshade-shadow-color")(`hillshade-shadow-color`.asInstanceOf[js.Any])
-    if (`hillshade-shadow-color-transition` != null) __obj.updateDynamic("hillshade-shadow-color-transition")(`hillshade-shadow-color-transition`)
+    if (`hillshade-shadow-color-transition` != null) __obj.updateDynamic("hillshade-shadow-color-transition")(`hillshade-shadow-color-transition`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HillshadePaint]
   }
 }

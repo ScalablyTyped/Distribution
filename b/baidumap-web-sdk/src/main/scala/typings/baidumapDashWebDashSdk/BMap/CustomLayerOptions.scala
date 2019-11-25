@@ -24,12 +24,12 @@ object CustomLayerOptions {
     tags: String = null
   ): CustomLayerOptions = {
     val __obj = js.Dynamic.literal()
-    if (databoxId != null) __obj.updateDynamic("databoxId")(databoxId)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
-    if (geotableId != null) __obj.updateDynamic("geotableId")(geotableId)
+    if (databoxId != null) __obj.updateDynamic("databoxId")(databoxId.asInstanceOf[js.Any])
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (geotableId != null) __obj.updateDynamic("geotableId")(geotableId.asInstanceOf[js.Any])
     if (pointDensityType != null) __obj.updateDynamic("pointDensityType")(pointDensityType.asInstanceOf[js.Any])
-    if (q != null) __obj.updateDynamic("q")(q)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (q != null) __obj.updateDynamic("q")(q.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomLayerOptions]
   }
 }

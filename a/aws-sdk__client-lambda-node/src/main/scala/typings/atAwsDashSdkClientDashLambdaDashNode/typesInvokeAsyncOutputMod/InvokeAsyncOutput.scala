@@ -21,7 +21,7 @@ trait InvokeAsyncOutput extends OutputTypesUnion {
 object InvokeAsyncOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, Status: Int | Double = null): InvokeAsyncOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvokeAsyncOutput]
   }

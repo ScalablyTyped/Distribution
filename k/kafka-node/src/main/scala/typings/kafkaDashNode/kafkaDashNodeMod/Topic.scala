@@ -19,9 +19,9 @@ object Topic {
     encoding: String = null,
     offset: Int | Double = null
   ): Topic = {
-    val __obj = js.Dynamic.literal(topic = topic)
-    if (!js.isUndefined(autoCommit)) __obj.updateDynamic("autoCommit")(autoCommit)
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    val __obj = js.Dynamic.literal(topic = topic.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoCommit)) __obj.updateDynamic("autoCommit")(autoCommit.asInstanceOf[js.Any])
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[Topic]
   }

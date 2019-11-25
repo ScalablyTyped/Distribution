@@ -15,7 +15,7 @@ object PlotTimelineDragDropGuideBoxOptions {
   @scala.inline
   def apply(default: PlotTimelineDragDropGuideBoxDefaultOptions = null): PlotTimelineDragDropGuideBoxOptions = {
     val __obj = js.Dynamic.literal()
-    if (default != null) __obj.updateDynamic("default")(default)
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotTimelineDragDropGuideBoxOptions]
   }
 }

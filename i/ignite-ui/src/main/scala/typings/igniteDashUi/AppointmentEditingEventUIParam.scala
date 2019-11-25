@@ -23,9 +23,9 @@ object AppointmentEditingEventUIParam {
   @scala.inline
   def apply(appointment: js.Any = null, newAppointment: js.Any = null, owner: js.Any = null): AppointmentEditingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (appointment != null) __obj.updateDynamic("appointment")(appointment)
-    if (newAppointment != null) __obj.updateDynamic("newAppointment")(newAppointment)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (appointment != null) __obj.updateDynamic("appointment")(appointment.asInstanceOf[js.Any])
+    if (newAppointment != null) __obj.updateDynamic("newAppointment")(newAppointment.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppointmentEditingEventUIParam]
   }
 }

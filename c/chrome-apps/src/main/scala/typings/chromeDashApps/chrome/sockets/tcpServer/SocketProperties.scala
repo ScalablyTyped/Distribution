@@ -25,8 +25,8 @@ object SocketProperties {
   @scala.inline
   def apply(name: String = null, persistent: js.UndefOr[Boolean] = js.undefined): SocketProperties = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(persistent)) __obj.updateDynamic("persistent")(persistent)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(persistent)) __obj.updateDynamic("persistent")(persistent.asInstanceOf[js.Any])
     __obj.asInstanceOf[SocketProperties]
   }
 }

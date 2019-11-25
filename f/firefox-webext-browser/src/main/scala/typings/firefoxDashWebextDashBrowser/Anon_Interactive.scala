@@ -13,8 +13,8 @@ trait Anon_Interactive extends js.Object {
 object Anon_Interactive {
   @scala.inline
   def apply(url: HttpURL, interactive: js.UndefOr[Boolean] = js.undefined): Anon_Interactive = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Interactive]
   }
 }

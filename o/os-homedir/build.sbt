@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "os-homedir"
-version := "1.0-dt-20180214Z-272de6"
+version := "1.0-dt-20180214Z-3d6af7"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -31,14 +31,14 @@ object SchedulerEditable {
   ): SchedulerEditable = {
     val __obj = js.Dynamic.literal()
     if (confirmation != null) __obj.updateDynamic("confirmation")(confirmation.asInstanceOf[js.Any])
-    if (!js.isUndefined(create)) __obj.updateDynamic("create")(create)
-    if (!js.isUndefined(destroy)) __obj.updateDynamic("destroy")(destroy)
-    if (editRecurringMode != null) __obj.updateDynamic("editRecurringMode")(editRecurringMode)
-    if (!js.isUndefined(move)) __obj.updateDynamic("move")(move)
-    if (!js.isUndefined(resize)) __obj.updateDynamic("resize")(resize)
+    if (!js.isUndefined(create)) __obj.updateDynamic("create")(create.asInstanceOf[js.Any])
+    if (!js.isUndefined(destroy)) __obj.updateDynamic("destroy")(destroy.asInstanceOf[js.Any])
+    if (editRecurringMode != null) __obj.updateDynamic("editRecurringMode")(editRecurringMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(move)) __obj.updateDynamic("move")(move.asInstanceOf[js.Any])
+    if (!js.isUndefined(resize)) __obj.updateDynamic("resize")(resize.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (!js.isUndefined(update)) __obj.updateDynamic("update")(update)
-    if (window != null) __obj.updateDynamic("window")(window)
+    if (!js.isUndefined(update)) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
+    if (window != null) __obj.updateDynamic("window")(window.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchedulerEditable]
   }
 }

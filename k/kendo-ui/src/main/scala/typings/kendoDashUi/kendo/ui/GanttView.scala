@@ -35,15 +35,15 @@ object GanttView {
     yearHeaderTemplate: String | js.Function = null
   ): GanttView = {
     val __obj = js.Dynamic.literal()
-    if (date != null) __obj.updateDynamic("date")(date)
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
     if (dayHeaderTemplate != null) __obj.updateDynamic("dayHeaderTemplate")(dayHeaderTemplate.asInstanceOf[js.Any])
     if (monthHeaderTemplate != null) __obj.updateDynamic("monthHeaderTemplate")(monthHeaderTemplate.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range)
-    if (resizeTooltipFormat != null) __obj.updateDynamic("resizeTooltipFormat")(resizeTooltipFormat)
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (resizeTooltipFormat != null) __obj.updateDynamic("resizeTooltipFormat")(resizeTooltipFormat.asInstanceOf[js.Any])
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
     if (slotSize != null) __obj.updateDynamic("slotSize")(slotSize.asInstanceOf[js.Any])
     if (timeHeaderTemplate != null) __obj.updateDynamic("timeHeaderTemplate")(timeHeaderTemplate.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (weekHeaderTemplate != null) __obj.updateDynamic("weekHeaderTemplate")(weekHeaderTemplate.asInstanceOf[js.Any])
     if (yearHeaderTemplate != null) __obj.updateDynamic("yearHeaderTemplate")(yearHeaderTemplate.asInstanceOf[js.Any])
     __obj.asInstanceOf[GanttView]

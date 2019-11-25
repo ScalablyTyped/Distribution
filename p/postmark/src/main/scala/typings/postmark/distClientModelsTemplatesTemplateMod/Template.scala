@@ -31,11 +31,11 @@ object Template {
     LayoutTemplate: String = null,
     TextBody: String = null
   ): Template = {
-    val __obj = js.Dynamic.literal(Active = Active, AssociatedServerId = AssociatedServerId, Name = Name, Subject = Subject, TemplateId = TemplateId, TemplateType = TemplateType)
-    if (Alias != null) __obj.updateDynamic("Alias")(Alias)
-    if (HtmlBody != null) __obj.updateDynamic("HtmlBody")(HtmlBody)
-    if (LayoutTemplate != null) __obj.updateDynamic("LayoutTemplate")(LayoutTemplate)
-    if (TextBody != null) __obj.updateDynamic("TextBody")(TextBody)
+    val __obj = js.Dynamic.literal(Active = Active.asInstanceOf[js.Any], AssociatedServerId = AssociatedServerId.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Subject = Subject.asInstanceOf[js.Any], TemplateId = TemplateId.asInstanceOf[js.Any], TemplateType = TemplateType.asInstanceOf[js.Any])
+    if (Alias != null) __obj.updateDynamic("Alias")(Alias.asInstanceOf[js.Any])
+    if (HtmlBody != null) __obj.updateDynamic("HtmlBody")(HtmlBody.asInstanceOf[js.Any])
+    if (LayoutTemplate != null) __obj.updateDynamic("LayoutTemplate")(LayoutTemplate.asInstanceOf[js.Any])
+    if (TextBody != null) __obj.updateDynamic("TextBody")(TextBody.asInstanceOf[js.Any])
     __obj.asInstanceOf[Template]
   }
 }

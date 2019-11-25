@@ -16,7 +16,7 @@ trait Lookup extends js.Object {
 object Lookup {
   @scala.inline
   def apply(city: String, country: String, ll: js.Array[Double], range: js.Array[Double], region: String): Lookup = {
-    val __obj = js.Dynamic.literal(city = city, country = country, ll = ll, range = range, region = region)
+    val __obj = js.Dynamic.literal(city = city.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], ll = ll.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Lookup]
   }

@@ -20,10 +20,10 @@ object Anon_GraphEnabled {
     updatesEnabled: js.UndefOr[Boolean] = js.undefined
   ): Anon_GraphEnabled = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(graphEnabled)) __obj.updateDynamic("graphEnabled")(graphEnabled)
-    if (!js.isUndefined(logEnabled)) __obj.updateDynamic("logEnabled")(logEnabled)
+    if (!js.isUndefined(graphEnabled)) __obj.updateDynamic("graphEnabled")(graphEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(logEnabled)) __obj.updateDynamic("logEnabled")(logEnabled.asInstanceOf[js.Any])
     if (logFilter != null) __obj.updateDynamic("logFilter")(js.Any.fromFunction1(logFilter))
-    if (!js.isUndefined(updatesEnabled)) __obj.updateDynamic("updatesEnabled")(updatesEnabled)
+    if (!js.isUndefined(updatesEnabled)) __obj.updateDynamic("updatesEnabled")(updatesEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_GraphEnabled]
   }
 }

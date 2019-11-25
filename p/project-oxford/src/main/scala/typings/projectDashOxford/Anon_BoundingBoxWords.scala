@@ -12,7 +12,7 @@ trait Anon_BoundingBoxWords extends js.Object {
 object Anon_BoundingBoxWords {
   @scala.inline
   def apply(boundingBox: String, words: js.Array[Anon_BoundingBox]): Anon_BoundingBoxWords = {
-    val __obj = js.Dynamic.literal(boundingBox = boundingBox, words = words)
+    val __obj = js.Dynamic.literal(boundingBox = boundingBox.asInstanceOf[js.Any], words = words.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BoundingBoxWords]
   }

@@ -52,17 +52,17 @@ object TargetVpnGateway {
     tunnels: js.Array[String] = null
   ): TargetVpnGateway = {
     val __obj = js.Dynamic.literal()
-    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (forwardingRules != null) __obj.updateDynamic("forwardingRules")(forwardingRules)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (network != null) __obj.updateDynamic("network")(network)
-    if (region != null) __obj.updateDynamic("region")(region)
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (tunnels != null) __obj.updateDynamic("tunnels")(tunnels)
+    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (forwardingRules != null) __obj.updateDynamic("forwardingRules")(forwardingRules.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (tunnels != null) __obj.updateDynamic("tunnels")(tunnels.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetVpnGateway]
   }
 }

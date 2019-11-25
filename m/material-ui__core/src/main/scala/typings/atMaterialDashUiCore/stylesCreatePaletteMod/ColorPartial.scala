@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core.Color> */
-trait ColorPartial extends js.Object {
+trait ColorPartial extends PaletteColorOptions {
   var `100`: js.UndefOr[String] = js.undefined
   var `200`: js.UndefOr[String] = js.undefined
   var `300`: js.UndefOr[String] = js.undefined
@@ -41,20 +41,20 @@ object ColorPartial {
     A700: String = null
   ): ColorPartial = {
     val __obj = js.Dynamic.literal()
-    if (`100` != null) __obj.updateDynamic("100")(`100`)
-    if (`200` != null) __obj.updateDynamic("200")(`200`)
-    if (`300` != null) __obj.updateDynamic("300")(`300`)
-    if (`400` != null) __obj.updateDynamic("400")(`400`)
-    if (`50` != null) __obj.updateDynamic("50")(`50`)
-    if (`500` != null) __obj.updateDynamic("500")(`500`)
-    if (`600` != null) __obj.updateDynamic("600")(`600`)
-    if (`700` != null) __obj.updateDynamic("700")(`700`)
-    if (`800` != null) __obj.updateDynamic("800")(`800`)
-    if (`900` != null) __obj.updateDynamic("900")(`900`)
-    if (A100 != null) __obj.updateDynamic("A100")(A100)
-    if (A200 != null) __obj.updateDynamic("A200")(A200)
-    if (A400 != null) __obj.updateDynamic("A400")(A400)
-    if (A700 != null) __obj.updateDynamic("A700")(A700)
+    if (`100` != null) __obj.updateDynamic("100")(`100`.asInstanceOf[js.Any])
+    if (`200` != null) __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
+    if (`300` != null) __obj.updateDynamic("300")(`300`.asInstanceOf[js.Any])
+    if (`400` != null) __obj.updateDynamic("400")(`400`.asInstanceOf[js.Any])
+    if (`50` != null) __obj.updateDynamic("50")(`50`.asInstanceOf[js.Any])
+    if (`500` != null) __obj.updateDynamic("500")(`500`.asInstanceOf[js.Any])
+    if (`600` != null) __obj.updateDynamic("600")(`600`.asInstanceOf[js.Any])
+    if (`700` != null) __obj.updateDynamic("700")(`700`.asInstanceOf[js.Any])
+    if (`800` != null) __obj.updateDynamic("800")(`800`.asInstanceOf[js.Any])
+    if (`900` != null) __obj.updateDynamic("900")(`900`.asInstanceOf[js.Any])
+    if (A100 != null) __obj.updateDynamic("A100")(A100.asInstanceOf[js.Any])
+    if (A200 != null) __obj.updateDynamic("A200")(A200.asInstanceOf[js.Any])
+    if (A400 != null) __obj.updateDynamic("A400")(A400.asInstanceOf[js.Any])
+    if (A700 != null) __obj.updateDynamic("A700")(A700.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColorPartial]
   }
 }

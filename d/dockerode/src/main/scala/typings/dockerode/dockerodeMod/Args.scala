@@ -14,7 +14,7 @@ trait Args extends js.Object {
 object Args {
   @scala.inline
   def apply(Description: String, Name: String, Settable: js.Array[String], Value: String): Args = {
-    val __obj = js.Dynamic.literal(Description = Description, Name = Name, Settable = Settable, Value = Value)
+    val __obj = js.Dynamic.literal(Description = Description.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Settable = Settable.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Args]
   }

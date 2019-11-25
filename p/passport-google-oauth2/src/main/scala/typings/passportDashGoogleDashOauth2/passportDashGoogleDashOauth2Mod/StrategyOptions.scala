@@ -24,10 +24,10 @@ object StrategyOptions {
     proxy: js.UndefOr[Boolean] = js.undefined,
     scope: js.Array[String] = null
   ): StrategyOptions = {
-    val __obj = js.Dynamic.literal(callbackURL = callbackURL, clientID = clientID, clientSecret = clientSecret)
-    if (passReqToCallback != null) __obj.updateDynamic("passReqToCallback")(passReqToCallback)
-    if (!js.isUndefined(proxy)) __obj.updateDynamic("proxy")(proxy)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
+    val __obj = js.Dynamic.literal(callbackURL = callbackURL.asInstanceOf[js.Any], clientID = clientID.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any])
+    if (passReqToCallback != null) __obj.updateDynamic("passReqToCallback")(passReqToCallback.asInstanceOf[js.Any])
+    if (!js.isUndefined(proxy)) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrategyOptions]
   }
 }

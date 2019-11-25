@@ -19,7 +19,7 @@ trait Typeofhwb extends js.Object {
 object Typeofhwb {
   @scala.inline
   def apply(channels: `3`, hcg: HWB => HCG, labels: hwb, rgb: HWB => RGB): Typeofhwb = {
-    val __obj = js.Dynamic.literal(channels = channels, hcg = js.Any.fromFunction1(hcg), labels = labels, rgb = js.Any.fromFunction1(rgb))
+    val __obj = js.Dynamic.literal(channels = channels.asInstanceOf[js.Any], hcg = js.Any.fromFunction1(hcg), labels = labels.asInstanceOf[js.Any], rgb = js.Any.fromFunction1(rgb))
   
     __obj.asInstanceOf[Typeofhwb]
   }

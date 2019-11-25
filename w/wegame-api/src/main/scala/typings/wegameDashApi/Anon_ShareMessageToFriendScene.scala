@@ -14,7 +14,7 @@ trait Anon_ShareMessageToFriendScene extends js.Object {
 object Anon_ShareMessageToFriendScene {
   @scala.inline
   def apply(shareMessageToFriendScene: Double): Anon_ShareMessageToFriendScene = {
-    val __obj = js.Dynamic.literal(shareMessageToFriendScene = shareMessageToFriendScene)
+    val __obj = js.Dynamic.literal(shareMessageToFriendScene = shareMessageToFriendScene.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ShareMessageToFriendScene]
   }

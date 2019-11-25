@@ -13,8 +13,8 @@ trait IBitmapTypedValue extends js.Object {
 object IBitmapTypedValue {
   @scala.inline
   def apply(`type`: PropertyType, value: js.Any): IBitmapTypedValue = {
-    val __obj = js.Dynamic.literal(value = value)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBitmapTypedValue]
   }
 }

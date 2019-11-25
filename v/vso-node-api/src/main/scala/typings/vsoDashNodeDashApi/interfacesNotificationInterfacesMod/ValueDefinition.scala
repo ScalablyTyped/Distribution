@@ -23,7 +23,7 @@ trait ValueDefinition extends js.Object {
 object ValueDefinition {
   @scala.inline
   def apply(dataSource: js.Array[InputValue], endPoint: String, resultTemplate: String): ValueDefinition = {
-    val __obj = js.Dynamic.literal(dataSource = dataSource, endPoint = endPoint, resultTemplate = resultTemplate)
+    val __obj = js.Dynamic.literal(dataSource = dataSource.asInstanceOf[js.Any], endPoint = endPoint.asInstanceOf[js.Any], resultTemplate = resultTemplate.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ValueDefinition]
   }

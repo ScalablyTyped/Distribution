@@ -20,9 +20,9 @@ object Arm64BaseOperand {
     vectorIndex: Int | Double = null
   ): Arm64BaseOperand = {
     val __obj = js.Dynamic.literal()
-    if (ext != null) __obj.updateDynamic("ext")(ext)
-    if (shift != null) __obj.updateDynamic("shift")(shift)
-    if (vas != null) __obj.updateDynamic("vas")(vas)
+    if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
+    if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
+    if (vas != null) __obj.updateDynamic("vas")(vas.asInstanceOf[js.Any])
     if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[Arm64BaseOperand]
   }

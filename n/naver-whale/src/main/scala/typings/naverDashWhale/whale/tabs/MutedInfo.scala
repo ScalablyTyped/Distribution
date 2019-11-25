@@ -25,9 +25,9 @@ trait MutedInfo extends js.Object {
 object MutedInfo {
   @scala.inline
   def apply(muted: Boolean, extensionId: String = null, reason: String = null): MutedInfo = {
-    val __obj = js.Dynamic.literal(muted = muted)
-    if (extensionId != null) __obj.updateDynamic("extensionId")(extensionId)
-    if (reason != null) __obj.updateDynamic("reason")(reason)
+    val __obj = js.Dynamic.literal(muted = muted.asInstanceOf[js.Any])
+    if (extensionId != null) __obj.updateDynamic("extensionId")(extensionId.asInstanceOf[js.Any])
+    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[MutedInfo]
   }
 }

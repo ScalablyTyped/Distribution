@@ -36,7 +36,7 @@ trait Knex[TRecord /* <: js.Object */, TResult]
   def raw[TResult2](value: Value): Raw[TResult2] = js.native
   def ref[TSrc /* <: String */](src: TSrc): Ref[
     TSrc, 
-    /* import warning: ImportType.apply c Unsupported type mapping: 
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in TSrc ]: TSrc}
     */ typings.knex.knexStrings.Knex with js.Any
   ] = js.native

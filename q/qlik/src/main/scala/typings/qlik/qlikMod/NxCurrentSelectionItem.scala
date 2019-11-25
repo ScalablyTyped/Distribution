@@ -39,11 +39,11 @@ object NxCurrentSelectionItem {
     qOneAndOnlyOne: js.UndefOr[Boolean] = js.undefined,
     qTextSearch: String = null
   ): NxCurrentSelectionItem = {
-    val __obj = js.Dynamic.literal(qField = qField, qNotSelectedFieldSelectionInfo = qNotSelectedFieldSelectionInfo, qRangeInfo = qRangeInfo, qSelected = qSelected, qSelectedCount = qSelectedCount, qSelectedFieldSelectionInfo = qSelectedFieldSelectionInfo, qSelectionThreshold = qSelectionThreshold, qSortIndex = qSortIndex, qStateCounts = qStateCounts, qTotal = qTotal)
-    if (!js.isUndefined(qIsNum)) __obj.updateDynamic("qIsNum")(qIsNum)
-    if (!js.isUndefined(qLocked)) __obj.updateDynamic("qLocked")(qLocked)
-    if (!js.isUndefined(qOneAndOnlyOne)) __obj.updateDynamic("qOneAndOnlyOne")(qOneAndOnlyOne)
-    if (qTextSearch != null) __obj.updateDynamic("qTextSearch")(qTextSearch)
+    val __obj = js.Dynamic.literal(qField = qField.asInstanceOf[js.Any], qNotSelectedFieldSelectionInfo = qNotSelectedFieldSelectionInfo.asInstanceOf[js.Any], qRangeInfo = qRangeInfo.asInstanceOf[js.Any], qSelected = qSelected.asInstanceOf[js.Any], qSelectedCount = qSelectedCount.asInstanceOf[js.Any], qSelectedFieldSelectionInfo = qSelectedFieldSelectionInfo.asInstanceOf[js.Any], qSelectionThreshold = qSelectionThreshold.asInstanceOf[js.Any], qSortIndex = qSortIndex.asInstanceOf[js.Any], qStateCounts = qStateCounts.asInstanceOf[js.Any], qTotal = qTotal.asInstanceOf[js.Any])
+    if (!js.isUndefined(qIsNum)) __obj.updateDynamic("qIsNum")(qIsNum.asInstanceOf[js.Any])
+    if (!js.isUndefined(qLocked)) __obj.updateDynamic("qLocked")(qLocked.asInstanceOf[js.Any])
+    if (!js.isUndefined(qOneAndOnlyOne)) __obj.updateDynamic("qOneAndOnlyOne")(qOneAndOnlyOne.asInstanceOf[js.Any])
+    if (qTextSearch != null) __obj.updateDynamic("qTextSearch")(qTextSearch.asInstanceOf[js.Any])
     __obj.asInstanceOf[NxCurrentSelectionItem]
   }
 }

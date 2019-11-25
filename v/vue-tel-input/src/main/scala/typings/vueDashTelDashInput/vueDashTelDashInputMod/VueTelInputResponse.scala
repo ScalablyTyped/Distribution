@@ -13,7 +13,7 @@ trait VueTelInputResponse extends js.Object {
 object VueTelInputResponse {
   @scala.inline
   def apply(country: VueTelInputCountryOption, isValid: Boolean, number: String): VueTelInputResponse = {
-    val __obj = js.Dynamic.literal(country = country, isValid = isValid, number = number)
+    val __obj = js.Dynamic.literal(country = country.asInstanceOf[js.Any], isValid = isValid.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[VueTelInputResponse]
   }

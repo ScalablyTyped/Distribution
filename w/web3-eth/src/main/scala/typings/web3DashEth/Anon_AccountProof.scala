@@ -26,7 +26,7 @@ object Anon_AccountProof {
     storageHash: String,
     storageProof: js.Array[StorageProof]
   ): Anon_AccountProof = {
-    val __obj = js.Dynamic.literal(accountProof = accountProof, address = address, balance = balance, codeHash = codeHash, nonce = nonce, storageHash = storageHash, storageProof = storageProof)
+    val __obj = js.Dynamic.literal(accountProof = accountProof.asInstanceOf[js.Any], address = address.asInstanceOf[js.Any], balance = balance.asInstanceOf[js.Any], codeHash = codeHash.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any], storageHash = storageHash.asInstanceOf[js.Any], storageProof = storageProof.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AccountProof]
   }

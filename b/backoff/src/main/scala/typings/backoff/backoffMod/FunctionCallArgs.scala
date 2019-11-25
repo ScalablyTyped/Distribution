@@ -46,25 +46,18 @@ trait FunctionCallArgs[E, R1, R2, R3] extends js.Object {
 object FunctionCallArgs {
   @scala.inline
   def apply[E, R1, R2, R3](
-    addListener_callback: (callback, js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], Unit]) => FunctionCallArgs[E, R1, R2, R3],
-    emit_callback: (callback, js.Tuple4[E, R1, R2, R3]) => Boolean,
+    addListener: (callback, js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], Unit]) => FunctionCallArgs[E, R1, R2, R3],
+    emit: (callback, js.Tuple4[E, R1, R2, R3]) => Boolean,
     getLastResult: () => js.Tuple4[E, R1, R2, R3],
-    listeners_callback: callback => js.Array[js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], Unit]],
-    on_callback: (callback, js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], Unit]) => FunctionCallArgs[E, R1, R2, R3],
-    once_callback: (callback, js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], Unit]) => FunctionCallArgs[E, R1, R2, R3],
-    prependListener_callback: (callback, js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], Unit]) => FunctionCallArgs[E, R1, R2, R3],
-    prependOnceListener_callback: (callback, js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], Unit]) => FunctionCallArgs[E, R1, R2, R3],
-    removeListener_callback: (callback, js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], Unit]) => FunctionCallArgs[E, R1, R2, R3]
+    listeners: callback => js.Array[js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], Unit]],
+    on: (callback, js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], Unit]) => FunctionCallArgs[E, R1, R2, R3],
+    once: (callback, js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], Unit]) => FunctionCallArgs[E, R1, R2, R3],
+    prependListener: (callback, js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], Unit]) => FunctionCallArgs[E, R1, R2, R3],
+    prependOnceListener: (callback, js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], Unit]) => FunctionCallArgs[E, R1, R2, R3],
+    removeListener: (callback, js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], Unit]) => FunctionCallArgs[E, R1, R2, R3]
   ): FunctionCallArgs[E, R1, R2, R3] = {
-    val __obj = js.Dynamic.literal(getLastResult = js.Any.fromFunction0(getLastResult))
-    __obj.updateDynamic("addListener")(js.Any.fromFunction2(addListener_callback))
-    __obj.updateDynamic("emit")(js.Any.fromFunction2(emit_callback))
-    __obj.updateDynamic("listeners")(js.Any.fromFunction1(listeners_callback))
-    __obj.updateDynamic("on")(js.Any.fromFunction2(on_callback))
-    __obj.updateDynamic("once")(js.Any.fromFunction2(once_callback))
-    __obj.updateDynamic("prependListener")(js.Any.fromFunction2(prependListener_callback))
-    __obj.updateDynamic("prependOnceListener")(js.Any.fromFunction2(prependOnceListener_callback))
-    __obj.updateDynamic("removeListener")(js.Any.fromFunction2(removeListener_callback))
+    val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction2(addListener), emit = js.Any.fromFunction2(emit), getLastResult = js.Any.fromFunction0(getLastResult), listeners = js.Any.fromFunction1(listeners), on = js.Any.fromFunction2(on), once = js.Any.fromFunction2(once), prependListener = js.Any.fromFunction2(prependListener), prependOnceListener = js.Any.fromFunction2(prependOnceListener), removeListener = js.Any.fromFunction2(removeListener))
+  
     __obj.asInstanceOf[FunctionCallArgs[E, R1, R2, R3]]
   }
 }

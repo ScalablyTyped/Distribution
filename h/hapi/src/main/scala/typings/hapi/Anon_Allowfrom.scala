@@ -22,7 +22,7 @@ trait Anon_Allowfrom extends js.Object {
 object Anon_Allowfrom {
   @scala.inline
   def apply(rule: deny | sameorigin | `allow-from`, source: String): Anon_Allowfrom = {
-    val __obj = js.Dynamic.literal(rule = rule.asInstanceOf[js.Any], source = source)
+    val __obj = js.Dynamic.literal(rule = rule.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Allowfrom]
   }

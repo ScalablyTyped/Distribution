@@ -29,14 +29,14 @@ object Options {
     root: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
     if (chunkSize != null) __obj.updateDynamic("chunkSize")(chunkSize.asInstanceOf[js.Any])
-    if (content_type != null) __obj.updateDynamic("content_type")(content_type)
-    if (filename != null) __obj.updateDynamic("filename")(filename)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (mode != null) __obj.updateDynamic("mode")(mode)
-    if (range != null) __obj.updateDynamic("range")(range)
-    if (root != null) __obj.updateDynamic("root")(root)
+    if (content_type != null) __obj.updateDynamic("content_type")(content_type.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

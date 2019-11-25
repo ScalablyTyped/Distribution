@@ -13,7 +13,7 @@ trait PutObjectResult extends js.Object {
 object PutObjectResult {
   @scala.inline
   def apply(data: js.Object, name: String, res: NormalSuccessResponse): PutObjectResult = {
-    val __obj = js.Dynamic.literal(data = data, name = name, res = res)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PutObjectResult]
   }

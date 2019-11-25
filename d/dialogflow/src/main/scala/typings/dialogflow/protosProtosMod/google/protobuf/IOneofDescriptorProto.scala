@@ -16,8 +16,8 @@ object IOneofDescriptorProto {
   @scala.inline
   def apply(name: String = null, options: IOneofOptions = null): IOneofDescriptorProto = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOneofDescriptorProto]
   }
 }

@@ -14,7 +14,7 @@ trait Anon_UsesOnChanges extends js.Object {
 object Anon_UsesOnChanges {
   @scala.inline
   def apply(usesOnChanges: Boolean): Anon_UsesOnChanges = {
-    val __obj = js.Dynamic.literal(usesOnChanges = usesOnChanges)
+    val __obj = js.Dynamic.literal(usesOnChanges = usesOnChanges.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_UsesOnChanges]
   }

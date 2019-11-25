@@ -13,8 +13,8 @@ trait Anon_Name extends js.Object {
 object Anon_Name {
   @scala.inline
   def apply(name: String, protocol: String, subtypes: js.Array[String] = null): Anon_Name = {
-    val __obj = js.Dynamic.literal(name = name, protocol = protocol)
-    if (subtypes != null) __obj.updateDynamic("subtypes")(subtypes)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any])
+    if (subtypes != null) __obj.updateDynamic("subtypes")(subtypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Name]
   }
 }

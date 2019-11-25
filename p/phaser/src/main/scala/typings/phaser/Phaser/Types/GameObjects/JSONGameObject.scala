@@ -112,12 +112,12 @@ object JSONGameObject {
     x: Double,
     y: Double
   ): JSONGameObject = {
-    val __obj = js.Dynamic.literal(alpha = alpha, blendMode = blendMode.asInstanceOf[js.Any], data = data, flipX = flipX, flipY = flipY, frameKey = frameKey, name = name, origin = origin, rotation = rotation, scale = scale, scaleMode = scaleMode, textureKey = textureKey, visible = visible, x = x, y = y)
-    __obj.updateDynamic("origin.x")(`origin.x`)
-    __obj.updateDynamic("origin.y")(`origin.y`)
-    __obj.updateDynamic("scale.x")(`scale.x`)
-    __obj.updateDynamic("scale.y")(`scale.y`)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(alpha = alpha.asInstanceOf[js.Any], blendMode = blendMode.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], flipX = flipX.asInstanceOf[js.Any], flipY = flipY.asInstanceOf[js.Any], frameKey = frameKey.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], scaleMode = scaleMode.asInstanceOf[js.Any], textureKey = textureKey.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    __obj.updateDynamic("origin.x")(`origin.x`.asInstanceOf[js.Any])
+    __obj.updateDynamic("origin.y")(`origin.y`.asInstanceOf[js.Any])
+    __obj.updateDynamic("scale.x")(`scale.x`.asInstanceOf[js.Any])
+    __obj.updateDynamic("scale.y")(`scale.y`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSONGameObject]
   }
 }

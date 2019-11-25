@@ -40,7 +40,7 @@ trait Constructor
   def at[T](instance: js.Array[T], index: Double): T = js.native
   def at[T](instance: js.Array[T], index: Double, loop: Boolean): T = js.native
   def average[T, U](instance: js.Array[T]): Double = js.native
-  def average[T, U](instance: js.Array[T], map: String): Double = js.native
+  def average[T, U](instance: js.Array[T], map: java.lang.String): Double = js.native
   def average[T, U](instance: js.Array[T], map: mapFn[T, U]): Double = js.native
   def clone[T](instance: js.Array[T]): js.Array[T] = js.native
   def compact[T](instance: js.Array[T]): js.Array[T] = js.native
@@ -93,18 +93,18 @@ trait Constructor
   def forEachFromIndex[T](instance: js.Array[T], startIndex: Double, args: js.Any*): T = js.native
   def forEachFromIndex[T](instance: js.Array[T], startIndex: Double, loop: Boolean, args: js.Any*): T = js.native
   def from[T](instance: js.Array[T], index: Double): js.Array[T] = js.native
-  def getOption[T](name: String): T = js.native
-  def groupBy[T, U](instance: js.Array[T], map: String): js.Object = js.native
+  def getOption[T](name: java.lang.String): T = js.native
+  def groupBy[T, U](instance: js.Array[T], map: java.lang.String): js.Object = js.native
   def groupBy[T, U](
     instance: js.Array[T],
-    map: String,
-    groupFn: js.Function3[/* arr */ js.Array[T], /* key */ String, /* obj */ js.Object, Unit]
+    map: java.lang.String,
+    groupFn: js.Function3[/* arr */ js.Array[T], /* key */ java.lang.String, /* obj */ js.Object, Unit]
   ): js.Object = js.native
   def groupBy[T, U](instance: js.Array[T], map: mapFn[T, U]): js.Object = js.native
   def groupBy[T, U](
     instance: js.Array[T],
     map: mapFn[T, U],
-    groupFn: js.Function3[/* arr */ js.Array[T], /* key */ String, /* obj */ js.Object, Unit]
+    groupFn: js.Function3[/* arr */ js.Array[T], /* key */ java.lang.String, /* obj */ js.Object, Unit]
   ): js.Object = js.native
   def inGroups[T](instance: js.Array[T], num: Double): js.Array[T] = js.native
   def inGroups[T](instance: js.Array[T], num: Double, padding: js.Any): js.Array[T] = js.native
@@ -121,12 +121,12 @@ trait Constructor
   def last[T](instance: js.Array[T], num: Double): T = js.native
   def least[T, U](instance: js.Array[T]): js.Array[T] = js.native
   def least[T, U](instance: js.Array[T], all: Boolean): js.Array[T] = js.native
-  def least[T, U](instance: js.Array[T], all: Boolean, map: String): js.Array[T] = js.native
+  def least[T, U](instance: js.Array[T], all: Boolean, map: java.lang.String): js.Array[T] = js.native
   def least[T, U](instance: js.Array[T], all: Boolean, map: mapFn[T, U]): js.Array[T] = js.native
-  def least[T, U](instance: js.Array[T], map: String): js.Array[T] = js.native
+  def least[T, U](instance: js.Array[T], map: java.lang.String): js.Array[T] = js.native
   def least[T, U](instance: js.Array[T], map: mapFn[T, U]): js.Array[T] = js.native
-  def map[T, U](instance: js.Array[T], map: String): js.Array[U] = js.native
-  def map[T, U](instance: js.Array[T], map: String, context: js.Any): js.Array[U] = js.native
+  def map[T, U](instance: js.Array[T], map: java.lang.String): js.Array[U] = js.native
+  def map[T, U](instance: js.Array[T], map: java.lang.String, context: js.Any): js.Array[U] = js.native
   def map[T, U](instance: js.Array[T], map: mapFn[T, U]): js.Array[U] = js.native
   def map[T, U](instance: js.Array[T], map: mapFn[T, U], context: js.Any): js.Array[U] = js.native
   def mapFromIndex[T](instance: js.Array[T], startIndex: Double): T = js.native
@@ -134,24 +134,24 @@ trait Constructor
   def mapFromIndex[T](instance: js.Array[T], startIndex: Double, loop: Boolean, args: js.Any*): T = js.native
   def max[T, U](instance: js.Array[T]): T = js.native
   def max[T, U](instance: js.Array[T], all: Boolean): T = js.native
-  def max[T, U](instance: js.Array[T], all: Boolean, map: String): T = js.native
+  def max[T, U](instance: js.Array[T], all: Boolean, map: java.lang.String): T = js.native
   def max[T, U](instance: js.Array[T], all: Boolean, map: mapFn[T, U]): T = js.native
-  def max[T, U](instance: js.Array[T], map: String): T = js.native
+  def max[T, U](instance: js.Array[T], map: java.lang.String): T = js.native
   def max[T, U](instance: js.Array[T], map: mapFn[T, U]): T = js.native
   def median[T, U](instance: js.Array[T]): Double = js.native
-  def median[T, U](instance: js.Array[T], map: String): Double = js.native
+  def median[T, U](instance: js.Array[T], map: java.lang.String): Double = js.native
   def median[T, U](instance: js.Array[T], map: mapFn[T, U]): Double = js.native
   def min[T, U](instance: js.Array[T]): T = js.native
   def min[T, U](instance: js.Array[T], all: Boolean): T = js.native
-  def min[T, U](instance: js.Array[T], all: Boolean, map: String): T = js.native
+  def min[T, U](instance: js.Array[T], all: Boolean, map: java.lang.String): T = js.native
   def min[T, U](instance: js.Array[T], all: Boolean, map: mapFn[T, U]): T = js.native
-  def min[T, U](instance: js.Array[T], map: String): T = js.native
+  def min[T, U](instance: js.Array[T], map: java.lang.String): T = js.native
   def min[T, U](instance: js.Array[T], map: mapFn[T, U]): T = js.native
   def most[T, U](instance: js.Array[T]): js.Array[T] = js.native
   def most[T, U](instance: js.Array[T], all: Boolean): js.Array[T] = js.native
-  def most[T, U](instance: js.Array[T], all: Boolean, map: String): js.Array[T] = js.native
+  def most[T, U](instance: js.Array[T], all: Boolean, map: java.lang.String): js.Array[T] = js.native
   def most[T, U](instance: js.Array[T], all: Boolean, map: mapFn[T, U]): js.Array[T] = js.native
-  def most[T, U](instance: js.Array[T], map: String): js.Array[T] = js.native
+  def most[T, U](instance: js.Array[T], map: java.lang.String): js.Array[T] = js.native
   def most[T, U](instance: js.Array[T], map: mapFn[T, U]): js.Array[T] = js.native
   def none[T](instance: js.Array[T], search: T): Boolean = js.native
   def none[T](instance: js.Array[T], search: T, context: js.Any): Boolean = js.native
@@ -170,7 +170,7 @@ trait Constructor
   def sample[T](instance: js.Array[T]): T = js.native
   def sample[T](instance: js.Array[T], num: Double): T = js.native
   def sample[T](instance: js.Array[T], num: Double, remove: Boolean): T = js.native
-  def setOption(name: String, value: js.Any): Unit = js.native
+  def setOption(name: java.lang.String, value: js.Any): Unit = js.native
   def setOption(options: ArrayOptions): Unit = js.native
   def shuffle[T](instance: js.Array[T]): js.Array[T] = js.native
   def some[T](instance: js.Array[T], search: T): Boolean = js.native
@@ -181,19 +181,19 @@ trait Constructor
   def someFromIndex[T](instance: js.Array[T], startIndex: Double, args: js.Any*): T = js.native
   def someFromIndex[T](instance: js.Array[T], startIndex: Double, loop: Boolean, args: js.Any*): T = js.native
   def sortBy[T, U](instance: js.Array[T]): js.Array[T] = js.native
-  def sortBy[T, U](instance: js.Array[T], map: String): js.Array[T] = js.native
-  def sortBy[T, U](instance: js.Array[T], map: String, desc: Boolean): js.Array[T] = js.native
+  def sortBy[T, U](instance: js.Array[T], map: java.lang.String): js.Array[T] = js.native
+  def sortBy[T, U](instance: js.Array[T], map: java.lang.String, desc: Boolean): js.Array[T] = js.native
   def sortBy[T, U](instance: js.Array[T], map: sortMapFn[T, U]): js.Array[T] = js.native
   def sortBy[T, U](instance: js.Array[T], map: sortMapFn[T, U], desc: Boolean): js.Array[T] = js.native
   def subtract[T](instance: js.Array[T], item: T): js.Array[T] = js.native
   def subtract[T](instance: js.Array[T], item: js.Array[T]): js.Array[T] = js.native
   def sum[T, U](instance: js.Array[T]): Double = js.native
-  def sum[T, U](instance: js.Array[T], map: String): Double = js.native
+  def sum[T, U](instance: js.Array[T], map: java.lang.String): Double = js.native
   def sum[T, U](instance: js.Array[T], map: mapFn[T, U]): Double = js.native
   def to[T](instance: js.Array[T], index: Double): js.Array[T] = js.native
   def union[T](instance: js.Array[T], arr: js.Array[T]): js.Array[T] = js.native
   def unique[T, U](instance: js.Array[T]): js.Array[T] = js.native
-  def unique[T, U](instance: js.Array[T], map: String): js.Array[T] = js.native
+  def unique[T, U](instance: js.Array[T], map: java.lang.String): js.Array[T] = js.native
   def unique[T, U](instance: js.Array[T], map: mapFn[T, U]): js.Array[T] = js.native
   def zip[T](instance: js.Array[T], args: js.Any*): js.Array[T] = js.native
 }

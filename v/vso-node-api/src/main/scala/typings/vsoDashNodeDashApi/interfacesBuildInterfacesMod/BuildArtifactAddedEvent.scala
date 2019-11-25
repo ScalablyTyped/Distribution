@@ -11,7 +11,7 @@ trait BuildArtifactAddedEvent extends BuildUpdatedEvent {
 object BuildArtifactAddedEvent {
   @scala.inline
   def apply(artifact: BuildArtifact, build: Build, buildId: Double): BuildArtifactAddedEvent = {
-    val __obj = js.Dynamic.literal(artifact = artifact, build = build, buildId = buildId)
+    val __obj = js.Dynamic.literal(artifact = artifact.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], buildId = buildId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BuildArtifactAddedEvent]
   }

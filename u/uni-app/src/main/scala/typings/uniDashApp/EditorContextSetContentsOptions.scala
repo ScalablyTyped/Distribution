@@ -38,9 +38,9 @@ object EditorContextSetContentsOptions {
   ): EditorContextSetContentsOptions = {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
-    if (delta != null) __obj.updateDynamic("delta")(delta)
+    if (delta != null) __obj.updateDynamic("delta")(delta.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
-    if (html != null) __obj.updateDynamic("html")(html)
+    if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))
     __obj.asInstanceOf[EditorContextSetContentsOptions]
   }

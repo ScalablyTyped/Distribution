@@ -15,8 +15,8 @@ trait RuneListDto extends js.Object {
 object RuneListDto {
   @scala.inline
   def apply(basic: BasicDataDto, data: js.Array[StringDictionary[RuneDto]], `type`: String, version: String): RuneListDto = {
-    val __obj = js.Dynamic.literal(basic = basic, data = data, version = version)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(basic = basic.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuneListDto]
   }
 }

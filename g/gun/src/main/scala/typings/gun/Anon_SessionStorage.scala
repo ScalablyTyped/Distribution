@@ -11,7 +11,7 @@ trait Anon_SessionStorage extends js.Object {
 object Anon_SessionStorage {
   @scala.inline
   def apply(sessionStorage: Boolean): Anon_SessionStorage = {
-    val __obj = js.Dynamic.literal(sessionStorage = sessionStorage)
+    val __obj = js.Dynamic.literal(sessionStorage = sessionStorage.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_SessionStorage]
   }

@@ -14,8 +14,8 @@ object Anon_ColorGlowPower {
   @scala.inline
   def apply(color: Property = null, glowPower: Property = null): Anon_ColorGlowPower = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (glowPower != null) __obj.updateDynamic("glowPower")(glowPower)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (glowPower != null) __obj.updateDynamic("glowPower")(glowPower.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ColorGlowPower]
   }
 }

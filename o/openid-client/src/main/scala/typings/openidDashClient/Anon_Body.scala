@@ -19,7 +19,7 @@ object Anon_Body {
   @scala.inline
   def apply(tokenType: String = null, verb: GET | POST = null, via: header | body | query = null): Anon_Body = {
     val __obj = js.Dynamic.literal()
-    if (tokenType != null) __obj.updateDynamic("tokenType")(tokenType)
+    if (tokenType != null) __obj.updateDynamic("tokenType")(tokenType.asInstanceOf[js.Any])
     if (verb != null) __obj.updateDynamic("verb")(verb.asInstanceOf[js.Any])
     if (via != null) __obj.updateDynamic("via")(via.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Body]

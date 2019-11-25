@@ -32,7 +32,7 @@ object AffineTransform {
     if (shearY != null) __obj.updateDynamic("shearY")(shearY.asInstanceOf[js.Any])
     if (translateX != null) __obj.updateDynamic("translateX")(translateX.asInstanceOf[js.Any])
     if (translateY != null) __obj.updateDynamic("translateY")(translateY.asInstanceOf[js.Any])
-    if (unit != null) __obj.updateDynamic("unit")(unit)
+    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[AffineTransform]
   }
 }

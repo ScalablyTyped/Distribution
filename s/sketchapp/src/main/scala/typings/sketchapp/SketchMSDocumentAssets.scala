@@ -22,7 +22,7 @@ object SketchMSDocumentAssets {
     imageCollection: SketchMSImageCollection,
     images: js.Array[_]
   ): SketchMSDocumentAssets = {
-    val __obj = js.Dynamic.literal(_class = _class, colors = colors, gradients = gradients, imageCollection = imageCollection, images = images)
+    val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], colors = colors.asInstanceOf[js.Any], gradients = gradients.asInstanceOf[js.Any], imageCollection = imageCollection.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SketchMSDocumentAssets]
   }

@@ -12,7 +12,7 @@ object Anon_XAdsRegion {
   @scala.inline
   def apply(xAdsRegion: String = null): Anon_XAdsRegion = {
     val __obj = js.Dynamic.literal()
-    if (xAdsRegion != null) __obj.updateDynamic("xAdsRegion")(xAdsRegion)
+    if (xAdsRegion != null) __obj.updateDynamic("xAdsRegion")(xAdsRegion.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_XAdsRegion]
   }
 }

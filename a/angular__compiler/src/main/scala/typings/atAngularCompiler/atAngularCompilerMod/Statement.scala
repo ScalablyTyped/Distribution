@@ -1,6 +1,5 @@
 package typings.atAngularCompiler.atAngularCompilerMod
 
-import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.StmtModifier
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,9 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class Statement ()
   extends typings.atAngularCompiler.publicUnderscoreApiMod.Statement {
-  def this(modifiers: js.Array[StmtModifier]) = this()
+  def this(modifiers: js.Array[typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.StmtModifier]) = this()
   def this(
-    modifiers: js.Array[StmtModifier],
+    modifiers: js.Array[typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.StmtModifier],
     sourceSpan: typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseSourceSpan
   ) = this()
   def this(modifiers: Null, sourceSpan: typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseSourceSpan) = this()

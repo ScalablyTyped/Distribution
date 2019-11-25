@@ -58,7 +58,7 @@ object RequestPinDetails {
     ] = null,
     requestType: ToStringLiteral[Anon_PIN, String, Exclude[String, PIN | PUK]] = null
   ): RequestPinDetails = {
-    val __obj = js.Dynamic.literal(signRequestId = signRequestId)
+    val __obj = js.Dynamic.literal(signRequestId = signRequestId.asInstanceOf[js.Any])
     if (attemptsLeft != null) __obj.updateDynamic("attemptsLeft")(attemptsLeft.asInstanceOf[js.Any])
     if (errorType != null) __obj.updateDynamic("errorType")(errorType.asInstanceOf[js.Any])
     if (requestType != null) __obj.updateDynamic("requestType")(requestType.asInstanceOf[js.Any])

@@ -13,8 +13,8 @@ trait CombinedCodeFixScope extends js.Object {
 object CombinedCodeFixScope {
   @scala.inline
   def apply(fileName: String, `type`: file): CombinedCodeFixScope = {
-    val __obj = js.Dynamic.literal(fileName = fileName)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CombinedCodeFixScope]
   }
 }

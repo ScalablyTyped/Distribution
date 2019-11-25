@@ -17,7 +17,7 @@ object HighlightsRepositoryHighlightsTrayResponseCover_media {
     cropped_image_version: HighlightsRepositoryHighlightsTrayResponseCropped_image_version,
     media_id: String
   ): HighlightsRepositoryHighlightsTrayResponseCover_media = {
-    val __obj = js.Dynamic.literal(crop_rect = crop_rect, cropped_image_version = cropped_image_version, media_id = media_id)
+    val __obj = js.Dynamic.literal(crop_rect = crop_rect.asInstanceOf[js.Any], cropped_image_version = cropped_image_version.asInstanceOf[js.Any], media_id = media_id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HighlightsRepositoryHighlightsTrayResponseCover_media]
   }

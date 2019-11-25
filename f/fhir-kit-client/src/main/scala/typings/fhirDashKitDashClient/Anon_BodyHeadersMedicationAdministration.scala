@@ -22,8 +22,8 @@ object Anon_BodyHeadersMedicationAdministration {
     headers: Headers = null,
     options: Options = null
   ): Anon_BodyHeadersMedicationAdministration = {
-    val __obj = js.Dynamic.literal(body = body, resourceType = resourceType)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BodyHeadersMedicationAdministration]
   }

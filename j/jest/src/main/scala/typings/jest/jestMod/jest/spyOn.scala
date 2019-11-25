@@ -11,10 +11,10 @@ import scala.scalajs.js.annotation._
 object spyOn extends js.Object {
   def apply[T /* <: js.Object */, M /* <: FunctionPropertyNames[Required[T]] */](`object`: T, method: M): SpyInstance[
     ReturnType[
-      /* import warning: ImportType.apply Failed type conversion: std.Required<T>[M] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: std.Required<T>[M] */ js.Any
     ], 
     ArgsType[
-      /* import warning: ImportType.apply Failed type conversion: std.Required<T>[M] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: std.Required<T>[M] */ js.Any
     ]
   ] = js.native
 }

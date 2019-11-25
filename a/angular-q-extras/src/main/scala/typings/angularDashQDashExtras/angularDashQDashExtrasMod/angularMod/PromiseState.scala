@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait PromiseState extends js.Object
 
+object PromiseState {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def fulfilled: typings.angularDashQDashExtras.angularDashQDashExtrasStrings.fulfilled = this.cast("fulfilled")
+  @scala.inline
+  def rejected: typings.angularDashQDashExtras.angularDashQDashExtrasStrings.rejected = this.cast("rejected")
+}
+

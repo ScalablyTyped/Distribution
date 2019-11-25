@@ -19,8 +19,8 @@ trait CodeActionContext extends js.Object {
 object CodeActionContext {
   @scala.inline
   def apply(markers: js.Array[IMarkerData], only: String = null): CodeActionContext = {
-    val __obj = js.Dynamic.literal(markers = markers)
-    if (only != null) __obj.updateDynamic("only")(only)
+    val __obj = js.Dynamic.literal(markers = markers.asInstanceOf[js.Any])
+    if (only != null) __obj.updateDynamic("only")(only.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeActionContext]
   }
 }

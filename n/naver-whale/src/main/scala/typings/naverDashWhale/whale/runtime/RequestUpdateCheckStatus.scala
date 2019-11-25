@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait RequestUpdateCheckStatus extends js.Object
 
+object RequestUpdateCheckStatus {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def no_update: typings.naverDashWhale.naverDashWhaleStrings.no_update = this.cast("no_update")
+  @scala.inline
+  def throttled: typings.naverDashWhale.naverDashWhaleStrings.throttled = this.cast("throttled")
+  @scala.inline
+  def update_available: typings.naverDashWhale.naverDashWhaleStrings.update_available = this.cast("update_available")
+}
+

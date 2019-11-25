@@ -17,7 +17,7 @@ object Anon_ConnectionRefetchAnonConnectionReaderPaginationMetadata {
     connection: js.Array[ConnectionMetadata],
     refetch: ReaderRefetchMetadata with Anon_ConnectionReaderPaginationMetadata
   ): Anon_ConnectionRefetchAnonConnectionReaderPaginationMetadata = {
-    val __obj = js.Dynamic.literal(connection = connection, refetch = refetch)
+    val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], refetch = refetch.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ConnectionRefetchAnonConnectionReaderPaginationMetadata]
   }

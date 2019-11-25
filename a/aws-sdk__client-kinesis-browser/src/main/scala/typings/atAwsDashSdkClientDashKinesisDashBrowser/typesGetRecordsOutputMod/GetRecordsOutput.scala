@@ -35,9 +35,9 @@ object GetRecordsOutput {
     MillisBehindLatest: Int | Double = null,
     NextShardIterator: String = null
   ): GetRecordsOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata, Records = Records)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], Records = Records.asInstanceOf[js.Any])
     if (MillisBehindLatest != null) __obj.updateDynamic("MillisBehindLatest")(MillisBehindLatest.asInstanceOf[js.Any])
-    if (NextShardIterator != null) __obj.updateDynamic("NextShardIterator")(NextShardIterator)
+    if (NextShardIterator != null) __obj.updateDynamic("NextShardIterator")(NextShardIterator.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRecordsOutput]
   }
 }

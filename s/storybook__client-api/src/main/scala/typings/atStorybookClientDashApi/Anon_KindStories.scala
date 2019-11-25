@@ -12,7 +12,7 @@ trait Anon_KindStories extends js.Object {
 object Anon_KindStories {
   @scala.inline
   def apply(kind: String, stories: js.Array[_]): Anon_KindStories = {
-    val __obj = js.Dynamic.literal(kind = kind, stories = stories)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], stories = stories.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_KindStories]
   }

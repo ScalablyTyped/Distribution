@@ -11,6 +11,10 @@ package object atHapiHapiMod {
   import typings.atHapiCatbox.atHapiCatboxMod.PolicyOptionVariants
   import typings.atHapiHapi.Anon_Cache
   import typings.atHapiHapi.Anon_Constructor
+  import typings.atHapiHapi.Anon_Default
+  import typings.atHapiHapi.Anon_ExpiresAt
+  import typings.atHapiHapi.Anon_ExpiresAtExpiresIn
+  import typings.atHapiHapi.Anon_ExpiresAtExpiresInUndefined
   import typings.atHapiHapi.atHapiHapiMod.Lifecycle.Method
   import typings.atHapiHapi.atHapiHapiMod.Util.Dictionary
   import typings.atHapiHapi.atHapiHapiNumbers.`false`
@@ -48,6 +52,7 @@ package object atHapiHapiMod {
   */
   type RouteOptionsAccessObject = _RouteOptionsAccessObject | (RouteOptionsAccessScopeObject with RouteOptionsAccessEntityObject)
   type RouteOptionsAccessScope = `false` | String | js.Array[String]
+  type RouteOptionsCache = Anon_Default with (Anon_ExpiresAt | Anon_ExpiresAtExpiresIn | Anon_ExpiresAtExpiresInUndefined)
   type RouteOptionsPreAllOptions = RouteOptionsPreObject | js.Array[RouteOptionsPreObject] | Method
   type RouteOptionsPreArray = js.Array[RouteOptionsPreAllOptions]
   type RouteOptionsResponseSchema = Boolean | ValidationObject | Schema | (js.Function2[

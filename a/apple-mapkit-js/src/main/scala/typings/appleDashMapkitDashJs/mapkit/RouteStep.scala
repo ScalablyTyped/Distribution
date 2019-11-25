@@ -29,7 +29,7 @@ trait RouteStep extends js.Object {
 object RouteStep {
   @scala.inline
   def apply(distance: Double, instructions: String, path: js.Array[Coordinate], transportType: String): RouteStep = {
-    val __obj = js.Dynamic.literal(distance = distance, instructions = instructions, path = path, transportType = transportType)
+    val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], instructions = instructions.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], transportType = transportType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RouteStep]
   }

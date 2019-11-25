@@ -15,8 +15,8 @@ object Anon_StorageClass {
   @scala.inline
   def apply(storageClass: String = null, `type`: String = null): Anon_StorageClass = {
     val __obj = js.Dynamic.literal()
-    if (storageClass != null) __obj.updateDynamic("storageClass")(storageClass)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (storageClass != null) __obj.updateDynamic("storageClass")(storageClass.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_StorageClass]
   }
 }

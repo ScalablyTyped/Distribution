@@ -22,8 +22,8 @@ trait Geometry extends js.Object {
 object Geometry {
   @scala.inline
   def apply(coordinates: js.Array[Double], interpolated: Boolean, `type`: String): Geometry = {
-    val __obj = js.Dynamic.literal(coordinates = coordinates, interpolated = interpolated)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any], interpolated = interpolated.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Geometry]
   }
 }

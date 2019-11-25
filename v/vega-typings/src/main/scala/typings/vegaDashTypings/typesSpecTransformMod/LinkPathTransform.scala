@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait LinkPathTransform extends Transforms {
+trait LinkPathTransform extends _Transforms {
   var as: js.UndefOr[String | SignalRef] = js.undefined
   var orient: js.UndefOr[LinkPathOrient | SignalRef] = js.undefined
   var require: js.UndefOr[SignalRef] = js.undefined
@@ -32,10 +32,10 @@ object LinkPathTransform {
     targetY: FieldRef = null
   ): LinkPathTransform = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (orient != null) __obj.updateDynamic("orient")(orient.asInstanceOf[js.Any])
-    if (require != null) __obj.updateDynamic("require")(require)
+    if (require != null) __obj.updateDynamic("require")(require.asInstanceOf[js.Any])
     if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
     if (sourceX != null) __obj.updateDynamic("sourceX")(sourceX.asInstanceOf[js.Any])
     if (sourceY != null) __obj.updateDynamic("sourceY")(sourceY.asInstanceOf[js.Any])

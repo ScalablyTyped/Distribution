@@ -21,7 +21,7 @@ object Options {
   def apply(adjustZoom: (/* n */ Double, /* m */ Map) => Double = null, alignment: LayoutAlignment = null): Options = {
     val __obj = js.Dynamic.literal()
     if (adjustZoom != null) __obj.updateDynamic("adjustZoom")(js.Any.fromFunction2(adjustZoom))
-    if (alignment != null) __obj.updateDynamic("alignment")(alignment)
+    if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -8,7 +8,7 @@ package object typesSpecStreamMod {
   import typings.vegaDashTypings.Anon_Scope
   import typings.vegaDashTypings.Anon_SourceType
 
-  type EventSource = (/* import warning: ImportType.apply Failed type conversion: vega-typings.vega-typings/types/spec/stream.EventStream['source'] */ js.Any) with js.Object
+  type EventSource = (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/stream.EventStream['source'] */ js.Any) with js.Object
   type EventStream = StreamParameters with (Anon_Scope | Anon_SourceType)
   /* Rewritten from type alias, can be one of: 
     - typings.vegaDashTypings.typesSpecStreamMod.EventStream

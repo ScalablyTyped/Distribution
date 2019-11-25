@@ -18,7 +18,7 @@ object TrafficPercentStrategy {
   @scala.inline
   def apply(percentages: Record[String, Double] = null): TrafficPercentStrategy = {
     val __obj = js.Dynamic.literal()
-    if (percentages != null) __obj.updateDynamic("percentages")(percentages)
+    if (percentages != null) __obj.updateDynamic("percentages")(percentages.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrafficPercentStrategy]
   }
 }

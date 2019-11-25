@@ -18,7 +18,7 @@ trait ComponentPropsOptionsArrayValue extends js.Object {
 object ComponentPropsOptionsArrayValue {
   @scala.inline
   def apply(key: String, value: Double | String): ComponentPropsOptionsArrayValue = {
-    val __obj = js.Dynamic.literal(key = key, value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ComponentPropsOptionsArrayValue]
   }

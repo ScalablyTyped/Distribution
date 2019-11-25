@@ -12,7 +12,7 @@ trait Anon_RoughnessMap extends js.Object {
 object Anon_RoughnessMap {
   @scala.inline
   def apply(roughnessMap: IUniform): Anon_RoughnessMap = {
-    val __obj = js.Dynamic.literal(roughnessMap = roughnessMap)
+    val __obj = js.Dynamic.literal(roughnessMap = roughnessMap.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_RoughnessMap]
   }

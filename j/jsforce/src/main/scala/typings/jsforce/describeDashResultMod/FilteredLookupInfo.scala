@@ -13,7 +13,7 @@ trait FilteredLookupInfo extends js.Object {
 object FilteredLookupInfo {
   @scala.inline
   def apply(controllingFields: js.Array[String], dependent: Boolean, optionalFilter: Boolean): FilteredLookupInfo = {
-    val __obj = js.Dynamic.literal(controllingFields = controllingFields, dependent = dependent, optionalFilter = optionalFilter)
+    val __obj = js.Dynamic.literal(controllingFields = controllingFields.asInstanceOf[js.Any], dependent = dependent.asInstanceOf[js.Any], optionalFilter = optionalFilter.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FilteredLookupInfo]
   }

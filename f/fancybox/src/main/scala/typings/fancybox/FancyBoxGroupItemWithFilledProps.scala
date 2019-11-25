@@ -28,12 +28,12 @@ object FancyBoxGroupItemWithFilledProps {
     thumb: js.Any = null,
     `type`: image | `inline` | ajax | iframe | html = null
   ): FancyBoxGroupItemWithFilledProps = {
-    val __obj = js.Dynamic.literal(src = src)
-    if ($thumb != null) __obj.updateDynamic("$thumb")($thumb)
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
+    val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
+    if ($thumb != null) __obj.updateDynamic("$thumb")($thumb.asInstanceOf[js.Any])
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (opts != null) __obj.updateDynamic("opts")(opts)
-    if (thumb != null) __obj.updateDynamic("thumb")(thumb)
+    if (opts != null) __obj.updateDynamic("opts")(opts.asInstanceOf[js.Any])
+    if (thumb != null) __obj.updateDynamic("thumb")(thumb.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FancyBoxGroupItemWithFilledProps]
   }

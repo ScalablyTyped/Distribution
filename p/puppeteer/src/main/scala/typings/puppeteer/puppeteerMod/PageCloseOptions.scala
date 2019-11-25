@@ -16,7 +16,7 @@ object PageCloseOptions {
   @scala.inline
   def apply(runBeforeUnload: js.UndefOr[Boolean] = js.undefined): PageCloseOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(runBeforeUnload)) __obj.updateDynamic("runBeforeUnload")(runBeforeUnload)
+    if (!js.isUndefined(runBeforeUnload)) __obj.updateDynamic("runBeforeUnload")(runBeforeUnload.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageCloseOptions]
   }
 }

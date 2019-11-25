@@ -20,9 +20,9 @@ object TableOptions {
   @scala.inline
   def apply(formatName: String = null, header: js.UndefOr[Boolean] = js.undefined, name: String = null): TableOptions = {
     val __obj = js.Dynamic.literal()
-    if (formatName != null) __obj.updateDynamic("formatName")(formatName)
-    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (formatName != null) __obj.updateDynamic("formatName")(formatName.asInstanceOf[js.Any])
+    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableOptions]
   }
 }

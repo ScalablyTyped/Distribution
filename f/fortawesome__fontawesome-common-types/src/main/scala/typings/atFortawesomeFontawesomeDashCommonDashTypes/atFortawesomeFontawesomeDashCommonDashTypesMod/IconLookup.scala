@@ -13,7 +13,7 @@ trait IconLookup extends js.Object {
 object IconLookup {
   @scala.inline
   def apply(iconName: IconName, prefix: IconPrefix): IconLookup = {
-    val __obj = js.Dynamic.literal(iconName = iconName, prefix = prefix)
+    val __obj = js.Dynamic.literal(iconName = iconName.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IconLookup]
   }

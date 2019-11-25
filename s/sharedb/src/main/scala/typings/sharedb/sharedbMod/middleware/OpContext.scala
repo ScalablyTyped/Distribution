@@ -31,7 +31,7 @@ object OpContext {
     id: String,
     op: typings.sharedb.libSharedbMod.Op
   ): OpContext = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], agent = agent, backend = backend, collection = collection, id = id, op = op)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], agent = agent.asInstanceOf[js.Any], backend = backend.asInstanceOf[js.Any], collection = collection.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OpContext]
   }

@@ -49,7 +49,7 @@ object DynamsoftLib {
     hideMask: () => Unit,
     showMask: () => Unit
   ): DynamsoftLib = {
-    val __obj = js.Dynamic.literal(NewOCRReadPara = js.Any.fromFunction0(NewOCRReadPara), NewOCRZone = js.Any.fromFunction0(NewOCRZone), NewRedaction = js.Any.fromFunction0(NewRedaction), detect = detect, env = env, getScript = js.Any.fromFunction3(getScript), hideMask = js.Any.fromFunction0(hideMask), showMask = js.Any.fromFunction0(showMask))
+    val __obj = js.Dynamic.literal(NewOCRReadPara = js.Any.fromFunction0(NewOCRReadPara), NewOCRZone = js.Any.fromFunction0(NewOCRZone), NewRedaction = js.Any.fromFunction0(NewRedaction), detect = detect.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any], getScript = js.Any.fromFunction3(getScript), hideMask = js.Any.fromFunction0(hideMask), showMask = js.Any.fromFunction0(showMask))
   
     __obj.asInstanceOf[DynamsoftLib]
   }

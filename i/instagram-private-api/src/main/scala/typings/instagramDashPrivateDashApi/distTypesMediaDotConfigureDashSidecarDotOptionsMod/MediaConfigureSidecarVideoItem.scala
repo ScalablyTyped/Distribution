@@ -40,20 +40,20 @@ object MediaConfigureSidecarVideoItem {
     usertags: PostingUsertags | String = null,
     video_result: String = null
   ): MediaConfigureSidecarVideoItem = {
-    val __obj = js.Dynamic.literal(height = height, length = length, upload_id = upload_id, width = width)
-    if (audio_muted != null) __obj.updateDynamic("audio_muted")(audio_muted)
-    if (caption != null) __obj.updateDynamic("caption")(caption)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], upload_id = upload_id.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    if (audio_muted != null) __obj.updateDynamic("audio_muted")(audio_muted.asInstanceOf[js.Any])
+    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
     if (clips != null) __obj.updateDynamic("clips")(clips.asInstanceOf[js.Any])
-    if (date_time_original != null) __obj.updateDynamic("date_time_original")(date_time_original)
+    if (date_time_original != null) __obj.updateDynamic("date_time_original")(date_time_original.asInstanceOf[js.Any])
     if (device != null) __obj.updateDynamic("device")(device.asInstanceOf[js.Any])
     if (edits != null) __obj.updateDynamic("edits")(edits.asInstanceOf[js.Any])
     if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
-    if (filter_type != null) __obj.updateDynamic("filter_type")(filter_type)
-    if (poster_frame_index != null) __obj.updateDynamic("poster_frame_index")(poster_frame_index)
-    if (source_type != null) __obj.updateDynamic("source_type")(source_type)
-    if (timezone_offset != null) __obj.updateDynamic("timezone_offset")(timezone_offset)
+    if (filter_type != null) __obj.updateDynamic("filter_type")(filter_type.asInstanceOf[js.Any])
+    if (poster_frame_index != null) __obj.updateDynamic("poster_frame_index")(poster_frame_index.asInstanceOf[js.Any])
+    if (source_type != null) __obj.updateDynamic("source_type")(source_type.asInstanceOf[js.Any])
+    if (timezone_offset != null) __obj.updateDynamic("timezone_offset")(timezone_offset.asInstanceOf[js.Any])
     if (usertags != null) __obj.updateDynamic("usertags")(usertags.asInstanceOf[js.Any])
-    if (video_result != null) __obj.updateDynamic("video_result")(video_result)
+    if (video_result != null) __obj.updateDynamic("video_result")(video_result.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaConfigureSidecarVideoItem]
   }
 }

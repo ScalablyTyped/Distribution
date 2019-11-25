@@ -15,7 +15,7 @@ object Anon_FailAction {
   def apply(failAction: FailAction = null, parse: js.UndefOr[Boolean] = js.undefined): Anon_FailAction = {
     val __obj = js.Dynamic.literal()
     if (failAction != null) __obj.updateDynamic("failAction")(failAction.asInstanceOf[js.Any])
-    if (!js.isUndefined(parse)) __obj.updateDynamic("parse")(parse)
+    if (!js.isUndefined(parse)) __obj.updateDynamic("parse")(parse.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FailAction]
   }
 }

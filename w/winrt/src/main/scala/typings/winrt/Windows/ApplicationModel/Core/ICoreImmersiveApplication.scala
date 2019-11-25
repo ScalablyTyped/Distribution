@@ -18,7 +18,7 @@ object ICoreImmersiveApplication {
     mainView: CoreApplicationView,
     views: IVectorView[CoreApplicationView]
   ): ICoreImmersiveApplication = {
-    val __obj = js.Dynamic.literal(createNewView = js.Any.fromFunction2(createNewView), mainView = mainView, views = views)
+    val __obj = js.Dynamic.literal(createNewView = js.Any.fromFunction2(createNewView), mainView = mainView.asInstanceOf[js.Any], views = views.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ICoreImmersiveApplication]
   }

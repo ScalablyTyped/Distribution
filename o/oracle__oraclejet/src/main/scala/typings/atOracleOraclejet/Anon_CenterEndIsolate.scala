@@ -27,7 +27,7 @@ object Anon_CenterEndIsolate {
     val __obj = js.Dynamic.literal()
     if (isolate != null) __obj.updateDynamic("isolate")(isolate.asInstanceOf[js.Any])
     if (labelHalign != null) __obj.updateDynamic("labelHalign")(labelHalign.asInstanceOf[js.Any])
-    if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle)
+    if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle.asInstanceOf[js.Any])
     if (useNodeColor != null) __obj.updateDynamic("useNodeColor")(useNodeColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CenterEndIsolate]
   }

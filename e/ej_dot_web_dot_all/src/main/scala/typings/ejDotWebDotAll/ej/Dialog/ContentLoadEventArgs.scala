@@ -32,11 +32,11 @@ object ContentLoadEventArgs {
     `type`: String = null
   ): ContentLoadEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (URL != null) __obj.updateDynamic("URL")(URL)
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (URL != null) __obj.updateDynamic("URL")(URL.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentLoadEventArgs]
   }
 }

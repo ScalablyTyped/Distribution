@@ -18,8 +18,8 @@ object Anon_ContextType {
     getDerivedStateFromProps: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DrawerWrapper.getDerivedStateFromProps */ js.Any,
     contextType: Context[_] = null
   ): Anon_ContextType = {
-    val __obj = js.Dynamic.literal(defaultProps = defaultProps, getDerivedStateFromProps = getDerivedStateFromProps)
-    if (contextType != null) __obj.updateDynamic("contextType")(contextType)
+    val __obj = js.Dynamic.literal(defaultProps = defaultProps.asInstanceOf[js.Any], getDerivedStateFromProps = getDerivedStateFromProps.asInstanceOf[js.Any])
+    if (contextType != null) __obj.updateDynamic("contextType")(contextType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ContextType]
   }
 }

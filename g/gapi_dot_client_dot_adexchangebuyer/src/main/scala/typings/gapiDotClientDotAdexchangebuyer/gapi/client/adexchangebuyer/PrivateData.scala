@@ -13,8 +13,8 @@ object PrivateData {
   @scala.inline
   def apply(referenceId: String = null, referencePayload: String = null): PrivateData = {
     val __obj = js.Dynamic.literal()
-    if (referenceId != null) __obj.updateDynamic("referenceId")(referenceId)
-    if (referencePayload != null) __obj.updateDynamic("referencePayload")(referencePayload)
+    if (referenceId != null) __obj.updateDynamic("referenceId")(referenceId.asInstanceOf[js.Any])
+    if (referencePayload != null) __obj.updateDynamic("referencePayload")(referencePayload.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrivateData]
   }
 }

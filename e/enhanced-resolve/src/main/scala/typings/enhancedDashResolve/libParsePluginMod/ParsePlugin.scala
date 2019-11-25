@@ -14,7 +14,7 @@ trait ParsePlugin extends js.Object {
 object ParsePlugin {
   @scala.inline
   def apply(apply: typings.enhancedDashResolve.libResolverMod.^ => Unit, source: String, target: String): ParsePlugin = {
-    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), source = source, target = target)
+    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ParsePlugin]
   }

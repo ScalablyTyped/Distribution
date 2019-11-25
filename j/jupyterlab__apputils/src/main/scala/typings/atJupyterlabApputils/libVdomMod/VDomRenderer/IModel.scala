@@ -19,7 +19,7 @@ trait IModel extends IDisposable {
 object IModel {
   @scala.inline
   def apply(dispose: () => Unit, isDisposed: Boolean, stateChanged: ISignal[IModel, Unit]): IModel = {
-    val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), isDisposed = isDisposed, stateChanged = stateChanged)
+    val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), isDisposed = isDisposed.asInstanceOf[js.Any], stateChanged = stateChanged.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IModel]
   }

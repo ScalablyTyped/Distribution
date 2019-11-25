@@ -14,7 +14,7 @@ trait Anon_Failed extends js.Object {
 object Anon_Failed {
   @scala.inline
   def apply(failed: String, pending: String, success: String, todo: String): Anon_Failed = {
-    val __obj = js.Dynamic.literal(failed = failed, pending = pending, success = success, todo = todo)
+    val __obj = js.Dynamic.literal(failed = failed.asInstanceOf[js.Any], pending = pending.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any], todo = todo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Failed]
   }

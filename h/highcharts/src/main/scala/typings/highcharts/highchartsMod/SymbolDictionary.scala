@@ -27,13 +27,13 @@ object SymbolDictionary {
     triangle: js.Function = null
   ): SymbolDictionary = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (arc != null) __obj.updateDynamic("arc")(arc)
-    if (callout != null) __obj.updateDynamic("callout")(callout)
-    if (circle != null) __obj.updateDynamic("circle")(circle)
-    if (diamond != null) __obj.updateDynamic("diamond")(diamond)
-    if (square != null) __obj.updateDynamic("square")(square)
-    if (triangle != null) __obj.updateDynamic("triangle")(triangle)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (arc != null) __obj.updateDynamic("arc")(arc.asInstanceOf[js.Any])
+    if (callout != null) __obj.updateDynamic("callout")(callout.asInstanceOf[js.Any])
+    if (circle != null) __obj.updateDynamic("circle")(circle.asInstanceOf[js.Any])
+    if (diamond != null) __obj.updateDynamic("diamond")(diamond.asInstanceOf[js.Any])
+    if (square != null) __obj.updateDynamic("square")(square.asInstanceOf[js.Any])
+    if (triangle != null) __obj.updateDynamic("triangle")(triangle.asInstanceOf[js.Any])
     __obj.asInstanceOf[SymbolDictionary]
   }
 }

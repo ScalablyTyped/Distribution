@@ -20,10 +20,10 @@ object FirefoxSpecificProperties {
     update_url: String = null
   ): FirefoxSpecificProperties = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (strict_max_version != null) __obj.updateDynamic("strict_max_version")(strict_max_version)
-    if (strict_min_version != null) __obj.updateDynamic("strict_min_version")(strict_min_version)
-    if (update_url != null) __obj.updateDynamic("update_url")(update_url)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (strict_max_version != null) __obj.updateDynamic("strict_max_version")(strict_max_version.asInstanceOf[js.Any])
+    if (strict_min_version != null) __obj.updateDynamic("strict_min_version")(strict_min_version.asInstanceOf[js.Any])
+    if (update_url != null) __obj.updateDynamic("update_url")(update_url.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirefoxSpecificProperties]
   }
 }

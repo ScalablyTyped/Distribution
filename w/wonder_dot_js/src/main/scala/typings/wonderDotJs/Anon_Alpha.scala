@@ -23,7 +23,7 @@ object Anon_Alpha {
     preserveDrawingBuffer: Boolean,
     stencil: Boolean
   ): Anon_Alpha = {
-    val __obj = js.Dynamic.literal(alpha = alpha, antialias = antialias, depth = depth, premultipliedAlpha = premultipliedAlpha, preserveDrawingBuffer = preserveDrawingBuffer, stencil = stencil)
+    val __obj = js.Dynamic.literal(alpha = alpha.asInstanceOf[js.Any], antialias = antialias.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any], premultipliedAlpha = premultipliedAlpha.asInstanceOf[js.Any], preserveDrawingBuffer = preserveDrawingBuffer.asInstanceOf[js.Any], stencil = stencil.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Alpha]
   }

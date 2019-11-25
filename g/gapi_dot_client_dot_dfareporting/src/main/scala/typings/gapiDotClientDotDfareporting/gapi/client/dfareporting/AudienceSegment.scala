@@ -21,8 +21,8 @@ object AudienceSegment {
   def apply(allocation: Int | Double = null, id: String = null, name: String = null): AudienceSegment = {
     val __obj = js.Dynamic.literal()
     if (allocation != null) __obj.updateDynamic("allocation")(allocation.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudienceSegment]
   }
 }

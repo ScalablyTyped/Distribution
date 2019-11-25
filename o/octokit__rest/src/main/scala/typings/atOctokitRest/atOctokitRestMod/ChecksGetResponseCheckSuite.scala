@@ -11,7 +11,7 @@ trait ChecksGetResponseCheckSuite extends js.Object {
 object ChecksGetResponseCheckSuite {
   @scala.inline
   def apply(id: Double): ChecksGetResponseCheckSuite = {
-    val __obj = js.Dynamic.literal(id = id)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChecksGetResponseCheckSuite]
   }

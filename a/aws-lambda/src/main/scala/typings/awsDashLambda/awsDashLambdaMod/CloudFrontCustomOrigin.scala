@@ -29,7 +29,7 @@ object CloudFrontCustomOrigin {
     readTimeout: Double,
     sslProtocols: js.Array[String]
   ): CloudFrontCustomOrigin = {
-    val __obj = js.Dynamic.literal(customHeaders = customHeaders, domainName = domainName, keepaliveTimeout = keepaliveTimeout, path = path, port = port, protocol = protocol.asInstanceOf[js.Any], readTimeout = readTimeout, sslProtocols = sslProtocols)
+    val __obj = js.Dynamic.literal(customHeaders = customHeaders.asInstanceOf[js.Any], domainName = domainName.asInstanceOf[js.Any], keepaliveTimeout = keepaliveTimeout.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], readTimeout = readTimeout.asInstanceOf[js.Any], sslProtocols = sslProtocols.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CloudFrontCustomOrigin]
   }

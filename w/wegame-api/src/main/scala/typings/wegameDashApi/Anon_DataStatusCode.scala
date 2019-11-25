@@ -12,7 +12,7 @@ trait Anon_DataStatusCode extends js.Object {
 object Anon_DataStatusCode {
   @scala.inline
   def apply(data: String, statusCode: Double): Anon_DataStatusCode = {
-    val __obj = js.Dynamic.literal(data = data, statusCode = statusCode)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DataStatusCode]
   }

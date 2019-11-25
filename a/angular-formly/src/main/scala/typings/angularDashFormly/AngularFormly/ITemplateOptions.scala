@@ -71,12 +71,12 @@ object ITemplateOptions {
     valueProp: String = null
   ): ITemplateOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (groupProp != null) __obj.updateDynamic("groupProp")(groupProp)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (labelProp != null) __obj.updateDynamic("labelProp")(labelProp)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (groupProp != null) __obj.updateDynamic("groupProp")(groupProp.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (labelProp != null) __obj.updateDynamic("labelProp")(labelProp.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (maxlength != null) __obj.updateDynamic("maxlength")(maxlength.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
@@ -88,13 +88,13 @@ object ITemplateOptions {
     if (onKeydown != null) __obj.updateDynamic("onKeydown")(onKeydown.asInstanceOf[js.Any])
     if (onKeypress != null) __obj.updateDynamic("onKeypress")(onKeypress.asInstanceOf[js.Any])
     if (onKeyup != null) __obj.updateDynamic("onKeyup")(onKeyup.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
     if (tabindex != null) __obj.updateDynamic("tabindex")(tabindex.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (valueProp != null) __obj.updateDynamic("valueProp")(valueProp)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (valueProp != null) __obj.updateDynamic("valueProp")(valueProp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITemplateOptions]
   }
 }

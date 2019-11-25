@@ -13,8 +13,8 @@ trait AccountSigner extends js.Object {
 object AccountSigner {
   @scala.inline
   def apply(key: String, `type`: String, weight: Double): AccountSigner = {
-    val __obj = js.Dynamic.literal(key = key, weight = weight)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountSigner]
   }
 }

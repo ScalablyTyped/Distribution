@@ -12,7 +12,7 @@ trait Registry extends js.Object {
 object Registry {
   @scala.inline
   def apply(store: Store): Registry = {
-    val __obj = js.Dynamic.literal(store = store)
+    val __obj = js.Dynamic.literal(store = store.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Registry]
   }

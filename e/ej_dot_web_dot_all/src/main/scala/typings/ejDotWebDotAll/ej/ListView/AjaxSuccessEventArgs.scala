@@ -44,14 +44,14 @@ object AjaxSuccessEventArgs {
     `type`: String = null
   ): AjaxSuccessEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (URL != null) __obj.updateDynamic("URL")(URL)
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (content != null) __obj.updateDynamic("content")(content)
+    if (URL != null) __obj.updateDynamic("URL")(URL.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (item != null) __obj.updateDynamic("item")(item)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AjaxSuccessEventArgs]
   }
 }

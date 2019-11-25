@@ -31,15 +31,15 @@ object Anon_ChartDate {
     period: String = null,
     startDate: Date = null
   ): Anon_ChartDate = {
-    val __obj = js.Dynamic.literal(chart = chart)
-    __obj.updateDynamic("type")(`type`)
-    if (date != null) __obj.updateDynamic("date")(date)
-    if (endDate != null) __obj.updateDynamic("endDate")(endDate)
-    if (eventObject != null) __obj.updateDynamic("eventObject")(eventObject)
-    if (graph != null) __obj.updateDynamic("graph")(graph)
-    if (panel != null) __obj.updateDynamic("panel")(panel)
-    if (period != null) __obj.updateDynamic("period")(period)
-    if (startDate != null) __obj.updateDynamic("startDate")(startDate)
+    val __obj = js.Dynamic.literal(chart = chart.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
+    if (eventObject != null) __obj.updateDynamic("eventObject")(eventObject.asInstanceOf[js.Any])
+    if (graph != null) __obj.updateDynamic("graph")(graph.asInstanceOf[js.Any])
+    if (panel != null) __obj.updateDynamic("panel")(panel.asInstanceOf[js.Any])
+    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
+    if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ChartDate]
   }
 }

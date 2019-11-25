@@ -12,7 +12,7 @@ trait GitResolutionPathConflict extends GitResolution {
 object GitResolutionPathConflict {
   @scala.inline
   def apply(action: GitResolutionPathConflictAction, renamePath: String): GitResolutionPathConflict = {
-    val __obj = js.Dynamic.literal(action = action, renamePath = renamePath)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], renamePath = renamePath.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GitResolutionPathConflict]
   }

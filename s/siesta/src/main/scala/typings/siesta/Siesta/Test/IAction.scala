@@ -15,7 +15,7 @@ object IAction {
   @scala.inline
   def apply(desc: String = null): IAction = {
     val __obj = js.Dynamic.literal()
-    if (desc != null) __obj.updateDynamic("desc")(desc)
+    if (desc != null) __obj.updateDynamic("desc")(desc.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAction]
   }
 }

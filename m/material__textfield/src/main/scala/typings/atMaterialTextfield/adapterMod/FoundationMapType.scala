@@ -15,8 +15,8 @@ object FoundationMapType {
   @scala.inline
   def apply(helperText: MDCTextFieldHelperTextFoundation = null, icon: MDCTextFieldIconFoundation = null): FoundationMapType = {
     val __obj = js.Dynamic.literal()
-    if (helperText != null) __obj.updateDynamic("helperText")(helperText)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (helperText != null) __obj.updateDynamic("helperText")(helperText.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     __obj.asInstanceOf[FoundationMapType]
   }
 }

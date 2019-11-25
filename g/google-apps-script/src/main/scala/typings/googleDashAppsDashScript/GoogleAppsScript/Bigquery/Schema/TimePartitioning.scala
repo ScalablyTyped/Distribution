@@ -20,10 +20,10 @@ object TimePartitioning {
     `type`: String = null
   ): TimePartitioning = {
     val __obj = js.Dynamic.literal()
-    if (expirationMs != null) __obj.updateDynamic("expirationMs")(expirationMs)
-    if (field != null) __obj.updateDynamic("field")(field)
-    if (!js.isUndefined(requirePartitionFilter)) __obj.updateDynamic("requirePartitionFilter")(requirePartitionFilter)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (expirationMs != null) __obj.updateDynamic("expirationMs")(expirationMs.asInstanceOf[js.Any])
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    if (!js.isUndefined(requirePartitionFilter)) __obj.updateDynamic("requirePartitionFilter")(requirePartitionFilter.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimePartitioning]
   }
 }

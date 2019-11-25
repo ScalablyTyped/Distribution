@@ -20,7 +20,7 @@ object RadioChangeEvent {
     stopPropagation: () => Unit,
     target: RadioChangeEventTarget
   ): RadioChangeEvent = {
-    val __obj = js.Dynamic.literal(nativeEvent = nativeEvent, preventDefault = js.Any.fromFunction0(preventDefault), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target)
+    val __obj = js.Dynamic.literal(nativeEvent = nativeEvent.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RadioChangeEvent]
   }

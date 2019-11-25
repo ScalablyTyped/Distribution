@@ -22,11 +22,11 @@ object ICollapseOptions {
     startCollapsed: js.UndefOr[Boolean] = js.undefined
   ): ICollapseOptions = {
     val __obj = js.Dynamic.literal()
-    if (activeClass != null) __obj.updateDynamic("activeClass")(activeClass)
-    if (!js.isUndefined(allowMultiple)) __obj.updateDynamic("allowMultiple")(allowMultiple)
-    if (animation != null) __obj.updateDynamic("animation")(animation)
-    if (!js.isUndefined(disallowToggle)) __obj.updateDynamic("disallowToggle")(disallowToggle)
-    if (!js.isUndefined(startCollapsed)) __obj.updateDynamic("startCollapsed")(startCollapsed)
+    if (activeClass != null) __obj.updateDynamic("activeClass")(activeClass.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowMultiple)) __obj.updateDynamic("allowMultiple")(allowMultiple.asInstanceOf[js.Any])
+    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (!js.isUndefined(disallowToggle)) __obj.updateDynamic("disallowToggle")(disallowToggle.asInstanceOf[js.Any])
+    if (!js.isUndefined(startCollapsed)) __obj.updateDynamic("startCollapsed")(startCollapsed.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICollapseOptions]
   }
 }

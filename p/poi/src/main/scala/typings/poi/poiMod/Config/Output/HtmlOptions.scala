@@ -20,10 +20,10 @@ object HtmlOptions {
     title: String = null
   ): HtmlOptions = {
     val __obj = js.Dynamic.literal()
-    if (filename != null) __obj.updateDynamic("filename")(filename)
-    if (!js.isUndefined(inject)) __obj.updateDynamic("inject")(inject)
-    if (template != null) __obj.updateDynamic("template")(template)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
+    if (!js.isUndefined(inject)) __obj.updateDynamic("inject")(inject.asInstanceOf[js.Any])
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[HtmlOptions]
   }
 }

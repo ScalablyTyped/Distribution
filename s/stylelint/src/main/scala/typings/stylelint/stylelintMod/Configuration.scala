@@ -24,7 +24,7 @@ object Configuration {
     processors: js.Array[String],
     rules: Record[String, _]
   ): Configuration = {
-    val __obj = js.Dynamic.literal(defaultSeverity = defaultSeverity, ignoreFiles = ignoreFiles.asInstanceOf[js.Any], plugins = plugins, processors = processors, rules = rules)
+    val __obj = js.Dynamic.literal(defaultSeverity = defaultSeverity.asInstanceOf[js.Any], ignoreFiles = ignoreFiles.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any], processors = processors.asInstanceOf[js.Any], rules = rules.asInstanceOf[js.Any])
     __obj.updateDynamic("extends")(`extends`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Configuration]
   }

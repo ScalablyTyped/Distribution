@@ -18,7 +18,7 @@ object AsObject {
     leaf: Uint8Array | String,
     nonDefaultSiblingsList: js.Array[Uint8Array | String]
   ): AsObject = {
-    val __obj = js.Dynamic.literal(bitmap = bitmap.asInstanceOf[js.Any], leaf = leaf.asInstanceOf[js.Any], nonDefaultSiblingsList = nonDefaultSiblingsList)
+    val __obj = js.Dynamic.literal(bitmap = bitmap.asInstanceOf[js.Any], leaf = leaf.asInstanceOf[js.Any], nonDefaultSiblingsList = nonDefaultSiblingsList.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AsObject]
   }

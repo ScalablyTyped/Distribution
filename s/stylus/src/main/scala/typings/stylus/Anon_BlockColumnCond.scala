@@ -29,7 +29,7 @@ object Anon_BlockColumnCond {
     lineno: Double,
     negate: Boolean
   ): Anon_BlockColumnCond = {
-    val __obj = js.Dynamic.literal(__type = __type, block = block, column = column, cond = cond, elses = elses, filename = filename, lineno = lineno, negate = negate)
+    val __obj = js.Dynamic.literal(__type = __type.asInstanceOf[js.Any], block = block.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], cond = cond.asInstanceOf[js.Any], elses = elses.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], lineno = lineno.asInstanceOf[js.Any], negate = negate.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BlockColumnCond]
   }

@@ -39,10 +39,10 @@ object ColumnMetadata {
   ): ColumnMetadata[T] = {
     val __obj = js.Dynamic.literal()
     if (colspan != null) __obj.updateDynamic("colspan")(colspan.asInstanceOf[js.Any])
-    if (editor != null) __obj.updateDynamic("editor")(editor)
-    if (!js.isUndefined(focusable)) __obj.updateDynamic("focusable")(focusable)
+    if (editor != null) __obj.updateDynamic("editor")(editor.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusable)) __obj.updateDynamic("focusable")(focusable.asInstanceOf[js.Any])
     if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction5(formatter))
-    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable)
+    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnMetadata[T]]
   }
 }

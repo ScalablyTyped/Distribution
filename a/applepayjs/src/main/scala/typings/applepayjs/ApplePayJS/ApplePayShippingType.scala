@@ -15,3 +15,16 @@ import scala.scalajs.js.annotation._
 */
 trait ApplePayShippingType extends js.Object
 
+object ApplePayShippingType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def delivery: typings.applepayjs.applepayjsStrings.delivery = this.cast("delivery")
+  @scala.inline
+  def servicePickup: typings.applepayjs.applepayjsStrings.servicePickup = this.cast("servicePickup")
+  @scala.inline
+  def shipping: typings.applepayjs.applepayjsStrings.shipping = this.cast("shipping")
+  @scala.inline
+  def storePickup: typings.applepayjs.applepayjsStrings.storePickup = this.cast("storePickup")
+}
+

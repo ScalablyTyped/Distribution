@@ -22,10 +22,10 @@ object _UnmarshalledCredentials {
     SessionToken: String = null
   ): _UnmarshalledCredentials = {
     val __obj = js.Dynamic.literal()
-    if (AccessKeyId != null) __obj.updateDynamic("AccessKeyId")(AccessKeyId)
-    if (Expiration != null) __obj.updateDynamic("Expiration")(Expiration)
-    if (SecretKey != null) __obj.updateDynamic("SecretKey")(SecretKey)
-    if (SessionToken != null) __obj.updateDynamic("SessionToken")(SessionToken)
+    if (AccessKeyId != null) __obj.updateDynamic("AccessKeyId")(AccessKeyId.asInstanceOf[js.Any])
+    if (Expiration != null) __obj.updateDynamic("Expiration")(Expiration.asInstanceOf[js.Any])
+    if (SecretKey != null) __obj.updateDynamic("SecretKey")(SecretKey.asInstanceOf[js.Any])
+    if (SessionToken != null) __obj.updateDynamic("SessionToken")(SessionToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledCredentials]
   }
 }

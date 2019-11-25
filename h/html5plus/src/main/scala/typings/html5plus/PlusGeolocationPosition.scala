@@ -61,10 +61,10 @@ object PlusGeolocationPosition {
     timestamp: Int | Double = null
   ): PlusGeolocationPosition = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address)
-    if (addresses != null) __obj.updateDynamic("addresses")(addresses)
-    if (coords != null) __obj.updateDynamic("coords")(coords)
-    if (coordsType != null) __obj.updateDynamic("coordsType")(coordsType)
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    if (addresses != null) __obj.updateDynamic("addresses")(addresses.asInstanceOf[js.Any])
+    if (coords != null) __obj.updateDynamic("coords")(coords.asInstanceOf[js.Any])
+    if (coordsType != null) __obj.updateDynamic("coordsType")(coordsType.asInstanceOf[js.Any])
     if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusGeolocationPosition]
   }

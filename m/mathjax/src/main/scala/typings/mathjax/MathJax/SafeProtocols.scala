@@ -20,10 +20,10 @@ object SafeProtocols {
     javascript: js.UndefOr[Boolean] = js.undefined
   ): SafeProtocols = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(file)) __obj.updateDynamic("file")(file)
-    if (!js.isUndefined(http)) __obj.updateDynamic("http")(http)
-    if (!js.isUndefined(https)) __obj.updateDynamic("https")(https)
-    if (!js.isUndefined(javascript)) __obj.updateDynamic("javascript")(javascript)
+    if (!js.isUndefined(file)) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
+    if (!js.isUndefined(http)) __obj.updateDynamic("http")(http.asInstanceOf[js.Any])
+    if (!js.isUndefined(https)) __obj.updateDynamic("https")(https.asInstanceOf[js.Any])
+    if (!js.isUndefined(javascript)) __obj.updateDynamic("javascript")(javascript.asInstanceOf[js.Any])
     __obj.asInstanceOf[SafeProtocols]
   }
 }

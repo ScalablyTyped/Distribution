@@ -21,8 +21,8 @@ object TreeWalkerValue {
     previousPosition: Position,
     `type`: TreeWalkerValueType
   ): TreeWalkerValue = {
-    val __obj = js.Dynamic.literal(item = item, length = length, nextPosition = nextPosition, previousPosition = previousPosition)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], nextPosition = nextPosition.asInstanceOf[js.Any], previousPosition = previousPosition.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeWalkerValue]
   }
 }

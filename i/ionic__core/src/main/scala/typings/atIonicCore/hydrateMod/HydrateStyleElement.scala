@@ -13,8 +13,8 @@ object HydrateStyleElement {
   @scala.inline
   def apply(StringDictionary: StringDictionary[js.UndefOr[String]] = null, href: String = null): HydrateStyleElement = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (href != null) __obj.updateDynamic("href")(href)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
     __obj.asInstanceOf[HydrateStyleElement]
   }
 }

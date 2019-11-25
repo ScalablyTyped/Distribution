@@ -22,7 +22,7 @@ object ITXMode {
     TransactionMode: Instantiable1[js.UndefOr[/* options */ Anon_Deferrable], TransactionMode],
     isolationLevel: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof isolationLevel */ js.Any
   ): ITXMode = {
-    val __obj = js.Dynamic.literal(TransactionMode = TransactionMode, isolationLevel = isolationLevel)
+    val __obj = js.Dynamic.literal(TransactionMode = TransactionMode.asInstanceOf[js.Any], isolationLevel = isolationLevel.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ITXMode]
   }

@@ -14,3 +14,12 @@ import scala.scalajs.js.annotation._
 */
 trait PositionDimension extends js.Object
 
+object PositionDimension {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def x: typings.cytoscape.cytoscapeStrings.x = this.cast("x")
+  @scala.inline
+  def y: typings.cytoscape.cytoscapeStrings.y = this.cast("y")
+}
+

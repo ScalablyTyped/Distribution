@@ -36,7 +36,7 @@ object TypeoffileBrowserHandler {
     ],
     selectFile: (SelectFileParameters, js.Function1[/* result */ SelectionResult, Unit]) => Unit
   ): TypeoffileBrowserHandler = {
-    val __obj = js.Dynamic.literal(onExecute = onExecute, selectFile = js.Any.fromFunction2(selectFile))
+    val __obj = js.Dynamic.literal(onExecute = onExecute.asInstanceOf[js.Any], selectFile = js.Any.fromFunction2(selectFile))
   
     __obj.asInstanceOf[TypeoffileBrowserHandler]
   }

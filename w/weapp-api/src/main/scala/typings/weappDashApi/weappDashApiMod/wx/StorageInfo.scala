@@ -17,7 +17,7 @@ trait StorageInfo extends js.Object {
 object StorageInfo {
   @scala.inline
   def apply(currentSize: Double, keys: js.Array[String], limitSize: Double): StorageInfo = {
-    val __obj = js.Dynamic.literal(currentSize = currentSize, keys = keys, limitSize = limitSize)
+    val __obj = js.Dynamic.literal(currentSize = currentSize.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any], limitSize = limitSize.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StorageInfo]
   }

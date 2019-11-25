@@ -14,8 +14,8 @@ trait IGridTreeBaseAggregationObject extends js.Object {
 object IGridTreeBaseAggregationObject {
   @scala.inline
   def apply(count: Double, sum: Double, value: Double, rendered: String = null): IGridTreeBaseAggregationObject = {
-    val __obj = js.Dynamic.literal(count = count, sum = sum, value = value)
-    if (rendered != null) __obj.updateDynamic("rendered")(rendered)
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], sum = sum.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (rendered != null) __obj.updateDynamic("rendered")(rendered.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGridTreeBaseAggregationObject]
   }
 }

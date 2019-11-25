@@ -27,7 +27,7 @@ object Triggers {
     update: (String, js.Object, CbCallback) => Unit,
     user: APIUser
   ): Triggers = {
-    val __obj = js.Dynamic.literal(URI = URI, create = js.Any.fromFunction3(create), delete = js.Any.fromFunction2(delete), fetchDefinitions = js.Any.fromFunction1(fetchDefinitions), systemKey = systemKey, systemSecret = systemSecret, update = js.Any.fromFunction3(update), user = user)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], create = js.Any.fromFunction3(create), delete = js.Any.fromFunction2(delete), fetchDefinitions = js.Any.fromFunction1(fetchDefinitions), systemKey = systemKey.asInstanceOf[js.Any], systemSecret = systemSecret.asInstanceOf[js.Any], update = js.Any.fromFunction3(update), user = user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Triggers]
   }

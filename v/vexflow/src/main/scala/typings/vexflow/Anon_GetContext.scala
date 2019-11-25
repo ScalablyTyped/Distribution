@@ -19,7 +19,7 @@ object Anon_GetContext {
     renderToStave: js.Function,
     setStave: js.Function
   ): Anon_GetContext = {
-    val __obj = js.Dynamic.literal(getContext = getContext, getMetrics = getMetrics, renderToStave = renderToStave, setStave = setStave)
+    val __obj = js.Dynamic.literal(getContext = getContext.asInstanceOf[js.Any], getMetrics = getMetrics.asInstanceOf[js.Any], renderToStave = renderToStave.asInstanceOf[js.Any], setStave = setStave.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_GetContext]
   }

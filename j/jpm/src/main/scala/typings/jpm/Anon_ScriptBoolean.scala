@@ -12,7 +12,7 @@ object Anon_ScriptBoolean {
   @scala.inline
   def apply(script: js.UndefOr[Boolean] = js.undefined): Anon_ScriptBoolean = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(script)) __obj.updateDynamic("script")(script)
+    if (!js.isUndefined(script)) __obj.updateDynamic("script")(script.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ScriptBoolean]
   }
 }

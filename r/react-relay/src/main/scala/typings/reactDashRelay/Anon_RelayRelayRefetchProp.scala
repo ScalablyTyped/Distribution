@@ -12,7 +12,7 @@ trait Anon_RelayRelayRefetchProp extends js.Object {
 object Anon_RelayRelayRefetchProp {
   @scala.inline
   def apply(relay: RelayRefetchProp): Anon_RelayRelayRefetchProp = {
-    val __obj = js.Dynamic.literal(relay = relay)
+    val __obj = js.Dynamic.literal(relay = relay.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_RelayRelayRefetchProp]
   }

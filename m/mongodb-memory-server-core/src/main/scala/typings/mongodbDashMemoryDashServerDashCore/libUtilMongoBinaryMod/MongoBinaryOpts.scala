@@ -22,11 +22,11 @@ object MongoBinaryOpts {
     version: String = null
   ): MongoBinaryOpts = {
     val __obj = js.Dynamic.literal()
-    if (arch != null) __obj.updateDynamic("arch")(arch)
+    if (arch != null) __obj.updateDynamic("arch")(arch.asInstanceOf[js.Any])
     if (debug != null) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
-    if (downloadDir != null) __obj.updateDynamic("downloadDir")(downloadDir)
-    if (platform != null) __obj.updateDynamic("platform")(platform)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (downloadDir != null) __obj.updateDynamic("downloadDir")(downloadDir.asInstanceOf[js.Any])
+    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[MongoBinaryOpts]
   }
 }

@@ -1,8 +1,6 @@
 package typings.dojo.dojox.mvc
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValue
 import typings.dojo.dojo.Stateful
 import typings.dojo.dojo.store.DataStore
 import typings.dojo.dojoStrings.getPlainValueOptions
@@ -257,16 +255,64 @@ class StatefulModel_ protected () extends Stateful {
     */
   def toPlainObject(): js.Any = js.native
   @JSName("watch")
-  def watch_data(property: typings.dojo.dojoStrings.data, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_data(
+    property: typings.dojo.dojoStrings.data,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_getPlainValueOptions(property: getPlainValueOptions, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_getPlainValueOptions(
+    property: getPlainValueOptions,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_getStatefulOptions(property: getStatefulOptions, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_getStatefulOptions(
+    property: getStatefulOptions,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_store(property: store, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_store(
+    property: store,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_valid(property: valid, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_valid(
+    property: valid,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_value(property: value, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_value(
+    property: value,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

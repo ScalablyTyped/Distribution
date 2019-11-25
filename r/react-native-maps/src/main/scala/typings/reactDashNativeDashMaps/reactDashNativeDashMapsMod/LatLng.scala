@@ -12,7 +12,7 @@ trait LatLng extends js.Object {
 object LatLng {
   @scala.inline
   def apply(latitude: Double, longitude: Double): LatLng = {
-    val __obj = js.Dynamic.literal(latitude = latitude, longitude = longitude)
+    val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LatLng]
   }

@@ -28,10 +28,10 @@ object DrillSuccessEventArgs {
     event: js.Any = null
   ): DrillSuccessEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (chartObj != null) __obj.updateDynamic("chartObj")(chartObj)
-    if (drillAction != null) __obj.updateDynamic("drillAction")(drillAction)
-    if (drilledMember != null) __obj.updateDynamic("drilledMember")(drilledMember)
-    if (event != null) __obj.updateDynamic("event")(event)
+    if (chartObj != null) __obj.updateDynamic("chartObj")(chartObj.asInstanceOf[js.Any])
+    if (drillAction != null) __obj.updateDynamic("drillAction")(drillAction.asInstanceOf[js.Any])
+    if (drilledMember != null) __obj.updateDynamic("drilledMember")(drilledMember.asInstanceOf[js.Any])
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrillSuccessEventArgs]
   }
 }

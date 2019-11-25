@@ -28,9 +28,9 @@ object DetoxInitOptions {
     reuse: js.UndefOr[Boolean] = js.undefined
   ): DetoxInitOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(initGlobals)) __obj.updateDynamic("initGlobals")(initGlobals)
-    if (!js.isUndefined(launchApp)) __obj.updateDynamic("launchApp")(launchApp)
-    if (!js.isUndefined(reuse)) __obj.updateDynamic("reuse")(reuse)
+    if (!js.isUndefined(initGlobals)) __obj.updateDynamic("initGlobals")(initGlobals.asInstanceOf[js.Any])
+    if (!js.isUndefined(launchApp)) __obj.updateDynamic("launchApp")(launchApp.asInstanceOf[js.Any])
+    if (!js.isUndefined(reuse)) __obj.updateDynamic("reuse")(reuse.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetoxInitOptions]
   }
 }

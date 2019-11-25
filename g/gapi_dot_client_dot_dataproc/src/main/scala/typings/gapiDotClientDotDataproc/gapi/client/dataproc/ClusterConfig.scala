@@ -46,13 +46,13 @@ object ClusterConfig {
     workerConfig: InstanceGroupConfig = null
   ): ClusterConfig = {
     val __obj = js.Dynamic.literal()
-    if (configBucket != null) __obj.updateDynamic("configBucket")(configBucket)
-    if (gceClusterConfig != null) __obj.updateDynamic("gceClusterConfig")(gceClusterConfig)
-    if (initializationActions != null) __obj.updateDynamic("initializationActions")(initializationActions)
-    if (masterConfig != null) __obj.updateDynamic("masterConfig")(masterConfig)
-    if (secondaryWorkerConfig != null) __obj.updateDynamic("secondaryWorkerConfig")(secondaryWorkerConfig)
-    if (softwareConfig != null) __obj.updateDynamic("softwareConfig")(softwareConfig)
-    if (workerConfig != null) __obj.updateDynamic("workerConfig")(workerConfig)
+    if (configBucket != null) __obj.updateDynamic("configBucket")(configBucket.asInstanceOf[js.Any])
+    if (gceClusterConfig != null) __obj.updateDynamic("gceClusterConfig")(gceClusterConfig.asInstanceOf[js.Any])
+    if (initializationActions != null) __obj.updateDynamic("initializationActions")(initializationActions.asInstanceOf[js.Any])
+    if (masterConfig != null) __obj.updateDynamic("masterConfig")(masterConfig.asInstanceOf[js.Any])
+    if (secondaryWorkerConfig != null) __obj.updateDynamic("secondaryWorkerConfig")(secondaryWorkerConfig.asInstanceOf[js.Any])
+    if (softwareConfig != null) __obj.updateDynamic("softwareConfig")(softwareConfig.asInstanceOf[js.Any])
+    if (workerConfig != null) __obj.updateDynamic("workerConfig")(workerConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterConfig]
   }
 }

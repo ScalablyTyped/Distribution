@@ -20,10 +20,10 @@ object RuleOverride {
     rules: StringDictionary[RuleLevel | RuleLevelAndOptions] = null
   ): RuleOverride = {
     val __obj = js.Dynamic.literal()
-    if (excludedFiles != null) __obj.updateDynamic("excludedFiles")(excludedFiles)
+    if (excludedFiles != null) __obj.updateDynamic("excludedFiles")(excludedFiles.asInstanceOf[js.Any])
     if (`extends` != null) __obj.updateDynamic("extends")(`extends`.asInstanceOf[js.Any])
-    if (files != null) __obj.updateDynamic("files")(files)
-    if (rules != null) __obj.updateDynamic("rules")(rules)
+    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
+    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleOverride]
   }
 }

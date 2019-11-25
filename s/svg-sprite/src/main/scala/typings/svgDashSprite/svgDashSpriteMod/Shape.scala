@@ -53,13 +53,13 @@ object Shape {
     transform: js.Array[String | CustomConfigurationTransform | CustomCallbackTransform] = null
   ): Shape = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align)
-    if (dest != null) __obj.updateDynamic("dest")(dest)
-    if (dimension != null) __obj.updateDynamic("dimension")(dimension)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (meta != null) __obj.updateDynamic("meta")(meta)
-    if (spacing != null) __obj.updateDynamic("spacing")(spacing)
-    if (transform != null) __obj.updateDynamic("transform")(transform)
+    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
+    if (dest != null) __obj.updateDynamic("dest")(dest.asInstanceOf[js.Any])
+    if (dimension != null) __obj.updateDynamic("dimension")(dimension.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
+    if (spacing != null) __obj.updateDynamic("spacing")(spacing.asInstanceOf[js.Any])
+    if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
     __obj.asInstanceOf[Shape]
   }
 }

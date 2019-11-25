@@ -21,8 +21,8 @@ object ListClustersResponse {
   @scala.inline
   def apply(clusters: js.Array[Cluster] = null, missingZones: js.Array[String] = null): ListClustersResponse = {
     val __obj = js.Dynamic.literal()
-    if (clusters != null) __obj.updateDynamic("clusters")(clusters)
-    if (missingZones != null) __obj.updateDynamic("missingZones")(missingZones)
+    if (clusters != null) __obj.updateDynamic("clusters")(clusters.asInstanceOf[js.Any])
+    if (missingZones != null) __obj.updateDynamic("missingZones")(missingZones.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListClustersResponse]
   }
 }

@@ -13,7 +13,7 @@ trait OpenAPIDefaultSetter extends IOpenAPIDefaultSetter {
 object OpenAPIDefaultSetter {
   @scala.inline
   def apply(handle: Request => Unit, headersDefaults: js.Any, queryDefaults: js.Any): OpenAPIDefaultSetter = {
-    val __obj = js.Dynamic.literal(handle = js.Any.fromFunction1(handle), headersDefaults = headersDefaults, queryDefaults = queryDefaults)
+    val __obj = js.Dynamic.literal(handle = js.Any.fromFunction1(handle), headersDefaults = headersDefaults.asInstanceOf[js.Any], queryDefaults = queryDefaults.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OpenAPIDefaultSetter]
   }

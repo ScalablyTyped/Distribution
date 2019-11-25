@@ -19,8 +19,8 @@ object ColumnChooserOpeningEventUIParam {
   @scala.inline
   def apply(columnChooserElement: String = null, owner: js.Any = null): ColumnChooserOpeningEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (columnChooserElement != null) __obj.updateDynamic("columnChooserElement")(columnChooserElement)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (columnChooserElement != null) __obj.updateDynamic("columnChooserElement")(columnChooserElement.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnChooserOpeningEventUIParam]
   }
 }

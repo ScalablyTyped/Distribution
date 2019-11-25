@@ -103,19 +103,19 @@ object Messages {
     unsupportedBrowserIos8Safari: String = null
   ): Messages = {
     val __obj = js.Dynamic.literal()
-    if (emptyError != null) __obj.updateDynamic("emptyError")(emptyError)
-    if (maxHeightImageError != null) __obj.updateDynamic("maxHeightImageError")(maxHeightImageError)
-    if (maxWidthImageError != null) __obj.updateDynamic("maxWidthImageError")(maxWidthImageError)
-    if (minHeightImageError != null) __obj.updateDynamic("minHeightImageError")(minHeightImageError)
-    if (minSizeError != null) __obj.updateDynamic("minSizeError")(minSizeError)
-    if (minWidthImageError != null) __obj.updateDynamic("minWidthImageError")(minWidthImageError)
-    if (noFilesError != null) __obj.updateDynamic("noFilesError")(noFilesError)
-    if (onLeave != null) __obj.updateDynamic("onLeave")(onLeave)
-    if (retryFailTooManyItemsError != null) __obj.updateDynamic("retryFailTooManyItemsError")(retryFailTooManyItemsError)
-    if (sizeError != null) __obj.updateDynamic("sizeError")(sizeError)
-    if (tooManyItemsError != null) __obj.updateDynamic("tooManyItemsError")(tooManyItemsError)
-    if (typeError != null) __obj.updateDynamic("typeError")(typeError)
-    if (unsupportedBrowserIos8Safari != null) __obj.updateDynamic("unsupportedBrowserIos8Safari")(unsupportedBrowserIos8Safari)
+    if (emptyError != null) __obj.updateDynamic("emptyError")(emptyError.asInstanceOf[js.Any])
+    if (maxHeightImageError != null) __obj.updateDynamic("maxHeightImageError")(maxHeightImageError.asInstanceOf[js.Any])
+    if (maxWidthImageError != null) __obj.updateDynamic("maxWidthImageError")(maxWidthImageError.asInstanceOf[js.Any])
+    if (minHeightImageError != null) __obj.updateDynamic("minHeightImageError")(minHeightImageError.asInstanceOf[js.Any])
+    if (minSizeError != null) __obj.updateDynamic("minSizeError")(minSizeError.asInstanceOf[js.Any])
+    if (minWidthImageError != null) __obj.updateDynamic("minWidthImageError")(minWidthImageError.asInstanceOf[js.Any])
+    if (noFilesError != null) __obj.updateDynamic("noFilesError")(noFilesError.asInstanceOf[js.Any])
+    if (onLeave != null) __obj.updateDynamic("onLeave")(onLeave.asInstanceOf[js.Any])
+    if (retryFailTooManyItemsError != null) __obj.updateDynamic("retryFailTooManyItemsError")(retryFailTooManyItemsError.asInstanceOf[js.Any])
+    if (sizeError != null) __obj.updateDynamic("sizeError")(sizeError.asInstanceOf[js.Any])
+    if (tooManyItemsError != null) __obj.updateDynamic("tooManyItemsError")(tooManyItemsError.asInstanceOf[js.Any])
+    if (typeError != null) __obj.updateDynamic("typeError")(typeError.asInstanceOf[js.Any])
+    if (unsupportedBrowserIos8Safari != null) __obj.updateDynamic("unsupportedBrowserIos8Safari")(unsupportedBrowserIos8Safari.asInstanceOf[js.Any])
     __obj.asInstanceOf[Messages]
   }
 }

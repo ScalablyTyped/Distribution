@@ -12,7 +12,7 @@ object ServiceActionResult {
   @scala.inline
   def apply(servicePackage: String = null): ServiceActionResult = {
     val __obj = js.Dynamic.literal()
-    if (servicePackage != null) __obj.updateDynamic("servicePackage")(servicePackage)
+    if (servicePackage != null) __obj.updateDynamic("servicePackage")(servicePackage.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceActionResult]
   }
 }

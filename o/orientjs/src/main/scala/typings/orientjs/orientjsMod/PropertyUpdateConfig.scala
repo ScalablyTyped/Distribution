@@ -39,18 +39,18 @@ object PropertyUpdateConfig {
     readonly: js.UndefOr[Boolean] = js.undefined,
     regexp: RegExp | String = null
   ): PropertyUpdateConfig = {
-    val __obj = js.Dynamic.literal(name = name)
-    __obj.updateDynamic("type")(`type`)
-    if (collate != null) __obj.updateDynamic("collate")(collate)
-    if (custom != null) __obj.updateDynamic("custom")(custom)
-    if (default != null) __obj.updateDynamic("default")(default)
-    if (linkedClass != null) __obj.updateDynamic("linkedClass")(linkedClass)
-    if (linkedType != null) __obj.updateDynamic("linkedType")(linkedType)
-    if (!js.isUndefined(mandatory)) __obj.updateDynamic("mandatory")(mandatory)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (collate != null) __obj.updateDynamic("collate")(collate.asInstanceOf[js.Any])
+    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (linkedClass != null) __obj.updateDynamic("linkedClass")(linkedClass.asInstanceOf[js.Any])
+    if (linkedType != null) __obj.updateDynamic("linkedType")(linkedType.asInstanceOf[js.Any])
+    if (!js.isUndefined(mandatory)) __obj.updateDynamic("mandatory")(mandatory.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (!js.isUndefined(notNull)) __obj.updateDynamic("notNull")(notNull)
-    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly)
+    if (!js.isUndefined(notNull)) __obj.updateDynamic("notNull")(notNull.asInstanceOf[js.Any])
+    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly.asInstanceOf[js.Any])
     if (regexp != null) __obj.updateDynamic("regexp")(regexp.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropertyUpdateConfig]
   }

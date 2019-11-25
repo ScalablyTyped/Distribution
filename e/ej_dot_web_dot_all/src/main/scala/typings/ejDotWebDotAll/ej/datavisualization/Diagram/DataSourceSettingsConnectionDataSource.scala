@@ -62,16 +62,16 @@ object DataSourceSettingsConnectionDataSource {
     targetPointY: String = null
   ): DataSourceSettingsConnectionDataSource = {
     val __obj = js.Dynamic.literal()
-    if (crudAction != null) __obj.updateDynamic("crudAction")(crudAction)
-    if (customFields != null) __obj.updateDynamic("customFields")(customFields)
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (sourceNode != null) __obj.updateDynamic("sourceNode")(sourceNode)
-    if (sourcePointX != null) __obj.updateDynamic("sourcePointX")(sourcePointX)
-    if (sourcePointY != null) __obj.updateDynamic("sourcePointY")(sourcePointY)
-    if (targetNode != null) __obj.updateDynamic("targetNode")(targetNode)
-    if (targetPointX != null) __obj.updateDynamic("targetPointX")(targetPointX)
-    if (targetPointY != null) __obj.updateDynamic("targetPointY")(targetPointY)
+    if (crudAction != null) __obj.updateDynamic("crudAction")(crudAction.asInstanceOf[js.Any])
+    if (customFields != null) __obj.updateDynamic("customFields")(customFields.asInstanceOf[js.Any])
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (sourceNode != null) __obj.updateDynamic("sourceNode")(sourceNode.asInstanceOf[js.Any])
+    if (sourcePointX != null) __obj.updateDynamic("sourcePointX")(sourcePointX.asInstanceOf[js.Any])
+    if (sourcePointY != null) __obj.updateDynamic("sourcePointY")(sourcePointY.asInstanceOf[js.Any])
+    if (targetNode != null) __obj.updateDynamic("targetNode")(targetNode.asInstanceOf[js.Any])
+    if (targetPointX != null) __obj.updateDynamic("targetPointX")(targetPointX.asInstanceOf[js.Any])
+    if (targetPointY != null) __obj.updateDynamic("targetPointY")(targetPointY.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceSettingsConnectionDataSource]
   }
 }

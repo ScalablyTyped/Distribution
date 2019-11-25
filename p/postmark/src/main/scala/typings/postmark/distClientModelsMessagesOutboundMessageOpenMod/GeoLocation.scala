@@ -28,14 +28,14 @@ object GeoLocation {
     Zip: String = null
   ): GeoLocation = {
     val __obj = js.Dynamic.literal()
-    if (City != null) __obj.updateDynamic("City")(City)
-    if (Coords != null) __obj.updateDynamic("Coords")(Coords)
-    if (Country != null) __obj.updateDynamic("Country")(Country)
-    if (CountryISOCode != null) __obj.updateDynamic("CountryISOCode")(CountryISOCode)
-    if (IP != null) __obj.updateDynamic("IP")(IP)
-    if (Region != null) __obj.updateDynamic("Region")(Region)
-    if (RegionISOCode != null) __obj.updateDynamic("RegionISOCode")(RegionISOCode)
-    if (Zip != null) __obj.updateDynamic("Zip")(Zip)
+    if (City != null) __obj.updateDynamic("City")(City.asInstanceOf[js.Any])
+    if (Coords != null) __obj.updateDynamic("Coords")(Coords.asInstanceOf[js.Any])
+    if (Country != null) __obj.updateDynamic("Country")(Country.asInstanceOf[js.Any])
+    if (CountryISOCode != null) __obj.updateDynamic("CountryISOCode")(CountryISOCode.asInstanceOf[js.Any])
+    if (IP != null) __obj.updateDynamic("IP")(IP.asInstanceOf[js.Any])
+    if (Region != null) __obj.updateDynamic("Region")(Region.asInstanceOf[js.Any])
+    if (RegionISOCode != null) __obj.updateDynamic("RegionISOCode")(RegionISOCode.asInstanceOf[js.Any])
+    if (Zip != null) __obj.updateDynamic("Zip")(Zip.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoLocation]
   }
 }

@@ -22,8 +22,8 @@ object GoogleActionsV2SpeechResponse {
   @scala.inline
   def apply(ssml: String = null, textToSpeech: String = null): GoogleActionsV2SpeechResponse = {
     val __obj = js.Dynamic.literal()
-    if (ssml != null) __obj.updateDynamic("ssml")(ssml)
-    if (textToSpeech != null) __obj.updateDynamic("textToSpeech")(textToSpeech)
+    if (ssml != null) __obj.updateDynamic("ssml")(ssml.asInstanceOf[js.Any])
+    if (textToSpeech != null) __obj.updateDynamic("textToSpeech")(textToSpeech.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2SpeechResponse]
   }
 }

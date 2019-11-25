@@ -14,9 +14,9 @@ object Anon_ExactRangeOverflowRangeUnderflow {
   @scala.inline
   def apply(exact: String = null, rangeOverflow: String = null, rangeUnderflow: String = null): Anon_ExactRangeOverflowRangeUnderflow = {
     val __obj = js.Dynamic.literal()
-    if (exact != null) __obj.updateDynamic("exact")(exact)
-    if (rangeOverflow != null) __obj.updateDynamic("rangeOverflow")(rangeOverflow)
-    if (rangeUnderflow != null) __obj.updateDynamic("rangeUnderflow")(rangeUnderflow)
+    if (exact != null) __obj.updateDynamic("exact")(exact.asInstanceOf[js.Any])
+    if (rangeOverflow != null) __obj.updateDynamic("rangeOverflow")(rangeOverflow.asInstanceOf[js.Any])
+    if (rangeUnderflow != null) __obj.updateDynamic("rangeUnderflow")(rangeUnderflow.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ExactRangeOverflowRangeUnderflow]
   }
 }

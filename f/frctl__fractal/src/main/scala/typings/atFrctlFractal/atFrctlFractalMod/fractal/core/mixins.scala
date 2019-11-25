@@ -30,17 +30,26 @@ object mixins extends js.Object {
     def each(fn: js.Function1[/* item */ T, Unit]): this.type = js.native
     def eq(pos: Double): js.UndefOr[T] = js.native
     def filter(handle: String): js.Array[T] = js.native
-    def filter[TKey /* <: String */](name: TKey, value: /* import warning: ImportType.apply Failed type conversion: T[TKey] */ js.Any): js.Array[T] = js.native
+    def filter[TKey /* <: String */](
+      name: TKey,
+      value: /* import warning: importer.ImportType#apply Failed type conversion: T[TKey] */ js.Any
+    ): js.Array[T] = js.native
     def filterItems(items: js.Array[T], handle: String): js.Array[T] = js.native
     def filterItems[TKey /* <: String */](
       items: js.Array[T],
       name: TKey,
-      value: /* import warning: ImportType.apply Failed type conversion: T[TKey] */ js.Any
+      value: /* import warning: importer.ImportType#apply Failed type conversion: T[TKey] */ js.Any
     ): js.Array[T] = js.native
     def find(handle: String): T = js.native
-    def find[TKey /* <: String */](name: TKey, value: /* import warning: ImportType.apply Failed type conversion: T[TKey] */ js.Any): T = js.native
+    def find[TKey /* <: String */](
+      name: TKey,
+      value: /* import warning: importer.ImportType#apply Failed type conversion: T[TKey] */ js.Any
+    ): T = js.native
     def findCollection(handle: String): Collection[T] = js.native
-    def findCollection[TKey /* <: String */](name: TKey, value: /* import warning: ImportType.apply Failed type conversion: T[TKey] */ js.Any): Collection[T] = js.native
+    def findCollection[TKey /* <: String */](
+      name: TKey,
+      value: /* import warning: importer.ImportType#apply Failed type conversion: T[TKey] */ js.Any
+    ): Collection[T] = js.native
     def first(): js.UndefOr[T] = js.native
     def flatten(): this.type = js.native
     def flattenDeep(): this.type = js.native
@@ -66,13 +75,16 @@ object mixins extends js.Object {
     def config(): T = js.native
     def config(config: T): this.type = js.native
     def get[K /* <: String */, V](path: K): js.UndefOr[
-        (/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any) | V | Null
+        (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | V | Null
       ] = js.native
     def get[K /* <: String */, V](path: K, defaultValue: V): js.UndefOr[
-        (/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any) | V | Null
+        (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | V | Null
       ] = js.native
     def set[K /* <: String */](path: K): this.type = js.native
-    def set[K /* <: String */](path: K, value: /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any): this.type = js.native
+    def set[K /* <: String */](
+      path: K,
+      value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+    ): this.type = js.native
   }
   
   /**
@@ -84,13 +96,16 @@ object mixins extends js.Object {
     def config(): T = js.native
     def config(config: T): this.type = js.native
     def get[K /* <: String */, V](path: K): js.UndefOr[
-        (/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any) | V | Null
+        (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | V | Null
       ] = js.native
     def get[K /* <: String */, V](path: K, defaultValue: V): js.UndefOr[
-        (/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any) | V | Null
+        (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | V | Null
       ] = js.native
     def set[K /* <: String */](path: K): this.type = js.native
-    def set[K /* <: String */](path: K, value: /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any): this.type = js.native
+    def set[K /* <: String */](
+      path: K,
+      value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+    ): this.type = js.native
   }
   
   @js.native
@@ -125,17 +140,20 @@ object mixins extends js.Object {
     def config(config: TConfig): this.type = js.native
     def exists(): Boolean = js.native
     def get[K /* <: String */, V](path: K): js.UndefOr[
-        (/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any) | V | Null
+        (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | V | Null
       ] = js.native
     def get[K /* <: String */, V](path: K, defaultValue: V): js.UndefOr[
-        (/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any) | V | Null
+        (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | V | Null
       ] = js.native
     def isConfig(file: String): Boolean = js.native
     def load(): js.Promise[this.type] = js.native
     def load(force: Boolean): js.Promise[this.type] = js.native
     def refresh(): js.Promise[this.type] = js.native
     def set[K /* <: String */](path: K): this.type = js.native
-    def set[K /* <: String */](path: K, value: /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any): this.type = js.native
+    def set[K /* <: String */](
+      path: K,
+      value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+    ): this.type = js.native
     def unwatch(): Unit = js.native
     def watch(): Unit = js.native
   }

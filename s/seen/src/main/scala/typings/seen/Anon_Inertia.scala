@@ -11,7 +11,7 @@ trait Anon_Inertia extends js.Object {
 object Anon_Inertia {
   @scala.inline
   def apply(inertia: Boolean): Anon_Inertia = {
-    val __obj = js.Dynamic.literal(inertia = inertia)
+    val __obj = js.Dynamic.literal(inertia = inertia.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Inertia]
   }

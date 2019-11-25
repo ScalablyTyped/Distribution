@@ -14,7 +14,7 @@ object SaveReportEventArgs {
   @scala.inline
   def apply(report: js.Any = null): SaveReportEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (report != null) __obj.updateDynamic("report")(report)
+    if (report != null) __obj.updateDynamic("report")(report.asInstanceOf[js.Any])
     __obj.asInstanceOf[SaveReportEventArgs]
   }
 }

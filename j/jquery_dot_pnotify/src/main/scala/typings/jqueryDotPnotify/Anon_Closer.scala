@@ -14,9 +14,9 @@ object Anon_Closer {
   @scala.inline
   def apply(closer: String = null, pin_down: String = null, pin_up: String = null): Anon_Closer = {
     val __obj = js.Dynamic.literal()
-    if (closer != null) __obj.updateDynamic("closer")(closer)
-    if (pin_down != null) __obj.updateDynamic("pin_down")(pin_down)
-    if (pin_up != null) __obj.updateDynamic("pin_up")(pin_up)
+    if (closer != null) __obj.updateDynamic("closer")(closer.asInstanceOf[js.Any])
+    if (pin_down != null) __obj.updateDynamic("pin_down")(pin_down.asInstanceOf[js.Any])
+    if (pin_up != null) __obj.updateDynamic("pin_up")(pin_up.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Closer]
   }
 }

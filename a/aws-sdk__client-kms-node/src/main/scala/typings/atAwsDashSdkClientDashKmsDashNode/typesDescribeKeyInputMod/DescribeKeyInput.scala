@@ -45,9 +45,9 @@ object DescribeKeyInput {
     $maxRetries: Int | Double = null,
     GrantTokens: js.Array[String] | Iterable[String] = null
   ): DescribeKeyInput = {
-    val __obj = js.Dynamic.literal(KeyId = KeyId)
-    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal)
-    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions)
+    val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any])
+    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal.asInstanceOf[js.Any])
+    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions.asInstanceOf[js.Any])
     if ($maxRetries != null) __obj.updateDynamic("$maxRetries")($maxRetries.asInstanceOf[js.Any])
     if (GrantTokens != null) __obj.updateDynamic("GrantTokens")(GrantTokens.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeKeyInput]

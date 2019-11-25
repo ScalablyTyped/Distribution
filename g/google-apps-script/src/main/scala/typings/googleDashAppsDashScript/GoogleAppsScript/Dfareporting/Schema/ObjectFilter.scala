@@ -14,9 +14,9 @@ object ObjectFilter {
   @scala.inline
   def apply(kind: String = null, objectIds: js.Array[String] = null, status: String = null): ObjectFilter = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (objectIds != null) __obj.updateDynamic("objectIds")(objectIds)
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (objectIds != null) __obj.updateDynamic("objectIds")(objectIds.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectFilter]
   }
 }

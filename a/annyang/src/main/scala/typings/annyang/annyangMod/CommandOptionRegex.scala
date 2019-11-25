@@ -13,7 +13,7 @@ trait CommandOptionRegex extends js.Object {
 object CommandOptionRegex {
   @scala.inline
   def apply(callback: () => Unit, regexp: RegExp): CommandOptionRegex = {
-    val __obj = js.Dynamic.literal(callback = js.Any.fromFunction0(callback), regexp = regexp)
+    val __obj = js.Dynamic.literal(callback = js.Any.fromFunction0(callback), regexp = regexp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CommandOptionRegex]
   }

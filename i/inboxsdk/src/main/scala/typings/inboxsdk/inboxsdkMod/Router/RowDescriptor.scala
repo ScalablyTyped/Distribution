@@ -34,13 +34,13 @@ object RowDescriptor {
     routeID: String = null,
     routeParams: js.Array[String] = null
   ): RowDescriptor = {
-    val __obj = js.Dynamic.literal(body = body, isRead = isRead, labels = labels, shortDetailText = shortDetailText, title = title)
-    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)
-    if (iconHtml != null) __obj.updateDynamic("iconHtml")(iconHtml)
-    if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], isRead = isRead.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], shortDetailText = shortDetailText.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass.asInstanceOf[js.Any])
+    if (iconHtml != null) __obj.updateDynamic("iconHtml")(iconHtml.asInstanceOf[js.Any])
+    if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction0(onClick))
-    if (routeID != null) __obj.updateDynamic("routeID")(routeID)
-    if (routeParams != null) __obj.updateDynamic("routeParams")(routeParams)
+    if (routeID != null) __obj.updateDynamic("routeID")(routeID.asInstanceOf[js.Any])
+    if (routeParams != null) __obj.updateDynamic("routeParams")(routeParams.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowDescriptor]
   }
 }

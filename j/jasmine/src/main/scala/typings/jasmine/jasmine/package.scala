@@ -24,14 +24,14 @@ package object jasmine {
     - typings.jasmine.jasmine.AsymmetricMatcher[js.Any]
     - typings.jasmine.jasmine.Any
     - typings.jasmine.jasmine.Spy
-    - / * import warning: ImportType.apply c Unsupported type mapping: 
+    - / * import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: jasmine.jasmine.ExpectedRecursive<T[K]>}
     * / typings.jasmine.jasmineStrings.Expected with T
   */
-  type Expected[T] = _Expected[T] | AsymmetricMatcher[js.Any] | (/* import warning: ImportType.apply c Unsupported type mapping: 
+  type Expected[T] = _Expected[T] | AsymmetricMatcher[js.Any] | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: jasmine.jasmine.ExpectedRecursive<T[K]>}
     */ typings.jasmine.jasmineStrings.Expected with T) | T
-  type ExpectedRecursive[T] = T | ObjectContaining[T] | AsymmetricMatcher[js.Any] | (/* import warning: ImportType.apply c Unsupported type mapping: 
+  type ExpectedRecursive[T] = T | ObjectContaining[T] | AsymmetricMatcher[js.Any] | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias jasmine.jasmine.ExpectedRecursive<T[K]> * / object | jasmine.jasmine.Any}
     */ typings.jasmine.jasmineStrings.ExpectedRecursive with js.Any)
   type Func = js.Function1[/* repeated */ js.Any, js.Any]
@@ -39,7 +39,7 @@ package object jasmine {
   type PassedExpectation = CustomReportExpectation
   type SpecFunction = js.Function1[/* spec */ js.UndefOr[Spec], Unit]
   type SpyObj[T] = T with typings.jasmine.jasmineStrings.SpyObj with js.Any
-  type SpyObjMethodNames[T] = js.Array[String] | (/* import warning: ImportType.apply c Unsupported type mapping: 
+  type SpyObjMethodNames[T] = js.Array[String] | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? T[P] extends jasmine.jasmine.Func? std.ReturnType<T[P]> : any}
     */ typings.jasmine.jasmineStrings.SpyObjMethodNames with js.Any) | StringDictionary[js.Any]
   type SpyObjPropertyNames[T] = js.Array[String] | StringDictionary[js.Any]

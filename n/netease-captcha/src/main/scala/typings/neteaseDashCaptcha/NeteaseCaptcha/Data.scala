@@ -11,7 +11,7 @@ trait Data extends js.Object {
 object Data {
   @scala.inline
   def apply(validate: String): Data = {
-    val __obj = js.Dynamic.literal(validate = validate)
+    val __obj = js.Dynamic.literal(validate = validate.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Data]
   }

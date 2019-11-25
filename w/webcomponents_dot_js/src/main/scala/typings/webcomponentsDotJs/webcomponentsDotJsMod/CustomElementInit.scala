@@ -12,7 +12,7 @@ object CustomElementInit {
   @scala.inline
   def apply(`extends`: String = null): CustomElementInit = {
     val __obj = js.Dynamic.literal()
-    if (`extends` != null) __obj.updateDynamic("extends")(`extends`)
+    if (`extends` != null) __obj.updateDynamic("extends")(`extends`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomElementInit]
   }
 }

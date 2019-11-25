@@ -15,8 +15,8 @@ object Anon_Params {
   @scala.inline
   def apply(params: RawParams = null, state: String = null): Anon_Params = {
     val __obj = js.Dynamic.literal()
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Params]
   }
 }

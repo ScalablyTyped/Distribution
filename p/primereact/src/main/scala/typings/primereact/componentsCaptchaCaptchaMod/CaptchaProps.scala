@@ -30,15 +30,15 @@ object CaptchaProps {
     `type`: String = null
   ): CaptchaProps = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (language != null) __obj.updateDynamic("language")(language)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (onExpire != null) __obj.updateDynamic("onExpire")(js.Any.fromFunction0(onExpire))
     if (onResponse != null) __obj.updateDynamic("onResponse")(js.Any.fromFunction1(onResponse))
-    if (siteKey != null) __obj.updateDynamic("siteKey")(siteKey)
-    if (size != null) __obj.updateDynamic("size")(size)
+    if (siteKey != null) __obj.updateDynamic("siteKey")(siteKey.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CaptchaProps]
   }
 }

@@ -37,11 +37,11 @@ object PogProps {
     iconColor: blue | darkGray | gray | red | white = null,
     size: xs | sm | md | lg | xl = null
   ): PogProps = {
-    val __obj = js.Dynamic.literal(icon = icon)
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
+    val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
     if (bgColor != null) __obj.updateDynamic("bgColor")(bgColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(focused)) __obj.updateDynamic("focused")(focused)
-    if (!js.isUndefined(hovered)) __obj.updateDynamic("hovered")(hovered)
+    if (!js.isUndefined(focused)) __obj.updateDynamic("focused")(focused.asInstanceOf[js.Any])
+    if (!js.isUndefined(hovered)) __obj.updateDynamic("hovered")(hovered.asInstanceOf[js.Any])
     if (iconColor != null) __obj.updateDynamic("iconColor")(iconColor.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[PogProps]

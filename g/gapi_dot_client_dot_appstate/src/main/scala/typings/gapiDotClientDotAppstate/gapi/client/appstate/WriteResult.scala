@@ -17,8 +17,8 @@ object WriteResult {
   @scala.inline
   def apply(currentStateVersion: String = null, kind: String = null, stateKey: Int | Double = null): WriteResult = {
     val __obj = js.Dynamic.literal()
-    if (currentStateVersion != null) __obj.updateDynamic("currentStateVersion")(currentStateVersion)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (currentStateVersion != null) __obj.updateDynamic("currentStateVersion")(currentStateVersion.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (stateKey != null) __obj.updateDynamic("stateKey")(stateKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[WriteResult]
   }

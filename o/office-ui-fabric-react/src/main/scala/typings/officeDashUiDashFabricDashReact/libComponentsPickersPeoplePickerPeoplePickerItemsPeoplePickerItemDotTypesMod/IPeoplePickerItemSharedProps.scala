@@ -16,8 +16,8 @@ object IPeoplePickerItemSharedProps {
   @scala.inline
   def apply(className: String = null, theme: ITheme = null): IPeoplePickerItemSharedProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPeoplePickerItemSharedProps]
   }
 }

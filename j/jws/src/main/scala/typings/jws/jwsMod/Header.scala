@@ -26,16 +26,16 @@ object Header {
     `x5t#S256`: String = null,
     x5u: String = null
   ): Header = {
-    val __obj = js.Dynamic.literal(alg = alg)
-    if (crit != null) __obj.updateDynamic("crit")(crit)
-    if (cty != null) __obj.updateDynamic("cty")(cty)
-    if (jwk != null) __obj.updateDynamic("jwk")(jwk)
-    if (kid != null) __obj.updateDynamic("kid")(kid)
-    if (typ != null) __obj.updateDynamic("typ")(typ)
-    if (x5c != null) __obj.updateDynamic("x5c")(x5c)
-    if (x5t != null) __obj.updateDynamic("x5t")(x5t)
-    if (`x5t#S256` != null) __obj.updateDynamic("x5t#S256")(`x5t#S256`)
-    if (x5u != null) __obj.updateDynamic("x5u")(x5u)
+    val __obj = js.Dynamic.literal(alg = alg.asInstanceOf[js.Any])
+    if (crit != null) __obj.updateDynamic("crit")(crit.asInstanceOf[js.Any])
+    if (cty != null) __obj.updateDynamic("cty")(cty.asInstanceOf[js.Any])
+    if (jwk != null) __obj.updateDynamic("jwk")(jwk.asInstanceOf[js.Any])
+    if (kid != null) __obj.updateDynamic("kid")(kid.asInstanceOf[js.Any])
+    if (typ != null) __obj.updateDynamic("typ")(typ.asInstanceOf[js.Any])
+    if (x5c != null) __obj.updateDynamic("x5c")(x5c.asInstanceOf[js.Any])
+    if (x5t != null) __obj.updateDynamic("x5t")(x5t.asInstanceOf[js.Any])
+    if (`x5t#S256` != null) __obj.updateDynamic("x5t#S256")(`x5t#S256`.asInstanceOf[js.Any])
+    if (x5u != null) __obj.updateDynamic("x5u")(x5u.asInstanceOf[js.Any])
     __obj.asInstanceOf[Header]
   }
 }

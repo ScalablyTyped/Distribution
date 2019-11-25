@@ -24,7 +24,7 @@ object IntrospectionField {
     deprecationReason: Maybe[String] = null,
     description: Maybe[String] = null
   ): IntrospectionField = {
-    val __obj = js.Dynamic.literal(args = args, isDeprecated = isDeprecated, name = name)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], isDeprecated = isDeprecated.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (deprecationReason != null) __obj.updateDynamic("deprecationReason")(deprecationReason.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])

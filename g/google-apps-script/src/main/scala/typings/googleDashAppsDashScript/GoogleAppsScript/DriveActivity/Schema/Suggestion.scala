@@ -12,7 +12,7 @@ object Suggestion {
   @scala.inline
   def apply(subtype: String = null): Suggestion = {
     val __obj = js.Dynamic.literal()
-    if (subtype != null) __obj.updateDynamic("subtype")(subtype)
+    if (subtype != null) __obj.updateDynamic("subtype")(subtype.asInstanceOf[js.Any])
     __obj.asInstanceOf[Suggestion]
   }
 }

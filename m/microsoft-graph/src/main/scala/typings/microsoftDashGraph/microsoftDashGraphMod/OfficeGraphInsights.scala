@@ -19,10 +19,10 @@ object OfficeGraphInsights {
     used: js.Array[UsedInsight] = null
   ): OfficeGraphInsights = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (shared != null) __obj.updateDynamic("shared")(shared)
-    if (trending != null) __obj.updateDynamic("trending")(trending)
-    if (used != null) __obj.updateDynamic("used")(used)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (shared != null) __obj.updateDynamic("shared")(shared.asInstanceOf[js.Any])
+    if (trending != null) __obj.updateDynamic("trending")(trending.asInstanceOf[js.Any])
+    if (used != null) __obj.updateDynamic("used")(used.asInstanceOf[js.Any])
     __obj.asInstanceOf[OfficeGraphInsights]
   }
 }

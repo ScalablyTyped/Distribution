@@ -18,9 +18,9 @@ object Anon_Act {
     unknown: String = null
   ): Anon_Act = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(act)) __obj.updateDynamic("act")(act)
-    if (!js.isUndefined(stack)) __obj.updateDynamic("stack")(stack)
-    if (unknown != null) __obj.updateDynamic("unknown")(unknown)
+    if (!js.isUndefined(act)) __obj.updateDynamic("act")(act.asInstanceOf[js.Any])
+    if (!js.isUndefined(stack)) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
+    if (unknown != null) __obj.updateDynamic("unknown")(unknown.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Act]
   }
 }

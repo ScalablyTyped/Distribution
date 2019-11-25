@@ -39,13 +39,13 @@ object Anon_Boundary {
     zoom: Int | Double = null
   ): Anon_Boundary = {
     val __obj = js.Dynamic.literal()
-    if (boundary != null) __obj.updateDynamic("boundary")(boundary)
-    if (cachePolicy != null) __obj.updateDynamic("cachePolicy")(cachePolicy)
-    if (countryCode != null) __obj.updateDynamic("countryCode")(countryCode)
+    if (boundary != null) __obj.updateDynamic("boundary")(boundary.asInstanceOf[js.Any])
+    if (cachePolicy != null) __obj.updateDynamic("cachePolicy")(cachePolicy.asInstanceOf[js.Any])
+    if (countryCode != null) __obj.updateDynamic("countryCode")(countryCode.asInstanceOf[js.Any])
     if (latitude != null) __obj.updateDynamic("latitude")(latitude.asInstanceOf[js.Any])
     if (longitude != null) __obj.updateDynamic("longitude")(longitude.asInstanceOf[js.Any])
-    if (mapType != null) __obj.updateDynamic("mapType")(mapType)
-    if (viewport != null) __obj.updateDynamic("viewport")(viewport)
+    if (mapType != null) __obj.updateDynamic("mapType")(mapType.asInstanceOf[js.Any])
+    if (viewport != null) __obj.updateDynamic("viewport")(viewport.asInstanceOf[js.Any])
     if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Boundary]
   }

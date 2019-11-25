@@ -27,7 +27,7 @@ object SymbolsType {
     question: String,
     warning: String
   ): SymbolsType = {
-    val __obj = js.Dynamic.literal(check = check, cross = cross, info = info, line = line, pointer = pointer, pointerSmall = pointerSmall, question = question, warning = warning)
+    val __obj = js.Dynamic.literal(check = check.asInstanceOf[js.Any], cross = cross.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], pointer = pointer.asInstanceOf[js.Any], pointerSmall = pointerSmall.asInstanceOf[js.Any], question = question.asInstanceOf[js.Any], warning = warning.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SymbolsType]
   }

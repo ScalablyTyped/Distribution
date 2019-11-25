@@ -22,11 +22,11 @@ object GraphQLResponse {
     errors: js.Array[GraphQLError] = null,
     extensions: js.Any = null
   ): GraphQLResponse = {
-    val __obj = js.Dynamic.literal(status = status)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (errors != null) __obj.updateDynamic("errors")(errors)
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLResponse]
   }
 }

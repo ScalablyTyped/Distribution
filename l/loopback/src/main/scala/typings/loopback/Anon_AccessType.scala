@@ -16,7 +16,7 @@ trait Anon_AccessType extends js.Object {
 object Anon_AccessType {
   @scala.inline
   def apply(accessType: String, id: js.Any, model: String | Model, principals: js.Array[_], property: String): Anon_AccessType = {
-    val __obj = js.Dynamic.literal(accessType = accessType, id = id, model = model.asInstanceOf[js.Any], principals = principals, property = property)
+    val __obj = js.Dynamic.literal(accessType = accessType.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any], principals = principals.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AccessType]
   }

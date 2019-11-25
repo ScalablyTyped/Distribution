@@ -13,9 +13,9 @@ trait CreateDestinationProps extends js.Object {
 object CreateDestinationProps {
   @scala.inline
   def apply(address: DestinationAddress, location: Location = null, notes: String = null): CreateDestinationProps = {
-    val __obj = js.Dynamic.literal(address = address)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (notes != null) __obj.updateDynamic("notes")(notes)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDestinationProps]
   }
 }

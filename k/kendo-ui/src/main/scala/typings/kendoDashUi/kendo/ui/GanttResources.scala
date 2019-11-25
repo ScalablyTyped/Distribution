@@ -23,11 +23,11 @@ object GanttResources {
     field: String = null
   ): GanttResources = {
     val __obj = js.Dynamic.literal()
-    if (dataColorField != null) __obj.updateDynamic("dataColorField")(dataColorField)
-    if (dataFormatField != null) __obj.updateDynamic("dataFormatField")(dataFormatField)
+    if (dataColorField != null) __obj.updateDynamic("dataColorField")(dataColorField.asInstanceOf[js.Any])
+    if (dataFormatField != null) __obj.updateDynamic("dataFormatField")(dataFormatField.asInstanceOf[js.Any])
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (dataTextField != null) __obj.updateDynamic("dataTextField")(dataTextField)
-    if (field != null) __obj.updateDynamic("field")(field)
+    if (dataTextField != null) __obj.updateDynamic("dataTextField")(dataTextField.asInstanceOf[js.Any])
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     __obj.asInstanceOf[GanttResources]
   }
 }

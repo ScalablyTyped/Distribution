@@ -16,7 +16,7 @@ trait Anon_Align extends js.Object {
 object Anon_Align {
   @scala.inline
   def apply(align: LEFT | CENTER | RIGHT, text: String, width: Double): Anon_Align = {
-    val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], text = text, width = width)
+    val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Align]
   }

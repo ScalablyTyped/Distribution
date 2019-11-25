@@ -22,11 +22,11 @@ object TerritoryOwners {
     `type`: String = null
   ): TerritoryOwners = {
     val __obj = js.Dynamic.literal()
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (publisher != null) __obj.updateDynamic("publisher")(publisher)
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (publisher != null) __obj.updateDynamic("publisher")(publisher.asInstanceOf[js.Any])
     if (ratio != null) __obj.updateDynamic("ratio")(ratio.asInstanceOf[js.Any])
-    if (territories != null) __obj.updateDynamic("territories")(territories)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (territories != null) __obj.updateDynamic("territories")(territories.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TerritoryOwners]
   }
 }

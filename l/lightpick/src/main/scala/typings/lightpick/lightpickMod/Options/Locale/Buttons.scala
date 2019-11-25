@@ -23,11 +23,11 @@ object Buttons {
     reset: String = null
   ): Buttons = {
     val __obj = js.Dynamic.literal()
-    if (apply != null) __obj.updateDynamic("apply")(apply)
-    if (close != null) __obj.updateDynamic("close")(close)
-    if (next != null) __obj.updateDynamic("next")(next)
-    if (prev != null) __obj.updateDynamic("prev")(prev)
-    if (reset != null) __obj.updateDynamic("reset")(reset)
+    if (apply != null) __obj.updateDynamic("apply")(apply.asInstanceOf[js.Any])
+    if (close != null) __obj.updateDynamic("close")(close.asInstanceOf[js.Any])
+    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
+    if (prev != null) __obj.updateDynamic("prev")(prev.asInstanceOf[js.Any])
+    if (reset != null) __obj.updateDynamic("reset")(reset.asInstanceOf[js.Any])
     __obj.asInstanceOf[Buttons]
   }
 }

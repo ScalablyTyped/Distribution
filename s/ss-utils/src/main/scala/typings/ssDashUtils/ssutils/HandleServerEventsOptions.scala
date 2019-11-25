@@ -35,12 +35,12 @@ object HandleServerEventsOptions {
     validate: (/* op */ js.UndefOr[String], /* target */ js.UndefOr[String], /* msg */ js.UndefOr[String], /* json */ js.UndefOr[String]) => Boolean = null
   ): HandleServerEventsOptions = {
     val __obj = js.Dynamic.literal()
-    if (handlers != null) __obj.updateDynamic("handlers")(handlers)
+    if (handlers != null) __obj.updateDynamic("handlers")(handlers.asInstanceOf[js.Any])
     if (heartbeatIntervalMs != null) __obj.updateDynamic("heartbeatIntervalMs")(heartbeatIntervalMs.asInstanceOf[js.Any])
-    if (heartbeatUrl != null) __obj.updateDynamic("heartbeatUrl")(heartbeatUrl)
-    if (receivers != null) __obj.updateDynamic("receivers")(receivers)
+    if (heartbeatUrl != null) __obj.updateDynamic("heartbeatUrl")(heartbeatUrl.asInstanceOf[js.Any])
+    if (receivers != null) __obj.updateDynamic("receivers")(receivers.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction3(success))
-    if (unRegisterUrl != null) __obj.updateDynamic("unRegisterUrl")(unRegisterUrl)
+    if (unRegisterUrl != null) __obj.updateDynamic("unRegisterUrl")(unRegisterUrl.asInstanceOf[js.Any])
     if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction4(validate))
     __obj.asInstanceOf[HandleServerEventsOptions]
   }

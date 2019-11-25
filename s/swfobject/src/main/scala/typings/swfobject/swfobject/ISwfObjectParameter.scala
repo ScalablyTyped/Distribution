@@ -12,7 +12,7 @@ object ISwfObjectParameter {
   @scala.inline
   def apply(flashvars: String = null): ISwfObjectParameter = {
     val __obj = js.Dynamic.literal()
-    if (flashvars != null) __obj.updateDynamic("flashvars")(flashvars)
+    if (flashvars != null) __obj.updateDynamic("flashvars")(flashvars.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISwfObjectParameter]
   }
 }

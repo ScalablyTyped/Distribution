@@ -21,10 +21,10 @@ object SVGDefinitionObject {
     textContent: String = null
   ): SVGDefinitionObject = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (tagName != null) __obj.updateDynamic("tagName")(tagName)
-    if (textContent != null) __obj.updateDynamic("textContent")(textContent)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (tagName != null) __obj.updateDynamic("tagName")(tagName.asInstanceOf[js.Any])
+    if (textContent != null) __obj.updateDynamic("textContent")(textContent.asInstanceOf[js.Any])
     __obj.asInstanceOf[SVGDefinitionObject]
   }
 }

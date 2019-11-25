@@ -82,19 +82,19 @@ object IEvent {
     resizable: js.UndefOr[Boolean] = js.undefined,
     `type`: String = null
   ): IEvent = {
-    val __obj = js.Dynamic.literal(startsAt = startsAt, title = title)
-    if (actions != null) __obj.updateDynamic("actions")(actions)
-    if (!js.isUndefined(allDay)) __obj.updateDynamic("allDay")(allDay)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
-    if (!js.isUndefined(deletable)) __obj.updateDynamic("deletable")(deletable)
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
-    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable)
-    if (endsAt != null) __obj.updateDynamic("endsAt")(endsAt)
-    if (!js.isUndefined(incrementsBadgeTotal)) __obj.updateDynamic("incrementsBadgeTotal")(incrementsBadgeTotal)
-    if (recursOn != null) __obj.updateDynamic("recursOn")(recursOn)
-    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(startsAt = startsAt.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
+    if (!js.isUndefined(allDay)) __obj.updateDynamic("allDay")(allDay.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
+    if (!js.isUndefined(deletable)) __obj.updateDynamic("deletable")(deletable.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
+    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
+    if (endsAt != null) __obj.updateDynamic("endsAt")(endsAt.asInstanceOf[js.Any])
+    if (!js.isUndefined(incrementsBadgeTotal)) __obj.updateDynamic("incrementsBadgeTotal")(incrementsBadgeTotal.asInstanceOf[js.Any])
+    if (recursOn != null) __obj.updateDynamic("recursOn")(recursOn.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEvent]
   }
 }

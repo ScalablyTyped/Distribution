@@ -11,8 +11,8 @@ trait IResourceObject extends IObject {
 object IResourceObject {
   @scala.inline
   def apply(id: String, `object`: String): IResourceObject = {
-    val __obj = js.Dynamic.literal(id = id)
-    __obj.updateDynamic("object")(`object`)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IResourceObject]
   }
 }

@@ -55,10 +55,10 @@ object ConnectionInfo {
     sendTimeout: Int | Double = null,
     stopBits: one | two = null
   ): ConnectionInfo = {
-    val __obj = js.Dynamic.literal(bufferSize = bufferSize, name = name, paused = paused, peristent = peristent)
+    val __obj = js.Dynamic.literal(bufferSize = bufferSize.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], paused = paused.asInstanceOf[js.Any], peristent = peristent.asInstanceOf[js.Any])
     if (bitrate != null) __obj.updateDynamic("bitrate")(bitrate.asInstanceOf[js.Any])
     if (connectionId != null) __obj.updateDynamic("connectionId")(connectionId.asInstanceOf[js.Any])
-    if (!js.isUndefined(ctsFlowControl)) __obj.updateDynamic("ctsFlowControl")(ctsFlowControl)
+    if (!js.isUndefined(ctsFlowControl)) __obj.updateDynamic("ctsFlowControl")(ctsFlowControl.asInstanceOf[js.Any])
     if (dataBits != null) __obj.updateDynamic("dataBits")(dataBits.asInstanceOf[js.Any])
     if (parityBit != null) __obj.updateDynamic("parityBit")(parityBit.asInstanceOf[js.Any])
     if (receiveTimeout != null) __obj.updateDynamic("receiveTimeout")(receiveTimeout.asInstanceOf[js.Any])

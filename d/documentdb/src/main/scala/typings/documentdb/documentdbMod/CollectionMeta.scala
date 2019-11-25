@@ -29,13 +29,13 @@ object CollectionMeta {
     indexingPolicy: IndexingPolicy = null,
     partitionKey: CollectionPartitionKey = null
   ): CollectionMeta = {
-    val __obj = js.Dynamic.literal(_self = _self, _ts = _ts, id = id)
-    if (_attachments != null) __obj.updateDynamic("_attachments")(_attachments)
-    if (_etag != null) __obj.updateDynamic("_etag")(_etag)
-    if (_rid != null) __obj.updateDynamic("_rid")(_rid)
+    val __obj = js.Dynamic.literal(_self = _self.asInstanceOf[js.Any], _ts = _ts.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
+    if (_attachments != null) __obj.updateDynamic("_attachments")(_attachments.asInstanceOf[js.Any])
+    if (_etag != null) __obj.updateDynamic("_etag")(_etag.asInstanceOf[js.Any])
+    if (_rid != null) __obj.updateDynamic("_rid")(_rid.asInstanceOf[js.Any])
     if (defaultTtl != null) __obj.updateDynamic("defaultTtl")(defaultTtl.asInstanceOf[js.Any])
-    if (indexingPolicy != null) __obj.updateDynamic("indexingPolicy")(indexingPolicy)
-    if (partitionKey != null) __obj.updateDynamic("partitionKey")(partitionKey)
+    if (indexingPolicy != null) __obj.updateDynamic("indexingPolicy")(indexingPolicy.asInstanceOf[js.Any])
+    if (partitionKey != null) __obj.updateDynamic("partitionKey")(partitionKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectionMeta]
   }
 }

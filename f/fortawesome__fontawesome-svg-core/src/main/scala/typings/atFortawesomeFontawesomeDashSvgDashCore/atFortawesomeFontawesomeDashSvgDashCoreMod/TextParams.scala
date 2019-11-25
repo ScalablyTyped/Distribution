@@ -18,11 +18,11 @@ object TextParams {
     transform: Transform = null
   ): TextParams = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
     if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (transform != null) __obj.updateDynamic("transform")(transform)
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextParams]
   }
 }

@@ -18,8 +18,8 @@ object Anon_AAbbr {
     value: Value,
     multilineTag: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any = null
   ): Anon_AAbbr = {
-    val __obj = js.Dynamic.literal(value = value)
-    if (multilineTag != null) __obj.updateDynamic("multilineTag")(multilineTag)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    if (multilineTag != null) __obj.updateDynamic("multilineTag")(multilineTag.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AAbbr]
   }
 }

@@ -13,7 +13,7 @@ trait TokenInfo extends js.Object {
 object TokenInfo {
   @scala.inline
   def apply(value: String, index: Int | Double = null, start: Int | Double = null): TokenInfo = {
-    val __obj = js.Dynamic.literal(value = value)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[TokenInfo]

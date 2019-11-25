@@ -37,7 +37,7 @@ object TemplateOverridesOptions {
     if (ListTemplateType != null) __obj.updateDynamic("ListTemplateType")(ListTemplateType.asInstanceOf[js.Any])
     if (OnPostRender != null) __obj.updateDynamic("OnPostRender")(OnPostRender.asInstanceOf[js.Any])
     if (OnPreRender != null) __obj.updateDynamic("OnPreRender")(OnPreRender.asInstanceOf[js.Any])
-    if (Templates != null) __obj.updateDynamic("Templates")(Templates)
+    if (Templates != null) __obj.updateDynamic("Templates")(Templates.asInstanceOf[js.Any])
     if (ViewStyle != null) __obj.updateDynamic("ViewStyle")(ViewStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[TemplateOverridesOptions]
   }

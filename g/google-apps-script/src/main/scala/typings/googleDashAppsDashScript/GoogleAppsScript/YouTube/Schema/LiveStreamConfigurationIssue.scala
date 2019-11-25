@@ -15,10 +15,10 @@ object LiveStreamConfigurationIssue {
   @scala.inline
   def apply(description: String = null, reason: String = null, severity: String = null, `type`: String = null): LiveStreamConfigurationIssue = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (reason != null) __obj.updateDynamic("reason")(reason)
-    if (severity != null) __obj.updateDynamic("severity")(severity)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
+    if (severity != null) __obj.updateDynamic("severity")(severity.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LiveStreamConfigurationIssue]
   }
 }

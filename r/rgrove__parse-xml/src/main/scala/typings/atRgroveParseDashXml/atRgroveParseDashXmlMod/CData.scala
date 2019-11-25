@@ -16,9 +16,9 @@ trait CData
 object CData {
   @scala.inline
   def apply(text: String, `type`: cdata, parent: NodeBase = null): CData = {
-    val __obj = js.Dynamic.literal(text = text)
-    __obj.updateDynamic("type")(`type`)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[CData]
   }
 }

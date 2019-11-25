@@ -51,7 +51,7 @@ object Discount {
     title: String,
     url: String
   ): Discount = {
-    val __obj = js.Dynamic.literal(detail = detail, end_time = end_time, photos = photos, provider = provider, sold_num = sold_num, start_time = start_time, title = title, url = url)
+    val __obj = js.Dynamic.literal(detail = detail.asInstanceOf[js.Any], end_time = end_time.asInstanceOf[js.Any], photos = photos.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], sold_num = sold_num.asInstanceOf[js.Any], start_time = start_time.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Discount]
   }

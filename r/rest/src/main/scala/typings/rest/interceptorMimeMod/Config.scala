@@ -21,10 +21,10 @@ object Config {
     registry: Registry = null
   ): Config = {
     val __obj = js.Dynamic.literal()
-    if (accept != null) __obj.updateDynamic("accept")(accept)
-    if (mime != null) __obj.updateDynamic("mime")(mime)
-    if (!js.isUndefined(permissive)) __obj.updateDynamic("permissive")(permissive)
-    if (registry != null) __obj.updateDynamic("registry")(registry)
+    if (accept != null) __obj.updateDynamic("accept")(accept.asInstanceOf[js.Any])
+    if (mime != null) __obj.updateDynamic("mime")(mime.asInstanceOf[js.Any])
+    if (!js.isUndefined(permissive)) __obj.updateDynamic("permissive")(permissive.asInstanceOf[js.Any])
+    if (registry != null) __obj.updateDynamic("registry")(registry.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

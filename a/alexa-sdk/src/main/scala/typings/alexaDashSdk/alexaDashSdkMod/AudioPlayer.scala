@@ -16,7 +16,7 @@ trait AudioPlayer extends js.Object {
 object AudioPlayer {
   @scala.inline
   def apply(offsetInMilliseconds: Double, playerActivity: AudioPlayerActivity, token: String): AudioPlayer = {
-    val __obj = js.Dynamic.literal(offsetInMilliseconds = offsetInMilliseconds, playerActivity = playerActivity, token = token)
+    val __obj = js.Dynamic.literal(offsetInMilliseconds = offsetInMilliseconds.asInstanceOf[js.Any], playerActivity = playerActivity.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AudioPlayer]
   }

@@ -15,8 +15,8 @@ object ToolBarRightElement {
   @scala.inline
   def apply(actions: js.Array[Element | String] = null, menu: Anon_IconLabels = null): ToolBarRightElement = {
     val __obj = js.Dynamic.literal()
-    if (actions != null) __obj.updateDynamic("actions")(actions)
-    if (menu != null) __obj.updateDynamic("menu")(menu)
+    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
+    if (menu != null) __obj.updateDynamic("menu")(menu.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolBarRightElement]
   }
 }

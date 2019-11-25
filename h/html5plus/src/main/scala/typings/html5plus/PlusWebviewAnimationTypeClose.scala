@@ -98,16 +98,16 @@ object PlusWebviewAnimationTypeClose {
     `zoom-in`: String = null
   ): PlusWebviewAnimationTypeClose = {
     val __obj = js.Dynamic.literal()
-    if (auto != null) __obj.updateDynamic("auto")(auto)
-    if (`fade-out` != null) __obj.updateDynamic("fade-out")(`fade-out`)
-    if (none != null) __obj.updateDynamic("none")(none)
-    if (`pop-out` != null) __obj.updateDynamic("pop-out")(`pop-out`)
-    if (`slide-out-bottom` != null) __obj.updateDynamic("slide-out-bottom")(`slide-out-bottom`)
-    if (`slide-out-left` != null) __obj.updateDynamic("slide-out-left")(`slide-out-left`)
-    if (`slide-out-right` != null) __obj.updateDynamic("slide-out-right")(`slide-out-right`)
-    if (`slide-out-top` != null) __obj.updateDynamic("slide-out-top")(`slide-out-top`)
-    if (`zoom-fade-in` != null) __obj.updateDynamic("zoom-fade-in")(`zoom-fade-in`)
-    if (`zoom-in` != null) __obj.updateDynamic("zoom-in")(`zoom-in`)
+    if (auto != null) __obj.updateDynamic("auto")(auto.asInstanceOf[js.Any])
+    if (`fade-out` != null) __obj.updateDynamic("fade-out")(`fade-out`.asInstanceOf[js.Any])
+    if (none != null) __obj.updateDynamic("none")(none.asInstanceOf[js.Any])
+    if (`pop-out` != null) __obj.updateDynamic("pop-out")(`pop-out`.asInstanceOf[js.Any])
+    if (`slide-out-bottom` != null) __obj.updateDynamic("slide-out-bottom")(`slide-out-bottom`.asInstanceOf[js.Any])
+    if (`slide-out-left` != null) __obj.updateDynamic("slide-out-left")(`slide-out-left`.asInstanceOf[js.Any])
+    if (`slide-out-right` != null) __obj.updateDynamic("slide-out-right")(`slide-out-right`.asInstanceOf[js.Any])
+    if (`slide-out-top` != null) __obj.updateDynamic("slide-out-top")(`slide-out-top`.asInstanceOf[js.Any])
+    if (`zoom-fade-in` != null) __obj.updateDynamic("zoom-fade-in")(`zoom-fade-in`.asInstanceOf[js.Any])
+    if (`zoom-in` != null) __obj.updateDynamic("zoom-in")(`zoom-in`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusWebviewAnimationTypeClose]
   }
 }

@@ -19,8 +19,8 @@ object SearchEntryRaw {
     dn: String,
     StringDictionary: /* p */ StringDictionary[String | Buffer | js.Array[Buffer]] = null
   ): SearchEntryRaw = {
-    val __obj = js.Dynamic.literal(controls = controls, dn = dn)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(controls = controls.asInstanceOf[js.Any], dn = dn.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[SearchEntryRaw]
   }
 }

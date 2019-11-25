@@ -22,8 +22,8 @@ object SelectInfo {
     keyPath: js.Array[Key],
     selectedKeys: js.Array[Key] = null
   ): SelectInfo = {
-    val __obj = js.Dynamic.literal(domEvent = domEvent, item = item.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], keyPath = keyPath)
-    if (selectedKeys != null) __obj.updateDynamic("selectedKeys")(selectedKeys)
+    val __obj = js.Dynamic.literal(domEvent = domEvent.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], keyPath = keyPath.asInstanceOf[js.Any])
+    if (selectedKeys != null) __obj.updateDynamic("selectedKeys")(selectedKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectInfo]
   }
 }

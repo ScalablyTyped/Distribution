@@ -27,10 +27,10 @@ object RetrievedDocument {
     _rid: String = null,
     ttl: Int | Double = null
   ): RetrievedDocument = {
-    val __obj = js.Dynamic.literal(_self = _self, _ts = _ts, id = id)
-    if (_attachments != null) __obj.updateDynamic("_attachments")(_attachments)
-    if (_etag != null) __obj.updateDynamic("_etag")(_etag)
-    if (_rid != null) __obj.updateDynamic("_rid")(_rid)
+    val __obj = js.Dynamic.literal(_self = _self.asInstanceOf[js.Any], _ts = _ts.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
+    if (_attachments != null) __obj.updateDynamic("_attachments")(_attachments.asInstanceOf[js.Any])
+    if (_etag != null) __obj.updateDynamic("_etag")(_etag.asInstanceOf[js.Any])
+    if (_rid != null) __obj.updateDynamic("_rid")(_rid.asInstanceOf[js.Any])
     if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
     __obj.asInstanceOf[RetrievedDocument]
   }

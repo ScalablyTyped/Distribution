@@ -20,8 +20,8 @@ object BatchGetAmpUrlsResponse {
   @scala.inline
   def apply(ampUrls: js.Array[AmpUrl] = null, urlErrors: js.Array[AmpUrlError] = null): BatchGetAmpUrlsResponse = {
     val __obj = js.Dynamic.literal()
-    if (ampUrls != null) __obj.updateDynamic("ampUrls")(ampUrls)
-    if (urlErrors != null) __obj.updateDynamic("urlErrors")(urlErrors)
+    if (ampUrls != null) __obj.updateDynamic("ampUrls")(ampUrls.asInstanceOf[js.Any])
+    if (urlErrors != null) __obj.updateDynamic("urlErrors")(urlErrors.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchGetAmpUrlsResponse]
   }
 }

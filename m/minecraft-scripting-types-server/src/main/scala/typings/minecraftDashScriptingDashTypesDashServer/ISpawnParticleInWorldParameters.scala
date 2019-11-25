@@ -29,7 +29,7 @@ trait ISpawnParticleInWorldParameters extends js.Object {
 object ISpawnParticleInWorldParameters {
   @scala.inline
   def apply(dimension: String, effect: ParticleEffect, position: VectorArray): ISpawnParticleInWorldParameters = {
-    val __obj = js.Dynamic.literal(dimension = dimension, effect = effect.asInstanceOf[js.Any], position = position)
+    val __obj = js.Dynamic.literal(dimension = dimension.asInstanceOf[js.Any], effect = effect.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISpawnParticleInWorldParameters]
   }

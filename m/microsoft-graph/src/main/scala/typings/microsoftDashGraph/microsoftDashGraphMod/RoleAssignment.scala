@@ -25,11 +25,11 @@ object RoleAssignment {
     roleDefinition: RoleDefinition = null
   ): RoleAssignment = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (resourceScopes != null) __obj.updateDynamic("resourceScopes")(resourceScopes)
-    if (roleDefinition != null) __obj.updateDynamic("roleDefinition")(roleDefinition)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (resourceScopes != null) __obj.updateDynamic("resourceScopes")(resourceScopes.asInstanceOf[js.Any])
+    if (roleDefinition != null) __obj.updateDynamic("roleDefinition")(roleDefinition.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoleAssignment]
   }
 }

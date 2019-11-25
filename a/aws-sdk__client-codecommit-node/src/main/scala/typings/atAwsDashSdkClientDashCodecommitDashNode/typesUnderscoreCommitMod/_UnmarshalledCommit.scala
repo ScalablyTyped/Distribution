@@ -35,13 +35,13 @@ object _UnmarshalledCommit {
     treeId: String = null
   ): _UnmarshalledCommit = {
     val __obj = js.Dynamic.literal()
-    if (additionalData != null) __obj.updateDynamic("additionalData")(additionalData)
-    if (author != null) __obj.updateDynamic("author")(author)
-    if (commitId != null) __obj.updateDynamic("commitId")(commitId)
-    if (committer != null) __obj.updateDynamic("committer")(committer)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (parents != null) __obj.updateDynamic("parents")(parents)
-    if (treeId != null) __obj.updateDynamic("treeId")(treeId)
+    if (additionalData != null) __obj.updateDynamic("additionalData")(additionalData.asInstanceOf[js.Any])
+    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
+    if (commitId != null) __obj.updateDynamic("commitId")(commitId.asInstanceOf[js.Any])
+    if (committer != null) __obj.updateDynamic("committer")(committer.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (parents != null) __obj.updateDynamic("parents")(parents.asInstanceOf[js.Any])
+    if (treeId != null) __obj.updateDynamic("treeId")(treeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledCommit]
   }
 }

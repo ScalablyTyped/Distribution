@@ -26,13 +26,13 @@ object OrdersShipLineItemsRequest {
     trackingId: String = null
   ): OrdersShipLineItemsRequest = {
     val __obj = js.Dynamic.literal()
-    if (carrier != null) __obj.updateDynamic("carrier")(carrier)
-    if (lineItems != null) __obj.updateDynamic("lineItems")(lineItems)
-    if (operationId != null) __obj.updateDynamic("operationId")(operationId)
-    if (shipmentGroupId != null) __obj.updateDynamic("shipmentGroupId")(shipmentGroupId)
-    if (shipmentId != null) __obj.updateDynamic("shipmentId")(shipmentId)
-    if (shipmentInfos != null) __obj.updateDynamic("shipmentInfos")(shipmentInfos)
-    if (trackingId != null) __obj.updateDynamic("trackingId")(trackingId)
+    if (carrier != null) __obj.updateDynamic("carrier")(carrier.asInstanceOf[js.Any])
+    if (lineItems != null) __obj.updateDynamic("lineItems")(lineItems.asInstanceOf[js.Any])
+    if (operationId != null) __obj.updateDynamic("operationId")(operationId.asInstanceOf[js.Any])
+    if (shipmentGroupId != null) __obj.updateDynamic("shipmentGroupId")(shipmentGroupId.asInstanceOf[js.Any])
+    if (shipmentId != null) __obj.updateDynamic("shipmentId")(shipmentId.asInstanceOf[js.Any])
+    if (shipmentInfos != null) __obj.updateDynamic("shipmentInfos")(shipmentInfos.asInstanceOf[js.Any])
+    if (trackingId != null) __obj.updateDynamic("trackingId")(trackingId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrdersShipLineItemsRequest]
   }
 }

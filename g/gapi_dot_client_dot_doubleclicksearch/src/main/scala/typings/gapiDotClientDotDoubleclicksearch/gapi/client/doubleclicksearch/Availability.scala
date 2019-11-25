@@ -30,12 +30,12 @@ object Availability {
     segmentationType: String = null
   ): Availability = {
     val __obj = js.Dynamic.literal()
-    if (advertiserId != null) __obj.updateDynamic("advertiserId")(advertiserId)
-    if (agencyId != null) __obj.updateDynamic("agencyId")(agencyId)
-    if (availabilityTimestamp != null) __obj.updateDynamic("availabilityTimestamp")(availabilityTimestamp)
-    if (segmentationId != null) __obj.updateDynamic("segmentationId")(segmentationId)
-    if (segmentationName != null) __obj.updateDynamic("segmentationName")(segmentationName)
-    if (segmentationType != null) __obj.updateDynamic("segmentationType")(segmentationType)
+    if (advertiserId != null) __obj.updateDynamic("advertiserId")(advertiserId.asInstanceOf[js.Any])
+    if (agencyId != null) __obj.updateDynamic("agencyId")(agencyId.asInstanceOf[js.Any])
+    if (availabilityTimestamp != null) __obj.updateDynamic("availabilityTimestamp")(availabilityTimestamp.asInstanceOf[js.Any])
+    if (segmentationId != null) __obj.updateDynamic("segmentationId")(segmentationId.asInstanceOf[js.Any])
+    if (segmentationName != null) __obj.updateDynamic("segmentationName")(segmentationName.asInstanceOf[js.Any])
+    if (segmentationType != null) __obj.updateDynamic("segmentationType")(segmentationType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Availability]
   }
 }

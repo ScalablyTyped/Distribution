@@ -24,8 +24,8 @@ object TrafficSplit {
   @scala.inline
   def apply(allocations: Record[String, Double] = null, shardBy: String = null): TrafficSplit = {
     val __obj = js.Dynamic.literal()
-    if (allocations != null) __obj.updateDynamic("allocations")(allocations)
-    if (shardBy != null) __obj.updateDynamic("shardBy")(shardBy)
+    if (allocations != null) __obj.updateDynamic("allocations")(allocations.asInstanceOf[js.Any])
+    if (shardBy != null) __obj.updateDynamic("shardBy")(shardBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrafficSplit]
   }
 }

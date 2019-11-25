@@ -12,7 +12,7 @@ trait IRevocationAndRenewalInformation extends js.Object {
 object IRevocationAndRenewalInformation {
   @scala.inline
   def apply(items: IVector[RevocationAndRenewalItem]): IRevocationAndRenewalInformation = {
-    val __obj = js.Dynamic.literal(items = items)
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IRevocationAndRenewalInformation]
   }

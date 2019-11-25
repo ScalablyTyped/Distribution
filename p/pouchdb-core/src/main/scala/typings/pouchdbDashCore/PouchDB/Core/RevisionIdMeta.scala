@@ -11,7 +11,7 @@ trait RevisionIdMeta extends js.Object {
 object RevisionIdMeta {
   @scala.inline
   def apply(_rev: RevisionId): RevisionIdMeta = {
-    val __obj = js.Dynamic.literal(_rev = _rev)
+    val __obj = js.Dynamic.literal(_rev = _rev.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RevisionIdMeta]
   }

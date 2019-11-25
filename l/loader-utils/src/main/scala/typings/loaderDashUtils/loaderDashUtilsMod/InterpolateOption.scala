@@ -17,7 +17,7 @@ object InterpolateOption {
   def apply(content: String | Buffer = null, context: String = null, regExp: String | RegExp = null): InterpolateOption = {
     val __obj = js.Dynamic.literal()
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (regExp != null) __obj.updateDynamic("regExp")(regExp.asInstanceOf[js.Any])
     __obj.asInstanceOf[InterpolateOption]
   }

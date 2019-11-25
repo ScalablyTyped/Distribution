@@ -15,7 +15,7 @@ trait StorageServiceProperties extends js.Object {
 object StorageServiceProperties {
   @scala.inline
   def apply(DefaultServiceVersion: String, Logging: Anon_Delete, Metrics: Anon_Enabled): StorageServiceProperties = {
-    val __obj = js.Dynamic.literal(DefaultServiceVersion = DefaultServiceVersion, Logging = Logging, Metrics = Metrics)
+    val __obj = js.Dynamic.literal(DefaultServiceVersion = DefaultServiceVersion.asInstanceOf[js.Any], Logging = Logging.asInstanceOf[js.Any], Metrics = Metrics.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StorageServiceProperties]
   }

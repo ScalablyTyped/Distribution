@@ -22,11 +22,11 @@ object KikPickUsersOptions {
     preselected: js.Array[Anon_Username] = null
   ): KikPickUsersOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(filterSelf)) __obj.updateDynamic("filterSelf")(filterSelf)
-    if (filtered != null) __obj.updateDynamic("filtered")(filtered)
+    if (!js.isUndefined(filterSelf)) __obj.updateDynamic("filterSelf")(filterSelf.asInstanceOf[js.Any])
+    if (filtered != null) __obj.updateDynamic("filtered")(filtered.asInstanceOf[js.Any])
     if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (minResults != null) __obj.updateDynamic("minResults")(minResults.asInstanceOf[js.Any])
-    if (preselected != null) __obj.updateDynamic("preselected")(preselected)
+    if (preselected != null) __obj.updateDynamic("preselected")(preselected.asInstanceOf[js.Any])
     __obj.asInstanceOf[KikPickUsersOptions]
   }
 }

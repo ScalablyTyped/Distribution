@@ -64,18 +64,18 @@ object DisplayData {
     url: String = null
   ): DisplayData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(boolValue)) __obj.updateDynamic("boolValue")(boolValue)
-    if (durationValue != null) __obj.updateDynamic("durationValue")(durationValue)
+    if (!js.isUndefined(boolValue)) __obj.updateDynamic("boolValue")(boolValue.asInstanceOf[js.Any])
+    if (durationValue != null) __obj.updateDynamic("durationValue")(durationValue.asInstanceOf[js.Any])
     if (floatValue != null) __obj.updateDynamic("floatValue")(floatValue.asInstanceOf[js.Any])
-    if (int64Value != null) __obj.updateDynamic("int64Value")(int64Value)
-    if (javaClassValue != null) __obj.updateDynamic("javaClassValue")(javaClassValue)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace)
-    if (shortStrValue != null) __obj.updateDynamic("shortStrValue")(shortStrValue)
-    if (strValue != null) __obj.updateDynamic("strValue")(strValue)
-    if (timestampValue != null) __obj.updateDynamic("timestampValue")(timestampValue)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (int64Value != null) __obj.updateDynamic("int64Value")(int64Value.asInstanceOf[js.Any])
+    if (javaClassValue != null) __obj.updateDynamic("javaClassValue")(javaClassValue.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
+    if (shortStrValue != null) __obj.updateDynamic("shortStrValue")(shortStrValue.asInstanceOf[js.Any])
+    if (strValue != null) __obj.updateDynamic("strValue")(strValue.asInstanceOf[js.Any])
+    if (timestampValue != null) __obj.updateDynamic("timestampValue")(timestampValue.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisplayData]
   }
 }

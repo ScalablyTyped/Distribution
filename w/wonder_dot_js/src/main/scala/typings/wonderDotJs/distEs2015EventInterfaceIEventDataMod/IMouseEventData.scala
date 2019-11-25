@@ -44,7 +44,7 @@ object IMouseEventData {
     webkitMovementY: Int | Double = null,
     wheelDelta: Int | Double = null
   ): IMouseEventData = {
-    val __obj = js.Dynamic.literal(button = button, clientX = clientX, clientY = clientY, currentTarget = currentTarget, pageX = pageX, pageY = pageY, preventDefault = js.Any.fromFunction0(preventDefault), returnValue = returnValue, target = target)
+    val __obj = js.Dynamic.literal(button = button.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), returnValue = returnValue.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     if (detail != null) __obj.updateDynamic("detail")(detail.asInstanceOf[js.Any])
     if (movementX != null) __obj.updateDynamic("movementX")(movementX.asInstanceOf[js.Any])
     if (movementY != null) __obj.updateDynamic("movementY")(movementY.asInstanceOf[js.Any])

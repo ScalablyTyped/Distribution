@@ -28,8 +28,8 @@ object GetParams {
     if (FromTS != null) __obj.updateDynamic("FromTS")(FromTS.asInstanceOf[js.Any])
     if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
     if (Offset != null) __obj.updateDynamic("Offset")(Offset.asInstanceOf[js.Any])
-    if (StatusCode != null) __obj.updateDynamic("StatusCode")(StatusCode)
-    if (To != null) __obj.updateDynamic("To")(To)
+    if (StatusCode != null) __obj.updateDynamic("StatusCode")(StatusCode.asInstanceOf[js.Any])
+    if (To != null) __obj.updateDynamic("To")(To.asInstanceOf[js.Any])
     if (ToTS != null) __obj.updateDynamic("ToTS")(ToTS.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetParams]
   }

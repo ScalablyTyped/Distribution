@@ -12,7 +12,7 @@ trait Anon_AnimatedWidth extends js.Object {
 object Anon_AnimatedWidth {
   @scala.inline
   def apply(animatedWidth: Double, overflowWidth: Double): Anon_AnimatedWidth = {
-    val __obj = js.Dynamic.literal(animatedWidth = animatedWidth, overflowWidth = overflowWidth)
+    val __obj = js.Dynamic.literal(animatedWidth = animatedWidth.asInstanceOf[js.Any], overflowWidth = overflowWidth.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AnimatedWidth]
   }

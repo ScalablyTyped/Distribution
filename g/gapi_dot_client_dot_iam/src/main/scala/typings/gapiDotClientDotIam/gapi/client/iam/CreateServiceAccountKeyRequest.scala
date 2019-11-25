@@ -22,8 +22,8 @@ object CreateServiceAccountKeyRequest {
   @scala.inline
   def apply(keyAlgorithm: String = null, privateKeyType: String = null): CreateServiceAccountKeyRequest = {
     val __obj = js.Dynamic.literal()
-    if (keyAlgorithm != null) __obj.updateDynamic("keyAlgorithm")(keyAlgorithm)
-    if (privateKeyType != null) __obj.updateDynamic("privateKeyType")(privateKeyType)
+    if (keyAlgorithm != null) __obj.updateDynamic("keyAlgorithm")(keyAlgorithm.asInstanceOf[js.Any])
+    if (privateKeyType != null) __obj.updateDynamic("privateKeyType")(privateKeyType.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateServiceAccountKeyRequest]
   }
 }

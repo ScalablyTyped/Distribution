@@ -13,7 +13,7 @@ trait ConsumeMessage extends Message {
 object ConsumeMessage {
   @scala.inline
   def apply(content: Buffer, fields: ConsumeMessageFields, properties: MessageProperties): ConsumeMessage = {
-    val __obj = js.Dynamic.literal(content = content, fields = fields, properties = properties)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ConsumeMessage]
   }

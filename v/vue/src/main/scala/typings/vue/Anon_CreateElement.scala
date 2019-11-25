@@ -14,7 +14,7 @@ trait Anon_CreateElement extends js.Object {
 object Anon_CreateElement {
   @scala.inline
   def apply(render: CreateElement => VNode, staticRenderFns: js.Array[js.Function0[VNode]]): Anon_CreateElement = {
-    val __obj = js.Dynamic.literal(render = js.Any.fromFunction1(render), staticRenderFns = staticRenderFns)
+    val __obj = js.Dynamic.literal(render = js.Any.fromFunction1(render), staticRenderFns = staticRenderFns.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CreateElement]
   }

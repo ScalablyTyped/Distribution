@@ -19,9 +19,9 @@ object VoiceRecognizerStart {
   @scala.inline
   def apply(context: String = null, longSpeech: js.UndefOr[Boolean] = js.undefined, mode: String = null): VoiceRecognizerStart = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (!js.isUndefined(longSpeech)) __obj.updateDynamic("longSpeech")(longSpeech)
-    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (!js.isUndefined(longSpeech)) __obj.updateDynamic("longSpeech")(longSpeech.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[VoiceRecognizerStart]
   }
 }

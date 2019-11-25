@@ -24,7 +24,7 @@ object ISharedFileInfo {
     LogicalSize_32bit: Double,
     Title: String
   ): ISharedFileInfo = {
-    val __obj = js.Dynamic.literal(ChangeTimeUtc = ChangeTimeUtc, Clone = js.Any.fromFunction0(Clone), Extension = Extension, LogicalSize = LogicalSize, LogicalSize_32bit = LogicalSize_32bit, Title = Title)
+    val __obj = js.Dynamic.literal(ChangeTimeUtc = ChangeTimeUtc.asInstanceOf[js.Any], Clone = js.Any.fromFunction0(Clone), Extension = Extension.asInstanceOf[js.Any], LogicalSize = LogicalSize.asInstanceOf[js.Any], LogicalSize_32bit = LogicalSize_32bit.asInstanceOf[js.Any], Title = Title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISharedFileInfo]
   }

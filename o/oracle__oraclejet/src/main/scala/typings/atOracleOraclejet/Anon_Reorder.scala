@@ -11,7 +11,7 @@ trait Anon_Reorder extends js.Object {
 object Anon_Reorder {
   @scala.inline
   def apply(reorder: Anon_Disable): Anon_Reorder = {
-    val __obj = js.Dynamic.literal(reorder = reorder)
+    val __obj = js.Dynamic.literal(reorder = reorder.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Reorder]
   }

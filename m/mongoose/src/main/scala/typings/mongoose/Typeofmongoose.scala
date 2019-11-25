@@ -21,7 +21,7 @@ trait Typeofmongoose extends js.Object {
   var Model: typings.mongoose.mongooseMod.Model[_, js.Object] = js.native
   var Mongoose: Instantiable1[
     /* args (repeated) */ js.Any, 
-    /* import warning: ImportType.apply Failed type conversion: typeof mongoose */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: typeof mongoose */ js.Any
   ] = js.native
   var Promise: js.Any = js.native
   var PromiseProvider: js.Any = js.native
@@ -66,8 +66,8 @@ trait Typeofmongoose extends js.Object {
     collection: String,
     skipInit: Boolean
   ): U = js.native
-  def plugin(fn: js.Function): /* import warning: ImportType.apply Failed type conversion: typeof mongoose */ js.Any = js.native
-  def plugin[T](fn: js.Function, opts: T): /* import warning: ImportType.apply Failed type conversion: typeof mongoose */ js.Any = js.native
+  def plugin(fn: js.Function): /* import warning: importer.ImportType#apply Failed type conversion: typeof mongoose */ js.Any = js.native
+  def plugin[T](fn: js.Function, opts: T): /* import warning: importer.ImportType#apply Failed type conversion: typeof mongoose */ js.Any = js.native
   def pluralize(): js.Function1[/* str */ String, String] = js.native
   def pluralize(fn: js.Function1[/* str */ String, String]): js.Function1[/* str */ String, String] = js.native
   def set(key: String, value: js.Any): Unit = js.native

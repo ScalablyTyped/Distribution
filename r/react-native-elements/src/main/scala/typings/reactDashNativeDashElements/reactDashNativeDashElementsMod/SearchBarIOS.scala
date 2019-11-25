@@ -47,14 +47,14 @@ object SearchBarIOS {
     showLoading: js.UndefOr[Boolean] = js.undefined
   ): SearchBarIOS = {
     val __obj = js.Dynamic.literal()
-    if (cancelButtonProps != null) __obj.updateDynamic("cancelButtonProps")(cancelButtonProps)
-    if (cancelButtonTitle != null) __obj.updateDynamic("cancelButtonTitle")(cancelButtonTitle)
+    if (cancelButtonProps != null) __obj.updateDynamic("cancelButtonProps")(cancelButtonProps.asInstanceOf[js.Any])
+    if (cancelButtonTitle != null) __obj.updateDynamic("cancelButtonTitle")(cancelButtonTitle.asInstanceOf[js.Any])
     if (clearIcon != null) __obj.updateDynamic("clearIcon")(clearIcon.asInstanceOf[js.Any])
     if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
     if (inputContainerStyle != null) __obj.updateDynamic("inputContainerStyle")(inputContainerStyle.asInstanceOf[js.Any])
     if (inputStyle != null) __obj.updateDynamic("inputStyle")(inputStyle.asInstanceOf[js.Any])
     if (leftIconContainerStyle != null) __obj.updateDynamic("leftIconContainerStyle")(leftIconContainerStyle.asInstanceOf[js.Any])
-    if (loadingProps != null) __obj.updateDynamic("loadingProps")(loadingProps)
+    if (loadingProps != null) __obj.updateDynamic("loadingProps")(loadingProps.asInstanceOf[js.Any])
     if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction0(onBlur))
     if (onCancel != null) __obj.updateDynamic("onCancel")(js.Any.fromFunction0(onCancel))
     if (onChangeText != null) __obj.updateDynamic("onChangeText")(js.Any.fromFunction1(onChangeText))
@@ -62,8 +62,8 @@ object SearchBarIOS {
     if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction0(onFocus))
     if (rightIconContainerStyle != null) __obj.updateDynamic("rightIconContainerStyle")(rightIconContainerStyle.asInstanceOf[js.Any])
     if (searchIcon != null) __obj.updateDynamic("searchIcon")(searchIcon.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCancel)) __obj.updateDynamic("showCancel")(showCancel)
-    if (!js.isUndefined(showLoading)) __obj.updateDynamic("showLoading")(showLoading)
+    if (!js.isUndefined(showCancel)) __obj.updateDynamic("showCancel")(showCancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(showLoading)) __obj.updateDynamic("showLoading")(showLoading.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchBarIOS]
   }
 }

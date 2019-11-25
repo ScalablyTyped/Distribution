@@ -43,15 +43,15 @@ object Session {
     startTimeMillis: String = null
   ): Session = {
     val __obj = js.Dynamic.literal()
-    if (activeTimeMillis != null) __obj.updateDynamic("activeTimeMillis")(activeTimeMillis)
+    if (activeTimeMillis != null) __obj.updateDynamic("activeTimeMillis")(activeTimeMillis.asInstanceOf[js.Any])
     if (activityType != null) __obj.updateDynamic("activityType")(activityType.asInstanceOf[js.Any])
-    if (application != null) __obj.updateDynamic("application")(application)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (endTimeMillis != null) __obj.updateDynamic("endTimeMillis")(endTimeMillis)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (modifiedTimeMillis != null) __obj.updateDynamic("modifiedTimeMillis")(modifiedTimeMillis)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (startTimeMillis != null) __obj.updateDynamic("startTimeMillis")(startTimeMillis)
+    if (application != null) __obj.updateDynamic("application")(application.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (endTimeMillis != null) __obj.updateDynamic("endTimeMillis")(endTimeMillis.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (modifiedTimeMillis != null) __obj.updateDynamic("modifiedTimeMillis")(modifiedTimeMillis.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (startTimeMillis != null) __obj.updateDynamic("startTimeMillis")(startTimeMillis.asInstanceOf[js.Any])
     __obj.asInstanceOf[Session]
   }
 }

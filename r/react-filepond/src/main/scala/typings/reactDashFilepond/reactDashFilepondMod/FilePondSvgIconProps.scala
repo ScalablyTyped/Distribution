@@ -20,10 +20,10 @@ object FilePondSvgIconProps {
     iconUndo: String = null
   ): FilePondSvgIconProps = {
     val __obj = js.Dynamic.literal()
-    if (iconProcess != null) __obj.updateDynamic("iconProcess")(iconProcess)
-    if (iconRemove != null) __obj.updateDynamic("iconRemove")(iconRemove)
-    if (iconRetry != null) __obj.updateDynamic("iconRetry")(iconRetry)
-    if (iconUndo != null) __obj.updateDynamic("iconUndo")(iconUndo)
+    if (iconProcess != null) __obj.updateDynamic("iconProcess")(iconProcess.asInstanceOf[js.Any])
+    if (iconRemove != null) __obj.updateDynamic("iconRemove")(iconRemove.asInstanceOf[js.Any])
+    if (iconRetry != null) __obj.updateDynamic("iconRetry")(iconRetry.asInstanceOf[js.Any])
+    if (iconUndo != null) __obj.updateDynamic("iconUndo")(iconUndo.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilePondSvgIconProps]
   }
 }

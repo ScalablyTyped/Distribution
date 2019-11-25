@@ -12,7 +12,7 @@ trait Window extends js.Object {
 object Window {
   @scala.inline
   def apply(sqlitePlugin: SQLite): Window = {
-    val __obj = js.Dynamic.literal(sqlitePlugin = sqlitePlugin)
+    val __obj = js.Dynamic.literal(sqlitePlugin = sqlitePlugin.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Window]
   }

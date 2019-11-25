@@ -13,8 +13,8 @@ object ChromePickerStyles {
   @scala.inline
   def apply(default: ChromePickerDefaultStyles = null, disableAlpha: ChromePickerDisableAlphaStyles = null): ChromePickerStyles = {
     val __obj = js.Dynamic.literal()
-    if (default != null) __obj.updateDynamic("default")(default)
-    if (disableAlpha != null) __obj.updateDynamic("disableAlpha")(disableAlpha)
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (disableAlpha != null) __obj.updateDynamic("disableAlpha")(disableAlpha.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChromePickerStyles]
   }
 }

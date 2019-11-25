@@ -14,7 +14,7 @@ trait MoveContest extends js.Object {
 object MoveContest {
   @scala.inline
   def apply(appeal: Double, condition: String, contest: String, jam: Double): MoveContest = {
-    val __obj = js.Dynamic.literal(appeal = appeal, condition = condition, contest = contest, jam = jam)
+    val __obj = js.Dynamic.literal(appeal = appeal.asInstanceOf[js.Any], condition = condition.asInstanceOf[js.Any], contest = contest.asInstanceOf[js.Any], jam = jam.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MoveContest]
   }

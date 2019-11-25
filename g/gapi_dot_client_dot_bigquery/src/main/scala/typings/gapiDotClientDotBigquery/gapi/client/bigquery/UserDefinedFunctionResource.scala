@@ -18,8 +18,8 @@ object UserDefinedFunctionResource {
   @scala.inline
   def apply(inlineCode: String = null, resourceUri: String = null): UserDefinedFunctionResource = {
     val __obj = js.Dynamic.literal()
-    if (inlineCode != null) __obj.updateDynamic("inlineCode")(inlineCode)
-    if (resourceUri != null) __obj.updateDynamic("resourceUri")(resourceUri)
+    if (inlineCode != null) __obj.updateDynamic("inlineCode")(inlineCode.asInstanceOf[js.Any])
+    if (resourceUri != null) __obj.updateDynamic("resourceUri")(resourceUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserDefinedFunctionResource]
   }
 }

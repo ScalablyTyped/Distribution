@@ -33,9 +33,9 @@ object LookupResponse {
     missing: js.Array[EntityResult] = null
   ): LookupResponse = {
     val __obj = js.Dynamic.literal()
-    if (deferred != null) __obj.updateDynamic("deferred")(deferred)
-    if (found != null) __obj.updateDynamic("found")(found)
-    if (missing != null) __obj.updateDynamic("missing")(missing)
+    if (deferred != null) __obj.updateDynamic("deferred")(deferred.asInstanceOf[js.Any])
+    if (found != null) __obj.updateDynamic("found")(found.asInstanceOf[js.Any])
+    if (missing != null) __obj.updateDynamic("missing")(missing.asInstanceOf[js.Any])
     __obj.asInstanceOf[LookupResponse]
   }
 }

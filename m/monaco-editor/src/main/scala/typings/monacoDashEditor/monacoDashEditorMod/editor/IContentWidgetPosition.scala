@@ -30,9 +30,9 @@ object IContentWidgetPosition {
     position: IPosition = null,
     range: IRange = null
   ): IContentWidgetPosition = {
-    val __obj = js.Dynamic.literal(preference = preference)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (range != null) __obj.updateDynamic("range")(range)
+    val __obj = js.Dynamic.literal(preference = preference.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[IContentWidgetPosition]
   }
 }

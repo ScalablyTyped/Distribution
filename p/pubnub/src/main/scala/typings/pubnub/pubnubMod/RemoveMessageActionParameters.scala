@@ -13,7 +13,7 @@ trait RemoveMessageActionParameters extends js.Object {
 object RemoveMessageActionParameters {
   @scala.inline
   def apply(actionTimetoken: String, channel: String, messageTimetoken: String): RemoveMessageActionParameters = {
-    val __obj = js.Dynamic.literal(actionTimetoken = actionTimetoken, channel = channel, messageTimetoken = messageTimetoken)
+    val __obj = js.Dynamic.literal(actionTimetoken = actionTimetoken.asInstanceOf[js.Any], channel = channel.asInstanceOf[js.Any], messageTimetoken = messageTimetoken.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RemoveMessageActionParameters]
   }

@@ -42,11 +42,11 @@ object InputConfig {
     sparse: js.UndefOr[Boolean] = js.undefined
   ): InputConfig = {
     val __obj = js.Dynamic.literal()
-    if (batchShape != null) __obj.updateDynamic("batchShape")(batchShape)
-    if (dtype != null) __obj.updateDynamic("dtype")(dtype)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (shape != null) __obj.updateDynamic("shape")(shape)
-    if (!js.isUndefined(sparse)) __obj.updateDynamic("sparse")(sparse)
+    if (batchShape != null) __obj.updateDynamic("batchShape")(batchShape.asInstanceOf[js.Any])
+    if (dtype != null) __obj.updateDynamic("dtype")(dtype.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
+    if (!js.isUndefined(sparse)) __obj.updateDynamic("sparse")(sparse.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputConfig]
   }
 }

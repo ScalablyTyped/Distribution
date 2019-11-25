@@ -13,7 +13,7 @@ object UpdateContactGroupRequest {
   @scala.inline
   def apply(contactGroup: ContactGroup = null): UpdateContactGroupRequest = {
     val __obj = js.Dynamic.literal()
-    if (contactGroup != null) __obj.updateDynamic("contactGroup")(contactGroup)
+    if (contactGroup != null) __obj.updateDynamic("contactGroup")(contactGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateContactGroupRequest]
   }
 }

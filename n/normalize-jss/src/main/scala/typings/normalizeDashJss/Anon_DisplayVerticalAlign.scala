@@ -12,7 +12,7 @@ trait Anon_DisplayVerticalAlign extends js.Object {
 object Anon_DisplayVerticalAlign {
   @scala.inline
   def apply(display: String, verticalAlign: String): Anon_DisplayVerticalAlign = {
-    val __obj = js.Dynamic.literal(display = display, verticalAlign = verticalAlign)
+    val __obj = js.Dynamic.literal(display = display.asInstanceOf[js.Any], verticalAlign = verticalAlign.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DisplayVerticalAlign]
   }

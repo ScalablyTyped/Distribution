@@ -28,12 +28,12 @@ object Artwork {
     textColor3: String = null,
     textColor4: String = null
   ): Artwork = {
-    val __obj = js.Dynamic.literal(height = height, url = url, width = width)
-    if (bgColor != null) __obj.updateDynamic("bgColor")(bgColor)
-    if (textColor1 != null) __obj.updateDynamic("textColor1")(textColor1)
-    if (textColor2 != null) __obj.updateDynamic("textColor2")(textColor2)
-    if (textColor3 != null) __obj.updateDynamic("textColor3")(textColor3)
-    if (textColor4 != null) __obj.updateDynamic("textColor4")(textColor4)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    if (bgColor != null) __obj.updateDynamic("bgColor")(bgColor.asInstanceOf[js.Any])
+    if (textColor1 != null) __obj.updateDynamic("textColor1")(textColor1.asInstanceOf[js.Any])
+    if (textColor2 != null) __obj.updateDynamic("textColor2")(textColor2.asInstanceOf[js.Any])
+    if (textColor3 != null) __obj.updateDynamic("textColor3")(textColor3.asInstanceOf[js.Any])
+    if (textColor4 != null) __obj.updateDynamic("textColor4")(textColor4.asInstanceOf[js.Any])
     __obj.asInstanceOf[Artwork]
   }
 }

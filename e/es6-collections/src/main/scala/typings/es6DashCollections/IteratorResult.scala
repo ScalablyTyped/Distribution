@@ -12,7 +12,7 @@ trait IteratorResult[T] extends js.Object {
 object IteratorResult {
   @scala.inline
   def apply[T](done: Boolean, value: T = null): IteratorResult[T] = {
-    val __obj = js.Dynamic.literal(done = done)
+    val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IteratorResult[T]]
   }

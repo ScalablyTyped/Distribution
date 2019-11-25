@@ -11,7 +11,7 @@ trait UpdatePayload extends js.Object {
 object UpdatePayload {
   @scala.inline
   def apply(request: UpdateModel): UpdatePayload = {
-    val __obj = js.Dynamic.literal(request = request)
+    val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UpdatePayload]
   }

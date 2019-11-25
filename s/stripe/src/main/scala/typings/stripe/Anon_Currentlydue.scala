@@ -36,7 +36,7 @@ object Anon_Currentlydue {
     past_due: js.Array[String],
     pending_verification: js.Array[String]
   ): Anon_Currentlydue = {
-    val __obj = js.Dynamic.literal(currently_due = currently_due, eventually_due = eventually_due, past_due = past_due, pending_verification = pending_verification)
+    val __obj = js.Dynamic.literal(currently_due = currently_due.asInstanceOf[js.Any], eventually_due = eventually_due.asInstanceOf[js.Any], past_due = past_due.asInstanceOf[js.Any], pending_verification = pending_verification.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Currentlydue]
   }

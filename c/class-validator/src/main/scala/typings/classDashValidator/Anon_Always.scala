@@ -64,13 +64,13 @@ object Anon_Always {
     options: js.Any = null
   ): Anon_Always = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(always)) __obj.updateDynamic("always")(always)
-    if (constraints != null) __obj.updateDynamic("constraints")(constraints)
-    if (!js.isUndefined(each)) __obj.updateDynamic("each")(each)
-    if (groups != null) __obj.updateDynamic("groups")(groups)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(always)) __obj.updateDynamic("always")(always.asInstanceOf[js.Any])
+    if (constraints != null) __obj.updateDynamic("constraints")(constraints.asInstanceOf[js.Any])
+    if (!js.isUndefined(each)) __obj.updateDynamic("each")(each.asInstanceOf[js.Any])
+    if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Always]
   }
 }

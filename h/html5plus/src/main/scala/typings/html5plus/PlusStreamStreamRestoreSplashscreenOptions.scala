@@ -32,7 +32,7 @@ object PlusStreamStreamRestoreSplashscreenOptions {
   @scala.inline
   def apply(autoclose: js.UndefOr[Boolean] = js.undefined, timeout: Int | Double = null): PlusStreamStreamRestoreSplashscreenOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoclose)) __obj.updateDynamic("autoclose")(autoclose)
+    if (!js.isUndefined(autoclose)) __obj.updateDynamic("autoclose")(autoclose.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusStreamStreamRestoreSplashscreenOptions]
   }

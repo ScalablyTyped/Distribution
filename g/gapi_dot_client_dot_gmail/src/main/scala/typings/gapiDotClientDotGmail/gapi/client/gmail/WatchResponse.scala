@@ -15,8 +15,8 @@ object WatchResponse {
   @scala.inline
   def apply(expiration: String = null, historyId: String = null): WatchResponse = {
     val __obj = js.Dynamic.literal()
-    if (expiration != null) __obj.updateDynamic("expiration")(expiration)
-    if (historyId != null) __obj.updateDynamic("historyId")(historyId)
+    if (expiration != null) __obj.updateDynamic("expiration")(expiration.asInstanceOf[js.Any])
+    if (historyId != null) __obj.updateDynamic("historyId")(historyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[WatchResponse]
   }
 }

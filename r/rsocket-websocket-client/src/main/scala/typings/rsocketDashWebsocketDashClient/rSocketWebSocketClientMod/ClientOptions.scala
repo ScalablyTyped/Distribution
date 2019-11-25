@@ -20,9 +20,9 @@ object ClientOptions {
     lengthPrefixedFrames: js.UndefOr[Boolean] = js.undefined,
     wsCreator: /* url */ String => WebSocket = null
   ): ClientOptions = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (!js.isUndefined(lengthPrefixedFrames)) __obj.updateDynamic("lengthPrefixedFrames")(lengthPrefixedFrames)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (!js.isUndefined(lengthPrefixedFrames)) __obj.updateDynamic("lengthPrefixedFrames")(lengthPrefixedFrames.asInstanceOf[js.Any])
     if (wsCreator != null) __obj.updateDynamic("wsCreator")(js.Any.fromFunction1(wsCreator))
     __obj.asInstanceOf[ClientOptions]
   }

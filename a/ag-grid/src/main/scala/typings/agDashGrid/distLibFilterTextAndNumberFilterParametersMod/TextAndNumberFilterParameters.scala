@@ -13,7 +13,7 @@ object TextAndNumberFilterParameters {
   @scala.inline
   def apply(newRowsAction: String = null): TextAndNumberFilterParameters = {
     val __obj = js.Dynamic.literal()
-    if (newRowsAction != null) __obj.updateDynamic("newRowsAction")(newRowsAction)
+    if (newRowsAction != null) __obj.updateDynamic("newRowsAction")(newRowsAction.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextAndNumberFilterParameters]
   }
 }

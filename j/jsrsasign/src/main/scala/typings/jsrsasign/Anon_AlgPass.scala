@@ -13,7 +13,7 @@ trait Anon_AlgPass extends js.Object {
 object Anon_AlgPass {
   @scala.inline
   def apply(alg: String, pass: StringDictionary[String]): Anon_AlgPass = {
-    val __obj = js.Dynamic.literal(alg = alg, pass = pass)
+    val __obj = js.Dynamic.literal(alg = alg.asInstanceOf[js.Any], pass = pass.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AlgPass]
   }

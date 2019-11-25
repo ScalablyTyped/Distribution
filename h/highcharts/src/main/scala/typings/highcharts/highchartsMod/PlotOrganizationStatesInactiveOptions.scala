@@ -29,7 +29,7 @@ object PlotOrganizationStatesInactiveOptions {
     opacity: Int | Double = null
   ): PlotOrganizationStatesInactiveOptions = {
     val __obj = js.Dynamic.literal()
-    if (animation != null) __obj.updateDynamic("animation")(animation)
+    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (linkOpacity != null) __obj.updateDynamic("linkOpacity")(linkOpacity.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotOrganizationStatesInactiveOptions]

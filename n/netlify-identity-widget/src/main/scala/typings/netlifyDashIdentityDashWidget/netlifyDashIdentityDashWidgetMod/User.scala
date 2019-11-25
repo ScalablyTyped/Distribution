@@ -40,9 +40,9 @@ object User {
     audience: js.Any = null,
     token: Token = null
   ): User = {
-    val __obj = js.Dynamic.literal(api = api, app_metadata = app_metadata, aud = aud, confirmed_at = confirmed_at, created_at = created_at, email = email, id = id, role = role, updated_at = updated_at, url = url, user_metadata = user_metadata)
-    if (audience != null) __obj.updateDynamic("audience")(audience)
-    if (token != null) __obj.updateDynamic("token")(token)
+    val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], app_metadata = app_metadata.asInstanceOf[js.Any], aud = aud.asInstanceOf[js.Any], confirmed_at = confirmed_at.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], user_metadata = user_metadata.asInstanceOf[js.Any])
+    if (audience != null) __obj.updateDynamic("audience")(audience.asInstanceOf[js.Any])
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     __obj.asInstanceOf[User]
   }
 }

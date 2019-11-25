@@ -17,7 +17,7 @@ trait Raw extends js.Object {
 object Raw {
   @scala.inline
   def apply(channels: `1` | `2` | `3` | `4`, height: Double, width: Double): Raw = {
-    val __obj = js.Dynamic.literal(channels = channels.asInstanceOf[js.Any], height = height, width = width)
+    val __obj = js.Dynamic.literal(channels = channels.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Raw]
   }

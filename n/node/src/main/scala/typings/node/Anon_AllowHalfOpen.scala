@@ -16,8 +16,8 @@ object Anon_AllowHalfOpen {
     pauseOnConnect: js.UndefOr[Boolean] = js.undefined
   ): Anon_AllowHalfOpen = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowHalfOpen)) __obj.updateDynamic("allowHalfOpen")(allowHalfOpen)
-    if (!js.isUndefined(pauseOnConnect)) __obj.updateDynamic("pauseOnConnect")(pauseOnConnect)
+    if (!js.isUndefined(allowHalfOpen)) __obj.updateDynamic("allowHalfOpen")(allowHalfOpen.asInstanceOf[js.Any])
+    if (!js.isUndefined(pauseOnConnect)) __obj.updateDynamic("pauseOnConnect")(pauseOnConnect.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AllowHalfOpen]
   }
 }

@@ -20,9 +20,9 @@ trait NodeSource extends js.Object {
 object NodeSource {
   @scala.inline
   def apply(input: Input, end: Anon_Column = null, start: Anon_Column = null): NodeSource = {
-    val __obj = js.Dynamic.literal(input = input)
-    if (end != null) __obj.updateDynamic("end")(end)
-    if (start != null) __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any])
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeSource]
   }
 }

@@ -1,7 +1,7 @@
 package typings.mockDashFs.libSymlinkMod
 
-import typings.mockDashFs.libItemMod.ExtendedStats
 import typings.mockDashFs.libItemMod.Item
+import typings.mockDashFs.libItemMod.Stats
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,7 +27,7 @@ object SymbolicLink {
     getMTime: () => Date,
     getMode: () => Double,
     getPath: () => String,
-    getStats: () => ExtendedStats,
+    getStats: () => Stats,
     getUid: () => Double,
     setATime: Date => Unit,
     setBirthtime: Date => Unit,

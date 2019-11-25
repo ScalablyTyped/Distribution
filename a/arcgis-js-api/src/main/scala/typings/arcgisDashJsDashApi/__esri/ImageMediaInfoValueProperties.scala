@@ -23,8 +23,8 @@ object ImageMediaInfoValueProperties {
   @scala.inline
   def apply(linkURL: String = null, sourceURL: String = null): ImageMediaInfoValueProperties = {
     val __obj = js.Dynamic.literal()
-    if (linkURL != null) __obj.updateDynamic("linkURL")(linkURL)
-    if (sourceURL != null) __obj.updateDynamic("sourceURL")(sourceURL)
+    if (linkURL != null) __obj.updateDynamic("linkURL")(linkURL.asInstanceOf[js.Any])
+    if (sourceURL != null) __obj.updateDynamic("sourceURL")(sourceURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageMediaInfoValueProperties]
   }
 }

@@ -42,10 +42,10 @@ object GooglePrivacyDlpV2beta1CharacterMaskConfig {
     reverseOrder: js.UndefOr[Boolean] = js.undefined
   ): GooglePrivacyDlpV2beta1CharacterMaskConfig = {
     val __obj = js.Dynamic.literal()
-    if (charactersToIgnore != null) __obj.updateDynamic("charactersToIgnore")(charactersToIgnore)
-    if (maskingCharacter != null) __obj.updateDynamic("maskingCharacter")(maskingCharacter)
+    if (charactersToIgnore != null) __obj.updateDynamic("charactersToIgnore")(charactersToIgnore.asInstanceOf[js.Any])
+    if (maskingCharacter != null) __obj.updateDynamic("maskingCharacter")(maskingCharacter.asInstanceOf[js.Any])
     if (numberToMask != null) __obj.updateDynamic("numberToMask")(numberToMask.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverseOrder)) __obj.updateDynamic("reverseOrder")(reverseOrder)
+    if (!js.isUndefined(reverseOrder)) __obj.updateDynamic("reverseOrder")(reverseOrder.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1CharacterMaskConfig]
   }
 }

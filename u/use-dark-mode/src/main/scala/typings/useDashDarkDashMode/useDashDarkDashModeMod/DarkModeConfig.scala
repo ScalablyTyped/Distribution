@@ -35,13 +35,13 @@ object DarkModeConfig {
     storageProvider: WindowLocalStorage = null
   ): DarkModeConfig = {
     val __obj = js.Dynamic.literal()
-    if (classNameDark != null) __obj.updateDynamic("classNameDark")(classNameDark)
-    if (classNameLight != null) __obj.updateDynamic("classNameLight")(classNameLight)
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (global != null) __obj.updateDynamic("global")(global)
+    if (classNameDark != null) __obj.updateDynamic("classNameDark")(classNameDark.asInstanceOf[js.Any])
+    if (classNameLight != null) __obj.updateDynamic("classNameLight")(classNameLight.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (global != null) __obj.updateDynamic("global")(global.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (storageKey != null) __obj.updateDynamic("storageKey")(storageKey)
-    if (storageProvider != null) __obj.updateDynamic("storageProvider")(storageProvider)
+    if (storageKey != null) __obj.updateDynamic("storageKey")(storageKey.asInstanceOf[js.Any])
+    if (storageProvider != null) __obj.updateDynamic("storageProvider")(storageProvider.asInstanceOf[js.Any])
     __obj.asInstanceOf[DarkModeConfig]
   }
 }

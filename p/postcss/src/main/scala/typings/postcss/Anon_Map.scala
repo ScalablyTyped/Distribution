@@ -18,8 +18,8 @@ object Anon_Map {
   @scala.inline
   def apply(map: SourceMapOptions = null, to: String = null): Anon_Map = {
     val __obj = js.Dynamic.literal()
-    if (map != null) __obj.updateDynamic("map")(map)
-    if (to != null) __obj.updateDynamic("to")(to)
+    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Map]
   }
 }

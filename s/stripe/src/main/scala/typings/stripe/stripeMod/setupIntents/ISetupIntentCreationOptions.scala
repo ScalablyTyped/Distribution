@@ -77,16 +77,16 @@ object ISetupIntentCreationOptions {
     usage: SetupIntentUsageType = null
   ): ISetupIntentCreationOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(confirm)) __obj.updateDynamic("confirm")(confirm)
-    if (customer != null) __obj.updateDynamic("customer")(customer)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (on_behalf_of != null) __obj.updateDynamic("on_behalf_of")(on_behalf_of)
-    if (payment_method != null) __obj.updateDynamic("payment_method")(payment_method)
-    if (payment_method_options != null) __obj.updateDynamic("payment_method_options")(payment_method_options)
-    if (payment_method_types != null) __obj.updateDynamic("payment_method_types")(payment_method_types)
-    if (return_url != null) __obj.updateDynamic("return_url")(return_url)
-    if (usage != null) __obj.updateDynamic("usage")(usage)
+    if (!js.isUndefined(confirm)) __obj.updateDynamic("confirm")(confirm.asInstanceOf[js.Any])
+    if (customer != null) __obj.updateDynamic("customer")(customer.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (on_behalf_of != null) __obj.updateDynamic("on_behalf_of")(on_behalf_of.asInstanceOf[js.Any])
+    if (payment_method != null) __obj.updateDynamic("payment_method")(payment_method.asInstanceOf[js.Any])
+    if (payment_method_options != null) __obj.updateDynamic("payment_method_options")(payment_method_options.asInstanceOf[js.Any])
+    if (payment_method_types != null) __obj.updateDynamic("payment_method_types")(payment_method_types.asInstanceOf[js.Any])
+    if (return_url != null) __obj.updateDynamic("return_url")(return_url.asInstanceOf[js.Any])
+    if (usage != null) __obj.updateDynamic("usage")(usage.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISetupIntentCreationOptions]
   }
 }

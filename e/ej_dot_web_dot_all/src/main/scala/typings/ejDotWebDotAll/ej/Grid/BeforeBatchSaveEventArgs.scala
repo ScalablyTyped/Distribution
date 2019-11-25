@@ -20,9 +20,9 @@ object BeforeBatchSaveEventArgs {
   @scala.inline
   def apply(batchChanges: js.Any = null, model: js.Any = null, `type`: String = null): BeforeBatchSaveEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (batchChanges != null) __obj.updateDynamic("batchChanges")(batchChanges)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (batchChanges != null) __obj.updateDynamic("batchChanges")(batchChanges.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BeforeBatchSaveEventArgs]
   }
 }

@@ -15,7 +15,7 @@ trait IJwkRsa extends js.Object {
 object IJwkRsa {
   @scala.inline
   def apply(alg: String, e: String, ext: Boolean, kty: String, n: String): IJwkRsa = {
-    val __obj = js.Dynamic.literal(alg = alg, e = e, ext = ext, kty = kty, n = n)
+    val __obj = js.Dynamic.literal(alg = alg.asInstanceOf[js.Any], e = e.asInstanceOf[js.Any], ext = ext.asInstanceOf[js.Any], kty = kty.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IJwkRsa]
   }

@@ -24,9 +24,9 @@ object SearchResponse {
     _scroll_id: String = null,
     aggregations: js.Any = null
   ): SearchResponse[T] = {
-    val __obj = js.Dynamic.literal(_shards = _shards, hits = hits, timed_out = timed_out, took = took)
-    if (_scroll_id != null) __obj.updateDynamic("_scroll_id")(_scroll_id)
-    if (aggregations != null) __obj.updateDynamic("aggregations")(aggregations)
+    val __obj = js.Dynamic.literal(_shards = _shards.asInstanceOf[js.Any], hits = hits.asInstanceOf[js.Any], timed_out = timed_out.asInstanceOf[js.Any], took = took.asInstanceOf[js.Any])
+    if (_scroll_id != null) __obj.updateDynamic("_scroll_id")(_scroll_id.asInstanceOf[js.Any])
+    if (aggregations != null) __obj.updateDynamic("aggregations")(aggregations.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchResponse[T]]
   }
 }

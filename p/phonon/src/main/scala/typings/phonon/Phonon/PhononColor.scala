@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait PhononColor extends js.Object
 
+object PhononColor {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def negative: typings.phonon.phononStrings.negative = this.cast("negative")
+  @scala.inline
+  def positive: typings.phonon.phononStrings.positive = this.cast("positive")
+}
+

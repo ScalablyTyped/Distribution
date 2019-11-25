@@ -28,10 +28,10 @@ object ResponseMessage {
     id: Double | String = null,
     result: js.Any = null
   ): ResponseMessage = {
-    val __obj = js.Dynamic.literal(jsonrpc = jsonrpc)
-    if (error != null) __obj.updateDynamic("error")(error)
+    val __obj = js.Dynamic.literal(jsonrpc = jsonrpc.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (result != null) __obj.updateDynamic("result")(result)
+    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseMessage]
   }
 }

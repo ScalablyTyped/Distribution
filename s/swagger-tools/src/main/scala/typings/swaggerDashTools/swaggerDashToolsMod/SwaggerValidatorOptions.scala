@@ -12,7 +12,7 @@ object SwaggerValidatorOptions {
   @scala.inline
   def apply(validateResponse: js.UndefOr[Boolean] = js.undefined): SwaggerValidatorOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(validateResponse)) __obj.updateDynamic("validateResponse")(validateResponse)
+    if (!js.isUndefined(validateResponse)) __obj.updateDynamic("validateResponse")(validateResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwaggerValidatorOptions]
   }
 }

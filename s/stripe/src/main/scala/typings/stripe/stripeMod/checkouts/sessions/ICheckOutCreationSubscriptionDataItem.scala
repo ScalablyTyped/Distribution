@@ -18,7 +18,7 @@ trait ICheckOutCreationSubscriptionDataItem extends js.Object {
 object ICheckOutCreationSubscriptionDataItem {
   @scala.inline
   def apply(plan: String, quantity: Int | Double = null): ICheckOutCreationSubscriptionDataItem = {
-    val __obj = js.Dynamic.literal(plan = plan)
+    val __obj = js.Dynamic.literal(plan = plan.asInstanceOf[js.Any])
     if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICheckOutCreationSubscriptionDataItem]
   }

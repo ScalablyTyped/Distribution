@@ -28,13 +28,13 @@ object EventGadget {
     width: Int | Double = null
   ): EventGadget = {
     val __obj = js.Dynamic.literal()
-    if (display != null) __obj.updateDynamic("display")(display)
+    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (iconLink != null) __obj.updateDynamic("iconLink")(iconLink)
-    if (link != null) __obj.updateDynamic("link")(link)
-    if (preferences != null) __obj.updateDynamic("preferences")(preferences)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (iconLink != null) __obj.updateDynamic("iconLink")(iconLink.asInstanceOf[js.Any])
+    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
+    if (preferences != null) __obj.updateDynamic("preferences")(preferences.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventGadget]
   }

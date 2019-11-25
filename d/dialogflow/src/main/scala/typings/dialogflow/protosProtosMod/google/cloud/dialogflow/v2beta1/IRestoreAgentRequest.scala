@@ -19,9 +19,9 @@ object IRestoreAgentRequest {
   @scala.inline
   def apply(agentContent: Uint8Array = null, agentUri: String = null, parent: String = null): IRestoreAgentRequest = {
     val __obj = js.Dynamic.literal()
-    if (agentContent != null) __obj.updateDynamic("agentContent")(agentContent)
-    if (agentUri != null) __obj.updateDynamic("agentUri")(agentUri)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (agentContent != null) __obj.updateDynamic("agentContent")(agentContent.asInstanceOf[js.Any])
+    if (agentUri != null) __obj.updateDynamic("agentUri")(agentUri.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRestoreAgentRequest]
   }
 }

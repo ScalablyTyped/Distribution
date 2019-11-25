@@ -35,12 +35,12 @@ object SharpOptions {
     raw: Raw = null
   ): SharpOptions = {
     val __obj = js.Dynamic.literal()
-    if (create != null) __obj.updateDynamic("create")(create)
+    if (create != null) __obj.updateDynamic("create")(create.asInstanceOf[js.Any])
     if (density != null) __obj.updateDynamic("density")(density.asInstanceOf[js.Any])
-    if (!js.isUndefined(failOnError)) __obj.updateDynamic("failOnError")(failOnError)
+    if (!js.isUndefined(failOnError)) __obj.updateDynamic("failOnError")(failOnError.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (pages != null) __obj.updateDynamic("pages")(pages.asInstanceOf[js.Any])
-    if (raw != null) __obj.updateDynamic("raw")(raw)
+    if (raw != null) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharpOptions]
   }
 }

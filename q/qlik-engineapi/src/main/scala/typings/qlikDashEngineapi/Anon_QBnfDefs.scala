@@ -13,7 +13,7 @@ trait Anon_QBnfDefs extends js.Object {
 object Anon_QBnfDefs {
   @scala.inline
   def apply(qBnfDefs: IBNFDef, qBnfHash: String): Anon_QBnfDefs = {
-    val __obj = js.Dynamic.literal(qBnfDefs = qBnfDefs, qBnfHash = qBnfHash)
+    val __obj = js.Dynamic.literal(qBnfDefs = qBnfDefs.asInstanceOf[js.Any], qBnfHash = qBnfHash.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_QBnfDefs]
   }

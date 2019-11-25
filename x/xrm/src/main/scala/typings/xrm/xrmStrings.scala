@@ -1,5 +1,6 @@
 package typings.xrm
 
+import typings.xrm.Xrm.Attributes.AttributeFormat
 import typings.xrm.Xrm.Attributes.AttributeType
 import typings.xrm.Xrm.Attributes.DateAttributeFormat
 import typings.xrm.Xrm.Attributes.IntegerAttributeFormat
@@ -140,14 +141,16 @@ object xrmStrings {
   
   @js.native
   sealed trait date
-    extends DateAttributeFormat
+    extends AttributeFormat
+       with DateAttributeFormat
        with typings.xrm.XrmEnum.DateAttributeFormat
   
   @js.native
   sealed trait datetime
-    extends DateAttributeFormat
+    extends AttributeFormat
        with AttributeType
        with typings.xrm.XrmEnum.AttributeType
+       with DateAttributeFormat
        with typings.xrm.XrmEnum.DateAttributeFormat
   
   @js.native
@@ -172,12 +175,14 @@ object xrmStrings {
   
   @js.native
   sealed trait duration
-    extends IntegerAttributeFormat
+    extends AttributeFormat
+       with IntegerAttributeFormat
        with typings.xrm.XrmEnum.IntegerAttributeFormat
   
   @js.native
   sealed trait email
-    extends StringAttributeFormat
+    extends AttributeFormat
+       with StringAttributeFormat
        with typings.xrm.XrmEnum.StringAttributeFormat
   
   @js.native
@@ -232,7 +237,8 @@ object xrmStrings {
   
   @js.native
   sealed trait language
-    extends OptionSetAttributeFormat
+    extends AttributeFormat
+       with OptionSetAttributeFormat
        with typings.xrm.XrmEnum.OptionSetAttributeFormat
   
   @js.native
@@ -267,8 +273,9 @@ object xrmStrings {
   
   @js.native
   sealed trait none
-    extends IntegerAttributeFormat
+    extends AttributeFormat
        with AttributeRequirementLevel
+       with IntegerAttributeFormat
        with typings.xrm.XrmEnum.IntegerAttributeFormat
        with RequirementLevel
   
@@ -296,7 +303,8 @@ object xrmStrings {
   
   @js.native
   sealed trait phone
-    extends StringAttributeFormat
+    extends AttributeFormat
+       with StringAttributeFormat
        with typings.xrm.XrmEnum.StringAttributeFormat
   
   @js.native
@@ -344,17 +352,20 @@ object xrmStrings {
   
   @js.native
   sealed trait text
-    extends StringAttributeFormat
+    extends AttributeFormat
+       with StringAttributeFormat
        with typings.xrm.XrmEnum.StringAttributeFormat
   
   @js.native
   sealed trait textarea
-    extends StringAttributeFormat
+    extends AttributeFormat
+       with StringAttributeFormat
        with typings.xrm.XrmEnum.StringAttributeFormat
   
   @js.native
   sealed trait tickersymbol
-    extends StringAttributeFormat
+    extends AttributeFormat
+       with StringAttributeFormat
        with typings.xrm.XrmEnum.StringAttributeFormat
   
   @js.native
@@ -369,7 +380,8 @@ object xrmStrings {
   
   @js.native
   sealed trait timezone
-    extends OptionSetAttributeFormat
+    extends AttributeFormat
+       with OptionSetAttributeFormat
        with typings.xrm.XrmEnum.OptionSetAttributeFormat
   
   @js.native
@@ -379,7 +391,8 @@ object xrmStrings {
   
   @js.native
   sealed trait url
-    extends StringAttributeFormat
+    extends AttributeFormat
+       with StringAttributeFormat
        with typings.xrm.XrmEnum.StringAttributeFormat
   
   @js.native

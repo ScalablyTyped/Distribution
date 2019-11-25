@@ -26,7 +26,7 @@ package object Schema {
     typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.ViewKeys.Comment | typings.atWordpressApiDashFetch.atWordpressApiDashFetchMod.Schema.EmbedKeys.Comment
   ])
   type Contextual[T /* <: Context */, TAdditional, TEditAdditional] = (Anon_Rendered with TAdditional) | (Anon_Raw with TAdditional with TEditAdditional)
-  type Decontextualize[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type Decontextualize[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in keyof T ]: T[k] extends @wordpress/api-fetch.@wordpress/api-fetch.Schema.Contextual<any, {}, {}>? string : T[k]}
     */ typings.atWordpressApiDashFetch.atWordpressApiDashFetchStrings.Decontextualize with js.Any
   // prettier-ignore

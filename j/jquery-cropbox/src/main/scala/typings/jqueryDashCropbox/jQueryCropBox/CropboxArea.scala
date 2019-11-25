@@ -14,7 +14,7 @@ trait CropboxArea extends js.Object {
 object CropboxArea {
   @scala.inline
   def apply(cropH: Double, cropW: Double, cropX: Double, cropY: Double): CropboxArea = {
-    val __obj = js.Dynamic.literal(cropH = cropH, cropW = cropW, cropX = cropX, cropY = cropY)
+    val __obj = js.Dynamic.literal(cropH = cropH.asInstanceOf[js.Any], cropW = cropW.asInstanceOf[js.Any], cropX = cropX.asInstanceOf[js.Any], cropY = cropY.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CropboxArea]
   }

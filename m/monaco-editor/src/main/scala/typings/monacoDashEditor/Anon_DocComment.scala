@@ -13,7 +13,7 @@ object Anon_DocComment {
   @scala.inline
   def apply(docComment: IDocComment = null): Anon_DocComment = {
     val __obj = js.Dynamic.literal()
-    if (docComment != null) __obj.updateDynamic("docComment")(docComment)
+    if (docComment != null) __obj.updateDynamic("docComment")(docComment.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DocComment]
   }
 }

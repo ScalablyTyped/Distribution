@@ -23,10 +23,10 @@ object SpliceOptions {
   ): SpliceOptions = {
     val __obj = js.Dynamic.literal()
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (!js.isUndefined(getValue)) __obj.updateDynamic("getValue")(getValue)
+    if (!js.isUndefined(getValue)) __obj.updateDynamic("getValue")(getValue.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (!js.isUndefined(noAck)) __obj.updateDynamic("noAck")(noAck)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (!js.isUndefined(noAck)) __obj.updateDynamic("noAck")(noAck.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpliceOptions]
   }
 }

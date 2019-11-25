@@ -31,13 +31,13 @@ object LocationState {
     query: Query = null,
     search: String = null
   ): LocationState[TKeys, TState] = {
-    val __obj = js.Dynamic.literal(pathname = pathname, payload = payload, prev = prev, routesMap = routesMap)
-    __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(hasSSR)) __obj.updateDynamic("hasSSR")(hasSSR)
+    val __obj = js.Dynamic.literal(pathname = pathname.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], prev = prev.asInstanceOf[js.Any], routesMap = routesMap.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasSSR)) __obj.updateDynamic("hasSSR")(hasSSR.asInstanceOf[js.Any])
     if (history != null) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query)
-    if (search != null) __obj.updateDynamic("search")(search)
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    if (search != null) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationState[TKeys, TState]]
   }
 }

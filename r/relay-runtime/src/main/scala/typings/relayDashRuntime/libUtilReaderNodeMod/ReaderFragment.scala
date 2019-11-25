@@ -30,9 +30,9 @@ object ReaderFragment {
     `type`: String,
     metadata: Anon_Connection = null
   ): ReaderFragment = {
-    val __obj = js.Dynamic.literal(argumentDefinitions = argumentDefinitions, kind = kind, name = name, selections = selections)
-    __obj.updateDynamic("type")(`type`)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    val __obj = js.Dynamic.literal(argumentDefinitions = argumentDefinitions.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReaderFragment]
   }
 }

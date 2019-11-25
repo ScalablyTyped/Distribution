@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("Kinetic.Group")
 @js.native
-class Group () extends IGroup {
+class Group () extends IContainer {
   def this(config: ObjectOptionsConfig) = this()
 }
 

@@ -81,15 +81,15 @@ object ClusterIconStyle {
     textDecoration: java.lang.String = null,
     textSize: Int | Double = null
   ): ClusterIconStyle = {
-    val __obj = js.Dynamic.literal(height = height, url = url, width = width)
-    if (anchorIcon != null) __obj.updateDynamic("anchorIcon")(anchorIcon)
-    if (anchorText != null) __obj.updateDynamic("anchorText")(anchorText)
-    if (backgroundPosition != null) __obj.updateDynamic("backgroundPosition")(backgroundPosition)
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
-    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle)
-    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight)
-    if (textColor != null) __obj.updateDynamic("textColor")(textColor)
-    if (textDecoration != null) __obj.updateDynamic("textDecoration")(textDecoration)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    if (anchorIcon != null) __obj.updateDynamic("anchorIcon")(anchorIcon.asInstanceOf[js.Any])
+    if (anchorText != null) __obj.updateDynamic("anchorText")(anchorText.asInstanceOf[js.Any])
+    if (backgroundPosition != null) __obj.updateDynamic("backgroundPosition")(backgroundPosition.asInstanceOf[js.Any])
+    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
+    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
+    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
+    if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
+    if (textDecoration != null) __obj.updateDynamic("textDecoration")(textDecoration.asInstanceOf[js.Any])
     if (textSize != null) __obj.updateDynamic("textSize")(textSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterIconStyle]
   }

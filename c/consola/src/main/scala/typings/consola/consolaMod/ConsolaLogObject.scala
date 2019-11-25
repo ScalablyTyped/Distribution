@@ -25,11 +25,11 @@ object ConsolaLogObject {
   ): ConsolaLogObject = {
     val __obj = js.Dynamic.literal()
     if (additional != null) __obj.updateDynamic("additional")(additional.asInstanceOf[js.Any])
-    if (args != null) __obj.updateDynamic("args")(args)
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (tag != null) __obj.updateDynamic("tag")(tag)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConsolaLogObject]
   }
 }

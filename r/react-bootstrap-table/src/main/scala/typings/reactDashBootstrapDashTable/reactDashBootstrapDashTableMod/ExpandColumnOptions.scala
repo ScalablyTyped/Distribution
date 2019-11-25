@@ -40,9 +40,9 @@ object ExpandColumnOptions {
   ): ExpandColumnOptions = {
     val __obj = js.Dynamic.literal()
     if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(expandColumnBeforeSelectColumn)) __obj.updateDynamic("expandColumnBeforeSelectColumn")(expandColumnBeforeSelectColumn)
+    if (!js.isUndefined(expandColumnBeforeSelectColumn)) __obj.updateDynamic("expandColumnBeforeSelectColumn")(expandColumnBeforeSelectColumn.asInstanceOf[js.Any])
     if (expandColumnComponent != null) __obj.updateDynamic("expandColumnComponent")(js.Any.fromFunction1(expandColumnComponent))
-    if (!js.isUndefined(expandColumnVisible)) __obj.updateDynamic("expandColumnVisible")(expandColumnVisible)
+    if (!js.isUndefined(expandColumnVisible)) __obj.updateDynamic("expandColumnVisible")(expandColumnVisible.asInstanceOf[js.Any])
     if (expandedColumnHeaderComponent != null) __obj.updateDynamic("expandedColumnHeaderComponent")(js.Any.fromFunction1(expandedColumnHeaderComponent))
     __obj.asInstanceOf[ExpandColumnOptions]
   }

@@ -19,8 +19,8 @@ object HashPair {
     `type`: typings.handlebars.handlebarsStrings.HashPair,
     value: Expression
   ): HashPair = {
-    val __obj = js.Dynamic.literal(key = key, loc = loc, value = value)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HashPair]
   }
 }

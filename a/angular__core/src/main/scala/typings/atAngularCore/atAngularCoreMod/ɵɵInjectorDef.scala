@@ -21,7 +21,7 @@ object ɵɵInjectorDef {
       Type[_] | ValueProvider | ExistingProvider | FactoryProvider | ConstructorProvider | StaticClassProvider | ClassProvider | js.Array[_]
     ]
   ): ɵɵInjectorDef[T] = {
-    val __obj = js.Dynamic.literal(factory = js.Any.fromFunction0(factory), imports = imports, providers = providers)
+    val __obj = js.Dynamic.literal(factory = js.Any.fromFunction0(factory), imports = imports.asInstanceOf[js.Any], providers = providers.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ɵɵInjectorDef[T]]
   }

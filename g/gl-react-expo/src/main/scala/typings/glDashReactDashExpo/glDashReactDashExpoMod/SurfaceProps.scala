@@ -25,13 +25,13 @@ object SurfaceProps {
     visitor: Visitor = null
   ): SurfaceProps = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (onContextCreate != null) __obj.updateDynamic("onContextCreate")(js.Any.fromFunction1(onContextCreate))
     if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction0(onLoad))
     if (onLoadError != null) __obj.updateDynamic("onLoadError")(js.Any.fromFunction1(onLoadError))
-    if (preload != null) __obj.updateDynamic("preload")(preload)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (visitor != null) __obj.updateDynamic("visitor")(visitor)
+    if (preload != null) __obj.updateDynamic("preload")(preload.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (visitor != null) __obj.updateDynamic("visitor")(visitor.asInstanceOf[js.Any])
     __obj.asInstanceOf[SurfaceProps]
   }
 }

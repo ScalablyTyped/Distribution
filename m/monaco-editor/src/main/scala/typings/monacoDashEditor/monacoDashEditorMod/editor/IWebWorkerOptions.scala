@@ -27,10 +27,10 @@ trait IWebWorkerOptions extends js.Object {
 object IWebWorkerOptions {
   @scala.inline
   def apply(moduleId: String, createData: js.Any = null, host: js.Any = null, label: String = null): IWebWorkerOptions = {
-    val __obj = js.Dynamic.literal(moduleId = moduleId)
-    if (createData != null) __obj.updateDynamic("createData")(createData)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (label != null) __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(moduleId = moduleId.asInstanceOf[js.Any])
+    if (createData != null) __obj.updateDynamic("createData")(createData.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWebWorkerOptions]
   }
 }

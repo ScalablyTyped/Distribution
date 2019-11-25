@@ -18,8 +18,8 @@ object ToolbarClickEventArgs {
   @scala.inline
   def apply(click: String = null, target: JQuery = null): ToolbarClickEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (click != null) __obj.updateDynamic("click")(click)
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (click != null) __obj.updateDynamic("click")(click.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolbarClickEventArgs]
   }
 }

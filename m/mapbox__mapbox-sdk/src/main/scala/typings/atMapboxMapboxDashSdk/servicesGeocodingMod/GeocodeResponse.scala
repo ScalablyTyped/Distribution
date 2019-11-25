@@ -26,8 +26,8 @@ trait GeocodeResponse extends js.Object {
 object GeocodeResponse {
   @scala.inline
   def apply(attribution: String, features: js.Array[GeocodeFeature], query: js.Array[String], `type`: String): GeocodeResponse = {
-    val __obj = js.Dynamic.literal(attribution = attribution, features = features, query = query)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(attribution = attribution.asInstanceOf[js.Any], features = features.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeocodeResponse]
   }
 }

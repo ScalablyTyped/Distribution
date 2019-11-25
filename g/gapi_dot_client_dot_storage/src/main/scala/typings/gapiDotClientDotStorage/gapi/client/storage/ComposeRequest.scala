@@ -18,9 +18,9 @@ object ComposeRequest {
   @scala.inline
   def apply(destination: Object = null, kind: String = null, sourceObjects: js.Array[Anon_Generation] = null): ComposeRequest = {
     val __obj = js.Dynamic.literal()
-    if (destination != null) __obj.updateDynamic("destination")(destination)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (sourceObjects != null) __obj.updateDynamic("sourceObjects")(sourceObjects)
+    if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (sourceObjects != null) __obj.updateDynamic("sourceObjects")(sourceObjects.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComposeRequest]
   }
 }

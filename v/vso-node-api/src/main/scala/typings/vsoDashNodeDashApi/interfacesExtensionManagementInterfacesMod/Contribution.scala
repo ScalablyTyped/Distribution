@@ -44,8 +44,8 @@ object Contribution {
     `type`: String,
     visibleTo: js.Array[String]
   ): Contribution = {
-    val __obj = js.Dynamic.literal(constraints = constraints, description = description, id = id, includes = includes, properties = properties, restrictedTo = restrictedTo, targets = targets, visibleTo = visibleTo)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(constraints = constraints.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], includes = includes.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], restrictedTo = restrictedTo.asInstanceOf[js.Any], targets = targets.asInstanceOf[js.Any], visibleTo = visibleTo.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Contribution]
   }
 }

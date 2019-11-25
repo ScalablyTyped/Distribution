@@ -11,7 +11,7 @@ trait Anon_RequiredOnly extends js.Object {
 object Anon_RequiredOnly {
   @scala.inline
   def apply(requiredOnly: Boolean): Anon_RequiredOnly = {
-    val __obj = js.Dynamic.literal(requiredOnly = requiredOnly)
+    val __obj = js.Dynamic.literal(requiredOnly = requiredOnly.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_RequiredOnly]
   }

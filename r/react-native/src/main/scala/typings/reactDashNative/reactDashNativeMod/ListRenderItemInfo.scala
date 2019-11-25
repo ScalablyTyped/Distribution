@@ -14,7 +14,7 @@ trait ListRenderItemInfo[ItemT] extends js.Object {
 object ListRenderItemInfo {
   @scala.inline
   def apply[ItemT](index: Double, item: ItemT, separators: Anon_Highlight): ListRenderItemInfo[ItemT] = {
-    val __obj = js.Dynamic.literal(index = index, item = item.asInstanceOf[js.Any], separators = separators)
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], separators = separators.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ListRenderItemInfo[ItemT]]
   }

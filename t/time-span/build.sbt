@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "time-span"
-version := "3.1.0-338cff"
+version := "3.1.0-8c79cc"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

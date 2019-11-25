@@ -20,8 +20,8 @@ object IColumnDef {
   @scala.inline
   def apply(exporterPdfAlign: String = null, exporterSuppressExport: js.UndefOr[Boolean] = js.undefined): IColumnDef = {
     val __obj = js.Dynamic.literal()
-    if (exporterPdfAlign != null) __obj.updateDynamic("exporterPdfAlign")(exporterPdfAlign)
-    if (!js.isUndefined(exporterSuppressExport)) __obj.updateDynamic("exporterSuppressExport")(exporterSuppressExport)
+    if (exporterPdfAlign != null) __obj.updateDynamic("exporterPdfAlign")(exporterPdfAlign.asInstanceOf[js.Any])
+    if (!js.isUndefined(exporterSuppressExport)) __obj.updateDynamic("exporterSuppressExport")(exporterSuppressExport.asInstanceOf[js.Any])
     __obj.asInstanceOf[IColumnDef]
   }
 }

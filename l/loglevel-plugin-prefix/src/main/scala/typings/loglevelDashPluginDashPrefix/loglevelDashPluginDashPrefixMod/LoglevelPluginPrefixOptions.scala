@@ -33,7 +33,7 @@ object LoglevelPluginPrefixOptions {
     if (format != null) __obj.updateDynamic("format")(js.Any.fromFunction3(format))
     if (levelFormatter != null) __obj.updateDynamic("levelFormatter")(js.Any.fromFunction1(levelFormatter))
     if (nameFormatter != null) __obj.updateDynamic("nameFormatter")(js.Any.fromFunction1(nameFormatter))
-    if (template != null) __obj.updateDynamic("template")(template)
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     if (timestampFormatter != null) __obj.updateDynamic("timestampFormatter")(js.Any.fromFunction1(timestampFormatter))
     __obj.asInstanceOf[LoglevelPluginPrefixOptions]
   }

@@ -42,7 +42,7 @@ object _SamplingStatisticsDocument {
     Timestamp: Date | String | Double,
     BorrowCount: Int | Double = null
   ): _SamplingStatisticsDocument = {
-    val __obj = js.Dynamic.literal(ClientID = ClientID, RequestCount = RequestCount, RuleName = RuleName, SampledCount = SampledCount, Timestamp = Timestamp.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(ClientID = ClientID.asInstanceOf[js.Any], RequestCount = RequestCount.asInstanceOf[js.Any], RuleName = RuleName.asInstanceOf[js.Any], SampledCount = SampledCount.asInstanceOf[js.Any], Timestamp = Timestamp.asInstanceOf[js.Any])
     if (BorrowCount != null) __obj.updateDynamic("BorrowCount")(BorrowCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[_SamplingStatisticsDocument]
   }

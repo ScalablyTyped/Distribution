@@ -47,11 +47,11 @@ object ServerInfoProperties {
     tokenServiceUrl: String = null
   ): ServerInfoProperties = {
     val __obj = js.Dynamic.literal()
-    if (adminTokenServiceUrl != null) __obj.updateDynamic("adminTokenServiceUrl")(adminTokenServiceUrl)
+    if (adminTokenServiceUrl != null) __obj.updateDynamic("adminTokenServiceUrl")(adminTokenServiceUrl.asInstanceOf[js.Any])
     if (currentVersion != null) __obj.updateDynamic("currentVersion")(currentVersion.asInstanceOf[js.Any])
-    if (server != null) __obj.updateDynamic("server")(server)
+    if (server != null) __obj.updateDynamic("server")(server.asInstanceOf[js.Any])
     if (shortLivedTokenValidity != null) __obj.updateDynamic("shortLivedTokenValidity")(shortLivedTokenValidity.asInstanceOf[js.Any])
-    if (tokenServiceUrl != null) __obj.updateDynamic("tokenServiceUrl")(tokenServiceUrl)
+    if (tokenServiceUrl != null) __obj.updateDynamic("tokenServiceUrl")(tokenServiceUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerInfoProperties]
   }
 }

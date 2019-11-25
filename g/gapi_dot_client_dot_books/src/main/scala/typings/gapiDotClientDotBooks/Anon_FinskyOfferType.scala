@@ -28,10 +28,10 @@ object Anon_FinskyOfferType {
   ): Anon_FinskyOfferType = {
     val __obj = js.Dynamic.literal()
     if (finskyOfferType != null) __obj.updateDynamic("finskyOfferType")(finskyOfferType.asInstanceOf[js.Any])
-    if (!js.isUndefined(giftable)) __obj.updateDynamic("giftable")(giftable)
-    if (listPrice != null) __obj.updateDynamic("listPrice")(listPrice)
-    if (rentalDuration != null) __obj.updateDynamic("rentalDuration")(rentalDuration)
-    if (retailPrice != null) __obj.updateDynamic("retailPrice")(retailPrice)
+    if (!js.isUndefined(giftable)) __obj.updateDynamic("giftable")(giftable.asInstanceOf[js.Any])
+    if (listPrice != null) __obj.updateDynamic("listPrice")(listPrice.asInstanceOf[js.Any])
+    if (rentalDuration != null) __obj.updateDynamic("rentalDuration")(rentalDuration.asInstanceOf[js.Any])
+    if (retailPrice != null) __obj.updateDynamic("retailPrice")(retailPrice.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FinskyOfferType]
   }
 }

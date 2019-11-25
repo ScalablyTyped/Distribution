@@ -36,11 +36,11 @@ object MongoCountPreferences {
     skip: Int | scala.Double = null
   ): MongoCountPreferences = {
     val __obj = js.Dynamic.literal()
-    if (hint != null) __obj.updateDynamic("hint")(hint)
+    if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (maxTimeMS != null) __obj.updateDynamic("maxTimeMS")(maxTimeMS.asInstanceOf[js.Any])
-    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference)
-    if (session != null) __obj.updateDynamic("session")(session)
+    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])
+    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
     if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
     __obj.asInstanceOf[MongoCountPreferences]
   }

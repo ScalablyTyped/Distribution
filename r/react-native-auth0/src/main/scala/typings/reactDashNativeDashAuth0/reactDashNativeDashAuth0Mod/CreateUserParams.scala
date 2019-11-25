@@ -15,9 +15,9 @@ trait CreateUserParams[T] extends js.Object {
 object CreateUserParams {
   @scala.inline
   def apply[T](connection: String, email: String, password: String, metadata: T = null, username: String = null): CreateUserParams[T] = {
-    val __obj = js.Dynamic.literal(connection = connection, email = email, password = password)
+    val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (username != null) __obj.updateDynamic("username")(username)
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateUserParams[T]]
   }
 }

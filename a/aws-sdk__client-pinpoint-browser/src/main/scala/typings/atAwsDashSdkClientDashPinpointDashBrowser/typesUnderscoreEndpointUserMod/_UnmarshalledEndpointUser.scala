@@ -19,8 +19,8 @@ object _UnmarshalledEndpointUser {
   @scala.inline
   def apply(UserAttributes: StringDictionary[js.Array[String]] = null, UserId: String = null): _UnmarshalledEndpointUser = {
     val __obj = js.Dynamic.literal()
-    if (UserAttributes != null) __obj.updateDynamic("UserAttributes")(UserAttributes)
-    if (UserId != null) __obj.updateDynamic("UserId")(UserId)
+    if (UserAttributes != null) __obj.updateDynamic("UserAttributes")(UserAttributes.asInstanceOf[js.Any])
+    if (UserId != null) __obj.updateDynamic("UserId")(UserId.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledEndpointUser]
   }
 }

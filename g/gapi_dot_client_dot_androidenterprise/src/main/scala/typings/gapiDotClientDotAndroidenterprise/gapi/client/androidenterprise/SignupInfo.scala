@@ -17,9 +17,9 @@ object SignupInfo {
   @scala.inline
   def apply(completionToken: String = null, kind: String = null, url: String = null): SignupInfo = {
     val __obj = js.Dynamic.literal()
-    if (completionToken != null) __obj.updateDynamic("completionToken")(completionToken)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (completionToken != null) __obj.updateDynamic("completionToken")(completionToken.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignupInfo]
   }
 }

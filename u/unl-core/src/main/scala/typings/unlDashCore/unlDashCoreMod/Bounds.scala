@@ -15,7 +15,7 @@ trait Bounds extends js.Object {
 object Bounds {
   @scala.inline
   def apply(elevation: Double, elevationType: ElevationType, ne: Point, sw: Point): Bounds = {
-    val __obj = js.Dynamic.literal(elevation = elevation, elevationType = elevationType, ne = ne, sw = sw)
+    val __obj = js.Dynamic.literal(elevation = elevation.asInstanceOf[js.Any], elevationType = elevationType.asInstanceOf[js.Any], ne = ne.asInstanceOf[js.Any], sw = sw.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Bounds]
   }

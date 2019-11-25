@@ -45,11 +45,11 @@ object InsertModalHeaderProps {
   ): InsertModalHeaderProps = {
     val __obj = js.Dynamic.literal()
     if (beforeClose != null) __obj.updateDynamic("beforeClose")(js.Any.fromFunction1(beforeClose))
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(hideClose)) __obj.updateDynamic("hideClose")(hideClose)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideClose)) __obj.updateDynamic("hideClose")(hideClose.asInstanceOf[js.Any])
     if (onModalClose != null) __obj.updateDynamic("onModalClose")(js.Any.fromFunction1(onModalClose))
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsertModalHeaderProps]
   }
 }

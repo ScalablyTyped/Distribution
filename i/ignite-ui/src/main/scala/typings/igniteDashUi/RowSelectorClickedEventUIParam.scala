@@ -47,13 +47,13 @@ object RowSelectorClickedEventUIParam {
     rowSelector: String = null
   ): RowSelectorClickedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (fixedRow != null) __obj.updateDynamic("fixedRow")(fixedRow)
-    if (grid != null) __obj.updateDynamic("grid")(grid)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (row != null) __obj.updateDynamic("row")(row)
+    if (fixedRow != null) __obj.updateDynamic("fixedRow")(fixedRow.asInstanceOf[js.Any])
+    if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
     if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
-    if (rowKey != null) __obj.updateDynamic("rowKey")(rowKey)
-    if (rowSelector != null) __obj.updateDynamic("rowSelector")(rowSelector)
+    if (rowKey != null) __obj.updateDynamic("rowKey")(rowKey.asInstanceOf[js.Any])
+    if (rowSelector != null) __obj.updateDynamic("rowSelector")(rowSelector.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowSelectorClickedEventUIParam]
   }
 }

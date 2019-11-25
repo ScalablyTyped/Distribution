@@ -34,7 +34,7 @@ object IView {
     x: Double,
     y: Double
   ): IView = {
-    val __obj = js.Dynamic.literal(dom = dom, getContext = js.Any.fromFunction1(getContext), height = height, initCanvas = js.Any.fromFunction0(initCanvas), offset = offset, styleHeight = styleHeight, styleWidth = styleWidth, width = width, x = x, y = y)
+    val __obj = js.Dynamic.literal(dom = dom.asInstanceOf[js.Any], getContext = js.Any.fromFunction1(getContext), height = height.asInstanceOf[js.Any], initCanvas = js.Any.fromFunction0(initCanvas), offset = offset.asInstanceOf[js.Any], styleHeight = styleHeight.asInstanceOf[js.Any], styleWidth = styleWidth.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IView]
   }

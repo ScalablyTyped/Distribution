@@ -34,12 +34,12 @@ object IMethodOptions {
     uninterpretedOption: js.Array[IUninterpretedOption] = null
   ): IMethodOptions = {
     val __obj = js.Dynamic.literal()
-    if (`.google.api.http` != null) __obj.updateDynamic(".google.api.http")(`.google.api.http`)
-    if (`.google.api.methodSignature` != null) __obj.updateDynamic(".google.api.methodSignature")(`.google.api.methodSignature`)
-    if (`.google.longrunning.operationInfo` != null) __obj.updateDynamic(".google.longrunning.operationInfo")(`.google.longrunning.operationInfo`)
-    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated)
-    if (idempotencyLevel != null) __obj.updateDynamic("idempotencyLevel")(idempotencyLevel)
-    if (uninterpretedOption != null) __obj.updateDynamic("uninterpretedOption")(uninterpretedOption)
+    if (`.google.api.http` != null) __obj.updateDynamic(".google.api.http")(`.google.api.http`.asInstanceOf[js.Any])
+    if (`.google.api.methodSignature` != null) __obj.updateDynamic(".google.api.methodSignature")(`.google.api.methodSignature`.asInstanceOf[js.Any])
+    if (`.google.longrunning.operationInfo` != null) __obj.updateDynamic(".google.longrunning.operationInfo")(`.google.longrunning.operationInfo`.asInstanceOf[js.Any])
+    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated.asInstanceOf[js.Any])
+    if (idempotencyLevel != null) __obj.updateDynamic("idempotencyLevel")(idempotencyLevel.asInstanceOf[js.Any])
+    if (uninterpretedOption != null) __obj.updateDynamic("uninterpretedOption")(uninterpretedOption.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMethodOptions]
   }
 }

@@ -14,9 +14,9 @@ trait AddPageletConfig extends js.Object {
 object AddPageletConfig {
   @scala.inline
   def apply(id: String, `lazy`: js.UndefOr[Boolean] = js.undefined, mode: mode = null): AddPageletConfig = {
-    val __obj = js.Dynamic.literal(id = id)
-    if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`)
-    if (mode != null) __obj.updateDynamic("mode")(mode)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddPageletConfig]
   }
 }

@@ -13,8 +13,8 @@ object ShippingsettingsGetSupportedHolidaysResponse {
   @scala.inline
   def apply(holidays: js.Array[HolidaysHoliday] = null, kind: String = null): ShippingsettingsGetSupportedHolidaysResponse = {
     val __obj = js.Dynamic.literal()
-    if (holidays != null) __obj.updateDynamic("holidays")(holidays)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (holidays != null) __obj.updateDynamic("holidays")(holidays.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShippingsettingsGetSupportedHolidaysResponse]
   }
 }

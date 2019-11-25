@@ -33,11 +33,11 @@ object DistributionUpdate {
     sumOfSquares: Int | Double = null
   ): DistributionUpdate = {
     val __obj = js.Dynamic.literal()
-    if (count != null) __obj.updateDynamic("count")(count)
-    if (histogram != null) __obj.updateDynamic("histogram")(histogram)
-    if (max != null) __obj.updateDynamic("max")(max)
-    if (min != null) __obj.updateDynamic("min")(min)
-    if (sum != null) __obj.updateDynamic("sum")(sum)
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (histogram != null) __obj.updateDynamic("histogram")(histogram.asInstanceOf[js.Any])
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (sum != null) __obj.updateDynamic("sum")(sum.asInstanceOf[js.Any])
     if (sumOfSquares != null) __obj.updateDynamic("sumOfSquares")(sumOfSquares.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistributionUpdate]
   }

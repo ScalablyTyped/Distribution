@@ -21,10 +21,10 @@ object TreeViewDragendEvent {
     dropPosition: String = null,
     sourceNode: Element = null
   ): TreeViewDragendEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (destinationNode != null) __obj.updateDynamic("destinationNode")(destinationNode)
-    if (dropPosition != null) __obj.updateDynamic("dropPosition")(dropPosition)
-    if (sourceNode != null) __obj.updateDynamic("sourceNode")(sourceNode)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (destinationNode != null) __obj.updateDynamic("destinationNode")(destinationNode.asInstanceOf[js.Any])
+    if (dropPosition != null) __obj.updateDynamic("dropPosition")(dropPosition.asInstanceOf[js.Any])
+    if (sourceNode != null) __obj.updateDynamic("sourceNode")(sourceNode.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeViewDragendEvent]
   }
 }

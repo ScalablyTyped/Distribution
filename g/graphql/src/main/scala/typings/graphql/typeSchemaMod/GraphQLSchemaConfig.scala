@@ -39,7 +39,7 @@ object GraphQLSchemaConfig {
   ): GraphQLSchemaConfig = {
     val __obj = js.Dynamic.literal()
     if (allowedLegacyNames != null) __obj.updateDynamic("allowedLegacyNames")(allowedLegacyNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(assumeValid)) __obj.updateDynamic("assumeValid")(assumeValid)
+    if (!js.isUndefined(assumeValid)) __obj.updateDynamic("assumeValid")(assumeValid.asInstanceOf[js.Any])
     if (astNode != null) __obj.updateDynamic("astNode")(astNode.asInstanceOf[js.Any])
     if (directives != null) __obj.updateDynamic("directives")(directives.asInstanceOf[js.Any])
     if (extensionASTNodes != null) __obj.updateDynamic("extensionASTNodes")(extensionASTNodes.asInstanceOf[js.Any])

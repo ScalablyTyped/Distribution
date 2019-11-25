@@ -26,10 +26,10 @@ object SvgCumulativeIconSet {
     viewBox: String = null,
     waitDuration: Int | Double = null
   ): SvgCumulativeIconSet = {
-    val __obj = js.Dynamic.literal(cumulative = cumulative)
+    val __obj = js.Dynamic.literal(cumulative = cumulative.asInstanceOf[js.Any])
     if (iconIdParser != null) __obj.updateDynamic("iconIdParser")(js.Any.fromFunction2(iconIdParser))
     if (iconSize != null) __obj.updateDynamic("iconSize")(iconSize.asInstanceOf[js.Any])
-    if (viewBox != null) __obj.updateDynamic("viewBox")(viewBox)
+    if (viewBox != null) __obj.updateDynamic("viewBox")(viewBox.asInstanceOf[js.Any])
     if (waitDuration != null) __obj.updateDynamic("waitDuration")(waitDuration.asInstanceOf[js.Any])
     __obj.asInstanceOf[SvgCumulativeIconSet]
   }

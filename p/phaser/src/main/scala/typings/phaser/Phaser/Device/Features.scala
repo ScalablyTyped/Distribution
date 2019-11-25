@@ -77,7 +77,7 @@ object Features {
     webGL: Boolean,
     worker: Boolean
   ): Features = {
-    val __obj = js.Dynamic.literal(canvas = canvas, canvasBitBltShift = canvasBitBltShift, file = file, fileSystem = fileSystem, getUserMedia = getUserMedia, littleEndian = littleEndian, localStorage = localStorage, pointerLock = pointerLock, support32bit = support32bit, vibration = vibration, webGL = webGL, worker = worker)
+    val __obj = js.Dynamic.literal(canvas = canvas.asInstanceOf[js.Any], canvasBitBltShift = canvasBitBltShift.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], fileSystem = fileSystem.asInstanceOf[js.Any], getUserMedia = getUserMedia.asInstanceOf[js.Any], littleEndian = littleEndian.asInstanceOf[js.Any], localStorage = localStorage.asInstanceOf[js.Any], pointerLock = pointerLock.asInstanceOf[js.Any], support32bit = support32bit.asInstanceOf[js.Any], vibration = vibration.asInstanceOf[js.Any], webGL = webGL.asInstanceOf[js.Any], worker = worker.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Features]
   }

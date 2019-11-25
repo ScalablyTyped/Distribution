@@ -30,15 +30,15 @@ object SpreadsheetSheetRowCellValidation {
     `type`: String = null
   ): SpreadsheetSheetRowCellValidation = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowNulls)) __obj.updateDynamic("allowNulls")(allowNulls)
-    if (comparerType != null) __obj.updateDynamic("comparerType")(comparerType)
-    if (dataType != null) __obj.updateDynamic("dataType")(dataType)
-    if (from != null) __obj.updateDynamic("from")(from)
-    if (messageTemplate != null) __obj.updateDynamic("messageTemplate")(messageTemplate)
-    if (!js.isUndefined(showButton)) __obj.updateDynamic("showButton")(showButton)
-    if (titleTemplate != null) __obj.updateDynamic("titleTemplate")(titleTemplate)
-    if (to != null) __obj.updateDynamic("to")(to)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(allowNulls)) __obj.updateDynamic("allowNulls")(allowNulls.asInstanceOf[js.Any])
+    if (comparerType != null) __obj.updateDynamic("comparerType")(comparerType.asInstanceOf[js.Any])
+    if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (messageTemplate != null) __obj.updateDynamic("messageTemplate")(messageTemplate.asInstanceOf[js.Any])
+    if (!js.isUndefined(showButton)) __obj.updateDynamic("showButton")(showButton.asInstanceOf[js.Any])
+    if (titleTemplate != null) __obj.updateDynamic("titleTemplate")(titleTemplate.asInstanceOf[js.Any])
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpreadsheetSheetRowCellValidation]
   }
 }

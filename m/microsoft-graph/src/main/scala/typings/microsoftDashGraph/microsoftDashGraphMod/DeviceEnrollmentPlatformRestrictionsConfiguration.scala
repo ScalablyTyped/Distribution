@@ -35,19 +35,19 @@ object DeviceEnrollmentPlatformRestrictionsConfiguration {
     windowsRestriction: DeviceEnrollmentPlatformRestriction = null
   ): DeviceEnrollmentPlatformRestrictionsConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (androidRestriction != null) __obj.updateDynamic("androidRestriction")(androidRestriction)
-    if (assignments != null) __obj.updateDynamic("assignments")(assignments)
-    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (iosRestriction != null) __obj.updateDynamic("iosRestriction")(iosRestriction)
-    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime)
-    if (macOSRestriction != null) __obj.updateDynamic("macOSRestriction")(macOSRestriction)
+    if (androidRestriction != null) __obj.updateDynamic("androidRestriction")(androidRestriction.asInstanceOf[js.Any])
+    if (assignments != null) __obj.updateDynamic("assignments")(assignments.asInstanceOf[js.Any])
+    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (iosRestriction != null) __obj.updateDynamic("iosRestriction")(iosRestriction.asInstanceOf[js.Any])
+    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
+    if (macOSRestriction != null) __obj.updateDynamic("macOSRestriction")(macOSRestriction.asInstanceOf[js.Any])
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (windowsMobileRestriction != null) __obj.updateDynamic("windowsMobileRestriction")(windowsMobileRestriction)
-    if (windowsRestriction != null) __obj.updateDynamic("windowsRestriction")(windowsRestriction)
+    if (windowsMobileRestriction != null) __obj.updateDynamic("windowsMobileRestriction")(windowsMobileRestriction.asInstanceOf[js.Any])
+    if (windowsRestriction != null) __obj.updateDynamic("windowsRestriction")(windowsRestriction.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceEnrollmentPlatformRestrictionsConfiguration]
   }
 }

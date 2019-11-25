@@ -12,7 +12,7 @@ trait DirectionChangedArgs extends js.Object {
 object DirectionChangedArgs {
   @scala.inline
   def apply(dir: String, isRTL: Double): DirectionChangedArgs = {
-    val __obj = js.Dynamic.literal(dir = dir, isRTL = isRTL)
+    val __obj = js.Dynamic.literal(dir = dir.asInstanceOf[js.Any], isRTL = isRTL.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DirectionChangedArgs]
   }

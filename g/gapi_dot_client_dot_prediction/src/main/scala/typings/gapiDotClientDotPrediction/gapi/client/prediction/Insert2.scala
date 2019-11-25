@@ -46,17 +46,17 @@ object Insert2 {
     trainingStatus: String = null
   ): Insert2 = {
     val __obj = js.Dynamic.literal()
-    if (created != null) __obj.updateDynamic("created")(created)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (modelInfo != null) __obj.updateDynamic("modelInfo")(modelInfo)
-    if (modelType != null) __obj.updateDynamic("modelType")(modelType)
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
-    if (storageDataLocation != null) __obj.updateDynamic("storageDataLocation")(storageDataLocation)
-    if (storagePMMLLocation != null) __obj.updateDynamic("storagePMMLLocation")(storagePMMLLocation)
-    if (storagePMMLModelLocation != null) __obj.updateDynamic("storagePMMLModelLocation")(storagePMMLModelLocation)
-    if (trainingComplete != null) __obj.updateDynamic("trainingComplete")(trainingComplete)
-    if (trainingStatus != null) __obj.updateDynamic("trainingStatus")(trainingStatus)
+    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (modelInfo != null) __obj.updateDynamic("modelInfo")(modelInfo.asInstanceOf[js.Any])
+    if (modelType != null) __obj.updateDynamic("modelType")(modelType.asInstanceOf[js.Any])
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
+    if (storageDataLocation != null) __obj.updateDynamic("storageDataLocation")(storageDataLocation.asInstanceOf[js.Any])
+    if (storagePMMLLocation != null) __obj.updateDynamic("storagePMMLLocation")(storagePMMLLocation.asInstanceOf[js.Any])
+    if (storagePMMLModelLocation != null) __obj.updateDynamic("storagePMMLModelLocation")(storagePMMLModelLocation.asInstanceOf[js.Any])
+    if (trainingComplete != null) __obj.updateDynamic("trainingComplete")(trainingComplete.asInstanceOf[js.Any])
+    if (trainingStatus != null) __obj.updateDynamic("trainingStatus")(trainingStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[Insert2]
   }
 }

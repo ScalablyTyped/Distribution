@@ -35,15 +35,15 @@ object ColorButtonProps {
     stretchy: js.UndefOr[Boolean] = js.undefined
   ): ColorButtonProps = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align)
-    if (color != null) __obj.updateDynamic("color")(color)
+    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
-    if (expand != null) __obj.updateDynamic("expand")(expand)
-    if (label != null) __obj.updateDynamic("label")(label)
+    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
-    if (span != null) __obj.updateDynamic("span")(span)
-    if (!js.isUndefined(stretchy)) __obj.updateDynamic("stretchy")(stretchy)
+    if (span != null) __obj.updateDynamic("span")(span.asInstanceOf[js.Any])
+    if (!js.isUndefined(stretchy)) __obj.updateDynamic("stretchy")(stretchy.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColorButtonProps]
   }
 }

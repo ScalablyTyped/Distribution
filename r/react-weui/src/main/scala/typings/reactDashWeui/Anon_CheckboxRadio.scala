@@ -25,7 +25,7 @@ object Anon_CheckboxRadio {
     vcode: Boolean,
     warn: Boolean
   ): Anon_CheckboxRadio = {
-    val __obj = js.Dynamic.literal(checkbox = checkbox, radio = radio, select = select, selectPos = selectPos, switch = switch, vcode = vcode, warn = warn)
+    val __obj = js.Dynamic.literal(checkbox = checkbox.asInstanceOf[js.Any], radio = radio.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any], selectPos = selectPos.asInstanceOf[js.Any], switch = switch.asInstanceOf[js.Any], vcode = vcode.asInstanceOf[js.Any], warn = warn.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CheckboxRadio]
   }

@@ -20,10 +20,10 @@ object ClaimHistory {
     uploaderChannelId: String = null
   ): ClaimHistory = {
     val __obj = js.Dynamic.literal()
-    if (event != null) __obj.updateDynamic("event")(event)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (uploaderChannelId != null) __obj.updateDynamic("uploaderChannelId")(uploaderChannelId)
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (uploaderChannelId != null) __obj.updateDynamic("uploaderChannelId")(uploaderChannelId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClaimHistory]
   }
 }

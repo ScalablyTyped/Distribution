@@ -13,8 +13,8 @@ object SaveWidgetOptions {
   @scala.inline
   def apply(attribution: Attribution = null, place: Place = null): SaveWidgetOptions = {
     val __obj = js.Dynamic.literal()
-    if (attribution != null) __obj.updateDynamic("attribution")(attribution)
-    if (place != null) __obj.updateDynamic("place")(place)
+    if (attribution != null) __obj.updateDynamic("attribution")(attribution.asInstanceOf[js.Any])
+    if (place != null) __obj.updateDynamic("place")(place.asInstanceOf[js.Any])
     __obj.asInstanceOf[SaveWidgetOptions]
   }
 }

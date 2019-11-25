@@ -594,7 +594,7 @@ object nodeStrings {
        with Utf8AsciiBinaryEncoding
   
   @js.native
-  sealed trait buffer extends js.Object
+  sealed trait buffer_ extends js.Object
   
   @js.native
   sealed trait change extends js.Object
@@ -1303,7 +1303,7 @@ object nodeStrings {
   @scala.inline
   def binary: binary = "binary".asInstanceOf[binary]
   @scala.inline
-  def buffer: buffer = "buffer".asInstanceOf[buffer]
+  def buffer_ : buffer_ = "buffer".asInstanceOf[buffer_]
   @scala.inline
   def change: change = "change".asInstanceOf[change]
   @scala.inline

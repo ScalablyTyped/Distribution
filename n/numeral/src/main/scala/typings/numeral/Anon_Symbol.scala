@@ -11,7 +11,7 @@ trait Anon_Symbol extends js.Object {
 object Anon_Symbol {
   @scala.inline
   def apply(symbol: String): Anon_Symbol = {
-    val __obj = js.Dynamic.literal(symbol = symbol)
+    val __obj = js.Dynamic.literal(symbol = symbol.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Symbol]
   }

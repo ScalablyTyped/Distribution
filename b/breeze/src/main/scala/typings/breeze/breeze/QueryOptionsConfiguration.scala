@@ -13,8 +13,8 @@ object QueryOptionsConfiguration {
   @scala.inline
   def apply(fetchStrategy: FetchStrategySymbol = null, mergeStrategy: MergeStrategySymbol = null): QueryOptionsConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (fetchStrategy != null) __obj.updateDynamic("fetchStrategy")(fetchStrategy)
-    if (mergeStrategy != null) __obj.updateDynamic("mergeStrategy")(mergeStrategy)
+    if (fetchStrategy != null) __obj.updateDynamic("fetchStrategy")(fetchStrategy.asInstanceOf[js.Any])
+    if (mergeStrategy != null) __obj.updateDynamic("mergeStrategy")(mergeStrategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryOptionsConfiguration]
   }
 }

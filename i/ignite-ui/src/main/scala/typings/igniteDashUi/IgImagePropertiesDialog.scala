@@ -55,17 +55,17 @@ object IgImagePropertiesDialog {
     target: js.Any = null
   ): IgImagePropertiesDialog = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (apply != null) __obj.updateDynamic("apply")(js.Any.fromFunction2(apply))
     if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction2(cancel))
     if (hide != null) __obj.updateDynamic("hide")(js.Any.fromFunction2(hide))
-    if (!js.isUndefined(isHidden)) __obj.updateDynamic("isHidden")(isHidden)
-    if (item != null) __obj.updateDynamic("item")(item)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (!js.isUndefined(isHidden)) __obj.updateDynamic("isHidden")(isHidden.asInstanceOf[js.Any])
+    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
     if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction2(show))
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgImagePropertiesDialog]
   }
 }

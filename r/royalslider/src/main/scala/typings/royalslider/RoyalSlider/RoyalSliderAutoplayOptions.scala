@@ -33,9 +33,9 @@ object RoyalSliderAutoplayOptions {
   ): RoyalSliderAutoplayOptions = {
     val __obj = js.Dynamic.literal()
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (!js.isUndefined(pauseOnHover)) __obj.updateDynamic("pauseOnHover")(pauseOnHover)
-    if (!js.isUndefined(stopAtAction)) __obj.updateDynamic("stopAtAction")(stopAtAction)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(pauseOnHover)) __obj.updateDynamic("pauseOnHover")(pauseOnHover.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopAtAction)) __obj.updateDynamic("stopAtAction")(stopAtAction.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoyalSliderAutoplayOptions]
   }
 }

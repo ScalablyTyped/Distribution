@@ -23,11 +23,11 @@ object PartialIEffects {
     roundedCorner2: String = null
   ): PartialIEffects = {
     val __obj = js.Dynamic.literal()
-    if (elevation16 != null) __obj.updateDynamic("elevation16")(elevation16)
-    if (elevation4 != null) __obj.updateDynamic("elevation4")(elevation4)
-    if (elevation64 != null) __obj.updateDynamic("elevation64")(elevation64)
-    if (elevation8 != null) __obj.updateDynamic("elevation8")(elevation8)
-    if (roundedCorner2 != null) __obj.updateDynamic("roundedCorner2")(roundedCorner2)
+    if (elevation16 != null) __obj.updateDynamic("elevation16")(elevation16.asInstanceOf[js.Any])
+    if (elevation4 != null) __obj.updateDynamic("elevation4")(elevation4.asInstanceOf[js.Any])
+    if (elevation64 != null) __obj.updateDynamic("elevation64")(elevation64.asInstanceOf[js.Any])
+    if (elevation8 != null) __obj.updateDynamic("elevation8")(elevation8.asInstanceOf[js.Any])
+    if (roundedCorner2 != null) __obj.updateDynamic("roundedCorner2")(roundedCorner2.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialIEffects]
   }
 }

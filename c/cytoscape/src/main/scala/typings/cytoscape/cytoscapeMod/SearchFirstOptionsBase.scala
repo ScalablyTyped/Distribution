@@ -22,7 +22,7 @@ object SearchFirstOptionsBase {
     visit: (/* v */ NodeSingular, /* e */ EdgeSingular, /* u */ NodeSingular, /* i */ Double, /* depth */ Double) => Boolean | Unit = null
   ): SearchFirstOptionsBase = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(directed)) __obj.updateDynamic("directed")(directed)
+    if (!js.isUndefined(directed)) __obj.updateDynamic("directed")(directed.asInstanceOf[js.Any])
     if (visit != null) __obj.updateDynamic("visit")(js.Any.fromFunction5(visit))
     __obj.asInstanceOf[SearchFirstOptionsBase]
   }

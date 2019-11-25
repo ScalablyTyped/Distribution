@@ -12,7 +12,7 @@ object ConferenceProperties {
   @scala.inline
   def apply(allowedConferenceSolutionTypes: js.Array[String] = null): ConferenceProperties = {
     val __obj = js.Dynamic.literal()
-    if (allowedConferenceSolutionTypes != null) __obj.updateDynamic("allowedConferenceSolutionTypes")(allowedConferenceSolutionTypes)
+    if (allowedConferenceSolutionTypes != null) __obj.updateDynamic("allowedConferenceSolutionTypes")(allowedConferenceSolutionTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConferenceProperties]
   }
 }

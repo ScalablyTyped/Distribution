@@ -12,7 +12,7 @@ object ListSmimeInfoResponse {
   @scala.inline
   def apply(smimeInfo: js.Array[SmimeInfo] = null): ListSmimeInfoResponse = {
     val __obj = js.Dynamic.literal()
-    if (smimeInfo != null) __obj.updateDynamic("smimeInfo")(smimeInfo)
+    if (smimeInfo != null) __obj.updateDynamic("smimeInfo")(smimeInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListSmimeInfoResponse]
   }
 }

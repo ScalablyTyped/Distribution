@@ -15,7 +15,7 @@ object PerfSample {
   @scala.inline
   def apply(sampleTime: Timestamp = null, value: Int | Double = null): PerfSample = {
     val __obj = js.Dynamic.literal()
-    if (sampleTime != null) __obj.updateDynamic("sampleTime")(sampleTime)
+    if (sampleTime != null) __obj.updateDynamic("sampleTime")(sampleTime.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PerfSample]
   }

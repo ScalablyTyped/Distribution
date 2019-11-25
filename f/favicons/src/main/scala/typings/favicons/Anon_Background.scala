@@ -12,7 +12,7 @@ trait Anon_Background extends js.Object {
 object Anon_Background {
   @scala.inline
   def apply(background: String, offset: String): Anon_Background = {
-    val __obj = js.Dynamic.literal(background = background, offset = offset)
+    val __obj = js.Dynamic.literal(background = background.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Background]
   }

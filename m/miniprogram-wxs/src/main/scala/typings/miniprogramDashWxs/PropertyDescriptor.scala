@@ -24,12 +24,12 @@ object PropertyDescriptor {
     writable: js.UndefOr[scala.Boolean] = js.undefined
   ): PropertyDescriptor = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(configurable)) __obj.updateDynamic("configurable")(configurable)
-    if (!js.isUndefined(enumerable)) __obj.updateDynamic("enumerable")(enumerable)
+    if (!js.isUndefined(configurable)) __obj.updateDynamic("configurable")(configurable.asInstanceOf[js.Any])
+    if (!js.isUndefined(enumerable)) __obj.updateDynamic("enumerable")(enumerable.asInstanceOf[js.Any])
     if (get != null) __obj.updateDynamic("get")(js.Any.fromFunction0(get))
     if (set != null) __obj.updateDynamic("set")(js.Any.fromFunction1(set))
-    if (value != null) __obj.updateDynamic("value")(value)
-    if (!js.isUndefined(writable)) __obj.updateDynamic("writable")(writable)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(writable)) __obj.updateDynamic("writable")(writable.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropertyDescriptor]
   }
 }

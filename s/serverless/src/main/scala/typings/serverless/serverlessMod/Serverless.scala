@@ -38,7 +38,7 @@ object Serverless {
     version: String,
     yamlParser: typings.serverless.classesYamlParserMod.^
   ): Serverless = {
-    val __obj = js.Dynamic.literal(cli = cli, config = config, getProvider = js.Any.fromFunction1(getProvider), getVersion = js.Any.fromFunction0(getVersion), init = js.Any.fromFunction0(init), pluginManager = pluginManager, run = js.Any.fromFunction0(run), serverlessDirPath = serverlessDirPath, service = service, setProvider = js.Any.fromFunction2(setProvider), utils = utils, version = version, yamlParser = yamlParser)
+    val __obj = js.Dynamic.literal(cli = cli.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], getProvider = js.Any.fromFunction1(getProvider), getVersion = js.Any.fromFunction0(getVersion), init = js.Any.fromFunction0(init), pluginManager = pluginManager.asInstanceOf[js.Any], run = js.Any.fromFunction0(run), serverlessDirPath = serverlessDirPath.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], setProvider = js.Any.fromFunction2(setProvider), utils = utils.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], yamlParser = yamlParser.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Serverless]
   }

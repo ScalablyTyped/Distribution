@@ -14,9 +14,9 @@ object RenderConfig {
   @scala.inline
   def apply(attributes: js.Any = null, element: String = null, style: js.Any = null): RenderConfig = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderConfig]
   }
 }

@@ -17,8 +17,8 @@ object GraphQLOperationLoading {
     cacheValuePromise: js.Promise[GraphQLCacheValue[T]],
     cacheValue: GraphQLCacheValue[T] = null
   ): GraphQLOperationLoading[T] = {
-    val __obj = js.Dynamic.literal(cacheKey = cacheKey, cacheValuePromise = cacheValuePromise)
-    if (cacheValue != null) __obj.updateDynamic("cacheValue")(cacheValue)
+    val __obj = js.Dynamic.literal(cacheKey = cacheKey.asInstanceOf[js.Any], cacheValuePromise = cacheValuePromise.asInstanceOf[js.Any])
+    if (cacheValue != null) __obj.updateDynamic("cacheValue")(cacheValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLOperationLoading[T]]
   }
 }

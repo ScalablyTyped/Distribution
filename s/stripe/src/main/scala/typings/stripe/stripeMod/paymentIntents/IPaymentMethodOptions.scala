@@ -15,7 +15,7 @@ object IPaymentMethodOptions {
   @scala.inline
   def apply(card: IPaymentMethodCardOptions = null): IPaymentMethodOptions = {
     val __obj = js.Dynamic.literal()
-    if (card != null) __obj.updateDynamic("card")(card)
+    if (card != null) __obj.updateDynamic("card")(card.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPaymentMethodOptions]
   }
 }

@@ -29,8 +29,8 @@ object RelationshipMeta {
     parentType: Model,
     `type`: String
   ): RelationshipMeta[Model] = {
-    val __obj = js.Dynamic.literal(isRelationship = isRelationship, key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name, options = options, parentType = parentType.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(isRelationship = isRelationship.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], parentType = parentType.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelationshipMeta[Model]]
   }
 }

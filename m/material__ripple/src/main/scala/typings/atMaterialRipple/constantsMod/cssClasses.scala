@@ -32,8 +32,8 @@ object cssClasses {
     UNBOUNDED: `mdc-ripple-upgraded--unbounded`,
     StringDictionary: StringDictionary[String] = null
   ): cssClasses = {
-    val __obj = js.Dynamic.literal(BG_FOCUSED = BG_FOCUSED, FG_ACTIVATION = FG_ACTIVATION, FG_DEACTIVATION = FG_DEACTIVATION, ROOT = ROOT, UNBOUNDED = UNBOUNDED)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(BG_FOCUSED = BG_FOCUSED.asInstanceOf[js.Any], FG_ACTIVATION = FG_ACTIVATION.asInstanceOf[js.Any], FG_DEACTIVATION = FG_DEACTIVATION.asInstanceOf[js.Any], ROOT = ROOT.asInstanceOf[js.Any], UNBOUNDED = UNBOUNDED.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[cssClasses]
   }
 }

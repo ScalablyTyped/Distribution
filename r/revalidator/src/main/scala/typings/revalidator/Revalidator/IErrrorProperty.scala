@@ -12,7 +12,7 @@ trait IErrrorProperty extends js.Object {
 object IErrrorProperty {
   @scala.inline
   def apply(message: String, property: String): IErrrorProperty = {
-    val __obj = js.Dynamic.literal(message = message, property = property)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IErrrorProperty]
   }

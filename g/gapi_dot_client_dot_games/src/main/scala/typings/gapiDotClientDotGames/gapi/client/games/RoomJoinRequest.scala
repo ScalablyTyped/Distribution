@@ -24,10 +24,10 @@ object RoomJoinRequest {
     networkDiagnostics: NetworkDiagnostics = null
   ): RoomJoinRequest = {
     val __obj = js.Dynamic.literal()
-    if (capabilities != null) __obj.updateDynamic("capabilities")(capabilities)
-    if (clientAddress != null) __obj.updateDynamic("clientAddress")(clientAddress)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (networkDiagnostics != null) __obj.updateDynamic("networkDiagnostics")(networkDiagnostics)
+    if (capabilities != null) __obj.updateDynamic("capabilities")(capabilities.asInstanceOf[js.Any])
+    if (clientAddress != null) __obj.updateDynamic("clientAddress")(clientAddress.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (networkDiagnostics != null) __obj.updateDynamic("networkDiagnostics")(networkDiagnostics.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoomJoinRequest]
   }
 }

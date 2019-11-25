@@ -1,8 +1,6 @@
 package typings.dojo.dojox.widget
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValueProperty
 import typings.dojo.dijit.layout.ContentPane
 import typings.dojo.dojoStrings.canGoBack
 import typings.dojo.dojoStrings.doneFunction
@@ -63,10 +61,34 @@ class WizardPane () extends ContentPane {
   @JSName("set")
   def set_passFunction(property: passFunction, value: String): Unit = js.native
   @JSName("watch")
-  def watch_canGoBack(property: canGoBack, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_canGoBack(
+    property: canGoBack,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_doneFunction(property: doneFunction, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_doneFunction(
+    property: doneFunction,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_passFunction(property: passFunction, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_passFunction(
+    property: passFunction,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

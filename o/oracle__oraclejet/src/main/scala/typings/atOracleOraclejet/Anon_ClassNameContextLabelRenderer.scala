@@ -28,7 +28,7 @@ object Anon_ClassNameContextLabelRenderer {
     renderer: /* context */ HeaderContext[K, D] => Anon_InsertHTMLElement | Unit | Null = null,
     style: (js.Function1[/* context */ HeaderContext[K, D], String | Unit | Null]) | String = null
   ): Anon_ClassNameContextLabelRenderer[K, D] = {
-    val __obj = js.Dynamic.literal(label = label, resizable = resizable)
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], resizable = resizable.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (renderer != null) __obj.updateDynamic("renderer")(js.Any.fromFunction1(renderer))
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])

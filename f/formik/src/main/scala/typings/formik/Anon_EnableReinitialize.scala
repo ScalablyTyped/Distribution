@@ -19,7 +19,7 @@ object Anon_EnableReinitialize {
     validateOnBlur: Boolean,
     validateOnChange: Boolean
   ): Anon_EnableReinitialize = {
-    val __obj = js.Dynamic.literal(enableReinitialize = enableReinitialize, isInitialValid = isInitialValid, validateOnBlur = validateOnBlur, validateOnChange = validateOnChange)
+    val __obj = js.Dynamic.literal(enableReinitialize = enableReinitialize.asInstanceOf[js.Any], isInitialValid = isInitialValid.asInstanceOf[js.Any], validateOnBlur = validateOnBlur.asInstanceOf[js.Any], validateOnChange = validateOnChange.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EnableReinitialize]
   }

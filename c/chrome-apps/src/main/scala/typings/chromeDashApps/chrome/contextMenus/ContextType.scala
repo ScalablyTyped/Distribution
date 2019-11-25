@@ -1,6 +1,6 @@
 package typings.chromeDashApps.chrome.contextMenus
 
-import typings.chromeDashApps.chromeDashAppsStrings.all
+import typings.chromeDashApps.chromeDashAppsStrings.all_
 import typings.chromeDashApps.chromeDashAppsStrings.browser_action
 import typings.chromeDashApps.chromeDashAppsStrings.editable
 import typings.chromeDashApps.chromeDashAppsStrings.frame
@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.contextMenus.ContextType")
 @js.native
 object ContextType extends js.Object {
-  var ALL: all = js.native
+  var ALL: all_ = js.native
   var AUDIO: typings.chromeDashApps.chromeDashAppsStrings.audio = js.native
   var BROWSER_ACTION: browser_action = js.native
   var EDITABLE: editable = js.native

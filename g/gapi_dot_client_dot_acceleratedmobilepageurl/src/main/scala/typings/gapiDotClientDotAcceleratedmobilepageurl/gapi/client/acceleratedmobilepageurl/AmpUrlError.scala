@@ -17,9 +17,9 @@ object AmpUrlError {
   @scala.inline
   def apply(errorCode: String = null, errorMessage: String = null, originalUrl: String = null): AmpUrlError = {
     val __obj = js.Dynamic.literal()
-    if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode)
-    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage)
-    if (originalUrl != null) __obj.updateDynamic("originalUrl")(originalUrl)
+    if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode.asInstanceOf[js.Any])
+    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
+    if (originalUrl != null) __obj.updateDynamic("originalUrl")(originalUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[AmpUrlError]
   }
 }

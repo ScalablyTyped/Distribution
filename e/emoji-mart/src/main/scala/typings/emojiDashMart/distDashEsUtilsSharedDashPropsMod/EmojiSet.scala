@@ -14,3 +14,20 @@ import scala.scalajs.js.annotation._
 */
 trait EmojiSet extends js.Object
 
+object EmojiSet {
+  @scala.inline
+  def apple: typings.emojiDashMart.emojiDashMartStrings.apple = this.cast("apple")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def emojione: typings.emojiDashMart.emojiDashMartStrings.emojione = this.cast("emojione")
+  @scala.inline
+  def facebook: typings.emojiDashMart.emojiDashMartStrings.facebook = this.cast("facebook")
+  @scala.inline
+  def google: typings.emojiDashMart.emojiDashMartStrings.google = this.cast("google")
+  @scala.inline
+  def messenger: typings.emojiDashMart.emojiDashMartStrings.messenger = this.cast("messenger")
+  @scala.inline
+  def twitter: typings.emojiDashMart.emojiDashMartStrings.twitter = this.cast("twitter")
+}
+

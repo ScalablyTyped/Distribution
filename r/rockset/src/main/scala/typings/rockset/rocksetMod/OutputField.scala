@@ -19,9 +19,9 @@ object OutputField {
   @scala.inline
   def apply(field_name: String = null, on_error: SKIP | FAIL = null, value: SqlExpression = null): OutputField = {
     val __obj = js.Dynamic.literal()
-    if (field_name != null) __obj.updateDynamic("field_name")(field_name)
+    if (field_name != null) __obj.updateDynamic("field_name")(field_name.asInstanceOf[js.Any])
     if (on_error != null) __obj.updateDynamic("on_error")(on_error.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutputField]
   }
 }

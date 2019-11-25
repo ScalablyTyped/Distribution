@@ -20,7 +20,7 @@ object ColorInfo {
   @scala.inline
   def apply(color: Color = null, pixelFraction: Int | Double = null, score: Int | Double = null): ColorInfo = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (pixelFraction != null) __obj.updateDynamic("pixelFraction")(pixelFraction.asInstanceOf[js.Any])
     if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColorInfo]

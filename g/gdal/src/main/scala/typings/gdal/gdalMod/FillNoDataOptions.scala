@@ -19,8 +19,8 @@ object FillNoDataOptions {
     mask: RasterBand = null,
     smoothingIterations: Int | Double = null
   ): FillNoDataOptions = {
-    val __obj = js.Dynamic.literal(searchDist = searchDist, src = src)
-    if (mask != null) __obj.updateDynamic("mask")(mask)
+    val __obj = js.Dynamic.literal(searchDist = searchDist.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
+    if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
     if (smoothingIterations != null) __obj.updateDynamic("smoothingIterations")(smoothingIterations.asInstanceOf[js.Any])
     __obj.asInstanceOf[FillNoDataOptions]
   }

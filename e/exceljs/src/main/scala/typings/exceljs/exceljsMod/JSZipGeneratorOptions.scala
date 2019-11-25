@@ -19,7 +19,7 @@ object JSZipGeneratorOptions {
   @scala.inline
   def apply(compression: STORE | DEFLATE, compressionOptions: Anon_Level = null): JSZipGeneratorOptions = {
     val __obj = js.Dynamic.literal(compression = compression.asInstanceOf[js.Any])
-    if (compressionOptions != null) __obj.updateDynamic("compressionOptions")(compressionOptions)
+    if (compressionOptions != null) __obj.updateDynamic("compressionOptions")(compressionOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSZipGeneratorOptions]
   }
 }

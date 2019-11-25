@@ -33,15 +33,15 @@ object DomPopmotionConfig {
     props: StringDictionary[js.Any] = null
   ): DomPopmotionConfig = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (dragBounds != null) __obj.updateDynamic("dragBounds")(dragBounds.asInstanceOf[js.Any])
     if (draggable != null) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverable)) __obj.updateDynamic("hoverable")(hoverable)
+    if (!js.isUndefined(hoverable)) __obj.updateDynamic("hoverable")(hoverable.asInstanceOf[js.Any])
     if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(js.Any.fromFunction1(onDragEnd))
     if (onDragStart != null) __obj.updateDynamic("onDragStart")(js.Any.fromFunction1(onDragStart))
     if (onPressEnd != null) __obj.updateDynamic("onPressEnd")(js.Any.fromFunction1(onPressEnd))
     if (onPressStart != null) __obj.updateDynamic("onPressStart")(js.Any.fromFunction1(onPressStart))
-    if (props != null) __obj.updateDynamic("props")(props)
+    if (props != null) __obj.updateDynamic("props")(props.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomPopmotionConfig]
   }
 }

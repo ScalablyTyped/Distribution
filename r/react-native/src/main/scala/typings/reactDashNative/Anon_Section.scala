@@ -12,7 +12,7 @@ trait Anon_Section[ItemT] extends js.Object {
 object Anon_Section {
   @scala.inline
   def apply[ItemT](section: SectionListData[ItemT]): Anon_Section[ItemT] = {
-    val __obj = js.Dynamic.literal(section = section)
+    val __obj = js.Dynamic.literal(section = section.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Section[ItemT]]
   }

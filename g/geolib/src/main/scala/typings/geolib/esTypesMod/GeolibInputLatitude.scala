@@ -4,17 +4,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait GeolibInputLatitude extends js.Object {
-  var lat: js.UndefOr[GeolibLatitudeInputValue] = js.undefined
-  var latitude: js.UndefOr[GeolibLatitudeInputValue] = js.undefined
-}
+/* Rewritten from type alias, can be one of: 
+  - typings.geolib.Anon_Lat
+  - typings.geolib.Anon_LatitudeGeolibLatitudeInputValue
+*/
+trait GeolibInputLatitude extends js.Object
 
 object GeolibInputLatitude {
   @scala.inline
-  def apply(lat: GeolibLatitudeInputValue = null, latitude: GeolibLatitudeInputValue = null): GeolibInputLatitude = {
-    val __obj = js.Dynamic.literal()
-    if (lat != null) __obj.updateDynamic("lat")(lat.asInstanceOf[js.Any])
-    if (latitude != null) __obj.updateDynamic("latitude")(latitude.asInstanceOf[js.Any])
+  def Anon_Lat(lat: GeolibLatitudeInputValue): GeolibInputLatitude = {
+    val __obj = js.Dynamic.literal(lat = lat.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[GeolibInputLatitude]
+  }
+  @scala.inline
+  def Anon_LatitudeGeolibLatitudeInputValue(latitude: GeolibLatitudeInputValue): GeolibInputLatitude = {
+    val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[GeolibInputLatitude]
   }
 }

@@ -19,7 +19,7 @@ trait Target extends js.Object {
 object Target {
   @scala.inline
   def apply(__mocks: js.Any, resetAll: () => Unit, toJSON: () => js.Any): Target = {
-    val __obj = js.Dynamic.literal(__mocks = __mocks, resetAll = js.Any.fromFunction0(resetAll), toJSON = js.Any.fromFunction0(toJSON))
+    val __obj = js.Dynamic.literal(__mocks = __mocks.asInstanceOf[js.Any], resetAll = js.Any.fromFunction0(resetAll), toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[Target]
   }

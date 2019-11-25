@@ -14,8 +14,8 @@ trait IGenericObjectProperties extends IGenericProperties {
 object IGenericObjectProperties {
   @scala.inline
   def apply(qInfo: INxInfo, qExtendsId: String = null): IGenericObjectProperties = {
-    val __obj = js.Dynamic.literal(qInfo = qInfo)
-    if (qExtendsId != null) __obj.updateDynamic("qExtendsId")(qExtendsId)
+    val __obj = js.Dynamic.literal(qInfo = qInfo.asInstanceOf[js.Any])
+    if (qExtendsId != null) __obj.updateDynamic("qExtendsId")(qExtendsId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGenericObjectProperties]
   }
 }

@@ -15,7 +15,7 @@ object PlotKeltnerchannelsTopLineOptions {
   @scala.inline
   def apply(styles: PlotKeltnerchannelsTopLineStylesOptions = null): PlotKeltnerchannelsTopLineOptions = {
     val __obj = js.Dynamic.literal()
-    if (styles != null) __obj.updateDynamic("styles")(styles)
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotKeltnerchannelsTopLineOptions]
   }
 }

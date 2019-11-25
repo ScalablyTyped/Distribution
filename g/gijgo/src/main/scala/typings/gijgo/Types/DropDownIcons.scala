@@ -13,7 +13,7 @@ object DropDownIcons {
   @scala.inline
   def apply(dropdown: String = null): DropDownIcons = {
     val __obj = js.Dynamic.literal()
-    if (dropdown != null) __obj.updateDynamic("dropdown")(dropdown)
+    if (dropdown != null) __obj.updateDynamic("dropdown")(dropdown.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropDownIcons]
   }
 }

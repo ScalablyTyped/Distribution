@@ -15,8 +15,8 @@ object PullTaskTarget {
   @scala.inline
   def apply(payload: String = null, tag: String = null): PullTaskTarget = {
     val __obj = js.Dynamic.literal()
-    if (payload != null) __obj.updateDynamic("payload")(payload)
-    if (tag != null) __obj.updateDynamic("tag")(tag)
+    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[PullTaskTarget]
   }
 }

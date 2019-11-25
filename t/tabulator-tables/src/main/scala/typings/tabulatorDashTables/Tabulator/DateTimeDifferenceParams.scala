@@ -33,12 +33,12 @@ object DateTimeDifferenceParams {
     unit: years | months | weeks | days | hours | minutes | seconds = null
   ): DateTimeDifferenceParams = {
     val __obj = js.Dynamic.literal()
-    if (date != null) __obj.updateDynamic("date")(date)
-    if (!js.isUndefined(humanize)) __obj.updateDynamic("humanize")(humanize)
-    if (inputFormat != null) __obj.updateDynamic("inputFormat")(inputFormat)
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (!js.isUndefined(humanize)) __obj.updateDynamic("humanize")(humanize.asInstanceOf[js.Any])
+    if (inputFormat != null) __obj.updateDynamic("inputFormat")(inputFormat.asInstanceOf[js.Any])
     if (invalidPlaceholder != null) __obj.updateDynamic("invalidPlaceholder")(invalidPlaceholder.asInstanceOf[js.Any])
-    if (outputFormat != null) __obj.updateDynamic("outputFormat")(outputFormat)
-    if (!js.isUndefined(suffix)) __obj.updateDynamic("suffix")(suffix)
+    if (outputFormat != null) __obj.updateDynamic("outputFormat")(outputFormat.asInstanceOf[js.Any])
+    if (!js.isUndefined(suffix)) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
     if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateTimeDifferenceParams]
   }

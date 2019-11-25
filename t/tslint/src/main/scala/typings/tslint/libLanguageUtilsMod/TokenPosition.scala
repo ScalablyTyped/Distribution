@@ -16,7 +16,7 @@ trait TokenPosition extends js.Object {
 object TokenPosition {
   @scala.inline
   def apply(end: Double, fullStart: Double, tokenStart: Double): TokenPosition = {
-    val __obj = js.Dynamic.literal(end = end, fullStart = fullStart, tokenStart = tokenStart)
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], fullStart = fullStart.asInstanceOf[js.Any], tokenStart = tokenStart.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TokenPosition]
   }

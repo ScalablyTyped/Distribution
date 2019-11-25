@@ -20,9 +20,9 @@ object PointRegionClickEventArgs {
   @scala.inline
   def apply(data: js.Any = null, model: js.Any = null, `type`: String = null): PointRegionClickEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointRegionClickEventArgs]
   }
 }

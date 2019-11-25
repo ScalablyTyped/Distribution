@@ -25,9 +25,9 @@ object ReposCreateDispatchEventParams {
     client_payload: ReposCreateDispatchEventParamsClientPayload = null,
     event_type: String = null
   ): ReposCreateDispatchEventParams = {
-    val __obj = js.Dynamic.literal(owner = owner, repo = repo)
-    if (client_payload != null) __obj.updateDynamic("client_payload")(client_payload)
-    if (event_type != null) __obj.updateDynamic("event_type")(event_type)
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
+    if (client_payload != null) __obj.updateDynamic("client_payload")(client_payload.asInstanceOf[js.Any])
+    if (event_type != null) __obj.updateDynamic("event_type")(event_type.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposCreateDispatchEventParams]
   }
 }

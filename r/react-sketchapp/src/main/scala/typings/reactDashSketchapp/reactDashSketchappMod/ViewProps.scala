@@ -26,9 +26,9 @@ object ViewProps {
   ): ViewProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (resizingConstraint != null) __obj.updateDynamic("resizingConstraint")(resizingConstraint)
-    if (shadows != null) __obj.updateDynamic("shadows")(shadows)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (resizingConstraint != null) __obj.updateDynamic("resizingConstraint")(resizingConstraint.asInstanceOf[js.Any])
+    if (shadows != null) __obj.updateDynamic("shadows")(shadows.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewProps]
   }

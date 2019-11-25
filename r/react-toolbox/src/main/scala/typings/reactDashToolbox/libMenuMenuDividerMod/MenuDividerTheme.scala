@@ -15,7 +15,7 @@ object MenuDividerTheme {
   @scala.inline
   def apply(menuDivider: String = null): MenuDividerTheme = {
     val __obj = js.Dynamic.literal()
-    if (menuDivider != null) __obj.updateDynamic("menuDivider")(menuDivider)
+    if (menuDivider != null) __obj.updateDynamic("menuDivider")(menuDivider.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuDividerTheme]
   }
 }

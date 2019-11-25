@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait OnenoteUserRole extends js.Object
 
+object OnenoteUserRole {
+  @scala.inline
+  def Contributor: typings.microsoftDashGraph.microsoftDashGraphStrings.Contributor = this.cast("Contributor")
+  @scala.inline
+  def None: typings.microsoftDashGraph.microsoftDashGraphStrings.None = this.cast("None")
+  @scala.inline
+  def Owner: typings.microsoftDashGraph.microsoftDashGraphStrings.Owner = this.cast("Owner")
+  @scala.inline
+  def Reader: typings.microsoftDashGraph.microsoftDashGraphStrings.Reader = this.cast("Reader")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

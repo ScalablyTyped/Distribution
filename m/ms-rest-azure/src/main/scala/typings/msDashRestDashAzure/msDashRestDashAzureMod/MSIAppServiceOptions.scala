@@ -32,10 +32,10 @@ object MSIAppServiceOptions {
     resource: String = null
   ): MSIAppServiceOptions = {
     val __obj = js.Dynamic.literal()
-    if (msiApiVersion != null) __obj.updateDynamic("msiApiVersion")(msiApiVersion)
-    if (msiEndpoint != null) __obj.updateDynamic("msiEndpoint")(msiEndpoint)
-    if (msiSecret != null) __obj.updateDynamic("msiSecret")(msiSecret)
-    if (resource != null) __obj.updateDynamic("resource")(resource)
+    if (msiApiVersion != null) __obj.updateDynamic("msiApiVersion")(msiApiVersion.asInstanceOf[js.Any])
+    if (msiEndpoint != null) __obj.updateDynamic("msiEndpoint")(msiEndpoint.asInstanceOf[js.Any])
+    if (msiSecret != null) __obj.updateDynamic("msiSecret")(msiSecret.asInstanceOf[js.Any])
+    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[MSIAppServiceOptions]
   }
 }

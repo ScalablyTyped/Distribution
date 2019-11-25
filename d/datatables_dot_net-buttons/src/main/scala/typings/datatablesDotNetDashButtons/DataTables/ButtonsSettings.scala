@@ -20,9 +20,9 @@ object ButtonsSettings {
     name: String = null,
     tabIndex: Int | Double = null
   ): ButtonsSettings = {
-    val __obj = js.Dynamic.literal(buttons = buttons)
-    if (dom != null) __obj.updateDynamic("dom")(dom)
-    if (name != null) __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(buttons = buttons.asInstanceOf[js.Any])
+    if (dom != null) __obj.updateDynamic("dom")(dom.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonsSettings]
   }

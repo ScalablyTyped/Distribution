@@ -36,14 +36,14 @@ object DistributionProps {
     gridArea: GridAreaType = null,
     margin: MarginType = null
   ): DistributionProps = {
-    val __obj = js.Dynamic.literal(values = values)
-    if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle)
-    if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf)
+    val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
+    if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle.asInstanceOf[js.Any])
+    if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
     if (basis != null) __obj.updateDynamic("basis")(basis.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))
-    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill)
+    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (gap != null) __obj.updateDynamic("gap")(gap.asInstanceOf[js.Any])
-    if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea)
+    if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistributionProps]
   }

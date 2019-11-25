@@ -83,18 +83,18 @@ object StrictStepGroupProps {
     widths: `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | typings.semanticDashUiDashReact.semanticDashUiDashReactStrings.`1` | typings.semanticDashUiDashReact.semanticDashUiDashReactStrings.`2` | typings.semanticDashUiDashReact.semanticDashUiDashReactStrings.`3` | typings.semanticDashUiDashReact.semanticDashUiDashReactStrings.`4` | typings.semanticDashUiDashReact.semanticDashUiDashReactStrings.`5` | typings.semanticDashUiDashReact.semanticDashUiDashReactStrings.`6` | typings.semanticDashUiDashReact.semanticDashUiDashReactStrings.`7` | typings.semanticDashUiDashReact.semanticDashUiDashReactStrings.`8` | one | two | three | four | five | six | seven | eight = null
   ): StrictStepGroupProps = {
     val __obj = js.Dynamic.literal()
-    if (as != null) __obj.updateDynamic("as")(as)
+    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (attached != null) __obj.updateDynamic("attached")(attached.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (!js.isUndefined(fluid)) __obj.updateDynamic("fluid")(fluid)
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (!js.isUndefined(ordered)) __obj.updateDynamic("ordered")(ordered)
+    if (!js.isUndefined(fluid)) __obj.updateDynamic("fluid")(fluid.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (!js.isUndefined(ordered)) __obj.updateDynamic("ordered")(ordered.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (stackable != null) __obj.updateDynamic("stackable")(stackable)
-    if (!js.isUndefined(unstackable)) __obj.updateDynamic("unstackable")(unstackable)
-    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical)
+    if (stackable != null) __obj.updateDynamic("stackable")(stackable.asInstanceOf[js.Any])
+    if (!js.isUndefined(unstackable)) __obj.updateDynamic("unstackable")(unstackable.asInstanceOf[js.Any])
+    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
     if (widths != null) __obj.updateDynamic("widths")(widths.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrictStepGroupProps]
   }

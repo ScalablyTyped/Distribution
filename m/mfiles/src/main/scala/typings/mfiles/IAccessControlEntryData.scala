@@ -26,7 +26,7 @@ object IAccessControlEntryData {
     ReadPermission: MFPermission,
     SetAllPermissions: MFPermission => Unit
   ): IAccessControlEntryData = {
-    val __obj = js.Dynamic.literal(AttachObjectsPermission = AttachObjectsPermission, ChangePermissionsPermission = ChangePermissionsPermission, Clone = js.Any.fromFunction0(Clone), DeletePermission = DeletePermission, EditPermission = EditPermission, ReadPermission = ReadPermission, SetAllPermissions = js.Any.fromFunction1(SetAllPermissions))
+    val __obj = js.Dynamic.literal(AttachObjectsPermission = AttachObjectsPermission.asInstanceOf[js.Any], ChangePermissionsPermission = ChangePermissionsPermission.asInstanceOf[js.Any], Clone = js.Any.fromFunction0(Clone), DeletePermission = DeletePermission.asInstanceOf[js.Any], EditPermission = EditPermission.asInstanceOf[js.Any], ReadPermission = ReadPermission.asInstanceOf[js.Any], SetAllPermissions = js.Any.fromFunction1(SetAllPermissions))
   
     __obj.asInstanceOf[IAccessControlEntryData]
   }

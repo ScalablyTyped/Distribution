@@ -24,11 +24,11 @@ object LibratoConfig {
     simulate: `false` = null,
     source: String = null
   ): LibratoConfig = {
-    val __obj = js.Dynamic.literal(email = email, token = token)
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
-    if (requestOptions != null) __obj.updateDynamic("requestOptions")(requestOptions)
-    if (simulate != null) __obj.updateDynamic("simulate")(simulate)
-    if (source != null) __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    if (requestOptions != null) __obj.updateDynamic("requestOptions")(requestOptions.asInstanceOf[js.Any])
+    if (simulate != null) __obj.updateDynamic("simulate")(simulate.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[LibratoConfig]
   }
 }

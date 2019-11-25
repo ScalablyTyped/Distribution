@@ -34,10 +34,10 @@ object PubsubMessage {
     publishTime: String = null
   ): PubsubMessage = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (messageId != null) __obj.updateDynamic("messageId")(messageId)
-    if (publishTime != null) __obj.updateDynamic("publishTime")(publishTime)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
+    if (publishTime != null) __obj.updateDynamic("publishTime")(publishTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[PubsubMessage]
   }
 }

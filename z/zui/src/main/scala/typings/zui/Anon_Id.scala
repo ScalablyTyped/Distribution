@@ -25,12 +25,12 @@ object Anon_Id {
     `type`: String = null
   ): Anon_Id = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (lastModifiedDate != null) __obj.updateDynamic("lastModifiedDate")(lastModifiedDate)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (origSize != null) __obj.updateDynamic("origSize")(origSize)
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (lastModifiedDate != null) __obj.updateDynamic("lastModifiedDate")(lastModifiedDate.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (origSize != null) __obj.updateDynamic("origSize")(origSize.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Id]
   }
 }

@@ -15,7 +15,7 @@ trait FoldingRangeParams extends js.Object {
 object FoldingRangeParams {
   @scala.inline
   def apply(textDocument: TextDocumentIdentifier): FoldingRangeParams = {
-    val __obj = js.Dynamic.literal(textDocument = textDocument)
+    val __obj = js.Dynamic.literal(textDocument = textDocument.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FoldingRangeParams]
   }

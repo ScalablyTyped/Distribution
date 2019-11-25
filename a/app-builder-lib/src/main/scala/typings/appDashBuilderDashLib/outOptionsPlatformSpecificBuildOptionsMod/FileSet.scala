@@ -24,8 +24,8 @@ object FileSet {
   def apply(filter: js.Array[String] | String = null, from: String = null, to: String = null): FileSet = {
     val __obj = js.Dynamic.literal()
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from)
-    if (to != null) __obj.updateDynamic("to")(to)
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileSet]
   }
 }

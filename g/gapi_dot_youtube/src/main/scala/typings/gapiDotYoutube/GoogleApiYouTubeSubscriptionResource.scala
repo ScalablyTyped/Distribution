@@ -41,7 +41,7 @@ object GoogleApiYouTubeSubscriptionResource {
     snippet: Anon_ChannelIdChannelTitleDescriptionPublishedAtResourceId,
     subscriberSnippet: Anon_ChannelIdDescription
   ): GoogleApiYouTubeSubscriptionResource = {
-    val __obj = js.Dynamic.literal(contentDetails = contentDetails, etag = etag, id = id, kind = kind, snippet = snippet, subscriberSnippet = subscriberSnippet)
+    val __obj = js.Dynamic.literal(contentDetails = contentDetails.asInstanceOf[js.Any], etag = etag.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], snippet = snippet.asInstanceOf[js.Any], subscriberSnippet = subscriberSnippet.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GoogleApiYouTubeSubscriptionResource]
   }

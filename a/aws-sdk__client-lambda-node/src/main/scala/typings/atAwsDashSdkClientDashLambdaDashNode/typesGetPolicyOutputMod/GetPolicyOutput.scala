@@ -25,9 +25,9 @@ trait GetPolicyOutput extends OutputTypesUnion {
 object GetPolicyOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, Policy: String = null, RevisionId: String = null): GetPolicyOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (Policy != null) __obj.updateDynamic("Policy")(Policy)
-    if (RevisionId != null) __obj.updateDynamic("RevisionId")(RevisionId)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (Policy != null) __obj.updateDynamic("Policy")(Policy.asInstanceOf[js.Any])
+    if (RevisionId != null) __obj.updateDynamic("RevisionId")(RevisionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPolicyOutput]
   }
 }

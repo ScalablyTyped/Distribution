@@ -26,10 +26,10 @@ object IOptions {
     modelDB: IModelDB = null
   ): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (cell != null) __obj.updateDynamic("cell")(cell)
-    if (contentFactory != null) __obj.updateDynamic("contentFactory")(contentFactory)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (modelDB != null) __obj.updateDynamic("modelDB")(modelDB)
+    if (cell != null) __obj.updateDynamic("cell")(cell.asInstanceOf[js.Any])
+    if (contentFactory != null) __obj.updateDynamic("contentFactory")(contentFactory.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (modelDB != null) __obj.updateDynamic("modelDB")(modelDB.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

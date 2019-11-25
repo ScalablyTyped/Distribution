@@ -18,7 +18,7 @@ object SwitchProps {
     location: LocationDescriptorObject[LocationState] with Anon_Pathname,
     routes: js.Array[RouteConfiguration]
   ): SwitchProps = {
-    val __obj = js.Dynamic.literal(location = location, routes = routes)
+    val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SwitchProps]
   }

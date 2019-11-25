@@ -21,7 +21,7 @@ object Options {
   def apply(port: Int | Double = null, useGet: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (!js.isUndefined(useGet)) __obj.updateDynamic("useGet")(useGet)
+    if (!js.isUndefined(useGet)) __obj.updateDynamic("useGet")(useGet.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

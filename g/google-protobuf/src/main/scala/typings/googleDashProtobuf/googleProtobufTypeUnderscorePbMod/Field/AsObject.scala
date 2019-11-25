@@ -31,7 +31,7 @@ object AsObject {
     packed: Boolean,
     typeUrl: String
   ): AsObject = {
-    val __obj = js.Dynamic.literal(cardinality = cardinality, defaultValue = defaultValue, jsonName = jsonName, kind = kind, name = name, number = number, oneofIndex = oneofIndex, optionsList = optionsList, packed = packed, typeUrl = typeUrl)
+    val __obj = js.Dynamic.literal(cardinality = cardinality.asInstanceOf[js.Any], defaultValue = defaultValue.asInstanceOf[js.Any], jsonName = jsonName.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], oneofIndex = oneofIndex.asInstanceOf[js.Any], optionsList = optionsList.asInstanceOf[js.Any], packed = packed.asInstanceOf[js.Any], typeUrl = typeUrl.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AsObject]
   }

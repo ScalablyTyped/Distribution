@@ -25,10 +25,10 @@ object RenderOptions {
     yScale: Int | Double = null
   ): RenderOptions = {
     val __obj = js.Dynamic.literal()
-    if (features != null) __obj.updateDynamic("features")(features)
-    if (!js.isUndefined(kerning)) __obj.updateDynamic("kerning")(kerning)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (script != null) __obj.updateDynamic("script")(script)
+    if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
+    if (!js.isUndefined(kerning)) __obj.updateDynamic("kerning")(kerning.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (script != null) __obj.updateDynamic("script")(script.asInstanceOf[js.Any])
     if (xScale != null) __obj.updateDynamic("xScale")(xScale.asInstanceOf[js.Any])
     if (yScale != null) __obj.updateDynamic("yScale")(yScale.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderOptions]

@@ -16,3 +16,24 @@ import scala.scalajs.js.annotation._
 */
 trait ResourceType extends js.Object
 
+object ResourceType {
+  @scala.inline
+  def Glyphs: typings.mapboxDashGl.mapboxDashGlStrings.Glyphs = this.cast("Glyphs")
+  @scala.inline
+  def Image: typings.mapboxDashGl.mapboxDashGlStrings.Image = this.cast("Image")
+  @scala.inline
+  def Source: typings.mapboxDashGl.mapboxDashGlStrings.Source = this.cast("Source")
+  @scala.inline
+  def SpriteImage: typings.mapboxDashGl.mapboxDashGlStrings.SpriteImage = this.cast("SpriteImage")
+  @scala.inline
+  def SpriteJSON: typings.mapboxDashGl.mapboxDashGlStrings.SpriteJSON = this.cast("SpriteJSON")
+  @scala.inline
+  def Style: typings.mapboxDashGl.mapboxDashGlStrings.Style = this.cast("Style")
+  @scala.inline
+  def Tile: typings.mapboxDashGl.mapboxDashGlStrings.Tile = this.cast("Tile")
+  @scala.inline
+  def Unknown: typings.mapboxDashGl.mapboxDashGlStrings.Unknown = this.cast("Unknown")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

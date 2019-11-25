@@ -12,7 +12,7 @@ trait Anon_Reload extends js.Object {
 object Anon_Reload {
   @scala.inline
   def apply(until: reload): Anon_Reload = {
-    val __obj = js.Dynamic.literal(until = until)
+    val __obj = js.Dynamic.literal(until = until.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Reload]
   }

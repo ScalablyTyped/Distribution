@@ -41,18 +41,18 @@ object CMRequestInit {
     window: js.Any = null
   ): CMRequestInit = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (cache != null) __obj.updateDynamic("cache")(cache)
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
     if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (integrity != null) __obj.updateDynamic("integrity")(integrity)
-    if (!js.isUndefined(keepalive)) __obj.updateDynamic("keepalive")(keepalive)
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (mode != null) __obj.updateDynamic("mode")(mode)
-    if (redirect != null) __obj.updateDynamic("redirect")(redirect)
-    if (referrer != null) __obj.updateDynamic("referrer")(referrer)
-    if (referrerPolicy != null) __obj.updateDynamic("referrerPolicy")(referrerPolicy)
-    if (window != null) __obj.updateDynamic("window")(window)
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (integrity != null) __obj.updateDynamic("integrity")(integrity.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepalive)) __obj.updateDynamic("keepalive")(keepalive.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (redirect != null) __obj.updateDynamic("redirect")(redirect.asInstanceOf[js.Any])
+    if (referrer != null) __obj.updateDynamic("referrer")(referrer.asInstanceOf[js.Any])
+    if (referrerPolicy != null) __obj.updateDynamic("referrerPolicy")(referrerPolicy.asInstanceOf[js.Any])
+    if (window != null) __obj.updateDynamic("window")(window.asInstanceOf[js.Any])
     __obj.asInstanceOf[CMRequestInit]
   }
 }

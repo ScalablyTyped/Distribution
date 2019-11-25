@@ -30,10 +30,10 @@ object IgBrowseButton {
     multipleFiles: js.UndefOr[Boolean] = js.undefined
   ): IgBrowseButton = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(autoselect)) __obj.updateDynamic("autoselect")(autoselect)
-    if (container != null) __obj.updateDynamic("container")(container)
-    if (!js.isUndefined(multipleFiles)) __obj.updateDynamic("multipleFiles")(multipleFiles)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(autoselect)) __obj.updateDynamic("autoselect")(autoselect.asInstanceOf[js.Any])
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (!js.isUndefined(multipleFiles)) __obj.updateDynamic("multipleFiles")(multipleFiles.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgBrowseButton]
   }
 }

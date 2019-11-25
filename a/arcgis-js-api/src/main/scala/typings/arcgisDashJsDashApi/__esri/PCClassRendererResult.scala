@@ -23,7 +23,7 @@ object PCClassRendererResult {
     propertyIsEnumerable: PropertyKey => Boolean,
     renderer: PointCloudUniqueValueRenderer
   ): PCClassRendererResult = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), renderer = renderer)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), renderer = renderer.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PCClassRendererResult]
   }

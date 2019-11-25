@@ -14,7 +14,7 @@ trait MouseEvent
 object MouseEvent {
   @scala.inline
   def apply(feature: Feature, latLng: LatLng, stop: () => Unit): MouseEvent = {
-    val __obj = js.Dynamic.literal(feature = feature, latLng = latLng, stop = js.Any.fromFunction0(stop))
+    val __obj = js.Dynamic.literal(feature = feature.asInstanceOf[js.Any], latLng = latLng.asInstanceOf[js.Any], stop = js.Any.fromFunction0(stop))
   
     __obj.asInstanceOf[MouseEvent]
   }

@@ -20,8 +20,8 @@ object IntrospectionInputObjectType {
     name: String,
     description: String = null
   ): IntrospectionInputObjectType = {
-    val __obj = js.Dynamic.literal(inputFields = inputFields, kind = kind, name = name)
-    if (description != null) __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(inputFields = inputFields.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrospectionInputObjectType]
   }
 }

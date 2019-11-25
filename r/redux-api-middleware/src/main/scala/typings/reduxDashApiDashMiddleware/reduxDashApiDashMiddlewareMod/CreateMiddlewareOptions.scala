@@ -15,7 +15,7 @@ object CreateMiddlewareOptions {
   @scala.inline
   def apply(fetch: Fn_Init = null, ok: /* res */ Response => Boolean = null): CreateMiddlewareOptions = {
     val __obj = js.Dynamic.literal()
-    if (fetch != null) __obj.updateDynamic("fetch")(fetch)
+    if (fetch != null) __obj.updateDynamic("fetch")(fetch.asInstanceOf[js.Any])
     if (ok != null) __obj.updateDynamic("ok")(js.Any.fromFunction1(ok))
     __obj.asInstanceOf[CreateMiddlewareOptions]
   }

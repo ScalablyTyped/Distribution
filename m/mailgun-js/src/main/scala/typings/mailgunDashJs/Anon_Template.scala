@@ -12,8 +12,8 @@ trait Anon_Template extends /* templateVariable */ StringDictionary[String] {
 object Anon_Template {
   @scala.inline
   def apply(template: String, StringDictionary: /* templateVariable */ StringDictionary[String] = null): Anon_Template = {
-    val __obj = js.Dynamic.literal(template = template)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(template = template.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_Template]
   }
 }

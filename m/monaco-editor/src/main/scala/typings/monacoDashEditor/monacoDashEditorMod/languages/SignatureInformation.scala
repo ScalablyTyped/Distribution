@@ -29,7 +29,7 @@ object SignatureInformation {
     parameters: js.Array[ParameterInformation],
     documentation: String | IMarkdownString = null
   ): SignatureInformation = {
-    val __obj = js.Dynamic.literal(label = label, parameters = parameters)
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any])
     if (documentation != null) __obj.updateDynamic("documentation")(documentation.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignatureInformation]
   }

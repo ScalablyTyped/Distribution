@@ -32,6 +32,9 @@ trait reactDashChartjsDash2Props {
   def RadarProps: ChartComponentProps.type = typings.reactDashChartjsDash2.reactDashChartjsDash2Mod.ChartComponentProps
   type RadarProps = ChartComponentProps
   @scala.inline
+  def ReactDashChartjsDash2Props: ChartComponentProps.type = typings.reactDashChartjsDash2.reactDashChartjsDash2Mod.ChartComponentProps
+  type ReactDashChartjsDash2Props = ChartComponentProps
+  @scala.inline
   def ScatterProps: ChartComponentProps.type = typings.reactDashChartjsDash2.reactDashChartjsDash2Mod.ChartComponentProps
   type ScatterProps = ChartComponentProps
 }

@@ -15,8 +15,8 @@ object ThresholdOptions {
   @scala.inline
   def apply(grayscale: js.UndefOr[Boolean] = js.undefined, greyscale: js.UndefOr[Boolean] = js.undefined): ThresholdOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(grayscale)) __obj.updateDynamic("grayscale")(grayscale)
-    if (!js.isUndefined(greyscale)) __obj.updateDynamic("greyscale")(greyscale)
+    if (!js.isUndefined(grayscale)) __obj.updateDynamic("grayscale")(grayscale.asInstanceOf[js.Any])
+    if (!js.isUndefined(greyscale)) __obj.updateDynamic("greyscale")(greyscale.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThresholdOptions]
   }
 }

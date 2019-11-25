@@ -13,7 +13,7 @@ object ContainerObject {
   @scala.inline
   def apply[T](StringDictionary: /* x */ StringDictionary[ContainerOrT[T]] = null): ContainerObject[T] = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ContainerObject[T]]
   }
 }

@@ -3,14 +3,14 @@ package typings.rxDashLiteDashVirtualtime.rxDashLiteDashVirtualtimeMod
 import typings.rxDashCore.Rx.IDisposable
 import typings.rxDashCore.Rx.IScheduler
 import typings.rxDashLite.Rx.internals.ScheduledItem
-import typings.rxDashLiteDashVirtualtime.Rx.HistoricalScheduler
+import typings.rxDashLiteDashVirtualtime.Rx.VirtualTimeScheduler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("rx-lite-virtualtime", "HistoricalScheduler")
 @js.native
-class HistoricalSchedulerCls protected () extends HistoricalScheduler {
+class HistoricalSchedulerCls protected () extends VirtualTimeScheduler[Double, Double] {
   def this(initialClock: Double, comparer: js.Function2[/* first */ Double, /* second */ Double, Double]) = this()
   /* CompleteClass */
   override var isEnabled: Boolean = js.native

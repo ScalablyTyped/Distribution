@@ -15,8 +15,8 @@ object Anon_Id {
   @scala.inline
   def apply(id: String = null, url: String = null): Anon_Id = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Id]
   }
 }

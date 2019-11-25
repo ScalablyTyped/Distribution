@@ -22,11 +22,11 @@ object DigestStrategyOptions {
     realm: String = null
   ): DigestStrategyOptions = {
     val __obj = js.Dynamic.literal()
-    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm)
+    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
     if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    if (opaque != null) __obj.updateDynamic("opaque")(opaque)
+    if (opaque != null) __obj.updateDynamic("opaque")(opaque.asInstanceOf[js.Any])
     if (qop != null) __obj.updateDynamic("qop")(qop.asInstanceOf[js.Any])
-    if (realm != null) __obj.updateDynamic("realm")(realm)
+    if (realm != null) __obj.updateDynamic("realm")(realm.asInstanceOf[js.Any])
     __obj.asInstanceOf[DigestStrategyOptions]
   }
 }

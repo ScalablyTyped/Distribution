@@ -19,7 +19,7 @@ trait Anon_AdUnitIdStyleAdStyle extends js.Object {
 object Anon_AdUnitIdStyleAdStyle {
   @scala.inline
   def apply(adUnitId: String, style: AdStyle): Anon_AdUnitIdStyleAdStyle = {
-    val __obj = js.Dynamic.literal(adUnitId = adUnitId, style = style)
+    val __obj = js.Dynamic.literal(adUnitId = adUnitId.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AdUnitIdStyleAdStyle]
   }

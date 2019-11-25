@@ -20,7 +20,7 @@ object NotesProperties {
   @scala.inline
   def apply(speakerNotesObjectId: String = null): NotesProperties = {
     val __obj = js.Dynamic.literal()
-    if (speakerNotesObjectId != null) __obj.updateDynamic("speakerNotesObjectId")(speakerNotesObjectId)
+    if (speakerNotesObjectId != null) __obj.updateDynamic("speakerNotesObjectId")(speakerNotesObjectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotesProperties]
   }
 }

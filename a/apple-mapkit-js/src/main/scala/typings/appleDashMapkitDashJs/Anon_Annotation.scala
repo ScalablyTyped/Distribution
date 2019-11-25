@@ -15,8 +15,8 @@ object Anon_Annotation {
   @scala.inline
   def apply(annotation: Annotation = null, overlay: Overlay = null): Anon_Annotation = {
     val __obj = js.Dynamic.literal()
-    if (annotation != null) __obj.updateDynamic("annotation")(annotation)
-    if (overlay != null) __obj.updateDynamic("overlay")(overlay)
+    if (annotation != null) __obj.updateDynamic("annotation")(annotation.asInstanceOf[js.Any])
+    if (overlay != null) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Annotation]
   }
 }

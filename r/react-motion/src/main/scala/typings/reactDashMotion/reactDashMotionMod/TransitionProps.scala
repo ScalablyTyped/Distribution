@@ -48,7 +48,7 @@ object TransitionProps {
   ): TransitionProps = {
     val __obj = js.Dynamic.literal(styles = styles.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))
-    if (defaultStyles != null) __obj.updateDynamic("defaultStyles")(defaultStyles)
+    if (defaultStyles != null) __obj.updateDynamic("defaultStyles")(defaultStyles.asInstanceOf[js.Any])
     if (didLeave != null) __obj.updateDynamic("didLeave")(js.Any.fromFunction1(didLeave))
     if (willEnter != null) __obj.updateDynamic("willEnter")(js.Any.fromFunction1(willEnter))
     if (willLeave != null) __obj.updateDynamic("willLeave")(js.Any.fromFunction1(willLeave))

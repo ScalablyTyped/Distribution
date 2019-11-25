@@ -24,12 +24,12 @@ object SwipeableViewsState {
     isFirstRender: js.UndefOr[Boolean] = js.undefined
   ): SwipeableViewsState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(displaySameSlide)) __obj.updateDynamic("displaySameSlide")(displaySameSlide)
+    if (!js.isUndefined(displaySameSlide)) __obj.updateDynamic("displaySameSlide")(displaySameSlide.asInstanceOf[js.Any])
     if (heightLatest != null) __obj.updateDynamic("heightLatest")(heightLatest.asInstanceOf[js.Any])
     if (indexCurrent != null) __obj.updateDynamic("indexCurrent")(indexCurrent.asInstanceOf[js.Any])
     if (indexLatest != null) __obj.updateDynamic("indexLatest")(indexLatest.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDragging)) __obj.updateDynamic("isDragging")(isDragging)
-    if (!js.isUndefined(isFirstRender)) __obj.updateDynamic("isFirstRender")(isFirstRender)
+    if (!js.isUndefined(isDragging)) __obj.updateDynamic("isDragging")(isDragging.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFirstRender)) __obj.updateDynamic("isFirstRender")(isFirstRender.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwipeableViewsState]
   }
 }

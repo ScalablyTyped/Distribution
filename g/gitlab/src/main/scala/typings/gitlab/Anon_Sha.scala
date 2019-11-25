@@ -12,7 +12,7 @@ object Anon_Sha {
   @scala.inline
   def apply(sha: String = null): Anon_Sha = {
     val __obj = js.Dynamic.literal()
-    if (sha != null) __obj.updateDynamic("sha")(sha)
+    if (sha != null) __obj.updateDynamic("sha")(sha.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Sha]
   }
 }

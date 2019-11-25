@@ -16,8 +16,8 @@ object BasePaymentMethod {
     tokenizationSpecification: PaymentMethodTokenizationSpecification = null
   ): BasePaymentMethod = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (tokenizationSpecification != null) __obj.updateDynamic("tokenizationSpecification")(tokenizationSpecification)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (tokenizationSpecification != null) __obj.updateDynamic("tokenizationSpecification")(tokenizationSpecification.asInstanceOf[js.Any])
     __obj.asInstanceOf[BasePaymentMethod]
   }
 }

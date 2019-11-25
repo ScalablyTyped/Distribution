@@ -12,8 +12,8 @@ trait MarkerShape extends js.Object {
 object MarkerShape {
   @scala.inline
   def apply(coords: js.Array[_], `type`: String): MarkerShape = {
-    val __obj = js.Dynamic.literal(coords = coords)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(coords = coords.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkerShape]
   }
 }

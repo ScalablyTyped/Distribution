@@ -19,8 +19,8 @@ object ListServiceAccountsResponse {
   @scala.inline
   def apply(accounts: js.Array[ServiceAccount] = null, nextPageToken: String = null): ListServiceAccountsResponse = {
     val __obj = js.Dynamic.literal()
-    if (accounts != null) __obj.updateDynamic("accounts")(accounts)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (accounts != null) __obj.updateDynamic("accounts")(accounts.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListServiceAccountsResponse]
   }
 }

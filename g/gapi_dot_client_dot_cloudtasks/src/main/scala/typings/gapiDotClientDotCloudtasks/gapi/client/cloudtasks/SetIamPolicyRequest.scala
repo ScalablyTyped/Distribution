@@ -18,7 +18,7 @@ object SetIamPolicyRequest {
   @scala.inline
   def apply(policy: Policy = null): SetIamPolicyRequest = {
     val __obj = js.Dynamic.literal()
-    if (policy != null) __obj.updateDynamic("policy")(policy)
+    if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetIamPolicyRequest]
   }
 }

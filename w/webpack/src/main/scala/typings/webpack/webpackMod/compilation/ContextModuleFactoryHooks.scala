@@ -21,7 +21,7 @@ object ContextModuleFactoryHooks {
     beforeResolve: AsyncSeriesWaterfallHook[_, _, _],
     contextModuleFiles: SyncWaterfallHook[_, _, _]
   ): ContextModuleFactoryHooks = {
-    val __obj = js.Dynamic.literal(afterResolve = afterResolve, alternatives = alternatives, beforeResolve = beforeResolve, contextModuleFiles = contextModuleFiles)
+    val __obj = js.Dynamic.literal(afterResolve = afterResolve.asInstanceOf[js.Any], alternatives = alternatives.asInstanceOf[js.Any], beforeResolve = beforeResolve.asInstanceOf[js.Any], contextModuleFiles = contextModuleFiles.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ContextModuleFactoryHooks]
   }

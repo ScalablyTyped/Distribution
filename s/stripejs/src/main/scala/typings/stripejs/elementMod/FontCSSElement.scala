@@ -15,7 +15,7 @@ trait FontCSSElement extends js.Object {
 object FontCSSElement {
   @scala.inline
   def apply(cssSrc: String): FontCSSElement = {
-    val __obj = js.Dynamic.literal(cssSrc = cssSrc)
+    val __obj = js.Dynamic.literal(cssSrc = cssSrc.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FontCSSElement]
   }

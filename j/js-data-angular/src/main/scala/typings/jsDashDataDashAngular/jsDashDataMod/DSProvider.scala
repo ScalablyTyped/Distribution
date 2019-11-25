@@ -13,7 +13,7 @@ object DSProvider {
   def apply(
     defaults: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DSConfiguration */ js.Any
   ): DSProvider = {
-    val __obj = js.Dynamic.literal(defaults = defaults)
+    val __obj = js.Dynamic.literal(defaults = defaults.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DSProvider]
   }

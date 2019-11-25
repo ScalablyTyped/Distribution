@@ -1,6 +1,5 @@
 package typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod
 
-import typings.atTensorflowTfjsDashCore.distTypesMod.Rank
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object slice_util extends js.Object {
   def assertParamsValid(
-    input: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
+    input: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
     begin: js.Array[Double],
     size: js.Array[Double]
   ): Unit = js.native

@@ -22,10 +22,9 @@ object KustoResultTable {
     kind: String,
     name: String,
     rows: () => IterableIterator[KustoResultRow[T]],
-    toJson: () => js.Any,
-    toString: () => String
+    toJson: () => js.Any
   ): KustoResultTable[T] = {
-    val __obj = js.Dynamic.literal(columns = columns, id = id, kind = kind, name = name, rows = js.Any.fromFunction0(rows), toJson = js.Any.fromFunction0(toJson), toString = js.Any.fromFunction0(toString))
+    val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], rows = js.Any.fromFunction0(rows), toJson = js.Any.fromFunction0(toJson))
   
     __obj.asInstanceOf[KustoResultTable[T]]
   }

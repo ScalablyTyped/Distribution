@@ -83,11 +83,11 @@ object PropertiesFallback {
     vectorEffect: VectorEffectProperty | js.Array[VectorEffectProperty] = null
   ): PropertiesFallback[TLength] = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, ObsoletePropertiesFallback)
-    js.Dynamic.global.Object.assign(__obj, StandardLonghandPropertiesFallback)
-    js.Dynamic.global.Object.assign(__obj, StandardShorthandPropertiesFallback)
-    js.Dynamic.global.Object.assign(__obj, VendorLonghandPropertiesFallback)
-    js.Dynamic.global.Object.assign(__obj, VendorShorthandPropertiesFallback)
+    if (ObsoletePropertiesFallback != null) js.Dynamic.global.Object.assign(__obj, ObsoletePropertiesFallback)
+    if (StandardLonghandPropertiesFallback != null) js.Dynamic.global.Object.assign(__obj, StandardLonghandPropertiesFallback)
+    if (StandardShorthandPropertiesFallback != null) js.Dynamic.global.Object.assign(__obj, StandardShorthandPropertiesFallback)
+    if (VendorLonghandPropertiesFallback != null) js.Dynamic.global.Object.assign(__obj, VendorLonghandPropertiesFallback)
+    if (VendorShorthandPropertiesFallback != null) js.Dynamic.global.Object.assign(__obj, VendorShorthandPropertiesFallback)
     if (alignmentBaseline != null) __obj.updateDynamic("alignmentBaseline")(alignmentBaseline.asInstanceOf[js.Any])
     if (baselineShift != null) __obj.updateDynamic("baselineShift")(baselineShift.asInstanceOf[js.Any])
     if (clipRule != null) __obj.updateDynamic("clipRule")(clipRule.asInstanceOf[js.Any])

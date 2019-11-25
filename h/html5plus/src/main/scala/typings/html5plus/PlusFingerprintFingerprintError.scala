@@ -99,7 +99,7 @@ object PlusFingerprintFingerprintError {
     if (UNKNOWN_ERROR != null) __obj.updateDynamic("UNKNOWN_ERROR")(UNKNOWN_ERROR.asInstanceOf[js.Any])
     if (UNSUPPORT != null) __obj.updateDynamic("UNSUPPORT")(UNSUPPORT.asInstanceOf[js.Any])
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusFingerprintFingerprintError]
   }
 }

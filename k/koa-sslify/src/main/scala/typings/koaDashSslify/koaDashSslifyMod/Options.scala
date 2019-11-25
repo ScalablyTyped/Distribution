@@ -54,13 +54,13 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (disallowStatus != null) __obj.updateDynamic("disallowStatus")(disallowStatus.asInstanceOf[js.Any])
-    if (hostname != null) __obj.updateDynamic("hostname")(hostname)
-    if (!js.isUndefined(ignoreUrl)) __obj.updateDynamic("ignoreUrl")(ignoreUrl)
+    if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreUrl)) __obj.updateDynamic("ignoreUrl")(ignoreUrl.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (redirectMethods != null) __obj.updateDynamic("redirectMethods")(redirectMethods)
+    if (redirectMethods != null) __obj.updateDynamic("redirectMethods")(redirectMethods.asInstanceOf[js.Any])
     if (resolver != null) __obj.updateDynamic("resolver")(js.Any.fromFunction1(resolver))
-    if (!js.isUndefined(skipDefaultPort)) __obj.updateDynamic("skipDefaultPort")(skipDefaultPort)
-    if (!js.isUndefined(temporary)) __obj.updateDynamic("temporary")(temporary)
+    if (!js.isUndefined(skipDefaultPort)) __obj.updateDynamic("skipDefaultPort")(skipDefaultPort.asInstanceOf[js.Any])
+    if (!js.isUndefined(temporary)) __obj.updateDynamic("temporary")(temporary.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

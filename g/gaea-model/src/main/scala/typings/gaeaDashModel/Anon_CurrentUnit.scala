@@ -30,12 +30,12 @@ object Anon_CurrentUnit {
     speed: Int | Double = null,
     step: Int | Double = null
   ): Anon_CurrentUnit = {
-    val __obj = js.Dynamic.literal(currentUnit = currentUnit, units = units)
-    if (inputRange != null) __obj.updateDynamic("inputRange")(inputRange)
+    val __obj = js.Dynamic.literal(currentUnit = currentUnit.asInstanceOf[js.Any], units = units.asInstanceOf[js.Any])
+    if (inputRange != null) __obj.updateDynamic("inputRange")(inputRange.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (outputRange != null) __obj.updateDynamic("outputRange")(outputRange)
-    if (!js.isUndefined(slider)) __obj.updateDynamic("slider")(slider)
+    if (outputRange != null) __obj.updateDynamic("outputRange")(outputRange.asInstanceOf[js.Any])
+    if (!js.isUndefined(slider)) __obj.updateDynamic("slider")(slider.asInstanceOf[js.Any])
     if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CurrentUnit]

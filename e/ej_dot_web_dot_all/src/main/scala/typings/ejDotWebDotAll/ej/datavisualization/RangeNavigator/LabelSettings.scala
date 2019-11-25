@@ -24,9 +24,9 @@ object LabelSettings {
     style: LabelSettingsStyle = null
   ): LabelSettings = {
     val __obj = js.Dynamic.literal()
-    if (higherLevel != null) __obj.updateDynamic("higherLevel")(higherLevel)
-    if (lowerLevel != null) __obj.updateDynamic("lowerLevel")(lowerLevel)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (higherLevel != null) __obj.updateDynamic("higherLevel")(higherLevel.asInstanceOf[js.Any])
+    if (lowerLevel != null) __obj.updateDynamic("lowerLevel")(lowerLevel.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelSettings]
   }
 }

@@ -12,8 +12,8 @@ trait TypePredicateBase extends js.Object {
 object TypePredicateBase {
   @scala.inline
   def apply(kind: TypePredicateKind, `type`: Type = null): TypePredicateBase = {
-    val __obj = js.Dynamic.literal(kind = kind)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypePredicateBase]
   }
 }

@@ -37,12 +37,12 @@ object AttachmentStream {
     filename: String = null,
     related: js.UndefOr[Boolean] = js.undefined
   ): AttachmentStream = {
-    val __obj = js.Dynamic.literal(checksum = checksum, content = content, contentDisposition = contentDisposition, contentType = contentType, headers = headers, release = js.Any.fromFunction0(release), size = size)
-    __obj.updateDynamic("type")(`type`)
-    if (cid != null) __obj.updateDynamic("cid")(cid)
-    if (contentId != null) __obj.updateDynamic("contentId")(contentId)
-    if (filename != null) __obj.updateDynamic("filename")(filename)
-    if (!js.isUndefined(related)) __obj.updateDynamic("related")(related)
+    val __obj = js.Dynamic.literal(checksum = checksum.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], contentDisposition = contentDisposition.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], release = js.Any.fromFunction0(release), size = size.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (cid != null) __obj.updateDynamic("cid")(cid.asInstanceOf[js.Any])
+    if (contentId != null) __obj.updateDynamic("contentId")(contentId.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
+    if (!js.isUndefined(related)) __obj.updateDynamic("related")(related.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachmentStream]
   }
 }

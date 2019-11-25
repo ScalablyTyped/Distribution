@@ -13,8 +13,8 @@ object ListVariablesResponse {
   @scala.inline
   def apply(nextPageToken: String = null, variable: js.Array[Variable] = null): ListVariablesResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (variable != null) __obj.updateDynamic("variable")(variable)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (variable != null) __obj.updateDynamic("variable")(variable.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListVariablesResponse]
   }
 }

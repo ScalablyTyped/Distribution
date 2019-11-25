@@ -28,7 +28,7 @@ object TypeofaccessibilityFeatures {
     stickyKeys: AccessibilityFeaturesSetting,
     virtualKeyboard: AccessibilityFeaturesSetting
   ): TypeofaccessibilityFeatures = {
-    val __obj = js.Dynamic.literal(animationPolicy = animationPolicy, autoclick = autoclick, highContrast = highContrast, largeCursor = largeCursor, screenMagnifier = screenMagnifier, spokenFeedback = spokenFeedback, stickyKeys = stickyKeys, virtualKeyboard = virtualKeyboard)
+    val __obj = js.Dynamic.literal(animationPolicy = animationPolicy.asInstanceOf[js.Any], autoclick = autoclick.asInstanceOf[js.Any], highContrast = highContrast.asInstanceOf[js.Any], largeCursor = largeCursor.asInstanceOf[js.Any], screenMagnifier = screenMagnifier.asInstanceOf[js.Any], spokenFeedback = spokenFeedback.asInstanceOf[js.Any], stickyKeys = stickyKeys.asInstanceOf[js.Any], virtualKeyboard = virtualKeyboard.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeofaccessibilityFeatures]
   }

@@ -24,7 +24,7 @@ object Anon_Cascade {
     onDelete: restrict | cascade | (`no action`) | (`set null`) | (`set default`) = null,
     onUpdate: restrict | cascade | (`no action`) | (`set null`) | (`set default`) = null
   ): Anon_Cascade = {
-    val __obj = js.Dynamic.literal(column = column, table = table)
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any])
     if (onDelete != null) __obj.updateDynamic("onDelete")(onDelete.asInstanceOf[js.Any])
     if (onUpdate != null) __obj.updateDynamic("onUpdate")(onUpdate.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Cascade]

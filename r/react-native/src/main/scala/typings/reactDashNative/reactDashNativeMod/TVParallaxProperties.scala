@@ -52,7 +52,7 @@ object TVParallaxProperties {
     tiltAngle: Int | Double = null
   ): TVParallaxProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     if (magnification != null) __obj.updateDynamic("magnification")(magnification.asInstanceOf[js.Any])
     if (pressDelay != null) __obj.updateDynamic("pressDelay")(pressDelay.asInstanceOf[js.Any])
     if (pressDuration != null) __obj.updateDynamic("pressDuration")(pressDuration.asInstanceOf[js.Any])

@@ -14,7 +14,7 @@ trait Anon_InputsKey extends js.Object {
 object Anon_InputsKey {
   @scala.inline
   def apply(inputs: StringDictionary[ModelTensorInfo], outputs: StringDictionary[ModelTensorInfo]): Anon_InputsKey = {
-    val __obj = js.Dynamic.literal(inputs = inputs, outputs = outputs)
+    val __obj = js.Dynamic.literal(inputs = inputs.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_InputsKey]
   }

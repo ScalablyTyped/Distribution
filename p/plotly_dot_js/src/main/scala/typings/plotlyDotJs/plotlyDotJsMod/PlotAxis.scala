@@ -12,7 +12,7 @@ trait PlotAxis extends js.Object {
 object PlotAxis {
   @scala.inline
   def apply(autorange: Boolean, range: js.Tuple2[Double, Double]): PlotAxis = {
-    val __obj = js.Dynamic.literal(autorange = autorange, range = range)
+    val __obj = js.Dynamic.literal(autorange = autorange.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PlotAxis]
   }

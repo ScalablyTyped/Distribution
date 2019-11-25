@@ -19,8 +19,8 @@ object AttachmentInfo {
   @scala.inline
   def apply(data: String = null, namespacedType: String = null): AttachmentInfo = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (namespacedType != null) __obj.updateDynamic("namespacedType")(namespacedType)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (namespacedType != null) __obj.updateDynamic("namespacedType")(namespacedType.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachmentInfo]
   }
 }

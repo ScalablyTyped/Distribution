@@ -17,7 +17,7 @@ trait StepEvent extends js.Object {
 object StepEvent {
   @scala.inline
   def apply(header: js.Array[JQuery], index: Double, length: Double): StepEvent = {
-    val __obj = js.Dynamic.literal(header = header, index = index, length = length)
+    val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StepEvent]
   }

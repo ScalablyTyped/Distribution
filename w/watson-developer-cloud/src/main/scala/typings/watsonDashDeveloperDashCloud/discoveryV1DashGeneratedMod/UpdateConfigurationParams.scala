@@ -40,14 +40,14 @@ object UpdateConfigurationParams {
     return_response: js.UndefOr[Boolean] = js.undefined,
     source: Source = null
   ): UpdateConfigurationParams = {
-    val __obj = js.Dynamic.literal(configuration_id = configuration_id, environment_id = environment_id, name = name)
-    if (conversions != null) __obj.updateDynamic("conversions")(conversions)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (enrichments != null) __obj.updateDynamic("enrichments")(enrichments)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (normalizations != null) __obj.updateDynamic("normalizations")(normalizations)
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response)
-    if (source != null) __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(configuration_id = configuration_id.asInstanceOf[js.Any], environment_id = environment_id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (conversions != null) __obj.updateDynamic("conversions")(conversions.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (enrichments != null) __obj.updateDynamic("enrichments")(enrichments.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (normalizations != null) __obj.updateDynamic("normalizations")(normalizations.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateConfigurationParams]
   }
 }

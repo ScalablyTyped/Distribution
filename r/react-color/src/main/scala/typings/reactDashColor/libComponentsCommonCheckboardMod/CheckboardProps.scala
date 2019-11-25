@@ -23,11 +23,11 @@ object CheckboardProps {
     white: String = null
   ): CheckboardProps = {
     val __obj = js.Dynamic.literal()
-    if (grey != null) __obj.updateDynamic("grey")(grey)
+    if (grey != null) __obj.updateDynamic("grey")(grey.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (white != null) __obj.updateDynamic("white")(white)
+    if (white != null) __obj.updateDynamic("white")(white.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckboardProps]
   }
 }

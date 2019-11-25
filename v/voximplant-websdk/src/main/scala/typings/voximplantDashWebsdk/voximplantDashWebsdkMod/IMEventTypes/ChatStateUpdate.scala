@@ -27,8 +27,8 @@ trait ChatStateUpdate extends VoxImplantIMEvent {
 object ChatStateUpdate {
   @scala.inline
   def apply(id: String, state: ChatStateType, resource: String = null): ChatStateUpdate = {
-    val __obj = js.Dynamic.literal(id = id, state = state)
-    if (resource != null) __obj.updateDynamic("resource")(resource)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChatStateUpdate]
   }
 }

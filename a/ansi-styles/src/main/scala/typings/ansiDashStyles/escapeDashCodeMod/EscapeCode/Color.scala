@@ -48,7 +48,7 @@ object Color {
     yellow: CodePair,
     yellowBright: CodePair
   ): Color = {
-    val __obj = js.Dynamic.literal(black = black, blue = blue, blueBright = blueBright, cyan = cyan, cyanBright = cyanBright, gray = gray, green = green, greenBright = greenBright, grey = grey, magenta = magenta, magentaBright = magentaBright, red = red, redBright = redBright, white = white, whiteBright = whiteBright, yellow = yellow, yellowBright = yellowBright)
+    val __obj = js.Dynamic.literal(black = black.asInstanceOf[js.Any], blue = blue.asInstanceOf[js.Any], blueBright = blueBright.asInstanceOf[js.Any], cyan = cyan.asInstanceOf[js.Any], cyanBright = cyanBright.asInstanceOf[js.Any], gray = gray.asInstanceOf[js.Any], green = green.asInstanceOf[js.Any], greenBright = greenBright.asInstanceOf[js.Any], grey = grey.asInstanceOf[js.Any], magenta = magenta.asInstanceOf[js.Any], magentaBright = magentaBright.asInstanceOf[js.Any], red = red.asInstanceOf[js.Any], redBright = redBright.asInstanceOf[js.Any], white = white.asInstanceOf[js.Any], whiteBright = whiteBright.asInstanceOf[js.Any], yellow = yellow.asInstanceOf[js.Any], yellowBright = yellowBright.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Color]
   }

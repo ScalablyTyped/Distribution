@@ -131,16 +131,16 @@ object QuotaLimit {
     values: Record[String, String] = null
   ): QuotaLimit = {
     val __obj = js.Dynamic.literal()
-    if (defaultLimit != null) __obj.updateDynamic("defaultLimit")(defaultLimit)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (duration != null) __obj.updateDynamic("duration")(duration)
-    if (freeTier != null) __obj.updateDynamic("freeTier")(freeTier)
-    if (maxLimit != null) __obj.updateDynamic("maxLimit")(maxLimit)
-    if (metric != null) __obj.updateDynamic("metric")(metric)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (unit != null) __obj.updateDynamic("unit")(unit)
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (defaultLimit != null) __obj.updateDynamic("defaultLimit")(defaultLimit.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (freeTier != null) __obj.updateDynamic("freeTier")(freeTier.asInstanceOf[js.Any])
+    if (maxLimit != null) __obj.updateDynamic("maxLimit")(maxLimit.asInstanceOf[js.Any])
+    if (metric != null) __obj.updateDynamic("metric")(metric.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuotaLimit]
   }
 }

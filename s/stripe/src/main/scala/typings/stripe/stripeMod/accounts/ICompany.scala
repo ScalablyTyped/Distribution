@@ -35,18 +35,18 @@ object ICompany {
     vat_id_provided: js.UndefOr[Boolean] = js.undefined
   ): ICompany = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address)
-    if (address_kana != null) __obj.updateDynamic("address_kana")(address_kana)
-    if (address_kanji != null) __obj.updateDynamic("address_kanji")(address_kanji)
-    if (!js.isUndefined(directors_provided)) __obj.updateDynamic("directors_provided")(directors_provided)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (name_kana != null) __obj.updateDynamic("name_kana")(name_kana)
-    if (name_kanji != null) __obj.updateDynamic("name_kanji")(name_kanji)
-    if (!js.isUndefined(owners_provided)) __obj.updateDynamic("owners_provided")(owners_provided)
-    if (phone != null) __obj.updateDynamic("phone")(phone)
-    if (!js.isUndefined(tax_id_provided)) __obj.updateDynamic("tax_id_provided")(tax_id_provided)
-    if (tax_id_registrar != null) __obj.updateDynamic("tax_id_registrar")(tax_id_registrar)
-    if (!js.isUndefined(vat_id_provided)) __obj.updateDynamic("vat_id_provided")(vat_id_provided)
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    if (address_kana != null) __obj.updateDynamic("address_kana")(address_kana.asInstanceOf[js.Any])
+    if (address_kanji != null) __obj.updateDynamic("address_kanji")(address_kanji.asInstanceOf[js.Any])
+    if (!js.isUndefined(directors_provided)) __obj.updateDynamic("directors_provided")(directors_provided.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (name_kana != null) __obj.updateDynamic("name_kana")(name_kana.asInstanceOf[js.Any])
+    if (name_kanji != null) __obj.updateDynamic("name_kanji")(name_kanji.asInstanceOf[js.Any])
+    if (!js.isUndefined(owners_provided)) __obj.updateDynamic("owners_provided")(owners_provided.asInstanceOf[js.Any])
+    if (phone != null) __obj.updateDynamic("phone")(phone.asInstanceOf[js.Any])
+    if (!js.isUndefined(tax_id_provided)) __obj.updateDynamic("tax_id_provided")(tax_id_provided.asInstanceOf[js.Any])
+    if (tax_id_registrar != null) __obj.updateDynamic("tax_id_registrar")(tax_id_registrar.asInstanceOf[js.Any])
+    if (!js.isUndefined(vat_id_provided)) __obj.updateDynamic("vat_id_provided")(vat_id_provided.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICompany]
   }
 }

@@ -50,25 +50,25 @@ object IndexDocumentParams {
     versionType: VersionType = null,
     waitForActiveShards: String = null
   ): IndexDocumentParams[T] = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], index = index)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
     if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method)
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (opType != null) __obj.updateDynamic("opType")(opType.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent)
-    if (pipeline != null) __obj.updateDynamic("pipeline")(pipeline)
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (pipeline != null) __obj.updateDynamic("pipeline")(pipeline.asInstanceOf[js.Any])
     if (refresh != null) __obj.updateDynamic("refresh")(refresh.asInstanceOf[js.Any])
     if (requestTimeout != null) __obj.updateDynamic("requestTimeout")(requestTimeout.asInstanceOf[js.Any])
-    if (routing != null) __obj.updateDynamic("routing")(routing)
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout)
+    if (routing != null) __obj.updateDynamic("routing")(routing.asInstanceOf[js.Any])
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
-    if (ttl != null) __obj.updateDynamic("ttl")(ttl)
+    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (versionType != null) __obj.updateDynamic("versionType")(versionType)
-    if (waitForActiveShards != null) __obj.updateDynamic("waitForActiveShards")(waitForActiveShards)
+    if (versionType != null) __obj.updateDynamic("versionType")(versionType.asInstanceOf[js.Any])
+    if (waitForActiveShards != null) __obj.updateDynamic("waitForActiveShards")(waitForActiveShards.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndexDocumentParams[T]]
   }
 }

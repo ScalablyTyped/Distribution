@@ -27,9 +27,9 @@ object NormalizationMatchField {
     alias: String = null,
     storageKey: String = null
   ): NormalizationMatchField = {
-    val __obj = js.Dynamic.literal(args = args, kind = kind, matchesByType = matchesByType, name = name)
-    if (alias != null) __obj.updateDynamic("alias")(alias)
-    if (storageKey != null) __obj.updateDynamic("storageKey")(storageKey)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], matchesByType = matchesByType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
+    if (storageKey != null) __obj.updateDynamic("storageKey")(storageKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[NormalizationMatchField]
   }
 }

@@ -16,7 +16,7 @@ object SearchResult {
   @scala.inline
   def apply(onClickTelemetryUrl: String = null): SearchResult = {
     val __obj = js.Dynamic.literal()
-    if (onClickTelemetryUrl != null) __obj.updateDynamic("onClickTelemetryUrl")(onClickTelemetryUrl)
+    if (onClickTelemetryUrl != null) __obj.updateDynamic("onClickTelemetryUrl")(onClickTelemetryUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchResult]
   }
 }

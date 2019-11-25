@@ -42,10 +42,10 @@ object ClassSpec {
     `super`: Object = null
   ): ClassSpec[D, T, S] = {
     val __obj = js.Dynamic.literal()
-    if (methods != null) __obj.updateDynamic("methods")(methods)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (protocols != null) __obj.updateDynamic("protocols")(protocols)
-    if (`super` != null) __obj.updateDynamic("super")(`super`)
+    if (methods != null) __obj.updateDynamic("methods")(methods.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (protocols != null) __obj.updateDynamic("protocols")(protocols.asInstanceOf[js.Any])
+    if (`super` != null) __obj.updateDynamic("super")(`super`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassSpec[D, T, S]]
   }
 }

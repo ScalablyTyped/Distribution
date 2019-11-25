@@ -16,9 +16,9 @@ object Anon_Caption {
   @scala.inline
   def apply(caption: String = null, tags: js.Array[String] = null, title: String = null): Anon_Caption = {
     val __obj = js.Dynamic.literal()
-    if (caption != null) __obj.updateDynamic("caption")(caption)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Caption]
   }
 }

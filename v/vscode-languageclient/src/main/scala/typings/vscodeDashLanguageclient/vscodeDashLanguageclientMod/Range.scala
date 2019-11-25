@@ -1,6 +1,5 @@
 package typings.vscodeDashLanguageclient.vscodeDashLanguageclientMod
 
-import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Position
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +20,10 @@ object Range extends js.Object {
     * @param start The range's start position.
     * @param end The range's end position.
     */
-  def create(start: Position, end: Position): typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Range = js.native
+  def create(
+    start: typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Position,
+    end: typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Position
+  ): typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Range = js.native
   /**
     * Checks whether the given literal conforms to the [Range](#Range) interface.
     */

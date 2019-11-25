@@ -18,7 +18,7 @@ object Waterline {
     initialize: (Config, js.Function2[/* err */ Error, /* ontology */ Ontology, _]) => js.Any,
     loadCollection: CollectionClass => Unit
   ): Waterline = {
-    val __obj = js.Dynamic.literal(collections = collections, initialize = js.Any.fromFunction2(initialize), loadCollection = js.Any.fromFunction1(loadCollection))
+    val __obj = js.Dynamic.literal(collections = collections.asInstanceOf[js.Any], initialize = js.Any.fromFunction2(initialize), loadCollection = js.Any.fromFunction1(loadCollection))
   
     __obj.asInstanceOf[Waterline]
   }

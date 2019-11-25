@@ -16,7 +16,7 @@ object Anon_S {
     S: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any,
     V: Uint8Array
   ): Anon_S = {
-    val __obj = js.Dynamic.literal(S = S, V = V)
+    val __obj = js.Dynamic.literal(S = S.asInstanceOf[js.Any], V = V.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_S]
   }

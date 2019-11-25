@@ -17,7 +17,7 @@ object CreateTimeSeriesRequest {
   @scala.inline
   def apply(timeSeries: js.Array[TimeSeries] = null): CreateTimeSeriesRequest = {
     val __obj = js.Dynamic.literal()
-    if (timeSeries != null) __obj.updateDynamic("timeSeries")(timeSeries)
+    if (timeSeries != null) __obj.updateDynamic("timeSeries")(timeSeries.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTimeSeriesRequest]
   }
 }

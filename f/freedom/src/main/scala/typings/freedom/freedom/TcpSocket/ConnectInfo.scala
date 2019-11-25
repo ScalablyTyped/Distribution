@@ -13,7 +13,7 @@ trait ConnectInfo extends js.Object {
 object ConnectInfo {
   @scala.inline
   def apply(host: String, port: Double, socket: Double): ConnectInfo = {
-    val __obj = js.Dynamic.literal(host = host, port = port, socket = socket)
+    val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], socket = socket.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ConnectInfo]
   }

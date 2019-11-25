@@ -15,8 +15,8 @@ object GetWorkspaceStatusResponse {
   @scala.inline
   def apply(mergeConflict: js.Array[MergeConflict] = null, workspaceChange: js.Array[Entity] = null): GetWorkspaceStatusResponse = {
     val __obj = js.Dynamic.literal()
-    if (mergeConflict != null) __obj.updateDynamic("mergeConflict")(mergeConflict)
-    if (workspaceChange != null) __obj.updateDynamic("workspaceChange")(workspaceChange)
+    if (mergeConflict != null) __obj.updateDynamic("mergeConflict")(mergeConflict.asInstanceOf[js.Any])
+    if (workspaceChange != null) __obj.updateDynamic("workspaceChange")(workspaceChange.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetWorkspaceStatusResponse]
   }
 }

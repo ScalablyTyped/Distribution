@@ -43,13 +43,13 @@ object DraggableProps {
     `type`: Type = null
   ): DraggableProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
-    if (data != null) __obj.updateDynamic("data")(data)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (onDrag != null) __obj.updateDynamic("onDrag")(js.Any.fromFunction0(onDrag))
     if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(js.Any.fromFunction1(onDragEnd))
     if (onDragStart != null) __obj.updateDynamic("onDragStart")(js.Any.fromFunction1(onDragStart))
-    if (subscribeTo != null) __obj.updateDynamic("subscribeTo")(subscribeTo)
+    if (subscribeTo != null) __obj.updateDynamic("subscribeTo")(subscribeTo.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DraggableProps]
   }

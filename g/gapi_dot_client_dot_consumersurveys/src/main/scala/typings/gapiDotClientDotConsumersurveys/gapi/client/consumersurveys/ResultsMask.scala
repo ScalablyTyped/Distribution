@@ -13,8 +13,8 @@ object ResultsMask {
   @scala.inline
   def apply(fields: js.Array[FieldMask] = null, projection: String = null): ResultsMask = {
     val __obj = js.Dynamic.literal()
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (projection != null) __obj.updateDynamic("projection")(projection)
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResultsMask]
   }
 }

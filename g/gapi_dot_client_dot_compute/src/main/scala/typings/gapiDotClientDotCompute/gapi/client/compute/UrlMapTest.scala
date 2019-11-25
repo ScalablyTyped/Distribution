@@ -19,10 +19,10 @@ object UrlMapTest {
   @scala.inline
   def apply(description: String = null, host: String = null, path: String = null, service: String = null): UrlMapTest = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (service != null) __obj.updateDynamic("service")(service)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
     __obj.asInstanceOf[UrlMapTest]
   }
 }

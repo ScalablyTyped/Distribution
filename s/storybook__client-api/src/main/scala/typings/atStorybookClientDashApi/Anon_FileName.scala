@@ -13,7 +13,7 @@ trait Anon_FileName extends js.Object {
 object Anon_FileName {
   @scala.inline
   def apply(fileName: String, kind: String, stories: js.Array[Anon_Name]): Anon_FileName = {
-    val __obj = js.Dynamic.literal(fileName = fileName, kind = kind, stories = stories)
+    val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], stories = stories.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FileName]
   }

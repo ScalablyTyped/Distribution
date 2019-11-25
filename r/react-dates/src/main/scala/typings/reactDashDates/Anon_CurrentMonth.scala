@@ -18,7 +18,7 @@ object Anon_CurrentMonth {
     onMonthSelect: (momentObj, String) => Unit,
     onYearSelect: (momentObj, String) => Unit
   ): Anon_CurrentMonth = {
-    val __obj = js.Dynamic.literal(month = month, onMonthSelect = js.Any.fromFunction2(onMonthSelect), onYearSelect = js.Any.fromFunction2(onYearSelect))
+    val __obj = js.Dynamic.literal(month = month.asInstanceOf[js.Any], onMonthSelect = js.Any.fromFunction2(onMonthSelect), onYearSelect = js.Any.fromFunction2(onYearSelect))
   
     __obj.asInstanceOf[Anon_CurrentMonth]
   }

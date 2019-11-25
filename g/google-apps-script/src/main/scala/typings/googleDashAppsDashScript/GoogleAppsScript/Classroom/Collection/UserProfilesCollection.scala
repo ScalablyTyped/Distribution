@@ -26,8 +26,8 @@ object UserProfilesCollection {
     Guardians: GuardiansCollection = null
   ): UserProfilesCollection = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
-    if (GuardianInvitations != null) __obj.updateDynamic("GuardianInvitations")(GuardianInvitations)
-    if (Guardians != null) __obj.updateDynamic("Guardians")(Guardians)
+    if (GuardianInvitations != null) __obj.updateDynamic("GuardianInvitations")(GuardianInvitations.asInstanceOf[js.Any])
+    if (Guardians != null) __obj.updateDynamic("Guardians")(Guardians.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserProfilesCollection]
   }
 }

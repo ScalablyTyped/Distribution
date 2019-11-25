@@ -21,7 +21,7 @@ object _Bucket {
   def apply(CreationDate: Date | String | Double = null, Name: String = null): _Bucket = {
     val __obj = js.Dynamic.literal()
     if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name)
+    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Bucket]
   }
 }

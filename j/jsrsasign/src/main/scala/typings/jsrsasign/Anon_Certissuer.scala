@@ -13,8 +13,8 @@ object Anon_Certissuer {
   @scala.inline
   def apply(certissuer: String = null, certsubject: String = null): Anon_Certissuer = {
     val __obj = js.Dynamic.literal()
-    if (certissuer != null) __obj.updateDynamic("certissuer")(certissuer)
-    if (certsubject != null) __obj.updateDynamic("certsubject")(certsubject)
+    if (certissuer != null) __obj.updateDynamic("certissuer")(certissuer.asInstanceOf[js.Any])
+    if (certsubject != null) __obj.updateDynamic("certsubject")(certsubject.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Certissuer]
   }
 }

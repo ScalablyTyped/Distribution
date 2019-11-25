@@ -12,7 +12,7 @@ trait Package extends js.Object {
 object Package {
   @scala.inline
   def apply(name: String, version: String): Package = {
-    val __obj = js.Dynamic.literal(name = name, version = version)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Package]
   }

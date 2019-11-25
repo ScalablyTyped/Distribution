@@ -15,7 +15,7 @@ object ReturningOptions {
   @scala.inline
   def apply(returning: js.UndefOr[Boolean] = js.undefined): ReturningOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(returning)) __obj.updateDynamic("returning")(returning)
+    if (!js.isUndefined(returning)) __obj.updateDynamic("returning")(returning.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReturningOptions]
   }
 }

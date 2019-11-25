@@ -26,11 +26,11 @@ object Param {
     fileName: String = null,
     value: String = null
   ): Param = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (comment != null) __obj.updateDynamic("comment")(comment)
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
-    if (fileName != null) __obj.updateDynamic("fileName")(fileName)
-    if (value != null) __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
+    if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Param]
   }
 }

@@ -11,7 +11,7 @@ trait IgnoreRules extends js.Object {
 object IgnoreRules {
   @scala.inline
   def apply(lowerPriorityThan: Double): IgnoreRules = {
-    val __obj = js.Dynamic.literal(lowerPriorityThan = lowerPriorityThan)
+    val __obj = js.Dynamic.literal(lowerPriorityThan = lowerPriorityThan.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IgnoreRules]
   }

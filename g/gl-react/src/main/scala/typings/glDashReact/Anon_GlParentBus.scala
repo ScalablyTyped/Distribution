@@ -12,7 +12,7 @@ trait Anon_GlParentBus extends js.Object {
 object Anon_GlParentBus {
   @scala.inline
   def apply(glParent: Bus): Anon_GlParentBus = {
-    val __obj = js.Dynamic.literal(glParent = glParent)
+    val __obj = js.Dynamic.literal(glParent = glParent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_GlParentBus]
   }

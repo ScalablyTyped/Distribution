@@ -20,8 +20,8 @@ object SheetsBorder {
   @scala.inline
   def apply(color: String = null, range: String = null, `type`: BorderType | String = null): SheetsBorder = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (range != null) __obj.updateDynamic("range")(range)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SheetsBorder]
   }

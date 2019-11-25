@@ -36,14 +36,14 @@ object Anon_Alert {
     sat: Int | Double = null,
     xy: js.Tuple2[Double, Double] = null
   ): Anon_Alert = {
-    val __obj = js.Dynamic.literal(alert = alert, bri = bri, on = on, reachable = reachable)
-    if (colormode != null) __obj.updateDynamic("colormode")(colormode)
+    val __obj = js.Dynamic.literal(alert = alert.asInstanceOf[js.Any], bri = bri.asInstanceOf[js.Any], on = on.asInstanceOf[js.Any], reachable = reachable.asInstanceOf[js.Any])
+    if (colormode != null) __obj.updateDynamic("colormode")(colormode.asInstanceOf[js.Any])
     if (ct != null) __obj.updateDynamic("ct")(ct.asInstanceOf[js.Any])
-    if (effect != null) __obj.updateDynamic("effect")(effect)
+    if (effect != null) __obj.updateDynamic("effect")(effect.asInstanceOf[js.Any])
     if (hue != null) __obj.updateDynamic("hue")(hue.asInstanceOf[js.Any])
-    if (rgb != null) __obj.updateDynamic("rgb")(rgb)
+    if (rgb != null) __obj.updateDynamic("rgb")(rgb.asInstanceOf[js.Any])
     if (sat != null) __obj.updateDynamic("sat")(sat.asInstanceOf[js.Any])
-    if (xy != null) __obj.updateDynamic("xy")(xy)
+    if (xy != null) __obj.updateDynamic("xy")(xy.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Alert]
   }
 }

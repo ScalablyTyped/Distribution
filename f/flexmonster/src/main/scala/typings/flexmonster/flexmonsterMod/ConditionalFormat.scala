@@ -31,13 +31,13 @@ object ConditionalFormat {
   ): ConditionalFormat = {
     val __obj = js.Dynamic.literal()
     if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (formatCSS != null) __obj.updateDynamic("formatCSS")(formatCSS)
-    if (formula != null) __obj.updateDynamic("formula")(formula)
-    if (hierarchy != null) __obj.updateDynamic("hierarchy")(hierarchy)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (formatCSS != null) __obj.updateDynamic("formatCSS")(formatCSS.asInstanceOf[js.Any])
+    if (formula != null) __obj.updateDynamic("formula")(formula.asInstanceOf[js.Any])
+    if (hierarchy != null) __obj.updateDynamic("hierarchy")(hierarchy.asInstanceOf[js.Any])
     if (isTotal != null) __obj.updateDynamic("isTotal")(isTotal.asInstanceOf[js.Any])
-    if (measureName != null) __obj.updateDynamic("measureName")(measureName)
-    if (member != null) __obj.updateDynamic("member")(member)
+    if (measureName != null) __obj.updateDynamic("measureName")(measureName.asInstanceOf[js.Any])
+    if (member != null) __obj.updateDynamic("member")(member.asInstanceOf[js.Any])
     if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionalFormat]
   }

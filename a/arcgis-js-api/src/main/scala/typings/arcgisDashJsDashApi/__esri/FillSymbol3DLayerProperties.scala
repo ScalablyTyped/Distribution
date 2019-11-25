@@ -42,10 +42,10 @@ object FillSymbol3DLayerProperties {
     outline: FillSymbol3DLayerOutlineProperties = null
   ): FillSymbol3DLayerProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(castShadows)) __obj.updateDynamic("castShadows")(castShadows)
-    if (edges != null) __obj.updateDynamic("edges")(edges)
-    if (material != null) __obj.updateDynamic("material")(material)
-    if (outline != null) __obj.updateDynamic("outline")(outline)
+    if (!js.isUndefined(castShadows)) __obj.updateDynamic("castShadows")(castShadows.asInstanceOf[js.Any])
+    if (edges != null) __obj.updateDynamic("edges")(edges.asInstanceOf[js.Any])
+    if (material != null) __obj.updateDynamic("material")(material.asInstanceOf[js.Any])
+    if (outline != null) __obj.updateDynamic("outline")(outline.asInstanceOf[js.Any])
     __obj.asInstanceOf[FillSymbol3DLayerProperties]
   }
 }

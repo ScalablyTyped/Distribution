@@ -14,7 +14,7 @@ trait Anon_PrivacyStatus extends js.Object {
 object Anon_PrivacyStatus {
   @scala.inline
   def apply(privacyStatus: String): Anon_PrivacyStatus = {
-    val __obj = js.Dynamic.literal(privacyStatus = privacyStatus)
+    val __obj = js.Dynamic.literal(privacyStatus = privacyStatus.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_PrivacyStatus]
   }

@@ -35,8 +35,8 @@ object TransformsStyle {
     if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
     if (scaleX != null) __obj.updateDynamic("scaleX")(scaleX.asInstanceOf[js.Any])
     if (scaleY != null) __obj.updateDynamic("scaleY")(scaleY.asInstanceOf[js.Any])
-    if (transform != null) __obj.updateDynamic("transform")(transform)
-    if (transformMatrix != null) __obj.updateDynamic("transformMatrix")(transformMatrix)
+    if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
+    if (transformMatrix != null) __obj.updateDynamic("transformMatrix")(transformMatrix.asInstanceOf[js.Any])
     if (translateX != null) __obj.updateDynamic("translateX")(translateX.asInstanceOf[js.Any])
     if (translateY != null) __obj.updateDynamic("translateY")(translateY.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransformsStyle]

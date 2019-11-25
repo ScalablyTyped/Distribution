@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait KeyFormat extends js.Object
 
+object KeyFormat {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def der: typings.node.nodeStrings.der = this.cast("der")
+  @scala.inline
+  def pem: typings.node.nodeStrings.pem = this.cast("pem")
+}
+

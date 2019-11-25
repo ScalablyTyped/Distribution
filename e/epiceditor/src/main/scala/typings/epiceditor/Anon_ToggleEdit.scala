@@ -13,7 +13,7 @@ trait Anon_ToggleEdit extends js.Object {
 object Anon_ToggleEdit {
   @scala.inline
   def apply(toggleEdit: String, toggleFullscreen: String, togglePreview: String): Anon_ToggleEdit = {
-    val __obj = js.Dynamic.literal(toggleEdit = toggleEdit, toggleFullscreen = toggleFullscreen, togglePreview = togglePreview)
+    val __obj = js.Dynamic.literal(toggleEdit = toggleEdit.asInstanceOf[js.Any], toggleFullscreen = toggleFullscreen.asInstanceOf[js.Any], togglePreview = togglePreview.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ToggleEdit]
   }

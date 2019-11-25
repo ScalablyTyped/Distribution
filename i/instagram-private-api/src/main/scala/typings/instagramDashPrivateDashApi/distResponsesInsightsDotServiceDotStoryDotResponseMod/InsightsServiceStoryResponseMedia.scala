@@ -29,7 +29,7 @@ object InsightsServiceStoryResponseMedia {
     taps_back_count: Double,
     taps_forward_count: Double
   ): InsightsServiceStoryResponseMedia = {
-    val __obj = js.Dynamic.literal(creation_time = creation_time, id = id, inline_insights_node = inline_insights_node, instagram_actor = instagram_actor, instagram_media_id = instagram_media_id, instagram_media_owner_id = instagram_media_owner_id, shopping_outbound_click_count = shopping_outbound_click_count, taps_back_count = taps_back_count, taps_forward_count = taps_forward_count)
+    val __obj = js.Dynamic.literal(creation_time = creation_time.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], inline_insights_node = inline_insights_node.asInstanceOf[js.Any], instagram_actor = instagram_actor.asInstanceOf[js.Any], instagram_media_id = instagram_media_id.asInstanceOf[js.Any], instagram_media_owner_id = instagram_media_owner_id.asInstanceOf[js.Any], shopping_outbound_click_count = shopping_outbound_click_count.asInstanceOf[js.Any], taps_back_count = taps_back_count.asInstanceOf[js.Any], taps_forward_count = taps_forward_count.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InsightsServiceStoryResponseMedia]
   }

@@ -11,7 +11,7 @@ trait SessionSendingEvent extends js.Object {
 object SessionSendingEvent {
   @scala.inline
   def apply(request: OutgoingRequest): SessionSendingEvent = {
-    val __obj = js.Dynamic.literal(request = request)
+    val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SessionSendingEvent]
   }

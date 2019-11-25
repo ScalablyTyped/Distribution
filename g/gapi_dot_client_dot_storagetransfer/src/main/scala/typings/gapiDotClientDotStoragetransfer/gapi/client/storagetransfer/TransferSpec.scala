@@ -38,12 +38,12 @@ object TransferSpec {
     transferOptions: TransferOptions = null
   ): TransferSpec = {
     val __obj = js.Dynamic.literal()
-    if (awsS3DataSource != null) __obj.updateDynamic("awsS3DataSource")(awsS3DataSource)
-    if (gcsDataSink != null) __obj.updateDynamic("gcsDataSink")(gcsDataSink)
-    if (gcsDataSource != null) __obj.updateDynamic("gcsDataSource")(gcsDataSource)
-    if (httpDataSource != null) __obj.updateDynamic("httpDataSource")(httpDataSource)
-    if (objectConditions != null) __obj.updateDynamic("objectConditions")(objectConditions)
-    if (transferOptions != null) __obj.updateDynamic("transferOptions")(transferOptions)
+    if (awsS3DataSource != null) __obj.updateDynamic("awsS3DataSource")(awsS3DataSource.asInstanceOf[js.Any])
+    if (gcsDataSink != null) __obj.updateDynamic("gcsDataSink")(gcsDataSink.asInstanceOf[js.Any])
+    if (gcsDataSource != null) __obj.updateDynamic("gcsDataSource")(gcsDataSource.asInstanceOf[js.Any])
+    if (httpDataSource != null) __obj.updateDynamic("httpDataSource")(httpDataSource.asInstanceOf[js.Any])
+    if (objectConditions != null) __obj.updateDynamic("objectConditions")(objectConditions.asInstanceOf[js.Any])
+    if (transferOptions != null) __obj.updateDynamic("transferOptions")(transferOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransferSpec]
   }
 }

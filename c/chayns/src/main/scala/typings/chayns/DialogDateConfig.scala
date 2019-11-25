@@ -17,10 +17,10 @@ trait DialogDateConfig extends js.Object {
 object DialogDateConfig {
   @scala.inline
   def apply(dateType: dateType, maxDate: Date = null, minDate: Date = null, preSelect: Date = null): DialogDateConfig = {
-    val __obj = js.Dynamic.literal(dateType = dateType)
-    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate)
-    if (minDate != null) __obj.updateDynamic("minDate")(minDate)
-    if (preSelect != null) __obj.updateDynamic("preSelect")(preSelect)
+    val __obj = js.Dynamic.literal(dateType = dateType.asInstanceOf[js.Any])
+    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
+    if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
+    if (preSelect != null) __obj.updateDynamic("preSelect")(preSelect.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogDateConfig]
   }
 }

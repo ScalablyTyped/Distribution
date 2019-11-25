@@ -12,7 +12,7 @@ object FinchOptions {
   @scala.inline
   def apply(CoerceParameterTypes: js.UndefOr[Boolean] = js.undefined): FinchOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(CoerceParameterTypes)) __obj.updateDynamic("CoerceParameterTypes")(CoerceParameterTypes)
+    if (!js.isUndefined(CoerceParameterTypes)) __obj.updateDynamic("CoerceParameterTypes")(CoerceParameterTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[FinchOptions]
   }
 }

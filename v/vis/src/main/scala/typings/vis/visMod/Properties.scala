@@ -23,8 +23,8 @@ object Properties {
     pointer: Anon_Canvas,
     previousSelection: Anon_EdgesNodes = null
   ): Properties = {
-    val __obj = js.Dynamic.literal(edges = edges, event = event, nodes = nodes, pointer = pointer)
-    if (previousSelection != null) __obj.updateDynamic("previousSelection")(previousSelection)
+    val __obj = js.Dynamic.literal(edges = edges.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any], pointer = pointer.asInstanceOf[js.Any])
+    if (previousSelection != null) __obj.updateDynamic("previousSelection")(previousSelection.asInstanceOf[js.Any])
     __obj.asInstanceOf[Properties]
   }
 }

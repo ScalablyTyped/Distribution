@@ -12,7 +12,7 @@ object RemarketingAudienceAudienceDefinition {
   @scala.inline
   def apply(includeConditions: IncludeConditions = null): RemarketingAudienceAudienceDefinition = {
     val __obj = js.Dynamic.literal()
-    if (includeConditions != null) __obj.updateDynamic("includeConditions")(includeConditions)
+    if (includeConditions != null) __obj.updateDynamic("includeConditions")(includeConditions.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemarketingAudienceAudienceDefinition]
   }
 }

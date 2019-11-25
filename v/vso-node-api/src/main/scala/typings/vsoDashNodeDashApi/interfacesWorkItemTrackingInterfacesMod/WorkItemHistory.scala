@@ -22,7 +22,7 @@ object WorkItemHistory {
     url: String,
     value: String
   ): WorkItemHistory = {
-    val __obj = js.Dynamic.literal(_links = _links, rev = rev, revisedBy = revisedBy, revisedDate = revisedDate, url = url, value = value)
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], rev = rev.asInstanceOf[js.Any], revisedBy = revisedBy.asInstanceOf[js.Any], revisedDate = revisedDate.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WorkItemHistory]
   }

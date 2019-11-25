@@ -26,8 +26,8 @@ object _UnmarshalledStartingPosition {
     Timestamp: Date = null
   ): _UnmarshalledStartingPosition = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
-    if (SequenceNumber != null) __obj.updateDynamic("SequenceNumber")(SequenceNumber)
-    if (Timestamp != null) __obj.updateDynamic("Timestamp")(Timestamp)
+    if (SequenceNumber != null) __obj.updateDynamic("SequenceNumber")(SequenceNumber.asInstanceOf[js.Any])
+    if (Timestamp != null) __obj.updateDynamic("Timestamp")(Timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledStartingPosition]
   }
 }

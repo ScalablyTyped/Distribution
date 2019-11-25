@@ -15,7 +15,7 @@ object JSPMConfiguration {
   @scala.inline
   def apply(jspm: typings.typeDashFest.sourcePackageDashJsonMod.PackageJson = null): JSPMConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (jspm != null) __obj.updateDynamic("jspm")(jspm)
+    if (jspm != null) __obj.updateDynamic("jspm")(jspm.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSPMConfiguration]
   }
 }

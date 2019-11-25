@@ -16,7 +16,7 @@ trait GeneratorProps extends js.Object {
 object GeneratorProps {
   @scala.inline
   def apply(suffixCls: String, tagName: header | footer | main | section): GeneratorProps = {
-    val __obj = js.Dynamic.literal(suffixCls = suffixCls, tagName = tagName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(suffixCls = suffixCls.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GeneratorProps]
   }

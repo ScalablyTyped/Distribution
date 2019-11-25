@@ -5,8 +5,8 @@ import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.NHWC
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.ceil
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.floor
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.round
-import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.same
-import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.valid
+import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.same_
+import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.valid_
 import typings.atTensorflowTfjsDashCore.distOpsFusedUnderscoreUtilMod.Activation
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor3D
@@ -24,7 +24,7 @@ trait Anon_Activation[T /* <: Tensor3D | Tensor4D */] extends js.Object {
   var dilations: js.UndefOr[(js.Tuple2[Double, Double]) | Double] = js.undefined
   var dimRoundingMode: js.UndefOr[floor | round | ceil] = js.undefined
   var filter: Tensor4D | TensorLike
-  var pad: valid | same | Double
+  var pad: valid_ | same_ | Double
   var preluActivationWeights: js.UndefOr[Tensor[Rank]] = js.undefined
   var strides: (js.Tuple2[Double, Double]) | Double
   var x: T | TensorLike
@@ -34,7 +34,7 @@ object Anon_Activation {
   @scala.inline
   def apply[T /* <: Tensor3D | Tensor4D */](
     filter: Tensor4D | TensorLike,
-    pad: valid | same | Double,
+    pad: valid_ | same_ | Double,
     strides: (js.Tuple2[Double, Double]) | Double,
     x: T | TensorLike,
     activation: Activation = null,
@@ -45,12 +45,12 @@ object Anon_Activation {
     preluActivationWeights: Tensor[Rank] = null
   ): Anon_Activation[T] = {
     val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any], pad = pad.asInstanceOf[js.Any], strides = strides.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any])
-    if (activation != null) __obj.updateDynamic("activation")(activation)
+    if (activation != null) __obj.updateDynamic("activation")(activation.asInstanceOf[js.Any])
     if (bias != null) __obj.updateDynamic("bias")(bias.asInstanceOf[js.Any])
     if (dataFormat != null) __obj.updateDynamic("dataFormat")(dataFormat.asInstanceOf[js.Any])
     if (dilations != null) __obj.updateDynamic("dilations")(dilations.asInstanceOf[js.Any])
     if (dimRoundingMode != null) __obj.updateDynamic("dimRoundingMode")(dimRoundingMode.asInstanceOf[js.Any])
-    if (preluActivationWeights != null) __obj.updateDynamic("preluActivationWeights")(preluActivationWeights)
+    if (preluActivationWeights != null) __obj.updateDynamic("preluActivationWeights")(preluActivationWeights.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Activation[T]]
   }
 }

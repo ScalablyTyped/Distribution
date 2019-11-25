@@ -20,10 +20,10 @@ object PhotoSettings {
     redEyeReduction: js.UndefOr[Boolean] = js.undefined
   ): PhotoSettings = {
     val __obj = js.Dynamic.literal()
-    if (fillLightMode != null) __obj.updateDynamic("fillLightMode")(fillLightMode)
+    if (fillLightMode != null) __obj.updateDynamic("fillLightMode")(fillLightMode.asInstanceOf[js.Any])
     if (imageHeight != null) __obj.updateDynamic("imageHeight")(imageHeight.asInstanceOf[js.Any])
     if (imageWidth != null) __obj.updateDynamic("imageWidth")(imageWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(redEyeReduction)) __obj.updateDynamic("redEyeReduction")(redEyeReduction)
+    if (!js.isUndefined(redEyeReduction)) __obj.updateDynamic("redEyeReduction")(redEyeReduction.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhotoSettings]
   }
 }

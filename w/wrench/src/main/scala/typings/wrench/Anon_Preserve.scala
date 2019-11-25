@@ -12,7 +12,7 @@ object Anon_Preserve {
   @scala.inline
   def apply(preserve: js.UndefOr[Boolean] = js.undefined): Anon_Preserve = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(preserve)) __obj.updateDynamic("preserve")(preserve)
+    if (!js.isUndefined(preserve)) __obj.updateDynamic("preserve")(preserve.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Preserve]
   }
 }

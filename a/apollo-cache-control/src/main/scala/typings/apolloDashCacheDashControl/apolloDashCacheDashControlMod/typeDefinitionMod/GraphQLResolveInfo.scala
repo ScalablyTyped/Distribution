@@ -12,7 +12,7 @@ trait GraphQLResolveInfo extends js.Object {
 object GraphQLResolveInfo {
   @scala.inline
   def apply(cacheControl: Anon_CacheHint): GraphQLResolveInfo = {
-    val __obj = js.Dynamic.literal(cacheControl = cacheControl)
+    val __obj = js.Dynamic.literal(cacheControl = cacheControl.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GraphQLResolveInfo]
   }

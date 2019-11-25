@@ -19,8 +19,8 @@ trait EnumType extends IDLRootType {
 object EnumType {
   @scala.inline
   def apply(extAttrs: js.Array[ExtendedAttribute], name: String, `type`: enum, values: js.Array[Anon_String]): EnumType = {
-    val __obj = js.Dynamic.literal(extAttrs = extAttrs, name = name, values = values)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumType]
   }
 }

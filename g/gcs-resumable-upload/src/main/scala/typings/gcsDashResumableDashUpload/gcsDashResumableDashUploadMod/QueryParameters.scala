@@ -32,15 +32,15 @@ object QueryParameters {
     userProject: String = null
   ): QueryParameters = {
     val __obj = js.Dynamic.literal()
-    if (contentEncoding != null) __obj.updateDynamic("contentEncoding")(contentEncoding)
+    if (contentEncoding != null) __obj.updateDynamic("contentEncoding")(contentEncoding.asInstanceOf[js.Any])
     if (ifGenerationMatch != null) __obj.updateDynamic("ifGenerationMatch")(ifGenerationMatch.asInstanceOf[js.Any])
     if (ifGenerationNotMatch != null) __obj.updateDynamic("ifGenerationNotMatch")(ifGenerationNotMatch.asInstanceOf[js.Any])
     if (ifMetagenerationMatch != null) __obj.updateDynamic("ifMetagenerationMatch")(ifMetagenerationMatch.asInstanceOf[js.Any])
     if (ifMetagenerationNotMatch != null) __obj.updateDynamic("ifMetagenerationNotMatch")(ifMetagenerationNotMatch.asInstanceOf[js.Any])
-    if (kmsKeyName != null) __obj.updateDynamic("kmsKeyName")(kmsKeyName)
-    if (predefinedAcl != null) __obj.updateDynamic("predefinedAcl")(predefinedAcl)
+    if (kmsKeyName != null) __obj.updateDynamic("kmsKeyName")(kmsKeyName.asInstanceOf[js.Any])
+    if (predefinedAcl != null) __obj.updateDynamic("predefinedAcl")(predefinedAcl.asInstanceOf[js.Any])
     if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
-    if (userProject != null) __obj.updateDynamic("userProject")(userProject)
+    if (userProject != null) __obj.updateDynamic("userProject")(userProject.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryParameters]
   }
 }

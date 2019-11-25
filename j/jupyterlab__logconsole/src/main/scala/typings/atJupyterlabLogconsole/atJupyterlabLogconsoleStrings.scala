@@ -15,19 +15,27 @@ object atJupyterlabLogconsoleStrings {
   sealed trait clear extends IContentChange
   
   @js.native
-  sealed trait critical extends LogLevel
+  sealed trait critical
+    extends FullLogLevel
+       with LogLevel
   
   @js.native
-  sealed trait debug extends LogLevel
+  sealed trait debug
+    extends FullLogLevel
+       with LogLevel
   
   @js.native
-  sealed trait error extends LogLevel
+  sealed trait error
+    extends FullLogLevel
+       with LogLevel
   
   @js.native
   sealed trait html extends js.Object
   
   @js.native
-  sealed trait info extends LogLevel
+  sealed trait info
+    extends FullLogLevel
+       with LogLevel
   
   @js.native
   sealed trait level extends js.Object
@@ -48,7 +56,9 @@ object atJupyterlabLogconsoleStrings {
   sealed trait text extends js.Object
   
   @js.native
-  sealed trait warning extends LogLevel
+  sealed trait warning
+    extends FullLogLevel
+       with LogLevel
   
   @scala.inline
   def append: append = "append".asInstanceOf[append]

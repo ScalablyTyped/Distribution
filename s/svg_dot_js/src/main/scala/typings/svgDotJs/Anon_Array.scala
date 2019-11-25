@@ -22,7 +22,7 @@ object Anon_Array {
     map: (js.Array[_], js.Function) => js.Any,
     radians: Double => Double
   ): Anon_Array = {
-    val __obj = js.Dynamic.literal(degrees = js.Any.fromFunction1(degrees), filter = js.Any.fromFunction2(filter), filterSVGElements = filterSVGElements, map = js.Any.fromFunction2(map), radians = js.Any.fromFunction1(radians))
+    val __obj = js.Dynamic.literal(degrees = js.Any.fromFunction1(degrees), filter = js.Any.fromFunction2(filter), filterSVGElements = filterSVGElements.asInstanceOf[js.Any], map = js.Any.fromFunction2(map), radians = js.Any.fromFunction1(radians))
   
     __obj.asInstanceOf[Anon_Array]
   }

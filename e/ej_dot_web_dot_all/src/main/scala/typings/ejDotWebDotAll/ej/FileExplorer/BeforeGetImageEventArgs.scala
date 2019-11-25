@@ -36,12 +36,12 @@ object BeforeGetImageEventArgs {
     `type`: String = null
   ): BeforeGetImageEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(canCompress)) __obj.updateDynamic("canCompress")(canCompress)
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (selectedItems != null) __obj.updateDynamic("selectedItems")(selectedItems)
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(canCompress)) __obj.updateDynamic("canCompress")(canCompress.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (selectedItems != null) __obj.updateDynamic("selectedItems")(selectedItems.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BeforeGetImageEventArgs]
   }
 }

@@ -20,8 +20,8 @@ object DebugInfo {
     uuid: String,
     tags: StringDictionary[js.Any] = null
   ): DebugInfo = {
-    val __obj = js.Dynamic.literal(millis = millis, operation = operation, uuid = uuid)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
+    val __obj = js.Dynamic.literal(millis = millis.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[DebugInfo]
   }
 }

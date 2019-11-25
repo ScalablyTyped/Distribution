@@ -13,7 +13,7 @@ trait Anon_CheckResult extends js.Object {
 object Anon_CheckResult {
   @scala.inline
   def apply(checkResult: StringDictionary[Boolean], errMsg: Anon_Msg): Anon_CheckResult = {
-    val __obj = js.Dynamic.literal(checkResult = checkResult, errMsg = errMsg)
+    val __obj = js.Dynamic.literal(checkResult = checkResult.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CheckResult]
   }

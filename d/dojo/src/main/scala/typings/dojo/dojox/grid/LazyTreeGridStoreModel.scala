@@ -1,6 +1,5 @@
 package typings.dojo.dojox.grid
 
-import typings.dojo.Fn_ItemsSize
 import typings.dojo.dijit.tree.ForestStoreModel
 import typings.dojo.dojo.data.api.Item
 import scala.scalajs.js
@@ -28,8 +27,17 @@ class LazyTreeGridStoreModel protected () extends ForestStoreModel {
     * @param onError
     * @param queryObj
     */
-  def getChildren(parentItem: Item, onComplete: Fn_ItemsSize, onError: js.Function): Unit = js.native
-  def getChildren(parentItem: Item, onComplete: Fn_ItemsSize, onError: js.Function, queryObj: js.Object): Unit = js.native
+  def getChildren(
+    parentItem: Item,
+    onComplete: js.Function2[/* items */ js.Array[js.Object], /* size */ js.UndefOr[Double], _],
+    onError: js.Function
+  ): Unit = js.native
+  def getChildren(
+    parentItem: Item,
+    onComplete: js.Function2[/* items */ js.Array[js.Object], /* size */ js.UndefOr[Double], _],
+    onError: js.Function,
+    queryObj: js.Object
+  ): Unit = js.native
   /**
     *
     * @param item

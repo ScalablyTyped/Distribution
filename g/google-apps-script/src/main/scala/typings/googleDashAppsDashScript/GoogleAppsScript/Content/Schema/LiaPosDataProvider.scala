@@ -13,8 +13,8 @@ object LiaPosDataProvider {
   @scala.inline
   def apply(posDataProviderId: String = null, posExternalAccountId: String = null): LiaPosDataProvider = {
     val __obj = js.Dynamic.literal()
-    if (posDataProviderId != null) __obj.updateDynamic("posDataProviderId")(posDataProviderId)
-    if (posExternalAccountId != null) __obj.updateDynamic("posExternalAccountId")(posExternalAccountId)
+    if (posDataProviderId != null) __obj.updateDynamic("posDataProviderId")(posDataProviderId.asInstanceOf[js.Any])
+    if (posExternalAccountId != null) __obj.updateDynamic("posExternalAccountId")(posExternalAccountId.asInstanceOf[js.Any])
     __obj.asInstanceOf[LiaPosDataProvider]
   }
 }

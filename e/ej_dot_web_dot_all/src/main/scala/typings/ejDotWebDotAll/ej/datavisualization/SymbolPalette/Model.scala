@@ -85,20 +85,20 @@ object Model {
     width: Int | Double = null
   ): Model = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowDrag)) __obj.updateDynamic("allowDrag")(allowDrag)
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
-    if (defaultSettings != null) __obj.updateDynamic("defaultSettings")(defaultSettings)
-    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId)
+    if (!js.isUndefined(allowDrag)) __obj.updateDynamic("allowDrag")(allowDrag.asInstanceOf[js.Any])
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
+    if (defaultSettings != null) __obj.updateDynamic("defaultSettings")(defaultSettings.asInstanceOf[js.Any])
+    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId.asInstanceOf[js.Any])
     if (headerHeight != null) __obj.updateDynamic("headerHeight")(headerHeight.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (paletteItemHeight != null) __obj.updateDynamic("paletteItemHeight")(paletteItemHeight.asInstanceOf[js.Any])
     if (paletteItemWidth != null) __obj.updateDynamic("paletteItemWidth")(paletteItemWidth.asInstanceOf[js.Any])
-    if (palettes != null) __obj.updateDynamic("palettes")(palettes)
+    if (palettes != null) __obj.updateDynamic("palettes")(palettes.asInstanceOf[js.Any])
     if (previewHeight != null) __obj.updateDynamic("previewHeight")(previewHeight.asInstanceOf[js.Any])
-    if (previewOffset != null) __obj.updateDynamic("previewOffset")(previewOffset)
+    if (previewOffset != null) __obj.updateDynamic("previewOffset")(previewOffset.asInstanceOf[js.Any])
     if (previewWidth != null) __obj.updateDynamic("previewWidth")(previewWidth.asInstanceOf[js.Any])
     if (selectionChange != null) __obj.updateDynamic("selectionChange")(js.Any.fromFunction1(selectionChange))
-    if (!js.isUndefined(showPaletteItemText)) __obj.updateDynamic("showPaletteItemText")(showPaletteItemText)
+    if (!js.isUndefined(showPaletteItemText)) __obj.updateDynamic("showPaletteItemText")(showPaletteItemText.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]
   }

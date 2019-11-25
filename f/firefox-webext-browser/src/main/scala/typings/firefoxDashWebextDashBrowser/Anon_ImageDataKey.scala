@@ -34,7 +34,7 @@ object Anon_ImageDataKey {
     imageData: ImageDataType | NumberDictionary[ImageDataType] = null,
     path: String | NumberDictionary[String] = null
   ): Anon_ImageDataKey = {
-    val __obj = js.Dynamic.literal(tabId = tabId)
+    val __obj = js.Dynamic.literal(tabId = tabId.asInstanceOf[js.Any])
     if (imageData != null) __obj.updateDynamic("imageData")(imageData.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ImageDataKey]

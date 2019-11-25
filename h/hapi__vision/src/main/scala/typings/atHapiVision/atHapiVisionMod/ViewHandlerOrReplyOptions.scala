@@ -74,19 +74,19 @@ object ViewHandlerOrReplyOptions {
     runtimeOptions: RuntimeOptions = null
   ): ViewHandlerOrReplyOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowAbsolutePaths)) __obj.updateDynamic("allowAbsolutePaths")(allowAbsolutePaths)
-    if (!js.isUndefined(allowInsecureAccess)) __obj.updateDynamic("allowInsecureAccess")(allowInsecureAccess)
+    if (!js.isUndefined(allowAbsolutePaths)) __obj.updateDynamic("allowAbsolutePaths")(allowAbsolutePaths.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowInsecureAccess)) __obj.updateDynamic("allowInsecureAccess")(allowInsecureAccess.asInstanceOf[js.Any])
     if (compileMode != null) __obj.updateDynamic("compileMode")(compileMode.asInstanceOf[js.Any])
-    if (compileOptions != null) __obj.updateDynamic("compileOptions")(compileOptions)
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
+    if (compileOptions != null) __obj.updateDynamic("compileOptions")(compileOptions.asInstanceOf[js.Any])
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (layoutKeyword != null) __obj.updateDynamic("layoutKeyword")(layoutKeyword)
+    if (layoutKeyword != null) __obj.updateDynamic("layoutKeyword")(layoutKeyword.asInstanceOf[js.Any])
     if (layoutPath != null) __obj.updateDynamic("layoutPath")(layoutPath.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (relativeTo != null) __obj.updateDynamic("relativeTo")(relativeTo)
-    if (runtimeOptions != null) __obj.updateDynamic("runtimeOptions")(runtimeOptions)
+    if (relativeTo != null) __obj.updateDynamic("relativeTo")(relativeTo.asInstanceOf[js.Any])
+    if (runtimeOptions != null) __obj.updateDynamic("runtimeOptions")(runtimeOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewHandlerOrReplyOptions]
   }
 }

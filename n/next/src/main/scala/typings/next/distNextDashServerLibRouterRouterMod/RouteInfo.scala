@@ -17,9 +17,9 @@ object RouteInfo {
   @scala.inline
   def apply(Component: ComponentType[js.Object], err: Error = null, error: js.Any = null, props: js.Any = null): RouteInfo = {
     val __obj = js.Dynamic.literal(Component = Component.asInstanceOf[js.Any])
-    if (err != null) __obj.updateDynamic("err")(err)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (props != null) __obj.updateDynamic("props")(props)
+    if (err != null) __obj.updateDynamic("err")(err.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (props != null) __obj.updateDynamic("props")(props.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteInfo]
   }
 }

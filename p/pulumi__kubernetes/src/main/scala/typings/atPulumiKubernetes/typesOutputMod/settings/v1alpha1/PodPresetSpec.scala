@@ -44,7 +44,7 @@ object PodPresetSpec {
     volumeMounts: js.Array[VolumeMount],
     volumes: js.Array[Volume]
   ): PodPresetSpec = {
-    val __obj = js.Dynamic.literal(env = env, envFrom = envFrom, selector = selector, volumeMounts = volumeMounts, volumes = volumes)
+    val __obj = js.Dynamic.literal(env = env.asInstanceOf[js.Any], envFrom = envFrom.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], volumeMounts = volumeMounts.asInstanceOf[js.Any], volumes = volumes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PodPresetSpec]
   }

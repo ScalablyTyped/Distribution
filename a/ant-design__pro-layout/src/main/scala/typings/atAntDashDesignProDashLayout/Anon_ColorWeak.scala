@@ -13,8 +13,8 @@ object Anon_ColorWeak {
   @scala.inline
   def apply(colorWeak: js.UndefOr[Boolean] = js.undefined, primaryColor: String = null): Anon_ColorWeak = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(colorWeak)) __obj.updateDynamic("colorWeak")(colorWeak)
-    if (primaryColor != null) __obj.updateDynamic("primaryColor")(primaryColor)
+    if (!js.isUndefined(colorWeak)) __obj.updateDynamic("colorWeak")(colorWeak.asInstanceOf[js.Any])
+    if (primaryColor != null) __obj.updateDynamic("primaryColor")(primaryColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ColorWeak]
   }
 }

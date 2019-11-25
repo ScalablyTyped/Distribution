@@ -29,15 +29,15 @@ object Anon_AllowedInMetered {
     saveAsName: String = null,
     showInDownloads: js.UndefOr[Boolean] = js.undefined
   ): Anon_AllowedInMetered = {
-    val __obj = js.Dynamic.literal(tempDownloadPath = tempDownloadPath)
-    if (!js.isUndefined(allowedInMetered)) __obj.updateDynamic("allowedInMetered")(allowedInMetered)
-    if (!js.isUndefined(allowedInRoaming)) __obj.updateDynamic("allowedInRoaming")(allowedInRoaming)
-    if (downloadDescription != null) __obj.updateDynamic("downloadDescription")(downloadDescription)
-    if (downloadTitle != null) __obj.updateDynamic("downloadTitle")(downloadTitle)
-    if (!js.isUndefined(external)) __obj.updateDynamic("external")(external)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (saveAsName != null) __obj.updateDynamic("saveAsName")(saveAsName)
-    if (!js.isUndefined(showInDownloads)) __obj.updateDynamic("showInDownloads")(showInDownloads)
+    val __obj = js.Dynamic.literal(tempDownloadPath = tempDownloadPath.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowedInMetered)) __obj.updateDynamic("allowedInMetered")(allowedInMetered.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowedInRoaming)) __obj.updateDynamic("allowedInRoaming")(allowedInRoaming.asInstanceOf[js.Any])
+    if (downloadDescription != null) __obj.updateDynamic("downloadDescription")(downloadDescription.asInstanceOf[js.Any])
+    if (downloadTitle != null) __obj.updateDynamic("downloadTitle")(downloadTitle.asInstanceOf[js.Any])
+    if (!js.isUndefined(external)) __obj.updateDynamic("external")(external.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (saveAsName != null) __obj.updateDynamic("saveAsName")(saveAsName.asInstanceOf[js.Any])
+    if (!js.isUndefined(showInDownloads)) __obj.updateDynamic("showInDownloads")(showInDownloads.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AllowedInMetered]
   }
 }

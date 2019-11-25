@@ -52,7 +52,7 @@ object PageSettings {
     if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
     if (pageSizeMode != null) __obj.updateDynamic("pageSizeMode")(pageSizeMode.asInstanceOf[js.Any])
     if (printMode != null) __obj.updateDynamic("printMode")(printMode.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template)
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     if (totalRecordsCount != null) __obj.updateDynamic("totalRecordsCount")(totalRecordsCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageSettings]
   }

@@ -87,10 +87,10 @@ object PlusNativeObjImageSliderImageStyles {
   ): PlusNativeObjImageSliderImageStyles = {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height)
-    if (src != null) __obj.updateDynamic("src")(src)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
     if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusNativeObjImageSliderImageStyles]
   }
 }

@@ -26,7 +26,7 @@ object ArgmentedEvent {
     touch: Anon_,
     `type`: T
   ): ArgmentedEvent[T] = {
-    val __obj = js.Dynamic.literal(mainType = mainType, resize = resize, scroll = scroll, subType = subType, touch = touch)
+    val __obj = js.Dynamic.literal(mainType = mainType.asInstanceOf[js.Any], resize = resize.asInstanceOf[js.Any], scroll = scroll.asInstanceOf[js.Any], subType = subType.asInstanceOf[js.Any], touch = touch.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArgmentedEvent[T]]
   }

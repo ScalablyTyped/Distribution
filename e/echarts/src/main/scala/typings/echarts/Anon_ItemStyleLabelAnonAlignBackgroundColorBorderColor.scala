@@ -19,8 +19,8 @@ object Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColor {
   @scala.inline
   def apply(itemStyle: Anon_BorderColorBorderType = null, label: Anon_AlignBackgroundColorBorderColor = null): Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColor = {
     val __obj = js.Dynamic.literal()
-    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
-    if (label != null) __obj.updateDynamic("label")(label)
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColor]
   }
 }

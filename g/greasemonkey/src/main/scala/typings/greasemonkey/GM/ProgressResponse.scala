@@ -32,7 +32,7 @@ object ProgressResponse {
     total: Double,
     context: TContext = null
   ): ProgressResponse[TContext] = {
-    val __obj = js.Dynamic.literal(finalUrl = finalUrl, lengthComputable = lengthComputable, loaded = loaded, readyState = readyState.asInstanceOf[js.Any], response = response, responseHeaders = responseHeaders, responseText = responseText, responseXML = responseXML.asInstanceOf[js.Any], status = status, statusText = statusText, total = total)
+    val __obj = js.Dynamic.literal(finalUrl = finalUrl.asInstanceOf[js.Any], lengthComputable = lengthComputable.asInstanceOf[js.Any], loaded = loaded.asInstanceOf[js.Any], readyState = readyState.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], responseHeaders = responseHeaders.asInstanceOf[js.Any], responseText = responseText.asInstanceOf[js.Any], responseXML = responseXML.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProgressResponse[TContext]]
   }

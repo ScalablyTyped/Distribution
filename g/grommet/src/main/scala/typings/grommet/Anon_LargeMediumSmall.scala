@@ -14,9 +14,9 @@ object Anon_LargeMediumSmall {
   @scala.inline
   def apply(large: Anon_ValueNumber = null, medium: Anon_ValueNumber = null, small: Anon_BorderSize = null): Anon_LargeMediumSmall = {
     val __obj = js.Dynamic.literal()
-    if (large != null) __obj.updateDynamic("large")(large)
-    if (medium != null) __obj.updateDynamic("medium")(medium)
-    if (small != null) __obj.updateDynamic("small")(small)
+    if (large != null) __obj.updateDynamic("large")(large.asInstanceOf[js.Any])
+    if (medium != null) __obj.updateDynamic("medium")(medium.asInstanceOf[js.Any])
+    if (small != null) __obj.updateDynamic("small")(small.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_LargeMediumSmall]
   }
 }

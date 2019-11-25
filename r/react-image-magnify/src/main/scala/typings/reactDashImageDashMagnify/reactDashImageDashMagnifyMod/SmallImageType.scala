@@ -33,13 +33,13 @@ object SmallImageType {
     srcSet: String = null,
     width: Int | Double = null
   ): SmallImageType = {
-    val __obj = js.Dynamic.literal(isFluidWidth = isFluidWidth, src = src)
-    if (alt != null) __obj.updateDynamic("alt")(alt)
+    val __obj = js.Dynamic.literal(isFluidWidth = isFluidWidth.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
+    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction0(onError))
     if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction0(onLoad))
-    if (sizes != null) __obj.updateDynamic("sizes")(sizes)
-    if (srcSet != null) __obj.updateDynamic("srcSet")(srcSet)
+    if (sizes != null) __obj.updateDynamic("sizes")(sizes.asInstanceOf[js.Any])
+    if (srcSet != null) __obj.updateDynamic("srcSet")(srcSet.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[SmallImageType]
   }

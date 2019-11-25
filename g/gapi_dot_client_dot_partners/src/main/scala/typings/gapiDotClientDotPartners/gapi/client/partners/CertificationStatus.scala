@@ -24,9 +24,9 @@ object CertificationStatus {
     userCount: Int | Double = null
   ): CertificationStatus = {
     val __obj = js.Dynamic.literal()
-    if (examStatuses != null) __obj.updateDynamic("examStatuses")(examStatuses)
-    if (!js.isUndefined(isCertified)) __obj.updateDynamic("isCertified")(isCertified)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (examStatuses != null) __obj.updateDynamic("examStatuses")(examStatuses.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCertified)) __obj.updateDynamic("isCertified")(isCertified.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (userCount != null) __obj.updateDynamic("userCount")(userCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertificationStatus]
   }

@@ -26,9 +26,9 @@ object IShimmerColors {
   @scala.inline
   def apply(background: String = null, shimmer: String = null, shimmerWave: String = null): IShimmerColors = {
     val __obj = js.Dynamic.literal()
-    if (background != null) __obj.updateDynamic("background")(background)
-    if (shimmer != null) __obj.updateDynamic("shimmer")(shimmer)
-    if (shimmerWave != null) __obj.updateDynamic("shimmerWave")(shimmerWave)
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    if (shimmer != null) __obj.updateDynamic("shimmer")(shimmer.asInstanceOf[js.Any])
+    if (shimmerWave != null) __obj.updateDynamic("shimmerWave")(shimmerWave.asInstanceOf[js.Any])
     __obj.asInstanceOf[IShimmerColors]
   }
 }

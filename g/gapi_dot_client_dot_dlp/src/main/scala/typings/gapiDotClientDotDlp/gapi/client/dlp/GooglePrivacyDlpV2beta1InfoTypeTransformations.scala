@@ -16,7 +16,7 @@ object GooglePrivacyDlpV2beta1InfoTypeTransformations {
   @scala.inline
   def apply(transformations: js.Array[GooglePrivacyDlpV2beta1InfoTypeTransformation] = null): GooglePrivacyDlpV2beta1InfoTypeTransformations = {
     val __obj = js.Dynamic.literal()
-    if (transformations != null) __obj.updateDynamic("transformations")(transformations)
+    if (transformations != null) __obj.updateDynamic("transformations")(transformations.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1InfoTypeTransformations]
   }
 }

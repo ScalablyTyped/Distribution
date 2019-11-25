@@ -20,7 +20,7 @@ object IOptions {
   @scala.inline
   def apply(fitPolicy: FitPolicy = null): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (fitPolicy != null) __obj.updateDynamic("fitPolicy")(fitPolicy)
+    if (fitPolicy != null) __obj.updateDynamic("fitPolicy")(fitPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

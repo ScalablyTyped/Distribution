@@ -13,8 +13,8 @@ object MobileAppContent {
   @scala.inline
   def apply(files: js.Array[MobileAppContentFile] = null, id: String = null): MobileAppContent = {
     val __obj = js.Dynamic.literal()
-    if (files != null) __obj.updateDynamic("files")(files)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[MobileAppContent]
   }
 }

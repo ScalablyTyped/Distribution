@@ -11,7 +11,7 @@ package object webpackMod {
   import typings.webpack.webpackMod.Options.Performance
   import typings.webpack.webpackMod.optimize.UglifyJsPlugin.CommentFilter
 
-  type AuxiliaryCommentObject = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type AuxiliaryCommentObject = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in webpack.webpack.LibraryTarget ]: string}
     */ typings.webpack.webpackStrings.AuxiliaryCommentObject with js.Any
   type BannerPlugin = BannerPlugin_

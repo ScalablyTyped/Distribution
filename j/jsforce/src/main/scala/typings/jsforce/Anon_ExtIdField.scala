@@ -12,7 +12,7 @@ object Anon_ExtIdField {
   @scala.inline
   def apply(extIdField: String = null): Anon_ExtIdField = {
     val __obj = js.Dynamic.literal()
-    if (extIdField != null) __obj.updateDynamic("extIdField")(extIdField)
+    if (extIdField != null) __obj.updateDynamic("extIdField")(extIdField.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ExtIdField]
   }
 }

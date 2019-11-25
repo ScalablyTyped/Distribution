@@ -30,11 +30,11 @@ object NavigationSwitchRouterConfig {
   ): NavigationSwitchRouterConfig = {
     val __obj = js.Dynamic.literal()
     if (backBehavior != null) __obj.updateDynamic("backBehavior")(backBehavior.asInstanceOf[js.Any])
-    if (initialRouteName != null) __obj.updateDynamic("initialRouteName")(initialRouteName)
-    if (initialRouteParams != null) __obj.updateDynamic("initialRouteParams")(initialRouteParams)
-    if (order != null) __obj.updateDynamic("order")(order)
-    if (paths != null) __obj.updateDynamic("paths")(paths)
-    if (!js.isUndefined(resetOnBlur)) __obj.updateDynamic("resetOnBlur")(resetOnBlur)
+    if (initialRouteName != null) __obj.updateDynamic("initialRouteName")(initialRouteName.asInstanceOf[js.Any])
+    if (initialRouteParams != null) __obj.updateDynamic("initialRouteParams")(initialRouteParams.asInstanceOf[js.Any])
+    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
+    if (paths != null) __obj.updateDynamic("paths")(paths.asInstanceOf[js.Any])
+    if (!js.isUndefined(resetOnBlur)) __obj.updateDynamic("resetOnBlur")(resetOnBlur.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationSwitchRouterConfig]
   }
 }

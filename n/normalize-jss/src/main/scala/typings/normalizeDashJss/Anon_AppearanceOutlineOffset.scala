@@ -12,7 +12,7 @@ trait Anon_AppearanceOutlineOffset extends js.Object {
 object Anon_AppearanceOutlineOffset {
   @scala.inline
   def apply(appearance: String, outlineOffset: String): Anon_AppearanceOutlineOffset = {
-    val __obj = js.Dynamic.literal(appearance = appearance, outlineOffset = outlineOffset)
+    val __obj = js.Dynamic.literal(appearance = appearance.asInstanceOf[js.Any], outlineOffset = outlineOffset.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AppearanceOutlineOffset]
   }

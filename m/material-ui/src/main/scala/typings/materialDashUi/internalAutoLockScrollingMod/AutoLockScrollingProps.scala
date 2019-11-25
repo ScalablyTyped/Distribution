@@ -20,7 +20,7 @@ object AutoLockScrollingProps {
     key: Key = null,
     ref: LegacyRef[AutoLockScrolling] = null
   ): AutoLockScrollingProps = {
-    val __obj = js.Dynamic.literal(lock = lock)
+    val __obj = js.Dynamic.literal(lock = lock.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])

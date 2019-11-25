@@ -40,7 +40,7 @@ object CellProps {
     style: js.Object,
     Cell: TableCellRenderer = null
   ): CellProps = {
-    val __obj = js.Dynamic.literal(className = className, getProps = js.Any.fromFunction1(getProps), style = style)
+    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], getProps = js.Any.fromFunction1(getProps), style = style.asInstanceOf[js.Any])
     if (Cell != null) __obj.updateDynamic("Cell")(Cell.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellProps]
   }

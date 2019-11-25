@@ -14,8 +14,8 @@ object Anon_DataSource {
   @scala.inline
   def apply(dataSource: String | js.Any, public: js.UndefOr[Boolean] = js.undefined, relations: js.Any = null): Anon_DataSource = {
     val __obj = js.Dynamic.literal(dataSource = dataSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(public)) __obj.updateDynamic("public")(public)
-    if (relations != null) __obj.updateDynamic("relations")(relations)
+    if (!js.isUndefined(public)) __obj.updateDynamic("public")(public.asInstanceOf[js.Any])
+    if (relations != null) __obj.updateDynamic("relations")(relations.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DataSource]
   }
 }

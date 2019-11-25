@@ -13,7 +13,7 @@ object v4 {
   @scala.inline
   def apply(random: js.Array[Double] = null, rng: /* args */ js.Any => Unit = null): v4 = {
     val __obj = js.Dynamic.literal()
-    if (random != null) __obj.updateDynamic("random")(random)
+    if (random != null) __obj.updateDynamic("random")(random.asInstanceOf[js.Any])
     if (rng != null) __obj.updateDynamic("rng")(js.Any.fromFunction1(rng))
     __obj.asInstanceOf[v4]
   }

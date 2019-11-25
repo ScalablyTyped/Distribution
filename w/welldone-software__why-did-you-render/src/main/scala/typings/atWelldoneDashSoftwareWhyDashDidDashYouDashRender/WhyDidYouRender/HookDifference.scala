@@ -14,7 +14,7 @@ trait HookDifference extends js.Object {
 object HookDifference {
   @scala.inline
   def apply(diffType: String, nextValue: js.Any, pathString: String, prevValue: js.Any): HookDifference = {
-    val __obj = js.Dynamic.literal(diffType = diffType, nextValue = nextValue, pathString = pathString, prevValue = prevValue)
+    val __obj = js.Dynamic.literal(diffType = diffType.asInstanceOf[js.Any], nextValue = nextValue.asInstanceOf[js.Any], pathString = pathString.asInstanceOf[js.Any], prevValue = prevValue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HookDifference]
   }

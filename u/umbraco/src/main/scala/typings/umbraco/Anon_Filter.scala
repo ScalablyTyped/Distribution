@@ -23,7 +23,7 @@ object Anon_Filter {
     pageNumber: Double,
     pageSize: Double
   ): Anon_Filter = {
-    val __obj = js.Dynamic.literal(filter = filter, orderBy = orderBy, orderDirection = orderDirection, pageNumber = pageNumber, pageSize = pageSize)
+    val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any], orderBy = orderBy.asInstanceOf[js.Any], orderDirection = orderDirection.asInstanceOf[js.Any], pageNumber = pageNumber.asInstanceOf[js.Any], pageSize = pageSize.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Filter]
   }

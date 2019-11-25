@@ -24,8 +24,8 @@ object Instance {
     s: Int | Double = null
   ): Instance = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (c != null) __obj.updateDynamic("c")(c)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (c != null) __obj.updateDynamic("c")(c.asInstanceOf[js.Any])
     if (e != null) __obj.updateDynamic("e")(e.asInstanceOf[js.Any])
     if (s != null) __obj.updateDynamic("s")(s.asInstanceOf[js.Any])
     __obj.asInstanceOf[Instance]

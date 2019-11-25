@@ -30,12 +30,12 @@ object ocrDrivingLicenseOptions {
     success: /* res */ ocrDrivingLicenseResponse => Unit = null,
     unified_valid_period: js.UndefOr[Boolean] = js.undefined
   ): ocrDrivingLicenseOptions = {
-    val __obj = js.Dynamic.literal(image = image)
+    val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
-    if (!js.isUndefined(detect_direction)) __obj.updateDynamic("detect_direction")(detect_direction)
+    if (!js.isUndefined(detect_direction)) __obj.updateDynamic("detect_direction")(detect_direction.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
-    if (!js.isUndefined(unified_valid_period)) __obj.updateDynamic("unified_valid_period")(unified_valid_period)
+    if (!js.isUndefined(unified_valid_period)) __obj.updateDynamic("unified_valid_period")(unified_valid_period.asInstanceOf[js.Any])
     __obj.asInstanceOf[ocrDrivingLicenseOptions]
   }
 }

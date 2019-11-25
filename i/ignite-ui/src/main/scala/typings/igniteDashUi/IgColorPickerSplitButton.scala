@@ -92,17 +92,17 @@ object IgColorPickerSplitButton {
     swapDefaultEnabled: js.UndefOr[Boolean] = js.undefined
   ): IgColorPickerSplitButton = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction2(click))
     if (collapsed != null) __obj.updateDynamic("collapsed")(js.Any.fromFunction2(collapsed))
     if (collapsing != null) __obj.updateDynamic("collapsing")(js.Any.fromFunction2(collapsing))
-    if (defaultColor != null) __obj.updateDynamic("defaultColor")(defaultColor)
-    if (defaultItemName != null) __obj.updateDynamic("defaultItemName")(defaultItemName)
+    if (defaultColor != null) __obj.updateDynamic("defaultColor")(defaultColor.asInstanceOf[js.Any])
+    if (defaultItemName != null) __obj.updateDynamic("defaultItemName")(defaultItemName.asInstanceOf[js.Any])
     if (expanded != null) __obj.updateDynamic("expanded")(js.Any.fromFunction2(expanded))
     if (expanding != null) __obj.updateDynamic("expanding")(js.Any.fromFunction2(expanding))
-    if (!js.isUndefined(hasDefaultIcon)) __obj.updateDynamic("hasDefaultIcon")(hasDefaultIcon)
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (!js.isUndefined(swapDefaultEnabled)) __obj.updateDynamic("swapDefaultEnabled")(swapDefaultEnabled)
+    if (!js.isUndefined(hasDefaultIcon)) __obj.updateDynamic("hasDefaultIcon")(hasDefaultIcon.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (!js.isUndefined(swapDefaultEnabled)) __obj.updateDynamic("swapDefaultEnabled")(swapDefaultEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgColorPickerSplitButton]
   }
 }

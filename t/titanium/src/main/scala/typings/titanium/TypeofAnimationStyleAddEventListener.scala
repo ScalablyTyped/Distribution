@@ -81,7 +81,7 @@ object TypeofAnimationStyleAddEventListener {
     removeEventListener: (String, js.Function1[/* param0 */ js.Any, _]) => Unit,
     setBubbleParent: Boolean => Unit
   ): TypeofAnimationStyleAddEventListener = {
-    val __obj = js.Dynamic.literal(CURL_DOWN = CURL_DOWN, CURL_UP = CURL_UP, FLIP_FROM_LEFT = FLIP_FROM_LEFT, FLIP_FROM_RIGHT = FLIP_FROM_RIGHT, NONE = NONE, addEventListener = js.Any.fromFunction2(addEventListener), apiName = apiName, applyProperties = js.Any.fromFunction1(applyProperties), bubbleParent = bubbleParent, fireEvent = js.Any.fromFunction2(fireEvent), getApiName = js.Any.fromFunction0(getApiName), getBubbleParent = js.Any.fromFunction0(getBubbleParent), removeEventListener = js.Any.fromFunction2(removeEventListener), setBubbleParent = js.Any.fromFunction1(setBubbleParent))
+    val __obj = js.Dynamic.literal(CURL_DOWN = CURL_DOWN.asInstanceOf[js.Any], CURL_UP = CURL_UP.asInstanceOf[js.Any], FLIP_FROM_LEFT = FLIP_FROM_LEFT.asInstanceOf[js.Any], FLIP_FROM_RIGHT = FLIP_FROM_RIGHT.asInstanceOf[js.Any], NONE = NONE.asInstanceOf[js.Any], addEventListener = js.Any.fromFunction2(addEventListener), apiName = apiName.asInstanceOf[js.Any], applyProperties = js.Any.fromFunction1(applyProperties), bubbleParent = bubbleParent.asInstanceOf[js.Any], fireEvent = js.Any.fromFunction2(fireEvent), getApiName = js.Any.fromFunction0(getApiName), getBubbleParent = js.Any.fromFunction0(getBubbleParent), removeEventListener = js.Any.fromFunction2(removeEventListener), setBubbleParent = js.Any.fromFunction1(setBubbleParent))
   
     __obj.asInstanceOf[TypeofAnimationStyleAddEventListener]
   }

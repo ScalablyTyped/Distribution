@@ -1,7 +1,7 @@
 package typings.intercomDashClient.companyMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.intercomDashClient.Anon_Id
+import typings.intercomDashClient.Anon_IdName
 import typings.intercomDashClient.intercomDashClientStrings.company
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +16,7 @@ trait Company extends js.Object {
   var industry: js.UndefOr[String] = js.undefined
   var monthly_spend: js.UndefOr[Double] = js.undefined
   var name: js.UndefOr[String] = js.undefined
-  var plan: js.UndefOr[String | Anon_Id] = js.undefined
+  var plan: js.UndefOr[String | Anon_IdName] = js.undefined
   var remote_created_at: js.UndefOr[Double] = js.undefined
   var session_count: js.UndefOr[Double] = js.undefined
   var size: js.UndefOr[Double] = js.undefined
@@ -39,27 +39,27 @@ object Company {
     industry: String = null,
     monthly_spend: Int | Double = null,
     name: String = null,
-    plan: String | Anon_Id = null,
+    plan: String | Anon_IdName = null,
     remote_created_at: Int | Double = null,
     session_count: Int | Double = null,
     size: Int | Double = null,
     user_count: Int | Double = null,
     website: String = null
   ): Company = {
-    val __obj = js.Dynamic.literal(created_at = created_at, id = id, updated_at = updated_at)
-    __obj.updateDynamic("type")(`type`)
-    if (app_id != null) __obj.updateDynamic("app_id")(app_id)
-    if (company_id != null) __obj.updateDynamic("company_id")(company_id)
-    if (custom_attributes != null) __obj.updateDynamic("custom_attributes")(custom_attributes)
-    if (industry != null) __obj.updateDynamic("industry")(industry)
+    val __obj = js.Dynamic.literal(created_at = created_at.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (app_id != null) __obj.updateDynamic("app_id")(app_id.asInstanceOf[js.Any])
+    if (company_id != null) __obj.updateDynamic("company_id")(company_id.asInstanceOf[js.Any])
+    if (custom_attributes != null) __obj.updateDynamic("custom_attributes")(custom_attributes.asInstanceOf[js.Any])
+    if (industry != null) __obj.updateDynamic("industry")(industry.asInstanceOf[js.Any])
     if (monthly_spend != null) __obj.updateDynamic("monthly_spend")(monthly_spend.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (plan != null) __obj.updateDynamic("plan")(plan.asInstanceOf[js.Any])
     if (remote_created_at != null) __obj.updateDynamic("remote_created_at")(remote_created_at.asInstanceOf[js.Any])
     if (session_count != null) __obj.updateDynamic("session_count")(session_count.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (user_count != null) __obj.updateDynamic("user_count")(user_count.asInstanceOf[js.Any])
-    if (website != null) __obj.updateDynamic("website")(website)
+    if (website != null) __obj.updateDynamic("website")(website.asInstanceOf[js.Any])
     __obj.asInstanceOf[Company]
   }
 }

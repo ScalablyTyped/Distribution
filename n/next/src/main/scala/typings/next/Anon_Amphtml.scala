@@ -18,9 +18,9 @@ object Anon_Amphtml {
     hasAmp: js.UndefOr[Boolean] = js.undefined
   ): Anon_Amphtml = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(amphtml)) __obj.updateDynamic("amphtml")(amphtml)
-    if (!js.isUndefined(dataOnly)) __obj.updateDynamic("dataOnly")(dataOnly)
-    if (!js.isUndefined(hasAmp)) __obj.updateDynamic("hasAmp")(hasAmp)
+    if (!js.isUndefined(amphtml)) __obj.updateDynamic("amphtml")(amphtml.asInstanceOf[js.Any])
+    if (!js.isUndefined(dataOnly)) __obj.updateDynamic("dataOnly")(dataOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasAmp)) __obj.updateDynamic("hasAmp")(hasAmp.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Amphtml]
   }
 }

@@ -38,19 +38,19 @@ object SafeStyles {
     textShadow: js.UndefOr[Boolean] = js.undefined
   ): SafeStyles = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(backgroundColor)) __obj.updateDynamic("backgroundColor")(backgroundColor)
-    if (!js.isUndefined(border)) __obj.updateDynamic("border")(border)
-    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color)
-    if (!js.isUndefined(cursor)) __obj.updateDynamic("cursor")(cursor)
-    if (!js.isUndefined(fontFamily)) __obj.updateDynamic("fontFamily")(fontFamily)
-    if (!js.isUndefined(fontSize)) __obj.updateDynamic("fontSize")(fontSize)
-    if (!js.isUndefined(fontStyle)) __obj.updateDynamic("fontStyle")(fontStyle)
-    if (!js.isUndefined(fontWeight)) __obj.updateDynamic("fontWeight")(fontWeight)
-    if (!js.isUndefined(margin)) __obj.updateDynamic("margin")(margin)
-    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity)
-    if (!js.isUndefined(outline)) __obj.updateDynamic("outline")(outline)
-    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding)
-    if (!js.isUndefined(textShadow)) __obj.updateDynamic("textShadow")(textShadow)
+    if (!js.isUndefined(backgroundColor)) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(border)) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
+    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (!js.isUndefined(cursor)) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
+    if (!js.isUndefined(fontFamily)) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
+    if (!js.isUndefined(fontSize)) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(fontStyle)) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(fontWeight)) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(margin)) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(outline)) __obj.updateDynamic("outline")(outline.asInstanceOf[js.Any])
+    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (!js.isUndefined(textShadow)) __obj.updateDynamic("textShadow")(textShadow.asInstanceOf[js.Any])
     __obj.asInstanceOf[SafeStyles]
   }
 }

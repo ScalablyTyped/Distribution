@@ -75,7 +75,7 @@ object ICalendar {
     subscription_location: String,
     updated_time: String
   ): ICalendar = {
-    val __obj = js.Dynamic.literal(created_time = created_time, description = description, from = from, id = id, is_default = is_default, name = name, permissions = permissions, subscription_location = subscription_location, updated_time = updated_time)
+    val __obj = js.Dynamic.literal(created_time = created_time.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], is_default = is_default.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any], subscription_location = subscription_location.asInstanceOf[js.Any], updated_time = updated_time.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ICalendar]
   }

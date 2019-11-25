@@ -33,16 +33,16 @@ object FacetOptions {
     query: String = null,
     sort: String = null
   ): FacetOptions = {
-    val __obj = js.Dynamic.literal(on = on, prefix = prefix)
+    val __obj = js.Dynamic.literal(on = on.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method)
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (mincout != null) __obj.updateDynamic("mincout")(mincout.asInstanceOf[js.Any])
-    if (!js.isUndefined(missing)) __obj.updateDynamic("missing")(missing)
+    if (!js.isUndefined(missing)) __obj.updateDynamic("missing")(missing.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (pivot != null) __obj.updateDynamic("pivot")(pivot.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query)
-    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     __obj.asInstanceOf[FacetOptions]
   }
 }

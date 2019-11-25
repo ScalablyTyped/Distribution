@@ -12,7 +12,7 @@ trait Anon_Part extends js.Object {
 object Anon_Part {
   @scala.inline
   def apply(Part: CustomXMLPart): Anon_Part = {
-    val __obj = js.Dynamic.literal(Part = Part)
+    val __obj = js.Dynamic.literal(Part = Part.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Part]
   }

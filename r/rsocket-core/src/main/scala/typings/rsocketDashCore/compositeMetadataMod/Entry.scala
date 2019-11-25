@@ -23,8 +23,8 @@ trait Entry extends js.Object {
 object Entry {
   @scala.inline
   def apply(content: Buffer, mimeType: String = null): Entry = {
-    val __obj = js.Dynamic.literal(content = content)
-    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
+    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Entry]
   }
 }

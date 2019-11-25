@@ -13,7 +13,7 @@ trait Anon_BillingPeriodEndDate extends js.Object {
 object Anon_BillingPeriodEndDate {
   @scala.inline
   def apply(billingPeriodEndDate: Date, billingPeriodStartDate: Date): Anon_BillingPeriodEndDate = {
-    val __obj = js.Dynamic.literal(billingPeriodEndDate = billingPeriodEndDate, billingPeriodStartDate = billingPeriodStartDate)
+    val __obj = js.Dynamic.literal(billingPeriodEndDate = billingPeriodEndDate.asInstanceOf[js.Any], billingPeriodStartDate = billingPeriodStartDate.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BillingPeriodEndDate]
   }

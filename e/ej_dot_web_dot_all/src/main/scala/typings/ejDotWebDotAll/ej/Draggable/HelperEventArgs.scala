@@ -17,8 +17,8 @@ object HelperEventArgs {
   @scala.inline
   def apply(element: js.Any = null, sender: js.Any = null): HelperEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (sender != null) __obj.updateDynamic("sender")(sender)
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (sender != null) __obj.updateDynamic("sender")(sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[HelperEventArgs]
   }
 }

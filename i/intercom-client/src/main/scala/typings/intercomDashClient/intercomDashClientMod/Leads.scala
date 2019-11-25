@@ -1,7 +1,7 @@
 package typings.intercomDashClient.intercomDashClientMod
 
 import typings.intercomDashClient.Anon_Contact
-import typings.intercomDashClient.Anon_Email
+import typings.intercomDashClient.Anon_EmailSegmentid
 import typings.intercomDashClient.leadMod.Lead
 import typings.intercomDashClient.leadMod.LeadIdentifier
 import typings.intercomDashClient.leadMod.List
@@ -24,8 +24,8 @@ class Leads () extends js.Object {
   def find(identifier: LeadIdentifier, cb: callback[ApiResponse[Lead]]): Unit = js.native
   def list(): js.Promise[ApiResponse[List]] = js.native
   def list(cb: callback[ApiResponse[List]]): Unit = js.native
-  def listBy(params: Anon_Email): js.Promise[ApiResponse[List]] = js.native
-  def listBy(params: Anon_Email, cb: callback[ApiResponse[List]]): Unit = js.native
+  def listBy(params: Anon_EmailSegmentid): js.Promise[ApiResponse[List]] = js.native
+  def listBy(params: Anon_EmailSegmentid, cb: callback[ApiResponse[List]]): Unit = js.native
   def update(lead: UserIdentifier with Partial[Lead]): js.Promise[ApiResponse[Lead]] = js.native
   def update(lead: UserIdentifier with Partial[Lead], cb: callback[ApiResponse[Lead]]): Unit = js.native
 }

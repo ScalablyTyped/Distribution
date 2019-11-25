@@ -13,7 +13,7 @@ trait ProviderDef extends js.Object {
 object ProviderDef {
   @scala.inline
   def apply(deps: js.Array[DepDef], token: js.Any, value: js.Any): ProviderDef = {
-    val __obj = js.Dynamic.literal(deps = deps, token = token, value = value)
+    val __obj = js.Dynamic.literal(deps = deps.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ProviderDef]
   }

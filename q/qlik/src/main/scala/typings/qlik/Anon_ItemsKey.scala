@@ -15,8 +15,8 @@ trait Anon_ItemsKey extends js.Object {
 object Anon_ItemsKey {
   @scala.inline
   def apply(uses: sorting, items: StringDictionary[CustomProperty] = null): Anon_ItemsKey = {
-    val __obj = js.Dynamic.literal(uses = uses)
-    if (items != null) __obj.updateDynamic("items")(items)
+    val __obj = js.Dynamic.literal(uses = uses.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ItemsKey]
   }
 }

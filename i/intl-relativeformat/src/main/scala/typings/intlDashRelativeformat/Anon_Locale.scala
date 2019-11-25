@@ -15,8 +15,8 @@ trait Anon_Locale extends js.Object {
 object Anon_Locale {
   @scala.inline
   def apply(locale: String, style: STYLE, units: SUPPORTED_FIELD = null): Anon_Locale = {
-    val __obj = js.Dynamic.literal(locale = locale, style = style)
-    if (units != null) __obj.updateDynamic("units")(units)
+    val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
+    if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Locale]
   }
 }

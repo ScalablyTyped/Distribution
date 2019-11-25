@@ -19,8 +19,8 @@ object _Condition {
   @scala.inline
   def apply(HttpErrorCodeReturnedEquals: String = null, KeyPrefixEquals: String = null): _Condition = {
     val __obj = js.Dynamic.literal()
-    if (HttpErrorCodeReturnedEquals != null) __obj.updateDynamic("HttpErrorCodeReturnedEquals")(HttpErrorCodeReturnedEquals)
-    if (KeyPrefixEquals != null) __obj.updateDynamic("KeyPrefixEquals")(KeyPrefixEquals)
+    if (HttpErrorCodeReturnedEquals != null) __obj.updateDynamic("HttpErrorCodeReturnedEquals")(HttpErrorCodeReturnedEquals.asInstanceOf[js.Any])
+    if (KeyPrefixEquals != null) __obj.updateDynamic("KeyPrefixEquals")(KeyPrefixEquals.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Condition]
   }
 }

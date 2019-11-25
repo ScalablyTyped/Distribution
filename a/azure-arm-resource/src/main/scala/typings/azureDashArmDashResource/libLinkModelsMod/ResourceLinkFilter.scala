@@ -14,7 +14,7 @@ trait ResourceLinkFilter extends js.Object {
 object ResourceLinkFilter {
   @scala.inline
   def apply(targetId: String): ResourceLinkFilter = {
-    val __obj = js.Dynamic.literal(targetId = targetId)
+    val __obj = js.Dynamic.literal(targetId = targetId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ResourceLinkFilter]
   }

@@ -32,7 +32,7 @@ object Header {
     to: js.Array[String],
     unique_args: js.Object
   ): Header = {
-    val __obj = js.Dynamic.literal(asm_group_id = asm_group_id, category = category, filters = filters, ip_pool = ip_pool, section = section, send_at = send_at.asInstanceOf[js.Any], send_each_at = send_each_at, sub = sub, to = to, unique_args = unique_args)
+    val __obj = js.Dynamic.literal(asm_group_id = asm_group_id.asInstanceOf[js.Any], category = category.asInstanceOf[js.Any], filters = filters.asInstanceOf[js.Any], ip_pool = ip_pool.asInstanceOf[js.Any], section = section.asInstanceOf[js.Any], send_at = send_at.asInstanceOf[js.Any], send_each_at = send_each_at.asInstanceOf[js.Any], sub = sub.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any], unique_args = unique_args.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Header]
   }

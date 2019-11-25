@@ -13,8 +13,8 @@ trait StateStack extends js.Object {
 object StateStack {
   @scala.inline
   def apply(pageId: String, stack: js.Array[StateSaved], isRoot: js.UndefOr[Boolean] = js.undefined): StateStack = {
-    val __obj = js.Dynamic.literal(pageId = pageId, stack = stack)
-    if (!js.isUndefined(isRoot)) __obj.updateDynamic("isRoot")(isRoot)
+    val __obj = js.Dynamic.literal(pageId = pageId.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any])
+    if (!js.isUndefined(isRoot)) __obj.updateDynamic("isRoot")(isRoot.asInstanceOf[js.Any])
     __obj.asInstanceOf[StateStack]
   }
 }

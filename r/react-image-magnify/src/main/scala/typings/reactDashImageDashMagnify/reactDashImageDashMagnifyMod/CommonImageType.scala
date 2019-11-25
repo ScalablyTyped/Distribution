@@ -21,11 +21,11 @@ object CommonImageType {
     sizes: String = null,
     srcSet: String = null
   ): CommonImageType = {
-    val __obj = js.Dynamic.literal(src = src)
+    val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction0(onError))
     if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction0(onLoad))
-    if (sizes != null) __obj.updateDynamic("sizes")(sizes)
-    if (srcSet != null) __obj.updateDynamic("srcSet")(srcSet)
+    if (sizes != null) __obj.updateDynamic("sizes")(sizes.asInstanceOf[js.Any])
+    if (srcSet != null) __obj.updateDynamic("srcSet")(srcSet.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommonImageType]
   }
 }

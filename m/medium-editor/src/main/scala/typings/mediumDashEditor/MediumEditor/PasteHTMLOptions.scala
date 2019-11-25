@@ -18,9 +18,9 @@ object PasteHTMLOptions {
     unwrapTags: js.Array[String] = null
   ): PasteHTMLOptions = {
     val __obj = js.Dynamic.literal()
-    if (cleanAttrs != null) __obj.updateDynamic("cleanAttrs")(cleanAttrs)
-    if (cleanTags != null) __obj.updateDynamic("cleanTags")(cleanTags)
-    if (unwrapTags != null) __obj.updateDynamic("unwrapTags")(unwrapTags)
+    if (cleanAttrs != null) __obj.updateDynamic("cleanAttrs")(cleanAttrs.asInstanceOf[js.Any])
+    if (cleanTags != null) __obj.updateDynamic("cleanTags")(cleanTags.asInstanceOf[js.Any])
+    if (unwrapTags != null) __obj.updateDynamic("unwrapTags")(unwrapTags.asInstanceOf[js.Any])
     __obj.asInstanceOf[PasteHTMLOptions]
   }
 }

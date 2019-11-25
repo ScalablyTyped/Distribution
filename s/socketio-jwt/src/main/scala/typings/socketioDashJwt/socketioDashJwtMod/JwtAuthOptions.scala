@@ -24,9 +24,9 @@ object JwtAuthOptions {
     handshake: js.UndefOr[Boolean] = js.undefined,
     timeout: Int | Double = null
   ): JwtAuthOptions = {
-    val __obj = js.Dynamic.literal(decodedPropertyName = decodedPropertyName, secret = secret.asInstanceOf[js.Any])
-    if (!js.isUndefined(callback)) __obj.updateDynamic("callback")(callback)
-    if (!js.isUndefined(handshake)) __obj.updateDynamic("handshake")(handshake)
+    val __obj = js.Dynamic.literal(decodedPropertyName = decodedPropertyName.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any])
+    if (!js.isUndefined(callback)) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
+    if (!js.isUndefined(handshake)) __obj.updateDynamic("handshake")(handshake.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[JwtAuthOptions]
   }

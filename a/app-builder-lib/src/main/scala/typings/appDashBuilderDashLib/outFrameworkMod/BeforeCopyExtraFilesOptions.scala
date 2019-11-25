@@ -21,8 +21,8 @@ object BeforeCopyExtraFilesOptions {
     platformName: String,
     asarIntegrity: AsarIntegrity = null
   ): BeforeCopyExtraFilesOptions = {
-    val __obj = js.Dynamic.literal(appOutDir = appOutDir, packager = packager, platformName = platformName)
-    if (asarIntegrity != null) __obj.updateDynamic("asarIntegrity")(asarIntegrity)
+    val __obj = js.Dynamic.literal(appOutDir = appOutDir.asInstanceOf[js.Any], packager = packager.asInstanceOf[js.Any], platformName = platformName.asInstanceOf[js.Any])
+    if (asarIntegrity != null) __obj.updateDynamic("asarIntegrity")(asarIntegrity.asInstanceOf[js.Any])
     __obj.asInstanceOf[BeforeCopyExtraFilesOptions]
   }
 }

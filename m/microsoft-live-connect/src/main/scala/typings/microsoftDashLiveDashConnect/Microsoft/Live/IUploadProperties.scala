@@ -31,8 +31,8 @@ trait IUploadProperties extends js.Object {
 object IUploadProperties {
   @scala.inline
   def apply(element: String, path: String, overwrite: String = null): IUploadProperties = {
-    val __obj = js.Dynamic.literal(element = element, path = path)
-    if (overwrite != null) __obj.updateDynamic("overwrite")(overwrite)
+    val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    if (overwrite != null) __obj.updateDynamic("overwrite")(overwrite.asInstanceOf[js.Any])
     __obj.asInstanceOf[IUploadProperties]
   }
 }

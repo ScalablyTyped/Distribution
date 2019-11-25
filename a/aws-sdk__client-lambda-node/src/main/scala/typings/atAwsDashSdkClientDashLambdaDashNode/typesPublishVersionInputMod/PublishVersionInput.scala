@@ -54,13 +54,13 @@ object PublishVersionInput {
     Description: String = null,
     RevisionId: String = null
   ): PublishVersionInput = {
-    val __obj = js.Dynamic.literal(FunctionName = FunctionName)
-    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal)
-    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions)
+    val __obj = js.Dynamic.literal(FunctionName = FunctionName.asInstanceOf[js.Any])
+    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal.asInstanceOf[js.Any])
+    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions.asInstanceOf[js.Any])
     if ($maxRetries != null) __obj.updateDynamic("$maxRetries")($maxRetries.asInstanceOf[js.Any])
-    if (CodeSha256 != null) __obj.updateDynamic("CodeSha256")(CodeSha256)
-    if (Description != null) __obj.updateDynamic("Description")(Description)
-    if (RevisionId != null) __obj.updateDynamic("RevisionId")(RevisionId)
+    if (CodeSha256 != null) __obj.updateDynamic("CodeSha256")(CodeSha256.asInstanceOf[js.Any])
+    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
+    if (RevisionId != null) __obj.updateDynamic("RevisionId")(RevisionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublishVersionInput]
   }
 }

@@ -30,14 +30,14 @@ object WorkSheet {
     `!type`: SheetType = null
   ): WorkSheet = {
     val __obj = js.Dynamic.literal()
-    if (`!autofilter` != null) __obj.updateDynamic("!autofilter")(`!autofilter`)
-    if (`!cols` != null) __obj.updateDynamic("!cols")(`!cols`)
-    if (`!margins` != null) __obj.updateDynamic("!margins")(`!margins`)
-    if (`!merges` != null) __obj.updateDynamic("!merges")(`!merges`)
-    if (`!protect` != null) __obj.updateDynamic("!protect")(`!protect`)
-    if (`!ref` != null) __obj.updateDynamic("!ref")(`!ref`)
-    if (`!rows` != null) __obj.updateDynamic("!rows")(`!rows`)
-    if (`!type` != null) __obj.updateDynamic("!type")(`!type`)
+    if (`!autofilter` != null) __obj.updateDynamic("!autofilter")(`!autofilter`.asInstanceOf[js.Any])
+    if (`!cols` != null) __obj.updateDynamic("!cols")(`!cols`.asInstanceOf[js.Any])
+    if (`!margins` != null) __obj.updateDynamic("!margins")(`!margins`.asInstanceOf[js.Any])
+    if (`!merges` != null) __obj.updateDynamic("!merges")(`!merges`.asInstanceOf[js.Any])
+    if (`!protect` != null) __obj.updateDynamic("!protect")(`!protect`.asInstanceOf[js.Any])
+    if (`!ref` != null) __obj.updateDynamic("!ref")(`!ref`.asInstanceOf[js.Any])
+    if (`!rows` != null) __obj.updateDynamic("!rows")(`!rows`.asInstanceOf[js.Any])
+    if (`!type` != null) __obj.updateDynamic("!type")(`!type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkSheet]
   }
 }

@@ -41,19 +41,19 @@ object Anon_Align {
     vadjust: String = null
   ): Anon_Align = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align)
-    if (background != null) __obj.updateDynamic("background")(background)
+    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
     if (bold != null) __obj.updateDynamic("bold")(bold.asInstanceOf[js.Any])
     if (boldital != null) __obj.updateDynamic("boldital")(boldital.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (face != null) __obj.updateDynamic("face")(face)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (face != null) __obj.updateDynamic("face")(face.asInstanceOf[js.Any])
     if (ital != null) __obj.updateDynamic("ital")(ital.asInstanceOf[js.Any])
     if (mono != null) __obj.updateDynamic("mono")(mono.asInstanceOf[js.Any])
-    if (multi != null) __obj.updateDynamic("multi")(multi)
+    if (multi != null) __obj.updateDynamic("multi")(multi.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor)
+    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor.asInstanceOf[js.Any])
     if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
-    if (vadjust != null) __obj.updateDynamic("vadjust")(vadjust)
+    if (vadjust != null) __obj.updateDynamic("vadjust")(vadjust.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Align]
   }
 }

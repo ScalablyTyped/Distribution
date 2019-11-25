@@ -37,10 +37,10 @@ class WebTheme protected () extends EventEmitter {
   def config(config: WebThemeOptions): this.type = js.native
   def errorView(): String = js.native
   def get[K /* <: String */, V](path: K): js.UndefOr[
-    (/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any) | V | Null
+    (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | V | Null
   ] = js.native
   def get[K /* <: String */, V](path: K, defaultValue: V): js.UndefOr[
-    (/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any) | V | Null
+    (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | V | Null
   ] = js.native
   @JSName("getOption")
   def getOption_favicon(key: favicon): String = js.native
@@ -74,7 +74,10 @@ class WebTheme protected () extends EventEmitter {
   def resolvers(): js.Any = js.native
   def routes(): js.Array[_] = js.native
   def set[K /* <: String */](path: K): this.type = js.native
-  def set[K /* <: String */](path: K, value: /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any): this.type = js.native
+  def set[K /* <: String */](
+    path: K,
+    value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+  ): this.type = js.native
   def setErrorView(view: String): Unit = js.native
   @JSName("setOption")
   def setOption_favicon(key: favicon, value: String): this.type = js.native

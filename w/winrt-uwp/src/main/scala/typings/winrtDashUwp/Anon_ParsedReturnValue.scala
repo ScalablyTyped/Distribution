@@ -13,7 +13,7 @@ trait Anon_ParsedReturnValue extends js.Object {
 object Anon_ParsedReturnValue {
   @scala.inline
   def apply(parsed: UsbEndpointDescriptor, returnValue: Boolean): Anon_ParsedReturnValue = {
-    val __obj = js.Dynamic.literal(parsed = parsed, returnValue = returnValue)
+    val __obj = js.Dynamic.literal(parsed = parsed.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ParsedReturnValue]
   }

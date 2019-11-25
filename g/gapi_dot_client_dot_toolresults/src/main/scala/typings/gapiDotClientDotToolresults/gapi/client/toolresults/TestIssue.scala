@@ -27,11 +27,11 @@ object TestIssue {
     warning: Any = null
   ): TestIssue = {
     val __obj = js.Dynamic.literal()
-    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage)
-    if (severity != null) __obj.updateDynamic("severity")(severity)
-    if (stackTrace != null) __obj.updateDynamic("stackTrace")(stackTrace)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (warning != null) __obj.updateDynamic("warning")(warning)
+    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
+    if (severity != null) __obj.updateDynamic("severity")(severity.asInstanceOf[js.Any])
+    if (stackTrace != null) __obj.updateDynamic("stackTrace")(stackTrace.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (warning != null) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestIssue]
   }
 }

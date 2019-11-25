@@ -54,14 +54,14 @@ object Anon_Classes {
     position: String = null,
     templateUrl: String = null
   ): Anon_Classes = {
-    val __obj = js.Dynamic.literal(message = message)
-    if ($scope != null) __obj.updateDynamic("$scope")($scope)
-    if (classes != null) __obj.updateDynamic("classes")(classes)
-    if (container != null) __obj.updateDynamic("container")(container)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
+    if ($scope != null) __obj.updateDynamic("$scope")($scope.asInstanceOf[js.Any])
+    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (messageTemplate != null) __obj.updateDynamic("messageTemplate")(messageTemplate)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl)
+    if (messageTemplate != null) __obj.updateDynamic("messageTemplate")(messageTemplate.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Classes]
   }
 }

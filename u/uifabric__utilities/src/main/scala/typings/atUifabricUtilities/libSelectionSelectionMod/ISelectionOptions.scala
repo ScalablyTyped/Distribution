@@ -27,7 +27,7 @@ object ISelectionOptions {
     if (canSelectItem != null) __obj.updateDynamic("canSelectItem")(js.Any.fromFunction2(canSelectItem))
     if (getKey != null) __obj.updateDynamic("getKey")(js.Any.fromFunction2(getKey))
     if (onSelectionChanged != null) __obj.updateDynamic("onSelectionChanged")(js.Any.fromFunction0(onSelectionChanged))
-    if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode)
+    if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISelectionOptions]
   }
 }

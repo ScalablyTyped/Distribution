@@ -12,7 +12,7 @@ trait ResizeArgs extends js.Object {
 object ResizeArgs {
   @scala.inline
   def apply(args: js.Array[String], opt: Options): ResizeArgs = {
-    val __obj = js.Dynamic.literal(args = args, opt = opt)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], opt = opt.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ResizeArgs]
   }

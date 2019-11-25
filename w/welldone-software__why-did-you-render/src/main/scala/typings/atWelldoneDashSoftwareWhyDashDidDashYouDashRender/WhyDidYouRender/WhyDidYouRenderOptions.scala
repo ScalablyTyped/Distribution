@@ -35,17 +35,17 @@ object WhyDidYouRenderOptions {
     trackHooks: js.UndefOr[Boolean] = js.undefined
   ): WhyDidYouRenderOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(collapseGroups)) __obj.updateDynamic("collapseGroups")(collapseGroups)
-    if (diffNameColor != null) __obj.updateDynamic("diffNameColor")(diffNameColor)
-    if (diffPathColor != null) __obj.updateDynamic("diffPathColor")(diffPathColor)
-    if (exclude != null) __obj.updateDynamic("exclude")(exclude)
+    if (!js.isUndefined(collapseGroups)) __obj.updateDynamic("collapseGroups")(collapseGroups.asInstanceOf[js.Any])
+    if (diffNameColor != null) __obj.updateDynamic("diffNameColor")(diffNameColor.asInstanceOf[js.Any])
+    if (diffPathColor != null) __obj.updateDynamic("diffPathColor")(diffPathColor.asInstanceOf[js.Any])
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
     if (hotReloadBufferMs != null) __obj.updateDynamic("hotReloadBufferMs")(hotReloadBufferMs.asInstanceOf[js.Any])
-    if (include != null) __obj.updateDynamic("include")(include)
-    if (!js.isUndefined(logOnDifferentValues)) __obj.updateDynamic("logOnDifferentValues")(logOnDifferentValues)
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    if (!js.isUndefined(logOnDifferentValues)) __obj.updateDynamic("logOnDifferentValues")(logOnDifferentValues.asInstanceOf[js.Any])
     if (notifier != null) __obj.updateDynamic("notifier")(js.Any.fromFunction1(notifier))
-    if (!js.isUndefined(onlyLogs)) __obj.updateDynamic("onlyLogs")(onlyLogs)
-    if (titleColor != null) __obj.updateDynamic("titleColor")(titleColor)
-    if (!js.isUndefined(trackHooks)) __obj.updateDynamic("trackHooks")(trackHooks)
+    if (!js.isUndefined(onlyLogs)) __obj.updateDynamic("onlyLogs")(onlyLogs.asInstanceOf[js.Any])
+    if (titleColor != null) __obj.updateDynamic("titleColor")(titleColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(trackHooks)) __obj.updateDynamic("trackHooks")(trackHooks.asInstanceOf[js.Any])
     __obj.asInstanceOf[WhyDidYouRenderOptions]
   }
 }

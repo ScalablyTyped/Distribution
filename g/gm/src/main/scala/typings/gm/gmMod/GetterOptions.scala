@@ -12,7 +12,7 @@ object GetterOptions {
   @scala.inline
   def apply(bufferStream: js.UndefOr[Boolean] = js.undefined): GetterOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bufferStream)) __obj.updateDynamic("bufferStream")(bufferStream)
+    if (!js.isUndefined(bufferStream)) __obj.updateDynamic("bufferStream")(bufferStream.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetterOptions]
   }
 }

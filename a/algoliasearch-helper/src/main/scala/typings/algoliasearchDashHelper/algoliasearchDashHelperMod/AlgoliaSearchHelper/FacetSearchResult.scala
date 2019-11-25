@@ -17,7 +17,7 @@ trait FacetSearchResult extends js.Object {
 object FacetSearchResult {
   @scala.inline
   def apply(facetHits: FacetSearchHit, processingTimeMS: Double): FacetSearchResult = {
-    val __obj = js.Dynamic.literal(facetHits = facetHits, processingTimeMS = processingTimeMS)
+    val __obj = js.Dynamic.literal(facetHits = facetHits.asInstanceOf[js.Any], processingTimeMS = processingTimeMS.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FacetSearchResult]
   }

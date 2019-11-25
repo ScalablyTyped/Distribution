@@ -17,7 +17,7 @@ object HttpResponse {
     statusCode: Double,
     body: ArrayBuffer | ArrayBufferView | String | StreamType = null
   ): HttpResponse[StreamType] = {
-    val __obj = js.Dynamic.literal(headers = headers, statusCode = statusCode)
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpResponse[StreamType]]
   }

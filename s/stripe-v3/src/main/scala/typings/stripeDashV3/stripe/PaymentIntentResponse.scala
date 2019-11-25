@@ -14,8 +14,8 @@ object PaymentIntentResponse {
   @scala.inline
   def apply(error: Error = null, paymentIntent: PaymentIntent = null): PaymentIntentResponse = {
     val __obj = js.Dynamic.literal()
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (paymentIntent != null) __obj.updateDynamic("paymentIntent")(paymentIntent)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (paymentIntent != null) __obj.updateDynamic("paymentIntent")(paymentIntent.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentIntentResponse]
   }
 }

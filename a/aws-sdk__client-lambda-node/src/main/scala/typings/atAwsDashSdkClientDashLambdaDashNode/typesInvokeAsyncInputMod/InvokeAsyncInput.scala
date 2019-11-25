@@ -45,9 +45,9 @@ object InvokeAsyncInput {
     $httpOptions: NodeHttpOptions = null,
     $maxRetries: Int | Double = null
   ): InvokeAsyncInput[StreamType] = {
-    val __obj = js.Dynamic.literal(FunctionName = FunctionName, InvokeArgs = InvokeArgs.asInstanceOf[js.Any])
-    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal)
-    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions)
+    val __obj = js.Dynamic.literal(FunctionName = FunctionName.asInstanceOf[js.Any], InvokeArgs = InvokeArgs.asInstanceOf[js.Any])
+    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal.asInstanceOf[js.Any])
+    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions.asInstanceOf[js.Any])
     if ($maxRetries != null) __obj.updateDynamic("$maxRetries")($maxRetries.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvokeAsyncInput[StreamType]]
   }

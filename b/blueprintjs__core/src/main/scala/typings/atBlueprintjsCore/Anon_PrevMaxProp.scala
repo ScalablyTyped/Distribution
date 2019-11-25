@@ -22,7 +22,7 @@ object Anon_PrevMaxProp {
     stepMaxPrecision: Double,
     value: String
   ): Anon_PrevMaxProp = {
-    val __obj = js.Dynamic.literal(prevMaxProp = prevMaxProp, prevMinProp = prevMinProp, prevValueProp = prevValueProp.asInstanceOf[js.Any], stepMaxPrecision = stepMaxPrecision, value = value)
+    val __obj = js.Dynamic.literal(prevMaxProp = prevMaxProp.asInstanceOf[js.Any], prevMinProp = prevMinProp.asInstanceOf[js.Any], prevValueProp = prevValueProp.asInstanceOf[js.Any], stepMaxPrecision = stepMaxPrecision.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_PrevMaxProp]
   }

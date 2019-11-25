@@ -30,10 +30,10 @@ object Descriptor {
     instanceId: String = null,
     value: ArrayBuffer = null
   ): Descriptor = {
-    val __obj = js.Dynamic.literal(permissions = permissions, uuid = uuid)
-    if (characteristic != null) __obj.updateDynamic("characteristic")(characteristic)
-    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId)
-    if (value != null) __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(permissions = permissions.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
+    if (characteristic != null) __obj.updateDynamic("characteristic")(characteristic.asInstanceOf[js.Any])
+    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Descriptor]
   }
 }

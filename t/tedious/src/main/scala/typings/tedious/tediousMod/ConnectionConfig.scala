@@ -32,10 +32,10 @@ object ConnectionConfig {
     server: String = null
   ): ConnectionConfig = {
     val __obj = js.Dynamic.literal()
-    if (authentication != null) __obj.updateDynamic("authentication")(authentication)
-    if (domain != null) __obj.updateDynamic("domain")(domain)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (server != null) __obj.updateDynamic("server")(server)
+    if (authentication != null) __obj.updateDynamic("authentication")(authentication.asInstanceOf[js.Any])
+    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (server != null) __obj.updateDynamic("server")(server.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionConfig]
   }
 }

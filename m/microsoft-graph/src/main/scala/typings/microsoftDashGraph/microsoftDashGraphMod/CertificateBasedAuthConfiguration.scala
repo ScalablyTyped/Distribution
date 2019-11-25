@@ -13,8 +13,8 @@ object CertificateBasedAuthConfiguration {
   @scala.inline
   def apply(certificateAuthorities: js.Array[CertificateAuthority] = null, id: String = null): CertificateBasedAuthConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (certificateAuthorities != null) __obj.updateDynamic("certificateAuthorities")(certificateAuthorities)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (certificateAuthorities != null) __obj.updateDynamic("certificateAuthorities")(certificateAuthorities.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertificateBasedAuthConfiguration]
   }
 }

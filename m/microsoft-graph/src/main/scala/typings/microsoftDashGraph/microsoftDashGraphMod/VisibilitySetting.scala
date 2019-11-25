@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait VisibilitySetting extends js.Object
 
+object VisibilitySetting {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def hide: typings.microsoftDashGraph.microsoftDashGraphStrings.hide = this.cast("hide")
+  @scala.inline
+  def notConfigured: typings.microsoftDashGraph.microsoftDashGraphStrings.notConfigured = this.cast("notConfigured")
+  @scala.inline
+  def show: typings.microsoftDashGraph.microsoftDashGraphStrings.show = this.cast("show")
+}
+

@@ -28,11 +28,11 @@ object RowProps {
     tag: String | ReactType[_] = null
   ): RowProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule)
-    if (!js.isUndefined(form)) __obj.updateDynamic("form")(form)
-    if (!js.isUndefined(noGutters)) __obj.updateDynamic("noGutters")(noGutters)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule.asInstanceOf[js.Any])
+    if (!js.isUndefined(form)) __obj.updateDynamic("form")(form.asInstanceOf[js.Any])
+    if (!js.isUndefined(noGutters)) __obj.updateDynamic("noGutters")(noGutters.asInstanceOf[js.Any])
     if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowProps]
   }

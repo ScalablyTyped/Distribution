@@ -100,20 +100,20 @@ object Options {
     useCompilerPath: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(entrypoints)) __obj.updateDynamic("entrypoints")(entrypoints)
-    if (fileTypes != null) __obj.updateDynamic("fileTypes")(fileTypes)
-    if (filename != null) __obj.updateDynamic("filename")(filename)
-    if (!js.isUndefined(fullPath)) __obj.updateDynamic("fullPath")(fullPath)
-    if (!js.isUndefined(includeAllFileTypes)) __obj.updateDynamic("includeAllFileTypes")(includeAllFileTypes)
-    if (!js.isUndefined(includeManifest)) __obj.updateDynamic("includeManifest")(includeManifest)
-    if (!js.isUndefined(keepInMemory)) __obj.updateDynamic("keepInMemory")(keepInMemory)
-    if (!js.isUndefined(manifestFirst)) __obj.updateDynamic("manifestFirst")(manifestFirst)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (!js.isUndefined(entrypoints)) __obj.updateDynamic("entrypoints")(entrypoints.asInstanceOf[js.Any])
+    if (fileTypes != null) __obj.updateDynamic("fileTypes")(fileTypes.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullPath)) __obj.updateDynamic("fullPath")(fullPath.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeAllFileTypes)) __obj.updateDynamic("includeAllFileTypes")(includeAllFileTypes.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeManifest)) __obj.updateDynamic("includeManifest")(includeManifest.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepInMemory)) __obj.updateDynamic("keepInMemory")(keepInMemory.asInstanceOf[js.Any])
+    if (!js.isUndefined(manifestFirst)) __obj.updateDynamic("manifestFirst")(manifestFirst.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
     if (processOutput != null) __obj.updateDynamic("processOutput")(js.Any.fromFunction1(processOutput))
-    if (!js.isUndefined(update)) __obj.updateDynamic("update")(update)
-    if (!js.isUndefined(useCompilerPath)) __obj.updateDynamic("useCompilerPath")(useCompilerPath)
+    if (!js.isUndefined(update)) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
+    if (!js.isUndefined(useCompilerPath)) __obj.updateDynamic("useCompilerPath")(useCompilerPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

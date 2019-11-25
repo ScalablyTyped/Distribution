@@ -25,10 +25,10 @@ object AnnotationsControlPointOptions {
   ): AnnotationsControlPointOptions = {
     val __obj = js.Dynamic.literal()
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (positioner != null) __obj.updateDynamic("positioner")(positioner)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (symbol != null) __obj.updateDynamic("symbol")(symbol)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (positioner != null) __obj.updateDynamic("positioner")(positioner.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotationsControlPointOptions]
   }

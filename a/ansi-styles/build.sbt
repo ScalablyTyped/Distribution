@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "ansi-styles"
-version := "3.2.1-dt-20191115Z-1af0c5"
+version := "3.2.1-dt-20191115Z-ec76c9"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "color-name" % "1.1-dt-20190212Z-2eaba2",
-  "org.scalablytyped" %%% "std" % "3.7-1c17cf")
+  "org.scalablytyped" %%% "color-name" % "1.1-dt-20190212Z-e07bbd",
+  "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

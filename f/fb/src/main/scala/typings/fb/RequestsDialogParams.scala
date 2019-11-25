@@ -39,17 +39,17 @@ object RequestsDialogParams {
     title: String = null,
     to: String = null
   ): RequestsDialogParams = {
-    val __obj = js.Dynamic.literal(filters = filters.asInstanceOf[js.Any], message = message, method = method)
-    if (action_type != null) __obj.updateDynamic("action_type")(action_type)
-    if (app_id != null) __obj.updateDynamic("app_id")(app_id)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (exclude_ids != null) __obj.updateDynamic("exclude_ids")(exclude_ids)
+    val __obj = js.Dynamic.literal(filters = filters.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
+    if (action_type != null) __obj.updateDynamic("action_type")(action_type.asInstanceOf[js.Any])
+    if (app_id != null) __obj.updateDynamic("app_id")(app_id.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (exclude_ids != null) __obj.updateDynamic("exclude_ids")(exclude_ids.asInstanceOf[js.Any])
     if (max_recipients != null) __obj.updateDynamic("max_recipients")(max_recipients.asInstanceOf[js.Any])
-    if (object_id != null) __obj.updateDynamic("object_id")(object_id)
-    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri)
-    if (suggestions != null) __obj.updateDynamic("suggestions")(suggestions)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (to != null) __obj.updateDynamic("to")(to)
+    if (object_id != null) __obj.updateDynamic("object_id")(object_id.asInstanceOf[js.Any])
+    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri.asInstanceOf[js.Any])
+    if (suggestions != null) __obj.updateDynamic("suggestions")(suggestions.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestsDialogParams]
   }
 }

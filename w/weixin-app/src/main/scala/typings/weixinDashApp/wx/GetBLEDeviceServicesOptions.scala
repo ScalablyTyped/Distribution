@@ -26,7 +26,7 @@ object GetBLEDeviceServicesOptions {
     complete: /* res */ js.Any => Unit = null,
     fail: js.Any => Unit = null
   ): GetBLEDeviceServicesOptions = {
-    val __obj = js.Dynamic.literal(deviceId = deviceId, success = js.Any.fromFunction1(success))
+    val __obj = js.Dynamic.literal(deviceId = deviceId.asInstanceOf[js.Any], success = js.Any.fromFunction1(success))
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     __obj.asInstanceOf[GetBLEDeviceServicesOptions]

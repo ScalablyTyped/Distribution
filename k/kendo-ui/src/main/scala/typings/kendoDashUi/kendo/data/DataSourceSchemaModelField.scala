@@ -28,14 +28,14 @@ object DataSourceSchemaModelField {
     validation: DataSourceSchemaModelFieldValidation = null
   ): DataSourceSchemaModelField = {
     val __obj = js.Dynamic.literal()
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
-    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable)
-    if (field != null) __obj.updateDynamic("field")(field)
-    if (from != null) __obj.updateDynamic("from")(from)
-    if (!js.isUndefined(nullable)) __obj.updateDynamic("nullable")(nullable)
-    if (parse != null) __obj.updateDynamic("parse")(parse)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (validation != null) __obj.updateDynamic("validation")(validation)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (!js.isUndefined(nullable)) __obj.updateDynamic("nullable")(nullable.asInstanceOf[js.Any])
+    if (parse != null) __obj.updateDynamic("parse")(parse.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (validation != null) __obj.updateDynamic("validation")(validation.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceSchemaModelField]
   }
 }

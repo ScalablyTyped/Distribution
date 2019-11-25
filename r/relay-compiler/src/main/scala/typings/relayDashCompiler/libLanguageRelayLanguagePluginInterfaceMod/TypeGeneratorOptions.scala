@@ -76,9 +76,9 @@ object TypeGeneratorOptions {
     enumsHasteModule: String | (js.Function1[/* enumName */ String, String]) = null,
     normalizationIR: Root = null
   ): TypeGeneratorOptions = {
-    val __obj = js.Dynamic.literal(customScalars = customScalars, existingFragmentNames = existingFragmentNames, noFutureProofEnums = noFutureProofEnums, optionalInputFields = optionalInputFields, useHaste = useHaste, useSingleArtifactDirectory = useSingleArtifactDirectory)
+    val __obj = js.Dynamic.literal(customScalars = customScalars.asInstanceOf[js.Any], existingFragmentNames = existingFragmentNames.asInstanceOf[js.Any], noFutureProofEnums = noFutureProofEnums.asInstanceOf[js.Any], optionalInputFields = optionalInputFields.asInstanceOf[js.Any], useHaste = useHaste.asInstanceOf[js.Any], useSingleArtifactDirectory = useSingleArtifactDirectory.asInstanceOf[js.Any])
     if (enumsHasteModule != null) __obj.updateDynamic("enumsHasteModule")(enumsHasteModule.asInstanceOf[js.Any])
-    if (normalizationIR != null) __obj.updateDynamic("normalizationIR")(normalizationIR)
+    if (normalizationIR != null) __obj.updateDynamic("normalizationIR")(normalizationIR.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeGeneratorOptions]
   }
 }

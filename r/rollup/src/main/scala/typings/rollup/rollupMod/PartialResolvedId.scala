@@ -17,9 +17,9 @@ object PartialResolvedId {
     external: js.UndefOr[Boolean] = js.undefined,
     moduleSideEffects: js.UndefOr[Boolean] = js.undefined
   ): PartialResolvedId = {
-    val __obj = js.Dynamic.literal(id = id)
-    if (!js.isUndefined(external)) __obj.updateDynamic("external")(external)
-    if (!js.isUndefined(moduleSideEffects)) __obj.updateDynamic("moduleSideEffects")(moduleSideEffects)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    if (!js.isUndefined(external)) __obj.updateDynamic("external")(external.asInstanceOf[js.Any])
+    if (!js.isUndefined(moduleSideEffects)) __obj.updateDynamic("moduleSideEffects")(moduleSideEffects.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialResolvedId]
   }
 }

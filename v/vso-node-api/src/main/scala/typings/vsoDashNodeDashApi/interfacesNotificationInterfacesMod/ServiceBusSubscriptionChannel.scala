@@ -12,7 +12,7 @@ object ServiceBusSubscriptionChannel {
   @scala.inline
   def apply(`type`: String): ServiceBusSubscriptionChannel = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceBusSubscriptionChannel]
   }
 }

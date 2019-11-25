@@ -18,8 +18,8 @@ object OutputFormatOptions {
     shakeLen: Int | Double = null
   ): OutputFormatOptions = {
     val __obj = js.Dynamic.literal()
-    if (b64Pad != null) __obj.updateDynamic("b64Pad")(b64Pad)
-    if (!js.isUndefined(outputUpper)) __obj.updateDynamic("outputUpper")(outputUpper)
+    if (b64Pad != null) __obj.updateDynamic("b64Pad")(b64Pad.asInstanceOf[js.Any])
+    if (!js.isUndefined(outputUpper)) __obj.updateDynamic("outputUpper")(outputUpper.asInstanceOf[js.Any])
     if (shakeLen != null) __obj.updateDynamic("shakeLen")(shakeLen.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutputFormatOptions]
   }

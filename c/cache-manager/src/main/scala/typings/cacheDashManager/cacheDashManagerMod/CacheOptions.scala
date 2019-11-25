@@ -17,7 +17,7 @@ object CacheOptions {
   def apply(isCacheableValue: /* value */ js.Any => Boolean = null, promiseDependency: js.Any = null): CacheOptions = {
     val __obj = js.Dynamic.literal()
     if (isCacheableValue != null) __obj.updateDynamic("isCacheableValue")(js.Any.fromFunction1(isCacheableValue))
-    if (promiseDependency != null) __obj.updateDynamic("promiseDependency")(promiseDependency)
+    if (promiseDependency != null) __obj.updateDynamic("promiseDependency")(promiseDependency.asInstanceOf[js.Any])
     __obj.asInstanceOf[CacheOptions]
   }
 }

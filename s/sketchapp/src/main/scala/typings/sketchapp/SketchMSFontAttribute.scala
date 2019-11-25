@@ -13,7 +13,7 @@ trait SketchMSFontAttribute extends js.Object {
 object SketchMSFontAttribute {
   @scala.inline
   def apply(_class: fontDescriptor, attributes: Anon_Name): SketchMSFontAttribute = {
-    val __obj = js.Dynamic.literal(_class = _class, attributes = attributes)
+    val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], attributes = attributes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SketchMSFontAttribute]
   }

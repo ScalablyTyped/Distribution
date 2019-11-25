@@ -21,8 +21,8 @@ trait Payload extends js.Object {
 object Payload {
   @scala.inline
   def apply(error: String, message: String, statusCode: Double, attributes: js.Any = null): Payload = {
-    val __obj = js.Dynamic.literal(error = error, message = message, statusCode = statusCode)
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Payload]
   }
 }

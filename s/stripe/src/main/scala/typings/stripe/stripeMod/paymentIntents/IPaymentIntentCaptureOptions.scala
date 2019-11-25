@@ -35,8 +35,8 @@ object IPaymentIntentCaptureOptions {
     val __obj = js.Dynamic.literal()
     if (amount_to_capture != null) __obj.updateDynamic("amount_to_capture")(amount_to_capture.asInstanceOf[js.Any])
     if (application_fee_amount != null) __obj.updateDynamic("application_fee_amount")(application_fee_amount.asInstanceOf[js.Any])
-    if (on_behalf_of != null) __obj.updateDynamic("on_behalf_of")(on_behalf_of)
-    if (transfer_data != null) __obj.updateDynamic("transfer_data")(transfer_data)
+    if (on_behalf_of != null) __obj.updateDynamic("on_behalf_of")(on_behalf_of.asInstanceOf[js.Any])
+    if (transfer_data != null) __obj.updateDynamic("transfer_data")(transfer_data.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPaymentIntentCaptureOptions]
   }
 }

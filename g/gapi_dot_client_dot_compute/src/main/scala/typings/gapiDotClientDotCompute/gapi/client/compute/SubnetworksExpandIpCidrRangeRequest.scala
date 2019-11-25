@@ -16,7 +16,7 @@ object SubnetworksExpandIpCidrRangeRequest {
   @scala.inline
   def apply(ipCidrRange: String = null): SubnetworksExpandIpCidrRangeRequest = {
     val __obj = js.Dynamic.literal()
-    if (ipCidrRange != null) __obj.updateDynamic("ipCidrRange")(ipCidrRange)
+    if (ipCidrRange != null) __obj.updateDynamic("ipCidrRange")(ipCidrRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubnetworksExpandIpCidrRangeRequest]
   }
 }

@@ -14,7 +14,7 @@ trait IKeytipLayerState extends js.Object {
 object IKeytipLayerState {
   @scala.inline
   def apply(inKeytipMode: Boolean, keytips: js.Array[IKeytipProps], visibleKeytips: js.Array[IKeytipProps]): IKeytipLayerState = {
-    val __obj = js.Dynamic.literal(inKeytipMode = inKeytipMode, keytips = keytips, visibleKeytips = visibleKeytips)
+    val __obj = js.Dynamic.literal(inKeytipMode = inKeytipMode.asInstanceOf[js.Any], keytips = keytips.asInstanceOf[js.Any], visibleKeytips = visibleKeytips.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IKeytipLayerState]
   }

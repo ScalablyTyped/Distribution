@@ -13,8 +13,8 @@ trait FocusElements extends js.Object {
 object FocusElements {
   @scala.inline
   def apply(gainedFocus: HTMLElement, lostFocus: HTMLElement = null): FocusElements = {
-    val __obj = js.Dynamic.literal(gainedFocus = gainedFocus)
-    if (lostFocus != null) __obj.updateDynamic("lostFocus")(lostFocus)
+    val __obj = js.Dynamic.literal(gainedFocus = gainedFocus.asInstanceOf[js.Any])
+    if (lostFocus != null) __obj.updateDynamic("lostFocus")(lostFocus.asInstanceOf[js.Any])
     __obj.asInstanceOf[FocusElements]
   }
 }

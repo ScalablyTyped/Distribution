@@ -30,9 +30,9 @@ object LooksSameResult {
     equal: js.UndefOr[Boolean] = js.undefined
   ): LooksSameResult = {
     val __obj = js.Dynamic.literal()
-    if (diffBounds != null) __obj.updateDynamic("diffBounds")(diffBounds)
-    if (diffClusters != null) __obj.updateDynamic("diffClusters")(diffClusters)
-    if (!js.isUndefined(equal)) __obj.updateDynamic("equal")(equal)
+    if (diffBounds != null) __obj.updateDynamic("diffBounds")(diffBounds.asInstanceOf[js.Any])
+    if (diffClusters != null) __obj.updateDynamic("diffClusters")(diffClusters.asInstanceOf[js.Any])
+    if (!js.isUndefined(equal)) __obj.updateDynamic("equal")(equal.asInstanceOf[js.Any])
     __obj.asInstanceOf[LooksSameResult]
   }
 }

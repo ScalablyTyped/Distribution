@@ -13,7 +13,7 @@ trait Tracing extends js.Object {
 object Tracing {
   @scala.inline
   def apply(parentSpan: js.Object, startSpan: js.Function, tracer: js.Object): Tracing = {
-    val __obj = js.Dynamic.literal(parentSpan = parentSpan, startSpan = startSpan, tracer = tracer)
+    val __obj = js.Dynamic.literal(parentSpan = parentSpan.asInstanceOf[js.Any], startSpan = startSpan.asInstanceOf[js.Any], tracer = tracer.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Tracing]
   }

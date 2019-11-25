@@ -1,7 +1,6 @@
 package typings.dojo.dojox.dgauges
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValueOldValuePropertyNumber
 import typings.dojo.dojoStrings.paddingBottom
 import typings.dojo.dojoStrings.paddingLeft
 import typings.dojo.dojoStrings.paddingRight
@@ -64,12 +63,44 @@ class RectangularValueIndicator () extends ScaleIndicatorBase {
   @JSName("set")
   def set_paddingTop(property: paddingTop, value: Double): Unit = js.native
   @JSName("watch")
-  def watch_paddingBottom(property: paddingBottom, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_paddingBottom(
+    property: paddingBottom,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_paddingLeft(property: paddingLeft, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_paddingLeft(
+    property: paddingLeft,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_paddingRight(property: paddingRight, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_paddingRight(
+    property: paddingRight,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_paddingTop(property: paddingTop, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_paddingTop(
+    property: paddingTop,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

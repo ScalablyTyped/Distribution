@@ -22,11 +22,11 @@ object OdataBatchConfig {
     endpoint: String = null,
     headers: Headers = null
   ): OdataBatchConfig = {
-    val __obj = js.Dynamic.literal(useChangset = useChangset)
-    if (boundaryPrefix != null) __obj.updateDynamic("boundaryPrefix")(boundaryPrefix)
-    if (changsetBoundaryPrefix != null) __obj.updateDynamic("changsetBoundaryPrefix")(changsetBoundaryPrefix)
-    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    val __obj = js.Dynamic.literal(useChangset = useChangset.asInstanceOf[js.Any])
+    if (boundaryPrefix != null) __obj.updateDynamic("boundaryPrefix")(boundaryPrefix.asInstanceOf[js.Any])
+    if (changsetBoundaryPrefix != null) __obj.updateDynamic("changsetBoundaryPrefix")(changsetBoundaryPrefix.asInstanceOf[js.Any])
+    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     __obj.asInstanceOf[OdataBatchConfig]
   }
 }

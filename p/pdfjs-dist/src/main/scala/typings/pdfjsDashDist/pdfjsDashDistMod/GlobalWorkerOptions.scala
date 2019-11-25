@@ -11,7 +11,7 @@ trait GlobalWorkerOptions extends js.Object {
 object GlobalWorkerOptions {
   @scala.inline
   def apply(workerSrc: String): GlobalWorkerOptions = {
-    val __obj = js.Dynamic.literal(workerSrc = workerSrc)
+    val __obj = js.Dynamic.literal(workerSrc = workerSrc.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GlobalWorkerOptions]
   }

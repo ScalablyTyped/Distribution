@@ -13,7 +13,7 @@ trait PermissionResponse extends js.Object {
 object PermissionResponse {
   @scala.inline
   def apply(expires: PermissionExpiration, permissions: PermissionMap, status: PermissionStatus): PermissionResponse = {
-    val __obj = js.Dynamic.literal(expires = expires.asInstanceOf[js.Any], permissions = permissions, status = status)
+    val __obj = js.Dynamic.literal(expires = expires.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PermissionResponse]
   }

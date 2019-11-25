@@ -29,7 +29,7 @@ object MultiPage_Error_Parameter {
     SCode: Double,
     Source: String
   ): MultiPage_Error_Parameter = {
-    val __obj = js.Dynamic.literal(CancelDisplay = CancelDisplay, Description = Description, HelpContext = HelpContext, HelpFile = HelpFile, Index = Index, Number = Number, SCode = SCode, Source = Source)
+    val __obj = js.Dynamic.literal(CancelDisplay = CancelDisplay.asInstanceOf[js.Any], Description = Description.asInstanceOf[js.Any], HelpContext = HelpContext.asInstanceOf[js.Any], HelpFile = HelpFile.asInstanceOf[js.Any], Index = Index.asInstanceOf[js.Any], Number = Number.asInstanceOf[js.Any], SCode = SCode.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MultiPage_Error_Parameter]
   }

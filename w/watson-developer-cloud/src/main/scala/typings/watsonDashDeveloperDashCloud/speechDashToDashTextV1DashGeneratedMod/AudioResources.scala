@@ -15,7 +15,7 @@ trait AudioResources extends js.Object {
 object AudioResources {
   @scala.inline
   def apply(audio: js.Array[AudioResource], total_minutes_of_audio: Double): AudioResources = {
-    val __obj = js.Dynamic.literal(audio = audio, total_minutes_of_audio = total_minutes_of_audio)
+    val __obj = js.Dynamic.literal(audio = audio.asInstanceOf[js.Any], total_minutes_of_audio = total_minutes_of_audio.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AudioResources]
   }

@@ -27,8 +27,8 @@ object R3DelegatedFnOrClassMetadata {
     `type`: Expression,
     deps: js.Array[R3DependencyMetadata] | invalid = null
   ): R3DelegatedFnOrClassMetadata = {
-    val __obj = js.Dynamic.literal(delegate = delegate, delegateDeps = delegateDeps, delegateType = delegateType.asInstanceOf[js.Any], injectFn = injectFn, name = name)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(delegate = delegate.asInstanceOf[js.Any], delegateDeps = delegateDeps.asInstanceOf[js.Any], delegateType = delegateType.asInstanceOf[js.Any], injectFn = injectFn.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (deps != null) __obj.updateDynamic("deps")(deps.asInstanceOf[js.Any])
     __obj.asInstanceOf[R3DelegatedFnOrClassMetadata]
   }

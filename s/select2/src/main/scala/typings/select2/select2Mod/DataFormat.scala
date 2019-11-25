@@ -19,9 +19,9 @@ object DataFormat {
     disabled: js.UndefOr[Boolean] = js.undefined,
     selected: js.UndefOr[Boolean] = js.undefined
   ): DataFormat = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], text = text)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataFormat]
   }
 }

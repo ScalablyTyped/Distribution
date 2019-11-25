@@ -19,8 +19,8 @@ object SearchReferenceSetsResponse {
   @scala.inline
   def apply(nextPageToken: String = null, referenceSets: js.Array[ReferenceSet] = null): SearchReferenceSetsResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (referenceSets != null) __obj.updateDynamic("referenceSets")(referenceSets)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (referenceSets != null) __obj.updateDynamic("referenceSets")(referenceSets.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchReferenceSetsResponse]
   }
 }

@@ -36,18 +36,18 @@ object Anon_BackgroundColorStr {
     version: String = null
   ): Anon_BackgroundColorStr = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColorStr != null) __obj.updateDynamic("backgroundColorStr")(backgroundColorStr)
+    if (backgroundColorStr != null) __obj.updateDynamic("backgroundColorStr")(backgroundColorStr.asInstanceOf[js.Any])
     if (bleedRatio != null) __obj.updateDynamic("bleedRatio")(bleedRatio.asInstanceOf[js.Any])
-    if (imageType != null) __obj.updateDynamic("imageType")(imageType)
-    if (layerFill != null) __obj.updateDynamic("layerFill")(layerFill)
-    if (layerOutline != null) __obj.updateDynamic("layerOutline")(layerOutline)
-    if (layerVisibility != null) __obj.updateDynamic("layerVisibility")(layerVisibility)
-    if (layerWhere != null) __obj.updateDynamic("layerWhere")(layerWhere)
-    if (mapCacheName != null) __obj.updateDynamic("mapCacheName")(mapCacheName)
-    if (mapCacheOption != null) __obj.updateDynamic("mapCacheOption")(mapCacheOption)
-    if (tag != null) __obj.updateDynamic("tag")(tag)
-    if (!js.isUndefined(useQuadKeyForMapCacheName)) __obj.updateDynamic("useQuadKeyForMapCacheName")(useQuadKeyForMapCacheName)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (imageType != null) __obj.updateDynamic("imageType")(imageType.asInstanceOf[js.Any])
+    if (layerFill != null) __obj.updateDynamic("layerFill")(layerFill.asInstanceOf[js.Any])
+    if (layerOutline != null) __obj.updateDynamic("layerOutline")(layerOutline.asInstanceOf[js.Any])
+    if (layerVisibility != null) __obj.updateDynamic("layerVisibility")(layerVisibility.asInstanceOf[js.Any])
+    if (layerWhere != null) __obj.updateDynamic("layerWhere")(layerWhere.asInstanceOf[js.Any])
+    if (mapCacheName != null) __obj.updateDynamic("mapCacheName")(mapCacheName.asInstanceOf[js.Any])
+    if (mapCacheOption != null) __obj.updateDynamic("mapCacheOption")(mapCacheOption.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
+    if (!js.isUndefined(useQuadKeyForMapCacheName)) __obj.updateDynamic("useQuadKeyForMapCacheName")(useQuadKeyForMapCacheName.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BackgroundColorStr]
   }
 }

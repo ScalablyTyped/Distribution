@@ -13,7 +13,7 @@ object Options {
   @scala.inline
   def apply(format: array = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

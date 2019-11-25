@@ -12,7 +12,7 @@ trait Anon_Connections extends js.Object {
 object Anon_Connections {
   @scala.inline
   def apply(connections: Double, neurons: Double): Anon_Connections = {
-    val __obj = js.Dynamic.literal(connections = connections, neurons = neurons)
+    val __obj = js.Dynamic.literal(connections = connections.asInstanceOf[js.Any], neurons = neurons.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Connections]
   }

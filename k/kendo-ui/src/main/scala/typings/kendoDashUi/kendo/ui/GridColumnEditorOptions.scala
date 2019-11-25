@@ -16,10 +16,10 @@ object GridColumnEditorOptions {
   @scala.inline
   def apply(field: String = null, format: String = null, model: Model = null, values: js.Array[_] = null): GridColumnEditorOptions = {
     val __obj = js.Dynamic.literal()
-    if (field != null) __obj.updateDynamic("field")(field)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridColumnEditorOptions]
   }
 }

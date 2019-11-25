@@ -29,13 +29,13 @@ object Anon_ButtonSize {
   ): Anon_ButtonSize = {
     val __obj = js.Dynamic.literal()
     if (buttonSize != null) __obj.updateDynamic("buttonSize")(buttonSize.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (disabledColor != null) __obj.updateDynamic("disabledColor")(disabledColor)
-    if (disabledTextColor != null) __obj.updateDynamic("disabledTextColor")(disabledTextColor)
-    if (iconColor != null) __obj.updateDynamic("iconColor")(iconColor)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (disabledColor != null) __obj.updateDynamic("disabledColor")(disabledColor.asInstanceOf[js.Any])
+    if (disabledTextColor != null) __obj.updateDynamic("disabledTextColor")(disabledTextColor.asInstanceOf[js.Any])
+    if (iconColor != null) __obj.updateDynamic("iconColor")(iconColor.asInstanceOf[js.Any])
     if (miniSize != null) __obj.updateDynamic("miniSize")(miniSize.asInstanceOf[js.Any])
-    if (secondaryColor != null) __obj.updateDynamic("secondaryColor")(secondaryColor)
-    if (secondaryIconColor != null) __obj.updateDynamic("secondaryIconColor")(secondaryIconColor)
+    if (secondaryColor != null) __obj.updateDynamic("secondaryColor")(secondaryColor.asInstanceOf[js.Any])
+    if (secondaryIconColor != null) __obj.updateDynamic("secondaryIconColor")(secondaryIconColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ButtonSize]
   }
 }

@@ -54,7 +54,7 @@ object typeinStylestring {
     subtitle2: String,
     title: String
   ): typeinStylestring = {
-    val __obj = js.Dynamic.literal(body1 = body1, body2 = body2, button = button, caption = caption, display1 = display1, display2 = display2, display3 = display3, display4 = display4, h1 = h1, h2 = h2, h3 = h3, h4 = h4, h5 = h5, h6 = h6, headline = headline, overline = overline, srOnly = srOnly, subheading = subheading, subtitle1 = subtitle1, subtitle2 = subtitle2, title = title)
+    val __obj = js.Dynamic.literal(body1 = body1.asInstanceOf[js.Any], body2 = body2.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], display1 = display1.asInstanceOf[js.Any], display2 = display2.asInstanceOf[js.Any], display3 = display3.asInstanceOf[js.Any], display4 = display4.asInstanceOf[js.Any], h1 = h1.asInstanceOf[js.Any], h2 = h2.asInstanceOf[js.Any], h3 = h3.asInstanceOf[js.Any], h4 = h4.asInstanceOf[js.Any], h5 = h5.asInstanceOf[js.Any], h6 = h6.asInstanceOf[js.Any], headline = headline.asInstanceOf[js.Any], overline = overline.asInstanceOf[js.Any], srOnly = srOnly.asInstanceOf[js.Any], subheading = subheading.asInstanceOf[js.Any], subtitle1 = subtitle1.asInstanceOf[js.Any], subtitle2 = subtitle2.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[typeinStylestring]
   }

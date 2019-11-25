@@ -58,13 +58,13 @@ object ListingElement {
     sticky: js.UndefOr[Boolean] = js.undefined,
     target: String = null
   ): ListingElement = {
-    val __obj = js.Dynamic.literal(date = date, name = name, size = size)
-    __obj.updateDynamic("type")(`type`)
-    if (group != null) __obj.updateDynamic("group")(group)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (rights != null) __obj.updateDynamic("rights")(rights)
-    if (!js.isUndefined(sticky)) __obj.updateDynamic("sticky")(sticky)
-    if (target != null) __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (rights != null) __obj.updateDynamic("rights")(rights.asInstanceOf[js.Any])
+    if (!js.isUndefined(sticky)) __obj.updateDynamic("sticky")(sticky.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListingElement]
   }
 }

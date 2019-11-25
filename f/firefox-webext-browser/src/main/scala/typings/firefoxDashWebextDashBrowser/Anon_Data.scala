@@ -31,9 +31,9 @@ object Anon_Data {
     `type`: _UndefinedType,
     viewType: _UndefinedViewType = null
   ): Anon_Data = {
-    val __obj = js.Dynamic.literal(data = data, name = name, timeStamp = timeStamp.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
-    if (viewType != null) __obj.updateDynamic("viewType")(viewType)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (viewType != null) __obj.updateDynamic("viewType")(viewType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Data]
   }
 }

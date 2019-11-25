@@ -21,7 +21,7 @@ object Anon_MaximumValueMinimumValue {
     val __obj = js.Dynamic.literal()
     if (maximumValue != null) __obj.updateDynamic("maximumValue")(maximumValue.asInstanceOf[js.Any])
     if (minimumValue != null) __obj.updateDynamic("minimumValue")(minimumValue.asInstanceOf[js.Any])
-    if (targetUsers != null) __obj.updateDynamic("targetUsers")(targetUsers)
+    if (targetUsers != null) __obj.updateDynamic("targetUsers")(targetUsers.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_MaximumValueMinimumValue]
   }
 }

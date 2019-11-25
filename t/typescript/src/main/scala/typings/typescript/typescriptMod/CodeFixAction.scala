@@ -25,10 +25,10 @@ object CodeFixAction {
     fixAllDescription: String = null,
     fixId: js.Object = null
   ): CodeFixAction = {
-    val __obj = js.Dynamic.literal(changes = changes, description = description, fixName = fixName)
-    if (commands != null) __obj.updateDynamic("commands")(commands)
-    if (fixAllDescription != null) __obj.updateDynamic("fixAllDescription")(fixAllDescription)
-    if (fixId != null) __obj.updateDynamic("fixId")(fixId)
+    val __obj = js.Dynamic.literal(changes = changes.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], fixName = fixName.asInstanceOf[js.Any])
+    if (commands != null) __obj.updateDynamic("commands")(commands.asInstanceOf[js.Any])
+    if (fixAllDescription != null) __obj.updateDynamic("fixAllDescription")(fixAllDescription.asInstanceOf[js.Any])
+    if (fixId != null) __obj.updateDynamic("fixId")(fixId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeFixAction]
   }
 }

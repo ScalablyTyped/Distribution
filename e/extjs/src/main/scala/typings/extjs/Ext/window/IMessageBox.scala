@@ -177,68 +177,42 @@ object IMessageBox {
     YESNOCANCEL: Int | Double = null,
     alert: (/* title */ js.UndefOr[java.lang.String], /* msg */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => typings.extjs.Ext.window.IMessageBox = null,
     buttonText: js.Any = null,
-    closeAction: java.lang.String = null,
-    cls: java.lang.String = null,
     confirm: (/* title */ js.UndefOr[java.lang.String], /* msg */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => typings.extjs.Ext.window.IMessageBox = null,
-    constrain: js.UndefOr[Boolean] = js.undefined,
     defaultTextHeight: Int | Double = null,
     hide: () => IComponent = null,
-    hideMode: java.lang.String = null,
-    layout: js.Any = null,
-    maxHeight: Int | Double = null,
-    maxWidth: Int | Double = null,
-    minHeight: Int | Double = null,
     minProgressWidth: Int | Double = null,
     minPromptWidth: Int | Double = null,
-    minWidth: Int | Double = null,
-    onShow: () => Unit = null,
     progress: (/* title */ js.UndefOr[java.lang.String], /* msg */ js.UndefOr[java.lang.String], /* progressText */ js.UndefOr[java.lang.String]) => typings.extjs.Ext.window.IMessageBox = null,
     prompt: (/* title */ js.UndefOr[java.lang.String], /* msg */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* multiline */ js.UndefOr[js.Any], /* value */ js.UndefOr[java.lang.String]) => typings.extjs.Ext.window.IMessageBox = null,
-    resizable: js.Any = null,
     setIcon: (/* icon */ js.UndefOr[java.lang.String], /* width */ js.UndefOr[Double], /* height */ js.UndefOr[Double]) => typings.extjs.Ext.window.IMessageBox = null,
     show: /* config */ js.UndefOr[js.Any] => typings.extjs.Ext.window.IMessageBox = null,
-    shrinkWrapDock: js.Any = null,
-    title: java.lang.String = null,
     updateProgress: (/* value */ js.UndefOr[Double], /* progressText */ js.UndefOr[java.lang.String], /* msg */ js.UndefOr[java.lang.String]) => typings.extjs.Ext.window.IMessageBox = null,
     wait: (/* msg */ js.UndefOr[java.lang.String], /* title */ js.UndefOr[java.lang.String], /* config */ js.UndefOr[js.Any]) => typings.extjs.Ext.window.IMessageBox = null
   ): IMessageBox = {
     val __obj = js.Dynamic.literal()
     if (CANCEL != null) __obj.updateDynamic("CANCEL")(CANCEL.asInstanceOf[js.Any])
-    if (ERROR != null) __obj.updateDynamic("ERROR")(ERROR)
-    if (INFO != null) __obj.updateDynamic("INFO")(INFO)
-    js.Dynamic.global.Object.assign(__obj, IWindow)
+    if (ERROR != null) __obj.updateDynamic("ERROR")(ERROR.asInstanceOf[js.Any])
+    if (INFO != null) __obj.updateDynamic("INFO")(INFO.asInstanceOf[js.Any])
+    if (IWindow != null) js.Dynamic.global.Object.assign(__obj, IWindow)
     if (NO != null) __obj.updateDynamic("NO")(NO.asInstanceOf[js.Any])
     if (OK != null) __obj.updateDynamic("OK")(OK.asInstanceOf[js.Any])
     if (OKCANCEL != null) __obj.updateDynamic("OKCANCEL")(OKCANCEL.asInstanceOf[js.Any])
-    if (QUESTION != null) __obj.updateDynamic("QUESTION")(QUESTION)
-    if (WARNING != null) __obj.updateDynamic("WARNING")(WARNING)
+    if (QUESTION != null) __obj.updateDynamic("QUESTION")(QUESTION.asInstanceOf[js.Any])
+    if (WARNING != null) __obj.updateDynamic("WARNING")(WARNING.asInstanceOf[js.Any])
     if (YES != null) __obj.updateDynamic("YES")(YES.asInstanceOf[js.Any])
     if (YESNO != null) __obj.updateDynamic("YESNO")(YESNO.asInstanceOf[js.Any])
     if (YESNOCANCEL != null) __obj.updateDynamic("YESNOCANCEL")(YESNOCANCEL.asInstanceOf[js.Any])
     if (alert != null) __obj.updateDynamic("alert")(js.Any.fromFunction4(alert))
-    if (buttonText != null) __obj.updateDynamic("buttonText")(buttonText)
-    if (closeAction != null) __obj.updateDynamic("closeAction")(closeAction)
-    if (cls != null) __obj.updateDynamic("cls")(cls)
+    if (buttonText != null) __obj.updateDynamic("buttonText")(buttonText.asInstanceOf[js.Any])
     if (confirm != null) __obj.updateDynamic("confirm")(js.Any.fromFunction4(confirm))
-    if (!js.isUndefined(constrain)) __obj.updateDynamic("constrain")(constrain)
     if (defaultTextHeight != null) __obj.updateDynamic("defaultTextHeight")(defaultTextHeight.asInstanceOf[js.Any])
     if (hide != null) __obj.updateDynamic("hide")(js.Any.fromFunction0(hide))
-    if (hideMode != null) __obj.updateDynamic("hideMode")(hideMode)
-    if (layout != null) __obj.updateDynamic("layout")(layout)
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
     if (minProgressWidth != null) __obj.updateDynamic("minProgressWidth")(minProgressWidth.asInstanceOf[js.Any])
     if (minPromptWidth != null) __obj.updateDynamic("minPromptWidth")(minPromptWidth.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction0(onShow))
     if (progress != null) __obj.updateDynamic("progress")(js.Any.fromFunction3(progress))
     if (prompt != null) __obj.updateDynamic("prompt")(js.Any.fromFunction6(prompt))
-    if (resizable != null) __obj.updateDynamic("resizable")(resizable)
     if (setIcon != null) __obj.updateDynamic("setIcon")(js.Any.fromFunction3(setIcon))
     if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction1(show))
-    if (shrinkWrapDock != null) __obj.updateDynamic("shrinkWrapDock")(shrinkWrapDock)
-    if (title != null) __obj.updateDynamic("title")(title)
     if (updateProgress != null) __obj.updateDynamic("updateProgress")(js.Any.fromFunction3(updateProgress))
     if (wait != null) __obj.updateDynamic("wait")(js.Any.fromFunction3(wait))
     __obj.asInstanceOf[IMessageBox]

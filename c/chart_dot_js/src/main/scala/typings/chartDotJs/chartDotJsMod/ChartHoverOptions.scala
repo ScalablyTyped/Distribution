@@ -24,9 +24,9 @@ object ChartHoverOptions {
   ): ChartHoverOptions = {
     val __obj = js.Dynamic.literal()
     if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
-    if (!js.isUndefined(intersect)) __obj.updateDynamic("intersect")(intersect)
-    if (mode != null) __obj.updateDynamic("mode")(mode)
-    if (onHover != null) __obj.updateDynamic("onHover")(onHover)
+    if (!js.isUndefined(intersect)) __obj.updateDynamic("intersect")(intersect.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (onHover != null) __obj.updateDynamic("onHover")(onHover.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartHoverOptions]
   }
 }

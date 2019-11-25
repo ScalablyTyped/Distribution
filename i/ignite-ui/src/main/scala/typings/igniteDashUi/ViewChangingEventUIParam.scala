@@ -23,9 +23,9 @@ object ViewChangingEventUIParam {
   @scala.inline
   def apply(currentSelectedView: String = null, newSelectedView: String = null, owner: js.Any = null): ViewChangingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (currentSelectedView != null) __obj.updateDynamic("currentSelectedView")(currentSelectedView)
-    if (newSelectedView != null) __obj.updateDynamic("newSelectedView")(newSelectedView)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (currentSelectedView != null) __obj.updateDynamic("currentSelectedView")(currentSelectedView.asInstanceOf[js.Any])
+    if (newSelectedView != null) __obj.updateDynamic("newSelectedView")(newSelectedView.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewChangingEventUIParam]
   }
 }

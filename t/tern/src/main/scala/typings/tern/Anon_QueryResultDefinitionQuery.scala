@@ -14,7 +14,7 @@ trait Anon_QueryResultDefinitionQuery extends js.Object {
 object Anon_QueryResultDefinitionQuery {
   @scala.inline
   def apply(query: DefinitionQuery, result: DefinitionQueryResult): Anon_QueryResultDefinitionQuery = {
-    val __obj = js.Dynamic.literal(query = query, result = result)
+    val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_QueryResultDefinitionQuery]
   }

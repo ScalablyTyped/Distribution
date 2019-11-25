@@ -26,8 +26,8 @@ object IMessage {
     rawCommand: String,
     prefix: String = null
   ): IMessage = {
-    val __obj = js.Dynamic.literal(args = args, command = command, commandType = commandType, rawCommand = rawCommand)
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any], commandType = commandType.asInstanceOf[js.Any], rawCommand = rawCommand.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMessage]
   }
 }

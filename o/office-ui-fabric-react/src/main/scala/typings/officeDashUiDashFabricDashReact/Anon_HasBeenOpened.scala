@@ -30,11 +30,11 @@ object Anon_HasBeenOpened {
     modalRectangleTop: Int | Double = null
   ): Anon_HasBeenOpened = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hasBeenOpened)) __obj.updateDynamic("hasBeenOpened")(hasBeenOpened)
-    if (!js.isUndefined(isDefaultDragHandle)) __obj.updateDynamic("isDefaultDragHandle")(isDefaultDragHandle)
-    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen)
-    if (!js.isUndefined(isVisible)) __obj.updateDynamic("isVisible")(isVisible)
-    if (layerClassName != null) __obj.updateDynamic("layerClassName")(layerClassName)
+    if (!js.isUndefined(hasBeenOpened)) __obj.updateDynamic("hasBeenOpened")(hasBeenOpened.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDefaultDragHandle)) __obj.updateDynamic("isDefaultDragHandle")(isDefaultDragHandle.asInstanceOf[js.Any])
+    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen.asInstanceOf[js.Any])
+    if (!js.isUndefined(isVisible)) __obj.updateDynamic("isVisible")(isVisible.asInstanceOf[js.Any])
+    if (layerClassName != null) __obj.updateDynamic("layerClassName")(layerClassName.asInstanceOf[js.Any])
     if (modalRectangleTop != null) __obj.updateDynamic("modalRectangleTop")(modalRectangleTop.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_HasBeenOpened]
   }

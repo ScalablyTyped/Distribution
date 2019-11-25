@@ -13,7 +13,7 @@ trait Anon_Df extends js.Object {
 object Anon_Df {
   @scala.inline
   def apply(df: Double, docs: InvertedIndexDocs): Anon_Df = {
-    val __obj = js.Dynamic.literal(df = df, docs = docs)
+    val __obj = js.Dynamic.literal(df = df.asInstanceOf[js.Any], docs = docs.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Df]
   }

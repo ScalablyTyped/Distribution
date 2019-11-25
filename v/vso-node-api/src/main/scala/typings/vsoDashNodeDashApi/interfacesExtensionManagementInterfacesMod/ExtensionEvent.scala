@@ -43,7 +43,7 @@ object ExtensionEvent {
     modifiedBy: IdentityRef,
     updateType: ExtensionUpdateType
   ): ExtensionEvent = {
-    val __obj = js.Dynamic.literal(extension = extension, extensionVersion = extensionVersion, host = host, links = links, modifiedBy = modifiedBy, updateType = updateType)
+    val __obj = js.Dynamic.literal(extension = extension.asInstanceOf[js.Any], extensionVersion = extensionVersion.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], modifiedBy = modifiedBy.asInstanceOf[js.Any], updateType = updateType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExtensionEvent]
   }

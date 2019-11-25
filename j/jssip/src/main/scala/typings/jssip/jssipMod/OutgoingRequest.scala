@@ -31,11 +31,10 @@ object OutgoingRequest {
     ruri: URI,
     setHeader: (String, String) => Unit,
     to: NameAddrHeader,
-    toString: () => String,
     body: String = null
   ): OutgoingRequest = {
-    val __obj = js.Dynamic.literal(call_id = call_id, cseq = cseq, from = from, getHeader = js.Any.fromFunction1(getHeader), getHeaders = js.Any.fromFunction1(getHeaders), hasHeader = js.Any.fromFunction1(hasHeader), method = method, ruri = ruri, setHeader = js.Any.fromFunction2(setHeader), to = to, toString = js.Any.fromFunction0(toString))
-    if (body != null) __obj.updateDynamic("body")(body)
+    val __obj = js.Dynamic.literal(call_id = call_id.asInstanceOf[js.Any], cseq = cseq.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], getHeader = js.Any.fromFunction1(getHeader), getHeaders = js.Any.fromFunction1(getHeaders), hasHeader = js.Any.fromFunction1(hasHeader), method = method.asInstanceOf[js.Any], ruri = ruri.asInstanceOf[js.Any], setHeader = js.Any.fromFunction2(setHeader), to = to.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutgoingRequest]
   }
 }

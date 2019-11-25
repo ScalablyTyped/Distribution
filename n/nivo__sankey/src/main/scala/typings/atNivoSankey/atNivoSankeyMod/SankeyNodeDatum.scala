@@ -45,7 +45,7 @@ object SankeyNodeDatum {
     y0: Double,
     y1: Double
   ): SankeyNodeDatum = {
-    val __obj = js.Dynamic.literal(color = color, depth = depth, height = height, id = id, index = index, label = label, layer = layer, sourceLinks = sourceLinks, targetLinks = targetLinks, value = value, width = width, x = x, x0 = x0, x1 = x1, y = y, y0 = y0, y1 = y1)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], sourceLinks = sourceLinks.asInstanceOf[js.Any], targetLinks = targetLinks.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], x0 = x0.asInstanceOf[js.Any], x1 = x1.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], y0 = y0.asInstanceOf[js.Any], y1 = y1.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SankeyNodeDatum]
   }

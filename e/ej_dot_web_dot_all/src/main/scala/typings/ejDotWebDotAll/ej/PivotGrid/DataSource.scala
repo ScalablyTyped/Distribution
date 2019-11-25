@@ -71,18 +71,18 @@ object DataSource {
     values: js.Array[DataSourceValue] = null
   ): DataSource = {
     val __obj = js.Dynamic.literal()
-    if (catalog != null) __obj.updateDynamic("catalog")(catalog)
-    if (columns != null) __obj.updateDynamic("columns")(columns)
-    if (cube != null) __obj.updateDynamic("cube")(cube)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (!js.isUndefined(enableAdvancedFilter)) __obj.updateDynamic("enableAdvancedFilter")(enableAdvancedFilter)
-    if (filters != null) __obj.updateDynamic("filters")(filters)
-    if (pagerOptions != null) __obj.updateDynamic("pagerOptions")(pagerOptions)
-    if (providerName != null) __obj.updateDynamic("providerName")(providerName)
-    if (reportName != null) __obj.updateDynamic("reportName")(reportName)
-    if (rows != null) __obj.updateDynamic("rows")(rows)
-    if (sourceInfo != null) __obj.updateDynamic("sourceInfo")(sourceInfo)
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (catalog != null) __obj.updateDynamic("catalog")(catalog.asInstanceOf[js.Any])
+    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (cube != null) __obj.updateDynamic("cube")(cube.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAdvancedFilter)) __obj.updateDynamic("enableAdvancedFilter")(enableAdvancedFilter.asInstanceOf[js.Any])
+    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
+    if (pagerOptions != null) __obj.updateDynamic("pagerOptions")(pagerOptions.asInstanceOf[js.Any])
+    if (providerName != null) __obj.updateDynamic("providerName")(providerName.asInstanceOf[js.Any])
+    if (reportName != null) __obj.updateDynamic("reportName")(reportName.asInstanceOf[js.Any])
+    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (sourceInfo != null) __obj.updateDynamic("sourceInfo")(sourceInfo.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSource]
   }
 }

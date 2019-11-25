@@ -15,7 +15,7 @@ trait SodaRemoveResult extends js.Object {
 object SodaRemoveResult {
   @scala.inline
   def apply(count: Double): SodaRemoveResult = {
-    val __obj = js.Dynamic.literal(count = count)
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SodaRemoveResult]
   }

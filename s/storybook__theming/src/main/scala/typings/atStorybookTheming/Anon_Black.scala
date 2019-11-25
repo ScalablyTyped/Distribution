@@ -13,7 +13,7 @@ trait Anon_Black extends js.Object {
 object Anon_Black {
   @scala.inline
   def apply(black: Double, bold: Double, regular: Double): Anon_Black = {
-    val __obj = js.Dynamic.literal(black = black, bold = bold, regular = regular)
+    val __obj = js.Dynamic.literal(black = black.asInstanceOf[js.Any], bold = bold.asInstanceOf[js.Any], regular = regular.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Black]
   }

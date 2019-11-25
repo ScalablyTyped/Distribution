@@ -13,8 +13,8 @@ trait Anon_OpenPrevProps extends js.Object {
 object Anon_OpenPrevProps {
   @scala.inline
   def apply(prevProps: IDrawerProps, open: js.UndefOr[Boolean] = js.undefined): Anon_OpenPrevProps = {
-    val __obj = js.Dynamic.literal(prevProps = prevProps)
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
+    val __obj = js.Dynamic.literal(prevProps = prevProps.asInstanceOf[js.Any])
+    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_OpenPrevProps]
   }
 }

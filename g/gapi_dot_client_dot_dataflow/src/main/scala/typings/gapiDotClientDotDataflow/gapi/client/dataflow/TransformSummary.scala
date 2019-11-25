@@ -30,12 +30,12 @@ object TransformSummary {
     outputCollectionName: js.Array[String] = null
   ): TransformSummary = {
     val __obj = js.Dynamic.literal()
-    if (displayData != null) __obj.updateDynamic("displayData")(displayData)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (inputCollectionName != null) __obj.updateDynamic("inputCollectionName")(inputCollectionName)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (outputCollectionName != null) __obj.updateDynamic("outputCollectionName")(outputCollectionName)
+    if (displayData != null) __obj.updateDynamic("displayData")(displayData.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (inputCollectionName != null) __obj.updateDynamic("inputCollectionName")(inputCollectionName.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (outputCollectionName != null) __obj.updateDynamic("outputCollectionName")(outputCollectionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransformSummary]
   }
 }

@@ -27,7 +27,7 @@ object Overrides {
     overrides: String | js.Array[String] = null
   ): Overrides = {
     val __obj = js.Dynamic.literal()
-    if (actions != null) __obj.updateDynamic("actions")(actions)
+    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
     if (delimiters != null) __obj.updateDynamic("delimiters")(delimiters.asInstanceOf[js.Any])
     if (hosts != null) __obj.updateDynamic("hosts")(hosts.asInstanceOf[js.Any])
     if (issuePrefixes != null) __obj.updateDynamic("issuePrefixes")(issuePrefixes.asInstanceOf[js.Any])

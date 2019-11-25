@@ -11,7 +11,7 @@ trait Anon_InitialRender extends js.Object {
 object Anon_InitialRender {
   @scala.inline
   def apply(initialRender: Boolean): Anon_InitialRender = {
-    val __obj = js.Dynamic.literal(initialRender = initialRender)
+    val __obj = js.Dynamic.literal(initialRender = initialRender.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_InitialRender]
   }

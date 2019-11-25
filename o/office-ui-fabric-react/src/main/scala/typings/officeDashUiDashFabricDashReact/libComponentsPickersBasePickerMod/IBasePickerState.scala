@@ -32,16 +32,16 @@ object IBasePickerState {
     suggestionsVisible: js.UndefOr[Boolean] = js.undefined
   ): IBasePickerState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isFocused)) __obj.updateDynamic("isFocused")(isFocused)
-    if (!js.isUndefined(isMostRecentlyUsedVisible)) __obj.updateDynamic("isMostRecentlyUsedVisible")(isMostRecentlyUsedVisible)
-    if (!js.isUndefined(isResultsFooterVisible)) __obj.updateDynamic("isResultsFooterVisible")(isResultsFooterVisible)
-    if (!js.isUndefined(isSearching)) __obj.updateDynamic("isSearching")(isSearching)
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (!js.isUndefined(moreSuggestionsAvailable)) __obj.updateDynamic("moreSuggestionsAvailable")(moreSuggestionsAvailable)
-    if (selectedIndices != null) __obj.updateDynamic("selectedIndices")(selectedIndices)
-    if (suggestedDisplayValue != null) __obj.updateDynamic("suggestedDisplayValue")(suggestedDisplayValue)
-    if (!js.isUndefined(suggestionsLoading)) __obj.updateDynamic("suggestionsLoading")(suggestionsLoading)
-    if (!js.isUndefined(suggestionsVisible)) __obj.updateDynamic("suggestionsVisible")(suggestionsVisible)
+    if (!js.isUndefined(isFocused)) __obj.updateDynamic("isFocused")(isFocused.asInstanceOf[js.Any])
+    if (!js.isUndefined(isMostRecentlyUsedVisible)) __obj.updateDynamic("isMostRecentlyUsedVisible")(isMostRecentlyUsedVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(isResultsFooterVisible)) __obj.updateDynamic("isResultsFooterVisible")(isResultsFooterVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSearching)) __obj.updateDynamic("isSearching")(isSearching.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (!js.isUndefined(moreSuggestionsAvailable)) __obj.updateDynamic("moreSuggestionsAvailable")(moreSuggestionsAvailable.asInstanceOf[js.Any])
+    if (selectedIndices != null) __obj.updateDynamic("selectedIndices")(selectedIndices.asInstanceOf[js.Any])
+    if (suggestedDisplayValue != null) __obj.updateDynamic("suggestedDisplayValue")(suggestedDisplayValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(suggestionsLoading)) __obj.updateDynamic("suggestionsLoading")(suggestionsLoading.asInstanceOf[js.Any])
+    if (!js.isUndefined(suggestionsVisible)) __obj.updateDynamic("suggestionsVisible")(suggestionsVisible.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBasePickerState]
   }
 }

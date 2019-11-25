@@ -24,12 +24,12 @@ object INodeOptions {
     screen: Screen = null
   ): INodeOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (!js.isUndefined(focusable)) __obj.updateDynamic("focusable")(focusable)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
-    if (screen != null) __obj.updateDynamic("screen")(screen)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusable)) __obj.updateDynamic("focusable")(focusable.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (screen != null) __obj.updateDynamic("screen")(screen.asInstanceOf[js.Any])
     __obj.asInstanceOf[INodeOptions]
   }
 }

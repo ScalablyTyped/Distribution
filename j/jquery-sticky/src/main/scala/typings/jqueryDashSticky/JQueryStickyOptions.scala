@@ -69,14 +69,14 @@ object JQueryStickyOptions {
   ): JQueryStickyOptions = {
     val __obj = js.Dynamic.literal()
     if (bottomSpacing != null) __obj.updateDynamic("bottomSpacing")(bottomSpacing.asInstanceOf[js.Any])
-    if (!js.isUndefined(center)) __obj.updateDynamic("center")(center)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (getWidthFrom != null) __obj.updateDynamic("getWidthFrom")(getWidthFrom)
-    if (!js.isUndefined(responsiveWidth)) __obj.updateDynamic("responsiveWidth")(responsiveWidth)
+    if (!js.isUndefined(center)) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (getWidthFrom != null) __obj.updateDynamic("getWidthFrom")(getWidthFrom.asInstanceOf[js.Any])
+    if (!js.isUndefined(responsiveWidth)) __obj.updateDynamic("responsiveWidth")(responsiveWidth.asInstanceOf[js.Any])
     if (topSpacing != null) __obj.updateDynamic("topSpacing")(topSpacing.asInstanceOf[js.Any])
-    if (!js.isUndefined(widthFromWrapper)) __obj.updateDynamic("widthFromWrapper")(widthFromWrapper)
-    if (wrapperClassName != null) __obj.updateDynamic("wrapperClassName")(wrapperClassName)
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex)
+    if (!js.isUndefined(widthFromWrapper)) __obj.updateDynamic("widthFromWrapper")(widthFromWrapper.asInstanceOf[js.Any])
+    if (wrapperClassName != null) __obj.updateDynamic("wrapperClassName")(wrapperClassName.asInstanceOf[js.Any])
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryStickyOptions]
   }
 }

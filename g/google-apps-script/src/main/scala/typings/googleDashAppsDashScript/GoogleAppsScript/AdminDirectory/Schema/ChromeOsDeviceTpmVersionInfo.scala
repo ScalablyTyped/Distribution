@@ -24,12 +24,12 @@ object ChromeOsDeviceTpmVersionInfo {
     vendorSpecific: String = null
   ): ChromeOsDeviceTpmVersionInfo = {
     val __obj = js.Dynamic.literal()
-    if (family != null) __obj.updateDynamic("family")(family)
-    if (firmwareVersion != null) __obj.updateDynamic("firmwareVersion")(firmwareVersion)
-    if (manufacturer != null) __obj.updateDynamic("manufacturer")(manufacturer)
-    if (specLevel != null) __obj.updateDynamic("specLevel")(specLevel)
-    if (tpmModel != null) __obj.updateDynamic("tpmModel")(tpmModel)
-    if (vendorSpecific != null) __obj.updateDynamic("vendorSpecific")(vendorSpecific)
+    if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
+    if (firmwareVersion != null) __obj.updateDynamic("firmwareVersion")(firmwareVersion.asInstanceOf[js.Any])
+    if (manufacturer != null) __obj.updateDynamic("manufacturer")(manufacturer.asInstanceOf[js.Any])
+    if (specLevel != null) __obj.updateDynamic("specLevel")(specLevel.asInstanceOf[js.Any])
+    if (tpmModel != null) __obj.updateDynamic("tpmModel")(tpmModel.asInstanceOf[js.Any])
+    if (vendorSpecific != null) __obj.updateDynamic("vendorSpecific")(vendorSpecific.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChromeOsDeviceTpmVersionInfo]
   }
 }

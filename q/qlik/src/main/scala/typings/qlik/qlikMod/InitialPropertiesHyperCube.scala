@@ -14,8 +14,8 @@ trait InitialPropertiesHyperCube
 object InitialPropertiesHyperCube {
   @scala.inline
   def apply(qHyperCubeDef: HyperCubeDef, StringDictionary: /* key */ StringDictionary[js.Any] = null): InitialPropertiesHyperCube = {
-    val __obj = js.Dynamic.literal(qHyperCubeDef = qHyperCubeDef)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(qHyperCubeDef = qHyperCubeDef.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[InitialPropertiesHyperCube]
   }
 }

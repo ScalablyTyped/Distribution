@@ -39,16 +39,16 @@ object MultiInputProps {
     placeHolder: String = null,
     tagProps: StringDictionary[js.Any] = null
   ): MultiInputProps = {
-    val __obj = js.Dynamic.literal(data = data, onTagsUpdate = js.Any.fromFunction1(onTagsUpdate))
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (buttonProps != null) __obj.updateDynamic("buttonProps")(buttonProps)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact)
-    if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps)
-    if (listProps != null) __obj.updateDynamic("listProps")(listProps)
-    if (localizedText != null) __obj.updateDynamic("localizedText")(localizedText)
-    if (placeHolder != null) __obj.updateDynamic("placeHolder")(placeHolder)
-    if (tagProps != null) __obj.updateDynamic("tagProps")(tagProps)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], onTagsUpdate = js.Any.fromFunction1(onTagsUpdate))
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (buttonProps != null) __obj.updateDynamic("buttonProps")(buttonProps.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
+    if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps.asInstanceOf[js.Any])
+    if (listProps != null) __obj.updateDynamic("listProps")(listProps.asInstanceOf[js.Any])
+    if (localizedText != null) __obj.updateDynamic("localizedText")(localizedText.asInstanceOf[js.Any])
+    if (placeHolder != null) __obj.updateDynamic("placeHolder")(placeHolder.asInstanceOf[js.Any])
+    if (tagProps != null) __obj.updateDynamic("tagProps")(tagProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiInputProps]
   }
 }

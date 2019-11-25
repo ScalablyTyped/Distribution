@@ -29,7 +29,7 @@ object TagFeedResponseStoryHashtagsItem {
     y: String | Double,
     z: Double
   ): TagFeedResponseStoryHashtagsItem = {
-    val __obj = js.Dynamic.literal(hashtag = hashtag, height = height.asInstanceOf[js.Any], is_hidden = is_hidden, is_pinned = is_pinned, rotation = rotation.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], z = z)
+    val __obj = js.Dynamic.literal(hashtag = hashtag.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], is_hidden = is_hidden.asInstanceOf[js.Any], is_pinned = is_pinned.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TagFeedResponseStoryHashtagsItem]
   }

@@ -13,7 +13,7 @@ object DeleteNamedRangeRequest {
   @scala.inline
   def apply(namedRangeId: String = null): DeleteNamedRangeRequest = {
     val __obj = js.Dynamic.literal()
-    if (namedRangeId != null) __obj.updateDynamic("namedRangeId")(namedRangeId)
+    if (namedRangeId != null) __obj.updateDynamic("namedRangeId")(namedRangeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteNamedRangeRequest]
   }
 }

@@ -15,9 +15,9 @@ trait RenderPageResult extends js.Object {
 object RenderPageResult {
   @scala.inline
   def apply(html: String, dataOnly: `true` = null, head: js.Array[Element | Null] = null): RenderPageResult = {
-    val __obj = js.Dynamic.literal(html = html)
-    if (dataOnly != null) __obj.updateDynamic("dataOnly")(dataOnly)
-    if (head != null) __obj.updateDynamic("head")(head)
+    val __obj = js.Dynamic.literal(html = html.asInstanceOf[js.Any])
+    if (dataOnly != null) __obj.updateDynamic("dataOnly")(dataOnly.asInstanceOf[js.Any])
+    if (head != null) __obj.updateDynamic("head")(head.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderPageResult]
   }
 }

@@ -11,7 +11,7 @@ trait IFileUpdateRequestedEventArgs extends js.Object {
 object IFileUpdateRequestedEventArgs {
   @scala.inline
   def apply(request: FileUpdateRequest): IFileUpdateRequestedEventArgs = {
-    val __obj = js.Dynamic.literal(request = request)
+    val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IFileUpdateRequestedEventArgs]
   }

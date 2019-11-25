@@ -75,16 +75,16 @@ object ButtomSettingsCommon {
     val __obj = js.Dynamic.literal()
     if (action != null) __obj.updateDynamic("action")(js.Any.fromFunction4(action))
     if (available != null) __obj.updateDynamic("available")(js.Any.fromFunction2(available))
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction3(destroy))
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (extend != null) __obj.updateDynamic("extend")(extend)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
     if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction3(init))
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (titleAttr != null) __obj.updateDynamic("titleAttr")(titleAttr)
+    if (titleAttr != null) __obj.updateDynamic("titleAttr")(titleAttr.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtomSettingsCommon]
   }
 }

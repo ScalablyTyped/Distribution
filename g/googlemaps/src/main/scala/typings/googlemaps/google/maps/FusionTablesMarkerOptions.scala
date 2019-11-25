@@ -11,7 +11,7 @@ trait FusionTablesMarkerOptions extends js.Object {
 object FusionTablesMarkerOptions {
   @scala.inline
   def apply(iconName: String): FusionTablesMarkerOptions = {
-    val __obj = js.Dynamic.literal(iconName = iconName)
+    val __obj = js.Dynamic.literal(iconName = iconName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FusionTablesMarkerOptions]
   }

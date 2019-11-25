@@ -13,7 +13,7 @@ object DealTermsNonGuaranteedFixedPriceTerms {
   @scala.inline
   def apply(fixedPrices: js.Array[PricePerBuyer] = null): DealTermsNonGuaranteedFixedPriceTerms = {
     val __obj = js.Dynamic.literal()
-    if (fixedPrices != null) __obj.updateDynamic("fixedPrices")(fixedPrices)
+    if (fixedPrices != null) __obj.updateDynamic("fixedPrices")(fixedPrices.asInstanceOf[js.Any])
     __obj.asInstanceOf[DealTermsNonGuaranteedFixedPriceTerms]
   }
 }

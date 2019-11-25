@@ -31,10 +31,10 @@ object Options {
     notifier: (/* groupByComponent */ Boolean, /* collapseComponentGroups */ Boolean, /* displayName */ String, /* diffs */ js.Array[Diffs]) => Unit = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(collapseComponentGroups)) __obj.updateDynamic("collapseComponentGroups")(collapseComponentGroups)
-    if (exclude != null) __obj.updateDynamic("exclude")(exclude)
-    if (!js.isUndefined(groupByComment)) __obj.updateDynamic("groupByComment")(groupByComment)
-    if (include != null) __obj.updateDynamic("include")(include)
+    if (!js.isUndefined(collapseComponentGroups)) __obj.updateDynamic("collapseComponentGroups")(collapseComponentGroups.asInstanceOf[js.Any])
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
+    if (!js.isUndefined(groupByComment)) __obj.updateDynamic("groupByComment")(groupByComment.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     if (notifier != null) __obj.updateDynamic("notifier")(js.Any.fromFunction4(notifier))
     __obj.asInstanceOf[Options]
   }

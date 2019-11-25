@@ -26,8 +26,8 @@ object IIndexedResourceCandidate {
     uri: Uri,
     valueAsString: String
   ): IIndexedResourceCandidate = {
-    val __obj = js.Dynamic.literal(getQualifierValue = js.Any.fromFunction1(getQualifierValue), metadata = metadata, qualifiers = qualifiers, uri = uri, valueAsString = valueAsString)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(getQualifierValue = js.Any.fromFunction1(getQualifierValue), metadata = metadata.asInstanceOf[js.Any], qualifiers = qualifiers.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], valueAsString = valueAsString.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IIndexedResourceCandidate]
   }
 }

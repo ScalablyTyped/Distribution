@@ -13,7 +13,7 @@ object Anon_CsvInstance {
   @scala.inline
   def apply(csvInstance: js.Array[_] = null): Anon_CsvInstance = {
     val __obj = js.Dynamic.literal()
-    if (csvInstance != null) __obj.updateDynamic("csvInstance")(csvInstance)
+    if (csvInstance != null) __obj.updateDynamic("csvInstance")(csvInstance.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CsvInstance]
   }
 }

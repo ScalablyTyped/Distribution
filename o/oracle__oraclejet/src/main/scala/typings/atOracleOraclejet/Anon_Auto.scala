@@ -29,7 +29,7 @@ object Anon_Auto {
     renderer: PieCenterContext => Anon_Insert | Anon_PreventDefault,
     scaling: none | thousand | million | billion | trillion | quadrillion | auto
   ): Anon_Auto = {
-    val __obj = js.Dynamic.literal(converter = converter, label = label, labelStyle = labelStyle, renderer = js.Any.fromFunction1(renderer), scaling = scaling.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(converter = converter.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], labelStyle = labelStyle.asInstanceOf[js.Any], renderer = js.Any.fromFunction1(renderer), scaling = scaling.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Auto]
   }

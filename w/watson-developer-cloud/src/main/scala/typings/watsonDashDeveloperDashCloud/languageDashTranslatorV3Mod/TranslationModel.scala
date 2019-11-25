@@ -42,16 +42,16 @@ object TranslationModel {
     status: String = null,
     target: String = null
   ): TranslationModel = {
-    val __obj = js.Dynamic.literal(model_id = model_id)
-    if (base_model_id != null) __obj.updateDynamic("base_model_id")(base_model_id)
-    if (!js.isUndefined(customizable)) __obj.updateDynamic("customizable")(customizable)
-    if (!js.isUndefined(default_model)) __obj.updateDynamic("default_model")(default_model)
-    if (domain != null) __obj.updateDynamic("domain")(domain)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (target != null) __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(model_id = model_id.asInstanceOf[js.Any])
+    if (base_model_id != null) __obj.updateDynamic("base_model_id")(base_model_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(customizable)) __obj.updateDynamic("customizable")(customizable.asInstanceOf[js.Any])
+    if (!js.isUndefined(default_model)) __obj.updateDynamic("default_model")(default_model.asInstanceOf[js.Any])
+    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[TranslationModel]
   }
 }

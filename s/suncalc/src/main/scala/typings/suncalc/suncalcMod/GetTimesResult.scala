@@ -40,7 +40,7 @@ object GetTimesResult {
     sunset: Date,
     sunsetStart: Date
   ): GetTimesResult = {
-    val __obj = js.Dynamic.literal(dawn = dawn, dusk = dusk, goldenHour = goldenHour, goldenHourEnd = goldenHourEnd, nadir = nadir, nauticalDawn = nauticalDawn, nauticalDusk = nauticalDusk, night = night, nightEnd = nightEnd, solarNoon = solarNoon, sunrise = sunrise, sunriseEnd = sunriseEnd, sunset = sunset, sunsetStart = sunsetStart)
+    val __obj = js.Dynamic.literal(dawn = dawn.asInstanceOf[js.Any], dusk = dusk.asInstanceOf[js.Any], goldenHour = goldenHour.asInstanceOf[js.Any], goldenHourEnd = goldenHourEnd.asInstanceOf[js.Any], nadir = nadir.asInstanceOf[js.Any], nauticalDawn = nauticalDawn.asInstanceOf[js.Any], nauticalDusk = nauticalDusk.asInstanceOf[js.Any], night = night.asInstanceOf[js.Any], nightEnd = nightEnd.asInstanceOf[js.Any], solarNoon = solarNoon.asInstanceOf[js.Any], sunrise = sunrise.asInstanceOf[js.Any], sunriseEnd = sunriseEnd.asInstanceOf[js.Any], sunset = sunset.asInstanceOf[js.Any], sunsetStart = sunsetStart.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetTimesResult]
   }

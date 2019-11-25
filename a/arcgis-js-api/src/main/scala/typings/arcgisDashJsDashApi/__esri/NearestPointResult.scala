@@ -51,7 +51,7 @@ object NearestPointResult {
     propertyIsEnumerable: PropertyKey => Boolean,
     vertexIndex: Double
   ): NearestPointResult = {
-    val __obj = js.Dynamic.literal(constructor = constructor, coordinate = coordinate, distance = distance, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), isEmpty = isEmpty, isRightSide = isRightSide, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), vertexIndex = vertexIndex)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], coordinate = coordinate.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), isEmpty = isEmpty.asInstanceOf[js.Any], isRightSide = isRightSide.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), vertexIndex = vertexIndex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NearestPointResult]
   }

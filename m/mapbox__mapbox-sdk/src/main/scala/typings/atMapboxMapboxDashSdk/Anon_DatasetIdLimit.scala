@@ -13,9 +13,9 @@ trait Anon_DatasetIdLimit extends js.Object {
 object Anon_DatasetIdLimit {
   @scala.inline
   def apply(datasetId: String, limit: Int | Double = null, start: String = null): Anon_DatasetIdLimit = {
-    val __obj = js.Dynamic.literal(datasetId = datasetId)
+    val __obj = js.Dynamic.literal(datasetId = datasetId.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start)
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DatasetIdLimit]
   }
 }

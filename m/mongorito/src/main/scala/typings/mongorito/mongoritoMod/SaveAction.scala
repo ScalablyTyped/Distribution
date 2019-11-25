@@ -13,8 +13,8 @@ trait SaveAction extends Action {
 object SaveAction {
   @scala.inline
   def apply(fields: js.Object, `type`: SAVE): SaveAction = {
-    val __obj = js.Dynamic.literal(fields = fields)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SaveAction]
   }
 }

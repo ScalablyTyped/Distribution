@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait DockPosition extends js.Object
 
+object DockPosition {
+  @scala.inline
+  def bottom: typings.reduxDashDevtoolsDashDockDashMonitor.reduxDashDevtoolsDashDockDashMonitorStrings.bottom = this.cast("bottom")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def left: typings.reduxDashDevtoolsDashDockDashMonitor.reduxDashDevtoolsDashDockDashMonitorStrings.left = this.cast("left")
+  @scala.inline
+  def right: typings.reduxDashDevtoolsDashDockDashMonitor.reduxDashDevtoolsDashDockDashMonitorStrings.right = this.cast("right")
+  @scala.inline
+  def top: typings.reduxDashDevtoolsDashDockDashMonitor.reduxDashDevtoolsDashDockDashMonitorStrings.top = this.cast("top")
+}
+

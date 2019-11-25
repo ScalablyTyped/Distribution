@@ -18,9 +18,9 @@ object FilterAction {
     removeLabelIds: js.Array[String] = null
   ): FilterAction = {
     val __obj = js.Dynamic.literal()
-    if (addLabelIds != null) __obj.updateDynamic("addLabelIds")(addLabelIds)
-    if (forward != null) __obj.updateDynamic("forward")(forward)
-    if (removeLabelIds != null) __obj.updateDynamic("removeLabelIds")(removeLabelIds)
+    if (addLabelIds != null) __obj.updateDynamic("addLabelIds")(addLabelIds.asInstanceOf[js.Any])
+    if (forward != null) __obj.updateDynamic("forward")(forward.asInstanceOf[js.Any])
+    if (removeLabelIds != null) __obj.updateDynamic("removeLabelIds")(removeLabelIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterAction]
   }
 }

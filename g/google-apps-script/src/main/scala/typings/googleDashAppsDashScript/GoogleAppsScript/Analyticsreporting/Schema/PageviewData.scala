@@ -13,8 +13,8 @@ object PageviewData {
   @scala.inline
   def apply(pagePath: String = null, pageTitle: String = null): PageviewData = {
     val __obj = js.Dynamic.literal()
-    if (pagePath != null) __obj.updateDynamic("pagePath")(pagePath)
-    if (pageTitle != null) __obj.updateDynamic("pageTitle")(pageTitle)
+    if (pagePath != null) __obj.updateDynamic("pagePath")(pagePath.asInstanceOf[js.Any])
+    if (pageTitle != null) __obj.updateDynamic("pageTitle")(pageTitle.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageviewData]
   }
 }

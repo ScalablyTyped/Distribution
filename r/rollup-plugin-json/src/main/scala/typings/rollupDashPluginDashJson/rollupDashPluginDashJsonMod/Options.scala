@@ -33,8 +33,8 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
     if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
-    if (indent != null) __obj.updateDynamic("indent")(indent)
-    if (!js.isUndefined(preferConst)) __obj.updateDynamic("preferConst")(preferConst)
+    if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
+    if (!js.isUndefined(preferConst)) __obj.updateDynamic("preferConst")(preferConst.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

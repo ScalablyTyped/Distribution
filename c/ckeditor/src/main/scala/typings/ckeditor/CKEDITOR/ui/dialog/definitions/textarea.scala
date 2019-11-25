@@ -21,7 +21,7 @@ object textarea {
   ): textarea = {
     val __obj = js.Dynamic.literal()
     if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
-    if (default != null) __obj.updateDynamic("default")(default)
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction0(validate))
     __obj.asInstanceOf[textarea]

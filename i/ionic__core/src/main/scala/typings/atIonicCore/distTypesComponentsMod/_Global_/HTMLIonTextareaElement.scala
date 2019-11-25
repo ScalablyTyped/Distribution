@@ -6,7 +6,6 @@ import typings.atIonicCore.atIonicCoreStrings.ios
 import typings.atIonicCore.atIonicCoreStrings.md
 import typings.atIonicCore.atIonicCoreStrings.off
 import typings.atIonicCore.atIonicCoreStrings.soft
-import typings.atIonicCore.distTypesInterfaceMod.Color
 import typings.atIonicCore.distTypesStencilDotCoreMod.HTMLStencilElement
 import typings.std.HTMLTextAreaElement
 import scala.scalajs.js
@@ -31,7 +30,9 @@ trait HTMLIonTextareaElement extends HTMLStencilElement {
   /**
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
-  var color: js.UndefOr[Color] = js.native
+  var color: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any
+  ] = js.native
   /**
     * The visible width of the text control, in average character widths. If it is specified, it must be a positive integer.
     */

@@ -14,7 +14,7 @@ object RaisedEvent {
   @scala.inline
   def apply[TEvent /* <: EventObject */](event: TEvent, `type`: Raise): RaisedEvent[TEvent] = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RaisedEvent[TEvent]]
   }
 }

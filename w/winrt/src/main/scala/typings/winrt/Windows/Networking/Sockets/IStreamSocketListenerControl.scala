@@ -11,7 +11,7 @@ trait IStreamSocketListenerControl extends js.Object {
 object IStreamSocketListenerControl {
   @scala.inline
   def apply(qualityOfService: SocketQualityOfService): IStreamSocketListenerControl = {
-    val __obj = js.Dynamic.literal(qualityOfService = qualityOfService)
+    val __obj = js.Dynamic.literal(qualityOfService = qualityOfService.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IStreamSocketListenerControl]
   }

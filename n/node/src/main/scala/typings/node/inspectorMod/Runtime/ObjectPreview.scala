@@ -45,11 +45,11 @@ object ObjectPreview {
     entries: js.Array[EntryPreview] = null,
     subtype: java.lang.String = null
   ): ObjectPreview = {
-    val __obj = js.Dynamic.literal(overflow = overflow, properties = properties)
-    __obj.updateDynamic("type")(`type`)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (entries != null) __obj.updateDynamic("entries")(entries)
-    if (subtype != null) __obj.updateDynamic("subtype")(subtype)
+    val __obj = js.Dynamic.literal(overflow = overflow.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (entries != null) __obj.updateDynamic("entries")(entries.asInstanceOf[js.Any])
+    if (subtype != null) __obj.updateDynamic("subtype")(subtype.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectPreview]
   }
 }

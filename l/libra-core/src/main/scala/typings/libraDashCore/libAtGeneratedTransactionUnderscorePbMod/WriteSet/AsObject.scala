@@ -13,7 +13,7 @@ object AsObject {
   def apply(
     writeSetList: js.Array[typings.libraDashCore.libAtGeneratedTransactionUnderscorePbMod.WriteOp.AsObject]
   ): AsObject = {
-    val __obj = js.Dynamic.literal(writeSetList = writeSetList)
+    val __obj = js.Dynamic.literal(writeSetList = writeSetList.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AsObject]
   }

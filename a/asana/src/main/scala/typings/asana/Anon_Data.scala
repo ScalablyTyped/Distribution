@@ -14,8 +14,8 @@ trait Anon_Data[T /* <: Resource */] extends js.Object {
 object Anon_Data {
   @scala.inline
   def apply[T /* <: Resource */](data: js.Array[T], next_page: NextPage = null): Anon_Data[T] = {
-    val __obj = js.Dynamic.literal(data = data)
-    if (next_page != null) __obj.updateDynamic("next_page")(next_page)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
+    if (next_page != null) __obj.updateDynamic("next_page")(next_page.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Data[T]]
   }
 }

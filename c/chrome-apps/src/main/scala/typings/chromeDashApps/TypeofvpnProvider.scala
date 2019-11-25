@@ -67,11 +67,11 @@ trait TypeofvpnProvider extends js.Object {
     js.Function3[
       /* id */ String, 
       /* message */ ToStringLiteral[
-        /* import warning: ImportType.apply Failed type conversion: typeof PlatformMessage */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: typeof PlatformMessage */ js.Any, 
         String, 
         Exclude[
           String, 
-          /* import warning: ImportType.apply Failed type conversion: typeof PlatformMessage[keyof typeof PlatformMessage] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: typeof PlatformMessage[keyof typeof PlatformMessage] */ js.Any
         ]
       ], 
       /* error */ String, 
@@ -85,11 +85,11 @@ trait TypeofvpnProvider extends js.Object {
   val onUIEvent: Event[
     js.Function2[
       /* event */ ToStringLiteral[
-        /* import warning: ImportType.apply Failed type conversion: typeof UIEvent */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: typeof UIEvent */ js.Any, 
         String, 
         Exclude[
           String, 
-          /* import warning: ImportType.apply Failed type conversion: typeof UIEvent[keyof typeof UIEvent] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: typeof UIEvent[keyof typeof UIEvent] */ js.Any
         ]
       ], 
       /* id */ js.UndefOr[String], 
@@ -120,21 +120,21 @@ trait TypeofvpnProvider extends js.Object {
     */
   def notifyConnectionStateChanged(
     state: ToStringLiteral[
-      /* import warning: ImportType.apply Failed type conversion: typeof VpnConnectionState */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: typeof VpnConnectionState */ js.Any, 
       String, 
       Exclude[
         String, 
-        /* import warning: ImportType.apply Failed type conversion: typeof VpnConnectionState[keyof typeof VpnConnectionState] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: typeof VpnConnectionState[keyof typeof VpnConnectionState] */ js.Any
       ]
     ]
   ): Unit = js.native
   def notifyConnectionStateChanged(
     state: ToStringLiteral[
-      /* import warning: ImportType.apply Failed type conversion: typeof VpnConnectionState */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: typeof VpnConnectionState */ js.Any, 
       String, 
       Exclude[
         String, 
-        /* import warning: ImportType.apply Failed type conversion: typeof VpnConnectionState[keyof typeof VpnConnectionState] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: typeof VpnConnectionState[keyof typeof VpnConnectionState] */ js.Any
       ]
     ],
     callback: js.Function0[Unit]

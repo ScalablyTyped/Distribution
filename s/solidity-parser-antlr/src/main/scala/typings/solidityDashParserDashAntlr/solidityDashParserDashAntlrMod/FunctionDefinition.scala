@@ -43,13 +43,13 @@ object FunctionDefinition {
     returnParameters: js.Array[VariableDeclaration] = null,
     stateMutability: pure | constant | payable | view = null
   ): FunctionDefinition = {
-    val __obj = js.Dynamic.literal(isConstructor = isConstructor, modifiers = modifiers, parameters = parameters, visibility = visibility.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (range != null) __obj.updateDynamic("range")(range)
-    if (returnParameters != null) __obj.updateDynamic("returnParameters")(returnParameters)
+    val __obj = js.Dynamic.literal(isConstructor = isConstructor.asInstanceOf[js.Any], modifiers = modifiers.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any], visibility = visibility.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (returnParameters != null) __obj.updateDynamic("returnParameters")(returnParameters.asInstanceOf[js.Any])
     if (stateMutability != null) __obj.updateDynamic("stateMutability")(stateMutability.asInstanceOf[js.Any])
     __obj.asInstanceOf[FunctionDefinition]
   }

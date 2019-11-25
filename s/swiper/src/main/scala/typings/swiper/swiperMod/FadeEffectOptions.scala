@@ -12,7 +12,7 @@ object FadeEffectOptions {
   @scala.inline
   def apply(crossFade: js.UndefOr[Boolean] = js.undefined): FadeEffectOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(crossFade)) __obj.updateDynamic("crossFade")(crossFade)
+    if (!js.isUndefined(crossFade)) __obj.updateDynamic("crossFade")(crossFade.asInstanceOf[js.Any])
     __obj.asInstanceOf[FadeEffectOptions]
   }
 }

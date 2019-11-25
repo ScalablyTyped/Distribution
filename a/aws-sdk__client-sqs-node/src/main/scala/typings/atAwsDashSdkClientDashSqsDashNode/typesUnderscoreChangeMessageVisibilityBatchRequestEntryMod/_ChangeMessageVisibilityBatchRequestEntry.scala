@@ -22,7 +22,7 @@ trait _ChangeMessageVisibilityBatchRequestEntry extends js.Object {
 object _ChangeMessageVisibilityBatchRequestEntry {
   @scala.inline
   def apply(Id: String, ReceiptHandle: String, VisibilityTimeout: Int | Double = null): _ChangeMessageVisibilityBatchRequestEntry = {
-    val __obj = js.Dynamic.literal(Id = Id, ReceiptHandle = ReceiptHandle)
+    val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], ReceiptHandle = ReceiptHandle.asInstanceOf[js.Any])
     if (VisibilityTimeout != null) __obj.updateDynamic("VisibilityTimeout")(VisibilityTimeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[_ChangeMessageVisibilityBatchRequestEntry]
   }

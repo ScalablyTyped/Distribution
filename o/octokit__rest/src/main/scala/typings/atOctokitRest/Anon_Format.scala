@@ -21,8 +21,8 @@ object Anon_Format {
   @scala.inline
   def apply(format: String = null, previews: js.Array[String] = null): Anon_Format = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (previews != null) __obj.updateDynamic("previews")(previews)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (previews != null) __obj.updateDynamic("previews")(previews.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Format]
   }
 }

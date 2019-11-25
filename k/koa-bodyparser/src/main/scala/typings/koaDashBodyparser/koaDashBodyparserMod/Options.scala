@@ -62,14 +62,14 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (detectJSON != null) __obj.updateDynamic("detectJSON")(js.Any.fromFunction1(detectJSON))
-    if (enableTypes != null) __obj.updateDynamic("enableTypes")(enableTypes)
-    if (encode != null) __obj.updateDynamic("encode")(encode)
-    if (extendTypes != null) __obj.updateDynamic("extendTypes")(extendTypes)
-    if (formLimit != null) __obj.updateDynamic("formLimit")(formLimit)
-    if (jsonLimit != null) __obj.updateDynamic("jsonLimit")(jsonLimit)
+    if (enableTypes != null) __obj.updateDynamic("enableTypes")(enableTypes.asInstanceOf[js.Any])
+    if (encode != null) __obj.updateDynamic("encode")(encode.asInstanceOf[js.Any])
+    if (extendTypes != null) __obj.updateDynamic("extendTypes")(extendTypes.asInstanceOf[js.Any])
+    if (formLimit != null) __obj.updateDynamic("formLimit")(formLimit.asInstanceOf[js.Any])
+    if (jsonLimit != null) __obj.updateDynamic("jsonLimit")(jsonLimit.asInstanceOf[js.Any])
     if (onerror != null) __obj.updateDynamic("onerror")(js.Any.fromFunction2(onerror))
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
-    if (textLimit != null) __obj.updateDynamic("textLimit")(textLimit)
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
+    if (textLimit != null) __obj.updateDynamic("textLimit")(textLimit.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

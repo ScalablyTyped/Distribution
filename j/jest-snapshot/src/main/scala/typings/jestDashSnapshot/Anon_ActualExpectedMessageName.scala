@@ -23,8 +23,8 @@ object Anon_ActualExpectedMessageName {
     report: () => String,
     expected: String = null
   ): Anon_ActualExpectedMessageName = {
-    val __obj = js.Dynamic.literal(actual = actual, message = js.Any.fromFunction0(message), name = name, pass = pass, report = js.Any.fromFunction0(report))
-    if (expected != null) __obj.updateDynamic("expected")(expected)
+    val __obj = js.Dynamic.literal(actual = actual.asInstanceOf[js.Any], message = js.Any.fromFunction0(message), name = name.asInstanceOf[js.Any], pass = pass.asInstanceOf[js.Any], report = js.Any.fromFunction0(report))
+    if (expected != null) __obj.updateDynamic("expected")(expected.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ActualExpectedMessageName]
   }
 }

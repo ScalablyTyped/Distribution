@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 object FixedRawSourceMap {
   @scala.inline
   def apply(version: Double): FixedRawSourceMap = {
-    val __obj = js.Dynamic.literal(version = version)
+    val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FixedRawSourceMap]
   }

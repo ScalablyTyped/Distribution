@@ -20,9 +20,9 @@ object MemoizeConfig {
     `type`: Anon_Args[T, U] = null
   ): MemoizeConfig[T, U] = {
     val __obj = js.Dynamic.literal()
-    if (cache != null) __obj.updateDynamic("cache")(cache)
+    if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
     if (resolver != null) __obj.updateDynamic("resolver")(resolver.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MemoizeConfig[T, U]]
   }
 }

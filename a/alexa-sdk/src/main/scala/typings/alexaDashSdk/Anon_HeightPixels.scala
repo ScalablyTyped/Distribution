@@ -20,7 +20,7 @@ object Anon_HeightPixels {
     heightPixels: Int | Double = null,
     widthPixels: Int | Double = null
   ): Anon_HeightPixels = {
-    val __obj = js.Dynamic.literal(size = size, url = url)
+    val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     if (heightPixels != null) __obj.updateDynamic("heightPixels")(heightPixels.asInstanceOf[js.Any])
     if (widthPixels != null) __obj.updateDynamic("widthPixels")(widthPixels.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_HeightPixels]

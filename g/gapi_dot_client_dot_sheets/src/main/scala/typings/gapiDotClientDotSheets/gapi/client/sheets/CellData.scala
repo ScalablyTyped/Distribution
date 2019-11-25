@@ -91,16 +91,16 @@ object CellData {
     userEnteredValue: ExtendedValue = null
   ): CellData = {
     val __obj = js.Dynamic.literal()
-    if (dataValidation != null) __obj.updateDynamic("dataValidation")(dataValidation)
-    if (effectiveFormat != null) __obj.updateDynamic("effectiveFormat")(effectiveFormat)
-    if (effectiveValue != null) __obj.updateDynamic("effectiveValue")(effectiveValue)
-    if (formattedValue != null) __obj.updateDynamic("formattedValue")(formattedValue)
-    if (hyperlink != null) __obj.updateDynamic("hyperlink")(hyperlink)
-    if (note != null) __obj.updateDynamic("note")(note)
-    if (pivotTable != null) __obj.updateDynamic("pivotTable")(pivotTable)
-    if (textFormatRuns != null) __obj.updateDynamic("textFormatRuns")(textFormatRuns)
-    if (userEnteredFormat != null) __obj.updateDynamic("userEnteredFormat")(userEnteredFormat)
-    if (userEnteredValue != null) __obj.updateDynamic("userEnteredValue")(userEnteredValue)
+    if (dataValidation != null) __obj.updateDynamic("dataValidation")(dataValidation.asInstanceOf[js.Any])
+    if (effectiveFormat != null) __obj.updateDynamic("effectiveFormat")(effectiveFormat.asInstanceOf[js.Any])
+    if (effectiveValue != null) __obj.updateDynamic("effectiveValue")(effectiveValue.asInstanceOf[js.Any])
+    if (formattedValue != null) __obj.updateDynamic("formattedValue")(formattedValue.asInstanceOf[js.Any])
+    if (hyperlink != null) __obj.updateDynamic("hyperlink")(hyperlink.asInstanceOf[js.Any])
+    if (note != null) __obj.updateDynamic("note")(note.asInstanceOf[js.Any])
+    if (pivotTable != null) __obj.updateDynamic("pivotTable")(pivotTable.asInstanceOf[js.Any])
+    if (textFormatRuns != null) __obj.updateDynamic("textFormatRuns")(textFormatRuns.asInstanceOf[js.Any])
+    if (userEnteredFormat != null) __obj.updateDynamic("userEnteredFormat")(userEnteredFormat.asInstanceOf[js.Any])
+    if (userEnteredValue != null) __obj.updateDynamic("userEnteredValue")(userEnteredValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellData]
   }
 }

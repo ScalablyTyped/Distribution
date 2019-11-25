@@ -26,9 +26,9 @@ object OAuth2Endpoints {
   @scala.inline
   def apply(authorize_uri: String = null, registration_uri: String = null, token_uri: String = null): OAuth2Endpoints = {
     val __obj = js.Dynamic.literal()
-    if (authorize_uri != null) __obj.updateDynamic("authorize_uri")(authorize_uri)
-    if (registration_uri != null) __obj.updateDynamic("registration_uri")(registration_uri)
-    if (token_uri != null) __obj.updateDynamic("token_uri")(token_uri)
+    if (authorize_uri != null) __obj.updateDynamic("authorize_uri")(authorize_uri.asInstanceOf[js.Any])
+    if (registration_uri != null) __obj.updateDynamic("registration_uri")(registration_uri.asInstanceOf[js.Any])
+    if (token_uri != null) __obj.updateDynamic("token_uri")(token_uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[OAuth2Endpoints]
   }
 }

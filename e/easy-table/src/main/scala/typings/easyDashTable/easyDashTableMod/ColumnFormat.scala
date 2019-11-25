@@ -13,7 +13,7 @@ object ColumnFormat {
   @scala.inline
   def apply[T](name: String = null, printer: (T, /* width */ Double) => String = null): ColumnFormat[T] = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (printer != null) __obj.updateDynamic("printer")(js.Any.fromFunction2(printer))
     __obj.asInstanceOf[ColumnFormat[T]]
   }

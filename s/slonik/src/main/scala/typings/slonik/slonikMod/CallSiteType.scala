@@ -13,8 +13,8 @@ trait CallSiteType extends js.Object {
 object CallSiteType {
   @scala.inline
   def apply(columnNumber: Double, lineNumber: Double, fileName: String = null): CallSiteType = {
-    val __obj = js.Dynamic.literal(columnNumber = columnNumber, lineNumber = lineNumber)
-    if (fileName != null) __obj.updateDynamic("fileName")(fileName)
+    val __obj = js.Dynamic.literal(columnNumber = columnNumber.asInstanceOf[js.Any], lineNumber = lineNumber.asInstanceOf[js.Any])
+    if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallSiteType]
   }
 }

@@ -19,7 +19,7 @@ object Attributes {
   ): Attributes = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("x-out-of-boundaries")(`x-out-of-boundaries`.asInstanceOf[js.Any])
-    __obj.updateDynamic("x-placement")(`x-placement`)
+    __obj.updateDynamic("x-placement")(`x-placement`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attributes]
   }
 }

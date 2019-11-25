@@ -17,9 +17,9 @@ object UserToken {
   @scala.inline
   def apply(kind: String = null, token: String = null, userId: String = null): UserToken = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (token != null) __obj.updateDynamic("token")(token)
-    if (userId != null) __obj.updateDynamic("userId")(userId)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
+    if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserToken]
   }
 }

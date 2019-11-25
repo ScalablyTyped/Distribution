@@ -25,12 +25,12 @@ object Options {
     replaceInExtensions: js.Array[String] = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(canonicalUris)) __obj.updateDynamic("canonicalUris")(canonicalUris)
-    if (manifest != null) __obj.updateDynamic("manifest")(manifest)
-    if (modifyReved != null) __obj.updateDynamic("modifyReved")(modifyReved)
-    if (modifyUnreved != null) __obj.updateDynamic("modifyUnreved")(modifyUnreved)
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
-    if (replaceInExtensions != null) __obj.updateDynamic("replaceInExtensions")(replaceInExtensions)
+    if (!js.isUndefined(canonicalUris)) __obj.updateDynamic("canonicalUris")(canonicalUris.asInstanceOf[js.Any])
+    if (manifest != null) __obj.updateDynamic("manifest")(manifest.asInstanceOf[js.Any])
+    if (modifyReved != null) __obj.updateDynamic("modifyReved")(modifyReved.asInstanceOf[js.Any])
+    if (modifyUnreved != null) __obj.updateDynamic("modifyUnreved")(modifyUnreved.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    if (replaceInExtensions != null) __obj.updateDynamic("replaceInExtensions")(replaceInExtensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

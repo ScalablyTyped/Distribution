@@ -14,7 +14,7 @@ trait Anon_Metrics extends js.Object {
 object Anon_Metrics {
   @scala.inline
   def apply(metrics: FieldType, properties: FieldType, ver: FieldType): Anon_Metrics = {
-    val __obj = js.Dynamic.literal(metrics = metrics, properties = properties, ver = ver)
+    val __obj = js.Dynamic.literal(metrics = metrics.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], ver = ver.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Metrics]
   }

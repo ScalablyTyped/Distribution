@@ -28,14 +28,14 @@ object TabClasses {
     `ui-tabs-tab`: String = null
   ): TabClasses = {
     val __obj = js.Dynamic.literal()
-    if (`ui-tabs` != null) __obj.updateDynamic("ui-tabs")(`ui-tabs`)
-    if (`ui-tabs-active` != null) __obj.updateDynamic("ui-tabs-active")(`ui-tabs-active`)
-    if (`ui-tabs-anchor` != null) __obj.updateDynamic("ui-tabs-anchor")(`ui-tabs-anchor`)
-    if (`ui-tabs-collapsible` != null) __obj.updateDynamic("ui-tabs-collapsible")(`ui-tabs-collapsible`)
-    if (`ui-tabs-loading` != null) __obj.updateDynamic("ui-tabs-loading")(`ui-tabs-loading`)
-    if (`ui-tabs-nav` != null) __obj.updateDynamic("ui-tabs-nav")(`ui-tabs-nav`)
-    if (`ui-tabs-panel` != null) __obj.updateDynamic("ui-tabs-panel")(`ui-tabs-panel`)
-    if (`ui-tabs-tab` != null) __obj.updateDynamic("ui-tabs-tab")(`ui-tabs-tab`)
+    if (`ui-tabs` != null) __obj.updateDynamic("ui-tabs")(`ui-tabs`.asInstanceOf[js.Any])
+    if (`ui-tabs-active` != null) __obj.updateDynamic("ui-tabs-active")(`ui-tabs-active`.asInstanceOf[js.Any])
+    if (`ui-tabs-anchor` != null) __obj.updateDynamic("ui-tabs-anchor")(`ui-tabs-anchor`.asInstanceOf[js.Any])
+    if (`ui-tabs-collapsible` != null) __obj.updateDynamic("ui-tabs-collapsible")(`ui-tabs-collapsible`.asInstanceOf[js.Any])
+    if (`ui-tabs-loading` != null) __obj.updateDynamic("ui-tabs-loading")(`ui-tabs-loading`.asInstanceOf[js.Any])
+    if (`ui-tabs-nav` != null) __obj.updateDynamic("ui-tabs-nav")(`ui-tabs-nav`.asInstanceOf[js.Any])
+    if (`ui-tabs-panel` != null) __obj.updateDynamic("ui-tabs-panel")(`ui-tabs-panel`.asInstanceOf[js.Any])
+    if (`ui-tabs-tab` != null) __obj.updateDynamic("ui-tabs-tab")(`ui-tabs-tab`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabClasses]
   }
 }

@@ -12,7 +12,7 @@ trait Anon_DragDrop extends js.Object {
 object Anon_DragDrop {
   @scala.inline
   def apply(drag: Anon_Nodes, drop: Anon_Background): Anon_DragDrop = {
-    val __obj = js.Dynamic.literal(drag = drag, drop = drop)
+    val __obj = js.Dynamic.literal(drag = drag.asInstanceOf[js.Any], drop = drop.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DragDrop]
   }

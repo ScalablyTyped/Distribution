@@ -16,7 +16,7 @@ object Filters {
     JSXElement: FilterMethods,
     VariableDeclarator: typings.jscodeshift.srcCollectionsVariableDeclaratorMod.FilterMethods
   ): Filters = {
-    val __obj = js.Dynamic.literal(JSXElement = JSXElement, VariableDeclarator = VariableDeclarator)
+    val __obj = js.Dynamic.literal(JSXElement = JSXElement.asInstanceOf[js.Any], VariableDeclarator = VariableDeclarator.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Filters]
   }

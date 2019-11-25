@@ -12,7 +12,7 @@ trait SortColumn[T /* <: SlickData */] extends js.Object {
 object SortColumn {
   @scala.inline
   def apply[T /* <: SlickData */](sortAsc: Boolean, sortCol: Column[T]): SortColumn[T] = {
-    val __obj = js.Dynamic.literal(sortAsc = sortAsc, sortCol = sortCol)
+    val __obj = js.Dynamic.literal(sortAsc = sortAsc.asInstanceOf[js.Any], sortCol = sortCol.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SortColumn[T]]
   }

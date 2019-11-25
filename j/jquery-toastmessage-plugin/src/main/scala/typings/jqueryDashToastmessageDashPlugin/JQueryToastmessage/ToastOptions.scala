@@ -48,13 +48,13 @@ object ToastOptions {
   ): ToastOptions = {
     val __obj = js.Dynamic.literal()
     if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction0(close))
-    if (closeText != null) __obj.updateDynamic("closeText")(closeText)
+    if (closeText != null) __obj.updateDynamic("closeText")(closeText.asInstanceOf[js.Any])
     if (inEffectDuration != null) __obj.updateDynamic("inEffectDuration")(inEffectDuration.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (stayTime != null) __obj.updateDynamic("stayTime")(stayTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(sticky)) __obj.updateDynamic("sticky")(sticky)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(sticky)) __obj.updateDynamic("sticky")(sticky.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToastOptions]
   }
 }

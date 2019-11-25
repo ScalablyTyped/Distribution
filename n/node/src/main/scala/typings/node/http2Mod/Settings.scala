@@ -26,8 +26,8 @@ object Settings {
     maxHeaderListSize: Int | Double = null
   ): Settings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableConnectProtocol)) __obj.updateDynamic("enableConnectProtocol")(enableConnectProtocol)
-    if (!js.isUndefined(enablePush)) __obj.updateDynamic("enablePush")(enablePush)
+    if (!js.isUndefined(enableConnectProtocol)) __obj.updateDynamic("enableConnectProtocol")(enableConnectProtocol.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePush)) __obj.updateDynamic("enablePush")(enablePush.asInstanceOf[js.Any])
     if (headerTableSize != null) __obj.updateDynamic("headerTableSize")(headerTableSize.asInstanceOf[js.Any])
     if (initialWindowSize != null) __obj.updateDynamic("initialWindowSize")(initialWindowSize.asInstanceOf[js.Any])
     if (maxConcurrentStreams != null) __obj.updateDynamic("maxConcurrentStreams")(maxConcurrentStreams.asInstanceOf[js.Any])

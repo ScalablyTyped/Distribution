@@ -13,7 +13,7 @@ trait CalendarData extends js.Object {
 object CalendarData {
   @scala.inline
   def apply(data: js.Array[CalendarDatum], from: DateOrString, to: DateOrString): CalendarData = {
-    val __obj = js.Dynamic.literal(data = data, from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CalendarData]
   }

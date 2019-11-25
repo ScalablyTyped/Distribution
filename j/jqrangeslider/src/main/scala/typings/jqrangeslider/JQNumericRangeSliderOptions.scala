@@ -34,20 +34,20 @@ object JQNumericRangeSliderOptions {
     wheelSpeed: Int | Double = null
   ): JQNumericRangeSliderOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(arrows)) __obj.updateDynamic("arrows")(arrows)
-    if (bounds != null) __obj.updateDynamic("bounds")(bounds)
-    if (defaultValues != null) __obj.updateDynamic("defaultValues")(defaultValues)
+    if (!js.isUndefined(arrows)) __obj.updateDynamic("arrows")(arrows.asInstanceOf[js.Any])
+    if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
+    if (defaultValues != null) __obj.updateDynamic("defaultValues")(defaultValues.asInstanceOf[js.Any])
     if (delayOut != null) __obj.updateDynamic("delayOut")(delayOut.asInstanceOf[js.Any])
     if (durationIn != null) __obj.updateDynamic("durationIn")(durationIn.asInstanceOf[js.Any])
     if (durationOut != null) __obj.updateDynamic("durationOut")(durationOut.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction1(formatter))
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (scales != null) __obj.updateDynamic("scales")(scales)
+    if (scales != null) __obj.updateDynamic("scales")(scales.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
-    if (!js.isUndefined(symmetricPositionning)) __obj.updateDynamic("symmetricPositionning")(symmetricPositionning)
-    if (valueLabels != null) __obj.updateDynamic("valueLabels")(valueLabels)
-    if (wheelMode != null) __obj.updateDynamic("wheelMode")(wheelMode)
+    if (!js.isUndefined(symmetricPositionning)) __obj.updateDynamic("symmetricPositionning")(symmetricPositionning.asInstanceOf[js.Any])
+    if (valueLabels != null) __obj.updateDynamic("valueLabels")(valueLabels.asInstanceOf[js.Any])
+    if (wheelMode != null) __obj.updateDynamic("wheelMode")(wheelMode.asInstanceOf[js.Any])
     if (wheelSpeed != null) __obj.updateDynamic("wheelSpeed")(wheelSpeed.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQNumericRangeSliderOptions]
   }

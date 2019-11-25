@@ -19,8 +19,8 @@ object PeripheralCharacteristic {
     service: String,
     descriptors: js.Array[_] = null
   ): PeripheralCharacteristic = {
-    val __obj = js.Dynamic.literal(characteristic = characteristic, properties = properties, service = service)
-    if (descriptors != null) __obj.updateDynamic("descriptors")(descriptors)
+    val __obj = js.Dynamic.literal(characteristic = characteristic.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any])
+    if (descriptors != null) __obj.updateDynamic("descriptors")(descriptors.asInstanceOf[js.Any])
     __obj.asInstanceOf[PeripheralCharacteristic]
   }
 }

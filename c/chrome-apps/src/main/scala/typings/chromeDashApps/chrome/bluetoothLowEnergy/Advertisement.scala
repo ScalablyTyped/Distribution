@@ -28,11 +28,11 @@ object Advertisement {
     serviceUuids: js.Array[String] = null,
     solicitUuids: js.Array[String] = null
   ): Advertisement = {
-    val __obj = js.Dynamic.literal(serviceData = serviceData)
-    __obj.updateDynamic("type")(`type`)
-    if (manufacturerData != null) __obj.updateDynamic("manufacturerData")(manufacturerData)
-    if (serviceUuids != null) __obj.updateDynamic("serviceUuids")(serviceUuids)
-    if (solicitUuids != null) __obj.updateDynamic("solicitUuids")(solicitUuids)
+    val __obj = js.Dynamic.literal(serviceData = serviceData.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (manufacturerData != null) __obj.updateDynamic("manufacturerData")(manufacturerData.asInstanceOf[js.Any])
+    if (serviceUuids != null) __obj.updateDynamic("serviceUuids")(serviceUuids.asInstanceOf[js.Any])
+    if (solicitUuids != null) __obj.updateDynamic("solicitUuids")(solicitUuids.asInstanceOf[js.Any])
     __obj.asInstanceOf[Advertisement]
   }
 }

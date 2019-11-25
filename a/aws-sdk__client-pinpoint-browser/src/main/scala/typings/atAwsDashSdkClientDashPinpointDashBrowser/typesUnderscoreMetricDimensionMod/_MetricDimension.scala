@@ -19,7 +19,7 @@ object _MetricDimension {
   @scala.inline
   def apply(ComparisonOperator: String = null, Value: Int | Double = null): _MetricDimension = {
     val __obj = js.Dynamic.literal()
-    if (ComparisonOperator != null) __obj.updateDynamic("ComparisonOperator")(ComparisonOperator)
+    if (ComparisonOperator != null) __obj.updateDynamic("ComparisonOperator")(ComparisonOperator.asInstanceOf[js.Any])
     if (Value != null) __obj.updateDynamic("Value")(Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[_MetricDimension]
   }

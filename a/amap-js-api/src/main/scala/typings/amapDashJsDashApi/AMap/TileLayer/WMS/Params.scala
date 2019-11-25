@@ -32,15 +32,15 @@ object Params {
     VERSION: String = null
   ): Params = {
     val __obj = js.Dynamic.literal()
-    if (BGCOLOR != null) __obj.updateDynamic("BGCOLOR")(BGCOLOR)
-    if (ELEVATION != null) __obj.updateDynamic("ELEVATION")(ELEVATION)
-    if (EXCEPTIONS != null) __obj.updateDynamic("EXCEPTIONS")(EXCEPTIONS)
-    if (FORMAT != null) __obj.updateDynamic("FORMAT")(FORMAT)
-    if (LAYERS != null) __obj.updateDynamic("LAYERS")(LAYERS)
-    if (STYLES != null) __obj.updateDynamic("STYLES")(STYLES)
-    if (TIME != null) __obj.updateDynamic("TIME")(TIME)
+    if (BGCOLOR != null) __obj.updateDynamic("BGCOLOR")(BGCOLOR.asInstanceOf[js.Any])
+    if (ELEVATION != null) __obj.updateDynamic("ELEVATION")(ELEVATION.asInstanceOf[js.Any])
+    if (EXCEPTIONS != null) __obj.updateDynamic("EXCEPTIONS")(EXCEPTIONS.asInstanceOf[js.Any])
+    if (FORMAT != null) __obj.updateDynamic("FORMAT")(FORMAT.asInstanceOf[js.Any])
+    if (LAYERS != null) __obj.updateDynamic("LAYERS")(LAYERS.asInstanceOf[js.Any])
+    if (STYLES != null) __obj.updateDynamic("STYLES")(STYLES.asInstanceOf[js.Any])
+    if (TIME != null) __obj.updateDynamic("TIME")(TIME.asInstanceOf[js.Any])
     if (TRANSPARENT != null) __obj.updateDynamic("TRANSPARENT")(TRANSPARENT.asInstanceOf[js.Any])
-    if (VERSION != null) __obj.updateDynamic("VERSION")(VERSION)
+    if (VERSION != null) __obj.updateDynamic("VERSION")(VERSION.asInstanceOf[js.Any])
     __obj.asInstanceOf[Params]
   }
 }

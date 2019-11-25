@@ -51,12 +51,12 @@ object Entity {
     `type`: String = null
   ): Entity = {
     val __obj = js.Dynamic.literal()
-    if (mentions != null) __obj.updateDynamic("mentions")(mentions)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (mentions != null) __obj.updateDynamic("mentions")(mentions.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (salience != null) __obj.updateDynamic("salience")(salience.asInstanceOf[js.Any])
-    if (sentiment != null) __obj.updateDynamic("sentiment")(sentiment)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (sentiment != null) __obj.updateDynamic("sentiment")(sentiment.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Entity]
   }
 }

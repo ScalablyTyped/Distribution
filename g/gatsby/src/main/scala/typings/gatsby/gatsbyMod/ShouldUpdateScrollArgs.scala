@@ -23,8 +23,8 @@ object ShouldUpdateScrollArgs {
     routerProps: Anon_Location,
     prevRouterProps: Anon_Location = null
   ): ShouldUpdateScrollArgs = {
-    val __obj = js.Dynamic.literal(getResourceURLsForPathname = getResourceURLsForPathname, getResourcesForPathname = getResourcesForPathname, getResourcesForPathnameSync = getResourcesForPathnameSync, getSavedScrollPosition = getSavedScrollPosition, pathname = pathname, routerProps = routerProps)
-    if (prevRouterProps != null) __obj.updateDynamic("prevRouterProps")(prevRouterProps)
+    val __obj = js.Dynamic.literal(getResourceURLsForPathname = getResourceURLsForPathname.asInstanceOf[js.Any], getResourcesForPathname = getResourcesForPathname.asInstanceOf[js.Any], getResourcesForPathnameSync = getResourcesForPathnameSync.asInstanceOf[js.Any], getSavedScrollPosition = getSavedScrollPosition.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], routerProps = routerProps.asInstanceOf[js.Any])
+    if (prevRouterProps != null) __obj.updateDynamic("prevRouterProps")(prevRouterProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShouldUpdateScrollArgs]
   }
 }

@@ -13,7 +13,7 @@ object UpdateDeviceMetadataRequest {
   @scala.inline
   def apply(deviceMetadata: DeviceMetadata = null): UpdateDeviceMetadataRequest = {
     val __obj = js.Dynamic.literal()
-    if (deviceMetadata != null) __obj.updateDynamic("deviceMetadata")(deviceMetadata)
+    if (deviceMetadata != null) __obj.updateDynamic("deviceMetadata")(deviceMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDeviceMetadataRequest]
   }
 }

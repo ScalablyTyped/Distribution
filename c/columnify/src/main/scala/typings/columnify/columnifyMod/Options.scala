@@ -39,10 +39,10 @@ object Options {
     if (headingTransform != null) __obj.updateDynamic("headingTransform")(js.Any.fromFunction1(headingTransform))
     if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
     if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (paddingChr != null) __obj.updateDynamic("paddingChr")(paddingChr)
-    if (!js.isUndefined(preserveNewLines)) __obj.updateDynamic("preserveNewLines")(preserveNewLines)
-    if (!js.isUndefined(showHeaders)) __obj.updateDynamic("showHeaders")(showHeaders)
-    if (truncateMarker != null) __obj.updateDynamic("truncateMarker")(truncateMarker)
+    if (paddingChr != null) __obj.updateDynamic("paddingChr")(paddingChr.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveNewLines)) __obj.updateDynamic("preserveNewLines")(preserveNewLines.asInstanceOf[js.Any])
+    if (!js.isUndefined(showHeaders)) __obj.updateDynamic("showHeaders")(showHeaders.asInstanceOf[js.Any])
+    if (truncateMarker != null) __obj.updateDynamic("truncateMarker")(truncateMarker.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

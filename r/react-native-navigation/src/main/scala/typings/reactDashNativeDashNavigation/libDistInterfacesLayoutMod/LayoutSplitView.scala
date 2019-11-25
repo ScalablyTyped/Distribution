@@ -34,10 +34,10 @@ object LayoutSplitView {
     options: Options = null
   ): LayoutSplitView = {
     val __obj = js.Dynamic.literal()
-    if (detail != null) __obj.updateDynamic("detail")(detail)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (master != null) __obj.updateDynamic("master")(master)
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (detail != null) __obj.updateDynamic("detail")(detail.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (master != null) __obj.updateDynamic("master")(master.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayoutSplitView]
   }
 }

@@ -11,7 +11,7 @@ trait Anon_AutoGenerateTag extends js.Object {
 object Anon_AutoGenerateTag {
   @scala.inline
   def apply(autoGenerateTag: Boolean): Anon_AutoGenerateTag = {
-    val __obj = js.Dynamic.literal(autoGenerateTag = autoGenerateTag)
+    val __obj = js.Dynamic.literal(autoGenerateTag = autoGenerateTag.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AutoGenerateTag]
   }

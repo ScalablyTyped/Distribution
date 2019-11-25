@@ -45,7 +45,7 @@ object PrintOption {
     printer: String,
     shouldPrintBackgrounds: Boolean
   ): PrintOption = {
-    val __obj = js.Dynamic.literal(headerFooterEnabled = headerFooterEnabled, landscape = landscape, mediaSize = mediaSize, pdf_path = pdf_path, printer = printer, shouldPrintBackgrounds = shouldPrintBackgrounds)
+    val __obj = js.Dynamic.literal(headerFooterEnabled = headerFooterEnabled.asInstanceOf[js.Any], landscape = landscape.asInstanceOf[js.Any], mediaSize = mediaSize.asInstanceOf[js.Any], pdf_path = pdf_path.asInstanceOf[js.Any], printer = printer.asInstanceOf[js.Any], shouldPrintBackgrounds = shouldPrintBackgrounds.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PrintOption]
   }

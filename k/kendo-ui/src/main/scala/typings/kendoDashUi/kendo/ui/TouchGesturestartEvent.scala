@@ -24,11 +24,11 @@ object TouchGesturestartEvent {
     event: JQueryEventObject = null,
     touches: js.Any = null
   ): TouchGesturestartEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (center != null) __obj.updateDynamic("center")(center)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
     if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
-    if (event != null) __obj.updateDynamic("event")(event)
-    if (touches != null) __obj.updateDynamic("touches")(touches)
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
+    if (touches != null) __obj.updateDynamic("touches")(touches.asInstanceOf[js.Any])
     __obj.asInstanceOf[TouchGesturestartEvent]
   }
 }

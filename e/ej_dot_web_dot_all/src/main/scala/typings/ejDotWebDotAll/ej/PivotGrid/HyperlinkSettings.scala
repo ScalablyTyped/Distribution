@@ -32,10 +32,10 @@ object HyperlinkSettings {
     enableValueCellHyperlink: js.UndefOr[Boolean] = js.undefined
   ): HyperlinkSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableColumnHeaderHyperlink)) __obj.updateDynamic("enableColumnHeaderHyperlink")(enableColumnHeaderHyperlink)
-    if (!js.isUndefined(enableRowHeaderHyperlink)) __obj.updateDynamic("enableRowHeaderHyperlink")(enableRowHeaderHyperlink)
-    if (!js.isUndefined(enableSummaryCellHyperlink)) __obj.updateDynamic("enableSummaryCellHyperlink")(enableSummaryCellHyperlink)
-    if (!js.isUndefined(enableValueCellHyperlink)) __obj.updateDynamic("enableValueCellHyperlink")(enableValueCellHyperlink)
+    if (!js.isUndefined(enableColumnHeaderHyperlink)) __obj.updateDynamic("enableColumnHeaderHyperlink")(enableColumnHeaderHyperlink.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableRowHeaderHyperlink)) __obj.updateDynamic("enableRowHeaderHyperlink")(enableRowHeaderHyperlink.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableSummaryCellHyperlink)) __obj.updateDynamic("enableSummaryCellHyperlink")(enableSummaryCellHyperlink.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableValueCellHyperlink)) __obj.updateDynamic("enableValueCellHyperlink")(enableValueCellHyperlink.asInstanceOf[js.Any])
     __obj.asInstanceOf[HyperlinkSettings]
   }
 }

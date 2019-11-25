@@ -13,7 +13,7 @@ object PdfSettings {
   @scala.inline
   def apply(heading: PdfHeadingDetection = null): PdfSettings = {
     val __obj = js.Dynamic.literal()
-    if (heading != null) __obj.updateDynamic("heading")(heading)
+    if (heading != null) __obj.updateDynamic("heading")(heading.asInstanceOf[js.Any])
     __obj.asInstanceOf[PdfSettings]
   }
 }

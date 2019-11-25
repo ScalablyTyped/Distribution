@@ -19,8 +19,8 @@ object SesOptions {
     maxConnections: Int | Double = null,
     sendingRate: Int | Double = null
   ): SesOptions = {
-    val __obj = js.Dynamic.literal(SES = SES)
-    if (component != null) __obj.updateDynamic("component")(component)
+    val __obj = js.Dynamic.literal(SES = SES.asInstanceOf[js.Any])
+    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
     if (maxConnections != null) __obj.updateDynamic("maxConnections")(maxConnections.asInstanceOf[js.Any])
     if (sendingRate != null) __obj.updateDynamic("sendingRate")(sendingRate.asInstanceOf[js.Any])
     __obj.asInstanceOf[SesOptions]

@@ -59,9 +59,9 @@ object Options {
     testing: ava | mocha | jasmine | tape | `node-tap` = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(colors)) __obj.updateDynamic("colors")(colors)
-    if (exitOn != null) __obj.updateDynamic("exitOn")(exitOn)
-    if (level != null) __obj.updateDynamic("level")(level)
+    if (!js.isUndefined(colors)) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
+    if (exitOn != null) __obj.updateDynamic("exitOn")(exitOn.asInstanceOf[js.Any])
+    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (log != null) __obj.updateDynamic("log")(js.Any.fromFunction2(log))
     if (testing != null) __obj.updateDynamic("testing")(testing.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

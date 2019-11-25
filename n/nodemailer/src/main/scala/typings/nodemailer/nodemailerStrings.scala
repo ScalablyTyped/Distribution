@@ -18,7 +18,7 @@ object nodemailerStrings {
   sealed trait CUSTOM extends js.Object
   
   @js.native
-  sealed trait Custom extends js.Object
+  sealed trait Custom_ extends js.Object
   
   @js.native
   sealed trait DELAY extends DSNOption
@@ -36,7 +36,7 @@ object nodemailerStrings {
   sealed trait LOGIN extends js.Object
   
   @js.native
-  sealed trait Login extends js.Object
+  sealed trait Login_ extends js.Object
   
   @js.native
   sealed trait NEVER extends DSNOption
@@ -45,7 +45,7 @@ object nodemailerStrings {
   sealed trait OAUTH2 extends js.Object
   
   @js.native
-  sealed trait OAuth2 extends js.Object
+  sealed trait OAuth2_ extends js.Object
   
   @js.native
   sealed trait Q extends js.Object
@@ -75,7 +75,7 @@ object nodemailerStrings {
   sealed trait connected extends js.Object
   
   @js.native
-  sealed trait custom extends js.Object
+  sealed trait custom__ extends js.Object
   
   @js.native
   sealed trait data extends js.Object
@@ -114,7 +114,7 @@ object nodemailerStrings {
   sealed trait `inline` extends js.Object
   
   @js.native
-  sealed trait login extends js.Object
+  sealed trait login__ extends js.Object
   
   @js.native
   sealed trait low extends js.Object
@@ -123,7 +123,7 @@ object nodemailerStrings {
   sealed trait normal extends js.Object
   
   @js.native
-  sealed trait oauth2 extends js.Object
+  sealed trait oauth2__ extends js.Object
   
   @js.native
   sealed trait oauth2_provision_cb extends js.Object
@@ -168,7 +168,7 @@ object nodemailerStrings {
   @scala.inline
   def CUSTOM: CUSTOM = "CUSTOM".asInstanceOf[CUSTOM]
   @scala.inline
-  def Custom: Custom = "Custom".asInstanceOf[Custom]
+  def Custom_ : Custom_ = "Custom".asInstanceOf[Custom_]
   @scala.inline
   def DELAY: DELAY = "DELAY".asInstanceOf[DELAY]
   @scala.inline
@@ -180,13 +180,13 @@ object nodemailerStrings {
   @scala.inline
   def LOGIN: LOGIN = "LOGIN".asInstanceOf[LOGIN]
   @scala.inline
-  def Login: Login = "Login".asInstanceOf[Login]
+  def Login_ : Login_ = "Login".asInstanceOf[Login_]
   @scala.inline
   def NEVER: NEVER = "NEVER".asInstanceOf[NEVER]
   @scala.inline
   def OAUTH2: OAUTH2 = "OAUTH2".asInstanceOf[OAUTH2]
   @scala.inline
-  def OAuth2: OAuth2 = "OAuth2".asInstanceOf[OAuth2]
+  def OAuth2_ : OAuth2_ = "OAuth2".asInstanceOf[OAuth2_]
   @scala.inline
   def Q: Q = "Q".asInstanceOf[Q]
   @scala.inline
@@ -206,7 +206,7 @@ object nodemailerStrings {
   @scala.inline
   def connected: connected = "connected".asInstanceOf[connected]
   @scala.inline
-  def custom: custom = "custom".asInstanceOf[custom]
+  def custom__ : custom__ = "custom".asInstanceOf[custom__]
   @scala.inline
   def data: data = "data".asInstanceOf[data]
   @scala.inline
@@ -232,13 +232,13 @@ object nodemailerStrings {
   @scala.inline
   def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   @scala.inline
-  def login: login = "login".asInstanceOf[login]
+  def login__ : login__ = "login".asInstanceOf[login__]
   @scala.inline
   def low: low = "low".asInstanceOf[low]
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
   @scala.inline
-  def oauth2: oauth2 = "oauth2".asInstanceOf[oauth2]
+  def oauth2__ : oauth2__ = "oauth2".asInstanceOf[oauth2__]
   @scala.inline
   def oauth2_provision_cb: oauth2_provision_cb = "oauth2_provision_cb".asInstanceOf[oauth2_provision_cb]
   @scala.inline

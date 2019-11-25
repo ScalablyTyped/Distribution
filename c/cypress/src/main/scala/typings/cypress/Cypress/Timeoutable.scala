@@ -20,7 +20,7 @@ trait Timeoutable extends js.Object {
 object Timeoutable {
   @scala.inline
   def apply(timeout: Double): Timeoutable = {
-    val __obj = js.Dynamic.literal(timeout = timeout)
+    val __obj = js.Dynamic.literal(timeout = timeout.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Timeoutable]
   }

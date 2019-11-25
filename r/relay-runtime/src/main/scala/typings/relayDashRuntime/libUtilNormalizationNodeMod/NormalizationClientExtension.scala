@@ -13,7 +13,7 @@ trait NormalizationClientExtension extends NormalizationSelection {
 object NormalizationClientExtension {
   @scala.inline
   def apply(kind: String, selections: js.Array[NormalizationSelection]): NormalizationClientExtension = {
-    val __obj = js.Dynamic.literal(kind = kind, selections = selections)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NormalizationClientExtension]
   }

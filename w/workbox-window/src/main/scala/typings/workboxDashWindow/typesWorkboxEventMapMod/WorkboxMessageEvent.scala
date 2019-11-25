@@ -14,8 +14,8 @@ trait WorkboxMessageEvent extends WorkboxEvent {
 object WorkboxMessageEvent {
   @scala.inline
   def apply(data: js.Any, originalEvent: Event, target: Workbox, `type`: String): WorkboxMessageEvent = {
-    val __obj = js.Dynamic.literal(data = data, originalEvent = originalEvent, target = target)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkboxMessageEvent]
   }
 }

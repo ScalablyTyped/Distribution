@@ -13,8 +13,8 @@ object MessageOptions {
   @scala.inline
   def apply(defaults: String = null, formats: js.Object = null): MessageOptions = {
     val __obj = js.Dynamic.literal()
-    if (defaults != null) __obj.updateDynamic("defaults")(defaults)
-    if (formats != null) __obj.updateDynamic("formats")(formats)
+    if (defaults != null) __obj.updateDynamic("defaults")(defaults.asInstanceOf[js.Any])
+    if (formats != null) __obj.updateDynamic("formats")(formats.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageOptions]
   }
 }

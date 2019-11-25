@@ -24,7 +24,7 @@ trait ResourceMetricStatus extends js.Object {
 object ResourceMetricStatus {
   @scala.inline
   def apply(current: MetricValueStatus, name: String): ResourceMetricStatus = {
-    val __obj = js.Dynamic.literal(current = current, name = name)
+    val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ResourceMetricStatus]
   }

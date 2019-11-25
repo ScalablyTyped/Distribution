@@ -23,11 +23,11 @@ object Anon_ActualExpectedMessage {
     name: js.UndefOr[scala.Nothing] = js.undefined,
     report: js.UndefOr[scala.Nothing] = js.undefined
   ): Anon_ActualExpectedMessage = {
-    val __obj = js.Dynamic.literal(message = js.Any.fromFunction0(message), pass = pass)
-    if (!js.isUndefined(actual)) __obj.updateDynamic("actual")(actual)
-    if (!js.isUndefined(expected)) __obj.updateDynamic("expected")(expected)
-    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(report)) __obj.updateDynamic("report")(report)
+    val __obj = js.Dynamic.literal(message = js.Any.fromFunction0(message), pass = pass.asInstanceOf[js.Any])
+    if (!js.isUndefined(actual)) __obj.updateDynamic("actual")(actual.asInstanceOf[js.Any])
+    if (!js.isUndefined(expected)) __obj.updateDynamic("expected")(expected.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(report)) __obj.updateDynamic("report")(report.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ActualExpectedMessage]
   }
 }

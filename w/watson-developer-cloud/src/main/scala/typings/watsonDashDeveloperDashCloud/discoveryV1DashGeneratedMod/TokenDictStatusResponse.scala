@@ -16,8 +16,8 @@ object TokenDictStatusResponse {
   @scala.inline
   def apply(status: String = null, `type`: String = null): TokenDictStatusResponse = {
     val __obj = js.Dynamic.literal()
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TokenDictStatusResponse]
   }
 }

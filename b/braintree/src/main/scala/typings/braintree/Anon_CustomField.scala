@@ -13,8 +13,8 @@ object Anon_CustomField {
   @scala.inline
   def apply(customField: String = null, description: String = null): Anon_CustomField = {
     val __obj = js.Dynamic.literal()
-    if (customField != null) __obj.updateDynamic("customField")(customField)
-    if (description != null) __obj.updateDynamic("description")(description)
+    if (customField != null) __obj.updateDynamic("customField")(customField.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CustomField]
   }
 }

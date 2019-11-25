@@ -15,7 +15,7 @@ object GetExchangeRateOpts {
   @scala.inline
   def apply(currency: String = null): GetExchangeRateOpts = {
     val __obj = js.Dynamic.literal()
-    if (currency != null) __obj.updateDynamic("currency")(currency)
+    if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetExchangeRateOpts]
   }
 }

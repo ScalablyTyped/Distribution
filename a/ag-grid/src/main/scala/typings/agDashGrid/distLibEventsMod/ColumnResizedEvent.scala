@@ -22,8 +22,8 @@ object ColumnResizedEvent {
     source: ColumnEventType,
     `type`: String
   ): ColumnResizedEvent = {
-    val __obj = js.Dynamic.literal(api = api, column = column, columnApi = columnApi, columns = columns, finished = finished, source = source)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], columnApi = columnApi.asInstanceOf[js.Any], columns = columns.asInstanceOf[js.Any], finished = finished.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnResizedEvent]
   }
 }

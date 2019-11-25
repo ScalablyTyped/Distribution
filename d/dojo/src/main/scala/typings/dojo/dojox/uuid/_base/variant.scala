@@ -31,7 +31,7 @@ trait variant extends js.Object {
 object variant {
   @scala.inline
   def apply(DCE: String, MICROSOFT: String, NCS: String, UNKNOWN: String): variant = {
-    val __obj = js.Dynamic.literal(DCE = DCE, MICROSOFT = MICROSOFT, NCS = NCS, UNKNOWN = UNKNOWN)
+    val __obj = js.Dynamic.literal(DCE = DCE.asInstanceOf[js.Any], MICROSOFT = MICROSOFT.asInstanceOf[js.Any], NCS = NCS.asInstanceOf[js.Any], UNKNOWN = UNKNOWN.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[variant]
   }

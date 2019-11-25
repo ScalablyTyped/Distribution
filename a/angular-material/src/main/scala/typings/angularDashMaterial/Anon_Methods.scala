@@ -14,7 +14,7 @@ object Anon_Methods {
   @scala.inline
   def apply(options: () => IDialogOptions, methods: js.Array[String] = null): Anon_Methods = {
     val __obj = js.Dynamic.literal(options = js.Any.fromFunction0(options))
-    if (methods != null) __obj.updateDynamic("methods")(methods)
+    if (methods != null) __obj.updateDynamic("methods")(methods.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Methods]
   }
 }

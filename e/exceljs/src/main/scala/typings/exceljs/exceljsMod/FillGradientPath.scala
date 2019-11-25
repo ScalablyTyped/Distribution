@@ -26,8 +26,8 @@ trait FillGradientPath extends Fill {
 object FillGradientPath {
   @scala.inline
   def apply(center: Anon_Left, gradient: path, stops: js.Array[GradientStop], `type`: gradient): FillGradientPath = {
-    val __obj = js.Dynamic.literal(center = center, gradient = gradient, stops = stops)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], gradient = gradient.asInstanceOf[js.Any], stops = stops.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FillGradientPath]
   }
 }

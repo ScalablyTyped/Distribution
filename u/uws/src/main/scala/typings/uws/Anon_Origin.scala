@@ -14,7 +14,7 @@ trait Anon_Origin extends js.Object {
 object Anon_Origin {
   @scala.inline
   def apply(origin: String, req: IncomingMessage, secure: Boolean): Anon_Origin = {
-    val __obj = js.Dynamic.literal(origin = origin, req = req, secure = secure)
+    val __obj = js.Dynamic.literal(origin = origin.asInstanceOf[js.Any], req = req.asInstanceOf[js.Any], secure = secure.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Origin]
   }

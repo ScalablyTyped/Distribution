@@ -27,10 +27,10 @@ object Anon_AnonymousId {
   ): Anon_AnonymousId = {
     val __obj = js.Dynamic.literal()
     if (anonymousId != null) __obj.updateDynamic("anonymousId")(anonymousId.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (integrations != null) __obj.updateDynamic("integrations")(integrations)
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp)
-    if (traits != null) __obj.updateDynamic("traits")(traits)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (integrations != null) __obj.updateDynamic("integrations")(integrations.asInstanceOf[js.Any])
+    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
+    if (traits != null) __obj.updateDynamic("traits")(traits.asInstanceOf[js.Any])
     if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AnonymousId]
   }

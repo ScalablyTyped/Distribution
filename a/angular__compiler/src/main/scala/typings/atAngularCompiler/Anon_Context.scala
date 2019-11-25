@@ -13,7 +13,7 @@ trait Anon_Context extends js.Object {
 object Anon_Context {
   @scala.inline
   def apply(context: EmitterVisitorContext, sourceText: String): Anon_Context = {
-    val __obj = js.Dynamic.literal(context = context, sourceText = sourceText)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], sourceText = sourceText.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Context]
   }

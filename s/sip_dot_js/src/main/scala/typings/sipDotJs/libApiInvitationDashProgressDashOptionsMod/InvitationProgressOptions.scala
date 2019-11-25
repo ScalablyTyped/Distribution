@@ -51,11 +51,11 @@ object InvitationProgressOptions {
   ): InvitationProgressOptions = {
     val __obj = js.Dynamic.literal()
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders)
-    if (reasonPhrase != null) __obj.updateDynamic("reasonPhrase")(reasonPhrase)
-    if (!js.isUndefined(rel100)) __obj.updateDynamic("rel100")(rel100)
-    if (sessionDescriptionHandlerModifiers != null) __obj.updateDynamic("sessionDescriptionHandlerModifiers")(sessionDescriptionHandlerModifiers)
-    if (sessionDescriptionHandlerOptions != null) __obj.updateDynamic("sessionDescriptionHandlerOptions")(sessionDescriptionHandlerOptions)
+    if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders.asInstanceOf[js.Any])
+    if (reasonPhrase != null) __obj.updateDynamic("reasonPhrase")(reasonPhrase.asInstanceOf[js.Any])
+    if (!js.isUndefined(rel100)) __obj.updateDynamic("rel100")(rel100.asInstanceOf[js.Any])
+    if (sessionDescriptionHandlerModifiers != null) __obj.updateDynamic("sessionDescriptionHandlerModifiers")(sessionDescriptionHandlerModifiers.asInstanceOf[js.Any])
+    if (sessionDescriptionHandlerOptions != null) __obj.updateDynamic("sessionDescriptionHandlerOptions")(sessionDescriptionHandlerOptions.asInstanceOf[js.Any])
     if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvitationProgressOptions]
   }

@@ -31,13 +31,13 @@ object DefaultLinkProps {
     smooth: js.UndefOr[Boolean] = js.undefined,
     width: Int | Double = null
   ): DefaultLinkProps = {
-    val __obj = js.Dynamic.literal(diagramEngine = diagramEngine, link = link)
-    if (baseClass != null) __obj.updateDynamic("baseClass")(baseClass)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (extraProps != null) __obj.updateDynamic("extraProps")(extraProps)
+    val __obj = js.Dynamic.literal(diagramEngine = diagramEngine.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any])
+    if (baseClass != null) __obj.updateDynamic("baseClass")(baseClass.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (extraProps != null) __obj.updateDynamic("extraProps")(extraProps.asInstanceOf[js.Any])
     if (pointAdded != null) __obj.updateDynamic("pointAdded")(js.Any.fromFunction2(pointAdded))
-    if (!js.isUndefined(smooth)) __obj.updateDynamic("smooth")(smooth)
+    if (!js.isUndefined(smooth)) __obj.updateDynamic("smooth")(smooth.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultLinkProps]
   }

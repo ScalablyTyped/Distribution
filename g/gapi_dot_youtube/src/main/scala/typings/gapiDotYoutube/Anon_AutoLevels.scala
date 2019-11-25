@@ -41,12 +41,12 @@ object Anon_AutoLevels {
     onBehalfOfContentOwnerChannel: String = null,
     stabilize: js.UndefOr[Boolean] = js.undefined
   ): Anon_AutoLevels = {
-    val __obj = js.Dynamic.literal(part = part)
-    if (RequestBody != null) __obj.updateDynamic("RequestBody")(RequestBody)
-    if (!js.isUndefined(autoLevels)) __obj.updateDynamic("autoLevels")(autoLevels)
-    if (onBehalfOfContentOwner != null) __obj.updateDynamic("onBehalfOfContentOwner")(onBehalfOfContentOwner)
-    if (onBehalfOfContentOwnerChannel != null) __obj.updateDynamic("onBehalfOfContentOwnerChannel")(onBehalfOfContentOwnerChannel)
-    if (!js.isUndefined(stabilize)) __obj.updateDynamic("stabilize")(stabilize)
+    val __obj = js.Dynamic.literal(part = part.asInstanceOf[js.Any])
+    if (RequestBody != null) __obj.updateDynamic("RequestBody")(RequestBody.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoLevels)) __obj.updateDynamic("autoLevels")(autoLevels.asInstanceOf[js.Any])
+    if (onBehalfOfContentOwner != null) __obj.updateDynamic("onBehalfOfContentOwner")(onBehalfOfContentOwner.asInstanceOf[js.Any])
+    if (onBehalfOfContentOwnerChannel != null) __obj.updateDynamic("onBehalfOfContentOwnerChannel")(onBehalfOfContentOwnerChannel.asInstanceOf[js.Any])
+    if (!js.isUndefined(stabilize)) __obj.updateDynamic("stabilize")(stabilize.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AutoLevels]
   }
 }

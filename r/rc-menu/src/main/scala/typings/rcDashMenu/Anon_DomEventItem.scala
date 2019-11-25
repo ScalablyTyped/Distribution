@@ -22,7 +22,7 @@ object Anon_DomEventItem {
     key: String | Double,
     keyPath: js.Array[String | Double]
   ): Anon_DomEventItem = {
-    val __obj = js.Dynamic.literal(domEvent = domEvent, item = item.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], keyPath = keyPath)
+    val __obj = js.Dynamic.literal(domEvent = domEvent.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], keyPath = keyPath.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DomEventItem]
   }

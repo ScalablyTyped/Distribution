@@ -19,9 +19,9 @@ trait GistsUpdateParams extends js.Object {
 object GistsUpdateParams {
   @scala.inline
   def apply(gist_id: String, description: String = null, files: GistsUpdateParamsFiles = null): GistsUpdateParams = {
-    val __obj = js.Dynamic.literal(gist_id = gist_id)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (files != null) __obj.updateDynamic("files")(files)
+    val __obj = js.Dynamic.literal(gist_id = gist_id.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
     __obj.asInstanceOf[GistsUpdateParams]
   }
 }

@@ -23,7 +23,7 @@ object Anon_Height {
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (iconButtonSize != null) __obj.updateDynamic("iconButtonSize")(iconButtonSize.asInstanceOf[js.Any])
     if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (textTransform != null) __obj.updateDynamic("textTransform")(textTransform)
+    if (textTransform != null) __obj.updateDynamic("textTransform")(textTransform.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Height]
   }
 }

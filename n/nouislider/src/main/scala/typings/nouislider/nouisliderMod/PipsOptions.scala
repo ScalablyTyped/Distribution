@@ -69,7 +69,7 @@ object PipsOptions {
     if (density != null) __obj.updateDynamic("density")(density.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(stepped)) __obj.updateDynamic("stepped")(stepped)
+    if (!js.isUndefined(stepped)) __obj.updateDynamic("stepped")(stepped.asInstanceOf[js.Any])
     if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[PipsOptions]
   }

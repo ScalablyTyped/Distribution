@@ -13,8 +13,8 @@ trait Anon_DateKey
 object Anon_DateKey {
   @scala.inline
   def apply(Date: String, StringDictionary: /* key */ StringDictionary[js.Any] = null): Anon_DateKey = {
-    val __obj = js.Dynamic.literal(Date = Date)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(Date = Date.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_DateKey]
   }
 }

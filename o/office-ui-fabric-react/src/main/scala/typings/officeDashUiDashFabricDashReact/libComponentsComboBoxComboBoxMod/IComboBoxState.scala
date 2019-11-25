@@ -42,12 +42,12 @@ object IComboBoxState {
     selectedIndices: js.Array[Double] = null,
     suggestedDisplayValue: String = null
   ): IComboBoxState = {
-    val __obj = js.Dynamic.literal(currentOptions = currentOptions, currentPendingValueValidIndex = currentPendingValueValidIndex, currentPendingValueValidIndexOnHover = currentPendingValueValidIndexOnHover)
-    if (currentPendingValue != null) __obj.updateDynamic("currentPendingValue")(currentPendingValue)
-    if (!js.isUndefined(focused)) __obj.updateDynamic("focused")(focused)
-    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen)
-    if (selectedIndices != null) __obj.updateDynamic("selectedIndices")(selectedIndices)
-    if (suggestedDisplayValue != null) __obj.updateDynamic("suggestedDisplayValue")(suggestedDisplayValue)
+    val __obj = js.Dynamic.literal(currentOptions = currentOptions.asInstanceOf[js.Any], currentPendingValueValidIndex = currentPendingValueValidIndex.asInstanceOf[js.Any], currentPendingValueValidIndexOnHover = currentPendingValueValidIndexOnHover.asInstanceOf[js.Any])
+    if (currentPendingValue != null) __obj.updateDynamic("currentPendingValue")(currentPendingValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(focused)) __obj.updateDynamic("focused")(focused.asInstanceOf[js.Any])
+    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen.asInstanceOf[js.Any])
+    if (selectedIndices != null) __obj.updateDynamic("selectedIndices")(selectedIndices.asInstanceOf[js.Any])
+    if (suggestedDisplayValue != null) __obj.updateDynamic("suggestedDisplayValue")(suggestedDisplayValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[IComboBoxState]
   }
 }

@@ -29,7 +29,7 @@ object InlineFragment {
     typeCondition: GraphQLCompositeType,
     metadata: Metadata = null
   ): InlineFragment = {
-    val __obj = js.Dynamic.literal(directives = directives, kind = kind, loc = loc, selections = selections, typeCondition = typeCondition.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(directives = directives.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any], typeCondition = typeCondition.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[InlineFragment]
   }

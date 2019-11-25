@@ -14,7 +14,7 @@ trait Anon_E extends js.Object {
 object Anon_E {
   @scala.inline
   def apply(e: Edge, g: DirectedGraph): Anon_E = {
-    val __obj = js.Dynamic.literal(e = e, g = g)
+    val __obj = js.Dynamic.literal(e = e.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_E]
   }

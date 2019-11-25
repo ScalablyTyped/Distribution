@@ -23,10 +23,10 @@ object Fields {
   @scala.inline
   def apply(frequency: String = null, htmlAttributes: String = null, text: String = null, url: String = null): Fields = {
     val __obj = js.Dynamic.literal()
-    if (frequency != null) __obj.updateDynamic("frequency")(frequency)
-    if (htmlAttributes != null) __obj.updateDynamic("htmlAttributes")(htmlAttributes)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (frequency != null) __obj.updateDynamic("frequency")(frequency.asInstanceOf[js.Any])
+    if (htmlAttributes != null) __obj.updateDynamic("htmlAttributes")(htmlAttributes.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fields]
   }
 }

@@ -27,7 +27,7 @@ object SearchCodeResponseItemsItem {
     sha: String,
     url: String
   ): SearchCodeResponseItemsItem = {
-    val __obj = js.Dynamic.literal(git_url = git_url, html_url = html_url, name = name, path = path, repository = repository, score = score, sha = sha, url = url)
+    val __obj = js.Dynamic.literal(git_url = git_url.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], repository = repository.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SearchCodeResponseItemsItem]
   }

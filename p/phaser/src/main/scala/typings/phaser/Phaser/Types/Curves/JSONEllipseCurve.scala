@@ -57,8 +57,8 @@ object JSONEllipseCurve {
     y: Double,
     yRadius: Double
   ): JSONEllipseCurve = {
-    val __obj = js.Dynamic.literal(clockwise = clockwise, endAngle = endAngle, rotation = rotation, startAngle = startAngle, x = x, xRadius = xRadius, y = y, yRadius = yRadius)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(clockwise = clockwise.asInstanceOf[js.Any], endAngle = endAngle.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], startAngle = startAngle.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], xRadius = xRadius.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], yRadius = yRadius.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSONEllipseCurve]
   }
 }

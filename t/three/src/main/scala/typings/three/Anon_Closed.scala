@@ -23,7 +23,7 @@ object Anon_Closed {
     radius: Double,
     tubularSegments: Double
   ): Anon_Closed = {
-    val __obj = js.Dynamic.literal(closed = closed, path = path, radialSegments = radialSegments, radius = radius, tubularSegments = tubularSegments)
+    val __obj = js.Dynamic.literal(closed = closed.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], radialSegments = radialSegments.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], tubularSegments = tubularSegments.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Closed]
   }

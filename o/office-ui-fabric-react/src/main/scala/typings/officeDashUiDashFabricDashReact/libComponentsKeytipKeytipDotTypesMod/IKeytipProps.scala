@@ -93,18 +93,18 @@ object IKeytipProps {
     theme: ITheme = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): IKeytipProps = {
-    val __obj = js.Dynamic.literal(content = content, keySequences = keySequences)
-    if (calloutProps != null) __obj.updateDynamic("calloutProps")(calloutProps)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (!js.isUndefined(hasDynamicChildren)) __obj.updateDynamic("hasDynamicChildren")(hasDynamicChildren)
-    if (!js.isUndefined(hasMenu)) __obj.updateDynamic("hasMenu")(hasMenu)
-    if (offset != null) __obj.updateDynamic("offset")(offset)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], keySequences = keySequences.asInstanceOf[js.Any])
+    if (calloutProps != null) __obj.updateDynamic("calloutProps")(calloutProps.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasDynamicChildren)) __obj.updateDynamic("hasDynamicChildren")(hasDynamicChildren.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasMenu)) __obj.updateDynamic("hasMenu")(hasMenu.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (onExecute != null) __obj.updateDynamic("onExecute")(js.Any.fromFunction2(onExecute))
     if (onReturn != null) __obj.updateDynamic("onReturn")(js.Any.fromFunction2(onReturn))
-    if (overflowSetSequence != null) __obj.updateDynamic("overflowSetSequence")(overflowSetSequence)
+    if (overflowSetSequence != null) __obj.updateDynamic("overflowSetSequence")(overflowSetSequence.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[IKeytipProps]
   }
 }

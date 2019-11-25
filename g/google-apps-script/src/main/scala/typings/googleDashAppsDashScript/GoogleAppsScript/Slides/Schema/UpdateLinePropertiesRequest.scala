@@ -14,9 +14,9 @@ object UpdateLinePropertiesRequest {
   @scala.inline
   def apply(fields: String = null, lineProperties: LineProperties = null, objectId: String = null): UpdateLinePropertiesRequest = {
     val __obj = js.Dynamic.literal()
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (lineProperties != null) __obj.updateDynamic("lineProperties")(lineProperties)
-    if (objectId != null) __obj.updateDynamic("objectId")(objectId)
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (lineProperties != null) __obj.updateDynamic("lineProperties")(lineProperties.asInstanceOf[js.Any])
+    if (objectId != null) __obj.updateDynamic("objectId")(objectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateLinePropertiesRequest]
   }
 }

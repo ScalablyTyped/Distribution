@@ -16,8 +16,8 @@ object SelectionOptions {
     unselectAll: js.UndefOr[Boolean] = js.undefined
   ): SelectionOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(highlightEdges)) __obj.updateDynamic("highlightEdges")(highlightEdges)
-    if (!js.isUndefined(unselectAll)) __obj.updateDynamic("unselectAll")(unselectAll)
+    if (!js.isUndefined(highlightEdges)) __obj.updateDynamic("highlightEdges")(highlightEdges.asInstanceOf[js.Any])
+    if (!js.isUndefined(unselectAll)) __obj.updateDynamic("unselectAll")(unselectAll.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectionOptions]
   }
 }

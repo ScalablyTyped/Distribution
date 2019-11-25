@@ -21,8 +21,8 @@ object InventoryPickup {
   @scala.inline
   def apply(pickupMethod: String = null, pickupSla: String = null): InventoryPickup = {
     val __obj = js.Dynamic.literal()
-    if (pickupMethod != null) __obj.updateDynamic("pickupMethod")(pickupMethod)
-    if (pickupSla != null) __obj.updateDynamic("pickupSla")(pickupSla)
+    if (pickupMethod != null) __obj.updateDynamic("pickupMethod")(pickupMethod.asInstanceOf[js.Any])
+    if (pickupSla != null) __obj.updateDynamic("pickupSla")(pickupSla.asInstanceOf[js.Any])
     __obj.asInstanceOf[InventoryPickup]
   }
 }

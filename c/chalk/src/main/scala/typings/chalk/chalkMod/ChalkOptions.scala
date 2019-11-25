@@ -13,8 +13,8 @@ object ChalkOptions {
   @scala.inline
   def apply(enabled: js.UndefOr[Boolean] = js.undefined, level: Level = null): ChalkOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (level != null) __obj.updateDynamic("level")(level)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChalkOptions]
   }
 }

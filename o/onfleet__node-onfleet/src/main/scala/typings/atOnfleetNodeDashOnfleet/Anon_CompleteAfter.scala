@@ -34,9 +34,9 @@ object Anon_CompleteAfter {
     if (completeAfter != null) __obj.updateDynamic("completeAfter")(completeAfter.asInstanceOf[js.Any])
     if (completeBefore != null) __obj.updateDynamic("completeBefore")(completeBefore.asInstanceOf[js.Any])
     if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (notes != null) __obj.updateDynamic("notes")(notes)
-    if (!js.isUndefined(pickupTask)) __obj.updateDynamic("pickupTask")(pickupTask)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
+    if (!js.isUndefined(pickupTask)) __obj.updateDynamic("pickupTask")(pickupTask.asInstanceOf[js.Any])
     if (recipients != null) __obj.updateDynamic("recipients")(recipients.asInstanceOf[js.Any])
     if (serviceTime != null) __obj.updateDynamic("serviceTime")(serviceTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CompleteAfter]

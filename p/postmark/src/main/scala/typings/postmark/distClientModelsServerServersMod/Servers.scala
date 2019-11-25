@@ -13,7 +13,7 @@ trait Servers extends js.Object {
 object Servers {
   @scala.inline
   def apply(Servers: js.Array[Server], TotalCount: Double): Servers = {
-    val __obj = js.Dynamic.literal(Servers = Servers, TotalCount = TotalCount)
+    val __obj = js.Dynamic.literal(Servers = Servers.asInstanceOf[js.Any], TotalCount = TotalCount.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Servers]
   }

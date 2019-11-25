@@ -27,7 +27,7 @@ object Chainable {
     props: Props,
     `while`: Predicate => T
   ): Chainable[T] = {
-    val __obj = js.Dynamic.literal(applyMiddleware = js.Any.fromFunction1(applyMiddleware), create = js.Any.fromFunction1(create), filter = js.Any.fromFunction1(filter), pipe = js.Any.fromFunction1(pipe), props = props)
+    val __obj = js.Dynamic.literal(applyMiddleware = js.Any.fromFunction1(applyMiddleware), create = js.Any.fromFunction1(create), filter = js.Any.fromFunction1(filter), pipe = js.Any.fromFunction1(pipe), props = props.asInstanceOf[js.Any])
     __obj.updateDynamic("while")(js.Any.fromFunction1(`while`))
     __obj.asInstanceOf[Chainable[T]]
   }

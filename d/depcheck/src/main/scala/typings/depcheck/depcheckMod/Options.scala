@@ -27,13 +27,13 @@ object Options {
     specials: js.Array[Parser] = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (detectors != null) __obj.updateDynamic("detectors")(detectors)
-    if (!js.isUndefined(ignoreBinPackage)) __obj.updateDynamic("ignoreBinPackage")(ignoreBinPackage)
-    if (ignoreDirs != null) __obj.updateDynamic("ignoreDirs")(ignoreDirs)
-    if (ignoreMatches != null) __obj.updateDynamic("ignoreMatches")(ignoreMatches)
-    if (parsers != null) __obj.updateDynamic("parsers")(parsers)
-    if (!js.isUndefined(skipMissing)) __obj.updateDynamic("skipMissing")(skipMissing)
-    if (specials != null) __obj.updateDynamic("specials")(specials)
+    if (detectors != null) __obj.updateDynamic("detectors")(detectors.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreBinPackage)) __obj.updateDynamic("ignoreBinPackage")(ignoreBinPackage.asInstanceOf[js.Any])
+    if (ignoreDirs != null) __obj.updateDynamic("ignoreDirs")(ignoreDirs.asInstanceOf[js.Any])
+    if (ignoreMatches != null) __obj.updateDynamic("ignoreMatches")(ignoreMatches.asInstanceOf[js.Any])
+    if (parsers != null) __obj.updateDynamic("parsers")(parsers.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipMissing)) __obj.updateDynamic("skipMissing")(skipMissing.asInstanceOf[js.Any])
+    if (specials != null) __obj.updateDynamic("specials")(specials.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

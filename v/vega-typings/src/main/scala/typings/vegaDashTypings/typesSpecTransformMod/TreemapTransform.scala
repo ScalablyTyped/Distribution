@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TreemapTransform extends Transforms {
+trait TreemapTransform extends _Transforms {
   var as: js.UndefOr[(Vector6[String | SignalRef]) | SignalRef] = js.undefined
   var field: js.UndefOr[FieldRef] = js.undefined
   var method: js.UndefOr[TreemapMethod | SignalRef] = js.undefined
@@ -47,7 +47,7 @@ object TreemapTransform {
     sort: Compare = null
   ): TreemapTransform = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
@@ -61,7 +61,7 @@ object TreemapTransform {
     if (ratio != null) __obj.updateDynamic("ratio")(ratio.asInstanceOf[js.Any])
     if (round != null) __obj.updateDynamic("round")(round.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreemapTransform]
   }
 }

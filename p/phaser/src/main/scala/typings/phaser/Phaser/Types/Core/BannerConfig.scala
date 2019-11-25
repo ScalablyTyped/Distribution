@@ -27,9 +27,9 @@ object BannerConfig {
     text: String = null
   ): BannerConfig = {
     val __obj = js.Dynamic.literal()
-    if (background != null) __obj.updateDynamic("background")(background)
-    if (!js.isUndefined(hidePhaser)) __obj.updateDynamic("hidePhaser")(hidePhaser)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidePhaser)) __obj.updateDynamic("hidePhaser")(hidePhaser.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[BannerConfig]
   }
 }

@@ -27,11 +27,11 @@ object SelectInputProps {
     onSelect: /* item */ T => Unit = null
   ): SelectInputProps[T] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus)
-    if (indicatorComponent != null) __obj.updateDynamic("indicatorComponent")(indicatorComponent)
+    if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus.asInstanceOf[js.Any])
+    if (indicatorComponent != null) __obj.updateDynamic("indicatorComponent")(indicatorComponent.asInstanceOf[js.Any])
     if (initialIndex != null) __obj.updateDynamic("initialIndex")(initialIndex.asInstanceOf[js.Any])
-    if (itemComponent != null) __obj.updateDynamic("itemComponent")(itemComponent)
-    if (items != null) __obj.updateDynamic("items")(items)
+    if (itemComponent != null) __obj.updateDynamic("itemComponent")(itemComponent.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
     __obj.asInstanceOf[SelectInputProps[T]]

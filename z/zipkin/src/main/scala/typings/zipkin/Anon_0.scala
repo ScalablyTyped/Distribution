@@ -24,10 +24,10 @@ object Anon_0 {
     `X-B3-Sampled`: `1` | `0` = null
   ): Anon_0 = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("X-B3-SpanId")(`X-B3-SpanId`)
-    __obj.updateDynamic("X-B3-TraceId")(`X-B3-TraceId`)
+    __obj.updateDynamic("X-B3-SpanId")(`X-B3-SpanId`.asInstanceOf[js.Any])
+    __obj.updateDynamic("X-B3-TraceId")(`X-B3-TraceId`.asInstanceOf[js.Any])
     if (`X-B3-Flags` != null) __obj.updateDynamic("X-B3-Flags")(`X-B3-Flags`.asInstanceOf[js.Any])
-    if (`X-B3-ParentSpanId` != null) __obj.updateDynamic("X-B3-ParentSpanId")(`X-B3-ParentSpanId`)
+    if (`X-B3-ParentSpanId` != null) __obj.updateDynamic("X-B3-ParentSpanId")(`X-B3-ParentSpanId`.asInstanceOf[js.Any])
     if (`X-B3-Sampled` != null) __obj.updateDynamic("X-B3-Sampled")(`X-B3-Sampled`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_0]
   }

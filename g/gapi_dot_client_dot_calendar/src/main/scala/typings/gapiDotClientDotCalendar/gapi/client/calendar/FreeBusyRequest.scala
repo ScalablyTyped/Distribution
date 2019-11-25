@@ -35,10 +35,10 @@ object FreeBusyRequest {
     val __obj = js.Dynamic.literal()
     if (calendarExpansionMax != null) __obj.updateDynamic("calendarExpansionMax")(calendarExpansionMax.asInstanceOf[js.Any])
     if (groupExpansionMax != null) __obj.updateDynamic("groupExpansionMax")(groupExpansionMax.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (timeMax != null) __obj.updateDynamic("timeMax")(timeMax)
-    if (timeMin != null) __obj.updateDynamic("timeMin")(timeMin)
-    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (timeMax != null) __obj.updateDynamic("timeMax")(timeMax.asInstanceOf[js.Any])
+    if (timeMin != null) __obj.updateDynamic("timeMin")(timeMin.asInstanceOf[js.Any])
+    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone.asInstanceOf[js.Any])
     __obj.asInstanceOf[FreeBusyRequest]
   }
 }

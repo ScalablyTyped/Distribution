@@ -49,9 +49,9 @@ object Results {
     rowsAffected: Int | Double = null
   ): Results[T] = {
     val __obj = js.Dynamic.literal()
-    if (batchErrors != null) __obj.updateDynamic("batchErrors")(batchErrors)
-    if (dmlRowCounts != null) __obj.updateDynamic("dmlRowCounts")(dmlRowCounts)
-    if (outBinds != null) __obj.updateDynamic("outBinds")(outBinds)
+    if (batchErrors != null) __obj.updateDynamic("batchErrors")(batchErrors.asInstanceOf[js.Any])
+    if (dmlRowCounts != null) __obj.updateDynamic("dmlRowCounts")(dmlRowCounts.asInstanceOf[js.Any])
+    if (outBinds != null) __obj.updateDynamic("outBinds")(outBinds.asInstanceOf[js.Any])
     if (rowsAffected != null) __obj.updateDynamic("rowsAffected")(rowsAffected.asInstanceOf[js.Any])
     __obj.asInstanceOf[Results[T]]
   }

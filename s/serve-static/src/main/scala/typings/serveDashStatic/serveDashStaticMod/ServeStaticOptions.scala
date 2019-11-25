@@ -84,16 +84,16 @@ object ServeStaticOptions {
     setHeaders: (/* res */ Response[_], /* path */ String, /* stat */ js.Any) => _ = null
   ): ServeStaticOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cacheControl)) __obj.updateDynamic("cacheControl")(cacheControl)
-    if (dotfiles != null) __obj.updateDynamic("dotfiles")(dotfiles)
-    if (!js.isUndefined(etag)) __obj.updateDynamic("etag")(etag)
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
-    if (!js.isUndefined(fallthrough)) __obj.updateDynamic("fallthrough")(fallthrough)
-    if (!js.isUndefined(immutable)) __obj.updateDynamic("immutable")(immutable)
+    if (!js.isUndefined(cacheControl)) __obj.updateDynamic("cacheControl")(cacheControl.asInstanceOf[js.Any])
+    if (dotfiles != null) __obj.updateDynamic("dotfiles")(dotfiles.asInstanceOf[js.Any])
+    if (!js.isUndefined(etag)) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
+    if (!js.isUndefined(fallthrough)) __obj.updateDynamic("fallthrough")(fallthrough.asInstanceOf[js.Any])
+    if (!js.isUndefined(immutable)) __obj.updateDynamic("immutable")(immutable.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(lastModified)) __obj.updateDynamic("lastModified")(lastModified)
+    if (!js.isUndefined(lastModified)) __obj.updateDynamic("lastModified")(lastModified.asInstanceOf[js.Any])
     if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
-    if (!js.isUndefined(redirect)) __obj.updateDynamic("redirect")(redirect)
+    if (!js.isUndefined(redirect)) __obj.updateDynamic("redirect")(redirect.asInstanceOf[js.Any])
     if (setHeaders != null) __obj.updateDynamic("setHeaders")(js.Any.fromFunction3(setHeaders))
     __obj.asInstanceOf[ServeStaticOptions]
   }

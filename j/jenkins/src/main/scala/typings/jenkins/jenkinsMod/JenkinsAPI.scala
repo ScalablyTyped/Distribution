@@ -29,7 +29,7 @@ object JenkinsAPI {
     queue: Anon_CallbackCancel,
     view: Anon_Add
   ): JenkinsAPI = {
-    val __obj = js.Dynamic.literal(build = build, info = js.Any.fromFunction1(info), job = job, node = node, queue = queue, view = view)
+    val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], info = js.Any.fromFunction1(info), job = job.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], queue = queue.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[JenkinsAPI]
   }

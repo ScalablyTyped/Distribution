@@ -15,7 +15,7 @@ object PlotStreamgraphDragDropGuideBoxOptions {
   @scala.inline
   def apply(default: PlotStreamgraphDragDropGuideBoxDefaultOptions = null): PlotStreamgraphDragDropGuideBoxOptions = {
     val __obj = js.Dynamic.literal()
-    if (default != null) __obj.updateDynamic("default")(default)
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotStreamgraphDragDropGuideBoxOptions]
   }
 }

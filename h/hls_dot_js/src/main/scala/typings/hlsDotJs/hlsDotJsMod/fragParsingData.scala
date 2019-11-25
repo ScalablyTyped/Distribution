@@ -31,8 +31,8 @@ object fragParsingData {
     startPTS: Double,
     `type`: String
   ): fragParsingData = {
-    val __obj = js.Dynamic.literal(endDTS = endDTS, endPTS = endPTS, frag = frag, id = id, mdat = mdat, moof = moof, nb = nb, startDTS = startDTS, startPTS = startPTS)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(endDTS = endDTS.asInstanceOf[js.Any], endPTS = endPTS.asInstanceOf[js.Any], frag = frag.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], mdat = mdat.asInstanceOf[js.Any], moof = moof.asInstanceOf[js.Any], nb = nb.asInstanceOf[js.Any], startDTS = startDTS.asInstanceOf[js.Any], startPTS = startPTS.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[fragParsingData]
   }
 }

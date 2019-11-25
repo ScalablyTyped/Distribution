@@ -17,8 +17,8 @@ object SaveReportEventArgs {
   @scala.inline
   def apply(saveReportSetting: js.Any = null, targetControl: js.Any = null): SaveReportEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (saveReportSetting != null) __obj.updateDynamic("saveReportSetting")(saveReportSetting)
-    if (targetControl != null) __obj.updateDynamic("targetControl")(targetControl)
+    if (saveReportSetting != null) __obj.updateDynamic("saveReportSetting")(saveReportSetting.asInstanceOf[js.Any])
+    if (targetControl != null) __obj.updateDynamic("targetControl")(targetControl.asInstanceOf[js.Any])
     __obj.asInstanceOf[SaveReportEventArgs]
   }
 }

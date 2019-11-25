@@ -95,19 +95,19 @@ object ICoachmarkStyleProps {
     transformOrigin: String = null,
     width: String = null
   ): ICoachmarkStyleProps = {
-    val __obj = js.Dynamic.literal(isBeaconAnimating = isBeaconAnimating, isCollapsed = isCollapsed, isMeasured = isMeasured, isMeasuring = isMeasuring)
-    if (beaconColorOne != null) __obj.updateDynamic("beaconColorOne")(beaconColorOne)
-    if (beaconColorTwo != null) __obj.updateDynamic("beaconColorTwo")(beaconColorTwo)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (delayBeforeCoachmarkAnimation != null) __obj.updateDynamic("delayBeforeCoachmarkAnimation")(delayBeforeCoachmarkAnimation)
-    if (entityHostHeight != null) __obj.updateDynamic("entityHostHeight")(entityHostHeight)
-    if (entityHostWidth != null) __obj.updateDynamic("entityHostWidth")(entityHostWidth)
-    if (height != null) __obj.updateDynamic("height")(height)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
-    if (transformOrigin != null) __obj.updateDynamic("transformOrigin")(transformOrigin)
-    if (width != null) __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(isBeaconAnimating = isBeaconAnimating.asInstanceOf[js.Any], isCollapsed = isCollapsed.asInstanceOf[js.Any], isMeasured = isMeasured.asInstanceOf[js.Any], isMeasuring = isMeasuring.asInstanceOf[js.Any])
+    if (beaconColorOne != null) __obj.updateDynamic("beaconColorOne")(beaconColorOne.asInstanceOf[js.Any])
+    if (beaconColorTwo != null) __obj.updateDynamic("beaconColorTwo")(beaconColorTwo.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (delayBeforeCoachmarkAnimation != null) __obj.updateDynamic("delayBeforeCoachmarkAnimation")(delayBeforeCoachmarkAnimation.asInstanceOf[js.Any])
+    if (entityHostHeight != null) __obj.updateDynamic("entityHostHeight")(entityHostHeight.asInstanceOf[js.Any])
+    if (entityHostWidth != null) __obj.updateDynamic("entityHostWidth")(entityHostWidth.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    if (transformOrigin != null) __obj.updateDynamic("transformOrigin")(transformOrigin.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICoachmarkStyleProps]
   }
 }

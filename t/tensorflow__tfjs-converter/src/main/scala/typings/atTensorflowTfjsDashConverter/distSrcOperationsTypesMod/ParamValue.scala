@@ -13,7 +13,7 @@ object ParamValue {
   @scala.inline
   def apply(`type`: ParamType, value: ValueType = null): ParamValue = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamValue]
   }

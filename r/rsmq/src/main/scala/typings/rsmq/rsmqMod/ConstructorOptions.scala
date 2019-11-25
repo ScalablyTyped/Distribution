@@ -26,12 +26,12 @@ object ConstructorOptions {
     realtime: js.UndefOr[Boolean] = js.undefined
   ): ConstructorOptions = {
     val __obj = js.Dynamic.literal()
-    if (client != null) __obj.updateDynamic("client")(client)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (ns != null) __obj.updateDynamic("ns")(ns)
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (client != null) __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (ns != null) __obj.updateDynamic("ns")(ns.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (!js.isUndefined(realtime)) __obj.updateDynamic("realtime")(realtime)
+    if (!js.isUndefined(realtime)) __obj.updateDynamic("realtime")(realtime.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConstructorOptions]
   }
 }

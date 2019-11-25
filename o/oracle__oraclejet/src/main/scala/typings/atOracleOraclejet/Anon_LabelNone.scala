@@ -12,7 +12,7 @@ object Anon_LabelNone {
   @scala.inline
   def apply(labelNone: String = null): Anon_LabelNone = {
     val __obj = js.Dynamic.literal()
-    if (labelNone != null) __obj.updateDynamic("labelNone")(labelNone)
+    if (labelNone != null) __obj.updateDynamic("labelNone")(labelNone.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_LabelNone]
   }
 }

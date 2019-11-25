@@ -17,8 +17,8 @@ object IAny {
   @scala.inline
   def apply(type_url: String = null, value: Uint8Array = null): IAny = {
     val __obj = js.Dynamic.literal()
-    if (type_url != null) __obj.updateDynamic("type_url")(type_url)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (type_url != null) __obj.updateDynamic("type_url")(type_url.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAny]
   }
 }

@@ -27,12 +27,12 @@ object DownloadOptions {
   ): DownloadOptions = {
     val __obj = js.Dynamic.literal()
     if (chunkSizeIncrement != null) __obj.updateDynamic("chunkSizeIncrement")(chunkSizeIncrement.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end)
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (initialChunkSize != null) __obj.updateDynamic("initialChunkSize")(initialChunkSize.asInstanceOf[js.Any])
     if (maxChunkSize != null) __obj.updateDynamic("maxChunkSize")(maxChunkSize.asInstanceOf[js.Any])
     if (maxConnections != null) __obj.updateDynamic("maxConnections")(maxConnections.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnCiphertext)) __obj.updateDynamic("returnCiphertext")(returnCiphertext)
-    if (start != null) __obj.updateDynamic("start")(start)
+    if (!js.isUndefined(returnCiphertext)) __obj.updateDynamic("returnCiphertext")(returnCiphertext.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownloadOptions]
   }
 }

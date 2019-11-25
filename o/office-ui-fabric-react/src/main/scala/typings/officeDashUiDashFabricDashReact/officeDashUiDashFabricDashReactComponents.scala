@@ -1,13 +1,7 @@
 package typings.officeDashUiDashFabricDashReact
 
-import typings.atUifabricUtilities.libBaseComponentDotTypesMod.IBaseProps
 import typings.atUifabricUtilities.libIRenderComponentMod.IRenderComponent
-import typings.officeDashUiDashFabricDashReact.libComponentsExtendedPickerBaseExtendedPickerDotTypesMod.IBaseExtendedPickerProps
-import typings.officeDashUiDashFabricDashReact.libComponentsFloatingPickerBaseFloatingPickerDotTypesMod.IBaseFloatingPickerProps
 import typings.officeDashUiDashFabricDashReact.libComponentsKeytipDataKeytipDataDotTypesMod.IKeytipDataProps
-import typings.officeDashUiDashFabricDashReact.libComponentsPickersBasePickerDotTypesMod.IBasePickerProps
-import typings.officeDashUiDashFabricDashReact.libComponentsSelectedItemsListBaseSelectedItemsListDotTypesMod.IBaseSelectedItemsListProps
-import typings.officeDashUiDashFabricDashReact.libUtilitiesGridGridCellDotTypesMod.IGridCellProps
 import typings.react.reactMod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -29,25 +23,35 @@ object officeDashUiDashFabricDashReactComponents extends officeDashUiDashFabricD
   @scala.inline
   def BaseButton: ComponentType[BaseButtonProps] = js.constructorOf[typings.officeDashUiDashFabricDashReact.libButtonMod.BaseButton].asInstanceOf[typings.react.reactMod.ComponentType[BaseButtonProps]]
   @scala.inline
-  def BaseComponent[TProps /* <: IBaseProps[_] */, TState]: ComponentType[TProps] = js.constructorOf[typings.officeDashUiDashFabricDashReact.libUtilitiesMod.BaseComponent[TProps, TState]].asInstanceOf[typings.react.reactMod.ComponentType[TProps]]
+  def BaseComponent[TState]: ComponentType[BaseComponentProps[_]] = js.constructorOf[typings.officeDashUiDashFabricDashReact.libUtilitiesMod.BaseComponent[typings.atUifabricUtilities.libBaseComponentDotTypesMod.IBaseProps[_], TState]].asInstanceOf[typings.react.reactMod.ComponentType[BaseComponentProps[_]]]
   @scala.inline
   def BaseExtendedPeoplePicker: ComponentType[BaseExtendedPeoplePickerProps] = js.constructorOf[typings.officeDashUiDashFabricDashReact.libExtendedPickerMod.BaseExtendedPeoplePicker].asInstanceOf[typings.react.reactMod.ComponentType[BaseExtendedPeoplePickerProps]]
   @scala.inline
-  def BaseExtendedPicker[T, P /* <: IBaseExtendedPickerProps[T] */]: ComponentType[P] = js.constructorOf[typings.officeDashUiDashFabricDashReact.libExtendedPickerMod.BaseExtendedPicker[T, P]].asInstanceOf[typings.react.reactMod.ComponentType[P]]
+  def BaseExtendedPicker[T]: ComponentType[BaseExtendedPickerProps[T]] = js.constructorOf[typings.officeDashUiDashFabricDashReact.libExtendedPickerMod.BaseExtendedPicker[
+  T, 
+  typings.officeDashUiDashFabricDashReact.libComponentsExtendedPickerBaseExtendedPickerDotTypesMod.IBaseExtendedPickerProps[T]]].asInstanceOf[typings.react.reactMod.ComponentType[BaseExtendedPickerProps[T]]]
   @scala.inline
   def BaseFloatingPeoplePicker: ComponentType[BaseFloatingPeoplePickerProps] = js.constructorOf[typings.officeDashUiDashFabricDashReact.libFloatingPickerMod.BaseFloatingPeoplePicker].asInstanceOf[typings.react.reactMod.ComponentType[BaseFloatingPeoplePickerProps]]
   @scala.inline
-  def BaseFloatingPicker[T, P /* <: IBaseFloatingPickerProps[T] */]: ComponentType[P] = js.constructorOf[typings.officeDashUiDashFabricDashReact.libFloatingPickerMod.BaseFloatingPicker[T, P]].asInstanceOf[typings.react.reactMod.ComponentType[P]]
+  def BaseFloatingPicker[T]: ComponentType[BaseFloatingPickerProps[T]] = js.constructorOf[typings.officeDashUiDashFabricDashReact.libFloatingPickerMod.BaseFloatingPicker[
+  T, 
+  typings.officeDashUiDashFabricDashReact.libComponentsFloatingPickerBaseFloatingPickerDotTypesMod.IBaseFloatingPickerProps[T]]].asInstanceOf[typings.react.reactMod.ComponentType[BaseFloatingPickerProps[T]]]
   @scala.inline
   def BasePeoplePicker: ComponentType[BasePeoplePickerProps] = js.constructorOf[typings.officeDashUiDashFabricDashReact.libPickersMod.BasePeoplePicker].asInstanceOf[typings.react.reactMod.ComponentType[BasePeoplePickerProps]]
   @scala.inline
   def BasePeopleSelectedItemsList: ComponentType[BasePeopleSelectedItemsListProps] = js.constructorOf[typings.officeDashUiDashFabricDashReact.libSelectedItemsListMod.BasePeopleSelectedItemsList].asInstanceOf[typings.react.reactMod.ComponentType[BasePeopleSelectedItemsListProps]]
   @scala.inline
-  def BasePicker[T, P /* <: IBasePickerProps[T] */]: ComponentType[P] = js.constructorOf[typings.officeDashUiDashFabricDashReact.libPickersMod.BasePicker[T, P]].asInstanceOf[typings.react.reactMod.ComponentType[P]]
+  def BasePicker[T]: ComponentType[BasePickerProps[T]] = js.constructorOf[typings.officeDashUiDashFabricDashReact.libPickersMod.BasePicker[
+  T, 
+  typings.officeDashUiDashFabricDashReact.libComponentsPickersBasePickerDotTypesMod.IBasePickerProps[T]]].asInstanceOf[typings.react.reactMod.ComponentType[BasePickerProps[T]]]
   @scala.inline
-  def BasePickerListBelow[T, P /* <: IBasePickerProps[T] */]: ComponentType[P] = js.constructorOf[typings.officeDashUiDashFabricDashReact.libPickersMod.BasePickerListBelow[T, P]].asInstanceOf[typings.react.reactMod.ComponentType[P]]
+  def BasePickerListBelow[T]: ComponentType[BasePickerListBelowProps[T]] = js.constructorOf[typings.officeDashUiDashFabricDashReact.libPickersMod.BasePickerListBelow[
+  T, 
+  typings.officeDashUiDashFabricDashReact.libComponentsPickersBasePickerDotTypesMod.IBasePickerProps[T]]].asInstanceOf[typings.react.reactMod.ComponentType[BasePickerListBelowProps[T]]]
   @scala.inline
-  def BaseSelectedItemsList[T, P /* <: IBaseSelectedItemsListProps[T] */]: ComponentType[P] = js.constructorOf[typings.officeDashUiDashFabricDashReact.libSelectedItemsListMod.BaseSelectedItemsList[T, P]].asInstanceOf[typings.react.reactMod.ComponentType[P]]
+  def BaseSelectedItemsList[T]: ComponentType[BaseSelectedItemsListProps[T]] = js.constructorOf[typings.officeDashUiDashFabricDashReact.libSelectedItemsListMod.BaseSelectedItemsList[
+  T, 
+  typings.officeDashUiDashFabricDashReact.libComponentsSelectedItemsListBaseSelectedItemsListDotTypesMod.IBaseSelectedItemsListProps[T]]].asInstanceOf[typings.react.reactMod.ComponentType[BaseSelectedItemsListProps[T]]]
   @scala.inline
   def Breadcrumb: ComponentType[BreadcrumbProps] = typings.officeDashUiDashFabricDashReact.libBreadcrumbMod.Breadcrumb.asInstanceOf[typings.react.reactMod.ComponentType[BreadcrumbProps]]
   @scala.inline
@@ -217,7 +221,9 @@ object officeDashUiDashFabricDashReactComponents extends officeDashUiDashFabricD
   @scala.inline
   def Grid: ComponentType[GridProps] = typings.officeDashUiDashFabricDashReact.libGridMod.Grid.asInstanceOf[typings.react.reactMod.ComponentType[GridProps]]
   @scala.inline
-  def GridCell[T, P /* <: IGridCellProps[T] */]: ComponentType[P] = js.constructorOf[typings.officeDashUiDashFabricDashReact.libGridMod.GridCell[T, P]].asInstanceOf[typings.react.reactMod.ComponentType[P]]
+  def GridCell[T]: ComponentType[GridCellProps[T]] = js.constructorOf[typings.officeDashUiDashFabricDashReact.libGridMod.GridCell[
+  T, 
+  typings.officeDashUiDashFabricDashReact.libUtilitiesGridGridCellDotTypesMod.IGridCellProps[T]]].asInstanceOf[typings.react.reactMod.ComponentType[GridCellProps[T]]]
   @scala.inline
   def GroupFooter: ComponentType[GroupFooterProps] = typings.officeDashUiDashFabricDashReact.libGroupedListMod.GroupFooter.asInstanceOf[typings.react.reactMod.ComponentType[GroupFooterProps]]
   @scala.inline

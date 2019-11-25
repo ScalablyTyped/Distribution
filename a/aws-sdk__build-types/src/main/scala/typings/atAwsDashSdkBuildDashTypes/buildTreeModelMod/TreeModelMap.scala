@@ -2,7 +2,6 @@ package typings.atAwsDashSdkBuildDashTypes.buildTreeModelMod
 
 import typings.atAwsDashSdkTypes.atAwsDashSdkTypesStrings.map
 import typings.atAwsDashSdkTypes.buildProtocolMod.Map
-import typings.atAwsDashSdkTypes.buildProtocolMod.SerializationType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,17 +22,15 @@ object TreeModelMap {
     documentation: String,
     key: TreeModelMember,
     name: String,
-    `type`: SerializationType,
-    type_Map: map,
+    `type`: map,
     value: TreeModelMember,
     flattened: js.UndefOr[Boolean] = js.undefined,
     sensitive: js.UndefOr[Boolean] = js.undefined
   ): TreeModelMap = {
-    val __obj = js.Dynamic.literal(documentation = documentation, key = key, name = name, value = value)
-    __obj.updateDynamic("type")(`type`)
-    __obj.updateDynamic("type")(type_Map)
-    if (!js.isUndefined(flattened)) __obj.updateDynamic("flattened")(flattened)
-    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive)
+    val __obj = js.Dynamic.literal(documentation = documentation.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(flattened)) __obj.updateDynamic("flattened")(flattened.asInstanceOf[js.Any])
+    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeModelMap]
   }
 }

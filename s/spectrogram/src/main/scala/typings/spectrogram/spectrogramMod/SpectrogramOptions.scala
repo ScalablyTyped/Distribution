@@ -24,8 +24,8 @@ object SpectrogramOptions {
     colors: /* steps */ Double => js.Array[String | CanvasGradient | CanvasPattern] = null
   ): SpectrogramOptions = {
     val __obj = js.Dynamic.literal()
-    if (audio != null) __obj.updateDynamic("audio")(audio)
-    if (canvas != null) __obj.updateDynamic("canvas")(canvas)
+    if (audio != null) __obj.updateDynamic("audio")(audio.asInstanceOf[js.Any])
+    if (canvas != null) __obj.updateDynamic("canvas")(canvas.asInstanceOf[js.Any])
     if (colors != null) __obj.updateDynamic("colors")(js.Any.fromFunction1(colors))
     __obj.asInstanceOf[SpectrogramOptions]
   }

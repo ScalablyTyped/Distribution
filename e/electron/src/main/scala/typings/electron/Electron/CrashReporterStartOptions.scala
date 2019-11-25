@@ -46,12 +46,12 @@ object CrashReporterStartOptions {
     productName: String = null,
     uploadToServer: js.UndefOr[Boolean] = js.undefined
   ): CrashReporterStartOptions = {
-    val __obj = js.Dynamic.literal(companyName = companyName, submitURL = submitURL)
-    if (crashesDirectory != null) __obj.updateDynamic("crashesDirectory")(crashesDirectory)
-    if (extra != null) __obj.updateDynamic("extra")(extra)
-    if (!js.isUndefined(ignoreSystemCrashHandler)) __obj.updateDynamic("ignoreSystemCrashHandler")(ignoreSystemCrashHandler)
-    if (productName != null) __obj.updateDynamic("productName")(productName)
-    if (!js.isUndefined(uploadToServer)) __obj.updateDynamic("uploadToServer")(uploadToServer)
+    val __obj = js.Dynamic.literal(companyName = companyName.asInstanceOf[js.Any], submitURL = submitURL.asInstanceOf[js.Any])
+    if (crashesDirectory != null) __obj.updateDynamic("crashesDirectory")(crashesDirectory.asInstanceOf[js.Any])
+    if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreSystemCrashHandler)) __obj.updateDynamic("ignoreSystemCrashHandler")(ignoreSystemCrashHandler.asInstanceOf[js.Any])
+    if (productName != null) __obj.updateDynamic("productName")(productName.asInstanceOf[js.Any])
+    if (!js.isUndefined(uploadToServer)) __obj.updateDynamic("uploadToServer")(uploadToServer.asInstanceOf[js.Any])
     __obj.asInstanceOf[CrashReporterStartOptions]
   }
 }

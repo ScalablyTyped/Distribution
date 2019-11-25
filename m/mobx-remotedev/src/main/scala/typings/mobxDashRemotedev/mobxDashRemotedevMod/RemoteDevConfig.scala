@@ -35,13 +35,13 @@ object RemoteDevConfig {
     remote: js.UndefOr[Boolean] = js.undefined
   ): RemoteDevConfig = {
     val __obj = js.Dynamic.literal()
-    if (filters != null) __obj.updateDynamic("filters")(filters)
-    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global)
-    if (hostname != null) __obj.updateDynamic("hostname")(hostname)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(onlyActions)) __obj.updateDynamic("onlyActions")(onlyActions)
+    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
+    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global.asInstanceOf[js.Any])
+    if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(onlyActions)) __obj.updateDynamic("onlyActions")(onlyActions.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (!js.isUndefined(remote)) __obj.updateDynamic("remote")(remote)
+    if (!js.isUndefined(remote)) __obj.updateDynamic("remote")(remote.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteDevConfig]
   }
 }

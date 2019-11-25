@@ -54,7 +54,7 @@ object _sha_64 {
     toHex: js.Any => js.Any,
     toWord: js.Any => js.Any
   ): _sha_64 = {
-    val __obj = js.Dynamic.literal(digest = js.Any.fromFunction4(digest), outputTypes = outputTypes, stringToUtf8 = js.Any.fromFunction1(stringToUtf8), toBase64 = js.Any.fromFunction1(toBase64), toHex = js.Any.fromFunction1(toHex), toWord = js.Any.fromFunction1(toWord))
+    val __obj = js.Dynamic.literal(digest = js.Any.fromFunction4(digest), outputTypes = outputTypes.asInstanceOf[js.Any], stringToUtf8 = js.Any.fromFunction1(stringToUtf8), toBase64 = js.Any.fromFunction1(toBase64), toHex = js.Any.fromFunction1(toHex), toWord = js.Any.fromFunction1(toWord))
   
     __obj.asInstanceOf[_sha_64]
   }

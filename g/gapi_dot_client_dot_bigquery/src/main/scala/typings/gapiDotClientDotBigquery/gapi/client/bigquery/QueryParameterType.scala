@@ -22,9 +22,9 @@ object QueryParameterType {
     `type`: String = null
   ): QueryParameterType = {
     val __obj = js.Dynamic.literal()
-    if (arrayType != null) __obj.updateDynamic("arrayType")(arrayType)
-    if (structTypes != null) __obj.updateDynamic("structTypes")(structTypes)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (arrayType != null) __obj.updateDynamic("arrayType")(arrayType.asInstanceOf[js.Any])
+    if (structTypes != null) __obj.updateDynamic("structTypes")(structTypes.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryParameterType]
   }
 }

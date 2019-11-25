@@ -20,9 +20,9 @@ object InitializeOptions {
     parameterOverrides: Record[String, String] = null
   ): InitializeOptions = {
     val __obj = js.Dynamic.literal()
-    if (cacheName != null) __obj.updateDynamic("cacheName")(cacheName)
+    if (cacheName != null) __obj.updateDynamic("cacheName")(cacheName.asInstanceOf[js.Any])
     if (hitFilter != null) __obj.updateDynamic("hitFilter")(js.Any.fromFunction1(hitFilter))
-    if (parameterOverrides != null) __obj.updateDynamic("parameterOverrides")(parameterOverrides)
+    if (parameterOverrides != null) __obj.updateDynamic("parameterOverrides")(parameterOverrides.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitializeOptions]
   }
 }

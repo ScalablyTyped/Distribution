@@ -78,19 +78,19 @@ object Variant {
     variantSetId: String = null
   ): Variant = {
     val __obj = js.Dynamic.literal()
-    if (alternateBases != null) __obj.updateDynamic("alternateBases")(alternateBases)
-    if (calls != null) __obj.updateDynamic("calls")(calls)
-    if (created != null) __obj.updateDynamic("created")(created)
-    if (end != null) __obj.updateDynamic("end")(end)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (info != null) __obj.updateDynamic("info")(info)
-    if (names != null) __obj.updateDynamic("names")(names)
+    if (alternateBases != null) __obj.updateDynamic("alternateBases")(alternateBases.asInstanceOf[js.Any])
+    if (calls != null) __obj.updateDynamic("calls")(calls.asInstanceOf[js.Any])
+    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
+    if (names != null) __obj.updateDynamic("names")(names.asInstanceOf[js.Any])
     if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
-    if (referenceBases != null) __obj.updateDynamic("referenceBases")(referenceBases)
-    if (referenceName != null) __obj.updateDynamic("referenceName")(referenceName)
-    if (start != null) __obj.updateDynamic("start")(start)
-    if (variantSetId != null) __obj.updateDynamic("variantSetId")(variantSetId)
+    if (referenceBases != null) __obj.updateDynamic("referenceBases")(referenceBases.asInstanceOf[js.Any])
+    if (referenceName != null) __obj.updateDynamic("referenceName")(referenceName.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (variantSetId != null) __obj.updateDynamic("variantSetId")(variantSetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Variant]
   }
 }

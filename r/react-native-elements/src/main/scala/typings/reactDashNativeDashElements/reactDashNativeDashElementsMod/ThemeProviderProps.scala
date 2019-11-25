@@ -15,7 +15,7 @@ object ThemeProviderProps {
   def apply[T](children: ReactNode = null, theme: Theme[T] = null): ThemeProviderProps[T] = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThemeProviderProps[T]]
   }
 }

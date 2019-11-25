@@ -39,13 +39,13 @@ object Report {
     startTime: String = null
   ): Report = {
     val __obj = js.Dynamic.literal()
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
-    if (downloadUrl != null) __obj.updateDynamic("downloadUrl")(downloadUrl)
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (jobExpireTime != null) __obj.updateDynamic("jobExpireTime")(jobExpireTime)
-    if (jobId != null) __obj.updateDynamic("jobId")(jobId)
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
+    if (downloadUrl != null) __obj.updateDynamic("downloadUrl")(downloadUrl.asInstanceOf[js.Any])
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (jobExpireTime != null) __obj.updateDynamic("jobExpireTime")(jobExpireTime.asInstanceOf[js.Any])
+    if (jobId != null) __obj.updateDynamic("jobId")(jobId.asInstanceOf[js.Any])
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[Report]
   }
 }

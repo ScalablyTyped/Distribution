@@ -18,7 +18,7 @@ object DevicesLongRunningOperationResponse {
   @scala.inline
   def apply(perDeviceStatus: js.Array[OperationPerDevice] = null, successCount: Int | Double = null): DevicesLongRunningOperationResponse = {
     val __obj = js.Dynamic.literal()
-    if (perDeviceStatus != null) __obj.updateDynamic("perDeviceStatus")(perDeviceStatus)
+    if (perDeviceStatus != null) __obj.updateDynamic("perDeviceStatus")(perDeviceStatus.asInstanceOf[js.Any])
     if (successCount != null) __obj.updateDynamic("successCount")(successCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[DevicesLongRunningOperationResponse]
   }

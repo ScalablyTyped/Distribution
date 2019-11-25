@@ -19,8 +19,8 @@ object CheckInfo {
   @scala.inline
   def apply(consumerInfo: ConsumerInfo = null, unusedArguments: js.Array[String] = null): CheckInfo = {
     val __obj = js.Dynamic.literal()
-    if (consumerInfo != null) __obj.updateDynamic("consumerInfo")(consumerInfo)
-    if (unusedArguments != null) __obj.updateDynamic("unusedArguments")(unusedArguments)
+    if (consumerInfo != null) __obj.updateDynamic("consumerInfo")(consumerInfo.asInstanceOf[js.Any])
+    if (unusedArguments != null) __obj.updateDynamic("unusedArguments")(unusedArguments.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckInfo]
   }
 }

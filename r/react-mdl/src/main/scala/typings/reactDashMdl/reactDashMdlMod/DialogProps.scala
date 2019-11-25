@@ -17,14 +17,12 @@ object DialogProps {
   def apply(
     AllHTMLAttributes: AllHTMLAttributes[js.Any] = null,
     ClassAttributes: ClassAttributes[js.Any] = null,
-    onCancel: /* e */ js.Any => Unit = null,
-    open: js.UndefOr[Boolean] = js.undefined
+    onCancel: /* e */ js.Any => Unit = null
   ): DialogProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (onCancel != null) __obj.updateDynamic("onCancel")(js.Any.fromFunction1(onCancel))
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
     __obj.asInstanceOf[DialogProps]
   }
 }

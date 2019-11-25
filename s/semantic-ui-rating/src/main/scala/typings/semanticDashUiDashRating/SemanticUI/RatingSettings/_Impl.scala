@@ -97,7 +97,7 @@ object _Impl {
     silent: Boolean,
     verbose: Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal(className = className, clearable = clearable.asInstanceOf[js.Any], debug = debug, error = error, fireOnInit = fireOnInit, initialRating = initialRating, interactive = interactive, name = name, namespace = namespace, onRate = js.Any.fromFunction2(onRate), performance = performance, selector = selector, silent = silent, verbose = verbose)
+    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], clearable = clearable.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], fireOnInit = fireOnInit.asInstanceOf[js.Any], initialRating = initialRating.asInstanceOf[js.Any], interactive = interactive.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], onRate = js.Any.fromFunction2(onRate), performance = performance.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_Impl]
   }

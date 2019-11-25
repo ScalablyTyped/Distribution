@@ -43,22 +43,22 @@ object SliderOptions {
     values: js.Array[Double] = null
   ): SliderOptions = {
     val __obj = js.Dynamic.literal()
-    if (animate != null) __obj.updateDynamic("animate")(animate)
+    if (animate != null) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction2(change))
-    if (classes != null) __obj.updateDynamic("classes")(classes)
+    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
     if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2(create))
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation)
-    if (range != null) __obj.updateDynamic("range")(range)
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (slide != null) __obj.updateDynamic("slide")(js.Any.fromFunction2(slide))
     if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction2(start))
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction2(stop))
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[SliderOptions]
   }
 }

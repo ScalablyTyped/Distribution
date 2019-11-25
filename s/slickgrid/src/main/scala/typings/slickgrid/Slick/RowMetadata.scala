@@ -48,10 +48,10 @@ object RowMetadata {
     selectable: js.UndefOr[Boolean] = js.undefined
   ): RowMetadata[T] = {
     val __obj = js.Dynamic.literal()
-    if (columns != null) __obj.updateDynamic("columns")(columns)
-    if (cssClasses != null) __obj.updateDynamic("cssClasses")(cssClasses)
-    if (!js.isUndefined(focusable)) __obj.updateDynamic("focusable")(focusable)
-    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable)
+    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (cssClasses != null) __obj.updateDynamic("cssClasses")(cssClasses.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusable)) __obj.updateDynamic("focusable")(focusable.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowMetadata[T]]
   }
 }

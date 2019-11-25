@@ -21,8 +21,8 @@ object GeolocationOptions {
   ): GeolocationOptions = {
     val __obj = js.Dynamic.literal()
     if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
-    if (!js.isUndefined(tracking)) __obj.updateDynamic("tracking")(tracking)
-    if (trackingOptions != null) __obj.updateDynamic("trackingOptions")(trackingOptions)
+    if (!js.isUndefined(tracking)) __obj.updateDynamic("tracking")(tracking.asInstanceOf[js.Any])
+    if (trackingOptions != null) __obj.updateDynamic("trackingOptions")(trackingOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeolocationOptions]
   }
 }

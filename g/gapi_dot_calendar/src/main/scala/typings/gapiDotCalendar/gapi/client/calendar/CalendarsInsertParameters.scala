@@ -16,10 +16,10 @@ trait CalendarsInsertParameters extends js.Object {
 object CalendarsInsertParameters {
   @scala.inline
   def apply(summary: String, description: String = null, location: String = null, timeZone: String = null): CalendarsInsertParameters = {
-    val __obj = js.Dynamic.literal(summary = summary)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone)
+    val __obj = js.Dynamic.literal(summary = summary.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalendarsInsertParameters]
   }
 }

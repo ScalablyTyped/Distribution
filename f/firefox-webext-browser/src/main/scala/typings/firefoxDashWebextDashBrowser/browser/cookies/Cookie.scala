@@ -55,7 +55,7 @@ object Cookie {
     value: String,
     expirationDate: Int | Double = null
   ): Cookie = {
-    val __obj = js.Dynamic.literal(domain = domain, firstPartyDomain = firstPartyDomain, hostOnly = hostOnly, httpOnly = httpOnly, name = name, path = path, sameSite = sameSite, secure = secure, session = session, storeId = storeId, value = value)
+    val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], firstPartyDomain = firstPartyDomain.asInstanceOf[js.Any], hostOnly = hostOnly.asInstanceOf[js.Any], httpOnly = httpOnly.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], sameSite = sameSite.asInstanceOf[js.Any], secure = secure.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any], storeId = storeId.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     if (expirationDate != null) __obj.updateDynamic("expirationDate")(expirationDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cookie]
   }

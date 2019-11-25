@@ -13,8 +13,8 @@ trait ThreadRowAttachmentIconHtmlDescriptor
 object ThreadRowAttachmentIconHtmlDescriptor {
   @scala.inline
   def apply(iconHtml: String, tooltip: String = null): ThreadRowAttachmentIconHtmlDescriptor = {
-    val __obj = js.Dynamic.literal(iconHtml = iconHtml)
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    val __obj = js.Dynamic.literal(iconHtml = iconHtml.asInstanceOf[js.Any])
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThreadRowAttachmentIconHtmlDescriptor]
   }
 }

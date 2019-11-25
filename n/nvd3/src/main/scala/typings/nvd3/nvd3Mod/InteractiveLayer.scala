@@ -11,7 +11,7 @@ trait InteractiveLayer extends js.Object {
 object InteractiveLayer {
   @scala.inline
   def apply(tooltip: Tooltip): InteractiveLayer = {
-    val __obj = js.Dynamic.literal(tooltip = tooltip)
+    val __obj = js.Dynamic.literal(tooltip = tooltip.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InteractiveLayer]
   }

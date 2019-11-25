@@ -11,7 +11,7 @@ trait ProviderData extends js.Object {
 object ProviderData {
   @scala.inline
   def apply(provider: typings.atStorybookApi.distInitDashProviderDashApiMod.Provider): ProviderData = {
-    val __obj = js.Dynamic.literal(provider = provider)
+    val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ProviderData]
   }

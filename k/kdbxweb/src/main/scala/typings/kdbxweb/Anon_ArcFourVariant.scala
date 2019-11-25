@@ -14,7 +14,7 @@ trait Anon_ArcFourVariant extends js.Object {
 object Anon_ArcFourVariant {
   @scala.inline
   def apply(ArcFourVariant: Double, ChaCha20: Double, Null: Double, Salsa20: Double): Anon_ArcFourVariant = {
-    val __obj = js.Dynamic.literal(ArcFourVariant = ArcFourVariant, ChaCha20 = ChaCha20, Null = Null, Salsa20 = Salsa20)
+    val __obj = js.Dynamic.literal(ArcFourVariant = ArcFourVariant.asInstanceOf[js.Any], ChaCha20 = ChaCha20.asInstanceOf[js.Any], Null = Null.asInstanceOf[js.Any], Salsa20 = Salsa20.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ArcFourVariant]
   }

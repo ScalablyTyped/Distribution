@@ -14,8 +14,8 @@ trait Anon_Event
 object Anon_Event {
   @scala.inline
   def apply(event: Event, StringDictionary: /* propName */ StringDictionary[js.Any] = null): Anon_Event = {
-    val __obj = js.Dynamic.literal(event = event)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_Event]
   }
 }

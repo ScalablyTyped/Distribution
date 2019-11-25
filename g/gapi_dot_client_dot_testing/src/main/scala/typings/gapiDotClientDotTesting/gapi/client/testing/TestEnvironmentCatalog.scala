@@ -18,8 +18,8 @@ object TestEnvironmentCatalog {
     networkConfigurationCatalog: NetworkConfigurationCatalog = null
   ): TestEnvironmentCatalog = {
     val __obj = js.Dynamic.literal()
-    if (androidDeviceCatalog != null) __obj.updateDynamic("androidDeviceCatalog")(androidDeviceCatalog)
-    if (networkConfigurationCatalog != null) __obj.updateDynamic("networkConfigurationCatalog")(networkConfigurationCatalog)
+    if (androidDeviceCatalog != null) __obj.updateDynamic("androidDeviceCatalog")(androidDeviceCatalog.asInstanceOf[js.Any])
+    if (networkConfigurationCatalog != null) __obj.updateDynamic("networkConfigurationCatalog")(networkConfigurationCatalog.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestEnvironmentCatalog]
   }
 }

@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait OptionsTickmarkPlacementValue extends js.Object
 
+object OptionsTickmarkPlacementValue {
+  @scala.inline
+  def between: typings.highcharts.highchartsStrings.between = this.cast("between")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def on: typings.highcharts.highchartsStrings.on = this.cast("on")
+}
+

@@ -20,10 +20,10 @@ object GooglePrivacyDlpV2beta1RiskAnalysisOperationResult {
     numericalStatsResult: GooglePrivacyDlpV2beta1NumericalStatsResult = null
   ): GooglePrivacyDlpV2beta1RiskAnalysisOperationResult = {
     val __obj = js.Dynamic.literal()
-    if (categoricalStatsResult != null) __obj.updateDynamic("categoricalStatsResult")(categoricalStatsResult)
-    if (kAnonymityResult != null) __obj.updateDynamic("kAnonymityResult")(kAnonymityResult)
-    if (lDiversityResult != null) __obj.updateDynamic("lDiversityResult")(lDiversityResult)
-    if (numericalStatsResult != null) __obj.updateDynamic("numericalStatsResult")(numericalStatsResult)
+    if (categoricalStatsResult != null) __obj.updateDynamic("categoricalStatsResult")(categoricalStatsResult.asInstanceOf[js.Any])
+    if (kAnonymityResult != null) __obj.updateDynamic("kAnonymityResult")(kAnonymityResult.asInstanceOf[js.Any])
+    if (lDiversityResult != null) __obj.updateDynamic("lDiversityResult")(lDiversityResult.asInstanceOf[js.Any])
+    if (numericalStatsResult != null) __obj.updateDynamic("numericalStatsResult")(numericalStatsResult.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1RiskAnalysisOperationResult]
   }
 }

@@ -51,13 +51,13 @@ object Config {
     retryAfter: js.Any = null
   ): Config = {
     val __obj = js.Dynamic.literal()
-    if (allowed != null) __obj.updateDynamic("allowed")(allowed)
-    if (cause != null) __obj.updateDynamic("cause")(cause)
-    if (details != null) __obj.updateDynamic("details")(details)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
-    if (retryAfter != null) __obj.updateDynamic("retryAfter")(retryAfter)
+    if (allowed != null) __obj.updateDynamic("allowed")(allowed.asInstanceOf[js.Any])
+    if (cause != null) __obj.updateDynamic("cause")(cause.asInstanceOf[js.Any])
+    if (details != null) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
+    if (retryAfter != null) __obj.updateDynamic("retryAfter")(retryAfter.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

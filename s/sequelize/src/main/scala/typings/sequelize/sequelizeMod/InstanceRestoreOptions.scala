@@ -23,7 +23,7 @@ object InstanceRestoreOptions {
   def apply(logging: Boolean | js.Function = null, transaction: Transaction = null): InstanceRestoreOptions = {
     val __obj = js.Dynamic.literal()
     if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
-    if (transaction != null) __obj.updateDynamic("transaction")(transaction)
+    if (transaction != null) __obj.updateDynamic("transaction")(transaction.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceRestoreOptions]
   }
 }

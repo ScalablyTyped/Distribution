@@ -11,7 +11,7 @@ trait Anon_Fragment extends js.Object {
 object Anon_Fragment {
   @scala.inline
   def apply(fragment: String): Anon_Fragment = {
-    val __obj = js.Dynamic.literal(fragment = fragment)
+    val __obj = js.Dynamic.literal(fragment = fragment.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Fragment]
   }

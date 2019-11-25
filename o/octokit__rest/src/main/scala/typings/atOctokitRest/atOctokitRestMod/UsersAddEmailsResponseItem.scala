@@ -14,8 +14,8 @@ trait UsersAddEmailsResponseItem extends js.Object {
 object UsersAddEmailsResponseItem {
   @scala.inline
   def apply(email: String, primary: Boolean, verified: Boolean, visibility: String = null): UsersAddEmailsResponseItem = {
-    val __obj = js.Dynamic.literal(email = email, primary = primary, verified = verified)
-    if (visibility != null) __obj.updateDynamic("visibility")(visibility)
+    val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], primary = primary.asInstanceOf[js.Any], verified = verified.asInstanceOf[js.Any])
+    if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsersAddEmailsResponseItem]
   }
 }

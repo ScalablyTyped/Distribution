@@ -22,11 +22,11 @@ object Task {
     `type`: String = null
   ): Task = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (progress != null) __obj.updateDynamic("progress")(progress)
-    if (!js.isUndefined(started)) __obj.updateDynamic("started")(started)
-    if (taskId != null) __obj.updateDynamic("taskId")(taskId)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (progress != null) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
+    if (!js.isUndefined(started)) __obj.updateDynamic("started")(started.asInstanceOf[js.Any])
+    if (taskId != null) __obj.updateDynamic("taskId")(taskId.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Task]
   }
 }

@@ -15,8 +15,8 @@ object LocalizedStringBundle {
   @scala.inline
   def apply(kind: String = null, translations: js.Array[LocalizedString] = null): LocalizedStringBundle = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (translations != null) __obj.updateDynamic("translations")(translations)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (translations != null) __obj.updateDynamic("translations")(translations.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalizedStringBundle]
   }
 }

@@ -34,7 +34,7 @@ object CustomFilter {
   @scala.inline
   def apply[FParams /* <: js.Object */, FElement /* <: CustomFilterElement */](
     customFilterParameters: CustomFilterParameters[FParams],
-    getElement_CustomFilter: (js.Function2[
+    getElement: (js.Function2[
       /* value */ js.UndefOr[CustomFilterParameters[FParams]], 
       /* type */ js.UndefOr[
         typings.reactDashBootstrapDashTable.reactDashBootstrapDashTableStrings.CustomFilter
@@ -43,9 +43,8 @@ object CustomFilter {
     ], CustomFilterParameters[FParams]) => ReactElement,
     `type`: typings.reactDashBootstrapDashTable.reactDashBootstrapDashTableStrings.CustomFilter
   ): CustomFilter[FParams, FElement] = {
-    val __obj = js.Dynamic.literal(customFilterParameters = customFilterParameters)
-    __obj.updateDynamic("getElement")(js.Any.fromFunction2(getElement_CustomFilter))
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(customFilterParameters = customFilterParameters.asInstanceOf[js.Any], getElement = js.Any.fromFunction2(getElement))
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomFilter[FParams, FElement]]
   }
 }

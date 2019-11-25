@@ -52,13 +52,13 @@ object CellsMergedEventUIParam {
     rowIndex: Int | Double = null
   ): CellsMergedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey)
+    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey.asInstanceOf[js.Any])
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (firstRecord != null) __obj.updateDynamic("firstRecord")(firstRecord)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (record != null) __obj.updateDynamic("record")(record)
-    if (row != null) __obj.updateDynamic("row")(row)
-    if (rowId != null) __obj.updateDynamic("rowId")(rowId)
+    if (firstRecord != null) __obj.updateDynamic("firstRecord")(firstRecord.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (record != null) __obj.updateDynamic("record")(record.asInstanceOf[js.Any])
+    if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
+    if (rowId != null) __obj.updateDynamic("rowId")(rowId.asInstanceOf[js.Any])
     if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellsMergedEventUIParam]
   }

@@ -90,8 +90,7 @@ object backboneDashRelationalMod extends js.Object {
     def setRelated(related: typings.backbone.backboneMod.Model): Unit = js.native
   }
   
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - typings.backbone.backboneMod.Events because Already inherited */ @js.native
+  @js.native
   class Store () extends EventsMixin {
     def addModelScope(scope: js.Any): Unit = js.native
     def addOrphanRelation(relation: js.Any): Unit = js.native

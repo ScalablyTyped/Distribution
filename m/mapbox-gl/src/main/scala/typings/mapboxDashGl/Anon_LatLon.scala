@@ -13,7 +13,7 @@ trait Anon_LatLon extends _LngLatLike {
 object Anon_LatLon {
   @scala.inline
   def apply(lat: Double, lon: Double): Anon_LatLon = {
-    val __obj = js.Dynamic.literal(lat = lat, lon = lon)
+    val __obj = js.Dynamic.literal(lat = lat.asInstanceOf[js.Any], lon = lon.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_LatLon]
   }

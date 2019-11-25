@@ -44,7 +44,7 @@ object AuxRecordContainer {
     tableAlias: String,
     tableName: String
   ): AuxRecordContainer = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), records = records, relationshipType = relationshipType, tableAlias = tableAlias, tableName = tableName)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), records = records.asInstanceOf[js.Any], relationshipType = relationshipType.asInstanceOf[js.Any], tableAlias = tableAlias.asInstanceOf[js.Any], tableName = tableName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AuxRecordContainer]
   }

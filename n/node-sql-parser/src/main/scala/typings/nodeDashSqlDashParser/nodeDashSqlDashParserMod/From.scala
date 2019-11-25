@@ -13,9 +13,9 @@ trait From extends js.Object {
 object From {
   @scala.inline
   def apply(table: String, as: String = null, db: String = null): From = {
-    val __obj = js.Dynamic.literal(table = table)
-    if (as != null) __obj.updateDynamic("as")(as)
-    if (db != null) __obj.updateDynamic("db")(db)
+    val __obj = js.Dynamic.literal(table = table.asInstanceOf[js.Any])
+    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
+    if (db != null) __obj.updateDynamic("db")(db.asInstanceOf[js.Any])
     __obj.asInstanceOf[From]
   }
 }

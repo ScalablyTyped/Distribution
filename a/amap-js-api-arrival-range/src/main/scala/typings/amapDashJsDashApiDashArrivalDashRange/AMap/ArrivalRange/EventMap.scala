@@ -17,7 +17,7 @@ trait EventMap extends js.Object {
 object EventMap {
   @scala.inline
   def apply(error: Event[error, Anon_Info]): EventMap = {
-    val __obj = js.Dynamic.literal(error = error)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EventMap]
   }

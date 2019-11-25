@@ -40,8 +40,8 @@ object numbers {
     TRANSITION_OPEN_DURATION: `120`,
     StringDictionary: StringDictionary[Double] = null
   ): numbers = {
-    val __obj = js.Dynamic.literal(ANCHOR_TO_MENU_WIDTH_RATIO = ANCHOR_TO_MENU_WIDTH_RATIO, MARGIN_TO_EDGE = MARGIN_TO_EDGE, OFFSET_TO_MENU_HEIGHT_RATIO = OFFSET_TO_MENU_HEIGHT_RATIO, SELECTED_TRIGGER_DELAY = SELECTED_TRIGGER_DELAY, TRANSITION_CLOSE_DURATION = TRANSITION_CLOSE_DURATION, TRANSITION_OPEN_DURATION = TRANSITION_OPEN_DURATION)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(ANCHOR_TO_MENU_WIDTH_RATIO = ANCHOR_TO_MENU_WIDTH_RATIO.asInstanceOf[js.Any], MARGIN_TO_EDGE = MARGIN_TO_EDGE.asInstanceOf[js.Any], OFFSET_TO_MENU_HEIGHT_RATIO = OFFSET_TO_MENU_HEIGHT_RATIO.asInstanceOf[js.Any], SELECTED_TRIGGER_DELAY = SELECTED_TRIGGER_DELAY.asInstanceOf[js.Any], TRANSITION_CLOSE_DURATION = TRANSITION_CLOSE_DURATION.asInstanceOf[js.Any], TRANSITION_OPEN_DURATION = TRANSITION_OPEN_DURATION.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[numbers]
   }
 }

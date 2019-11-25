@@ -16,8 +16,8 @@ trait LiftedArray[T] extends /* n */ NumberDictionary[Output[T]] {
 object LiftedArray {
   @scala.inline
   def apply[T](length: Output[Double], NumberDictionary: /* n */ NumberDictionary[Output[T]] = null): LiftedArray[T] = {
-    val __obj = js.Dynamic.literal(length = length)
-    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
+    if (NumberDictionary != null) js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[LiftedArray[T]]
   }
 }

@@ -77,15 +77,15 @@ object DrawingManagerOptions {
     rectangleOptions: RectangleOptions = null
   ): DrawingManagerOptions = {
     val __obj = js.Dynamic.literal()
-    if (circleOptions != null) __obj.updateDynamic("circleOptions")(circleOptions)
-    if (!js.isUndefined(drawingControl)) __obj.updateDynamic("drawingControl")(drawingControl)
-    if (drawingControlOptions != null) __obj.updateDynamic("drawingControlOptions")(drawingControlOptions)
-    if (drawingMode != null) __obj.updateDynamic("drawingMode")(drawingMode)
-    if (map != null) __obj.updateDynamic("map")(map)
-    if (markerOptions != null) __obj.updateDynamic("markerOptions")(markerOptions)
-    if (polygonOptions != null) __obj.updateDynamic("polygonOptions")(polygonOptions)
-    if (polylineOptions != null) __obj.updateDynamic("polylineOptions")(polylineOptions)
-    if (rectangleOptions != null) __obj.updateDynamic("rectangleOptions")(rectangleOptions)
+    if (circleOptions != null) __obj.updateDynamic("circleOptions")(circleOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(drawingControl)) __obj.updateDynamic("drawingControl")(drawingControl.asInstanceOf[js.Any])
+    if (drawingControlOptions != null) __obj.updateDynamic("drawingControlOptions")(drawingControlOptions.asInstanceOf[js.Any])
+    if (drawingMode != null) __obj.updateDynamic("drawingMode")(drawingMode.asInstanceOf[js.Any])
+    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
+    if (markerOptions != null) __obj.updateDynamic("markerOptions")(markerOptions.asInstanceOf[js.Any])
+    if (polygonOptions != null) __obj.updateDynamic("polygonOptions")(polygonOptions.asInstanceOf[js.Any])
+    if (polylineOptions != null) __obj.updateDynamic("polylineOptions")(polylineOptions.asInstanceOf[js.Any])
+    if (rectangleOptions != null) __obj.updateDynamic("rectangleOptions")(rectangleOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawingManagerOptions]
   }
 }

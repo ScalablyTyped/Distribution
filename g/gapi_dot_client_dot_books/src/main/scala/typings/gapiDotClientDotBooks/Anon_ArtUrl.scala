@@ -20,10 +20,10 @@ object Anon_ArtUrl {
     items: js.Array[Anon_Author] = null
   ): Anon_ArtUrl = {
     val __obj = js.Dynamic.literal()
-    if (artUrl != null) __obj.updateDynamic("artUrl")(artUrl)
-    if (gservicesKey != null) __obj.updateDynamic("gservicesKey")(gservicesKey)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (items != null) __obj.updateDynamic("items")(items)
+    if (artUrl != null) __obj.updateDynamic("artUrl")(artUrl.asInstanceOf[js.Any])
+    if (gservicesKey != null) __obj.updateDynamic("gservicesKey")(gservicesKey.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ArtUrl]
   }
 }

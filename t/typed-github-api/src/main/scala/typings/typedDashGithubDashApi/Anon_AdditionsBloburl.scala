@@ -28,7 +28,7 @@ object Anon_AdditionsBloburl {
     raw_url: String,
     status: modified
   ): Anon_AdditionsBloburl = {
-    val __obj = js.Dynamic.literal(additions = additions, blob_url = blob_url, changes = changes, deletions = deletions, filename = filename, patch = patch, raw_url = raw_url, status = status)
+    val __obj = js.Dynamic.literal(additions = additions.asInstanceOf[js.Any], blob_url = blob_url.asInstanceOf[js.Any], changes = changes.asInstanceOf[js.Any], deletions = deletions.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], patch = patch.asInstanceOf[js.Any], raw_url = raw_url.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AdditionsBloburl]
   }

@@ -17,7 +17,7 @@ trait SentMessageInfo extends js.Object {
 object SentMessageInfo {
   @scala.inline
   def apply(envelope: Envelope, message: String, messageId: String): SentMessageInfo = {
-    val __obj = js.Dynamic.literal(envelope = envelope, message = message, messageId = messageId)
+    val __obj = js.Dynamic.literal(envelope = envelope.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], messageId = messageId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SentMessageInfo]
   }

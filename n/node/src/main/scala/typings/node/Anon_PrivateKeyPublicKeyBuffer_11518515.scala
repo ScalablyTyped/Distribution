@@ -12,7 +12,7 @@ trait Anon_PrivateKeyPublicKeyBuffer_11518515 extends js.Object {
 object Anon_PrivateKeyPublicKeyBuffer_11518515 {
   @scala.inline
   def apply(privateKey: Buffer, publicKey: Buffer): Anon_PrivateKeyPublicKeyBuffer_11518515 = {
-    val __obj = js.Dynamic.literal(privateKey = privateKey, publicKey = publicKey)
+    val __obj = js.Dynamic.literal(privateKey = privateKey.asInstanceOf[js.Any], publicKey = publicKey.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_PrivateKeyPublicKeyBuffer_11518515]
   }

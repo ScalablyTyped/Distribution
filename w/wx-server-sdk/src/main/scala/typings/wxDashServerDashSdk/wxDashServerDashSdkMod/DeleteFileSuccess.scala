@@ -12,7 +12,7 @@ trait DeleteFileSuccess extends js.Object {
 object DeleteFileSuccess {
   @scala.inline
   def apply(fileList: js.Array[Anon_ErrMsgFileID]): DeleteFileSuccess = {
-    val __obj = js.Dynamic.literal(fileList = fileList)
+    val __obj = js.Dynamic.literal(fileList = fileList.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeleteFileSuccess]
   }

@@ -28,13 +28,13 @@ object IRotationalSpringOptions {
     `type`: (/* dist */ js.Any, /* rMax */ js.Any) => Double = null
   ): IRotationalSpringOptions = {
     val __obj = js.Dynamic.literal()
-    if (anchor != null) __obj.updateDynamic("anchor")(anchor)
+    if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
     if (damping != null) __obj.updateDynamic("damping")(damping.asInstanceOf[js.Any])
     if (dampingRatio != null) __obj.updateDynamic("dampingRatio")(dampingRatio.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
     if (stiffness != null) __obj.updateDynamic("stiffness")(stiffness.asInstanceOf[js.Any])
-    if (targets != null) __obj.updateDynamic("targets")(targets)
+    if (targets != null) __obj.updateDynamic("targets")(targets.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(js.Any.fromFunction2(`type`))
     __obj.asInstanceOf[IRotationalSpringOptions]
   }

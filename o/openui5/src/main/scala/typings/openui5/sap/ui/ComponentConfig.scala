@@ -150,11 +150,11 @@ object ComponentConfig {
     settings: js.Any = null,
     url: String = null
   ): ComponentConfig = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (componentData != null) __obj.updateDynamic("componentData")(componentData)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (settings != null) __obj.updateDynamic("settings")(settings)
-    if (url != null) __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (componentData != null) __obj.updateDynamic("componentData")(componentData.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentConfig]
   }
 }

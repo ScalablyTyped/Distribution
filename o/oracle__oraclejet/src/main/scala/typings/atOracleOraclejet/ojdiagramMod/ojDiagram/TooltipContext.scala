@@ -27,8 +27,8 @@ object TooltipContext {
     parentElement: Element,
     `type`: String
   ): TooltipContext[K1, K2, D1, D2] = {
-    val __obj = js.Dynamic.literal(componentElement = componentElement, data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], itemData = itemData.asInstanceOf[js.Any], label = label, parentElement = parentElement)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(componentElement = componentElement.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], itemData = itemData.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], parentElement = parentElement.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipContext[K1, K2, D1, D2]]
   }
 }

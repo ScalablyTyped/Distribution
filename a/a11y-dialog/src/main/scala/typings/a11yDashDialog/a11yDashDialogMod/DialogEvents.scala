@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait DialogEvents extends js.Object
 
+object DialogEvents {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def create: typings.a11yDashDialog.a11yDashDialogStrings.create = this.cast("create")
+  @scala.inline
+  def destroy: typings.a11yDashDialog.a11yDashDialogStrings.destroy = this.cast("destroy")
+  @scala.inline
+  def hide: typings.a11yDashDialog.a11yDashDialogStrings.hide = this.cast("hide")
+  @scala.inline
+  def show: typings.a11yDashDialog.a11yDashDialogStrings.show = this.cast("show")
+}
+

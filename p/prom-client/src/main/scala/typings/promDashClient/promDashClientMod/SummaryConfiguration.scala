@@ -29,14 +29,14 @@ object SummaryConfiguration {
     percentiles: js.Array[Double] = null,
     registers: js.Array[Registry] = null
   ): SummaryConfiguration = {
-    val __obj = js.Dynamic.literal(help = help, name = name)
+    val __obj = js.Dynamic.literal(help = help.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (ageBuckets != null) __obj.updateDynamic("ageBuckets")(ageBuckets.asInstanceOf[js.Any])
-    if (aggregator != null) __obj.updateDynamic("aggregator")(aggregator)
+    if (aggregator != null) __obj.updateDynamic("aggregator")(aggregator.asInstanceOf[js.Any])
     if (compressCount != null) __obj.updateDynamic("compressCount")(compressCount.asInstanceOf[js.Any])
-    if (labelNames != null) __obj.updateDynamic("labelNames")(labelNames)
+    if (labelNames != null) __obj.updateDynamic("labelNames")(labelNames.asInstanceOf[js.Any])
     if (maxAgeSeconds != null) __obj.updateDynamic("maxAgeSeconds")(maxAgeSeconds.asInstanceOf[js.Any])
-    if (percentiles != null) __obj.updateDynamic("percentiles")(percentiles)
-    if (registers != null) __obj.updateDynamic("registers")(registers)
+    if (percentiles != null) __obj.updateDynamic("percentiles")(percentiles.asInstanceOf[js.Any])
+    if (registers != null) __obj.updateDynamic("registers")(registers.asInstanceOf[js.Any])
     __obj.asInstanceOf[SummaryConfiguration]
   }
 }

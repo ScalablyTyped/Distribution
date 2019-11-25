@@ -20,9 +20,9 @@ object Anon_DrawGridLine {
     heightScale: Int | Double = null
   ): Anon_DrawGridLine = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(drawGridLine)) __obj.updateDynamic("drawGridLine")(drawGridLine)
+    if (!js.isUndefined(drawGridLine)) __obj.updateDynamic("drawGridLine")(drawGridLine.asInstanceOf[js.Any])
     if (gridSize != null) __obj.updateDynamic("gridSize")(gridSize.asInstanceOf[js.Any])
-    if (heightBezier != null) __obj.updateDynamic("heightBezier")(heightBezier)
+    if (heightBezier != null) __obj.updateDynamic("heightBezier")(heightBezier.asInstanceOf[js.Any])
     if (heightScale != null) __obj.updateDynamic("heightScale")(heightScale.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DrawGridLine]
   }

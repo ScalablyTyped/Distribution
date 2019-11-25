@@ -37,11 +37,11 @@ object RoyalSliderVideoOptions {
     youTubeCode: String = null
   ): RoyalSliderVideoOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoHideArrows)) __obj.updateDynamic("autoHideArrows")(autoHideArrows)
-    if (!js.isUndefined(autoHideBlocks)) __obj.updateDynamic("autoHideBlocks")(autoHideBlocks)
-    if (!js.isUndefined(autoHideControlNav)) __obj.updateDynamic("autoHideControlNav")(autoHideControlNav)
-    if (vimeoCode != null) __obj.updateDynamic("vimeoCode")(vimeoCode)
-    if (youTubeCode != null) __obj.updateDynamic("youTubeCode")(youTubeCode)
+    if (!js.isUndefined(autoHideArrows)) __obj.updateDynamic("autoHideArrows")(autoHideArrows.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoHideBlocks)) __obj.updateDynamic("autoHideBlocks")(autoHideBlocks.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoHideControlNav)) __obj.updateDynamic("autoHideControlNav")(autoHideControlNav.asInstanceOf[js.Any])
+    if (vimeoCode != null) __obj.updateDynamic("vimeoCode")(vimeoCode.asInstanceOf[js.Any])
+    if (youTubeCode != null) __obj.updateDynamic("youTubeCode")(youTubeCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoyalSliderVideoOptions]
   }
 }

@@ -1,8 +1,6 @@
 package typings.dojo.dijit.form
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValueProperty
 import typings.dojo.dojoStrings.displayedValue
 import typings.dojo.dojoStrings.lowercase
 import typings.dojo.dojoStrings.maxLength
@@ -171,20 +169,84 @@ class TextBox () extends _FormValueWidget {
   @JSName("set")
   def set_uppercase(property: uppercase, value: Boolean): Unit = js.native
   @JSName("watch")
-  def watch_displayedValue(property: displayedValue, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_displayedValue(
+    property: displayedValue,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_lowercase(property: lowercase, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_lowercase(
+    property: lowercase,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_maxLength(property: maxLength, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_maxLength(
+    property: maxLength,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_placeHolder(property: placeHolder, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_placeHolder(
+    property: placeHolder,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_propercase(property: propercase, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_propercase(
+    property: propercase,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_selectOnClick(property: selectOnClick, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_selectOnClick(
+    property: selectOnClick,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_trim(property: trim, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_trim(
+    property: trim,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_uppercase(property: uppercase, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_uppercase(
+    property: uppercase,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

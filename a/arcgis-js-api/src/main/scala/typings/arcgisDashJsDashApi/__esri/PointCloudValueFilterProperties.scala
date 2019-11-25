@@ -27,9 +27,9 @@ object PointCloudValueFilterProperties {
   @scala.inline
   def apply(field: String = null, mode: include | exclude = null, values: js.Array[Double] = null): PointCloudValueFilterProperties = {
     val __obj = js.Dynamic.literal()
-    if (field != null) __obj.updateDynamic("field")(field)
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointCloudValueFilterProperties]
   }
 }

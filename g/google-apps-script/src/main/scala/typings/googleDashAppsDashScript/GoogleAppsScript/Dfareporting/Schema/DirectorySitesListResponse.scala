@@ -14,9 +14,9 @@ object DirectorySitesListResponse {
   @scala.inline
   def apply(directorySites: js.Array[DirectorySite] = null, kind: String = null, nextPageToken: String = null): DirectorySitesListResponse = {
     val __obj = js.Dynamic.literal()
-    if (directorySites != null) __obj.updateDynamic("directorySites")(directorySites)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (directorySites != null) __obj.updateDynamic("directorySites")(directorySites.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectorySitesListResponse]
   }
 }

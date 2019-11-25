@@ -14,7 +14,7 @@ object Anon_Column {
   @scala.inline
   def apply(column: ColumnRef, order: String = null): Anon_Column = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any])
-    if (order != null) __obj.updateDynamic("order")(order)
+    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Column]
   }
 }

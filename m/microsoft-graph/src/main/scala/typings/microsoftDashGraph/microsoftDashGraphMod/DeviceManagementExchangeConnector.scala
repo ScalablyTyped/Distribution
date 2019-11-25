@@ -40,16 +40,16 @@ object DeviceManagementExchangeConnector {
     version: String = null
   ): DeviceManagementExchangeConnector = {
     val __obj = js.Dynamic.literal()
-    if (connectorServerName != null) __obj.updateDynamic("connectorServerName")(connectorServerName)
-    if (exchangeAlias != null) __obj.updateDynamic("exchangeAlias")(exchangeAlias)
-    if (exchangeConnectorType != null) __obj.updateDynamic("exchangeConnectorType")(exchangeConnectorType)
-    if (exchangeOrganization != null) __obj.updateDynamic("exchangeOrganization")(exchangeOrganization)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (lastSyncDateTime != null) __obj.updateDynamic("lastSyncDateTime")(lastSyncDateTime)
-    if (primarySmtpAddress != null) __obj.updateDynamic("primarySmtpAddress")(primarySmtpAddress)
-    if (serverName != null) __obj.updateDynamic("serverName")(serverName)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (connectorServerName != null) __obj.updateDynamic("connectorServerName")(connectorServerName.asInstanceOf[js.Any])
+    if (exchangeAlias != null) __obj.updateDynamic("exchangeAlias")(exchangeAlias.asInstanceOf[js.Any])
+    if (exchangeConnectorType != null) __obj.updateDynamic("exchangeConnectorType")(exchangeConnectorType.asInstanceOf[js.Any])
+    if (exchangeOrganization != null) __obj.updateDynamic("exchangeOrganization")(exchangeOrganization.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (lastSyncDateTime != null) __obj.updateDynamic("lastSyncDateTime")(lastSyncDateTime.asInstanceOf[js.Any])
+    if (primarySmtpAddress != null) __obj.updateDynamic("primarySmtpAddress")(primarySmtpAddress.asInstanceOf[js.Any])
+    if (serverName != null) __obj.updateDynamic("serverName")(serverName.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceManagementExchangeConnector]
   }
 }

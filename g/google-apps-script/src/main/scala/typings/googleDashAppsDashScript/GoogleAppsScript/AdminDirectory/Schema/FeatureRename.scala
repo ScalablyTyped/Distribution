@@ -12,7 +12,7 @@ object FeatureRename {
   @scala.inline
   def apply(newName: String = null): FeatureRename = {
     val __obj = js.Dynamic.literal()
-    if (newName != null) __obj.updateDynamic("newName")(newName)
+    if (newName != null) __obj.updateDynamic("newName")(newName.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureRename]
   }
 }

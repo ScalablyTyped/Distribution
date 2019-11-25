@@ -53,8 +53,8 @@ object BuildDefinitionReference3_2 {
     uri: String,
     url: String
   ): BuildDefinitionReference3_2 = {
-    val __obj = js.Dynamic.literal(_links = _links, authoredBy = authoredBy, createdDate = createdDate, draftOf = draftOf, drafts = drafts, id = id, metrics = metrics, name = name, path = path, project = project, quality = quality, queue = queue, queueStatus = queueStatus, revision = revision, uri = uri, url = url)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], authoredBy = authoredBy.asInstanceOf[js.Any], createdDate = createdDate.asInstanceOf[js.Any], draftOf = draftOf.asInstanceOf[js.Any], drafts = drafts.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], metrics = metrics.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], quality = quality.asInstanceOf[js.Any], queue = queue.asInstanceOf[js.Any], queueStatus = queueStatus.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildDefinitionReference3_2]
   }
 }

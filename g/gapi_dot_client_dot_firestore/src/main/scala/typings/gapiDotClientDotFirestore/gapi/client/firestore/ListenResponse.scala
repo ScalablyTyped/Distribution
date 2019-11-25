@@ -36,11 +36,11 @@ object ListenResponse {
     targetChange: TargetChange = null
   ): ListenResponse = {
     val __obj = js.Dynamic.literal()
-    if (documentChange != null) __obj.updateDynamic("documentChange")(documentChange)
-    if (documentDelete != null) __obj.updateDynamic("documentDelete")(documentDelete)
-    if (documentRemove != null) __obj.updateDynamic("documentRemove")(documentRemove)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
-    if (targetChange != null) __obj.updateDynamic("targetChange")(targetChange)
+    if (documentChange != null) __obj.updateDynamic("documentChange")(documentChange.asInstanceOf[js.Any])
+    if (documentDelete != null) __obj.updateDynamic("documentDelete")(documentDelete.asInstanceOf[js.Any])
+    if (documentRemove != null) __obj.updateDynamic("documentRemove")(documentRemove.asInstanceOf[js.Any])
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (targetChange != null) __obj.updateDynamic("targetChange")(targetChange.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListenResponse]
   }
 }

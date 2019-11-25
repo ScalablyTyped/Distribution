@@ -31,11 +31,11 @@ object GoogleDatastoreAdminV1beta1ImportEntitiesMetadata {
     progressEntities: GoogleDatastoreAdminV1beta1Progress = null
   ): GoogleDatastoreAdminV1beta1ImportEntitiesMetadata = {
     val __obj = js.Dynamic.literal()
-    if (common != null) __obj.updateDynamic("common")(common)
-    if (entityFilter != null) __obj.updateDynamic("entityFilter")(entityFilter)
-    if (inputUrl != null) __obj.updateDynamic("inputUrl")(inputUrl)
-    if (progressBytes != null) __obj.updateDynamic("progressBytes")(progressBytes)
-    if (progressEntities != null) __obj.updateDynamic("progressEntities")(progressEntities)
+    if (common != null) __obj.updateDynamic("common")(common.asInstanceOf[js.Any])
+    if (entityFilter != null) __obj.updateDynamic("entityFilter")(entityFilter.asInstanceOf[js.Any])
+    if (inputUrl != null) __obj.updateDynamic("inputUrl")(inputUrl.asInstanceOf[js.Any])
+    if (progressBytes != null) __obj.updateDynamic("progressBytes")(progressBytes.asInstanceOf[js.Any])
+    if (progressEntities != null) __obj.updateDynamic("progressEntities")(progressEntities.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleDatastoreAdminV1beta1ImportEntitiesMetadata]
   }
 }

@@ -1,13 +1,6 @@
 package typings.dojo.dijit.form
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValue
-import typings.dojo.Fn_NewValueOldValueProperty
-import typings.dojo.Fn_NewValueOldValuePropertyAny
-import typings.dojo.Fn_NewValueOldValuePropertyDate
-import typings.dojo.Fn_NewValueOldValuePropertyNumber
-import typings.dojo.Fn_Options
 import typings.dojo.dojoStrings.autoWidth
 import typings.dojo.dojoStrings.datePackage
 import typings.dojo.dojoStrings.dropDown
@@ -93,13 +86,6 @@ class _DateTimeTextBox () extends RangeBoundTextBox {
     * 
     */
   var maxHeight: Double = js.native
-  /**
-    * Builds the regular needed to parse a localized date
-    * 
-    * @param options               OptionalAn object with the following properties:selector (String): choice of 'time','date' (default: date and time)formatLength (String): choice of long, short, medium or full (plus any custom additions).  Defaults to 'short'datePattern (String): override pattern with this stringtimePattern (String): override pattern with this stringam (String): override strings for am in timespm (String): override strings for pm in timeslocale (String): override the locale used to determine formatting rulesfullYear (Boolean): (format only) use 4 digit years whenever 2 digit years are called forstrict (Boolean): (parse only) strict parsing, off by default            
-    */
-  @JSName("pattern")
-  var pattern_Original: Fn_Options = js.native
   /**
     * Name of the popup widget class used to select a date/time.
     * Subclasses should specify this.
@@ -256,25 +242,95 @@ class _DateTimeTextBox () extends RangeBoundTextBox {
     */
   def toggleDropDown(): Unit = js.native
   @JSName("watch")
-  def watch_autoWidth(property: autoWidth, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_autoWidth(
+    property: autoWidth,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_datePackage(property: datePackage, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_datePackage(
+    property: datePackage,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_dropDown(property: dropDown, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_dropDown(
+    property: dropDown,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_dropDownDefaultValue(property: dropDownDefaultValue, callback: Fn_NewValueOldValuePropertyDate): Anon_Unwatch = js.native
+  def watch_dropDownDefaultValue(
+    property: dropDownDefaultValue,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Date], 
+      /* newValue */ js.UndefOr[Date], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_dropDownPosition(property: dropDownPosition, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_dropDownPosition(
+    property: dropDownPosition,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_forceWidth(property: forceWidth, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_forceWidth(
+    property: forceWidth,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_hasDownArrow(property: hasDownArrow, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_hasDownArrow(
+    property: hasDownArrow,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_maxHeight(property: maxHeight, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_maxHeight(
+    property: maxHeight,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_popupClass(property: popupClass, callback: Fn_NewValueOldValuePropertyAny): Anon_Unwatch = js.native
-  @JSName("watch")
-  def watch_value(property: value, callback: Fn_NewValueOldValuePropertyDate): Anon_Unwatch = js.native
+  def watch_popupClass(
+    property: popupClass,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Any], 
+      /* newValue */ js.UndefOr[js.Any], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 
 @JSGlobal("dijit.form._DateTimeTextBox")

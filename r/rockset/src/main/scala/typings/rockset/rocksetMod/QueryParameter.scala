@@ -16,8 +16,8 @@ trait QueryParameter extends js.Object {
 object QueryParameter {
   @scala.inline
   def apply(name: String, `type`: String, value: String): QueryParameter = {
-    val __obj = js.Dynamic.literal(name = name, value = value)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryParameter]
   }
 }

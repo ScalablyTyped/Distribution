@@ -12,7 +12,7 @@ trait Anon_BodyKey extends js.Object {
 object Anon_BodyKey {
   @scala.inline
   def apply(bodyKey: String, name: String): Anon_BodyKey = {
-    val __obj = js.Dynamic.literal(bodyKey = bodyKey, name = name)
+    val __obj = js.Dynamic.literal(bodyKey = bodyKey.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BodyKey]
   }

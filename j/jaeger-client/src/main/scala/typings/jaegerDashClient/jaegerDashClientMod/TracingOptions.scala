@@ -20,10 +20,10 @@ object TracingOptions {
     tags: js.Any = null
   ): TracingOptions = {
     val __obj = js.Dynamic.literal()
-    if (logger != null) __obj.updateDynamic("logger")(logger)
-    if (metrics != null) __obj.updateDynamic("metrics")(metrics)
-    if (reporter != null) __obj.updateDynamic("reporter")(reporter)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
+    if (metrics != null) __obj.updateDynamic("metrics")(metrics.asInstanceOf[js.Any])
+    if (reporter != null) __obj.updateDynamic("reporter")(reporter.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[TracingOptions]
   }
 }

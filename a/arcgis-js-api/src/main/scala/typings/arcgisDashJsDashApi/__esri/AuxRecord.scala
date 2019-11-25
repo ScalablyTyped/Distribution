@@ -37,7 +37,7 @@ object AuxRecord {
     propertyIsEnumerable: PropertyKey => Boolean,
     recordvalues: AuxRecordValue
   ): AuxRecord = {
-    val __obj = js.Dynamic.literal(constructor = constructor, displayProperty = displayProperty, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), id = id, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), recordvalues = recordvalues)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], displayProperty = displayProperty.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), id = id.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), recordvalues = recordvalues.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AuxRecord]
   }

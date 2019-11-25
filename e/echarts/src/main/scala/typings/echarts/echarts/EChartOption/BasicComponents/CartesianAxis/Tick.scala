@@ -28,12 +28,12 @@ object Tick {
     show: js.UndefOr[Boolean] = js.undefined
   ): Tick = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alignWithLabel)) __obj.updateDynamic("alignWithLabel")(alignWithLabel)
-    if (!js.isUndefined(inside)) __obj.updateDynamic("inside")(inside)
+    if (!js.isUndefined(alignWithLabel)) __obj.updateDynamic("alignWithLabel")(alignWithLabel.asInstanceOf[js.Any])
+    if (!js.isUndefined(inside)) __obj.updateDynamic("inside")(inside.asInstanceOf[js.Any])
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle)
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
+    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tick]
   }
 }

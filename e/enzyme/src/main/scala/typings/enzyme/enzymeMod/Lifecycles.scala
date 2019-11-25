@@ -28,11 +28,11 @@ object Lifecycles {
     setState: js.Any = null
   ): Lifecycles = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (componentDidUpdate != null) __obj.updateDynamic("componentDidUpdate")(componentDidUpdate)
-    if (getChildContext != null) __obj.updateDynamic("getChildContext")(getChildContext)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (componentDidUpdate != null) __obj.updateDynamic("componentDidUpdate")(componentDidUpdate.asInstanceOf[js.Any])
+    if (getChildContext != null) __obj.updateDynamic("getChildContext")(getChildContext.asInstanceOf[js.Any])
     if (getDerivedStateFromProps != null) __obj.updateDynamic("getDerivedStateFromProps")(getDerivedStateFromProps.asInstanceOf[js.Any])
-    if (setState != null) __obj.updateDynamic("setState")(setState)
+    if (setState != null) __obj.updateDynamic("setState")(setState.asInstanceOf[js.Any])
     __obj.asInstanceOf[Lifecycles]
   }
 }

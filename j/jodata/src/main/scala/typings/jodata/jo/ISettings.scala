@@ -13,8 +13,8 @@ trait ISettings extends js.Object {
 
 object ISettings {
   @scala.inline
-  def apply(isSet: () => Boolean, reset: () => Unit, toString: () => String): ISettings = {
-    val __obj = js.Dynamic.literal(isSet = js.Any.fromFunction0(isSet), reset = js.Any.fromFunction0(reset), toString = js.Any.fromFunction0(toString))
+  def apply(isSet: () => Boolean, reset: () => Unit): ISettings = {
+    val __obj = js.Dynamic.literal(isSet = js.Any.fromFunction0(isSet), reset = js.Any.fromFunction0(reset))
   
     __obj.asInstanceOf[ISettings]
   }

@@ -39,7 +39,7 @@ trait Eviction extends js.Object {
 object Eviction {
   @scala.inline
   def apply(apiVersion: String, deleteOptions: DeleteOptions, kind: String, metadata: ObjectMeta): Eviction = {
-    val __obj = js.Dynamic.literal(apiVersion = apiVersion, deleteOptions = deleteOptions, kind = kind, metadata = metadata)
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], deleteOptions = deleteOptions.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Eviction]
   }

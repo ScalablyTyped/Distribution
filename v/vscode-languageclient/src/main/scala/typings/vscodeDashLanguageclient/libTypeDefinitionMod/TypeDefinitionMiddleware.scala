@@ -36,7 +36,7 @@ object TypeDefinitionMiddleware {
     ] = null
   ): TypeDefinitionMiddleware = {
     val __obj = js.Dynamic.literal()
-    if (provideTypeDefinition != null) __obj.updateDynamic("provideTypeDefinition")(provideTypeDefinition)
+    if (provideTypeDefinition != null) __obj.updateDynamic("provideTypeDefinition")(provideTypeDefinition.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeDefinitionMiddleware]
   }
 }

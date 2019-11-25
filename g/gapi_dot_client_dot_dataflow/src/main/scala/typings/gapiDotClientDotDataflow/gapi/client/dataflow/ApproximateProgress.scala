@@ -18,8 +18,8 @@ object ApproximateProgress {
   def apply(percentComplete: Int | Double = null, position: Position = null, remainingTime: String = null): ApproximateProgress = {
     val __obj = js.Dynamic.literal()
     if (percentComplete != null) __obj.updateDynamic("percentComplete")(percentComplete.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (remainingTime != null) __obj.updateDynamic("remainingTime")(remainingTime)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (remainingTime != null) __obj.updateDynamic("remainingTime")(remainingTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApproximateProgress]
   }
 }

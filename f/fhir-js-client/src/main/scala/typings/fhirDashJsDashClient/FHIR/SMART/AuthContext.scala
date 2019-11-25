@@ -30,10 +30,10 @@ object AuthContext {
   @scala.inline
   def apply(`type`: String, password: String = null, token: String = null, username: String = null): AuthContext = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (token != null) __obj.updateDynamic("token")(token)
-    if (username != null) __obj.updateDynamic("username")(username)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthContext]
   }
 }

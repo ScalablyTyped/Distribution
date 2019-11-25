@@ -22,10 +22,10 @@ object ProgressPropsType {
     unfilled: js.UndefOr[Boolean] = js.undefined
   ): ProgressPropsType = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(appearTransition)) __obj.updateDynamic("appearTransition")(appearTransition)
+    if (!js.isUndefined(appearTransition)) __obj.updateDynamic("appearTransition")(appearTransition.asInstanceOf[js.Any])
     if (percent != null) __obj.updateDynamic("percent")(percent.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(unfilled)) __obj.updateDynamic("unfilled")(unfilled)
+    if (!js.isUndefined(unfilled)) __obj.updateDynamic("unfilled")(unfilled.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProgressPropsType]
   }
 }

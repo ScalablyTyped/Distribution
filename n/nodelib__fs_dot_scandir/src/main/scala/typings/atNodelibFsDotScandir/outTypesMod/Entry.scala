@@ -14,8 +14,8 @@ trait Entry extends js.Object {
 object Entry {
   @scala.inline
   def apply(dirent: Dirent, name: String, path: String, stats: Stats = null): Entry = {
-    val __obj = js.Dynamic.literal(dirent = dirent, name = name, path = path)
-    if (stats != null) __obj.updateDynamic("stats")(stats)
+    val __obj = js.Dynamic.literal(dirent = dirent.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    if (stats != null) __obj.updateDynamic("stats")(stats.asInstanceOf[js.Any])
     __obj.asInstanceOf[Entry]
   }
 }

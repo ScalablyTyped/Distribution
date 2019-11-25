@@ -21,10 +21,10 @@ object SnippetOptions {
     whitelist: js.Array[String] = null
   ): SnippetOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
-    if (blacklist != null) __obj.updateDynamic("blacklist")(blacklist)
-    if (rule != null) __obj.updateDynamic("rule")(rule)
-    if (whitelist != null) __obj.updateDynamic("whitelist")(whitelist)
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
+    if (blacklist != null) __obj.updateDynamic("blacklist")(blacklist.asInstanceOf[js.Any])
+    if (rule != null) __obj.updateDynamic("rule")(rule.asInstanceOf[js.Any])
+    if (whitelist != null) __obj.updateDynamic("whitelist")(whitelist.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnippetOptions]
   }
 }

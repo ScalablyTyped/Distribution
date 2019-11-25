@@ -13,7 +13,7 @@ trait Anon_Exports extends js.Object {
 object Anon_Exports {
   @scala.inline
   def apply(exports: js.Any, fullpath: String, properties: js.Array[String]): Anon_Exports = {
-    val __obj = js.Dynamic.literal(exports = exports, fullpath = fullpath, properties = properties)
+    val __obj = js.Dynamic.literal(exports = exports.asInstanceOf[js.Any], fullpath = fullpath.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Exports]
   }

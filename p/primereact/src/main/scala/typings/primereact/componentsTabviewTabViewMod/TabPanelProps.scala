@@ -28,14 +28,14 @@ object TabPanelProps {
     rightIcon: String = null
   ): TabPanelProps = {
     val __obj = js.Dynamic.literal()
-    if (contentClassName != null) __obj.updateDynamic("contentClassName")(contentClassName)
-    if (contentStyle != null) __obj.updateDynamic("contentStyle")(contentStyle)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (header != null) __obj.updateDynamic("header")(header)
-    if (headerClassName != null) __obj.updateDynamic("headerClassName")(headerClassName)
-    if (headerStyle != null) __obj.updateDynamic("headerStyle")(headerStyle)
-    if (leftIcon != null) __obj.updateDynamic("leftIcon")(leftIcon)
-    if (rightIcon != null) __obj.updateDynamic("rightIcon")(rightIcon)
+    if (contentClassName != null) __obj.updateDynamic("contentClassName")(contentClassName.asInstanceOf[js.Any])
+    if (contentStyle != null) __obj.updateDynamic("contentStyle")(contentStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (headerClassName != null) __obj.updateDynamic("headerClassName")(headerClassName.asInstanceOf[js.Any])
+    if (headerStyle != null) __obj.updateDynamic("headerStyle")(headerStyle.asInstanceOf[js.Any])
+    if (leftIcon != null) __obj.updateDynamic("leftIcon")(leftIcon.asInstanceOf[js.Any])
+    if (rightIcon != null) __obj.updateDynamic("rightIcon")(rightIcon.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabPanelProps]
   }
 }

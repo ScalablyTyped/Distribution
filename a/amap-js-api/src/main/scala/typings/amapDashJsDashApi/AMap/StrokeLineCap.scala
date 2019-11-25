@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait StrokeLineCap extends js.Object
 
+object StrokeLineCap {
+  @scala.inline
+  def butt: typings.amapDashJsDashApi.amapDashJsDashApiStrings.butt = this.cast("butt")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def round: typings.amapDashJsDashApi.amapDashJsDashApiStrings.round = this.cast("round")
+  @scala.inline
+  def square: typings.amapDashJsDashApi.amapDashJsDashApiStrings.square = this.cast("square")
+}
+

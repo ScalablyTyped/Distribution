@@ -13,7 +13,7 @@ object VideoMonetizationDetails {
   @scala.inline
   def apply(access: AccessPolicy = null): VideoMonetizationDetails = {
     val __obj = js.Dynamic.literal()
-    if (access != null) __obj.updateDynamic("access")(access)
+    if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoMonetizationDetails]
   }
 }

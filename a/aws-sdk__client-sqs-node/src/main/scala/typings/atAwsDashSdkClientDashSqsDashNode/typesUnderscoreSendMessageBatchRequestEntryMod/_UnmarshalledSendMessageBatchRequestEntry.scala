@@ -24,11 +24,11 @@ object _UnmarshalledSendMessageBatchRequestEntry {
     MessageDeduplicationId: String = null,
     MessageGroupId: String = null
   ): _UnmarshalledSendMessageBatchRequestEntry = {
-    val __obj = js.Dynamic.literal(Id = Id, MessageBody = MessageBody)
+    val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], MessageBody = MessageBody.asInstanceOf[js.Any])
     if (DelaySeconds != null) __obj.updateDynamic("DelaySeconds")(DelaySeconds.asInstanceOf[js.Any])
-    if (MessageAttributes != null) __obj.updateDynamic("MessageAttributes")(MessageAttributes)
-    if (MessageDeduplicationId != null) __obj.updateDynamic("MessageDeduplicationId")(MessageDeduplicationId)
-    if (MessageGroupId != null) __obj.updateDynamic("MessageGroupId")(MessageGroupId)
+    if (MessageAttributes != null) __obj.updateDynamic("MessageAttributes")(MessageAttributes.asInstanceOf[js.Any])
+    if (MessageDeduplicationId != null) __obj.updateDynamic("MessageDeduplicationId")(MessageDeduplicationId.asInstanceOf[js.Any])
+    if (MessageGroupId != null) __obj.updateDynamic("MessageGroupId")(MessageGroupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledSendMessageBatchRequestEntry]
   }
 }

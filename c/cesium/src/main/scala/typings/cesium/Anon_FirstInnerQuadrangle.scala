@@ -20,9 +20,9 @@ object Anon_FirstInnerQuadrangle {
     firstInnerQuadrangle: Quaternion = null,
     lastInnerQuadrangle: Quaternion = null
   ): Anon_FirstInnerQuadrangle = {
-    val __obj = js.Dynamic.literal(points = points, times = times)
-    if (firstInnerQuadrangle != null) __obj.updateDynamic("firstInnerQuadrangle")(firstInnerQuadrangle)
-    if (lastInnerQuadrangle != null) __obj.updateDynamic("lastInnerQuadrangle")(lastInnerQuadrangle)
+    val __obj = js.Dynamic.literal(points = points.asInstanceOf[js.Any], times = times.asInstanceOf[js.Any])
+    if (firstInnerQuadrangle != null) __obj.updateDynamic("firstInnerQuadrangle")(firstInnerQuadrangle.asInstanceOf[js.Any])
+    if (lastInnerQuadrangle != null) __obj.updateDynamic("lastInnerQuadrangle")(lastInnerQuadrangle.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FirstInnerQuadrangle]
   }
 }

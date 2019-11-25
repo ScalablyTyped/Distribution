@@ -14,7 +14,7 @@ trait OSqlFunction extends _OSqlExpression {
 object OSqlFunction {
   @scala.inline
   def apply(abs: AbsSqlFunction, avg: AbsSqlFunction, db: ODB, sequence: SequenceSqlFunction): OSqlFunction = {
-    val __obj = js.Dynamic.literal(abs = abs, avg = avg, db = db, sequence = sequence)
+    val __obj = js.Dynamic.literal(abs = abs.asInstanceOf[js.Any], avg = avg.asInstanceOf[js.Any], db = db.asInstanceOf[js.Any], sequence = sequence.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OSqlFunction]
   }

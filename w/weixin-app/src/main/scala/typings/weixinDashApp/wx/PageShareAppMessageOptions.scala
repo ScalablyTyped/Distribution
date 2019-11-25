@@ -19,7 +19,7 @@ object PageShareAppMessageOptions {
   @scala.inline
   def apply(from: button | menu, target: js.Object = null): PageShareAppMessageOptions = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageShareAppMessageOptions]
   }
 }

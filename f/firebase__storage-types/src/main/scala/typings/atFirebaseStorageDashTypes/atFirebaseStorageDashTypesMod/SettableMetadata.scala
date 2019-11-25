@@ -25,12 +25,12 @@ object SettableMetadata {
     customMetadata: StringDictionary[String] = null
   ): SettableMetadata = {
     val __obj = js.Dynamic.literal()
-    if (cacheControl != null) __obj.updateDynamic("cacheControl")(cacheControl)
-    if (contentDisposition != null) __obj.updateDynamic("contentDisposition")(contentDisposition)
-    if (contentEncoding != null) __obj.updateDynamic("contentEncoding")(contentEncoding)
-    if (contentLanguage != null) __obj.updateDynamic("contentLanguage")(contentLanguage)
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
-    if (customMetadata != null) __obj.updateDynamic("customMetadata")(customMetadata)
+    if (cacheControl != null) __obj.updateDynamic("cacheControl")(cacheControl.asInstanceOf[js.Any])
+    if (contentDisposition != null) __obj.updateDynamic("contentDisposition")(contentDisposition.asInstanceOf[js.Any])
+    if (contentEncoding != null) __obj.updateDynamic("contentEncoding")(contentEncoding.asInstanceOf[js.Any])
+    if (contentLanguage != null) __obj.updateDynamic("contentLanguage")(contentLanguage.asInstanceOf[js.Any])
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
+    if (customMetadata != null) __obj.updateDynamic("customMetadata")(customMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[SettableMetadata]
   }
 }

@@ -22,11 +22,11 @@ object AppList {
     selfLink: String = null
   ): AppList = {
     val __obj = js.Dynamic.literal()
-    if (defaultAppIds != null) __obj.updateDynamic("defaultAppIds")(defaultAppIds)
-    if (etag != null) __obj.updateDynamic("etag")(etag)
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (defaultAppIds != null) __obj.updateDynamic("defaultAppIds")(defaultAppIds.asInstanceOf[js.Any])
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppList]
   }
 }

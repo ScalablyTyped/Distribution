@@ -15,7 +15,7 @@ trait Arc extends Point {
 object Arc {
   @scala.inline
   def apply(e: Double, interval: Anon_End, r: Double, s: Double, x: Double, y: Double, z: Int | Double = null): Arc = {
-    val __obj = js.Dynamic.literal(e = e, interval = interval, r = r, s = s, x = x, y = y)
+    val __obj = js.Dynamic.literal(e = e.asInstanceOf[js.Any], interval = interval.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
     __obj.asInstanceOf[Arc]
   }

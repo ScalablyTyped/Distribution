@@ -16,7 +16,7 @@ trait ReposGetCommitParamsDeprecatedSha extends js.Object {
 object ReposGetCommitParamsDeprecatedSha {
   @scala.inline
   def apply(owner: String, repo: String, sha: String): ReposGetCommitParamsDeprecatedSha = {
-    val __obj = js.Dynamic.literal(owner = owner, repo = repo, sha = sha)
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReposGetCommitParamsDeprecatedSha]
   }

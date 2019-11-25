@@ -19,8 +19,8 @@ object IHttp {
     rules: js.Array[IHttpRule] = null
   ): IHttp = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(fullyDecodeReservedExpansion)) __obj.updateDynamic("fullyDecodeReservedExpansion")(fullyDecodeReservedExpansion)
-    if (rules != null) __obj.updateDynamic("rules")(rules)
+    if (!js.isUndefined(fullyDecodeReservedExpansion)) __obj.updateDynamic("fullyDecodeReservedExpansion")(fullyDecodeReservedExpansion.asInstanceOf[js.Any])
+    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHttp]
   }
 }

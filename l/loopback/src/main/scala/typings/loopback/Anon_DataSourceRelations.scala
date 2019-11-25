@@ -12,8 +12,8 @@ trait Anon_DataSourceRelations extends js.Object {
 object Anon_DataSourceRelations {
   @scala.inline
   def apply(dataSource: js.Any, relations: js.Any = null): Anon_DataSourceRelations = {
-    val __obj = js.Dynamic.literal(dataSource = dataSource)
-    if (relations != null) __obj.updateDynamic("relations")(relations)
+    val __obj = js.Dynamic.literal(dataSource = dataSource.asInstanceOf[js.Any])
+    if (relations != null) __obj.updateDynamic("relations")(relations.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DataSourceRelations]
   }
 }

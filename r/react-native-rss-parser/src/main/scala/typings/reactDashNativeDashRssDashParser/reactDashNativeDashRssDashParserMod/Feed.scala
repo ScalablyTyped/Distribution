@@ -41,8 +41,8 @@ object Feed {
     `type`: String,
     copyright: Maybe[String] = null
   ): Feed = {
-    val __obj = js.Dynamic.literal(authors = authors, categories = categories, description = description, image = image, items = items, itunes = itunes, language = language, lastPublished = lastPublished, lastUpdated = lastUpdated, links = links, title = title)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(authors = authors.asInstanceOf[js.Any], categories = categories.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], itunes = itunes.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], lastPublished = lastPublished.asInstanceOf[js.Any], lastUpdated = lastUpdated.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (copyright != null) __obj.updateDynamic("copyright")(copyright.asInstanceOf[js.Any])
     __obj.asInstanceOf[Feed]
   }

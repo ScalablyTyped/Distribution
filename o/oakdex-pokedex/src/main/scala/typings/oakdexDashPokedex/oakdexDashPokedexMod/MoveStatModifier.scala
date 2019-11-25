@@ -13,8 +13,8 @@ trait MoveStatModifier extends js.Object {
 object MoveStatModifier {
   @scala.inline
   def apply(change_by: Double, stat: String, affects_user: js.UndefOr[Boolean] = js.undefined): MoveStatModifier = {
-    val __obj = js.Dynamic.literal(change_by = change_by, stat = stat)
-    if (!js.isUndefined(affects_user)) __obj.updateDynamic("affects_user")(affects_user)
+    val __obj = js.Dynamic.literal(change_by = change_by.asInstanceOf[js.Any], stat = stat.asInstanceOf[js.Any])
+    if (!js.isUndefined(affects_user)) __obj.updateDynamic("affects_user")(affects_user.asInstanceOf[js.Any])
     __obj.asInstanceOf[MoveStatModifier]
   }
 }

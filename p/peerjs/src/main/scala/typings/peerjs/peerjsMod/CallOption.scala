@@ -13,8 +13,8 @@ object CallOption {
   @scala.inline
   def apply(metadata: js.Any = null, sdpTransform: js.Function = null): CallOption = {
     val __obj = js.Dynamic.literal()
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (sdpTransform != null) __obj.updateDynamic("sdpTransform")(sdpTransform)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (sdpTransform != null) __obj.updateDynamic("sdpTransform")(sdpTransform.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallOption]
   }
 }

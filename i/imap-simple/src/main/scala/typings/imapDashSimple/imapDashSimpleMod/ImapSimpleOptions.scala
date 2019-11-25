@@ -27,7 +27,7 @@ object ImapSimpleOptions {
     onmail: /* numNewMail */ Double => Unit = null,
     onupdate: (/* seqno */ Double, /* info */ js.Any) => Unit = null
   ): ImapSimpleOptions = {
-    val __obj = js.Dynamic.literal(imap = imap)
+    val __obj = js.Dynamic.literal(imap = imap.asInstanceOf[js.Any])
     if (connectTimeout != null) __obj.updateDynamic("connectTimeout")(connectTimeout.asInstanceOf[js.Any])
     if (onexpunge != null) __obj.updateDynamic("onexpunge")(js.Any.fromFunction1(onexpunge))
     if (onmail != null) __obj.updateDynamic("onmail")(js.Any.fromFunction1(onmail))

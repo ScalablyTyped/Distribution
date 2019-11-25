@@ -47,10 +47,10 @@ object TestResult {
     state: String = null
   ): TestResult = {
     val __obj = js.Dynamic.literal()
-    if (debugMessages != null) __obj.updateDynamic("debugMessages")(debugMessages)
-    if (errorPosition != null) __obj.updateDynamic("errorPosition")(errorPosition)
-    if (functionCalls != null) __obj.updateDynamic("functionCalls")(functionCalls)
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (debugMessages != null) __obj.updateDynamic("debugMessages")(debugMessages.asInstanceOf[js.Any])
+    if (errorPosition != null) __obj.updateDynamic("errorPosition")(errorPosition.asInstanceOf[js.Any])
+    if (functionCalls != null) __obj.updateDynamic("functionCalls")(functionCalls.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestResult]
   }
 }

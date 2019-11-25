@@ -24,12 +24,12 @@ object MerchantOrderReturnItem {
     state: String = null
   ): MerchantOrderReturnItem = {
     val __obj = js.Dynamic.literal()
-    if (customerReturnReason != null) __obj.updateDynamic("customerReturnReason")(customerReturnReason)
-    if (itemId != null) __obj.updateDynamic("itemId")(itemId)
-    if (merchantReturnReason != null) __obj.updateDynamic("merchantReturnReason")(merchantReturnReason)
-    if (product != null) __obj.updateDynamic("product")(product)
-    if (returnShipmentIds != null) __obj.updateDynamic("returnShipmentIds")(returnShipmentIds)
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (customerReturnReason != null) __obj.updateDynamic("customerReturnReason")(customerReturnReason.asInstanceOf[js.Any])
+    if (itemId != null) __obj.updateDynamic("itemId")(itemId.asInstanceOf[js.Any])
+    if (merchantReturnReason != null) __obj.updateDynamic("merchantReturnReason")(merchantReturnReason.asInstanceOf[js.Any])
+    if (product != null) __obj.updateDynamic("product")(product.asInstanceOf[js.Any])
+    if (returnShipmentIds != null) __obj.updateDynamic("returnShipmentIds")(returnShipmentIds.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[MerchantOrderReturnItem]
   }
 }

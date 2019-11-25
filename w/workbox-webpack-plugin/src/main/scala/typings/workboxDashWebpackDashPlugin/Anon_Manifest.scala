@@ -13,8 +13,8 @@ trait Anon_Manifest extends js.Object {
 object Anon_Manifest {
   @scala.inline
   def apply(manifest: js.Array[ManifestEntry], warnings: js.Array[String] = null): Anon_Manifest = {
-    val __obj = js.Dynamic.literal(manifest = manifest)
-    if (warnings != null) __obj.updateDynamic("warnings")(warnings)
+    val __obj = js.Dynamic.literal(manifest = manifest.asInstanceOf[js.Any])
+    if (warnings != null) __obj.updateDynamic("warnings")(warnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Manifest]
   }
 }

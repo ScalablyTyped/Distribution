@@ -1,7 +1,5 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
-import typings.typescriptDashServices.TypeScript.LanguageVersion
-import typings.typescriptDashServices.TypeScript.ModuleGenTarget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,8 +16,8 @@ class ImmutableCompilationSettings protected ()
     allowAutomaticSemicolonInsertion: Boolean,
     noImplicitAny: Boolean,
     noLib: Boolean,
-    codeGenTarget: LanguageVersion,
-    moduleGenTarget: ModuleGenTarget,
+    codeGenTarget: typings.typescriptDashServices.TypeScript.LanguageVersion,
+    moduleGenTarget: typings.typescriptDashServices.TypeScript.ModuleGenTarget,
     outFileOption: String,
     outDirOption: String,
     mapSourceFiles: Boolean,

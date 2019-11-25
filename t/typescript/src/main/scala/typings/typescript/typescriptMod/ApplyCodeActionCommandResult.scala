@@ -11,7 +11,7 @@ trait ApplyCodeActionCommandResult extends js.Object {
 object ApplyCodeActionCommandResult {
   @scala.inline
   def apply(successMessage: String): ApplyCodeActionCommandResult = {
-    val __obj = js.Dynamic.literal(successMessage = successMessage)
+    val __obj = js.Dynamic.literal(successMessage = successMessage.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ApplyCodeActionCommandResult]
   }

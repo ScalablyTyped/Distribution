@@ -21,7 +21,7 @@ object GridOnScrollProps {
     scrollUpdateWasRequested: Boolean,
     verticalScrollDirection: ScrollDirection
   ): GridOnScrollProps = {
-    val __obj = js.Dynamic.literal(horizontalScrollDirection = horizontalScrollDirection, scrollLeft = scrollLeft, scrollTop = scrollTop, scrollUpdateWasRequested = scrollUpdateWasRequested, verticalScrollDirection = verticalScrollDirection)
+    val __obj = js.Dynamic.literal(horizontalScrollDirection = horizontalScrollDirection.asInstanceOf[js.Any], scrollLeft = scrollLeft.asInstanceOf[js.Any], scrollTop = scrollTop.asInstanceOf[js.Any], scrollUpdateWasRequested = scrollUpdateWasRequested.asInstanceOf[js.Any], verticalScrollDirection = verticalScrollDirection.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GridOnScrollProps]
   }

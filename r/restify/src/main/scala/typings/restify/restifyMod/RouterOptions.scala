@@ -23,11 +23,11 @@ object RouterOptions {
     strictNext: js.UndefOr[Boolean] = js.undefined
   ): RouterOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ignoreTrailingSlash)) __obj.updateDynamic("ignoreTrailingSlash")(ignoreTrailingSlash)
-    if (log != null) __obj.updateDynamic("log")(log)
-    if (!js.isUndefined(onceNext)) __obj.updateDynamic("onceNext")(onceNext)
-    if (registry != null) __obj.updateDynamic("registry")(registry)
-    if (!js.isUndefined(strictNext)) __obj.updateDynamic("strictNext")(strictNext)
+    if (!js.isUndefined(ignoreTrailingSlash)) __obj.updateDynamic("ignoreTrailingSlash")(ignoreTrailingSlash.asInstanceOf[js.Any])
+    if (log != null) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
+    if (!js.isUndefined(onceNext)) __obj.updateDynamic("onceNext")(onceNext.asInstanceOf[js.Any])
+    if (registry != null) __obj.updateDynamic("registry")(registry.asInstanceOf[js.Any])
+    if (!js.isUndefined(strictNext)) __obj.updateDynamic("strictNext")(strictNext.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouterOptions]
   }
 }

@@ -11,7 +11,7 @@ trait MembersParams extends js.Object {
 object MembersParams {
   @scala.inline
   def apply(members: js.Array[Double | String]): MembersParams = {
-    val __obj = js.Dynamic.literal(members = members)
+    val __obj = js.Dynamic.literal(members = members.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MembersParams]
   }

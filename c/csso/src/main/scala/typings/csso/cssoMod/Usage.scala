@@ -23,11 +23,11 @@ object Usage {
     tags: js.Array[String] = null
   ): Usage = {
     val __obj = js.Dynamic.literal()
-    if (blacklist != null) __obj.updateDynamic("blacklist")(blacklist)
-    if (classes != null) __obj.updateDynamic("classes")(classes)
-    if (ids != null) __obj.updateDynamic("ids")(ids)
-    if (scopes != null) __obj.updateDynamic("scopes")(scopes)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (blacklist != null) __obj.updateDynamic("blacklist")(blacklist.asInstanceOf[js.Any])
+    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
+    if (ids != null) __obj.updateDynamic("ids")(ids.asInstanceOf[js.Any])
+    if (scopes != null) __obj.updateDynamic("scopes")(scopes.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[Usage]
   }
 }

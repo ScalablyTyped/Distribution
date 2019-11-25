@@ -30,7 +30,7 @@ object Anon_01CellDataGetter {
     flexShrink: `1`,
     headerRenderer: /* props */ TableHeaderProps => ReactNode
   ): Anon_01CellDataGetter = {
-    val __obj = js.Dynamic.literal(cellDataGetter = js.Any.fromFunction1(cellDataGetter), cellRenderer = js.Any.fromFunction1(cellRenderer), flexGrow = flexGrow, flexShrink = flexShrink, headerRenderer = js.Any.fromFunction1(headerRenderer))
+    val __obj = js.Dynamic.literal(cellDataGetter = js.Any.fromFunction1(cellDataGetter), cellRenderer = js.Any.fromFunction1(cellRenderer), flexGrow = flexGrow.asInstanceOf[js.Any], flexShrink = flexShrink.asInstanceOf[js.Any], headerRenderer = js.Any.fromFunction1(headerRenderer))
   
     __obj.asInstanceOf[Anon_01CellDataGetter]
   }

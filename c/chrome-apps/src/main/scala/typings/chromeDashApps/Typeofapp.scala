@@ -31,7 +31,7 @@ trait Typeofapp extends js.Object {
 object Typeofapp {
   @scala.inline
   def apply(_State: Anon_FULLSCREEN, runtime: Typeofruntime, window: ChromeAppWindow): Typeofapp = {
-    val __obj = js.Dynamic.literal(_State = _State, runtime = runtime, window = window)
+    val __obj = js.Dynamic.literal(_State = _State.asInstanceOf[js.Any], runtime = runtime.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Typeofapp]
   }

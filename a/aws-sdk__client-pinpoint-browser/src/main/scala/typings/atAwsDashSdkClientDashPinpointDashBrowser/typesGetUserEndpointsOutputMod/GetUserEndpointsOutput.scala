@@ -22,7 +22,7 @@ trait GetUserEndpointsOutput extends OutputTypesUnion {
 object GetUserEndpointsOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, EndpointsResponse: _UnmarshalledEndpointsResponse): GetUserEndpointsOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata, EndpointsResponse = EndpointsResponse)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], EndpointsResponse = EndpointsResponse.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetUserEndpointsOutput]
   }

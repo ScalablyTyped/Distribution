@@ -20,9 +20,9 @@ object IGeoJsonReadOptions {
   @scala.inline
   def apply(jsonpQueryParam: String = null, layerName: String = null, style: IStylesOptions = null): IGeoJsonReadOptions = {
     val __obj = js.Dynamic.literal()
-    if (jsonpQueryParam != null) __obj.updateDynamic("jsonpQueryParam")(jsonpQueryParam)
-    if (layerName != null) __obj.updateDynamic("layerName")(layerName)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (jsonpQueryParam != null) __obj.updateDynamic("jsonpQueryParam")(jsonpQueryParam.asInstanceOf[js.Any])
+    if (layerName != null) __obj.updateDynamic("layerName")(layerName.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGeoJsonReadOptions]
   }
 }

@@ -18,7 +18,7 @@ trait GlyphPosition extends js.Object {
 object GlyphPosition {
   @scala.inline
   def apply(xAdvance: Double, xOffset: Double, yAdvance: Double, yOffset: Double): GlyphPosition = {
-    val __obj = js.Dynamic.literal(xAdvance = xAdvance, xOffset = xOffset, yAdvance = yAdvance, yOffset = yOffset)
+    val __obj = js.Dynamic.literal(xAdvance = xAdvance.asInstanceOf[js.Any], xOffset = xOffset.asInstanceOf[js.Any], yAdvance = yAdvance.asInstanceOf[js.Any], yOffset = yOffset.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GlyphPosition]
   }

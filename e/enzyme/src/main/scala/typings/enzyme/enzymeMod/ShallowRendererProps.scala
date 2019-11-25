@@ -72,19 +72,19 @@ object ShallowRendererProps {
     wrappingComponentProps: js.Object = null
   ): ShallowRendererProps = {
     val __obj = js.Dynamic.literal()
-    if (PROVIDER_VALUES != null) __obj.updateDynamic("PROVIDER_VALUES")(PROVIDER_VALUES)
-    if (adapter != null) __obj.updateDynamic("adapter")(adapter)
-    if (attachTo != null) __obj.updateDynamic("attachTo")(attachTo)
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (!js.isUndefined(disableLifecycleMethods)) __obj.updateDynamic("disableLifecycleMethods")(disableLifecycleMethods)
-    if (!js.isUndefined(enableComponentDidUpdateOnSetState)) __obj.updateDynamic("enableComponentDidUpdateOnSetState")(enableComponentDidUpdateOnSetState)
-    if (hydrateIn != null) __obj.updateDynamic("hydrateIn")(hydrateIn)
-    if (!js.isUndefined(lifecycleExperimental)) __obj.updateDynamic("lifecycleExperimental")(lifecycleExperimental)
-    if (lifecycles != null) __obj.updateDynamic("lifecycles")(lifecycles)
-    if (!js.isUndefined(supportPrevContextArgumentOfComponentDidUpdate)) __obj.updateDynamic("supportPrevContextArgumentOfComponentDidUpdate")(supportPrevContextArgumentOfComponentDidUpdate)
-    if (!js.isUndefined(suspenseFallback)) __obj.updateDynamic("suspenseFallback")(suspenseFallback)
+    if (PROVIDER_VALUES != null) __obj.updateDynamic("PROVIDER_VALUES")(PROVIDER_VALUES.asInstanceOf[js.Any])
+    if (adapter != null) __obj.updateDynamic("adapter")(adapter.asInstanceOf[js.Any])
+    if (attachTo != null) __obj.updateDynamic("attachTo")(attachTo.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableLifecycleMethods)) __obj.updateDynamic("disableLifecycleMethods")(disableLifecycleMethods.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableComponentDidUpdateOnSetState)) __obj.updateDynamic("enableComponentDidUpdateOnSetState")(enableComponentDidUpdateOnSetState.asInstanceOf[js.Any])
+    if (hydrateIn != null) __obj.updateDynamic("hydrateIn")(hydrateIn.asInstanceOf[js.Any])
+    if (!js.isUndefined(lifecycleExperimental)) __obj.updateDynamic("lifecycleExperimental")(lifecycleExperimental.asInstanceOf[js.Any])
+    if (lifecycles != null) __obj.updateDynamic("lifecycles")(lifecycles.asInstanceOf[js.Any])
+    if (!js.isUndefined(supportPrevContextArgumentOfComponentDidUpdate)) __obj.updateDynamic("supportPrevContextArgumentOfComponentDidUpdate")(supportPrevContextArgumentOfComponentDidUpdate.asInstanceOf[js.Any])
+    if (!js.isUndefined(suspenseFallback)) __obj.updateDynamic("suspenseFallback")(suspenseFallback.asInstanceOf[js.Any])
     if (wrappingComponent != null) __obj.updateDynamic("wrappingComponent")(wrappingComponent.asInstanceOf[js.Any])
-    if (wrappingComponentProps != null) __obj.updateDynamic("wrappingComponentProps")(wrappingComponentProps)
+    if (wrappingComponentProps != null) __obj.updateDynamic("wrappingComponentProps")(wrappingComponentProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShallowRendererProps]
   }
 }

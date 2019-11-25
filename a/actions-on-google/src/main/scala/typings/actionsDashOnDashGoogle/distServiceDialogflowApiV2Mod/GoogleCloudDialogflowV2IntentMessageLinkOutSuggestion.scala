@@ -13,8 +13,8 @@ object GoogleCloudDialogflowV2IntentMessageLinkOutSuggestion {
   @scala.inline
   def apply(destinationName: String = null, uri: String = null): GoogleCloudDialogflowV2IntentMessageLinkOutSuggestion = {
     val __obj = js.Dynamic.literal()
-    if (destinationName != null) __obj.updateDynamic("destinationName")(destinationName)
-    if (uri != null) __obj.updateDynamic("uri")(uri)
+    if (destinationName != null) __obj.updateDynamic("destinationName")(destinationName.asInstanceOf[js.Any])
+    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudDialogflowV2IntentMessageLinkOutSuggestion]
   }
 }

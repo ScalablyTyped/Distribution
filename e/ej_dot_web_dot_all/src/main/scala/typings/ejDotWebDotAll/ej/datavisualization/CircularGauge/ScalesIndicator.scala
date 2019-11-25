@@ -43,9 +43,9 @@ object ScalesIndicator {
   ): ScalesIndicator = {
     val __obj = js.Dynamic.literal()
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (stateRanges != null) __obj.updateDynamic("stateRanges")(stateRanges)
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (stateRanges != null) __obj.updateDynamic("stateRanges")(stateRanges.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScalesIndicator]

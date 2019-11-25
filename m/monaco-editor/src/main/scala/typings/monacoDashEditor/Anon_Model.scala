@@ -13,7 +13,7 @@ trait Anon_Model extends js.Object {
 object Anon_Model {
   @scala.inline
   def apply(model: ITextModel, oldLanguage: String): Anon_Model = {
-    val __obj = js.Dynamic.literal(model = model, oldLanguage = oldLanguage)
+    val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any], oldLanguage = oldLanguage.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Model]
   }

@@ -12,7 +12,7 @@ trait PullDownOption extends js.Object {
 object PullDownOption {
   @scala.inline
   def apply(stop: Double, threshold: Double): PullDownOption = {
-    val __obj = js.Dynamic.literal(stop = stop, threshold = threshold)
+    val __obj = js.Dynamic.literal(stop = stop.asInstanceOf[js.Any], threshold = threshold.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PullDownOption]
   }

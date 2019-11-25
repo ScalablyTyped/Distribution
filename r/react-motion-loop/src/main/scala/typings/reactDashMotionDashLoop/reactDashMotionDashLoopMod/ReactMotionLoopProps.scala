@@ -21,7 +21,7 @@ object ReactMotionLoopProps {
     styleTo: Style,
     children: /* interpolatedStyle */ PlainStyle => ReactElement = null
   ): ReactMotionLoopProps = {
-    val __obj = js.Dynamic.literal(styleFrom = styleFrom, styleTo = styleTo)
+    val __obj = js.Dynamic.literal(styleFrom = styleFrom.asInstanceOf[js.Any], styleTo = styleTo.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))
     __obj.asInstanceOf[ReactMotionLoopProps]
   }

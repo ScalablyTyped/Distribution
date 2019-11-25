@@ -31,7 +31,7 @@ trait _defaultCreatorNodes extends js.Object {
 object _defaultCreatorNodes {
   @scala.inline
   def apply(div: String, ol: String, p: String, ul: String): _defaultCreatorNodes = {
-    val __obj = js.Dynamic.literal(div = div, ol = ol, p = p, ul = ul)
+    val __obj = js.Dynamic.literal(div = div.asInstanceOf[js.Any], ol = ol.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any], ul = ul.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_defaultCreatorNodes]
   }

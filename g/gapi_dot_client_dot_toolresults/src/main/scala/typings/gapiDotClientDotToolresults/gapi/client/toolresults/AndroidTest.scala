@@ -24,10 +24,10 @@ object AndroidTest {
     testTimeout: Duration = null
   ): AndroidTest = {
     val __obj = js.Dynamic.literal()
-    if (androidAppInfo != null) __obj.updateDynamic("androidAppInfo")(androidAppInfo)
-    if (androidInstrumentationTest != null) __obj.updateDynamic("androidInstrumentationTest")(androidInstrumentationTest)
-    if (androidRoboTest != null) __obj.updateDynamic("androidRoboTest")(androidRoboTest)
-    if (testTimeout != null) __obj.updateDynamic("testTimeout")(testTimeout)
+    if (androidAppInfo != null) __obj.updateDynamic("androidAppInfo")(androidAppInfo.asInstanceOf[js.Any])
+    if (androidInstrumentationTest != null) __obj.updateDynamic("androidInstrumentationTest")(androidInstrumentationTest.asInstanceOf[js.Any])
+    if (androidRoboTest != null) __obj.updateDynamic("androidRoboTest")(androidRoboTest.asInstanceOf[js.Any])
+    if (testTimeout != null) __obj.updateDynamic("testTimeout")(testTimeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[AndroidTest]
   }
 }

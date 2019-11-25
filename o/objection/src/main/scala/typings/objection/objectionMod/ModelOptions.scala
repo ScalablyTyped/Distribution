@@ -18,9 +18,9 @@ object ModelOptions {
     skipValidation: js.UndefOr[Boolean] = js.undefined
   ): ModelOptions = {
     val __obj = js.Dynamic.literal()
-    if (old != null) __obj.updateDynamic("old")(old)
-    if (!js.isUndefined(patch)) __obj.updateDynamic("patch")(patch)
-    if (!js.isUndefined(skipValidation)) __obj.updateDynamic("skipValidation")(skipValidation)
+    if (old != null) __obj.updateDynamic("old")(old.asInstanceOf[js.Any])
+    if (!js.isUndefined(patch)) __obj.updateDynamic("patch")(patch.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipValidation)) __obj.updateDynamic("skipValidation")(skipValidation.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelOptions]
   }
 }

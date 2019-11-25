@@ -13,7 +13,7 @@ object CreateDatabaseMetadata {
   @scala.inline
   def apply(database: String = null): CreateDatabaseMetadata = {
     val __obj = js.Dynamic.literal()
-    if (database != null) __obj.updateDynamic("database")(database)
+    if (database != null) __obj.updateDynamic("database")(database.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDatabaseMetadata]
   }
 }

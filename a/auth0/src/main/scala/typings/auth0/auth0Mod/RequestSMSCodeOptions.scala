@@ -11,7 +11,7 @@ trait RequestSMSCodeOptions extends RequestSMSOptions {
 object RequestSMSCodeOptions {
   @scala.inline
   def apply(client_id: String, phone_number: String): RequestSMSCodeOptions = {
-    val __obj = js.Dynamic.literal(client_id = client_id, phone_number = phone_number)
+    val __obj = js.Dynamic.literal(client_id = client_id.asInstanceOf[js.Any], phone_number = phone_number.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RequestSMSCodeOptions]
   }

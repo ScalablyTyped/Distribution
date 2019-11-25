@@ -18,7 +18,7 @@ object WrapRootElementBrowserArgs {
     getResourcesForPathnameSync: js.Function,
     pathname: String
   ): WrapRootElementBrowserArgs = {
-    val __obj = js.Dynamic.literal(element = element, getResourceURLsForPathname = getResourceURLsForPathname, getResourcesForPathname = getResourcesForPathname, getResourcesForPathnameSync = getResourcesForPathnameSync, pathname = pathname)
+    val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], getResourceURLsForPathname = getResourceURLsForPathname.asInstanceOf[js.Any], getResourcesForPathname = getResourcesForPathname.asInstanceOf[js.Any], getResourcesForPathnameSync = getResourcesForPathnameSync.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WrapRootElementBrowserArgs]
   }

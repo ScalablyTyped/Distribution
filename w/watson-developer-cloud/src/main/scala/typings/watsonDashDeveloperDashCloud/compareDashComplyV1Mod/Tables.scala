@@ -37,14 +37,14 @@ object Tables {
     text: String = null
   ): Tables = {
     val __obj = js.Dynamic.literal()
-    if (body_cells != null) __obj.updateDynamic("body_cells")(body_cells)
-    if (column_headers != null) __obj.updateDynamic("column_headers")(column_headers)
-    if (key_value_pairs != null) __obj.updateDynamic("key_value_pairs")(key_value_pairs)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (row_headers != null) __obj.updateDynamic("row_headers")(row_headers)
-    if (section_title != null) __obj.updateDynamic("section_title")(section_title)
-    if (table_headers != null) __obj.updateDynamic("table_headers")(table_headers)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (body_cells != null) __obj.updateDynamic("body_cells")(body_cells.asInstanceOf[js.Any])
+    if (column_headers != null) __obj.updateDynamic("column_headers")(column_headers.asInstanceOf[js.Any])
+    if (key_value_pairs != null) __obj.updateDynamic("key_value_pairs")(key_value_pairs.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (row_headers != null) __obj.updateDynamic("row_headers")(row_headers.asInstanceOf[js.Any])
+    if (section_title != null) __obj.updateDynamic("section_title")(section_title.asInstanceOf[js.Any])
+    if (table_headers != null) __obj.updateDynamic("table_headers")(table_headers.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tables]
   }
 }

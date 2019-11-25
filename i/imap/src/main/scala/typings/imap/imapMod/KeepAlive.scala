@@ -21,7 +21,7 @@ object KeepAlive {
     interval: Int | Double = null
   ): KeepAlive = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(forceNoop)) __obj.updateDynamic("forceNoop")(forceNoop)
+    if (!js.isUndefined(forceNoop)) __obj.updateDynamic("forceNoop")(forceNoop.asInstanceOf[js.Any])
     if (idleInterval != null) __obj.updateDynamic("idleInterval")(idleInterval.asInstanceOf[js.Any])
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeepAlive]

@@ -42,7 +42,7 @@ object GetOptionsResult {
     strokeWeight: Double,
     zIndex: Double
   ): GetOptionsResult[ExtraData] = {
-    val __obj = js.Dynamic.literal(borderWeight = borderWeight, bubble = bubble, clickable = clickable, dirColor = dirColor, dirImg = dirImg, extData = extData.asInstanceOf[js.Any], geodesic = geodesic, isOutline = isOutline, lineCap = lineCap, lineJoin = lineJoin, map = map, outlineColor = outlineColor, path = path, showDir = showDir, strokeColor = strokeColor, strokeDasharray = strokeDasharray, strokeOpacity = strokeOpacity, strokeStyle = strokeStyle, strokeWeight = strokeWeight, zIndex = zIndex)
+    val __obj = js.Dynamic.literal(borderWeight = borderWeight.asInstanceOf[js.Any], bubble = bubble.asInstanceOf[js.Any], clickable = clickable.asInstanceOf[js.Any], dirColor = dirColor.asInstanceOf[js.Any], dirImg = dirImg.asInstanceOf[js.Any], extData = extData.asInstanceOf[js.Any], geodesic = geodesic.asInstanceOf[js.Any], isOutline = isOutline.asInstanceOf[js.Any], lineCap = lineCap.asInstanceOf[js.Any], lineJoin = lineJoin.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], outlineColor = outlineColor.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], showDir = showDir.asInstanceOf[js.Any], strokeColor = strokeColor.asInstanceOf[js.Any], strokeDasharray = strokeDasharray.asInstanceOf[js.Any], strokeOpacity = strokeOpacity.asInstanceOf[js.Any], strokeStyle = strokeStyle.asInstanceOf[js.Any], strokeWeight = strokeWeight.asInstanceOf[js.Any], zIndex = zIndex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetOptionsResult[ExtraData]]
   }

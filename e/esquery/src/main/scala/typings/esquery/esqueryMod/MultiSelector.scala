@@ -11,9 +11,9 @@ trait MultiSelector extends Selector {
 object MultiSelector {
   @scala.inline
   def apply(selectors: js.Array[Selector], `type`: String, subject: js.UndefOr[Boolean] = js.undefined): MultiSelector = {
-    val __obj = js.Dynamic.literal(selectors = selectors)
-    __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(subject)) __obj.updateDynamic("subject")(subject)
+    val __obj = js.Dynamic.literal(selectors = selectors.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(subject)) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiSelector]
   }
 }

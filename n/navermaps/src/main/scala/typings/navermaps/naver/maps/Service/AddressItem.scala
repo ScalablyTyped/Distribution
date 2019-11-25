@@ -13,7 +13,7 @@ trait AddressItem extends js.Object {
 object AddressItem {
   @scala.inline
   def apply(addrdetail: Anon_Country, address: String): AddressItem = {
-    val __obj = js.Dynamic.literal(addrdetail = addrdetail, address = address)
+    val __obj = js.Dynamic.literal(addrdetail = addrdetail.asInstanceOf[js.Any], address = address.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AddressItem]
   }

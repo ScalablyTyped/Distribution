@@ -26,13 +26,13 @@ object InitializeOptions {
     titleCase: js.UndefOr[Boolean] = js.undefined
   ): InitializeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alwaysSendToDefaultTracker)) __obj.updateDynamic("alwaysSendToDefaultTracker")(alwaysSendToDefaultTracker)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (gaAddress != null) __obj.updateDynamic("gaAddress")(gaAddress)
-    if (gaOptions != null) __obj.updateDynamic("gaOptions")(gaOptions)
-    if (!js.isUndefined(standardImplementation)) __obj.updateDynamic("standardImplementation")(standardImplementation)
-    if (!js.isUndefined(testMode)) __obj.updateDynamic("testMode")(testMode)
-    if (!js.isUndefined(titleCase)) __obj.updateDynamic("titleCase")(titleCase)
+    if (!js.isUndefined(alwaysSendToDefaultTracker)) __obj.updateDynamic("alwaysSendToDefaultTracker")(alwaysSendToDefaultTracker.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (gaAddress != null) __obj.updateDynamic("gaAddress")(gaAddress.asInstanceOf[js.Any])
+    if (gaOptions != null) __obj.updateDynamic("gaOptions")(gaOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(standardImplementation)) __obj.updateDynamic("standardImplementation")(standardImplementation.asInstanceOf[js.Any])
+    if (!js.isUndefined(testMode)) __obj.updateDynamic("testMode")(testMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(titleCase)) __obj.updateDynamic("titleCase")(titleCase.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitializeOptions]
   }
 }

@@ -26,9 +26,9 @@ object Anon_Col {
     visualRow: Double,
     dateFormat: String = null
   ): Anon_Col = {
-    val __obj = js.Dynamic.literal(col = col, instance = instance, row = row, visualCol = visualCol, visualRow = visualRow)
-    __obj.updateDynamic("type")(`type`)
-    if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat)
+    val __obj = js.Dynamic.literal(col = col.asInstanceOf[js.Any], instance = instance.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], visualCol = visualCol.asInstanceOf[js.Any], visualRow = visualRow.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Col]
   }
 }

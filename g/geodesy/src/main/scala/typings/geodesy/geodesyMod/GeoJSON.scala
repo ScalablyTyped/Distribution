@@ -12,8 +12,8 @@ trait GeoJSON extends js.Object {
 object GeoJSON {
   @scala.inline
   def apply(coordinates: js.Tuple2[Double, Double], `type`: String): GeoJSON = {
-    val __obj = js.Dynamic.literal(coordinates = coordinates)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoJSON]
   }
 }

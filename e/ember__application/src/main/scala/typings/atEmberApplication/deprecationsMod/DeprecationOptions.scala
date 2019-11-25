@@ -13,8 +13,8 @@ trait DeprecationOptions extends js.Object {
 object DeprecationOptions {
   @scala.inline
   def apply(id: String, until: String, url: String = null): DeprecationOptions = {
-    val __obj = js.Dynamic.literal(id = id, until = until)
-    if (url != null) __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], until = until.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeprecationOptions]
   }
 }

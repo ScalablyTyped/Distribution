@@ -28,13 +28,13 @@ object IValue {
     structValue: IStruct = null
   ): IValue = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(boolValue)) __obj.updateDynamic("boolValue")(boolValue)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (listValue != null) __obj.updateDynamic("listValue")(listValue)
-    if (nullValue != null) __obj.updateDynamic("nullValue")(nullValue)
+    if (!js.isUndefined(boolValue)) __obj.updateDynamic("boolValue")(boolValue.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (listValue != null) __obj.updateDynamic("listValue")(listValue.asInstanceOf[js.Any])
+    if (nullValue != null) __obj.updateDynamic("nullValue")(nullValue.asInstanceOf[js.Any])
     if (numberValue != null) __obj.updateDynamic("numberValue")(numberValue.asInstanceOf[js.Any])
-    if (stringValue != null) __obj.updateDynamic("stringValue")(stringValue)
-    if (structValue != null) __obj.updateDynamic("structValue")(structValue)
+    if (stringValue != null) __obj.updateDynamic("stringValue")(stringValue.asInstanceOf[js.Any])
+    if (structValue != null) __obj.updateDynamic("structValue")(structValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[IValue]
   }
 }

@@ -36,12 +36,12 @@ object StartEventArgs {
     `type`: String = null
   ): StartEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (errorWords != null) __obj.updateDynamic("errorWords")(errorWords)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (requestType != null) __obj.updateDynamic("requestType")(requestType)
-    if (targetSentence != null) __obj.updateDynamic("targetSentence")(targetSentence)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (errorWords != null) __obj.updateDynamic("errorWords")(errorWords.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (requestType != null) __obj.updateDynamic("requestType")(requestType.asInstanceOf[js.Any])
+    if (targetSentence != null) __obj.updateDynamic("targetSentence")(targetSentence.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartEventArgs]
   }
 }

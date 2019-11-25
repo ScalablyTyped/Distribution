@@ -15,8 +15,8 @@ object ResolvedTypeReferenceDirectiveWithFailedLookupLocations {
     failedLookupLocations: js.Array[String],
     resolvedTypeReferenceDirective: ResolvedTypeReferenceDirective = null
   ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = {
-    val __obj = js.Dynamic.literal(failedLookupLocations = failedLookupLocations)
-    if (resolvedTypeReferenceDirective != null) __obj.updateDynamic("resolvedTypeReferenceDirective")(resolvedTypeReferenceDirective)
+    val __obj = js.Dynamic.literal(failedLookupLocations = failedLookupLocations.asInstanceOf[js.Any])
+    if (resolvedTypeReferenceDirective != null) __obj.updateDynamic("resolvedTypeReferenceDirective")(resolvedTypeReferenceDirective.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolvedTypeReferenceDirectiveWithFailedLookupLocations]
   }
 }

@@ -85,18 +85,18 @@ object SlideShowOptions {
     videomute: js.UndefOr[Boolean] = js.undefined
   ): SlideShowOptions = {
     val __obj = js.Dynamic.literal()
-    if (animation != null) __obj.updateDynamic("animation")(animation)
-    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay)
+    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay.asInstanceOf[js.Any])
     if (autoplayInterval != null) __obj.updateDynamic("autoplayInterval")(autoplayInterval.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height)
-    if (!js.isUndefined(kenburns)) __obj.updateDynamic("kenburns")(kenburns)
-    if (kenburnsanimations != null) __obj.updateDynamic("kenburnsanimations")(kenburnsanimations)
-    if (!js.isUndefined(pauseOnHover)) __obj.updateDynamic("pauseOnHover")(pauseOnHover)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(kenburns)) __obj.updateDynamic("kenburns")(kenburns.asInstanceOf[js.Any])
+    if (kenburnsanimations != null) __obj.updateDynamic("kenburnsanimations")(kenburnsanimations.asInstanceOf[js.Any])
+    if (!js.isUndefined(pauseOnHover)) __obj.updateDynamic("pauseOnHover")(pauseOnHover.asInstanceOf[js.Any])
     if (slices != null) __obj.updateDynamic("slices")(slices.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (!js.isUndefined(videoautoplay)) __obj.updateDynamic("videoautoplay")(videoautoplay)
-    if (!js.isUndefined(videomute)) __obj.updateDynamic("videomute")(videomute)
+    if (!js.isUndefined(videoautoplay)) __obj.updateDynamic("videoautoplay")(videoautoplay.asInstanceOf[js.Any])
+    if (!js.isUndefined(videomute)) __obj.updateDynamic("videomute")(videomute.asInstanceOf[js.Any])
     __obj.asInstanceOf[SlideShowOptions]
   }
 }

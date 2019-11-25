@@ -28,13 +28,13 @@ object QueryOptions {
     start: Int | Double = null,
     until: Date = null
   ): QueryOptions = {
-    val __obj = js.Dynamic.literal(fields = fields)
-    if (from != null) __obj.updateDynamic("from")(from)
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (until != null) __obj.updateDynamic("until")(until)
+    if (until != null) __obj.updateDynamic("until")(until.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryOptions]
   }
 }

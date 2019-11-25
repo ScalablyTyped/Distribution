@@ -25,7 +25,7 @@ object PropertyIndexedKeyframes {
     offset: Double | (js.Array[Double | Null]) = null
   ): PropertyIndexedKeyframes = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (composite != null) __obj.updateDynamic("composite")(composite.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])

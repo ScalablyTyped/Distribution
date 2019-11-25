@@ -75,12 +75,12 @@ object RelayWeights {
     guard_probability: Partial[Record[`1_week` | `1_month` | `6_months` | `1_year` | `5_years`, Histogram]] = null,
     middle_probability: Partial[Record[`1_week` | `1_month` | `6_months` | `1_year` | `5_years`, Histogram]] = null
   ): RelayWeights = {
-    val __obj = js.Dynamic.literal(fingerprint = fingerprint)
-    if (consensus_weight != null) __obj.updateDynamic("consensus_weight")(consensus_weight)
-    if (consensus_weight_fraction != null) __obj.updateDynamic("consensus_weight_fraction")(consensus_weight_fraction)
-    if (exit_probability != null) __obj.updateDynamic("exit_probability")(exit_probability)
-    if (guard_probability != null) __obj.updateDynamic("guard_probability")(guard_probability)
-    if (middle_probability != null) __obj.updateDynamic("middle_probability")(middle_probability)
+    val __obj = js.Dynamic.literal(fingerprint = fingerprint.asInstanceOf[js.Any])
+    if (consensus_weight != null) __obj.updateDynamic("consensus_weight")(consensus_weight.asInstanceOf[js.Any])
+    if (consensus_weight_fraction != null) __obj.updateDynamic("consensus_weight_fraction")(consensus_weight_fraction.asInstanceOf[js.Any])
+    if (exit_probability != null) __obj.updateDynamic("exit_probability")(exit_probability.asInstanceOf[js.Any])
+    if (guard_probability != null) __obj.updateDynamic("guard_probability")(guard_probability.asInstanceOf[js.Any])
+    if (middle_probability != null) __obj.updateDynamic("middle_probability")(middle_probability.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelayWeights]
   }
 }

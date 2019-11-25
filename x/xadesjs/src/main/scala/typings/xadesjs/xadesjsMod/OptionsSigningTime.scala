@@ -20,8 +20,8 @@ object OptionsSigningTime {
   @scala.inline
   def apply(format: String = null, value: Date = null): OptionsSigningTime = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsSigningTime]
   }
 }

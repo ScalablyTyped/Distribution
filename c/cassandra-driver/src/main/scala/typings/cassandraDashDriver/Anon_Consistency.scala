@@ -25,9 +25,9 @@ object Anon_Consistency {
   ): Anon_Consistency = {
     val __obj = js.Dynamic.literal()
     if (consistency != null) __obj.updateDynamic("consistency")(consistency.asInstanceOf[js.Any])
-    if (loadBalancing != null) __obj.updateDynamic("loadBalancing")(loadBalancing)
+    if (loadBalancing != null) __obj.updateDynamic("loadBalancing")(loadBalancing.asInstanceOf[js.Any])
     if (readTimeout != null) __obj.updateDynamic("readTimeout")(readTimeout.asInstanceOf[js.Any])
-    if (retry != null) __obj.updateDynamic("retry")(retry)
+    if (retry != null) __obj.updateDynamic("retry")(retry.asInstanceOf[js.Any])
     if (serialConsistency != null) __obj.updateDynamic("serialConsistency")(serialConsistency.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Consistency]
   }

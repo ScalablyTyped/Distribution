@@ -34,16 +34,16 @@ object Anon_Attachments {
     to: String | js.Array[String] = null
   ): Anon_Attachments = {
     val __obj = js.Dynamic.literal()
-    if (attachments != null) __obj.updateDynamic("attachments")(attachments)
+    if (attachments != null) __obj.updateDynamic("attachments")(attachments.asInstanceOf[js.Any])
     if (bcc != null) __obj.updateDynamic("bcc")(bcc.asInstanceOf[js.Any])
     if (cc != null) __obj.updateDynamic("cc")(cc.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (html != null) __obj.updateDynamic("html")(html)
-    if (mailComposer != null) __obj.updateDynamic("mailComposer")(mailComposer)
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
+    if (mailComposer != null) __obj.updateDynamic("mailComposer")(mailComposer.asInstanceOf[js.Any])
     if (replyTo != null) __obj.updateDynamic("replyTo")(replyTo.asInstanceOf[js.Any])
-    if (subject != null) __obj.updateDynamic("subject")(subject)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Attachments]
   }

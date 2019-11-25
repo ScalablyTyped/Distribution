@@ -22,6 +22,6 @@ trait Maybe[T] extends Type[Unit | T] {
 @js.native
 object maybe extends js.Object {
   def apply[T](`type`: Constructor[T]): Maybe[T] = js.native
-  def apply[T](`type`: Constructor[T], name: String): Maybe[T] = js.native
+  def apply[T](`type`: Constructor[T], name: java.lang.String): Maybe[T] = js.native
 }
 

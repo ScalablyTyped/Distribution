@@ -24,10 +24,10 @@ object SourceFork {
     residualSource: DerivedSource = null
   ): SourceFork = {
     val __obj = js.Dynamic.literal()
-    if (primary != null) __obj.updateDynamic("primary")(primary)
-    if (primarySource != null) __obj.updateDynamic("primarySource")(primarySource)
-    if (residual != null) __obj.updateDynamic("residual")(residual)
-    if (residualSource != null) __obj.updateDynamic("residualSource")(residualSource)
+    if (primary != null) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
+    if (primarySource != null) __obj.updateDynamic("primarySource")(primarySource.asInstanceOf[js.Any])
+    if (residual != null) __obj.updateDynamic("residual")(residual.asInstanceOf[js.Any])
+    if (residualSource != null) __obj.updateDynamic("residualSource")(residualSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceFork]
   }
 }

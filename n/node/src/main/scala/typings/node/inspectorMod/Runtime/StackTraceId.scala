@@ -16,8 +16,8 @@ trait StackTraceId extends js.Object {
 object StackTraceId {
   @scala.inline
   def apply(id: java.lang.String, debuggerId: UniqueDebuggerId = null): StackTraceId = {
-    val __obj = js.Dynamic.literal(id = id)
-    if (debuggerId != null) __obj.updateDynamic("debuggerId")(debuggerId)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    if (debuggerId != null) __obj.updateDynamic("debuggerId")(debuggerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackTraceId]
   }
 }

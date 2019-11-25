@@ -14,10 +14,10 @@ trait ITokenThemeRule extends js.Object {
 object ITokenThemeRule {
   @scala.inline
   def apply(token: String, background: String = null, fontStyle: String = null, foreground: String = null): ITokenThemeRule = {
-    val __obj = js.Dynamic.literal(token = token)
-    if (background != null) __obj.updateDynamic("background")(background)
-    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle)
-    if (foreground != null) __obj.updateDynamic("foreground")(foreground)
+    val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any])
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
+    if (foreground != null) __obj.updateDynamic("foreground")(foreground.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITokenThemeRule]
   }
 }

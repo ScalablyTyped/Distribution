@@ -108,12 +108,6 @@ object Field extends js.Object {
   ): FieldDecorator = js.native
   def d(
     fieldId: Double,
-    fieldType: js.Object | bool | bytes | double | fixed32 | fixed64 | float | int32 | int64 | sfixed32 | sfixed64 | sint32 | sint64 | string | uint32 | uint64,
-    fieldRule: optional,
-    defaultValue: Buffer | Uint8Array
-  ): FieldDecorator = js.native
-  def d(
-    fieldId: Double,
     fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes | js.Object,
     fieldRule: optional,
     defaultValue: String
@@ -141,6 +135,12 @@ object Field extends js.Object {
     fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes | js.Object,
     fieldRule: optional,
     defaultValue: Long
+  ): FieldDecorator = js.native
+  def d(
+    fieldId: Double,
+    fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes | js.Object,
+    fieldRule: optional,
+    defaultValue: Uint8Array
   ): FieldDecorator = js.native
   def d(
     fieldId: Double,
@@ -149,12 +149,6 @@ object Field extends js.Object {
   ): FieldDecorator = js.native
   def d(
     fieldId: Double,
-    fieldType: js.Object | bool | bytes | double | fixed32 | fixed64 | float | int32 | int64 | sfixed32 | sfixed64 | sint32 | sint64 | string | uint32 | uint64,
-    fieldRule: repeated,
-    defaultValue: Buffer | Uint8Array
-  ): FieldDecorator = js.native
-  def d(
-    fieldId: Double,
     fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes | js.Object,
     fieldRule: repeated,
     defaultValue: String
@@ -182,6 +176,12 @@ object Field extends js.Object {
     fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes | js.Object,
     fieldRule: repeated,
     defaultValue: Long
+  ): FieldDecorator = js.native
+  def d(
+    fieldId: Double,
+    fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes | js.Object,
+    fieldRule: repeated,
+    defaultValue: Uint8Array
   ): FieldDecorator = js.native
   def d(
     fieldId: Double,
@@ -190,12 +190,6 @@ object Field extends js.Object {
   ): FieldDecorator = js.native
   def d(
     fieldId: Double,
-    fieldType: js.Object | bool | bytes | double | fixed32 | fixed64 | float | int32 | int64 | sfixed32 | sfixed64 | sint32 | sint64 | string | uint32 | uint64,
-    fieldRule: required,
-    defaultValue: Buffer | Uint8Array
-  ): FieldDecorator = js.native
-  def d(
-    fieldId: Double,
     fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes | js.Object,
     fieldRule: required,
     defaultValue: String
@@ -223,6 +217,12 @@ object Field extends js.Object {
     fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes | js.Object,
     fieldRule: required,
     defaultValue: Long
+  ): FieldDecorator = js.native
+  def d(
+    fieldId: Double,
+    fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes | js.Object,
+    fieldRule: required,
+    defaultValue: Uint8Array
   ): FieldDecorator = js.native
   def d[T /* <: Message[T] */](fieldId: Double, fieldType: String): FieldDecorator = js.native
   /**

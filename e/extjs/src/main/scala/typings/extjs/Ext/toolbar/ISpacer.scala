@@ -9,10 +9,9 @@ trait ISpacer extends IComponent
 
 object ISpacer {
   @scala.inline
-  def apply(IComponent: IComponent = null, baseCls: java.lang.String = null): ISpacer = {
+  def apply(IComponent: IComponent = null): ISpacer = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IComponent)
-    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
+    if (IComponent != null) js.Dynamic.global.Object.assign(__obj, IComponent)
     __obj.asInstanceOf[ISpacer]
   }
 }

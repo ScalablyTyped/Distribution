@@ -18,7 +18,7 @@ object UploadValidation {
     minFileSize: Int | Double = null
   ): UploadValidation = {
     val __obj = js.Dynamic.literal()
-    if (allowedExtensions != null) __obj.updateDynamic("allowedExtensions")(allowedExtensions)
+    if (allowedExtensions != null) __obj.updateDynamic("allowedExtensions")(allowedExtensions.asInstanceOf[js.Any])
     if (maxFileSize != null) __obj.updateDynamic("maxFileSize")(maxFileSize.asInstanceOf[js.Any])
     if (minFileSize != null) __obj.updateDynamic("minFileSize")(minFileSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadValidation]

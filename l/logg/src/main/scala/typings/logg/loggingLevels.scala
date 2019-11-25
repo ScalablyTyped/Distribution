@@ -25,7 +25,7 @@ object loggingLevels {
     WARN: Double,
     toString: Double => String
   ): loggingLevels = {
-    val __obj = js.Dynamic.literal(FINE = FINE, FINER = FINER, FINEST = FINEST, INFO = INFO, SEVERE = SEVERE, WARN = WARN, toString = js.Any.fromFunction1(toString))
+    val __obj = js.Dynamic.literal(FINE = FINE.asInstanceOf[js.Any], FINER = FINER.asInstanceOf[js.Any], FINEST = FINEST.asInstanceOf[js.Any], INFO = INFO.asInstanceOf[js.Any], SEVERE = SEVERE.asInstanceOf[js.Any], WARN = WARN.asInstanceOf[js.Any], toString = js.Any.fromFunction1(toString))
   
     __obj.asInstanceOf[loggingLevels]
   }

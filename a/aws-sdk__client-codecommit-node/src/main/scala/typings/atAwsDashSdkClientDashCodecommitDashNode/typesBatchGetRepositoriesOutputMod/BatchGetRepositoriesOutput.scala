@@ -30,9 +30,9 @@ object BatchGetRepositoriesOutput {
     repositories: js.Array[_UnmarshalledRepositoryMetadata] = null,
     repositoriesNotFound: js.Array[String] = null
   ): BatchGetRepositoriesOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (repositories != null) __obj.updateDynamic("repositories")(repositories)
-    if (repositoriesNotFound != null) __obj.updateDynamic("repositoriesNotFound")(repositoriesNotFound)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (repositories != null) __obj.updateDynamic("repositories")(repositories.asInstanceOf[js.Any])
+    if (repositoriesNotFound != null) __obj.updateDynamic("repositoriesNotFound")(repositoriesNotFound.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchGetRepositoriesOutput]
   }
 }

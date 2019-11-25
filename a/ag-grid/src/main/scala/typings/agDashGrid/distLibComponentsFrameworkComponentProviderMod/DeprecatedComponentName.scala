@@ -12,7 +12,7 @@ trait DeprecatedComponentName extends js.Object {
 object DeprecatedComponentName {
   @scala.inline
   def apply(newComponentName: String, propertyHolder: String): DeprecatedComponentName = {
-    val __obj = js.Dynamic.literal(newComponentName = newComponentName, propertyHolder = propertyHolder)
+    val __obj = js.Dynamic.literal(newComponentName = newComponentName.asInstanceOf[js.Any], propertyHolder = propertyHolder.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeprecatedComponentName]
   }

@@ -29,7 +29,7 @@ object _Location {
     relativeFileVersion: BEFORE | AFTER | String = null
   ): _Location = {
     val __obj = js.Dynamic.literal()
-    if (filePath != null) __obj.updateDynamic("filePath")(filePath)
+    if (filePath != null) __obj.updateDynamic("filePath")(filePath.asInstanceOf[js.Any])
     if (filePosition != null) __obj.updateDynamic("filePosition")(filePosition.asInstanceOf[js.Any])
     if (relativeFileVersion != null) __obj.updateDynamic("relativeFileVersion")(relativeFileVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Location]

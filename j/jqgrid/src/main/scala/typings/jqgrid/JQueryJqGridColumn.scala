@@ -130,19 +130,19 @@ object JQueryJqGridColumn {
     sortable: js.UndefOr[Boolean] = js.undefined,
     width: Int | Double = null
   ): JQueryJqGridColumn = {
-    val __obj = js.Dynamic.literal(name = name)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (cellattr != null) __obj.updateDynamic("cellattr")(js.Any.fromFunction5(cellattr))
-    if (classes != null) __obj.updateDynamic("classes")(classes)
-    if (datefmt != null) __obj.updateDynamic("datefmt")(datefmt)
-    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable)
+    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
+    if (datefmt != null) __obj.updateDynamic("datefmt")(datefmt.asInstanceOf[js.Any])
+    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
     if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
-    if (index != null) __obj.updateDynamic("index")(index)
-    if (!js.isUndefined(key)) __obj.updateDynamic("key")(key)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (!js.isUndefined(search)) __obj.updateDynamic("search")(search)
-    if (!js.isUndefined(sortable)) __obj.updateDynamic("sortable")(sortable)
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(key)) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (!js.isUndefined(search)) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
+    if (!js.isUndefined(sortable)) __obj.updateDynamic("sortable")(sortable.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryJqGridColumn]
   }

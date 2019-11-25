@@ -107,7 +107,6 @@ object HashMap {
   @scala.inline
   def apply[TKey, TValue](
     clear: () => HashMap[TKey, TValue],
-    clone: () => HashMap[TKey, TValue],
     copy: HashMap[TKey, TValue] => HashMap[TKey, TValue],
     count: () => Double,
     delete: TKey => HashMap[TKey, TValue],
@@ -122,7 +121,7 @@ object HashMap {
     set: (TKey, TValue) => HashMap[TKey, TValue],
     values: () => js.Array[TValue]
   ): HashMap[TKey, TValue] = {
-    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), clone = js.Any.fromFunction0(clone), copy = js.Any.fromFunction1(copy), count = js.Any.fromFunction0(count), delete = js.Any.fromFunction1(delete), entries = js.Any.fromFunction0(entries), forEach = js.Any.fromFunction1(forEach), get = js.Any.fromFunction1(get), has = js.Any.fromFunction1(has), keys = js.Any.fromFunction0(keys), multi = js.Any.fromFunction1(multi), remove = js.Any.fromFunction1(remove), search = js.Any.fromFunction1(search), set = js.Any.fromFunction2(set), values = js.Any.fromFunction0(values))
+    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), copy = js.Any.fromFunction1(copy), count = js.Any.fromFunction0(count), delete = js.Any.fromFunction1(delete), entries = js.Any.fromFunction0(entries), forEach = js.Any.fromFunction1(forEach), get = js.Any.fromFunction1(get), has = js.Any.fromFunction1(has), keys = js.Any.fromFunction0(keys), multi = js.Any.fromFunction1(multi), remove = js.Any.fromFunction1(remove), search = js.Any.fromFunction1(search), set = js.Any.fromFunction2(set), values = js.Any.fromFunction0(values))
   
     __obj.asInstanceOf[HashMap[TKey, TValue]]
   }

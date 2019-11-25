@@ -30,7 +30,7 @@ object LoggerHttpOptions {
     protocol: String,
     timeout: Double
   ): LoggerHttpOptions = {
-    val __obj = js.Dynamic.literal(agent = agent, auth = auth, headers = headers, hostname = hostname, method = method, path = path, port = port, protocol = protocol, timeout = timeout)
+    val __obj = js.Dynamic.literal(agent = agent.asInstanceOf[js.Any], auth = auth.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], hostname = hostname.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LoggerHttpOptions]
   }

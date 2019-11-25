@@ -12,7 +12,7 @@ trait DiagramProps extends js.Object {
 object DiagramProps {
   @scala.inline
   def apply(connections: js.Array[Anon_Anchor]): DiagramProps = {
-    val __obj = js.Dynamic.literal(connections = connections)
+    val __obj = js.Dynamic.literal(connections = connections.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DiagramProps]
   }

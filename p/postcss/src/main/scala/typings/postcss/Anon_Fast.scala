@@ -26,8 +26,8 @@ object Anon_Fast {
   @scala.inline
   def apply(fast: String = null, props: js.Array[String] = null): Anon_Fast = {
     val __obj = js.Dynamic.literal()
-    if (fast != null) __obj.updateDynamic("fast")(fast)
-    if (props != null) __obj.updateDynamic("props")(props)
+    if (fast != null) __obj.updateDynamic("fast")(fast.asInstanceOf[js.Any])
+    if (props != null) __obj.updateDynamic("props")(props.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Fast]
   }
 }

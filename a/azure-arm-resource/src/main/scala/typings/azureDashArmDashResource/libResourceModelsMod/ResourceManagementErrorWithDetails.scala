@@ -32,10 +32,10 @@ object ResourceManagementErrorWithDetails {
     target: String = null
   ): ResourceManagementErrorWithDetails = {
     val __obj = js.Dynamic.literal()
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (details != null) __obj.updateDynamic("details")(details)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (details != null) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceManagementErrorWithDetails]
   }
 }

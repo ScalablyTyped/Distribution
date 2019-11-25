@@ -28,7 +28,7 @@ object Options {
     if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (!js.isUndefined(useOriginalUrl)) __obj.updateDynamic("useOriginalUrl")(useOriginalUrl)
+    if (!js.isUndefined(useOriginalUrl)) __obj.updateDynamic("useOriginalUrl")(useOriginalUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait MessageViewViewStates extends js.Object
 
+object MessageViewViewStates {
+  @scala.inline
+  def COLLAPSED: typings.inboxsdk.inboxsdkStrings.COLLAPSED = this.cast("COLLAPSED")
+  @scala.inline
+  def EXPANDED: typings.inboxsdk.inboxsdkStrings.EXPANDED = this.cast("EXPANDED")
+  @scala.inline
+  def HIDDEN: typings.inboxsdk.inboxsdkStrings.HIDDEN = this.cast("HIDDEN")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

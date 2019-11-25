@@ -22,11 +22,11 @@ object Anon_Notification {
     webPreview: js.UndefOr[Boolean] = js.undefined
   ): Anon_Notification = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(notification)) __obj.updateDynamic("notification")(notification)
-    if (parseMode != null) __obj.updateDynamic("parseMode")(parseMode)
-    if (replyMarkup != null) __obj.updateDynamic("replyMarkup")(replyMarkup)
+    if (!js.isUndefined(notification)) __obj.updateDynamic("notification")(notification.asInstanceOf[js.Any])
+    if (parseMode != null) __obj.updateDynamic("parseMode")(parseMode.asInstanceOf[js.Any])
+    if (replyMarkup != null) __obj.updateDynamic("replyMarkup")(replyMarkup.asInstanceOf[js.Any])
     if (replyToMessage != null) __obj.updateDynamic("replyToMessage")(replyToMessage.asInstanceOf[js.Any])
-    if (!js.isUndefined(webPreview)) __obj.updateDynamic("webPreview")(webPreview)
+    if (!js.isUndefined(webPreview)) __obj.updateDynamic("webPreview")(webPreview.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Notification]
   }
 }

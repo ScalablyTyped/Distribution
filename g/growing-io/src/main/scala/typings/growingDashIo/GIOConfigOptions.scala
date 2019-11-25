@@ -15,8 +15,8 @@ object GIOConfigOptions {
   @scala.inline
   def apply(dataCollect: js.UndefOr[Boolean] = js.undefined, hashtag: js.UndefOr[Boolean] = js.undefined): GIOConfigOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dataCollect)) __obj.updateDynamic("dataCollect")(dataCollect)
-    if (!js.isUndefined(hashtag)) __obj.updateDynamic("hashtag")(hashtag)
+    if (!js.isUndefined(dataCollect)) __obj.updateDynamic("dataCollect")(dataCollect.asInstanceOf[js.Any])
+    if (!js.isUndefined(hashtag)) __obj.updateDynamic("hashtag")(hashtag.asInstanceOf[js.Any])
     __obj.asInstanceOf[GIOConfigOptions]
   }
 }

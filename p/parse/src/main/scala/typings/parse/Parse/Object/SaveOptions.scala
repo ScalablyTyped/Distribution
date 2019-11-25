@@ -32,13 +32,13 @@ object SaveOptions {
     wait: js.UndefOr[Boolean] = js.undefined
   ): SaveOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cascadeSave)) __obj.updateDynamic("cascadeSave")(cascadeSave)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (sessionToken != null) __obj.updateDynamic("sessionToken")(sessionToken)
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
-    if (success != null) __obj.updateDynamic("success")(success)
-    if (!js.isUndefined(useMasterKey)) __obj.updateDynamic("useMasterKey")(useMasterKey)
-    if (!js.isUndefined(wait)) __obj.updateDynamic("wait")(wait)
+    if (!js.isUndefined(cascadeSave)) __obj.updateDynamic("cascadeSave")(cascadeSave.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (sessionToken != null) __obj.updateDynamic("sessionToken")(sessionToken.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
+    if (success != null) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
+    if (!js.isUndefined(useMasterKey)) __obj.updateDynamic("useMasterKey")(useMasterKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(wait)) __obj.updateDynamic("wait")(wait.asInstanceOf[js.Any])
     __obj.asInstanceOf[SaveOptions]
   }
 }

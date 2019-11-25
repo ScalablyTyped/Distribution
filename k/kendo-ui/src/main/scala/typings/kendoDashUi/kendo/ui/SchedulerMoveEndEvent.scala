@@ -25,12 +25,12 @@ object SchedulerMoveEndEvent {
     slot: js.Any = null,
     start: Date = null
   ): SchedulerMoveEndEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (end != null) __obj.updateDynamic("end")(end)
-    if (event != null) __obj.updateDynamic("event")(event)
-    if (resources != null) __obj.updateDynamic("resources")(resources)
-    if (slot != null) __obj.updateDynamic("slot")(slot)
-    if (start != null) __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
+    if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
+    if (slot != null) __obj.updateDynamic("slot")(slot.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchedulerMoveEndEvent]
   }
 }

@@ -17,7 +17,7 @@ trait CreateAliasOutput extends OutputTypesUnion {
 object CreateAliasOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata): CreateAliasOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CreateAliasOutput]
   }

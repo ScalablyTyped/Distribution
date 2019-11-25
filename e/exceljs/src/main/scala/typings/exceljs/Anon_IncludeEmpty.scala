@@ -11,7 +11,7 @@ trait Anon_IncludeEmpty extends js.Object {
 object Anon_IncludeEmpty {
   @scala.inline
   def apply(includeEmpty: Boolean): Anon_IncludeEmpty = {
-    val __obj = js.Dynamic.literal(includeEmpty = includeEmpty)
+    val __obj = js.Dynamic.literal(includeEmpty = includeEmpty.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IncludeEmpty]
   }

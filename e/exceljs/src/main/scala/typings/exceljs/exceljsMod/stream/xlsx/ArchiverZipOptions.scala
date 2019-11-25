@@ -22,7 +22,7 @@ object ArchiverZipOptions {
     store: Boolean,
     zlib: Partial[ZlibOptions]
   ): ArchiverZipOptions = {
-    val __obj = js.Dynamic.literal(comment = comment, forceLocalTime = forceLocalTime, forceZip64 = forceZip64, store = store, zlib = zlib)
+    val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any], forceLocalTime = forceLocalTime.asInstanceOf[js.Any], forceZip64 = forceZip64.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any], zlib = zlib.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ArchiverZipOptions]
   }

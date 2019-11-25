@@ -87,18 +87,18 @@ object IgGridHidingLocale {
     hideColumnIconTooltip: String = null
   ): IgGridHidingLocale = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (columnChooserButtonApplyText != null) __obj.updateDynamic("columnChooserButtonApplyText")(columnChooserButtonApplyText)
-    if (columnChooserButtonCancelText != null) __obj.updateDynamic("columnChooserButtonCancelText")(columnChooserButtonCancelText)
-    if (columnChooserCaptionLabel != null) __obj.updateDynamic("columnChooserCaptionLabel")(columnChooserCaptionLabel)
-    if (columnChooserCloseButtonTooltip != null) __obj.updateDynamic("columnChooserCloseButtonTooltip")(columnChooserCloseButtonTooltip)
-    if (columnChooserDisplayText != null) __obj.updateDynamic("columnChooserDisplayText")(columnChooserDisplayText)
-    if (columnChooserHideText != null) __obj.updateDynamic("columnChooserHideText")(columnChooserHideText)
-    if (columnChooserResetButtonLabel != null) __obj.updateDynamic("columnChooserResetButtonLabel")(columnChooserResetButtonLabel)
-    if (columnChooserShowText != null) __obj.updateDynamic("columnChooserShowText")(columnChooserShowText)
-    if (columnHideText != null) __obj.updateDynamic("columnHideText")(columnHideText)
-    if (hiddenColumnIndicatorTooltipText != null) __obj.updateDynamic("hiddenColumnIndicatorTooltipText")(hiddenColumnIndicatorTooltipText)
-    if (hideColumnIconTooltip != null) __obj.updateDynamic("hideColumnIconTooltip")(hideColumnIconTooltip)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (columnChooserButtonApplyText != null) __obj.updateDynamic("columnChooserButtonApplyText")(columnChooserButtonApplyText.asInstanceOf[js.Any])
+    if (columnChooserButtonCancelText != null) __obj.updateDynamic("columnChooserButtonCancelText")(columnChooserButtonCancelText.asInstanceOf[js.Any])
+    if (columnChooserCaptionLabel != null) __obj.updateDynamic("columnChooserCaptionLabel")(columnChooserCaptionLabel.asInstanceOf[js.Any])
+    if (columnChooserCloseButtonTooltip != null) __obj.updateDynamic("columnChooserCloseButtonTooltip")(columnChooserCloseButtonTooltip.asInstanceOf[js.Any])
+    if (columnChooserDisplayText != null) __obj.updateDynamic("columnChooserDisplayText")(columnChooserDisplayText.asInstanceOf[js.Any])
+    if (columnChooserHideText != null) __obj.updateDynamic("columnChooserHideText")(columnChooserHideText.asInstanceOf[js.Any])
+    if (columnChooserResetButtonLabel != null) __obj.updateDynamic("columnChooserResetButtonLabel")(columnChooserResetButtonLabel.asInstanceOf[js.Any])
+    if (columnChooserShowText != null) __obj.updateDynamic("columnChooserShowText")(columnChooserShowText.asInstanceOf[js.Any])
+    if (columnHideText != null) __obj.updateDynamic("columnHideText")(columnHideText.asInstanceOf[js.Any])
+    if (hiddenColumnIndicatorTooltipText != null) __obj.updateDynamic("hiddenColumnIndicatorTooltipText")(hiddenColumnIndicatorTooltipText.asInstanceOf[js.Any])
+    if (hideColumnIconTooltip != null) __obj.updateDynamic("hideColumnIconTooltip")(hideColumnIconTooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridHidingLocale]
   }
 }

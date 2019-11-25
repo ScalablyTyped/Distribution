@@ -13,8 +13,8 @@ object CreativeFieldAssignment {
   @scala.inline
   def apply(creativeFieldId: String = null, creativeFieldValueId: String = null): CreativeFieldAssignment = {
     val __obj = js.Dynamic.literal()
-    if (creativeFieldId != null) __obj.updateDynamic("creativeFieldId")(creativeFieldId)
-    if (creativeFieldValueId != null) __obj.updateDynamic("creativeFieldValueId")(creativeFieldValueId)
+    if (creativeFieldId != null) __obj.updateDynamic("creativeFieldId")(creativeFieldId.asInstanceOf[js.Any])
+    if (creativeFieldValueId != null) __obj.updateDynamic("creativeFieldValueId")(creativeFieldValueId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreativeFieldAssignment]
   }
 }

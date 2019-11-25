@@ -31,9 +31,9 @@ object BlockMapDataHolder {
     isAdminRightsRequired: js.UndefOr[Boolean] = js.undefined,
     size: Int | Double = null
   ): BlockMapDataHolder = {
-    val __obj = js.Dynamic.literal(sha512 = sha512)
+    val __obj = js.Dynamic.literal(sha512 = sha512.asInstanceOf[js.Any])
     if (blockMapSize != null) __obj.updateDynamic("blockMapSize")(blockMapSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(isAdminRightsRequired)) __obj.updateDynamic("isAdminRightsRequired")(isAdminRightsRequired)
+    if (!js.isUndefined(isAdminRightsRequired)) __obj.updateDynamic("isAdminRightsRequired")(isAdminRightsRequired.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlockMapDataHolder]
   }

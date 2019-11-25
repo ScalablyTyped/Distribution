@@ -13,7 +13,7 @@ trait ChecksListForRefResponseCheckRunsItemPullRequestsItemBaseRepo extends js.O
 object ChecksListForRefResponseCheckRunsItemPullRequestsItemBaseRepo {
   @scala.inline
   def apply(id: Double, name: String, url: String): ChecksListForRefResponseCheckRunsItemPullRequestsItemBaseRepo = {
-    val __obj = js.Dynamic.literal(id = id, name = name, url = url)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChecksListForRefResponseCheckRunsItemPullRequestsItemBaseRepo]
   }

@@ -18,9 +18,9 @@ object Anon_ShowCompass {
     visualizePitch: js.UndefOr[Boolean] = js.undefined
   ): Anon_ShowCompass = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(showCompass)) __obj.updateDynamic("showCompass")(showCompass)
-    if (!js.isUndefined(showZoom)) __obj.updateDynamic("showZoom")(showZoom)
-    if (!js.isUndefined(visualizePitch)) __obj.updateDynamic("visualizePitch")(visualizePitch)
+    if (!js.isUndefined(showCompass)) __obj.updateDynamic("showCompass")(showCompass.asInstanceOf[js.Any])
+    if (!js.isUndefined(showZoom)) __obj.updateDynamic("showZoom")(showZoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(visualizePitch)) __obj.updateDynamic("visualizePitch")(visualizePitch.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ShowCompass]
   }
 }

@@ -30,7 +30,7 @@ object CompletionsQueryResult {
     isProperty: Boolean,
     start: Double | Position
   ): CompletionsQueryResult = {
-    val __obj = js.Dynamic.literal(completions = completions, end = end.asInstanceOf[js.Any], isProperty = isProperty, start = start.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(completions = completions.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], isProperty = isProperty.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CompletionsQueryResult]
   }

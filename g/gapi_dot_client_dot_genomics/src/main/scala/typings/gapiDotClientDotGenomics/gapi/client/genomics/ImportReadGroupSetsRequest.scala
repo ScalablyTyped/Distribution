@@ -46,10 +46,10 @@ object ImportReadGroupSetsRequest {
     sourceUris: js.Array[String] = null
   ): ImportReadGroupSetsRequest = {
     val __obj = js.Dynamic.literal()
-    if (datasetId != null) __obj.updateDynamic("datasetId")(datasetId)
-    if (partitionStrategy != null) __obj.updateDynamic("partitionStrategy")(partitionStrategy)
-    if (referenceSetId != null) __obj.updateDynamic("referenceSetId")(referenceSetId)
-    if (sourceUris != null) __obj.updateDynamic("sourceUris")(sourceUris)
+    if (datasetId != null) __obj.updateDynamic("datasetId")(datasetId.asInstanceOf[js.Any])
+    if (partitionStrategy != null) __obj.updateDynamic("partitionStrategy")(partitionStrategy.asInstanceOf[js.Any])
+    if (referenceSetId != null) __obj.updateDynamic("referenceSetId")(referenceSetId.asInstanceOf[js.Any])
+    if (sourceUris != null) __obj.updateDynamic("sourceUris")(sourceUris.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportReadGroupSetsRequest]
   }
 }

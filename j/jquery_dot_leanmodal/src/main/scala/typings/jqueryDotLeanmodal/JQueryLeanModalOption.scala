@@ -14,7 +14,7 @@ object JQueryLeanModalOption {
   @scala.inline
   def apply(closeButton: String = null, overlay: Int | Double = null, top: Int | Double = null): JQueryLeanModalOption = {
     val __obj = js.Dynamic.literal()
-    if (closeButton != null) __obj.updateDynamic("closeButton")(closeButton)
+    if (closeButton != null) __obj.updateDynamic("closeButton")(closeButton.asInstanceOf[js.Any])
     if (overlay != null) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryLeanModalOption]

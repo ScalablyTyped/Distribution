@@ -17,7 +17,7 @@ import typings.stripejs.stripejsStrings.debit
 import typings.stripejs.stripejsStrings.instant
 import typings.stripejs.stripejsStrings.prepaid
 import typings.stripejs.stripejsStrings.standard
-import typings.stripejs.stripejsStrings.unknown
+import typings.stripejs.stripejsStrings.unknown_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -110,7 +110,7 @@ trait Card extends js.Object {
   /**
     * Card funding type
     */
-  var funding: credit | debit | prepaid | unknown
+  var funding: credit | debit | prepaid | unknown_
   /**
     * The unique identifier of the bank account
     */
@@ -162,7 +162,7 @@ object Card {
     exp_month: Double,
     exp_year: Double,
     fingerprint: String,
-    funding: credit | debit | prepaid | unknown,
+    funding: credit | debit | prepaid | unknown_,
     id: String,
     last4: String,
     metadata: StringDictionary[String],
@@ -175,13 +175,13 @@ object Card {
     default_for_currency: js.UndefOr[Boolean] = js.undefined,
     recipient: String = null
   ): Card = {
-    val __obj = js.Dynamic.literal(address_city = address_city, address_country = address_country, address_line1 = address_line1, address_line1_check = address_line1_check, address_line2 = address_line2, address_state = address_state, address_zip = address_zip, address_zip_check = address_zip_check, available_payout_methods = available_payout_methods.asInstanceOf[js.Any], brand = brand.asInstanceOf[js.Any], country = country, cvc_check = cvc_check, dynamic_last4 = dynamic_last4, exp_month = exp_month, exp_year = exp_year, fingerprint = fingerprint, funding = funding.asInstanceOf[js.Any], id = id, last4 = last4, metadata = metadata, name = name, tokenization_method = tokenization_method.asInstanceOf[js.Any])
-    __obj.updateDynamic("object")(`object`)
-    if (account != null) __obj.updateDynamic("account")(account)
-    if (currency != null) __obj.updateDynamic("currency")(currency)
-    if (customer != null) __obj.updateDynamic("customer")(customer)
-    if (!js.isUndefined(default_for_currency)) __obj.updateDynamic("default_for_currency")(default_for_currency)
-    if (recipient != null) __obj.updateDynamic("recipient")(recipient)
+    val __obj = js.Dynamic.literal(address_city = address_city.asInstanceOf[js.Any], address_country = address_country.asInstanceOf[js.Any], address_line1 = address_line1.asInstanceOf[js.Any], address_line1_check = address_line1_check.asInstanceOf[js.Any], address_line2 = address_line2.asInstanceOf[js.Any], address_state = address_state.asInstanceOf[js.Any], address_zip = address_zip.asInstanceOf[js.Any], address_zip_check = address_zip_check.asInstanceOf[js.Any], available_payout_methods = available_payout_methods.asInstanceOf[js.Any], brand = brand.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], cvc_check = cvc_check.asInstanceOf[js.Any], dynamic_last4 = dynamic_last4.asInstanceOf[js.Any], exp_month = exp_month.asInstanceOf[js.Any], exp_year = exp_year.asInstanceOf[js.Any], fingerprint = fingerprint.asInstanceOf[js.Any], funding = funding.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], last4 = last4.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], tokenization_method = tokenization_method.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    if (account != null) __obj.updateDynamic("account")(account.asInstanceOf[js.Any])
+    if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
+    if (customer != null) __obj.updateDynamic("customer")(customer.asInstanceOf[js.Any])
+    if (!js.isUndefined(default_for_currency)) __obj.updateDynamic("default_for_currency")(default_for_currency.asInstanceOf[js.Any])
+    if (recipient != null) __obj.updateDynamic("recipient")(recipient.asInstanceOf[js.Any])
     __obj.asInstanceOf[Card]
   }
 }

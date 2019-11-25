@@ -17,9 +17,9 @@ object IdentitytoolkitRelyingpartyDeleteAccountRequest {
   @scala.inline
   def apply(delegatedProjectNumber: String = null, idToken: String = null, localId: String = null): IdentitytoolkitRelyingpartyDeleteAccountRequest = {
     val __obj = js.Dynamic.literal()
-    if (delegatedProjectNumber != null) __obj.updateDynamic("delegatedProjectNumber")(delegatedProjectNumber)
-    if (idToken != null) __obj.updateDynamic("idToken")(idToken)
-    if (localId != null) __obj.updateDynamic("localId")(localId)
+    if (delegatedProjectNumber != null) __obj.updateDynamic("delegatedProjectNumber")(delegatedProjectNumber.asInstanceOf[js.Any])
+    if (idToken != null) __obj.updateDynamic("idToken")(idToken.asInstanceOf[js.Any])
+    if (localId != null) __obj.updateDynamic("localId")(localId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentitytoolkitRelyingpartyDeleteAccountRequest]
   }
 }

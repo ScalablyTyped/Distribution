@@ -11,7 +11,7 @@ trait OrgsListBlockedUsersParams extends js.Object {
 object OrgsListBlockedUsersParams {
   @scala.inline
   def apply(org: String): OrgsListBlockedUsersParams = {
-    val __obj = js.Dynamic.literal(org = org)
+    val __obj = js.Dynamic.literal(org = org.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OrgsListBlockedUsersParams]
   }

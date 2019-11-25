@@ -14,7 +14,7 @@ object PriorityQueueOptions {
   @scala.inline
   def apply(StringDictionary: StringDictionary[js.Any] = null, priority: Int | Double = null): PriorityQueueOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     __obj.asInstanceOf[PriorityQueueOptions]
   }

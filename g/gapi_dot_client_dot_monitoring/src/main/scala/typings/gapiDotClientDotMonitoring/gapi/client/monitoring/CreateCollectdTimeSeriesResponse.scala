@@ -16,7 +16,7 @@ object CreateCollectdTimeSeriesResponse {
   @scala.inline
   def apply(payloadErrors: js.Array[CollectdPayloadError] = null): CreateCollectdTimeSeriesResponse = {
     val __obj = js.Dynamic.literal()
-    if (payloadErrors != null) __obj.updateDynamic("payloadErrors")(payloadErrors)
+    if (payloadErrors != null) __obj.updateDynamic("payloadErrors")(payloadErrors.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCollectdTimeSeriesResponse]
   }
 }

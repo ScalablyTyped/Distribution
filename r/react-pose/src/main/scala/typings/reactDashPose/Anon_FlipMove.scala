@@ -11,7 +11,7 @@ trait Anon_FlipMove extends js.Object {
 object Anon_FlipMove {
   @scala.inline
   def apply(flipMove: Boolean): Anon_FlipMove = {
-    val __obj = js.Dynamic.literal(flipMove = flipMove)
+    val __obj = js.Dynamic.literal(flipMove = flipMove.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FlipMove]
   }

@@ -26,12 +26,12 @@ object RenderToLayerProps {
     ref: LegacyRef[RenderToLayer] = null,
     useLayerForClickAway: js.UndefOr[Boolean] = js.undefined
   ): RenderToLayerProps = {
-    val __obj = js.Dynamic.literal(open = open, render = render)
+    val __obj = js.Dynamic.literal(open = open.asInstanceOf[js.Any], render = render.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (componentClickAway != null) __obj.updateDynamic("componentClickAway")(componentClickAway)
+    if (componentClickAway != null) __obj.updateDynamic("componentClickAway")(componentClickAway.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (!js.isUndefined(useLayerForClickAway)) __obj.updateDynamic("useLayerForClickAway")(useLayerForClickAway)
+    if (!js.isUndefined(useLayerForClickAway)) __obj.updateDynamic("useLayerForClickAway")(useLayerForClickAway.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderToLayerProps]
   }
 }

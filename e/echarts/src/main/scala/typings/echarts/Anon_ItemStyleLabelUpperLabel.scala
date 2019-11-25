@@ -27,9 +27,9 @@ object Anon_ItemStyleLabelUpperLabel {
     upperLabel: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsis = null
   ): Anon_ItemStyleLabelUpperLabel = {
     val __obj = js.Dynamic.literal()
-    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (upperLabel != null) __obj.updateDynamic("upperLabel")(upperLabel)
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (upperLabel != null) __obj.updateDynamic("upperLabel")(upperLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ItemStyleLabelUpperLabel]
   }
 }

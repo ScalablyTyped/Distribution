@@ -27,7 +27,7 @@ object USBDeviceFilter {
     if (classCode != null) __obj.updateDynamic("classCode")(classCode.asInstanceOf[js.Any])
     if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
     if (protocolCode != null) __obj.updateDynamic("protocolCode")(protocolCode.asInstanceOf[js.Any])
-    if (serialNumber != null) __obj.updateDynamic("serialNumber")(serialNumber)
+    if (serialNumber != null) __obj.updateDynamic("serialNumber")(serialNumber.asInstanceOf[js.Any])
     if (subclassCode != null) __obj.updateDynamic("subclassCode")(subclassCode.asInstanceOf[js.Any])
     if (vendorId != null) __obj.updateDynamic("vendorId")(vendorId.asInstanceOf[js.Any])
     __obj.asInstanceOf[USBDeviceFilter]

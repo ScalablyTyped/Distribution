@@ -58,7 +58,7 @@ object Anon_Area {
     `type`: area | line,
     value: Double
   ): Anon_Area = {
-    val __obj = js.Dynamic.literal(categories = categories, color = color, displayInLegend = displayInLegend.asInstanceOf[js.Any], high = high, id = id, lineStyle = lineStyle.asInstanceOf[js.Any], lineType = lineType.asInstanceOf[js.Any], lineWidth = lineWidth, location = location.asInstanceOf[js.Any], low = low, shortDesc = shortDesc, svgClassName = svgClassName, svgStyle = svgStyle, text = text, value = value)
+    val __obj = js.Dynamic.literal(categories = categories.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], displayInLegend = displayInLegend.asInstanceOf[js.Any], high = high.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], lineStyle = lineStyle.asInstanceOf[js.Any], lineType = lineType.asInstanceOf[js.Any], lineWidth = lineWidth.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], low = low.asInstanceOf[js.Any], shortDesc = shortDesc.asInstanceOf[js.Any], svgClassName = svgClassName.asInstanceOf[js.Any], svgStyle = svgStyle.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Area]
   }

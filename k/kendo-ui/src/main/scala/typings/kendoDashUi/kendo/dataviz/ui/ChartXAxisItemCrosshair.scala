@@ -24,11 +24,11 @@ object ChartXAxisItemCrosshair {
     width: Int | Double = null
   ): ChartXAxisItemCrosshair = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (dashType != null) __obj.updateDynamic("dashType")(dashType)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (dashType != null) __obj.updateDynamic("dashType")(dashType.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartXAxisItemCrosshair]
   }

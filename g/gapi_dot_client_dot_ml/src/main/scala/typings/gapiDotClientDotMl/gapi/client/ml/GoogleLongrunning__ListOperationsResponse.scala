@@ -15,8 +15,8 @@ object GoogleLongrunning__ListOperationsResponse {
   @scala.inline
   def apply(nextPageToken: String = null, operations: js.Array[GoogleLongrunning__Operation] = null): GoogleLongrunning__ListOperationsResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (operations != null) __obj.updateDynamic("operations")(operations)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (operations != null) __obj.updateDynamic("operations")(operations.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleLongrunning__ListOperationsResponse]
   }
 }

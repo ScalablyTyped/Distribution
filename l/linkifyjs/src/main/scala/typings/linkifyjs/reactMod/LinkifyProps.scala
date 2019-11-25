@@ -14,8 +14,8 @@ object LinkifyProps {
   @scala.inline
   def apply(options: Options = null, tagName: String = null): LinkifyProps = {
     val __obj = js.Dynamic.literal()
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (tagName != null) __obj.updateDynamic("tagName")(tagName)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (tagName != null) __obj.updateDynamic("tagName")(tagName.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinkifyProps]
   }
 }

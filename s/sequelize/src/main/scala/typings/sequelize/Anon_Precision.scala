@@ -12,7 +12,7 @@ trait Anon_Precision extends js.Object {
 object Anon_Precision {
   @scala.inline
   def apply(precision: Double, scale: Int | Double = null): Anon_Precision = {
-    val __obj = js.Dynamic.literal(precision = precision)
+    val __obj = js.Dynamic.literal(precision = precision.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Precision]
   }

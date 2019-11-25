@@ -18,9 +18,9 @@ object GenerateClassNameOptions {
     seed: String = null
   ): GenerateClassNameOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dangerouslyUseGlobalCSS)) __obj.updateDynamic("dangerouslyUseGlobalCSS")(dangerouslyUseGlobalCSS)
-    if (productionPrefix != null) __obj.updateDynamic("productionPrefix")(productionPrefix)
-    if (seed != null) __obj.updateDynamic("seed")(seed)
+    if (!js.isUndefined(dangerouslyUseGlobalCSS)) __obj.updateDynamic("dangerouslyUseGlobalCSS")(dangerouslyUseGlobalCSS.asInstanceOf[js.Any])
+    if (productionPrefix != null) __obj.updateDynamic("productionPrefix")(productionPrefix.asInstanceOf[js.Any])
+    if (seed != null) __obj.updateDynamic("seed")(seed.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenerateClassNameOptions]
   }
 }

@@ -21,10 +21,10 @@ object Anon_Key {
     root: String = null
   ): Anon_Key = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (messages != null) __obj.updateDynamic("messages")(messages)
-    if (root != null) __obj.updateDynamic("root")(root)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Key]
   }
 }

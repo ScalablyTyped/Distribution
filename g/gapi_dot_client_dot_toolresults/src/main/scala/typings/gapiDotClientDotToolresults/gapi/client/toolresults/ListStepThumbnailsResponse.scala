@@ -25,8 +25,8 @@ object ListStepThumbnailsResponse {
   @scala.inline
   def apply(nextPageToken: String = null, thumbnails: js.Array[Image] = null): ListStepThumbnailsResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (thumbnails != null) __obj.updateDynamic("thumbnails")(thumbnails)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (thumbnails != null) __obj.updateDynamic("thumbnails")(thumbnails.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListStepThumbnailsResponse]
   }
 }

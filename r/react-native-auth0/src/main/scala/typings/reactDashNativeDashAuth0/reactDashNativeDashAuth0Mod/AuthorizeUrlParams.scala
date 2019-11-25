@@ -13,7 +13,7 @@ trait AuthorizeUrlParams extends js.Object {
 object AuthorizeUrlParams {
   @scala.inline
   def apply(redirectUri: String, responseType: String, state: String): AuthorizeUrlParams = {
-    val __obj = js.Dynamic.literal(redirectUri = redirectUri, responseType = responseType, state = state)
+    val __obj = js.Dynamic.literal(redirectUri = redirectUri.asInstanceOf[js.Any], responseType = responseType.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AuthorizeUrlParams]
   }

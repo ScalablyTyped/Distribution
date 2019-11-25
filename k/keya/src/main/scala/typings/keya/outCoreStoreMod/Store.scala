@@ -37,7 +37,7 @@ object Store {
     store: StringDictionary[js.Any],
     version: Double
   ): Store = {
-    val __obj = js.Dynamic.literal(all = js.Any.fromFunction0(all), clear = js.Any.fromFunction0(clear), delete = js.Any.fromFunction1(delete), find = js.Any.fromFunction1(find), get = js.Any.fromFunction1(get), initalize = js.Any.fromFunction0(initalize), load = js.Any.fromFunction0(load), name = name, save = js.Any.fromFunction0(save), set = js.Any.fromFunction2(set), store = store, version = version)
+    val __obj = js.Dynamic.literal(all = js.Any.fromFunction0(all), clear = js.Any.fromFunction0(clear), delete = js.Any.fromFunction1(delete), find = js.Any.fromFunction1(find), get = js.Any.fromFunction1(get), initalize = js.Any.fromFunction0(initalize), load = js.Any.fromFunction0(load), name = name.asInstanceOf[js.Any], save = js.Any.fromFunction0(save), set = js.Any.fromFunction2(set), store = store.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Store]
   }

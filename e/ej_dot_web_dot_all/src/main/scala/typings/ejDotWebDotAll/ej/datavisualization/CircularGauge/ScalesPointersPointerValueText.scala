@@ -48,12 +48,12 @@ object ScalesPointersPointerValueText {
   ): ScalesPointersPointerValueText = {
     val __obj = js.Dynamic.literal()
     if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoAngle)) __obj.updateDynamic("autoAngle")(autoAngle)
-    if (color != null) __obj.updateDynamic("color")(color)
+    if (!js.isUndefined(autoAngle)) __obj.updateDynamic("autoAngle")(autoAngle.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font)
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (!js.isUndefined(showValue)) __obj.updateDynamic("showValue")(showValue)
+    if (!js.isUndefined(showValue)) __obj.updateDynamic("showValue")(showValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScalesPointersPointerValueText]
   }
 }

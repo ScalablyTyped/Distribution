@@ -43,8 +43,8 @@ object InformationNode {
     parentId: Double,
     `type`: String
   ): InformationNode = {
-    val __obj = js.Dynamic.literal(fields = fields, lastModifiedBy = lastModifiedBy, lastModifiedDate = lastModifiedDate, nodeId = nodeId, parentId = parentId)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], lastModifiedBy = lastModifiedBy.asInstanceOf[js.Any], lastModifiedDate = lastModifiedDate.asInstanceOf[js.Any], nodeId = nodeId.asInstanceOf[js.Any], parentId = parentId.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[InformationNode]
   }
 }

@@ -20,10 +20,10 @@ object TsConfig {
     include: js.Array[String] = null
   ): TsConfig = {
     val __obj = js.Dynamic.literal()
-    if (compilerOptions != null) __obj.updateDynamic("compilerOptions")(compilerOptions)
-    if (exclude != null) __obj.updateDynamic("exclude")(exclude)
-    if (files != null) __obj.updateDynamic("files")(files)
-    if (include != null) __obj.updateDynamic("include")(include)
+    if (compilerOptions != null) __obj.updateDynamic("compilerOptions")(compilerOptions.asInstanceOf[js.Any])
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
+    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     __obj.asInstanceOf[TsConfig]
   }
 }

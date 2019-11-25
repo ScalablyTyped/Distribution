@@ -12,7 +12,7 @@ trait JestHookExposedFS extends js.Object {
 object JestHookExposedFS {
   @scala.inline
   def apply(projects: js.Array[Anon_Config]): JestHookExposedFS = {
-    val __obj = js.Dynamic.literal(projects = projects)
+    val __obj = js.Dynamic.literal(projects = projects.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[JestHookExposedFS]
   }

@@ -13,7 +13,7 @@ object Anon_Invalid {
   @scala.inline
   def apply(invalid: js.UndefOr[Boolean] = js.undefined): Anon_Invalid = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(invalid)) __obj.updateDynamic("invalid")(invalid)
+    if (!js.isUndefined(invalid)) __obj.updateDynamic("invalid")(invalid.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Invalid]
   }
 }

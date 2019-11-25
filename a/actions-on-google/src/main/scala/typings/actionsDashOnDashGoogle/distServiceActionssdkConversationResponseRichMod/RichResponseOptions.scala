@@ -33,8 +33,8 @@ object RichResponseOptions {
     suggestions: js.Array[String] | Suggestions = null
   ): RichResponseOptions = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (link != null) __obj.updateDynamic("link")(link)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
     if (suggestions != null) __obj.updateDynamic("suggestions")(suggestions.asInstanceOf[js.Any])
     __obj.asInstanceOf[RichResponseOptions]
   }

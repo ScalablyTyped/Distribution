@@ -15,7 +15,7 @@ object StockToolsGuiDefinitionsTypeChangeTypeCandlestickOptions {
   @scala.inline
   def apply(symbol: String = null): StockToolsGuiDefinitionsTypeChangeTypeCandlestickOptions = {
     val __obj = js.Dynamic.literal()
-    if (symbol != null) __obj.updateDynamic("symbol")(symbol)
+    if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
     __obj.asInstanceOf[StockToolsGuiDefinitionsTypeChangeTypeCandlestickOptions]
   }
 }

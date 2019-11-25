@@ -15,7 +15,7 @@ object Anon_ChatIdInlineMessageId {
   def apply(chatId: Int | Double = null, inlineMessageId: String = null, messageId: Int | Double = null): Anon_ChatIdInlineMessageId = {
     val __obj = js.Dynamic.literal()
     if (chatId != null) __obj.updateDynamic("chatId")(chatId.asInstanceOf[js.Any])
-    if (inlineMessageId != null) __obj.updateDynamic("inlineMessageId")(inlineMessageId)
+    if (inlineMessageId != null) __obj.updateDynamic("inlineMessageId")(inlineMessageId.asInstanceOf[js.Any])
     if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ChatIdInlineMessageId]
   }

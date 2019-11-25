@@ -19,13 +19,12 @@ object Field {
     getValue: StringDictionary[js.Any] => js.Any,
     hidden: Boolean,
     name: String,
-    toString: () => String,
     `type`: Type[T],
     defaultFn: js.Function = null
   ): Field[T] = {
-    val __obj = js.Dynamic.literal(getValue = js.Any.fromFunction1(getValue), hidden = hidden, name = name, toString = js.Any.fromFunction0(toString))
-    __obj.updateDynamic("type")(`type`)
-    if (defaultFn != null) __obj.updateDynamic("defaultFn")(defaultFn)
+    val __obj = js.Dynamic.literal(getValue = js.Any.fromFunction1(getValue), hidden = hidden.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (defaultFn != null) __obj.updateDynamic("defaultFn")(defaultFn.asInstanceOf[js.Any])
     __obj.asInstanceOf[Field[T]]
   }
 }

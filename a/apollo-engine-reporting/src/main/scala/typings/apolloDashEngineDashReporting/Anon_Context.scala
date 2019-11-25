@@ -32,11 +32,11 @@ object Anon_Context {
     queryString: String = null,
     variables: Record[String, _] = null
   ): Anon_Context[TContext] = {
-    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], request = request, requestContext = requestContext.asInstanceOf[js.Any])
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
-    if (parsedQuery != null) __obj.updateDynamic("parsedQuery")(parsedQuery)
-    if (queryString != null) __obj.updateDynamic("queryString")(queryString)
-    if (variables != null) __obj.updateDynamic("variables")(variables)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], requestContext = requestContext.asInstanceOf[js.Any])
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
+    if (parsedQuery != null) __obj.updateDynamic("parsedQuery")(parsedQuery.asInstanceOf[js.Any])
+    if (queryString != null) __obj.updateDynamic("queryString")(queryString.asInstanceOf[js.Any])
+    if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Context[TContext]]
   }
 }

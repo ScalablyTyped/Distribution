@@ -20,10 +20,10 @@ object Anon_CaseSensitive {
     wordsOnly: js.UndefOr[Boolean] = js.undefined
   ): Anon_CaseSensitive = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (!js.isUndefined(wordsOnly)) __obj.updateDynamic("wordsOnly")(wordsOnly)
+    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (!js.isUndefined(wordsOnly)) __obj.updateDynamic("wordsOnly")(wordsOnly.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CaseSensitive]
   }
 }

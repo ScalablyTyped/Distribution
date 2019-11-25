@@ -12,7 +12,7 @@ object Anon_RootName {
   @scala.inline
   def apply(rootName: String = null): Anon_RootName = {
     val __obj = js.Dynamic.literal()
-    if (rootName != null) __obj.updateDynamic("rootName")(rootName)
+    if (rootName != null) __obj.updateDynamic("rootName")(rootName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_RootName]
   }
 }

@@ -1,6 +1,6 @@
 package typings.atAwsDashSdkClientDashS3DashBrowser.typesRestoreObjectOutputMod
 
-import typings.atAwsDashSdkClientDashS3DashBrowser.atAwsDashSdkClientDashS3DashBrowserStrings.requester
+import typings.atAwsDashSdkClientDashS3DashBrowser.atAwsDashSdkClientDashS3DashBrowserStrings.requester_
 import typings.atAwsDashSdkClientDashS3DashBrowser.typesOutputTypesUnionMod._OutputTypesUnion
 import typings.atAwsDashSdkTypes.buildResponseMod.MetadataBearer
 import typings.atAwsDashSdkTypes.buildResponseMod.ResponseMetadata
@@ -14,7 +14,7 @@ trait RestoreObjectOutput
   /**
     * <p>If present, indicates that the requester was successfully charged for the request.</p>
     */
-  var RequestCharged: js.UndefOr[requester | String] = js.undefined
+  var RequestCharged: js.UndefOr[requester_ | String] = js.undefined
   /**
     * <p>Indicates the path in the provided S3 output location where Select results will be restored to.</p>
     */
@@ -25,12 +25,12 @@ object RestoreObjectOutput {
   @scala.inline
   def apply(
     $metadata: ResponseMetadata,
-    RequestCharged: requester | String = null,
+    RequestCharged: requester_ | String = null,
     RestoreOutputPath: String = null
   ): RestoreObjectOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     if (RequestCharged != null) __obj.updateDynamic("RequestCharged")(RequestCharged.asInstanceOf[js.Any])
-    if (RestoreOutputPath != null) __obj.updateDynamic("RestoreOutputPath")(RestoreOutputPath)
+    if (RestoreOutputPath != null) __obj.updateDynamic("RestoreOutputPath")(RestoreOutputPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestoreObjectOutput]
   }
 }

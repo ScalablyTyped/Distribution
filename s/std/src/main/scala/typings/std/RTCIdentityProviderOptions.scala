@@ -18,9 +18,9 @@ object RTCIdentityProviderOptions {
     usernameHint: java.lang.String = null
   ): RTCIdentityProviderOptions = {
     val __obj = js.Dynamic.literal()
-    if (peerIdentity != null) __obj.updateDynamic("peerIdentity")(peerIdentity)
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
-    if (usernameHint != null) __obj.updateDynamic("usernameHint")(usernameHint)
+    if (peerIdentity != null) __obj.updateDynamic("peerIdentity")(peerIdentity.asInstanceOf[js.Any])
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
+    if (usernameHint != null) __obj.updateDynamic("usernameHint")(usernameHint.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCIdentityProviderOptions]
   }
 }

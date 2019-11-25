@@ -13,8 +13,8 @@ object Anon_Root {
   @scala.inline
   def apply(root: String = null, transport: String = null): Anon_Root = {
     val __obj = js.Dynamic.literal()
-    if (root != null) __obj.updateDynamic("root")(root)
-    if (transport != null) __obj.updateDynamic("transport")(transport)
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (transport != null) __obj.updateDynamic("transport")(transport.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Root]
   }
 }

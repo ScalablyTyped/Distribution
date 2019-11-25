@@ -14,7 +14,7 @@ trait Anon_QueryResultRenameQuery extends js.Object {
 object Anon_QueryResultRenameQuery {
   @scala.inline
   def apply(query: RenameQuery, result: RenameQueryResult): Anon_QueryResultRenameQuery = {
-    val __obj = js.Dynamic.literal(query = query, result = result)
+    val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_QueryResultRenameQuery]
   }

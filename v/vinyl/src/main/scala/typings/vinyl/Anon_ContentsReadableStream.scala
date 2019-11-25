@@ -12,7 +12,7 @@ trait Anon_ContentsReadableStream extends js.Object {
 object Anon_ContentsReadableStream {
   @scala.inline
   def apply(contents: ReadableStream): Anon_ContentsReadableStream = {
-    val __obj = js.Dynamic.literal(contents = contents)
+    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ContentsReadableStream]
   }

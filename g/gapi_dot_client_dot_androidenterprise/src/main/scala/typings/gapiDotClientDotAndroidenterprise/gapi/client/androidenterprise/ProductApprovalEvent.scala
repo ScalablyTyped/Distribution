@@ -15,8 +15,8 @@ object ProductApprovalEvent {
   @scala.inline
   def apply(approved: String = null, productId: String = null): ProductApprovalEvent = {
     val __obj = js.Dynamic.literal()
-    if (approved != null) __obj.updateDynamic("approved")(approved)
-    if (productId != null) __obj.updateDynamic("productId")(productId)
+    if (approved != null) __obj.updateDynamic("approved")(approved.asInstanceOf[js.Any])
+    if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProductApprovalEvent]
   }
 }

@@ -15,8 +15,8 @@ object CourseMaterialSet {
   @scala.inline
   def apply(materials: js.Array[CourseMaterial] = null, title: String = null): CourseMaterialSet = {
     val __obj = js.Dynamic.literal()
-    if (materials != null) __obj.updateDynamic("materials")(materials)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (materials != null) __obj.updateDynamic("materials")(materials.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[CourseMaterialSet]
   }
 }

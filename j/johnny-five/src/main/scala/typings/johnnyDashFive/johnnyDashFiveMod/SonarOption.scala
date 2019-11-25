@@ -14,7 +14,7 @@ trait SonarOption extends js.Object {
 object SonarOption {
   @scala.inline
   def apply(device: String, pin: Double | String, freq: Int | Double = null, threshold: Int | Double = null): SonarOption = {
-    val __obj = js.Dynamic.literal(device = device, pin = pin.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(device = device.asInstanceOf[js.Any], pin = pin.asInstanceOf[js.Any])
     if (freq != null) __obj.updateDynamic("freq")(freq.asInstanceOf[js.Any])
     if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
     __obj.asInstanceOf[SonarOption]

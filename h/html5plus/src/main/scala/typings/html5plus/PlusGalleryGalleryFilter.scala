@@ -34,9 +34,9 @@ object PlusGalleryGalleryFilter {
   @scala.inline
   def apply(image: String = null, none: String = null, video: String = null): PlusGalleryGalleryFilter = {
     val __obj = js.Dynamic.literal()
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (none != null) __obj.updateDynamic("none")(none)
-    if (video != null) __obj.updateDynamic("video")(video)
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (none != null) __obj.updateDynamic("none")(none.asInstanceOf[js.Any])
+    if (video != null) __obj.updateDynamic("video")(video.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusGalleryGalleryFilter]
   }
 }

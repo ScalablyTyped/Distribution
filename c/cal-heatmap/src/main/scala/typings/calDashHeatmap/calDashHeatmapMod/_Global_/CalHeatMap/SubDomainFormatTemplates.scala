@@ -15,8 +15,8 @@ object SubDomainFormatTemplates {
   @scala.inline
   def apply(empty: String = null, filled: String = null): SubDomainFormatTemplates = {
     val __obj = js.Dynamic.literal()
-    if (empty != null) __obj.updateDynamic("empty")(empty)
-    if (filled != null) __obj.updateDynamic("filled")(filled)
+    if (empty != null) __obj.updateDynamic("empty")(empty.asInstanceOf[js.Any])
+    if (filled != null) __obj.updateDynamic("filled")(filled.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubDomainFormatTemplates]
   }
 }

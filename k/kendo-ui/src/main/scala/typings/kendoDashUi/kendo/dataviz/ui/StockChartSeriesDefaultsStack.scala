@@ -12,7 +12,7 @@ object StockChartSeriesDefaultsStack {
   @scala.inline
   def apply(`type`: String = null): StockChartSeriesDefaultsStack = {
     val __obj = js.Dynamic.literal()
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[StockChartSeriesDefaultsStack]
   }
 }

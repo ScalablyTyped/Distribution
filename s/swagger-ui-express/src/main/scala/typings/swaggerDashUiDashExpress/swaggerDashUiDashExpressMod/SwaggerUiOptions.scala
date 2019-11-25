@@ -30,15 +30,15 @@ object SwaggerUiOptions {
     swaggerUrls: js.Array[String] = null
   ): SwaggerUiOptions = {
     val __obj = js.Dynamic.literal()
-    if (customCss != null) __obj.updateDynamic("customCss")(customCss)
-    if (customCssUrl != null) __obj.updateDynamic("customCssUrl")(customCssUrl)
-    if (customJs != null) __obj.updateDynamic("customJs")(customJs)
-    if (customSiteTitle != null) __obj.updateDynamic("customSiteTitle")(customSiteTitle)
-    if (customfavIcon != null) __obj.updateDynamic("customfavIcon")(customfavIcon)
-    if (!js.isUndefined(isExplorer)) __obj.updateDynamic("isExplorer")(isExplorer)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (swaggerUrl != null) __obj.updateDynamic("swaggerUrl")(swaggerUrl)
-    if (swaggerUrls != null) __obj.updateDynamic("swaggerUrls")(swaggerUrls)
+    if (customCss != null) __obj.updateDynamic("customCss")(customCss.asInstanceOf[js.Any])
+    if (customCssUrl != null) __obj.updateDynamic("customCssUrl")(customCssUrl.asInstanceOf[js.Any])
+    if (customJs != null) __obj.updateDynamic("customJs")(customJs.asInstanceOf[js.Any])
+    if (customSiteTitle != null) __obj.updateDynamic("customSiteTitle")(customSiteTitle.asInstanceOf[js.Any])
+    if (customfavIcon != null) __obj.updateDynamic("customfavIcon")(customfavIcon.asInstanceOf[js.Any])
+    if (!js.isUndefined(isExplorer)) __obj.updateDynamic("isExplorer")(isExplorer.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (swaggerUrl != null) __obj.updateDynamic("swaggerUrl")(swaggerUrl.asInstanceOf[js.Any])
+    if (swaggerUrls != null) __obj.updateDynamic("swaggerUrls")(swaggerUrls.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwaggerUiOptions]
   }
 }

@@ -24,10 +24,10 @@ object StockToolsGuiDefinitionsZoomChangeOptions {
     zoomY: StockToolsGuiDefinitionsZoomChangeZoomYOptions = null
   ): StockToolsGuiDefinitionsZoomChangeOptions = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (zoomX != null) __obj.updateDynamic("zoomX")(zoomX)
-    if (zoomXY != null) __obj.updateDynamic("zoomXY")(zoomXY)
-    if (zoomY != null) __obj.updateDynamic("zoomY")(zoomY)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (zoomX != null) __obj.updateDynamic("zoomX")(zoomX.asInstanceOf[js.Any])
+    if (zoomXY != null) __obj.updateDynamic("zoomXY")(zoomXY.asInstanceOf[js.Any])
+    if (zoomY != null) __obj.updateDynamic("zoomY")(zoomY.asInstanceOf[js.Any])
     __obj.asInstanceOf[StockToolsGuiDefinitionsZoomChangeOptions]
   }
 }

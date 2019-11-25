@@ -81,20 +81,20 @@ object DtsGeneratorOptions {
     target: ScriptTarget = null,
     types: js.Array[String] = null
   ): DtsGeneratorOptions = {
-    val __obj = js.Dynamic.literal(name = name, out = out)
-    if (baseDir != null) __obj.updateDynamic("baseDir")(baseDir)
-    if (eol != null) __obj.updateDynamic("eol")(eol)
-    if (exclude != null) __obj.updateDynamic("exclude")(exclude)
-    if (externs != null) __obj.updateDynamic("externs")(externs)
-    if (files != null) __obj.updateDynamic("files")(files)
-    if (indent != null) __obj.updateDynamic("indent")(indent)
-    if (main != null) __obj.updateDynamic("main")(main)
-    if (moduleResolution != null) __obj.updateDynamic("moduleResolution")(moduleResolution)
-    if (project != null) __obj.updateDynamic("project")(project)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], out = out.asInstanceOf[js.Any])
+    if (baseDir != null) __obj.updateDynamic("baseDir")(baseDir.asInstanceOf[js.Any])
+    if (eol != null) __obj.updateDynamic("eol")(eol.asInstanceOf[js.Any])
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
+    if (externs != null) __obj.updateDynamic("externs")(externs.asInstanceOf[js.Any])
+    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
+    if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
+    if (main != null) __obj.updateDynamic("main")(main.asInstanceOf[js.Any])
+    if (moduleResolution != null) __obj.updateDynamic("moduleResolution")(moduleResolution.asInstanceOf[js.Any])
+    if (project != null) __obj.updateDynamic("project")(project.asInstanceOf[js.Any])
     if (resolveModuleId != null) __obj.updateDynamic("resolveModuleId")(js.Any.fromFunction1(resolveModuleId))
     if (resolveModuleImport != null) __obj.updateDynamic("resolveModuleImport")(js.Any.fromFunction1(resolveModuleImport))
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (types != null) __obj.updateDynamic("types")(types)
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
     __obj.asInstanceOf[DtsGeneratorOptions]
   }
 }

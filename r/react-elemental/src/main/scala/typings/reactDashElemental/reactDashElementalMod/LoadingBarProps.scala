@@ -23,10 +23,10 @@ object LoadingBarProps {
     thickness: Int | Double = null
   ): LoadingBarProps = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (thickness != null) __obj.updateDynamic("thickness")(thickness.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadingBarProps]
   }

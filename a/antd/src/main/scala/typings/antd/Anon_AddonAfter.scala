@@ -54,8 +54,8 @@ object Anon_AddonAfter {
     `type`: Requireable[String],
     value: Requireable[_]
   ): Anon_AddonAfter = {
-    val __obj = js.Dynamic.literal(addonAfter = addonAfter, addonBefore = addonBefore, allowClear = allowClear, className = className, defaultValue = defaultValue, disabled = disabled, id = id, maxLength = maxLength, onBlur = onBlur, onFocus = onFocus, onKeyDown = onKeyDown, onKeyUp = onKeyUp, onPressEnter = onPressEnter, prefix = prefix, prefixCls = prefixCls, size = size, suffix = suffix, value = value)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(addonAfter = addonAfter.asInstanceOf[js.Any], addonBefore = addonBefore.asInstanceOf[js.Any], allowClear = allowClear.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], defaultValue = defaultValue.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], maxLength = maxLength.asInstanceOf[js.Any], onBlur = onBlur.asInstanceOf[js.Any], onFocus = onFocus.asInstanceOf[js.Any], onKeyDown = onKeyDown.asInstanceOf[js.Any], onKeyUp = onKeyUp.asInstanceOf[js.Any], onPressEnter = onPressEnter.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], suffix = suffix.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AddonAfter]
   }
 }

@@ -39,8 +39,8 @@ trait ellipse extends js.Object {
 object ellipse {
   @scala.inline
   def apply(borderWidth: Double, cx: Double, cy: Double, rx: Double, ry: Double, `type`: String): ellipse = {
-    val __obj = js.Dynamic.literal(borderWidth = borderWidth, cx = cx, cy = cy, rx = rx, ry = ry)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(borderWidth = borderWidth.asInstanceOf[js.Any], cx = cx.asInstanceOf[js.Any], cy = cy.asInstanceOf[js.Any], rx = rx.asInstanceOf[js.Any], ry = ry.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ellipse]
   }
 }

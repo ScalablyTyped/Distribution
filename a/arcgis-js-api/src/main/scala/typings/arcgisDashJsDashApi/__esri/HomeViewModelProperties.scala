@@ -34,7 +34,7 @@ object HomeViewModelProperties {
     val __obj = js.Dynamic.literal()
     if (goToOverride != null) __obj.updateDynamic("goToOverride")(js.Any.fromFunction2(goToOverride))
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
-    if (viewpoint != null) __obj.updateDynamic("viewpoint")(viewpoint)
+    if (viewpoint != null) __obj.updateDynamic("viewpoint")(viewpoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[HomeViewModelProperties]
   }
 }

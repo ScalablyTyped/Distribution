@@ -13,7 +13,7 @@ trait TabbarRenderTab extends js.Object {
 object TabbarRenderTab {
   @scala.inline
   def apply(content: Element, tab: Element): TabbarRenderTab = {
-    val __obj = js.Dynamic.literal(content = content, tab = tab)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], tab = tab.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TabbarRenderTab]
   }

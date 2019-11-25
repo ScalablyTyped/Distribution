@@ -28,13 +28,13 @@ object Anon_AccessKey {
     image: String = null,
     onMessage: /* message */ js.UndefOr[js.Any] => _ = null
   ): Anon_AccessKey = {
-    val __obj = js.Dynamic.literal(label = label)
-    if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey)
-    if (contentScript != null) __obj.updateDynamic("contentScript")(contentScript)
-    if (contentScriptFile != null) __obj.updateDynamic("contentScriptFile")(contentScriptFile)
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
+    if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
+    if (contentScript != null) __obj.updateDynamic("contentScript")(contentScript.asInstanceOf[js.Any])
+    if (contentScriptFile != null) __obj.updateDynamic("contentScriptFile")(contentScriptFile.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (image != null) __obj.updateDynamic("image")(image)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
     if (onMessage != null) __obj.updateDynamic("onMessage")(js.Any.fromFunction1(onMessage))
     __obj.asInstanceOf[Anon_AccessKey]
   }

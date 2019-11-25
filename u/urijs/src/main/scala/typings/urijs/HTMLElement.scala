@@ -13,7 +13,7 @@ trait HTMLElement extends js.Object {
 object HTMLElement {
   @scala.inline
   def apply(innerText: String): HTMLElement = {
-    val __obj = js.Dynamic.literal(innerText = innerText)
+    val __obj = js.Dynamic.literal(innerText = innerText.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HTMLElement]
   }

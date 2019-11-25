@@ -15,8 +15,8 @@ object StrictCombinatorEffect {
     payload: CombinatorEffectDescriptor[StrictEffect[T]],
     `type`: T
   ): StrictCombinatorEffect[T] = {
-    val __obj = js.Dynamic.literal(combinator = combinator, payload = payload.asInstanceOf[js.Any])
-    __obj.updateDynamic("@@redux-saga/IO")(`@@redux-saga/IO`)
+    val __obj = js.Dynamic.literal(combinator = combinator.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
+    __obj.updateDynamic("@@redux-saga/IO")(`@@redux-saga/IO`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrictCombinatorEffect[T]]
   }

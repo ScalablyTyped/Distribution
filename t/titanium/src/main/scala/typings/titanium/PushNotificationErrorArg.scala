@@ -37,9 +37,9 @@ object PushNotificationErrorArg {
   ): PushNotificationErrorArg = {
     val __obj = js.Dynamic.literal()
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PushNotificationErrorArg]
   }
 }

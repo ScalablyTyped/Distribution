@@ -26,13 +26,13 @@ object RoleAssignment {
     scopeType: String = null
   ): RoleAssignment = {
     val __obj = js.Dynamic.literal()
-    if (assignedTo != null) __obj.updateDynamic("assignedTo")(assignedTo)
-    if (etag != null) __obj.updateDynamic("etag")(etag)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (orgUnitId != null) __obj.updateDynamic("orgUnitId")(orgUnitId)
-    if (roleAssignmentId != null) __obj.updateDynamic("roleAssignmentId")(roleAssignmentId)
-    if (roleId != null) __obj.updateDynamic("roleId")(roleId)
-    if (scopeType != null) __obj.updateDynamic("scopeType")(scopeType)
+    if (assignedTo != null) __obj.updateDynamic("assignedTo")(assignedTo.asInstanceOf[js.Any])
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (orgUnitId != null) __obj.updateDynamic("orgUnitId")(orgUnitId.asInstanceOf[js.Any])
+    if (roleAssignmentId != null) __obj.updateDynamic("roleAssignmentId")(roleAssignmentId.asInstanceOf[js.Any])
+    if (roleId != null) __obj.updateDynamic("roleId")(roleId.asInstanceOf[js.Any])
+    if (scopeType != null) __obj.updateDynamic("scopeType")(scopeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoleAssignment]
   }
 }

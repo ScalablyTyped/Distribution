@@ -32,13 +32,13 @@ object ChartSeriesItemMarkers {
     val __obj = js.Dynamic.literal()
     if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
     if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from)
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
     if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (to != null) __obj.updateDynamic("to")(to)
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (visible != null) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (visual != null) __obj.updateDynamic("visual")(visual)
+    if (visual != null) __obj.updateDynamic("visual")(visual.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartSeriesItemMarkers]
   }
 }

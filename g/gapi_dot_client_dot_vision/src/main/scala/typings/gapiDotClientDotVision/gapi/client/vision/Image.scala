@@ -23,8 +23,8 @@ object Image {
   @scala.inline
   def apply(content: String = null, source: ImageSource = null): Image = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[Image]
   }
 }

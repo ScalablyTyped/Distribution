@@ -105,13 +105,13 @@ object ExecuteOptions {
     resultSet: js.UndefOr[Boolean] = js.undefined
   ): ExecuteOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoCommit)) __obj.updateDynamic("autoCommit")(autoCommit)
-    if (!js.isUndefined(extendedMetaData)) __obj.updateDynamic("extendedMetaData")(extendedMetaData)
+    if (!js.isUndefined(autoCommit)) __obj.updateDynamic("autoCommit")(autoCommit.asInstanceOf[js.Any])
+    if (!js.isUndefined(extendedMetaData)) __obj.updateDynamic("extendedMetaData")(extendedMetaData.asInstanceOf[js.Any])
     if (fetchArraySize != null) __obj.updateDynamic("fetchArraySize")(fetchArraySize.asInstanceOf[js.Any])
-    if (fetchInfo != null) __obj.updateDynamic("fetchInfo")(fetchInfo)
+    if (fetchInfo != null) __obj.updateDynamic("fetchInfo")(fetchInfo.asInstanceOf[js.Any])
     if (maxRows != null) __obj.updateDynamic("maxRows")(maxRows.asInstanceOf[js.Any])
     if (outFormat != null) __obj.updateDynamic("outFormat")(outFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(resultSet)) __obj.updateDynamic("resultSet")(resultSet)
+    if (!js.isUndefined(resultSet)) __obj.updateDynamic("resultSet")(resultSet.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecuteOptions]
   }
 }

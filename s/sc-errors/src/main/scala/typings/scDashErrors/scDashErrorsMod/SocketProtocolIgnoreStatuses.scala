@@ -14,8 +14,8 @@ object SocketProtocolIgnoreStatuses {
   @scala.inline
   def apply(`1000`: String, `1001`: String): SocketProtocolIgnoreStatuses = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("1000")(`1000`)
-    __obj.updateDynamic("1001")(`1001`)
+    __obj.updateDynamic("1000")(`1000`.asInstanceOf[js.Any])
+    __obj.updateDynamic("1001")(`1001`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SocketProtocolIgnoreStatuses]
   }
 }

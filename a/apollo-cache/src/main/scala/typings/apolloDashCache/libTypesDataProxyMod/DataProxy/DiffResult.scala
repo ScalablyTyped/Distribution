@@ -13,7 +13,7 @@ object DiffResult {
   @scala.inline
   def apply[T](complete: js.UndefOr[Boolean] = js.undefined, result: T = null): DiffResult[T] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(complete)) __obj.updateDynamic("complete")(complete)
+    if (!js.isUndefined(complete)) __obj.updateDynamic("complete")(complete.asInstanceOf[js.Any])
     if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiffResult[T]]
   }

@@ -16,9 +16,9 @@ trait Genre extends Resource {
 object Genre {
   @scala.inline
   def apply(attributes: Anon_Name, id: String, `type`: genres, href: String = null): Genre = {
-    val __obj = js.Dynamic.literal(attributes = attributes, id = id)
-    __obj.updateDynamic("type")(`type`)
-    if (href != null) __obj.updateDynamic("href")(href)
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
     __obj.asInstanceOf[Genre]
   }
 }

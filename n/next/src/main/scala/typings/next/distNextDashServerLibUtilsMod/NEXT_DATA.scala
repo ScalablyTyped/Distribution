@@ -37,13 +37,13 @@ object NEXT_DATA {
     nextExport: js.UndefOr[Boolean] = js.undefined,
     runtimeConfig: StringDictionary[js.Any] = null
   ): NEXT_DATA = {
-    val __obj = js.Dynamic.literal(buildId = buildId, dataManager = dataManager, page = page, props = props, query = query)
-    if (assetPrefix != null) __obj.updateDynamic("assetPrefix")(assetPrefix)
-    if (!js.isUndefined(autoExport)) __obj.updateDynamic("autoExport")(autoExport)
-    if (dynamicIds != null) __obj.updateDynamic("dynamicIds")(dynamicIds)
-    if (err != null) __obj.updateDynamic("err")(err)
-    if (!js.isUndefined(nextExport)) __obj.updateDynamic("nextExport")(nextExport)
-    if (runtimeConfig != null) __obj.updateDynamic("runtimeConfig")(runtimeConfig)
+    val __obj = js.Dynamic.literal(buildId = buildId.asInstanceOf[js.Any], dataManager = dataManager.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
+    if (assetPrefix != null) __obj.updateDynamic("assetPrefix")(assetPrefix.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoExport)) __obj.updateDynamic("autoExport")(autoExport.asInstanceOf[js.Any])
+    if (dynamicIds != null) __obj.updateDynamic("dynamicIds")(dynamicIds.asInstanceOf[js.Any])
+    if (err != null) __obj.updateDynamic("err")(err.asInstanceOf[js.Any])
+    if (!js.isUndefined(nextExport)) __obj.updateDynamic("nextExport")(nextExport.asInstanceOf[js.Any])
+    if (runtimeConfig != null) __obj.updateDynamic("runtimeConfig")(runtimeConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[NEXT_DATA]
   }
 }

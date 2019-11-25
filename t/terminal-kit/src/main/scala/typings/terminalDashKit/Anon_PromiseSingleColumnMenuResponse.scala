@@ -12,7 +12,7 @@ trait Anon_PromiseSingleColumnMenuResponse extends js.Object {
 object Anon_PromiseSingleColumnMenuResponse {
   @scala.inline
   def apply(promise: js.Promise[SingleColumnMenuResponse]): Anon_PromiseSingleColumnMenuResponse = {
-    val __obj = js.Dynamic.literal(promise = promise)
+    val __obj = js.Dynamic.literal(promise = promise.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_PromiseSingleColumnMenuResponse]
   }

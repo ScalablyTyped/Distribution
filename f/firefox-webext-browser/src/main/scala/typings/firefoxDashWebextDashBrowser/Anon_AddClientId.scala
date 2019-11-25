@@ -25,10 +25,10 @@ object Anon_AddClientId {
     usePingSender: js.UndefOr[Boolean] = js.undefined
   ): Anon_AddClientId = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(addClientId)) __obj.updateDynamic("addClientId")(addClientId)
-    if (!js.isUndefined(addEnvironment)) __obj.updateDynamic("addEnvironment")(addEnvironment)
-    if (overrideEnvironment != null) __obj.updateDynamic("overrideEnvironment")(overrideEnvironment)
-    if (!js.isUndefined(usePingSender)) __obj.updateDynamic("usePingSender")(usePingSender)
+    if (!js.isUndefined(addClientId)) __obj.updateDynamic("addClientId")(addClientId.asInstanceOf[js.Any])
+    if (!js.isUndefined(addEnvironment)) __obj.updateDynamic("addEnvironment")(addEnvironment.asInstanceOf[js.Any])
+    if (overrideEnvironment != null) __obj.updateDynamic("overrideEnvironment")(overrideEnvironment.asInstanceOf[js.Any])
+    if (!js.isUndefined(usePingSender)) __obj.updateDynamic("usePingSender")(usePingSender.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AddClientId]
   }
 }

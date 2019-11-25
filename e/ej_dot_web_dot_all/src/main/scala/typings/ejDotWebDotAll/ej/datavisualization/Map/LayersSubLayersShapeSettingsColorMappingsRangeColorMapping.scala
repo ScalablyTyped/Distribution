@@ -24,7 +24,7 @@ object LayersSubLayersShapeSettingsColorMappingsRangeColorMapping {
   def apply(from: Int | Double = null, gradientColors: js.Array[_] = null, to: Int | Double = null): LayersSubLayersShapeSettingsColorMappingsRangeColorMapping = {
     val __obj = js.Dynamic.literal()
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (gradientColors != null) __obj.updateDynamic("gradientColors")(gradientColors)
+    if (gradientColors != null) __obj.updateDynamic("gradientColors")(gradientColors.asInstanceOf[js.Any])
     if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayersSubLayersShapeSettingsColorMappingsRangeColorMapping]
   }

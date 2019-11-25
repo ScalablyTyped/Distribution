@@ -31,7 +31,7 @@ object TaskData {
     val __obj = js.Dynamic.literal()
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (handleId != null) __obj.updateDynamic("handleId")(handleId.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPeriodic)) __obj.updateDynamic("isPeriodic")(isPeriodic)
+    if (!js.isUndefined(isPeriodic)) __obj.updateDynamic("isPeriodic")(isPeriodic.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskData]
   }
 }

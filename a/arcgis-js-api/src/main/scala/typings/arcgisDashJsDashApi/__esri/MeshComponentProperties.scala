@@ -43,8 +43,8 @@ object MeshComponentProperties {
   ): MeshComponentProperties = {
     val __obj = js.Dynamic.literal()
     if (faces != null) __obj.updateDynamic("faces")(faces.asInstanceOf[js.Any])
-    if (material != null) __obj.updateDynamic("material")(material)
-    if (shading != null) __obj.updateDynamic("shading")(shading)
+    if (material != null) __obj.updateDynamic("material")(material.asInstanceOf[js.Any])
+    if (shading != null) __obj.updateDynamic("shading")(shading.asInstanceOf[js.Any])
     __obj.asInstanceOf[MeshComponentProperties]
   }
 }

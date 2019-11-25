@@ -14,8 +14,8 @@ trait Result extends js.Object {
 object Result {
   @scala.inline
   def apply(headers: Headers, status: Anon_Code, body: js.Any = null): Result = {
-    val __obj = js.Dynamic.literal(headers = headers, status = status)
-    if (body != null) __obj.updateDynamic("body")(body)
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     __obj.asInstanceOf[Result]
   }
 }

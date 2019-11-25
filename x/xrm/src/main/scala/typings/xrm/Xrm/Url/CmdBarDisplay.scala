@@ -14,3 +14,12 @@ import scala.scalajs.js.annotation._
 */
 trait CmdBarDisplay extends js.Object
 
+object CmdBarDisplay {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def `false`: typings.xrm.xrmStrings.`false` = this.cast("false")
+  @scala.inline
+  def `true`: typings.xrm.xrmStrings.`true` = this.cast("true")
+}
+

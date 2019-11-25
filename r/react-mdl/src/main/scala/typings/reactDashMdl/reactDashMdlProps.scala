@@ -1,5 +1,6 @@
 package typings.reactDashMdl
 
+import typings.react.reactMod.HTMLProps
 import typings.reactDashMdl.reactDashMdlMod.CardActionProps
 import typings.reactDashMdl.reactDashMdlMod.StandardButtonProps
 import typings.reactDashMdl.reactDashMdlMod.__MDLOtherProps
@@ -20,8 +21,14 @@ trait reactDashMdlProps {
   @scala.inline
   def CardActionsProps: CardActionProps.type = typings.reactDashMdl.reactDashMdlMod.CardActionProps
   type CardActionsProps = CardActionProps
+  @scala.inline
+  def CardMediaProps: HTMLProps.type = typings.react.reactMod.HTMLProps
   type CardMediaProps = __MDLOtherProps
+  @scala.inline
+  def CardMenuProps: HTMLProps.type = typings.react.reactMod.HTMLProps
   type CardMenuProps = __MDLOtherProps
+  @scala.inline
+  def CardTextProps: HTMLProps.type = typings.react.reactMod.HTMLProps
   type CardTextProps = __MDLOtherProps
   @scala.inline
   def CardTitleProps: typings.reactDashMdl.reactDashMdlMod.CardTitleProps.type = typings.reactDashMdl.reactDashMdlMod.CardTitleProps
@@ -35,6 +42,8 @@ trait reactDashMdlProps {
   @scala.inline
   def ChipProps: typings.reactDashMdl.reactDashMdlMod.ChipProps.type = typings.reactDashMdl.reactDashMdlMod.ChipProps
   type ChipProps = typings.reactDashMdl.reactDashMdlMod.ChipProps
+  @scala.inline
+  def ChipContactProps: HTMLProps.type = typings.react.reactMod.HTMLProps
   type ChipContactProps = __MDLOtherProps
   @scala.inline
   def ContentProps: typings.reactDashMdl.reactDashMdlMod.ContentProps.type = typings.reactDashMdl.reactDashMdlMod.ContentProps
@@ -48,6 +57,8 @@ trait reactDashMdlProps {
   @scala.inline
   def DialogActionsProps: typings.reactDashMdl.reactDashMdlMod.DialogActionsProps.type = typings.reactDashMdl.reactDashMdlMod.DialogActionsProps
   type DialogActionsProps = typings.reactDashMdl.reactDashMdlMod.DialogActionsProps
+  @scala.inline
+  def DialogContentProps: HTMLProps.type = typings.react.reactMod.HTMLProps
   type DialogContentProps = __MDLOtherProps
   @scala.inline
   def DialogTitleProps: typings.reactDashMdl.reactDashMdlMod.DialogTitleProps.type = typings.reactDashMdl.reactDashMdlMod.DialogTitleProps
@@ -94,6 +105,8 @@ trait reactDashMdlProps {
   @scala.inline
   def LayoutProps: typings.reactDashMdl.reactDashMdlMod.LayoutProps.type = typings.reactDashMdl.reactDashMdlMod.LayoutProps
   type LayoutProps = typings.reactDashMdl.reactDashMdlMod.LayoutProps
+  @scala.inline
+  def ListProps: HTMLProps.type = typings.react.reactMod.HTMLProps
   type ListProps = __MDLOtherProps
   @scala.inline
   def ListItemProps: typings.reactDashMdl.reactDashMdlMod.ListItemProps.type = typings.reactDashMdl.reactDashMdlMod.ListItemProps
@@ -105,11 +118,13 @@ trait reactDashMdlProps {
   def ListItemContentProps: typings.reactDashMdl.reactDashMdlMod.ListItemContentProps.type = typings.reactDashMdl.reactDashMdlMod.ListItemContentProps
   type ListItemContentProps = typings.reactDashMdl.reactDashMdlMod.ListItemContentProps
   @scala.inline
-  def MDLComponentProps: typings.reactDashMdl.Anon_Recursive.type = typings.reactDashMdl.Anon_Recursive
+  def MDLComponentProps: Anon_Recursive.type = typings.reactDashMdl.Anon_Recursive
   type MDLComponentProps = Anon_Recursive
   @scala.inline
   def MenuProps: typings.reactDashMdl.reactDashMdlMod.MenuProps.type = typings.reactDashMdl.reactDashMdlMod.MenuProps
   type MenuProps = typings.reactDashMdl.reactDashMdlMod.MenuProps
+  @scala.inline
+  def MenuItemProps: HTMLProps.type = typings.react.reactMod.HTMLProps
   type MenuItemProps = __MDLOtherProps
   @scala.inline
   def NavigationProps: typings.reactDashMdl.reactDashMdlMod.NavigationProps.type = typings.reactDashMdl.reactDashMdlMod.NavigationProps
@@ -129,6 +144,8 @@ trait reactDashMdlProps {
   @scala.inline
   def SnackbarProps: typings.reactDashMdl.reactDashMdlMod.SnackbarProps.type = typings.reactDashMdl.reactDashMdlMod.SnackbarProps
   type SnackbarProps = typings.reactDashMdl.reactDashMdlMod.SnackbarProps
+  @scala.inline
+  def SpacerProps: HTMLProps.type = typings.react.reactMod.HTMLProps
   type SpacerProps = __MDLOtherProps
   @scala.inline
   def SpinnerProps: typings.reactDashMdl.reactDashMdlMod.SpinnerProps.type = typings.reactDashMdl.reactDashMdlMod.SpinnerProps
@@ -160,6 +177,8 @@ trait reactDashMdlProps {
   @scala.inline
   def UndecoratedTableProps: typings.reactDashMdl.reactDashMdlMod.UndecoratedTableProps.type = typings.reactDashMdl.reactDashMdlMod.UndecoratedTableProps
   type UndecoratedTableProps = typings.reactDashMdl.reactDashMdlMod.UndecoratedTableProps
+  @scala.inline
+  def __MDLBasicComponentProps: HTMLProps.type = typings.react.reactMod.HTMLProps
   type __MDLBasicComponentProps = __MDLOtherProps
 }
 

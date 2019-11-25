@@ -38,23 +38,23 @@ object MlGetRecords {
     source: String = null,
     start: String = null
   ): MlGetRecords[T] = {
-    val __obj = js.Dynamic.literal(job_id = job_id)
+    val __obj = js.Dynamic.literal(job_id = job_id.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (!js.isUndefined(desc)) __obj.updateDynamic("desc")(desc)
-    if (end != null) __obj.updateDynamic("end")(end)
-    if (!js.isUndefined(error_trace)) __obj.updateDynamic("error_trace")(error_trace)
-    if (!js.isUndefined(exclude_interim)) __obj.updateDynamic("exclude_interim")(exclude_interim)
+    if (!js.isUndefined(desc)) __obj.updateDynamic("desc")(desc.asInstanceOf[js.Any])
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (!js.isUndefined(error_trace)) __obj.updateDynamic("error_trace")(error_trace.asInstanceOf[js.Any])
+    if (!js.isUndefined(exclude_interim)) __obj.updateDynamic("exclude_interim")(exclude_interim.asInstanceOf[js.Any])
     if (filter_path != null) __obj.updateDynamic("filter_path")(filter_path.asInstanceOf[js.Any])
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (!js.isUndefined(human)) __obj.updateDynamic("human")(human)
+    if (!js.isUndefined(human)) __obj.updateDynamic("human")(human.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty)
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.asInstanceOf[js.Any])
     if (record_score != null) __obj.updateDynamic("record_score")(record_score.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (sort != null) __obj.updateDynamic("sort")(sort)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (start != null) __obj.updateDynamic("start")(start)
+    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[MlGetRecords[T]]
   }
 }

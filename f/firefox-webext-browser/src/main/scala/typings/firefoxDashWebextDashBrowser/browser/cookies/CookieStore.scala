@@ -20,7 +20,7 @@ trait CookieStore extends js.Object {
 object CookieStore {
   @scala.inline
   def apply(id: String, incognito: Boolean, tabIds: js.Array[Double]): CookieStore = {
-    val __obj = js.Dynamic.literal(id = id, incognito = incognito, tabIds = tabIds)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], incognito = incognito.asInstanceOf[js.Any], tabIds = tabIds.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CookieStore]
   }

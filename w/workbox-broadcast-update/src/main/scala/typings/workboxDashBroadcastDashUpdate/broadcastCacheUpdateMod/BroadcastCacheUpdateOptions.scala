@@ -18,9 +18,9 @@ object BroadcastCacheUpdateOptions {
     headersToCheck: js.Array[String] = null
   ): BroadcastCacheUpdateOptions = {
     val __obj = js.Dynamic.literal()
-    if (channelName != null) __obj.updateDynamic("channelName")(channelName)
+    if (channelName != null) __obj.updateDynamic("channelName")(channelName.asInstanceOf[js.Any])
     if (deferNoticationTimeout != null) __obj.updateDynamic("deferNoticationTimeout")(deferNoticationTimeout.asInstanceOf[js.Any])
-    if (headersToCheck != null) __obj.updateDynamic("headersToCheck")(headersToCheck)
+    if (headersToCheck != null) __obj.updateDynamic("headersToCheck")(headersToCheck.asInstanceOf[js.Any])
     __obj.asInstanceOf[BroadcastCacheUpdateOptions]
   }
 }

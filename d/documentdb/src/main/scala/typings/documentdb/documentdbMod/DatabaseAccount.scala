@@ -25,7 +25,7 @@ object DatabaseAccount {
     ReadableLocations: js.Array[String],
     WritableLocations: js.Array[String]
   ): DatabaseAccount = {
-    val __obj = js.Dynamic.literal(ConsistencyPolicy = ConsistencyPolicy, CurrentMediaStorageUsageInMB = CurrentMediaStorageUsageInMB, DatabasesLink = DatabasesLink, MaxMediaStorageUsageInMB = MaxMediaStorageUsageInMB, MediaLink = MediaLink, ReadableLocations = ReadableLocations, WritableLocations = WritableLocations)
+    val __obj = js.Dynamic.literal(ConsistencyPolicy = ConsistencyPolicy.asInstanceOf[js.Any], CurrentMediaStorageUsageInMB = CurrentMediaStorageUsageInMB.asInstanceOf[js.Any], DatabasesLink = DatabasesLink.asInstanceOf[js.Any], MaxMediaStorageUsageInMB = MaxMediaStorageUsageInMB.asInstanceOf[js.Any], MediaLink = MediaLink.asInstanceOf[js.Any], ReadableLocations = ReadableLocations.asInstanceOf[js.Any], WritableLocations = WritableLocations.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DatabaseAccount]
   }

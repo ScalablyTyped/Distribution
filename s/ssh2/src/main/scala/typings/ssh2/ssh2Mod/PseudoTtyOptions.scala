@@ -30,7 +30,7 @@ object PseudoTtyOptions {
     if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
-    if (term != null) __obj.updateDynamic("term")(term)
+    if (term != null) __obj.updateDynamic("term")(term.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[PseudoTtyOptions]
   }

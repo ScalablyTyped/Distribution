@@ -19,7 +19,7 @@ object QueryAutocompletePrediction {
     place_id: String,
     terms: js.Array[PredictionTerm]
   ): QueryAutocompletePrediction = {
-    val __obj = js.Dynamic.literal(description = description, matched_substrings = matched_substrings, place_id = place_id, terms = terms)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], matched_substrings = matched_substrings.asInstanceOf[js.Any], place_id = place_id.asInstanceOf[js.Any], terms = terms.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[QueryAutocompletePrediction]
   }

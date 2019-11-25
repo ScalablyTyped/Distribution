@@ -22,11 +22,11 @@ object IHingeConstraintOptions {
     pivotB: Vec3 = null
   ): IHingeConstraintOptions = {
     val __obj = js.Dynamic.literal()
-    if (axisA != null) __obj.updateDynamic("axisA")(axisA)
-    if (axisB != null) __obj.updateDynamic("axisB")(axisB)
+    if (axisA != null) __obj.updateDynamic("axisA")(axisA.asInstanceOf[js.Any])
+    if (axisB != null) __obj.updateDynamic("axisB")(axisB.asInstanceOf[js.Any])
     if (maxForce != null) __obj.updateDynamic("maxForce")(maxForce.asInstanceOf[js.Any])
-    if (pivotA != null) __obj.updateDynamic("pivotA")(pivotA)
-    if (pivotB != null) __obj.updateDynamic("pivotB")(pivotB)
+    if (pivotA != null) __obj.updateDynamic("pivotA")(pivotA.asInstanceOf[js.Any])
+    if (pivotB != null) __obj.updateDynamic("pivotB")(pivotB.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHingeConstraintOptions]
   }
 }

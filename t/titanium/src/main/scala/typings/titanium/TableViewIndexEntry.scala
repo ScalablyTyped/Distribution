@@ -23,7 +23,7 @@ object TableViewIndexEntry {
   def apply(index: Int | Double = null, title: String = null): TableViewIndexEntry = {
     val __obj = js.Dynamic.literal()
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableViewIndexEntry]
   }
 }

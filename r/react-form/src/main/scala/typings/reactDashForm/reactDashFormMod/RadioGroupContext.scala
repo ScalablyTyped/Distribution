@@ -11,7 +11,7 @@ trait RadioGroupContext extends js.Object {
 object RadioGroupContext {
   @scala.inline
   def apply(group: FieldApi): RadioGroupContext = {
-    val __obj = js.Dynamic.literal(group = group)
+    val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RadioGroupContext]
   }

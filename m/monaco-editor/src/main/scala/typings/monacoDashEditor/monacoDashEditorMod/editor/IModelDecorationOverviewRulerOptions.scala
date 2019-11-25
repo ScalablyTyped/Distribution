@@ -18,7 +18,7 @@ object IModelDecorationOverviewRulerOptions {
     color: String | ThemeColor = null,
     darkColor: String | ThemeColor = null
   ): IModelDecorationOverviewRulerOptions = {
-    val __obj = js.Dynamic.literal(position = position)
+    val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (darkColor != null) __obj.updateDynamic("darkColor")(darkColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[IModelDecorationOverviewRulerOptions]

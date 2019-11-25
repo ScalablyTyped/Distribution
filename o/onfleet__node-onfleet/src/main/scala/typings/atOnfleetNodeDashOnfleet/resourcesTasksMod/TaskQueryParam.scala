@@ -27,14 +27,14 @@ object TaskQueryParam {
     to: Int | Double = null,
     worker: String = null
   ): TaskQueryParam = {
-    val __obj = js.Dynamic.literal(from = from)
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any])
     if (completeAfterAfter != null) __obj.updateDynamic("completeAfterAfter")(completeAfterAfter.asInstanceOf[js.Any])
     if (completeBeforeBefore != null) __obj.updateDynamic("completeBeforeBefore")(completeBeforeBefore.asInstanceOf[js.Any])
-    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies)
-    if (lastId != null) __obj.updateDynamic("lastId")(lastId)
+    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
+    if (lastId != null) __obj.updateDynamic("lastId")(lastId.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
-    if (worker != null) __obj.updateDynamic("worker")(worker)
+    if (worker != null) __obj.updateDynamic("worker")(worker.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskQueryParam]
   }
 }

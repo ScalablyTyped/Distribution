@@ -32,12 +32,12 @@ object EditorOptions {
     item: T = null,
     position: CellPosition = null
   ): EditorOptions[T] = {
-    val __obj = js.Dynamic.literal(column = column, container = container, grid = grid)
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], grid = grid.asInstanceOf[js.Any])
     if (cancelChanges != null) __obj.updateDynamic("cancelChanges")(js.Any.fromFunction0(cancelChanges))
     if (commitChanges != null) __obj.updateDynamic("commitChanges")(js.Any.fromFunction0(commitChanges))
-    if (gridPosition != null) __obj.updateDynamic("gridPosition")(gridPosition)
+    if (gridPosition != null) __obj.updateDynamic("gridPosition")(gridPosition.asInstanceOf[js.Any])
     if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorOptions[T]]
   }
 }

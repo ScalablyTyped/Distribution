@@ -20,9 +20,9 @@ object Anon_Name {
     use: String | js.Array[String] = null
   ): Anon_Name = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (npmDependencies != null) __obj.updateDynamic("npmDependencies")(npmDependencies)
-    if (sources != null) __obj.updateDynamic("sources")(sources)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (npmDependencies != null) __obj.updateDynamic("npmDependencies")(npmDependencies.asInstanceOf[js.Any])
+    if (sources != null) __obj.updateDynamic("sources")(sources.asInstanceOf[js.Any])
     if (use != null) __obj.updateDynamic("use")(use.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Name]
   }

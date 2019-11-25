@@ -17,7 +17,7 @@ trait FaceGender extends js.Object {
 object FaceGender {
   @scala.inline
   def apply(gender: String, gender_label: String, score: Double): FaceGender = {
-    val __obj = js.Dynamic.literal(gender = gender, gender_label = gender_label, score = score)
+    val __obj = js.Dynamic.literal(gender = gender.asInstanceOf[js.Any], gender_label = gender_label.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FaceGender]
   }

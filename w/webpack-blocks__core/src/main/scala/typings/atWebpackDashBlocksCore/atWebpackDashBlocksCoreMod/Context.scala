@@ -13,7 +13,7 @@ object Context {
   @scala.inline
   def apply(`match`: Anon_Test): Context = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("match")(`match`)
+    __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Context]
   }
 }

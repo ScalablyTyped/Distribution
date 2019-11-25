@@ -36,7 +36,7 @@ object Anon_CookieField {
     dir: String,
     queryField: String
   ): Anon_CookieField = {
-    val __obj = js.Dynamic.literal(cookieField = cookieField, cookieMaxAge = cookieMaxAge.asInstanceOf[js.Any], defaultLocale = defaultLocale, dir = dir, queryField = queryField)
+    val __obj = js.Dynamic.literal(cookieField = cookieField.asInstanceOf[js.Any], cookieMaxAge = cookieMaxAge.asInstanceOf[js.Any], defaultLocale = defaultLocale.asInstanceOf[js.Any], dir = dir.asInstanceOf[js.Any], queryField = queryField.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CookieField]
   }

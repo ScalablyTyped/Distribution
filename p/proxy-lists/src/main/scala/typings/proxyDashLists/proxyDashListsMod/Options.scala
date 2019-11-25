@@ -35,16 +35,16 @@ object Options {
     sourcesWhiteList: js.Array[String] = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (anonymityLevels != null) __obj.updateDynamic("anonymityLevels")(anonymityLevels)
-    if (countries != null) __obj.updateDynamic("countries")(countries)
-    if (countriesBlackList != null) __obj.updateDynamic("countriesBlackList")(countriesBlackList)
-    if (defaultRequestOptions != null) __obj.updateDynamic("defaultRequestOptions")(defaultRequestOptions)
+    if (anonymityLevels != null) __obj.updateDynamic("anonymityLevels")(anonymityLevels.asInstanceOf[js.Any])
+    if (countries != null) __obj.updateDynamic("countries")(countries.asInstanceOf[js.Any])
+    if (countriesBlackList != null) __obj.updateDynamic("countriesBlackList")(countriesBlackList.asInstanceOf[js.Any])
+    if (defaultRequestOptions != null) __obj.updateDynamic("defaultRequestOptions")(defaultRequestOptions.asInstanceOf[js.Any])
     if (filterMode != null) __obj.updateDynamic("filterMode")(filterMode.asInstanceOf[js.Any])
-    if (ipTypes != null) __obj.updateDynamic("ipTypes")(ipTypes)
-    if (protocols != null) __obj.updateDynamic("protocols")(protocols)
-    if (!js.isUndefined(series)) __obj.updateDynamic("series")(series)
-    if (sourcesBlackList != null) __obj.updateDynamic("sourcesBlackList")(sourcesBlackList)
-    if (sourcesWhiteList != null) __obj.updateDynamic("sourcesWhiteList")(sourcesWhiteList)
+    if (ipTypes != null) __obj.updateDynamic("ipTypes")(ipTypes.asInstanceOf[js.Any])
+    if (protocols != null) __obj.updateDynamic("protocols")(protocols.asInstanceOf[js.Any])
+    if (!js.isUndefined(series)) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
+    if (sourcesBlackList != null) __obj.updateDynamic("sourcesBlackList")(sourcesBlackList.asInstanceOf[js.Any])
+    if (sourcesWhiteList != null) __obj.updateDynamic("sourcesWhiteList")(sourcesWhiteList.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

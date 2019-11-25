@@ -12,7 +12,7 @@ trait MoveLearnset extends js.Object {
 object MoveLearnset {
   @scala.inline
   def apply(games: js.Array[String], learnset: js.Array[Learnset]): MoveLearnset = {
-    val __obj = js.Dynamic.literal(games = games, learnset = learnset)
+    val __obj = js.Dynamic.literal(games = games.asInstanceOf[js.Any], learnset = learnset.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MoveLearnset]
   }

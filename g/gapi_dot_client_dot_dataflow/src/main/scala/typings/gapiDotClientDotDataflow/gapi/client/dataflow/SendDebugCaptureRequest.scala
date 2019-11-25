@@ -19,10 +19,10 @@ object SendDebugCaptureRequest {
   @scala.inline
   def apply(componentId: String = null, data: String = null, location: String = null, workerId: String = null): SendDebugCaptureRequest = {
     val __obj = js.Dynamic.literal()
-    if (componentId != null) __obj.updateDynamic("componentId")(componentId)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (workerId != null) __obj.updateDynamic("workerId")(workerId)
+    if (componentId != null) __obj.updateDynamic("componentId")(componentId.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (workerId != null) __obj.updateDynamic("workerId")(workerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendDebugCaptureRequest]
   }
 }

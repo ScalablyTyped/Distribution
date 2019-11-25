@@ -12,7 +12,7 @@ trait Anon_DependencyList extends js.Object {
 object Anon_DependencyList {
   @scala.inline
   def apply(dependencyList: String, importList: String): Anon_DependencyList = {
-    val __obj = js.Dynamic.literal(dependencyList = dependencyList, importList = importList)
+    val __obj = js.Dynamic.literal(dependencyList = dependencyList.asInstanceOf[js.Any], importList = importList.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DependencyList]
   }

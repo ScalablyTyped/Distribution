@@ -12,7 +12,7 @@ trait Anon_IconShow extends js.Object {
 object Anon_IconShow {
   @scala.inline
   def apply(icon: String, show: Boolean): Anon_IconShow = {
-    val __obj = js.Dynamic.literal(icon = icon, show = show)
+    val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IconShow]
   }

@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait TextDirection extends js.Object
 
+object TextDirection {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def ltr: typings.vegaDashTypings.vegaDashTypingsStrings.ltr = this.cast("ltr")
+  @scala.inline
+  def rtl: typings.vegaDashTypings.vegaDashTypingsStrings.rtl = this.cast("rtl")
+}
+

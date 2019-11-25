@@ -47,11 +47,11 @@ object ProjectParametersProperties {
     transformation: ProjectParametersTransformation = null
   ): ProjectParametersProperties = {
     val __obj = js.Dynamic.literal()
-    if (geometries != null) __obj.updateDynamic("geometries")(geometries)
-    if (outSR != null) __obj.updateDynamic("outSR")(outSR)
-    if (outSpatialReference != null) __obj.updateDynamic("outSpatialReference")(outSpatialReference)
-    if (!js.isUndefined(transformForward)) __obj.updateDynamic("transformForward")(transformForward)
-    if (transformation != null) __obj.updateDynamic("transformation")(transformation)
+    if (geometries != null) __obj.updateDynamic("geometries")(geometries.asInstanceOf[js.Any])
+    if (outSR != null) __obj.updateDynamic("outSR")(outSR.asInstanceOf[js.Any])
+    if (outSpatialReference != null) __obj.updateDynamic("outSpatialReference")(outSpatialReference.asInstanceOf[js.Any])
+    if (!js.isUndefined(transformForward)) __obj.updateDynamic("transformForward")(transformForward.asInstanceOf[js.Any])
+    if (transformation != null) __obj.updateDynamic("transformation")(transformation.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectParametersProperties]
   }
 }

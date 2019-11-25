@@ -20,7 +20,7 @@ trait OrgsAddOrUpdateMembershipParams extends js.Object {
 object OrgsAddOrUpdateMembershipParams {
   @scala.inline
   def apply(org: String, username: String, role: admin | member = null): OrgsAddOrUpdateMembershipParams = {
-    val __obj = js.Dynamic.literal(org = org, username = username)
+    val __obj = js.Dynamic.literal(org = org.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrgsAddOrUpdateMembershipParams]
   }

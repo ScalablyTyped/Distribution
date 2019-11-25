@@ -26,8 +26,8 @@ object PropertyBag {
     tags: js.Array[String] = null
   ): PropertyBag = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropertyBag]
   }
 }

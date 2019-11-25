@@ -30,7 +30,7 @@ object ITooltipStatus {
     open: Boolean,
     state: appearing | stable | disappearing | closed
   ): ITooltipStatus = {
-    val __obj = js.Dynamic.literal(destroyed = destroyed, destroying = destroying, enabled = enabled, open = open, state = state.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(destroyed = destroyed.asInstanceOf[js.Any], destroying = destroying.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ITooltipStatus]
   }

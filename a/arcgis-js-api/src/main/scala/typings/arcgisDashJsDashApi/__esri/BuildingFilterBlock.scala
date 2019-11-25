@@ -37,9 +37,9 @@ object BuildingFilterBlock {
     filterMode: BuildingFilterBlockFilterMode = null,
     title: String = null
   ): BuildingFilterBlock = {
-    val __obj = js.Dynamic.literal(constructor = constructor, filterExpression = filterExpression, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (filterMode != null) __obj.updateDynamic("filterMode")(filterMode)
-    if (title != null) __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], filterExpression = filterExpression.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (filterMode != null) __obj.updateDynamic("filterMode")(filterMode.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildingFilterBlock]
   }
 }

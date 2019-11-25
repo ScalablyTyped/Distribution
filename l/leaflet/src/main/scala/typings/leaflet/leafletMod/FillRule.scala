@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait FillRule extends js.Object
 
+object FillRule {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def evenodd: typings.leaflet.leafletStrings.evenodd = this.cast("evenodd")
+  @scala.inline
+  def inherit: typings.leaflet.leafletStrings.inherit = this.cast("inherit")
+  @scala.inline
+  def nonzero: typings.leaflet.leafletStrings.nonzero = this.cast("nonzero")
+}
+

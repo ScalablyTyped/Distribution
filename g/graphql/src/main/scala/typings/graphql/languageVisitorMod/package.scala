@@ -57,11 +57,11 @@ package object languageVisitorMod {
   // TODO: Should be `[]`, but that requires TypeScript@3
   type EmptyTuple = js.Array[scala.Nothing]
   type EnterLeaveVisitor[KindToNode, Nodes] = EnterLeave[
-    (VisitFn[Nodes, Nodes]) | (/* import warning: ImportType.apply c Unsupported type mapping: 
+    (VisitFn[Nodes, Nodes]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof KindToNode ]:? graphql.graphql/language/visitor.VisitFn<Nodes, KindToNode[K]>}
     */ typings.graphql.graphqlStrings.EnterLeaveVisitor with KindToNode)
   ]
-  type ShapeMapVisitor[KindToNode, Nodes] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type ShapeMapVisitor[KindToNode, Nodes] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof KindToNode ]:? graphql.graphql/language/visitor.VisitFn<Nodes, KindToNode[K]> | graphql.graphql/language/visitor.EnterLeave<graphql.graphql/language/visitor.VisitFn<Nodes, KindToNode[K]>>}
     */ typings.graphql.graphqlStrings.ShapeMapVisitor with js.Any
   type VisitFn[TAnyNode, TVisitedNode] = js.Function5[
@@ -73,7 +73,7 @@ package object languageVisitorMod {
     js.Any
   ]
   type Visitor[KindToNode, Nodes] = (EnterLeaveVisitor[KindToNode, Nodes]) | (ShapeMapVisitor[KindToNode, Nodes])
-  type VisitorKeyMap[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type VisitorKeyMap[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: std.ReadonlyArray<keyof T[P]>}
     */ typings.graphql.graphqlStrings.VisitorKeyMap with js.Any
 }

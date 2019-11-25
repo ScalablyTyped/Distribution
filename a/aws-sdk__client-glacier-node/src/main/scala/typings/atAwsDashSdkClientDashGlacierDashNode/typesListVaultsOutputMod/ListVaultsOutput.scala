@@ -30,9 +30,9 @@ object ListVaultsOutput {
     Marker: String = null,
     VaultList: js.Array[_UnmarshalledDescribeVaultOutput] = null
   ): ListVaultsOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker)
-    if (VaultList != null) __obj.updateDynamic("VaultList")(VaultList)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
+    if (VaultList != null) __obj.updateDynamic("VaultList")(VaultList.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListVaultsOutput]
   }
 }

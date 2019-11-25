@@ -23,9 +23,9 @@ object RevisionCheckResponse {
   @scala.inline
   def apply(apiVersion: String = null, kind: String = null, revisionStatus: String = null): RevisionCheckResponse = {
     val __obj = js.Dynamic.literal()
-    if (apiVersion != null) __obj.updateDynamic("apiVersion")(apiVersion)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (revisionStatus != null) __obj.updateDynamic("revisionStatus")(revisionStatus)
+    if (apiVersion != null) __obj.updateDynamic("apiVersion")(apiVersion.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (revisionStatus != null) __obj.updateDynamic("revisionStatus")(revisionStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[RevisionCheckResponse]
   }
 }

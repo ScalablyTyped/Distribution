@@ -1,6 +1,5 @@
 package typings.vscodeDashLanguageclient.libClientMod
 
-import typings.vscodeDashJsonrpc.libMessagesMod.MessageType
 import typings.vscodeDashLanguageserverDashProtocol.libProtocolMod.ClientCapabilities
 import typings.vscodeDashLanguageserverDashProtocol.libProtocolMod.DocumentSelector
 import typings.vscodeDashLanguageserverDashProtocol.libProtocolMod.InitializeParams
@@ -20,7 +19,7 @@ trait DynamicFeature[T] extends js.Object {
   /**
     * The message for which this features support dynamic activation / registration.
     */
-  var messages: MessageType | js.Array[MessageType] = js.native
+  var messages: typings.vscodeDashJsonrpc.libMessagesMod.MessageType | js.Array[typings.vscodeDashJsonrpc.libMessagesMod.MessageType] = js.native
   /**
     * Called when the client is stopped to dispose this feature. Usually a feature
     * unregisters listeners registerd hooked up with the VS Code extension host.
@@ -50,7 +49,7 @@ trait DynamicFeature[T] extends js.Object {
     * @param message the message to register for.
     * @param data additional registration data as defined in the protocol.
     */
-  def register(message: MessageType, data: RegistrationData[T]): Unit = js.native
+  def register(message: typings.vscodeDashJsonrpc.libMessagesMod.MessageType, data: RegistrationData[T]): Unit = js.native
   /**
     * Is called when the server wants to unregister a feature.
     *

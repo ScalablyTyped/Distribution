@@ -19,8 +19,8 @@ trait HTMLTrackElementList extends /* index */ NumberDictionary[HTMLTrackElement
 object HTMLTrackElementList {
   @scala.inline
   def apply(length: Double, NumberDictionary: /* index */ NumberDictionary[HTMLTrackElement] = null): HTMLTrackElementList = {
-    val __obj = js.Dynamic.literal(length = length)
-    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
+    if (NumberDictionary != null) js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[HTMLTrackElementList]
   }
 }

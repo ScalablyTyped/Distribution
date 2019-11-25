@@ -19,10 +19,10 @@ object Message {
     contentType: String = null,
     customProperties: Dictionary[_] = null
   ): Message = {
-    val __obj = js.Dynamic.literal(body = body)
-    if (brokerProperties != null) __obj.updateDynamic("brokerProperties")(brokerProperties)
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
-    if (customProperties != null) __obj.updateDynamic("customProperties")(customProperties)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
+    if (brokerProperties != null) __obj.updateDynamic("brokerProperties")(brokerProperties.asInstanceOf[js.Any])
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
+    if (customProperties != null) __obj.updateDynamic("customProperties")(customProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[Message]
   }
 }

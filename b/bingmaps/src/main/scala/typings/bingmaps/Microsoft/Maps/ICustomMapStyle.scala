@@ -16,9 +16,9 @@ trait ICustomMapStyle extends js.Object {
 object ICustomMapStyle {
   @scala.inline
   def apply(version: String, elements: IMapElements = null, settings: ISettingsStyle = null): ICustomMapStyle = {
-    val __obj = js.Dynamic.literal(version = version)
-    if (elements != null) __obj.updateDynamic("elements")(elements)
-    if (settings != null) __obj.updateDynamic("settings")(settings)
+    val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
+    if (elements != null) __obj.updateDynamic("elements")(elements.asInstanceOf[js.Any])
+    if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICustomMapStyle]
   }
 }

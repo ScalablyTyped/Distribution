@@ -27,11 +27,11 @@ object ScoreSubmission {
     signature: String = null
   ): ScoreSubmission = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (leaderboardId != null) __obj.updateDynamic("leaderboardId")(leaderboardId)
-    if (score != null) __obj.updateDynamic("score")(score)
-    if (scoreTag != null) __obj.updateDynamic("scoreTag")(scoreTag)
-    if (signature != null) __obj.updateDynamic("signature")(signature)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (leaderboardId != null) __obj.updateDynamic("leaderboardId")(leaderboardId.asInstanceOf[js.Any])
+    if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
+    if (scoreTag != null) __obj.updateDynamic("scoreTag")(scoreTag.asInstanceOf[js.Any])
+    if (signature != null) __obj.updateDynamic("signature")(signature.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScoreSubmission]
   }
 }

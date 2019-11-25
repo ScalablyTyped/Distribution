@@ -47,12 +47,12 @@ object _UnmarshalledEdge {
     SummaryStatistics: _UnmarshalledEdgeStatistics = null
   ): _UnmarshalledEdge = {
     val __obj = js.Dynamic.literal()
-    if (Aliases != null) __obj.updateDynamic("Aliases")(Aliases)
-    if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime)
+    if (Aliases != null) __obj.updateDynamic("Aliases")(Aliases.asInstanceOf[js.Any])
+    if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime.asInstanceOf[js.Any])
     if (ReferenceId != null) __obj.updateDynamic("ReferenceId")(ReferenceId.asInstanceOf[js.Any])
-    if (ResponseTimeHistogram != null) __obj.updateDynamic("ResponseTimeHistogram")(ResponseTimeHistogram)
-    if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime)
-    if (SummaryStatistics != null) __obj.updateDynamic("SummaryStatistics")(SummaryStatistics)
+    if (ResponseTimeHistogram != null) __obj.updateDynamic("ResponseTimeHistogram")(ResponseTimeHistogram.asInstanceOf[js.Any])
+    if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])
+    if (SummaryStatistics != null) __obj.updateDynamic("SummaryStatistics")(SummaryStatistics.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledEdge]
   }
 }

@@ -13,7 +13,7 @@ object Anon_Resolver {
   @scala.inline
   def apply(resolver: default = null): Anon_Resolver = {
     val __obj = js.Dynamic.literal()
-    if (resolver != null) __obj.updateDynamic("resolver")(resolver)
+    if (resolver != null) __obj.updateDynamic("resolver")(resolver.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Resolver]
   }
 }

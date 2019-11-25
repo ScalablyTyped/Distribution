@@ -18,9 +18,9 @@ object IRatingStyleProps {
     disabled: js.UndefOr[Boolean] = js.undefined,
     readOnly: js.UndefOr[Boolean] = js.undefined
   ): IRatingStyleProps = {
-    val __obj = js.Dynamic.literal(theme = theme)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRatingStyleProps]
   }
 }

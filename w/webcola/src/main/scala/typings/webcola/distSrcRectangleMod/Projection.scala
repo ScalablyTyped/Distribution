@@ -1,6 +1,5 @@
 package typings.webcola.distSrcRectangleMod
 
-import typings.webcola.Fn_R
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,7 +36,9 @@ class Projection protected () extends js.Object {
   var variables: js.Any = js.native
   var xConstraints: js.Any = js.native
   var yConstraints: js.Any = js.native
-  def projectFunctions(): js.Array[Fn_R] = js.native
+  def projectFunctions(): js.Array[
+    js.Function3[/* x0 */ js.Array[Double], /* y0 */ js.Array[Double], /* r */ js.Array[Double], Unit]
+  ] = js.native
   def xProject(x0: js.Array[Double], y0: js.Array[Double], x: js.Array[Double]): Unit = js.native
   def yProject(x0: js.Array[Double], y0: js.Array[Double], y: js.Array[Double]): Unit = js.native
 }

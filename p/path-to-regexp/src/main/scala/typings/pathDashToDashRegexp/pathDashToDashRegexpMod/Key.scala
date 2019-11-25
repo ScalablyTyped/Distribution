@@ -23,7 +23,7 @@ object Key {
     prefix: String,
     repeat: Boolean
   ): Key = {
-    val __obj = js.Dynamic.literal(delimiter = delimiter, name = name.asInstanceOf[js.Any], optional = optional, pattern = pattern, prefix = prefix, repeat = repeat)
+    val __obj = js.Dynamic.literal(delimiter = delimiter.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], repeat = repeat.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Key]
   }

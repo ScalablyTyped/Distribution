@@ -16,7 +16,7 @@ trait Anon_NOUPDATE extends js.Object {
 object Anon_NOUPDATE {
   @scala.inline
   def apply(NO_UPDATE: no_update, THROTTLED: throttled, UPDATE_AVAILABLE: update_available): Anon_NOUPDATE = {
-    val __obj = js.Dynamic.literal(NO_UPDATE = NO_UPDATE, THROTTLED = THROTTLED, UPDATE_AVAILABLE = UPDATE_AVAILABLE)
+    val __obj = js.Dynamic.literal(NO_UPDATE = NO_UPDATE.asInstanceOf[js.Any], THROTTLED = THROTTLED.asInstanceOf[js.Any], UPDATE_AVAILABLE = UPDATE_AVAILABLE.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_NOUPDATE]
   }

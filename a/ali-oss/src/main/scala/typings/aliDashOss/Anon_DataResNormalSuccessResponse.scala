@@ -14,7 +14,7 @@ trait Anon_DataResNormalSuccessResponse extends js.Object {
 object Anon_DataResNormalSuccessResponse {
   @scala.inline
   def apply(data: PutChannelConf, res: NormalSuccessResponse): Anon_DataResNormalSuccessResponse = {
-    val __obj = js.Dynamic.literal(data = data, res = res)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DataResNormalSuccessResponse]
   }

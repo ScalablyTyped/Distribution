@@ -99,18 +99,18 @@ object CultureInfo {
     zoomText: String = null
   ): CultureInfo = {
     val __obj = js.Dynamic.literal()
-    if (days != null) __obj.updateDynamic("days")(days)
-    if (decimalSeparator != null) __obj.updateDynamic("decimalSeparator")(decimalSeparator)
-    if (digitGroupSeparator != null) __obj.updateDynamic("digitGroupSeparator")(digitGroupSeparator)
-    if (menuText != null) __obj.updateDynamic("menuText")(menuText)
-    if (months != null) __obj.updateDynamic("months")(months)
-    if (panText != null) __obj.updateDynamic("panText")(panText)
-    if (resetText != null) __obj.updateDynamic("resetText")(resetText)
-    if (saveJPGText != null) __obj.updateDynamic("saveJPGText")(saveJPGText)
-    if (savePNGText != null) __obj.updateDynamic("savePNGText")(savePNGText)
-    if (shortDays != null) __obj.updateDynamic("shortDays")(shortDays)
-    if (shortMonths != null) __obj.updateDynamic("shortMonths")(shortMonths)
-    if (zoomText != null) __obj.updateDynamic("zoomText")(zoomText)
+    if (days != null) __obj.updateDynamic("days")(days.asInstanceOf[js.Any])
+    if (decimalSeparator != null) __obj.updateDynamic("decimalSeparator")(decimalSeparator.asInstanceOf[js.Any])
+    if (digitGroupSeparator != null) __obj.updateDynamic("digitGroupSeparator")(digitGroupSeparator.asInstanceOf[js.Any])
+    if (menuText != null) __obj.updateDynamic("menuText")(menuText.asInstanceOf[js.Any])
+    if (months != null) __obj.updateDynamic("months")(months.asInstanceOf[js.Any])
+    if (panText != null) __obj.updateDynamic("panText")(panText.asInstanceOf[js.Any])
+    if (resetText != null) __obj.updateDynamic("resetText")(resetText.asInstanceOf[js.Any])
+    if (saveJPGText != null) __obj.updateDynamic("saveJPGText")(saveJPGText.asInstanceOf[js.Any])
+    if (savePNGText != null) __obj.updateDynamic("savePNGText")(savePNGText.asInstanceOf[js.Any])
+    if (shortDays != null) __obj.updateDynamic("shortDays")(shortDays.asInstanceOf[js.Any])
+    if (shortMonths != null) __obj.updateDynamic("shortMonths")(shortMonths.asInstanceOf[js.Any])
+    if (zoomText != null) __obj.updateDynamic("zoomText")(zoomText.asInstanceOf[js.Any])
     __obj.asInstanceOf[CultureInfo]
   }
 }

@@ -16,8 +16,8 @@ object IGetValidationResultRequest {
   @scala.inline
   def apply(languageCode: String = null, parent: String = null): IGetValidationResultRequest = {
     val __obj = js.Dynamic.literal()
-    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGetValidationResultRequest]
   }
 }

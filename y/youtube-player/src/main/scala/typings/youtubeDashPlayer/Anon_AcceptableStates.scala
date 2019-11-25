@@ -15,7 +15,7 @@ trait Anon_AcceptableStates extends js.Object {
 object Anon_AcceptableStates {
   @scala.inline
   def apply(acceptableStates: js.Tuple2[ENDED, PAUSED], stateChangeRequired: `false`): Anon_AcceptableStates = {
-    val __obj = js.Dynamic.literal(acceptableStates = acceptableStates, stateChangeRequired = stateChangeRequired)
+    val __obj = js.Dynamic.literal(acceptableStates = acceptableStates.asInstanceOf[js.Any], stateChangeRequired = stateChangeRequired.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AcceptableStates]
   }

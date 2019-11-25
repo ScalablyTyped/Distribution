@@ -13,7 +13,7 @@ trait Anon_On2fa extends js.Object {
 object Anon_On2fa {
   @scala.inline
   def apply(on2fa: () => js.Promise[String], password: String, username: String): Anon_On2fa = {
-    val __obj = js.Dynamic.literal(on2fa = js.Any.fromFunction0(on2fa), password = password, username = username)
+    val __obj = js.Dynamic.literal(on2fa = js.Any.fromFunction0(on2fa), password = password.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_On2fa]
   }

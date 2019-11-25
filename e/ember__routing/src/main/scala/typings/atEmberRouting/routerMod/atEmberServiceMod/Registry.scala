@@ -11,7 +11,7 @@ trait Registry extends js.Object {
 object Registry {
   @scala.inline
   def apply(router: typings.atEmberRouting.routerDashServiceMod.default): Registry = {
-    val __obj = js.Dynamic.literal(router = router)
+    val __obj = js.Dynamic.literal(router = router.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Registry]
   }

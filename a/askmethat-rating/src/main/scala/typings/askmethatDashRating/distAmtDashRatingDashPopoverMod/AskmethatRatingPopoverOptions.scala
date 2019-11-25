@@ -31,8 +31,8 @@ object AskmethatRatingPopoverOptions {
     values: js.Array[Double],
     direction: AskmethatRatingPopoverDirection = null
   ): AskmethatRatingPopoverOptions = {
-    val __obj = js.Dynamic.literal(color = color, fontClass = fontClass, values = values)
-    if (direction != null) __obj.updateDynamic("direction")(direction)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], fontClass = fontClass.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     __obj.asInstanceOf[AskmethatRatingPopoverOptions]
   }
 }

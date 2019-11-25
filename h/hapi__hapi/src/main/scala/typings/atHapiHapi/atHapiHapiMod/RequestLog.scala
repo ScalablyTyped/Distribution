@@ -21,7 +21,7 @@ object RequestLog {
     tags: js.Array[String],
     timestamp: Double
   ): RequestLog = {
-    val __obj = js.Dynamic.literal(channel = channel, data = data.asInstanceOf[js.Any], request = request, tags = tags, timestamp = timestamp)
+    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RequestLog]
   }

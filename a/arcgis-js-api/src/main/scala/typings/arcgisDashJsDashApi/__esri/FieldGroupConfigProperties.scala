@@ -43,10 +43,10 @@ object FieldGroupConfigProperties {
     visibilityExpression: String = null
   ): FieldGroupConfigProperties = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (fieldConfig != null) __obj.updateDynamic("fieldConfig")(fieldConfig)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (visibilityExpression != null) __obj.updateDynamic("visibilityExpression")(visibilityExpression)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (fieldConfig != null) __obj.updateDynamic("fieldConfig")(fieldConfig.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (visibilityExpression != null) __obj.updateDynamic("visibilityExpression")(visibilityExpression.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldGroupConfigProperties]
   }
 }

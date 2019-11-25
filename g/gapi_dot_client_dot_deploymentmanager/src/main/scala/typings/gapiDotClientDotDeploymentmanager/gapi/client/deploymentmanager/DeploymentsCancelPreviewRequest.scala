@@ -20,7 +20,7 @@ object DeploymentsCancelPreviewRequest {
   @scala.inline
   def apply(fingerprint: String = null): DeploymentsCancelPreviewRequest = {
     val __obj = js.Dynamic.literal()
-    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint)
+    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeploymentsCancelPreviewRequest]
   }
 }

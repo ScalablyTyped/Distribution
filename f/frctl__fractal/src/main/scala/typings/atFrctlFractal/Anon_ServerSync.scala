@@ -13,8 +13,8 @@ object Anon_ServerSync {
   @scala.inline
   def apply(server: String = null, sync: Anon_External = null): Anon_ServerSync = {
     val __obj = js.Dynamic.literal()
-    if (server != null) __obj.updateDynamic("server")(server)
-    if (sync != null) __obj.updateDynamic("sync")(sync)
+    if (server != null) __obj.updateDynamic("server")(server.asInstanceOf[js.Any])
+    if (sync != null) __obj.updateDynamic("sync")(sync.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ServerSync]
   }
 }

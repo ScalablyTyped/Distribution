@@ -56,18 +56,18 @@ object Anon_AltBlogIdFetchBody {
     userIp: String = null,
     view: String = null
   ): Anon_AltBlogIdFetchBody = {
-    val __obj = js.Dynamic.literal(blogId = blogId, postId = postId)
-    if (alt != null) __obj.updateDynamic("alt")(alt)
-    if (!js.isUndefined(fetchBody)) __obj.updateDynamic("fetchBody")(fetchBody)
-    if (!js.isUndefined(fetchImages)) __obj.updateDynamic("fetchImages")(fetchImages)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (key != null) __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(blogId = blogId.asInstanceOf[js.Any], postId = postId.asInstanceOf[js.Any])
+    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
+    if (!js.isUndefined(fetchBody)) __obj.updateDynamic("fetchBody")(fetchBody.asInstanceOf[js.Any])
+    if (!js.isUndefined(fetchImages)) __obj.updateDynamic("fetchImages")(fetchImages.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (maxComments != null) __obj.updateDynamic("maxComments")(maxComments.asInstanceOf[js.Any])
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
-    if (view != null) __obj.updateDynamic("view")(view)
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AltBlogIdFetchBody]
   }
 }

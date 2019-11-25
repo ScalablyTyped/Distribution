@@ -17,9 +17,9 @@ object IntegerOptions {
     enforceRange: js.UndefOr[Boolean] = js.undefined
   ): IntegerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(clamp)) __obj.updateDynamic("clamp")(clamp)
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (!js.isUndefined(enforceRange)) __obj.updateDynamic("enforceRange")(enforceRange)
+    if (!js.isUndefined(clamp)) __obj.updateDynamic("clamp")(clamp.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (!js.isUndefined(enforceRange)) __obj.updateDynamic("enforceRange")(enforceRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntegerOptions]
   }
 }

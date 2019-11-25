@@ -22,7 +22,7 @@ object AppointmentResizingEventArgs {
     oldInterval: BootstrapTimeInterval,
     sender: Control
   ): AppointmentResizingEventArgs = {
-    val __obj = js.Dynamic.literal(allow = allow, appointmentId = appointmentId, mouseEvent = mouseEvent, newInterval = newInterval, oldInterval = oldInterval, sender = sender)
+    val __obj = js.Dynamic.literal(allow = allow.asInstanceOf[js.Any], appointmentId = appointmentId.asInstanceOf[js.Any], mouseEvent = mouseEvent.asInstanceOf[js.Any], newInterval = newInterval.asInstanceOf[js.Any], oldInterval = oldInterval.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AppointmentResizingEventArgs]
   }

@@ -17,7 +17,7 @@ object _UnmarshalledEnvironment {
   @scala.inline
   def apply(Variables: StringDictionary[String] = null): _UnmarshalledEnvironment = {
     val __obj = js.Dynamic.literal()
-    if (Variables != null) __obj.updateDynamic("Variables")(Variables)
+    if (Variables != null) __obj.updateDynamic("Variables")(Variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledEnvironment]
   }
 }

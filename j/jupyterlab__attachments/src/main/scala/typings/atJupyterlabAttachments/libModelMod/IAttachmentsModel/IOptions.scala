@@ -30,9 +30,9 @@ object IOptions {
   @scala.inline
   def apply(contentFactory: IContentFactory = null, modelDB: IModelDB = null, values: IAttachments = null): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (contentFactory != null) __obj.updateDynamic("contentFactory")(contentFactory)
-    if (modelDB != null) __obj.updateDynamic("modelDB")(modelDB)
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (contentFactory != null) __obj.updateDynamic("contentFactory")(contentFactory.asInstanceOf[js.Any])
+    if (modelDB != null) __obj.updateDynamic("modelDB")(modelDB.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

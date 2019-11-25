@@ -78,25 +78,25 @@ object documentdbStrings {
   sealed trait Update extends TriggerOperation
   
   @js.native
-  sealed trait all extends TriggerOperation
+  sealed trait all_ extends TriggerOperation
   
   @js.native
-  sealed trait create extends TriggerOperation
+  sealed trait create_ extends TriggerOperation
   
   @js.native
-  sealed trait delete extends TriggerOperation
+  sealed trait delete_ extends TriggerOperation
   
   @js.native
-  sealed trait post extends TriggerType
+  sealed trait post_ extends TriggerType
   
   @js.native
-  sealed trait pre extends TriggerType
+  sealed trait pre_ extends TriggerType
   
   @js.native
-  sealed trait replace extends TriggerOperation
+  sealed trait replace_ extends TriggerOperation
   
   @js.native
-  sealed trait update extends TriggerOperation
+  sealed trait update_ extends TriggerOperation
   
   @scala.inline
   def All: All = "All".asInstanceOf[All]
@@ -141,18 +141,18 @@ object documentdbStrings {
   @scala.inline
   def Update: Update = "Update".asInstanceOf[Update]
   @scala.inline
-  def all: all = "all".asInstanceOf[all]
+  def all_ : all_ = "all".asInstanceOf[all_]
   @scala.inline
-  def create: create = "create".asInstanceOf[create]
+  def create_ : create_ = "create".asInstanceOf[create_]
   @scala.inline
-  def delete: delete = "delete".asInstanceOf[delete]
+  def delete_ : delete_ = "delete".asInstanceOf[delete_]
   @scala.inline
-  def post: post = "post".asInstanceOf[post]
+  def post_ : post_ = "post".asInstanceOf[post_]
   @scala.inline
-  def pre: pre = "pre".asInstanceOf[pre]
+  def pre_ : pre_ = "pre".asInstanceOf[pre_]
   @scala.inline
-  def replace: replace = "replace".asInstanceOf[replace]
+  def replace_ : replace_ = "replace".asInstanceOf[replace_]
   @scala.inline
-  def update: update = "update".asInstanceOf[update]
+  def update_ : update_ = "update".asInstanceOf[update_]
 }
 

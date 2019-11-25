@@ -19,9 +19,9 @@ object Parameters {
     options: OptionsParameter = null
   ): Parameters = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (fileName != null) __obj.updateDynamic("fileName")(fileName)
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[Parameters]
   }
 }

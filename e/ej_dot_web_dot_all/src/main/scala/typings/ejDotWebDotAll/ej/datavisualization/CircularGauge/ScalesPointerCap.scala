@@ -37,10 +37,10 @@ object ScalesPointerCap {
     radius: Int | Double = null
   ): ScalesPointerCap = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
-    if (interiorGradient != null) __obj.updateDynamic("interiorGradient")(interiorGradient)
+    if (interiorGradient != null) __obj.updateDynamic("interiorGradient")(interiorGradient.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScalesPointerCap]
   }

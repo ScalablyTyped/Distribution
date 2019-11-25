@@ -12,7 +12,7 @@ trait Anon_Joins extends js.Object {
 object Anon_Joins {
   @scala.inline
   def apply(joins: js.Object, leaves: js.Object): Anon_Joins = {
-    val __obj = js.Dynamic.literal(joins = joins, leaves = leaves)
+    val __obj = js.Dynamic.literal(joins = joins.asInstanceOf[js.Any], leaves = leaves.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Joins]
   }

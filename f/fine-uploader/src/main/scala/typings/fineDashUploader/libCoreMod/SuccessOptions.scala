@@ -59,11 +59,11 @@ object SuccessOptions {
   ): SuccessOptions = {
     val __obj = js.Dynamic.literal()
     if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (!js.isUndefined(jsonPayload)) __obj.updateDynamic("jsonPayload")(jsonPayload)
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (resetOnStatus != null) __obj.updateDynamic("resetOnStatus")(resetOnStatus)
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (!js.isUndefined(jsonPayload)) __obj.updateDynamic("jsonPayload")(jsonPayload.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (resetOnStatus != null) __obj.updateDynamic("resetOnStatus")(resetOnStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuccessOptions]
   }
 }

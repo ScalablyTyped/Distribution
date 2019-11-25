@@ -12,7 +12,7 @@ trait Context extends js.Object {
 object Context {
   @scala.inline
   def apply(polly: Polly): Context = {
-    val __obj = js.Dynamic.literal(polly = polly)
+    val __obj = js.Dynamic.literal(polly = polly.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Context]
   }

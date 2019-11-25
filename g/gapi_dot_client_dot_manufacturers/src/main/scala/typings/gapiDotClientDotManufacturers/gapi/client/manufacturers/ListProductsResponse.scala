@@ -15,8 +15,8 @@ object ListProductsResponse {
   @scala.inline
   def apply(nextPageToken: String = null, products: js.Array[Product] = null): ListProductsResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (products != null) __obj.updateDynamic("products")(products)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (products != null) __obj.updateDynamic("products")(products.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListProductsResponse]
   }
 }

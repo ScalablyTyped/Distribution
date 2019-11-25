@@ -14,8 +14,8 @@ object Anon_Base {
   @scala.inline
   def apply(StringDictionary: /* className */ StringDictionary[ClassCSS] = null, base: ClassCSS = null): Anon_Base = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (base != null) __obj.updateDynamic("base")(base)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Base]
   }
 }

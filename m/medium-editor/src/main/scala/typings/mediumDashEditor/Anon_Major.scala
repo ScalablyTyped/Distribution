@@ -13,8 +13,8 @@ trait Anon_Major extends js.Object {
 
 object Anon_Major {
   @scala.inline
-  def apply(major: Double, minor: Double, preRelease: String, revision: Double, toString: () => String): Anon_Major = {
-    val __obj = js.Dynamic.literal(major = major, minor = minor, preRelease = preRelease, revision = revision, toString = js.Any.fromFunction0(toString))
+  def apply(major: Double, minor: Double, preRelease: String, revision: Double): Anon_Major = {
+    val __obj = js.Dynamic.literal(major = major.asInstanceOf[js.Any], minor = minor.asInstanceOf[js.Any], preRelease = preRelease.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Major]
   }

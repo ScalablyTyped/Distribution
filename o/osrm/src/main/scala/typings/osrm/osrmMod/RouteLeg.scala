@@ -52,7 +52,7 @@ object RouteLeg {
     summary: String,
     weight: Double
   ): RouteLeg = {
-    val __obj = js.Dynamic.literal(annotation = annotation, distance = distance, duration = duration, steps = steps, summary = summary, weight = weight)
+    val __obj = js.Dynamic.literal(annotation = annotation.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], steps = steps.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RouteLeg]
   }

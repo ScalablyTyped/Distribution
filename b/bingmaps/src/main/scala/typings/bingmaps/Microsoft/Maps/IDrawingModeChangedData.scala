@@ -15,7 +15,7 @@ trait IDrawingModeChangedData extends js.Object {
 object IDrawingModeChangedData {
   @scala.inline
   def apply(mode: DrawingMode, shape: IPrimitive): IDrawingModeChangedData = {
-    val __obj = js.Dynamic.literal(mode = mode, shape = shape)
+    val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IDrawingModeChangedData]
   }

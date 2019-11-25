@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait qrErrorLevelType extends js.Object
 
+object qrErrorLevelType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def h: typings.escDashPosDashEncoder.escDashPosDashEncoderStrings.h = this.cast("h")
+  @scala.inline
+  def l: typings.escDashPosDashEncoder.escDashPosDashEncoderStrings.l = this.cast("l")
+  @scala.inline
+  def m: typings.escDashPosDashEncoder.escDashPosDashEncoderStrings.m = this.cast("m")
+  @scala.inline
+  def q: typings.escDashPosDashEncoder.escDashPosDashEncoderStrings.q = this.cast("q")
+}
+

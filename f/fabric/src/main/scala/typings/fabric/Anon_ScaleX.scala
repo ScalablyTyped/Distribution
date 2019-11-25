@@ -12,7 +12,7 @@ trait Anon_ScaleX extends js.Object {
 object Anon_ScaleX {
   @scala.inline
   def apply(scaleX: Double, scaleY: Double): Anon_ScaleX = {
-    val __obj = js.Dynamic.literal(scaleX = scaleX, scaleY = scaleY)
+    val __obj = js.Dynamic.literal(scaleX = scaleX.asInstanceOf[js.Any], scaleY = scaleY.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ScaleX]
   }

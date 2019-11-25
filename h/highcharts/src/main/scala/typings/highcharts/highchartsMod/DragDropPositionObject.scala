@@ -41,8 +41,8 @@ object DragDropPositionObject {
     prevdX: Int | Double = null,
     prevdY: Int | Double = null
   ): DragDropPositionObject = {
-    val __obj = js.Dynamic.literal(chartX = chartX, chartY = chartY, points = points)
-    if (guideBox != null) __obj.updateDynamic("guideBox")(guideBox)
+    val __obj = js.Dynamic.literal(chartX = chartX.asInstanceOf[js.Any], chartY = chartY.asInstanceOf[js.Any], points = points.asInstanceOf[js.Any])
+    if (guideBox != null) __obj.updateDynamic("guideBox")(guideBox.asInstanceOf[js.Any])
     if (prevdX != null) __obj.updateDynamic("prevdX")(prevdX.asInstanceOf[js.Any])
     if (prevdY != null) __obj.updateDynamic("prevdY")(prevdY.asInstanceOf[js.Any])
     __obj.asInstanceOf[DragDropPositionObject]

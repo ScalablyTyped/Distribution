@@ -70,11 +70,11 @@ object Anon_Alert {
     val __obj = js.Dynamic.literal()
     if (alert != null) __obj.updateDynamic("alert")(alert.asInstanceOf[js.Any])
     if (badge != null) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
-    if (categories != null) __obj.updateDynamic("categories")(categories)
+    if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
     if (clearBadge != null) __obj.updateDynamic("clearBadge")(clearBadge.asInstanceOf[js.Any])
-    if (!js.isUndefined(fcmSandbox)) __obj.updateDynamic("fcmSandbox")(fcmSandbox)
+    if (!js.isUndefined(fcmSandbox)) __obj.updateDynamic("fcmSandbox")(fcmSandbox.asInstanceOf[js.Any])
     if (sound != null) __obj.updateDynamic("sound")(sound.asInstanceOf[js.Any])
-    if (topics != null) __obj.updateDynamic("topics")(topics)
+    if (topics != null) __obj.updateDynamic("topics")(topics.asInstanceOf[js.Any])
     if (voip != null) __obj.updateDynamic("voip")(voip.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Alert]
   }

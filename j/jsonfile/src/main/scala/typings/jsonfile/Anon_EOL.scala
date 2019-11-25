@@ -27,10 +27,10 @@ object Anon_EOL {
     spaces: String | Double = null
   ): Anon_EOL = {
     val __obj = js.Dynamic.literal()
-    if (EOL != null) __obj.updateDynamic("EOL")(EOL)
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
-    if (flag != null) __obj.updateDynamic("flag")(flag)
-    if (fs != null) __obj.updateDynamic("fs")(fs)
+    if (EOL != null) __obj.updateDynamic("EOL")(EOL.asInstanceOf[js.Any])
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    if (flag != null) __obj.updateDynamic("flag")(flag.asInstanceOf[js.Any])
+    if (fs != null) __obj.updateDynamic("fs")(fs.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (replacer != null) __obj.updateDynamic("replacer")(js.Any.fromFunction2(replacer))
     if (spaces != null) __obj.updateDynamic("spaces")(spaces.asInstanceOf[js.Any])

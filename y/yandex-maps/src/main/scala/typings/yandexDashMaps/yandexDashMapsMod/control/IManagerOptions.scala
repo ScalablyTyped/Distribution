@@ -16,8 +16,8 @@ object IManagerOptions {
   def apply(margin: Int | Double = null, pane: IPane = null, states: js.Array[String] = null): IManagerOptions = {
     val __obj = js.Dynamic.literal()
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (pane != null) __obj.updateDynamic("pane")(pane)
-    if (states != null) __obj.updateDynamic("states")(states)
+    if (pane != null) __obj.updateDynamic("pane")(pane.asInstanceOf[js.Any])
+    if (states != null) __obj.updateDynamic("states")(states.asInstanceOf[js.Any])
     __obj.asInstanceOf[IManagerOptions]
   }
 }

@@ -29,13 +29,13 @@ object BottomNavigationAction {
     style: Anon_Active = null,
     testID: String = null
   ): BottomNavigationAction = {
-    val __obj = js.Dynamic.literal(active = active, icon = icon.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (label != null) __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction0(onPress))
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (testID != null) __obj.updateDynamic("testID")(testID)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (testID != null) __obj.updateDynamic("testID")(testID.asInstanceOf[js.Any])
     __obj.asInstanceOf[BottomNavigationAction]
   }
 }

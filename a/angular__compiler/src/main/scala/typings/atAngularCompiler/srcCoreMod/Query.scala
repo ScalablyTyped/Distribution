@@ -23,7 +23,7 @@ object Query {
     selector: js.Any,
     static: Boolean
   ): Query = {
-    val __obj = js.Dynamic.literal(descendants = descendants, first = first, isViewQuery = isViewQuery, read = read, selector = selector, static = static)
+    val __obj = js.Dynamic.literal(descendants = descendants.asInstanceOf[js.Any], first = first.asInstanceOf[js.Any], isViewQuery = isViewQuery.asInstanceOf[js.Any], read = read.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Query]
   }

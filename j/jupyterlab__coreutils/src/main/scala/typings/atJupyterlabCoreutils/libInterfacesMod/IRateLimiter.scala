@@ -29,7 +29,7 @@ object IRateLimiter {
     limit: Double,
     stop: () => js.Promise[Unit]
   ): IRateLimiter[T, U] = {
-    val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), invoke = js.Any.fromFunction0(invoke), isDisposed = isDisposed, limit = limit, stop = js.Any.fromFunction0(stop))
+    val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), invoke = js.Any.fromFunction0(invoke), isDisposed = isDisposed.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], stop = js.Any.fromFunction0(stop))
   
     __obj.asInstanceOf[IRateLimiter[T, U]]
   }

@@ -15,8 +15,8 @@ object ListCollectionIdsResponse {
   @scala.inline
   def apply(collectionIds: js.Array[String] = null, nextPageToken: String = null): ListCollectionIdsResponse = {
     val __obj = js.Dynamic.literal()
-    if (collectionIds != null) __obj.updateDynamic("collectionIds")(collectionIds)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (collectionIds != null) __obj.updateDynamic("collectionIds")(collectionIds.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListCollectionIdsResponse]
   }
 }

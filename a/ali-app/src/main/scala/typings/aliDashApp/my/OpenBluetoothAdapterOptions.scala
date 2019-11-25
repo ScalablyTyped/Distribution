@@ -24,7 +24,7 @@ object OpenBluetoothAdapterOptions {
     complete: /* res */ js.Any => Unit = null,
     fail: js.Any => Unit = null
   ): OpenBluetoothAdapterOptions = {
-    val __obj = js.Dynamic.literal(autoClose = autoClose, success = js.Any.fromFunction1(success))
+    val __obj = js.Dynamic.literal(autoClose = autoClose.asInstanceOf[js.Any], success = js.Any.fromFunction1(success))
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     __obj.asInstanceOf[OpenBluetoothAdapterOptions]

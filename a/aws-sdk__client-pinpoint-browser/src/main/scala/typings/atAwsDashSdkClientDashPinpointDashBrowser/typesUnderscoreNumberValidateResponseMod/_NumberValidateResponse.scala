@@ -82,20 +82,20 @@ object _NumberValidateResponse {
     ZipCode: String = null
   ): _NumberValidateResponse = {
     val __obj = js.Dynamic.literal()
-    if (Carrier != null) __obj.updateDynamic("Carrier")(Carrier)
-    if (City != null) __obj.updateDynamic("City")(City)
-    if (CleansedPhoneNumberE164 != null) __obj.updateDynamic("CleansedPhoneNumberE164")(CleansedPhoneNumberE164)
-    if (CleansedPhoneNumberNational != null) __obj.updateDynamic("CleansedPhoneNumberNational")(CleansedPhoneNumberNational)
-    if (Country != null) __obj.updateDynamic("Country")(Country)
-    if (CountryCodeIso2 != null) __obj.updateDynamic("CountryCodeIso2")(CountryCodeIso2)
-    if (CountryCodeNumeric != null) __obj.updateDynamic("CountryCodeNumeric")(CountryCodeNumeric)
-    if (County != null) __obj.updateDynamic("County")(County)
-    if (OriginalCountryCodeIso2 != null) __obj.updateDynamic("OriginalCountryCodeIso2")(OriginalCountryCodeIso2)
-    if (OriginalPhoneNumber != null) __obj.updateDynamic("OriginalPhoneNumber")(OriginalPhoneNumber)
-    if (PhoneType != null) __obj.updateDynamic("PhoneType")(PhoneType)
+    if (Carrier != null) __obj.updateDynamic("Carrier")(Carrier.asInstanceOf[js.Any])
+    if (City != null) __obj.updateDynamic("City")(City.asInstanceOf[js.Any])
+    if (CleansedPhoneNumberE164 != null) __obj.updateDynamic("CleansedPhoneNumberE164")(CleansedPhoneNumberE164.asInstanceOf[js.Any])
+    if (CleansedPhoneNumberNational != null) __obj.updateDynamic("CleansedPhoneNumberNational")(CleansedPhoneNumberNational.asInstanceOf[js.Any])
+    if (Country != null) __obj.updateDynamic("Country")(Country.asInstanceOf[js.Any])
+    if (CountryCodeIso2 != null) __obj.updateDynamic("CountryCodeIso2")(CountryCodeIso2.asInstanceOf[js.Any])
+    if (CountryCodeNumeric != null) __obj.updateDynamic("CountryCodeNumeric")(CountryCodeNumeric.asInstanceOf[js.Any])
+    if (County != null) __obj.updateDynamic("County")(County.asInstanceOf[js.Any])
+    if (OriginalCountryCodeIso2 != null) __obj.updateDynamic("OriginalCountryCodeIso2")(OriginalCountryCodeIso2.asInstanceOf[js.Any])
+    if (OriginalPhoneNumber != null) __obj.updateDynamic("OriginalPhoneNumber")(OriginalPhoneNumber.asInstanceOf[js.Any])
+    if (PhoneType != null) __obj.updateDynamic("PhoneType")(PhoneType.asInstanceOf[js.Any])
     if (PhoneTypeCode != null) __obj.updateDynamic("PhoneTypeCode")(PhoneTypeCode.asInstanceOf[js.Any])
-    if (Timezone != null) __obj.updateDynamic("Timezone")(Timezone)
-    if (ZipCode != null) __obj.updateDynamic("ZipCode")(ZipCode)
+    if (Timezone != null) __obj.updateDynamic("Timezone")(Timezone.asInstanceOf[js.Any])
+    if (ZipCode != null) __obj.updateDynamic("ZipCode")(ZipCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[_NumberValidateResponse]
   }
 }

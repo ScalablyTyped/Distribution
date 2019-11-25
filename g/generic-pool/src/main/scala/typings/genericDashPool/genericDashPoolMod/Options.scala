@@ -39,9 +39,9 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (acquireTimeoutMillis != null) __obj.updateDynamic("acquireTimeoutMillis")(acquireTimeoutMillis.asInstanceOf[js.Any])
-    if (!js.isUndefined(autostart)) __obj.updateDynamic("autostart")(autostart)
+    if (!js.isUndefined(autostart)) __obj.updateDynamic("autostart")(autostart.asInstanceOf[js.Any])
     if (evictionRunIntervalMillis != null) __obj.updateDynamic("evictionRunIntervalMillis")(evictionRunIntervalMillis.asInstanceOf[js.Any])
-    if (!js.isUndefined(fifo)) __obj.updateDynamic("fifo")(fifo)
+    if (!js.isUndefined(fifo)) __obj.updateDynamic("fifo")(fifo.asInstanceOf[js.Any])
     if (idleTimeoutMillis != null) __obj.updateDynamic("idleTimeoutMillis")(idleTimeoutMillis.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (maxWaitingClients != null) __obj.updateDynamic("maxWaitingClients")(maxWaitingClients.asInstanceOf[js.Any])
@@ -49,8 +49,8 @@ object Options {
     if (numTestsPerEvictionRun != null) __obj.updateDynamic("numTestsPerEvictionRun")(numTestsPerEvictionRun.asInstanceOf[js.Any])
     if (priorityRange != null) __obj.updateDynamic("priorityRange")(priorityRange.asInstanceOf[js.Any])
     if (softIdleTimeoutMillis != null) __obj.updateDynamic("softIdleTimeoutMillis")(softIdleTimeoutMillis.asInstanceOf[js.Any])
-    if (!js.isUndefined(testOnBorrow)) __obj.updateDynamic("testOnBorrow")(testOnBorrow)
-    if (!js.isUndefined(testOnReturn)) __obj.updateDynamic("testOnReturn")(testOnReturn)
+    if (!js.isUndefined(testOnBorrow)) __obj.updateDynamic("testOnBorrow")(testOnBorrow.asInstanceOf[js.Any])
+    if (!js.isUndefined(testOnReturn)) __obj.updateDynamic("testOnReturn")(testOnReturn.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -27,11 +27,11 @@ object OperationMetadataV1Beta5 {
     user: String = null
   ): OperationMetadataV1Beta5 = {
     val __obj = js.Dynamic.literal()
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
-    if (insertTime != null) __obj.updateDynamic("insertTime")(insertTime)
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (user != null) __obj.updateDynamic("user")(user)
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
+    if (insertTime != null) __obj.updateDynamic("insertTime")(insertTime.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[OperationMetadataV1Beta5]
   }
 }

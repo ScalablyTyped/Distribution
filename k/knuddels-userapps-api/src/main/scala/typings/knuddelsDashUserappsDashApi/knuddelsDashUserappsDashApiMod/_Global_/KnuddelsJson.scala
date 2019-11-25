@@ -15,7 +15,7 @@ object KnuddelsJson {
   @scala.inline
   def apply(StringDictionary: /* x */ StringDictionary[js.UndefOr[KnuddelsJsonData]] = null): KnuddelsJson = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[KnuddelsJson]
   }
 }

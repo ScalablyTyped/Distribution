@@ -17,8 +17,8 @@ object IUpdateSessionEntityTypeRequest {
   @scala.inline
   def apply(sessionEntityType: ISessionEntityType = null, updateMask: IFieldMask = null): IUpdateSessionEntityTypeRequest = {
     val __obj = js.Dynamic.literal()
-    if (sessionEntityType != null) __obj.updateDynamic("sessionEntityType")(sessionEntityType)
-    if (updateMask != null) __obj.updateDynamic("updateMask")(updateMask)
+    if (sessionEntityType != null) __obj.updateDynamic("sessionEntityType")(sessionEntityType.asInstanceOf[js.Any])
+    if (updateMask != null) __obj.updateDynamic("updateMask")(updateMask.asInstanceOf[js.Any])
     __obj.asInstanceOf[IUpdateSessionEntityTypeRequest]
   }
 }

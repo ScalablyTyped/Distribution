@@ -27,13 +27,13 @@ object ClearingOptions {
     touch_label: String = null
   ): ClearingOptions = {
     val __obj = js.Dynamic.literal()
-    if (close_selectors != null) __obj.updateDynamic("close_selectors")(close_selectors)
-    if (!js.isUndefined(init)) __obj.updateDynamic("init")(init)
-    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked)
-    if (open_selectors != null) __obj.updateDynamic("open_selectors")(open_selectors)
-    if (skip_selector != null) __obj.updateDynamic("skip_selector")(skip_selector)
-    if (templates != null) __obj.updateDynamic("templates")(templates)
-    if (touch_label != null) __obj.updateDynamic("touch_label")(touch_label)
+    if (close_selectors != null) __obj.updateDynamic("close_selectors")(close_selectors.asInstanceOf[js.Any])
+    if (!js.isUndefined(init)) __obj.updateDynamic("init")(init.asInstanceOf[js.Any])
+    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked.asInstanceOf[js.Any])
+    if (open_selectors != null) __obj.updateDynamic("open_selectors")(open_selectors.asInstanceOf[js.Any])
+    if (skip_selector != null) __obj.updateDynamic("skip_selector")(skip_selector.asInstanceOf[js.Any])
+    if (templates != null) __obj.updateDynamic("templates")(templates.asInstanceOf[js.Any])
+    if (touch_label != null) __obj.updateDynamic("touch_label")(touch_label.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClearingOptions]
   }
 }

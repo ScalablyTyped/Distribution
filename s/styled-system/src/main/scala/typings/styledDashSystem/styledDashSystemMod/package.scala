@@ -9,11 +9,6 @@ package object styledDashSystemMod {
   import typings.std.Pick
   import typings.styledDashSystem.styledDashSystemNumbers.`0`
   import typings.styledDashSystem.styledDashSystemStrings.m
-  import typings.styledDashSystem.styledDashSystemStrings.margin
-  import typings.styledDashSystem.styledDashSystemStrings.marginBottom
-  import typings.styledDashSystem.styledDashSystemStrings.marginLeft
-  import typings.styledDashSystem.styledDashSystemStrings.marginRight
-  import typings.styledDashSystem.styledDashSystemStrings.marginTop
   import typings.styledDashSystem.styledDashSystemStrings.mb
   import typings.styledDashSystem.styledDashSystemStrings.ml
   import typings.styledDashSystem.styledDashSystemStrings.mr
@@ -21,11 +16,6 @@ package object styledDashSystemMod {
   import typings.styledDashSystem.styledDashSystemStrings.mx
   import typings.styledDashSystem.styledDashSystemStrings.my
   import typings.styledDashSystem.styledDashSystemStrings.p
-  import typings.styledDashSystem.styledDashSystemStrings.padding
-  import typings.styledDashSystem.styledDashSystemStrings.paddingBottom
-  import typings.styledDashSystem.styledDashSystemStrings.paddingLeft
-  import typings.styledDashSystem.styledDashSystemStrings.paddingRight
-  import typings.styledDashSystem.styledDashSystemStrings.paddingTop
   import typings.styledDashSystem.styledDashSystemStrings.pb
   import typings.styledDashSystem.styledDashSystemStrings.pl
   import typings.styledDashSystem.styledDashSystemStrings.pr
@@ -35,25 +25,49 @@ package object styledDashSystemMod {
 
   type Config = /** Property name exposed for use in components */
   StringDictionary[ConfigStyle | Boolean]
-  type MarginBottomProps = Pick[SpaceProps[TLengthStyledSystem], mb | marginBottom]
-  type MarginLeftProps = Pick[SpaceProps[TLengthStyledSystem], ml | marginLeft]
+  type MarginBottomProps = Pick[
+    SpaceProps[TLengthStyledSystem], 
+    mb | typings.styledDashSystem.styledDashSystemStrings.marginBottom
+  ]
+  type MarginLeftProps = Pick[
+    SpaceProps[TLengthStyledSystem], 
+    ml | typings.styledDashSystem.styledDashSystemStrings.marginLeft
+  ]
   type MarginProps = Pick[
     SpaceProps[TLengthStyledSystem], 
-    m | margin | mt | marginTop | mb | marginBottom | ml | marginLeft | mr | marginRight | my | mx
+    m | typings.styledDashSystem.styledDashSystemStrings.margin | mt | typings.styledDashSystem.styledDashSystemStrings.marginTop | mb | typings.styledDashSystem.styledDashSystemStrings.marginBottom | ml | typings.styledDashSystem.styledDashSystemStrings.marginLeft | mr | typings.styledDashSystem.styledDashSystemStrings.marginRight | my | mx
   ]
-  type MarginRightProps = Pick[SpaceProps[TLengthStyledSystem], mr | marginRight]
-  type MarginTopProps = Pick[SpaceProps[TLengthStyledSystem], mt | marginTop]
+  type MarginRightProps = Pick[
+    SpaceProps[TLengthStyledSystem], 
+    mr | typings.styledDashSystem.styledDashSystemStrings.marginRight
+  ]
+  type MarginTopProps = Pick[
+    SpaceProps[TLengthStyledSystem], 
+    mt | typings.styledDashSystem.styledDashSystemStrings.marginTop
+  ]
   type ObjectOrArray[T] = js.Array[T] | (StringDictionary[
     T | (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias styled-system.styled-system.ObjectOrArray<T> */ js.Object)
   ])
-  type PaddingBottomProps = Pick[SpaceProps[TLengthStyledSystem], pb | paddingBottom]
-  type PaddingLeftProps = Pick[SpaceProps[TLengthStyledSystem], pl | paddingLeft]
+  type PaddingBottomProps = Pick[
+    SpaceProps[TLengthStyledSystem], 
+    pb | typings.styledDashSystem.styledDashSystemStrings.paddingBottom
+  ]
+  type PaddingLeftProps = Pick[
+    SpaceProps[TLengthStyledSystem], 
+    pl | typings.styledDashSystem.styledDashSystemStrings.paddingLeft
+  ]
   type PaddingProps = Pick[
     SpaceProps[TLengthStyledSystem], 
-    p | padding | pt | paddingTop | pb | paddingBottom | pl | paddingLeft | pr | paddingRight | py | px
+    p | typings.styledDashSystem.styledDashSystemStrings.padding | pt | typings.styledDashSystem.styledDashSystemStrings.paddingTop | pb | typings.styledDashSystem.styledDashSystemStrings.paddingBottom | pl | typings.styledDashSystem.styledDashSystemStrings.paddingLeft | pr | typings.styledDashSystem.styledDashSystemStrings.paddingRight | py | px
   ]
-  type PaddingRightProps = Pick[SpaceProps[TLengthStyledSystem], pr | paddingRight]
-  type PaddingTopProps = Pick[SpaceProps[TLengthStyledSystem], pt | paddingTop]
+  type PaddingRightProps = Pick[
+    SpaceProps[TLengthStyledSystem], 
+    pr | typings.styledDashSystem.styledDashSystemStrings.paddingRight
+  ]
+  type PaddingTopProps = Pick[
+    SpaceProps[TLengthStyledSystem], 
+    pt | typings.styledDashSystem.styledDashSystemStrings.paddingTop
+  ]
   type ResponsiveValue[T] = T | (js.Array[T | Null]) | StringDictionary[T]
   type Scale = ObjectOrArray[Double | String]
   type TLengthStyledSystem = String | `0` | Double

@@ -57,16 +57,16 @@ object IDataURLOptions {
     withoutTransform: js.UndefOr[Boolean] = js.undefined
   ): IDataURLOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableRetinaScaling)) __obj.updateDynamic("enableRetinaScaling")(enableRetinaScaling)
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (!js.isUndefined(enableRetinaScaling)) __obj.updateDynamic("enableRetinaScaling")(enableRetinaScaling.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
     if (multiplier != null) __obj.updateDynamic("multiplier")(multiplier.asInstanceOf[js.Any])
     if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (!js.isUndefined(withoutShadow)) __obj.updateDynamic("withoutShadow")(withoutShadow)
-    if (!js.isUndefined(withoutTransform)) __obj.updateDynamic("withoutTransform")(withoutTransform)
+    if (!js.isUndefined(withoutShadow)) __obj.updateDynamic("withoutShadow")(withoutShadow.asInstanceOf[js.Any])
+    if (!js.isUndefined(withoutTransform)) __obj.updateDynamic("withoutTransform")(withoutTransform.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDataURLOptions]
   }
 }

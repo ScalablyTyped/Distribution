@@ -16,8 +16,8 @@ object IFollowupIntentInfo {
   @scala.inline
   def apply(followupIntentName: String = null, parentFollowupIntentName: String = null): IFollowupIntentInfo = {
     val __obj = js.Dynamic.literal()
-    if (followupIntentName != null) __obj.updateDynamic("followupIntentName")(followupIntentName)
-    if (parentFollowupIntentName != null) __obj.updateDynamic("parentFollowupIntentName")(parentFollowupIntentName)
+    if (followupIntentName != null) __obj.updateDynamic("followupIntentName")(followupIntentName.asInstanceOf[js.Any])
+    if (parentFollowupIntentName != null) __obj.updateDynamic("parentFollowupIntentName")(parentFollowupIntentName.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFollowupIntentInfo]
   }
 }

@@ -19,7 +19,7 @@ trait TeamsListPendingInvitationsParams extends js.Object {
 object TeamsListPendingInvitationsParams {
   @scala.inline
   def apply(team_id: Double, page: Int | Double = null, per_page: Int | Double = null): TeamsListPendingInvitationsParams = {
-    val __obj = js.Dynamic.literal(team_id = team_id)
+    val __obj = js.Dynamic.literal(team_id = team_id.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (per_page != null) __obj.updateDynamic("per_page")(per_page.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamsListPendingInvitationsParams]

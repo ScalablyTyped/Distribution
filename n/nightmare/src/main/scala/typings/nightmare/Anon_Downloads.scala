@@ -12,7 +12,7 @@ object Anon_Downloads {
   @scala.inline
   def apply(downloads: String = null): Anon_Downloads = {
     val __obj = js.Dynamic.literal()
-    if (downloads != null) __obj.updateDynamic("downloads")(downloads)
+    if (downloads != null) __obj.updateDynamic("downloads")(downloads.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Downloads]
   }
 }

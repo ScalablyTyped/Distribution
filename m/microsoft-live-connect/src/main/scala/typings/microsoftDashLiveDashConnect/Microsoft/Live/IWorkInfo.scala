@@ -22,7 +22,7 @@ trait IWorkInfo extends js.Object {
 object IWorkInfo {
   @scala.inline
   def apply(employer: Anon_Name, position: Anon_Name): IWorkInfo = {
-    val __obj = js.Dynamic.literal(employer = employer, position = position)
+    val __obj = js.Dynamic.literal(employer = employer.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IWorkInfo]
   }

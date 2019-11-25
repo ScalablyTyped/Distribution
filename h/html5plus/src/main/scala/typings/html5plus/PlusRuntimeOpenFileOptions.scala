@@ -31,8 +31,8 @@ object PlusRuntimeOpenFileOptions {
   @scala.inline
   def apply(pname: String = null, popover: js.Any = null): PlusRuntimeOpenFileOptions = {
     val __obj = js.Dynamic.literal()
-    if (pname != null) __obj.updateDynamic("pname")(pname)
-    if (popover != null) __obj.updateDynamic("popover")(popover)
+    if (pname != null) __obj.updateDynamic("pname")(pname.asInstanceOf[js.Any])
+    if (popover != null) __obj.updateDynamic("popover")(popover.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusRuntimeOpenFileOptions]
   }
 }

@@ -28,11 +28,11 @@ object WorkbookTableColumn {
     values: js.Any = null
   ): WorkbookTableColumn = {
     val __obj = js.Dynamic.literal()
-    if (filter != null) __obj.updateDynamic("filter")(filter)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookTableColumn]
   }
 }

@@ -13,8 +13,8 @@ trait IEventRecordList
 object IEventRecordList {
   @scala.inline
   def apply(count: Double, StringDictionary: /* id */ StringDictionary[js.Array[IEventRecord] | Double] = null): IEventRecordList = {
-    val __obj = js.Dynamic.literal(count = count)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[IEventRecordList]
   }
 }

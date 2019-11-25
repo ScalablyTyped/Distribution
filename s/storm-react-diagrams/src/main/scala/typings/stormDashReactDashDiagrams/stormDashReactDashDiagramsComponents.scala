@@ -1,14 +1,13 @@
 package typings.stormDashReactDashDiagrams
 
 import typings.react.reactMod.ComponentType
-import typings.stormDashReactDashDiagrams.distSrcWidgetsBaseWidgetMod.BaseWidgetProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object stormDashReactDashDiagramsComponents extends stormDashReactDashDiagramsProps {
   @scala.inline
-  def BaseWidget[P /* <: BaseWidgetProps */, S]: ComponentType[P] = js.constructorOf[typings.stormDashReactDashDiagrams.distSrcMainMod.BaseWidget[P, S]].asInstanceOf[typings.react.reactMod.ComponentType[P]]
+  def BaseWidget[S]: ComponentType[BaseWidgetProps] = js.constructorOf[typings.stormDashReactDashDiagrams.distSrcMainMod.BaseWidget[typings.stormDashReactDashDiagrams.distSrcWidgetsBaseWidgetMod.BaseWidgetProps, S]].asInstanceOf[typings.react.reactMod.ComponentType[BaseWidgetProps]]
   @scala.inline
   def DefaultLabelWidget: ComponentType[DefaultLabelWidgetProps] = js.constructorOf[typings.stormDashReactDashDiagrams.distSrcMainMod.DefaultLabelWidget].asInstanceOf[typings.react.reactMod.ComponentType[DefaultLabelWidgetProps]]
   @scala.inline

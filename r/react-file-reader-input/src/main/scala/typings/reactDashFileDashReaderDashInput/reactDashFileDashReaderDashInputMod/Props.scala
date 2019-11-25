@@ -39,7 +39,7 @@ object Props {
   @scala.inline
   def apply(onChange: (SyntheticEvent[_, Event], js.Array[Result]) => Unit, as: Format = null): Props = {
     val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction2(onChange))
-    if (as != null) __obj.updateDynamic("as")(as)
+    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }
 }

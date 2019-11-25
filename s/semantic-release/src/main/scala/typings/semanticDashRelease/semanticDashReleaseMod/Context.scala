@@ -38,10 +38,10 @@ object Context {
     nextRelease: NextRelease = null,
     options: GlobalConfig = null
   ): Context = {
-    val __obj = js.Dynamic.literal(env = env, logger = logger)
-    if (lastRelease != null) __obj.updateDynamic("lastRelease")(lastRelease)
-    if (nextRelease != null) __obj.updateDynamic("nextRelease")(nextRelease)
-    if (options != null) __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(env = env.asInstanceOf[js.Any], logger = logger.asInstanceOf[js.Any])
+    if (lastRelease != null) __obj.updateDynamic("lastRelease")(lastRelease.asInstanceOf[js.Any])
+    if (nextRelease != null) __obj.updateDynamic("nextRelease")(nextRelease.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[Context]
   }
 }

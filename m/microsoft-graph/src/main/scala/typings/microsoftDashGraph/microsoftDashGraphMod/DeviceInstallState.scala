@@ -40,15 +40,15 @@ object DeviceInstallState {
     userName: String = null
   ): DeviceInstallState = {
     val __obj = js.Dynamic.literal()
-    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId)
-    if (deviceName != null) __obj.updateDynamic("deviceName")(deviceName)
-    if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (installState != null) __obj.updateDynamic("installState")(installState)
-    if (lastSyncDateTime != null) __obj.updateDynamic("lastSyncDateTime")(lastSyncDateTime)
-    if (osDescription != null) __obj.updateDynamic("osDescription")(osDescription)
-    if (osVersion != null) __obj.updateDynamic("osVersion")(osVersion)
-    if (userName != null) __obj.updateDynamic("userName")(userName)
+    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId.asInstanceOf[js.Any])
+    if (deviceName != null) __obj.updateDynamic("deviceName")(deviceName.asInstanceOf[js.Any])
+    if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (installState != null) __obj.updateDynamic("installState")(installState.asInstanceOf[js.Any])
+    if (lastSyncDateTime != null) __obj.updateDynamic("lastSyncDateTime")(lastSyncDateTime.asInstanceOf[js.Any])
+    if (osDescription != null) __obj.updateDynamic("osDescription")(osDescription.asInstanceOf[js.Any])
+    if (osVersion != null) __obj.updateDynamic("osVersion")(osVersion.asInstanceOf[js.Any])
+    if (userName != null) __obj.updateDynamic("userName")(userName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceInstallState]
   }
 }

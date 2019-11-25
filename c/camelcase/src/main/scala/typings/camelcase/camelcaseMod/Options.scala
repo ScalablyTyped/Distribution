@@ -16,7 +16,7 @@ object Options {
   @scala.inline
   def apply(pascalCase: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(pascalCase)) __obj.updateDynamic("pascalCase")(pascalCase)
+    if (!js.isUndefined(pascalCase)) __obj.updateDynamic("pascalCase")(pascalCase.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

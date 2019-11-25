@@ -113,19 +113,19 @@ object ConnectionAttributes {
     user: String = null
   ): ConnectionAttributes = {
     val __obj = js.Dynamic.literal()
-    if (connectString != null) __obj.updateDynamic("connectString")(connectString)
-    if (connectionString != null) __obj.updateDynamic("connectionString")(connectionString)
-    if (edition != null) __obj.updateDynamic("edition")(edition)
-    if (!js.isUndefined(events)) __obj.updateDynamic("events")(events)
-    if (!js.isUndefined(externalAuth)) __obj.updateDynamic("externalAuth")(externalAuth)
-    if (!js.isUndefined(matchAny)) __obj.updateDynamic("matchAny")(matchAny)
-    if (newPassword != null) __obj.updateDynamic("newPassword")(newPassword)
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (poolAlias != null) __obj.updateDynamic("poolAlias")(poolAlias)
+    if (connectString != null) __obj.updateDynamic("connectString")(connectString.asInstanceOf[js.Any])
+    if (connectionString != null) __obj.updateDynamic("connectionString")(connectionString.asInstanceOf[js.Any])
+    if (edition != null) __obj.updateDynamic("edition")(edition.asInstanceOf[js.Any])
+    if (!js.isUndefined(events)) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
+    if (!js.isUndefined(externalAuth)) __obj.updateDynamic("externalAuth")(externalAuth.asInstanceOf[js.Any])
+    if (!js.isUndefined(matchAny)) __obj.updateDynamic("matchAny")(matchAny.asInstanceOf[js.Any])
+    if (newPassword != null) __obj.updateDynamic("newPassword")(newPassword.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (poolAlias != null) __obj.updateDynamic("poolAlias")(poolAlias.asInstanceOf[js.Any])
     if (privilege != null) __obj.updateDynamic("privilege")(privilege.asInstanceOf[js.Any])
     if (stmtCacheSize != null) __obj.updateDynamic("stmtCacheSize")(stmtCacheSize.asInstanceOf[js.Any])
-    if (tag != null) __obj.updateDynamic("tag")(tag)
-    if (user != null) __obj.updateDynamic("user")(user)
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionAttributes]
   }
 }

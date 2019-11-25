@@ -42,12 +42,12 @@ object ChipTheme {
     deleteX: String = null
   ): ChipTheme = {
     val __obj = js.Dynamic.literal()
-    if (avatar != null) __obj.updateDynamic("avatar")(avatar)
-    if (chip != null) __obj.updateDynamic("chip")(chip)
-    if (deletable != null) __obj.updateDynamic("deletable")(deletable)
-    if (delete != null) __obj.updateDynamic("delete")(delete)
-    if (deleteIcon != null) __obj.updateDynamic("deleteIcon")(deleteIcon)
-    if (deleteX != null) __obj.updateDynamic("deleteX")(deleteX)
+    if (avatar != null) __obj.updateDynamic("avatar")(avatar.asInstanceOf[js.Any])
+    if (chip != null) __obj.updateDynamic("chip")(chip.asInstanceOf[js.Any])
+    if (deletable != null) __obj.updateDynamic("deletable")(deletable.asInstanceOf[js.Any])
+    if (delete != null) __obj.updateDynamic("delete")(delete.asInstanceOf[js.Any])
+    if (deleteIcon != null) __obj.updateDynamic("deleteIcon")(deleteIcon.asInstanceOf[js.Any])
+    if (deleteX != null) __obj.updateDynamic("deleteX")(deleteX.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChipTheme]
   }
 }

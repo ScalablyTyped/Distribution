@@ -13,8 +13,8 @@ object LiveBroadcastStatistics {
   @scala.inline
   def apply(concurrentViewers: String = null, totalChatCount: String = null): LiveBroadcastStatistics = {
     val __obj = js.Dynamic.literal()
-    if (concurrentViewers != null) __obj.updateDynamic("concurrentViewers")(concurrentViewers)
-    if (totalChatCount != null) __obj.updateDynamic("totalChatCount")(totalChatCount)
+    if (concurrentViewers != null) __obj.updateDynamic("concurrentViewers")(concurrentViewers.asInstanceOf[js.Any])
+    if (totalChatCount != null) __obj.updateDynamic("totalChatCount")(totalChatCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[LiveBroadcastStatistics]
   }
 }

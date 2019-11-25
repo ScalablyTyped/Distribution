@@ -21,9 +21,9 @@ object GooglePrivacyDlpV2beta1StorageConfig {
     datastoreOptions: GooglePrivacyDlpV2beta1DatastoreOptions = null
   ): GooglePrivacyDlpV2beta1StorageConfig = {
     val __obj = js.Dynamic.literal()
-    if (bigQueryOptions != null) __obj.updateDynamic("bigQueryOptions")(bigQueryOptions)
-    if (cloudStorageOptions != null) __obj.updateDynamic("cloudStorageOptions")(cloudStorageOptions)
-    if (datastoreOptions != null) __obj.updateDynamic("datastoreOptions")(datastoreOptions)
+    if (bigQueryOptions != null) __obj.updateDynamic("bigQueryOptions")(bigQueryOptions.asInstanceOf[js.Any])
+    if (cloudStorageOptions != null) __obj.updateDynamic("cloudStorageOptions")(cloudStorageOptions.asInstanceOf[js.Any])
+    if (datastoreOptions != null) __obj.updateDynamic("datastoreOptions")(datastoreOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1StorageConfig]
   }
 }

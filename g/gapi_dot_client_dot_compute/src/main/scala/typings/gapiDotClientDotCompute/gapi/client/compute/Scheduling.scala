@@ -32,9 +32,9 @@ object Scheduling {
     preemptible: js.UndefOr[Boolean] = js.undefined
   ): Scheduling = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(automaticRestart)) __obj.updateDynamic("automaticRestart")(automaticRestart)
-    if (onHostMaintenance != null) __obj.updateDynamic("onHostMaintenance")(onHostMaintenance)
-    if (!js.isUndefined(preemptible)) __obj.updateDynamic("preemptible")(preemptible)
+    if (!js.isUndefined(automaticRestart)) __obj.updateDynamic("automaticRestart")(automaticRestart.asInstanceOf[js.Any])
+    if (onHostMaintenance != null) __obj.updateDynamic("onHostMaintenance")(onHostMaintenance.asInstanceOf[js.Any])
+    if (!js.isUndefined(preemptible)) __obj.updateDynamic("preemptible")(preemptible.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scheduling]
   }
 }

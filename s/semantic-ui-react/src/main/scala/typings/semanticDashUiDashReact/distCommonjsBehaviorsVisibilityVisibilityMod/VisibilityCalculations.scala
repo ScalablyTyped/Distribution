@@ -39,7 +39,7 @@ object VisibilityCalculations {
     topVisible: Boolean,
     width: Double
   ): VisibilityCalculations = {
-    val __obj = js.Dynamic.literal(bottomPassed = bottomPassed, bottomVisible = bottomVisible, direction = direction.asInstanceOf[js.Any], fits = fits, height = height, offScreen = offScreen, onScreen = onScreen, passing = passing, percentagePassed = percentagePassed, pixelsPassed = pixelsPassed, topPassed = topPassed, topVisible = topVisible, width = width)
+    val __obj = js.Dynamic.literal(bottomPassed = bottomPassed.asInstanceOf[js.Any], bottomVisible = bottomVisible.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], fits = fits.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], offScreen = offScreen.asInstanceOf[js.Any], onScreen = onScreen.asInstanceOf[js.Any], passing = passing.asInstanceOf[js.Any], percentagePassed = percentagePassed.asInstanceOf[js.Any], pixelsPassed = pixelsPassed.asInstanceOf[js.Any], topPassed = topPassed.asInstanceOf[js.Any], topVisible = topVisible.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[VisibilityCalculations]
   }

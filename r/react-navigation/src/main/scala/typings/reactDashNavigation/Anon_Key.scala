@@ -21,8 +21,8 @@ object Anon_Key {
   ): Anon_Key[Options, NavigationScreenPropType] = {
     val __obj = js.Dynamic.literal()
     if (navigationOptions != null) __obj.updateDynamic("navigationOptions")(navigationOptions.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Key[Options, NavigationScreenPropType]]
   }
 }

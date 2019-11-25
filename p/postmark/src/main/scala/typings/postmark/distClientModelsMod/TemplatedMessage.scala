@@ -1,6 +1,5 @@
 package typings.postmark.distClientModelsMod
 
-import typings.postmark.distClientModelsMessageSupportingTypesMod.LinkTrackingOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +18,7 @@ class TemplatedMessage protected ()
     replyTo: js.UndefOr[String],
     tag: js.UndefOr[String],
     trackOpens: js.UndefOr[Boolean],
-    trackLinks: js.UndefOr[LinkTrackingOptions],
+    trackLinks: js.UndefOr[typings.postmark.distClientModelsMessageSupportingTypesMod.LinkTrackingOptions],
     headers: js.UndefOr[js.Array[typings.postmark.distClientModelsMessageSupportingTypesMod.Header]],
     attachments: js.UndefOr[js.Array[typings.postmark.distClientModelsMessageSupportingTypesMod.Attachment]]
   ) = this()
@@ -33,7 +32,7 @@ class TemplatedMessage protected ()
     replyTo: js.UndefOr[String],
     tag: js.UndefOr[String],
     trackOpens: js.UndefOr[Boolean],
-    trackLinks: js.UndefOr[LinkTrackingOptions],
+    trackLinks: js.UndefOr[typings.postmark.distClientModelsMessageSupportingTypesMod.LinkTrackingOptions],
     headers: js.UndefOr[js.Array[typings.postmark.distClientModelsMessageSupportingTypesMod.Header]],
     attachments: js.UndefOr[js.Array[typings.postmark.distClientModelsMessageSupportingTypesMod.Attachment]]
   ) = this()

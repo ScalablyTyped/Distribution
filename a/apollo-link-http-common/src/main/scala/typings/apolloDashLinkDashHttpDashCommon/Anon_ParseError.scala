@@ -12,7 +12,7 @@ trait Anon_ParseError extends js.Object {
 object Anon_ParseError {
   @scala.inline
   def apply(parseError: Error): Anon_ParseError = {
-    val __obj = js.Dynamic.literal(parseError = parseError)
+    val __obj = js.Dynamic.literal(parseError = parseError.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ParseError]
   }

@@ -25,7 +25,7 @@ trait CodeActionParams extends js.Object {
 object CodeActionParams {
   @scala.inline
   def apply(context: CodeActionContext, range: Range, textDocument: TextDocumentIdentifier): CodeActionParams = {
-    val __obj = js.Dynamic.literal(context = context, range = range, textDocument = textDocument)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any], textDocument = textDocument.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CodeActionParams]
   }

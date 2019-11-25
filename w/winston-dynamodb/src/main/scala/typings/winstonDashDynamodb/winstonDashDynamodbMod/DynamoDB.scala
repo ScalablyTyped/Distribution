@@ -1,13 +1,15 @@
 package typings.winstonDashDynamodb.winstonDashDynamodbMod
 
+import typings.std.Transport
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped 'usb' | 'nfc' | 'ble' */ @JSImport("winston-dynamodb", "DynamoDB")
+@JSImport("winston-dynamodb", "DynamoDB")
 @js.native
-class DynamoDB () extends DynamoDBTransportInstance {
+class DynamoDB ()
+  extends Transport
+     with DynamoDBTransportInstance {
   def this(options: DynamoDBTransportOptions) = this()
   var AWS: js.Any = js.native
   var db: js.Any = js.native

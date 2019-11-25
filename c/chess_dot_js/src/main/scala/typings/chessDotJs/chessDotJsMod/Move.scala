@@ -55,7 +55,7 @@ object Move {
     captured: p | n | b | r | q = null,
     promotion: n | b | r | q = null
   ): Move = {
-    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], flags = flags, from = from, piece = piece.asInstanceOf[js.Any], san = san, to = to)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], piece = piece.asInstanceOf[js.Any], san = san.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
     if (captured != null) __obj.updateDynamic("captured")(captured.asInstanceOf[js.Any])
     if (promotion != null) __obj.updateDynamic("promotion")(promotion.asInstanceOf[js.Any])
     __obj.asInstanceOf[Move]

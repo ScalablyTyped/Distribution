@@ -12,7 +12,7 @@ object LocalCityOptions {
   @scala.inline
   def apply(renderOptions: RenderOptions = null): LocalCityOptions = {
     val __obj = js.Dynamic.literal()
-    if (renderOptions != null) __obj.updateDynamic("renderOptions")(renderOptions)
+    if (renderOptions != null) __obj.updateDynamic("renderOptions")(renderOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalCityOptions]
   }
 }

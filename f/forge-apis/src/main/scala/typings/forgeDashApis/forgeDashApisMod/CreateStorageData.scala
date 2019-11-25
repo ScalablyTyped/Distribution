@@ -16,8 +16,8 @@ object CreateStorageData {
     relationships: CreateStorageDataRelationships = null
   ): CreateStorageData = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
-    if (relationships != null) __obj.updateDynamic("relationships")(relationships)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (relationships != null) __obj.updateDynamic("relationships")(relationships.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateStorageData]
   }
 }

@@ -30,13 +30,13 @@ object AutoCompleteParams {
     showListOnEmpty: js.UndefOr[Boolean] = js.undefined
   ): AutoCompleteParams = {
     val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowEmpty)) __obj.updateDynamic("allowEmpty")(allowEmpty)
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
-    if (elementAttributes != null) __obj.updateDynamic("elementAttributes")(elementAttributes)
-    if (!js.isUndefined(freetext)) __obj.updateDynamic("freetext")(freetext)
+    if (!js.isUndefined(allowEmpty)) __obj.updateDynamic("allowEmpty")(allowEmpty.asInstanceOf[js.Any])
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (elementAttributes != null) __obj.updateDynamic("elementAttributes")(elementAttributes.asInstanceOf[js.Any])
+    if (!js.isUndefined(freetext)) __obj.updateDynamic("freetext")(freetext.asInstanceOf[js.Any])
     if (listItemFormatter != null) __obj.updateDynamic("listItemFormatter")(js.Any.fromFunction2(listItemFormatter))
     if (searchFunc != null) __obj.updateDynamic("searchFunc")(js.Any.fromFunction2(searchFunc))
-    if (!js.isUndefined(showListOnEmpty)) __obj.updateDynamic("showListOnEmpty")(showListOnEmpty)
+    if (!js.isUndefined(showListOnEmpty)) __obj.updateDynamic("showListOnEmpty")(showListOnEmpty.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoCompleteParams]
   }
 }

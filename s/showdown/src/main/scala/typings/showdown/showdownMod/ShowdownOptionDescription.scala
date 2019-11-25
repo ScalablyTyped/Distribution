@@ -33,8 +33,8 @@ object ShowdownOptionDescription {
     `type`: boolean | string | integer = null
   ): ShowdownOptionDescription = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(defaultValue)) __obj.updateDynamic("defaultValue")(defaultValue)
-    if (description != null) __obj.updateDynamic("description")(description)
+    if (!js.isUndefined(defaultValue)) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShowdownOptionDescription]
   }

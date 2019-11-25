@@ -52,13 +52,13 @@ object IColorPickerGridCellStyleProps {
     selected: js.UndefOr[Boolean] = js.undefined,
     width: Int | Double = null
   ): IColorPickerGridCellStyleProps = {
-    val __obj = js.Dynamic.literal(theme = theme)
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(circle)) __obj.updateDynamic("circle")(circle)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (!js.isUndefined(circle)) __obj.updateDynamic("circle")(circle.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(isWhite)) __obj.updateDynamic("isWhite")(isWhite)
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
+    if (!js.isUndefined(isWhite)) __obj.updateDynamic("isWhite")(isWhite.asInstanceOf[js.Any])
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[IColorPickerGridCellStyleProps]
   }

@@ -37,11 +37,11 @@ object EditModeExitingEventUIParam {
     owner: js.Any = null
   ): EditModeExitingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(acceptChanges)) __obj.updateDynamic("acceptChanges")(acceptChanges)
-    if (!js.isUndefined(canCancel)) __obj.updateDynamic("canCancel")(canCancel)
-    if (cell != null) __obj.updateDynamic("cell")(cell)
-    if (editText != null) __obj.updateDynamic("editText")(editText)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (!js.isUndefined(acceptChanges)) __obj.updateDynamic("acceptChanges")(acceptChanges.asInstanceOf[js.Any])
+    if (!js.isUndefined(canCancel)) __obj.updateDynamic("canCancel")(canCancel.asInstanceOf[js.Any])
+    if (cell != null) __obj.updateDynamic("cell")(cell.asInstanceOf[js.Any])
+    if (editText != null) __obj.updateDynamic("editText")(editText.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditModeExitingEventUIParam]
   }
 }

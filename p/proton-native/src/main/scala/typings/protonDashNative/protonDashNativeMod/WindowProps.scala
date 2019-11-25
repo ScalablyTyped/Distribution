@@ -70,17 +70,17 @@ object WindowProps {
     title: String = null
   ): WindowProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(borderless)) __obj.updateDynamic("borderless")(borderless)
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (!js.isUndefined(closed)) __obj.updateDynamic("closed")(closed)
-    if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen)
-    if (!js.isUndefined(lastWindow)) __obj.updateDynamic("lastWindow")(lastWindow)
-    if (!js.isUndefined(margined)) __obj.updateDynamic("margined")(margined)
-    if (!js.isUndefined(menuBar)) __obj.updateDynamic("menuBar")(menuBar)
+    if (!js.isUndefined(borderless)) __obj.updateDynamic("borderless")(borderless.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (!js.isUndefined(closed)) __obj.updateDynamic("closed")(closed.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen.asInstanceOf[js.Any])
+    if (!js.isUndefined(lastWindow)) __obj.updateDynamic("lastWindow")(lastWindow.asInstanceOf[js.Any])
+    if (!js.isUndefined(margined)) __obj.updateDynamic("margined")(margined.asInstanceOf[js.Any])
+    if (!js.isUndefined(menuBar)) __obj.updateDynamic("menuBar")(menuBar.asInstanceOf[js.Any])
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction0(onClose))
     if (onContentSizeChange != null) __obj.updateDynamic("onContentSizeChange")(js.Any.fromFunction1(onContentSizeChange))
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowProps]
   }
 }

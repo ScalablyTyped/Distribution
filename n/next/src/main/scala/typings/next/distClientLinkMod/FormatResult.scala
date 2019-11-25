@@ -12,8 +12,8 @@ trait FormatResult extends js.Object {
 object FormatResult {
   @scala.inline
   def apply(href: String, as: String = null): FormatResult = {
-    val __obj = js.Dynamic.literal(href = href)
-    if (as != null) __obj.updateDynamic("as")(as)
+    val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
+    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormatResult]
   }
 }

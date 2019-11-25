@@ -24,10 +24,10 @@ object Anon_Limit {
     usageInDriveTrash: String = null
   ): Anon_Limit = {
     val __obj = js.Dynamic.literal()
-    if (limit != null) __obj.updateDynamic("limit")(limit)
-    if (usage != null) __obj.updateDynamic("usage")(usage)
-    if (usageInDrive != null) __obj.updateDynamic("usageInDrive")(usageInDrive)
-    if (usageInDriveTrash != null) __obj.updateDynamic("usageInDriveTrash")(usageInDriveTrash)
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (usage != null) __obj.updateDynamic("usage")(usage.asInstanceOf[js.Any])
+    if (usageInDrive != null) __obj.updateDynamic("usageInDrive")(usageInDrive.asInstanceOf[js.Any])
+    if (usageInDriveTrash != null) __obj.updateDynamic("usageInDriveTrash")(usageInDriveTrash.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Limit]
   }
 }

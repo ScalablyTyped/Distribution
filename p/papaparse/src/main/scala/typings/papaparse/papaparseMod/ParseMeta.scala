@@ -28,7 +28,7 @@ object ParseMeta {
     linebreak: String,
     truncated: Boolean
   ): ParseMeta = {
-    val __obj = js.Dynamic.literal(aborted = aborted, cursor = cursor, delimiter = delimiter, fields = fields, linebreak = linebreak, truncated = truncated)
+    val __obj = js.Dynamic.literal(aborted = aborted.asInstanceOf[js.Any], cursor = cursor.asInstanceOf[js.Any], delimiter = delimiter.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], linebreak = linebreak.asInstanceOf[js.Any], truncated = truncated.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ParseMeta]
   }

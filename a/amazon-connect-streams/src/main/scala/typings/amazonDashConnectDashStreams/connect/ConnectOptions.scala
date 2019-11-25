@@ -16,7 +16,7 @@ object ConnectOptions {
   def apply(failure: () => Unit = null, queueARN: String = null, success: () => Unit = null): ConnectOptions = {
     val __obj = js.Dynamic.literal()
     if (failure != null) __obj.updateDynamic("failure")(js.Any.fromFunction0(failure))
-    if (queueARN != null) __obj.updateDynamic("queueARN")(queueARN)
+    if (queueARN != null) __obj.updateDynamic("queueARN")(queueARN.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))
     __obj.asInstanceOf[ConnectOptions]
   }

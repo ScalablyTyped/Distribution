@@ -18,7 +18,7 @@ object AllocateInfo {
   @scala.inline
   def apply(unusedArguments: js.Array[String] = null): AllocateInfo = {
     val __obj = js.Dynamic.literal()
-    if (unusedArguments != null) __obj.updateDynamic("unusedArguments")(unusedArguments)
+    if (unusedArguments != null) __obj.updateDynamic("unusedArguments")(unusedArguments.asInstanceOf[js.Any])
     __obj.asInstanceOf[AllocateInfo]
   }
 }

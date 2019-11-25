@@ -46,14 +46,14 @@ object DotdotdotProps {
     useNativeClamp: js.UndefOr[Boolean] = js.undefined
   ): DotdotdotProps = {
     val __obj = js.Dynamic.literal(clamp = clamp.asInstanceOf[js.Any])
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
-    if (splitOnChars != null) __obj.updateDynamic("splitOnChars")(splitOnChars)
-    if (tagName != null) __obj.updateDynamic("tagName")(tagName)
-    if (truncationChar != null) __obj.updateDynamic("truncationChar")(truncationChar)
-    if (truncationHTML != null) __obj.updateDynamic("truncationHTML")(truncationHTML)
-    if (!js.isUndefined(useNativeClamp)) __obj.updateDynamic("useNativeClamp")(useNativeClamp)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
+    if (splitOnChars != null) __obj.updateDynamic("splitOnChars")(splitOnChars.asInstanceOf[js.Any])
+    if (tagName != null) __obj.updateDynamic("tagName")(tagName.asInstanceOf[js.Any])
+    if (truncationChar != null) __obj.updateDynamic("truncationChar")(truncationChar.asInstanceOf[js.Any])
+    if (truncationHTML != null) __obj.updateDynamic("truncationHTML")(truncationHTML.asInstanceOf[js.Any])
+    if (!js.isUndefined(useNativeClamp)) __obj.updateDynamic("useNativeClamp")(useNativeClamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[DotdotdotProps]
   }
 }

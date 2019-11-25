@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait InferenceClassificationType extends js.Object
 
+object InferenceClassificationType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def focused: typings.microsoftDashGraph.microsoftDashGraphStrings.focused = this.cast("focused")
+  @scala.inline
+  def other: typings.microsoftDashGraph.microsoftDashGraphStrings.other = this.cast("other")
+}
+

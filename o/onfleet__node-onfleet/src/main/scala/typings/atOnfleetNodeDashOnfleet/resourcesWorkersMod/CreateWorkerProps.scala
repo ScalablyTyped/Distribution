@@ -32,10 +32,10 @@ object CreateWorkerProps {
     displayName: String = null,
     vehicle: Vehicle = null
   ): CreateWorkerProps = {
-    val __obj = js.Dynamic.literal(name = name, phone = phone, teams = teams)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any], teams = teams.asInstanceOf[js.Any])
     if (capacity != null) __obj.updateDynamic("capacity")(capacity.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (vehicle != null) __obj.updateDynamic("vehicle")(vehicle)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (vehicle != null) __obj.updateDynamic("vehicle")(vehicle.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateWorkerProps]
   }
 }

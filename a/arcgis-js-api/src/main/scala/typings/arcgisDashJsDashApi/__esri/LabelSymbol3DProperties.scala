@@ -29,11 +29,11 @@ object LabelSymbol3DProperties {
     verticalOffset: LabelSymbol3DVerticalOffsetProperties = null
   ): LabelSymbol3DProperties = {
     val __obj = js.Dynamic.literal()
-    if (callout != null) __obj.updateDynamic("callout")(callout)
+    if (callout != null) __obj.updateDynamic("callout")(callout.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (styleOrigin != null) __obj.updateDynamic("styleOrigin")(styleOrigin)
+    if (styleOrigin != null) __obj.updateDynamic("styleOrigin")(styleOrigin.asInstanceOf[js.Any])
     if (symbolLayers != null) __obj.updateDynamic("symbolLayers")(symbolLayers.asInstanceOf[js.Any])
-    if (verticalOffset != null) __obj.updateDynamic("verticalOffset")(verticalOffset)
+    if (verticalOffset != null) __obj.updateDynamic("verticalOffset")(verticalOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelSymbol3DProperties]
   }
 }

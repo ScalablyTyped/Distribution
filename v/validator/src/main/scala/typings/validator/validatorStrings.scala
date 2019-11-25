@@ -954,7 +954,7 @@ object validatorStrings {
        with typings.validator.validatorMod.MobilePhoneLocale
   
   @js.native
-  sealed trait `pl-Pl`
+  sealed trait `pl-Pl_`
     extends AlphaLocale
        with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
@@ -1436,7 +1436,7 @@ object validatorStrings {
   @scala.inline
   def `pl-PL`: `pl-PL` = "pl-PL".asInstanceOf[`pl-PL`]
   @scala.inline
-  def `pl-Pl`: `pl-Pl` = "pl-Pl".asInstanceOf[`pl-Pl`]
+  def `pl-Pl_`: `pl-Pl_` = "pl-Pl".asInstanceOf[`pl-Pl_`]
   @scala.inline
   def `pt-BR`: `pt-BR` = "pt-BR".asInstanceOf[`pt-BR`]
   @scala.inline

@@ -61,12 +61,12 @@ object EphemeralIdRegistration {
     serviceEcdhPublicKey: String = null
   ): EphemeralIdRegistration = {
     val __obj = js.Dynamic.literal()
-    if (beaconEcdhPublicKey != null) __obj.updateDynamic("beaconEcdhPublicKey")(beaconEcdhPublicKey)
-    if (beaconIdentityKey != null) __obj.updateDynamic("beaconIdentityKey")(beaconIdentityKey)
-    if (initialClockValue != null) __obj.updateDynamic("initialClockValue")(initialClockValue)
-    if (initialEid != null) __obj.updateDynamic("initialEid")(initialEid)
+    if (beaconEcdhPublicKey != null) __obj.updateDynamic("beaconEcdhPublicKey")(beaconEcdhPublicKey.asInstanceOf[js.Any])
+    if (beaconIdentityKey != null) __obj.updateDynamic("beaconIdentityKey")(beaconIdentityKey.asInstanceOf[js.Any])
+    if (initialClockValue != null) __obj.updateDynamic("initialClockValue")(initialClockValue.asInstanceOf[js.Any])
+    if (initialEid != null) __obj.updateDynamic("initialEid")(initialEid.asInstanceOf[js.Any])
     if (rotationPeriodExponent != null) __obj.updateDynamic("rotationPeriodExponent")(rotationPeriodExponent.asInstanceOf[js.Any])
-    if (serviceEcdhPublicKey != null) __obj.updateDynamic("serviceEcdhPublicKey")(serviceEcdhPublicKey)
+    if (serviceEcdhPublicKey != null) __obj.updateDynamic("serviceEcdhPublicKey")(serviceEcdhPublicKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[EphemeralIdRegistration]
   }
 }

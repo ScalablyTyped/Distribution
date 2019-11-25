@@ -51,8 +51,8 @@ object general {
     tap: js.Object,
     wrap: js.Object
   ): general = {
-    val __obj = js.Dynamic.literal(after = after, augment = augment, before = before, shuffle = shuffle, tap = tap, wrap = wrap)
-    __obj.updateDynamic("override")(`override`)
+    val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], augment = augment.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any], shuffle = shuffle.asInstanceOf[js.Any], tap = tap.asInstanceOf[js.Any], wrap = wrap.asInstanceOf[js.Any])
+    __obj.updateDynamic("override")(`override`.asInstanceOf[js.Any])
     __obj.asInstanceOf[general]
   }
 }

@@ -14,7 +14,7 @@ trait Anon_Element extends js.Object {
 object Anon_Element {
   @scala.inline
   def apply(element: Mapper, name: MapperType): Anon_Element = {
-    val __obj = js.Dynamic.literal(element = element, name = name)
+    val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Element]
   }

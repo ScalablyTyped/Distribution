@@ -11,7 +11,7 @@ trait GlobalCallbackErrorEventArgs extends CallbackErrorEventArgs {
 object GlobalCallbackErrorEventArgs {
   @scala.inline
   def apply(control: Control, handled: Boolean, message: String, sender: Control): GlobalCallbackErrorEventArgs = {
-    val __obj = js.Dynamic.literal(control = control, handled = handled, message = message, sender = sender)
+    val __obj = js.Dynamic.literal(control = control.asInstanceOf[js.Any], handled = handled.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GlobalCallbackErrorEventArgs]
   }

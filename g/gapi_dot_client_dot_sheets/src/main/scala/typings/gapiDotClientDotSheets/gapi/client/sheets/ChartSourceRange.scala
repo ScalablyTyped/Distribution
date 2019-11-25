@@ -32,7 +32,7 @@ object ChartSourceRange {
   @scala.inline
   def apply(sources: js.Array[GridRange] = null): ChartSourceRange = {
     val __obj = js.Dynamic.literal()
-    if (sources != null) __obj.updateDynamic("sources")(sources)
+    if (sources != null) __obj.updateDynamic("sources")(sources.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartSourceRange]
   }
 }

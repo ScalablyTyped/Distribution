@@ -17,7 +17,7 @@ trait DeleteStreamOutput extends OutputTypesUnion {
 object DeleteStreamOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata): DeleteStreamOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeleteStreamOutput]
   }

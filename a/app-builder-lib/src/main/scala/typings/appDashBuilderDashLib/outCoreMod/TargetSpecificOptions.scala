@@ -16,7 +16,7 @@ object TargetSpecificOptions {
   @scala.inline
   def apply(artifactName: String = null, publish: Publish = null): TargetSpecificOptions = {
     val __obj = js.Dynamic.literal()
-    if (artifactName != null) __obj.updateDynamic("artifactName")(artifactName)
+    if (artifactName != null) __obj.updateDynamic("artifactName")(artifactName.asInstanceOf[js.Any])
     if (publish != null) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetSpecificOptions]
   }

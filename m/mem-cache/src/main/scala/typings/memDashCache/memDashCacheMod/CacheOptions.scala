@@ -18,9 +18,9 @@ object CacheOptions {
     timeoutDisabled: js.UndefOr[Boolean] = js.undefined
   ): CacheOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(doesNotRenewTimeout)) __obj.updateDynamic("doesNotRenewTimeout")(doesNotRenewTimeout)
+    if (!js.isUndefined(doesNotRenewTimeout)) __obj.updateDynamic("doesNotRenewTimeout")(doesNotRenewTimeout.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeoutDisabled)) __obj.updateDynamic("timeoutDisabled")(timeoutDisabled)
+    if (!js.isUndefined(timeoutDisabled)) __obj.updateDynamic("timeoutDisabled")(timeoutDisabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[CacheOptions]
   }
 }

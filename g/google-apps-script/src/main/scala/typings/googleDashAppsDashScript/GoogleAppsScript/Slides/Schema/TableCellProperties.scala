@@ -13,8 +13,8 @@ object TableCellProperties {
   @scala.inline
   def apply(contentAlignment: String = null, tableCellBackgroundFill: TableCellBackgroundFill = null): TableCellProperties = {
     val __obj = js.Dynamic.literal()
-    if (contentAlignment != null) __obj.updateDynamic("contentAlignment")(contentAlignment)
-    if (tableCellBackgroundFill != null) __obj.updateDynamic("tableCellBackgroundFill")(tableCellBackgroundFill)
+    if (contentAlignment != null) __obj.updateDynamic("contentAlignment")(contentAlignment.asInstanceOf[js.Any])
+    if (tableCellBackgroundFill != null) __obj.updateDynamic("tableCellBackgroundFill")(tableCellBackgroundFill.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableCellProperties]
   }
 }

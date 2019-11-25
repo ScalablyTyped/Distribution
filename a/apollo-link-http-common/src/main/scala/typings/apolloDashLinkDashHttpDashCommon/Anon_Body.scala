@@ -15,7 +15,7 @@ trait Anon_Body extends js.Object {
 object Anon_Body {
   @scala.inline
   def apply(body: Body, options: HttpConfig with (Record[String, _])): Anon_Body = {
-    val __obj = js.Dynamic.literal(body = body, options = options)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Body]
   }

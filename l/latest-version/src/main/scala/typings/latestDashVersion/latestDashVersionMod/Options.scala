@@ -15,7 +15,7 @@ object Options {
   @scala.inline
   def apply(version: String = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

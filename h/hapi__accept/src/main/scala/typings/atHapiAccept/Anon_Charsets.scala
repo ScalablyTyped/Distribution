@@ -19,7 +19,7 @@ object Anon_Charsets {
     languages: js.Array[String],
     mediaTypes: js.Array[String]
   ): Anon_Charsets = {
-    val __obj = js.Dynamic.literal(charsets = charsets, encodings = encodings, languages = languages, mediaTypes = mediaTypes)
+    val __obj = js.Dynamic.literal(charsets = charsets.asInstanceOf[js.Any], encodings = encodings.asInstanceOf[js.Any], languages = languages.asInstanceOf[js.Any], mediaTypes = mediaTypes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Charsets]
   }

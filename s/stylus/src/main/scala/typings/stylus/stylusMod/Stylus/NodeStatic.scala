@@ -175,10 +175,10 @@ object NodeStatic {
     `null`: Null,
     `true`: typings.stylus.stylusMod.Stylus.Nodes.Boolean
   ): NodeStatic = {
-    val __obj = js.Dynamic.literal(Arguments = Arguments, Atblock = Atblock, Atrule = Atrule, BinOp = BinOp, Block = Block, Boolean = Boolean, Call = Call, Charset = Charset, Comment = Comment, Each = Each, Expression = Expression, Extend = Extend, Function = Function, Group = Group, HSLA = HSLA, Ident = Ident, If = If, Import = Import, Keyframes = Keyframes, Literal = Literal, Media = Media, Member = Member, Namespace = Namespace, Node = Node, Null = Null, Object = Object, Params = Params, Property = Property, Query = Query, QueryExpr = QueryExpr, QueryList = QueryList, RGBA = RGBA, Return = Return, Root = Root, Selector = Selector, String = String, Ternary = Ternary, UnaryOp = UnaryOp, Unit = Unit)
-    __obj.updateDynamic("false")(`false`)
-    __obj.updateDynamic("null")(`null`)
-    __obj.updateDynamic("true")(`true`)
+    val __obj = js.Dynamic.literal(Arguments = Arguments.asInstanceOf[js.Any], Atblock = Atblock.asInstanceOf[js.Any], Atrule = Atrule.asInstanceOf[js.Any], BinOp = BinOp.asInstanceOf[js.Any], Block = Block.asInstanceOf[js.Any], Boolean = Boolean.asInstanceOf[js.Any], Call = Call.asInstanceOf[js.Any], Charset = Charset.asInstanceOf[js.Any], Comment = Comment.asInstanceOf[js.Any], Each = Each.asInstanceOf[js.Any], Expression = Expression.asInstanceOf[js.Any], Extend = Extend.asInstanceOf[js.Any], Function = Function.asInstanceOf[js.Any], Group = Group.asInstanceOf[js.Any], HSLA = HSLA.asInstanceOf[js.Any], Ident = Ident.asInstanceOf[js.Any], If = If.asInstanceOf[js.Any], Import = Import.asInstanceOf[js.Any], Keyframes = Keyframes.asInstanceOf[js.Any], Literal = Literal.asInstanceOf[js.Any], Media = Media.asInstanceOf[js.Any], Member = Member.asInstanceOf[js.Any], Namespace = Namespace.asInstanceOf[js.Any], Node = Node.asInstanceOf[js.Any], Null = Null.asInstanceOf[js.Any], Object = Object.asInstanceOf[js.Any], Params = Params.asInstanceOf[js.Any], Property = Property.asInstanceOf[js.Any], Query = Query.asInstanceOf[js.Any], QueryExpr = QueryExpr.asInstanceOf[js.Any], QueryList = QueryList.asInstanceOf[js.Any], RGBA = RGBA.asInstanceOf[js.Any], Return = Return.asInstanceOf[js.Any], Root = Root.asInstanceOf[js.Any], Selector = Selector.asInstanceOf[js.Any], String = String.asInstanceOf[js.Any], Ternary = Ternary.asInstanceOf[js.Any], UnaryOp = UnaryOp.asInstanceOf[js.Any], Unit = Unit.asInstanceOf[js.Any])
+    __obj.updateDynamic("false")(`false`.asInstanceOf[js.Any])
+    __obj.updateDynamic("null")(`null`.asInstanceOf[js.Any])
+    __obj.updateDynamic("true")(`true`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeStatic]
   }
 }

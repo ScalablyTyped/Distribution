@@ -29,7 +29,7 @@ object TextStreamWriter {
     WriteBlankLines: Double => Unit,
     WriteLine: java.lang.String => Unit
   ): TextStreamWriter = {
-    val __obj = js.Dynamic.literal(Close = js.Any.fromFunction0(Close), Column = Column, Line = Line, Write = js.Any.fromFunction1(Write), WriteBlankLines = js.Any.fromFunction1(WriteBlankLines), WriteLine = js.Any.fromFunction1(WriteLine))
+    val __obj = js.Dynamic.literal(Close = js.Any.fromFunction0(Close), Column = Column.asInstanceOf[js.Any], Line = Line.asInstanceOf[js.Any], Write = js.Any.fromFunction1(Write), WriteBlankLines = js.Any.fromFunction1(WriteBlankLines), WriteLine = js.Any.fromFunction1(WriteLine))
   
     __obj.asInstanceOf[TextStreamWriter]
   }

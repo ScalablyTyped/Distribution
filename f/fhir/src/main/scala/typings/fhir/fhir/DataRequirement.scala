@@ -60,19 +60,19 @@ object DataRequirement {
     profile: js.Array[uri] = null
   ): DataRequirement = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
-    if (_id != null) __obj.updateDynamic("_id")(_id)
-    if (_mustSupport != null) __obj.updateDynamic("_mustSupport")(_mustSupport)
-    if (_profile != null) __obj.updateDynamic("_profile")(_profile)
-    if (_type != null) __obj.updateDynamic("_type")(_type)
-    if (codeFilter != null) __obj.updateDynamic("codeFilter")(codeFilter)
-    if (dateFilter != null) __obj.updateDynamic("dateFilter")(dateFilter)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (mustSupport != null) __obj.updateDynamic("mustSupport")(mustSupport)
-    if (profile != null) __obj.updateDynamic("profile")(profile)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
+    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
+    if (_mustSupport != null) __obj.updateDynamic("_mustSupport")(_mustSupport.asInstanceOf[js.Any])
+    if (_profile != null) __obj.updateDynamic("_profile")(_profile.asInstanceOf[js.Any])
+    if (_type != null) __obj.updateDynamic("_type")(_type.asInstanceOf[js.Any])
+    if (codeFilter != null) __obj.updateDynamic("codeFilter")(codeFilter.asInstanceOf[js.Any])
+    if (dateFilter != null) __obj.updateDynamic("dateFilter")(dateFilter.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (mustSupport != null) __obj.updateDynamic("mustSupport")(mustSupport.asInstanceOf[js.Any])
+    if (profile != null) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataRequirement]
   }
 }

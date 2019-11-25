@@ -24,10 +24,10 @@ object GoogleCloudMlV1__PredictionOutput {
     predictionCount: String = null
   ): GoogleCloudMlV1__PredictionOutput = {
     val __obj = js.Dynamic.literal()
-    if (errorCount != null) __obj.updateDynamic("errorCount")(errorCount)
+    if (errorCount != null) __obj.updateDynamic("errorCount")(errorCount.asInstanceOf[js.Any])
     if (nodeHours != null) __obj.updateDynamic("nodeHours")(nodeHours.asInstanceOf[js.Any])
-    if (outputPath != null) __obj.updateDynamic("outputPath")(outputPath)
-    if (predictionCount != null) __obj.updateDynamic("predictionCount")(predictionCount)
+    if (outputPath != null) __obj.updateDynamic("outputPath")(outputPath.asInstanceOf[js.Any])
+    if (predictionCount != null) __obj.updateDynamic("predictionCount")(predictionCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudMlV1__PredictionOutput]
   }
 }

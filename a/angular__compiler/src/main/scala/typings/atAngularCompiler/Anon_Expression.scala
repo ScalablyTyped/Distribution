@@ -16,8 +16,8 @@ trait Anon_Expression extends js.Object {
 object Anon_Expression {
   @scala.inline
   def apply(expression: InvokeFunctionExpr, statements: js.Array[Statement], `type`: ExpressionType): Anon_Expression = {
-    val __obj = js.Dynamic.literal(expression = expression, statements = statements)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], statements = statements.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Expression]
   }
 }

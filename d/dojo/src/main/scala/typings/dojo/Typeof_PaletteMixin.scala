@@ -27,7 +27,7 @@ trait Typeof_PaletteMixin extends js.Object {
 object Typeof_PaletteMixin {
   @scala.inline
   def apply(__Dye: Instantiable3[/* alias */ String, /* row */ js.Any, /* col */ js.Any, __Dye]): Typeof_PaletteMixin = {
-    val __obj = js.Dynamic.literal(__Dye = __Dye)
+    val __obj = js.Dynamic.literal(__Dye = __Dye.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Typeof_PaletteMixin]
   }

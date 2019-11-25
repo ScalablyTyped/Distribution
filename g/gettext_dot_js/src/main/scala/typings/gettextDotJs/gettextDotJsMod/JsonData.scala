@@ -16,8 +16,8 @@ object JsonData {
     StringDictionary: StringDictionary[String | js.Array[String] | JsonDataHeader] = null
   ): JsonData = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("")(Empty)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.updateDynamic("")(Empty.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[JsonData]
   }
 }

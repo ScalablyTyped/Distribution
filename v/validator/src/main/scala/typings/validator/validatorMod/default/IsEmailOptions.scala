@@ -62,13 +62,13 @@ object IsEmailOptions {
     require_tld: js.UndefOr[Boolean] = js.undefined
   ): IsEmailOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allow_display_name)) __obj.updateDynamic("allow_display_name")(allow_display_name)
-    if (!js.isUndefined(allow_ip_domain)) __obj.updateDynamic("allow_ip_domain")(allow_ip_domain)
-    if (!js.isUndefined(allow_utf8_local_part)) __obj.updateDynamic("allow_utf8_local_part")(allow_utf8_local_part)
-    if (!js.isUndefined(domain_specific_validation)) __obj.updateDynamic("domain_specific_validation")(domain_specific_validation)
-    if (!js.isUndefined(ignore_max_length)) __obj.updateDynamic("ignore_max_length")(ignore_max_length)
-    if (!js.isUndefined(require_display_name)) __obj.updateDynamic("require_display_name")(require_display_name)
-    if (!js.isUndefined(require_tld)) __obj.updateDynamic("require_tld")(require_tld)
+    if (!js.isUndefined(allow_display_name)) __obj.updateDynamic("allow_display_name")(allow_display_name.asInstanceOf[js.Any])
+    if (!js.isUndefined(allow_ip_domain)) __obj.updateDynamic("allow_ip_domain")(allow_ip_domain.asInstanceOf[js.Any])
+    if (!js.isUndefined(allow_utf8_local_part)) __obj.updateDynamic("allow_utf8_local_part")(allow_utf8_local_part.asInstanceOf[js.Any])
+    if (!js.isUndefined(domain_specific_validation)) __obj.updateDynamic("domain_specific_validation")(domain_specific_validation.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignore_max_length)) __obj.updateDynamic("ignore_max_length")(ignore_max_length.asInstanceOf[js.Any])
+    if (!js.isUndefined(require_display_name)) __obj.updateDynamic("require_display_name")(require_display_name.asInstanceOf[js.Any])
+    if (!js.isUndefined(require_tld)) __obj.updateDynamic("require_tld")(require_tld.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsEmailOptions]
   }
 }

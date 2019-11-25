@@ -49,8 +49,8 @@ object FlashFilter {
     strength: Double,
     `type`: String
   ): FlashFilter = {
-    val __obj = js.Dynamic.literal(angle = angle, blurX = blurX, blurY = blurY, brightness = brightness, color = color, contrast = contrast, distance = distance, enabled = enabled, hideObject = hideObject, highlightColor = highlightColor, hue = hue, inner = inner, knockout = knockout, name = name, quality = quality, saturation = saturation, shadowColor = shadowColor, strength = strength)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(angle = angle.asInstanceOf[js.Any], blurX = blurX.asInstanceOf[js.Any], blurY = blurY.asInstanceOf[js.Any], brightness = brightness.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], contrast = contrast.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], hideObject = hideObject.asInstanceOf[js.Any], highlightColor = highlightColor.asInstanceOf[js.Any], hue = hue.asInstanceOf[js.Any], inner = inner.asInstanceOf[js.Any], knockout = knockout.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], quality = quality.asInstanceOf[js.Any], saturation = saturation.asInstanceOf[js.Any], shadowColor = shadowColor.asInstanceOf[js.Any], strength = strength.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlashFilter]
   }
 }

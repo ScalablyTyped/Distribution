@@ -13,7 +13,7 @@ trait Anon_InUndoRedoNewNode extends js.Object {
 object Anon_InUndoRedoNewNode {
   @scala.inline
   def apply(InUndoRedo: Boolean, NewNode: CustomXMLNode): Anon_InUndoRedoNewNode = {
-    val __obj = js.Dynamic.literal(InUndoRedo = InUndoRedo, NewNode = NewNode)
+    val __obj = js.Dynamic.literal(InUndoRedo = InUndoRedo.asInstanceOf[js.Any], NewNode = NewNode.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_InUndoRedoNewNode]
   }

@@ -12,7 +12,7 @@ trait Anon_GZK extends js.Object {
 object Anon_GZK {
   @scala.inline
   def apply(ZK: G): Anon_GZK = {
-    val __obj = js.Dynamic.literal(ZK = ZK)
+    val __obj = js.Dynamic.literal(ZK = ZK.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_GZK]
   }

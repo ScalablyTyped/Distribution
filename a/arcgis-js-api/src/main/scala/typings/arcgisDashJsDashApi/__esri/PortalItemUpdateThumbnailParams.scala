@@ -24,7 +24,7 @@ object PortalItemUpdateThumbnailParams {
     propertyIsEnumerable: PropertyKey => Boolean,
     thumbnail: Blob | String
   ): PortalItemUpdateThumbnailParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), thumbnail = thumbnail.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), thumbnail = thumbnail.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PortalItemUpdateThumbnailParams]
   }

@@ -12,7 +12,7 @@ trait Anon_HighSurrogate extends js.Object {
 object Anon_HighSurrogate {
   @scala.inline
   def apply(highSurrogate: String, lowSurrogate: String): Anon_HighSurrogate = {
-    val __obj = js.Dynamic.literal(highSurrogate = highSurrogate, lowSurrogate = lowSurrogate)
+    val __obj = js.Dynamic.literal(highSurrogate = highSurrogate.asInstanceOf[js.Any], lowSurrogate = lowSurrogate.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_HighSurrogate]
   }

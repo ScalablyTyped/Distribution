@@ -65,14 +65,14 @@ object TdOptions {
     useDatabase: js.UndefOr[Boolean] = js.undefined
   ): TdOptions = {
     val __obj = js.Dynamic.literal()
-    if (instanceName != null) __obj.updateDynamic("instanceName")(instanceName)
-    if (!js.isUndefined(isBackground)) __obj.updateDynamic("isBackground")(isBackground)
+    if (instanceName != null) __obj.updateDynamic("instanceName")(instanceName.asInstanceOf[js.Any])
+    if (!js.isUndefined(isBackground)) __obj.updateDynamic("isBackground")(isBackground.asInstanceOf[js.Any])
     if (jsLogVerbosityLevel != null) __obj.updateDynamic("jsLogVerbosityLevel")(jsLogVerbosityLevel.asInstanceOf[js.Any])
     if (logVerbosityLevel != null) __obj.updateDynamic("logVerbosityLevel")(logVerbosityLevel.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (onUpdate != null) __obj.updateDynamic("onUpdate")(js.Any.fromFunction1(onUpdate))
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
-    if (!js.isUndefined(useDatabase)) __obj.updateDynamic("useDatabase")(useDatabase)
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(useDatabase)) __obj.updateDynamic("useDatabase")(useDatabase.asInstanceOf[js.Any])
     __obj.asInstanceOf[TdOptions]
   }
 }

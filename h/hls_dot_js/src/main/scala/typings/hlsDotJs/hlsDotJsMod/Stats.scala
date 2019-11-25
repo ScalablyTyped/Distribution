@@ -32,7 +32,7 @@ object Stats {
     length: Int | Double = null,
     tbuffered: Int | Double = null
   ): Stats = {
-    val __obj = js.Dynamic.literal(mtime = mtime, tfirst = tfirst, tload = tload, trequest = trequest)
+    val __obj = js.Dynamic.literal(mtime = mtime.asInstanceOf[js.Any], tfirst = tfirst.asInstanceOf[js.Any], tload = tload.asInstanceOf[js.Any], trequest = trequest.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     if (tbuffered != null) __obj.updateDynamic("tbuffered")(tbuffered.asInstanceOf[js.Any])
     __obj.asInstanceOf[Stats]

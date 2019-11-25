@@ -33,13 +33,13 @@ object OAuthOptions {
   ): OAuthOptions = {
     val __obj = js.Dynamic.literal()
     if (body_hash != null) __obj.updateDynamic("body_hash")(body_hash.asInstanceOf[js.Any])
-    if (callback != null) __obj.updateDynamic("callback")(callback)
-    if (consumer_key != null) __obj.updateDynamic("consumer_key")(consumer_key)
-    if (consumer_secret != null) __obj.updateDynamic("consumer_secret")(consumer_secret)
-    if (token != null) __obj.updateDynamic("token")(token)
-    if (token_secret != null) __obj.updateDynamic("token_secret")(token_secret)
+    if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
+    if (consumer_key != null) __obj.updateDynamic("consumer_key")(consumer_key.asInstanceOf[js.Any])
+    if (consumer_secret != null) __obj.updateDynamic("consumer_secret")(consumer_secret.asInstanceOf[js.Any])
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
+    if (token_secret != null) __obj.updateDynamic("token_secret")(token_secret.asInstanceOf[js.Any])
     if (transport_method != null) __obj.updateDynamic("transport_method")(transport_method.asInstanceOf[js.Any])
-    if (verifier != null) __obj.updateDynamic("verifier")(verifier)
+    if (verifier != null) __obj.updateDynamic("verifier")(verifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[OAuthOptions]
   }
 }

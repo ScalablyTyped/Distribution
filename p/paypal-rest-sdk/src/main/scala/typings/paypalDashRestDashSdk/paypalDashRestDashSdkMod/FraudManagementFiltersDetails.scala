@@ -14,7 +14,7 @@ trait FraudManagementFiltersDetails extends js.Object {
 object FraudManagementFiltersDetails {
   @scala.inline
   def apply(description: String, filter_id: String, filter_type: String, name: String): FraudManagementFiltersDetails = {
-    val __obj = js.Dynamic.literal(description = description, filter_id = filter_id, filter_type = filter_type, name = name)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], filter_id = filter_id.asInstanceOf[js.Any], filter_type = filter_type.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FraudManagementFiltersDetails]
   }

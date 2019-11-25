@@ -18,8 +18,8 @@ trait PolicySku extends js.Object {
 object PolicySku {
   @scala.inline
   def apply(name: String, tier: String = null): PolicySku = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (tier != null) __obj.updateDynamic("tier")(tier)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (tier != null) __obj.updateDynamic("tier")(tier.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolicySku]
   }
 }

@@ -15,3 +15,16 @@ import scala.scalajs.js.annotation._
 */
 trait TabPlacement extends js.Object
 
+object TabPlacement {
+  @scala.inline
+  def bottom: typings.atPhosphorWidgets.atPhosphorWidgetsStrings.bottom = this.cast("bottom")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def left: typings.atPhosphorWidgets.atPhosphorWidgetsStrings.left = this.cast("left")
+  @scala.inline
+  def right: typings.atPhosphorWidgets.atPhosphorWidgetsStrings.right = this.cast("right")
+  @scala.inline
+  def top: typings.atPhosphorWidgets.atPhosphorWidgetsStrings.top = this.cast("top")
+}
+

@@ -33,9 +33,9 @@ object IPathIntersection {
     path1Angles: js.Array[Double] = null,
     path2Angles: js.Array[Double] = null
   ): IPathIntersection = {
-    val __obj = js.Dynamic.literal(intersectionPoints = intersectionPoints)
-    if (path1Angles != null) __obj.updateDynamic("path1Angles")(path1Angles)
-    if (path2Angles != null) __obj.updateDynamic("path2Angles")(path2Angles)
+    val __obj = js.Dynamic.literal(intersectionPoints = intersectionPoints.asInstanceOf[js.Any])
+    if (path1Angles != null) __obj.updateDynamic("path1Angles")(path1Angles.asInstanceOf[js.Any])
+    if (path2Angles != null) __obj.updateDynamic("path2Angles")(path2Angles.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPathIntersection]
   }
 }

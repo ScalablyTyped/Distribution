@@ -30,9 +30,9 @@ object EntityResult {
   @scala.inline
   def apply(cursor: String = null, entity: Entity = null, version: String = null): EntityResult = {
     val __obj = js.Dynamic.literal()
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor)
-    if (entity != null) __obj.updateDynamic("entity")(entity)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
+    if (entity != null) __obj.updateDynamic("entity")(entity.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntityResult]
   }
 }

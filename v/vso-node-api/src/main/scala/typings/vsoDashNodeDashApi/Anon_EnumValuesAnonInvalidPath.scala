@@ -11,7 +11,7 @@ trait Anon_EnumValuesAnonInvalidPath extends js.Object {
 object Anon_EnumValuesAnonInvalidPath {
   @scala.inline
   def apply(enumValues: Anon_InvalidPath): Anon_EnumValuesAnonInvalidPath = {
-    val __obj = js.Dynamic.literal(enumValues = enumValues)
+    val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EnumValuesAnonInvalidPath]
   }

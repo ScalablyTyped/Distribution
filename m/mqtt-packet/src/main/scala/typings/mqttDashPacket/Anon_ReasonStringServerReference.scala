@@ -20,10 +20,10 @@ object Anon_ReasonStringServerReference {
     userProperties: js.Object = null
   ): Anon_ReasonStringServerReference = {
     val __obj = js.Dynamic.literal()
-    if (reasonString != null) __obj.updateDynamic("reasonString")(reasonString)
-    if (serverReference != null) __obj.updateDynamic("serverReference")(serverReference)
+    if (reasonString != null) __obj.updateDynamic("reasonString")(reasonString.asInstanceOf[js.Any])
+    if (serverReference != null) __obj.updateDynamic("serverReference")(serverReference.asInstanceOf[js.Any])
     if (sessionExpiryInterval != null) __obj.updateDynamic("sessionExpiryInterval")(sessionExpiryInterval.asInstanceOf[js.Any])
-    if (userProperties != null) __obj.updateDynamic("userProperties")(userProperties)
+    if (userProperties != null) __obj.updateDynamic("userProperties")(userProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ReasonStringServerReference]
   }
 }

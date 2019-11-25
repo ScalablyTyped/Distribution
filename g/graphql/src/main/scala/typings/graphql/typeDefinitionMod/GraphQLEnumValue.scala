@@ -28,12 +28,12 @@ object GraphQLEnumValue {
     extensions: Maybe[Record[String, _]] = null,
     isDeprecated: js.UndefOr[Boolean] = js.undefined
   ): GraphQLEnumValue = {
-    val __obj = js.Dynamic.literal(name = name, value = value)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     if (astNode != null) __obj.updateDynamic("astNode")(astNode.asInstanceOf[js.Any])
     if (deprecationReason != null) __obj.updateDynamic("deprecationReason")(deprecationReason.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDeprecated)) __obj.updateDynamic("isDeprecated")(isDeprecated)
+    if (!js.isUndefined(isDeprecated)) __obj.updateDynamic("isDeprecated")(isDeprecated.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLEnumValue]
   }
 }

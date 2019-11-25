@@ -20,9 +20,9 @@ object Options {
     enableSubpixelRendering: js.UndefOr[Boolean] = js.undefined,
     renderBaseBackground: js.Object = null
   ): Options = {
-    val __obj = js.Dynamic.literal(pixelRatio = pixelRatio)
-    if (!js.isUndefined(enableSubpixelRendering)) __obj.updateDynamic("enableSubpixelRendering")(enableSubpixelRendering)
-    if (renderBaseBackground != null) __obj.updateDynamic("renderBaseBackground")(renderBaseBackground)
+    val __obj = js.Dynamic.literal(pixelRatio = pixelRatio.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableSubpixelRendering)) __obj.updateDynamic("enableSubpixelRendering")(enableSubpixelRendering.asInstanceOf[js.Any])
+    if (renderBaseBackground != null) __obj.updateDynamic("renderBaseBackground")(renderBaseBackground.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

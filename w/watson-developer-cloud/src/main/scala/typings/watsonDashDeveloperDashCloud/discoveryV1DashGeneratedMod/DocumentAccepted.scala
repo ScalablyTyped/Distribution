@@ -18,9 +18,9 @@ object DocumentAccepted {
   @scala.inline
   def apply(document_id: String = null, notices: js.Array[Notice] = null, status: String = null): DocumentAccepted = {
     val __obj = js.Dynamic.literal()
-    if (document_id != null) __obj.updateDynamic("document_id")(document_id)
-    if (notices != null) __obj.updateDynamic("notices")(notices)
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (document_id != null) __obj.updateDynamic("document_id")(document_id.asInstanceOf[js.Any])
+    if (notices != null) __obj.updateDynamic("notices")(notices.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentAccepted]
   }
 }

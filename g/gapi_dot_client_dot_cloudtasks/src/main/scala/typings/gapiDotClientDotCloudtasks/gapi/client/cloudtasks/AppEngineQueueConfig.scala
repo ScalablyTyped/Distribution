@@ -13,7 +13,7 @@ object AppEngineQueueConfig {
   @scala.inline
   def apply(appEngineRoutingOverride: AppEngineRouting = null): AppEngineQueueConfig = {
     val __obj = js.Dynamic.literal()
-    if (appEngineRoutingOverride != null) __obj.updateDynamic("appEngineRoutingOverride")(appEngineRoutingOverride)
+    if (appEngineRoutingOverride != null) __obj.updateDynamic("appEngineRoutingOverride")(appEngineRoutingOverride.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppEngineQueueConfig]
   }
 }

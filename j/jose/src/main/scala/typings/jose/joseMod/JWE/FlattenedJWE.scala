@@ -20,11 +20,11 @@ object FlattenedJWE {
     `protected`: String = null,
     unprotected: js.Object = null
   ): FlattenedJWE = {
-    val __obj = js.Dynamic.literal(ciphertext = ciphertext, encrypted_key = encrypted_key, iv = iv, tag = tag)
-    if (aad != null) __obj.updateDynamic("aad")(aad)
-    if (header != null) __obj.updateDynamic("header")(header)
-    if (`protected` != null) __obj.updateDynamic("protected")(`protected`)
-    if (unprotected != null) __obj.updateDynamic("unprotected")(unprotected)
+    val __obj = js.Dynamic.literal(ciphertext = ciphertext.asInstanceOf[js.Any], encrypted_key = encrypted_key.asInstanceOf[js.Any], iv = iv.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
+    if (aad != null) __obj.updateDynamic("aad")(aad.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (`protected` != null) __obj.updateDynamic("protected")(`protected`.asInstanceOf[js.Any])
+    if (unprotected != null) __obj.updateDynamic("unprotected")(unprotected.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlattenedJWE]
   }
 }

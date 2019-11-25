@@ -23,10 +23,10 @@ object Anon_Payload {
     qos: QoS = null,
     retain: js.UndefOr[Boolean] = js.undefined
   ): Anon_Payload = {
-    val __obj = js.Dynamic.literal(payload = payload, topic = topic)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (qos != null) __obj.updateDynamic("qos")(qos)
-    if (!js.isUndefined(retain)) __obj.updateDynamic("retain")(retain)
+    val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (qos != null) __obj.updateDynamic("qos")(qos.asInstanceOf[js.Any])
+    if (!js.isUndefined(retain)) __obj.updateDynamic("retain")(retain.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Payload]
   }
 }

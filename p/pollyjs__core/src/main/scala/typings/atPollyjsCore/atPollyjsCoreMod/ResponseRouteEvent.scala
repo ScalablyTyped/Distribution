@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait ResponseRouteEvent extends js.Object
 
+object ResponseRouteEvent {
+  @scala.inline
+  def beforeResponse: typings.atPollyjsCore.atPollyjsCoreStrings.beforeResponse = this.cast("beforeResponse")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def response: typings.atPollyjsCore.atPollyjsCoreStrings.response = this.cast("response")
+}
+

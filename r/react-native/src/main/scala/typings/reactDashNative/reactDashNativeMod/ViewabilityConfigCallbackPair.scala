@@ -16,7 +16,7 @@ object ViewabilityConfigCallbackPair {
     viewabilityConfig: ViewabilityConfig,
     onViewableItemsChanged: /* info */ Anon_Changed => Unit = null
   ): ViewabilityConfigCallbackPair = {
-    val __obj = js.Dynamic.literal(viewabilityConfig = viewabilityConfig)
+    val __obj = js.Dynamic.literal(viewabilityConfig = viewabilityConfig.asInstanceOf[js.Any])
     if (onViewableItemsChanged != null) __obj.updateDynamic("onViewableItemsChanged")(js.Any.fromFunction1(onViewableItemsChanged))
     __obj.asInstanceOf[ViewabilityConfigCallbackPair]
   }

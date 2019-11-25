@@ -20,7 +20,7 @@ trait Forceable extends js.Object {
 object Forceable {
   @scala.inline
   def apply(force: Boolean): Forceable = {
-    val __obj = js.Dynamic.literal(force = force)
+    val __obj = js.Dynamic.literal(force = force.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Forceable]
   }

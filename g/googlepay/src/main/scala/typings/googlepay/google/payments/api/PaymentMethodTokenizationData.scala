@@ -13,8 +13,8 @@ object PaymentMethodTokenizationData {
   @scala.inline
   def apply(`type`: TokenizationType, token: String = null): PaymentMethodTokenizationData = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (token != null) __obj.updateDynamic("token")(token)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentMethodTokenizationData]
   }
 }

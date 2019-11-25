@@ -20,7 +20,7 @@ object ClickOptions {
   @scala.inline
   def apply(button: MouseButtons = null, clickCount: Int | Double = null, delay: Int | Double = null): ClickOptions = {
     val __obj = js.Dynamic.literal()
-    if (button != null) __obj.updateDynamic("button")(button)
+    if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
     if (clickCount != null) __obj.updateDynamic("clickCount")(clickCount.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClickOptions]

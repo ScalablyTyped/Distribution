@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait LogPhase extends js.Object
 
+object LogPhase {
+  @scala.inline
+  def auth: typings.requestDashDebug.requestDashDebugStrings.auth = this.cast("auth")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def redirect: typings.requestDashDebug.requestDashDebugStrings.redirect = this.cast("redirect")
+  @scala.inline
+  def request: typings.requestDashDebug.requestDashDebugStrings.request = this.cast("request")
+  @scala.inline
+  def response: typings.requestDashDebug.requestDashDebugStrings.response = this.cast("response")
+}
+

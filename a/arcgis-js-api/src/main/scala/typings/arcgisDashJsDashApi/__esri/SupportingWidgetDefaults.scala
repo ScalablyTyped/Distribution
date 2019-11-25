@@ -37,10 +37,10 @@ object SupportingWidgetDefaults {
     featureTemplates: SupportingWidgetDefaultsFeatureTemplates = null,
     sketch: SupportingWidgetDefaultsSketch = null
   ): SupportingWidgetDefaults = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (featureForm != null) __obj.updateDynamic("featureForm")(featureForm)
-    if (featureTemplates != null) __obj.updateDynamic("featureTemplates")(featureTemplates)
-    if (sketch != null) __obj.updateDynamic("sketch")(sketch)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (featureForm != null) __obj.updateDynamic("featureForm")(featureForm.asInstanceOf[js.Any])
+    if (featureTemplates != null) __obj.updateDynamic("featureTemplates")(featureTemplates.asInstanceOf[js.Any])
+    if (sketch != null) __obj.updateDynamic("sketch")(sketch.asInstanceOf[js.Any])
     __obj.asInstanceOf[SupportingWidgetDefaults]
   }
 }

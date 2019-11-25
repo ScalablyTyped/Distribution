@@ -25,9 +25,9 @@ object Anon_ClientQuery {
     clientQuery: DocumentNode = null,
     serverQuery: DocumentNode = null
   ): Anon_ClientQuery = {
-    val __obj = js.Dynamic.literal(defaultVars = defaultVars, document = document, hasClientExports = hasClientExports, hasForcedResolvers = hasForcedResolvers)
-    if (clientQuery != null) __obj.updateDynamic("clientQuery")(clientQuery)
-    if (serverQuery != null) __obj.updateDynamic("serverQuery")(serverQuery)
+    val __obj = js.Dynamic.literal(defaultVars = defaultVars.asInstanceOf[js.Any], document = document.asInstanceOf[js.Any], hasClientExports = hasClientExports.asInstanceOf[js.Any], hasForcedResolvers = hasForcedResolvers.asInstanceOf[js.Any])
+    if (clientQuery != null) __obj.updateDynamic("clientQuery")(clientQuery.asInstanceOf[js.Any])
+    if (serverQuery != null) __obj.updateDynamic("serverQuery")(serverQuery.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ClientQuery]
   }
 }

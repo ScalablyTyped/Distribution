@@ -28,13 +28,13 @@ object Anon_BackgroundColorBorderColor {
     size: Int | Double = null
   ): Anon_BackgroundColorBorderColor = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
-    if (checkedColor != null) __obj.updateDynamic("checkedColor")(checkedColor)
-    if (disabledColor != null) __obj.updateDynamic("disabledColor")(disabledColor)
-    if (labelColor != null) __obj.updateDynamic("labelColor")(labelColor)
-    if (labelDisabledColor != null) __obj.updateDynamic("labelDisabledColor")(labelDisabledColor)
-    if (requiredColor != null) __obj.updateDynamic("requiredColor")(requiredColor)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
+    if (checkedColor != null) __obj.updateDynamic("checkedColor")(checkedColor.asInstanceOf[js.Any])
+    if (disabledColor != null) __obj.updateDynamic("disabledColor")(disabledColor.asInstanceOf[js.Any])
+    if (labelColor != null) __obj.updateDynamic("labelColor")(labelColor.asInstanceOf[js.Any])
+    if (labelDisabledColor != null) __obj.updateDynamic("labelDisabledColor")(labelDisabledColor.asInstanceOf[js.Any])
+    if (requiredColor != null) __obj.updateDynamic("requiredColor")(requiredColor.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BackgroundColorBorderColor]
   }

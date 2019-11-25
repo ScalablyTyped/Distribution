@@ -15,7 +15,7 @@ object Anon_Config {
   def apply(config: Config | String = null, filter: String = null): Anon_Config = {
     val __obj = js.Dynamic.literal()
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Config]
   }
 }

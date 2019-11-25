@@ -13,7 +13,7 @@ trait HSB extends js.Object {
 object HSB {
   @scala.inline
   def apply(b: Double, h: Double, s: Double): HSB = {
-    val __obj = js.Dynamic.literal(b = b, h = h, s = s)
+    val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], h = h.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HSB]
   }

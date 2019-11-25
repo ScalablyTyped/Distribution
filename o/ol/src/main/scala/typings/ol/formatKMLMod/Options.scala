@@ -20,10 +20,10 @@ object Options {
     writeStyles: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (defaultStyle != null) __obj.updateDynamic("defaultStyle")(defaultStyle)
-    if (!js.isUndefined(extractStyles)) __obj.updateDynamic("extractStyles")(extractStyles)
-    if (!js.isUndefined(showPointNames)) __obj.updateDynamic("showPointNames")(showPointNames)
-    if (!js.isUndefined(writeStyles)) __obj.updateDynamic("writeStyles")(writeStyles)
+    if (defaultStyle != null) __obj.updateDynamic("defaultStyle")(defaultStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(extractStyles)) __obj.updateDynamic("extractStyles")(extractStyles.asInstanceOf[js.Any])
+    if (!js.isUndefined(showPointNames)) __obj.updateDynamic("showPointNames")(showPointNames.asInstanceOf[js.Any])
+    if (!js.isUndefined(writeStyles)) __obj.updateDynamic("writeStyles")(writeStyles.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

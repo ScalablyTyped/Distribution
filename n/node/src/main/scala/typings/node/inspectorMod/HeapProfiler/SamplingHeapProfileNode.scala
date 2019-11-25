@@ -26,7 +26,7 @@ trait SamplingHeapProfileNode extends js.Object {
 object SamplingHeapProfileNode {
   @scala.inline
   def apply(callFrame: CallFrame, children: js.Array[SamplingHeapProfileNode], selfSize: Double): SamplingHeapProfileNode = {
-    val __obj = js.Dynamic.literal(callFrame = callFrame, children = children, selfSize = selfSize)
+    val __obj = js.Dynamic.literal(callFrame = callFrame.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], selfSize = selfSize.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SamplingHeapProfileNode]
   }

@@ -17,9 +17,9 @@ object ComponentDescriptor {
     dependencies: js.Array[String] = null,
     multiple: js.UndefOr[Boolean] = js.undefined
   ): ComponentDescriptor[T] = {
-    val __obj = js.Dynamic.literal(Component = Component)
-    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies)
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
+    val __obj = js.Dynamic.literal(Component = Component.asInstanceOf[js.Any])
+    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentDescriptor[T]]
   }
 }

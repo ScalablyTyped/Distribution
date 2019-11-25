@@ -14,7 +14,7 @@ trait ILoginLinkOptions extends js.Object {
 object ILoginLinkOptions {
   @scala.inline
   def apply(redirect_url: String): ILoginLinkOptions = {
-    val __obj = js.Dynamic.literal(redirect_url = redirect_url)
+    val __obj = js.Dynamic.literal(redirect_url = redirect_url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ILoginLinkOptions]
   }

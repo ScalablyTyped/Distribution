@@ -61,12 +61,12 @@ object StripePaymentResponse {
     source: js.Any = null,
     token: js.Any = null
   ): StripePaymentResponse = {
-    val __obj = js.Dynamic.literal(complete = js.Any.fromFunction1(complete), methodName = methodName, shippingAddress = shippingAddress, shippingOption = shippingOption)
-    if (payerEmail != null) __obj.updateDynamic("payerEmail")(payerEmail)
-    if (payerName != null) __obj.updateDynamic("payerName")(payerName)
-    if (payerPhone != null) __obj.updateDynamic("payerPhone")(payerPhone)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (token != null) __obj.updateDynamic("token")(token)
+    val __obj = js.Dynamic.literal(complete = js.Any.fromFunction1(complete), methodName = methodName.asInstanceOf[js.Any], shippingAddress = shippingAddress.asInstanceOf[js.Any], shippingOption = shippingOption.asInstanceOf[js.Any])
+    if (payerEmail != null) __obj.updateDynamic("payerEmail")(payerEmail.asInstanceOf[js.Any])
+    if (payerName != null) __obj.updateDynamic("payerName")(payerName.asInstanceOf[js.Any])
+    if (payerPhone != null) __obj.updateDynamic("payerPhone")(payerPhone.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     __obj.asInstanceOf[StripePaymentResponse]
   }
 }

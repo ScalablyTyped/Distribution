@@ -23,10 +23,10 @@ object PurchaseParameters {
     num_items: Int | Double = null,
     order_id: String = null
   ): PurchaseParameters = {
-    val __obj = js.Dynamic.literal(content_ids = content_ids, content_type = content_type, currency = currency, value = value)
-    if (content_name != null) __obj.updateDynamic("content_name")(content_name)
+    val __obj = js.Dynamic.literal(content_ids = content_ids.asInstanceOf[js.Any], content_type = content_type.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (content_name != null) __obj.updateDynamic("content_name")(content_name.asInstanceOf[js.Any])
     if (num_items != null) __obj.updateDynamic("num_items")(num_items.asInstanceOf[js.Any])
-    if (order_id != null) __obj.updateDynamic("order_id")(order_id)
+    if (order_id != null) __obj.updateDynamic("order_id")(order_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[PurchaseParameters]
   }
 }

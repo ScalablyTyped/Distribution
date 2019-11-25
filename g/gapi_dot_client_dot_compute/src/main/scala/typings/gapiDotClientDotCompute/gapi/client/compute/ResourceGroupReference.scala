@@ -13,7 +13,7 @@ object ResourceGroupReference {
   @scala.inline
   def apply(group: String = null): ResourceGroupReference = {
     val __obj = js.Dynamic.literal()
-    if (group != null) __obj.updateDynamic("group")(group)
+    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceGroupReference]
   }
 }

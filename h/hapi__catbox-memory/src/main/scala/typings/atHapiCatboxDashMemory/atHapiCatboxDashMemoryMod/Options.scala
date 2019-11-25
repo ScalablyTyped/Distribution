@@ -44,11 +44,11 @@ object Options {
     partition: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowMixedContent)) __obj.updateDynamic("allowMixedContent")(allowMixedContent)
-    if (!js.isUndefined(cloneBuffersOnGet)) __obj.updateDynamic("cloneBuffersOnGet")(cloneBuffersOnGet)
+    if (!js.isUndefined(allowMixedContent)) __obj.updateDynamic("allowMixedContent")(allowMixedContent.asInstanceOf[js.Any])
+    if (!js.isUndefined(cloneBuffersOnGet)) __obj.updateDynamic("cloneBuffersOnGet")(cloneBuffersOnGet.asInstanceOf[js.Any])
     if (maxByteSize != null) __obj.updateDynamic("maxByteSize")(maxByteSize.asInstanceOf[js.Any])
     if (minCleanupIntervalMsec != null) __obj.updateDynamic("minCleanupIntervalMsec")(minCleanupIntervalMsec.asInstanceOf[js.Any])
-    if (partition != null) __obj.updateDynamic("partition")(partition)
+    if (partition != null) __obj.updateDynamic("partition")(partition.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

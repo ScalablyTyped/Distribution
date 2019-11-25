@@ -31,7 +31,7 @@ trait MessagingDeviceGroupResponse extends js.Object {
 object MessagingDeviceGroupResponse {
   @scala.inline
   def apply(failedRegistrationTokens: js.Array[String], failureCount: Double, successCount: Double): MessagingDeviceGroupResponse = {
-    val __obj = js.Dynamic.literal(failedRegistrationTokens = failedRegistrationTokens, failureCount = failureCount, successCount = successCount)
+    val __obj = js.Dynamic.literal(failedRegistrationTokens = failedRegistrationTokens.asInstanceOf[js.Any], failureCount = failureCount.asInstanceOf[js.Any], successCount = successCount.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MessagingDeviceGroupResponse]
   }

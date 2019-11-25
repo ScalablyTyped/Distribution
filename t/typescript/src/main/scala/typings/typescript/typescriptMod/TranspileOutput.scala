@@ -13,9 +13,9 @@ trait TranspileOutput extends js.Object {
 object TranspileOutput {
   @scala.inline
   def apply(outputText: String, diagnostics: js.Array[Diagnostic] = null, sourceMapText: String = null): TranspileOutput = {
-    val __obj = js.Dynamic.literal(outputText = outputText)
-    if (diagnostics != null) __obj.updateDynamic("diagnostics")(diagnostics)
-    if (sourceMapText != null) __obj.updateDynamic("sourceMapText")(sourceMapText)
+    val __obj = js.Dynamic.literal(outputText = outputText.asInstanceOf[js.Any])
+    if (diagnostics != null) __obj.updateDynamic("diagnostics")(diagnostics.asInstanceOf[js.Any])
+    if (sourceMapText != null) __obj.updateDynamic("sourceMapText")(sourceMapText.asInstanceOf[js.Any])
     __obj.asInstanceOf[TranspileOutput]
   }
 }

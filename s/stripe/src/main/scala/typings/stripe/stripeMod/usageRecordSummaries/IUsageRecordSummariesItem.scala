@@ -26,8 +26,8 @@ object IUsageRecordSummariesItem {
     subscription_item: String,
     total_usage: Double
   ): IUsageRecordSummariesItem = {
-    val __obj = js.Dynamic.literal(id = id, invoice = invoice, livemode = livemode, period = period, subscription_item = subscription_item, total_usage = total_usage)
-    __obj.updateDynamic("object")(`object`)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], invoice = invoice.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], period = period.asInstanceOf[js.Any], subscription_item = subscription_item.asInstanceOf[js.Any], total_usage = total_usage.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IUsageRecordSummariesItem]
   }
 }

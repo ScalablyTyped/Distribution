@@ -24,10 +24,10 @@ object InitSettings {
   ): InitSettings = {
     val __obj = js.Dynamic.literal()
     if (above != null) __obj.updateDynamic("above")(above.asInstanceOf[js.Any])
-    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress)
+    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress.asInstanceOf[js.Any])
     if (fadeSpeed != null) __obj.updateDynamic("fadeSpeed")(fadeSpeed.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
-    if (!js.isUndefined(preventDoubleContext)) __obj.updateDynamic("preventDoubleContext")(preventDoubleContext)
+    if (!js.isUndefined(preventDoubleContext)) __obj.updateDynamic("preventDoubleContext")(preventDoubleContext.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitSettings]
   }
 }

@@ -12,7 +12,7 @@ trait MatrixOption extends js.Object {
 object MatrixOption {
   @scala.inline
   def apply(pins: js.Any, devices: Int | Double = null): MatrixOption = {
-    val __obj = js.Dynamic.literal(pins = pins)
+    val __obj = js.Dynamic.literal(pins = pins.asInstanceOf[js.Any])
     if (devices != null) __obj.updateDynamic("devices")(devices.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatrixOption]
   }

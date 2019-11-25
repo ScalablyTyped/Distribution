@@ -29,14 +29,14 @@ object Anon_Address {
     verified_phone: String = null
   ): Anon_Address = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (phone != null) __obj.updateDynamic("phone")(phone)
-    if (verified_address != null) __obj.updateDynamic("verified_address")(verified_address)
-    if (verified_email != null) __obj.updateDynamic("verified_email")(verified_email)
-    if (verified_name != null) __obj.updateDynamic("verified_name")(verified_name)
-    if (verified_phone != null) __obj.updateDynamic("verified_phone")(verified_phone)
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (phone != null) __obj.updateDynamic("phone")(phone.asInstanceOf[js.Any])
+    if (verified_address != null) __obj.updateDynamic("verified_address")(verified_address.asInstanceOf[js.Any])
+    if (verified_email != null) __obj.updateDynamic("verified_email")(verified_email.asInstanceOf[js.Any])
+    if (verified_name != null) __obj.updateDynamic("verified_name")(verified_name.asInstanceOf[js.Any])
+    if (verified_phone != null) __obj.updateDynamic("verified_phone")(verified_phone.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Address]
   }
 }

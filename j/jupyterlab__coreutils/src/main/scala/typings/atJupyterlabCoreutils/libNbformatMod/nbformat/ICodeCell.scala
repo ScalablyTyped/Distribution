@@ -41,7 +41,7 @@ object ICodeCell {
     source: MultilineString,
     execution_count: Int | Double = null
   ): ICodeCell = {
-    val __obj = js.Dynamic.literal(cell_type = cell_type, metadata = metadata, outputs = outputs, source = source.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(cell_type = cell_type.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     if (execution_count != null) __obj.updateDynamic("execution_count")(execution_count.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICodeCell]
   }

@@ -12,7 +12,7 @@ object IWallabyWorkers {
   @scala.inline
   def apply(recycle: js.UndefOr[Boolean] = js.undefined): IWallabyWorkers = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(recycle)) __obj.updateDynamic("recycle")(recycle)
+    if (!js.isUndefined(recycle)) __obj.updateDynamic("recycle")(recycle.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWallabyWorkers]
   }
 }

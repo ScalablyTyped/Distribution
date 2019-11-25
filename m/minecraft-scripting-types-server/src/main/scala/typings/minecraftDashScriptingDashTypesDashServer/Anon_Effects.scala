@@ -33,8 +33,8 @@ object Anon_Effects {
     item: String,
     filters: MinecraftFilter = null
   ): Anon_Effects = {
-    val __obj = js.Dynamic.literal(effects = effects, heal_amount = heal_amount, item = item)
-    if (filters != null) __obj.updateDynamic("filters")(filters)
+    val __obj = js.Dynamic.literal(effects = effects.asInstanceOf[js.Any], heal_amount = heal_amount.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any])
+    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Effects]
   }
 }

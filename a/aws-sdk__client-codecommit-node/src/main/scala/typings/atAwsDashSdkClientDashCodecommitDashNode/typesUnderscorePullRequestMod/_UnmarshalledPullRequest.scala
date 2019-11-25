@@ -40,15 +40,15 @@ object _UnmarshalledPullRequest {
     title: String = null
   ): _UnmarshalledPullRequest = {
     val __obj = js.Dynamic.literal()
-    if (authorArn != null) __obj.updateDynamic("authorArn")(authorArn)
-    if (clientRequestToken != null) __obj.updateDynamic("clientRequestToken")(clientRequestToken)
-    if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (lastActivityDate != null) __obj.updateDynamic("lastActivityDate")(lastActivityDate)
-    if (pullRequestId != null) __obj.updateDynamic("pullRequestId")(pullRequestId)
+    if (authorArn != null) __obj.updateDynamic("authorArn")(authorArn.asInstanceOf[js.Any])
+    if (clientRequestToken != null) __obj.updateDynamic("clientRequestToken")(clientRequestToken.asInstanceOf[js.Any])
+    if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (lastActivityDate != null) __obj.updateDynamic("lastActivityDate")(lastActivityDate.asInstanceOf[js.Any])
+    if (pullRequestId != null) __obj.updateDynamic("pullRequestId")(pullRequestId.asInstanceOf[js.Any])
     if (pullRequestStatus != null) __obj.updateDynamic("pullRequestStatus")(pullRequestStatus.asInstanceOf[js.Any])
-    if (pullRequestTargets != null) __obj.updateDynamic("pullRequestTargets")(pullRequestTargets)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (pullRequestTargets != null) __obj.updateDynamic("pullRequestTargets")(pullRequestTargets.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledPullRequest]
   }
 }

@@ -18,9 +18,9 @@ object RegistrationOptions {
     varargs: js.UndefOr[Boolean] = js.undefined
   ): RegistrationOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deterministic)) __obj.updateDynamic("deterministic")(deterministic)
-    if (!js.isUndefined(safeIntegers)) __obj.updateDynamic("safeIntegers")(safeIntegers)
-    if (!js.isUndefined(varargs)) __obj.updateDynamic("varargs")(varargs)
+    if (!js.isUndefined(deterministic)) __obj.updateDynamic("deterministic")(deterministic.asInstanceOf[js.Any])
+    if (!js.isUndefined(safeIntegers)) __obj.updateDynamic("safeIntegers")(safeIntegers.asInstanceOf[js.Any])
+    if (!js.isUndefined(varargs)) __obj.updateDynamic("varargs")(varargs.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegistrationOptions]
   }
 }

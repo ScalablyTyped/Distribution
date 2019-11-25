@@ -15,7 +15,7 @@ object BuildProcess {
   @scala.inline
   def apply(`type`: Double): BuildProcess = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildProcess]
   }
 }

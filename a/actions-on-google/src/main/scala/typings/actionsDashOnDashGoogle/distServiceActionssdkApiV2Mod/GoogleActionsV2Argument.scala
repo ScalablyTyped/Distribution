@@ -81,17 +81,17 @@ object GoogleActionsV2Argument {
     textValue: String = null
   ): GoogleActionsV2Argument = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(boolValue)) __obj.updateDynamic("boolValue")(boolValue)
-    if (datetimeValue != null) __obj.updateDynamic("datetimeValue")(datetimeValue)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (!js.isUndefined(boolValue)) __obj.updateDynamic("boolValue")(boolValue.asInstanceOf[js.Any])
+    if (datetimeValue != null) __obj.updateDynamic("datetimeValue")(datetimeValue.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
     if (floatValue != null) __obj.updateDynamic("floatValue")(floatValue.asInstanceOf[js.Any])
-    if (intValue != null) __obj.updateDynamic("intValue")(intValue)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (placeValue != null) __obj.updateDynamic("placeValue")(placeValue)
-    if (rawText != null) __obj.updateDynamic("rawText")(rawText)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (structuredValue != null) __obj.updateDynamic("structuredValue")(structuredValue)
-    if (textValue != null) __obj.updateDynamic("textValue")(textValue)
+    if (intValue != null) __obj.updateDynamic("intValue")(intValue.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (placeValue != null) __obj.updateDynamic("placeValue")(placeValue.asInstanceOf[js.Any])
+    if (rawText != null) __obj.updateDynamic("rawText")(rawText.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (structuredValue != null) __obj.updateDynamic("structuredValue")(structuredValue.asInstanceOf[js.Any])
+    if (textValue != null) __obj.updateDynamic("textValue")(textValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2Argument]
   }
 }

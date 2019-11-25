@@ -23,10 +23,10 @@ object Anon_CaseSensitive {
     $diacriticSensitive: js.UndefOr[Boolean] = js.undefined,
     $language: String = null
   ): Anon_CaseSensitive = {
-    val __obj = js.Dynamic.literal($search = $search)
-    if (!js.isUndefined($caseSensitive)) __obj.updateDynamic("$caseSensitive")($caseSensitive)
-    if (!js.isUndefined($diacriticSensitive)) __obj.updateDynamic("$diacriticSensitive")($diacriticSensitive)
-    if ($language != null) __obj.updateDynamic("$language")($language)
+    val __obj = js.Dynamic.literal($search = $search.asInstanceOf[js.Any])
+    if (!js.isUndefined($caseSensitive)) __obj.updateDynamic("$caseSensitive")($caseSensitive.asInstanceOf[js.Any])
+    if (!js.isUndefined($diacriticSensitive)) __obj.updateDynamic("$diacriticSensitive")($diacriticSensitive.asInstanceOf[js.Any])
+    if ($language != null) __obj.updateDynamic("$language")($language.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CaseSensitive]
   }
 }

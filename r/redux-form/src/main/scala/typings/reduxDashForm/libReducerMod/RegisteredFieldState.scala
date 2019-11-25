@@ -13,8 +13,8 @@ trait RegisteredFieldState extends js.Object {
 object RegisteredFieldState {
   @scala.inline
   def apply(name: String, `type`: FieldType): RegisteredFieldState = {
-    val __obj = js.Dynamic.literal(name = name)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisteredFieldState]
   }
 }

@@ -23,8 +23,8 @@ object TrafficSource {
   @scala.inline
   def apply(trafficSourceId: String = null, trafficSubId: String = null): TrafficSource = {
     val __obj = js.Dynamic.literal()
-    if (trafficSourceId != null) __obj.updateDynamic("trafficSourceId")(trafficSourceId)
-    if (trafficSubId != null) __obj.updateDynamic("trafficSubId")(trafficSubId)
+    if (trafficSourceId != null) __obj.updateDynamic("trafficSourceId")(trafficSourceId.asInstanceOf[js.Any])
+    if (trafficSubId != null) __obj.updateDynamic("trafficSubId")(trafficSubId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrafficSource]
   }
 }

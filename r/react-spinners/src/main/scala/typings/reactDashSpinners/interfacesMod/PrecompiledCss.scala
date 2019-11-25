@@ -12,7 +12,7 @@ trait PrecompiledCss extends js.Object {
 object PrecompiledCss {
   @scala.inline
   def apply(name: String, styles: String): PrecompiledCss = {
-    val __obj = js.Dynamic.literal(name = name, styles = styles)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PrecompiledCss]
   }

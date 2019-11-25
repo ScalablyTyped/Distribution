@@ -23,10 +23,10 @@ object SelectionInfo {
     nativeEvent: Event = null,
     record: T = null
   ): SelectionInfo[T] = {
-    val __obj = js.Dynamic.literal(selectWay = selectWay)
-    if (changeRowKeys != null) __obj.updateDynamic("changeRowKeys")(changeRowKeys)
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
-    if (nativeEvent != null) __obj.updateDynamic("nativeEvent")(nativeEvent)
+    val __obj = js.Dynamic.literal(selectWay = selectWay.asInstanceOf[js.Any])
+    if (changeRowKeys != null) __obj.updateDynamic("changeRowKeys")(changeRowKeys.asInstanceOf[js.Any])
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
+    if (nativeEvent != null) __obj.updateDynamic("nativeEvent")(nativeEvent.asInstanceOf[js.Any])
     if (record != null) __obj.updateDynamic("record")(record.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectionInfo[T]]
   }

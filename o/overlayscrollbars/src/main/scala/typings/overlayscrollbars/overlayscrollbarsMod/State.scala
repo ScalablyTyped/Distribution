@@ -42,7 +42,7 @@ object State {
     viewportSize: Anon_Height,
     widthAuto: Boolean
   ): State = {
-    val __obj = js.Dynamic.literal(autoUpdate = autoUpdate, contentScrollSize = contentScrollSize, destroyed = destroyed, documentMixed = documentMixed, hasOverflow = hasOverflow, heightAuto = heightAuto, hideOverflow = hideOverflow, hostSize = hostSize, overflowAmount = overflowAmount, padding = padding, sleeping = sleeping, viewportSize = viewportSize, widthAuto = widthAuto)
+    val __obj = js.Dynamic.literal(autoUpdate = autoUpdate.asInstanceOf[js.Any], contentScrollSize = contentScrollSize.asInstanceOf[js.Any], destroyed = destroyed.asInstanceOf[js.Any], documentMixed = documentMixed.asInstanceOf[js.Any], hasOverflow = hasOverflow.asInstanceOf[js.Any], heightAuto = heightAuto.asInstanceOf[js.Any], hideOverflow = hideOverflow.asInstanceOf[js.Any], hostSize = hostSize.asInstanceOf[js.Any], overflowAmount = overflowAmount.asInstanceOf[js.Any], padding = padding.asInstanceOf[js.Any], sleeping = sleeping.asInstanceOf[js.Any], viewportSize = viewportSize.asInstanceOf[js.Any], widthAuto = widthAuto.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[State]
   }

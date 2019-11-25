@@ -19,7 +19,7 @@ object RouterChangeEvent {
     sender: Router,
     url: String
   ): RouterChangeEvent = {
-    val __obj = js.Dynamic.literal(backButtonPressed = backButtonPressed, isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), params = params, preventDefault = preventDefault, sender = sender, url = url)
+    val __obj = js.Dynamic.literal(backButtonPressed = backButtonPressed.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), params = params.asInstanceOf[js.Any], preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RouterChangeEvent]
   }

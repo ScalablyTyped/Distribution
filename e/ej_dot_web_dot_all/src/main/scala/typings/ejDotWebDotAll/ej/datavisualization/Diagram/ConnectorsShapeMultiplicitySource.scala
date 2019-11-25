@@ -28,7 +28,7 @@ object ConnectorsShapeMultiplicitySource {
   ): ConnectorsShapeMultiplicitySource = {
     val __obj = js.Dynamic.literal()
     if (lowerBounds != null) __obj.updateDynamic("lowerBounds")(lowerBounds.asInstanceOf[js.Any])
-    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional)
+    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
     if (upperBounds != null) __obj.updateDynamic("upperBounds")(upperBounds.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectorsShapeMultiplicitySource]
   }

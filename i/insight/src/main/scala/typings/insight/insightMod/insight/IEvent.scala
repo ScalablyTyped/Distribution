@@ -14,8 +14,8 @@ trait IEvent extends js.Object {
 object IEvent {
   @scala.inline
   def apply(action: String, category: String, label: String = null, value: Double | String = null): IEvent = {
-    val __obj = js.Dynamic.literal(action = action, category = category)
-    if (label != null) __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], category = category.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEvent]
   }

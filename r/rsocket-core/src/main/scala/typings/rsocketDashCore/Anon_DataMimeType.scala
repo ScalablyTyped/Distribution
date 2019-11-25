@@ -22,8 +22,8 @@ object Anon_DataMimeType {
     metadataMimeType: String,
     payload: Payload[D, M] = null
   ): Anon_DataMimeType[D, M] = {
-    val __obj = js.Dynamic.literal(dataMimeType = dataMimeType, keepAlive = keepAlive, lifetime = lifetime, metadataMimeType = metadataMimeType)
-    if (payload != null) __obj.updateDynamic("payload")(payload)
+    val __obj = js.Dynamic.literal(dataMimeType = dataMimeType.asInstanceOf[js.Any], keepAlive = keepAlive.asInstanceOf[js.Any], lifetime = lifetime.asInstanceOf[js.Any], metadataMimeType = metadataMimeType.asInstanceOf[js.Any])
+    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DataMimeType[D, M]]
   }
 }

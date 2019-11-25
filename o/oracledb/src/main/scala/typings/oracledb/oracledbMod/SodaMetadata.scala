@@ -54,16 +54,16 @@ object SodaMetadata {
     viewName: String = null
   ): SodaMetadata = {
     val __obj = js.Dynamic.literal()
-    if (contentColumn != null) __obj.updateDynamic("contentColumn")(contentColumn)
-    if (creationTimeColumn != null) __obj.updateDynamic("creationTimeColumn")(creationTimeColumn)
-    if (keyColumn != null) __obj.updateDynamic("keyColumn")(keyColumn)
-    if (lastModifiedColumn != null) __obj.updateDynamic("lastModifiedColumn")(lastModifiedColumn)
-    if (mediaTypeColumn != null) __obj.updateDynamic("mediaTypeColumn")(mediaTypeColumn)
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
-    if (schemaName != null) __obj.updateDynamic("schemaName")(schemaName)
-    if (tableName != null) __obj.updateDynamic("tableName")(tableName)
-    if (versionColumn != null) __obj.updateDynamic("versionColumn")(versionColumn)
-    if (viewName != null) __obj.updateDynamic("viewName")(viewName)
+    if (contentColumn != null) __obj.updateDynamic("contentColumn")(contentColumn.asInstanceOf[js.Any])
+    if (creationTimeColumn != null) __obj.updateDynamic("creationTimeColumn")(creationTimeColumn.asInstanceOf[js.Any])
+    if (keyColumn != null) __obj.updateDynamic("keyColumn")(keyColumn.asInstanceOf[js.Any])
+    if (lastModifiedColumn != null) __obj.updateDynamic("lastModifiedColumn")(lastModifiedColumn.asInstanceOf[js.Any])
+    if (mediaTypeColumn != null) __obj.updateDynamic("mediaTypeColumn")(mediaTypeColumn.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (schemaName != null) __obj.updateDynamic("schemaName")(schemaName.asInstanceOf[js.Any])
+    if (tableName != null) __obj.updateDynamic("tableName")(tableName.asInstanceOf[js.Any])
+    if (versionColumn != null) __obj.updateDynamic("versionColumn")(versionColumn.asInstanceOf[js.Any])
+    if (viewName != null) __obj.updateDynamic("viewName")(viewName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SodaMetadata]
   }
 }

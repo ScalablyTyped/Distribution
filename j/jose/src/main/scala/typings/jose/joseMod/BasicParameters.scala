@@ -15,10 +15,10 @@ object BasicParameters {
   @scala.inline
   def apply(alg: String = null, key_ops: js.Array[keyOperation] = null, kid: String = null, use: use = null): BasicParameters = {
     val __obj = js.Dynamic.literal()
-    if (alg != null) __obj.updateDynamic("alg")(alg)
-    if (key_ops != null) __obj.updateDynamic("key_ops")(key_ops)
-    if (kid != null) __obj.updateDynamic("kid")(kid)
-    if (use != null) __obj.updateDynamic("use")(use)
+    if (alg != null) __obj.updateDynamic("alg")(alg.asInstanceOf[js.Any])
+    if (key_ops != null) __obj.updateDynamic("key_ops")(key_ops.asInstanceOf[js.Any])
+    if (kid != null) __obj.updateDynamic("kid")(kid.asInstanceOf[js.Any])
+    if (use != null) __obj.updateDynamic("use")(use.asInstanceOf[js.Any])
     __obj.asInstanceOf[BasicParameters]
   }
 }

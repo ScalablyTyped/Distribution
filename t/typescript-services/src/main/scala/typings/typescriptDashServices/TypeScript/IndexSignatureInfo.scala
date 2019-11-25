@@ -12,7 +12,7 @@ trait IndexSignatureInfo extends js.Object {
 object IndexSignatureInfo {
   @scala.inline
   def apply(numericSignature: PullSignatureSymbol, stringSignature: PullSignatureSymbol): IndexSignatureInfo = {
-    val __obj = js.Dynamic.literal(numericSignature = numericSignature, stringSignature = stringSignature)
+    val __obj = js.Dynamic.literal(numericSignature = numericSignature.asInstanceOf[js.Any], stringSignature = stringSignature.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IndexSignatureInfo]
   }

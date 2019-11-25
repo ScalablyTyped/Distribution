@@ -15,8 +15,8 @@ object LogUpdateOutputStrategyOptions {
   @scala.inline
   def apply(colors: Colors = null, stream: WritableStream = null): LogUpdateOutputStrategyOptions = {
     val __obj = js.Dynamic.literal()
-    if (colors != null) __obj.updateDynamic("colors")(colors)
-    if (stream != null) __obj.updateDynamic("stream")(stream)
+    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
+    if (stream != null) __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogUpdateOutputStrategyOptions]
   }
 }

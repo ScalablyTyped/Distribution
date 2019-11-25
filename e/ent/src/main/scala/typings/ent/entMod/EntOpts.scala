@@ -27,9 +27,9 @@ object EntOpts {
     special: js.Any = null
   ): EntOpts = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(named)) __obj.updateDynamic("named")(named)
-    if (!js.isUndefined(numeric)) __obj.updateDynamic("numeric")(numeric)
-    if (special != null) __obj.updateDynamic("special")(special)
+    if (!js.isUndefined(named)) __obj.updateDynamic("named")(named.asInstanceOf[js.Any])
+    if (!js.isUndefined(numeric)) __obj.updateDynamic("numeric")(numeric.asInstanceOf[js.Any])
+    if (special != null) __obj.updateDynamic("special")(special.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntOpts]
   }
 }

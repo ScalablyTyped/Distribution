@@ -22,9 +22,9 @@ object InterceptorOptions {
   ): InterceptorOptions = {
     val __obj = js.Dynamic.literal()
     if (getToken != null) __obj.updateDynamic("getToken")(js.Any.fromFunction0(getToken))
-    if (header != null) __obj.updateDynamic("header")(header)
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     if (headerFormatter != null) __obj.updateDynamic("headerFormatter")(js.Any.fromFunction1(headerFormatter))
-    if (token != null) __obj.updateDynamic("token")(token)
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     __obj.asInstanceOf[InterceptorOptions]
   }
 }

@@ -23,9 +23,9 @@ object MetadataOptions {
   @scala.inline
   def apply(fillExcept: js.Array[String] = null, fillWith: js.Array[String] = null, key: String = null): MetadataOptions = {
     val __obj = js.Dynamic.literal()
-    if (fillExcept != null) __obj.updateDynamic("fillExcept")(fillExcept)
-    if (fillWith != null) __obj.updateDynamic("fillWith")(fillWith)
-    if (key != null) __obj.updateDynamic("key")(key)
+    if (fillExcept != null) __obj.updateDynamic("fillExcept")(fillExcept.asInstanceOf[js.Any])
+    if (fillWith != null) __obj.updateDynamic("fillWith")(fillWith.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetadataOptions]
   }
 }

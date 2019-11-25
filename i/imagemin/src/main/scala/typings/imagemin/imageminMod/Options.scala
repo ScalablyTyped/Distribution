@@ -13,9 +13,9 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(plugins: js.Array[Plugin], destination: String = null, glob: js.UndefOr[Boolean] = js.undefined): Options = {
-    val __obj = js.Dynamic.literal(plugins = plugins)
-    if (destination != null) __obj.updateDynamic("destination")(destination)
-    if (!js.isUndefined(glob)) __obj.updateDynamic("glob")(glob)
+    val __obj = js.Dynamic.literal(plugins = plugins.asInstanceOf[js.Any])
+    if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
+    if (!js.isUndefined(glob)) __obj.updateDynamic("glob")(glob.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -34,7 +34,7 @@ package object reactDashBootstrapDashTypeaheadMod {
     TypeaheadProps[js.Any], 
     align | dropup | flip | onMenuHide | onMenuShow | onMenuToggle
   ]
-  type StringPropertyNames[T /* <: js.Object */] = /* import warning: ImportType.apply Failed type conversion: {[ K in keyof T ]: T[K] extends string? K : never}[keyof T] */ js.Any
+  type StringPropertyNames[T /* <: js.Object */] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends string? K : never}[keyof T] */ js.Any
   type TypeaheadInputProps[T /* <: TypeaheadModel */] = Pick[TypeaheadProps[T], TypeaheadInputPropKeys]
   type TypeaheadLabelKey[T /* <: TypeaheadModel */] = StringPropertyNames[T] | (js.Function1[/* option */ T, String])
   type TypeaheadModel = String | js.Object

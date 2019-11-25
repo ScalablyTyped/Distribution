@@ -14,3 +14,20 @@ import scala.scalajs.js.annotation._
 */
 trait RegressionMethod extends js.Object
 
+object RegressionMethod {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def exp: typings.vegaDashTypings.vegaDashTypingsStrings.exp = this.cast("exp")
+  @scala.inline
+  def linear: typings.vegaDashTypings.vegaDashTypingsStrings.linear = this.cast("linear")
+  @scala.inline
+  def log: typings.vegaDashTypings.vegaDashTypingsStrings.log = this.cast("log")
+  @scala.inline
+  def poly: typings.vegaDashTypings.vegaDashTypingsStrings.poly = this.cast("poly")
+  @scala.inline
+  def pow: typings.vegaDashTypings.vegaDashTypingsStrings.pow = this.cast("pow")
+  @scala.inline
+  def quad: typings.vegaDashTypings.vegaDashTypingsStrings.quad = this.cast("quad")
+}
+

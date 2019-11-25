@@ -58,21 +58,21 @@ object Options {
     use: js.Array[_] = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (append != null) __obj.updateDynamic("append")(append)
-    if (!js.isUndefined(camelCase)) __obj.updateDynamic("camelCase")(camelCase)
-    if (createImportedName != null) __obj.updateDynamic("createImportedName")(createImportedName)
-    if (!js.isUndefined(devMode)) __obj.updateDynamic("devMode")(devMode)
+    if (append != null) __obj.updateDynamic("append")(append.asInstanceOf[js.Any])
+    if (!js.isUndefined(camelCase)) __obj.updateDynamic("camelCase")(camelCase.asInstanceOf[js.Any])
+    if (createImportedName != null) __obj.updateDynamic("createImportedName")(createImportedName.asInstanceOf[js.Any])
+    if (!js.isUndefined(devMode)) __obj.updateDynamic("devMode")(devMode.asInstanceOf[js.Any])
     if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     if (generateScopedName != null) __obj.updateDynamic("generateScopedName")(generateScopedName.asInstanceOf[js.Any])
-    if (hashPrefix != null) __obj.updateDynamic("hashPrefix")(hashPrefix)
+    if (hashPrefix != null) __obj.updateDynamic("hashPrefix")(hashPrefix.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode)
-    if (prepend != null) __obj.updateDynamic("prepend")(prepend)
-    if (preprocessCss != null) __obj.updateDynamic("preprocessCss")(preprocessCss)
-    if (processCss != null) __obj.updateDynamic("processCss")(processCss)
-    if (processorOpts != null) __obj.updateDynamic("processorOpts")(processorOpts)
-    if (rootDir != null) __obj.updateDynamic("rootDir")(rootDir)
-    if (use != null) __obj.updateDynamic("use")(use)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (prepend != null) __obj.updateDynamic("prepend")(prepend.asInstanceOf[js.Any])
+    if (preprocessCss != null) __obj.updateDynamic("preprocessCss")(preprocessCss.asInstanceOf[js.Any])
+    if (processCss != null) __obj.updateDynamic("processCss")(processCss.asInstanceOf[js.Any])
+    if (processorOpts != null) __obj.updateDynamic("processorOpts")(processorOpts.asInstanceOf[js.Any])
+    if (rootDir != null) __obj.updateDynamic("rootDir")(rootDir.asInstanceOf[js.Any])
+    if (use != null) __obj.updateDynamic("use")(use.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

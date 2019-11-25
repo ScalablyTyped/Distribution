@@ -15,7 +15,7 @@ trait Anon_CancelIsRefreshMap extends js.Object {
 object Anon_CancelIsRefreshMap {
   @scala.inline
   def apply(Cancel: Boolean, IsRefresh: Boolean, Map: XmlMap, Url: String): Anon_CancelIsRefreshMap = {
-    val __obj = js.Dynamic.literal(Cancel = Cancel, IsRefresh = IsRefresh, Map = Map, Url = Url)
+    val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], IsRefresh = IsRefresh.asInstanceOf[js.Any], Map = Map.asInstanceOf[js.Any], Url = Url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CancelIsRefreshMap]
   }

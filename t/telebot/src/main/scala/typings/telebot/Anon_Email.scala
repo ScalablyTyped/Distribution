@@ -20,10 +20,10 @@ object Anon_Email {
     shippingAddress: js.UndefOr[Boolean] = js.undefined
   ): Anon_Email = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(email)) __obj.updateDynamic("email")(email)
-    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(phoneNumber)) __obj.updateDynamic("phoneNumber")(phoneNumber)
-    if (!js.isUndefined(shippingAddress)) __obj.updateDynamic("shippingAddress")(shippingAddress)
+    if (!js.isUndefined(email)) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(phoneNumber)) __obj.updateDynamic("phoneNumber")(phoneNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(shippingAddress)) __obj.updateDynamic("shippingAddress")(shippingAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Email]
   }
 }

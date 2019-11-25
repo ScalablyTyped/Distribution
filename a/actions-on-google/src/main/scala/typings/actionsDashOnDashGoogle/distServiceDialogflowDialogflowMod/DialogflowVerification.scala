@@ -32,7 +32,7 @@ object DialogflowVerification {
     error: String | (js.Function1[/* error */ String, String]) = null,
     status: Int | Double = null
   ): DialogflowVerification = {
-    val __obj = js.Dynamic.literal(headers = headers)
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogflowVerification]

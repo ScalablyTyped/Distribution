@@ -32,14 +32,14 @@ object Anon_AutoMove {
     size: Size = null
   ): Anon_AutoMove = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoMove)) __obj.updateDynamic("autoMove")(autoMove)
-    if (!js.isUndefined(closeWhenClickMap)) __obj.updateDynamic("closeWhenClickMap")(closeWhenClickMap)
+    if (!js.isUndefined(autoMove)) __obj.updateDynamic("autoMove")(autoMove.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeWhenClickMap)) __obj.updateDynamic("closeWhenClickMap")(closeWhenClickMap.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (!js.isUndefined(isCustom)) __obj.updateDynamic("isCustom")(isCustom)
-    if (offset != null) __obj.updateDynamic("offset")(offset)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (!js.isUndefined(showShadow)) __obj.updateDynamic("showShadow")(showShadow)
-    if (size != null) __obj.updateDynamic("size")(size)
+    if (!js.isUndefined(isCustom)) __obj.updateDynamic("isCustom")(isCustom.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(showShadow)) __obj.updateDynamic("showShadow")(showShadow.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AutoMove]
   }
 }

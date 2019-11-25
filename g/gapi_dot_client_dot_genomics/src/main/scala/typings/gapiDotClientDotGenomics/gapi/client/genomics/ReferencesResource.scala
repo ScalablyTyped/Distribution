@@ -40,7 +40,7 @@ object ReferencesResource {
     get: Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPpPrettyPrint => Request[Reference],
     search: Anon_Accesstoken => Request[SearchReferencesResponse]
   ): ReferencesResource = {
-    val __obj = js.Dynamic.literal(bases = bases, get = js.Any.fromFunction1(get), search = js.Any.fromFunction1(search))
+    val __obj = js.Dynamic.literal(bases = bases.asInstanceOf[js.Any], get = js.Any.fromFunction1(get), search = js.Any.fromFunction1(search))
   
     __obj.asInstanceOf[ReferencesResource]
   }

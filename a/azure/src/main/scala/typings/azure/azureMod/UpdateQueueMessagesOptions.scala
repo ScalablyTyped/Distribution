@@ -17,9 +17,9 @@ object UpdateQueueMessagesOptions {
     timeoutIntervalInMs: Int | Double = null
   ): UpdateQueueMessagesOptions = {
     val __obj = js.Dynamic.literal()
-    if (locationMode != null) __obj.updateDynamic("locationMode")(locationMode)
+    if (locationMode != null) __obj.updateDynamic("locationMode")(locationMode.asInstanceOf[js.Any])
     if (maximumExecutionTimeInMs != null) __obj.updateDynamic("maximumExecutionTimeInMs")(maximumExecutionTimeInMs.asInstanceOf[js.Any])
-    if (messagetext != null) __obj.updateDynamic("messagetext")(messagetext)
+    if (messagetext != null) __obj.updateDynamic("messagetext")(messagetext.asInstanceOf[js.Any])
     if (timeoutIntervalInMs != null) __obj.updateDynamic("timeoutIntervalInMs")(timeoutIntervalInMs.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateQueueMessagesOptions]
   }

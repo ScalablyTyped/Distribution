@@ -25,12 +25,12 @@ object Options {
     secretAccessKey: String = null,
     sqs: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SQS */ js.Any = null
   ): Options = {
-    val __obj = js.Dynamic.literal(queueUrl = queueUrl)
-    if (accessKeyId != null) __obj.updateDynamic("accessKeyId")(accessKeyId)
+    val __obj = js.Dynamic.literal(queueUrl = queueUrl.asInstanceOf[js.Any])
+    if (accessKeyId != null) __obj.updateDynamic("accessKeyId")(accessKeyId.asInstanceOf[js.Any])
     if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region)
-    if (secretAccessKey != null) __obj.updateDynamic("secretAccessKey")(secretAccessKey)
-    if (sqs != null) __obj.updateDynamic("sqs")(sqs)
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    if (secretAccessKey != null) __obj.updateDynamic("secretAccessKey")(secretAccessKey.asInstanceOf[js.Any])
+    if (sqs != null) __obj.updateDynamic("sqs")(sqs.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

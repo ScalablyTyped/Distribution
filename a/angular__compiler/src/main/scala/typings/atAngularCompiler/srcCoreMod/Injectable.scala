@@ -25,12 +25,12 @@ object Injectable {
     useValue: js.Any = null
   ): Injectable = {
     val __obj = js.Dynamic.literal()
-    if (deps != null) __obj.updateDynamic("deps")(deps)
+    if (deps != null) __obj.updateDynamic("deps")(deps.asInstanceOf[js.Any])
     if (providedIn != null) __obj.updateDynamic("providedIn")(providedIn.asInstanceOf[js.Any])
     if (useClass != null) __obj.updateDynamic("useClass")(useClass.asInstanceOf[js.Any])
     if (useExisting != null) __obj.updateDynamic("useExisting")(useExisting.asInstanceOf[js.Any])
     if (useFactory != null) __obj.updateDynamic("useFactory")(useFactory.asInstanceOf[js.Any])
-    if (useValue != null) __obj.updateDynamic("useValue")(useValue)
+    if (useValue != null) __obj.updateDynamic("useValue")(useValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[Injectable]
   }
 }

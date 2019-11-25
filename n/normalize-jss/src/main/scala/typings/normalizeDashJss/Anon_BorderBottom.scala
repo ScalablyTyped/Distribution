@@ -12,7 +12,7 @@ trait Anon_BorderBottom extends js.Object {
 object Anon_BorderBottom {
   @scala.inline
   def apply(borderBottom: String, textDecoration: String): Anon_BorderBottom = {
-    val __obj = js.Dynamic.literal(borderBottom = borderBottom, textDecoration = textDecoration)
+    val __obj = js.Dynamic.literal(borderBottom = borderBottom.asInstanceOf[js.Any], textDecoration = textDecoration.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BorderBottom]
   }

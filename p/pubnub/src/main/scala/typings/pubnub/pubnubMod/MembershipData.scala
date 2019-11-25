@@ -23,8 +23,8 @@ object MembershipData {
     userId: String,
     custom: js.Object = null
   ): MembershipData = {
-    val __obj = js.Dynamic.literal(created = created, eTag = eTag, spaceId = spaceId, updated = updated, userId = userId)
-    if (custom != null) __obj.updateDynamic("custom")(custom)
+    val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], eTag = eTag.asInstanceOf[js.Any], spaceId = spaceId.asInstanceOf[js.Any], updated = updated.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
+    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
     __obj.asInstanceOf[MembershipData]
   }
 }

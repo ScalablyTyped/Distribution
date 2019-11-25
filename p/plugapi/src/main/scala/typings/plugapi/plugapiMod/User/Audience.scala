@@ -37,7 +37,7 @@ object Audience {
     vote: Double,
     xp: Double
   ): Audience = {
-    val __obj = js.Dynamic.literal(avatarID = avatarID, badge = badge, blurp = blurp, gRole = gRole, grab = grab, id = id, ignores = ignores, joined = joined, language = language, level = level, notifications = notifications, pp = pp, pw = pw, role = role, slug = slug, status = status, sub = sub, username = username, vote = vote, xp = xp)
+    val __obj = js.Dynamic.literal(avatarID = avatarID.asInstanceOf[js.Any], badge = badge.asInstanceOf[js.Any], blurp = blurp.asInstanceOf[js.Any], gRole = gRole.asInstanceOf[js.Any], grab = grab.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], ignores = ignores.asInstanceOf[js.Any], joined = joined.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], notifications = notifications.asInstanceOf[js.Any], pp = pp.asInstanceOf[js.Any], pw = pw.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], sub = sub.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any], vote = vote.asInstanceOf[js.Any], xp = xp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Audience]
   }

@@ -18,8 +18,8 @@ object GooglePrivacyDlpV2beta1AnalyzeDataSourceRiskRequest {
     sourceTable: GooglePrivacyDlpV2beta1BigQueryTable = null
   ): GooglePrivacyDlpV2beta1AnalyzeDataSourceRiskRequest = {
     val __obj = js.Dynamic.literal()
-    if (privacyMetric != null) __obj.updateDynamic("privacyMetric")(privacyMetric)
-    if (sourceTable != null) __obj.updateDynamic("sourceTable")(sourceTable)
+    if (privacyMetric != null) __obj.updateDynamic("privacyMetric")(privacyMetric.asInstanceOf[js.Any])
+    if (sourceTable != null) __obj.updateDynamic("sourceTable")(sourceTable.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1AnalyzeDataSourceRiskRequest]
   }
 }

@@ -25,7 +25,7 @@ object ICommandManager {
     platform: String,
     bindKey: (/* bindKey */ js.Any, /* command */ js.Any) => Unit = null
   ): ICommandManager = {
-    val __obj = js.Dynamic.literal(addCommand = js.Any.fromFunction1(addCommand), addCommands = js.Any.fromFunction1(addCommands), byName = byName, commands = commands, exec = js.Any.fromFunction3(exec), platform = platform)
+    val __obj = js.Dynamic.literal(addCommand = js.Any.fromFunction1(addCommand), addCommands = js.Any.fromFunction1(addCommands), byName = byName.asInstanceOf[js.Any], commands = commands.asInstanceOf[js.Any], exec = js.Any.fromFunction3(exec), platform = platform.asInstanceOf[js.Any])
     if (bindKey != null) __obj.updateDynamic("bindKey")(js.Any.fromFunction2(bindKey))
     __obj.asInstanceOf[ICommandManager]
   }

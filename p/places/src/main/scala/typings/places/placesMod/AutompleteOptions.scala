@@ -15,7 +15,7 @@ trait AutompleteOptions extends js.Object {
 object AutompleteOptions {
   @scala.inline
   def apply(autoselect: Boolean, cssClasses: Anon_Prefix, debug: Boolean, hint: Boolean): AutompleteOptions = {
-    val __obj = js.Dynamic.literal(autoselect = autoselect, cssClasses = cssClasses, debug = debug, hint = hint)
+    val __obj = js.Dynamic.literal(autoselect = autoselect.asInstanceOf[js.Any], cssClasses = cssClasses.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], hint = hint.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AutompleteOptions]
   }

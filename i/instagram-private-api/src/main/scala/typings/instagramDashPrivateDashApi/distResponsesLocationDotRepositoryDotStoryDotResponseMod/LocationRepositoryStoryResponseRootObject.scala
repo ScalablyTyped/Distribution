@@ -12,7 +12,7 @@ trait LocationRepositoryStoryResponseRootObject extends js.Object {
 object LocationRepositoryStoryResponseRootObject {
   @scala.inline
   def apply(status: String, story: LocationRepositoryStoryResponseStory): LocationRepositoryStoryResponseRootObject = {
-    val __obj = js.Dynamic.literal(status = status, story = story)
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], story = story.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LocationRepositoryStoryResponseRootObject]
   }

@@ -12,7 +12,7 @@ object Anon_Skip {
   @scala.inline
   def apply(skip: js.Array[String] = null): Anon_Skip = {
     val __obj = js.Dynamic.literal()
-    if (skip != null) __obj.updateDynamic("skip")(skip)
+    if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Skip]
   }
 }

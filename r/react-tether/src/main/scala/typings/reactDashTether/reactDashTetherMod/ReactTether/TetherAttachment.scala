@@ -12,7 +12,7 @@ trait TetherAttachment extends js.Object {
 object TetherAttachment {
   @scala.inline
   def apply(left: String, top: String): TetherAttachment = {
-    val __obj = js.Dynamic.literal(left = left, top = top)
+    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TetherAttachment]
   }

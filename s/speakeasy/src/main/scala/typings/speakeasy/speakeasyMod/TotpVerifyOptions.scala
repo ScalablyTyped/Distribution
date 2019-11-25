@@ -59,11 +59,11 @@ object TotpVerifyOptions {
     time: Int | Double = null,
     window: Int | Double = null
   ): TotpVerifyOptions = {
-    val __obj = js.Dynamic.literal(secret = secret, token = token)
-    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm)
+    val __obj = js.Dynamic.literal(secret = secret.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
+    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
     if (counter != null) __obj.updateDynamic("counter")(counter.asInstanceOf[js.Any])
     if (digits != null) __obj.updateDynamic("digits")(digits.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (epoch != null) __obj.updateDynamic("epoch")(epoch.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])

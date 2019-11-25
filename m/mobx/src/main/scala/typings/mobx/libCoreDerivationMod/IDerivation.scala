@@ -43,9 +43,9 @@ object IDerivation {
     newObserving: js.Array[IObservable] = null,
     requiresObservable: js.UndefOr[Boolean] = js.undefined
   ): IDerivation = {
-    val __obj = js.Dynamic.literal(__mapid = __mapid, dependenciesState = dependenciesState, isTracing = isTracing, name = name, observing = observing, onBecomeStale = js.Any.fromFunction0(onBecomeStale), runId = runId, unboundDepsCount = unboundDepsCount)
-    if (newObserving != null) __obj.updateDynamic("newObserving")(newObserving)
-    if (!js.isUndefined(requiresObservable)) __obj.updateDynamic("requiresObservable")(requiresObservable)
+    val __obj = js.Dynamic.literal(__mapid = __mapid.asInstanceOf[js.Any], dependenciesState = dependenciesState.asInstanceOf[js.Any], isTracing = isTracing.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], observing = observing.asInstanceOf[js.Any], onBecomeStale = js.Any.fromFunction0(onBecomeStale), runId = runId.asInstanceOf[js.Any], unboundDepsCount = unboundDepsCount.asInstanceOf[js.Any])
+    if (newObserving != null) __obj.updateDynamic("newObserving")(newObserving.asInstanceOf[js.Any])
+    if (!js.isUndefined(requiresObservable)) __obj.updateDynamic("requiresObservable")(requiresObservable.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDerivation]
   }
 }

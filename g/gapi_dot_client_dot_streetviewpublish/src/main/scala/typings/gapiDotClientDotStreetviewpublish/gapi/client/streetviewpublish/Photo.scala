@@ -62,16 +62,16 @@ object Photo {
     viewCount: String = null
   ): Photo = {
     val __obj = js.Dynamic.literal()
-    if (captureTime != null) __obj.updateDynamic("captureTime")(captureTime)
-    if (connections != null) __obj.updateDynamic("connections")(connections)
-    if (downloadUrl != null) __obj.updateDynamic("downloadUrl")(downloadUrl)
-    if (photoId != null) __obj.updateDynamic("photoId")(photoId)
-    if (places != null) __obj.updateDynamic("places")(places)
-    if (pose != null) __obj.updateDynamic("pose")(pose)
-    if (shareLink != null) __obj.updateDynamic("shareLink")(shareLink)
-    if (thumbnailUrl != null) __obj.updateDynamic("thumbnailUrl")(thumbnailUrl)
-    if (uploadReference != null) __obj.updateDynamic("uploadReference")(uploadReference)
-    if (viewCount != null) __obj.updateDynamic("viewCount")(viewCount)
+    if (captureTime != null) __obj.updateDynamic("captureTime")(captureTime.asInstanceOf[js.Any])
+    if (connections != null) __obj.updateDynamic("connections")(connections.asInstanceOf[js.Any])
+    if (downloadUrl != null) __obj.updateDynamic("downloadUrl")(downloadUrl.asInstanceOf[js.Any])
+    if (photoId != null) __obj.updateDynamic("photoId")(photoId.asInstanceOf[js.Any])
+    if (places != null) __obj.updateDynamic("places")(places.asInstanceOf[js.Any])
+    if (pose != null) __obj.updateDynamic("pose")(pose.asInstanceOf[js.Any])
+    if (shareLink != null) __obj.updateDynamic("shareLink")(shareLink.asInstanceOf[js.Any])
+    if (thumbnailUrl != null) __obj.updateDynamic("thumbnailUrl")(thumbnailUrl.asInstanceOf[js.Any])
+    if (uploadReference != null) __obj.updateDynamic("uploadReference")(uploadReference.asInstanceOf[js.Any])
+    if (viewCount != null) __obj.updateDynamic("viewCount")(viewCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[Photo]
   }
 }

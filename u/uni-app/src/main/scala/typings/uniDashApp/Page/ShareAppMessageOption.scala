@@ -27,8 +27,8 @@ trait ShareAppMessageOption extends js.Object {
 object ShareAppMessageOption {
   @scala.inline
   def apply(from: button | menu, target: js.Any, webViewUrl: String = null): ShareAppMessageOption = {
-    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], target = target)
-    if (webViewUrl != null) __obj.updateDynamic("webViewUrl")(webViewUrl)
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    if (webViewUrl != null) __obj.updateDynamic("webViewUrl")(webViewUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShareAppMessageOption]
   }
 }

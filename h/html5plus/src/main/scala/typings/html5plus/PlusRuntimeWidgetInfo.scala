@@ -80,15 +80,15 @@ object PlusRuntimeWidgetInfo {
     version: String = null
   ): PlusRuntimeWidgetInfo = {
     val __obj = js.Dynamic.literal()
-    if (appid != null) __obj.updateDynamic("appid")(appid)
-    if (author != null) __obj.updateDynamic("author")(author)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (features != null) __obj.updateDynamic("features")(features)
-    if (license != null) __obj.updateDynamic("license")(license)
-    if (licensehref != null) __obj.updateDynamic("licensehref")(licensehref)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (appid != null) __obj.updateDynamic("appid")(appid.asInstanceOf[js.Any])
+    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
+    if (license != null) __obj.updateDynamic("license")(license.asInstanceOf[js.Any])
+    if (licensehref != null) __obj.updateDynamic("licensehref")(licensehref.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusRuntimeWidgetInfo]
   }
 }

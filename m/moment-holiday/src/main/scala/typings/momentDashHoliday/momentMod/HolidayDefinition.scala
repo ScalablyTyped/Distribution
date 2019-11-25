@@ -23,12 +23,12 @@ object HolidayDefinition {
     regions: js.Array[String] = null,
     regions_n: js.Array[String] = null
   ): HolidayDefinition = {
-    val __obj = js.Dynamic.literal(date = date)
-    if (keywords != null) __obj.updateDynamic("keywords")(keywords)
-    if (keywords_n != null) __obj.updateDynamic("keywords_n")(keywords_n)
-    if (keywords_y != null) __obj.updateDynamic("keywords_y")(keywords_y)
-    if (regions != null) __obj.updateDynamic("regions")(regions)
-    if (regions_n != null) __obj.updateDynamic("regions_n")(regions_n)
+    val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any])
+    if (keywords != null) __obj.updateDynamic("keywords")(keywords.asInstanceOf[js.Any])
+    if (keywords_n != null) __obj.updateDynamic("keywords_n")(keywords_n.asInstanceOf[js.Any])
+    if (keywords_y != null) __obj.updateDynamic("keywords_y")(keywords_y.asInstanceOf[js.Any])
+    if (regions != null) __obj.updateDynamic("regions")(regions.asInstanceOf[js.Any])
+    if (regions_n != null) __obj.updateDynamic("regions_n")(regions_n.asInstanceOf[js.Any])
     __obj.asInstanceOf[HolidayDefinition]
   }
 }

@@ -1,8 +1,5 @@
 package typings.atIonicCore.distTypesComponentsMod.LocalJSX
 
-import typings.atIonicCore.distTypesComponentsNavNavDashInterfaceMod.NavComponent
-import typings.atIonicCore.distTypesComponentsRouterUtilsInterfaceMod.RouterDirection
-import typings.atIonicCore.distTypesInterfaceMod.ComponentProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,28 +8,34 @@ trait IonNavLink extends js.Object {
   /**
     * Component to navigate to. Only used if the `routerDirection` is `"forward"` or `"root"`.
     */
-  var component: js.UndefOr[NavComponent] = js.undefined
+  var component: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any
+  ] = js.undefined
   /**
     * Data you want to pass to the component as props. Only used if the `"routerDirection"` is `"forward"` or `"root"`.
     */
-  var componentProps: js.UndefOr[ComponentProps[Null]] = js.undefined
+  var componentProps: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentProps */ js.Any
+  ] = js.undefined
   /**
     * The transition direction when navigating to another page.
     */
-  var routerDirection: js.UndefOr[RouterDirection] = js.undefined
+  var routerDirection: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterDirection */ js.Any
+  ] = js.undefined
 }
 
 object IonNavLink {
   @scala.inline
   def apply(
-    component: NavComponent = null,
-    componentProps: ComponentProps[Null] = null,
-    routerDirection: RouterDirection = null
+    component: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any = null,
+    componentProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentProps */ js.Any = null,
+    routerDirection: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterDirection */ js.Any = null
   ): IonNavLink = {
     val __obj = js.Dynamic.literal()
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (componentProps != null) __obj.updateDynamic("componentProps")(componentProps)
-    if (routerDirection != null) __obj.updateDynamic("routerDirection")(routerDirection)
+    if (componentProps != null) __obj.updateDynamic("componentProps")(componentProps.asInstanceOf[js.Any])
+    if (routerDirection != null) __obj.updateDynamic("routerDirection")(routerDirection.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonNavLink]
   }
 }

@@ -13,8 +13,8 @@ trait Choice extends js.Object {
 object Choice {
   @scala.inline
   def apply(title: String, value: js.Any, disable: js.UndefOr[Boolean] = js.undefined): Choice = {
-    val __obj = js.Dynamic.literal(title = title, value = value)
-    if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable)
+    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable.asInstanceOf[js.Any])
     __obj.asInstanceOf[Choice]
   }
 }

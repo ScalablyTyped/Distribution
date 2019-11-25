@@ -20,7 +20,7 @@ object ImageDetails {
   @scala.inline
   def apply(format: ImageFormat = null, quality: Int | Double = null): ImageDetails = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageDetails]
   }

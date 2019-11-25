@@ -13,8 +13,8 @@ trait Anon_Extension
 object Anon_Extension {
   @scala.inline
   def apply(extension: String, StringDictionary: /* key */ StringDictionary[js.Any] = null): Anon_Extension = {
-    val __obj = js.Dynamic.literal(extension = extension)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(extension = extension.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_Extension]
   }
 }

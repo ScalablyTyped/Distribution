@@ -20,10 +20,10 @@ object InjectFileDetails {
     frameId: Int | Double = null,
     matchAboutBlank: js.UndefOr[Boolean] = js.undefined
   ): InjectFileDetails = {
-    val __obj = js.Dynamic.literal(cssOrigin = cssOrigin, file = file, runAt = runAt)
-    if (!js.isUndefined(allFrames)) __obj.updateDynamic("allFrames")(allFrames)
+    val __obj = js.Dynamic.literal(cssOrigin = cssOrigin.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], runAt = runAt.asInstanceOf[js.Any])
+    if (!js.isUndefined(allFrames)) __obj.updateDynamic("allFrames")(allFrames.asInstanceOf[js.Any])
     if (frameId != null) __obj.updateDynamic("frameId")(frameId.asInstanceOf[js.Any])
-    if (!js.isUndefined(matchAboutBlank)) __obj.updateDynamic("matchAboutBlank")(matchAboutBlank)
+    if (!js.isUndefined(matchAboutBlank)) __obj.updateDynamic("matchAboutBlank")(matchAboutBlank.asInstanceOf[js.Any])
     __obj.asInstanceOf[InjectFileDetails]
   }
 }

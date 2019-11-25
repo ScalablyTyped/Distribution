@@ -14,7 +14,7 @@ object CreateAccessoryDescriptor {
   @scala.inline
   def apply(onClick: () => Unit, `type`: CREATE): CreateAccessoryDescriptor = {
     val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction0(onClick))
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAccessoryDescriptor]
   }
 }

@@ -32,15 +32,15 @@ object SelectableOption {
     unselect: /* e */ js.UndefOr[SelectableEvent] => Unit = null
   ): SelectableOption = {
     val __obj = js.Dynamic.literal()
-    if (clickBehavior != null) __obj.updateDynamic("clickBehavior")(clickBehavior)
+    if (clickBehavior != null) __obj.updateDynamic("clickBehavior")(clickBehavior.asInstanceOf[js.Any])
     if (finish != null) __obj.updateDynamic("finish")(js.Any.fromFunction1(finish))
     if (ignoreVal != null) __obj.updateDynamic("ignoreVal")(ignoreVal.asInstanceOf[js.Any])
-    if (mouseButton != null) __obj.updateDynamic("mouseButton")(mouseButton)
+    if (mouseButton != null) __obj.updateDynamic("mouseButton")(mouseButton.asInstanceOf[js.Any])
     if (rangeStyle != null) __obj.updateDynamic("rangeStyle")(rangeStyle.asInstanceOf[js.Any])
     if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction1(select))
-    if (selector != null) __obj.updateDynamic("selector")(selector)
+    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction1(start))
-    if (trigger != null) __obj.updateDynamic("trigger")(trigger)
+    if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
     if (unselect != null) __obj.updateDynamic("unselect")(js.Any.fromFunction1(unselect))
     __obj.asInstanceOf[SelectableOption]
   }

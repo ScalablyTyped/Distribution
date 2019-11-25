@@ -35,14 +35,14 @@ object Anon_Date {
     yearListProps: StringDictionary[js.Any] = null
   ): Anon_Date = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (localizedText != null) __obj.updateDynamic("localizedText")(localizedText)
-    if (monthListProps != null) __obj.updateDynamic("monthListProps")(monthListProps)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (localizedText != null) __obj.updateDynamic("localizedText")(localizedText.asInstanceOf[js.Any])
+    if (monthListProps != null) __obj.updateDynamic("monthListProps")(monthListProps.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (tableBodyProps != null) __obj.updateDynamic("tableBodyProps")(tableBodyProps)
-    if (tableHeaderProps != null) __obj.updateDynamic("tableHeaderProps")(tableHeaderProps)
-    if (tableProps != null) __obj.updateDynamic("tableProps")(tableProps)
-    if (yearListProps != null) __obj.updateDynamic("yearListProps")(yearListProps)
+    if (tableBodyProps != null) __obj.updateDynamic("tableBodyProps")(tableBodyProps.asInstanceOf[js.Any])
+    if (tableHeaderProps != null) __obj.updateDynamic("tableHeaderProps")(tableHeaderProps.asInstanceOf[js.Any])
+    if (tableProps != null) __obj.updateDynamic("tableProps")(tableProps.asInstanceOf[js.Any])
+    if (yearListProps != null) __obj.updateDynamic("yearListProps")(yearListProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Date]
   }
 }

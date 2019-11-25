@@ -19,8 +19,8 @@ object GoogleActionsV2UpdatePermissionValueSpec {
   @scala.inline
   def apply(arguments: js.Array[GoogleActionsV2Argument] = null, intent: String = null): GoogleActionsV2UpdatePermissionValueSpec = {
     val __obj = js.Dynamic.literal()
-    if (arguments != null) __obj.updateDynamic("arguments")(arguments)
-    if (intent != null) __obj.updateDynamic("intent")(intent)
+    if (arguments != null) __obj.updateDynamic("arguments")(arguments.asInstanceOf[js.Any])
+    if (intent != null) __obj.updateDynamic("intent")(intent.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2UpdatePermissionValueSpec]
   }
 }

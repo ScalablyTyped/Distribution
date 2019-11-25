@@ -20,13 +20,13 @@ object Message {
     pp: String = null,
     to: String = null
   ): Message = {
-    val __obj = js.Dynamic.literal(content = content)
-    __obj.updateDynamic("type")(`type`)
-    if (from != null) __obj.updateDynamic("from")(from)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (pp != null) __obj.updateDynamic("pp")(pp)
-    if (to != null) __obj.updateDynamic("to")(to)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (pp != null) __obj.updateDynamic("pp")(pp.asInstanceOf[js.Any])
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[Message]
   }
 }

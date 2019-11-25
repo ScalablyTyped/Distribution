@@ -16,8 +16,8 @@ object MenuOpenOnClick {
     subMenuItems: js.UndefOr[Boolean] = js.undefined
   ): MenuOpenOnClick = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(rootMenuItems)) __obj.updateDynamic("rootMenuItems")(rootMenuItems)
-    if (!js.isUndefined(subMenuItems)) __obj.updateDynamic("subMenuItems")(subMenuItems)
+    if (!js.isUndefined(rootMenuItems)) __obj.updateDynamic("rootMenuItems")(rootMenuItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(subMenuItems)) __obj.updateDynamic("subMenuItems")(subMenuItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuOpenOnClick]
   }
 }

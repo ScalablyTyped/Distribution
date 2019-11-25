@@ -18,9 +18,9 @@ object FieldState {
     visited: js.UndefOr[Boolean] = js.undefined
   ): FieldState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
-    if (!js.isUndefined(touched)) __obj.updateDynamic("touched")(touched)
-    if (!js.isUndefined(visited)) __obj.updateDynamic("visited")(visited)
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (!js.isUndefined(touched)) __obj.updateDynamic("touched")(touched.asInstanceOf[js.Any])
+    if (!js.isUndefined(visited)) __obj.updateDynamic("visited")(visited.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldState]
   }
 }

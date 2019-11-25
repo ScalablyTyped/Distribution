@@ -24,10 +24,10 @@ object Anon_Const {
     kind: `var` | let | const = null,
     unique: js.UndefOr[Boolean] = js.undefined
   ): Anon_Const = {
-    val __obj = js.Dynamic.literal(id = id)
-    if (init != null) __obj.updateDynamic("init")(init)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    if (init != null) __obj.updateDynamic("init")(init.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique)
+    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Const]
   }
 }

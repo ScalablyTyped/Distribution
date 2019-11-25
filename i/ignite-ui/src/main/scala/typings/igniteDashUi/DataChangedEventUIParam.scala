@@ -19,8 +19,8 @@ object DataChangedEventUIParam {
   @scala.inline
   def apply(newData: js.Any = null, owner: js.Any = null): DataChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (newData != null) __obj.updateDynamic("newData")(newData)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (newData != null) __obj.updateDynamic("newData")(newData.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataChangedEventUIParam]
   }
 }

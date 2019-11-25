@@ -27,7 +27,7 @@ object Group {
     name: String,
     parent: StoryId
   ): Group = {
-    val __obj = js.Dynamic.literal(children = children, depth = depth, id = id, isComponent = isComponent, isLeaf = isLeaf, isRoot = isRoot, name = name, parent = parent)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isComponent = isComponent.asInstanceOf[js.Any], isLeaf = isLeaf.asInstanceOf[js.Any], isRoot = isRoot.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Group]
   }

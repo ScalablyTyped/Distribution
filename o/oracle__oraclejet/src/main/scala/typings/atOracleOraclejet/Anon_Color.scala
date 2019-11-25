@@ -30,15 +30,15 @@ object Anon_Color {
     timingFunction: String = null
   ): Anon_Color = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (delay != null) __obj.updateDynamic("delay")(delay)
-    if (diameter != null) __obj.updateDynamic("diameter")(diameter)
-    if (duration != null) __obj.updateDynamic("duration")(duration)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (diameter != null) __obj.updateDynamic("diameter")(diameter.asInstanceOf[js.Any])
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (endOpacity != null) __obj.updateDynamic("endOpacity")(endOpacity.asInstanceOf[js.Any])
-    if (offsetX != null) __obj.updateDynamic("offsetX")(offsetX)
-    if (offsetY != null) __obj.updateDynamic("offsetY")(offsetY)
+    if (offsetX != null) __obj.updateDynamic("offsetX")(offsetX.asInstanceOf[js.Any])
+    if (offsetY != null) __obj.updateDynamic("offsetY")(offsetY.asInstanceOf[js.Any])
     if (startOpacity != null) __obj.updateDynamic("startOpacity")(startOpacity.asInstanceOf[js.Any])
-    if (timingFunction != null) __obj.updateDynamic("timingFunction")(timingFunction)
+    if (timingFunction != null) __obj.updateDynamic("timingFunction")(timingFunction.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Color]
   }
 }

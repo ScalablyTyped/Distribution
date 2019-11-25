@@ -28,7 +28,7 @@ object Iterator {
     next: ErrorKeyValueCallback[Bytes, Bytes] => Iterator,
     seek: Bytes => Unit
   ): Iterator = {
-    val __obj = js.Dynamic.literal(binding = binding, cache = cache, db = db, end = js.Any.fromFunction1(end), fastFuture = fastFuture, finished = finished, next = js.Any.fromFunction1(next), seek = js.Any.fromFunction1(seek))
+    val __obj = js.Dynamic.literal(binding = binding.asInstanceOf[js.Any], cache = cache.asInstanceOf[js.Any], db = db.asInstanceOf[js.Any], end = js.Any.fromFunction1(end), fastFuture = fastFuture.asInstanceOf[js.Any], finished = finished.asInstanceOf[js.Any], next = js.Any.fromFunction1(next), seek = js.Any.fromFunction1(seek))
   
     __obj.asInstanceOf[Iterator]
   }

@@ -63,10 +63,10 @@ object Anon_AutoForwardDataForward {
     onError: String | (SingleOrArray[TransitionConfig[TContext, DoneInvokeEvent[_]]]) = null
   ): Anon_AutoForwardDataForward[TContext, TEvent] = {
     val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoForward)) __obj.updateDynamic("autoForward")(autoForward)
+    if (!js.isUndefined(autoForward)) __obj.updateDynamic("autoForward")(autoForward.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(forward)) __obj.updateDynamic("forward")(forward)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(forward)) __obj.updateDynamic("forward")(forward.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (onDone != null) __obj.updateDynamic("onDone")(onDone.asInstanceOf[js.Any])
     if (onError != null) __obj.updateDynamic("onError")(onError.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AutoForwardDataForward[TContext, TEvent]]

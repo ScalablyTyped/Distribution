@@ -18,8 +18,8 @@ object ParsedArguments {
     rest: js.Array[String],
     StringDictionary: /* key */ StringDictionary[js.Any] = null
   ): ParsedArguments = {
-    val __obj = js.Dynamic.literal(argv = argv, rest = rest)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(argv = argv.asInstanceOf[js.Any], rest = rest.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ParsedArguments]
   }
 }

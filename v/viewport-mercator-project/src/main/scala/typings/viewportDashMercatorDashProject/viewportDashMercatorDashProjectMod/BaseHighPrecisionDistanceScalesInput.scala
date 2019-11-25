@@ -12,7 +12,7 @@ trait BaseHighPrecisionDistanceScalesInput extends BaseDistanceScalesInput {
 object BaseHighPrecisionDistanceScalesInput {
   @scala.inline
   def apply(highPrecision: `true`, latitude: Double, longitude: Double): BaseHighPrecisionDistanceScalesInput = {
-    val __obj = js.Dynamic.literal(highPrecision = highPrecision, latitude = latitude, longitude = longitude)
+    val __obj = js.Dynamic.literal(highPrecision = highPrecision.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BaseHighPrecisionDistanceScalesInput]
   }

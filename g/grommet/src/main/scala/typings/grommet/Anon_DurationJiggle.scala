@@ -13,8 +13,8 @@ object Anon_DurationJiggle {
   @scala.inline
   def apply(duration: String = null, jiggle: Anon_Duration = null): Anon_DurationJiggle = {
     val __obj = js.Dynamic.literal()
-    if (duration != null) __obj.updateDynamic("duration")(duration)
-    if (jiggle != null) __obj.updateDynamic("jiggle")(jiggle)
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (jiggle != null) __obj.updateDynamic("jiggle")(jiggle.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DurationJiggle]
   }
 }

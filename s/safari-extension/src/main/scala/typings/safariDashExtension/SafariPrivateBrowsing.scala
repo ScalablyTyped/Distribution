@@ -11,7 +11,7 @@ trait SafariPrivateBrowsing extends js.Object {
 object SafariPrivateBrowsing {
   @scala.inline
   def apply(enabled: Boolean): SafariPrivateBrowsing = {
-    val __obj = js.Dynamic.literal(enabled = enabled)
+    val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SafariPrivateBrowsing]
   }

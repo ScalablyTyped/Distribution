@@ -68,16 +68,16 @@ object FirebaseAppOptions {
     messagingSenderId: String = null,
     storageBucket: String = null
   ): FirebaseAppOptions = {
-    val __obj = js.Dynamic.literal(appId = appId, projectId = projectId)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (androidClientId != null) __obj.updateDynamic("androidClientId")(androidClientId)
-    if (apiKey != null) __obj.updateDynamic("apiKey")(apiKey)
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId)
-    if (databaseURL != null) __obj.updateDynamic("databaseURL")(databaseURL)
-    if (deepLinkURLScheme != null) __obj.updateDynamic("deepLinkURLScheme")(deepLinkURLScheme)
-    if (gaTrackingId != null) __obj.updateDynamic("gaTrackingId")(gaTrackingId)
-    if (messagingSenderId != null) __obj.updateDynamic("messagingSenderId")(messagingSenderId)
-    if (storageBucket != null) __obj.updateDynamic("storageBucket")(storageBucket)
+    val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (androidClientId != null) __obj.updateDynamic("androidClientId")(androidClientId.asInstanceOf[js.Any])
+    if (apiKey != null) __obj.updateDynamic("apiKey")(apiKey.asInstanceOf[js.Any])
+    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
+    if (databaseURL != null) __obj.updateDynamic("databaseURL")(databaseURL.asInstanceOf[js.Any])
+    if (deepLinkURLScheme != null) __obj.updateDynamic("deepLinkURLScheme")(deepLinkURLScheme.asInstanceOf[js.Any])
+    if (gaTrackingId != null) __obj.updateDynamic("gaTrackingId")(gaTrackingId.asInstanceOf[js.Any])
+    if (messagingSenderId != null) __obj.updateDynamic("messagingSenderId")(messagingSenderId.asInstanceOf[js.Any])
+    if (storageBucket != null) __obj.updateDynamic("storageBucket")(storageBucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirebaseAppOptions]
   }
 }

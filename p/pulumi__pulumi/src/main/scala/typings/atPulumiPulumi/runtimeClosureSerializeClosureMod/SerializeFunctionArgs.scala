@@ -41,9 +41,9 @@ object SerializeFunctionArgs {
     serialize: /* o */ js.Any => Boolean = null
   ): SerializeFunctionArgs = {
     val __obj = js.Dynamic.literal()
-    if (exportName != null) __obj.updateDynamic("exportName")(exportName)
-    if (!js.isUndefined(isFactoryFunction)) __obj.updateDynamic("isFactoryFunction")(isFactoryFunction)
-    if (logResource != null) __obj.updateDynamic("logResource")(logResource)
+    if (exportName != null) __obj.updateDynamic("exportName")(exportName.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFactoryFunction)) __obj.updateDynamic("isFactoryFunction")(isFactoryFunction.asInstanceOf[js.Any])
+    if (logResource != null) __obj.updateDynamic("logResource")(logResource.asInstanceOf[js.Any])
     if (serialize != null) __obj.updateDynamic("serialize")(js.Any.fromFunction1(serialize))
     __obj.asInstanceOf[SerializeFunctionArgs]
   }

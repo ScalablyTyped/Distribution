@@ -17,8 +17,8 @@ object Anon_DeferredPropName {
     deferred: js.UndefOr[Boolean] = js.undefined
   ): Anon_DeferredPropName = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(deferred)) __obj.updateDynamic("deferred")(deferred)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(deferred)) __obj.updateDynamic("deferred")(deferred.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DeferredPropName]
   }
 }

@@ -46,10 +46,10 @@ object MockResponseObject {
   ): MockResponseObject = {
     val __obj = js.Dynamic.literal()
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (redirectUrl != null) __obj.updateDynamic("redirectUrl")(redirectUrl)
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (redirectUrl != null) __obj.updateDynamic("redirectUrl")(redirectUrl.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (throws != null) __obj.updateDynamic("throws")(throws)
+    if (throws != null) __obj.updateDynamic("throws")(throws.asInstanceOf[js.Any])
     __obj.asInstanceOf[MockResponseObject]
   }
 }

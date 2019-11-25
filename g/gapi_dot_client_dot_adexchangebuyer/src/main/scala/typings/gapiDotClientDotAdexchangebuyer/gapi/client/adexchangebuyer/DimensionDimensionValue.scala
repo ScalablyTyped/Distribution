@@ -21,7 +21,7 @@ object DimensionDimensionValue {
   def apply(id: Int | Double = null, name: String = null, percentage: Int | Double = null): DimensionDimensionValue = {
     val __obj = js.Dynamic.literal()
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (percentage != null) __obj.updateDynamic("percentage")(percentage.asInstanceOf[js.Any])
     __obj.asInstanceOf[DimensionDimensionValue]
   }

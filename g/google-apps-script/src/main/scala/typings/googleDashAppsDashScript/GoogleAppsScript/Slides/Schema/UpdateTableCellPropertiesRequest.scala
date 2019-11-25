@@ -20,10 +20,10 @@ object UpdateTableCellPropertiesRequest {
     tableRange: TableRange = null
   ): UpdateTableCellPropertiesRequest = {
     val __obj = js.Dynamic.literal()
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (objectId != null) __obj.updateDynamic("objectId")(objectId)
-    if (tableCellProperties != null) __obj.updateDynamic("tableCellProperties")(tableCellProperties)
-    if (tableRange != null) __obj.updateDynamic("tableRange")(tableRange)
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (objectId != null) __obj.updateDynamic("objectId")(objectId.asInstanceOf[js.Any])
+    if (tableCellProperties != null) __obj.updateDynamic("tableCellProperties")(tableCellProperties.asInstanceOf[js.Any])
+    if (tableRange != null) __obj.updateDynamic("tableRange")(tableRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateTableCellPropertiesRequest]
   }
 }

@@ -76,15 +76,15 @@ object OptionsData {
     rootValue: js.Any = null,
     validationRules: js.Array[js.Function1[/* arg0 */ ValidationContext, ASTVisitor]] = null
   ): OptionsData = {
-    val __obj = js.Dynamic.literal(schema = schema)
-    if (context != null) __obj.updateDynamic("context")(context)
+    val __obj = js.Dynamic.literal(schema = schema.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (extensions != null) __obj.updateDynamic("extensions")(js.Any.fromFunction1(extensions))
     if (fieldResolver != null) __obj.updateDynamic("fieldResolver")(js.Any.fromFunction4(fieldResolver))
     if (formatError != null) __obj.updateDynamic("formatError")(js.Any.fromFunction2(formatError))
-    if (!js.isUndefined(graphiql)) __obj.updateDynamic("graphiql")(graphiql)
-    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty)
-    if (rootValue != null) __obj.updateDynamic("rootValue")(rootValue)
-    if (validationRules != null) __obj.updateDynamic("validationRules")(validationRules)
+    if (!js.isUndefined(graphiql)) __obj.updateDynamic("graphiql")(graphiql.asInstanceOf[js.Any])
+    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.asInstanceOf[js.Any])
+    if (rootValue != null) __obj.updateDynamic("rootValue")(rootValue.asInstanceOf[js.Any])
+    if (validationRules != null) __obj.updateDynamic("validationRules")(validationRules.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsData]
   }
 }

@@ -11,7 +11,7 @@ trait ISearchPaneResultSuggestionChosenEventArgs extends js.Object {
 object ISearchPaneResultSuggestionChosenEventArgs {
   @scala.inline
   def apply(tag: String): ISearchPaneResultSuggestionChosenEventArgs = {
-    val __obj = js.Dynamic.literal(tag = tag)
+    val __obj = js.Dynamic.literal(tag = tag.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISearchPaneResultSuggestionChosenEventArgs]
   }

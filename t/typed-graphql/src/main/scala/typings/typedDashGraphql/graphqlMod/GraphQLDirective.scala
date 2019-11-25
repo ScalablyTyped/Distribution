@@ -24,7 +24,7 @@ object GraphQLDirective {
     onFragment: Boolean,
     onOperation: Boolean
   ): GraphQLDirective = {
-    val __obj = js.Dynamic.literal(args = args, description = description, name = name, onField = onField, onFragment = onFragment, onOperation = onOperation)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], onField = onField.asInstanceOf[js.Any], onFragment = onFragment.asInstanceOf[js.Any], onOperation = onOperation.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GraphQLDirective]
   }

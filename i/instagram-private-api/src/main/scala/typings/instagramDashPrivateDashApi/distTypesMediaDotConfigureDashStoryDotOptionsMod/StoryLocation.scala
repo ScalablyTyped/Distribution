@@ -20,7 +20,7 @@ object StoryLocation {
     x: Double,
     y: Double
   ): StoryLocation = {
-    val __obj = js.Dynamic.literal(height = height, is_sticker = is_sticker, location_id = location_id, rotation = rotation, width = width, x = x, y = y)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], is_sticker = is_sticker.asInstanceOf[js.Any], location_id = location_id.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StoryLocation]
   }

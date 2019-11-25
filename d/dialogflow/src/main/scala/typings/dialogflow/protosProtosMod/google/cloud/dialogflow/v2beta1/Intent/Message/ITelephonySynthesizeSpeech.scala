@@ -16,8 +16,8 @@ object ITelephonySynthesizeSpeech {
   @scala.inline
   def apply(ssml: String = null, text: String = null): ITelephonySynthesizeSpeech = {
     val __obj = js.Dynamic.literal()
-    if (ssml != null) __obj.updateDynamic("ssml")(ssml)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (ssml != null) __obj.updateDynamic("ssml")(ssml.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITelephonySynthesizeSpeech]
   }
 }

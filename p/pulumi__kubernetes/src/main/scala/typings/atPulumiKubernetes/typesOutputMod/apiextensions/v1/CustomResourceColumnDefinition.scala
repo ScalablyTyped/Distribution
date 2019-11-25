@@ -53,8 +53,8 @@ object CustomResourceColumnDefinition {
     priority: Double,
     `type`: String
   ): CustomResourceColumnDefinition = {
-    val __obj = js.Dynamic.literal(description = description, format = format, jsonPath = jsonPath, name = name, priority = priority)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], jsonPath = jsonPath.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomResourceColumnDefinition]
   }
 }

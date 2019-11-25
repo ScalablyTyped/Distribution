@@ -91,58 +91,42 @@ object ISegmentedButton {
     allowMultiple: js.UndefOr[Boolean] = js.undefined,
     allowToggle: js.UndefOr[Boolean] = js.undefined,
     applyItems: () => Unit = null,
-    baseCls: java.lang.String = null,
-    defaultType: java.lang.String = null,
     getAllowDepress: () => Boolean = null,
     getAllowMultiple: () => Boolean = null,
     getAllowToggle: () => Boolean = null,
-    getBaseCls: () => java.lang.String = null,
-    getDefaultType: () => java.lang.String = null,
     getLayout: () => _ = null,
     getPressed: () => Unit = null,
     getPressedButtons: () => Array = null,
     getPressedCls: () => java.lang.String = null,
     isPressed: /* button */ js.UndefOr[IButton] => Boolean = null,
-    layout: js.Any = null,
     pressedButtons: Array = null,
     pressedCls: java.lang.String = null,
     setAllowDepress: /* allowDepress */ js.UndefOr[Boolean] => Unit = null,
     setAllowMultiple: /* allowMultiple */ js.UndefOr[Boolean] => Unit = null,
     setAllowToggle: /* allowToggle */ js.UndefOr[Boolean] => Unit = null,
-    setBaseCls: /* baseCls */ js.UndefOr[java.lang.String] => Unit = null,
-    setDefaultType: /* defaultType */ js.UndefOr[java.lang.String] => Unit = null,
-    setLayout: /* layout */ js.UndefOr[js.Any] => Unit = null,
     setPressed: (/* button */ js.UndefOr[js.Any], /* pressed */ js.UndefOr[Boolean], /* suppressEvents */ js.UndefOr[Boolean]) => Unit = null,
     setPressedButtons: /* pressedButtons */ js.UndefOr[Array] => Unit = null,
     setPressedCls: /* pressedCls */ js.UndefOr[java.lang.String] => Unit = null
   ): ISegmentedButton = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IContainer)
-    if (!js.isUndefined(allowDepress)) __obj.updateDynamic("allowDepress")(allowDepress)
-    if (!js.isUndefined(allowMultiple)) __obj.updateDynamic("allowMultiple")(allowMultiple)
-    if (!js.isUndefined(allowToggle)) __obj.updateDynamic("allowToggle")(allowToggle)
+    if (IContainer != null) js.Dynamic.global.Object.assign(__obj, IContainer)
+    if (!js.isUndefined(allowDepress)) __obj.updateDynamic("allowDepress")(allowDepress.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowMultiple)) __obj.updateDynamic("allowMultiple")(allowMultiple.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowToggle)) __obj.updateDynamic("allowToggle")(allowToggle.asInstanceOf[js.Any])
     if (applyItems != null) __obj.updateDynamic("applyItems")(js.Any.fromFunction0(applyItems))
-    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
-    if (defaultType != null) __obj.updateDynamic("defaultType")(defaultType)
     if (getAllowDepress != null) __obj.updateDynamic("getAllowDepress")(js.Any.fromFunction0(getAllowDepress))
     if (getAllowMultiple != null) __obj.updateDynamic("getAllowMultiple")(js.Any.fromFunction0(getAllowMultiple))
     if (getAllowToggle != null) __obj.updateDynamic("getAllowToggle")(js.Any.fromFunction0(getAllowToggle))
-    if (getBaseCls != null) __obj.updateDynamic("getBaseCls")(js.Any.fromFunction0(getBaseCls))
-    if (getDefaultType != null) __obj.updateDynamic("getDefaultType")(js.Any.fromFunction0(getDefaultType))
     if (getLayout != null) __obj.updateDynamic("getLayout")(js.Any.fromFunction0(getLayout))
     if (getPressed != null) __obj.updateDynamic("getPressed")(js.Any.fromFunction0(getPressed))
     if (getPressedButtons != null) __obj.updateDynamic("getPressedButtons")(js.Any.fromFunction0(getPressedButtons))
     if (getPressedCls != null) __obj.updateDynamic("getPressedCls")(js.Any.fromFunction0(getPressedCls))
     if (isPressed != null) __obj.updateDynamic("isPressed")(js.Any.fromFunction1(isPressed))
-    if (layout != null) __obj.updateDynamic("layout")(layout)
-    if (pressedButtons != null) __obj.updateDynamic("pressedButtons")(pressedButtons)
-    if (pressedCls != null) __obj.updateDynamic("pressedCls")(pressedCls)
+    if (pressedButtons != null) __obj.updateDynamic("pressedButtons")(pressedButtons.asInstanceOf[js.Any])
+    if (pressedCls != null) __obj.updateDynamic("pressedCls")(pressedCls.asInstanceOf[js.Any])
     if (setAllowDepress != null) __obj.updateDynamic("setAllowDepress")(js.Any.fromFunction1(setAllowDepress))
     if (setAllowMultiple != null) __obj.updateDynamic("setAllowMultiple")(js.Any.fromFunction1(setAllowMultiple))
     if (setAllowToggle != null) __obj.updateDynamic("setAllowToggle")(js.Any.fromFunction1(setAllowToggle))
-    if (setBaseCls != null) __obj.updateDynamic("setBaseCls")(js.Any.fromFunction1(setBaseCls))
-    if (setDefaultType != null) __obj.updateDynamic("setDefaultType")(js.Any.fromFunction1(setDefaultType))
-    if (setLayout != null) __obj.updateDynamic("setLayout")(js.Any.fromFunction1(setLayout))
     if (setPressed != null) __obj.updateDynamic("setPressed")(js.Any.fromFunction3(setPressed))
     if (setPressedButtons != null) __obj.updateDynamic("setPressedButtons")(js.Any.fromFunction1(setPressedButtons))
     if (setPressedCls != null) __obj.updateDynamic("setPressedCls")(js.Any.fromFunction1(setPressedCls))

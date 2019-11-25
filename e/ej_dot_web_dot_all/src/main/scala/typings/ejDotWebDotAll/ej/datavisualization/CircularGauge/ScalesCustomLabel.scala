@@ -40,12 +40,12 @@ object ScalesCustomLabel {
     value: String = null
   ): ScalesCustomLabel = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (font != null) __obj.updateDynamic("font")(font)
-    if (position != null) __obj.updateDynamic("position")(position)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (positionType != null) __obj.updateDynamic("positionType")(positionType.asInstanceOf[js.Any])
     if (textAngle != null) __obj.updateDynamic("textAngle")(textAngle.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScalesCustomLabel]
   }
 }

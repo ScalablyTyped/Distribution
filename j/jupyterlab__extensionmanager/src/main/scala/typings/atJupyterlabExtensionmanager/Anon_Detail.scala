@@ -18,8 +18,8 @@ trait Anon_Detail extends js.Object {
 object Anon_Detail {
   @scala.inline
   def apply(detail: Anon_Maintenance, `final`: Double): Anon_Detail = {
-    val __obj = js.Dynamic.literal(detail = detail)
-    __obj.updateDynamic("final")(`final`)
+    val __obj = js.Dynamic.literal(detail = detail.asInstanceOf[js.Any])
+    __obj.updateDynamic("final")(`final`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Detail]
   }
 }

@@ -20,10 +20,10 @@ object NavigationBarButton {
     handler: () => Unit = null,
     style: ViewStyle = null
   ): NavigationBarButton = {
-    val __obj = js.Dynamic.literal(title = title)
-    if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable)
+    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
+    if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable.asInstanceOf[js.Any])
     if (handler != null) __obj.updateDynamic("handler")(js.Any.fromFunction0(handler))
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationBarButton]
   }
 }

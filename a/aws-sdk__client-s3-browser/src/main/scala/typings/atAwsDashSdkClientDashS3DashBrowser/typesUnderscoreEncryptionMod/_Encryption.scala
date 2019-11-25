@@ -25,8 +25,8 @@ object _Encryption {
   @scala.inline
   def apply(EncryptionType: AES256 | `aws:kms` | String, KMSContext: String = null, KMSKeyId: String = null): _Encryption = {
     val __obj = js.Dynamic.literal(EncryptionType = EncryptionType.asInstanceOf[js.Any])
-    if (KMSContext != null) __obj.updateDynamic("KMSContext")(KMSContext)
-    if (KMSKeyId != null) __obj.updateDynamic("KMSKeyId")(KMSKeyId)
+    if (KMSContext != null) __obj.updateDynamic("KMSContext")(KMSContext.asInstanceOf[js.Any])
+    if (KMSKeyId != null) __obj.updateDynamic("KMSKeyId")(KMSKeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Encryption]
   }
 }

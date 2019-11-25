@@ -14,7 +14,7 @@ trait Response extends BasicResponse {
 object Response {
   @scala.inline
   def apply(id: DocumentId, ok: Boolean, rev: RevisionId): Response = {
-    val __obj = js.Dynamic.literal(id = id, ok = ok, rev = rev)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any], rev = rev.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Response]
   }

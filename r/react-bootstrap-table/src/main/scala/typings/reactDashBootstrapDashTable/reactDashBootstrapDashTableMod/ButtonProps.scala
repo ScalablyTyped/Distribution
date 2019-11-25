@@ -39,10 +39,10 @@ object ButtonProps {
     onClick: /* e */ MouseEvent[_, NativeMouseEvent] => Unit = null
   ): ButtonProps = {
     val __obj = js.Dynamic.literal()
-    if (btnContextual != null) __obj.updateDynamic("btnContextual")(btnContextual)
-    if (btnGlyphicon != null) __obj.updateDynamic("btnGlyphicon")(btnGlyphicon)
-    if (btnText != null) __obj.updateDynamic("btnText")(btnText)
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (btnContextual != null) __obj.updateDynamic("btnContextual")(btnContextual.asInstanceOf[js.Any])
+    if (btnGlyphicon != null) __obj.updateDynamic("btnGlyphicon")(btnGlyphicon.asInstanceOf[js.Any])
+    if (btnText != null) __obj.updateDynamic("btnText")(btnText.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     __obj.asInstanceOf[ButtonProps]
   }

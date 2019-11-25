@@ -22,10 +22,10 @@ object PartialStyleRulesFormControlClassKey {
     root: CSSProperties = null
   ): PartialStyleRulesFormControlClassKey = {
     val __obj = js.Dynamic.literal()
-    if (fullWidth != null) __obj.updateDynamic("fullWidth")(fullWidth)
-    if (marginDense != null) __obj.updateDynamic("marginDense")(marginDense)
-    if (marginNormal != null) __obj.updateDynamic("marginNormal")(marginNormal)
-    if (root != null) __obj.updateDynamic("root")(root)
+    if (fullWidth != null) __obj.updateDynamic("fullWidth")(fullWidth.asInstanceOf[js.Any])
+    if (marginDense != null) __obj.updateDynamic("marginDense")(marginDense.asInstanceOf[js.Any])
+    if (marginNormal != null) __obj.updateDynamic("marginNormal")(marginNormal.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyleRulesFormControlClassKey]
   }
 }

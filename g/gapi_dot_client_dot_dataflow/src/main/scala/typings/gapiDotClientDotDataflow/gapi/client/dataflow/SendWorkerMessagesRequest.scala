@@ -15,8 +15,8 @@ object SendWorkerMessagesRequest {
   @scala.inline
   def apply(location: String = null, workerMessages: js.Array[WorkerMessage] = null): SendWorkerMessagesRequest = {
     val __obj = js.Dynamic.literal()
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (workerMessages != null) __obj.updateDynamic("workerMessages")(workerMessages)
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (workerMessages != null) __obj.updateDynamic("workerMessages")(workerMessages.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendWorkerMessagesRequest]
   }
 }

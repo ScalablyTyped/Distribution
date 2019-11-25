@@ -25,22 +25,22 @@ object loglevelStrings {
   sealed trait WARN extends LogLevelDesc
   
   @js.native
-  sealed trait debug extends LogLevelDesc
+  sealed trait debug_ extends LogLevelDesc
   
   @js.native
-  sealed trait error extends LogLevelDesc
+  sealed trait error_ extends LogLevelDesc
   
   @js.native
-  sealed trait info extends LogLevelDesc
+  sealed trait info_ extends LogLevelDesc
   
   @js.native
-  sealed trait silent extends LogLevelDesc
+  sealed trait silent_ extends LogLevelDesc
   
   @js.native
-  sealed trait trace extends LogLevelDesc
+  sealed trait trace_ extends LogLevelDesc
   
   @js.native
-  sealed trait warn extends LogLevelDesc
+  sealed trait warn_ extends LogLevelDesc
   
   @scala.inline
   def DEBUG: DEBUG = "DEBUG".asInstanceOf[DEBUG]
@@ -55,16 +55,16 @@ object loglevelStrings {
   @scala.inline
   def WARN: WARN = "WARN".asInstanceOf[WARN]
   @scala.inline
-  def debug: debug = "debug".asInstanceOf[debug]
+  def debug_ : debug_ = "debug".asInstanceOf[debug_]
   @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  def error_ : error_ = "error".asInstanceOf[error_]
   @scala.inline
-  def info: info = "info".asInstanceOf[info]
+  def info_ : info_ = "info".asInstanceOf[info_]
   @scala.inline
-  def silent: silent = "silent".asInstanceOf[silent]
+  def silent_ : silent_ = "silent".asInstanceOf[silent_]
   @scala.inline
-  def trace: trace = "trace".asInstanceOf[trace]
+  def trace_ : trace_ = "trace".asInstanceOf[trace_]
   @scala.inline
-  def warn: warn = "warn".asInstanceOf[warn]
+  def warn_ : warn_ = "warn".asInstanceOf[warn_]
 }
 

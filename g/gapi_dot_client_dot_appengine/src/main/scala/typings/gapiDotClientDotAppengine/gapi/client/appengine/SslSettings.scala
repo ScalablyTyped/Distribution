@@ -13,7 +13,7 @@ object SslSettings {
   @scala.inline
   def apply(certificateId: String = null): SslSettings = {
     val __obj = js.Dynamic.literal()
-    if (certificateId != null) __obj.updateDynamic("certificateId")(certificateId)
+    if (certificateId != null) __obj.updateDynamic("certificateId")(certificateId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SslSettings]
   }
 }

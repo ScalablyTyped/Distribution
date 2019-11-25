@@ -21,12 +21,12 @@ object StrategyOptionsWithRequest {
     tokenURL: String = null,
     userProfileURL: String = null
   ): StrategyOptionsWithRequest = {
-    val __obj = js.Dynamic.literal(clientID = clientID, clientSecret = clientSecret, passReqToCallback = passReqToCallback)
-    if (authorizationURL != null) __obj.updateDynamic("authorizationURL")(authorizationURL)
-    if (callbackURL != null) __obj.updateDynamic("callbackURL")(callbackURL)
+    val __obj = js.Dynamic.literal(clientID = clientID.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any], passReqToCallback = passReqToCallback.asInstanceOf[js.Any])
+    if (authorizationURL != null) __obj.updateDynamic("authorizationURL")(authorizationURL.asInstanceOf[js.Any])
+    if (callbackURL != null) __obj.updateDynamic("callbackURL")(callbackURL.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    if (tokenURL != null) __obj.updateDynamic("tokenURL")(tokenURL)
-    if (userProfileURL != null) __obj.updateDynamic("userProfileURL")(userProfileURL)
+    if (tokenURL != null) __obj.updateDynamic("tokenURL")(tokenURL.asInstanceOf[js.Any])
+    if (userProfileURL != null) __obj.updateDynamic("userProfileURL")(userProfileURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrategyOptionsWithRequest]
   }
 }

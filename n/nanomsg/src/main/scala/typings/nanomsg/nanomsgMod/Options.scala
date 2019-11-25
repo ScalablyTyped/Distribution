@@ -44,11 +44,11 @@ object Options {
     wsopt: text | binary = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (chan != null) __obj.updateDynamic("chan")(chan)
-    if (!js.isUndefined(ipv6)) __obj.updateDynamic("ipv6")(ipv6)
+    if (chan != null) __obj.updateDynamic("chan")(chan.asInstanceOf[js.Any])
+    if (!js.isUndefined(ipv6)) __obj.updateDynamic("ipv6")(ipv6.asInstanceOf[js.Any])
     if (linger != null) __obj.updateDynamic("linger")(linger.asInstanceOf[js.Any])
     if (maxreconn != null) __obj.updateDynamic("maxreconn")(maxreconn.asInstanceOf[js.Any])
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw)
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
     if (rcvbuf != null) __obj.updateDynamic("rcvbuf")(rcvbuf.asInstanceOf[js.Any])
     if (rcvmaxsize != null) __obj.updateDynamic("rcvmaxsize")(rcvmaxsize.asInstanceOf[js.Any])
     if (rcvprio != null) __obj.updateDynamic("rcvprio")(rcvprio.asInstanceOf[js.Any])
@@ -57,7 +57,7 @@ object Options {
     if (sndbuf != null) __obj.updateDynamic("sndbuf")(sndbuf.asInstanceOf[js.Any])
     if (sndprio != null) __obj.updateDynamic("sndprio")(sndprio.asInstanceOf[js.Any])
     if (sndtimeo != null) __obj.updateDynamic("sndtimeo")(sndtimeo.asInstanceOf[js.Any])
-    if (!js.isUndefined(tcpnodelay)) __obj.updateDynamic("tcpnodelay")(tcpnodelay)
+    if (!js.isUndefined(tcpnodelay)) __obj.updateDynamic("tcpnodelay")(tcpnodelay.asInstanceOf[js.Any])
     if (wsopt != null) __obj.updateDynamic("wsopt")(wsopt.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

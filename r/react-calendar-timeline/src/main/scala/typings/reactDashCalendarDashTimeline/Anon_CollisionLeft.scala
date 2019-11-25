@@ -31,7 +31,7 @@ object Anon_CollisionLeft {
     width: Double,
     top: Int | Double = null
   ): Anon_CollisionLeft = {
-    val __obj = js.Dynamic.literal(collisionLeft = collisionLeft, collisionWidth = collisionWidth, height = height, isDragging = isDragging, left = left, order = order, originalLeft = originalLeft, stack = stack, width = width)
+    val __obj = js.Dynamic.literal(collisionLeft = collisionLeft.asInstanceOf[js.Any], collisionWidth = collisionWidth.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], isDragging = isDragging.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any], originalLeft = originalLeft.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CollisionLeft]
   }

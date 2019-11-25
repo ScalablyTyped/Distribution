@@ -28,11 +28,11 @@ object Anon_CommentsLocParamsRest {
     rest: FunctionTypeParamKind = null,
     typeParameters: TypeParameterDeclarationKind = null
   ): Anon_CommentsLocParamsRest = {
-    val __obj = js.Dynamic.literal(params = params, returnType = returnType)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (rest != null) __obj.updateDynamic("rest")(rest)
-    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)
+    val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (rest != null) __obj.updateDynamic("rest")(rest.asInstanceOf[js.Any])
+    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CommentsLocParamsRest]
   }
 }

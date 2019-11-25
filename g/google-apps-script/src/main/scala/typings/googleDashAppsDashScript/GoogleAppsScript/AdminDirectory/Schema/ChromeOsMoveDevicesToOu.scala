@@ -12,7 +12,7 @@ object ChromeOsMoveDevicesToOu {
   @scala.inline
   def apply(deviceIds: js.Array[String] = null): ChromeOsMoveDevicesToOu = {
     val __obj = js.Dynamic.literal()
-    if (deviceIds != null) __obj.updateDynamic("deviceIds")(deviceIds)
+    if (deviceIds != null) __obj.updateDynamic("deviceIds")(deviceIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChromeOsMoveDevicesToOu]
   }
 }

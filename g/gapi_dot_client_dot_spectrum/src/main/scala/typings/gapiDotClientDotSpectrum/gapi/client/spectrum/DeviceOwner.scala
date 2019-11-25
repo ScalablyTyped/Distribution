@@ -15,8 +15,8 @@ object DeviceOwner {
   @scala.inline
   def apply(operator: Vcard = null, owner: Vcard = null): DeviceOwner = {
     val __obj = js.Dynamic.literal()
-    if (operator != null) __obj.updateDynamic("operator")(operator)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (operator != null) __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceOwner]
   }
 }

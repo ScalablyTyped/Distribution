@@ -11,8 +11,8 @@ trait TranslateOptions extends BaseOptions {
 object TranslateOptions {
   @scala.inline
   def apply(rating: Rating, s: String, fmt: Format = null): TranslateOptions = {
-    val __obj = js.Dynamic.literal(rating = rating, s = s)
-    if (fmt != null) __obj.updateDynamic("fmt")(fmt)
+    val __obj = js.Dynamic.literal(rating = rating.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any])
+    if (fmt != null) __obj.updateDynamic("fmt")(fmt.asInstanceOf[js.Any])
     __obj.asInstanceOf[TranslateOptions]
   }
 }

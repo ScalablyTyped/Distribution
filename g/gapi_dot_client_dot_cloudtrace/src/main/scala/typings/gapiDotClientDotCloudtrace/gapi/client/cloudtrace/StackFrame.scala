@@ -46,13 +46,13 @@ object StackFrame {
     sourceVersion: TruncatableString = null
   ): StackFrame = {
     val __obj = js.Dynamic.literal()
-    if (columnNumber != null) __obj.updateDynamic("columnNumber")(columnNumber)
-    if (fileName != null) __obj.updateDynamic("fileName")(fileName)
-    if (functionName != null) __obj.updateDynamic("functionName")(functionName)
-    if (lineNumber != null) __obj.updateDynamic("lineNumber")(lineNumber)
-    if (loadModule != null) __obj.updateDynamic("loadModule")(loadModule)
-    if (originalFunctionName != null) __obj.updateDynamic("originalFunctionName")(originalFunctionName)
-    if (sourceVersion != null) __obj.updateDynamic("sourceVersion")(sourceVersion)
+    if (columnNumber != null) __obj.updateDynamic("columnNumber")(columnNumber.asInstanceOf[js.Any])
+    if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
+    if (functionName != null) __obj.updateDynamic("functionName")(functionName.asInstanceOf[js.Any])
+    if (lineNumber != null) __obj.updateDynamic("lineNumber")(lineNumber.asInstanceOf[js.Any])
+    if (loadModule != null) __obj.updateDynamic("loadModule")(loadModule.asInstanceOf[js.Any])
+    if (originalFunctionName != null) __obj.updateDynamic("originalFunctionName")(originalFunctionName.asInstanceOf[js.Any])
+    if (sourceVersion != null) __obj.updateDynamic("sourceVersion")(sourceVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackFrame]
   }
 }

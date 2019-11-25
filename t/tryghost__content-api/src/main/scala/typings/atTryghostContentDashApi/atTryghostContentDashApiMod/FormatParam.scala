@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait FormatParam extends js.Object
 
+object FormatParam {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def html: typings.atTryghostContentDashApi.atTryghostContentDashApiStrings.html = this.cast("html")
+  @scala.inline
+  def plaintext: typings.atTryghostContentDashApi.atTryghostContentDashApiStrings.plaintext = this.cast("plaintext")
+}
+

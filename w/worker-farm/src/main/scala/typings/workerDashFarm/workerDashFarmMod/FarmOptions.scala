@@ -29,14 +29,14 @@ object FarmOptions {
     workerOptions: ForkOptions = null
   ): FarmOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoStart)) __obj.updateDynamic("autoStart")(autoStart)
+    if (!js.isUndefined(autoStart)) __obj.updateDynamic("autoStart")(autoStart.asInstanceOf[js.Any])
     if (maxCallTime != null) __obj.updateDynamic("maxCallTime")(maxCallTime.asInstanceOf[js.Any])
     if (maxCallsPerWorker != null) __obj.updateDynamic("maxCallsPerWorker")(maxCallsPerWorker.asInstanceOf[js.Any])
     if (maxConcurrentCalls != null) __obj.updateDynamic("maxConcurrentCalls")(maxConcurrentCalls.asInstanceOf[js.Any])
     if (maxConcurrentCallsPerWorker != null) __obj.updateDynamic("maxConcurrentCallsPerWorker")(maxConcurrentCallsPerWorker.asInstanceOf[js.Any])
     if (maxConcurrentWorkers != null) __obj.updateDynamic("maxConcurrentWorkers")(maxConcurrentWorkers.asInstanceOf[js.Any])
     if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
-    if (workerOptions != null) __obj.updateDynamic("workerOptions")(workerOptions)
+    if (workerOptions != null) __obj.updateDynamic("workerOptions")(workerOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[FarmOptions]
   }
 }

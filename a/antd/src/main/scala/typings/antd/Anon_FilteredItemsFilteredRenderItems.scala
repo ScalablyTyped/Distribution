@@ -14,7 +14,7 @@ trait Anon_FilteredItemsFilteredRenderItems extends js.Object {
 object Anon_FilteredItemsFilteredRenderItems {
   @scala.inline
   def apply(filteredItems: js.Array[TransferItem], filteredRenderItems: js.Array[RenderedItem]): Anon_FilteredItemsFilteredRenderItems = {
-    val __obj = js.Dynamic.literal(filteredItems = filteredItems, filteredRenderItems = filteredRenderItems)
+    val __obj = js.Dynamic.literal(filteredItems = filteredItems.asInstanceOf[js.Any], filteredRenderItems = filteredRenderItems.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FilteredItemsFilteredRenderItems]
   }

@@ -17,8 +17,8 @@ object MUIDataTableFilterList {
     classes: js.Object = null,
     onFilterUpdate: /* args */ js.Any => _ = null
   ): MUIDataTableFilterList = {
-    val __obj = js.Dynamic.literal(filterList = filterList)
-    if (classes != null) __obj.updateDynamic("classes")(classes)
+    val __obj = js.Dynamic.literal(filterList = filterList.asInstanceOf[js.Any])
+    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
     if (onFilterUpdate != null) __obj.updateDynamic("onFilterUpdate")(js.Any.fromFunction1(onFilterUpdate))
     __obj.asInstanceOf[MUIDataTableFilterList]
   }

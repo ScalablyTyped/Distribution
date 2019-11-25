@@ -12,7 +12,7 @@ trait Anon_PvWindow extends js.Object {
 object Anon_PvWindow {
   @scala.inline
   def apply(PvWindow: ProtectedViewWindow): Anon_PvWindow = {
-    val __obj = js.Dynamic.literal(PvWindow = PvWindow)
+    val __obj = js.Dynamic.literal(PvWindow = PvWindow.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_PvWindow]
   }

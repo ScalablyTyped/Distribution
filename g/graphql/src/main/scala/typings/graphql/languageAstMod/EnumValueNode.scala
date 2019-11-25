@@ -16,8 +16,8 @@ trait EnumValueNode
 object EnumValueNode {
   @scala.inline
   def apply(kind: EnumValue, value: String, loc: Location = null): EnumValueNode = {
-    val __obj = js.Dynamic.literal(kind = kind, value = value)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValueNode]
   }
 }

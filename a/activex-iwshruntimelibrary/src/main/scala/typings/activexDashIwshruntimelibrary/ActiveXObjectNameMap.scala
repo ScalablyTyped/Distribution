@@ -23,10 +23,10 @@ object ActiveXObjectNameMap {
     `WScript.Network`: WshNetwork,
     `WScript.Shell`: WshShell
   ): ActiveXObjectNameMap = {
-    val __obj = js.Dynamic.literal(WSHController = WSHController)
-    __obj.updateDynamic("Scripting.Signer")(`Scripting.Signer`)
-    __obj.updateDynamic("WScript.Network")(`WScript.Network`)
-    __obj.updateDynamic("WScript.Shell")(`WScript.Shell`)
+    val __obj = js.Dynamic.literal(WSHController = WSHController.asInstanceOf[js.Any])
+    __obj.updateDynamic("Scripting.Signer")(`Scripting.Signer`.asInstanceOf[js.Any])
+    __obj.updateDynamic("WScript.Network")(`WScript.Network`.asInstanceOf[js.Any])
+    __obj.updateDynamic("WScript.Shell")(`WScript.Shell`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
 }

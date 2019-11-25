@@ -14,7 +14,7 @@ trait DateRange extends js.Object {
 object DateRange {
   @scala.inline
   def apply(endDate: String, startDate: String): DateRange = {
-    val __obj = js.Dynamic.literal(endDate = endDate, startDate = startDate)
+    val __obj = js.Dynamic.literal(endDate = endDate.asInstanceOf[js.Any], startDate = startDate.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DateRange]
   }

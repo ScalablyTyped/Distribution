@@ -18,9 +18,9 @@ object EditOptions {
     snappable: js.UndefOr[Boolean] = js.undefined
   ): EditOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
     if (snapDistance != null) __obj.updateDynamic("snapDistance")(snapDistance.asInstanceOf[js.Any])
-    if (!js.isUndefined(snappable)) __obj.updateDynamic("snappable")(snappable)
+    if (!js.isUndefined(snappable)) __obj.updateDynamic("snappable")(snappable.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditOptions]
   }
 }

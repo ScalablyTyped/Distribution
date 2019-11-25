@@ -14,7 +14,7 @@ trait Xchacha20poly1305State extends js.Object {
 object Xchacha20poly1305State {
   @scala.inline
   def apply(_pad: Buffer, k: Buffer, nonce: Buffer): Xchacha20poly1305State = {
-    val __obj = js.Dynamic.literal(_pad = _pad, k = k, nonce = nonce)
+    val __obj = js.Dynamic.literal(_pad = _pad.asInstanceOf[js.Any], k = k.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Xchacha20poly1305State]
   }

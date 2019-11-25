@@ -14,7 +14,7 @@ trait IStructureJson extends js.Object {
 object IStructureJson {
   @scala.inline
   def apply($ID: String, $Type: String): IStructureJson = {
-    val __obj = js.Dynamic.literal($ID = $ID, $Type = $Type)
+    val __obj = js.Dynamic.literal($ID = $ID.asInstanceOf[js.Any], $Type = $Type.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IStructureJson]
   }

@@ -22,11 +22,11 @@ object SamlRequest {
     issuer: String = null
   ): SamlRequest = {
     val __obj = js.Dynamic.literal()
-    if (assertionConsumerServiceURL != null) __obj.updateDynamic("assertionConsumerServiceURL")(assertionConsumerServiceURL)
-    if (destination != null) __obj.updateDynamic("destination")(destination)
-    if (forceAuthn != null) __obj.updateDynamic("forceAuthn")(forceAuthn)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (issuer != null) __obj.updateDynamic("issuer")(issuer)
+    if (assertionConsumerServiceURL != null) __obj.updateDynamic("assertionConsumerServiceURL")(assertionConsumerServiceURL.asInstanceOf[js.Any])
+    if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
+    if (forceAuthn != null) __obj.updateDynamic("forceAuthn")(forceAuthn.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (issuer != null) __obj.updateDynamic("issuer")(issuer.asInstanceOf[js.Any])
     __obj.asInstanceOf[SamlRequest]
   }
 }

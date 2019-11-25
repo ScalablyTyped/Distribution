@@ -13,7 +13,7 @@ trait Anon_Database extends js.Object {
 object Anon_Database {
   @scala.inline
   def apply(database: String, functions: String, storage: String): Anon_Database = {
-    val __obj = js.Dynamic.literal(database = database, functions = functions, storage = storage)
+    val __obj = js.Dynamic.literal(database = database.asInstanceOf[js.Any], functions = functions.asInstanceOf[js.Any], storage = storage.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Database]
   }

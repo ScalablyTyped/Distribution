@@ -17,8 +17,8 @@ trait ILoginLink extends js.Object {
 object ILoginLink {
   @scala.inline
   def apply(created: Double, `object`: login_link, url: String): ILoginLink = {
-    val __obj = js.Dynamic.literal(created = created, url = url)
-    __obj.updateDynamic("object")(`object`)
+    val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILoginLink]
   }
 }

@@ -29,9 +29,9 @@ object SpatialReferenceProperties {
   @scala.inline
   def apply(imageCoordinateSystem: js.Any = null, wkid: Int | Double = null, wkt: String = null): SpatialReferenceProperties = {
     val __obj = js.Dynamic.literal()
-    if (imageCoordinateSystem != null) __obj.updateDynamic("imageCoordinateSystem")(imageCoordinateSystem)
+    if (imageCoordinateSystem != null) __obj.updateDynamic("imageCoordinateSystem")(imageCoordinateSystem.asInstanceOf[js.Any])
     if (wkid != null) __obj.updateDynamic("wkid")(wkid.asInstanceOf[js.Any])
-    if (wkt != null) __obj.updateDynamic("wkt")(wkt)
+    if (wkt != null) __obj.updateDynamic("wkt")(wkt.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpatialReferenceProperties]
   }
 }

@@ -17,7 +17,7 @@ object RetentionSettings {
     defaultEnvironmentRetentionPolicy: EnvironmentRetentionPolicy,
     maximumEnvironmentRetentionPolicy: EnvironmentRetentionPolicy
   ): RetentionSettings = {
-    val __obj = js.Dynamic.literal(daysToKeepDeletedReleases = daysToKeepDeletedReleases, defaultEnvironmentRetentionPolicy = defaultEnvironmentRetentionPolicy, maximumEnvironmentRetentionPolicy = maximumEnvironmentRetentionPolicy)
+    val __obj = js.Dynamic.literal(daysToKeepDeletedReleases = daysToKeepDeletedReleases.asInstanceOf[js.Any], defaultEnvironmentRetentionPolicy = defaultEnvironmentRetentionPolicy.asInstanceOf[js.Any], maximumEnvironmentRetentionPolicy = maximumEnvironmentRetentionPolicy.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RetentionSettings]
   }

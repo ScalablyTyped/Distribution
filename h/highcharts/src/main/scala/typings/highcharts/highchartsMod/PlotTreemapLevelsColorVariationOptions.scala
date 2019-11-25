@@ -22,7 +22,7 @@ object PlotTreemapLevelsColorVariationOptions {
   @scala.inline
   def apply(key: brightness = null, to: Int | Double = null): PlotTreemapLevelsColorVariationOptions = {
     val __obj = js.Dynamic.literal()
-    if (key != null) __obj.updateDynamic("key")(key)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotTreemapLevelsColorVariationOptions]
   }

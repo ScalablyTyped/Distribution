@@ -12,8 +12,8 @@ trait HelloJSEventArgument extends js.Object {
 object HelloJSEventArgument {
   @scala.inline
   def apply(network: String, authResponse: HelloJSAuthResponse = null): HelloJSEventArgument = {
-    val __obj = js.Dynamic.literal(network = network)
-    if (authResponse != null) __obj.updateDynamic("authResponse")(authResponse)
+    val __obj = js.Dynamic.literal(network = network.asInstanceOf[js.Any])
+    if (authResponse != null) __obj.updateDynamic("authResponse")(authResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[HelloJSEventArgument]
   }
 }

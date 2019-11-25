@@ -23,11 +23,11 @@ object NodeProps {
     className: String = null,
     extraProps: js.Any = null
   ): NodeProps = {
-    val __obj = js.Dynamic.literal(diagramEngine = diagramEngine, node = node)
-    if (baseClass != null) __obj.updateDynamic("baseClass")(baseClass)
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (extraProps != null) __obj.updateDynamic("extraProps")(extraProps)
+    val __obj = js.Dynamic.literal(diagramEngine = diagramEngine.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
+    if (baseClass != null) __obj.updateDynamic("baseClass")(baseClass.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (extraProps != null) __obj.updateDynamic("extraProps")(extraProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeProps]
   }
 }

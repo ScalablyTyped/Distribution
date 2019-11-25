@@ -1,6 +1,5 @@
 package typings.bookshelf.bookshelfMod
 
-import typings.bluebird.bluebirdMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,6 +17,6 @@ abstract class Events[T] () extends js.Object {
   def once(event: String, callback: EventFunction[T], context: js.Any): Unit = js.native
   def trigger(): Unit = js.native
   def trigger(event: String, args: js.Any*): Unit = js.native
-  def triggerThen(name: String, args: js.Any*): ^[_] = js.native
+  def triggerThen(name: String, args: js.Any*): typings.bluebird.bluebirdMod.^[_] = js.native
 }
 

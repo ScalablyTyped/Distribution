@@ -23,10 +23,10 @@ object CreateSheetsChartRequest {
   ): CreateSheetsChartRequest = {
     val __obj = js.Dynamic.literal()
     if (chartId != null) __obj.updateDynamic("chartId")(chartId.asInstanceOf[js.Any])
-    if (elementProperties != null) __obj.updateDynamic("elementProperties")(elementProperties)
-    if (linkingMode != null) __obj.updateDynamic("linkingMode")(linkingMode)
-    if (objectId != null) __obj.updateDynamic("objectId")(objectId)
-    if (spreadsheetId != null) __obj.updateDynamic("spreadsheetId")(spreadsheetId)
+    if (elementProperties != null) __obj.updateDynamic("elementProperties")(elementProperties.asInstanceOf[js.Any])
+    if (linkingMode != null) __obj.updateDynamic("linkingMode")(linkingMode.asInstanceOf[js.Any])
+    if (objectId != null) __obj.updateDynamic("objectId")(objectId.asInstanceOf[js.Any])
+    if (spreadsheetId != null) __obj.updateDynamic("spreadsheetId")(spreadsheetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSheetsChartRequest]
   }
 }

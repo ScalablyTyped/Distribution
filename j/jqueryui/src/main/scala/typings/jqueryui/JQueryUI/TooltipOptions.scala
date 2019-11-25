@@ -37,15 +37,15 @@ object TooltipOptions {
   ): TooltipOptions = {
     val __obj = js.Dynamic.literal()
     if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction2(close))
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (hide != null) __obj.updateDynamic("hide")(hide)
-    if (items != null) __obj.updateDynamic("items")(items)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (hide != null) __obj.updateDynamic("hide")(hide.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction2(open))
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (show != null) __obj.updateDynamic("show")(show)
-    if (tooltipClass != null) __obj.updateDynamic("tooltipClass")(tooltipClass)
-    if (!js.isUndefined(track)) __obj.updateDynamic("track")(track)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
+    if (tooltipClass != null) __obj.updateDynamic("tooltipClass")(tooltipClass.asInstanceOf[js.Any])
+    if (!js.isUndefined(track)) __obj.updateDynamic("track")(track.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipOptions]
   }
 }

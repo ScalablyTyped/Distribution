@@ -23,11 +23,11 @@ object EncodingObject {
     style: String = null
   ): EncodingObject = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowReserved)) __obj.updateDynamic("allowReserved")(allowReserved)
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
-    if (!js.isUndefined(explode)) __obj.updateDynamic("explode")(explode)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (!js.isUndefined(allowReserved)) __obj.updateDynamic("allowReserved")(allowReserved.asInstanceOf[js.Any])
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
+    if (!js.isUndefined(explode)) __obj.updateDynamic("explode")(explode.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncodingObject]
   }
 }

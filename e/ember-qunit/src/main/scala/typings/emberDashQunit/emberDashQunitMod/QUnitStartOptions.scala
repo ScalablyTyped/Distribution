@@ -50,13 +50,13 @@ object QUnitStartOptions {
     startTests: js.UndefOr[Boolean] = js.undefined
   ): QUnitStartOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(loadTests)) __obj.updateDynamic("loadTests")(loadTests)
-    if (!js.isUndefined(setupEmberOnerrorValidation)) __obj.updateDynamic("setupEmberOnerrorValidation")(setupEmberOnerrorValidation)
-    if (!js.isUndefined(setupEmberTesting)) __obj.updateDynamic("setupEmberTesting")(setupEmberTesting)
-    if (!js.isUndefined(setupTestAdapter)) __obj.updateDynamic("setupTestAdapter")(setupTestAdapter)
-    if (!js.isUndefined(setupTestContainer)) __obj.updateDynamic("setupTestContainer")(setupTestContainer)
-    if (!js.isUndefined(setupTestIsolationValidation)) __obj.updateDynamic("setupTestIsolationValidation")(setupTestIsolationValidation)
-    if (!js.isUndefined(startTests)) __obj.updateDynamic("startTests")(startTests)
+    if (!js.isUndefined(loadTests)) __obj.updateDynamic("loadTests")(loadTests.asInstanceOf[js.Any])
+    if (!js.isUndefined(setupEmberOnerrorValidation)) __obj.updateDynamic("setupEmberOnerrorValidation")(setupEmberOnerrorValidation.asInstanceOf[js.Any])
+    if (!js.isUndefined(setupEmberTesting)) __obj.updateDynamic("setupEmberTesting")(setupEmberTesting.asInstanceOf[js.Any])
+    if (!js.isUndefined(setupTestAdapter)) __obj.updateDynamic("setupTestAdapter")(setupTestAdapter.asInstanceOf[js.Any])
+    if (!js.isUndefined(setupTestContainer)) __obj.updateDynamic("setupTestContainer")(setupTestContainer.asInstanceOf[js.Any])
+    if (!js.isUndefined(setupTestIsolationValidation)) __obj.updateDynamic("setupTestIsolationValidation")(setupTestIsolationValidation.asInstanceOf[js.Any])
+    if (!js.isUndefined(startTests)) __obj.updateDynamic("startTests")(startTests.asInstanceOf[js.Any])
     __obj.asInstanceOf[QUnitStartOptions]
   }
 }

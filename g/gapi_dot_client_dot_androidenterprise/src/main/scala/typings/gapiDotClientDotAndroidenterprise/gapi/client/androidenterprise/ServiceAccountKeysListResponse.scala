@@ -13,7 +13,7 @@ object ServiceAccountKeysListResponse {
   @scala.inline
   def apply(serviceAccountKey: js.Array[ServiceAccountKey] = null): ServiceAccountKeysListResponse = {
     val __obj = js.Dynamic.literal()
-    if (serviceAccountKey != null) __obj.updateDynamic("serviceAccountKey")(serviceAccountKey)
+    if (serviceAccountKey != null) __obj.updateDynamic("serviceAccountKey")(serviceAccountKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceAccountKeysListResponse]
   }
 }

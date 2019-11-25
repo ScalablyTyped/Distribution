@@ -30,8 +30,8 @@ trait UpdatePlan extends js.Object {
 object UpdatePlan {
   @scala.inline
   def apply(description: String, name: String, properties: js.Any, revision: Double, `type`: PlanType): UpdatePlan = {
-    val __obj = js.Dynamic.literal(description = description, name = name, properties = properties, revision = revision)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdatePlan]
   }
 }

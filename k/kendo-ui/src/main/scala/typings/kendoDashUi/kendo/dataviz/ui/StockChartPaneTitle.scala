@@ -28,14 +28,14 @@ object StockChartPaneTitle {
     visible: js.UndefOr[Boolean] = js.undefined
   ): StockChartPaneTitle = {
     val __obj = js.Dynamic.literal()
-    if (background != null) __obj.updateDynamic("background")(background)
-    if (border != null) __obj.updateDynamic("border")(border)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (font != null) __obj.updateDynamic("font")(font)
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[StockChartPaneTitle]
   }
 }

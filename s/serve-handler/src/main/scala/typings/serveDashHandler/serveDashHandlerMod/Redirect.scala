@@ -11,8 +11,8 @@ trait Redirect extends Rewrite {
 object Redirect {
   @scala.inline
   def apply(destination: String, source: String, `type`: Double): Redirect = {
-    val __obj = js.Dynamic.literal(destination = destination, source = source)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Redirect]
   }
 }

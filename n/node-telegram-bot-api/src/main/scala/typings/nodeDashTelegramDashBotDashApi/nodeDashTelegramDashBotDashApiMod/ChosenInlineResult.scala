@@ -21,9 +21,9 @@ object ChosenInlineResult {
     inline_message_id: String = null,
     location: Location = null
   ): ChosenInlineResult = {
-    val __obj = js.Dynamic.literal(from = from, query = query, result_id = result_id)
-    if (inline_message_id != null) __obj.updateDynamic("inline_message_id")(inline_message_id)
-    if (location != null) __obj.updateDynamic("location")(location)
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], result_id = result_id.asInstanceOf[js.Any])
+    if (inline_message_id != null) __obj.updateDynamic("inline_message_id")(inline_message_id.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChosenInlineResult]
   }
 }

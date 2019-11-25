@@ -19,7 +19,7 @@ object Anon_Background {
     nodes: Anon_DataTypesDragEnter,
     ports: Anon_DataTypesDragEnterDragLeave
   ): Anon_Background = {
-    val __obj = js.Dynamic.literal(background = background, links = links, nodes = nodes, ports = ports)
+    val __obj = js.Dynamic.literal(background = background.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any], ports = ports.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Background]
   }

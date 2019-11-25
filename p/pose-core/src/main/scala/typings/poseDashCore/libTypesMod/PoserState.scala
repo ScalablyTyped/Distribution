@@ -21,7 +21,7 @@ object PoserState {
     props: Props,
     values: ValueMap[V]
   ): PoserState[V, A, C, P] = {
-    val __obj = js.Dynamic.literal(activeActions = activeActions, activePoses = activePoses, children = children, props = props, values = values)
+    val __obj = js.Dynamic.literal(activeActions = activeActions.asInstanceOf[js.Any], activePoses = activePoses.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PoserState[V, A, C, P]]
   }

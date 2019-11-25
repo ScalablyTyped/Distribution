@@ -12,7 +12,7 @@ trait Anon_Count extends js.Object {
 object Anon_Count {
   @scala.inline
   def apply(Count: Double, Page: Boolean): Anon_Count = {
-    val __obj = js.Dynamic.literal(Count = Count, Page = Page)
+    val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], Page = Page.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Count]
   }

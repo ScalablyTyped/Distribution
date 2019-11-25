@@ -13,8 +13,8 @@ object Anon_Authorization {
   @scala.inline
   def apply(authorization: String = null, ifNotExists: js.UndefOr[Boolean] = js.undefined): Anon_Authorization = {
     val __obj = js.Dynamic.literal()
-    if (authorization != null) __obj.updateDynamic("authorization")(authorization)
-    if (!js.isUndefined(ifNotExists)) __obj.updateDynamic("ifNotExists")(ifNotExists)
+    if (authorization != null) __obj.updateDynamic("authorization")(authorization.asInstanceOf[js.Any])
+    if (!js.isUndefined(ifNotExists)) __obj.updateDynamic("ifNotExists")(ifNotExists.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Authorization]
   }
 }

@@ -23,7 +23,7 @@ object SeriesSankeyDataLabelsFormatterContextObject {
     total: Int | Double = null,
     y: Int | Double = null
   ): SeriesSankeyDataLabelsFormatterContextObject = {
-    val __obj = js.Dynamic.literal(point = point, series = series, x = x)
+    val __obj = js.Dynamic.literal(point = point.asInstanceOf[js.Any], series = series.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any])
     if (percentage != null) __obj.updateDynamic("percentage")(percentage.asInstanceOf[js.Any])
     if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])

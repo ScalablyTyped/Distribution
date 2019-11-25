@@ -7,17 +7,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // tslint:disable-next-line interface-over-type-literal
-trait RowSelectionStart[K] extends js.Object {
-  var startIndex: js.UndefOr[Anon_Row] = js.undefined
-  var startKey: js.UndefOr[Anon_RowK[K]] = js.undefined
-}
+/* Rewritten from type alias, can be one of: 
+  - typings.atOracleOraclejet.Anon_StartIndexStartKeyAnonRow[K]
+  - typings.atOracleOraclejet.Anon_StartIndexStartKeyAnonRowAnonRowK[K]
+*/
+trait RowSelectionStart[K] extends js.Object
 
 object RowSelectionStart {
   @scala.inline
-  def apply[K](startIndex: Anon_Row = null, startKey: Anon_RowK[K] = null): RowSelectionStart[K] = {
-    val __obj = js.Dynamic.literal()
-    if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex)
-    if (startKey != null) __obj.updateDynamic("startKey")(startKey)
+  def Anon_StartIndexStartKeyAnonRow[K](startIndex: Anon_Row, startKey: Anon_RowK[K] = null): RowSelectionStart[K] = {
+    val __obj = js.Dynamic.literal(startIndex = startIndex.asInstanceOf[js.Any])
+    if (startKey != null) __obj.updateDynamic("startKey")(startKey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RowSelectionStart[K]]
+  }
+  @scala.inline
+  def Anon_StartIndexStartKeyAnonRowAnonRowK[K](startKey: Anon_RowK[K], startIndex: Anon_Row = null): RowSelectionStart[K] = {
+    val __obj = js.Dynamic.literal(startKey = startKey.asInstanceOf[js.Any])
+    if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowSelectionStart[K]]
   }
 }

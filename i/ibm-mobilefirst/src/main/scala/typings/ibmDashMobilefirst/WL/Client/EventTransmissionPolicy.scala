@@ -13,7 +13,7 @@ object EventTransmissionPolicy {
   @scala.inline
   def apply(eventStorageEnabled: js.UndefOr[Boolean] = js.undefined, interval: Int | Double = null): EventTransmissionPolicy = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(eventStorageEnabled)) __obj.updateDynamic("eventStorageEnabled")(eventStorageEnabled)
+    if (!js.isUndefined(eventStorageEnabled)) __obj.updateDynamic("eventStorageEnabled")(eventStorageEnabled.asInstanceOf[js.Any])
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventTransmissionPolicy]
   }

@@ -14,7 +14,7 @@ trait Anon_Full extends js.Object {
 object Anon_Full {
   @scala.inline
   def apply(full: Anon_DayMonth, long: Anon_Day, medium: Anon_Day, short: Anon_Day): Anon_Full = {
-    val __obj = js.Dynamic.literal(full = full, long = long, medium = medium, short = short)
+    val __obj = js.Dynamic.literal(full = full.asInstanceOf[js.Any], long = long.asInstanceOf[js.Any], medium = medium.asInstanceOf[js.Any], short = short.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Full]
   }

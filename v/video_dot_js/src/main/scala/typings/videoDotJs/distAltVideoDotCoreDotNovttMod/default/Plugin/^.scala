@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.videoDotJs.TypeofPlugin
-import typings.videoDotJs.videoDotJsMod.videojs.Player
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +20,7 @@ class ^ protected ()
     * @param player
     *        A Video.js player instance.
     */
-  def this(player: Player) = this()
+  def this(player: typings.videoDotJs.videoDotJsMod.videojs.Player) = this()
 }
 
 @JSImport("video.js/dist/alt/video.core.novtt", "Plugin")
@@ -36,7 +35,10 @@ object ^
   * @param player
   *        A Video.js player instance.
   */
-Instantiable1[/* player */ Player, typings.videoDotJs.videoDotJsMod.videojs.Plugin]
+Instantiable1[
+        /* player */ typings.videoDotJs.videoDotJsMod.videojs.Player, 
+        typings.videoDotJs.videoDotJsMod.videojs.Plugin
+      ]
     ] {
   /**
     * The name of the base plugin class as it is registered.
@@ -108,6 +110,9 @@ Instantiable1[/* player */ Player, typings.videoDotJs.videoDotJsMod.videojs.Plug
     * @return For advanced plugins, a factory function for that plugin. For
     *          basic plugins, a wrapper function that initializes the plugin.
     */
-  def registerPlugin[T, K](name: String, plugin: js.ThisFunction1[/* this */ Player, /* repeated */ K, T]): js.Function1[/* repeated */ K, T] = js.native
+  def registerPlugin[T, K](
+    name: String,
+    plugin: js.ThisFunction1[/* this */ typings.videoDotJs.videoDotJsMod.videojs.Player, /* repeated */ K, T]
+  ): js.Function1[/* repeated */ K, T] = js.native
 }
 

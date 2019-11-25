@@ -26,9 +26,9 @@ object IFunctionIdentifier {
   @scala.inline
   def apply(`final`: String, intermediates: String = null, prefix: String = null): IFunctionIdentifier = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("final")(`final`)
-    if (intermediates != null) __obj.updateDynamic("intermediates")(intermediates)
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    __obj.updateDynamic("final")(`final`.asInstanceOf[js.Any])
+    if (intermediates != null) __obj.updateDynamic("intermediates")(intermediates.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFunctionIdentifier]
   }
 }

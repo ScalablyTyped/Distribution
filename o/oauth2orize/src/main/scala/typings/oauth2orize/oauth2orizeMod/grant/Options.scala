@@ -17,7 +17,7 @@ object Options {
   @scala.inline
   def apply(scopeSeparator: String = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (scopeSeparator != null) __obj.updateDynamic("scopeSeparator")(scopeSeparator)
+    if (scopeSeparator != null) __obj.updateDynamic("scopeSeparator")(scopeSeparator.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

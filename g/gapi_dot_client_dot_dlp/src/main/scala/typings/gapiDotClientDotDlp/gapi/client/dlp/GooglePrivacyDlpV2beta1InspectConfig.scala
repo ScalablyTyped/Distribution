@@ -37,12 +37,12 @@ object GooglePrivacyDlpV2beta1InspectConfig {
     minLikelihood: String = null
   ): GooglePrivacyDlpV2beta1InspectConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(excludeTypes)) __obj.updateDynamic("excludeTypes")(excludeTypes)
-    if (!js.isUndefined(includeQuote)) __obj.updateDynamic("includeQuote")(includeQuote)
-    if (infoTypeLimits != null) __obj.updateDynamic("infoTypeLimits")(infoTypeLimits)
-    if (infoTypes != null) __obj.updateDynamic("infoTypes")(infoTypes)
+    if (!js.isUndefined(excludeTypes)) __obj.updateDynamic("excludeTypes")(excludeTypes.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeQuote)) __obj.updateDynamic("includeQuote")(includeQuote.asInstanceOf[js.Any])
+    if (infoTypeLimits != null) __obj.updateDynamic("infoTypeLimits")(infoTypeLimits.asInstanceOf[js.Any])
+    if (infoTypes != null) __obj.updateDynamic("infoTypes")(infoTypes.asInstanceOf[js.Any])
     if (maxFindings != null) __obj.updateDynamic("maxFindings")(maxFindings.asInstanceOf[js.Any])
-    if (minLikelihood != null) __obj.updateDynamic("minLikelihood")(minLikelihood)
+    if (minLikelihood != null) __obj.updateDynamic("minLikelihood")(minLikelihood.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1InspectConfig]
   }
 }

@@ -34,19 +34,19 @@ object SetOptions {
     wait: String = null,
     wan: js.UndefOr[Boolean] = js.undefined
   ): SetOptions = {
-    val __obj = js.Dynamic.literal(key = key, value = value.asInstanceOf[js.Any])
-    if (acquire != null) __obj.updateDynamic("acquire")(acquire)
-    if (cas != null) __obj.updateDynamic("cas")(cas)
-    if (!js.isUndefined(consistent)) __obj.updateDynamic("consistent")(consistent)
-    if (ctx != null) __obj.updateDynamic("ctx")(ctx)
-    if (dc != null) __obj.updateDynamic("dc")(dc)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (acquire != null) __obj.updateDynamic("acquire")(acquire.asInstanceOf[js.Any])
+    if (cas != null) __obj.updateDynamic("cas")(cas.asInstanceOf[js.Any])
+    if (!js.isUndefined(consistent)) __obj.updateDynamic("consistent")(consistent.asInstanceOf[js.Any])
+    if (ctx != null) __obj.updateDynamic("ctx")(ctx.asInstanceOf[js.Any])
+    if (dc != null) __obj.updateDynamic("dc")(dc.asInstanceOf[js.Any])
     if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
-    if (release != null) __obj.updateDynamic("release")(release)
-    if (!js.isUndefined(stale)) __obj.updateDynamic("stale")(stale)
+    if (release != null) __obj.updateDynamic("release")(release.asInstanceOf[js.Any])
+    if (!js.isUndefined(stale)) __obj.updateDynamic("stale")(stale.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (token != null) __obj.updateDynamic("token")(token)
-    if (wait != null) __obj.updateDynamic("wait")(wait)
-    if (!js.isUndefined(wan)) __obj.updateDynamic("wan")(wan)
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
+    if (wait != null) __obj.updateDynamic("wait")(wait.asInstanceOf[js.Any])
+    if (!js.isUndefined(wan)) __obj.updateDynamic("wan")(wan.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetOptions]
   }
 }

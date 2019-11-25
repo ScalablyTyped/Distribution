@@ -14,8 +14,8 @@ trait Anon_Offset extends _PositionResult {
 object Anon_Offset {
   @scala.inline
   def apply(selector: String, offset: Position = null): Anon_Offset = {
-    val __obj = js.Dynamic.literal(selector = selector)
-    if (offset != null) __obj.updateDynamic("offset")(offset)
+    val __obj = js.Dynamic.literal(selector = selector.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Offset]
   }
 }

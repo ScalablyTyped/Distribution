@@ -25,8 +25,8 @@ object UpdateContinuousBackupsOutput {
     $metadata: ResponseMetadata,
     ContinuousBackupsDescription: _UnmarshalledContinuousBackupsDescription = null
   ): UpdateContinuousBackupsOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (ContinuousBackupsDescription != null) __obj.updateDynamic("ContinuousBackupsDescription")(ContinuousBackupsDescription)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (ContinuousBackupsDescription != null) __obj.updateDynamic("ContinuousBackupsDescription")(ContinuousBackupsDescription.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateContinuousBackupsOutput]
   }
 }

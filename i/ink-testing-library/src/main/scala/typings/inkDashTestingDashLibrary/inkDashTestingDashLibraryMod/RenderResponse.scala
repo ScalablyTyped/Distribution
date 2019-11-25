@@ -24,7 +24,7 @@ object RenderResponse {
     stdin: Anon_Data,
     unmount: () => Unit
   ): RenderResponse = {
-    val __obj = js.Dynamic.literal(frames = frames, lastFrame = js.Any.fromFunction0(lastFrame), rerender = js.Any.fromFunction1(rerender), stdin = stdin, unmount = js.Any.fromFunction0(unmount))
+    val __obj = js.Dynamic.literal(frames = frames.asInstanceOf[js.Any], lastFrame = js.Any.fromFunction0(lastFrame), rerender = js.Any.fromFunction1(rerender), stdin = stdin.asInstanceOf[js.Any], unmount = js.Any.fromFunction0(unmount))
   
     __obj.asInstanceOf[RenderResponse]
   }

@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait OrientationShape extends js.Object
 
+object OrientationShape {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def horizontal: typings.reactDashDates.reactDashDatesStrings.horizontal = this.cast("horizontal")
+  @scala.inline
+  def vertical: typings.reactDashDates.reactDashDatesStrings.vertical = this.cast("vertical")
+}
+

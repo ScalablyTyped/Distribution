@@ -26,7 +26,7 @@ object _StreamSpecification {
     StreamViewType: NEW_IMAGE | OLD_IMAGE | NEW_AND_OLD_IMAGES | KEYS_ONLY | String = null
   ): _StreamSpecification = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(StreamEnabled)) __obj.updateDynamic("StreamEnabled")(StreamEnabled)
+    if (!js.isUndefined(StreamEnabled)) __obj.updateDynamic("StreamEnabled")(StreamEnabled.asInstanceOf[js.Any])
     if (StreamViewType != null) __obj.updateDynamic("StreamViewType")(StreamViewType.asInstanceOf[js.Any])
     __obj.asInstanceOf[_StreamSpecification]
   }

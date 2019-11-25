@@ -28,11 +28,11 @@ object WindowsUpdateInfo {
     sha2: String = null,
     stagingPercentage: Int | Double = null
   ): WindowsUpdateInfo = {
-    val __obj = js.Dynamic.literal(files = files, path = path, releaseDate = releaseDate, sha512 = sha512, version = version)
-    if (packages != null) __obj.updateDynamic("packages")(packages)
-    if (releaseName != null) __obj.updateDynamic("releaseName")(releaseName)
+    val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], releaseDate = releaseDate.asInstanceOf[js.Any], sha512 = sha512.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    if (packages != null) __obj.updateDynamic("packages")(packages.asInstanceOf[js.Any])
+    if (releaseName != null) __obj.updateDynamic("releaseName")(releaseName.asInstanceOf[js.Any])
     if (releaseNotes != null) __obj.updateDynamic("releaseNotes")(releaseNotes.asInstanceOf[js.Any])
-    if (sha2 != null) __obj.updateDynamic("sha2")(sha2)
+    if (sha2 != null) __obj.updateDynamic("sha2")(sha2.asInstanceOf[js.Any])
     if (stagingPercentage != null) __obj.updateDynamic("stagingPercentage")(stagingPercentage.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowsUpdateInfo]
   }

@@ -15,7 +15,7 @@ trait RenderSuggestionsContainerParams extends js.Object {
 object RenderSuggestionsContainerParams {
   @scala.inline
   def apply(containerProps: Anon_ClassName, query: String, children: ReactNode = null): RenderSuggestionsContainerParams = {
-    val __obj = js.Dynamic.literal(containerProps = containerProps, query = query)
+    val __obj = js.Dynamic.literal(containerProps = containerProps.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderSuggestionsContainerParams]
   }

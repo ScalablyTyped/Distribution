@@ -37,11 +37,11 @@ object GPGPUProgram {
     packedInputs: js.UndefOr[Boolean] = js.undefined,
     packedOutput: js.UndefOr[Boolean] = js.undefined
   ): GPGPUProgram = {
-    val __obj = js.Dynamic.literal(outputShape = outputShape, userCode = userCode, variableNames = variableNames)
-    if (outPackingScheme != null) __obj.updateDynamic("outPackingScheme")(outPackingScheme)
-    if (outTexUsage != null) __obj.updateDynamic("outTexUsage")(outTexUsage)
-    if (!js.isUndefined(packedInputs)) __obj.updateDynamic("packedInputs")(packedInputs)
-    if (!js.isUndefined(packedOutput)) __obj.updateDynamic("packedOutput")(packedOutput)
+    val __obj = js.Dynamic.literal(outputShape = outputShape.asInstanceOf[js.Any], userCode = userCode.asInstanceOf[js.Any], variableNames = variableNames.asInstanceOf[js.Any])
+    if (outPackingScheme != null) __obj.updateDynamic("outPackingScheme")(outPackingScheme.asInstanceOf[js.Any])
+    if (outTexUsage != null) __obj.updateDynamic("outTexUsage")(outTexUsage.asInstanceOf[js.Any])
+    if (!js.isUndefined(packedInputs)) __obj.updateDynamic("packedInputs")(packedInputs.asInstanceOf[js.Any])
+    if (!js.isUndefined(packedOutput)) __obj.updateDynamic("packedOutput")(packedOutput.asInstanceOf[js.Any])
     __obj.asInstanceOf[GPGPUProgram]
   }
 }

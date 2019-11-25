@@ -39,16 +39,16 @@ object FormFieldProps {
     validate: Anon_Message | (js.Function1[/* repeated */ js.Any, _]) = null
   ): FormFieldProps = {
     val __obj = js.Dynamic.literal()
-    if (component != null) __obj.updateDynamic("component")(component)
+    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (help != null) __obj.updateDynamic("help")(help.asInstanceOf[js.Any])
-    if (htmlFor != null) __obj.updateDynamic("htmlFor")(htmlFor)
+    if (htmlFor != null) __obj.updateDynamic("htmlFor")(htmlFor.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(pad)) __obj.updateDynamic("pad")(pad)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(pad)) __obj.updateDynamic("pad")(pad.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
     if (validate != null) __obj.updateDynamic("validate")(validate.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormFieldProps]
   }

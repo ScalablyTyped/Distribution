@@ -21,7 +21,7 @@ trait ChangeEvent extends js.Object {
 object ChangeEvent {
   @scala.inline
   def apply(changes: StringDictionary[CollectionChangeSet], oldRealm: Realm, path: String, realm: Realm): ChangeEvent = {
-    val __obj = js.Dynamic.literal(changes = changes, oldRealm = oldRealm, path = path, realm = realm)
+    val __obj = js.Dynamic.literal(changes = changes.asInstanceOf[js.Any], oldRealm = oldRealm.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], realm = realm.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChangeEvent]
   }

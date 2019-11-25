@@ -12,9 +12,3 @@ class Repetition protected ()
   def this(`type`: `type`, x: Double, y_shift: Double) = this()
 }
 
-@JSImport("vexflow", "Flow.Repetition")
-@js.native
-object Repetition extends js.Object {
-  type `type` = typings.vexflow.Vex.Flow.Repetition.`type`
-}
-

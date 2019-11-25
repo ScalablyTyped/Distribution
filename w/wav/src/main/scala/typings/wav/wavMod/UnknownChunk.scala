@@ -12,7 +12,7 @@ trait UnknownChunk extends js.Object {
 object UnknownChunk {
   @scala.inline
   def apply(data: js.Any, id: String): UnknownChunk = {
-    val __obj = js.Dynamic.literal(data = data, id = id)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UnknownChunk]
   }

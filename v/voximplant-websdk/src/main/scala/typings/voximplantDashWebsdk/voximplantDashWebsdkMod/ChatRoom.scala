@@ -21,7 +21,7 @@ trait ChatRoom extends js.Object {
 object ChatRoom {
   @scala.inline
   def apply(id: String, pass: String): ChatRoom = {
-    val __obj = js.Dynamic.literal(id = id, pass = pass)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], pass = pass.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChatRoom]
   }

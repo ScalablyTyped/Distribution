@@ -12,8 +12,8 @@ trait MarkAccuracyObject extends js.Object {
 object MarkAccuracyObject {
   @scala.inline
   def apply(value: MarkAccuracy, limiters: js.Array[String] = null): MarkAccuracyObject = {
-    val __obj = js.Dynamic.literal(value = value)
-    if (limiters != null) __obj.updateDynamic("limiters")(limiters)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    if (limiters != null) __obj.updateDynamic("limiters")(limiters.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkAccuracyObject]
   }
 }

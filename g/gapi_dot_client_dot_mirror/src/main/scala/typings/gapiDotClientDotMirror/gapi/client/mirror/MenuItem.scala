@@ -65,12 +65,12 @@ object MenuItem {
     values: js.Array[MenuValue] = null
   ): MenuItem = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action)
-    if (contextual_command != null) __obj.updateDynamic("contextual_command")(contextual_command)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (payload != null) __obj.updateDynamic("payload")(payload)
-    if (!js.isUndefined(removeWhenSelected)) __obj.updateDynamic("removeWhenSelected")(removeWhenSelected)
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (contextual_command != null) __obj.updateDynamic("contextual_command")(contextual_command.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeWhenSelected)) __obj.updateDynamic("removeWhenSelected")(removeWhenSelected.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuItem]
   }
 }

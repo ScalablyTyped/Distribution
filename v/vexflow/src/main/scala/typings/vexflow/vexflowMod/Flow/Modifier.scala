@@ -15,6 +15,5 @@ class Modifier ()
 object Modifier extends js.Object {
   val CATEGORY: String = js.native
   var DEBUG: Boolean = js.native
-  type Position = typings.vexflow.Vex.Flow.Modifier.Position
 }
 

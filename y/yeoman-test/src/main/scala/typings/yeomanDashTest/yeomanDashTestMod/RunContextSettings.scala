@@ -25,9 +25,9 @@ object RunContextSettings {
   @scala.inline
   def apply(namespace: String = null, resolved: String = null, tmpdir: js.UndefOr[Boolean] = js.undefined): RunContextSettings = {
     val __obj = js.Dynamic.literal()
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace)
-    if (resolved != null) __obj.updateDynamic("resolved")(resolved)
-    if (!js.isUndefined(tmpdir)) __obj.updateDynamic("tmpdir")(tmpdir)
+    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
+    if (resolved != null) __obj.updateDynamic("resolved")(resolved.asInstanceOf[js.Any])
+    if (!js.isUndefined(tmpdir)) __obj.updateDynamic("tmpdir")(tmpdir.asInstanceOf[js.Any])
     __obj.asInstanceOf[RunContextSettings]
   }
 }

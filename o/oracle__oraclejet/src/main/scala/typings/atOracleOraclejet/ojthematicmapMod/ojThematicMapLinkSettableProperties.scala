@@ -33,7 +33,7 @@ object ojThematicMapLinkSettableProperties {
     svgStyle: js.Object,
     width: Double
   ): ojThematicMapLinkSettableProperties = {
-    val __obj = js.Dynamic.literal(categories = categories, color = color, endLocation = endLocation, selectable = selectable.asInstanceOf[js.Any], shortDesc = shortDesc, startLocation = startLocation, svgClassName = svgClassName, svgStyle = svgStyle, width = width)
+    val __obj = js.Dynamic.literal(categories = categories.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], endLocation = endLocation.asInstanceOf[js.Any], selectable = selectable.asInstanceOf[js.Any], shortDesc = shortDesc.asInstanceOf[js.Any], startLocation = startLocation.asInstanceOf[js.Any], svgClassName = svgClassName.asInstanceOf[js.Any], svgStyle = svgStyle.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ojThematicMapLinkSettableProperties]
   }

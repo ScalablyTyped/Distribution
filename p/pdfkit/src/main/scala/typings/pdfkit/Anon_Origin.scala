@@ -12,7 +12,7 @@ object Anon_Origin {
   @scala.inline
   def apply(origin: js.Array[Double] = null): Anon_Origin = {
     val __obj = js.Dynamic.literal()
-    if (origin != null) __obj.updateDynamic("origin")(origin)
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Origin]
   }
 }

@@ -39,14 +39,14 @@ object GetOptions {
     revs_info: js.UndefOr[Boolean] = js.undefined
   ): GetOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(attachments)) __obj.updateDynamic("attachments")(attachments)
-    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary)
-    if (!js.isUndefined(conflicts)) __obj.updateDynamic("conflicts")(conflicts)
+    if (!js.isUndefined(attachments)) __obj.updateDynamic("attachments")(attachments.asInstanceOf[js.Any])
+    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary.asInstanceOf[js.Any])
+    if (!js.isUndefined(conflicts)) __obj.updateDynamic("conflicts")(conflicts.asInstanceOf[js.Any])
     if (fetch != null) __obj.updateDynamic("fetch")(js.Any.fromFunction2(fetch))
-    if (!js.isUndefined(latest)) __obj.updateDynamic("latest")(latest)
-    if (rev != null) __obj.updateDynamic("rev")(rev)
-    if (!js.isUndefined(revs)) __obj.updateDynamic("revs")(revs)
-    if (!js.isUndefined(revs_info)) __obj.updateDynamic("revs_info")(revs_info)
+    if (!js.isUndefined(latest)) __obj.updateDynamic("latest")(latest.asInstanceOf[js.Any])
+    if (rev != null) __obj.updateDynamic("rev")(rev.asInstanceOf[js.Any])
+    if (!js.isUndefined(revs)) __obj.updateDynamic("revs")(revs.asInstanceOf[js.Any])
+    if (!js.isUndefined(revs_info)) __obj.updateDynamic("revs_info")(revs_info.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetOptions]
   }
 }

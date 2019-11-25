@@ -22,9 +22,9 @@ object Anon_Alg {
     format: compact | flattened = null
   ): Anon_Alg = {
     val __obj = js.Dynamic.literal()
-    if (alg != null) __obj.updateDynamic("alg")(alg)
-    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (alg != null) __obj.updateDynamic("alg")(alg.asInstanceOf[js.Any])
+    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Alg]
   }

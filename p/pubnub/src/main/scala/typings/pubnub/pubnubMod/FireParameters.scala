@@ -20,9 +20,9 @@ object FireParameters {
     meta: js.Any = null,
     sendByPost: js.UndefOr[Boolean] = js.undefined
   ): FireParameters = {
-    val __obj = js.Dynamic.literal(channel = channel, message = message)
-    if (meta != null) __obj.updateDynamic("meta")(meta)
-    if (!js.isUndefined(sendByPost)) __obj.updateDynamic("sendByPost")(sendByPost)
+    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
+    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
+    if (!js.isUndefined(sendByPost)) __obj.updateDynamic("sendByPost")(sendByPost.asInstanceOf[js.Any])
     __obj.asInstanceOf[FireParameters]
   }
 }

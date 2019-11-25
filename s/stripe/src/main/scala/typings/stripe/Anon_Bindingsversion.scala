@@ -23,7 +23,7 @@ object Anon_Bindingsversion {
     publisher: String,
     uname: String
   ): Anon_Bindingsversion = {
-    val __obj = js.Dynamic.literal(bindings_version = bindings_version, lang = lang, lang_version = lang_version, platform = platform, publisher = publisher, uname = uname)
+    val __obj = js.Dynamic.literal(bindings_version = bindings_version.asInstanceOf[js.Any], lang = lang.asInstanceOf[js.Any], lang_version = lang_version.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], publisher = publisher.asInstanceOf[js.Any], uname = uname.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Bindingsversion]
   }

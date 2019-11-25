@@ -13,7 +13,7 @@ trait Anon_Angle extends js.Object {
 object Anon_Angle {
   @scala.inline
   def apply(angle: Double, axis: Vector3): Anon_Angle = {
-    val __obj = js.Dynamic.literal(angle = angle, axis = axis)
+    val __obj = js.Dynamic.literal(angle = angle.asInstanceOf[js.Any], axis = axis.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Angle]
   }

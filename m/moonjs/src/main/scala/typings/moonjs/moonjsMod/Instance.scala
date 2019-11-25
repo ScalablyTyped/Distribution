@@ -15,12 +15,15 @@ trait Instance[Data] extends js.Object {
   def destroy(): Unit = js.native
   def emit(eventName: String): Unit = js.native
   def emit(eventName: String, data: js.Any): Unit = js.native
-  def get[K /* <: String */](name: K): /* import warning: ImportType.apply Failed type conversion: Data[K] */ js.Any = js.native
+  def get[K /* <: String */](name: K): /* import warning: importer.ImportType#apply Failed type conversion: Data[K] */ js.Any = js.native
   def mount(selector: String): Unit = js.native
   def off(): Unit = js.native
   def off(eventName: String): Unit = js.native
   def off(eventName: String, listener: js.Function1[/* event */ Event, Unit]): Unit = js.native
   def on(eventName: String, listener: js.Function1[/* event */ Event, Unit]): Unit = js.native
-  def set[K /* <: String */](name: K, value: /* import warning: ImportType.apply Failed type conversion: Data[K] */ js.Any): Unit = js.native
+  def set[K /* <: String */](
+    name: K,
+    value: /* import warning: importer.ImportType#apply Failed type conversion: Data[K] */ js.Any
+  ): Unit = js.native
 }
 

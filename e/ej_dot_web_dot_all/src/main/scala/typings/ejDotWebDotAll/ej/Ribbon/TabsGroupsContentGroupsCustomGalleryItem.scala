@@ -47,13 +47,13 @@ object TabsGroupsContentGroupsCustomGalleryItem {
     toolTip: String = null
   ): TabsGroupsContentGroupsCustomGalleryItem = {
     val __obj = js.Dynamic.literal()
-    if (buttonSettings != null) __obj.updateDynamic("buttonSettings")(buttonSettings)
+    if (buttonSettings != null) __obj.updateDynamic("buttonSettings")(buttonSettings.asInstanceOf[js.Any])
     if (customItemType != null) __obj.updateDynamic("customItemType")(customItemType.asInstanceOf[js.Any])
-    if (customToolTip != null) __obj.updateDynamic("customToolTip")(customToolTip)
-    if (menuId != null) __obj.updateDynamic("menuId")(menuId)
-    if (menuSettings != null) __obj.updateDynamic("menuSettings")(menuSettings)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (toolTip != null) __obj.updateDynamic("toolTip")(toolTip)
+    if (customToolTip != null) __obj.updateDynamic("customToolTip")(customToolTip.asInstanceOf[js.Any])
+    if (menuId != null) __obj.updateDynamic("menuId")(menuId.asInstanceOf[js.Any])
+    if (menuSettings != null) __obj.updateDynamic("menuSettings")(menuSettings.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (toolTip != null) __obj.updateDynamic("toolTip")(toolTip.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabsGroupsContentGroupsCustomGalleryItem]
   }
 }

@@ -49,9 +49,9 @@ object EventMap {
     show: Event[show, js.UndefOr[scala.Nothing]],
     zoomchanged: Event[zoomin | zoomout, js.UndefOr[scala.Nothing]]
   ): EventMap = {
-    val __obj = js.Dynamic.literal(hide = hide, location = location, show = show, zoomchanged = zoomchanged)
-    __obj.updateDynamic("location-failed")(`location-failed`)
-    __obj.updateDynamic("location-success")(`location-success`)
+    val __obj = js.Dynamic.literal(hide = hide.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any], zoomchanged = zoomchanged.asInstanceOf[js.Any])
+    __obj.updateDynamic("location-failed")(`location-failed`.asInstanceOf[js.Any])
+    __obj.updateDynamic("location-success")(`location-success`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventMap]
   }
 }

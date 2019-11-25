@@ -20,9 +20,9 @@ object Anon_DisabledEv {
     disabled: js.UndefOr[Boolean] = js.undefined,
     name: String = null
   ): Anon_DisabledEv = {
-    val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction1(onChange), value = value)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (name != null) __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction1(onChange), value = value.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DisabledEv]
   }
 }

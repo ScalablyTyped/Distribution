@@ -15,7 +15,7 @@ object ToggleOptions {
   @scala.inline
   def apply(placeholder: String = null): ToggleOptions = {
     val __obj = js.Dynamic.literal()
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToggleOptions]
   }
 }

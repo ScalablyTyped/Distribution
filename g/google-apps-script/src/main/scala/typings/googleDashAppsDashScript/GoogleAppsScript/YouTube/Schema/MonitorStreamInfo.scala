@@ -19,8 +19,8 @@ object MonitorStreamInfo {
   ): MonitorStreamInfo = {
     val __obj = js.Dynamic.literal()
     if (broadcastStreamDelayMs != null) __obj.updateDynamic("broadcastStreamDelayMs")(broadcastStreamDelayMs.asInstanceOf[js.Any])
-    if (embedHtml != null) __obj.updateDynamic("embedHtml")(embedHtml)
-    if (!js.isUndefined(enableMonitorStream)) __obj.updateDynamic("enableMonitorStream")(enableMonitorStream)
+    if (embedHtml != null) __obj.updateDynamic("embedHtml")(embedHtml.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableMonitorStream)) __obj.updateDynamic("enableMonitorStream")(enableMonitorStream.asInstanceOf[js.Any])
     __obj.asInstanceOf[MonitorStreamInfo]
   }
 }

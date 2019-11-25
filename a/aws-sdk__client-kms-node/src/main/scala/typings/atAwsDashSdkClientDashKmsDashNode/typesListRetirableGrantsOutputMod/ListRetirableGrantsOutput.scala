@@ -35,10 +35,10 @@ object ListRetirableGrantsOutput {
     NextMarker: String = null,
     Truncated: js.UndefOr[Boolean] = js.undefined
   ): ListRetirableGrantsOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (Grants != null) __obj.updateDynamic("Grants")(Grants)
-    if (NextMarker != null) __obj.updateDynamic("NextMarker")(NextMarker)
-    if (!js.isUndefined(Truncated)) __obj.updateDynamic("Truncated")(Truncated)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (Grants != null) __obj.updateDynamic("Grants")(Grants.asInstanceOf[js.Any])
+    if (NextMarker != null) __obj.updateDynamic("NextMarker")(NextMarker.asInstanceOf[js.Any])
+    if (!js.isUndefined(Truncated)) __obj.updateDynamic("Truncated")(Truncated.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListRetirableGrantsOutput]
   }
 }

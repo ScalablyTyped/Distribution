@@ -19,8 +19,8 @@ object GetConnectedBluetoothDevicesSuccessData {
   @scala.inline
   def apply(deviceId: String = null, name: String = null): GetConnectedBluetoothDevicesSuccessData = {
     val __obj = js.Dynamic.literal()
-    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetConnectedBluetoothDevicesSuccessData]
   }
 }

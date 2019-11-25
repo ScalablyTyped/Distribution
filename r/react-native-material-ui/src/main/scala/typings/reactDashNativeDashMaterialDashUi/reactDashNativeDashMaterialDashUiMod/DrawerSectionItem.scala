@@ -27,10 +27,10 @@ object DrawerSectionItem {
     value: String | Element = null
   ): DrawerSectionItem = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (label != null) __obj.updateDynamic("label")(label)
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (onLongPress != null) __obj.updateDynamic("onLongPress")(js.Any.fromFunction0(onLongPress))
     if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction0(onPress))
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])

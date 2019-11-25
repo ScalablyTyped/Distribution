@@ -13,8 +13,8 @@ trait FirebaseService extends js.Object {
 object FirebaseService {
   @scala.inline
   def apply(app: FirebaseApp, INTERNAL: FirebaseServiceInternals = null): FirebaseService = {
-    val __obj = js.Dynamic.literal(app = app)
-    if (INTERNAL != null) __obj.updateDynamic("INTERNAL")(INTERNAL)
+    val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any])
+    if (INTERNAL != null) __obj.updateDynamic("INTERNAL")(INTERNAL.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirebaseService]
   }
 }

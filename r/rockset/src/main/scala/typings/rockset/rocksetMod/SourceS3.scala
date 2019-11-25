@@ -16,9 +16,9 @@ trait SourceS3 extends js.Object {
 object SourceS3 {
   @scala.inline
   def apply(bucket: String, pattern: String = null, prefix: String = null): SourceS3 = {
-    val __obj = js.Dynamic.literal(bucket = bucket)
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern)
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any])
+    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceS3]
   }
 }

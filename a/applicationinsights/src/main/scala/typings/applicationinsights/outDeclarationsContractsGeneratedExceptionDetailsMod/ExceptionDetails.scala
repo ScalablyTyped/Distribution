@@ -49,7 +49,7 @@ object ExceptionDetails {
     stack: String,
     typeName: String
   ): ExceptionDetails = {
-    val __obj = js.Dynamic.literal(hasFullStack = hasFullStack, id = id, message = message, outerId = outerId, parsedStack = parsedStack, stack = stack, typeName = typeName)
+    val __obj = js.Dynamic.literal(hasFullStack = hasFullStack.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], outerId = outerId.asInstanceOf[js.Any], parsedStack = parsedStack.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any], typeName = typeName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExceptionDetails]
   }

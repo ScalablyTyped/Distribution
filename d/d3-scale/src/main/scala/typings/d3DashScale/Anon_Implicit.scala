@@ -12,7 +12,7 @@ trait Anon_Implicit extends js.Object {
 object Anon_Implicit {
   @scala.inline
   def apply(name: `implicit`): Anon_Implicit = {
-    val __obj = js.Dynamic.literal(name = name)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Implicit]
   }

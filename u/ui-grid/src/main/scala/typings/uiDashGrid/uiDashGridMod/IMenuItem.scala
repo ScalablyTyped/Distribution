@@ -36,11 +36,11 @@ object IMenuItem {
     val __obj = js.Dynamic.literal()
     if (action != null) __obj.updateDynamic("action")(js.Any.fromFunction1(action))
     if (active != null) __obj.updateDynamic("active")(js.Any.fromFunction0(active))
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (!js.isUndefined(leaveOpen)) __obj.updateDynamic("leaveOpen")(leaveOpen)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (!js.isUndefined(leaveOpen)) __obj.updateDynamic("leaveOpen")(leaveOpen.asInstanceOf[js.Any])
     if (shown != null) __obj.updateDynamic("shown")(js.Any.fromFunction0(shown))
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMenuItem]
   }
 }

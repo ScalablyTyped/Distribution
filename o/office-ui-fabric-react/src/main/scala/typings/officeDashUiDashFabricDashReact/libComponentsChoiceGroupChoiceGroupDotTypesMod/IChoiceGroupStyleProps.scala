@@ -18,9 +18,9 @@ object IChoiceGroupStyleProps {
     className: String = null,
     optionsContainIconOrImage: js.UndefOr[Boolean] = js.undefined
   ): IChoiceGroupStyleProps = {
-    val __obj = js.Dynamic.literal(theme = theme)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(optionsContainIconOrImage)) __obj.updateDynamic("optionsContainIconOrImage")(optionsContainIconOrImage)
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(optionsContainIconOrImage)) __obj.updateDynamic("optionsContainIconOrImage")(optionsContainIconOrImage.asInstanceOf[js.Any])
     __obj.asInstanceOf[IChoiceGroupStyleProps]
   }
 }

@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait TextSize extends js.Object
 
+object TextSize {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def medium: typings.wixDashStyleDashReact.wixDashStyleDashReactStrings.medium = this.cast("medium")
+  @scala.inline
+  def small: typings.wixDashStyleDashReact.wixDashStyleDashReactStrings.small = this.cast("small")
+  @scala.inline
+  def tiny: typings.wixDashStyleDashReact.wixDashStyleDashReactStrings.tiny = this.cast("tiny")
+}
+

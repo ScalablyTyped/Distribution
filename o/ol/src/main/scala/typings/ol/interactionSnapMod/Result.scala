@@ -15,7 +15,7 @@ trait Result extends js.Object {
 object Result {
   @scala.inline
   def apply(snapped: Boolean, vertex: Coordinate, vertexPixel: Pixel): Result = {
-    val __obj = js.Dynamic.literal(snapped = snapped, vertex = vertex, vertexPixel = vertexPixel)
+    val __obj = js.Dynamic.literal(snapped = snapped.asInstanceOf[js.Any], vertex = vertex.asInstanceOf[js.Any], vertexPixel = vertexPixel.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Result]
   }

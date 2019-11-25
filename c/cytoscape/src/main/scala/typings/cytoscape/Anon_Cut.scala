@@ -15,7 +15,7 @@ trait Anon_Cut extends js.Object {
 object Anon_Cut {
   @scala.inline
   def apply(cut: EdgeCollection, partitionFirst: NodeCollection, partitionSecond: NodeCollection): Anon_Cut = {
-    val __obj = js.Dynamic.literal(cut = cut, partitionFirst = partitionFirst, partitionSecond = partitionSecond)
+    val __obj = js.Dynamic.literal(cut = cut.asInstanceOf[js.Any], partitionFirst = partitionFirst.asInstanceOf[js.Any], partitionSecond = partitionSecond.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Cut]
   }

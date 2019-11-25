@@ -22,7 +22,7 @@ trait INxAutoSortByStateDef extends js.Object {
 object INxAutoSortByStateDef {
   @scala.inline
   def apply(qDisplayNumberOfRows: Double): INxAutoSortByStateDef = {
-    val __obj = js.Dynamic.literal(qDisplayNumberOfRows = qDisplayNumberOfRows)
+    val __obj = js.Dynamic.literal(qDisplayNumberOfRows = qDisplayNumberOfRows.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[INxAutoSortByStateDef]
   }

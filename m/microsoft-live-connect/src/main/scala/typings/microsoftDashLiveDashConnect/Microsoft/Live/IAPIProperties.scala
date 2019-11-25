@@ -33,9 +33,9 @@ trait IAPIProperties extends js.Object {
 object IAPIProperties {
   @scala.inline
   def apply(path: String, body: js.Any = null, method: String = null): IAPIProperties = {
-    val __obj = js.Dynamic.literal(path = path)
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (method != null) __obj.updateDynamic("method")(method)
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAPIProperties]
   }
 }

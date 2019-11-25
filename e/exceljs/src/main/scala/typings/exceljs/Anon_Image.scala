@@ -15,8 +15,8 @@ trait Anon_Image extends js.Object {
 object Anon_Image {
   @scala.inline
   def apply(imageId: String, range: ImageRange, `type`: image): Anon_Image = {
-    val __obj = js.Dynamic.literal(imageId = imageId, range = range)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(imageId = imageId.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Image]
   }
 }

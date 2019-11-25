@@ -38,18 +38,18 @@ object S3UploaderOptions {
     workers: Int | Double = null
   ): S3UploaderOptions = {
     val __obj = js.Dynamic.literal()
-    if (awsAccessKeyId != null) __obj.updateDynamic("awsAccessKeyId")(awsAccessKeyId)
-    if (awsBucketAcl != null) __obj.updateDynamic("awsBucketAcl")(awsBucketAcl)
-    if (awsBucketPath != null) __obj.updateDynamic("awsBucketPath")(awsBucketPath)
-    if (awsBucketRegion != null) __obj.updateDynamic("awsBucketRegion")(awsBucketRegion)
+    if (awsAccessKeyId != null) __obj.updateDynamic("awsAccessKeyId")(awsAccessKeyId.asInstanceOf[js.Any])
+    if (awsBucketAcl != null) __obj.updateDynamic("awsBucketAcl")(awsBucketAcl.asInstanceOf[js.Any])
+    if (awsBucketPath != null) __obj.updateDynamic("awsBucketPath")(awsBucketPath.asInstanceOf[js.Any])
+    if (awsBucketRegion != null) __obj.updateDynamic("awsBucketRegion")(awsBucketRegion.asInstanceOf[js.Any])
     if (awsHttpTimeout != null) __obj.updateDynamic("awsHttpTimeout")(awsHttpTimeout.asInstanceOf[js.Any])
     if (awsMaxRetries != null) __obj.updateDynamic("awsMaxRetries")(awsMaxRetries.asInstanceOf[js.Any])
-    if (awsSecretAccessKey != null) __obj.updateDynamic("awsSecretAccessKey")(awsSecretAccessKey)
+    if (awsSecretAccessKey != null) __obj.updateDynamic("awsSecretAccessKey")(awsSecretAccessKey.asInstanceOf[js.Any])
     if (resizeQuality != null) __obj.updateDynamic("resizeQuality")(resizeQuality.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnExif)) __obj.updateDynamic("returnExif")(returnExif)
-    if (tmpDir != null) __obj.updateDynamic("tmpDir")(tmpDir)
-    if (url != null) __obj.updateDynamic("url")(url)
-    if (versions != null) __obj.updateDynamic("versions")(versions)
+    if (!js.isUndefined(returnExif)) __obj.updateDynamic("returnExif")(returnExif.asInstanceOf[js.Any])
+    if (tmpDir != null) __obj.updateDynamic("tmpDir")(tmpDir.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (versions != null) __obj.updateDynamic("versions")(versions.asInstanceOf[js.Any])
     if (workers != null) __obj.updateDynamic("workers")(workers.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3UploaderOptions]
   }

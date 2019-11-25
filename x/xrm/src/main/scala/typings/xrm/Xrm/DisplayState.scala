@@ -14,3 +14,12 @@ import scala.scalajs.js.annotation._
 */
 trait DisplayState extends js.Object
 
+object DisplayState {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def collapsed: typings.xrm.xrmStrings.collapsed = this.cast("collapsed")
+  @scala.inline
+  def expanded: typings.xrm.xrmStrings.expanded = this.cast("expanded")
+}
+

@@ -18,7 +18,7 @@ object MongooseDocumentOptionals {
   @scala.inline
   def apply(id: js.Any = null): MongooseDocumentOptionals = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[MongooseDocumentOptionals]
   }
 }

@@ -11,7 +11,7 @@ trait State extends js.Object {
 object State {
   @scala.inline
   def apply(isOpen: Boolean): State = {
-    val __obj = js.Dynamic.literal(isOpen = isOpen)
+    val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[State]
   }

@@ -12,7 +12,7 @@ trait DefinedNamesRanges extends js.Object {
 object DefinedNamesRanges {
   @scala.inline
   def apply(name: String, range: js.Array[String]): DefinedNamesRanges = {
-    val __obj = js.Dynamic.literal(name = name, range = range)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DefinedNamesRanges]
   }

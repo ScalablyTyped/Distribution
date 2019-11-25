@@ -91,12 +91,12 @@ object MenuItemSpec {
     select: /* p */ EditorState[S] => Boolean = null,
     title: String | (js.Function1[/* p */ EditorState[S], String]) = null
   ): MenuItemSpec[S] = {
-    val __obj = js.Dynamic.literal(css = css, execEvent = execEvent, run = js.Any.fromFunction4(run))
-    __obj.updateDynamic("class")(`class`)
+    val __obj = js.Dynamic.literal(css = css.asInstanceOf[js.Any], execEvent = execEvent.asInstanceOf[js.Any], run = js.Any.fromFunction4(run))
+    __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
     if (active != null) __obj.updateDynamic("active")(js.Any.fromFunction1(active))
     if (enable != null) __obj.updateDynamic("enable")(js.Any.fromFunction1(enable))
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (label != null) __obj.updateDynamic("label")(label)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
     if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction1(select))
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])

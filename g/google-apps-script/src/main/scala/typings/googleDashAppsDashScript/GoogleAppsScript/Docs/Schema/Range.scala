@@ -15,7 +15,7 @@ object Range {
   def apply(endIndex: Int | Double = null, segmentId: String = null, startIndex: Int | Double = null): Range = {
     val __obj = js.Dynamic.literal()
     if (endIndex != null) __obj.updateDynamic("endIndex")(endIndex.asInstanceOf[js.Any])
-    if (segmentId != null) __obj.updateDynamic("segmentId")(segmentId)
+    if (segmentId != null) __obj.updateDynamic("segmentId")(segmentId.asInstanceOf[js.Any])
     if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[Range]
   }

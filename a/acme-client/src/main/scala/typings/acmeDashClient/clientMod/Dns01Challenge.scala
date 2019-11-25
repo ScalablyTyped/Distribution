@@ -21,10 +21,10 @@ object Dns01Challenge {
     error: js.Object = null,
     validated: String = null
   ): Dns01Challenge = {
-    val __obj = js.Dynamic.literal(status = status, token = token, url = url)
-    __obj.updateDynamic("type")(`type`)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (validated != null) __obj.updateDynamic("validated")(validated)
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (validated != null) __obj.updateDynamic("validated")(validated.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dns01Challenge]
   }
 }

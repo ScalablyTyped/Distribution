@@ -30,7 +30,7 @@ object Response {
     status: Double,
     statusText: String
   ): Response = {
-    val __obj = js.Dynamic.literal(allRequestResponses = allRequestResponses, body = body, duration = duration, headers = headers, isOkStatusCode = isOkStatusCode, redirectedToUrl = redirectedToUrl, requestHeaders = requestHeaders, status = status, statusText = statusText)
+    val __obj = js.Dynamic.literal(allRequestResponses = allRequestResponses.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], isOkStatusCode = isOkStatusCode.asInstanceOf[js.Any], redirectedToUrl = redirectedToUrl.asInstanceOf[js.Any], requestHeaders = requestHeaders.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Response]
   }

@@ -25,9 +25,9 @@ object LocationConstraint {
     suggestLocation: js.UndefOr[Boolean] = js.undefined
   ): LocationConstraint = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isRequired)) __obj.updateDynamic("isRequired")(isRequired)
-    if (locations != null) __obj.updateDynamic("locations")(locations)
-    if (!js.isUndefined(suggestLocation)) __obj.updateDynamic("suggestLocation")(suggestLocation)
+    if (!js.isUndefined(isRequired)) __obj.updateDynamic("isRequired")(isRequired.asInstanceOf[js.Any])
+    if (locations != null) __obj.updateDynamic("locations")(locations.asInstanceOf[js.Any])
+    if (!js.isUndefined(suggestLocation)) __obj.updateDynamic("suggestLocation")(suggestLocation.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationConstraint]
   }
 }

@@ -28,14 +28,14 @@ object IButtonClassNames {
     textContainer: String = null
   ): IButtonClassNames = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (flexContainer != null) __obj.updateDynamic("flexContainer")(flexContainer)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (menuIcon != null) __obj.updateDynamic("menuIcon")(menuIcon)
-    if (root != null) __obj.updateDynamic("root")(root)
-    if (screenReaderText != null) __obj.updateDynamic("screenReaderText")(screenReaderText)
-    if (textContainer != null) __obj.updateDynamic("textContainer")(textContainer)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (flexContainer != null) __obj.updateDynamic("flexContainer")(flexContainer.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (menuIcon != null) __obj.updateDynamic("menuIcon")(menuIcon.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (screenReaderText != null) __obj.updateDynamic("screenReaderText")(screenReaderText.asInstanceOf[js.Any])
+    if (textContainer != null) __obj.updateDynamic("textContainer")(textContainer.asInstanceOf[js.Any])
     __obj.asInstanceOf[IButtonClassNames]
   }
 }

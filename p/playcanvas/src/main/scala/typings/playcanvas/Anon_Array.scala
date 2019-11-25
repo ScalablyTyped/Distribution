@@ -42,21 +42,21 @@ object Anon_Array {
     title: String = null
   ): Anon_Array = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(array)) __obj.updateDynamic("array")(array)
-    if (assetType != null) __obj.updateDynamic("assetType")(assetType)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (curves != null) __obj.updateDynamic("curves")(curves)
-    if (default != null) __obj.updateDynamic("default")(default)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (enum != null) __obj.updateDynamic("enum")(enum)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(array)) __obj.updateDynamic("array")(array.asInstanceOf[js.Any])
+    if (assetType != null) __obj.updateDynamic("assetType")(assetType.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (curves != null) __obj.updateDynamic("curves")(curves.asInstanceOf[js.Any])
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (enum != null) __obj.updateDynamic("enum")(enum.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Array]
   }
 }

@@ -24,9 +24,9 @@ object Anon_Tcp {
     udp: SocketUdpPermission = null
   ): Anon_Tcp = {
     val __obj = js.Dynamic.literal()
-    if (tcp != null) __obj.updateDynamic("tcp")(tcp)
-    if (tcpServer != null) __obj.updateDynamic("tcpServer")(tcpServer)
-    if (udp != null) __obj.updateDynamic("udp")(udp)
+    if (tcp != null) __obj.updateDynamic("tcp")(tcp.asInstanceOf[js.Any])
+    if (tcpServer != null) __obj.updateDynamic("tcpServer")(tcpServer.asInstanceOf[js.Any])
+    if (udp != null) __obj.updateDynamic("udp")(udp.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Tcp]
   }
 }

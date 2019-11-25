@@ -27,13 +27,13 @@ object APNSAlert {
     `title-loc-args`: js.Array[String],
     `title-loc-key`: String
   ): APNSAlert = {
-    val __obj = js.Dynamic.literal(body = body, title = title)
-    __obj.updateDynamic("action-loc-key")(`action-loc-key`)
-    __obj.updateDynamic("launch-image")(`launch-image`)
-    __obj.updateDynamic("loc-args")(`loc-args`)
-    __obj.updateDynamic("loc-key")(`loc-key`)
-    __obj.updateDynamic("title-loc-args")(`title-loc-args`)
-    __obj.updateDynamic("title-loc-key")(`title-loc-key`)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    __obj.updateDynamic("action-loc-key")(`action-loc-key`.asInstanceOf[js.Any])
+    __obj.updateDynamic("launch-image")(`launch-image`.asInstanceOf[js.Any])
+    __obj.updateDynamic("loc-args")(`loc-args`.asInstanceOf[js.Any])
+    __obj.updateDynamic("loc-key")(`loc-key`.asInstanceOf[js.Any])
+    __obj.updateDynamic("title-loc-args")(`title-loc-args`.asInstanceOf[js.Any])
+    __obj.updateDynamic("title-loc-key")(`title-loc-key`.asInstanceOf[js.Any])
     __obj.asInstanceOf[APNSAlert]
   }
 }

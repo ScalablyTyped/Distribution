@@ -13,7 +13,7 @@ trait Anon_DomEvent extends js.Object {
 object Anon_DomEvent {
   @scala.inline
   def apply(domEvent: MouseEvent, key: String): Anon_DomEvent = {
-    val __obj = js.Dynamic.literal(domEvent = domEvent, key = key)
+    val __obj = js.Dynamic.literal(domEvent = domEvent.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DomEvent]
   }

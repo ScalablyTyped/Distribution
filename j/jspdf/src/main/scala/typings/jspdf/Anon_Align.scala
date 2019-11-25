@@ -21,10 +21,10 @@ object Anon_Align {
     prompt: String = null,
     width: Int | Double = null
   ): Anon_Align = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (align != null) __obj.updateDynamic("align")(align)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (prompt != null) __obj.updateDynamic("prompt")(prompt)
+    if (prompt != null) __obj.updateDynamic("prompt")(prompt.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Align]
   }

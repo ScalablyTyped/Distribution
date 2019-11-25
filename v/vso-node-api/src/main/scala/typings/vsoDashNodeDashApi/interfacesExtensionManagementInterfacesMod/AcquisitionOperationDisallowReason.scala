@@ -18,8 +18,8 @@ trait AcquisitionOperationDisallowReason extends js.Object {
 object AcquisitionOperationDisallowReason {
   @scala.inline
   def apply(message: String, `type`: String): AcquisitionOperationDisallowReason = {
-    val __obj = js.Dynamic.literal(message = message)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AcquisitionOperationDisallowReason]
   }
 }

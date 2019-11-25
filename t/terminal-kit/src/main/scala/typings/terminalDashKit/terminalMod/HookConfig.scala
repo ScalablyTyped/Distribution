@@ -26,11 +26,11 @@ object HookConfig {
   ): HookConfig = {
     val __obj = js.Dynamic.literal()
     if (autoComplete != null) __obj.updateDynamic("autoComplete")(autoComplete.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoCompleteHint)) __obj.updateDynamic("autoCompleteHint")(autoCompleteHint)
+    if (!js.isUndefined(autoCompleteHint)) __obj.updateDynamic("autoCompleteHint")(autoCompleteHint.asInstanceOf[js.Any])
     if (autoCompleteMenu != null) __obj.updateDynamic("autoCompleteMenu")(autoCompleteMenu.asInstanceOf[js.Any])
-    if (hintStyle != null) __obj.updateDynamic("hintStyle")(hintStyle)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (tokenRegExp != null) __obj.updateDynamic("tokenRegExp")(tokenRegExp)
+    if (hintStyle != null) __obj.updateDynamic("hintStyle")(hintStyle.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (tokenRegExp != null) __obj.updateDynamic("tokenRegExp")(tokenRegExp.asInstanceOf[js.Any])
     __obj.asInstanceOf[HookConfig]
   }
 }

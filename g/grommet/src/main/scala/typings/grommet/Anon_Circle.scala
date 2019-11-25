@@ -12,7 +12,7 @@ object Anon_Circle {
   @scala.inline
   def apply(circle: String = null): Anon_Circle = {
     val __obj = js.Dynamic.literal()
-    if (circle != null) __obj.updateDynamic("circle")(circle)
+    if (circle != null) __obj.updateDynamic("circle")(circle.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Circle]
   }
 }

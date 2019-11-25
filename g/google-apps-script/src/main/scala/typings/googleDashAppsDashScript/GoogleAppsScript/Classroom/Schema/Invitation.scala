@@ -15,10 +15,10 @@ object Invitation {
   @scala.inline
   def apply(courseId: String = null, id: String = null, role: String = null, userId: String = null): Invitation = {
     val __obj = js.Dynamic.literal()
-    if (courseId != null) __obj.updateDynamic("courseId")(courseId)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (role != null) __obj.updateDynamic("role")(role)
-    if (userId != null) __obj.updateDynamic("userId")(userId)
+    if (courseId != null) __obj.updateDynamic("courseId")(courseId.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
+    if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Invitation]
   }
 }

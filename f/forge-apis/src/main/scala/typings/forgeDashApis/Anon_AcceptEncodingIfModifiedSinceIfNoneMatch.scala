@@ -22,11 +22,11 @@ object Anon_AcceptEncodingIfModifiedSinceIfNoneMatch {
     region: String = null
   ): Anon_AcceptEncodingIfModifiedSinceIfNoneMatch = {
     val __obj = js.Dynamic.literal()
-    if (acceptEncoding != null) __obj.updateDynamic("acceptEncoding")(acceptEncoding)
-    if (ifModifiedSince != null) __obj.updateDynamic("ifModifiedSince")(ifModifiedSince)
-    if (ifNoneMatch != null) __obj.updateDynamic("ifNoneMatch")(ifNoneMatch)
-    if (range != null) __obj.updateDynamic("range")(range)
-    if (region != null) __obj.updateDynamic("region")(region)
+    if (acceptEncoding != null) __obj.updateDynamic("acceptEncoding")(acceptEncoding.asInstanceOf[js.Any])
+    if (ifModifiedSince != null) __obj.updateDynamic("ifModifiedSince")(ifModifiedSince.asInstanceOf[js.Any])
+    if (ifNoneMatch != null) __obj.updateDynamic("ifNoneMatch")(ifNoneMatch.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AcceptEncodingIfModifiedSinceIfNoneMatch]
   }
 }

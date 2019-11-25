@@ -56,9 +56,6 @@ object GmePlugin extends js.Object {
     var project: Project = js.native
     var result: Result = js.native
     var rootNode: Node = js.native
-     // returns a promise?
-    @JSName("sendNotification")
-    var sendNotification_Original: Fn_CallbackMessageDataObject = js.native
     def addCommitToResult(status: String): Unit = js.native
     def baseIsMeta(node: js.Any): Boolean = js.native
     def configure(config: typings.webgme.GmeConfig.GmeConfig): Unit = js.native

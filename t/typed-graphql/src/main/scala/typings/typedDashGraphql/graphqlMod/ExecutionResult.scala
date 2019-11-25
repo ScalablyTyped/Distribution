@@ -12,8 +12,8 @@ trait ExecutionResult extends js.Object {
 object ExecutionResult {
   @scala.inline
   def apply(data: js.Any, errors: js.Array[GraphQLError] = null): ExecutionResult = {
-    val __obj = js.Dynamic.literal(data = data)
-    if (errors != null) __obj.updateDynamic("errors")(errors)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecutionResult]
   }
 }

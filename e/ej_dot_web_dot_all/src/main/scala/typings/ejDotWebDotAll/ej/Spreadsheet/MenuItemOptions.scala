@@ -23,10 +23,10 @@ object MenuItemOptions {
   @scala.inline
   def apply(id: String = null, parentId: String = null, spriteCssClass: String = null, text: String = null): MenuItemOptions = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (parentId != null) __obj.updateDynamic("parentId")(parentId)
-    if (spriteCssClass != null) __obj.updateDynamic("spriteCssClass")(spriteCssClass)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (parentId != null) __obj.updateDynamic("parentId")(parentId.asInstanceOf[js.Any])
+    if (spriteCssClass != null) __obj.updateDynamic("spriteCssClass")(spriteCssClass.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuItemOptions]
   }
 }

@@ -16,7 +16,7 @@ trait Anon_Key extends js.Object {
 object Anon_Key {
   @scala.inline
   def apply(layer: Layer, source: String, sourceLayer: String, state: StringDictionary[js.Any]): Anon_Key = {
-    val __obj = js.Dynamic.literal(layer = layer, source = source, sourceLayer = sourceLayer, state = state)
+    val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], sourceLayer = sourceLayer.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Key]
   }

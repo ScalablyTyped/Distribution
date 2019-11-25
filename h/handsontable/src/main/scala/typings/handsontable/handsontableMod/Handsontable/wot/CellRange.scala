@@ -13,7 +13,7 @@ trait CellRange extends js.Object {
 object CellRange {
   @scala.inline
   def apply(from: CellCoords, highlight: CellCoords, to: CellCoords): CellRange = {
-    val __obj = js.Dynamic.literal(from = from, highlight = highlight, to = to)
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], highlight = highlight.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CellRange]
   }

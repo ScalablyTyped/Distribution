@@ -26,9 +26,9 @@ trait ScheduleKeyDeletionOutput extends OutputTypesUnion {
 object ScheduleKeyDeletionOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, DeletionDate: Date = null, KeyId: String = null): ScheduleKeyDeletionOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (DeletionDate != null) __obj.updateDynamic("DeletionDate")(DeletionDate)
-    if (KeyId != null) __obj.updateDynamic("KeyId")(KeyId)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (DeletionDate != null) __obj.updateDynamic("DeletionDate")(DeletionDate.asInstanceOf[js.Any])
+    if (KeyId != null) __obj.updateDynamic("KeyId")(KeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScheduleKeyDeletionOutput]
   }
 }

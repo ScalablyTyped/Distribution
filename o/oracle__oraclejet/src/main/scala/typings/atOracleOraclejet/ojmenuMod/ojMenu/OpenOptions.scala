@@ -22,10 +22,10 @@ object OpenOptions {
     position: Position = null
   ): OpenOptions = {
     val __obj = js.Dynamic.literal()
-    if (display != null) __obj.updateDynamic("display")(display)
-    if (initialFocus != null) __obj.updateDynamic("initialFocus")(initialFocus)
+    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
+    if (initialFocus != null) __obj.updateDynamic("initialFocus")(initialFocus.asInstanceOf[js.Any])
     if (launcher != null) __obj.updateDynamic("launcher")(launcher.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenOptions]
   }
 }

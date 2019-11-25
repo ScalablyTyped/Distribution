@@ -29,10 +29,10 @@ object BreadcrumbItemProps {
     separator: ReactNode = null
   ): BreadcrumbItemProps = {
     val __obj = js.Dynamic.literal()
-    if (href != null) __obj.updateDynamic("href")(href)
+    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (overlay != null) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     __obj.asInstanceOf[BreadcrumbItemProps]
   }

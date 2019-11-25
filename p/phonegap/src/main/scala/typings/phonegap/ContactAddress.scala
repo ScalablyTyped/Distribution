@@ -27,8 +27,8 @@ object ContactAddress {
     streetAddress: String,
     `type`: String
   ): ContactAddress = {
-    val __obj = js.Dynamic.literal(country = country, formatted = formatted, locality = locality, postalCode = postalCode, pref = pref, region = region, streetAddress = streetAddress)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(country = country.asInstanceOf[js.Any], formatted = formatted.asInstanceOf[js.Any], locality = locality.asInstanceOf[js.Any], postalCode = postalCode.asInstanceOf[js.Any], pref = pref.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], streetAddress = streetAddress.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContactAddress]
   }
 }

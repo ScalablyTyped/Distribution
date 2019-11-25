@@ -13,8 +13,8 @@ object Anon_ClassAttr {
   @scala.inline
   def apply(classAttr: String = null, styleAttr: String = null): Anon_ClassAttr = {
     val __obj = js.Dynamic.literal()
-    if (classAttr != null) __obj.updateDynamic("classAttr")(classAttr)
-    if (styleAttr != null) __obj.updateDynamic("styleAttr")(styleAttr)
+    if (classAttr != null) __obj.updateDynamic("classAttr")(classAttr.asInstanceOf[js.Any])
+    if (styleAttr != null) __obj.updateDynamic("styleAttr")(styleAttr.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ClassAttr]
   }
 }

@@ -14,7 +14,7 @@ trait Results extends js.Object {
 object Results {
   @scala.inline
   def apply(rows: Anon_I, rowsAffected: Double, insertId: Int | Double = null): Results = {
-    val __obj = js.Dynamic.literal(rows = rows, rowsAffected = rowsAffected)
+    val __obj = js.Dynamic.literal(rows = rows.asInstanceOf[js.Any], rowsAffected = rowsAffected.asInstanceOf[js.Any])
     if (insertId != null) __obj.updateDynamic("insertId")(insertId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Results]
   }

@@ -23,7 +23,7 @@ object WebBrowser_V1_BeforeNavigate_Parameter {
     TargetFrameName: String,
     URL: String
   ): WebBrowser_V1_BeforeNavigate_Parameter = {
-    val __obj = js.Dynamic.literal(Cancel = Cancel, Flags = Flags, Headers = Headers, PostData = PostData, TargetFrameName = TargetFrameName, URL = URL)
+    val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], Flags = Flags.asInstanceOf[js.Any], Headers = Headers.asInstanceOf[js.Any], PostData = PostData.asInstanceOf[js.Any], TargetFrameName = TargetFrameName.asInstanceOf[js.Any], URL = URL.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WebBrowser_V1_BeforeNavigate_Parameter]
   }

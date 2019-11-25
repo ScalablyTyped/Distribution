@@ -11,7 +11,7 @@ trait RolesData extends js.Object {
 object RolesData {
   @scala.inline
   def apply(roles: js.Array[String]): RolesData = {
-    val __obj = js.Dynamic.literal(roles = roles)
+    val __obj = js.Dynamic.literal(roles = roles.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RolesData]
   }

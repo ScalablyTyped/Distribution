@@ -22,11 +22,11 @@ object DialogInputConfig {
     placeholderText: String = null,
     text: String = null
   ): DialogInputConfig = {
-    val __obj = js.Dynamic.literal(title = title)
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (placeholderText != null) __obj.updateDynamic("placeholderText")(placeholderText)
-    if (text != null) __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
+    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (placeholderText != null) __obj.updateDynamic("placeholderText")(placeholderText.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogInputConfig]
   }
 }

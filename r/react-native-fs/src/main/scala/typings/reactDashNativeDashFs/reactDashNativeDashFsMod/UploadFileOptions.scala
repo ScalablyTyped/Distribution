@@ -39,13 +39,13 @@ object UploadFileOptions {
     progress: /* res */ UploadProgressCallbackResult => Unit = null,
     progressCallback: /* res */ UploadProgressCallbackResult => Unit = null
   ): UploadFileOptions = {
-    val __obj = js.Dynamic.literal(files = files, toUrl = toUrl)
+    val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any], toUrl = toUrl.asInstanceOf[js.Any])
     if (begin != null) __obj.updateDynamic("begin")(js.Any.fromFunction1(begin))
     if (beginCallback != null) __obj.updateDynamic("beginCallback")(js.Any.fromFunction1(beginCallback))
-    if (!js.isUndefined(binaryStreamOnly)) __obj.updateDynamic("binaryStreamOnly")(binaryStreamOnly)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (method != null) __obj.updateDynamic("method")(method)
+    if (!js.isUndefined(binaryStreamOnly)) __obj.updateDynamic("binaryStreamOnly")(binaryStreamOnly.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (progress != null) __obj.updateDynamic("progress")(js.Any.fromFunction1(progress))
     if (progressCallback != null) __obj.updateDynamic("progressCallback")(js.Any.fromFunction1(progressCallback))
     __obj.asInstanceOf[UploadFileOptions]

@@ -40,9 +40,9 @@ object IOptions {
     orientation: Orientation = null,
     spacing: Int | Double = null
   ): IOptions = {
-    val __obj = js.Dynamic.literal(renderer = renderer)
-    if (alignment != null) __obj.updateDynamic("alignment")(alignment)
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation)
+    val __obj = js.Dynamic.literal(renderer = renderer.asInstanceOf[js.Any])
+    if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     if (spacing != null) __obj.updateDynamic("spacing")(spacing.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }

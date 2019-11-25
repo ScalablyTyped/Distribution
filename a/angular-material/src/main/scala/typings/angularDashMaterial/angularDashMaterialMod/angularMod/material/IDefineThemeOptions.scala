@@ -22,11 +22,11 @@ object IDefineThemeOptions {
     warn: String = null
   ): IDefineThemeOptions = {
     val __obj = js.Dynamic.literal()
-    if (accent != null) __obj.updateDynamic("accent")(accent)
-    if (background != null) __obj.updateDynamic("background")(background)
-    if (!js.isUndefined(dark)) __obj.updateDynamic("dark")(dark)
-    if (primary != null) __obj.updateDynamic("primary")(primary)
-    if (warn != null) __obj.updateDynamic("warn")(warn)
+    if (accent != null) __obj.updateDynamic("accent")(accent.asInstanceOf[js.Any])
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    if (!js.isUndefined(dark)) __obj.updateDynamic("dark")(dark.asInstanceOf[js.Any])
+    if (primary != null) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
+    if (warn != null) __obj.updateDynamic("warn")(warn.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDefineThemeOptions]
   }
 }

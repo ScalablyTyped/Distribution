@@ -23,7 +23,7 @@ object ServiceIntentOptions {
   def apply(startMode: Int | Double = null, url: String = null): ServiceIntentOptions = {
     val __obj = js.Dynamic.literal()
     if (startMode != null) __obj.updateDynamic("startMode")(startMode.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceIntentOptions]
   }
 }

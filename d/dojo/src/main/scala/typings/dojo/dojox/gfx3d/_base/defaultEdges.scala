@@ -27,8 +27,8 @@ trait defaultEdges extends js.Object {
 object defaultEdges {
   @scala.inline
   def apply(points: js.Array[_], style: Object, `type`: String): defaultEdges = {
-    val __obj = js.Dynamic.literal(points = points, style = style)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(points = points.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[defaultEdges]
   }
 }

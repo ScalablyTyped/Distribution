@@ -26,8 +26,8 @@ trait EntityReference extends js.Object {
 object EntityReference {
   @scala.inline
   def apply(id: Anon_Guid, name: String, etn: String = null): EntityReference = {
-    val __obj = js.Dynamic.literal(id = id, name = name)
-    if (etn != null) __obj.updateDynamic("etn")(etn)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (etn != null) __obj.updateDynamic("etn")(etn.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntityReference]
   }
 }

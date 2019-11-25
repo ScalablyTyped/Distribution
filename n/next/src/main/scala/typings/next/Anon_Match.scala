@@ -15,7 +15,7 @@ trait Anon_Match extends js.Object {
 object Anon_Match {
   @scala.inline
   def apply(`match`: /* pathname */ js.UndefOr[String] => `false` | Params, page: String): Anon_Match = {
-    val __obj = js.Dynamic.literal(page = page)
+    val __obj = js.Dynamic.literal(page = page.asInstanceOf[js.Any])
     __obj.updateDynamic("match")(js.Any.fromFunction1(`match`))
     __obj.asInstanceOf[Anon_Match]
   }

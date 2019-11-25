@@ -16,7 +16,7 @@ object Anon_FrameIdName {
   def apply(frameId: Int | Double = null, name: String = null): Anon_FrameIdName = {
     val __obj = js.Dynamic.literal()
     if (frameId != null) __obj.updateDynamic("frameId")(frameId.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FrameIdName]
   }
 }

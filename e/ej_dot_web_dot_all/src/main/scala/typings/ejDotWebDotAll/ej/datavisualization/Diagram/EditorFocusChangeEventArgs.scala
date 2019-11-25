@@ -23,10 +23,10 @@ object EditorFocusChangeEventArgs {
   @scala.inline
   def apply(diagramId: String = null, event: js.Any = null, model: js.Any = null, `type`: String = null): EditorFocusChangeEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId)
-    if (event != null) __obj.updateDynamic("event")(event)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId.asInstanceOf[js.Any])
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorFocusChangeEventArgs]
   }
 }

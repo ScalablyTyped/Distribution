@@ -17,7 +17,7 @@ object AsObject {
       typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.VMVerificationStatus.AsObject
     ]
   ): AsObject = {
-    val __obj = js.Dynamic.literal(statusListList = statusListList)
+    val __obj = js.Dynamic.literal(statusListList = statusListList.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AsObject]
   }

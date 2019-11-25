@@ -12,7 +12,7 @@ trait ControlFlowEnd extends js.Object {
 object ControlFlowEnd {
   @scala.inline
   def apply(end: Boolean, statements: js.Array[ControlFlowStatement]): ControlFlowEnd = {
-    val __obj = js.Dynamic.literal(end = end, statements = statements)
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], statements = statements.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ControlFlowEnd]
   }

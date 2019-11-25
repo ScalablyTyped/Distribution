@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait Availability extends js.Object
 
+object Availability {
+  @scala.inline
+  def available: typings.pouchdbDashCore.pouchdbDashCoreStrings.available = this.cast("available")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def compacted: typings.pouchdbDashCore.pouchdbDashCoreStrings.compacted = this.cast("compacted")
+  @scala.inline
+  def missing: typings.pouchdbDashCore.pouchdbDashCoreStrings.missing = this.cast("missing")
+  @scala.inline
+  def `not compacted`: typings.pouchdbDashCore.pouchdbDashCoreStrings.`not compacted` = this.cast("not compacted")
+}
+

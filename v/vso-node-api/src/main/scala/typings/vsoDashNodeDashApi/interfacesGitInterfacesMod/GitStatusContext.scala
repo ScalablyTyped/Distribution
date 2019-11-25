@@ -18,7 +18,7 @@ trait GitStatusContext extends js.Object {
 object GitStatusContext {
   @scala.inline
   def apply(genre: String, name: String): GitStatusContext = {
-    val __obj = js.Dynamic.literal(genre = genre, name = name)
+    val __obj = js.Dynamic.literal(genre = genre.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GitStatusContext]
   }

@@ -13,7 +13,7 @@ object TaskOptions {
   @scala.inline
   def apply(msg: String = null, tickInterval: Int | Double = null): TaskOptions = {
     val __obj = js.Dynamic.literal()
-    if (msg != null) __obj.updateDynamic("msg")(msg)
+    if (msg != null) __obj.updateDynamic("msg")(msg.asInstanceOf[js.Any])
     if (tickInterval != null) __obj.updateDynamic("tickInterval")(tickInterval.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskOptions]
   }

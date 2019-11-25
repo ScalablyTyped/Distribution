@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait LayoutType extends js.Object
 
+object LayoutType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def horizontal: typings.recharts.rechartsStrings.horizontal = this.cast("horizontal")
+  @scala.inline
+  def vertical: typings.recharts.rechartsStrings.vertical = this.cast("vertical")
+}
+

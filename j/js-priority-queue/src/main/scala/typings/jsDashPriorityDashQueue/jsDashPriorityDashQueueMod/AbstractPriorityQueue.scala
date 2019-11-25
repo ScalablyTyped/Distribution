@@ -30,7 +30,7 @@ trait AbstractPriorityQueue[T] extends js.Object {
 object AbstractPriorityQueue {
   @scala.inline
   def apply[T](clear: () => Unit, dequeue: () => T, length: Double, peek: () => T, queue: T => Unit): AbstractPriorityQueue[T] = {
-    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), dequeue = js.Any.fromFunction0(dequeue), length = length, peek = js.Any.fromFunction0(peek), queue = js.Any.fromFunction1(queue))
+    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), dequeue = js.Any.fromFunction0(dequeue), length = length.asInstanceOf[js.Any], peek = js.Any.fromFunction0(peek), queue = js.Any.fromFunction1(queue))
   
     __obj.asInstanceOf[AbstractPriorityQueue[T]]
   }

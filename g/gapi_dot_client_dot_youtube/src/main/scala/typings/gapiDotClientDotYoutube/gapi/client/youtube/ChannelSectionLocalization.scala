@@ -13,7 +13,7 @@ object ChannelSectionLocalization {
   @scala.inline
   def apply(title: String = null): ChannelSectionLocalization = {
     val __obj = js.Dynamic.literal()
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelSectionLocalization]
   }
 }

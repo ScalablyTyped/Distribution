@@ -12,7 +12,7 @@ trait Anon_LineEnding extends js.Object {
 object Anon_LineEnding {
   @scala.inline
   def apply(lineEnding: String, preserveBOM: Boolean): Anon_LineEnding = {
-    val __obj = js.Dynamic.literal(lineEnding = lineEnding, preserveBOM = preserveBOM)
+    val __obj = js.Dynamic.literal(lineEnding = lineEnding.asInstanceOf[js.Any], preserveBOM = preserveBOM.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_LineEnding]
   }

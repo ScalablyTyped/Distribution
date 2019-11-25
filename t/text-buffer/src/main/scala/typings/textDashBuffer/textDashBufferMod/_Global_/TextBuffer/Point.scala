@@ -78,11 +78,10 @@ object Point {
     row: Double,
     serialize: () => js.Tuple2[Double, Double],
     toArray: () => js.Tuple2[Double, Double],
-    toString: () => String,
     translate: PointCompatible => Point,
     traverse: PointCompatible => Point
   ): Point = {
-    val __obj = js.Dynamic.literal(column = column, compare = js.Any.fromFunction1(compare), copy = js.Any.fromFunction0(copy), freeze = js.Any.fromFunction0(freeze), isEqual = js.Any.fromFunction1(isEqual), isGreaterThan = js.Any.fromFunction1(isGreaterThan), isGreaterThanOrEqual = js.Any.fromFunction1(isGreaterThanOrEqual), isLessThan = js.Any.fromFunction1(isLessThan), isLessThanOrEqual = js.Any.fromFunction1(isLessThanOrEqual), negate = js.Any.fromFunction0(negate), row = row, serialize = js.Any.fromFunction0(serialize), toArray = js.Any.fromFunction0(toArray), toString = js.Any.fromFunction0(toString), translate = js.Any.fromFunction1(translate), traverse = js.Any.fromFunction1(traverse))
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], compare = js.Any.fromFunction1(compare), copy = js.Any.fromFunction0(copy), freeze = js.Any.fromFunction0(freeze), isEqual = js.Any.fromFunction1(isEqual), isGreaterThan = js.Any.fromFunction1(isGreaterThan), isGreaterThanOrEqual = js.Any.fromFunction1(isGreaterThanOrEqual), isLessThan = js.Any.fromFunction1(isLessThan), isLessThanOrEqual = js.Any.fromFunction1(isLessThanOrEqual), negate = js.Any.fromFunction0(negate), row = row.asInstanceOf[js.Any], serialize = js.Any.fromFunction0(serialize), toArray = js.Any.fromFunction0(toArray), translate = js.Any.fromFunction1(translate), traverse = js.Any.fromFunction1(traverse))
   
     __obj.asInstanceOf[Point]
   }

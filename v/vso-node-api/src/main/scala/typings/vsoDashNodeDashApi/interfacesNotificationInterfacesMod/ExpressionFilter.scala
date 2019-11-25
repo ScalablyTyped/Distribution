@@ -11,8 +11,8 @@ trait ExpressionFilter extends BaseSubscriptionFilter {
 object ExpressionFilter {
   @scala.inline
   def apply(criteria: ExpressionFilterModel, eventType: String, `type`: String): ExpressionFilter = {
-    val __obj = js.Dynamic.literal(criteria = criteria, eventType = eventType)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(criteria = criteria.asInstanceOf[js.Any], eventType = eventType.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExpressionFilter]
   }
 }

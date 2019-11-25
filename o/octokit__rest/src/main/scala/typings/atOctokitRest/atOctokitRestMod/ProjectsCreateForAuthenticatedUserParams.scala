@@ -18,8 +18,8 @@ trait ProjectsCreateForAuthenticatedUserParams extends js.Object {
 object ProjectsCreateForAuthenticatedUserParams {
   @scala.inline
   def apply(name: String, body: String = null): ProjectsCreateForAuthenticatedUserParams = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (body != null) __obj.updateDynamic("body")(body)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectsCreateForAuthenticatedUserParams]
   }
 }

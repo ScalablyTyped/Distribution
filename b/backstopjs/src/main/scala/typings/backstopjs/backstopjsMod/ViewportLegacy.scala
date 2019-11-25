@@ -16,7 +16,7 @@ trait ViewportLegacy extends Viewport {
 object ViewportLegacy {
   @scala.inline
   def apply(height: Double, name: phone | tablet | desktop, width: Double): ViewportLegacy = {
-    val __obj = js.Dynamic.literal(height = height, name = name.asInstanceOf[js.Any], width = width)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ViewportLegacy]
   }

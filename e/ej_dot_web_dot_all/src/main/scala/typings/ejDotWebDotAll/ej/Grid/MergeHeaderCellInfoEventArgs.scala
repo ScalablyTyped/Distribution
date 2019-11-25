@@ -24,9 +24,9 @@ object MergeHeaderCellInfoEventArgs {
     model: js.Any = null
   ): MergeHeaderCellInfoEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (columnHeaders != null) __obj.updateDynamic("columnHeaders")(columnHeaders)
+    if (columnHeaders != null) __obj.updateDynamic("columnHeaders")(columnHeaders.asInstanceOf[js.Any])
     if (headerCellMerge != null) __obj.updateDynamic("headerCellMerge")(js.Any.fromFunction2(headerCellMerge))
-    if (model != null) __obj.updateDynamic("model")(model)
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     __obj.asInstanceOf[MergeHeaderCellInfoEventArgs]
   }
 }

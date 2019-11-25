@@ -19,8 +19,8 @@ object Anon_Callback {
   ): Anon_Callback = {
     val __obj = js.Dynamic.literal()
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction0(callback))
-    if (!js.isUndefined(internal)) __obj.updateDynamic("internal")(internal)
-    if (!js.isUndefined(noSnapshot)) __obj.updateDynamic("noSnapshot")(noSnapshot)
+    if (!js.isUndefined(internal)) __obj.updateDynamic("internal")(internal.asInstanceOf[js.Any])
+    if (!js.isUndefined(noSnapshot)) __obj.updateDynamic("noSnapshot")(noSnapshot.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Callback]
   }
 }

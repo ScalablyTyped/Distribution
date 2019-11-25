@@ -13,7 +13,7 @@ trait ISignaturePromptInfo extends js.Object {
 object ISignaturePromptInfo {
   @scala.inline
   def apply(Clone: () => ISignaturePromptInfo, Meaning: String, Reason: String): ISignaturePromptInfo = {
-    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), Meaning = Meaning, Reason = Reason)
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), Meaning = Meaning.asInstanceOf[js.Any], Reason = Reason.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISignaturePromptInfo]
   }

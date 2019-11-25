@@ -27,7 +27,7 @@ trait text_alignment extends js.Object {
 object text_alignment {
   @scala.inline
   def apply(end: String, middle: String, start: String): text_alignment = {
-    val __obj = js.Dynamic.literal(end = end, middle = middle, start = start)
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], middle = middle.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[text_alignment]
   }

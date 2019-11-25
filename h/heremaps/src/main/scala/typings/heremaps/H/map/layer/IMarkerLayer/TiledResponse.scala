@@ -20,7 +20,7 @@ trait TiledResponse extends js.Object {
 object TiledResponse {
   @scala.inline
   def apply(number: Double, objects: js.Array[AbstractMarker], requested: Double): TiledResponse = {
-    val __obj = js.Dynamic.literal(number = number, objects = objects, requested = requested)
+    val __obj = js.Dynamic.literal(number = number.asInstanceOf[js.Any], objects = objects.asInstanceOf[js.Any], requested = requested.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TiledResponse]
   }

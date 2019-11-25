@@ -11,7 +11,7 @@ trait Anon_History extends js.Object {
 object Anon_History {
   @scala.inline
   def apply(history: Anon_Offset): Anon_History = {
-    val __obj = js.Dynamic.literal(history = history)
+    val __obj = js.Dynamic.literal(history = history.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_History]
   }

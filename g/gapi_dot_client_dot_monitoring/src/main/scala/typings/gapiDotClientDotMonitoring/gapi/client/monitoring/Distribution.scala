@@ -43,11 +43,11 @@ object Distribution {
     sumOfSquaredDeviation: Int | Double = null
   ): Distribution = {
     val __obj = js.Dynamic.literal()
-    if (bucketCounts != null) __obj.updateDynamic("bucketCounts")(bucketCounts)
-    if (bucketOptions != null) __obj.updateDynamic("bucketOptions")(bucketOptions)
-    if (count != null) __obj.updateDynamic("count")(count)
+    if (bucketCounts != null) __obj.updateDynamic("bucketCounts")(bucketCounts.asInstanceOf[js.Any])
+    if (bucketOptions != null) __obj.updateDynamic("bucketOptions")(bucketOptions.asInstanceOf[js.Any])
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (mean != null) __obj.updateDynamic("mean")(mean.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range)
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (sumOfSquaredDeviation != null) __obj.updateDynamic("sumOfSquaredDeviation")(sumOfSquaredDeviation.asInstanceOf[js.Any])
     __obj.asInstanceOf[Distribution]
   }

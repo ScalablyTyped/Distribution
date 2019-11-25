@@ -30,15 +30,15 @@ object Anon_BackgroundColor {
     trailColor: String = null
   ): Anon_BackgroundColor = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
-    if (pathColor != null) __obj.updateDynamic("pathColor")(pathColor)
-    if (pathTransition != null) __obj.updateDynamic("pathTransition")(pathTransition)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (pathColor != null) __obj.updateDynamic("pathColor")(pathColor.asInstanceOf[js.Any])
+    if (pathTransition != null) __obj.updateDynamic("pathTransition")(pathTransition.asInstanceOf[js.Any])
     if (pathTransitionDuration != null) __obj.updateDynamic("pathTransitionDuration")(pathTransitionDuration.asInstanceOf[js.Any])
     if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
-    if (strokeLinecap != null) __obj.updateDynamic("strokeLinecap")(strokeLinecap)
-    if (textColor != null) __obj.updateDynamic("textColor")(textColor)
+    if (strokeLinecap != null) __obj.updateDynamic("strokeLinecap")(strokeLinecap.asInstanceOf[js.Any])
+    if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
     if (textSize != null) __obj.updateDynamic("textSize")(textSize.asInstanceOf[js.Any])
-    if (trailColor != null) __obj.updateDynamic("trailColor")(trailColor)
+    if (trailColor != null) __obj.updateDynamic("trailColor")(trailColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BackgroundColor]
   }
 }

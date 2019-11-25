@@ -12,7 +12,7 @@ trait DateStruct extends js.Object {
 object DateStruct {
   @scala.inline
   def apply(nanos: Double, seconds: Double): DateStruct = {
-    val __obj = js.Dynamic.literal(nanos = nanos, seconds = seconds)
+    val __obj = js.Dynamic.literal(nanos = nanos.asInstanceOf[js.Any], seconds = seconds.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DateStruct]
   }

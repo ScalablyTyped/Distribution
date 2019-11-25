@@ -12,7 +12,7 @@ object ActivityContentDetailsLike {
   @scala.inline
   def apply(resourceId: ResourceId = null): ActivityContentDetailsLike = {
     val __obj = js.Dynamic.literal()
-    if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId)
+    if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivityContentDetailsLike]
   }
 }

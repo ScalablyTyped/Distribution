@@ -49,7 +49,7 @@ object FilterSetsResource {
     losingBids: LosingBidsResource,
     nonBillableWinningBids: NonBillableWinningBidsResource
   ): FilterSetsResource = {
-    val __obj = js.Dynamic.literal(bidMetrics = bidMetrics, bidResponseErrors = bidResponseErrors, bidResponsesWithoutBids = bidResponsesWithoutBids, create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), filteredBidRequests = filteredBidRequests, filteredBids = filteredBids, get = js.Any.fromFunction1(get), impressionMetrics = impressionMetrics, list = js.Any.fromFunction1(list), losingBids = losingBids, nonBillableWinningBids = nonBillableWinningBids)
+    val __obj = js.Dynamic.literal(bidMetrics = bidMetrics.asInstanceOf[js.Any], bidResponseErrors = bidResponseErrors.asInstanceOf[js.Any], bidResponsesWithoutBids = bidResponsesWithoutBids.asInstanceOf[js.Any], create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), filteredBidRequests = filteredBidRequests.asInstanceOf[js.Any], filteredBids = filteredBids.asInstanceOf[js.Any], get = js.Any.fromFunction1(get), impressionMetrics = impressionMetrics.asInstanceOf[js.Any], list = js.Any.fromFunction1(list), losingBids = losingBids.asInstanceOf[js.Any], nonBillableWinningBids = nonBillableWinningBids.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FilterSetsResource]
   }

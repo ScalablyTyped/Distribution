@@ -30,15 +30,15 @@ object InstanceOptions {
     terminated: js.Any = null
   ): InstanceOptions = {
     val __obj = js.Dynamic.literal()
-    if (args != null) __obj.updateDynamic("args")(args)
-    if (childProcess != null) __obj.updateDynamic("childProcess")(childProcess)
-    if (command != null) __obj.updateDynamic("command")(command)
-    if (exitCode != null) __obj.updateDynamic("exitCode")(exitCode)
-    if (script != null) __obj.updateDynamic("script")(script)
-    if (stderr != null) __obj.updateDynamic("stderr")(stderr)
-    if (stdin != null) __obj.updateDynamic("stdin")(stdin)
-    if (stdout != null) __obj.updateDynamic("stdout")(stdout)
-    if (terminated != null) __obj.updateDynamic("terminated")(terminated)
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (childProcess != null) __obj.updateDynamic("childProcess")(childProcess.asInstanceOf[js.Any])
+    if (command != null) __obj.updateDynamic("command")(command.asInstanceOf[js.Any])
+    if (exitCode != null) __obj.updateDynamic("exitCode")(exitCode.asInstanceOf[js.Any])
+    if (script != null) __obj.updateDynamic("script")(script.asInstanceOf[js.Any])
+    if (stderr != null) __obj.updateDynamic("stderr")(stderr.asInstanceOf[js.Any])
+    if (stdin != null) __obj.updateDynamic("stdin")(stdin.asInstanceOf[js.Any])
+    if (stdout != null) __obj.updateDynamic("stdout")(stdout.asInstanceOf[js.Any])
+    if (terminated != null) __obj.updateDynamic("terminated")(terminated.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceOptions]
   }
 }

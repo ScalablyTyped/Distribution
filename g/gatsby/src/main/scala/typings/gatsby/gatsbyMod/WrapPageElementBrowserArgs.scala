@@ -18,7 +18,7 @@ object WrapPageElementBrowserArgs {
     getResourcesForPathnameSync: js.Function,
     props: js.Object
   ): WrapPageElementBrowserArgs = {
-    val __obj = js.Dynamic.literal(element = element, getResourceURLsForPathname = getResourceURLsForPathname, getResourcesForPathname = getResourcesForPathname, getResourcesForPathnameSync = getResourcesForPathnameSync, props = props)
+    val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], getResourceURLsForPathname = getResourceURLsForPathname.asInstanceOf[js.Any], getResourcesForPathname = getResourcesForPathname.asInstanceOf[js.Any], getResourcesForPathnameSync = getResourcesForPathnameSync.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WrapPageElementBrowserArgs]
   }

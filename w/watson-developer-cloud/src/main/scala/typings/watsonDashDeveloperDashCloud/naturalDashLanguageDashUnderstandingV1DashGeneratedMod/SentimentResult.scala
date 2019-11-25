@@ -16,8 +16,8 @@ object SentimentResult {
   @scala.inline
   def apply(document: DocumentSentimentResults = null, targets: js.Array[TargetedSentimentResults] = null): SentimentResult = {
     val __obj = js.Dynamic.literal()
-    if (document != null) __obj.updateDynamic("document")(document)
-    if (targets != null) __obj.updateDynamic("targets")(targets)
+    if (document != null) __obj.updateDynamic("document")(document.asInstanceOf[js.Any])
+    if (targets != null) __obj.updateDynamic("targets")(targets.asInstanceOf[js.Any])
     __obj.asInstanceOf[SentimentResult]
   }
 }

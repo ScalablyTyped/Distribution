@@ -16,7 +16,7 @@ object Histogram {
   @scala.inline
   def apply(field: String = null, interval: Int | Double = null): Histogram = {
     val __obj = js.Dynamic.literal()
-    if (field != null) __obj.updateDynamic("field")(field)
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
     __obj.asInstanceOf[Histogram]
   }

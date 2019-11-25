@@ -22,8 +22,8 @@ object ToolbarButtonEvent {
     selectedThreadViews: js.Array[ThreadView],
     dropdown: DropdownView = null
   ): ToolbarButtonEvent = {
-    val __obj = js.Dynamic.literal(position = position, selectedThreadRowViews = selectedThreadRowViews, selectedThreadViews = selectedThreadViews)
-    if (dropdown != null) __obj.updateDynamic("dropdown")(dropdown)
+    val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any], selectedThreadRowViews = selectedThreadRowViews.asInstanceOf[js.Any], selectedThreadViews = selectedThreadViews.asInstanceOf[js.Any])
+    if (dropdown != null) __obj.updateDynamic("dropdown")(dropdown.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolbarButtonEvent]
   }
 }

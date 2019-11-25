@@ -20,10 +20,10 @@ object FormatterOptions {
     units: String = null
   ): FormatterOptions = {
     val __obj = js.Dynamic.literal()
-    if (language != null) __obj.updateDynamic("language")(language)
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (roundingSensitivity != null) __obj.updateDynamic("roundingSensitivity")(roundingSensitivity.asInstanceOf[js.Any])
-    if (unitNames != null) __obj.updateDynamic("unitNames")(unitNames)
-    if (units != null) __obj.updateDynamic("units")(units)
+    if (unitNames != null) __obj.updateDynamic("unitNames")(unitNames.asInstanceOf[js.Any])
+    if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormatterOptions]
   }
 }

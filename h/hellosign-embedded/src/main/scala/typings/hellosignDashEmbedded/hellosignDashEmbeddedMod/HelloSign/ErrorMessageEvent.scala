@@ -13,7 +13,7 @@ trait ErrorMessageEvent extends MessageEvent {
 object ErrorMessageEvent {
   @scala.inline
   def apply(description: String, event: error): ErrorMessageEvent = {
-    val __obj = js.Dynamic.literal(description = description, event = event)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ErrorMessageEvent]
   }

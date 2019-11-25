@@ -152,7 +152,7 @@ object ModelFitDatasetArgs {
     verbose: ModelLoggingVerbosity = null,
     yieldEvery: YieldEveryOptions = null
   ): ModelFitDatasetArgs[T] = {
-    val __obj = js.Dynamic.literal(epochs = epochs)
+    val __obj = js.Dynamic.literal(epochs = epochs.asInstanceOf[js.Any])
     if (batchesPerEpoch != null) __obj.updateDynamic("batchesPerEpoch")(batchesPerEpoch.asInstanceOf[js.Any])
     if (callbacks != null) __obj.updateDynamic("callbacks")(callbacks.asInstanceOf[js.Any])
     if (classWeight != null) __obj.updateDynamic("classWeight")(classWeight.asInstanceOf[js.Any])
@@ -160,7 +160,7 @@ object ModelFitDatasetArgs {
     if (validationBatchSize != null) __obj.updateDynamic("validationBatchSize")(validationBatchSize.asInstanceOf[js.Any])
     if (validationBatches != null) __obj.updateDynamic("validationBatches")(validationBatches.asInstanceOf[js.Any])
     if (validationData != null) __obj.updateDynamic("validationData")(validationData.asInstanceOf[js.Any])
-    if (verbose != null) __obj.updateDynamic("verbose")(verbose)
+    if (verbose != null) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
     if (yieldEvery != null) __obj.updateDynamic("yieldEvery")(yieldEvery.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelFitDatasetArgs[T]]
   }

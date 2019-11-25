@@ -36,10 +36,10 @@ object Anon_DirectorExecutive {
     representative: js.UndefOr[Boolean] = js.undefined
   ): Anon_DirectorExecutive = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(director)) __obj.updateDynamic("director")(director)
-    if (!js.isUndefined(executive)) __obj.updateDynamic("executive")(executive)
-    if (!js.isUndefined(owner)) __obj.updateDynamic("owner")(owner)
-    if (!js.isUndefined(representative)) __obj.updateDynamic("representative")(representative)
+    if (!js.isUndefined(director)) __obj.updateDynamic("director")(director.asInstanceOf[js.Any])
+    if (!js.isUndefined(executive)) __obj.updateDynamic("executive")(executive.asInstanceOf[js.Any])
+    if (!js.isUndefined(owner)) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (!js.isUndefined(representative)) __obj.updateDynamic("representative")(representative.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DirectorExecutive]
   }
 }

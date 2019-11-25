@@ -18,7 +18,7 @@ object DragStateProps {
   @scala.inline
   def apply(children: State => ReactNode, subscribeTo: js.Array[String] = null): DragStateProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
-    if (subscribeTo != null) __obj.updateDynamic("subscribeTo")(subscribeTo)
+    if (subscribeTo != null) __obj.updateDynamic("subscribeTo")(subscribeTo.asInstanceOf[js.Any])
     __obj.asInstanceOf[DragStateProps]
   }
 }

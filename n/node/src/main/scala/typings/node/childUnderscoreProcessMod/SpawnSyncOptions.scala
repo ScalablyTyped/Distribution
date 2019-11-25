@@ -37,10 +37,10 @@ object SpawnSyncOptions {
     windowsVerbatimArguments: js.UndefOr[Boolean] = js.undefined
   ): SpawnSyncOptions = {
     val __obj = js.Dynamic.literal()
-    if (argv0 != null) __obj.updateDynamic("argv0")(argv0)
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
-    if (env != null) __obj.updateDynamic("env")(env)
+    if (argv0 != null) __obj.updateDynamic("argv0")(argv0.asInstanceOf[js.Any])
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
     if (gid != null) __obj.updateDynamic("gid")(gid.asInstanceOf[js.Any])
     if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
     if (killSignal != null) __obj.updateDynamic("killSignal")(killSignal.asInstanceOf[js.Any])
@@ -49,8 +49,8 @@ object SpawnSyncOptions {
     if (stdio != null) __obj.updateDynamic("stdio")(stdio.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])
-    if (!js.isUndefined(windowsHide)) __obj.updateDynamic("windowsHide")(windowsHide)
-    if (!js.isUndefined(windowsVerbatimArguments)) __obj.updateDynamic("windowsVerbatimArguments")(windowsVerbatimArguments)
+    if (!js.isUndefined(windowsHide)) __obj.updateDynamic("windowsHide")(windowsHide.asInstanceOf[js.Any])
+    if (!js.isUndefined(windowsVerbatimArguments)) __obj.updateDynamic("windowsVerbatimArguments")(windowsVerbatimArguments.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpawnSyncOptions]
   }
 }

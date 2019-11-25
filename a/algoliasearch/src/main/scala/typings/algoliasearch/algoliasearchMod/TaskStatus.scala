@@ -14,7 +14,7 @@ trait TaskStatus extends js.Object {
 object TaskStatus {
   @scala.inline
   def apply(pendingTask: Boolean, status: published | notPublished): TaskStatus = {
-    val __obj = js.Dynamic.literal(pendingTask = pendingTask, status = status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(pendingTask = pendingTask.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TaskStatus]
   }

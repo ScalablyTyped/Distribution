@@ -25,8 +25,8 @@ object _UnmarshalledGrantConstraints {
     EncryptionContextSubset: StringDictionary[String] = null
   ): _UnmarshalledGrantConstraints = {
     val __obj = js.Dynamic.literal()
-    if (EncryptionContextEquals != null) __obj.updateDynamic("EncryptionContextEquals")(EncryptionContextEquals)
-    if (EncryptionContextSubset != null) __obj.updateDynamic("EncryptionContextSubset")(EncryptionContextSubset)
+    if (EncryptionContextEquals != null) __obj.updateDynamic("EncryptionContextEquals")(EncryptionContextEquals.asInstanceOf[js.Any])
+    if (EncryptionContextSubset != null) __obj.updateDynamic("EncryptionContextSubset")(EncryptionContextSubset.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledGrantConstraints]
   }
 }

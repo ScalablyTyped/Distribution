@@ -44,18 +44,18 @@ object SearchInputProps {
     searchList: js.Array[Anon_Callback] = null
   ): SearchInputProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact)
-    if (!js.isUndefined(inShellbar)) __obj.updateDynamic("inShellbar")(inShellbar)
-    if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps)
-    if (listProps != null) __obj.updateDynamic("listProps")(listProps)
-    if (!js.isUndefined(noSearchBtn)) __obj.updateDynamic("noSearchBtn")(noSearchBtn)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
+    if (!js.isUndefined(inShellbar)) __obj.updateDynamic("inShellbar")(inShellbar.asInstanceOf[js.Any])
+    if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps.asInstanceOf[js.Any])
+    if (listProps != null) __obj.updateDynamic("listProps")(listProps.asInstanceOf[js.Any])
+    if (!js.isUndefined(noSearchBtn)) __obj.updateDynamic("noSearchBtn")(noSearchBtn.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onEnter != null) __obj.updateDynamic("onEnter")(js.Any.fromFunction1(onEnter))
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
-    if (searchBtnProps != null) __obj.updateDynamic("searchBtnProps")(searchBtnProps)
-    if (searchList != null) __obj.updateDynamic("searchList")(searchList)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
+    if (searchBtnProps != null) __obj.updateDynamic("searchBtnProps")(searchBtnProps.asInstanceOf[js.Any])
+    if (searchList != null) __obj.updateDynamic("searchList")(searchList.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchInputProps]
   }
 }

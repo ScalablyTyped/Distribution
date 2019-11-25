@@ -16,8 +16,8 @@ object QueryFilterType {
   @scala.inline
   def apply(exclude: js.Array[String] = null, include: js.Array[String] = null): QueryFilterType = {
     val __obj = js.Dynamic.literal()
-    if (exclude != null) __obj.updateDynamic("exclude")(exclude)
-    if (include != null) __obj.updateDynamic("include")(include)
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryFilterType]
   }
 }

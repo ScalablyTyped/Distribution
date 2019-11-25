@@ -14,9 +14,9 @@ object Options {
   @scala.inline
   def apply(cwd: String = null, extensions: js.Array[String] = null, files: js.Array[String] = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
-    if (files != null) __obj.updateDynamic("files")(files)
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
+    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

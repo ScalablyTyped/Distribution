@@ -33,13 +33,13 @@ object ReadingPosition {
     volumeId: String = null
   ): ReadingPosition = {
     val __obj = js.Dynamic.literal()
-    if (epubCfiPosition != null) __obj.updateDynamic("epubCfiPosition")(epubCfiPosition)
-    if (gbImagePosition != null) __obj.updateDynamic("gbImagePosition")(gbImagePosition)
-    if (gbTextPosition != null) __obj.updateDynamic("gbTextPosition")(gbTextPosition)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (pdfPosition != null) __obj.updateDynamic("pdfPosition")(pdfPosition)
-    if (updated != null) __obj.updateDynamic("updated")(updated)
-    if (volumeId != null) __obj.updateDynamic("volumeId")(volumeId)
+    if (epubCfiPosition != null) __obj.updateDynamic("epubCfiPosition")(epubCfiPosition.asInstanceOf[js.Any])
+    if (gbImagePosition != null) __obj.updateDynamic("gbImagePosition")(gbImagePosition.asInstanceOf[js.Any])
+    if (gbTextPosition != null) __obj.updateDynamic("gbTextPosition")(gbTextPosition.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (pdfPosition != null) __obj.updateDynamic("pdfPosition")(pdfPosition.asInstanceOf[js.Any])
+    if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
+    if (volumeId != null) __obj.updateDynamic("volumeId")(volumeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadingPosition]
   }
 }

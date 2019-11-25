@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait EnvironmentType extends js.Object
 
+object EnvironmentType {
+  @scala.inline
+  def PRODUCTION: typings.googlepay.googlepayStrings.PRODUCTION = this.cast("PRODUCTION")
+  @scala.inline
+  def TEST: typings.googlepay.googlepayStrings.TEST = this.cast("TEST")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

@@ -19,7 +19,7 @@ object TagsFeedResponseSectionsItem {
     layout_content: TagsFeedResponseLayout_content,
     layout_type: String
   ): TagsFeedResponseSectionsItem = {
-    val __obj = js.Dynamic.literal(explore_item_info = explore_item_info, feed_type = feed_type, layout_content = layout_content, layout_type = layout_type)
+    val __obj = js.Dynamic.literal(explore_item_info = explore_item_info.asInstanceOf[js.Any], feed_type = feed_type.asInstanceOf[js.Any], layout_content = layout_content.asInstanceOf[js.Any], layout_type = layout_type.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TagsFeedResponseSectionsItem]
   }

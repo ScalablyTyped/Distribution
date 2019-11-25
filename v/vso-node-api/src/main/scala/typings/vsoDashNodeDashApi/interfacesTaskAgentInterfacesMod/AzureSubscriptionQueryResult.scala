@@ -12,7 +12,7 @@ trait AzureSubscriptionQueryResult extends js.Object {
 object AzureSubscriptionQueryResult {
   @scala.inline
   def apply(errorMessage: String, value: js.Array[AzureSubscription]): AzureSubscriptionQueryResult = {
-    val __obj = js.Dynamic.literal(errorMessage = errorMessage, value = value)
+    val __obj = js.Dynamic.literal(errorMessage = errorMessage.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AzureSubscriptionQueryResult]
   }

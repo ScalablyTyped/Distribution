@@ -25,7 +25,7 @@ object Anon_FontFamilyFontSizeFontWeightLetterSpacingLg {
     lineHeight: String,
     max: Anon_FontSizeLineHeight
   ): Anon_FontFamilyFontSizeFontWeightLetterSpacingLg = {
-    val __obj = js.Dynamic.literal(fontFamily = fontFamily, fontSize = fontSize, fontWeight = fontWeight, letterSpacing = letterSpacing, lg = lg, lineHeight = lineHeight, max = max)
+    val __obj = js.Dynamic.literal(fontFamily = fontFamily.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], fontWeight = fontWeight.asInstanceOf[js.Any], letterSpacing = letterSpacing.asInstanceOf[js.Any], lg = lg.asInstanceOf[js.Any], lineHeight = lineHeight.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FontFamilyFontSizeFontWeightLetterSpacingLg]
   }

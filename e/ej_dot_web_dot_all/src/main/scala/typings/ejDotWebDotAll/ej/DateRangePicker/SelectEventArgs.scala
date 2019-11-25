@@ -28,10 +28,10 @@ object SelectEventArgs {
     `type`: String = null
   ): SelectEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (endDate != null) __obj.updateDynamic("endDate")(endDate)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (startDate != null) __obj.updateDynamic("startDate")(startDate)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectEventArgs]
   }
 }

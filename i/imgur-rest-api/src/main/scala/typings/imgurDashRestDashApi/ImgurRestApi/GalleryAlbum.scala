@@ -43,11 +43,11 @@ object GalleryAlbum {
     nsfw: js.UndefOr[Boolean] = js.undefined,
     vote: String = null
   ): GalleryAlbum = {
-    val __obj = js.Dynamic.literal(comment_count = comment_count, cover = cover, cover_height = cover_height, cover_width = cover_width, datetime = datetime, description = description, downs = downs, favorite = favorite, id = id, images = images, images_count = images_count, is_album = is_album, layout = layout, link = link, privacy = privacy, score = score, title = title, topic = topic, topic_id = topic_id, ups = ups, views = views)
+    val __obj = js.Dynamic.literal(comment_count = comment_count.asInstanceOf[js.Any], cover = cover.asInstanceOf[js.Any], cover_height = cover_height.asInstanceOf[js.Any], cover_width = cover_width.asInstanceOf[js.Any], datetime = datetime.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], downs = downs.asInstanceOf[js.Any], favorite = favorite.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any], images_count = images_count.asInstanceOf[js.Any], is_album = is_album.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], privacy = privacy.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any], topic_id = topic_id.asInstanceOf[js.Any], ups = ups.asInstanceOf[js.Any], views = views.asInstanceOf[js.Any])
     if (account_id != null) __obj.updateDynamic("account_id")(account_id.asInstanceOf[js.Any])
-    if (account_url != null) __obj.updateDynamic("account_url")(account_url)
-    if (!js.isUndefined(nsfw)) __obj.updateDynamic("nsfw")(nsfw)
-    if (vote != null) __obj.updateDynamic("vote")(vote)
+    if (account_url != null) __obj.updateDynamic("account_url")(account_url.asInstanceOf[js.Any])
+    if (!js.isUndefined(nsfw)) __obj.updateDynamic("nsfw")(nsfw.asInstanceOf[js.Any])
+    if (vote != null) __obj.updateDynamic("vote")(vote.asInstanceOf[js.Any])
     __obj.asInstanceOf[GalleryAlbum]
   }
 }

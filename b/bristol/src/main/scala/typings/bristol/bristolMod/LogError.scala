@@ -14,9 +14,9 @@ object LogError {
   @scala.inline
   def apply(message: String = null, reason: js.Any = null, stack: js.Any = null): LogError = {
     val __obj = js.Dynamic.literal()
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (reason != null) __obj.updateDynamic("reason")(reason)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogError]
   }
 }

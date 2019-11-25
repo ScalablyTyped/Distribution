@@ -12,7 +12,7 @@ object BatchClearValuesByDataFilterRequest {
   @scala.inline
   def apply(dataFilters: js.Array[DataFilter] = null): BatchClearValuesByDataFilterRequest = {
     val __obj = js.Dynamic.literal()
-    if (dataFilters != null) __obj.updateDynamic("dataFilters")(dataFilters)
+    if (dataFilters != null) __obj.updateDynamic("dataFilters")(dataFilters.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchClearValuesByDataFilterRequest]
   }
 }

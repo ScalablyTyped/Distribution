@@ -15,8 +15,8 @@ object RoomClientAddress {
   @scala.inline
   def apply(kind: String = null, xmppAddress: String = null): RoomClientAddress = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (xmppAddress != null) __obj.updateDynamic("xmppAddress")(xmppAddress)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (xmppAddress != null) __obj.updateDynamic("xmppAddress")(xmppAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoomClientAddress]
   }
 }

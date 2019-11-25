@@ -24,7 +24,7 @@ trait CanvasFeatures extends js.Object {
 object CanvasFeatures {
   @scala.inline
   def apply(supportInverseAlpha: Boolean, supportNewBlendModes: Boolean): CanvasFeatures = {
-    val __obj = js.Dynamic.literal(supportInverseAlpha = supportInverseAlpha, supportNewBlendModes = supportNewBlendModes)
+    val __obj = js.Dynamic.literal(supportInverseAlpha = supportInverseAlpha.asInstanceOf[js.Any], supportNewBlendModes = supportNewBlendModes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CanvasFeatures]
   }

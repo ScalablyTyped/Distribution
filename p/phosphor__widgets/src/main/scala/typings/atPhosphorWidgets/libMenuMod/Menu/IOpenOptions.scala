@@ -32,8 +32,8 @@ object IOpenOptions {
   @scala.inline
   def apply(forceX: js.UndefOr[Boolean] = js.undefined, forceY: js.UndefOr[Boolean] = js.undefined): IOpenOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(forceX)) __obj.updateDynamic("forceX")(forceX)
-    if (!js.isUndefined(forceY)) __obj.updateDynamic("forceY")(forceY)
+    if (!js.isUndefined(forceX)) __obj.updateDynamic("forceX")(forceX.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceY)) __obj.updateDynamic("forceY")(forceY.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOpenOptions]
   }
 }

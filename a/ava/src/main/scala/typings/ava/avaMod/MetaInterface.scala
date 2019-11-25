@@ -12,7 +12,7 @@ trait MetaInterface extends js.Object {
 object MetaInterface {
   @scala.inline
   def apply(file: String): MetaInterface = {
-    val __obj = js.Dynamic.literal(file = file)
+    val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MetaInterface]
   }

@@ -16,8 +16,8 @@ object PageProperties {
     pageBackgroundFill: PageBackgroundFill = null
   ): PageProperties = {
     val __obj = js.Dynamic.literal()
-    if (colorScheme != null) __obj.updateDynamic("colorScheme")(colorScheme)
-    if (pageBackgroundFill != null) __obj.updateDynamic("pageBackgroundFill")(pageBackgroundFill)
+    if (colorScheme != null) __obj.updateDynamic("colorScheme")(colorScheme.asInstanceOf[js.Any])
+    if (pageBackgroundFill != null) __obj.updateDynamic("pageBackgroundFill")(pageBackgroundFill.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageProperties]
   }
 }

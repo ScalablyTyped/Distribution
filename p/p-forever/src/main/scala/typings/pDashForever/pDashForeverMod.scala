@@ -86,21 +86,21 @@ object pDashForeverMod extends js.Object {
   def default[ValueType](
     fn: js.Function1[
       /* previousValue */ js.UndefOr[ValueType], 
-      ValueType | js.Thenable[ValueType] | (/* import warning: ImportType.apply Failed type conversion: typeof pForever.end */ js.Any)
+      ValueType | js.Thenable[ValueType] | (/* import warning: importer.ImportType#apply Failed type conversion: typeof pForever.end */ js.Any)
     ]
   ): js.Promise[Unit] = js.native
   // TODO: Remove this for the next major release
   def default[ValueType](
     fn: js.Function1[
       /* previousValue */ ValueType, 
-      ValueType | js.Thenable[ValueType] | (/* import warning: ImportType.apply Failed type conversion: typeof pForever.end */ js.Any)
+      ValueType | js.Thenable[ValueType] | (/* import warning: importer.ImportType#apply Failed type conversion: typeof pForever.end */ js.Any)
     ],
     initialValue: ValueType
   ): js.Promise[Unit] = js.native
   def default[ValueType](
     fn: js.Function1[
       /* previousValue */ ValueType, 
-      ValueType | js.Thenable[ValueType] | (/* import warning: ImportType.apply Failed type conversion: typeof pForever.end */ js.Any)
+      ValueType | js.Thenable[ValueType] | (/* import warning: importer.ImportType#apply Failed type conversion: typeof pForever.end */ js.Any)
     ],
     initialValue: js.Thenable[ValueType]
   ): js.Promise[Unit] = js.native

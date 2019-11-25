@@ -14,7 +14,7 @@ trait LineSliceData extends js.Object {
 object LineSliceData {
   @scala.inline
   def apply(data: js.Array[Anon_Data], id: LineValue, x: Double): LineSliceData = {
-    val __obj = js.Dynamic.literal(data = data, id = id.asInstanceOf[js.Any], x = x)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LineSliceData]
   }

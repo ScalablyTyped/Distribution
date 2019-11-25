@@ -35,7 +35,7 @@ object ITickWorldComponent {
     radius: Double,
     ticking_area: IEntityTickingArea
   ): ITickWorldComponent = {
-    val __obj = js.Dynamic.literal(distance_to_players = distance_to_players, never_despawn = never_despawn, radius = radius, ticking_area = ticking_area)
+    val __obj = js.Dynamic.literal(distance_to_players = distance_to_players.asInstanceOf[js.Any], never_despawn = never_despawn.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], ticking_area = ticking_area.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ITickWorldComponent]
   }

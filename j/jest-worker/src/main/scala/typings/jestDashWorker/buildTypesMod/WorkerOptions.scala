@@ -22,7 +22,7 @@ object WorkerOptions {
     workerId: Double,
     workerPath: String
   ): WorkerOptions = {
-    val __obj = js.Dynamic.literal(forkOptions = forkOptions, maxRetries = maxRetries, setupArgs = setupArgs, workerId = workerId, workerPath = workerPath)
+    val __obj = js.Dynamic.literal(forkOptions = forkOptions.asInstanceOf[js.Any], maxRetries = maxRetries.asInstanceOf[js.Any], setupArgs = setupArgs.asInstanceOf[js.Any], workerId = workerId.asInstanceOf[js.Any], workerPath = workerPath.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WorkerOptions]
   }

@@ -36,9 +36,9 @@ object _SendMessageBatchResultEntry {
     MD5OfMessageAttributes: String = null,
     SequenceNumber: String = null
   ): _SendMessageBatchResultEntry = {
-    val __obj = js.Dynamic.literal(Id = Id, MD5OfMessageBody = MD5OfMessageBody, MessageId = MessageId)
-    if (MD5OfMessageAttributes != null) __obj.updateDynamic("MD5OfMessageAttributes")(MD5OfMessageAttributes)
-    if (SequenceNumber != null) __obj.updateDynamic("SequenceNumber")(SequenceNumber)
+    val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], MD5OfMessageBody = MD5OfMessageBody.asInstanceOf[js.Any], MessageId = MessageId.asInstanceOf[js.Any])
+    if (MD5OfMessageAttributes != null) __obj.updateDynamic("MD5OfMessageAttributes")(MD5OfMessageAttributes.asInstanceOf[js.Any])
+    if (SequenceNumber != null) __obj.updateDynamic("SequenceNumber")(SequenceNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[_SendMessageBatchResultEntry]
   }
 }

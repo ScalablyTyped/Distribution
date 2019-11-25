@@ -13,8 +13,8 @@ trait Anon_FieldName
 object Anon_FieldName {
   @scala.inline
   def apply(_id: js.Any, StringDictionary: /* fieldName */ StringDictionary[js.Any] = null): Anon_FieldName = {
-    val __obj = js.Dynamic.literal(_id = _id)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_FieldName]
   }
 }

@@ -11,7 +11,7 @@ trait IdentityManagerCredentialCreateEvent extends js.Object {
 object IdentityManagerCredentialCreateEvent {
   @scala.inline
   def apply(credential: Credential): IdentityManagerCredentialCreateEvent = {
-    val __obj = js.Dynamic.literal(credential = credential)
+    val __obj = js.Dynamic.literal(credential = credential.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IdentityManagerCredentialCreateEvent]
   }

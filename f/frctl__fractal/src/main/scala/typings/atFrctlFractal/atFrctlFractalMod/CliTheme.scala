@@ -17,13 +17,16 @@ class CliTheme () extends EventEmitter {
   def format(str: String, style: String): String = js.native
   def format(str: String, style: String, strip: Boolean): String = js.native
   def get[K /* <: String */, V](path: K): js.UndefOr[
-    (/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any) | V | Null
+    (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | V | Null
   ] = js.native
   def get[K /* <: String */, V](path: K, defaultValue: V): js.UndefOr[
-    (/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any) | V | Null
+    (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | V | Null
   ] = js.native
   def set[K /* <: String */](path: K): this.type = js.native
-  def set[K /* <: String */](path: K, value: /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any): this.type = js.native
+  def set[K /* <: String */](
+    path: K,
+    value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+  ): this.type = js.native
   def setDelimiter(text: String, formatter: js.Function1[/* str */ String, String]): Unit = js.native
   def setStyle(name: String, opts: js.Any): Unit = js.native
   def style(name: String): js.Any = js.native

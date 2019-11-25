@@ -13,7 +13,7 @@ object DisksResizeRequest {
   @scala.inline
   def apply(sizeGb: String = null): DisksResizeRequest = {
     val __obj = js.Dynamic.literal()
-    if (sizeGb != null) __obj.updateDynamic("sizeGb")(sizeGb)
+    if (sizeGb != null) __obj.updateDynamic("sizeGb")(sizeGb.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisksResizeRequest]
   }
 }

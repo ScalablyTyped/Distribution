@@ -13,8 +13,8 @@ trait Network extends js.Object {
 object Network {
   @scala.inline
   def apply(chainId: Double, name: String, ensAddress: String = null): Network = {
-    val __obj = js.Dynamic.literal(chainId = chainId, name = name)
-    if (ensAddress != null) __obj.updateDynamic("ensAddress")(ensAddress)
+    val __obj = js.Dynamic.literal(chainId = chainId.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (ensAddress != null) __obj.updateDynamic("ensAddress")(ensAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[Network]
   }
 }

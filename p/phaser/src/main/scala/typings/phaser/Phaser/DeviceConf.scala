@@ -58,7 +58,7 @@ object DeviceConf {
     os: OS,
     video: Video
   ): DeviceConf = {
-    val __obj = js.Dynamic.literal(audio = audio, browser = browser, canvasFeatures = canvasFeatures, features = features, fullscreen = fullscreen, input = input, os = os, video = video)
+    val __obj = js.Dynamic.literal(audio = audio.asInstanceOf[js.Any], browser = browser.asInstanceOf[js.Any], canvasFeatures = canvasFeatures.asInstanceOf[js.Any], features = features.asInstanceOf[js.Any], fullscreen = fullscreen.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], os = os.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeviceConf]
   }

@@ -12,7 +12,7 @@ trait Anon_Dot extends js.Object {
 object Anon_Dot {
   @scala.inline
   def apply(dot: Boolean, preset: String): Anon_Dot = {
-    val __obj = js.Dynamic.literal(dot = dot, preset = preset)
+    val __obj = js.Dynamic.literal(dot = dot.asInstanceOf[js.Any], preset = preset.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Dot]
   }

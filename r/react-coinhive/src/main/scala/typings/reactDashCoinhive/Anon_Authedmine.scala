@@ -12,7 +12,7 @@ trait Anon_Authedmine extends js.Object {
 object Anon_Authedmine {
   @scala.inline
   def apply(authedmine: String, coinhive: String): Anon_Authedmine = {
-    val __obj = js.Dynamic.literal(authedmine = authedmine, coinhive = coinhive)
+    val __obj = js.Dynamic.literal(authedmine = authedmine.asInstanceOf[js.Any], coinhive = coinhive.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Authedmine]
   }

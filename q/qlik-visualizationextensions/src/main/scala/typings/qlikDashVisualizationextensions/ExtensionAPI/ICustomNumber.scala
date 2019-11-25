@@ -13,8 +13,8 @@ trait ICustomNumber extends ICustomControl {
 object ICustomNumber {
   @scala.inline
   def apply(defaultValue: Double, label: String, max: Double, min: Double, ref: String, `type`: String): ICustomNumber = {
-    val __obj = js.Dynamic.literal(defaultValue = defaultValue, label = label, max = max, min = min, ref = ref)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(defaultValue = defaultValue.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICustomNumber]
   }
 }

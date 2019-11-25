@@ -22,9 +22,9 @@ object Difference {
     deleteText: String = null,
     insertText: String = null
   ): Difference = {
-    val __obj = js.Dynamic.literal(offset = offset, operation = operation.asInstanceOf[js.Any])
-    if (deleteText != null) __obj.updateDynamic("deleteText")(deleteText)
-    if (insertText != null) __obj.updateDynamic("insertText")(insertText)
+    val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any])
+    if (deleteText != null) __obj.updateDynamic("deleteText")(deleteText.asInstanceOf[js.Any])
+    if (insertText != null) __obj.updateDynamic("insertText")(insertText.asInstanceOf[js.Any])
     __obj.asInstanceOf[Difference]
   }
 }

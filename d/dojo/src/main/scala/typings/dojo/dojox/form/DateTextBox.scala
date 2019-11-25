@@ -1,6 +1,5 @@
 package typings.dojo.dojox.form
 
-import typings.dojo.Fn_Void
 import typings.dojo.dijit.form._DateTimeTextBox
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -20,12 +19,6 @@ import scala.scalajs.js.annotation._
 class DateTextBox () extends _DateTimeTextBox {
   def this(params: js.Object) = this()
   def this(params: js.Object, srcNodeRef: HTMLElement) = this()
-  /**
-    * The popup widget to use. In this case, a calendar with Day, Month and Year views.
-    *
-    */
-  @JSName("popupClass")
-  var popupClass_Original: Fn_Void = js.native
   /**
     *
     * @param isFocused

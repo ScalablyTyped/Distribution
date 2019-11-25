@@ -23,7 +23,7 @@ object _AccessControlPolicy {
   def apply(Grants: js.Array[_Grant] | Iterable[_Grant] = null, Owner: _Owner = null): _AccessControlPolicy = {
     val __obj = js.Dynamic.literal()
     if (Grants != null) __obj.updateDynamic("Grants")(Grants.asInstanceOf[js.Any])
-    if (Owner != null) __obj.updateDynamic("Owner")(Owner)
+    if (Owner != null) __obj.updateDynamic("Owner")(Owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[_AccessControlPolicy]
   }
 }

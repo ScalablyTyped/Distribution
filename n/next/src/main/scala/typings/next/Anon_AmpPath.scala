@@ -47,8 +47,8 @@ object Anon_AmpPath {
     staticMarkup: Boolean,
     assetPrefix: String = null
   ): Anon_AmpPath = {
-    val __obj = js.Dynamic.literal(__NEXT_DATA__ = __NEXT_DATA__, ampPath = ampPath, bodyTags = bodyTags, canonicalBase = canonicalBase, dangerousAsPath = dangerousAsPath, devFiles = devFiles, dynamicImports = dynamicImports, files = files, hasCssMode = hasCssMode, headTags = headTags, htmlProps = htmlProps, hybridAmp = hybridAmp, inAmpMode = inAmpMode, isDevelopment = isDevelopment, polyfillFiles = polyfillFiles, staticMarkup = staticMarkup)
-    if (assetPrefix != null) __obj.updateDynamic("assetPrefix")(assetPrefix)
+    val __obj = js.Dynamic.literal(__NEXT_DATA__ = __NEXT_DATA__.asInstanceOf[js.Any], ampPath = ampPath.asInstanceOf[js.Any], bodyTags = bodyTags.asInstanceOf[js.Any], canonicalBase = canonicalBase.asInstanceOf[js.Any], dangerousAsPath = dangerousAsPath.asInstanceOf[js.Any], devFiles = devFiles.asInstanceOf[js.Any], dynamicImports = dynamicImports.asInstanceOf[js.Any], files = files.asInstanceOf[js.Any], hasCssMode = hasCssMode.asInstanceOf[js.Any], headTags = headTags.asInstanceOf[js.Any], htmlProps = htmlProps.asInstanceOf[js.Any], hybridAmp = hybridAmp.asInstanceOf[js.Any], inAmpMode = inAmpMode.asInstanceOf[js.Any], isDevelopment = isDevelopment.asInstanceOf[js.Any], polyfillFiles = polyfillFiles.asInstanceOf[js.Any], staticMarkup = staticMarkup.asInstanceOf[js.Any])
+    if (assetPrefix != null) __obj.updateDynamic("assetPrefix")(assetPrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AmpPath]
   }
 }

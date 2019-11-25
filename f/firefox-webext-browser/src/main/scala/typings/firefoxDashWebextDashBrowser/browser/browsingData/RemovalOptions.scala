@@ -29,8 +29,8 @@ object RemovalOptions {
   @scala.inline
   def apply(hostnames: js.Array[String] = null, originTypes: Anon_Extension = null, since: Date = null): RemovalOptions = {
     val __obj = js.Dynamic.literal()
-    if (hostnames != null) __obj.updateDynamic("hostnames")(hostnames)
-    if (originTypes != null) __obj.updateDynamic("originTypes")(originTypes)
+    if (hostnames != null) __obj.updateDynamic("hostnames")(hostnames.asInstanceOf[js.Any])
+    if (originTypes != null) __obj.updateDynamic("originTypes")(originTypes.asInstanceOf[js.Any])
     if (since != null) __obj.updateDynamic("since")(since.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemovalOptions]
   }

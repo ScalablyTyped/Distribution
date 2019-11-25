@@ -24,7 +24,7 @@ object FSOptions {
   ): FSOptions = {
     val __obj = js.Dynamic.literal()
     if (bytes != null) __obj.updateDynamic("bytes")(bytes.asInstanceOf[js.Any])
-    if (!js.isUndefined(requestQuota)) __obj.updateDynamic("requestQuota")(requestQuota)
+    if (!js.isUndefined(requestQuota)) __obj.updateDynamic("requestQuota")(requestQuota.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FSOptions]
   }

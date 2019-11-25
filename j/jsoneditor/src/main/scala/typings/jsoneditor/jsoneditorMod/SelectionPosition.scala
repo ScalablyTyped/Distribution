@@ -12,7 +12,7 @@ trait SelectionPosition extends js.Object {
 object SelectionPosition {
   @scala.inline
   def apply(column: Double, row: Double): SelectionPosition = {
-    val __obj = js.Dynamic.literal(column = column, row = row)
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SelectionPosition]
   }

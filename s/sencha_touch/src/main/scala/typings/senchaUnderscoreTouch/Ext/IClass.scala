@@ -42,16 +42,16 @@ object IClass {
     uses: Array = null
   ): IClass = {
     val __obj = js.Dynamic.literal()
-    if (alias != null) __obj.updateDynamic("alias")(alias)
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
-    if (config != null) __obj.updateDynamic("config")(config)
-    if (extend != null) __obj.updateDynamic("extend")(extend)
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins)
-    if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig)
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
-    if (statics != null) __obj.updateDynamic("statics")(statics)
-    if (uses != null) __obj.updateDynamic("uses")(uses)
+    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
+    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
+    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
+    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
+    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
+    if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
+    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IClass]
   }
 }

@@ -15,7 +15,7 @@ trait Anon_EventTime extends js.Object {
 object Anon_EventTime {
   @scala.inline
   def apply(event: SyntheticEvent[HTMLVideoElement, Event], time: Double): Anon_EventTime = {
-    val __obj = js.Dynamic.literal(event = event, time = time)
+    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EventTime]
   }

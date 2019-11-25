@@ -23,9 +23,9 @@ object Transaction {
     shipping: Int | Double = null,
     tax: Int | Double = null
   ): Transaction = {
-    val __obj = js.Dynamic.literal(id = id)
-    if (affiliation != null) __obj.updateDynamic("affiliation")(affiliation)
-    if (couponCode != null) __obj.updateDynamic("couponCode")(couponCode)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    if (affiliation != null) __obj.updateDynamic("affiliation")(affiliation.asInstanceOf[js.Any])
+    if (couponCode != null) __obj.updateDynamic("couponCode")(couponCode.asInstanceOf[js.Any])
     if (revenue != null) __obj.updateDynamic("revenue")(revenue.asInstanceOf[js.Any])
     if (shipping != null) __obj.updateDynamic("shipping")(shipping.asInstanceOf[js.Any])
     if (tax != null) __obj.updateDynamic("tax")(tax.asInstanceOf[js.Any])

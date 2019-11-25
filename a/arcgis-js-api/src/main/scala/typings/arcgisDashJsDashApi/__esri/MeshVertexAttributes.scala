@@ -57,13 +57,13 @@ object MeshVertexAttributes {
     uv: Float32Array = null,
     watch: (/* path */ String | js.Array[String], /* callback */ WatchCallback, /* sync */ js.UndefOr[Boolean]) => WatchHandle = null
   ): MeshVertexAttributes = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), position = position, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (color != null) __obj.updateDynamic("color")(color)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), position = position.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (get != null) __obj.updateDynamic("get")(js.Any.fromFunction1(get))
-    if (normal != null) __obj.updateDynamic("normal")(normal)
-    if (set != null) __obj.updateDynamic("set")(set)
-    if (tangent != null) __obj.updateDynamic("tangent")(tangent)
-    if (uv != null) __obj.updateDynamic("uv")(uv)
+    if (normal != null) __obj.updateDynamic("normal")(normal.asInstanceOf[js.Any])
+    if (set != null) __obj.updateDynamic("set")(set.asInstanceOf[js.Any])
+    if (tangent != null) __obj.updateDynamic("tangent")(tangent.asInstanceOf[js.Any])
+    if (uv != null) __obj.updateDynamic("uv")(uv.asInstanceOf[js.Any])
     if (watch != null) __obj.updateDynamic("watch")(js.Any.fromFunction3(watch))
     __obj.asInstanceOf[MeshVertexAttributes]
   }

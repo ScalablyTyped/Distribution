@@ -7,17 +7,15 @@ import scala.scalajs.js.annotation._
 
 object reactDashNativeComponents extends reactDashNativeProps {
   @scala.inline
-  def ARTClippingRectangleCls: ComponentType[ARTClippingRectangleClsProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.ART.ClippingRectangleCls].asInstanceOf[typings.react.reactMod.ComponentType[ARTClippingRectangleClsProps]]
+  def ARTClippingRectangle: ComponentType[ARTClippingRectangleProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.ART.ClippingRectangleCls].asInstanceOf[typings.react.reactMod.ComponentType[ARTClippingRectangleProps]]
   @scala.inline
-  def ARTGroupCls: ComponentType[ARTGroupClsProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.ART.GroupCls].asInstanceOf[typings.react.reactMod.ComponentType[ARTGroupClsProps]]
+  def ARTGroup: ComponentType[ARTGroupProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.ART.GroupCls].asInstanceOf[typings.react.reactMod.ComponentType[ARTGroupProps]]
   @scala.inline
-  def ARTShapeCls: ComponentType[ARTShapeClsProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.ART.ShapeCls].asInstanceOf[typings.react.reactMod.ComponentType[ARTShapeClsProps]]
+  def ARTShape: ComponentType[ARTShapeProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.ART.ShapeCls].asInstanceOf[typings.react.reactMod.ComponentType[ARTShapeProps]]
   @scala.inline
-  def ARTSurfaceCls: ComponentType[ARTSurfaceClsProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.ART.SurfaceCls].asInstanceOf[typings.react.reactMod.ComponentType[ARTSurfaceClsProps]]
+  def ARTSurface: ComponentType[ARTSurfaceProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.ART.SurfaceCls].asInstanceOf[typings.react.reactMod.ComponentType[ARTSurfaceProps]]
   @scala.inline
   def ARTText: ComponentType[ARTTextProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.ARTText].asInstanceOf[typings.react.reactMod.ComponentType[ARTTextProps]]
-  @scala.inline
-  def ARTTextCls: ComponentType[ARTTextClsProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.ART.TextCls].asInstanceOf[typings.react.reactMod.ComponentType[ARTTextClsProps]]
   @scala.inline
   def ActivityIndicator: ComponentType[ActivityIndicatorProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.ActivityIndicator].asInstanceOf[typings.react.reactMod.ComponentType[ActivityIndicatorProps]]
   @scala.inline
@@ -72,8 +70,6 @@ object reactDashNativeComponents extends reactDashNativeProps {
   def ScrollView: ComponentType[ScrollViewProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.ScrollView].asInstanceOf[typings.react.reactMod.ComponentType[ScrollViewProps]]
   @scala.inline
   def SectionList: ComponentType[SectionListProps[js.Any]] = typings.reactDashNative.reactDashNativeMod.SectionList.asInstanceOf[typings.react.reactMod.ComponentType[SectionListProps[js.Any]]]
-  @scala.inline
-  def SectionListCls: ComponentType[SectionListClsProps[js.Any]] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.SectionListCls].asInstanceOf[typings.react.reactMod.ComponentType[SectionListClsProps[js.Any]]]
   @scala.inline
   def SegmentedControlIOS: ComponentType[SegmentedControlIOSProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.SegmentedControlIOS].asInstanceOf[typings.react.reactMod.ComponentType[SegmentedControlIOSProps]]
   @scala.inline

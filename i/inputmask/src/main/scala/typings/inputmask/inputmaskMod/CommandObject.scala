@@ -45,7 +45,7 @@ object CommandObject {
     remove: Double | js.Array[Double] = null
   ): CommandObject = {
     val __obj = js.Dynamic.literal()
-    if (c != null) __obj.updateDynamic("c")(c)
+    if (c != null) __obj.updateDynamic("c")(c.asInstanceOf[js.Any])
     if (caret != null) __obj.updateDynamic("caret")(caret.asInstanceOf[js.Any])
     if (insert != null) __obj.updateDynamic("insert")(insert.asInstanceOf[js.Any])
     if (pos != null) __obj.updateDynamic("pos")(pos.asInstanceOf[js.Any])

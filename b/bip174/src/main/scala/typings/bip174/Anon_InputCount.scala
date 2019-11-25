@@ -12,7 +12,7 @@ trait Anon_InputCount extends js.Object {
 object Anon_InputCount {
   @scala.inline
   def apply(inputCount: Double, outputCount: Double): Anon_InputCount = {
-    val __obj = js.Dynamic.literal(inputCount = inputCount, outputCount = outputCount)
+    val __obj = js.Dynamic.literal(inputCount = inputCount.asInstanceOf[js.Any], outputCount = outputCount.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_InputCount]
   }

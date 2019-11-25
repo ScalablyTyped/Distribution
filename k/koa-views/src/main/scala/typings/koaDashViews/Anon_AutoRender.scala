@@ -37,11 +37,11 @@ object Anon_AutoRender {
     options: js.Any = null
   ): Anon_AutoRender = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoRender)) __obj.updateDynamic("autoRender")(autoRender)
-    if (engineSource != null) __obj.updateDynamic("engineSource")(engineSource)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (map != null) __obj.updateDynamic("map")(map)
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (!js.isUndefined(autoRender)) __obj.updateDynamic("autoRender")(autoRender.asInstanceOf[js.Any])
+    if (engineSource != null) __obj.updateDynamic("engineSource")(engineSource.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AutoRender]
   }
 }

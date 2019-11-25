@@ -15,8 +15,8 @@ object BucketByActivity {
   @scala.inline
   def apply(activityDataSourceId: String = null, minDurationMillis: String = null): BucketByActivity = {
     val __obj = js.Dynamic.literal()
-    if (activityDataSourceId != null) __obj.updateDynamic("activityDataSourceId")(activityDataSourceId)
-    if (minDurationMillis != null) __obj.updateDynamic("minDurationMillis")(minDurationMillis)
+    if (activityDataSourceId != null) __obj.updateDynamic("activityDataSourceId")(activityDataSourceId.asInstanceOf[js.Any])
+    if (minDurationMillis != null) __obj.updateDynamic("minDurationMillis")(minDurationMillis.asInstanceOf[js.Any])
     __obj.asInstanceOf[BucketByActivity]
   }
 }

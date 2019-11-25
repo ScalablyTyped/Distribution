@@ -27,10 +27,10 @@ object ScreenshotCluster {
     screens: js.Array[Screen] = null
   ): ScreenshotCluster = {
     val __obj = js.Dynamic.literal()
-    if (activity != null) __obj.updateDynamic("activity")(activity)
-    if (clusterId != null) __obj.updateDynamic("clusterId")(clusterId)
-    if (keyScreen != null) __obj.updateDynamic("keyScreen")(keyScreen)
-    if (screens != null) __obj.updateDynamic("screens")(screens)
+    if (activity != null) __obj.updateDynamic("activity")(activity.asInstanceOf[js.Any])
+    if (clusterId != null) __obj.updateDynamic("clusterId")(clusterId.asInstanceOf[js.Any])
+    if (keyScreen != null) __obj.updateDynamic("keyScreen")(keyScreen.asInstanceOf[js.Any])
+    if (screens != null) __obj.updateDynamic("screens")(screens.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScreenshotCluster]
   }
 }

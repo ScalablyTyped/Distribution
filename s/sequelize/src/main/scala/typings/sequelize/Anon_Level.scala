@@ -14,7 +14,7 @@ trait Anon_Level extends js.Object {
 object Anon_Level {
   @scala.inline
   def apply(level: TransactionLockLevel, of: Model[_, _, _]): Anon_Level = {
-    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], of = of)
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], of = of.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Level]
   }

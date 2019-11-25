@@ -16,8 +16,8 @@ object IListEntityTypesResponse {
   @scala.inline
   def apply(entityTypes: js.Array[IEntityType] = null, nextPageToken: String = null): IListEntityTypesResponse = {
     val __obj = js.Dynamic.literal()
-    if (entityTypes != null) __obj.updateDynamic("entityTypes")(entityTypes)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (entityTypes != null) __obj.updateDynamic("entityTypes")(entityTypes.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[IListEntityTypesResponse]
   }
 }

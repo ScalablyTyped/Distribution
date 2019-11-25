@@ -24,12 +24,12 @@ object StockChartNavigatorSeriesItemMarkers {
     visible: js.UndefOr[Boolean] = js.undefined
   ): StockChartNavigatorSeriesItemMarkers = {
     val __obj = js.Dynamic.literal()
-    if (background != null) __obj.updateDynamic("background")(background)
-    if (border != null) __obj.updateDynamic("border")(border)
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
     if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[StockChartNavigatorSeriesItemMarkers]
   }
 }

@@ -30,12 +30,12 @@ object ColorVariableProperties {
     valueExpressionTitle: String = null
   ): ColorVariableProperties = {
     val __obj = js.Dynamic.literal()
-    if (field != null) __obj.updateDynamic("field")(field)
-    if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions)
-    if (normalizationField != null) __obj.updateDynamic("normalizationField")(normalizationField)
-    if (stops != null) __obj.updateDynamic("stops")(stops)
-    if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression)
-    if (valueExpressionTitle != null) __obj.updateDynamic("valueExpressionTitle")(valueExpressionTitle)
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions.asInstanceOf[js.Any])
+    if (normalizationField != null) __obj.updateDynamic("normalizationField")(normalizationField.asInstanceOf[js.Any])
+    if (stops != null) __obj.updateDynamic("stops")(stops.asInstanceOf[js.Any])
+    if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression.asInstanceOf[js.Any])
+    if (valueExpressionTitle != null) __obj.updateDynamic("valueExpressionTitle")(valueExpressionTitle.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColorVariableProperties]
   }
 }

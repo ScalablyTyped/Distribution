@@ -14,7 +14,7 @@ trait Anon_Colors extends js.Object {
 object Anon_Colors {
   @scala.inline
   def apply(colors: CliConfigSetColors, levels: CliConfigSetLevels): Anon_Colors = {
-    val __obj = js.Dynamic.literal(colors = colors, levels = levels)
+    val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any], levels = levels.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Colors]
   }

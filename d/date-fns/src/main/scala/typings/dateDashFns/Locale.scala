@@ -29,9 +29,9 @@ object Locale {
     time: /* repeated */ js.Any => js.Any,
     options: Anon_0 = null
   ): Locale = {
-    val __obj = js.Dynamic.literal(date = js.Any.fromFunction1(date), dateTime = js.Any.fromFunction1(dateTime), formatDistance = js.Any.fromFunction1(formatDistance), formatLong = formatLong, formatRelative = js.Any.fromFunction1(formatRelative), localize = localize, time = js.Any.fromFunction1(time))
-    __obj.updateDynamic("match")(`match`)
-    if (options != null) __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(date = js.Any.fromFunction1(date), dateTime = js.Any.fromFunction1(dateTime), formatDistance = js.Any.fromFunction1(formatDistance), formatLong = formatLong.asInstanceOf[js.Any], formatRelative = js.Any.fromFunction1(formatRelative), localize = localize.asInstanceOf[js.Any], time = js.Any.fromFunction1(time))
+    __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[Locale]
   }
 }

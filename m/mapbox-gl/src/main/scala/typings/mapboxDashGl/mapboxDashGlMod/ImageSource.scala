@@ -3,7 +3,7 @@ package typings.mapboxDashGl.mapboxDashGlMod
 import typings.mapboxDashGl.mapboxDashGlStrings.`raster-dem`
 import typings.mapboxDashGl.mapboxDashGlStrings.canvas
 import typings.mapboxDashGl.mapboxDashGlStrings.geojson
-import typings.mapboxDashGl.mapboxDashGlStrings.image
+import typings.mapboxDashGl.mapboxDashGlStrings.image_
 import typings.mapboxDashGl.mapboxDashGlStrings.raster
 import typings.mapboxDashGl.mapboxDashGlStrings.vector
 import typings.mapboxDashGl.mapboxDashGlStrings.video
@@ -18,10 +18,10 @@ class ImageSource ()
      with AnySourceImpl {
   def this(options: ImageSourceOptions) = this()
   /* CompleteClass */
-  override var `type`: vector | raster | `raster-dem` | geojson | image | video | canvas = js.native
+  override var `type`: vector | raster | `raster-dem` | geojson | image_ | video | canvas = js.native
   /* CompleteClass */
   @JSName("type")
-  override var type_ImageSourceRaw: image = js.native
+  override var type_ImageSourceRaw: image_ = js.native
   def setCoordinates(coordinates: js.Array[js.Array[Double]]): this.type = js.native
   def updateImage(options: ImageSourceOptions): this.type = js.native
 }

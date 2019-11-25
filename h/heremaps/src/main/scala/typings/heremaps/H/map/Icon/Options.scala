@@ -34,10 +34,10 @@ object Options {
     hitArea: HitArea = null,
     size: ISize | Double = null
   ): Options = {
-    val __obj = js.Dynamic.literal(crossOrigin = crossOrigin)
-    if (anchor != null) __obj.updateDynamic("anchor")(anchor)
-    if (asCanvas != null) __obj.updateDynamic("asCanvas")(asCanvas)
-    if (hitArea != null) __obj.updateDynamic("hitArea")(hitArea)
+    val __obj = js.Dynamic.literal(crossOrigin = crossOrigin.asInstanceOf[js.Any])
+    if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
+    if (asCanvas != null) __obj.updateDynamic("asCanvas")(asCanvas.asInstanceOf[js.Any])
+    if (hitArea != null) __obj.updateDynamic("hitArea")(hitArea.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

@@ -12,8 +12,8 @@ trait CustomTheme extends js.Object {
 object CustomTheme {
   @scala.inline
   def apply(path: String, plaintextPath: String = null): CustomTheme = {
-    val __obj = js.Dynamic.literal(path = path)
-    if (plaintextPath != null) __obj.updateDynamic("plaintextPath")(plaintextPath)
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
+    if (plaintextPath != null) __obj.updateDynamic("plaintextPath")(plaintextPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomTheme]
   }
 }

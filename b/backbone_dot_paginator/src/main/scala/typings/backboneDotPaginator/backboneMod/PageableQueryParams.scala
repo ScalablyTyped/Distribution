@@ -26,13 +26,13 @@ object PageableQueryParams {
     totalRecords: String = null
   ): PageableQueryParams = {
     val __obj = js.Dynamic.literal()
-    if (currentPage != null) __obj.updateDynamic("currentPage")(currentPage)
-    if (directions != null) __obj.updateDynamic("directions")(directions)
-    if (order != null) __obj.updateDynamic("order")(order)
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize)
-    if (sortKey != null) __obj.updateDynamic("sortKey")(sortKey)
-    if (totalPages != null) __obj.updateDynamic("totalPages")(totalPages)
-    if (totalRecords != null) __obj.updateDynamic("totalRecords")(totalRecords)
+    if (currentPage != null) __obj.updateDynamic("currentPage")(currentPage.asInstanceOf[js.Any])
+    if (directions != null) __obj.updateDynamic("directions")(directions.asInstanceOf[js.Any])
+    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
+    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (sortKey != null) __obj.updateDynamic("sortKey")(sortKey.asInstanceOf[js.Any])
+    if (totalPages != null) __obj.updateDynamic("totalPages")(totalPages.asInstanceOf[js.Any])
+    if (totalRecords != null) __obj.updateDynamic("totalRecords")(totalRecords.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageableQueryParams]
   }
 }

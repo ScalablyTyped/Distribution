@@ -34,14 +34,14 @@ object Anon_CallProperties {
     internalSlots: js.Array[ObjectTypeInternalSlotKind] = null,
     loc: SourceLocationKind = null
   ): Anon_CallProperties = {
-    val __obj = js.Dynamic.literal(properties = properties)
-    if (callProperties != null) __obj.updateDynamic("callProperties")(callProperties)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (!js.isUndefined(exact)) __obj.updateDynamic("exact")(exact)
-    if (indexers != null) __obj.updateDynamic("indexers")(indexers)
-    if (!js.isUndefined(inexact)) __obj.updateDynamic("inexact")(inexact)
-    if (internalSlots != null) __obj.updateDynamic("internalSlots")(internalSlots)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any])
+    if (callProperties != null) __obj.updateDynamic("callProperties")(callProperties.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (!js.isUndefined(exact)) __obj.updateDynamic("exact")(exact.asInstanceOf[js.Any])
+    if (indexers != null) __obj.updateDynamic("indexers")(indexers.asInstanceOf[js.Any])
+    if (!js.isUndefined(inexact)) __obj.updateDynamic("inexact")(inexact.asInstanceOf[js.Any])
+    if (internalSlots != null) __obj.updateDynamic("internalSlots")(internalSlots.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CallProperties]
   }
 }

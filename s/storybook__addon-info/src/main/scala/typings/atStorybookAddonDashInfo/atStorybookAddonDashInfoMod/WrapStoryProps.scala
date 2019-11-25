@@ -20,8 +20,8 @@ object WrapStoryProps {
     storyFn: /* p */ js.UndefOr[StoryContext] => _ = null
   ): WrapStoryProps = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (storyFn != null) __obj.updateDynamic("storyFn")(js.Any.fromFunction1(storyFn))
     __obj.asInstanceOf[WrapStoryProps]
   }

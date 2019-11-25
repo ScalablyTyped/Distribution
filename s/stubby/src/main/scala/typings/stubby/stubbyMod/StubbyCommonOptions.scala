@@ -39,15 +39,15 @@ object StubbyCommonOptions {
     watch: String = null
   ): StubbyCommonOptions = {
     val __obj = js.Dynamic.literal()
-    if (_httpsOptions != null) __obj.updateDynamic("_httpsOptions")(_httpsOptions)
+    if (_httpsOptions != null) __obj.updateDynamic("_httpsOptions")(_httpsOptions.asInstanceOf[js.Any])
     if (admin != null) __obj.updateDynamic("admin")(admin.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (datadir != null) __obj.updateDynamic("datadir")(datadir)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet)
+    if (datadir != null) __obj.updateDynamic("datadir")(datadir.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet.asInstanceOf[js.Any])
     if (stubs != null) __obj.updateDynamic("stubs")(stubs.asInstanceOf[js.Any])
     if (tls != null) __obj.updateDynamic("tls")(tls.asInstanceOf[js.Any])
-    if (watch != null) __obj.updateDynamic("watch")(watch)
+    if (watch != null) __obj.updateDynamic("watch")(watch.asInstanceOf[js.Any])
     __obj.asInstanceOf[StubbyCommonOptions]
   }
 }

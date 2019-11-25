@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "iterm2-version"
-version := "4.2.0-3f3fd8"
+version := "4.2.0-9f065a"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

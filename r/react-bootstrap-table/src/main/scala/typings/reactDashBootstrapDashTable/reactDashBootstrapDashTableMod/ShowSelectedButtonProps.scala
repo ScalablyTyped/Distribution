@@ -44,12 +44,12 @@ object ShowSelectedButtonProps {
     showOnlySelectText: String = null
   ): ShowSelectedButtonProps = {
     val __obj = js.Dynamic.literal()
-    if (btnContextual != null) __obj.updateDynamic("btnContextual")(btnContextual)
-    if (btnGlyphicon != null) __obj.updateDynamic("btnGlyphicon")(btnGlyphicon)
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (btnContextual != null) __obj.updateDynamic("btnContextual")(btnContextual.asInstanceOf[js.Any])
+    if (btnGlyphicon != null) __obj.updateDynamic("btnGlyphicon")(btnGlyphicon.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (showAllText != null) __obj.updateDynamic("showAllText")(showAllText)
-    if (showOnlySelectText != null) __obj.updateDynamic("showOnlySelectText")(showOnlySelectText)
+    if (showAllText != null) __obj.updateDynamic("showAllText")(showAllText.asInstanceOf[js.Any])
+    if (showOnlySelectText != null) __obj.updateDynamic("showOnlySelectText")(showOnlySelectText.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShowSelectedButtonProps]
   }
 }

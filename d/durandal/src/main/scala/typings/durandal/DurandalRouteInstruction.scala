@@ -22,7 +22,7 @@ object DurandalRouteInstruction {
     queryParams: StringDictionary[js.Any],
     queryString: String
   ): DurandalRouteInstruction = {
-    val __obj = js.Dynamic.literal(config = config, fragment = fragment, params = params, queryParams = queryParams, queryString = queryString)
+    val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], fragment = fragment.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], queryParams = queryParams.asInstanceOf[js.Any], queryString = queryString.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DurandalRouteInstruction]
   }

@@ -11,7 +11,7 @@ trait ICoreAcceleratorKeys extends js.Object {
 object ICoreAcceleratorKeys {
   @scala.inline
   def apply(onacceleratorkeyactivated: js.Any): ICoreAcceleratorKeys = {
-    val __obj = js.Dynamic.literal(onacceleratorkeyactivated = onacceleratorkeyactivated)
+    val __obj = js.Dynamic.literal(onacceleratorkeyactivated = onacceleratorkeyactivated.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ICoreAcceleratorKeys]
   }

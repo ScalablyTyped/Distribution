@@ -35,9 +35,9 @@ object ICurrentChangedArgs {
     currentWidget: Widget = null,
     previousWidget: Widget = null
   ): ICurrentChangedArgs = {
-    val __obj = js.Dynamic.literal(currentIndex = currentIndex, previousIndex = previousIndex)
-    if (currentWidget != null) __obj.updateDynamic("currentWidget")(currentWidget)
-    if (previousWidget != null) __obj.updateDynamic("previousWidget")(previousWidget)
+    val __obj = js.Dynamic.literal(currentIndex = currentIndex.asInstanceOf[js.Any], previousIndex = previousIndex.asInstanceOf[js.Any])
+    if (currentWidget != null) __obj.updateDynamic("currentWidget")(currentWidget.asInstanceOf[js.Any])
+    if (previousWidget != null) __obj.updateDynamic("previousWidget")(previousWidget.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICurrentChangedArgs]
   }
 }

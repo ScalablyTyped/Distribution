@@ -57,12 +57,12 @@ object PutTelemetryRecordsInput {
     ResourceARN: String = null
   ): PutTelemetryRecordsInput = {
     val __obj = js.Dynamic.literal(TelemetryRecords = TelemetryRecords.asInstanceOf[js.Any])
-    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal)
-    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions)
+    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal.asInstanceOf[js.Any])
+    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions.asInstanceOf[js.Any])
     if ($maxRetries != null) __obj.updateDynamic("$maxRetries")($maxRetries.asInstanceOf[js.Any])
-    if (EC2InstanceId != null) __obj.updateDynamic("EC2InstanceId")(EC2InstanceId)
-    if (Hostname != null) __obj.updateDynamic("Hostname")(Hostname)
-    if (ResourceARN != null) __obj.updateDynamic("ResourceARN")(ResourceARN)
+    if (EC2InstanceId != null) __obj.updateDynamic("EC2InstanceId")(EC2InstanceId.asInstanceOf[js.Any])
+    if (Hostname != null) __obj.updateDynamic("Hostname")(Hostname.asInstanceOf[js.Any])
+    if (ResourceARN != null) __obj.updateDynamic("ResourceARN")(ResourceARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutTelemetryRecordsInput]
   }
 }

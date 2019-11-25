@@ -13,8 +13,8 @@ trait IError extends js.Object {
 object IError {
   @scala.inline
   def apply(ErrorMessage: String, HasError: Boolean, TranslateArgs: IErrorTranslateArgs = null): IError = {
-    val __obj = js.Dynamic.literal(ErrorMessage = ErrorMessage, HasError = HasError)
-    if (TranslateArgs != null) __obj.updateDynamic("TranslateArgs")(TranslateArgs)
+    val __obj = js.Dynamic.literal(ErrorMessage = ErrorMessage.asInstanceOf[js.Any], HasError = HasError.asInstanceOf[js.Any])
+    if (TranslateArgs != null) __obj.updateDynamic("TranslateArgs")(TranslateArgs.asInstanceOf[js.Any])
     __obj.asInstanceOf[IError]
   }
 }

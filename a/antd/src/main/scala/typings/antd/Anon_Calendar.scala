@@ -36,17 +36,17 @@ object Anon_Calendar {
     Transfer: js.Object = null,
     Upload: js.Object = null
   ): Anon_Calendar = {
-    val __obj = js.Dynamic.literal(exist = exist, locale = locale)
-    if (Calendar != null) __obj.updateDynamic("Calendar")(Calendar)
-    if (DatePicker != null) __obj.updateDynamic("DatePicker")(DatePicker)
-    if (Modal != null) __obj.updateDynamic("Modal")(Modal)
-    if (Pagination != null) __obj.updateDynamic("Pagination")(Pagination)
-    if (Popconfirm != null) __obj.updateDynamic("Popconfirm")(Popconfirm)
-    if (Select != null) __obj.updateDynamic("Select")(Select)
-    if (Table != null) __obj.updateDynamic("Table")(Table)
-    if (TimePicker != null) __obj.updateDynamic("TimePicker")(TimePicker)
-    if (Transfer != null) __obj.updateDynamic("Transfer")(Transfer)
-    if (Upload != null) __obj.updateDynamic("Upload")(Upload)
+    val __obj = js.Dynamic.literal(exist = exist.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any])
+    if (Calendar != null) __obj.updateDynamic("Calendar")(Calendar.asInstanceOf[js.Any])
+    if (DatePicker != null) __obj.updateDynamic("DatePicker")(DatePicker.asInstanceOf[js.Any])
+    if (Modal != null) __obj.updateDynamic("Modal")(Modal.asInstanceOf[js.Any])
+    if (Pagination != null) __obj.updateDynamic("Pagination")(Pagination.asInstanceOf[js.Any])
+    if (Popconfirm != null) __obj.updateDynamic("Popconfirm")(Popconfirm.asInstanceOf[js.Any])
+    if (Select != null) __obj.updateDynamic("Select")(Select.asInstanceOf[js.Any])
+    if (Table != null) __obj.updateDynamic("Table")(Table.asInstanceOf[js.Any])
+    if (TimePicker != null) __obj.updateDynamic("TimePicker")(TimePicker.asInstanceOf[js.Any])
+    if (Transfer != null) __obj.updateDynamic("Transfer")(Transfer.asInstanceOf[js.Any])
+    if (Upload != null) __obj.updateDynamic("Upload")(Upload.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Calendar]
   }
 }

@@ -2,9 +2,6 @@ package typings.atIonicCore.distTypesComponentsMod.LocalJSX
 
 import typings.atIonicCore.atIonicCoreStrings.ios
 import typings.atIonicCore.atIonicCoreStrings.md
-import typings.atIonicCore.distTypesComponentsRangeRangeDashInterfaceMod.RangeChangeEventDetail
-import typings.atIonicCore.distTypesComponentsRangeRangeDashInterfaceMod.RangeValue
-import typings.atIonicCore.distTypesInterfaceMod.Color
 import typings.std.CustomEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +11,9 @@ trait IonRange extends js.Object {
   /**
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
-  var color: js.UndefOr[Color] = js.undefined
+  var color: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any
+  ] = js.undefined
   /**
     * How long, in milliseconds, to wait to trigger the `ionChange` event after each change in the range value.
     */
@@ -50,7 +49,14 @@ trait IonRange extends js.Object {
   /**
     * Emitted when the value property has changed.
     */
-  var onIonChange: js.UndefOr[js.Function1[/* event */ CustomEvent[RangeChangeEventDetail], Unit]] = js.undefined
+  var onIonChange: js.UndefOr[
+    js.Function1[
+      /* event */ CustomEvent[
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RangeChangeEventDetail */ _
+      ], 
+      Unit
+    ]
+  ] = js.undefined
   /**
     * Emitted when the range has focus.
     */
@@ -74,13 +80,15 @@ trait IonRange extends js.Object {
   /**
     * the value of the range.
     */
-  var value: js.UndefOr[RangeValue] = js.undefined
+  var value: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RangeValue */ js.Any
+  ] = js.undefined
 }
 
 object IonRange {
   @scala.inline
   def apply(
-    color: Color = null,
+    color: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any = null,
     debounce: Int | Double = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     dualKnobs: js.UndefOr[Boolean] = js.undefined,
@@ -89,30 +97,32 @@ object IonRange {
     mode: ios | md = null,
     name: String = null,
     onIonBlur: /* event */ CustomEvent[Unit] => Unit = null,
-    onIonChange: /* event */ CustomEvent[RangeChangeEventDetail] => Unit = null,
+    onIonChange: /* event */ CustomEvent[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RangeChangeEventDetail */ _
+    ] => Unit = null,
     onIonFocus: /* event */ CustomEvent[Unit] => Unit = null,
     pin: js.UndefOr[Boolean] = js.undefined,
     snaps: js.UndefOr[Boolean] = js.undefined,
     step: Int | Double = null,
     ticks: js.UndefOr[Boolean] = js.undefined,
-    value: RangeValue = null
+    value: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RangeValue */ js.Any = null
   ): IonRange = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (debounce != null) __obj.updateDynamic("debounce")(debounce.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (!js.isUndefined(dualKnobs)) __obj.updateDynamic("dualKnobs")(dualKnobs)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(dualKnobs)) __obj.updateDynamic("dualKnobs")(dualKnobs.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (onIonBlur != null) __obj.updateDynamic("onIonBlur")(js.Any.fromFunction1(onIonBlur))
     if (onIonChange != null) __obj.updateDynamic("onIonChange")(js.Any.fromFunction1(onIonChange))
     if (onIonFocus != null) __obj.updateDynamic("onIonFocus")(js.Any.fromFunction1(onIonFocus))
-    if (!js.isUndefined(pin)) __obj.updateDynamic("pin")(pin)
-    if (!js.isUndefined(snaps)) __obj.updateDynamic("snaps")(snaps)
+    if (!js.isUndefined(pin)) __obj.updateDynamic("pin")(pin.asInstanceOf[js.Any])
+    if (!js.isUndefined(snaps)) __obj.updateDynamic("snaps")(snaps.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
-    if (!js.isUndefined(ticks)) __obj.updateDynamic("ticks")(ticks)
+    if (!js.isUndefined(ticks)) __obj.updateDynamic("ticks")(ticks.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonRange]
   }

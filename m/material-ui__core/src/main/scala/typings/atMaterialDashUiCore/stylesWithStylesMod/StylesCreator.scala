@@ -15,7 +15,7 @@ trait StylesCreator extends js.Object {
 object StylesCreator {
   @scala.inline
   def apply(create: (Theme, String) => StyleRules[String], options: Anon_Index, themingEnabled: Boolean): StylesCreator = {
-    val __obj = js.Dynamic.literal(create = js.Any.fromFunction2(create), options = options, themingEnabled = themingEnabled)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction2(create), options = options.asInstanceOf[js.Any], themingEnabled = themingEnabled.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StylesCreator]
   }

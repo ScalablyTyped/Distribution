@@ -18,9 +18,9 @@ object IFormattingOptions {
     partial: js.UndefOr[Boolean] = js.undefined
   ): IFormattingOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(capSQL)) __obj.updateDynamic("capSQL")(capSQL)
-    if (`def` != null) __obj.updateDynamic("def")(`def`)
-    if (!js.isUndefined(partial)) __obj.updateDynamic("partial")(partial)
+    if (!js.isUndefined(capSQL)) __obj.updateDynamic("capSQL")(capSQL.asInstanceOf[js.Any])
+    if (`def` != null) __obj.updateDynamic("def")(`def`.asInstanceOf[js.Any])
+    if (!js.isUndefined(partial)) __obj.updateDynamic("partial")(partial.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFormattingOptions]
   }
 }

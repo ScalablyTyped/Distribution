@@ -38,9 +38,9 @@ object PlusUploaderUploadFileOptions {
   @scala.inline
   def apply(key: String = null, mime: String = null, name: String = null): PlusUploaderUploadFileOptions = {
     val __obj = js.Dynamic.literal()
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (mime != null) __obj.updateDynamic("mime")(mime)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (mime != null) __obj.updateDynamic("mime")(mime.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusUploaderUploadFileOptions]
   }
 }

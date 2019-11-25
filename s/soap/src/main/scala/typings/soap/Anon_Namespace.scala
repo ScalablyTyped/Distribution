@@ -13,8 +13,8 @@ trait Anon_Namespace extends js.Object {
 object Anon_Namespace {
   @scala.inline
   def apply(namespace: String, xmlnsAttributes: js.Array[IXmlAttribute] = null): Anon_Namespace = {
-    val __obj = js.Dynamic.literal(namespace = namespace)
-    if (xmlnsAttributes != null) __obj.updateDynamic("xmlnsAttributes")(xmlnsAttributes)
+    val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any])
+    if (xmlnsAttributes != null) __obj.updateDynamic("xmlnsAttributes")(xmlnsAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Namespace]
   }
 }

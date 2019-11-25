@@ -15,8 +15,8 @@ object DefaultColumnValue {
   @scala.inline
   def apply(formula: String = null, value: String = null): DefaultColumnValue = {
     val __obj = js.Dynamic.literal()
-    if (formula != null) __obj.updateDynamic("formula")(formula)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (formula != null) __obj.updateDynamic("formula")(formula.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultColumnValue]
   }
 }

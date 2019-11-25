@@ -22,7 +22,7 @@ object RenderInputParams {
     id: String,
     inputProps: js.Object
   ): RenderInputParams = {
-    val __obj = js.Dynamic.literal(InputLabelProps = InputLabelProps, InputProps = InputProps, disabled = disabled, id = id, inputProps = inputProps)
+    val __obj = js.Dynamic.literal(InputLabelProps = InputLabelProps.asInstanceOf[js.Any], InputProps = InputProps.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], inputProps = inputProps.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RenderInputParams]
   }

@@ -11,7 +11,7 @@ trait IInkRecognizer extends js.Object {
 object IInkRecognizer {
   @scala.inline
   def apply(name: String): IInkRecognizer = {
-    val __obj = js.Dynamic.literal(name = name)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IInkRecognizer]
   }

@@ -64,9 +64,9 @@ object ReactListProps {
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (scrollParentGetter != null) __obj.updateDynamic("scrollParentGetter")(js.Any.fromFunction0(scrollParentGetter))
     if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(useStaticSize)) __obj.updateDynamic("useStaticSize")(useStaticSize)
-    if (!js.isUndefined(useTranslate3d)) __obj.updateDynamic("useTranslate3d")(useTranslate3d)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(useStaticSize)) __obj.updateDynamic("useStaticSize")(useStaticSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(useTranslate3d)) __obj.updateDynamic("useTranslate3d")(useTranslate3d.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactListProps]
   }
 }

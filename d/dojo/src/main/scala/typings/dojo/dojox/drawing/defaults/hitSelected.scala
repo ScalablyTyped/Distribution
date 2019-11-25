@@ -36,7 +36,7 @@ trait hitSelected extends js.Object {
 object hitSelected {
   @scala.inline
   def apply(cap: String, color: String, fill: js.Object, style: String, width: Double): hitSelected = {
-    val __obj = js.Dynamic.literal(cap = cap, color = color, fill = fill, style = style, width = width)
+    val __obj = js.Dynamic.literal(cap = cap.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], fill = fill.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[hitSelected]
   }

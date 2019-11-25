@@ -77,15 +77,15 @@ object Anon_CacheFile {
     storeCss: (/* pathname */ String, /* css */ String, /* req */ Request[ParamsDictionary], /* next */ js.Function) => Unit = null
   ): Anon_CacheFile = {
     val __obj = js.Dynamic.literal()
-    if (cacheFile != null) __obj.updateDynamic("cacheFile")(cacheFile)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (dest != null) __obj.updateDynamic("dest")(dest)
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
-    if (!js.isUndefined(once)) __obj.updateDynamic("once")(once)
-    if (pathRoot != null) __obj.updateDynamic("pathRoot")(pathRoot)
-    if (postprocess != null) __obj.updateDynamic("postprocess")(postprocess)
-    if (preprocess != null) __obj.updateDynamic("preprocess")(preprocess)
-    if (render != null) __obj.updateDynamic("render")(render)
+    if (cacheFile != null) __obj.updateDynamic("cacheFile")(cacheFile.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (dest != null) __obj.updateDynamic("dest")(dest.asInstanceOf[js.Any])
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
+    if (!js.isUndefined(once)) __obj.updateDynamic("once")(once.asInstanceOf[js.Any])
+    if (pathRoot != null) __obj.updateDynamic("pathRoot")(pathRoot.asInstanceOf[js.Any])
+    if (postprocess != null) __obj.updateDynamic("postprocess")(postprocess.asInstanceOf[js.Any])
+    if (preprocess != null) __obj.updateDynamic("preprocess")(preprocess.asInstanceOf[js.Any])
+    if (render != null) __obj.updateDynamic("render")(render.asInstanceOf[js.Any])
     if (storeCss != null) __obj.updateDynamic("storeCss")(js.Any.fromFunction4(storeCss))
     __obj.asInstanceOf[Anon_CacheFile]
   }

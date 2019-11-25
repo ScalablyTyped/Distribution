@@ -14,7 +14,7 @@ object Anon_BearingSnap {
   def apply(bearingSnap: Int | Double = null, pitchWithRotate: js.UndefOr[Boolean] = js.undefined): Anon_BearingSnap = {
     val __obj = js.Dynamic.literal()
     if (bearingSnap != null) __obj.updateDynamic("bearingSnap")(bearingSnap.asInstanceOf[js.Any])
-    if (!js.isUndefined(pitchWithRotate)) __obj.updateDynamic("pitchWithRotate")(pitchWithRotate)
+    if (!js.isUndefined(pitchWithRotate)) __obj.updateDynamic("pitchWithRotate")(pitchWithRotate.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BearingSnap]
   }
 }

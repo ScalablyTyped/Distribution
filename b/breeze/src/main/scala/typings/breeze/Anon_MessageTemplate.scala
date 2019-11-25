@@ -12,7 +12,7 @@ object Anon_MessageTemplate {
   @scala.inline
   def apply(messageTemplate: String = null): Anon_MessageTemplate = {
     val __obj = js.Dynamic.literal()
-    if (messageTemplate != null) __obj.updateDynamic("messageTemplate")(messageTemplate)
+    if (messageTemplate != null) __obj.updateDynamic("messageTemplate")(messageTemplate.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_MessageTemplate]
   }
 }

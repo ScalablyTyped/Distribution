@@ -21,8 +21,8 @@ object IKernelInstallInfo {
     managers: js.Array[String],
     overrides: StringDictionary[js.UndefOr[IInstallInfoEntry]] = null
   ): IKernelInstallInfo = {
-    val __obj = js.Dynamic.literal(base = base, kernel_spec = kernel_spec, managers = managers)
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides)
+    val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], kernel_spec = kernel_spec.asInstanceOf[js.Any], managers = managers.asInstanceOf[js.Any])
+    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
     __obj.asInstanceOf[IKernelInstallInfo]
   }
 }

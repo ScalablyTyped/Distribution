@@ -24,7 +24,7 @@ object Anon_3 {
     SAVEBUF: Anon_1P0,
     VERSION: Anon_116
   ): Anon_3 = {
-    val __obj = js.Dynamic.literal(LEN_OFFSET = LEN_OFFSET, LEVEL = LEVEL, PIXEL_SIZE = PIXEL_SIZE, PRINTBUF = PRINTBUF, SAVEBUF = SAVEBUF, VERSION = VERSION)
+    val __obj = js.Dynamic.literal(LEN_OFFSET = LEN_OFFSET.asInstanceOf[js.Any], LEVEL = LEVEL.asInstanceOf[js.Any], PIXEL_SIZE = PIXEL_SIZE.asInstanceOf[js.Any], PRINTBUF = PRINTBUF.asInstanceOf[js.Any], SAVEBUF = SAVEBUF.asInstanceOf[js.Any], VERSION = VERSION.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_3]
   }

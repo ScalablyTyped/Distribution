@@ -20,8 +20,8 @@ object IPnpObject {
     `type`: PnpObjectType,
     update: PnpObjectUpdate => Unit
   ): IPnpObject = {
-    val __obj = js.Dynamic.literal(id = id, properties = properties, update = js.Any.fromFunction1(update))
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], update = js.Any.fromFunction1(update))
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPnpObject]
   }
 }

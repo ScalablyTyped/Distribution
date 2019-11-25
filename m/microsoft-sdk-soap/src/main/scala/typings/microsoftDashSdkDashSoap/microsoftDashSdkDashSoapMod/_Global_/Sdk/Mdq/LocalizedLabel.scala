@@ -21,7 +21,7 @@ object LocalizedLabel {
     LangaugeCode: scala.Double,
     MetadataId: java.lang.String
   ): LocalizedLabel = {
-    val __obj = js.Dynamic.literal(HasChanged = HasChanged, IsManaged = IsManaged, Label = Label, LangaugeCode = LangaugeCode, MetadataId = MetadataId)
+    val __obj = js.Dynamic.literal(HasChanged = HasChanged.asInstanceOf[js.Any], IsManaged = IsManaged.asInstanceOf[js.Any], Label = Label.asInstanceOf[js.Any], LangaugeCode = LangaugeCode.asInstanceOf[js.Any], MetadataId = MetadataId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LocalizedLabel]
   }

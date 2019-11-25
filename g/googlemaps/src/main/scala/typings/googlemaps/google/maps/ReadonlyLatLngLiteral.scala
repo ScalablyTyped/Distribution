@@ -15,7 +15,7 @@ trait ReadonlyLatLngLiteral extends js.Object {
 object ReadonlyLatLngLiteral {
   @scala.inline
   def apply(lat: Double, lng: Double): ReadonlyLatLngLiteral = {
-    val __obj = js.Dynamic.literal(lat = lat, lng = lng)
+    val __obj = js.Dynamic.literal(lat = lat.asInstanceOf[js.Any], lng = lng.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReadonlyLatLngLiteral]
   }

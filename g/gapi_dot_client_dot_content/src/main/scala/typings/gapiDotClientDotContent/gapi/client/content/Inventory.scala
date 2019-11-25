@@ -45,15 +45,15 @@ object Inventory {
     sellOnGoogleQuantity: Int | Double = null
   ): Inventory = {
     val __obj = js.Dynamic.literal()
-    if (availability != null) __obj.updateDynamic("availability")(availability)
-    if (installment != null) __obj.updateDynamic("installment")(installment)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (loyaltyPoints != null) __obj.updateDynamic("loyaltyPoints")(loyaltyPoints)
-    if (pickup != null) __obj.updateDynamic("pickup")(pickup)
-    if (price != null) __obj.updateDynamic("price")(price)
+    if (availability != null) __obj.updateDynamic("availability")(availability.asInstanceOf[js.Any])
+    if (installment != null) __obj.updateDynamic("installment")(installment.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (loyaltyPoints != null) __obj.updateDynamic("loyaltyPoints")(loyaltyPoints.asInstanceOf[js.Any])
+    if (pickup != null) __obj.updateDynamic("pickup")(pickup.asInstanceOf[js.Any])
+    if (price != null) __obj.updateDynamic("price")(price.asInstanceOf[js.Any])
     if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
-    if (salePrice != null) __obj.updateDynamic("salePrice")(salePrice)
-    if (salePriceEffectiveDate != null) __obj.updateDynamic("salePriceEffectiveDate")(salePriceEffectiveDate)
+    if (salePrice != null) __obj.updateDynamic("salePrice")(salePrice.asInstanceOf[js.Any])
+    if (salePriceEffectiveDate != null) __obj.updateDynamic("salePriceEffectiveDate")(salePriceEffectiveDate.asInstanceOf[js.Any])
     if (sellOnGoogleQuantity != null) __obj.updateDynamic("sellOnGoogleQuantity")(sellOnGoogleQuantity.asInstanceOf[js.Any])
     __obj.asInstanceOf[Inventory]
   }

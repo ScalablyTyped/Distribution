@@ -70,12 +70,12 @@ object IOptions {
     path: String = null,
     setBusy: () => IDisposable = null
   ): IOptions = {
-    val __obj = js.Dynamic.literal(contentFactory = contentFactory, manager = manager, mimeTypeService = mimeTypeService, rendermime = rendermime)
-    if (basePath != null) __obj.updateDynamic("basePath")(basePath)
-    if (kernelPreference != null) __obj.updateDynamic("kernelPreference")(kernelPreference)
-    if (modelFactory != null) __obj.updateDynamic("modelFactory")(modelFactory)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (path != null) __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(contentFactory = contentFactory.asInstanceOf[js.Any], manager = manager.asInstanceOf[js.Any], mimeTypeService = mimeTypeService.asInstanceOf[js.Any], rendermime = rendermime.asInstanceOf[js.Any])
+    if (basePath != null) __obj.updateDynamic("basePath")(basePath.asInstanceOf[js.Any])
+    if (kernelPreference != null) __obj.updateDynamic("kernelPreference")(kernelPreference.asInstanceOf[js.Any])
+    if (modelFactory != null) __obj.updateDynamic("modelFactory")(modelFactory.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (setBusy != null) __obj.updateDynamic("setBusy")(js.Any.fromFunction0(setBusy))
     __obj.asInstanceOf[IOptions]
   }

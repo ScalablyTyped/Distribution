@@ -12,7 +12,7 @@ trait Page extends js.Object {
 object Page {
   @scala.inline
   def apply(items: js.Array[_], pageSize: Pagesize): Page = {
-    val __obj = js.Dynamic.literal(items = items, pageSize = pageSize)
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], pageSize = pageSize.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Page]
   }

@@ -12,8 +12,8 @@ trait ExportUserField extends js.Object {
 object ExportUserField {
   @scala.inline
   def apply(name: String, export_as: String = null): ExportUserField = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (export_as != null) __obj.updateDynamic("export_as")(export_as)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (export_as != null) __obj.updateDynamic("export_as")(export_as.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportUserField]
   }
 }

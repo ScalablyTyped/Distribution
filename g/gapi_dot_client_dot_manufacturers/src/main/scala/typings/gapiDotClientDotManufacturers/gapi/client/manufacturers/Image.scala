@@ -27,9 +27,9 @@ object Image {
   @scala.inline
   def apply(imageUrl: String = null, status: String = null, `type`: String = null): Image = {
     val __obj = js.Dynamic.literal()
-    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Image]
   }
 }

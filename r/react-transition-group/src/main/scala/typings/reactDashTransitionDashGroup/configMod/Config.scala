@@ -11,7 +11,7 @@ trait Config extends js.Object {
 object Config {
   @scala.inline
   def apply(disabled: Boolean): Config = {
-    val __obj = js.Dynamic.literal(disabled = disabled)
+    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Config]
   }

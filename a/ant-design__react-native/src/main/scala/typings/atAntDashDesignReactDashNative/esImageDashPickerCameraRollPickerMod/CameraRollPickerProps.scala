@@ -39,18 +39,18 @@ object CameraRollPickerProps {
     selected: js.Array[_] = null,
     selectedMarker: Element = null
   ): CameraRollPickerProps = {
-    val __obj = js.Dynamic.literal(first = first, imageMargin = imageMargin, imagesPerRow = imagesPerRow, maximum = maximum)
-    if (after != null) __obj.updateDynamic("after")(after)
-    if (assetType != null) __obj.updateDynamic("assetType")(assetType)
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    val __obj = js.Dynamic.literal(first = first.asInstanceOf[js.Any], imageMargin = imageMargin.asInstanceOf[js.Any], imagesPerRow = imagesPerRow.asInstanceOf[js.Any], maximum = maximum.asInstanceOf[js.Any])
+    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
+    if (assetType != null) __obj.updateDynamic("assetType")(assetType.asInstanceOf[js.Any])
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))
     if (containerWidth != null) __obj.updateDynamic("containerWidth")(containerWidth.asInstanceOf[js.Any])
-    if (groupName != null) __obj.updateDynamic("groupName")(groupName)
-    if (groupTypes != null) __obj.updateDynamic("groupTypes")(groupTypes)
-    if (mimeTypes != null) __obj.updateDynamic("mimeTypes")(mimeTypes)
-    if (!js.isUndefined(selectSingleItem)) __obj.updateDynamic("selectSingleItem")(selectSingleItem)
-    if (selected != null) __obj.updateDynamic("selected")(selected)
-    if (selectedMarker != null) __obj.updateDynamic("selectedMarker")(selectedMarker)
+    if (groupName != null) __obj.updateDynamic("groupName")(groupName.asInstanceOf[js.Any])
+    if (groupTypes != null) __obj.updateDynamic("groupTypes")(groupTypes.asInstanceOf[js.Any])
+    if (mimeTypes != null) __obj.updateDynamic("mimeTypes")(mimeTypes.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectSingleItem)) __obj.updateDynamic("selectSingleItem")(selectSingleItem.asInstanceOf[js.Any])
+    if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
+    if (selectedMarker != null) __obj.updateDynamic("selectedMarker")(selectedMarker.asInstanceOf[js.Any])
     __obj.asInstanceOf[CameraRollPickerProps]
   }
 }

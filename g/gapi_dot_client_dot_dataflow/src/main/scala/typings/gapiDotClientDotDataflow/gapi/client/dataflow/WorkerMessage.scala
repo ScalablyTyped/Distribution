@@ -42,12 +42,12 @@ object WorkerMessage {
     workerShutdownNotice: WorkerShutdownNotice = null
   ): WorkerMessage = {
     val __obj = js.Dynamic.literal()
-    if (labels != null) __obj.updateDynamic("labels")(labels)
-    if (time != null) __obj.updateDynamic("time")(time)
-    if (workerHealthReport != null) __obj.updateDynamic("workerHealthReport")(workerHealthReport)
-    if (workerMessageCode != null) __obj.updateDynamic("workerMessageCode")(workerMessageCode)
-    if (workerMetrics != null) __obj.updateDynamic("workerMetrics")(workerMetrics)
-    if (workerShutdownNotice != null) __obj.updateDynamic("workerShutdownNotice")(workerShutdownNotice)
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
+    if (workerHealthReport != null) __obj.updateDynamic("workerHealthReport")(workerHealthReport.asInstanceOf[js.Any])
+    if (workerMessageCode != null) __obj.updateDynamic("workerMessageCode")(workerMessageCode.asInstanceOf[js.Any])
+    if (workerMetrics != null) __obj.updateDynamic("workerMetrics")(workerMetrics.asInstanceOf[js.Any])
+    if (workerShutdownNotice != null) __obj.updateDynamic("workerShutdownNotice")(workerShutdownNotice.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkerMessage]
   }
 }

@@ -17,7 +17,7 @@ trait Anon_DeeptypeHOTEL extends js.Object {
 object Anon_DeeptypeHOTEL {
   @scala.inline
   def apply(deep_type: HOTEL, hotel: Hotel): Anon_DeeptypeHOTEL = {
-    val __obj = js.Dynamic.literal(deep_type = deep_type, hotel = hotel)
+    val __obj = js.Dynamic.literal(deep_type = deep_type.asInstanceOf[js.Any], hotel = hotel.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DeeptypeHOTEL]
   }

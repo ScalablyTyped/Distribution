@@ -13,7 +13,7 @@ trait GitCommitToCreate extends js.Object {
 object GitCommitToCreate {
   @scala.inline
   def apply(baseRef: GitRef, comment: String, pathActions: js.Array[GitPathAction]): GitCommitToCreate = {
-    val __obj = js.Dynamic.literal(baseRef = baseRef, comment = comment, pathActions = pathActions)
+    val __obj = js.Dynamic.literal(baseRef = baseRef.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], pathActions = pathActions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GitCommitToCreate]
   }

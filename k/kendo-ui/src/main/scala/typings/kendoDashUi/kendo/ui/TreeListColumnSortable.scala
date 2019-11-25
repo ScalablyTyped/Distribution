@@ -12,7 +12,7 @@ object TreeListColumnSortable {
   @scala.inline
   def apply(compare: js.Function = null): TreeListColumnSortable = {
     val __obj = js.Dynamic.literal()
-    if (compare != null) __obj.updateDynamic("compare")(compare)
+    if (compare != null) __obj.updateDynamic("compare")(compare.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeListColumnSortable]
   }
 }

@@ -1,7 +1,6 @@
 package typings.dojo.dojo.main
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValueOldValuePropertyAny
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -53,6 +52,14 @@ class Stateful () extends js.Object {
     * @param name               OptionalIndicates the property to watch. This is optional (the callback may be theonly parameter), and if omitted, all the properties will be watched
     * @param callback The function to execute when the property changes. This will be called afterthe property has been changed. The callback will be called with the |this|set to the instance, the first argument as the name of the property, thesecond argument as the old value and the third argument as the new value.
     */
-  def watch(property: String, callback: Fn_NewValueOldValuePropertyAny): Anon_Unwatch = js.native
+  def watch(
+    property: String,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Any], 
+      /* newValue */ js.UndefOr[js.Any], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

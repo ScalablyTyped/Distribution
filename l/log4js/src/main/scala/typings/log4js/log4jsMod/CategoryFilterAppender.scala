@@ -17,8 +17,8 @@ object CategoryFilterAppender {
   @scala.inline
   def apply(`type`: categoryFilter, appender: String = null, exclude: String | js.Array[String] = null): CategoryFilterAppender = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (appender != null) __obj.updateDynamic("appender")(appender)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (appender != null) __obj.updateDynamic("appender")(appender.asInstanceOf[js.Any])
     if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
     __obj.asInstanceOf[CategoryFilterAppender]
   }

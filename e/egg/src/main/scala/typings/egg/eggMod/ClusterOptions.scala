@@ -39,13 +39,13 @@ object ClusterOptions {
     workers: Int | Double = null
   ): ClusterOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (baseDir != null) __obj.updateDynamic("baseDir")(baseDir)
-    if (cert != null) __obj.updateDynamic("cert")(cert)
-    if (framework != null) __obj.updateDynamic("framework")(framework)
-    if (!js.isUndefined(https)) __obj.updateDynamic("https")(https)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (baseDir != null) __obj.updateDynamic("baseDir")(baseDir.asInstanceOf[js.Any])
+    if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
+    if (framework != null) __obj.updateDynamic("framework")(framework.asInstanceOf[js.Any])
+    if (!js.isUndefined(https)) __obj.updateDynamic("https")(https.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (workers != null) __obj.updateDynamic("workers")(workers.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterOptions]

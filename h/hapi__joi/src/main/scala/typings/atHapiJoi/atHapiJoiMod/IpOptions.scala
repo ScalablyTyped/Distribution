@@ -19,7 +19,7 @@ object IpOptions {
   @scala.inline
   def apply(cidr: PresenceMode = null, version: String | js.Array[String] = null): IpOptions = {
     val __obj = js.Dynamic.literal()
-    if (cidr != null) __obj.updateDynamic("cidr")(cidr)
+    if (cidr != null) __obj.updateDynamic("cidr")(cidr.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[IpOptions]
   }

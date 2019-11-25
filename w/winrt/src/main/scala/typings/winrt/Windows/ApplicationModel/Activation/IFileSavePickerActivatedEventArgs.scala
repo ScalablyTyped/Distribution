@@ -17,7 +17,7 @@ object IFileSavePickerActivatedEventArgs {
     previousExecutionState: ApplicationExecutionState,
     splashScreen: SplashScreen
   ): IFileSavePickerActivatedEventArgs = {
-    val __obj = js.Dynamic.literal(fileSavePickerUI = fileSavePickerUI, kind = kind, previousExecutionState = previousExecutionState, splashScreen = splashScreen)
+    val __obj = js.Dynamic.literal(fileSavePickerUI = fileSavePickerUI.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], previousExecutionState = previousExecutionState.asInstanceOf[js.Any], splashScreen = splashScreen.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IFileSavePickerActivatedEventArgs]
   }

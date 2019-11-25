@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait ConfirmationStatuses extends js.Object
 
+object ConfirmationStatuses {
+  @scala.inline
+  def CONFIRMED: typings.alexaDashSdk.alexaDashSdkStrings.CONFIRMED = this.cast("CONFIRMED")
+  @scala.inline
+  def DENIED: typings.alexaDashSdk.alexaDashSdkStrings.DENIED = this.cast("DENIED")
+  @scala.inline
+  def NONE: typings.alexaDashSdk.alexaDashSdkStrings.NONE = this.cast("NONE")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

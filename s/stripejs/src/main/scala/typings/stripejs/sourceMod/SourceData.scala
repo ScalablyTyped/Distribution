@@ -86,16 +86,16 @@ object SourceData {
     three_d_secure_2_eap: js.Any = null,
     token: Token = null
   ): SourceData = {
-    val __obj = js.Dynamic.literal(amount = amount, currency = currency, flow = flow.asInstanceOf[js.Any], usage = usage.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
-    if (mandate != null) __obj.updateDynamic("mandate")(mandate)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (receiver != null) __obj.updateDynamic("receiver")(receiver)
-    if (redirect != null) __obj.updateDynamic("redirect")(redirect)
-    if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor)
-    if (three_d_secure_2_eap != null) __obj.updateDynamic("three_d_secure_2_eap")(three_d_secure_2_eap)
-    if (token != null) __obj.updateDynamic("token")(token)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], flow = flow.asInstanceOf[js.Any], usage = usage.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (mandate != null) __obj.updateDynamic("mandate")(mandate.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (receiver != null) __obj.updateDynamic("receiver")(receiver.asInstanceOf[js.Any])
+    if (redirect != null) __obj.updateDynamic("redirect")(redirect.asInstanceOf[js.Any])
+    if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor.asInstanceOf[js.Any])
+    if (three_d_secure_2_eap != null) __obj.updateDynamic("three_d_secure_2_eap")(three_d_secure_2_eap.asInstanceOf[js.Any])
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceData]
   }
 }

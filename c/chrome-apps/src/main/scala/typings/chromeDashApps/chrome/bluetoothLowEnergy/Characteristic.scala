@@ -27,10 +27,10 @@ object Characteristic {
     service: Service = null,
     value: ArrayBuffer = null
   ): Characteristic = {
-    val __obj = js.Dynamic.literal(properties = properties, uuid = uuid)
-    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId)
-    if (service != null) __obj.updateDynamic("service")(service)
-    if (value != null) __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
+    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId.asInstanceOf[js.Any])
+    if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Characteristic]
   }
 }

@@ -20,10 +20,10 @@ object NotifyOptions {
     message: String = null
   ): NotifyOptions = {
     val __obj = js.Dynamic.literal()
-    if (boxenOpts != null) __obj.updateDynamic("boxenOpts")(boxenOpts)
-    if (!js.isUndefined(defer)) __obj.updateDynamic("defer")(defer)
-    if (!js.isUndefined(isGlobal)) __obj.updateDynamic("isGlobal")(isGlobal)
-    if (message != null) __obj.updateDynamic("message")(message)
+    if (boxenOpts != null) __obj.updateDynamic("boxenOpts")(boxenOpts.asInstanceOf[js.Any])
+    if (!js.isUndefined(defer)) __obj.updateDynamic("defer")(defer.asInstanceOf[js.Any])
+    if (!js.isUndefined(isGlobal)) __obj.updateDynamic("isGlobal")(isGlobal.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotifyOptions]
   }
 }

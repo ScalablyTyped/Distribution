@@ -12,7 +12,7 @@ trait LayoutContextProps extends js.Object {
 object LayoutContextProps {
   @scala.inline
   def apply(siderHook: Anon_AddSider): LayoutContextProps = {
-    val __obj = js.Dynamic.literal(siderHook = siderHook)
+    val __obj = js.Dynamic.literal(siderHook = siderHook.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LayoutContextProps]
   }

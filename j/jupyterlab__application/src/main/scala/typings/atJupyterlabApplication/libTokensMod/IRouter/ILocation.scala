@@ -34,7 +34,7 @@ trait ILocation extends ReadonlyJSONObject {
 object ILocation {
   @scala.inline
   def apply(hash: String, path: String, request: String, search: String): ILocation = {
-    val __obj = js.Dynamic.literal(hash = hash, path = path, request = request, search = search)
+    val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ILocation]
   }

@@ -26,13 +26,13 @@ object RadialGaugeOptions {
     transitions: js.UndefOr[Boolean] = js.undefined
   ): RadialGaugeOptions = {
     val __obj = js.Dynamic.literal()
-    if (gaugeArea != null) __obj.updateDynamic("gaugeArea")(gaugeArea)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (pointer != null) __obj.updateDynamic("pointer")(pointer)
-    if (renderAs != null) __obj.updateDynamic("renderAs")(renderAs)
-    if (scale != null) __obj.updateDynamic("scale")(scale)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
-    if (!js.isUndefined(transitions)) __obj.updateDynamic("transitions")(transitions)
+    if (gaugeArea != null) __obj.updateDynamic("gaugeArea")(gaugeArea.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (pointer != null) __obj.updateDynamic("pointer")(pointer.asInstanceOf[js.Any])
+    if (renderAs != null) __obj.updateDynamic("renderAs")(renderAs.asInstanceOf[js.Any])
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    if (!js.isUndefined(transitions)) __obj.updateDynamic("transitions")(transitions.asInstanceOf[js.Any])
     __obj.asInstanceOf[RadialGaugeOptions]
   }
 }

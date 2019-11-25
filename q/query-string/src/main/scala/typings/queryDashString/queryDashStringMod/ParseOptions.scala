@@ -99,9 +99,9 @@ object ParseOptions {
   ): ParseOptions = {
     val __obj = js.Dynamic.literal()
     if (arrayFormat != null) __obj.updateDynamic("arrayFormat")(arrayFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(decode)) __obj.updateDynamic("decode")(decode)
-    if (!js.isUndefined(parseBooleans)) __obj.updateDynamic("parseBooleans")(parseBooleans)
-    if (!js.isUndefined(parseNumbers)) __obj.updateDynamic("parseNumbers")(parseNumbers)
+    if (!js.isUndefined(decode)) __obj.updateDynamic("decode")(decode.asInstanceOf[js.Any])
+    if (!js.isUndefined(parseBooleans)) __obj.updateDynamic("parseBooleans")(parseBooleans.asInstanceOf[js.Any])
+    if (!js.isUndefined(parseNumbers)) __obj.updateDynamic("parseNumbers")(parseNumbers.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParseOptions]
   }

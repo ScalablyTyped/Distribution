@@ -22,7 +22,7 @@ object DuplicateSheetRequest {
     val __obj = js.Dynamic.literal()
     if (insertSheetIndex != null) __obj.updateDynamic("insertSheetIndex")(insertSheetIndex.asInstanceOf[js.Any])
     if (newSheetId != null) __obj.updateDynamic("newSheetId")(newSheetId.asInstanceOf[js.Any])
-    if (newSheetName != null) __obj.updateDynamic("newSheetName")(newSheetName)
+    if (newSheetName != null) __obj.updateDynamic("newSheetName")(newSheetName.asInstanceOf[js.Any])
     if (sourceSheetId != null) __obj.updateDynamic("sourceSheetId")(sourceSheetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DuplicateSheetRequest]
   }

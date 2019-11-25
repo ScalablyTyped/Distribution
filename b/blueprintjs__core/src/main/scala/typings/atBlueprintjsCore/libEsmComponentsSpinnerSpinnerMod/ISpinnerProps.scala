@@ -48,10 +48,10 @@ object ISpinnerProps {
     value: Int | Double = null
   ): ISpinnerProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (intent != null) __obj.updateDynamic("intent")(intent)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (intent != null) __obj.updateDynamic("intent")(intent.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (tagName != null) __obj.updateDynamic("tagName")(tagName)
+    if (tagName != null) __obj.updateDynamic("tagName")(tagName.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISpinnerProps]
   }

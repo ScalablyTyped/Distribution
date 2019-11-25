@@ -32,13 +32,13 @@ object ChannelConfiguration {
     reconnect: js.UndefOr[Boolean] = js.undefined,
     remote: String | js.Array[String] = null
   ): ChannelConfiguration = {
-    val __obj = js.Dynamic.literal(origin = origin, scope = scope, window = window)
-    if (!js.isUndefined(debugOutput)) __obj.updateDynamic("debugOutput")(debugOutput)
+    val __obj = js.Dynamic.literal(origin = origin.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
+    if (!js.isUndefined(debugOutput)) __obj.updateDynamic("debugOutput")(debugOutput.asInstanceOf[js.Any])
     if (gotMessageObserver != null) __obj.updateDynamic("gotMessageObserver")(js.Any.fromFunction2(gotMessageObserver))
     if (onReady != null) __obj.updateDynamic("onReady")(js.Any.fromFunction1(onReady))
     if (postMessageObserver != null) __obj.updateDynamic("postMessageObserver")(js.Any.fromFunction2(postMessageObserver))
-    if (!js.isUndefined(publish)) __obj.updateDynamic("publish")(publish)
-    if (!js.isUndefined(reconnect)) __obj.updateDynamic("reconnect")(reconnect)
+    if (!js.isUndefined(publish)) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
+    if (!js.isUndefined(reconnect)) __obj.updateDynamic("reconnect")(reconnect.asInstanceOf[js.Any])
     if (remote != null) __obj.updateDynamic("remote")(remote.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelConfiguration]
   }

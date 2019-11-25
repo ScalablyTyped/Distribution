@@ -41,10 +41,10 @@ object ChooseContactOptions {
     val __obj = js.Dynamic.literal(chooseType = chooseType.asInstanceOf[js.Any], success = js.Any.fromFunction1(success))
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (!js.isUndefined(includeMe)) __obj.updateDynamic("includeMe")(includeMe)
+    if (!js.isUndefined(includeMe)) __obj.updateDynamic("includeMe")(includeMe.asInstanceOf[js.Any])
     if (includeMobileContactMode != null) __obj.updateDynamic("includeMobileContactMode")(includeMobileContactMode.asInstanceOf[js.Any])
     if (multiChooseMax != null) __obj.updateDynamic("multiChooseMax")(multiChooseMax.asInstanceOf[js.Any])
-    if (multiChooseMaxTips != null) __obj.updateDynamic("multiChooseMaxTips")(multiChooseMaxTips)
+    if (multiChooseMaxTips != null) __obj.updateDynamic("multiChooseMaxTips")(multiChooseMaxTips.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChooseContactOptions]
   }
 }

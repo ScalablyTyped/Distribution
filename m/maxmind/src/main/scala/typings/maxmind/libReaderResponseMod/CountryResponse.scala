@@ -22,11 +22,11 @@ object CountryResponse {
     traits: TraitsRecord = null
   ): CountryResponse = {
     val __obj = js.Dynamic.literal()
-    if (continent != null) __obj.updateDynamic("continent")(continent)
-    if (country != null) __obj.updateDynamic("country")(country)
-    if (registered_country != null) __obj.updateDynamic("registered_country")(registered_country)
-    if (represented_country != null) __obj.updateDynamic("represented_country")(represented_country)
-    if (traits != null) __obj.updateDynamic("traits")(traits)
+    if (continent != null) __obj.updateDynamic("continent")(continent.asInstanceOf[js.Any])
+    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
+    if (registered_country != null) __obj.updateDynamic("registered_country")(registered_country.asInstanceOf[js.Any])
+    if (represented_country != null) __obj.updateDynamic("represented_country")(represented_country.asInstanceOf[js.Any])
+    if (traits != null) __obj.updateDynamic("traits")(traits.asInstanceOf[js.Any])
     __obj.asInstanceOf[CountryResponse]
   }
 }

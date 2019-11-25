@@ -41,8 +41,8 @@ trait GraphQLTag extends js.Object {
 object GraphQLTag {
   @scala.inline
   def apply(sourceLocationOffset: Anon_Column, template: String, keyName: String = null): GraphQLTag = {
-    val __obj = js.Dynamic.literal(sourceLocationOffset = sourceLocationOffset, template = template)
-    if (keyName != null) __obj.updateDynamic("keyName")(keyName)
+    val __obj = js.Dynamic.literal(sourceLocationOffset = sourceLocationOffset.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any])
+    if (keyName != null) __obj.updateDynamic("keyName")(keyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLTag]
   }
 }

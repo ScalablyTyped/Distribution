@@ -12,7 +12,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(assign: Boolean, freeze: Boolean): Options = {
-    val __obj = js.Dynamic.literal(assign = assign, freeze = freeze)
+    val __obj = js.Dynamic.literal(assign = assign.asInstanceOf[js.Any], freeze = freeze.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Options]
   }

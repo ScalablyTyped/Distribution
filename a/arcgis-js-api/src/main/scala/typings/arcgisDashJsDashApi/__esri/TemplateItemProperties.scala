@@ -40,10 +40,10 @@ object TemplateItemProperties {
     template: FeatureTemplateProperties = null
   ): TemplateItemProperties = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (layer != null) __obj.updateDynamic("layer")(layer)
-    if (template != null) __obj.updateDynamic("template")(template)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (layer != null) __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     __obj.asInstanceOf[TemplateItemProperties]
   }
 }

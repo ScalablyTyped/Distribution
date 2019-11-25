@@ -36,12 +36,12 @@ object PrintImageSettings {
     region: Region = null
   ): PrintImageSettings = {
     val __obj = js.Dynamic.literal()
-    if (bounds != null) __obj.updateDynamic("bounds")(bounds)
-    if (!js.isUndefined(multiplePage)) __obj.updateDynamic("multiplePage")(multiplePage)
+    if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiplePage)) __obj.updateDynamic("multiplePage")(multiplePage.asInstanceOf[js.Any])
     if (pageHeight != null) __obj.updateDynamic("pageHeight")(pageHeight.asInstanceOf[js.Any])
-    if (pageOrientation != null) __obj.updateDynamic("pageOrientation")(pageOrientation)
+    if (pageOrientation != null) __obj.updateDynamic("pageOrientation")(pageOrientation.asInstanceOf[js.Any])
     if (pageWidth != null) __obj.updateDynamic("pageWidth")(pageWidth.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region)
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrintImageSettings]
   }
 }

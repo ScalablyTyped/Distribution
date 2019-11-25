@@ -13,7 +13,7 @@ trait Pending
 object Pending {
   @scala.inline
   def apply(state: pending): Pending = {
-    val __obj = js.Dynamic.literal(state = state)
+    val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Pending]
   }

@@ -31,7 +31,7 @@ object IDeviceInformation {
     properties: IMapView[String, _],
     update: DeviceInformationUpdate => Unit
   ): IDeviceInformation = {
-    val __obj = js.Dynamic.literal(enclosureLocation = enclosureLocation, getGlyphThumbnailAsync = js.Any.fromFunction0(getGlyphThumbnailAsync), getThumbnailAsync = js.Any.fromFunction0(getThumbnailAsync), id = id, isDefault = isDefault, isEnabled = isEnabled, name = name, properties = properties, update = js.Any.fromFunction1(update))
+    val __obj = js.Dynamic.literal(enclosureLocation = enclosureLocation.asInstanceOf[js.Any], getGlyphThumbnailAsync = js.Any.fromFunction0(getGlyphThumbnailAsync), getThumbnailAsync = js.Any.fromFunction0(getThumbnailAsync), id = id.asInstanceOf[js.Any], isDefault = isDefault.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[IDeviceInformation]
   }

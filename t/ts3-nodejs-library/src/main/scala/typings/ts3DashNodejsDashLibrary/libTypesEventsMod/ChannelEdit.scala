@@ -23,7 +23,7 @@ object ChannelEdit {
     modified: Partial[QueryResponseTypes],
     reasonid: Double
   ): ChannelEdit = {
-    val __obj = js.Dynamic.literal(channel = channel, invoker = invoker, modified = modified, reasonid = reasonid)
+    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], invoker = invoker.asInstanceOf[js.Any], modified = modified.asInstanceOf[js.Any], reasonid = reasonid.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChannelEdit]
   }

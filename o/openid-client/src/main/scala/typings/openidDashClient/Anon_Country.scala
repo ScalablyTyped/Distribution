@@ -27,13 +27,13 @@ object Anon_Country {
     street_address: String = null
   ): Anon_Country = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (country != null) __obj.updateDynamic("country")(country)
-    if (formatted != null) __obj.updateDynamic("formatted")(formatted)
-    if (locality != null) __obj.updateDynamic("locality")(locality)
-    if (postal_code != null) __obj.updateDynamic("postal_code")(postal_code)
-    if (region != null) __obj.updateDynamic("region")(region)
-    if (street_address != null) __obj.updateDynamic("street_address")(street_address)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
+    if (formatted != null) __obj.updateDynamic("formatted")(formatted.asInstanceOf[js.Any])
+    if (locality != null) __obj.updateDynamic("locality")(locality.asInstanceOf[js.Any])
+    if (postal_code != null) __obj.updateDynamic("postal_code")(postal_code.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    if (street_address != null) __obj.updateDynamic("street_address")(street_address.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Country]
   }
 }

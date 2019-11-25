@@ -23,9 +23,9 @@ object IgTreeSelectionChangedEventUIParam {
   @scala.inline
   def apply(newNodes: js.Array[_] = null, owner: js.Any = null, selectedNodes: js.Array[_] = null): IgTreeSelectionChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (newNodes != null) __obj.updateDynamic("newNodes")(newNodes)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (selectedNodes != null) __obj.updateDynamic("selectedNodes")(selectedNodes)
+    if (newNodes != null) __obj.updateDynamic("newNodes")(newNodes.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (selectedNodes != null) __obj.updateDynamic("selectedNodes")(selectedNodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgTreeSelectionChangedEventUIParam]
   }
 }

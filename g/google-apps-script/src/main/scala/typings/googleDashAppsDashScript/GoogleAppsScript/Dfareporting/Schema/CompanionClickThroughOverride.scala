@@ -13,8 +13,8 @@ object CompanionClickThroughOverride {
   @scala.inline
   def apply(clickThroughUrl: ClickThroughUrl = null, creativeId: String = null): CompanionClickThroughOverride = {
     val __obj = js.Dynamic.literal()
-    if (clickThroughUrl != null) __obj.updateDynamic("clickThroughUrl")(clickThroughUrl)
-    if (creativeId != null) __obj.updateDynamic("creativeId")(creativeId)
+    if (clickThroughUrl != null) __obj.updateDynamic("clickThroughUrl")(clickThroughUrl.asInstanceOf[js.Any])
+    if (creativeId != null) __obj.updateDynamic("creativeId")(creativeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompanionClickThroughOverride]
   }
 }

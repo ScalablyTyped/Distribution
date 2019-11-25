@@ -45,13 +45,13 @@ object DirectoryLocations {
     test: String = null
   ): DirectoryLocations = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (bin != null) __obj.updateDynamic("bin")(bin)
-    if (doc != null) __obj.updateDynamic("doc")(doc)
-    if (example != null) __obj.updateDynamic("example")(example)
-    if (lib != null) __obj.updateDynamic("lib")(lib)
-    if (man != null) __obj.updateDynamic("man")(man)
-    if (test != null) __obj.updateDynamic("test")(test)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (bin != null) __obj.updateDynamic("bin")(bin.asInstanceOf[js.Any])
+    if (doc != null) __obj.updateDynamic("doc")(doc.asInstanceOf[js.Any])
+    if (example != null) __obj.updateDynamic("example")(example.asInstanceOf[js.Any])
+    if (lib != null) __obj.updateDynamic("lib")(lib.asInstanceOf[js.Any])
+    if (man != null) __obj.updateDynamic("man")(man.asInstanceOf[js.Any])
+    if (test != null) __obj.updateDynamic("test")(test.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectoryLocations]
   }
 }

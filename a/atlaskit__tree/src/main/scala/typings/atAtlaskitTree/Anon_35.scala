@@ -31,7 +31,7 @@ object Anon_35 {
     renderItem: () => Unit,
     tree: Anon_Children
   ): Anon_35 = {
-    val __obj = js.Dynamic.literal(isDragEnabled = isDragEnabled, isNestingEnabled = isNestingEnabled, offsetPerLevel = offsetPerLevel, onCollapse = js.Any.fromFunction0(onCollapse), onDragEnd = js.Any.fromFunction0(onDragEnd), onDragStart = js.Any.fromFunction0(onDragStart), onExpand = js.Any.fromFunction0(onExpand), renderItem = js.Any.fromFunction0(renderItem), tree = tree)
+    val __obj = js.Dynamic.literal(isDragEnabled = isDragEnabled.asInstanceOf[js.Any], isNestingEnabled = isNestingEnabled.asInstanceOf[js.Any], offsetPerLevel = offsetPerLevel.asInstanceOf[js.Any], onCollapse = js.Any.fromFunction0(onCollapse), onDragEnd = js.Any.fromFunction0(onDragEnd), onDragStart = js.Any.fromFunction0(onDragStart), onExpand = js.Any.fromFunction0(onExpand), renderItem = js.Any.fromFunction0(renderItem), tree = tree.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_35]
   }

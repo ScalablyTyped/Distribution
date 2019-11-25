@@ -15,10 +15,10 @@ trait SocialProfile extends js.Object {
 object SocialProfile {
   @scala.inline
   def apply(name: Twitter, id: String = null, url: String = null, username: String = null): SocialProfile = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (url != null) __obj.updateDynamic("url")(url)
-    if (username != null) __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[SocialProfile]
   }
 }

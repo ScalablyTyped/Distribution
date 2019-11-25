@@ -11,7 +11,7 @@ trait ConcurrencyOption extends js.Object {
 object ConcurrencyOption {
   @scala.inline
   def apply(concurrency: Double): ConcurrencyOption = {
-    val __obj = js.Dynamic.literal(concurrency = concurrency)
+    val __obj = js.Dynamic.literal(concurrency = concurrency.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ConcurrencyOption]
   }

@@ -24,11 +24,11 @@ object ProjectParamsIOS {
     project: String = null,
     sharedLibraries: js.Array[String] = null
   ): ProjectParamsIOS = {
-    val __obj = js.Dynamic.literal(plist = plist, scriptPhases = scriptPhases)
-    if (libraryFolder != null) __obj.updateDynamic("libraryFolder")(libraryFolder)
-    if (podspecPath != null) __obj.updateDynamic("podspecPath")(podspecPath)
-    if (project != null) __obj.updateDynamic("project")(project)
-    if (sharedLibraries != null) __obj.updateDynamic("sharedLibraries")(sharedLibraries)
+    val __obj = js.Dynamic.literal(plist = plist.asInstanceOf[js.Any], scriptPhases = scriptPhases.asInstanceOf[js.Any])
+    if (libraryFolder != null) __obj.updateDynamic("libraryFolder")(libraryFolder.asInstanceOf[js.Any])
+    if (podspecPath != null) __obj.updateDynamic("podspecPath")(podspecPath.asInstanceOf[js.Any])
+    if (project != null) __obj.updateDynamic("project")(project.asInstanceOf[js.Any])
+    if (sharedLibraries != null) __obj.updateDynamic("sharedLibraries")(sharedLibraries.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectParamsIOS]
   }
 }

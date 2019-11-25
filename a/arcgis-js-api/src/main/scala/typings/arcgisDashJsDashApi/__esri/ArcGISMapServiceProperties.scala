@@ -35,9 +35,9 @@ object ArcGISMapServiceProperties {
     legendEnabled: js.UndefOr[Boolean] = js.undefined
   ): ArcGISMapServiceProperties = {
     val __obj = js.Dynamic.literal()
-    if (copyright != null) __obj.updateDynamic("copyright")(copyright)
-    if (fullExtent != null) __obj.updateDynamic("fullExtent")(fullExtent)
-    if (!js.isUndefined(legendEnabled)) __obj.updateDynamic("legendEnabled")(legendEnabled)
+    if (copyright != null) __obj.updateDynamic("copyright")(copyright.asInstanceOf[js.Any])
+    if (fullExtent != null) __obj.updateDynamic("fullExtent")(fullExtent.asInstanceOf[js.Any])
+    if (!js.isUndefined(legendEnabled)) __obj.updateDynamic("legendEnabled")(legendEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArcGISMapServiceProperties]
   }
 }

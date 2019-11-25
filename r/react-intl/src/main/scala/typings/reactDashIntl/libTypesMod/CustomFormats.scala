@@ -15,7 +15,7 @@ object CustomFormats {
   @scala.inline
   def apply(relative: Record[String, IntlRelativeTimeFormatOptions] = null): CustomFormats = {
     val __obj = js.Dynamic.literal()
-    if (relative != null) __obj.updateDynamic("relative")(relative)
+    if (relative != null) __obj.updateDynamic("relative")(relative.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomFormats]
   }
 }

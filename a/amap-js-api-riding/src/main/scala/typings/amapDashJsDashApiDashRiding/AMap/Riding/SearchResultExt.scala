@@ -40,7 +40,7 @@ object SearchResultExt {
     routes: js.Array[RideRoute],
     start: PoiExt
   ): SearchResultExt = {
-    val __obj = js.Dynamic.literal(count = count, destination = destination, destinationName = destinationName, end = end, info = info, origin = origin, originName = originName, routes = routes, start = start)
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], destination = destination.asInstanceOf[js.Any], destinationName = destinationName.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], originName = originName.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SearchResultExt]
   }

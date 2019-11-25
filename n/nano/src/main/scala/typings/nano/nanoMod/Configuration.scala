@@ -24,12 +24,12 @@ object Configuration {
     request: /* params */ js.Any => Unit = null,
     requestDefaults: CoreOptions = null
   ): Configuration = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (cookie != null) __obj.updateDynamic("cookie")(cookie)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (cookie != null) __obj.updateDynamic("cookie")(cookie.asInstanceOf[js.Any])
     if (log != null) __obj.updateDynamic("log")(js.Any.fromFunction2(log))
-    if (!js.isUndefined(parseUrl)) __obj.updateDynamic("parseUrl")(parseUrl)
+    if (!js.isUndefined(parseUrl)) __obj.updateDynamic("parseUrl")(parseUrl.asInstanceOf[js.Any])
     if (request != null) __obj.updateDynamic("request")(js.Any.fromFunction1(request))
-    if (requestDefaults != null) __obj.updateDynamic("requestDefaults")(requestDefaults)
+    if (requestDefaults != null) __obj.updateDynamic("requestDefaults")(requestDefaults.asInstanceOf[js.Any])
     __obj.asInstanceOf[Configuration]
   }
 }

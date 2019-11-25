@@ -40,13 +40,13 @@ object ReadGroupSet {
     referenceSetId: String = null
   ): ReadGroupSet = {
     val __obj = js.Dynamic.literal()
-    if (datasetId != null) __obj.updateDynamic("datasetId")(datasetId)
-    if (filename != null) __obj.updateDynamic("filename")(filename)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (info != null) __obj.updateDynamic("info")(info)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (readGroups != null) __obj.updateDynamic("readGroups")(readGroups)
-    if (referenceSetId != null) __obj.updateDynamic("referenceSetId")(referenceSetId)
+    if (datasetId != null) __obj.updateDynamic("datasetId")(datasetId.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (readGroups != null) __obj.updateDynamic("readGroups")(readGroups.asInstanceOf[js.Any])
+    if (referenceSetId != null) __obj.updateDynamic("referenceSetId")(referenceSetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadGroupSet]
   }
 }

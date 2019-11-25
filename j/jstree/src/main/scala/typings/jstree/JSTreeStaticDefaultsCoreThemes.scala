@@ -68,15 +68,15 @@ object JSTreeStaticDefaultsCoreThemes {
     variant: js.Any = null
   ): JSTreeStaticDefaultsCoreThemes = {
     val __obj = js.Dynamic.literal()
-    if (dir != null) __obj.updateDynamic("dir")(dir)
-    if (!js.isUndefined(dots)) __obj.updateDynamic("dots")(dots)
-    if (!js.isUndefined(ellipsis)) __obj.updateDynamic("ellipsis")(ellipsis)
-    if (!js.isUndefined(icons)) __obj.updateDynamic("icons")(icons)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive)
-    if (!js.isUndefined(stripes)) __obj.updateDynamic("stripes")(stripes)
-    if (url != null) __obj.updateDynamic("url")(url)
-    if (variant != null) __obj.updateDynamic("variant")(variant)
+    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
+    if (!js.isUndefined(dots)) __obj.updateDynamic("dots")(dots.asInstanceOf[js.Any])
+    if (!js.isUndefined(ellipsis)) __obj.updateDynamic("ellipsis")(ellipsis.asInstanceOf[js.Any])
+    if (!js.isUndefined(icons)) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
+    if (!js.isUndefined(stripes)) __obj.updateDynamic("stripes")(stripes.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (variant != null) __obj.updateDynamic("variant")(variant.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSTreeStaticDefaultsCoreThemes]
   }
 }

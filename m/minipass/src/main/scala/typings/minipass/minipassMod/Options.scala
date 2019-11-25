@@ -13,8 +13,8 @@ object Options {
   @scala.inline
   def apply(encoding: String = null, objectMode: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
-    if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

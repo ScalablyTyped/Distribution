@@ -45,7 +45,7 @@ object fontAwesome5Mod extends js.Object {
     def loadFont(file: String): js.Promise[Unit] = js.native
   }
   
-  type AllowOnlyOne[T, Keys /* <: String */] = (Omit[T, Keys]) with (/* import warning: ImportType.apply Failed type conversion: {[ K in Keys ]: -? std.Partial<std.Pick<T, K>> & std.Partial<std.Record<std.Exclude<Keys, K>, undefined>>}[Keys] */ js.Any)
+  type AllowOnlyOne[T, Keys /* <: String */] = (Omit[T, Keys]) with (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in Keys ]: -? std.Partial<std.Pick<T, K>> & std.Partial<std.Record<std.Exclude<Keys, K>, undefined>>}[Keys] */ js.Any)
   type FontAwesome5Icon = Component[FontAwesome5IconProps, js.Any, js.Any]
   type FontAwesome5IconProps = AllowOnlyOne[
     typings.reactDashNativeDashVectorDashIcons.reactDashNativeDashVectorDashIconsStrings.FontAwesome5IconProps with js.Any with IconProps, 
@@ -53,6 +53,6 @@ object fontAwesome5Mod extends js.Object {
   ]
   type FontAwesome5IconVariants = String
   type Omit[T, K] = Pick[T, Exclude[String, K]]
-  type ValueOf[T] = /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any
+  type ValueOf[T] = /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
 }
 

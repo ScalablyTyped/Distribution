@@ -13,3 +13,18 @@ import scala.scalajs.js.annotation._
 */
 trait CommandType extends js.Object
 
+object CommandType {
+  @scala.inline
+  def DisableQlikViewSelectButton: typings.qlikDashEngineapi.qlikDashEngineapiStrings.DisableQlikViewSelectButton = this.cast("DisableQlikViewSelectButton")
+  @scala.inline
+  def GetCustomCaption: typings.qlikDashEngineapi.qlikDashEngineapiStrings.GetCustomCaption = this.cast("GetCustomCaption")
+  @scala.inline
+  def HaveStarField: typings.qlikDashEngineapi.qlikDashEngineapiStrings.HaveStarField = this.cast("HaveStarField")
+  @scala.inline
+  def IsConnected: typings.qlikDashEngineapi.qlikDashEngineapiStrings.IsConnected = this.cast("IsConnected")
+  @scala.inline
+  def JsonRequest: typings.qlikDashEngineapi.qlikDashEngineapiStrings.JsonRequest = this.cast("JsonRequest")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

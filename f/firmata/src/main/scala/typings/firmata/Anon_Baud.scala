@@ -15,7 +15,7 @@ trait Anon_Baud extends js.Object {
 object Anon_Baud {
   @scala.inline
   def apply(baud: Double, portId: SERIAL_PORT_ID, rxPin: Int | Double = null, txPin: Int | Double = null): Anon_Baud = {
-    val __obj = js.Dynamic.literal(baud = baud, portId = portId)
+    val __obj = js.Dynamic.literal(baud = baud.asInstanceOf[js.Any], portId = portId.asInstanceOf[js.Any])
     if (rxPin != null) __obj.updateDynamic("rxPin")(rxPin.asInstanceOf[js.Any])
     if (txPin != null) __obj.updateDynamic("txPin")(txPin.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Baud]

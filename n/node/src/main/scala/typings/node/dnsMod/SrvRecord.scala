@@ -14,7 +14,7 @@ trait SrvRecord extends js.Object {
 object SrvRecord {
   @scala.inline
   def apply(name: java.lang.String, port: Double, priority: Double, weight: Double): SrvRecord = {
-    val __obj = js.Dynamic.literal(name = name, port = port, priority = priority, weight = weight)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SrvRecord]
   }

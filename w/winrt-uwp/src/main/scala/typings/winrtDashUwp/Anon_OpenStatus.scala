@@ -15,7 +15,7 @@ trait Anon_OpenStatus extends js.Object {
 object Anon_OpenStatus {
   @scala.inline
   def apply(openStatus: GpioOpenStatus, pin: GpioPin, returnValue: Boolean): Anon_OpenStatus = {
-    val __obj = js.Dynamic.literal(openStatus = openStatus, pin = pin, returnValue = returnValue)
+    val __obj = js.Dynamic.literal(openStatus = openStatus.asInstanceOf[js.Any], pin = pin.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_OpenStatus]
   }

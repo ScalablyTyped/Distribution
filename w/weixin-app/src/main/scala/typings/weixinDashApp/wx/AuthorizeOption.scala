@@ -20,7 +20,7 @@ object AuthorizeOption {
     fail: () => Unit = null,
     success: /* res */ ErrMsgResponse => Unit = null
   ): AuthorizeOption = {
-    val __obj = js.Dynamic.literal(scope = scope)
+    val __obj = js.Dynamic.literal(scope = scope.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))

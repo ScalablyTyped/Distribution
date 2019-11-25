@@ -17,9 +17,9 @@ object DocumentationQueryResult {
   @scala.inline
   def apply(doc: String = null, origin: String = null, url: String = null): DocumentationQueryResult = {
     val __obj = js.Dynamic.literal()
-    if (doc != null) __obj.updateDynamic("doc")(doc)
-    if (origin != null) __obj.updateDynamic("origin")(origin)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (doc != null) __obj.updateDynamic("doc")(doc.asInstanceOf[js.Any])
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentationQueryResult]
   }
 }

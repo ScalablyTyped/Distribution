@@ -29,14 +29,14 @@ object RTCRtpEncodingParameters {
     scaleResolutionDownBy: Int | Double = null
   ): RTCRtpEncodingParameters = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
     if (codecPayloadType != null) __obj.updateDynamic("codecPayloadType")(codecPayloadType.asInstanceOf[js.Any])
-    if (dtx != null) __obj.updateDynamic("dtx")(dtx)
+    if (dtx != null) __obj.updateDynamic("dtx")(dtx.asInstanceOf[js.Any])
     if (maxBitrate != null) __obj.updateDynamic("maxBitrate")(maxBitrate.asInstanceOf[js.Any])
     if (maxFramerate != null) __obj.updateDynamic("maxFramerate")(maxFramerate.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority)
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     if (ptime != null) __obj.updateDynamic("ptime")(ptime.asInstanceOf[js.Any])
-    if (rid != null) __obj.updateDynamic("rid")(rid)
+    if (rid != null) __obj.updateDynamic("rid")(rid.asInstanceOf[js.Any])
     if (scaleResolutionDownBy != null) __obj.updateDynamic("scaleResolutionDownBy")(scaleResolutionDownBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCRtpEncodingParameters]
   }

@@ -22,11 +22,11 @@ object DeepLink {
     remarketingListIds: js.Array[String] = null
   ): DeepLink = {
     val __obj = js.Dynamic.literal()
-    if (appUrl != null) __obj.updateDynamic("appUrl")(appUrl)
-    if (fallbackUrl != null) __obj.updateDynamic("fallbackUrl")(fallbackUrl)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (mobileApp != null) __obj.updateDynamic("mobileApp")(mobileApp)
-    if (remarketingListIds != null) __obj.updateDynamic("remarketingListIds")(remarketingListIds)
+    if (appUrl != null) __obj.updateDynamic("appUrl")(appUrl.asInstanceOf[js.Any])
+    if (fallbackUrl != null) __obj.updateDynamic("fallbackUrl")(fallbackUrl.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (mobileApp != null) __obj.updateDynamic("mobileApp")(mobileApp.asInstanceOf[js.Any])
+    if (remarketingListIds != null) __obj.updateDynamic("remarketingListIds")(remarketingListIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeepLink]
   }
 }

@@ -14,10 +14,10 @@ trait Anon_Cavv extends js.Object {
 object Anon_Cavv {
   @scala.inline
   def apply(eciFlag: String, cavv: String = null, threeDSecureVision: String = null, xid: String = null): Anon_Cavv = {
-    val __obj = js.Dynamic.literal(eciFlag = eciFlag)
-    if (cavv != null) __obj.updateDynamic("cavv")(cavv)
-    if (threeDSecureVision != null) __obj.updateDynamic("threeDSecureVision")(threeDSecureVision)
-    if (xid != null) __obj.updateDynamic("xid")(xid)
+    val __obj = js.Dynamic.literal(eciFlag = eciFlag.asInstanceOf[js.Any])
+    if (cavv != null) __obj.updateDynamic("cavv")(cavv.asInstanceOf[js.Any])
+    if (threeDSecureVision != null) __obj.updateDynamic("threeDSecureVision")(threeDSecureVision.asInstanceOf[js.Any])
+    if (xid != null) __obj.updateDynamic("xid")(xid.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Cavv]
   }
 }

@@ -30,7 +30,7 @@ object ElevationQueryResultSampleInfo {
     propertyIsEnumerable: PropertyKey => Boolean,
     source: ElevationLayer
   ): ElevationQueryResultSampleInfo = {
-    val __obj = js.Dynamic.literal(constructor = constructor, demResolution = demResolution, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), source = source)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], demResolution = demResolution.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), source = source.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ElevationQueryResultSampleInfo]
   }

@@ -20,10 +20,10 @@ object Anon_BorderRadius {
     svgStyle: js.Object = null
   ): Anon_BorderRadius = {
     val __obj = js.Dynamic.literal()
-    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius)
+    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (svgClassName != null) __obj.updateDynamic("svgClassName")(svgClassName)
-    if (svgStyle != null) __obj.updateDynamic("svgStyle")(svgStyle)
+    if (svgClassName != null) __obj.updateDynamic("svgClassName")(svgClassName.asInstanceOf[js.Any])
+    if (svgStyle != null) __obj.updateDynamic("svgStyle")(svgStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BorderRadius]
   }
 }

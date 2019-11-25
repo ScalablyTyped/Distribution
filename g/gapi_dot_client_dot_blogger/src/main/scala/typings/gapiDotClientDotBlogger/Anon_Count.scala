@@ -15,8 +15,8 @@ object Anon_Count {
   @scala.inline
   def apply(count: String = null, timeRange: String = null): Anon_Count = {
     val __obj = js.Dynamic.literal()
-    if (count != null) __obj.updateDynamic("count")(count)
-    if (timeRange != null) __obj.updateDynamic("timeRange")(timeRange)
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (timeRange != null) __obj.updateDynamic("timeRange")(timeRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Count]
   }
 }

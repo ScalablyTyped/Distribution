@@ -24,7 +24,7 @@ object Anon_ColumnFilenameLinenoNodes {
     nodes: js.Array[Node],
     scope: Boolean
   ): Anon_ColumnFilenameLinenoNodes = {
-    val __obj = js.Dynamic.literal(__type = __type, column = column, filename = filename, lineno = lineno, nodes = nodes, scope = scope)
+    val __obj = js.Dynamic.literal(__type = __type.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], lineno = lineno.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ColumnFilenameLinenoNodes]
   }

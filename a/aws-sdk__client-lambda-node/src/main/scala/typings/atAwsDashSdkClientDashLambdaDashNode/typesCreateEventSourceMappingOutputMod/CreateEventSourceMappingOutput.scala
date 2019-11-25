@@ -60,15 +60,15 @@ object CreateEventSourceMappingOutput {
     StateTransitionReason: String = null,
     UUID: String = null
   ): CreateEventSourceMappingOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     if (BatchSize != null) __obj.updateDynamic("BatchSize")(BatchSize.asInstanceOf[js.Any])
-    if (EventSourceArn != null) __obj.updateDynamic("EventSourceArn")(EventSourceArn)
-    if (FunctionArn != null) __obj.updateDynamic("FunctionArn")(FunctionArn)
-    if (LastModified != null) __obj.updateDynamic("LastModified")(LastModified)
-    if (LastProcessingResult != null) __obj.updateDynamic("LastProcessingResult")(LastProcessingResult)
-    if (State != null) __obj.updateDynamic("State")(State)
-    if (StateTransitionReason != null) __obj.updateDynamic("StateTransitionReason")(StateTransitionReason)
-    if (UUID != null) __obj.updateDynamic("UUID")(UUID)
+    if (EventSourceArn != null) __obj.updateDynamic("EventSourceArn")(EventSourceArn.asInstanceOf[js.Any])
+    if (FunctionArn != null) __obj.updateDynamic("FunctionArn")(FunctionArn.asInstanceOf[js.Any])
+    if (LastModified != null) __obj.updateDynamic("LastModified")(LastModified.asInstanceOf[js.Any])
+    if (LastProcessingResult != null) __obj.updateDynamic("LastProcessingResult")(LastProcessingResult.asInstanceOf[js.Any])
+    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
+    if (StateTransitionReason != null) __obj.updateDynamic("StateTransitionReason")(StateTransitionReason.asInstanceOf[js.Any])
+    if (UUID != null) __obj.updateDynamic("UUID")(UUID.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateEventSourceMappingOutput]
   }
 }

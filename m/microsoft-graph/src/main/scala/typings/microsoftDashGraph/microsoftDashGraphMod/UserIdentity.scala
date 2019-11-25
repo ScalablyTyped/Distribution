@@ -24,10 +24,10 @@ object UserIdentity {
     userPrincipalName: String = null
   ): UserIdentity = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress)
-    if (userPrincipalName != null) __obj.updateDynamic("userPrincipalName")(userPrincipalName)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress.asInstanceOf[js.Any])
+    if (userPrincipalName != null) __obj.updateDynamic("userPrincipalName")(userPrincipalName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserIdentity]
   }
 }

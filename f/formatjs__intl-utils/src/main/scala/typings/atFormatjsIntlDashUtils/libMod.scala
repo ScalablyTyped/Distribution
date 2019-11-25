@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object libMod extends js.Object {
   val SANCTIONED_UNITS: js.Array[String] = js.native
-  def createResolveLocale[K /* <: String */, D /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  def createResolveLocale[K /* <: String */, D /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in K ]: any}
     */ typings.atFormatjsIntlDashUtils.atFormatjsIntlDashUtilsStrings.createResolveLocale with js.Any */](getDefaultLocale: js.Function0[String]): js.Function5[
     /* availableLocales */ js.Array[String], 
@@ -32,42 +32,62 @@ object libMod extends js.Object {
   def getCanonicalLocales(): js.Array[String] = js.native
   def getCanonicalLocales(locales: String): js.Array[String] = js.native
   def getCanonicalLocales(locales: js.Array[String]): js.Array[String] = js.native
-  def getInternalSlot[Instance /* <: js.Object */, Internal, Field /* <: String */](map: WeakMap[Instance, Internal], pl: Instance, field: Field): /* import warning: ImportType.apply Failed type conversion: Internal[Field] */ js.Any = js.native
+  def getInternalSlot[Instance /* <: js.Object */, Internal, Field /* <: String */](map: WeakMap[Instance, Internal], pl: Instance, field: Field): /* import warning: importer.ImportType#apply Failed type conversion: Internal[Field] */ js.Any = js.native
   def getLocaleHierarchy(locale: String, aliases: Record[String, String], parentLocales: Record[String, String]): js.Array[String] = js.native
   @JSName("getOption")
-  def getOption_boolean[T /* <: js.Object */, K /* <: String */](opts: T, prop: K, `type`: boolean): js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any] = js.native
+  def getOption_boolean[T /* <: js.Object */, K /* <: String */](opts: T, prop: K, `type`: boolean): js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+  ] = js.native
   @JSName("getOption")
   def getOption_boolean[T /* <: js.Object */, K /* <: String */](
     opts: T,
     prop: K,
     `type`: boolean,
-    values: js.Array[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any]
-  ): js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any] = js.native
+    values: js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+    ]
+  ): js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+  ] = js.native
   @JSName("getOption")
   def getOption_boolean[T /* <: js.Object */, K /* <: String */](
     opts: T,
     prop: K,
     `type`: boolean,
-    values: js.Array[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any],
-    fallback: /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any
-  ): js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any] = js.native
+    values: js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+    ],
+    fallback: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+  ): js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+  ] = js.native
   @JSName("getOption")
-  def getOption_string[T /* <: js.Object */, K /* <: String */](opts: T, prop: K, `type`: string): js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any] = js.native
+  def getOption_string[T /* <: js.Object */, K /* <: String */](opts: T, prop: K, `type`: string): js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+  ] = js.native
   @JSName("getOption")
   def getOption_string[T /* <: js.Object */, K /* <: String */](
     opts: T,
     prop: K,
     `type`: string,
-    values: js.Array[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any]
-  ): js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any] = js.native
+    values: js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+    ]
+  ): js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+  ] = js.native
   @JSName("getOption")
   def getOption_string[T /* <: js.Object */, K /* <: String */](
     opts: T,
     prop: K,
     `type`: string,
-    values: js.Array[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any],
-    fallback: /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any
-  ): js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any] = js.native
+    values: js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+    ],
+    fallback: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+  ): js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+  ] = js.native
   def getParentLocalesByLang(lang: String): Record[String, String] = js.native
   def invariant(condition: Boolean, message: String): Unit = js.native
   def invariant(condition: Boolean, message: String, Err: js.Any): Unit = js.native
@@ -86,7 +106,7 @@ object libMod extends js.Object {
     map: WeakMap[Instance, Internal],
     pl: Instance,
     field: Field,
-    value: /* import warning: ImportType.apply Failed type conversion: Internal[Field] */ js.Any
+    value: /* import warning: importer.ImportType#apply Failed type conversion: Internal[Field] */ js.Any
   ): Unit = js.native
   def supportedLocales(availableLocales: js.Array[String], requestedLocales: js.Array[String]): js.Array[String] = js.native
   def supportedLocales(availableLocales: js.Array[String], requestedLocales: js.Array[String], options: Anon_Bestfit): js.Array[String] = js.native

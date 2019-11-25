@@ -18,8 +18,8 @@ object Anon_KeyPromotions {
     promotions: js.Array[Promotion] = null
   ): Anon_KeyPromotions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (promotions != null) __obj.updateDynamic("promotions")(promotions)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (promotions != null) __obj.updateDynamic("promotions")(promotions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_KeyPromotions]
   }
 }

@@ -17,7 +17,7 @@ trait State extends js.Object {
 object State {
   @scala.inline
   def apply(hash: Hash, pathname: Pathname, queries: js.Any, search: Search): State = {
-    val __obj = js.Dynamic.literal(hash = hash, pathname = pathname, queries = queries, search = search)
+    val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], queries = queries.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[State]
   }

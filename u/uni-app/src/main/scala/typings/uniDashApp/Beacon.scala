@@ -43,11 +43,11 @@ object Beacon {
   ): Beacon = {
     val __obj = js.Dynamic.literal()
     if (accuracy != null) __obj.updateDynamic("accuracy")(accuracy.asInstanceOf[js.Any])
-    if (major != null) __obj.updateDynamic("major")(major)
-    if (minor != null) __obj.updateDynamic("minor")(minor)
+    if (major != null) __obj.updateDynamic("major")(major.asInstanceOf[js.Any])
+    if (minor != null) __obj.updateDynamic("minor")(minor.asInstanceOf[js.Any])
     if (proximity != null) __obj.updateDynamic("proximity")(proximity.asInstanceOf[js.Any])
     if (rssi != null) __obj.updateDynamic("rssi")(rssi.asInstanceOf[js.Any])
-    if (uuid != null) __obj.updateDynamic("uuid")(uuid)
+    if (uuid != null) __obj.updateDynamic("uuid")(uuid.asInstanceOf[js.Any])
     __obj.asInstanceOf[Beacon]
   }
 }

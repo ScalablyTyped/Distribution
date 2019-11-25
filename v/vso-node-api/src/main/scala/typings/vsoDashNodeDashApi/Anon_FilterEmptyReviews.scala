@@ -13,7 +13,7 @@ trait Anon_FilterEmptyReviews extends js.Object {
 object Anon_FilterEmptyReviews {
   @scala.inline
   def apply(filterEmptyReviews: Double, filterEmptyUserNames: Double, none: Double): Anon_FilterEmptyReviews = {
-    val __obj = js.Dynamic.literal(filterEmptyReviews = filterEmptyReviews, filterEmptyUserNames = filterEmptyUserNames, none = none)
+    val __obj = js.Dynamic.literal(filterEmptyReviews = filterEmptyReviews.asInstanceOf[js.Any], filterEmptyUserNames = filterEmptyUserNames.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FilterEmptyReviews]
   }

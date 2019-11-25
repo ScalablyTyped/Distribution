@@ -20,12 +20,12 @@ object OEmbedOptions {
     isRequired: js.UndefOr[Boolean] = js.undefined,
     isUnique: js.UndefOr[Boolean] = js.undefined
   ): OEmbedOptions = {
-    val __obj = js.Dynamic.literal(adapter = adapter)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(adapter = adapter.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
-    if (hooks != null) __obj.updateDynamic("hooks")(hooks)
-    if (!js.isUndefined(isRequired)) __obj.updateDynamic("isRequired")(isRequired)
-    if (!js.isUndefined(isUnique)) __obj.updateDynamic("isUnique")(isUnique)
+    if (hooks != null) __obj.updateDynamic("hooks")(hooks.asInstanceOf[js.Any])
+    if (!js.isUndefined(isRequired)) __obj.updateDynamic("isRequired")(isRequired.asInstanceOf[js.Any])
+    if (!js.isUndefined(isUnique)) __obj.updateDynamic("isUnique")(isUnique.asInstanceOf[js.Any])
     __obj.asInstanceOf[OEmbedOptions]
   }
 }

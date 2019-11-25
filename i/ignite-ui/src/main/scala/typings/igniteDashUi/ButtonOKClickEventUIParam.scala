@@ -19,8 +19,8 @@ object ButtonOKClickEventUIParam {
   @scala.inline
   def apply(modalDialog: String = null, owner: js.Any = null): ButtonOKClickEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (modalDialog != null) __obj.updateDynamic("modalDialog")(modalDialog)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (modalDialog != null) __obj.updateDynamic("modalDialog")(modalDialog.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonOKClickEventUIParam]
   }
 }

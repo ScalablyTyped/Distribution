@@ -41,20 +41,20 @@ object ProcessPaymentResult {
     payer: String = null,
     payment_id: String = null
   ): ProcessPaymentResult = {
-    val __obj = js.Dynamic.literal(status = status)
-    if (account_unblock_uri != null) __obj.updateDynamic("account_unblock_uri")(account_unblock_uri)
-    if (acs_params != null) __obj.updateDynamic("acs_params")(acs_params)
-    if (acs_uri != null) __obj.updateDynamic("acs_uri")(acs_uri)
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
+    if (account_unblock_uri != null) __obj.updateDynamic("account_unblock_uri")(account_unblock_uri.asInstanceOf[js.Any])
+    if (acs_params != null) __obj.updateDynamic("acs_params")(acs_params.asInstanceOf[js.Any])
+    if (acs_uri != null) __obj.updateDynamic("acs_uri")(acs_uri.asInstanceOf[js.Any])
     if (balance != null) __obj.updateDynamic("balance")(balance.asInstanceOf[js.Any])
     if (credit_amount != null) __obj.updateDynamic("credit_amount")(credit_amount.asInstanceOf[js.Any])
-    if (digital_goods != null) __obj.updateDynamic("digital_goods")(digital_goods)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (hold_for_pickup_link != null) __obj.updateDynamic("hold_for_pickup_link")(hold_for_pickup_link)
-    if (invoice_id != null) __obj.updateDynamic("invoice_id")(invoice_id)
+    if (digital_goods != null) __obj.updateDynamic("digital_goods")(digital_goods.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (hold_for_pickup_link != null) __obj.updateDynamic("hold_for_pickup_link")(hold_for_pickup_link.asInstanceOf[js.Any])
+    if (invoice_id != null) __obj.updateDynamic("invoice_id")(invoice_id.asInstanceOf[js.Any])
     if (next_retry != null) __obj.updateDynamic("next_retry")(next_retry.asInstanceOf[js.Any])
-    if (payee != null) __obj.updateDynamic("payee")(payee)
-    if (payer != null) __obj.updateDynamic("payer")(payer)
-    if (payment_id != null) __obj.updateDynamic("payment_id")(payment_id)
+    if (payee != null) __obj.updateDynamic("payee")(payee.asInstanceOf[js.Any])
+    if (payer != null) __obj.updateDynamic("payer")(payer.asInstanceOf[js.Any])
+    if (payment_id != null) __obj.updateDynamic("payment_id")(payment_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProcessPaymentResult]
   }
 }

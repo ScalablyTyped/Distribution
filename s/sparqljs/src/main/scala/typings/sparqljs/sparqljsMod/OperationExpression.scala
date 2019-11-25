@@ -22,9 +22,9 @@ object OperationExpression {
     `type`: operation,
     distinct: js.UndefOr[Boolean] = js.undefined
   ): OperationExpression = {
-    val __obj = js.Dynamic.literal(args = args, operator = operator)
-    __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(distinct)) __obj.updateDynamic("distinct")(distinct)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(distinct)) __obj.updateDynamic("distinct")(distinct.asInstanceOf[js.Any])
     __obj.asInstanceOf[OperationExpression]
   }
 }

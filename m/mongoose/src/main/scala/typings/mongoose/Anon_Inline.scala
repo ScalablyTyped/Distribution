@@ -29,9 +29,9 @@ object Anon_Inline {
   def apply(`inline`: Int | Double = null, merge: String = null, reduce: String = null, replace: String = null): Anon_Inline = {
     val __obj = js.Dynamic.literal()
     if (`inline` != null) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
-    if (merge != null) __obj.updateDynamic("merge")(merge)
-    if (reduce != null) __obj.updateDynamic("reduce")(reduce)
-    if (replace != null) __obj.updateDynamic("replace")(replace)
+    if (merge != null) __obj.updateDynamic("merge")(merge.asInstanceOf[js.Any])
+    if (reduce != null) __obj.updateDynamic("reduce")(reduce.asInstanceOf[js.Any])
+    if (replace != null) __obj.updateDynamic("replace")(replace.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Inline]
   }
 }

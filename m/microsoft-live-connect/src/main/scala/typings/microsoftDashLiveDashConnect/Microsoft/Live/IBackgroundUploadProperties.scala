@@ -46,11 +46,11 @@ object IBackgroundUploadProperties {
     overwrite: String = null,
     stream_input: IInputStream = null
   ): IBackgroundUploadProperties = {
-    val __obj = js.Dynamic.literal(path = path)
-    if (file_input != null) __obj.updateDynamic("file_input")(file_input)
-    if (file_name != null) __obj.updateDynamic("file_name")(file_name)
-    if (overwrite != null) __obj.updateDynamic("overwrite")(overwrite)
-    if (stream_input != null) __obj.updateDynamic("stream_input")(stream_input)
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
+    if (file_input != null) __obj.updateDynamic("file_input")(file_input.asInstanceOf[js.Any])
+    if (file_name != null) __obj.updateDynamic("file_name")(file_name.asInstanceOf[js.Any])
+    if (overwrite != null) __obj.updateDynamic("overwrite")(overwrite.asInstanceOf[js.Any])
+    if (stream_input != null) __obj.updateDynamic("stream_input")(stream_input.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBackgroundUploadProperties]
   }
 }

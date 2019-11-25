@@ -30,9 +30,9 @@ object Anon_AccessibilityComments {
   ): Anon_AccessibilityComments = {
     val __obj = js.Dynamic.literal(parameter = parameter.asInstanceOf[js.Any])
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly)
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AccessibilityComments]
   }
 }

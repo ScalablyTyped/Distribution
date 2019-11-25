@@ -15,7 +15,7 @@ trait IResourceQualifier extends js.Object {
 object IResourceQualifier {
   @scala.inline
   def apply(isDefault: Boolean, isMatch: Boolean, qualifierName: String, qualifierValue: String, score: Double): IResourceQualifier = {
-    val __obj = js.Dynamic.literal(isDefault = isDefault, isMatch = isMatch, qualifierName = qualifierName, qualifierValue = qualifierValue, score = score)
+    val __obj = js.Dynamic.literal(isDefault = isDefault.asInstanceOf[js.Any], isMatch = isMatch.asInstanceOf[js.Any], qualifierName = qualifierName.asInstanceOf[js.Any], qualifierValue = qualifierValue.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IResourceQualifier]
   }

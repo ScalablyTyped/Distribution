@@ -39,8 +39,8 @@ object Box {
     uidvalidity: Double,
     readOnly: js.UndefOr[Boolean] = js.undefined
   ): Box = {
-    val __obj = js.Dynamic.literal(flags = flags, messages = messages, name = name, newKeywords = newKeywords, permFlags = permFlags, persistentUIDs = persistentUIDs, uidnext = uidnext, uidvalidity = uidvalidity)
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
+    val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], newKeywords = newKeywords.asInstanceOf[js.Any], permFlags = permFlags.asInstanceOf[js.Any], persistentUIDs = persistentUIDs.asInstanceOf[js.Any], uidnext = uidnext.asInstanceOf[js.Any], uidvalidity = uidvalidity.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
     __obj.asInstanceOf[Box]
   }
 }

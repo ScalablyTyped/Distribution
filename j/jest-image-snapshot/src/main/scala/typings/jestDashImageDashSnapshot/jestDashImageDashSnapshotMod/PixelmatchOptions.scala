@@ -15,7 +15,7 @@ object PixelmatchOptions {
   @scala.inline
   def apply(includeAA: js.UndefOr[Boolean] = js.undefined, threshold: Int | Double = null): PixelmatchOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeAA)) __obj.updateDynamic("includeAA")(includeAA)
+    if (!js.isUndefined(includeAA)) __obj.updateDynamic("includeAA")(includeAA.asInstanceOf[js.Any])
     if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
     __obj.asInstanceOf[PixelmatchOptions]
   }

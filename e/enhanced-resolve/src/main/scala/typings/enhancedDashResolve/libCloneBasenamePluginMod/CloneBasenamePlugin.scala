@@ -14,7 +14,7 @@ trait CloneBasenamePlugin extends js.Object {
 object CloneBasenamePlugin {
   @scala.inline
   def apply(apply: typings.enhancedDashResolve.libResolverMod.^ => Unit, source: String, target: String): CloneBasenamePlugin = {
-    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), source = source, target = target)
+    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CloneBasenamePlugin]
   }

@@ -36,7 +36,7 @@ object ProjectionOptions {
   ): ProjectionOptions = {
     val __obj = js.Dynamic.literal()
     if (eventHandlerInterceptor != null) __obj.updateDynamic("eventHandlerInterceptor")(js.Any.fromFunction4(eventHandlerInterceptor))
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace)
+    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
     if (performanceLogger != null) __obj.updateDynamic("performanceLogger")(js.Any.fromFunction2(performanceLogger))
     if (styleApplyer != null) __obj.updateDynamic("styleApplyer")(js.Any.fromFunction3(styleApplyer))
     __obj.asInstanceOf[ProjectionOptions]

@@ -37,9 +37,9 @@ object ojColorSpectrumSettableProperties {
     describedBy: String = null,
     labelledBy: String = null
   ): ojColorSpectrumSettableProperties = {
-    val __obj = js.Dynamic.literal(disabled = disabled, displayOptions = displayOptions, help = help, helpHints = helpHints, labelHint = labelHint, messagesCustom = messagesCustom, transientValue = transientValue, translations = translations, valid = valid.asInstanceOf[js.Any], value = value)
-    if (describedBy != null) __obj.updateDynamic("describedBy")(describedBy)
-    if (labelledBy != null) __obj.updateDynamic("labelledBy")(labelledBy)
+    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], displayOptions = displayOptions.asInstanceOf[js.Any], help = help.asInstanceOf[js.Any], helpHints = helpHints.asInstanceOf[js.Any], labelHint = labelHint.asInstanceOf[js.Any], messagesCustom = messagesCustom.asInstanceOf[js.Any], transientValue = transientValue.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (describedBy != null) __obj.updateDynamic("describedBy")(describedBy.asInstanceOf[js.Any])
+    if (labelledBy != null) __obj.updateDynamic("labelledBy")(labelledBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojColorSpectrumSettableProperties]
   }
 }

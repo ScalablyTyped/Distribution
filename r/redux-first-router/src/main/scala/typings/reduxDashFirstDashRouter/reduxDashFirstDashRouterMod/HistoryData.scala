@@ -13,7 +13,7 @@ trait HistoryData extends js.Object {
 object HistoryData {
   @scala.inline
   def apply(entries: HistoryEntries, index: Double, length: Double): HistoryData = {
-    val __obj = js.Dynamic.literal(entries = entries, index = index, length = length)
+    val __obj = js.Dynamic.literal(entries = entries.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HistoryData]
   }

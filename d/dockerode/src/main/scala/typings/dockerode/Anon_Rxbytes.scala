@@ -27,7 +27,7 @@ object Anon_Rxbytes {
     tx_errors: Double,
     tx_packets: Double
   ): Anon_Rxbytes = {
-    val __obj = js.Dynamic.literal(rx_bytes = rx_bytes, rx_dropped = rx_dropped, rx_errors = rx_errors, rx_packets = rx_packets, tx_bytes = tx_bytes, tx_dropped = tx_dropped, tx_errors = tx_errors, tx_packets = tx_packets)
+    val __obj = js.Dynamic.literal(rx_bytes = rx_bytes.asInstanceOf[js.Any], rx_dropped = rx_dropped.asInstanceOf[js.Any], rx_errors = rx_errors.asInstanceOf[js.Any], rx_packets = rx_packets.asInstanceOf[js.Any], tx_bytes = tx_bytes.asInstanceOf[js.Any], tx_dropped = tx_dropped.asInstanceOf[js.Any], tx_errors = tx_errors.asInstanceOf[js.Any], tx_packets = tx_packets.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Rxbytes]
   }

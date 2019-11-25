@@ -19,8 +19,8 @@ object TableTheme {
   @scala.inline
   def apply(head: String = null, table: String = null): TableTheme = {
     val __obj = js.Dynamic.literal()
-    if (head != null) __obj.updateDynamic("head")(head)
-    if (table != null) __obj.updateDynamic("table")(table)
+    if (head != null) __obj.updateDynamic("head")(head.asInstanceOf[js.Any])
+    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableTheme]
   }
 }

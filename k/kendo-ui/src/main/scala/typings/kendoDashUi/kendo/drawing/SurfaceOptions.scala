@@ -33,15 +33,15 @@ object SurfaceOptions {
   ): SurfaceOptions = {
     val __obj = js.Dynamic.literal()
     if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction1(click))
-    if (height != null) __obj.updateDynamic("height")(height)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (mouseenter != null) __obj.updateDynamic("mouseenter")(js.Any.fromFunction1(mouseenter))
     if (mouseleave != null) __obj.updateDynamic("mouseleave")(js.Any.fromFunction1(mouseleave))
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (tooltipClose != null) __obj.updateDynamic("tooltipClose")(js.Any.fromFunction1(tooltipClose))
     if (tooltipOpen != null) __obj.updateDynamic("tooltipOpen")(js.Any.fromFunction1(tooltipOpen))
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (width != null) __obj.updateDynamic("width")(width)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[SurfaceOptions]
   }
 }

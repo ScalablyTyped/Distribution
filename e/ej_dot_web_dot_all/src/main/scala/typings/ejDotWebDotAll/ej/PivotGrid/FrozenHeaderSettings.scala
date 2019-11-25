@@ -32,9 +32,9 @@ object FrozenHeaderSettings {
     scrollerSize: Int | Double = null
   ): FrozenHeaderSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableFrozenColumnHeaders)) __obj.updateDynamic("enableFrozenColumnHeaders")(enableFrozenColumnHeaders)
-    if (!js.isUndefined(enableFrozenHeaders)) __obj.updateDynamic("enableFrozenHeaders")(enableFrozenHeaders)
-    if (!js.isUndefined(enableFrozenRowHeaders)) __obj.updateDynamic("enableFrozenRowHeaders")(enableFrozenRowHeaders)
+    if (!js.isUndefined(enableFrozenColumnHeaders)) __obj.updateDynamic("enableFrozenColumnHeaders")(enableFrozenColumnHeaders.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableFrozenHeaders)) __obj.updateDynamic("enableFrozenHeaders")(enableFrozenHeaders.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableFrozenRowHeaders)) __obj.updateDynamic("enableFrozenRowHeaders")(enableFrozenRowHeaders.asInstanceOf[js.Any])
     if (scrollerSize != null) __obj.updateDynamic("scrollerSize")(scrollerSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[FrozenHeaderSettings]
   }

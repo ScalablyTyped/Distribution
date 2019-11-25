@@ -18,8 +18,8 @@ object GoogleCloudMlV1__ListModelsResponse {
   @scala.inline
   def apply(models: js.Array[GoogleCloudMlV1__Model] = null, nextPageToken: String = null): GoogleCloudMlV1__ListModelsResponse = {
     val __obj = js.Dynamic.literal()
-    if (models != null) __obj.updateDynamic("models")(models)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (models != null) __obj.updateDynamic("models")(models.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudMlV1__ListModelsResponse]
   }
 }

@@ -14,7 +14,7 @@ trait AsObject extends js.Object {
 object AsObject {
   @scala.inline
   def apply(account: Uint8Array | String, fetchEvents: Boolean, sequenceNumber: String): AsObject = {
-    val __obj = js.Dynamic.literal(account = account.asInstanceOf[js.Any], fetchEvents = fetchEvents, sequenceNumber = sequenceNumber)
+    val __obj = js.Dynamic.literal(account = account.asInstanceOf[js.Any], fetchEvents = fetchEvents.asInstanceOf[js.Any], sequenceNumber = sequenceNumber.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AsObject]
   }

@@ -19,9 +19,9 @@ object WebServerSyncOptions {
     open: js.UndefOr[Boolean] = js.undefined
   ): WebServerSyncOptions = {
     val __obj = js.Dynamic.literal()
-    if (browser != null) __obj.updateDynamic("browser")(browser)
-    if (!js.isUndefined(notify)) __obj.updateDynamic("notify")(notify)
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
+    if (browser != null) __obj.updateDynamic("browser")(browser.asInstanceOf[js.Any])
+    if (!js.isUndefined(notify)) __obj.updateDynamic("notify")(notify.asInstanceOf[js.Any])
+    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebServerSyncOptions]
   }
 }

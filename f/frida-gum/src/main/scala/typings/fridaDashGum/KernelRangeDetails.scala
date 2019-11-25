@@ -22,7 +22,7 @@ trait KernelRangeDetails extends js.Object {
 object KernelRangeDetails {
   @scala.inline
   def apply(base: UInt64, protection: PageProtection, size: Double): KernelRangeDetails = {
-    val __obj = js.Dynamic.literal(base = base, protection = protection, size = size)
+    val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], protection = protection.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[KernelRangeDetails]
   }

@@ -15,7 +15,7 @@ trait CLSContext
 object CLSContext {
   @scala.inline
   def apply(
-    getContext: () => TraceId,
+    getContext: () => js.Any,
     letContext: (TraceId, js.Function0[js.Any]) => js.Any,
     scoped: js.Function0[js.Any] => js.Any,
     setContext: TraceId => Unit

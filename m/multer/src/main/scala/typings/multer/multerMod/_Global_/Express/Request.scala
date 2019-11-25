@@ -14,7 +14,7 @@ trait Request extends js.Object {
 object Request {
   @scala.inline
   def apply(file: File, files: StringDictionary[js.Array[File]] | js.Array[File]): Request = {
-    val __obj = js.Dynamic.literal(file = file, files = files.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], files = files.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Request]
   }

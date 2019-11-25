@@ -28,7 +28,7 @@ package object coinbaseDashCommerceDashNodeMod {
   /**
     * Crypto pricing object.
     */
-  type CryptoPricing = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type CryptoPricing = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in coinbase-commerce-node.coinbase-commerce-node.CryptoName ]:? coinbase-commerce-node.coinbase-commerce-node.Price<coinbase-commerce-node.coinbase-commerce-node.CryptoCurrency>}
     */ typings.coinbaseDashCommerceDashNode.coinbaseDashCommerceDashNodeStrings.CryptoPricing with js.Any
   /**

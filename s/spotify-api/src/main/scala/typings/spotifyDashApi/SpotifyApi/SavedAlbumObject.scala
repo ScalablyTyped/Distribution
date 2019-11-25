@@ -16,7 +16,7 @@ trait SavedAlbumObject extends js.Object {
 object SavedAlbumObject {
   @scala.inline
   def apply(added_at: String, album: AlbumObjectFull): SavedAlbumObject = {
-    val __obj = js.Dynamic.literal(added_at = added_at, album = album)
+    val __obj = js.Dynamic.literal(added_at = added_at.asInstanceOf[js.Any], album = album.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SavedAlbumObject]
   }

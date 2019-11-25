@@ -3,8 +3,8 @@ package typings.atOracleOraclejet.ojswitchMod
 import typings.atOracleOraclejet.Anon_Action
 import typings.atOracleOraclejet.Anon_ActionElement
 import typings.atOracleOraclejet.atOracleOraclejetMod.JetElementCustomEvent
-import typings.atOracleOraclejet.atOracleOraclejetStrings.readonly
-import typings.atOracleOraclejet.atOracleOraclejetStrings.readonlyChanged
+import typings.atOracleOraclejet.atOracleOraclejetStrings.readonlyChanged_
+import typings.atOracleOraclejet.atOracleOraclejetStrings.readonly_
 import typings.atOracleOraclejet.ojeditablevalueMod.editableValue
 import typings.atOracleOraclejet.ojswitchMod.ojSwitch.ojAnimateEnd
 import typings.atOracleOraclejet.ojswitchMod.ojSwitch.ojAnimateStart
@@ -24,20 +24,20 @@ trait ojSwitch extends editableValue[Boolean, ojSwitchSettableProperties, Boolea
   var readonly: Boolean = js.native
   @JSName("addEventListener")
   def addEventListener_readonlyChanged(
-    `type`: readonlyChanged,
+    `type`: readonlyChanged_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_readonlyChanged(
-    `type`: readonlyChanged,
+    `type`: readonlyChanged_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("getProperty")
-  def getProperty_readonly(property: readonly): Boolean = js.native
+  def getProperty_readonly(property: readonly_): Boolean = js.native
   def setProperties(properties: ojSwitchSettablePropertiesLenient): Unit = js.native
   @JSName("setProperty")
-  def setProperty_readonly(property: readonly, value: Boolean): Unit = js.native
+  def setProperty_readonly(property: readonly_, value: Boolean): Unit = js.native
 }
 
 @JSImport("@oracle/oraclejet/ojswitch", "ojSwitch")

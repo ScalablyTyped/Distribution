@@ -28,9 +28,9 @@ object ojGanttDependencySettableProperties {
     `type`: finishStart | finishFinish | startStart | startFinish,
     shortDesc: String = null
   ): ojGanttDependencySettableProperties = {
-    val __obj = js.Dynamic.literal(predecessorTaskId = predecessorTaskId, successorTaskId = successorTaskId, svgClassName = svgClassName, svgStyle = svgStyle)
+    val __obj = js.Dynamic.literal(predecessorTaskId = predecessorTaskId.asInstanceOf[js.Any], successorTaskId = successorTaskId.asInstanceOf[js.Any], svgClassName = svgClassName.asInstanceOf[js.Any], svgStyle = svgStyle.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (shortDesc != null) __obj.updateDynamic("shortDesc")(shortDesc)
+    if (shortDesc != null) __obj.updateDynamic("shortDesc")(shortDesc.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojGanttDependencySettableProperties]
   }
 }

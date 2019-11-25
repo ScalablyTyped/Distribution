@@ -33,16 +33,16 @@ object FavicoJsOptions {
     `type`: String = null
   ): FavicoJsOptions = {
     val __obj = js.Dynamic.literal()
-    if (animation != null) __obj.updateDynamic("animation")(animation)
-    if (bgColor != null) __obj.updateDynamic("bgColor")(bgColor)
+    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (bgColor != null) __obj.updateDynamic("bgColor")(bgColor.asInstanceOf[js.Any])
     if (dataUrl != null) __obj.updateDynamic("dataUrl")(js.Any.fromFunction1(dataUrl))
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (elementId != null) __obj.updateDynamic("elementId")(elementId)
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
-    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (textColor != null) __obj.updateDynamic("textColor")(textColor)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (elementId != null) __obj.updateDynamic("elementId")(elementId.asInstanceOf[js.Any])
+    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
+    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FavicoJsOptions]
   }
 }

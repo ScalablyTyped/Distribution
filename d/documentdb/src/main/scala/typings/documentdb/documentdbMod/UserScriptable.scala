@@ -14,7 +14,7 @@ trait UserScriptable extends UniqueId {
 object UserScriptable {
   @scala.inline
   def apply(id: String, body: UserFunction = null, serverScript: UserFunction = null): UserScriptable = {
-    val __obj = js.Dynamic.literal(id = id)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (serverScript != null) __obj.updateDynamic("serverScript")(serverScript.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserScriptable]

@@ -22,8 +22,8 @@ object Asn1 {
     `type`: Type,
     value: Bytes | js.Array[Asn1]
   ): Asn1 = {
-    val __obj = js.Dynamic.literal(composed = composed, constructed = constructed, tagClass = tagClass, value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(composed = composed.asInstanceOf[js.Any], constructed = constructed.asInstanceOf[js.Any], tagClass = tagClass.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Asn1]
   }
 }

@@ -6,19 +6,19 @@ import scala.scalajs.js.annotation._
 
 package object backboneMod {
   import org.scalablytyped.runtime.StringDictionary
-  import typings.backbone.Fn_EventObject
-  import typings.backbone.Fn_UrlParts
+  import typings.jquery.JQuery.TriggeredEvent
 
   /**
     * JavaScript events (used in the methods of the Events interface)
     */
   type EventHandler = js.Function1[/* repeated */ js.Any, Unit]
   type EventMap = StringDictionary[EventHandler]
-  type Events = EventsMixin
   /**
     * DOM events (used in the events property of a View)
     */
-  type EventsHash = StringDictionary[String | Fn_EventObject]
+  type EventsHash = StringDictionary[
+    String | (js.Function1[/* eventObject */ TriggeredEvent[js.Any, js.Any, js.Any, js.Any], Unit])
+  ]
   type Events_Off[BaseT] = js.ThisFunction3[
     /* this */ BaseT, 
     /* eventName */ js.UndefOr[String], 
@@ -35,5 +35,5 @@ package object backboneMod {
   ]
   type Events_Trigger[BaseT] = js.ThisFunction2[/* this */ BaseT, /* eventName */ String, /* repeated */ js.Any, BaseT]
   type ObjectHash = StringDictionary[js.Any]
-  type RoutesHash = StringDictionary[String | Fn_UrlParts]
+  type RoutesHash = StringDictionary[String | (js.Function1[/* repeated */ String, Unit])]
 }

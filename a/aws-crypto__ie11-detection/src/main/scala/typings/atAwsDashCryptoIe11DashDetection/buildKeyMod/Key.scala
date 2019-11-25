@@ -14,8 +14,8 @@ trait Key extends js.Object {
 object Key {
   @scala.inline
   def apply(algorithm: String, extractable: Boolean, keyUsage: js.Array[String], `type`: String): Key = {
-    val __obj = js.Dynamic.literal(algorithm = algorithm, extractable = extractable, keyUsage = keyUsage)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(algorithm = algorithm.asInstanceOf[js.Any], extractable = extractable.asInstanceOf[js.Any], keyUsage = keyUsage.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Key]
   }
 }

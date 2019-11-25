@@ -63,7 +63,7 @@ object GetOptionsResult {
     strokeWeight: Double,
     zIndex: Double
   ): GetOptionsResult[ExtraData] = {
-    val __obj = js.Dynamic.literal(bubble = bubble, clickable = clickable, extData = extData.asInstanceOf[js.Any], map = map, strokeColor = strokeColor, strokeDasharray = strokeDasharray, strokeOpacity = strokeOpacity, strokeStyle = strokeStyle, strokeWeight = strokeWeight, zIndex = zIndex)
+    val __obj = js.Dynamic.literal(bubble = bubble.asInstanceOf[js.Any], clickable = clickable.asInstanceOf[js.Any], extData = extData.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], strokeColor = strokeColor.asInstanceOf[js.Any], strokeDasharray = strokeDasharray.asInstanceOf[js.Any], strokeOpacity = strokeOpacity.asInstanceOf[js.Any], strokeStyle = strokeStyle.asInstanceOf[js.Any], strokeWeight = strokeWeight.asInstanceOf[js.Any], zIndex = zIndex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetOptionsResult[ExtraData]]
   }

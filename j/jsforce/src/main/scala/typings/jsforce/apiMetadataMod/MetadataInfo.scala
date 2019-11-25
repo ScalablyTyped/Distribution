@@ -11,7 +11,7 @@ trait MetadataInfo extends js.Object {
 object MetadataInfo {
   @scala.inline
   def apply(fullName: String): MetadataInfo = {
-    val __obj = js.Dynamic.literal(fullName = fullName)
+    val __obj = js.Dynamic.literal(fullName = fullName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MetadataInfo]
   }

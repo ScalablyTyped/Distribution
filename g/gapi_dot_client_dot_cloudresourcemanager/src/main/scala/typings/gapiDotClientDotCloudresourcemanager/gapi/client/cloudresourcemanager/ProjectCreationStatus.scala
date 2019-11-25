@@ -25,9 +25,9 @@ object ProjectCreationStatus {
     ready: js.UndefOr[Boolean] = js.undefined
   ): ProjectCreationStatus = {
     val __obj = js.Dynamic.literal()
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
-    if (!js.isUndefined(gettable)) __obj.updateDynamic("gettable")(gettable)
-    if (!js.isUndefined(ready)) __obj.updateDynamic("ready")(ready)
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(gettable)) __obj.updateDynamic("gettable")(gettable.asInstanceOf[js.Any])
+    if (!js.isUndefined(ready)) __obj.updateDynamic("ready")(ready.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectCreationStatus]
   }
 }

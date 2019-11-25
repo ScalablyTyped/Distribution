@@ -13,7 +13,7 @@ trait ReposGetContentsResponseLinks extends js.Object {
 object ReposGetContentsResponseLinks {
   @scala.inline
   def apply(git: String, html: String, self: String): ReposGetContentsResponseLinks = {
-    val __obj = js.Dynamic.literal(git = git, html = html, self = self)
+    val __obj = js.Dynamic.literal(git = git.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], self = self.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReposGetContentsResponseLinks]
   }

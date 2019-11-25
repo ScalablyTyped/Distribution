@@ -12,7 +12,7 @@ object InfoOptions {
   @scala.inline
   def apply(locale: String = null): InfoOptions = {
     val __obj = js.Dynamic.literal()
-    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     __obj.asInstanceOf[InfoOptions]
   }
 }

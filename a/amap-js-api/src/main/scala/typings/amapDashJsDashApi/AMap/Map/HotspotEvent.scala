@@ -14,7 +14,7 @@ trait HotspotEvent[N /* <: String */] extends js.Object {
 object HotspotEvent {
   @scala.inline
   def apply[N /* <: String */](`type`: N, value: Anon_IdIsIndoorPOI): HotspotEvent[N] = {
-    val __obj = js.Dynamic.literal(value = value)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HotspotEvent[N]]
   }

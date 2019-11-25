@@ -13,8 +13,8 @@ object WithStylesOptions {
   @scala.inline
   def apply(flushBefore: js.UndefOr[Boolean] = js.undefined, pureComponent: js.UndefOr[Boolean] = js.undefined): WithStylesOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(flushBefore)) __obj.updateDynamic("flushBefore")(flushBefore)
-    if (!js.isUndefined(pureComponent)) __obj.updateDynamic("pureComponent")(pureComponent)
+    if (!js.isUndefined(flushBefore)) __obj.updateDynamic("flushBefore")(flushBefore.asInstanceOf[js.Any])
+    if (!js.isUndefined(pureComponent)) __obj.updateDynamic("pureComponent")(pureComponent.asInstanceOf[js.Any])
     __obj.asInstanceOf[WithStylesOptions]
   }
 }

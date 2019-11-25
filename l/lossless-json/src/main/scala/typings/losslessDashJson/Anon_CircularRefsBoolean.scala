@@ -11,7 +11,7 @@ trait Anon_CircularRefsBoolean extends js.Object {
 object Anon_CircularRefsBoolean {
   @scala.inline
   def apply(circularRefs: Boolean): Anon_CircularRefsBoolean = {
-    val __obj = js.Dynamic.literal(circularRefs = circularRefs)
+    val __obj = js.Dynamic.literal(circularRefs = circularRefs.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CircularRefsBoolean]
   }

@@ -18,7 +18,7 @@ trait Anon_BlockDetectReplaceAnonCssSass extends js.Object {
 object Anon_BlockDetectReplaceAnonCssSass {
   @scala.inline
   def apply(block: RegExp, detect: Anon_CssSass, replace: Anon_CssSassScss): Anon_BlockDetectReplaceAnonCssSass = {
-    val __obj = js.Dynamic.literal(block = block, detect = detect, replace = replace)
+    val __obj = js.Dynamic.literal(block = block.asInstanceOf[js.Any], detect = detect.asInstanceOf[js.Any], replace = replace.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BlockDetectReplaceAnonCssSass]
   }

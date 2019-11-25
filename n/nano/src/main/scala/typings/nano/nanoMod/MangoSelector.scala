@@ -15,7 +15,7 @@ object MangoSelector {
     StringDictionary: /* key */ StringDictionary[MangoSelector | MangoValue | js.Array[MangoValue]] = null
   ): MangoSelector = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[MangoSelector]
   }
 }

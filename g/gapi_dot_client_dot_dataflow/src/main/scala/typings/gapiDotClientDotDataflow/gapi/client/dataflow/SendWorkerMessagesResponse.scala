@@ -13,7 +13,7 @@ object SendWorkerMessagesResponse {
   @scala.inline
   def apply(workerMessageResponses: js.Array[WorkerMessageResponse] = null): SendWorkerMessagesResponse = {
     val __obj = js.Dynamic.literal()
-    if (workerMessageResponses != null) __obj.updateDynamic("workerMessageResponses")(workerMessageResponses)
+    if (workerMessageResponses != null) __obj.updateDynamic("workerMessageResponses")(workerMessageResponses.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendWorkerMessagesResponse]
   }
 }

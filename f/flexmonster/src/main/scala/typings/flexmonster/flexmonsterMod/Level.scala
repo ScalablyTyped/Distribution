@@ -12,7 +12,7 @@ trait Level extends js.Object {
 object Level {
   @scala.inline
   def apply(caption: String, uniqueName: String): Level = {
-    val __obj = js.Dynamic.literal(caption = caption, uniqueName = uniqueName)
+    val __obj = js.Dynamic.literal(caption = caption.asInstanceOf[js.Any], uniqueName = uniqueName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Level]
   }

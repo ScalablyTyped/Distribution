@@ -13,8 +13,8 @@ object OrdersCustomBatchRequestEntryCancel {
   @scala.inline
   def apply(reason: String = null, reasonText: String = null): OrdersCustomBatchRequestEntryCancel = {
     val __obj = js.Dynamic.literal()
-    if (reason != null) __obj.updateDynamic("reason")(reason)
-    if (reasonText != null) __obj.updateDynamic("reasonText")(reasonText)
+    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
+    if (reasonText != null) __obj.updateDynamic("reasonText")(reasonText.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrdersCustomBatchRequestEntryCancel]
   }
 }

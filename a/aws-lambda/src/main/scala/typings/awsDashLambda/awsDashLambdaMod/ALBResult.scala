@@ -24,9 +24,9 @@ object ALBResult {
     headers: StringDictionary[Boolean | Double | String] = null,
     multiValueHeaders: StringDictionary[js.Array[Boolean | Double | String]] = null
   ): ALBResult = {
-    val __obj = js.Dynamic.literal(body = body, isBase64Encoded = isBase64Encoded, statusCode = statusCode, statusDescription = statusDescription)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (multiValueHeaders != null) __obj.updateDynamic("multiValueHeaders")(multiValueHeaders)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], isBase64Encoded = isBase64Encoded.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], statusDescription = statusDescription.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (multiValueHeaders != null) __obj.updateDynamic("multiValueHeaders")(multiValueHeaders.asInstanceOf[js.Any])
     __obj.asInstanceOf[ALBResult]
   }
 }

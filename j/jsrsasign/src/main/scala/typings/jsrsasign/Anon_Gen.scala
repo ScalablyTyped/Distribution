@@ -13,7 +13,7 @@ object Anon_Gen {
   @scala.inline
   def apply(`type`: gen = null): Anon_Gen = {
     val __obj = js.Dynamic.literal()
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Gen]
   }
 }

@@ -24,8 +24,8 @@ object ojButtonSettableProperties {
     display: all | icons,
     translations: js.Object = null
   ): ojButtonSettableProperties = {
-    val __obj = js.Dynamic.literal(chroming = chroming.asInstanceOf[js.Any], disabled = disabled, display = display.asInstanceOf[js.Any])
-    if (translations != null) __obj.updateDynamic("translations")(translations)
+    val __obj = js.Dynamic.literal(chroming = chroming.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any])
+    if (translations != null) __obj.updateDynamic("translations")(translations.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojButtonSettableProperties]
   }
 }

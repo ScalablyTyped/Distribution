@@ -11,7 +11,7 @@ trait ICONNECTION extends js.Object {
 object ICONNECTION {
   @scala.inline
   def apply(success: Boolean): ICONNECTION = {
-    val __obj = js.Dynamic.literal(success = success)
+    val __obj = js.Dynamic.literal(success = success.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ICONNECTION]
   }

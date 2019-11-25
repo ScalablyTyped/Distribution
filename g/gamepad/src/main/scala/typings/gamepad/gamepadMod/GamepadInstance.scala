@@ -23,7 +23,7 @@ object GamepadInstance {
     productID: Double,
     vendorID: Double
   ): GamepadInstance = {
-    val __obj = js.Dynamic.literal(axisStates = axisStates, buttonStates = buttonStates, description = description, deviceID = deviceID, productID = productID, vendorID = vendorID)
+    val __obj = js.Dynamic.literal(axisStates = axisStates.asInstanceOf[js.Any], buttonStates = buttonStates.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], deviceID = deviceID.asInstanceOf[js.Any], productID = productID.asInstanceOf[js.Any], vendorID = vendorID.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GamepadInstance]
   }

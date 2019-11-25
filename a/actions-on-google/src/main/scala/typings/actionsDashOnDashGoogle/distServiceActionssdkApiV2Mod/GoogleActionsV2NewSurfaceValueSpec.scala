@@ -27,9 +27,9 @@ object GoogleActionsV2NewSurfaceValueSpec {
   @scala.inline
   def apply(capabilities: js.Array[String] = null, context: String = null, notificationTitle: String = null): GoogleActionsV2NewSurfaceValueSpec = {
     val __obj = js.Dynamic.literal()
-    if (capabilities != null) __obj.updateDynamic("capabilities")(capabilities)
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (notificationTitle != null) __obj.updateDynamic("notificationTitle")(notificationTitle)
+    if (capabilities != null) __obj.updateDynamic("capabilities")(capabilities.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (notificationTitle != null) __obj.updateDynamic("notificationTitle")(notificationTitle.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2NewSurfaceValueSpec]
   }
 }

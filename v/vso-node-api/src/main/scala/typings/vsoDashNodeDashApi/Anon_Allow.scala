@@ -13,7 +13,7 @@ trait Anon_Allow extends js.Object {
 object Anon_Allow {
   @scala.inline
   def apply(allow: Double, completed: Double, disallow: Double): Anon_Allow = {
-    val __obj = js.Dynamic.literal(allow = allow, completed = completed, disallow = disallow)
+    val __obj = js.Dynamic.literal(allow = allow.asInstanceOf[js.Any], completed = completed.asInstanceOf[js.Any], disallow = disallow.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Allow]
   }

@@ -13,8 +13,8 @@ object SideCarMediumOptions {
   @scala.inline
   def apply(async: js.UndefOr[Boolean] = js.undefined, ssr: js.UndefOr[Boolean] = js.undefined): SideCarMediumOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
-    if (!js.isUndefined(ssr)) __obj.updateDynamic("ssr")(ssr)
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
+    if (!js.isUndefined(ssr)) __obj.updateDynamic("ssr")(ssr.asInstanceOf[js.Any])
     __obj.asInstanceOf[SideCarMediumOptions]
   }
 }

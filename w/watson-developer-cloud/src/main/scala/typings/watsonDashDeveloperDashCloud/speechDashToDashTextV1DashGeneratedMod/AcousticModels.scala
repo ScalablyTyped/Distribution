@@ -13,7 +13,7 @@ trait AcousticModels extends js.Object {
 object AcousticModels {
   @scala.inline
   def apply(customizations: js.Array[AcousticModel]): AcousticModels = {
-    val __obj = js.Dynamic.literal(customizations = customizations)
+    val __obj = js.Dynamic.literal(customizations = customizations.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AcousticModels]
   }

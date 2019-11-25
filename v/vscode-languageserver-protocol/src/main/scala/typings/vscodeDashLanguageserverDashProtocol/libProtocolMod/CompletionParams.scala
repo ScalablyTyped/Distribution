@@ -17,8 +17,8 @@ trait CompletionParams extends TextDocumentPositionParams {
 object CompletionParams {
   @scala.inline
   def apply(position: Position, textDocument: TextDocumentIdentifier, context: CompletionContext = null): CompletionParams = {
-    val __obj = js.Dynamic.literal(position = position, textDocument = textDocument)
-    if (context != null) __obj.updateDynamic("context")(context)
+    val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any], textDocument = textDocument.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompletionParams]
   }
 }

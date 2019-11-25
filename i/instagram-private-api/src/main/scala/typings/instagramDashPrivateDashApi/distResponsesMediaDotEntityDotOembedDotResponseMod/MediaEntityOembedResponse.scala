@@ -41,8 +41,8 @@ object MediaEntityOembedResponse {
     version: String,
     width: Double
   ): MediaEntityOembedResponse = {
-    val __obj = js.Dynamic.literal(author_id = author_id, author_name = author_name, author_url = author_url, height = height, html = html, media_id = media_id, provider_name = provider_name, provider_url = provider_url, thumbnail_height = thumbnail_height, thumbnail_url = thumbnail_url, thumbnail_width = thumbnail_width, title = title, version = version, width = width)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(author_id = author_id.asInstanceOf[js.Any], author_name = author_name.asInstanceOf[js.Any], author_url = author_url.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], media_id = media_id.asInstanceOf[js.Any], provider_name = provider_name.asInstanceOf[js.Any], provider_url = provider_url.asInstanceOf[js.Any], thumbnail_height = thumbnail_height.asInstanceOf[js.Any], thumbnail_url = thumbnail_url.asInstanceOf[js.Any], thumbnail_width = thumbnail_width.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaEntityOembedResponse]
   }
 }

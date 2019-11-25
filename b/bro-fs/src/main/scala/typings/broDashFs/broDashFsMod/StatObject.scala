@@ -24,7 +24,7 @@ object StatObject {
     name: String,
     size: Double
   ): StatObject = {
-    val __obj = js.Dynamic.literal(fullPath = fullPath, isDirectory = isDirectory, isFile = isFile, modificationTime = modificationTime, name = name, size = size)
+    val __obj = js.Dynamic.literal(fullPath = fullPath.asInstanceOf[js.Any], isDirectory = isDirectory.asInstanceOf[js.Any], isFile = isFile.asInstanceOf[js.Any], modificationTime = modificationTime.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StatObject]
   }

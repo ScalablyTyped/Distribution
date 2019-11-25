@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait image_type extends js.Object
 
+object image_type {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def eps: typings.qrDashImage.qrDashImageStrings.eps = this.cast("eps")
+  @scala.inline
+  def pdf: typings.qrDashImage.qrDashImageStrings.pdf = this.cast("pdf")
+  @scala.inline
+  def png: typings.qrDashImage.qrDashImageStrings.png = this.cast("png")
+  @scala.inline
+  def svg: typings.qrDashImage.qrDashImageStrings.svg = this.cast("svg")
+}
+

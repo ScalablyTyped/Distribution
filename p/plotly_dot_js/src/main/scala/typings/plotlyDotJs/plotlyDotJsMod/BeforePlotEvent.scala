@@ -14,7 +14,7 @@ trait BeforePlotEvent extends js.Object {
 object BeforePlotEvent {
   @scala.inline
   def apply(config: Partial[Config], data: js.Array[Data], layout: Partial[Layout]): BeforePlotEvent = {
-    val __obj = js.Dynamic.literal(config = config, data = data, layout = layout)
+    val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BeforePlotEvent]
   }

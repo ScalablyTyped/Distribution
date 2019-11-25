@@ -54,14 +54,14 @@ object TestResult {
     sourceMaps: StringDictionary[String] = null,
     testExecError: SerializableError = null
   ): TestResult = {
-    val __obj = js.Dynamic.literal(leaks = leaks, numFailingTests = numFailingTests, numPassingTests = numPassingTests, numPendingTests = numPendingTests, numTodoTests = numTodoTests, openHandles = openHandles, perfStats = perfStats, skipped = skipped, snapshot = snapshot, testFilePath = testFilePath, testResults = testResults)
-    if (console != null) __obj.updateDynamic("console")(console)
-    if (coverage != null) __obj.updateDynamic("coverage")(coverage)
+    val __obj = js.Dynamic.literal(leaks = leaks.asInstanceOf[js.Any], numFailingTests = numFailingTests.asInstanceOf[js.Any], numPassingTests = numPassingTests.asInstanceOf[js.Any], numPendingTests = numPendingTests.asInstanceOf[js.Any], numTodoTests = numTodoTests.asInstanceOf[js.Any], openHandles = openHandles.asInstanceOf[js.Any], perfStats = perfStats.asInstanceOf[js.Any], skipped = skipped.asInstanceOf[js.Any], snapshot = snapshot.asInstanceOf[js.Any], testFilePath = testFilePath.asInstanceOf[js.Any], testResults = testResults.asInstanceOf[js.Any])
+    if (console != null) __obj.updateDynamic("console")(console.asInstanceOf[js.Any])
+    if (coverage != null) __obj.updateDynamic("coverage")(coverage.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (failureMessage != null) __obj.updateDynamic("failureMessage")(failureMessage)
+    if (failureMessage != null) __obj.updateDynamic("failureMessage")(failureMessage.asInstanceOf[js.Any])
     if (memoryUsage != null) __obj.updateDynamic("memoryUsage")(memoryUsage.asInstanceOf[js.Any])
-    if (sourceMaps != null) __obj.updateDynamic("sourceMaps")(sourceMaps)
-    if (testExecError != null) __obj.updateDynamic("testExecError")(testExecError)
+    if (sourceMaps != null) __obj.updateDynamic("sourceMaps")(sourceMaps.asInstanceOf[js.Any])
+    if (testExecError != null) __obj.updateDynamic("testExecError")(testExecError.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestResult]
   }
 }

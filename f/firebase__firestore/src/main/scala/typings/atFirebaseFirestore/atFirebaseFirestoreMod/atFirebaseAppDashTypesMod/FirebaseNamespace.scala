@@ -13,7 +13,7 @@ object FirebaseNamespace {
   @scala.inline
   def apply(firestore: Anon_App = null): FirebaseNamespace = {
     val __obj = js.Dynamic.literal()
-    if (firestore != null) __obj.updateDynamic("firestore")(firestore)
+    if (firestore != null) __obj.updateDynamic("firestore")(firestore.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirebaseNamespace]
   }
 }

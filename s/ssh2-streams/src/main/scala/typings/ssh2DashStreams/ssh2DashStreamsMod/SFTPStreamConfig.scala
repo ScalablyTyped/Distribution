@@ -29,7 +29,7 @@ object SFTPStreamConfig {
     val __obj = js.Dynamic.literal()
     if (debug != null) __obj.updateDynamic("debug")(js.Any.fromFunction1(debug))
     if (highWaterMark != null) __obj.updateDynamic("highWaterMark")(highWaterMark.asInstanceOf[js.Any])
-    if (!js.isUndefined(server)) __obj.updateDynamic("server")(server)
+    if (!js.isUndefined(server)) __obj.updateDynamic("server")(server.asInstanceOf[js.Any])
     __obj.asInstanceOf[SFTPStreamConfig]
   }
 }

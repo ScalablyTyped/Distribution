@@ -44,10 +44,10 @@ object RoyalSliderVisibleOptions {
     val __obj = js.Dynamic.literal()
     if (breakpoint != null) __obj.updateDynamic("breakpoint")(breakpoint.asInstanceOf[js.Any])
     if (breakpointCenterArea != null) __obj.updateDynamic("breakpointCenterArea")(breakpointCenterArea.asInstanceOf[js.Any])
-    if (!js.isUndefined(center)) __obj.updateDynamic("center")(center)
+    if (!js.isUndefined(center)) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
     if (centerArea != null) __obj.updateDynamic("centerArea")(centerArea.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (!js.isUndefined(navigateByCenterClick)) __obj.updateDynamic("navigateByCenterClick")(navigateByCenterClick)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(navigateByCenterClick)) __obj.updateDynamic("navigateByCenterClick")(navigateByCenterClick.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoyalSliderVisibleOptions]
   }
 }

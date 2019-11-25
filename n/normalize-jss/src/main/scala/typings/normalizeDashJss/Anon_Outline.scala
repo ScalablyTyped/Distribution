@@ -11,7 +11,7 @@ trait Anon_Outline extends js.Object {
 object Anon_Outline {
   @scala.inline
   def apply(outline: String): Anon_Outline = {
-    val __obj = js.Dynamic.literal(outline = outline)
+    val __obj = js.Dynamic.literal(outline = outline.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Outline]
   }

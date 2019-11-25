@@ -34,16 +34,16 @@ object RedBoxProps {
     useColumns: js.UndefOr[Boolean] = js.undefined,
     useLines: js.UndefOr[Boolean] = js.undefined
   ): RedBoxProps = {
-    val __obj = js.Dynamic.literal(error = error)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (editorScheme != null) __obj.updateDynamic("editorScheme")(editorScheme)
-    if (filename != null) __obj.updateDynamic("filename")(filename)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (editorScheme != null) __obj.updateDynamic("editorScheme")(editorScheme.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (!js.isUndefined(useColumns)) __obj.updateDynamic("useColumns")(useColumns)
-    if (!js.isUndefined(useLines)) __obj.updateDynamic("useLines")(useLines)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(useColumns)) __obj.updateDynamic("useColumns")(useColumns.asInstanceOf[js.Any])
+    if (!js.isUndefined(useLines)) __obj.updateDynamic("useLines")(useLines.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedBoxProps]
   }
 }

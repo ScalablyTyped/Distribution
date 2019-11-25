@@ -18,7 +18,7 @@ object ParamsRec {
   /* key */ StringDictionary[js.UndefOr[String | Double | Boolean | Null | Params]] = null
   ): ParamsRec = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ParamsRec]
   }
 }

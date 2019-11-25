@@ -14,8 +14,8 @@ trait Amount extends js.Object {
 object Amount {
   @scala.inline
   def apply(currency: String, total: String, details: Anon_Giftwrap = null): Amount = {
-    val __obj = js.Dynamic.literal(currency = currency, total = total)
-    if (details != null) __obj.updateDynamic("details")(details)
+    val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
+    if (details != null) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
     __obj.asInstanceOf[Amount]
   }
 }

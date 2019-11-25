@@ -27,7 +27,7 @@ object Anon_Current {
     styles: StringDictionary[RegisteredStyle[_]],
     total: Double
   ): Anon_Current = {
-    val __obj = js.Dynamic.literal(current = current, indicatorStyle = indicatorStyle, mode = mode, onChange = js.Any.fromFunction0(onChange), simple = simple, styles = styles, total = total)
+    val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], indicatorStyle = indicatorStyle.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], onChange = js.Any.fromFunction0(onChange), simple = simple.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Current]
   }

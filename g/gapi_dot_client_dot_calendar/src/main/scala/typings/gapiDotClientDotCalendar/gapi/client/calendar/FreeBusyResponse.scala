@@ -28,11 +28,11 @@ object FreeBusyResponse {
     timeMin: String = null
   ): FreeBusyResponse = {
     val __obj = js.Dynamic.literal()
-    if (calendars != null) __obj.updateDynamic("calendars")(calendars)
-    if (groups != null) __obj.updateDynamic("groups")(groups)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (timeMax != null) __obj.updateDynamic("timeMax")(timeMax)
-    if (timeMin != null) __obj.updateDynamic("timeMin")(timeMin)
+    if (calendars != null) __obj.updateDynamic("calendars")(calendars.asInstanceOf[js.Any])
+    if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (timeMax != null) __obj.updateDynamic("timeMax")(timeMax.asInstanceOf[js.Any])
+    if (timeMin != null) __obj.updateDynamic("timeMin")(timeMin.asInstanceOf[js.Any])
     __obj.asInstanceOf[FreeBusyResponse]
   }
 }

@@ -15,10 +15,10 @@ trait AesGCM extends IParams {
 object AesGCM {
   @scala.inline
   def apply(ivBits: Double, tagBits: Double, `type`: Double, aad: Buffer = null, iv: Buffer = null): AesGCM = {
-    val __obj = js.Dynamic.literal(ivBits = ivBits, tagBits = tagBits)
-    __obj.updateDynamic("type")(`type`)
-    if (aad != null) __obj.updateDynamic("aad")(aad)
-    if (iv != null) __obj.updateDynamic("iv")(iv)
+    val __obj = js.Dynamic.literal(ivBits = ivBits.asInstanceOf[js.Any], tagBits = tagBits.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (aad != null) __obj.updateDynamic("aad")(aad.asInstanceOf[js.Any])
+    if (iv != null) __obj.updateDynamic("iv")(iv.asInstanceOf[js.Any])
     __obj.asInstanceOf[AesGCM]
   }
 }

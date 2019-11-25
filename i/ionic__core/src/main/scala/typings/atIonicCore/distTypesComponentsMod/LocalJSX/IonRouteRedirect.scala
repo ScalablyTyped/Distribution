@@ -27,9 +27,9 @@ object IonRouteRedirect {
     onIonRouteRedirectChanged: /* event */ CustomEvent[_] => Unit = null,
     to: String = null
   ): IonRouteRedirect = {
-    val __obj = js.Dynamic.literal(from = from)
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any])
     if (onIonRouteRedirectChanged != null) __obj.updateDynamic("onIonRouteRedirectChanged")(js.Any.fromFunction1(onIonRouteRedirectChanged))
-    if (to != null) __obj.updateDynamic("to")(to)
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonRouteRedirect]
   }
 }

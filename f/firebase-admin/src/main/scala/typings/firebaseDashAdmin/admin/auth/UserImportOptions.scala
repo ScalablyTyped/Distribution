@@ -20,7 +20,7 @@ trait UserImportOptions extends js.Object {
 object UserImportOptions {
   @scala.inline
   def apply(hash: Anon_Algorithm): UserImportOptions = {
-    val __obj = js.Dynamic.literal(hash = hash)
+    val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UserImportOptions]
   }

@@ -31,14 +31,14 @@ object KeyframesProps {
     times: js.Array[Double] = null,
     yoyo: Int | Double = null
   ): KeyframesProps = {
-    val __obj = js.Dynamic.literal(values = values)
+    val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (ease != null) __obj.updateDynamic("ease")(ease.asInstanceOf[js.Any])
-    if (easings != null) __obj.updateDynamic("easings")(easings)
+    if (easings != null) __obj.updateDynamic("easings")(easings.asInstanceOf[js.Any])
     if (elapsed != null) __obj.updateDynamic("elapsed")(elapsed.asInstanceOf[js.Any])
     if (flip != null) __obj.updateDynamic("flip")(flip.asInstanceOf[js.Any])
     if (loop != null) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
-    if (times != null) __obj.updateDynamic("times")(times)
+    if (times != null) __obj.updateDynamic("times")(times.asInstanceOf[js.Any])
     if (yoyo != null) __obj.updateDynamic("yoyo")(yoyo.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyframesProps]
   }

@@ -32,7 +32,7 @@ object Options {
     timeout: Int | Double = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(stopOnDomReady)) __obj.updateDynamic("stopOnDomReady")(stopOnDomReady)
+    if (!js.isUndefined(stopOnDomReady)) __obj.updateDynamic("stopOnDomReady")(stopOnDomReady.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

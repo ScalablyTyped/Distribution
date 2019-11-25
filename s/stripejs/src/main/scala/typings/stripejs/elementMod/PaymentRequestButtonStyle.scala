@@ -36,7 +36,7 @@ object PaymentRequestButtonStyle {
     `type`: default | donate | buy = null
   ): PaymentRequestButtonStyle = {
     val __obj = js.Dynamic.literal()
-    if (height != null) __obj.updateDynamic("height")(height)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentRequestButtonStyle]

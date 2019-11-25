@@ -18,7 +18,7 @@ trait TypeofContainer extends js.Object {
 object TypeofContainer {
   @scala.inline
   def apply(__ContainerArgs: Instantiable0[__ContainerArgs]): TypeofContainer = {
-    val __obj = js.Dynamic.literal(__ContainerArgs = __ContainerArgs)
+    val __obj = js.Dynamic.literal(__ContainerArgs = __ContainerArgs.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeofContainer]
   }

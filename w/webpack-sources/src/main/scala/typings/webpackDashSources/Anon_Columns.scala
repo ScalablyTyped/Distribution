@@ -12,7 +12,7 @@ object Anon_Columns {
   @scala.inline
   def apply(columns: js.UndefOr[Boolean] = js.undefined): Anon_Columns = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(columns)) __obj.updateDynamic("columns")(columns)
+    if (!js.isUndefined(columns)) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Columns]
   }
 }

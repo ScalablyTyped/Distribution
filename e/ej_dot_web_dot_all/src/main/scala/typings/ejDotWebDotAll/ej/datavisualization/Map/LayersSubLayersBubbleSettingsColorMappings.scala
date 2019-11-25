@@ -15,7 +15,7 @@ object LayersSubLayersBubbleSettingsColorMappings {
   @scala.inline
   def apply(rangeColorMapping: js.Array[LayersSubLayersBubbleSettingsColorMappingsRangeColorMapping] = null): LayersSubLayersBubbleSettingsColorMappings = {
     val __obj = js.Dynamic.literal()
-    if (rangeColorMapping != null) __obj.updateDynamic("rangeColorMapping")(rangeColorMapping)
+    if (rangeColorMapping != null) __obj.updateDynamic("rangeColorMapping")(rangeColorMapping.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayersSubLayersBubbleSettingsColorMappings]
   }
 }

@@ -45,13 +45,13 @@ object ReposListDeploymentsParams {
     sha: String = null,
     task: String = null
   ): ReposListDeploymentsParams = {
-    val __obj = js.Dynamic.literal(owner = owner, repo = repo)
-    if (environment != null) __obj.updateDynamic("environment")(environment)
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
+    if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (per_page != null) __obj.updateDynamic("per_page")(per_page.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref)
-    if (sha != null) __obj.updateDynamic("sha")(sha)
-    if (task != null) __obj.updateDynamic("task")(task)
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (sha != null) __obj.updateDynamic("sha")(sha.asInstanceOf[js.Any])
+    if (task != null) __obj.updateDynamic("task")(task.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposListDeploymentsParams]
   }
 }

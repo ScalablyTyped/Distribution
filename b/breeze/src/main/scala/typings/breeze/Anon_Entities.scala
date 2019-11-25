@@ -15,7 +15,7 @@ trait Anon_Entities extends js.Object {
 object Anon_Entities {
   @scala.inline
   def apply(entities: js.Array[Entity], tempKeyMapping: StringDictionary[EntityKey]): Anon_Entities = {
-    val __obj = js.Dynamic.literal(entities = entities, tempKeyMapping = tempKeyMapping)
+    val __obj = js.Dynamic.literal(entities = entities.asInstanceOf[js.Any], tempKeyMapping = tempKeyMapping.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Entities]
   }

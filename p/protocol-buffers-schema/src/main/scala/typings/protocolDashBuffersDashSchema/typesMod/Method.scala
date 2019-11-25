@@ -23,7 +23,7 @@ object Method {
     output_type: String,
     server_streaming: Boolean
   ): Method = {
-    val __obj = js.Dynamic.literal(client_streaming = client_streaming, input_type = input_type, name = name, options = options, output_type = output_type, server_streaming = server_streaming)
+    val __obj = js.Dynamic.literal(client_streaming = client_streaming.asInstanceOf[js.Any], input_type = input_type.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], output_type = output_type.asInstanceOf[js.Any], server_streaming = server_streaming.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Method]
   }

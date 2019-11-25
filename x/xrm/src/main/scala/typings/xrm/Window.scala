@@ -14,7 +14,7 @@ trait Window extends js.Object {
 object Window {
   @scala.inline
   def apply(GetGlobalContext: () => GlobalContext, Xrm: XrmStatic): Window = {
-    val __obj = js.Dynamic.literal(GetGlobalContext = js.Any.fromFunction0(GetGlobalContext), Xrm = Xrm)
+    val __obj = js.Dynamic.literal(GetGlobalContext = js.Any.fromFunction0(GetGlobalContext), Xrm = Xrm.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Window]
   }

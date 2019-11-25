@@ -13,8 +13,8 @@ object LiveChatPollVotedDetails {
   @scala.inline
   def apply(itemId: String = null, pollId: String = null): LiveChatPollVotedDetails = {
     val __obj = js.Dynamic.literal()
-    if (itemId != null) __obj.updateDynamic("itemId")(itemId)
-    if (pollId != null) __obj.updateDynamic("pollId")(pollId)
+    if (itemId != null) __obj.updateDynamic("itemId")(itemId.asInstanceOf[js.Any])
+    if (pollId != null) __obj.updateDynamic("pollId")(pollId.asInstanceOf[js.Any])
     __obj.asInstanceOf[LiveChatPollVotedDetails]
   }
 }

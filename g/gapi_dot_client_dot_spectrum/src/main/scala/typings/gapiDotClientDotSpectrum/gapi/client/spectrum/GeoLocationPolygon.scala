@@ -22,7 +22,7 @@ object GeoLocationPolygon {
   @scala.inline
   def apply(exterior: js.Array[GeoLocationPoint] = null): GeoLocationPolygon = {
     val __obj = js.Dynamic.literal()
-    if (exterior != null) __obj.updateDynamic("exterior")(exterior)
+    if (exterior != null) __obj.updateDynamic("exterior")(exterior.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoLocationPolygon]
   }
 }

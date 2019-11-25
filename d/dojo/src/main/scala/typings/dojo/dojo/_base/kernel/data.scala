@@ -41,7 +41,7 @@ object data {
     api: js.Object,
     util: js.Object
   ): data = {
-    val __obj = js.Dynamic.literal(ItemFileReadStore = js.Any.fromFunction0(ItemFileReadStore), ItemFileWriteStore = js.Any.fromFunction0(ItemFileWriteStore), ObjectStore = js.Any.fromFunction0(ObjectStore), api = api, util = util)
+    val __obj = js.Dynamic.literal(ItemFileReadStore = js.Any.fromFunction0(ItemFileReadStore), ItemFileWriteStore = js.Any.fromFunction0(ItemFileWriteStore), ObjectStore = js.Any.fromFunction0(ObjectStore), api = api.asInstanceOf[js.Any], util = util.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[data]
   }

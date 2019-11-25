@@ -38,9 +38,9 @@ object IOptions {
   ): IOptions = {
     val __obj = js.Dynamic.literal()
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (!js.isUndefined(trusted)) __obj.updateDynamic("trusted")(trusted)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (!js.isUndefined(trusted)) __obj.updateDynamic("trusted")(trusted.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

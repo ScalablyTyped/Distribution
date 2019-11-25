@@ -78,11 +78,11 @@ object IOptions {
     source: js.Any = null,
     supportedActions: SupportedActions = null
   ): IOptions = {
-    val __obj = js.Dynamic.literal(mimeData = mimeData)
-    if (dragImage != null) __obj.updateDynamic("dragImage")(dragImage)
-    if (proposedAction != null) __obj.updateDynamic("proposedAction")(proposedAction)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (supportedActions != null) __obj.updateDynamic("supportedActions")(supportedActions)
+    val __obj = js.Dynamic.literal(mimeData = mimeData.asInstanceOf[js.Any])
+    if (dragImage != null) __obj.updateDynamic("dragImage")(dragImage.asInstanceOf[js.Any])
+    if (proposedAction != null) __obj.updateDynamic("proposedAction")(proposedAction.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (supportedActions != null) __obj.updateDynamic("supportedActions")(supportedActions.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

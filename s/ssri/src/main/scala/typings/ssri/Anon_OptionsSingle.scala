@@ -18,9 +18,9 @@ object Anon_OptionsSingle {
     strict: js.UndefOr[Boolean] = js.undefined
   ): Anon_OptionsSingle = {
     val __obj = js.Dynamic.literal()
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single)
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_OptionsSingle]
   }
 }

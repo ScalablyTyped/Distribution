@@ -27,14 +27,14 @@ object NavigationPropertyOptions {
     nameOnServer: String = null,
     validators: js.Array[Validator] = null
   ): NavigationPropertyOptions = {
-    val __obj = js.Dynamic.literal(entityTypeName = entityTypeName)
-    if (associationName != null) __obj.updateDynamic("associationName")(associationName)
-    if (foreignKeyNames != null) __obj.updateDynamic("foreignKeyNames")(foreignKeyNames)
-    if (foreignKeyNamesOnServer != null) __obj.updateDynamic("foreignKeyNamesOnServer")(foreignKeyNamesOnServer)
-    if (!js.isUndefined(isScalar)) __obj.updateDynamic("isScalar")(isScalar)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (nameOnServer != null) __obj.updateDynamic("nameOnServer")(nameOnServer)
-    if (validators != null) __obj.updateDynamic("validators")(validators)
+    val __obj = js.Dynamic.literal(entityTypeName = entityTypeName.asInstanceOf[js.Any])
+    if (associationName != null) __obj.updateDynamic("associationName")(associationName.asInstanceOf[js.Any])
+    if (foreignKeyNames != null) __obj.updateDynamic("foreignKeyNames")(foreignKeyNames.asInstanceOf[js.Any])
+    if (foreignKeyNamesOnServer != null) __obj.updateDynamic("foreignKeyNamesOnServer")(foreignKeyNamesOnServer.asInstanceOf[js.Any])
+    if (!js.isUndefined(isScalar)) __obj.updateDynamic("isScalar")(isScalar.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (nameOnServer != null) __obj.updateDynamic("nameOnServer")(nameOnServer.asInstanceOf[js.Any])
+    if (validators != null) __obj.updateDynamic("validators")(validators.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationPropertyOptions]
   }
 }

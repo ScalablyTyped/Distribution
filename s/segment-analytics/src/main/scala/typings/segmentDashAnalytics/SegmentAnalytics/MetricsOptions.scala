@@ -21,7 +21,7 @@ object MetricsOptions {
   ): MetricsOptions = {
     val __obj = js.Dynamic.literal()
     if (flushTimer != null) __obj.updateDynamic("flushTimer")(flushTimer.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host)
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (maxQueueSize != null) __obj.updateDynamic("maxQueueSize")(maxQueueSize.asInstanceOf[js.Any])
     if (sampleRate != null) __obj.updateDynamic("sampleRate")(sampleRate.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricsOptions]

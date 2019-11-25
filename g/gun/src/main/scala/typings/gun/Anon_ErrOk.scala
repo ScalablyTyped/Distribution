@@ -12,8 +12,8 @@ trait Anon_ErrOk extends js.Object {
 object Anon_ErrOk {
   @scala.inline
   def apply(ok: String, err: js.UndefOr[scala.Nothing] = js.undefined): Anon_ErrOk = {
-    val __obj = js.Dynamic.literal(ok = ok)
-    if (!js.isUndefined(err)) __obj.updateDynamic("err")(err)
+    val __obj = js.Dynamic.literal(ok = ok.asInstanceOf[js.Any])
+    if (!js.isUndefined(err)) __obj.updateDynamic("err")(err.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ErrOk]
   }
 }

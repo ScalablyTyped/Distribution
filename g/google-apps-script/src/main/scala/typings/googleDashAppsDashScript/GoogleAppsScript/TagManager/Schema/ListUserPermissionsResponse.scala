@@ -13,8 +13,8 @@ object ListUserPermissionsResponse {
   @scala.inline
   def apply(nextPageToken: String = null, userPermission: js.Array[UserPermission] = null): ListUserPermissionsResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (userPermission != null) __obj.updateDynamic("userPermission")(userPermission)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (userPermission != null) __obj.updateDynamic("userPermission")(userPermission.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListUserPermissionsResponse]
   }
 }

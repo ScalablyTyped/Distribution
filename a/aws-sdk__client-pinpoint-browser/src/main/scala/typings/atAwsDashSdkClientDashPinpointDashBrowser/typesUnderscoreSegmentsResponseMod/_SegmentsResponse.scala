@@ -22,7 +22,7 @@ object _SegmentsResponse {
   def apply(Item: js.Array[_SegmentResponse] | Iterable[_SegmentResponse] = null, NextToken: String = null): _SegmentsResponse = {
     val __obj = js.Dynamic.literal()
     if (Item != null) __obj.updateDynamic("Item")(Item.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[_SegmentsResponse]
   }
 }

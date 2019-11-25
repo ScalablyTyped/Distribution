@@ -13,8 +13,8 @@ object MediaKeySystemMediaCapability {
   @scala.inline
   def apply(contentType: java.lang.String = null, robustness: java.lang.String = null): MediaKeySystemMediaCapability = {
     val __obj = js.Dynamic.literal()
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
-    if (robustness != null) __obj.updateDynamic("robustness")(robustness)
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
+    if (robustness != null) __obj.updateDynamic("robustness")(robustness.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaKeySystemMediaCapability]
   }
 }

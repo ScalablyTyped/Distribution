@@ -15,8 +15,8 @@ object Anon_Owner {
   @scala.inline
   def apply(owner: String = null, resource: Uri = null, take: Int | Double = null): Anon_Owner = {
     val __obj = js.Dynamic.literal()
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (resource != null) __obj.updateDynamic("resource")(resource)
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     if (take != null) __obj.updateDynamic("take")(take.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Owner]
   }

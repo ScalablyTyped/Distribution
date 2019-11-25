@@ -33,8 +33,8 @@ object StartTagToken {
     tagName: String,
     sourceCodeLocation: StartTagLocation = null
   ): StartTagToken = {
-    val __obj = js.Dynamic.literal(attrs = attrs, selfClosing = selfClosing, tagName = tagName)
-    if (sourceCodeLocation != null) __obj.updateDynamic("sourceCodeLocation")(sourceCodeLocation)
+    val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], selfClosing = selfClosing.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any])
+    if (sourceCodeLocation != null) __obj.updateDynamic("sourceCodeLocation")(sourceCodeLocation.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartTagToken]
   }
 }

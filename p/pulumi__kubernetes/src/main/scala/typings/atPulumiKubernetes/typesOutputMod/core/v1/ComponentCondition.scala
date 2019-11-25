@@ -30,8 +30,8 @@ trait ComponentCondition extends js.Object {
 object ComponentCondition {
   @scala.inline
   def apply(error: String, message: String, status: String, `type`: String): ComponentCondition = {
-    val __obj = js.Dynamic.literal(error = error, message = message, status = status)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentCondition]
   }
 }

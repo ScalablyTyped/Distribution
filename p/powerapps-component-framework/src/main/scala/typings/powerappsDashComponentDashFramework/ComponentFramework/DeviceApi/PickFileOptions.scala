@@ -25,7 +25,7 @@ trait PickFileOptions extends js.Object {
 object PickFileOptions {
   @scala.inline
   def apply(accept: String, allowMultipleFiles: Boolean, maximumAllowedFileSize: Double): PickFileOptions = {
-    val __obj = js.Dynamic.literal(accept = accept, allowMultipleFiles = allowMultipleFiles, maximumAllowedFileSize = maximumAllowedFileSize)
+    val __obj = js.Dynamic.literal(accept = accept.asInstanceOf[js.Any], allowMultipleFiles = allowMultipleFiles.asInstanceOf[js.Any], maximumAllowedFileSize = maximumAllowedFileSize.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PickFileOptions]
   }

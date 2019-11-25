@@ -12,7 +12,7 @@ trait Anon_CustomStrings extends js.Object {
 object Anon_CustomStrings {
   @scala.inline
   def apply(custom: Strings): Anon_CustomStrings = {
-    val __obj = js.Dynamic.literal(custom = custom)
+    val __obj = js.Dynamic.literal(custom = custom.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CustomStrings]
   }

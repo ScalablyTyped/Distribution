@@ -25,7 +25,7 @@ object ScreenshotDefaultsOptions {
     scale: Boolean,
     screenshotOnRunFailure: Boolean
   ): ScreenshotDefaultsOptions = {
-    val __obj = js.Dynamic.literal(afterScreenshot = js.Any.fromFunction1(afterScreenshot), beforeScreenshot = js.Any.fromFunction1(beforeScreenshot), blackout = blackout, capture = capture.asInstanceOf[js.Any], clip = clip, disableTimersAndAnimations = disableTimersAndAnimations, padding = padding.asInstanceOf[js.Any], scale = scale, screenshotOnRunFailure = screenshotOnRunFailure)
+    val __obj = js.Dynamic.literal(afterScreenshot = js.Any.fromFunction1(afterScreenshot), beforeScreenshot = js.Any.fromFunction1(beforeScreenshot), blackout = blackout.asInstanceOf[js.Any], capture = capture.asInstanceOf[js.Any], clip = clip.asInstanceOf[js.Any], disableTimersAndAnimations = disableTimersAndAnimations.asInstanceOf[js.Any], padding = padding.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], screenshotOnRunFailure = screenshotOnRunFailure.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ScreenshotDefaultsOptions]
   }

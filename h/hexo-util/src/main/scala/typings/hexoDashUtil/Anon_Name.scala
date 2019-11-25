@@ -14,7 +14,7 @@ object Anon_Name {
   @scala.inline
   def apply(segments: StringDictionary[String | RegExp] = null): Anon_Name = {
     val __obj = js.Dynamic.literal()
-    if (segments != null) __obj.updateDynamic("segments")(segments)
+    if (segments != null) __obj.updateDynamic("segments")(segments.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Name]
   }
 }

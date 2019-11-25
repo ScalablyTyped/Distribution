@@ -13,7 +13,7 @@ object PdfHeadingDetection {
   @scala.inline
   def apply(fonts: js.Array[FontSetting] = null): PdfHeadingDetection = {
     val __obj = js.Dynamic.literal()
-    if (fonts != null) __obj.updateDynamic("fonts")(fonts)
+    if (fonts != null) __obj.updateDynamic("fonts")(fonts.asInstanceOf[js.Any])
     __obj.asInstanceOf[PdfHeadingDetection]
   }
 }

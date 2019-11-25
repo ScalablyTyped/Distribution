@@ -16,7 +16,7 @@ trait _UnmarshalledBucketLifecycleConfiguration extends _BucketLifecycleConfigur
 object _UnmarshalledBucketLifecycleConfiguration {
   @scala.inline
   def apply(Rules: js.Array[_UnmarshalledLifecycleRule]): _UnmarshalledBucketLifecycleConfiguration = {
-    val __obj = js.Dynamic.literal(Rules = Rules)
+    val __obj = js.Dynamic.literal(Rules = Rules.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_UnmarshalledBucketLifecycleConfiguration]
   }

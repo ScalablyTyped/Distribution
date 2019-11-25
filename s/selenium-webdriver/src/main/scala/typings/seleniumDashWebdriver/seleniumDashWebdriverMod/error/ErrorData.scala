@@ -17,8 +17,8 @@ object ErrorData {
     message: String,
     StringDictionary: /* key */ StringDictionary[String | Double] = null
   ): ErrorData = {
-    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], message = message)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ErrorData]
   }
 }

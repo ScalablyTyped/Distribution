@@ -22,11 +22,11 @@ object Anon_BannerImageUrl {
     title: String = null
   ): Anon_BannerImageUrl = {
     val __obj = js.Dynamic.literal()
-    if (bannerImageUrl != null) __obj.updateDynamic("bannerImageUrl")(bannerImageUrl)
-    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
-    if (seriesId != null) __obj.updateDynamic("seriesId")(seriesId)
-    if (seriesType != null) __obj.updateDynamic("seriesType")(seriesType)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (bannerImageUrl != null) __obj.updateDynamic("bannerImageUrl")(bannerImageUrl.asInstanceOf[js.Any])
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
+    if (seriesId != null) __obj.updateDynamic("seriesId")(seriesId.asInstanceOf[js.Any])
+    if (seriesType != null) __obj.updateDynamic("seriesType")(seriesType.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BannerImageUrl]
   }
 }

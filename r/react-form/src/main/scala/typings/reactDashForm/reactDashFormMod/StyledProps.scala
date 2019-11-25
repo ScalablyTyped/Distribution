@@ -23,13 +23,13 @@ object StyledProps {
     touchValidation: js.UndefOr[Boolean] = js.undefined
   ): StyledProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(errorBefore)) __obj.updateDynamic("errorBefore")(errorBefore)
+    if (!js.isUndefined(errorBefore)) __obj.updateDynamic("errorBefore")(errorBefore.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (!js.isUndefined(isForm)) __obj.updateDynamic("isForm")(isForm)
-    if (!js.isUndefined(messageBefore)) __obj.updateDynamic("messageBefore")(messageBefore)
-    if (!js.isUndefined(noMessage)) __obj.updateDynamic("noMessage")(noMessage)
-    if (!js.isUndefined(showErrors)) __obj.updateDynamic("showErrors")(showErrors)
-    if (!js.isUndefined(touchValidation)) __obj.updateDynamic("touchValidation")(touchValidation)
+    if (!js.isUndefined(isForm)) __obj.updateDynamic("isForm")(isForm.asInstanceOf[js.Any])
+    if (!js.isUndefined(messageBefore)) __obj.updateDynamic("messageBefore")(messageBefore.asInstanceOf[js.Any])
+    if (!js.isUndefined(noMessage)) __obj.updateDynamic("noMessage")(noMessage.asInstanceOf[js.Any])
+    if (!js.isUndefined(showErrors)) __obj.updateDynamic("showErrors")(showErrors.asInstanceOf[js.Any])
+    if (!js.isUndefined(touchValidation)) __obj.updateDynamic("touchValidation")(touchValidation.asInstanceOf[js.Any])
     __obj.asInstanceOf[StyledProps]
   }
 }

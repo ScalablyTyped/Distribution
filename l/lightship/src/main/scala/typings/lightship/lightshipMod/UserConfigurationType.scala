@@ -25,9 +25,9 @@ object UserConfigurationType {
     timeout: Int | Double = null
   ): UserConfigurationType = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(detectKubernetes)) __obj.updateDynamic("detectKubernetes")(detectKubernetes)
+    if (!js.isUndefined(detectKubernetes)) __obj.updateDynamic("detectKubernetes")(detectKubernetes.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (signals != null) __obj.updateDynamic("signals")(signals)
+    if (signals != null) __obj.updateDynamic("signals")(signals.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserConfigurationType]
   }

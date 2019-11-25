@@ -13,8 +13,8 @@ object Anon_Namespaces {
   @scala.inline
   def apply(namespaces: js.Array[String] = null, `override`: js.UndefOr[Boolean] = js.undefined): Anon_Namespaces = {
     val __obj = js.Dynamic.literal()
-    if (namespaces != null) __obj.updateDynamic("namespaces")(namespaces)
-    if (!js.isUndefined(`override`)) __obj.updateDynamic("override")(`override`)
+    if (namespaces != null) __obj.updateDynamic("namespaces")(namespaces.asInstanceOf[js.Any])
+    if (!js.isUndefined(`override`)) __obj.updateDynamic("override")(`override`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Namespaces]
   }
 }

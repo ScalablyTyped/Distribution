@@ -35,10 +35,10 @@ object Anon_Count {
   ): Anon_Count = {
     val __obj = js.Dynamic.literal()
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (event != null) __obj.updateDynamic("event")(event)
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
     if (pageCount != null) __obj.updateDynamic("pageCount")(pageCount.asInstanceOf[js.Any])
     if (screenCount != null) __obj.updateDynamic("screenCount")(screenCount.asInstanceOf[js.Any])
-    if (tpl != null) __obj.updateDynamic("tpl")(tpl)
+    if (tpl != null) __obj.updateDynamic("tpl")(tpl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Count]
   }
 }

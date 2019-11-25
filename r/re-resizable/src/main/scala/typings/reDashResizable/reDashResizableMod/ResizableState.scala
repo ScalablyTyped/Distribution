@@ -24,10 +24,10 @@ object ResizableState {
     isResizing: js.UndefOr[Boolean] = js.undefined,
     original: Anon_Height = null
   ): ResizableState = {
-    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], resizeCursor = resizeCursor, width = width.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction)
-    if (!js.isUndefined(isResizing)) __obj.updateDynamic("isResizing")(isResizing)
-    if (original != null) __obj.updateDynamic("original")(original)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], resizeCursor = resizeCursor.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    if (!js.isUndefined(isResizing)) __obj.updateDynamic("isResizing")(isResizing.asInstanceOf[js.Any])
+    if (original != null) __obj.updateDynamic("original")(original.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResizableState]
   }
 }

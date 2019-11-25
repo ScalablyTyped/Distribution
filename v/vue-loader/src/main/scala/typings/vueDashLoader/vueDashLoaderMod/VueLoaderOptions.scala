@@ -40,18 +40,18 @@ object VueLoaderOptions {
     transpileOptions: js.Object = null
   ): VueLoaderOptions = {
     val __obj = js.Dynamic.literal()
-    if (cacheDirectory != null) __obj.updateDynamic("cacheDirectory")(cacheDirectory)
-    if (cacheIdentifier != null) __obj.updateDynamic("cacheIdentifier")(cacheIdentifier)
-    if (compiler != null) __obj.updateDynamic("compiler")(compiler)
-    if (compilerOptions != null) __obj.updateDynamic("compilerOptions")(compilerOptions)
-    if (!js.isUndefined(exposeFilename)) __obj.updateDynamic("exposeFilename")(exposeFilename)
-    if (!js.isUndefined(hotReload)) __obj.updateDynamic("hotReload")(hotReload)
-    if (!js.isUndefined(optimizeSSR)) __obj.updateDynamic("optimizeSSR")(optimizeSSR)
-    if (!js.isUndefined(prettify)) __obj.updateDynamic("prettify")(prettify)
-    if (!js.isUndefined(productionMode)) __obj.updateDynamic("productionMode")(productionMode)
-    if (!js.isUndefined(shadowMode)) __obj.updateDynamic("shadowMode")(shadowMode)
-    if (transformAssetUrls != null) __obj.updateDynamic("transformAssetUrls")(transformAssetUrls)
-    if (transpileOptions != null) __obj.updateDynamic("transpileOptions")(transpileOptions)
+    if (cacheDirectory != null) __obj.updateDynamic("cacheDirectory")(cacheDirectory.asInstanceOf[js.Any])
+    if (cacheIdentifier != null) __obj.updateDynamic("cacheIdentifier")(cacheIdentifier.asInstanceOf[js.Any])
+    if (compiler != null) __obj.updateDynamic("compiler")(compiler.asInstanceOf[js.Any])
+    if (compilerOptions != null) __obj.updateDynamic("compilerOptions")(compilerOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(exposeFilename)) __obj.updateDynamic("exposeFilename")(exposeFilename.asInstanceOf[js.Any])
+    if (!js.isUndefined(hotReload)) __obj.updateDynamic("hotReload")(hotReload.asInstanceOf[js.Any])
+    if (!js.isUndefined(optimizeSSR)) __obj.updateDynamic("optimizeSSR")(optimizeSSR.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettify)) __obj.updateDynamic("prettify")(prettify.asInstanceOf[js.Any])
+    if (!js.isUndefined(productionMode)) __obj.updateDynamic("productionMode")(productionMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(shadowMode)) __obj.updateDynamic("shadowMode")(shadowMode.asInstanceOf[js.Any])
+    if (transformAssetUrls != null) __obj.updateDynamic("transformAssetUrls")(transformAssetUrls.asInstanceOf[js.Any])
+    if (transpileOptions != null) __obj.updateDynamic("transpileOptions")(transpileOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[VueLoaderOptions]
   }
 }

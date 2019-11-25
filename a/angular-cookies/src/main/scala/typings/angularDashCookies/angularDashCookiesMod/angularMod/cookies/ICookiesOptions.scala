@@ -41,10 +41,10 @@ object ICookiesOptions {
     secure: js.UndefOr[Boolean] = js.undefined
   ): ICookiesOptions = {
     val __obj = js.Dynamic.literal()
-    if (domain != null) __obj.updateDynamic("domain")(domain)
+    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
     if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure)
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICookiesOptions]
   }
 }

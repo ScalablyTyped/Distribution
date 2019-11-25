@@ -54,12 +54,12 @@ object ListIdentitiesInput {
     HideDisabled: js.UndefOr[Boolean] = js.undefined,
     NextToken: String = null
   ): ListIdentitiesInput = {
-    val __obj = js.Dynamic.literal(IdentityPoolId = IdentityPoolId, MaxResults = MaxResults)
-    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal)
-    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions)
+    val __obj = js.Dynamic.literal(IdentityPoolId = IdentityPoolId.asInstanceOf[js.Any], MaxResults = MaxResults.asInstanceOf[js.Any])
+    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal.asInstanceOf[js.Any])
+    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions.asInstanceOf[js.Any])
     if ($maxRetries != null) __obj.updateDynamic("$maxRetries")($maxRetries.asInstanceOf[js.Any])
-    if (!js.isUndefined(HideDisabled)) __obj.updateDynamic("HideDisabled")(HideDisabled)
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
+    if (!js.isUndefined(HideDisabled)) __obj.updateDynamic("HideDisabled")(HideDisabled.asInstanceOf[js.Any])
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListIdentitiesInput]
   }
 }

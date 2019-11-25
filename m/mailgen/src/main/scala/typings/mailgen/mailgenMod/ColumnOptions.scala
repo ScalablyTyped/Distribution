@@ -12,7 +12,7 @@ trait ColumnOptions extends js.Object {
 object ColumnOptions {
   @scala.inline
   def apply(customAlignment: js.Any, customWidth: js.Any): ColumnOptions = {
-    val __obj = js.Dynamic.literal(customAlignment = customAlignment, customWidth = customWidth)
+    val __obj = js.Dynamic.literal(customAlignment = customAlignment.asInstanceOf[js.Any], customWidth = customWidth.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ColumnOptions]
   }

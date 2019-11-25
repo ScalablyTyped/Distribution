@@ -12,7 +12,7 @@ trait Anon_SpringVelocityScale extends js.Object {
 object Anon_SpringVelocityScale {
   @scala.inline
   def apply(springVelocityScale: Double, swipeVelocityImpact: Double): Anon_SpringVelocityScale = {
-    val __obj = js.Dynamic.literal(springVelocityScale = springVelocityScale, swipeVelocityImpact = swipeVelocityImpact)
+    val __obj = js.Dynamic.literal(springVelocityScale = springVelocityScale.asInstanceOf[js.Any], swipeVelocityImpact = swipeVelocityImpact.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_SpringVelocityScale]
   }

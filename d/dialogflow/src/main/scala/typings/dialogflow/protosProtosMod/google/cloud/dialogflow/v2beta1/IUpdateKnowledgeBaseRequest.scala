@@ -17,8 +17,8 @@ object IUpdateKnowledgeBaseRequest {
   @scala.inline
   def apply(knowledgeBase: IKnowledgeBase = null, updateMask: IFieldMask = null): IUpdateKnowledgeBaseRequest = {
     val __obj = js.Dynamic.literal()
-    if (knowledgeBase != null) __obj.updateDynamic("knowledgeBase")(knowledgeBase)
-    if (updateMask != null) __obj.updateDynamic("updateMask")(updateMask)
+    if (knowledgeBase != null) __obj.updateDynamic("knowledgeBase")(knowledgeBase.asInstanceOf[js.Any])
+    if (updateMask != null) __obj.updateDynamic("updateMask")(updateMask.asInstanceOf[js.Any])
     __obj.asInstanceOf[IUpdateKnowledgeBaseRequest]
   }
 }

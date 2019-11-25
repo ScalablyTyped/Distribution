@@ -20,3 +20,12 @@ import scala.scalajs.js.annotation._
 */
 trait VectorRenderType extends js.Object
 
+object VectorRenderType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def image: typings.openlayers.openlayersStrings.image = this.cast("image")
+  @scala.inline
+  def vector: typings.openlayers.openlayersStrings.vector = this.cast("vector")
+}
+

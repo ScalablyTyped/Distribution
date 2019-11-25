@@ -27,10 +27,10 @@ object Anon_0 {
     singleTitle: String = null,
     singleURL: String = null
   ): Anon_0 = {
-    val __obj = js.Dynamic.literal(btnOrientation = btnOrientation.asInstanceOf[js.Any], hideAvatar = hideAvatar.asInstanceOf[js.Any], text = text, title = title)
-    if (btns != null) __obj.updateDynamic("btns")(btns)
-    if (singleTitle != null) __obj.updateDynamic("singleTitle")(singleTitle)
-    if (singleURL != null) __obj.updateDynamic("singleURL")(singleURL)
+    val __obj = js.Dynamic.literal(btnOrientation = btnOrientation.asInstanceOf[js.Any], hideAvatar = hideAvatar.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    if (btns != null) __obj.updateDynamic("btns")(btns.asInstanceOf[js.Any])
+    if (singleTitle != null) __obj.updateDynamic("singleTitle")(singleTitle.asInstanceOf[js.Any])
+    if (singleURL != null) __obj.updateDynamic("singleURL")(singleURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_0]
   }
 }

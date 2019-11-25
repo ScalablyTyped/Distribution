@@ -20,8 +20,8 @@ object ScrubberItem {
   @scala.inline
   def apply(icon: NativeImage = null, label: String = null): ScrubberItem = {
     val __obj = js.Dynamic.literal()
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (label != null) __obj.updateDynamic("label")(label)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrubberItem]
   }
 }

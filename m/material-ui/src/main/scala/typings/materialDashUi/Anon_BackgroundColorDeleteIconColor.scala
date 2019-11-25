@@ -24,12 +24,12 @@ object Anon_BackgroundColorDeleteIconColor {
     textColor: String = null
   ): Anon_BackgroundColorDeleteIconColor = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
-    if (deleteIconColor != null) __obj.updateDynamic("deleteIconColor")(deleteIconColor)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (deleteIconColor != null) __obj.updateDynamic("deleteIconColor")(deleteIconColor.asInstanceOf[js.Any])
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
-    if (shadow != null) __obj.updateDynamic("shadow")(shadow)
-    if (textColor != null) __obj.updateDynamic("textColor")(textColor)
+    if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
+    if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BackgroundColorDeleteIconColor]
   }
 }

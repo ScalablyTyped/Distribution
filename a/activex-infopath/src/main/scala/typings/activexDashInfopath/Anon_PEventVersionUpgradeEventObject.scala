@@ -12,7 +12,7 @@ trait Anon_PEventVersionUpgradeEventObject extends js.Object {
 object Anon_PEventVersionUpgradeEventObject {
   @scala.inline
   def apply(pEvent: VersionUpgradeEventObject): Anon_PEventVersionUpgradeEventObject = {
-    val __obj = js.Dynamic.literal(pEvent = pEvent)
+    val __obj = js.Dynamic.literal(pEvent = pEvent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_PEventVersionUpgradeEventObject]
   }

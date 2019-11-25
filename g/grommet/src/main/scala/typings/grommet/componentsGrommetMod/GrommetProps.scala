@@ -27,12 +27,12 @@ object GrommetProps {
     userAgent: String = null
   ): GrommetProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cssVars)) __obj.updateDynamic("cssVars")(cssVars)
-    if (!js.isUndefined(full)) __obj.updateDynamic("full")(full)
-    if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (!js.isUndefined(cssVars)) __obj.updateDynamic("cssVars")(cssVars.asInstanceOf[js.Any])
+    if (!js.isUndefined(full)) __obj.updateDynamic("full")(full.asInstanceOf[js.Any])
+    if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (themeMode != null) __obj.updateDynamic("themeMode")(themeMode.asInstanceOf[js.Any])
-    if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent)
+    if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent.asInstanceOf[js.Any])
     __obj.asInstanceOf[GrommetProps]
   }
 }

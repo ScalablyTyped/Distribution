@@ -22,8 +22,8 @@ object Anon_ActionAdd {
     element: Element,
     StringDictionary: /* propName */ StringDictionary[js.Any] = null
   ): Anon_ActionAdd = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], element = element)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_ActionAdd]
   }
 }

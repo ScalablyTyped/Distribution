@@ -20,10 +20,10 @@ object IDrilldownOptions {
     wrapper: String = null
   ): IDrilldownOptions = {
     val __obj = js.Dynamic.literal()
-    if (backButton != null) __obj.updateDynamic("backButton")(backButton)
-    if (!js.isUndefined(closeOnClick)) __obj.updateDynamic("closeOnClick")(closeOnClick)
-    if (!js.isUndefined(parentLink)) __obj.updateDynamic("parentLink")(parentLink)
-    if (wrapper != null) __obj.updateDynamic("wrapper")(wrapper)
+    if (backButton != null) __obj.updateDynamic("backButton")(backButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeOnClick)) __obj.updateDynamic("closeOnClick")(closeOnClick.asInstanceOf[js.Any])
+    if (!js.isUndefined(parentLink)) __obj.updateDynamic("parentLink")(parentLink.asInstanceOf[js.Any])
+    if (wrapper != null) __obj.updateDynamic("wrapper")(wrapper.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDrilldownOptions]
   }
 }

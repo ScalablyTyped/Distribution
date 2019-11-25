@@ -18,7 +18,7 @@ trait TypeofRangeBoundTextBox extends js.Object {
 object TypeofRangeBoundTextBox {
   @scala.inline
   def apply(__Constraints: Instantiable0[__Constraints]): TypeofRangeBoundTextBox = {
-    val __obj = js.Dynamic.literal(__Constraints = __Constraints)
+    val __obj = js.Dynamic.literal(__Constraints = __Constraints.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeofRangeBoundTextBox]
   }

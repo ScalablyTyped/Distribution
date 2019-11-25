@@ -86,20 +86,20 @@ object GeocodedAddress {
     zipcode: String = null
   ): GeocodedAddress = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address)
-    if (city != null) __obj.updateDynamic("city")(city)
-    if (country != null) __obj.updateDynamic("country")(country)
-    if (countryCode != null) __obj.updateDynamic("countryCode")(countryCode)
-    if (country_code != null) __obj.updateDynamic("country_code")(country_code)
-    if (displayAddress != null) __obj.updateDynamic("displayAddress")(displayAddress)
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    if (city != null) __obj.updateDynamic("city")(city.asInstanceOf[js.Any])
+    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
+    if (countryCode != null) __obj.updateDynamic("countryCode")(countryCode.asInstanceOf[js.Any])
+    if (country_code != null) __obj.updateDynamic("country_code")(country_code.asInstanceOf[js.Any])
+    if (displayAddress != null) __obj.updateDynamic("displayAddress")(displayAddress.asInstanceOf[js.Any])
     if (latitude != null) __obj.updateDynamic("latitude")(latitude.asInstanceOf[js.Any])
     if (longitude != null) __obj.updateDynamic("longitude")(longitude.asInstanceOf[js.Any])
-    if (postalCode != null) __obj.updateDynamic("postalCode")(postalCode)
-    if (region1 != null) __obj.updateDynamic("region1")(region1)
-    if (region2 != null) __obj.updateDynamic("region2")(region2)
-    if (street != null) __obj.updateDynamic("street")(street)
-    if (street1 != null) __obj.updateDynamic("street1")(street1)
-    if (zipcode != null) __obj.updateDynamic("zipcode")(zipcode)
+    if (postalCode != null) __obj.updateDynamic("postalCode")(postalCode.asInstanceOf[js.Any])
+    if (region1 != null) __obj.updateDynamic("region1")(region1.asInstanceOf[js.Any])
+    if (region2 != null) __obj.updateDynamic("region2")(region2.asInstanceOf[js.Any])
+    if (street != null) __obj.updateDynamic("street")(street.asInstanceOf[js.Any])
+    if (street1 != null) __obj.updateDynamic("street1")(street1.asInstanceOf[js.Any])
+    if (zipcode != null) __obj.updateDynamic("zipcode")(zipcode.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeocodedAddress]
   }
 }

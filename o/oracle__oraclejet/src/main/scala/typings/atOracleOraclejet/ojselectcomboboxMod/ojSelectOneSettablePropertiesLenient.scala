@@ -13,7 +13,7 @@ object ojSelectOneSettablePropertiesLenient {
   @scala.inline
   def apply[K, D](StringDictionary: /* key */ StringDictionary[js.Any] = null): ojSelectOneSettablePropertiesLenient[K, D] = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ojSelectOneSettablePropertiesLenient[K, D]]
   }
 }

@@ -20,7 +20,7 @@ object EXT_color_buffer_half_float {
     RGBA16F_EXT: Double,
     UNSIGNED_NORMALIZED_EXT: Double
   ): EXT_color_buffer_half_float = {
-    val __obj = js.Dynamic.literal(FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT = FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT, RGB16F_EXT = RGB16F_EXT, RGBA16F_EXT = RGBA16F_EXT, UNSIGNED_NORMALIZED_EXT = UNSIGNED_NORMALIZED_EXT)
+    val __obj = js.Dynamic.literal(FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT = FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT.asInstanceOf[js.Any], RGB16F_EXT = RGB16F_EXT.asInstanceOf[js.Any], RGBA16F_EXT = RGBA16F_EXT.asInstanceOf[js.Any], UNSIGNED_NORMALIZED_EXT = UNSIGNED_NORMALIZED_EXT.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EXT_color_buffer_half_float]
   }

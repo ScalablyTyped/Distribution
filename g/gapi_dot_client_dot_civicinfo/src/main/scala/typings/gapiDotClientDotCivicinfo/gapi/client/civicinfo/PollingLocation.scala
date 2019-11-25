@@ -42,15 +42,15 @@ object PollingLocation {
     voterServices: String = null
   ): PollingLocation = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address)
-    if (endDate != null) __obj.updateDynamic("endDate")(endDate)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (notes != null) __obj.updateDynamic("notes")(notes)
-    if (pollingHours != null) __obj.updateDynamic("pollingHours")(pollingHours)
-    if (sources != null) __obj.updateDynamic("sources")(sources)
-    if (startDate != null) __obj.updateDynamic("startDate")(startDate)
-    if (voterServices != null) __obj.updateDynamic("voterServices")(voterServices)
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
+    if (pollingHours != null) __obj.updateDynamic("pollingHours")(pollingHours.asInstanceOf[js.Any])
+    if (sources != null) __obj.updateDynamic("sources")(sources.asInstanceOf[js.Any])
+    if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
+    if (voterServices != null) __obj.updateDynamic("voterServices")(voterServices.asInstanceOf[js.Any])
     __obj.asInstanceOf[PollingLocation]
   }
 }

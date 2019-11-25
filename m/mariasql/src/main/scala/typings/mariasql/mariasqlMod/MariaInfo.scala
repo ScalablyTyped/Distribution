@@ -13,7 +13,7 @@ trait MariaInfo extends js.Object {
 object MariaInfo {
   @scala.inline
   def apply(affectedRows: Double, insertId: Double, numRows: Double): MariaInfo = {
-    val __obj = js.Dynamic.literal(affectedRows = affectedRows, insertId = insertId, numRows = numRows)
+    val __obj = js.Dynamic.literal(affectedRows = affectedRows.asInstanceOf[js.Any], insertId = insertId.asInstanceOf[js.Any], numRows = numRows.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MariaInfo]
   }

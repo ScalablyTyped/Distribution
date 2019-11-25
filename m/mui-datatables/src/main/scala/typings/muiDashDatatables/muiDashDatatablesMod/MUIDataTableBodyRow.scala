@@ -21,11 +21,11 @@ object MUIDataTableBodyRow {
     onClick: /* args */ js.Any => _ = null,
     rowSelected: js.UndefOr[Boolean] = js.undefined
   ): MUIDataTableBodyRow = {
-    val __obj = js.Dynamic.literal(options = options)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (classes != null) __obj.updateDynamic("classes")(classes)
+    val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (!js.isUndefined(rowSelected)) __obj.updateDynamic("rowSelected")(rowSelected)
+    if (!js.isUndefined(rowSelected)) __obj.updateDynamic("rowSelected")(rowSelected.asInstanceOf[js.Any])
     __obj.asInstanceOf[MUIDataTableBodyRow]
   }
 }

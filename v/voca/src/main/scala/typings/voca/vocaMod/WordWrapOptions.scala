@@ -20,9 +20,9 @@ object WordWrapOptions {
     width: Int | Double = null
   ): WordWrapOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cut)) __obj.updateDynamic("cut")(cut)
-    if (indent != null) __obj.updateDynamic("indent")(indent)
-    if (newLine != null) __obj.updateDynamic("newLine")(newLine)
+    if (!js.isUndefined(cut)) __obj.updateDynamic("cut")(cut.asInstanceOf[js.Any])
+    if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
+    if (newLine != null) __obj.updateDynamic("newLine")(newLine.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[WordWrapOptions]
   }

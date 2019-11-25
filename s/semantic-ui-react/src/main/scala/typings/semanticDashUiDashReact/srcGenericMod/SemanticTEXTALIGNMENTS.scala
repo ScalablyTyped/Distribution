@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait SemanticTEXTALIGNMENTS extends js.Object
 
+object SemanticTEXTALIGNMENTS {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def center: typings.semanticDashUiDashReact.semanticDashUiDashReactStrings.center = this.cast("center")
+  @scala.inline
+  def justified: typings.semanticDashUiDashReact.semanticDashUiDashReactStrings.justified = this.cast("justified")
+  @scala.inline
+  def left: typings.semanticDashUiDashReact.semanticDashUiDashReactStrings.left = this.cast("left")
+  @scala.inline
+  def right: typings.semanticDashUiDashReact.semanticDashUiDashReactStrings.right = this.cast("right")
+}
+

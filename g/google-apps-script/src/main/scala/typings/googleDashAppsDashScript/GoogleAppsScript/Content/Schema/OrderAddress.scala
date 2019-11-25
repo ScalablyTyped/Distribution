@@ -28,14 +28,14 @@ object OrderAddress {
     streetAddress: js.Array[String] = null
   ): OrderAddress = {
     val __obj = js.Dynamic.literal()
-    if (country != null) __obj.updateDynamic("country")(country)
-    if (fullAddress != null) __obj.updateDynamic("fullAddress")(fullAddress)
-    if (!js.isUndefined(isPostOfficeBox)) __obj.updateDynamic("isPostOfficeBox")(isPostOfficeBox)
-    if (locality != null) __obj.updateDynamic("locality")(locality)
-    if (postalCode != null) __obj.updateDynamic("postalCode")(postalCode)
-    if (recipientName != null) __obj.updateDynamic("recipientName")(recipientName)
-    if (region != null) __obj.updateDynamic("region")(region)
-    if (streetAddress != null) __obj.updateDynamic("streetAddress")(streetAddress)
+    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
+    if (fullAddress != null) __obj.updateDynamic("fullAddress")(fullAddress.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPostOfficeBox)) __obj.updateDynamic("isPostOfficeBox")(isPostOfficeBox.asInstanceOf[js.Any])
+    if (locality != null) __obj.updateDynamic("locality")(locality.asInstanceOf[js.Any])
+    if (postalCode != null) __obj.updateDynamic("postalCode")(postalCode.asInstanceOf[js.Any])
+    if (recipientName != null) __obj.updateDynamic("recipientName")(recipientName.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    if (streetAddress != null) __obj.updateDynamic("streetAddress")(streetAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderAddress]
   }
 }

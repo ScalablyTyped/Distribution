@@ -11,7 +11,7 @@ trait TagStackItem extends js.Object {
   var data: Buffer | Null
   var end: Double
   var id: ReturnType[js.Function1[/* tagName */ String, Double | Null]]
-  var name: /* import warning: ImportType.apply Failed type conversion: ebml.ebml.EBMLTagSchema['name'] */ js.Any
+  var name: /* import warning: importer.ImportType#apply Failed type conversion: ebml.ebml.EBMLTagSchema['name'] */ js.Any
 }
 
 object TagStackItem {
@@ -20,11 +20,11 @@ object TagStackItem {
     children: js.Array[TagStackItem],
     end: Double,
     id: ReturnType[js.Function1[/* tagName */ String, Double | Null]],
-    name: /* import warning: ImportType.apply Failed type conversion: ebml.ebml.EBMLTagSchema['name'] */ js.Any,
+    name: /* import warning: importer.ImportType#apply Failed type conversion: ebml.ebml.EBMLTagSchema['name'] */ js.Any,
     data: Buffer = null
   ): TagStackItem = {
-    val __obj = js.Dynamic.literal(children = children, end = end, id = id, name = name)
-    if (data != null) __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     __obj.asInstanceOf[TagStackItem]
   }
 }

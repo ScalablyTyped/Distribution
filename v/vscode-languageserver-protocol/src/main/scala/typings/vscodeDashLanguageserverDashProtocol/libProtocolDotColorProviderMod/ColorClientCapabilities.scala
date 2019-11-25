@@ -16,7 +16,7 @@ object ColorClientCapabilities {
   @scala.inline
   def apply(textDocument: Anon_ColorProvider = null): ColorClientCapabilities = {
     val __obj = js.Dynamic.literal()
-    if (textDocument != null) __obj.updateDynamic("textDocument")(textDocument)
+    if (textDocument != null) __obj.updateDynamic("textDocument")(textDocument.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColorClientCapabilities]
   }
 }

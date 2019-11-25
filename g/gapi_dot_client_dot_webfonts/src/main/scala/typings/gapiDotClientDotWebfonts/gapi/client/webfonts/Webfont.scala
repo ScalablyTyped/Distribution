@@ -37,14 +37,14 @@ object Webfont {
     version: String = null
   ): Webfont = {
     val __obj = js.Dynamic.literal()
-    if (category != null) __obj.updateDynamic("category")(category)
-    if (family != null) __obj.updateDynamic("family")(family)
-    if (files != null) __obj.updateDynamic("files")(files)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (lastModified != null) __obj.updateDynamic("lastModified")(lastModified)
-    if (subsets != null) __obj.updateDynamic("subsets")(subsets)
-    if (variants != null) __obj.updateDynamic("variants")(variants)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
+    if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
+    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (lastModified != null) __obj.updateDynamic("lastModified")(lastModified.asInstanceOf[js.Any])
+    if (subsets != null) __obj.updateDynamic("subsets")(subsets.asInstanceOf[js.Any])
+    if (variants != null) __obj.updateDynamic("variants")(variants.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Webfont]
   }
 }

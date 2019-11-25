@@ -13,8 +13,8 @@ trait Anon_Deleted extends js.Object {
 object Anon_Deleted {
   @scala.inline
   def apply(rev: RevisionId, deleted: js.UndefOr[Boolean] = js.undefined): Anon_Deleted = {
-    val __obj = js.Dynamic.literal(rev = rev)
-    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted)
+    val __obj = js.Dynamic.literal(rev = rev.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Deleted]
   }
 }

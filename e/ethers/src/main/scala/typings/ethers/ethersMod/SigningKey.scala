@@ -1,7 +1,6 @@
 package typings.ethers.ethersMod
 
 import typings.ethers.distTypesUtilsTypesMod.Arrayish
-import typings.ethers.distTypesUtilsTypesMod.HDNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,6 +10,6 @@ import scala.scalajs.js.annotation._
 class SigningKey protected ()
   extends typings.ethers.distTypesEthersMod.SigningKey {
   def this(privateKey: Arrayish) = this()
-  def this(privateKey: HDNode) = this()
+  def this(privateKey: typings.ethers.distTypesUtilsTypesMod.HDNode) = this()
 }
 

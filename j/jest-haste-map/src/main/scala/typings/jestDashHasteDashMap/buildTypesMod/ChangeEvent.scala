@@ -18,7 +18,7 @@ object ChangeEvent {
     hasteFS: default,
     moduleMap: typings.jestDashHasteDashMap.buildModuleMapMod.default
   ): ChangeEvent = {
-    val __obj = js.Dynamic.literal(eventsQueue = eventsQueue, hasteFS = hasteFS, moduleMap = moduleMap)
+    val __obj = js.Dynamic.literal(eventsQueue = eventsQueue.asInstanceOf[js.Any], hasteFS = hasteFS.asInstanceOf[js.Any], moduleMap = moduleMap.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChangeEvent]
   }

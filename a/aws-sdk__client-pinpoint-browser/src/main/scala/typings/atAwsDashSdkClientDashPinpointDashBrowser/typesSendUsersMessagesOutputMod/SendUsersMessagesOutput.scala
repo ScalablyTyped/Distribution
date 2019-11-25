@@ -22,7 +22,7 @@ trait SendUsersMessagesOutput extends OutputTypesUnion {
 object SendUsersMessagesOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, SendUsersMessageResponse: _UnmarshalledSendUsersMessageResponse): SendUsersMessagesOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata, SendUsersMessageResponse = SendUsersMessageResponse)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], SendUsersMessageResponse = SendUsersMessageResponse.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SendUsersMessagesOutput]
   }

@@ -30,7 +30,7 @@ object JobTaskQueryMultiLevelSelectedValuesParams {
     propertyIsEnumerable: PropertyKey => Boolean,
     user: String
   ): JobTaskQueryMultiLevelSelectedValuesParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, field = field, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), user = user)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), user = user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[JobTaskQueryMultiLevelSelectedValuesParams]
   }

@@ -3,7 +3,6 @@ package typings.promiseDashSftp.promiseDashSftpMod
 import typings.node.Buffer
 import typings.node.NodeJS.ReadableStream
 import typings.node.NodeJS.WritableStream
-import typings.promiseDashFtpDashCommon.promiseDashFtpDashCommonMod.STATUSES
 import typings.promiseDashSftp.Anon_Attrs
 import typings.promiseDashSftp.Anon_AutoClose
 import typings.promiseDashSftp.Anon_Buffer
@@ -169,7 +168,7 @@ trait PromiseSftp extends js.Object {
   /**
     * @returns a string describing the current connection state.
     */
-  def getConnectionStatus(): STATUSES = js.native
+  def getConnectionStatus(): typings.promiseDashFtpDashCommon.promiseDashFtpDashCommonMod.STATUSES = js.native
   /**
     * Retrieve the last modified date of a file on the server.
     * @param path - The path to the file to get the last modified date of.

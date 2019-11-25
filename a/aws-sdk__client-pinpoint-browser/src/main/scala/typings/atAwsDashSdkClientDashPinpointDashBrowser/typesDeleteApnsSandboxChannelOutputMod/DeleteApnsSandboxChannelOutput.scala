@@ -22,7 +22,7 @@ trait DeleteApnsSandboxChannelOutput extends OutputTypesUnion {
 object DeleteApnsSandboxChannelOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, APNSSandboxChannelResponse: _UnmarshalledAPNSSandboxChannelResponse): DeleteApnsSandboxChannelOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata, APNSSandboxChannelResponse = APNSSandboxChannelResponse)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], APNSSandboxChannelResponse = APNSSandboxChannelResponse.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeleteApnsSandboxChannelOutput]
   }

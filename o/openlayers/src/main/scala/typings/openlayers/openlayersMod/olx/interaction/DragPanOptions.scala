@@ -17,7 +17,7 @@ object DragPanOptions {
   def apply(condition: /* event */ MapBrowserEvent => Boolean = null, kinetic: Kinetic = null): DragPanOptions = {
     val __obj = js.Dynamic.literal()
     if (condition != null) __obj.updateDynamic("condition")(js.Any.fromFunction1(condition))
-    if (kinetic != null) __obj.updateDynamic("kinetic")(kinetic)
+    if (kinetic != null) __obj.updateDynamic("kinetic")(kinetic.asInstanceOf[js.Any])
     __obj.asInstanceOf[DragPanOptions]
   }
 }

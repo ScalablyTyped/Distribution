@@ -21,9 +21,9 @@ object Anon_ErrorColor {
     transparency: Int | Double = null
   ): Anon_ErrorColor = {
     val __obj = js.Dynamic.literal()
-    if (errorColor != null) __obj.updateDynamic("errorColor")(errorColor)
-    if (errorType != null) __obj.updateDynamic("errorType")(errorType)
-    if (!js.isUndefined(ignoreAntialiasing)) __obj.updateDynamic("ignoreAntialiasing")(ignoreAntialiasing)
+    if (errorColor != null) __obj.updateDynamic("errorColor")(errorColor.asInstanceOf[js.Any])
+    if (errorType != null) __obj.updateDynamic("errorType")(errorType.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreAntialiasing)) __obj.updateDynamic("ignoreAntialiasing")(ignoreAntialiasing.asInstanceOf[js.Any])
     if (transparency != null) __obj.updateDynamic("transparency")(transparency.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ErrorColor]
   }

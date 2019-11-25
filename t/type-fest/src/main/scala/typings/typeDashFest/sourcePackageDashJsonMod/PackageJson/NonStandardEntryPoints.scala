@@ -32,7 +32,7 @@ object NonStandardEntryPoints {
     val __obj = js.Dynamic.literal()
     if (browser != null) __obj.updateDynamic("browser")(browser.asInstanceOf[js.Any])
     if (esnext != null) __obj.updateDynamic("esnext")(esnext.asInstanceOf[js.Any])
-    if (module != null) __obj.updateDynamic("module")(module)
+    if (module != null) __obj.updateDynamic("module")(module.asInstanceOf[js.Any])
     __obj.asInstanceOf[NonStandardEntryPoints]
   }
 }

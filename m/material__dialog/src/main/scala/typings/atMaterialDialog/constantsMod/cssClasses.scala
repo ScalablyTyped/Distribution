@@ -35,8 +35,8 @@ object cssClasses {
     SCROLL_LOCK: `mdc-dialog-scroll-lock`,
     StringDictionary: StringDictionary[String] = null
   ): cssClasses = {
-    val __obj = js.Dynamic.literal(ACCEPT_BTN = ACCEPT_BTN, ANIMATING = ANIMATING, BACKDROP = BACKDROP, CANCEL_BTN = CANCEL_BTN, OPEN = OPEN, ROOT = ROOT, SCROLL_LOCK = SCROLL_LOCK)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(ACCEPT_BTN = ACCEPT_BTN.asInstanceOf[js.Any], ANIMATING = ANIMATING.asInstanceOf[js.Any], BACKDROP = BACKDROP.asInstanceOf[js.Any], CANCEL_BTN = CANCEL_BTN.asInstanceOf[js.Any], OPEN = OPEN.asInstanceOf[js.Any], ROOT = ROOT.asInstanceOf[js.Any], SCROLL_LOCK = SCROLL_LOCK.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[cssClasses]
   }
 }

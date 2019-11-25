@@ -13,7 +13,7 @@ object Anon_Transactionresponse {
   @scala.inline
   def apply(`type`: `transaction-response`): Anon_Transactionresponse = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Transactionresponse]
   }
 }

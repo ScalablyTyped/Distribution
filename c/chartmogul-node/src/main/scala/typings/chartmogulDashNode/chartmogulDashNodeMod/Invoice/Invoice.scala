@@ -30,15 +30,15 @@ object Invoice {
     uuid: String = null
   ): Invoice = {
     val __obj = js.Dynamic.literal()
-    if (currency != null) __obj.updateDynamic("currency")(currency)
-    if (customer_uuid != null) __obj.updateDynamic("customer_uuid")(customer_uuid)
-    if (data_source_uuid != null) __obj.updateDynamic("data_source_uuid")(data_source_uuid)
-    if (date != null) __obj.updateDynamic("date")(date)
-    if (due_date != null) __obj.updateDynamic("due_date")(due_date)
-    if (external_id != null) __obj.updateDynamic("external_id")(external_id)
-    if (line_items != null) __obj.updateDynamic("line_items")(line_items)
-    if (transactions != null) __obj.updateDynamic("transactions")(transactions)
-    if (uuid != null) __obj.updateDynamic("uuid")(uuid)
+    if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
+    if (customer_uuid != null) __obj.updateDynamic("customer_uuid")(customer_uuid.asInstanceOf[js.Any])
+    if (data_source_uuid != null) __obj.updateDynamic("data_source_uuid")(data_source_uuid.asInstanceOf[js.Any])
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (due_date != null) __obj.updateDynamic("due_date")(due_date.asInstanceOf[js.Any])
+    if (external_id != null) __obj.updateDynamic("external_id")(external_id.asInstanceOf[js.Any])
+    if (line_items != null) __obj.updateDynamic("line_items")(line_items.asInstanceOf[js.Any])
+    if (transactions != null) __obj.updateDynamic("transactions")(transactions.asInstanceOf[js.Any])
+    if (uuid != null) __obj.updateDynamic("uuid")(uuid.asInstanceOf[js.Any])
     __obj.asInstanceOf[Invoice]
   }
 }

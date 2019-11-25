@@ -27,7 +27,7 @@ object Anon_Bottom {
     relative: Boolean,
     valueformat: String
   ): Anon_Bottom = {
-    val __obj = js.Dynamic.literal(decreasing = decreasing, increasing = increasing, position = position.asInstanceOf[js.Any], reference = reference, relative = relative, valueformat = valueformat)
+    val __obj = js.Dynamic.literal(decreasing = decreasing.asInstanceOf[js.Any], increasing = increasing.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], reference = reference.asInstanceOf[js.Any], relative = relative.asInstanceOf[js.Any], valueformat = valueformat.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Bottom]
   }

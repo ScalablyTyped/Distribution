@@ -14,7 +14,7 @@ trait Anon_AeadAlgorithm extends js.Object {
 object Anon_AeadAlgorithm {
   @scala.inline
   def apply(aeadAlgorithm: String, algorithm: String, data: Uint8Array): Anon_AeadAlgorithm = {
-    val __obj = js.Dynamic.literal(aeadAlgorithm = aeadAlgorithm, algorithm = algorithm, data = data)
+    val __obj = js.Dynamic.literal(aeadAlgorithm = aeadAlgorithm.asInstanceOf[js.Any], algorithm = algorithm.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AeadAlgorithm]
   }

@@ -12,7 +12,7 @@ object ListBoxMessages {
   @scala.inline
   def apply(tools: ListBoxMessagesTools = null): ListBoxMessages = {
     val __obj = js.Dynamic.literal()
-    if (tools != null) __obj.updateDynamic("tools")(tools)
+    if (tools != null) __obj.updateDynamic("tools")(tools.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBoxMessages]
   }
 }

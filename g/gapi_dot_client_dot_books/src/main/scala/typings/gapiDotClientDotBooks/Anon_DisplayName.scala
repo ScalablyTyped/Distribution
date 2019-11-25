@@ -13,7 +13,7 @@ object Anon_DisplayName {
   @scala.inline
   def apply(displayName: String = null): Anon_DisplayName = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DisplayName]
   }
 }

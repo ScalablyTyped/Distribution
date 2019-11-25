@@ -36,7 +36,7 @@ object DialogState {
     localSequenceNumber: Int | Double = null,
     remoteSequenceNumber: Int | Double = null
   ): DialogState = {
-    val __obj = js.Dynamic.literal(callId = callId, early = early, id = id, localTag = localTag, localURI = localURI, remoteTag = remoteTag, remoteTarget = remoteTarget, remoteURI = remoteURI, routeSet = routeSet, secure = secure)
+    val __obj = js.Dynamic.literal(callId = callId.asInstanceOf[js.Any], early = early.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], localTag = localTag.asInstanceOf[js.Any], localURI = localURI.asInstanceOf[js.Any], remoteTag = remoteTag.asInstanceOf[js.Any], remoteTarget = remoteTarget.asInstanceOf[js.Any], remoteURI = remoteURI.asInstanceOf[js.Any], routeSet = routeSet.asInstanceOf[js.Any], secure = secure.asInstanceOf[js.Any])
     if (localSequenceNumber != null) __obj.updateDynamic("localSequenceNumber")(localSequenceNumber.asInstanceOf[js.Any])
     if (remoteSequenceNumber != null) __obj.updateDynamic("remoteSequenceNumber")(remoteSequenceNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogState]

@@ -30,12 +30,12 @@ object Budget {
     kind: String = null
   ): Budget = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId)
-    if (billingId != null) __obj.updateDynamic("billingId")(billingId)
-    if (budgetAmount != null) __obj.updateDynamic("budgetAmount")(budgetAmount)
-    if (currencyCode != null) __obj.updateDynamic("currencyCode")(currencyCode)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
+    if (billingId != null) __obj.updateDynamic("billingId")(billingId.asInstanceOf[js.Any])
+    if (budgetAmount != null) __obj.updateDynamic("budgetAmount")(budgetAmount.asInstanceOf[js.Any])
+    if (currencyCode != null) __obj.updateDynamic("currencyCode")(currencyCode.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[Budget]
   }
 }

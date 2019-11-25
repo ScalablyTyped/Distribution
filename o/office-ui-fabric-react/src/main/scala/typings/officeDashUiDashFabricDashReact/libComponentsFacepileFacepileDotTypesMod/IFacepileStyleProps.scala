@@ -23,8 +23,8 @@ trait IFacepileStyleProps extends js.Object {
 object IFacepileStyleProps {
   @scala.inline
   def apply(theme: ITheme, className: String = null, spacingAroundItemButton: Int | Double = null): IFacepileStyleProps = {
-    val __obj = js.Dynamic.literal(theme = theme)
-    if (className != null) __obj.updateDynamic("className")(className)
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (spacingAroundItemButton != null) __obj.updateDynamic("spacingAroundItemButton")(spacingAroundItemButton.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFacepileStyleProps]
   }

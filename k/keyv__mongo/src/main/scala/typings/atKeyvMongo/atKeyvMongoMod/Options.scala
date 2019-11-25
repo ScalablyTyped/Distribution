@@ -14,9 +14,9 @@ object Options {
   @scala.inline
   def apply(collection: String = null, uri: String = null, url: String = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (collection != null) __obj.updateDynamic("collection")(collection)
-    if (uri != null) __obj.updateDynamic("uri")(uri)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (collection != null) __obj.updateDynamic("collection")(collection.asInstanceOf[js.Any])
+    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

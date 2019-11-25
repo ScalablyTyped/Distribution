@@ -43,16 +43,16 @@ object Properties {
     Title: String = null
   ): Properties = {
     val __obj = js.Dynamic.literal()
-    if (Author != null) __obj.updateDynamic("Author")(Author)
-    if (Category != null) __obj.updateDynamic("Category")(Category)
-    if (Comments != null) __obj.updateDynamic("Comments")(Comments)
-    if (Company != null) __obj.updateDynamic("Company")(Company)
-    if (CreatedDate != null) __obj.updateDynamic("CreatedDate")(CreatedDate)
-    if (Keywords != null) __obj.updateDynamic("Keywords")(Keywords)
-    if (LastAuthor != null) __obj.updateDynamic("LastAuthor")(LastAuthor)
-    if (Manager != null) __obj.updateDynamic("Manager")(Manager)
-    if (Subject != null) __obj.updateDynamic("Subject")(Subject)
-    if (Title != null) __obj.updateDynamic("Title")(Title)
+    if (Author != null) __obj.updateDynamic("Author")(Author.asInstanceOf[js.Any])
+    if (Category != null) __obj.updateDynamic("Category")(Category.asInstanceOf[js.Any])
+    if (Comments != null) __obj.updateDynamic("Comments")(Comments.asInstanceOf[js.Any])
+    if (Company != null) __obj.updateDynamic("Company")(Company.asInstanceOf[js.Any])
+    if (CreatedDate != null) __obj.updateDynamic("CreatedDate")(CreatedDate.asInstanceOf[js.Any])
+    if (Keywords != null) __obj.updateDynamic("Keywords")(Keywords.asInstanceOf[js.Any])
+    if (LastAuthor != null) __obj.updateDynamic("LastAuthor")(LastAuthor.asInstanceOf[js.Any])
+    if (Manager != null) __obj.updateDynamic("Manager")(Manager.asInstanceOf[js.Any])
+    if (Subject != null) __obj.updateDynamic("Subject")(Subject.asInstanceOf[js.Any])
+    if (Title != null) __obj.updateDynamic("Title")(Title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Properties]
   }
 }

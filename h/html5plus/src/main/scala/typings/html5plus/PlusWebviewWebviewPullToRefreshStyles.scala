@@ -98,15 +98,15 @@ object PlusWebviewWebviewPullToRefreshStyles {
     support: js.UndefOr[Boolean] = js.undefined
   ): PlusWebviewWebviewPullToRefreshStyles = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (contentdown != null) __obj.updateDynamic("contentdown")(contentdown)
-    if (contentover != null) __obj.updateDynamic("contentover")(contentover)
-    if (contentrefresh != null) __obj.updateDynamic("contentrefresh")(contentrefresh)
-    if (height != null) __obj.updateDynamic("height")(height)
-    if (offset != null) __obj.updateDynamic("offset")(offset)
-    if (range != null) __obj.updateDynamic("range")(range)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (!js.isUndefined(support)) __obj.updateDynamic("support")(support)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (contentdown != null) __obj.updateDynamic("contentdown")(contentdown.asInstanceOf[js.Any])
+    if (contentover != null) __obj.updateDynamic("contentover")(contentover.asInstanceOf[js.Any])
+    if (contentrefresh != null) __obj.updateDynamic("contentrefresh")(contentrefresh.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(support)) __obj.updateDynamic("support")(support.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusWebviewWebviewPullToRefreshStyles]
   }
 }

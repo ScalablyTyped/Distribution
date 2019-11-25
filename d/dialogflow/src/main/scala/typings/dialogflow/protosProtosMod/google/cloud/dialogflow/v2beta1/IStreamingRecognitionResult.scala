@@ -37,12 +37,12 @@ object IStreamingRecognitionResult {
   ): IStreamingRecognitionResult = {
     val __obj = js.Dynamic.literal()
     if (confidence != null) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFinal)) __obj.updateDynamic("isFinal")(isFinal)
-    if (messageType != null) __obj.updateDynamic("messageType")(messageType)
-    if (speechEndOffset != null) __obj.updateDynamic("speechEndOffset")(speechEndOffset)
-    if (speechWordInfo != null) __obj.updateDynamic("speechWordInfo")(speechWordInfo)
+    if (!js.isUndefined(isFinal)) __obj.updateDynamic("isFinal")(isFinal.asInstanceOf[js.Any])
+    if (messageType != null) __obj.updateDynamic("messageType")(messageType.asInstanceOf[js.Any])
+    if (speechEndOffset != null) __obj.updateDynamic("speechEndOffset")(speechEndOffset.asInstanceOf[js.Any])
+    if (speechWordInfo != null) __obj.updateDynamic("speechWordInfo")(speechWordInfo.asInstanceOf[js.Any])
     if (stability != null) __obj.updateDynamic("stability")(stability.asInstanceOf[js.Any])
-    if (transcript != null) __obj.updateDynamic("transcript")(transcript)
+    if (transcript != null) __obj.updateDynamic("transcript")(transcript.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStreamingRecognitionResult]
   }
 }

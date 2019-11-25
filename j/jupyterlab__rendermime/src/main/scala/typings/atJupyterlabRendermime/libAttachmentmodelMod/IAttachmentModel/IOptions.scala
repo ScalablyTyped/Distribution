@@ -18,7 +18,7 @@ trait IOptions extends js.Object {
 object IOptions {
   @scala.inline
   def apply(value: IMimeBundle): IOptions = {
-    val __obj = js.Dynamic.literal(value = value)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IOptions]
   }

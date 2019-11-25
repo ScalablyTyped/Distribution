@@ -13,7 +13,7 @@ trait Anon_Field extends js.Object {
 object Anon_Field {
   @scala.inline
   def apply(format: String, test: /* field */ FieldType => Boolean = null): Anon_Field = {
-    val __obj = js.Dynamic.literal(format = format)
+    val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
     if (test != null) __obj.updateDynamic("test")(js.Any.fromFunction1(test))
     __obj.asInstanceOf[Anon_Field]
   }

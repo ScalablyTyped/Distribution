@@ -25,7 +25,7 @@ object Anon_BackgroundColorBorderRadius {
     top: Double,
     width: Double
   ): Anon_BackgroundColorBorderRadius = {
-    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, borderRadius = borderRadius, height = height, position = position, right = right, top = top, width = width)
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], borderRadius = borderRadius.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BackgroundColorBorderRadius]
   }

@@ -67,8 +67,8 @@ trait TypeofClassModelAttributes extends Instantiable0[Model] {
     * Iterates through the attributes of the model, calling the passed function on each
     * attribute.
     */
-  def eachAttribute[Class /* <: /* import warning: ImportType.apply Failed type conversion: typeof Model */ js.Any */, M /* <: InstanceType[Class] */](`this`: Class, callback: js.Function2[/* name */ ModelKeys[M], /* meta */ AttributeMeta[M], Unit]): Unit = js.native
-  def eachAttribute[Class /* <: /* import warning: ImportType.apply Failed type conversion: typeof Model */ js.Any */, M /* <: InstanceType[Class] */](
+  def eachAttribute[Class /* <: /* import warning: importer.ImportType#apply Failed type conversion: typeof Model */ js.Any */, M /* <: InstanceType[Class] */](`this`: Class, callback: js.Function2[/* name */ ModelKeys[M], /* meta */ AttributeMeta[M], Unit]): Unit = js.native
+  def eachAttribute[Class /* <: /* import warning: importer.ImportType#apply Failed type conversion: typeof Model */ js.Any */, M /* <: InstanceType[Class] */](
     `this`: Class,
     callback: js.Function2[/* name */ ModelKeys[M], /* meta */ AttributeMeta[M], Unit],
     binding: js.Any
@@ -96,11 +96,11 @@ trait TypeofClassModelAttributes extends Instantiable0[Model] {
     * the passed function on each attribute. Note the callback will not be
     * called for any attributes that do not have an transformation type.
     */
-  def eachTransformedAttribute[Class /* <: /* import warning: ImportType.apply Failed type conversion: typeof Model */ js.Any */](
+  def eachTransformedAttribute[Class /* <: /* import warning: importer.ImportType#apply Failed type conversion: typeof Model */ js.Any */](
     `this`: Class,
     callback: js.Function2[/* name */ ModelKeys[InstanceType[Class]], /* type */ String, Unit]
   ): Unit = js.native
-  def eachTransformedAttribute[Class /* <: /* import warning: ImportType.apply Failed type conversion: typeof Model */ js.Any */](
+  def eachTransformedAttribute[Class /* <: /* import warning: importer.ImportType#apply Failed type conversion: typeof Model */ js.Any */](
     `this`: Class,
     callback: js.Function2[/* name */ ModelKeys[InstanceType[Class]], /* type */ String, Unit],
     binding: js.Any
@@ -112,6 +112,6 @@ trait TypeofClassModelAttributes extends Instantiable0[Model] {
   /**
     * For a given relationship name, returns the model type of the relationship.
     */
-  def typeForRelationship[K /* <: String */](name: K, store: Store): /* import warning: ImportType.apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any = js.native
+  def typeForRelationship[K /* <: String */](name: K, store: Store): /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any = js.native
 }
 

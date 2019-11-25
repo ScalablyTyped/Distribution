@@ -17,7 +17,7 @@ trait AddTagsToVaultOutput extends _OutputTypesUnion {
 object AddTagsToVaultOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata): AddTagsToVaultOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AddTagsToVaultOutput]
   }

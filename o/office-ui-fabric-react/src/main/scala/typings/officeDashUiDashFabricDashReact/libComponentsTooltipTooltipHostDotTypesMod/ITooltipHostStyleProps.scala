@@ -19,8 +19,8 @@ trait ITooltipHostStyleProps extends js.Object {
 object ITooltipHostStyleProps {
   @scala.inline
   def apply(theme: ITheme, className: String = null): ITooltipHostStyleProps = {
-    val __obj = js.Dynamic.literal(theme = theme)
-    if (className != null) __obj.updateDynamic("className")(className)
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITooltipHostStyleProps]
   }
 }

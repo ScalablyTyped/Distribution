@@ -14,9 +14,9 @@ object FlattenOptions {
   @scala.inline
   def apply(delimiter: String = null, maxDepth: Int | Double = null, safe: js.UndefOr[Boolean] = js.undefined): FlattenOptions = {
     val __obj = js.Dynamic.literal()
-    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
+    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
     if (maxDepth != null) __obj.updateDynamic("maxDepth")(maxDepth.asInstanceOf[js.Any])
-    if (!js.isUndefined(safe)) __obj.updateDynamic("safe")(safe)
+    if (!js.isUndefined(safe)) __obj.updateDynamic("safe")(safe.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlattenOptions]
   }
 }

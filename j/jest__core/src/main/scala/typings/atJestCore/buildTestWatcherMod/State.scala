@@ -11,7 +11,7 @@ trait State extends js.Object {
 object State {
   @scala.inline
   def apply(interrupted: Boolean): State = {
-    val __obj = js.Dynamic.literal(interrupted = interrupted)
+    val __obj = js.Dynamic.literal(interrupted = interrupted.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[State]
   }

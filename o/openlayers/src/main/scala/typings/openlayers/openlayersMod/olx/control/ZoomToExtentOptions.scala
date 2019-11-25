@@ -25,11 +25,11 @@ object ZoomToExtentOptions {
     tipLabel: String = null
   ): ZoomToExtentOptions = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (extent != null) __obj.updateDynamic("extent")(extent)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (tipLabel != null) __obj.updateDynamic("tipLabel")(tipLabel)
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (tipLabel != null) __obj.updateDynamic("tipLabel")(tipLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZoomToExtentOptions]
   }
 }

@@ -29,11 +29,11 @@ object PublicKeyCredentialCreationOptions {
     extensions: AuthenticationExtensionsClientInputs = null,
     timeout: Int | Double = null
   ): PublicKeyCredentialCreationOptions = {
-    val __obj = js.Dynamic.literal(challenge = challenge, pubKeyCredParams = pubKeyCredParams, rp = rp, user = user)
-    if (attestation != null) __obj.updateDynamic("attestation")(attestation)
-    if (authenticatorSelection != null) __obj.updateDynamic("authenticatorSelection")(authenticatorSelection)
-    if (excludeCredentials != null) __obj.updateDynamic("excludeCredentials")(excludeCredentials)
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
+    val __obj = js.Dynamic.literal(challenge = challenge.asInstanceOf[js.Any], pubKeyCredParams = pubKeyCredParams.asInstanceOf[js.Any], rp = rp.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
+    if (attestation != null) __obj.updateDynamic("attestation")(attestation.asInstanceOf[js.Any])
+    if (authenticatorSelection != null) __obj.updateDynamic("authenticatorSelection")(authenticatorSelection.asInstanceOf[js.Any])
+    if (excludeCredentials != null) __obj.updateDynamic("excludeCredentials")(excludeCredentials.asInstanceOf[js.Any])
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublicKeyCredentialCreationOptions]
   }

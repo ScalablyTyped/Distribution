@@ -15,7 +15,7 @@ object ClientOptions {
   @scala.inline
   def apply(partition: String = null): ClientOptions = {
     val __obj = js.Dynamic.literal()
-    if (partition != null) __obj.updateDynamic("partition")(partition)
+    if (partition != null) __obj.updateDynamic("partition")(partition.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientOptions]
   }
 }

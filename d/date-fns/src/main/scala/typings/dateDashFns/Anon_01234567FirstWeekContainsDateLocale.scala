@@ -27,7 +27,7 @@ object Anon_01234567FirstWeekContainsDateLocale {
   ): Anon_01234567FirstWeekContainsDateLocale = {
     val __obj = js.Dynamic.literal()
     if (firstWeekContainsDate != null) __obj.updateDynamic("firstWeekContainsDate")(firstWeekContainsDate.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (weekStartsOn != null) __obj.updateDynamic("weekStartsOn")(weekStartsOn.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_01234567FirstWeekContainsDateLocale]
   }

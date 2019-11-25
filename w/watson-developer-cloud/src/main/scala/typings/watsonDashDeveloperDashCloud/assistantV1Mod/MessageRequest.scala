@@ -34,13 +34,13 @@ object MessageRequest {
     output: OutputData = null
   ): MessageRequest = {
     val __obj = js.Dynamic.literal()
-    if (actions != null) __obj.updateDynamic("actions")(actions)
-    if (!js.isUndefined(alternate_intents)) __obj.updateDynamic("alternate_intents")(alternate_intents)
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (entities != null) __obj.updateDynamic("entities")(entities)
-    if (input != null) __obj.updateDynamic("input")(input)
-    if (intents != null) __obj.updateDynamic("intents")(intents)
-    if (output != null) __obj.updateDynamic("output")(output)
+    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
+    if (!js.isUndefined(alternate_intents)) __obj.updateDynamic("alternate_intents")(alternate_intents.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (entities != null) __obj.updateDynamic("entities")(entities.asInstanceOf[js.Any])
+    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
+    if (intents != null) __obj.updateDynamic("intents")(intents.asInstanceOf[js.Any])
+    if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageRequest]
   }
 }

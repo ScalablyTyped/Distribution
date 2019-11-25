@@ -12,7 +12,7 @@ object Anon_RepeaterName {
   @scala.inline
   def apply(repeaterName: js.Any = null): Anon_RepeaterName = {
     val __obj = js.Dynamic.literal()
-    if (repeaterName != null) __obj.updateDynamic("repeaterName")(repeaterName)
+    if (repeaterName != null) __obj.updateDynamic("repeaterName")(repeaterName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_RepeaterName]
   }
 }

@@ -48,18 +48,18 @@ object HistoricalOffer {
     status: String = null
   ): HistoricalOffer = {
     val __obj = js.Dynamic.literal()
-    if (adwordsUrl != null) __obj.updateDynamic("adwordsUrl")(adwordsUrl)
-    if (clientEmail != null) __obj.updateDynamic("clientEmail")(clientEmail)
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId)
-    if (clientName != null) __obj.updateDynamic("clientName")(clientName)
-    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime)
-    if (expirationTime != null) __obj.updateDynamic("expirationTime")(expirationTime)
-    if (lastModifiedTime != null) __obj.updateDynamic("lastModifiedTime")(lastModifiedTime)
-    if (offerCode != null) __obj.updateDynamic("offerCode")(offerCode)
-    if (offerCountryCode != null) __obj.updateDynamic("offerCountryCode")(offerCountryCode)
-    if (offerType != null) __obj.updateDynamic("offerType")(offerType)
-    if (senderName != null) __obj.updateDynamic("senderName")(senderName)
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (adwordsUrl != null) __obj.updateDynamic("adwordsUrl")(adwordsUrl.asInstanceOf[js.Any])
+    if (clientEmail != null) __obj.updateDynamic("clientEmail")(clientEmail.asInstanceOf[js.Any])
+    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
+    if (clientName != null) __obj.updateDynamic("clientName")(clientName.asInstanceOf[js.Any])
+    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
+    if (expirationTime != null) __obj.updateDynamic("expirationTime")(expirationTime.asInstanceOf[js.Any])
+    if (lastModifiedTime != null) __obj.updateDynamic("lastModifiedTime")(lastModifiedTime.asInstanceOf[js.Any])
+    if (offerCode != null) __obj.updateDynamic("offerCode")(offerCode.asInstanceOf[js.Any])
+    if (offerCountryCode != null) __obj.updateDynamic("offerCountryCode")(offerCountryCode.asInstanceOf[js.Any])
+    if (offerType != null) __obj.updateDynamic("offerType")(offerType.asInstanceOf[js.Any])
+    if (senderName != null) __obj.updateDynamic("senderName")(senderName.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistoricalOffer]
   }
 }

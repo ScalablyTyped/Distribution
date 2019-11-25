@@ -42,10 +42,10 @@ object websceneInitialViewPropertiesProperties {
     viewpoint: ViewpointProperties = null
   ): websceneInitialViewPropertiesProperties = {
     val __obj = js.Dynamic.literal()
-    if (environment != null) __obj.updateDynamic("environment")(environment)
-    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)
-    if (viewingMode != null) __obj.updateDynamic("viewingMode")(viewingMode)
-    if (viewpoint != null) __obj.updateDynamic("viewpoint")(viewpoint)
+    if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
+    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference.asInstanceOf[js.Any])
+    if (viewingMode != null) __obj.updateDynamic("viewingMode")(viewingMode.asInstanceOf[js.Any])
+    if (viewpoint != null) __obj.updateDynamic("viewpoint")(viewpoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[websceneInitialViewPropertiesProperties]
   }
 }

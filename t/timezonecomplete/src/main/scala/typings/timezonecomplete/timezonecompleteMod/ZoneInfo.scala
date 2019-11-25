@@ -1,6 +1,5 @@
 package typings.timezonecomplete.timezonecompleteMod
 
-import typings.timezonecomplete.distLibTzDashDatabaseMod.RuleType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,7 +32,7 @@ class ZoneInfo protected ()
     * Some alphabetic string means that we might have set our clocks ahead; and we need to check the rule
     * the name of which is the given alphabetic string.
     */
-  ruleType: RuleType,
+  ruleType: typings.timezonecomplete.distLibTzDashDatabaseMod.RuleType,
     /**
     * If the rule column is an offset, this is the offset
     */
@@ -66,7 +65,7 @@ class ZoneInfo protected ()
     * Some alphabetic string means that we might have set our clocks ahead; and we need to check the rule
     * the name of which is the given alphabetic string.
     */
-  ruleType: RuleType,
+  ruleType: typings.timezonecomplete.distLibTzDashDatabaseMod.RuleType,
     /**
     * If the rule column is an offset, this is the offset
     */

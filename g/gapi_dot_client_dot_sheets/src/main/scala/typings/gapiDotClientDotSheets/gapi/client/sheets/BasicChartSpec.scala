@@ -72,17 +72,17 @@ object BasicChartSpec {
     threeDimensional: js.UndefOr[Boolean] = js.undefined
   ): BasicChartSpec = {
     val __obj = js.Dynamic.literal()
-    if (axis != null) __obj.updateDynamic("axis")(axis)
-    if (chartType != null) __obj.updateDynamic("chartType")(chartType)
-    if (compareMode != null) __obj.updateDynamic("compareMode")(compareMode)
-    if (domains != null) __obj.updateDynamic("domains")(domains)
+    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
+    if (chartType != null) __obj.updateDynamic("chartType")(chartType.asInstanceOf[js.Any])
+    if (compareMode != null) __obj.updateDynamic("compareMode")(compareMode.asInstanceOf[js.Any])
+    if (domains != null) __obj.updateDynamic("domains")(domains.asInstanceOf[js.Any])
     if (headerCount != null) __obj.updateDynamic("headerCount")(headerCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(interpolateNulls)) __obj.updateDynamic("interpolateNulls")(interpolateNulls)
-    if (legendPosition != null) __obj.updateDynamic("legendPosition")(legendPosition)
-    if (!js.isUndefined(lineSmoothing)) __obj.updateDynamic("lineSmoothing")(lineSmoothing)
-    if (series != null) __obj.updateDynamic("series")(series)
-    if (stackedType != null) __obj.updateDynamic("stackedType")(stackedType)
-    if (!js.isUndefined(threeDimensional)) __obj.updateDynamic("threeDimensional")(threeDimensional)
+    if (!js.isUndefined(interpolateNulls)) __obj.updateDynamic("interpolateNulls")(interpolateNulls.asInstanceOf[js.Any])
+    if (legendPosition != null) __obj.updateDynamic("legendPosition")(legendPosition.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineSmoothing)) __obj.updateDynamic("lineSmoothing")(lineSmoothing.asInstanceOf[js.Any])
+    if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
+    if (stackedType != null) __obj.updateDynamic("stackedType")(stackedType.asInstanceOf[js.Any])
+    if (!js.isUndefined(threeDimensional)) __obj.updateDynamic("threeDimensional")(threeDimensional.asInstanceOf[js.Any])
     __obj.asInstanceOf[BasicChartSpec]
   }
 }

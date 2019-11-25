@@ -22,7 +22,7 @@ trait SortDirectionStatic extends js.Object {
 object SortDirectionStatic {
   @scala.inline
   def apply(ASC: ASC, DESC: DESC): SortDirectionStatic = {
-    val __obj = js.Dynamic.literal(ASC = ASC, DESC = DESC)
+    val __obj = js.Dynamic.literal(ASC = ASC.asInstanceOf[js.Any], DESC = DESC.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SortDirectionStatic]
   }

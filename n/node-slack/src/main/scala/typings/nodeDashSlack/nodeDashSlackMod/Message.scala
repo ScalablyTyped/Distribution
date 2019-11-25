@@ -25,13 +25,13 @@ object Message {
     unfurl_links: js.UndefOr[Boolean] = js.undefined,
     username: String = null
   ): Message = {
-    val __obj = js.Dynamic.literal(text = text)
-    if (attachments != null) __obj.updateDynamic("attachments")(attachments)
-    if (channel != null) __obj.updateDynamic("channel")(channel)
-    if (icon_emoji != null) __obj.updateDynamic("icon_emoji")(icon_emoji)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
+    if (attachments != null) __obj.updateDynamic("attachments")(attachments.asInstanceOf[js.Any])
+    if (channel != null) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
+    if (icon_emoji != null) __obj.updateDynamic("icon_emoji")(icon_emoji.asInstanceOf[js.Any])
     if (link_names != null) __obj.updateDynamic("link_names")(link_names.asInstanceOf[js.Any])
-    if (!js.isUndefined(unfurl_links)) __obj.updateDynamic("unfurl_links")(unfurl_links)
-    if (username != null) __obj.updateDynamic("username")(username)
+    if (!js.isUndefined(unfurl_links)) __obj.updateDynamic("unfurl_links")(unfurl_links.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[Message]
   }
 }

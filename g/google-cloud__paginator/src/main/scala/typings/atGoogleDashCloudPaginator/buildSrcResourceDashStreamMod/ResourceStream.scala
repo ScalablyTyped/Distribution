@@ -1,6 +1,7 @@
 package typings.atGoogleDashCloudPaginator.buildSrcResourceDashStreamMod
 
 import typings.atGoogleDashCloudPaginator.atGoogleDashCloudPaginatorStrings.data
+import typings.atGoogleDashCloudPaginator.buildSrcMod.ParsedArguments
 import typings.node.Anon_End
 import typings.node.NodeJS.WritableStream
 import typings.node.streamMod.Transform
@@ -13,10 +14,7 @@ import scala.scalajs.js.annotation._
 class ResourceStream[T] protected ()
   extends Transform
      with ResourceEvents[T] {
-  def this(
-    args: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ParsedArguments */ js.Any,
-    requestFn: js.Function
-  ) = this()
+  def this(args: ParsedArguments, requestFn: js.Function) = this()
   var _ended: Boolean = js.native
   var _maxApiCalls: Double = js.native
   var _nextQuery: js.Object | Null = js.native

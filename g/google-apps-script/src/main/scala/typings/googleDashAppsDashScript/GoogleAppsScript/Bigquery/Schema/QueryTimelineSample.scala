@@ -22,11 +22,11 @@ object QueryTimelineSample {
     totalSlotMs: String = null
   ): QueryTimelineSample = {
     val __obj = js.Dynamic.literal()
-    if (activeUnits != null) __obj.updateDynamic("activeUnits")(activeUnits)
-    if (completedUnits != null) __obj.updateDynamic("completedUnits")(completedUnits)
-    if (elapsedMs != null) __obj.updateDynamic("elapsedMs")(elapsedMs)
-    if (pendingUnits != null) __obj.updateDynamic("pendingUnits")(pendingUnits)
-    if (totalSlotMs != null) __obj.updateDynamic("totalSlotMs")(totalSlotMs)
+    if (activeUnits != null) __obj.updateDynamic("activeUnits")(activeUnits.asInstanceOf[js.Any])
+    if (completedUnits != null) __obj.updateDynamic("completedUnits")(completedUnits.asInstanceOf[js.Any])
+    if (elapsedMs != null) __obj.updateDynamic("elapsedMs")(elapsedMs.asInstanceOf[js.Any])
+    if (pendingUnits != null) __obj.updateDynamic("pendingUnits")(pendingUnits.asInstanceOf[js.Any])
+    if (totalSlotMs != null) __obj.updateDynamic("totalSlotMs")(totalSlotMs.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryTimelineSample]
   }
 }

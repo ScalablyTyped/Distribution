@@ -42,7 +42,7 @@ object ImageFrameConfig {
     spacing: Int | Double = null,
     startFrame: Int | Double = null
   ): ImageFrameConfig = {
-    val __obj = js.Dynamic.literal(frameWidth = frameWidth)
+    val __obj = js.Dynamic.literal(frameWidth = frameWidth.asInstanceOf[js.Any])
     if (endFrame != null) __obj.updateDynamic("endFrame")(endFrame.asInstanceOf[js.Any])
     if (frameHeight != null) __obj.updateDynamic("frameHeight")(frameHeight.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])

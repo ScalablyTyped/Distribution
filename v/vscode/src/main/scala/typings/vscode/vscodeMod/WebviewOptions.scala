@@ -50,10 +50,10 @@ object WebviewOptions {
     portMapping: js.Array[WebviewPortMapping] = null
   ): WebviewOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableCommandUris)) __obj.updateDynamic("enableCommandUris")(enableCommandUris)
-    if (!js.isUndefined(enableScripts)) __obj.updateDynamic("enableScripts")(enableScripts)
-    if (localResourceRoots != null) __obj.updateDynamic("localResourceRoots")(localResourceRoots)
-    if (portMapping != null) __obj.updateDynamic("portMapping")(portMapping)
+    if (!js.isUndefined(enableCommandUris)) __obj.updateDynamic("enableCommandUris")(enableCommandUris.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableScripts)) __obj.updateDynamic("enableScripts")(enableScripts.asInstanceOf[js.Any])
+    if (localResourceRoots != null) __obj.updateDynamic("localResourceRoots")(localResourceRoots.asInstanceOf[js.Any])
+    if (portMapping != null) __obj.updateDynamic("portMapping")(portMapping.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebviewOptions]
   }
 }

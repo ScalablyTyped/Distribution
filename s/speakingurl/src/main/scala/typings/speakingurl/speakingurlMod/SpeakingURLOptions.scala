@@ -34,14 +34,14 @@ object SpeakingURLOptions {
     val __obj = js.Dynamic.literal()
     if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
     if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
-    if (!js.isUndefined(maintainCase)) __obj.updateDynamic("maintainCase")(maintainCase)
-    if (!js.isUndefined(mark)) __obj.updateDynamic("mark")(mark)
-    if (separator != null) __obj.updateDynamic("separator")(separator)
-    if (!js.isUndefined(symbols)) __obj.updateDynamic("symbols")(symbols)
+    if (!js.isUndefined(maintainCase)) __obj.updateDynamic("maintainCase")(maintainCase.asInstanceOf[js.Any])
+    if (!js.isUndefined(mark)) __obj.updateDynamic("mark")(mark.asInstanceOf[js.Any])
+    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
+    if (!js.isUndefined(symbols)) __obj.updateDynamic("symbols")(symbols.asInstanceOf[js.Any])
     if (titleCase != null) __obj.updateDynamic("titleCase")(titleCase.asInstanceOf[js.Any])
     if (truncate != null) __obj.updateDynamic("truncate")(truncate.asInstanceOf[js.Any])
-    if (!js.isUndefined(uric)) __obj.updateDynamic("uric")(uric)
-    if (!js.isUndefined(uricNoSlash)) __obj.updateDynamic("uricNoSlash")(uricNoSlash)
+    if (!js.isUndefined(uric)) __obj.updateDynamic("uric")(uric.asInstanceOf[js.Any])
+    if (!js.isUndefined(uricNoSlash)) __obj.updateDynamic("uricNoSlash")(uricNoSlash.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpeakingURLOptions]
   }
 }

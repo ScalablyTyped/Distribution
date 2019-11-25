@@ -22,11 +22,11 @@ object QueryComplexityOptions {
     onComplete: /* complexity */ Double => Unit = null,
     variables: js.Object = null
   ): QueryComplexityOptions = {
-    val __obj = js.Dynamic.literal(maximumComplexity = maximumComplexity)
+    val __obj = js.Dynamic.literal(maximumComplexity = maximumComplexity.asInstanceOf[js.Any])
     if (createError != null) __obj.updateDynamic("createError")(js.Any.fromFunction2(createError))
-    if (estimators != null) __obj.updateDynamic("estimators")(estimators)
+    if (estimators != null) __obj.updateDynamic("estimators")(estimators.asInstanceOf[js.Any])
     if (onComplete != null) __obj.updateDynamic("onComplete")(js.Any.fromFunction1(onComplete))
-    if (variables != null) __obj.updateDynamic("variables")(variables)
+    if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryComplexityOptions]
   }
 }

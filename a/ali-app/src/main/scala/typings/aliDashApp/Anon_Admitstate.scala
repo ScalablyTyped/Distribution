@@ -48,7 +48,7 @@ object Anon_Admitstate {
     out_order_no: String,
     user_id: String
   ): Anon_Admitstate = {
-    val __obj = js.Dynamic.literal(admit_state = admit_state.asInstanceOf[js.Any], callbackData = callbackData, invoke_state = invoke_state, order_no = order_no, out_order_no = out_order_no, user_id = user_id)
+    val __obj = js.Dynamic.literal(admit_state = admit_state.asInstanceOf[js.Any], callbackData = callbackData.asInstanceOf[js.Any], invoke_state = invoke_state.asInstanceOf[js.Any], order_no = order_no.asInstanceOf[js.Any], out_order_no = out_order_no.asInstanceOf[js.Any], user_id = user_id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Admitstate]
   }

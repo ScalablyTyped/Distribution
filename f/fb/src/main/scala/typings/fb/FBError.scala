@@ -25,11 +25,11 @@ object FBError {
     error_user_msg: String = null,
     error_user_title: String = null
   ): FBError = {
-    val __obj = js.Dynamic.literal(code = code, fbtrace_id = fbtrace_id, message = message)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], fbtrace_id = fbtrace_id.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (error_subcode != null) __obj.updateDynamic("error_subcode")(error_subcode.asInstanceOf[js.Any])
-    if (error_user_msg != null) __obj.updateDynamic("error_user_msg")(error_user_msg)
-    if (error_user_title != null) __obj.updateDynamic("error_user_title")(error_user_title)
+    if (error_user_msg != null) __obj.updateDynamic("error_user_msg")(error_user_msg.asInstanceOf[js.Any])
+    if (error_user_title != null) __obj.updateDynamic("error_user_title")(error_user_title.asInstanceOf[js.Any])
     __obj.asInstanceOf[FBError]
   }
 }

@@ -15,7 +15,7 @@ trait ChecksListForRefResponseCheckRunsItemOutput extends js.Object {
 object ChecksListForRefResponseCheckRunsItemOutput {
   @scala.inline
   def apply(annotations_count: Double, annotations_url: String, summary: String, text: String, title: String): ChecksListForRefResponseCheckRunsItemOutput = {
-    val __obj = js.Dynamic.literal(annotations_count = annotations_count, annotations_url = annotations_url, summary = summary, text = text, title = title)
+    val __obj = js.Dynamic.literal(annotations_count = annotations_count.asInstanceOf[js.Any], annotations_url = annotations_url.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChecksListForRefResponseCheckRunsItemOutput]
   }

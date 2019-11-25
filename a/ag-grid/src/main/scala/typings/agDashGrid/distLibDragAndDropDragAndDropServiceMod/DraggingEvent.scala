@@ -28,7 +28,7 @@ object DraggingEvent {
     x: Double,
     y: Double
   ): DraggingEvent = {
-    val __obj = js.Dynamic.literal(dragItem = dragItem, dragSource = dragSource, event = event, fromNudge = fromNudge, hDirection = hDirection, vDirection = vDirection, x = x, y = y)
+    val __obj = js.Dynamic.literal(dragItem = dragItem.asInstanceOf[js.Any], dragSource = dragSource.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], fromNudge = fromNudge.asInstanceOf[js.Any], hDirection = hDirection.asInstanceOf[js.Any], vDirection = vDirection.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DraggingEvent]
   }

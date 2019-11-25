@@ -35,10 +35,10 @@ object InsertTableRowsRequest {
     tableObjectId: String = null
   ): InsertTableRowsRequest = {
     val __obj = js.Dynamic.literal()
-    if (cellLocation != null) __obj.updateDynamic("cellLocation")(cellLocation)
-    if (!js.isUndefined(insertBelow)) __obj.updateDynamic("insertBelow")(insertBelow)
+    if (cellLocation != null) __obj.updateDynamic("cellLocation")(cellLocation.asInstanceOf[js.Any])
+    if (!js.isUndefined(insertBelow)) __obj.updateDynamic("insertBelow")(insertBelow.asInstanceOf[js.Any])
     if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
-    if (tableObjectId != null) __obj.updateDynamic("tableObjectId")(tableObjectId)
+    if (tableObjectId != null) __obj.updateDynamic("tableObjectId")(tableObjectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsertTableRowsRequest]
   }
 }

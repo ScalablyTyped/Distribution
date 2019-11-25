@@ -24,7 +24,7 @@ object Anon_DisplayName {
     permissionId: String,
     picture: Anon_Url
   ): Anon_DisplayName = {
-    val __obj = js.Dynamic.literal(displayName = displayName, emailAddress = emailAddress, isAuthenticatedUser = isAuthenticatedUser, kind = kind, permissionId = permissionId, picture = picture)
+    val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], emailAddress = emailAddress.asInstanceOf[js.Any], isAuthenticatedUser = isAuthenticatedUser.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], permissionId = permissionId.asInstanceOf[js.Any], picture = picture.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DisplayName]
   }

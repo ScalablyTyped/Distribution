@@ -164,7 +164,7 @@ object openlayersStrings {
        with Units
   
   @js.native
-  sealed trait point extends TextPlacement
+  sealed trait point_ extends TextPlacement
   
   @js.native
   sealed trait qgis extends ServerType
@@ -293,7 +293,7 @@ object openlayersStrings {
   @scala.inline
   def pixels: pixels = "pixels".asInstanceOf[pixels]
   @scala.inline
-  def point: point = "point".asInstanceOf[point]
+  def point_ : point_ = "point".asInstanceOf[point_]
   @scala.inline
   def qgis: qgis = "qgis".asInstanceOf[qgis]
   @scala.inline

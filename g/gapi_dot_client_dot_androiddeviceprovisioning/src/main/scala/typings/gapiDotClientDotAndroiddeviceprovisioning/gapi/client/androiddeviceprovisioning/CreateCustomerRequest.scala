@@ -17,7 +17,7 @@ object CreateCustomerRequest {
   @scala.inline
   def apply(customer: Company = null): CreateCustomerRequest = {
     val __obj = js.Dynamic.literal()
-    if (customer != null) __obj.updateDynamic("customer")(customer)
+    if (customer != null) __obj.updateDynamic("customer")(customer.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCustomerRequest]
   }
 }

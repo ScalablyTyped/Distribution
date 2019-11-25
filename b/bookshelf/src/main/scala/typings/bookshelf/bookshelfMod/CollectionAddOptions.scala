@@ -18,8 +18,8 @@ object CollectionAddOptions {
   ): CollectionAddOptions = {
     val __obj = js.Dynamic.literal()
     if (at != null) __obj.updateDynamic("at")(at.asInstanceOf[js.Any])
-    if (!js.isUndefined(merge)) __obj.updateDynamic("merge")(merge)
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    if (!js.isUndefined(merge)) __obj.updateDynamic("merge")(merge.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectionAddOptions]
   }
 }

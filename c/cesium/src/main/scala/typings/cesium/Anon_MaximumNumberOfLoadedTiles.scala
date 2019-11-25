@@ -13,7 +13,7 @@ trait Anon_MaximumNumberOfLoadedTiles extends js.Object {
 object Anon_MaximumNumberOfLoadedTiles {
   @scala.inline
   def apply(maximumNumberOfLoadedTiles: Double, maximumScreenSpaceError: Double, url: String): Anon_MaximumNumberOfLoadedTiles = {
-    val __obj = js.Dynamic.literal(maximumNumberOfLoadedTiles = maximumNumberOfLoadedTiles, maximumScreenSpaceError = maximumScreenSpaceError, url = url)
+    val __obj = js.Dynamic.literal(maximumNumberOfLoadedTiles = maximumNumberOfLoadedTiles.asInstanceOf[js.Any], maximumScreenSpaceError = maximumScreenSpaceError.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_MaximumNumberOfLoadedTiles]
   }

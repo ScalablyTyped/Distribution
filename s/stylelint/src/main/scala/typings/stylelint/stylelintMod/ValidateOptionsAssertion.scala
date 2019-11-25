@@ -6,19 +6,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ValidateOptionsAssertion extends js.Object {
-  var actual: js.UndefOr[js.Any] = js.undefined
-  var optional: js.UndefOr[`false` | `true`] = js.undefined
-  var possible: js.UndefOr[js.Any] = js.undefined
-}
+/* Rewritten from type alias, can be one of: 
+  - typings.stylelint.Anon_Actual
+  - typings.stylelint.Anon_ActualOptional
+*/
+trait ValidateOptionsAssertion extends js.Object
 
 object ValidateOptionsAssertion {
   @scala.inline
-  def apply(actual: js.Any = null, optional: `false` = null, possible: js.Any = null): ValidateOptionsAssertion = {
-    val __obj = js.Dynamic.literal()
-    if (actual != null) __obj.updateDynamic("actual")(actual)
-    if (optional != null) __obj.updateDynamic("optional")(optional)
-    if (possible != null) __obj.updateDynamic("possible")(possible)
+  def Anon_Actual(actual: js.Any, optional: `false` = null, possible: js.Any = null): ValidateOptionsAssertion = {
+    val __obj = js.Dynamic.literal(actual = actual.asInstanceOf[js.Any])
+    if (optional != null) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
+    if (possible != null) __obj.updateDynamic("possible")(possible.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ValidateOptionsAssertion]
+  }
+  @scala.inline
+  def Anon_ActualOptional(optional: `true`, possible: js.Any, actual: js.Any = null): ValidateOptionsAssertion = {
+    val __obj = js.Dynamic.literal(optional = optional.asInstanceOf[js.Any], possible = possible.asInstanceOf[js.Any])
+    if (actual != null) __obj.updateDynamic("actual")(actual.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidateOptionsAssertion]
   }
 }

@@ -17,9 +17,9 @@ object OpenMapOptions {
     ttl: Int | Double = null
   ): OpenMapOptions = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(includeItems)) __obj.updateDynamic("includeItems")(includeItems)
-    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeItems)) __obj.updateDynamic("includeItems")(includeItems.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenMapOptions]
   }

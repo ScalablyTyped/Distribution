@@ -28,7 +28,7 @@ object Locals {
     style: String,
     viewName: String
   ): Locals = {
-    val __obj = js.Dynamic.literal(directory = directory, displayIcons = displayIcons, fileList = fileList, name = name, path = path, stat = stat, style = style, viewName = viewName)
+    val __obj = js.Dynamic.literal(directory = directory.asInstanceOf[js.Any], displayIcons = displayIcons.asInstanceOf[js.Any], fileList = fileList.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], stat = stat.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], viewName = viewName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Locals]
   }

@@ -15,7 +15,7 @@ trait HapiMiddleware extends Middleware {
 object HapiMiddleware {
   @scala.inline
   def apply(config: ConfigInternal, plugin: Anon_Register, runner: Runner): HapiMiddleware = {
-    val __obj = js.Dynamic.literal(config = config, plugin = plugin, runner = runner)
+    val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], plugin = plugin.asInstanceOf[js.Any], runner = runner.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HapiMiddleware]
   }

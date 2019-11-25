@@ -31,9 +31,9 @@ trait RosterPresenceUpdate extends VoxImplantIMEvent {
 object RosterPresenceUpdate {
   @scala.inline
   def apply(id: String, presence: UserStatuses, message: String = null, resource: String = null): RosterPresenceUpdate = {
-    val __obj = js.Dynamic.literal(id = id, presence = presence)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (resource != null) __obj.updateDynamic("resource")(resource)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], presence = presence.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[RosterPresenceUpdate]
   }
 }

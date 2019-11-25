@@ -11,10 +11,10 @@ import scala.scalajs.js.annotation._
 object hasMany extends js.Object {
   def apply[K /* <: String */](`type`: K): ComputedProperty[
     PromiseManyArray[
-      /* import warning: ImportType.apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
     ], 
     Array[
-      /* import warning: ImportType.apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
     ]
   ] = js.native
   /**
@@ -24,14 +24,14 @@ object hasMany extends js.Object {
   def apply[K /* <: String */](
     `type`: K,
     options: (RelationshipOptions[
-      /* import warning: ImportType.apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
     ]) with (Async | Sync)
   ): ComputedProperty[
     ManyArray[
-      /* import warning: ImportType.apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
     ], 
     ManyArray[
-      /* import warning: ImportType.apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
     ]
   ] = js.native
 }

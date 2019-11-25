@@ -21,8 +21,8 @@ object List {
     total_count: Double,
     `type`: companyDOTlist
   ): List = {
-    val __obj = js.Dynamic.literal(companies = companies, pages = pages, total_count = total_count)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(companies = companies.asInstanceOf[js.Any], pages = pages.asInstanceOf[js.Any], total_count = total_count.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[List]
   }
 }

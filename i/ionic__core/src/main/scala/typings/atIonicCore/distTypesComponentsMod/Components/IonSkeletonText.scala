@@ -18,8 +18,8 @@ trait IonSkeletonText extends js.Object {
 object IonSkeletonText {
   @scala.inline
   def apply(animated: Boolean, width: String = null): IonSkeletonText = {
-    val __obj = js.Dynamic.literal(animated = animated)
-    if (width != null) __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(animated = animated.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonSkeletonText]
   }
 }

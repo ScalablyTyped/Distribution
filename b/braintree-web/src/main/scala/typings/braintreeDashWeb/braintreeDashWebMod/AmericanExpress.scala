@@ -78,7 +78,7 @@ object AmericanExpress {
     getExpressCheckoutProfile: (Anon_Nonce, callback) => Unit,
     getRewardsBalance: (Anon_Nonce, callback) => Unit
   ): AmericanExpress = {
-    val __obj = js.Dynamic.literal(VERSION = VERSION, create = js.Any.fromFunction2(create), getExpressCheckoutProfile = js.Any.fromFunction2(getExpressCheckoutProfile), getRewardsBalance = js.Any.fromFunction2(getRewardsBalance))
+    val __obj = js.Dynamic.literal(VERSION = VERSION.asInstanceOf[js.Any], create = js.Any.fromFunction2(create), getExpressCheckoutProfile = js.Any.fromFunction2(getExpressCheckoutProfile), getRewardsBalance = js.Any.fromFunction2(getRewardsBalance))
   
     __obj.asInstanceOf[AmericanExpress]
   }

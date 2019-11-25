@@ -22,9 +22,9 @@ object LexDialogActionElicitIntent {
     responseCard: Anon_Applicationvndamazonawscardgeneric = null
   ): LexDialogActionElicitIntent = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (responseCard != null) __obj.updateDynamic("responseCard")(responseCard)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (responseCard != null) __obj.updateDynamic("responseCard")(responseCard.asInstanceOf[js.Any])
     __obj.asInstanceOf[LexDialogActionElicitIntent]
   }
 }

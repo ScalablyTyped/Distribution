@@ -16,7 +16,7 @@ object InstanceGroupManagersSetInstanceTemplateRequest {
   @scala.inline
   def apply(instanceTemplate: String = null): InstanceGroupManagersSetInstanceTemplateRequest = {
     val __obj = js.Dynamic.literal()
-    if (instanceTemplate != null) __obj.updateDynamic("instanceTemplate")(instanceTemplate)
+    if (instanceTemplate != null) __obj.updateDynamic("instanceTemplate")(instanceTemplate.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceGroupManagersSetInstanceTemplateRequest]
   }
 }

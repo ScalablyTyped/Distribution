@@ -19,8 +19,8 @@ object WorkspaceFolderPickOptions {
   @scala.inline
   def apply(ignoreFocusOut: js.UndefOr[Boolean] = js.undefined, placeHolder: String = null): WorkspaceFolderPickOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ignoreFocusOut)) __obj.updateDynamic("ignoreFocusOut")(ignoreFocusOut)
-    if (placeHolder != null) __obj.updateDynamic("placeHolder")(placeHolder)
+    if (!js.isUndefined(ignoreFocusOut)) __obj.updateDynamic("ignoreFocusOut")(ignoreFocusOut.asInstanceOf[js.Any])
+    if (placeHolder != null) __obj.updateDynamic("placeHolder")(placeHolder.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkspaceFolderPickOptions]
   }
 }

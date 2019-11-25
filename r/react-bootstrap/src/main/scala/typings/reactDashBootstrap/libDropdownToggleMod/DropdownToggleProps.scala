@@ -28,21 +28,17 @@ object DropdownToggleProps {
     bsSize: String = null,
     bsStyle: String = null,
     noCaret: js.UndefOr[Boolean] = js.undefined,
-    open: js.UndefOr[Boolean] = js.undefined,
-    title: String = null,
     useAnchor: js.UndefOr[Boolean] = js.undefined
   ): DropdownToggleProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass)
-    if (bsRole != null) __obj.updateDynamic("bsRole")(bsRole)
-    if (bsSize != null) __obj.updateDynamic("bsSize")(bsSize)
-    if (bsStyle != null) __obj.updateDynamic("bsStyle")(bsStyle)
-    if (!js.isUndefined(noCaret)) __obj.updateDynamic("noCaret")(noCaret)
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (!js.isUndefined(useAnchor)) __obj.updateDynamic("useAnchor")(useAnchor)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass.asInstanceOf[js.Any])
+    if (bsRole != null) __obj.updateDynamic("bsRole")(bsRole.asInstanceOf[js.Any])
+    if (bsSize != null) __obj.updateDynamic("bsSize")(bsSize.asInstanceOf[js.Any])
+    if (bsStyle != null) __obj.updateDynamic("bsStyle")(bsStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(noCaret)) __obj.updateDynamic("noCaret")(noCaret.asInstanceOf[js.Any])
+    if (!js.isUndefined(useAnchor)) __obj.updateDynamic("useAnchor")(useAnchor.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropdownToggleProps]
   }
 }

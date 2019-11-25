@@ -30,12 +30,12 @@ object DeriveOptions {
     salt: Buffer = null
   ): DeriveOptions = {
     val __obj = js.Dynamic.literal()
-    if (hash != null) __obj.updateDynamic("hash")(hash)
-    if (info != null) __obj.updateDynamic("info")(info)
+    if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
+    if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (otherInfo != null) __obj.updateDynamic("otherInfo")(otherInfo)
-    if (public != null) __obj.updateDynamic("public")(public)
-    if (salt != null) __obj.updateDynamic("salt")(salt)
+    if (otherInfo != null) __obj.updateDynamic("otherInfo")(otherInfo.asInstanceOf[js.Any])
+    if (public != null) __obj.updateDynamic("public")(public.asInstanceOf[js.Any])
+    if (salt != null) __obj.updateDynamic("salt")(salt.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeriveOptions]
   }
 }

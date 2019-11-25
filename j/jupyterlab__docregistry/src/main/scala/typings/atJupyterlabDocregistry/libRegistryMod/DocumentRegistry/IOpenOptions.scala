@@ -44,10 +44,10 @@ object IOpenOptions {
     ref: String = null
   ): IOpenOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(activate)) __obj.updateDynamic("activate")(activate)
-    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (!js.isUndefined(activate)) __obj.updateDynamic("activate")(activate.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (rank != null) __obj.updateDynamic("rank")(rank.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref)
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOpenOptions]
   }
 }

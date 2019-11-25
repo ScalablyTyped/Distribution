@@ -18,7 +18,7 @@ object Anon_Children {
     position: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Animated.Node<number> */ js.Any,
     render: ReactNode => ReactNode
   ): Anon_Children = {
-    val __obj = js.Dynamic.literal(jumpTo = js.Any.fromFunction1(jumpTo), position = position, render = js.Any.fromFunction1(render))
+    val __obj = js.Dynamic.literal(jumpTo = js.Any.fromFunction1(jumpTo), position = position.asInstanceOf[js.Any], render = js.Any.fromFunction1(render))
   
     __obj.asInstanceOf[Anon_Children]
   }

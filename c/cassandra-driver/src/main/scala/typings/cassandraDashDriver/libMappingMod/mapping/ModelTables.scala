@@ -12,7 +12,7 @@ trait ModelTables extends js.Object {
 object ModelTables {
   @scala.inline
   def apply(isView: Boolean, name: String): ModelTables = {
-    val __obj = js.Dynamic.literal(isView = isView, name = name)
+    val __obj = js.Dynamic.literal(isView = isView.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ModelTables]
   }

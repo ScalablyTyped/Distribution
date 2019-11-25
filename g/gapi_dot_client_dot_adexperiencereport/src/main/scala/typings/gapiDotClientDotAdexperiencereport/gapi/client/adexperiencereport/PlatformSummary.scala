@@ -33,13 +33,13 @@ object PlatformSummary {
     underReview: js.UndefOr[Boolean] = js.undefined
   ): PlatformSummary = {
     val __obj = js.Dynamic.literal()
-    if (betterAdsStatus != null) __obj.updateDynamic("betterAdsStatus")(betterAdsStatus)
-    if (enforcementTime != null) __obj.updateDynamic("enforcementTime")(enforcementTime)
-    if (filterStatus != null) __obj.updateDynamic("filterStatus")(filterStatus)
-    if (lastChangeTime != null) __obj.updateDynamic("lastChangeTime")(lastChangeTime)
-    if (region != null) __obj.updateDynamic("region")(region)
-    if (reportUrl != null) __obj.updateDynamic("reportUrl")(reportUrl)
-    if (!js.isUndefined(underReview)) __obj.updateDynamic("underReview")(underReview)
+    if (betterAdsStatus != null) __obj.updateDynamic("betterAdsStatus")(betterAdsStatus.asInstanceOf[js.Any])
+    if (enforcementTime != null) __obj.updateDynamic("enforcementTime")(enforcementTime.asInstanceOf[js.Any])
+    if (filterStatus != null) __obj.updateDynamic("filterStatus")(filterStatus.asInstanceOf[js.Any])
+    if (lastChangeTime != null) __obj.updateDynamic("lastChangeTime")(lastChangeTime.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    if (reportUrl != null) __obj.updateDynamic("reportUrl")(reportUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(underReview)) __obj.updateDynamic("underReview")(underReview.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlatformSummary]
   }
 }

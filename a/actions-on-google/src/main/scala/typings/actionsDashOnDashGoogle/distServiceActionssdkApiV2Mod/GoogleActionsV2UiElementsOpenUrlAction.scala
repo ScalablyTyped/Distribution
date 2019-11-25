@@ -29,9 +29,9 @@ object GoogleActionsV2UiElementsOpenUrlAction {
     urlTypeHint: GoogleActionsV2UiElementsOpenUrlActionUrlTypeHint = null
   ): GoogleActionsV2UiElementsOpenUrlAction = {
     val __obj = js.Dynamic.literal()
-    if (androidApp != null) __obj.updateDynamic("androidApp")(androidApp)
-    if (url != null) __obj.updateDynamic("url")(url)
-    if (urlTypeHint != null) __obj.updateDynamic("urlTypeHint")(urlTypeHint)
+    if (androidApp != null) __obj.updateDynamic("androidApp")(androidApp.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (urlTypeHint != null) __obj.updateDynamic("urlTypeHint")(urlTypeHint.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2UiElementsOpenUrlAction]
   }
 }

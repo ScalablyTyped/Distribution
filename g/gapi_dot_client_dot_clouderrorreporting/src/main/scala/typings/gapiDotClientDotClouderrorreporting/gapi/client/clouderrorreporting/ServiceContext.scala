@@ -36,9 +36,9 @@ object ServiceContext {
   @scala.inline
   def apply(resourceType: String = null, service: String = null, version: String = null): ServiceContext = {
     val __obj = js.Dynamic.literal()
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType)
-    if (service != null) __obj.updateDynamic("service")(service)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
+    if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceContext]
   }
 }

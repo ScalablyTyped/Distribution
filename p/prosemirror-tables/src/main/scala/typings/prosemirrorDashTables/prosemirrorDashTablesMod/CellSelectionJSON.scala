@@ -13,8 +13,8 @@ trait CellSelectionJSON extends js.Object {
 object CellSelectionJSON {
   @scala.inline
   def apply(anchor: Double, head: Double, `type`: String): CellSelectionJSON = {
-    val __obj = js.Dynamic.literal(anchor = anchor, head = head)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellSelectionJSON]
   }
 }

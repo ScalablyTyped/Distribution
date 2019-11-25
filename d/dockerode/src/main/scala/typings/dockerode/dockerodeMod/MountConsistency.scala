@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait MountConsistency extends js.Object
 
+object MountConsistency {
+  @scala.inline
+  def cached: typings.dockerode.dockerodeStrings.cached = this.cast("cached")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def consistent: typings.dockerode.dockerodeStrings.consistent = this.cast("consistent")
+  @scala.inline
+  def default: typings.dockerode.dockerodeStrings.default = this.cast("default")
+  @scala.inline
+  def delegated: typings.dockerode.dockerodeStrings.delegated = this.cast("delegated")
+}
+

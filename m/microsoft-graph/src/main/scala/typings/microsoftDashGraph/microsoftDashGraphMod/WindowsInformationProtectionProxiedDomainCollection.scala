@@ -15,8 +15,8 @@ object WindowsInformationProtectionProxiedDomainCollection {
   @scala.inline
   def apply(displayName: String = null, proxiedDomains: js.Array[ProxiedDomain] = null): WindowsInformationProtectionProxiedDomainCollection = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (proxiedDomains != null) __obj.updateDynamic("proxiedDomains")(proxiedDomains)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (proxiedDomains != null) __obj.updateDynamic("proxiedDomains")(proxiedDomains.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowsInformationProtectionProxiedDomainCollection]
   }
 }

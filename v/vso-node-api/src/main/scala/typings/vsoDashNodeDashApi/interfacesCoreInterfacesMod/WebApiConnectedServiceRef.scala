@@ -12,7 +12,7 @@ trait WebApiConnectedServiceRef extends js.Object {
 object WebApiConnectedServiceRef {
   @scala.inline
   def apply(id: String, url: String): WebApiConnectedServiceRef = {
-    val __obj = js.Dynamic.literal(id = id, url = url)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WebApiConnectedServiceRef]
   }

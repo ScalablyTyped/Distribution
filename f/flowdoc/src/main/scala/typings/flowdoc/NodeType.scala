@@ -17,3 +17,26 @@ import scala.scalajs.js.annotation._
 */
 trait NodeType extends js.Object
 
+object NodeType {
+  @scala.inline
+  def DIAMOND: typings.flowdoc.flowdocStrings.DIAMOND = this.cast("DIAMOND")
+  @scala.inline
+  def DOCUMENT: typings.flowdoc.flowdocStrings.DOCUMENT = this.cast("DOCUMENT")
+  @scala.inline
+  def ELLIPSE: typings.flowdoc.flowdocStrings.ELLIPSE = this.cast("ELLIPSE")
+  @scala.inline
+  def HOTSPOT: typings.flowdoc.flowdocStrings.HOTSPOT = this.cast("HOTSPOT")
+  @scala.inline
+  def IMAGE: typings.flowdoc.flowdocStrings.IMAGE = this.cast("IMAGE")
+  @scala.inline
+  def LAYER: typings.flowdoc.flowdocStrings.LAYER = this.cast("LAYER")
+  @scala.inline
+  def PAGE: typings.flowdoc.flowdocStrings.PAGE = this.cast("PAGE")
+  @scala.inline
+  def RECT: typings.flowdoc.flowdocStrings.RECT = this.cast("RECT")
+  @scala.inline
+  def SCREEN: typings.flowdoc.flowdocStrings.SCREEN = this.cast("SCREEN")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

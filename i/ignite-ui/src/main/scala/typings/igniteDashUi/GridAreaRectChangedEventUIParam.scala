@@ -57,15 +57,15 @@ object GridAreaRectChangedEventUIParam {
     oldWidth: js.Any = null
   ): GridAreaRectChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (chart != null) __obj.updateDynamic("chart")(chart)
-    if (newHeight != null) __obj.updateDynamic("newHeight")(newHeight)
-    if (newLeft != null) __obj.updateDynamic("newLeft")(newLeft)
-    if (newTop != null) __obj.updateDynamic("newTop")(newTop)
-    if (newWidth != null) __obj.updateDynamic("newWidth")(newWidth)
-    if (oldHeight != null) __obj.updateDynamic("oldHeight")(oldHeight)
-    if (oldLeft != null) __obj.updateDynamic("oldLeft")(oldLeft)
-    if (oldTop != null) __obj.updateDynamic("oldTop")(oldTop)
-    if (oldWidth != null) __obj.updateDynamic("oldWidth")(oldWidth)
+    if (chart != null) __obj.updateDynamic("chart")(chart.asInstanceOf[js.Any])
+    if (newHeight != null) __obj.updateDynamic("newHeight")(newHeight.asInstanceOf[js.Any])
+    if (newLeft != null) __obj.updateDynamic("newLeft")(newLeft.asInstanceOf[js.Any])
+    if (newTop != null) __obj.updateDynamic("newTop")(newTop.asInstanceOf[js.Any])
+    if (newWidth != null) __obj.updateDynamic("newWidth")(newWidth.asInstanceOf[js.Any])
+    if (oldHeight != null) __obj.updateDynamic("oldHeight")(oldHeight.asInstanceOf[js.Any])
+    if (oldLeft != null) __obj.updateDynamic("oldLeft")(oldLeft.asInstanceOf[js.Any])
+    if (oldTop != null) __obj.updateDynamic("oldTop")(oldTop.asInstanceOf[js.Any])
+    if (oldWidth != null) __obj.updateDynamic("oldWidth")(oldWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridAreaRectChangedEventUIParam]
   }
 }

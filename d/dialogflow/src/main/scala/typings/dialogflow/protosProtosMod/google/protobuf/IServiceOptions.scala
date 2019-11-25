@@ -25,10 +25,10 @@ object IServiceOptions {
     uninterpretedOption: js.Array[IUninterpretedOption] = null
   ): IServiceOptions = {
     val __obj = js.Dynamic.literal()
-    if (`.google.api.defaultHost` != null) __obj.updateDynamic(".google.api.defaultHost")(`.google.api.defaultHost`)
-    if (`.google.api.oauthScopes` != null) __obj.updateDynamic(".google.api.oauthScopes")(`.google.api.oauthScopes`)
-    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated)
-    if (uninterpretedOption != null) __obj.updateDynamic("uninterpretedOption")(uninterpretedOption)
+    if (`.google.api.defaultHost` != null) __obj.updateDynamic(".google.api.defaultHost")(`.google.api.defaultHost`.asInstanceOf[js.Any])
+    if (`.google.api.oauthScopes` != null) __obj.updateDynamic(".google.api.oauthScopes")(`.google.api.oauthScopes`.asInstanceOf[js.Any])
+    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated.asInstanceOf[js.Any])
+    if (uninterpretedOption != null) __obj.updateDynamic("uninterpretedOption")(uninterpretedOption.asInstanceOf[js.Any])
     __obj.asInstanceOf[IServiceOptions]
   }
 }

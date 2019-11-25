@@ -17,7 +17,7 @@ object FullscreenControlOptions {
   @scala.inline
   def apply(container: HTMLElement = null): FullscreenControlOptions = {
     val __obj = js.Dynamic.literal()
-    if (container != null) __obj.updateDynamic("container")(container)
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     __obj.asInstanceOf[FullscreenControlOptions]
   }
 }

@@ -14,7 +14,7 @@ trait OnExitMetaData extends js.Object {
 object OnExitMetaData {
   @scala.inline
   def apply(institution: Institution, link_session_id: String, request_id: String, status: ExitStatus): OnExitMetaData = {
-    val __obj = js.Dynamic.literal(institution = institution, link_session_id = link_session_id, request_id = request_id, status = status)
+    val __obj = js.Dynamic.literal(institution = institution.asInstanceOf[js.Any], link_session_id = link_session_id.asInstanceOf[js.Any], request_id = request_id.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OnExitMetaData]
   }

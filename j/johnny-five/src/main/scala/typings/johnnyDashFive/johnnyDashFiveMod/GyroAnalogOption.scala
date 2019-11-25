@@ -18,8 +18,8 @@ object GyroAnalogOption {
     controller: String = null,
     resolution: Int | Double = null
   ): GyroAnalogOption = {
-    val __obj = js.Dynamic.literal(pins = pins, sensitivity = sensitivity)
-    if (controller != null) __obj.updateDynamic("controller")(controller)
+    val __obj = js.Dynamic.literal(pins = pins.asInstanceOf[js.Any], sensitivity = sensitivity.asInstanceOf[js.Any])
+    if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
     if (resolution != null) __obj.updateDynamic("resolution")(resolution.asInstanceOf[js.Any])
     __obj.asInstanceOf[GyroAnalogOption]
   }

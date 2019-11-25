@@ -13,9 +13,9 @@ trait EventObject extends js.Object {
 object EventObject {
   @scala.inline
   def apply(event: String, cid: Int | Double = null, data: js.Any = null): EventObject = {
-    val __obj = js.Dynamic.literal(event = event)
+    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
     if (cid != null) __obj.updateDynamic("cid")(cid.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventObject]
   }
 }

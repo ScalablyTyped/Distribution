@@ -47,16 +47,16 @@ object SearchBarDefault {
     if (inputContainerStyle != null) __obj.updateDynamic("inputContainerStyle")(inputContainerStyle.asInstanceOf[js.Any])
     if (inputStyle != null) __obj.updateDynamic("inputStyle")(inputStyle.asInstanceOf[js.Any])
     if (leftIconContainerStyle != null) __obj.updateDynamic("leftIconContainerStyle")(leftIconContainerStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(lightTheme)) __obj.updateDynamic("lightTheme")(lightTheme)
-    if (loadingProps != null) __obj.updateDynamic("loadingProps")(loadingProps)
+    if (!js.isUndefined(lightTheme)) __obj.updateDynamic("lightTheme")(lightTheme.asInstanceOf[js.Any])
+    if (loadingProps != null) __obj.updateDynamic("loadingProps")(loadingProps.asInstanceOf[js.Any])
     if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction0(onBlur))
     if (onChangeText != null) __obj.updateDynamic("onChangeText")(js.Any.fromFunction1(onChangeText))
     if (onClear != null) __obj.updateDynamic("onClear")(js.Any.fromFunction0(onClear))
     if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction0(onFocus))
     if (rightIconContainerStyle != null) __obj.updateDynamic("rightIconContainerStyle")(rightIconContainerStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(round)) __obj.updateDynamic("round")(round)
+    if (!js.isUndefined(round)) __obj.updateDynamic("round")(round.asInstanceOf[js.Any])
     if (searchIcon != null) __obj.updateDynamic("searchIcon")(searchIcon.asInstanceOf[js.Any])
-    if (!js.isUndefined(showLoading)) __obj.updateDynamic("showLoading")(showLoading)
+    if (!js.isUndefined(showLoading)) __obj.updateDynamic("showLoading")(showLoading.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchBarDefault]
   }
 }

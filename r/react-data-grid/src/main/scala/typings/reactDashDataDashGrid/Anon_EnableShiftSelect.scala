@@ -23,11 +23,11 @@ object Anon_EnableShiftSelect {
     showCheckbox: js.UndefOr[Boolean] = js.undefined
   ): Anon_EnableShiftSelect[T] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableShiftSelect)) __obj.updateDynamic("enableShiftSelect")(enableShiftSelect)
+    if (!js.isUndefined(enableShiftSelect)) __obj.updateDynamic("enableShiftSelect")(enableShiftSelect.asInstanceOf[js.Any])
     if (onRowsDeselected != null) __obj.updateDynamic("onRowsDeselected")(js.Any.fromFunction1(onRowsDeselected))
     if (onRowsSelected != null) __obj.updateDynamic("onRowsSelected")(js.Any.fromFunction1(onRowsSelected))
-    if (selectBy != null) __obj.updateDynamic("selectBy")(selectBy)
-    if (!js.isUndefined(showCheckbox)) __obj.updateDynamic("showCheckbox")(showCheckbox)
+    if (selectBy != null) __obj.updateDynamic("selectBy")(selectBy.asInstanceOf[js.Any])
+    if (!js.isUndefined(showCheckbox)) __obj.updateDynamic("showCheckbox")(showCheckbox.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_EnableShiftSelect[T]]
   }
 }

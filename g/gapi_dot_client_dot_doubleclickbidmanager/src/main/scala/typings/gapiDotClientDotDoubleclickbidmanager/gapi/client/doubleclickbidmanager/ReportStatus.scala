@@ -24,10 +24,10 @@ object ReportStatus {
     state: String = null
   ): ReportStatus = {
     val __obj = js.Dynamic.literal()
-    if (failure != null) __obj.updateDynamic("failure")(failure)
-    if (finishTimeMs != null) __obj.updateDynamic("finishTimeMs")(finishTimeMs)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (failure != null) __obj.updateDynamic("failure")(failure.asInstanceOf[js.Any])
+    if (finishTimeMs != null) __obj.updateDynamic("finishTimeMs")(finishTimeMs.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportStatus]
   }
 }

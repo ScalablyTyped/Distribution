@@ -22,11 +22,11 @@ object LangAccessibilityAnnounceNewDataOptions {
     newSeriesAnnounceSingle: String = null
   ): LangAccessibilityAnnounceNewDataOptions = {
     val __obj = js.Dynamic.literal()
-    if (newDataAnnounce != null) __obj.updateDynamic("newDataAnnounce")(newDataAnnounce)
-    if (newPointAnnounceMultiple != null) __obj.updateDynamic("newPointAnnounceMultiple")(newPointAnnounceMultiple)
-    if (newPointAnnounceSingle != null) __obj.updateDynamic("newPointAnnounceSingle")(newPointAnnounceSingle)
-    if (newSeriesAnnounceMultiple != null) __obj.updateDynamic("newSeriesAnnounceMultiple")(newSeriesAnnounceMultiple)
-    if (newSeriesAnnounceSingle != null) __obj.updateDynamic("newSeriesAnnounceSingle")(newSeriesAnnounceSingle)
+    if (newDataAnnounce != null) __obj.updateDynamic("newDataAnnounce")(newDataAnnounce.asInstanceOf[js.Any])
+    if (newPointAnnounceMultiple != null) __obj.updateDynamic("newPointAnnounceMultiple")(newPointAnnounceMultiple.asInstanceOf[js.Any])
+    if (newPointAnnounceSingle != null) __obj.updateDynamic("newPointAnnounceSingle")(newPointAnnounceSingle.asInstanceOf[js.Any])
+    if (newSeriesAnnounceMultiple != null) __obj.updateDynamic("newSeriesAnnounceMultiple")(newSeriesAnnounceMultiple.asInstanceOf[js.Any])
+    if (newSeriesAnnounceSingle != null) __obj.updateDynamic("newSeriesAnnounceSingle")(newSeriesAnnounceSingle.asInstanceOf[js.Any])
     __obj.asInstanceOf[LangAccessibilityAnnounceNewDataOptions]
   }
 }

@@ -17,9 +17,9 @@ object Anon_Maxfilesize {
     max_file_size: String = null,
     prevent_duplicates: String = null
   ): Anon_Maxfilesize = {
-    val __obj = js.Dynamic.literal(mime_type = mime_type)
-    if (max_file_size != null) __obj.updateDynamic("max_file_size")(max_file_size)
-    if (prevent_duplicates != null) __obj.updateDynamic("prevent_duplicates")(prevent_duplicates)
+    val __obj = js.Dynamic.literal(mime_type = mime_type.asInstanceOf[js.Any])
+    if (max_file_size != null) __obj.updateDynamic("max_file_size")(max_file_size.asInstanceOf[js.Any])
+    if (prevent_duplicates != null) __obj.updateDynamic("prevent_duplicates")(prevent_duplicates.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Maxfilesize]
   }
 }

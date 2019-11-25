@@ -86,18 +86,18 @@ object AttachedDisk {
     `type`: String = null
   ): AttachedDisk = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoDelete)) __obj.updateDynamic("autoDelete")(autoDelete)
-    if (!js.isUndefined(boot)) __obj.updateDynamic("boot")(boot)
-    if (deviceName != null) __obj.updateDynamic("deviceName")(deviceName)
-    if (diskEncryptionKey != null) __obj.updateDynamic("diskEncryptionKey")(diskEncryptionKey)
+    if (!js.isUndefined(autoDelete)) __obj.updateDynamic("autoDelete")(autoDelete.asInstanceOf[js.Any])
+    if (!js.isUndefined(boot)) __obj.updateDynamic("boot")(boot.asInstanceOf[js.Any])
+    if (deviceName != null) __obj.updateDynamic("deviceName")(deviceName.asInstanceOf[js.Any])
+    if (diskEncryptionKey != null) __obj.updateDynamic("diskEncryptionKey")(diskEncryptionKey.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (initializeParams != null) __obj.updateDynamic("initializeParams")(initializeParams)
-    if (interface != null) __obj.updateDynamic("interface")(interface)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (licenses != null) __obj.updateDynamic("licenses")(licenses)
-    if (mode != null) __obj.updateDynamic("mode")(mode)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (initializeParams != null) __obj.updateDynamic("initializeParams")(initializeParams.asInstanceOf[js.Any])
+    if (interface != null) __obj.updateDynamic("interface")(interface.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (licenses != null) __obj.updateDynamic("licenses")(licenses.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachedDisk]
   }
 }

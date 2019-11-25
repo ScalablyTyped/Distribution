@@ -32,8 +32,8 @@ object PluginOptions {
     writeToDisk: Boolean | Anon_Filename = null
   ): PluginOptions = {
     val __obj = js.Dynamic.literal()
-    if (filename != null) __obj.updateDynamic("filename")(filename)
-    if (!js.isUndefined(outputAsset)) __obj.updateDynamic("outputAsset")(outputAsset)
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
+    if (!js.isUndefined(outputAsset)) __obj.updateDynamic("outputAsset")(outputAsset.asInstanceOf[js.Any])
     if (writeToDisk != null) __obj.updateDynamic("writeToDisk")(writeToDisk.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginOptions]
   }

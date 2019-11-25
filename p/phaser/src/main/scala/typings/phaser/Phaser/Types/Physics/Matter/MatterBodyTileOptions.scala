@@ -19,8 +19,8 @@ object MatterBodyTileOptions {
   @scala.inline
   def apply(addToWorld: js.UndefOr[Boolean] = js.undefined, isStatic: js.UndefOr[Boolean] = js.undefined): MatterBodyTileOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(addToWorld)) __obj.updateDynamic("addToWorld")(addToWorld)
-    if (!js.isUndefined(isStatic)) __obj.updateDynamic("isStatic")(isStatic)
+    if (!js.isUndefined(addToWorld)) __obj.updateDynamic("addToWorld")(addToWorld.asInstanceOf[js.Any])
+    if (!js.isUndefined(isStatic)) __obj.updateDynamic("isStatic")(isStatic.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatterBodyTileOptions]
   }
 }

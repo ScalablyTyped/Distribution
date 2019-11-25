@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "storybook__addon-backgrounds"
-version := "5.2.6-27b6c0"
+version := "5.2.6-0ab5b4"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

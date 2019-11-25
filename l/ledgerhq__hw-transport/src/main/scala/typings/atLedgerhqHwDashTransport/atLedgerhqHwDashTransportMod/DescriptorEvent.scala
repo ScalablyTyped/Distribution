@@ -17,7 +17,7 @@ object DescriptorEvent {
   def apply[Descriptor](descriptor: Descriptor, `type`: add | remove, device: Device = null): DescriptorEvent[Descriptor] = {
     val __obj = js.Dynamic.literal(descriptor = descriptor.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (device != null) __obj.updateDynamic("device")(device)
+    if (device != null) __obj.updateDynamic("device")(device.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescriptorEvent[Descriptor]]
   }
 }

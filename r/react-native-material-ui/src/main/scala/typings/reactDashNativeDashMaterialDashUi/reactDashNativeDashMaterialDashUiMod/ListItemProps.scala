@@ -39,16 +39,16 @@ object ListItemProps {
     testID: String = null
   ): ListItemProps = {
     val __obj = js.Dynamic.literal(centerElement = centerElement.asInstanceOf[js.Any])
-    if (!js.isUndefined(dense)) __obj.updateDynamic("dense")(dense)
-    if (!js.isUndefined(divider)) __obj.updateDynamic("divider")(divider)
+    if (!js.isUndefined(dense)) __obj.updateDynamic("dense")(dense.asInstanceOf[js.Any])
+    if (!js.isUndefined(divider)) __obj.updateDynamic("divider")(divider.asInstanceOf[js.Any])
     if (leftElement != null) __obj.updateDynamic("leftElement")(leftElement.asInstanceOf[js.Any])
     if (numberOfLines != null) __obj.updateDynamic("numberOfLines")(numberOfLines.asInstanceOf[js.Any])
     if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction0(onPress))
-    if (onPressValue != null) __obj.updateDynamic("onPressValue")(onPressValue)
+    if (onPressValue != null) __obj.updateDynamic("onPressValue")(onPressValue.asInstanceOf[js.Any])
     if (onRightElementPress != null) __obj.updateDynamic("onRightElementPress")(js.Any.fromFunction0(onRightElementPress))
     if (rightElement != null) __obj.updateDynamic("rightElement")(rightElement.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (testID != null) __obj.updateDynamic("testID")(testID)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (testID != null) __obj.updateDynamic("testID")(testID.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListItemProps]
   }
 }

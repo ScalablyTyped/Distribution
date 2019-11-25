@@ -14,7 +14,7 @@ object ComponentOptions {
   @scala.inline
   def apply[V /* <: Vue */](i18n: Anon_DateTimeFormats = null): ComponentOptions[V] = {
     val __obj = js.Dynamic.literal()
-    if (i18n != null) __obj.updateDynamic("i18n")(i18n)
+    if (i18n != null) __obj.updateDynamic("i18n")(i18n.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentOptions[V]]
   }
 }

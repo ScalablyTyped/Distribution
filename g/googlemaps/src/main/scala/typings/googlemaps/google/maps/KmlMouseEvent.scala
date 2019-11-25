@@ -13,7 +13,7 @@ trait KmlMouseEvent extends js.Object {
 object KmlMouseEvent {
   @scala.inline
   def apply(featureData: KmlFeatureData, latLng: LatLng, pixelOffset: Size): KmlMouseEvent = {
-    val __obj = js.Dynamic.literal(featureData = featureData, latLng = latLng, pixelOffset = pixelOffset)
+    val __obj = js.Dynamic.literal(featureData = featureData.asInstanceOf[js.Any], latLng = latLng.asInstanceOf[js.Any], pixelOffset = pixelOffset.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[KmlMouseEvent]
   }

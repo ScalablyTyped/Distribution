@@ -25,7 +25,7 @@ trait cldr extends js.Object {
 object cldr {
   @scala.inline
   def apply(monetary: js.Object, supplemental: js.Object): cldr = {
-    val __obj = js.Dynamic.literal(monetary = monetary, supplemental = supplemental)
+    val __obj = js.Dynamic.literal(monetary = monetary.asInstanceOf[js.Any], supplemental = supplemental.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[cldr]
   }

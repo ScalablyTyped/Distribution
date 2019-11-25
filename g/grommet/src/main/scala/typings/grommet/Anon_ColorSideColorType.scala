@@ -15,7 +15,7 @@ object Anon_ColorSideColorType {
   def apply(color: ColorType = null, side: String = null): Anon_ColorSideColorType = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (side != null) __obj.updateDynamic("side")(side)
+    if (side != null) __obj.updateDynamic("side")(side.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ColorSideColorType]
   }
 }

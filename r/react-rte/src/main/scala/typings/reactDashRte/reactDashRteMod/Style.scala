@@ -13,8 +13,8 @@ trait Style extends js.Object {
 object Style {
   @scala.inline
   def apply(style: String, `type`: STYLE): Style = {
-    val __obj = js.Dynamic.literal(style = style)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Style]
   }
 }

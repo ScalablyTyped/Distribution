@@ -13,7 +13,7 @@ object SetNodePoolManagementRequest {
   @scala.inline
   def apply(management: NodeManagement = null): SetNodePoolManagementRequest = {
     val __obj = js.Dynamic.literal()
-    if (management != null) __obj.updateDynamic("management")(management)
+    if (management != null) __obj.updateDynamic("management")(management.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetNodePoolManagementRequest]
   }
 }

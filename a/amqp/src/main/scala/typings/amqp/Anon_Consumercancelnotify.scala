@@ -12,7 +12,7 @@ object Anon_Consumercancelnotify {
   @scala.inline
   def apply(consumer_cancel_notify: js.UndefOr[Boolean] = js.undefined): Anon_Consumercancelnotify = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(consumer_cancel_notify)) __obj.updateDynamic("consumer_cancel_notify")(consumer_cancel_notify)
+    if (!js.isUndefined(consumer_cancel_notify)) __obj.updateDynamic("consumer_cancel_notify")(consumer_cancel_notify.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Consumercancelnotify]
   }
 }

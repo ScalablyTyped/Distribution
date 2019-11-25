@@ -25,7 +25,7 @@ object IRawCellMetadata {
     tags: js.Array[String],
     trusted: Boolean
   ): IRawCellMetadata = {
-    val __obj = js.Dynamic.literal(format = format, jupyter = jupyter, name = name, tags = tags, trusted = trusted)
+    val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], jupyter = jupyter.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], trusted = trusted.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IRawCellMetadata]
   }

@@ -20,9 +20,9 @@ object Configuration {
     typeSpeed: Int | Double = null
   ): Configuration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
     if (pause != null) __obj.updateDynamic("pause")(pause.asInstanceOf[js.Any])
-    if (strings != null) __obj.updateDynamic("strings")(strings)
+    if (strings != null) __obj.updateDynamic("strings")(strings.asInstanceOf[js.Any])
     if (typeSpeed != null) __obj.updateDynamic("typeSpeed")(typeSpeed.asInstanceOf[js.Any])
     __obj.asInstanceOf[Configuration]
   }

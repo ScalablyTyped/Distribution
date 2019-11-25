@@ -12,7 +12,7 @@ object MultiViewCalendarMessages {
   @scala.inline
   def apply(weekColumnHeader: String = null): MultiViewCalendarMessages = {
     val __obj = js.Dynamic.literal()
-    if (weekColumnHeader != null) __obj.updateDynamic("weekColumnHeader")(weekColumnHeader)
+    if (weekColumnHeader != null) __obj.updateDynamic("weekColumnHeader")(weekColumnHeader.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiViewCalendarMessages]
   }
 }

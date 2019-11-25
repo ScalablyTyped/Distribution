@@ -44,20 +44,20 @@ object IProps {
     uniqueHash: String = null,
     uniquifyIDs: js.UndefOr[Boolean] = js.undefined
   ): IProps = {
-    val __obj = js.Dynamic.literal(src = src)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (baseURL != null) __obj.updateDynamic("baseURL")(baseURL)
-    if (!js.isUndefined(cacheRequests)) __obj.updateDynamic("cacheRequests")(cacheRequests)
+    val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (baseURL != null) __obj.updateDynamic("baseURL")(baseURL.asInstanceOf[js.Any])
+    if (!js.isUndefined(cacheRequests)) __obj.updateDynamic("cacheRequests")(cacheRequests.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
     if (loader != null) __obj.updateDynamic("loader")(loader.asInstanceOf[js.Any])
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction2(onLoad))
     if (preProcessor != null) __obj.updateDynamic("preProcessor")(js.Any.fromFunction1(preProcessor))
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (uniqueHash != null) __obj.updateDynamic("uniqueHash")(uniqueHash)
-    if (!js.isUndefined(uniquifyIDs)) __obj.updateDynamic("uniquifyIDs")(uniquifyIDs)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (uniqueHash != null) __obj.updateDynamic("uniqueHash")(uniqueHash.asInstanceOf[js.Any])
+    if (!js.isUndefined(uniquifyIDs)) __obj.updateDynamic("uniquifyIDs")(uniquifyIDs.asInstanceOf[js.Any])
     __obj.asInstanceOf[IProps]
   }
 }

@@ -27,10 +27,10 @@ object SelectionCollectionSettings {
     subscribers: SelectionCollectionSettingsSubscribers = null
   ): SelectionCollectionSettings = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(multipleSelection)) __obj.updateDynamic("multipleSelection")(multipleSelection)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (subscribers != null) __obj.updateDynamic("subscribers")(subscribers)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(multipleSelection)) __obj.updateDynamic("multipleSelection")(multipleSelection.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (subscribers != null) __obj.updateDynamic("subscribers")(subscribers.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectionCollectionSettings]
   }
 }

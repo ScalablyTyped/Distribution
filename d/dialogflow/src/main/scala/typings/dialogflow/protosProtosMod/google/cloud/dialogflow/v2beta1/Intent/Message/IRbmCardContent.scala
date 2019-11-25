@@ -26,10 +26,10 @@ object IRbmCardContent {
     title: String = null
   ): IRbmCardContent = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (media != null) __obj.updateDynamic("media")(media)
-    if (suggestions != null) __obj.updateDynamic("suggestions")(suggestions)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (media != null) __obj.updateDynamic("media")(media.asInstanceOf[js.Any])
+    if (suggestions != null) __obj.updateDynamic("suggestions")(suggestions.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRbmCardContent]
   }
 }

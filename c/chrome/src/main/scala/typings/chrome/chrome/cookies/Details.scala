@@ -13,8 +13,8 @@ trait Details extends js.Object {
 object Details {
   @scala.inline
   def apply(name: String, url: String, storeId: String = null): Details = {
-    val __obj = js.Dynamic.literal(name = name, url = url)
-    if (storeId != null) __obj.updateDynamic("storeId")(storeId)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (storeId != null) __obj.updateDynamic("storeId")(storeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Details]
   }
 }

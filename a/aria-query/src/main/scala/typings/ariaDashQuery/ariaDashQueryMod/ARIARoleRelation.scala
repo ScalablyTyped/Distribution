@@ -13,8 +13,8 @@ object ARIARoleRelation {
   @scala.inline
   def apply(concept: ARIARoleRelationConcept = null, module: String = null): ARIARoleRelation = {
     val __obj = js.Dynamic.literal()
-    if (concept != null) __obj.updateDynamic("concept")(concept)
-    if (module != null) __obj.updateDynamic("module")(module)
+    if (concept != null) __obj.updateDynamic("concept")(concept.asInstanceOf[js.Any])
+    if (module != null) __obj.updateDynamic("module")(module.asInstanceOf[js.Any])
     __obj.asInstanceOf[ARIARoleRelation]
   }
 }

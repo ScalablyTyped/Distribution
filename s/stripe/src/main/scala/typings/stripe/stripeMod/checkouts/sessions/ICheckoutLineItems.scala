@@ -41,9 +41,9 @@ object ICheckoutLineItems {
     description: String = null,
     images: js.Array[String] = null
   ): ICheckoutLineItems = {
-    val __obj = js.Dynamic.literal(amount = amount, currency = currency, name = name, quantity = quantity)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (images != null) __obj.updateDynamic("images")(images)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], quantity = quantity.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (images != null) __obj.updateDynamic("images")(images.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICheckoutLineItems]
   }
 }

@@ -23,7 +23,7 @@ trait MessagingTopicResponse extends js.Object {
 object MessagingTopicResponse {
   @scala.inline
   def apply(messageId: Double): MessagingTopicResponse = {
-    val __obj = js.Dynamic.literal(messageId = messageId)
+    val __obj = js.Dynamic.literal(messageId = messageId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MessagingTopicResponse]
   }

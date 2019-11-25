@@ -34,13 +34,13 @@ object Notice {
     step: String = null
   ): Notice = {
     val __obj = js.Dynamic.literal()
-    if (created != null) __obj.updateDynamic("created")(created)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (document_id != null) __obj.updateDynamic("document_id")(document_id)
-    if (notice_id != null) __obj.updateDynamic("notice_id")(notice_id)
-    if (query_id != null) __obj.updateDynamic("query_id")(query_id)
-    if (severity != null) __obj.updateDynamic("severity")(severity)
-    if (step != null) __obj.updateDynamic("step")(step)
+    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (document_id != null) __obj.updateDynamic("document_id")(document_id.asInstanceOf[js.Any])
+    if (notice_id != null) __obj.updateDynamic("notice_id")(notice_id.asInstanceOf[js.Any])
+    if (query_id != null) __obj.updateDynamic("query_id")(query_id.asInstanceOf[js.Any])
+    if (severity != null) __obj.updateDynamic("severity")(severity.asInstanceOf[js.Any])
+    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     __obj.asInstanceOf[Notice]
   }
 }

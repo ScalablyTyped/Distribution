@@ -25,10 +25,10 @@ object Anon_BufferChildTileMask {
     createdByUpsampling: js.UndefOr[Boolean] = js.undefined,
     credits: js.Array[Credit] = null
   ): Anon_BufferChildTileMask = {
-    val __obj = js.Dynamic.literal(buffer = buffer, negativeAltitudeExponentBias = negativeAltitudeExponentBias, negativeElevationThreshold = negativeElevationThreshold)
+    val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], negativeAltitudeExponentBias = negativeAltitudeExponentBias.asInstanceOf[js.Any], negativeElevationThreshold = negativeElevationThreshold.asInstanceOf[js.Any])
     if (childTileMask != null) __obj.updateDynamic("childTileMask")(childTileMask.asInstanceOf[js.Any])
-    if (!js.isUndefined(createdByUpsampling)) __obj.updateDynamic("createdByUpsampling")(createdByUpsampling)
-    if (credits != null) __obj.updateDynamic("credits")(credits)
+    if (!js.isUndefined(createdByUpsampling)) __obj.updateDynamic("createdByUpsampling")(createdByUpsampling.asInstanceOf[js.Any])
+    if (credits != null) __obj.updateDynamic("credits")(credits.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BufferChildTileMask]
   }
 }

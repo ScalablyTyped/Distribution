@@ -29,7 +29,7 @@ object PublisherMessage {
     t: Double,
     commPort: Int | Double = null
   ): PublisherMessage = {
-    val __obj = js.Dynamic.literal(host = host, id = id, ip = ip, name = name, nspace = nspace, path = path, port = port, t = t)
+    val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], ip = ip.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nspace = nspace.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], t = t.asInstanceOf[js.Any])
     if (commPort != null) __obj.updateDynamic("commPort")(commPort.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublisherMessage]
   }

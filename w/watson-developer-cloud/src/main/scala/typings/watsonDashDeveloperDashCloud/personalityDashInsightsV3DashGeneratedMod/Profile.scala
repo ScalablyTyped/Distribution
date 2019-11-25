@@ -39,10 +39,10 @@ object Profile {
     consumption_preferences: js.Array[ConsumptionPreferencesCategory] = null,
     word_count_message: String = null
   ): Profile = {
-    val __obj = js.Dynamic.literal(needs = needs, personality = personality, processed_language = processed_language, values = values, warnings = warnings, word_count = word_count)
-    if (behavior != null) __obj.updateDynamic("behavior")(behavior)
-    if (consumption_preferences != null) __obj.updateDynamic("consumption_preferences")(consumption_preferences)
-    if (word_count_message != null) __obj.updateDynamic("word_count_message")(word_count_message)
+    val __obj = js.Dynamic.literal(needs = needs.asInstanceOf[js.Any], personality = personality.asInstanceOf[js.Any], processed_language = processed_language.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any], warnings = warnings.asInstanceOf[js.Any], word_count = word_count.asInstanceOf[js.Any])
+    if (behavior != null) __obj.updateDynamic("behavior")(behavior.asInstanceOf[js.Any])
+    if (consumption_preferences != null) __obj.updateDynamic("consumption_preferences")(consumption_preferences.asInstanceOf[js.Any])
+    if (word_count_message != null) __obj.updateDynamic("word_count_message")(word_count_message.asInstanceOf[js.Any])
     __obj.asInstanceOf[Profile]
   }
 }

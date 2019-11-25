@@ -24,10 +24,10 @@ object IndexDefinition {
     projection: Projection = null,
     rangeKey: String = null
   ): IndexDefinition = {
-    val __obj = js.Dynamic.literal(hashKey = hashKey, name = name)
+    val __obj = js.Dynamic.literal(hashKey = hashKey.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (projection != null) __obj.updateDynamic("projection")(projection)
-    if (rangeKey != null) __obj.updateDynamic("rangeKey")(rangeKey)
+    if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
+    if (rangeKey != null) __obj.updateDynamic("rangeKey")(rangeKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndexDefinition]
   }
 }

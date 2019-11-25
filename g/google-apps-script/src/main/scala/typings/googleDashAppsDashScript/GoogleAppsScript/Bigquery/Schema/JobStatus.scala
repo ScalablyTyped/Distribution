@@ -14,9 +14,9 @@ object JobStatus {
   @scala.inline
   def apply(errorResult: ErrorProto = null, errors: js.Array[ErrorProto] = null, state: String = null): JobStatus = {
     val __obj = js.Dynamic.literal()
-    if (errorResult != null) __obj.updateDynamic("errorResult")(errorResult)
-    if (errors != null) __obj.updateDynamic("errors")(errors)
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (errorResult != null) __obj.updateDynamic("errorResult")(errorResult.asInstanceOf[js.Any])
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobStatus]
   }
 }

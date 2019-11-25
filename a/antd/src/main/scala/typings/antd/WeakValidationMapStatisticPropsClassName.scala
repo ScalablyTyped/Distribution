@@ -44,19 +44,19 @@ object WeakValidationMapStatisticPropsClassName {
     valueStyle: Validator[js.UndefOr[CSSProperties | Null]] = null
   ): WeakValidationMapStatisticPropsClassName = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (decimalSeparator != null) __obj.updateDynamic("decimalSeparator")(decimalSeparator)
-    if (formatter != null) __obj.updateDynamic("formatter")(formatter)
-    if (groupSeparator != null) __obj.updateDynamic("groupSeparator")(groupSeparator)
-    if (precision != null) __obj.updateDynamic("precision")(precision)
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (suffix != null) __obj.updateDynamic("suffix")(suffix)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (value != null) __obj.updateDynamic("value")(value)
-    if (valueRender != null) __obj.updateDynamic("valueRender")(valueRender)
-    if (valueStyle != null) __obj.updateDynamic("valueStyle")(valueStyle)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (decimalSeparator != null) __obj.updateDynamic("decimalSeparator")(decimalSeparator.asInstanceOf[js.Any])
+    if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
+    if (groupSeparator != null) __obj.updateDynamic("groupSeparator")(groupSeparator.asInstanceOf[js.Any])
+    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (valueRender != null) __obj.updateDynamic("valueRender")(valueRender.asInstanceOf[js.Any])
+    if (valueStyle != null) __obj.updateDynamic("valueStyle")(valueStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[WeakValidationMapStatisticPropsClassName]
   }
 }

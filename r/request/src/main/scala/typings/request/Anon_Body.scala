@@ -14,7 +14,7 @@ object Anon_Body {
   @scala.inline
   def apply(body: MultipartBody, `content-type`: String = null): Anon_Body = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
-    if (`content-type` != null) __obj.updateDynamic("content-type")(`content-type`)
+    if (`content-type` != null) __obj.updateDynamic("content-type")(`content-type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Body]
   }
 }

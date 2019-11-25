@@ -14,7 +14,7 @@ trait Anon_End extends js.Object {
 object Anon_End {
   @scala.inline
   def apply(end: Double | Position, file: String, start: Double | Position): Anon_End = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], file = file, start = start.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_End]
   }

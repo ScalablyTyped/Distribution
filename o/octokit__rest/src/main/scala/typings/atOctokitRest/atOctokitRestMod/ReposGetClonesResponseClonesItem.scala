@@ -13,7 +13,7 @@ trait ReposGetClonesResponseClonesItem extends js.Object {
 object ReposGetClonesResponseClonesItem {
   @scala.inline
   def apply(count: Double, timestamp: String, uniques: Double): ReposGetClonesResponseClonesItem = {
-    val __obj = js.Dynamic.literal(count = count, timestamp = timestamp, uniques = uniques)
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], uniques = uniques.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReposGetClonesResponseClonesItem]
   }

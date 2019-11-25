@@ -35,7 +35,7 @@ object EquationSymbol {
     asTableOfContents: () => TableOfContents,
     asTableRow: () => TableRow,
     asText: () => Text,
-    copy: () => EquationSymbol,
+    copy: () => Element,
     getAttributes: () => js.Any,
     getCode: () => String,
     getNextSibling: () => Element,
@@ -43,9 +43,9 @@ object EquationSymbol {
     getPreviousSibling: () => Element,
     getType: () => ElementType,
     isAtDocumentEnd: () => Boolean,
-    merge: () => EquationSymbol,
-    removeFromParent: () => EquationSymbol,
-    setAttributes: js.Any => EquationSymbol
+    merge: () => Element,
+    removeFromParent: () => Element,
+    setAttributes: js.Any => Element
   ): EquationSymbol = {
     val __obj = js.Dynamic.literal(asBody = js.Any.fromFunction0(asBody), asEquation = js.Any.fromFunction0(asEquation), asEquationFunction = js.Any.fromFunction0(asEquationFunction), asEquationFunctionArgumentSeparator = js.Any.fromFunction0(asEquationFunctionArgumentSeparator), asEquationSymbol = js.Any.fromFunction0(asEquationSymbol), asFooterSection = js.Any.fromFunction0(asFooterSection), asFootnote = js.Any.fromFunction0(asFootnote), asFootnoteSection = js.Any.fromFunction0(asFootnoteSection), asHeaderSection = js.Any.fromFunction0(asHeaderSection), asHorizontalRule = js.Any.fromFunction0(asHorizontalRule), asInlineDrawing = js.Any.fromFunction0(asInlineDrawing), asInlineImage = js.Any.fromFunction0(asInlineImage), asListItem = js.Any.fromFunction0(asListItem), asPageBreak = js.Any.fromFunction0(asPageBreak), asParagraph = js.Any.fromFunction0(asParagraph), asTable = js.Any.fromFunction0(asTable), asTableCell = js.Any.fromFunction0(asTableCell), asTableOfContents = js.Any.fromFunction0(asTableOfContents), asTableRow = js.Any.fromFunction0(asTableRow), asText = js.Any.fromFunction0(asText), copy = js.Any.fromFunction0(copy), getAttributes = js.Any.fromFunction0(getAttributes), getCode = js.Any.fromFunction0(getCode), getNextSibling = js.Any.fromFunction0(getNextSibling), getParent = js.Any.fromFunction0(getParent), getPreviousSibling = js.Any.fromFunction0(getPreviousSibling), getType = js.Any.fromFunction0(getType), isAtDocumentEnd = js.Any.fromFunction0(isAtDocumentEnd), merge = js.Any.fromFunction0(merge), removeFromParent = js.Any.fromFunction0(removeFromParent), setAttributes = js.Any.fromFunction1(setAttributes))
   

@@ -27,12 +27,12 @@ object Anon_ButtonPropsInputProps {
     placeholder: String = null
   ): Anon_ButtonPropsInputProps = {
     val __obj = js.Dynamic.literal()
-    if (buttonProps != null) __obj.updateDynamic("buttonProps")(buttonProps)
-    if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (labelProps != null) __obj.updateDynamic("labelProps")(labelProps)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (buttonProps != null) __obj.updateDynamic("buttonProps")(buttonProps.asInstanceOf[js.Any])
+    if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (labelProps != null) __obj.updateDynamic("labelProps")(labelProps.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ButtonPropsInputProps]
   }
 }

@@ -11,7 +11,7 @@ trait TransformOptions extends js.Object {
 object TransformOptions {
   @scala.inline
   def apply(instrument: Boolean): TransformOptions = {
-    val __obj = js.Dynamic.literal(instrument = instrument)
+    val __obj = js.Dynamic.literal(instrument = instrument.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TransformOptions]
   }

@@ -31,7 +31,7 @@ object CompileScriptParameterType {
     sourceURL: java.lang.String,
     executionContextId: Int | Double = null
   ): CompileScriptParameterType = {
-    val __obj = js.Dynamic.literal(expression = expression, persistScript = persistScript, sourceURL = sourceURL)
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], persistScript = persistScript.asInstanceOf[js.Any], sourceURL = sourceURL.asInstanceOf[js.Any])
     if (executionContextId != null) __obj.updateDynamic("executionContextId")(executionContextId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompileScriptParameterType]
   }

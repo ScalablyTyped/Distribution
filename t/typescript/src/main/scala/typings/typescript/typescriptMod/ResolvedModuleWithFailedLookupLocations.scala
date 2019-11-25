@@ -12,7 +12,7 @@ object ResolvedModuleWithFailedLookupLocations {
   @scala.inline
   def apply(resolvedModule: ResolvedModuleFull = null): ResolvedModuleWithFailedLookupLocations = {
     val __obj = js.Dynamic.literal()
-    if (resolvedModule != null) __obj.updateDynamic("resolvedModule")(resolvedModule)
+    if (resolvedModule != null) __obj.updateDynamic("resolvedModule")(resolvedModule.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolvedModuleWithFailedLookupLocations]
   }
 }

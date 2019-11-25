@@ -36,7 +36,7 @@ object ServoOptions {
     max: Int | Double = null,
     min: Int | Double = null
   ): ServoOptions = {
-    val __obj = js.Dynamic.literal(pin = pin, pwm = pwm)
+    val __obj = js.Dynamic.literal(pin = pin.asInstanceOf[js.Any], pwm = pwm.asInstanceOf[js.Any])
     if (freq != null) __obj.updateDynamic("freq")(freq.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])

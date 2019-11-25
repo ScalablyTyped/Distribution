@@ -41,16 +41,16 @@ object SavedFeedResponseUser {
     shoppable_posts_count: Int | Double = null,
     show_shoppable_feed: js.UndefOr[Boolean] = js.undefined
   ): SavedFeedResponseUser = {
-    val __obj = js.Dynamic.literal(full_name = full_name, is_private = is_private, is_verified = is_verified, pk = pk, profile_pic_url = profile_pic_url, username = username)
-    if (!js.isUndefined(can_be_reported_as_fraud)) __obj.updateDynamic("can_be_reported_as_fraud")(can_be_reported_as_fraud)
-    if (friendship_status != null) __obj.updateDynamic("friendship_status")(friendship_status)
-    if (!js.isUndefined(has_anonymous_profile_picture)) __obj.updateDynamic("has_anonymous_profile_picture")(has_anonymous_profile_picture)
-    if (!js.isUndefined(is_favorite)) __obj.updateDynamic("is_favorite")(is_favorite)
-    if (!js.isUndefined(is_unpublished)) __obj.updateDynamic("is_unpublished")(is_unpublished)
+    val __obj = js.Dynamic.literal(full_name = full_name.asInstanceOf[js.Any], is_private = is_private.asInstanceOf[js.Any], is_verified = is_verified.asInstanceOf[js.Any], pk = pk.asInstanceOf[js.Any], profile_pic_url = profile_pic_url.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
+    if (!js.isUndefined(can_be_reported_as_fraud)) __obj.updateDynamic("can_be_reported_as_fraud")(can_be_reported_as_fraud.asInstanceOf[js.Any])
+    if (friendship_status != null) __obj.updateDynamic("friendship_status")(friendship_status.asInstanceOf[js.Any])
+    if (!js.isUndefined(has_anonymous_profile_picture)) __obj.updateDynamic("has_anonymous_profile_picture")(has_anonymous_profile_picture.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_favorite)) __obj.updateDynamic("is_favorite")(is_favorite.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_unpublished)) __obj.updateDynamic("is_unpublished")(is_unpublished.asInstanceOf[js.Any])
     if (latest_reel_media != null) __obj.updateDynamic("latest_reel_media")(latest_reel_media.asInstanceOf[js.Any])
-    if (profile_pic_id != null) __obj.updateDynamic("profile_pic_id")(profile_pic_id)
+    if (profile_pic_id != null) __obj.updateDynamic("profile_pic_id")(profile_pic_id.asInstanceOf[js.Any])
     if (shoppable_posts_count != null) __obj.updateDynamic("shoppable_posts_count")(shoppable_posts_count.asInstanceOf[js.Any])
-    if (!js.isUndefined(show_shoppable_feed)) __obj.updateDynamic("show_shoppable_feed")(show_shoppable_feed)
+    if (!js.isUndefined(show_shoppable_feed)) __obj.updateDynamic("show_shoppable_feed")(show_shoppable_feed.asInstanceOf[js.Any])
     __obj.asInstanceOf[SavedFeedResponseUser]
   }
 }

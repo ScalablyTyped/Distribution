@@ -72,12 +72,12 @@ object PlusSpeechSpeechRecoginzeEvents {
     volumeChange: String = null
   ): PlusSpeechSpeechRecoginzeEvents = {
     val __obj = js.Dynamic.literal()
-    if (end != null) __obj.updateDynamic("end")(end)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (recognition != null) __obj.updateDynamic("recognition")(recognition)
-    if (recognizing != null) __obj.updateDynamic("recognizing")(recognizing)
-    if (start != null) __obj.updateDynamic("start")(start)
-    if (volumeChange != null) __obj.updateDynamic("volumeChange")(volumeChange)
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (recognition != null) __obj.updateDynamic("recognition")(recognition.asInstanceOf[js.Any])
+    if (recognizing != null) __obj.updateDynamic("recognizing")(recognizing.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (volumeChange != null) __obj.updateDynamic("volumeChange")(volumeChange.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusSpeechSpeechRecoginzeEvents]
   }
 }

@@ -18,7 +18,7 @@ object Anon_FieldOp {
   def apply(op: ScaleField, field: ScaleField = null, order: SortOrder = null): Anon_FieldOp = {
     val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (order != null) __obj.updateDynamic("order")(order)
+    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FieldOp]
   }
 }

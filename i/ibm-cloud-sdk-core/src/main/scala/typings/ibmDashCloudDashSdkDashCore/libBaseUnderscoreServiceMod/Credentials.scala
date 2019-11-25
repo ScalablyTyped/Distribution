@@ -24,12 +24,12 @@ object Credentials {
     username: String = null
   ): Credentials = {
     val __obj = js.Dynamic.literal()
-    if (iam_access_token != null) __obj.updateDynamic("iam_access_token")(iam_access_token)
-    if (iam_apikey != null) __obj.updateDynamic("iam_apikey")(iam_apikey)
-    if (iam_url != null) __obj.updateDynamic("iam_url")(iam_url)
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (url != null) __obj.updateDynamic("url")(url)
-    if (username != null) __obj.updateDynamic("username")(username)
+    if (iam_access_token != null) __obj.updateDynamic("iam_access_token")(iam_access_token.asInstanceOf[js.Any])
+    if (iam_apikey != null) __obj.updateDynamic("iam_apikey")(iam_apikey.asInstanceOf[js.Any])
+    if (iam_url != null) __obj.updateDynamic("iam_url")(iam_url.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[Credentials]
   }
 }

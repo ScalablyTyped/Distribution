@@ -27,7 +27,7 @@ object Anon_Body {
     name: String,
     params: Params
   ): Anon_Body = {
-    val __obj = js.Dynamic.literal(__type = __type, body = body, column = column, filename = filename, lineno = lineno, name = name, params = params)
+    val __obj = js.Dynamic.literal(__type = __type.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], lineno = lineno.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Body]
   }

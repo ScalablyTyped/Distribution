@@ -27,7 +27,7 @@ object Log {
     transactionHash: String,
     transactionIndex: Double
   ): Log = {
-    val __obj = js.Dynamic.literal(address = address, blockHash = blockHash, blockNumber = blockNumber, data = data, logIndex = logIndex, topics = topics, transactionHash = transactionHash, transactionIndex = transactionIndex)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], blockHash = blockHash.asInstanceOf[js.Any], blockNumber = blockNumber.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], logIndex = logIndex.asInstanceOf[js.Any], topics = topics.asInstanceOf[js.Any], transactionHash = transactionHash.asInstanceOf[js.Any], transactionIndex = transactionIndex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Log]
   }

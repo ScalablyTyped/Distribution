@@ -23,8 +23,8 @@ object PostProjectParams {
     textFormattingRule: TextFormattingRule,
     projectLeaderCanEditProjectLeader: js.UndefOr[Boolean] = js.undefined
   ): PostProjectParams = {
-    val __obj = js.Dynamic.literal(chartEnabled = chartEnabled, key = key, name = name, subtaskingEnabled = subtaskingEnabled, textFormattingRule = textFormattingRule)
-    if (!js.isUndefined(projectLeaderCanEditProjectLeader)) __obj.updateDynamic("projectLeaderCanEditProjectLeader")(projectLeaderCanEditProjectLeader)
+    val __obj = js.Dynamic.literal(chartEnabled = chartEnabled.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], subtaskingEnabled = subtaskingEnabled.asInstanceOf[js.Any], textFormattingRule = textFormattingRule.asInstanceOf[js.Any])
+    if (!js.isUndefined(projectLeaderCanEditProjectLeader)) __obj.updateDynamic("projectLeaderCanEditProjectLeader")(projectLeaderCanEditProjectLeader.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostProjectParams]
   }
 }

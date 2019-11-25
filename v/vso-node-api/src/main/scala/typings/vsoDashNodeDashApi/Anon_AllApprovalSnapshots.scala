@@ -21,7 +21,7 @@ object Anon_AllApprovalSnapshots {
     manualApprovals: Double,
     none: Double
   ): Anon_AllApprovalSnapshots = {
-    val __obj = js.Dynamic.literal(all = all, approvalSnapshots = approvalSnapshots, automatedApprovals = automatedApprovals, manualApprovals = manualApprovals, none = none)
+    val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any], approvalSnapshots = approvalSnapshots.asInstanceOf[js.Any], automatedApprovals = automatedApprovals.asInstanceOf[js.Any], manualApprovals = manualApprovals.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AllApprovalSnapshots]
   }

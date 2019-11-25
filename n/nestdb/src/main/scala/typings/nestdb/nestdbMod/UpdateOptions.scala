@@ -22,9 +22,9 @@ object UpdateOptions {
     upsert: js.UndefOr[Boolean] = js.undefined
   ): UpdateOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi)
-    if (!js.isUndefined(returnUpdatedDocs)) __obj.updateDynamic("returnUpdatedDocs")(returnUpdatedDocs)
-    if (!js.isUndefined(upsert)) __obj.updateDynamic("upsert")(upsert)
+    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnUpdatedDocs)) __obj.updateDynamic("returnUpdatedDocs")(returnUpdatedDocs.asInstanceOf[js.Any])
+    if (!js.isUndefined(upsert)) __obj.updateDynamic("upsert")(upsert.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateOptions]
   }
 }

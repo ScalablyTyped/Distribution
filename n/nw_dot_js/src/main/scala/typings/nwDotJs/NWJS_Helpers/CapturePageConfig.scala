@@ -22,8 +22,8 @@ object CapturePageConfig {
   @scala.inline
   def apply(datatype: String = null, format: String = null): CapturePageConfig = {
     val __obj = js.Dynamic.literal()
-    if (datatype != null) __obj.updateDynamic("datatype")(datatype)
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     __obj.asInstanceOf[CapturePageConfig]
   }
 }

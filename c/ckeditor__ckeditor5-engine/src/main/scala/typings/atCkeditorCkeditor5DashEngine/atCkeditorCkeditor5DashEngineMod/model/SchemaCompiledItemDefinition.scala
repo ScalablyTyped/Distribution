@@ -23,7 +23,7 @@ object SchemaCompiledItemDefinition {
     isObject: Boolean,
     name: String
   ): SchemaCompiledItemDefinition = {
-    val __obj = js.Dynamic.literal(allowAttributes = allowAttributes.asInstanceOf[js.Any], allowIn = allowIn.asInstanceOf[js.Any], isBlock = isBlock, isLimit = isLimit, isObject = isObject, name = name)
+    val __obj = js.Dynamic.literal(allowAttributes = allowAttributes.asInstanceOf[js.Any], allowIn = allowIn.asInstanceOf[js.Any], isBlock = isBlock.asInstanceOf[js.Any], isLimit = isLimit.asInstanceOf[js.Any], isObject = isObject.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SchemaCompiledItemDefinition]
   }

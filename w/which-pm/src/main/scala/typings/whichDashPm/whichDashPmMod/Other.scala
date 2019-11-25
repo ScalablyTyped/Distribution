@@ -12,8 +12,8 @@ trait Other extends Result {
 object Other {
   @scala.inline
   def apply(name: String, version: String = null): Other = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (version != null) __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Other]
   }
 }

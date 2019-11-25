@@ -14,8 +14,8 @@ object Anon_Delayed {
   @scala.inline
   def apply(delayed: Record[String, String] = null, remove: Record[String, String] = null): Anon_Delayed = {
     val __obj = js.Dynamic.literal()
-    if (delayed != null) __obj.updateDynamic("delayed")(delayed)
-    if (remove != null) __obj.updateDynamic("remove")(remove)
+    if (delayed != null) __obj.updateDynamic("delayed")(delayed.asInstanceOf[js.Any])
+    if (remove != null) __obj.updateDynamic("remove")(remove.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Delayed]
   }
 }

@@ -25,9 +25,9 @@ trait CreateGrantOutput extends OutputTypesUnion {
 object CreateGrantOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, GrantId: String = null, GrantToken: String = null): CreateGrantOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (GrantId != null) __obj.updateDynamic("GrantId")(GrantId)
-    if (GrantToken != null) __obj.updateDynamic("GrantToken")(GrantToken)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (GrantId != null) __obj.updateDynamic("GrantId")(GrantId.asInstanceOf[js.Any])
+    if (GrantToken != null) __obj.updateDynamic("GrantToken")(GrantToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateGrantOutput]
   }
 }

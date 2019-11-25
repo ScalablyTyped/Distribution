@@ -12,7 +12,7 @@ trait ReverseGeocodeResponse extends js.Object {
 object ReverseGeocodeResponse {
   @scala.inline
   def apply(result: Anon_ItemsTotal): ReverseGeocodeResponse = {
-    val __obj = js.Dynamic.literal(result = result)
+    val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReverseGeocodeResponse]
   }

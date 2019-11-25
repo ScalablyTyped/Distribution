@@ -22,10 +22,10 @@ object Filter {
     query: NumberQuery | LabelQuery | DateQuery | TimeQuery | ValueQuery = null
   ): Filter = {
     val __obj = js.Dynamic.literal()
-    if (exclude != null) __obj.updateDynamic("exclude")(exclude)
-    if (include != null) __obj.updateDynamic("include")(include)
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     if (measure != null) __obj.updateDynamic("measure")(measure.asInstanceOf[js.Any])
-    if (members != null) __obj.updateDynamic("members")(members)
+    if (members != null) __obj.updateDynamic("members")(members.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     __obj.asInstanceOf[Filter]
   }

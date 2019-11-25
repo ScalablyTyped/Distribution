@@ -31,14 +31,14 @@ object SingleLineMenuOptions {
     y: Int | Double = null
   ): SingleLineMenuOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable)
-    if (!js.isUndefined(exitOnUnexpectedKey)) __obj.updateDynamic("exitOnUnexpectedKey")(exitOnUnexpectedKey)
-    if (keyBindings != null) __obj.updateDynamic("keyBindings")(keyBindings)
-    if (nextPageHint != null) __obj.updateDynamic("nextPageHint")(nextPageHint)
-    if (previousPageHint != null) __obj.updateDynamic("previousPageHint")(previousPageHint)
-    if (selectedStyle != null) __obj.updateDynamic("selectedStyle")(selectedStyle)
-    if (separator != null) __obj.updateDynamic("separator")(separator)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
+    if (!js.isUndefined(exitOnUnexpectedKey)) __obj.updateDynamic("exitOnUnexpectedKey")(exitOnUnexpectedKey.asInstanceOf[js.Any])
+    if (keyBindings != null) __obj.updateDynamic("keyBindings")(keyBindings.asInstanceOf[js.Any])
+    if (nextPageHint != null) __obj.updateDynamic("nextPageHint")(nextPageHint.asInstanceOf[js.Any])
+    if (previousPageHint != null) __obj.updateDynamic("previousPageHint")(previousPageHint.asInstanceOf[js.Any])
+    if (selectedStyle != null) __obj.updateDynamic("selectedStyle")(selectedStyle.asInstanceOf[js.Any])
+    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[SingleLineMenuOptions]
   }

@@ -16,7 +16,7 @@ object TopHitsResults {
   @scala.inline
   def apply(hits: js.Array[QueryResult] = null, matching_results: Int | Double = null): TopHitsResults = {
     val __obj = js.Dynamic.literal()
-    if (hits != null) __obj.updateDynamic("hits")(hits)
+    if (hits != null) __obj.updateDynamic("hits")(hits.asInstanceOf[js.Any])
     if (matching_results != null) __obj.updateDynamic("matching_results")(matching_results.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopHitsResults]
   }

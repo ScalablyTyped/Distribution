@@ -25,11 +25,11 @@ object Data {
     text: String = null
   ): Data = {
     val __obj = js.Dynamic.literal()
-    if (bookmark != null) __obj.updateDynamic("bookmark")(bookmark)
-    if (html != null) __obj.updateDynamic("html")(html)
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (rtf != null) __obj.updateDynamic("rtf")(rtf)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (bookmark != null) __obj.updateDynamic("bookmark")(bookmark.asInstanceOf[js.Any])
+    if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (rtf != null) __obj.updateDynamic("rtf")(rtf.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Data]
   }
 }

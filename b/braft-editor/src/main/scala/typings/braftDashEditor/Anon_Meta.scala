@@ -12,7 +12,7 @@ trait Anon_Meta extends js.Object {
 object Anon_Meta {
   @scala.inline
   def apply(meta: Anon_Alt, url: String): Anon_Meta = {
-    val __obj = js.Dynamic.literal(meta = meta, url = url)
+    val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Meta]
   }

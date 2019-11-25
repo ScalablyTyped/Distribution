@@ -22,7 +22,7 @@ object SchemaContext {
     schema: Schema,
     schemas: StringDictionary[Schema]
   ): SchemaContext = {
-    val __obj = js.Dynamic.literal(base = base, options = options, propertyPath = propertyPath, schema = schema, schemas = schemas)
+    val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], propertyPath = propertyPath.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any], schemas = schemas.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SchemaContext]
   }

@@ -8,16 +8,22 @@ import scala.scalajs.js.annotation._
 
 object saneStrings {
   @js.native
-  sealed trait add extends AllEventType
+  sealed trait add
+    extends AllEventType
+       with EventType
   
   @js.native
   sealed trait all extends EventType
   
   @js.native
-  sealed trait change extends AllEventType
+  sealed trait change
+    extends AllEventType
+       with EventType
   
   @js.native
-  sealed trait delete extends AllEventType
+  sealed trait delete
+    extends AllEventType
+       with EventType
   
   @js.native
   sealed trait error extends EventType

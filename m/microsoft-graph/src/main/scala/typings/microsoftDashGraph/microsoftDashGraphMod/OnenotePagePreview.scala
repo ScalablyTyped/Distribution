@@ -13,8 +13,8 @@ object OnenotePagePreview {
   @scala.inline
   def apply(links: OnenotePagePreviewLinks = null, previewText: String = null): OnenotePagePreview = {
     val __obj = js.Dynamic.literal()
-    if (links != null) __obj.updateDynamic("links")(links)
-    if (previewText != null) __obj.updateDynamic("previewText")(previewText)
+    if (links != null) __obj.updateDynamic("links")(links.asInstanceOf[js.Any])
+    if (previewText != null) __obj.updateDynamic("previewText")(previewText.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnenotePagePreview]
   }
 }

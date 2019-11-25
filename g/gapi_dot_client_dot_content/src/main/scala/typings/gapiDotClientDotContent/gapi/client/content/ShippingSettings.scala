@@ -21,9 +21,9 @@ object ShippingSettings {
     services: js.Array[Service] = null
   ): ShippingSettings = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId)
-    if (postalCodeGroups != null) __obj.updateDynamic("postalCodeGroups")(postalCodeGroups)
-    if (services != null) __obj.updateDynamic("services")(services)
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
+    if (postalCodeGroups != null) __obj.updateDynamic("postalCodeGroups")(postalCodeGroups.asInstanceOf[js.Any])
+    if (services != null) __obj.updateDynamic("services")(services.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShippingSettings]
   }
 }

@@ -15,7 +15,7 @@ object GetNetworkTypeSuccess {
   @scala.inline
   def apply(networkType: String = null): GetNetworkTypeSuccess = {
     val __obj = js.Dynamic.literal()
-    if (networkType != null) __obj.updateDynamic("networkType")(networkType)
+    if (networkType != null) __obj.updateDynamic("networkType")(networkType.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetNetworkTypeSuccess]
   }
 }

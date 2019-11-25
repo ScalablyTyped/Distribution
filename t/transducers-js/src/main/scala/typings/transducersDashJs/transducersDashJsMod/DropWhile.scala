@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("transducers-js", "DropWhile")
 @js.native
-class DropWhile[TResult, TInput] protected () extends Transformer[TResult, TInput] {
+class DropWhile[TResult, TInput] protected () extends CompletingTransformer[TResult, TResult, TInput] {
   def this(pred: js.Function1[/* input */ TInput, Boolean], xf: Transformer[TResult, TInput]) = this()
   /* CompleteClass */
   override def `@@transducer/init`(): TResult | Unit = js.native

@@ -38,8 +38,8 @@ object SourceControlResourceGroup {
     resourceStates: js.Array[SourceControlResourceState],
     hideWhenEmpty: js.UndefOr[Boolean] = js.undefined
   ): SourceControlResourceGroup = {
-    val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), id = id, label = label, resourceStates = resourceStates)
-    if (!js.isUndefined(hideWhenEmpty)) __obj.updateDynamic("hideWhenEmpty")(hideWhenEmpty)
+    val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], resourceStates = resourceStates.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideWhenEmpty)) __obj.updateDynamic("hideWhenEmpty")(hideWhenEmpty.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceControlResourceGroup]
   }
 }

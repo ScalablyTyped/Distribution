@@ -16,8 +16,8 @@ object ValidatorValidateEvent {
     sender: Validator,
     valid: js.UndefOr[Boolean] = js.undefined
   ): ValidatorValidateEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (!js.isUndefined(valid)) __obj.updateDynamic("valid")(valid)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (!js.isUndefined(valid)) __obj.updateDynamic("valid")(valid.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidatorValidateEvent]
   }
 }

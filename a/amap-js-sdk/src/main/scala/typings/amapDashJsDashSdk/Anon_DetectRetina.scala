@@ -30,15 +30,15 @@ object Anon_DetectRetina {
     zIndex: Int | Double = null,
     zooms: js.Array[Double] = null
   ): Anon_DetectRetina = {
-    val __obj = js.Dynamic.literal(map = map)
-    if (!js.isUndefined(detectRetina)) __obj.updateDynamic("detectRetina")(detectRetina)
-    if (errorUrl != null) __obj.updateDynamic("errorUrl")(errorUrl)
+    val __obj = js.Dynamic.literal(map = map.asInstanceOf[js.Any])
+    if (!js.isUndefined(detectRetina)) __obj.updateDynamic("detectRetina")(detectRetina.asInstanceOf[js.Any])
+    if (errorUrl != null) __obj.updateDynamic("errorUrl")(errorUrl.asInstanceOf[js.Any])
     if (getTileUrl != null) __obj.updateDynamic("getTileUrl")(js.Any.fromFunction3(getTileUrl))
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (tileSize != null) __obj.updateDynamic("tileSize")(tileSize.asInstanceOf[js.Any])
-    if (tileUrl != null) __obj.updateDynamic("tileUrl")(tileUrl)
+    if (tileUrl != null) __obj.updateDynamic("tileUrl")(tileUrl.asInstanceOf[js.Any])
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
-    if (zooms != null) __obj.updateDynamic("zooms")(zooms)
+    if (zooms != null) __obj.updateDynamic("zooms")(zooms.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DetectRetina]
   }
 }

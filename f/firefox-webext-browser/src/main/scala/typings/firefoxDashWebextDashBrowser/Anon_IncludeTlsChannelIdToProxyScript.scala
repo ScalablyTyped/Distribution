@@ -22,8 +22,8 @@ object Anon_IncludeTlsChannelIdToProxyScript {
     toProxyScript: js.UndefOr[Boolean] = js.undefined
   ): Anon_IncludeTlsChannelIdToProxyScript = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeTlsChannelId)) __obj.updateDynamic("includeTlsChannelId")(includeTlsChannelId)
-    if (!js.isUndefined(toProxyScript)) __obj.updateDynamic("toProxyScript")(toProxyScript)
+    if (!js.isUndefined(includeTlsChannelId)) __obj.updateDynamic("includeTlsChannelId")(includeTlsChannelId.asInstanceOf[js.Any])
+    if (!js.isUndefined(toProxyScript)) __obj.updateDynamic("toProxyScript")(toProxyScript.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IncludeTlsChannelIdToProxyScript]
   }
 }

@@ -36,17 +36,17 @@ object VerticalTimelineElementProps {
     visibilitySensorProps: js.Any = null
   ): VerticalTimelineElementProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (contentArrowStyle != null) __obj.updateDynamic("contentArrowStyle")(contentArrowStyle)
-    if (contentStyle != null) __obj.updateDynamic("contentStyle")(contentStyle)
-    if (date != null) __obj.updateDynamic("date")(date)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (contentArrowStyle != null) __obj.updateDynamic("contentArrowStyle")(contentArrowStyle.asInstanceOf[js.Any])
+    if (contentStyle != null) __obj.updateDynamic("contentStyle")(contentStyle.asInstanceOf[js.Any])
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (iconOnClick != null) __obj.updateDynamic("iconOnClick")(js.Any.fromFunction0(iconOnClick))
-    if (iconStyle != null) __obj.updateDynamic("iconStyle")(iconStyle)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (visibilitySensorProps != null) __obj.updateDynamic("visibilitySensorProps")(visibilitySensorProps)
+    if (iconStyle != null) __obj.updateDynamic("iconStyle")(iconStyle.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (visibilitySensorProps != null) __obj.updateDynamic("visibilitySensorProps")(visibilitySensorProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[VerticalTimelineElementProps]
   }
 }

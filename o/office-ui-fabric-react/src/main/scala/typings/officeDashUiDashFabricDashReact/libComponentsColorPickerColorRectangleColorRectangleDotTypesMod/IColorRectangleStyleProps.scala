@@ -23,8 +23,8 @@ trait IColorRectangleStyleProps extends js.Object {
 object IColorRectangleStyleProps {
   @scala.inline
   def apply(theme: ITheme, className: String = null, minSize: Int | Double = null): IColorRectangleStyleProps = {
-    val __obj = js.Dynamic.literal(theme = theme)
-    if (className != null) __obj.updateDynamic("className")(className)
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (minSize != null) __obj.updateDynamic("minSize")(minSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[IColorRectangleStyleProps]
   }

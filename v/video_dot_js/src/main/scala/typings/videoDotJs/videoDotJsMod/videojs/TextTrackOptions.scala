@@ -30,15 +30,15 @@ object TextTrackOptions {
     tech: Tech = null
   ): TextTrackOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (mode != null) __obj.updateDynamic("mode")(mode)
-    if (src != null) __obj.updateDynamic("src")(src)
-    if (srclang != null) __obj.updateDynamic("srclang")(srclang)
-    if (tech != null) __obj.updateDynamic("tech")(tech)
+    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
+    if (srclang != null) __obj.updateDynamic("srclang")(srclang.asInstanceOf[js.Any])
+    if (tech != null) __obj.updateDynamic("tech")(tech.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextTrackOptions]
   }
 }

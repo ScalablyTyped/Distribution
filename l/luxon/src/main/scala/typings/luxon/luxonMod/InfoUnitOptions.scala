@@ -12,8 +12,8 @@ object InfoUnitOptions {
   @scala.inline
   def apply(locale: String = null, numberingSystem: NumberingSystem = null): InfoUnitOptions = {
     val __obj = js.Dynamic.literal()
-    if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (numberingSystem != null) __obj.updateDynamic("numberingSystem")(numberingSystem)
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
+    if (numberingSystem != null) __obj.updateDynamic("numberingSystem")(numberingSystem.asInstanceOf[js.Any])
     __obj.asInstanceOf[InfoUnitOptions]
   }
 }

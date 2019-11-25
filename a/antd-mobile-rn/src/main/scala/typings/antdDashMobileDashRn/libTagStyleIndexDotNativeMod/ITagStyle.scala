@@ -45,7 +45,7 @@ object ITagStyle {
     wrap: ViewStyle,
     wrapSmall: ViewStyle
   ): ITagStyle = {
-    val __obj = js.Dynamic.literal(activeText = activeText, activeWrap = activeWrap, close = close, closeAndroid = closeAndroid, closeIOS = closeIOS, closeText = closeText, closeTransform = closeTransform, disabledText = disabledText, disabledWrap = disabledWrap, normalText = normalText, normalWrap = normalWrap, tag = tag, text = text, textSmall = textSmall, wrap = wrap, wrapSmall = wrapSmall)
+    val __obj = js.Dynamic.literal(activeText = activeText.asInstanceOf[js.Any], activeWrap = activeWrap.asInstanceOf[js.Any], close = close.asInstanceOf[js.Any], closeAndroid = closeAndroid.asInstanceOf[js.Any], closeIOS = closeIOS.asInstanceOf[js.Any], closeText = closeText.asInstanceOf[js.Any], closeTransform = closeTransform.asInstanceOf[js.Any], disabledText = disabledText.asInstanceOf[js.Any], disabledWrap = disabledWrap.asInstanceOf[js.Any], normalText = normalText.asInstanceOf[js.Any], normalWrap = normalWrap.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textSmall = textSmall.asInstanceOf[js.Any], wrap = wrap.asInstanceOf[js.Any], wrapSmall = wrapSmall.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ITagStyle]
   }

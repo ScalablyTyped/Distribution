@@ -41,12 +41,12 @@ object Options {
     verbose_more: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(blocksplitting)) __obj.updateDynamic("blocksplitting")(blocksplitting)
-    if (!js.isUndefined(blocksplittinglast)) __obj.updateDynamic("blocksplittinglast")(blocksplittinglast)
+    if (!js.isUndefined(blocksplitting)) __obj.updateDynamic("blocksplitting")(blocksplitting.asInstanceOf[js.Any])
+    if (!js.isUndefined(blocksplittinglast)) __obj.updateDynamic("blocksplittinglast")(blocksplittinglast.asInstanceOf[js.Any])
     if (blocksplittingmax != null) __obj.updateDynamic("blocksplittingmax")(blocksplittingmax.asInstanceOf[js.Any])
     if (numiterations != null) __obj.updateDynamic("numiterations")(numiterations.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
-    if (!js.isUndefined(verbose_more)) __obj.updateDynamic("verbose_more")(verbose_more)
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose_more)) __obj.updateDynamic("verbose_more")(verbose_more.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

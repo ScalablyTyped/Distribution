@@ -18,15 +18,11 @@ object ToggleButtonProps {
   def apply(
     value: Double | String,
     AllHTMLAttributes: AllHTMLAttributes[ToggleButton] = null,
-    ClassAttributes: ClassAttributes[ToggleButton] = null,
-    checked: js.UndefOr[Boolean] = js.undefined,
-    name: String = null
+    ClassAttributes: ClassAttributes[ToggleButton] = null
   ): ToggleButtonProps = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     __obj.asInstanceOf[ToggleButtonProps]
   }
 }

@@ -11,7 +11,7 @@ trait Anon_EnumValuesAnonAliasMemberGroupRole extends js.Object {
 object Anon_EnumValuesAnonAliasMemberGroupRole {
   @scala.inline
   def apply(enumValues: Anon_AliasMemberGroupRole): Anon_EnumValuesAnonAliasMemberGroupRole = {
-    val __obj = js.Dynamic.literal(enumValues = enumValues)
+    val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EnumValuesAnonAliasMemberGroupRole]
   }

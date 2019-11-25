@@ -38,9 +38,9 @@ object Options {
     rename: String | (js.Function1[/* basename */ String, String]) = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
-    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite)
-    if (!js.isUndefined(parents)) __obj.updateDynamic("parents")(parents)
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
+    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite.asInstanceOf[js.Any])
+    if (!js.isUndefined(parents)) __obj.updateDynamic("parents")(parents.asInstanceOf[js.Any])
     if (rename != null) __obj.updateDynamic("rename")(rename.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

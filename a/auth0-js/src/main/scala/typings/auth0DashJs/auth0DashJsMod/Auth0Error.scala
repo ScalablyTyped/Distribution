@@ -34,15 +34,15 @@ object Auth0Error {
     statusText: String = null
   ): Auth0Error = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (errorDescription != null) __obj.updateDynamic("errorDescription")(errorDescription)
-    if (error_description != null) __obj.updateDynamic("error_description")(error_description)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (original != null) __obj.updateDynamic("original")(original)
-    if (policy != null) __obj.updateDynamic("policy")(policy)
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (errorDescription != null) __obj.updateDynamic("errorDescription")(errorDescription.asInstanceOf[js.Any])
+    if (error_description != null) __obj.updateDynamic("error_description")(error_description.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (original != null) __obj.updateDynamic("original")(original.asInstanceOf[js.Any])
+    if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
     if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
-    if (statusText != null) __obj.updateDynamic("statusText")(statusText)
+    if (statusText != null) __obj.updateDynamic("statusText")(statusText.asInstanceOf[js.Any])
     __obj.asInstanceOf[Auth0Error]
   }
 }

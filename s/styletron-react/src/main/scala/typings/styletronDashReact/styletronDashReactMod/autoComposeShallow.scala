@@ -14,7 +14,7 @@ object autoComposeShallow extends js.Object {
       /* styletron */ Styletron, 
       /* style */ StyleObject, 
       ReturnType[
-        /* import warning: ImportType.apply Failed type conversion: typeof composeStatic */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: typeof composeStatic */ js.Any
       ]
     ]
   ] = js.native
@@ -23,7 +23,7 @@ object autoComposeShallow extends js.Object {
       /* styletron */ Styletron, 
       /* style */ StyleObject, 
       ReturnType[
-        /* import warning: ImportType.apply Failed type conversion: typeof composeStatic */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: typeof composeStatic */ js.Any
       ]
     ]
   ] = js.native

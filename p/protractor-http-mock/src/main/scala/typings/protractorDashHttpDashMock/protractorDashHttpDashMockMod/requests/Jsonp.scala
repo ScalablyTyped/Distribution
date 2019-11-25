@@ -17,7 +17,7 @@ trait Jsonp[TResponse] extends js.Object {
 object Jsonp {
   @scala.inline
   def apply[TResponse](request: Anon_JSONP, response: Anon_Data[TResponse]): Jsonp[TResponse] = {
-    val __obj = js.Dynamic.literal(request = request, response = response)
+    val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Jsonp[TResponse]]
   }

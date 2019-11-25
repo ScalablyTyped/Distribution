@@ -22,10 +22,10 @@ object MessagingSubscribeOptions {
     timeout: Int | Double = null
   ): MessagingSubscribeOptions = {
     val __obj = js.Dynamic.literal()
-    if (invocationContext != null) __obj.updateDynamic("invocationContext")(invocationContext)
-    if (onFailure != null) __obj.updateDynamic("onFailure")(onFailure)
-    if (onSuccess != null) __obj.updateDynamic("onSuccess")(onSuccess)
-    if (qos != null) __obj.updateDynamic("qos")(qos)
+    if (invocationContext != null) __obj.updateDynamic("invocationContext")(invocationContext.asInstanceOf[js.Any])
+    if (onFailure != null) __obj.updateDynamic("onFailure")(onFailure.asInstanceOf[js.Any])
+    if (onSuccess != null) __obj.updateDynamic("onSuccess")(onSuccess.asInstanceOf[js.Any])
+    if (qos != null) __obj.updateDynamic("qos")(qos.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessagingSubscribeOptions]
   }

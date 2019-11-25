@@ -18,9 +18,9 @@ object Options {
     reconfigureDirection: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(activeLow)) __obj.updateDynamic("activeLow")(activeLow)
+    if (!js.isUndefined(activeLow)) __obj.updateDynamic("activeLow")(activeLow.asInstanceOf[js.Any])
     if (debounceTimeout != null) __obj.updateDynamic("debounceTimeout")(debounceTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(reconfigureDirection)) __obj.updateDynamic("reconfigureDirection")(reconfigureDirection)
+    if (!js.isUndefined(reconfigureDirection)) __obj.updateDynamic("reconfigureDirection")(reconfigureDirection.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

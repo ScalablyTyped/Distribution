@@ -68,20 +68,20 @@ object HighlighterProps {
     unhighlightClassName: String = null,
     unhighlightStyle: CSSProperties = null
   ): HighlighterProps = {
-    val __obj = js.Dynamic.literal(searchWords = searchWords, textToHighlight = textToHighlight)
-    if (activeClassName != null) __obj.updateDynamic("activeClassName")(activeClassName)
+    val __obj = js.Dynamic.literal(searchWords = searchWords.asInstanceOf[js.Any], textToHighlight = textToHighlight.asInstanceOf[js.Any])
+    if (activeClassName != null) __obj.updateDynamic("activeClassName")(activeClassName.asInstanceOf[js.Any])
     if (activeIndex != null) __obj.updateDynamic("activeIndex")(activeIndex.asInstanceOf[js.Any])
-    if (activeStyle != null) __obj.updateDynamic("activeStyle")(activeStyle)
-    if (!js.isUndefined(autoEscape)) __obj.updateDynamic("autoEscape")(autoEscape)
-    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive)
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (activeStyle != null) __obj.updateDynamic("activeStyle")(activeStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoEscape)) __obj.updateDynamic("autoEscape")(autoEscape.asInstanceOf[js.Any])
+    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (findChunks != null) __obj.updateDynamic("findChunks")(js.Any.fromFunction1(findChunks))
-    if (highlightClassName != null) __obj.updateDynamic("highlightClassName")(highlightClassName)
-    if (highlightStyle != null) __obj.updateDynamic("highlightStyle")(highlightStyle)
+    if (highlightClassName != null) __obj.updateDynamic("highlightClassName")(highlightClassName.asInstanceOf[js.Any])
+    if (highlightStyle != null) __obj.updateDynamic("highlightStyle")(highlightStyle.asInstanceOf[js.Any])
     if (highlightTag != null) __obj.updateDynamic("highlightTag")(highlightTag.asInstanceOf[js.Any])
     if (sanitize != null) __obj.updateDynamic("sanitize")(js.Any.fromFunction1(sanitize))
-    if (unhighlightClassName != null) __obj.updateDynamic("unhighlightClassName")(unhighlightClassName)
-    if (unhighlightStyle != null) __obj.updateDynamic("unhighlightStyle")(unhighlightStyle)
+    if (unhighlightClassName != null) __obj.updateDynamic("unhighlightClassName")(unhighlightClassName.asInstanceOf[js.Any])
+    if (unhighlightStyle != null) __obj.updateDynamic("unhighlightStyle")(unhighlightStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[HighlighterProps]
   }
 }

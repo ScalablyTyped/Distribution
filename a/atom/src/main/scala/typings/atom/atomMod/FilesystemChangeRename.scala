@@ -16,7 +16,7 @@ trait FilesystemChangeRename extends FilesystemChangeBasic[renamed] {
 object FilesystemChangeRename {
   @scala.inline
   def apply(action: renamed, oldPath: String, path: String): FilesystemChangeRename = {
-    val __obj = js.Dynamic.literal(action = action, oldPath = oldPath, path = path)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], oldPath = oldPath.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FilesystemChangeRename]
   }

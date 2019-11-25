@@ -40,7 +40,7 @@ object CardStyle {
     headerTitle: ViewStyle,
     headerWrap: ViewStyle
   ): CardStyle = {
-    val __obj = js.Dynamic.literal(body = body, card = card, footerContent = footerContent, footerExtra = footerExtra, footerWrap = footerWrap, full = full, headerContent = headerContent, headerContentWrap = headerContentWrap, headerExtra = headerExtra, headerExtraWrap = headerExtraWrap, headerImage = headerImage, headerTitle = headerTitle, headerWrap = headerWrap)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], card = card.asInstanceOf[js.Any], footerContent = footerContent.asInstanceOf[js.Any], footerExtra = footerExtra.asInstanceOf[js.Any], footerWrap = footerWrap.asInstanceOf[js.Any], full = full.asInstanceOf[js.Any], headerContent = headerContent.asInstanceOf[js.Any], headerContentWrap = headerContentWrap.asInstanceOf[js.Any], headerExtra = headerExtra.asInstanceOf[js.Any], headerExtraWrap = headerExtraWrap.asInstanceOf[js.Any], headerImage = headerImage.asInstanceOf[js.Any], headerTitle = headerTitle.asInstanceOf[js.Any], headerWrap = headerWrap.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CardStyle]
   }

@@ -12,7 +12,7 @@ object Anon_Value {
   @scala.inline
   def apply(value: String = null): Anon_Value = {
     val __obj = js.Dynamic.literal()
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Value]
   }
 }

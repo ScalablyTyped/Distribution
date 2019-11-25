@@ -29,12 +29,12 @@ object Anon_DocumentType {
     targetID: String = null,
     value: String = null
   ): Anon_DocumentType = {
-    val __obj = js.Dynamic.literal(documentType = documentType, documentURL = documentURL, isEditable = isEditable, targetName = targetName)
-    if (linkURL != null) __obj.updateDynamic("linkURL")(linkURL)
-    if (selectionText != null) __obj.updateDynamic("selectionText")(selectionText)
-    if (srcURL != null) __obj.updateDynamic("srcURL")(srcURL)
-    if (targetID != null) __obj.updateDynamic("targetID")(targetID)
-    if (value != null) __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(documentType = documentType.asInstanceOf[js.Any], documentURL = documentURL.asInstanceOf[js.Any], isEditable = isEditable.asInstanceOf[js.Any], targetName = targetName.asInstanceOf[js.Any])
+    if (linkURL != null) __obj.updateDynamic("linkURL")(linkURL.asInstanceOf[js.Any])
+    if (selectionText != null) __obj.updateDynamic("selectionText")(selectionText.asInstanceOf[js.Any])
+    if (srcURL != null) __obj.updateDynamic("srcURL")(srcURL.asInstanceOf[js.Any])
+    if (targetID != null) __obj.updateDynamic("targetID")(targetID.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DocumentType]
   }
 }

@@ -36,7 +36,7 @@ object ControlledStateOverrideProps {
     pageSize: Int | Double = null,
     pages: Int | Double = null
   ): ControlledStateOverrideProps = {
-    val __obj = js.Dynamic.literal(SubComponent = js.Any.fromFunction1(SubComponent), filtered = filtered, resized = resized, sorted = sorted, sorting = sorting)
+    val __obj = js.Dynamic.literal(SubComponent = js.Any.fromFunction1(SubComponent), filtered = filtered.asInstanceOf[js.Any], resized = resized.asInstanceOf[js.Any], sorted = sorted.asInstanceOf[js.Any], sorting = sorting.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
     if (pages != null) __obj.updateDynamic("pages")(pages.asInstanceOf[js.Any])

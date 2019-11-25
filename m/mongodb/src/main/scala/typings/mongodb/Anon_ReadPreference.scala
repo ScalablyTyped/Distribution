@@ -14,8 +14,8 @@ trait Anon_ReadPreference extends js.Object {
 object Anon_ReadPreference {
   @scala.inline
   def apply(readPreference: ReadPreferenceOrMode, session: ClientSession = null): Anon_ReadPreference = {
-    val __obj = js.Dynamic.literal(readPreference = readPreference)
-    if (session != null) __obj.updateDynamic("session")(session)
+    val __obj = js.Dynamic.literal(readPreference = readPreference.asInstanceOf[js.Any])
+    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ReadPreference]
   }
 }

@@ -33,15 +33,15 @@ object CustomPropertyArray {
     show: Boolean | ShowFunction = null
   ): CustomPropertyArray = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (addTranslation != null) __obj.updateDynamic("addTranslation")(addTranslation)
-    if (!js.isUndefined(allowAdd)) __obj.updateDynamic("allowAdd")(allowAdd)
-    if (!js.isUndefined(allowMove)) __obj.updateDynamic("allowMove")(allowMove)
-    if (!js.isUndefined(allowRemove)) __obj.updateDynamic("allowRemove")(allowRemove)
-    if (!js.isUndefined(component)) __obj.updateDynamic("component")(component)
-    if (itemTitleRef != null) __obj.updateDynamic("itemTitleRef")(itemTitleRef)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (ref != null) __obj.updateDynamic("ref")(ref)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (addTranslation != null) __obj.updateDynamic("addTranslation")(addTranslation.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowAdd)) __obj.updateDynamic("allowAdd")(allowAdd.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowMove)) __obj.updateDynamic("allowMove")(allowMove.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowRemove)) __obj.updateDynamic("allowRemove")(allowRemove.asInstanceOf[js.Any])
+    if (!js.isUndefined(component)) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
+    if (itemTitleRef != null) __obj.updateDynamic("itemTitleRef")(itemTitleRef.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomPropertyArray]
   }

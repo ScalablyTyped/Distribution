@@ -14,8 +14,8 @@ object UnsubscribeParameters {
   @scala.inline
   def apply(channelGroups: js.Array[String] = null, channels: js.Array[String] = null): UnsubscribeParameters = {
     val __obj = js.Dynamic.literal()
-    if (channelGroups != null) __obj.updateDynamic("channelGroups")(channelGroups)
-    if (channels != null) __obj.updateDynamic("channels")(channels)
+    if (channelGroups != null) __obj.updateDynamic("channelGroups")(channelGroups.asInstanceOf[js.Any])
+    if (channels != null) __obj.updateDynamic("channels")(channels.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnsubscribeParameters]
   }
 }

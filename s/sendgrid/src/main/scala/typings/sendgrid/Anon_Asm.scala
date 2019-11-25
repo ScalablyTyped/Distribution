@@ -45,7 +45,7 @@ object Anon_Asm {
     template_id: String,
     tracking_settings: js.Any
   ): Anon_Asm = {
-    val __obj = js.Dynamic.literal(asm = asm, attachments = attachments, batch_id = batch_id, categories = categories, content = content, custom_args = custom_args, from = from, headers = headers, ip_pool_name = ip_pool_name, mail_settings = mail_settings, personalizations = personalizations, reply_to = reply_to, sections = sections, send_at = send_at, subject = subject, template_id = template_id, tracking_settings = tracking_settings)
+    val __obj = js.Dynamic.literal(asm = asm.asInstanceOf[js.Any], attachments = attachments.asInstanceOf[js.Any], batch_id = batch_id.asInstanceOf[js.Any], categories = categories.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], custom_args = custom_args.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], ip_pool_name = ip_pool_name.asInstanceOf[js.Any], mail_settings = mail_settings.asInstanceOf[js.Any], personalizations = personalizations.asInstanceOf[js.Any], reply_to = reply_to.asInstanceOf[js.Any], sections = sections.asInstanceOf[js.Any], send_at = send_at.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any], template_id = template_id.asInstanceOf[js.Any], tracking_settings = tracking_settings.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Asm]
   }

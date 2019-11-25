@@ -14,7 +14,7 @@ object Anon_PageSize {
   def apply(pageSize: Int | Double = null, params: js.Any = null): Anon_PageSize = {
     val __obj = js.Dynamic.literal()
     if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params)
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_PageSize]
   }
 }

@@ -23,9 +23,9 @@ object NormalizationStream {
     `if`: String = null,
     metadata: StringDictionary[js.Any] = null
   ): NormalizationStream = {
-    val __obj = js.Dynamic.literal(kind = kind, label = label, selections = selections)
-    if (`if` != null) __obj.updateDynamic("if")(`if`)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
+    if (`if` != null) __obj.updateDynamic("if")(`if`.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[NormalizationStream]
   }
 }

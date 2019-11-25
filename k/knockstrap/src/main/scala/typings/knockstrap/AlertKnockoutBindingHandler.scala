@@ -32,9 +32,9 @@ object AlertKnockoutBindingHandler {
     update: (js.Any, /* valueAccessor */ js.Function0[js.Any], /* allBindingsAccessor */ KnockoutAllBindingsAccessor, js.Any, /* bindingContext */ KnockoutBindingContext) => Unit = null
   ): AlertKnockoutBindingHandler = {
     val __obj = js.Dynamic.literal()
-    if (after != null) __obj.updateDynamic("after")(after)
+    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
     if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction5(init))
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (preprocess != null) __obj.updateDynamic("preprocess")(js.Any.fromFunction3(preprocess))
     if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction5(update))
     __obj.asInstanceOf[AlertKnockoutBindingHandler]

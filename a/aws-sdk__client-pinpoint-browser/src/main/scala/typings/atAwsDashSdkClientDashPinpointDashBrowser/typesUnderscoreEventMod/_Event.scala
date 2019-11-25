@@ -46,11 +46,11 @@ object _Event {
   ): _Event = {
     val __obj = js.Dynamic.literal()
     if (Attributes != null) __obj.updateDynamic("Attributes")(Attributes.asInstanceOf[js.Any])
-    if (ClientSdkVersion != null) __obj.updateDynamic("ClientSdkVersion")(ClientSdkVersion)
-    if (EventType != null) __obj.updateDynamic("EventType")(EventType)
+    if (ClientSdkVersion != null) __obj.updateDynamic("ClientSdkVersion")(ClientSdkVersion.asInstanceOf[js.Any])
+    if (EventType != null) __obj.updateDynamic("EventType")(EventType.asInstanceOf[js.Any])
     if (Metrics != null) __obj.updateDynamic("Metrics")(Metrics.asInstanceOf[js.Any])
-    if (Session != null) __obj.updateDynamic("Session")(Session)
-    if (Timestamp != null) __obj.updateDynamic("Timestamp")(Timestamp)
+    if (Session != null) __obj.updateDynamic("Session")(Session.asInstanceOf[js.Any])
+    if (Timestamp != null) __obj.updateDynamic("Timestamp")(Timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Event]
   }
 }

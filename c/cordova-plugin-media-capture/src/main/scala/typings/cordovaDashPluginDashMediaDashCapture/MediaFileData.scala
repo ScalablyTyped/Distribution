@@ -21,7 +21,7 @@ trait MediaFileData extends js.Object {
 object MediaFileData {
   @scala.inline
   def apply(bitrate: Double, codecs: String, duration: Double, height: Double, width: Double): MediaFileData = {
-    val __obj = js.Dynamic.literal(bitrate = bitrate, codecs = codecs, duration = duration, height = height, width = width)
+    val __obj = js.Dynamic.literal(bitrate = bitrate.asInstanceOf[js.Any], codecs = codecs.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MediaFileData]
   }

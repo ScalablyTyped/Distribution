@@ -12,7 +12,7 @@ object ActivityContentDetailsUpload {
   @scala.inline
   def apply(videoId: String = null): ActivityContentDetailsUpload = {
     val __obj = js.Dynamic.literal()
-    if (videoId != null) __obj.updateDynamic("videoId")(videoId)
+    if (videoId != null) __obj.updateDynamic("videoId")(videoId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivityContentDetailsUpload]
   }
 }

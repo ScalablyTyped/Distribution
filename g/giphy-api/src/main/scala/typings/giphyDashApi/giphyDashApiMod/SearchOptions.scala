@@ -19,8 +19,8 @@ object SearchOptions {
     limit: Int | Double = null,
     offset: Int | Double = null
   ): SearchOptions = {
-    val __obj = js.Dynamic.literal(q = q, rating = rating)
-    if (fmt != null) __obj.updateDynamic("fmt")(fmt)
+    val __obj = js.Dynamic.literal(q = q.asInstanceOf[js.Any], rating = rating.asInstanceOf[js.Any])
+    if (fmt != null) __obj.updateDynamic("fmt")(fmt.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchOptions]

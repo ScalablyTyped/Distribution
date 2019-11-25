@@ -13,7 +13,7 @@ trait LoadDescriptionFileResult extends js.Object {
 object LoadDescriptionFileResult {
   @scala.inline
   def apply(content: DescriptionFileData, directory: String, path: String): LoadDescriptionFileResult = {
-    val __obj = js.Dynamic.literal(content = content, directory = directory, path = path)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], directory = directory.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LoadDescriptionFileResult]
   }

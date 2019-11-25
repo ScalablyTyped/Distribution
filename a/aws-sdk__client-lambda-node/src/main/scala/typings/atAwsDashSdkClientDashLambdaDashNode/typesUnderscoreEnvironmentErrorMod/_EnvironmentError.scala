@@ -19,8 +19,8 @@ object _EnvironmentError {
   @scala.inline
   def apply(ErrorCode: String = null, Message: String = null): _EnvironmentError = {
     val __obj = js.Dynamic.literal()
-    if (ErrorCode != null) __obj.updateDynamic("ErrorCode")(ErrorCode)
-    if (Message != null) __obj.updateDynamic("Message")(Message)
+    if (ErrorCode != null) __obj.updateDynamic("ErrorCode")(ErrorCode.asInstanceOf[js.Any])
+    if (Message != null) __obj.updateDynamic("Message")(Message.asInstanceOf[js.Any])
     __obj.asInstanceOf[_EnvironmentError]
   }
 }

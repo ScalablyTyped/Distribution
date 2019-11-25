@@ -15,7 +15,7 @@ object CompressImageSuccessData {
   @scala.inline
   def apply(tempFilePath: String = null): CompressImageSuccessData = {
     val __obj = js.Dynamic.literal()
-    if (tempFilePath != null) __obj.updateDynamic("tempFilePath")(tempFilePath)
+    if (tempFilePath != null) __obj.updateDynamic("tempFilePath")(tempFilePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompressImageSuccessData]
   }
 }

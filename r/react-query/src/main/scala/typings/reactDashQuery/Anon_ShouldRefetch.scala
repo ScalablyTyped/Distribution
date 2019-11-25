@@ -12,7 +12,7 @@ object Anon_ShouldRefetch {
   @scala.inline
   def apply(shouldRefetch: js.UndefOr[Boolean] = js.undefined): Anon_ShouldRefetch = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(shouldRefetch)) __obj.updateDynamic("shouldRefetch")(shouldRefetch)
+    if (!js.isUndefined(shouldRefetch)) __obj.updateDynamic("shouldRefetch")(shouldRefetch.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ShouldRefetch]
   }
 }

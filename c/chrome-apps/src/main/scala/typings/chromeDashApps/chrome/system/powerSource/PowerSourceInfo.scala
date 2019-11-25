@@ -23,7 +23,7 @@ trait PowerSourceInfo extends js.Object {
 object PowerSourceInfo {
   @scala.inline
   def apply(active: Boolean, `type`: String | PowerSourceType, maxPower: Int | Double = null): PowerSourceInfo = {
-    val __obj = js.Dynamic.literal(active = active)
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (maxPower != null) __obj.updateDynamic("maxPower")(maxPower.asInstanceOf[js.Any])
     __obj.asInstanceOf[PowerSourceInfo]

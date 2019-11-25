@@ -70,22 +70,22 @@ object ConceptMapGroup {
     targetVersion: String = null,
     unmapped: ConceptMapGroupUnmapped = null
   ): ConceptMapGroup = {
-    val __obj = js.Dynamic.literal(element = element)
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
-    if (_id != null) __obj.updateDynamic("_id")(_id)
-    if (_source != null) __obj.updateDynamic("_source")(_source)
-    if (_sourceVersion != null) __obj.updateDynamic("_sourceVersion")(_sourceVersion)
-    if (_target != null) __obj.updateDynamic("_target")(_target)
-    if (_targetVersion != null) __obj.updateDynamic("_targetVersion")(_targetVersion)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (sourceVersion != null) __obj.updateDynamic("sourceVersion")(sourceVersion)
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (targetVersion != null) __obj.updateDynamic("targetVersion")(targetVersion)
-    if (unmapped != null) __obj.updateDynamic("unmapped")(unmapped)
+    val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any])
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
+    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
+    if (_source != null) __obj.updateDynamic("_source")(_source.asInstanceOf[js.Any])
+    if (_sourceVersion != null) __obj.updateDynamic("_sourceVersion")(_sourceVersion.asInstanceOf[js.Any])
+    if (_target != null) __obj.updateDynamic("_target")(_target.asInstanceOf[js.Any])
+    if (_targetVersion != null) __obj.updateDynamic("_targetVersion")(_targetVersion.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (sourceVersion != null) __obj.updateDynamic("sourceVersion")(sourceVersion.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (targetVersion != null) __obj.updateDynamic("targetVersion")(targetVersion.asInstanceOf[js.Any])
+    if (unmapped != null) __obj.updateDynamic("unmapped")(unmapped.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConceptMapGroup]
   }
 }

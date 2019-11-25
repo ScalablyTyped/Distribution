@@ -15,7 +15,7 @@ object SaveFileSuccess {
   @scala.inline
   def apply(savedFilePath: String = null): SaveFileSuccess = {
     val __obj = js.Dynamic.literal()
-    if (savedFilePath != null) __obj.updateDynamic("savedFilePath")(savedFilePath)
+    if (savedFilePath != null) __obj.updateDynamic("savedFilePath")(savedFilePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[SaveFileSuccess]
   }
 }

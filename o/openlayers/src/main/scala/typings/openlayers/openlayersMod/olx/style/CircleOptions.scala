@@ -24,11 +24,11 @@ object CircleOptions {
     snapToPixel: js.UndefOr[Boolean] = js.undefined,
     stroke: Stroke = null
   ): CircleOptions = {
-    val __obj = js.Dynamic.literal(radius = radius)
-    if (atlasManager != null) __obj.updateDynamic("atlasManager")(atlasManager)
-    if (fill != null) __obj.updateDynamic("fill")(fill)
-    if (!js.isUndefined(snapToPixel)) __obj.updateDynamic("snapToPixel")(snapToPixel)
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
+    val __obj = js.Dynamic.literal(radius = radius.asInstanceOf[js.Any])
+    if (atlasManager != null) __obj.updateDynamic("atlasManager")(atlasManager.asInstanceOf[js.Any])
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    if (!js.isUndefined(snapToPixel)) __obj.updateDynamic("snapToPixel")(snapToPixel.asInstanceOf[js.Any])
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     __obj.asInstanceOf[CircleOptions]
   }
 }

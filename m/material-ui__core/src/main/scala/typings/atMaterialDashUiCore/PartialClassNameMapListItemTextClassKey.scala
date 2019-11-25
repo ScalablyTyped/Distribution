@@ -25,12 +25,12 @@ object PartialClassNameMapListItemTextClassKey {
     textDense: String = null
   ): PartialClassNameMapListItemTextClassKey = {
     val __obj = js.Dynamic.literal()
-    if (dense != null) __obj.updateDynamic("dense")(dense)
-    if (inset != null) __obj.updateDynamic("inset")(inset)
-    if (primary != null) __obj.updateDynamic("primary")(primary)
-    if (root != null) __obj.updateDynamic("root")(root)
-    if (secondary != null) __obj.updateDynamic("secondary")(secondary)
-    if (textDense != null) __obj.updateDynamic("textDense")(textDense)
+    if (dense != null) __obj.updateDynamic("dense")(dense.asInstanceOf[js.Any])
+    if (inset != null) __obj.updateDynamic("inset")(inset.asInstanceOf[js.Any])
+    if (primary != null) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (secondary != null) __obj.updateDynamic("secondary")(secondary.asInstanceOf[js.Any])
+    if (textDense != null) __obj.updateDynamic("textDense")(textDense.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapListItemTextClassKey]
   }
 }

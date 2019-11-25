@@ -19,8 +19,8 @@ object GoogleActionsV2OrdersOrderUpdateUserNotification {
   @scala.inline
   def apply(text: String = null, title: String = null): GoogleActionsV2OrdersOrderUpdateUserNotification = {
     val __obj = js.Dynamic.literal()
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2OrdersOrderUpdateUserNotification]
   }
 }

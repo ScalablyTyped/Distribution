@@ -21,8 +21,8 @@ object AttendeeAvailability {
   @scala.inline
   def apply(attendee: AttendeeBase = null, availability: FreeBusyStatus = null): AttendeeAvailability = {
     val __obj = js.Dynamic.literal()
-    if (attendee != null) __obj.updateDynamic("attendee")(attendee)
-    if (availability != null) __obj.updateDynamic("availability")(availability)
+    if (attendee != null) __obj.updateDynamic("attendee")(attendee.asInstanceOf[js.Any])
+    if (availability != null) __obj.updateDynamic("availability")(availability.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttendeeAvailability]
   }
 }

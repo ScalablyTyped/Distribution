@@ -13,7 +13,7 @@ trait UserAgentSipEvent extends js.Object {
 object UserAgentSipEvent {
   @scala.inline
   def apply(event: Anon_Event, request: IncomingRequest): UserAgentSipEvent = {
-    val __obj = js.Dynamic.literal(event = event, request = request)
+    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UserAgentSipEvent]
   }

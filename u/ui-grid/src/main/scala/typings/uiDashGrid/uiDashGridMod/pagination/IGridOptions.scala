@@ -60,14 +60,14 @@ object IGridOptions {
     useExternalPagination: js.UndefOr[Boolean] = js.undefined
   ): IGridOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enablePagination)) __obj.updateDynamic("enablePagination")(enablePagination)
-    if (!js.isUndefined(enablePaginationControls)) __obj.updateDynamic("enablePaginationControls")(enablePaginationControls)
+    if (!js.isUndefined(enablePagination)) __obj.updateDynamic("enablePagination")(enablePagination.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePaginationControls)) __obj.updateDynamic("enablePaginationControls")(enablePaginationControls.asInstanceOf[js.Any])
     if (paginationCurrentPage != null) __obj.updateDynamic("paginationCurrentPage")(paginationCurrentPage.asInstanceOf[js.Any])
     if (paginationPageSize != null) __obj.updateDynamic("paginationPageSize")(paginationPageSize.asInstanceOf[js.Any])
-    if (paginationPageSizes != null) __obj.updateDynamic("paginationPageSizes")(paginationPageSizes)
-    if (paginationTemplate != null) __obj.updateDynamic("paginationTemplate")(paginationTemplate)
+    if (paginationPageSizes != null) __obj.updateDynamic("paginationPageSizes")(paginationPageSizes.asInstanceOf[js.Any])
+    if (paginationTemplate != null) __obj.updateDynamic("paginationTemplate")(paginationTemplate.asInstanceOf[js.Any])
     if (totalItems != null) __obj.updateDynamic("totalItems")(totalItems.asInstanceOf[js.Any])
-    if (!js.isUndefined(useExternalPagination)) __obj.updateDynamic("useExternalPagination")(useExternalPagination)
+    if (!js.isUndefined(useExternalPagination)) __obj.updateDynamic("useExternalPagination")(useExternalPagination.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGridOptions]
   }
 }

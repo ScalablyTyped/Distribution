@@ -116,16 +116,16 @@ object ISetupIntent {
     payment_method: String = null,
     payment_method_options: ISetupIntentPaymentMethodOptions = null
   ): ISetupIntent = {
-    val __obj = js.Dynamic.literal(client_secret = client_secret, created = created, id = id, livemode = livemode, metadata = metadata, next_action = next_action.asInstanceOf[js.Any], payment_method_types = payment_method_types, status = status.asInstanceOf[js.Any], usage = usage)
-    __obj.updateDynamic("object")(`object`)
+    val __obj = js.Dynamic.literal(client_secret = client_secret.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], next_action = next_action.asInstanceOf[js.Any], payment_method_types = payment_method_types.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], usage = usage.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     if (application != null) __obj.updateDynamic("application")(application.asInstanceOf[js.Any])
-    if (cancelation_reason != null) __obj.updateDynamic("cancelation_reason")(cancelation_reason)
+    if (cancelation_reason != null) __obj.updateDynamic("cancelation_reason")(cancelation_reason.asInstanceOf[js.Any])
     if (customer != null) __obj.updateDynamic("customer")(customer.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (last_setup_error != null) __obj.updateDynamic("last_setup_error")(last_setup_error)
-    if (on_behalf_of != null) __obj.updateDynamic("on_behalf_of")(on_behalf_of)
-    if (payment_method != null) __obj.updateDynamic("payment_method")(payment_method)
-    if (payment_method_options != null) __obj.updateDynamic("payment_method_options")(payment_method_options)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (last_setup_error != null) __obj.updateDynamic("last_setup_error")(last_setup_error.asInstanceOf[js.Any])
+    if (on_behalf_of != null) __obj.updateDynamic("on_behalf_of")(on_behalf_of.asInstanceOf[js.Any])
+    if (payment_method != null) __obj.updateDynamic("payment_method")(payment_method.asInstanceOf[js.Any])
+    if (payment_method_options != null) __obj.updateDynamic("payment_method_options")(payment_method_options.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISetupIntent]
   }
 }

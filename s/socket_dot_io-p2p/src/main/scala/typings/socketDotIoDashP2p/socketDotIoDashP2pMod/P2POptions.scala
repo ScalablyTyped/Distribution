@@ -30,9 +30,9 @@ object P2POptions {
     peerOpts: PeerOpts = null
   ): P2POptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoUpgrade)) __obj.updateDynamic("autoUpgrade")(autoUpgrade)
+    if (!js.isUndefined(autoUpgrade)) __obj.updateDynamic("autoUpgrade")(autoUpgrade.asInstanceOf[js.Any])
     if (numClients != null) __obj.updateDynamic("numClients")(numClients.asInstanceOf[js.Any])
-    if (peerOpts != null) __obj.updateDynamic("peerOpts")(peerOpts)
+    if (peerOpts != null) __obj.updateDynamic("peerOpts")(peerOpts.asInstanceOf[js.Any])
     __obj.asInstanceOf[P2POptions]
   }
 }

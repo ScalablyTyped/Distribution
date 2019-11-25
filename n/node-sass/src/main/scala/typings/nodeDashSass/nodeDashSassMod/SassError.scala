@@ -23,8 +23,8 @@ object SassError {
     status: Double,
     stack: String = null
   ): SassError = {
-    val __obj = js.Dynamic.literal(column = column, file = file, line = line, message = message, name = name, status = status)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[SassError]
   }
 }

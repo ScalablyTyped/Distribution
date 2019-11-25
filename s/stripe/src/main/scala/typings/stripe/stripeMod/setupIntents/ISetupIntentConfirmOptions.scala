@@ -31,9 +31,9 @@ object ISetupIntentConfirmOptions {
     return_url: String = null
   ): ISetupIntentConfirmOptions = {
     val __obj = js.Dynamic.literal()
-    if (payment_method != null) __obj.updateDynamic("payment_method")(payment_method)
-    if (payment_method_options != null) __obj.updateDynamic("payment_method_options")(payment_method_options)
-    if (return_url != null) __obj.updateDynamic("return_url")(return_url)
+    if (payment_method != null) __obj.updateDynamic("payment_method")(payment_method.asInstanceOf[js.Any])
+    if (payment_method_options != null) __obj.updateDynamic("payment_method_options")(payment_method_options.asInstanceOf[js.Any])
+    if (return_url != null) __obj.updateDynamic("return_url")(return_url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISetupIntentConfirmOptions]
   }
 }

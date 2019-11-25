@@ -40,10 +40,10 @@ object IOpenJsCadOptions {
     val __obj = js.Dynamic.literal()
     if (extrusion != null) __obj.updateDynamic("extrusion")(extrusion.asInstanceOf[js.Any])
     if (facetSize != null) __obj.updateDynamic("facetSize")(facetSize.asInstanceOf[js.Any])
-    if (functionName != null) __obj.updateDynamic("functionName")(functionName)
-    if (modelMap != null) __obj.updateDynamic("modelMap")(modelMap)
+    if (functionName != null) __obj.updateDynamic("functionName")(functionName.asInstanceOf[js.Any])
+    if (modelMap != null) __obj.updateDynamic("modelMap")(modelMap.asInstanceOf[js.Any])
     if (pointMatchingDistance != null) __obj.updateDynamic("pointMatchingDistance")(pointMatchingDistance.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeFromOriginal)) __obj.updateDynamic("removeFromOriginal")(removeFromOriginal)
+    if (!js.isUndefined(removeFromOriginal)) __obj.updateDynamic("removeFromOriginal")(removeFromOriginal.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOpenJsCadOptions]
   }
 }

@@ -12,7 +12,7 @@ trait InvalidateCachedTypings extends ProjectResponse {
 object InvalidateCachedTypings {
   @scala.inline
   def apply(kind: ActionInvalidate, projectName: String): InvalidateCachedTypings = {
-    val __obj = js.Dynamic.literal(kind = kind, projectName = projectName)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], projectName = projectName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InvalidateCachedTypings]
   }

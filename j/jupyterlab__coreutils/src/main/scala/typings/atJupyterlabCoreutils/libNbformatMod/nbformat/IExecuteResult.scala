@@ -38,7 +38,7 @@ object IExecuteResult {
     output_type: execute_result,
     execution_count: Int | Double = null
   ): IExecuteResult = {
-    val __obj = js.Dynamic.literal(data = data, metadata = metadata, output_type = output_type)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], output_type = output_type.asInstanceOf[js.Any])
     if (execution_count != null) __obj.updateDynamic("execution_count")(execution_count.asInstanceOf[js.Any])
     __obj.asInstanceOf[IExecuteResult]
   }

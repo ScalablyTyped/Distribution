@@ -13,8 +13,8 @@ trait TypeHelpOptions extends js.Object {
 object TypeHelpOptions {
   @scala.inline
   def apply(newObject: js.Any, `object`: js.Object, property: String): TypeHelpOptions = {
-    val __obj = js.Dynamic.literal(newObject = newObject, property = property)
-    __obj.updateDynamic("object")(`object`)
+    val __obj = js.Dynamic.literal(newObject = newObject.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeHelpOptions]
   }
 }

@@ -15,7 +15,7 @@ trait StdoutProps extends js.Object {
 object StdoutProps {
   @scala.inline
   def apply(stdout: WriteStream): StdoutProps = {
-    val __obj = js.Dynamic.literal(stdout = stdout)
+    val __obj = js.Dynamic.literal(stdout = stdout.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StdoutProps]
   }

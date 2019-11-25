@@ -13,8 +13,8 @@ trait Anon_Ariamodal extends js.Object {
 object Anon_Ariamodal {
   @scala.inline
   def apply(`aria-modal`: Boolean, ref: () => Unit, role: String): Anon_Ariamodal = {
-    val __obj = js.Dynamic.literal(ref = js.Any.fromFunction0(ref), role = role)
-    __obj.updateDynamic("aria-modal")(`aria-modal`)
+    val __obj = js.Dynamic.literal(ref = js.Any.fromFunction0(ref), role = role.asInstanceOf[js.Any])
+    __obj.updateDynamic("aria-modal")(`aria-modal`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Ariamodal]
   }
 }

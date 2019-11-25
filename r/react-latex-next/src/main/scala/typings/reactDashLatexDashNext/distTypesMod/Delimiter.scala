@@ -13,7 +13,7 @@ trait Delimiter extends js.Object {
 object Delimiter {
   @scala.inline
   def apply(display: Boolean, left: String, right: String): Delimiter = {
-    val __obj = js.Dynamic.literal(display = display, left = left, right = right)
+    val __obj = js.Dynamic.literal(display = display.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Delimiter]
   }

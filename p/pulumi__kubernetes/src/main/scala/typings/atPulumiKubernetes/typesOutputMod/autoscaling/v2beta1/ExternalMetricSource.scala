@@ -34,7 +34,7 @@ trait ExternalMetricSource extends js.Object {
 object ExternalMetricSource {
   @scala.inline
   def apply(metricName: String, metricSelector: LabelSelector, targetAverageValue: String, targetValue: String): ExternalMetricSource = {
-    val __obj = js.Dynamic.literal(metricName = metricName, metricSelector = metricSelector, targetAverageValue = targetAverageValue, targetValue = targetValue)
+    val __obj = js.Dynamic.literal(metricName = metricName.asInstanceOf[js.Any], metricSelector = metricSelector.asInstanceOf[js.Any], targetAverageValue = targetAverageValue.asInstanceOf[js.Any], targetValue = targetValue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExternalMetricSource]
   }

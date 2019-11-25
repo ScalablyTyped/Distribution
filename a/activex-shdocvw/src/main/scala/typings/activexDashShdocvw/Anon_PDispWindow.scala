@@ -11,7 +11,7 @@ trait Anon_PDispWindow extends js.Object {
 object Anon_PDispWindow {
   @scala.inline
   def apply(pDispWindow: js.Any): Anon_PDispWindow = {
-    val __obj = js.Dynamic.literal(pDispWindow = pDispWindow)
+    val __obj = js.Dynamic.literal(pDispWindow = pDispWindow.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_PDispWindow]
   }

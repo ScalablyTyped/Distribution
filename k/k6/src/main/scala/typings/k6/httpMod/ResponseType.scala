@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait ResponseType extends js.Object
 
+object ResponseType {
+  @scala.inline
+  def binary: typings.k6.k6Strings.binary = this.cast("binary")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def none: typings.k6.k6Strings.none = this.cast("none")
+  @scala.inline
+  def text: typings.k6.k6Strings.text = this.cast("text")
+}
+

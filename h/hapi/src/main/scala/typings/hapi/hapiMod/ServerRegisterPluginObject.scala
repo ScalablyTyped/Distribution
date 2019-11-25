@@ -24,10 +24,10 @@ object ServerRegisterPluginObject {
     options: T = null,
     routes: Anon_PrefixVhost = null
   ): ServerRegisterPluginObject[T] = {
-    val __obj = js.Dynamic.literal(plugin = plugin)
-    if (!js.isUndefined(once)) __obj.updateDynamic("once")(once)
+    val __obj = js.Dynamic.literal(plugin = plugin.asInstanceOf[js.Any])
+    if (!js.isUndefined(once)) __obj.updateDynamic("once")(once.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (routes != null) __obj.updateDynamic("routes")(routes)
+    if (routes != null) __obj.updateDynamic("routes")(routes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerRegisterPluginObject[T]]
   }
 }

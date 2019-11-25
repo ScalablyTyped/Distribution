@@ -178,7 +178,7 @@ class Engine protected ()
     backwardsFunc: js.Function2[
       /* dy */ T, 
       /* saved */ js.Array[Tensor[Rank]], 
-      /* import warning: ImportType.apply c Unsupported type mapping: 
+      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof I ]: (): I[P]}
     */ typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.Engine with I
     ]
@@ -189,7 +189,7 @@ class Engine protected ()
     backwardsFunc: js.Function2[
       /* dy */ T, 
       /* saved */ js.Array[Tensor[Rank]], 
-      /* import warning: ImportType.apply c Unsupported type mapping: 
+      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof I ]: (): I[P]}
     */ typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.Engine with I
     ],
@@ -201,7 +201,7 @@ class Engine protected ()
     backwardsFunc: js.Function2[
       /* dy */ T, 
       /* saved */ js.Array[Tensor[Rank]], 
-      /* import warning: ImportType.apply c Unsupported type mapping: 
+      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof I ]: (): I[P]}
     */ typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.Engine with I
     ],
@@ -214,7 +214,7 @@ class Engine protected ()
     backwardsFunc: js.Function2[
       /* dy */ T, 
       /* saved */ js.Array[Tensor[Rank]], 
-      /* import warning: ImportType.apply c Unsupported type mapping: 
+      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof I ]: (): I[P]}
     */ typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.Engine with I
     ],
@@ -228,7 +228,7 @@ class Engine protected ()
     backwardsFunc: js.Function2[
       /* dy */ T, 
       /* saved */ js.Array[Tensor[Rank]], 
-      /* import warning: ImportType.apply c Unsupported type mapping: 
+      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof I ]: (): I[P]}
     */ typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.Engine with I
     ],

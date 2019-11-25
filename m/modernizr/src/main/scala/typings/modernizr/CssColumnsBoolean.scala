@@ -34,7 +34,7 @@ object CssColumnsBoolean {
     span: scala.Boolean,
     width: scala.Boolean
   ): CssColumnsBoolean = {
-    val __obj = js.Dynamic.literal(breakafter = breakafter, breakbefore = breakbefore, breakinside = breakinside, fill = fill, gap = gap, rule = rule, rulecolor = rulecolor, rulestyle = rulestyle, rulewidth = rulewidth, span = span, width = width)
+    val __obj = js.Dynamic.literal(breakafter = breakafter.asInstanceOf[js.Any], breakbefore = breakbefore.asInstanceOf[js.Any], breakinside = breakinside.asInstanceOf[js.Any], fill = fill.asInstanceOf[js.Any], gap = gap.asInstanceOf[js.Any], rule = rule.asInstanceOf[js.Any], rulecolor = rulecolor.asInstanceOf[js.Any], rulestyle = rulestyle.asInstanceOf[js.Any], rulewidth = rulewidth.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CssColumnsBoolean]
   }

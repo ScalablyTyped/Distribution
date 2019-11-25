@@ -22,8 +22,8 @@ object GooglePrivacyDlpV2beta1KAnonymityEquivalenceClass {
   @scala.inline
   def apply(equivalenceClassSize: String = null, quasiIdsValues: js.Array[GooglePrivacyDlpV2beta1Value] = null): GooglePrivacyDlpV2beta1KAnonymityEquivalenceClass = {
     val __obj = js.Dynamic.literal()
-    if (equivalenceClassSize != null) __obj.updateDynamic("equivalenceClassSize")(equivalenceClassSize)
-    if (quasiIdsValues != null) __obj.updateDynamic("quasiIdsValues")(quasiIdsValues)
+    if (equivalenceClassSize != null) __obj.updateDynamic("equivalenceClassSize")(equivalenceClassSize.asInstanceOf[js.Any])
+    if (quasiIdsValues != null) __obj.updateDynamic("quasiIdsValues")(quasiIdsValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1KAnonymityEquivalenceClass]
   }
 }

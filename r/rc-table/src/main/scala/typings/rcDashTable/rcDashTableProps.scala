@@ -6,6 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait rcDashTableProps {
+  @scala.inline
+  def ColumnProps: ColumnType.type = typings.rcDashTable.esInterfaceMod.ColumnType
   type ColumnProps = typings.rcDashTable.esColumnMod.ColumnProps
   @scala.inline
   def ColumnGroupProps: typings.rcDashTable.esColumnGroupMod.ColumnGroupProps.type = typings.rcDashTable.esColumnGroupMod.ColumnGroupProps

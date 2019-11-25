@@ -27,14 +27,14 @@ object ColumnDefinition {
     references: Anon_Cascade = null,
     unique: js.UndefOr[Boolean] = js.undefined
   ): ColumnDefinition[Name, Type] = {
-    val __obj = js.Dynamic.literal(dataType = dataType)
+    val __obj = js.Dynamic.literal(dataType = dataType.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (jsType != null) __obj.updateDynamic("jsType")(jsType.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(notNull)) __obj.updateDynamic("notNull")(notNull)
-    if (!js.isUndefined(primaryKey)) __obj.updateDynamic("primaryKey")(primaryKey)
-    if (references != null) __obj.updateDynamic("references")(references)
-    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique)
+    if (!js.isUndefined(notNull)) __obj.updateDynamic("notNull")(notNull.asInstanceOf[js.Any])
+    if (!js.isUndefined(primaryKey)) __obj.updateDynamic("primaryKey")(primaryKey.asInstanceOf[js.Any])
+    if (references != null) __obj.updateDynamic("references")(references.asInstanceOf[js.Any])
+    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnDefinition[Name, Type]]
   }
 }

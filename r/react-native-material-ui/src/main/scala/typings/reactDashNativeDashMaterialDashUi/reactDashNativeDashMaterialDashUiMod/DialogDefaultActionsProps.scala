@@ -18,8 +18,8 @@ object DialogDefaultActionsProps {
     onActionPress: String => Unit,
     style: Anon_DefaultActionsContainer = null
   ): DialogDefaultActionsProps = {
-    val __obj = js.Dynamic.literal(actions = actions, onActionPress = js.Any.fromFunction1(onActionPress))
-    if (style != null) __obj.updateDynamic("style")(style)
+    val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], onActionPress = js.Any.fromFunction1(onActionPress))
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogDefaultActionsProps]
   }
 }

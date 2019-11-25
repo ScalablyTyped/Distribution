@@ -23,7 +23,7 @@ object ssoConf {
     ssoConf: ssoClientConf,
     whiteList: String | RegExp | js.Array[String] | whiteList
   ): ssoConf = {
-    val __obj = js.Dynamic.literal(adapter = js.Any.fromFunction1(adapter), enableCache = enableCache, hasLoginCacheMaxAge = hasLoginCacheMaxAge, ssoConf = ssoConf, whiteList = whiteList.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(adapter = js.Any.fromFunction1(adapter), enableCache = enableCache.asInstanceOf[js.Any], hasLoginCacheMaxAge = hasLoginCacheMaxAge.asInstanceOf[js.Any], ssoConf = ssoConf.asInstanceOf[js.Any], whiteList = whiteList.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ssoConf]
   }

@@ -25,11 +25,11 @@ object GridOptions {
     header: Header = null,
     row: Row = null
   ): GridOptions = {
-    val __obj = js.Dynamic.literal(collection = collection, columns = columns)
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (footer != null) __obj.updateDynamic("footer")(footer)
-    if (header != null) __obj.updateDynamic("header")(header)
-    if (row != null) __obj.updateDynamic("row")(row)
+    val __obj = js.Dynamic.literal(collection = collection.asInstanceOf[js.Any], columns = columns.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridOptions]
   }
 }

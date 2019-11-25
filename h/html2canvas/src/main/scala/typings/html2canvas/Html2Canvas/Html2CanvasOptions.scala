@@ -1,6 +1,6 @@
 package typings.html2canvas.Html2Canvas
 
-import typings.html2canvas.Fn_Doc
+import typings.std.HTMLDocument
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -28,7 +28,7 @@ trait Html2CanvasOptions extends js.Object {
   /** Whether to log events in the console. */
   var logging: js.UndefOr[Boolean] = js.undefined
   /** Callback function which is called when the Document has been cloned for rendering, can be used to modify the contents that will be rendered without affecting the original source document. */
-  var onclone: js.UndefOr[Fn_Doc] = js.undefined
+  var onclone: js.UndefOr[js.Function1[/* doc */ HTMLDocument, Unit]] = js.undefined
   /** Url to the proxy which is to be used for loading cross-origin images. If left empty, cross-origin images won't be loaded. */
   var proxy: js.UndefOr[String] = js.undefined
   /** Whether to cleanup the cloned DOM elements html2canvas creates temporarily */
@@ -70,7 +70,7 @@ object Html2CanvasOptions {
     imageTimeout: Int | Double = null,
     letterRendering: js.UndefOr[Boolean] = js.undefined,
     logging: js.UndefOr[Boolean] = js.undefined,
-    onclone: Fn_Doc = null,
+    onclone: /* doc */ HTMLDocument => Unit = null,
     proxy: String = null,
     removeContainer: js.UndefOr[Boolean] = js.undefined,
     scale: Int | Double = null,
@@ -86,25 +86,25 @@ object Html2CanvasOptions {
     y: Int | Double = null
   ): Html2CanvasOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowTaint)) __obj.updateDynamic("allowTaint")(allowTaint)
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
-    if (canvas != null) __obj.updateDynamic("canvas")(canvas)
-    if (!js.isUndefined(foreignObjectRendering)) __obj.updateDynamic("foreignObjectRendering")(foreignObjectRendering)
+    if (!js.isUndefined(allowTaint)) __obj.updateDynamic("allowTaint")(allowTaint.asInstanceOf[js.Any])
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (canvas != null) __obj.updateDynamic("canvas")(canvas.asInstanceOf[js.Any])
+    if (!js.isUndefined(foreignObjectRendering)) __obj.updateDynamic("foreignObjectRendering")(foreignObjectRendering.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (ignoreElements != null) __obj.updateDynamic("ignoreElements")(js.Any.fromFunction1(ignoreElements))
     if (imageTimeout != null) __obj.updateDynamic("imageTimeout")(imageTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(letterRendering)) __obj.updateDynamic("letterRendering")(letterRendering)
-    if (!js.isUndefined(logging)) __obj.updateDynamic("logging")(logging)
-    if (onclone != null) __obj.updateDynamic("onclone")(onclone)
-    if (proxy != null) __obj.updateDynamic("proxy")(proxy)
-    if (!js.isUndefined(removeContainer)) __obj.updateDynamic("removeContainer")(removeContainer)
+    if (!js.isUndefined(letterRendering)) __obj.updateDynamic("letterRendering")(letterRendering.asInstanceOf[js.Any])
+    if (!js.isUndefined(logging)) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
+    if (onclone != null) __obj.updateDynamic("onclone")(js.Any.fromFunction1(onclone))
+    if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeContainer)) __obj.updateDynamic("removeContainer")(removeContainer.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     if (scrollX != null) __obj.updateDynamic("scrollX")(scrollX.asInstanceOf[js.Any])
     if (scrollY != null) __obj.updateDynamic("scrollY")(scrollY.asInstanceOf[js.Any])
-    if (!js.isUndefined(svgRendering)) __obj.updateDynamic("svgRendering")(svgRendering)
-    if (!js.isUndefined(taintTest)) __obj.updateDynamic("taintTest")(taintTest)
-    if (!js.isUndefined(useCORS)) __obj.updateDynamic("useCORS")(useCORS)
+    if (!js.isUndefined(svgRendering)) __obj.updateDynamic("svgRendering")(svgRendering.asInstanceOf[js.Any])
+    if (!js.isUndefined(taintTest)) __obj.updateDynamic("taintTest")(taintTest.asInstanceOf[js.Any])
+    if (!js.isUndefined(useCORS)) __obj.updateDynamic("useCORS")(useCORS.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (windowHeight != null) __obj.updateDynamic("windowHeight")(windowHeight.asInstanceOf[js.Any])
     if (windowWidth != null) __obj.updateDynamic("windowWidth")(windowWidth.asInstanceOf[js.Any])

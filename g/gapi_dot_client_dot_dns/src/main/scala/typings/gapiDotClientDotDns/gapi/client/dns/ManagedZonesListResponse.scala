@@ -24,9 +24,9 @@ object ManagedZonesListResponse {
   @scala.inline
   def apply(kind: String = null, managedZones: js.Array[ManagedZone] = null, nextPageToken: String = null): ManagedZonesListResponse = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (managedZones != null) __obj.updateDynamic("managedZones")(managedZones)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (managedZones != null) __obj.updateDynamic("managedZones")(managedZones.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagedZonesListResponse]
   }
 }

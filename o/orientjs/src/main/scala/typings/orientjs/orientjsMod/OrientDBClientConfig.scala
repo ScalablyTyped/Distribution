@@ -26,12 +26,12 @@ object OrientDBClientConfig {
     subscribePool: Anon_MaxNumber = null
   ): OrientDBClientConfig = {
     val __obj = js.Dynamic.literal()
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (logger != null) __obj.updateDynamic("logger")(logger)
-    if (pool != null) __obj.updateDynamic("pool")(pool)
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
+    if (pool != null) __obj.updateDynamic("pool")(pool.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (servers != null) __obj.updateDynamic("servers")(servers)
-    if (subscribePool != null) __obj.updateDynamic("subscribePool")(subscribePool)
+    if (servers != null) __obj.updateDynamic("servers")(servers.asInstanceOf[js.Any])
+    if (subscribePool != null) __obj.updateDynamic("subscribePool")(subscribePool.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrientDBClientConfig]
   }
 }

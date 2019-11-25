@@ -27,10 +27,10 @@ object MUIDataTableHeadCell {
     classes: js.Object = null,
     sortDirection: SortDirection = null
   ): MUIDataTableHeadCell = {
-    val __obj = js.Dynamic.literal(hint = hint, options = options, sort = sort, toggleSort = js.Any.fromFunction1(toggleSort))
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (classes != null) __obj.updateDynamic("classes")(classes)
-    if (sortDirection != null) __obj.updateDynamic("sortDirection")(sortDirection)
+    val __obj = js.Dynamic.literal(hint = hint.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], sort = sort.asInstanceOf[js.Any], toggleSort = js.Any.fromFunction1(toggleSort))
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
+    if (sortDirection != null) __obj.updateDynamic("sortDirection")(sortDirection.asInstanceOf[js.Any])
     __obj.asInstanceOf[MUIDataTableHeadCell]
   }
 }

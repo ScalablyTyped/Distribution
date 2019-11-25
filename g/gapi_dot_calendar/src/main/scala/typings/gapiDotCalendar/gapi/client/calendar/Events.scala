@@ -22,10 +22,6 @@ trait Events extends js.Object {
   var updated: datetime
 }
 
-@JSGlobal("gapi.client.calendar.events")
-@js.native
-class events () extends js.Object
-
 object Events {
   @scala.inline
   def apply(
@@ -41,12 +37,16 @@ object Events {
     nextPageToken: String = null,
     nextSyncToken: String = null
   ): Events = {
-    val __obj = js.Dynamic.literal(accessRole = accessRole, defaultReminders = defaultReminders, description = description, etag = etag, items = items, kind = kind, summary = summary, timeZone = timeZone, updated = updated)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (nextSyncToken != null) __obj.updateDynamic("nextSyncToken")(nextSyncToken)
+    val __obj = js.Dynamic.literal(accessRole = accessRole.asInstanceOf[js.Any], defaultReminders = defaultReminders.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], etag = etag.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any], timeZone = timeZone.asInstanceOf[js.Any], updated = updated.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (nextSyncToken != null) __obj.updateDynamic("nextSyncToken")(nextSyncToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[Events]
   }
 }
+
+@JSGlobal("gapi.client.calendar.events")
+@js.native
+class events () extends js.Object
 
 /* static members */
 @JSGlobal("gapi.client.calendar.events")

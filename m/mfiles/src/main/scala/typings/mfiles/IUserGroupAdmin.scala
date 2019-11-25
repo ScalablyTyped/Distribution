@@ -21,7 +21,7 @@ object IUserGroupAdmin {
     SemanticAliases: ISemanticAliases,
     UserGroup: IUserGroup
   ): IUserGroupAdmin = {
-    val __obj = js.Dynamic.literal(AccessControlList = AccessControlList, Clone = js.Any.fromFunction0(Clone), CloneFrom = js.Any.fromFunction1(CloneFrom), SemanticAliases = SemanticAliases, UserGroup = UserGroup)
+    val __obj = js.Dynamic.literal(AccessControlList = AccessControlList.asInstanceOf[js.Any], Clone = js.Any.fromFunction0(Clone), CloneFrom = js.Any.fromFunction1(CloneFrom), SemanticAliases = SemanticAliases.asInstanceOf[js.Any], UserGroup = UserGroup.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IUserGroupAdmin]
   }

@@ -25,7 +25,7 @@ object Settings {
     refreshMillis: Double,
     strings: LocalizedStrings
   ): Settings = {
-    val __obj = js.Dynamic.literal(allowFuture = allowFuture, allowPast = allowPast, autoDispose = autoDispose, cutoff = cutoff, localeTitle = localeTitle, refreshMillis = refreshMillis, strings = strings)
+    val __obj = js.Dynamic.literal(allowFuture = allowFuture.asInstanceOf[js.Any], allowPast = allowPast.asInstanceOf[js.Any], autoDispose = autoDispose.asInstanceOf[js.Any], cutoff = cutoff.asInstanceOf[js.Any], localeTitle = localeTitle.asInstanceOf[js.Any], refreshMillis = refreshMillis.asInstanceOf[js.Any], strings = strings.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Settings]
   }

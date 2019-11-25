@@ -2,14 +2,13 @@ package typings.rxDashLite.rxDashLiteMod
 
 import typings.rxDashCore.Rx.IDisposable
 import typings.rxDashLite.Rx.IScheduler
-import typings.rxDashLite.Rx.Scheduler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("rx-lite", "Scheduler")
 @js.native
-class SchedulerCls protected () extends Scheduler {
+class SchedulerCls protected () extends IScheduler {
   def this(
     now: js.Function0[Double],
     schedule: js.Function2[

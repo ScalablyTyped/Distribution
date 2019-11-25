@@ -1,8 +1,6 @@
 package typings.dojo.dojox.grid
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValuePropertyNumber
 import typings.dojo.dojoStrings.noscroll
 import typings.dojo.dojoStrings.padBorderWidth
 import typings.std.HTMLElement
@@ -54,8 +52,24 @@ class _RowSelector () extends _View {
     */
   def updateRow(): Unit = js.native
   @JSName("watch")
-  def watch_noscroll(property: noscroll, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_noscroll(
+    property: noscroll,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_padBorderWidth(property: padBorderWidth, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_padBorderWidth(
+    property: padBorderWidth,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

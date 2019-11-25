@@ -13,7 +13,7 @@ trait Anon_CssClass extends js.Object {
 object Anon_CssClass {
   @scala.inline
   def apply(cssClass: String, node: HTMLElement): Anon_CssClass = {
-    val __obj = js.Dynamic.literal(cssClass = cssClass, node = node)
+    val __obj = js.Dynamic.literal(cssClass = cssClass.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CssClass]
   }

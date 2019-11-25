@@ -19,7 +19,7 @@ object PageIndexChangedEventUIParam {
   @scala.inline
   def apply(owner: js.Any = null, pageIndex: Int | Double = null): PageIndexChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     if (pageIndex != null) __obj.updateDynamic("pageIndex")(pageIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageIndexChangedEventUIParam]
   }

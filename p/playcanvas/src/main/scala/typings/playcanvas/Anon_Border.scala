@@ -16,9 +16,9 @@ object Anon_Border {
   @scala.inline
   def apply(border: Vec4 = null, pivot: Vec2 = null, rect: Vec4 = null): Anon_Border = {
     val __obj = js.Dynamic.literal()
-    if (border != null) __obj.updateDynamic("border")(border)
-    if (pivot != null) __obj.updateDynamic("pivot")(pivot)
-    if (rect != null) __obj.updateDynamic("rect")(rect)
+    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
+    if (pivot != null) __obj.updateDynamic("pivot")(pivot.asInstanceOf[js.Any])
+    if (rect != null) __obj.updateDynamic("rect")(rect.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Border]
   }
 }

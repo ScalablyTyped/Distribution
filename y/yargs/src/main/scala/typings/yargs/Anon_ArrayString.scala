@@ -14,8 +14,8 @@ trait Anon_ArrayString extends js.Object {
 object Anon_ArrayString {
   @scala.inline
   def apply(array: `true`, `type`: string): Anon_ArrayString = {
-    val __obj = js.Dynamic.literal(array = array)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(array = array.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ArrayString]
   }
 }

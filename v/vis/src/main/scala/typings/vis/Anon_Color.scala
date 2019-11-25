@@ -22,9 +22,9 @@ object Anon_Color {
     opacity: Int | Double = null
   ): Anon_Color = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (highlight != null) __obj.updateDynamic("highlight")(highlight)
-    if (hover != null) __obj.updateDynamic("hover")(hover)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (highlight != null) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
+    if (hover != null) __obj.updateDynamic("hover")(hover.asInstanceOf[js.Any])
     if (inherit != null) __obj.updateDynamic("inherit")(inherit.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Color]

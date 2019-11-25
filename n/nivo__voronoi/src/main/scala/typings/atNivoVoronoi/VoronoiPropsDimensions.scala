@@ -55,21 +55,21 @@ object VoronoiPropsDimensions {
     xDomain: VoronoiDomain = null,
     yDomain: VoronoiDomain = null
   ): VoronoiPropsDimensions = {
-    val __obj = js.Dynamic.literal(data = data, height = height, width = width)
-    if (cellLineColor != null) __obj.updateDynamic("cellLineColor")(cellLineColor)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    if (cellLineColor != null) __obj.updateDynamic("cellLineColor")(cellLineColor.asInstanceOf[js.Any])
     if (cellLineWidth != null) __obj.updateDynamic("cellLineWidth")(cellLineWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableCells)) __obj.updateDynamic("enableCells")(enableCells)
-    if (!js.isUndefined(enableLinks)) __obj.updateDynamic("enableLinks")(enableLinks)
-    if (!js.isUndefined(enablePoints)) __obj.updateDynamic("enablePoints")(enablePoints)
-    if (layers != null) __obj.updateDynamic("layers")(layers)
-    if (linkLineColor != null) __obj.updateDynamic("linkLineColor")(linkLineColor)
+    if (!js.isUndefined(enableCells)) __obj.updateDynamic("enableCells")(enableCells.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableLinks)) __obj.updateDynamic("enableLinks")(enableLinks.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePoints)) __obj.updateDynamic("enablePoints")(enablePoints.asInstanceOf[js.Any])
+    if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
+    if (linkLineColor != null) __obj.updateDynamic("linkLineColor")(linkLineColor.asInstanceOf[js.Any])
     if (linkLineWidth != null) __obj.updateDynamic("linkLineWidth")(linkLineWidth.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin)
-    if (pointColor != null) __obj.updateDynamic("pointColor")(pointColor)
+    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
+    if (pointColor != null) __obj.updateDynamic("pointColor")(pointColor.asInstanceOf[js.Any])
     if (pointSize != null) __obj.updateDynamic("pointSize")(pointSize.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme)
-    if (xDomain != null) __obj.updateDynamic("xDomain")(xDomain)
-    if (yDomain != null) __obj.updateDynamic("yDomain")(yDomain)
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    if (xDomain != null) __obj.updateDynamic("xDomain")(xDomain.asInstanceOf[js.Any])
+    if (yDomain != null) __obj.updateDynamic("yDomain")(yDomain.asInstanceOf[js.Any])
     __obj.asInstanceOf[VoronoiPropsDimensions]
   }
 }

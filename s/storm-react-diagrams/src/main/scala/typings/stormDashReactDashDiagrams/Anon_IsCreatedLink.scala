@@ -14,7 +14,7 @@ trait Anon_IsCreatedLink extends js.Object {
 object Anon_IsCreatedLink {
   @scala.inline
   def apply(isCreated: Boolean, link: LinkModel[LinkModelListener]): Anon_IsCreatedLink = {
-    val __obj = js.Dynamic.literal(isCreated = isCreated, link = link)
+    val __obj = js.Dynamic.literal(isCreated = isCreated.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IsCreatedLink]
   }

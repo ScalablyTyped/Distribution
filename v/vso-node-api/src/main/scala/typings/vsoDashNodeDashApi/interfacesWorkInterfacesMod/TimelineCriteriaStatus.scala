@@ -12,8 +12,8 @@ trait TimelineCriteriaStatus extends js.Object {
 object TimelineCriteriaStatus {
   @scala.inline
   def apply(message: String, `type`: TimelineCriteriaStatusCode): TimelineCriteriaStatus = {
-    val __obj = js.Dynamic.literal(message = message)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineCriteriaStatus]
   }
 }

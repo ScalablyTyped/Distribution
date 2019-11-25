@@ -27,11 +27,11 @@ object Listing {
     video: String = null
   ): Listing = {
     val __obj = js.Dynamic.literal()
-    if (fullDescription != null) __obj.updateDynamic("fullDescription")(fullDescription)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (shortDescription != null) __obj.updateDynamic("shortDescription")(shortDescription)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (video != null) __obj.updateDynamic("video")(video)
+    if (fullDescription != null) __obj.updateDynamic("fullDescription")(fullDescription.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (shortDescription != null) __obj.updateDynamic("shortDescription")(shortDescription.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (video != null) __obj.updateDynamic("video")(video.asInstanceOf[js.Any])
     __obj.asInstanceOf[Listing]
   }
 }

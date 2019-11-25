@@ -38,17 +38,17 @@ object ResolverRequest {
     query: String = null,
     relativePath: String = null
   ): ResolverRequest = {
-    val __obj = js.Dynamic.literal(context = context, path = path, request = request)
-    if (__innerRequest != null) __obj.updateDynamic("__innerRequest")(__innerRequest)
-    if (__innerRequest_relativePath != null) __obj.updateDynamic("__innerRequest_relativePath")(__innerRequest_relativePath)
-    if (__innerRequest_request != null) __obj.updateDynamic("__innerRequest_request")(__innerRequest_request)
-    if (descriptionFileData != null) __obj.updateDynamic("descriptionFileData")(descriptionFileData)
-    if (descriptionFilePath != null) __obj.updateDynamic("descriptionFilePath")(descriptionFilePath)
-    if (descriptionFileRoot != null) __obj.updateDynamic("descriptionFileRoot")(descriptionFileRoot)
-    if (!js.isUndefined(directory)) __obj.updateDynamic("directory")(directory)
-    if (!js.isUndefined(module)) __obj.updateDynamic("module")(module)
-    if (query != null) __obj.updateDynamic("query")(query)
-    if (relativePath != null) __obj.updateDynamic("relativePath")(relativePath)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
+    if (__innerRequest != null) __obj.updateDynamic("__innerRequest")(__innerRequest.asInstanceOf[js.Any])
+    if (__innerRequest_relativePath != null) __obj.updateDynamic("__innerRequest_relativePath")(__innerRequest_relativePath.asInstanceOf[js.Any])
+    if (__innerRequest_request != null) __obj.updateDynamic("__innerRequest_request")(__innerRequest_request.asInstanceOf[js.Any])
+    if (descriptionFileData != null) __obj.updateDynamic("descriptionFileData")(descriptionFileData.asInstanceOf[js.Any])
+    if (descriptionFilePath != null) __obj.updateDynamic("descriptionFilePath")(descriptionFilePath.asInstanceOf[js.Any])
+    if (descriptionFileRoot != null) __obj.updateDynamic("descriptionFileRoot")(descriptionFileRoot.asInstanceOf[js.Any])
+    if (!js.isUndefined(directory)) __obj.updateDynamic("directory")(directory.asInstanceOf[js.Any])
+    if (!js.isUndefined(module)) __obj.updateDynamic("module")(module.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    if (relativePath != null) __obj.updateDynamic("relativePath")(relativePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolverRequest]
   }
 }

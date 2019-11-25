@@ -22,7 +22,7 @@ trait IFieldValidationError extends js.Object {
 object IFieldValidationError {
   @scala.inline
   def apply(errors: js.Array[String], field: String, fieldName: String): IFieldValidationError = {
-    val __obj = js.Dynamic.literal(errors = errors, field = field, fieldName = fieldName)
+    val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], fieldName = fieldName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IFieldValidationError]
   }

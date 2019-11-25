@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait PermissionMode extends js.Object
 
+object PermissionMode {
+  @scala.inline
+  def All: typings.documentdb.documentdbStrings.All = this.cast("All")
+  @scala.inline
+  def None: typings.documentdb.documentdbStrings.None = this.cast("None")
+  @scala.inline
+  def Read: typings.documentdb.documentdbStrings.Read = this.cast("Read")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

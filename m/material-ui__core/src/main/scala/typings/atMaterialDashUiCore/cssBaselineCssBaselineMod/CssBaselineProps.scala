@@ -13,7 +13,7 @@ object CssBaselineProps {
   @scala.inline
   def apply(children: ReactElement = null): CssBaselineProps = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[CssBaselineProps]
   }
 }

@@ -12,7 +12,7 @@ trait LoadError extends js.Object {
 object LoadError {
   @scala.inline
   def apply(error: Anon_): LoadError = {
-    val __obj = js.Dynamic.literal(error = error)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LoadError]
   }

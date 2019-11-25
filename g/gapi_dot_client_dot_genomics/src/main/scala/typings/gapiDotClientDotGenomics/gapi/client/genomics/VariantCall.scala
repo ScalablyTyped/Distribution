@@ -60,12 +60,12 @@ object VariantCall {
     phaseset: String = null
   ): VariantCall = {
     val __obj = js.Dynamic.literal()
-    if (callSetId != null) __obj.updateDynamic("callSetId")(callSetId)
-    if (callSetName != null) __obj.updateDynamic("callSetName")(callSetName)
-    if (genotype != null) __obj.updateDynamic("genotype")(genotype)
-    if (genotypeLikelihood != null) __obj.updateDynamic("genotypeLikelihood")(genotypeLikelihood)
-    if (info != null) __obj.updateDynamic("info")(info)
-    if (phaseset != null) __obj.updateDynamic("phaseset")(phaseset)
+    if (callSetId != null) __obj.updateDynamic("callSetId")(callSetId.asInstanceOf[js.Any])
+    if (callSetName != null) __obj.updateDynamic("callSetName")(callSetName.asInstanceOf[js.Any])
+    if (genotype != null) __obj.updateDynamic("genotype")(genotype.asInstanceOf[js.Any])
+    if (genotypeLikelihood != null) __obj.updateDynamic("genotypeLikelihood")(genotypeLikelihood.asInstanceOf[js.Any])
+    if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
+    if (phaseset != null) __obj.updateDynamic("phaseset")(phaseset.asInstanceOf[js.Any])
     __obj.asInstanceOf[VariantCall]
   }
 }

@@ -14,7 +14,7 @@ trait ICustomer extends js.Object {
 object ICustomer {
   @scala.inline
   def apply(customer: String): ICustomer = {
-    val __obj = js.Dynamic.literal(customer = customer)
+    val __obj = js.Dynamic.literal(customer = customer.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ICustomer]
   }

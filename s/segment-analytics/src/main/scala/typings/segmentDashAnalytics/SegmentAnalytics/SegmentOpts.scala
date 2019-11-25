@@ -15,9 +15,9 @@ object SegmentOpts {
   @scala.inline
   def apply(anonymousId: String = null, context: js.Object = null, integrations: js.Any = null): SegmentOpts = {
     val __obj = js.Dynamic.literal()
-    if (anonymousId != null) __obj.updateDynamic("anonymousId")(anonymousId)
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (integrations != null) __obj.updateDynamic("integrations")(integrations)
+    if (anonymousId != null) __obj.updateDynamic("anonymousId")(anonymousId.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (integrations != null) __obj.updateDynamic("integrations")(integrations.asInstanceOf[js.Any])
     __obj.asInstanceOf[SegmentOpts]
   }
 }

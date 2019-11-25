@@ -24,7 +24,7 @@ object IWalkPath {
     route: js.Array[String],
     routeKey: String
   ): IWalkPath = {
-    val __obj = js.Dynamic.literal(layer = layer, modelContext = modelContext, offset = offset, pathContext = pathContext, pathId = pathId, route = route, routeKey = routeKey)
+    val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any], modelContext = modelContext.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], pathContext = pathContext.asInstanceOf[js.Any], pathId = pathId.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any], routeKey = routeKey.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IWalkPath]
   }

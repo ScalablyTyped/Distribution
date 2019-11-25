@@ -30,14 +30,14 @@ object Anon_AdditionalProperties {
     windows: KeyName = null
   ): Anon_AdditionalProperties = {
     val __obj = js.Dynamic.literal()
-    if (additionalProperties != null) __obj.updateDynamic("additionalProperties")(additionalProperties)
-    if (android != null) __obj.updateDynamic("android")(android)
-    if (chromeos != null) __obj.updateDynamic("chromeos")(chromeos)
-    if (default != null) __obj.updateDynamic("default")(default)
-    if (ios != null) __obj.updateDynamic("ios")(ios)
-    if (linux != null) __obj.updateDynamic("linux")(linux)
-    if (mac != null) __obj.updateDynamic("mac")(mac)
-    if (windows != null) __obj.updateDynamic("windows")(windows)
+    if (additionalProperties != null) __obj.updateDynamic("additionalProperties")(additionalProperties.asInstanceOf[js.Any])
+    if (android != null) __obj.updateDynamic("android")(android.asInstanceOf[js.Any])
+    if (chromeos != null) __obj.updateDynamic("chromeos")(chromeos.asInstanceOf[js.Any])
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (ios != null) __obj.updateDynamic("ios")(ios.asInstanceOf[js.Any])
+    if (linux != null) __obj.updateDynamic("linux")(linux.asInstanceOf[js.Any])
+    if (mac != null) __obj.updateDynamic("mac")(mac.asInstanceOf[js.Any])
+    if (windows != null) __obj.updateDynamic("windows")(windows.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AdditionalProperties]
   }
 }

@@ -27,9 +27,9 @@ object ISpeechWordInfo {
   ): ISpeechWordInfo = {
     val __obj = js.Dynamic.literal()
     if (confidence != null) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
-    if (endOffset != null) __obj.updateDynamic("endOffset")(endOffset)
-    if (startOffset != null) __obj.updateDynamic("startOffset")(startOffset)
-    if (word != null) __obj.updateDynamic("word")(word)
+    if (endOffset != null) __obj.updateDynamic("endOffset")(endOffset.asInstanceOf[js.Any])
+    if (startOffset != null) __obj.updateDynamic("startOffset")(startOffset.asInstanceOf[js.Any])
+    if (word != null) __obj.updateDynamic("word")(word.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISpeechWordInfo]
   }
 }

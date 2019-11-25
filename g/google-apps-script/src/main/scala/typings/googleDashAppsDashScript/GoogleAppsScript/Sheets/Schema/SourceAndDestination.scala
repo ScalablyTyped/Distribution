@@ -14,9 +14,9 @@ object SourceAndDestination {
   @scala.inline
   def apply(dimension: String = null, fillLength: Int | Double = null, source: GridRange = null): SourceAndDestination = {
     val __obj = js.Dynamic.literal()
-    if (dimension != null) __obj.updateDynamic("dimension")(dimension)
+    if (dimension != null) __obj.updateDynamic("dimension")(dimension.asInstanceOf[js.Any])
     if (fillLength != null) __obj.updateDynamic("fillLength")(fillLength.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceAndDestination]
   }
 }

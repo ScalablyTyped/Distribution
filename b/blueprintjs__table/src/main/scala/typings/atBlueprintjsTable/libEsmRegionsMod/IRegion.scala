@@ -23,8 +23,8 @@ object IRegion {
   @scala.inline
   def apply(cols: ICellInterval = null, rows: ICellInterval = null): IRegion = {
     val __obj = js.Dynamic.literal()
-    if (cols != null) __obj.updateDynamic("cols")(cols)
-    if (rows != null) __obj.updateDynamic("rows")(rows)
+    if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
+    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRegion]
   }
 }

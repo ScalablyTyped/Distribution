@@ -13,7 +13,7 @@ trait Typeofeditor extends js.Object {
 object Typeofeditor {
   @scala.inline
   def apply(Toolbar: Instantiable0[Toolbar]): Typeofeditor = {
-    val __obj = js.Dynamic.literal(Toolbar = Toolbar)
+    val __obj = js.Dynamic.literal(Toolbar = Toolbar.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Typeofeditor]
   }

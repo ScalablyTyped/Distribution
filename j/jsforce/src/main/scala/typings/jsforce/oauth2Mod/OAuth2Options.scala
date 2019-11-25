@@ -38,19 +38,19 @@ object OAuth2Options {
     tokenServiceUrl: String = null
   ): OAuth2Options = {
     val __obj = js.Dynamic.literal()
-    if (authCode != null) __obj.updateDynamic("authCode")(authCode)
-    if (authzServiceUrl != null) __obj.updateDynamic("authzServiceUrl")(authzServiceUrl)
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId)
-    if (clientSecret != null) __obj.updateDynamic("clientSecret")(clientSecret)
-    if (httpProxy != null) __obj.updateDynamic("httpProxy")(httpProxy)
-    if (loginUrl != null) __obj.updateDynamic("loginUrl")(loginUrl)
-    if (privateKey != null) __obj.updateDynamic("privateKey")(privateKey)
-    if (privateKeyFile != null) __obj.updateDynamic("privateKeyFile")(privateKeyFile)
-    if (proxyUrl != null) __obj.updateDynamic("proxyUrl")(proxyUrl)
-    if (redirectUri != null) __obj.updateDynamic("redirectUri")(redirectUri)
-    if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken)
-    if (revokeServiceUrl != null) __obj.updateDynamic("revokeServiceUrl")(revokeServiceUrl)
-    if (tokenServiceUrl != null) __obj.updateDynamic("tokenServiceUrl")(tokenServiceUrl)
+    if (authCode != null) __obj.updateDynamic("authCode")(authCode.asInstanceOf[js.Any])
+    if (authzServiceUrl != null) __obj.updateDynamic("authzServiceUrl")(authzServiceUrl.asInstanceOf[js.Any])
+    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
+    if (clientSecret != null) __obj.updateDynamic("clientSecret")(clientSecret.asInstanceOf[js.Any])
+    if (httpProxy != null) __obj.updateDynamic("httpProxy")(httpProxy.asInstanceOf[js.Any])
+    if (loginUrl != null) __obj.updateDynamic("loginUrl")(loginUrl.asInstanceOf[js.Any])
+    if (privateKey != null) __obj.updateDynamic("privateKey")(privateKey.asInstanceOf[js.Any])
+    if (privateKeyFile != null) __obj.updateDynamic("privateKeyFile")(privateKeyFile.asInstanceOf[js.Any])
+    if (proxyUrl != null) __obj.updateDynamic("proxyUrl")(proxyUrl.asInstanceOf[js.Any])
+    if (redirectUri != null) __obj.updateDynamic("redirectUri")(redirectUri.asInstanceOf[js.Any])
+    if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken.asInstanceOf[js.Any])
+    if (revokeServiceUrl != null) __obj.updateDynamic("revokeServiceUrl")(revokeServiceUrl.asInstanceOf[js.Any])
+    if (tokenServiceUrl != null) __obj.updateDynamic("tokenServiceUrl")(tokenServiceUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[OAuth2Options]
   }
 }

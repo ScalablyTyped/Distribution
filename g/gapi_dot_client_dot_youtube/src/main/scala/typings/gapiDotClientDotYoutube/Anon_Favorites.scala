@@ -42,11 +42,11 @@ object Anon_Favorites {
     watchLater: String = null
   ): Anon_Favorites = {
     val __obj = js.Dynamic.literal()
-    if (favorites != null) __obj.updateDynamic("favorites")(favorites)
-    if (likes != null) __obj.updateDynamic("likes")(likes)
-    if (uploads != null) __obj.updateDynamic("uploads")(uploads)
-    if (watchHistory != null) __obj.updateDynamic("watchHistory")(watchHistory)
-    if (watchLater != null) __obj.updateDynamic("watchLater")(watchLater)
+    if (favorites != null) __obj.updateDynamic("favorites")(favorites.asInstanceOf[js.Any])
+    if (likes != null) __obj.updateDynamic("likes")(likes.asInstanceOf[js.Any])
+    if (uploads != null) __obj.updateDynamic("uploads")(uploads.asInstanceOf[js.Any])
+    if (watchHistory != null) __obj.updateDynamic("watchHistory")(watchHistory.asInstanceOf[js.Any])
+    if (watchLater != null) __obj.updateDynamic("watchLater")(watchLater.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Favorites]
   }
 }

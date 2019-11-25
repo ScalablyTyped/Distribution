@@ -25,11 +25,11 @@ object Profile {
     photos: js.Array[Anon_Value] = null,
     username: String = null
   ): Profile = {
-    val __obj = js.Dynamic.literal(_json = _json, displayName = displayName, id = id, provider = provider)
-    if (emails != null) __obj.updateDynamic("emails")(emails)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (photos != null) __obj.updateDynamic("photos")(photos)
-    if (username != null) __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(_json = _json.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any])
+    if (emails != null) __obj.updateDynamic("emails")(emails.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (photos != null) __obj.updateDynamic("photos")(photos.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[Profile]
   }
 }

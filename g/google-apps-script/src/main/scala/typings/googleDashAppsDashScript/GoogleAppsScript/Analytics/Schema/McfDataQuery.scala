@@ -34,16 +34,16 @@ object McfDataQuery {
     start_index: Int | Double = null
   ): McfDataQuery = {
     val __obj = js.Dynamic.literal()
-    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions)
-    if (end_date != null) __obj.updateDynamic("end_date")(end_date)
-    if (filters != null) __obj.updateDynamic("filters")(filters)
-    if (ids != null) __obj.updateDynamic("ids")(ids)
+    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions.asInstanceOf[js.Any])
+    if (end_date != null) __obj.updateDynamic("end_date")(end_date.asInstanceOf[js.Any])
+    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
+    if (ids != null) __obj.updateDynamic("ids")(ids.asInstanceOf[js.Any])
     if (max_results != null) __obj.updateDynamic("max_results")(max_results.asInstanceOf[js.Any])
-    if (metrics != null) __obj.updateDynamic("metrics")(metrics)
-    if (samplingLevel != null) __obj.updateDynamic("samplingLevel")(samplingLevel)
-    if (segment != null) __obj.updateDynamic("segment")(segment)
-    if (sort != null) __obj.updateDynamic("sort")(sort)
-    if (start_date != null) __obj.updateDynamic("start_date")(start_date)
+    if (metrics != null) __obj.updateDynamic("metrics")(metrics.asInstanceOf[js.Any])
+    if (samplingLevel != null) __obj.updateDynamic("samplingLevel")(samplingLevel.asInstanceOf[js.Any])
+    if (segment != null) __obj.updateDynamic("segment")(segment.asInstanceOf[js.Any])
+    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
+    if (start_date != null) __obj.updateDynamic("start_date")(start_date.asInstanceOf[js.Any])
     if (start_index != null) __obj.updateDynamic("start_index")(start_index.asInstanceOf[js.Any])
     __obj.asInstanceOf[McfDataQuery]
   }

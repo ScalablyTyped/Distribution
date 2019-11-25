@@ -24,11 +24,11 @@ object MinifyOutput {
     warnings: js.Array[String] = null
   ): MinifyOutput = {
     val __obj = js.Dynamic.literal()
-    if (ast != null) __obj.updateDynamic("ast")(ast)
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (error != null) __obj.updateDynamic("error")(error)
+    if (ast != null) __obj.updateDynamic("ast")(ast.asInstanceOf[js.Any])
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
-    if (warnings != null) __obj.updateDynamic("warnings")(warnings)
+    if (warnings != null) __obj.updateDynamic("warnings")(warnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[MinifyOutput]
   }
 }

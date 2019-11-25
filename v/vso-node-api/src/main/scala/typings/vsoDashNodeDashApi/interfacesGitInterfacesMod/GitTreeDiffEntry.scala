@@ -36,7 +36,7 @@ object GitTreeDiffEntry {
     path: String,
     targetObjectId: String
   ): GitTreeDiffEntry = {
-    val __obj = js.Dynamic.literal(baseObjectId = baseObjectId, changeType = changeType, objectType = objectType, path = path, targetObjectId = targetObjectId)
+    val __obj = js.Dynamic.literal(baseObjectId = baseObjectId.asInstanceOf[js.Any], changeType = changeType.asInstanceOf[js.Any], objectType = objectType.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], targetObjectId = targetObjectId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GitTreeDiffEntry]
   }

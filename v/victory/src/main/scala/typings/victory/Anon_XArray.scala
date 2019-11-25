@@ -12,7 +12,7 @@ trait Anon_XArray extends _CategoryPropType {
 object Anon_XArray {
   @scala.inline
   def apply(x: js.Array[String]): Anon_XArray = {
-    val __obj = js.Dynamic.literal(x = x)
+    val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_XArray]
   }

@@ -14,7 +14,7 @@ trait Anon_CurState extends js.Object {
 object Anon_CurState {
   @scala.inline
   def apply(curState: String, prevState: String): Anon_CurState = {
-    val __obj = js.Dynamic.literal(curState = curState, prevState = prevState)
+    val __obj = js.Dynamic.literal(curState = curState.asInstanceOf[js.Any], prevState = prevState.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CurState]
   }

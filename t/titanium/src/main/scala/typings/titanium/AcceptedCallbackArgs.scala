@@ -24,8 +24,8 @@ object AcceptedCallbackArgs {
   @scala.inline
   def apply(inbound: TCP = null, socket: TCP = null): AcceptedCallbackArgs = {
     val __obj = js.Dynamic.literal()
-    if (inbound != null) __obj.updateDynamic("inbound")(inbound)
-    if (socket != null) __obj.updateDynamic("socket")(socket)
+    if (inbound != null) __obj.updateDynamic("inbound")(inbound.asInstanceOf[js.Any])
+    if (socket != null) __obj.updateDynamic("socket")(socket.asInstanceOf[js.Any])
     __obj.asInstanceOf[AcceptedCallbackArgs]
   }
 }

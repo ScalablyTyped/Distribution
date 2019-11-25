@@ -19,8 +19,8 @@ object GroupExpandedEventUIParam {
   @scala.inline
   def apply(element: String = null, owner: js.Any = null): GroupExpandedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupExpandedEventUIParam]
   }
 }

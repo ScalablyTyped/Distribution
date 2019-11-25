@@ -12,7 +12,7 @@ object Anon_BackgroundColorString {
   @scala.inline
   def apply(backgroundColor: String = null): Anon_BackgroundColorString = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BackgroundColorString]
   }
 }

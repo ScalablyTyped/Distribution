@@ -11,7 +11,7 @@ trait WrapperState extends js.Object {
 object WrapperState {
   @scala.inline
   def apply(isOpen: Boolean): WrapperState = {
-    val __obj = js.Dynamic.literal(isOpen = isOpen)
+    val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WrapperState]
   }

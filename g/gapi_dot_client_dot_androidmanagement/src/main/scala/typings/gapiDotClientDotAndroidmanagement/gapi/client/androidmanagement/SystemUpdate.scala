@@ -26,7 +26,7 @@ object SystemUpdate {
     val __obj = js.Dynamic.literal()
     if (endMinutes != null) __obj.updateDynamic("endMinutes")(endMinutes.asInstanceOf[js.Any])
     if (startMinutes != null) __obj.updateDynamic("startMinutes")(startMinutes.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SystemUpdate]
   }
 }

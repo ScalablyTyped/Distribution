@@ -26,8 +26,8 @@ object strings {
     TITLE_SELECTOR: `DOTmdc-toolbar__title`,
     StringDictionary: StringDictionary[String] = null
   ): strings = {
-    val __obj = js.Dynamic.literal(CHANGE_EVENT = CHANGE_EVENT, FIRST_ROW_SELECTOR = FIRST_ROW_SELECTOR, ICON_SELECTOR = ICON_SELECTOR, TITLE_SELECTOR = TITLE_SELECTOR)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(CHANGE_EVENT = CHANGE_EVENT.asInstanceOf[js.Any], FIRST_ROW_SELECTOR = FIRST_ROW_SELECTOR.asInstanceOf[js.Any], ICON_SELECTOR = ICON_SELECTOR.asInstanceOf[js.Any], TITLE_SELECTOR = TITLE_SELECTOR.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[strings]
   }
 }

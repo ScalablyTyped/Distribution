@@ -29,10 +29,10 @@ object DrawCategoryEventArgs {
     scaleElement: HTMLElement = null
   ): DrawCategoryEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (Object != null) __obj.updateDynamic("Object")(Object)
-    if (Value != null) __obj.updateDynamic("Value")(Value)
-    if (categoryElement != null) __obj.updateDynamic("categoryElement")(categoryElement)
-    if (scaleElement != null) __obj.updateDynamic("scaleElement")(scaleElement)
+    if (Object != null) __obj.updateDynamic("Object")(Object.asInstanceOf[js.Any])
+    if (Value != null) __obj.updateDynamic("Value")(Value.asInstanceOf[js.Any])
+    if (categoryElement != null) __obj.updateDynamic("categoryElement")(categoryElement.asInstanceOf[js.Any])
+    if (scaleElement != null) __obj.updateDynamic("scaleElement")(scaleElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawCategoryEventArgs]
   }
 }

@@ -15,10 +15,10 @@ object LineOptions {
   @scala.inline
   def apply(from: js.Any = null, name: String = null, stroke: LineStroke = null, to: js.Any = null): LineOptions = {
     val __obj = js.Dynamic.literal()
-    if (from != null) __obj.updateDynamic("from")(from)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
-    if (to != null) __obj.updateDynamic("to")(to)
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineOptions]
   }
 }

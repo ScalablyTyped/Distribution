@@ -13,8 +13,8 @@ object Anon_Dark {
   @scala.inline
   def apply(dark: String = null, light: String = null): Anon_Dark = {
     val __obj = js.Dynamic.literal()
-    if (dark != null) __obj.updateDynamic("dark")(dark)
-    if (light != null) __obj.updateDynamic("light")(light)
+    if (dark != null) __obj.updateDynamic("dark")(dark.asInstanceOf[js.Any])
+    if (light != null) __obj.updateDynamic("light")(light.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Dark]
   }
 }

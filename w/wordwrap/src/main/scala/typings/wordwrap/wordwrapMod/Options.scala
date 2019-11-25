@@ -13,8 +13,8 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(start: Double, stop: Double, mode: Mode = null): Options = {
-    val __obj = js.Dynamic.literal(start = start, stop = stop)
-    if (mode != null) __obj.updateDynamic("mode")(mode)
+    val __obj = js.Dynamic.literal(start = start.asInstanceOf[js.Any], stop = stop.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

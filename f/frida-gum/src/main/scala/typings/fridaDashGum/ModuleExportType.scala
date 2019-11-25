@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait ModuleExportType extends js.Object
 
+object ModuleExportType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def function: typings.fridaDashGum.fridaDashGumStrings.function = this.cast("function")
+  @scala.inline
+  def variable: typings.fridaDashGum.fridaDashGumStrings.variable = this.cast("variable")
+}
+

@@ -106,7 +106,7 @@ object _Impl {
     upward: String,
     visible: String
   ): _Impl = {
-    val __obj = js.Dynamic.literal(active = active, addition = addition, animating = animating, disabled = disabled, dropdown = dropdown, filtered = filtered, hidden = hidden, item = item, label = label, loading = loading, menu = menu, message = message, multiple = multiple, placeholder = placeholder, search = search, selected = selected, selection = selection, upward = upward, visible = visible)
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], addition = addition.asInstanceOf[js.Any], animating = animating.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], dropdown = dropdown.asInstanceOf[js.Any], filtered = filtered.asInstanceOf[js.Any], hidden = hidden.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any], menu = menu.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], multiple = multiple.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any], upward = upward.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_Impl]
   }

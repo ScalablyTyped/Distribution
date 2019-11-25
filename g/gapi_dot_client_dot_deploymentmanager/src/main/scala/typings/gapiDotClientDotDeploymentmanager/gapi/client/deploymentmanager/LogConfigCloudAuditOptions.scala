@@ -15,8 +15,8 @@ object LogConfigCloudAuditOptions {
   @scala.inline
   def apply(authorizationLoggingOptions: AuthorizationLoggingOptions = null, logName: String = null): LogConfigCloudAuditOptions = {
     val __obj = js.Dynamic.literal()
-    if (authorizationLoggingOptions != null) __obj.updateDynamic("authorizationLoggingOptions")(authorizationLoggingOptions)
-    if (logName != null) __obj.updateDynamic("logName")(logName)
+    if (authorizationLoggingOptions != null) __obj.updateDynamic("authorizationLoggingOptions")(authorizationLoggingOptions.asInstanceOf[js.Any])
+    if (logName != null) __obj.updateDynamic("logName")(logName.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogConfigCloudAuditOptions]
   }
 }

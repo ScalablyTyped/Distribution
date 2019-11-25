@@ -26,9 +26,9 @@ object titleAttributesParams {
   @scala.inline
   def apply(color: String = null, font: Font = null, shadow: shadowDict = null): titleAttributesParams = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (font != null) __obj.updateDynamic("font")(font)
-    if (shadow != null) __obj.updateDynamic("shadow")(shadow)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
+    if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
     __obj.asInstanceOf[titleAttributesParams]
   }
 }

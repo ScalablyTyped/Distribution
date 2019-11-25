@@ -11,7 +11,7 @@ trait NewLevelAfter extends NewLevel {
 object NewLevelAfter {
   @scala.inline
   def apply(after: String, afterLog: () => Unit = null): NewLevelAfter = {
-    val __obj = js.Dynamic.literal(after = after)
+    val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any])
     if (afterLog != null) __obj.updateDynamic("afterLog")(js.Any.fromFunction0(afterLog))
     __obj.asInstanceOf[NewLevelAfter]
   }

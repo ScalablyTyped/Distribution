@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait MIDIPortDeviceState extends js.Object
 
+object MIDIPortDeviceState {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def connected: typings.webmidi.webmidiStrings.connected = this.cast("connected")
+  @scala.inline
+  def disconnected: typings.webmidi.webmidiStrings.disconnected = this.cast("disconnected")
+}
+

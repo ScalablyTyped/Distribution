@@ -57,8 +57,8 @@ object ClusterOptions {
     processProperties: (/* clusterOptions */ js.Any, /* childNodesOptions */ js.Array[_], /* childEdgesOptions */ js.Array[_]) => _ = null
   ): ClusterOptions = {
     val __obj = js.Dynamic.literal()
-    if (clusterEdgeProperties != null) __obj.updateDynamic("clusterEdgeProperties")(clusterEdgeProperties)
-    if (clusterNodeProperties != null) __obj.updateDynamic("clusterNodeProperties")(clusterNodeProperties)
+    if (clusterEdgeProperties != null) __obj.updateDynamic("clusterEdgeProperties")(clusterEdgeProperties.asInstanceOf[js.Any])
+    if (clusterNodeProperties != null) __obj.updateDynamic("clusterNodeProperties")(clusterNodeProperties.asInstanceOf[js.Any])
     if (joinCondition != null) __obj.updateDynamic("joinCondition")(js.Any.fromFunction1(joinCondition))
     if (processProperties != null) __obj.updateDynamic("processProperties")(js.Any.fromFunction3(processProperties))
     __obj.asInstanceOf[ClusterOptions]

@@ -19,9 +19,9 @@ object SpreadsheetRenameSheetEvent {
     newSheetName: String = null,
     sheet: Sheet = null
   ): SpreadsheetRenameSheetEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (newSheetName != null) __obj.updateDynamic("newSheetName")(newSheetName)
-    if (sheet != null) __obj.updateDynamic("sheet")(sheet)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (newSheetName != null) __obj.updateDynamic("newSheetName")(newSheetName.asInstanceOf[js.Any])
+    if (sheet != null) __obj.updateDynamic("sheet")(sheet.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpreadsheetRenameSheetEvent]
   }
 }

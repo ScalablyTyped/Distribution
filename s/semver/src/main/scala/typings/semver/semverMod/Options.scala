@@ -13,8 +13,8 @@ object Options {
   @scala.inline
   def apply(includePrerelease: js.UndefOr[Boolean] = js.undefined, loose: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includePrerelease)) __obj.updateDynamic("includePrerelease")(includePrerelease)
-    if (!js.isUndefined(loose)) __obj.updateDynamic("loose")(loose)
+    if (!js.isUndefined(includePrerelease)) __obj.updateDynamic("includePrerelease")(includePrerelease.asInstanceOf[js.Any])
+    if (!js.isUndefined(loose)) __obj.updateDynamic("loose")(loose.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

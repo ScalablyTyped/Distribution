@@ -20,7 +20,7 @@ object AutoFillSettings {
   def apply(fillType: AutoFillOptions | String = null, showFillOptions: js.UndefOr[Boolean] = js.undefined): AutoFillSettings = {
     val __obj = js.Dynamic.literal()
     if (fillType != null) __obj.updateDynamic("fillType")(fillType.asInstanceOf[js.Any])
-    if (!js.isUndefined(showFillOptions)) __obj.updateDynamic("showFillOptions")(showFillOptions)
+    if (!js.isUndefined(showFillOptions)) __obj.updateDynamic("showFillOptions")(showFillOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoFillSettings]
   }
 }

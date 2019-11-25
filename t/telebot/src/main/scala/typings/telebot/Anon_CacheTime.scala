@@ -21,9 +21,9 @@ object Anon_CacheTime {
   ): Anon_CacheTime = {
     val __obj = js.Dynamic.literal()
     if (cacheTime != null) __obj.updateDynamic("cacheTime")(cacheTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(showAlert)) __obj.updateDynamic("showAlert")(showAlert)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (!js.isUndefined(showAlert)) __obj.updateDynamic("showAlert")(showAlert.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CacheTime]
   }
 }

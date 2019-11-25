@@ -12,7 +12,7 @@ trait Anon_Scopes extends js.Object {
 object Anon_Scopes {
   @scala.inline
   def apply(scopes: js.Array[String], value: String): Anon_Scopes = {
-    val __obj = js.Dynamic.literal(scopes = scopes, value = value)
+    val __obj = js.Dynamic.literal(scopes = scopes.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Scopes]
   }

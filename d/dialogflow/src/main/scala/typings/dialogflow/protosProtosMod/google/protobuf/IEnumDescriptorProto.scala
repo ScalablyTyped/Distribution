@@ -29,11 +29,11 @@ object IEnumDescriptorProto {
     value: js.Array[IEnumValueDescriptorProto] = null
   ): IEnumDescriptorProto = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (reservedName != null) __obj.updateDynamic("reservedName")(reservedName)
-    if (reservedRange != null) __obj.updateDynamic("reservedRange")(reservedRange)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (reservedName != null) __obj.updateDynamic("reservedName")(reservedName.asInstanceOf[js.Any])
+    if (reservedRange != null) __obj.updateDynamic("reservedRange")(reservedRange.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEnumDescriptorProto]
   }
 }

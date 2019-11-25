@@ -47,11 +47,11 @@ object ITimeEntryRegionalOptions {
     spinnerTexts: js.Array[String] = null
   ): ITimeEntryRegionalOptions = {
     val __obj = js.Dynamic.literal()
-    if (ampmNames != null) __obj.updateDynamic("ampmNames")(ampmNames)
-    if (ampmPrefix != null) __obj.updateDynamic("ampmPrefix")(ampmPrefix)
-    if (separator != null) __obj.updateDynamic("separator")(separator)
-    if (!js.isUndefined(show24Hours)) __obj.updateDynamic("show24Hours")(show24Hours)
-    if (spinnerTexts != null) __obj.updateDynamic("spinnerTexts")(spinnerTexts)
+    if (ampmNames != null) __obj.updateDynamic("ampmNames")(ampmNames.asInstanceOf[js.Any])
+    if (ampmPrefix != null) __obj.updateDynamic("ampmPrefix")(ampmPrefix.asInstanceOf[js.Any])
+    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
+    if (!js.isUndefined(show24Hours)) __obj.updateDynamic("show24Hours")(show24Hours.asInstanceOf[js.Any])
+    if (spinnerTexts != null) __obj.updateDynamic("spinnerTexts")(spinnerTexts.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITimeEntryRegionalOptions]
   }
 }

@@ -12,7 +12,7 @@ object AnnotationsInfinityLineTypeLineOptions {
   @scala.inline
   def apply(fill: String = null): AnnotationsInfinityLineTypeLineOptions = {
     val __obj = js.Dynamic.literal()
-    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotationsInfinityLineTypeLineOptions]
   }
 }

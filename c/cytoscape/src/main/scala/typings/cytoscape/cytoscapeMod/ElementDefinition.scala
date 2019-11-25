@@ -68,17 +68,17 @@ object ElementDefinition {
     style: CssStyleDeclaration = null
   ): ElementDefinition = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-    if (classes != null) __obj.updateDynamic("classes")(classes)
+    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
     if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
-    if (!js.isUndefined(grabbable)) __obj.updateDynamic("grabbable")(grabbable)
-    if (group != null) __obj.updateDynamic("group")(group)
-    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (renderedPosition != null) __obj.updateDynamic("renderedPosition")(renderedPosition)
-    if (scratch != null) __obj.updateDynamic("scratch")(scratch)
-    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable)
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (!js.isUndefined(grabbable)) __obj.updateDynamic("grabbable")(grabbable.asInstanceOf[js.Any])
+    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
+    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (renderedPosition != null) __obj.updateDynamic("renderedPosition")(renderedPosition.asInstanceOf[js.Any])
+    if (scratch != null) __obj.updateDynamic("scratch")(scratch.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementDefinition]
   }
 }

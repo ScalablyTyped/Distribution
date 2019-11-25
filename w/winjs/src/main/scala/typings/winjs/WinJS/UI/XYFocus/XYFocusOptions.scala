@@ -33,10 +33,10 @@ object XYFocusOptions {
     referenceRect: IRect = null
   ): XYFocusOptions = {
     val __obj = js.Dynamic.literal()
-    if (focusRoot != null) __obj.updateDynamic("focusRoot")(focusRoot)
-    if (historyRect != null) __obj.updateDynamic("historyRect")(historyRect)
-    if (referenceElement != null) __obj.updateDynamic("referenceElement")(referenceElement)
-    if (referenceRect != null) __obj.updateDynamic("referenceRect")(referenceRect)
+    if (focusRoot != null) __obj.updateDynamic("focusRoot")(focusRoot.asInstanceOf[js.Any])
+    if (historyRect != null) __obj.updateDynamic("historyRect")(historyRect.asInstanceOf[js.Any])
+    if (referenceElement != null) __obj.updateDynamic("referenceElement")(referenceElement.asInstanceOf[js.Any])
+    if (referenceRect != null) __obj.updateDynamic("referenceRect")(referenceRect.asInstanceOf[js.Any])
     __obj.asInstanceOf[XYFocusOptions]
   }
 }

@@ -18,7 +18,7 @@ trait ItemsDropContext extends js.Object {
 object ItemsDropContext {
   @scala.inline
   def apply(item: Element, position: before | after | inside, reorder: Boolean): ItemsDropContext = {
-    val __obj = js.Dynamic.literal(item = item, position = position.asInstanceOf[js.Any], reorder = reorder)
+    val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], reorder = reorder.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ItemsDropContext]
   }

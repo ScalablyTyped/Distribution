@@ -54,12 +54,12 @@ object ModelJSON {
     trainingConfig: TrainingConfig = null,
     userDefinedMetadata: js.Object = null
   ): ModelJSON = {
-    val __obj = js.Dynamic.literal(weightsManifest = weightsManifest)
-    if (convertedBy != null) __obj.updateDynamic("convertedBy")(convertedBy)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (generatedBy != null) __obj.updateDynamic("generatedBy")(generatedBy)
-    if (trainingConfig != null) __obj.updateDynamic("trainingConfig")(trainingConfig)
-    if (userDefinedMetadata != null) __obj.updateDynamic("userDefinedMetadata")(userDefinedMetadata)
+    val __obj = js.Dynamic.literal(weightsManifest = weightsManifest.asInstanceOf[js.Any])
+    if (convertedBy != null) __obj.updateDynamic("convertedBy")(convertedBy.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (generatedBy != null) __obj.updateDynamic("generatedBy")(generatedBy.asInstanceOf[js.Any])
+    if (trainingConfig != null) __obj.updateDynamic("trainingConfig")(trainingConfig.asInstanceOf[js.Any])
+    if (userDefinedMetadata != null) __obj.updateDynamic("userDefinedMetadata")(userDefinedMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelJSON]
   }
 }

@@ -23,8 +23,8 @@ object ConnectionInfo {
     verified: Boolean,
     visibility: Double
   ): ConnectionInfo = {
-    val __obj = js.Dynamic.literal(id = id, name = name, show_activity = show_activity, verified = verified, visibility = visibility)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], show_activity = show_activity.asInstanceOf[js.Any], verified = verified.asInstanceOf[js.Any], visibility = visibility.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionInfo]
   }
 }

@@ -21,7 +21,7 @@ trait PositionTickInfo extends js.Object {
 object PositionTickInfo {
   @scala.inline
   def apply(line: Double, ticks: Double): PositionTickInfo = {
-    val __obj = js.Dynamic.literal(line = line, ticks = ticks)
+    val __obj = js.Dynamic.literal(line = line.asInstanceOf[js.Any], ticks = ticks.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PositionTickInfo]
   }

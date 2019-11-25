@@ -59,11 +59,11 @@ object CreateSupressionListEntry {
     transactional: js.UndefOr[Boolean] = js.undefined,
     `type`: transactional | non_transactional = null
   ): CreateSupressionListEntry = {
-    val __obj = js.Dynamic.literal(recipient = recipient)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (!js.isUndefined(non_transactional)) __obj.updateDynamic("non_transactional")(non_transactional)
+    val __obj = js.Dynamic.literal(recipient = recipient.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(non_transactional)) __obj.updateDynamic("non_transactional")(non_transactional.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (!js.isUndefined(transactional)) __obj.updateDynamic("transactional")(transactional)
+    if (!js.isUndefined(transactional)) __obj.updateDynamic("transactional")(transactional.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSupressionListEntry]
   }

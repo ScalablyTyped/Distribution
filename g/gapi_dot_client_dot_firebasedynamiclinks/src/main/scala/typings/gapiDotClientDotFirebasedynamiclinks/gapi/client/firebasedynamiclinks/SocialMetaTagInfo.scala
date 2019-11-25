@@ -17,9 +17,9 @@ object SocialMetaTagInfo {
   @scala.inline
   def apply(socialDescription: String = null, socialImageLink: String = null, socialTitle: String = null): SocialMetaTagInfo = {
     val __obj = js.Dynamic.literal()
-    if (socialDescription != null) __obj.updateDynamic("socialDescription")(socialDescription)
-    if (socialImageLink != null) __obj.updateDynamic("socialImageLink")(socialImageLink)
-    if (socialTitle != null) __obj.updateDynamic("socialTitle")(socialTitle)
+    if (socialDescription != null) __obj.updateDynamic("socialDescription")(socialDescription.asInstanceOf[js.Any])
+    if (socialImageLink != null) __obj.updateDynamic("socialImageLink")(socialImageLink.asInstanceOf[js.Any])
+    if (socialTitle != null) __obj.updateDynamic("socialTitle")(socialTitle.asInstanceOf[js.Any])
     __obj.asInstanceOf[SocialMetaTagInfo]
   }
 }

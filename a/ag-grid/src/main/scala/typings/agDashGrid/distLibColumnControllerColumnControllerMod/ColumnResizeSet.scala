@@ -14,7 +14,7 @@ trait ColumnResizeSet extends js.Object {
 object ColumnResizeSet {
   @scala.inline
   def apply(columns: js.Array[Column], ratios: js.Array[Double], width: Double): ColumnResizeSet = {
-    val __obj = js.Dynamic.literal(columns = columns, ratios = ratios, width = width)
+    val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], ratios = ratios.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ColumnResizeSet]
   }

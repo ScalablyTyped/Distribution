@@ -1,7 +1,7 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeDashAppsStrings.connected
-import typings.chromeDashApps.chromeDashAppsStrings.disconnected
+import typings.chromeDashApps.chromeDashAppsStrings.connected_
+import typings.chromeDashApps.chromeDashAppsStrings.disconnected_
 import typings.chromeDashApps.chromeDashAppsStrings.error
 import typings.chromeDashApps.chromeDashAppsStrings.linkChanged
 import typings.chromeDashApps.chromeDashAppsStrings.linkDown
@@ -13,8 +13,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_CONNECTEDConnectedDISCONNECTED extends js.Object {
-  var CONNECTED: connected
-  var DISCONNECTED: disconnected
+  var CONNECTED: connected_
+  var DISCONNECTED: disconnected_
   var ERROR: error
   var LINK_CHANGED: linkChanged
   var LINK_DOWN: linkDown
@@ -26,8 +26,8 @@ trait Anon_CONNECTEDConnectedDISCONNECTED extends js.Object {
 object Anon_CONNECTEDConnectedDISCONNECTED {
   @scala.inline
   def apply(
-    CONNECTED: connected,
-    DISCONNECTED: disconnected,
+    CONNECTED: connected_,
+    DISCONNECTED: disconnected_,
     ERROR: error,
     LINK_CHANGED: linkChanged,
     LINK_DOWN: linkDown,
@@ -35,7 +35,7 @@ object Anon_CONNECTEDConnectedDISCONNECTED {
     RESUME: resume,
     SUSPEND: suspend
   ): Anon_CONNECTEDConnectedDISCONNECTED = {
-    val __obj = js.Dynamic.literal(CONNECTED = CONNECTED, DISCONNECTED = DISCONNECTED, ERROR = ERROR, LINK_CHANGED = LINK_CHANGED, LINK_DOWN = LINK_DOWN, LINK_UP = LINK_UP, RESUME = RESUME, SUSPEND = SUSPEND)
+    val __obj = js.Dynamic.literal(CONNECTED = CONNECTED.asInstanceOf[js.Any], DISCONNECTED = DISCONNECTED.asInstanceOf[js.Any], ERROR = ERROR.asInstanceOf[js.Any], LINK_CHANGED = LINK_CHANGED.asInstanceOf[js.Any], LINK_DOWN = LINK_DOWN.asInstanceOf[js.Any], LINK_UP = LINK_UP.asInstanceOf[js.Any], RESUME = RESUME.asInstanceOf[js.Any], SUSPEND = SUSPEND.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CONNECTEDConnectedDISCONNECTED]
   }

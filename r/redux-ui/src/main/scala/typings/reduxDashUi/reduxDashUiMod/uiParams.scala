@@ -37,10 +37,10 @@ object uiParams {
     reducer: (/* state */ js.Any, /* action */ js.Any) => _ = null
   ): uiParams[UIStateShape] = {
     val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (mergeProps != null) __obj.updateDynamic("mergeProps")(js.Any.fromFunction3(mergeProps))
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (!js.isUndefined(persist)) __obj.updateDynamic("persist")(persist)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (!js.isUndefined(persist)) __obj.updateDynamic("persist")(persist.asInstanceOf[js.Any])
     if (reducer != null) __obj.updateDynamic("reducer")(js.Any.fromFunction2(reducer))
     __obj.asInstanceOf[uiParams[UIStateShape]]
   }

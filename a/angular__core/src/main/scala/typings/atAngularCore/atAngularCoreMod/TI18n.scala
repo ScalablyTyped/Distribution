@@ -42,8 +42,8 @@ trait TI18n extends js.Object {
 object TI18n {
   @scala.inline
   def apply(create: I18nMutateOpCodes, update: I18nUpdateOpCodes, vars: Double, icus: js.Array[TIcu] = null): TI18n = {
-    val __obj = js.Dynamic.literal(create = create, update = update, vars = vars)
-    if (icus != null) __obj.updateDynamic("icus")(icus)
+    val __obj = js.Dynamic.literal(create = create.asInstanceOf[js.Any], update = update.asInstanceOf[js.Any], vars = vars.asInstanceOf[js.Any])
+    if (icus != null) __obj.updateDynamic("icus")(icus.asInstanceOf[js.Any])
     __obj.asInstanceOf[TI18n]
   }
 }

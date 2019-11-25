@@ -15,7 +15,7 @@ trait InventoryItemListOptions extends BasicListOptions {
 object InventoryItemListOptions {
   @scala.inline
   def apply(ids: String, limit: Int | Double = null, page: Int | Double = null): InventoryItemListOptions = {
-    val __obj = js.Dynamic.literal(ids = ids)
+    val __obj = js.Dynamic.literal(ids = ids.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     __obj.asInstanceOf[InventoryItemListOptions]

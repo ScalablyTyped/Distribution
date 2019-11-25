@@ -12,7 +12,7 @@ trait Anon_ColModel extends js.Object {
 object Anon_ColModel {
   @scala.inline
   def apply(colModel: js.Any, rowId: js.Any): Anon_ColModel = {
-    val __obj = js.Dynamic.literal(colModel = colModel, rowId = rowId)
+    val __obj = js.Dynamic.literal(colModel = colModel.asInstanceOf[js.Any], rowId = rowId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ColModel]
   }

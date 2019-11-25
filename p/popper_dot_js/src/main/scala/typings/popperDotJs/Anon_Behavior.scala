@@ -29,8 +29,8 @@ object Anon_Behavior {
     val __obj = js.Dynamic.literal()
     if (behavior != null) __obj.updateDynamic("behavior")(behavior.asInstanceOf[js.Any])
     if (boundariesElement != null) __obj.updateDynamic("boundariesElement")(boundariesElement.asInstanceOf[js.Any])
-    if (!js.isUndefined(flipVariations)) __obj.updateDynamic("flipVariations")(flipVariations)
-    if (!js.isUndefined(flipVariationsByContent)) __obj.updateDynamic("flipVariationsByContent")(flipVariationsByContent)
+    if (!js.isUndefined(flipVariations)) __obj.updateDynamic("flipVariations")(flipVariations.asInstanceOf[js.Any])
+    if (!js.isUndefined(flipVariationsByContent)) __obj.updateDynamic("flipVariationsByContent")(flipVariationsByContent.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Behavior]
   }

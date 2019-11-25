@@ -13,8 +13,8 @@ object GoogleCloudDialogflowV2IntentFollowupIntentInfo {
   @scala.inline
   def apply(followupIntentName: String = null, parentFollowupIntentName: String = null): GoogleCloudDialogflowV2IntentFollowupIntentInfo = {
     val __obj = js.Dynamic.literal()
-    if (followupIntentName != null) __obj.updateDynamic("followupIntentName")(followupIntentName)
-    if (parentFollowupIntentName != null) __obj.updateDynamic("parentFollowupIntentName")(parentFollowupIntentName)
+    if (followupIntentName != null) __obj.updateDynamic("followupIntentName")(followupIntentName.asInstanceOf[js.Any])
+    if (parentFollowupIntentName != null) __obj.updateDynamic("parentFollowupIntentName")(parentFollowupIntentName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudDialogflowV2IntentFollowupIntentInfo]
   }
 }

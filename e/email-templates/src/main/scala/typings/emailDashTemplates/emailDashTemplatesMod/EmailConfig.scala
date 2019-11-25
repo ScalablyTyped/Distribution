@@ -77,18 +77,18 @@ object EmailConfig {
     transport: NodeMailerTransportOptions = null,
     views: View = null
   ): EmailConfig[T] = {
-    val __obj = js.Dynamic.literal(message = message)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     if (htmlToText != null) __obj.updateDynamic("htmlToText")(htmlToText.asInstanceOf[js.Any])
-    if (i18n != null) __obj.updateDynamic("i18n")(i18n)
-    if (!js.isUndefined(juice)) __obj.updateDynamic("juice")(juice)
-    if (juiceResources != null) __obj.updateDynamic("juiceResources")(juiceResources)
+    if (i18n != null) __obj.updateDynamic("i18n")(i18n.asInstanceOf[js.Any])
+    if (!js.isUndefined(juice)) __obj.updateDynamic("juice")(juice.asInstanceOf[js.Any])
+    if (juiceResources != null) __obj.updateDynamic("juiceResources")(juiceResources.asInstanceOf[js.Any])
     if (preview != null) __obj.updateDynamic("preview")(preview.asInstanceOf[js.Any])
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction2(render))
-    if (!js.isUndefined(send)) __obj.updateDynamic("send")(send)
+    if (!js.isUndefined(send)) __obj.updateDynamic("send")(send.asInstanceOf[js.Any])
     if (subjectPrefix != null) __obj.updateDynamic("subjectPrefix")(subjectPrefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(textOnly)) __obj.updateDynamic("textOnly")(textOnly)
+    if (!js.isUndefined(textOnly)) __obj.updateDynamic("textOnly")(textOnly.asInstanceOf[js.Any])
     if (transport != null) __obj.updateDynamic("transport")(transport.asInstanceOf[js.Any])
-    if (views != null) __obj.updateDynamic("views")(views)
+    if (views != null) __obj.updateDynamic("views")(views.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmailConfig[T]]
   }
 }

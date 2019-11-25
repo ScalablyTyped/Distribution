@@ -15,7 +15,7 @@ object BrowserViewConstructorOptions {
   @scala.inline
   def apply(webPreferences: WebPreferences = null): BrowserViewConstructorOptions = {
     val __obj = js.Dynamic.literal()
-    if (webPreferences != null) __obj.updateDynamic("webPreferences")(webPreferences)
+    if (webPreferences != null) __obj.updateDynamic("webPreferences")(webPreferences.asInstanceOf[js.Any])
     __obj.asInstanceOf[BrowserViewConstructorOptions]
   }
 }

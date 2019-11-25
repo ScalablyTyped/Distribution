@@ -15,7 +15,7 @@ trait Language extends js.Object {
 object Language {
   @scala.inline
   def apply(dayNames: js.Array[String], monthNames: js.Array[String], tokens: StringDictionary[RegExp]): Language = {
-    val __obj = js.Dynamic.literal(dayNames = dayNames, monthNames = monthNames, tokens = tokens)
+    val __obj = js.Dynamic.literal(dayNames = dayNames.asInstanceOf[js.Any], monthNames = monthNames.asInstanceOf[js.Any], tokens = tokens.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Language]
   }

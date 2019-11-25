@@ -13,8 +13,8 @@ trait Member extends js.Object {
 object Member {
   @scala.inline
   def apply(ref: Double, role: String, `type`: String): Member = {
-    val __obj = js.Dynamic.literal(ref = ref, role = role)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(ref = ref.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Member]
   }
 }

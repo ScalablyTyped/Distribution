@@ -17,9 +17,9 @@ object ScrollIntoViewOptions {
     `inline`: ScrollLogicalPosition = null
   ): ScrollIntoViewOptions = {
     val __obj = js.Dynamic.literal()
-    if (behavior != null) __obj.updateDynamic("behavior")(behavior)
-    if (block != null) __obj.updateDynamic("block")(block)
-    if (`inline` != null) __obj.updateDynamic("inline")(`inline`)
+    if (behavior != null) __obj.updateDynamic("behavior")(behavior.asInstanceOf[js.Any])
+    if (block != null) __obj.updateDynamic("block")(block.asInstanceOf[js.Any])
+    if (`inline` != null) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollIntoViewOptions]
   }
 }

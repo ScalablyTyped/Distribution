@@ -15,9 +15,9 @@ object PartialClassNameMapStepContentClasskey {
   @scala.inline
   def apply(last: String = null, root: String = null, transition: String = null): PartialClassNameMapStepContentClasskey = {
     val __obj = js.Dynamic.literal()
-    if (last != null) __obj.updateDynamic("last")(last)
-    if (root != null) __obj.updateDynamic("root")(root)
-    if (transition != null) __obj.updateDynamic("transition")(transition)
+    if (last != null) __obj.updateDynamic("last")(last.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapStepContentClasskey]
   }
 }

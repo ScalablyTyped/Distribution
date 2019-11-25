@@ -24,8 +24,8 @@ object Anon_BackgroundColorColor {
     `type`: String,
     onPress: () => Unit = null
   ): Anon_BackgroundColorColor = {
-    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, color = color, component = component, disabled = disabled)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], component = component.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction0(onPress))
     __obj.asInstanceOf[Anon_BackgroundColorColor]
   }

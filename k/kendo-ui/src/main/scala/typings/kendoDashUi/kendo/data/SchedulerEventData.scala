@@ -35,17 +35,17 @@ object SchedulerEventData {
     title: String = null
   ): SchedulerEventData = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (end != null) __obj.updateDynamic("end")(end)
-    if (endTimezone != null) __obj.updateDynamic("endTimezone")(endTimezone)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(isAllDay)) __obj.updateDynamic("isAllDay")(isAllDay)
-    if (recurrenceException != null) __obj.updateDynamic("recurrenceException")(recurrenceException)
-    if (recurrenceId != null) __obj.updateDynamic("recurrenceId")(recurrenceId)
-    if (recurrenceRule != null) __obj.updateDynamic("recurrenceRule")(recurrenceRule)
-    if (start != null) __obj.updateDynamic("start")(start)
-    if (startTimezone != null) __obj.updateDynamic("startTimezone")(startTimezone)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (endTimezone != null) __obj.updateDynamic("endTimezone")(endTimezone.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAllDay)) __obj.updateDynamic("isAllDay")(isAllDay.asInstanceOf[js.Any])
+    if (recurrenceException != null) __obj.updateDynamic("recurrenceException")(recurrenceException.asInstanceOf[js.Any])
+    if (recurrenceId != null) __obj.updateDynamic("recurrenceId")(recurrenceId.asInstanceOf[js.Any])
+    if (recurrenceRule != null) __obj.updateDynamic("recurrenceRule")(recurrenceRule.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (startTimezone != null) __obj.updateDynamic("startTimezone")(startTimezone.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchedulerEventData]
   }
 }

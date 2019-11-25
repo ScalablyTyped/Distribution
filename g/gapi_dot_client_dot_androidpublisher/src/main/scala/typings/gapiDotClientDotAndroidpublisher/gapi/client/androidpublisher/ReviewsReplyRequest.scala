@@ -13,7 +13,7 @@ object ReviewsReplyRequest {
   @scala.inline
   def apply(replyText: String = null): ReviewsReplyRequest = {
     val __obj = js.Dynamic.literal()
-    if (replyText != null) __obj.updateDynamic("replyText")(replyText)
+    if (replyText != null) __obj.updateDynamic("replyText")(replyText.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReviewsReplyRequest]
   }
 }

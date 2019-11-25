@@ -15,8 +15,8 @@ trait Heading extends Token {
 object Heading {
   @scala.inline
   def apply(depth: Double, text: String, `type`: heading): Heading = {
-    val __obj = js.Dynamic.literal(depth = depth, text = text)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(depth = depth.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Heading]
   }
 }

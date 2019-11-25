@@ -13,8 +13,8 @@ object AbstractGetOptions {
   @scala.inline
   def apply(StringDictionary: StringDictionary[js.Any] = null, asBuffer: js.UndefOr[Boolean] = js.undefined): AbstractGetOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(asBuffer)) __obj.updateDynamic("asBuffer")(asBuffer)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(asBuffer)) __obj.updateDynamic("asBuffer")(asBuffer.asInstanceOf[js.Any])
     __obj.asInstanceOf[AbstractGetOptions]
   }
 }

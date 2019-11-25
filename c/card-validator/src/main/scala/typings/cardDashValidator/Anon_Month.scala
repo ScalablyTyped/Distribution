@@ -12,7 +12,7 @@ trait Anon_Month extends js.Object {
 object Anon_Month {
   @scala.inline
   def apply(month: String, year: String): Anon_Month = {
-    val __obj = js.Dynamic.literal(month = month, year = year)
+    val __obj = js.Dynamic.literal(month = month.asInstanceOf[js.Any], year = year.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Month]
   }

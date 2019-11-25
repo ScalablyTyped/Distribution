@@ -16,10 +16,10 @@ object KeyPairOptions {
   @scala.inline
   def apply(priv: Buffer = null, privEnc: String = null, pub: Buffer = null, pubEnc: String = null): KeyPairOptions = {
     val __obj = js.Dynamic.literal()
-    if (priv != null) __obj.updateDynamic("priv")(priv)
-    if (privEnc != null) __obj.updateDynamic("privEnc")(privEnc)
-    if (pub != null) __obj.updateDynamic("pub")(pub)
-    if (pubEnc != null) __obj.updateDynamic("pubEnc")(pubEnc)
+    if (priv != null) __obj.updateDynamic("priv")(priv.asInstanceOf[js.Any])
+    if (privEnc != null) __obj.updateDynamic("privEnc")(privEnc.asInstanceOf[js.Any])
+    if (pub != null) __obj.updateDynamic("pub")(pub.asInstanceOf[js.Any])
+    if (pubEnc != null) __obj.updateDynamic("pubEnc")(pubEnc.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyPairOptions]
   }
 }

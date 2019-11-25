@@ -17,7 +17,7 @@ trait DataResponse extends js.Object {
 object DataResponse {
   @scala.inline
   def apply(data: js.Any, headers: js.Object, status: Double): DataResponse = {
-    val __obj = js.Dynamic.literal(data = data, headers = headers, status = status)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DataResponse]
   }

@@ -14,8 +14,8 @@ object FreedomInCoreEnvOptions {
   @scala.inline
   def apply(debug: String = null, logger: String = null): FreedomInCoreEnvOptions = {
     val __obj = js.Dynamic.literal()
-    if (debug != null) __obj.updateDynamic("debug")(debug)
-    if (logger != null) __obj.updateDynamic("logger")(logger)
+    if (debug != null) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
     __obj.asInstanceOf[FreedomInCoreEnvOptions]
   }
 }

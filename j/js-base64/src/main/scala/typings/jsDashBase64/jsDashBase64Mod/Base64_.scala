@@ -16,7 +16,7 @@ trait Base64_ extends js.Object {
   def encodeURI(s: String): String = js.native
   def extendString(): Unit = js.native
   def fromBase64(base64: String): String = js.native
-  def noConflict(): /* import warning: ImportType.apply Failed type conversion: typeof Base64 */ js.Any = js.native
+  def noConflict(): /* import warning: importer.ImportType#apply Failed type conversion: typeof Base64 */ js.Any = js.native
   def toBase64(s: String): String = js.native
   def toBase64(s: String, uriSafe: Boolean): String = js.native
   def utob(s: String): String = js.native

@@ -13,8 +13,8 @@ trait InitProps extends js.Object {
 object InitProps {
   @scala.inline
   def apply(account_key: String, authentication: Anon_Callback = null): InitProps = {
-    val __obj = js.Dynamic.literal(account_key = account_key)
-    if (authentication != null) __obj.updateDynamic("authentication")(authentication)
+    val __obj = js.Dynamic.literal(account_key = account_key.asInstanceOf[js.Any])
+    if (authentication != null) __obj.updateDynamic("authentication")(authentication.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitProps]
   }
 }

@@ -15,8 +15,8 @@ object ApkBinary {
   @scala.inline
   def apply(sha1: String = null, sha256: String = null): ApkBinary = {
     val __obj = js.Dynamic.literal()
-    if (sha1 != null) __obj.updateDynamic("sha1")(sha1)
-    if (sha256 != null) __obj.updateDynamic("sha256")(sha256)
+    if (sha1 != null) __obj.updateDynamic("sha1")(sha1.asInstanceOf[js.Any])
+    if (sha256 != null) __obj.updateDynamic("sha256")(sha256.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApkBinary]
   }
 }

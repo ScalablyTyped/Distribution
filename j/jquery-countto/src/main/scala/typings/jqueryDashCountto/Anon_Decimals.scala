@@ -54,7 +54,7 @@ object Anon_Decimals {
     speed: Double,
     to: Double
   ): Anon_Decimals = {
-    val __obj = js.Dynamic.literal(decimals = decimals, formatter = js.Any.fromFunction2(formatter), from = from, onComplete = js.Any.fromFunction1(onComplete), onUpdate = js.Any.fromFunction1(onUpdate), refreshInterval = refreshInterval, speed = speed, to = to)
+    val __obj = js.Dynamic.literal(decimals = decimals.asInstanceOf[js.Any], formatter = js.Any.fromFunction2(formatter), from = from.asInstanceOf[js.Any], onComplete = js.Any.fromFunction1(onComplete), onUpdate = js.Any.fromFunction1(onUpdate), refreshInterval = refreshInterval.asInstanceOf[js.Any], speed = speed.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Decimals]
   }

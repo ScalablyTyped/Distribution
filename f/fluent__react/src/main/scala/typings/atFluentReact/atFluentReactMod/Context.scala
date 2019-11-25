@@ -13,7 +13,7 @@ trait Context extends js.Object {
 object Context {
   @scala.inline
   def apply(l10n: ReactLocalization, parseMarkup: /* str */ String => js.Array[Node]): Context = {
-    val __obj = js.Dynamic.literal(l10n = l10n, parseMarkup = js.Any.fromFunction1(parseMarkup))
+    val __obj = js.Dynamic.literal(l10n = l10n.asInstanceOf[js.Any], parseMarkup = js.Any.fromFunction1(parseMarkup))
   
     __obj.asInstanceOf[Context]
   }

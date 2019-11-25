@@ -14,7 +14,7 @@ trait CloseFileRequestedEventOptions extends RequestedEventOptions {
 object CloseFileRequestedEventOptions {
   @scala.inline
   def apply(fileSystemId: String, openRequestId: integer, requestId: integer): CloseFileRequestedEventOptions = {
-    val __obj = js.Dynamic.literal(fileSystemId = fileSystemId, openRequestId = openRequestId, requestId = requestId)
+    val __obj = js.Dynamic.literal(fileSystemId = fileSystemId.asInstanceOf[js.Any], openRequestId = openRequestId.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CloseFileRequestedEventOptions]
   }

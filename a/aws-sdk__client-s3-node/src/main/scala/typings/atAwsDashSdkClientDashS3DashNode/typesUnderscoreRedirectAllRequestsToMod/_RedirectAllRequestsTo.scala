@@ -20,7 +20,7 @@ trait _RedirectAllRequestsTo extends js.Object {
 object _RedirectAllRequestsTo {
   @scala.inline
   def apply(HostName: String, Protocol: http | https | String = null): _RedirectAllRequestsTo = {
-    val __obj = js.Dynamic.literal(HostName = HostName)
+    val __obj = js.Dynamic.literal(HostName = HostName.asInstanceOf[js.Any])
     if (Protocol != null) __obj.updateDynamic("Protocol")(Protocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[_RedirectAllRequestsTo]
   }

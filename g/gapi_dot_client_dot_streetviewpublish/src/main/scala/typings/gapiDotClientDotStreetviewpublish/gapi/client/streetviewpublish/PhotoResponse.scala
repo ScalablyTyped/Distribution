@@ -21,8 +21,8 @@ object PhotoResponse {
   @scala.inline
   def apply(photo: Photo = null, status: Status = null): PhotoResponse = {
     val __obj = js.Dynamic.literal()
-    if (photo != null) __obj.updateDynamic("photo")(photo)
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (photo != null) __obj.updateDynamic("photo")(photo.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhotoResponse]
   }
 }

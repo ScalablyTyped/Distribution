@@ -16,7 +16,7 @@ object Anon_LabelOffsetSupport {
   @scala.inline
   def apply(labelOffsetSupport: js.UndefOr[Boolean] = js.undefined): Anon_LabelOffsetSupport = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(labelOffsetSupport)) __obj.updateDynamic("labelOffsetSupport")(labelOffsetSupport)
+    if (!js.isUndefined(labelOffsetSupport)) __obj.updateDynamic("labelOffsetSupport")(labelOffsetSupport.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_LabelOffsetSupport]
   }
 }

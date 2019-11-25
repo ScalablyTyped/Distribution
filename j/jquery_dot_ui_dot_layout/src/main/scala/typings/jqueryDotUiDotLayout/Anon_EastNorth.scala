@@ -15,7 +15,7 @@ trait Anon_EastNorth extends js.Object {
 object Anon_EastNorth {
   @scala.inline
   def apply(east: PaneState, north: PaneState, south: PaneState, west: PaneState): Anon_EastNorth = {
-    val __obj = js.Dynamic.literal(east = east, north = north, south = south, west = west)
+    val __obj = js.Dynamic.literal(east = east.asInstanceOf[js.Any], north = north.asInstanceOf[js.Any], south = south.asInstanceOf[js.Any], west = west.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EastNorth]
   }

@@ -14,7 +14,7 @@ trait MQTTError extends js.Object {
 object MQTTError {
   @scala.inline
   def apply(errorCode: Double, errorMessage: String): MQTTError = {
-    val __obj = js.Dynamic.literal(errorCode = errorCode, errorMessage = errorMessage)
+    val __obj = js.Dynamic.literal(errorCode = errorCode.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MQTTError]
   }

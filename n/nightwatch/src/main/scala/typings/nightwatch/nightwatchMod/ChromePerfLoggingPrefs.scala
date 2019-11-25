@@ -36,9 +36,9 @@ object ChromePerfLoggingPrefs {
   ): ChromePerfLoggingPrefs = {
     val __obj = js.Dynamic.literal()
     if (bufferUsageReportingInterval != null) __obj.updateDynamic("bufferUsageReportingInterval")(bufferUsageReportingInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableNetwork)) __obj.updateDynamic("enableNetwork")(enableNetwork)
-    if (!js.isUndefined(enablePage)) __obj.updateDynamic("enablePage")(enablePage)
-    if (traceCategories != null) __obj.updateDynamic("traceCategories")(traceCategories)
+    if (!js.isUndefined(enableNetwork)) __obj.updateDynamic("enableNetwork")(enableNetwork.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePage)) __obj.updateDynamic("enablePage")(enablePage.asInstanceOf[js.Any])
+    if (traceCategories != null) __obj.updateDynamic("traceCategories")(traceCategories.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChromePerfLoggingPrefs]
   }
 }

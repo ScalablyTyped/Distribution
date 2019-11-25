@@ -12,7 +12,7 @@ trait LogAttrs extends js.Object {
 object LogAttrs {
   @scala.inline
   def apply(consoleProps: ObjectLike, url: String): LogAttrs = {
-    val __obj = js.Dynamic.literal(consoleProps = consoleProps, url = url)
+    val __obj = js.Dynamic.literal(consoleProps = consoleProps.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LogAttrs]
   }

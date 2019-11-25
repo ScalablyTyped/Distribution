@@ -29,7 +29,7 @@ trait GenericTransformStream extends js.Object {
 object GenericTransformStream {
   @scala.inline
   def apply(readable: ReadableStream[_], writable: WritableStream[_]): GenericTransformStream = {
-    val __obj = js.Dynamic.literal(readable = readable, writable = writable)
+    val __obj = js.Dynamic.literal(readable = readable.asInstanceOf[js.Any], writable = writable.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GenericTransformStream]
   }

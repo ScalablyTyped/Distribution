@@ -15,8 +15,8 @@ trait IObservable extends IDisposable {
 object IObservable {
   @scala.inline
   def apply(dispose: () => Unit, isDisposed: Boolean, `type`: ObservableType): IObservable = {
-    val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), isDisposed = isDisposed)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), isDisposed = isDisposed.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IObservable]
   }
 }

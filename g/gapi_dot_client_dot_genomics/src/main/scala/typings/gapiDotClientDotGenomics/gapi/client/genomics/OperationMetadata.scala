@@ -54,15 +54,15 @@ object OperationMetadata {
     startTime: String = null
   ): OperationMetadata = {
     val __obj = js.Dynamic.literal()
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId)
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
-    if (events != null) __obj.updateDynamic("events")(events)
-    if (labels != null) __obj.updateDynamic("labels")(labels)
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
-    if (request != null) __obj.updateDynamic("request")(request)
-    if (runtimeMetadata != null) __obj.updateDynamic("runtimeMetadata")(runtimeMetadata)
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
+    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
+    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
+    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
+    if (runtimeMetadata != null) __obj.updateDynamic("runtimeMetadata")(runtimeMetadata.asInstanceOf[js.Any])
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[OperationMetadata]
   }
 }

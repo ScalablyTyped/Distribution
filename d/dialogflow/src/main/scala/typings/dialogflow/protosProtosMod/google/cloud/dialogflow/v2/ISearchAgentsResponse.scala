@@ -16,8 +16,8 @@ object ISearchAgentsResponse {
   @scala.inline
   def apply(agents: js.Array[IAgent] = null, nextPageToken: String = null): ISearchAgentsResponse = {
     val __obj = js.Dynamic.literal()
-    if (agents != null) __obj.updateDynamic("agents")(agents)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (agents != null) __obj.updateDynamic("agents")(agents.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISearchAgentsResponse]
   }
 }

@@ -55,11 +55,11 @@ object TooltipContext {
     itemData: js.Object = null,
     seriesData: js.Object = null
   ): TooltipContext = {
-    val __obj = js.Dynamic.literal(close = close, color = color, componentElement = componentElement, group = group.asInstanceOf[js.Any], high = high, id = id, label = label, low = low, open = open, parentElement = parentElement, series = series, targetValue = targetValue, value = value, volume = volume, x = x.asInstanceOf[js.Any], y = y, z = z)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (groupData != null) __obj.updateDynamic("groupData")(groupData)
-    if (itemData != null) __obj.updateDynamic("itemData")(itemData)
-    if (seriesData != null) __obj.updateDynamic("seriesData")(seriesData)
+    val __obj = js.Dynamic.literal(close = close.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], componentElement = componentElement.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], high = high.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], low = low.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any], parentElement = parentElement.asInstanceOf[js.Any], series = series.asInstanceOf[js.Any], targetValue = targetValue.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], volume = volume.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (groupData != null) __obj.updateDynamic("groupData")(groupData.asInstanceOf[js.Any])
+    if (itemData != null) __obj.updateDynamic("itemData")(itemData.asInstanceOf[js.Any])
+    if (seriesData != null) __obj.updateDynamic("seriesData")(seriesData.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipContext]
   }
 }

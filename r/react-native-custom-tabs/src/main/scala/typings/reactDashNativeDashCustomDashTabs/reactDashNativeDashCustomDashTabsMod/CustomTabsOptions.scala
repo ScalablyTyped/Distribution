@@ -24,12 +24,12 @@ object CustomTabsOptions {
     toolbarColor: String = null
   ): CustomTabsOptions = {
     val __obj = js.Dynamic.literal()
-    if (animations != null) __obj.updateDynamic("animations")(animations)
-    if (!js.isUndefined(enableDefaultShare)) __obj.updateDynamic("enableDefaultShare")(enableDefaultShare)
-    if (!js.isUndefined(enableUrlBarHiding)) __obj.updateDynamic("enableUrlBarHiding")(enableUrlBarHiding)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (!js.isUndefined(showPageTitle)) __obj.updateDynamic("showPageTitle")(showPageTitle)
-    if (toolbarColor != null) __obj.updateDynamic("toolbarColor")(toolbarColor)
+    if (animations != null) __obj.updateDynamic("animations")(animations.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableDefaultShare)) __obj.updateDynamic("enableDefaultShare")(enableDefaultShare.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableUrlBarHiding)) __obj.updateDynamic("enableUrlBarHiding")(enableUrlBarHiding.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (!js.isUndefined(showPageTitle)) __obj.updateDynamic("showPageTitle")(showPageTitle.asInstanceOf[js.Any])
+    if (toolbarColor != null) __obj.updateDynamic("toolbarColor")(toolbarColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomTabsOptions]
   }
 }

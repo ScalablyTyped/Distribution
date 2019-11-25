@@ -28,7 +28,7 @@ trait syncDocOptions extends js.Object {
 object syncDocOptions {
   @scala.inline
   def apply(context: js.Object, state: String, onFailure: () => Unit = null, `then`: () => Unit = null): syncDocOptions = {
-    val __obj = js.Dynamic.literal(context = context, state = state)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
     if (onFailure != null) __obj.updateDynamic("onFailure")(js.Any.fromFunction0(onFailure))
     if (`then` != null) __obj.updateDynamic("then")(js.Any.fromFunction0(`then`))
     __obj.asInstanceOf[syncDocOptions]

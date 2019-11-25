@@ -21,7 +21,7 @@ object Anon_FileMappings {
     sourcesContent: js.Array[String],
     version: Double
   ): Anon_FileMappings = {
-    val __obj = js.Dynamic.literal(file = file, mappings = mappings, sources = sources, sourcesContent = sourcesContent, version = version)
+    val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], mappings = mappings.asInstanceOf[js.Any], sources = sources.asInstanceOf[js.Any], sourcesContent = sourcesContent.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FileMappings]
   }

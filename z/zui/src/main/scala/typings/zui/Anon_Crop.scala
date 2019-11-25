@@ -22,9 +22,9 @@ object Anon_Crop {
     width: Int | Double = null
   ): Anon_Crop = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(crop)) __obj.updateDynamic("crop")(crop)
+    if (!js.isUndefined(crop)) __obj.updateDynamic("crop")(crop.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserve_headers)) __obj.updateDynamic("preserve_headers")(preserve_headers)
+    if (!js.isUndefined(preserve_headers)) __obj.updateDynamic("preserve_headers")(preserve_headers.asInstanceOf[js.Any])
     if (quuality != null) __obj.updateDynamic("quuality")(quuality.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Crop]

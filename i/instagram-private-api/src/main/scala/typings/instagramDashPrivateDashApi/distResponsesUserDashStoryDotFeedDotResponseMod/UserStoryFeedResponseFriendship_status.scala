@@ -29,7 +29,7 @@ object UserStoryFeedResponseFriendship_status {
     muting: Boolean,
     outgoing_request: Boolean
   ): UserStoryFeedResponseFriendship_status = {
-    val __obj = js.Dynamic.literal(blocking = blocking, followed_by = followed_by, following = following, incoming_request = incoming_request, is_bestie = is_bestie, is_private = is_private, is_restricted = is_restricted, muting = muting, outgoing_request = outgoing_request)
+    val __obj = js.Dynamic.literal(blocking = blocking.asInstanceOf[js.Any], followed_by = followed_by.asInstanceOf[js.Any], following = following.asInstanceOf[js.Any], incoming_request = incoming_request.asInstanceOf[js.Any], is_bestie = is_bestie.asInstanceOf[js.Any], is_private = is_private.asInstanceOf[js.Any], is_restricted = is_restricted.asInstanceOf[js.Any], muting = muting.asInstanceOf[js.Any], outgoing_request = outgoing_request.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UserStoryFeedResponseFriendship_status]
   }

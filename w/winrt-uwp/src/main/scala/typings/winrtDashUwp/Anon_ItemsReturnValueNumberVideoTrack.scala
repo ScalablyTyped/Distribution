@@ -13,7 +13,7 @@ trait Anon_ItemsReturnValueNumberVideoTrack extends js.Object {
 object Anon_ItemsReturnValueNumberVideoTrack {
   @scala.inline
   def apply(items: VideoTrack, returnValue: Double): Anon_ItemsReturnValueNumberVideoTrack = {
-    val __obj = js.Dynamic.literal(items = items, returnValue = returnValue)
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ItemsReturnValueNumberVideoTrack]
   }

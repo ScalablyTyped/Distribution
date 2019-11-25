@@ -22,9 +22,9 @@ object Dimension {
     value: String,
     loc: CssLocation = null
   ): Dimension = {
-    val __obj = js.Dynamic.literal(unit = unit, value = value)
-    __obj.updateDynamic("type")(`type`)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dimension]
   }
 }

@@ -12,8 +12,8 @@ trait PushOpts extends js.Object {
 object PushOpts {
   @scala.inline
   def apply(dropDatabase: Boolean, filename: String = null): PushOpts = {
-    val __obj = js.Dynamic.literal(dropDatabase = dropDatabase)
-    if (filename != null) __obj.updateDynamic("filename")(filename)
+    val __obj = js.Dynamic.literal(dropDatabase = dropDatabase.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
     __obj.asInstanceOf[PushOpts]
   }
 }

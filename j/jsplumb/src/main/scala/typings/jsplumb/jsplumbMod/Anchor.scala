@@ -29,8 +29,8 @@ object Anchor {
     x: Double,
     y: Double
   ): Anchor = {
-    val __obj = js.Dynamic.literal(cssClass = cssClass, elementId = elementId, id = id, locked = locked, offsets = offsets, orientation = orientation, x = x, y = y)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(cssClass = cssClass.asInstanceOf[js.Any], elementId = elementId.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], locked = locked.asInstanceOf[js.Any], offsets = offsets.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anchor]
   }
 }

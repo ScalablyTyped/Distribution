@@ -27,13 +27,13 @@ object ValidTestCase {
     parserOptions: ParserOptions = null,
     settings: StringDictionary[js.Any] = null
   ): ValidTestCase = {
-    val __obj = js.Dynamic.literal(code = code)
-    if (filename != null) __obj.updateDynamic("filename")(filename)
-    if (globals != null) __obj.updateDynamic("globals")(globals)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (parser != null) __obj.updateDynamic("parser")(parser)
-    if (parserOptions != null) __obj.updateDynamic("parserOptions")(parserOptions)
-    if (settings != null) __obj.updateDynamic("settings")(settings)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
+    if (globals != null) __obj.updateDynamic("globals")(globals.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (parser != null) __obj.updateDynamic("parser")(parser.asInstanceOf[js.Any])
+    if (parserOptions != null) __obj.updateDynamic("parserOptions")(parserOptions.asInstanceOf[js.Any])
+    if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidTestCase]
   }
 }

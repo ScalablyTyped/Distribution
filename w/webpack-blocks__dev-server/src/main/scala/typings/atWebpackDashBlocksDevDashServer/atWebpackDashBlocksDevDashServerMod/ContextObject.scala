@@ -13,8 +13,8 @@ trait ContextObject extends js.Object {
 object ContextObject {
   @scala.inline
   def apply(`match`: js.Any, parsedUrl: js.Any, request: js.Any): ContextObject = {
-    val __obj = js.Dynamic.literal(parsedUrl = parsedUrl, request = request)
-    __obj.updateDynamic("match")(`match`)
+    val __obj = js.Dynamic.literal(parsedUrl = parsedUrl.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
+    __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextObject]
   }
 }

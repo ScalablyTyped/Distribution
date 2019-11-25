@@ -13,8 +13,8 @@ object Anon_Thumb {
   @scala.inline
   def apply(thumb: Anon_ColorColorType = null, track: Anon_ColorHeight = null): Anon_Thumb = {
     val __obj = js.Dynamic.literal()
-    if (thumb != null) __obj.updateDynamic("thumb")(thumb)
-    if (track != null) __obj.updateDynamic("track")(track)
+    if (thumb != null) __obj.updateDynamic("thumb")(thumb.asInstanceOf[js.Any])
+    if (track != null) __obj.updateDynamic("track")(track.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Thumb]
   }
 }

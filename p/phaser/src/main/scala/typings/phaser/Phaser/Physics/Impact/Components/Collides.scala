@@ -54,7 +54,7 @@ object Collides {
     setLiteCollision: () => GameObject,
     setPassiveCollision: () => GameObject
   ): Collides = {
-    val __obj = js.Dynamic.literal(collides = collides, setActiveCollision = js.Any.fromFunction0(setActiveCollision), setCollideCallback = js.Any.fromFunction2(setCollideCallback), setCollidesNever = js.Any.fromFunction0(setCollidesNever), setFixedCollision = js.Any.fromFunction0(setFixedCollision), setLiteCollision = js.Any.fromFunction0(setLiteCollision), setPassiveCollision = js.Any.fromFunction0(setPassiveCollision))
+    val __obj = js.Dynamic.literal(collides = collides.asInstanceOf[js.Any], setActiveCollision = js.Any.fromFunction0(setActiveCollision), setCollideCallback = js.Any.fromFunction2(setCollideCallback), setCollidesNever = js.Any.fromFunction0(setCollidesNever), setFixedCollision = js.Any.fromFunction0(setFixedCollision), setLiteCollision = js.Any.fromFunction0(setLiteCollision), setPassiveCollision = js.Any.fromFunction0(setPassiveCollision))
   
     __obj.asInstanceOf[Collides]
   }

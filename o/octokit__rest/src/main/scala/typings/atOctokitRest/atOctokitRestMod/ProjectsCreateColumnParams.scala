@@ -15,7 +15,7 @@ trait ProjectsCreateColumnParams extends js.Object {
 object ProjectsCreateColumnParams {
   @scala.inline
   def apply(name: String, project_id: Double): ProjectsCreateColumnParams = {
-    val __obj = js.Dynamic.literal(name = name, project_id = project_id)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], project_id = project_id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ProjectsCreateColumnParams]
   }

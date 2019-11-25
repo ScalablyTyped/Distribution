@@ -13,8 +13,8 @@ trait Anon_Code extends js.Object {
 object Anon_Code {
   @scala.inline
   def apply(code: String, mapCoverage: Boolean, sourceMapPath: String = null): Anon_Code = {
-    val __obj = js.Dynamic.literal(code = code, mapCoverage = mapCoverage)
-    if (sourceMapPath != null) __obj.updateDynamic("sourceMapPath")(sourceMapPath)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], mapCoverage = mapCoverage.asInstanceOf[js.Any])
+    if (sourceMapPath != null) __obj.updateDynamic("sourceMapPath")(sourceMapPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Code]
   }
 }

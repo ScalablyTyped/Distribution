@@ -30,15 +30,15 @@ object ConfigOptions {
     webServices: js.Any = null
   ): ConfigOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowAvoidPreFlight)) __obj.updateDynamic("allowAvoidPreFlight")(allowAvoidPreFlight)
-    if (allowedDomains != null) __obj.updateDynamic("allowedDomains")(allowedDomains)
-    if (allowedHeaders != null) __obj.updateDynamic("allowedHeaders")(allowedHeaders)
-    if (!js.isUndefined(logRequestHeaders)) __obj.updateDynamic("logRequestHeaders")(logRequestHeaders)
-    if (mockDirectory != null) __obj.updateDynamic("mockDirectory")(mockDirectory)
-    if (port != null) __obj.updateDynamic("port")(port)
-    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet)
-    if (!js.isUndefined(useUploadFieldname)) __obj.updateDynamic("useUploadFieldname")(useUploadFieldname)
-    if (webServices != null) __obj.updateDynamic("webServices")(webServices)
+    if (!js.isUndefined(allowAvoidPreFlight)) __obj.updateDynamic("allowAvoidPreFlight")(allowAvoidPreFlight.asInstanceOf[js.Any])
+    if (allowedDomains != null) __obj.updateDynamic("allowedDomains")(allowedDomains.asInstanceOf[js.Any])
+    if (allowedHeaders != null) __obj.updateDynamic("allowedHeaders")(allowedHeaders.asInstanceOf[js.Any])
+    if (!js.isUndefined(logRequestHeaders)) __obj.updateDynamic("logRequestHeaders")(logRequestHeaders.asInstanceOf[js.Any])
+    if (mockDirectory != null) __obj.updateDynamic("mockDirectory")(mockDirectory.asInstanceOf[js.Any])
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet.asInstanceOf[js.Any])
+    if (!js.isUndefined(useUploadFieldname)) __obj.updateDynamic("useUploadFieldname")(useUploadFieldname.asInstanceOf[js.Any])
+    if (webServices != null) __obj.updateDynamic("webServices")(webServices.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigOptions]
   }
 }

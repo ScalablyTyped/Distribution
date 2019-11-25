@@ -18,7 +18,7 @@ trait TaskProcessEndEvent extends js.Object {
 object TaskProcessEndEvent {
   @scala.inline
   def apply(execution: TaskExecution, exitCode: Double): TaskProcessEndEvent = {
-    val __obj = js.Dynamic.literal(execution = execution, exitCode = exitCode)
+    val __obj = js.Dynamic.literal(execution = execution.asInstanceOf[js.Any], exitCode = exitCode.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TaskProcessEndEvent]
   }

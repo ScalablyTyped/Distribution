@@ -11,7 +11,7 @@ trait SmartHomeV1QueryRequestPayload extends js.Object {
 object SmartHomeV1QueryRequestPayload {
   @scala.inline
   def apply(devices: js.Array[SmartHomeV1QueryRequestDevices]): SmartHomeV1QueryRequestPayload = {
-    val __obj = js.Dynamic.literal(devices = devices)
+    val __obj = js.Dynamic.literal(devices = devices.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SmartHomeV1QueryRequestPayload]
   }

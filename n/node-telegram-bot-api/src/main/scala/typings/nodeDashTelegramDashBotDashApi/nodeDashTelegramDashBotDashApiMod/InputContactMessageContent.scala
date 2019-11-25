@@ -14,8 +14,8 @@ import scala.scalajs.js.annotation._
 object InputContactMessageContent {
   @scala.inline
   def apply(first_name: String, phone_number: String, last_name: String = null): InputContactMessageContent = {
-    val __obj = js.Dynamic.literal(first_name = first_name, phone_number = phone_number)
-    if (last_name != null) __obj.updateDynamic("last_name")(last_name)
+    val __obj = js.Dynamic.literal(first_name = first_name.asInstanceOf[js.Any], phone_number = phone_number.asInstanceOf[js.Any])
+    if (last_name != null) __obj.updateDynamic("last_name")(last_name.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputContactMessageContent]
   }
 }

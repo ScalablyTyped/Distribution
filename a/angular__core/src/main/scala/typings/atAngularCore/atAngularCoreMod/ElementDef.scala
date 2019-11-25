@@ -42,16 +42,16 @@ object ElementDef {
     template: ɵViewDefinition = null
   ): ElementDef = {
     val __obj = js.Dynamic.literal()
-    if (allProviders != null) __obj.updateDynamic("allProviders")(allProviders)
-    if (attrs != null) __obj.updateDynamic("attrs")(attrs)
-    if (componentProvider != null) __obj.updateDynamic("componentProvider")(componentProvider)
-    if (componentRendererType != null) __obj.updateDynamic("componentRendererType")(componentRendererType)
-    if (componentView != null) __obj.updateDynamic("componentView")(componentView)
+    if (allProviders != null) __obj.updateDynamic("allProviders")(allProviders.asInstanceOf[js.Any])
+    if (attrs != null) __obj.updateDynamic("attrs")(attrs.asInstanceOf[js.Any])
+    if (componentProvider != null) __obj.updateDynamic("componentProvider")(componentProvider.asInstanceOf[js.Any])
+    if (componentRendererType != null) __obj.updateDynamic("componentRendererType")(componentRendererType.asInstanceOf[js.Any])
+    if (componentView != null) __obj.updateDynamic("componentView")(componentView.asInstanceOf[js.Any])
     if (handleEvent != null) __obj.updateDynamic("handleEvent")(js.Any.fromFunction3(handleEvent))
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (ns != null) __obj.updateDynamic("ns")(ns)
-    if (publicProviders != null) __obj.updateDynamic("publicProviders")(publicProviders)
-    if (template != null) __obj.updateDynamic("template")(template)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (ns != null) __obj.updateDynamic("ns")(ns.asInstanceOf[js.Any])
+    if (publicProviders != null) __obj.updateDynamic("publicProviders")(publicProviders.asInstanceOf[js.Any])
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementDef]
   }
 }

@@ -13,8 +13,8 @@ object MeetingParticipantInfo {
   @scala.inline
   def apply(identity: IdentitySet = null, upn: String = null): MeetingParticipantInfo = {
     val __obj = js.Dynamic.literal()
-    if (identity != null) __obj.updateDynamic("identity")(identity)
-    if (upn != null) __obj.updateDynamic("upn")(upn)
+    if (identity != null) __obj.updateDynamic("identity")(identity.asInstanceOf[js.Any])
+    if (upn != null) __obj.updateDynamic("upn")(upn.asInstanceOf[js.Any])
     __obj.asInstanceOf[MeetingParticipantInfo]
   }
 }

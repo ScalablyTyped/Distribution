@@ -76,7 +76,7 @@ object _Impl {
     siblingLabel: String,
     text: String
   ): _Impl = {
-    val __obj = js.Dynamic.literal(addition = addition, dropdown = dropdown, icon = icon, input = input, item = item, label = label, menu = menu, menuIcon = menuIcon, message = message, remove = remove, search = search, siblingLabel = siblingLabel, text = text)
+    val __obj = js.Dynamic.literal(addition = addition.asInstanceOf[js.Any], dropdown = dropdown.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], menu = menu.asInstanceOf[js.Any], menuIcon = menuIcon.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], remove = remove.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any], siblingLabel = siblingLabel.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_Impl]
   }

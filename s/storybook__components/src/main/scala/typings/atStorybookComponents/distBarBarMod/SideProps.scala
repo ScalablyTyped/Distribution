@@ -13,8 +13,8 @@ object SideProps {
   @scala.inline
   def apply(left: js.UndefOr[Boolean] = js.undefined, right: js.UndefOr[Boolean] = js.undefined): SideProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left)
-    if (!js.isUndefined(right)) __obj.updateDynamic("right")(right)
+    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (!js.isUndefined(right)) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
     __obj.asInstanceOf[SideProps]
   }
 }

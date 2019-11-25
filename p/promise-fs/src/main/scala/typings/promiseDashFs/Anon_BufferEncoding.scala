@@ -14,8 +14,8 @@ trait Anon_BufferEncoding extends js.Object {
 object Anon_BufferEncoding {
   @scala.inline
   def apply(encoding: buffer, withFileTypes: `false` = null): Anon_BufferEncoding = {
-    val __obj = js.Dynamic.literal(encoding = encoding)
-    if (withFileTypes != null) __obj.updateDynamic("withFileTypes")(withFileTypes)
+    val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
+    if (withFileTypes != null) __obj.updateDynamic("withFileTypes")(withFileTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BufferEncoding]
   }
 }

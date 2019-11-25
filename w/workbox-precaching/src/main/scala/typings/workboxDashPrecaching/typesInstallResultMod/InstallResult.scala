@@ -12,7 +12,7 @@ trait InstallResult extends js.Object {
 object InstallResult {
   @scala.inline
   def apply(notUpdatedURLs: js.Array[String], updatedURLs: js.Array[String]): InstallResult = {
-    val __obj = js.Dynamic.literal(notUpdatedURLs = notUpdatedURLs, updatedURLs = updatedURLs)
+    val __obj = js.Dynamic.literal(notUpdatedURLs = notUpdatedURLs.asInstanceOf[js.Any], updatedURLs = updatedURLs.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InstallResult]
   }

@@ -12,7 +12,7 @@ trait HttpError extends js.Object {
 object HttpError {
   @scala.inline
   def apply(status: Double, statusText: String): HttpError = {
-    val __obj = js.Dynamic.literal(status = status, statusText = statusText)
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HttpError]
   }

@@ -22,9 +22,9 @@ object ZeroClipboardCopyEvent {
     `type`: String,
     client: ZeroClipboardClient = null
   ): ZeroClipboardCopyEvent = {
-    val __obj = js.Dynamic.literal(clipboardData = clipboardData, currentTarget = currentTarget, relatedTarget = relatedTarget, target = target, timeStamp = timeStamp)
-    __obj.updateDynamic("type")(`type`)
-    if (client != null) __obj.updateDynamic("client")(client)
+    val __obj = js.Dynamic.literal(clipboardData = clipboardData.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], relatedTarget = relatedTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (client != null) __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZeroClipboardCopyEvent]
   }
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jsurl"
-version := "1.2.7-dt-20190322Z-ab4fb5"
+version := "1.2.7-dt-20190322Z-e3f0c0"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

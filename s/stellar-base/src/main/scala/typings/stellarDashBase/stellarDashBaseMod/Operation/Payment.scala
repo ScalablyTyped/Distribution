@@ -21,9 +21,9 @@ object Payment {
     `type`: typings.stellarDashBase.stellarDashBaseMod.OperationType.Payment,
     source: String = null
   ): Payment = {
-    val __obj = js.Dynamic.literal(amount = amount, asset = asset, destination = destination)
-    __obj.updateDynamic("type")(`type`)
-    if (source != null) __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], asset = asset.asInstanceOf[js.Any], destination = destination.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[Payment]
   }
 }

@@ -34,17 +34,17 @@ object Config {
     settings: StringDictionary[js.Any] = null
   ): Config = {
     val __obj = js.Dynamic.literal()
-    if (env != null) __obj.updateDynamic("env")(env)
+    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
     if (`extends` != null) __obj.updateDynamic("extends")(`extends`.asInstanceOf[js.Any])
-    if (globals != null) __obj.updateDynamic("globals")(globals)
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides)
-    if (parser != null) __obj.updateDynamic("parser")(parser)
-    if (parserOptions != null) __obj.updateDynamic("parserOptions")(parserOptions)
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
-    if (processor != null) __obj.updateDynamic("processor")(processor)
-    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root)
-    if (rules != null) __obj.updateDynamic("rules")(rules)
-    if (settings != null) __obj.updateDynamic("settings")(settings)
+    if (globals != null) __obj.updateDynamic("globals")(globals.asInstanceOf[js.Any])
+    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
+    if (parser != null) __obj.updateDynamic("parser")(parser.asInstanceOf[js.Any])
+    if (parserOptions != null) __obj.updateDynamic("parserOptions")(parserOptions.asInstanceOf[js.Any])
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
+    if (processor != null) __obj.updateDynamic("processor")(processor.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
+    if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

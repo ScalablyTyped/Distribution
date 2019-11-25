@@ -14,7 +14,7 @@ trait SystemIntent extends js.Object {
 object SystemIntent {
   @scala.inline
   def apply(data: ProtoAny[String, JsonObject], intent: String): SystemIntent = {
-    val __obj = js.Dynamic.literal(data = data, intent = intent)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], intent = intent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SystemIntent]
   }

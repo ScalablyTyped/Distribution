@@ -20,7 +20,7 @@ object OffsetOption {
   def apply(amount: Int | Double = null, from: OffsetPositionType = null): OffsetOption = {
     val __obj = js.Dynamic.literal()
     if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from)
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
     __obj.asInstanceOf[OffsetOption]
   }
 }

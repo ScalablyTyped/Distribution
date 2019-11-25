@@ -19,7 +19,7 @@ trait _Impl extends js.Object {
 object _Impl {
   @scala.inline
   def apply(optional: RegExp, required: RegExp): _Impl = {
-    val __obj = js.Dynamic.literal(optional = optional, required = required)
+    val __obj = js.Dynamic.literal(optional = optional.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_Impl]
   }

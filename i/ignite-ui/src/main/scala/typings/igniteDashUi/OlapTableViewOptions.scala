@@ -41,11 +41,11 @@ object OlapTableViewOptions {
     viewSettings: OlapTableViewOptionsViewSettings = null
   ): OlapTableViewOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(hasColumns)) __obj.updateDynamic("hasColumns")(hasColumns)
-    if (!js.isUndefined(hasRows)) __obj.updateDynamic("hasRows")(hasRows)
-    if (result != null) __obj.updateDynamic("result")(result)
-    if (viewSettings != null) __obj.updateDynamic("viewSettings")(viewSettings)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(hasColumns)) __obj.updateDynamic("hasColumns")(hasColumns.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasRows)) __obj.updateDynamic("hasRows")(hasRows.asInstanceOf[js.Any])
+    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
+    if (viewSettings != null) __obj.updateDynamic("viewSettings")(viewSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[OlapTableViewOptions]
   }
 }
